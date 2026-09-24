@@ -1,24 +1,24 @@
-// Module ID: 8322
-// Function ID: 8323
+// Module ID: 8354
+// Function ID: 8355
 // Name: PremiumSubscriptionOfferUtil
-// Dependencies: [32, 19, 4424, 1378, 558, 7694, 8323, 8324, 568, 504, 4352, 8325, 8326, 1982, 8329, 2]
+// Dependencies: [32, 19, 4456, 1378, 558, 7726, 8355, 8356, 568, 504, 4384, 8357, 8358, 1982, 8361, 2]
 // Exports: renewalInvoiceChurnDiscountInfo, useIsNUXEligible
 
-// Module 8322 (PremiumSubscriptionOfferUtil)
+// Module 8354 (PremiumSubscriptionOfferUtil)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import Server from "Server" /* 1982 */;
-import _modDef4352 from "module_4352" /* 4352 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7694 */;
-import PremiumSubscriptionTrialUtil from "PremiumSubscriptionTrialUtil" /* 8323 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8324 */;
-import useDiscountOfferDefault from "useDiscountOffer" /* 8325 */;
-import ReverseTrialUtils from "ReverseTrialUtils" /* 8329 */;
+import _modDef4384 from "module_4384" /* 4384 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7726 */;
+import PremiumSubscriptionTrialUtil from "PremiumSubscriptionTrialUtil" /* 8355 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8356 */;
+import useDiscountOfferDefault from "useDiscountOffer" /* 8357 */;
+import ReverseTrialUtils from "ReverseTrialUtils" /* 8361 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 4424 */;
+import SubscriptionStore from "SubscriptionStore" /* 4456 */;
 
-const UserOfferActionCreators = tmp(8326);
+const UserOfferActionCreators = tmp(8358);
 require = fn;
 const PremiumConstants = fn(1378);
 ({ PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID: metroRequire, PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID: closure_7, PREMIUM_TIER_2_ANNUAL_V2_20_PERCENT_DISCOUNT_ID: closure_8, PREMIUM_TIER_2_ANNUAL_V2_30_PERCENT_DISCOUNT_ID: closure_9, PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: c10, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: closure_11, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_30_PERCENT_DISCOUNT_ID: closure_12, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: map1, PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID: closure_14, PREMIUM_TIER_2_REACTIVATION_DISCOUNT_ID: closure_15, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID: closure_16, PREMIUM_TIER_2_REFERRAL_INCENTIVE_DISCOUNT_ID: closure_17, PREMIUM_GROUP_30_PERCENT_3_MONTH_DISCOUNT_ID: closure_18 } = PremiumConstants);
@@ -50,8 +50,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let tmp10 = null != prop;
     if (tmp10) {
       const _Date = Date;
-      tmp10 = _modDef4352(Date.now()) <= _modDef4352(prop);
-      const tmp12Result = _modDef4352(Date.now());
+      tmp10 = _modDef4384(Date.now()) <= _modDef4384(prop);
+      const tmp12Result = _modDef4384(Date.now());
     }
     cResult[2] = prop;
     cResult[3] = tmp10;
@@ -73,8 +73,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp4 = null != prop;
   if (tmp4) {
     const _Date = Date;
-    tmp4 = _modDef4352(Date.now()) <= _modDef4352(prop);
-    const tmp6Result = _modDef4352(Date.now());
+    tmp4 = _modDef4384(Date.now()) <= _modDef4384(prop);
+    const tmp6Result = _modDef4384(Date.now());
   }
   return tmp4;
 });

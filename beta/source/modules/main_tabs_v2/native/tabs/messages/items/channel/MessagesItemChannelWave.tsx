@@ -1,13 +1,13 @@
-// Module ID: 16378
-// Function ID: 16379
+// Module ID: 16388
+// Function ID: 16389
 // Name: MessagesItemChannelWave
-// Dependencies: [19, 21, 558, 568, 1119, 4754, 5188, 2]
+// Dependencies: [19, 21, 558, 568, 1119, 4786, 5220, 2]
 
-// Module 16378 (MessagesItemChannelWave)
+// Module 16388 (MessagesItemChannelWave)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -29,7 +29,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { style: { marginTop: 3 }, variant: "text-sm/semibold", "aria-hidden": true, children: "\u{1F44B}" };
-    const tmp9 = jsx(tmp(4754).Text, { style: { marginTop: 3 }, variant: "text-sm/semibold", "aria-hidden": true, children: "\u{1F44B}" });
+    const tmp9 = jsx(tmp(4786).Text, { style: { marginTop: 3 }, variant: "text-sm/semibold", "aria-hidden": true, children: "\u{1F44B}" });
     cResult[1] = tmp9;
     let tmp7 = tmp9;
   } else {

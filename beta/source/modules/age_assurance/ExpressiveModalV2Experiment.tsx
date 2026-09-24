@@ -1,13 +1,13 @@
-// Module ID: 8706
-// Function ID: 8707
+// Module ID: 8738
+// Function ID: 8739
 // Name: ExpressiveModalV2Experiment
-// Dependencies: [8707, 1438, 558, 568, 8695, 504, 2]
+// Dependencies: [8739, 1438, 558, 568, 8727, 504, 2]
 // Exports: isExpressiveModalV2Enabled
 
-// Module 8706 (ExpressiveModalV2Experiment)
+// Module 8738 (ExpressiveModalV2Experiment)
 import c from "c" /* 568 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8695 */;
-import SafetyHubStore from "SafetyHubStore" /* 8707 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8727 */;
+import SafetyHubStore from "SafetyHubStore" /* 8739 */;
 
 const initialize = tmp(504);
 require = fn;

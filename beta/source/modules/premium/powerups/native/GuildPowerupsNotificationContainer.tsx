@@ -1,21 +1,21 @@
-// Module ID: 12720
-// Function ID: 12721
+// Module ID: 12756
+// Function ID: 12757
 // Name: GuildPowerupsNotificationContainer
-// Dependencies: [17, 21, 4758, 580, 558, 568, 7223, 4754, 12721, 12722, 1119, 2518, 12725, 2]
+// Dependencies: [17, 21, 4790, 580, 558, 568, 7255, 4786, 12757, 12758, 1119, 2518, 12761, 2]
 
-// Module 12720 (GuildPowerupsNotificationContainer)
+// Module 12756 (GuildPowerupsNotificationContainer)
 import _mod17 from "module_17" /* 17 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7223 */;
-import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 12721 */;
-import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 12722 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7255 */;
+import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 12757 */;
+import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 12758 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const Text_Text = tmp(4754);
+const Text_Text = tmp(4786);
 const View = _mod17.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
 let obj = { container: { gap: nativeDefault.space.PX_12, margin: nativeDefault.space.PX_16 }, staffContainer: null };
@@ -137,7 +137,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       if (shouldShow2) {
         const obj5 = { guildId, powerupNames: null, warnings: null };
         ({ expiringPowerupNames: obj4.powerupNames, warnings: obj4.warnings } = tmp7);
-        shouldShow2 = React4(tmp5(12725), obj5);
+        shouldShow2 = React4(tmp5(12761), obj5);
       }
       cResult[7] = tmp7.expiringPowerupNames;
       cResult[8] = tmp7.shouldShow;
@@ -181,7 +181,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     obj3.variant = str2;
     const intl = tmp6(1119).intl;
     obj3.children = intl.string(tmp2(2518)["3FRirU"]);
-    const items = [React4(tmp6(4754).Text, obj3), , ];
+    const items = [React4(tmp6(4786).Text, obj3), , ];
     let shouldShow = tmp4.shouldShow;
     if (shouldShow) {
       const obj4 = { text: tmp4.text };
@@ -192,7 +192,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     if (shouldShow2) {
       const obj9 = { guildId, powerupNames: null, warnings: null };
       ({ expiringPowerupNames: obj5.powerupNames, warnings: obj5.warnings } = tmp5);
-      shouldShow2 = tmp11(tmp2(12725), obj9);
+      shouldShow2 = tmp11(tmp2(12761), obj9);
     }
     items[2] = shouldShow2;
     obj2.children = items;

@@ -1,10 +1,10 @@
-// Module ID: 12102
-// Function ID: 12103
+// Module ID: 12138
+// Function ID: 12139
 // Name: CustomTypingIndicatorDynamicAsset
-// Dependencies: [19, 17, 21, 4758, 558, 568, 5802, 1119, 12103, 4754, 5186, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 5834, 1119, 12139, 4786, 5218, 2]
 
-// Module 12102 (CustomTypingIndicatorDynamicAsset)
-import FastImageDefault from "FastImage" /* 5802 */;
+// Module 12138 (CustomTypingIndicatorDynamicAsset)
+import FastImageDefault from "FastImage" /* 5834 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -13,7 +13,7 @@ const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles((width, gap) => {
   const obj = { emojiRow: { flexDirection: "row", gap }, emoji: { width, height: width }, text: { flexShrink: 1 } };
   return obj;
@@ -64,7 +64,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((emojiSize) => {
                     const obj2 = { direction: "horizontal", spacing, align: "center", justify: "flex-start", style, children: null };
                     const items = [tmp10, tmp17];
                     obj2.children = items;
-                    const tmp22 = closure_5(tmp(5186).Stack, obj2);
+                    const tmp22 = closure_5(tmp(5218).Stack, obj2);
                     cResult[20] = spacing;
                     cResult[21] = style;
                     cResult[22] = tmp10;
@@ -76,7 +76,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((emojiSize) => {
               }
             }
             const obj3 = { variant: textVariant, color: textColor, lineClamp, includeFontPadding: true, style: tmp14, children: tmp15 };
-            const tmp19 = closure_4(tmp(4754).Text, obj3);
+            const tmp19 = closure_4(tmp(4786).Text, obj3);
             cResult[14] = lineClamp;
             cResult[15] = tmp14;
             cResult[16] = tmp15;
@@ -87,12 +87,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((emojiSize) => {
           }
           const intl = tmp(1119).intl;
           const obj4 = { name };
-          const formatResult = intl.format(tmp(12103).getCustomTypingIndicatorSuggestionWithNameMessage(suggestion), obj4);
+          const formatResult = intl.format(tmp(12139).getCustomTypingIndicatorSuggestionWithNameMessage(suggestion), obj4);
           cResult[11] = name;
           cResult[12] = suggestion;
           cResult[13] = formatResult;
           tmp15 = formatResult;
-          const tmpResult = tmp(12103);
+          const tmpResult = tmp(12139);
         }
         const items1 = [tmp4Result.text, textStyle];
         cResult[8] = tmp4Result.text;

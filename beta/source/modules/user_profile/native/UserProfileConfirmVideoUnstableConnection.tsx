@@ -1,12 +1,12 @@
-// Module ID: 12788
-// Function ID: 12789
+// Module ID: 12824
+// Function ID: 12825
 // Name: UserProfileConfirmVideoUnstableConnection
-// Dependencies: [19, 21, 558, 568, 1119, 5116, 5116, 2]
+// Dependencies: [19, 21, 558, 568, 1119, 5148, 5148, 2]
 
-// Module 12788 (UserProfileConfirmVideoUnstableConnection)
+// Module 12824 (UserProfileConfirmVideoUnstableConnection)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AlertModal from "AlertModal" /* 5116 */;
+import AlertModal from "AlertModal" /* 5148 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -41,7 +41,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   if (cResult[3] !== onConfirm) {
     const obj2 = { text: tmp8, onPress: onConfirm };
-    const tmp12 = React2(tmp(5116).AlertActionButton, obj2, "confirm");
+    const tmp12 = React2(tmp(5148).AlertActionButton, obj2, "confirm");
     cResult[3] = onConfirm;
     cResult[4] = tmp12;
     let tmp10 = tmp12;
@@ -52,7 +52,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
     const obj3 = { variant: "secondary", text: null };
     const intl4 = tmp(1119).intl;
     obj3.text = intl4.string(tmp(1119).t.jEqEhy);
-    const tmp15 = React2(tmp(5116).AlertActionButton, obj3, "cancel");
+    const tmp15 = React2(tmp(5148).AlertActionButton, obj3, "cancel");
     cResult[5] = tmp15;
     let tmp13 = tmp15;
   } else {
@@ -63,8 +63,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
     const obj5 = { children: null };
     const items = [tmp10, tmp13];
     obj5.children = items;
-    obj4.actions = React3(tmp(5116).AlertActions, obj5);
-    const tmp19 = React2(tmp(5116).AlertModal, obj4);
+    obj4.actions = React3(tmp(5148).AlertActions, obj5);
+    const tmp19 = React2(tmp(5148).AlertModal, obj4);
     cResult[6] = tmp10;
     cResult[7] = tmp19;
     let tmp16 = tmp19;

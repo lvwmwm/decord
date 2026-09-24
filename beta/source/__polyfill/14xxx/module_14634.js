@@ -1,75 +1,26 @@
 // Module ID: 14634
 // Function ID: 14635
-// Dependencies: [14583, 14635, 14632, 14592, 14615]
+// Dependencies: [14618, 14619, 14635]
 
 // Module 14634
-import _mod14583 from "module_14583" /* 14583 */;
-import text from "text" /* 14592 */;
-import _mod14615 from "module_14615" /* 14615 */;
-import _mod14632 from "module_14632" /* 14632 */;
+import _mod14618 from "module_14618" /* 14618 */;
+import _mod14619 from "module_14619" /* 14619 */;
 import _mod14635 from "module_14635" /* 14635 */;
 
-const enumerable = "enumerable";
-const configurable = "configurable";
-const writable = "writable";
-if (_mod14583) {
-  if (_mod14635) {
-    defineProperty = function defineProperty(fn, arg1, value) {
-      _mod14632(fn);
-      const tmp2 = text(arg1);
-      _mod14632(value);
-      let tmp4 = value;
-      if (typeof fn === "function") {
-        tmp4 = value;
-        if ("prototype" === tmp2) {
-          tmp4 = value;
-          if ("value" in value) {
-            tmp4 = value;
-            if (writable in value) {
-              tmp4 = value;
-              if (!value[tmp5]) {
-                const tmp7 = getOwnPropertyDescriptor(fn, tmp2);
-                let tmp8 = tmp7;
-                if (tmp7) {
-                  tmp8 = tmp7[tmp5];
-                }
-                tmp4 = value;
-                if (tmp8) {
-                  fn[tmp2] = value.value;
-                  const obj = { configurable: configurable in value ? value[configurable] : tmp7[configurable], enumerable: enumerable in value ? value[enumerable] : tmp7[enumerable], writable: false };
-                }
-              }
-            }
-          }
-        }
-      }
-      return defineProperty(fn, tmp2, tmp4);
-    };
-  }
-  let defineProperty2 = defineProperty;
-} else {
-  defineProperty2 = function defineProperty(arg0, arg1, value) {
-    _mod14632(arg0);
-    const tmp2 = text(arg1);
-    _mod14632(value);
-    if (!_mod14615) {
-      if (!("get" in value)) {
-        if (!("set" in value)) {
-          if ("value" in value) {
-            arg0[tmp2] = value.value;
-          }
-          return arg0;
-        }
-      }
-      const tmp8 = new TypeError("Accessors not supported");
-      throw tmp8;
-    } else {
-      try {
-        return defineProperty(arg0, tmp2, value);
-      } catch (err) {
-      }
-    }
-  };
+let prop = _mod14618["__core-js_shared__"];
+if (!prop) {
+  prop = _mod14619("__core-js_shared__", {});
 }
+let versions = prop.versions;
+if (!versions) {
+  const items = [];
+  prop.versions = items;
+  versions = items;
+}
+let str2 = "global";
+if (_mod14635) {
+  str2 = "pure";
+}
+versions.push({ version: "3.41.0", mode: str2, copyright: "\u00A9 2014-2025 Denis Pushkarev (zloirock.ru)", license: "https://github.com/zloirock/core-js/blob/v3.41.0/LICENSE", source: "https://github.com/zloirock/core-js" });
 
-export const f = defineProperty2;
+export default prop;

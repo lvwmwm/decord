@@ -1,17 +1,17 @@
-// Module ID: 14879
-// Function ID: 14880
+// Module ID: 14917
+// Function ID: 14918
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 1078, 2042, 21, 4758, 580, 558, 568, 1488, 9975, 2031, 7632, 8440, 4991, 11205, 1395, 1245, 1119, 14880, 1181, 13479, 11202, 14881, 2876, 14883, 2]
+// Dependencies: [32, 19, 17, 1078, 2042, 21, 4790, 580, 558, 568, 1488, 10007, 2031, 7664, 8472, 5023, 11241, 1395, 1245, 1119, 14918, 1181, 13515, 11238, 14919, 2876, 14921, 2]
 
-// Module 14879 (UserProfileDisplayNameStylesEditButton)
+// Module 14917 (UserProfileDisplayNameStylesEditButton)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11202 */;
-import _modDef13479 from "module_13479" /* 13479 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 14880 */;
-import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 14881 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11238 */;
+import _modDef13515 from "module_13515" /* 13515 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 14918 */;
+import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 14919 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -22,7 +22,7 @@ const Constants = fn(1078);
 ({ AnalyticEvents: closure_7, UserSettingsSections: closure_8 } = Constants);
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { ggContainer: null, noneIcon: null };
 let size = { height: 48, width: 48, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, alignItems: "center", justifyContent: "center", paddingBottom: 4 };
 obj2.ggContainer = size;
@@ -695,8 +695,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   }, items2);
   const tmp16 = nativeStackNavigation(() => {
     if (null == closure_6) {
-      const obj2 = { source: _modDef13479, style: closure_3.noneIcon };
-      let tmp10 = jsx(native.Icon, { source: _modDef13479, style: closure_3.noneIcon });
+      const obj2 = { source: _modDef13515, style: closure_3.noneIcon };
+      let tmp10 = jsx(native.Icon, { source: _modDef13515, style: closure_3.noneIcon });
     } else {
       const obj = { style: closure_3.ggContainer, children: null };
       const obj3 = { userId: user.id, guildId, userName: "Gg", pendingDisplayNameStyles: tmp, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };

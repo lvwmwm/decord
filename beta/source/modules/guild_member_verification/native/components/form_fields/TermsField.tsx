@@ -1,20 +1,20 @@
-// Module ID: 5815
-// Function ID: 5816
+// Module ID: 5847
+// Function ID: 5848
 // Name: TermsField
-// Dependencies: [19, 17, 21, 4758, 558, 568, 5816, 1119, 5819, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 5848, 1119, 5851, 2]
 
-// Module 5815 (TermsField)
+// Module 5847 (TermsField)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import TermsFieldListDefault from "TermsFieldList" /* 5816 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5819 */;
+import TermsFieldListDefault from "TermsFieldList" /* 5848 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5851 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ container: { marginVertical: 12, flexDirection: "column" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -64,7 +64,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp14 = tmp17;
     }
     const obj3 = { start: true, end: true, checked: response, label: tmp9, onPress: onChange };
-    const tmp13 = React4(tmp(5819).TableCheckboxRow, obj3);
+    const tmp13 = React4(tmp(5851).TableCheckboxRow, obj3);
     cResult[4] = response;
     cResult[5] = onChange;
     cResult[6] = tmp13;

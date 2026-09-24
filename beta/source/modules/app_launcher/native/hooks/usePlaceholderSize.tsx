@@ -1,9 +1,9 @@
-// Module ID: 12184
-// Function ID: 12185
+// Module ID: 12220
+// Function ID: 12221
 // Name: usePlaceholderSize
 // Dependencies: [19, 558, 2]
 
-// Module 12184 (usePlaceholderSize)
+// Module 12220 (usePlaceholderSize)
 import noop from "module_19" /* 19 */;
 
 const ReactCompilerGating = fn(558);

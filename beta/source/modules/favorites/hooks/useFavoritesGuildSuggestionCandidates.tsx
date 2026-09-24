@@ -1,17 +1,17 @@
-// Module ID: 16614
-// Function ID: 16615
+// Module ID: 16624
+// Function ID: 16625
 // Name: useFavoritesGuildSuggestionCandidates
-// Dependencies: [19, 16615, 7900, 2045, 16541, 11280, 558, 568, 16617, 504, 10083, 11277, 11283, 10079, 10070, 2]
+// Dependencies: [19, 16625, 7932, 2045, 16551, 11316, 558, 568, 16627, 504, 10122, 11313, 11319, 10118, 10109, 2]
 // Exports: default
 
-// Module 16614 (useFavoritesGuildSuggestionCandidates)
+// Module 16624 (useFavoritesGuildSuggestionCandidates)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import sortByMatchScore from "sortByMatchScore" /* 10070 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 10079 */;
+import sortByMatchScore from "sortByMatchScore" /* 10109 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 10118 */;
 import noop from "module_19" /* 19 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 16615 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7900 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 16625 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7932 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 const require = globalThis.__r;
@@ -23,8 +23,8 @@ function getAffineChannelId(channelId) {
 function getAffineUserDMId(otherUserId) {
   return ChannelStore.getDMFromUserId(otherUserId.otherUserId);
 }
-const NO_SUGGESTIONS = fn(16541).NO_SUGGESTIONS;
-const isAllowedType = fn(11280).isAllowedType;
+const NO_SUGGESTIONS = fn(16551).NO_SUGGESTIONS;
+const isAllowedType = fn(11316).isAllowedType;
 const ReactCompilerGating = fn(558);
 let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(7);

@@ -1,10 +1,10 @@
-// Module ID: 16830
-// Function ID: 16831
+// Module ID: 16840
+// Function ID: 16841
 // Name: useICYMIReloadHandler
-// Dependencies: [5, 19, 558, 568, 8635, 8627, 2]
+// Dependencies: [5, 19, 558, 568, 8667, 8659, 2]
 
-// Module 16830 (useICYMIReloadHandler)
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8627 */;
+// Module 16840 (useICYMIReloadHandler)
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8659 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -44,7 +44,7 @@ export const useICYMIReloadHandler = ReactCompilerGating.isReactCompilerEnabled(
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              const ICYMIAnalytics = tmp2(8635).ICYMIAnalytics;
+              const ICYMIAnalytics = tmp2(8667).ICYMIAnalytics;
               let str = "NoDotShown";
               if (tmp2) {
                 str = "DotShown";
@@ -147,7 +147,7 @@ export const useICYMIReloadHandler = ReactCompilerGating.isReactCompilerEnabled(
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            const ICYMIAnalytics = tmp2(8635).ICYMIAnalytics;
+            const ICYMIAnalytics = tmp2(8667).ICYMIAnalytics;
             let str = "NoDotShown";
             if (tmp2) {
               str = "DotShown";
@@ -156,7 +156,7 @@ export const useICYMIReloadHandler = ReactCompilerGating.isReactCompilerEnabled(
             ICYMIAnalytics.trackFeedShown(obj5);
             v3 = 1;
             dependencyMap = 1;
-            const obj7 = { value: v3(8627).fetchDehydrated({ isReloading: true }), done: false };
+            const obj7 = { value: v3(8659).fetchDehydrated({ isReloading: true }), done: false };
             return obj7;
           }
         } else if (1 === tmp5) {
@@ -170,7 +170,7 @@ export const useICYMIReloadHandler = ReactCompilerGating.isReactCompilerEnabled(
           } else {
             v3 = 2;
             dependencyMap = 1;
-            const obj9 = { value: v3(8627).reloadICYMITab(), done: false };
+            const obj9 = { value: v3(8659).reloadICYMITab(), done: false };
             return obj9;
           }
         } else if (2 === tmp5) {
@@ -184,7 +184,7 @@ export const useICYMIReloadHandler = ReactCompilerGating.isReactCompilerEnabled(
           } else {
             v3 = 3;
             dependencyMap = 1;
-            const obj12 = { value: v3(8627).getGuildChannelScores(), done: false };
+            const obj12 = { value: v3(8659).getGuildChannelScores(), done: false };
             return obj12;
           }
         } else if (arg0 === 1) {
@@ -195,7 +195,7 @@ export const useICYMIReloadHandler = ReactCompilerGating.isReactCompilerEnabled(
           const obj13 = { value, done: true };
           return obj13;
         } else {
-          const recommendedGuilds = v3(8627).getRecommendedGuilds();
+          const recommendedGuilds = v3(8659).getRecommendedGuilds();
           dependencyMap = 3;
           return { value: "IconComponent", done: null };
         }

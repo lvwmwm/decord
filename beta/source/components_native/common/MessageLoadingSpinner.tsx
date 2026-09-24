@@ -1,14 +1,14 @@
-// Module ID: 9699
-// Function ID: 9700
+// Module ID: 9731
+// Function ID: 9732
 // Name: MessageLoadingSpinner
-// Dependencies: [19, 17, 21, 1368, 558, 568, 4462, 580, 5796, 2]
+// Dependencies: [19, 17, 21, 1368, 558, 568, 4494, 580, 5828, 2]
 
-// Module 9699 (MessageLoadingSpinner)
+// Module 9731 (MessageLoadingSpinner)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import noop from "module_19" /* 19 */;
 
-const ActivityIndicator_ActivityIndicator = tmp(5796);
+const ActivityIndicator_ActivityIndicator = tmp(5828);
 require = fn;
 const jsx = fn(21).jsx;
 const PlatformUtils = fn(1368);

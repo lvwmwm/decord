@@ -1,13 +1,13 @@
-// Module ID: 13206
-// Function ID: 13207
+// Module ID: 13242
+// Function ID: 13243
 // Name: ShareIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 9851, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9883, 4493, 2]
 
-// Module 13206 (ShareIcon)
+// Module 13242 (ShareIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod9851 from "module_9851" /* 9851 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9883 from "module_9883" /* 9883 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const ShareIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(9851);
+    const tmpResult = tmp(9883);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const ShareIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9851, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9883, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

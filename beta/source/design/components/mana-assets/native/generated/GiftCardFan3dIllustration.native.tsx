@@ -1,13 +1,13 @@
-// Module ID: 6370
-// Function ID: 6371
+// Module ID: 6402
+// Function ID: 6403
 // Name: GiftCardFan3dIllustration
-// Dependencies: [21, 558, 568, 6371, 5802, 2]
+// Dependencies: [21, 558, 568, 6403, 5834, 2]
 
-// Module 6370 (GiftCardFan3dIllustration)
+// Module 6402 (GiftCardFan3dIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6371 from "module_6371" /* 6371 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6403 from "module_6403" /* 6403 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const GiftCardFan3dIllustration = ReactCompilerGating.isReactCompilerEnab
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6371 };
+    const obj2 = { uri: _modDef6403 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const GiftCardFan3dIllustration = ReactCompilerGating.isReactCompilerEnab
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6371 };
+  const obj2 = { uri: _modDef6403 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

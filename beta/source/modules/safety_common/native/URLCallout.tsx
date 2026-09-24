@@ -1,20 +1,20 @@
-// Module ID: 13246
-// Function ID: 13247
+// Module ID: 13282
+// Function ID: 13283
 // Name: URLCallout
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 13247, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 13283, 4786, 2]
 
-// Module 13246 (URLCallout)
+// Module 13282 (URLCallout)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import SharedStateUtils from "SharedStateUtils" /* 13247 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import SharedStateUtils from "SharedStateUtils" /* 13283 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ScrollView = fn(17).ScrollView;
 const jsxProd = fn(21);
 ({ jsxs: c3, jsx: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { linkCalloutContainer: { maxHeight: 300, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, width: "100%", borderRadius: nativeDefault.radii.md }, linkCalloutContainerText: null };
 let obj3 = { maxHeight: 300, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, width: "100%", borderRadius: nativeDefault.radii.md };
 obj2.linkCalloutContainerText = { padding: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_12, textAlign: "center" };
@@ -33,7 +33,7 @@ export const URLCallout = ReactCompilerGating.isReactCompilerEnabled() ? ((url) 
     const obj3 = { variant: "text-md/normal", color: "text-muted", children: null };
     const items = [protocol, "//"];
     obj3.children = items;
-    const tmp8 = React3(tmp(4754).Text, obj3);
+    const tmp8 = React3(tmp(4786).Text, obj3);
     cResult[0] = protocol;
     cResult[1] = tmp8;
     let tmp6 = tmp8;
@@ -42,7 +42,7 @@ export const URLCallout = ReactCompilerGating.isReactCompilerEnabled() ? ((url) 
   }
   if (cResult[2] !== hostname) {
     const obj4 = { variant: "text-md/semibold", color: "text-default", children: hostname };
-    const tmp11 = React4(tmp(4754).Text, obj4);
+    const tmp11 = React4(tmp(4786).Text, obj4);
     cResult[2] = hostname;
     cResult[3] = tmp11;
     let tmp9 = tmp11;
@@ -51,7 +51,7 @@ export const URLCallout = ReactCompilerGating.isReactCompilerEnabled() ? ((url) 
   }
   if (cResult[4] !== theRestOfTheUrl) {
     const obj5 = { variant: "text-md/normal", color: "text-muted", children: theRestOfTheUrl };
-    const tmp14 = React4(tmp(4754).Text, obj5);
+    const tmp14 = React4(tmp(4786).Text, obj5);
     cResult[4] = theRestOfTheUrl;
     cResult[5] = tmp14;
     let tmp12 = tmp14;

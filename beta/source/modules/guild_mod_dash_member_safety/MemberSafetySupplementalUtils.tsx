@@ -1,19 +1,19 @@
-// Module ID: 7749
-// Function ID: 7750
+// Module ID: 7781
+// Function ID: 7782
 // Name: MemberSafetySupplementalUtils
-// Dependencies: [5, 1078, 1119, 558, 568, 5502, 7750, 4693, 4610, 1275, 2]
+// Dependencies: [5, 1078, 1119, 558, 568, 5534, 7782, 4725, 4642, 1275, 2]
 // Exports: fetchMemberSupplemental, getIntegrationLabel, getJoinSourceTypeLabel, registerFetchedSupplementals
 
-// Module 7749 (MemberSafetySupplementalUtils)
+// Module 7781 (MemberSafetySupplementalUtils)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import HTTPUtils from "HTTPUtils" /* 1275 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import PlatformsDefault from "Platforms" /* 5502 */;
-import ConnectionsHooks from "ConnectionsHooks" /* 7750 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import PlatformsDefault from "Platforms" /* 5534 */;
+import ConnectionsHooks from "ConnectionsHooks" /* 7782 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
-const shared = tmp(4610);
+const shared = tmp(4642);
 require = fn;
 function createFetchKeys(arg0, arr) {
   closure_0 = arg0;

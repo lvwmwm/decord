@@ -1,10 +1,10 @@
-// Module ID: 16375
-// Function ID: 16376
+// Module ID: 16385
+// Function ID: 16386
 // Name: useRelativeTimestamp
-// Dependencies: [32, 19, 558, 568, 7882, 1095, 2]
+// Dependencies: [32, 19, 558, 568, 7914, 1095, 2]
 
-// Module 16375 (useRelativeTimestamp)
-import NotificationCenterUtils from "NotificationCenterUtils" /* 7882 */;
+// Module 16385 (useRelativeTimestamp)
+import NotificationCenterUtils from "NotificationCenterUtils" /* 7914 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -32,7 +32,7 @@ export const useRelativeTimestamp = ReactCompilerGating.isReactCompilerEnabled()
       return tmp6;
     }
     const fn2 = function p() {
-      dependencyMap(timestamp(7882).getRelativeTimestamp(interval, closure_1));
+      dependencyMap(timestamp(7914).getRelativeTimestamp(interval, closure_1));
       const diff = Date.now() - interval;
       if (diff <= closure_1(1095).Millis.DAY) {
         if (diff >= tmp4(1095).Millis.HOUR) {
@@ -42,11 +42,11 @@ export const useRelativeTimestamp = ReactCompilerGating.isReactCompilerEnabled()
         }
         const _setInterval = setInterval;
         interval = setInterval(() => {
-          dependencyMap(timestamp(7882).getRelativeTimestamp(closure_0, closure_1_1));
+          dependencyMap(timestamp(7914).getRelativeTimestamp(closure_0, closure_1_1));
         }, MINUTE, MINUTE - diff % MINUTE);
         return () => clearInterval(closure_0);
       }
-      const obj = timestamp(7882);
+      const obj = timestamp(7914);
     };
     const items = [timestamp, tmp2];
     cResult[3] = tmp2;
@@ -75,7 +75,7 @@ export const useRelativeTimestamp = ReactCompilerGating.isReactCompilerEnabled()
   dependencyMap = tmp[1];
   const items = [timestamp, flag];
   const effect = noop.useEffect(() => {
-    dependencyMap(timestamp(7882).getRelativeTimestamp(interval, flag));
+    dependencyMap(timestamp(7914).getRelativeTimestamp(interval, flag));
     const diff = Date.now() - interval;
     if (diff <= flag(1095).Millis.DAY) {
       if (diff >= tmp4(1095).Millis.HOUR) {
@@ -85,11 +85,11 @@ export const useRelativeTimestamp = ReactCompilerGating.isReactCompilerEnabled()
       }
       const _setInterval = setInterval;
       interval = setInterval(() => {
-        dependencyMap(timestamp(7882).getRelativeTimestamp(closure_0, flag));
+        dependencyMap(timestamp(7914).getRelativeTimestamp(closure_0, flag));
       }, MINUTE, MINUTE - diff % MINUTE);
       return () => clearInterval(closure_0);
     }
-    const obj = timestamp(7882);
+    const obj = timestamp(7914);
   }, items);
   return tmp[0];
 });

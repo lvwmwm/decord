@@ -1,23 +1,23 @@
-// Module ID: 9877
-// Function ID: 9878
+// Module ID: 9909
+// Function ID: 9910
 // Name: EventDetailRsvpSheet
-// Dependencies: [19, 17, 4798, 1376, 1089, 21, 4758, 580, 5743, 558, 568, 8683, 9878, 1119, 4754, 5802, 8876, 7409, 504, 1181, 4603, 9879, 8453, 9880, 6863, 5796, 2]
+// Dependencies: [19, 17, 4830, 1376, 1089, 21, 4790, 580, 5775, 558, 568, 8715, 9910, 1119, 4786, 5834, 8908, 7441, 504, 1181, 4635, 9911, 8485, 9912, 6895, 5828, 2]
 
-// Module 9877 (EventDetailRsvpSheet)
+// Module 9909 (EventDetailRsvpSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import BottomSheetModal from "BottomSheetModal" /* 6863 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import StageSparkleDefault from "StageSparkle" /* 8683 */;
-import Form from "Form" /* 8876 */;
-import _modDef9878 from "module_9878" /* 9878 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import BottomSheetModal from "BottomSheetModal" /* 6895 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
+import StageSparkleDefault from "StageSparkle" /* 8715 */;
+import Form from "Form" /* 8908 */;
+import _modDef9910 from "module_9910" /* 9910 */;
 import noop from "module_19" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
 import UserStore from "UserStore" /* 1376 */;
-import TextStyles from "TextStyles" /* 5743 */;
+import TextStyles from "TextStyles" /* 5775 */;
 
 require = fn;
 function keyExtractor(count) {
@@ -33,7 +33,7 @@ const View = fn(17).View;
 const Fonts = fn(1089).Fonts;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { staticMessageContentContainer: { flex: 1, padding: 16 }, userList: { paddingTop: 16 }, userListRow: { paddingVertical: 8 }, userName: { color: nativeDefault.colors.TEXT_DEFAULT, fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 16 }, emptyDisplayContainer: { alignItems: "center", justifyContent: "center", minHeight: 200 }, staticMessageContent: { height: "100%" }, emptyDisplayTitle: null, remainingUsersIcon: null, remainingUsersIconContainer: null };
 let obj4 = { paddingTop: 24 };
 const merged = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 20, { marginBottom: 8 }));
@@ -55,7 +55,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { icon: _modDef9878 };
+      const obj2 = { icon: _modDef9910 };
       const tmp10 = React5(StageSparkleDefault, obj2);
       cResult[3] = tmp10;
       let tmp6 = tmp10;
@@ -87,7 +87,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = { style: null, children: null };
   const items = [closure_9().emptyDisplayContainer, style];
   obj.style = items;
-  const obj2 = { icon: _modDef9878 };
+  const obj2 = { icon: _modDef9910 };
   const items1 = [React5(StageSparkleDefault, obj2), children];
   obj.children = items1;
   return closure_1_8(View, obj);
@@ -107,7 +107,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   }
   if (cResult[1] !== tmp4.emptyDisplayTitle) {
     const obj2 = { style: tmp4.emptyDisplayTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: first };
-    const tmp9 = React5(tmp(4754).Text, obj2);
+    const tmp9 = React5(tmp(4786).Text, obj2);
     cResult[1] = tmp4.emptyDisplayTitle;
     cResult[2] = tmp9;
     let tmp7 = tmp9;
@@ -148,7 +148,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   }
   if (cResult[1] !== tmp4.emptyDisplayTitle) {
     const obj2 = { style: tmp4.emptyDisplayTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: first };
-    const tmp9 = React5(tmp(4754).Text, obj2);
+    const tmp9 = React5(tmp(4786).Text, obj2);
     cResult[1] = tmp4.emptyDisplayTitle;
     cResult[2] = tmp9;
     let tmp7 = tmp9;
@@ -180,7 +180,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((remainingUsers
   remainingUsersGroup = remainingUsersGroup.remainingUsersGroup;
   const tmp4 = closure_9();
   if (cResult[0] !== tmp4.remainingUsersIcon) {
-    const obj2 = { source: _modDef9878, style: tmp4.remainingUsersIcon };
+    const obj2 = { source: _modDef9910, style: tmp4.remainingUsersIcon };
     const tmp9 = React5(FastImageDefault, obj2);
     cResult[0] = tmp4.remainingUsersIcon;
     cResult[1] = tmp9;
@@ -211,7 +211,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((remainingUsers
       }
     }
     const obj4 = { DEPRECATED_style: tmp4.userListRow, leading: tmp10, label: tmp12 };
-    const tmp16 = React5(tmp(8876).FormRow, obj4, "userRemaining");
+    const tmp16 = React5(tmp(8908).FormRow, obj4, "userRemaining");
     cResult[7] = tmp4.userListRow;
     cResult[8] = tmp10;
     cResult[9] = tmp12;
@@ -227,7 +227,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((remainingUsers
   const tmp = closure_9();
   const obj = { DEPRECATED_style: tmp.userListRow, leading: null, label: null };
   const obj2 = { style: tmp.remainingUsersIconContainer, children: null };
-  const obj3 = { source: _modDef9878, style: tmp.remainingUsersIcon };
+  const obj3 = { source: _modDef9910, style: tmp.remainingUsersIcon };
   obj2.children = React5(FastImageDefault, obj3);
   obj.leading = React5(View, obj2);
   const intl = util.intl;
@@ -301,7 +301,7 @@ class EventDetailRsvpSheet {
     if (null != error) {
       tmp11 = jsx;
       obj9 = { children: null };
-      tmp12 = f52111;
+      tmp12 = f52154;
       obj10 = { style: null };
       items2 = [, ];
       items2[0] = tmp.staticMessageContent;
@@ -320,14 +320,14 @@ class EventDetailRsvpSheet {
         }
       }
       obj10.style = items2;
-      obj9.children = jsx(f52111, obj10);
+      obj9.children = jsx(f52154, obj10);
       tmp8 = jsx(StaticMessageContainer, obj9);
     } else {
       num2 = 0;
       if (0 === userListItems.length) {
         tmp9 = jsx;
         obj11 = { children: null };
-        tmp10 = f52113;
+        tmp10 = f52156;
         obj12 = { style: null };
         items3 = [, ];
         items3[0] = tmp.staticMessageContent;
@@ -346,7 +346,7 @@ class EventDetailRsvpSheet {
           }
         }
         obj12.style = items3;
-        obj11.children = jsx(f52113, obj12);
+        obj11.children = jsx(f52156, obj12);
         tmp8 = jsx(StaticMessageContainer, obj11);
       } else {
         tmp3 = jsx;
@@ -388,7 +388,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ev
   eventUser = eventUser.eventUser;
   const guildId = eventUser.guildId;
   closure_9();
-  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)().analyticsLocations;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
     cResult[0] = items;
@@ -469,7 +469,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ev
   eventUser = eventUser.eventUser;
   let analyticsLocations;
   const tmp = closure_9();
-  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)().analyticsLocations;
   const items = [UserStore];
   const stateFromStores = eventUser(504).useStateFromStores(items, () => UserStore.getUser(eventUser.user_id));
   const obj = eventUser(504);
@@ -492,16 +492,16 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ev
     nick = member.nick;
   }
   if (nick == null) {
-    nick = tmp2(4603).getName(eventUser.user);
-    const tmp2Result2 = tmp2(4603);
+    nick = tmp2(4635).getName(eventUser.user);
+    const tmp2Result2 = tmp2(4635);
   }
   obj6.nick = nick;
   ({ userName: obj5.usernameStyle, userName: obj5.nicknameStyle } = tmp);
-  obj3.label = closure_7(analyticsLocations(9879), obj6);
+  obj3.label = closure_7(analyticsLocations(9911), obj6);
   obj3.onPress = function onPress() {
     showUserProfileActionSheetDefault({ userId: eventUser.user_id, sourceAnalyticsLocations: analyticsLocations });
   };
-  return closure_7(eventUser(8876).FormRow, obj3, eventUser.user_id);
+  return closure_7(eventUser(8908).FormRow, obj3, eventUser.user_id);
 }));
 EventDetailRsvpSheet.displayName = "EventDetailRsvpSheet";
 size = fn(2);

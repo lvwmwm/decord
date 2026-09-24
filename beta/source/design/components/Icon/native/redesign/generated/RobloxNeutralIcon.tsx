@@ -1,13 +1,13 @@
-// Module ID: 8967
-// Function ID: 8968
+// Module ID: 8999
+// Function ID: 9000
 // Name: RobloxNeutralIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 8968, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9000, 4493, 2]
 
-// Module 8967 (RobloxNeutralIcon)
+// Module 8999 (RobloxNeutralIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod8968 from "module_8968" /* 8968 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9000 from "module_9000" /* 9000 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const RobloxNeutralIcon = ReactCompilerGating.isReactCompilerEnabled() ? 
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(8968);
+    const tmpResult = tmp(9000);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const RobloxNeutralIcon = ReactCompilerGating.isReactCompilerEnabled() ? 
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8968, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9000, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

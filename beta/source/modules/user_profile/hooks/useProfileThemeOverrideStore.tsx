@@ -1,14 +1,14 @@
-// Module ID: 8502
-// Function ID: 8503
+// Module ID: 8534
+// Function ID: 8535
 // Name: useProfileThemeOverrideStore
-// Dependencies: [1078, 562, 558, 568, 4693, 8503, 4610, 2]
+// Dependencies: [1078, 562, 558, 568, 4725, 8535, 4642, 2]
 
-// Module 8502 (useProfileThemeOverrideStore)
+// Module 8534 (useProfileThemeOverrideStore)
 import c from "c" /* 568 */;
 import Constants from "Constants" /* 1078 */;
-import shared from "shared" /* 4610 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8503 */;
+import shared from "shared" /* 4642 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8535 */;
 import module_562 from "module_562" /* 562 */;
 import "ReactCompilerGating";
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -70,12 +70,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (null != first1) {
       tmp12 = tmp6;
       if (null != tmp10) {
-        let profileTheme = tmp(8503).getProfileTheme(first1);
+        let profileTheme = tmp(8535).getProfileTheme(first1);
         if (profileTheme == null) {
           profileTheme = tmp6;
         }
         tmp12 = profileTheme;
-        const tmpResult = tmp(8503);
+        const tmpResult = tmp(8535);
       }
     }
     cResult[1] = tmp6;
@@ -90,8 +90,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (themeType !== ThemeTypes.ASH) {
       let isThemeLightResult = themeType === tmp17.ASH;
       if (isThemeLightResult) {
-        isThemeLightResult = tmp(4610).isThemeLight(tmp6);
-        const tmpResult3 = tmp(4610);
+        isThemeLightResult = tmp(4642).isThemeLight(tmp6);
+        const tmpResult3 = tmp(4642);
       }
       let DARK = themeType;
       if (isThemeLightResult) {
@@ -99,7 +99,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     } else {
       DARK = tmp6;
-      const tmpResult4 = tmp(4610);
+      const tmpResult4 = tmp(4642);
     }
     if (cResult[5] === null) {
       if (cResult[6] === null) {

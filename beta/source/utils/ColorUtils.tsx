@@ -1,14 +1,14 @@
-// Module ID: 4608
-// Function ID: 4609
+// Module ID: 4640
+// Function ID: 4641
 // Name: ColorUtils
-// Dependencies: [32, 676, 1119, 3, 4609, 2]
+// Dependencies: [32, 676, 1119, 3, 4641, 2]
 // Exports: findColorByHsv, getAccessibleForegroundColor, getColorLightnessAdjusted, getComplimentaryPaletteForColor, getSaturatedColorHex, hexOpacityToRgba, hexToColorName, hexToRgb, hexToRgbArray, hexToRgba, hexToRgbaString, hexWithOpacity, hslToString, interpolateColor, mixColors, rgbToHex, rgbToHsl, rgbaToHex
 
-// Module 4608 (ColorUtils)
+// Module 4640 (ColorUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef676 from "module_676" /* 676 */;
 import util from "util" /* 1119 */;
-import utils_ColorDefault from "utils/Color" /* 4609 */;
+import utils_ColorDefault from "utils/Color" /* 4641 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

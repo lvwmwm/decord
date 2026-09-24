@@ -1,11 +1,11 @@
-// Module ID: 13406
-// Function ID: 13407
+// Module ID: 13442
+// Function ID: 13443
 // Name: useAddToWishlistGridItems
-// Dependencies: [19, 1378, 558, 568, 11091, 13381, 2]
+// Dependencies: [19, 1378, 558, 568, 11127, 13417, 2]
 
-// Module 13406 (useAddToWishlistGridItems)
+// Module 13442 (useAddToWishlistGridItems)
 import c from "c" /* 568 */;
-import WishlistUtils from "WishlistUtils" /* 13381 */;
+import WishlistUtils from "WishlistUtils" /* 13417 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -25,7 +25,7 @@ export const useAddToWishlistGridItems = ReactCompilerGating.isReactCompilerEnab
       if (cResult[2] === userId) {
         let tmp4 = cResult[3];
       }
-      const recommendationsForSingleUser = tmp(11091).useRecommendationsForSingleUser(tmp4);
+      const recommendationsForSingleUser = tmp(11127).useRecommendationsForSingleUser(tmp4);
       ({ recommendations, status } = recommendationsForSingleUser);
       let items;
       if (wishlist != null) {
@@ -118,9 +118,9 @@ export const useAddToWishlistGridItems = ReactCompilerGating.isReactCompilerEnab
             return obj;
           }
         }
-        tmp21[0] = tmp(13381).createNitroSuggestedSku();
+        tmp21[0] = tmp(13417).createNitroSuggestedSku();
         mapped1.unshift(tmp21);
-        const tmpResult2 = tmp(13381);
+        const tmpResult2 = tmp(13417);
       }
       const substr = mapped1.slice(0, maxWishlistItemsToShow);
       cResult[6] = maxWishlistItemsToShow;
@@ -129,7 +129,7 @@ export const useAddToWishlistGridItems = ReactCompilerGating.isReactCompilerEnab
       cResult[9] = obj4;
       cResult[10] = substr;
       tmp17 = substr;
-      const tmpResult = tmp(11091);
+      const tmpResult = tmp(11127);
     }
   }
   const obj3 = { userId, numItems: numWishlistItemsToRecommend, source };

@@ -1,11 +1,11 @@
-// Module ID: 7628
-// Function ID: 7629
+// Module ID: 7660
+// Function ID: 7661
 // Name: GuildBoostingMarketingOverview
-// Dependencies: [32, 19, 17, 2067, 1376, 1078, 21, 4758, 558, 568, 7629, 504, 1488, 7409, 5813, 7637, 1384, 1245, 577, 7501, 5081, 7645, 13841, 13848, 13853, 13863, 13868, 13872, 2]
+// Dependencies: [32, 19, 17, 2067, 1376, 1078, 21, 4790, 558, 568, 7661, 504, 1488, 7441, 5845, 7669, 1384, 1245, 577, 7533, 5113, 7677, 13877, 13884, 13889, 13899, 13904, 13908, 2]
 
-// Module 7628 (GuildBoostingMarketingOverview)
+// Module 7660 (GuildBoostingMarketingOverview)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7645 */;
+import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7677 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -17,7 +17,7 @@ const Constants = fn(1078);
 ({ AnalyticEvents: closure_8, AnalyticsPages: closure_9 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_13 = createStyles.createStyles({ wrapper: { paddingBottom: 24 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -241,9 +241,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }, items3);
   const effect1 = obj4.useEffect(() => {
     guildBoostSlots(stateFromStores[18]).wait(() => {
-      const premiumSubscriptionPlans = guildId(7501).fetchPremiumSubscriptionPlans();
-      const obj = guildId(7501);
-      const paymentSources = guildId(5081).fetchPaymentSources();
+      const premiumSubscriptionPlans = guildId(7533).fetchPremiumSubscriptionPlans();
+      const obj = guildId(7533);
+      const paymentSources = guildId(5113).fetchPaymentSources();
     });
   }, []);
   let tmp18 = null;

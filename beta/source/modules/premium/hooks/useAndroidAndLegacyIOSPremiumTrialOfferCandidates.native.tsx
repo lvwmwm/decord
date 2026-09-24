@@ -1,14 +1,14 @@
-// Module ID: 7695
-// Function ID: 7696
+// Module ID: 7727
+// Function ID: 7728
 // Name: useAndroidAndLegacyIOSPremiumTrialOfferCandidates
-// Dependencies: [7484, 1378, 558, 7696, 7487, 568, 565, 2]
+// Dependencies: [7516, 1378, 558, 7728, 7519, 568, 565, 2]
 
-// Module 7695 (useAndroidAndLegacyIOSPremiumTrialOfferCandidates)
+// Module 7727 (useAndroidAndLegacyIOSPremiumTrialOfferCandidates)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
-import ProductIds from "ProductIds" /* 7487 */;
-import useTrialOffer from "useTrialOffer" /* 7696 */;
-import IAPStore from "IAPStore" /* 7484 */;
+import ProductIds from "ProductIds" /* 7519 */;
+import useTrialOffer from "useTrialOffer" /* 7728 */;
+import IAPStore from "IAPStore" /* 7516 */;
 
 require = fn;
 const PremiumConstants = fn(1378);

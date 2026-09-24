@@ -1,13 +1,13 @@
-// Module ID: 6696
-// Function ID: 6697
+// Module ID: 6728
+// Function ID: 6729
 // Name: ShopIllocon
-// Dependencies: [21, 558, 568, 6697, 5802, 2]
+// Dependencies: [21, 558, 568, 6729, 5834, 2]
 
-// Module 6696 (ShopIllocon)
+// Module 6728 (ShopIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6697 from "module_6697" /* 6697 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6729 from "module_6729" /* 6729 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const ShopIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6697 };
+    const obj2 = { uri: _modDef6729 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const ShopIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6697 };
+  const obj2 = { uri: _modDef6729 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

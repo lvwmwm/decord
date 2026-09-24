@@ -1,15 +1,15 @@
-// Module ID: 9547
-// Function ID: 9548
+// Module ID: 9579
+// Function ID: 9580
 // Name: oauth2/Header
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 1401, 1181, 4754, 9548, 1389, 1119, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 1401, 1181, 4786, 9580, 1389, 1119, 2]
 
-// Module 9547 (oauth2/Header)
+// Module 9579 (oauth2/Header)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import BotTagDefault from "BotTag" /* 9548 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import BotTagDefault from "BotTag" /* 9580 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,7 +17,7 @@ const View = fn(17).View;
 const UserFlags = fn(1078).UserFlags;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { header: { paddingBottom: 16, marginHorizontal: 16, borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm, flexDirection: "column", justifyContent: "center", alignItems: "center" }, applicationNameWrapper: { flexDirection: "row" }, headerIcons: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", marginBottom: 24 }, ellipseGroup: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: 24 }, ellipse: null, botTag: null };
 let size = { width: 4, height: 4, marginHorizontal: 2, backgroundColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, opacity: 0.1, borderRadius: 2 };
 obj2.ellipse = size;
@@ -98,7 +98,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 }
                 if (cResult[23] !== application.name) {
                   const obj9 = { variant: "text-lg/bold", color: "mobile-text-heading-primary", children: application.name };
-                  const tmp35 = hasOwnProperty(tmp(4754).Text, obj9);
+                  const tmp35 = hasOwnProperty(tmp(4786).Text, obj9);
                   cResult[23] = application.name;
                   cResult[24] = tmp35;
                   let tmp33 = tmp35;
@@ -128,7 +128,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       } else {
                         if (cResult[34] !== cResult[33]) {
                           const obj10 = { variant: "heading-md/normal", color: "text-default", children: tmp48 };
-                          const tmp53 = hasOwnProperty(tmp(4754).Text, obj10);
+                          const tmp53 = hasOwnProperty(tmp(4786).Text, obj10);
                           cResult[34] = tmp48;
                           cResult[35] = tmp53;
                           let tmp51 = tmp53;
@@ -250,8 +250,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const tmp9Result = tmp9(1389);
     }
     obj13.verified = hasFlagResult;
-    tmp8Result = tmp8(tmp2(9548), obj13);
-    const tmp2Result2 = tmp2(9548);
+    tmp8Result = tmp8(tmp2(9580), obj13);
+    const tmp2Result2 = tmp2(9580);
   }
   items3[1] = tmp8Result;
   obj11.children = items3;

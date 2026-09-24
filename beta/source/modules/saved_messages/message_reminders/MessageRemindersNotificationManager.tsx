@@ -1,13 +1,13 @@
-// Module ID: 17889
-// Function ID: 17890
+// Module ID: 17899
+// Function ID: 17900
 // Name: MessageRemindersNotificationManager
-// Dependencies: [11782, 8103, 577, 1095, 7365, 2]
+// Dependencies: [11818, 8135, 577, 1095, 7397, 2]
 
-// Module 17889 (MessageRemindersNotificationManager)
+// Module 17899 (MessageRemindersNotificationManager)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import DurationsDefault from "Durations" /* 1095 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11782 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11818 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
 
 let require = fn;
 function scheduleNextNotification() {

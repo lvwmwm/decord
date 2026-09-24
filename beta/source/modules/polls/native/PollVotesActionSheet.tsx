@@ -1,30 +1,30 @@
-// Module ID: 11842
-// Function ID: 11843
+// Module ID: 11878
+// Function ID: 11879
 // Name: PollVotesActionSheet
-// Dependencies: [32, 5, 19, 17, 4750, 5678, 2045, 4978, 1376, 21, 4758, 580, 558, 568, 1401, 504, 7377, 1119, 4754, 5341, 8008, 6891, 11843, 7409, 11849, 10544, 8010, 4910, 4603, 5822, 1181, 9879, 8453, 4497, 4759, 8995, 4693, 4610, 11850, 11851, 7429, 4725, 7397, 2]
+// Dependencies: [32, 5, 19, 17, 4782, 5710, 2045, 5010, 1376, 21, 4790, 580, 558, 568, 1401, 504, 7409, 1119, 4786, 5373, 8040, 6923, 11879, 7441, 11885, 10580, 8042, 4942, 4635, 5854, 1181, 9911, 8485, 4529, 4791, 9027, 4725, 4642, 11886, 11887, 7461, 4757, 7429, 2]
 // Exports: default
 
-// Module 11842 (PollVotesActionSheet)
+// Module 11878 (PollVotesActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import timing from "timing" /* 4759 */;
-import Pressables from "Pressables" /* 5341 */;
-import EmojiDefault from "Emoji" /* 7377 */;
-import PollsUtils from "PollsUtils" /* 8008 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import formatPollMessageChatData from "formatPollMessageChatData" /* 11843 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import timing from "timing" /* 4791 */;
+import Pressables from "Pressables" /* 5373 */;
+import EmojiDefault from "Emoji" /* 7409 */;
+import PollsUtils from "PollsUtils" /* 8040 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
+import formatPollMessageChatData from "formatPollMessageChatData" /* 11879 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
-import EmojiStore from "EmojiStore" /* 5678 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import EmojiStore from "EmojiStore" /* 5710 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import MessageStore from "MessageStore" /* 4978 */;
+import MessageStore from "MessageStore" /* 5010 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -125,7 +125,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: metroRequire, View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { headerText: { textAlign: "center", paddingHorizontal: 16 }, subheaderText: { textAlign: "center", marginTop: 2, paddingHorizontal: 16 }, answerScroll: { marginTop: 24 }, answerScrollContainer: { gap: 4, paddingHorizontal: 16 }, answerName: { marginTop: 16, marginHorizontal: 16, marginBottom: 8 }, list: { paddingHorizontal: 16 }, answerButton: { padding: 8, flexDirection: "row", alignItems: "center", borderRadius: nativeDefault.radii.xs, maxWidth: 200 }, answerSelected: null, answerEmoji: null, answerText: null, emojiText: null, emojiImage: null, noResultsContainer: null, noResultsImage: null, noResultsTitle: null, noResultsSubtitle: null };
 let obj3 = { padding: 8, flexDirection: "row", alignItems: "center", borderRadius: nativeDefault.radii.xs, maxWidth: 200 };
 obj.answerSelected = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
@@ -311,7 +311,7 @@ let closure_18 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
                 const obj3 = { ref, onPress: tmp5, style: tmp9, accessibilityRole: "tab", accessibilityState: tmp10, accessibilityLabel: tmp6, children: null };
                 const items = [tmp11, tmp15, tmp20];
                 obj3.children = items;
-                const tmp26 = closure_1_15(tmp(5341).PressableHighlight, obj3);
+                const tmp26 = closure_1_15(tmp(5373).PressableHighlight, obj3);
                 cResult[23] = tmp6;
                 cResult[24] = tmp5;
                 cResult[25] = ref;
@@ -326,7 +326,7 @@ let closure_18 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
               const obj4 = { variant: "text-sm/semibold", color: str, lineClamp: 1, children: null };
               const items1 = [" ", "(", tmp18, ")"];
               obj4.children = items1;
-              const tmp22 = closure_1_15(tmp(4754).Text, obj4);
+              const tmp22 = closure_1_15(tmp(4786).Text, obj4);
               cResult[20] = tmp18;
               cResult[21] = str;
               cResult[22] = tmp22;
@@ -336,7 +336,7 @@ let closure_18 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
           let tmp16 = null;
           if (null != answer.poll_media.text) {
             const obj5 = { style: tmp4.answerText, variant: "text-sm/semibold", color: str, lineClamp: 1, children: answer.poll_media.text };
-            tmp16 = state(tmp(4754).Text, obj5);
+            tmp16 = state(tmp(4786).Text, obj5);
           }
           cResult[14] = answer.poll_media.text;
           cResult[15] = tmp4.answerText;
@@ -417,7 +417,7 @@ let closure_18 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
   let tmp11 = null;
   if (null != answer.poll_media.text) {
     const obj4 = { style: tmp.answerText, variant: "text-sm/semibold", color: str, lineClamp: 1, children: answer.poll_media.text };
-    tmp11 = state(tmp3(4754).Text, obj4);
+    tmp11 = state(tmp3(4786).Text, obj4);
   }
   items2[1] = tmp11;
   const obj5 = { variant: "text-sm/semibold", color: str, lineClamp: 1, children: null };
@@ -873,9 +873,9 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_16();
   const tmp6 = useThemeDefault();
   if (obj2.isThemeDark(tmp6)) {
-    let tmp5Result = tmp5(11850);
+    let tmp5Result = tmp5(11886);
   } else {
-    tmp5Result = tmp5(11851);
+    tmp5Result = tmp5(11887);
   }
   if (cResult[0] === tmp4.noResultsImage) {
     if (cResult[1] === tmp5Result) {
@@ -892,7 +892,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[4] !== tmp4.noResultsTitle) {
       const obj3 = { style: tmp4.noResultsTitle, variant: "heading-md/bold", color: "mobile-text-heading-primary", children: tmp11 };
-      const tmp15 = state(tmp(4754).Text, obj3);
+      const tmp15 = state(tmp(4786).Text, obj3);
       cResult[4] = tmp4.noResultsTitle;
       cResult[5] = tmp15;
       let tmp13 = tmp15;
@@ -910,7 +910,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[7] !== tmp4.noResultsSubtitle) {
       const obj4 = { style: tmp4.noResultsSubtitle, variant: "text-sm/semibold", color: "text-default", children: tmp16 };
-      const tmp20 = state(tmp(4754).Text, obj4);
+      const tmp20 = state(tmp(4786).Text, obj4);
       cResult[7] = tmp4.noResultsSubtitle;
       cResult[8] = tmp20;
       let tmp18 = tmp20;
@@ -952,9 +952,9 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp6 = React5;
   const tmp8 = timestampProducer;
   if (obj3.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(11850);
+    let tmp2Result = tmp2(11886);
   } else {
-    tmp2Result = tmp2(11851);
+    tmp2Result = tmp2(11887);
   }
   obj2.source = tmp2Result;
   const items = [state(tmp8, obj2), , ];

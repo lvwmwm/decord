@@ -1,12 +1,12 @@
-// Module ID: 14370
-// Function ID: 14371
+// Module ID: 14408
+// Function ID: 14409
 // Name: ThemedIcon
-// Dependencies: [109, 19, 21, 558, 568, 4462, 5190, 2]
+// Dependencies: [109, 19, 21, 558, 568, 4494, 5222, 2]
 
-// Module 14370 (ThemedIcon)
+// Module 14408 (ThemedIcon)
 import c from "c" /* 568 */;
-import useToken from "useToken" /* 4462 */;
-import IconDefault from "Icon" /* 5190 */;
+import useToken from "useToken" /* 4494 */;
+import IconDefault from "Icon" /* 5222 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

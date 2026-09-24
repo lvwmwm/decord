@@ -1,13 +1,13 @@
-// Module ID: 13754
-// Function ID: 13755
+// Module ID: 13790
+// Function ID: 13791
 // Name: usePremiumGroupPrimaryName
-// Dependencies: [558, 568, 13755, 13759, 4603, 2]
+// Dependencies: [558, 568, 13791, 13795, 4635, 2]
 
-// Module 13754 (usePremiumGroupPrimaryName)
+// Module 13790 (usePremiumGroupPrimaryName)
 import c from "c" /* 568 */;
-import UserUtils from "UserUtils" /* 4603 */;
-import usePremiumGroupMembershipDefault from "usePremiumGroupMembership" /* 13755 */;
-import usePremiumGroupMembersDefault from "usePremiumGroupMembers" /* 13759 */;
+import UserUtils from "UserUtils" /* 4635 */;
+import usePremiumGroupMembershipDefault from "usePremiumGroupMembership" /* 13791 */;
+import usePremiumGroupMembersDefault from "usePremiumGroupMembers" /* 13795 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (subscriptionId == null) {
         subscriptionId = null;
       }
-      const premiumGroupMembers = tmp8(13759)(subscriptionId, tmp9).premiumGroupMembers;
+      const premiumGroupMembers = tmp8(13795)(subscriptionId, tmp9).premiumGroupMembers;
       let primary;
       if (premiumGroupMembers != null) {
         primary = premiumGroupMembers.primary;

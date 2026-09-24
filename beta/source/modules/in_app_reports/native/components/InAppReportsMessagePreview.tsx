@@ -1,23 +1,23 @@
-// Module ID: 8927
-// Function ID: 8928
+// Module ID: 8959
+// Function ID: 8960
 // Name: InAppReportsMessagePreview
-// Dependencies: [19, 17, 21, 4758, 580, 8195, 558, 568, 4608, 1119, 4754, 8928, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 8227, 558, 568, 4640, 1119, 4786, 8960, 2]
 
-// Module 8927 (InAppReportsMessagePreview)
+// Module 8959 (InAppReportsMessagePreview)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ColorUtils from "ColorUtils" /* 4608 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import RowGeneratorDefault from "RowGenerator" /* 8195 */;
-import ChatItemDefault from "ChatItem" /* 8928 */;
+import ColorUtils from "ColorUtils" /* 4640 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import RowGeneratorDefault from "RowGenerator" /* 8227 */;
+import ChatItemDefault from "ChatItem" /* 8960 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, borderColor: { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY }, title: { lineHeight: 16, marginBottom: 8 }, chatItemContainer: null };
 let obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj2.chatItemContainer = { minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 8 };
@@ -34,11 +34,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   message = message.message;
   const tmp4 = closure_6();
   if (cResult[0] !== tmp4.borderColor.color) {
-    const hexWithOpacityResult = tmp(4608).hexWithOpacity(tmp4.borderColor.color, 0.08);
+    const hexWithOpacityResult = tmp(4640).hexWithOpacity(tmp4.borderColor.color, 0.08);
     cResult[0] = tmp4.borderColor.color;
     cResult[1] = hexWithOpacityResult;
     let tmp5 = hexWithOpacityResult;
-    const tmpResult = tmp(4608);
+    const tmpResult = tmp(4640);
   } else {
     tmp5 = cResult[1];
   }
@@ -53,7 +53,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   }
   if (cResult[3] !== tmp4.title) {
     const obj2 = { style: title, accessibilityRole: "header", variant: "text-xs/bold", children: tmp7 };
-    const tmp11 = React4(tmp(4754).Text, obj2);
+    const tmp11 = React4(tmp(4786).Text, obj2);
     cResult[3] = tmp4.title;
     cResult[4] = tmp11;
     let tmp9 = tmp11;

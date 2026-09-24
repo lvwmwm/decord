@@ -1,13 +1,13 @@
-// Module ID: 7371
-// Function ID: 7372
+// Module ID: 7403
+// Function ID: 7404
 // Name: common/SafeAreaView
-// Dependencies: [109, 19, 17, 21, 558, 568, 1616, 5801, 1335, 2]
+// Dependencies: [109, 19, 17, 21, 558, 568, 1616, 5833, 1335, 2]
 
-// Module 7371 (common/SafeAreaView)
+// Module 7403 (common/SafeAreaView)
 import c from "c" /* 568 */;
 import _modDef1335 from "module_1335" /* 1335 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import useRefValueDefault from "useRefValue" /* 5801 */;
+import useRefValueDefault from "useRefValue" /* 5833 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

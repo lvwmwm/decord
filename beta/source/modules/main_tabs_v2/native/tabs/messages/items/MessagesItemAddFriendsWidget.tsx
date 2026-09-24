@@ -1,19 +1,19 @@
-// Module ID: 16435
-// Function ID: 16436
+// Module ID: 16445
+// Function ID: 16446
 // Name: MessagesItemAddFriendsWidget
-// Dependencies: [5, 19, 17, 1078, 21, 13564, 580, 4758, 8654, 4457, 1119, 10055, 8006, 558, 568, 4617, 4754, 5341, 14126, 16436, 2]
+// Dependencies: [5, 19, 17, 1078, 21, 13600, 580, 4790, 8686, 4489, 1119, 10094, 8038, 558, 568, 4649, 4786, 5373, 14163, 16446, 2]
 
-// Module 16435 (MessagesItemAddFriendsWidget)
+// Module 16445 (MessagesItemAddFriendsWidget)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import RootNavigationRef from "RootNavigationRef" /* 4617 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8654 */;
-import IconActionButtonDefault from "IconActionButton" /* 13564 */;
-import _modDef14126 from "module_14126" /* 14126 */;
-import _modDef16436 from "module_16436" /* 16436 */;
+import RootNavigationRef from "RootNavigationRef" /* 4649 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8686 */;
+import IconActionButtonDefault from "IconActionButton" /* 13600 */;
+import _modDef14163 from "module_14163" /* 14163 */;
+import _modDef16446 from "module_16446" /* 16446 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -226,8 +226,8 @@ const View = fn(17).View;
 const InstantInviteSources = fn(1078).InstantInviteSources;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const sum = fn(13564).ICON_ACTION_BUTTON_SIZE + nativeDefault.space.PX_16;
-const createStyles = fn(4758);
+const sum = fn(13600).ICON_ACTION_BUTTON_SIZE + nativeDefault.space.PX_16;
+const createStyles = fn(4790);
 let obj = { container: { height: sum, paddingHorizontal: nativeDefault.space.PX_8, justifyContent: "space-between", flexDirection: "row", alignItems: "center" }, title: null, actions: null, actionIcon: null };
 let obj3 = { height: sum, paddingHorizontal: nativeDefault.space.PX_8, justifyContent: "space-between", flexDirection: "row", alignItems: "center" };
 obj.title = { flexDirection: "row", alignItems: "center", borderRadius: nativeDefault.radii.md, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_12 };
@@ -272,7 +272,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let obj2 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, maxFontSizeMultiplier: 2, children: null };
     const intl2 = tmp(1119).intl;
     obj2.children = intl2.string(tmp(1119).t.afcl67);
-    const tmp10 = React5(tmp(4754).Text, obj2);
+    const tmp10 = React5(tmp(4786).Text, obj2);
     cResult[2] = tmp10;
     let tmp8 = tmp10;
   } else {
@@ -280,7 +280,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[3] !== tmp4.title) {
     const obj3 = { accessibilityLabel: tmp6, accessibilityRole: "button", onPress: first, style: tmp4.title, children: tmp8 };
-    const tmp13 = React5(tmp(5341).PressableHighlight, obj3);
+    const tmp13 = React5(tmp(5373).PressableHighlight, obj3);
     cResult[3] = tmp4.title;
     cResult[4] = tmp13;
     let tmp11 = tmp13;
@@ -297,7 +297,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp14 = cResult[5];
   }
   if (cResult[6] !== tmp4.actionIcon) {
-    const obj4 = { style: actionIcon, variant: "filled", source: _modDef14126, onPress: handleShare, accessibilityLabel: tmp14 };
+    const obj4 = { style: actionIcon, variant: "filled", source: _modDef14163, onPress: handleShare, accessibilityLabel: tmp14 };
     const tmp21 = React5(IconActionButtonDefault, obj4);
     cResult[6] = tmp4.actionIcon;
     cResult[7] = tmp21;
@@ -314,7 +314,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp22 = cResult[8];
   }
   if (cResult[9] !== tmp4.actionIcon) {
-    const obj5 = { style: tmp4.actionIcon, variant: "filled", source: _modDef16436, onPress: handleLink, accessibilityLabel: tmp22 };
+    const obj5 = { style: tmp4.actionIcon, variant: "filled", source: _modDef16446, onPress: handleLink, accessibilityLabel: tmp22 };
     const tmp29 = React5(IconActionButtonDefault, obj5);
     cResult[9] = tmp4.actionIcon;
     cResult[10] = tmp29;
@@ -379,12 +379,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj2.children = React5(Text_Text.Text, obj3);
   const items = [React5(Pressables.PressableHighlight, obj2), ];
   const obj4 = { style: tmp.actions, children: null };
-  const obj5 = { style: tmp.actionIcon, variant: "filled", source: _modDef14126, onPress: handleShare, accessibilityLabel: null };
+  const obj5 = { style: tmp.actionIcon, variant: "filled", source: _modDef14163, onPress: handleShare, accessibilityLabel: null };
   const intl3 = util.intl;
   obj5.accessibilityLabel = intl3.string(util.t.Ej3B3Y);
   const items1 = [React5(IconActionButtonDefault, obj5), ];
   const obj6 = { style: tmp.actionIcon, variant: "filled", source: null, onPress: null, accessibilityLabel: null };
-  obj6.source = _modDef16436;
+  obj6.source = _modDef16446;
   obj6.onPress = handleLink;
   const intl4 = util.intl;
   obj6.accessibilityLabel = intl4.string(util.t.WqhZss);

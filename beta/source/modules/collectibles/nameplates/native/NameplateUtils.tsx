@@ -1,10 +1,10 @@
-// Module ID: 9098
-// Function ID: 9099
+// Module ID: 9130
+// Function ID: 9131
 // Name: NameplateUtils
 // Dependencies: [1971, 2]
 // Exports: getNameplateAssets
 
-// Module 9098 (NameplateUtils)
+// Module 9130 (NameplateUtils)
 import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1971 */;
 import size from "module_2" /* 2 */;
 

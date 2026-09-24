@@ -1,13 +1,13 @@
-// Module ID: 5948
-// Function ID: 5949
+// Module ID: 5980
+// Function ID: 5981
 // Name: ActivatedGem3dIllustration
-// Dependencies: [21, 558, 568, 5949, 5802, 2]
+// Dependencies: [21, 558, 568, 5981, 5834, 2]
 
-// Module 5948 (ActivatedGem3dIllustration)
+// Module 5980 (ActivatedGem3dIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef5949 from "module_5949" /* 5949 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef5981 from "module_5981" /* 5981 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const ActivatedGem3dIllustration = ReactCompilerGating.isReactCompilerEna
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef5949 };
+    const obj2 = { uri: _modDef5981 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const ActivatedGem3dIllustration = ReactCompilerGating.isReactCompilerEna
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5949 };
+  const obj2 = { uri: _modDef5981 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

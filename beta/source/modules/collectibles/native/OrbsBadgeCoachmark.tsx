@@ -1,15 +1,15 @@
-// Module ID: 11442
-// Function ID: 11443
+// Module ID: 11478
+// Function ID: 11479
 // Name: OrbsBadgeCoachmark
-// Dependencies: [109, 19, 17, 21, 4758, 558, 568, 11443, 1119, 4617, 10452, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 558, 568, 11479, 1119, 4649, 10491, 2]
 // Exports: default
 
-// Module 11442 (OrbsBadgeCoachmark)
+// Module 11478 (OrbsBadgeCoachmark)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import RootNavigationRef from "RootNavigationRef" /* 4617 */;
-import useCoachmark from "useCoachmark" /* 10452 */;
-import _modDef11443 from "module_11443" /* 11443 */;
+import RootNavigationRef from "RootNavigationRef" /* 4649 */;
+import useCoachmark from "useCoachmark" /* 10491 */;
+import _modDef11479 from "module_11479" /* 11479 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,14 +18,14 @@ let closure_3 = ["badgeRef"];
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, Image: closure_7 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ coachmarkImageContainer: { alignItems: "center", justifyContent: "center" }, coachmarkImage: { width: 80, height: 80 }, coachmarkDescription: { marginBottom: -10 } });
 let ReactCompilerGating = fn(558);
 let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(6);
   const tmp3 = closure_9();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef11443 };
+    const obj2 = { uri: _modDef11479 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -54,8 +54,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const tmp = closure_9();
   const obj = { style: tmp.coachmarkImageContainer, children: null };
-  const obj2 = { source: { uri: _modDef11443 }, style: tmp.coachmarkImage };
-  obj.children = <React5 source={{ uri: _modDef11443 }} style={tmp.coachmarkImage} />;
+  const obj2 = { source: { uri: _modDef11479 }, style: tmp.coachmarkImage };
+  obj.children = <React5 source={{ uri: _modDef11479 }} style={tmp.coachmarkImage} />;
   return <timestampProducer style={tmp.coachmarkImageContainer}>{null}</timestampProducer>;
 });
 fn(558);
@@ -81,7 +81,7 @@ export default function OrbsBadgeCoachmark(badgeRef) {
       tmp9 = cResult[1];
       tmp10 = cResult[2];
     }
-    obj3 = obj3(10452);
+    obj3 = obj3(10491);
     coachmark = obj3.useCoachmark(tmp9, tmp10);
   } else {
     const merged = Object.assign(badgeRef, Object.assign({ badgeRef: 0 }));

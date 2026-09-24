@@ -1,15 +1,15 @@
-// Module ID: 6858
-// Function ID: 6859
+// Module ID: 6890
+// Function ID: 6891
 // Name: BaseTextField
-// Dependencies: [19, 21, 1368, 558, 568, 6856, 4468, 6859, 4467, 6860, 2]
+// Dependencies: [19, 21, 1368, 558, 568, 6888, 4500, 6891, 4499, 6892, 2]
 
-// Module 6858 (BaseTextField)
+// Module 6890 (BaseTextField)
 import c from "c" /* 568 */;
-import mergeProps from "mergeProps" /* 4467 */;
-import useFocus from "useFocus" /* 4468 */;
-import InputFieldContainer from "InputFieldContainer" /* 6856 */;
-import propsForNativeTextInput from "propsForNativeTextInput" /* 6859 */;
-import NativeTextInput from "NativeTextInput" /* 6860 */;
+import mergeProps from "mergeProps" /* 4499 */;
+import useFocus from "useFocus" /* 4500 */;
+import InputFieldContainer from "InputFieldContainer" /* 6888 */;
+import propsForNativeTextInput from "propsForNativeTextInput" /* 6891 */;
+import NativeTextInput from "NativeTextInput" /* 6892 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -26,9 +26,9 @@ export const BaseTextField = noop.forwardRef(ReactCompilerGating.isReactCompiler
       if (cResult[2] === tmp4) {
         let tmp5 = cResult[3];
       }
-      const inputStyles = tmp(6856).useInputStyles(tmp5);
-      const tmpResult = tmp(6856);
-      const focus = tmp(4468).useFocus();
+      const inputStyles = tmp(6888).useInputStyles(tmp5);
+      const tmpResult = tmp(6888);
+      const focus = tmp(4500).useFocus();
       ({ focusProps, isFocused } = focus);
       const ref = noop.useRef(null);
       if (cResult[4] === leadingIcon.autoComplete) {
@@ -88,11 +88,11 @@ export const BaseTextField = noop.forwardRef(ReactCompilerGating.isReactCompiler
                 tmp19 = cResult[17];
               }
               if (cResult[18] !== ref2) {
-                const mergeRefsResult = tmp(4467).mergeRefs(ref, ref2);
+                const mergeRefsResult = tmp(4499).mergeRefs(ref, ref2);
                 cResult[18] = ref2;
                 cResult[19] = mergeRefsResult;
                 let tmp22 = mergeRefsResult;
-                const tmpResult9 = tmp(4467);
+                const tmpResult9 = tmp(4499);
               } else {
                 tmp22 = cResult[19];
               }
@@ -124,7 +124,7 @@ export const BaseTextField = noop.forwardRef(ReactCompilerGating.isReactCompiler
                                 obj2.isFocused = isFocused;
                                 const items = [tmp14, tmp25, leadingIcon.trailing];
                                 obj2.children = items;
-                                const tmp39 = React4(tmp(6856).InputFieldContainer, obj2);
+                                const tmp39 = React4(tmp(6888).InputFieldContainer, obj2);
                                 cResult[33] = isFocused;
                                 cResult[34] = leadingIcon;
                                 cResult[35] = tmp25;
@@ -146,7 +146,7 @@ export const BaseTextField = noop.forwardRef(ReactCompilerGating.isReactCompiler
                   obj3.ref = tmp22;
                   obj3.style = tmp24;
                   obj3.placeholderTextColor = inputStyles.placeholderText.color;
-                  const tmp33 = React3(tmp(6860).NativeTextInput, obj3);
+                  const tmp33 = React3(tmp(6892).NativeTextInput, obj3);
                   cResult[24] = tmp13;
                   cResult[25] = tmp10;
                   cResult[26] = inputStyles.placeholderText.color;
@@ -168,13 +168,13 @@ export const BaseTextField = noop.forwardRef(ReactCompilerGating.isReactCompiler
               cResult[23] = items1;
               tmp24 = items1;
             }
-            const tmpResult10 = tmp(6859);
-            const result = tmpResult10.propsForNativeTextInput(tmp(4467).mergeProps(leadingIcon, focusProps));
+            const tmpResult10 = tmp(6891);
+            const result = tmpResult10.propsForNativeTextInput(tmp(4499).mergeProps(leadingIcon, focusProps));
             cResult[11] = focusProps;
             cResult[12] = leadingIcon;
             cResult[13] = result;
             tmp15 = result;
-            const tmpResult11 = tmp(4467);
+            const tmpResult11 = tmp(4499);
           }
         }
       }
@@ -210,7 +210,7 @@ export const BaseTextField = noop.forwardRef(ReactCompilerGating.isReactCompiler
       cResult[7] = leadingIcon.secureTextEntry;
       cResult[8] = tmp11;
       tmp10 = tmp11;
-      const tmpResult8 = tmp(4468);
+      const tmpResult8 = tmp(4500);
     }
   }
   const obj5 = { size: leadingIcon.size, round: leadingIcon.round, hasLeadingIcon: null != leadingIcon.leadingIcon };

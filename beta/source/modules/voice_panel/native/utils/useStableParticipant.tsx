@@ -1,15 +1,15 @@
-// Module ID: 17499
-// Function ID: 17500
+// Module ID: 17509
+// Function ID: 17510
 // Name: useStableParticipant
-// Dependencies: [4774, 502, 1996, 1376, 4779, 560, 558, 568, 4910, 8490, 9705, 504, 2]
+// Dependencies: [4806, 502, 1996, 1376, 4811, 560, 558, 568, 4942, 8522, 9737, 504, 2]
 // Exports: isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 17499 (useStableParticipant)
+// Module 17509 (useStableParticipant)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 560 */;
-import NicknameUtils from "NicknameUtils" /* 4910 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 8490 */;
-import participantHasVideoDefault from "participantHasVideo" /* 9705 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
+import NicknameUtils from "NicknameUtils" /* 4942 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 8522 */;
+import participantHasVideoDefault from "participantHasVideo" /* 9737 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4806 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 import UserStore from "UserStore" /* 1376 */;
@@ -28,7 +28,7 @@ function areStableParticipantsEqual(arg0, arg1) {
   }
   return tmp;
 }
-const ParticipantTypes = fn(4779).ParticipantTypes;
+const ParticipantTypes = fn(4811).ParticipantTypes;
 const ReactCompilerGating = fn(558);
 function isStableStreamParticipant(participant) {
   let type;
@@ -90,7 +90,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
       if (null == participant) {
         const user = UserStore.getUser(tmp);
         if (null != user) {
-          const obj3 = { type: ParticipantTypes.USER, id: tmp, user, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "Symbol", ringing: null, hasVideo: "FORUM_SEARCH_CLEAR", isSelf: null };
+          const obj3 = { type: ParticipantTypes.USER, id: tmp, user, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "Symbol", ringing: null, hasVideo: "user", isSelf: "2026-07-custom-typing-indicator" };
           const id = AuthenticationStore.getId();
           obj3.userNick = NicknameUtils.getName(closure_2, tmp3, user);
           obj3.userAvatarDecoration = useAvatarDecoration.getAvatarDecoration(user, closure_2);
@@ -166,7 +166,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
       if (null == participant) {
         const user = UserStore.getUser(tmp);
         if (null != user) {
-          const obj3 = { type: ParticipantTypes.USER, id: tmp, user, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "Symbol", ringing: null, hasVideo: "FORUM_SEARCH_CLEAR", isSelf: null };
+          const obj3 = { type: ParticipantTypes.USER, id: tmp, user, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "Symbol", ringing: null, hasVideo: "user", isSelf: "2026-07-custom-typing-indicator" };
           const id = AuthenticationStore.getId();
           obj3.userNick = NicknameUtils.getName(closure_2, tmp3, user);
           obj3.userAvatarDecoration = useAvatarDecoration.getAvatarDecoration(user, closure_2);

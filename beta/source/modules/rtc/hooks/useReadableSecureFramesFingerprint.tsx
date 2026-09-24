@@ -1,12 +1,12 @@
-// Module ID: 9956
-// Function ID: 9957
+// Module ID: 9988
+// Function ID: 9989
 // Name: useReadableSecureFramesFingerprint
-// Dependencies: [19, 558, 568, 206, 9933, 2]
+// Dependencies: [19, 558, 568, 206, 9965, 2]
 
-// Module 9956 (useReadableSecureFramesFingerprint)
+// Module 9988 (useReadableSecureFramesFingerprint)
 import byteLengthDefault from "byteLength" /* 206 */;
 import c from "c" /* 568 */;
-import _mod9933 from "module_9933" /* 9933 */;
+import _mod9965 from "module_9965" /* 9965 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -39,7 +39,7 @@ export const useReadableSecureFramesFingerprint = ReactCompilerGating.isReactCom
     tmp5 = null;
     if ("" !== fingerprintBase64) {
       const toByteArrayResult = byteLengthDefault.toByteArray(fingerprintBase64);
-      const str7 = _mod9933.generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize);
+      const str7 = _mod9965.generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize);
       tmp5 = null;
       if (null != str7) {
         const _RegExp = RegExp;
@@ -53,7 +53,7 @@ export const useReadableSecureFramesFingerprint = ReactCompilerGating.isReactCom
         }
         tmp5 = arr;
       }
-      const tmpResult = _mod9933;
+      const tmpResult = _mod9965;
     }
   }
   cResult[0] = chunkSize;
@@ -70,7 +70,7 @@ export const useReadableSecureFramesFingerprint = ReactCompilerGating.isReactCom
     if (null != fingerprintBase64) {
       if ("" !== tmp) {
         const toByteArrayResult = byteLengthDefault.toByteArray(tmp);
-        const str5 = _mod9933.generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize);
+        const str5 = _mod9965.generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize);
         if (null == str5) {
           return null;
         } else {

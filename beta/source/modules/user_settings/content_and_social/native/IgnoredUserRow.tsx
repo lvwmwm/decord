@@ -1,11 +1,11 @@
-// Module ID: 15075
-// Function ID: 15076
+// Module ID: 15084
+// Function ID: 15085
 // Name: IgnoredUserRow
-// Dependencies: [19, 1376, 21, 10009, 558, 568, 7409, 1181, 1119, 8453, 5188, 5822, 504, 2]
+// Dependencies: [19, 1376, 21, 10048, 558, 568, 7441, 1181, 1119, 8485, 5220, 5854, 504, 2]
 
-// Module 15075 (IgnoredUserRow)
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10009 */;
+// Module 15084 (IgnoredUserRow)
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10048 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -15,7 +15,7 @@ let ReactCompilerGating = fn(558);
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userRecord) => {
   const cResult = userRecord(568).c(20);
   userRecord = userRecord.userRecord;
-  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)().analyticsLocations;
   if (cResult[0] !== userRecord.id) {
     const fn = function s(nativeEvent) {
       if ("unignore" === nativeEvent.nativeEvent.actionName) {
@@ -95,7 +95,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userRecord) => 
               RelationshipActionCreatorsDefault.unignoreUser(userRecord.id, "ignored-users-list-mobile");
             }
       };
-      const tmp20 = jsx(tmp(5188).Button, {
+      const tmp20 = jsx(tmp(5220).Button, {
         size: "sm",
         variant: "secondary",
         text: tmp16,
@@ -124,7 +124,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userRecord) => 
       }
     }
     const obj5 = { icon: tmp7, label: tmp10, subLabel: tmp12, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: tmp14, onAccessibilityAction: tmp4, onPress: tmp15, trailing: tmp18 };
-    const tmp23 = jsx(tmp(5822).TableRow, { icon: tmp7, label: tmp10, subLabel: tmp12, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: tmp14, onAccessibilityAction: tmp4, onPress: tmp15, trailing: tmp18 });
+    const tmp23 = jsx(tmp(5854).TableRow, { icon: tmp7, label: tmp10, subLabel: tmp12, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: tmp14, onAccessibilityAction: tmp4, onPress: tmp15, trailing: tmp18 });
     cResult[13] = tmp4;
     cResult[14] = tmp7;
     cResult[15] = tmp10;
@@ -144,7 +144,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userRecord) => 
 }) : ((userRecord) => {
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)().analyticsLocations;
   const obj = { icon: jsx(userRecord(1181).Avatar, { source: userRecord.getAvatarSource(undefined), size: userRecord(1181).AvatarSizes.REFRESH_MEDIUM_32 }), label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null };
   let tmp4 = null != userRecord;
   if (tmp4) {
@@ -187,8 +187,8 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userRecord) => 
   obj4.onPress = function onPress() {
     RelationshipActionCreatorsDefault.unignoreUser(userRecord.id, "ignored-users-list-mobile");
   };
-  obj.trailing = jsx(userRecord(5188).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
-  return jsx(userRecord(5822).TableRow, { icon: jsx(userRecord(1181).Avatar, { source: userRecord.getAvatarSource(undefined), size: userRecord(1181).AvatarSizes.REFRESH_MEDIUM_32 }), label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null });
+  obj.trailing = jsx(userRecord(5220).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
+  return jsx(userRecord(5854).TableRow, { icon: jsx(userRecord(1181).Avatar, { source: userRecord.getAvatarSource(undefined), size: userRecord(1181).AvatarSizes.REFRESH_MEDIUM_32 }), label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null });
 });
 ReactCompilerGating = fn(558);
 const size = fn(2);

@@ -1,35 +1,35 @@
-// Module ID: 13404
-// Function ID: 13405
+// Module ID: 13440
+// Function ID: 13441
 // Name: UserProfileWishlistSuggestionsGrid
-// Dependencies: [19, 17, 4750, 9055, 8457, 7455, 1078, 1080, 21, 580, 4758, 558, 568, 13399, 504, 13405, 8464, 13400, 7409, 1259, 5813, 9054, 13406, 4725, 7788, 7429, 12278, 1119, 5188, 4754, 5846, 8178, 13407, 4497, 13408, 2]
+// Dependencies: [19, 17, 4782, 9087, 8489, 7487, 1078, 1080, 21, 580, 4790, 558, 568, 13435, 504, 13441, 8496, 13436, 7441, 1259, 5845, 9086, 13442, 4757, 7820, 7461, 12314, 1119, 5220, 4786, 5878, 8210, 13443, 4529, 13444, 2]
 
-// Module 13404 (UserProfileWishlistSuggestionsGrid)
+// Module 13440 (UserProfileWishlistSuggestionsGrid)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import useInitialValueDefault from "useInitialValue" /* 5813 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7788 */;
-import useCardGridLayoutDefault from "useCardGridLayout" /* 13400 */;
-import useWishlistSuggestionsDismissibleContentDefault from "useWishlistSuggestionsDismissibleContent" /* 13405 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import useInitialValueDefault from "useInitialValue" /* 5845 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7441 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7820 */;
+import useCardGridLayoutDefault from "useCardGridLayout" /* 13436 */;
+import useWishlistSuggestionsDismissibleContentDefault from "useWishlistSuggestionsDismissibleContent" /* 13441 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
-import WishlistStore from "WishlistStore" /* 9055 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import WishlistStore from "WishlistStore" /* 9087 */;
 
 require = fn;
 const View = fn(17).View;
-const constants = fn(8457).TrackUserProfileWishlistActions;
-const Constants = fn(7455);
+const constants = fn(8489).TrackUserProfileWishlistActions;
+const Constants = fn(7487);
 ({ PROFILE_SIDE_PADDING: closure_8, WISHLIST_SUGGESTION_CARD_GAP: closure_9 } = Constants);
 const SKUProductLines = fn(1078).SKUProductLines;
 const constants2 = fn(1080).CollectiblesMobileShopScreen;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
 const PX_16 = nativeDefault.space.PX_16;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { marginTop: nativeDefault.space.PX_16, padding: PX_16, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.lg, background: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, headerRow: null, dismissButton: null, hiddenDismissButton: null, shopButtonContainer: null };
 let obj3 = { marginTop: nativeDefault.space.PX_16, padding: PX_16, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.lg, background: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj2.headerRow = { width: "100%", flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: nativeDefault.space.PX_12 };
@@ -159,7 +159,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = trackUserProfileWishlistAction(568).c(61);
   ({ userId, wishlistId, wishlist, containerWidth, maxWidth, isDismissible, markAsDismissed } = arg0);
   let obj = trackUserProfileWishlistAction(568);
-  trackUserProfileWishlistAction = trackUserProfileWishlistAction(8464).useUserProfileAnalyticsContext().trackUserProfileWishlistAction;
+  trackUserProfileWishlistAction = trackUserProfileWishlistAction(8496).useUserProfileAnalyticsContext().trackUserProfileWishlistAction;
   const tmp4 = closure_15();
   closure_18();
   if (cResult[0] === containerWidth) {
@@ -281,7 +281,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return;
             }
           }
-          const tmp16 = closure_12(tmp(12278).ShopIcon, { size: "sm" });
+          const tmp16 = closure_12(tmp(12314).ShopIcon, { size: "sm" });
           const intl = tmp(1119).intl;
           const stringResult = intl.string(tmp(1119).t.RSyoZu);
           cResult[9] = tmp16;
@@ -333,7 +333,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj3 = { size: "md", variant: "secondary", icon: tmp14, text: tmp15, onPress: tmp12 };
-          const tmp19 = closure_12(tmp(5188).Button, obj3);
+          const tmp19 = closure_12(tmp(5220).Button, obj3);
           cResult[11] = tmp12;
           cResult[12] = tmp19;
         } else {
@@ -415,9 +415,9 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[19] = wishlistId;
         cResult[20] = obj5;
       }
-      tmpResult = tmp(13406);
+      tmpResult = tmp(13442);
     }
-    const obj6 = { userId, wishlist, numWishlistItemsToRecommend: 15, maxWishlistItemsToShow: 9, source: tmp(9054).WishlistFetchSource.USER_PROFILE };
+    const obj6 = { userId, wishlist, numWishlistItemsToRecommend: 15, maxWishlistItemsToShow: 9, source: tmp(9086).WishlistFetchSource.USER_PROFILE };
     cResult[4] = userId;
     cResult[5] = wishlist;
     cResult[6] = obj6;
@@ -432,15 +432,15 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ userId, wishlist, isDismissible } = arg0);
   let trackUserProfileWishlistAction;
   ({ wishlistId, containerWidth, maxWidth, markAsDismissed } = arg0);
-  trackUserProfileWishlistAction = trackUserProfileWishlistAction(8464).useUserProfileAnalyticsContext().trackUserProfileWishlistAction;
+  trackUserProfileWishlistAction = trackUserProfileWishlistAction(8496).useUserProfileAnalyticsContext().trackUserProfileWishlistAction;
   const tmp3 = closure_15();
-  let obj = trackUserProfileWishlistAction(8464);
+  let obj = trackUserProfileWishlistAction(8496);
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   let obj2 = { minCardSize: 80, maxCardSize: 120, containerWidth, maxWidth, sidePadding: closure_8 + PX_16 + 1, gap };
   const tmp4 = closure_18();
   const tmp6 = useInitialValueDefault(() => trackUserProfileWishlistAction(dependencyMap[19]).v4());
-  const obj3 = trackUserProfileWishlistAction(13406);
-  let items = obj3.useAddToWishlistGridItems({ userId, wishlist, numWishlistItemsToRecommend: 15, maxWishlistItemsToShow: 9, source: trackUserProfileWishlistAction(9054).WishlistFetchSource.USER_PROFILE }).items;
+  const obj3 = trackUserProfileWishlistAction(13442);
+  let items = obj3.useAddToWishlistGridItems({ userId, wishlist, numWishlistItemsToRecommend: 15, maxWishlistItemsToShow: 9, source: trackUserProfileWishlistAction(9086).WishlistFetchSource.USER_PROFILE }).items;
   let items1 = [trackUserProfileWishlistAction];
   const callback = noop.useCallback(() => {
     const obj = { action: constants.PRESS_ADD_WISHLIST_ITEM, productLines: null };
@@ -457,11 +457,11 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
   if (0 === items.length) {
     const obj5 = { style: tmp3.shopButtonContainer, children: null };
-    const obj6 = { size: "md", variant: "secondary", icon: closure_12(tmp(12278).ShopIcon, { size: "sm" }), text: null, onPress: null };
+    const obj6 = { size: "md", variant: "secondary", icon: closure_12(tmp(12314).ShopIcon, { size: "sm" }), text: null, onPress: null };
     const intl3 = tmp(1119).intl;
     obj6.text = intl3.string(tmp(1119).t.RSyoZu);
     obj6.onPress = callback;
-    obj5.children = closure_12(tmp(5188).Button, obj6);
+    obj5.children = closure_12(tmp(5220).Button, obj6);
     let tmp11Result = closure_12(View, obj5);
   } else {
     const obj7 = { newValue: null, children: null };
@@ -473,7 +473,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj11 = { accessibilityRole: "header", variant: "text-sm/medium", color: "text-strong", lineClamp: 1, children: null };
     const intl4 = tmp(1119).intl;
     obj11.children = intl4.string(tmp(1119).t["+GB8Kt"]);
-    const items2 = [closure_12(tmp(4754).Text, obj11), ];
+    const items2 = [closure_12(tmp(4786).Text, obj11), ];
     const items3 = [tmp3.dismissButton, ];
     let hiddenDismissButton = !isDismissible;
     if (!isDismissible) {
@@ -495,26 +495,26 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj12.importantForAccessibility = str2;
     const obj13 = { size: "sm", variant: "icon-only", icon: null, onPress: null, accessibilityLabel: null };
     const obj14 = { size: "sm", color: tmp5(580).colors.CONTROL_ICON_ONLY_ICON_DEFAULT };
-    obj13.icon = closure_12(tmp(5846).XSmallIcon, obj14);
+    obj13.icon = closure_12(tmp(5878).XSmallIcon, obj14);
     obj13.onPress = markAsDismissed;
     const intl = tmp(1119).intl;
     obj13.accessibilityLabel = intl.string(tmp(1119).t.WAI6xu);
-    obj12.children = closure_12(tmp(8178).IconButton, obj13);
+    obj12.children = closure_12(tmp(8210).IconButton, obj13);
     items2[1] = closure_12(View, obj12);
     obj10.children = items2;
     const items4 = [closure_13(View, obj10), , ];
     const obj16 = { items, wishlist, analyticsLocations, cardSize: useCardGridLayoutDefault(obj2).cardWidth };
-    items4[1] = closure_12(tmp5(13407), obj16);
+    items4[1] = closure_12(tmp5(13443), obj16);
     const obj17 = { style: tmp3.shopButtonContainer, children: null };
-    const obj32 = { size: "md", variant: "secondary", icon: closure_12(tmp(12278).ShopIcon, { size: "sm" }), text: null, onPress: null };
+    const obj32 = { size: "md", variant: "secondary", icon: closure_12(tmp(12314).ShopIcon, { size: "sm" }), text: null, onPress: null };
     const intl2 = tmp(1119).intl;
     obj32.text = intl2.string(tmp(1119).t.RSyoZu);
     obj32.onPress = callback;
-    obj17.children = closure_12(tmp(5188).Button, obj32);
+    obj17.children = closure_12(tmp(5220).Button, obj32);
     items4[2] = closure_12(View, obj17);
     obj9.children = items4;
-    obj7.children = closure_13(tmp5(4497).View, obj9);
-    tmp11Result = tmp11(tmp(13408).WishlistAnalyticsProvider, obj7);
+    obj7.children = closure_13(tmp5(4529).View, obj9);
+    tmp11Result = tmp11(tmp(13444).WishlistAnalyticsProvider, obj7);
   }
   return tmp11Result;
 });
@@ -534,10 +534,10 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [tmp4, tmp5] = cResult;
   }
   const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
-  const ReduceMotion = tmp(4497).ReduceMotion;
+  const ReduceMotion = tmp(4529).ReduceMotion;
   const tmp8 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
   if (cResult[2] !== tmp8) {
-    const FadeInDown = tmp(4497).FadeInDown;
+    const FadeInDown = tmp(4529).FadeInDown;
     const reduceMotionResult = FadeInDown.reduceMotion(tmp8);
     cResult[2] = tmp8;
     cResult[3] = reduceMotionResult;
@@ -546,7 +546,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[3];
   }
   if (cResult[4] !== tmp8) {
-    const FadeOutDown = tmp(4497).FadeOutDown;
+    const FadeOutDown = tmp(4529).FadeOutDown;
     const reduceMotionResult1 = FadeOutDown.reduceMotion(tmp8);
     cResult[4] = tmp8;
     cResult[5] = reduceMotionResult1;
@@ -555,7 +555,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[5];
   }
   if (cResult[6] !== tmp8) {
-    const LinearTransition = tmp(4497).LinearTransition;
+    const LinearTransition = tmp(4529).LinearTransition;
     const springifyResult = LinearTransition.springify();
     const massResult = LinearTransition.springify().mass(0.8);
     const dampingResult = LinearTransition.springify().mass(0.8).damping(100);

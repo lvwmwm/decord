@@ -1,18 +1,18 @@
-// Module ID: 12689
-// Function ID: 12690
+// Module ID: 12725
+// Function ID: 12726
 // Name: useGuildPowerupLevelPerks
-// Dependencies: [19, 4648, 558, 568, 1119, 2518, 4652, 1374, 2]
+// Dependencies: [19, 4680, 558, 568, 1119, 2518, 4684, 1374, 2]
 
-// Module 12689 (useGuildPowerupLevelPerks)
+// Module 12725 (useGuildPowerupLevelPerks)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
 import _modDef2518 from "module_2518" /* 2518 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4652 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 4684 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const GUILD_FEATURE_TO_PERK = fn(4648).GUILD_FEATURE_TO_PERK;
+const GUILD_FEATURE_TO_PERK = fn(4680).GUILD_FEATURE_TO_PERK;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupLevelPerks.tsx");
@@ -79,7 +79,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((features, arg1) 
             let tmp16 = cResult[25];
           }
           if (cResult[26] !== tmp16) {
-            const obj3 = { perkIcon: tmp(4652).PerkIcons.SOUNDBOARD, description: tmp16 };
+            const obj3 = { perkIcon: tmp(4684).PerkIcons.SOUNDBOARD, description: tmp16 };
             cResult[26] = tmp16;
             cResult[27] = obj3;
             let tmp19 = obj3;
@@ -102,7 +102,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((features, arg1) 
           let tmp11 = cResult[20];
         }
         if (cResult[21] !== tmp11) {
-          const obj5 = { perkIcon: tmp(4652).PerkIcons.STICKER, description: tmp11 };
+          const obj5 = { perkIcon: tmp(4684).PerkIcons.STICKER, description: tmp11 };
           cResult[21] = tmp11;
           cResult[22] = obj5;
           let tmp14 = obj5;
@@ -125,7 +125,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((features, arg1) 
         let tmp6 = cResult[15];
       }
       if (cResult[16] !== tmp6) {
-        const obj7 = { perkIcon: tmp(4652).PerkIcons.EMOJI, description: tmp6 };
+        const obj7 = { perkIcon: tmp(4684).PerkIcons.EMOJI, description: tmp6 };
         cResult[16] = tmp6;
         cResult[17] = obj7;
         let tmp9 = obj7;

@@ -1,14 +1,14 @@
-// Module ID: 8511
-// Function ID: 8512
+// Module ID: 8543
+// Function ID: 8544
 // Name: UserProfileFixedBackground
-// Dependencies: [32, 19, 17, 21, 558, 568, 4471, 8512, 8513, 5198, 2]
+// Dependencies: [32, 19, 17, 21, 558, 568, 4503, 8544, 8545, 5230, 2]
 
-// Module 8511 (UserProfileFixedBackground)
+// Module 8543 (UserProfileFixedBackground)
 import c from "c" /* 568 */;
-import native from "native" /* 4471 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import useUserProfileColors from "useUserProfileColors" /* 8512 */;
-import useUserProfileGradientColors from "useUserProfileGradientColors" /* 8513 */;
+import native from "native" /* 4503 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import useUserProfileColors from "useUserProfileColors" /* 8544 */;
+import useUserProfileGradientColors from "useUserProfileGradientColors" /* 8545 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -30,10 +30,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       if (cResult[2] === theme) {
         let tmp5 = cResult[3];
       }
-      const gradientFallbackBackground = tmp(8512).useUserProfileColors(tmp5).gradientFallbackBackground;
-      const tmpResult = tmp(8512);
-      const tmpResult2 = tmp(8513);
-      [tmp8, tmp9] = tmp(8513).useUserProfileGradientColors(primaryColor, secondaryColor, gradientFallbackBackground);
+      const gradientFallbackBackground = tmp(8544).useUserProfileColors(tmp5).gradientFallbackBackground;
+      const tmpResult = tmp(8544);
+      const tmpResult2 = tmp(8545);
+      [tmp8, tmp9] = tmp(8545).useUserProfileGradientColors(primaryColor, secondaryColor, gradientFallbackBackground);
       if (null != primaryColor) {
         if (null != secondaryColor) {
           const _Math = Math;
@@ -104,7 +104,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       cResult[18] = tmp11;
       cResult[19] = tmp16;
       tmp12 = tmp16;
-      const tmp7 = _slicedToArray(tmp(8513).useUserProfileGradientColors(primaryColor, secondaryColor, gradientFallbackBackground), 2);
+      const tmp7 = _slicedToArray(tmp(8545).useUserProfileGradientColors(primaryColor, secondaryColor, gradientFallbackBackground), 2);
     }
   }
   const obj6 = { theme, primaryColor, secondaryColor };

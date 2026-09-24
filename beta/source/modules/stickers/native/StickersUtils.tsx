@@ -1,14 +1,14 @@
-// Module ID: 10681
-// Function ID: 10682
+// Module ID: 10717
+// Function ID: 10718
 // Name: stickers/StickersUtils
-// Dependencies: [19, 17, 2067, 1376, 10682, 1078, 1222, 5487, 7581, 558, 568, 10679, 504, 9433, 10683, 10684, 1614, 2]
+// Dependencies: [19, 17, 2067, 1376, 10718, 1078, 1222, 5519, 7613, 558, 568, 10715, 504, 9465, 10719, 10720, 1614, 2]
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker
 
-// Module 10681 (stickers/StickersUtils)
+// Module 10717 (stickers/StickersUtils)
 import KeyboardTypes from "KeyboardTypes" /* 1614 */;
-import StickersTypes from "StickersTypes" /* 5487 */;
-import _modDef10683 from "module_10683" /* 10683 */;
-import _modDef10684 from "module_10684" /* 10684 */;
+import StickersTypes from "StickersTypes" /* 5519 */;
+import _modDef10719 from "module_10719" /* 10719 */;
+import _modDef10720 from "module_10720" /* 10720 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1376 */;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 
 require = fn;
 const NativeModules = fn(17).NativeModules;
-const useStickerPickerStore = fn(10682).useStickerPickerStore;
+const useStickerPickerStore = fn(10718).useStickerPickerStore;
 const GuildNSFWContentLevel = fn(1078).GuildNSFWContentLevel;
 const ExpressionPickerViewType = fn(1222).ExpressionPickerViewType;
 const ReactCompilerGating = fn(558);

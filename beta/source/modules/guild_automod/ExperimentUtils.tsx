@@ -1,12 +1,12 @@
-// Module ID: 12964
-// Function ID: 12965
+// Module ID: 13000
+// Function ID: 13001
 // Name: guild_automod/ExperimentUtils
-// Dependencies: [12965, 558, 568, 2]
+// Dependencies: [13001, 558, 568, 2]
 // Exports: isInMentionRaidExperiment
 
-// Module 12964 (guild_automod/ExperimentUtils)
+// Module 13000 (guild_automod/ExperimentUtils)
 import c from "c" /* 568 */;
-import AutomodExperiment from "AutomodExperiment" /* 12965 */;
+import AutomodExperiment from "AutomodExperiment" /* 13001 */;
 import "ReactCompilerGating";
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

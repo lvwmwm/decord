@@ -1,10 +1,10 @@
-// Module ID: 17615
-// Function ID: 17616
+// Module ID: 17625
+// Function ID: 17626
 // Name: VoicePanelNsfwAlert
-// Dependencies: [19, 2063, 2067, 21, 558, 568, 5116, 5739, 1119, 5116, 2]
+// Dependencies: [19, 2063, 2067, 21, 558, 568, 5148, 5771, 1119, 5148, 2]
 
-// Module 17615 (VoicePanelNsfwAlert)
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
+// Module 17625 (VoicePanelNsfwAlert)
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5771 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
@@ -153,7 +153,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
 }) : ((guildId) => {
   guildId = guildId.guildId;
   const onConnect = guildId.onConnect;
-  dependencyMap = guildId(5116).useDismissModalCallback();
+  dependencyMap = guildId(5148).useDismissModalCallback();
   const tmp3 = isGuildNSFW(GuildStore.getGuild(guildId));
   const intl = guildId(1119).intl;
   const string = intl.string;
@@ -185,7 +185,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   };
   const intl3 = tmp(1119).intl;
   obj4.text = intl3.string(guildId(1119).t.wVq7uo);
-  const items = [closure_5(guildId(5116).AlertActionButton, obj4, "confirm"), ];
+  const items = [closure_5(guildId(5148).AlertActionButton, obj4, "confirm"), ];
   const obj5 = {
     variant: "secondary",
     onPress() {
@@ -196,9 +196,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   };
   const intl4 = tmp(1119).intl;
   obj5.text = intl4.string(guildId(1119).t["/g10LC"]);
-  items[1] = closure_5(guildId(5116).AlertActionButton, obj5, "add-profile-picture");
+  items[1] = closure_5(guildId(5148).AlertActionButton, obj5, "add-profile-picture");
   obj3.children = items;
-  obj2.actions = closure_6(guildId(5116).AlertActions, obj3);
-  return closure_5(guildId(5116).AlertModal, obj2);
+  obj2.actions = closure_6(guildId(5148).AlertActions, obj3);
+  return closure_5(guildId(5148).AlertModal, obj2);
 });
 export const VOICE_PANEL_NSFW_KEY = "voice-panel-nsfw";

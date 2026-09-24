@@ -1,34 +1,34 @@
-// Module ID: 15170
-// Function ID: 15171
+// Module ID: 15180
+// Function ID: 15181
 // Name: FamilyCenterActivityItemPreview
-// Dependencies: [19, 17, 8496, 21, 4758, 15169, 580, 558, 568, 9098, 8475, 9101, 12278, 9487, 8938, 1977, 1974, 2]
+// Dependencies: [19, 17, 8528, 21, 4790, 15179, 580, 558, 568, 9130, 8507, 9133, 12314, 9519, 8970, 1977, 1974, 2]
 
-// Module 15170 (FamilyCenterActivityItemPreview)
+// Module 15180 (FamilyCenterActivityItemPreview)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
-import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8475 */;
-import NameplateUtils from "NameplateUtils" /* 9098 */;
-import ShopIcon from "ShopIcon" /* 12278 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 15169 */;
+import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8507 */;
+import NameplateUtils from "NameplateUtils" /* 9130 */;
+import ShopIcon from "ShopIcon" /* 12314 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 15179 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
-let closure_5 = fn(8496).PROFILE_FRAME_ASPECT_RATIO;
+let closure_5 = fn(8528).PROFILE_FRAME_ASPECT_RATIO;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { purchasePlaceholder: null, avatarDecorationPreview: null, nameplateContainer: null, nameplatePreview: null, profileFrameContainer: null };
-let size = { width: fn(15169).PREVIEW_SIZE, height: fn(15169).PREVIEW_SIZE, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, display: "flex", alignItems: "center", justifyContent: "center", marginRight: 12 };
+let size = { width: fn(15179).PREVIEW_SIZE, height: fn(15179).PREVIEW_SIZE, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, display: "flex", alignItems: "center", justifyContent: "center", marginRight: 12 };
 obj2.purchasePlaceholder = size;
-const size1 = { width: fn(15169).PREVIEW_SIZE, height: fn(15169).PREVIEW_SIZE, marginRight: 12 };
+const size1 = { width: fn(15179).PREVIEW_SIZE, height: fn(15179).PREVIEW_SIZE, marginRight: 12 };
 obj2.avatarDecorationPreview = size1;
-const size2 = { width: fn(15169).PREVIEW_SIZE, height: fn(15169).PREVIEW_SIZE, marginRight: 12, borderRadius: nativeDefault.radii.xs, overflow: "hidden", position: "relative" };
+const size2 = { width: fn(15179).PREVIEW_SIZE, height: fn(15179).PREVIEW_SIZE, marginRight: 12, borderRadius: nativeDefault.radii.xs, overflow: "hidden", position: "relative" };
 obj2.nameplateContainer = size2;
-const size3 = { position: "absolute", right: 0, width: fn(15169).PREVIEW_SIZE * fn(15169).NAMEPLATE_ASPECT_RATIO, height: fn(15169).PREVIEW_SIZE };
+const size3 = { position: "absolute", right: 0, width: fn(15179).PREVIEW_SIZE * fn(15179).NAMEPLATE_ASPECT_RATIO, height: fn(15179).PREVIEW_SIZE };
 obj2.nameplatePreview = size3;
-const size4 = { width: fn(15169).PREVIEW_SIZE, height: fn(15169).PREVIEW_SIZE, marginRight: 12, alignItems: "center", justifyContent: "center" };
+const size4 = { width: fn(15179).PREVIEW_SIZE, height: fn(15179).PREVIEW_SIZE, marginRight: 12, alignItems: "center", justifyContent: "center" };
 obj2.profileFrameContainer = size4;
 let closure_7 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -192,12 +192,12 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((styles) => {
     return null;
   } else {
     if (cResult[0] !== tmp5) {
-      const obj2 = { profileFrame: tmp5, previewWidth: tmp(15169).PREVIEW_SIZE * closure_5, previewHeight: tmp(15169).PREVIEW_SIZE, profileBackgroundColor: tmp4(580).colors.BACKGROUND_BASE_LOW };
-      const tmp10 = jsx(tmp4(9101), { profileFrame: tmp5, previewWidth: tmp(15169).PREVIEW_SIZE * closure_5, previewHeight: tmp(15169).PREVIEW_SIZE, profileBackgroundColor: tmp4(580).colors.BACKGROUND_BASE_LOW });
+      const obj2 = { profileFrame: tmp5, previewWidth: tmp(15179).PREVIEW_SIZE * closure_5, previewHeight: tmp(15179).PREVIEW_SIZE, profileBackgroundColor: tmp4(580).colors.BACKGROUND_BASE_LOW };
+      const tmp10 = jsx(tmp4(9133), { profileFrame: tmp5, previewWidth: tmp(15179).PREVIEW_SIZE * closure_5, previewHeight: tmp(15179).PREVIEW_SIZE, profileBackgroundColor: tmp4(580).colors.BACKGROUND_BASE_LOW });
       cResult[0] = tmp5;
       cResult[1] = tmp10;
       let tmp6 = tmp10;
-      const tmp4Result = tmp4(9101);
+      const tmp4Result = tmp4(9133);
     } else {
       tmp6 = cResult[1];
     }
@@ -217,9 +217,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((styles) => {
   if (null != tmp3) {
     const obj = { style: styles.profileFrameContainer, children: null };
     const obj2 = { profileFrame: tmp3, previewWidth: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE * closure_5, previewHeight: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, profileBackgroundColor: tmp(580).colors.BACKGROUND_BASE_LOW };
-    obj.children = jsx(tmp(9101), { profileFrame: tmp3, previewWidth: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE * closure_5, previewHeight: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, profileBackgroundColor: tmp(580).colors.BACKGROUND_BASE_LOW });
+    obj.children = jsx(tmp(9133), { profileFrame: tmp3, previewWidth: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE * closure_5, previewHeight: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, profileBackgroundColor: tmp(580).colors.BACKGROUND_BASE_LOW });
     tmp4 = <React3 style={styles.profileFrameContainer}>{null}</React3>;
-    const tmpResult = tmp(9101);
+    const tmpResult = tmp(9133);
   }
   return tmp4;
 });
@@ -231,7 +231,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "custom", style: { width: 20, height: 20 } };
-      const tmp17 = jsx(tmp(12278).ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
+      const tmp17 = jsx(tmp(12314).ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
       cResult[0] = tmp17;
       let first = tmp17;
     } else {
@@ -249,19 +249,19 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return tmp18;
   } else {
     if (cResult[3] !== subscriptionPlanId) {
-      const result = tmp(15169).isGuildBoostSubscription(subscriptionPlanId);
+      const result = tmp(15179).isGuildBoostSubscription(subscriptionPlanId);
       cResult[3] = subscriptionPlanId;
       cResult[4] = result;
       let tmp4 = result;
-      const tmpResult = tmp(15169);
+      const tmpResult = tmp(15179);
     } else {
       tmp4 = cResult[4];
     }
     if (cResult[5] !== tmp4) {
       if (tmp4) {
-        let NitroWheelIcon = tmp(9487).BoostGemIcon;
+        let NitroWheelIcon = tmp(9519).BoostGemIcon;
       } else {
-        NitroWheelIcon = tmp(8938).NitroWheelIcon;
+        NitroWheelIcon = tmp(8970).NitroWheelIcon;
       }
       const obj4 = { size: "custom", style: { width: 20, height: 20 } };
       const tmp7Result = <NitroWheelIcon size="custom" style={{ width: 20, height: 20 }} />;
@@ -292,9 +292,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     const obj5 = { style: styles.purchasePlaceholder, children: null };
     if (obj4.isGuildBoostSubscription(subscriptionPlanId)) {
-      let NitroWheelIcon = tmp5(9487).BoostGemIcon;
+      let NitroWheelIcon = tmp5(9519).BoostGemIcon;
     } else {
-      NitroWheelIcon = tmp5(8938).NitroWheelIcon;
+      NitroWheelIcon = tmp5(8970).NitroWheelIcon;
     }
     const obj = { size: "custom", style: { width: 20, height: 20 } };
     obj5.children = <NitroWheelIcon size="custom" style={{ width: 20, height: 20 }} />;
@@ -309,7 +309,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "custom", style: { width: 20, height: 20 } };
-      const tmp32 = jsx(tmp(12278).ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
+      const tmp32 = jsx(tmp(12314).ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
       cResult[0] = tmp32;
       let first = tmp32;
     } else {
@@ -395,7 +395,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const _Symbol2 = Symbol;
       if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
         const obj8 = { size: "custom", style: { width: 20, height: 20 } };
-        const tmp6 = jsx(tmp(12278).ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
+        const tmp6 = jsx(tmp(12314).ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
         cResult[17] = tmp6;
         let tmp4 = tmp6;
       } else {
@@ -442,7 +442,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       const obj = { style: styles.purchasePlaceholder, children: null };
       const obj8 = { size: "custom", style: { width: 20, height: 20 } };
-      obj.children = jsx(tmp17(12278).ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
+      obj.children = jsx(tmp17(12314).ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
       return <React3 style={styles.purchasePlaceholder}>{null}</React3>;
     }
   }

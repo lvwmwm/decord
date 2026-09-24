@@ -1,13 +1,13 @@
-// Module ID: 18263
-// Function ID: 18264
+// Module ID: 18273
+// Function ID: 18274
 // Name: VoicePanelManager
-// Dependencies: [2045, 4781, 4966, 7365, 2]
+// Dependencies: [2045, 4813, 4998, 7397, 2]
 
-// Module 18263 (VoicePanelManager)
+// Module 18273 (VoicePanelManager)
 import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
-import VoicePanelStore from "VoicePanelStore" /* 4966 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
+import VoicePanelStore from "VoicePanelStore" /* 4998 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
 
 const prototype = function VoicePanelManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

@@ -1,12 +1,12 @@
-// Module ID: 14194
-// Function ID: 14195
+// Module ID: 14231
+// Function ID: 14232
 // Name: GuildBadgeMoon
-// Dependencies: [109, 19, 21, 558, 568, 14189, 8733, 2]
+// Dependencies: [109, 19, 21, 558, 568, 14226, 8765, 2]
 
-// Module 14194 (GuildBadgeMoon)
+// Module 14231 (GuildBadgeMoon)
 import c from "c" /* 568 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14189 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14226 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -51,18 +51,18 @@ export const GuildBadgeMoon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   if (cResult[5] !== tmp4) {
     const obj2 = { primaryBaseColors, primaryTintColor: tmp4, primaryTintLuminances, primaryLuminanceWeights: items };
-    const transformedBadgeColors = tmp(14189).getTransformedBadgeColors(obj2);
+    const transformedBadgeColors = tmp(14226).getTransformedBadgeColors(obj2);
     cResult[5] = tmp4;
     cResult[6] = transformedBadgeColors;
     let tmp11 = transformedBadgeColors;
-    const tmpResult = tmp(14189);
+    const tmpResult = tmp(14226);
   } else {
     tmp11 = cResult[6];
   }
   const primaryColorsTransformed = tmp11.primaryColorsTransformed;
   if (cResult[7] !== primaryColorsTransformed[1]) {
     const obj3 = { d: "M14 5V3h-1V2h-1V1h-2v1h1v1h1v4h-1v1h-1v1H6V8H5V7H4V3h1V2h1V1H4v1H3v1H2v2H1v6h1v2h1v1h2v1h6v-1h2v-1h1v-2h1V5h-1Z", fill: primaryColorsTransformed[1] };
-    const tmp18 = React4(tmp(8733).Path, obj3);
+    const tmp18 = React4(tmp(8765).Path, obj3);
     cResult[7] = primaryColorsTransformed[1];
     cResult[8] = tmp18;
     let tmp16 = tmp18;
@@ -70,7 +70,7 @@ export const GuildBadgeMoon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp16 = cResult[8];
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp21 = React4(tmp(8733).Path, { d: "M6 0H4v1h2V0ZM2 3H1v2h1V3ZM5 3H4v4h1V3ZM10 8H6v1h4V8Z", fill: "#000" });
+    const tmp21 = React4(tmp(8765).Path, { d: "M6 0H4v1h2V0ZM2 3H1v2h1V3ZM5 3H4v4h1V3ZM10 8H6v1h4V8Z", fill: "#000" });
     cResult[9] = tmp21;
     let tmp19 = tmp21;
   } else {
@@ -78,7 +78,7 @@ export const GuildBadgeMoon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   if (cResult[10] !== primaryColorsTransformed[2]) {
     const obj4 = { d: "M10 9H6v1h4V9Z", fill: primaryColorsTransformed[2] };
-    const tmp24 = React4(tmp(8733).Path, obj4);
+    const tmp24 = React4(tmp(8765).Path, obj4);
     cResult[10] = primaryColorsTransformed[2];
     cResult[11] = tmp24;
     let tmp22 = tmp24;
@@ -86,7 +86,7 @@ export const GuildBadgeMoon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp22 = cResult[11];
   }
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp27 = React4(tmp(8733).Path, { d: "M1 5H0v6h1V5ZM11 15H5v1h6v-1Z", fill: "#000" });
+    const tmp27 = React4(tmp(8765).Path, { d: "M1 5H0v6h1V5ZM11 15H5v1h6v-1Z", fill: "#000" });
     cResult[12] = tmp27;
     let tmp25 = tmp27;
   } else {
@@ -94,7 +94,7 @@ export const GuildBadgeMoon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   if (cResult[13] !== primaryColorsTransformed[0]) {
     const obj5 = { d: "M2 10H1v1h1v-1ZM13 12h-2v1H5v-1H3v-1H2v2h1v1h2v1h6v-1h2v-1h1v-2h-1v1ZM15 10h-1v1h1v-1Z", fill: primaryColorsTransformed[0] };
-    const tmp30 = React4(tmp(8733).Path, obj5);
+    const tmp30 = React4(tmp(8765).Path, obj5);
     cResult[13] = primaryColorsTransformed[0];
     cResult[14] = tmp30;
     let tmp28 = tmp30;
@@ -102,7 +102,7 @@ export const GuildBadgeMoon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp28 = cResult[14];
   }
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp33 = React4(tmp(8733).Path, { d: "M4 1H3v1h1V1ZM3 2H2v1h1V2Z", fill: "#000" });
+    const tmp33 = React4(tmp(8765).Path, { d: "M4 1H3v1h1V1ZM3 2H2v1h1V2Z", fill: "#000" });
     cResult[15] = tmp33;
     let tmp31 = tmp33;
   } else {
@@ -110,7 +110,7 @@ export const GuildBadgeMoon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   if (cResult[16] !== primaryColorsTransformed[2]) {
     const obj6 = { d: "M6 1H4v1h2V1ZM4 2H3v1h1V2ZM3 3H2v1h1V3ZM2 5H1v1h1V5ZM3 6H2v1h1V6ZM5 7H4v1h1V7ZM6 8H5v1h1V8ZM12 7h-1v1h1V7ZM11 1h-1v1h1V1ZM11 8h-1v1h1V8Z", fill: primaryColorsTransformed[2] };
-    const tmp36 = React4(tmp(8733).Path, obj6);
+    const tmp36 = React4(tmp(8765).Path, obj6);
     cResult[16] = primaryColorsTransformed[2];
     cResult[17] = tmp36;
     let tmp34 = tmp36;
@@ -118,7 +118,7 @@ export const GuildBadgeMoon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp34 = cResult[17];
   }
   if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp39 = React4(tmp(8733).Path, { d: "M7 1H6v1h1V1ZM6 2H5v1h1V2ZM6 7H5v1h1V7ZM2 11H1v2h1v-2ZM3 13H2v1h1v-1ZM12 0h-2v1h2V0ZM13 14h-2v1h2v-1ZM5 14H3v1h2v-1ZM15 3h-1v2h1V3ZM12 3h-1v4h1V3ZM16 5h-1v6h1V5ZM13 1h-1v1h1V1ZM14 2h-1v1h1V2ZM10 1H9v1h1V1ZM11 2h-1v1h1V2ZM11 7h-1v1h1V7ZM15 11h-1v2h1v-2ZM14 13h-1v1h1v-1Z", fill: "#000" });
+    const tmp39 = React4(tmp(8765).Path, { d: "M7 1H6v1h1V1ZM6 2H5v1h1V2ZM6 7H5v1h1V7ZM2 11H1v2h1v-2ZM3 13H2v1h1v-1ZM12 0h-2v1h2V0ZM13 14h-2v1h2v-1ZM5 14H3v1h2v-1ZM15 3h-1v2h1V3ZM12 3h-1v4h1V3ZM16 5h-1v6h1V5ZM13 1h-1v1h1V1ZM14 2h-1v1h1V2ZM10 1H9v1h1V1ZM11 2h-1v1h1V2ZM11 7h-1v1h1V7ZM15 11h-1v2h1v-2ZM14 13h-1v1h1v-1Z", fill: "#000" });
     cResult[18] = tmp39;
     let tmp37 = tmp39;
   } else {
@@ -126,7 +126,7 @@ export const GuildBadgeMoon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   if (cResult[19] !== primaryColorsTransformed[1]) {
     const obj7 = { d: "M5 2H4v1h1V2Z", fill: primaryColorsTransformed[1] };
-    const tmp42 = React4(tmp(8733).Path, obj7);
+    const tmp42 = React4(tmp(8765).Path, obj7);
     cResult[19] = primaryColorsTransformed[1];
     cResult[20] = tmp42;
     let tmp40 = tmp42;

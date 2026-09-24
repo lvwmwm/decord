@@ -1,21 +1,21 @@
-// Module ID: 7685
-// Function ID: 7686
+// Module ID: 7717
+// Function ID: 7718
 // Name: PremiumPill
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4693, 7686, 7693, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4725, 7718, 7725, 1119, 4786, 2]
 
-// Module 7685 (PremiumPill)
+// Module 7717 (PremiumPill)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import useTheme from "useTheme" /* 4693 */;
-import useCountdownDefault from "useCountdown" /* 7686 */;
-import MobileTrialUtils from "MobileTrialUtils" /* 7693 */;
+import useTheme from "useTheme" /* 4725 */;
+import useCountdownDefault from "useCountdown" /* 7718 */;
+import MobileTrialUtils from "MobileTrialUtils" /* 7725 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles((arg0) => {
   const tmp3 = nativeDefault;
   if (arg0) {
@@ -126,7 +126,7 @@ export const PremiumPill = ReactCompilerGating.isReactCompilerEnabled() ? ((prem
             }
           }
           const obj4 = { variant: "text-xs/bold", color: str2, style: tmp11.discountPillText, children: tmp32 };
-          const tmp36 = jsx(tmp(4754).Text, { variant: "text-xs/bold", color: str2, style: tmp11.discountPillText, children: tmp32 });
+          const tmp36 = jsx(tmp(4786).Text, { variant: "text-xs/bold", color: str2, style: tmp11.discountPillText, children: tmp32 });
           cResult[13] = tmp11.discountPillText;
           cResult[14] = tmp32;
           cResult[15] = str2;

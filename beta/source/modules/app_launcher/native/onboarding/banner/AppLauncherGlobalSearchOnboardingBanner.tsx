@@ -1,11 +1,11 @@
-// Module ID: 12256
-// Function ID: 12257
+// Module ID: 12292
+// Function ID: 12293
 // Name: AppLauncherGlobalSearchOnboardingBanner
-// Dependencies: [19, 17, 1487, 2042, 21, 4758, 580, 558, 568, 5280, 1119, 10460, 2]
+// Dependencies: [19, 17, 1487, 2042, 21, 4790, 580, 558, 568, 5312, 1119, 10499, 2]
 
-// Module 12256 (AppLauncherGlobalSearchOnboardingBanner)
+// Module 12292 (AppLauncherGlobalSearchOnboardingBanner)
 import nativeDefault from "native" /* 580 */;
-import AppsIcon from "AppsIcon" /* 5280 */;
+import AppsIcon from "AppsIcon" /* 5312 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -13,7 +13,7 @@ const View = fn(17).View;
 const DEFAULT_CONTENT_PADDING = fn(1487).DEFAULT_CONTENT_PADDING;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { appsIcon: null, appsIconImage: null };
 let size = { height: 40, width: 40, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center" };
 obj2.appsIcon = size;
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
               }
             }
           }
-          Coachmark = Coachmark(10460).Coachmark;
+          Coachmark = Coachmark(10499).Coachmark;
           const obj2 = { renderImgComponent: tmp9, title: tmp12, description: tmp13, onDismiss: tmp16, targetMeasurements: tmp17, surfaceMeasurements: tmp18, position: "bottom" };
           tmp = <Coachmark renderImgComponent={tmp9} title={tmp12} description={tmp13} onDismiss={tmp16} targetMeasurements={tmp17} surfaceMeasurements={tmp18} position="bottom" />;
           cResult[16] = tmp9;
@@ -167,7 +167,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
     obj.targetMeasurements = size;
     const size1 = { x: -140, y: -40, width: diff, height: windowDimensions.height };
     obj.surfaceMeasurements = size1;
-    tmp3 = jsx(markAsDismissed(10460).Coachmark, {
+    tmp3 = jsx(markAsDismissed(10499).Coachmark, {
       renderImgComponent: function appsIcon() {
           const obj = { style: closure_2.appsIcon, children: jsx(AppsIcon.AppsIcon, { style: closure_2.appsIconImage, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE }) };
           return <View style={closure_2.appsIcon}>{jsx(AppsIcon.AppsIcon, { style: closure_2.appsIconImage, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE })}</View>;

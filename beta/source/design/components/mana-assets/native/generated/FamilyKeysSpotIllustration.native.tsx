@@ -1,13 +1,13 @@
-// Module ID: 6220
-// Function ID: 6221
+// Module ID: 6252
+// Function ID: 6253
 // Name: FamilyKeysSpotIllustration
-// Dependencies: [21, 558, 568, 6221, 5802, 2]
+// Dependencies: [21, 558, 568, 6253, 5834, 2]
 
-// Module 6220 (FamilyKeysSpotIllustration)
+// Module 6252 (FamilyKeysSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6221 from "module_6221" /* 6221 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6253 from "module_6253" /* 6253 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const FamilyKeysSpotIllustration = ReactCompilerGating.isReactCompilerEna
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6221 };
+    const obj2 = { uri: _modDef6253 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const FamilyKeysSpotIllustration = ReactCompilerGating.isReactCompilerEna
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6221 };
+  const obj2 = { uri: _modDef6253 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,22 +1,22 @@
-// Module ID: 12031
-// Function ID: 12032
+// Module ID: 12067
+// Function ID: 12068
 // Name: AppealIngestionExternalLink
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4455, 4754, 1181, 8915, 5341, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4487, 4786, 1181, 8947, 5373, 2]
 
-// Module 12031 (AppealIngestionExternalLink)
+// Module 12067 (AppealIngestionExternalLink)
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import LinkingDefault from "Linking" /* 4455 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
-import _mod8915 from "module_8915" /* 8915 */;
+import LinkingDefault from "Linking" /* 4487 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
+import _mod8947 from "module_8947" /* 8947 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { childButton: { marginBottom: 8, borderRadius: nativeDefault.radii.xs }, childContainer: null, childButtonText: null, chevron: null };
 let obj3 = { marginBottom: 8, borderRadius: nativeDefault.radii.xs };
 obj2.childContainer = { minHeight: 60, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, paddingVertical: 16, paddingStart: 16, paddingEnd: 8, borderRadius: nativeDefault.radii.xs };
@@ -43,7 +43,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
         let tmp6 = cResult[5];
       }
       if (cResult[6] !== tmp4.chevron.color) {
-        const obj2 = { source: tmp(8915), color: tmp4.chevron.color };
+        const obj2 = { source: tmp(8947), color: tmp4.chevron.color };
         const tmp11 = closure_4(tmp(1181).Icon, obj2);
         cResult[6] = tmp4.chevron.color;
         cResult[7] = tmp11;
@@ -65,7 +65,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
             }
           }
           const obj3 = { style: tmp4.childButton, accessibilityRole: "button", onPress: tmp5, children: tmp12 };
-          const tmp18 = closure_4(tmp(5341).PressableHighlight, obj3);
+          const tmp18 = closure_4(tmp(5373).PressableHighlight, obj3);
           cResult[12] = tmp5;
           cResult[13] = tmp4.childButton;
           cResult[14] = tmp12;
@@ -84,7 +84,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
       tmp12 = tmp15;
     }
     const obj5 = { style: tmp4.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: text };
-    const tmp8 = closure_4(tmp(4754).Text, obj5);
+    const tmp8 = closure_4(tmp(4786).Text, obj5);
     cResult[3] = tmp4.childButtonText;
     cResult[4] = text;
     cResult[5] = tmp8;
@@ -115,7 +115,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     children: null
   };
   const obj2 = { style: tmp.childContainer, children: null };
-  const items = [closure_4(Text_Text.Text, { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: children.text }), closure_4(native.Icon, { source: _mod8915, color: tmp.chevron.color })];
+  const items = [closure_4(Text_Text.Text, { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: children.text }), closure_4(native.Icon, { source: _mod8947, color: tmp.chevron.color })];
   obj2.children = items;
   obj.children = closure_5(View, obj2);
   return closure_4(Pressables.PressableHighlight, obj);

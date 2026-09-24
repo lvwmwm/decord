@@ -1,18 +1,18 @@
-// Module ID: 15180
-// Function ID: 15181
+// Module ID: 15190
+// Function ID: 15191
 // Name: FamilyCenterLinkingBanner
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 8922, 1119, 2486, 12050, 15181, 4754, 15143, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 8954, 1119, 2486, 12086, 15191, 4786, 15153, 2]
 
-// Module 15180 (FamilyCenterLinkingBanner)
+// Module 15190 (FamilyCenterLinkingBanner)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import _modDef2486 from "module_2486" /* 2486 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8922 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 12050 */;
-import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 15143 */;
-import _modDef15181 from "module_15181" /* 15181 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8954 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 12086 */;
+import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 15153 */;
+import _modDef15191 from "module_15191" /* 15191 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: nativeDefault.space.PX_16, paddingTop: 0, paddingBottom: nativeDefault.space.PX_16, alignItems: "center", borderRadius: nativeDefault.radii.md, elevation: 2, overflow: "hidden" }, content: null, art: null, header: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: nativeDefault.space.PX_16, paddingTop: 0, paddingBottom: nativeDefault.space.PX_16, alignItems: "center", borderRadius: nativeDefault.radii.md, elevation: 2, overflow: "hidden" };
 obj2.content = { padding: nativeDefault.space.PX_16 };
@@ -31,7 +31,7 @@ obj2.header = { marginBottom: nativeDefault.space.PX_8 };
 let closure_7 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
 let obj5 = { marginBottom: nativeDefault.space.PX_8 };
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj6 = { container: null };
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(22);
@@ -66,7 +66,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult = useAgeSpecificText;
   const ageSpecificText1 = useAgeSpecificText.useAgeSpecificText(tmp12, tmp13);
   if (cResult[4] !== tmp4.art) {
-    const obj2 = { source: tmp5(15181), style: tmp4.art, resizeMethod: "resize" };
+    const obj2 = { source: tmp5(15191), style: tmp4.art, resizeMethod: "resize" };
     const tmp20 = hasOwnProperty(React4, obj2);
     cResult[4] = tmp4.art;
     cResult[5] = tmp20;
@@ -80,7 +80,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[9] !== ageSpecificText1) {
       const obj3 = { variant: "text-sm/medium", color: "text-muted", children: ageSpecificText1 };
-      const tmp25 = hasOwnProperty(tmp(4754).Text, obj3);
+      const tmp25 = hasOwnProperty(tmp(4786).Text, obj3);
       cResult[9] = ageSpecificText1;
       cResult[10] = tmp25;
       let tmp23 = tmp25;
@@ -149,7 +149,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj3 = { style: tmp.container, children: null };
   const obj4 = { source: null, style: null, resizeMethod: "resize" };
   const ageSpecificText1 = obj2.useAgeSpecificText(intl3.format(_modDef2486.yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" }), intl4.string(_modDef2486.JsAEDi));
-  obj4.source = _modDef15181;
+  obj4.source = _modDef15191;
   obj4.style = tmp.art;
   const items = [hasOwnProperty(React4, obj4), , ];
   const obj5 = { style: tmp.content, children: null };
@@ -197,7 +197,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl6 = tmp(1119).intl;
     obj4.description = intl6.string(_modDef2486["8rLBxD"]);
     const tmp20 = hasOwnProperty(closure_13, obj4);
-    const tmp21 = hasOwnProperty(tmp(15143).FamilyCenterParentQRCodeButton, {});
+    const tmp21 = hasOwnProperty(tmp(15153).FamilyCenterParentQRCodeButton, {});
     cResult[2] = tmp20;
     cResult[3] = tmp21;
     let tmp16 = tmp21;
@@ -242,7 +242,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj.children = items;
   return timestampProducer(React3, obj);
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 const obj10 = { container: null };
 const obj9 = { marginTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, width: "100%" };
 obj10.container = { width: "100%", paddingHorizontal: nativeDefault.space.PX_16 };
@@ -269,7 +269,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   return tmp8;
 }) : (() => hasOwnProperty(React3, { style: closure_10().container, children: hasOwnProperty(FamilyCenterBannerButton.FamilyCenterTeenQRCodeButton, {}) }));
-createStyles = fn(4758);
+createStyles = fn(4790);
 const obj14 = { row: { display: "flex", flexDirection: "row", alignItems: "flex-start" }, gap: { marginBottom: 12 }, circle: null, rowContent: null };
 const size1 = { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", overflow: "hidden", width: 32, height: 32, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
 obj14.circle = size1;
@@ -282,7 +282,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLast) => {
   const tmp4 = closure_12();
   if (cResult[0] !== index) {
     const obj2 = { variant: "heading-md/semibold", color: "text-brand", children: index };
-    const tmp7 = hasOwnProperty(tmp(4754).Text, obj2);
+    const tmp7 = hasOwnProperty(tmp(4786).Text, obj2);
     cResult[0] = index;
     cResult[1] = tmp7;
     let tmp5 = tmp7;
@@ -303,7 +303,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLast) => {
       }
       if (cResult[8] !== header) {
         const obj3 = { variant: "heading-sm/bold", children: header };
-        const tmp14 = hasOwnProperty(tmp(4754).Text, obj3);
+        const tmp14 = hasOwnProperty(tmp(4786).Text, obj3);
         cResult[8] = header;
         cResult[9] = tmp14;
         let tmp12 = tmp14;
@@ -312,7 +312,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLast) => {
       }
       if (cResult[10] !== description) {
         const obj4 = { variant: "text-sm/medium", color: "text-muted", children: description };
-        const tmp17 = hasOwnProperty(tmp(4754).Text, obj4);
+        const tmp17 = hasOwnProperty(tmp(4786).Text, obj4);
         cResult[10] = description;
         cResult[11] = tmp17;
         let tmp15 = tmp17;

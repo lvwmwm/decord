@@ -1,12 +1,12 @@
-// Module ID: 12976
-// Function ID: 12977
+// Module ID: 13012
+// Function ID: 13013
 // Name: usePreviewableMediaText
-// Dependencies: [19, 558, 568, 12973, 1119, 2]
+// Dependencies: [19, 558, 568, 13009, 1119, 2]
 
-// Module 12976 (usePreviewableMediaText)
+// Module 13012 (usePreviewableMediaText)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 12973 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 13009 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -21,7 +21,7 @@ export const usePreviewableMediaText = ReactCompilerGating.isReactCompilerEnable
     if (1 === previewableMedia.length) {
       const first = previewableMedia[0];
       const type = first.type;
-      if (tmp(12973).PreviewableMediaTypes.IMAGE === type) {
+      if (tmp(13009).PreviewableMediaTypes.IMAGE === type) {
         if (null != author) {
           if (cResult[1] !== author.nick) {
             const intl20 = tmp(1119).intl;
@@ -51,7 +51,7 @@ export const usePreviewableMediaText = ReactCompilerGating.isReactCompilerEnable
           }
           let first1 = tmp61;
         }
-      } else if (tmp(12973).PreviewableMediaTypes.VIDEO === type) {
+      } else if (tmp(13009).PreviewableMediaTypes.VIDEO === type) {
         if (null != author) {
           if (cResult[6] !== author.nick) {
             const intl18 = tmp(1119).intl;
@@ -85,7 +85,7 @@ export const usePreviewableMediaText = ReactCompilerGating.isReactCompilerEnable
           }
           first1 = tmp55;
         }
-      } else if (tmp(12973).PreviewableMediaTypes.AUDIO === type) {
+      } else if (tmp(13009).PreviewableMediaTypes.AUDIO === type) {
         if (null != author) {
           if (cResult[11] !== author.nick) {
             const intl16 = tmp(1119).intl;
@@ -128,7 +128,7 @@ export const usePreviewableMediaText = ReactCompilerGating.isReactCompilerEnable
           }
           first1 = tmp49;
         }
-      } else if (tmp(12973).PreviewableMediaTypes.FILE === type) {
+      } else if (tmp(13009).PreviewableMediaTypes.FILE === type) {
         if (null != author) {
           if (cResult[19] !== author.nick) {
             const intl14 = tmp(1119).intl;
@@ -171,7 +171,7 @@ export const usePreviewableMediaText = ReactCompilerGating.isReactCompilerEnable
           }
           first1 = tmp42;
         }
-      } else if (tmp(12973).PreviewableMediaTypes.STICKER === type) {
+      } else if (tmp(13009).PreviewableMediaTypes.STICKER === type) {
         if (null != author) {
           if (cResult[27] !== author.nick) {
             const intl12 = tmp(1119).intl;
@@ -205,7 +205,7 @@ export const usePreviewableMediaText = ReactCompilerGating.isReactCompilerEnable
           }
           first1 = tmp35;
         }
-      } else if (tmp(12973).PreviewableMediaTypes.VOICE_MESSAGE === type) {
+      } else if (tmp(13009).PreviewableMediaTypes.VOICE_MESSAGE === type) {
         if (null != author) {
           if (cResult[32] !== author.nick) {
             const intl10 = tmp(1119).intl;
@@ -239,7 +239,7 @@ export const usePreviewableMediaText = ReactCompilerGating.isReactCompilerEnable
           }
           first1 = tmp29;
         }
-      } else if (tmp(12973).PreviewableMediaTypes.GIF === type) {
+      } else if (tmp(13009).PreviewableMediaTypes.GIF === type) {
         if (null != author) {
           if (cResult[37] !== author.nick) {
             const intl8 = tmp(1119).intl;

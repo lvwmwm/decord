@@ -1,14 +1,14 @@
-// Module ID: 16187
-// Function ID: 16188
+// Module ID: 16197
+// Function ID: 16198
 // Name: useUserSafetySettingsSelectedGuildId
-// Dependencies: [2067, 16183, 1078, 558, 568, 504, 2]
+// Dependencies: [2067, 16193, 1078, 558, 568, 504, 2]
 // Exports: useAllServersOptionSelected
 
-// Module 16187 (useUserSafetySettingsSelectedGuildId)
+// Module 16197 (useUserSafetySettingsSelectedGuildId)
 import GuildStore from "GuildStore" /* 2067 */;
 
 const require = fn;
-const UserSettingsSafetySelectedGuildStore = fn(16183);
+const UserSettingsSafetySelectedGuildStore = fn(16193);
 ({ GUILD_SELECT_ALL_SERVERS_OPTION_ID: c3, useUserSafetySettingsSelectedGuildStore: closure_4 } = UserSettingsSafetySelectedGuildStore);
 const GuildFeatures = fn(1078).GuildFeatures;
 let ReactCompilerGating = fn(558);

@@ -1,13 +1,13 @@
-// Module ID: 17374
-// Function ID: 17375
+// Module ID: 17384
+// Function ID: 17385
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: [32, 19, 17, 21, 4758, 17372, 580, 558, 568, 1119, 4754, 5341, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 17382, 580, 558, 568, 1119, 4786, 5373, 2]
 
-// Module 17374 (RestrictedBlockedMessageGroup)
+// Module 17384 (RestrictedBlockedMessageGroup)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,11 +17,11 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
-let obj2 = { toggle: { marginLeft: fn(17372).RESTRICTED_CONTENT_INSET, marginVertical: nativeDefault.space.PX_8 } };
+const createStyles = fn(4790);
+let obj2 = { toggle: { marginLeft: fn(17382).RESTRICTED_CONTENT_INSET, marginVertical: nativeDefault.space.PX_8 } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
-let obj3 = { marginLeft: fn(17372).RESTRICTED_CONTENT_INSET, marginVertical: nativeDefault.space.PX_8 };
+let obj3 = { marginLeft: fn(17382).RESTRICTED_CONTENT_INSET, marginVertical: nativeDefault.space.PX_8 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/message_request/native/RestrictedBlockedMessageGroup.tsx");
 
@@ -60,7 +60,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[5] !== tmp9) {
     const obj4 = { variant: "text-sm/medium", color: "text-muted", children: tmp9 };
-    const tmp13 = closure_5(tmp(4754).Text, obj4);
+    const tmp13 = closure_5(tmp(4786).Text, obj4);
     cResult[5] = tmp9;
     cResult[6] = tmp13;
     let tmp11 = tmp13;
@@ -104,7 +104,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp16 = mapped;
     }
   }
-  const tmp15 = closure_5(renderMessage(5341).PressableOpacity, { style: tmp4.toggle, accessibilityRole: "button", accessibilityState: tmp8, onPress: first, children: tmp11 });
+  const tmp15 = closure_5(renderMessage(5373).PressableOpacity, { style: tmp4.toggle, accessibilityRole: "button", accessibilityState: tmp8, onPress: first, children: tmp11 });
   cResult[7] = tmp4.toggle;
   cResult[8] = tmp8;
   cResult[9] = tmp11;

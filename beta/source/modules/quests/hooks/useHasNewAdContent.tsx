@@ -1,17 +1,17 @@
-// Module ID: 17262
-// Function ID: 17263
+// Module ID: 17272
+// Function ID: 17273
 // Name: useHasNewAdContent
-// Dependencies: [32, 15336, 7944, 5663, 1095, 558, 568, 11613, 7940, 504, 5670, 7632, 2031, 2]
+// Dependencies: [32, 15346, 7976, 5695, 1095, 558, 568, 11649, 7972, 504, 5702, 7664, 2031, 2]
 
-// Module 17262 (useHasNewAdContent)
+// Module 17272 (useHasNewAdContent)
 import DurationsDefault from "Durations" /* 1095 */;
-import AdCreativeType from "AdCreativeType" /* 5670 */;
+import AdCreativeType from "AdCreativeType" /* 5702 */;
 import _slicedToArray from "module_32" /* 32 */;
-import AdContentSeenStore from "AdContentSeenStore" /* 15336 */;
-import QuestStore from "QuestStore" /* 7944 */;
+import AdContentSeenStore from "AdContentSeenStore" /* 15346 */;
+import QuestStore from "QuestStore" /* 7976 */;
 
 require = fn;
-const QuestsExperimentLocations = fn(5663).QuestsExperimentLocations;
+const QuestsExperimentLocations = fn(5695).QuestsExperimentLocations;
 const DAY = DurationsDefault.Millis.DAY;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

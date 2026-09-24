@@ -1,13 +1,13 @@
-// Module ID: 6240
-// Function ID: 6241
+// Module ID: 6272
+// Function ID: 6273
 // Name: ForceIllocon
-// Dependencies: [21, 558, 568, 6241, 5802, 2]
+// Dependencies: [21, 558, 568, 6273, 5834, 2]
 
-// Module 6240 (ForceIllocon)
+// Module 6272 (ForceIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6241 from "module_6241" /* 6241 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6273 from "module_6273" /* 6273 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const ForceIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6241 };
+    const obj2 = { uri: _modDef6273 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const ForceIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6241 };
+  const obj2 = { uri: _modDef6273 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

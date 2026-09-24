@@ -1,22 +1,22 @@
-// Module ID: 11968
-// Function ID: 11969
+// Module ID: 12004
+// Function ID: 12005
 // Name: RoleName
-// Dependencies: [19, 17, 4750, 21, 4758, 580, 558, 568, 504, 8224, 1181, 4754, 2]
+// Dependencies: [19, 17, 4782, 21, 4790, 580, 558, 568, 504, 8256, 1181, 4786, 2]
 
-// Module 11968 (RoleName)
+// Module 12004 (RoleName)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8224 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8256 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 }, name: { flexShrink: 1 } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -100,7 +100,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 }
               }
               const obj3 = { variant: str, style: tmp20, lineClamp: 1, gradientColors: tmp21, children };
-              const tmp24 = React4(tmp(4754).Text, obj3);
+              const tmp24 = React4(tmp(4786).Text, obj3);
               cResult[14] = children;
               cResult[15] = tmp20;
               cResult[16] = tmp21;

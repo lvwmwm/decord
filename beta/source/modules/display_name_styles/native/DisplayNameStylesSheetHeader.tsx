@@ -1,11 +1,11 @@
-// Module ID: 15604
-// Function ID: 15605
+// Module ID: 15614
+// Function ID: 15615
 // Name: DisplayNameStylesSheetHeader
-// Dependencies: [109, 19, 17, 21, 4758, 580, 558, 568, 7396, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 580, 558, 568, 7428, 2]
 
-// Module 15604 (DisplayNameStylesSheetHeader)
+// Module 15614 (DisplayNameStylesSheetHeader)
 import nativeDefault from "native" /* 580 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -15,7 +15,7 @@ require = fn;
 let closure_2 = ["leading", "trailing"];
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { trailingButtonClearance: { paddingTop: nativeDefault.space.PX_8 }, centeredAccessory: { justifyContent: "center", alignItems: "center" } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

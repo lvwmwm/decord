@@ -1,14 +1,14 @@
-// Module ID: 16962
-// Function ID: 16963
+// Module ID: 16972
+// Function ID: 16973
 // Name: VibegrationsStaffAccess
-// Dependencies: [2100, 2067, 4409, 1376, 1078, 558, 568, 4911, 504, 2]
+// Dependencies: [2100, 2067, 4441, 1376, 1078, 558, 568, 4943, 504, 2]
 
-// Module 16962 (VibegrationsStaffAccess)
+// Module 16972 (VibegrationsStaffAccess)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import GuildChannelStore from "GuildChannelStore" /* 2100 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;

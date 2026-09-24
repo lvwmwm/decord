@@ -1,9 +1,9 @@
-// Module ID: 15733
-// Function ID: 15734
+// Module ID: 15743
+// Function ID: 15744
 // Name: ShowSpoilersSetting
-// Dependencies: [19, 8238, 1078, 2023, 558, 568, 1119, 11594, 2]
+// Dependencies: [19, 8270, 1078, 2023, 558, 568, 1119, 11630, 2]
 
-// Module 15733 (ShowSpoilersSetting)
+// Module 15743 (ShowSpoilersSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import UserSettings from "UserSettings" /* 2023 */;
@@ -12,7 +12,7 @@ import noop from "module_19" /* 19 */;
 require = fn;
 const SpoilerRenderSetting = fn(1078).SpoilerRenderSetting;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -60,7 +60,7 @@ const radio = SettingBuilders.createRadio({
     const intl = util.intl;
     return intl.string(util.t.QgwmVz);
   },
-  parent: fn(8238).MobileUserSettings.CHAT,
+  parent: fn(8270).MobileUserSettings.CHAT,
   useValue: fn(2023).RenderSpoilers.useSetting,
   onValueChange: function onShowSpoilersChange(arg0) {
     const RenderSpoilers = UserSettings.RenderSpoilers;

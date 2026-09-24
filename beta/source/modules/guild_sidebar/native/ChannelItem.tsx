@@ -1,22 +1,22 @@
-// Module ID: 16467
-// Function ID: 16468
+// Module ID: 16477
+// Function ID: 16478
 // Name: ChannelItem
-// Dependencies: [109, 19, 17, 4798, 4409, 1376, 1078, 2052, 4940, 21, 4758, 580, 5660, 12527, 558, 568, 1401, 5802, 16468, 5295, 5241, 504, 1181, 5221, 1105, 16469, 4911, 2]
+// Dependencies: [109, 19, 17, 4830, 4441, 1376, 1078, 2052, 4972, 21, 4790, 580, 5692, 12563, 558, 568, 1401, 5834, 16478, 5327, 5273, 504, 1181, 5253, 1105, 16479, 4943, 2]
 
-// Module 16467 (ChannelItem)
+// Module 16477 (ChannelItem)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import router_utils from "router_utils" /* 1105 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5241 */;
-import BookCheckIcon2 from "BookCheckIcon" /* 5295 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import BaseChannelItem from "BaseChannelItem" /* 12527 */;
-import _modDef16468 from "module_16468" /* 16468 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5273 */;
+import BookCheckIcon2 from "BookCheckIcon" /* 5327 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import BaseChannelItem from "BaseChannelItem" /* 12563 */;
+import _modDef16478 from "module_16478" /* 16478 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
@@ -54,20 +54,20 @@ const Constants = fn(1078);
 const ChannelTypes = Constants.ChannelTypes;
 const Routes = Constants.Routes;
 const StaticChannelRoute = fn(2052).StaticChannelRoute;
-const UnreadSetting = fn(4940).UnreadSetting;
+const UnreadSetting = fn(4972).UnreadSetting;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
 let items = [, ];
 ({ GUILD_VOICE: arr[0], GUILD_STAGE_VOICE: arr[1] } = ChannelTypes);
 const set = new Set(items);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { channelIconLive: { tintColor: nativeDefault.unsafe_rawColors.GREEN_360 }, dmAvatar: { marginRight: 8 }, avatarStatus: null, groupDmAvatar: null, channelInfoContainer: null, avatarStatusSelected: null };
 let obj3 = { tintColor: nativeDefault.unsafe_rawColors.GREEN_360 };
 obj.avatarStatus = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj.groupDmAvatar = { width: 20, height: 20, borderRadius: 10, marginRight: 8 };
 obj.channelInfoContainer = { paddingStart: 4 };
 let obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj.avatarStatusSelected = { backgroundColor: fn(5660).DARK_393C42_LIGHT_DEE0E4 };
+obj.avatarStatusSelected = { backgroundColor: fn(5692).DARK_393C42_LIGHT_DEE0E4 };
 let closure_17 = createStyles.createStyles(obj);
 let ReactCompilerGating = fn(558);
 let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -127,8 +127,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     if (tmp5) {
-      let tmp11 = _modDef16468;
-      let BookCheckIcon = tmp(5295).BookCheckIcon;
+      let tmp11 = _modDef16478;
+      let BookCheckIcon = tmp(5327).BookCheckIcon;
     } else {
       if (cResult[10] === channel) {
         if (cResult[11] === locked) {
@@ -140,20 +140,20 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj7 = { isRulesChannel: false, locked };
-        const channelIconComponent = tmp(5241).getChannelIconComponent(channel, obj7);
+        const channelIconComponent = tmp(5273).getChannelIconComponent(channel, obj7);
         cResult[13] = channel;
         cResult[14] = locked;
         cResult[15] = channelIconComponent;
         BookCheckIcon = channelIconComponent;
-        const tmpResult = tmp(5241);
+        const tmpResult = tmp(5273);
       }
       const obj8 = { isRulesChannel: false, locked };
-      const channelIcon = tmp(5241).getChannelIcon(channel, obj8);
+      const channelIcon = tmp(5273).getChannelIcon(channel, obj8);
       cResult[10] = channel;
       cResult[11] = locked;
       cResult[12] = channelIcon;
       tmp11 = channelIcon;
-      const tmpResult2 = tmp(5241);
+      const tmpResult2 = tmp(5273);
     }
     if (isChannelLive) {
       const channelIconLive = tmp4.channelIconLive;
@@ -182,7 +182,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const obj11 = { mode, source: tmp11, isChannelLive, style: channelIconLive };
       const merged = Object.assign(tmp15);
-      const tmp23 = state(tmp(12527).BaseChannelIcon, obj11);
+      const tmp23 = state(tmp(12563).BaseChannelIcon, obj11);
       cResult[18] = tmp11;
       cResult[19] = isChannelLive;
       cResult[20] = mode;
@@ -210,12 +210,12 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const channelIconSource = AvatarUtilsDefault.getChannelIconSource(obj6);
       if (null != channelIconSource) {
         const obj7 = { style: tmp.groupDmAvatar, source: channelIconSource };
-        return state(tmp5(5802), obj7);
+        return state(tmp5(5834), obj7);
       }
       tmp5 = importDefault;
     }
     if (tmp2) {
-      let tmp12 = _modDef16468;
+      let tmp12 = _modDef16478;
       let BookCheckIcon = BookCheckIcon2.BookCheckIcon;
       let tmp9 = require;
     } else {
@@ -239,7 +239,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       obj19 = {};
     }
     const merged = Object.assign(obj19);
-    return state(tmp9(12527).BaseChannelIcon, obj10);
+    return state(tmp9(12563).BaseChannelIcon, obj10);
   }
 });
 ReactCompilerGating = fn(558);
@@ -354,7 +354,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   return closure_14(userId(1181).Avatar, obj3);
 });
 ReactCompilerGating = fn(558);
-let obj5 = { backgroundColor: fn(5660).DARK_393C42_LIGHT_DEE0E4 };
+let obj5 = { backgroundColor: fn(5692).DARK_393C42_LIGHT_DEE0E4 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/ChannelItem.tsx");
 

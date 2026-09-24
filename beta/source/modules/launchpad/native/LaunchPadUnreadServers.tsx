@@ -1,18 +1,18 @@
-// Module ID: 17673
-// Function ID: 17674
+// Module ID: 17683
+// Function ID: 17684
 // Name: LaunchPadUnreadServers
-// Dependencies: [19, 17, 2045, 4773, 1376, 1078, 21, 4758, 580, 558, 568, 7586, 17674, 504, 1181, 11216, 13326, 5802, 4771, 4769, 8116, 16445, 1482, 17679, 1119, 7319, 2]
+// Dependencies: [19, 17, 2045, 4805, 1376, 1078, 21, 4790, 580, 558, 568, 7618, 17684, 504, 1181, 11252, 13362, 5834, 4803, 4801, 8148, 16455, 1482, 17689, 1119, 7351, 2]
 
-// Module 17673 (LaunchPadUnreadServers)
+// Module 17683 (LaunchPadUnreadServers)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import transitionToChannel from "transitionToChannel" /* 4769 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4771 */;
-import transitionToGuild from "transitionToGuild" /* 7586 */;
-import isGuildSelectableDefault from "isGuildSelectable" /* 17679 */;
+import transitionToChannel from "transitionToChannel" /* 4801 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4803 */;
+import transitionToGuild from "transitionToGuild" /* 7618 */;
+import isGuildSelectableDefault from "isGuildSelectable" /* 17689 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import ReadStateStore from "ReadStateStore" /* 4773 */;
+import ReadStateStore from "ReadStateStore" /* 4805 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -24,7 +24,7 @@ get_ActivityIndicator = fn(17);
 const ChannelTypes = fn(1078).ChannelTypes;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { listWrapper: { marginTop: 8 }, list: { marginBottom: 4, flexShrink: 0 }, maskStrokeStyle: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, privateChannelWrapper: { position: "relative", paddingVertical: 2, justifyContent: "center", alignItems: "center" }, privateChannelIcon: { width: 48, height: 48, borderRadius: 24, overflow: "hidden" }, badgeWrapper: { position: "absolute", top: "50%", left: "50%", marginLeft: 6, marginTop: 6 }, guildWrapper: { paddingVertical: 2, justifyContent: "center", alignItems: "center" }, guildHistorySeparatorWrapper: { flex: 1, justifyContent: "center", alignItems: "center" }, guildHistorySeparator: null };
 let size = { width: 2, height: 32, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
 obj.guildHistorySeparator = size;
@@ -73,7 +73,7 @@ let closure_13 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guil
       }
     }
     const obj3 = { size: 48, borderRadius: 16, guildId, selected, onPress: tmp4, onLongPress: tmp5, backgroundColor: tmp3.maskStrokeStyle.backgroundColor };
-    const tmp9 = closure_10(onGuildSelect(17674), obj3);
+    const tmp9 = closure_10(onGuildSelect(17684), obj3);
     cResult[5] = guildId;
     cResult[6] = tmp5;
     cResult[7] = tmp4;
@@ -102,7 +102,7 @@ let closure_13 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guil
   const callback1 = noop.useCallback(() => {
     transitionToGuild.transitionToGuild(guildId);
   }, items1);
-  obj.children = closure_10(onGuildSelect(17674), { size: 48, borderRadius: 16, guildId, selected: guildId.selected, onPress: callback, onLongPress: callback1, backgroundColor: tmp.maskStrokeStyle.backgroundColor });
+  obj.children = closure_10(onGuildSelect(17684), { size: 48, borderRadius: 16, guildId, selected: guildId.selected, onPress: callback, onLongPress: callback1, backgroundColor: tmp.maskStrokeStyle.backgroundColor });
   return closure_10(closure_5, obj);
 }));
 ReactCompilerGating = fn(558);

@@ -1,19 +1,19 @@
-// Module ID: 12686
-// Function ID: 12687
+// Module ID: 12722
+// Function ID: 12723
 // Name: GuildPowerupsImage
-// Dependencies: [4750, 21, 4758, 558, 568, 504, 1369, 9088, 5802, 2]
+// Dependencies: [4782, 21, 4790, 558, 568, 504, 1369, 9120, 5834, 2]
 
-// Module 12686 (GuildPowerupsImage)
+// Module 12722 (GuildPowerupsImage)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1369 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 9088 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 9120 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ image: { width: "75%", height: "100%", alignSelf: "center", resizeMode: "contain" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

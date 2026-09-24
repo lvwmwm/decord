@@ -1,17 +1,17 @@
-// Module ID: 13700
-// Function ID: 13701
+// Module ID: 13736
+// Function ID: 13737
 // Name: PromotionStringUtils
-// Dependencies: [4423, 1378, 558, 568, 504, 4418, 7481, 1119, 2112, 2]
+// Dependencies: [4455, 1378, 558, 568, 504, 4450, 7513, 1119, 2112, 2]
 // Exports: getHelpArticleLinkProps
 
-// Module 13700 (PromotionStringUtils)
+// Module 13736 (PromotionStringUtils)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
-import PriceUtils from "PriceUtils" /* 7481 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4423 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4450 */;
+import PriceUtils from "PriceUtils" /* 7513 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4455 */;
 
 require = fn;
 const PremiumConstants = fn(1378);
@@ -40,8 +40,8 @@ export const useFormatStringWithCommonPremiumParams = ReactCompilerGating.isReac
     if (stateFromStores) {
       try {
         const defaultPrice = PremiumUtilsDefault.getDefaultPrice(hasOwnProperty.PREMIUM_MONTH_TIER_2);
-        str = tmp(7481).formatPrice(defaultPrice.amount, defaultPrice.currency);
-        const tmpResult2 = tmp(7481);
+        str = tmp(7513).formatPrice(defaultPrice.amount, defaultPrice.currency);
+        const tmpResult2 = tmp(7513);
       } catch (err) {
       }
     }

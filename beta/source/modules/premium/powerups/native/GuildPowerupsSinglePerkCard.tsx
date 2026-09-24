@@ -1,18 +1,18 @@
-// Module ID: 12735
-// Function ID: 12736
+// Module ID: 12771
+// Function ID: 12772
 // Name: GuildPowerupsSinglePerkCard
-// Dependencies: [19, 21, 558, 568, 12683, 12663, 12659, 12682, 12731, 12736, 2]
+// Dependencies: [19, 21, 558, 568, 12719, 12699, 12695, 12718, 12767, 12772, 2]
 
-// Module 12735 (GuildPowerupsSinglePerkCard)
+// Module 12771 (GuildPowerupsSinglePerkCard)
 import c from "c" /* 568 */;
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12659 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12663 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12682 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12683 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12731 */;
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12695 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12699 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12718 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12719 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12767 */;
 import noop from "module_19" /* 19 */;
 
-const GuildPowerupsPerkCardDefault = tmp3(12736);
+const GuildPowerupsPerkCardDefault = tmp3(12772);
 require = fn;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);

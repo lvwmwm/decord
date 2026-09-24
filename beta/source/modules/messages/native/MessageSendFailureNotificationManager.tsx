@@ -1,18 +1,18 @@
-// Module ID: 18278
-// Function ID: 18279
+// Module ID: 18288
+// Function ID: 18289
 // Name: MessageSendFailureNotificationManager
-// Dependencies: [2099, 4580, 1376, 1983, 1078, 9315, 12959, 12961, 9553, 1119, 7365, 2]
+// Dependencies: [2099, 4612, 1376, 1983, 1078, 9347, 12995, 12997, 9585, 1119, 7397, 2]
 
-// Module 18278 (MessageSendFailureNotificationManager)
+// Module 18288 (MessageSendFailureNotificationManager)
 import util from "util" /* 1119 */;
-import PushNotificationDefault from "PushNotification" /* 9553 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 12959 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12961 */;
+import PushNotificationDefault from "PushNotification" /* 9585 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 12995 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12997 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 import UserStore from "UserStore" /* 1376 */;
 import AppStateStore from "AppStateStore" /* 1983 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
 
 require = fn;
 function handleMessageSendFailure(shouldNotify) {
@@ -79,7 +79,7 @@ function handleMessageCreate(message) {
 }
 const Constants = fn(1078);
 ({ InAppNotificationTypes: closure_7, MessageStates: closure_8 } = Constants);
-const LocalNotificationTypes = fn(9315).LocalNotificationTypes;
+const LocalNotificationTypes = fn(9347).LocalNotificationTypes;
 const prototype = function MessageSendFailureNotificationManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   applyArgumentsResult.actions = { MESSAGE_CREATE: handleMessageCreate, MESSAGE_SEND_FAILED: handleMessageSendFailure };

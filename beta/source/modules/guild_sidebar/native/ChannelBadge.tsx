@@ -1,20 +1,20 @@
-// Module ID: 16569
-// Function ID: 16570
+// Module ID: 16579
+// Function ID: 16580
 // Name: ChannelBadge
-// Dependencies: [19, 17, 2113, 21, 4758, 558, 568, 565, 16570, 12444, 1885, 4754, 2]
+// Dependencies: [19, 17, 2113, 21, 4790, 558, 568, 565, 16580, 12480, 1885, 4786, 2]
 
-// Module 16569 (ChannelBadge)
+// Module 16579 (ChannelBadge)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
-import NewBadgeDefault from "NewBadge" /* 12444 */;
-import MentionsBadgeDefault from "MentionsBadge" /* 16570 */;
+import NewBadgeDefault from "NewBadge" /* 12480 */;
+import MentionsBadgeDefault from "MentionsBadge" /* 16580 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles(() => ({ channelInfoContainer: { paddingStart: 4 } }));
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -94,7 +94,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isNewChannel) =>
               }
               if (cResult[14] !== tmp9) {
                 const obj5 = { variant: "text-xs/semibold", color: "text-muted", children: tmp9 };
-                const tmp13 = jsx(tmp(4754).Text, { variant: "text-xs/semibold", color: "text-muted", children: tmp9 });
+                const tmp13 = jsx(tmp(4786).Text, { variant: "text-xs/semibold", color: "text-muted", children: tmp9 });
                 cResult[14] = tmp9;
                 cResult[15] = tmp13;
                 let tmp11 = tmp13;
@@ -156,7 +156,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isNewChannel) =>
           if (postsWithUnreadsCount > 0) {
             const obj5 = { style: tmp.channelInfoContainer, children: null };
             const obj6 = { variant: "text-xs/semibold", color: "text-muted", children: tmp2(1885).humanizeValue(postsWithUnreadsCount, stateFromStores) };
-            obj5.children = jsx(tmp2(4754).Text, { variant: "text-xs/semibold", color: "text-muted", children: tmp2(1885).humanizeValue(postsWithUnreadsCount, stateFromStores) });
+            obj5.children = jsx(tmp2(4786).Text, { variant: "text-xs/semibold", color: "text-muted", children: tmp2(1885).humanizeValue(postsWithUnreadsCount, stateFromStores) });
             tmp5 = <View style={tmp.channelInfoContainer}>{null}</View>;
             const tmp2Result = tmp2(1885);
           }

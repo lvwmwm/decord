@@ -1,19 +1,19 @@
-// Module ID: 9661
-// Function ID: 9662
+// Module ID: 9693
+// Function ID: 9694
 // Name: useActionBarHeight
-// Dependencies: [1996, 1078, 7398, 9662, 558, 568, 9665, 9668, 504, 2]
+// Dependencies: [1996, 1078, 7430, 9694, 558, 568, 9697, 9700, 504, 2]
 
-// Module 9661 (useActionBarHeight)
+// Module 9693 (useActionBarHeight)
 import c from "c" /* 568 */;
-import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 9665 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 9668 */;
+import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 9697 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 9700 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
 const initialize = tmp(504);
 require = fn;
 const InputModes = fn(1078).InputModes;
-let closure_5 = fn(7398).ACTION_SHEET_HANDLE_SPACING;
-let sum = 2 * fn(9662).SMALL_ACTION_BUTTON_DIMENSIONS.buttonRadius + 16 + 16;
+let closure_5 = fn(7430).ACTION_SHEET_HANDLE_SPACING;
+let sum = 2 * fn(9694).SMALL_ACTION_BUTTON_DIMENSIONS.buttonRadius + 16 + 16;
 const metroRequire = sum;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

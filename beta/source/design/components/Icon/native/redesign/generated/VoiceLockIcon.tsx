@@ -1,13 +1,13 @@
-// Module ID: 5318
-// Function ID: 5319
+// Module ID: 5350
+// Function ID: 5351
 // Name: VoiceLockIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 5253, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 5285, 4493, 2]
 
-// Module 5318 (VoiceLockIcon)
+// Module 5350 (VoiceLockIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod5253 from "module_5253" /* 5253 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod5285 from "module_5285" /* 5285 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const VoiceLockIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(5253);
+    const tmpResult = tmp(5285);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const VoiceLockIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5253, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5285, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

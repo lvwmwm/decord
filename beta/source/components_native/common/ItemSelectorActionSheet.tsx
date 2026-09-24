@@ -1,9 +1,9 @@
-// Module ID: 9536
-// Function ID: 9537
+// Module ID: 9568
+// Function ID: 9569
 // Name: ItemSelectorActionSheet
-// Dependencies: [19, 21, 558, 568, 4462, 580, 1616, 7444, 7396, 5900, 5901, 6863, 7397, 2]
+// Dependencies: [19, 21, 558, 568, 4494, 580, 1616, 7476, 7428, 5932, 5933, 6895, 7429, 2]
 
-// Module 9536 (ItemSelectorActionSheet)
+// Module 9568 (ItemSelectorActionSheet)
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import noop from "module_19" /* 19 */;
@@ -128,18 +128,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((selectedItem) =>
   ({ title, items } = arg0);
   ({ selectedItem: importDefault, onItemSelect: dependencyMap, onClose } = arg0);
   ({ body, hasIcons } = arg0);
-  const token = items(4462).useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);
+  const token = items(4494).useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);
   const findIndexResult = items.findIndex((value) => value.value === importDefault);
   const obj2 = { title, trailing: null };
   let tmp6Result = null;
   if (null != onClose) {
     const obj3 = { onPress: onClose };
-    tmp6Result = tmp6(tmp(7444).ActionSheetCloseButton, obj3);
+    tmp6Result = tmp6(tmp(7476).ActionSheetCloseButton, obj3);
   }
-  const obj4 = { scrollable: true, header: closure_3(items(7396).BottomSheetTitleHeader, obj2), children: null };
+  const obj4 = { scrollable: true, header: closure_3(items(7428).BottomSheetTitleHeader, obj2), children: null };
   obj2.trailing = tmp6Result;
   const obj5 = { contentContainerStyle: null, children: null };
-  const obj = items(4462);
+  const obj = items(4494);
   const tmp8 = closure_4;
   obj5.contentContainerStyle = { paddingHorizontal: token, paddingBottom: useSafeAreaInsetsDefault().bottom + nativeDefault.space.PX_16 };
   const items1 = [body, ];
@@ -148,7 +148,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((selectedItem) =>
     num = findIndexResult;
   }
   const obj6 = { paddingHorizontal: token, paddingBottom: useSafeAreaInsetsDefault().bottom + nativeDefault.space.PX_16 };
-  items1[1] = closure_3(items(5901).TableRadioGroup, {
+  items1[1] = closure_3(items(5933).TableRadioGroup, {
     value: num,
     accessibilityLabel: title,
     hasIcons,
@@ -157,9 +157,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((selectedItem) =>
         dependencyMap(iter.value);
       }
     },
-    children: items.map((label, value) => closure_1_3(items(5900).TableRadioRow, { label: label.label, value }, value))
+    children: items.map((label, value) => closure_1_3(items(5932).TableRadioRow, { label: label.label, value }, value))
   });
   obj5.children = items1;
-  obj4.children = tmp8(items(6863).BottomSheetScrollView, obj5);
-  return closure_3(items(7397).BottomSheet, obj4);
+  obj4.children = tmp8(items(6895).BottomSheetScrollView, obj5);
+  return closure_3(items(7429).BottomSheet, obj4);
 });

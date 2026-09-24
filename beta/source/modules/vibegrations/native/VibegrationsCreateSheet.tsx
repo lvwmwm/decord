@@ -1,15 +1,15 @@
-// Module ID: 16943
-// Function ID: 16944
+// Module ID: 16953
+// Function ID: 16954
 // Name: VibegrationsCreateSheet
-// Dependencies: [5, 32, 19, 17, 13364, 21, 4758, 580, 16944, 9308, 4725, 13187, 16946, 1119, 3682, 7442, 16947, 16948, 16949, 7449, 7396, 7332, 5903, 5822, 4754, 5188, 2]
+// Dependencies: [5, 32, 19, 17, 13400, 21, 4790, 580, 16954, 9340, 4757, 13223, 16956, 1119, 3714, 7474, 16957, 16958, 16959, 7481, 7428, 7364, 5935, 5854, 4786, 5220, 2]
 // Exports: default
 
-// Module 16943 (VibegrationsCreateSheet)
+// Module 16953 (VibegrationsCreateSheet)
 import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7442 */;
-import VibegrationsEffortPicker from "VibegrationsEffortPicker" /* 16948 */;
-import VibegrationsTemplates from "VibegrationsTemplates" /* 16949 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4757 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7474 */;
+import VibegrationsEffortPicker from "VibegrationsEffortPicker" /* 16958 */;
+import VibegrationsTemplates from "VibegrationsTemplates" /* 16959 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -18,12 +18,12 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const VibegrationsConnectionStore = fn(13364);
+const VibegrationsConnectionStore = fn(13400);
 ({ ensureConnection: closure_7, sendUserMessage: closure_8, stageModelSettings: closure_9 } = VibegrationsConnectionStore);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const VibegrationsCreateSheet = "VibegrationsCreateSheet";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { content: { gap: nativeDefault.space.PX_16 }, form: null, section: null, sectionHeading: null };
 let obj3 = { gap: nativeDefault.space.PX_16 };
 obj2.form = { gap: nativeDefault.space.PX_8 };

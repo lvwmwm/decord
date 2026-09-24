@@ -1,15 +1,15 @@
-// Module ID: 13198
-// Function ID: 13199
+// Module ID: 13234
+// Function ID: 13235
 // Name: InAppReportsGuildPreviewElement
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 7222, 4608, 1119, 4754, 5799, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 7254, 4640, 1119, 4786, 5831, 2]
 
-// Module 13198 (InAppReportsGuildPreviewElement)
+// Module 13234 (InAppReportsGuildPreviewElement)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ColorUtils from "ColorUtils" /* 4608 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import GuildIcon from "GuildIcon" /* 5799 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7222 */;
+import ColorUtils from "ColorUtils" /* 4640 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import GuildIcon from "GuildIcon" /* 5831 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7254 */;
 import noop from "module_19" /* 19 */;
 
 const GuildIconDefault = GuildIcon;
@@ -18,7 +18,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, borderColor: { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY }, title: { lineHeight: 16, marginBottom: 8 }, guildContainer: null, guildInfo: null };
 let obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj2.guildContainer = { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 12 };
@@ -35,11 +35,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const tmp4 = closure_6();
   const typeConsolidationEyebrow = useTypeConsolidationTextTransform.useTypeConsolidationEyebrow("InAppReportsGuildPreview", "text-xs/bold");
   if (cResult[0] !== tmp4.borderColor.color) {
-    const hexWithOpacityResult = tmp(4608).hexWithOpacity(tmp4.borderColor.color, 0.08);
+    const hexWithOpacityResult = tmp(4640).hexWithOpacity(tmp4.borderColor.color, 0.08);
     cResult[0] = tmp4.borderColor.color;
     cResult[1] = hexWithOpacityResult;
     let tmp6 = hexWithOpacityResult;
-    const tmpResult = tmp(4608);
+    const tmpResult = tmp(4640);
   } else {
     tmp6 = cResult[1];
   }
@@ -75,7 +75,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                 let tmp17 = cResult[15];
               }
               if (cResult[16] !== guild) {
-                const obj4 = { size: tmp(5799).GuildIconSizes.LARGE, guild };
+                const obj4 = { size: tmp(5831).GuildIconSizes.LARGE, guild };
                 const tmp22 = React4(GuildIconDefault, obj4);
                 cResult[16] = guild;
                 cResult[17] = tmp22;
@@ -122,7 +122,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                 tmp26 = tmp29;
               }
               const obj7 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp4.guildInfo, children: guild.name };
-              const tmp25 = React4(tmp(4754).Text, obj7);
+              const tmp25 = React4(tmp(4786).Text, obj7);
               cResult[18] = guild.name;
               cResult[19] = tmp4.guildInfo;
               cResult[20] = tmp25;
@@ -136,7 +136,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           }
         }
         const obj8 = { style: tmp8, accessibilityRole: "header", variant: typeConsolidationEyebrow.variant, children: cResult[6] };
-        const tmp15 = React4(tmp(4754).Text, obj8);
+        const tmp15 = React4(tmp(4786).Text, obj8);
         cResult[7] = typeConsolidationEyebrow.variant;
         cResult[8] = tmp8;
         cResult[9] = cResult[6];

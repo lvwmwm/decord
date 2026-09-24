@@ -1,10 +1,10 @@
-// Module ID: 13412
-// Function ID: 13413
+// Module ID: 13448
+// Function ID: 13449
 // Name: useFriendRequestActions
-// Dependencies: [19, 558, 568, 11174, 2]
+// Dependencies: [19, 558, 568, 11210, 2]
 
-// Module 13412 (useFriendRequestActions)
-import PeopleUtilsDefault from "PeopleUtils" /* 11174 */;
+// Module 13448 (useFriendRequestActions)
+import PeopleUtilsDefault from "PeopleUtils" /* 11210 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

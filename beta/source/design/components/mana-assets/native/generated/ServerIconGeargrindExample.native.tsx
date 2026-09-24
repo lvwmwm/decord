@@ -1,13 +1,13 @@
-// Module ID: 6668
-// Function ID: 6669
+// Module ID: 6700
+// Function ID: 6701
 // Name: ServerIconGeargrindExample
-// Dependencies: [21, 558, 568, 6669, 5802, 2]
+// Dependencies: [21, 558, 568, 6701, 5834, 2]
 
-// Module 6668 (ServerIconGeargrindExample)
+// Module 6700 (ServerIconGeargrindExample)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6669 from "module_6669" /* 6669 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6701 from "module_6701" /* 6701 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const ServerIconGeargrindExample = ReactCompilerGating.isReactCompilerEna
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6669 };
+    const obj2 = { uri: _modDef6701 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const ServerIconGeargrindExample = ReactCompilerGating.isReactCompilerEna
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6669 };
+  const obj2 = { uri: _modDef6701 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

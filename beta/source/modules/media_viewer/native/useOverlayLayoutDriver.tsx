@@ -1,12 +1,12 @@
-// Module ID: 13258
-// Function ID: 13259
+// Module ID: 13294
+// Function ID: 13295
 // Name: useOverlayLayoutDriver
-// Dependencies: [19, 558, 568, 4497, 8569, 4759, 1181, 2]
+// Dependencies: [19, 558, 568, 4529, 8601, 4791, 1181, 2]
 
-// Module 13258 (useOverlayLayoutDriver)
+// Module 13294 (useOverlayLayoutDriver)
 import native from "native" /* 1181 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -21,9 +21,9 @@ const __initData4 = { code: "function useOverlayLayoutDriverTsx4(){const{interpo
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = sharedValue(568).c(6);
   let obj = sharedValue(568);
-  sharedValue = sharedValue(4497).useSharedValue(0);
-  const obj2 = sharedValue(4497);
-  const mediaViewerDimensions = sharedValue(8569).useMediaViewerDimensions();
+  sharedValue = sharedValue(4529).useSharedValue(0);
+  const obj2 = sharedValue(4529);
+  const mediaViewerDimensions = sharedValue(8601).useMediaViewerDimensions();
   ({ height, width } = mediaViewerDimensions);
   if (cResult[0] !== sharedValue) {
     const fn = function n() {
@@ -52,9 +52,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = items;
   tmp5 = items;
 }) : (() => {
-  sharedValue = sharedValue(4497).useSharedValue(0);
-  let obj = sharedValue(4497);
-  const mediaViewerDimensions = sharedValue(8569).useMediaViewerDimensions();
+  sharedValue = sharedValue(4529).useSharedValue(0);
+  let obj = sharedValue(4529);
+  const mediaViewerDimensions = sharedValue(8601).useMediaViewerDimensions();
   const items = [sharedValue, , ];
   ({ height: arr[1], width: arr[2] } = mediaViewerDimensions);
   const effect = noop.useEffect(() => {

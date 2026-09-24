@@ -1,22 +1,22 @@
-// Module ID: 14960
-// Function ID: 14961
+// Module ID: 14995
+// Function ID: 14996
 // Name: SettingListItemHighlight
-// Dependencies: [19, 17, 14955, 21, 4758, 580, 558, 568, 4497, 4759, 2]
+// Dependencies: [19, 17, 14990, 21, 4790, 580, 558, 568, 4529, 4791, 2]
 
-// Module 14960 (SettingListItemHighlight)
+// Module 14995 (SettingListItemHighlight)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
 import noop from "module_19" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14955 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14990 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 
 require = fn;
 const StyleSheet = fn(17).StyleSheet;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { background: { backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_HOVER } };
 let closure_7 = createStyles.createStyles(obj);
 const __initData = { code: "function SettingListItemHighlightTsx1(){const{withSequence,withDelay,withTiming,Easing,runOnJS,clearSelectedSearchResult}=this.__closure;return{opacity:withSequence(withDelay(500,withTiming(0,{duration:0})),withTiming(0.2,{duration:300,easing:Easing.ease}),withTiming(0,{duration:300,easing:Easing.ease},\"respect-motion-settings\",function(finished){if(finished){runOnJS(clearSelectedSearchResult);}}))};}" };
@@ -84,11 +84,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
             return obj;
           }
         }
-        let obj2 = { withSequence: tmp(4497).withSequence, withDelay: tmp(4497).withDelay, withTiming: tmp(4759).withTiming, Easing: tmp(4497).Easing, runOnJS: tmp(4497).runOnJS, clearSelectedSearchResult };
+        let obj2 = { withSequence: tmp(4529).withSequence, withDelay: tmp(4529).withDelay, withTiming: tmp(4791).withTiming, Easing: tmp(4529).Easing, runOnJS: tmp(4529).runOnJS, clearSelectedSearchResult };
         O.__closure = obj2;
         O.__workletHash = 11780002409998;
         O.__initData = __initData;
-        const animatedStyle = tmp(4497).useAnimatedStyle(O);
+        const animatedStyle = tmp(4529).useAnimatedStyle(O);
         if (cResult[5] === animatedStyle) {
           if (cResult[6] === tmp13) {
             if (cResult[7] === style) {
@@ -109,7 +109,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         cResult[8] = tmp4.background;
         cResult[9] = tmp20;
         tmp16 = tmp20;
-        const tmpResult = tmp(4497);
+        const tmpResult = tmp(4529);
       }
     }
   }

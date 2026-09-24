@@ -1,13 +1,13 @@
-// Module ID: 7494
-// Function ID: 7495
+// Module ID: 7526
+// Function ID: 7527
 // Name: useRoleSubscriptionsVisibleInGuild
-// Dependencies: [2102, 2067, 1078, 7495, 7496, 558, 568, 504, 7497, 7502, 2]
+// Dependencies: [2102, 2067, 1078, 7527, 7528, 558, 568, 504, 7529, 7534, 2]
 // Exports: areRoleSubscriptionsVisibleInGuild
 
-// Module 7494 (useRoleSubscriptionsVisibleInGuild)
-import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7495 */;
-import useHasRoleSubscriptionInGuild from "useHasRoleSubscriptionInGuild" /* 7496 */;
-import GuildProductsEligibility from "GuildProductsEligibility" /* 7502 */;
+// Module 7526 (useRoleSubscriptionsVisibleInGuild)
+import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7527 */;
+import useHasRoleSubscriptionInGuild from "useHasRoleSubscriptionInGuild" /* 7528 */;
+import GuildProductsEligibility from "GuildProductsEligibility" /* 7534 */;
 import ImpersonateStore from "ImpersonateStore" /* 2102 */;
 import GuildStore from "GuildStore" /* 2067 */;
 

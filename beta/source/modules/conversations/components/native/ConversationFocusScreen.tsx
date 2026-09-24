@@ -1,11 +1,11 @@
-// Module ID: 13557
-// Function ID: 13558
+// Module ID: 13593
+// Function ID: 13594
 // Name: ConversationFocusScreen
-// Dependencies: [19, 7845, 21, 558, 568, 1491, 504, 13558, 2]
+// Dependencies: [19, 7877, 21, 558, 568, 1491, 504, 13594, 2]
 
-// Module 13557 (ConversationFocusScreen)
+// Module 13593 (ConversationFocusScreen)
 import noop from "module_19" /* 19 */;
-import ConversationsStore from "ConversationsStore" /* 7845 */;
+import ConversationsStore from "ConversationsStore" /* 7877 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
@@ -86,7 +86,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       const obj3 = { channelId, conversationId, messages: stateFromStores, fullyHydrated, isFullFetchPending, startMessageId };
-      const tmp16 = jsx(conversationId(13558), { channelId, conversationId, messages: stateFromStores, fullyHydrated, isFullFetchPending, startMessageId });
+      const tmp16 = jsx(conversationId(13594), { channelId, conversationId, messages: stateFromStores, fullyHydrated, isFullFetchPending, startMessageId });
       cResult[10] = channelId;
       cResult[11] = conversationId;
       cResult[12] = fullyHydrated;
@@ -172,5 +172,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return obj2;
   }, items3);
   ({ fullyHydrated, isFullFetchPending, startMessageId } = stateFromStoresObject);
-  return jsx(conversationId(13558), { channelId, conversationId, messages, fullyHydrated, isFullFetchPending, startMessageId });
+  return jsx(conversationId(13594), { channelId, conversationId, messages, fullyHydrated, isFullFetchPending, startMessageId });
 });

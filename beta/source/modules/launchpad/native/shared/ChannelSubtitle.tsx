@@ -1,18 +1,18 @@
-// Module ID: 17687
-// Function ID: 17688
+// Module ID: 17697
+// Function ID: 17698
 // Name: ChannelSubtitle
-// Dependencies: [19, 12213, 21, 17137, 4754, 558, 568, 16566, 12211, 2]
+// Dependencies: [19, 12249, 21, 17147, 4786, 558, 568, 16576, 12247, 2]
 // Exports: renderChannelSubtitle
 
-// Module 17687 (ChannelSubtitle)
+// Module 17697 (ChannelSubtitle)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import getChannelSubtitleData from "getChannelSubtitleData" /* 16566 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17137 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import getChannelSubtitleData from "getChannelSubtitleData" /* 16576 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17147 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const SUBTITLE_OPACITY_NORMAL = fn(12213).SUBTITLE_OPACITY_NORMAL;
+const SUBTITLE_OPACITY_NORMAL = fn(12249).SUBTITLE_OPACITY_NORMAL;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -72,12 +72,12 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       str2 = "text-muted";
     }
     obj3.color = str2;
-    result = tmp(12211).renderMessagePreviewMarkup(obj3);
+    result = tmp(12247).renderMessagePreviewMarkup(obj3);
     tmp10 = forResult;
     tmp12 = textProps;
-    Text = tmp(4754).Text;
+    Text = tmp(4786).Text;
     const tmp14 = "voice" === channelSubtitleData.type && connected;
-    const tmpResult2 = tmp(12211);
+    const tmpResult2 = tmp(12247);
   }
   cResult[0] = channelId;
   cResult[1] = connected;
@@ -116,8 +116,8 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       str = "text-muted";
     }
     obj3.color = str;
-    obj2.children = tmp(12211).renderMessagePreviewMarkup(obj3);
-    return jsx(tmp(4754).Text, {});
+    obj2.children = tmp(12247).renderMessagePreviewMarkup(obj3);
+    return jsx(tmp(4786).Text, {});
   }
 });
 const size = fn(2);

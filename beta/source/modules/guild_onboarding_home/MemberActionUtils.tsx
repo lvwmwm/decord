@@ -1,18 +1,18 @@
-// Module ID: 12436
-// Function ID: 12437
+// Module ID: 12472
+// Function ID: 12473
 // Name: MemberActionUtils
-// Dependencies: [2109, 4945, 4946, 4386, 558, 568, 7470, 565, 1389, 2]
+// Dependencies: [2109, 4977, 4978, 4418, 558, 568, 7502, 565, 1389, 2]
 
-// Module 12436 (MemberActionUtils)
-import useIsNewMemberDefault from "useIsNewMember" /* 7470 */;
+// Module 12472 (MemberActionUtils)
+import useIsNewMemberDefault from "useIsNewMember" /* 7502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4945 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4946 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4977 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4978 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const GuildMemberFlags = fn(4386).GuildMemberFlags;
+const GuildMemberFlags = fn(4418).GuildMemberFlags;
 fn(558);
 let ReactCompilerGating = fn(558);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {

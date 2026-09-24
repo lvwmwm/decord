@@ -1,20 +1,20 @@
-// Module ID: 17088
-// Function ID: 17089
+// Module ID: 17098
+// Function ID: 17099
 // Name: VibegrationsChannelChatToasts
-// Dependencies: [19, 17, 21, 4758, 580, 1119, 558, 568, 4603, 1181, 4754, 5824, 17089, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 1119, 558, 568, 4635, 1181, 4786, 5856, 17099, 2]
 
-// Module 17088 (VibegrationsChannelChatToasts)
+// Module 17098 (VibegrationsChannelChatToasts)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import UserUtils from "UserUtils" /* 4603 */;
-import useVibegrationsChatToastMessagesDefault from "useVibegrationsChatToastMessages" /* 17089 */;
+import UserUtils from "UserUtils" /* 4635 */;
+import useVibegrationsChatToastMessagesDefault from "useVibegrationsChatToastMessages" /* 17099 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { column: null, opaque: null, card: null, body: null };
 const rect = { position: "absolute", top: nativeDefault.space.PX_8, right: nativeDefault.space.PX_12, left: nativeDefault.space.PX_12, alignItems: "flex-end", gap: nativeDefault.space.PX_8 };
 obj2.column = rect;
@@ -62,7 +62,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     }
     if (cResult[7] !== name) {
       const obj4 = { variant: "text-xs/semibold", color: "text-default", lineClamp: 1, children: name };
-      const tmp16 = hasOwnProperty(tmp(4754).Text, obj4);
+      const tmp16 = hasOwnProperty(tmp(4786).Text, obj4);
       cResult[7] = name;
       cResult[8] = tmp16;
       let tmp14 = tmp16;
@@ -71,7 +71,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     }
     if (cResult[9] !== tmp6) {
       const obj5 = { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: tmp6 };
-      const tmp19 = hasOwnProperty(tmp(4754).Text, obj5);
+      const tmp19 = hasOwnProperty(tmp(4786).Text, obj5);
       cResult[9] = tmp6;
       cResult[10] = tmp19;
       let tmp17 = tmp19;
@@ -107,7 +107,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
         const obj7 = { variant: "primary", shadow: "high", border: "subtle", style: tmp4.card, onPress: tmp10, children: null };
         const items = [tmp11, tmp20];
         obj7.children = items;
-        const tmp26 = timestampProducer(tmp(5824).Card, obj7);
+        const tmp26 = timestampProducer(tmp(5856).Card, obj7);
         cResult[15] = tmp10;
         cResult[16] = tmp4.card;
         cResult[17] = tmp11;
@@ -148,13 +148,13 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     const items1 = [hasOwnProperty(tmp2(1181).Avatar, obj4), ];
     const obj5 = { style: tmp.body, children: null };
     const obj6 = { variant: "text-xs/semibold", color: "text-default", lineClamp: 1, children: name };
-    const items2 = [hasOwnProperty(tmp2(4754).Text, obj6), ];
+    const items2 = [hasOwnProperty(tmp2(4786).Text, obj6), ];
     const obj7 = { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: trimmed };
-    items2[1] = hasOwnProperty(tmp2(4754).Text, obj7);
+    items2[1] = hasOwnProperty(tmp2(4786).Text, obj7);
     obj5.children = items2;
     items1[1] = timestampProducer(View, obj5);
     obj3.children = items1;
-    obj2.children = timestampProducer(tmp2(5824).Card, obj3);
+    obj2.children = timestampProducer(tmp2(5856).Card, obj3);
     return hasOwnProperty(View, obj2);
   } else if (message.stickerItems.length > 0) {
     const intl2 = tmp2(1119).intl;

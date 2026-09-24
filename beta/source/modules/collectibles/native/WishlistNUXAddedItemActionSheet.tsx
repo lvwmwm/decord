@@ -1,24 +1,24 @@
-// Module ID: 9049
-// Function ID: 9050
+// Module ID: 9081
+// Function ID: 9082
 // Name: WishlistNUXAddedItemActionSheet
-// Dependencies: [32, 19, 17, 1376, 8457, 21, 4758, 580, 558, 568, 504, 1977, 4725, 8453, 7429, 9050, 9051, 4754, 1119, 5188, 5652, 7397, 2]
+// Dependencies: [32, 19, 17, 1376, 8489, 21, 4790, 580, 558, 568, 504, 1977, 4757, 8485, 7461, 9082, 9083, 4786, 1119, 5220, 5684, 7429, 2]
 
-// Module 9049 (WishlistNUXAddedItemActionSheet)
+// Module 9081 (WishlistNUXAddedItemActionSheet)
 import nativeDefault from "native" /* 580 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import SKUPreview from "SKUPreview" /* 9050 */;
-import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 9051 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import SKUPreview from "SKUPreview" /* 9082 */;
+import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 9083 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const View = fn(17).View;
-const UserProfileSections = fn(8457).UserProfileSections;
+const UserProfileSections = fn(8489).UserProfileSections;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { alignItems: "center", padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_24 }, textContainer: null, subtitle: null };
 let obj3 = { alignItems: "center", padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_24 };
 obj2.textContainer = { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
@@ -219,7 +219,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
         const obj5 = { variant: "heading-lg/extrabold", color: "text-strong", accessibilityRole: "header", children: null };
         const intl = tmp(1119).intl;
         obj5.children = intl.string(tmp(1119).t["3T2jbf"]);
-        const tmp24 = closure_8(tmp(4754).Text, obj5);
+        const tmp24 = closure_8(tmp(4786).Text, obj5);
         cResult[15] = tmp24;
         const tmp23 = tmp24;
       } else {
@@ -289,7 +289,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
           }
         }
         const obj6 = { variant: "text-md/normal", color: "text-default", style: tmp4.subtitle, children: tmp25 };
-        const tmp28 = closure_8(tmp(4754).Text, obj6);
+        const tmp28 = closure_8(tmp(4786).Text, obj6);
         cResult[17] = tmp4.subtitle;
         cResult[18] = tmp28;
       } else {
@@ -343,7 +343,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
           const intl2 = tmp(1119).intl;
           obj8.text = intl2.string(tmp(1119).t.tM4PUv);
           obj8.onPress = tmp17;
-          const tmp34 = closure_8(tmp(5188).Button, obj8);
+          const tmp34 = closure_8(tmp(5220).Button, obj8);
           cResult[22] = tmp34;
           const tmp33 = tmp34;
         } else {
@@ -415,9 +415,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
           const obj9 = { direction: "horizontal", children: null };
           const items2 = [tmp33, ];
           const obj10 = { text: tmp35, onPress: tmp18, variant: "secondary", size: "lg", grow: true };
-          items2[1] = closure_8(tmp(5188).Button, obj10);
+          items2[1] = closure_8(tmp(5220).Button, obj10);
           obj9.children = items2;
-          const tmp39 = closure_9(tmp(5652).ButtonGroup, obj9);
+          const tmp39 = closure_9(tmp(5684).ButtonGroup, obj9);
           cResult[24] = tmp18;
           cResult[25] = tmp39;
         } else {
@@ -457,7 +457,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
         const items3 = [tmp20, tmp29, tmp37];
         obj13.children = items3;
         obj12.children = closure_9(View, obj13);
-        const tmp44 = closure_8(tmp(7397).BottomSheet, obj12);
+        const tmp44 = closure_8(tmp(7429).BottomSheet, obj12);
         cResult[26] = tmp4.container;
         cResult[27] = tmp29;
         cResult[28] = tmp37;
@@ -510,11 +510,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
     ActionSheetActionCreatorsDefault.hideAllActionSheets();
     if (null != stateFromStores) {
       const obj2 = { userId: tmp4.id, sourceAnalyticsLocations: null, initialSection: null };
-      const items = [tmp(7429).COLLECTIBLES_SHOP];
+      const items = [tmp(7461).COLLECTIBLES_SHOP];
       obj2.sourceAnalyticsLocations = items;
       obj2.initialSection = UserProfileSections.WISHLIST;
-      tmp(8453)(obj2);
-      const tmpResult = tmp(8453);
+      tmp(8485)(obj2);
+      const tmpResult = tmp(8485);
     }
   }, items2);
   const callback2 = noop.useCallback(() => {

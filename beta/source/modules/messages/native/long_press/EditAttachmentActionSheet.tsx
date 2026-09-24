@@ -1,28 +1,28 @@
-// Module ID: 11803
-// Function ID: 11804
+// Module ID: 11839
+// Function ID: 11840
 // Name: EditAttachmentActionSheet
-// Dependencies: [5, 32, 19, 4978, 4751, 1078, 21, 558, 568, 8444, 8542, 1389, 1119, 4472, 7703, 7396, 4754, 7332, 5819, 5188, 5186, 580, 7449, 2]
+// Dependencies: [5, 32, 19, 5010, 4783, 1078, 21, 558, 568, 8476, 8574, 1389, 1119, 4504, 7735, 7428, 4786, 7364, 5851, 5220, 5218, 580, 7481, 2]
 
-// Module 11803 (EditAttachmentActionSheet)
+// Module 11839 (EditAttachmentActionSheet)
 import util from "util" /* 1119 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4472 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5819 */;
-import TextArea from "TextArea" /* 7332 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7396 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
-import useBottomSheetRef from "useBottomSheetRef" /* 8444 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4504 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5851 */;
+import TextArea from "TextArea" /* 7364 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7428 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
+import useBottomSheetRef from "useBottomSheetRef" /* 8476 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import MessageStore from "MessageStore" /* 4978 */;
+import MessageStore from "MessageStore" /* 5010 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_7 = fn(4751).LEGACY_SPOILER_ATTACHMENT_PREFIX;
+let closure_7 = fn(4783).LEGACY_SPOILER_ATTACHMENT_PREFIX;
 let MessageAttachmentFlags = fn(1078).MessageAttachmentFlags;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
@@ -488,7 +488,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   const tmp7Result3 = first1(first2.useState(false), 2);
   first2 = tmp7Result3[0];
   closure_6 = tmp7Result3[1];
-  const tmp5 = attachment(8542)(attachment);
+  const tmp5 = attachment(8574)(attachment);
   [tmp17, c7] = first1(first2.useState(), 2);
   let intl = tmp(1119).intl;
   let stringResult = intl.string(util.t.Y8ujqr);
@@ -521,7 +521,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   let tmp19Result = null;
   if (null != tmp17) {
     const obj7 = { variant: "text-sm/medium", color: "text-feedback-critical", children: tmp17 };
-    tmp19Result = tmp19(tmp(4754).Text, obj7);
+    tmp19Result = tmp19(tmp(4786).Text, obj7);
   }
   items[3] = tmp19Result;
   const obj8 = { variant: "primary", text: null, onPress: null, loading: null, disabled: null };

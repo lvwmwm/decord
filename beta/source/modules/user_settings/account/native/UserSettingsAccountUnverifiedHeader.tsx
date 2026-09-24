@@ -1,19 +1,19 @@
-// Module ID: 7244
-// Function ID: 7245
+// Module ID: 7276
+// Function ID: 7277
 // Name: UserSettingsAccountUnverifiedHeader
-// Dependencies: [19, 1376, 21, 4758, 580, 5836, 1119, 558, 568, 504, 4754, 5341, 2]
+// Dependencies: [19, 1376, 21, 4790, 580, 5868, 1119, 558, 568, 504, 4786, 5373, 2]
 
-// Module 7244 (UserSettingsAccountUnverifiedHeader)
+// Module 7276 (UserSettingsAccountUnverifiedHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5836 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5868 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const initialize = PressableOpacity(504);
-const Text_Text = PressableOpacity(4754);
-const Pressables = PressableOpacity(5341);
+const Text_Text = PressableOpacity(4786);
+const Pressables = PressableOpacity(5373);
 require = fn;
 function handleOpenEmailVerification() {
   EmailVerificationModalActionCreatorsDefault.open();
@@ -37,7 +37,7 @@ function getBannerText(stateFromStores) {
 }
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { accountWarning: { backgroundColor: nativeDefault.unsafe_rawColors.RED_400, height: 36, alignItems: "center", alignSelf: "stretch", flexDirection: "row", paddingHorizontal: 16 }, accountWarningText: { flex: 1, lineHeight: 16 }, accountWarningButton: null };
 let obj3 = { backgroundColor: nativeDefault.unsafe_rawColors.RED_400, height: 36, alignItems: "center", alignSelf: "stretch", flexDirection: "row", paddingHorizontal: 16 };
 obj2.accountWarningButton = { borderWidth: 1, borderColor: nativeDefault.colors.WHITE, borderRadius: nativeDefault.radii.xs, paddingHorizontal: 8, paddingVertical: 4 };
@@ -121,11 +121,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (null != tmp4) {
     const obj2 = { accessibilityRole: "button", style: tmp.accountWarning, onPress: handleOpenEmailVerification, children: null };
     const obj3 = { style: tmp.accountWarningText, variant: "text-xs/bold", color: "text-overlay-light", children: tmp4.title };
-    const items1 = [React4(tmp2(4754).Text, obj3), ];
+    const items1 = [React4(tmp2(4786).Text, obj3), ];
     const obj4 = { style: tmp.accountWarningButton, variant: "text-xs/medium", color: "text-overlay-light", children: tmp4.button };
-    items1[1] = React4(tmp2(4754).Text, obj4);
+    items1[1] = React4(tmp2(4786).Text, obj4);
     obj2.children = items1;
-    tmp5 = hasOwnProperty(tmp2(5341).PressableOpacity, obj2);
+    tmp5 = hasOwnProperty(tmp2(5373).PressableOpacity, obj2);
   }
   return tmp5;
 });

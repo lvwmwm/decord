@@ -1,20 +1,20 @@
-// Module ID: 15759
-// Function ID: 15760
+// Module ID: 15769
+// Function ID: 15770
 // Name: AndroidNotificationVibrationsSetting
-// Dependencies: [15745, 8238, 558, 568, 1368, 15747, 1119, 11594, 14733, 15751, 2]
+// Dependencies: [15755, 8270, 558, 568, 1368, 15757, 1119, 11630, 14771, 15761, 2]
 
-// Module 15759 (AndroidNotificationVibrationsSetting)
+// Module 15769 (AndroidNotificationVibrationsSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import SettingsConstants from "SettingsConstants" /* 8238 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15751 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15745 */;
+import SettingsConstants from "SettingsConstants" /* 8270 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15761 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15755 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11594 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11630 */;
 import size from "module_2" /* 2 */;
 
-const SettingsNotificationUtils = tmp2(15747);
+const SettingsNotificationUtils = tmp2(15757);
 ({ useAndroidNotificationVibrationsEnabled: c2, setAndroidNotificationVibrationsEnabled } = AndroidNotificationSettingsStore);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -24,8 +24,8 @@ let closure_3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const isIOSResult = tmp(1368).isIOS();
     let tmp7 = !isIOSResult;
     if (!isIOSResult) {
-      tmp7 = !tmp(15747).hasAndroidNotificationChannels();
-      const tmpResult2 = tmp(15747);
+      tmp7 = !tmp(15757).hasAndroidNotificationChannels();
+      const tmpResult2 = tmp(15757);
     }
     if (tmp7) {
       tmp7 = null != tmp4;

@@ -1,18 +1,18 @@
-// Module ID: 8173
-// Function ID: 8174
+// Module ID: 8205
+// Function ID: 8206
 // Name: ConversationNavigatorMoreMenu
-// Dependencies: [109, 19, 17, 21, 4758, 580, 558, 568, 1119, 8174, 8156, 8158, 4457, 8176, 8178, 8180, 8182, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 580, 558, 568, 1119, 8206, 8188, 8190, 4489, 8208, 8210, 8212, 8214, 2]
 
-// Module 8173 (ConversationNavigatorMoreMenu)
+// Module 8205 (ConversationNavigatorMoreMenu)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ToastUtils from "ToastUtils" /* 4457 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 8156 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 8158 */;
-import ThumbsUpIcon from "ThumbsUpIcon" /* 8174 */;
-import ThumbsDownIcon from "ThumbsDownIcon" /* 8176 */;
-import IconButton from "IconButton" /* 8178 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 8180 */;
+import ToastUtils from "ToastUtils" /* 4489 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 8188 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 8190 */;
+import ThumbsUpIcon from "ThumbsUpIcon" /* 8206 */;
+import ThumbsDownIcon from "ThumbsDownIcon" /* 8208 */;
+import IconButton from "IconButton" /* 8210 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 8212 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -20,7 +20,7 @@ require = fn;
 let closure_2 = ["ref"];
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_12 } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

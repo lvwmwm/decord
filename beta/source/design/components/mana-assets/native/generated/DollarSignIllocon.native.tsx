@@ -1,13 +1,13 @@
-// Module ID: 6168
-// Function ID: 6169
+// Module ID: 6200
+// Function ID: 6201
 // Name: DollarSignIllocon
-// Dependencies: [21, 558, 568, 6169, 5802, 2]
+// Dependencies: [21, 558, 568, 6201, 5834, 2]
 
-// Module 6168 (DollarSignIllocon)
+// Module 6200 (DollarSignIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6169 from "module_6169" /* 6169 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6201 from "module_6201" /* 6201 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const DollarSignIllocon = ReactCompilerGating.isReactCompilerEnabled() ? 
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6169 };
+    const obj2 = { uri: _modDef6201 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const DollarSignIllocon = ReactCompilerGating.isReactCompilerEnabled() ? 
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6169 };
+  const obj2 = { uri: _modDef6201 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

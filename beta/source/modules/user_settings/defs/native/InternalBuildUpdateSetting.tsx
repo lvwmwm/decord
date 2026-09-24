@@ -1,15 +1,15 @@
-// Module ID: 16044
-// Function ID: 16045
+// Module ID: 16054
+// Function ID: 16055
 // Name: InternalBuildUpdateSetting
-// Dependencies: [14677, 21, 14178, 558, 568, 504, 4352, 15109, 4706, 15414, 11594, 2]
+// Dependencies: [14715, 21, 14215, 558, 568, 504, 4384, 15119, 4738, 15424, 11630, 2]
 
-// Module 16044 (InternalBuildUpdateSetting)
+// Module 16054 (InternalBuildUpdateSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import _modDef4352 from "module_4352" /* 4352 */;
-import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 14178 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15109 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 14677 */;
+import _modDef4384 from "module_4384" /* 4384 */;
+import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 14215 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15119 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 14715 */;
 
 require = fn;
 const jsx = fn(21).jsx;
@@ -57,11 +57,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     str2 = "Never refreshed";
     if (null != stateFromStores1) {
       if (concat[4] !== stateFromStores1) {
-        const fromNowResult = _modDef4352(stateFromStores1).fromNow();
+        const fromNowResult = _modDef4384(stateFromStores1).fromNow();
         concat[4] = stateFromStores1;
         concat[5] = fromNowResult;
         let tmp10 = fromNowResult;
-        const obj4 = _modDef4352(stateFromStores1);
+        const obj4 = _modDef4384(stateFromStores1);
       } else {
         tmp10 = concat[5];
       }
@@ -90,15 +90,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     str = "Never refreshed";
     if (null != stateFromStores1) {
       const _HermesInternal = HermesInternal;
-      str = "Last refreshed " + _modDef4352(stateFromStores1).fromNow();
-      const obj3 = _modDef4352(stateFromStores1);
+      str = "Last refreshed " + _modDef4384(stateFromStores1).fromNow();
+      const obj3 = _modDef4384(stateFromStores1);
     }
   }
   return str;
 });
 ReactCompilerGating = fn(558);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => MobileNativeUpdateStore.hasUpdatesConfigured && useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate()) : (() => MobileNativeUpdateStore.hasUpdatesConfigured && useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate());
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp8Result = dependencyMap;
   const cResult = c.c(4);
@@ -117,9 +117,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
   if (cResult[2] !== stateFromStores) {
     if (stateFromStores) {
-      let RefreshIcon = tmp(4706).DownloadIcon;
+      let RefreshIcon = tmp(4738).DownloadIcon;
     } else {
-      RefreshIcon = tmp(15414).RefreshIcon;
+      RefreshIcon = tmp(15424).RefreshIcon;
     }
     tmp8Result = <RefreshIcon />;
     cResult[2] = stateFromStores;
@@ -130,9 +130,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const items = [MobileNativeUpdateStore];
   if (obj.useStateFromStores(items, () => null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild)) {
-    let RefreshIcon = tmp(4706).DownloadIcon;
+    let RefreshIcon = tmp(4738).DownloadIcon;
   } else {
-    RefreshIcon = tmp(15414).RefreshIcon;
+    RefreshIcon = tmp(15424).RefreshIcon;
   }
   return <RefreshIcon />;
 });
@@ -159,9 +159,9 @@ const pressable = SettingBuilders.createPressable({
     const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
     if (cResult[2] !== stateFromStores) {
       if (stateFromStores) {
-        let RefreshIcon = tmp(4706).DownloadIcon;
+        let RefreshIcon = tmp(4738).DownloadIcon;
       } else {
-        RefreshIcon = tmp(15414).RefreshIcon;
+        RefreshIcon = tmp(15424).RefreshIcon;
       }
       tmp8Result = <RefreshIcon />;
       cResult[2] = stateFromStores;
@@ -172,9 +172,9 @@ const pressable = SettingBuilders.createPressable({
   }) : (() => {
     const items = [MobileNativeUpdateStore];
     if (obj.useStateFromStores(items, () => null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild)) {
-      let RefreshIcon = tmp(4706).DownloadIcon;
+      let RefreshIcon = tmp(4738).DownloadIcon;
     } else {
-      RefreshIcon = tmp(15414).RefreshIcon;
+      RefreshIcon = tmp(15424).RefreshIcon;
     }
     return <RefreshIcon />;
   }),

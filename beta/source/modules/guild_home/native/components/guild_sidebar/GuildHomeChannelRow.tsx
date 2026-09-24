@@ -1,23 +1,23 @@
-// Module ID: 16546
-// Function ID: 16547
+// Module ID: 16556
+// Function ID: 16557
 // Name: GuildHomeChannelRow
-// Dependencies: [19, 1078, 2052, 12213, 21, 4758, 580, 558, 568, 1105, 12527, 1119, 14113, 2]
+// Dependencies: [19, 1078, 2052, 12249, 21, 4790, 580, 558, 568, 1105, 12563, 1119, 14150, 2]
 
-// Module 16546 (GuildHomeChannelRow)
+// Module 16556 (GuildHomeChannelRow)
 import nativeDefault from "native" /* 580 */;
 import router_utils from "router_utils" /* 1105 */;
-import BaseChannelItemDefault from "BaseChannelItem" /* 12527 */;
+import BaseChannelItemDefault from "BaseChannelItem" /* 12563 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Routes = fn(1078).Routes;
 const StaticChannelRoute = fn(2052).StaticChannelRoute;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
-let obj2 = { container: { marginVertical: fn(12213).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md } };
+const createStyles = fn(4790);
+let obj2 = { container: { marginVertical: fn(12249).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
-let obj3 = { marginVertical: fn(12213).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
+let obj3 = { marginVertical: fn(12249).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_home/native/components/guild_sidebar/GuildHomeChannelRow.tsx");
 
@@ -36,7 +36,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
   } else {
     tmp5 = cResult[1];
   }
-  const ChannelModes = tmp(12527).ChannelModes;
+  const ChannelModes = tmp(12563).ChannelModes;
   const tmp6 = selected ? ChannelModes.SELECTED : ChannelModes.DEFAULT;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1119).intl;
@@ -64,9 +64,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
   }
   if (cResult[6] !== tmp6) {
     const obj3 = { name: tmp10, mode: tmp6 };
-    const tmp15 = jsx(tmp(12527).BaseChannelName, { name: tmp10, mode: tmp6 });
-    const obj4 = { mode: tmp6, IconComponent: tmp(14113).SignPostIcon };
-    const tmp16 = jsx(tmp(12527).BaseChannelIcon, { mode: tmp6, IconComponent: tmp(14113).SignPostIcon });
+    const tmp15 = jsx(tmp(12563).BaseChannelName, { name: tmp10, mode: tmp6 });
+    const obj4 = { mode: tmp6, IconComponent: tmp(14150).SignPostIcon };
+    const tmp16 = jsx(tmp(12563).BaseChannelIcon, { mode: tmp6, IconComponent: tmp(14150).SignPostIcon });
     cResult[6] = tmp6;
     cResult[7] = tmp15;
     cResult[8] = tmp16;
@@ -106,7 +106,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
   const callback = noop.useCallback(() => {
     router_utils.transitionTo(Routes.CHANNEL(id, StaticChannelRoute.GUILD_HOME));
   }, items);
-  const ChannelModes = id(12527).ChannelModes;
+  const ChannelModes = id(12563).ChannelModes;
   if (selected) {
     let DEFAULT = ChannelModes.SELECTED;
     let tmp5 = tmp3;
@@ -124,7 +124,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
   const intl2 = tmp5(1119).intl;
   obj2.name = intl2.string(tmp5(1119).t.VbpLyU);
   obj2.mode = DEFAULT;
-  obj.name = jsx(tmp5(12527).BaseChannelName, { name: null, mode: null });
-  obj.icon = jsx(tmp5(12527).BaseChannelIcon, { mode: DEFAULT, IconComponent: tmp5(14113).SignPostIcon });
+  obj.name = jsx(tmp5(12563).BaseChannelName, { name: null, mode: null });
+  obj.icon = jsx(tmp5(12563).BaseChannelIcon, { mode: DEFAULT, IconComponent: tmp5(14150).SignPostIcon });
   return <tmp7 onPress={callback} style={closure_7().container} accessible accessibilityLabel={null} accessibilityState={null} mode={null} name={null} icon={null} />;
 });

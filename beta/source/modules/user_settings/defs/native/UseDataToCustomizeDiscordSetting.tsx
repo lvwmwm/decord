@@ -1,18 +1,18 @@
-// Module ID: 15124
-// Function ID: 15125
+// Module ID: 15134
+// Function ID: 15135
 // Name: UseDataToCustomizeDiscordSetting
-// Dependencies: [6834, 8238, 1078, 558, 15091, 568, 504, 5110, 1119, 5207, 15122, 15123, 11594, 2]
+// Dependencies: [6866, 8270, 1078, 558, 15094, 568, 504, 5142, 1119, 5239, 15132, 15133, 11630, 2]
 
-// Module 15124 (UseDataToCustomizeDiscordSetting)
+// Module 15134 (UseDataToCustomizeDiscordSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
-import common_AlertDefault from "common/Alert" /* 5207 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15091 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 15122 */;
-import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 15123 */;
-import ConsentStore from "ConsentStore" /* 6834 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
+import common_AlertDefault from "common/Alert" /* 5239 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15094 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 15132 */;
+import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 15133 */;
+import ConsentStore from "ConsentStore" /* 6866 */;
 
 require = fn;
 const Consents = fn(1078).Consents;
@@ -20,7 +20,7 @@ let ReactCompilerGating = fn(558);
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = fn(558);
 fn = () => useParentalControlSettings.useIsParentallyControlled();
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -45,7 +45,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.MNKzyg);
   },
-  parent: fn(8238).MobileUserSettings.DATA_AND_PRIVACY,
+  parent: fn(8270).MobileUserSettings.DATA_AND_PRIVACY,
   useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {

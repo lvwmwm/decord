@@ -1,15 +1,15 @@
-// Module ID: 12190
-// Function ID: 12191
+// Module ID: 12226
+// Function ID: 12227
 // Name: SubmittingOverlay
-// Dependencies: [21, 4758, 580, 558, 568, 4497, 5187, 5191, 5202, 2]
+// Dependencies: [21, 4790, 580, 558, 568, 4529, 5219, 5223, 5234, 2]
 
-// Module 12190 (SubmittingOverlay)
+// Module 12226 (SubmittingOverlay)
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
-import spring from "spring" /* 5187 */;
-import springPresets from "springPresets" /* 5191 */;
-import createStyles from "createStyles" /* 4758 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
+import spring from "spring" /* 5219 */;
+import springPresets from "springPresets" /* 5223 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,8 +41,8 @@ export const SubmittingOverlay = ReactCompilerGating.isReactCompilerEnabled() ? 
       return obj1;
     }
   }
-  const obj2 = submitting(4497);
-  S.__closure = { withSpring: submitting(5187).withSpring, submitting, SUBTLE_SPRING: submitting(5191).SUBTLE_SPRING };
+  const obj2 = submitting(4529);
+  S.__closure = { withSpring: submitting(5219).withSpring, submitting, SUBTLE_SPRING: submitting(5223).SUBTLE_SPRING };
   S.__workletHash = 17050905766844;
   S.__initData = __initData;
   const animatedStyle = obj2.useAnimatedStyle(S);
@@ -54,7 +54,7 @@ export const SubmittingOverlay = ReactCompilerGating.isReactCompilerEnabled() ? 
       if (cResult[4] !== submitting) {
         let tmp8 = submitting;
         if (submitting) {
-          tmp8 = jsx(tmp(5202).Ellipsis, { variant: "active", size: "md" });
+          tmp8 = jsx(tmp(5234).Ellipsis, { variant: "active", size: "md" });
         }
         cResult[4] = submitting;
         cResult[5] = tmp8;
@@ -106,8 +106,8 @@ export const SubmittingOverlay = ReactCompilerGating.isReactCompilerEnabled() ? 
     }
     return { opacity: spring.withSpring(num, springPresets.SUBTLE_SPRING, "animate-always") };
   };
-  let obj = submitting(4497);
-  fn.__closure = { withSpring: submitting(5187).withSpring, submitting, SUBTLE_SPRING: submitting(5191).SUBTLE_SPRING };
+  let obj = submitting(4529);
+  fn.__closure = { withSpring: submitting(5219).withSpring, submitting, SUBTLE_SPRING: submitting(5223).SUBTLE_SPRING };
   fn.__workletHash = 15672049349439;
   fn.__initData = __initData2;
   const animatedStyle = obj.useAnimatedStyle(fn);
@@ -115,7 +115,7 @@ export const SubmittingOverlay = ReactCompilerGating.isReactCompilerEnabled() ? 
   const items = [submitting.style, tmp.ellipsis, animatedStyle];
   obj3.style = items;
   if (submitting) {
-    submitting = tmp5(tmp2(5202).Ellipsis, { variant: "active", size: "md" });
+    submitting = tmp5(tmp2(5234).Ellipsis, { variant: "active", size: "md" });
   }
   obj3.children = submitting;
   return jsx(ReanimatedRexportDefault.View, { style: null, children: null });

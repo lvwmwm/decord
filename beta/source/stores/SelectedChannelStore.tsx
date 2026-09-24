@@ -1,7 +1,7 @@
 // Module ID: 2099
 // Function ID: 2100
 // Name: SelectedChannelStore
-// Dependencies: [2049, 502, 2045, 2100, 2067, 1996, 4399, 4580, 1078, 2052, 510, 12, 1374, 1090, 504, 577, 2]
+// Dependencies: [2049, 502, 2045, 2100, 2067, 1996, 4431, 4612, 1078, 2052, 510, 12, 1374, 1090, 504, 577, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
 // Module 2099 (SelectedChannelStore)
@@ -18,8 +18,8 @@ import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildChannelStore from "GuildChannelStore" /* 2100 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 

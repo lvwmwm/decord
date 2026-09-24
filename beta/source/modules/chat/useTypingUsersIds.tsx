@@ -1,11 +1,11 @@
-// Module ID: 12096
-// Function ID: 12097
+// Module ID: 12132
+// Function ID: 12133
 // Name: useTypingUsersIds
-// Dependencies: [4409, 12095, 1376, 558, 568, 504, 2]
+// Dependencies: [4441, 12131, 1376, 558, 568, 504, 2]
 
-// Module 12096 (useTypingUsersIds)
-import RelationshipStore from "RelationshipStore" /* 4409 */;
-import TypingStore from "TypingStore" /* 12095 */;
+// Module 12132 (useTypingUsersIds)
+import RelationshipStore from "RelationshipStore" /* 4441 */;
+import TypingStore from "TypingStore" /* 12131 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;

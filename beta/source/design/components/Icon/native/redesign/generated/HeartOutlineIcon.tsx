@@ -1,13 +1,13 @@
-// Module ID: 9117
-// Function ID: 9118
+// Module ID: 9149
+// Function ID: 9150
 // Name: HeartOutlineIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 9118, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9150, 4493, 2]
 
-// Module 9117 (HeartOutlineIcon)
+// Module 9149 (HeartOutlineIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod9118 from "module_9118" /* 9118 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9150 from "module_9150" /* 9150 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const HeartOutlineIcon = ReactCompilerGating.isReactCompilerEnabled() ? (
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(9118);
+    const tmpResult = tmp(9150);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const HeartOutlineIcon = ReactCompilerGating.isReactCompilerEnabled() ? (
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9118, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9150, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

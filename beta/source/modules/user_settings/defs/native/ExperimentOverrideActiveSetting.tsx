@@ -1,15 +1,15 @@
-// Module ID: 16045
-// Function ID: 16046
+// Module ID: 16055
+// Function ID: 16056
 // Name: ExperimentOverrideActiveSetting
-// Dependencies: [4674, 1239, 21, 14847, 558, 568, 504, 16046, 15109, 11594, 15852, 2]
+// Dependencies: [4706, 1239, 21, 14885, 558, 568, 504, 16056, 15119, 11630, 15862, 2]
 
-// Module 16045 (ExperimentOverrideActiveSetting)
+// Module 16055 (ExperimentOverrideActiveSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14847 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15109 */;
-import DevToolsContent from "DevToolsContent" /* 16046 */;
-import ExperimentStore from "ExperimentStore" /* 4674 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14885 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15119 */;
+import DevToolsContent from "DevToolsContent" /* 16056 */;
+import ExperimentStore from "ExperimentStore" /* 4706 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1239 */;
 
 require = fn;
@@ -78,7 +78,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const str = closure_5();
   return jsx(DevToolsContent.DevToolsContentSubLabel, { label: "Experiments overridden: ", value: closure_5().toString() });
 });
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const staffOrDeveloperSettingPredicate = useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate();
   return closure_5() > 0 && staffOrDeveloperSettingPredicate;
@@ -91,7 +91,7 @@ const pressable = SettingBuilders.createPressable({
     return "Experiments Overrides Active";
   },
   parent: null,
-  IconComponent: fn(15852).BeakerIcon,
+  IconComponent: fn(15862).BeakerIcon,
   useDescription: tmp2,
   usePredicate: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const staffOrDeveloperSettingPredicate = useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate();

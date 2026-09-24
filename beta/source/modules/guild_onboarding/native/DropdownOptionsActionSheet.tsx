@@ -1,22 +1,22 @@
-// Module ID: 7382
-// Function ID: 7383
+// Module ID: 7414
+// Function ID: 7415
 // Name: DropdownOptionsActionSheet
-// Dependencies: [19, 17, 5678, 7347, 1379, 21, 4758, 558, 568, 565, 7377, 1401, 1181, 1119, 4754, 7383, 1616, 4725, 7396, 5188, 7397, 6863, 2]
+// Dependencies: [19, 17, 5710, 7379, 1379, 21, 4790, 558, 568, 565, 7409, 1401, 1181, 1119, 4786, 7415, 1616, 4757, 7428, 5220, 7429, 6895, 2]
 
-// Module 7382 (DropdownOptionsActionSheet)
+// Module 7414 (DropdownOptionsActionSheet)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5678 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7347 */;
+import EmojiStore from "EmojiStore" /* 5710 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7379 */;
 
 require = fn;
 const View = fn(17).View;
 const EMOJI_URL_BASE_SIZE = fn(1379).EMOJI_URL_BASE_SIZE;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles({ optionTextEmoji: { fontSize: 24, lineHeight: 24, paddingTop: 5 }, optionImageEmoji: { height: 24, width: 24 }, newBadge: { fontWeight: "bold" }, labelRow: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, closeButtonWrapper: { marginTop: 16, marginHorizontal: 16 } });
 let ReactCompilerGating = fn(558);
 let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
@@ -143,7 +143,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
                           }
                         }
                         const obj3 = { label: tmp32, selected: tmp11, leading: tmp16, trailing: tmp27, onPress: tmp13 };
-                        const tmp37 = closure_8(onSelect(7383), obj3);
+                        const tmp37 = closure_8(onSelect(7415), obj3);
                         cResult[26] = tmp16;
                         cResult[27] = tmp13;
                         cResult[28] = tmp32;
@@ -228,10 +228,10 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
             str = "";
           }
           obj7.name = str;
-          obj6.children = closure_8(onSelect(7377), obj7);
+          obj6.children = closure_8(onSelect(7409), obj7);
           const tmp19Result = closure_8(tmp20, obj6);
           tmp21 = onSelect;
-          const tmp22 = onSelect(7377);
+          const tmp22 = onSelect(7409);
         } else {
           const emoji6 = option.emoji;
           let name;
@@ -458,7 +458,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         class P {
           constructor(arg0) {
             obj = { option: guildId, responses: closure_4, onSelect, canBeNew: Boolean(canBeNew) };
-            return jsx(f40375, obj, guildId.id);
+            return jsx(f40416, obj, guildId.id);
           }
         }
         const tmp15 = closure_8(tmp(tmp2[18]).BottomSheetTitleHeader, obj2);
@@ -532,7 +532,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       class P {
         constructor(arg0) {
           obj = { option: guildId, responses: closure_4, onSelect, canBeNew: Boolean(canBeNew) };
-          return jsx(f40375, obj, guildId.id);
+          return jsx(f40416, obj, guildId.id);
         }
       }
       cResult[17] = canBeNew;
@@ -564,7 +564,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const obj3 = { title: null };
     const intl = tmp3(1119).intl;
     obj3.title = intl.string(tmp3(1119).t.E2ICbC);
-    const obj4 = { scrollable: true, header: closure_8(tmp3(7396).BottomSheetTitleHeader, obj3), children: null };
+    const obj4 = { scrollable: true, header: closure_8(tmp3(7428).BottomSheetTitleHeader, obj3), children: null };
     const obj5 = { contentContainerStyle: null, children: null };
     const obj6 = { paddingBottom: useSafeAreaInsetsDefault().bottom };
     obj5.contentContainerStyle = obj6;
@@ -578,10 +578,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const obj9 = { onPress: tmp5, text: null, grow: true };
     const intl3 = tmp3(1119).intl;
     obj9.text = intl3.string(tmp3(1119).t.cpT0Cq);
-    obj8.children = closure_8(tmp3(5188).Button, obj9);
+    obj8.children = closure_8(tmp3(5220).Button, obj9);
     items2[1] = closure_8(responses, obj8);
     obj5.children = items2;
-    obj4.children = closure_9(tmp3(6863).BottomSheetScrollView, obj5);
-    return closure_8(tmp3(7397).BottomSheet, obj4);
+    obj4.children = closure_9(tmp3(6895).BottomSheetScrollView, obj5);
+    return closure_8(tmp3(7429).BottomSheet, obj4);
   }
 });

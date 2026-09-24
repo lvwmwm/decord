@@ -1,22 +1,22 @@
-// Module ID: 9889
-// Function ID: 9890
+// Module ID: 9921
+// Function ID: 9922
 // Name: AudioActionCreators
-// Dependencies: [5, 9890, 2045, 1996, 4781, 2099, 1376, 1078, 9891, 4783, 3, 1245, 551, 577, 9892, 9894, 9895, 9688, 2]
+// Dependencies: [5, 9922, 2045, 1996, 4813, 2099, 1376, 1078, 9923, 4815, 3, 1245, 551, 577, 9924, 9926, 9927, 9720, 2]
 
-// Module 9889 (AudioActionCreators)
+// Module 9921 (AudioActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import debounceDefault from "debounce" /* 551 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 9688 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 9892 */;
-import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 9894 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 9895 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 9720 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 9924 */;
+import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 9926 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 9927 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import CertifiedDeviceStore from "CertifiedDeviceStore" /* 9890 */;
+import CertifiedDeviceStore from "CertifiedDeviceStore" /* 9922 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -58,8 +58,8 @@ function trackDeviceChanged(inputDevices, inputDeviceId, found, Video) {
 }
 const Constants = fn(1078);
 ({ InputModes: c10, AnalyticEvents: closure_11 } = Constants);
-const SoundOutputChannel = fn(9891).SoundOutputChannel;
-const MediaEngineContextTypes = fn(4783).MediaEngineContextTypes;
+const SoundOutputChannel = fn(9923).SoundOutputChannel;
+const MediaEngineContextTypes = fn(4815).MediaEngineContextTypes;
 let obj = new LoggerDefault("AudioActionCreators");
 obj.enableNativeLogger(true);
 let closure_15 = debounceDefault((target_user_id, context, volume) => {
@@ -619,7 +619,7 @@ export default {
               isNotSupported();
               v1 = 1;
               dependencyMap = 1;
-              const obj4 = { value: v1(9894)("debug_logging_enabled", closure_0, debugLogging.getDebugLogging()), done: false };
+              const obj4 = { value: v1(9926)("debug_logging_enabled", closure_0, debugLogging.getDebugLogging()), done: false };
               return obj4;
             }
           } else if (arg0 === 1) {
@@ -700,7 +700,7 @@ export default {
               isNotSupported();
               v1 = 1;
               dependencyMap = 1;
-              const obj4 = { value: v1(9894)("audio_subsystem", closure_0, audioSubsystem.getAudioSubsystem()), done: false };
+              const obj4 = { value: v1(9926)("audio_subsystem", closure_0, audioSubsystem.getAudioSubsystem()), done: false };
               return obj4;
             }
           } else if (arg0 === 1) {

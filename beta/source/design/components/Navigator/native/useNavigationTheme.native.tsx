@@ -1,14 +1,14 @@
-// Module ID: 7288
-// Function ID: 7289
+// Module ID: 7320
+// Function ID: 7321
 // Name: useNavigationTheme
-// Dependencies: [19, 558, 568, 4462, 580, 4610, 1489, 2]
+// Dependencies: [19, 558, 568, 4494, 580, 4642, 1489, 2]
 
-// Module 7288 (useNavigationTheme)
+// Module 7320 (useNavigationTheme)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import Link from "Link" /* 1489 */;
-import useToken from "useToken" /* 4462 */;
-import shared from "shared" /* 4610 */;
+import useToken from "useToken" /* 4494 */;
+import shared from "shared" /* 4642 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -26,11 +26,11 @@ export const useNavigationTheme = ReactCompilerGating.isReactCompilerEnabled() ?
   const token3 = useToken.useToken(nativeDefault.colors.TEXT_MUTED, DARK);
   const token4 = useToken.useToken(nativeDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION, DARK);
   if (cResult[0] !== DARK) {
-    const isThemeDarkResult = tmp(4610).isThemeDark(DARK);
+    const isThemeDarkResult = tmp(4642).isThemeDark(DARK);
     cResult[0] = DARK;
     cResult[1] = isThemeDarkResult;
     let tmp9 = isThemeDarkResult;
-    const tmpResult = tmp(4610);
+    const tmpResult = tmp(4642);
   } else {
     tmp9 = cResult[1];
   }

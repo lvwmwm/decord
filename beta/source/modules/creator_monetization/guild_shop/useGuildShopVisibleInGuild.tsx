@@ -1,16 +1,16 @@
-// Module ID: 7506
-// Function ID: 7507
+// Module ID: 7538
+// Function ID: 7539
 // Name: useGuildShopVisibleInGuild
-// Dependencies: [1078, 558, 568, 7502, 7494, 7507, 7497, 2]
+// Dependencies: [1078, 558, 568, 7534, 7526, 7539, 7529, 2]
 // Exports: isGuildShopVisibleInGuild
 
-// Module 7506 (useGuildShopVisibleInGuild)
+// Module 7538 (useGuildShopVisibleInGuild)
 import c from "c" /* 568 */;
 import Constants from "Constants" /* 1078 */;
-import useRoleSubscriptionsVisibleInGuild from "useRoleSubscriptionsVisibleInGuild" /* 7494 */;
-import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7497 */;
-import GuildProductsEligibility from "GuildProductsEligibility" /* 7502 */;
-import useGuildShopPreviewVisible from "useGuildShopPreviewVisible" /* 7507 */;
+import useRoleSubscriptionsVisibleInGuild from "useRoleSubscriptionsVisibleInGuild" /* 7526 */;
+import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7529 */;
+import GuildProductsEligibility from "GuildProductsEligibility" /* 7534 */;
+import useGuildShopPreviewVisible from "useGuildShopPreviewVisible" /* 7539 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

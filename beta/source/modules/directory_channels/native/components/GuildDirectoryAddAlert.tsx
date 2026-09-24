@@ -1,15 +1,15 @@
-// Module ID: 12470
-// Function ID: 12471
+// Module ID: 12506
+// Function ID: 12507
 // Name: GuildDirectoryAddAlert
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 5799, 4754, 5207, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 5831, 4786, 5239, 2]
 
-// Module 12470 (GuildDirectoryAddAlert)
+// Module 12506 (GuildDirectoryAddAlert)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import common_AlertDefault from "common/Alert" /* 5207 */;
-import GuildIcon from "GuildIcon" /* 5799 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import common_AlertDefault from "common/Alert" /* 5239 */;
+import GuildIcon from "GuildIcon" /* 5831 */;
 import noop from "module_19" /* 19 */;
 
 const GuildIconDefault = GuildIcon;
@@ -18,7 +18,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { guildIcon: { marginBottom: 16, borderRadius: nativeDefault.radii.sm }, title: { marginBottom: 8, textAlign: "center" }, description: { textAlign: "center" }, container: { alignItems: "center", justifyContent: "center" } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -53,7 +53,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[5] !== tmp4.title) {
       const obj2 = { style: tmp4.title, accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", children: tmp11 };
-      const tmp15 = React4(tmp(4754).Text, obj2);
+      const tmp15 = React4(tmp(4786).Text, obj2);
       cResult[5] = tmp4.title;
       cResult[6] = tmp15;
       let tmp13 = tmp15;
@@ -107,7 +107,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp21 = tmp24;
     }
     const obj6 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: tmp16 };
-    const tmp20 = React4(tmp(4754).Text, obj6);
+    const tmp20 = React4(tmp(4786).Text, obj6);
     cResult[9] = tmp4.description;
     cResult[10] = tmp16;
     cResult[11] = tmp20;

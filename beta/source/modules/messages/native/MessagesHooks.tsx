@@ -1,27 +1,27 @@
-// Module ID: 11600
-// Function ID: 11601
+// Module ID: 11636
+// Function ID: 11637
 // Name: MessagesHooks
-// Dependencies: [32, 19, 17, 10593, 9650, 5108, 2067, 4798, 558, 568, 12, 504, 560, 7410, 1374, 7982, 11601, 10423, 11602, 2]
+// Dependencies: [32, 19, 17, 10629, 9682, 5140, 2067, 4830, 558, 568, 12, 504, 560, 7442, 1374, 8014, 11637, 10462, 11638, 2]
 // Exports: useChatUpdatesQueue, useMessagesLifecycle
 
-// Module 11600 (MessagesHooks)
+// Module 11636 (MessagesHooks)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7410 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7982 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 10423 */;
-import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11602 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7442 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 8014 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 10462 */;
+import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11638 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10593 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5108 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10629 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5140 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
 
 require = fn;
 const findNodeHandle = fn(17).findNodeHandle;
-let closure_7 = fn(9650).updateShouldShowJumpToPresentButton;
+let closure_7 = fn(9682).updateShouldShowJumpToPresentButton;
 fn(558);
 let ReactCompilerGating = fn(558);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
@@ -232,7 +232,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(11601);
+            let tmp4Result = tmp4(11637);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }
@@ -292,7 +292,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(11601);
+            let tmp4Result = tmp4(11637);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }

@@ -1,10 +1,30 @@
 // Module ID: 14577
 // Function ID: 14578
-// Dependencies: [14578, 14646]
+// Dependencies: [1165]
+// Exports: isMissingLocaleDataError
 
 // Module 14577
-import _mod14646 from "module_14646" /* 14646 */;
-import module_14578 from "module_14578" /* 14578 */;
+import e from "e" /* 1165 */;
 
+e.__extends(function MissingLocaleDataError() {
+  const self = this;
+  let tmp2 = null !== Error;
+  if (!tmp2) {
+    if (!tmp2) {
+      tmp2 = self;
+    }
+    tmp2.type = "MISSING_LOCALE_DATA";
+    return tmp2;
+  } else {
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+  }
+}, Error);
 
-export default _mod14646.Object.assign;
+export const isMissingLocaleDataError = function isMissingLocaleDataError(type) {
+  return "MISSING_LOCALE_DATA" === type.type;
+};

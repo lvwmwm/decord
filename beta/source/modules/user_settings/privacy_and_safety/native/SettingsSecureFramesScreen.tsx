@@ -1,16 +1,16 @@
-// Module ID: 16164
-// Function ID: 16165
+// Module ID: 16174
+// Function ID: 16175
 // Name: SettingsSecureFramesScreen
-// Dependencies: [19, 17, 1376, 1078, 21, 4758, 580, 558, 568, 504, 16165, 4603, 8455, 7409, 8453, 1181, 1119, 5829, 5822, 4462, 1488, 16163, 4754, 8995, 9948, 2]
+// Dependencies: [19, 17, 1376, 1078, 21, 4790, 580, 558, 568, 504, 16175, 4635, 8487, 7441, 8485, 1181, 1119, 5861, 5854, 4494, 1488, 16173, 4786, 9027, 9980, 2]
 
-// Module 16164 (SettingsSecureFramesScreen)
+// Module 16174 (SettingsSecureFramesScreen)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import UserActionCreators from "UserActionCreators" /* 8455 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9948 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
+import UserActionCreators from "UserActionCreators" /* 8487 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9980 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -82,7 +82,7 @@ function UserListItem(userId) {
         }
         if (cResult[14] !== stateFromStores) {
           if (null != stateFromStores) {
-            const obj4 = { user: stateFromStores, guildId: "Array", size: -1 };
+            const obj4 = { user: stateFromStores, guildId: "Array", size: true };
             const Avatar = TableRow(tmp14[15]).Avatar;
             obj4.size = TableRow(tmp14[15]).AvatarSizes.REFRESH_MEDIUM_32;
             class F {
@@ -241,7 +241,7 @@ const View = fn(17).View;
 const UserSettingsSections = fn(1078).UserSettingsSections;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flexGrow: 1, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 }, header: null, list: null };
 let obj3 = { flexGrow: 1, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
 obj2.header = { marginTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_8 };
@@ -414,7 +414,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
     const intl = tmp(1119).intl;
     obj2.children = intl.string(tmp(1119).t["9Q/PQv"]);
-    const tmp7 = React5(tmp(4754).Text, obj2);
+    const tmp7 = React5(tmp(4786).Text, obj2);
     cResult[0] = tmp7;
     let first = tmp7;
   } else {
@@ -423,12 +423,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-sm/normal", color: "text-default", children: null };
     const intl2 = tmp(1119).intl;
-    const obj4 = { helpArticle: tmp(9948).getSecureFramesHelpdeskArticle() };
+    const obj4 = { helpArticle: tmp(9980).getSecureFramesHelpdeskArticle() };
     obj3.children = intl2.format(tmp(1119).t["8IwQfG"], obj4);
-    const tmp10 = React5(tmp(4754).Text, obj3);
+    const tmp10 = React5(tmp(4786).Text, obj3);
     cResult[1] = tmp10;
     let tmp8 = tmp10;
-    const tmpResult = tmp(9948);
+    const tmpResult = tmp(9980);
   } else {
     tmp8 = cResult[1];
   }

@@ -1,15 +1,15 @@
-// Module ID: 11390
-// Function ID: 11391
+// Module ID: 11426
+// Function ID: 11427
 // Name: UserProfilePreview
-// Dependencies: [32, 19, 17, 8434, 7455, 21, 4758, 580, 558, 568, 504, 8460, 8501, 8515, 9626, 8512, 8440, 8475, 8443, 8516, 8498, 8495, 8481, 8520, 9082, 8530, 11391, 11461, 9080, 4471, 11406, 11407, 2]
+// Dependencies: [32, 19, 17, 8466, 7487, 21, 4790, 580, 558, 568, 504, 8492, 8533, 8547, 9658, 8544, 8472, 8507, 8475, 8548, 8530, 8527, 8513, 8552, 9114, 8562, 11427, 11497, 9112, 4503, 11442, 11443, 2]
 
-// Module 11390 (UserProfilePreview)
+// Module 11426 (UserProfilePreview)
 import nativeDefault from "native" /* 580 */;
-import useDisplayProfileDefault from "useDisplayProfile" /* 8460 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 8498 */;
+import useDisplayProfileDefault from "useDisplayProfile" /* 8492 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 8530 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8434 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8466 */;
 
 const require = globalThis.__r;
 
@@ -18,11 +18,11 @@ function filterLayer(responsive) {
   return true !== responsive.responsive;
 }
 const View = fn(17).View;
-const Constants = fn(7455);
+const Constants = fn(7487);
 ({ PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING: closure_7, UserProfileThemeTypes: closure_8 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_12 = createStyles.createStyles((arg0, arg1, arg2) => {
   let num = arg2;
   if (arg2 == null) {
@@ -89,18 +89,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[5] === user) {
         let tmp12 = cResult[6];
       }
-      ({ theme, primaryColor, secondaryColor } = tmp10(8501)(tmp12));
+      ({ theme, primaryColor, secondaryColor } = tmp10(8533)(tmp12));
       const tmp17 = closure_12(tmp4, null != primaryColor, maxWidth);
-      tmp10(8515)();
-      const tmp13 = tmp10(8501)(tmp12);
+      tmp10(8547)();
+      const tmp13 = tmp10(8533)(tmp12);
       const tmp15 = null != primaryColor;
-      const customStatusActivity = tmp(9626).useCustomStatusActivity();
+      const customStatusActivity = tmp(9658).useCustomStatusActivity();
       if (cResult[7] === primaryColor) {
         if (cResult[8] === secondaryColor) {
           if (cResult[9] === theme) {
             let tmp21 = cResult[10];
           }
-          const userProfileColors = tmp(8512).useUserProfileColors(tmp21);
+          const userProfileColors = tmp(8544).useUserProfileColors(tmp21);
           ({ avatarBackground, containerBackground, gradientFallbackBackground } = userProfileColors);
           if (undefined !== profileEffectOverride) {
             pendingProfileEffect = profileEffectOverride;
@@ -147,9 +147,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         if (tmp29 != null) {
                           skuId = tmp29.skuId;
                         }
-                        const tmp10ResultResult = tmp10(8475)(skuId);
+                        const tmp10ResultResult = tmp10(8507)(skuId);
                         if (cResult[22] === pendingAvatar) {
-                          const arr2 = tmp10(8516)(tmp11, pendingLegacyUsernameDisabled);
+                          const arr2 = tmp10(8548)(tmp11, pendingLegacyUsernameDisabled);
                           if (cResult[25] !== arr2) {
                             const _Symbol = Symbol;
                             if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
@@ -254,7 +254,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                   return;
                                 }
                               }
-                              const tmp63 = tmp10(8498)(tmp10ResultResult, tmp60.width);
+                              const tmp63 = tmp10(8530)(tmp10ResultResult, tmp60.width);
                               cResult[32] = tmp60.width;
                               cResult[33] = tmp10ResultResult;
                               cResult[34] = tmp63;
@@ -262,13 +262,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             const tmp59 = _slicedToArray(noop.useState(tmp55), 2);
                           }
                         }
-                        const tmp10Result = tmp10(8475);
+                        const tmp10Result = tmp10(8507);
                         const obj2 = { userId: user.id, image: pendingAvatar };
-                        const pendingAvatarSrc = tmp(8443).getPendingAvatarSrc(obj2);
+                        const pendingAvatarSrc = tmp(8475).getPendingAvatarSrc(obj2);
                         cResult[22] = pendingAvatar;
                         cResult[23] = user.id;
                         cResult[24] = pendingAvatarSrc;
-                        const tmpResult7 = tmp(8443);
+                        const tmpResult7 = tmp(8475);
                       }
                     }
                   }
@@ -352,15 +352,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
             }
           }
-          const tmpResult6 = tmp(8512);
+          const tmpResult6 = tmp(8544);
           const obj4 = { pendingValue: pendingProfileEffect, userValue: profileEffect, guildValue: profileEffect1, guildId };
-          const profilePreviewValue1 = tmp(8440).getProfilePreviewValue(obj4);
+          const profilePreviewValue1 = tmp(8472).getProfilePreviewValue(obj4);
           cResult[11] = pendingProfileEffect;
           cResult[12] = guildId;
           cResult[13] = profileEffect;
           cResult[14] = profileEffect1;
           cResult[15] = profilePreviewValue1;
-          const tmpResult8 = tmp(8440);
+          const tmpResult8 = tmp(8472);
         }
       }
       const obj5 = { theme, primaryColor, secondaryColor };
@@ -369,7 +369,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[9] = theme;
       cResult[10] = obj5;
       tmp21 = obj5;
-      const tmpResult5 = tmp(9626);
+      const tmpResult5 = tmp(9658);
     }
   }
   const obj6 = { user, displayProfile: tmp11, pendingThemeColors };

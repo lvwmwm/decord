@@ -1,13 +1,13 @@
-// Module ID: 8969
-// Function ID: 8970
+// Module ID: 9001
+// Function ID: 9002
 // Name: BattlenetNeutralIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 8970, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9002, 4493, 2]
 
-// Module 8969 (BattlenetNeutralIcon)
+// Module 9001 (BattlenetNeutralIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod8970 from "module_8970" /* 8970 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9002 from "module_9002" /* 9002 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const BattlenetNeutralIcon = ReactCompilerGating.isReactCompilerEnabled()
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(8970);
+    const tmpResult = tmp(9002);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const BattlenetNeutralIcon = ReactCompilerGating.isReactCompilerEnabled()
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8970, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9002, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

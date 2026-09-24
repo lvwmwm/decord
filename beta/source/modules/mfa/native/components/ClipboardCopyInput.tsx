@@ -1,9 +1,9 @@
-// Module ID: 15947
-// Function ID: 15948
+// Module ID: 15957
+// Function ID: 15958
 // Name: ClipboardCopyInput
-// Dependencies: [5, 19, 17, 1983, 1078, 21, 4758, 558, 568, 504, 7205, 7284, 7436, 6846, 2]
+// Dependencies: [5, 19, 17, 1983, 1078, 21, 4790, 558, 568, 504, 7237, 7316, 7468, 6878, 2]
 
-// Module 15947 (ClipboardCopyInput)
+// Module 15957 (ClipboardCopyInput)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1983 */;
@@ -14,7 +14,7 @@ const require = fn;
 const View = fn(17).View;
 const AppStates = fn(1078).AppStates;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ inputContainer: { flexDirection: "column", alignSelf: "stretch" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

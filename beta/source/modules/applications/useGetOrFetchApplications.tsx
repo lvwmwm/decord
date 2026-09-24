@@ -1,16 +1,16 @@
-// Module ID: 7415
-// Function ID: 7416
+// Module ID: 7447
+// Function ID: 7448
 // Name: useGetOrFetchApplications
-// Dependencies: [19, 4985, 558, 568, 560, 7410, 12, 1374, 504, 2]
+// Dependencies: [19, 5017, 558, 568, 560, 7442, 12, 1374, 504, 2]
 
-// Module 7415 (useGetOrFetchApplications)
+// Module 7447 (useGetOrFetchApplications)
 import _modDef12 from "module_12" /* 12 */;
 import discord_common_shallowEqual from "discord_common/shallowEqual" /* 560 */;
 import c from "c" /* 568 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7410 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7442 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 4985 */;
+import ApplicationStore from "ApplicationStore" /* 5017 */;
 
 require = fn;
 let ReactCompilerGating = fn(558);

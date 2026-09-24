@@ -1,13 +1,13 @@
-// Module ID: 6572
-// Function ID: 6573
+// Module ID: 6604
+// Function ID: 6605
 // Name: OrbNitroCardSpotIllustration
-// Dependencies: [21, 558, 568, 6573, 5802, 2]
+// Dependencies: [21, 558, 568, 6605, 5834, 2]
 
-// Module 6572 (OrbNitroCardSpotIllustration)
+// Module 6604 (OrbNitroCardSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6573 from "module_6573" /* 6573 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6605 from "module_6605" /* 6605 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const OrbNitroCardSpotIllustration = ReactCompilerGating.isReactCompilerE
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6573 };
+    const obj2 = { uri: _modDef6605 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const OrbNitroCardSpotIllustration = ReactCompilerGating.isReactCompilerE
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6573 };
+  const obj2 = { uri: _modDef6605 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

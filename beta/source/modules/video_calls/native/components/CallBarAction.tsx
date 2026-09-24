@@ -1,14 +1,14 @@
-// Module ID: 9662
-// Function ID: 9663
+// Module ID: 9694
+// Function ID: 9695
 // Name: CallBarAction
-// Dependencies: [109, 19, 17, 9636, 21, 4608, 580, 4758, 558, 568, 9663, 9664, 5341, 4754, 2]
+// Dependencies: [109, 19, 17, 9668, 21, 4640, 580, 4790, 558, 568, 9695, 9696, 5373, 4786, 2]
 
-// Module 9662 (CallBarAction)
+// Module 9694 (CallBarAction)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
-import CircleWithCutoutUtilsDefault from "CircleWithCutoutUtils" /* 9664 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
+import CircleWithCutoutUtilsDefault from "CircleWithCutoutUtils" /* 9696 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,16 +18,16 @@ let closure_4 = ["isSmallSize"];
 let closure_5 = ["notifications", "isMentioned"];
 get_ActivityIndicator = fn(17);
 ({ Image: closure_8, View: closure_9 } = get_ActivityIndicator);
-const resetFocusTimer = fn(9636).resetFocusTimer;
+const resetFocusTimer = fn(9668).resetFocusTimer;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const ColorUtils = fn(4608);
+const ColorUtils = fn(4640);
 let closure_13 = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.WHITE, 0.24);
 let c14 = 45;
 let closure_15 = Object.freeze({ buttonRadius: 28, badgeRadius: 6, cutoutInset: 3 });
 const frozen = Object.freeze({ buttonRadius: 24, badgeRadius: 4, cutoutInset: 2 });
 let closure_17 = 24 + 2 * frozen.buttonRadius * 5 + 96;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj3 = { buttonContainer: { position: "absolute" }, iconContainer: { position: "absolute", justifyContent: "center", alignItems: "center" }, badge: { backgroundColor: "white", position: "absolute" }, notificationArea: null, notificationText: null, notificationAreaMentioned: null, notificationAreaUnread: null };
 const rect = { position: "absolute", top: -4, right: -4, height: 24, minWidth: 24, paddingHorizontal: 4, borderRadius: 12, borderWidth: 4, borderColor: nativeDefault.unsafe_rawColors.PRIMARY_760, alignItems: "center", justifyContent: "center" };
 obj3.notificationArea = rect;
@@ -147,7 +147,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                                   }
                                                 }
                                                 const obj3 = { accessibilityLabel, accessibilityRole: "button", accessibilityState, onPress: tmp15, disabled: false, style: tmp16, children: tmp43 };
-                                                const tmp49 = closure_11(tmp(5341).PressableOpacity, obj3);
+                                                const tmp49 = closure_11(tmp(5373).PressableOpacity, obj3);
                                                 cResult[46] = accessibilityLabel;
                                                 cResult[47] = accessibilityState;
                                                 cResult[48] = tmp43;
@@ -178,13 +178,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                 if (tmp5) {
                                   const obj5 = { style: null };
                                   const items1 = [tmp7.badge, ];
-                                  const size1 = { width: result1, height: result1, borderRadius: tmp11.badgeRadius, top: tmp(9664).getBadgeTop(tmp11.badgeRadius, tmp11.buttonRadius, cutoutPositionInDegrees), left: null };
-                                  const tmpResult = tmp(9664);
-                                  size1.left = tmp(9664).getBadgeLeft(tmp11.badgeRadius, tmp11.buttonRadius, cutoutPositionInDegrees);
+                                  const size1 = { width: result1, height: result1, borderRadius: tmp11.badgeRadius, top: tmp(9696).getBadgeTop(tmp11.badgeRadius, tmp11.buttonRadius, cutoutPositionInDegrees), left: null };
+                                  const tmpResult = tmp(9696);
+                                  size1.left = tmp(9696).getBadgeLeft(tmp11.badgeRadius, tmp11.buttonRadius, cutoutPositionInDegrees);
                                   items1[1] = size1;
                                   obj5.style = items1;
                                   tmp39 = closure_11(closure_9, obj5);
-                                  const tmpResult2 = tmp(9664);
+                                  const tmpResult2 = tmp(9696);
                                 }
                                 cResult[34] = tmp11.badgeRadius;
                                 cResult[35] = tmp11.buttonRadius;
@@ -331,13 +331,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (showBadge) {
     const obj8 = { style: null };
     const items3 = [tmp.badge, ];
-    const size = { width: result1, height: result1, borderRadius: tmp6.badgeRadius, top: tmp11(9664).getBadgeTop(tmp6.badgeRadius, tmp6.buttonRadius, tmp15), left: null };
-    const tmp11Result = tmp11(9664);
-    size.left = tmp11(9664).getBadgeLeft(tmp6.badgeRadius, tmp6.buttonRadius, tmp15);
+    const size = { width: result1, height: result1, borderRadius: tmp6.badgeRadius, top: tmp11(9696).getBadgeTop(tmp6.badgeRadius, tmp6.buttonRadius, tmp15), left: null };
+    const tmp11Result = tmp11(9696);
+    size.left = tmp11(9696).getBadgeLeft(tmp6.badgeRadius, tmp6.buttonRadius, tmp15);
     items3[1] = size;
     obj8.style = items3;
     tmp10Result = tmp10(tmp13, obj8);
-    const tmp11Result2 = tmp11(9664);
+    const tmp11Result2 = tmp11(9696);
   }
   items1[2] = tmp10Result;
   items1[3] = children;

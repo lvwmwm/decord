@@ -1,16 +1,101 @@
 // Module ID: 7035
 // Function ID: 7036
-// Dependencies: []
-// Exports: snapPoint
+// Dependencies: [6928, 6929]
 
 // Module 7035
-const fn = function t(arg0, arg1, arr) {
-  closure_0 = arg0 + 0.2 * arg1;
-  closure_1 = min.apply(null, arr.map((item) => Math.abs(closure_0 - item)));
-  return arr.filter((item) => Math.abs(closure_0 - item) === closure_1)[0];
-};
-fn.__closure = {};
-fn.__workletHash = 8913698095371;
-fn.__initData = { code: "function pnpm_snapPointTs1(value,velocity,points){const point=value+0.2*velocity;const deltas=points.map(function(p){return Math.abs(point-p);});const minDelta=Math.min.apply(null,deltas);return points.filter(function(p){return Math.abs(point-p)===minDelta;})[0];}" };
+import tagMessage from "tagMessage" /* 6928 */;
+import _mod6929 from "module_6929" /* 6929 */;
 
-export const snapPoint = fn;
+require = fn;
+const dependencyMap = arg6;
+const setGestureState = function t(arg0, arg1) {
+  const _globalThis = globalThis;
+  if (globalThis._setGestureStateSync) {
+    _globalThis._setGestureStateSync(arg0, arg1);
+  } else if (_globalThis._setGestureStateAsync) {
+    const _globalThis2 = globalThis;
+    const result = globalThis._setGestureStateAsync(arg0, arg1);
+  } else {
+    const _Error = Error;
+    const error = new Error(tagMessage.tagMessage("Failed to set gesture state"));
+    throw error;
+  }
+};
+setGestureState.__closure = { tagMessage: fn(6928).tagMessage };
+setGestureState.__workletHash = 727405139747;
+setGestureState.__initData = { code: "function pnpm_gestureStateManagerTs1(handlerTag,state){const{tagMessage}=this.__closure;if(globalThis._setGestureStateSync){globalThis._setGestureStateSync(handlerTag,state);}else if(globalThis._setGestureStateAsync){globalThis._setGestureStateAsync(handlerTag,state);}else{throw new Error(tagMessage('Failed to set gesture state'));}}" };
+const obj2 = { activate: null, fail: null, deactivate: null };
+const fn2 = function _(arg0) {
+  const ACTIVE = _mod6929.State.ACTIVE;
+  if (typeof fn === "function") {
+    const _globalThis = globalThis;
+    const _globalThis2 = globalThis;
+    if (globalThis._setGestureStateSync) {
+      _globalThis2._setGestureStateSync(arg0, ACTIVE);
+    } else if (_globalThis2._setGestureStateAsync) {
+      const _globalThis3 = globalThis;
+      const result = globalThis._setGestureStateAsync(arg0, ACTIVE);
+    } else {
+      const _Error = Error;
+      const error = new Error(tagMessage.tagMessage("Failed to set gesture state"));
+      throw error;
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+};
+const obj = { tagMessage: fn(6928).tagMessage };
+fn2.__closure = { setGestureState, State: fn(6929).State };
+fn2.__workletHash = 14928129771754;
+fn2.__initData = { code: "function activate_Pnpm_gestureStateManagerTs2(handlerTag){const{setGestureState,State}=this.__closure;setGestureState(handlerTag,State.ACTIVE);}" };
+obj2.activate = fn2;
+const fn3 = function n(arg0) {
+  const FAILED = _mod6929.State.FAILED;
+  if (typeof fn === "function") {
+    const _globalThis = globalThis;
+    const _globalThis2 = globalThis;
+    if (globalThis._setGestureStateSync) {
+      _globalThis2._setGestureStateSync(arg0, FAILED);
+    } else if (_globalThis2._setGestureStateAsync) {
+      const _globalThis3 = globalThis;
+      const result = globalThis._setGestureStateAsync(arg0, FAILED);
+    } else {
+      const _Error = Error;
+      const error = new Error(tagMessage.tagMessage("Failed to set gesture state"));
+      throw error;
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+};
+const obj3 = { setGestureState, State: fn(6929).State };
+fn3.__closure = { setGestureState, State: fn(6929).State };
+fn3.__workletHash = 1703030189599;
+fn3.__initData = { code: "function fail_Pnpm_gestureStateManagerTs3(handlerTag){const{setGestureState,State}=this.__closure;setGestureState(handlerTag,State.FAILED);}" };
+obj2.fail = fn3;
+const fn4 = function s(arg0) {
+  const END = _mod6929.State.END;
+  if (typeof fn === "function") {
+    const _globalThis = globalThis;
+    const _globalThis2 = globalThis;
+    if (globalThis._setGestureStateSync) {
+      _globalThis2._setGestureStateSync(arg0, END);
+    } else if (_globalThis2._setGestureStateAsync) {
+      const _globalThis3 = globalThis;
+      const result = globalThis._setGestureStateAsync(arg0, END);
+    } else {
+      const _Error = Error;
+      const error = new Error(tagMessage.tagMessage("Failed to set gesture state"));
+      throw error;
+    }
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+};
+const obj4 = { setGestureState, State: fn(6929).State };
+fn4.__closure = { setGestureState, State: fn(6929).State };
+fn4.__workletHash = 5511283927342;
+fn4.__initData = { code: "function deactivate_Pnpm_gestureStateManagerTs4(handlerTag){const{setGestureState,State}=this.__closure;setGestureState(handlerTag,State.END);}" };
+obj2.deactivate = fn4;
+
+export const GestureStateManager = obj2;

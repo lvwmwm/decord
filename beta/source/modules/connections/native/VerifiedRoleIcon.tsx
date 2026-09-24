@@ -1,17 +1,17 @@
-// Module ID: 7450
-// Function ID: 7451
+// Module ID: 7482
+// Function ID: 7483
 // Name: VerifiedRoleIcon
-// Dependencies: [19, 17, 1078, 21, 580, 4758, 558, 568, 7451, 7433, 7452, 4700, 2]
+// Dependencies: [19, 17, 1078, 21, 580, 4790, 558, 568, 7483, 7465, 7484, 4732, 2]
 
-// Module 7450 (VerifiedRoleIcon)
+// Module 7482 (VerifiedRoleIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useRoleIconProps from "useRoleIconProps" /* 7433 */;
-import getHigherContrastColor from "getHigherContrastColor" /* 7451 */;
-import RoleIconDefault from "RoleIcon" /* 7452 */;
+import useRoleIconProps from "useRoleIconProps" /* 7465 */;
+import getHigherContrastColor from "getHigherContrastColor" /* 7483 */;
+import RoleIconDefault from "RoleIcon" /* 7484 */;
 import noop from "module_19" /* 19 */;
 
-const LinkIcon = tmp3(4700);
+const LinkIcon = tmp3(4732);
 require = fn;
 const View = fn(17).View;
 const Constants = fn(1078);
@@ -19,7 +19,7 @@ const Constants = fn(1078);
 const jsx = fn(21).jsx;
 const WHITE = nativeDefault.unsafe_rawColors.WHITE;
 const PRIMARY_630 = nativeDefault.unsafe_rawColors.PRIMARY_630;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { iconContainer: { alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round } };
 let closure_9 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -45,11 +45,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { backgroundColor: roleColor, colors: null };
     const items = [WHITE, PRIMARY_630];
     obj3.colors = items;
-    const higherContrastColor = tmp(7451).getHigherContrastColor(obj3);
+    const higherContrastColor = tmp(7483).getHigherContrastColor(obj3);
     cResult[0] = roleColor;
     cResult[1] = higherContrastColor;
     let tmp5 = higherContrastColor;
-    const tmpResult = tmp(7451);
+    const tmpResult = tmp(7483);
   } else {
     tmp5 = cResult[1];
   }
@@ -69,7 +69,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[4] === roleId) {
         let tmp11 = cResult[5];
       }
-      const roleIconProps = tmp(7433).useRoleIconProps(tmp11);
+      const roleIconProps = tmp(7465).useRoleIconProps(tmp11);
       if (cResult[6] === roleColor) {
         if (cResult[7] === size) {
           let tmp13 = cResult[8];
@@ -109,7 +109,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             if (false === displayRoleIcon) {
               const obj5 = { style: tmp14, size: "custom", color: tmp5 };
-              let tmp18 = jsx(tmp(4700).LinkIcon, { style: tmp14, size: "custom", color: tmp5 });
+              let tmp18 = jsx(tmp(4732).LinkIcon, { style: tmp14, size: "custom", color: tmp5 });
               cResult[15] = displayRoleIcon;
               cResult[16] = tmp5;
               cResult[17] = tmp14;
@@ -133,7 +133,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[7] = size;
       cResult[8] = size2;
       tmp13 = size2;
-      const tmpResult2 = tmp(7433);
+      const tmpResult2 = tmp(7465);
     }
   }
   const obj6 = { guildId, roleId, size: diff };

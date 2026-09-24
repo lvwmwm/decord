@@ -1,22 +1,22 @@
-// Module ID: 12635
-// Function ID: 12636
+// Module ID: 12671
+// Function ID: 12672
 // Name: GuildProgressHooks
-// Dependencies: [19, 502, 2045, 2100, 4678, 2067, 12636, 4978, 4399, 1078, 558, 568, 9849, 504, 11, 12, 7514, 2]
+// Dependencies: [19, 502, 2045, 2100, 4710, 2067, 12672, 5010, 4431, 1078, 558, 568, 9881, 504, 11, 12, 7546, 2]
 
-// Module 12635 (GuildProgressHooks)
+// Module 12671 (GuildProgressHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
-import canViewInviteModal from "canViewInviteModal" /* 9849 */;
+import canViewInviteModal from "canViewInviteModal" /* 9881 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildChannelStore_mod from "GuildChannelStore" /* 2100 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4678 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4710 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import LayerStore from "LayerStore" /* 12636 */;
-import MessageStore from "MessageStore" /* 4978 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import LayerStore from "LayerStore" /* 12672 */;
+import MessageStore from "MessageStore" /* 5010 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 require = fn;
 let GuildChannelStore = fn(2100);

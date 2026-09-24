@@ -1,20 +1,20 @@
-// Module ID: 10476
-// Function ID: 10477
+// Module ID: 10512
+// Function ID: 10513
 // Name: ShinyButton
-// Dependencies: [109, 19, 21, 4758, 580, 558, 568, 1181, 10477, 5189, 2]
+// Dependencies: [109, 19, 21, 4790, 580, 558, 568, 1181, 10513, 5221, 2]
 
-// Module 10476 (ShinyButton)
+// Module 10512 (ShinyButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseTextButton from "BaseTextButton" /* 5189 */;
-import _modDef10477 from "module_10477" /* 10477 */;
+import BaseTextButton from "BaseTextButton" /* 5221 */;
+import _modDef10513 from "module_10513" /* 10513 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 let closure_3 = ["style", "loading", "disabled", "onPress"];
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT }, sparkleIcon: null, disabled: null };
 let obj3 = { borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT };
 obj2.sparkleIcon = { marginRight: 4, tintColor: nativeDefault.colors.WHITE };
@@ -88,7 +88,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const obj2 = { onPress: tmp12, pillStyle: tmp14, loading: tmp5, disabled: tmp4, icon: tmp15 };
           const merged = Object.assign(tmp6);
-          const tmp24 = jsx(tmp(5189).BaseTextButton, { onPress: tmp12, pillStyle: tmp14, loading: tmp5, disabled: tmp4, icon: tmp15 });
+          const tmp24 = jsx(tmp(5221).BaseTextButton, { onPress: tmp12, pillStyle: tmp14, loading: tmp5, disabled: tmp4, icon: tmp15 });
           cResult[16] = tmp4;
           cResult[17] = tmp5;
           cResult[18] = tmp12;
@@ -102,7 +102,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     let tmp17Result;
     if (!tmp5) {
-      const obj3 = { size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, source: _modDef10477, style: null };
+      const obj3 = { size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, source: _modDef10513, style: null };
       const items = [tmp13.sparkleIcon, ];
       let disabled2 = tmp4;
       if (tmp4) {
@@ -110,7 +110,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       items[1] = disabled2;
       obj3.style = items;
-      tmp17Result = jsx(tmp(1181).Icon, { size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, source: _modDef10477, style: null });
+      tmp17Result = jsx(tmp(1181).Icon, { size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, source: _modDef10513, style: null });
     }
     cResult[11] = tmp4;
     cResult[12] = tmp5;
@@ -138,7 +138,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj.pillStyle = items;
   let tmp3Result;
   if (!loading) {
-    const obj2 = { size: tmp4(1181).Icon.Sizes.REFRESH_SMALL_16, source: _modDef10477, style: null };
+    const obj2 = { size: tmp4(1181).Icon.Sizes.REFRESH_SMALL_16, source: _modDef10513, style: null };
     const items1 = [tmp2.sparkleIcon, ];
     if (disabled) {
       disabled = tmp2.disabled;

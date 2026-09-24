@@ -1,13 +1,13 @@
-// Module ID: 11277
-// Function ID: 11278
+// Module ID: 11313
+// Function ID: 11314
 // Name: useFavoritesGuildChannelFilter
-// Dependencies: [19, 2045, 4399, 2048, 1078, 558, 568, 504, 10070, 2070, 1374, 2]
+// Dependencies: [19, 2045, 4431, 2048, 1078, 558, 568, 504, 10109, 2070, 1374, 2]
 
-// Module 11277 (useFavoritesGuildChannelFilter)
-import sortByMatchScore from "sortByMatchScore" /* 10070 */;
+// Module 11313 (useFavoritesGuildChannelFilter)
+import sortByMatchScore from "sortByMatchScore" /* 10109 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
 
 require = fn;
@@ -50,11 +50,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           tmp15 = tmp17;
         }
         return tmp15;
-      } else if (tmp(10070).AutocompleterResultTypes.GROUP_DM === type) {
+      } else if (tmp(10109).AutocompleterResultTypes.GROUP_DM === type) {
         return null == stateFromStores[type.record.id];
       } else {
-        if (tmp(10070).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-          if (tmp(10070).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+        if (tmp(10109).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+          if (tmp(10109).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
             return tmp(1374).assertNever(type);
           }
         }
@@ -97,11 +97,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         tmp15 = tmp17;
       }
       return tmp15;
-    } else if (tmp(10070).AutocompleterResultTypes.GROUP_DM === type) {
+    } else if (tmp(10109).AutocompleterResultTypes.GROUP_DM === type) {
       return null == stateFromStores[type.record.id];
     } else {
-      if (tmp(10070).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-        if (tmp(10070).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+      if (tmp(10109).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+        if (tmp(10109).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
           return tmp(1374).assertNever(type);
         }
       }

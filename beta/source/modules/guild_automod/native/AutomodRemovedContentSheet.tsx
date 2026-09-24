@@ -1,15 +1,15 @@
-// Module ID: 17739
-// Function ID: 17740
+// Module ID: 17749
+// Function ID: 17750
 // Name: AutomodRemovedContentSheet
-// Dependencies: [19, 17, 1078, 21, 8195, 4758, 580, 558, 568, 1119, 4980, 7396, 8928, 4754, 7449, 2]
+// Dependencies: [19, 17, 1078, 21, 8227, 4790, 580, 558, 568, 1119, 5012, 7428, 8960, 4786, 7481, 2]
 
-// Module 17739 (AutomodRemovedContentSheet)
+// Module 17749 (AutomodRemovedContentSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 4980 */;
-import RowGeneratorDefault from "RowGenerator" /* 8195 */;
-import ChatItemDefault from "ChatItem" /* 8928 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5012 */;
+import RowGeneratorDefault from "RowGenerator" /* 8227 */;
+import ChatItemDefault from "ChatItem" /* 8960 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,7 +17,7 @@ const View = fn(17).View;
 const MessageFlags = fn(1078).MessageFlags;
 const jsx = fn(21).jsx;
 const rowGenerator = new RowGeneratorDefault();
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { content: null, blockedMessage: null };
 const tmp2 = new RowGeneratorDefault();
 obj2.content = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
@@ -60,8 +60,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
         num2 = 0;
       }
       obj2.flags = num2 | MessageFlags.EPHEMERAL;
-      messageRecord = tmp(4980).createMessageRecord(obj2);
-      const tmpResult = tmp(4980);
+      messageRecord = tmp(5012).createMessageRecord(obj2);
+      const tmpResult = tmp(5012);
     }
     cResult[1] = message;
     cResult[2] = messageRecord;
@@ -102,7 +102,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
                 return tmp34;
               }
               const obj3 = { header: tmp19, children: tmp30 };
-              const tmp36 = jsx(tmp(7449).ActionSheet, { header: tmp19, children: tmp30 });
+              const tmp36 = jsx(tmp(7481).ActionSheet, { header: tmp19, children: tmp30 });
               cResult[15] = tmp19;
               cResult[16] = tmp30;
               cResult[17] = tmp36;
@@ -124,7 +124,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
         let tmp24 = <View style={tmp4.blockedMessage}>{null}</View>;
       } else {
         const obj7 = { variant: "text-md/normal", color: "text-default", children: notice };
-        tmp24 = jsx(tmp(4754).Text, { variant: "text-md/normal", color: "text-default", children: notice });
+        tmp24 = jsx(tmp(4786).Text, { variant: "text-md/normal", color: "text-default", children: notice });
       }
       cResult[8] = tmp6;
       cResult[9] = notice;
@@ -133,7 +133,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
       cResult[11] = tmp24;
     }
     const obj8 = { title: cResult[4], subtitle: name };
-    const tmp21 = jsx(tmp(7396).BottomSheetTitleHeader, { title: cResult[4], subtitle: name });
+    const tmp21 = jsx(tmp(7428).BottomSheetTitleHeader, { title: cResult[4], subtitle: name });
     cResult[5] = cResult[4];
     cResult[6] = name;
     cResult[7] = tmp21;
@@ -181,7 +181,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
   if (thread != null) {
     name = thread.name;
   }
-  let obj2 = { header: jsx(message(7396).BottomSheetTitleHeader, { title: intl.string(StrErG), subtitle: null }), children: null };
+  let obj2 = { header: jsx(message(7428).BottomSheetTitleHeader, { title: intl.string(StrErG), subtitle: null }), children: null };
   obj.subtitle = name;
   const obj3 = { style: tmp.content, children: null };
   if (null != memo) {
@@ -191,9 +191,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
     let tmp4Result = tmp4(tmp8, obj4);
   } else {
     const obj6 = { variant: "text-md/normal", color: "text-default", children: action.notice };
-    tmp4Result = tmp4(tmp5(4754).Text, obj6);
+    tmp4Result = tmp4(tmp5(4786).Text, obj6);
   }
   obj3.children = tmp4Result;
   obj2.children = <View style={tmp.content}>{null}</View>;
-  return jsx(message(7449).ActionSheet, { header: jsx(message(7396).BottomSheetTitleHeader, { title: intl.string(StrErG), subtitle: null }), children: null });
+  return jsx(message(7481).ActionSheet, { header: jsx(message(7428).BottomSheetTitleHeader, { title: intl.string(StrErG), subtitle: null }), children: null });
 });

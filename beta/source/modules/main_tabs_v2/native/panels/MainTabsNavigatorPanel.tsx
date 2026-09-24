@@ -1,16 +1,16 @@
-// Module ID: 16337
-// Function ID: 16338
+// Module ID: 16347
+// Function ID: 16348
 // Name: MainTabsNavigatorPanel
-// Dependencies: [32, 19, 17, 1078, 21, 3, 4758, 580, 558, 568, 1489, 4619, 11648, 11647, 16338, 4625, 16339, 4617, 4769, 1114, 16340, 4771, 16343, 4497, 5841, 8123, 16344, 16345, 16352, 16870, 16871, 16872, 17213, 16557, 6891, 16725, 2]
+// Dependencies: [32, 19, 17, 1078, 21, 3, 4790, 580, 558, 568, 1489, 4651, 11684, 11683, 16348, 4657, 16349, 4649, 4801, 1114, 16350, 4803, 16353, 4529, 5873, 8155, 16354, 16355, 16362, 16880, 16881, 16882, 17223, 16567, 6923, 16735, 2]
 
-// Module 16337 (MainTabsNavigatorPanel)
+// Module 16347 (MainTabsNavigatorPanel)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 580 */;
-import RootNavigationRef from "RootNavigationRef" /* 4617 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4771 */;
-import PanelsNavigationUtils from "PanelsNavigationUtils" /* 16338 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 16339 */;
-import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 16343 */;
+import RootNavigationRef from "RootNavigationRef" /* 4649 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4803 */;
+import PanelsNavigationUtils from "PanelsNavigationUtils" /* 16348 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 16349 */;
+import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 16353 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -22,7 +22,7 @@ const Constants = fn(1078);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 let closure_12 = new LoggerDefault("MainTabsNavigatorPanel");
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { flex: 1 }, containerBackground: null, tabsContainer: null };
 const tmp5 = new LoggerDefault("MainTabsNavigatorPanel");
 obj.containerBackground = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
@@ -55,11 +55,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         let obj = require;
         let result = dependencyMap;
         if (tmp2) {
-          obj = obj(16338);
+          obj = obj(16348);
           result = obj.convertPortraitToLandscapeScreens();
         } else {
-          obj(4625).dismissKeyboard();
-          const objResult = obj(4625);
+          obj(4657).dismissKeyboard();
+          const objResult = obj(4657);
           const result1 = PanelsNavigationUtils.convertLandscapeToPortraitScreens();
         }
         closure_4.current = true;
@@ -487,8 +487,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           if ("modal" !== name) {
             tmp3.current = true;
-            tmp15(4769).transitionToChannel(tmp6.current.channelId);
-            const tmp15Result = tmp15(4769);
+            tmp15(4801).transitionToChannel(tmp6.current.channelId);
+            const tmp15Result = tmp15(4801);
           }
           tmp15 = require;
         }
@@ -517,11 +517,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let obj = require;
       let result = dependencyMap;
       if (tmp2) {
-        obj = obj(16338);
+        obj = obj(16348);
         result = obj.convertPortraitToLandscapeScreens();
       } else {
-        obj(4625).dismissKeyboard();
-        const objResult = obj(4625);
+        obj(4657).dismissKeyboard();
+        const objResult = obj(4657);
         const result1 = PanelsNavigationUtils.convertLandscapeToPortraitScreens();
       }
       closure_4.current = true;
@@ -620,8 +620,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           if ("modal" !== name) {
             tmp3.current = true;
-            tmp15(4769).transitionToChannel(tmp6.current.channelId);
-            const tmp15Result = tmp15(4769);
+            tmp15(4801).transitionToChannel(tmp6.current.channelId);
+            const tmp15Result = tmp15(4801);
           }
           tmp15 = require;
         }
@@ -714,8 +714,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           movePanel(true, false, 0, true);
         }
       } else if (movePanel(false, false, 0, false)) {
-        tmp4(4625).dismissKeyboard();
-        const tmp4Result = tmp4(4625);
+        tmp4(4657).dismissKeyboard();
+        const tmp4Result = tmp4(4657);
       }
       tmp4 = require;
     }

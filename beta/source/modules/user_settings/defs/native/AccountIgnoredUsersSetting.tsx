@@ -1,17 +1,17 @@
-// Module ID: 15073
-// Function ID: 15074
+// Module ID: 15082
+// Function ID: 15083
 // Name: AccountIgnoredUsersSetting
-// Dependencies: [4409, 8238, 1078, 558, 568, 504, 1119, 11594, 7209, 15074, 2]
+// Dependencies: [4441, 8270, 1078, 558, 568, 504, 1119, 11630, 7241, 15083, 2]
 
-// Module 15073 (AccountIgnoredUsersSetting)
+// Module 15082 (AccountIgnoredUsersSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -45,7 +45,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return intl.format(util.t.rXUeOl, { numberOfIgnoredUsers: stateFromStoresArray.length });
 });
 const route = SettingBuilders.createRoute({
-  IconComponent: fn(7209).EyeSlashIcon,
+  IconComponent: fn(7241).EyeSlashIcon,
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["93ZDWE"]);
@@ -82,7 +82,7 @@ const route = SettingBuilders.createRoute({
     const intl = util.intl;
     return intl.format(util.t.rXUeOl, { numberOfIgnoredUsers: stateFromStoresArray.length });
   }),
-  parent: fn(8238).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: fn(8270).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   screen: {
     route: fn(1078).UserSettingsSections.IGNORED_USERS,
     getComponent() {

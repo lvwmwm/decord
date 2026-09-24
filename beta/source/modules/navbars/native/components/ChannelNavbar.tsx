@@ -1,30 +1,30 @@
-// Module ID: 12938
-// Function ID: 12939
+// Module ID: 12974
+// Function ID: 12975
 // Name: ChannelNavbar
-// Dependencies: [19, 17, 5496, 2049, 2045, 2067, 4798, 4409, 1376, 1078, 2052, 2042, 21, 4758, 5743, 580, 558, 568, 504, 1119, 5241, 4911, 11180, 12939, 12940, 1181, 12941, 12942, 5802, 12943, 10469, 5341, 4754, 4603, 8533, 10017, 4579, 2031, 10921, 12944, 2]
+// Dependencies: [19, 17, 5528, 2049, 2045, 2067, 4830, 4441, 1376, 1078, 2052, 2042, 21, 4790, 5775, 580, 558, 568, 504, 1119, 5273, 4943, 11216, 12975, 12976, 1181, 12977, 12978, 5834, 12979, 10508, 5373, 4786, 4635, 8565, 10056, 4611, 2031, 10957, 12980, 2]
 
-// Module 12938 (ChannelNavbar)
+// Module 12974 (ChannelNavbar)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4579 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useChannelName from "useChannelName" /* 4911 */;
-import Pressables from "Pressables" /* 5341 */;
-import isStreamingDefault from "isStreaming" /* 8533 */;
-import ActivityStatusDefault from "ActivityStatus" /* 11180 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4611 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useChannelName from "useChannelName" /* 4943 */;
+import Pressables from "Pressables" /* 5373 */;
+import isStreamingDefault from "isStreaming" /* 8565 */;
+import ActivityStatusDefault from "ActivityStatus" /* 11216 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5528 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
-import TextStyles from "TextStyles" /* 5743 */;
+import TextStyles from "TextStyles" /* 5775 */;
 
 require = fn;
 const View = fn(17).View;
@@ -36,7 +36,7 @@ const DismissibleContentConstants = fn(2042);
 ({ ContentDismissActionType: closure_14, DismissibleContentGroupName: closure_15 } = DismissibleContentConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { navbarTitleContainer: { height: "100%", flex: 1, flexDirection: "row", alignItems: "center" }, navbarTitlePrimaryText: null, navbarTitleSecondaryText: null, channelIcon: null, channelIconColor: null, homeIcon: null, premiumIcon: null, status: null, channelTextContainer: null, channelNameContainer: null, channelName: null, flexRow: null };
 let obj3 = {};
 const merged = Object.assign(TextStyles(Fonts.DISPLAY_SEMIBOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
@@ -112,8 +112,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[7] !== stateFromStores) {
       let channelIcon = null;
       if (null != stateFromStores) {
-        channelIcon = tmp(5241).getChannelIcon(stateFromStores);
-        const tmpResult5 = tmp(5241);
+        channelIcon = tmp(5273).getChannelIcon(stateFromStores);
+        const tmpResult5 = tmp(5273);
       }
       class C {
         constructor() {
@@ -127,7 +127,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[9] !== stateFromStores) {
       if (null != stateFromStores) {
-        tmp(4911);
+        tmp(4943);
         class C {
           constructor() {
             return closure_1_5.isConnected();
@@ -324,13 +324,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let channelIcon = null;
   if (null != stateFromStores) {
-    channelIcon = tmp2(5241).getChannelIcon(stateFromStores);
-    const tmp2Result = tmp2(5241);
+    channelIcon = tmp2(5273).getChannelIcon(stateFromStores);
+    const tmp2Result = tmp2(5273);
   }
   let channelName = null;
   if (null != stateFromStores) {
-    channelName = tmp2(4911).computeChannelName(stateFromStores, UserStore, RelationshipStore);
-    const tmp2Result2 = tmp2(4911);
+    channelName = tmp2(4943).computeChannelName(stateFromStores, UserStore, RelationshipStore);
+    const tmp2Result2 = tmp2(4943);
   }
   let isDMResult;
   if (stateFromStores != null) {
@@ -510,7 +510,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (!noop.isValidElement(title)) {
       const obj5 = { style: tmp4.channelNameContainer, children: null };
       const obj6 = { style: tmp4.channelName, lineClamp: 1, variant: "heading-md/bold", color: "mobile-text-heading-primary", accessibilityLabel: accessibleTitle, maxFontSizeMultiplier: 1, accessibilityRole: "header", children: title };
-      obj5.children = value2(tmp(4754).Text, obj6);
+      obj5.children = value2(tmp(4786).Text, obj6);
       tmp12 = value2(View, obj5);
     }
     cResult[4] = accessibleTitle;
@@ -573,17 +573,17 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel)
   const tmp4 = closure_18();
   if (cResult[0] !== parentChannel) {
     const intl = tmp(1119).intl;
-    const obj2 = { channelName: tmp(4911).computeChannelName(parentChannel, UserStore, RelationshipStore) };
+    const obj2 = { channelName: tmp(4943).computeChannelName(parentChannel, UserStore, RelationshipStore) };
     const formatToPlainStringResult = intl.formatToPlainString(tmp(1119).t.BjYvHO, obj2);
     cResult[0] = parentChannel;
     cResult[1] = formatToPlainStringResult;
     let tmp5 = formatToPlainStringResult;
-    const tmpResult = tmp(4911);
+    const tmpResult = tmp(4943);
   } else {
     tmp5 = cResult[1];
   }
   if (cResult[2] !== parentChannel) {
-    const tmpResult2 = tmp(4911);
+    const tmpResult2 = tmp(4943);
     const channelName = tmpResult2.computeChannelName(parentChannel, UserStore, RelationshipStore, true);
     cResult[2] = parentChannel;
     cResult[3] = channelName;
@@ -1317,7 +1317,7 @@ export const ChannelButtons = ReactCompilerGating.isReactCompilerEnabled() ? ((a
         obj.disabled = disabled;
         obj.style = style;
         obj.children = children;
-        const children1 = [closure_16(closure_1(10017), obj), ];
+        const children1 = [closure_16(closure_1(10056), obj), ];
         let tmp3Result = null;
         if (hasActivitiesPrivateChannelTooltip) {
           const obj2 = { contentTypes: null, groupName: null, children: null };
@@ -1337,8 +1337,8 @@ export const ChannelButtons = ReactCompilerGating.isReactCompilerEnabled() ? ((a
             }
             return tmp2;
           };
-          tmp3Result = tmp3(closure_1(10921), obj2);
-          const tmp4Result = closure_1(10921);
+          tmp3Result = tmp3(closure_1(10957), obj2);
+          const tmp4Result = closure_1(10957);
         }
         children1[1] = tmp3Result;
         return closure_17(closure_4, { children: children1 }, index);
@@ -1384,7 +1384,7 @@ export const ChannelButtons = ReactCompilerGating.isReactCompilerEnabled() ? ((a
       obj.disabled = disabled;
       obj.style = style;
       obj.children = children;
-      const children1 = [closure_16(closure_1(10017), obj), ];
+      const children1 = [closure_16(closure_1(10056), obj), ];
       let tmp3Result = null;
       if (hasActivitiesPrivateChannelTooltip) {
         const obj2 = { contentTypes: null, groupName: null, children: null };
@@ -1404,8 +1404,8 @@ export const ChannelButtons = ReactCompilerGating.isReactCompilerEnabled() ? ((a
           }
           return tmp2;
         };
-        tmp3Result = tmp3(closure_1(10921), obj2);
-        const tmp4Result = closure_1(10921);
+        tmp3Result = tmp3(closure_1(10957), obj2);
+        const tmp4Result = closure_1(10957);
       }
       children1[1] = tmp3Result;
       return closure_17(closure_4, { children: children1 }, index);

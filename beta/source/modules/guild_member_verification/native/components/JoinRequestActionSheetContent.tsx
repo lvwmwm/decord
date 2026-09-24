@@ -1,28 +1,28 @@
-// Module ID: 16933
-// Function ID: 16934
+// Module ID: 16943
+// Function ID: 16944
 // Name: JoinRequestActionSheetContent
-// Dependencies: [19, 17, 2045, 7398, 7455, 21, 4758, 580, 558, 568, 8515, 8504, 8501, 8512, 8453, 16931, 8520, 8530, 13356, 13410, 11406, 504, 12797, 4582, 5291, 1119, 5188, 4583, 13192, 4754, 6851, 4442, 11, 4717, 4708, 8178, 4710, 5652, 1616, 16934, 2]
+// Dependencies: [19, 17, 2045, 7430, 7487, 21, 4790, 580, 558, 568, 8547, 8536, 8533, 8544, 8485, 16941, 8552, 8562, 13392, 13446, 11442, 504, 12833, 4614, 5323, 1119, 5220, 4615, 13228, 4786, 6883, 4474, 11, 4749, 4740, 8210, 4742, 5684, 1616, 16944, 2]
 
-// Module 16933 (JoinRequestActionSheetContent)
+// Module 16943 (JoinRequestActionSheetContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import DateUtils from "DateUtils" /* 4442 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4583 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16931 */;
+import DateUtils from "DateUtils" /* 4474 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4615 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16941 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 const View = fn(17).View;
-const ACTION_SHEET_MAX_WIDTH = fn(7398).ACTION_SHEET_MAX_WIDTH;
-const paddingTop = fn(7455).PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING;
+const ACTION_SHEET_MAX_WIDTH = fn(7430).ACTION_SHEET_MAX_WIDTH;
+const paddingTop = fn(7487).PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { responsesContainer: { paddingHorizontal: 16, paddingTop: 24, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, borderTopWidth: 1 }, formQuestion: { marginBottom: 8 }, formResponse: null, formResponseMargin: null, termsField: null, statusContainer: null, statusRow: null, actionedInfo: null, dot: null, accountInfoLabel: null, accountInfoContainer: null, accountInfoRow: null, divider: null };
 let obj3 = { paddingHorizontal: 16, paddingTop: 24, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, borderTopWidth: 1 };
 obj.formResponse = { padding: 12, width: "100%", borderRadius: nativeDefault.radii.md, lineHeight: 20, backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT };
@@ -46,19 +46,19 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user
   const cResult = user(568).c(47);
   user = user.user;
   ({ displayProfile, joinRequest } = user);
-  const tmp5 = joinRequest(8515)();
-  const tmp6 = joinRequest(8504)(ACTION_SHEET_MAX_WIDTH);
+  const tmp5 = joinRequest(8547)();
+  const tmp6 = joinRequest(8536)(ACTION_SHEET_MAX_WIDTH);
   if (cResult[0] === displayProfile) {
     if (cResult[1] === user) {
       let tmp7 = cResult[2];
     }
-    ({ theme, primaryColor, secondaryColor } = tmp4(8501)(tmp7));
+    ({ theme, primaryColor, secondaryColor } = tmp4(8533)(tmp7));
     if (cResult[3] === primaryColor) {
       if (cResult[4] === secondaryColor) {
         if (cResult[5] === theme) {
           let tmp9 = cResult[6];
         }
-        const userProfileColors = tmp(8512).useUserProfileColors(tmp9);
+        const userProfileColors = tmp(8544).useUserProfileColors(tmp9);
         ({ gradientFallbackBackground, containerBackground, avatarBackground, statusBackground } = userProfileColors);
         if (cResult[7] === joinRequest) {
           if (cResult[8] === user.id) {
@@ -106,7 +106,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user
                             if (cResult[29] !== user) {
                               const obj4 = { user };
                               cResult[29] = user;
-                              cResult[30] = closure_8(tmp4(13410), obj4);
+                              cResult[30] = closure_8(tmp4(13446), obj4);
                               class S {
                                 constructor() {
                                   obj = { userId: user.id, onClose() { ... } };
@@ -114,7 +114,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user
                                   return;
                                 }
                               }
-                              const tmp29 = closure_8(tmp4(13410), obj4);
+                              const tmp29 = closure_8(tmp4(13446), obj4);
                             }
                             if (cResult[31] === tmp5.primaryInfo) {
                               if (cResult[32] === tmp27) {
@@ -174,7 +174,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user
                                     return;
                                   }
                                 }
-                                const tmp36 = closure_8(tmp4(11406), obj7);
+                                const tmp36 = closure_8(tmp4(11442), obj7);
                                 cResult[35] = gradientFallbackBackground;
                                 cResult[36] = primaryColor;
                                 cResult[37] = secondaryColor;
@@ -204,7 +204,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user
                           }
                         }
                         const obj9 = { user, displayProfile, badgeContainerBackground: containerBackground, isPreviewingChanges: false };
-                        const tmp26 = closure_8(tmp(13356).PrimaryInfo, obj9);
+                        const tmp26 = closure_8(tmp(13392).PrimaryInfo, obj9);
                         class S {
                           constructor() {
                             obj = { userId: user.id, onClose() { ... } };
@@ -243,7 +243,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user
                     return;
                   }
                 }
-                const tmp19 = closure_8(tmp4(8530), obj10);
+                const tmp19 = closure_8(tmp4(8562), obj10);
                 cResult[16] = avatarBackground;
                 cResult[17] = tmp11;
                 cResult[18] = tmp16;
@@ -253,7 +253,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user
               }
             }
             const obj11 = { user, displayProfile, bannerHeight: tmp6 };
-            const tmp15 = closure_8(tmp4(8520), obj11);
+            const tmp15 = closure_8(tmp4(8552), obj11);
             class S {
               constructor() {
                 obj = { userId: user.id, onClose() { ... } };
@@ -278,7 +278,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user
         cResult[8] = user.id;
         cResult[9] = S;
         tmp11 = S;
-        const tmpResult = tmp(8512);
+        const tmpResult = tmp(8544);
       }
     }
     const obj12 = { theme, primaryColor: null, secondaryColor };
@@ -287,7 +287,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user
     cResult[5] = theme;
     cResult[6] = obj12;
     tmp9 = obj12;
-    const tmp8 = tmp4(8501)(tmp7);
+    const tmp8 = tmp4(8533)(tmp7);
   }
   const obj13 = { user, displayProfile };
   cResult[0] = displayProfile;
@@ -297,25 +297,25 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user
 }) : ((user) => {
   user = user.user;
   ({ displayProfile, joinRequest } = user);
-  const tmp3 = joinRequest(8515)();
-  const tmp4 = joinRequest(8504)(ACTION_SHEET_MAX_WIDTH);
-  ({ primaryColor, secondaryColor, theme } = joinRequest(8501)({ user, displayProfile }));
-  const tmp5 = joinRequest(8501)({ user, displayProfile });
+  const tmp3 = joinRequest(8547)();
+  const tmp4 = joinRequest(8536)(ACTION_SHEET_MAX_WIDTH);
+  ({ primaryColor, secondaryColor, theme } = joinRequest(8533)({ user, displayProfile }));
+  const tmp5 = joinRequest(8533)({ user, displayProfile });
   const tmp6 = user;
-  const userProfileColors = user(8512).useUserProfileColors({ theme, primaryColor, secondaryColor });
+  const userProfileColors = user(8544).useUserProfileColors({ theme, primaryColor, secondaryColor });
   const items = [joinRequest, user.id];
   ({ gradientFallbackBackground, containerBackground, avatarBackground, statusBackground } = userProfileColors);
   let tmp9 = null;
   if (null != user) {
     const obj2 = { children: null };
     const obj3 = { user, displayProfile, bannerHeight: tmp4 };
-    const items1 = [closure_8(tmp(8520), obj3), ];
+    const items1 = [closure_8(tmp(8552), obj3), ];
     const obj4 = { children: null };
     const obj5 = { user, disableStatus: true, backgroundColor: avatarBackground, statusStyle: null, onPress: null };
     const obj6 = { backgroundColor: statusBackground };
     obj5.statusStyle = obj6;
     obj5.onPress = tmp8;
-    const items2 = [closure_8(tmp(8530), obj5), ];
+    const items2 = [closure_8(tmp(8562), obj5), ];
     const obj7 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor, containerStyle: null, children: null };
     const items3 = [, , ];
     ({ profileContentWrapper: arr4[0], profileContent: arr4[1] } = tmp3);
@@ -324,17 +324,17 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user
     obj7.containerStyle = items3;
     const obj9 = { style: tmp3.primaryInfo, children: null };
     const obj10 = { user, displayProfile, badgeContainerBackground: containerBackground, isPreviewingChanges: false };
-    const items4 = [closure_8(tmp6(13356).PrimaryInfo, obj10), ];
+    const items4 = [closure_8(tmp6(13392).PrimaryInfo, obj10), ];
     const obj11 = { user };
-    items4[1] = closure_8(tmp(13410), obj11);
+    items4[1] = closure_8(tmp(13446), obj11);
     obj9.children = items4;
     obj7.children = closure_9(View, obj9);
-    items2[1] = closure_8(tmp(11406), obj7);
+    items2[1] = closure_8(tmp(11442), obj7);
     obj4.children = items2;
     items1[1] = closure_9(View, obj4);
     obj2.children = items1;
     tmp9 = closure_9(closure_10, obj2);
-    const tmpResult = tmp(11406);
+    const tmpResult = tmp(11442);
   }
   return tmp9;
 }));
@@ -373,9 +373,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = interviewChannelId(568);
   const stateFromStores = Button(504).useStateFromStores(first, tmp5, tmp6);
   const ButtonResult = Button(504);
-  const joinRequestButtonActions = Button(12797).useJoinRequestButtonActions(joinRequest, interviewChannelId);
+  const joinRequestButtonActions = Button(12833).useJoinRequestButtonActions(joinRequest, interviewChannelId);
   ({ handleOpenInterview, submitting } = joinRequestButtonActions);
-  const ButtonResult1 = Button(12797);
+  const ButtonResult1 = Button(12833);
   if (ButtonResult2.isActionedApplicationStatus(joinRequest.applicationStatus)) {
     if (!stateFromStores) {
       return null;
@@ -383,7 +383,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT, size: "sm" };
-    const tmp13 = closure_8(Button(5291).ChatIcon, obj2);
+    const tmp13 = closure_8(Button(5323).ChatIcon, obj2);
     cResult[4] = tmp13;
     let tmp10 = tmp13;
   } else {
@@ -405,7 +405,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[8] === submitting) {
     }
   }
-  Button = Button(5188).Button;
+  Button = Button(5220).Button;
   tmp = closure_8(Button, { variant: "secondary", size: "md", icon: tmp10, text: tmp14, onPress: handleOpenInterview, disabled: submitting });
   cResult[7] = handleOpenInterview;
   cResult[8] = submitting;
@@ -424,13 +424,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return tmp2;
   }, items1);
   const obj = interviewChannelId(504);
-  const joinRequestButtonActions = interviewChannelId(12797).useJoinRequestButtonActions(joinRequest, interviewChannelId);
+  const joinRequestButtonActions = interviewChannelId(12833).useJoinRequestButtonActions(joinRequest, interviewChannelId);
   ({ handleOpenInterview, submitting } = joinRequestButtonActions);
-  const obj2 = interviewChannelId(12797);
+  const obj2 = interviewChannelId(12833);
   if (!obj3.isActionedApplicationStatus(joinRequest.applicationStatus)) {
     const obj4 = { variant: "secondary", size: "md", icon: null, text: null, onPress: null, disabled: null };
     const obj5 = { color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT, size: "sm" };
-    obj4.icon = closure_8(tmp(5291).ChatIcon, obj5);
+    obj4.icon = closure_8(tmp(5323).ChatIcon, obj5);
     if (label == null) {
       const intl = tmp(1119).intl;
       label = intl.string(tmp(1119).t["2simqN"]);
@@ -438,7 +438,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj4.text = label;
     obj4.onPress = handleOpenInterview;
     obj4.disabled = submitting;
-    let tmp6Result = closure_8(tmp(5188).Button, obj4);
+    let tmp6Result = closure_8(tmp(5220).Button, obj4);
   } else {
     tmp6Result = null;
   }
@@ -455,7 +455,7 @@ let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
       const _Symbol5 = Symbol;
       if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
         const obj2 = { size: "lg", color: nativeDefault.colors.STATUS_WARNING };
-        const tmp85 = closure_1_8(tmp(13192).HourglassIcon, obj2);
+        const tmp85 = closure_1_8(tmp(13228).HourglassIcon, obj2);
         cResult[0] = tmp85;
         let first = tmp85;
       } else {
@@ -467,7 +467,7 @@ let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
         const obj4 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
         const intl6 = tmp(1119).intl;
         obj4.children = intl6.string(tmp(1119).t["Vr+7eO"]);
-        obj3.children = closure_1_8(tmp(4754).Text, obj4);
+        obj3.children = closure_1_8(tmp(4786).Text, obj4);
         const tmp89 = closure_1_8(View, obj3);
         cResult[1] = tmp89;
         let tmp86 = tmp89;
@@ -526,7 +526,7 @@ let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
     const _Symbol3 = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
       const obj8 = { size: "lg", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-      const tmp46 = closure_1_8(tmp(6851).CircleXIcon, obj8);
+      const tmp46 = closure_1_8(tmp(6883).CircleXIcon, obj8);
       cResult[11] = tmp46;
       let tmp43 = tmp46;
     } else {
@@ -537,7 +537,7 @@ let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
       const obj9 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
       const intl3 = tmp(1119).intl;
       obj9.children = intl3.string(tmp(1119).t.bSZkla);
-      const tmp49 = closure_1_8(tmp(4754).Text, obj9);
+      const tmp49 = closure_1_8(tmp(4786).Text, obj9);
       cResult[12] = tmp49;
       let tmp47 = tmp49;
     } else {
@@ -556,7 +556,7 @@ let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
               const intl5 = tmp(1119).intl;
               const obj12 = { rejectionReason };
               obj11.children = intl5.formatToPlainString(tmp(1119).t.fU5PPM, obj12);
-              tmp63 = closure_1_8(tmp(4754).Text, obj11);
+              tmp63 = closure_1_8(tmp(4786).Text, obj11);
             }
             cResult[18] = rejectionReason;
             cResult[19] = tmp63;
@@ -632,16 +632,16 @@ let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
         const obj18 = { variant: "text-sm/normal", color: "text-default", children: null };
         const obj19 = { username: username2 };
         obj18.children = intl4.formatToPlainString(tmp(1119).t.qnimbL, obj19);
-        const items5 = [closure_1_8(tmp(4754).Text, obj18), , ];
+        const items5 = [closure_1_8(tmp(4786).Text, obj18), , ];
         const obj20 = { style: tmp4.dot };
         items5[1] = closure_1_8(View, obj20);
         const obj21 = { variant: "text-sm/normal", color: "text-default", children: null };
         const _Date2 = Date;
         const tmp53 = options;
-        const tmpResult = tmp(4442);
+        const tmpResult = tmp(4474);
         const date = new Date(SnowflakeUtilsDefault.extractTimestamp(actionedAt));
         obj21.children = tmpResult.dateFormat(date, "LL");
-        items5[2] = closure_1_8(tmp(4754).Text, obj21);
+        items5[2] = closure_1_8(tmp(4786).Text, obj21);
         obj17.children = items5;
         tmp53Result = tmp53(tmp54, obj17);
       }
@@ -652,11 +652,11 @@ let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
     cResult[16] = tmp4.dot;
     cResult[17] = tmp53Result;
     tmp50 = tmp53Result;
-  } else if (tmp(4583).GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
+  } else if (tmp(4615).GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
     const _Symbol = Symbol;
     if (cResult[32] === Symbol.for("react.memo_cache_sentinel")) {
       const obj22 = { size: "lg", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-      const tmp11 = closure_1_8(tmp(4717).CircleCheckIcon, obj22);
+      const tmp11 = closure_1_8(tmp(4749).CircleCheckIcon, obj22);
       cResult[32] = tmp11;
       let tmp8 = tmp11;
     } else {
@@ -667,7 +667,7 @@ let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
       const obj24 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
       const intl = tmp(1119).intl;
       obj24.children = intl.string(tmp(1119).t.aURgY2);
-      const tmp14 = closure_1_8(tmp(4754).Text, obj24);
+      const tmp14 = closure_1_8(tmp(4786).Text, obj24);
       cResult[33] = tmp14;
       let tmp12 = tmp14;
     } else {
@@ -745,16 +745,16 @@ let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
         const obj30 = { variant: "text-sm/normal", color: "text-default", children: null };
         const obj31 = { username };
         obj30.children = intl2.formatToPlainString(tmp(1119).t.qnimbL, obj31);
-        const items9 = [closure_1_8(tmp(4754).Text, obj30), , ];
+        const items9 = [closure_1_8(tmp(4786).Text, obj30), , ];
         const obj32 = { style: tmp4.dot };
         items9[1] = closure_1_8(View, obj32);
         const obj33 = { variant: "text-sm/normal", color: "text-default", children: null };
         const _Date = Date;
         const tmp18 = options;
-        const tmpResult2 = tmp(4442);
+        const tmpResult2 = tmp(4474);
         const date1 = new Date(SnowflakeUtilsDefault.extractTimestamp(actionedAt));
         obj33.children = tmpResult2.dateFormat(date1, "LL");
-        items9[2] = closure_1_8(tmp(4754).Text, obj33);
+        items9[2] = closure_1_8(tmp(4786).Text, obj33);
         obj29.children = items9;
         tmp18Result = tmp18(tmp19, obj29);
       }
@@ -777,12 +777,12 @@ let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
       const obj2 = { style: tmp.statusContainer, children: null };
       const obj3 = { style: tmp.statusRow, children: null };
       const obj4 = { size: "lg", color: nativeDefault.colors.STATUS_WARNING };
-      const items = [closure_1_8(tmp2(13192).HourglassIcon, obj4), ];
+      const items = [closure_1_8(tmp2(13228).HourglassIcon, obj4), ];
       const obj5 = { children: null };
       const obj6 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
       const intl6 = tmp2(1119).intl;
       obj6.children = intl6.string(tmp2(1119).t["Vr+7eO"]);
-      obj5.children = closure_1_8(tmp2(4754).Text, obj6);
+      obj5.children = closure_1_8(tmp2(4786).Text, obj6);
       items[1] = closure_1_8(View, obj5);
       obj3.children = items;
       const items1 = [options(View, obj3), ];
@@ -798,11 +798,11 @@ let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
     const obj8 = { style: tmp.statusContainer, children: null };
     const obj9 = { style: tmp.statusRow, children: null };
     const obj10 = { size: "lg", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-    const items2 = [closure_1_8(tmp2(6851).CircleXIcon, obj10), ];
+    const items2 = [closure_1_8(tmp2(6883).CircleXIcon, obj10), ];
     const obj11 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
     const intl3 = tmp2(1119).intl;
     obj11.children = intl3.string(tmp2(1119).t.bSZkla);
-    const items3 = [closure_1_8(tmp2(4754).Text, obj11), , ];
+    const items3 = [closure_1_8(tmp2(4786).Text, obj11), , ];
     let tmp18Result = null;
     if (null != actionedByUser) {
       tmp18Result = null;
@@ -816,15 +816,15 @@ let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
         const obj13 = { variant: "text-sm/normal", color: "text-default", children: null };
         const obj14 = { username: username2 };
         obj13.children = intl4.formatToPlainString(tmp2(1119).t.qnimbL, obj14);
-        const items4 = [tmp20(tmp2(4754).Text, obj13), , ];
+        const items4 = [tmp20(tmp2(4786).Text, obj13), , ];
         const obj15 = { style: tmp.dot };
         items4[1] = tmp20(tmp19, obj15);
         const obj16 = { variant: "text-sm/normal", color: "text-default", children: null };
         const _Date2 = Date;
-        const tmp2Result = tmp2(4442);
+        const tmp2Result = tmp2(4474);
         const date = new Date(SnowflakeUtilsDefault.extractTimestamp(actionedAt));
         obj16.children = tmp2Result.dateFormat(date, "LL");
-        items4[2] = tmp20(tmp2(4754).Text, obj16);
+        items4[2] = tmp20(tmp2(4786).Text, obj16);
         obj12.children = items4;
         tmp18Result = tmp18(tmp19, obj12);
         const tmp21Result = SnowflakeUtilsDefault;
@@ -837,7 +837,7 @@ let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
       const intl5 = tmp2(1119).intl;
       const obj18 = { rejectionReason };
       obj17.children = intl5.formatToPlainString(tmp2(1119).t.fU5PPM, obj18);
-      tmp20Result = tmp20(tmp2(4754).Text, obj17);
+      tmp20Result = tmp20(tmp2(4786).Text, obj17);
     }
     const obj19 = { children: null };
     items3[2] = tmp20Result;
@@ -849,15 +849,15 @@ let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
     items5[1] = closure_1_8(closure_13, obj20);
     obj8.children = items5;
     return options(View, obj8);
-  } else if (tmp2(4583).GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
+  } else if (tmp2(4615).GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
     const obj = { style: tmp.statusContainer, children: null };
     const obj21 = { style: tmp.statusRow, children: null };
     const obj22 = { size: "lg", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-    const items6 = [closure_1_8(tmp2(4717).CircleCheckIcon, obj22), ];
+    const items6 = [closure_1_8(tmp2(4749).CircleCheckIcon, obj22), ];
     const obj23 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
     const intl = tmp2(1119).intl;
     obj23.children = intl.string(tmp2(1119).t.aURgY2);
-    const items7 = [closure_1_8(tmp2(4754).Text, obj23), ];
+    const items7 = [closure_1_8(tmp2(4786).Text, obj23), ];
     let tmp6Result = null;
     if (null != actionedByUser) {
       tmp6Result = null;
@@ -871,15 +871,15 @@ let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
         const obj25 = { variant: "text-sm/normal", color: "text-default", children: null };
         const obj26 = { username };
         obj25.children = intl2.formatToPlainString(tmp2(1119).t.qnimbL, obj26);
-        const items8 = [tmp8(tmp2(4754).Text, obj25), , ];
+        const items8 = [tmp8(tmp2(4786).Text, obj25), , ];
         const obj27 = { style: tmp.dot };
         items8[1] = tmp8(tmp7, obj27);
         const obj28 = { variant: "text-sm/normal", color: "text-default", children: null };
         const _Date = Date;
-        const tmp2Result2 = tmp2(4442);
+        const tmp2Result2 = tmp2(4474);
         const date1 = new Date(SnowflakeUtilsDefault.extractTimestamp(actionedAt));
         obj28.children = tmp2Result2.dateFormat(date1, "LL");
-        items8[2] = tmp8(tmp2(4754).Text, obj28);
+        items8[2] = tmp8(tmp2(4786).Text, obj28);
         obj24.children = items8;
         tmp6Result = tmp6(tmp7, obj24);
         const tmp9Result = SnowflakeUtilsDefault;
@@ -914,11 +914,11 @@ let closure_15 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
     tmp4 = cResult[1];
   }
   const obj = joinRequest(568);
-  const joinRequestButtonActions = joinRequest(12797).useJoinRequestButtonActions(joinRequest, joinRequest.interviewChannelId, tmp4);
+  const joinRequestButtonActions = joinRequest(12833).useJoinRequestButtonActions(joinRequest, joinRequest.interviewChannelId, tmp4);
   ({ approveRequest, rejectRequest, handleOpenInterview, submitting } = joinRequestButtonActions);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { color: nativeDefault.colors.WHITE, size: "lg" };
-    const tmp10 = closure_8(tmp(4708).CheckmarkLargeIcon, obj2);
+    const tmp10 = closure_8(tmp(4740).CheckmarkLargeIcon, obj2);
     const intl = tmp(1119).intl;
     const stringResult = intl.string(tmp(1119).t.BzjDQJ);
     cResult[2] = tmp10;
@@ -936,7 +936,7 @@ let closure_15 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { color: nativeDefault.colors.WHITE, size: "lg" };
-      const tmp18 = closure_8(tmp(4710).XLargeIcon, obj3);
+      const tmp18 = closure_8(tmp(4742).XLargeIcon, obj3);
       const intl2 = tmp(1119).intl;
       const stringResult1 = intl2.string(tmp(1119).t.hDtbsz);
       cResult[7] = tmp18;
@@ -967,7 +967,7 @@ let closure_15 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
           const obj4 = { direction: "horizontal", align: "flex-start", justify: "space-evenly", children: null };
           const items = [tmp12, tmp20, tmp23];
           obj4.children = items;
-          const tmp30 = closure_9(tmp(5652).ButtonGroup, obj4);
+          const tmp30 = closure_9(tmp(5684).ButtonGroup, obj4);
           cResult[16] = tmp12;
           cResult[17] = tmp20;
           cResult[18] = tmp23;
@@ -979,12 +979,12 @@ let closure_15 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
       if (tmp25) {
         const obj5 = { variant: "secondary", icon: null, label: null, onPress: null, disabled: null };
         const obj6 = { color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT, size: "lg" };
-        obj5.icon = closure_8(tmp(5291).ChatIcon, obj6);
+        obj5.icon = closure_8(tmp(5323).ChatIcon, obj6);
         const intl3 = tmp(1119).intl;
         obj5.label = intl3.string(tmp(1119).t.KQeYoC);
         obj5.onPress = handleOpenInterview;
         obj5.disabled = submitting;
-        tmp25 = closure_8(tmp(8178).IconButton, obj5);
+        tmp25 = closure_8(tmp(8210).IconButton, obj5);
       }
       cResult[12] = handleOpenInterview;
       cResult[13] = joinRequest.interviewChannelId;
@@ -993,13 +993,13 @@ let closure_15 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
       tmp23 = tmp25;
     }
     const obj7 = { variant: "destructive", icon: tmp14, label: tmp15, onPress: rejectRequest, disabled: submitting };
-    const tmp22 = closure_8(tmp(8178).IconButton, obj7);
+    const tmp22 = closure_8(tmp(8210).IconButton, obj7);
     cResult[9] = rejectRequest;
     cResult[10] = submitting;
     cResult[11] = tmp22;
     tmp20 = tmp22;
   }
-  const tmp13 = closure_8(joinRequest(8178).IconButton, { variant: "primary", icon: tmp6, label: tmp7, onPress: approveRequest, disabled: submitting });
+  const tmp13 = closure_8(joinRequest(8210).IconButton, { variant: "primary", icon: tmp6, label: tmp7, onPress: approveRequest, disabled: submitting });
   cResult[4] = approveRequest;
   cResult[5] = submitting;
   cResult[6] = tmp13;
@@ -1010,38 +1010,38 @@ let closure_15 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
   const callback = noop.useCallback(() => {
     openJoinRequestActionSheetDefault(joinRequest);
   }, items);
-  const joinRequestButtonActions = joinRequest(12797).useJoinRequestButtonActions(joinRequest, joinRequest.interviewChannelId, callback);
+  const joinRequestButtonActions = joinRequest(12833).useJoinRequestButtonActions(joinRequest, joinRequest.interviewChannelId, callback);
   ({ submitting, approveRequest, rejectRequest, handleOpenInterview } = joinRequestButtonActions);
   const obj2 = { variant: "primary", icon: null, label: null, onPress: null, disabled: null };
-  const obj = joinRequest(12797);
+  const obj = joinRequest(12833);
   const tmp5 = closure_9;
-  obj2.icon = closure_8(joinRequest(4708).CheckmarkLargeIcon, { color: nativeDefault.colors.WHITE, size: "lg" });
+  obj2.icon = closure_8(joinRequest(4740).CheckmarkLargeIcon, { color: nativeDefault.colors.WHITE, size: "lg" });
   const intl = joinRequest(1119).intl;
   obj2.label = intl.string(joinRequest(1119).t.BzjDQJ);
   obj2.onPress = approveRequest;
   obj2.disabled = submitting;
-  const children = [closure_8(joinRequest(8178).IconButton, obj2), , ];
+  const children = [closure_8(joinRequest(8210).IconButton, obj2), , ];
   const obj4 = { variant: "destructive", icon: null, label: null, onPress: null, disabled: null };
   const obj3 = { color: nativeDefault.colors.WHITE, size: "lg" };
-  obj4.icon = closure_8(joinRequest(4710).XLargeIcon, { color: nativeDefault.colors.WHITE, size: "lg" });
+  obj4.icon = closure_8(joinRequest(4742).XLargeIcon, { color: nativeDefault.colors.WHITE, size: "lg" });
   const intl2 = joinRequest(1119).intl;
   obj4.label = intl2.string(joinRequest(1119).t.hDtbsz);
   obj4.onPress = rejectRequest;
   obj4.disabled = submitting;
-  children[1] = closure_8(joinRequest(8178).IconButton, obj4);
+  children[1] = closure_8(joinRequest(8210).IconButton, obj4);
   let tmp6Result = null == joinRequest.interviewChannelId;
   if (tmp6Result) {
     const obj6 = { variant: "secondary", icon: null, label: null, onPress: null, disabled: null };
     const obj7 = { color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT, size: "lg" };
-    obj6.icon = tmp6(tmp2(5291).ChatIcon, obj7);
+    obj6.icon = tmp6(tmp2(5323).ChatIcon, obj7);
     const intl3 = tmp2(1119).intl;
     obj6.label = intl3.string(tmp2(1119).t.KQeYoC);
     obj6.onPress = handleOpenInterview;
     obj6.disabled = submitting;
-    tmp6Result = tmp6(tmp2(8178).IconButton, obj6);
+    tmp6Result = tmp6(tmp2(8210).IconButton, obj6);
   }
   children[2] = tmp6Result;
-  return tmp5(joinRequest(5652).ButtonGroup, { direction: "horizontal", align: "flex-start", justify: "space-evenly", children });
+  return tmp5(joinRequest(5684).ButtonGroup, { direction: "horizontal", align: "flex-start", justify: "space-evenly", children });
 }));
 ReactCompilerGating = fn(558);
 let closure_16 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -1061,7 +1061,7 @@ let closure_16 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
         }
         if (cResult[4] !== field.label) {
           const obj2 = { variant: "text-md/medium", color: "text-default", children: field.label };
-          const tmp43 = closure_1_8(tmp(4754).Text, obj2);
+          const tmp43 = closure_1_8(tmp(4786).Text, obj2);
           cResult[4] = field.label;
           cResult[5] = tmp43;
           let tmp41 = tmp43;
@@ -1071,7 +1071,7 @@ let closure_16 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
         const _Symbol = Symbol;
         if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
           const obj3 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-          const tmp48 = closure_1_8(tmp(4717).CircleCheckIcon, obj3);
+          const tmp48 = closure_1_8(tmp(4749).CircleCheckIcon, obj3);
           cResult[6] = tmp48;
           let tmp45 = tmp48;
         } else {
@@ -1101,7 +1101,7 @@ let closure_16 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     cResult[2] = formResponseMargin;
     cResult[3] = items1;
     tmp40 = items1;
-  } else if (tmp(4583).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
+  } else if (tmp(4615).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
     if (cResult[10] === field.label) {
       if (cResult[11] === tmp4.formQuestion) {
         let tmp21 = cResult[12];
@@ -1120,7 +1120,7 @@ let closure_16 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
         }
         if (cResult[16] !== tmp27) {
           const obj5 = { variant: "text-md/medium", color: "text-default", children: tmp27 };
-          const tmp30 = closure_1_8(tmp(4754).Text, obj5);
+          const tmp30 = closure_1_8(tmp(4786).Text, obj5);
           cResult[16] = tmp27;
           cResult[17] = tmp30;
           let tmp28 = tmp30;
@@ -1160,7 +1160,7 @@ let closure_16 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
       tmp26 = items3;
     }
     const obj8 = { style: tmp4.formQuestion, variant: "text-sm/semibold", color: "text-subtle", children: field.label };
-    const tmp23 = closure_1_8(tmp(4754).Text, obj8);
+    const tmp23 = closure_1_8(tmp(4786).Text, obj8);
     cResult[10] = field.label;
     cResult[11] = tmp4.formQuestion;
     cResult[12] = tmp23;
@@ -1180,7 +1180,7 @@ let closure_16 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
         }
         if (cResult[30] !== field.response) {
           const obj9 = { variant: "text-md/medium", color: "text-default", children: field.response };
-          const tmp12 = closure_1_8(tmp(4754).Text, obj9);
+          const tmp12 = closure_1_8(tmp(4786).Text, obj9);
           cResult[30] = field.response;
           cResult[31] = tmp12;
           let tmp10 = tmp12;
@@ -1220,7 +1220,7 @@ let closure_16 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
       tmp9 = items5;
     }
     const obj12 = { style: tmp4.formQuestion, variant: "text-sm/semibold", color: "text-subtle", children: field.label };
-    const tmp7 = closure_1_8(tmp(4754).Text, obj12);
+    const tmp7 = closure_1_8(tmp(4786).Text, obj12);
     cResult[24] = field.label;
     cResult[25] = tmp4.formQuestion;
     cResult[26] = tmp7;
@@ -1241,14 +1241,14 @@ let closure_16 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     items[2] = formResponseMargin;
     obj2.style = items;
     const obj3 = { variant: "text-md/medium", color: "text-default", children: field.label };
-    const items1 = [closure_1_8(tmp2(4754).Text, obj3), ];
+    const items1 = [closure_1_8(tmp2(4786).Text, obj3), ];
     const obj4 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-    items1[1] = closure_1_8(tmp2(4717).CircleCheckIcon, obj4);
+    items1[1] = closure_1_8(tmp2(4749).CircleCheckIcon, obj4);
     obj2.children = items1;
     return options(View, obj2);
-  } else if (tmp2(4583).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
+  } else if (tmp2(4615).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
     const obj5 = { style: tmp.formQuestion, variant: "text-sm/semibold", color: "text-subtle", children: field.label };
-    const items2 = [closure_1_8(tmp2(4754).Text, obj5), ];
+    const items2 = [closure_1_8(tmp2(4786).Text, obj5), ];
     const items3 = [tmp.formResponse, ];
     let formResponseMargin1 = null;
     if (!isLastField) {
@@ -1263,13 +1263,13 @@ let closure_16 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     }
     const obj7 = { children: null };
     const obj8 = { variant: "text-md/medium", color: "text-default", children: tmp10 };
-    obj6.children = closure_1_8(tmp2(4754).Text, obj8);
+    obj6.children = closure_1_8(tmp2(4786).Text, obj8);
     items2[1] = closure_1_8(View, obj6);
     obj7.children = items2;
     return options(View, obj7);
   } else {
     const obj9 = { style: tmp.formQuestion, variant: "text-sm/semibold", color: "text-subtle", children: field.label };
-    const items4 = [closure_1_8(tmp2(4754).Text, obj9), ];
+    const items4 = [closure_1_8(tmp2(4786).Text, obj9), ];
     const items5 = [tmp.formResponse, ];
     let formResponseMargin2 = null;
     if (!isLastField) {
@@ -1280,7 +1280,7 @@ let closure_16 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     items5[1] = formResponseMargin2;
     obj10.style = items5;
     const obj11 = { variant: "text-md/medium", color: "text-default", children: field.response };
-    obj10.children = closure_1_8(tmp2(4754).Text, obj11);
+    obj10.children = closure_1_8(tmp2(4786).Text, obj11);
     items4[1] = closure_1_8(View, obj10);
     obj.children = items4;
     return options(View, obj);
@@ -1301,7 +1301,7 @@ let closure_17 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
   }
   if (cResult[1] !== tmp4.accountInfoLabel) {
     const obj2 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp4.accountInfoLabel, children: first };
-    const tmp9 = closure_1_8(tmp(4754).Text, obj2);
+    const tmp9 = closure_1_8(tmp(4786).Text, obj2);
     cResult[1] = tmp4.accountInfoLabel;
     cResult[2] = tmp9;
     let tmp7 = tmp9;
@@ -1313,7 +1313,7 @@ let closure_17 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     const obj3 = { variant: "text-sm/semibold", color: "text-strong", children: null };
     const intl2 = tmp(1119).intl;
     obj3.children = intl2.string(tmp(1119).t.SaDIpL);
-    const tmp12 = closure_1_8(tmp(4754).Text, obj3);
+    const tmp12 = closure_1_8(tmp(4786).Text, obj3);
     cResult[3] = tmp12;
     let tmp10 = tmp12;
   } else {
@@ -1321,7 +1321,7 @@ let closure_17 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
   }
   if (cResult[4] !== user.id) {
     const _Date = Date;
-    const tmpResult = tmp(4442);
+    const tmpResult = tmp(4474);
     const date = new Date(SnowflakeUtilsDefault.extractTimestamp(user.id));
     const dateFormatResult = tmpResult.dateFormat(date, "LL");
     cResult[4] = user.id;
@@ -1332,7 +1332,7 @@ let closure_17 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
   }
   if (cResult[6] !== tmp13) {
     const obj4 = { variant: "text-sm/normal", color: "text-subtle", children: tmp13 };
-    const tmp22 = closure_1_8(tmp(4754).Text, obj4);
+    const tmp22 = closure_1_8(tmp(4786).Text, obj4);
     cResult[6] = tmp13;
     cResult[7] = tmp22;
     let tmp20 = tmp22;
@@ -1357,7 +1357,7 @@ let closure_17 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
       const obj7 = { variant: "text-sm/semibold", color: "text-strong", children: null };
       const intl3 = tmp(1119).intl;
       obj7.children = intl3.string(tmp(1119).t["Vt4cn+"]);
-      const tmp31 = closure_1_8(tmp(4754).Text, obj7);
+      const tmp31 = closure_1_8(tmp(4786).Text, obj7);
       cResult[13] = tmp31;
       let tmp29 = tmp31;
     } else {
@@ -1366,17 +1366,17 @@ let closure_17 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     if (cResult[14] !== joinRequest.createdAt) {
       const _Date2 = Date;
       const date1 = new Date(joinRequest.createdAt);
-      const dateFormatResult1 = tmp(4442).dateFormat(date1, "LL");
+      const dateFormatResult1 = tmp(4474).dateFormat(date1, "LL");
       cResult[14] = joinRequest.createdAt;
       cResult[15] = dateFormatResult1;
       let tmp32 = dateFormatResult1;
-      const tmpResult2 = tmp(4442);
+      const tmpResult2 = tmp(4474);
     } else {
       tmp32 = cResult[15];
     }
     if (cResult[16] !== tmp32) {
       const obj8 = { variant: "text-sm/normal", color: "text-subtle", children: tmp32 };
-      const tmp40 = closure_1_8(tmp(4754).Text, obj8);
+      const tmp40 = closure_1_8(tmp(4786).Text, obj8);
       cResult[16] = tmp32;
       cResult[17] = tmp40;
       let tmp38 = tmp40;
@@ -1500,7 +1500,7 @@ export default noop.memo(function JoinRequestActionSheetContent(displayProfile) 
   }, items);
   const obj = { style: { paddingBottom: memo(1616)().bottom }, children: null };
   const items1 = [closure_8(closure_12, { joinRequest, user, displayProfile: displayProfile.displayProfile }), , , , ];
-  if (joinRequest.applicationStatus === joinRequest(4583).GuildJoinRequestApplicationStatuses.SUBMITTED) {
+  if (joinRequest.applicationStatus === joinRequest(4615).GuildJoinRequestApplicationStatuses.SUBMITTED) {
     let tmp8Result = null != joinRequest.interviewChannelId;
     if (tmp8Result) {
       const obj2 = { joinRequest };
@@ -1525,7 +1525,7 @@ export default noop.memo(function JoinRequestActionSheetContent(displayProfile) 
   obj6.children = mapped;
   items1[2] = closure_8(View, obj6);
   items1[3] = closure_8(closure_17, { joinRequest, user });
-  items1[4] = closure_8(memo(16934), { guildId: joinRequest.guildId, userId: joinRequest.userId, selectedJoinRequestId: joinRequest.joinRequestId });
+  items1[4] = closure_8(memo(16944), { guildId: joinRequest.guildId, userId: joinRequest.userId, selectedJoinRequestId: joinRequest.joinRequestId });
   obj.children = items1;
   return closure_9(View, obj);
 });

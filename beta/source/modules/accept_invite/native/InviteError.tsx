@@ -1,22 +1,22 @@
-// Module ID: 12870
-// Function ID: 12871
+// Module ID: 12906
+// Function ID: 12907
 // Name: InviteError
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 4610, 4693, 12871, 12872, 12873, 1119, 5188, 4754, 1401, 1181, 12874, 5799, 2112, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 4642, 4725, 12907, 12908, 12909, 1119, 5220, 4786, 1401, 1181, 12910, 5831, 2112, 2]
 
-// Module 12870 (InviteError)
+// Module 12906 (InviteError)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import shared from "shared" /* 4610 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import GuildIcon from "GuildIcon" /* 5799 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 12873 */;
-import _modDef12874 from "module_12874" /* 12874 */;
+import shared from "shared" /* 4642 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import GuildIcon from "GuildIcon" /* 5831 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 12909 */;
+import _modDef12910 from "module_12910" /* 12910 */;
 import noop from "module_19" /* 19 */;
 
 const GuildIconDefault = GuildIcon;
@@ -28,7 +28,7 @@ const Constants = fn(1078);
 ({ AbortCodes: hasOwnProperty, HelpdeskArticles: metroRequire, InviteStates: closure_7 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { expiredImage: { marginTop: 32, marginBottom: 32 }, expiredTitle: { marginBottom: 8, backgroundColor: "transparent", textAlign: "center" }, expiredBody: { backgroundColor: "transparent", marginBottom: 24 }, disabledView: { justifyContent: "center", alignItems: "center" }, disabledPauseIcon: null, guildIcon: null, disabledTitle: null, disabledBody: null };
 let size = { position: "absolute", alignSelf: "center", tintColor: nativeDefault.colors.WHITE, width: 42, height: 42 };
 obj2.disabledPauseIcon = size;
@@ -54,17 +54,17 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
   }
   importDefault = tmp5;
   let obj = onPressClose(568);
-  const tmp6Result = importDefault(onPressClose(4610).isThemeDark(useThemeDefault()) ? 12871 : 12872);
+  const tmp6Result = importDefault(onPressClose(4642).isThemeDark(useThemeDefault()) ? 12907 : 12908);
   let code;
   if (inviteError != null) {
     code = inviteError.code;
   }
   if (cResult[2] !== code) {
-    const descriptiveInviteError = tmp(12873).getDescriptiveInviteError(code);
+    const descriptiveInviteError = tmp(12909).getDescriptiveInviteError(code);
     cResult[2] = code;
     cResult[3] = descriptiveInviteError;
     let tmp9 = descriptiveInviteError;
-    const tmpResult2 = tmp(12873);
+    const tmpResult2 = tmp(12909);
   } else {
     tmp9 = cResult[3];
   }
@@ -155,14 +155,14 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
           tmp32 = tmp35;
         }
         const obj3 = { style: tmp4.expiredBody, variant: "text-sm/medium", color: "text-default", children: tmp12 };
-        const tmp29 = closure_8(tmp(4754).Text, obj3);
+        const tmp29 = closure_8(tmp(4786).Text, obj3);
         cResult[17] = tmp12;
         cResult[18] = tmp4.expiredBody;
         cResult[19] = tmp29;
         tmp27 = tmp29;
       }
       const obj4 = { style: tmp4.expiredTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp21 };
-      const tmp26 = closure_8(tmp(4754).Text, obj4);
+      const tmp26 = closure_8(tmp(4786).Text, obj4);
       cResult[14] = tmp4.expiredTitle;
       cResult[15] = tmp21;
       cResult[16] = tmp26;
@@ -199,7 +199,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
 }) : ((invite) => {
   ({ onPressClose: require, inviteError } = invite);
   const tmp = closure_11();
-  const tmp4Result = importDefault(shared.isThemeDark(useThemeDefault()) ? 12871 : 12872);
+  const tmp4Result = importDefault(shared.isThemeDark(useThemeDefault()) ? 12907 : 12908);
   let code;
   if (inviteError != null) {
     code = inviteError.code;
@@ -300,7 +300,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressClose) 
             return jsx(closure_0(closure_2[14]).Button, obj);
           }
         }
-        const obj4 = { style: tmp4.disabledPauseIcon, source: _modDef12874 };
+        const obj4 = { style: tmp4.disabledPauseIcon, source: _modDef12910 };
         const tmp12 = closure_8(tmp(1181).Icon, obj4);
         cResult[7] = tmp4.disabledPauseIcon;
         cResult[8] = tmp12;
@@ -345,7 +345,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressClose) 
         cResult[14] = tmp13;
         cResult[15] = tmp21;
       }
-      const obj6 = { style: tmp4.guildIcon, icon: tmp6, size: tmp(5799).GuildIconSizes.XLARGE };
+      const obj6 = { style: tmp4.guildIcon, icon: tmp6, size: tmp(5831).GuildIconSizes.XLARGE };
       const tmp17 = closure_8(GuildIconDefault, obj6);
       cResult[9] = tmp6;
       cResult[10] = tmp4.guildIcon;
@@ -373,7 +373,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressClose) 
     const obj4 = { children: null };
     const obj5 = { style: tmp.disabledView, children: null };
     const guildIconURL = AvatarUtilsDefault.getGuildIconURL({ id: null, icon: null, size: 64, canAnimate: false });
-    const obj6 = { style: tmp.disabledPauseIcon, source: _modDef12874 };
+    const obj6 = { style: tmp.disabledPauseIcon, source: _modDef12910 };
     const items = [closure_1_8(native.Icon, obj6), ];
     const obj7 = { style: tmp.guildIcon, icon: guildIconURL, size: null };
     const obj3 = { id: null, icon: null, size: 64, canAnimate: false };

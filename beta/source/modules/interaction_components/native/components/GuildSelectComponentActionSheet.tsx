@@ -1,20 +1,20 @@
-// Module ID: 14915
-// Function ID: 14916
+// Module ID: 14953
+// Function ID: 14954
 // Name: GuildSelectComponentActionSheet
-// Dependencies: [32, 19, 17, 2067, 5657, 21, 4758, 558, 568, 4989, 1119, 4725, 4910, 1181, 4754, 5799, 11951, 5661, 2]
+// Dependencies: [32, 19, 17, 2067, 5689, 21, 4790, 558, 568, 5021, 1119, 4757, 4942, 1181, 4786, 5831, 11987, 5693, 2]
 
-// Module 14915 (GuildSelectComponentActionSheet)
+// Module 14953 (GuildSelectComponentActionSheet)
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 4989 */;
-import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 11951 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5021 */;
+import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 11987 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import SortedGuildStore from "SortedGuildStore" /* 5657 */;
+import SortedGuildStore from "SortedGuildStore" /* 5689 */;
 
 const require = globalThis.__r;
 
@@ -22,7 +22,7 @@ require = fn;
 let View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles({ guildIdentity: { flexDirection: "row", alignItems: "center" }, iconContainer: { marginRight: 16 }, avatar: { marginRight: 4 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -40,7 +40,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   const tmp5 = first;
   [tmp7, r10022] = first(noop.useState(""), 2);
   if (cResult[0] !== selectedGuild) {
-    const obj4 = { type: tmp(4989).SelectOptionType.GUILD, value: null, label: null, guild: null };
+    const obj4 = { type: tmp(5021).SelectOptionType.GUILD, value: null, label: null, guild: null };
     ({ id: obj3.value, name: obj3.label } = selectedGuild);
     obj4.guild = selectedGuild;
     cResult[0] = selectedGuild;
@@ -392,7 +392,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       let reduced = flattenedGuildIds.reduce((arr, item) => {
         guild = guild.getGuild(item);
         if (null != guild) {
-          const obj = { type: closure_1_0(4989).SelectOptionType.GUILD, value: null, label: null, guild: null };
+          const obj = { type: closure_1_0(5021).SelectOptionType.GUILD, value: null, label: null, guild: null };
           ({ id: obj.value, name: obj.label } = guild);
           obj.guild = guild;
           arr.push(obj);
@@ -404,7 +404,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       let obj = require("AutocompleteUtils");
       reduced = require("AutocompleteUtils").queryGuilds(obj2).map((record) => {
         record = record.record;
-        return { type: closure_1_0(4989).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
+        return { type: closure_1_0(5021).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
       });
       const queryGuildsResult = require("AutocompleteUtils").queryGuilds(obj2);
     }

@@ -1,13 +1,13 @@
-// Module ID: 16074
-// Function ID: 16075
+// Module ID: 16084
+// Function ID: 16085
 // Name: UserSettingsDesignSystemAlertModal
-// Dependencies: [5, 19, 17, 21, 558, 568, 5116, 5112, 4758, 5188, 2]
+// Dependencies: [5, 19, 17, 21, 558, 568, 5148, 5144, 4790, 5220, 2]
 
-// Module 16074 (UserSettingsDesignSystemAlertModal)
+// Module 16084 (UserSettingsDesignSystemAlertModal)
 import c from "c" /* 568 */;
-import useAlertStore from "useAlertStore" /* 5112 */;
-import AlertModal from "AlertModal" /* 5116 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
+import useAlertStore from "useAlertStore" /* 5144 */;
+import AlertModal from "AlertModal" /* 5148 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -88,11 +88,11 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { title: "Are you sure?", content: "This will clear 3 incoming friend requests. The users who sent them won\u2019t be informed.", actions: null };
     let obj3 = { variant: "destructive", onPress: first, text: "Clear" };
-    const items = [jsx(tmp(5116).AlertActionButton, { variant: "destructive", onPress: first, text: "Clear" }, "clear"), ];
+    const items = [jsx(tmp(5148).AlertActionButton, { variant: "destructive", onPress: first, text: "Clear" }, "clear"), ];
     let obj4 = { variant: "secondary", onPress: first, text: "Cancel" };
-    items[1] = jsx(tmp(5116).AlertActionButton, { variant: "secondary", onPress: first, text: "Cancel" }, "cancel");
+    items[1] = jsx(tmp(5148).AlertActionButton, { variant: "secondary", onPress: first, text: "Cancel" }, "cancel");
     obj2.actions = items;
-    const tmp8 = jsx(tmp(5116).AlertModal, { title: "Are you sure?", content: "This will clear 3 incoming friend requests. The users who sent them won\u2019t be informed.", actions: null });
+    const tmp8 = jsx(tmp(5148).AlertModal, { title: "Are you sure?", content: "This will clear 3 incoming friend requests. The users who sent them won\u2019t be informed.", actions: null });
     cResult[1] = tmp8;
     let tmp6 = tmp8;
   } else {
@@ -153,7 +153,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj.actions = items;
   return jsx(AlertModal.AlertModal, { title: "Are you sure?", content: "This will clear 3 incoming friend requests. The users who sent them won\u2019t be informed.", actions: null });
 });
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ container: { padding: 16, flex: 1, alignItems: "center" } });
 ReactCompilerGating = fn(558);
 const size = fn(2);

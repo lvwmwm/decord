@@ -1,15 +1,15 @@
-// Module ID: 12318
-// Function ID: 12319
+// Module ID: 12354
+// Function ID: 12355
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [109, 19, 21, 4758, 580, 558, 568, 12308, 4754, 1181, 7390, 8876, 2]
+// Dependencies: [109, 19, 21, 4790, 580, 558, 568, 12344, 4786, 1181, 7422, 8908, 2]
 
-// Module 12318 (AppLauncherSelectOptionFormRow)
+// Module 12354 (AppLauncherSelectOptionFormRow)
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import _modDef7390 from "module_7390" /* 7390 */;
-import Form from "Form" /* 8876 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 12308 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import _modDef7422 from "module_7422" /* 7422 */;
+import Form from "Form" /* 8908 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 12344 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 require = fn;
 let closure_3 = ["style", "option", "selected", "selectedItemName", "unselectedSubLabel", "autoFocus"];
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { formRow: { flexDirection: "row", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, alignItems: "center", flex: 1 } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -82,8 +82,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((unselectedSubLab
             if (cResult[17] === tmp10) {
               const _Symbol = Symbol;
               if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-                const obj2 = { source: _modDef7390, size: tmp(1181).IconSizes.SMALL_20 };
-                const tmp26 = jsx(tmp(1181).Icon, { source: _modDef7390, size: tmp(1181).IconSizes.SMALL_20 });
+                const obj2 = { source: _modDef7422, size: tmp(1181).IconSizes.SMALL_20 };
+                const tmp26 = jsx(tmp(1181).Icon, { source: _modDef7422, size: tmp(1181).IconSizes.SMALL_20 });
                 cResult[19] = tmp26;
                 let tmp23 = tmp26;
               } else {
@@ -101,7 +101,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((unselectedSubLab
               }
               const obj3 = { start: true, end: true, style: tmp16, label: tmp17, subLabel: cResult[18], trailing: tmp23 };
               const merged = Object.assign(tmp6);
-              const tmp32 = jsx(tmp(8876).FormRow, { start: true, end: true, style: tmp16, label: tmp17, subLabel: cResult[18], trailing: tmp23 });
+              const tmp32 = jsx(tmp(8908).FormRow, { start: true, end: true, style: tmp16, label: tmp17, subLabel: cResult[18], trailing: tmp23 });
               cResult[20] = tmp6;
               cResult[21] = tmp16;
               cResult[22] = tmp17;
@@ -126,7 +126,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((unselectedSubLab
       }
     }
     const obj4 = { variant: str, color: str2, lineClamp: 1, children: tmp5.displayName };
-    const tmp19 = jsx(tmp(4754).Text, { variant: str, color: str2, lineClamp: 1, children: tmp5.displayName });
+    const tmp19 = jsx(tmp(4786).Text, { variant: str, color: str2, lineClamp: 1, children: tmp5.displayName });
     cResult[11] = tmp5.displayName;
     cResult[12] = str;
     cResult[13] = str2;
@@ -168,7 +168,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((unselectedSubLab
     }
   }
   obj2.subLabel = fn;
-  obj2.trailing = jsx(native.Icon, { source: unselectedSubLabel(7390), size: native.IconSizes.SMALL_20 });
+  obj2.trailing = jsx(native.Icon, { source: unselectedSubLabel(7422), size: native.IconSizes.SMALL_20 });
   const merged1 = Object.assign(merged);
   return jsx(Form.FormRow, { start: true, end: true, style: null, label: null, subLabel: null, trailing: null });
 });

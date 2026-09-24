@@ -1,11 +1,11 @@
-// Module ID: 11389
-// Function ID: 11390
+// Module ID: 11425
+// Function ID: 11426
 // Name: ProfileEffectUserPreview
-// Dependencies: [109, 19, 21, 558, 568, 1119, 11390, 2]
+// Dependencies: [109, 19, 21, 558, 568, 1119, 11426, 2]
 
-// Module 11389 (ProfileEffectUserPreview)
+// Module 11425 (ProfileEffectUserPreview)
 import c from "c" /* 568 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 11390 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 11426 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

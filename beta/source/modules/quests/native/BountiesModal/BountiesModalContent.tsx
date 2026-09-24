@@ -1,34 +1,34 @@
-// Module ID: 15321
-// Function ID: 15322
+// Module ID: 15331
+// Function ID: 15332
 // Name: BountiesModalContent
-// Dependencies: [32, 5, 19, 17, 7943, 5663, 15273, 1078, 1089, 21, 558, 568, 1482, 1616, 4758, 580, 504, 9127, 15282, 11645, 15287, 10568, 4726, 15289, 15285, 7959, 5670, 7969, 5668, 11636, 15269, 11906, 15322, 15296, 15319, 15295, 7371, 4497, 4759, 4762, 11621, 1114, 15318, 15283, 7940, 4471, 2]
+// Dependencies: [32, 5, 19, 17, 7975, 5695, 15283, 1078, 1089, 21, 558, 568, 1482, 1616, 4790, 580, 504, 9159, 15292, 11681, 15297, 10604, 4758, 15299, 15295, 7991, 5702, 8001, 5700, 11672, 15279, 11942, 15332, 15306, 15329, 15305, 7403, 4529, 4791, 4794, 11657, 1114, 15328, 15293, 7972, 4503, 2]
 
-// Module 15321 (BountiesModalContent)
+// Module 15331 (BountiesModalContent)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import timing from "timing" /* 4759 */;
-import timingPresets from "timingPresets" /* 4762 */;
-import QuestContent from "QuestContent" /* 5668 */;
-import AdCreativeType from "AdCreativeType" /* 5670 */;
-import QuestDataUtils from "QuestDataUtils" /* 7940 */;
-import AnalyticsActions from "AnalyticsActions" /* 7959 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7969 */;
-import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 11621 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 11636 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 11906 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15269 */;
+import timing from "timing" /* 4791 */;
+import timingPresets from "timingPresets" /* 4794 */;
+import QuestContent from "QuestContent" /* 5700 */;
+import AdCreativeType from "AdCreativeType" /* 5702 */;
+import QuestDataUtils from "QuestDataUtils" /* 7972 */;
+import AnalyticsActions from "AnalyticsActions" /* 7991 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8001 */;
+import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 11657 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 11672 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 11942 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15279 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import BountyStore from "BountyStore" /* 7943 */;
+import BountyStore from "BountyStore" /* 7975 */;
 
 require = fn;
 const View = fn(17).View;
-const QuestsExperimentLocations = fn(5663).QuestsExperimentLocations;
-const BountiesModalConstants = fn(15273);
+const QuestsExperimentLocations = fn(5695).QuestsExperimentLocations;
+const BountiesModalConstants = fn(15283);
 ({ getBountyVideoEndAppStoreSheetHeight: closure_9, getBountyVideoEndPeekTargetScale: c10 } = BountiesModalConstants);
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_11, ComponentActions: closure_12 } = Constants);
@@ -100,7 +100,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return size;
   }, items);
 });
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_20 = createStyles.createStyles(() => {
   const obj = { videoWrapper: { position: "absolute" }, closeButton: { position: "absolute" }, bottomContainer: { position: "absolute", bottom: nativeDefault.space.PX_24, justifyContent: "flex-end" }, bottomContainerFullWidth: null, bottomContainerNotFullWidth: null };
   const rect = { left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16 };
@@ -610,10 +610,10 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const height = sharedValue1(1482)().height;
   const tmp2 = closure_19();
   let obj = sharedValue(568);
-  sharedValue = sharedValue(4497).useSharedValue(1);
-  let obj2 = sharedValue(4497);
-  sharedValue1 = sharedValue(4497).useSharedValue(0);
-  const obj3 = sharedValue(4497);
+  sharedValue = sharedValue(4529).useSharedValue(1);
+  let obj2 = sharedValue(4529);
+  sharedValue1 = sharedValue(4529).useSharedValue(0);
+  const obj3 = sharedValue(4529);
   [tmp6, dependencyMap] = bounty(noop.useState(null), 2);
   bounty = noop.useRef(null);
   asyncGeneratorStep = noop.useRef(0);
@@ -948,7 +948,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((bountyId) => {
               class E {
                 constructor() {
                   obj = { bounty: closure_3, sourceQuestContent };
-                  return jsx(f69301, obj);
+                  return jsx(f69341, obj);
                 }
               }
               let obj3 = { theme: ThemeTypes.DARK, children: null };
@@ -968,7 +968,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((bountyId) => {
             class E {
               constructor() {
                 obj = { bounty: closure_3, sourceQuestContent };
-                return jsx(f69301, obj);
+                return jsx(f69341, obj);
               }
             }
             cResult[9] = id;

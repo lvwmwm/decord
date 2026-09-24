@@ -1,9 +1,9 @@
-// Module ID: 15526
-// Function ID: 15527
+// Module ID: 15536
+// Function ID: 15537
 // Name: AppearanceThemePickerSetting
-// Dependencies: [1186, 8238, 1078, 558, 568, 504, 11594, 1119, 15520, 15527, 2]
+// Dependencies: [1186, 8270, 1078, 558, 568, 504, 11630, 1119, 15530, 15537, 2]
 
-// Module 15526 (AppearanceThemePickerSetting)
+// Module 15536 (AppearanceThemePickerSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
@@ -11,7 +11,7 @@ import ThemeStore from "ThemeStore" /* 1186 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -36,7 +36,7 @@ const route = SettingBuilders.createRoute({
     const intl = util.intl;
     return intl.string(util.t.Ksh3ik);
   },
-  parent: fn(8238).MobileUserSettings.APPEARANCE,
+  parent: fn(8270).MobileUserSettings.APPEARANCE,
   usePredicate: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -56,7 +56,7 @@ const route = SettingBuilders.createRoute({
     const items = [ThemeStore];
     return !initialize.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
   }),
-  useTrailing: fn(15520).useAppearanceSettingTrailing,
+  useTrailing: fn(15530).useAppearanceSettingTrailing,
   screen: {
     route: fn(1078).UserSettingsSections.APPEARANCE_THEME_PICKER,
     getComponent() {

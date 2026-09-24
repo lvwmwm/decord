@@ -1,10 +1,10 @@
-// Module ID: 5344
-// Function ID: 5345
+// Module ID: 5376
+// Function ID: 5377
 // Name: useIsScreenLandscape
 // Dependencies: [19, 1483, 558, 568, 1485, 2]
 // Exports: getIsScreenLandscape
 
-// Module 5344 (useIsScreenLandscape)
+// Module 5376 (useIsScreenLandscape)
 import c from "c" /* 568 */;
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1485 */;
 import noop from "module_19" /* 19 */;

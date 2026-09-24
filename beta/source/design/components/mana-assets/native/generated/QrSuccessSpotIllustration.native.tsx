@@ -1,13 +1,13 @@
-// Module ID: 6616
-// Function ID: 6617
+// Module ID: 6648
+// Function ID: 6649
 // Name: QrSuccessSpotIllustration
-// Dependencies: [21, 558, 568, 6617, 5802, 2]
+// Dependencies: [21, 558, 568, 6649, 5834, 2]
 
-// Module 6616 (QrSuccessSpotIllustration)
+// Module 6648 (QrSuccessSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6617 from "module_6617" /* 6617 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6649 from "module_6649" /* 6649 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const QrSuccessSpotIllustration = ReactCompilerGating.isReactCompilerEnab
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6617 };
+    const obj2 = { uri: _modDef6649 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const QrSuccessSpotIllustration = ReactCompilerGating.isReactCompilerEnab
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6617 };
+  const obj2 = { uri: _modDef6649 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

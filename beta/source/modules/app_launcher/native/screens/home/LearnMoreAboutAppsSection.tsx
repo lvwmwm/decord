@@ -1,18 +1,18 @@
-// Module ID: 12235
-// Function ID: 12236
+// Module ID: 12271
+// Function ID: 12272
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 4455, 2112, 1119, 4754, 5341, 12236, 9519, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 4487, 2112, 1119, 4786, 5373, 12272, 9551, 2]
 
-// Module 12235 (LearnMoreAboutAppsSection)
+// Module 12271 (LearnMoreAboutAppsSection)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import LinkingDefault from "Linking" /* 4455 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 9519 */;
-import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12236 */;
+import LinkingDefault from "Linking" /* 4487 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 9551 */;
+import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12272 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ const View = fn(17).View;
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { marginTop: nativeDefault.space.PX_32, borderRadius: nativeDefault.radii.lg, alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, paddingHorizontal: nativeDefault.space.PX_64 }, body: { textAlign: "center" }, divider: null, linkButton: null };
 let obj3 = { marginTop: nativeDefault.space.PX_32, borderRadius: nativeDefault.radii.lg, alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, paddingHorizontal: nativeDefault.space.PX_64 };
 obj2.divider = { height: nativeDefault.space.PX_16 };
@@ -77,7 +77,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: tmp7 };
-    const tmp18 = timestampProducer(tmp(4754).Text, obj4);
+    const tmp18 = timestampProducer(tmp(4786).Text, obj4);
     cResult[6] = tmp18;
     let tmp16 = tmp18;
   } else {
@@ -85,7 +85,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   }
   if (cResult[7] !== tmp4.body) {
     const obj5 = { variant: "text-xs/normal", color: "text-default", style: tmp4.body, children: tmp6 };
-    const tmp21 = timestampProducer(tmp(4754).Text, obj5);
+    const tmp21 = timestampProducer(tmp(4786).Text, obj5);
     cResult[7] = tmp4.body;
     cResult[8] = tmp21;
     let tmp19 = tmp21;
@@ -105,7 +105,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
     const obj7 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     const intl4 = tmp(1119).intl;
     obj7.children = intl4.string(tmp(1119).t.Ye51oT);
-    const tmp28 = timestampProducer(tmp(4754).Text, obj7);
+    const tmp28 = timestampProducer(tmp(4786).Text, obj7);
     cResult[11] = tmp28;
     let tmp26 = tmp28;
   } else {
@@ -113,7 +113,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   }
   if (cResult[12] !== tmp4.linkButton) {
     const obj8 = { style: tmp4.linkButton, onPress: first, accessibilityRole: "link", accessibilityLabel: tmp8, children: tmp26 };
-    const tmp31 = timestampProducer(tmp(5341).PressableHighlight, obj8);
+    const tmp31 = timestampProducer(tmp(5373).PressableHighlight, obj8);
     cResult[12] = tmp4.linkButton;
     cResult[13] = tmp31;
     let tmp29 = tmp31;
@@ -143,7 +143,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
               }
               return tmp38;
             }
-            const obj10 = { sectionName: tmp(9519).AppLauncherSectionName.NEW_TO_APPS, numItems: 1, numVisibleItems: 1, viewed: visible, children: tmp36 };
+            const obj10 = { sectionName: tmp(9551).AppLauncherSectionName.NEW_TO_APPS, numItems: 1, numVisibleItems: 1, viewed: visible, children: tmp36 };
             const tmp42 = timestampProducer(TrackSectionHeaderDefault, obj10);
             cResult[23] = tmp36;
             cResult[24] = visible;

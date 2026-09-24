@@ -1,11 +1,11 @@
-// Module ID: 13325
-// Function ID: 13326
+// Module ID: 13361
+// Function ID: 13362
 // Name: ChannelAnimationConstants
-// Dependencies: [5187, 2]
+// Dependencies: [5219, 2]
 // Exports: TYPING_ENTERING, TYPING_EXITING
 
-// Module 13325 (ChannelAnimationConstants)
-import spring from "spring" /* 5187 */;
+// Module 13361 (ChannelAnimationConstants)
+import spring from "spring" /* 5219 */;
 import size from "module_2" /* 2 */;
 
 const CHANNEL_SPRING_CONFIG = { damping: 35, stiffness: 275, mass: 1, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };

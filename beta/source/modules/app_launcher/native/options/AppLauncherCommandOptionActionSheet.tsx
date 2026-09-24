@@ -1,11 +1,11 @@
-// Module ID: 12307
-// Function ID: 12308
+// Module ID: 12343
+// Function ID: 12344
 // Name: AppLauncherCommandOptionActionSheet
-// Dependencies: [109, 19, 17, 1487, 21, 4758, 580, 558, 568, 7444, 4725, 1181, 7396, 7397, 2]
+// Dependencies: [109, 19, 17, 1487, 21, 4790, 580, 558, 568, 7476, 4757, 1181, 7428, 7429, 2]
 
-// Module 12307 (AppLauncherCommandOptionActionSheet)
+// Module 12343 (AppLauncherCommandOptionActionSheet)
 import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ let closure_3 = ["option", "children", "contentContainerStyles", "scrollable", "
 const View = fn(17).View;
 const DEFAULT_CONTENT_PADDING = fn(1487).DEFAULT_CONTENT_PADDING;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { actionSheetBackground: { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND }, titleContainer: { backgroundColor: "transparent" }, titleWrapper: { alignItems: "center" }, subtitleWrapper: { paddingHorizontal: 12, textAlign: "center" }, contentContainer: { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingTop: DEFAULT_CONTENT_PADDING, flex: 1 } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -65,7 +65,7 @@ export const AppLauncherCommandOptionActionSheet = ReactCompilerGating.isReactCo
           }
         }
     };
-    obj3.children = jsx(tmp(7444).ActionSheetCloseButton, {
+    obj3.children = jsx(tmp(7476).ActionSheetCloseButton, {
       onPress() {
           ActionSheetActionCreatorsDefault.hideActionSheet();
           onDismiss = onDismiss.onDismiss;
@@ -127,7 +127,7 @@ export const AppLauncherCommandOptionActionSheet = ReactCompilerGating.isReactCo
                 obj5.startExpanded = tmp14;
                 obj5.header = tmp24;
                 obj5.children = tmp27;
-                const tmp36 = jsx(tmp(7397).BottomSheet, {}, tmp6.name);
+                const tmp36 = jsx(tmp(7429).BottomSheet, {}, tmp6.name);
                 cResult[24] = tmp6.name;
                 cResult[25] = tmp7;
                 cResult[26] = tmp13;
@@ -184,7 +184,7 @@ export const AppLauncherCommandOptionActionSheet = ReactCompilerGating.isReactCo
   const obj3 = { titleContainerStyle: tmp2.titleContainer, titleWrapperStyle: tmp2.titleWrapper, subtitleStyle: tmp2.subtitleWrapper, leading: null, title: null, subtitle: null, trailing: null };
   const obj4 = {
     style: { alignSelf: "flex-start" },
-    children: jsx(merged(7444).ActionSheetCloseButton, {
+    children: jsx(merged(7476).ActionSheetCloseButton, {
       onPress() {
         ActionSheetActionCreatorsDefault.hideActionSheet();
         const onDismiss = merged.onDismiss;
@@ -194,7 +194,7 @@ export const AppLauncherCommandOptionActionSheet = ReactCompilerGating.isReactCo
       }
     })
   };
-  obj3.leading = <View style={{ alignSelf: "flex-start" }}>{jsx(merged(7444).ActionSheetCloseButton, {
+  obj3.leading = <View style={{ alignSelf: "flex-start" }}>{jsx(merged(7476).ActionSheetCloseButton, {
     onPress() {
       ActionSheetActionCreatorsDefault.hideActionSheet();
       const onDismiss = merged.onDismiss;
@@ -205,10 +205,10 @@ export const AppLauncherCommandOptionActionSheet = ReactCompilerGating.isReactCo
   })}</View>;
   ({ displayName: obj2.title, displayDescription: obj2.subtitle } = option);
   obj3.trailing = jsx(merged(1181).Spacer, { size: 24 });
-  obj.header = jsx(merged(7396).BottomSheetTitleHeader, { titleContainerStyle: tmp2.titleContainer, titleWrapperStyle: tmp2.titleWrapper, subtitleStyle: tmp2.subtitleWrapper, leading: null, title: null, subtitle: null, trailing: null });
+  obj.header = jsx(merged(7428).BottomSheetTitleHeader, { titleContainerStyle: tmp2.titleContainer, titleWrapperStyle: tmp2.titleWrapper, subtitleStyle: tmp2.subtitleWrapper, leading: null, title: null, subtitle: null, trailing: null });
   const obj9 = { style: null, children };
   const items = [tmp2.contentContainer, contentContainerStyles];
   obj9.style = items;
   obj.children = <View style={null}>{children}</View>;
-  return jsx(merged(7397).BottomSheet, {}, option.name);
+  return jsx(merged(7429).BottomSheet, {}, option.name);
 });

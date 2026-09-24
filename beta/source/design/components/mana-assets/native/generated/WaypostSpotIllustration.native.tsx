@@ -1,13 +1,13 @@
-// Module ID: 6808
-// Function ID: 6809
+// Module ID: 6840
+// Function ID: 6841
 // Name: WaypostSpotIllustration
-// Dependencies: [21, 558, 568, 6809, 5802, 2]
+// Dependencies: [21, 558, 568, 6841, 5834, 2]
 
-// Module 6808 (WaypostSpotIllustration)
+// Module 6840 (WaypostSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6809 from "module_6809" /* 6809 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6841 from "module_6841" /* 6841 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const WaypostSpotIllustration = ReactCompilerGating.isReactCompilerEnable
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6809 };
+    const obj2 = { uri: _modDef6841 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const WaypostSpotIllustration = ReactCompilerGating.isReactCompilerEnable
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6809 };
+  const obj2 = { uri: _modDef6841 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

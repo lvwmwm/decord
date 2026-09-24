@@ -1,19 +1,19 @@
-// Module ID: 9011
-// Function ID: 9012
+// Module ID: 9043
+// Function ID: 9044
 // Name: GameProfileSkeletonPulse
-// Dependencies: [19, 4750, 4497, 4759, 558, 568, 504, 2]
+// Dependencies: [19, 4782, 4529, 4791, 558, 568, 504, 2]
 
-// Module 9011 (GameProfileSkeletonPulse)
+// Module 9043 (GameProfileSkeletonPulse)
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 const require = fn;
 let c4 = 0.1;
 let c5 = 1300;
-const Easing = fn(4497).Easing;
-const inOutResult = Easing.inOut(fn(4497).Easing.quad);
+const Easing = fn(4529).Easing;
+const inOutResult = Easing.inOut(fn(4529).Easing.quad);
 const metroRequire = inOutResult;
-const ReanimatedRexport = fn(4497);
+const ReanimatedRexport = fn(4529);
 const pulsePhase = ReanimatedRexport.makeMutable(0);
 let c8 = 0;
 let c9 = false;
@@ -348,7 +348,7 @@ export const useSkeletonPulseStyle = ReactCompilerGating.isReactCompilerEnabled(
   T.__closure = { shouldReduceMotion: stateFromStores, MAX_OPACITY: v01, getPulseOpacity, pulsePhase, phaseOffset: result };
   T.__workletHash = 3992024948852;
   T.__initData = __initData;
-  return stateFromStores(4497).useAnimatedStyle(T);
+  return stateFromStores(4529).useAnimatedStyle(T);
 }) : ((arg0) => {
   const items = [AccessibilityStore];
   stateFromStores = stateFromStores(504).useStateFromStores(items, () => AccessibilityStore.useReducedMotion);
@@ -441,5 +441,5 @@ export const useSkeletonPulseStyle = ReactCompilerGating.isReactCompilerEnabled(
   fn.__closure = { shouldReduceMotion: stateFromStores, MAX_OPACITY: v01, getPulseOpacity, pulsePhase, phaseOffset: result };
   fn.__workletHash = 15886965849973;
   fn.__initData = __initData2;
-  return stateFromStores(4497).useAnimatedStyle(fn);
+  return stateFromStores(4529).useAnimatedStyle(fn);
 });

@@ -1,11 +1,11 @@
-// Module ID: 14090
-// Function ID: 14091
+// Module ID: 14127
+// Function ID: 14128
 // Name: SystemResponsiveness
-// Dependencies: [7989, 4813, 12, 2]
+// Dependencies: [8021, 4845, 12, 2]
 
-// Module 14090 (SystemResponsiveness)
+// Module 14127 (SystemResponsiveness)
 import _modDef12 from "module_12" /* 12 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4813 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4845 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/SystemResponsiveness.tsx");

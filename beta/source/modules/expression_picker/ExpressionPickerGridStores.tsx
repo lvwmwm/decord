@@ -1,19 +1,19 @@
-// Module ID: 10441
-// Function ID: 10442
+// Module ID: 10480
+// Function ID: 10481
 // Name: ExpressionPickerGridStores
-// Dependencies: [1247, 4630, 1252, 2]
+// Dependencies: [1247, 4662, 1252, 2]
 // Exports: default
 
-// Module 10441 (ExpressionPickerGridStores)
+// Module 10480 (ExpressionPickerGridStores)
 import identity_mod from "module_1247" /* 1247 */;
-import module_4630_mod from "module_4630" /* 4630 */;
+import module_4662_mod from "module_4662" /* 4662 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = Object.freeze({ inspectedExpressionPosition: { rowIndex: 0, columnIndex: 0 }, hasInteracted: false, activeCategoryIndex: 0, searchPlaceholder: null, bottomPosition: null, analyticsId: null });
 let identity = identity_mod;
 identity = identity.createWithEqualityFn();
-let module_4630 = module_4630_mod;
-let withEqualityFnResult = identity(module_4630.subscribeWithSelector(() => closure_1_2));
+let module_4662 = module_4662_mod;
+let withEqualityFnResult = identity(module_4662.subscribeWithSelector(() => closure_1_2));
 let store = {
   useStore: withEqualityFnResult,
   getState() {
@@ -50,8 +50,8 @@ let store = {
 };
 let identity = identity_mod;
 identity = identity.createWithEqualityFn();
-let module_4630 = module_4630_mod;
-const withEqualityFn1Result = identity(module_4630.subscribeWithSelector(() => closure_1_2));
+let module_4662 = module_4662_mod;
+const withEqualityFn1Result = identity(module_4662.subscribeWithSelector(() => closure_1_2));
 const store1 = {
   useStore: withEqualityFn1Result,
   getState() {
@@ -88,8 +88,8 @@ const store1 = {
 };
 let identity = identity_mod;
 identity = identity.createWithEqualityFn();
-let module_4630 = module_4630_mod;
-const withEqualityFn2Result = identity(module_4630.subscribeWithSelector(() => closure_1_2));
+let module_4662 = module_4662_mod;
+const withEqualityFn2Result = identity(module_4662.subscribeWithSelector(() => closure_1_2));
 const store2 = {
   useStore: withEqualityFn2Result,
   getState() {
@@ -126,8 +126,8 @@ const store2 = {
 };
 let identity = identity_mod;
 identity = identity.createWithEqualityFn();
-let module_4630 = module_4630_mod;
-const withEqualityFn3Result = identity(module_4630.subscribeWithSelector(() => closure_1_2));
+let module_4662 = module_4662_mod;
+const withEqualityFn3Result = identity(module_4662.subscribeWithSelector(() => closure_1_2));
 let c0 = withEqualityFn3Result;
 const store3 = {
   useStore: withEqualityFn3Result,
@@ -168,7 +168,7 @@ const result = size.fileFinishedImporting("modules/expression_picker/ExpressionP
 export default function createStore() {
   const withEqualityFn = _undefined(1247).createWithEqualityFn();
   let obj = _undefined(1247);
-  const withEqualityFnResult = withEqualityFn(_undefined(4630).subscribeWithSelector(() => closure_1_2));
+  const withEqualityFnResult = withEqualityFn(_undefined(4662).subscribeWithSelector(() => closure_1_2));
   _undefined = withEqualityFnResult;
   const store = {
     useStore: withEqualityFnResult,

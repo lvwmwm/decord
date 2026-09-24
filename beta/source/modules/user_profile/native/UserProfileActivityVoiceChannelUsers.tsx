@@ -1,14 +1,14 @@
-// Module ID: 13322
-// Function ID: 13323
+// Module ID: 13358
+// Function ID: 13359
 // Name: UserProfileActivityVoiceChannelUsers
-// Dependencies: [19, 4798, 21, 558, 568, 8490, 504, 4910, 1181, 5822, 1119, 11405, 2]
+// Dependencies: [19, 4830, 21, 558, 568, 8522, 504, 4942, 1181, 5854, 1119, 11441, 2]
 
-// Module 13322 (UserProfileActivityVoiceChannelUsers)
+// Module 13358 (UserProfileActivityVoiceChannelUsers)
 import util from "util" /* 1119 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
-import UserProfileStackedActionSheet from "UserProfileStackedActionSheet" /* 11405 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
+import UserProfileStackedActionSheet from "UserProfileStackedActionSheet" /* 11441 */;
 import noop from "module_19" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
 
 const UserProfileStackedActionSheetDefault = UserProfileStackedActionSheet;
 
@@ -20,7 +20,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   user = user.user;
   ({ channel, onPress, start, end } = user);
   const obj = user(568);
-  const avatarDecoration = user(8490).useAvatarDecoration(user, channel.guild_id);
+  const avatarDecoration = user(8522).useAvatarDecoration(user, channel.guild_id);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [PresenceStore];
     cResult[0] = items;
@@ -38,7 +38,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   } else {
     tmp7 = cResult[2];
   }
-  const obj2 = user(8490);
+  const obj2 = user(8522);
   const stateFromStoresObject = user(504).useStateFromStoresObject(first, tmp7);
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
   if (cResult[3] === channel.guild_id) {
@@ -67,7 +67,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                   }
                 }
                 const obj3 = { onPress, label: tmp9, icon: tmp11, start, end };
-                const tmp16 = jsx(tmp(5822).TableRow, { onPress, label: tmp9, icon: tmp11, start, end });
+                const tmp16 = jsx(tmp(5854).TableRow, { onPress, label: tmp9, icon: tmp11, start, end });
                 cResult[14] = end;
                 cResult[15] = onPress;
                 cResult[16] = start;
@@ -103,8 +103,8 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   user = user.user;
   const channel = user.channel;
   ({ onPress, start, end } = user);
-  const avatarDecoration = user(8490).useAvatarDecoration(user, channel.guild_id);
-  const obj = user(8490);
+  const avatarDecoration = user(8522).useAvatarDecoration(user, channel.guild_id);
+  const obj = user(8522);
   const items = [PresenceStore];
   const stateFromStoresObject = user(504).useStateFromStoresObject(items, () => ({ status: PresenceStore.getStatus(user.id), isMobileOnline: PresenceStore.isMobileOnline(user.id), isVROnline: PresenceStore.isVROnline(user.id) }));
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
@@ -114,7 +114,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   obj3.icon = jsx(user(1181).Avatar, { user, avatarDecoration, size: user(1181).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true });
   obj3.start = start;
   obj3.end = end;
-  return jsx(user(5822).TableRow, { onPress, label: null, icon: null, start: null, end: null });
+  return jsx(user(5854).TableRow, { onPress, label: null, icon: null, start: null, end: null });
 });
 ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -156,14 +156,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp11;
       }
       const obj2 = { title: first, onBack, scrollable: true, children: tmp8 };
-      const tmp14 = jsx(onPressUser(11405), { title: first, onBack, scrollable: true, children: tmp8 });
+      const tmp14 = jsx(onPressUser(11441), { title: first, onBack, scrollable: true, children: tmp8 });
       cResult[8] = onBack;
       cResult[9] = tmp8;
       cResult[10] = tmp14;
       tmp11 = tmp14;
     }
     const obj3 = { data: users, keyExtractor: tmp6, renderItem: tmp7 };
-    const tmp10 = jsx(tmp(11405).UserProfileStackedActionSheetList, { data: users, keyExtractor: tmp6, renderItem: tmp7 });
+    const tmp10 = jsx(tmp(11441).UserProfileStackedActionSheetList, { data: users, keyExtractor: tmp6, renderItem: tmp7 });
     cResult[5] = tmp7;
     cResult[6] = users;
     cResult[7] = tmp10;

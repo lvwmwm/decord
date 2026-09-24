@@ -1,13 +1,13 @@
-// Module ID: 5756
-// Function ID: 5757
+// Module ID: 5788
+// Function ID: 5789
 // Name: MemberVerificationAlert
-// Dependencies: [109, 19, 17, 21, 4758, 580, 558, 568, 4754, 5207, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 580, 558, 568, 4786, 5239, 2]
 
-// Module 5756 (MemberVerificationAlert)
+// Module 5788 (MemberVerificationAlert)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import common_AlertDefault from "common/Alert" /* 5207 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import common_AlertDefault from "common/Alert" /* 5239 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ let closure_3 = ["header", "icon", "subtitle", "buttons"];
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { headerImage: { marginLeft: "auto", marginRight: "auto", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.round, padding: 12, marginTop: 8, marginBottom: 8 }, header: { marginTop: 8, marginBottom: 8, textAlign: "center" }, subtitle: { lineHeight: 18, marginBottom: 8, textAlign: "center" }, buttons: { marginTop: 16, marginBottom: 8, gap: 12 } };
 let closure_8 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -100,7 +100,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp21 = null;
       if (null != tmp8) {
         const obj4 = { style: tmp12.subtitle, variant: "text-sm/medium", color: "text-default", children: tmp8 };
-        tmp21 = timestampProducer(tmp(4754).Text, obj4);
+        tmp21 = timestampProducer(tmp(4786).Text, obj4);
       }
       cResult[12] = tmp12.subtitle;
       cResult[13] = tmp8;
@@ -108,7 +108,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp20 = tmp21;
     }
     const obj5 = { style: tmp12.header, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: tmp6 };
-    const tmp19 = timestampProducer(tmp(4754).Heading, obj5);
+    const tmp19 = timestampProducer(tmp(4786).Heading, obj5);
     cResult[9] = tmp6;
     cResult[10] = tmp12.header;
     cResult[11] = tmp19;

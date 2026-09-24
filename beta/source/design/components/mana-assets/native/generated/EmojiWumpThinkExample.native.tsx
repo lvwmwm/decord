@@ -1,13 +1,13 @@
-// Module ID: 6202
-// Function ID: 6203
+// Module ID: 6234
+// Function ID: 6235
 // Name: EmojiWumpThinkExample
-// Dependencies: [21, 558, 568, 6203, 5802, 2]
+// Dependencies: [21, 558, 568, 6235, 5834, 2]
 
-// Module 6202 (EmojiWumpThinkExample)
+// Module 6234 (EmojiWumpThinkExample)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6203 from "module_6203" /* 6203 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6235 from "module_6235" /* 6235 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const EmojiWumpThinkExample = ReactCompilerGating.isReactCompilerEnabled(
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6203 };
+    const obj2 = { uri: _modDef6235 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const EmojiWumpThinkExample = ReactCompilerGating.isReactCompilerEnabled(
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6203 };
+  const obj2 = { uri: _modDef6235 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

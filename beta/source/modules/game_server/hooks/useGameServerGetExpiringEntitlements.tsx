@@ -1,12 +1,12 @@
-// Module ID: 12724
-// Function ID: 12725
+// Module ID: 12760
+// Function ID: 12761
 // Name: useGameServerGetExpiringEntitlements
-// Dependencies: [19, 4668, 558, 568, 504, 12656, 2]
+// Dependencies: [19, 4700, 558, 568, 504, 12692, 2]
 
-// Module 12724 (useGameServerGetExpiringEntitlements)
-import getExpiringGuildEntitlements from "getExpiringGuildEntitlements" /* 12656 */;
+// Module 12760 (useGameServerGetExpiringEntitlements)
+import getExpiringGuildEntitlements from "getExpiringGuildEntitlements" /* 12692 */;
 import noop from "module_19" /* 19 */;
-import GameServerStore from "GameServerStore" /* 4668 */;
+import GameServerStore from "GameServerStore" /* 4700 */;
 
 const require = globalThis.__r;
 
@@ -51,8 +51,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const values = Object.values(entitlements1);
     if (0 !== values.length) {
-      let expiringGuildEntitlements = tmp(12656).getExpiringGuildEntitlements(values);
-      const tmpResult2 = tmp(12656);
+      let expiringGuildEntitlements = tmp(12692).getExpiringGuildEntitlements(values);
+      const tmpResult2 = tmp(12692);
     } else {
       const _Symbol = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {

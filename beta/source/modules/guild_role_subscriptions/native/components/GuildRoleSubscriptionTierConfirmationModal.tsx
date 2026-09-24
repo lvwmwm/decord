@@ -1,26 +1,26 @@
-// Module ID: 18227
-// Function ID: 18228
+// Module ID: 18237
+// Function ID: 18238
 // Name: GuildRoleSubscriptionTierConfirmationModal
-// Dependencies: [5, 32, 19, 17, 18192, 21, 4758, 580, 14169, 18212, 18196, 1119, 10051, 5802, 4754, 18228, 2]
+// Dependencies: [5, 32, 19, 17, 18202, 21, 4790, 580, 14206, 18222, 18206, 1119, 10090, 5834, 4786, 18238, 2]
 // Exports: default
 
-// Module 18227 (GuildRoleSubscriptionTierConfirmationModal)
+// Module 18237 (GuildRoleSubscriptionTierConfirmationModal)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import FormStylesDefault from "FormStyles" /* 14169 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18196 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 18212 */;
-import GuildRoleSubscriptionListingPreview from "GuildRoleSubscriptionListingPreview" /* 18228 */;
+import FormStylesDefault from "FormStyles" /* 14206 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18206 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 18222 */;
+import GuildRoleSubscriptionListingPreview from "GuildRoleSubscriptionListingPreview" /* 18238 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18192 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18202 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { description: { paddingHorizontal: 16 }, coverPhotoContainer: { marginHorizontal: 16 }, coverPhoto: null };
 let size = { height: 114, width: "100%", borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
 obj2.coverPhoto = size;
@@ -123,26 +123,26 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
       let obj4 = { style: tmp5.header, children: null };
       const intl3 = tmp6(1119).intl;
       obj4.children = intl3.string(tmp6(1119).t["3S8gA7"]);
-      const items1 = [closure_1_8(tmp3(10051), obj4), ];
+      const items1 = [closure_1_8(tmp3(10090), obj4), ];
       const obj5 = { style: tmp2.coverPhotoContainer, children: null };
       const obj6 = { style: tmp2.coverPhoto, resizeMode: "cover", source: first };
-      obj5.children = closure_1_8(tmp3(5802), obj6);
+      obj5.children = closure_1_8(tmp3(5834), obj6);
       items1[1] = closure_1_8(View, obj5);
       obj3.children = items1;
       tmp13Result = tmp13(tmp16, obj3);
-      const tmp3Result = tmp3(10051);
+      const tmp3Result = tmp3(10090);
     }
     const obj7 = { children: null };
     const items2 = [tmp13Result, , ];
     const obj8 = { style: tmp5.header, children: null };
     const intl4 = tmp6(1119).intl;
     obj8.children = intl4.string(tmp6(1119).t["74JctW"]);
-    items2[1] = closure_1_8(tmp3(10051), obj8);
+    items2[1] = closure_1_8(tmp3(10090), obj8);
     const obj9 = { style: tmp2.description, variant: "text-md/medium", color: "interactive-text-active", children: _slicedToArray(RoleTierEditStore.useGroupDescriptionState(), 1)[0] };
-    items2[2] = closure_1_8(tmp6(4754).Text, obj9);
+    items2[2] = closure_1_8(tmp6(4786).Text, obj9);
     obj7.children = items2;
     flag = tmp13(tmp16, obj7);
-    const tmp3Result2 = tmp3(10051);
+    const tmp3Result2 = tmp3(10090);
   }
   const items3 = [flag, closure_1_8(GuildRoleSubscriptionListingPreview.GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
   obj2.children = items3;

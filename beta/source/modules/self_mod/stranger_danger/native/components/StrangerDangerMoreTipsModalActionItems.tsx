@@ -1,21 +1,21 @@
-// Module ID: 10388
-// Function ID: 10389
+// Module ID: 10427
+// Function ID: 10428
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 4409, 1376, 10357, 21, 558, 568, 504, 4603, 10369, 10009, 1119, 7211, 7209, 8192, 5903, 10389, 2]
+// Dependencies: [32, 19, 4441, 1376, 10396, 21, 558, 568, 504, 4635, 10408, 10048, 1119, 7243, 7241, 8224, 5935, 10428, 2]
 
-// Module 10388 (StrangerDangerMoreTipsModalActionItems)
+// Module 10427 (StrangerDangerMoreTipsModalActionItems)
 import util from "util" /* 1119 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import DenyIcon from "DenyIcon" /* 8192 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10009 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10369 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import DenyIcon from "DenyIcon" /* 8224 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10048 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10408 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-const SafetyWarningTypes = fn(10357).SafetyWarningTypes;
+const SafetyWarningTypes = fn(10396).SafetyWarningTypes;
 let jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -513,9 +513,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     obj3.description = stringResult;
     obj3.onClick = first ? callback1 : callback;
     if (first) {
-      let EyeSlashIcon = tmp11(7211).EyeIcon;
+      let EyeSlashIcon = tmp11(7243).EyeIcon;
     } else {
-      EyeSlashIcon = tmp11(7209).EyeSlashIcon;
+      EyeSlashIcon = tmp11(7241).EyeSlashIcon;
     }
     obj3.icon = <EyeSlashIcon />;
     obj3.disabled = isBlocked;

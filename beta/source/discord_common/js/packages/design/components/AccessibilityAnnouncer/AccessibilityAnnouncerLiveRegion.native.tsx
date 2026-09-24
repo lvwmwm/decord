@@ -1,10 +1,10 @@
-// Module ID: 4473
-// Function ID: 4474
+// Module ID: 4505
+// Function ID: 4506
 // Name: AccessibilityAnnouncerLiveRegion
-// Dependencies: [19, 17, 21, 4474, 558, 568, 2]
+// Dependencies: [19, 17, 21, 4506, 558, 568, 2]
 // Exports: updateAccessibilityAnnouncerLiveRegionMessage
 
-// Module 4473 (AccessibilityAnnouncerLiveRegion)
+// Module 4505 (AccessibilityAnnouncerLiveRegion)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
@@ -12,8 +12,8 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet, Text: c2 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const module_4474 = fn(4474);
-const state = module_4474.create(() => ({ message: "duration", version: false }));
+const module_4506 = fn(4506);
+const state = module_4506.create(() => ({ message: "duration", version: false }));
 const styles = StyleSheet.create({ liveRegion: { position: "absolute", top: 0, left: 0, width: 1, height: 1, opacity: 0 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

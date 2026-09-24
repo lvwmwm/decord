@@ -1,19 +1,19 @@
-// Module ID: 16245
-// Function ID: 16246
+// Module ID: 16255
+// Function ID: 16256
 // Name: DevWidget
-// Dependencies: [19, 7960, 578, 21, 4758, 580, 558, 568, 4497, 10344, 12163, 6891, 5187, 5191, 14847, 15844, 5341, 16246, 15843, 2]
+// Dependencies: [19, 7992, 578, 21, 4790, 580, 558, 568, 4529, 10383, 12199, 6923, 5219, 5223, 14885, 15854, 5373, 16256, 15853, 2]
 
-// Module 16245 (DevWidget)
+// Module 16255 (DevWidget)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import spring from "spring" /* 5187 */;
-import springPresets from "springPresets" /* 5191 */;
-import Pressables from "Pressables" /* 5341 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 15844 */;
-import VEVOODefault from "VEVOO" /* 16246 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import spring from "spring" /* 5219 */;
+import springPresets from "springPresets" /* 5223 */;
+import Pressables from "Pressables" /* 5373 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 15854 */;
+import VEVOODefault from "VEVOO" /* 16256 */;
 import noop from "module_19" /* 19 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7960 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7992 */;
 
 const require = globalThis.__r;
 
@@ -21,7 +21,7 @@ require = fn;
 const DEV_WIDGET_SIZE = fn(578).DEV_WIDGET_SIZE;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { widgetContainer: { position: "absolute" }, widget: null };
 let size = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, justifyContent: "center", alignItems: "center", height: DEV_WIDGET_SIZE, width: DEV_WIDGET_SIZE, borderRadius: nativeDefault.radii.xl };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_MOBILE_NAVIGATOR_X);
@@ -482,7 +482,7 @@ let closure_21 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() =>
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp8 = timestampProducer(tmp(15844).StaffBadgeIcon, { size: "md", color: "white" });
+    const tmp8 = timestampProducer(tmp(15854).StaffBadgeIcon, { size: "md", color: "white" });
     cResult[1] = tmp8;
     let tmp6 = tmp8;
   } else {
@@ -490,7 +490,7 @@ let closure_21 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() =>
   }
   if (cResult[2] !== tmp4.widget) {
     const obj2 = { style: tmp4.widget, accessibilityRole: "button", onPress: first, activeOpacity: 0.5, children: tmp6 };
-    const tmp11 = timestampProducer(tmp(5341).PressableOpacity, obj2);
+    const tmp11 = timestampProducer(tmp(5373).PressableOpacity, obj2);
     cResult[2] = tmp4.widget;
     cResult[3] = tmp11;
     let tmp9 = tmp11;

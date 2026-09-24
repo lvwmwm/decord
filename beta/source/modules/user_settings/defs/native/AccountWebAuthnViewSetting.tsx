@@ -1,16 +1,16 @@
-// Module ID: 15065
-// Function ID: 15066
+// Module ID: 15074
+// Function ID: 15075
 // Name: AccountWebAuthnViewSetting
-// Dependencies: [19, 14921, 1376, 8238, 1078, 558, 568, 5110, 1119, 6836, 504, 11594, 14924, 2]
+// Dependencies: [19, 14959, 1376, 8270, 1078, 558, 568, 5142, 1119, 6868, 504, 11630, 14962, 2]
 
-// Module 15065 (AccountWebAuthnViewSetting)
+// Module 15074 (AccountWebAuthnViewSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6836 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6868 */;
 import noop from "module_19" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 14921 */;
+import WebAuthnStore from "WebAuthnStore" /* 14959 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -63,12 +63,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   return flag;
 }, []));
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (!WebAuthnStore.hasFetchedCredentials()) {
-    const webAuthnCredentials = tmp(6836).fetchWebAuthnCredentials();
-    const tmpResult = tmp(6836);
+    const webAuthnCredentials = tmp(6868).fetchWebAuthnCredentials();
+    const tmpResult = tmp(6868);
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [tmp4];
@@ -100,13 +100,13 @@ const route = SettingBuilders.createRoute({
     const intl = util.intl;
     return intl.string(util.t.y7SXYX);
   },
-  parent: fn(8238).MobileUserSettings.ACCOUNT,
+  parent: fn(8270).MobileUserSettings.ACCOUNT,
   usePreNavigationAction: tmp2,
   useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     if (!WebAuthnStore.hasFetchedCredentials()) {
-      const webAuthnCredentials = tmp(6836).fetchWebAuthnCredentials();
-      const tmpResult = tmp(6836);
+      const webAuthnCredentials = tmp(6868).fetchWebAuthnCredentials();
+      const tmpResult = tmp(6868);
     }
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const items = [tmp4];

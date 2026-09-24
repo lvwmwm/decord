@@ -1,21 +1,21 @@
-// Module ID: 7464
-// Function ID: 7465
+// Module ID: 7496
+// Function ID: 7497
 // Name: getChannelIdForGuildTransition
-// Dependencies: [2048, 7343, 2045, 2100, 2067, 2099, 7465, 1078, 2052, 7469, 7471, 7473, 5276, 2070, 2]
+// Dependencies: [2048, 7375, 2045, 2100, 2067, 2099, 7497, 1078, 2052, 7501, 7503, 7505, 5308, 2070, 2]
 // Exports: getChannelIdForGuildTransition
 
-// Module 7464 (getChannelIdForGuildTransition)
+// Module 7496 (getChannelIdForGuildTransition)
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 5276 */;
-import OnboardingHomeUtils from "OnboardingHomeUtils" /* 7469 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7473 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 5308 */;
+import OnboardingHomeUtils from "OnboardingHomeUtils" /* 7501 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7505 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7343 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 7375 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildChannelStore from "GuildChannelStore" /* 2100 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7465 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7497 */;
 
 require = fn;
 const ME = fn(1078).ME;

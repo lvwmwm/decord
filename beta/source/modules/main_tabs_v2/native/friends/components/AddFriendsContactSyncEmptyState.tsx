@@ -1,17 +1,17 @@
-// Module ID: 17243
-// Function ID: 17244
+// Module ID: 17253
+// Function ID: 17254
 // Name: AddFriendsContactSyncEmptyState
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 12823, 12840, 1119, 4754, 12827, 5188, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 12859, 12876, 1119, 4786, 12863, 5220, 2]
 
-// Module 17243 (AddFriendsContactSyncEmptyState)
+// Module 17253 (AddFriendsContactSyncEmptyState)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12823 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12827 */;
-import _modDef12840 from "module_12840" /* 12840 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12859 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12863 */;
+import _modDef12876 from "module_12876" /* 12876 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -19,7 +19,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { content: { alignItems: "center", marginTop: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg }, headerImage: null, title: null, subtitle: null, subtitleText: null, trailing: null };
 let size = { height: 135, width: 216, marginTop: nativeDefault.space.PX_24, marginBottom: nativeDefault.space.PX_16 };
 obj2.headerImage = size;
@@ -49,7 +49,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] !== tmp4.headerImage) {
-    const obj2 = { resizeMode: "contain", style: tmp4.headerImage, source: _modDef12840 };
+    const obj2 = { resizeMode: "contain", style: tmp4.headerImage, source: _modDef12876 };
     const tmp10 = hasOwnProperty(React4, obj2);
     cResult[1] = tmp4.headerImage;
     cResult[2] = tmp10;
@@ -67,7 +67,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[4] !== tmp4.title) {
     const obj3 = { style: tmp4.title, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: tmp11 };
-    const tmp15 = hasOwnProperty(tmp(4754).Text, obj3);
+    const tmp15 = hasOwnProperty(tmp(4786).Text, obj3);
     cResult[4] = tmp4.title;
     cResult[5] = tmp15;
     let tmp13 = tmp15;
@@ -77,7 +77,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   ({ subtitle, subtitleText } = tmp4);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const intl2 = tmp(1119).intl;
-    const obj4 = { learnMoreHook: tmp(12827).handleOpenLearnMoreLink };
+    const obj4 = { learnMoreHook: tmp(12863).handleOpenLearnMoreLink };
     const formatResult = intl2.format(tmp(1119).t.OXdOPf, obj4);
     cResult[6] = formatResult;
     let tmp16 = formatResult;
@@ -86,7 +86,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[7] !== tmp4.subtitleText) {
     const obj5 = { style: subtitleText, variant: "text-sm/medium", children: tmp16 };
-    const tmp20 = hasOwnProperty(tmp(4754).Text, obj5);
+    const tmp20 = hasOwnProperty(tmp(4786).Text, obj5);
     cResult[7] = tmp4.subtitleText;
     cResult[8] = tmp20;
     let tmp18 = tmp20;
@@ -103,7 +103,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const intl3 = tmp(1119).intl;
       obj6.text = intl3.string(tmp(1119).t.QUXSpo);
       obj6.onPress = first;
-      const tmp25 = hasOwnProperty(tmp(5188).Button, obj6);
+      const tmp25 = hasOwnProperty(tmp(5220).Button, obj6);
       cResult[12] = tmp25;
       let tmp23 = tmp25;
     } else {
@@ -150,7 +150,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const tmp = closure_7();
   const obj = { style: tmp.content, children: null };
-  const items = [hasOwnProperty(React4, { resizeMode: "contain", style: tmp.headerImage, source: _modDef12840 }), , , ];
+  const items = [hasOwnProperty(React4, { resizeMode: "contain", style: tmp.headerImage, source: _modDef12876 }), , , ];
   const obj3 = { style: tmp.title, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t["/G+nci"]);
@@ -158,7 +158,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj4 = { style: tmp.subtitle, children: null };
   const obj5 = { style: tmp.subtitleText, variant: "text-sm/medium", children: null };
   const intl2 = util.intl;
-  const obj2 = { resizeMode: "contain", style: tmp.headerImage, source: _modDef12840 };
+  const obj2 = { resizeMode: "contain", style: tmp.headerImage, source: _modDef12876 };
   obj5.children = intl2.format(util.t.OXdOPf, { learnMoreHook: ContactSyncUtils.handleOpenLearnMoreLink });
   obj4.children = hasOwnProperty(Text_Text.Text, obj5);
   items[2] = hasOwnProperty(React3, obj4);

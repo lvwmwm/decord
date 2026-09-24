@@ -1,11 +1,11 @@
-// Module ID: 17292
-// Function ID: 17293
+// Module ID: 17302
+// Function ID: 17303
 // Name: InstantInviteSelfMeasurer
-// Dependencies: [19, 17, 21, 4758, 558, 568, 11237, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 11273, 2]
 
-// Module 17292 (InstantInviteSelfMeasurer)
+// Module 17302 (InstantInviteSelfMeasurer)
 import c from "c" /* 568 */;
-import InstantInvite from "InstantInvite" /* 11237 */;
+import InstantInvite from "InstantInvite" /* 11273 */;
 import noop from "module_19" /* 19 */;
 
 const InstantInviteDefault = InstantInvite;
@@ -13,7 +13,7 @@ const InstantInviteDefault = InstantInvite;
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ container: { position: "absolute", opacity: 0 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

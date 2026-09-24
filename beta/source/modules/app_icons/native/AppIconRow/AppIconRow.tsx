@@ -1,16 +1,16 @@
-// Module ID: 15792
-// Function ID: 15793
+// Module ID: 15802
+// Function ID: 15803
 // Name: AppIconRow
-// Dependencies: [32, 19, 21, 1119, 4758, 580, 558, 568, 9436, 12, 4479, 15789, 5904, 5822, 2]
+// Dependencies: [32, 19, 21, 1119, 4790, 580, 558, 568, 9468, 12, 4511, 15799, 5936, 5854, 2]
 
-// Module 15792 (AppIconRow)
+// Module 15802 (AppIconRow)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4479 */;
-import AppIconTypes from "AppIconTypes" /* 9436 */;
-import AppIconDefault from "AppIcon" /* 15789 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4511 */;
+import AppIconTypes from "AppIconTypes" /* 9468 */;
+import AppIconDefault from "AppIcon" /* 15799 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -40,7 +40,7 @@ const items = [
     return intl.string(util.t.RnMLvl);
   }
 ];
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { icon: { borderRadius: nativeDefault.radii.md } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -66,9 +66,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onLongPress) => 
       } else {
         tmp12 = cResult[4];
       }
-      const radioA11yNative = tmp(4479).useRadioA11yNative(tmp12);
+      const radioA11yNative = tmp(4511).useRadioA11yNative(tmp12);
       ({ accessibilityRole, accessibilityState } = radioA11yNative);
-      if (id === tmp(9436).PremiumAppIconIds.BRAND_INVERTED) {
+      if (id === tmp(9468).PremiumAppIconIds.BRAND_INVERTED) {
         return null;
       }
       if (!icon.isHidden) {
@@ -119,7 +119,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onLongPress) => 
                   }
                 }
                 const obj4 = { icon: tmp15, label: first, onLongPress: tmp19, onPress: tmp20, accessibilityRole, accessibilityState, trailing: tmp21 };
-                const tmp25 = jsx(tmp(5822).TableRow, { icon: tmp15, label: first, onLongPress: tmp19, onPress: tmp20, accessibilityRole, accessibilityState, trailing: tmp21 }, id);
+                const tmp25 = jsx(tmp(5854).TableRow, { icon: tmp15, label: first, onLongPress: tmp19, onPress: tmp20, accessibilityRole, accessibilityState, trailing: tmp21 }, id);
                 cResult[17] = accessibilityRole;
                 cResult[18] = accessibilityState;
                 cResult[19] = id;
@@ -142,7 +142,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onLongPress) => 
                     return onSelect(id);
                   }
                 }
-                const tmp22 = jsx(tmp(5904).FormRadio, { selected: null });
+                const tmp22 = jsx(tmp(5936).FormRadio, { selected: null });
                 const obj5 = { selected: null };
               }
               cResult[14] = tmp11;
@@ -177,7 +177,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onLongPress) => 
         cResult[7] = tmp18;
         tmp15 = tmp18;
       }
-      const tmpResult = tmp(4479);
+      const tmpResult = tmp(4511);
     }
   }
   if (id === AppIconTypes.PremiumAppIconIds.PIRATE) {
@@ -231,9 +231,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onLongPress) => 
         let tmp10Result2 = null;
       }
       obj2.trailing = tmp10Result2;
-      tmp10Result = tmp10(tmp3(5822).TableRow, obj2, id);
+      tmp10Result = tmp10(tmp3(5854).TableRow, obj2, id);
     }
     const obj4 = { selected: tmp7 };
-    tmp10Result2 = tmp10(tmp3(5904).FormRadio, obj4);
+    tmp10Result2 = tmp10(tmp3(5936).FormRadio, obj4);
   }
 });

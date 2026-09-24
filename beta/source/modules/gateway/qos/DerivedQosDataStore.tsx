@@ -1,12 +1,12 @@
 // Module ID: 501
 // Function ID: 502
 // Name: DerivedQosDataStore
-// Dependencies: [502, 504, 14477, 577, 2]
+// Dependencies: [502, 504, 14515, 577, 2]
 
 // Module 501 (DerivedQosDataStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import DerivedQosDataStorage from "DerivedQosDataStorage" /* 14477 */;
+import DerivedQosDataStorage from "DerivedQosDataStorage" /* 14515 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;

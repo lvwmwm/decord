@@ -1,13 +1,13 @@
-// Module ID: 9146
-// Function ID: 9147
+// Module ID: 9178
+// Function ID: 9179
 // Name: useProductDisableState
-// Dependencies: [4424, 558, 568, 504, 1081, 1119, 2]
+// Dependencies: [4456, 558, 568, 504, 1081, 1119, 2]
 
-// Module 9146 (useProductDisableState)
+// Module 9178 (useProductDisableState)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1081 */;
-import SubscriptionStore from "SubscriptionStore" /* 4424 */;
+import SubscriptionStore from "SubscriptionStore" /* 4456 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);

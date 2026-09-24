@@ -1,21 +1,21 @@
-// Module ID: 16456
-// Function ID: 16457
+// Module ID: 16466
+// Function ID: 16467
 // Name: VoiceChannelUserLimit
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1181, 14062, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1181, 14099, 4786, 2]
 
-// Module 16456 (VoiceChannelUserLimit)
+// Module 16466 (VoiceChannelUserLimit)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import _modDef14062 from "module_14062" /* 14062 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import _modDef14099 from "module_14099" /* 14099 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let rect = { videoIcon: null, wrapper: null, left: null, mid: null, right: null };
 let size = { height: 16, width: 16, marginRight: 4, tintColor: nativeDefault.colors.VOICE_CHANNEL_USER_LIMIT_ICON };
 rect.videoIcon = size;
@@ -51,7 +51,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     }
     if (cResult[5] !== tmp10) {
       const obj2 = { variant: "text-xs/medium", lineClamp: 1, color: "voice-channel-user-limit-text", children: tmp10 };
-      const tmp14 = React4(tmp(4754).Text, obj2);
+      const tmp14 = React4(tmp(4786).Text, obj2);
       cResult[5] = tmp10;
       cResult[6] = tmp14;
       let tmp12 = tmp14;
@@ -83,7 +83,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         }
         if (cResult[15] !== tmp23) {
           const obj4 = { variant: "text-xs/medium", lineClamp: 1, color: "voice-channel-user-limit-text", children: tmp23 };
-          const tmp27 = React4(tmp(4754).Text, obj4);
+          const tmp27 = React4(tmp(4786).Text, obj4);
           cResult[15] = tmp23;
           cResult[16] = tmp27;
           let tmp25 = tmp27;
@@ -135,7 +135,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   let tmp7 = null;
   if (videoLimit) {
-    const obj8 = { source: _modDef14062, size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, style: rect.videoIcon };
+    const obj8 = { source: _modDef14099, size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, style: rect.videoIcon };
     tmp7 = React4(tmp(1181).Icon, obj8);
   }
   cResult[0] = rect.videoIcon;
@@ -149,7 +149,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   const obj2 = { style: rect.left, children: null };
   let tmp3 = null;
   if (videoLimit.videoLimit) {
-    const obj3 = { source: _modDef14062, size: native.Icon.Sizes.REFRESH_SMALL_16, style: rect.videoIcon };
+    const obj3 = { source: _modDef14099, size: native.Icon.Sizes.REFRESH_SMALL_16, style: rect.videoIcon };
     tmp3 = React4(native.Icon, obj3);
   }
   const items = [tmp3, ];

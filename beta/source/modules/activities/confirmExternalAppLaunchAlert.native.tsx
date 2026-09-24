@@ -1,17 +1,17 @@
-// Module ID: 9605
-// Function ID: 9606
+// Module ID: 9637
+// Function ID: 9638
 // Name: confirmExternalAppLaunchAlert
-// Dependencies: [19, 17, 2008, 21, 4758, 558, 568, 9606, 1119, 4754, 4455, 5188, 5110, 2]
+// Dependencies: [19, 17, 2008, 21, 4790, 558, 568, 9638, 1119, 4786, 4487, 5220, 5142, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 9605 (confirmExternalAppLaunchAlert)
+// Module 9637 (confirmExternalAppLaunchAlert)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import LinkingDefault from "Linking" /* 4455 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import _modDef9606 from "module_9606" /* 9606 */;
+import LinkingDefault from "Linking" /* 4487 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import _modDef9638 from "module_9638" /* 9638 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 const PRIVATE_APPS_HELP_ARTICLE = fn(2008).PRIVATE_APPS_HELP_ARTICLE;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ alertContainer: { display: "flex", alignItems: "center", padding: 8 }, alertEyebrowText: { marginTop: 40, textAlign: "center" }, alertTitleText: { marginTop: 16, textAlign: "center" }, alertSubtitleText: { marginTop: 16, textAlign: "center" }, announcementBirb: { width: 90, height: 100, position: "absolute", top: -66 }, linkWrapper: { marginTop: 8 } });
 let ReactCompilerGating = fn(558);
 let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
@@ -28,7 +28,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) =>
   application = application.application;
   const tmp4 = closure_8();
   if (cResult[0] !== tmp4.announcementBirb) {
-    const obj2 = { source: _modDef9606, style: tmp4.announcementBirb };
+    const obj2 = { source: _modDef9638, style: tmp4.announcementBirb };
     const tmp9 = timestampProducer(React3, obj2);
     cResult[0] = tmp4.announcementBirb;
     cResult[1] = tmp9;
@@ -46,7 +46,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) =>
   }
   if (cResult[3] !== tmp4.alertEyebrowText) {
     const obj3 = { style: tmp4.alertEyebrowText, variant: "eyebrow", children: tmp10 };
-    const tmp14 = timestampProducer(tmp(4754).Text, obj3);
+    const tmp14 = timestampProducer(tmp(4786).Text, obj3);
     cResult[3] = tmp4.alertEyebrowText;
     cResult[4] = tmp14;
     let tmp12 = tmp14;
@@ -78,7 +78,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) =>
     }
     if (cResult[11] !== tmp4.alertSubtitleText) {
       const obj5 = { style: tmp4.alertSubtitleText, variant: "text-sm/normal", children: tmp19 };
-      const tmp23 = timestampProducer(tmp(4754).Text, obj5);
+      const tmp23 = timestampProducer(tmp(4786).Text, obj5);
       cResult[11] = tmp4.alertSubtitleText;
       cResult[12] = tmp23;
       let tmp21 = tmp23;
@@ -117,7 +117,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) =>
 }) : ((activityName) => {
   const tmp = closure_8();
   const obj = { style: tmp.alertContainer, children: null };
-  const items = [timestampProducer(React3, { source: _modDef9606, style: tmp.announcementBirb }), , , ];
+  const items = [timestampProducer(React3, { source: _modDef9638, style: tmp.announcementBirb }), , , ];
   const obj3 = { style: tmp.alertEyebrowText, variant: "eyebrow", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t["06YebE"]);
@@ -150,7 +150,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { variant: "secondary", size: "sm", onPress: first, text: null };
     const intl = tmp(1119).intl;
     obj2.text = intl.string(tmp(1119).t.E0gf5l);
-    const tmp8 = timestampProducer(tmp(5188).Button, obj2);
+    const tmp8 = timestampProducer(tmp(5220).Button, obj2);
     cResult[1] = tmp8;
     let tmp6 = tmp8;
   } else {

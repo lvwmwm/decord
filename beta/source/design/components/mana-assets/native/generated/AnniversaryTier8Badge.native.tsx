@@ -1,13 +1,13 @@
-// Module ID: 5976
-// Function ID: 5977
+// Module ID: 6008
+// Function ID: 6009
 // Name: AnniversaryTier8Badge
-// Dependencies: [21, 558, 568, 5977, 5802, 2]
+// Dependencies: [21, 558, 568, 6009, 5834, 2]
 
-// Module 5976 (AnniversaryTier8Badge)
+// Module 6008 (AnniversaryTier8Badge)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef5977 from "module_5977" /* 5977 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6009 from "module_6009" /* 6009 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const AnniversaryTier8Badge = ReactCompilerGating.isReactCompilerEnabled(
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef5977 };
+    const obj2 = { uri: _modDef6009 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const AnniversaryTier8Badge = ReactCompilerGating.isReactCompilerEnabled(
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5977 };
+  const obj2 = { uri: _modDef6009 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

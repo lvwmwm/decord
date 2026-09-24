@@ -1,16 +1,16 @@
-// Module ID: 8695
-// Function ID: 8696
+// Module ID: 8727
+// Function ID: 8728
 // Name: SafetyHubUtils
-// Dependencies: [502, 8696, 1078, 4352, 4908, 1119, 8697, 558, 568, 504, 2]
+// Dependencies: [502, 8728, 1078, 4384, 4940, 1119, 8729, 558, 568, 504, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps
 
-// Module 8695 (SafetyHubUtils)
+// Module 8727 (SafetyHubUtils)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import _modDef4352 from "module_4352" /* 4352 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4908 */;
-import SafetyHubModels from "SafetyHubModels" /* 8697 */;
+import _modDef4384 from "module_4384" /* 4384 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 4940 */;
+import SafetyHubModels from "SafetyHubModels" /* 8729 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
@@ -48,7 +48,7 @@ function parseMessageEmbedForProps(fields) {
     return obj;
   }
 }
-const SafetyHubConstants = fn(8696);
+const SafetyHubConstants = fn(8728);
 ({ AppealIngestionSignal: closure_4, SafetySystemNotificationCtaType: hasOwnProperty, SafetySystemNotificationEmbedKeys: metroRequire } = SafetyHubConstants);
 const Constants = fn(1078);
 ({ AbortCodes: closure_7, MessageAttachmentFlags: closure_8 } = Constants);
@@ -57,7 +57,7 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
 export const getClassificationRelativeIncidentTime = function getClassificationRelativeIncidentTime(timestamp) {
-  return _modDef4352().to(_modDef4352(timestamp));
+  return _modDef4384().to(_modDef4384(timestamp));
 };
 export const getSpoilerFlagsForAttachment = function getSpoilerFlagsForAttachment(filename) {
   if (obj.isImageFile(filename.filename)) {

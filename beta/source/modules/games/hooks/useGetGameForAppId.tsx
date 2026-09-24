@@ -1,19 +1,19 @@
-// Module ID: 9979
-// Function ID: 9980
+// Module ID: 10011
+// Function ID: 10012
 // Name: useGetGameForAppId
-// Dependencies: [19, 2004, 558, 568, 7415, 7553, 1374, 504, 2]
+// Dependencies: [19, 2004, 558, 568, 7447, 7585, 1374, 504, 2]
 
-// Module 9979 (useGetGameForAppId)
+// Module 10011 (useGetGameForAppId)
 import c from "c" /* 568 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7415 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7447 */;
 import noop from "module_19" /* 19 */;
 import GameStore from "GameStore" /* 2004 */;
 
 const require = globalThis.__r;
 const useGetOrFetchApplicationsDefault = useGetOrFetchApplications;
 
-const useGame = tmp(7553);
+const useGame = tmp(7585);
 require = fn;
 fn(558);
 const ReactCompilerGating = fn(558);
@@ -97,7 +97,7 @@ export const useGetGamesForAppIds = ReactCompilerGating.isReactCompilerEnabled()
     cResult[1] = found1;
   } else {
     _require = tmp4;
-    const games = tmp(7553).useGames(tmp4);
+    const games = tmp(7585).useGames(tmp4);
     const _Symbol2 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const items = [GameStore];
@@ -117,11 +117,11 @@ export const useGetGamesForAppIds = ReactCompilerGating.isReactCompilerEnabled()
     } else {
       tmp13 = cResult[5];
     }
-    const tmpResult = tmp(7553);
+    const tmpResult = tmp(7585);
     return tmp(504).useStateFromStoresArray(tmp11, tmp13);
   }
 }) : ((arg0) => {
-  const tmp = memo(7415)(arg0);
+  const tmp = memo(7447)(arg0);
   _require = tmp;
   const items = [tmp];
   memo = noop.useMemo(() => {

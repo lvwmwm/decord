@@ -1,34 +1,34 @@
-// Module ID: 12857
-// Function ID: 12858
+// Module ID: 12893
+// Function ID: 12894
 // Name: GuildTemplates
-// Dependencies: [32, 19, 17, 12854, 7221, 1078, 21, 4758, 5897, 580, 558, 568, 1119, 4754, 1488, 1616, 12830, 1245, 5188, 12858, 12480, 5903, 7371, 2]
+// Dependencies: [32, 19, 17, 12890, 7253, 1078, 21, 4790, 5929, 580, 558, 568, 1119, 4786, 1488, 1616, 12866, 1245, 5220, 12894, 12516, 5935, 7403, 2]
 
-// Module 12857 (GuildTemplates)
+// Module 12893 (GuildTemplates)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ListSelectionItemDefault from "ListSelectionItem" /* 12480 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12830 */;
-import CreateGuildIcons from "CreateGuildIcons" /* 12858 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ListSelectionItemDefault from "ListSelectionItem" /* 12516 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12866 */;
+import CreateGuildIcons from "CreateGuildIcons" /* 12894 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-let CreateGuildConstants = fn(12854);
+let CreateGuildConstants = fn(12890);
 ({ getGuildTemplatesMap: closure_7, GuildTemplateId: closure_8 } = CreateGuildConstants);
-CreateGuildConstants = fn(7221);
+CreateGuildConstants = fn(7253);
 ({ CreateGuildModalStates: closure_9, GuildTemplateTriggers: c10, NUXGuildTemplatesAnalytics: closure_11 } = CreateGuildConstants);
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_12, AnalyticsLocations: map1 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4758);
-let obj2 = { flex: { flex: 1 }, contentContainer: { marginTop: fn(5897).NAV_BAR_HEIGHT }, scrollContainer: null, sections: null, headerContainer: null, headerTitle: null, headerDescription: null, footerSafeAreaContainer: null, footerContainer: null, footerTitle: null };
-let obj3 = { marginTop: fn(5897).NAV_BAR_HEIGHT };
+const createStyles = fn(4790);
+let obj2 = { flex: { flex: 1 }, contentContainer: { marginTop: fn(5929).NAV_BAR_HEIGHT }, scrollContainer: null, sections: null, headerContainer: null, headerTitle: null, headerDescription: null, footerSafeAreaContainer: null, footerContainer: null, footerTitle: null };
+let obj3 = { marginTop: fn(5929).NAV_BAR_HEIGHT };
 obj2.scrollContainer = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 let obj4 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.sections = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING, gap: 24 };
@@ -55,7 +55,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp4.headerTitle) {
     const obj2 = { style: headerTitle, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: first };
-    const tmp9 = state(tmp(4754).Text, obj2);
+    const tmp9 = state(tmp(4786).Text, obj2);
     cResult[1] = tmp4.headerTitle;
     cResult[2] = tmp9;
     let tmp7 = tmp9;
@@ -72,7 +72,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[4] !== tmp4.headerDescription) {
     const obj3 = { style: tmp4.headerDescription, variant: "text-sm/medium", color: "text-default", children: tmp10 };
-    const tmp14 = state(tmp(4754).Text, obj3);
+    const tmp14 = state(tmp(4786).Text, obj3);
     cResult[4] = tmp4.headerDescription;
     cResult[5] = tmp14;
     let tmp12 = tmp14;
@@ -266,8 +266,8 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((trigger) => {
   const intl3 = tmp2(1119).intl;
   obj4.children = intl3.string(trigger(1119).t["N+Mi/U"]);
   const items2 = [
-    closure_14(trigger(4754).Text, obj4),
-    closure_14(trigger(5188).Button, {
+    closure_14(trigger(4786).Text, obj4),
+    closure_14(trigger(5220).Button, {
       variant: "primary",
       grow: true,
       text: stringResult,

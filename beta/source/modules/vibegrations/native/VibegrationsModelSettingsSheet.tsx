@@ -1,18 +1,18 @@
-// Module ID: 17065
-// Function ID: 17066
+// Module ID: 17075
+// Function ID: 17076
 // Name: VibegrationsModelSettingsSheet
-// Dependencies: [19, 17, 13364, 21, 558, 568, 504, 7396, 1119, 3682, 16948, 4754, 7449, 5186, 580, 2]
+// Dependencies: [19, 17, 13400, 21, 558, 568, 504, 7428, 1119, 3714, 16958, 4786, 7481, 5218, 580, 2]
 
-// Module 17065 (VibegrationsModelSettingsSheet)
+// Module 17075 (VibegrationsModelSettingsSheet)
 import nativeDefault from "native" /* 580 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import VibegrationsEffortPickerDefault from "VibegrationsEffortPicker" /* 16948 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import VibegrationsEffortPickerDefault from "VibegrationsEffortPicker" /* 16958 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 13364 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 13400 */;
 
 const require = fn;
 const View = fn(17).View;
-const sendModelSettings = fn(13364).sendModelSettings;
+const sendModelSettings = fn(13400).sendModelSettings;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const ReactCompilerGating = fn(558);
@@ -134,8 +134,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       }
       const obj2 = { title: null };
       const intl = tmp(1119).intl;
-      obj2.title = intl.string(_modDef3682["2NWMqY"]);
-      const tmp23 = closure_7(tmp(7396).BottomSheetTitleHeader, obj2);
+      obj2.title = intl.string(_modDef3714["2NWMqY"]);
+      const tmp23 = closure_7(tmp(7428).BottomSheetTitleHeader, obj2);
       cResult[14] = tmp23;
     } else {
       class T {
@@ -180,14 +180,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     const obj4 = { header: null, children: null };
     const obj5 = { title: null };
     const intl = tmp(1119).intl;
-    obj5.title = intl.string(_modDef3682["2NWMqY"]);
-    obj4.header = closure_7(tmp(7396).BottomSheetTitleHeader, obj5);
+    obj5.title = intl.string(_modDef3714["2NWMqY"]);
+    obj4.header = closure_7(tmp(7428).BottomSheetTitleHeader, obj5);
     const obj6 = { direction: "vertical", spacing: nativeDefault.space.PX_16, children: null };
     const obj7 = { settings, choices, disabled: tmp5, onChange: tmp6 };
     const items6 = [closure_7(VibegrationsEffortPickerDefault, obj7), ];
     const intl2 = tmp(1119).intl;
     const string = intl2.string;
-    const tmp12 = _modDef3682;
+    const tmp12 = _modDef3714;
     if (tmp5) {
       let stringResult = string(tmp12.t5mTfU);
     } else {
@@ -195,11 +195,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     }
     const obj8 = { children: null };
     const obj9 = { variant: "text-xs/normal", color: "text-muted", children: stringResult };
-    items6[1] = closure_7(tmp(4754).Text, obj9);
+    items6[1] = closure_7(tmp(4786).Text, obj9);
     obj6.children = items6;
-    obj8.children = closure_8(tmp(5186).Stack, obj6);
+    obj8.children = closure_8(tmp(5218).Stack, obj6);
     obj4.children = closure_7(View, obj8);
-    return closure_7(tmp(7449).ActionSheet, obj4);
+    return closure_7(tmp(7481).ActionSheet, obj4);
   }
   const obj3 = projectId(504);
 });

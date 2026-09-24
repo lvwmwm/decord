@@ -1,17 +1,15 @@
 // Module ID: 8823
 // Function ID: 8824
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8822, 8817, 8757]
+// Dependencies: [41, 42, 93, 95, 98, 8804]
 
 // Module 8823
-import _modDef8757 from "module_8757" /* 8757 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
+import _modDef8804 from "module_8804" /* 8804 */;
+import _classCallCheck_mod from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
-import noop from "module_19" /* 19 */;
 
-const Polyline = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,18 +29,18 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const jsx = fn(21).jsx;
-class Polyline {
+let _classCallCheck = _classCallCheck_mod;
+class FeMergeNode {
   constructor() {
     self = this;
     items = [...arguments];
     closure_0 = undefined;
-    tmp = c2(this, Polyline);
+    tmp = closure_0(this, FeMergeNode);
     items1 = [...items];
-    tmp2 = closure_4;
-    obj = closure_4(Polyline);
-    tmp3 = closure_3;
-    if (metroRequire()) {
+    tmp2 = c2;
+    obj = c2(FeMergeNode);
+    tmp3 = closure_1;
+    if (closure_3()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
       constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
@@ -51,40 +49,25 @@ class Polyline {
     }
     tmp3Result = tmp3(self, constructResult);
     closure_0 = tmp3Result;
-    tmp3Result.setNativeProps = (points) => {
-      points = points.points;
-      if (points) {
-        const _HermesInternal = HermesInternal;
-        points.d = "M" + Polyline(8822)(points);
-      }
-      if (closure_0.root) {
-        const root = closure_0.root;
-        root.setNativeProps(points);
+    tmp3Result.setNativeProps = () => {
+      const parent = props.props.parent;
+      if (parent) {
+        parent.forceUpdate();
       }
     };
     return tmp3Result;
   }
 }
-_inherits(Polyline, _modDef8757);
+_classCallCheck = FeMergeNode;
+_inherits(FeMergeNode, _modDef8804);
 const entry = {
   key: "render",
   value: function render() {
-    const props = this.props;
-    const points = props.points;
-    const obj = { ref: this.refMethod, d: null };
-    let combined = points;
-    if (points) {
-      const _HermesInternal = HermesInternal;
-      combined = "M" + Polyline(8822)(points);
-    }
-    obj.d = combined;
-    const merged = Object.assign(props);
-    return jsx(Polyline(8817), { ref: this.refMethod, d: null });
+    return null;
   }
 };
 let items = [entry];
-const importDefaultResultResult = _createClass(Polyline, items);
-importDefaultResultResult.displayName = "Polyline";
-importDefaultResultResult.defaultProps = { points: "" };
+const importDefaultResultResult = _createClass(FeMergeNode, items);
+importDefaultResultResult.displayName = "FeMergeNode";
 
 export default importDefaultResultResult;

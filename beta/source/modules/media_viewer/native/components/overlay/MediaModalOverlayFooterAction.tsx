@@ -1,15 +1,15 @@
-// Module ID: 13266
-// Function ID: 13267
+// Module ID: 13302
+// Function ID: 13303
 // Name: MediaModalOverlayFooterAction
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1368, 5176, 13259, 5188, 7371, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1368, 5208, 13295, 5220, 7403, 2]
 
-// Module 13266 (MediaModalOverlayFooterAction)
+// Module 13302 (MediaModalOverlayFooterAction)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5176 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
-import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 13259 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5208 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
+import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 13295 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,7 +17,7 @@ get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { paddingTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 }, buttonContainer: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 obj2.buttonContainer = { paddingHorizontal: nativeDefault.space.PX_16 };
@@ -56,7 +56,7 @@ export const MediaModalOverlayFooterAction = ReactCompilerGating.isReactCompiler
             const rect = { bottom: true, left: true, right: true, style: tmp4.container, children: null };
             const items = [tmp7, tmp21];
             rect.children = items;
-            const tmp27 = React5(tmp(7371).SafeAreaPaddingView, rect);
+            const tmp27 = React5(tmp(7403).SafeAreaPaddingView, rect);
             cResult[11] = tmp4.container;
             cResult[12] = tmp7;
             cResult[13] = tmp21;
@@ -71,7 +71,7 @@ export const MediaModalOverlayFooterAction = ReactCompilerGating.isReactCompiler
           tmp21 = tmp24;
         }
         ({ text: obj6.text, onPress: obj6.onPress } = footerAction);
-        const tmp20 = hasOwnProperty(tmp(5188).Button, { size: "lg", text: null, onPress: null });
+        const tmp20 = hasOwnProperty(tmp(5220).Button, { size: "lg", text: null, onPress: null });
         cResult[5] = footerAction.onPress;
         cResult[6] = footerAction.text;
         cResult[7] = tmp20;

@@ -1,10 +1,10 @@
-// Module ID: 18147
-// Function ID: 18148
+// Module ID: 18157
+// Function ID: 18158
 // Name: useCreatorMonetizationAcceptTerms
-// Dependencies: [5, 32, 19, 2063, 2067, 1376, 504, 7505, 18148, 4660, 2]
+// Dependencies: [5, 32, 19, 2063, 2067, 1376, 504, 7537, 18158, 4692, 2]
 // Exports: default
 
-// Module 18147 (useCreatorMonetizationAcceptTerms)
+// Module 18157 (useCreatorMonetizationAcceptTerms)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -76,12 +76,12 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
               if (null != tmp4) {
                 c4 = 4;
                 c5 = 1;
-                const obj6 = { value: tmp47(18148).acceptCreatorMonetizationTerms(tmp55, tmp42), done: false };
+                const obj6 = { value: tmp47(18158).acceptCreatorMonetizationTerms(tmp55, tmp42), done: false };
                 return obj6;
               } else {
                 c4 = 3;
                 c5 = 1;
-                const obj7 = { value: tmp47(18148).acceptCreatorMonetizationTermsV2(tmp55), done: false };
+                const obj7 = { value: tmp47(18158).acceptCreatorMonetizationTermsV2(tmp55), done: false };
                 return obj7;
               }
             }
@@ -91,7 +91,7 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
           if (2 === tmp8) {
             dependencyMap = 1;
             closure_128_0 = tmp47;
-            const tmp25 = new tmp4(4660)(closure_128_0);
+            const tmp25 = new tmp4(4692)(closure_128_0);
             closure_129_3(tmp25);
           } else {
             if (3 === tmp8) {

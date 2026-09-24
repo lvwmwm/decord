@@ -1,18 +1,18 @@
-// Module ID: 16983
-// Function ID: 16984
+// Module ID: 16993
+// Function ID: 16994
 // Name: AppLauncherActionSheet
-// Dependencies: [32, 19, 1487, 21, 558, 568, 4497, 11469, 9519, 11470, 12342, 12209, 7397, 7399, 2]
+// Dependencies: [32, 19, 1487, 21, 558, 568, 4529, 11505, 9551, 11506, 12378, 12245, 7429, 7431, 2]
 
-// Module 16983 (AppLauncherActionSheet)
+// Module 16993 (AppLauncherActionSheet)
 import c from "c" /* 568 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import ActionSheetContextDefault from "ActionSheetContext" /* 7399 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 9519 */;
-import AppLauncherContext from "AppLauncherContext" /* 11469 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11470 */;
-import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 12209 */;
-import getAppDMApplication from "getAppDMApplication" /* 12342 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import ActionSheetContextDefault from "ActionSheetContext" /* 7431 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 9551 */;
+import AppLauncherContext from "AppLauncherContext" /* 11505 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11506 */;
+import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 12245 */;
+import getAppDMApplication from "getAppDMApplication" /* 12378 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

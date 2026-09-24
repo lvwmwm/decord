@@ -1,10 +1,10 @@
-// Module ID: 12731
-// Function ID: 12732
+// Module ID: 12767
+// Function ID: 12768
 // Name: useGuildPowerupOnShowMore
-// Dependencies: [19, 558, 568, 12680, 2]
+// Dependencies: [19, 558, 568, 12716, 2]
 
-// Module 12731 (useGuildPowerupOnShowMore)
-import openGuildPowerupsBottomSheetDefault from "openGuildPowerupsBottomSheet" /* 12680 */;
+// Module 12767 (useGuildPowerupOnShowMore)
+import openGuildPowerupsBottomSheetDefault from "openGuildPowerupsBottomSheet" /* 12716 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

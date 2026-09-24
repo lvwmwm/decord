@@ -1,18 +1,18 @@
-// Module ID: 7652
-// Function ID: 7653
+// Module ID: 7684
+// Function ID: 7685
 // Name: LinkButton
-// Dependencies: [19, 21, 4758, 558, 568, 4754, 5341, 2]
+// Dependencies: [19, 21, 4790, 558, 568, 4786, 5373, 2]
 
-// Module 7652 (LinkButton)
+// Module 7684 (LinkButton)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c2, jsxs: c3 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ defaultContainerStyle: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }, disabledContainerStyle: { opacity: 0.5 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -68,7 +68,7 @@ export const LinkButton = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
             const obj2 = { style: tmp5, hitSlop: tmp7, accessibilityRole: "button", activeOpacity: 0.2, disabled, onPress, children: null };
             const items = [tmp8, iconRight];
             obj2.children = items;
-            const tmp13 = React3(tmp(5341).PressableOpacity, obj2);
+            const tmp13 = React3(tmp(5373).PressableOpacity, obj2);
             cResult[10] = disabled;
             cResult[11] = iconRight;
             cResult[12] = onPress;
@@ -80,7 +80,7 @@ export const LinkButton = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
         }
       }
       const obj3 = { style: textStyle, variant: str, color: str2, children: text };
-      const tmp10 = React2(tmp(4754).Text, obj3);
+      const tmp10 = React2(tmp(4786).Text, obj3);
       cResult[5] = text;
       cResult[6] = str2;
       cResult[7] = textStyle;

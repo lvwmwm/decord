@@ -1,14 +1,14 @@
-// Module ID: 12778
-// Function ID: 12779
+// Module ID: 12814
+// Function ID: 12815
 // Name: Tabs/Tabs
-// Dependencies: [19, 17, 2113, 21, 4497, 4758, 580, 558, 568, 5187, 9660, 12779, 6891, 1368, 2]
+// Dependencies: [19, 17, 2113, 21, 4529, 4790, 580, 558, 568, 5219, 9692, 12815, 6923, 1368, 2]
 
-// Module 12778 (Tabs/Tabs)
+// Module 12814 (Tabs/Tabs)
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4497 */;
-import spring from "spring" /* 5187 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
-import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9660 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4529 */;
+import spring from "spring" /* 5219 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6923 */;
+import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9692 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
 
@@ -27,7 +27,7 @@ let c9 = 0.04;
 let c10 = 0.9;
 let c11 = 16;
 let closure_12 = { mass: 0.3, damping: 13, stiffness: 100, restDisplacementThreshold: 0.001, overshootClamping: true };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_13 = createStyles.createStyles((gap, arg1) => {
   const obj = { container: { display: "flex", flexGrow: 1, minWidth: "100%", flexDirection: "row", alignItems: "center", borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1 }, controlsContainer: null, indicatorContainer: null, indicator: null };
   const obj2 = { display: "flex", flexGrow: 1, minWidth: "100%", flexDirection: "row", alignItems: "center", borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1 };
@@ -262,11 +262,11 @@ export const Tabs = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
         }
         if (tmp9) {
           if (scrollOffset + pageWidth < sum + width) {
-            tmp17(4497).runOnJS(scrollToOffset)(sum + c11);
-            const tmp17Result = tmp17(4497);
+            tmp17(4529).runOnJS(scrollToOffset)(sum + c11);
+            const tmp17Result = tmp17(4529);
           } else if (sum < scrollOffset) {
-            tmp17(4497).runOnJS(scrollToOffset)(sum - c11);
-            const tmp17Result2 = tmp17(4497);
+            tmp17(4529).runOnJS(scrollToOffset)(sum - c11);
+            const tmp17Result2 = tmp17(4529);
           }
         }
         tmp9 = 0 !== reduced && true && null != width;
@@ -699,11 +699,11 @@ export const Tabs = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
         }
         if (tmp9) {
           if (scrollOffset + pageWidth < sum + width) {
-            tmp17(4497).runOnJS(callback1)(sum + c11);
-            const tmp17Result = tmp17(4497);
+            tmp17(4529).runOnJS(callback1)(sum + c11);
+            const tmp17Result = tmp17(4529);
           } else if (sum < scrollOffset) {
-            tmp17(4497).runOnJS(callback1)(sum - c11);
-            const tmp17Result2 = tmp17(4497);
+            tmp17(4529).runOnJS(callback1)(sum - c11);
+            const tmp17Result2 = tmp17(4529);
           }
         }
         tmp9 = 0 !== reduced && true && null != width;
@@ -744,7 +744,7 @@ export const Tabs = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
         const result = pressed.set(-1);
       };
       obj.variant = variant;
-      return variant(state(12779).TabItem, obj, id);
+      return variant(state(12815).TabItem, obj, id);
     })
   }), items3);
   const memo1 = simultaneousHandlers.useMemo(() => {

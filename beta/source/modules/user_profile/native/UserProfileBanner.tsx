@@ -1,10 +1,10 @@
-// Module ID: 8520
-// Function ID: 8521
+// Module ID: 8552
+// Function ID: 8553
 // Name: UserProfileBanner
-// Dependencies: [32, 19, 17, 1078, 21, 4758, 558, 568, 2023, 8521, 1401, 8528, 5341, 1119, 8529, 2]
+// Dependencies: [32, 19, 17, 1078, 21, 4790, 558, 568, 2023, 8553, 1401, 8560, 5373, 1119, 8561, 2]
 
-// Module 8520 (UserProfileBanner)
-import BannerDefault from "Banner" /* 8528 */;
+// Module 8552 (UserProfileBanner)
+import BannerDefault from "Banner" /* 8560 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -15,7 +15,7 @@ const View = fn(17).View;
 const BANNER_HEIGHT = fn(1078).BANNER_HEIGHT;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ bannerContainer: { position: "relative" }, gifTag: { position: "absolute", left: 12, top: 12, right: "auto", bottom: "auto" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

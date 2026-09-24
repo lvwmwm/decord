@@ -1,15 +1,15 @@
 // Module ID: 1119
 // Function ID: 1120
 // Name: util
-// Dependencies: [19, 1078, 21, 1120, 1121, 1158, 1181, 14467, 558, 2, 14468, 14471]
+// Dependencies: [19, 1078, 21, 1120, 1121, 1158, 1181, 14505, 558, 2, 14506, 14509]
 // Exports: getSystemLocale, useSyncMessages
 
 // Module 1119 (util)
 import NativeDeviceLocaleModule from "NativeDeviceLocaleModule" /* 1120 */;
 import intl_util from "intl/util" /* 1121 */;
 import native from "native" /* 1181 */;
-import migration from "migration" /* 14467 */;
-import _modDef14471 from "module_14471" /* 14471 */;
+import migration from "migration" /* 14505 */;
+import _modDef14509 from "module_14509" /* 14509 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -69,7 +69,7 @@ export { getSystemLocale };
 export const getAvailableLocales = fn(1121).getAvailableLocales;
 export const getLanguages = fn(1121).getLanguages;
 export const useSyncMessages = (arg0) => intl_util.useSyncMessages(arg0, withFormattersResult);
-export const t = fn(14468)._defaultMessages;
-export const international = _modDef14471;
+export const t = fn(14506)._defaultMessages;
+export const international = _modDef14509;
 export const systemLocale = str;
 export const initialLocale = normalizedLocale;

@@ -1,25 +1,25 @@
-// Module ID: 10449
-// Function ID: 10450
+// Module ID: 10488
+// Function ID: 10489
 // Name: DoubleTapEmojiUpdatedToast
-// Dependencies: [19, 4750, 1379, 21, 4758, 580, 1368, 558, 568, 504, 1401, 7377, 1119, 4754, 5173, 4472, 4458, 2]
+// Dependencies: [19, 4782, 1379, 21, 4790, 580, 1368, 558, 568, 504, 1401, 7409, 1119, 4786, 5205, 4504, 4490, 2]
 // Exports: showDoubleTapEmojiUpdatedToast
 
-// Module 10449 (DoubleTapEmojiUpdatedToast)
+// Module 10488 (DoubleTapEmojiUpdatedToast)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import EmojiDefault from "Emoji" /* 7377 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import EmojiDefault from "Emoji" /* 7409 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const EMOJI_URL_BASE_SIZE = fn(1379).EMOJI_URL_BASE_SIZE;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { toastEmoji: { marginLeft: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_8 }, toastEmojiCustom: { width: 24, height: 24 }, toastEmojiText: null, toastText: null };
 let PlatformUtils = fn(1368);
 let num = 16;
@@ -139,7 +139,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
   }
   obj2.name = str;
   obj2.src = memo;
-  return tmp4(stateFromStores(7377), obj2);
+  return tmp4(stateFromStores(7409), obj2);
 });
 let closure_8 = tmp2;
 ReactCompilerGating = fn(558);
@@ -181,7 +181,7 @@ export const ToastEmoji = tmp2;
 export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdatedToast(emoji) {
   emoji = emoji.emoji;
   if (obj.getIsScreenReaderEnabled()) {
-    const AccessibilityAnnouncer = tmp(4472).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = tmp(4504).AccessibilityAnnouncer;
     const intl = tmp(1119).intl;
     const obj3 = { emojiName: emoji.name };
     AccessibilityAnnouncer.announce(intl.formatToPlainString(tmp(1119).t.nKY0Fl, obj3));

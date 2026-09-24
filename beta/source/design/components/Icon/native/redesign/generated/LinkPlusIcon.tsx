@@ -1,13 +1,13 @@
-// Module ID: 16955
-// Function ID: 16956
+// Module ID: 16965
+// Function ID: 16966
 // Name: LinkPlusIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 16956, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 16966, 4493, 2]
 
-// Module 16955 (LinkPlusIcon)
+// Module 16965 (LinkPlusIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod16956 from "module_16956" /* 16956 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod16966 from "module_16966" /* 16966 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const LinkPlusIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(16956);
+    const tmpResult = tmp(16966);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const LinkPlusIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16956, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod16966, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

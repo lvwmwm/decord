@@ -1,10 +1,10 @@
-// Module ID: 5762
-// Function ID: 5763
+// Module ID: 5794
+// Function ID: 5795
 // Name: GuildJoinRequestAnalyticUtils
 // Dependencies: [502, 2109, 1078, 1245, 2]
 // Exports: trackMemberApplicationAction, trackMemberApplicationInterviewMessage, trackMemberApplicationViewed, trackMemberVerificationApplicationViewed
 
-// Module 5762 (GuildJoinRequestAnalyticUtils)
+// Module 5794 (GuildJoinRequestAnalyticUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;

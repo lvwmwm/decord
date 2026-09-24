@@ -1,15 +1,15 @@
-// Module ID: 8719
-// Function ID: 8720
+// Module ID: 8751
+// Function ID: 8752
 // Name: AgeVerificationExpressiveV2Modal
-// Dependencies: [5, 32, 19, 17, 8688, 1078, 21, 1384, 8720, 8722, 8724, 1368, 8726, 4758, 580, 8728, 8729, 8715, 4970, 8689, 8701, 8702, 8731, 8698, 8699, 5186, 5907, 4754, 8687, 2112, 1181, 5188, 1119, 3038, 5903, 5822, 8732, 8845, 7456, 4961, 5839, 8846, 8847, 558, 568, 1259, 7246, 2]
+// Dependencies: [5, 32, 19, 17, 8720, 1078, 21, 1384, 8752, 8754, 8756, 1368, 8758, 4790, 580, 8760, 8761, 8747, 5002, 8721, 8733, 8734, 8763, 8730, 8731, 5218, 5939, 4786, 8719, 2112, 1181, 5220, 1119, 3038, 5935, 5854, 8764, 8877, 7488, 4993, 5871, 8878, 8879, 558, 568, 1259, 7278, 2]
 
-// Module 8719 (AgeVerificationExpressiveV2Modal)
+// Module 8751 (AgeVerificationExpressiveV2Modal)
 import nativeDefault from "native" /* 580 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8687 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8689 */;
-import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 8701 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8719 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8721 */;
+import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 8733 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -170,24 +170,24 @@ function MethodsScreen(onClose) {
     if (obj.isAgeVerified()) {
       if (tmpResult.getIsAgeVerificationCustomTabAwaitingResult()) {
         if (!tmpResult6.getIsAgeVerificationCustomTabOpen()) {
-          const result = tmp(8701).releaseAgeVerificationCustomTab();
+          const result = tmp(8733).releaseAgeVerificationCustomTab();
           callback();
-          const tmpResult7 = tmp(8701);
+          const tmpResult7 = tmp(8733);
         }
-        tmpResult6 = tmp(8701);
+        tmpResult6 = tmp(8733);
       }
-      tmpResult = tmp(8701);
-      let isAgeVerificationAuthSessionAwaitingResult = tmp(8702).getIsAgeVerificationAuthSessionAwaitingResult();
+      tmpResult = tmp(8733);
+      let isAgeVerificationAuthSessionAwaitingResult = tmp(8734).getIsAgeVerificationAuthSessionAwaitingResult();
       if (isAgeVerificationAuthSessionAwaitingResult) {
-        isAgeVerificationAuthSessionAwaitingResult = !tmp(8702).getIsAgeVerificationAuthSessionOpen();
-        const tmpResult9 = tmp(8702);
+        isAgeVerificationAuthSessionAwaitingResult = !tmp(8734).getIsAgeVerificationAuthSessionOpen();
+        const tmpResult9 = tmp(8734);
       }
       if (isAgeVerificationAuthSessionAwaitingResult) {
-        const result1 = tmp(8702).closeAgeVerificationAuthSession();
+        const result1 = tmp(8734).closeAgeVerificationAuthSession();
         callback();
-        const tmpResult10 = tmp(8702);
+        const tmpResult10 = tmp(8734);
       }
-      const tmpResult8 = tmp(8702);
+      const tmpResult8 = tmp(8734);
     }
   }, items4);
   const obj6 = require("AgeVerificationCustomTab");
@@ -369,11 +369,11 @@ function MethodsScreen(onClose) {
   return tmp19Result;
 }
 const ActivityIndicator = fn(17).ActivityIndicator;
-const TRUSTED_PROVIDERS_URL = fn(8688).TRUSTED_PROVIDERS_URL;
+const TRUSTED_PROVIDERS_URL = fn(8720).TRUSTED_PROVIDERS_URL;
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { headerStyle: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" }, container: { alignSelf: "stretch" }, header: { textAlign: "center" }, loadingContainer: null, emptyContainer: null, footer: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" };
 obj2.loadingContainer = { marginTop: nativeDefault.space.PX_24 };
@@ -461,7 +461,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((entryPoint) => {
             }
           }
           const obj2 = { screens: tmp7, initialRouteName: constants.METHODS, headerBackTitle: tmp12 };
-          const tmp16 = closure_9(tmp(7246).Navigator, obj2);
+          const tmp16 = closure_9(tmp(7278).Navigator, obj2);
           cResult[10] = tmp7;
           cResult[11] = tmp16;
           const tmp14 = tmp16;
@@ -497,7 +497,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((entryPoint) => {
     render: null
   };
   const obj = entryPoint(568);
-  obj4.headerLeft = entryPoint(5839).getHeaderCloseButton(closeModal);
+  obj4.headerLeft = entryPoint(5871).getHeaderCloseButton(closeModal);
   obj4.render = function render(arg0, navigation) {
     return closure_2_9(MethodsScreen, { entryPoint, navigation, onClose: closeModal, onComplete, modalSessionId });
   };
@@ -510,8 +510,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((entryPoint) => {
     headerLeft: null,
     render: null
   };
-  const tmpResult4 = entryPoint(5839);
-  obj5.headerLeft = entryPoint(5839).getHeaderBackButton();
+  const tmpResult4 = entryPoint(5871);
+  obj5.headerLeft = entryPoint(5871).getHeaderBackButton();
   obj5.render = function render() {
     return closure_2_9(onClose(onComplete[41]), { onClose: closeModal, onComplete, modalSessionId });
   };
@@ -524,8 +524,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((entryPoint) => {
     headerLeft: null,
     render: null
   };
-  const tmpResult5 = entryPoint(5839);
-  obj6.headerLeft = entryPoint(5839).getHeaderBackButton();
+  const tmpResult5 = entryPoint(5871);
+  obj6.headerLeft = entryPoint(5871).getHeaderBackButton();
   obj6.render = function render() {
     return closure_2_9(onClose(onComplete[42]), { onClose: closeModal, modalSessionId });
   };

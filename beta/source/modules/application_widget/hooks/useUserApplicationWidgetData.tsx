@@ -1,25 +1,25 @@
-// Module ID: 16964
-// Function ID: 16965
+// Module ID: 16974
+// Function ID: 16975
 // Name: useUserApplicationWidgetData
-// Dependencies: [32, 19, 4985, 9299, 7862, 9302, 558, 568, 9301, 504, 7415, 9300, 8461, 7874, 2]
+// Dependencies: [32, 19, 5017, 9331, 7894, 9334, 558, 568, 9333, 504, 7447, 9332, 8493, 7906, 2]
 
-// Module 16964 (useUserApplicationWidgetData)
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7874 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8461 */;
-import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 9300 */;
-import useApplicationWidgetConfigsDefault from "useApplicationWidgetConfigs" /* 9301 */;
+// Module 16974 (useUserApplicationWidgetData)
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7906 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8493 */;
+import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 9332 */;
+import useApplicationWidgetConfigsDefault from "useApplicationWidgetConfigs" /* 9333 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 4985 */;
-import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 9299 */;
-import UserProfileStore from "UserProfileStore" /* 7862 */;
-import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 9302 */;
+import ApplicationStore from "ApplicationStore" /* 5017 */;
+import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 9331 */;
+import UserProfileStore from "UserProfileStore" /* 7894 */;
+import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 9334 */;
 
 const require = globalThis.__r;
 
 require = fn;
-fn(9299).FetchState;
-const FetchState = fn(9302).FetchState;
+fn(9331).FetchState;
+const FetchState = fn(9334).FetchState;
 let ReactCompilerGating = fn(558);
 let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   _require = arg0;

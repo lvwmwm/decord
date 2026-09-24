@@ -1,17 +1,17 @@
-// Module ID: 9951
-// Function ID: 9952
+// Module ID: 9983
+// Function ID: 9984
 // Name: SecureFramesActionCreators
-// Dependencies: [5, 502, 2045, 4777, 9950, 1078, 577, 9948, 4659, 5110, 1119, 9952, 5630, 2]
+// Dependencies: [5, 502, 2045, 4809, 9982, 1078, 577, 9980, 4691, 5142, 1119, 9984, 5662, 2]
 
-// Module 9951 (SecureFramesActionCreators)
+// Module 9983 (SecureFramesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import util from "util" /* 1119 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9948 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9952 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9980 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9984 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import VoiceStateStore from "VoiceStateStore" /* 4777 */;
+import VoiceStateStore from "VoiceStateStore" /* 4809 */;
 
 require = fn;
 function savePersistentCodesEnabled() {
@@ -219,9 +219,9 @@ let closure_11 = async function _updatePersistentCodesEnabled(arg0, value) {
                       c0 = 1;
                       const obj4 = {
                         value: closure_1_9(closure_0, () => {
-                                  c1(5630).disconnect();
-                                  const obj = c1(5630);
-                                  const voiceChannel = c1(5630).selectVoiceChannel(dependencyMap);
+                                  c1(5662).disconnect();
+                                  const obj = c1(5662);
+                                  const voiceChannel = c1(5662).selectVoiceChannel(dependencyMap);
                                 }),
                         done: false
                       };
@@ -279,7 +279,7 @@ let closure_11 = async function _updatePersistentCodesEnabled(arg0, value) {
     }
   }
 };
-let closure_7 = fn(9950).SECURE_FRAMES_PUBLIC_KEY_VERSION;
+let closure_7 = fn(9982).SECURE_FRAMES_PUBLIC_KEY_VERSION;
 const ChannelTypes = fn(1078).ChannelTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/rtc/SecureFramesActionCreators.tsx");

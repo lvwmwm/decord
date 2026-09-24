@@ -1,9 +1,9 @@
-// Module ID: 14976
-// Function ID: 14977
+// Module ID: 15011
+// Function ID: 15012
 // Name: AccountDisplayNameSetting
-// Dependencies: [1376, 8238, 1078, 558, 568, 504, 11594, 1119, 14852, 2]
+// Dependencies: [1376, 8270, 1078, 558, 568, 504, 11630, 1119, 14890, 2]
 
-// Module 14976 (AccountDisplayNameSetting)
+// Module 15011 (AccountDisplayNameSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
@@ -11,7 +11,7 @@ import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -48,7 +48,7 @@ const route = SettingBuilders.createRoute({
     const intl = util.intl;
     return intl.string(util.t["9AjdkD"]);
   },
-  parent: fn(8238).MobileUserSettings.ACCOUNT,
+  parent: fn(8270).MobileUserSettings.ACCOUNT,
   useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {

@@ -1,14 +1,14 @@
-// Module ID: 12850
-// Function ID: 12851
+// Module ID: 12886
+// Function ID: 12887
 // Name: AddPhoneScreens
-// Dependencies: [5, 32, 19, 17, 1376, 12824, 21, 4758, 5897, 580, 558, 568, 1488, 1119, 4754, 12823, 7291, 7292, 565, 7284, 38, 7325, 7239, 2]
+// Dependencies: [5, 32, 19, 17, 1376, 12860, 21, 4790, 5929, 580, 558, 568, 1488, 1119, 4786, 12859, 7323, 7324, 565, 7316, 38, 7357, 7271, 2]
 
-// Module 12850 (AddPhoneScreens)
+// Module 12886 (AddPhoneScreens)
 import nativeDefault from "native" /* 580 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7284 */;
-import AddPhoneDefault from "AddPhone" /* 7291 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 7292 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12823 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7316 */;
+import AddPhoneDefault from "AddPhone" /* 7323 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 7324 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12859 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -19,19 +19,19 @@ const PhoneActionCreatorsDefault = PhoneActionCreators;
 
 require = fn;
 const View = fn(17).View;
-const useContactSyncModalStore = fn(12824).useContactSyncModalStore;
+const useContactSyncModalStore = fn(12860).useContactSyncModalStore;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
-let obj2 = { container: { paddingTop: fn(5897).NAV_BAR_HEIGHT + 32 }, redesignContainer: null, header: null, title: null, subtitle: null };
-let obj3 = { paddingTop: fn(5897).NAV_BAR_HEIGHT + 32 };
-obj2.redesignContainer = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingTop: fn(5897).NAV_BAR_HEIGHT + 32 };
+const createStyles = fn(4790);
+let obj2 = { container: { paddingTop: fn(5929).NAV_BAR_HEIGHT + 32 }, redesignContainer: null, header: null, title: null, subtitle: null };
+let obj3 = { paddingTop: fn(5929).NAV_BAR_HEIGHT + 32 };
+obj2.redesignContainer = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingTop: fn(5929).NAV_BAR_HEIGHT + 32 };
 obj2.header = { alignItems: "center" };
 obj2.title = { textAlign: "center" };
 obj2.subtitle = { marginTop: 8, lineHeight: 18, textAlign: "center" };
 let closure_11 = createStyles.createStyles(obj2);
 fn(558);
-let obj4 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingTop: fn(5897).NAV_BAR_HEIGHT + 32 };
+let obj4 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingTop: fn(5929).NAV_BAR_HEIGHT + 32 };
 let ReactCompilerGating = fn(558);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = navigation(568).c(16);
@@ -49,7 +49,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp5.title) {
     const obj3 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: first };
-    const tmp10 = closure_9(tmp(4754).Text, obj3);
+    const tmp10 = closure_9(tmp(4786).Text, obj3);
     cResult[1] = tmp5.title;
     cResult[2] = tmp10;
     let tmp8 = tmp10;
@@ -66,7 +66,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[4] !== tmp5.subtitle) {
     const obj4 = { style: tmp5.subtitle, variant: "text-sm/medium", color: "text-default", children: tmp11 };
-    const tmp15 = closure_9(tmp(4754).Text, obj4);
+    const tmp15 = closure_9(tmp(4786).Text, obj4);
     cResult[4] = tmp5.subtitle;
     cResult[5] = tmp15;
     let tmp13 = tmp15;
@@ -103,7 +103,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
         }
       }
-      const obj5 = { style: tmp5.container, reason: tmp(7292).ChangePhoneReason.CONTACT_SYNC, header: tmp16, onComplete: tmp18 };
+      const obj5 = { style: tmp5.container, reason: tmp(7324).ChangePhoneReason.CONTACT_SYNC, header: tmp16, onComplete: tmp18 };
       const tmp23 = closure_9(AddPhoneDefault, obj5);
       cResult[12] = tmp16;
       cResult[13] = tmp5.container;

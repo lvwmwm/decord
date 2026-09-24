@@ -1,32 +1,32 @@
-// Module ID: 15208
-// Function ID: 15209
+// Module ID: 15218
+// Function ID: 15219
 // Name: UserSettingsAuthedApp
-// Dependencies: [19, 17, 2044, 7354, 2045, 4409, 4939, 2113, 1078, 11221, 10385, 21, 4758, 580, 558, 568, 4712, 4754, 1488, 1489, 1119, 7417, 9572, 9333, 504, 12762, 1401, 5112, 12761, 4725, 10386, 1984, 1253, 10009, 8680, 7236, 7241, 8646, 4617, 7366, 7361, 11, 12186, 9529, 5903, 7446, 5822, 2]
+// Dependencies: [19, 17, 2044, 7386, 2045, 4441, 4971, 2113, 1078, 11257, 10424, 21, 4790, 580, 558, 568, 4744, 4786, 1488, 1489, 1119, 7449, 9604, 9365, 504, 12798, 1401, 5144, 12797, 4757, 10425, 1984, 1253, 10048, 8712, 7268, 7273, 8678, 4649, 7398, 7393, 11, 12222, 9561, 5935, 7478, 5854, 2]
 // Exports: default, handleDeleteApp
 
-// Module 15208 (UserSettingsAuthedApp)
+// Module 15218 (UserSettingsAuthedApp)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import Link from "Link" /* 1489 */;
-import RootNavigationRef from "RootNavigationRef" /* 4617 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4712 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useAlertStore from "useAlertStore" /* 5112 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7236 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7241 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7361 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7366 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7417 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8646 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9572 */;
-import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 12761 */;
+import RootNavigationRef from "RootNavigationRef" /* 4649 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4744 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useAlertStore from "useAlertStore" /* 5144 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7268 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7273 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7393 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7398 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7449 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8678 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9604 */;
+import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 12797 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7354 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7386 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
 
 require = fn;
@@ -34,11 +34,11 @@ get_ActivityIndicator = fn(17);
 ({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const Constants = fn(1078);
 ({ UserSettingsSections: closure_12, AnalyticsSections: map1, AnalyticsPages: closure_14 } = Constants);
-let closure_15 = fn(11221).ChannelDetailsNavigatorScreens;
-let closure_16 = fn(10385).BLOCK_CONFIRMATION_ACTION_SHEET_KEY;
+let closure_15 = fn(11257).ChannelDetailsNavigatorScreens;
+let closure_16 = fn(10424).BLOCK_CONFIRMATION_ACTION_SHEET_KEY;
 const jsxProd = fn(21);
 ({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { paddingHorizontal: 16, paddingVertical: 24 }, section: { marginBottom: 24 }, header: { flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 12 }, appAboutDescription: { width: "100%" }, warningContainer: { marginTop: nativeDefault.space.PX_12, display: "flex", flexDirection: "row" }, warningIcon: null };
 let size = { width: 16, height: 16, marginRight: 8, color: nativeDefault.colors.TEXT_MUTED };
 obj2.warningIcon = size;
@@ -50,7 +50,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
   const tmp4 = closure_19();
   if (cResult[0] !== tmp4.warningIcon) {
     const obj2 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED, style: tmp4.warningIcon };
-    const tmp8 = constants(tmp(4712).CircleInformationIcon, obj2);
+    const tmp8 = constants(tmp(4744).CircleInformationIcon, obj2);
     cResult[0] = tmp4.warningIcon;
     cResult[1] = tmp8;
     let tmp5 = tmp8;
@@ -59,7 +59,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
   }
   if (cResult[2] !== text) {
     const obj3 = { color: "text-default", variant: "text-sm/medium", children: text };
-    const tmp11 = constants(tmp(4754).Text, obj3);
+    const tmp11 = constants(tmp(4786).Text, obj3);
     cResult[2] = text;
     cResult[3] = tmp11;
     let tmp9 = tmp11;

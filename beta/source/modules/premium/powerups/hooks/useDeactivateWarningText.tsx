@@ -1,14 +1,14 @@
-// Module ID: 12707
-// Function ID: 12708
+// Module ID: 12743
+// Function ID: 12744
 // Name: useDeactivateWarningText
-// Dependencies: [19, 4678, 2103, 2067, 558, 568, 504, 7374, 4651, 1119, 2518, 2]
+// Dependencies: [19, 4710, 2103, 2067, 558, 568, 504, 7406, 4683, 1119, 2518, 2]
 
-// Module 12707 (useDeactivateWarningText)
+// Module 12743 (useDeactivateWarningText)
 import _modDef2518 from "module_2518" /* 2518 */;
-import Powerups from "Powerups" /* 4651 */;
-import useGuildRoleMemberCountsDefault from "useGuildRoleMemberCounts" /* 7374 */;
+import Powerups from "Powerups" /* 4683 */;
+import useGuildRoleMemberCountsDefault from "useGuildRoleMemberCounts" /* 7406 */;
 import noop from "module_19" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4678 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4710 */;
 import GuildRoleStore from "GuildRoleStore" /* 2103 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
@@ -214,7 +214,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, skuId) => 
         formatToPlainStringResult = intl4.formatToPlainString(_modDef2518.cavtEo, obj3);
       }
     } else {
-      if (tmp2(4651).VANITY_URL_POWERUP_SKU_ID === skuId) {
+      if (tmp2(4683).VANITY_URL_POWERUP_SKU_ID === skuId) {
         const intl3 = tmp2(1119).intl;
         const string = intl3.string;
         const tmp11 = _modDef2518;
@@ -228,10 +228,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, skuId) => 
         let tmp7 = tmp13;
         let formatToPlainStringResult1 = stringResult;
       } else {
-        if (tmp2(4651).GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID !== skuId) {
-          if (tmp2(4651).GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID !== skuId) {
-            if (tmp2(4651).GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID !== skuId) {
-              if (tmp2(4651).GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID !== skuId) {
+        if (tmp2(4683).GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID !== skuId) {
+          if (tmp2(4683).GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID !== skuId) {
+            if (tmp2(4683).GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID !== skuId) {
+              if (tmp2(4683).GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID !== skuId) {
                 const intl = tmp2(1119).intl;
                 const obj = { perk: tmp.title, memberCount: null };
                 let num = stateFromStores;
@@ -249,11 +249,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, skuId) => 
         formatToPlainStringResult1 = intl2.string(_modDef2518.Vf2ZcR);
         tmp7 = importDefault;
       }
-      const obj4 = { text: formatToPlainStringResult1, critical: tmp.skuId === tmp2(4651).VANITY_URL_POWERUP_SKU_ID };
+      const obj4 = { text: formatToPlainStringResult1, critical: tmp.skuId === tmp2(4683).VANITY_URL_POWERUP_SKU_ID };
       const items = [obj4];
       let tmp20 = stateFromStores1;
       if (stateFromStores1) {
-        tmp20 = tmp.skuId === tmp2(4651).GUILD_POWERUP_LEVEL_3_SKU_ID;
+        tmp20 = tmp.skuId === tmp2(4683).GUILD_POWERUP_LEVEL_3_SKU_ID;
       }
       if (tmp20) {
         const obj5 = { text: null, critical: true };

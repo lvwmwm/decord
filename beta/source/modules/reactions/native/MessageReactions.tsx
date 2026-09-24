@@ -1,15 +1,15 @@
-// Module ID: 10543
-// Function ID: 10544
+// Module ID: 10579
+// Function ID: 10580
 // Name: MessageReactions
-// Dependencies: [109, 19, 4978, 21, 558, 568, 504, 7409, 7429, 10544, 2]
+// Dependencies: [109, 19, 5010, 21, 558, 568, 504, 7441, 7461, 10580, 2]
 
-// Module 10543 (MessageReactions)
+// Module 10579 (MessageReactions)
 import c from "c" /* 568 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7409 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7441 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import MessageStore from "MessageStore" /* 4978 */;
+import MessageStore from "MessageStore" /* 5010 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
 
@@ -173,7 +173,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   return tmp28;
                 }
                 let obj2 = { value: analyticsLocations, children: cResult[16] };
-                const tmp30 = jsx(tmp(7409).AnalyticsLocationProvider, { value: analyticsLocations, children: cResult[16] });
+                const tmp30 = jsx(tmp(7441).AnalyticsLocationProvider, { value: analyticsLocations, children: cResult[16] });
                 cResult[17] = analyticsLocations;
                 cResult[18] = cResult[16];
                 cResult[19] = tmp30;
@@ -187,9 +187,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (arr3.length > 0) {
       let obj3 = { channelId: tmp4, messageId: tmp7, emoji: tmp6, reactions: arr3, isSelectedBurst: tmp12 };
       let merged = Object.assign(tmp5);
-      let tmp22 = jsx(tmp(10544).MessageReactionsContent, { channelId: tmp4, messageId: tmp7, emoji: tmp6, reactions: arr3, isSelectedBurst: tmp12 });
+      let tmp22 = jsx(tmp(10580).MessageReactionsContent, { channelId: tmp4, messageId: tmp7, emoji: tmp6, reactions: arr3, isSelectedBurst: tmp12 });
     } else {
-      tmp22 = jsx(tmp(10544).MessageReactionsEmpty, {});
+      tmp22 = jsx(tmp(10580).MessageReactionsEmpty, {});
     }
     cResult[10] = tmp4;
     cResult[11] = tmp5;
@@ -236,9 +236,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (items.length > 0) {
     let obj2 = { channelId, messageId, emoji: emoji.emoji, reactions: items, isSelectedBurst };
     let merged1 = Object.assign(merged);
-    let tmp7Result = tmp7(tmp8(10544).MessageReactionsContent, obj2);
+    let tmp7Result = tmp7(tmp8(10580).MessageReactionsContent, obj2);
   } else {
-    tmp7Result = tmp7(tmp8(10544).MessageReactionsEmpty, {});
+    tmp7Result = tmp7(tmp8(10580).MessageReactionsEmpty, {});
   }
   obj.children = tmp7Result;
   return jsx(useAnalyticsLocations.AnalyticsLocationProvider, { value: useAnalyticsLocationsDefault(AnalyticsLocationDefault.MESSAGE_REACTIONS).analyticsLocations, children: null });

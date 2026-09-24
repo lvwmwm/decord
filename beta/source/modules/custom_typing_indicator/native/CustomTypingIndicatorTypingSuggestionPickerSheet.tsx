@@ -1,17 +1,17 @@
-// Module ID: 15620
-// Function ID: 15621
+// Module ID: 15630
+// Function ID: 15631
 // Name: CustomTypingIndicatorTypingSuggestionPickerSheet
-// Dependencies: [32, 19, 21, 4758, 580, 558, 568, 7396, 1119, 3684, 12103, 5900, 5901, 7449, 2]
+// Dependencies: [32, 19, 21, 4790, 580, 558, 568, 7428, 1119, 3716, 12139, 5932, 5933, 7481, 2]
 
-// Module 15620 (CustomTypingIndicatorTypingSuggestionPickerSheet)
+// Module 15630 (CustomTypingIndicatorTypingSuggestionPickerSheet)
 import nativeDefault from "native" /* 580 */;
-import _modDef3684 from "module_3684" /* 3684 */;
+import _modDef3716 from "module_3716" /* 3716 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { content: { paddingHorizontal: nativeDefault.space.PX_16 } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -39,10 +39,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: null };
     let intl = tmp(1119).intl;
-    obj2.title = intl.string(_modDef3684["X+ijyw"]);
-    const tmp12 = jsx(tmp(7396).BottomSheetTitleHeader, { title: null });
+    obj2.title = intl.string(_modDef3716["X+ijyw"]);
+    const tmp12 = jsx(tmp(7428).BottomSheetTitleHeader, { title: null });
     const intl2 = tmp(1119).intl;
-    const stringResult = intl2.string(_modDef3684.hrl2cG);
+    const stringResult = intl2.string(_modDef3716.hrl2cG);
     cResult[2] = tmp12;
     cResult[3] = stringResult;
     let tmp9 = stringResult;
@@ -52,16 +52,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
     tmp9 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const customTypingIndicatorSuggestionPresets = tmp(12103).getCustomTypingIndicatorSuggestionPresets();
+    const customTypingIndicatorSuggestionPresets = tmp(12139).getCustomTypingIndicatorSuggestionPresets();
     const mapped = customTypingIndicatorSuggestionPresets.map((value) => {
       const obj = { value, label: null };
       const intl = onChange(1119).intl;
-      obj.label = intl.string(onChange(12103).getCustomTypingIndicatorSuggestionMessage(value));
-      return jsx(onChange(5900).TableRadioRow, { value, label: null }, value);
+      obj.label = intl.string(onChange(12139).getCustomTypingIndicatorSuggestionMessage(value));
+      return jsx(onChange(5932).TableRadioRow, { value, label: null }, value);
     });
     cResult[4] = mapped;
     let tmp14 = mapped;
-    const tmpResult = tmp(12103);
+    const tmpResult = tmp(12139);
   } else {
     tmp14 = cResult[4];
   }
@@ -76,13 +76,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
       return tmp18;
     }
     const obj3 = { contentStyles: tmp4.content, header: tmp8, dismissAccessibilityLabel: tmp9, children: tmp16 };
-    const tmp20 = jsx(tmp(7449).ActionSheet, { contentStyles: tmp4.content, header: tmp8, dismissAccessibilityLabel: tmp9, children: tmp16 });
+    const tmp20 = jsx(tmp(7481).ActionSheet, { contentStyles: tmp4.content, header: tmp8, dismissAccessibilityLabel: tmp9, children: tmp16 });
     cResult[8] = tmp4.content;
     cResult[9] = tmp16;
     cResult[10] = tmp20;
     tmp18 = tmp20;
   }
-  const tmp17 = jsx(onChange(5901).TableRadioGroup, { value: tmp6, onChange: tmp7, hasIcons: false, children: tmp14 });
+  const tmp17 = jsx(onChange(5933).TableRadioGroup, { value: tmp6, onChange: tmp7, hasIcons: false, children: tmp14 });
   cResult[5] = tmp7;
   cResult[6] = tmp6;
   cResult[7] = tmp17;
@@ -94,10 +94,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
   let obj = { contentStyles: closure_6().content, header: null, dismissAccessibilityLabel: null, children: null };
   const obj2 = { title: null };
   let intl = onChange(1119).intl;
-  obj2.title = intl.string(_modDef3684["X+ijyw"]);
-  obj.header = jsx(onChange(7396).BottomSheetTitleHeader, { title: null });
+  obj2.title = intl.string(_modDef3716["X+ijyw"]);
+  obj.header = jsx(onChange(7428).BottomSheetTitleHeader, { title: null });
   const intl2 = onChange(1119).intl;
-  obj.dismissAccessibilityLabel = intl2.string(_modDef3684.hrl2cG);
+  obj.dismissAccessibilityLabel = intl2.string(_modDef3716.hrl2cG);
   const obj3 = {
     value: tmp2[0],
     onChange(arg0) {
@@ -108,14 +108,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
     children: null
   };
   const tmp = closure_6();
-  const customTypingIndicatorSuggestionPresets = onChange(12103).getCustomTypingIndicatorSuggestionPresets();
+  const customTypingIndicatorSuggestionPresets = onChange(12139).getCustomTypingIndicatorSuggestionPresets();
   obj3.children = customTypingIndicatorSuggestionPresets.map((value) => {
     const obj = { value, label: null };
     const intl = onChange(1119).intl;
-    obj.label = intl.string(onChange(12103).getCustomTypingIndicatorSuggestionMessage(value));
-    return jsx(onChange(5900).TableRadioRow, { value, label: null }, value);
+    obj.label = intl.string(onChange(12139).getCustomTypingIndicatorSuggestionMessage(value));
+    return jsx(onChange(5932).TableRadioRow, { value, label: null }, value);
   });
-  obj.children = jsx(onChange(5901).TableRadioGroup, {
+  obj.children = jsx(onChange(5933).TableRadioGroup, {
     value: tmp2[0],
     onChange(arg0) {
       closure_1(arg0);
@@ -124,5 +124,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
     hasIcons: false,
     children: null
   });
-  return jsx(onChange(7449).ActionSheet, { contentStyles: closure_6().content, header: null, dismissAccessibilityLabel: null, children: null });
+  return jsx(onChange(7481).ActionSheet, { contentStyles: closure_6().content, header: null, dismissAccessibilityLabel: null, children: null });
 });

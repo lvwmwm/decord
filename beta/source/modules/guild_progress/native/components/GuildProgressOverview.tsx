@@ -1,27 +1,27 @@
-// Module ID: 14247
-// Function ID: 14248
+// Module ID: 14284
+// Function ID: 14285
 // Name: GuildProgressOverview
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 12637, 12640, 7441, 1119, 1181, 4754, 10176, 14248, 5341, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 12673, 12676, 7473, 1119, 1181, 4786, 10215, 14285, 5373, 2]
 
-// Module 14247 (GuildProgressOverview)
+// Module 14284 (GuildProgressOverview)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
-import showSimpleActionSheet from "showSimpleActionSheet" /* 7441 */;
-import _modDef10176 from "module_10176" /* 10176 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 12637 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12640 */;
-import GuildProgressBarDefault from "GuildProgressBar" /* 14248 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
+import showSimpleActionSheet from "showSimpleActionSheet" /* 7473 */;
+import _modDef10215 from "module_10215" /* 10215 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 12673 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12676 */;
+import GuildProgressBarDefault from "GuildProgressBar" /* 14285 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: 16 }, horizontal: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, title: { fontSize: 16, lineHeight: 20, fontFamily: fn(1078).Fonts.PRIMARY_SEMIBOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, marginBottom: 2 }, step: { lineHeight: 16 }, progressBar: { marginTop: 8 } };
 let closure_7 = createStyles.createStyles(obj2);
 fn(558);
@@ -49,7 +49,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const _Symbol = Symbol;
           if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-            const obj2 = { source: _modDef10176 };
+            const obj2 = { source: _modDef10215 };
             const tmp20 = hasOwnProperty(tmp(1181).Icon, obj2);
             cResult[12] = tmp20;
             let tmp17 = tmp20;
@@ -79,7 +79,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               const obj3 = { accessibilityRole: "button", activeOpacity: 0.4, style: tmp4.container, onPress, onLongPress, children: null };
               const items = [tmp21, tmp25];
               obj3.children = items;
-              const tmp31 = timestampProducer(tmp(5341).PressableOpacity, obj3);
+              const tmp31 = timestampProducer(tmp(5373).PressableOpacity, obj3);
               cResult[19] = onLongPress;
               cResult[20] = onPress;
               cResult[21] = tmp4.container;
@@ -114,7 +114,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp12 = tmp15;
       }
       const obj7 = { style: tmp4.step, variant: "text-xs/medium", color: "text-default", children: subtitle };
-      const tmp11 = hasOwnProperty(tmp(4754).Text, obj7);
+      const tmp11 = hasOwnProperty(tmp(4786).Text, obj7);
       cResult[6] = tmp4.step;
       cResult[7] = subtitle;
       cResult[8] = tmp11;
@@ -143,7 +143,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj4.style = items;
   const items1 = [hasOwnProperty(native.LegacyText, obj4), hasOwnProperty(Text_Text.Text, { style: tmp.step, variant: "text-xs/medium", color: "text-default", children: subtitle })];
   obj3.children = items1;
-  const items2 = [timestampProducer(View, obj3), hasOwnProperty(native.Icon, { source: _modDef10176 })];
+  const items2 = [timestampProducer(View, obj3), hasOwnProperty(native.Icon, { source: _modDef10215 })];
   obj2.children = items2;
   const items3 = [timestampProducer(View, obj2), hasOwnProperty(GuildProgressBarDefault, { style: tmp.progressBar, percent: percentComplete })];
   obj.children = items3;

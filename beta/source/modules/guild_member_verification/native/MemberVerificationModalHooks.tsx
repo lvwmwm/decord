@@ -1,19 +1,19 @@
-// Module ID: 5793
-// Function ID: 5794
+// Module ID: 5825
+// Function ID: 5826
 // Name: MemberVerificationModalHooks
-// Dependencies: [19, 1376, 5794, 558, 568, 4583, 504, 2]
+// Dependencies: [19, 1376, 5826, 558, 568, 4615, 504, 2]
 
-// Module 5793 (MemberVerificationModalHooks)
+// Module 5825 (MemberVerificationModalHooks)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
-import InitialMemberVerificationStore from "InitialMemberVerificationStore" /* 5794 */;
+import InitialMemberVerificationStore from "InitialMemberVerificationStore" /* 5826 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const setInitialVerification = fn(5794).setInitialVerification;
+const setInitialVerification = fn(5826).setInitialVerification;
 fn(558);
 let ReactCompilerGating = fn(558);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {

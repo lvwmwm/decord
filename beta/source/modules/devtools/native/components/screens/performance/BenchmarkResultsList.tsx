@@ -1,13 +1,13 @@
-// Module ID: 16037
-// Function ID: 16038
+// Module ID: 16047
+// Function ID: 16048
 // Name: BenchmarkResultsList
-// Dependencies: [19, 21, 558, 568, 5822, 16033, 5903, 2]
+// Dependencies: [19, 21, 558, 568, 5854, 16043, 5935, 2]
 
-// Module 16037 (BenchmarkResultsList)
+// Module 16047 (BenchmarkResultsList)
 import c from "c" /* 568 */;
-import TableRow from "TableRow" /* 5822 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import startFrameMonitor from "startFrameMonitor" /* 16033 */;
+import TableRow from "TableRow" /* 5854 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import startFrameMonitor from "startFrameMonitor" /* 16043 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -60,7 +60,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     if (cResult[3] !== onClear) {
       let obj2 = { label: "Clear results", variant: "danger", arrow: true, onPress: onClear };
-      const tmp11 = React2(tmp(5822).TableRow, obj2);
+      const tmp11 = React2(tmp(5854).TableRow, obj2);
       cResult[3] = onClear;
       cResult[4] = tmp11;
       let tmp9 = tmp11;
@@ -76,7 +76,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { title: "Results (newest first)", hasIcons: false, children: null };
     const items = [cResult[1], tmp9];
     obj3.children = items;
-    const tmp14 = React3(tmp(5903).TableRowGroup, obj3);
+    const tmp14 = React3(tmp(5935).TableRowGroup, obj3);
     cResult[5] = cResult[1];
     cResult[6] = tmp9;
     cResult[7] = tmp14;

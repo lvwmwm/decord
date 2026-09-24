@@ -68,7 +68,7 @@ export const instrumentLangGraph = function instrumentLangGraph(compile, arg1) {
                   obj3[applyResult(708).SEMANTIC_ATTRIBUTE_SENTRY_OP] = applyResult(827).GEN_AI_INVOKE_AGENT_OPERATION_ATTRIBUTE;
                   obj3[applyResult(827).GEN_AI_OPERATION_NAME_ATTRIBUTE] = "invoke_agent";
                   obj2.attributes = obj3;
-                  applyResult = closure_2(/* F154070 */ function() { ... });
+                  applyResult = closure_2(/* F154165 */ function() { ... });
                   return applyResult(735).startSpan(obj2, () => { ... });
                 }
               });
@@ -142,7 +142,7 @@ export const instrumentStateGraphCompile = function instrumentStateGraphCompile(
                   obj3[applyResult(708).SEMANTIC_ATTRIBUTE_SENTRY_OP] = applyResult(827).GEN_AI_INVOKE_AGENT_OPERATION_ATTRIBUTE;
                   obj3[applyResult(827).GEN_AI_OPERATION_NAME_ATTRIBUTE] = "invoke_agent";
                   obj2.attributes = obj3;
-                  applyResult = closure_2(/* F154070 */ function() { ... });
+                  applyResult = closure_2(/* F154165 */ function() { ... });
                   return applyResult(735).startSpan(obj2, () => { ... });
                 }
               });

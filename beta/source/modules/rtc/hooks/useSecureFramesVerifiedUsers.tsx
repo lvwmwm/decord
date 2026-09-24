@@ -1,12 +1,12 @@
-// Module ID: 16163
-// Function ID: 16164
+// Module ID: 16173
+// Function ID: 16174
 // Name: useSecureFramesVerifiedUsers
-// Dependencies: [9932, 558, 568, 504, 2]
+// Dependencies: [9964, 558, 568, 504, 2]
 
-// Module 16163 (useSecureFramesVerifiedUsers)
+// Module 16173 (useSecureFramesVerifiedUsers)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 9932 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 9964 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);

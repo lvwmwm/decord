@@ -1,23 +1,23 @@
-// Module ID: 15067
-// Function ID: 15068
+// Module ID: 15076
+// Function ID: 15077
 // Name: BlockedUsersListV2
-// Dependencies: [19, 17, 4409, 21, 4758, 580, 558, 568, 7409, 7429, 1181, 15068, 1119, 4754, 15072, 5903, 7371, 504, 2]
+// Dependencies: [19, 17, 4441, 21, 4790, 580, 558, 568, 7441, 7461, 1181, 15077, 1119, 4786, 15081, 5935, 7403, 504, 2]
 
-// Module 15067 (BlockedUsersListV2)
+// Module 15076 (BlockedUsersListV2)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7409 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import Blocked from "Blocked" /* 15068 */;
-import BlockedUserRowV2Default from "BlockedUserRowV2" /* 15072 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7441 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
+import Blocked from "Blocked" /* 15077 */;
+import BlockedUserRowV2Default from "BlockedUserRowV2" /* 15081 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
 
@@ -25,7 +25,7 @@ require = fn;
 const ScrollView = fn(17).ScrollView;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { list: { flex: 1, paddingTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16 }, sectionLabelStyle: null };
 let obj3 = { flex: 1, paddingTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.sectionLabelStyle = { marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_8 };
@@ -39,7 +39,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
   if (0 === userIds.length) {
     const _Symbol3 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { Illustration: tmp(15068).Blocked, body: null };
+      const obj2 = { Illustration: tmp(15077).Blocked, body: null };
       const intl3 = tmp(1119).intl;
       obj2.body = intl3.string(tmp(1119).t.nnsFif);
       const tmp34 = hasOwnProperty(tmp(1181).EmptyState, obj2);
@@ -91,7 +91,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
       } else {
         if (cResult[10] !== cResult[8]) {
           const obj4 = { hasIcons: true, children: tmp14 };
-          const tmp20 = hasOwnProperty(tmp(5903).TableRowGroup, obj4, tmp12);
+          const tmp20 = hasOwnProperty(tmp(5935).TableRowGroup, obj4, tmp12);
           cResult[10] = tmp14;
           cResult[11] = tmp20;
           let tmp18 = tmp20;
@@ -113,14 +113,14 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
               return tmp28;
             }
             const obj5 = { value: analyticsLocations, children: tmp25 };
-            const tmp30 = hasOwnProperty(tmp(7409).AnalyticsLocationProvider, obj5);
+            const tmp30 = hasOwnProperty(tmp(7441).AnalyticsLocationProvider, obj5);
             cResult[18] = analyticsLocations;
             cResult[19] = tmp25;
             cResult[20] = tmp30;
             tmp28 = tmp30;
           }
           const obj6 = { bottom: true, style: list, children: tmp21 };
-          const tmp27 = hasOwnProperty(tmp(7371).SafeAreaPaddingView, obj6);
+          const tmp27 = hasOwnProperty(tmp(7403).SafeAreaPaddingView, obj6);
           cResult[15] = tmp4.list;
           cResult[16] = tmp21;
           cResult[17] = tmp27;
@@ -137,7 +137,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
       }
     }
     const obj8 = { style: sectionLabelStyle, variant: "text-sm/semibold", color: "text-default", children: tmp6 };
-    const tmp10 = hasOwnProperty(tmp(4754).Text, obj8);
+    const tmp10 = hasOwnProperty(tmp(4786).Text, obj8);
     cResult[3] = tmp4.sectionLabelStyle;
     cResult[4] = tmp6;
     cResult[5] = tmp10;

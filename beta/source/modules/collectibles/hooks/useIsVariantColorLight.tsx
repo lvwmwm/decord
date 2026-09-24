@@ -1,9 +1,9 @@
-// Module ID: 9143
-// Function ID: 9144
+// Module ID: 9175
+// Function ID: 9176
 // Name: useIsVariantColorLight
 // Dependencies: [19, 558, 568, 1096, 2]
 
-// Module 9143 (useIsVariantColorLight)
+// Module 9175 (useIsVariantColorLight)
 import c from "c" /* 568 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
 import noop from "module_19" /* 19 */;

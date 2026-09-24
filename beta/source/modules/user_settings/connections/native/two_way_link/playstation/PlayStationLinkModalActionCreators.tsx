@@ -1,11 +1,11 @@
-// Module ID: 9371
-// Function ID: 9372
+// Module ID: 9403
+// Function ID: 9404
 // Name: PlayStationLinkModalActionCreators
-// Dependencies: [4961, 9372, 1984, 2]
+// Dependencies: [4993, 9404, 1984, 2]
 
-// Module 9371 (PlayStationLinkModalActionCreators)
+// Module 9403 (PlayStationLinkModalActionCreators)
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "USER_SETTINGS_CONNECTIONS_PS_LINK_MODAL_KEY";
@@ -13,7 +13,7 @@ const result = size.fileFinishedImporting("modules/user_settings/connections/nat
 
 export default {
   showModal(locationStack, platformType) {
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(9372, dependencyMap.paths), { locationStack, platformType }, c3);
+    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(9404, dependencyMap.paths), { locationStack, platformType }, c3);
   },
   hideModal() {
     ModalActionCreatorsDefault.popWithKey(c3);

@@ -1,14 +1,14 @@
-// Module ID: 12812
-// Function ID: 12813
+// Module ID: 12848
+// Function ID: 12849
 // Name: NsfwGateChat
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 12813, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 12849, 1119, 4786, 2]
 
-// Module 12812 (NsfwGateChat)
+// Module 12848 (NsfwGateChat)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import _modDef12813 from "module_12813" /* 12813 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import _modDef12849 from "module_12849" /* 12849 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4, StyleSheet } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center" }, border: null, description: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center" };
 obj2.border = { height: StyleSheet.hairlineWidth, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
@@ -40,7 +40,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { source: _modDef12813 };
+    const obj3 = { source: _modDef12849 };
     const tmp13 = hasOwnProperty(React4, obj3);
     cResult[2] = tmp13;
     let tmp9 = tmp13;
@@ -57,7 +57,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[4] !== tmp4.description) {
     const obj4 = { style: tmp4.description, variant: "text-md/medium", color: "text-muted", children: tmp14 };
-    const tmp18 = hasOwnProperty(tmp(4754).Text, obj4);
+    const tmp18 = hasOwnProperty(tmp(4786).Text, obj4);
     cResult[4] = tmp4.description;
     cResult[5] = tmp18;
     let tmp16 = tmp18;
@@ -96,7 +96,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = { children: null };
   const items = [hasOwnProperty(React3, { style: tmp.border }), ];
   const obj3 = { style: tmp.container, children: null };
-  const items1 = [hasOwnProperty(React4, { source: _modDef12813 }), ];
+  const items1 = [hasOwnProperty(React4, { source: _modDef12849 }), ];
   const obj5 = { style: tmp.description, variant: "text-md/medium", color: "text-muted", children: null };
   const intl = util.intl;
   obj5.children = intl.string(util.t.W4Qyxr);

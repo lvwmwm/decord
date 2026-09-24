@@ -1,20 +1,20 @@
-// Module ID: 17142
-// Function ID: 17143
+// Module ID: 17152
+// Function ID: 17153
 // Name: GuildTextChannelRow
-// Dependencies: [109, 19, 8127, 21, 558, 568, 11, 17130, 12488, 17133, 2]
+// Dependencies: [109, 19, 8159, 21, 558, 568, 11, 17140, 12524, 17143, 2]
 
-// Module 17142 (GuildTextChannelRow)
+// Module 17152 (GuildTextChannelRow)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import c from "c" /* 568 */;
-import SearchUtils from "SearchUtils" /* 12488 */;
-import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 17130 */;
-import GuildChannelRowDefault from "GuildChannelRow" /* 17133 */;
+import SearchUtils from "SearchUtils" /* 12524 */;
+import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 17140 */;
+import GuildChannelRowDefault from "GuildChannelRow" /* 17143 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 let closure_3 = ["channel", "trailing", "lastMessageId", "onPress"];
-const layout = fn(8127).CHANNEL_LIST_SEARCH_LAYOUT;
+const layout = fn(8159).CHANNEL_LIST_SEARCH_LAYOUT;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -103,8 +103,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
   }
   let channelActiveAgoTimestamp = null;
   if (null != tmp12) {
-    channelActiveAgoTimestamp = tmp(12488).getChannelActiveAgoTimestamp(tmp12);
-    const tmpResult2 = tmp(12488);
+    channelActiveAgoTimestamp = tmp(12524).getChannelActiveAgoTimestamp(tmp12);
+    const tmpResult2 = tmp(12524);
   }
   const result = guild_channels_ChannelSubtitle.renderChannelSubtitle({ subtitle: channelActiveAgoTimestamp, layout, channelId: id, guildId: guild_id });
   cResult[8] = id;

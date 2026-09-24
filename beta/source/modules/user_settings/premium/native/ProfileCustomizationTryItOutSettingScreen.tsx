@@ -1,15 +1,15 @@
-// Module ID: 16112
-// Function ID: 16113
+// Module ID: 16122
+// Function ID: 16123
 // Name: ProfileCustomizationTryItOutSettingScreen
-// Dependencies: [19, 17, 1376, 1078, 1378, 21, 4758, 580, 558, 568, 7409, 7429, 504, 11032, 8433, 8461, 7801, 15598, 15599, 8441, 1393, 1245, 14854, 2]
+// Dependencies: [19, 17, 1376, 1078, 1378, 21, 4790, 580, 558, 568, 7441, 7461, 504, 11068, 8465, 8493, 7833, 15608, 15609, 8473, 1393, 1245, 14892, 2]
 
-// Module 16112 (ProfileCustomizationTryItOutSettingScreen)
+// Module 16122 (ProfileCustomizationTryItOutSettingScreen)
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1393 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7801 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8441 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8461 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7833 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8473 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8493 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -20,7 +20,7 @@ const Constants = fn(1078);
 ({ AnalyticEvents: closure_7, AnalyticsPages: closure_8 } = Constants);
 const PremiumUpsellTypes = fn(1378).PremiumUpsellTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: null, activityIndicator: null };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj2.container = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };

@@ -1,27 +1,27 @@
-// Module ID: 12896
-// Function ID: 12897
+// Module ID: 12932
+// Function ID: 12933
 // Name: DiscoverabilityModal
-// Dependencies: [19, 17, 12824, 1376, 1078, 21, 4758, 580, 5897, 558, 568, 1488, 504, 12831, 1098, 12851, 12897, 12844, 1253, 7246, 1119, 2]
+// Dependencies: [19, 17, 12860, 1376, 1078, 21, 4790, 580, 5929, 558, 568, 1488, 504, 12867, 1098, 12887, 12933, 12880, 1253, 7278, 1119, 2]
 
-// Module 12896 (DiscoverabilityModal)
+// Module 12932 (DiscoverabilityModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ConstantsIOS from "ConstantsIOS" /* 1098 */;
 import util from "util" /* 1119 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
-import Navigator from "Navigator" /* 7246 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12831 */;
-import ContactSyncNameInputDefault from "ContactSyncNameInput" /* 12844 */;
-import NUFActionCreators from "NUFActionCreators" /* 12851 */;
+import Navigator from "Navigator" /* 7278 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12867 */;
+import ContactSyncNameInputDefault from "ContactSyncNameInput" /* 12880 */;
+import NUFActionCreators from "NUFActionCreators" /* 12887 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const View = fn(17).View;
-const useContactSyncModalStore = fn(12824).useContactSyncModalStore;
+const useContactSyncModalStore = fn(12860).useContactSyncModalStore;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
-let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingBottom: 44, paddingTop: fn(5897).NAV_BAR_HEIGHT + 32 } };
+const createStyles = fn(4790);
+let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingBottom: 44, paddingTop: fn(5929).NAV_BAR_HEIGHT + 32 } };
 let closure_8 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
 let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -159,9 +159,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const effect = noop.useEffect(tmp5, tmp6);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function v(arg0) {
-      const result = allowPhone(12851).startContactSyncForDiscoverability(arg0);
-      const obj = allowPhone(12851);
-      const result1 = allowPhone(12851).closeDiscoverabilityModal(false);
+      const result = allowPhone(12887).startContactSyncForDiscoverability(arg0);
+      const obj = allowPhone(12887);
+      const result1 = allowPhone(12887).closeDiscoverabilityModal(false);
     };
     cResult[3] = fn2;
     let tmp8 = fn2;
@@ -202,9 +202,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, items);
   let obj = { style: tmp.container, children: null };
   const callback = noop.useCallback((arg0) => {
-    const result = allowPhone(12851).startContactSyncForDiscoverability(arg0);
-    const obj = allowPhone(12851);
-    const result1 = allowPhone(12851).closeDiscoverabilityModal(false);
+    const result = allowPhone(12887).startContactSyncForDiscoverability(arg0);
+    const obj = allowPhone(12887);
+    const result1 = allowPhone(12887).closeDiscoverabilityModal(false);
   }, []);
   const obj2 = { onNext: callback, loading: false, initialName: null };
   const tmp2 = useContactSyncModalStore();
@@ -256,7 +256,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj5 = { screens: first, initialRouteName: tmp(1098).DiscoverabilityScenes.LANDING, headerBackTitle: null };
     const intl = tmp(1119).intl;
     obj5.headerBackTitle = intl.string(tmp(1119).t["13/7kX"]);
-    const tmp7 = jsx(tmp(7246).Navigator, { screens: first, initialRouteName: tmp(1098).DiscoverabilityScenes.LANDING, headerBackTitle: null });
+    const tmp7 = jsx(tmp(7278).Navigator, { screens: first, initialRouteName: tmp(1098).DiscoverabilityScenes.LANDING, headerBackTitle: null });
     cResult[1] = tmp7;
     let tmp5 = tmp7;
   } else {

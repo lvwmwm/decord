@@ -1,13 +1,13 @@
-// Module ID: 16460
-// Function ID: 16461
+// Module ID: 16470
+// Function ID: 16471
 // Name: VoiceUserNameItem
-// Dependencies: [32, 19, 17, 21, 4758, 558, 568, 4991, 9974, 4603, 4754, 1119, 16461, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 558, 568, 5023, 10006, 4635, 4786, 1119, 16471, 2]
 
-// Module 16460 (VoiceUserNameItem)
+// Module 16470 (VoiceUserNameItem)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 4991 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9974 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5023 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 10006 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -15,7 +15,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsxs: metroRequire, jsx: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ container: { marginLeft: 8, flex: 1, flexDirection: "row" }, tag: { flexDirection: "row", alignItems: "center", paddingLeft: 8 }, measuringTag: { opacity: 0 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -38,8 +38,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       tmp8 = cResult[4];
     }
-    const displayNameStylesFont = tmp(9974).useDisplayNameStylesFont(tmp8);
-    const tmpResult = tmp(9974);
+    const displayNameStylesFont = tmp(10006).useDisplayNameStylesFont(tmp8);
+    const tmpResult = tmp(10006);
     [r10047, require] = noop.useState(0);
     const tmp12 = _slicedToArray(noop.useState(0), 2);
     [r10052, importDefault] = noop.useState(0);
@@ -195,7 +195,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const intl = tmp(1119).intl;
             const items = ["\u00A0", intl.string(tmp(1119).t["pFO/Ph"])];
             obj3.children = items;
-            const tmp33 = timestampProducer(tmp(4754).Text, obj3);
+            const tmp33 = timestampProducer(tmp(4786).Text, obj3);
           }
           cResult[16] = isGuest;
           cResult[17] = tmp33;
@@ -220,7 +220,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj4 = { variant, color, lineClamp: 1, onLayout: tmp19, style: tmp24, children: null };
         const items1 = [tmp29, tmp32];
         obj4.children = items1;
-        const tmp36 = timestampProducer(tmp(4754).Text, obj4);
+        const tmp36 = timestampProducer(tmp(4786).Text, obj4);
         cResult[18] = color;
         cResult[19] = tmp32;
         cResult[20] = tmp24;
@@ -320,8 +320,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     nick = member.nick;
   }
   if (nick == null) {
-    nick = tmp2(4603).getName(user);
-    const tmp2Result = tmp2(4603);
+    nick = tmp2(4635).getName(user);
+    const tmp2Result = tmp2(4635);
   }
   const items1 = [nick, ];
   if (isGuest) {
@@ -329,7 +329,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl = tmp5(1119).intl;
     const items2 = ["\u00A0", intl.string(tmp5(1119).t["pFO/Ph"])];
     obj6.children = items2;
-    isGuest = tmp18(tmp5(4754).Text, obj6);
+    isGuest = tmp18(tmp5(4786).Text, obj6);
   }
   items1[1] = isGuest;
   obj4.children = items1;
@@ -341,7 +341,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (tmp12) {
     const obj7 = { onLayout: callback2, style: tmp.tag, children: null };
     const obj8 = { userId: user.id };
-    obj7.children = React5(tmp2(16461), obj8);
+    obj7.children = React5(tmp2(16471), obj8);
     tmp12 = React5(tmp19, obj7);
   }
   items3[1] = tmp12;

@@ -1,14 +1,14 @@
-// Module ID: 17180
-// Function ID: 17181
+// Module ID: 17190
+// Function ID: 17191
 // Name: useFileOrLinkImageDimensions
-// Dependencies: [19, 8127, 558, 568, 2]
+// Dependencies: [19, 8159, 558, 568, 2]
 
-// Module 17180 (useFileOrLinkImageDimensions)
+// Module 17190 (useFileOrLinkImageDimensions)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const SearchConstants = fn(8127);
+const SearchConstants = fn(8159);
 ({ FILES_OR_LINKS_GAP_WIDTH: c3, FILES_OR_LINKS_NUM_COLUMNS: closure_4, FILE_OR_LINK_IMAGE_RATIO: hasOwnProperty, SEARCH_LIST_HORIZONTAL_PADDING: metroRequire } = SearchConstants);
 const ReactCompilerGating = fn(558);
 let size = fn(2);

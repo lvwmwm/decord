@@ -1,21 +1,21 @@
-// Module ID: 11116
-// Function ID: 11117
+// Module ID: 11152
+// Function ID: 11153
 // Name: SocialLayerStorefrontBadges
-// Dependencies: [19, 17, 21, 4758, 580, 1368, 558, 568, 11117, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 1368, 558, 568, 11153, 1119, 4786, 2]
 
-// Module 11116 (SocialLayerStorefrontBadges)
+// Module 11152 (SocialLayerStorefrontBadges)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ClydeIcon from "ClydeIcon" /* 11117 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ClydeIcon from "ClydeIcon" /* 11153 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { exclusiveBadge: { flexDirection: "row", alignItems: "center", textAlignVertical: "center", alignSelf: "flex-start", gap: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.round, paddingHorizontal: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, exclusiveBadgeText: null };
 let obj4 = { textTransform: "uppercase", fontSize: nativeDefault.space.PX_12, lineHeight: null };
 let PlatformUtils = fn(1368);
@@ -34,7 +34,7 @@ export const ExclusiveBadge = ReactCompilerGating.isReactCompilerEnabled() ? (()
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.WHITE };
-    const tmp8 = React4(tmp(11117).ClydeIcon, obj2);
+    const tmp8 = React4(tmp(11153).ClydeIcon, obj2);
     cResult[0] = tmp8;
     let first = tmp8;
   } else {
@@ -50,7 +50,7 @@ export const ExclusiveBadge = ReactCompilerGating.isReactCompilerEnabled() ? (()
   }
   if (cResult[2] !== tmp4.exclusiveBadgeText) {
     const obj3 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp4.exclusiveBadgeText, children: tmp9 };
-    const tmp13 = React4(tmp(4754).Text, obj3);
+    const tmp13 = React4(tmp(4786).Text, obj3);
     cResult[2] = tmp4.exclusiveBadgeText;
     cResult[3] = tmp13;
     let tmp11 = tmp13;

@@ -1,24 +1,24 @@
-// Module ID: 16439
-// Function ID: 16440
+// Module ID: 16449
+// Function ID: 16450
 // Name: MessagesFastestList
-// Dependencies: [19, 21, 4758, 580, 558, 568, 16384, 16369, 16433, 16381, 16379, 16434, 16394, 16432, 16435, 7311, 7309, 7302, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 16394, 16379, 16443, 16391, 16389, 16444, 16404, 16442, 16445, 7343, 7341, 7334, 2]
 
-// Module 16439 (MessagesFastestList)
+// Module 16449 (MessagesFastestList)
 import nativeDefault from "native" /* 580 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7309 */;
-import FastestListItemTypeDefault from "FastestListItemType" /* 7311 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 16379 */;
-import useMessagesData from "useMessagesData" /* 16384 */;
-import MessagesItemHappeningNowDefault from "MessagesItemHappeningNow" /* 16394 */;
-import MessagesItemEmptyStateDefault from "MessagesItemEmptyState" /* 16432 */;
-import MessagesItemSeparatorDefault from "MessagesItemSeparator" /* 16433 */;
-import MessagesItemSuggestedFriendsHeaderDefault from "MessagesItemSuggestedFriendsHeader" /* 16434 */;
-import MessagesItemAddFriendsWidget from "MessagesItemAddFriendsWidget" /* 16435 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7341 */;
+import FastestListItemTypeDefault from "FastestListItemType" /* 7343 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 16389 */;
+import useMessagesData from "useMessagesData" /* 16394 */;
+import MessagesItemHappeningNowDefault from "MessagesItemHappeningNow" /* 16404 */;
+import MessagesItemEmptyStateDefault from "MessagesItemEmptyState" /* 16442 */;
+import MessagesItemSeparatorDefault from "MessagesItemSeparator" /* 16443 */;
+import MessagesItemSuggestedFriendsHeaderDefault from "MessagesItemSuggestedFriendsHeader" /* 16444 */;
+import MessagesItemAddFriendsWidget from "MessagesItemAddFriendsWidget" /* 16445 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles(() => {
   const obj = { placeholder: { backgroundColor: nativeDefault.colors.BORDER_SUBTLE } };
   return obj;
@@ -389,18 +389,18 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   const fn2 = function u(arg0, row) {
     if (useMessagesData.MessagesDataSections.FavoriteChannels === arg0) {
       const obj2 = { channelId: channelFavorites[row].channelId, placeholderHeight: listItemHeight, row };
-      return jsx(tmp(16369).MessagesItemChannelFast, { channelId: channelFavorites[row].channelId, placeholderHeight: listItemHeight, row });
-    } else if (tmp(16384).MessagesDataSections.Channels === arg0) {
+      return jsx(tmp(16379).MessagesItemChannelFast, { channelId: channelFavorites[row].channelId, placeholderHeight: listItemHeight, row });
+    } else if (tmp(16394).MessagesDataSections.Channels === arg0) {
       const obj3 = { channelId: channels[row].channelId, placeholderHeight: listItemHeight, row };
-      return jsx(tmp(16369).MessagesItemChannelFast, { channelId: channels[row].channelId, placeholderHeight: listItemHeight, row });
-    } else if (tmp(16384).MessagesDataSections.Separator === arg0) {
+      return jsx(tmp(16379).MessagesItemChannelFast, { channelId: channels[row].channelId, placeholderHeight: listItemHeight, row });
+    } else if (tmp(16394).MessagesDataSections.Separator === arg0) {
       return jsx(MessagesItemSeparatorDefault, {});
-    } else if (tmp(16384).MessagesDataSections.SuggestedFriends === arg0) {
+    } else if (tmp(16394).MessagesDataSections.SuggestedFriends === arg0) {
       const obj4 = { suggestedFriend: friendSuggestions[row], onAddFriendSuggestions: setAddedFriendSuggestions };
       const obj5 = { height: listItemSuggestedFriendHeight };
       const merged = Object.assign(obj4);
-      return jsx(tmp(16381).MessagesItemSuggestedFriendFast, { height: listItemSuggestedFriendHeight });
-    } else if (tmp(16384).MessagesDataSections.Placeholders === arg0) {
+      return jsx(tmp(16391).MessagesItemSuggestedFriendFast, { height: listItemSuggestedFriendHeight });
+    } else if (tmp(16394).MessagesDataSections.Placeholders === arg0) {
       const obj = { row, height: listItemHeight };
       return jsx(MessagesItemPlaceholderDefault, { row, height: listItemHeight });
     } else {
@@ -453,18 +453,18 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   const callback = listLeft.useCallback((arg0, row) => {
     if (useMessagesData.MessagesDataSections.FavoriteChannels === arg0) {
       const obj2 = { channelId: channelFavorites[row].channelId, placeholderHeight: listItemHeight, row };
-      return jsx(tmp(16369).MessagesItemChannelFast, { channelId: channelFavorites[row].channelId, placeholderHeight: listItemHeight, row });
-    } else if (tmp(16384).MessagesDataSections.Channels === arg0) {
+      return jsx(tmp(16379).MessagesItemChannelFast, { channelId: channelFavorites[row].channelId, placeholderHeight: listItemHeight, row });
+    } else if (tmp(16394).MessagesDataSections.Channels === arg0) {
       const obj3 = { channelId: channels[row].channelId, placeholderHeight: listItemHeight, row };
-      return jsx(tmp(16369).MessagesItemChannelFast, { channelId: channels[row].channelId, placeholderHeight: listItemHeight, row });
-    } else if (tmp(16384).MessagesDataSections.Separator === arg0) {
+      return jsx(tmp(16379).MessagesItemChannelFast, { channelId: channels[row].channelId, placeholderHeight: listItemHeight, row });
+    } else if (tmp(16394).MessagesDataSections.Separator === arg0) {
       return jsx(MessagesItemSeparatorDefault, {});
-    } else if (tmp(16384).MessagesDataSections.SuggestedFriends === arg0) {
+    } else if (tmp(16394).MessagesDataSections.SuggestedFriends === arg0) {
       const obj4 = { suggestedFriend: friendSuggestions[row], onAddFriendSuggestions: setAddedFriendSuggestions };
       const obj5 = { height: listItemSuggestedFriendHeight };
       const merged = Object.assign(obj4);
-      return jsx(tmp(16381).MessagesItemSuggestedFriendFast, { height: listItemSuggestedFriendHeight });
-    } else if (tmp(16384).MessagesDataSections.Placeholders === arg0) {
+      return jsx(tmp(16391).MessagesItemSuggestedFriendFast, { height: listItemSuggestedFriendHeight });
+    } else if (tmp(16394).MessagesDataSections.Placeholders === arg0) {
       const obj = { row, height: listItemHeight };
       return jsx(MessagesItemPlaceholderDefault, { row, height: listItemHeight });
     } else {
@@ -537,12 +537,12 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   const items5 = [channels, channelFavorites];
   const callback1 = listLeft.useCallback((arg0) => {
     if (useMessagesData.MessagesDataSections.FavoriteChannels !== arg0) {
-      if (tmp(16384).MessagesDataSections.Channels !== arg0) {
-        if (tmp(16384).MessagesDataSections.Placeholders !== arg0) {
-          if (tmp(16384).MessagesDataSections.SuggestedFriends === arg0) {
+      if (tmp(16394).MessagesDataSections.Channels !== arg0) {
+        if (tmp(16394).MessagesDataSections.Placeholders !== arg0) {
+          if (tmp(16394).MessagesDataSections.SuggestedFriends === arg0) {
             return listItemSuggestedFriendHeight;
-          } else if (tmp(16384).MessagesDataSections.Separator === arg0) {
-            return tmp(16433).MESSAGES_ITEM_SEPERATOR_HEIGHT;
+          } else if (tmp(16394).MessagesDataSections.Separator === arg0) {
+            return tmp(16443).MESSAGES_ITEM_SEPERATOR_HEIGHT;
           } else {
             const _Error = Error;
             const _HermesInternal = HermesInternal;
@@ -557,11 +557,11 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   const items6 = [tmp, listItemSizes];
   const callback2 = listLeft.useCallback((arg0, arg1, arg2) => {
     if (FastestListItemTypeDefault.SECTION_HEADER !== arg0) {
-      if (tmp(7311).SECTION_FOOTER !== arg0) {
-        if (tmp(7311).ITEM === arg0) {
+      if (tmp(7343).SECTION_FOOTER !== arg0) {
+        if (tmp(7343).ITEM === arg0) {
           if (useMessagesData.MessagesDataSections.FavoriteChannels === arg1) {
             return channelFavorites[arg2].channelId;
-          } else if (tmp5(16384).MessagesDataSections.Channels === arg1) {
+          } else if (tmp5(16394).MessagesDataSections.Channels === arg1) {
             return channels[arg2].channelId;
           }
           tmp5 = require;

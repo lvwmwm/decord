@@ -1,13 +1,13 @@
-// Module ID: 15309
-// Function ID: 15310
+// Module ID: 15319
+// Function ID: 15320
 // Name: BountiesScrollIndicatorOverlay
-// Dependencies: [32, 19, 17, 21, 4762, 4758, 580, 558, 568, 4497, 4759, 5198, 15310, 1119, 4754, 2]
+// Dependencies: [32, 19, 17, 21, 4794, 4790, 580, 558, 568, 4529, 4791, 5230, 15320, 1119, 4786, 2]
 
-// Module 15309 (BountiesScrollIndicatorOverlay)
+// Module 15319 (BountiesScrollIndicatorOverlay)
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
-import timingPresets from "timingPresets" /* 4762 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
+import timingPresets from "timingPresets" /* 4794 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,8 +16,8 @@ const StyleSheet = fn(17).StyleSheet;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const colors = ["rgba(0,0,0,0)", "rgba(0,0,0,0.7)", "rgba(0,0,0,1)"];
-let closure_9 = 5000 + fn(4762).timingSlowDuration;
-const createStyles = fn(4758);
+let closure_9 = 5000 + fn(4794).timingSlowDuration;
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles(() => {
   const obj = { scrollIndicator: null, scrollIndicatorContent: null, scrollIndicatorText: null };
   const rect = { position: "absolute", left: 0, right: 0, bottom: 0, height: "45%", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_16 };

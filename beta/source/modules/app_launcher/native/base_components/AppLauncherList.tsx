@@ -1,24 +1,24 @@
-// Module ID: 12305
-// Function ID: 12306
+// Module ID: 12341
+// Function ID: 12342
 // Name: AppLauncherList
-// Dependencies: [19, 17, 21, 4758, 558, 568, 1616, 12242, 4467, 1119, 1181, 12306, 7297, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 1616, 12278, 4499, 1119, 1181, 12342, 7329, 2]
 
-// Module 12305 (AppLauncherList)
+// Module 12341 (AppLauncherList)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import SearchField from "SearchField" /* 7297 */;
-import AppLauncherFlashList from "AppLauncherFlashList" /* 12242 */;
-import _modDef12306 from "module_12306" /* 12306 */;
+import SearchField from "SearchField" /* 7329 */;
+import AppLauncherFlashList from "AppLauncherFlashList" /* 12278 */;
+import _modDef12342 from "module_12342" /* 12342 */;
 import noop from "module_19" /* 19 */;
 
-const mergeProps = tmp(4467);
-const AppLauncherFlashListDefault = tmp4(12242);
+const mergeProps = tmp(4499);
+const AppLauncherFlashListDefault = tmp4(12278);
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ searchBarContainer: { marginBottom: 16 }, emptyState: { backgroundColor: "transparent", justifyContent: "flex-start" }, emptyStateImage: { flex: 0 } });
 fn(558);
 let ReactCompilerGating = fn(558);
@@ -104,7 +104,7 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   const obj = require("AppLauncherFlashList");
   const merged = Object.assign(contentContainerStyle);
   ({ onScroll: obj2.animatedOnScroll, gestureRef: obj2.simultaneousHandlers, animatedProps: obj2.animatedProps } = appLauncherFlashListProps);
-  return jsx(appLauncherFlashListProps(12242), { contentContainerStyle: null, scrollIndicatorInsets: { bottom }, ref: memo });
+  return jsx(appLauncherFlashListProps(12278), { contentContainerStyle: null, scrollIndicatorInsets: { bottom }, ref: memo });
 }));
 ReactCompilerGating = fn(558);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -129,19 +129,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp9;
   }
-  const tmp10 = jsx(native.EmptyState, { style: emptyState, imageStyle: emptyStateImage, lightSource: _modDef12306, darkSource: _modDef12306, title: tmp5, body: tmp6 });
+  const tmp10 = jsx(native.EmptyState, { style: emptyState, imageStyle: emptyStateImage, lightSource: _modDef12342, darkSource: _modDef12342, title: tmp5, body: tmp6 });
   cResult[2] = tmp4.emptyState;
   cResult[3] = tmp4.emptyStateImage;
   cResult[4] = tmp10;
   tmp9 = tmp10;
 }) : (() => {
   const tmp = closure_6();
-  const obj = { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: _modDef12306, darkSource: _modDef12306, title: null, body: null };
+  const obj = { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: _modDef12342, darkSource: _modDef12342, title: null, body: null };
   const intl = util.intl;
   obj.title = intl.string(util.t.vYocDz);
   const intl2 = util.intl;
   obj.body = intl2.string(util.t.V6nAfF);
-  return jsx(native.EmptyState, { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: _modDef12306, darkSource: _modDef12306, title: null, body: null });
+  return jsx(native.EmptyState, { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: _modDef12342, darkSource: _modDef12342, title: null, body: null });
 });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherList.tsx");

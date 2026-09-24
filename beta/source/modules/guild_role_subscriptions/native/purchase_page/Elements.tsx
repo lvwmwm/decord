@@ -1,33 +1,33 @@
-// Module ID: 16894
-// Function ID: 16895
+// Module ID: 16904
+// Function ID: 16905
 // Name: Elements
-// Dependencies: [32, 109, 19, 17, 4423, 21, 4758, 580, 558, 568, 4754, 1119, 1181, 16895, 5341, 9478, 15486, 565, 9481, 7481, 2]
+// Dependencies: [32, 109, 19, 17, 4455, 21, 4790, 580, 558, 568, 4786, 1119, 1181, 16905, 5373, 9510, 15496, 565, 9513, 7513, 2]
 
-// Module 16894 (Elements)
+// Module 16904 (Elements)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9478 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15486 */;
-import _modDef16895 from "module_16895" /* 16895 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9510 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15496 */;
+import _modDef16905 from "module_16905" /* 16905 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4423 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4455 */;
 
 const require = globalThis.__r;
 
-const useStoreFrontPriceDefault = tmp(9481);
+const useStoreFrontPriceDefault = tmp(9513);
 require = fn;
 let closure_4 = ["lineClamp"];
 get_ActivityIndicator = fn(17);
 ({ TouchableOpacity: closure_8, View: closure_9 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { toggleTruncateButton: { alignSelf: "flex-start", borderBottomWidth: 0.8, borderColor: nativeDefault.colors.TEXT_DEFAULT, marginTop: 2 }, arrowButton: null, arrowButtonText: null, arrowButtonIcon: null };
 let obj3 = { alignSelf: "flex-start", borderBottomWidth: 0.8, borderColor: nativeDefault.colors.TEXT_DEFAULT, marginTop: 2 };
 obj2.arrowButton = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, height: 40, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
@@ -129,7 +129,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((lineClamp) => {
       const merged = Object.assign(tmp4);
       obj2.lineClamp = tmp20;
       obj2.onTextLayout = tmp21;
-      const tmp27 = closure_1_11(tmp(4754).Text, obj2);
+      const tmp27 = closure_1_11(tmp(4786).Text, obj2);
       cResult[11] = tmp4;
       cResult[12] = tmp20;
       cResult[13] = tmp21;
@@ -201,7 +201,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((lineClamp) => {
       }
     }
     const obj4 = { variant: "text-sm/medium", color: "text-default", children: tmp18 };
-    t = tmp16(tmp(4754).Text, obj4);
+    t = tmp16(tmp(4786).Text, obj4);
     obj3.children = t;
     tmp16(options, obj3);
   }
@@ -280,7 +280,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp5 = cResult[2];
     }
     if (cResult[3] !== tmp4.arrowButtonIcon) {
-      const obj2 = { size: tmp(1181).Icon.Sizes.SMALL, source: _modDef16895, style: tmp4.arrowButtonIcon };
+      const obj2 = { size: tmp(1181).Icon.Sizes.SMALL, source: _modDef16905, style: tmp4.arrowButtonIcon };
       const tmp10 = closure_1_11(tmp(1181).Icon, obj2);
       cResult[3] = tmp4.arrowButtonIcon;
       cResult[4] = tmp10;
@@ -301,7 +301,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { accessibilityRole: "button", style: tmp4.arrowButton, onPress, children: null };
     const items = [tmp5, tmp7];
     obj3.children = items;
-    const tmp13 = __initData(tmp(5341).PressableOpacity, obj3);
+    const tmp13 = __initData(tmp(5373).PressableOpacity, obj3);
     cResult[5] = onPress;
     cResult[6] = tmp4.arrowButton;
     cResult[7] = tmp5;
@@ -318,7 +318,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ text, onPress } = arg0);
   const tmp = closure_13();
   const obj = { accessibilityRole: "button", style: tmp.arrowButton, onPress, children: null };
-  const items = [closure_1_11(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", style: tmp.arrowButtonText, children: text }), closure_1_11(native.Icon, { size: native.Icon.Sizes.SMALL, source: _modDef16895, style: tmp.arrowButtonIcon })];
+  const items = [closure_1_11(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", style: tmp.arrowButtonText, children: text }), closure_1_11(native.Icon, { size: native.Icon.Sizes.SMALL, source: _modDef16905, style: tmp.arrowButtonIcon })];
   obj.children = items;
   return __initData(Pressables.PressableOpacity, obj);
 });
@@ -364,14 +364,14 @@ export const useFormattedSubscriptionPlan = ReactCompilerGating.isReactCompilerE
       str2 = "";
       const combined = concat(tmp8, "/mo.");
     }
-    const formatPriceResult = amount(7481).formatPrice(currency.amount, currency.currency);
+    const formatPriceResult = amount(7513).formatPrice(currency.amount, currency.currency);
     amount = currency.amount;
     concat[3] = amount;
     currency = currency.currency;
     concat[4] = currency;
     concat[5] = formatPriceResult;
     tmp8 = formatPriceResult;
-    const amountResult1 = amount(7481);
+    const amountResult1 = amount(7513);
   }
 }) : ((arg0) => {
   const mobileStoreFront = NativePaymentHooksDefault.useMobileStoreFront();
@@ -383,8 +383,8 @@ export const useFormattedSubscriptionPlan = ReactCompilerGating.isReactCompilerE
   let str = "No Price Available";
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    str = "" + tmp3(7481).formatPrice(price.amount, price.currency) + "/mo.";
-    const tmp3Result = tmp3(7481);
+    str = "" + tmp3(7513).formatPrice(price.amount, price.currency) + "/mo.";
+    const tmp3Result = tmp3(7513);
   }
   return str;
 });

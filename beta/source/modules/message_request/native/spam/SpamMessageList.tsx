@@ -1,23 +1,23 @@
-// Module ID: 17364
-// Function ID: 17365
+// Module ID: 17374
+// Function ID: 17375
 // Name: SpamMessageList
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 1119, 558, 568, 12599, 4458, 5812, 4769, 4961, 12591, 1245, 17349, 1181, 9617, 5341, 15190, 8876, 1616, 17358, 17365, 17356, 5086, 5091, 5203, 17359, 4754, 1368, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 1119, 558, 568, 12635, 4490, 5844, 4801, 4993, 12627, 1245, 17359, 1181, 9649, 5373, 15200, 8908, 1616, 17368, 17375, 17366, 5118, 5123, 5235, 17369, 4786, 1368, 2]
 
-// Module 17364 (SpamMessageList)
+// Module 17374 (SpamMessageList)
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import transitionToChannel from "transitionToChannel" /* 4769 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5086 */;
-import MetricEvents from "MetricEvents" /* 5091 */;
-import useMountEffectDefault from "useMountEffect" /* 5203 */;
-import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 17365 */;
+import transitionToChannel from "transitionToChannel" /* 4801 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5118 */;
+import MetricEvents from "MetricEvents" /* 5123 */;
+import useMountEffectDefault from "useMountEffect" /* 5235 */;
+import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 17375 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const MessageRequestEmptyDefault = tmp2(17359);
+const MessageRequestEmptyDefault = tmp2(17369);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty, FlatList: metroRequire } = get_ActivityIndicator);
@@ -25,7 +25,7 @@ const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 let c10 = "header-section";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { sectionContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "row", justifyContent: "space-between", marginTop: 6, marginBottom: 10 }, rowContainer: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginTop: 14, marginBottom: 12 }, actionContainer: { flexDirection: "row", alignItems: "flex-start", height: "100%" }, actionButton: null, acceptButton: null, pressableRow: null, activityIndicator: null, list: null };
 let size = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: nativeDefault.radii.lg, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
 obj2.actionButton = size;
@@ -732,10 +732,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageReque
   const tmp = closure_11();
   importDefault = tmp;
   const bottom = useSafeAreaInsetsDefault().bottom;
-  dependencyMap = goToMessageRequestPreview(17358).useSpamMessageRequestCount();
+  dependencyMap = goToMessageRequestPreview(17368).useSpamMessageRequestCount();
   const arr = useSortedSpamMessageRequestsDefault();
-  let obj = goToMessageRequestPreview(17358);
-  hasSingleMessageRequest = goToMessageRequestPreview(17356).useListHasSingleSpamMessageRequest();
+  let obj = goToMessageRequestPreview(17368);
+  hasSingleMessageRequest = goToMessageRequestPreview(17366).useListHasSingleSpamMessageRequest();
   useMountEffectDefault(() => {
     AnalyticsUtilsDefault.track(AnalyticEvents.SPAM_MESSAGE_REQUESTS_VIEWED, { num_spam_message_requests });
     const obj2 = { num_spam_message_requests };
@@ -794,5 +794,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageReque
     obj4.data = items;
     return closure_8(closure_6, obj4);
   }
-  let obj2 = goToMessageRequestPreview(17356);
+  let obj2 = goToMessageRequestPreview(17366);
 });

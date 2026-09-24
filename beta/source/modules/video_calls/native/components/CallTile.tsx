@@ -1,41 +1,41 @@
-// Module ID: 10311
-// Function ID: 10312
+// Module ID: 10350
+// Function ID: 10351
 // Name: CallTile
-// Dependencies: [19, 17, 4780, 1376, 9636, 4779, 21, 4758, 4608, 580, 558, 568, 7409, 1616, 504, 4959, 8453, 9678, 10278, 9706, 9714, 10312, 10317, 10318, 9361, 10039, 10319, 1181, 9644, 4497, 4759, 10320, 2]
+// Dependencies: [19, 17, 4812, 1376, 9668, 4811, 21, 4790, 4640, 580, 558, 568, 7441, 1616, 504, 4991, 8485, 9710, 10317, 9738, 9746, 10351, 10356, 10357, 9393, 10078, 10358, 1181, 9676, 4529, 4791, 10359, 2]
 
-// Module 10311 (CallTile)
+// Module 10350 (CallTile)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4959 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import _modDef9361 from "module_9361" /* 9361 */;
-import _modDef10039 from "module_10039" /* 10039 */;
-import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 10312 */;
-import _modDef10317 from "module_10317" /* 10317 */;
-import _modDef10318 from "module_10318" /* 10318 */;
-import _modDef10319 from "module_10319" /* 10319 */;
-import ParticipantTitleDefault from "ParticipantTitle" /* 10320 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4991 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
+import _modDef9393 from "module_9393" /* 9393 */;
+import _modDef10078 from "module_10078" /* 10078 */;
+import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 10351 */;
+import _modDef10356 from "module_10356" /* 10356 */;
+import _modDef10357 from "module_10357" /* 10357 */;
+import _modDef10358 from "module_10358" /* 10358 */;
+import ParticipantTitleDefault from "ParticipantTitle" /* 10359 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4812 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const ChannelCallStore = fn(9636);
+const ChannelCallStore = fn(9668);
 ({ resetFocus: closure_8, toggleFocus: closure_9 } = ChannelCallStore);
-const CallConstants = fn(4779);
+const CallConstants = fn(4811);
 ({ ParticipantTypes: c10, isStreamParticipant: closure_11, VoicePlatforms: closure_12 } = CallConstants);
 const jsxProd = fn(21);
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { liveContainer: { position: "absolute", top: 8, right: 8 }, titleIcon: { marginRight: 6 }, usernameContainer: null, usernamePosition: null, streamPreview: null, screenshareContainer: null, stageStreamContainer: null };
 let obj3 = { flexDirection: "row", alignItems: "center", alignSelf: "flex-start", backgroundColor: null, borderRadius: null, paddingHorizontal: 8, paddingVertical: 4 };
-const ColorUtils = fn(4608);
+const ColorUtils = fn(4640);
 obj3.backgroundColor = ColorUtils.hexOpacityToRgba(nativeDefault.unsafe_rawColors.PRIMARY_700, 0.5);
 obj3.borderRadius = nativeDefault.radii.sm;
 obj.usernameContainer = obj3;
@@ -130,17 +130,17 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) =
   participant = participant.participant;
   let titleIcon2 = closure_16();
   if (participant.type === constants.STREAM) {
-    let tmp4 = _modDef10317;
+    let tmp4 = _modDef10356;
   } else if (participant.type === tmp3.USER) {
     const voicePlatform = participant.voicePlatform;
     if (constants2.MOBILE === voicePlatform) {
-      tmp4 = _modDef10318;
+      tmp4 = _modDef10357;
     } else if (tmp15.XBOX === voicePlatform) {
-      tmp4 = _modDef9361;
+      tmp4 = _modDef9393;
     } else if (tmp15.PLAYSTATION === voicePlatform) {
-      tmp4 = _modDef10039;
+      tmp4 = _modDef10078;
     } else if (tmp15.QUEST === voicePlatform) {
-      tmp4 = _modDef10319;
+      tmp4 = _modDef10358;
     }
   }
   if (null == tmp4) {
@@ -160,17 +160,17 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) =
 }) : ((participant) => {
   participant = participant.participant;
   if (participant.type === constants.STREAM) {
-    let tmp3 = _modDef10317;
+    let tmp3 = _modDef10356;
   } else if (participant.type === tmp2.USER) {
     const voicePlatform = participant.voicePlatform;
     if (constants2.MOBILE === voicePlatform) {
-      tmp3 = _modDef10318;
+      tmp3 = _modDef10357;
     } else if (tmp19.XBOX === voicePlatform) {
-      tmp3 = _modDef9361;
+      tmp3 = _modDef9393;
     } else if (tmp19.PLAYSTATION === voicePlatform) {
-      tmp3 = _modDef10039;
+      tmp3 = _modDef10078;
     } else if (tmp19.QUEST === voicePlatform) {
-      tmp3 = _modDef10319;
+      tmp3 = _modDef10358;
     }
   }
   let tmp14 = null;
@@ -191,7 +191,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = reveal(568);
   let tmp = reveal;
   ({ bottom, left, top, right } = useSafeAreaInsetsDefault());
-  reveal = noop.useContext(reveal(9644).RevealContext).reveal;
+  reveal = noop.useContext(reveal(9676).RevealContext).reveal;
   const tmp6 = useSafeAreaInsetsDefault();
   const fn = function l() {
     let num = 0;
@@ -203,8 +203,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj2.opacity = obj.withTiming(num, { easing: native.STANDARD_EASING, duration: 250 });
     return obj2;
   };
-  let obj2 = reveal(4497);
-  fn.__closure = { withTiming: reveal(4759).withTiming, reveal, STANDARD_EASING: reveal(1181).STANDARD_EASING };
+  let obj2 = reveal(4529);
+  fn.__closure = { withTiming: reveal(4791).withTiming, reveal, STANDARD_EASING: reveal(1181).STANDARD_EASING };
   fn.__workletHash = 15640123774063;
   fn.__initData = __initData;
   const animatedStyle = obj2.useAnimatedStyle(fn);
@@ -271,7 +271,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     const obj5 = { pointerEvents: "none", style: tmp9, children: null };
                     const items = [tmp11, tmp26];
                     obj5.children = items;
-                    const tmp32 = closure_15(tmp5(4497).View, obj5);
+                    const tmp32 = closure_15(tmp5(4529).View, obj5);
                     cResult[23] = tmp26;
                     cResult[24] = tmp9;
                     cResult[25] = tmp11;
@@ -297,7 +297,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               tmp22 = tmp25;
             }
             const obj8 = { channel, participant };
-            const tmp21 = closure_13(tmp5(10320), obj8);
+            const tmp21 = closure_13(tmp5(10359), obj8);
             cResult[13] = channel;
             cResult[14] = participant;
             cResult[15] = tmp21;
@@ -334,7 +334,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ channel, hasLeftSafeArea, hasRightSafeArea, hasBottomSafeArea, hasTopSafeArea } = arg0);
   let tmp = closure_16();
   ({ bottom, left, top, right } = useSafeAreaInsetsDefault());
-  reveal = noop.useContext(reveal(9644).RevealContext).reveal;
+  reveal = noop.useContext(reveal(9676).RevealContext).reveal;
   const tmp4 = useSafeAreaInsetsDefault();
   const tmp5 = reveal;
   class A {
@@ -352,8 +352,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return obj1;
     }
   }
-  let obj = reveal(4497);
-  A.__closure = { withTiming: reveal(4759).withTiming, reveal, STANDARD_EASING: reveal(1181).STANDARD_EASING };
+  let obj = reveal(4529);
+  A.__closure = { withTiming: reveal(4791).withTiming, reveal, STANDARD_EASING: reveal(1181).STANDARD_EASING };
   A.__workletHash = 1463196379948;
   A.__initData = __initData2;
   let num = 0;

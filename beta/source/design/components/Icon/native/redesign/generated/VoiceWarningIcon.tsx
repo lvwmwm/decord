@@ -1,13 +1,13 @@
-// Module ID: 5319
-// Function ID: 5320
+// Module ID: 5351
+// Function ID: 5352
 // Name: VoiceWarningIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 5254, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 5286, 4493, 2]
 
-// Module 5319 (VoiceWarningIcon)
+// Module 5351 (VoiceWarningIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod5254 from "module_5254" /* 5254 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod5286 from "module_5286" /* 5286 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const VoiceWarningIcon = ReactCompilerGating.isReactCompilerEnabled() ? (
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(5254);
+    const tmpResult = tmp(5286);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const VoiceWarningIcon = ReactCompilerGating.isReactCompilerEnabled() ? (
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5254, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5286, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

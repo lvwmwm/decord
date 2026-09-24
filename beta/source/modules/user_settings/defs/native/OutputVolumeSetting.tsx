@@ -1,19 +1,19 @@
-// Module ID: 15510
-// Function ID: 15511
+// Module ID: 15520
+// Function ID: 15521
 // Name: OutputVolumeSetting
-// Dependencies: [1996, 8238, 558, 568, 504, 11594, 1119, 9889, 10236, 2]
+// Dependencies: [1996, 8270, 558, 568, 504, 11630, 1119, 9921, 10275, 2]
 
-// Module 15510 (OutputVolumeSetting)
+// Module 15520 (OutputVolumeSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9889 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10236 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9921 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10275 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -38,7 +38,7 @@ const volumeSlider = SettingBuilders.createVolumeSlider({
     const intl = util.intl;
     return intl.string(util.t.xPHVBs);
   },
-  parent: fn(8238).MobileUserSettings.VOICE,
+  parent: fn(8270).MobileUserSettings.VOICE,
   maximum: 200,
   useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);

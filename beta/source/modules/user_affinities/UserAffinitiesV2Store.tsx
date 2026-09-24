@@ -1,12 +1,12 @@
-// Module ID: 7900
-// Function ID: 7901
+// Module ID: 7932
+// Function ID: 7933
 // Name: UserAffinitiesV2Store
-// Dependencies: [4409, 7901, 504, 577, 2]
+// Dependencies: [4441, 7933, 504, 577, 2]
 
-// Module 7900 (UserAffinitiesV2Store)
+// Module 7932 (UserAffinitiesV2Store)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 
 function recomputeAffinities() {
   const userAffinities = obj.userAffinities;
@@ -16,7 +16,7 @@ function recomputeAffinities() {
     return items;
   }));
 }
-const USER_AFFINITY_TTL = fn(7901).USER_AFFINITY_TTL;
+const USER_AFFINITY_TTL = fn(7933).USER_AFFINITY_TTL;
 let map = new Map();
 let c3 = false;
 const frozen = Object.freeze({ userAffinities: [], lastFetched: 0 });

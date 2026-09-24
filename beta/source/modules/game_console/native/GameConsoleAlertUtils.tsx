@@ -1,19 +1,19 @@
-// Module ID: 10027
-// Function ID: 10028
+// Module ID: 10066
+// Function ID: 10067
 // Name: game_console/GameConsoleAlertUtils
-// Dependencies: [19, 1996, 9356, 1078, 21, 4579, 2031, 1119, 5111, 10028, 9339, 2]
+// Dependencies: [19, 1996, 9388, 1078, 21, 4611, 2031, 1119, 5143, 10067, 9371, 2]
 
-// Module 10027 (game_console/GameConsoleAlertUtils)
+// Module 10066 (game_console/GameConsoleAlertUtils)
 import util from "util" /* 1119 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5111 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9339 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5143 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9371 */;
 import noop from "module_19" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_4 = fn(9356).GAME_CONSOLE_ALERT_MODAL_LOCATION;
+let closure_4 = fn(9388).GAME_CONSOLE_ALERT_MODAL_LOCATION;
 const Constants = fn(1078);
 ({ InputModes: hasOwnProperty, PlatformTypes: metroRequire } = Constants);
 const jsx = fn(21).jsx;
@@ -41,7 +41,7 @@ export default {
             const intl = util.intl;
             obj2.body = intl.string(util.t.bL21zs);
             obj2.onConfirm = function onConfirm() {
-              const result = closure_0(4579).UNSAFE_markDismissibleContentAsDismissed(closure_0(2031).DismissibleContent.CONSOLE_PTT_DISABLE_ALERT);
+              const result = closure_0(4611).UNSAFE_markDismissibleContentAsDismissed(closure_0(2031).DismissibleContent.CONSOLE_PTT_DISABLE_ALERT);
               closure_0();
             };
             actions_AlertActionCreatorsDefault.show(obj2);
@@ -58,7 +58,7 @@ export default {
     ({ title, body, errorCodeMessage } = reconnectPlatformType);
     const obj2 = { title, body: null, onConfirm: null, isDismissable: false };
     let obj = actions_AlertActionCreatorsDefault;
-    obj2.body = jsx(reconnectPlatformType(10028).SelfDismissibleAlertBody, { body, errorCodeMessage, dismissCallback: actions_AlertActionCreatorsDefault.close });
+    obj2.body = jsx(reconnectPlatformType(10067).SelfDismissibleAlertBody, { body, errorCodeMessage, dismissCallback: actions_AlertActionCreatorsDefault.close });
     obj2.onConfirm = function onConfirm() {
       if (null != reconnectPlatformType) {
         const obj = { platformType: tmp, location: _location };

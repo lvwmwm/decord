@@ -1,23 +1,23 @@
-// Module ID: 8235
-// Function ID: 8236
+// Module ID: 8267
+// Function ID: 8268
 // Name: DoubleTapErrorToast
-// Dependencies: [19, 17, 1379, 21, 4758, 580, 558, 568, 8236, 4458, 4754, 1119, 2]
+// Dependencies: [19, 17, 1379, 21, 4790, 580, 558, 568, 8268, 4490, 4786, 1119, 2]
 // Exports: showDoubleTapErrorToast
 
-// Module 8235 (DoubleTapErrorToast)
+// Module 8267 (DoubleTapErrorToast)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import XSmallBoldIcon from "XSmallBoldIcon" /* 8236 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import XSmallBoldIcon from "XSmallBoldIcon" /* 8268 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const EmojiDisabledReasons = fn(1379).EmojiDisabledReasons;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { icon: { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.round, padding: nativeDefault.space.PX_4, marginLeft: nativeDefault.space.PX_4 } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

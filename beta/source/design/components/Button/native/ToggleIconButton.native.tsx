@@ -1,12 +1,12 @@
-// Module ID: 14448
-// Function ID: 14449
+// Module ID: 14486
+// Function ID: 14487
 // Name: ToggleIconButton
-// Dependencies: [109, 19, 21, 558, 568, 14447, 8179, 2]
+// Dependencies: [109, 19, 21, 558, 568, 14485, 8211, 2]
 
-// Module 14448 (ToggleIconButton)
+// Module 14486 (ToggleIconButton)
 import c from "c" /* 568 */;
-import BaseIconButton from "BaseIconButton" /* 8179 */;
-import useToggleButtonProps from "useToggleButtonProps" /* 14447 */;
+import BaseIconButton from "BaseIconButton" /* 8211 */;
+import useToggleButtonProps from "useToggleButtonProps" /* 14485 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -58,7 +58,7 @@ export const ToggleIconButton = noop.forwardRef(ReactCompilerGating.isReactCompi
         if (cResult[13] === tmp15) {
           let tmp19 = cResult[14];
         }
-        const toggleIconButtonProps = tmp(14447).useToggleIconButtonProps(tmp19, tmp12);
+        const toggleIconButtonProps = tmp(14485).useToggleIconButtonProps(tmp19, tmp12);
         const tmp23 = tmp12 ? dependencyMap[str].on : dependencyMap[str].off;
         if (cResult[15] === ref) {
           if (cResult[16] === tmp23) {
@@ -72,13 +72,13 @@ export const ToggleIconButton = noop.forwardRef(ReactCompilerGating.isReactCompi
         const merged = Object.assign(toggleIconButtonProps);
         obj2.ref = ref;
         obj2.variant = tmp23;
-        const tmp30 = jsx(tmp(8179).BaseIconButton, {});
+        const tmp30 = jsx(tmp(8211).BaseIconButton, {});
         cResult[15] = ref;
         cResult[16] = tmp23;
         cResult[17] = toggleIconButtonProps;
         cResult[18] = tmp30;
         tmp25 = tmp30;
-        const tmpResult = tmp(14447);
+        const tmpResult = tmp(14485);
       }
       const obj3 = { on: tmp13, off: tmp15 };
       cResult[12] = tmp13;

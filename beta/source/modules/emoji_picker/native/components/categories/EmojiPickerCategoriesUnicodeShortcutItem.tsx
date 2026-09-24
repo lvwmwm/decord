@@ -1,10 +1,10 @@
-// Module ID: 10539
-// Function ID: 10540
+// Module ID: 10575
+// Function ID: 10576
 // Name: EmojiPickerCategoriesUnicodeShortcutItem
-// Dependencies: [32, 19, 17, 1078, 21, 4758, 558, 568, 4497, 9660, 1119, 10528, 5341, 2]
+// Dependencies: [32, 19, 17, 1078, 21, 4790, 558, 568, 4529, 9692, 1119, 10564, 5373, 2]
 
-// Module 10539 (EmojiPickerCategoriesUnicodeShortcutItem)
-import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9660 */;
+// Module 10575 (EmojiPickerCategoriesUnicodeShortcutItem)
+import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9692 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -13,7 +13,7 @@ const View = fn(17).View;
 const Constants = fn(1078);
 ({ EXPRESSION_FOOTER_HEIGHT: metroRequire, NODE_SIZE } = Constants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { itemInner: null, fadedItemOpacity: { opacity: 0.5 } };
 let size = { justifyContent: "center", alignItems: "center", height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2 };
 obj2.itemInner = size;
@@ -56,8 +56,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((blockRef) => {
           num = EXPRESSION_FOOTER_HEIGHT;
         }
         const diff = end.end - num;
-        tmp2(4497).runOnJS(closure_5)(result > diff);
-        const tmp2Result = tmp2(4497);
+        tmp2(4529).runOnJS(closure_5)(result > diff);
+        const tmp2Result = tmp2(4529);
       }
       obj = cheapWorkletShallowEqual;
       tmp = safeAreaState2;
@@ -169,8 +169,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((blockRef) => {
           num = EXPRESSION_FOOTER_HEIGHT;
         }
         const diff = end.end - num;
-        tmp2(4497).runOnJS(closure_5)(result > diff);
-        const tmp2Result = tmp2(4497);
+        tmp2(4529).runOnJS(closure_5)(result > diff);
+        const tmp2Result = tmp2(4529);
       }
       obj = cheapWorkletShallowEqual;
       tmp = safeAreaState2;

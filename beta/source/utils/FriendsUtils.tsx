@@ -1,14 +1,14 @@
-// Module ID: 10013
-// Function ID: 10014
+// Module ID: 10052
+// Function ID: 10053
 // Name: FriendsUtils
-// Dependencies: [32, 1078, 1119, 38, 1245, 8652, 2]
+// Dependencies: [32, 1078, 1119, 38, 1245, 8684, 2]
 // Exports: humanizeAbortCodeForA11y, isValidDiscordTag
 
-// Module 10013 (FriendsUtils)
+// Module 10052 (FriendsUtils)
 import _modDef38 from "module_38" /* 38 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import ValidationUtilsDefault from "ValidationUtils" /* 8652 */;
+import ValidationUtilsDefault from "ValidationUtils" /* 8684 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

@@ -1,14 +1,14 @@
-// Module ID: 16707
-// Function ID: 16708
+// Module ID: 16717
+// Function ID: 16718
 // Name: usePrivateProfileCoachmarkProps
-// Dependencies: [19, 17, 1078, 2042, 21, 4758, 558, 568, 6604, 1190, 1119, 8920, 2023, 2031, 7626, 2]
+// Dependencies: [19, 17, 1078, 2042, 21, 4790, 558, 568, 6636, 1190, 1119, 8952, 2023, 2031, 7658, 2]
 
-// Module 16707 (usePrivateProfileCoachmarkProps)
+// Module 16717 (usePrivateProfileCoachmarkProps)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
-import PrivateProfileAbstractUI from "PrivateProfileAbstractUI" /* 6604 */;
-import openUserSettings from "openUserSettings" /* 7626 */;
+import PrivateProfileAbstractUI from "PrivateProfileAbstractUI" /* 6636 */;
+import openUserSettings from "openUserSettings" /* 7658 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ const View = fn(17).View;
 const UserSettingsSections = fn(1078).UserSettingsSections;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" } });
 let ReactCompilerGating = fn(558);
 let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -48,7 +48,7 @@ export const usePrivateProfileCoachmarkProps = ReactCompilerGating.isReactCompil
   const cResult = markAsDismissed(568).c(15);
   markAsDismissed = markAsDismissed.markAsDismissed;
   const obj = markAsDismissed(568);
-  let userIsTeen = markAsDismissed(8920).useUserIsTeen();
+  let userIsTeen = markAsDismissed(8952).useUserIsTeen();
   const ProfileVisibility = markAsDismissed(2023).ProfileVisibility;
   const setting = ProfileVisibility.useSetting();
   if (userIsTeen) {

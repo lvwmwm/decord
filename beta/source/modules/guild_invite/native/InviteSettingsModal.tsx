@@ -1,22 +1,22 @@
-// Module ID: 18256
-// Function ID: 18257
+// Module ID: 18266
+// Function ID: 18267
 // Name: InviteSettingsModal
-// Dependencies: [32, 19, 2045, 10056, 2067, 4399, 1078, 21, 4758, 580, 558, 568, 1488, 38, 504, 12, 18257, 10061, 5110, 1119, 577, 5203, 7621, 18258, 10057, 8876, 1253, 5839, 7246, 2]
+// Dependencies: [32, 19, 2045, 10095, 2067, 4431, 1078, 21, 4790, 580, 558, 568, 1488, 38, 504, 12, 18267, 10100, 5142, 1119, 577, 5235, 7653, 18268, 10096, 8908, 1253, 5871, 7278, 2]
 
-// Module 18256 (InviteSettingsModal)
+// Module 18266 (InviteSettingsModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
-import Navigator from "Navigator" /* 7246 */;
-import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 10061 */;
-import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 18257 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
+import Navigator from "Navigator" /* 7278 */;
+import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 10100 */;
+import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 18267 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 10056 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 10095 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 const require = globalThis.__r;
 
@@ -24,7 +24,7 @@ require = fn;
 const Constants = fn(1078);
 ({ InviteModalScenes: closure_9, Permissions: c10 } = Constants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { formContainer: { paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_32 }, formContent: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_32 };
 obj2.formContent = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
@@ -175,7 +175,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     }
-    const unmountEffect = tmp(5203).useUnmountEffect(tmp21);
+    const unmountEffect = tmp(5235).useUnmountEffect(tmp21);
     if (cResult[9] !== channel) {
       class G {
         constructor() {
@@ -280,7 +280,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     const obj = { onPress, text: null };
                     const intl = navigation(1119).intl;
                     obj.text = intl.string(navigation(1119).t["R3BPH+"]);
-                    tmp = jsx(navigation(7621).HeaderActionButton, { onPress, text: null });
+                    tmp = jsx(navigation(7653).HeaderActionButton, { onPress, text: null });
                   }
                   return tmp;
                 }
@@ -295,7 +295,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[13] = navigation;
     cResult[14] = M;
     cResult[15] = items2;
-    const tmpResult3 = tmp(5203);
+    const tmpResult3 = tmp(5235);
   }
   obj4 = noop;
   const tmpResult = navigation(504);
@@ -358,8 +358,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }, items1);
   const tmp2Result = navigation(12);
-  const unmountEffect = navigation(5203).useUnmountEffect(() => {
-    channel(577).wait(channel(10061).resetSettings);
+  const unmountEffect = navigation(5235).useUnmountEffect(() => {
+    channel(577).wait(channel(10100).resetSettings);
   });
   const items2 = [channel];
   callback = obj3.useCallback(() => {
@@ -386,39 +386,39 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj = { onPress, text: null };
           const intl = navigation(1119).intl;
           obj.text = intl.string(navigation(1119).t["R3BPH+"]);
-          tmp = jsx(navigation(7621).HeaderActionButton, { onPress, text: null });
+          tmp = jsx(navigation(7653).HeaderActionButton, { onPress, text: null });
         }
         return tmp;
       }
     });
   }, items3);
   const callback1 = obj3.useCallback((maxUses) => {
-    channel(10061).updateSettings({ maxUses });
+    channel(10100).updateSettings({ maxUses });
   }, []);
   const callback2 = obj3.useCallback((maxAge) => {
-    channel(10061).updateSettings({ maxAge });
+    channel(10100).updateSettings({ maxAge });
   }, []);
   const callback3 = obj3.useCallback((temporary) => {
-    channel(10061).updateSettings({ temporary });
+    channel(10100).updateSettings({ temporary });
   }, []);
   const callback4 = obj3.useCallback((flags) => {
-    channel(10061).updateSettings({ flags });
+    channel(10100).updateSettings({ flags });
   }, []);
   const callback5 = obj3.useCallback((roleIds) => {
-    channel(10061).updateSettings({ roleIds });
+    channel(10100).updateSettings({ roleIds });
   }, []);
   let obj4 = { contentContainerStyle: tmp.formContainer, children: null };
   let obj5 = { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: null, temporary: null, flags: null, roleIds: null, onChangeMaxAge: null, onChangeMaxUses: null, onChangeTemporary: null, onChangeFlags: null, onChangeRoleIds: null };
-  const tmp2Result2 = navigation(5203);
-  obj5.maxUsesOptions = channel(10057).getMaxUsesOptions;
+  const tmp2Result2 = navigation(5235);
+  obj5.maxUsesOptions = channel(10096).getMaxUsesOptions;
   ({ temporary: obj7.temporary, flags: obj7.flags, roleIds: obj7.roleIds } = settings);
   obj5.onChangeMaxAge = callback2;
   obj5.onChangeMaxUses = callback1;
   obj5.onChangeTemporary = callback3;
   obj5.onChangeFlags = callback4;
   obj5.onChangeRoleIds = callback5;
-  obj4.children = jsx(channel(18258), { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: null, temporary: null, flags: null, roleIds: null, onChangeMaxAge: null, onChangeMaxUses: null, onChangeTemporary: null, onChangeFlags: null, onChangeRoleIds: null });
-  return jsx(navigation(8876).Form, { contentContainerStyle: tmp.formContainer, children: null });
+  obj4.children = jsx(channel(18268), { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: null, temporary: null, flags: null, roleIds: null, onChangeMaxAge: null, onChangeMaxUses: null, onChangeTemporary: null, onChangeFlags: null, onChangeRoleIds: null });
+  return jsx(navigation(8908).Form, { contentContainerStyle: tmp.formContainer, children: null });
 });
 ReactCompilerGating = fn(558);
 let obj4 = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
@@ -432,20 +432,20 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj3 = { impressionName: tmp(1253).ImpressionNames.GUILD_INVITE_LINK_SETTINGS, title: null, headerLeft: null, render: null };
     const intl = tmp(1119).intl;
     obj3.title = intl.string(tmp(1119).t.Yx4IiC);
-    obj3.headerLeft = tmp(5839).getHeaderCloseButton(CreateInviteModalActionCreatorsDefault.close);
+    obj3.headerLeft = tmp(5871).getHeaderCloseButton(CreateInviteModalActionCreatorsDefault.close);
     obj3.render = function render() {
       return closure_1_11(closure_1_13, {});
     };
     obj2[constants.ADVANCED] = obj3;
     cResult[0] = obj2;
     let first = obj2;
-    const tmpResult = tmp(5839);
+    const tmpResult = tmp(5871);
   } else {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { screens: first, initialRouteName: constants.ADVANCED };
-    const tmp10 = jsx(tmp(7246).Navigator, { screens: first, initialRouteName: constants.ADVANCED });
+    const tmp10 = jsx(tmp(7278).Navigator, { screens: first, initialRouteName: constants.ADVANCED });
     cResult[1] = tmp10;
     let tmp7 = tmp10;
   } else {

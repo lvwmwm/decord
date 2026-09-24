@@ -1,14 +1,14 @@
-// Module ID: 9971
-// Function ID: 9972
+// Module ID: 10003
+// Function ID: 10004
 // Name: useIsEmptyRTCConnection
-// Dependencies: [502, 4781, 4797, 558, 568, 504, 2]
+// Dependencies: [502, 4813, 4829, 558, 568, 504, 2]
 
-// Module 9971 (useIsEmptyRTCConnection)
+// Module 10003 (useIsEmptyRTCConnection)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4797 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4829 */;
 
 require = fn;
 fn(558);

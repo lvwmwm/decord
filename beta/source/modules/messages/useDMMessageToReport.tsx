@@ -1,13 +1,13 @@
-// Module ID: 12756
-// Function ID: 12757
+// Module ID: 12792
+// Function ID: 12793
 // Name: useDMMessageToReport
-// Dependencies: [558, 568, 12757, 12599, 12758, 2]
+// Dependencies: [558, 568, 12793, 12635, 12794, 2]
 
-// Module 12756 (useDMMessageToReport)
+// Module 12792 (useDMMessageToReport)
 import c from "c" /* 568 */;
-import useLongestChannelMessageBeforeReply from "useLongestChannelMessageBeforeReply" /* 12599 */;
-import useIsRelationshipTypeSpamReportable from "useIsRelationshipTypeSpamReportable" /* 12757 */;
-import useMessageRequestPreview from "useMessageRequestPreview" /* 12758 */;
+import useLongestChannelMessageBeforeReply from "useLongestChannelMessageBeforeReply" /* 12635 */;
+import useIsRelationshipTypeSpamReportable from "useIsRelationshipTypeSpamReportable" /* 12793 */;
+import useMessageRequestPreview from "useMessageRequestPreview" /* 12794 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

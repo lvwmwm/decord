@@ -1,12 +1,12 @@
-// Module ID: 17944
-// Function ID: 17945
+// Module ID: 17954
+// Function ID: 17955
 // Name: AutomodStore
-// Dependencies: [32, 5, 19, 11993, 1078, 1247, 17945, 1252, 11998, 4659, 4383, 558, 568, 2]
+// Dependencies: [32, 5, 19, 12029, 1078, 1247, 17955, 1252, 12034, 4691, 4415, 558, 568, 2]
 // Exports: getRuleCountByTriggerType, useSyncAutomodRules
 
-// Module 17944 (AutomodStore)
-import _mod4383 from "module_4383" /* 4383 */;
-import SystemRulesUtils from "SystemRulesUtils" /* 17945 */;
+// Module 17954 (AutomodStore)
+import _mod4415 from "module_4415" /* 4415 */;
+import SystemRulesUtils from "SystemRulesUtils" /* 17955 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -14,7 +14,7 @@ import noop from "module_19" /* 19 */;
 const require = globalThis.__r;
 
 require = fn;
-const AutomodTriggerType = fn(11993).AutomodTriggerType;
+const AutomodTriggerType = fn(12029).AutomodTriggerType;
 const EMPTY_STRING_SNOWFLAKE_ID = fn(1078).EMPTY_STRING_SNOWFLAKE_ID;
 let closure_7 = {};
 const identity = fn(1247);
@@ -221,7 +221,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items = [, ];
     ({ syncRules: arr[0], fetching: arr[1] } = arg0);
     return items;
-  }, require("module_4383").shallow), 2);
+  }, require("module_4415").shallow), 2);
   first = tmp3[0];
   asyncGeneratorStep = tmp5;
   const items = [tmp2[0], ];
@@ -381,7 +381,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items = [, ];
     ({ syncRules: arr[0], fetching: arr[1] } = arg0);
     return items;
-  }, require("module_4383").shallow), 2);
+  }, require("module_4415").shallow), 2);
   first = tmp2[0];
   asyncGeneratorStep = tmp4;
   let items = [tmp[0], ];
@@ -514,7 +514,7 @@ function useSyncAutomodRules(arg0) {
     const items = [, ];
     ({ syncRules: arr[0], fetching: arr[1] } = arg0);
     return items;
-  }, _mod4383.shallow), 2);
+  }, _mod4415.shallow), 2);
   const first = tmp2[0];
   closure_3 = tmp4;
   const items = [tmp[0], ];
@@ -624,7 +624,7 @@ export const useAutomodRulesList = ReactCompilerGating.isReactCompilerEnabled() 
   } else {
     tmp4 = cResult[1];
   }
-  return withEqualityFn(tmp4, require("module_4383").shallow);
+  return withEqualityFn(tmp4, require("module_4415").shallow);
 }) : ((arg0) => {
   _require = arg0;
   return withEqualityFn((updateRule) => {
@@ -637,5 +637,5 @@ export const useAutomodRulesList = ReactCompilerGating.isReactCompilerEnabled() 
       obj = {};
     }
     return { rulesByTriggerType: obj, updateRule: updateRule.updateRule, removeRule: updateRule.removeRule };
-  }, require("module_4383").shallow);
+  }, require("module_4415").shallow);
 });

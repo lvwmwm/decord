@@ -1,14 +1,14 @@
-// Module ID: 7844
-// Function ID: 7845
+// Module ID: 7876
+// Function ID: 7877
 // Name: ConversationMessageCacheUtils
-// Dependencies: [502, 4409, 4980, 4411, 2]
+// Dependencies: [502, 4441, 5012, 4443, 2]
 // Exports: applyHydratedMessages, applyReaction, applyRelationshipFlags, removeHydratedMessage, replaceHydratedMessage
 
-// Module 7844 (ConversationMessageCacheUtils)
-import ReactionUtils from "ReactionUtils" /* 4411 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 4980 */;
+// Module 7876 (ConversationMessageCacheUtils)
+import ReactionUtils from "ReactionUtils" /* 4443 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5012 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 
 require = fn;
 const size = fn(2);

@@ -1,13 +1,13 @@
-// Module ID: 8985
-// Function ID: 8986
+// Module ID: 9017
+// Function ID: 9018
 // Name: GameProfileHeader
-// Dependencies: [19, 17, 8983, 21, 4758, 580, 558, 568, 4497, 8986, 8987, 5198, 8988, 4754, 2]
+// Dependencies: [19, 17, 9015, 21, 4790, 580, 558, 568, 4529, 9018, 9019, 5230, 9020, 4786, 2]
 
-// Module 8985 (GameProfileHeader)
+// Module 9017 (GameProfileHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 8987 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 9019 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,15 +17,15 @@ const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 let c8 = 114;
 let c9 = "rgba(0,0,0,0.3)";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, artHero: null, artHeroImage: null, artHeroGradient: null, headerContent: null, shadowContainer: null, coverContainer: null, iconContainer: null, image: null, titleContainer: null, textShadow: null };
 const rect = { width: "100%", position: "absolute", top: 0, bottom: -nativeDefault.space.PX_80, left: 0, right: 0 };
 obj2.artHero = rect;
 obj2.artHeroImage = { height: "100%", width: "100%", resizeMode: "cover" };
 obj2.artHeroGradient = { position: "absolute", top: 0, bottom: 0, left: 0, right: 0 };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-obj2.headerContent = { paddingTop: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "flex-end", maxWidth: fn(8983).MOBILE_GAME_PROFILE_MAX_WIDTH, alignSelf: "center", width: "100%" };
-let obj4 = { paddingTop: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "flex-end", maxWidth: fn(8983).MOBILE_GAME_PROFILE_MAX_WIDTH, alignSelf: "center", width: "100%" };
+obj2.headerContent = { paddingTop: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "flex-end", maxWidth: fn(9015).MOBILE_GAME_PROFILE_MAX_WIDTH, alignSelf: "center", width: "100%" };
+let obj4 = { paddingTop: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "flex-end", maxWidth: fn(9015).MOBILE_GAME_PROFILE_MAX_WIDTH, alignSelf: "center", width: "100%" };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 obj2.shadowContainer = { borderRadius: nativeDefault.radii.sm };
 let size = { width: 85, height: 114, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
@@ -61,7 +61,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const animatedStyle = ReanimatedRexport.useAnimatedStyle(fn);
   if (cResult[0] !== game.genres) {
     const genres = game.genres;
-    const mapped = genres.map(tmp(8986).getGenreText);
+    const mapped = genres.map(tmp(9018).getGenreText);
     const joined = mapped.join(", ");
     cResult[0] = game.genres;
     cResult[1] = joined;
@@ -168,14 +168,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj3 = { style: tmp17, children: null };
         const items1 = [tmp18, tmp22];
         obj3.children = items1;
-        const tmp27 = React5(tmp8(4497).View, obj3);
+        const tmp27 = React5(tmp8(4529).View, obj3);
         cResult[19] = tmp17;
         cResult[20] = tmp18;
         cResult[21] = tmp22;
         cResult[22] = tmp27;
       }
       const obj4 = { colors: tmp21, style: tmp4.artHeroGradient };
-      const tmp24 = timestampProducer(tmp8(5198), obj4);
+      const tmp24 = timestampProducer(tmp8(5230), obj4);
       cResult[16] = tmp4.artHeroGradient;
       cResult[17] = tmp21;
       cResult[18] = tmp24;

@@ -1,9 +1,9 @@
-// Module ID: 12625
-// Function ID: 12626
+// Module ID: 12661
+// Function ID: 12662
 // Name: useCommunicationDisabledCountdownCleanup
-// Dependencies: [19, 558, 568, 7686, 12626, 2]
+// Dependencies: [19, 558, 568, 7718, 12662, 2]
 
-// Module 12625 (useCommunicationDisabledCountdownCleanup)
+// Module 12661 (useCommunicationDisabledCountdownCleanup)
 import noop from "module_19" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

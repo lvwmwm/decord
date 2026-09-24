@@ -1,9 +1,9 @@
-// Module ID: 16319
-// Function ID: 16320
+// Module ID: 16329
+// Function ID: 16330
 // Name: PromotionalEmailCheckBox
-// Dependencies: [19, 17, 6833, 21, 4758, 558, 568, 4479, 1119, 5820, 4754, 2]
+// Dependencies: [19, 17, 6865, 21, 4790, 558, 568, 4511, 1119, 5852, 4786, 2]
 
-// Module 16319 (PromotionalEmailCheckBox)
+// Module 16329 (PromotionalEmailCheckBox)
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -11,11 +11,11 @@ const require = globalThis.__r;
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c2, Pressable: c3 } = get_ActivityIndicator);
-const PromoEmailConsentStore = fn(6833);
+const PromoEmailConsentStore = fn(6865);
 ({ usePromoEmailConsentStore: closure_4, setPromoEmailConsentChecked: hasOwnProperty } = PromoEmailConsentStore);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ checkboxRow: { flexDirection: "row", alignItems: "flex-start", gap: 8 }, checkboxLabel: { flex: 1 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj3 = { checked: tmp6Result };
-      const tmp16 = closure_6(tmp(5820).FormCheckbox, obj3);
+      const tmp16 = closure_6(tmp(5852).FormCheckbox, obj3);
       cResult[7] = tmp6Result;
       cResult[8] = tmp16;
     } else {
@@ -123,7 +123,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj4 = { variant: "text-xs/medium", color: "text-muted", style: tmp4.checkboxLabel, children: tmp17 };
-      const tmp20 = closure_6(tmp(4754).Text, obj4);
+      const tmp20 = closure_6(tmp(4786).Text, obj4);
       cResult[10] = tmp4.checkboxLabel;
       cResult[11] = tmp20;
     } else {
@@ -177,11 +177,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     };
     obj3.style = tmp.checkboxRow;
     const obj4 = { checked: tmp3 };
-    const items = [closure_6(tmp4(5820).FormCheckbox, obj4), ];
+    const items = [closure_6(tmp4(5852).FormCheckbox, obj4), ];
     const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.checkboxLabel, children: null };
     const intl2 = tmp4(1119).intl;
     obj5.children = intl2.string(tmp4(1119).t.ylFCLt);
-    items[1] = closure_6(tmp4(4754).Text, obj5);
+    items[1] = closure_6(tmp4(4786).Text, obj5);
     obj3.children = items;
     obj2.children = closure_7(closure_3, obj3);
     tmp9 = closure_6(closure_2, obj2);

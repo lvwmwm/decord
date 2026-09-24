@@ -1,11 +1,11 @@
-// Module ID: 6862
-// Function ID: 6863
+// Module ID: 6894
+// Function ID: 6895
 // Name: useBottomSheetKeyboardHandling
-// Dependencies: [19, 558, 568, 6863, 2]
+// Dependencies: [19, 558, 568, 6895, 2]
 
-// Module 6862 (useBottomSheetKeyboardHandling)
+// Module 6894 (useBottomSheetKeyboardHandling)
 import c from "c" /* 568 */;
-import BottomSheetModal from "BottomSheetModal" /* 6863 */;
+import BottomSheetModal from "BottomSheetModal" /* 6895 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

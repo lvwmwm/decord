@@ -1,13 +1,13 @@
-// Module ID: 9197
-// Function ID: 9198
+// Module ID: 9229
+// Function ID: 9230
 // Name: QuoteIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 9198, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9230, 4493, 2]
 
-// Module 9197 (QuoteIcon)
+// Module 9229 (QuoteIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod9198 from "module_9198" /* 9198 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9230 from "module_9230" /* 9230 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const QuoteIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(9198);
+    const tmpResult = tmp(9230);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const QuoteIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9198, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9230, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

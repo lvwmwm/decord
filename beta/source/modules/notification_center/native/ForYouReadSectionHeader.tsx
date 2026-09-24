@@ -1,20 +1,20 @@
-// Module ID: 16778
-// Function ID: 16779
+// Module ID: 16788
+// Function ID: 16789
 // Name: ForYouReadSectionHeader
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 4786, 2]
 
-// Module 16778 (ForYouReadSectionHeader)
+// Module 16788 (ForYouReadSectionHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c2, StyleSheet } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, marginVertical: 8, paddingHorizontal: 24 }, textHeader: null };
 const obj3 = { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, marginVertical: 8, paddingHorizontal: 24 };
 obj2.textHeader = { color: nativeDefault.colors.TEXT_SUBTLE, marginTop: 20 };
@@ -38,7 +38,7 @@ export const ForYouReadSectionHeader = ReactCompilerGating.isReactCompilerEnable
   }
   if (cResult[1] !== tmp4.textHeader) {
     const obj2 = { style: textHeader, variant: "text-sm/semibold", children: first };
-    const tmp9 = jsx(tmp(4754).Text, { style: textHeader, variant: "text-sm/semibold", children: first });
+    const tmp9 = jsx(tmp(4786).Text, { style: textHeader, variant: "text-sm/semibold", children: first });
     cResult[1] = tmp4.textHeader;
     cResult[2] = tmp9;
     let tmp7 = tmp9;

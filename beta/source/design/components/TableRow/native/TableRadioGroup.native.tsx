@@ -1,9 +1,9 @@
-// Module ID: 5901
-// Function ID: 5902
+// Module ID: 5933
+// Function ID: 5934
 // Name: TableRadioGroup
-// Dependencies: [32, 19, 1078, 21, 558, 568, 5902, 5900, 5903, 2]
+// Dependencies: [32, 19, 1078, 21, 558, 568, 5934, 5932, 5935, 2]
 
-// Module 5901 (TableRadioGroup)
+// Module 5933 (TableRadioGroup)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -44,7 +44,7 @@ export const TableRadioGroup = ReactCompilerGating.isReactCompilerEnabled() ? ((
         let tmp9 = cResult[4];
       }
       const imperativeHandle = mapped.useImperativeHandle(groupRef.groupRef, tmp8, tmp9);
-      context = mapped.useContext(tmp(5902).RedesignCompatContext);
+      context = mapped.useContext(tmp(5934).RedesignCompatContext);
       if (cResult[5] === tmp4) {
         if (cResult[6] === onChange) {
           let tmp12 = cResult[7];
@@ -81,7 +81,7 @@ export const TableRadioGroup = ReactCompilerGating.isReactCompilerEnabled() ? ((
                 }
               }
               const obj3 = { accessibilityRole: "radiogroup", accessibilityLabel, title, description, helperText, hasIcons, children: cResult[13] };
-              const tmp19 = context(tmp(5903).TableRowGroup, obj3);
+              const tmp19 = context(tmp(5935).TableRowGroup, obj3);
               cResult[16] = accessibilityLabel;
               cResult[17] = description;
               cResult[18] = hasIcons;
@@ -212,7 +212,7 @@ export const TableRadioGroup = ReactCompilerGating.isReactCompilerEnabled() ? ((
       return selectedValue;
     }
   }), items);
-  jsx = obj.useContext(onChange(5902).RedesignCompatContext);
+  jsx = obj.useContext(onChange(5934).RedesignCompatContext);
   const items1 = [undefined !== value, onChange];
   onSelect = obj.useCallback((arg0) => {
     if (!closure_1) {
@@ -233,6 +233,6 @@ export const TableRadioGroup = ReactCompilerGating.isReactCompilerEnabled() ? ((
     }
     tmp4 = type;
   });
-  obj2.children = jsx(onChange(5903).TableRowGroup, { accessibilityRole: "radiogroup", accessibilityLabel, title, description, helperText, hasIcons, children: null });
+  obj2.children = jsx(onChange(5935).TableRowGroup, { accessibilityRole: "radiogroup", accessibilityLabel, title, description, helperText, hasIcons, children: null });
   return <onSelect.Provider value={noop.useMemo(() => ({ selectedValue, onSelect }), items2)}>{null}</onSelect.Provider>;
 });

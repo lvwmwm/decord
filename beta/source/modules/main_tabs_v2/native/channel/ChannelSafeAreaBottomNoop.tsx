@@ -1,9 +1,9 @@
-// Module ID: 12807
-// Function ID: 12808
+// Module ID: 12843
+// Function ID: 12844
 // Name: ChannelSafeAreaBottomNoop
 // Dependencies: [19, 17, 21, 558, 568, 2]
 
-// Module 12807 (ChannelSafeAreaBottomNoop)
+// Module 12843 (ChannelSafeAreaBottomNoop)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

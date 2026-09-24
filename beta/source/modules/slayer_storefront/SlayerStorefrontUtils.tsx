@@ -1,21 +1,21 @@
-// Module ID: 7473
-// Function ID: 7474
+// Module ID: 7505
+// Function ID: 7506
 // Name: SlayerStorefrontUtils
-// Dependencies: [4985, 7474, 2006, 2067, 4580, 7475, 7476, 1078, 1080, 1089, 4999, 7477, 12, 7478, 1370, 5675, 558, 568, 504, 7415, 2]
+// Dependencies: [5017, 7506, 2006, 2067, 4612, 7507, 7508, 1078, 1080, 1089, 5031, 7509, 12, 7510, 1370, 5707, 558, 568, 504, 7447, 2]
 // Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getCountryPrices, getForwardedSKUShareURL, getForwardedStorefrontEmbedShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getRequiredSubscriptionPlanIds, getRewardRequirementPlanTargetingParams, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, getStorefrontEmbedShareURL, hasPrice, isGameItemSKU, isGiftPriceDifferent, isOnCollectiblesShopGameShopPage, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer
 
-// Module 7473 (SlayerStorefrontUtils)
+// Module 7505 (SlayerStorefrontUtils)
 import _modDef12 from "module_12" /* 12 */;
 import URLUtilsDefault from "URLUtils" /* 1370 */;
-import StoreUtils from "StoreUtils" /* 4999 */;
-import keysSorter from "keysSorter" /* 5675 */;
-import SocialLayerStorefrontTypes from "SocialLayerStorefrontTypes" /* 7477 */;
-import StorefrontUtils from "StorefrontUtils" /* 7478 */;
-import ApplicationStore from "ApplicationStore" /* 4985 */;
+import StoreUtils from "StoreUtils" /* 5031 */;
+import keysSorter from "keysSorter" /* 5707 */;
+import SocialLayerStorefrontTypes from "SocialLayerStorefrontTypes" /* 7509 */;
+import StorefrontUtils from "StorefrontUtils" /* 7510 */;
+import ApplicationStore from "ApplicationStore" /* 5017 */;
 import ApplicationRecord from "ApplicationRecord" /* 2006 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7475 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7507 */;
 
 const require = globalThis.__r;
 
@@ -168,15 +168,15 @@ function getSKUShareURL(guildId, applicationId) {
   }
   combined = "" + location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT + state.COLLECTIBLES_SHOP_GAME_SHOP(applicationId.applicationId, undefined, applicationId.id, applicationId.slug);
 }
-let closure_4 = fn(7474).WishlistRecommendationReason;
-const SocialLayerStorefrontConstants = fn(7476);
+let closure_4 = fn(7506).WishlistRecommendationReason;
+const SocialLayerStorefrontConstants = fn(7508);
 ({ getChannelsGameShopPrefix: closure_9, STOREFRONT_MARKETING_GUILD_ID: c10, STOREFRONT_MARKETING_GUILD_ID_TEST: closure_11 } = SocialLayerStorefrontConstants);
 const Constants = fn(1078);
 ({ GuildFeatures: closure_12, PriceSetAssignmentPurchaseTypes: map1, Routes: closure_14, SKUProductLines: closure_15 } = Constants);
 const CollectibleShopTab = fn(1080).CollectibleShopTab;
 const CurrencyCodes = fn(1089).CurrencyCodes;
 let str = "jpg";
-if (fn(4999).SUPPORTS_WEBP) {
+if (fn(5031).SUPPORTS_WEBP) {
   str = "webp";
 }
 fn(558);
@@ -516,7 +516,7 @@ export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(te
       if (0 !== tenantMetadata.tenantMetadata.socialLayer.carouselItems.length) {
         const first = tenantMetadata.tenantMetadata.socialLayer.carouselItems[0];
         if (null == first.labelIconAssetId) {
-          let obj4 = { primaryIconAsset: "Array", primaryIconLabel: "Set" };
+          let obj4 = { primaryIconAsset: "state", primaryIconLabel: "toCharArray$esjava$1" };
         } else {
           const obj3 = StoreUtils;
           const toURLSafeResult = URLUtilsDefault.toURLSafe(obj3.getAssetURL(arg1, first.labelIconAssetId, num, "webp"));
@@ -526,7 +526,7 @@ export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(te
       }
     }
   }
-  return { primaryIconAsset: "Array", primaryIconLabel: "Set" };
+  return { primaryIconAsset: "state", primaryIconLabel: "toCharArray$esjava$1" };
 };
 export const getGameItemThumbnailUrl = function getGameItemThumbnailUrl(value2) {
   let obj = arg1;

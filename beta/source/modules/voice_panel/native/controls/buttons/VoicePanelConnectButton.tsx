@@ -1,18 +1,18 @@
-// Module ID: 17610
-// Function ID: 17611
+// Module ID: 17620
+// Function ID: 17621
 // Name: VoicePanelConnectButton
-// Dependencies: [19, 2045, 21, 4758, 580, 558, 568, 12419, 17546, 504, 1119, 4968, 7573, 8669, 5630, 5112, 17611, 17614, 17615, 13229, 4754, 17609, 2]
+// Dependencies: [19, 2045, 21, 4790, 580, 558, 568, 12455, 17556, 504, 1119, 5000, 7605, 8701, 5662, 5144, 17621, 17624, 17625, 13265, 4786, 17619, 2]
 
-// Module 17610 (VoicePanelConnectButton)
+// Module 17620 (VoicePanelConnectButton)
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useAlertStore from "useAlertStore" /* 5112 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5630 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8669 */;
-import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 13229 */;
-import VoicePanelNoJoinPermissionsAlert from "VoicePanelNoJoinPermissionsAlert" /* 17611 */;
-import VoicePanelMaxCapacityAlert from "VoicePanelMaxCapacityAlert" /* 17614 */;
-import VoicePanelNsfwAlert from "VoicePanelNsfwAlert" /* 17615 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useAlertStore from "useAlertStore" /* 5144 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5662 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8701 */;
+import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 13265 */;
+import VoicePanelNoJoinPermissionsAlert from "VoicePanelNoJoinPermissionsAlert" /* 17621 */;
+import VoicePanelMaxCapacityAlert from "VoicePanelMaxCapacityAlert" /* 17624 */;
+import VoicePanelNsfwAlert from "VoicePanelNsfwAlert" /* 17625 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
@@ -24,7 +24,7 @@ const VoicePanelNsfwAlertDefault = VoicePanelNsfwAlert;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { connectButton: { backgroundColor: nativeDefault.unsafe_rawColors.GREEN_360, paddingLeft: nativeDefault.space.PX_8, paddingRight: nativeDefault.space.PX_8 }, connectText: { textAlign: "center" } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

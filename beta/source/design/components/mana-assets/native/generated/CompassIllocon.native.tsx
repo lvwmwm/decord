@@ -1,13 +1,13 @@
-// Module ID: 6104
-// Function ID: 6105
+// Module ID: 6136
+// Function ID: 6137
 // Name: CompassIllocon
-// Dependencies: [21, 558, 568, 6105, 5802, 2]
+// Dependencies: [21, 558, 568, 6137, 5834, 2]
 
-// Module 6104 (CompassIllocon)
+// Module 6136 (CompassIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6105 from "module_6105" /* 6105 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6137 from "module_6137" /* 6137 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const CompassIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6105 };
+    const obj2 = { uri: _modDef6137 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const CompassIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6105 };
+  const obj2 = { uri: _modDef6137 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

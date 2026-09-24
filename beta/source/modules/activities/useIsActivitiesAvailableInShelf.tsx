@@ -1,10 +1,10 @@
-// Module ID: 9666
-// Function ID: 9667
+// Module ID: 9698
+// Function ID: 9699
 // Name: useIsActivitiesAvailableInShelf
-// Dependencies: [19, 558, 568, 9608, 9667, 9589, 2]
+// Dependencies: [19, 558, 568, 9640, 9699, 9621, 2]
 
-// Module 9666 (useIsActivitiesAvailableInShelf)
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9589 */;
+// Module 9698 (useIsActivitiesAvailableInShelf)
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9621 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, arg1) =
   const cResult = require("c").c(8);
   let obj = require("c");
   const isActivitiesEnabledForCurrentPlatform = require("useIsActivitiesEnabledForCurrentPlatform").useIsActivitiesEnabledForCurrentPlatform();
-  const tmp3 = isActivitiesEnabledForCurrentPlatform(9667)(arg1);
+  const tmp3 = isActivitiesEnabledForCurrentPlatform(9699)(arg1);
   if (cResult[0] === guildId) {
     if (cResult[1] === tmp3) {
       let tmp4 = cResult[2];

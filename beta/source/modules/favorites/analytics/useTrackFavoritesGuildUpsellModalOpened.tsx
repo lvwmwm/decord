@@ -1,12 +1,12 @@
-// Module ID: 10611
-// Function ID: 10612
+// Module ID: 10647
+// Function ID: 10648
 // Name: useTrackFavoritesGuildUpsellModalOpened
-// Dependencies: [19, 1078, 558, 568, 7409, 7429, 1245, 2]
+// Dependencies: [19, 1078, 558, 568, 7441, 7461, 1245, 2]
 
-// Module 10611 (useTrackFavoritesGuildUpsellModalOpened)
+// Module 10647 (useTrackFavoritesGuildUpsellModalOpened)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7441 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

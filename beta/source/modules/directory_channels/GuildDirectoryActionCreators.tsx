@@ -1,14 +1,14 @@
-// Module ID: 12464
-// Function ID: 12465
+// Module ID: 12500
+// Function ID: 12501
 // Name: GuildDirectoryActionCreators
-// Dependencies: [5, 12451, 12453, 1078, 551, 577, 1275, 4951, 1253, 2]
+// Dependencies: [5, 12487, 12489, 1078, 551, 577, 1275, 4983, 1253, 2]
 // Exports: addDirectoryGuildEntry, clearDirectorySearch, fetchGuildEntriesForIds, removeDirectoryGuildEntry, selectDirectoryCategory, updateDirectoryEntry
 
-// Module 12464 (GuildDirectoryActionCreators)
+// Module 12500 (GuildDirectoryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4951 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4983 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 12451 */;
+import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 12487 */;
 import "debounce";
 import debounce_mod from "debounce" /* 551 */;
 
@@ -75,7 +75,7 @@ let closure_9 = async function _fetchGuildEntriesForIds(arg0, entity_ids) {
     return value;
   })();
 };
-const DirectoryEntryCategories = fn(12453).DirectoryEntryCategories;
+const DirectoryEntryCategories = fn(12489).DirectoryEntryCategories;
 let Endpoints = fn(1078).Endpoints;
 asyncGeneratorStep(async (arg0, category_id) => {
   closure_0 = arg0;

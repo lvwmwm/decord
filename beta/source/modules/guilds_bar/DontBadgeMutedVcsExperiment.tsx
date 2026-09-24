@@ -1,10 +1,10 @@
-// Module ID: 13977
-// Function ID: 13978
+// Module ID: 14013
+// Function ID: 14014
 // Name: DontBadgeMutedVcsExperiment
 // Dependencies: [1439, 558, 568, 2]
 // Exports: getIsDontBadgeMutedVcsEnabled
 
-// Module 13977 (DontBadgeMutedVcsExperiment)
+// Module 14013 (DontBadgeMutedVcsExperiment)
 import c from "c" /* 568 */;
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1439 */;
 

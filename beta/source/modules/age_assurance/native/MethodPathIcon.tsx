@@ -1,11 +1,11 @@
-// Module ID: 8732
-// Function ID: 8733
+// Module ID: 8764
+// Function ID: 8765
 // Name: MethodPathIcon
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4462, 8733, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4494, 8765, 2]
 
-// Module 8732 (MethodPathIcon)
+// Module 8764 (MethodPathIcon)
 import nativeDefault from "native" /* 580 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -14,7 +14,7 @@ const inlineStylesDefault = inlineStyles;
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: null };
 let size = { width: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, height: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.lg };
 obj2.container = size;
@@ -28,7 +28,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
   let paths = icon.icon;
   const tmp3 = closure_5();
   const obj = token(568);
-  token = token(4462).useToken(nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT);
+  token = token(4494).useToken(nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT);
   if (cResult[0] === paths.paths) {
     if (cResult[1] === token) {
       if (cResult[5] !== cResult[2]) {

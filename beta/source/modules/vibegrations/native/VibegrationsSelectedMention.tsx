@@ -1,17 +1,17 @@
-// Module ID: 17031
-// Function ID: 17032
+// Module ID: 17041
+// Function ID: 17042
 // Name: VibegrationsSelectedMention
-// Dependencies: [19, 21, 4758, 580, 558, 568, 4754, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 4786, 2]
 
-// Module 17031 (VibegrationsSelectedMention)
+// Module 17041 (VibegrationsSelectedMention)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 const obj2 = { chip: { color: nativeDefault.colors.MENTION_FOREGROUND, backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, borderRadius: 3, paddingHorizontal: 2 } };
 let closure_3 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

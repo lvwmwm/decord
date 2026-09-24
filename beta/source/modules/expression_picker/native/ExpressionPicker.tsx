@@ -1,13 +1,13 @@
-// Module ID: 10652
-// Function ID: 10653
+// Module ID: 10688
+// Function ID: 10689
 // Name: ExpressionPicker
-// Dependencies: [19, 17, 1222, 1078, 1379, 21, 4758, 580, 558, 568, 10653, 10442, 1486, 1614, 9868, 4938, 10467, 10654, 5173, 9869, 10655, 10656, 10678, 2]
+// Dependencies: [19, 17, 1222, 1078, 1379, 21, 4790, 580, 558, 568, 10689, 10481, 1486, 1614, 9900, 4970, 10506, 10690, 5205, 9901, 10691, 10692, 10714, 2]
 
-// Module 10652 (ExpressionPicker)
+// Module 10688 (ExpressionPicker)
 import nativeDefault from "native" /* 580 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4938 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 10442 */;
-import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 10467 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4970 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 10481 */;
+import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 10506 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ const AnalyticEvents = fn(1078).AnalyticEvents;
 const EmojiIntention = fn(1379).EmojiIntention;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { expressionPickerContainer: { flex: 1, overflow: "hidden", backgroundColor: nativeDefault.colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT, position: "relative", paddingHorizontal: PADDING_HORIZONTAL }, expressionPickerContent: { flex: 1 }, segmentedControl: { paddingTop: 2 * PADDING_HORIZONTAL, paddingHorizontal: 0 }, segmentedControlUnpadded: { paddingHorizontal: 0 } };
 let closure_11 = createStyles.createStyles(obj);
 const ReactCompilerGating = fn(558);
@@ -41,7 +41,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     if (cResult[1] === visibleTabs) {
       let tmp5 = cResult[2];
     }
-    const tmp7 = expressionPickerViewType(10653)(tmp5);
+    const tmp7 = expressionPickerViewType(10689)(tmp5);
     ({ expressionPickerSelectedIndex, expressionPickerViewType } = tmp7);
     const prop = tmp7.expressionPickerTabStrings;
     if (cResult[3] !== channel) {
@@ -140,7 +140,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
             return obj;
           }
         }
-        const segmentedControlState = tmp(9868).useSegmentedControlState(tmp19);
+        const segmentedControlState = tmp(9900).useSegmentedControlState(tmp19);
         if (cResult[15] !== expressionPickerViewType) {
           class U {
             constructor(arg0) {
@@ -183,9 +183,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
             }
           }
         }
-        const tmp29 = tmp6(10654)(tmp27);
-        const tmpResult = tmp(9868);
-        const isScreenReaderEnabled = tmp(5173).useIsScreenReaderEnabled();
+        const tmp29 = tmp6(10690)(tmp27);
+        const tmpResult = tmp(9900);
+        const isScreenReaderEnabled = tmp(5205).useIsScreenReaderEnabled();
         if (cResult[20] === tmp29) {
           class U {
             constructor(arg0) {
@@ -213,7 +213,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         cResult[20] = tmp29;
         cResult[21] = isScreenReaderEnabled;
         cResult[22] = tmp31;
-        const tmpResult2 = tmp(5173);
+        const tmpResult2 = tmp(5205);
       }
       let obj3 = { pageWidth: 0, defaultIndex: expressionPickerSelectedIndex, onSetActiveIndex: tmp14, items: tmp15 };
       cResult[12] = expressionPickerSelectedIndex;

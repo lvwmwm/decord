@@ -1,9 +1,9 @@
-// Module ID: 9073
-// Function ID: 9074
+// Module ID: 9105
+// Function ID: 9106
 // Name: useWishlistGiftableItems
 // Dependencies: [19, 1078, 558, 568, 2]
 
-// Module 9073 (useWishlistGiftableItems)
+// Module 9105 (useWishlistGiftableItems)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

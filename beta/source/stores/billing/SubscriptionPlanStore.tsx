@@ -1,14 +1,14 @@
-// Module ID: 4423
-// Function ID: 4424
+// Module ID: 4455
+// Function ID: 4456
 // Name: SubscriptionPlanStore
-// Dependencies: [4419, 1078, 1378, 2021, 504, 11, 577, 2]
+// Dependencies: [4451, 1078, 1378, 2021, 504, 11, 577, 2]
 
-// Module 4423 (SubscriptionPlanStore)
+// Module 4455 (SubscriptionPlanStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import FunctionUtils from "FunctionUtils" /* 2021 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4419 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4451 */;
 
 require = fn;
 function addSubscriptionPlan(fromServer) {

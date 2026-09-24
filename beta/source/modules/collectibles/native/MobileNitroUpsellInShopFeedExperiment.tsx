@@ -1,9 +1,9 @@
-// Module ID: 16121
-// Function ID: 16122
+// Module ID: 16131
+// Function ID: 16132
 // Name: MobileNitroUpsellInShopFeedExperiment
 // Dependencies: [1439, 2]
 
-// Module 16121 (MobileNitroUpsellInShopFeedExperiment)
+// Module 16131 (MobileNitroUpsellInShopFeedExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1439 */;
 
 const size = fn(2);

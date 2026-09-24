@@ -1,24 +1,24 @@
-// Module ID: 16127
-// Function ID: 16128
+// Module ID: 16137
+// Function ID: 16138
 // Name: ShopBlockItem
-// Dependencies: [19, 17, 7789, 21, 4758, 580, 558, 568, 504, 7819, 9045, 16128, 16141, 16143, 16150, 2]
+// Dependencies: [19, 17, 7821, 21, 4790, 580, 558, 568, 504, 7851, 9077, 16138, 16151, 16153, 16160, 2]
 
-// Module 16127 (ShopBlockItem)
+// Module 16137 (ShopBlockItem)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ShopBlockType from "ShopBlockType" /* 7819 */;
-import HeroBlockDefault from "HeroBlock" /* 16128 */;
-import FeaturedBlockDefault from "FeaturedBlock" /* 16141 */;
-import FeedBlockDefault from "FeedBlock" /* 16143 */;
-import ShelfBlockDefault from "ShelfBlock" /* 16150 */;
+import ShopBlockType from "ShopBlockType" /* 7851 */;
+import HeroBlockDefault from "HeroBlock" /* 16138 */;
+import FeaturedBlockDefault from "FeaturedBlock" /* 16151 */;
+import FeedBlockDefault from "FeedBlock" /* 16153 */;
+import ShelfBlockDefault from "ShelfBlock" /* 16160 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7789 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7821 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { shopBlockSpacing: { marginTop: nativeDefault.space.PX_16 } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -59,7 +59,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = initialize;
   let str2 = initialize.useStateFromStores(tmp8, tmp9);
   if (block.type !== ShopBlockType.ShopBlockType.HERO) {
-    if (block.type !== tmp(7819).ShopBlockType.REWARD_HERO) {
+    if (block.type !== tmp(7851).ShopBlockType.REWARD_HERO) {
       const _HermesInternal3 = HermesInternal;
       str = "-";
       str2 = "";
@@ -72,7 +72,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _HermesInternal = HermesInternal;
     const combined1 = "hero-" + block.categoryStoreListingId;
     const type = block.type;
-    if (tmp(7819).ShopBlockType.HERO === type) {
+    if (tmp(7851).ShopBlockType.HERO === type) {
       const _Symbol3 = Symbol;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
         const obj2 = { pageSection: "top 4" };
@@ -94,14 +94,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj3 = { newValue: tmp45, children: null };
       const obj4 = { heroBlock: block, preferVCPrice, screen };
       obj3.children = jsx(HeroBlockDefault, { heroBlock: block, preferVCPrice, screen }, combined1);
-      const tmp49 = jsx(tmp(9045).CollectiblesAnalyticsProvider, { newValue: tmp45, children: null });
+      const tmp49 = jsx(tmp(9077).CollectiblesAnalyticsProvider, { newValue: tmp45, children: null });
       cResult[5] = block;
       cResult[6] = preferVCPrice;
       cResult[7] = screen;
       cResult[8] = combined1;
       cResult[9] = tmp49;
       tmp46 = tmp49;
-    } else if (tmp(7819).ShopBlockType.FEATURED === type) {
+    } else if (tmp(7851).ShopBlockType.FEATURED === type) {
       const _Symbol2 = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
         const obj5 = { pageSection: "featured_block" };
@@ -130,13 +130,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj7 = { newValue: tmp36, children: null };
       const obj8 = { style: tmp4.shopBlockSpacing, children: tmp37 };
       obj7.children = <View key={combined1} style={tmp4.shopBlockSpacing}>{tmp37}</View>;
-      const tmp44 = jsx(tmp(9045).CollectiblesAnalyticsProvider, { newValue: tmp36, children: null });
+      const tmp44 = jsx(tmp(9077).CollectiblesAnalyticsProvider, { newValue: tmp36, children: null });
       cResult[13] = combined1;
       cResult[14] = tmp4.shopBlockSpacing;
       cResult[15] = tmp37;
       cResult[16] = tmp44;
       tmp41 = tmp44;
-    } else if (tmp(7819).ShopBlockType.FEED === type) {
+    } else if (tmp(7851).ShopBlockType.FEED === type) {
       const _Symbol = Symbol;
       if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
         const obj9 = { pageSection: "popular picks" };
@@ -160,7 +160,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const obj10 = { newValue: tmp27, children: null };
             const obj11 = { style: tmp4.shopBlockSpacing, children: tmp28 };
             obj10.children = <View style={tmp4.shopBlockSpacing}>{tmp28}</View>;
-            const tmp35 = jsx(tmp(9045).CollectiblesAnalyticsProvider, { newValue: tmp27, children: null });
+            const tmp35 = jsx(tmp(9077).CollectiblesAnalyticsProvider, { newValue: tmp27, children: null });
             cResult[23] = tmp4.shopBlockSpacing;
             cResult[24] = tmp28;
             cResult[25] = tmp35;
@@ -176,7 +176,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[21] = combined1;
       cResult[22] = tmp31;
       tmp28 = tmp31;
-    } else if (tmp(7819).ShopBlockType.SHELF === type) {
+    } else if (tmp(7851).ShopBlockType.SHELF === type) {
       if (cResult[26] !== block.name) {
         const obj13 = { pageSection: block.name };
         cResult[26] = block.name;
@@ -201,7 +201,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return tmp24;
             }
             const obj14 = { newValue: tmp15, children: tmp20 };
-            const tmp26 = jsx(tmp(9045).CollectiblesAnalyticsProvider, { newValue: tmp15, children: tmp20 });
+            const tmp26 = jsx(tmp(9077).CollectiblesAnalyticsProvider, { newValue: tmp15, children: tmp20 });
             cResult[35] = tmp15;
             cResult[36] = tmp20;
             cResult[37] = tmp26;
@@ -223,7 +223,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[31] = tmp19;
       tmp16 = tmp19;
     } else {
-      const WIDE_BANNER = tmp(7819).ShopBlockType.WIDE_BANNER;
+      const WIDE_BANNER = tmp(7851).ShopBlockType.WIDE_BANNER;
       return null;
     }
   }

@@ -1,16 +1,16 @@
-// Module ID: 11128
-// Function ID: 11129
+// Module ID: 11164
+// Function ID: 11165
 // Name: UnifiedGiftModal
-// Dependencies: [32, 19, 21, 558, 568, 4961, 11129, 1119, 5839, 11130, 11161, 7246, 7409, 2]
+// Dependencies: [32, 19, 21, 558, 568, 4993, 11165, 1119, 5871, 11166, 11197, 7278, 7441, 2]
 
-// Module 11128 (UnifiedGiftModal)
+// Module 11164 (UnifiedGiftModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import Navigator from "Navigator" /* 7246 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7409 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 11129 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import Navigator from "Navigator" /* 7278 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7441 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 11165 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -151,8 +151,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             const tmp6 = closure_6(tmp4);
             if (cResult[7] !== tmp6) {
-              const obj2 = { initialRouteName: tmp(11129).UnifiedGiftModalScreens.GIFT_DETAIL, screens: tmp6 };
-              const tmp9 = jsx(tmp(7246).Navigator, { initialRouteName: tmp(11129).UnifiedGiftModalScreens.GIFT_DETAIL, screens: tmp6 });
+              const obj2 = { initialRouteName: tmp(11165).UnifiedGiftModalScreens.GIFT_DETAIL, screens: tmp6 };
+              const tmp9 = jsx(tmp(7278).Navigator, { initialRouteName: tmp(11165).UnifiedGiftModalScreens.GIFT_DETAIL, screens: tmp6 });
               cResult[7] = tmp6;
               cResult[8] = tmp9;
               let tmp7 = tmp9;
@@ -166,7 +166,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return tmp10;
             }
             const obj3 = { value: analyticsLocations, children: tmp7 };
-            const tmp12 = jsx(tmp(7409).AnalyticsLocationProvider, { value: analyticsLocations, children: tmp7 });
+            const tmp12 = jsx(tmp(7441).AnalyticsLocationProvider, { value: analyticsLocations, children: tmp7 });
             cResult[9] = analyticsLocations;
             cResult[10] = tmp7;
             cResult[11] = tmp12;

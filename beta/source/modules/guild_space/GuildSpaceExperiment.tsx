@@ -1,12 +1,12 @@
-// Module ID: 7472
-// Function ID: 7473
+// Module ID: 7504
+// Function ID: 7505
 // Name: GuildSpaceExperiment
-// Dependencies: [4672, 558, 568, 2]
+// Dependencies: [4704, 558, 568, 2]
 // Exports: getGuildSpaceExperimentEnabled
 
-// Module 7472 (GuildSpaceExperiment)
+// Module 7504 (GuildSpaceExperiment)
 import c from "c" /* 568 */;
-import createExperiment from "module_4672" /* 4672 */;
+import createExperiment from "module_4704" /* 4704 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

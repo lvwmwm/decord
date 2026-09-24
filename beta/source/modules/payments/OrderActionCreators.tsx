@@ -1,14 +1,14 @@
-// Module ID: 7490
-// Function ID: 7491
+// Module ID: 7522
+// Function ID: 7523
 // Name: OrderActionCreators
-// Dependencies: [5, 1078, 3, 4440, 1275, 4433, 2]
+// Dependencies: [5, 1078, 3, 4472, 1275, 4465, 2]
 // Exports: fetchOrderEntitlementsWithRetry, getOrder, signOrder
 
-// Module 7490 (OrderActionCreators)
+// Module 7522 (OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import BillingError_mod from "BillingError" /* 4440 */;
+import BillingError_mod from "BillingError" /* 4472 */;
 
 require = fn;
 let closure_6 = async function _signOrder(arg0, value) {

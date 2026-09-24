@@ -1,18 +1,18 @@
-// Module ID: 8172
-// Function ID: 8173
+// Module ID: 8204
+// Function ID: 8205
 // Name: ConversationNavigatorHeader
-// Dependencies: [19, 17, 2045, 21, 4758, 580, 558, 568, 504, 4911, 8112, 4462, 1369, 1119, 8173, 2]
+// Dependencies: [19, 17, 2045, 21, 4790, 580, 558, 568, 504, 4943, 8144, 4494, 1369, 1119, 8205, 2]
 // Exports: conversationNavigatorFocusHeaderOptions, conversationNavigatorListHeaderOptions
 
-// Module 8172 (ConversationNavigatorHeader)
+// Module 8204 (ConversationNavigatorHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1369 */;
-import useToken from "useToken" /* 4462 */;
-import useChannelNameDefault from "useChannelName" /* 4911 */;
-import HeaderShared from "HeaderShared" /* 8112 */;
-import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 8173 */;
+import useToken from "useToken" /* 4494 */;
+import useChannelNameDefault from "useChannelName" /* 4943 */;
+import HeaderShared from "HeaderShared" /* 8144 */;
+import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 8205 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
@@ -21,7 +21,7 @@ const require = globalThis.__r;
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles((arg0) => {
   const container = { flex: 1, paddingVertical: nativeDefault.space.PX_16, paddingRight: null, alignItems: "center", justifyContent: "center" };
   let num = 0;
@@ -82,7 +82,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     cResult[9] = tmp18;
     tmp15 = tmp18;
   }
-  const tmp14 = jsx(channelId(8112).GenericHeaderTitle, { title, subtitle: tmp12, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
+  const tmp14 = jsx(channelId(8144).GenericHeaderTitle, { title, subtitle: tmp12, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
   cResult[4] = tmp12;
   cResult[5] = title;
   cResult[6] = tmp14;
@@ -100,7 +100,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const tmp3 = useChannelNameDefault(stateFromStores, true);
   const obj2 = { style: tmp.container, children: null };
   const obj3 = { title: channelId.title, subtitle: tmp3, variant: "heading-lg/semibold", subtitleColor: "text-muted" };
-  obj2.children = jsx(channelId(8112).GenericHeaderTitle, { title: channelId.title, subtitle: tmp3, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
+  obj2.children = jsx(channelId(8144).GenericHeaderTitle, { title: channelId.title, subtitle: tmp3, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
   return <View style={tmp.container}>{null}</View>;
 });
 ReactCompilerGating = fn(558);

@@ -1,13 +1,13 @@
-// Module ID: 9822
-// Function ID: 9823
+// Module ID: 9854
+// Function ID: 9855
 // Name: BottomSheetTextInput
-// Dependencies: [109, 19, 21, 558, 568, 6862, 6860, 9823, 2]
+// Dependencies: [109, 19, 21, 558, 568, 6894, 6892, 9855, 2]
 
-// Module 9822 (BottomSheetTextInput)
+// Module 9854 (BottomSheetTextInput)
 import c from "c" /* 568 */;
-import NativeTextInput from "NativeTextInput" /* 6860 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6862 */;
-import TextInput_TextInputDefault from "TextInput/TextInput" /* 9823 */;
+import NativeTextInput from "NativeTextInput" /* 6892 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6894 */;
+import TextInput_TextInputDefault from "TextInput/TextInput" /* 9855 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -75,14 +75,14 @@ export const BottomSheetTextInput = ReactCompilerGating.isReactCompilerEnabled()
     const obj2 = { ref: tmp16, onFocus: onFocus2, onBlur: onBlur2 };
     const tmpResult = NativeTextInput;
     const merged = Object.assign(tmp6);
-    const tmp23 = jsx(tmp13(9823), { ref: tmp16, onFocus: onFocus2, onBlur: onBlur2 });
+    const tmp23 = jsx(tmp13(9855), { ref: tmp16, onFocus: onFocus2, onBlur: onBlur2 });
     cResult[10] = onBlur2;
     cResult[11] = onFocus2;
     cResult[12] = tmp6;
     cResult[13] = tmp16;
     cResult[14] = tmp23;
     tmp17 = tmp23;
-    const tmp13Result = tmp13(9823);
+    const tmp13Result = tmp13(9855);
   }
   const obj3 = { onFocus: tmp5, onBlur: tmp4 };
   cResult[5] = tmp4;

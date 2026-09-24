@@ -1,26 +1,26 @@
-// Module ID: 15167
-// Function ID: 15168
+// Module ID: 15177
+// Function ID: 15178
 // Name: FamilyCenterActivityRow
-// Dependencies: [19, 17, 1376, 7784, 7785, 1078, 21, 4758, 580, 1181, 558, 568, 38, 565, 11, 4603, 4754, 7839, 5799, 5805, 1119, 2486, 15168, 15171, 15172, 2]
+// Dependencies: [19, 17, 1376, 7816, 7817, 1078, 21, 4790, 580, 1181, 558, 568, 38, 565, 11, 4635, 4786, 7871, 5831, 5837, 1119, 2486, 15178, 15181, 15182, 2]
 
-// Module 15167 (FamilyCenterActivityRow)
+// Module 15177 (FamilyCenterActivityRow)
 import _modDef38 from "module_38" /* 38 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7839 */;
-import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 15168 */;
-import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 15172 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7871 */;
+import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 15178 */;
+import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 15182 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7784 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7816 */;
 
 require = fn;
 const View = fn(17).View;
-const ACTION_TO_TEXT = fn(7785).ACTION_TO_TEXT;
+const ACTION_TO_TEXT = fn(7817).ACTION_TO_TEXT;
 const GuildFeatures = fn(1078).GuildFeatures;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let obj = { container: { display: "flex", flexDirection: "row", borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1, paddingVertical: 12 }, avatar: null, avatarContainer: null, textContainer: null, text: null };
 let obj3 = { display: "flex", flexDirection: "row", borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1, paddingVertical: 12 };
 obj.avatar = { borderRadius: fn(1181).AVATAR_SIZE_MAP[fn(undefined, 1181).AvatarSizes.NORMAL] / 2, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
@@ -68,11 +68,11 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ac
         }
         ({ textContainer, text } = tmp4);
         if (cResult[9] !== stateFromStores) {
-          const name = tmp6(4603).getName(stateFromStores);
+          const name = tmp6(4635).getName(stateFromStores);
           cResult[9] = stateFromStores;
           cResult[10] = name;
           let tmp18 = name;
-          const tmp6Result2 = tmp6(4603);
+          const tmp6Result2 = tmp6(4635);
         } else {
           tmp18 = cResult[10];
         }
@@ -80,10 +80,10 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ac
           if (cResult[12] === tmp4.text) {
             let tmp20 = cResult[13];
           }
-          const Text = tmp(4754).Text;
+          const Text = tmp(4786).Text;
           const _Date = Date;
           const date = new Date(extractTimestampResult);
-          const result = tmp(7839).formatUserActivityTimestamp(date.getTime(), value.timestampFormatter);
+          const result = tmp(7871).formatUserActivityTimestamp(date.getTime(), value.timestampFormatter);
           if (cResult[14] === Text) {
             if (cResult[15] === result) {
               let tmp28 = cResult[16];
@@ -134,10 +134,10 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ac
           cResult[15] = result;
           cResult[16] = tmp30;
           tmp28 = tmp30;
-          const tmpResult2 = tmp(7839);
+          const tmpResult2 = tmp(7871);
         }
         const obj5 = { style: text, variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: tmp18 };
-        const tmp22 = closure_8(tmp(4754).Text, obj5);
+        const tmp22 = closure_8(tmp(4786).Text, obj5);
         cResult[11] = tmp18;
         cResult[12] = tmp4.text;
         cResult[13] = tmp22;
@@ -177,14 +177,14 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ac
     const obj5 = { style: tmp.textContainer, children: null };
     const obj6 = { style: tmp.text, variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: null };
     const tmp3Result = tmp3(11);
-    obj6.children = tmp3(4603).getName(stateFromStores);
-    const items2 = [closure_8(tmp6(4754).Text, obj6), ];
+    obj6.children = tmp3(4635).getName(stateFromStores);
+    const items2 = [closure_8(tmp6(4786).Text, obj6), ];
     const obj7 = { variant: "text-xs/medium", color: "channels-default", children: null };
-    const tmp3Result2 = tmp3(4603);
+    const tmp3Result2 = tmp3(4635);
     const _Date = Date;
     const date = new Date(extractTimestampResult);
-    obj7.children = tmp6(7839).formatUserActivityTimestamp(date.getTime(), value.timestampFormatter);
-    items2[1] = closure_8(tmp6(4754).Text, obj7);
+    obj7.children = tmp6(7871).formatUserActivityTimestamp(date.getTime(), value.timestampFormatter);
+    items2[1] = closure_8(tmp6(4786).Text, obj7);
     obj5.children = items2;
     items1[1] = closure_9(View, obj5);
     obj2.children = items1;
@@ -193,7 +193,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ac
   const obj = action(565);
 }));
 memoResult.displayName = "FamilyCenterActivityRowUser";
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj5 = { container: null, avatar: null, avatarText: null, text: null, headerContainer: null, badge: null, header: null, headerAndIconContainer: null };
 let obj4 = { borderRadius: fn(1181).AVATAR_SIZE_MAP[fn(undefined, 1181).AvatarSizes.NORMAL] / 2, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj5.container = { display: "flex", alignItems: "center", flexDirection: "row", borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1, paddingVertical: 12 };
@@ -281,7 +281,7 @@ const memoResult1 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                         const intl = tmp(1119).intl;
                         const obj4 = { members: stateFromStores.approximateMemberCount };
                         obj2.children = intl.format(tmp10(2486)["5JmNgg"], obj4);
-                        tmp35 = closure_8(tmp(4754).Text, obj2);
+                        tmp35 = closure_8(tmp(4786).Text, obj2);
                       }
                       cResult[23] = stateFromStores.approximateMemberCount;
                       cResult[24] = tmp35;
@@ -342,7 +342,7 @@ const memoResult1 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
               tmp26 = tmp29;
             }
             const obj9 = { style: tmp4.header, variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: name };
-            const tmp25 = closure_8(tmp(4754).Text, obj9);
+            const tmp25 = closure_8(tmp(4786).Text, obj9);
             cResult[13] = tmp4.header;
             cResult[14] = name;
             cResult[15] = tmp25;
@@ -351,9 +351,9 @@ const memoResult1 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         }
         let tmp20 = null;
         if (tmp12) {
-          const obj10 = { style: tmp4.badge, guild: stateFromStores, size: tmp10(5805).Sizes.SMALL, disableColor: true };
-          tmp20 = closure_8(tmp10(5805), obj10);
-          const tmp10Result = tmp10(5805);
+          const obj10 = { style: tmp4.badge, guild: stateFromStores, size: tmp10(5837).Sizes.SMALL, disableColor: true };
+          tmp20 = closure_8(tmp10(5837), obj10);
+          const tmp10Result = tmp10(5837);
         }
         cResult[9] = stateFromStores;
         cResult[10] = tmp4.badge;
@@ -365,14 +365,14 @@ const memoResult1 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     const obj11 = { style: null, textStyle: null, guild: null, size: null, animate: true };
     ({ avatar: obj3.style, avatarText: obj3.textStyle } = tmp4);
     obj11.guild = stateFromStores;
-    obj11.size = tmp(5799).GuildIconSizes.NORMAL;
-    const tmp18 = closure_8(tmp10(5799), obj11);
+    obj11.size = tmp(5831).GuildIconSizes.NORMAL;
+    const tmp18 = closure_8(tmp10(5831), obj11);
     cResult[5] = stateFromStores;
     cResult[6] = tmp4.avatar;
     cResult[7] = tmp4.avatarText;
     cResult[8] = tmp18;
     tmp15 = tmp18;
-    const tmp10Result2 = tmp10(5799);
+    const tmp10Result2 = tmp10(5831);
   }
 }) : ((action) => {
   action = action.action;
@@ -394,20 +394,20 @@ const memoResult1 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     const obj4 = { style: null, textStyle: null, guild: null, size: null, animate: true };
     ({ avatar: obj3.style, avatarText: obj3.textStyle } = tmp);
     obj4.guild = stateFromStores;
-    obj4.size = tmp2(5799).GuildIconSizes.NORMAL;
-    const items1 = [closure_8(tmp6(5799), obj4), ];
+    obj4.size = tmp2(5831).GuildIconSizes.NORMAL;
+    const items1 = [closure_8(tmp6(5831), obj4), ];
     const obj5 = { style: tmp.text, children: null };
     const obj6 = { style: tmp.headerContainer, children: null };
     const obj7 = { style: tmp.headerAndIconContainer, children: null };
     let tmp11Result = null;
     if (hasItem) {
-      const obj8 = { style: tmp.badge, guild: stateFromStores, size: tmp6(5805).Sizes.SMALL, disableColor: true };
-      tmp11Result = tmp11(tmp6(5805), obj8);
-      const tmp6Result2 = tmp6(5805);
+      const obj8 = { style: tmp.badge, guild: stateFromStores, size: tmp6(5837).Sizes.SMALL, disableColor: true };
+      tmp11Result = tmp11(tmp6(5837), obj8);
+      const tmp6Result2 = tmp6(5837);
     }
     const items2 = [tmp11Result, ];
     const obj9 = { style: tmp.header, variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: stateFromStores.name };
-    items2[1] = closure_8(tmp2(4754).Text, obj9);
+    items2[1] = closure_8(tmp2(4786).Text, obj9);
     obj7.children = items2;
     obj6.children = closure_9(View, obj7);
     const items3 = [closure_8(View, obj6), ];
@@ -417,7 +417,7 @@ const memoResult1 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       const intl = tmp2(1119).intl;
       const obj19 = { members: stateFromStores.approximateMemberCount };
       obj10.children = intl.format(tmp6(2486)["5JmNgg"], obj19);
-      tmp11Result2 = tmp11(tmp2(4754).Text, obj10);
+      tmp11Result2 = tmp11(tmp2(4786).Text, obj10);
     }
     items3[1] = tmp11Result2;
     obj5.children = items3;
@@ -443,11 +443,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
         if (!tmpResult8.isGift(action)) {
           return null;
         }
-        tmpResult8 = tmp(7839);
+        tmpResult8 = tmp(7871);
       }
-      tmpResult7 = tmp(7839);
+      tmpResult7 = tmp(7871);
     }
-    tmpResult = tmp(7839);
+    tmpResult = tmp(7871);
   }
   obj2 = FamilyCenterUtils;
   if (tmpResult9.isPurchase(action)) {
@@ -485,9 +485,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
         let tmp18 = null;
         let giftRowDisplayInfo;
         if (null != giftInfo) {
-          giftRowDisplayInfo = tmp(15171).getGiftRowDisplayInfo(giftInfo);
+          giftRowDisplayInfo = tmp(15181).getGiftRowDisplayInfo(giftInfo);
           tmp18 = forResult;
-          const tmpResult11 = tmp(15171);
+          const tmpResult11 = tmp(15181);
         }
         cResult[7] = action.entity_id;
         cResult[8] = giftRowDisplayInfo;
@@ -544,11 +544,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
       const tmp5Result2 = closure_1_8(View, obj7);
       cResult[18] = action;
       cResult[19] = tmp5Result2;
-      tmpResult12 = tmp(7839);
+      tmpResult12 = tmp(7871);
     } else {
       return cResult[19];
     }
-    tmpResult10 = tmp(7839);
+    tmpResult10 = tmp(7871);
   }
 }) : ((action) => {
   action = action.action;
@@ -558,11 +558,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
         if (!tmpResult8.isGift(action)) {
           return null;
         }
-        tmpResult8 = tmp(7839);
+        tmpResult8 = tmp(7871);
       }
-      tmpResult7 = tmp(7839);
+      tmpResult7 = tmp(7871);
     }
-    tmpResult = tmp(7839);
+    tmpResult = tmp(7871);
   }
   obj = FamilyCenterUtils;
   if (tmpResult9.isPurchase(action)) {
@@ -580,7 +580,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
       if (null == giftInfo) {
         return null;
       } else {
-        const giftRowDisplayInfo = tmp(15171).getGiftRowDisplayInfo(giftInfo);
+        const giftRowDisplayInfo = tmp(15181).getGiftRowDisplayInfo(giftInfo);
         ({ skuId, subscriptionPlanId, price, gifterUserId, claimed, offeredAt, claimedAt } = giftRowDisplayInfo);
         const obj3 = { skuId, subscriptionPlanId, price, gifterUserId, claimed, offeredAt, claimedAt };
         return closure_1_8(FamilyCenterActivityGiftRowDefault, obj3);
@@ -596,7 +596,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
       const obj6 = { children: tmp4Result };
       return closure_1_8(View, obj6);
     }
-    tmpResult10 = tmp(7839);
+    tmpResult10 = tmp(7871);
   }
   tmpResult9 = FamilyCenterUtils;
 });

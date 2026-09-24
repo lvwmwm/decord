@@ -1,88 +1,45 @@
 // Module ID: 6914
 // Function ID: 6915
-// Dependencies: [19, 21, 6915, 6936, 6941, 6937, 6942, 6943, 6926, 6939, 6938, 6944, 6945]
-// Exports: GestureDetector
+// Dependencies: [6896, 1641]
+// Exports: animate
 
 // Module 6914
-import jsxProd from "jsxProd" /* 21 */;
-import _modDef6926 from "module_6926" /* 6926 */;
-import attachHandlers from "attachHandlers" /* 6939 */;
-import noop_mod from "module_19" /* 19 */;
+import value2 from "value2" /* 6896 */;
 
-let noop = noop_mod;
-({ useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty } = noop);
-let noop = noop_mod;
-const jsx = jsxProd.jsx;
-
-export const GestureDetector = (gesture) => {
-  if (gesture.gesture) {
-    gesture = gesture.gesture;
-    (function propagateDetectorConfig(gesture, gesture) {
-      const items = ["userSelect", "enableContextMenu", "touchAction"];
-      for (const item10008 of items) {
-        let tmp2 = arg0[item10008];
-        if (undefined !== tmp2) {
-          let toGestureArrayResult = arg1.toGestureArray();
-          for (const item10018 of toGestureArrayResult) {
-            item10018.config[tmp] = tmp3;
-            continue;
-          }
-        }
-        continue;
-      }
-    })(gesture, gesture);
-    let items = [gesture];
-    let gesturesToAttach = current2(() => gesture.toGestureArray(), items);
-    const someResult = gesturesToAttach.some((shouldUseReanimated) => shouldUseReanimated.shouldUseReanimated);
-    webEventHandlers = gesture(webEventHandlers[2]).useWebEventHandlers();
-    const current = detectorUpdater({ firstRender: true, viewRef: null, previousViewTag: -1, forceRebuildReanimatedEvent: false }).current;
-    const obj3 = { attachedGestures: [], animatedEventHandler: null, animatedHandlers: null, shouldUseReanimated: someResult, isMounted: false };
-    current2 = noop.useRef(obj3).current;
-    const obj4 = gesture(webEventHandlers[3]);
-    detectorUpdater = obj4.useDetectorUpdater(current, current2, gesturesToAttach, gesture, webEventHandlers);
-    const obj2 = gesture(webEventHandlers[2]);
-    const viewRefHandler = gesture(webEventHandlers[4]).useViewRefHandler(current, detectorUpdater);
-    let needsToReattachResult = current.firstRender || current.forceRebuildReanimatedEvent;
-    if (!needsToReattachResult) {
-      needsToReattachResult = tmp9(tmp10[5]).needsToReattach(current2, gesturesToAttach);
-      const tmp9Result = tmp9(tmp10[5]);
-    }
-    current.forceRebuildReanimatedEvent = false;
-    const obj5 = gesture(webEventHandlers[4]);
-    const animatedGesture = gesture(webEventHandlers[6]).useAnimatedGesture(current2, needsToReattachResult);
-    const tmp9Result5 = gesture(webEventHandlers[6]);
-    const isomorphicLayoutEffect = gesture(webEventHandlers[7]).useIsomorphicLayoutEffect(() => {
-      current2.isMounted = true;
-      gesturesToAttach = attachHandlers;
-      const tmp = _modDef6926(current.viewRef);
-      gesturesToAttach.attachHandlers({ preparedGesture: current2, gestureConfig: gesture, gesturesToAttach, webEventHandlersRef: webEventHandlers, viewTag: _modDef6926(current.viewRef) });
-      return () => {
-        current2.isMounted = false;
-        gesture(webEventHandlers[10]).dropHandlers(current2);
-      };
-    }, []);
-    const items1 = [gesture];
-    current(() => {
-      if (current.firstRender) {
-        tmp.firstRender = false;
-      } else {
-        detectorUpdater();
-      }
-    }, items1);
-    const tmp9Result6 = gesture(webEventHandlers[7]);
-    const mountReactions = gesture(webEventHandlers[11]).useMountReactions(detectorUpdater, current2);
-    const tmp9Result8 = gesture(webEventHandlers[12]);
-    if (someResult) {
-      const obj6 = { ref: viewRefHandler, onGestureHandlerEvent: current2.animatedEventHandler, children: gesture.children };
-      let tmp28Result = tmp28(tmp9Result8.AnimatedWrap, obj6);
-    } else {
-      const obj7 = { ref: viewRefHandler, children: gesture.children };
-      tmp28Result = tmp28(tmp9Result8.Wrap, obj7);
-    }
-    return tmp28Result;
-  } else {
-    const _Error = Error;
-    const error = new Error("GestureDetector must have a gesture prop provided.");
-    throw error;
+const cancelAnimation = tmp3(1641);
+require = fn;
+const dependencyMap = arg6;
+fn = function n(arg0) {
+  ({ point, configs, velocity } = arg0);
+  if (velocity === undefined) {
+    velocity = 0;
   }
+  ({ overrideReduceMotion, onComplete } = arg0);
+  if (!configs) {
+    configs = value2.ANIMATION_CONFIGS;
+  }
+  if (overrideReduceMotion) {
+    configs.reduceMotion = overrideReduceMotion;
+  }
+  if (!("duration" in configs)) {
+    if (!("easing" in configs)) {
+      let TIMING = value2.ANIMATION_METHOD.SPRING;
+    }
+    if (TIMING === value2.ANIMATION_METHOD.TIMING) {
+      let withTimingResult = cancelAnimation.withTiming(point, configs, onComplete);
+      const tmp3Result = cancelAnimation;
+    } else {
+      const _Object = Object;
+      const obj = { velocity };
+      withTimingResult = cancelAnimation.withSpring(point, Object.assign(obj, configs), onComplete);
+      const tmp3Result2 = cancelAnimation;
+    }
+    return withTimingResult;
+  }
+  TIMING = value2.ANIMATION_METHOD.TIMING;
 };
+fn.__closure = { ANIMATION_CONFIGS: fn(6896).ANIMATION_CONFIGS, ANIMATION_METHOD: fn(6896).ANIMATION_METHOD, withTiming: fn(1641).withTiming, withSpring: fn(1641).withSpring };
+fn.__workletHash = 17032227615993;
+fn.__initData = { code: "function pnpm_animateTs1({point:point,configs:configs,velocity=0,overrideReduceMotion:overrideReduceMotion,onComplete:onComplete}){const{ANIMATION_CONFIGS,ANIMATION_METHOD,withTiming,withSpring}=this.__closure;if(!configs){configs=ANIMATION_CONFIGS;}if(overrideReduceMotion){configs.reduceMotion=overrideReduceMotion;}const type='duration'in configs||'easing'in configs?ANIMATION_METHOD.TIMING:ANIMATION_METHOD.SPRING;if(type===ANIMATION_METHOD.TIMING){return withTiming(point,configs,onComplete);}return withSpring(point,Object.assign({velocity:velocity},configs),onComplete);}" };
+
+export const animate = fn;

@@ -1,22 +1,22 @@
-// Module ID: 9417
-// Function ID: 9418
+// Module ID: 9449
+// Function ID: 9450
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 7549, 502, 2045, 5107, 4978, 7928, 1118, 1078, 4751, 558, 7513, 7923, 7518, 568, 1119, 9418, 11, 1275, 8024, 9419, 7925, 1389, 5347, 9421, 8014, 4938, 7703, 5110, 577, 4610, 1095, 8000, 9504, 2]
+// Dependencies: [32, 5, 19, 7581, 502, 2045, 5139, 5010, 7960, 1118, 1078, 4783, 558, 7545, 7955, 7550, 568, 1119, 9450, 11, 1275, 8056, 9451, 7957, 1389, 5379, 9453, 8046, 4970, 7735, 5142, 577, 4642, 1095, 8032, 9536, 2]
 // Exports: createThread
 
-// Module 9417 (ThreadCreationHooks)
+// Module 9449 (ThreadCreationHooks)
 import HTTPUtils from "HTTPUtils" /* 1275 */;
-import ThreadHooks from "ThreadHooks" /* 7513 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7703 */;
-import MessageParserDefault from "MessageParser" /* 7923 */;
+import ThreadHooks from "ThreadHooks" /* 7545 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7735 */;
+import MessageParserDefault from "MessageParser" /* 7955 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7549 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7581 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import DraftStore from "DraftStore" /* 5107 */;
-import MessageStore from "MessageStore" /* 4978 */;
+import DraftStore from "DraftStore" /* 5139 */;
+import MessageStore from "MessageStore" /* 5010 */;
 
 const require = globalThis.__r;
 
@@ -89,8 +89,8 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
     }
     const tmp17 = importDefault;
     const str4 = MessageParserDefault.unparse(str3, stateFromStores.id, true);
-    const tmp17Result = tmp17(7518);
-    let str7 = tmp17(7518)(str4.split("\n")[0], true).replace(/^[ #-]+/, "");
+    const tmp17Result = tmp17(7550);
+    let str7 = tmp17(7550)(str4.split("\n")[0], true).replace(/^[ #-]+/, "");
     const items = [];
     const match = str7.match(/(?:\s|[!@#$%^&*()_\-+={}[\]:";'<>?,./])+/);
     while (null != match) {
@@ -455,13 +455,13 @@ let closure_29 = async function _createThread_(arg0, arg1, arg2, arg3) {
     return value;
   })();
 };
-const DraftType = fn(5107).DraftType;
-const SlowmodeType = fn(7928).SlowmodeType;
+const DraftType = fn(5139).DraftType;
+const SlowmodeType = fn(7960).SlowmodeType;
 const ThreadConstants = fn(1118);
 ({ FORUM_POST_CREATION_AUTOMOD_ERRORS: map1, FORUM_POST_CREATION_UPLOAD_ERRORS: closure_14 } = ThreadConstants);
 const Constants = fn(1078);
 ({ AbortCodes: closure_15, AnalyticEvents: closure_16, ChannelTypes: closure_17, Endpoints: closure_18, LoggingInviteTypes: closure_19, MAX_MESSAGES_PER_CHANNEL: closure_20, MessageFlags: closure_21 } = Constants);
-const MessageSendLocation = fn(4751).MessageSendLocation;
+const MessageSendLocation = fn(4783).MessageSendLocation;
 const PrivateThreadMode = { Disabled: 1, [1]: "Disabled", Enabled: 2, [2]: "Enabled", PrivateOnly: 3, [3]: "PrivateOnly" };
 fn(558);
 let ReactCompilerGating = fn(558);

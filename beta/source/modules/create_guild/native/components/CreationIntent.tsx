@@ -1,34 +1,34 @@
-// Module ID: 12859
-// Function ID: 12860
+// Module ID: 12895
+// Function ID: 12896
 // Name: CreationIntent
-// Dependencies: [19, 17, 7221, 1078, 21, 4758, 5897, 580, 558, 568, 1488, 5173, 5182, 12830, 1245, 1119, 4754, 5903, 12480, 5907, 7371, 2]
+// Dependencies: [19, 17, 7253, 1078, 21, 4790, 5929, 580, 558, 568, 1488, 5205, 5214, 12866, 1245, 1119, 4786, 5935, 12516, 5939, 7403, 2]
 
-// Module 12859 (CreationIntent)
+// Module 12895 (CreationIntent)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import useNavigation from "useNavigation" /* 1488 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5173 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5182 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import native from "native" /* 5907 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12830 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5205 */;
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5214 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import native from "native" /* 5939 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12866 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const CreateGuildConstants = fn(7221);
+const CreateGuildConstants = fn(7253);
 ({ CreateGuildModalStates: metroRequire, GuildTemplateTriggers: closure_7, NUXGuildTemplatesAnalytics: closure_8 } = CreateGuildConstants);
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_9, AnalyticsLocations: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4758);
-let obj2 = { contentContainer: { flex: 1, marginTop: fn(5897).NAV_BAR_HEIGHT }, scrollContainer: null, headerContainer: null, headerTitle: null, headerDescription: null, sections: null, skipDescription: null };
-let obj3 = { flex: 1, marginTop: fn(5897).NAV_BAR_HEIGHT };
+const createStyles = fn(4790);
+let obj2 = { contentContainer: { flex: 1, marginTop: fn(5929).NAV_BAR_HEIGHT }, scrollContainer: null, headerContainer: null, headerTitle: null, headerDescription: null, sections: null, skipDescription: null };
+let obj3 = { flex: 1, marginTop: fn(5929).NAV_BAR_HEIGHT };
 obj2.scrollContainer = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.headerContainer = { alignItems: "center", paddingVertical: 20, paddingHorizontal: 16 };
 obj2.headerTitle = { textAlign: "center", marginBottom: 8 };
@@ -446,7 +446,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildTemplate) =
   const items3 = [closure_12(ref, obj4), , ];
   let obj7 = { style: tmp.sections, children: null };
   const obj8 = { hasIcons: true, children: null };
-  const tmp13 = trigger(12480);
+  const tmp13 = trigger(12516);
   const obj9 = { Icon: null, message: null, onPress: null };
   const tmp14 = native;
   if (closure_14) {
@@ -457,16 +457,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildTemplate) =
       onPress(false);
     };
     const items4 = [tmp8(tmp13, obj9), ];
-    const obj10 = { Icon: tmp2(5907).WorldIllocon, message: null, onPress: null };
+    const obj10 = { Icon: tmp2(5939).WorldIllocon, message: null, onPress: null };
     const intl6 = tmp2(1119).intl;
     obj10.message = intl6.string(tmp2(1119).t.h9Q1lG);
     obj10.onPress = function onPress() {
       onPress(true);
     };
-    items4[1] = tmp8(tmp12(12480), obj10);
+    items4[1] = tmp8(tmp12(12516), obj10);
     obj8.children = items4;
     let tmp16 = obj8;
-    const tmp12Result = tmp12(12480);
+    const tmp12Result = tmp12(12516);
   } else {
     obj9.Icon = tmp14.WorldIllocon;
     const intl3 = tmp2(1119).intl;
@@ -475,16 +475,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildTemplate) =
       onPress(true);
     };
     const items5 = [tmp8(tmp13, obj9), ];
-    const obj11 = { Icon: tmp2(5907).ChairIllocon, message: null, onPress: null };
+    const obj11 = { Icon: tmp2(5939).ChairIllocon, message: null, onPress: null };
     const intl4 = tmp2(1119).intl;
     obj11.message = intl4.string(tmp2(1119).t.uE7zcu);
     obj11.onPress = function onPress() {
       onPress(false);
     };
-    items5[1] = tmp8(tmp12(12480), obj11);
+    items5[1] = tmp8(tmp12(12516), obj11);
     obj8.children = items5;
     tmp16 = obj8;
-    const tmp12Result2 = tmp12(12480);
+    const tmp12Result2 = tmp12(12516);
   }
   obj7.children = closure_12(TableRowGroup.TableRowGroup, tmp16);
   items3[1] = closure_11(ref, obj7);

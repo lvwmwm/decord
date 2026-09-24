@@ -1,21 +1,21 @@
-// Module ID: 11655
-// Function ID: 11656
+// Module ID: 11691
+// Function ID: 11692
 // Name: MediaModalOverlayAltTextSheet
-// Dependencies: [19, 21, 4758, 580, 558, 568, 11656, 5344, 7396, 1119, 4754, 7397, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 11692, 5376, 7428, 1119, 4786, 7429, 2]
 
-// Module 11655 (MediaModalOverlayAltTextSheet)
+// Module 11691 (MediaModalOverlayAltTextSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11656 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11692 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: nativeDefault.space.PX_16 } };
 let closure_3 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -36,7 +36,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((description) => 
     const obj4 = { title: null };
     const intl = tmp(1119).intl;
     obj4.title = intl.string(tmp(1119).t.J3IOO1);
-    const tmp8 = jsx(tmp(7396).BottomSheetTitleHeader, { title: null });
+    const tmp8 = jsx(tmp(7428).BottomSheetTitleHeader, { title: null });
     cResult[0] = tmp8;
     let first = tmp8;
   } else {
@@ -56,7 +56,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((description) => 
     }
     if (cResult[6] !== description) {
       const obj6 = { accessibilityRole: "text", variant: "text-md/normal", children: description };
-      const tmp13 = jsx(tmp(4754).Text, { accessibilityRole: "text", variant: "text-md/normal", children: description });
+      const tmp13 = jsx(tmp(4786).Text, { accessibilityRole: "text", variant: "text-md/normal", children: description });
       cResult[6] = description;
       cResult[7] = tmp13;
       let tmp11 = tmp13;
@@ -70,7 +70,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((description) => 
       return tmp14;
     }
     const obj7 = { header: first, contentStyles: tmp10, children: tmp11 };
-    const tmp16 = jsx(tmp(7397).BottomSheet, { header: first, contentStyles: tmp10, children: tmp11 });
+    const tmp16 = jsx(tmp(7429).BottomSheet, { header: first, contentStyles: tmp10, children: tmp11 });
     cResult[8] = tmp10;
     cResult[9] = tmp11;
     cResult[10] = tmp16;

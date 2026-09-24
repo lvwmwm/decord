@@ -1,9 +1,9 @@
-// Module ID: 17730
-// Function ID: 17731
+// Module ID: 17740
+// Function ID: 17741
 // Name: ExistingUserAgeGate
-// Dependencies: [5, 32, 19, 17, 2039, 1376, 1103, 17728, 1078, 21, 4758, 558, 568, 1488, 504, 1245, 1119, 2112, 38, 16294, 4961, 4352, 16317, 4754, 17731, 5188, 7371, 2]
+// Dependencies: [5, 32, 19, 17, 2039, 1376, 1103, 17738, 1078, 21, 4790, 558, 568, 1488, 504, 1245, 1119, 2112, 38, 16304, 4993, 4384, 16327, 4786, 17741, 5220, 7403, 2]
 
-// Module 17730 (ExistingUserAgeGate)
+// Module 17740 (ExistingUserAgeGate)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -17,12 +17,12 @@ const require = fn;
 const View = fn(17).View;
 const AgeGateConstants = fn(1103);
 ({ AgeGateAnalyticAction: closure_9, AgeGateSource: c10 } = AgeGateConstants);
-let closure_11 = fn(17728).ExistingUserAgeGateScreens;
+let closure_11 = fn(17738).ExistingUserAgeGateScreens;
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_12, HelpdeskArticles: map1 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_16 = createStyles.createStyles({ container: { flex: 1, padding: 16, alignItems: "center", justifyContent: "center" }, header: { marginBottom: 8, textAlign: "center" }, body: { textAlign: "center", lineHeight: 20, marginBottom: 16 }, inputGroup: { marginBottom: 16, width: "100%" }, buttonWrapper: { width: "100%" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -740,7 +740,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
             return obj3;
           } else {
             v1(38)(null != date, "Cannot submit null birthday.");
-            const diffResult = v1(4352)().diff(date, "years");
+            const diffResult = v1(4384)().diff(date, "years");
             if (diffResult < 18) {
               const obj4 = {
                 source,
@@ -756,7 +756,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
               const obj5 = { value: submitBirthday(tmp17), done: false };
               return obj5;
             }
-            const obj6 = v1(4352)();
+            const obj6 = v1(4384)();
             tmp17 = date;
           }
         } else if (arg0 === 1) {

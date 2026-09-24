@@ -1,47 +1,47 @@
-// Module ID: 18253
-// Function ID: 18254
+// Module ID: 18263
+// Function ID: 18264
 // Name: GuildSettingsModalOfficialMessages
-// Dependencies: [32, 19, 17, 4750, 2067, 9834, 5818, 4751, 1089, 21, 4758, 580, 1119, 15528, 13028, 15530, 4758, 1488, 504, 9833, 5839, 7621, 4725, 16632, 1984, 9868, 4497, 5822, 14862, 1096, 4754, 9869, 558, 568, 4442, 7511, 676, 1181, 15543, 2]
+// Dependencies: [32, 19, 17, 4782, 2067, 9866, 5850, 4783, 1089, 21, 4790, 580, 1119, 15538, 13064, 15540, 4790, 1488, 504, 9865, 5871, 7653, 4757, 16642, 1984, 9900, 4529, 5854, 14900, 1096, 4786, 9901, 558, 568, 4474, 7543, 676, 1181, 15553, 2]
 // Exports: default
 
-// Module 18253 (GuildSettingsModalOfficialMessages)
+// Module 18263 (GuildSettingsModalOfficialMessages)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef676 from "module_676" /* 676 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7511 */;
-import HeaderActionButton from "HeaderActionButton" /* 7621 */;
-import _modDef15543 from "module_15543" /* 15543 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7543 */;
+import HeaderActionButton from "HeaderActionButton" /* 7653 */;
+import _modDef15553 from "module_15553" /* 15553 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9834 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9866 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
-const MessageConstants = fn(4751);
+const MessageConstants = fn(4783);
 ({ DEFAULT_GUILD_OFFICIAL_COLOR: closure_9, GUILD_OFFICIAL_HIGHLIGHT_ALPHA: c10 } = MessageConstants);
 const ThemeTypes = fn(1089).ThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let obj2 = { container: { gap: nativeDefault.space.PX_8, height: "100%" }, segmentedControlContainer: null, trailingColorContainer: null, colorBlock: null, chatSection: null, chatContainer: null, chatContainerInner: null, chatContent: null, chatHeader: null, chatTimestamp: null };
 let obj3 = { gap: nativeDefault.space.PX_8, height: "100%" };
 obj2.segmentedControlContainer = { gap: nativeDefault.space.PX_16, alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16 };
 obj2.trailingColorContainer = { flexDirection: "row", alignItems: "center", justifyContent: "center" };
 obj2.colorBlock = { marginHorizontal: 0, marginVertical: 0, marginRight: 8, minWidth: 24, height: 24, borderRadius: 3 };
 let obj4 = { gap: nativeDefault.space.PX_16, alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16 };
-obj2.chatSection = { paddingHorizontal: fn(5818).TABLE_ROW_PADDING, gap: nativeDefault.space.PX_8 };
-let obj5 = { paddingHorizontal: fn(5818).TABLE_ROW_PADDING, gap: nativeDefault.space.PX_8 };
+obj2.chatSection = { paddingHorizontal: fn(5850).TABLE_ROW_PADDING, gap: nativeDefault.space.PX_8 };
+let obj5 = { paddingHorizontal: fn(5850).TABLE_ROW_PADDING, gap: nativeDefault.space.PX_8 };
 obj2.chatContainer = { paddingVertical: nativeDefault.space.PX_24, borderRadius: nativeDefault.radii.xl, borderWidth: StyleSheet.hairlineWidth };
 let obj6 = { paddingVertical: nativeDefault.space.PX_24, borderRadius: nativeDefault.radii.xl, borderWidth: StyleSheet.hairlineWidth };
 obj2.chatContainerInner = { flexDirection: "row", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, gap: nativeDefault.space.PX_8 };
@@ -49,16 +49,16 @@ obj2.chatContent = { flex: 1 };
 obj2.chatHeader = { flexDirection: "row", alignItems: "baseline", gap: 6 };
 obj2.chatTimestamp = { marginTop: -8 };
 let closure_14 = createStyles.createStyles(obj2);
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj7 = { flexDirection: "row", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, gap: nativeDefault.space.PX_8 };
 let closure_15 = createStyles.createAnimatedThemedStyles({ backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj9 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_16 = createStyles.createAnimatedThemedStyles({ borderColor: nativeDefault.colors.BORDER_STRONG });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj11 = { borderColor: nativeDefault.colors.BORDER_STRONG };
 let closure_17 = createStyles.createAnimatedThemedStyles({ color: nativeDefault.colors.TEXT_DEFAULT });
-createStyles = fn(4758);
+createStyles = fn(4790);
 const obj13 = { color: nativeDefault.colors.TEXT_DEFAULT };
 let closure_18 = createStyles.createAnimatedThemedStyles({ color: nativeDefault.colors.TEXT_MUTED });
 const __initData = { code: "function GuildSettingsModalOfficialMessagesTsx1(){const{activeIndex}=this.__closure;return activeIndex.get();}" };
@@ -71,10 +71,10 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const _Date = Date;
     const date = new Date();
-    const calendarFormatResult = tmp(4442).calendarFormat(date, true);
+    const calendarFormatResult = tmp(4474).calendarFormat(date, true);
     cResult[0] = calendarFormatResult;
     let first = calendarFormatResult;
-    const tmpResult = tmp(4442);
+    const tmpResult = tmp(4474);
   } else {
     first = cResult[0];
   }
@@ -111,7 +111,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const _Symbol = Symbol;
           if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-            const obj3 = { source: _modDef15543 };
+            const obj3 = { source: _modDef15553 };
             const tmp24 = __initData(tmp(1181).Avatar, obj3);
             cResult[15] = tmp24;
             let tmp21 = tmp24;
@@ -130,7 +130,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           if (cResult[17] !== animatedStyles.textStrong) {
             const obj4 = { animated: true, style: animatedStyles.textStrong, variant: "text-md/semibold", lineClamp: 1, children: tmp25 };
-            const tmp29 = __initData(tmp(4754).Text, obj4);
+            const tmp29 = __initData(tmp(4786).Text, obj4);
             cResult[17] = animatedStyles.textStrong;
             cResult[18] = tmp29;
             let tmp27 = tmp29;
@@ -165,7 +165,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 }
                 if (cResult[29] !== tmp37) {
                   const obj7 = { animated: true, variant: "text-md/normal", style: tmp37, children: tmp38 };
-                  const tmp42 = __initData(tmp(4754).Text, obj7);
+                  const tmp42 = __initData(tmp(4786).Text, obj7);
                   cResult[29] = tmp37;
                   cResult[30] = tmp42;
                   let tmp40 = tmp42;
@@ -229,7 +229,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const items3 = [tmp4.chatTimestamp, animatedStyles.textMuted];
           obj12.style = items3;
           obj12.children = first;
-          const tmp32 = __initData(tmp(4754).Text, obj12);
+          const tmp32 = __initData(tmp(4786).Text, obj12);
           cResult[19] = animatedStyles.textMuted;
           cResult[20] = tmp4.chatTimestamp;
           cResult[21] = tmp32;
@@ -287,7 +287,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items1 = [tmp.chatContainerInner, { backgroundColor: _modDef676(selectedColor).alpha(v65535).hex() }];
   obj4.style = items1;
   const hexResult1 = _modDef676(selectedColor).alpha(v65535).hex();
-  const items2 = [__initData(native.Avatar, { source: _modDef15543 }), ];
+  const items2 = [__initData(native.Avatar, { source: _modDef15553 }), ];
   const obj6 = { style: tmp.chatContent, children: null };
   const obj7 = { style: tmp.chatHeader, children: null };
   const obj8 = { animated: true, style: animatedStyles.textStrong, variant: "text-md/semibold", lineClamp: 1, children: null };
@@ -387,7 +387,7 @@ export default function GuildSettingsModalOfficialMessages(guildId) {
     obj2.onSelect = function onSelect(officialMessageColor) {
       navigation(submitting[19]).updateGuild({ officialMessageColor });
     };
-    obj.openLazy(asyncRequireImpl(16632, dependencyMap.paths), "RoleColorPicker", obj2);
+    obj.openLazy(asyncRequireImpl(16642, dependencyMap.paths), "RoleColorPicker", obj2);
   }, items5);
   const tmp8 = hasChanges(officialMessageColor.useState(0), 2);
   [tmp15, c7] = hasChanges(officialMessageColor.useState(0), 2);

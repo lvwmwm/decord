@@ -1,19 +1,19 @@
-// Module ID: 9010
-// Function ID: 9011
+// Module ID: 9042
+// Function ID: 9043
 // Name: GameProfileSkeleton
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 9011, 4497, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 9043, 4529, 2]
 
-// Module 9010 (GameProfileSkeleton)
+// Module 9042 (GameProfileSkeleton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
-import GameProfileSkeletonPulse from "GameProfileSkeletonPulse" /* 9011 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
+import GameProfileSkeletonPulse from "GameProfileSkeletonPulse" /* 9043 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { placeholder: { backgroundColor: nativeDefault.colors.ICON_MUTED }, button: null, buttonSm: null, buttonMd: null };
 const obj3 = { backgroundColor: nativeDefault.colors.ICON_MUTED };
 obj2.button = { borderRadius: nativeDefault.radii.sm };

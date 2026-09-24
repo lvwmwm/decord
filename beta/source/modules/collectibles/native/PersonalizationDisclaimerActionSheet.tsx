@@ -1,27 +1,27 @@
-// Module ID: 16145
-// Function ID: 16146
+// Module ID: 16155
+// Function ID: 16156
 // Name: PersonalizationDisclaimerActionSheet
-// Dependencies: [19, 1078, 21, 4758, 580, 558, 568, 4455, 2112, 1119, 4754, 5188, 8860, 5652, 4725, 7397, 2]
+// Dependencies: [19, 1078, 21, 4790, 580, 558, 568, 4487, 2112, 1119, 4786, 5220, 8892, 5684, 4757, 7429, 2]
 
-// Module 16145 (PersonalizationDisclaimerActionSheet)
+// Module 16155 (PersonalizationDisclaimerActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import LinkingDefault from "Linking" /* 4455 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import ButtonGroup from "ButtonGroup" /* 5652 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8860 */;
+import LinkingDefault from "Linking" /* 4487 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import ButtonGroup from "ButtonGroup" /* 5684 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8892 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_16 }, header: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.header = { paddingVertical: nativeDefault.space.PX_8, alignSelf: "center", textAlign: "center" };
@@ -55,7 +55,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] !== tmp4.header) {
     const obj2 = { variant: "heading-md/medium", color: "mobile-text-heading-primary", accessibilityRole: "header", style: header, children: tmp6 };
-    const tmp10 = hasOwnProperty(tmp(4754).Text, obj2);
+    const tmp10 = hasOwnProperty(tmp(4786).Text, obj2);
     cResult[2] = tmp4.header;
     cResult[3] = tmp10;
     let tmp8 = tmp10;
@@ -73,8 +73,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { size: "lg", text: tmp11, onPress: first, icon: null, iconPosition: "end" };
     const obj4 = { color: nativeDefault.colors.WHITE };
-    obj3.icon = hasOwnProperty(tmp(8860).LinkExternalSmallIcon, obj4);
-    const tmp16 = hasOwnProperty(tmp(5188).Button, obj3);
+    obj3.icon = hasOwnProperty(tmp(8892).LinkExternalSmallIcon, obj4);
+    const tmp16 = hasOwnProperty(tmp(5220).Button, obj3);
     cResult[5] = tmp16;
     let tmp13 = tmp16;
   } else {
@@ -89,9 +89,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj6.onPress = function onPress() {
       return ActionSheetActionCreatorsDefault.hideActionSheet();
     };
-    items[1] = hasOwnProperty(tmp(5188).Button, obj6);
+    items[1] = hasOwnProperty(tmp(5220).Button, obj6);
     obj5.children = items;
-    const tmp20 = timestampProducer(tmp(5652).ButtonGroup, obj5);
+    const tmp20 = timestampProducer(tmp(5684).ButtonGroup, obj5);
     cResult[6] = tmp20;
     let tmp17 = tmp20;
   } else {

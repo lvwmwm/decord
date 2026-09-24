@@ -1,11 +1,11 @@
-// Module ID: 10167
-// Function ID: 10168
+// Module ID: 10206
+// Function ID: 10207
 // Name: useToggleRequestToSpeak
-// Dependencies: [32, 19, 502, 558, 568, 504, 4905, 5641, 8687, 8689, 8674, 2]
+// Dependencies: [32, 19, 502, 558, 568, 504, 4937, 5673, 8719, 8721, 8706, 2]
 
-// Module 10167 (useToggleRequestToSpeak)
-import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 4905 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8687 */;
+// Module 10206 (useToggleRequestToSpeak)
+import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 4937 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8719 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -140,15 +140,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     first,
     () => {
       if (obj.shouldAgeVerifyToSpeakForCurrentUser(id.id)) {
-        const obj2 = { entryPoint: tmp(8689).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND };
+        const obj2 = { entryPoint: tmp(8721).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND };
         const result = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal(obj2);
       } else {
-        if (closure_1 === tmp(4905).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) {
-          const result1 = tmp(8674).audienceAckRequestToSpeak(tmp3, true);
-          const tmpResult = tmp(8674);
+        if (closure_1 === tmp(4937).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) {
+          const result1 = tmp(8706).audienceAckRequestToSpeak(tmp3, true);
+          const tmpResult = tmp(8706);
         } else {
-          tmp(8674).toggleRequestToSpeak(tmp3, !first);
-          const tmpResult2 = tmp(8674);
+          tmp(8706).toggleRequestToSpeak(tmp3, !first);
+          const tmpResult2 = tmp(8706);
         }
         closure_4(!first);
       }

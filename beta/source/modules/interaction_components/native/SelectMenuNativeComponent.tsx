@@ -1,11 +1,11 @@
-// Module ID: 16015
-// Function ID: 16016
+// Module ID: 16025
+// Function ID: 16026
 // Name: SelectMenuNativeComponent
-// Dependencies: [109, 19, 21, 558, 568, 16016, 2]
+// Dependencies: [109, 19, 21, 558, 568, 16026, 2]
 
-// Module 16015 (SelectMenuNativeComponent)
+// Module 16025 (SelectMenuNativeComponent)
 import c from "c" /* 568 */;
-import SelectActionComponentViewNativeComponentDefault from "SelectActionComponentViewNativeComponent" /* 16016 */;
+import SelectActionComponentViewNativeComponentDefault from "SelectActionComponentViewNativeComponent" /* 16026 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

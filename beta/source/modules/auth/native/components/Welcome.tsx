@@ -1,9 +1,9 @@
-// Module ID: 16282
-// Function ID: 16283
+// Module ID: 16292
+// Function ID: 16293
 // Name: Welcome
-// Dependencies: [19, 17, 16283, 4674, 7704, 12562, 1390, 4742, 9017, 1078, 7570, 7983, 21, 4758, 580, 558, 568, 12867, 1119, 38, 1181, 4603, 4754, 13526, 7186, 7222, 14134, 1488, 1616, 504, 7722, 1245, 510, 5203, 6832, 5813, 16284, 16279, 1489, 5188, 5652, 5897, 12026, 4471, 2]
+// Dependencies: [19, 17, 16293, 4706, 7736, 12598, 1390, 4774, 9049, 1078, 7602, 8015, 21, 4790, 580, 558, 568, 12903, 1119, 38, 1181, 4635, 4786, 13562, 7218, 7254, 14171, 1488, 1616, 504, 7754, 1245, 510, 5235, 6864, 5845, 16294, 16289, 1489, 5220, 5684, 5929, 12062, 4503, 2]
 
-// Module 16282 (Welcome)
+// Module 16292 (Welcome)
 import _modDef38 from "module_38" /* 38 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -11,23 +11,23 @@ import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import Link from "Link" /* 1489 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7186 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7222 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7722 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 12867 */;
-import _modDef13526 from "module_13526" /* 13526 */;
-import _mod14134 from "module_14134" /* 14134 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 16279 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7218 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7254 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7754 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 12903 */;
+import _modDef13562 from "module_13562" /* 13562 */;
+import _mod14171 from "module_14171" /* 14171 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 16289 */;
 import noop from "module_19" /* 19 */;
-import AgeGateStore from "AgeGateStore" /* 16283 */;
-import ExperimentStore from "ExperimentStore" /* 4674 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7704 */;
-import MultiAccountStore from "MultiAccountStore" /* 12562 */;
+import AgeGateStore from "AgeGateStore" /* 16293 */;
+import ExperimentStore from "ExperimentStore" /* 4706 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7736 */;
+import MultiAccountStore from "MultiAccountStore" /* 12598 */;
 import UserRecord from "UserRecord" /* 1390 */;
-import InviteStore from "InviteStore" /* 4742 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 9017 */;
+import InviteStore from "InviteStore" /* 4774 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 9049 */;
 
 const require = globalThis.__r;
 
@@ -37,11 +37,11 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, Image: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_14, StorageKeys: closure_15, AuthStates: closure_16, InviteStates: closure_17, ThemeTypes: closure_18 } = Constants);
-const GuildTemplateStates = fn(7570).GuildTemplateStates;
-const InviteTypes = fn(7983).InviteTypes;
+const GuildTemplateStates = fn(7602).GuildTemplateStates;
+const InviteTypes = fn(8015).InviteTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_21, jsxs: closure_22 } = jsxProd);
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let closure_23 = createStyles.createStyles((arg0) => {
   const obj = { container: { height: "100%", flex: 1, padding: 16 }, logo: { flex: 0, width: 93, height: 70, tintColor: "white", alignSelf: "center", marginBottom: 24 }, scrollViewContainer: { flexShrink: 0, flexGrow: 1, justifyContent: "center" }, header: { textAlign: "center", marginBottom: 8, textTransform: "uppercase" }, subHeader: null, subHeaderWithInvite: null, centerpieceContainer: null, buttonContainer: null };
   let num = 300;
@@ -54,7 +54,7 @@ let closure_23 = createStyles.createStyles((arg0) => {
   obj.buttonContainer = { paddingHorizontal: 28, maxWidth: 480, alignSelf: "center", width: "100%" };
   return obj;
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj3 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, padding: 16, flexDirection: "row", borderRadius: nativeDefault.radii.sm }, text: { marginLeft: 16 } };
 let closure_24 = createStyles.createStyles(obj3);
 let ReactCompilerGating = fn(558);
@@ -91,7 +91,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp24 = cResult[4];
       }
       if (cResult[5] !== tmp24) {
-        const obj4 = { user: tmp24, guildId: "a" };
+        const obj4 = { user: tmp24, guildId: "Array" };
         const tmp33 = closure_1_21(tmp(1181).Avatar, obj4);
         cResult[5] = tmp24;
         cResult[6] = tmp33;
@@ -109,11 +109,11 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp35 = cResult[7];
       }
       if (cResult[8] !== inviter) {
-        const formattedName = tmp22(4603).getFormattedName(inviter);
+        const formattedName = tmp22(4635).getFormattedName(inviter);
         cResult[8] = inviter;
         cResult[9] = formattedName;
         let tmp37 = formattedName;
-        const tmp22Result = tmp22(4603);
+        const tmp22Result = tmp22(4635);
       } else {
         tmp37 = cResult[9];
       }
@@ -133,7 +133,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp6 = cResult[11];
       }
       if (cResult[12] !== tmp6) {
-        const obj5 = { user: tmp6, guildId: "a" };
+        const obj5 = { user: tmp6, guildId: "Array" };
         const tmp15 = closure_1_21(tmp(1181).Avatar, obj5);
         cResult[12] = tmp6;
         cResult[13] = tmp15;
@@ -165,7 +165,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[20] !== tmp17) {
         const obj6 = { variant: "text-sm/medium", color: "text-subtle", children: tmp17 };
-        const tmp51 = closure_1_21(tmp(4754).Text, obj6);
+        const tmp51 = closure_1_21(tmp(4786).Text, obj6);
         cResult[20] = tmp17;
         cResult[21] = tmp51;
         let tmp49 = tmp51;
@@ -174,7 +174,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[22] !== tmp19) {
         const obj7 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp19 };
-        const tmp54 = closure_1_21(tmp(4754).Text, obj7);
+        const tmp54 = closure_1_21(tmp(4786).Text, obj7);
         cResult[22] = tmp19;
         cResult[23] = tmp54;
         let tmp52 = tmp54;
@@ -238,7 +238,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp18 = closure_1_21;
     } else if (null != tmp2) {
       _modDef38(null != inviter, "Null inviter");
-      const obj = { user: null, guildId: "a" };
+      const obj = { user: null, guildId: "Array" };
       const tmp12 = new UserRecord(inviter);
       obj.user = tmp12;
       tmp14 = closure_1_21(native.Avatar, obj);
@@ -250,7 +250,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else if (null == inviter) {
       return null;
     } else {
-      const obj4 = { user: null, guildId: "a" };
+      const obj4 = { user: null, guildId: "Array" };
       const tmp33 = new UserRecord(inviter);
       obj4.user = tmp33;
       const intl3 = util.intl;
@@ -267,9 +267,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items1 = [tmp14, ];
     const obj6 = { style: tmp.text, children: null };
     const obj7 = { variant: "text-sm/medium", color: "text-subtle", children: stringResult };
-    const items2 = [tmp18(tmp17(4754).Text, obj7), ];
+    const items2 = [tmp18(tmp17(4786).Text, obj7), ];
     const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: name };
-    items2[1] = tmp18(tmp17(4754).Text, obj8);
+    items2[1] = tmp18(tmp17(4786).Text, obj8);
     obj6.children = items2;
     items1[1] = closure_1_22(React4, obj6);
     obj5.children = items1;
@@ -287,7 +287,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { source: _modDef13526 };
+      const obj2 = { source: _modDef13562 };
       const tmp11 = guild(hasOwnProperty, obj2);
       cResult[3] = tmp11;
       let tmp7 = tmp11;
@@ -299,7 +299,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj3 = { variant: "text-sm/medium", color: "text-subtle", children: null };
       const intl = tmp(1119).intl;
       obj3.children = intl.string(tmp(1119).t.QzUORX);
-      const tmp14 = guild(tmp(4754).Text, obj3);
+      const tmp14 = guild(tmp(4786).Text, obj3);
       cResult[4] = tmp14;
       let tmp12 = tmp14;
     } else {
@@ -307,7 +307,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[5] !== guildTemplate.name) {
       const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: guildTemplate.name };
-      const tmp17 = guild(tmp(4754).Text, obj4);
+      const tmp17 = guild(tmp(4786).Text, obj4);
       cResult[5] = guildTemplate.name;
       cResult[6] = tmp17;
       let tmp15 = tmp17;
@@ -353,7 +353,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = { style: null, children: null };
   const items = [tmp.container, style];
   obj.style = items;
-  const items1 = [guild(hasOwnProperty, { source: _modDef13526 }), ];
+  const items1 = [guild(hasOwnProperty, { source: _modDef13562 }), ];
   const obj3 = { style: tmp.text, children: null };
   const obj4 = { variant: "text-sm/medium", color: "text-subtle", children: null };
   const intl = util.intl;
@@ -372,7 +372,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp5 = closure_23(tmp4);
   const typeConsolidationTextTransform = useTypeConsolidationTextTransform.useTypeConsolidationTextTransform("Welcome");
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(14134);
+    const tmpResult = tmp(14171);
     cResult[0] = tmpResult;
     let first = tmpResult;
   } else {
@@ -440,7 +440,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[16] !== tmp24) {
           const obj4 = { variant: "text-md/medium", color: "text-overlay-light", style: tmp24, maxFontSizeMultiplier: 3, children: tmp25 };
-          const tmp29 = guild(tmp(4754).Text, obj4);
+          const tmp29 = guild(tmp(4786).Text, obj4);
           cResult[16] = tmp24;
           cResult[17] = tmp29;
           let tmp27 = tmp29;
@@ -533,7 +533,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp24 = items3;
     }
     const obj10 = { style: tmp17, lineClamp: num6, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: tmp18 };
-    const tmp22 = guild(tmp(4754).Heading, obj10);
+    const tmp22 = guild(tmp(4786).Heading, obj10);
     cResult[9] = tmp17;
     cResult[10] = num6;
     cResult[11] = tmp22;
@@ -557,7 +557,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items = [tmp3.centerpieceContainer];
   obj2.style = items;
   const obj3 = { alwaysBounceVertical: false, contentContainerStyle: tmp3.scrollViewContainer, children: null };
-  const items1 = [guild(hasOwnProperty, { style: tmp3.logo, source: _mod14134 }), , ];
+  const items1 = [guild(hasOwnProperty, { style: tmp3.logo, source: _mod14171 }), , ];
   const obj5 = { style: null, lineClamp: null, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: null };
   const items2 = [tmp3.header, typeConsolidationTextTransform];
   obj5.style = items2;

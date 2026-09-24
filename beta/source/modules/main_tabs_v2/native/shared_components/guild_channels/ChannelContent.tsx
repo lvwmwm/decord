@@ -1,30 +1,30 @@
-// Module ID: 17134
-// Function ID: 17135
+// Module ID: 17144
+// Function ID: 17145
 // Name: ChannelContent
-// Dependencies: [19, 17, 12213, 4940, 21, 4758, 1368, 558, 568, 12214, 5279, 17135, 5315, 8871, 16469, 4754, 2]
+// Dependencies: [19, 17, 12249, 4972, 21, 4790, 1368, 558, 568, 12250, 5311, 17145, 5347, 8903, 16479, 4786, 2]
 // Exports: renderChannelContent
 
-// Module 17134 (ChannelContent)
+// Module 17144 (ChannelContent)
 import c from "c" /* 568 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 5279 */;
-import ChannelListLayout from "ChannelListLayout" /* 12214 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16469 */;
-import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 17135 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 5311 */;
+import ChannelListLayout from "ChannelListLayout" /* 12250 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16479 */;
+import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 17145 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const UnreadSetting = fn(4940).UnreadSetting;
+const UnreadSetting = fn(4972).UnreadSetting;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let PlatformUtils = fn(1368);
 let num = -1;
 if (PlatformUtils.isIOS()) {
   num = 2;
 }
 let obj3 = { channelContent: { flex: 1, marginTop: num }, channelContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, leftBox: { flexDirection: "column", alignItems: "flex-start", flexShrink: 1 }, rightBox: { flexDirection: "column", alignItems: "flex-end" }, rightContentAbsolute: { position: "absolute", right: 0, top: 0 }, channelTraits: { display: "flex", flexDirection: "row", alignItems: "center" }, channelTraitIcon: null };
-let obj4 = { opacity: fn(12213).SUBTITLE_OPACITY_NORMAL, marginRight: 4, marginTop: null };
+let obj4 = { opacity: fn(12249).SUBTITLE_OPACITY_NORMAL, marginRight: 4, marginTop: null };
 PlatformUtils = fn(1368);
 let num2 = 0;
 if (PlatformUtils.isAndroid()) {
@@ -39,11 +39,11 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ name, subtitle, unread, resolvedUnreadSetting, locked, muted, lastMessageTimestampString, channel, connected, layout, mentionCount, mentionBadge, isSubscriptionGated, needSubscriptionToAccess } = arg0);
   const tmp4 = closure_8();
   if (cResult[0] !== layout) {
-    const layoutStyles = tmp(12214).getLayoutStyles(layout);
+    const layoutStyles = tmp(12250).getLayoutStyles(layout);
     cResult[0] = layout;
     cResult[1] = layoutStyles;
     let tmp5 = layoutStyles;
-    const tmpResult = tmp(12214);
+    const tmpResult = tmp(12250);
   } else {
     tmp5 = cResult[1];
   }
@@ -248,7 +248,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                           let tmp54 = tmp19;
                                           if (tmp19) {
                                             const obj11 = { variant: "text-xs/medium", color: "text-muted", style: { marginLeft: "auto" }, maxFontSizeMultiplier: 1.75, children: lastMessageTimestampString };
-                                            tmp54 = timestampProducer(tmp(4754).Text, obj11);
+                                            tmp54 = timestampProducer(tmp(4786).Text, obj11);
                                           }
                                           cResult[44] = lastMessageTimestampString;
                                           cResult[45] = tmp19;
@@ -327,13 +327,13 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   let tmp33 = tmp7;
                   if (tmp7) {
                     const obj19 = { size: "xxs", color: "icon-muted", style: tmp4.channelTraitIcon };
-                    tmp33 = timestampProducer(tmp(5315).LockIcon, obj19);
+                    tmp33 = timestampProducer(tmp(5347).LockIcon, obj19);
                   }
                   const items7 = [tmp33, , ];
                   let tmp35 = tmp11;
                   if (tmp11) {
                     const obj20 = { size: "xxs", color: "icon-muted", style: tmp4.channelTraitIcon };
-                    tmp35 = timestampProducer(tmp(8871).WarningIcon, obj20);
+                    tmp35 = timestampProducer(tmp(8903).WarningIcon, obj20);
                   }
                   items7[1] = tmp35;
                   let tmp37 = isSubscriptionGated;
@@ -450,12 +450,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj7.style = items2;
     if (tmp10Result) {
       const obj9 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
-      tmp10Result = tmp10(tmp2(5315).LockIcon, obj9);
+      tmp10Result = tmp10(tmp2(5347).LockIcon, obj9);
     }
     const items3 = [tmp10Result, , ];
     if (isNSFWResult) {
       const obj10 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
-      isNSFWResult = tmp10(tmp2(8871).WarningIcon, obj10);
+      isNSFWResult = tmp10(tmp2(8903).WarningIcon, obj10);
     }
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
@@ -494,7 +494,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp10Result5 = obj17;
   if (obj17) {
     const obj16 = { variant: "text-xs/medium", color: "text-muted", style: { marginLeft: "auto" }, maxFontSizeMultiplier: 1.75, children: lastMessageTimestampString };
-    tmp10Result5 = tmp10(tmp2(4754).Text, obj16);
+    tmp10Result5 = tmp10(tmp2(4786).Text, obj16);
   }
   const items7 = [tmp10Result5, , ];
   const items8 = [{ alignItems: "center", paddingLeft: 4 }, ];

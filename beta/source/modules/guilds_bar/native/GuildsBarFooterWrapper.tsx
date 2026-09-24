@@ -1,20 +1,20 @@
-// Module ID: 16690
-// Function ID: 16691
+// Module ID: 16700
+// Function ID: 16701
 // Name: GuildsBarFooterWrapper
-// Dependencies: [16623, 21, 4758, 580, 558, 568, 4462, 16361, 5804, 2]
+// Dependencies: [16633, 21, 4790, 580, 558, 568, 4494, 16371, 5836, 2]
 
-// Module 16690 (GuildsBarFooterWrapper)
+// Module 16700 (GuildsBarFooterWrapper)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16361 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16623 */;
-import createStyles from "createStyles" /* 4758 */;
+import useToken from "useToken" /* 4494 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16371 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16633 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const NativeViewDefault = tmp3(5804);
+const NativeViewDefault = tmp3(5836);
 const GUILD_ITEM_HIT_SLOP = GuildsBarConstants.GUILD_ITEM_HIT_SLOP;
 const jsx = jsxProd.jsx;
 let obj = { footerWrapper: { display: "flex", alignSelf: "stretch", alignItems: "center", gap: nativeDefault.modules.mobile.GUILD_BAR_ITEM_PADDING } };

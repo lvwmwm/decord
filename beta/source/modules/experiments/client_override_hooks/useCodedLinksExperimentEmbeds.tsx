@@ -1,18 +1,18 @@
-// Module ID: 11603
-// Function ID: 11604
+// Module ID: 11639
+// Function ID: 11640
 // Name: useCodedLinksExperimentEmbeds
-// Dependencies: [32, 19, 1376, 4674, 1239, 558, 568, 504, 11604, 11605, 2]
+// Dependencies: [32, 19, 1376, 4706, 1239, 558, 568, 504, 11640, 11641, 2]
 // Exports: canSeeExperimentEmbeds
 
-// Module 11603 (useCodedLinksExperimentEmbeds)
+// Module 11639 (useCodedLinksExperimentEmbeds)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11604 */;
-import useApexExperiments from "useApexExperiments" /* 11605 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 11640 */;
+import useApexExperiments from "useApexExperiments" /* 11641 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
-import ExperimentStore from "ExperimentStore" /* 4674 */;
+import ExperimentStore from "ExperimentStore" /* 4706 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1239 */;
 
 const require = globalThis.__r;
@@ -371,15 +371,15 @@ export const useCodedLinksExperimentEmbeds = ReactCompilerGating.isReactCompiler
         return experimentsMetadata;
       }
     }
-    tmp24[0] = obj(11604).parseRegisteredExperiments(stateFromStoresObject);
-    const objResult12 = obj(11604);
-    tmp24[1] = obj(11604).getLegacyOverridesInfo(stateFromStoresObject1);
-    const objResult13 = obj(11604);
-    tmp24[2] = obj(11605).mergeApexExperiments(stateFromStores, stateFromStores1);
-    obj = obj(11605);
+    tmp24[0] = obj(11640).parseRegisteredExperiments(stateFromStoresObject);
+    const objResult12 = obj(11640);
+    tmp24[1] = obj(11640).getLegacyOverridesInfo(stateFromStoresObject1);
+    const objResult13 = obj(11640);
+    tmp24[2] = obj(11641).mergeApexExperiments(stateFromStores, stateFromStores1);
+    obj = obj(11641);
     apexExperimentOverridesInfo = obj.getApexExperimentOverridesInfo(stateFromStores2);
     tmp24[3] = apexExperimentOverridesInfo;
-    const objResult14 = obj(11605);
+    const objResult14 = obj(11641);
     const tmp23 = tmp24;
   } else {
     class F {

@@ -1,13 +1,13 @@
-// Module ID: 14758
-// Function ID: 14759
+// Module ID: 14796
+// Function ID: 14797
 // Name: images
-// Dependencies: [1376, 4663, 1078, 9580, 1401, 9577, 1479, 2]
+// Dependencies: [1376, 4695, 1078, 9612, 1401, 9609, 1479, 2]
 
-// Module 14758 (images)
+// Module 14796 (images)
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
 import ImageUtils from "ImageUtils" /* 1479 */;
-import RPCErrorDefault from "RPCError" /* 9577 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9580 */;
+import RPCErrorDefault from "RPCError" /* 9609 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9612 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -18,7 +18,7 @@ const result = size.fileFinishedImporting("modules/rpc/server/commands/images.ts
 
 export default {
   [Constants.RPCCommands.GET_IMAGE]: {
-    scope: fn(4663).RPC_LOCAL_SCOPE,
+    scope: fn(4695).RPC_LOCAL_SCOPE,
     validation(string) {
       const obj = createRpcJoiSchemaObjectDefault(string);
       const obj2 = { type: null, id: null, format: null, size: null };

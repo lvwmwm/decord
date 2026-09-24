@@ -1,12 +1,12 @@
-// Module ID: 13270
-// Function ID: 13271
+// Module ID: 13306
+// Function ID: 13307
 // Name: showMediaMessagePreviewActionSheet
-// Dependencies: [2045, 1376, 4725, 13271, 1984, 2]
+// Dependencies: [2045, 1376, 4757, 13307, 1984, 2]
 // Exports: default
 
-// Module 13270 (showMediaMessagePreviewActionSheet)
+// Module 13306 (showMediaMessagePreviewActionSheet)
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -22,7 +22,7 @@ export default function showMediaMessagePreviewActionSheet(message) {
       const user = UserStore.getUser(message.author.id);
       if (null != user) {
         const obj2 = { channel, message, user, closeMediaModal: message.closeMediaModal };
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(13271, dependencyMap.paths), "MediaMessagePreviewActionSheet", obj2);
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(13307, dependencyMap.paths), "MediaMessagePreviewActionSheet", obj2);
       }
     }
   }

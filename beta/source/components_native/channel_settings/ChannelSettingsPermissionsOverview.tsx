@@ -1,29 +1,29 @@
-// Module ID: 17297
-// Function ID: 17298
+// Module ID: 17307
+// Function ID: 17308
 // Name: ChannelSettingsPermissionsOverview
-// Dependencies: [32, 5, 19, 17, 2104, 2045, 2103, 2067, 4409, 1376, 1078, 21, 4758, 580, 558, 568, 5110, 1119, 4911, 4404, 11730, 9803, 10630, 12, 5903, 15414, 5822, 1488, 12904, 10647, 15573, 504, 1982, 11248, 17298, 7226, 8112, 4771, 2]
+// Dependencies: [32, 5, 19, 17, 2104, 2045, 2103, 2067, 4441, 1376, 1078, 21, 4790, 580, 558, 568, 5142, 1119, 4943, 4436, 11766, 9835, 10666, 12, 5935, 15424, 5854, 1488, 12940, 10683, 15583, 504, 1982, 11284, 17308, 7258, 8144, 4803, 2]
 
-// Module 17297 (ChannelSettingsPermissionsOverview)
+// Module 17307 (ChannelSettingsPermissionsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import Server from "Server" /* 1982 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4404 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4771 */;
-import TableRow from "TableRow" /* 5822 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 7226 */;
-import RoleLabel from "RoleLabel" /* 10647 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11248 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 15573 */;
-import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 17298 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4436 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4803 */;
+import TableRow from "TableRow" /* 5854 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 7258 */;
+import RoleLabel from "RoleLabel" /* 10683 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11284 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 15583 */;
+import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 17308 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildRoleStore from "GuildRoleStore" /* 2103 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -33,7 +33,7 @@ const Constants = fn(1078);
 ({ PermissionOverrideType: closure_14, ChannelSettingsSections: closure_15 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { tableRowGroupContainer: { marginBottom: nativeDefault.space.PX_16 }, tableContainer: null };
 let obj3 = { marginBottom: nativeDefault.space.PX_16 };
 obj2.tableContainer = { marginHorizontal: nativeDefault.space.PX_12 };
@@ -54,7 +54,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         if (cResult[5] === tableRowGroupContainer.tableRowGroupContainer) {
           const _Symbol = Symbol;
           if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp22 = closure_16(tmp(15414).RefreshIcon, {});
+            const tmp22 = closure_16(tmp(15424).RefreshIcon, {});
             let intl2 = tmp(1119).intl;
             const stringResult = intl2.string(tmp(1119).t.NVwuHq);
             cResult[10] = tmp22;
@@ -67,7 +67,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           }
           if (cResult[12] !== tmp4) {
             let obj2 = { icon: tmp19, label: tmp20, onPress: tmp4 };
-            const tmp26 = closure_16(tmp(5822).TableRow, obj2);
+            const tmp26 = closure_16(tmp(5854).TableRow, obj2);
             cResult[12] = tmp4;
             cResult[13] = tmp26;
             let tmp24 = tmp26;
@@ -106,9 +106,9 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
       }
     }
-    const channelName = tmp(4911).computeChannelName(category, UserStore, RelationshipStore);
+    const channelName = tmp(4943).computeChannelName(category, UserStore, RelationshipStore);
     const tableRowGroupContainer2 = tableRowGroupContainer.tableRowGroupContainer;
-    const TableRowGroup = tmp(5903).TableRowGroup;
+    const TableRowGroup = tmp(5935).TableRowGroup;
     let intl = tmp(1119).intl;
     const formatToPlainString = intl.formatToPlainString;
     let t = tmp(1119).t;
@@ -127,7 +127,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     cResult[7] = View;
     cResult[8] = formatToPlainStringResult;
     cResult[9] = tableRowGroupContainer2;
-    const tmpResult = tmp(4911);
+    const tmpResult = tmp(4943);
   }
   const fn = function l() {
     let obj2 = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null };
@@ -135,10 +135,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     obj2.title = intl.string(channel(1119).t.YWMtRe);
     const intl2 = channel(1119).intl;
     let obj3 = { channelName: null, categoryName: null };
-    let obj = category(5110);
-    obj3.channelName = channel(4911).computeChannelName(closure_0, UserStore, RelationshipStore, true);
-    let obj4 = channel(4911);
-    obj3.categoryName = channel(4911).computeChannelName(category, UserStore, RelationshipStore);
+    let obj = category(5142);
+    obj3.channelName = channel(4943).computeChannelName(closure_0, UserStore, RelationshipStore, true);
+    let obj4 = channel(4943);
+    obj3.categoryName = channel(4943).computeChannelName(category, UserStore, RelationshipStore);
     obj2.body = intl2.format(channel(1119).t["iKW+jY"], obj3);
     const intl3 = channel(1119).intl;
     obj2.confirmText = intl3.string(channel(1119).t.eW8Gy4);
@@ -172,12 +172,12 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               closure_128_0 = undefined;
               const guild_id = tmp5.guild_id;
               const obj8 = PermissionUtilsAll;
-              const syncedPermissionOverwrites = obj8.getSyncedPermissionOverwrites(tmp5, tmp2(11730).getAppChannelBotUserId(tmp2));
+              const syncedPermissionOverwrites = obj8.getSyncedPermissionOverwrites(tmp5, tmp2(11766).getAppChannelBotUserId(tmp2));
               closure_128_0 = syncedPermissionOverwrites;
-              const obj9 = tmp2(11730);
+              const obj9 = tmp2(11766);
               c2 = 1;
               c3 = 1;
-              const obj5 = { value: tmp2(9803).checkChattableChannelThresholdMetAfterChannelPermissionDeny(tmp2, syncedPermissionOverwrites[guild_id].deny, syncedPermissionOverwrites[guild_id].allow), done: false };
+              const obj5 = { value: tmp2(9835).checkChattableChannelThresholdMetAfterChannelPermissionDeny(tmp2, syncedPermissionOverwrites[guild_id].deny, syncedPermissionOverwrites[guild_id].allow), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -190,7 +190,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           } else {
             if (value) {
               const obj7 = { permissionOverwrites: null };
-              const obj = tmp2(10630);
+              const obj = tmp2(10666);
               obj7.permissionOverwrites = category(12).values(closure_128_0);
               obj.saveChannel(tmp2.id, obj7);
               const obj3 = category(12);
@@ -230,10 +230,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     obj2.title = intl.string(channel(1119).t.YWMtRe);
     const intl2 = channel(1119).intl;
     let obj3 = { channelName: null, categoryName: null };
-    let obj = category(5110);
-    obj3.channelName = channel(4911).computeChannelName(closure_0, UserStore, RelationshipStore, true);
-    let obj4 = channel(4911);
-    obj3.categoryName = channel(4911).computeChannelName(category, UserStore, RelationshipStore);
+    let obj = category(5142);
+    obj3.channelName = channel(4943).computeChannelName(closure_0, UserStore, RelationshipStore, true);
+    let obj4 = channel(4943);
+    obj3.categoryName = channel(4943).computeChannelName(category, UserStore, RelationshipStore);
     obj2.body = intl2.format(channel(1119).t["iKW+jY"], obj3);
     const intl3 = channel(1119).intl;
     obj2.confirmText = intl3.string(channel(1119).t.eW8Gy4);
@@ -267,12 +267,12 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               closure_128_0 = undefined;
               const guild_id = tmp5.guild_id;
               const obj8 = PermissionUtilsAll;
-              const syncedPermissionOverwrites = obj8.getSyncedPermissionOverwrites(tmp5, tmp2(11730).getAppChannelBotUserId(tmp2));
+              const syncedPermissionOverwrites = obj8.getSyncedPermissionOverwrites(tmp5, tmp2(11766).getAppChannelBotUserId(tmp2));
               closure_128_0 = syncedPermissionOverwrites;
-              const obj9 = tmp2(11730);
+              const obj9 = tmp2(11766);
               c2 = 1;
               c3 = 1;
-              const obj5 = { value: tmp2(9803).checkChattableChannelThresholdMetAfterChannelPermissionDeny(tmp2, syncedPermissionOverwrites[guild_id].deny, syncedPermissionOverwrites[guild_id].allow), done: false };
+              const obj5 = { value: tmp2(9835).checkChattableChannelThresholdMetAfterChannelPermissionDeny(tmp2, syncedPermissionOverwrites[guild_id].deny, syncedPermissionOverwrites[guild_id].allow), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -285,7 +285,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           } else {
             if (value) {
               const obj7 = { permissionOverwrites: null };
-              const obj = tmp2(10630);
+              const obj = tmp2(10666);
               obj7.permissionOverwrites = category(12).values(closure_128_0);
               obj.saveChannel(tmp2.id, obj7);
               const obj3 = category(12);
@@ -312,7 +312,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     obj.show(obj2);
   }, items);
   const tmp = closure_18();
-  const channelName = channel(4911).computeChannelName(category, UserStore, RelationshipStore);
+  const channelName = channel(4943).computeChannelName(category, UserStore, RelationshipStore);
   let obj2 = { style: tmp.tableRowGroupContainer, children: null };
   let intl = channel(1119).intl;
   const formatToPlainString = intl.formatToPlainString;
@@ -325,12 +325,12 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     formatToPlainStringResult = formatToPlainString(t.OIhm0M, obj4);
   }
   let obj5 = { title: formatToPlainStringResult, hasIcons: true, children: null };
-  let obj6 = { icon: closure_16(channel(15414).RefreshIcon, {}), label: null, onPress: null };
+  let obj6 = { icon: closure_16(channel(15424).RefreshIcon, {}), label: null, onPress: null };
   let intl2 = tmp3(1119).intl;
   obj6.label = intl2.string(channel(1119).t.NVwuHq);
   obj6.onPress = callback;
-  obj5.children = closure_16(channel(5822).TableRow, obj6);
-  obj2.children = closure_16(channel(5903).TableRowGroup, obj5);
+  obj5.children = closure_16(channel(5854).TableRow, obj6);
+  obj2.children = closure_16(channel(5935).TableRowGroup, obj5);
   return closure_16(View, obj2);
 });
 ReactCompilerGating = fn(558);
@@ -397,7 +397,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isEditing) => 
     }
     const _Symbol2 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp13 = closure_16(tmp(12904).PlusMediumIcon, {});
+      const tmp13 = closure_16(tmp(12940).PlusMediumIcon, {});
       const intl2 = tmp(1119).intl;
       const stringResult1 = intl2.string(tmp(1119).t.fVWxvT);
       cResult[3] = tmp13;
@@ -416,7 +416,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isEditing) => 
               return closure_1(constants.ROLE);
             }
       };
-      const tmp17 = closure_16(tmp(5822).TableRow, obj3);
+      const tmp17 = closure_16(tmp(5854).TableRow, obj3);
       cResult[5] = tmp6;
       cResult[6] = tmp17;
       let tmp15 = tmp17;
@@ -425,7 +425,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isEditing) => 
     }
     const _Symbol3 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp21 = closure_16(tmp(12904).PlusMediumIcon, {});
+      const tmp21 = closure_16(tmp(12940).PlusMediumIcon, {});
       const intl3 = tmp(1119).intl;
       const stringResult2 = intl3.string(tmp(1119).t.riesLt);
       cResult[7] = tmp21;
@@ -444,7 +444,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isEditing) => 
               return closure_1(constants.MEMBER);
             }
       };
-      const tmp25 = closure_16(tmp(5822).TableRow, obj4);
+      const tmp25 = closure_16(tmp(5854).TableRow, obj4);
       cResult[9] = tmp6;
       cResult[10] = tmp25;
       let tmp23 = tmp25;
@@ -471,7 +471,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isEditing) => 
     const obj6 = { title: tmp8, hasIcons: true, children: null };
     const items = [tmp15, tmp23];
     obj6.children = items;
-    const tmp28 = closure_17(tmp(5903).TableRowGroup, obj6);
+    const tmp28 = closure_17(tmp(5935).TableRowGroup, obj6);
     cResult[11] = tmp15;
     cResult[12] = tmp23;
     cResult[13] = tmp28;
@@ -488,22 +488,22 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isEditing) => 
     const obj3 = { title: null, hasIcons: true, children: null };
     const intl = tmp2(1119).intl;
     obj3.title = intl.string(tmp2(1119).t.vPHdP5);
-    const obj4 = { icon: closure_16(tmp2(12904).PlusMediumIcon, {}), label: null, onPress: null };
+    const obj4 = { icon: closure_16(tmp2(12940).PlusMediumIcon, {}), label: null, onPress: null };
     const intl2 = tmp2(1119).intl;
     obj4.label = intl2.string(tmp2(1119).t.fVWxvT);
     obj4.onPress = function onPress() {
       closure_0.push(constants2.NEW_PERMISSION, { type: constants.ROLE });
     };
-    const items = [closure_16(tmp2(5822).TableRow, obj4), ];
-    const obj5 = { icon: closure_16(tmp2(12904).PlusMediumIcon, {}), label: null, onPress: null };
+    const items = [closure_16(tmp2(5854).TableRow, obj4), ];
+    const obj5 = { icon: closure_16(tmp2(12940).PlusMediumIcon, {}), label: null, onPress: null };
     const intl3 = tmp2(1119).intl;
     obj5.label = intl3.string(tmp2(1119).t.riesLt);
     obj5.onPress = function onPress() {
       closure_0.push(constants2.NEW_PERMISSION, { type: constants.MEMBER });
     };
-    items[1] = closure_16(tmp2(5822).TableRow, obj5);
+    items[1] = closure_16(tmp2(5854).TableRow, obj5);
     obj3.children = items;
-    obj2.children = closure_17(tmp2(5903).TableRowGroup, obj3);
+    obj2.children = closure_17(tmp2(5935).TableRowGroup, obj3);
     return closure_16(View, obj2);
   }
   const obj = require("useNavigation");
@@ -548,7 +548,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDelete) => {
           }
         }
         const obj2 = { label: tmp7, arrow: tmp9, icon: tmp10, onPress: onDelete };
-        const tmp16 = value2(tmp(5822).TableRow, obj2);
+        const tmp16 = value2(tmp(5854).TableRow, obj2);
         cResult[9] = tmp7;
         cResult[10] = tmp9;
         cResult[11] = tmp10;
@@ -563,7 +563,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDelete) => {
           const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: null };
           const intl = tmp(1119).intl;
           obj3.accessibilityLabel = intl.string(tmp(1119).t.N86XcP);
-          tmp11 = value2(tmp(15573).CircleMinusIcon, obj3);
+          tmp11 = value2(tmp(15583).CircleMinusIcon, obj3);
         }
       }
       cResult[6] = isEditing;
@@ -590,7 +590,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDelete) => {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: null };
       const intl = tmp3(1119).intl;
       obj2.accessibilityLabel = intl.string(tmp3(1119).t.N86XcP);
-      tmp2Result = tmp2(tmp3(15573).CircleMinusIcon, obj2);
+      tmp2Result = tmp2(tmp3(15583).CircleMinusIcon, obj2);
     }
   }
   obj.icon = tmp2Result;
@@ -863,7 +863,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       }
     }, role.id);
   });
-  obj4.children = closure_16(guild(5903).TableRowGroup, obj5);
+  obj4.children = closure_16(guild(5935).TableRowGroup, obj5);
   return closure_16(View, obj4);
 });
 ReactCompilerGating = fn(558);
@@ -879,7 +879,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDelete) => {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: null };
       const intl = tmp(1119).intl;
       obj2.accessibilityLabel = intl.string(tmp(1119).t.N86XcP);
-      tmp6 = value2(tmp(15573).CircleMinusIcon, obj2);
+      tmp6 = value2(tmp(15583).CircleMinusIcon, obj2);
     }
     cResult[0] = isEditing;
     cResult[1] = tmp6;
@@ -1097,7 +1097,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectRow) =
         }
       }, user.id);
     });
-    obj2.children = closure_16(guild_id(5903).TableRowGroup, obj3);
+    obj2.children = closure_16(guild_id(5935).TableRowGroup, obj3);
     tmp4 = closure_16(View, obj2);
   }
   return tmp4;

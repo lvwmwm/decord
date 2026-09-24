@@ -1,8 +1,8 @@
-// Module ID: 6417
-// Function ID: 6418
+// Module ID: 6449
+// Function ID: 6450
 // Dependencies: [2]
 
-// Module 6417
+// Module 6449
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GroupGamingSpotIllustration-2x.png.js");

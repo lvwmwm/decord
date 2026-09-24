@@ -1,26 +1,26 @@
-// Module ID: 17861
-// Function ID: 17862
+// Module ID: 17871
+// Function ID: 17872
 // Name: RedesignDiscoverabilityModal
-// Dependencies: [19, 17, 12824, 1376, 1078, 21, 4758, 580, 5897, 558, 568, 1488, 504, 12831, 1098, 17862, 12851, 12844, 1253, 12843, 1119, 7246, 2]
+// Dependencies: [19, 17, 12860, 1376, 1078, 21, 4790, 580, 5929, 558, 568, 1488, 504, 12867, 1098, 17872, 12887, 12880, 1253, 12879, 1119, 7278, 2]
 
-// Module 17861 (RedesignDiscoverabilityModal)
+// Module 17871 (RedesignDiscoverabilityModal)
 import nativeDefault from "native" /* 580 */;
 import ConstantsIOS from "ConstantsIOS" /* 1098 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12831 */;
-import SkipHeaderButtonDefault from "SkipHeaderButton" /* 12843 */;
-import NUFActionCreators from "NUFActionCreators" /* 12851 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12867 */;
+import SkipHeaderButtonDefault from "SkipHeaderButton" /* 12879 */;
+import NUFActionCreators from "NUFActionCreators" /* 12887 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const View = fn(17).View;
-const useContactSyncModalStore = fn(12824).useContactSyncModalStore;
+const useContactSyncModalStore = fn(12860).useContactSyncModalStore;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { header: { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" }, container: null };
 let obj3 = { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" };
-obj2.container = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingBottom: 44, paddingTop: fn(5897).NAV_BAR_HEIGHT + 32 };
+obj2.container = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingBottom: 44, paddingTop: fn(5929).NAV_BAR_HEIGHT + 32 };
 let closure_8 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
 let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
@@ -190,7 +190,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) =>
       tmp15 = tmp18;
     }
     const obj3 = { onNext: tmp9, loading: false, initialName: name };
-    const tmp14 = jsx(allowPhone(12844), { onNext: tmp9, loading: false, initialName: name });
+    const tmp14 = jsx(allowPhone(12880), { onNext: tmp9, loading: false, initialName: name });
     cResult[6] = tmp9;
     cResult[7] = name;
     cResult[8] = tmp14;
@@ -231,7 +231,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) =>
     name = "";
   }
   obj2.initialName = name;
-  obj.children = jsx(allowPhone(12844), { onNext: callback, loading: false, initialName: null });
+  obj.children = jsx(allowPhone(12880), { onNext: callback, loading: false, initialName: null });
   return <tmp6 style={tmp.container}>{null}</tmp6>;
 });
 ReactCompilerGating = fn(558);
@@ -386,7 +386,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   }, items);
   const intl = onComplete(1119).intl;
   obj.headerBackTitle = intl.string(onComplete(1119).t["13/7kX"]);
-  return jsx(onComplete(7246).Navigator, { headerStyle: closure_8().header, screens: null, initialRouteName: onComplete(1098).DiscoverabilityScenes.LANDING, headerBackTitle: null });
+  return jsx(onComplete(7278).Navigator, { headerStyle: closure_8().header, screens: null, initialRouteName: onComplete(1098).DiscoverabilityScenes.LANDING, headerBackTitle: null });
 });
 tmp2.modalConfig = { animation: fn(1078).ModalAnimation.SLIDE_IN_OUT };
 const size = fn(2);

@@ -1,13 +1,13 @@
-// Module ID: 11187
-// Function ID: 11188
+// Module ID: 11223
+// Function ID: 11224
 // Name: TvIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 11188, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 11224, 4493, 2]
 
-// Module 11187 (TvIcon)
+// Module 11223 (TvIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod11188 from "module_11188" /* 11188 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod11224 from "module_11224" /* 11224 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const TvIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(11188);
+    const tmpResult = tmp(11224);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const TvIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => 
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11188, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11224, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

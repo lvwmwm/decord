@@ -1,13 +1,13 @@
-// Module ID: 15870
-// Function ID: 15871
+// Module ID: 15880
+// Function ID: 15881
 // Name: InventoryIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 15871, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 15881, 4493, 2]
 
-// Module 15870 (InventoryIcon)
+// Module 15880 (InventoryIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod15871 from "module_15871" /* 15871 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod15881 from "module_15881" /* 15881 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const InventoryIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(15871);
+    const tmpResult = tmp(15881);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const InventoryIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15871, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15881, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

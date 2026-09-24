@@ -1,15 +1,15 @@
-// Module ID: 11604
-// Function ID: 11605
+// Module ID: 11640
+// Function ID: 11641
 // Name: useLegacyExperiments
-// Dependencies: [32, 19, 4674, 4675, 8142, 4679, 8140, 558, 568, 504, 2]
+// Dependencies: [32, 19, 4706, 4707, 8174, 4711, 8172, 558, 568, 504, 2]
 // Exports: getLegacyExperiments
 
-// Module 11604 (useLegacyExperiments)
+// Module 11640 (useLegacyExperiments)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import ExperimentManager from "ExperimentManager" /* 4679 */;
+import ExperimentManager from "ExperimentManager" /* 4711 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 4674 */;
+import ExperimentStore from "ExperimentStore" /* 4706 */;
 
 require = fn;
 function parseRegisteredExperiments(stateFromStoresObject) {
@@ -28,17 +28,17 @@ function parseRegisteredExperiments(stateFromStoresObject) {
       if (typeof type.description === "object") {
         let experimentBucketName = tmp.description[index];
       } else {
-        experimentBucketName = closure_1(8140).getExperimentBucketName(item);
-        const obj3 = closure_1(8140);
+        experimentBucketName = closure_1(8172).getExperimentBucketName(item);
+        const obj3 = closure_1(8172);
       }
       obj.label = experimentBucketName;
-      obj.shortLabel = closure_1(8140).getExperimentBucketName(item);
+      obj.shortLabel = closure_1(8172).getExperimentBucketName(item);
       if (item === constants.CONTROL) {
-        let TREATMENT = obj(8142).Variation_Type.CONTROL;
+        let TREATMENT = obj(8174).Variation_Type.CONTROL;
       } else if (item === tmp4.NOT_ELIGIBLE) {
-        TREATMENT = obj(8142).Variation_Type.UNSPECIFIED;
+        TREATMENT = obj(8174).Variation_Type.UNSPECIFIED;
       } else {
-        TREATMENT = obj(8142).Variation_Type.TREATMENT;
+        TREATMENT = obj(8174).Variation_Type.TREATMENT;
       }
       obj.type = TREATMENT;
       return obj;
@@ -70,7 +70,7 @@ function getLegacyOverridesInfo(stateFromStoresObject1) {
   return obj;
 }
 const useMemo = fn(19).useMemo;
-const ExperimentConstants = fn(4675);
+const ExperimentConstants = fn(4707);
 ({ ExperimentBuckets: metroRequire, ExperimentTypes: closure_7 } = ExperimentConstants);
 const ReactCompilerGating = fn(558);
 const size = fn(2);

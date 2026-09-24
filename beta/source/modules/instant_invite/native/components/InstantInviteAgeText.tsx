@@ -1,20 +1,20 @@
-// Module ID: 10126
-// Function ID: 10127
+// Module ID: 10165
+// Function ID: 10166
 // Name: InstantInviteAgeText
-// Dependencies: [19, 17, 10056, 21, 4758, 558, 568, 7223, 504, 10057, 4754, 5341, 10055, 1119, 2]
+// Dependencies: [19, 17, 10095, 21, 4790, 558, 568, 7255, 504, 10096, 4786, 5373, 10094, 1119, 2]
 
-// Module 10126 (InstantInviteAgeText)
+// Module 10165 (InstantInviteAgeText)
 import initialize from "initialize" /* 504 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7223 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10055 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7255 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10094 */;
 import noop from "module_19" /* 19 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 10056 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 10095 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsxs: closure_4, jsx: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ inviteAgeContainer: { flexDirection: "row", alignItems: "center", flexWrap: "wrap" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -171,9 +171,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((callbackActionSh
       str2 = "experimental/body-md/normal";
     }
     const obj4 = { variant: str2, children: null };
-    const items2 = [tmp2(10057).maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
+    const items2 = [tmp2(10096).maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
     obj4.children = items2;
-    const items3 = [closure_4(tmp2(4754).Text, obj4), ];
+    const items3 = [closure_4(tmp2(4786).Text, obj4), ];
     if (canEditInvite) {
       const obj5 = {
         onPress() {
@@ -196,13 +196,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((callbackActionSh
       const obj6 = { variant: str, color: "text-link", children: null };
       const intl2 = tmp2(1119).intl;
       obj6.children = intl2.string(tmp2(1119).t["VNe8P/"]);
-      obj5.children = closure_5(tmp2(4754).Text, obj6);
-      canEditInvite = tmp9(tmp2(5341).PressableOpacity, obj5);
+      obj5.children = closure_5(tmp2(4786).Text, obj6);
+      canEditInvite = tmp9(tmp2(5373).PressableOpacity, obj5);
     }
     items3[1] = canEditInvite;
     obj3.children = items3;
     tmp7Result = tmp7(View, obj3);
-    const tmp2Result = tmp2(10057);
+    const tmp2Result = tmp2(10096);
   }
   return tmp7Result;
 });

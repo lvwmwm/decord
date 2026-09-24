@@ -1,13 +1,13 @@
-// Module ID: 13418
-// Function ID: 13419
+// Module ID: 13454
+// Function ID: 13455
 // Name: UserClockIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 13419, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 13455, 4493, 2]
 
-// Module 13418 (UserClockIcon)
+// Module 13454 (UserClockIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod13419 from "module_13419" /* 13419 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod13455 from "module_13455" /* 13455 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const UserClockIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(13419);
+    const tmpResult = tmp(13455);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const UserClockIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod13419, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod13455, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

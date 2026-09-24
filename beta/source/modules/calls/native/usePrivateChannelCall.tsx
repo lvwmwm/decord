@@ -1,11 +1,11 @@
-// Module ID: 13420
-// Function ID: 13421
+// Module ID: 13456
+// Function ID: 13457
 // Name: usePrivateChannelCall
-// Dependencies: [5, 19, 2045, 558, 568, 1119, 11173, 504, 4771, 2]
+// Dependencies: [5, 19, 2045, 558, 568, 1119, 11209, 504, 4803, 2]
 
-// Module 13420 (usePrivateChannelCall)
+// Module 13456 (usePrivateChannelCall)
 import util from "util" /* 1119 */;
-import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 11173 */;
+import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 11209 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -92,7 +92,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
               if (null == channel) {
                 dependencyMap = 1;
                 c3 = 1;
-                const obj7 = { value: tmp3(4771).ensurePrivateChannel(tmp32), done: false };
+                const obj7 = { value: tmp3(4803).ensurePrivateChannel(tmp32), done: false };
                 return obj7;
               }
               tmp32 = closure_0;
@@ -113,8 +113,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
             isPrivateResult = channel.isPrivate();
           }
           if (isPrivateResult) {
-            tmp3(11173)(channel, tmp3).onPress();
-            const obj3 = tmp3(11173)(channel, tmp3);
+            tmp3(11209)(channel, tmp3).onPress();
+            const obj3 = tmp3(11209)(channel, tmp3);
           }
           if (dependencyMap != null) {
             dependencyMap();
@@ -251,7 +251,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
             if (null == channel) {
               dependencyMap = 1;
               c3 = 1;
-              const obj7 = { value: tmp3(4771).ensurePrivateChannel(tmp32), done: false };
+              const obj7 = { value: tmp3(4803).ensurePrivateChannel(tmp32), done: false };
               return obj7;
             }
             tmp32 = closure_0;
@@ -272,8 +272,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
           isPrivateResult = channel.isPrivate();
         }
         if (isPrivateResult) {
-          tmp3(11173)(channel, closure_129_1).onPress();
-          const obj3 = tmp3(11173)(channel, closure_129_1);
+          tmp3(11209)(channel, closure_129_1).onPress();
+          const obj3 = tmp3(11209)(channel, closure_129_1);
         }
         if (closure_129_2 != null) {
           closure_129_2();

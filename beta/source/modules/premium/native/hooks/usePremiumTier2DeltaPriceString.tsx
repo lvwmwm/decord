@@ -1,14 +1,14 @@
-// Module ID: 13817
-// Function ID: 13818
+// Module ID: 13853
+// Function ID: 13854
 // Name: usePremiumTier2DeltaPriceString
-// Dependencies: [19, 7668, 7484, 1378, 7653, 7487, 1368, 7481, 558, 568, 4433, 504, 2]
+// Dependencies: [19, 7700, 7516, 1378, 7685, 7519, 1368, 7513, 558, 568, 4465, 504, 2]
 
-// Module 13817 (usePremiumTier2DeltaPriceString)
+// Module 13853 (usePremiumTier2DeltaPriceString)
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import BillingUtils from "BillingUtils" /* 4433 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7653 */;
+import BillingUtils from "BillingUtils" /* 4465 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7685 */;
 import noop from "module_19" /* 19 */;
-import IAPStore from "IAPStore" /* 7484 */;
+import IAPStore from "IAPStore" /* 7516 */;
 
 const require = globalThis.__r;
 
@@ -20,9 +20,9 @@ function getViewerProductId(subscription) {
     try {
       const productIdFromSubscription = PremiumBundledPlansUtils.getProductIdFromSubscription(subscription, false);
       try {
-        const productIdFromSubscription1 = tmp3(7653).getProductIdFromSubscription(subscription, true);
-        const tmp8 = tmp3(7487).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
-        const tmp10 = tmp3(7487).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription1];
+        const productIdFromSubscription1 = tmp3(7685).getProductIdFromSubscription(subscription, true);
+        const tmp8 = tmp3(7519).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
+        const tmp10 = tmp3(7519).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription1];
         if (null != tmp8) {
           if (null != tmp10) {
             if (tmp8.numPremiumGuild === tmp10.numPremiumGuild) {
@@ -32,7 +32,7 @@ function getViewerProductId(subscription) {
           }
         }
         tmp11 = productIdFromSubscription;
-        const tmp3Result = tmp3(7653);
+        const tmp3Result = tmp3(7685);
       } catch (err) {
         return tmp2;
       }
@@ -60,9 +60,9 @@ function computeDelta(productId, currencyCode, stateFromStores) {
             }
             const obj4 = { priceString: null, failure: null };
             tmp4Result = tmp4(1368);
-            obj4.priceString = tmp4(7481).formatPrice(result, currencyCode.currencyCode, { convertToMajorUnits: false });
+            obj4.priceString = tmp4(7513).formatPrice(result, currencyCode.currencyCode, { convertToMajorUnits: false });
             let obj = obj4;
-            const tmp4Result2 = tmp4(7481);
+            const tmp4Result2 = tmp4(7513);
           }
           return obj;
         }
@@ -87,12 +87,12 @@ function computeAcomDeltaResult(productId, checkoutContext, cResult) {
         if (addOnPrice.majorUnits > 0) {
           let tmp = null;
           if (null != cResult) {
-            tmp = tmp10(7487).AppStorePremiumProductIdsToPremiumBundledItems[cResult];
+            tmp = tmp10(7519).AppStorePremiumProductIdsToPremiumBundledItems[cResult];
           }
           if (null != cResult) {
             if (null != tmp) {
               if (0 !== tmp.numPremiumGuild) {
-                const availablePlanForItems1 = checkoutContext.getAvailablePlanForItems(tmp10(7653).getSubscriptionItemsForProduct(cResult));
+                const availablePlanForItems1 = checkoutContext.getAvailablePlanForItems(tmp10(7685).getSubscriptionItemsForProduct(cResult));
                 let addOnPrice1;
                 if (availablePlanForItems1 != null) {
                   addOnPrice1 = availablePlanForItems1.getAddOnPrice();
@@ -102,19 +102,19 @@ function computeAcomDeltaResult(productId, checkoutContext, cResult) {
                 } else {
                   const diff = addOnPrice.majorUnits - addOnPrice1.majorUnits;
                   if (diff > 0) {
-                    const obj = { priceString: tmp10(7481).formatPrice(diff, addOnPrice.currency, { convertToMajorUnits: false }), failure: null };
+                    const obj = { priceString: tmp10(7513).formatPrice(diff, addOnPrice.currency, { convertToMajorUnits: false }), failure: null };
                     let tmp4 = obj;
-                    const tmp10Result3 = tmp10(7481);
+                    const tmp10Result3 = tmp10(7513);
                   } else {
                     tmp4 = closure_6;
                   }
                   return tmp4;
                 }
-                const tmp10Result = tmp10(7653);
+                const tmp10Result = tmp10(7685);
               }
             }
           }
-          const obj2 = { priceString: tmp10(7481).formatPrice(addOnPrice.majorUnits, addOnPrice.currency, { convertToMajorUnits: false }), failure: null };
+          const obj2 = { priceString: tmp10(7513).formatPrice(addOnPrice.majorUnits, addOnPrice.currency, { convertToMajorUnits: false }), failure: null };
           return obj2;
         }
       }
@@ -122,7 +122,7 @@ function computeAcomDeltaResult(productId, checkoutContext, cResult) {
     }
   }
 }
-const useNativeCheckoutStore = fn(7668).useNativeCheckoutStore;
+const useNativeCheckoutStore = fn(7700).useNativeCheckoutStore;
 const PremiumTypes = fn(1378).PremiumTypes;
 let closure_6 = { priceString: null, failure: null };
 let ReactCompilerGating = fn(558);
@@ -344,7 +344,7 @@ export const usePremiumTier2DeltaPriceString = ReactCompilerGating.isReactCompil
         const tmp18 = getViewerProductId(subscription);
         let tmp20 = null;
         if (null != tmp18) {
-          tmp20 = tmp(7487).AppStorePremiumProductIdsToPremiumBundledItems[tmp18];
+          tmp20 = tmp(7519).AppStorePremiumProductIdsToPremiumBundledItems[tmp18];
         }
         flag = null != tmp20 && tmp20.basePlanId === premiumTier.basePlanId && tmp20.numPremiumGuild < premiumTier.numPremiumGuild;
         const tmp21 = null != tmp20 && tmp20.basePlanId === premiumTier.basePlanId && tmp20.numPremiumGuild < premiumTier.numPremiumGuild;
@@ -393,7 +393,7 @@ export const usePremiumTier2DeltaPriceString = ReactCompilerGating.isReactCompil
         const tmp2Result = tmp2(subscription);
         let tmp11 = null;
         if (null != tmp2Result) {
-          tmp11 = tmp4(7487).AppStorePremiumProductIdsToPremiumBundledItems[tmp2Result];
+          tmp11 = tmp4(7519).AppStorePremiumProductIdsToPremiumBundledItems[tmp2Result];
         }
         flag = null != tmp11 && tmp11.basePlanId === premiumTier.basePlanId && tmp11.numPremiumGuild < premiumTier.numPremiumGuild;
         const tmp12 = null != tmp11 && tmp11.basePlanId === premiumTier.basePlanId && tmp11.numPremiumGuild < premiumTier.numPremiumGuild;

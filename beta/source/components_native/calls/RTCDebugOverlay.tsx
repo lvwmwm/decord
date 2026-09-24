@@ -1,43 +1,43 @@
-// Module ID: 10291
-// Function ID: 10292
+// Module ID: 10330
+// Function ID: 10331
 // Name: RTCDebugOverlay
-// Dependencies: [109, 32, 19, 17, 2045, 2067, 4781, 10292, 4797, 1376, 4783, 21, 4758, 4608, 580, 558, 568, 1181, 504, 4911, 10294, 10293, 577, 1119, 5188, 7371, 2]
+// Dependencies: [109, 32, 19, 17, 2045, 2067, 4813, 10331, 4829, 1376, 4815, 21, 4790, 4640, 580, 558, 568, 1181, 504, 4943, 10333, 10332, 577, 1119, 5220, 7403, 2]
 
-// Module 10291 (RTCDebugOverlay)
+// Module 10330 (RTCDebugOverlay)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
-import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 10293 */;
-import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 10294 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
+import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 10332 */;
+import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 10333 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
-import RTCDebugStore from "RTCDebugStore" /* 10292 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4797 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
+import RTCDebugStore from "RTCDebugStore" /* 10331 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4829 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 let closure_4 = ["type"];
 get_ActivityIndicator = fn(17);
 ({ View: closure_8, ScrollView: closure_9, StyleSheet } = get_ActivityIndicator);
-const MediaEngineContextTypes = fn(4783).MediaEngineContextTypes;
+const MediaEngineContextTypes = fn(4815).MediaEngineContextTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_17, jsxs: closure_18, Fragment: closure_19 } = jsxProd);
 function asString(arg0) {
 
 }
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: null, scroller: null, indent: null, row: null, text: null, buttonClose: null };
 let obj3 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
-const ColorUtils = fn(4608);
+const ColorUtils = fn(4640);
 obj3.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.7);
 obj.container = obj3;
 obj.scroller = { flex: 1, margin: 8 };
@@ -433,7 +433,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
   }
   const tmpResult3 = guildId(504);
   const stateFromStores1 = guildId(504).useStateFromStores(tmp14, tmp16, tmp17);
-  const tmp19 = channelId(4911)(stateFromStores1);
+  const tmp19 = channelId(4943)(stateFromStores1);
   let name = null;
   if (null != stateFromStores) {
     name = stateFromStores.name;
@@ -495,11 +495,11 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
   }
   const obj5 = { title: "general", children: null };
   obj6 = { obj: null };
-  const tmp4 = channelId(4911)(stateFromStores1);
+  const tmp4 = channelId(4943)(stateFromStores1);
   const tmp6 = closure_23;
   const tmp7 = ObjectKV;
   obj4.name = name;
-  obj6.obj = { guild: obj4, channel: { id: channelId, name: channelId(4911)(stateFromStores1) } };
+  obj6.obj = { guild: obj4, channel: { id: channelId, name: channelId(4943)(stateFromStores1) } };
   obj5.children = closure_17(tmp7, obj6);
   return closure_17(tmp6, obj5);
 });
@@ -752,7 +752,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDebug
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function n() {
       RTCDebugActionCreatorsAll.open();
-      return () => closure_1_1(577).wait(closure_1_2(10293).close);
+      return () => closure_1_1(577).wait(closure_1_2(10332).close);
     };
     const items = [];
     cResult[0] = fn;
@@ -803,7 +803,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDebug
     }
     if (cResult[10] !== onClose) {
       const obj3 = { text: tmp20, onPress: onClose };
-      const tmp24 = constants(tmp(5188).Button, obj3);
+      const tmp24 = constants(tmp(5220).Button, obj3);
       cResult[10] = onClose;
       cResult[11] = tmp24;
       let tmp22 = tmp24;
@@ -825,7 +825,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDebug
       const rect = { top: true, left: true, right: true, bottom: true, style: tmp8, children: null };
       const items2 = [tmp16, tmp25];
       rect.children = items2;
-      const tmp31 = collapsedCategories(tmp(7371).SafeAreaPaddingView, rect);
+      const tmp31 = collapsedCategories(tmp(7403).SafeAreaPaddingView, rect);
       cResult[15] = tmp25;
       cResult[16] = tmp8;
       cResult[17] = tmp16;
@@ -849,7 +849,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDebug
   const tmp = closure_21();
   const effect = noop.useEffect(() => {
     RTCDebugActionCreatorsAll.open();
-    return () => closure_1_1(577).wait(closure_1_2(10293).close);
+    return () => closure_1_1(577).wait(closure_1_2(10332).close);
   }, []);
   const rect = { top: true, left: true, right: true, bottom: true, style: null, children: null };
   const items = [tmp.container, style];

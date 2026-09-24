@@ -1,11 +1,11 @@
-// Module ID: 12685
-// Function ID: 12686
+// Module ID: 12721
+// Function ID: 12722
 // Name: BoostGem
-// Dependencies: [19, 21, 558, 568, 8733, 2]
+// Dependencies: [19, 21, 558, 568, 8765, 2]
 
-// Module 12685 (BoostGem)
+// Module 12721 (BoostGem)
 import c from "c" /* 568 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -29,12 +29,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num2 = height;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = React3(tmp(8733).Path, { d: "M19.3146 0L0 19.4029V46.6865L19.3146 65.9999L38.6293 46.5969V19.388L19.3146 0ZM28.972 42.6566L19.3146 52.3432L9.65732 42.6566V23.388L19.3146 13.6865L28.972 23.388V42.6566Z", fill: "#FA6EF6" });
-    const tmp12 = React3(tmp(8733).Path, { d: "M19.3145 0V13.6316L28.9718 23.2941L38.6291 19.3102L19.3145 0Z", fill: "#FFADFB" });
-    const tmp13 = React3(tmp(8733).Path, { d: "M9.65732 42.7056L0 46.7269L19.3146 65.9996V52.3419L9.65732 42.7056Z", fill: "#E655D4" });
-    const tmp14 = React3(tmp(8733).Path, { d: "M9.65723 23.3317V42.6835L19.3145 52.4118L28.9719 42.6835V23.3317L19.3145 13.5884L9.65723 23.3317Z", fill: "#FFCFF9" });
-    const tmp15 = React3(tmp(8733).Path, { d: "M28.9719 23.1273L9.74637 42.7058H9.65723V37.3827L26.3273 20.3823L28.9719 23.1273Z", fill: "white" });
-    const tmp16 = React3(tmp(8733).Path, { d: "M28.9717 31.0586V36.3917L16.1689 49.4997L13.52 46.6984L28.9717 31.0586Z", fill: "white" });
+    const tmp11 = React3(tmp(8765).Path, { d: "M19.3146 0L0 19.4029V46.6865L19.3146 65.9999L38.6293 46.5969V19.388L19.3146 0ZM28.972 42.6566L19.3146 52.3432L9.65732 42.6566V23.388L19.3146 13.6865L28.972 23.388V42.6566Z", fill: "#FA6EF6" });
+    const tmp12 = React3(tmp(8765).Path, { d: "M19.3145 0V13.6316L28.9718 23.2941L38.6291 19.3102L19.3145 0Z", fill: "#FFADFB" });
+    const tmp13 = React3(tmp(8765).Path, { d: "M9.65732 42.7056L0 46.7269L19.3146 65.9996V52.3419L9.65732 42.7056Z", fill: "#E655D4" });
+    const tmp14 = React3(tmp(8765).Path, { d: "M9.65723 23.3317V42.6835L19.3145 52.4118L28.9719 42.6835V23.3317L19.3145 13.5884L9.65723 23.3317Z", fill: "#FFCFF9" });
+    const tmp15 = React3(tmp(8765).Path, { d: "M28.9719 23.1273L9.74637 42.7058H9.65723V37.3827L26.3273 20.3823L28.9719 23.1273Z", fill: "white" });
+    const tmp16 = React3(tmp(8765).Path, { d: "M28.9717 31.0586V36.3917L16.1689 49.4997L13.52 46.6984L28.9717 31.0586Z", fill: "white" });
     cResult[0] = tmp11;
     cResult[1] = tmp12;
     cResult[2] = tmp13;

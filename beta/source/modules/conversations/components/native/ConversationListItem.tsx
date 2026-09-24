@@ -1,28 +1,28 @@
-// Module ID: 8188
-// Function ID: 8189
+// Module ID: 8220
+// Function ID: 8221
 // Name: ConversationListItem
-// Dependencies: [19, 17, 7845, 7842, 1078, 21, 4758, 580, 558, 568, 1488, 504, 8156, 8189, 8158, 4754, 1119, 5198, 8190, 8191, 8194, 5881, 5824, 2]
+// Dependencies: [19, 17, 7877, 7874, 1078, 21, 4790, 580, 558, 568, 1488, 504, 8188, 8221, 8190, 4786, 1119, 5230, 8222, 8223, 8226, 5913, 5856, 2]
 
-// Module 8188 (ConversationListItem)
+// Module 8220 (ConversationListItem)
 import nativeDefault from "native" /* 580 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 8156 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 8158 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 8189 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 8191 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 8194 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 8188 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 8190 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 8221 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 8223 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 8226 */;
 import noop from "module_19" /* 19 */;
-import ConversationsStore from "ConversationsStore" /* 7845 */;
+import ConversationsStore from "ConversationsStore" /* 7877 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-let closure_6 = fn(7842).MOBILE_PREVIEW_MESSAGE_COUNT;
+let closure_6 = fn(7874).MOBILE_PREVIEW_MESSAGE_COUNT;
 const VerticalGradient = fn(1078).VerticalGradient;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const colors = ["black", "black"];
 const colors2 = ["black", "transparent"];
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { card: { marginBottom: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, height: 232, overflow: "hidden", paddingBottom: 0 }, title: { flexShrink: 1, minWidth: 0 }, timestamp: { flexShrink: 0 }, headerContainer: null, previewsMask: null, previews: null, maskColumn: null, maskOpaque: null, maskFade: null };
 let obj3 = { marginBottom: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, height: 232, overflow: "hidden", paddingBottom: 0 };
 obj.headerContainer = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8 };
@@ -103,7 +103,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                     }
                     if (cResult[25] !== tmp4.maskOpaque) {
                       const obj4 = { colors, style: tmp4.maskOpaque };
-                      const tmp33 = closure_8(navigation(5198), obj4);
+                      const tmp33 = closure_8(navigation(5230), obj4);
                       cResult[25] = tmp4.maskOpaque;
                       cResult[26] = tmp33;
                       let tmp29 = tmp33;
@@ -114,7 +114,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                       const obj5 = { colors: colors2, start: null, end: null, style: null };
                       ({ START: obj9.start, END: obj9.end } = VerticalGradient);
                       obj5.style = tmp4.maskFade;
-                      const tmp39 = closure_8(navigation(5198), obj5);
+                      const tmp39 = closure_8(navigation(5230), obj5);
                       cResult[27] = tmp4.maskFade;
                       cResult[28] = tmp39;
                       let tmp34 = tmp39;
@@ -153,7 +153,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                                     const obj6 = { style: tmp14, onPress: tmp13, accessibilityLabel: tmp15, children: null };
                                     const items1 = [tmp25, tmp54];
                                     obj6.children = items1;
-                                    const tmp60 = closure_9(tmp(5824).Card, obj6);
+                                    const tmp60 = closure_9(tmp(5856).Card, obj6);
                                     cResult[44] = conversation.title;
                                     cResult[45] = tmp13;
                                     cResult[46] = tmp4.card;
@@ -164,7 +164,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                                   }
                                 }
                                 const obj7 = { style: tmp4.previewsMask, maskElement: tmp40, children: tmp50 };
-                                const tmp57 = closure_8(navigation(5881), obj7);
+                                const tmp57 = closure_8(navigation(5913), obj7);
                                 cResult[40] = tmp4.previewsMask;
                                 cResult[41] = tmp40;
                                 cResult[42] = tmp50;
@@ -181,7 +181,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                           }
                         }
                         if (null == arr4) {
-                          let mapped = closure_8(navigation(8190), {});
+                          let mapped = closure_8(navigation(8222), {});
                         } else {
                           mapped = arr4.map((blocked) => {
                             if (!blocked.blocked) {
@@ -227,14 +227,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((conversation) 
                 tmp25 = tmp28;
               }
               const obj12 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, style: tmp4.timestamp, children: tmp20 };
-              const tmp24 = closure_8(tmp(4754).Text, obj12);
+              const tmp24 = closure_8(tmp(4786).Text, obj12);
               cResult[18] = tmp4.timestamp;
               cResult[19] = tmp20;
               cResult[20] = tmp24;
               tmp22 = tmp24;
             }
             const obj13 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, style: tmp4.title, children: conversation.title };
-            const tmp19 = closure_8(tmp(4754).Text, obj13);
+            const tmp19 = closure_8(tmp(4786).Text, obj13);
             cResult[13] = conversation.title;
             cResult[14] = tmp4.title;
             cResult[15] = tmp19;

@@ -1,10 +1,10 @@
-// Module ID: 9801
-// Function ID: 9802
+// Module ID: 9833
+// Function ID: 9834
 // Name: ChannelPermissionsUtils
-// Dependencies: [2049, 2063, 2104, 2109, 1376, 8677, 1078, 2107, 1119, 1090, 11, 4603, 1374, 4404, 9802, 1982, 4903, 2]
+// Dependencies: [2049, 2063, 2104, 2109, 1376, 8709, 1078, 2107, 1119, 1090, 11, 4635, 1374, 4436, 9834, 1982, 4935, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, flipEveryonePermission, getAllExistingRolesWithPermission, getExistingMembers, getExistingMembersRows, getExistingRoles, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getNoRolesRow, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 9801 (ChannelPermissionsUtils)
+// Module 9833 (ChannelPermissionsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
 import util from "util" /* 1119 */;
@@ -12,11 +12,11 @@ import Server from "Server" /* 1982 */;
 import ChannelRecord from "ChannelRecord" /* 2049 */;
 import GuildRecord from "GuildRecord" /* 2063 */;
 import GuildRoleUtils from "GuildRoleUtils" /* 2107 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4404 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import ChannelUtils from "ChannelUtils" /* 4903 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8677 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 9802 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4436 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import ChannelUtils from "ChannelUtils" /* 4935 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8709 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 9834 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 2104 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 import UserStore from "UserStore" /* 1376 */;

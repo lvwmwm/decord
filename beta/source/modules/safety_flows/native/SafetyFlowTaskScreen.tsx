@@ -1,21 +1,21 @@
-// Module ID: 18335
-// Function ID: 18336
+// Module ID: 18345
+// Function ID: 18346
 // Name: SafetyFlowTaskScreen
-// Dependencies: [19, 21, 4758, 558, 568, 4754, 5186, 8699, 12057, 18333, 11297, 8698, 2]
+// Dependencies: [19, 21, 4790, 558, 568, 4786, 5218, 8731, 12093, 18343, 11333, 8730, 2]
 
-// Module 18335 (SafetyFlowTaskScreen)
+// Module 18345 (SafetyFlowTaskScreen)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import ModalScreen from "ModalScreen" /* 8698 */;
-import ModalContent from "ModalContent" /* 8699 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 18333 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import ModalScreen from "ModalScreen" /* 8730 */;
+import ModalContent from "ModalContent" /* 8731 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 18343 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ header: { textAlign: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -67,7 +67,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       const obj2 = { children: null };
                       const items = [tmp16, tmp19];
                       obj2.children = items;
-                      const tmp28 = React4(tmp(8698).ModalScreen, obj2);
+                      const tmp28 = React4(tmp(8730).ModalScreen, obj2);
                       cResult[20] = tmp16;
                       cResult[21] = tmp19;
                       cResult[22] = tmp28;
@@ -86,12 +86,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 let tmp24 = null != tmp4;
                 if (tmp24) {
                   const obj3 = { variant: "primary", text: tmp4, onPress: onAction, loading: submitting };
-                  tmp24 = React3(tmp(11297).ModalActionButton, obj3);
+                  tmp24 = React3(tmp(11333).ModalActionButton, obj3);
                 }
                 const obj4 = { children: null };
                 items1[1] = tmp24;
                 obj4.children = items1;
-                tmp29Result = React4(tmp(12057).ModalFooter, obj4);
+                tmp29Result = React4(tmp(12093).ModalFooter, obj4);
               }
               cResult[14] = tmp4;
               cResult[15] = footer;
@@ -104,7 +104,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const obj5 = { children: null };
             const items2 = [tmp13, children];
             obj5.children = items2;
-            const tmp18 = React4(tmp(8699).ModalContent, obj5);
+            const tmp18 = React4(tmp(8731).ModalContent, obj5);
             cResult[11] = children;
             cResult[12] = tmp13;
             cResult[13] = tmp18;
@@ -114,7 +114,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj6 = { align: "center", justify: "center", spacing: 8, children: null };
         const items3 = [tmp7, tmp8, tmp10];
         obj6.children = items3;
-        const tmp15 = React4(tmp(5186).Stack, obj6);
+        const tmp15 = React4(tmp(5218).Stack, obj6);
         cResult[7] = tmp7;
         cResult[8] = tmp8;
         cResult[9] = tmp10;
@@ -125,7 +125,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp11 = null != subtitle;
     if (tmp11) {
       const obj7 = { variant: "text-md/medium", color: str, style: tmp6.header, children: subtitle };
-      tmp11 = React3(tmp(4754).Text, obj7);
+      tmp11 = React3(tmp(4786).Text, obj7);
     }
     cResult[3] = tmp6.header;
     cResult[4] = subtitle;
@@ -160,7 +160,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp7Result = null != subtitle;
   if (tmp7Result) {
     const obj2 = { variant: "text-md/medium", color: subtitleColor, style: tmp2.header, children: subtitle };
-    tmp7Result = tmp7(tmp4(4754).Text, obj2);
+    tmp7Result = tmp7(tmp4(4786).Text, obj2);
   }
   const obj3 = { children: null };
   items[2] = tmp7Result;
@@ -175,12 +175,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp7Result2 = null != action;
     if (tmp7Result2) {
       const obj4 = { variant: "primary", text: action, onPress: onAction, loading: submitting };
-      tmp7Result2 = tmp7(tmp4(11297).ModalActionButton, obj4);
+      tmp7Result2 = tmp7(tmp4(11333).ModalActionButton, obj4);
     }
     const obj5 = { children: null };
     items3[1] = tmp7Result2;
     obj5.children = items3;
-    footer = tmp3(tmp4(12057).ModalFooter, obj5);
+    footer = tmp3(tmp4(12093).ModalFooter, obj5);
   }
   children1[1] = footer;
   return React4(ModalScreen.ModalScreen, { children: children1 });

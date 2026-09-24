@@ -1,12 +1,12 @@
-// Module ID: 14221
-// Function ID: 14222
+// Module ID: 14258
+// Function ID: 14259
 // Name: GuildBadgeClover
-// Dependencies: [109, 19, 21, 558, 568, 14189, 8733, 2]
+// Dependencies: [109, 19, 21, 558, 568, 14226, 8765, 2]
 
-// Module 14221 (GuildBadgeClover)
+// Module 14258 (GuildBadgeClover)
 import c from "c" /* 568 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14189 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14226 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -51,17 +51,17 @@ export const GuildBadgeClover = ReactCompilerGating.isReactCompilerEnabled() ? (
   }
   if (cResult[5] !== tmp4) {
     const obj2 = { primaryBaseColors, primaryTintColor: tmp4, primaryTintLuminances, primaryLuminanceWeights: items };
-    const transformedBadgeColors = tmp(14189).getTransformedBadgeColors(obj2);
+    const transformedBadgeColors = tmp(14226).getTransformedBadgeColors(obj2);
     cResult[5] = tmp4;
     cResult[6] = transformedBadgeColors;
     let tmp11 = transformedBadgeColors;
-    const tmpResult = tmp(14189);
+    const tmpResult = tmp(14226);
   } else {
     tmp11 = cResult[6];
   }
   const primaryColorsTransformed = tmp11.primaryColorsTransformed;
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp18 = React4(tmp(8733).Path, { d: "M6 13h-1v-1h1v1ZM2 11H1v-2h1v2ZM4 6H2v1H1v-2h3v1ZM14 6h-2v-1h2v1ZM7 2h-1v2h-1V1h2v1ZM11 2h-2V1h2v1Z", fill: "white" });
+    const tmp18 = React4(tmp(8765).Path, { d: "M6 13h-1v-1h1v1ZM2 11H1v-2h1v2ZM4 6H2v1H1v-2h3v1ZM14 6h-2v-1h2v1ZM7 2h-1v2h-1V1h2v1ZM11 2h-2V1h2v1Z", fill: "white" });
     cResult[7] = tmp18;
     let tmp16 = tmp18;
   } else {
@@ -69,7 +69,7 @@ export const GuildBadgeClover = ReactCompilerGating.isReactCompilerEnabled() ? (
   }
   if (cResult[8] !== primaryColorsTransformed[2]) {
     const obj3 = { d: "M9 12h1v2H5v-1h1v-2h3v1ZM14 7h-1v2h1v2h-2v-1h-1v-1h-1v-2h1v-1h3v1ZM5 10H2V6h3v4ZM10 4h-1v1H6V2h4v2Z", fill: primaryColorsTransformed[2] };
-    const tmp21 = React4(tmp(8733).Path, obj3);
+    const tmp21 = React4(tmp(8765).Path, obj3);
     cResult[8] = primaryColorsTransformed[2];
     cResult[9] = tmp21;
     let tmp19 = tmp21;
@@ -78,7 +78,7 @@ export const GuildBadgeClover = ReactCompilerGating.isReactCompilerEnabled() ? (
   }
   if (cResult[10] !== primaryColorsTransformed[1]) {
     const obj4 = { d: "M7 15h-2v-1h2v1ZM10 14v-2h1v3h-2v-1h1ZM10 12h-1v-1h1v1ZM4 11H2v-1h2v1ZM9 11h-2v-1h2v1ZM15 11h-1v-2h1v2ZM6 9h-1v-2h1v2ZM14 9h-1v-2h1v2ZM15 7h-1v-2h1v2ZM9 6h-2v-1h2v1ZM10 5h-1v-1h1v1ZM11 4h-1V2h1v2Z", fill: primaryColorsTransformed[1] };
-    const tmp24 = React4(tmp(8733).Path, obj4);
+    const tmp24 = React4(tmp(8765).Path, obj4);
     cResult[10] = primaryColorsTransformed[1];
     cResult[11] = tmp24;
     let tmp22 = tmp24;
@@ -87,7 +87,7 @@ export const GuildBadgeClover = ReactCompilerGating.isReactCompilerEnabled() ? (
   }
   if (cResult[12] !== primaryColorsTransformed[0]) {
     const obj5 = { d: "M15 15h-1v-1h1v1ZM14 14h-1v-1h1v1ZM13 13h-1v-1h1v1ZM5 12h-1v-1h1v1ZM12 12h-1v-1h1v1ZM6 11h-1v-1h1v1ZM11 11h-1v-1h1v1ZM7 10h-1v-1h1v1ZM10 10h-1v-1h1v1ZM9 9h-2v-2h2v2ZM7 7h-1v-1h1v1ZM10 7h-1v-1h1v1ZM6 6h-1v-1h1v1ZM11 6h-1v-1h1v1ZM5 5h-1v-1h1v1ZM12 5h-1v-1h1v1Z", fill: primaryColorsTransformed[0] };
-    const tmp27 = React4(tmp(8733).Path, obj5);
+    const tmp27 = React4(tmp(8765).Path, obj5);
     cResult[12] = primaryColorsTransformed[0];
     cResult[13] = tmp27;
     let tmp25 = tmp27;
@@ -95,8 +95,8 @@ export const GuildBadgeClover = ReactCompilerGating.isReactCompilerEnabled() ? (
     tmp25 = cResult[13];
   }
   if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp31 = React4(tmp(8733).Path, { d: "M7 16h-2v-1h2v1ZM11 16h-2v-1h2v1ZM15 15v-1h1v2h-2v-1h1ZM5 15h-1V12h1v3ZM9 15h-2v-1h2v1ZM12 13h1v1h-1v1h-1V12h1v1ZM14 15h-1v-1h1v1ZM15 14h-1v-1h1v1Z", fill: "black" });
-    const tmp32 = React4(tmp(8733).Path, { d: "M15 12h-1v1h-1v-1h-1v-1h3v1ZM4 12H1v-1h3v1ZM6 12h-1v-1h1v1ZM11 12h-1v-1h1v1ZM1 11H0v-2h1v2ZM5 11h-1v-1h1v1ZM7 11h-1v-1h1v1ZM10 11h-1v-1h1v1ZM12 11h-1v-1h1v1ZM16 11h-1v-2h1v2ZM6 10h-1v-1h1v1ZM9 10h-2v-1h2v1ZM11 10h-1v-1h1v1ZM2 9H1v-2h1v2ZM7 9h-1v-2h1v2ZM10 9h-1v-2h1v2ZM15 9h-1v-2h1v2ZM1 7H0v-2h1v2ZM6 7h-1v-1h1v1ZM9 7h-2v-1h2v1ZM11 7h-1v-1h1v1ZM16 7h-1v-2h1v2ZM5 6h-1v-1h1v1ZM7 6h-1v-1h1v1ZM10 6h-1v-1h1v1ZM12 6h-1v-1h1v1ZM4 5H1v-1h3v1ZM6 5h-1v-1h1v1ZM11 5h-1v-1h1v1ZM15 5H12v-1h3v1ZM5 4h-1V1h1v3ZM12 4h-1V1h1v3ZM9 2h-2V1h2v1ZM7 1h-2V0h2v1ZM11 1h-2V0h2v1Z", fill: "black" });
+    const tmp31 = React4(tmp(8765).Path, { d: "M7 16h-2v-1h2v1ZM11 16h-2v-1h2v1ZM15 15v-1h1v2h-2v-1h1ZM5 15h-1V12h1v3ZM9 15h-2v-1h2v1ZM12 13h1v1h-1v1h-1V12h1v1ZM14 15h-1v-1h1v1ZM15 14h-1v-1h1v1Z", fill: "black" });
+    const tmp32 = React4(tmp(8765).Path, { d: "M15 12h-1v1h-1v-1h-1v-1h3v1ZM4 12H1v-1h3v1ZM6 12h-1v-1h1v1ZM11 12h-1v-1h1v1ZM1 11H0v-2h1v2ZM5 11h-1v-1h1v1ZM7 11h-1v-1h1v1ZM10 11h-1v-1h1v1ZM12 11h-1v-1h1v1ZM16 11h-1v-2h1v2ZM6 10h-1v-1h1v1ZM9 10h-2v-1h2v1ZM11 10h-1v-1h1v1ZM2 9H1v-2h1v2ZM7 9h-1v-2h1v2ZM10 9h-1v-2h1v2ZM15 9h-1v-2h1v2ZM1 7H0v-2h1v2ZM6 7h-1v-1h1v1ZM9 7h-2v-1h2v1ZM11 7h-1v-1h1v1ZM16 7h-1v-2h1v2ZM5 6h-1v-1h1v1ZM7 6h-1v-1h1v1ZM10 6h-1v-1h1v1ZM12 6h-1v-1h1v1ZM4 5H1v-1h3v1ZM6 5h-1v-1h1v1ZM11 5h-1v-1h1v1ZM15 5H12v-1h3v1ZM5 4h-1V1h1v3ZM12 4h-1V1h1v3ZM9 2h-2V1h2v1ZM7 1h-2V0h2v1ZM11 1h-2V0h2v1Z", fill: "black" });
     cResult[14] = tmp31;
     cResult[15] = tmp32;
     let tmp29 = tmp32;

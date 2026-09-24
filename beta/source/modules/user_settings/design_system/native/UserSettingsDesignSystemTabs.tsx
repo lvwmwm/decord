@@ -1,30 +1,30 @@
-// Module ID: 16080
-// Function ID: 16081
+// Module ID: 16090
+// Function ID: 16091
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 4754, 4462, 4608, 9868, 12778, 12906, 12780, 5188, 5186, 7446, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 4786, 4494, 4640, 9900, 12814, 12942, 12816, 5220, 5218, 7478, 2]
 
-// Module 16080 (UserSettingsDesignSystemTabs)
+// Module 16090 (UserSettingsDesignSystemTabs)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import TableSwitchRow from "TableSwitchRow" /* 7446 */;
-import SegmentedControlState from "SegmentedControlState" /* 9868 */;
-import Tabs_Tabs from "Tabs/Tabs" /* 12778 */;
-import SegmentedControlPages from "SegmentedControlPages" /* 12780 */;
-import TabsGradientDefault from "TabsGradient" /* 12906 */;
+import useToken from "useToken" /* 4494 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import TableSwitchRow from "TableSwitchRow" /* 7478 */;
+import SegmentedControlState from "SegmentedControlState" /* 9900 */;
+import Tabs_Tabs from "Tabs/Tabs" /* 12814 */;
+import SegmentedControlPages from "SegmentedControlPages" /* 12816 */;
+import TabsGradientDefault from "TabsGradient" /* 12942 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const ColorUtils = tmp(4608);
+const ColorUtils = tmp(4640);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsxs: closure_7, jsx: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { margin: 16, flex: 1, alignItems: "center" }, item: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 2, borderColor: nativeDefault.colors.BORDER_STRONG, flex: 1, alignItems: "center", justifyContent: "center", height: 400 } };
 let closure_9 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -162,7 +162,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (cResult[1] === tmp5) {
       let tmp16 = cResult[2];
     }
-    const segmentedControlState = tmp(9868).useSegmentedControlState(tmp16);
+    const segmentedControlState = tmp(9900).useSegmentedControlState(tmp16);
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       class D {
@@ -213,11 +213,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       cResult[10] = tmp26;
     }
     const obj3 = { state: segmentedControlState, grow: first1 };
-    const tmp24 = closure_1_8(tmp(12778).Tabs, obj3);
+    const tmp24 = closure_1_8(tmp(12814).Tabs, obj3);
     cResult[4] = segmentedControlState;
     cResult[5] = first1;
     cResult[6] = tmp24;
-    const tmpResult = tmp(9868);
+    const tmpResult = tmp(9900);
   }
   const obj4 = { items: tmp15, pageWidth: tmp5, defaultIndex: 1 };
   cResult[0] = tmp15;

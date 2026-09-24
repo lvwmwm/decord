@@ -1,19 +1,19 @@
-// Module ID: 10713
-// Function ID: 10714
+// Module ID: 10749
+// Function ID: 10750
 // Name: StickerPickerListEmptyState
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 10497, 6863, 1119, 1181, 10714, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 10533, 6895, 1119, 1181, 10750, 2]
 
-// Module 10713 (StickerPickerListEmptyState)
+// Module 10749 (StickerPickerListEmptyState)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import _modDef10714 from "module_10714" /* 10714 */;
+import _modDef10750 from "module_10750" /* 10750 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ScrollView = fn(17).ScrollView;
 const EXPRESSION_FOOTER_HEIGHT = fn(1078).EXPRESSION_FOOTER_HEIGHT;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 const obj = { emptyStateContainer: { padding: 0, flex: 1 }, emptyStateBody: { color: nativeDefault.colors.TEXT_SUBTLE }, emptyStateImage: null };
 let obj3 = { color: nativeDefault.colors.TEXT_SUBTLE };
 obj.emptyStateImage = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
@@ -32,9 +32,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((insetB
     if (cResult[1] === sum) {
       let tmp6 = cResult[2];
     }
-    const modalDismissGuardRefreshControl = tmp(10497).useModalDismissGuardRefreshControl();
+    const modalDismissGuardRefreshControl = tmp(10533).useModalDismissGuardRefreshControl();
     if (inActionSheet) {
-      let BottomSheetScrollView = tmp(6863).BottomSheetScrollView;
+      let BottomSheetScrollView = tmp(6895).BottomSheetScrollView;
     } else {
       BottomSheetScrollView = ScrollView;
     }
@@ -82,7 +82,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((insetB
     }
     const obj4 = { body: tmp10, bodyStyle: null, containerStyle: null, imageStyle: null, source: null, titleStyle: null };
     ({ emptyStateBody: obj5.bodyStyle, emptyStateContainer: obj5.containerStyle, emptyStateImage: obj5.imageStyle } = tmp4);
-    obj4.source = _modDef10714;
+    obj4.source = _modDef10750;
     obj4.titleStyle = tmp12;
     const tmp16 = jsx(tmp(1181).RefreshEmptyState, { body: tmp10, bodyStyle: null, containerStyle: null, imageStyle: null, source: null, titleStyle: null });
     cResult[5] = tmp4.emptyStateBody;
@@ -90,7 +90,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((insetB
     cResult[7] = tmp4.emptyStateImage;
     cResult[8] = tmp16;
     tmp13 = tmp16;
-    const tmpResult = tmp(10497);
+    const tmpResult = tmp(10533);
   }
   const obj6 = { marginBottom: sum, marginTop: insetTop, flex: 1 };
   cResult[0] = insetTop;
@@ -103,9 +103,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((insetB
   const items = [insetBottom, insetTop];
   const memo = noop.useMemo(() => ({ marginBottom: insetBottom + EXPRESSION_FOOTER_HEIGHT, marginTop: insetTop, flex: 1 }), items);
   const tmp = closure_7();
-  const modalDismissGuardRefreshControl = insetTop(10497).useModalDismissGuardRefreshControl();
+  const modalDismissGuardRefreshControl = insetTop(10533).useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp3(6863).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp3(6895).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
@@ -119,7 +119,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((insetB
   const intl = tmp3(1119).intl;
   obj5.body = intl.string(insetTop(1119).t.jyiGfc);
   ({ emptyStateBody: obj3.bodyStyle, emptyStateContainer: obj3.containerStyle, emptyStateImage: obj3.imageStyle } = tmp);
-  obj5.source = insetBottom(10714);
+  obj5.source = insetBottom(10750);
   obj5.titleStyle = { marginBottom: 0 };
   obj2.children = jsx(insetTop(1181).RefreshEmptyState, { body: null, bodyStyle: null, containerStyle: null, imageStyle: null, source: null, titleStyle: null });
   return <BottomSheetScrollView contentContainerStyle={memo} keyboardShouldPersistTaps="always" refreshControl={null}>{null}</BottomSheetScrollView>;

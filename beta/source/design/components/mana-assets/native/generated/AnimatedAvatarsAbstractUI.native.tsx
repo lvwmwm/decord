@@ -1,13 +1,13 @@
-// Module ID: 5956
-// Function ID: 5957
+// Module ID: 5988
+// Function ID: 5989
 // Name: AnimatedAvatarsAbstractUI
-// Dependencies: [21, 558, 568, 5957, 5802, 2]
+// Dependencies: [21, 558, 568, 5989, 5834, 2]
 
-// Module 5956 (AnimatedAvatarsAbstractUI)
+// Module 5988 (AnimatedAvatarsAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef5957 from "module_5957" /* 5957 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef5989 from "module_5989" /* 5989 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const AnimatedAvatarsAbstractUI = ReactCompilerGating.isReactCompilerEnab
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef5957 };
+    const obj2 = { uri: _modDef5989 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const AnimatedAvatarsAbstractUI = ReactCompilerGating.isReactCompilerEnab
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5957 };
+  const obj2 = { uri: _modDef5989 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

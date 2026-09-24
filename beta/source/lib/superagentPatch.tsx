@@ -1,16 +1,16 @@
-// Module ID: 17701
-// Function ID: 17702
+// Module ID: 17711
+// Function ID: 17712
 // Name: superagentPatch
-// Dependencies: [5, 4674, 1078, 1276, 17702, 1370, 1438, 577, 1275, 502, 1350, 2113, 1376, 1245, 1368, 17703, 1120, 17704, 17705, 7, 1235, 17708, 1984, 5084, 15935, 10012, 5741, 17714, 14102, 17715, 1466, 2]
+// Dependencies: [5, 4706, 1078, 1276, 17712, 1370, 1438, 577, 1275, 502, 1350, 2113, 1376, 1245, 1368, 17713, 1120, 17714, 17715, 7, 1235, 17718, 1984, 5116, 15945, 10051, 5773, 17724, 14139, 17725, 1466, 2]
 
-// Module 17701 (superagentPatch)
+// Module 17711 (superagentPatch)
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import SentryUtilsDefault from "SentryUtils" /* 1235 */;
 import _createForOfIteratorHelperDefault from "_createForOfIteratorHelper" /* 1276 */;
-import getTimeZoneDefault from "getTimeZone" /* 17704 */;
-import trackHttpRequestDefault from "trackHttpRequest" /* 17705 */;
+import getTimeZoneDefault from "getTimeZone" /* 17714 */;
+import trackHttpRequestDefault from "trackHttpRequest" /* 17715 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ExperimentStore from "ExperimentStore" /* 4674 */;
+import ExperimentStore from "ExperimentStore" /* 4706 */;
 import Dispatcher from "Dispatcher" /* 577 */;
 
 function isAnalyticsEndpoint(pathname) {
@@ -25,7 +25,7 @@ function isAnalyticsEndpoint(pathname) {
 const AbortCodes = fn(1078).AbortCodes;
 let closure_6 = ["https://cdn.discordapp.com/bad-domains/updated_hashes.json", "https://cdn.discordapp.com/bad-domains/hashes.json"];
 _createForOfIteratorHelperDefault.parse[""] = JSON.parse;
-const idGenerator = new fn(17702).IdGenerator();
+const idGenerator = new fn(17712).IdGenerator();
 const re8 = /\/api(\/v\d+)?\/science/;
 const ApexExperiment = fn(1438);
 let obj2 = { name: "2026-07-reject-with-error-kill-switch", kind: "user", defaultConfig: { migrationKilled: false }, variations: null };
@@ -70,7 +70,7 @@ HTTPUtils.setRequestPatch({
         const result = promise.set("Authorization", _default.getToken());
       }
       const tmpResult = tmp(1275);
-      const result1 = tmp(17703).updateDynamicSuperProperties();
+      const result1 = tmp(17713).updateDynamicSuperProperties();
       const superPropertiesBase64 = _default4.getSuperPropertiesBase64();
       if (null != superPropertiesBase64) {
         const result2 = promise.set("X-Super-Properties", superPropertiesBase64);
@@ -167,7 +167,7 @@ HTTPUtils.setRequestPatch({
         } catch (err) {
         }
       }
-      const tmpResult2 = tmp(17703);
+      const tmpResult2 = tmp(17713);
     }
     importAll = (function shouldTrackHttpRequest(url) {
       return !isAnalyticsEndpoint(url);
@@ -270,7 +270,7 @@ HTTPUtils.setRequestPatch({
         captcha_key = body.captcha_key;
       }
       if (captcha_key) {
-        const items = [statusCode(1984)(17708, dependencyMap.paths), statusCode(1984)(5084, dependencyMap.paths)];
+        const items = [statusCode(1984)(17718, dependencyMap.paths), statusCode(1984)(5116, dependencyMap.paths)];
         const allPromises = Promise.all(items);
         const nextPromise = Promise.all(items).then((result) => {
           const iter = result[Symbol.iterator]();
@@ -369,12 +369,12 @@ HTTPUtils.setRequestPatch({
           mfa = body3.mfa;
         }
         if (mfa) {
-          const promise4 = statusCode(1984)(15935, dependencyMap.paths);
-          statusCode(1984)(15935, dependencyMap.paths).then((openMFAModal) => {
+          const promise4 = statusCode(1984)(15945, dependencyMap.paths);
+          statusCode(1984)(15945, dependencyMap.paths).then((openMFAModal) => {
             openMFAModal.openMFAModal(statusCode.body.mfa, closure_1, closure_2);
           }).catch(arg2);
           flag = true;
-          const nextPromise2 = statusCode(1984)(15935, dependencyMap.paths).then((openMFAModal) => {
+          const nextPromise2 = statusCode(1984)(15945, dependencyMap.paths).then((openMFAModal) => {
             openMFAModal.openMFAModal(statusCode.body.mfa, closure_1, closure_2);
           });
         }
@@ -386,11 +386,11 @@ HTTPUtils.setRequestPatch({
       code1 = body4.code;
     }
     if (obj.isLimitedAccessErrorCode(statusCode.statusCode, code1)) {
-      tmp7(1984)(5741, tmp8.paths).then((result) => {
+      tmp7(1984)(5773, tmp8.paths).then((result) => {
         result.default();
       });
       flag = false;
-      const promise3 = tmp7(1984)(5741, tmp8.paths);
+      const promise3 = tmp7(1984)(5773, tmp8.paths);
     } else {
       const body5 = statusCode.body;
       let code2;
@@ -398,7 +398,7 @@ HTTPUtils.setRequestPatch({
         code2 = body5.code;
       }
       if (tmp7Result.isLimitedAccessErrorCode(statusCode.statusCode, code2)) {
-        tmp7(1984)(14102, tmp8.paths).then((result) => {
+        tmp7(1984)(14139, tmp8.paths).then((result) => {
           const body = statusCode.body;
           let guild_id;
           if (body != null) {
@@ -407,7 +407,7 @@ HTTPUtils.setRequestPatch({
           result.default(guild_id);
         });
         flag = false;
-        const promise2 = tmp7(1984)(14102, tmp8.paths);
+        const promise2 = tmp7(1984)(14139, tmp8.paths);
       } else {
         flag = 403 === statusCode.statusCode;
         if (flag) {
@@ -419,14 +419,14 @@ HTTPUtils.setRequestPatch({
           flag = code3 === AbortCodes.RESTRICTED_HOURS_ACTIVE;
         }
         if (flag) {
-          tmp7(1984)(17715, tmp8.paths).then((openRestrictedHoursModal) => {
+          tmp7(1984)(17725, tmp8.paths).then((openRestrictedHoursModal) => {
             const result = openRestrictedHoursModal.openRestrictedHoursModal();
           });
           flag = false;
-          const promise = tmp7(1984)(17715, tmp8.paths);
+          const promise = tmp7(1984)(17725, tmp8.paths);
         }
       }
-      tmp7Result = tmp7(17714);
+      tmp7Result = tmp7(17724);
     }
   }
 });

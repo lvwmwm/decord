@@ -1,16 +1,16 @@
-// Module ID: 13267
-// Function ID: 13268
+// Module ID: 13303
+// Function ID: 13304
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 4758, 580, 4497, 11656, 4759, 1181, 13268, 6891, 4498, 7371, 7401, 13269, 13259, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 4529, 11692, 4791, 1181, 13304, 6923, 4530, 7403, 7433, 13305, 13295, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 13267 (MediaModalOverlayFooter)
+// Module 13303 (MediaModalOverlayFooter)
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11656 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6923 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11692 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,8 +18,8 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
-let obj2 = { drawerContainer: { overflow: "hidden", backgroundColor: "code" }, drawerHeaderTab: { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 }, drawerHeader: { backgroundColor: "emoji" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
+const createStyles = fn(4790);
+let obj2 = { drawerContainer: { overflow: "hidden", backgroundColor: "useSharedValue" }, drawerHeaderTab: { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 }, drawerHeader: { backgroundColor: "emoji" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
 let closure_8 = createStyles.createStyles(obj2);
 let c9 = -1;
 function clamp(arg0, arg1, arg2) {

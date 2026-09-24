@@ -1,11 +1,11 @@
-// Module ID: 9324
-// Function ID: 9325
+// Module ID: 9356
+// Function ID: 9357
 // Name: OAuth2AuthorizeModal
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 9325, 1616, 4497, 5187, 1119, 9550, 5846, 5341, 4754, 9552, 7371, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 9357, 1616, 4529, 5219, 1119, 9582, 5878, 5373, 4786, 9584, 7403, 2]
 
-// Module 9324 (OAuth2AuthorizeModal)
+// Module 9356 (OAuth2AuthorizeModal)
 import nativeDefault from "native" /* 580 */;
-import spring from "spring" /* 5187 */;
+import spring from "spring" /* 5219 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -15,7 +15,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 let closure_7 = { overshootClamping: true, stiffness: 20, damping: 15, mass: 0.03 };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, contentContainer: { flex: 1 }, titleContainer: { padding: 16, flexDirection: "row", gap: 16 }, titleContainerBorder: null, title: null };
 const rect = { position: "absolute", left: 0, right: 0, bottom: 0, height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 obj2.titleContainerBorder = rect;
@@ -32,7 +32,7 @@ let result = size.fileFinishedImporting("modules/oauth2/native/OAuth2AuthorizeMo
 export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = require("c").c(38);
   const tmp4 = closure_8();
-  const tmp6 = sharedValue(9325)(arg0);
+  const tmp6 = sharedValue(9357)(arg0);
   _require = tmp6;
   const obj = require("c");
   sharedValue = require("ReanimatedRexport").useSharedValue(0);
@@ -128,7 +128,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj5 = { color: tmp5(580).colors.INTERACTIVE_TEXT_DEFAULT };
-          let tmp19 = closure_5(tmp(9550).ArrowSmallLeftIcon, obj5);
+          let tmp19 = closure_5(tmp(9582).ArrowSmallLeftIcon, obj5);
         } else {
           class A {
             constructor() {
@@ -141,7 +141,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj6 = { color: tmp5(580).colors.INTERACTIVE_TEXT_DEFAULT };
-          tmp19 = closure_5(tmp(5846).XSmallIcon, obj6);
+          tmp19 = closure_5(tmp(5878).XSmallIcon, obj6);
         }
         cResult[11] = tmp6.backStep;
         cResult[12] = tmp19;
@@ -169,7 +169,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj7 = { accessibilityRole: "button", accessibilityLabel: tmp13, onPress: tmp17, children: tmp18 };
-        const tmp23 = closure_5(tmp(5341).PressableOpacity, obj7);
+        const tmp23 = closure_5(tmp(5373).PressableOpacity, obj7);
         cResult[13] = tmp13;
         cResult[14] = tmp17;
         cResult[15] = tmp18;
@@ -183,7 +183,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = items;
 }) : ((arg0) => {
   const tmp = closure_8();
-  const tmp4 = sharedValue(9325)(arg0);
+  const tmp4 = sharedValue(9357)(arg0);
   _require = tmp4;
   sharedValue = require("ReanimatedRexport").useSharedValue(0);
   const obj = require("ReanimatedRexport");
@@ -234,10 +234,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   };
   if (null != tmp4.backStep) {
     const obj7 = { color: tmp2(580).colors.INTERACTIVE_TEXT_DEFAULT };
-    let tmp11Result = tmp11(tmp5(9550).ArrowSmallLeftIcon, obj7);
+    let tmp11Result = tmp11(tmp5(9582).ArrowSmallLeftIcon, obj7);
   } else {
     const obj8 = { color: tmp2(580).colors.INTERACTIVE_TEXT_DEFAULT };
-    tmp11Result = tmp11(tmp5(5846).XSmallIcon, obj8);
+    tmp11Result = tmp11(tmp5(5878).XSmallIcon, obj8);
   }
   obj6.children = tmp11Result;
   const items2 = [closure_5(require("Pressables").PressableOpacity, obj6), , ];
@@ -250,7 +250,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj11 = { style: null };
   const items3 = [tmp.titleContainerBorder, animatedStyle];
   obj11.style = items3;
-  items2[2] = closure_5(sharedValue(4497).View, obj11);
+  items2[2] = closure_5(sharedValue(4529).View, obj11);
   obj4.children = items2;
   const items4 = [closure_6(View, obj4), ];
   const obj12 = { bottom: true, style: tmp.contentContainer, children: null };
@@ -259,7 +259,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const merged = Object.assign(tmp4);
   obj13.onScroll = callback;
   obj13.centerContent = true;
-  obj12.children = closure_5(sharedValue(9552), obj13);
+  obj12.children = closure_5(sharedValue(9584), obj13);
   items4[1] = closure_5(require("common/SafeAreaView").SafeAreaPaddingView, obj12);
   obj3.children = items4;
   return closure_6(View, obj3);

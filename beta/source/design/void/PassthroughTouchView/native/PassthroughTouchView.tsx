@@ -1,11 +1,11 @@
-// Module ID: 14390
-// Function ID: 14391
+// Module ID: 14428
+// Function ID: 14429
 // Name: PassthroughTouchView
-// Dependencies: [109, 19, 21, 558, 568, 14391, 2]
+// Dependencies: [109, 19, 21, 558, 568, 14429, 2]
 
-// Module 14390 (PassthroughTouchView)
+// Module 14428 (PassthroughTouchView)
 import c from "c" /* 568 */;
-import PassthroughTouchNativeComponentDefault from "PassthroughTouchNativeComponent" /* 14391 */;
+import PassthroughTouchNativeComponentDefault from "PassthroughTouchNativeComponent" /* 14429 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

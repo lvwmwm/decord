@@ -1,16 +1,16 @@
-// Module ID: 17278
-// Function ID: 17279
+// Module ID: 17288
+// Function ID: 17289
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 7900, 4409, 1376, 1078, 21, 1181, 4758, 558, 568, 504, 13359, 10083, 12, 1374, 4754, 1119, 5822, 2]
+// Dependencies: [32, 19, 17, 7932, 4441, 1376, 1078, 21, 1181, 4790, 558, 568, 504, 13395, 10122, 12, 1374, 4786, 1119, 5854, 2]
 
-// Module 17278 (UserProfileYourFriendsCard)
+// Module 17288 (UserProfileYourFriendsCard)
 import _modDef12 from "module_12" /* 12 */;
 import native from "native" /* 1181 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7900 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7932 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ const View = fn(17).View;
 const RelationshipTypes = fn(1078).RelationshipTypes;
 const jsx = fn(21).jsx;
 let closure_11 = Object.freeze({ direction: fn(1181).CutoutDirection.RIGHT, inset: -4 });
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_12 = createStyles.createStyles({ facepile: { flexDirection: "row", alignItems: "center" }, avatars: { flexDirection: "row" } });
 const ReactCompilerGating = fn(558);
 let obj = { direction: fn(1181).CutoutDirection.RIGHT, inset: -4 };
@@ -155,7 +155,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj2 = require("initialize");
   const gameRelationshipsByType = require("GameRelationshipStoreHooks").useGameRelationshipsByType(RelationshipTypes.FRIEND);
   const effect = stateFromStoresArray1.useEffect(() => {
-    const userAffinitiesV2 = closure_0(10083).fetchUserAffinitiesV2();
+    const userAffinitiesV2 = closure_0(10122).fetchUserAffinitiesV2();
   }, []);
   const items2 = [stateFromStoresArray, stateFromStoresArray1, gameRelationshipsByType];
   const effect1 = stateFromStoresArray1.useEffect(() => {

@@ -1,22 +1,22 @@
-// Module ID: 8178
-// Function ID: 8179
+// Module ID: 8210
+// Function ID: 8211
 // Name: IconButton
-// Dependencies: [109, 19, 21, 4758, 580, 558, 568, 8179, 4754, 5205, 2]
+// Dependencies: [109, 19, 21, 4790, 580, 558, 568, 8211, 4786, 5237, 2]
 
-// Module 8178 (IconButton)
+// Module 8210 (IconButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
-const Text_Text = BaseButton(4754);
-const Button_BaseButton = BaseButton(5205);
-const BaseIconButton = BaseButton(8179);
+const Text_Text = BaseButton(4786);
+const Button_BaseButton = BaseButton(5237);
+const BaseIconButton = BaseButton(8211);
 require = fn;
 let closure_3 = ["label", "grow", "accessibilityLabel", "maxFontSizeMultiplier", "accessibilityHint"];
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles((arg0) => {
   const labelPressable = { paddingBottom: nativeDefault.space.PX_4, gap: nativeDefault.space.PX_8, alignItems: "center", alignSelf: "center", flexGrow: null };
   let num = 0;

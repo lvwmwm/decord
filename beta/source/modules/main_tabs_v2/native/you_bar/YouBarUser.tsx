@@ -1,11 +1,11 @@
-// Module ID: 16728
-// Function ID: 16729
+// Module ID: 16738
+// Function ID: 16739
 // Name: YouBarUser
-// Dependencies: [19, 17, 1376, 15354, 21, 4758, 580, 558, 568, 504, 4497, 5187, 4603, 16729, 16730, 16731, 2]
+// Dependencies: [19, 17, 1376, 15364, 21, 4790, 580, 558, 568, 504, 4529, 5219, 4635, 16739, 16740, 16741, 2]
 
-// Module 16728 (YouBarUser)
+// Module 16738 (YouBarUser)
 import nativeDefault from "native" /* 580 */;
-import spring from "spring" /* 5187 */;
+import spring from "spring" /* 5219 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -13,11 +13,11 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const YouBarConstants = fn(15354);
+const YouBarConstants = fn(15364);
 ({ YOU_BAR_SPRING_CONFIG: metroRequire, YOU_BAR_LARGE_AVATAR_NAME_MARGIN: closure_7, YOU_BAR_SMALL_AVATAR_NAME_MARGIN: closure_8 } = YouBarConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { youButton: { flexDirection: "row", alignItems: "center", borderRadius: nativeDefault.modules.mobile.YOU_BAR_BORDER_RADIUS }, userText: { flexDirection: "column", justifyContent: "center", height: "100%", gap: 1 }, placeholder: null };
 let size = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.round, height: 16, width: 80 };
 obj.placeholder = size;
@@ -63,9 +63,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     fn2.__closure = obj2;
     fn2.__workletHash = 12063452832866;
     fn2.__initData = __initData;
-    const animatedStyle = tmp(4497).useAnimatedStyle(fn2);
-    const tmpResult4 = tmp(4497);
-    const name = sharedValue(4603).useName(stateFromStores);
+    const animatedStyle = tmp(4529).useAnimatedStyle(fn2);
+    const tmpResult4 = tmp(4529);
+    const name = sharedValue(4635).useName(stateFromStores);
     if (null != stateFromStores) {
       if (null != name) {
         if (cResult[23] === tmp9) {
@@ -111,14 +111,14 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
                 tmp31 = tmp34;
               }
               const obj5 = { style: tmp24, children: tmp25 };
-              const tmp30 = closure_9(tmp17(4497).View, obj5);
+              const tmp30 = closure_9(tmp17(4529).View, obj5);
               cResult[33] = tmp24;
               cResult[34] = tmp25;
               cResult[35] = tmp30;
               tmp28 = tmp30;
             }
             const obj7 = { userId: stateFromStores.id, username: name };
-            const tmp27 = closure_9(tmp17(16731), obj7);
+            const tmp27 = closure_9(tmp17(16741), obj7);
             cResult[30] = stateFromStores.id;
             cResult[31] = name;
             cResult[32] = tmp27;
@@ -131,7 +131,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
           tmp24 = items2;
         }
         const obj8 = { isLargeAvatar: tmp9, onPress: onAvatarPress };
-        const tmp22 = closure_9(tmp17(16730), obj8);
+        const tmp22 = closure_9(tmp17(16740), obj8);
         cResult[23] = tmp9;
         cResult[24] = onAvatarPress;
         cResult[25] = tmp22;
@@ -148,7 +148,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     }
     if (cResult[8] !== tmp9) {
       const obj9 = { isLarge: tmp9 };
-      const tmp38 = closure_9(tmp17(16729), obj9);
+      const tmp38 = closure_9(tmp17(16739), obj9);
       cResult[8] = tmp9;
       cResult[9] = tmp38;
       let tmp36 = tmp38;
@@ -194,7 +194,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         cResult[22] = tmp52;
       }
       const obj13 = { style: tmp40, children: tmp42 };
-      const tmp48 = closure_9(tmp17(4497).View, obj13);
+      const tmp48 = closure_9(tmp17(4529).View, obj13);
       cResult[16] = tmp40;
       cResult[17] = tmp42;
       cResult[18] = tmp48;
@@ -215,7 +215,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     cResult[12] = tmp4.userText;
     cResult[13] = tmp41;
     tmp40 = tmp41;
-    const obj6 = sharedValue(4603);
+    const obj6 = sharedValue(4635);
   }
   class T {
     constructor() {
@@ -256,20 +256,20 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   M.__closure = { nameMargin: sharedValue };
   M.__workletHash = 5882881762081;
   M.__initData = __initData2;
-  const animatedStyle = tmp2(4497).useAnimatedStyle(M);
-  const tmp2Result = tmp2(4497);
-  const name = sharedValue(4603).useName(stateFromStores);
+  const animatedStyle = tmp2(4529).useAnimatedStyle(M);
+  const tmp2Result = tmp2(4529);
+  const name = sharedValue(4635).useName(stateFromStores);
   if (null != stateFromStores) {
     if (null != name) {
       let obj3 = { style: tmp.youButton, children: null };
       const obj5 = { isLargeAvatar: tmp5, onPress: isQuestRendered.onAvatarPress };
-      const items2 = [closure_9(tmp9(16730), obj5), ];
+      const items2 = [closure_9(tmp9(16740), obj5), ];
       const obj6 = { style: null, children: null };
       const items3 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
       obj6.style = items3;
       const obj7 = { userId: stateFromStores.id, username: name };
-      obj6.children = closure_9(tmp9(16731), obj7);
-      items2[1] = closure_9(tmp9(4497).View, obj6);
+      obj6.children = closure_9(tmp9(16741), obj7);
+      items2[1] = closure_9(tmp9(4529).View, obj6);
       obj3.children = items2;
     }
     return tmp11(tmp12, obj3);
@@ -277,11 +277,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   const obj8 = { style: null, children: null };
   const items4 = [tmp.youButton];
   obj8.style = items4;
-  const items5 = [closure_9(sharedValue(16729), { isLarge: !isQuestRendered }), ];
+  const items5 = [closure_9(sharedValue(16739), { isLarge: !isQuestRendered }), ];
   const obj9 = { style: null, children: closure_9(View, { style: tmp.placeholder }) };
   const items6 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
   obj9.style = items6;
-  items5[1] = closure_9(sharedValue(4497).View, obj9);
+  items5[1] = closure_9(sharedValue(4529).View, obj9);
   obj8.children = items5;
   obj3 = obj8;
 }));

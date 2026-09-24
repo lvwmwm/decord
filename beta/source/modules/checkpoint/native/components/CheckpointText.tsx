@@ -1,17 +1,17 @@
-// Module ID: 15965
-// Function ID: 15966
+// Module ID: 15975
+// Function ID: 15976
 // Name: CheckpointText
-// Dependencies: [109, 4983, 21, 558, 568, 4754, 2]
+// Dependencies: [109, 5015, 21, 558, 568, 4786, 2]
 
-// Module 15965 (CheckpointText)
+// Module 15975 (CheckpointText)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 
 require = fn;
 let closure_2 = ["children", "style"];
 const jsx = fn(21).jsx;
-let closure_5 = { color: fn(4983).CHECKPOINT_PRIMARY };
+let closure_5 = { color: fn(5015).CHECKPOINT_PRIMARY };
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointText.tsx");

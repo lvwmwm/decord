@@ -1,9 +1,9 @@
-// Module ID: 7400
-// Function ID: 7401
+// Module ID: 7432
+// Function ID: 7433
 // Name: Sheet/BottomSheetHandle
 // Dependencies: [19, 558, 568, 2]
 
-// Module 7400 (Sheet/BottomSheetHandle)
+// Module 7432 (Sheet/BottomSheetHandle)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

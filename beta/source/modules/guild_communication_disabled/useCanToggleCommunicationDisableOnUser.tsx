@@ -1,14 +1,14 @@
-// Module ID: 9513
-// Function ID: 9514
+// Module ID: 9545
+// Function ID: 9546
 // Name: useCanToggleCommunicationDisableOnUser
-// Dependencies: [2063, 2067, 4399, 1376, 1078, 4404, 558, 568, 504, 2]
+// Dependencies: [2063, 2067, 4431, 1376, 1078, 4436, 558, 568, 504, 2]
 
-// Module 9513 (useCanToggleCommunicationDisableOnUser)
+// Module 9545 (useCanToggleCommunicationDisableOnUser)
 import Constants from "Constants" /* 1078 */;
 import GuildRecord from "GuildRecord" /* 2063 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4404 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4436 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 import UserStore from "UserStore" /* 1376 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

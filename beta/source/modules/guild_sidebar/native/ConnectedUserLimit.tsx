@@ -1,12 +1,12 @@
-// Module ID: 16455
-// Function ID: 16456
+// Module ID: 16465
+// Function ID: 16466
 // Name: ConnectedUserLimit
-// Dependencies: [19, 21, 558, 568, 9888, 16456, 2]
+// Dependencies: [19, 21, 558, 568, 9920, 16466, 2]
 
-// Module 16455 (ConnectedUserLimit)
+// Module 16465 (ConnectedUserLimit)
 import c from "c" /* 568 */;
-import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 9888 */;
-import VoiceChannelUserLimitDefault from "VoiceChannelUserLimit" /* 16456 */;
+import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 9920 */;
+import VoiceChannelUserLimitDefault from "VoiceChannelUserLimit" /* 16466 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

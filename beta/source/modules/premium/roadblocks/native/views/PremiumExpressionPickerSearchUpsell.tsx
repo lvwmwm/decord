@@ -1,13 +1,13 @@
-// Module ID: 10490
-// Function ID: 10491
+// Module ID: 10526
+// Function ID: 10527
 // Name: PremiumExpressionPickerSearchUpsell
-// Dependencies: [19, 17, 21, 580, 4758, 558, 568, 4754, 5341, 2]
+// Dependencies: [19, 17, 21, 580, 4790, 558, 568, 4786, 5373, 2]
 
-// Module 10490 (PremiumExpressionPickerSearchUpsell)
+// Module 10526 (PremiumExpressionPickerSearchUpsell)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
 const sum = 56 + nativeDefault.space.PX_8;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { paddingTop: nativeDefault.space.PX_8 }, upsell: null, content: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_8 };
 obj2.upsell = { height: 56, padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, flexDirection: "row", justifyContent: "space-between", alignItems: "center", alignContent: "center" };
@@ -32,7 +32,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp4 = closure_5();
   if (cResult[0] !== body) {
     const obj2 = { lineClamp: 2, variant: "text-sm/medium", color: "interactive-text-active", children: body };
-    const tmp7 = React3(tmp(4754).Text, obj2);
+    const tmp7 = React3(tmp(4786).Text, obj2);
     cResult[0] = body;
     cResult[1] = tmp7;
     let tmp5 = tmp7;
@@ -46,7 +46,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[6] !== ctaText) {
         const obj3 = { variant: "text-sm/medium", color: "text-link", children: ctaText };
-        const tmp12 = React3(tmp(4754).Text, obj3);
+        const tmp12 = React3(tmp(4786).Text, obj3);
         cResult[6] = ctaText;
         cResult[7] = tmp12;
         let tmp10 = tmp12;
@@ -79,7 +79,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj5 = { style: tmp4.upsell, accessibilityRole: "button", disabled: loading, onPress, children: null };
       const items = [tmp8, tmp10];
       obj5.children = items;
-      const tmp15 = React4(tmp(5341).PressableOpacity, obj5);
+      const tmp15 = React4(tmp(5373).PressableOpacity, obj5);
       cResult[8] = loading;
       cResult[9] = onPress;
       cResult[10] = tmp4.upsell;

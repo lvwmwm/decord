@@ -1,12 +1,12 @@
-// Module ID: 11781
-// Function ID: 11782
+// Module ID: 11817
+// Function ID: 11818
 // Name: ReportToModStore
-// Dependencies: [4580, 504, 577, 2]
+// Dependencies: [4612, 504, 577, 2]
 
-// Module 11781 (ReportToModStore)
+// Module 11817 (ReportToModStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 
 function handleSelectedGuildChange() {
   let lastSelectedGuildId = SelectedGuildStore.getLastSelectedGuildId();

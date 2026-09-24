@@ -1,11 +1,11 @@
-// Module ID: 8543
-// Function ID: 8544
+// Module ID: 8575
+// Function ID: 8576
 // Name: useStateFromSharedValue
-// Dependencies: [32, 19, 1252, 558, 568, 4497, 2]
+// Dependencies: [32, 19, 1252, 558, 568, 4529, 2]
 
-// Module 8543 (useStateFromSharedValue)
+// Module 8575 (useStateFromSharedValue)
 import c from "c" /* 568 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -60,12 +60,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
         closure_0 = arg1;
         addListener.addListener(arg0, (arg0) => set(dependencyMap[5]).runOnJS(closure_0)(arg0));
       };
-      const obj4 = { runOnJS: closure_0(4497).runOnJS };
+      const obj4 = { runOnJS: closure_0(4529).runOnJS };
       fn.__closure = obj4;
       fn.__workletHash = 580393174787;
       fn.__initData = __initData;
-      closure_0(4497).runOnUI(fn)(value.listenerId, value.valueListener, tmp);
-      const obj3 = closure_0(4497);
+      closure_0(4529).runOnUI(fn)(value.listenerId, value.valueListener, tmp);
+      const obj3 = closure_0(4529);
     }
     return () => {
       const listeners = set.listeners;
@@ -123,14 +123,14 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
       const result = map.set(tmp, value);
       let fn = function n(arg0, arg1, addListener) {
         closure_0 = arg1;
-        addListener.addListener(arg0, (arg0) => set(4497).runOnJS(closure_0)(arg0));
+        addListener.addListener(arg0, (arg0) => set(4529).runOnJS(closure_0)(arg0));
       };
-      const obj4 = { runOnJS: closure_0(4497).runOnJS };
+      const obj4 = { runOnJS: closure_0(4529).runOnJS };
       fn.__closure = obj4;
       fn.__workletHash = 4734743082561;
       fn.__initData = __initData;
-      closure_0(4497).runOnUI(fn)(value.listenerId, value.valueListener, tmp);
-      const obj3 = closure_0(4497);
+      closure_0(4529).runOnUI(fn)(value.listenerId, value.valueListener, tmp);
+      const obj3 = closure_0(4529);
     }
     return () => {
       const listeners = set.listeners;

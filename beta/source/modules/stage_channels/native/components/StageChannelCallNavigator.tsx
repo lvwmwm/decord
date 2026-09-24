@@ -1,19 +1,19 @@
-// Module ID: 9743
-// Function ID: 9744
+// Module ID: 9775
+// Function ID: 9776
 // Name: StageChannelCallNavigator
-// Dependencies: [32, 19, 17, 1089, 21, 558, 568, 9744, 4497, 5187, 580, 9745, 10195, 9758, 9640, 9639, 10196, 9705, 4959, 10199, 10267, 4471, 9644, 10275, 10276, 10179, 10281, 10291, 10295, 10327, 10328, 4758, 10329, 10133, 2]
+// Dependencies: [32, 19, 17, 1089, 21, 558, 568, 9776, 4529, 5219, 580, 9777, 10234, 9790, 9672, 9671, 10235, 9737, 4991, 10238, 10306, 4503, 9676, 10314, 10315, 10218, 10320, 10330, 10334, 10366, 10367, 4790, 10368, 10172, 2]
 
-// Module 9743 (StageChannelCallNavigator)
+// Module 9775 (StageChannelCallNavigator)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4959 */;
-import spring from "spring" /* 5187 */;
-import participantHasVideoDefault from "participantHasVideo" /* 9705 */;
-import StageActionBarButtons from "StageActionBarButtons" /* 10133 */;
-import JoinStageViewDefault from "JoinStageView" /* 10195 */;
-import MessageManagerDefault from "MessageManager" /* 10196 */;
-import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 10329 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4991 */;
+import spring from "spring" /* 5219 */;
+import participantHasVideoDefault from "participantHasVideo" /* 9737 */;
+import StageActionBarButtons from "StageActionBarButtons" /* 10172 */;
+import JoinStageViewDefault from "JoinStageView" /* 10234 */;
+import MessageManagerDefault from "MessageManager" /* 10235 */;
+import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 10368 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -243,8 +243,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     return { opacity: spring.withSpring(num, closure_11) };
   };
-  const obj3 = showOverlay(4497);
-  fn.__closure = { withSpring: showOverlay(5187).withSpring, showOverlay, viewAnimationConfig };
+  const obj3 = showOverlay(4529);
+  fn.__closure = { withSpring: showOverlay(5219).withSpring, showOverlay, viewAnimationConfig };
   fn.__workletHash = 3866068723381;
   fn.__initData = __initData3;
   const animatedStyle = obj3.useAnimatedStyle(fn);
@@ -312,8 +312,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     return { opacity: spring.withSpring(num, closure_11) };
   };
-  let obj = showOverlay(4497);
-  fn.__closure = { withSpring: showOverlay(5187).withSpring, showOverlay, viewAnimationConfig };
+  let obj = showOverlay(4529);
+  fn.__closure = { withSpring: showOverlay(5219).withSpring, showOverlay, viewAnimationConfig };
   fn.__workletHash = 17555856853074;
   fn.__initData = __initData4;
   const animatedStyle = obj.useAnimatedStyle(fn);
@@ -327,7 +327,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }, []);
   const obj3 = { style: null, children: null };
   const items = [closure_5.absoluteFill, , ];
-  const obj2 = { withSpring: showOverlay(5187).withSpring, showOverlay, viewAnimationConfig };
+  const obj2 = { withSpring: showOverlay(5219).withSpring, showOverlay, viewAnimationConfig };
   items[1] = { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_800 };
   items[2] = animatedStyle;
   obj3.style = items;
@@ -335,7 +335,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   return closure_8(ReanimatedRexportDefault.View, obj3);
 });
 ReactCompilerGating = fn(558);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj5 = { startStagePrompt: null };
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const cResult = channel(first[6]).c(31);

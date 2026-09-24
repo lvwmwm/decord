@@ -1,14 +1,14 @@
-// Module ID: 17295
-// Function ID: 17296
+// Module ID: 17305
+// Function ID: 17306
 // Name: ViewModerators
-// Dependencies: [5, 19, 2109, 2103, 2067, 1078, 8677, 21, 1245, 4725, 17296, 1984, 558, 568, 1488, 504, 5634, 9801, 2053, 1982, 5111, 1119, 4771, 9802, 4457, 1181, 9817, 5186, 5903, 5822, 11458, 2]
+// Dependencies: [5, 19, 2109, 2103, 2067, 1078, 8709, 21, 1245, 4757, 17306, 1984, 558, 568, 1488, 504, 5666, 9833, 2053, 1982, 5143, 1119, 4803, 9834, 4489, 1181, 9849, 5218, 5935, 5854, 11494, 2]
 // Exports: openAddModeratorsActionSheet
 
-// Module 17295 (ViewModerators)
+// Module 17305 (ViewModerators)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9817 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9849 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
@@ -17,7 +17,7 @@ import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
 const AnalyticEvents = fn(1078).AnalyticEvents;
-const RowType = fn(8677).RowType;
+const RowType = fn(8709).RowType;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const ReactCompilerGating = fn(558);
@@ -28,7 +28,7 @@ function openAddModeratorsActionSheet(channel) {
   }
   AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_POPOUT, { type: "Grant Channel Access" });
   const obj2 = ActionSheetActionCreatorsDefault;
-  obj2.openLazy(asyncRequireImpl(17296, dependencyMap.paths), "channel-add-moderators-" + channel.id, { channel, canSkip: flag });
+  obj2.openLazy(asyncRequireImpl(17306, dependencyMap.paths), "channel-add-moderators-" + channel.id, { channel, canSkip: flag });
 }
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/stage_channels/native/channel_permissions/ViewModerators.tsx");
@@ -104,7 +104,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const stateFromStoresObject = channel(504).useStateFromStoresObject(tmp7, tmp10, tmp11);
   ({ guild, sortedGuildRoles } = stateFromStoresObject);
   const tmpResult = channel(504);
-  const canUpdateStageChannelModerators = channel(5634).useCanUpdateStageChannelModerators(channel.id);
+  const canUpdateStageChannelModerators = channel(5666).useCanUpdateStageChannelModerators(channel.id);
   if (null != guild) {
     class S {
       constructor() {
@@ -169,16 +169,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               if (obj11.isEmptyOverwrite(closure_2)) {
                 c1 = 2;
                 c2 = 1;
-                const obj8 = { value: v1(4771).clearPermissionOverwrite(tmp2.id, tmp27.id), done: false };
+                const obj8 = { value: v1(4803).clearPermissionOverwrite(tmp2.id, tmp27.id), done: false };
                 return obj8;
               } else {
                 const items = [tmp27];
                 c1 = 1;
                 c2 = 1;
-                const obj9 = { value: tmp2(9802).savePermissionUpdates(tmp2.id, items), done: false };
+                const obj9 = { value: tmp2(9834).savePermissionUpdates(tmp2.id, items), done: false };
                 return obj9;
               }
-              obj11 = tmp2(5634);
+              obj11 = tmp2(5666);
             }
           } else {
             if (1 === tmp5) {
@@ -198,9 +198,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               const obj = { value, done: true };
               return obj;
             }
-            const result = tmp2(4457).memberOrRoleRemovedToast(closure_128_0.name);
-            const obj2 = tmp2(4457);
-            v1(4725).hideActionSheet();
+            const result = tmp2(4489).memberOrRoleRemovedToast(closure_128_0.name);
+            const obj2 = tmp2(4489);
+            v1(4757).hideActionSheet();
             c2 = 3;
             return { value: "IconComponent", done: null };
           }
@@ -276,8 +276,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             const _HermesInternal = HermesInternal;
             const obj2 = ActionSheetActionCreatorsDefault;
             const obj3 = { channel: tmp, canSkip: false };
-            obj2.openLazy(asyncRequireImpl(17296, dependencyMap.paths), "channel-add-moderators-" + tmp.id, obj3);
-            const tmp7 = asyncRequireImpl(17296, dependencyMap.paths);
+            obj2.openLazy(asyncRequireImpl(17306, dependencyMap.paths), "channel-add-moderators-" + tmp.id, obj3);
+            const tmp7 = asyncRequireImpl(17306, dependencyMap.paths);
           }
         };
         obj9.disabled = !canUpdateStageChannelModerators;

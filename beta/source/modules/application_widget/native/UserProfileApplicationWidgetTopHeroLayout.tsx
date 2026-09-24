@@ -1,16 +1,16 @@
-// Module ID: 9201
-// Function ID: 9202
+// Module ID: 9233
+// Function ID: 9234
 // Name: UserProfileApplicationWidgetTopHeroLayout
-// Dependencies: [32, 19, 17, 1078, 7455, 21, 4758, 580, 558, 568, 9202, 8515, 9289, 9290, 5881, 5198, 2]
+// Dependencies: [32, 19, 17, 1078, 7487, 21, 4790, 580, 558, 568, 9234, 8547, 9321, 9322, 5913, 5230, 2]
 
-// Module 9201 (UserProfileApplicationWidgetTopHeroLayout)
+// Module 9233 (UserProfileApplicationWidgetTopHeroLayout)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import _modDef5881 from "module_5881" /* 5881 */;
-import UserProfileSharedStyles from "UserProfileSharedStyles" /* 8515 */;
-import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9202 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 9289 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import _modDef5913 from "module_5913" /* 5913 */;
+import UserProfileSharedStyles from "UserProfileSharedStyles" /* 8547 */;
+import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9234 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 9321 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -20,11 +20,11 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const HorizontalGradient = fn(1078).HorizontalGradient;
-const CARD_PADDING = fn(7455).CARD_PADDING;
+const CARD_PADDING = fn(7487).CARD_PADDING;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const colors = ["transparent", "black"];
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { root: { position: "relative" }, contentRow: { flexDirection: "row", gap: nativeDefault.space.PX_12, minHeight: 140 }, heroText: null, heroImageColumn: null, heroImageSkeleton: null, heroImagePositioner: null, heroImageMask: null, heroImageFadeGradient: null, heroImageMaskRemainder: null };
 let obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_12, minHeight: 140 };
 obj2.heroText = { flex: 1, minWidth: 120, gap: nativeDefault.space.PX_4, justifyContent: "center" };
@@ -75,10 +75,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     if (cResult[17] === image) {
                       let tmp16 = cResult[18];
                     }
-                    const userProfileCardRadius = tmp(8515).useUserProfileCardRadius();
+                    const userProfileCardRadius = tmp(8547).useUserProfileCardRadius();
                     if (cResult[19] !== tmp7) {
                       const obj2 = { field: tmp7, variant: "text-lg/medium", color: "text-default" };
-                      const tmp21 = closure_1_8(tmp(9289).FieldText, obj2);
+                      const tmp21 = closure_1_8(tmp(9321).FieldText, obj2);
                       cResult[19] = tmp7;
                       cResult[20] = tmp21;
                       let tmp19 = tmp21;
@@ -87,7 +87,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     }
                     if (cResult[21] !== tmp9) {
                       const obj3 = { field: tmp9, variant: "text-sm/normal", color: "text-muted" };
-                      const tmp24 = closure_1_8(tmp(9289).FieldText, obj3);
+                      const tmp24 = closure_1_8(tmp(9321).FieldText, obj3);
                       cResult[21] = tmp9;
                       cResult[22] = tmp24;
                       let tmp22 = tmp24;
@@ -96,7 +96,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     }
                     if (cResult[23] !== tmp11) {
                       const obj4 = { field: tmp11, variant: "text-sm/normal", color: "text-muted" };
-                      const tmp27 = closure_1_8(tmp(9289).FieldText, obj4);
+                      const tmp27 = closure_1_8(tmp(9321).FieldText, obj4);
                       cResult[23] = tmp11;
                       cResult[24] = tmp27;
                       let tmp25 = tmp27;
@@ -105,7 +105,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     }
                     if (cResult[25] !== tmp13) {
                       const obj5 = { field: tmp13, variant: "text-sm/normal", color: "text-muted" };
-                      const tmp30 = closure_1_8(tmp(9289).FieldText, obj5);
+                      const tmp30 = closure_1_8(tmp(9321).FieldText, obj5);
                       cResult[25] = tmp13;
                       cResult[26] = tmp30;
                       let tmp28 = tmp30;
@@ -201,7 +201,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                           obj13.source = obj14;
                                           obj13.style = { width: "100%", height: "100%" };
                                           obj9.children = tmp48(hasOwnProperty, obj13);
-                                          tmp48Result = tmp48(_modDef5881, obj9);
+                                          tmp48Result = tmp48(_modDef5913, obj9);
                                         }
                                         obj7.children = tmp48Result;
                                         tmp48Result2 = tmp48(tmp49, obj7);
@@ -238,7 +238,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             let tmp36 = null == tmp16 || null == tmp6;
                             if (tmp36) {
                               const obj17 = { style: tmp4.heroImageSkeleton };
-                              tmp36 = closure_1_8(tmp(9290).ImageSkeleton, obj17);
+                              tmp36 = closure_1_8(tmp(9322).ImageSkeleton, obj17);
                             }
                             cResult[33] = tmp16;
                             cResult[34] = tmp6;
@@ -260,9 +260,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     cResult[31] = tmp25;
                     cResult[32] = tmp34;
                     tmp31 = tmp34;
-                    const tmpResult = tmp(8515);
+                    const tmpResult = tmp(8547);
                   }
-                  const items5 = [tmp(9202).ResolvedValueType.MEDIA];
+                  const items5 = [tmp(9234).ResolvedValueType.MEDIA];
                   const fieldValue = resolveFieldValue(image, items5);
                   cResult[16] = resolveFieldValue;
                   cResult[17] = image;
@@ -270,31 +270,31 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   tmp16 = fieldValue;
                 }
               }
-              const textComponentValues = tmp(9202).resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
+              const textComponentValues = tmp(9234).resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
               cResult[12] = numberFormat;
               cResult[13] = resolveFieldValue;
               cResult[14] = topConfig.components.subtitle_3;
               cResult[15] = textComponentValues;
               tmp13 = textComponentValues;
-              const tmpResult5 = tmp(9202);
+              const tmpResult5 = tmp(9234);
             }
           }
-          const textComponentValues1 = tmp(9202).resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
+          const textComponentValues1 = tmp(9234).resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
           cResult[8] = numberFormat;
           cResult[9] = resolveFieldValue;
           cResult[10] = topConfig.components.subtitle_2;
           cResult[11] = textComponentValues1;
           tmp11 = textComponentValues1;
-          const tmpResult6 = tmp(9202);
+          const tmpResult6 = tmp(9234);
         }
       }
-      const textComponentValues2 = tmp(9202).resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
+      const textComponentValues2 = tmp(9234).resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
       cResult[4] = numberFormat;
       cResult[5] = resolveFieldValue;
       cResult[6] = topConfig.components.subtitle_1;
       cResult[7] = textComponentValues2;
       tmp9 = textComponentValues2;
-      const tmpResult7 = tmp(9202);
+      const tmpResult7 = tmp(9234);
     }
   }
   const tmp5 = _slicedToArray(noop.useState(null), 2);
@@ -333,7 +333,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp15Result = null == fieldValue || null == tmp3;
   if (tmp15Result) {
     const obj9 = { style: tmp.heroImageSkeleton };
-    tmp15Result = tmp15(tmp4(9290).ImageSkeleton, obj9);
+    tmp15Result = tmp15(tmp4(9322).ImageSkeleton, obj9);
   }
   obj8.children = tmp15Result;
   items3[1] = closure_1_8(timestampProducer, obj8);
@@ -372,7 +372,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       obj17.source = obj18;
       obj17.style = { width: "100%", height: "100%" };
       obj12.children = tmp15(hasOwnProperty, obj17);
-      tmp15Result3 = tmp15(_modDef5881, obj12);
+      tmp15Result3 = tmp15(_modDef5913, obj12);
     }
     obj10.children = tmp15Result3;
     tmp15Result4 = tmp15(tmp14, obj10);

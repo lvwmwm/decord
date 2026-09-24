@@ -1,9 +1,9 @@
-// Module ID: 16376
-// Function ID: 16377
+// Module ID: 16386
+// Function ID: 16387
 // Name: usePrivateChannelWave
-// Dependencies: [5, 32, 19, 1078, 4751, 558, 568, 12412, 1105, 7703, 4458, 1119, 12411, 16377, 2]
+// Dependencies: [5, 32, 19, 1078, 4783, 558, 568, 12448, 1105, 7735, 4490, 1119, 12447, 16387, 2]
 
-// Module 16376 (usePrivateChannelWave)
+// Module 16386 (usePrivateChannelWave)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 const require = fn;
 const Constants = fn(1078);
 ({ ME: metroRequire, Routes: closure_7 } = Constants);
-const MessageSendLocation = fn(4751).MessageSendLocation;
+const MessageSendLocation = fn(4783).MessageSendLocation;
 let c9 = "749054660769218631";
 const ReactCompilerGating = fn(558);
 const size = fn(2);

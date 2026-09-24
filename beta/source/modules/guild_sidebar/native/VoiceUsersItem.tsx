@@ -1,16 +1,16 @@
-// Module ID: 16465
-// Function ID: 16466
+// Module ID: 16475
+// Function ID: 16476
 // Name: VoiceUsersItem
-// Dependencies: [19, 17, 21, 4758, 558, 568, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 2]
 
-// Module 16465 (VoiceUsersItem)
+// Module 16475 (VoiceUsersItem)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ voiceStates: { paddingRight: 8 }, voiceStatesCollapsed: { paddingRight: 0, flexDirection: "row", flexWrap: "wrap", alignItems: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

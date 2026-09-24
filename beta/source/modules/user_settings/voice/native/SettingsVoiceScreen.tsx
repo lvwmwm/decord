@@ -1,18 +1,18 @@
-// Module ID: 15506
-// Function ID: 15507
+// Module ID: 15516
+// Function ID: 15517
 // Name: SettingsVoiceScreen
-// Dependencies: [19, 17, 1996, 8238, 1078, 21, 2112, 4758, 558, 568, 4693, 4610, 10252, 10253, 1119, 6891, 10251, 4754, 10248, 11594, 14953, 2]
+// Dependencies: [19, 17, 1996, 8270, 1078, 21, 2112, 4790, 558, 568, 4725, 4642, 10291, 10292, 1119, 6923, 10290, 4786, 10287, 11630, 14988, 2]
 
-// Module 15506 (SettingsVoiceScreen)
+// Module 15516 (SettingsVoiceScreen)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 10248 */;
-import KrispLogo from "KrispLogo" /* 10251 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
-import SettingLayoutDefault from "SettingLayout" /* 14953 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6923 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 10287 */;
+import KrispLogo from "KrispLogo" /* 10290 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
+import SettingLayoutDefault from "SettingLayout" /* 14988 */;
 import noop from "module_19" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 import HelpdeskUtils from "HelpdeskUtils" /* 2112 */;
@@ -81,12 +81,12 @@ function getVoiceSettings() {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
-const MobileUserSettings = fn(8238).MobileUserSettings;
+const MobileUserSettings = fn(8270).MobileUserSettings;
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
 const guideURL = "" + HelpdeskUtils.getArticleURL(HelpdeskArticles.VOICE_VIDEO_TROUBLESHOOTING) + "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_13 = createStyles.createStyles({ krisp: { marginTop: 8, flexDirection: "row", alignItems: "center" }, logo: { marginRight: 8, height: 30, width: 67 } });
 let ReactCompilerGating = fn(558);
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -94,9 +94,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_13();
   const tmp6 = useThemeDefault();
   if (obj2.isThemeLight(tmp6)) {
-    let tmp5Result = tmp5(10252);
+    let tmp5Result = tmp5(10291);
   } else {
-    tmp5Result = tmp5(10253);
+    tmp5Result = tmp5(10292);
   }
   ({ krisp, logo } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -122,12 +122,12 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const _Symbol2 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { accessibilityRole: "link", accessibilityLabel: tmp12, onPress: tmp(10251).handleKrispLinkPressed, children: null };
+      const obj3 = { accessibilityRole: "link", accessibilityLabel: tmp12, onPress: tmp(10290).handleKrispLinkPressed, children: null };
       const obj4 = { variant: "text-sm/medium", color: "text-link", children: null };
       const intl3 = tmp(1119).intl;
       obj4.children = intl3.string(tmp(1119).t.hvVgAZ);
-      obj3.children = options(tmp(4754).Text, obj4);
-      const tmp16 = options(tmp(6891).LegacyPressable, obj3);
+      obj3.children = options(tmp(4786).Text, obj4);
+      const tmp16 = options(tmp(6923).LegacyPressable, obj3);
       cResult[5] = tmp16;
       let tmp14 = tmp16;
     } else {
@@ -157,9 +157,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp = closure_13();
   const tmp4 = useThemeDefault();
   if (obj.isThemeLight(tmp4)) {
-    let tmp2Result = tmp2(10252);
+    let tmp2Result = tmp2(10291);
   } else {
-    tmp2Result = tmp2(10253);
+    tmp2Result = tmp2(10292);
   }
   const obj2 = { style: tmp.krisp, children: null };
   const obj3 = { style: tmp.logo, source: tmp2Result, accessibilityLabel: null };
@@ -194,7 +194,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
       };
       obj3.children = intl.format(tmp(1119).t.EUNgko, obj4);
-      tmp6 = options(tmp(4754).Text, obj3);
+      tmp6 = options(tmp(4786).Text, obj3);
     }
     cResult[0] = noiseCancellationDeferredToSystem;
     cResult[1] = tmp6;
@@ -215,7 +215,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
     };
     obj2.children = intl.format(tmp(1119).t.EUNgko, obj3);
-    tmp3 = options(tmp(4754).Text, obj2);
+    tmp3 = options(tmp(4786).Text, obj2);
   }
   return tmp3;
 });

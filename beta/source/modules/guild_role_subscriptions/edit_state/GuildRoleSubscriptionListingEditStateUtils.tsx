@@ -1,28 +1,28 @@
-// Module ID: 15486
-// Function ID: 15487
+// Module ID: 15496
+// Function ID: 15497
 // Name: GuildRoleSubscriptionListingEditStateUtils
-// Dependencies: [5, 32, 19, 5678, 4393, 15487, 15464, 1078, 1378, 558, 568, 504, 5813, 4999, 15488, 15489, 1096, 4391, 15490, 15471, 15491, 1252, 38, 5739, 7499, 12, 10511, 15492, 1259, 2]
+// Dependencies: [5, 32, 19, 5710, 4425, 15497, 15474, 1078, 1378, 558, 568, 504, 5845, 5031, 15498, 15499, 1096, 4423, 15500, 15481, 15501, 1252, 38, 5771, 7531, 12, 10547, 15502, 1259, 2]
 // Exports: useCreateOrUpdateListingFromEditState
 
-// Module 15486 (GuildRoleSubscriptionListingEditStateUtils)
+// Module 15496 (GuildRoleSubscriptionListingEditStateUtils)
 import c from "c" /* 568 */;
 import v1 from "v1" /* 1259 */;
-import RolePermissionUtils from "RolePermissionUtils" /* 4391 */;
-import StoreUtils from "StoreUtils" /* 4999 */;
-import useInitialValueDefault from "useInitialValue" /* 5813 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15471 */;
-import useSubscriptionRoleDefault from "useSubscriptionRole" /* 15488 */;
-import useTrialIntervalOptionsDefault from "useTrialIntervalOptions" /* 15491 */;
+import RolePermissionUtils from "RolePermissionUtils" /* 4423 */;
+import StoreUtils from "StoreUtils" /* 5031 */;
+import useInitialValueDefault from "useInitialValue" /* 5845 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15481 */;
+import useSubscriptionRoleDefault from "useSubscriptionRole" /* 15498 */;
+import useTrialIntervalOptionsDefault from "useTrialIntervalOptions" /* 15501 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5678 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4393 */;
+import EmojiStore from "EmojiStore" /* 5710 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4425 */;
 
 const require = globalThis.__r;
 
 const utils_ColorUtils = obj(1096);
-const Contants = obj(15489);
+const Contants = obj(15499);
 require = fn;
 function getRoleEmojis(arr, arg1) {
   closure_0 = arg1;
@@ -186,7 +186,7 @@ let closure_22 = async function _updateListingPeripheralsFromEditState(arg0, val
                   const items = [];
                   items[HermesBuiltin.arraySpread(customEmojiById.roles, 0)] = dependencyMap;
                   obj2.roles = items;
-                  return guildId(10511).updateEmoji(obj2);
+                  return guildId(10547).updateEmoji(obj2);
                 }
               });
               closure_129_16 = closure_129_14.map((item) => {
@@ -196,11 +196,11 @@ let closure_22 = async function _updateListingPeripheralsFromEditState(arg0, val
                   const found = roles.filter((item) => item !== dependencyMap);
                   if (found.length > 0) {
                     const obj3 = { guildId, emojiId: customEmojiById.id, roles: found };
-                    let updateEmojiResult = guildId(10511).updateEmoji(obj3);
-                    const obj2 = guildId(10511);
+                    let updateEmojiResult = guildId(10547).updateEmoji(obj3);
+                    const obj2 = guildId(10547);
                   } else {
-                    updateEmojiResult = guildId(10511).deleteEmoji(guildId, customEmojiById.id);
-                    const obj = guildId(10511);
+                    updateEmojiResult = guildId(10547).deleteEmoji(guildId, customEmojiById.id);
+                    const obj = guildId(10547);
                   }
                   return updateEmojiResult;
                 }
@@ -386,9 +386,9 @@ let closure_23 = async function _createListingFromEditState(arg0, value) {
     }
   }
 };
-const GuildRoleSubscriptionEditStore = fn(15487);
+const GuildRoleSubscriptionEditStore = fn(15497);
 ({ AllChannelAccessOptions: closure_9, useEditStateStore: c10 } = GuildRoleSubscriptionEditStore);
-let closure_11 = fn(15464).GuildRoleSubscriptionBenefitTypes;
+let closure_11 = fn(15474).GuildRoleSubscriptionBenefitTypes;
 const Constants = fn(1078);
 ({ CurrencyCodes: closure_12, DEFAULT_ROLE_COLOR: map1 } = Constants);
 const SubscriptionIntervalTypes = fn(1378).SubscriptionIntervalTypes;
@@ -1486,8 +1486,8 @@ export const useCreateOrUpdateListingFromEditState = function useCreateOrUpdateL
                             if (null != channelBenefits) {
                               const benefits = subscriptionListing.role_benefits.benefits;
                               const benefits1 = subscriptionListing.role_benefits.benefits;
-                              const found = benefits.filter(closure_1_0(15490).isChannelBenefit);
-                              const found1 = benefits1.filter(closure_1_0(15490).isIntangibleBenefit);
+                              const found = benefits.filter(closure_1_0(15500).isChannelBenefit);
+                              const found1 = benefits1.filter(closure_1_0(15500).isIntangibleBenefit);
                               if (channelBenefits == null) {
                                 channelBenefits = found;
                               }
@@ -1501,8 +1501,8 @@ export const useCreateOrUpdateListingFromEditState = function useCreateOrUpdateL
                             }
                             if (!obj2.isEmpty(obj)) {
                               const obj4 = { guildId, groupListingId, listingId: editStateId, data: obj };
-                              subscriptionListing = closure_1_2(7499).updateSubscriptionListing(obj4);
-                              const obj3 = closure_1_2(7499);
+                              subscriptionListing = closure_1_2(7531).updateSubscriptionListing(obj4);
+                              const obj3 = closure_1_2(7531);
                             }
                             return subscriptionListing;
                           })(obj5),

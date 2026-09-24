@@ -1,13 +1,13 @@
-// Module ID: 6468
-// Function ID: 6469
+// Module ID: 6500
+// Function ID: 6501
 // Name: MailboxIllocon
-// Dependencies: [21, 558, 568, 6469, 5802, 2]
+// Dependencies: [21, 558, 568, 6501, 5834, 2]
 
-// Module 6468 (MailboxIllocon)
+// Module 6500 (MailboxIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6469 from "module_6469" /* 6469 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6501 from "module_6501" /* 6501 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const MailboxIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6469 };
+    const obj2 = { uri: _modDef6501 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const MailboxIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6469 };
+  const obj2 = { uri: _modDef6501 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

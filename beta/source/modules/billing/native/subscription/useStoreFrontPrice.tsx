@@ -1,11 +1,11 @@
-// Module ID: 9481
-// Function ID: 9482
+// Module ID: 9513
+// Function ID: 9514
 // Name: useStoreFrontPrice
-// Dependencies: [19, 1078, 558, 568, 4418, 2]
+// Dependencies: [19, 1078, 558, 568, 4450, 2]
 
-// Module 9481 (useStoreFrontPrice)
+// Module 9513 (useStoreFrontPrice)
 import c from "c" /* 568 */;
-import PremiumUtils from "PremiumUtils" /* 4418 */;
+import PremiumUtils from "PremiumUtils" /* 4450 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -31,7 +31,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((prices, currency
     if (null == tmp5) {
       PRICE_AVAILABLE = obj.COUNTRY_PRICE_UNAVAILABLE;
     } else {
-      tmp(4418);
+      tmp(4450);
       if (cResult[0] === currency.currency) {
         if (cResult[1] === prices.id) {
           let tmp6 = cResult[2];
@@ -45,12 +45,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((prices, currency
         }
       }
       const obj2 = { purchaseType: constants.MOBILE, currency: currency.currency };
-      const experimentalGetPriceResult = tmp(4418).experimentalGetPrice(prices.id, obj2);
+      const experimentalGetPriceResult = tmp(4450).experimentalGetPrice(prices.id, obj2);
       cResult[0] = currency.currency;
       cResult[1] = prices.id;
       cResult[2] = experimentalGetPriceResult;
       tmp6 = experimentalGetPriceResult;
-      const tmpResult2 = tmp(4418);
+      const tmpResult2 = tmp(4450);
     }
   }
   if (cResult[3] === tmp6) {

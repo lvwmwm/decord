@@ -1,15 +1,15 @@
-// Module ID: 11453
-// Function ID: 11454
+// Module ID: 11489
+// Function ID: 11490
 // Name: Modal
-// Dependencies: [19, 21, 558, 568, 1616, 5897, 7246, 2]
+// Dependencies: [19, 21, 558, 568, 1616, 5929, 7278, 2]
 
-// Module 11453 (Modal)
+// Module 11489 (Modal)
 import c from "c" /* 568 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import NavigatorConstants from "NavigatorConstants" /* 5897 */;
+import NavigatorConstants from "NavigatorConstants" /* 5929 */;
 import noop from "module_19" /* 19 */;
 
-const Navigator = tmp(7246);
+const Navigator = tmp(7278);
 require = fn;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);

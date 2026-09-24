@@ -1,18 +1,18 @@
-// Module ID: 11675
-// Function ID: 11676
+// Module ID: 11711
+// Function ID: 11712
 // Name: OptInOnboardingUtils
-// Dependencies: [1224, 2100, 2109, 4939, 4386, 7782, 1389, 7360, 7352, 1190, 2]
+// Dependencies: [1224, 2100, 2109, 4971, 4418, 7814, 1389, 7392, 7384, 1190, 2]
 // Exports: hasClearedGuildOnboardingNotice, hasNotSetUpChannelOptIn, toggleShowAllChannels
 
-// Module 11675 (OptInOnboardingUtils)
+// Module 11711 (OptInOnboardingUtils)
 import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
 import FlagUtils from "FlagUtils" /* 1389 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7352 */;
-import isOptInEnabled from "isOptInEnabled" /* 7782 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7384 */;
+import isOptInEnabled from "isOptInEnabled" /* 7814 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
 import GuildChannelStore_mod from "GuildChannelStore" /* 2100 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
 
 require = fn;
 function optIntoAllChannelsForExistingMember(id, arg1) {
@@ -49,7 +49,7 @@ function optIntoAllChannelsForExistingMember(id, arg1) {
 let GuildChannelStore = fn(2100);
 ({ GUILD_SELECTABLE_CHANNELS_KEY: closure_4, GUILD_VOCAL_CHANNELS_KEY: hasOwnProperty } = GuildChannelStore);
 let GuildChannelStore = GuildChannelStore_mod;
-const GuildMemberFlags = fn(4386).GuildMemberFlags;
+const GuildMemberFlags = fn(4418).GuildMemberFlags;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/opt_in_channels/OptInOnboardingUtils.tsx");
 
@@ -96,10 +96,10 @@ export const toggleShowAllChannels = function toggleShowAllChannels(id) {
   if (tmp7) {
     optIntoAllChannelsForExistingMember(id);
   } else {
-    const result1 = tmp(7782).isOptInEnabledForGuild(id);
-    const tmpResult3 = tmp(7782);
-    tmp(7360).setGuildOptIn(id, !result1);
-    const tmpResult4 = tmp(7360);
+    const result1 = tmp(7814).isOptInEnabledForGuild(id);
+    const tmpResult3 = tmp(7814);
+    tmp(7392).setGuildOptIn(id, !result1);
+    const tmpResult4 = tmp(7392);
   }
 };
 export { optIntoAllChannelsForExistingMember };

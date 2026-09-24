@@ -1,13 +1,13 @@
 // Module ID: 2101
 // Function ID: 2102
 // Name: GatedChannelStore
-// Dependencies: [2102, 2049, 2104, 2045, 2109, 2103, 2067, 1376, 1078, 4390, 4391, 4392, 504, 577, 2]
+// Dependencies: [2102, 2049, 2104, 2045, 2109, 2103, 2067, 1376, 1078, 4422, 4423, 4424, 504, 577, 2]
 
 // Module 2101 (GatedChannelStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import PremiumRoleUtils from "PremiumRoleUtils" /* 4390 */;
-import RolePermissionUtils from "RolePermissionUtils" /* 4391 */;
+import PremiumRoleUtils from "PremiumRoleUtils" /* 4422 */;
+import RolePermissionUtils from "RolePermissionUtils" /* 4423 */;
 import ImpersonateStore from "ImpersonateStore" /* 2102 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;

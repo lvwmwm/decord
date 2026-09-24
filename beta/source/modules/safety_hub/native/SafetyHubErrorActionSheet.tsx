@@ -1,25 +1,25 @@
-// Module ID: 15036
-// Function ID: 15037
+// Module ID: 15045
+// Function ID: 15046
 // Name: SafetyHubErrorActionSheet
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 15035, 6851, 4754, 1119, 12012, 5188, 7397, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 15044, 6883, 4786, 1119, 12048, 5220, 7429, 2]
 
-// Module 15036 (SafetyHubErrorActionSheet)
+// Module 15045 (SafetyHubErrorActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import CircleXIcon from "CircleXIcon" /* 6851 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12012 */;
-import useSafetyHubLoadingDefault from "useSafetyHubLoading" /* 15035 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import CircleXIcon from "CircleXIcon" /* 6883 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12048 */;
+import useSafetyHubLoadingDefault from "useSafetyHubLoading" /* 15044 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { errorContainer: { display: "flex", alignItems: "center", justifyContent: "center", paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_16, minHeight: 120 }, redesignErrorIconContainer: null, redesignErrorIcon: null };
 let size = { display: "flex", justifyContent: "center", alignItems: "center", height: 40, width: 40, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.WHITE };
 obj2.redesignErrorIconContainer = size;
@@ -54,7 +54,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { size: "custom", color: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, style: null };
     const items2 = [tmp4.redesignErrorIcon];
     obj2.style = items2;
-    const tmp11 = hasOwnProperty(tmp(6851).CircleXIcon, obj2);
+    const tmp11 = hasOwnProperty(tmp(6883).CircleXIcon, obj2);
     cResult[4] = tmp4.redesignErrorIcon;
     cResult[5] = tmp11;
     let tmp9 = tmp11;
@@ -70,7 +70,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj3 = { variant: "heading-lg/normal", children: null };
       const intl = tmp(1119).intl;
       obj3.children = intl.string(tmp(1119).t.TDRvqs);
-      const tmp17 = hasOwnProperty(tmp(4754).Text, obj3);
+      const tmp17 = hasOwnProperty(tmp(4786).Text, obj3);
       cResult[9] = tmp17;
       let tmp15 = tmp17;
     } else {
@@ -97,7 +97,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       if (cResult[15] !== tmp6) {
         const obj4 = { onPress: tmp22, text: tmp23, loading: tmp6, disabled: tmp6 };
-        const tmp27 = hasOwnProperty(tmp(5188).Button, obj4);
+        const tmp27 = hasOwnProperty(tmp(5220).Button, obj4);
         cResult[15] = tmp6;
         cResult[16] = tmp27;
         let tmp25 = tmp27;
@@ -113,7 +113,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj5 = { children: null };
       const items3 = [tmp18, tmp25];
       obj5.children = items3;
-      const tmp30 = timestampProducer(tmp(7397).BottomSheet, obj5);
+      const tmp30 = timestampProducer(tmp(7429).BottomSheet, obj5);
       cResult[17] = tmp18;
       cResult[18] = tmp25;
       cResult[19] = tmp30;

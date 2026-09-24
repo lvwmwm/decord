@@ -1,17 +1,17 @@
-// Module ID: 9636
-// Function ID: 9637
+// Module ID: 9668
+// Function ID: 9669
 // Name: ChannelCallStore
-// Dependencies: [19, 2044, 9637, 2008, 4779, 2040, 8608, 562, 1252, 577, 4959, 12, 558, 568, 9638, 9639, 9640, 504, 9641, 2]
+// Dependencies: [19, 2044, 9669, 2008, 4811, 2040, 8640, 562, 1252, 577, 4991, 12, 558, 568, 9670, 9671, 9672, 504, 9673, 2]
 // Exports: clearFocusTimer, resetChannelCallStore, resetFocus, resetFocusTimer, setFocus, setVoiceChatDrawerState, toggleFocus
 
-// Module 9636 (ChannelCallStore)
+// Module 9668 (ChannelCallStore)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4959 */;
-import DeviceOrientation from "DeviceOrientation" /* 8608 */;
-import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 9638 */;
-import useSelectedParticipantDefault from "useSelectedParticipant" /* 9639 */;
-import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 9641 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4991 */;
+import DeviceOrientation from "DeviceOrientation" /* 8640 */;
+import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 9670 */;
+import useSelectedParticipantDefault from "useSelectedParticipant" /* 9671 */;
+import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 9673 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import apply from "module_12" /* 12 */;
@@ -19,16 +19,16 @@ import apply from "module_12" /* 12 */;
 const require = globalThis.__r;
 
 require = fn;
-const ChannelCallConstants = fn(9637);
+const ChannelCallConstants = fn(9669);
 ({ VoiceCallOverlayType, VoiceChatDrawerState } = ChannelCallConstants);
 const OrientationLockState = fn(2008).OrientationLockState;
-const ParticipantTypes = fn(4779).ParticipantTypes;
+const ParticipantTypes = fn(4811).ParticipantTypes;
 const timeout = new fn(2040).Timeout();
 let obj = { focus: true, pipFocus: false, isGestureEnabled: true, voiceChatDrawerState: VoiceChatDrawerState.CLOSED, voiceCallOverlayLayoutStates: null };
 let obj2 = {};
-let size = { x: "Array", y: "T", width: "y", height: "IconComponent", screenOrientation: fn(8608).OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
+let size = { x: "Array", y: "T", width: "y", height: "IconComponent", screenOrientation: fn(8640).OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
 obj2[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = size;
-const size1 = { x: "Array", y: "T", width: "y", height: "IconComponent", screenOrientation: fn(8608).OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
+const size1 = { x: "Array", y: "T", width: "y", height: "IconComponent", screenOrientation: fn(8640).OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
 obj2[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
 obj.voiceCallOverlayLayoutStates = obj2;
 let closure_9 = Object.freeze(obj);
@@ -151,7 +151,7 @@ export const useChannelCallOrientationHandlers = ReactCompilerGating.isReactComp
       tmp18 = cResult[5];
       tmp19 = cResult[6];
     }
-    tmpResult = tmp(9640);
+    tmpResult = tmp(9672);
     const stateFromStores = tmp(504).useStateFromStores(tmp17, tmp18, tmp19);
     const _Symbol3 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {

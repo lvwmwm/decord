@@ -1,16 +1,16 @@
-// Module ID: 10098
-// Function ID: 10099
+// Module ID: 10137
+// Function ID: 10138
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [19, 17, 2067, 1376, 1078, 21, 4758, 580, 5799, 558, 568, 504, 1119, 577, 4457, 7396, 10099, 4754, 7449, 2]
+// Dependencies: [19, 17, 2067, 1376, 1078, 21, 4790, 580, 5831, 558, 568, 504, 1119, 577, 4489, 7428, 10138, 4786, 7481, 2]
 
-// Module 10098 (InstantInviteQRCodeActionSheet)
+// Module 10137 (InstantInviteQRCodeActionSheet)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import GuildIconDefault from "GuildIcon" /* 5799 */;
-import components_native_QRCodeDefault from "components_native/QRCode" /* 10099 */;
+import GuildIconDefault from "GuildIcon" /* 5831 */;
+import components_native_QRCodeDefault from "components_native/QRCode" /* 10138 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1376 */;
@@ -21,7 +21,7 @@ const Constants = fn(1078);
 ({ InstantInviteSources: closure_7, RelationshipTypes: closure_8 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: nativeDefault.space.PX_12, display: "flex", alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_24 }, iconContainer: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center", alignItems: "center" }, icon: null, code: null };
 let obj3 = { padding: nativeDefault.space.PX_12, display: "flex", alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_24 };
 obj2.icon = { padding: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.lg + nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.WHITE };
@@ -207,7 +207,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((link) => {
       if (null != channel) {
         tmp13 = null;
         if (null != GuildStore.getGuild(channel.guild_id)) {
-          const obj3 = { guild: obj2.getGuild(channel.guild_id), size: tmp(5799).GuildIconSizes.LARGE };
+          const obj3 = { guild: obj2.getGuild(channel.guild_id), size: tmp(5831).GuildIconSizes.LARGE };
           tmp13 = options(GuildIconDefault, obj3);
         }
         obj2 = GuildStore;
@@ -218,10 +218,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((link) => {
     } else {
       tmp11 = cResult[3];
     }
-    closure_13(tmp(4457).presentFriendRequestAcceptedToast);
+    closure_13(tmp(4489).presentFriendRequestAcceptedToast);
     if (cResult[4] !== cResult[1]) {
       const obj4 = { title: tmp5 };
-      const tmp21 = options(tmp(7396).BottomSheetTitleHeader, obj4);
+      const tmp21 = options(tmp(7428).BottomSheetTitleHeader, obj4);
       cResult[4] = tmp5;
       cResult[5] = tmp21;
       let tmp19 = tmp21;
@@ -250,7 +250,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((link) => {
                 let tmp37 = null != tmp10;
                 if (tmp37) {
                   const obj5 = { variant: "text-md/normal", children: tmp10.visible };
-                  tmp37 = options(tmp(4754).Text, obj5);
+                  tmp37 = options(tmp(4786).Text, obj5);
                 }
                 cResult[17] = tmp10;
                 cResult[18] = tmp37;
@@ -270,7 +270,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((link) => {
                     return tmp43;
                   }
                   const obj6 = { header: tmp19, children: tmp39 };
-                  const tmp45 = options(tmp(7449).ActionSheet, obj6);
+                  const tmp45 = options(tmp(7481).ActionSheet, obj6);
                   cResult[23] = tmp19;
                   cResult[24] = tmp39;
                   cResult[25] = tmp45;
@@ -336,13 +336,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((link) => {
   if (null != channel) {
     tmp9 = null;
     if (null != GuildStore.getGuild(channel.guild_id)) {
-      const obj2 = { guild: obj.getGuild(channel.guild_id), size: tmp5(5799).GuildIconSizes.LARGE };
+      const obj2 = { guild: obj.getGuild(channel.guild_id), size: tmp5(5831).GuildIconSizes.LARGE };
       tmp9 = options(GuildIconDefault, obj2);
     }
     obj = GuildStore;
   }
-  closure_13(tmp5(4457).presentFriendRequestAcceptedToast);
-  const obj3 = { header: options(tmp5(7396).BottomSheetTitleHeader, { title: stringResult }), children: null };
+  closure_13(tmp5(4489).presentFriendRequestAcceptedToast);
+  const obj3 = { header: options(tmp5(7428).BottomSheetTitleHeader, { title: stringResult }), children: null };
   const obj4 = { style: tmp.container, children: null };
   const obj5 = { text: location.link, size: 240, style: tmp.code, accessibilityLabel: null };
   let plainText;
@@ -363,10 +363,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((link) => {
   let tmp14Result2 = null != tmp8;
   if (tmp14Result2) {
     const obj8 = { variant: "text-md/normal", children: tmp8.visible };
-    tmp14Result2 = tmp14(tmp5(4754).Text, obj8);
+    tmp14Result2 = tmp14(tmp5(4786).Text, obj8);
   }
   items1[1] = tmp14Result2;
   obj4.children = items1;
   obj3.children = v65535(View, obj4);
-  return options(tmp5(7449).ActionSheet, obj3);
+  return options(tmp5(7481).ActionSheet, obj3);
 });

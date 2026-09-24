@@ -1,11 +1,11 @@
-// Module ID: 8895
-// Function ID: 8896
+// Module ID: 8927
+// Function ID: 8928
 // Name: LegacyText/LegacyText
-// Dependencies: [109, 19, 17, 1078, 21, 4758, 558, 568, 8896, 2]
+// Dependencies: [109, 19, 17, 1078, 21, 4790, 558, 568, 8928, 2]
 
-// Module 8895 (LegacyText/LegacyText)
+// Module 8927 (LegacyText/LegacyText)
 import c from "c" /* 568 */;
-import useLegacyTextMigrationHighlight from "useLegacyTextMigrationHighlight" /* 8896 */;
+import useLegacyTextMigrationHighlight from "useLegacyTextMigrationHighlight" /* 8928 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -13,7 +13,7 @@ require = fn;
 let closure_2 = ["style", "children"];
 const Text = fn(17).Text;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ text: { fontFamily: fn(1078).Fonts.PRIMARY_MEDIUM, includeFontPadding: false } });
 const ReactCompilerGating = fn(558);
 let obj = { text: { fontFamily: fn(1078).Fonts.PRIMARY_MEDIUM, includeFontPadding: false } };

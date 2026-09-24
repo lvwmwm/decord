@@ -1,13 +1,13 @@
-// Module ID: 12956
-// Function ID: 12957
+// Module ID: 12992
+// Function ID: 12993
 // Name: setUserStatus
-// Dependencies: [5, 7362, 5498, 1078, 4603, 1119, 12957, 2028, 1221, 4611, 1245, 2]
+// Dependencies: [5, 7394, 5530, 1078, 4635, 1119, 12993, 2028, 1221, 4643, 1245, 2]
 // Exports: default
 
-// Module 12956 (setUserStatus)
+// Module 12992 (setUserStatus)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7362 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
+import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7394 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5530 */;
 
 const require = fn;
 let closure_7 = async function _setUserStatus() {
@@ -36,13 +36,13 @@ let closure_7 = async function _setUserStatus() {
     statusCreatedAtMs = UInt64Value.create({ value: "" + Date.now() });
   }, closure_130_0(closure_130_2[7]).UserSettingsDelay.INFREQUENT_USER_ACTION);
   closure_129_6 = (function getStatusUpdateAnnouncement(status, arg1) {
-    const humanizeStatusResult = value(4603).humanizeStatus(status);
+    const humanizeStatusResult = value(4635).humanizeStatus(status);
     if ("0" === arg1) {
       const intl3 = tmp(1119).intl;
       const obj2 = { statusLabel: humanizeStatusResult };
       return intl3.formatToPlainString(tmp(1119).t.dO2aLi, obj2);
     } else {
-      const statusExpiryParts = tmp(12957).getStatusExpiryParts(arg1);
+      const statusExpiryParts = tmp(12993).getStatusExpiryParts(arg1);
       const timeString = statusExpiryParts.timeString;
       if ("today" === statusExpiryParts.kind) {
         const intl2 = tmp(1119).intl;
@@ -55,7 +55,7 @@ let closure_7 = async function _setUserStatus() {
       }
       return formatToPlainStringResult;
     }
-    const obj = value(4603);
+    const obj = value(4635);
   })(closure_129_0, closure_129_5);
   const AccessibilityAnnouncer = closure_130_0(closure_130_2[9]).AccessibilityAnnouncer;
   AccessibilityAnnouncer.announce(closure_129_6);

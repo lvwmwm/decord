@@ -1,10 +1,42 @@
 // Module ID: 5158
 // Function ID: 5159
-// Dependencies: [17]
+// Dependencies: [19, 17, 5156]
+// Exports: useRenderDebugInfo
 
 // Module 5158
-import _mod17 from "module_17" /* 17 */;
+import _mod5156 from "module_5156" /* 5156 */;
+import noop from "module_19" /* 19 */;
 
-const Platform = _mod17.Platform;
+const require = globalThis.__r;
 
-export const isIOS26OrHigher = false;
+require = fn;
+const findNodeHandle = fn(17).findNodeHandle;
+
+export const useRenderDebugInfo = function useRenderDebugInfo(arg0) {
+  _require = arg0;
+  const ref = ref1.useRef(null);
+  ref1 = ref1.useRef(-1);
+  closure_3 = ref1.useEffectEvent((arg0) => {
+    const RNSLog = _mod5156.RNSLog;
+    RNSLog.log("" + closure_0 + " [" + ref1.current + "] " + arg0);
+  });
+  const effect = ref1.useEffect(() => {
+    if (null != ref.current) {
+      let num = findNodeHandle(tmp.current);
+      if (num == null) {
+        num = -1;
+      }
+      ref1.current = num;
+      if (-1 === ref1.current) {
+        closure_3("failed to find node handle");
+      }
+    }
+    closure_3("mounted");
+    return () => {
+      closure_1_3("unmounted");
+    };
+  }, []);
+  let RNSLog = require("module_5156").RNSLog;
+  RNSLog.log("" + arg0 + " [" + ref1.current + "] " + "rendered");
+  return ref;
+};

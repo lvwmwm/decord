@@ -1,13 +1,13 @@
-// Module ID: 6596
-// Function ID: 6597
+// Module ID: 6628
+// Function ID: 6629
 // Name: PowerupSpotIllustration
-// Dependencies: [21, 558, 568, 6597, 5802, 2]
+// Dependencies: [21, 558, 568, 6629, 5834, 2]
 
-// Module 6596 (PowerupSpotIllustration)
+// Module 6628 (PowerupSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6597 from "module_6597" /* 6597 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6629 from "module_6629" /* 6629 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const PowerupSpotIllustration = ReactCompilerGating.isReactCompilerEnable
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6597 };
+    const obj2 = { uri: _modDef6629 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const PowerupSpotIllustration = ReactCompilerGating.isReactCompilerEnable
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6597 };
+  const obj2 = { uri: _modDef6629 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

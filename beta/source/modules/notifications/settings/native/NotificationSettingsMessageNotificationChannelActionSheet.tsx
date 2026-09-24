@@ -1,20 +1,20 @@
-// Module ID: 12993
-// Function ID: 12994
+// Module ID: 13029
+// Function ID: 13030
 // Name: NotificationSettingsMessageNotificationChannelActionSheet
-// Dependencies: [19, 4939, 1078, 4940, 1088, 21, 558, 568, 10420, 1119, 10421, 7366, 7361, 12992, 2]
+// Dependencies: [19, 4971, 1078, 4972, 1088, 21, 558, 568, 10459, 1119, 10460, 7398, 7393, 13028, 2]
 
-// Module 12993 (NotificationSettingsMessageNotificationChannelActionSheet)
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7361 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7366 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10421 */;
+// Module 13029 (NotificationSettingsMessageNotificationChannelActionSheet)
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7393 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7398 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10460 */;
 import noop from "module_19" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const UserNotificationSettings = fn(1078).UserNotificationSettings;
-const UnreadSetting = fn(4940).UnreadSetting;
+const UnreadSetting = fn(4972).UnreadSetting;
 let closure_6 = fn(1088).ChannelNotificationSettingsFlags;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
@@ -46,7 +46,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           }
         }
         const obj3 = { context: "channel", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 };
-        const tmp12 = jsx(unread(12992), { context: "channel", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
+        const tmp12 = jsx(unread(13028), { context: "channel", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
         cResult[7] = notification;
         cResult[8] = tmp5;
         cResult[9] = tmp8;
@@ -111,5 +111,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const NotificationLabel = NotificationSettingsUtils.NotificationLabel;
     const result = NotificationSettingsModalActionCreatorsDefault.updateChannelOverrideSettings(channel.channel.guild_id, channel.channel.id, obj, NotificationLabel.notifications(message_notifications));
   };
-  return tmp4(unread(12992), obj2);
+  return tmp4(unread(13028), obj2);
 });

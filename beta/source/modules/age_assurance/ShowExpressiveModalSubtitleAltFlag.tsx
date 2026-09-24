@@ -1,13 +1,13 @@
-// Module ID: 8728
-// Function ID: 8729
+// Module ID: 8760
+// Function ID: 8761
 // Name: ShowExpressiveModalSubtitleAltFlag
-// Dependencies: [8707, 1438, 558, 568, 8695, 504, 2]
+// Dependencies: [8739, 1438, 558, 568, 8727, 504, 2]
 // Exports: shouldShowExpressiveModalSubtitleAlt
 
-// Module 8728 (ShowExpressiveModalSubtitleAltFlag)
+// Module 8760 (ShowExpressiveModalSubtitleAltFlag)
 import c from "c" /* 568 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8695 */;
-import SafetyHubStore from "SafetyHubStore" /* 8707 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8727 */;
+import SafetyHubStore from "SafetyHubStore" /* 8739 */;
 
 const initialize = tmp(504);
 require = fn;

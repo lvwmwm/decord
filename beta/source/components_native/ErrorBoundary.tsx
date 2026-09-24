@@ -1,27 +1,27 @@
-// Module ID: 16259
-// Function ID: 16260
+// Module ID: 16269
+// Function ID: 16270
 // Name: ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 11557, 21, 4758, 558, 568, 11918, 504, 1119, 5188, 4471, 1235, 577, 1181, 10084, 4754, 2]
+// Dependencies: [5, 32, 19, 17, 11593, 21, 4790, 558, 568, 11954, 504, 1119, 5220, 4503, 1235, 577, 1181, 10123, 4786, 2]
 
-// Module 16259 (ErrorBoundary)
+// Module 16269 (ErrorBoundary)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import SentryUtilsDefault from "SentryUtils" /* 1235 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import AppCrash from "AppCrash" /* 10084 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import AppCrash from "AppCrash" /* 10123 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11557 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11593 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ NativeModules: metroRequire, View: closure_7 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_11 = createStyles.createLegacyClassComponentStyles({ buttons: { position: "absolute", right: 32, bottom: 32, left: 32, gap: 12 }, debugLogsContainer: { position: "absolute", right: 32, top: 64, display: "flex", flexDirection: "row", alignItems: "center", gap: 12 }, error: { marginTop: 24, textAlign: "center" }, text: { textAlign: "center" } });
 const ReactCompilerGating = fn(558);
 let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -34,7 +34,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
       let id;
       if (overrides != null) {
-        const tmp4 = overrides[closure_0(undefined, 11918).DEVICE_FIELD];
+        const tmp4 = overrides[closure_0(undefined, 11954).DEVICE_FIELD];
         if (tmp4 != null) {
           id = tmp4.id;
         }
@@ -56,7 +56,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       _require = asyncGeneratorStep(async () => {
         tmp3(true);
-        await tmp3(11918).clearBuildOverride();
+        await tmp3(11954).clearBuildOverride();
         if (1 === tmp7) {
           c3 = 0;
           tmp3(false);
@@ -95,7 +95,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[4] !== tmp5) {
       const obj2 = { variant: "secondary", loading: tmp5, text: tmp11, onPress: tmp9 };
-      const tmp15 = closure_9(tmp(5188).Button, obj2);
+      const tmp15 = closure_9(tmp(5220).Button, obj2);
       cResult[4] = tmp5;
       cResult[5] = tmp15;
       let tmp13 = tmp15;
@@ -150,7 +150,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       return applyArgumentsResult;
     };
-    return closure_9(tmp2(5188).Button, obj2);
+    return closure_9(tmp2(5220).Button, obj2);
   }
   obj = require("initialize");
 });
@@ -243,7 +243,7 @@ prototype["render"] = function render() {
   }
   return children;
 };
-ErrorBoundary.contextType = fn(4471).ThemeContext;
+ErrorBoundary.contextType = fn(4503).ThemeContext;
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/ErrorBoundary.tsx");
 

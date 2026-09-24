@@ -1,19 +1,19 @@
-// Module ID: 12337
-// Function ID: 12338
+// Module ID: 12373
+// Function ID: 12374
 // Name: AppLauncherViewAllScreen
-// Dependencies: [19, 17, 1487, 21, 4758, 580, 12271, 558, 568, 1616, 11469, 12181, 7770, 1119, 5843, 5341, 4754, 1181, 12233, 12186, 12269, 12238, 12241, 12242, 12182, 9519, 2]
+// Dependencies: [19, 17, 1487, 21, 4790, 580, 12307, 558, 568, 1616, 11505, 12217, 7802, 1119, 5875, 5373, 4786, 1181, 12269, 12222, 12305, 12274, 12277, 12278, 12218, 9551, 2]
 
-// Module 12337 (AppLauncherViewAllScreen)
+// Module 12373 (AppLauncherViewAllScreen)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5843 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7770 */;
-import AppLauncherContext from "AppLauncherContext" /* 11469 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12181 */;
-import AppLauncherBackButton from "AppLauncherBackButton" /* 12271 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5875 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7802 */;
+import AppLauncherContext from "AppLauncherContext" /* 11505 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12217 */;
+import AppLauncherBackButton from "AppLauncherBackButton" /* 12307 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,13 +24,13 @@ let closure_6 = AppLauncherNativeConstants.FLASH_LIST_ITEM_IMPRESSION_VIEWABILIT
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let closure_9 = { bottom: 4 };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { height: "100%", backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, flex: 1, flexDirection: "column", paddingBottom: 12 }, header: null, list: null, backButton: null };
 let obj3 = { height: "100%", backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, flex: 1, flexDirection: "column", paddingBottom: 12 };
 obj2.header = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", height: 24, backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, paddingHorizontal: DEFAULT_CONTENT_PADDING, marginBottom: 12 };
 let obj4 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", height: 24, backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, paddingHorizontal: DEFAULT_CONTENT_PADDING, marginBottom: 12 };
 obj2.list = { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingBottom: nativeDefault.space.PX_4 };
-let size = { width: fn(12271).BACK_BUTTON_SIZE, height: fn(12271).BACK_BUTTON_SIZE, alignItems: "center", justifyContent: "center" };
+let size = { width: fn(12307).BACK_BUTTON_SIZE, height: fn(12307).BACK_BUTTON_SIZE, alignItems: "center", justifyContent: "center" };
 obj2.backButton = size;
 let closure_10 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

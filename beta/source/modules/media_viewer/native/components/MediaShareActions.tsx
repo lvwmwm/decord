@@ -1,37 +1,37 @@
-// Module ID: 8610
-// Function ID: 8611
+// Module ID: 8642
+// Function ID: 8643
 // Name: MediaShareActions
-// Dependencies: [19, 8611, 2045, 4978, 8636, 1078, 7848, 21, 565, 7847, 8399, 4725, 8541, 4908, 8637, 8537, 7436, 4457, 8646, 4455, 11805, 4769, 4619, 11800, 1984, 11783, 8641, 4706, 1119, 11814, 13206, 4700, 13252, 11864, 5301, 558, 568, 7445, 7449, 2]
+// Dependencies: [19, 8643, 2045, 5010, 8668, 1078, 7880, 21, 565, 7879, 8431, 4757, 8573, 4940, 8669, 8569, 7468, 4489, 8678, 4487, 11841, 4801, 4651, 11836, 1984, 11819, 8673, 4738, 1119, 11850, 13242, 4732, 13288, 11900, 5333, 558, 568, 7477, 7481, 2]
 
-// Module 8610 (MediaShareActions)
+// Module 8642 (MediaShareActions)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ToastUtils from "ToastUtils" /* 4457 */;
-import useChatLayout from "useChatLayout" /* 4619 */;
-import LinkIcon from "LinkIcon" /* 4700 */;
-import DownloadIcon from "DownloadIcon" /* 4706 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import transitionToChannel from "transitionToChannel" /* 4769 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4908 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 5301 */;
-import ClipboardUtils from "ClipboardUtils" /* 7436 */;
-import ActionSheetRow from "ActionSheetRow" /* 7445 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8537 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8541 */;
-import showShareActionSheet from "showShareActionSheet" /* 8637 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8646 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 11805 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 11814 */;
-import ChatArrowRightIcon from "ChatArrowRightIcon" /* 11864 */;
-import ShareIcon from "ShareIcon" /* 13206 */;
-import WindowLaunchIcon from "WindowLaunchIcon" /* 13252 */;
+import ToastUtils from "ToastUtils" /* 4489 */;
+import useChatLayout from "useChatLayout" /* 4651 */;
+import LinkIcon from "LinkIcon" /* 4732 */;
+import DownloadIcon from "DownloadIcon" /* 4738 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import transitionToChannel from "transitionToChannel" /* 4801 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 4940 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 5333 */;
+import ClipboardUtils from "ClipboardUtils" /* 7468 */;
+import ActionSheetRow from "ActionSheetRow" /* 7477 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8569 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8573 */;
+import showShareActionSheet from "showShareActionSheet" /* 8669 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8678 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 11841 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 11850 */;
+import ChatArrowRightIcon from "ChatArrowRightIcon" /* 11900 */;
+import ShareIcon from "ShareIcon" /* 13242 */;
+import WindowLaunchIcon from "WindowLaunchIcon" /* 13288 */;
 import noop from "module_19" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 8611 */;
+import ICYMIStore from "ICYMIStore" /* 8643 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import MessageStore from "MessageStore" /* 4978 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8636 */;
+import MessageStore from "MessageStore" /* 5010 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8668 */;
 
 require = fn;
 function useMediaShareActions(source) {
@@ -128,7 +128,7 @@ function useMediaShareActions(source) {
       if ("embed" !== source.accessoryType) {
         const attachmentId = tmp8.attachmentId;
         if (null != attachmentId) {
-          const obj3 = { message: tmp3, source: "media-viewer", initialSelectedDestinations: "Array", forwardOptions: 22 };
+          const obj3 = { message: tmp3, source: "media-viewer", initialSelectedDestinations: "Array", forwardOptions: "older_adult_tone1" };
           const obj4 = { onlyAttachmentIds: null };
           const items = [attachmentId];
           obj4.onlyAttachmentIds = items;
@@ -136,7 +136,7 @@ function useMediaShareActions(source) {
           ForwardModalUtils.openForwardModal(obj3);
         }
       } else {
-        const obj6 = { message: tmp3, source: "media-viewer", initialSelectedDestinations: "Array", forwardOptions: 22 };
+        const obj6 = { message: tmp3, source: "media-viewer", initialSelectedDestinations: "Array", forwardOptions: "older_adult_tone1" };
         const obj7 = { onlyEmbedIndices: null };
         const items1 = [tmp8.mediaIndex];
         obj7.onlyEmbedIndices = items1;
@@ -165,7 +165,7 @@ function useMediaShareActions(source) {
       const obj2 = { messageId: null, channelId: null, attachmentId: null };
       ({ messageId: obj3.messageId, channelId: obj3.channelId } = tmp4);
       obj2.attachmentId = attachmentId;
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11800, dependencyMap.paths), closure_11, obj2);
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11836, dependencyMap.paths), closure_11, obj2);
       const tmpResult = ActionSheetActionCreatorsDefault;
     }
   }, items8);
@@ -249,7 +249,7 @@ function useMediaShareActions(source) {
 }
 const Constants = fn(1078);
 ({ AnalyticsSections: closure_8, GIF_RE_IOS: closure_9, MediaType: c10 } = Constants);
-let closure_11 = fn(7848).EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY;
+let closure_11 = fn(7880).EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -284,8 +284,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (cResult[7] !== cResult[5]) {
           const obj2 = { children: null };
           const obj3 = { hasIcons: true, children: tmp6 };
-          obj2.children = jsx(tmp(7445).ActionSheetRow.Group, { hasIcons: true, children: tmp6 });
-          const tmp13 = jsx(tmp(7449).ActionSheet, { children: null });
+          obj2.children = jsx(tmp(7477).ActionSheetRow.Group, { hasIcons: true, children: tmp6 });
+          const tmp13 = jsx(tmp(7481).ActionSheet, { children: null });
           cResult[7] = tmp6;
           cResult[8] = tmp13;
           let tmp11 = tmp13;

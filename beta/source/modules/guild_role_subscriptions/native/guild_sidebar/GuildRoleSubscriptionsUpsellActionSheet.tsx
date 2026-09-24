@@ -1,16 +1,16 @@
-// Module ID: 16582
-// Function ID: 16583
+// Module ID: 16592
+// Function ID: 16593
 // Name: GuildRoleSubscriptionsUpsellActionSheet
-// Dependencies: [19, 17, 1078, 2042, 21, 4758, 558, 568, 9833, 5802, 16583, 1119, 4754, 5188, 7397, 2]
+// Dependencies: [19, 17, 1078, 2042, 21, 4790, 558, 568, 9865, 5834, 16593, 1119, 4786, 5220, 7429, 2]
 
-// Module 16582 (GuildRoleSubscriptionsUpsellActionSheet)
+// Module 16592 (GuildRoleSubscriptionsUpsellActionSheet)
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
-import _modDef16583 from "module_16583" /* 16583 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9865 */;
+import _modDef16593 from "module_16593" /* 16593 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -19,7 +19,7 @@ const GuildSettingsSections = fn(1078).GuildSettingsSections;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ title: { marginTop: 24, textAlign: "center" }, description: { marginTop: 8, marginBottom: 24, textAlign: "center" }, dismissButton: { marginTop: 4 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -46,11 +46,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { source: markAsDismissed(16583) };
-      const tmp12 = closure_6(markAsDismissed(5802), obj2);
+      const obj2 = { source: markAsDismissed(16593) };
+      const tmp12 = closure_6(markAsDismissed(5834), obj2);
       cResult[5] = tmp12;
       let tmp8 = tmp12;
-      const tmp11 = markAsDismissed(5802);
+      const tmp11 = markAsDismissed(5834);
     } else {
       tmp8 = cResult[5];
     }
@@ -65,7 +65,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     if (cResult[7] !== tmp4.title) {
       const obj3 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp13 };
-      const tmp17 = closure_6(tmp(4754).Text, obj3);
+      const tmp17 = closure_6(tmp(4786).Text, obj3);
       cResult[7] = tmp4.title;
       cResult[8] = tmp17;
       let tmp15 = tmp17;
@@ -83,7 +83,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     if (cResult[10] !== tmp4.description) {
       const obj4 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: tmp18 };
-      const tmp22 = closure_6(tmp(4754).Text, obj4);
+      const tmp22 = closure_6(tmp(4786).Text, obj4);
       cResult[10] = tmp4.description;
       cResult[11] = tmp22;
       let tmp20 = tmp22;
@@ -101,7 +101,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     if (cResult[13] !== tmp5) {
       const obj5 = { onPress: tmp5, text: tmp23 };
-      const tmp27 = closure_6(tmp(5188).Button, obj5);
+      const tmp27 = closure_6(tmp(5220).Button, obj5);
       cResult[13] = tmp5;
       cResult[14] = tmp27;
       let tmp25 = tmp27;
@@ -147,7 +147,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         }
       }
       const obj7 = { onPress: tmp28, text: tmp29, variant: "secondary" };
-      const tmp32 = closure_6(tmp(5188).Button, obj7);
+      const tmp32 = closure_6(tmp(5220).Button, obj7);
       cResult[18] = tmp28;
       cResult[19] = tmp32;
     } else {
@@ -173,7 +173,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       const obj8 = { startExpanded: true, onDismiss: tmp6, children: null };
       const items = [tmp8, tmp15, tmp20, tmp25, tmp33];
       obj8.children = items;
-      const tmp39 = closure_7(tmp(7397).BottomSheet, obj8);
+      const tmp39 = closure_7(tmp(7429).BottomSheet, obj8);
       cResult[23] = tmp25;
       cResult[24] = tmp33;
       cResult[25] = tmp6;
@@ -205,7 +205,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     },
     children: null
   };
-  const obj2 = { source: _modDef16583 };
+  const obj2 = { source: _modDef16593 };
   const items = [closure_6(FastImageDefault, obj2), , , , ];
   const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;

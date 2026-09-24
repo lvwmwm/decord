@@ -1,18 +1,18 @@
-// Module ID: 12405
-// Function ID: 12406
+// Module ID: 12441
+// Function ID: 12442
 // Name: useVoiceMessageTooltip
-// Dependencies: [19, 1484, 12090, 558, 568, 1119, 6861, 10453, 2]
+// Dependencies: [19, 1484, 12126, 558, 568, 1119, 6893, 10492, 2]
 
-// Module 12405 (useVoiceMessageTooltip)
+// Module 12441 (useVoiceMessageTooltip)
 import util from "util" /* 1119 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6861 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6893 */;
 import noop from "module_19" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1484 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const VoiceMessagesUIStore = fn(12090);
+const VoiceMessagesUIStore = fn(12126);
 ({ hideVoiceMessagesTooltip: closure_4, showVoiceMessagesTooltip: hasOwnProperty, useVoiceMessagesUIStore: metroRequire } = VoiceMessagesUIStore);
 const ReactCompilerGating = fn(558);
 const size = fn(2);

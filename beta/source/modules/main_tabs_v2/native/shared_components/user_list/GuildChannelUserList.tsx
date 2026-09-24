@@ -1,19 +1,19 @@
-// Module ID: 11708
-// Function ID: 11709
+// Module ID: 11744
+// Function ID: 11745
 // Name: GuildChannelUserList
-// Dependencies: [32, 19, 17, 7523, 2045, 2109, 2067, 2099, 1376, 1078, 21, 558, 568, 10070, 5738, 550, 7556, 7409, 504, 7296, 4404, 11709, 9801, 4910, 4603, 1119, 8453, 580, 7297, 11168, 2]
+// Dependencies: [32, 19, 17, 7555, 2045, 2109, 2067, 2099, 1376, 1078, 21, 558, 568, 10109, 5770, 550, 7588, 7441, 504, 7328, 4436, 11745, 9833, 4942, 4635, 1119, 8485, 580, 7329, 11204, 2]
 
-// Module 11708 (GuildChannelUserList)
+// Module 11744 (GuildChannelUserList)
 import throttleDefault from "throttle" /* 550 */;
 import util from "util" /* 1119 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4404 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
-import GuildUtilsDefault from "GuildUtils" /* 5738 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import sortByMatchScore from "sortByMatchScore" /* 10070 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4436 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
+import GuildUtilsDefault from "GuildUtils" /* 5770 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
+import sortByMatchScore from "sortByMatchScore" /* 10109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelMemberStore_mod from "ChannelMemberStore" /* 7523 */;
+import ChannelMemberStore_mod from "ChannelMemberStore" /* 7555 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -24,7 +24,7 @@ const sortByMatchScoreDefault = sortByMatchScore;
 
 require = fn;
 const View = fn(17).View;
-let ChannelMemberStore = fn(7523);
+let ChannelMemberStore = fn(7555);
 ({ EVERYONE_CHANNEL_ID: closure_7, MemberListRowTypes: closure_8 } = ChannelMemberStore);
 let ChannelMemberStore = ChannelMemberStore_mod;
 const Constants = fn(1078);
@@ -670,15 +670,15 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
                               const user1 = UserStore.getUser(userId2.userId);
                               let str = NicknameUtilsDefault.getNickname(guildId, closure_0, user);
                               if (str == null) {
-                                str = tmp3(4603).getGlobalName(user);
-                                const tmp3Result = tmp3(4603);
+                                str = tmp3(4635).getGlobalName(user);
+                                const tmp3Result = tmp3(4635);
                               }
                               const tmp5 = guildId;
                               const tmp6 = closure_0;
                               let str2 = NicknameUtilsDefault.getNickname(tmp5, tmp6, user1);
                               if (str2 == null) {
-                                str2 = tmp3(4603).getGlobalName(user1);
-                                const tmp3Result4 = tmp3(4603);
+                                str2 = tmp3(4635).getGlobalName(user1);
+                                const tmp3Result4 = tmp3(4635);
                               }
                               if (str == null) {
                                 str = "";
@@ -740,15 +740,15 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
                             const user1 = UserStore.getUser(userId2.userId);
                             let str = NicknameUtilsDefault.getNickname(guildId, closure_0, user);
                             if (str == null) {
-                              str = tmp3(4603).getGlobalName(user);
-                              const tmp3Result = tmp3(4603);
+                              str = tmp3(4635).getGlobalName(user);
+                              const tmp3Result = tmp3(4635);
                             }
                             const tmp5 = guildId;
                             const tmp6 = closure_0;
                             let str2 = NicknameUtilsDefault.getNickname(tmp5, tmp6, user1);
                             if (str2 == null) {
-                              str2 = tmp3(4603).getGlobalName(user1);
-                              const tmp3Result4 = tmp3(4603);
+                              str2 = tmp3(4635).getGlobalName(user1);
+                              const tmp3Result4 = tmp3(4635);
                             }
                             if (str == null) {
                               str = "";
@@ -960,15 +960,15 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
           const user1 = UserStore.getUser(userId2.userId);
           let str = NicknameUtilsDefault.getNickname(guildId, closure_0, user);
           if (str == null) {
-            str = tmp3(4603).getGlobalName(user);
-            const tmp3Result = tmp3(4603);
+            str = tmp3(4635).getGlobalName(user);
+            const tmp3Result = tmp3(4635);
           }
           const tmp5 = guildId;
           const tmp6 = closure_0;
           let str2 = NicknameUtilsDefault.getNickname(tmp5, tmp6, user1);
           if (str2 == null) {
-            str2 = tmp3(4603).getGlobalName(user1);
-            const tmp3Result4 = tmp3(4603);
+            str2 = tmp3(4635).getGlobalName(user1);
+            const tmp3Result4 = tmp3(4635);
           }
           if (str == null) {
             str = "";

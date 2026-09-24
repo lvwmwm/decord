@@ -1,13 +1,13 @@
-// Module ID: 8321
-// Function ID: 8322
+// Module ID: 8353
+// Function ID: 8354
 // Name: useMaybeFetchReferralsRemaining
-// Dependencies: [19, 1376, 7699, 1378, 558, 568, 504, 8322, 8323, 7637, 1973, 2]
+// Dependencies: [19, 1376, 7731, 1378, 558, 568, 504, 8354, 8355, 7669, 1973, 2]
 
-// Module 8321 (useMaybeFetchReferralsRemaining)
-import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7637 */;
+// Module 8353 (useMaybeFetchReferralsRemaining)
+import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7669 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7699 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7731 */;
 
 const require = globalThis.__r;
 
@@ -110,10 +110,10 @@ export const useMaybeFetchReferralsRemaining = ReactCompilerGating.isReactCompil
   const stateFromStores = flag(504).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = flag(504);
   let tmp = flag;
-  const hasDiscountApplied = flag(8322).useHasDiscountApplied();
-  const obj2 = flag(8322);
-  const hasActiveTrial = flag(8323).useHasActiveTrial();
-  const tmp6 = fetched(7637)();
+  const hasDiscountApplied = flag(8354).useHasDiscountApplied();
+  const obj2 = flag(8354);
+  const hasActiveTrial = flag(8355).useHasActiveTrial();
+  const tmp6 = fetched(7669)();
   let verified;
   if (stateFromStores != null) {
     verified = stateFromStores.verified;

@@ -1,13 +1,13 @@
-// Module ID: 6486
-// Function ID: 6487
+// Module ID: 6518
+// Function ID: 6519
 // Name: MoonIllocon
-// Dependencies: [21, 558, 568, 6487, 5802, 2]
+// Dependencies: [21, 558, 568, 6519, 5834, 2]
 
-// Module 6486 (MoonIllocon)
+// Module 6518 (MoonIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6487 from "module_6487" /* 6487 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6519 from "module_6519" /* 6519 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const MoonIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6487 };
+    const obj2 = { uri: _modDef6519 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const MoonIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6487 };
+  const obj2 = { uri: _modDef6519 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

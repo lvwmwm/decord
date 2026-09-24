@@ -1,13 +1,13 @@
-// Module ID: 8320
-// Function ID: 8321
+// Module ID: 8352
+// Function ID: 8353
 // Name: useIsEligibleSenderForReferralProgram
-// Dependencies: [7699, 558, 568, 8321, 504, 2]
+// Dependencies: [7731, 558, 568, 8353, 504, 2]
 
-// Module 8320 (useIsEligibleSenderForReferralProgram)
+// Module 8352 (useIsEligibleSenderForReferralProgram)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import useMaybeFetchReferralsRemaining from "useMaybeFetchReferralsRemaining" /* 8321 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7699 */;
+import useMaybeFetchReferralsRemaining from "useMaybeFetchReferralsRemaining" /* 8353 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7731 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);

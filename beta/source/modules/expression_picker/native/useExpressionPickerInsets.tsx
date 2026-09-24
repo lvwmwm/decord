@@ -1,13 +1,13 @@
-// Module ID: 10654
-// Function ID: 10655
+// Module ID: 10690
+// Function ID: 10691
 // Name: useExpressionPickerInsets
-// Dependencies: [19, 1078, 558, 568, 1616, 7224, 580, 2]
+// Dependencies: [19, 1078, 558, 568, 1616, 7256, 580, 2]
 
-// Module 10654 (useExpressionPickerInsets)
+// Module 10690 (useExpressionPickerInsets)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7224 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7256 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -38,7 +38,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasCategories) =
   if (hasCategories.hasCategories) {
     num4 = EXPRESSION_FOOTER_HEIGHT;
   }
-  const sum = tmp3(7224)(first).insets.bottom + num4;
+  const sum = tmp3(7256)(first).insets.bottom + num4;
   const sum1 = sum + tmp3(580).space.PX_16;
   if (cResult[3] === tmp5) {
     if (cResult[4] === sum1) {

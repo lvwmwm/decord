@@ -1,16 +1,16 @@
-// Module ID: 7180
-// Function ID: 7181
+// Module ID: 7212
+// Function ID: 7213
 // Name: FreeFormTextInput
-// Dependencies: [109, 19, 17, 21, 4758, 580, 558, 568, 1119, 1181, 7181, 5341, 38, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 580, 558, 568, 1119, 1181, 7213, 5373, 38, 2]
 
-// Module 7180 (FreeFormTextInput)
+// Module 7212 (FreeFormTextInput)
 import _modDef38 from "module_38" /* 38 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Pressables from "Pressables" /* 5341 */;
-import _modDef7181 from "module_7181" /* 7181 */;
+import Pressables from "Pressables" /* 5373 */;
+import _modDef7213 from "module_7213" /* 7213 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 ({ TouchableWithoutFeedback: metroRequire, View: closure_7, TouchableOpacity: closure_8 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, height: 48, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, paddingRight: 6, paddingLeft: 12, flexDirection: "row", alignItems: "center" }, onPress: { flexDirection: "row" }, input: null, error: null, closeIcon: null, placeholder: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, height: 48, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, paddingRight: 6, paddingLeft: 12, flexDirection: "row", alignItems: "center" };
 obj.input = { flex: 1, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
@@ -59,7 +59,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     tmp8 = cResult[2];
   }
   if (cResult[3] !== tmp4.closeIcon) {
-    const obj3 = { source: _modDef7181, style: tmp4.closeIcon, size: tmp(1181).Icon.Sizes.MEDIUM };
+    const obj3 = { source: _modDef7213, style: tmp4.closeIcon, size: tmp(1181).Icon.Sizes.MEDIUM };
     const tmp12 = options(tmp(1181).Icon, obj3);
     cResult[3] = tmp4.closeIcon;
     cResult[4] = tmp12;
@@ -85,7 +85,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   obj.onPress = onPress.onPress;
   obj.hitSlop = { top: 8, bottom: 8, right: 8 };
   const tmp = closure_11();
-  obj.children = options(native.Icon, { source: _modDef7181, style: closure_11().closeIcon, size: native.Icon.Sizes.MEDIUM });
+  obj.children = options(native.Icon, { source: _modDef7213, style: closure_11().closeIcon, size: native.Icon.Sizes.MEDIUM });
   return options(Pressables.PressableOpacity, obj);
 });
 ReactCompilerGating = fn(558);

@@ -1,21 +1,21 @@
-// Module ID: 15502
-// Function ID: 15503
+// Module ID: 15512
+// Function ID: 15513
 // Name: PremiumRestoreSubscriptionSetting
-// Dependencies: [1376, 21, 7663, 5111, 1119, 15503, 1984, 558, 568, 504, 1368, 11594, 8938, 2]
+// Dependencies: [1376, 21, 7695, 5143, 1119, 15513, 1984, 558, 568, 504, 1368, 11630, 8970, 2]
 
-// Module 15502 (PremiumRestoreSubscriptionSetting)
+// Module 15512 (PremiumRestoreSubscriptionSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5111 */;
-import BillingActionCreatorsDefault from "BillingActionCreators" /* 7663 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5143 */;
+import BillingActionCreatorsDefault from "BillingActionCreators" /* 7695 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -60,7 +60,7 @@ const pressable = SettingBuilders.createPressable({
     return intl.string(util.t.s9h22P);
   },
   parent: null,
-  IconComponent: fn(8938).NitroWheelIcon,
+  IconComponent: fn(8970).NitroWheelIcon,
   onPress: function handleNitroRestoreSettingPress() {
     const result = BillingActionCreatorsDefault.restoreAndApplyPurchases(true);
     result.then((result) => {

@@ -1,9 +1,9 @@
-// Module ID: 17263
-// Function ID: 17264
+// Module ID: 17273
+// Function ID: 17274
 // Name: MobileReferralSubscriberProfileEntrypointButtonExperiment
 // Dependencies: [1095, 1438, 558, 568, 2]
 
-// Module 17263 (MobileReferralSubscriberProfileEntrypointButtonExperiment)
+// Module 17273 (MobileReferralSubscriberProfileEntrypointButtonExperiment)
 import c from "c" /* 568 */;
 import DurationsDefault from "Durations" /* 1095 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 10715
-// Function ID: 10716
+// Module ID: 10751
+// Function ID: 10752
 // Name: StickerPickerCategories
-// Dependencies: [32, 19, 17, 2067, 10682, 1078, 1222, 21, 4758, 580, 558, 568, 2023, 5105, 5487, 1245, 1181, 1401, 5799, 10694, 5315, 5341, 4726, 4727, 10537, 7302, 1119, 10716, 10538, 2]
+// Dependencies: [32, 19, 17, 2067, 10718, 1078, 1222, 21, 4790, 580, 558, 568, 2023, 5137, 5519, 1245, 1181, 1401, 5831, 10730, 5347, 5373, 4758, 4759, 10573, 7334, 1119, 10752, 10574, 2]
 
-// Module 10715 (StickerPickerCategories)
+// Module 10751 (StickerPickerCategories)
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import HapticUtils from "HapticUtils" /* 4726 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4727 */;
-import StickersTypes from "StickersTypes" /* 5487 */;
+import HapticUtils from "HapticUtils" /* 4758 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4759 */;
+import StickersTypes from "StickersTypes" /* 5519 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
 const View = fn(17).View;
-let useStickerPickerStore = fn(10682).useStickerPickerStore;
+let useStickerPickerStore = fn(10718).useStickerPickerStore;
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_8, AnalyticsPages: closure_9, CATEGORY_ICON_RIPPLE_CONFIG: c10, CATEGORY_ICON_SIZE } = Constants);
 const EXPRESSION_FOOTER_HEIGHT = Constants.EXPRESSION_FOOTER_HEIGHT;
@@ -23,7 +23,7 @@ const NODE_SIZE = Constants.NODE_SIZE;
 const ExpressionPickerViewType = fn(1222).ExpressionPickerViewType;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { list: { flex: 1, height: EXPRESSION_FOOTER_HEIGHT }, item: { height: EXPRESSION_FOOTER_HEIGHT, width: EXPRESSION_FOOTER_HEIGHT, justifyContent: "center", alignItems: "center" }, itemInner: null, fadedItem: { opacity: 0.5 }, activeItem: { opacity: 1, backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE }, guildIcon: { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE, borderRadius: CATEGORY_ICON_SIZE / 2 }, guildItemPlaceholder: null, lockContainer: null, lock: null };
 let size = { justifyContent: "center", alignItems: "center", height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2 };
 obj.itemInner = size;
@@ -1007,9 +1007,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((categories) => {
   const callback5 = first.useCallback((arg0, index) => state(closure_17, { category: categories[index], index, isActive: index === categoryIndex, locked: categories[index].isNitroLocked, onPressCategory: callback2 }), items8);
   let obj = { portalHostName: "expression-footer", style: categories.style, children: null };
   const tmp17 = categoryIndex;
-  const tmp19 = categoryIndex(10537)();
+  const tmp19 = categoryIndex(10573)();
   const tmp20 = closure_15;
-  const items9 = [closure_14(categoryIndex(7302), { estimatedListSize: "windowSize", horizontal: true, itemSize: EXPRESSION_FOOTER_HEIGHT, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: tmp19, ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list }), ];
+  const items9 = [closure_14(categoryIndex(7334), { estimatedListSize: "windowSize", horizontal: true, itemSize: EXPRESSION_FOOTER_HEIGHT, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: tmp19, ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list }), ];
   let tmp22Result = null != first && first1;
   if (tmp22Result) {
     const obj3 = { onPress: callback3, accessibilityRole: "button", accessibilityLabel: null, children: null };
@@ -1019,12 +1019,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((categories) => {
     const items10 = [, ];
     ({ item: arr11[0], fadedItem: arr11[1] } = tmp);
     obj4.style = items10;
-    const obj5 = { style: tmp.guildIcon, source: tmp17(10716) };
+    const obj5 = { style: tmp.guildIcon, source: tmp17(10752) };
     obj4.children = tmp22(categories(1181).Icon, obj5);
     obj3.children = tmp22(closure_5, obj4);
-    tmp22Result = tmp22(categories(5341).PressableOpacity, obj3);
+    tmp22Result = tmp22(categories(5373).PressableOpacity, obj3);
   }
   items9[1] = tmp22Result;
   obj.children = items9;
-  return tmp20(categoryIndex(10538), obj);
+  return tmp20(categoryIndex(10574), obj);
 });

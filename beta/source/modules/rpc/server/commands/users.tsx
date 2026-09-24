@@ -1,17 +1,17 @@
-// Module ID: 14788
-// Function ID: 14789
+// Module ID: 14826
+// Function ID: 14827
 // Name: users
-// Dependencies: [1376, 4663, 1078, 14760, 9583, 2]
+// Dependencies: [1376, 4695, 1078, 14798, 9615, 2]
 
-// Module 14788 (users)
-import transformUserDefault from "transformUser" /* 9583 */;
+// Module 14826 (users)
+import transformUserDefault from "transformUser" /* 9615 */;
 import UserStore from "UserStore" /* 1376 */;
 
-const Constants = fn(4663);
+const Constants = fn(4695);
 ({ RPC_EMBEDDED_APP_SCOPE, RPC_LOCAL_SCOPE, RPC_SCOPE_CONFIG } = Constants);
 const RPCCommands = fn(1078).RPCCommands;
 const obj = {};
-const CONTEXT_MENU_ICON_NAMES = fn(14760);
+const CONTEXT_MENU_ICON_NAMES = fn(14798);
 const obj3 = {
   scope: null,
   handler(args) {

@@ -1,14 +1,14 @@
-// Module ID: 17505
-// Function ID: 17506
+// Module ID: 17515
+// Function ID: 17516
 // Name: useChannelFloatingCTAContent
-// Dependencies: [19, 1996, 4781, 558, 568, 565, 10019, 2031, 2]
+// Dependencies: [19, 1996, 4813, 558, 568, 565, 10058, 2031, 2]
 
-// Module 17505 (useChannelFloatingCTAContent)
+// Module 17515 (useChannelFloatingCTAContent)
 import dismissible_content from "dismissible_content" /* 2031 */;
-import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 10019 */;
+import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 10058 */;
 import noop from "module_19" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
 
 const require = globalThis.__r;
 

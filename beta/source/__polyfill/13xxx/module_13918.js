@@ -1,14 +1,9 @@
 // Module ID: 13918
 // Function ID: 13919
-// Dependencies: [13919, 13920, 13928, 13932]
+// Dependencies: [1125]
 
 // Module 13918
-import _mod13932 from "module_13932" /* 13932 */;
-import assign from "module_13919" /* 13919 */;
-import Deflate from "Deflate" /* 13920 */;
-import Inflate from "Inflate" /* 13928 */;
+import registerAsset from "module_1125" /* 1125 */;
 
-const obj = {};
-assign.assign(obj, Deflate, Inflate, _mod13932);
 
-export default obj;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/flower_star/dark", width: 24, height: 23, scales: [2, 3], hash: "d3ced0dd7614d99a1c612f606eea8d5d", name: "tier_2_24px", type: "png" });

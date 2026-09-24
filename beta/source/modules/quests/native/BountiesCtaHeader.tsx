@@ -1,44 +1,44 @@
-// Module ID: 15335
-// Function ID: 15336
+// Module ID: 15345
+// Function ID: 15346
 // Name: BountiesCtaHeader
-// Dependencies: [19, 17, 4750, 15336, 5663, 21, 580, 5193, 4758, 558, 568, 504, 15317, 8583, 1119, 5188, 4754, 15326, 15337, 5670, 7959, 5666, 7969, 15269, 15271, 1181, 15338, 15339, 15340, 11902, 4471, 15320, 11906, 2]
+// Dependencies: [19, 17, 4782, 15346, 5695, 21, 580, 5225, 4790, 558, 568, 504, 15327, 8615, 1119, 5220, 4786, 15336, 15347, 5702, 7991, 5698, 8001, 15279, 15281, 1181, 15348, 15349, 15350, 11938, 4503, 15330, 11942, 2]
 
-// Module 15335 (BountiesCtaHeader)
+// Module 15345 (BountiesCtaHeader)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import QuestTypes from "QuestTypes" /* 5666 */;
-import AdCreativeType from "AdCreativeType" /* 5670 */;
-import AnalyticsActions from "AnalyticsActions" /* 7959 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7969 */;
-import common_Video from "common/Video" /* 8583 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15269 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 15271 */;
-import _modDef15317 from "module_15317" /* 15317 */;
-import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 15326 */;
-import BountiesBannerBackgroundDefault from "BountiesBannerBackground" /* 15338 */;
-import _modDef15339 from "module_15339" /* 15339 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import QuestTypes from "QuestTypes" /* 5698 */;
+import AdCreativeType from "AdCreativeType" /* 5702 */;
+import AnalyticsActions from "AnalyticsActions" /* 7991 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8001 */;
+import common_Video from "common/Video" /* 8615 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15279 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 15281 */;
+import _modDef15327 from "module_15327" /* 15327 */;
+import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 15336 */;
+import BountiesBannerBackgroundDefault from "BountiesBannerBackground" /* 15348 */;
+import _modDef15349 from "module_15349" /* 15349 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
-import AdContentSeenStore from "AdContentSeenStore" /* 15336 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import AdContentSeenStore from "AdContentSeenStore" /* 15346 */;
 
 const require = globalThis.__r;
 
-const Text_Text = Text(4754);
+const Text_Text = Text(4786);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const QuestConstants = fn(5663);
+const QuestConstants = fn(5695);
 ({ BountyCarouselEmptyStateReason: closure_8, DEFAULT_PLACEHOLDER_ENTRYPOINT_BOUNTY_ID: closure_9 } = QuestConstants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const PX_16 = nativeDefault.space.PX_16;
 const PX_20 = nativeDefault.space.PX_20;
 const sum = 26 + nativeDefault.space.PX_8 + PX_16;
-const minHeight = 472 - (sum + fn(5193).MEDIUM_BUTTON_HEIGHT + PX_20 + 170);
-const createStyles = fn(4758);
+const minHeight = 472 - (sum + fn(5225).MEDIUM_BUTTON_HEIGHT + PX_20 + 170);
+const createStyles = fn(4790);
 let closure_16 = createStyles.createStyles(() => {
   const obj = { container: { width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderLeftWidth: 1, borderRightWidth: 1, borderBottomWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, borderBottomLeftRadius: nativeDefault.radii.xxl, borderBottomRightRadius: nativeDefault.radii.xxl, overflow: "hidden" }, bannerClip: { overflow: "hidden" }, footerClip: null, header: null, headerWithFooter: null, headerReplaceMedia: null, headerTitleSection: null, headerHeadingGroup: null, headerHeadingContent: null, headerReplaceMediaCta: null, headerRoundedBottom: null, newPill: null, newPillInline: null, newPillText: null, headerTextBox: null, headerTextBoxWithFooter: null, description: null, footerCta: null };
   const obj2 = { width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderLeftWidth: 1, borderRightWidth: 1, borderBottomWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, borderBottomLeftRadius: nativeDefault.radii.xxl, borderBottomRightRadius: nativeDefault.radii.xxl, overflow: "hidden" };
@@ -90,7 +90,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef15317 };
+    const obj2 = { uri: _modDef15327 };
     cResult[2] = obj2;
     let tmp8 = obj2;
   } else {
@@ -98,7 +98,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[3] !== stateFromStores) {
     const obj3 = { source: tmp8, style: React4.absoluteFillObject, resizeMode: "cover", muted: true, disableFocus: true, paused: stateFromStores, importantForAccessibility: "no-hide-descendants" };
-    const tmp13 = v65535(tmp(8583).VideoComponent, obj3);
+    const tmp13 = v65535(tmp(8615).VideoComponent, obj3);
     cResult[3] = stateFromStores;
     cResult[4] = tmp13;
     let tmp10 = tmp13;
@@ -110,7 +110,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items = [AccessibilityStore];
   const stateFromStores = initialize.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const obj2 = { source: null, style: null, resizeMode: "cover", muted: true, disableFocus: true, paused: null, importantForAccessibility: "no-hide-descendants" };
-  obj2.source = { uri: _modDef15317 };
+  obj2.source = { uri: _modDef15327 };
   obj2.style = React4.absoluteFillObject;
   obj2.paused = stateFromStores;
   return v65535(common_Video.VideoComponent, obj2);
@@ -244,7 +244,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = { variant: "text-sm/medium", color: str, children: null };
   const intl = tmp5(1119).intl;
   obj.children = intl.string(AZGGo1);
-  const tmp7 = v65535(tmp5(4754).Text, obj);
+  const tmp7 = v65535(tmp5(4786).Text, obj);
   const intl2 = tmp5(1119).intl;
   const tmp = closure_16();
   const tmp6 = v65535;
@@ -254,7 +254,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj3 = { style: tmp.description, children: null };
       const items = [tmp7, ];
       const obj4 = { variant: "text-sm/medium", children: formatResult };
-      items[1] = tmp6(tmp5(4754).Text, obj4);
+      items[1] = tmp6(tmp5(4786).Text, obj4);
       obj3.children = items;
       let tmp11 = closure_1_11(hasOwnProperty, obj3);
     }
@@ -263,7 +263,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj5 = { variant: "text-sm/medium", children: null };
   const items1 = [tmp7, " ", formatResult];
   obj5.children = items1;
-  tmp11 = closure_1_11(tmp5(4754).Text, obj5);
+  tmp11 = closure_1_11(tmp5(4786).Text, obj5);
 });
 ReactCompilerGating = fn(558);
 let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
@@ -278,11 +278,11 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
   }
   const tmp4 = closure_16();
   if (cResult[0] !== str) {
-    const bountiesEntryPointButtonVariant = tmp(15337).getBountiesEntryPointButtonVariant(str);
+    const bountiesEntryPointButtonVariant = tmp(15347).getBountiesEntryPointButtonVariant(str);
     cResult[0] = str;
     cResult[1] = bountiesEntryPointButtonVariant;
     let tmp7 = bountiesEntryPointButtonVariant;
-    const tmpResult = tmp(15337);
+    const tmpResult = tmp(15347);
   } else {
     tmp7 = cResult[1];
   }
@@ -419,7 +419,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
           return bounties.some(() => { ... });
         }
       }
-      const obj9 = { uri: _modDef15339, style: null, children: null };
+      const obj9 = { uri: _modDef15349, style: null, children: null };
       const items5 = [tmp4.header, , ];
       if (tmp5) {
         class I {
@@ -526,8 +526,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
   const tmp = closure_16();
   let tmp9Result2 = null != footer;
   let tmp11Result6 = !flag;
-  const bountiesEntryPointButtonVariant = bounties(15337).getBountiesEntryPointButtonVariant(shopCarouselButtonVariant);
-  let obj = bounties(15337);
+  const bountiesEntryPointButtonVariant = bounties(15347).getBountiesEntryPointButtonVariant(shopCarouselButtonVariant);
+  let obj = bounties(15347);
   const items = [AdContentSeenStore];
   const items1 = [bounties];
   let stateFromStores = bounties(504).useStateFromStores(items, () => bounties.some((id) => !closure_1_7.hasSeen(bounties(closure_1_2[19]).AdCreativeType.BOUNTY, id.id)), items1);
@@ -587,7 +587,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
     obj6.children = items5;
     let tmp9Result = tmp9(tmp10, obj6);
   } else {
-    const obj15 = { uri: _modDef15339, style: null, children: null };
+    const obj15 = { uri: _modDef15349, style: null, children: null };
     const items7 = [tmp.header, , ];
     let headerWithFooter = tmp9Result2;
     if (tmp9Result2) {
@@ -657,7 +657,7 @@ let result = size.fileFinishedImporting("modules/quests/native/BountiesCtaHeader
 export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isEmptyOrCompleted) => {
   _require = isEmptyOrCompleted;
   const cResult = require("c").c(5);
-  const tmp4 = containerRef(15340)();
+  const tmp4 = containerRef(15350)();
   containerRef = tmp4.containerRef;
   const isInView = tmp4.isInView;
   isEmptyOrCompleted = isEmptyOrCompleted.isEmptyOrCompleted;
@@ -666,7 +666,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isEmpt
     tmp5 = isEmptyOrCompleted;
   }
   if (!tmp5) {
-    const bountyCarouselEmptyStateAnalytics = tmp(11902).useBountyCarouselEmptyStateAnalytics(null);
+    const bountyCarouselEmptyStateAnalytics = tmp(11938).useBountyCarouselEmptyStateAnalytics(null);
     if (cResult[0] === containerRef) {
       if (cResult[1] === tmp5) {
         if (cResult[2] === isInView) {
@@ -676,7 +676,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isEmpt
         }
       }
     }
-    let obj2 = { theme: tmp(15320).ThemeTypes.DARK, children: null };
+    let obj2 = { theme: tmp(15330).ThemeTypes.DARK, children: null };
     if (tmp5) {
       const obj3 = {};
       let merged = Object.assign(isEmptyOrCompleted);
@@ -685,11 +685,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isEmpt
     } else {
       const obj4 = {
         adContentId,
-        adCreativeType: tmp(5670).AdCreativeType.BOUNTY,
-        questContent: tmp(5666).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE,
+        adCreativeType: tmp(5702).AdCreativeType.BOUNTY,
+        questContent: tmp(5698).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE,
         questContentPosition: 0,
         overrideVisibility: isInView,
-        sourceQuestContent: tmp(5666).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE,
+        sourceQuestContent: tmp(5698).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE,
         children() {
               const obj = {};
               const merged = Object.assign(closure_0);
@@ -697,16 +697,16 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isEmpt
               return v65535(closure_20, obj);
             }
       };
-      tmp10Result = tmp10(tmp(11906).QuestContentImpressionTrackerNative, obj4);
+      tmp10Result = tmp10(tmp(11942).QuestContentImpressionTrackerNative, obj4);
     }
     obj2.children = tmp10Result;
-    obj2 = tmp10(tmp(4471).ThemeContextProvider, obj2);
+    obj2 = tmp10(tmp(4503).ThemeContextProvider, obj2);
     cResult[0] = containerRef;
     cResult[1] = tmp5;
     cResult[2] = isInView;
     cResult[3] = isEmptyOrCompleted;
     cResult[4] = obj2;
-    const tmpResult = tmp(11902);
+    const tmpResult = tmp(11938);
   } else if (0 === isEmptyOrCompleted.bounties.length) {
     let COMPLETED = constants.EMPTY;
   } else {
@@ -714,7 +714,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isEmpt
   }
 }) : ((isEmptyOrCompleted) => {
   _require = isEmptyOrCompleted;
-  const tmp2 = containerRef(15340)();
+  const tmp2 = containerRef(15350)();
   containerRef = tmp2.containerRef;
   isEmptyOrCompleted = isEmptyOrCompleted.isEmptyOrCompleted;
   let tmp3 = undefined !== isEmptyOrCompleted;
@@ -732,11 +732,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isEmpt
     } else {
       const obj4 = {
         adContentId,
-        adCreativeType: tmp7(5670).AdCreativeType.BOUNTY,
-        questContent: tmp7(5666).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE,
+        adCreativeType: tmp7(5702).AdCreativeType.BOUNTY,
+        questContent: tmp7(5698).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE,
         questContentPosition: 0,
         overrideVisibility: tmp2.isInView,
-        sourceQuestContent: tmp7(5666).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE,
+        sourceQuestContent: tmp7(5698).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE,
         children() {
               const obj = {};
               const merged = Object.assign(closure_0);
@@ -744,7 +744,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isEmpt
               return v65535(closure_20, obj);
             }
       };
-      tmp9Result = tmp9(tmp7(11906).QuestContentImpressionTrackerNative, obj4);
+      tmp9Result = tmp9(tmp7(11942).QuestContentImpressionTrackerNative, obj4);
     }
     obj2.children = tmp9Result;
     return closure_10(require("native").ThemeContextProvider, obj2);

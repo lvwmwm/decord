@@ -1,12 +1,12 @@
-// Module ID: 9295
-// Function ID: 9296
+// Module ID: 9327
+// Function ID: 9328
 // Name: UserProfileApplicationWidgetBottomProgressLayout
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 9202, 9290, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 9234, 9322, 4786, 2]
 
-// Module 9295 (UserProfileApplicationWidgetBottomProgressLayout)
+// Module 9327 (UserProfileApplicationWidgetBottomProgressLayout)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9202 */;
+import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9234 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -14,7 +14,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: c2, View: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { root: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 }, image: null, content: null, progressContainer: null, progress: null, textContent: null, textLeft: null, progressText: null };
 let size = { width: 48, height: 48, borderRadius: nativeDefault.radii.sm, overflow: "hidden", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 obj2.image = size;
@@ -164,15 +164,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
         }
-        const items3 = [tmp(9202).ResolvedValueType.NUMBER];
+        const items3 = [tmp(9234).ResolvedValueType.NUMBER];
         let iter = resolveFieldValue(current, items3);
         let max1;
         if (progress != null) {
           max1 = progress.fields.max;
         }
-        const items4 = [tmp(9202).ResolvedValueType.NUMBER];
+        const items4 = [tmp(9234).ResolvedValueType.NUMBER];
         let iter2 = resolveFieldValue(max1, items4);
-        tmp(9202);
+        tmp(9234);
         const root = tmp4.root;
         if (cResult[35] === tmp6) {
           if (cResult[36] === tmp4.image) {
@@ -231,13 +231,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                               let iter2Result = iter2(iter.value, "/", iter);
                             } else {
                               const _HermesInternal2 = HermesInternal;
-                              iter2Result = "" + tmp(9202).decimalToClampedPercentage(iter.value) + "%";
-                              const tmpResult4 = tmp(9202);
+                              iter2Result = "" + tmp(9234).decimalToClampedPercentage(iter.value) + "%";
+                              const tmpResult4 = tmp(9234);
                             }
                             obj7.children = iter2Result;
-                            tmp39(tmp(4754).Text, obj7);
+                            tmp39(tmp(4786).Text, obj7);
                           } else {
-                            const tmp39Result6 = tmp39(tmp(9290).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
+                            const tmp39Result6 = tmp39(tmp(9322).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
                             cResult[9] = tmp10.status;
                             cResult[10] = tmp10.text;
                             cResult[11] = tmp6;
@@ -294,9 +294,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   }
                   if ("value" === tmp10.status) {
                     const obj9 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 2, children: tmp10.text };
-                    let tmp39Result7 = tmp39(tmp(4754).Text, obj9);
+                    let tmp39Result7 = tmp39(tmp(4786).Text, obj9);
                   } else {
-                    tmp39Result7 = tmp39(tmp(9290).TextSkeleton, { variant: "text-xs/medium" });
+                    tmp39Result7 = tmp39(tmp(9322).TextSkeleton, { variant: "text-xs/medium" });
                   }
                   cResult[46] = tmp10.status;
                   cResult[47] = tmp10.text;
@@ -305,9 +305,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
               if ("value" === tmp8.status) {
                 const obj10 = { variant: "heading-sm/medium", lineClamp: 2, children: tmp8.text };
-                let tmp39Result8 = tmp39(tmp(4754).Text, obj10);
+                let tmp39Result8 = tmp39(tmp(4786).Text, obj10);
               } else {
-                tmp39Result8 = tmp39(tmp(9290).TextSkeleton, { variant: "heading-sm/medium" });
+                tmp39Result8 = tmp39(tmp(9322).TextSkeleton, { variant: "heading-sm/medium" });
               }
               cResult[43] = tmp8.status;
               cResult[44] = tmp8.text;
@@ -331,25 +331,25 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp30 = React4(React2, obj12);
         } else {
           const obj14 = { style: tmp4.image };
-          tmp30 = React4(tmp(9290).ImageSkeleton, obj14);
+          tmp30 = React4(tmp(9322).ImageSkeleton, obj14);
         }
         cResult[35] = tmp6;
         cResult[36] = tmp4.image;
         cResult[37] = tmp30;
       }
-      const singleStringOrSkeleton = tmp(9202).resolveSingleStringOrSkeleton(objective, "description", resolveFieldValue);
+      const singleStringOrSkeleton = tmp(9234).resolveSingleStringOrSkeleton(objective, "description", resolveFieldValue);
       cResult[6] = objective;
       cResult[7] = resolveFieldValue;
       cResult[8] = singleStringOrSkeleton;
       tmp10 = singleStringOrSkeleton;
-      const tmpResult5 = tmp(9202);
+      const tmpResult5 = tmp(9234);
     }
-    const singleStringOrSkeleton1 = tmp(9202).resolveSingleStringOrSkeleton(objective, "name", resolveFieldValue);
+    const singleStringOrSkeleton1 = tmp(9234).resolveSingleStringOrSkeleton(objective, "name", resolveFieldValue);
     cResult[3] = objective;
     cResult[4] = resolveFieldValue;
     cResult[5] = singleStringOrSkeleton1;
     tmp8 = singleStringOrSkeleton1;
-    const tmpResult6 = tmp(9202);
+    const tmpResult6 = tmp(9234);
   }
   const items7 = [resolvedValuesFromUserApplicationIdentityProfile.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items7);
@@ -393,7 +393,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp15 = React4;
   } else {
     const obj6 = { style: tmp.image };
-    tmp14 = React4(tmp3(9290).ImageSkeleton, obj6);
+    tmp14 = React4(tmp3(9322).ImageSkeleton, obj6);
     tmp15 = React4;
   }
   const items3 = [tmp14, ];
@@ -428,16 +428,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj12 = { style: tmp.textLeft, children: null };
   if ("value" === singleStringOrSkeleton.status) {
     const obj13 = { variant: "heading-sm/medium", lineClamp: 2, children: singleStringOrSkeleton.text };
-    let tmp15Result = tmp15(tmp3(4754).Text, obj13);
+    let tmp15Result = tmp15(tmp3(4786).Text, obj13);
   } else {
-    tmp15Result = tmp15(tmp3(9290).TextSkeleton, { variant: "heading-sm/medium" });
+    tmp15Result = tmp15(tmp3(9322).TextSkeleton, { variant: "heading-sm/medium" });
   }
   const items6 = [tmp15Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj14 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 2, children: singleStringOrSkeleton1.text };
-    let tmp15Result3 = tmp15(tmp3(4754).Text, obj14);
+    let tmp15Result3 = tmp15(tmp3(4786).Text, obj14);
   } else {
-    tmp15Result3 = tmp15(tmp3(9290).TextSkeleton, { variant: "text-xs/medium" });
+    tmp15Result3 = tmp15(tmp3(9322).TextSkeleton, { variant: "text-xs/medium" });
   }
   items6[1] = tmp15Result3;
   obj12.children = items6;
@@ -451,13 +451,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let iter2Result = iter2(iter.value, "/", iter);
     } else {
       const _HermesInternal = HermesInternal;
-      iter2Result = "" + tmp3(9202).decimalToClampedPercentage(iter.value) + "%";
-      const tmp3Result2 = tmp3(9202);
+      iter2Result = "" + tmp3(9234).decimalToClampedPercentage(iter.value) + "%";
+      const tmp3Result2 = tmp3(9234);
     }
     obj15.children = iter2Result;
-    tmp15(tmp3(4754).Text, obj15);
+    tmp15(tmp3(4786).Text, obj15);
   } else {
-    items7[1] = tmp15(tmp3(9290).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
+    items7[1] = tmp15(tmp3(9322).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
     obj11.children = items7;
     items5[1] = tmp11(tmp12, obj11);
     obj7.children = items5;

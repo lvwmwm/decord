@@ -1,93 +1,29 @@
-// Module ID: 10469
-// Function ID: 10470
+// Module ID: 10508
+// Function ID: 10509
 // Name: age_gate/AgeGateUtils
-// Dependencies: [2067, 4399, 1376, 1078, 1368, 4961, 10470, 1984, 9408, 2]
-// Exports: handleNSFWGuildInvite, isNSFWInvite, shouldNSFWGateGuild
+// Dependencies: [2067, 4431, 1376, 1078, 1368, 9440, 2]
+// Exports: shouldNSFWGateGuild
 
-// Module 10469 (age_gate/AgeGateUtils)
+// Module 10508 (age_gate/AgeGateUtils)
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 import UserStore from "UserStore" /* 1376 */;
 
-const asyncRequireImpl = tmp(1984);
-const AgeRestrictedContentSettingsUtils = tmp(9408);
+const AgeRestrictedContentSettingsUtils = tmp(9440);
 require = fn;
 const Constants = fn(1078);
-const GuildNSFWContentLevel = Constants.GuildNSFWContentLevel;
-const Permissions = Constants.Permissions;
-const items = [, ];
-({ EXPLICIT: arr[0], AGE_RESTRICTED: arr[1] } = GuildNSFWContentLevel);
-const set = new Set(items);
+({ GuildNSFWContentLevel: hasOwnProperty, Permissions: metroRequire } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/age_gate/native/AgeGateUtils.tsx");
 
-export const isNSFWInvite = function isNSFWInvite(guild) {
-  let nsfw_level;
-  if (guild != null) {
-    guild = guild.guild;
-    if (guild != null) {
-      nsfw_level = guild.nsfw_level;
-    }
-  }
-  if (nsfw_level == null) {
-    nsfw_level = GuildNSFWContentLevel.DEFAULT;
-  }
-  return set.has(nsfw_level);
-};
-export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite) {
-  if (obj.isIOS()) {
-    let nsfw_level;
-    if (invite != null) {
-      guild = invite.guild;
-      if (guild != null) {
-        nsfw_level = guild.nsfw_level;
-      }
-    }
-    if (nsfw_level == null) {
-      nsfw_level = GuildNSFWContentLevel.DEFAULT;
-    }
-    const hasItem = set.has(nsfw_level);
-    if (invite != null) {
-      const guild2 = invite.guild;
-      if (guild2 != null) {
-        const id = guild2.id;
-      }
-    }
-    let tmp10 = !hasItem;
-    if (hasItem) {
-      tmp10 = null != GuildStore.getGuild(id);
-    }
-    let flag2 = !tmp10;
-    if (!tmp10) {
-      let id1;
-      const obj2 = ModalActionCreatorsDefault;
-      if (invite != null) {
-        const guild3 = invite.guild;
-        if (guild3 != null) {
-          id1 = guild3.id;
-        }
-      }
-      const obj3 = { guildId: id1 };
-      obj2.pushLazy(asyncRequireImpl(10470, tmp2.paths), obj3);
-      flag2 = true;
-      const tmp12 = asyncRequireImpl(10470, tmp2.paths);
-    }
-    return flag2;
-  } else {
-    return false;
-  }
-  obj = PlatformUtils;
-  tmp2 = dependencyMap;
-};
 export const shouldNSFWGateGuild = function shouldNSFWGateGuild(guildId) {
   if (obj.isIOS()) {
     guild = GuildStore.getGuild(guildId);
     const currentUser = UserStore.getCurrentUser();
     if (null != guild) {
       if (null != currentUser) {
-        const tmp9 = PermissionStore.can(Permissions.ADMINISTRATOR, guild) || PermissionStore.can(Permissions.MANAGE_GUILD, guild) || PermissionStore.can(Permissions.KICK_MEMBERS, guild) || PermissionStore.can(Permissions.BAN_MEMBERS, guild);
+        const tmp9 = PermissionStore.can(constants2.ADMINISTRATOR, guild) || PermissionStore.can(constants2.MANAGE_GUILD, guild) || PermissionStore.can(constants2.KICK_MEMBERS, guild) || PermissionStore.can(constants2.BAN_MEMBERS, guild);
         let nsfwAllowed = currentUser.nsfwAllowed;
         if (nsfwAllowed) {
           nsfwAllowed = AgeRestrictedContentSettingsUtils.getViewNsfwGuildsOrDefault();
@@ -95,10 +31,10 @@ export const shouldNSFWGateGuild = function shouldNSFWGateGuild(guildId) {
         }
         let tmp11 = !tmp9;
         if (!tmp9) {
-          let tmp12 = guild.nsfwLevel === GuildNSFWContentLevel.EXPLICIT;
+          let tmp12 = guild.nsfwLevel === constants.EXPLICIT;
           if (!tmp12) {
-            tmp12 = guild.nsfwLevel === GuildNSFWContentLevel.AGE_RESTRICTED && !nsfwAllowed;
-            const tmp13 = guild.nsfwLevel === GuildNSFWContentLevel.AGE_RESTRICTED && !nsfwAllowed;
+            tmp12 = guild.nsfwLevel === constants.AGE_RESTRICTED && !nsfwAllowed;
+            const tmp13 = guild.nsfwLevel === constants.AGE_RESTRICTED && !nsfwAllowed;
           }
           tmp11 = tmp12;
         }

@@ -1,29 +1,29 @@
-// Module ID: 18224
-// Function ID: 18225
+// Module ID: 18234
+// Function ID: 18235
 // Name: AllChannelsSwitch
-// Dependencies: [19, 17, 15487, 1078, 21, 4758, 580, 5743, 558, 568, 4479, 1181, 10017, 1119, 18225, 18226, 2]
+// Dependencies: [19, 17, 15497, 1078, 21, 4790, 580, 5775, 558, 568, 4511, 1181, 10056, 1119, 18235, 18236, 2]
 
-// Module 18224 (AllChannelsSwitch)
+// Module 18234 (AllChannelsSwitch)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4479 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 10017 */;
-import _modDef18225 from "module_18225" /* 18225 */;
-import _modDef18226 from "module_18226" /* 18226 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4511 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 10056 */;
+import _modDef18235 from "module_18235" /* 18235 */;
+import _modDef18236 from "module_18236" /* 18236 */;
 import noop from "module_19" /* 19 */;
-import TextStyles_mod from "TextStyles" /* 5743 */;
+import TextStyles_mod from "TextStyles" /* 5775 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const AllChannelAccessOptions = fn(15487).AllChannelAccessOptions;
+const AllChannelAccessOptions = fn(15497).AllChannelAccessOptions;
 const Fonts = fn(1078).Fonts;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm }, row: { alignSelf: "stretch", alignItems: "center", flexDirection: "row", justifyContent: "flex-start", padding: 16 }, rowLabel: null, rowLabelSelected: null, rowIndicator: null, separator: null };
 let obj4 = {};
 let TextStyles = TextStyles_mod;
@@ -48,7 +48,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[1] === selected) {
       let tmp6 = cResult[2];
     }
-    const radioA11yNative = tmp(4479).useRadioA11yNative(tmp6);
+    const radioA11yNative = tmp(4511).useRadioA11yNative(tmp6);
     ({ accessibilityRole, accessibilityState } = radioA11yNative);
     let tmp8 = selected;
     if (!selected) {
@@ -131,7 +131,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[6] = rowLabelSelected;
     cResult[7] = items1;
     tmp12 = items1;
-    const tmpResult = tmp(4479);
+    const tmpResult = tmp(4511);
   }
   const obj6 = { selected, disabled: undefined !== disabled && disabled };
   cResult[0] = undefined !== disabled && disabled;
@@ -272,7 +272,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp32 = tmp35;
           }
         }
-        const obj5 = { icon: _modDef18226, label: tmp23, selected: channelAccessFormat === tmp11.ALL_CHANNELS_ACCESS, onPress: tmp25, disabled: tmp4 };
+        const obj5 = { icon: _modDef18236, label: tmp23, selected: channelAccessFormat === tmp11.ALL_CHANNELS_ACCESS, onPress: tmp25, disabled: tmp4 };
         const tmp31 = closure_5(closure_8, obj5);
         cResult[17] = tmp4;
         cResult[18] = channelAccessFormat === tmp11.ALL_CHANNELS_ACCESS;
@@ -281,7 +281,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp27 = tmp31;
       }
     }
-    const obj6 = { icon: _modDef18225, label: tmp9, selected: channelAccessFormat === AllChannelAccessOptions.SOME_CHANNELS_ACCESS, onPress: tmp12, disabled: tmp4 };
+    const obj6 = { icon: _modDef18235, label: tmp9, selected: channelAccessFormat === AllChannelAccessOptions.SOME_CHANNELS_ACCESS, onPress: tmp12, disabled: tmp4 };
     const tmp18 = closure_5(closure_8, obj6);
     cResult[8] = tmp4;
     cResult[9] = channelAccessFormat === AllChannelAccessOptions.SOME_CHANNELS_ACCESS;
@@ -304,7 +304,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = { style: null, accessibilityRole: "radiogroup", accessibilityState: { disabled }, children: null };
   const items = [tmp.container, style.style];
   obj.style = items;
-  const obj2 = { icon: _modDef18225, label: null, selected: null, onPress: null, disabled: null };
+  const obj2 = { icon: _modDef18235, label: null, selected: null, onPress: null, disabled: null };
   const intl = util.intl;
   obj2.label = intl.string(util.t["vs2T+B"]);
   obj2.selected = channelAccessFormat === AllChannelAccessOptions.SOME_CHANNELS_ACCESS;
@@ -313,7 +313,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   };
   obj2.disabled = disabled;
   const items1 = [closure_5(closure_8, obj2), closure_5(View, { style: tmp.separator }), ];
-  const obj4 = { icon: _modDef18226, label: null, selected: null, onPress: null, disabled: null };
+  const obj4 = { icon: _modDef18236, label: null, selected: null, onPress: null, disabled: null };
   const intl2 = util.intl;
   obj4.label = intl2.string(util.t.l4Tr7X);
   obj4.selected = channelAccessFormat === AllChannelAccessOptions.ALL_CHANNELS_ACCESS;

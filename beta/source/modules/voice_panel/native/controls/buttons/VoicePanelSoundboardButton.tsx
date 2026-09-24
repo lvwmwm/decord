@@ -1,14 +1,14 @@
-// Module ID: 17622
-// Function ID: 17623
+// Module ID: 17632
+// Function ID: 17633
 // Name: VoicePanelSoundboardButton
-// Dependencies: [19, 21, 4758, 580, 558, 568, 12419, 17608, 17623, 17609, 1119, 5804, 12691, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 12455, 17618, 17633, 17619, 1119, 5836, 12727, 2]
 
-// Module 17622 (VoicePanelSoundboardButton)
+// Module 17632 (VoicePanelSoundboardButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12419 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 17608 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 17623 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12455 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 17618 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 17633 */;
 import noop from "module_19" /* 19 */;
 
 const useSoundboardConfigDefault = useSoundboardConfig;
@@ -16,7 +16,7 @@ const useSoundboardConfigDefault = useSoundboardConfig;
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { circle: null, iconContainer: null };
 let size = { width: "100%", height: "100%", borderRadius: nativeDefault.radii.round };
 obj2.circle = size;
@@ -67,15 +67,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
     const obj4 = { backgroundColor };
     items[1] = obj4;
     obj3.style = items;
-    const items1 = [React4(tmp4(5804), obj3), ];
+    const items1 = [React4(tmp4(5836), obj3), ];
     const obj5 = { style: tmp5.iconContainer, children: null };
-    const tmp4Result = tmp4(17609);
+    const tmp4Result = tmp4(17619);
     const obj6 = { color };
-    obj5.children = React4(tmp(12691).SoundboardIcon, obj6);
-    items1[1] = React4(tmp4(5804), obj5);
+    obj5.children = React4(tmp(12727).SoundboardIcon, obj6);
+    items1[1] = React4(tmp4(5836), obj5);
     element.children = items1;
     tmp10 = hasOwnProperty(tmp4Result, element);
-    const tmp4Result2 = tmp4(5804);
+    const tmp4Result2 = tmp4(5836);
   }
   cResult[0] = disabled;
   cResult[1] = disabledAccessibilityHint;
@@ -108,15 +108,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
     const obj3 = { backgroundColor: voicePanelButtonStyles.iconBg.backgroundColor };
     items[1] = obj3;
     obj2.style = items;
-    const items1 = [React4(tmp(5804), obj2), ];
+    const items1 = [React4(tmp(5836), obj2), ];
     const obj4 = { style: tmp3.iconContainer, children: null };
-    const tmpResult = tmp(17609);
+    const tmpResult = tmp(17619);
     const obj5 = { color };
-    obj4.children = React4(tmp4(12691).SoundboardIcon, obj5);
-    items1[1] = React4(tmp(5804), obj4);
+    obj4.children = React4(tmp4(12727).SoundboardIcon, obj5);
+    items1[1] = React4(tmp(5836), obj4);
     element.children = items1;
     tmp8 = hasOwnProperty(tmpResult, element);
-    const tmpResult2 = tmp(5804);
+    const tmpResult2 = tmp(5836);
   }
   return tmp8;
 });

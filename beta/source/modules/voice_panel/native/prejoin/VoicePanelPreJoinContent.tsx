@@ -1,43 +1,43 @@
-// Module ID: 17583
-// Function ID: 17584
+// Module ID: 17593
+// Function ID: 17594
 // Name: VoicePanelPreJoinContent
-// Dependencies: [109, 5, 32, 19, 17, 2044, 4775, 14004, 4780, 502, 2045, 1996, 4399, 4776, 1376, 4777, 4782, 12420, 12423, 1078, 14009, 4783, 21, 4758, 12424, 580, 558, 568, 12419, 504, 4968, 8669, 5630, 4900, 4810, 1119, 4754, 13334, 5804, 7415, 4389, 17570, 1482, 4497, 9632, 9631, 9735, 17568, 5188, 5341, 1253, 9046, 7176, 9916, 4910, 5822, 11293, 11554, 7409, 7429, 1245, 17535, 17584, 5187, 4471, 7320, 17471, 17586, 2]
+// Dependencies: [109, 5, 32, 19, 17, 2044, 4807, 14040, 4812, 502, 2045, 1996, 4431, 4808, 1376, 4809, 4814, 12456, 12459, 1078, 14045, 4815, 21, 4790, 12460, 580, 558, 568, 12455, 504, 5000, 8701, 5662, 4932, 4842, 1119, 4786, 13370, 5836, 7447, 4421, 17580, 1482, 4529, 9664, 9663, 9767, 17578, 5220, 5373, 1253, 9078, 7208, 9948, 4942, 5854, 11329, 11590, 7441, 7461, 1245, 17545, 17594, 5219, 4503, 7352, 17481, 17596, 2]
 
-// Module 17583 (VoicePanelPreJoinContent)
+// Module 17593 (VoicePanelPreJoinContent)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
-import native from "native" /* 4471 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4810 */;
-import StreamActionCreators from "StreamActionCreators" /* 4900 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
-import spring from "spring" /* 5187 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5630 */;
-import NativeViewDefault from "NativeView" /* 5804 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8669 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9046 */;
-import FormComponents from "FormComponents" /* 9916 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11293 */;
+import native from "native" /* 4503 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4842 */;
+import StreamActionCreators from "StreamActionCreators" /* 4932 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
+import spring from "spring" /* 5219 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5662 */;
+import NativeViewDefault from "NativeView" /* 5836 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8701 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9078 */;
+import FormComponents from "FormComponents" /* 9948 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11329 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import GameConsoleStore from "GameConsoleStore" /* 4775 */;
-import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 14004 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
+import GameConsoleStore from "GameConsoleStore" /* 4807 */;
+import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 14040 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4812 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
-import SessionsStore from "SessionsStore" /* 4776 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
+import SessionsStore from "SessionsStore" /* 4808 */;
 import UserStore from "UserStore" /* 1376 */;
-import VoiceStateStore from "VoiceStateStore" /* 4777 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4782 */;
+import VoiceStateStore from "VoiceStateStore" /* 4809 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4814 */;
 
 require = fn;
 function renderItem(arg0, arg1, transitionState, transitionCleanUp) {
@@ -46,17 +46,17 @@ function renderItem(arg0, arg1, transitionState, transitionCleanUp) {
 }
 let closure_3 = ["transitionState", "transitionCleanUp"];
 const StyleSheet = fn(17).StyleSheet;
-const MODE_CHANGE_PHYSICS = fn(12420).MODE_CHANGE_PHYSICS;
-const EDGE_GUTTER = fn(12423).EDGE_GUTTER;
+const MODE_CHANGE_PHYSICS = fn(12456).MODE_CHANGE_PHYSICS;
+const EDGE_GUTTER = fn(12459).EDGE_GUTTER;
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_22, AnalyticsSections: closure_23, Permissions: closure_24 } = Constants);
-const constants4 = fn(14009).VoiceChannelWarningSurfaces;
-const Features = fn(4783).Features;
+const constants4 = fn(14045).VoiceChannelWarningSurfaces;
+const Features = fn(4815).Features;
 const jsxProd = fn(21);
 ({ jsx: closure_27, jsxs: closure_28, Fragment: closure_29 } = jsxProd);
-const createStyles = fn(4758);
-let obj = { contentWrapper: { paddingTop: EDGE_GUTTER + fn(12424).BASE_VOICE_PANEL_HEADER_HEIGHT + EDGE_GUTTER, gap: 24, paddingBottom: 16 }, channelInfoWrapper: { paddingHorizontal: 16 }, subheading: { textAlign: "center", paddingTop: 16, paddingBottom: 16 }, previewImageWrapper: null, previewImage: null, activityInfoWrapper: null, activityInfoHeader: null, joinButtonWrapper: null, optInChannelsContainer: null, blockedMemberWarning: null, consolePreJoinPadding: null };
-let obj3 = { paddingTop: EDGE_GUTTER + fn(12424).BASE_VOICE_PANEL_HEADER_HEIGHT + EDGE_GUTTER, gap: 24, paddingBottom: 16 };
+const createStyles = fn(4790);
+let obj = { contentWrapper: { paddingTop: EDGE_GUTTER + fn(12460).BASE_VOICE_PANEL_HEADER_HEIGHT + EDGE_GUTTER, gap: 24, paddingBottom: 16 }, channelInfoWrapper: { paddingHorizontal: 16 }, subheading: { textAlign: "center", paddingTop: 16, paddingBottom: 16 }, previewImageWrapper: null, previewImage: null, activityInfoWrapper: null, activityInfoHeader: null, joinButtonWrapper: null, optInChannelsContainer: null, blockedMemberWarning: null, consolePreJoinPadding: null };
+let obj3 = { paddingTop: EDGE_GUTTER + fn(12460).BASE_VOICE_PANEL_HEADER_HEIGHT + EDGE_GUTTER, gap: 24, paddingBottom: 16 };
 obj.previewImageWrapper = { position: "relative", width: "100%", aspectRatio: 1.7777777777777777, borderRadius: nativeDefault.radii.lg, overflow: "hidden", justifyContent: "center", backgroundColor: nativeDefault.colors.BLACK };
 let obj5 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -306,7 +306,7 @@ let closure_32 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((hasM
     const obj3 = { variant: "text-sm/medium", color: "text-default", style: tmp4.subheading, children: null };
     const intl = tmp(1119).intl;
     obj3.children = intl.string(tmp(1119).t.sS2J0G);
-    obj2.children = closure_1_27(tmp(4754).Text, obj3);
+    obj2.children = closure_1_27(tmp(4786).Text, obj3);
     tmp6 = closure_1_27(NativeViewDefault, obj2);
   }
   cResult[0] = hasMembers;
@@ -476,12 +476,12 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                   if (null != dependencyMap) {
                                     const obj6 = { channelId, applicationId: tmp9.id, launchId: v3.launchId, inputApplication: tmp9, analyticsLocations: num3 };
                                     v3 = num3;
-                                    const obj7 = { value: v3(9631).maybeJoinEmbeddedActivity(obj6), done: false };
+                                    const obj7 = { value: v3(9663).maybeJoinEmbeddedActivity(obj6), done: false };
                                     return obj7;
                                   }
                                 } else {
-                                  const voiceChannel = analyticsLocations(5630).selectVoiceChannel(channelId);
-                                  const obj2 = analyticsLocations(5630);
+                                  const voiceChannel = analyticsLocations(5662).selectVoiceChannel(channelId);
+                                  const obj2 = analyticsLocations(5662);
                                 }
                               } else {
                                 num3 = 1;
@@ -560,12 +560,12 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                     if (null != dependencyMap) {
                                       const obj6 = { channelId, applicationId: tmp9.id, launchId: v3.launchId, inputApplication: tmp9, analyticsLocations: num3 };
                                       v3 = num3;
-                                      const obj7 = { value: v3(9631).maybeJoinEmbeddedActivity(obj6), done: false };
+                                      const obj7 = { value: v3(9663).maybeJoinEmbeddedActivity(obj6), done: false };
                                       return obj7;
                                     }
                                   } else {
-                                    const voiceChannel = analyticsLocations(5630).selectVoiceChannel(channelId);
-                                    const obj2 = analyticsLocations(5630);
+                                    const voiceChannel = analyticsLocations(5662).selectVoiceChannel(channelId);
+                                    const obj2 = analyticsLocations(5662);
                                   }
                                 } else {
                                   num3 = 1;
@@ -646,12 +646,12 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                       if (null != dependencyMap) {
                                         const obj6 = { channelId, applicationId: tmp9.id, launchId: v3.launchId, inputApplication: tmp9, analyticsLocations: num3 };
                                         v3 = num3;
-                                        const obj7 = { value: v3(9631).maybeJoinEmbeddedActivity(obj6), done: false };
+                                        const obj7 = { value: v3(9663).maybeJoinEmbeddedActivity(obj6), done: false };
                                         return obj7;
                                       }
                                     } else {
-                                      const voiceChannel = analyticsLocations(5630).selectVoiceChannel(channelId);
-                                      const obj2 = analyticsLocations(5630);
+                                      const voiceChannel = analyticsLocations(5662).selectVoiceChannel(channelId);
+                                      const obj2 = analyticsLocations(5662);
                                     }
                                   } else {
                                     num3 = 1;
@@ -727,12 +727,12 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                       if (null != dependencyMap) {
                                         const obj6 = { channelId, applicationId: tmp9.id, launchId: v3.launchId, inputApplication: tmp9, analyticsLocations: num3 };
                                         v3 = num3;
-                                        const obj7 = { value: v3(9631).maybeJoinEmbeddedActivity(obj6), done: false };
+                                        const obj7 = { value: v3(9663).maybeJoinEmbeddedActivity(obj6), done: false };
                                         return obj7;
                                       }
                                     } else {
-                                      const voiceChannel = analyticsLocations(5630).selectVoiceChannel(channelId);
-                                      const obj2 = analyticsLocations(5630);
+                                      const voiceChannel = analyticsLocations(5662).selectVoiceChannel(channelId);
+                                      const obj2 = analyticsLocations(5662);
                                     }
                                   } else {
                                     num3 = 1;
@@ -805,12 +805,12 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                       if (null != dependencyMap) {
                                         const obj6 = { channelId, applicationId: tmp9.id, launchId: v3.launchId, inputApplication: tmp9, analyticsLocations: num3 };
                                         v3 = num3;
-                                        const obj7 = { value: v3(9631).maybeJoinEmbeddedActivity(obj6), done: false };
+                                        const obj7 = { value: v3(9663).maybeJoinEmbeddedActivity(obj6), done: false };
                                         return obj7;
                                       }
                                     } else {
-                                      const voiceChannel = analyticsLocations(5630).selectVoiceChannel(channelId);
-                                      const obj2 = analyticsLocations(5630);
+                                      const voiceChannel = analyticsLocations(5662).selectVoiceChannel(channelId);
+                                      const obj2 = analyticsLocations(5662);
                                     }
                                   } else {
                                     num3 = 1;
@@ -907,12 +907,12 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                                 if (null != dependencyMap) {
                                                   const obj6 = { channelId, applicationId: tmp9.id, launchId: v3.launchId, inputApplication: tmp9, analyticsLocations: num3 };
                                                   v3 = num3;
-                                                  const obj7 = { value: v3(9631).maybeJoinEmbeddedActivity(obj6), done: false };
+                                                  const obj7 = { value: v3(9663).maybeJoinEmbeddedActivity(obj6), done: false };
                                                   return obj7;
                                                 }
                                               } else {
-                                                const voiceChannel = analyticsLocations(5630).selectVoiceChannel(channelId);
-                                                const obj2 = analyticsLocations(5630);
+                                                const voiceChannel = analyticsLocations(5662).selectVoiceChannel(channelId);
+                                                const obj2 = analyticsLocations(5662);
                                               }
                                             } else {
                                               num3 = 1;
@@ -991,12 +991,12 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                           if (null != dependencyMap) {
                                             const obj6 = { channelId, applicationId: tmp9.id, launchId: v3.launchId, inputApplication: tmp9, analyticsLocations: num3 };
                                             v3 = num3;
-                                            const obj7 = { value: v3(9631).maybeJoinEmbeddedActivity(obj6), done: false };
+                                            const obj7 = { value: v3(9663).maybeJoinEmbeddedActivity(obj6), done: false };
                                             return obj7;
                                           }
                                         } else {
-                                          const voiceChannel = analyticsLocations(5630).selectVoiceChannel(channelId);
-                                          const obj2 = analyticsLocations(5630);
+                                          const voiceChannel = analyticsLocations(5662).selectVoiceChannel(channelId);
+                                          const obj2 = analyticsLocations(5662);
                                         }
                                       } else {
                                         num3 = 1;
@@ -1075,12 +1075,12 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                         if (null != dependencyMap) {
                                           const obj6 = { channelId, applicationId: tmp9.id, launchId: v3.launchId, inputApplication: tmp9, analyticsLocations: num3 };
                                           v3 = num3;
-                                          const obj7 = { value: v3(9631).maybeJoinEmbeddedActivity(obj6), done: false };
+                                          const obj7 = { value: v3(9663).maybeJoinEmbeddedActivity(obj6), done: false };
                                           return obj7;
                                         }
                                       } else {
-                                        const voiceChannel = analyticsLocations(5630).selectVoiceChannel(channelId);
-                                        const obj2 = analyticsLocations(5630);
+                                        const voiceChannel = analyticsLocations(5662).selectVoiceChannel(channelId);
+                                        const obj2 = analyticsLocations(5662);
                                       }
                                     } else {
                                       num3 = 1;
@@ -1153,12 +1153,12 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                     if (null != dependencyMap) {
                                       const obj6 = { channelId, applicationId: tmp9.id, launchId: v3.launchId, inputApplication: tmp9, analyticsLocations: num3 };
                                       v3 = num3;
-                                      const obj7 = { value: v3(9631).maybeJoinEmbeddedActivity(obj6), done: false };
+                                      const obj7 = { value: v3(9663).maybeJoinEmbeddedActivity(obj6), done: false };
                                       return obj7;
                                     }
                                   } else {
-                                    const voiceChannel = analyticsLocations(5630).selectVoiceChannel(channelId);
-                                    const obj2 = analyticsLocations(5630);
+                                    const voiceChannel = analyticsLocations(5662).selectVoiceChannel(channelId);
+                                    const obj2 = analyticsLocations(5662);
                                   }
                                 } else {
                                   num3 = 1;
@@ -1236,12 +1236,12 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                   if (null != dependencyMap) {
                                     const obj6 = { channelId, applicationId: tmp9.id, launchId: v3.launchId, inputApplication: tmp9, analyticsLocations: num3 };
                                     v3 = num3;
-                                    const obj7 = { value: v3(9631).maybeJoinEmbeddedActivity(obj6), done: false };
+                                    const obj7 = { value: v3(9663).maybeJoinEmbeddedActivity(obj6), done: false };
                                     return obj7;
                                   }
                                 } else {
-                                  const voiceChannel = analyticsLocations(5630).selectVoiceChannel(channelId);
-                                  const obj2 = analyticsLocations(5630);
+                                  const voiceChannel = analyticsLocations(5662).selectVoiceChannel(channelId);
+                                  const obj2 = analyticsLocations(5662);
                                 }
                               } else {
                                 num3 = 1;
@@ -1315,12 +1315,12 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                                 if (null != dependencyMap) {
                                   const obj6 = { channelId, applicationId: tmp9.id, launchId: v3.launchId, inputApplication: tmp9, analyticsLocations: num3 };
                                   v3 = num3;
-                                  const obj7 = { value: v3(9631).maybeJoinEmbeddedActivity(obj6), done: false };
+                                  const obj7 = { value: v3(9663).maybeJoinEmbeddedActivity(obj6), done: false };
                                   return obj7;
                                 }
                               } else {
-                                const voiceChannel = analyticsLocations(5630).selectVoiceChannel(channelId);
-                                const obj2 = analyticsLocations(5630);
+                                const voiceChannel = analyticsLocations(5662).selectVoiceChannel(channelId);
+                                const obj2 = analyticsLocations(5662);
                               }
                             } else {
                               num3 = 1;
@@ -1395,12 +1395,12 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                             if (null != dependencyMap) {
                               const obj6 = { channelId, applicationId: tmp9.id, launchId: v3.launchId, inputApplication: tmp9, analyticsLocations: num3 };
                               v3 = num3;
-                              const obj7 = { value: v3(9631).maybeJoinEmbeddedActivity(obj6), done: false };
+                              const obj7 = { value: v3(9663).maybeJoinEmbeddedActivity(obj6), done: false };
                               return obj7;
                             }
                           } else {
-                            const voiceChannel = analyticsLocations(5630).selectVoiceChannel(channelId);
-                            const obj2 = analyticsLocations(5630);
+                            const voiceChannel = analyticsLocations(5662).selectVoiceChannel(channelId);
+                            const obj2 = analyticsLocations(5662);
                           }
                         } else {
                           num3 = 1;
@@ -1477,12 +1477,12 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
                   if (null != dependencyMap) {
                     const obj6 = { channelId, applicationId: tmp9.id, launchId: v3.launchId, inputApplication: tmp9, analyticsLocations: num3 };
                     v3 = num3;
-                    const obj7 = { value: v3(9631).maybeJoinEmbeddedActivity(obj6), done: false };
+                    const obj7 = { value: v3(9663).maybeJoinEmbeddedActivity(obj6), done: false };
                     return obj7;
                   }
                 } else {
-                  const voiceChannel = analyticsLocations(5630).selectVoiceChannel(channelId);
-                  const obj2 = analyticsLocations(5630);
+                  const voiceChannel = analyticsLocations(5662).selectVoiceChannel(channelId);
+                  const obj2 = analyticsLocations(5662);
                 }
               } else {
                 num3 = 1;
@@ -1602,12 +1602,12 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
               if (null != dependencyMap) {
                 const obj6 = { channelId, applicationId: tmp9.id, launchId: v3.launchId, inputApplication: tmp9, analyticsLocations: num3 };
                 v3 = num3;
-                const obj7 = { value: v3(9631).maybeJoinEmbeddedActivity(obj6), done: false };
+                const obj7 = { value: v3(9663).maybeJoinEmbeddedActivity(obj6), done: false };
                 return obj7;
               }
             } else {
-              const voiceChannel = analyticsLocations(5630).selectVoiceChannel(channelId);
-              const obj2 = analyticsLocations(5630);
+              const voiceChannel = analyticsLocations(5662).selectVoiceChannel(channelId);
+              const obj2 = analyticsLocations(5662);
             }
           } else {
             num3 = 1;
@@ -1739,7 +1739,7 @@ let closure_38 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((igno
     }
     const _Symbol3 = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp23 = closure_1_27(tmp(7176).CircleErrorIcon, { color: "text-feedback-warning" });
+      const tmp23 = closure_1_27(tmp(7208).CircleErrorIcon, { color: "text-feedback-warning" });
       cResult[11] = tmp23;
       let tmp21 = tmp23;
     } else {
@@ -1758,7 +1758,7 @@ let closure_38 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((igno
       let tmp26 = null;
       if (null != tmp12) {
         const obj5 = { variant: "heading-sm/semibold", children: tmp12 };
-        tmp26 = closure_1_27(tmp(4754).Text, obj5);
+        tmp26 = closure_1_27(tmp(4786).Text, obj5);
       }
       cResult[13] = tmp26;
       let tmp25 = tmp26;
@@ -1769,7 +1769,7 @@ let closure_38 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((igno
       const obj6 = { variant: "text-sm/bold", color: "interactive-text-active", style: tmp24, children: null };
       const items = [tmp14, " ", tmp25];
       obj6.children = items;
-      const tmp30 = closure_1_28(tmp(4754).Text, obj6);
+      const tmp30 = closure_1_28(tmp(4786).Text, obj6);
       cResult[14] = tmp14;
       cResult[15] = tmp30;
       let tmp28 = tmp30;
@@ -1815,17 +1815,17 @@ let closure_38 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((igno
       let stringResult1 = intl4.string(tmp5(1119).t.MpRfpC);
     }
     const obj3 = { style: tmp.blockedMemberWarning, children: null };
-    const items = [closure_1_27(tmp5(7176).CircleErrorIcon, { color: "text-feedback-warning" }), ];
+    const items = [closure_1_27(tmp5(7208).CircleErrorIcon, { color: "text-feedback-warning" }), ];
     const obj4 = { variant: "text-sm/bold", color: "interactive-text-active", style: { flexShrink: 1 }, children: null };
     const items1 = [stringResult1, " ", ];
     let tmp11Result = null;
     if (null != stringResult) {
       const obj5 = { variant: "heading-sm/semibold", children: stringResult };
-      tmp11Result = closure_1_27(tmp5(4754).Text, obj5);
+      tmp11Result = closure_1_27(tmp5(4786).Text, obj5);
     }
     items1[2] = tmp11Result;
     obj4.children = items1;
-    items[1] = closure_1_28(tmp5(4754).Text, obj4);
+    items[1] = closure_1_28(tmp5(4786).Text, obj4);
     obj3.children = items;
     return closure_1_28(NativeViewDefault, obj3);
   }
@@ -2470,7 +2470,7 @@ let closure_42 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((igno
                   class W {
                     constructor(arg0) {
                       obj = { activity: ignoredMembers, analyticsLocations };
-                      return jsx(f76861, obj, ignoredMembers.launchId);
+                      return jsx(f76901, obj, ignoredMembers.launchId);
                     }
                   }
                   cResult[24] = analyticsLocations;
@@ -2480,7 +2480,7 @@ let closure_42 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((igno
                   class W {
                     constructor(arg0) {
                       obj = { activity: ignoredMembers, analyticsLocations };
-                      return jsx(f76861, obj, ignoredMembers.launchId);
+                      return jsx(f76901, obj, ignoredMembers.launchId);
                     }
                   }
                 }
@@ -2495,7 +2495,7 @@ let closure_42 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((igno
               class W {
                 constructor(arg0) {
                   obj = { activity: ignoredMembers, analyticsLocations };
-                  return jsx(f76861, obj, ignoredMembers.launchId);
+                  return jsx(f76901, obj, ignoredMembers.launchId);
                 }
               }
               const obj8 = { style: tmp4.optInChannelsContainer, channel: stateFromStores, analyticsSection: constants2.CHANNEL };
@@ -2513,7 +2513,7 @@ let closure_42 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((igno
         class W {
           constructor(arg0) {
             obj = { activity: ignoredMembers, analyticsLocations };
-            return jsx(f76861, obj, ignoredMembers.launchId);
+            return jsx(f76901, obj, ignoredMembers.launchId);
           }
         }
         const found = members.filter(tmp17);
@@ -2809,10 +2809,10 @@ let result = size.fileFinishedImporting("modules/voice_panel/native/prejoin/Voic
 
 export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = channelId(568).c(8);
-  const context = noop.useContext(guildId(12419));
+  const context = noop.useContext(guildId(12455));
   channelId = context.channelId;
   guildId = context.guildId;
-  const tmp5 = guildId(17471)(channelId);
+  const tmp5 = guildId(17481)(channelId);
   dependencyMap = tmp5;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [SortedVoiceStateStore, VoiceChannelBlockedUserStore, EmbeddedActivitiesStore, MediaEngineStore, ApplicationStreamingStore];
@@ -2828,10 +2828,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         let tmp13 = cResult[5];
       }
       const tmpResult = tmp(504);
-      const stateFromStores = tmpResult.useStateFromStores(first, tmp12, tmp13, tmp(17586).areVoicePanelPreJoinContentPropsEqual);
+      const stateFromStores = tmpResult.useStateFromStores(first, tmp12, tmp13, tmp(17596).areVoicePanelPreJoinContentPropsEqual);
       if (cResult[6] !== stateFromStores) {
         const obj2 = { item: stateFromStores, renderItem };
-        const tmp22 = closure_27(tmp(4471).TransitionItem, obj2);
+        const tmp22 = closure_27(tmp(4503).TransitionItem, obj2);
         cResult[6] = stateFromStores;
         cResult[7] = tmp22;
         let tmp19 = tmp22;
@@ -2887,10 +2887,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp13 = items1;
   tmp12 = fn;
 }) : (() => {
-  const context = noop.useContext(guildId(12419));
+  const context = noop.useContext(guildId(12455));
   const channelId = context.channelId;
   guildId = context.guildId;
-  const tmp2 = guildId(17471)(channelId);
+  const tmp2 = guildId(17481)(channelId);
   dependencyMap = tmp2;
   let items = [SortedVoiceStateStore, VoiceChannelBlockedUserStore, EmbeddedActivitiesStore, MediaEngineStore, ApplicationStreamingStore];
   let items1 = [tmp2, channelId, guildId];
@@ -2930,6 +2930,6 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       };
       return obj;
     }
-  }, items1, channelId(17586).areVoicePanelPreJoinContentPropsEqual);
-  return closure_27(channelId(4471).TransitionItem, { item: stateFromStores, renderItem });
+  }, items1, channelId(17596).areVoicePanelPreJoinContentPropsEqual);
+  return closure_27(channelId(4503).TransitionItem, { item: stateFromStores, renderItem });
 }));

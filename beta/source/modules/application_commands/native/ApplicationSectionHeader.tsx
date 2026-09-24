@@ -1,9 +1,9 @@
-// Module ID: 12545
-// Function ID: 12546
+// Module ID: 12581
+// Function ID: 12582
 // Name: ApplicationSectionHeader
-// Dependencies: [19, 17, 2109, 21, 4758, 580, 558, 568, 504, 12377, 1119, 5802, 4754, 2]
+// Dependencies: [19, 17, 2109, 21, 4790, 580, 558, 568, 504, 12413, 1119, 5834, 4786, 2]
 
-// Module 12545 (ApplicationSectionHeader)
+// Module 12581 (ApplicationSectionHeader)
 import nativeDefault from "native" /* 580 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
@@ -12,7 +12,7 @@ const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { applicationHeaderWrapper: { flexDirection: "row", alignItems: "center", height: 32, backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, paddingHorizontal: 16 }, applicationIcon: null };
 let size = { width: 16, height: 16, borderRadius: nativeDefault.radii.sm, marginRight: 8 };
 obj2.applicationIcon = size;
@@ -68,7 +68,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
         }
         if (cResult[12] !== name) {
           const obj3 = { variant: "eyebrow", color: "interactive-text-default", children: name };
-          const tmp21 = closure_5(tmp(4754).Text, obj3);
+          const tmp21 = closure_5(tmp(4786).Text, obj3);
           cResult[12] = name;
           cResult[13] = tmp21;
           let tmp19 = tmp21;
@@ -99,7 +99,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
       let tmp16 = null != tmp9;
       if (tmp16) {
         const obj5 = { style: tmp4.applicationIcon, source: tmp9 };
-        tmp16 = closure_5(guildId(5802), obj5);
+        tmp16 = closure_5(guildId(5834), obj5);
       }
       cResult[9] = tmp9;
       cResult[10] = tmp4.applicationIcon;
@@ -107,12 +107,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
       tmp15 = tmp16;
     }
     const tmpResult = tmp(504);
-    const applicationCommandsIconSource = tmp(12377).getApplicationCommandsIconSource(section, stateFromStores);
+    const applicationCommandsIconSource = tmp(12413).getApplicationCommandsIconSource(section, stateFromStores);
     cResult[4] = stateFromStores;
     cResult[5] = section;
     cResult[6] = applicationCommandsIconSource;
     tmp9 = applicationCommandsIconSource;
-    const tmpResult2 = tmp(12377);
+    const tmpResult2 = tmp(12413);
   }
   const fn = function u() {
     if (null != guildId) {
@@ -146,7 +146,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
     }
   });
   const obj = section(504);
-  const applicationCommandsIconSource = section(12377).getApplicationCommandsIconSource(section, stateFromStores);
+  const applicationCommandsIconSource = section(12413).getApplicationCommandsIconSource(section, stateFromStores);
   let nick;
   if (stateFromStores != null) {
     nick = stateFromStores.nick;
@@ -162,9 +162,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((section) => {
   let tmp9 = null != applicationCommandsIconSource;
   if (tmp9) {
     const obj4 = { style: tmp.applicationIcon, source: applicationCommandsIconSource };
-    tmp9 = closure_5(guildId(5802), obj4);
+    tmp9 = closure_5(guildId(5834), obj4);
   }
-  const items1 = [tmp9, closure_5(section(4754).Text, { variant: "eyebrow", color: "interactive-text-default", children: name })];
+  const items1 = [tmp9, closure_5(section(4786).Text, { variant: "eyebrow", color: "interactive-text-default", children: name })];
   obj3.children = items1;
   return closure_6(View, obj3);
 });

@@ -1,18 +1,18 @@
-// Module ID: 5652
-// Function ID: 5653
+// Module ID: 5684
+// Function ID: 5685
 // Name: ButtonGroup
-// Dependencies: [109, 19, 21, 4758, 558, 568, 5186, 2]
+// Dependencies: [109, 19, 21, 4790, 558, 568, 5218, 2]
 
-// Module 5652 (ButtonGroup)
+// Module 5684 (ButtonGroup)
 import c from "c" /* 568 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 let closure_2 = ["size", "children", "style"];
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ container: { paddingVertical: 16 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

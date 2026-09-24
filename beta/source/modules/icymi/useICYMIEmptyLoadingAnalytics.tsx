@@ -1,10 +1,10 @@
-// Module ID: 16831
-// Function ID: 16832
+// Module ID: 16841
+// Function ID: 16842
 // Name: useICYMIEmptyLoadingAnalytics
-// Dependencies: [19, 558, 568, 8635, 2]
+// Dependencies: [19, 558, 568, 8667, 2]
 
-// Module 16831 (useICYMIEmptyLoadingAnalytics)
-import ICYMIAnalytics3 from "ICYMIAnalytics" /* 8635 */;
+// Module 16841 (useICYMIEmptyLoadingAnalytics)
+import ICYMIAnalytics3 from "ICYMIAnalytics" /* 8667 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

@@ -1,9 +1,9 @@
-// Module ID: 13694
-// Function ID: 13695
+// Module ID: 13730
+// Function ID: 13731
 // Name: useScrollToSection
 // Dependencies: [19, 558, 568, 2]
 
-// Module 13694 (useScrollToSection)
+// Module 13730 (useScrollToSection)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

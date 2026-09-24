@@ -1,19 +1,19 @@
-// Module ID: 18249
-// Function ID: 18250
+// Module ID: 18259
+// Function ID: 18260
 // Name: GuildRoleSubscriptionTierTemplateRolePreview
-// Dependencies: [19, 17, 1376, 21, 4758, 580, 558, 568, 1119, 565, 4910, 5802, 1096, 4754, 1181, 7452, 2]
+// Dependencies: [19, 17, 1376, 21, 4790, 580, 558, 568, 1119, 565, 4942, 5834, 1096, 4786, 1181, 7484, 2]
 
-// Module 18249 (GuildRoleSubscriptionTierTemplateRolePreview)
+// Module 18259 (GuildRoleSubscriptionTierTemplateRolePreview)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import utils_ColorUtilsAll from "utils/ColorUtils" /* 1096 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import RoleIconDefault from "RoleIcon" /* 7452 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import RoleIconDefault from "RoleIcon" /* 7484 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -21,7 +21,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flexDirection: "row", padding: 16, borderRadius: nativeDefault.radii.xs, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, avatar: { width: 40, height: 40, borderRadius: 20 }, content: { marginStart: 16 }, contextRow: { flexDirection: "row", alignItems: "center" } };
 let closure_8 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -113,7 +113,7 @@ export const GuildRoleSubscriptionRolePreview = ReactCompilerGating.isReactCompi
           const _Symbol2 = Symbol;
           if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
             const tmp34 = timestampProducer(tmp(1181).Spacer, { size: 8 });
-            const tmp35 = timestampProducer(tmp(4754).Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" });
+            const tmp35 = timestampProducer(tmp(4786).Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" });
             cResult[23] = tmp34;
             cResult[24] = tmp35;
             let tmp32 = tmp35;
@@ -166,7 +166,7 @@ export const GuildRoleSubscriptionRolePreview = ReactCompilerGating.isReactCompi
                 tmp43 = tmp46;
               }
               const obj8 = { variant: "text-md/normal", color: "text-default", style: textStyle, children: tmp4 };
-              const tmp42 = timestampProducer(tmp(4754).Text, obj8);
+              const tmp42 = timestampProducer(tmp(4786).Text, obj8);
               cResult[29] = tmp4;
               cResult[30] = textStyle;
               cResult[31] = tmp42;
@@ -184,21 +184,21 @@ export const GuildRoleSubscriptionRolePreview = ReactCompilerGating.isReactCompi
           tmp36 = tmp39;
         }
         const obj10 = { name: roleName, src: roleImage, size: 16 };
-        const tmp30 = timestampProducer(tmp11(7452), obj10);
+        const tmp30 = timestampProducer(tmp11(7484), obj10);
         cResult[20] = roleImage;
         cResult[21] = roleName;
         cResult[22] = tmp30;
         tmp28 = tmp30;
       }
       const obj11 = { variant: "text-md/semibold", color: "interactive-text-active", style: tmp21, children: name };
-      const tmp24 = timestampProducer(tmp(4754).Text, obj11);
+      const tmp24 = timestampProducer(tmp(4786).Text, obj11);
       cResult[16] = name;
       cResult[17] = tmp21;
       cResult[18] = tmp24;
       tmp22 = tmp24;
     }
     const obj12 = { style: tmp6.avatar, source: tmp14 };
-    const tmp17 = timestampProducer(tmp11(5802), obj12);
+    const tmp17 = timestampProducer(tmp11(5834), obj12);
     cResult[9] = tmp6.avatar;
     cResult[10] = tmp14;
     cResult[11] = tmp17;

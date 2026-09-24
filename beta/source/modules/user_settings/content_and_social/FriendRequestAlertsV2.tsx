@@ -1,10 +1,10 @@
-// Module ID: 11176
-// Function ID: 11177
+// Module ID: 11212
+// Function ID: 11213
 // Name: FriendRequestAlertsV2
 // Dependencies: [1438, 558, 568, 2]
 // Exports: isFriendRequestAlertsV2Enabled
 
-// Module 11176 (FriendRequestAlertsV2)
+// Module 11212 (FriendRequestAlertsV2)
 import c from "c" /* 568 */;
 import ApexExperiment from "ApexExperiment" /* 1438 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

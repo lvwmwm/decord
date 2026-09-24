@@ -1,9 +1,9 @@
-// Module ID: 4484
-// Function ID: 4485
+// Module ID: 4516
+// Function ID: 4517
 // Name: MotionTypes
 // Dependencies: [2]
 
-// Module 4484 (MotionTypes)
+// Module 4516 (MotionTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/animation/MotionTypes.tsx");

@@ -1,42 +1,42 @@
-// Module ID: 10946
-// Function ID: 10947
+// Module ID: 10982
+// Function ID: 10983
 // Name: MediaKeyboardItem
-// Dependencies: [19, 17, 5106, 10947, 21, 4497, 4758, 580, 4608, 558, 568, 1181, 10690, 4754, 5354, 504, 10948, 1119, 5387, 5356, 10949, 10950, 4759, 1482, 10951, 5307, 10936, 2]
+// Dependencies: [19, 17, 5138, 10983, 21, 4529, 4790, 580, 4640, 558, 568, 1181, 10726, 4786, 5386, 504, 10984, 1119, 5419, 5388, 10985, 10986, 4791, 1482, 10987, 5339, 10972, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10946 (MediaKeyboardItem)
+// Module 10982 (MediaKeyboardItem)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4497 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import timing from "timing" /* 4759 */;
-import ImageIcon from "ImageIcon" /* 5307 */;
-import _modDef10690 from "module_10690" /* 10690 */;
-import AttachmentIcon from "AttachmentIcon" /* 10936 */;
-import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10948 */;
-import CameraIcon from "CameraIcon" /* 10951 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4529 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import timing from "timing" /* 4791 */;
+import ImageIcon from "ImageIcon" /* 5339 */;
+import _modDef10726 from "module_10726" /* 10726 */;
+import AttachmentIcon from "AttachmentIcon" /* 10972 */;
+import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10984 */;
+import CameraIcon from "CameraIcon" /* 10987 */;
 import noop from "module_19" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5106 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5138 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, Pressable } = get_ActivityIndicator);
-const DeviceConstants = fn(10947);
+const DeviceConstants = fn(10983);
 ({ ALAssetsType: closure_7, DeviceMediaType: closure_8 } = DeviceConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 let closure_11 = ReanimatedRexport.createAnimatedComponent(Pressable);
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let obj = { container: { flexDirection: "row", paddingHorizontal: 12, alignItems: "center" }, image: { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND }, imageContainer: null, labelContainer: null, mediaKeyboardItemLabelContainer: null, icon: null, checkIcon: null, checkIconContainer: null, selectedOverlay: null, specialButton: null, disabled: null, imageDisabled: null };
 let obj2 = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 obj.imageContainer = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", position: "relative" };
 const rect = { flexDirection: "row", alignItems: "center", backgroundColor: null, borderRadius: null, paddingHorizontal: 5, paddingVertical: 4, position: "absolute", left: 8, bottom: 8 };
-let ColorUtils = fn(4608);
+let ColorUtils = fn(4640);
 rect.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.PRIMARY_700, 0.6);
 rect.borderRadius = nativeDefault.radii.xs;
 obj.labelContainer = rect;
@@ -46,13 +46,13 @@ obj.icon = size;
 let size1 = { width: 14, height: 14, color: nativeDefault.colors.BACKGROUND_BRAND };
 obj.checkIcon = size1;
 let size2 = { width: 24, height: 24, position: "absolute", justifyContent: "center", alignItems: "center", right: 6, top: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.WHITE, borderWidth: 1, borderColor: null };
-ColorUtils = fn(4608);
+ColorUtils = fn(4640);
 size2.borderColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.1);
 obj.checkIconContainer = size2;
 let obj5 = {};
 const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
 obj5.borderRadius = nativeDefault.radii.xs;
-ColorUtils = fn(4608);
+ColorUtils = fn(4640);
 obj5.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.3);
 obj.selectedOverlay = obj5;
 obj.specialButton = { flexDirection: "column", justifyContent: "center", alignItems: "center", gap: 8 };
@@ -181,7 +181,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp5 = cResult[2];
     }
     if (cResult[3] !== tmp4.icon) {
-      const obj2 = { source: _modDef10690, style: tmp4.icon };
+      const obj2 = { source: _modDef10726, style: tmp4.icon };
       const tmp9 = options(tmp(1181).Icon, obj2);
       cResult[3] = tmp4.icon;
       cResult[4] = tmp9;
@@ -212,7 +212,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp13 = tmp16;
     }
     const obj4 = { style: textStyle, color: "text-overlay-light", variant: "text-xs/bold", children: label };
-    const tmp12 = options(tmp(4754).Text, obj4);
+    const tmp12 = options(tmp(4786).Text, obj4);
     cResult[5] = label;
     cResult[6] = textStyle;
     cResult[7] = tmp12;
@@ -229,7 +229,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = { style: null, children: null };
   const items = [tmp.labelContainer, style];
   obj.style = items;
-  const items1 = [options(native.Icon, { source: _modDef10690, style: tmp.icon }), options(Text_Text.Text, { style: textStyle, color: "text-overlay-light", variant: "text-xs/bold", children: label })];
+  const items1 = [options(native.Icon, { source: _modDef10726, style: tmp.icon }), options(Text_Text.Text, { style: textStyle, color: "text-overlay-light", variant: "text-xs/bold", children: label })];
   obj.children = items1;
   return v65535(React4, obj);
 });
@@ -886,7 +886,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj2.children = options(React4, obj3);
   return options(React4, obj2);
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj4 = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", position: "relative" };
 let closure_17 = createStyles.createStyleProperties({ backgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, pressedBackgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_ACTIVE });
 const __initData = { code: "function MediaKeyboardItemTsx1(){const{withTiming,interpolateColor,pressed,backgroundColor,pressedBackgroundColor,Easing}=this.__closure;return{backgroundColor:withTiming(interpolateColor(pressed.get(),[0,1],[backgroundColor,pressedBackgroundColor]),{duration:200,easing:Easing.out(Easing.quad)})};}" };

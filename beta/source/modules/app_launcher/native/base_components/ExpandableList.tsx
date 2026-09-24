@@ -1,21 +1,21 @@
-// Module ID: 12248
-// Function ID: 12249
+// Module ID: 12284
+// Function ID: 12285
 // Name: ExpandableList
-// Dependencies: [32, 19, 17, 21, 4758, 558, 568, 8548, 4497, 4759, 4762, 5822, 1119, 4754, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 558, 568, 8580, 4529, 4791, 4794, 5854, 1119, 4786, 2]
 
-// Module 12248 (ExpandableList)
-import timing from "timing" /* 4759 */;
-import timingPresets from "timingPresets" /* 4762 */;
-import usePreviousDefault from "usePrevious" /* 8548 */;
+// Module 12284 (ExpandableList)
+import timing from "timing" /* 4791 */;
+import timingPresets from "timingPresets" /* 4794 */;
+import usePreviousDefault from "usePrevious" /* 8580 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const ReanimatedRexportDefault = tmp4(4497);
+const ReanimatedRexportDefault = tmp4(4529);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ animatedListContainer: { overflow: "hidden" }, expandCTALabelContainer: { alignItems: "center" } });
 const __initData = { code: "function ExpandableListTsx1(){const{expanded,collapsedListHeight,remainingListHeight}=this.__closure;if(expanded&&collapsedListHeight.get()!==0&&remainingListHeight.get()!==0){return collapsedListHeight.get()+remainingListHeight.get();}return collapsedListHeight.get();}" };
 const __initData2 = { code: "function ExpandableListTsx2(){const{collapsedListHeight,withTiming,containerHeight,timingStandard}=this.__closure;if(collapsedListHeight.get()!==0){return{height:withTiming(containerHeight.get(),timingStandard)};}else{return{};}}" };
@@ -460,10 +460,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onExpandCTAPress
   if (null == showsExpandCTAOverride) {
     showsExpandCTAOverride = items.length > bound;
   }
-  sharedValue = memo1(4497).useSharedValue(0);
-  let obj3 = memo1(4497);
-  sharedValue1 = memo1(4497).useSharedValue(0);
-  const obj4 = memo1(4497);
+  sharedValue = memo1(4529).useSharedValue(0);
+  let obj3 = memo1(4529);
+  sharedValue1 = memo1(4529).useSharedValue(0);
+  const obj4 = memo1(4529);
   class C {
     constructor() {
       if (closure_5) {
@@ -485,12 +485,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onExpandCTAPress
   C.__closure = { expanded: first, collapsedListHeight: sharedValue, remainingListHeight: sharedValue1 };
   C.__workletHash = 15615156859143;
   C.__initData = __initData3;
-  derivedValue = memo1(4497).useDerivedValue(C);
+  derivedValue = memo1(4529).useDerivedValue(C);
   const items3 = [items, bound];
   const memo = obj.useMemo(() => memo1.slice(0, bound), items3);
   const items4 = [items, bound];
   memo1 = obj.useMemo(() => memo1.slice(bound, memo1.length), items4);
-  const obj5 = memo1(4497);
+  const obj5 = memo1(4529);
   class A {
     constructor() {
       if (0 !== closure_9.get()) {
@@ -508,8 +508,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onExpandCTAPress
       return obj;
     }
   }
-  const obj6 = memo1(4497);
-  A.__closure = { collapsedListHeight: sharedValue, withTiming: memo1(4759).withTiming, containerHeight: derivedValue, timingStandard: memo1(4762).timingStandard };
+  const obj6 = memo1(4529);
+  A.__closure = { collapsedListHeight: sharedValue, withTiming: memo1(4791).withTiming, containerHeight: derivedValue, timingStandard: memo1(4794).timingStandard };
   A.__workletHash = 16625034396799;
   A.__initData = __initData4;
   const animatedStyle = obj6.useAnimatedStyle(A);
@@ -583,7 +583,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onExpandCTAPress
     }
     obj14 = { children: null };
     const obj15 = { color: "text-brand", variant: "text-md/semibold", children: stringResult1 };
-    obj13.children = tmp16(tmp9(4754).Text, obj15);
+    obj13.children = tmp16(tmp9(4786).Text, obj15);
     obj13 = tmp16(tmp17, obj13);
     obj12.label = obj13;
     obj12.onPress = function onPress() {
@@ -597,7 +597,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onExpandCTAPress
         tmp4(obj);
       }
     };
-    obj12 = tmp16(tmp9(5822).TableRow, obj12);
+    obj12 = tmp16(tmp9(5854).TableRow, obj12);
     obj14.children = obj12;
     tmp16(tmp17, obj14);
   }

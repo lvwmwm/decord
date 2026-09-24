@@ -1,14 +1,14 @@
-// Module ID: 14456
-// Function ID: 14457
+// Module ID: 14494
+// Function ID: 14495
 // Name: createAccessibleNativeStackNavigator
-// Dependencies: [109, 19, 21, 558, 568, 7246, 1489, 8162, 2]
+// Dependencies: [109, 19, 21, 558, 568, 7278, 1489, 8194, 2]
 // Exports: default
 
-// Module 14456 (createAccessibleNativeStackNavigator)
+// Module 14494 (createAccessibleNativeStackNavigator)
 import c from "c" /* 568 */;
 import Link from "Link" /* 1489 */;
-import Navigator from "Navigator" /* 7246 */;
-import NativeStackNavigator from "NativeStackNavigator" /* 8162 */;
+import Navigator from "Navigator" /* 7278 */;
+import NativeStackNavigator from "NativeStackNavigator" /* 8194 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -156,7 +156,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   obj3.navigation = navigation;
                   obj3.descriptors = tmp20;
                   obj3.describe = describe;
-                  const tmp26 = jsx(tmp(8162).NativeStackView, {});
+                  const tmp26 = jsx(tmp(8194).NativeStackView, {});
                   cResult[21] = describe;
                   cResult[22] = navigation;
                   cResult[23] = tmp20;

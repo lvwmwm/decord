@@ -1,16 +1,13 @@
 // Module ID: 5040
 // Function ID: 5041
-// Dependencies: [1311]
+// Dependencies: []
 
 // Module 5040
-import _mod1311 from "module_1311" /* 1311 */;
 
-
-export default function mod(arg0, arg1) {
-  const result = arg0 % arg1;
-  let sum = result;
-  if (result < 0) {
-    sum = result + arg1;
+export default function getIterator(arg0) {
+  if (null != arg0) {
+    if (undefined !== arg0[iterator]) {
+      return arg0[iterator]();
+    }
   }
-  return _mod1311(sum);
 };

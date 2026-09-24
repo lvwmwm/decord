@@ -1,13 +1,13 @@
-// Module ID: 4715
-// Function ID: 4716
+// Module ID: 4747
+// Function ID: 4748
 // Name: TrashIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 4716, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 4748, 4493, 2]
 
-// Module 4715 (TrashIcon)
+// Module 4747 (TrashIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod4716 from "module_4716" /* 4716 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod4748 from "module_4748" /* 4748 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const TrashIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(4716);
+    const tmpResult = tmp(4748);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const TrashIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod4716, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod4748, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

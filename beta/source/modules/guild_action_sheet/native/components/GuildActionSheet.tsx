@@ -1,28 +1,28 @@
-// Module ID: 14244
-// Function ID: 14245
+// Module ID: 14281
+// Function ID: 14282
 // Name: GuildActionSheet
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1616, 8444, 1368, 14239, 14245, 14182, 14246, 14249, 7401, 6863, 7397, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1616, 8476, 1368, 14276, 14282, 14219, 14283, 14286, 7433, 6895, 7429, 2]
 
-// Module 14244 (GuildActionSheet)
+// Module 14281 (GuildActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import BottomSheetModal from "BottomSheetModal" /* 6863 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 7401 */;
-import useBottomSheetRef from "useBottomSheetRef" /* 8444 */;
-import GuildActionSheetActions from "GuildActionSheetActions" /* 14182 */;
-import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 14239 */;
-import GuildActionSheetTabItemsDefault from "GuildActionSheetTabItems" /* 14245 */;
-import GuildActionSheetProgressDefault from "GuildActionSheetProgress" /* 14246 */;
-import GuildActionSheetEmojiSectionDefault from "GuildActionSheetEmojiSection" /* 14249 */;
+import BottomSheetModal from "BottomSheetModal" /* 6895 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 7433 */;
+import useBottomSheetRef from "useBottomSheetRef" /* 8476 */;
+import GuildActionSheetActions from "GuildActionSheetActions" /* 14219 */;
+import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 14276 */;
+import GuildActionSheetTabItemsDefault from "GuildActionSheetTabItems" /* 14282 */;
+import GuildActionSheetProgressDefault from "GuildActionSheetProgress" /* 14283 */;
+import GuildActionSheetEmojiSectionDefault from "GuildActionSheetEmojiSection" /* 14286 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, actions: { paddingHorizontal: 16, gap: 24 } };
 let closure_6 = createStyles.createStyles(obj);
 const ReactCompilerGating = fn(558);
@@ -52,9 +52,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   if (cResult[2] !== guild) {
     const obj3 = { guild };
-    const tmp13 = React4(tmp6(14239), obj3);
+    const tmp13 = React4(tmp6(14276), obj3);
     const obj4 = { guild };
-    const tmp14 = React4(tmp6(14245), obj4);
+    const tmp14 = React4(tmp6(14282), obj4);
     cResult[2] = guild;
     cResult[3] = tmp13;
     cResult[4] = tmp14;
@@ -66,15 +66,15 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   if (cResult[5] !== guild) {
     const obj5 = { guild };
-    const tmp21 = React4(tmp(14182).GuildUnreadAction, obj5);
+    const tmp21 = React4(tmp(14219).GuildUnreadAction, obj5);
     const obj6 = { guild };
-    const tmp22 = React4(tmp6(14246), obj6);
+    const tmp22 = React4(tmp6(14283), obj6);
     const obj7 = { guild };
-    const tmp23 = React4(tmp(14182).GuildActionSheetPrimaryActions, obj7);
+    const tmp23 = React4(tmp(14219).GuildActionSheetPrimaryActions, obj7);
     const obj8 = { guild };
-    const tmp24 = React4(tmp(14182).GuildActionSheetSecondaryActions, obj8);
+    const tmp24 = React4(tmp(14219).GuildActionSheetSecondaryActions, obj8);
     const obj9 = { guild };
-    const tmp25 = React4(tmp(14182).GuildDeveloperOptionAction, obj9);
+    const tmp25 = React4(tmp(14219).GuildDeveloperOptionAction, obj9);
     cResult[5] = guild;
     cResult[6] = tmp25;
     cResult[7] = tmp21;
@@ -95,7 +95,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   if (cResult[11] !== guild.id) {
     const obj10 = { guildId: guild.id };
-    const tmp28 = React4(tmp6(14249), obj10);
+    const tmp28 = React4(tmp6(14286), obj10);
     cResult[11] = guild.id;
     cResult[12] = tmp28;
     let tmp26 = tmp28;
@@ -113,7 +113,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
               }
               if (cResult[21] !== bottomSheetClose) {
                 const obj11 = { variant: "floating", onPress: bottomSheetClose };
-                const tmp33 = React4(tmp(7401).ActionSheetHeaderBar, obj11);
+                const tmp33 = React4(tmp(7433).ActionSheetHeaderBar, obj11);
                 cResult[21] = bottomSheetClose;
                 cResult[22] = tmp33;
                 let tmp31 = tmp33;
@@ -137,7 +137,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
                           }
                         }
                         const obj12 = { ref: bottomSheetRef, handleDisabled: true, showGradient: true, scrollable: true, startExpanded: tmp4, children: tmp34 };
-                        const tmp39 = React4(tmp(7397).BottomSheet, obj12);
+                        const tmp39 = React4(tmp(7429).BottomSheet, obj12);
                         cResult[30] = bottomSheetRef;
                         cResult[31] = tmp4;
                         cResult[32] = tmp34;
@@ -151,7 +151,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
               const obj13 = { scrollsToTop: false, style: tmp5.container, contentContainerStyle: tmp9, children: null };
               const items = [tmp10, tmp11, tmp29, tmp31];
               obj13.children = items;
-              const tmp36 = hasOwnProperty(tmp(6863).BottomSheetScrollView, obj13);
+              const tmp36 = hasOwnProperty(tmp(6895).BottomSheetScrollView, obj13);
               cResult[23] = tmp5.container;
               cResult[24] = tmp29;
               cResult[25] = tmp31;

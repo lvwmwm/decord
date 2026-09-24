@@ -1,18 +1,18 @@
-// Module ID: 16888
-// Function ID: 16889
+// Module ID: 16898
+// Function ID: 16899
 // Name: GuildRoleSubscriptionPurchasePage
-// Dependencies: [19, 17, 1186, 2045, 2067, 1078, 21, 4758, 580, 558, 568, 4754, 1119, 1181, 10176, 7222, 15469, 15471, 15472, 565, 16889, 4911, 16891, 16892, 16893, 5241, 5802, 5799, 16894, 10525, 16896, 16897, 4455, 16898, 2]
+// Dependencies: [19, 17, 1186, 2045, 2067, 1078, 21, 4790, 580, 558, 568, 4786, 1119, 1181, 10215, 7254, 15479, 15481, 15482, 565, 16899, 4943, 16901, 16902, 16903, 5273, 5834, 5831, 16904, 10561, 16906, 16907, 4487, 16908, 2]
 
-// Module 16888 (GuildRoleSubscriptionPurchasePage)
+// Module 16898 (GuildRoleSubscriptionPurchasePage)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import LinkingDefault from "Linking" /* 4455 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5241 */;
-import _modDef10176 from "module_10176" /* 10176 */;
-import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 16898 */;
+import LinkingDefault from "Linking" /* 4487 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5273 */;
+import _modDef10215 from "module_10215" /* 10215 */;
+import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 16908 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -27,7 +27,7 @@ const Constants = fn(1078);
 ({ AnalyticsLocations: closure_11, GuildFeatures: closure_12, MarketingURLs: map1 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, heroImage: { aspectRatio: 4, width: "100%" }, guildIconContainer: null, guildIcon: null, contentCard: null, loadingContainer: null, socialContainer: null, socialBadge: null, socialBadgeIcon: null, socialBadgeArrow: null, separator: null, moneyBirbPlaceholder: null, gatedChannel: null, gatedChannelIcon: null };
 const rect = { borderWidth: 3, borderRadius: nativeDefault.radii.md, alignSelf: "flex-start", top: -35, left: 16, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW, position: "absolute" };
 obj2.guildIconContainer = rect;
@@ -72,7 +72,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl = tmp(1119).intl;
     ({ TERMS: obj3.termsURL, PAID_TERMS: obj3.paidURL } = constants3);
     obj2.children = intl.format(tmp(1119).t.FSPTDI, { termsURL: null, paidURL: null });
-    const tmp7 = state(tmp(4754).Text, obj2);
+    const tmp7 = state(tmp(4786).Text, obj2);
     cResult[0] = tmp7;
     let first = tmp7;
     const obj5 = { termsURL: null, paidURL: null };
@@ -101,7 +101,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[3] !== text) {
       const obj2 = { variant: "text-sm/medium", color: "text-default", children: text };
-      const tmp10 = state(tmp(4754).Text, obj2);
+      const tmp10 = state(tmp(4786).Text, obj2);
       cResult[3] = text;
       cResult[4] = tmp10;
       let tmp8 = tmp10;
@@ -141,7 +141,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     let tmp12 = tmp5;
     if (tmp5) {
-      const obj4 = { source: _modDef10176, style: tmp4.socialBadgeArrow };
+      const obj4 = { source: _modDef10215, style: tmp4.socialBadgeArrow };
       tmp12 = state(tmp(1181).Icon, obj4);
     }
     cResult[5] = tmp5;
@@ -168,7 +168,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj.onPress = onPress;
   const items = [state(native.Icon, { source: iconSource, style: tmp.socialBadgeIcon, resizeMode: "contain", disableColor: true }), state(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: text }), ];
   if (tmp5Result) {
-    const obj3 = { source: _modDef10176, style: tmp.socialBadgeArrow };
+    const obj3 = { source: _modDef10215, style: tmp.socialBadgeArrow };
     tmp5Result = state(native.Icon, obj3);
   }
   items[2] = tmp5Result;

@@ -1,19 +1,19 @@
-// Module ID: 11972
-// Function ID: 11973
+// Module ID: 12008
+// Function ID: 12009
 // Name: GuildDisableCommunication
-// Dependencies: [5, 32, 19, 17, 2111, 1078, 21, 1119, 4758, 580, 558, 568, 7224, 11400, 1245, 5203, 11973, 4458, 4910, 9617, 4754, 5901, 5900, 7332, 5188, 2]
+// Dependencies: [5, 32, 19, 17, 2111, 1078, 21, 1119, 4790, 580, 558, 568, 7256, 11436, 1245, 5235, 12009, 4490, 4942, 9649, 4786, 5933, 5932, 7364, 5220, 2]
 
-// Module 11972 (GuildDisableCommunication)
+// Module 12008 (GuildDisableCommunication)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import useMountEffectDefault from "useMountEffect" /* 5203 */;
-import TableRadioGroup from "TableRadioGroup" /* 5901 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7224 */;
-import TextArea from "TextArea" /* 7332 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11400 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import useMountEffectDefault from "useMountEffect" /* 5235 */;
+import TableRadioGroup from "TableRadioGroup" /* 5933 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7256 */;
+import TextArea from "TextArea" /* 7364 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11436 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -72,7 +72,7 @@ let items = [
     }
   }
 ];
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, reasonTextArea: null, buttonContainer: null };
 let obj = {
   value: DisableCommunicationDuration.DURATION_60_SEC,
@@ -486,7 +486,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) 
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            const obj4 = tmp4(11973);
+            const obj4 = tmp4(12009);
             dependencyMap = 1;
             c3 = 1;
             const obj5 = { value: obj4.setCommunicationDisabledDuration(guild_id, id.id, items[asyncGeneratorStep].value, ref.current), done: false };
@@ -501,8 +501,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) 
           return obj6;
         } else {
           const intl = user(1119).intl;
-          const obj8 = tmp4(4458);
-          const name = tmp4(4910).getName(closure_129_1, null, closure_129_0);
+          const obj8 = tmp4(4490);
+          const name = tmp4(4942).getName(closure_129_1, null, closure_129_0);
           user = name;
           if (name == null) {
             user = "";
@@ -510,7 +510,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) 
           const obj = { key: "GUILD_COMMUNICATION_DISABLED_SUCCESS", content: null, icon: null };
           const obj7 = { user };
           obj.content = intl.formatToPlainString(user(1119).t.O9C3Nt, obj7);
-          obj.icon = tmp4(9617);
+          obj.icon = tmp4(9649);
           obj8.open(obj);
           closure_129_2();
           c3 = 3;

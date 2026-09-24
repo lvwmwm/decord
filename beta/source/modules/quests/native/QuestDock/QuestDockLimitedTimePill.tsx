@@ -1,21 +1,21 @@
-// Module ID: 15461
-// Function ID: 15462
+// Module ID: 15471
+// Function ID: 15472
 // Name: QuestDockLimitedTimePill
-// Dependencies: [19, 17, 21, 580, 4758, 558, 568, 11725, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 580, 4790, 558, 568, 11761, 1119, 4786, 2]
 
-// Module 15461 (QuestDockLimitedTimePill)
+// Module 15471 (QuestDockLimitedTimePill)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import TimerIcon from "TimerIcon" /* 11725 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import TimerIcon from "TimerIcon" /* 11761 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { pill: { alignItems: "center", alignSelf: "flex-start", backgroundColor: nativeDefault.unsafe_rawColors.NEUTRAL_79, borderRadius: nativeDefault.radii.round, flexDirection: "row", gap: nativeDefault.space.PX_4, paddingHorizontal: 6, paddingVertical: 2 }, text: { textTransform: "uppercase" } };
 let closure_6 = createStyles.createStyles(obj);
 const ReactCompilerGating = fn(558);
@@ -28,7 +28,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
-    const tmp8 = React4(tmp(11725).TimerIcon, obj2);
+    const tmp8 = React4(tmp(11761).TimerIcon, obj2);
     cResult[0] = tmp8;
     let first = tmp8;
   } else {
@@ -44,7 +44,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] !== tmp4.text) {
     const obj3 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp4.text, children: tmp9 };
-    const tmp13 = React4(tmp(4754).Text, obj3);
+    const tmp13 = React4(tmp(4786).Text, obj3);
     cResult[2] = tmp4.text;
     cResult[3] = tmp13;
     let tmp11 = tmp13;

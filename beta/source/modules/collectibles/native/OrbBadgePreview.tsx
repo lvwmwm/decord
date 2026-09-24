@@ -1,20 +1,20 @@
-// Module ID: 13453
-// Function ID: 13454
+// Module ID: 13489
+// Function ID: 13490
 // Name: OrbBadgePreview
-// Dependencies: [19, 17, 21, 4758, 558, 568, 8452, 9125, 1119, 11390, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 8484, 9157, 1119, 11426, 2]
 
-// Module 13453 (OrbBadgePreview)
+// Module 13489 (OrbBadgePreview)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import useCurrentUser from "useCurrentUser" /* 8452 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9125 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 11390 */;
+import useCurrentUser from "useCurrentUser" /* 8484 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9157 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 11426 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ container: { flex: 1, justifyContent: "center", alignItems: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -25,14 +25,14 @@ export const OrbBadgePreview = ReactCompilerGating.isReactCompilerEnabled() ? ((
   const tmp4 = closure_5();
   const currentUser = useCurrentUser.useCurrentUser();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [tmp(9125).createOrbProfileBadge()];
+    const items = [tmp(9157).createOrbProfileBadge()];
     const intl = tmp(1119).intl;
     const stringResult = intl.string(tmp(1119).t.bxcI6Y);
     cResult[0] = items;
     cResult[1] = stringResult;
     tmp6 = items;
     tmp7 = stringResult;
-    const tmpResult = tmp(9125);
+    const tmpResult = tmp(9157);
   } else {
     [tmp6, tmp7] = cResult;
   }

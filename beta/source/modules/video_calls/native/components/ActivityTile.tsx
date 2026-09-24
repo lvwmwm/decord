@@ -1,15 +1,15 @@
-// Module ID: 9714
-// Function ID: 9715
+// Module ID: 9746
+// Function ID: 9747
 // Name: ActivityTile
-// Dependencies: [5, 32, 19, 17, 2044, 1376, 1078, 1185, 2008, 21, 1181, 4758, 580, 558, 568, 1374, 504, 7415, 4910, 4603, 9715, 7409, 7429, 9687, 1119, 9632, 9633, 9717, 9631, 9718, 5341, 9734, 4754, 5189, 4471, 2]
+// Dependencies: [5, 32, 19, 17, 2044, 1376, 1078, 1185, 2008, 21, 1181, 4790, 580, 558, 568, 1374, 504, 7447, 4942, 4635, 9747, 7441, 7461, 9719, 1119, 9664, 9665, 9749, 9663, 9750, 5373, 9766, 4786, 5221, 4503, 2]
 
-// Module 9714 (ActivityTile)
+// Module 9746 (ActivityTile)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
-import native2 from "native" /* 4471 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 9631 */;
+import native2 from "native" /* 4503 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 9663 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -25,7 +25,7 @@ const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const XSMALL = fn(1181).AvatarSizes.XSMALL;
 const androidRippleConfig = fn(1185).getThemedRippleConfig({ foreground: true });
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { pressableOpacity: null, activityPreview: null, activityViewContainer: null, titleText: null, subtitleText: null, overflow: null, buttonWrapper: null, buttonPill: null };
 let size = { width: "100%", height: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, justifyContent: "center", alignItems: "center" };
 obj2.pressableOpacity = size;
@@ -503,7 +503,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) =
               const obj4 = { applicationId: tmp23.applicationId, activityChannelId: id.id, locationObject: _location.location, analyticsLocations };
               v1 = 1;
               dependencyMap = 1;
-              const obj5 = { value: v1(9633)(obj4), done: false };
+              const obj5 = { value: v1(9665)(obj4), done: false };
               return obj5;
             } else {
               dependencyMap = 3;
@@ -514,8 +514,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) =
           dependencyMap = 3;
           throw value;
         } else if (arg0 !== 2) {
-          const result = tmp2(9717).setOrientationLockState(closure_128_3);
-          const obj = tmp2(9717);
+          const result = tmp2(9749).setOrientationLockState(closure_128_3);
+          const obj = tmp2(9749);
         }
         dependencyMap = 3;
         const obj6 = { value, done: true };

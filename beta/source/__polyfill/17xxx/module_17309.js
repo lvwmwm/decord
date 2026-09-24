@@ -1,9 +1,18 @@
 // Module ID: 17309
 // Function ID: 17310
-// Dependencies: [1125]
+// Dependencies: [8741]
 
 // Module 17309
-import registerAsset from "module_1125" /* 1125 */;
+import _mod8741 from "module_8741" /* 8741 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "c7e2eadc5cd55417a6c70f428f65fac7", name: "SlashIcon", type: "png" });
+export default _mod8741((arg0, arg1, arg2) => {
+  let num = 1;
+  if (arg2) {
+    num = 0;
+  }
+  arg0[num].push(arg1);
+}, () => {
+  const items = [[], []];
+  return items;
+});

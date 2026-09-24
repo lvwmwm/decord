@@ -1,15 +1,15 @@
-// Module ID: 16365
-// Function ID: 16366
+// Module ID: 16375
+// Function ID: 16376
 // Name: useMessagesSpecs
-// Dependencies: [109, 19, 1078, 558, 568, 5195, 1616, 16366, 16369, 16381, 580, 2]
+// Dependencies: [109, 19, 1078, 558, 568, 5227, 1616, 16376, 16379, 16391, 580, 2]
 
-// Module 16365 (useMessagesSpecs)
+// Module 16375 (useMessagesSpecs)
 import c from "c" /* 568 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import useFontScale from "useFontScale" /* 5195 */;
-import MessagesHeader from "MessagesHeader" /* 16366 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 16369 */;
-import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 16381 */;
+import useFontScale from "useFontScale" /* 5227 */;
+import MessagesHeader from "MessagesHeader" /* 16376 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 16379 */;
+import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 16391 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -27,11 +27,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const fontScale = useFontScale.useFontScale();
   const messagesHeaderHeight = MessagesHeader.getMessagesHeaderHeight(fontScale);
   if (cResult[0] !== fontScale) {
-    const messagesItemChannelSizes = tmp(16369).getMessagesItemChannelSizes(fontScale);
+    const messagesItemChannelSizes = tmp(16379).getMessagesItemChannelSizes(fontScale);
     cResult[0] = fontScale;
     cResult[1] = messagesItemChannelSizes;
     let tmp7 = messagesItemChannelSizes;
-    const tmpResult = tmp(16369);
+    const tmpResult = tmp(16379);
   } else {
     tmp7 = cResult[1];
   }
@@ -49,11 +49,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const sum = useSafeAreaInsetsDefault().top + messagesHeaderHeight;
   if (cResult[5] !== fontScale) {
-    const messagesItemSuggestedFriendHeight = tmp(16381).getMessagesItemSuggestedFriendHeight(fontScale);
+    const messagesItemSuggestedFriendHeight = tmp(16391).getMessagesItemSuggestedFriendHeight(fontScale);
     cResult[5] = fontScale;
     cResult[6] = messagesItemSuggestedFriendHeight;
     let tmp15 = messagesItemSuggestedFriendHeight;
-    const tmpResult2 = tmp(16381);
+    const tmpResult2 = tmp(16391);
   } else {
     tmp15 = cResult[6];
   }
@@ -78,7 +78,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[12] = obj4;
   tmp17 = obj4;
 }) : (() => {
-  fontScale = fontScale(5195).useFontScale();
+  fontScale = fontScale(5227).useFontScale();
   top = top(1616)().top;
   const items = [fontScale, top];
   return noop.useMemo(() => {

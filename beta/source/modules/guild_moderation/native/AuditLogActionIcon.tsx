@@ -1,35 +1,35 @@
-// Module ID: 17986
-// Function ID: 17987
+// Module ID: 17996
+// Function ID: 17997
 // Name: AuditLogActionIcon
-// Dependencies: [19, 17, 17981, 1078, 21, 4758, 580, 17987, 17927, 9035, 4712, 15221, 4700, 8940, 5309, 17205, 5317, 9861, 5293, 12696, 11467, 12691, 17989, 11490, 5291, 9545, 17991, 17992, 17993, 558, 568, 1181, 2]
+// Dependencies: [19, 17, 17991, 1078, 21, 4790, 580, 17997, 17937, 9067, 4744, 15231, 4732, 8972, 5341, 17215, 5349, 9893, 5325, 12732, 11503, 12727, 17999, 11526, 5323, 9577, 18001, 18002, 18003, 558, 568, 1181, 2]
 
-// Module 17986 (AuditLogActionIcon)
+// Module 17996 (AuditLogActionIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import ChatIcon from "ChatIcon" /* 5291 */;
-import RobotIcon2 from "RobotIcon" /* 9545 */;
-import _modDef17991 from "module_17991" /* 17991 */;
-import _modDef17992 from "module_17992" /* 17992 */;
-import _modDef17993 from "module_17993" /* 17993 */;
+import ChatIcon from "ChatIcon" /* 5323 */;
+import RobotIcon2 from "RobotIcon" /* 9577 */;
+import _modDef18001 from "module_18001" /* 18001 */;
+import _modDef18002 from "module_18002" /* 18002 */;
+import _modDef18003 from "module_18003" /* 18003 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const AuditLogRecord = fn(17981);
+const AuditLogRecord = fn(17991);
 ({ getTargetType: closure_4, getActionType: hasOwnProperty } = AuditLogRecord);
 const Constants = fn(1078);
 ({ AuditLogTargetTypes, AuditLogActionTypes: metroRequire, AuditLogActions: closure_7 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { actionImageContainer: { height: 24, width: 24 }, actionImageOverlay: null, iconComponent: null, actionImage: null };
 let size = { borderRadius: nativeDefault.radii.round, width: 13, height: 13, bottom: 0, right: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj2.actionImageOverlay = size;
 obj2.iconComponent = { width: 22, height: 22 };
 obj2.actionImage = { position: "absolute" };
 let closure_10 = createStyles.createStyles(obj2);
-let obj3 = { [ALL]: fn(17987).ListBulletsIcon, [CHANNEL]: fn(17927).ChannelListIcon, [CHANNEL_OVERWRITE]: fn(17927).ChannelListIcon, [EMOJI]: fn(9035).ReactionIcon, [GUILD]: fn(4712).CircleInformationIcon, [GUILD_PROFILE]: fn(4712).CircleInformationIcon, [INTEGRATION]: fn(15221).PuzzlePieceIcon, [INVITE]: fn(4700).LinkIcon, [ROLE]: fn(8940).FlagIcon, [USER]: fn(5309).GroupIcon, [WEBHOOK]: fn(17205).WebhookIcon, [STAGE_INSTANCE]: fn(5317).StageIcon, [GUILD_SCHEDULED_EVENT]: fn(9861).CalendarIcon, [GUILD_SCHEDULED_EVENT_EXCEPTION]: fn(9861).CalendarIcon, [THREAD]: fn(5293).ThreadIcon, [STICKER]: fn(12696).StickerIcon, [APPLICATION_COMMAND]: fn(11467).SlashBoxIcon, [AUTO_MODERATION_RULE]: fn(17205).WebhookIcon, [GUILD_SOUNDBOARD]: fn(12691).SoundboardIcon, [ONBOARDING_PROMPT]: fn(5309).GroupIcon, [GUILD_ONBOARDING]: fn(5309).GroupIcon, [HOME_SETTINGS]: fn(5309).GroupIcon, [GUILD_MEMBER_VERIFICATION]: fn(5309).GroupIcon, [VOICE_CHANNEL_STATUS]: fn(17927).ChannelListIcon, [GUILD_HOME]: fn(17989).HomeIcon, [UNKNOWN]: fn(11490).CircleQuestionIcon };
+let obj3 = { [ALL]: fn(17997).ListBulletsIcon, [CHANNEL]: fn(17937).ChannelListIcon, [CHANNEL_OVERWRITE]: fn(17937).ChannelListIcon, [EMOJI]: fn(9067).ReactionIcon, [GUILD]: fn(4744).CircleInformationIcon, [GUILD_PROFILE]: fn(4744).CircleInformationIcon, [INTEGRATION]: fn(15231).PuzzlePieceIcon, [INVITE]: fn(4732).LinkIcon, [ROLE]: fn(8972).FlagIcon, [USER]: fn(5341).GroupIcon, [WEBHOOK]: fn(17215).WebhookIcon, [STAGE_INSTANCE]: fn(5349).StageIcon, [GUILD_SCHEDULED_EVENT]: fn(9893).CalendarIcon, [GUILD_SCHEDULED_EVENT_EXCEPTION]: fn(9893).CalendarIcon, [THREAD]: fn(5325).ThreadIcon, [STICKER]: fn(12732).StickerIcon, [APPLICATION_COMMAND]: fn(11503).SlashBoxIcon, [AUTO_MODERATION_RULE]: fn(17215).WebhookIcon, [GUILD_SOUNDBOARD]: fn(12727).SoundboardIcon, [ONBOARDING_PROMPT]: fn(5341).GroupIcon, [GUILD_ONBOARDING]: fn(5341).GroupIcon, [HOME_SETTINGS]: fn(5341).GroupIcon, [GUILD_MEMBER_VERIFICATION]: fn(5341).GroupIcon, [VOICE_CHANNEL_STATUS]: fn(17937).ChannelListIcon, [GUILD_HOME]: fn(17999).HomeIcon, [UNKNOWN]: fn(11526).CircleQuestionIcon };
 ({ ALL, CHANNEL, CHANNEL_OVERWRITE, EMOJI, GUILD, GUILD_PROFILE, INTEGRATION, INVITE, ROLE, USER, WEBHOOK, STAGE_INSTANCE, GUILD_SCHEDULED_EVENT, GUILD_SCHEDULED_EVENT_EXCEPTION, THREAD, STICKER, APPLICATION_COMMAND, AUTO_MODERATION_RULE, GUILD_SOUNDBOARD, ONBOARDING_PROMPT, GUILD_ONBOARDING, HOME_SETTINGS, GUILD_MEMBER_VERIFICATION, VOICE_CHANNEL_STATUS, GUILD_HOME, UNKNOWN } = AuditLogTargetTypes);
 let ReactCompilerGating = fn(558);
 let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
@@ -39,19 +39,19 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
   if (cResult[0] !== action) {
     const tmp7 = hasOwnProperty(action);
     if (constants.CREATE === tmp7) {
-      let tmp9 = _modDef17991;
+      let tmp9 = _modDef18001;
       cResult[0] = action;
       cResult[1] = tmp9;
     } else if (tmp8.UPDATE !== tmp7) {
       tmp9 = null;
       if (tmp8.DELETE === tmp7) {
-        tmp9 = _modDef17993;
+        tmp9 = _modDef18003;
       }
     }
-    tmp9 = _modDef17992;
+    tmp9 = _modDef18002;
   } else if (cResult[2] !== action) {
     if (action === constants2.MESSAGE_DELETE) {
-      let RobotIcon = tmp(5291).ChatIcon;
+      let RobotIcon = tmp(5323).ChatIcon;
     } else {
       if (action !== tmp17.AUTO_MODERATION_BLOCK_MESSAGE) {
         if (action !== tmp17.AUTO_MODERATION_FLAG_TO_CHANNEL) {
@@ -62,7 +62,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
           }
         }
       }
-      RobotIcon = tmp(9545).RobotIcon;
+      RobotIcon = tmp(9577).RobotIcon;
     }
     cResult[2] = action;
     cResult[3] = RobotIcon;
@@ -129,13 +129,13 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
   const tmp = closure_10();
   const tmp2 = hasOwnProperty(action);
   if (constants.CREATE === tmp2) {
-    let tmp4 = _modDef17991;
+    let tmp4 = _modDef18001;
   } else if (tmp3.UPDATE === tmp2) {
-    tmp4 = _modDef17992;
+    tmp4 = _modDef18002;
   } else {
     tmp4 = null;
     if (tmp3.DELETE === tmp2) {
-      tmp4 = _modDef17993;
+      tmp4 = _modDef18003;
     }
   }
   if (action === constants2.MESSAGE_DELETE) {

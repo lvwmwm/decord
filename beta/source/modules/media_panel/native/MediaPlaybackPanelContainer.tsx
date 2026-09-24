@@ -1,14 +1,14 @@
-// Module ID: 17655
-// Function ID: 17656
+// Module ID: 17665
+// Function ID: 17666
 // Name: MediaPlaybackPanelContainer
-// Dependencies: [19, 21, 558, 568, 14819, 4385, 17656, 17658, 2]
+// Dependencies: [19, 21, 558, 568, 14857, 4417, 17666, 17668, 2]
 
-// Module 17655 (MediaPlaybackPanelContainer)
+// Module 17665 (MediaPlaybackPanelContainer)
 import c from "c" /* 568 */;
-import _mod4385 from "module_4385" /* 4385 */;
-import MediaPlayerManager from "MediaPlayerManager" /* 14819 */;
-import MediaPlaybackPanelControllerDefault from "MediaPlaybackPanelController" /* 17656 */;
-import MediaPlaybackPanelUIDefault from "MediaPlaybackPanelUI" /* 17658 */;
+import _mod4417 from "module_4417" /* 4417 */;
+import MediaPlayerManager from "MediaPlayerManager" /* 14857 */;
+import MediaPlaybackPanelControllerDefault from "MediaPlaybackPanelController" /* 17666 */;
+import MediaPlaybackPanelUIDefault from "MediaPlaybackPanelUI" /* 17668 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -69,7 +69,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   const tmpResult = MediaPlayerManager;
-  const mediaPlayerManagerStore = tmpResult.useMediaPlayerManagerStore(_mod4385.useShallow(first));
+  const mediaPlayerManagerStore = tmpResult.useMediaPlayerManagerStore(_mod4417.useShallow(first));
   if (cResult[1] !== mediaPlayerManagerStore) {
     let tmp7 = null;
     if (mediaPlayerManagerStore) {

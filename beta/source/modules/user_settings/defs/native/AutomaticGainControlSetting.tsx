@@ -1,9 +1,9 @@
-// Module ID: 15518
-// Function ID: 15519
+// Module ID: 15528
+// Function ID: 15529
 // Name: AutomaticGainControlSetting
-// Dependencies: [1996, 8238, 558, 568, 504, 1119, 11594, 10247, 2]
+// Dependencies: [1996, 8270, 558, 568, 504, 1119, 11630, 10286, 2]
 
-// Module 15518 (AutomaticGainControlSetting)
+// Module 15528 (AutomaticGainControlSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
@@ -11,7 +11,7 @@ import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -36,7 +36,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.cUMdH0);
   },
-  parent: fn(8238).MobileUserSettings.VOICE,
+  parent: fn(8270).MobileUserSettings.VOICE,
   useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -56,7 +56,7 @@ const toggle = SettingBuilders.createToggle({
     const items = [MediaEngineStore];
     return initialize.useStateFromStores(items, () => automaticGainControl.getAutomaticGainControl());
   }),
-  onValueChange: fn(10247).handleAutomaticGainControlChange,
+  onValueChange: fn(10286).handleAutomaticGainControlChange,
   useDescription: function useAutomaticGainControlSettingDescription() {
     const intl = util.intl;
     return intl.string(util.t["6EjbvA"]);

@@ -1,15 +1,15 @@
-// Module ID: 7922
-// Function ID: 7923
+// Module ID: 7954
+// Function ID: 7955
 // Name: EditMessageStore
-// Dependencies: [4978, 2023, 7923, 7927, 504, 577, 2]
+// Dependencies: [5010, 2023, 7955, 7959, 504, 577, 2]
 
-// Module 7922 (EditMessageStore)
+// Module 7954 (EditMessageStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import MessageParserDefault from "MessageParser" /* 7923 */;
-import SlateUtils from "SlateUtils" /* 7927 */;
-import MessageStore from "MessageStore" /* 4978 */;
+import MessageParserDefault from "MessageParser" /* 7955 */;
+import SlateUtils from "SlateUtils" /* 7959 */;
+import MessageStore from "MessageStore" /* 5010 */;
 
 require = fn;
 const dependencyMap = {};

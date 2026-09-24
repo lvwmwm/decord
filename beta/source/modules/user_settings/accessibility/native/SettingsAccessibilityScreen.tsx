@@ -1,21 +1,21 @@
-// Module ID: 15590
-// Function ID: 15591
+// Module ID: 15600
+// Function ID: 15601
 // Name: SettingsAccessibilityScreen
-// Dependencies: [19, 4750, 2024, 8238, 1078, 21, 1119, 2112, 2876, 7626, 7284, 15591, 558, 568, 1488, 565, 11594, 14953, 2]
+// Dependencies: [19, 4782, 2024, 8270, 1078, 21, 1119, 2112, 2876, 7658, 7316, 15601, 558, 568, 1488, 565, 11630, 14988, 2]
 
-// Module 15590 (SettingsAccessibilityScreen)
+// Module 15600 (SettingsAccessibilityScreen)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import useNavigation from "useNavigation" /* 1488 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
 import _modDef2876 from "module_2876" /* 2876 */;
-import openUserSettings from "openUserSettings" /* 7626 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
-import SettingLayoutDefault from "SettingLayout" /* 14953 */;
-import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 15591 */;
+import openUserSettings from "openUserSettings" /* 7658 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
+import SettingLayoutDefault from "SettingLayout" /* 14988 */;
+import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 15601 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2024 */;
 
 require = fn;
@@ -138,7 +138,7 @@ function getAccessibilitySettingScreen(youBarAnimationsOverridden) {
   items1[12] = obj19;
   return items1.filter((item) => null != item);
 }
-const MobileUserSettings = fn(8238).MobileUserSettings;
+const MobileUserSettings = fn(8270).MobileUserSettings;
 const Constants = fn(1078);
 ({ HelpdeskArticles: closure_7, UserSettingsSections: closure_8 } = Constants);
 const jsx = fn(21).jsx;

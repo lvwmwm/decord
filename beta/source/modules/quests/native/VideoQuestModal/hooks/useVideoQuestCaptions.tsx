@@ -1,9 +1,9 @@
-// Module ID: 15401
-// Function ID: 15402
+// Module ID: 15411
+// Function ID: 15412
 // Name: useVideoQuestCaptions
-// Dependencies: [32, 19, 558, 568, 10570, 1275, 15402, 2]
+// Dependencies: [32, 19, 558, 568, 10606, 1275, 15412, 2]
 
-// Module 15401 (useVideoQuestCaptions)
+// Module 15411 (useVideoQuestCaptions)
 import HTTPUtils from "HTTPUtils" /* 1275 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -17,12 +17,12 @@ const result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal
 export const useVideoQuestCaptions = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   const cResult = url(568).c(6);
   let obj = url(568);
-  const questAsset = url(10570).getQuestAsset(quest, url(10570).QuestAssetType.VIDEO_PLAYER_CAPTION, undefined, true);
+  const questAsset = url(10606).getQuestAsset(quest, url(10606).QuestAssetType.VIDEO_PLAYER_CAPTION, undefined, true);
   url = undefined;
   if (questAsset != null) {
     url = questAsset.url;
   }
-  const obj2 = url(10570);
+  const obj2 = url(10606);
   const obj3 = noop;
   [tmp5, dependencyMap] = noop.useState(constants.NONE);
   const tmp4 = _slicedToArray(noop.useState(constants.NONE), 2);
@@ -35,7 +35,7 @@ export const useVideoQuestCaptions = ReactCompilerGating.isReactCompilerEnabled(
         value = HTTP.get(obj);
         value.then((text) => {
           try {
-            closure_1_2(url(15402).parseVtt(text.text).cues);
+            closure_1_2(url(15412).parseVtt(text.text).cues);
             dependencyMap(constants.SUCCESS);
           } catch (err) {
             dependencyMap(constants.ERROR);
@@ -45,7 +45,7 @@ export const useVideoQuestCaptions = ReactCompilerGating.isReactCompilerEnabled(
         });
         const nextPromise = value.then((text) => {
           try {
-            closure_1_2(url(15402).parseVtt(text.text).cues);
+            closure_1_2(url(15412).parseVtt(text.text).cues);
             dependencyMap(constants.SUCCESS);
           } catch (err) {
             dependencyMap(constants.ERROR);
@@ -78,12 +78,12 @@ export const useVideoQuestCaptions = ReactCompilerGating.isReactCompilerEnabled(
   cResult[5] = obj4;
   tmp11 = obj4;
 }) : ((quest) => {
-  const questAsset = url(10570).getQuestAsset(quest, url(10570).QuestAssetType.VIDEO_PLAYER_CAPTION, undefined, true);
+  const questAsset = url(10606).getQuestAsset(quest, url(10606).QuestAssetType.VIDEO_PLAYER_CAPTION, undefined, true);
   url = undefined;
   if (questAsset != null) {
     url = questAsset.url;
   }
-  let obj = url(10570);
+  let obj = url(10606);
   [tmp4, dependencyMap] = noop.useState(constants.NONE);
   const captions = _slicedToArray(noop.useState(null), 2);
   _slicedToArray = captions[1];
@@ -95,7 +95,7 @@ export const useVideoQuestCaptions = ReactCompilerGating.isReactCompilerEnabled(
       value = HTTP.get(obj);
       value.then((text) => {
         try {
-          closure_1_2(url(15402).parseVtt(text.text).cues);
+          closure_1_2(url(15412).parseVtt(text.text).cues);
           dependencyMap(constants.SUCCESS);
         } catch (err) {
           dependencyMap(constants.ERROR);
@@ -105,7 +105,7 @@ export const useVideoQuestCaptions = ReactCompilerGating.isReactCompilerEnabled(
       });
       const nextPromise = value.then((text) => {
         try {
-          closure_1_2(url(15402).parseVtt(text.text).cues);
+          closure_1_2(url(15412).parseVtt(text.text).cues);
           dependencyMap(constants.SUCCESS);
         } catch (err) {
           dependencyMap(constants.ERROR);

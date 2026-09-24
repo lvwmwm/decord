@@ -1,16 +1,16 @@
-// Module ID: 15775
-// Function ID: 15776
+// Module ID: 15785
+// Function ID: 15786
 // Name: UpcomingServerEventNotificationSetting
-// Dependencies: [8238, 558, 15776, 11594, 1119, 2023, 15777, 2]
+// Dependencies: [8270, 558, 15786, 11630, 1119, 2023, 15787, 2]
 
-// Module 15775 (UpcomingServerEventNotificationSetting)
+// Module 15785 (UpcomingServerEventNotificationSetting)
 import util from "util" /* 1119 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import SettingsConstants from "SettingsConstants" /* 8238 */;
-import UpcomingServerEventExperiment from "UpcomingServerEventExperiment" /* 15776 */;
-import UpcomingServerEventNotificationUtils from "UpcomingServerEventNotificationUtils" /* 15777 */;
+import SettingsConstants from "SettingsConstants" /* 8270 */;
+import UpcomingServerEventExperiment from "UpcomingServerEventExperiment" /* 15786 */;
+import UpcomingServerEventNotificationUtils from "UpcomingServerEventNotificationUtils" /* 15787 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
 import size from "module_2" /* 2 */;
 
 let ReactCompilerGating = ReactCompilerGating_mod;

@@ -1,9 +1,9 @@
-// Module ID: 4485
-// Function ID: 4486
+// Module ID: 4517
+// Function ID: 4518
 // Name: TransitionGroup/TransitionGroup
 // Dependencies: [32, 19, 21, 558, 568, 2]
 
-// Module 4485 (TransitionGroup/TransitionGroup)
+// Module 4517 (TransitionGroup/TransitionGroup)
 import c from "c" /* 568 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

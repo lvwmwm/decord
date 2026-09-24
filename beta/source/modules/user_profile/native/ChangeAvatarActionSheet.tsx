@@ -1,19 +1,19 @@
-// Module ID: 14875
-// Function ID: 14876
+// Module ID: 14913
+// Function ID: 14914
 // Name: ChangeAvatarActionSheet
-// Dependencies: [19, 17, 1376, 1078, 21, 4758, 580, 558, 568, 504, 4418, 1119, 8938, 7396, 5822, 8876, 14859, 5903, 7449, 2]
+// Dependencies: [19, 17, 1376, 1078, 21, 4790, 580, 558, 568, 504, 4450, 1119, 8970, 7428, 5854, 8908, 14897, 5935, 7481, 2]
 
-// Module 14875 (ChangeAvatarActionSheet)
+// Module 14913 (ChangeAvatarActionSheet)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
-import TableRow from "TableRow" /* 5822 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
-import UserProfileUpsellButtonDefault from "UserProfileUpsellButton" /* 14859 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4450 */;
+import TableRow from "TableRow" /* 5854 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
+import UserProfileUpsellButtonDefault from "UserProfileUpsellButton" /* 14897 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -22,7 +22,7 @@ const View = fn(17).View;
 const AnalyticsObjects = fn(1078).AnalyticsObjects;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { nitroWheel: { marginLeft: nativeDefault.space.PX_8 }, sublabel: null, label: null, remove: null, upsellButton: null, upsellTitleContainer: null, titleWrapper: null, titleContainer: null };
 let obj3 = { marginLeft: nativeDefault.space.PX_8 };
 obj2.sublabel = { color: nativeDefault.colors.TEXT_DEFAULT };
@@ -77,7 +77,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[5] !== tmp11) {
     let tmp18 = tmp11;
     if (tmp11) {
-      tmp18 = timestampProducer(tmp(8938).NitroWheelIcon, {});
+      tmp18 = timestampProducer(tmp(8970).NitroWheelIcon, {});
     }
     cResult[5] = tmp11;
     cResult[6] = tmp18;
@@ -106,7 +106,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[13] !== handleUploadAvatarSelect) {
         const obj2 = { label: tmp23, subLabel: tmp22, onPress: handleUploadAvatarSelect };
-        const tmp28 = timestampProducer(tmp(5822).TableRow, obj2);
+        const tmp28 = timestampProducer(tmp(5854).TableRow, obj2);
         cResult[13] = handleUploadAvatarSelect;
         cResult[14] = tmp28;
         let tmp26 = tmp28;
@@ -150,7 +150,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                 const obj4 = { children: null };
                                 const items1 = [tmp20, tmp48];
                                 obj4.children = items1;
-                                const tmp53 = React5(tmp(7449).ActionSheet, obj4);
+                                const tmp53 = React5(tmp(7481).ActionSheet, obj4);
                                 cResult[38] = tmp48;
                                 cResult[39] = tmp20;
                                 cResult[40] = tmp53;
@@ -162,7 +162,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         const obj5 = { hasIcons: false, children: null };
                         const items2 = [tmp26, tmp29, tmp32, tmp41, tmp45];
                         obj5.children = items2;
-                        const tmp50 = React5(tmp(5903).TableRowGroup, obj5);
+                        const tmp50 = React5(tmp(5935).TableRowGroup, obj5);
                         cResult[32] = tmp26;
                         cResult[33] = tmp29;
                         cResult[34] = tmp32;
@@ -182,9 +182,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     obj7.style = items3;
                     const intl9 = tmp(1119).intl;
                     obj7.text = intl9.string(tmp(1119).t.twB3fz);
-                    obj6.label = timestampProducer(tmp(8876).FormLabel, obj7);
+                    obj6.label = timestampProducer(tmp(8908).FormLabel, obj7);
                     obj6.onPress = handleRemoveAvatarSelect;
-                    tmp46 = timestampProducer(tmp(5822).TableRow, obj6);
+                    tmp46 = timestampProducer(tmp(5854).TableRow, obj6);
                   }
                   cResult[27] = handleRemoveAvatarSelect;
                   cResult[28] = tmp5;
@@ -200,10 +200,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   const obj10 = { text: null };
                   const intl8 = tmp(1119).intl;
                   obj10.text = intl8.string(tmp(1119).t.BVcYCx);
-                  obj9.children = timestampProducer(tmp(8876).FormLabel, obj10);
+                  obj9.children = timestampProducer(tmp(8908).FormLabel, obj10);
                   obj8.label = timestampProducer(View, obj9);
                   obj8.onPress = handleEditAvatarDecorationSelect;
-                  tmp42 = timestampProducer(tmp(5822).TableRow, obj8);
+                  tmp42 = timestampProducer(tmp(5854).TableRow, obj8);
                 }
                 cResult[24] = handleEditAvatarDecorationSelect;
                 cResult[25] = tmp6.upsellTitleContainer;
@@ -220,16 +220,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj13 = { text: null };
           const intl5 = tmp(1119).intl;
           obj13.text = intl5.string(tmp(1119).t.xZ0Wot);
-          const items4 = [timestampProducer(tmp(8876).FormLabel, obj13), ];
+          const items4 = [timestampProducer(tmp(8908).FormLabel, obj13), ];
           const obj14 = { style: tmp6.nitroWheel, size: "sm" };
-          items4[1] = timestampProducer(tmp(8938).NitroWheelIcon, obj14);
+          items4[1] = timestampProducer(tmp(8970).NitroWheelIcon, obj14);
           obj12.children = items4;
           obj11.label = React5(View, obj12);
           const obj15 = { children: null };
           const obj16 = { style: tmp6.sublabel, numberOfLines: 3, text: null };
           const intl6 = tmp(1119).intl;
           obj16.text = intl6.string(tmp(1119).t.L3UPqR);
-          const items5 = [timestampProducer(tmp(8876).FormSubLabel, obj16), ];
+          const items5 = [timestampProducer(tmp(8908).FormSubLabel, obj16), ];
           const obj17 = { style: tmp6.upsellButton, children: null };
           const obj18 = { analyticsObject: AnalyticsObjects.ANIMATED_AVATAR, label: null };
           const intl7 = tmp(1119).intl;
@@ -238,7 +238,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           items5[1] = timestampProducer(View, obj17);
           obj15.children = items5;
           obj11.subLabel = React5(closure_1_8, obj15);
-          tmp33 = timestampProducer(tmp(5822).TableRow, obj11);
+          tmp33 = timestampProducer(tmp(5854).TableRow, obj11);
         }
         cResult[18] = tmp4;
         cResult[19] = tmp6.nitroWheel;
@@ -254,7 +254,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const intl4 = tmp(1119).intl;
         obj19.label = intl4.string(tmp(1119).t["xsC+/y"]);
         obj19.onPress = handleUploadGIFAvatarSelect;
-        tmp30 = timestampProducer(tmp(5822).TableRow, obj19);
+        tmp30 = timestampProducer(tmp(5854).TableRow, obj19);
       }
       cResult[15] = tmp14;
       cResult[16] = handleUploadGIFAvatarSelect;
@@ -286,7 +286,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const intl = util.intl;
   obj4.title = intl.string(util.t.lqaIxI);
   if (isPremiumResult) {
-    isPremiumResult = tmp8(tmp2(8938).NitroWheelIcon, {});
+    isPremiumResult = tmp8(tmp2(8970).NitroWheelIcon, {});
   }
   obj4.trailing = isPremiumResult;
   ({ titleWrapper: obj3.titleWrapperStyle, titleContainer: obj3.titleContainerStyle } = tmp);
@@ -304,7 +304,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl4 = tmp2(1119).intl;
     obj6.label = intl4.string(tmp2(1119).t["xsC+/y"]);
     obj6.onPress = handleUploadGIFAvatarSelect;
-    tmp8Result = tmp8(tmp2(5822).TableRow, obj6);
+    tmp8Result = tmp8(tmp2(5854).TableRow, obj6);
   }
   items2[1] = tmp8Result;
   if (showAnimatedAvatarUpsell) {
@@ -313,16 +313,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj9 = { text: null };
     const intl5 = tmp2(1119).intl;
     obj9.text = intl5.string(tmp2(1119).t.xZ0Wot);
-    const items3 = [tmp8(tmp2(8876).FormLabel, obj9), ];
+    const items3 = [tmp8(tmp2(8908).FormLabel, obj9), ];
     const obj10 = { style: tmp.nitroWheel, size: "sm" };
-    items3[1] = tmp8(tmp2(8938).NitroWheelIcon, obj10);
+    items3[1] = tmp8(tmp2(8970).NitroWheelIcon, obj10);
     obj8.children = items3;
     obj7.label = tmp7(View, obj8);
     const obj11 = { children: null };
     const obj12 = { style: tmp.sublabel, numberOfLines: 3, text: null };
     const intl6 = tmp2(1119).intl;
     obj12.text = intl6.string(tmp2(1119).t.L3UPqR);
-    const items4 = [tmp8(tmp2(8876).FormSubLabel, obj12), ];
+    const items4 = [tmp8(tmp2(8908).FormSubLabel, obj12), ];
     const obj13 = { style: tmp.upsellButton, children: null };
     const obj14 = { analyticsObject: AnalyticsObjects.ANIMATED_AVATAR, label: null };
     const intl7 = tmp2(1119).intl;
@@ -331,7 +331,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items4[1] = tmp8(View, obj13);
     obj11.children = items4;
     obj7.subLabel = tmp7(closure_1_8, obj11);
-    showAnimatedAvatarUpsell = tmp8(tmp2(5822).TableRow, obj7);
+    showAnimatedAvatarUpsell = tmp8(tmp2(5854).TableRow, obj7);
     const tmp5Result = UserProfileUpsellButtonDefault;
   }
   items2[2] = showAnimatedAvatarUpsell;
@@ -342,10 +342,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj17 = { text: null };
     const intl8 = tmp2(1119).intl;
     obj17.text = intl8.string(tmp2(1119).t.BVcYCx);
-    obj16.children = tmp8(tmp2(8876).FormLabel, obj17);
+    obj16.children = tmp8(tmp2(8908).FormLabel, obj17);
     obj15.label = tmp8(View, obj16);
     obj15.onPress = handleEditAvatarDecorationSelect;
-    tmp8Result2 = tmp8(tmp2(5822).TableRow, obj15);
+    tmp8Result2 = tmp8(tmp2(5854).TableRow, obj15);
   }
   items2[3] = tmp8Result2;
   if (flag) {
@@ -356,9 +356,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj19.style = items5;
     const intl9 = tmp2(1119).intl;
     obj19.text = intl9.string(tmp2(1119).t.twB3fz);
-    obj18.label = tmp8(tmp2(8876).FormLabel, obj19);
+    obj18.label = tmp8(tmp2(8908).FormLabel, obj19);
     obj18.onPress = handleRemoveAvatarSelect;
-    flag = tmp8(tmp2(5822).TableRow, obj18);
+    flag = tmp8(tmp2(5854).TableRow, obj18);
   }
   const obj36 = { children: null };
   items2[4] = flag;

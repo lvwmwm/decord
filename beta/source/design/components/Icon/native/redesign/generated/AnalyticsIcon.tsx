@@ -1,13 +1,13 @@
-// Module ID: 10676
-// Function ID: 10677
+// Module ID: 10712
+// Function ID: 10713
 // Name: AnalyticsIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 10677, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 10713, 4493, 2]
 
-// Module 10676 (AnalyticsIcon)
+// Module 10712 (AnalyticsIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod10677 from "module_10677" /* 10677 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod10713 from "module_10713" /* 10713 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const AnalyticsIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(10677);
+    const tmpResult = tmp(10713);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const AnalyticsIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10677, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10713, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

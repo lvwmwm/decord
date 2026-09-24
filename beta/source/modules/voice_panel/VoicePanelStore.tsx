@@ -1,9 +1,9 @@
-// Module ID: 4966
-// Function ID: 4967
+// Module ID: 4998
+// Function ID: 4999
 // Name: VoicePanelStore
 // Dependencies: [1247, 1252, 2]
 
-// Module 4966 (VoicePanelStore)
+// Module 4998 (VoicePanelStore)
 import identity from "module_1247" /* 1247 */;
 import size from "module_2" /* 2 */;
 

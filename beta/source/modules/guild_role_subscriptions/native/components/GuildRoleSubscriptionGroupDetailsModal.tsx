@@ -1,31 +1,31 @@
-// Module ID: 18191
-// Function ID: 18192
+// Module ID: 18201
+// Function ID: 18202
 // Name: GuildRoleSubscriptionGroupDetailsModal
-// Dependencies: [32, 19, 17, 18192, 15464, 1078, 21, 4758, 558, 568, 14169, 18187, 1119, 10051, 18193, 4754, 15476, 8876, 18196, 2]
+// Dependencies: [32, 19, 17, 18202, 15474, 1078, 21, 4790, 558, 568, 14206, 18197, 1119, 10090, 18203, 4786, 15486, 8908, 18206, 2]
 
-// Module 18191 (GuildRoleSubscriptionGroupDetailsModal)
+// Module 18201 (GuildRoleSubscriptionGroupDetailsModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Form from "Form" /* 8876 */;
-import FormHeaderDefault from "FormHeader" /* 10051 */;
-import FormStylesDefault from "FormStyles" /* 14169 */;
-import FormSeparatorDefault from "FormSeparator" /* 15476 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18187 */;
-import FormImagePicker from "FormImagePicker" /* 18193 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18196 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Form from "Form" /* 8908 */;
+import FormHeaderDefault from "FormHeader" /* 10090 */;
+import FormStylesDefault from "FormStyles" /* 14206 */;
+import FormSeparatorDefault from "FormSeparator" /* 15486 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18197 */;
+import FormImagePicker from "FormImagePicker" /* 18203 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18206 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18192 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18202 */;
 
 require = fn;
 const View = fn(17).View;
-const GuildRoleSubscriptionsConstants = fn(15464);
+const GuildRoleSubscriptionsConstants = fn(15474);
 ({ GuildRoleSubscriptionsTierScenes: metroRequire, MAX_SUBSCRIPTION_TIER_DESCRIPTION_LENGTH: closure_7 } = GuildRoleSubscriptionsConstants);
 const UPLOAD_BANNER_SIZE = fn(1078).UPLOAD_BANNER_SIZE;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_12 = createStyles.createStyles({ coverPhoto: { height: 114, width: "100%" }, coverDescription: { marginTop: 16 }, paddedContainer: { paddingHorizontal: 16 } });
 let ReactCompilerGating = fn(558);
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -44,7 +44,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] !== tmp6.header) {
     const obj3 = { style: tmp6.header, children: first };
-    const tmp12 = options(tmp5(10051), obj3);
+    const tmp12 = options(tmp5(10090), obj3);
     cResult[1] = tmp6.header;
     cResult[2] = tmp12;
     let tmp10 = tmp12;
@@ -68,7 +68,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[9] !== tmp4.coverDescription) {
           const obj4 = { style: tmp4.coverDescription, variant: "text-sm/medium", color: "text-default", children: tmp16 };
-          const tmp20 = options(tmp(4754).Text, obj4);
+          const tmp20 = options(tmp(4786).Text, obj4);
           cResult[9] = tmp4.coverDescription;
           cResult[10] = tmp20;
           let tmp18 = tmp20;
@@ -82,7 +82,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             if (cResult[15] !== tmp4.paddedContainer) {
               const obj5 = { style: tmp4.paddedContainer };
-              const tmp27 = options(tmp5(15476), obj5);
+              const tmp27 = options(tmp5(15486), obj5);
               cResult[15] = tmp4.paddedContainer;
               cResult[16] = tmp27;
               let tmp25 = tmp27;
@@ -100,7 +100,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             if (cResult[18] !== tmp6.header) {
               const obj6 = { style: tmp6.header, children: tmp28 };
-              const tmp32 = options(tmp5(10051), obj6);
+              const tmp32 = options(tmp5(10090), obj6);
               cResult[18] = tmp6.header;
               cResult[19] = tmp32;
               let tmp30 = tmp32;
@@ -149,7 +149,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
             }
             const obj8 = { style: tmp6.textInput, showTopContainer: false, multiline: true, maxLength, numberOfLines: 3, value: description, placeholder: tmp33, onChange: setDescription, disabled: roleSubscriptionSettingsDisabled };
-            const tmp38 = options(tmp(8876).FormInput, obj8);
+            const tmp38 = options(tmp(8908).FormInput, obj8);
             cResult[21] = description;
             cResult[22] = tmp6.textInput;
             cResult[23] = roleSubscriptionSettingsDisabled;

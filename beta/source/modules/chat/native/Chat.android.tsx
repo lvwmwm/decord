@@ -1,29 +1,29 @@
-// Module ID: 12025
-// Function ID: 12026
+// Module ID: 12061
+// Function ID: 12062
 // Name: Chat
-// Dependencies: [19, 4750, 21, 4758, 558, 568, 6891, 12026, 12029, 504, 10560, 2]
+// Dependencies: [19, 4782, 21, 4790, 558, 568, 6923, 12062, 12065, 504, 10596, 2]
 
-// Module 12025 (Chat)
+// Module 12061 (Chat)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
-import ChatNativeComponentDefault from "ChatNativeComponent" /* 10560 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12026 */;
-import ChatListNativeComponentDefault from "ChatListNativeComponent" /* 12029 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6923 */;
+import ChatNativeComponentDefault from "ChatNativeComponent" /* 10596 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12062 */;
+import ChatListNativeComponentDefault from "ChatListNativeComponent" /* 12065 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ chatList: { flex: 1 } });
 let ReactCompilerGating = fn(558);
 let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(4);
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const Gesture = tmp(6891).Gesture;
+    const Gesture = tmp(6923).Gesture;
     const NativeResult = Gesture.Native();
     const result = Gesture.Native().disallowInterruption(true).shouldCancelWhenOutside(false);
     cResult[0] = result;
@@ -33,7 +33,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp9 = hasOwnProperty(tmp(12026).TTIFirstContentfulPaint, { label: "chat_list_android" });
+    const tmp9 = hasOwnProperty(tmp(12062).TTIFirstContentfulPaint, { label: "chat_list_android" });
     cResult[1] = tmp9;
     let tmp7 = tmp9;
   } else {
@@ -43,7 +43,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { gesture: first, children: null };
     const obj3 = { style: tmp4.chatList, floatingChatInputEnabled: true, children: tmp7 };
     obj2.children = hasOwnProperty(ChatListNativeComponentDefault, obj3);
-    const tmp13 = hasOwnProperty(tmp(6891).GestureDetector, obj2);
+    const tmp13 = hasOwnProperty(tmp(6923).GestureDetector, obj2);
     cResult[2] = tmp4.chatList;
     cResult[3] = tmp13;
     let tmp10 = tmp13;

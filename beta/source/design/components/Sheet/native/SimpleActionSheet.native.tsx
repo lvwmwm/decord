@@ -1,11 +1,11 @@
-// Module ID: 7443
-// Function ID: 7444
+// Module ID: 7475
+// Function ID: 7476
 // Name: SimpleActionSheet
-// Dependencies: [19, 21, 558, 568, 7396, 7444, 7445, 7449, 2]
+// Dependencies: [19, 21, 558, 568, 7428, 7476, 7477, 7481, 2]
 
-// Module 7443 (SimpleActionSheet)
-import ActionSheetRow from "ActionSheetRow" /* 7445 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
+// Module 7475 (SimpleActionSheet)
+import ActionSheetRow from "ActionSheetRow" /* 7477 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,10 +24,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hideActionSheet) => 
       let tmp7Result = null;
       if (null != header.onClose) {
         const obj4 = { onPress: header.onClose };
-        tmp7Result = tmp7(tmp(7444).ActionSheetCloseButton, obj4);
+        tmp7Result = tmp7(tmp(7476).ActionSheetCloseButton, obj4);
       }
       obj3.trailing = tmp7Result;
-      tmp7Result2 = tmp7(tmp(7396).BottomSheetTitleHeader, obj3);
+      tmp7Result2 = tmp7(tmp(7428).BottomSheetTitleHeader, obj3);
     }
     cResult[0] = header;
     cResult[1] = tmp7Result2;
@@ -50,14 +50,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hideActionSheet) => 
         const obj5 = { children: null };
         const items = [tmp4, tmp12];
         obj5.children = items;
-        const tmp17 = closure_3(tmp(7449).ActionSheet, obj5);
+        const tmp17 = closure_3(tmp(7481).ActionSheet, obj5);
         cResult[10] = tmp4;
         cResult[11] = tmp12;
         cResult[12] = tmp17;
         tmp15 = tmp17;
       }
       const obj9 = { hasIcons, children: cResult[4] };
-      const tmp14 = closure_2(tmp(7445).ActionSheetRow.Group, obj9);
+      const tmp14 = closure_2(tmp(7477).ActionSheetRow.Group, obj9);
       cResult[7] = hasIcons;
       cResult[8] = cResult[4];
       cResult[9] = tmp14;
@@ -70,7 +70,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hideActionSheet) => 
       ({ label, isDestructive } = arg0);
       if (null != icon) {
         const obj = { source: icon, IconComponent };
-        const tmp = closure_1_2(hideActionSheet(7445).ActionSheetRow.Icon, obj);
+        const tmp = closure_1_2(hideActionSheet(7477).ActionSheetRow.Icon, obj);
       }
       const obj2 = { icon: tmp, variant: null, label: null, onPress: null };
       let str = "default";
@@ -83,7 +83,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hideActionSheet) => 
         hideActionSheet();
         closure_1_0();
       };
-      return closure_1_2(hideActionSheet(7445).ActionSheetRow, obj2, arg1);
+      return closure_1_2(hideActionSheet(7477).ActionSheetRow, obj2, arg1);
     };
     cResult[5] = hideActionSheet;
     cResult[6] = fn;
@@ -104,10 +104,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hideActionSheet) => 
     let tmp5Result = null;
     if (null != header.onClose) {
       let obj2 = { onPress: header.onClose };
-      tmp5Result = tmp5(tmp2(7444).ActionSheetCloseButton, obj2);
+      tmp5Result = tmp5(tmp2(7476).ActionSheetCloseButton, obj2);
     }
     obj.trailing = tmp5Result;
-    tmp5Result2 = tmp5(tmp2(7396).BottomSheetTitleHeader, obj);
+    tmp5Result2 = tmp5(tmp2(7428).BottomSheetTitleHeader, obj);
   }
   const obj3 = { children: null };
   const items = [

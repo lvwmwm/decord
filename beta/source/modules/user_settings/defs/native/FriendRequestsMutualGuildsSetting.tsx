@@ -1,15 +1,15 @@
-// Module ID: 15245
-// Function ID: 15246
+// Module ID: 15255
+// Function ID: 15256
 // Name: FriendRequestsMutualGuildsSetting
-// Dependencies: [19, 8238, 1078, 558, 15091, 568, 2023, 7241, 1389, 11594, 1119, 2]
+// Dependencies: [19, 8270, 1078, 558, 15094, 568, 2023, 7273, 1389, 11630, 1119, 2]
 
-// Module 15245 (FriendRequestsMutualGuildsSetting)
+// Module 15255 (FriendRequestsMutualGuildsSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import FlagUtilsAll from "FlagUtils" /* 1389 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7241 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15091 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7273 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15094 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ let ReactCompilerGating = fn(558);
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = fn(558);
 fn = () => useParentalControlSettings.useIsParentallyControlled();
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   const FriendSourceFlagsSetting = UserSettings.FriendSourceFlagsSetting;
@@ -44,7 +44,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.mozb8f);
   },
-  parent: fn(8238).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: fn(8270).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     const FriendSourceFlagsSetting = UserSettings.FriendSourceFlagsSetting;

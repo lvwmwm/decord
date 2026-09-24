@@ -1,23 +1,23 @@
-// Module ID: 14238
-// Function ID: 14239
+// Module ID: 14275
+// Function ID: 14276
 // Name: GuildActionSheetDirectory
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1616, 14239, 14182, 6863, 7397, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1616, 14276, 14219, 6895, 7429, 2]
 
-// Module 14238 (GuildActionSheetDirectory)
+// Module 14275 (GuildActionSheetDirectory)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import BottomSheetModal from "BottomSheetModal" /* 6863 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import GuildActionSheetActions from "GuildActionSheetActions" /* 14182 */;
-import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 14239 */;
+import BottomSheetModal from "BottomSheetModal" /* 6895 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import GuildActionSheetActions from "GuildActionSheetActions" /* 14219 */;
+import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 14276 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, actions: { paddingHorizontal: 16, gap: 24 } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -49,9 +49,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[4] !== guild) {
     const obj4 = { guild };
-    const tmp14 = React4(tmp(14182).GuildActionSheetDirectoryActions, obj4);
+    const tmp14 = React4(tmp(14219).GuildActionSheetDirectoryActions, obj4);
     const obj5 = { guild };
-    const tmp15 = React4(tmp(14182).GuildDeveloperOptionAction, obj5);
+    const tmp15 = React4(tmp(14219).GuildDeveloperOptionAction, obj5);
     cResult[4] = guild;
     cResult[5] = tmp14;
     cResult[6] = tmp15;
@@ -79,7 +79,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return tmp21;
             }
             const obj6 = { scrollable: true, startExpanded: tmp4, children: tmp18 };
-            const tmp23 = React4(tmp(7397).BottomSheet, obj6);
+            const tmp23 = React4(tmp(7429).BottomSheet, obj6);
             cResult[16] = tmp4;
             cResult[17] = tmp18;
             cResult[18] = tmp23;
@@ -90,7 +90,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj7 = { scrollsToTop: false, style: tmp5.container, contentContainerStyle: tmp7, children: null };
       const items = [tmp8, tmp16];
       obj7.children = items;
-      const tmp20 = hasOwnProperty(tmp(6863).BottomSheetScrollView, obj7);
+      const tmp20 = hasOwnProperty(tmp(6895).BottomSheetScrollView, obj7);
       cResult[11] = tmp5.container;
       cResult[12] = tmp7;
       cResult[13] = tmp8;

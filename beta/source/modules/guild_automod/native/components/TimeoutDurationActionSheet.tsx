@@ -1,23 +1,23 @@
-// Module ID: 17973
-// Function ID: 17974
+// Module ID: 17983
+// Function ID: 17984
 // Name: TimeoutDurationActionSheet
-// Dependencies: [19, 11993, 2111, 21, 558, 568, 17952, 4725, 7449, 7396, 4754, 1119, 5901, 5900, 2]
+// Dependencies: [19, 12029, 2111, 21, 558, 568, 17962, 4757, 7481, 7428, 4786, 1119, 5933, 5932, 2]
 
-// Module 17973 (TimeoutDurationActionSheet)
+// Module 17983 (TimeoutDurationActionSheet)
 import util from "util" /* 1119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import TableRadioRow from "TableRadioRow" /* 5900 */;
-import TableRadioGroup from "TableRadioGroup" /* 5901 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import ActionSheet2 from "ActionSheet" /* 7449 */;
-import getActionInfo from "getActionInfo" /* 17952 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import TableRadioRow from "TableRadioRow" /* 5932 */;
+import TableRadioGroup from "TableRadioGroup" /* 5933 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import ActionSheet2 from "ActionSheet" /* 7481 */;
+import getActionInfo from "getActionInfo" /* 17962 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const AutomodActionType = fn(11993).AutomodActionType;
+const AutomodActionType = fn(12029).AutomodActionType;
 let closure_4 = fn(2111).getDisableCommunicationDurationOptions;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
@@ -150,7 +150,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRemove) => {
       if (cResult[19] === onSelectDuration) {
         let tmp19 = cResult[20];
       }
-      const ActionSheet = tmp(7449).ActionSheet;
+      const ActionSheet = tmp(7481).ActionSheet;
       let str;
       if (tmp4 != null) {
         str = tmp4.headerText;
@@ -160,7 +160,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRemove) => {
       }
       if (cResult[21] !== str) {
         const obj4 = { title: str };
-        const tmp22 = closure_5(tmp(7396).BottomSheetTitleHeader, obj4);
+        const tmp22 = closure_5(tmp(7428).BottomSheetTitleHeader, obj4);
         cResult[21] = str;
         cResult[22] = tmp22;
         let tmp20 = tmp22;
@@ -172,7 +172,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRemove) => {
         const obj5 = { variant: "text-md/normal", children: null };
         const intl = tmp(1119).intl;
         obj5.children = intl.string(tmp(1119).t.DWGBAh);
-        const tmp26 = closure_5(tmp(4754).Text, obj5);
+        const tmp26 = closure_5(tmp(4786).Text, obj5);
         cResult[23] = tmp26;
         let tmp24 = tmp26;
       } else {
@@ -209,7 +209,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRemove) => {
         const obj6 = { value, label: null };
         const intl2 = tmp(1119).intl;
         obj6.label = intl2.string(tmp(1119).t.PoWNfe);
-        cResult[24] = closure_5(tmp(5900).TableRadioRow, obj6);
+        cResult[24] = closure_5(tmp(5932).TableRadioRow, obj6);
         class M {
           constructor(arg0) {
             obj = closure_1(closure_2[7]);
@@ -226,7 +226,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRemove) => {
             return;
           }
         }
-        const tmp33 = closure_5(tmp(5900).TableRadioRow, obj6);
+        const tmp33 = closure_5(tmp(5932).TableRadioRow, obj6);
       }
       const _Symbol3 = Symbol;
       if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
@@ -317,7 +317,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRemove) => {
     arr = closure_4();
   }
   const obj = onSelectDuration(568);
-  const actionInfo = onSelectDuration(17952).getActionInfo(AutomodActionType.USER_COMMUNICATION_DISABLED, action, triggerType);
+  const actionInfo = onSelectDuration(17962).getActionInfo(AutomodActionType.USER_COMMUNICATION_DISABLED, action, triggerType);
   cResult[0] = action;
   cResult[1] = triggerType;
   cResult[2] = actionInfo;

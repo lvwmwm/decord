@@ -1,26 +1,26 @@
-// Module ID: 15389
-// Function ID: 15390
+// Module ID: 15399
+// Function ID: 15400
 // Name: VideoQuestPlayer
-// Dependencies: [32, 19, 7946, 5663, 21, 558, 568, 15382, 11607, 10570, 4383, 15281, 15390, 7965, 15392, 1367, 11636, 10564, 15400, 15298, 2]
+// Dependencies: [32, 19, 7978, 5695, 21, 558, 568, 15392, 11643, 10606, 4415, 15291, 15400, 7997, 15402, 1367, 11672, 10600, 15410, 15308, 2]
 
-// Module 15389 (VideoQuestPlayer)
-import QuestActionCreators from "QuestActionCreators" /* 10564 */;
-import AssetUtils from "AssetUtils" /* 10570 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 11636 */;
-import SimpleMuxWrapper from "SimpleMuxWrapper" /* 15392 */;
-import VideoQuestCaptions from "VideoQuestCaptions" /* 15400 */;
+// Module 15399 (VideoQuestPlayer)
+import QuestActionCreators from "QuestActionCreators" /* 10600 */;
+import AssetUtils from "AssetUtils" /* 10606 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 11672 */;
+import SimpleMuxWrapper from "SimpleMuxWrapper" /* 15402 */;
+import VideoQuestCaptions from "VideoQuestCaptions" /* 15410 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 7946 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 7978 */;
 
 require = fn;
-const QuestsExperimentLocations = fn(5663).QuestsExperimentLocations;
+const QuestsExperimentLocations = fn(5695).QuestsExperimentLocations;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestPlayer.tsx");
 
-export const PlayerState = fn(15281).PlayerState;
+export const PlayerState = fn(15291).PlayerState;
 export const VideoQuestPlayer = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onEnd) => {
   const cResult = onLoad(onToggleFullscreen[6]).c(100);
   ({ style, onLoad } = onEnd);
@@ -246,7 +246,7 @@ export const VideoQuestPlayer = noop.memo(ReactCompilerGating.isReactCompilerEna
             ({ Version: obj4.appVersion, ReleaseChannel: obj4.releaseChannel } = constants);
             const obj5 = { contentId: arr, videoStreamType: str, contentType: "quests", durationMs: 1000 * targetSeconds, title: videoTitle, questId: id, gameName: gameTitle };
             obj3.contentMetadata = obj5;
-            const mobileMuxWrapper = new tmp2(15392).MobileMuxWrapper(obj3);
+            const mobileMuxWrapper = new tmp2(15402).MobileMuxWrapper(obj3);
             ref2.current = mobileMuxWrapper;
             let current = ref2.current;
             current.initialize();

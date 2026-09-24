@@ -1,26 +1,26 @@
-// Module ID: 12853
-// Function ID: 12854
+// Module ID: 12889
+// Function ID: 12890
 // Name: NUFGuildTemplates
-// Dependencies: [5, 19, 17, 4584, 1078, 12854, 7221, 21, 5739, 12637, 11471, 12855, 12893, 1245, 1253, 5839, 12830, 1105, 12857, 12859, 12481, 1119, 12862, 12863, 12894, 12876, 558, 568, 7246, 2]
+// Dependencies: [5, 19, 17, 4616, 1078, 12890, 7253, 21, 5771, 12673, 11507, 12891, 12929, 1245, 1253, 5871, 12866, 1105, 12893, 12895, 12517, 1119, 12898, 12899, 12930, 12912, 558, 568, 7278, 2]
 
-// Module 12853 (NUFGuildTemplates)
+// Module 12889 (NUFGuildTemplates)
 import c from "c" /* 568 */;
 import router_utils from "router_utils" /* 1105 */;
 import util from "util" /* 1119 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import Navigator from "Navigator" /* 7246 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12830 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12855 */;
-import GuildTemplatesDefault from "GuildTemplates" /* 12857 */;
-import CreationIntentDefault from "CreationIntent" /* 12859 */;
-import components_JoinServerDefault from "components/JoinServer" /* 12862 */;
-import AcceptInviteContainerDefault from "AcceptInviteContainer" /* 12863 */;
-import HubEmailConnectionModalDefault from "HubEmailConnectionModal" /* 12876 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5771 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import Navigator from "Navigator" /* 7278 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12866 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12891 */;
+import GuildTemplatesDefault from "GuildTemplates" /* 12893 */;
+import CreationIntentDefault from "CreationIntent" /* 12895 */;
+import components_JoinServerDefault from "components/JoinServer" /* 12898 */;
+import AcceptInviteContainerDefault from "AcceptInviteContainer" /* 12899 */;
+import HubEmailConnectionModalDefault from "HubEmailConnectionModal" /* 12912 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4584 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4616 */;
 
 require = fn;
 function onCreateGuild() {
@@ -218,7 +218,7 @@ function getScreens() {
       };
       const intl = guildTemplate(1119).intl;
       obj.customTitle = intl.string(guildTemplate(1119).t["5HZu07"]);
-      return closure_14(closure_1(12481), obj);
+      return closure_14(closure_1(12517), obj);
     }
   };
   const obj5 = {
@@ -247,7 +247,7 @@ function getScreens() {
       };
       const intl = guildTemplate(1119).intl;
       obj.customTitle = intl.string(guildTemplate(1119).t["5HZu07"]);
-      return closure_14(closure_1(12481), obj);
+      return closure_14(closure_1(12517), obj);
     }
   };
   impressionProperties[constants.JOIN_SERVER] = {
@@ -325,7 +325,7 @@ function getScreens() {
       };
       const intl = guildId(1119).intl;
       obj.buttonText = intl.string(guildId(1119).t["uHXB+F"]);
-      return closure_14(closure_1(12894), obj);
+      return closure_14(closure_1(12930), obj);
     }
   };
   const obj9 = {
@@ -349,8 +349,8 @@ function getScreens() {
 const Keyboard = fn(17).Keyboard;
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_7, AnalyticsSections: closure_8, NOOP: closure_9 } = Constants);
-const GuildTemplateId = fn(12854).GuildTemplateId;
-const CreateGuildConstants = fn(7221);
+const GuildTemplateId = fn(12890).GuildTemplateId;
+const CreateGuildConstants = fn(7253);
 ({ CreateGuildModalStates: closure_11, GuildTemplateTriggers: closure_12, NUXGuildTemplatesAnalytics: map1 } = CreateGuildConstants);
 const jsx = fn(21).jsx;
 let impressionProperties = { impression_group: fn(1253).ImpressionGroups.GUILD_ADD_FLOW };
@@ -372,7 +372,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl = tmp(1119).intl;
     obj2.headerBackTitle = intl.string(tmp(1119).t["13/7kX"]);
     obj2.initialRouteName = constants.GUILD_TEMPLATES;
-    const tmp11 = jsx(tmp(7246).Navigator, { screens: first, onWillFocus: Keyboard.dismiss, headerBackTitle: null, initialRouteName: null });
+    const tmp11 = jsx(tmp(7278).Navigator, { screens: first, onWillFocus: Keyboard.dismiss, headerBackTitle: null, initialRouteName: null });
     cResult[1] = tmp11;
     let tmp7 = tmp11;
   } else {

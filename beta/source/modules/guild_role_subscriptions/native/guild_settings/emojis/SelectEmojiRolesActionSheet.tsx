@@ -1,19 +1,19 @@
-// Module ID: 18244
-// Function ID: 18245
+// Module ID: 18254
+// Function ID: 18255
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 1185, 1089, 21, 4758, 580, 5743, 558, 568, 15471, 8876, 4754, 1119, 1181, 5341, 7396, 7319, 7449, 2]
+// Dependencies: [32, 19, 17, 1185, 1089, 21, 4790, 580, 5775, 558, 568, 15481, 8908, 4786, 1119, 1181, 5373, 7428, 7351, 7481, 2]
 
-// Module 18244 (SelectEmojiRolesActionSheet)
+// Module 18254 (SelectEmojiRolesActionSheet)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Pressables from "Pressables" /* 5341 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15471 */;
+import Pressables from "Pressables" /* 5373 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15481 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import TextStyles_mod from "TextStyles" /* 5743 */;
+import TextStyles_mod from "TextStyles" /* 5775 */;
 
 const require = globalThis.__r;
 
@@ -23,7 +23,7 @@ const Fonts = fn(1089).Fonts;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
 const itemSize = fn(1185).FORM_ROW_VERTICAL_PADDING + 22;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { list: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, label: { flex: 1, flexDirection: "row", alignItems: "center" }, roleName: null, archivedBadge: null, archivedBadgeText: null, divider: null, saveButton: null, saveButtonDisabled: null };
 let TextStyles = TextStyles_mod;
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, 16));
@@ -90,7 +90,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onSave) => {
     tmp10 = cResult[2];
   }
   let obj = onSave(568);
-  const subscriptionListingsForGuild = onSave(15471).useSubscriptionListingsForGuild(onSave.guildId, tmp10);
+  const subscriptionListingsForGuild = onSave(15481).useSubscriptionListingsForGuild(onSave.guildId, tmp10);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class P {
       constructor(arg0) {
@@ -327,6 +327,6 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onSave) => {
   };
   const items1 = [subscriptionListingsForGuild.length];
   obj6.sections = items1;
-  obj5.children = closure_6(emoji(7319), obj6);
+  obj5.children = closure_6(emoji(7351), obj6);
   return closure_6(ActionSheet.ActionSheet, obj5);
 });

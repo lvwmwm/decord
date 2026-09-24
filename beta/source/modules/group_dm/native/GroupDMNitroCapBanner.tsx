@@ -1,17 +1,17 @@
-// Module ID: 17169
-// Function ID: 17170
+// Module ID: 17179
+// Function ID: 17180
 // Name: GroupDMNitroCapBanner
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4462, 13689, 5198, 8938, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4494, 13725, 5230, 8970, 2]
 
-// Module 17169 (GroupDMNitroCapBanner)
+// Module 17179 (GroupDMNitroCapBanner)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 13689 */;
+import useToken from "useToken" /* 4494 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 13725 */;
 import noop from "module_19" /* 19 */;
 
-const NitroWheelIcon = tmp2(8938);
+const NitroWheelIcon = tmp2(8970);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
@@ -19,7 +19,7 @@ const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const locations = [0.0065, 0.5046, 0.9196];
 let c8 = 110.47;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { wrapper: { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_16 }, pill: null, iconContainer: null, trailing: null, gradientClip: null, border: null, text: null };
 let obj3 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_16 };
 obj2.pill = { flexDirection: "row", alignItems: "center", paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
@@ -81,7 +81,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[14] !== tmp8) {
           const obj4 = { style: tmp16, useAngle: true, angle, colors: tmp8, locations };
-          const tmp22 = hasOwnProperty(tmp6(5198), obj4);
+          const tmp22 = hasOwnProperty(tmp6(5230), obj4);
           cResult[14] = tmp8;
           cResult[15] = tmp22;
           let tmp18 = tmp22;
@@ -181,7 +181,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (tmp4) {
             const obj11 = { style: tmp5.iconContainer, children: null };
             const obj12 = { size: "md", color: tmp6(580).colors.WHITE };
-            obj11.children = hasOwnProperty(tmp(8938).NitroWheelIcon, obj12);
+            obj11.children = hasOwnProperty(tmp(8970).NitroWheelIcon, obj12);
             tmp28 = hasOwnProperty(React4, obj11);
           }
           cResult[19] = tmp4;

@@ -1,28 +1,28 @@
-// Module ID: 17063
-// Function ID: 17064
+// Module ID: 17073
+// Function ID: 17074
 // Name: VibegrationsNativeComposer
-// Dependencies: [5, 32, 19, 17, 4750, 17064, 13364, 1078, 21, 580, 4758, 1119, 3682, 5277, 558, 568, 9308, 4462, 504, 5368, 11495, 4725, 17065, 12385, 16257, 15266, 4702, 12393, 4754, 5341, 6851, 11257, 8182, 8884, 4471, 2]
+// Dependencies: [5, 32, 19, 17, 4782, 17074, 13400, 1078, 21, 580, 4790, 1119, 3714, 5309, 558, 568, 9340, 4494, 504, 5400, 11531, 4757, 17075, 12421, 16267, 15276, 4734, 12429, 4786, 5373, 6883, 11293, 8214, 8916, 4503, 2]
 
-// Module 17063 (VibegrationsNativeComposer)
+// Module 17073 (VibegrationsNativeComposer)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import SendMessageIcon from "SendMessageIcon" /* 4702 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5277 */;
-import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9308 */;
-import PlusLargeIcon from "PlusLargeIcon" /* 11257 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12385 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12393 */;
-import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 15266 */;
-import StopIcon from "StopIcon" /* 16257 */;
-import VibegrationsModelSettingsSheet from "VibegrationsModelSettingsSheet" /* 17065 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import SendMessageIcon from "SendMessageIcon" /* 4734 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4757 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5309 */;
+import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9340 */;
+import PlusLargeIcon from "PlusLargeIcon" /* 11293 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12421 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12429 */;
+import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 15276 */;
+import StopIcon from "StopIcon" /* 16267 */;
+import VibegrationsModelSettingsSheet from "VibegrationsModelSettingsSheet" /* 17075 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
-import VibegrationsComposerDraftStore from "VibegrationsComposerDraftStore" /* 17064 */;
-import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13364 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import VibegrationsComposerDraftStore from "VibegrationsComposerDraftStore" /* 17074 */;
+import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13400 */;
 
 const require = globalThis.__r;
 const VibegrationsModelSettingsSheetDefault = VibegrationsModelSettingsSheet;
@@ -36,17 +36,17 @@ function tooLargeText(contentType) {
   const obj = { size: null };
   const obj2 = VibegrationsTypes;
   obj.size = obj2.formatVibegrationsAttachmentLimit(VibegrationsTypes.vibegrationsAttachmentLimit(contentType));
-  return intl.formatToPlainString(_modDef3682.cI7t94, obj);
+  return intl.formatToPlainString(_modDef3714.cI7t94, obj);
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: metroRequire, View: closure_7 } = get_ActivityIndicator);
-let VibegrationsConnectionStore = fn(13364);
+let VibegrationsConnectionStore = fn(13400);
 ({ deleteStagedAttachment: c10, uploadAttachmentBytes: closure_11 } = VibegrationsConnectionStore);
 let VibegrationsConnectionStore = VibegrationsConnectionStore_mod;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
 let PX_8 = nativeDefault.space.PX_8;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { paddingHorizontal: nativeDefault.modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING, paddingVertical: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 }, box: null, boxFocused: null, boxContents: null, input: null, inputText: null, inputPlaceholder: null, draftRow: null, draftPill: null, draftName: null, trailingButton: null, trailingSlot: null, sendButtonActive: null, sendIconActive: null };
 let obj3 = { paddingHorizontal: nativeDefault.modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING, paddingVertical: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 obj2.box = { backgroundColor: nativeDefault.colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: nativeDefault.colors.MOBILE_CHATINPUT_BORDER_DEFAULT, borderRadius: nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, overflow: "hidden" };
@@ -1569,9 +1569,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       if (map.length > diff) {
         let intl = tmp16(1119).intl;
         let obj = { count: null };
-        VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE = tmp16(5277).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
+        VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE = tmp16(5309).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
         obj.count = VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
-        _undefined4(intl.formatToPlainString(_modDef3682.DlX57a, obj));
+        _undefined4(intl.formatToPlainString(_modDef3714.DlX57a, obj));
         const _Math = Math;
         const substr = map.slice(0, Math.max(0, diff));
         let arr2 = substr;
@@ -1659,10 +1659,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
             return obj4;
           } else {
             closure_128_0 = undefined;
-            const obj5 = { mediaType: "any", selectionLimit: tmp2(5277).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE, skipProcessing: true };
+            const obj5 = { mediaType: "any", selectionLimit: tmp2(5309).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE, skipProcessing: true };
             dependencyMap = 1;
             c3 = 1;
-            const obj6 = { value: tmp5(5368).launchImageLibraryAsync(obj5), done: false };
+            const obj6 = { value: tmp5(5400).launchImageLibraryAsync(obj5), done: false };
             return obj6;
           }
         } else if (arg0 === 1) {
@@ -1796,12 +1796,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   const memo = obj.useMemo(() => {
     const obj = { label: null, action: null };
     const intl = util.intl;
-    obj.label = intl.string(_modDef3682.xE6M2k);
+    obj.label = intl.string(_modDef3714.xE6M2k);
     obj.action = callback6;
     const items = [obj, ];
     const obj2 = { label: null, action: null };
     const intl2 = util.intl;
-    obj2.label = intl2.string(_modDef3682.DN7KeU);
+    obj2.label = intl2.string(_modDef3714.DN7KeU);
     obj2.action = callback7;
     items[1] = obj2;
     return items;
@@ -1869,12 +1869,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     if ("stop" === key.key) {
       const obj2 = { style: closure_13.trailingButton, IconComponent: StopIcon.StopIcon, onPress: onInterrupt, disabled: null == onInterrupt, accessibilityLabel: null };
       const intl2 = util.intl;
-      obj2.accessibilityLabel = intl2.string(_modDef3682.KdgI4k);
+      obj2.accessibilityLabel = intl2.string(_modDef3714.KdgI4k);
       let tmp14 = __initData2(ChatInputActionButtonDefault, obj2);
     } else if ("models" === key.key) {
       const obj = { style: closure_13.trailingButton, IconComponent: FiltersHorizontalIcon.FiltersHorizontalIcon, onPress: callback9, disabled: !canSend, accessibilityLabel: null };
       const intl = util.intl;
-      obj.accessibilityLabel = intl.string(_modDef3682["2NWMqY"]);
+      obj.accessibilityLabel = intl.string(_modDef3714["2NWMqY"]);
       tmp14 = __initData2(ChatInputActionButtonDefault, obj);
     } else {
       const obj5 = { active: true, style: null, activeStyle: null, activeIconStyle: null, IconComponent: null, accessibilityLabel: null, onPress: null, disabled: null };
@@ -1963,7 +1963,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         ({ ref, onPress, accessibilityActions, onAccessibilityAction } = arg0);
         const obj = { ref, IconComponent: PlusLargeIcon.PlusLargeIcon, onPress, disabled: !canSend, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null };
         const intl = util.intl;
-        obj.accessibilityLabel = intl.string(_modDef3682.gUn10I);
+        obj.accessibilityLabel = intl.string(_modDef3714.gUn10I);
         obj.accessibilityActions = accessibilityActions;
         obj.onAccessibilityAction = onAccessibilityAction;
         return __initData2(ChatInputActionButtonDefault, obj);
@@ -1983,7 +1983,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       ({ ref, onPress, accessibilityActions, onAccessibilityAction } = arg0);
       const obj = { ref, IconComponent: PlusLargeIcon.PlusLargeIcon, onPress, disabled: !canSend, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null };
       const intl = util.intl;
-      obj.accessibilityLabel = intl.string(_modDef3682.gUn10I);
+      obj.accessibilityLabel = intl.string(_modDef3714.gUn10I);
       obj.accessibilityActions = accessibilityActions;
       obj.onAccessibilityAction = onAccessibilityAction;
       return __initData2(ChatInputActionButtonDefault, obj);

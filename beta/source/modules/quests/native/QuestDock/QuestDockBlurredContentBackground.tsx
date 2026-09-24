@@ -1,11 +1,11 @@
-// Module ID: 15417
-// Function ID: 15418
+// Module ID: 15427
+// Function ID: 15428
 // Name: QuestDockBlurredContentBackground
-// Dependencies: [19, 17, 21, 558, 568, 5175, 2]
+// Dependencies: [19, 17, 21, 558, 568, 5207, 2]
 
-// Module 15417 (QuestDockBlurredContentBackground)
+// Module 15427 (QuestDockBlurredContentBackground)
 import c from "c" /* 568 */;
-import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5175 */;
+import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5207 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

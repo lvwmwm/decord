@@ -1,12 +1,12 @@
-// Module ID: 18309
-// Function ID: 18310
+// Module ID: 18319
+// Function ID: 18320
 // Name: AVErrorVideoStreamSenderReadyTimeout
-// Dependencies: [502, 9613, 9681, 2]
+// Dependencies: [502, 9645, 9713, 2]
 
-// Module 18309 (AVErrorVideoStreamSenderReadyTimeout)
-import AVError from "AVError" /* 9681 */;
+// Module 18319 (AVErrorVideoStreamSenderReadyTimeout)
+import AVError from "AVError" /* 9713 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VideoStreamStore from "VideoStreamStore" /* 9613 */;
+import VideoStreamStore from "VideoStreamStore" /* 9645 */;
 
 require = fn;
 const size = fn(2);

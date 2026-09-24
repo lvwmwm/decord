@@ -1,23 +1,23 @@
-// Module ID: 12398
-// Function ID: 12399
+// Module ID: 12434
+// Function ID: 12435
 // Name: chat_input/ChatInputNativeComponent
-// Dependencies: [19, 4578, 21, 4758, 580, 558, 568, 1119, 4693, 4610, 4608, 1368, 12161, 12119, 2]
+// Dependencies: [19, 4610, 21, 4790, 580, 558, 568, 1119, 4725, 4642, 4640, 1368, 12197, 12155, 2]
 
-// Module 12398 (chat_input/ChatInputNativeComponent)
+// Module 12434 (chat_input/ChatInputNativeComponent)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import ColorUtils from "ColorUtils" /* 4608 */;
-import shared from "shared" /* 4610 */;
-import useTheme from "useTheme" /* 4693 */;
-import ChatInputNativeComponent from "ChatInputNativeComponent" /* 12119 */;
+import ColorUtils from "ColorUtils" /* 4640 */;
+import shared from "shared" /* 4642 */;
+import useTheme from "useTheme" /* 4725 */;
+import ChatInputNativeComponent from "ChatInputNativeComponent" /* 12155 */;
 import noop from "module_19" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4578 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4610 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { style: { flex: 1 }, textColor: { color: nativeDefault.colors.TEXT_DEFAULT }, placeholderColor: null };
 let obj3 = { color: nativeDefault.colors.TEXT_DEFAULT };
 obj.placeholderColor = { color: nativeDefault.colors.TEXT_MUTED };
@@ -58,11 +58,11 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
     if (null != ClientThemesBackgroundStore.gradientPreset) {
       num3 = 0.8;
     }
-    const hexWithOpacityResult = tmp(4608).hexWithOpacity(PRIMARY_500, num3);
+    const hexWithOpacityResult = tmp(4640).hexWithOpacity(PRIMARY_500, num3);
     cResult[2] = PRIMARY_500;
     cResult[3] = hexWithOpacityResult;
     let tmp11 = hexWithOpacityResult;
-    const tmpResult7 = tmp(4608);
+    const tmpResult7 = tmp(4640);
   } else {
     tmp11 = cResult[3];
   }
@@ -81,7 +81,7 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   if (isThemeDarkResult) {
     num6 = 1;
   }
-  const tmp17 = tmp10(12161)(onMaxHeightChanged);
+  const tmp17 = tmp10(12197)(onMaxHeightChanged);
   if (cResult[4] === tmp15) {
     if (cResult[5] === accessible) {
       if (cResult[6] === tmp16) {
@@ -201,8 +201,8 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
     num2 = 1;
   }
   const tmp4Result4 = PlatformUtils;
-  const tmp13 = tmp9(12161)(onMaxHeightChanged);
-  return jsx(ChatInputNativeComponent.default, { accessible, accessibilityLabel: tmp11, children: tmp12, editable, keyboardAppearance: num2, keyboardType: "default", markAsSpoilerTitle, maxHeight: tmp9(12161)(onMaxHeightChanged), onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: tmp3.placeholderColor.color, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style: tmp3.style, textColor: tmp3.textColor.color, verticalInset });
+  const tmp13 = tmp9(12197)(onMaxHeightChanged);
+  return jsx(ChatInputNativeComponent.default, { accessible, accessibilityLabel: tmp11, children: tmp12, editable, keyboardAppearance: num2, keyboardType: "default", markAsSpoilerTitle, maxHeight: tmp9(12197)(onMaxHeightChanged), onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: tmp3.placeholderColor.color, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style: tmp3.style, textColor: tmp3.textColor.color, verticalInset });
 }));
 forwardRefResult.displayName = "ChatInputNativeComponent";
 const size = fn(2);

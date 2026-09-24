@@ -1,15 +1,15 @@
-// Module ID: 11444
-// Function ID: 11445
+// Module ID: 11480
+// Function ID: 11481
 // Name: TieredTenureBadgeCoachmark
-// Dependencies: [32, 19, 17, 1078, 2042, 21, 4758, 558, 568, 11413, 5802, 7875, 2031, 7632, 1119, 7626, 10452, 2]
+// Dependencies: [32, 19, 17, 1078, 2042, 21, 4790, 558, 568, 11449, 5834, 7907, 2031, 7664, 1119, 7658, 10491, 2]
 
-// Module 11444 (TieredTenureBadgeCoachmark)
+// Module 11480 (TieredTenureBadgeCoachmark)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import openUserSettings from "openUserSettings" /* 7626 */;
-import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 11413 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import openUserSettings from "openUserSettings" /* 7658 */;
+import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 11449 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -20,7 +20,7 @@ const View = fn(17).View;
 const UserSettingsSections = fn(1078).UserSettingsSections;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ image: { width: "100%", height: "100%" }, imageContainer: { width: 110, height: 72, marginTop: 16 } });
 let ReactCompilerGating = fn(558);
 let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
@@ -96,16 +96,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = require("c").c(18);
   ({ badgeId, targetRef } = arg0);
   if (cResult[0] !== badgeId) {
-    const tieredTenureBadge = tmp(7875).getTieredTenureBadge(badgeId);
+    const tieredTenureBadge = tmp(7907).getTieredTenureBadge(badgeId);
     let tieredTenureBadgeData = null;
     if (null != tieredTenureBadge) {
-      tieredTenureBadgeData = tmp(7875).getTieredTenureBadgeData(tieredTenureBadge);
-      const tmpResult3 = tmp(7875);
+      tieredTenureBadgeData = tmp(7907).getTieredTenureBadgeData(tieredTenureBadge);
+      const tmpResult3 = tmp(7907);
     }
     cResult[0] = badgeId;
     cResult[1] = tieredTenureBadgeData;
     let tmp4 = tieredTenureBadgeData;
-    const tmpResult = tmp(7875);
+    const tmpResult = tmp(7907);
   } else {
     tmp4 = cResult[1];
   }
@@ -120,7 +120,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[2] = tmp4;
     cResult[3] = items1;
   } else {
-    const tmp10 = _slicedToArray(tmp(7632).useSelectedDismissibleContent(cResult[3]), 2);
+    const tmp10 = _slicedToArray(tmp(7664).useSelectedDismissibleContent(cResult[3]), 2);
     importDefault = tmp11;
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
@@ -222,18 +222,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[15] = tmp18;
     cResult[16] = tmp19;
     cResult[17] = obj2;
-    const tmpResult4 = tmp(7632);
+    const tmpResult4 = tmp(7664);
   }
 }) : ((arg0) => {
   let tieredTenureBadgeData;
   let first;
   dependencyMap = undefined;
   ({ targetRef, badgeId } = arg0);
-  const tieredTenureBadge = tieredTenureBadgeData(7875).getTieredTenureBadge(badgeId);
+  const tieredTenureBadge = tieredTenureBadgeData(7907).getTieredTenureBadge(badgeId);
   tieredTenureBadgeData = null;
   if (null != tieredTenureBadge) {
-    tieredTenureBadgeData = tmp(7875).getTieredTenureBadgeData(tieredTenureBadge);
-    const tmpResult = tmp(7875);
+    tieredTenureBadgeData = tmp(7907).getTieredTenureBadgeData(tieredTenureBadge);
+    const tmpResult = tmp(7907);
   }
   if (null != tieredTenureBadgeData) {
     const items = [tmp(2031).DismissibleContent.TIERED_TENURE_BADGE_COACHMARK];
@@ -241,8 +241,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     items1 = [];
   }
-  let obj = tieredTenureBadgeData(7875);
-  const tmp5 = _slicedToArray(tieredTenureBadgeData(7632).useSelectedDismissibleContent(items1), 2);
+  let obj = tieredTenureBadgeData(7907);
+  const tmp5 = _slicedToArray(tieredTenureBadgeData(7664).useSelectedDismissibleContent(items1), 2);
   first = tmp5[0];
   dependencyMap = tmp7;
   const items2 = [tmp5[1], first, tieredTenureBadgeData];
@@ -261,13 +261,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     };
     obj.onButtonPress = function onButtonPress() {
       dependencyMap(constants2.TAKE_ACTION);
-      tieredTenureBadgeData(7626).openUserSettings({ screen: constants.PREMIUM });
+      tieredTenureBadgeData(7658).openUserSettings({ screen: constants.PREMIUM });
     };
     const intl3 = util.intl;
     obj.buttonLabel = intl3.string(util.t.RzWDqY);
     return obj;
   }, items2);
-  const tmpResult3 = tieredTenureBadgeData(7632);
-  const coachmark = tieredTenureBadgeData(10452).useCoachmark(targetRef, memo);
+  const tmpResult3 = tieredTenureBadgeData(7664);
+  const coachmark = tieredTenureBadgeData(10491).useCoachmark(targetRef, memo);
   return null;
 });

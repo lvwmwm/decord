@@ -1,20 +1,20 @@
-// Module ID: 15808
-// Function ID: 15809
+// Module ID: 15818
+// Function ID: 15819
 // Name: ChangeLogModal
-// Dependencies: [19, 17, 1078, 2098, 21, 4758, 580, 4471, 1245, 8535, 15809, 5802, 8583, 1119, 5341, 10017, 10690, 1181, 8354, 558, 568, 1482, 8355, 1489, 5839, 4352, 8356, 4754, 4961, 7246, 2]
+// Dependencies: [19, 17, 1078, 2098, 21, 4790, 580, 4503, 1245, 8567, 15819, 5834, 8615, 1119, 5373, 10056, 10726, 1181, 8386, 558, 568, 1482, 8387, 1489, 5871, 4384, 8388, 4786, 4993, 7278, 2]
 
-// Module 15808 (ChangeLogModal)
+// Module 15818 (ChangeLogModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import Navigator from "Navigator" /* 7246 */;
-import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 8354 */;
-import openMediaModal from "openMediaModal" /* 8535 */;
-import common_VideoDefault from "common/Video" /* 8583 */;
-import _modDef15809 from "module_15809" /* 15809 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import Navigator from "Navigator" /* 7278 */;
+import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 8386 */;
+import openMediaModal from "openMediaModal" /* 8567 */;
+import common_VideoDefault from "common/Video" /* 8615 */;
+import _modDef15819 from "module_15819" /* 15819 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -27,14 +27,14 @@ const CHANGELOG_MODAL_KEY = fn(2098).CHANGELOG_MODAL_KEY;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let c9 = 0.5625;
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let obj2 = { video: { alignSelf: "center" }, videoWrapper: { marginBottom: 8 }, videoSpecial: { borderRadius: nativeDefault.radii.xs, overflow: "hidden" }, videoOverlay: { position: "absolute", width: "100%", height: "100%" }, playButton: null, playIcon: null, empty: null };
 let size = { position: "absolute", top: "50%", left: "50%", marginLeft: -28, marginTop: -28, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, width: 56, height: 56 };
 obj2.playButton = size;
 obj2.playIcon = { width: 21, height: 21 };
 obj2.empty = { width: "100%", height: 240, alignItems: "center", paddingTop: 48 };
 let closure_10 = createStyles.createLegacyClassComponentStyles(obj2);
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj4 = { bulletPoint: null, listItem: null, listText: null, listItemContent: null };
 let size1 = { width: 7, height: 7, borderRadius: 3.5, marginRight: 13, marginTop: 7, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
 obj4.bulletPoint = size1;
@@ -62,7 +62,7 @@ ListItem.prototype["render"] = function render() {
   obj.children = items;
   return closure_1_8(View, obj);
 };
-ListItem.contextType = fn(4471).ThemeContext;
+ListItem.contextType = fn(4503).ThemeContext;
 const PureComponent2 = noop.PureComponent;
 class ChangeLog extends PureComponent2 {
   constructor() {
@@ -164,7 +164,7 @@ prototype["renderVideo"] = function renderVideo() {
             },
         useLocalHTML: true
       };
-      const items = [closure_7(_modDef15809, obj4), ];
+      const items = [closure_7(_modDef15819, obj4), ];
       let tmp6Result = null;
       if (!tmp2) {
         const obj5 = { style: tmp.videoOverlay, source: null };
@@ -172,8 +172,8 @@ prototype["renderVideo"] = function renderVideo() {
         const _HermesInternal = HermesInternal;
         obj6.uri = "https://i.ytimg.com/vi/" + youtube_video_id + "/hqdefault.jpg";
         obj5.source = obj6;
-        tmp6Result = tmp6(tmp7(5802), obj5);
-        const tmp7Result = tmp7(5802);
+        tmp6Result = tmp6(tmp7(5834), obj5);
+        const tmp7Result = tmp7(5834);
       }
       items[1] = tmp6Result;
       obj3.children = items;
@@ -197,10 +197,10 @@ prototype["renderVideo"] = function renderVideo() {
   let tmp12Result = null;
   if (null != video) {
     const obj9 = { accessibilityLabel: "Play Video", accessibilityRole: "button", style: tmp.videoOverlay, onPress: self.playVideo, children: null };
-    const obj10 = { accessibilityLabel: "Play Video", accessibilityRole: "button", source: tmp15(10690), onPress: self.playVideo, style: tmp.playButton, iconSize: tmp18(1181).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
-    obj9.children = tmp12(tmp15(10017), obj10);
-    tmp12Result = tmp12(tmp18(5341).PressableOpacity, obj9);
-    const tmp15Result = tmp15(10017);
+    const obj10 = { accessibilityLabel: "Play Video", accessibilityRole: "button", source: tmp15(10726), onPress: self.playVideo, style: tmp.playButton, iconSize: tmp18(1181).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
+    obj9.children = tmp12(tmp15(10056), obj10);
+    tmp12Result = tmp12(tmp18(5373).PressableOpacity, obj9);
+    const tmp15Result = tmp15(10056);
   }
   items1[1] = tmp12Result;
   obj8.children = items1;
@@ -214,7 +214,7 @@ prototype["render"] = function render() {
   obj.onScroll = this.handleScroll;
   return React5(ChangeLogStandardTemplateDefault, obj);
 };
-ChangeLog.contextType = fn(4471).ThemeContext;
+ChangeLog.contextType = fn(4503).ThemeContext;
 let ReactCompilerGating = fn(558);
 let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(3);
@@ -500,7 +500,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { CHANGELOG: null };
     const obj3 = {
       name: "CHANGELOG",
-      headerLeft: tmp(5839).getHeaderCloseButton(hideChangeLog),
+      headerLeft: tmp(5871).getHeaderCloseButton(hideChangeLog),
       render() {
           return closure_1_7(closure_1_14, { onClose });
         }
@@ -508,13 +508,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj2.CHANGELOG = obj3;
     cResult[0] = obj2;
     let first = obj2;
-    const tmpResult = tmp(5839);
+    const tmpResult = tmp(5871);
   } else {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { screens: first, initialRouteName: "CHANGELOG" };
-    const tmp8 = React5(tmp(7246).Navigator, obj4);
+    const tmp8 = React5(tmp(7278).Navigator, obj4);
     cResult[1] = tmp8;
     let tmp6 = tmp8;
   } else {

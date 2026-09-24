@@ -1,11 +1,11 @@
-// Module ID: 12172
-// Function ID: 12173
+// Module ID: 12208
+// Function ID: 12209
 // Name: useDeveloperActivityShelfItems
-// Dependencies: [19, 9132, 2008, 558, 568, 504, 2]
+// Dependencies: [19, 9164, 2008, 558, 568, 504, 2]
 
-// Module 12172 (useDeveloperActivityShelfItems)
+// Module 12208 (useDeveloperActivityShelfItems)
 import noop from "module_19" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9132 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9164 */;
 
 const require = fn;
 let closure_4 = fn(2008).DEFAULT_EMBEDDED_ACTIVITY_CONFIG;

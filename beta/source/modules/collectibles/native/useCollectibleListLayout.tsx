@@ -1,9 +1,9 @@
-// Module ID: 13477
-// Function ID: 13478
+// Module ID: 13513
+// Function ID: 13514
 // Name: useCollectibleListLayout
 // Dependencies: [32, 19, 558, 568, 2]
 
-// Module 13477 (useCollectibleListLayout)
+// Module 13513 (useCollectibleListLayout)
 import c from "c" /* 568 */;
 import _slicedToArray from "module_32" /* 32 */;
 

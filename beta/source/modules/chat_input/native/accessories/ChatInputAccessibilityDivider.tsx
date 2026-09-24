@@ -1,9 +1,9 @@
-// Module ID: 12409
-// Function ID: 12410
+// Module ID: 12445
+// Function ID: 12446
 // Name: ChatInputAccessibilityDivider
-// Dependencies: [19, 17, 21, 558, 568, 5173, 1368, 1119, 2]
+// Dependencies: [19, 17, 21, 558, 568, 5205, 1368, 1119, 2]
 
-// Module 12409 (ChatInputAccessibilityDivider)
+// Module 12445 (ChatInputAccessibilityDivider)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 18072
-// Function ID: 18073
+// Module ID: 18082
+// Function ID: 18083
 // Name: GuildSettingsRoleEditPermissions
-// Dependencies: [32, 19, 17, 2063, 4399, 1376, 1078, 21, 4758, 580, 4404, 38, 4754, 1119, 4725, 18073, 1984, 17302, 18070, 7297, 1245, 1090, 17306, 7446, 5903, 1181, 9826, 2]
+// Dependencies: [32, 19, 17, 2063, 4431, 1376, 1078, 21, 4790, 580, 4436, 38, 4786, 1119, 4757, 18083, 1984, 17312, 18080, 7329, 1245, 1090, 17316, 7478, 5935, 1181, 9858, 2]
 // Exports: default
 
-// Module 18072 (GuildSettingsRoleEditPermissions)
+// Module 18082 (GuildSettingsRoleEditPermissions)
 import nativeDefault from "native" /* 580 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4404 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4436 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
@@ -26,7 +26,7 @@ const Constants = fn(1078);
 ({ AnalyticEvents: closure_12, Permissions: map1 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { emptyState: { backgroundColor: "transparent", paddingTop: 40 }, sectionSeparator: { height: nativeDefault.space.PX_24 }, emptyStateText: null, subLabel: null };
 let obj3 = { height: nativeDefault.space.PX_24 };
 obj2.emptyStateText = { color: nativeDefault.colors.TEXT_DEFAULT };
@@ -82,17 +82,17 @@ export default function GuildSettingsRoleEditPermission(guild) {
       onClick() {
           React5.dismiss();
           const obj = ActionSheetActionCreatorsDefault;
-          obj.openLazy(asyncRequireImpl(18073, dependencyMap.paths), "role-permission-templates-" + guild.id + "-" + role.id, { permissionsEdited, onPermissionsChanged, guildId: guild.id });
+          obj.openLazy(asyncRequireImpl(18083, dependencyMap.paths), "role-permission-templates-" + guild.id + "-" + role.id, { permissionsEdited, onPermissionsChanged, guildId: guild.id });
         },
       accessibilityRole: "button"
     };
     obj5.onTemplateOpen = obj6;
     obj4.children = intl.format(guild(1119).t.ZhSOBy, obj5);
-    tmp18Result = tmp18(guild(4754).Text, obj4);
+    tmp18Result = tmp18(guild(4786).Text, obj4);
   }
   canResult = PermissionUtilsAll.can({ permission: constants2.ADMINISTRATOR, user: currentUser, context: guild });
   const tmp18Result3 = closure_14(closure_6, { children: tmp18Result });
-  const guildPermissionSpec = role(17302).generateGuildPermissionSpec(guild);
+  const guildPermissionSpec = role(17312).generateGuildPermissionSpec(guild);
   const mapped = guildPermissionSpec.map((permissions) => {
     const obj = {};
     const merged = Object.assign(permissions);
@@ -105,9 +105,9 @@ export default function GuildSettingsRoleEditPermission(guild) {
   });
   const found = mapped.filter((permissions) => permissions.permissions.length > 0);
   const mapped1 = found.map((title) => ({ title: title.title, data: title.permissions }));
-  const children = [closure_14(role(18070), { role }), , , ];
+  const children = [closure_14(role(18080), { role }), , , ];
   const obj7 = {
-    children: closure_14(guild(7297).SearchField, {
+    children: closure_14(guild(7329).SearchField, {
       size: "md",
       onChange(str) {
         closure_8(str);
@@ -195,7 +195,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
     };
     let tmp18Result4 = tmp18(closure_8, obj9);
   } else {
-    const obj10 = { Illustration: tmp27(9826).NoResultsAlt, style: null, bodyStyle: null, body: null };
+    const obj10 = { Illustration: tmp27(9858).NoResultsAlt, style: null, bodyStyle: null, body: null };
     ({ emptyState: obj11.style, emptyStateText: obj11.bodyStyle } = tmp);
     const intl2 = tmp27(1119).intl;
     const obj12 = { query };

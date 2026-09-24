@@ -1,16 +1,16 @@
-// Module ID: 17198
-// Function ID: 17199
+// Module ID: 17208
+// Function ID: 17209
 // Name: SearchTabsGradient
-// Dependencies: [19, 21, 558, 568, 4462, 580, 4608, 12906, 2]
+// Dependencies: [19, 21, 558, 568, 4494, 580, 4640, 12942, 2]
 
-// Module 17198 (SearchTabsGradient)
+// Module 17208 (SearchTabsGradient)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import TabsGradientDefault from "TabsGradient" /* 12906 */;
+import useToken from "useToken" /* 4494 */;
+import TabsGradientDefault from "TabsGradient" /* 12942 */;
 import noop from "module_19" /* 19 */;
 
-const ColorUtils = tmp(4608);
+const ColorUtils = tmp(4640);
 require = fn;
 const jsx = fn(21).jsx;
 let ReactCompilerGating = fn(558);
@@ -38,7 +38,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = items;
   tmp7 = items;
 }) : (() => {
-  token = token(4462).useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
+  token = token(4494).useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   let items = [token];
   return noop.useMemo(() => {
     const items = [token, ColorUtils.hexWithOpacity(token, 0)];

@@ -1,12 +1,12 @@
-// Module ID: 15579
-// Function ID: 15580
+// Module ID: 15589
+// Function ID: 15590
 // Name: useLatestChannelMessage
-// Dependencies: [32, 19, 13990, 558, 568, 504, 15580, 2]
+// Dependencies: [32, 19, 14026, 558, 568, 504, 15590, 2]
 
-// Module 15579 (useLatestChannelMessage)
-import MessagePreviewManagerDefault from "MessagePreviewManager" /* 15580 */;
+// Module 15589 (useLatestChannelMessage)
+import MessagePreviewManagerDefault from "MessagePreviewManager" /* 15590 */;
 import _slicedToArray from "module_32" /* 32 */;
-import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 13990 */;
+import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 14026 */;
 
 const require = globalThis.__r;
 

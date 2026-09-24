@@ -1,14 +1,14 @@
-// Module ID: 9961
-// Function ID: 9962
+// Module ID: 9993
+// Function ID: 9994
 // Name: SecureFramesExistingVerificationsHelpMessage
-// Dependencies: [17, 21, 4758, 558, 568, 9962, 1119, 1181, 2]
+// Dependencies: [17, 21, 4790, 558, 568, 9994, 1119, 1181, 2]
 
-// Module 9961 (SecureFramesExistingVerificationsHelpMessage)
+// Module 9993 (SecureFramesExistingVerificationsHelpMessage)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 9962 */;
-import createStyles from "createStyles" /* 4758 */;
+import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 9994 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[1] === userKey) {
       let tmp5 = cResult[2];
     }
-    const secureFramesUserVerifiedKeysCount = tmp(9962).useSecureFramesUserVerifiedKeysCount(tmp5);
+    const secureFramesUserVerifiedKeysCount = tmp(9994).useSecureFramesUserVerifiedKeysCount(tmp5);
     if (0 === secureFramesUserVerifiedKeysCount) {
       return null;
     } else {
@@ -66,7 +66,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[5] = items;
       tmp8 = items;
     }
-    const tmpResult = tmp(9962);
+    const tmpResult = tmp(9994);
   }
   const obj5 = { userId, keyToOmit: userKey };
   cResult[0] = userId;

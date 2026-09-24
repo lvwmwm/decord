@@ -1,20 +1,20 @@
-// Module ID: 16155
-// Function ID: 16156
+// Module ID: 16165
+// Function ID: 16166
 // Name: CollectiblesShopOrbsPage
-// Dependencies: [19, 17, 7789, 1080, 21, 4758, 558, 568, 7409, 9045, 16120, 4725, 8450, 16127, 1181, 8506, 1119, 16154, 2]
+// Dependencies: [19, 17, 7821, 1080, 21, 4790, 558, 568, 7441, 9077, 16130, 4757, 8482, 16137, 1181, 8538, 1119, 16164, 2]
 
-// Module 16155 (CollectiblesShopOrbsPage)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8450 */;
-import ShopBlockItemDefault from "ShopBlockItem" /* 16127 */;
+// Module 16165 (CollectiblesShopOrbsPage)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8482 */;
+import ShopBlockItemDefault from "ShopBlockItem" /* 16137 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7789 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7821 */;
 
 require = fn;
 const View = fn(17).View;
 const constants = fn(1080).CollectiblesMobileShopScreen;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ container: { display: "flex", flex: 1 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

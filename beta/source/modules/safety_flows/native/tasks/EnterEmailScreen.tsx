@@ -1,12 +1,12 @@
-// Module ID: 18334
-// Function ID: 18335
+// Module ID: 18344
+// Function ID: 18345
 // Name: EnterEmailScreen
-// Dependencies: [32, 19, 21, 558, 568, 1488, 1119, 2780, 18326, 5186, 6846, 18335, 2]
+// Dependencies: [32, 19, 21, 558, 568, 1488, 1119, 2780, 18336, 5218, 6878, 18345, 2]
 
-// Module 18334 (EnterEmailScreen)
+// Module 18344 (EnterEmailScreen)
 import _modDef2780 from "module_2780" /* 2780 */;
-import types from "types" /* 18326 */;
-import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 18335 */;
+import types from "types" /* 18336 */;
+import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 18345 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -49,8 +49,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[4] !== first) {
     const obj3 = { children: null };
     const obj4 = { label: "Email", value: first, onChange: tmp5[1] };
-    obj3.children = jsx(tmp(6846).TextInput, { label: "Email", value: first, onChange: tmp5[1] });
-    const tmp15 = jsx(tmp(5186).Stack, { children: null });
+    obj3.children = jsx(tmp(6878).TextInput, { label: "Email", value: first, onChange: tmp5[1] });
+    const tmp15 = jsx(tmp(5218).Stack, { children: null });
     cResult[4] = first;
     cResult[5] = tmp15;
     let tmp13 = tmp15;

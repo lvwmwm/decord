@@ -1,9 +1,9 @@
-// Module ID: 7195
-// Function ID: 7196
+// Module ID: 7227
+// Function ID: 7228
 // Name: useLoginReset
-// Dependencies: [19, 502, 558, 568, 6832, 2]
+// Dependencies: [19, 502, 558, 568, 6864, 2]
 
-// Module 7195 (useLoginReset)
+// Module 7227 (useLoginReset)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

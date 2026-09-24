@@ -1,14 +1,14 @@
-// Module ID: 10042
-// Function ID: 10043
+// Module ID: 10081
+// Function ID: 10082
 // Name: GuildEventsNoContent
-// Dependencies: [19, 17, 4399, 1078, 1089, 21, 4758, 5743, 580, 558, 568, 504, 8683, 9859, 9861, 1119, 4754, 9833, 2]
+// Dependencies: [19, 17, 4431, 1078, 1089, 21, 4790, 5775, 580, 558, 568, 504, 8715, 9891, 9893, 1119, 4786, 9865, 2]
 
-// Module 10042 (GuildEventsNoContent)
+// Module 10081 (GuildEventsNoContent)
 import nativeDefault from "native" /* 580 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9865 */;
 import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
-import TextStyles from "TextStyles" /* 5743 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
+import TextStyles from "TextStyles" /* 5775 */;
 
 const require = fn;
 const View = fn(17).View;
@@ -17,7 +17,7 @@ const Constants = fn(1089);
 ({ Permissions: metroRequire, Fonts } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", marginBottom: 88, padding: 16 }, title: null, subtitle: null };
 let obj3 = {};
 const merged = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24, { marginBottom: 8 }));
@@ -58,11 +58,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const obj = guild(568);
   const stateFromStores = guild(504).useStateFromStores(first, tmp7, tmp8);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { icon: onClose(9859), IconComponent: tmp(9861).CalendarIcon };
-    const tmp14 = closure_7(onClose(8683), obj2);
+    const obj2 = { icon: onClose(9891), IconComponent: tmp(9893).CalendarIcon };
+    const tmp14 = closure_7(onClose(8715), obj2);
     cResult[4] = tmp14;
     let tmp10 = tmp14;
-    const tmp13 = onClose(8683);
+    const tmp13 = onClose(8715);
   } else {
     tmp10 = cResult[4];
   }
@@ -76,7 +76,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   }
   if (cResult[6] !== tmp4.title) {
     const obj3 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp15 };
-    const tmp19 = closure_7(tmp(4754).Text, obj3);
+    const tmp19 = closure_7(tmp(4786).Text, obj3);
     cResult[6] = tmp4.title;
     cResult[7] = tmp19;
     let tmp17 = tmp19;
@@ -93,7 +93,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   }
   if (cResult[9] !== tmp4.subtitle) {
     const obj4 = { style: tmp4.subtitle, variant: "text-sm/normal", color: "text-default", children: tmp20 };
-    const tmp24 = closure_7(tmp(4754).Text, obj4);
+    const tmp24 = closure_7(tmp(4786).Text, obj4);
     cResult[9] = tmp4.subtitle;
     cResult[10] = tmp24;
     let tmp22 = tmp24;
@@ -140,7 +140,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         }
     };
     obj6.children = intl3.format(tmp(1119).t["K+DH2o"], obj7);
-    tmp26 = closure_7(tmp(4754).Text, obj6);
+    tmp26 = closure_7(tmp(4786).Text, obj6);
   }
   cResult[11] = stateFromStores;
   cResult[12] = guild;
@@ -161,17 +161,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const tmp5 = closure_8;
   const tmp6 = View;
   const tmp7 = closure_7;
-  obj3.icon = onClose(9859);
-  obj3.IconComponent = guild(9861).CalendarIcon;
-  const items2 = [closure_7(onClose(8683), obj3), , , ];
+  obj3.icon = onClose(9891);
+  obj3.IconComponent = guild(9893).CalendarIcon;
+  const items2 = [closure_7(onClose(8715), obj3), , , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = guild(1119).intl;
   obj4.children = intl.string(guild(1119).t["WgZ+3D"]);
-  items2[1] = closure_7(guild(4754).Text, obj4);
+  items2[1] = closure_7(guild(4786).Text, obj4);
   const obj5 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = guild(1119).intl;
   obj5.children = intl2.string(guild(1119).t["v/S/PG"]);
-  items2[2] = closure_7(guild(4754).Text, obj5);
+  items2[2] = closure_7(guild(4786).Text, obj5);
   if (stateFromStores) {
     const obj6 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: null };
     const intl3 = tmp2(1119).intl;
@@ -182,7 +182,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         }
     };
     obj6.children = intl3.format(tmp2(1119).t["K+DH2o"], obj7);
-    stateFromStores = tmp7(tmp2(4754).Text, obj6);
+    stateFromStores = tmp7(tmp2(4786).Text, obj6);
   }
   items2[3] = stateFromStores;
   obj2.children = items2;

@@ -1,19 +1,19 @@
-// Module ID: 18205
-// Function ID: 18206
+// Module ID: 18215
+// Function ID: 18216
 // Name: GuildRoleSubscriptionGroupGatingModal
-// Dependencies: [32, 19, 18192, 15464, 21, 558, 568, 1119, 18186, 18196, 2]
+// Dependencies: [32, 19, 18202, 15474, 21, 558, 568, 1119, 18196, 18206, 2]
 
-// Module 18205 (GuildRoleSubscriptionGroupGatingModal)
+// Module 18215 (GuildRoleSubscriptionGroupGatingModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 18186 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18196 */;
+import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 18196 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18206 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18192 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18202 */;
 
 require = fn;
-const constants = fn(15464).GuildRoleSubscriptionsTierScenes;
+const constants = fn(15474).GuildRoleSubscriptionsTierScenes;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

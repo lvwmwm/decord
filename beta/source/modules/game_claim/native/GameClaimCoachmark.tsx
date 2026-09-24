@@ -1,23 +1,23 @@
-// Module ID: 16529
-// Function ID: 16530
+// Module ID: 16539
+// Function ID: 16540
 // Name: GameClaimCoachmark
-// Dependencies: [5, 19, 17, 1078, 2042, 21, 580, 16530, 11291, 5193, 4758, 558, 568, 16531, 1119, 9196, 5846, 5341, 4754, 8860, 5188, 7560, 7564, 5824, 2]
+// Dependencies: [5, 19, 17, 1078, 2042, 21, 580, 16540, 11327, 5225, 4790, 558, 568, 16541, 1119, 9228, 5878, 5373, 4786, 8892, 5220, 7592, 7596, 5856, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 16529 (GameClaimCoachmark)
+// Module 16539 (GameClaimCoachmark)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ButtonConstants from "ButtonConstants" /* 5193 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 9196 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11291 */;
-import GameClaimCardStack from "GameClaimCardStack" /* 16530 */;
-import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 16531 */;
+import ButtonConstants from "ButtonConstants" /* 5225 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 9228 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11327 */;
+import GameClaimCardStack from "GameClaimCardStack" /* 16540 */;
+import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 16541 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const GameClaimCardStackDefault = tmp8(16530);
+const GameClaimCardStackDefault = tmp8(16540);
 require = fn;
 const View = fn(17).View;
 const Constants = fn(1078);
@@ -28,7 +28,7 @@ const jsxProd = fn(21);
 const PX_8 = nativeDefault.space.PX_8;
 const PX_82 = nativeDefault.space.PX_8;
 let closure_12 = 2 * nativeDefault.space.PX_12;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { card: { padding: nativeDefault.space.PX_12 }, closeButton: null, centeredText: null, body: null, cta: null };
 let size = { position: "absolute", top: nativeDefault.space.PX_12, right: nativeDefault.space.PX_12, width: 24, height: 24, alignItems: "center", justifyContent: "center", zIndex: 1 };
 obj.closeButton = size;
@@ -48,7 +48,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   ({ guild, markAsDismissed } = arg0);
   const tmp4 = closure_13();
   let obj = markAsDismissed(568);
-  let first = markAsDismissed(16531).useUnclaimedGameIdsForGuild(guild.id)[0];
+  let first = markAsDismissed(16541).useUnclaimedGameIdsForGuild(guild.id)[0];
   if (first == null) {
     first = null;
   }
@@ -60,7 +60,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   } else {
     first1 = cResult[0];
   }
-  const obj2 = markAsDismissed(16531);
+  const obj2 = markAsDismissed(16541);
   ({ coverImageUrl, gameName } = useGameNameAndCoverImageDefault(first, first1));
   if (null == coverImageUrl) {
     return null;
@@ -92,7 +92,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp18 = closure_8(tmp(5846).XSmallIcon, { size: "sm", color: "text-default" });
+      const tmp18 = closure_8(tmp(5878).XSmallIcon, { size: "sm", color: "text-default" });
       cResult[5] = tmp18;
       let tmp16 = tmp18;
     } else {
@@ -137,7 +137,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
             if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
               const intl4 = tmp(1119).intl;
               const stringResult2 = intl4.string(tmp(1119).t["2u6ZlY"]);
-              const tmp38 = closure_8(tmp(8860).LinkExternalSmallIcon, { size: "xs", color: "white" });
+              const tmp38 = closure_8(tmp(8892).LinkExternalSmallIcon, { size: "xs", color: "white" });
               cResult[22] = stringResult2;
               cResult[23] = tmp38;
               let tmp35 = tmp38;
@@ -181,7 +181,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
                                       markAsDismissed(constants2.TAKE_ACTION);
                                       v1 = 1;
                                       v3 = 1;
-                                      const obj5 = { value: v1(7560).redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, v3(7564).LoginHandoffSource.GAME_CLAIM), done: false };
+                                      const obj5 = { value: v1(7592).redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, v3(7596).LoginHandoffSource.GAME_CLAIM), done: false };
                                       return obj5;
                                     }
                                   } else if (arg0 === 1) {
@@ -202,7 +202,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
                               }
                             })
               };
-              const tmp42 = closure_8(tmp(5188).Button, obj5);
+              const tmp42 = closure_8(tmp(5220).Button, obj5);
               cResult[24] = markAsDismissed;
               cResult[25] = tmp42;
               let tmp39 = tmp42;
@@ -230,7 +230,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
               const obj6 = { variant: "secondary", style: tmp4.card, children: null };
               const items = [tmp19, tmp22, tmp27, tmp31, tmp43];
               obj6.children = items;
-              const tmp49 = closure_9(tmp(5824).Card, obj6);
+              const tmp49 = closure_9(tmp(5856).Card, obj6);
               cResult[29] = tmp4.card;
               cResult[30] = tmp27;
               cResult[31] = tmp31;
@@ -248,7 +248,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
             tmp43 = tmp46;
           }
           const obj8 = { variant: "text-sm/normal", color: "text-overlay-light", style: tmp30, children: tmp10 };
-          const tmp33 = closure_8(tmp(4754).Text, obj8);
+          const tmp33 = closure_8(tmp(4786).Text, obj8);
           cResult[19] = tmp10;
           cResult[20] = tmp30;
           cResult[21] = tmp33;
@@ -262,14 +262,14 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         tmp30 = items1;
       }
       const obj9 = { variant: "text-md/medium", color: "text-overlay-light", style: tmp4.centeredText, children: tmp25 };
-      const tmp29 = closure_8(tmp(4754).Text, obj9);
+      const tmp29 = closure_8(tmp(4786).Text, obj9);
       cResult[13] = tmp4.centeredText;
       cResult[14] = tmp25;
       cResult[15] = tmp29;
       tmp27 = tmp29;
     }
     const obj10 = { accessibilityRole: "button", onPress: tmp15, style: tmp4.closeButton, children: tmp16 };
-    const tmp21 = closure_8(tmp(5341).PressableOpacity, obj10);
+    const tmp21 = closure_8(tmp(5373).PressableOpacity, obj10);
     cResult[6] = tmp4.closeButton;
     cResult[7] = tmp15;
     cResult[8] = tmp21;
@@ -304,27 +304,27 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
           return require(ContentDismissActionType.USER_DISMISS);
         },
       style: tmp.closeButton,
-      children: closure_8(tmp2(5846).XSmallIcon, { size: "sm", color: "text-default" })
+      children: closure_8(tmp2(5878).XSmallIcon, { size: "sm", color: "text-default" })
     };
-    const items = [closure_8(tmp2(5341).PressableOpacity, obj3), , , , ];
+    const items = [closure_8(tmp2(5373).PressableOpacity, obj3), , , , ];
     let obj4 = { imageSrc: coverImageUrl };
     items[1] = closure_8(GameClaimCardStackDefault, obj4);
     let obj5 = { variant: "text-md/medium", color: "text-overlay-light", style: tmp.centeredText, children: null };
     const intl2 = tmp2(1119).intl;
     const obj6 = { gameName: tmp8 };
     obj5.children = intl2.format(tmp2(1119).t.Q11WTQ, obj6);
-    items[2] = closure_8(tmp2(4754).Text, obj5);
+    items[2] = closure_8(tmp2(4786).Text, obj5);
     const obj7 = { variant: "text-sm/normal", color: "text-overlay-light", style: null, children: null };
     const items1 = [, ];
     ({ body: arr2[0], centeredText: arr2[1] } = tmp);
     obj7.style = items1;
     obj7.children = stringResult;
-    items[3] = closure_8(tmp2(4754).Text, obj7);
+    items[3] = closure_8(tmp2(4786).Text, obj7);
     const obj8 = { style: tmp.cta, children: null };
     const obj9 = { variant: "primary", size: "sm", text: null, icon: null, iconPosition: "end", onPress: null };
     const intl3 = tmp2(1119).intl;
     obj9.text = intl3.string(tmp2(1119).t["2u6ZlY"]);
-    obj9.icon = closure_8(tmp2(8860).LinkExternalSmallIcon, { size: "xs", color: "white" });
+    obj9.icon = closure_8(tmp2(8892).LinkExternalSmallIcon, { size: "xs", color: "white" });
     obj9.onPress = asyncGeneratorStep(async (arg0, value) => {
       if (v3 === 2) {
         v3 = 3;
@@ -353,7 +353,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
               require(constants2.TAKE_ACTION);
               v1 = 1;
               v3 = 1;
-              const obj5 = { value: v1(7560).redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, v3(7564).LoginHandoffSource.GAME_CLAIM), done: false };
+              const obj5 = { value: v1(7592).redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, v3(7596).LoginHandoffSource.GAME_CLAIM), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -373,10 +373,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         }
       }
     });
-    obj8.children = closure_8(tmp2(5188).Button, obj9);
+    obj8.children = closure_8(tmp2(5220).Button, obj9);
     items[4] = closure_8(View, obj8);
     obj2.children = items;
-    return closure_9(tmp2(5824).Card, obj2);
+    return closure_9(tmp2(5856).Card, obj2);
   }
   const tmp6Result = useGameNameAndCoverImageDefault(first, intl.string(util.t.VQq92a));
 }));

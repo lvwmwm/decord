@@ -1,29 +1,29 @@
-// Module ID: 5496
-// Function ID: 5497
+// Module ID: 5528
+// Function ID: 5529
 // Name: GatewayConnectionStore
-// Dependencies: [5, 1224, 502, 5497, 2045, 1996, 4781, 4808, 2099, 5498, 4797, 1078, 1088, 13896, 13945, 3, 510, 7582, 5630, 1368, 13934, 12, 4810, 13913, 504, 577, 2]
+// Dependencies: [5, 1224, 502, 5529, 2045, 1996, 4813, 4840, 2099, 5530, 4829, 1078, 1088, 13932, 13981, 3, 510, 7614, 5662, 1368, 13970, 12, 4842, 13949, 504, 577, 2]
 
-// Module 5496 (GatewayConnectionStore)
+// Module 5528 (GatewayConnectionStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import GatewaySocketSingleton from "GatewaySocketSingleton" /* 13896 */;
-import ConnectionStateDefault from "ConnectionState" /* 13913 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13934 */;
-import dispatchSocketMessageDefault from "dispatchSocketMessage" /* 13945 */;
+import GatewaySocketSingleton from "GatewaySocketSingleton" /* 13932 */;
+import ConnectionStateDefault from "ConnectionState" /* 13949 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13970 */;
+import dispatchSocketMessageDefault from "dispatchSocketMessage" /* 13981 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5497 */;
+import CallStore from "CallStore" /* 5529 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
-import RTCRegionStore from "RTCRegionStore" /* 4808 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
+import RTCRegionStore from "RTCRegionStore" /* 4840 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4797 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5530 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4829 */;
 
 require = fn;
 let closure_25 = async function _handleConnectionOpen(arg0) {
@@ -175,7 +175,7 @@ function handleLocalPresenceChange() {
 const Constants = fn(1078);
 ({ RTCConnectionStates: closure_15, AppStates: closure_16 } = Constants);
 const UserSettingsTypes = fn(1088).UserSettingsTypes;
-fn(13896).socket.dispatcher.getDispatchHandler = dispatchSocketMessageDefault;
+fn(13932).socket.dispatcher.getDispatchHandler = dispatchSocketMessageDefault;
 let closure_19 = new LoggerDefault("ConnectionStore");
 let closure_20 = 0;
 let c21 = null;
@@ -234,9 +234,9 @@ const gatewayConnectionStore = new GatewayConnectionStore(DispatcherDefault, {
     const socket2 = GatewaySocketSingleton.socket;
     let connectResult = socket2.isSessionEstablished();
     if (connectResult) {
-      const socket3 = tmp(13896).socket;
+      const socket3 = tmp(13932).socket;
       socket3.close();
-      const socket4 = tmp(13896).socket;
+      const socket4 = tmp(13932).socket;
       connectResult = socket4.connect();
     }
     return connectResult;
@@ -309,13 +309,13 @@ const gatewayConnectionStore = new GatewayConnectionStore(DispatcherDefault, {
     }
     if (isIOSResult) {
       if (null == guildId.channelId) {
-        const socket3 = tmp(13896).socket;
+        const socket3 = tmp(13932).socket;
         socket3.close(true);
       } else {
-        const socket = tmp(13896).socket;
+        const socket = tmp(13932).socket;
         if (socket.isClosed()) {
           PauseGatewaySocketAll.setIsPaused(false);
-          const socket2 = tmp(13896).socket;
+          const socket2 = tmp(13932).socket;
           socket2.connect();
         }
       }
@@ -342,7 +342,7 @@ const gatewayConnectionStore = new GatewayConnectionStore(DispatcherDefault, {
           if (userId.guildId !== require("GatewaySocketSingleton").localVoiceState.guildId) {
             return acc;
           } else {
-            const localVoiceState = tmp(13896).localVoiceState;
+            const localVoiceState = tmp(13932).localVoiceState;
             localVoiceState.setState({ guildId: null, channelId: null });
           }
           tmp = _require;
@@ -494,13 +494,13 @@ const gatewayConnectionStore = new GatewayConnectionStore(DispatcherDefault, {
     if (socket.isSessionEstablished()) {
       if (!allowMultiple) {
         const allActiveStreamKeys = StreamRTCConnectionStore.getAllActiveStreamKeys();
-        _require = allActiveStreamKeys.find((item) => closure_0(4810).decodeStreamKey(item).ownerId === id.getId());
+        _require = allActiveStreamKeys.find((item) => closure_0(4842).decodeStreamKey(item).ownerId === id.getId());
         const allActiveStreamKeys1 = StreamRTCConnectionStore.getAllActiveStreamKeys();
         const found = allActiveStreamKeys1.filter((item) => item !== closure_0);
         const item = found.forEach((item) => {
-          const socket = closure_0(13896).socket;
+          const socket = closure_0(13932).socket;
           if (socket.isSessionEstablished()) {
-            const socket2 = closure_0(13896).socket;
+            const socket2 = closure_0(13932).socket;
             socket2.streamDelete(item);
           }
         });
@@ -513,10 +513,10 @@ const gatewayConnectionStore = new GatewayConnectionStore(DispatcherDefault, {
   STREAM_STOP: function handleStreamStop(streamKey) {
     const socket = GatewaySocketSingleton.socket;
     if (socket.isSessionEstablished()) {
-      const socket2 = tmp(13896).socket;
+      const socket2 = tmp(13932).socket;
       socket2.streamDelete(streamKey.streamKey);
     }
-    const localVoiceState = tmp(13896).localVoiceState;
+    const localVoiceState = tmp(13932).localVoiceState;
     localVoiceState.update();
     return false;
   },

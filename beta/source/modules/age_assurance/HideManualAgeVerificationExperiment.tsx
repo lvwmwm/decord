@@ -1,10 +1,10 @@
-// Module ID: 8858
-// Function ID: 8859
+// Module ID: 8890
+// Function ID: 8891
 // Name: HideManualAgeVerificationExperiment
 // Dependencies: [1438, 558, 568, 2]
 // Exports: isManualAgeVerificationHidden
 
-// Module 8858 (HideManualAgeVerificationExperiment)
+// Module 8890 (HideManualAgeVerificationExperiment)
 import c from "c" /* 568 */;
 import ApexExperiment from "ApexExperiment" /* 1438 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

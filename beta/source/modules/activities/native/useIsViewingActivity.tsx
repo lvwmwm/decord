@@ -1,12 +1,12 @@
-// Module ID: 9658
-// Function ID: 9659
+// Module ID: 9690
+// Function ID: 9691
 // Name: useIsViewingActivity
-// Dependencies: [4774, 558, 568, 9645, 4616, 9642, 504, 2]
+// Dependencies: [4806, 558, 568, 9677, 4648, 9674, 504, 2]
 
-// Module 9658 (useIsViewingActivity)
-import ChannelCallModalDefault from "ChannelCallModal" /* 9642 */;
-import useIsActivityFocusedDefault from "useIsActivityFocused" /* 9645 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
+// Module 9690 (useIsViewingActivity)
+import ChannelCallModalDefault from "ChannelCallModal" /* 9674 */;
+import useIsActivityFocusedDefault from "useIsActivityFocused" /* 9677 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4806 */;
 
 const require = fn;
 const ReactCompilerGating = fn(558);
@@ -19,7 +19,7 @@ export const useIsViewingActivity = ReactCompilerGating.isReactCompilerEnabled()
   let tmp4 = useIsActivityFocusedDefault(channelId);
   const obj = channelId(568);
   const tmp = channelId;
-  const isModalOpen = channelId(4616).useIsModalOpen(ChannelCallModalDefault);
+  const isModalOpen = channelId(4648).useIsModalOpen(ChannelCallModalDefault);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelRTCStore];
     cResult[0] = items;
@@ -41,7 +41,7 @@ export const useIsViewingActivity = ReactCompilerGating.isReactCompilerEnabled()
     tmp8 = cResult[2];
     tmp9 = cResult[3];
   }
-  const obj2 = channelId(4616);
+  const obj2 = channelId(4648);
   const stateFromStores = tmp(504).useStateFromStores(first, tmp8, tmp9);
   if (tmp4) {
     tmp4 = isModalOpen;
@@ -53,8 +53,8 @@ export const useIsViewingActivity = ReactCompilerGating.isReactCompilerEnabled()
 }) : ((channelId) => {
   channelId = channelId.channelId;
   let tmp = useIsActivityFocusedDefault(channelId);
-  const isModalOpen = channelId(4616).useIsModalOpen(ChannelCallModalDefault);
-  const obj = channelId(4616);
+  const isModalOpen = channelId(4648).useIsModalOpen(ChannelCallModalDefault);
+  const obj = channelId(4648);
   const items = [ChannelRTCStore];
   const items1 = [channelId];
   const stateFromStores = channelId(504).useStateFromStores(items, () => ChannelRTCStore.getChatOpen(channelId), items1);

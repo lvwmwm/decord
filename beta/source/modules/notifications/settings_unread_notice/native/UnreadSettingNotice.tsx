@@ -1,12 +1,12 @@
-// Module ID: 11549
-// Function ID: 11550
+// Module ID: 11585
+// Function ID: 11586
 // Name: UnreadSettingNotice
-// Dependencies: [19, 17, 1088, 21, 4758, 580, 558, 568, 11550, 4754, 1119, 11551, 5341, 2]
+// Dependencies: [19, 17, 1088, 21, 4790, 580, 558, 568, 11586, 4786, 1119, 11587, 5373, 2]
 
-// Module 11549 (UnreadSettingNotice)
+// Module 11585 (UnreadSettingNotice)
 import nativeDefault from "native" /* 580 */;
-import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11550 */;
-import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 11551 */;
+import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11586 */;
+import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 11587 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -16,7 +16,7 @@ const View = fn(17).View;
 let closure_4 = fn(1088).ChannelNotificationSettingsFlags;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { content: null, informations: null, actions: null, inlineTextWithIcon: null };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 obj2.content = { display: "flex", flexDirection: "row", paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
@@ -46,7 +46,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const obj3 = { variant: "text-md/semibold", children: null };
     const intl = tmp(1119).intl;
     obj3.children = intl.string(tmp(1119).t.i4xQ5o);
-    const tmp11 = closure_5(tmp(4754).Text, obj3);
+    const tmp11 = closure_5(tmp(4786).Text, obj3);
     cResult[2] = tmp11;
     let tmp9 = tmp11;
   } else {
@@ -76,7 +76,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const obj5 = { variant: "text-xs/medium", color: "text-link", children: null };
     const intl2 = tmp(1119).intl;
     obj5.children = intl2.string(tmp(1119).t.KyUKhT);
-    const tmp19 = closure_5(tmp(4754).Text, obj5);
+    const tmp19 = closure_5(tmp(4786).Text, obj5);
     cResult[7] = tmp19;
     let tmp17 = tmp19;
   } else {

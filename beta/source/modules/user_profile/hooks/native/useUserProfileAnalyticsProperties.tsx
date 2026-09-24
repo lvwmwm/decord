@@ -1,14 +1,14 @@
-// Module ID: 8473
-// Function ID: 8474
+// Module ID: 8505
+// Function ID: 8506
 // Name: useUserProfileAnalyticsProperties
-// Dependencies: [19, 8457, 558, 568, 2]
+// Dependencies: [19, 8489, 558, 568, 2]
 
-// Module 8473 (useUserProfileAnalyticsProperties)
+// Module 8505 (useUserProfileAnalyticsProperties)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const UserProfileAnalyticsTypes = fn(8457).UserProfileAnalyticsTypes;
+const UserProfileAnalyticsTypes = fn(8489).UserProfileAnalyticsTypes;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileAnalyticsProperties.tsx");

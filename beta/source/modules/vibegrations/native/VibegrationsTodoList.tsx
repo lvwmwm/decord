@@ -1,17 +1,17 @@
-// Module ID: 17044
-// Function ID: 17045
+// Module ID: 17054
+// Function ID: 17055
 // Name: VibegrationsTodoList
-// Dependencies: [19, 17, 21, 4758, 580, 1119, 3682, 558, 568, 17043, 17024, 4754, 9549, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 1119, 3714, 558, 568, 17053, 17034, 4786, 9581, 2]
 // Exports: todoProgress
 
-// Module 17044 (VibegrationsTodoList)
+// Module 17054 (VibegrationsTodoList)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import VibegrationsNativeStatusLine from "VibegrationsNativeStatusLine" /* 17024 */;
-import VibegrationsTodoAgents from "VibegrationsTodoAgents" /* 17043 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import VibegrationsNativeStatusLine from "VibegrationsNativeStatusLine" /* 17034 */;
+import VibegrationsTodoAgents from "VibegrationsTodoAgents" /* 17053 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { root: { gap: nativeDefault.space.PX_8 }, header: null, list: null, row: null, marker: null, markerCompleted: null, markerInProgress: null, markerSpinner: null, text: null, agents: null, agentMark: null, agentMarkTint0: null, agentMarkTint1: null, agentMarkTint2: null, agentMarkTint3: null, textCompleted: null };
 let obj3 = { gap: nativeDefault.space.PX_8 };
 obj2.header = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8 };
@@ -80,10 +80,10 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((agents) => {
                     let obj2 = { variant: "text-xs/medium", color: "text-muted", accessibilityLabel: null, children: null };
                     let intl = tmp(1119).intl;
                     const obj3 = { count: tmp6 };
-                    obj2.accessibilityLabel = intl.formatToPlainString(items1(3682).Vpu1Pd, obj3);
+                    obj2.accessibilityLabel = intl.formatToPlainString(items1(3714).Vpu1Pd, obj3);
                     const _HermesInternal = HermesInternal;
                     obj2.children = "+" + tmp6;
-                    tmp18 = closure_6(tmp(4754).Text, obj2);
+                    tmp18 = closure_6(tmp(4786).Text, obj2);
                   }
                   cResult[12] = tmp6;
                   cResult[13] = tmp18;
@@ -132,7 +132,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((agents) => {
       items[1] = items1[VibegrationsNativeStatusLine.laneTintIndexFor(key.key) % VibegrationsNativeStatusLine.LANE_TINT_COUNT];
       obj.style = items;
       const intl = util.intl;
-      obj.accessibilityLabel = intl.formatToPlainString(_modDef3682.yTB8eu, { name: key.name, task: key.task });
+      obj.accessibilityLabel = intl.formatToPlainString(_modDef3714.yTB8eu, { name: key.name, task: key.task });
       return timestampProducer(hasOwnProperty, obj, key.key);
     });
     tmp12 = forResult;
@@ -171,7 +171,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((agents) => {
           items[1] = items[VibegrationsNativeStatusLine.laneTintIndexFor(key.key) % VibegrationsNativeStatusLine.LANE_TINT_COUNT];
           obj.style = items;
           const intl = util.intl;
-          obj.accessibilityLabel = intl.formatToPlainString(_modDef3682.yTB8eu, { name: key.name, task: key.task });
+          obj.accessibilityLabel = intl.formatToPlainString(_modDef3714.yTB8eu, { name: key.name, task: key.task });
           return timestampProducer(hasOwnProperty, obj, key.key);
         }),
 
@@ -181,10 +181,10 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((agents) => {
       const obj3 = { variant: "text-xs/medium", color: "text-muted", accessibilityLabel: null, children: null };
       let intl = tmp2(1119).intl;
       const obj4 = { count: overflow };
-      obj3.accessibilityLabel = intl.formatToPlainString(items(3682).Vpu1Pd, obj4);
+      obj3.accessibilityLabel = intl.formatToPlainString(items(3714).Vpu1Pd, obj4);
       const _HermesInternal = HermesInternal;
       obj3.children = "+" + overflow;
-      tmp9 = closure_6(tmp2(4754).Text, obj3);
+      tmp9 = closure_6(tmp2(4786).Text, obj3);
     }
     items1[1] = tmp9;
     obj2.children = items1;
@@ -213,15 +213,15 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
       if (cResult[4] !== status) {
         if ("completed" === status) {
           const intl3 = tmp(1119).intl;
-          let stringResult = intl3.string(_modDef3682.TkPGOH);
+          let stringResult = intl3.string(_modDef3714.TkPGOH);
           cResult[4] = status;
           cResult[5] = stringResult;
         } else if ("in_progress" !== status) {
           const intl = tmp(1119).intl;
-          stringResult = intl.string(_modDef3682.d7lieu);
+          stringResult = intl.string(_modDef3714.d7lieu);
         }
         const intl2 = tmp(1119).intl;
-        stringResult = intl2.string(_modDef3682["oK+fmd"]);
+        stringResult = intl2.string(_modDef3714["oK+fmd"]);
       } else {
         if (cResult[6] === status) {
           if (cResult[7] === tmp4.markerSpinner) {
@@ -231,7 +231,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
             let tmp19 = null;
             if (tmp5) {
               const obj2 = { size: "xs", color: nativeDefault.colors.CHECKBOX_ICON_ACTIVE };
-              tmp19 = timestampProducer(tmp(9549).CheckmarkSmallBoldIcon, obj2);
+              tmp19 = timestampProducer(tmp(9581).CheckmarkSmallBoldIcon, obj2);
             }
             cResult[9] = status;
             cResult[10] = tmp19;
@@ -295,17 +295,17 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
   items[2] = markerInProgress;
   if ("completed" === status) {
     const intl3 = util.intl;
-    let stringResult = intl3.string(_modDef3682.TkPGOH);
+    let stringResult = intl3.string(_modDef3714.TkPGOH);
     let tmp10 = importDefault;
     let tmp11 = require;
   } else if ("in_progress" === status) {
     const intl2 = util.intl;
-    stringResult = intl2.string(_modDef3682["oK+fmd"]);
+    stringResult = intl2.string(_modDef3714["oK+fmd"]);
     tmp10 = importDefault;
     tmp11 = require;
   } else {
     const intl = util.intl;
-    stringResult = intl.string(_modDef3682.d7lieu);
+    stringResult = intl.string(_modDef3714.d7lieu);
     tmp10 = importDefault;
     tmp11 = require;
   }
@@ -319,7 +319,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
   let tmp21 = null;
   if ("completed" === status) {
     const obj3 = { size: "xs", color: tmp10(580).colors.CHECKBOX_ICON_ACTIVE };
-    tmp21 = timestampProducer(tmp11(9549).CheckmarkSmallBoldIcon, obj3);
+    tmp21 = timestampProducer(tmp11(9581).CheckmarkSmallBoldIcon, obj3);
   }
   items1[1] = tmp21;
   obj.children = items1;
@@ -408,7 +408,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           let obj4 = { style: tmp5.row, children: null };
                           let items2 = [closure_6(closure_10, { status: "pending" }), ];
                           const obj5 = { variant: "text-sm/normal", color: "text-muted", style: tmp5.text, children: provisional };
-                          items2[1] = closure_6(tmp(4754).Text, obj5);
+                          items2[1] = closure_6(tmp(4786).Text, obj5);
                           obj4.children = items2;
                           tmp31 = closure_7(closure_5, obj4);
                         }
@@ -488,11 +488,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp11 = cResult[11];
   }
   if (cResult[12] !== tmp11) {
-    const groupAgentsByTodoResult = tmp(17043).groupAgentsByTodo(tmp11);
+    const groupAgentsByTodoResult = tmp(17053).groupAgentsByTodo(tmp11);
     cResult[12] = tmp11;
     cResult[13] = groupAgentsByTodoResult;
     let tmp13 = groupAgentsByTodoResult;
-    const tmpResult = tmp(17043);
+    const tmpResult = tmp(17053);
   } else {
     tmp13 = cResult[13];
   }
@@ -503,8 +503,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj6 = { style: tmp5.header, children: null };
       const obj7 = { variant: "text-sm/medium", color: "text-subtle", children: null };
       const intl = tmp(1119).intl;
-      obj7.children = intl.string(_modDef3682.qCRC6c);
-      const items4 = [closure_6(tmp(4754).Text, obj7), ];
+      obj7.children = intl.string(_modDef3714.qCRC6c);
+      const items4 = [closure_6(tmp(4786).Text, obj7), ];
       let str2 = "none";
       if (tmp4) {
         str2 = "polite";
@@ -512,11 +512,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj8 = { variant: "text-sm/medium", color: "text-muted", accessibilityLiveRegion: str2, accessibilityLabel: null, children: null };
       const intl2 = tmp(1119).intl;
       const obj9 = { completed: length, total: length2 };
-      obj8.accessibilityLabel = intl2.formatToPlainString(_modDef3682["QG/EiF"], obj9);
+      obj8.accessibilityLabel = intl2.formatToPlainString(_modDef3714["QG/EiF"], obj9);
       const intl3 = tmp(1119).intl;
       const obj10 = { completed: length, total: length2 };
-      obj8.children = intl3.formatToPlainString(_modDef3682.bQvqly, obj10);
-      items4[1] = closure_6(tmp(4754).Text, obj8);
+      obj8.children = intl3.formatToPlainString(_modDef3714.bQvqly, obj10);
+      items4[1] = closure_6(tmp(4786).Text, obj8);
       obj6.children = items4;
       tmp21Result = closure_7(tmp19, obj6);
     }
@@ -567,8 +567,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj2 = { style: tmp.header, children: null };
       let obj3 = { variant: "text-sm/medium", color: "text-subtle", children: null };
       const intl = agents(1119).intl;
-      obj3.children = intl.string(_modDef3682.qCRC6c);
-      let items1 = [closure_6(agents(4754).Text, obj3), ];
+      obj3.children = intl.string(_modDef3714.qCRC6c);
+      let items1 = [closure_6(agents(4786).Text, obj3), ];
       let str2 = "none";
       if (flag) {
         str2 = "polite";
@@ -576,11 +576,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let obj4 = { variant: "text-sm/medium", color: "text-muted", accessibilityLiveRegion: str2, accessibilityLabel: null, children: null };
       const intl2 = tmp9(1119).intl;
       const obj5 = { completed: length, total: length2 };
-      obj4.accessibilityLabel = intl2.formatToPlainString(_modDef3682["QG/EiF"], obj5);
+      obj4.accessibilityLabel = intl2.formatToPlainString(_modDef3714["QG/EiF"], obj5);
       const intl3 = tmp9(1119).intl;
       const obj6 = { completed: length, total: length2 };
-      obj4.children = intl3.formatToPlainString(_modDef3682.bQvqly, obj6);
-      items1[1] = closure_6(agents(4754).Text, obj4);
+      obj4.children = intl3.formatToPlainString(_modDef3714.bQvqly, obj6);
+      items1[1] = closure_6(agents(4786).Text, obj4);
       obj2.children = items1;
       tmp4Result = tmp4(tmp5, obj2);
     }
@@ -620,7 +620,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj8 = { style: tmp.row, children: null };
         const items4 = [closure_6(closure_10, { status: "pending" }), ];
         const obj9 = { variant: "text-sm/normal", color: "text-muted", style: tmp.text, children: provisional };
-        items4[1] = closure_6(agents(4754).Text, obj9);
+        items4[1] = closure_6(agents(4786).Text, obj9);
         obj8.children = items4;
         tmp4Result3 = tmp4(tmp5, obj8);
       }

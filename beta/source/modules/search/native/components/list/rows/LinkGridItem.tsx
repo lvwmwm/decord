@@ -1,25 +1,25 @@
-// Module ID: 17153
-// Function ID: 17154
+// Module ID: 17163
+// Function ID: 17164
 // Name: LinkGridItem
-// Dependencies: [32, 19, 17, 2045, 7525, 8127, 21, 4758, 504, 1119, 8137, 17154, 4754, 5291, 12486, 4700, 11736, 17146, 5341, 558, 568, 17144, 38, 8646, 2]
+// Dependencies: [32, 19, 17, 2045, 7557, 8159, 21, 4790, 504, 1119, 8169, 17164, 4786, 5323, 12522, 4732, 11772, 17156, 5373, 558, 568, 17154, 38, 8678, 2]
 
-// Module 17153 (LinkGridItem)
+// Module 17163 (LinkGridItem)
 import _modDef38 from "module_38" /* 38 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import LinkIcon from "LinkIcon" /* 4700 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ChatIcon from "ChatIcon" /* 5291 */;
-import renderMessageMarkup from "renderMessageMarkup" /* 8137 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8646 */;
-import MarkupReactLinkUtils from "MarkupReactLinkUtils" /* 11736 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12486 */;
-import SearchMediaImage from "SearchMediaImage" /* 17144 */;
-import SearchResultLinkPreviewMarkup from "SearchResultLinkPreviewMarkup" /* 17154 */;
+import LinkIcon from "LinkIcon" /* 4732 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ChatIcon from "ChatIcon" /* 5323 */;
+import renderMessageMarkup from "renderMessageMarkup" /* 8169 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8678 */;
+import MarkupReactLinkUtils from "MarkupReactLinkUtils" /* 11772 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12522 */;
+import SearchMediaImage from "SearchMediaImage" /* 17154 */;
+import SearchResultLinkPreviewMarkup from "SearchResultLinkPreviewMarkup" /* 17164 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import SearchMessageStore from "SearchMessageStore" /* 7525 */;
+import SearchMessageStore from "SearchMessageStore" /* 7557 */;
 
 require = fn;
 function getLinkNodeAtIndex(content, diff, fn) {
@@ -4744,11 +4744,11 @@ function LinkParsedGridItem(author) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, useWindowDimensions: metroRequire } = get_ActivityIndicator);
-const SearchConstants = fn(8127);
+const SearchConstants = fn(8159);
 ({ FILE_OR_LINK_IMAGE_BUFFER: closure_9, SearchLinkTypes: c10 } = SearchConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_13 = createStyles.createStyles({ iconContainer: { alignItems: "center", justifyContent: "center" }, tapToSee: { fontStyle: "italic" } });
 let ReactCompilerGating = fn(558);
 let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {

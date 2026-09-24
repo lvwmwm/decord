@@ -1,15 +1,15 @@
-// Module ID: 11596
-// Function ID: 11597
+// Module ID: 11632
+// Function ID: 11633
 // Name: useSubscribeMissingActivities
-// Dependencies: [32, 19, 11597, 4798, 558, 568, 504, 11599, 2]
+// Dependencies: [32, 19, 11633, 4830, 558, 568, 504, 11635, 2]
 
-// Module 11596 (useSubscribeMissingActivities)
+// Module 11632 (useSubscribeMissingActivities)
 import c from "c" /* 568 */;
-import PresenceSubscriptionsActionCreators from "PresenceSubscriptionsActionCreators" /* 11599 */;
+import PresenceSubscriptionsActionCreators from "PresenceSubscriptionsActionCreators" /* 11635 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import PresenceSubscriptionsStore from "PresenceSubscriptionsStore" /* 11597 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
+import PresenceSubscriptionsStore from "PresenceSubscriptionsStore" /* 11633 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
 
 require = fn;
 let closure_6 = [];

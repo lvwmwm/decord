@@ -1,18 +1,18 @@
-// Module ID: 9654
-// Function ID: 9655
+// Module ID: 9686
+// Function ID: 9687
 // Name: useShouldForcePipOrientation
-// Dependencies: [2044, 4774, 502, 2008, 4779, 558, 568, 9655, 504, 9612, 8608, 2]
+// Dependencies: [2044, 4806, 502, 2008, 4811, 558, 568, 9687, 504, 9644, 8640, 2]
 
-// Module 9654 (useShouldForcePipOrientation)
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9612 */;
-import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 9655 */;
+// Module 9686 (useShouldForcePipOrientation)
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9644 */;
+import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 9687 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4806 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
 const OrientationLockState = fn(2008).OrientationLockState;
-const CallConstants = fn(4779);
+const CallConstants = fn(4811);
 ({ isStreamParticipant: closure_7, ParticipantTypes: closure_8 } = CallConstants);
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -390,17 +390,17 @@ export const useShouldForcePipOrientation = ReactCompilerGating.isReactCompilerE
   if (null != focusedEmbeddedActivityParticipant) {
     if (closure_7(focusedEmbeddedActivityParticipant)) {
       if (null == stateFromStores) {
-        return tmp2(8608).OrientationType.LANDSCAPE;
+        return tmp2(8640).OrientationType.LANDSCAPE;
       }
     }
   }
   if (activityLockOrientation === OrientationLockState.LANDSCAPE) {
-    OrientationType = tmp2(8608).OrientationType;
+    OrientationType = tmp2(8640).OrientationType;
     let LANDSCAPE = OrientationType.LANDSCAPE;
   } else {
     LANDSCAPE = null;
     if (activityLockOrientation === tmp8.PORTRAIT) {
-      LANDSCAPE = tmp2(8608).OrientationType.PORTRAIT;
+      LANDSCAPE = tmp2(8640).OrientationType.PORTRAIT;
     }
   }
 });

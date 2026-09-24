@@ -1,15 +1,15 @@
-// Module ID: 5176
-// Function ID: 5177
+// Module ID: 5208
+// Function ID: 5209
 // Name: VisualEffectView
-// Dependencies: [109, 19, 17, 5177, 1078, 21, 1368, 5178, 558, 568, 4462, 580, 5181, 2]
+// Dependencies: [109, 19, 17, 5209, 1078, 21, 1368, 5210, 558, 568, 4494, 580, 5213, 2]
 // Exports: isBlurDisabled, isBlurThemeLight, normalizeBlurTheme
 
-// Module 5176 (VisualEffectView)
+// Module 5208 (VisualEffectView)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken2 from "useToken" /* 4462 */;
-import VisualEffectViewIOS from "VisualEffectViewIOS" /* 5178 */;
-import VisualEffectViewAndroid from "VisualEffectViewAndroid" /* 5181 */;
+import useToken2 from "useToken" /* 4494 */;
+import VisualEffectViewIOS from "VisualEffectViewIOS" /* 5210 */;
+import VisualEffectViewAndroid from "VisualEffectViewAndroid" /* 5213 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -49,7 +49,7 @@ function getIOSBlurEffect(blurTheme, blurStyle) {
 }
 let closure_3 = ["blurTheme", "blurStyle", "blurAmount", "tintColor", "android_fallbackColor", "android_blurTargetViewNativeId", "android_softwareBlurDisabled"];
 const View = fn(17).View;
-let closure_6 = fn(5177).useVisualEffectViewOverrides;
+let closure_6 = fn(5209).useVisualEffectViewOverrides;
 const ThemeTypes = fn(1078).ThemeTypes;
 const jsx = fn(21).jsx;
 const PlatformUtils = fn(1368);
@@ -70,9 +70,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[0] = blurTheme;
     cResult[1] = DARK;
   } else {
-    const token = tmp(4462).useToken(nativeDefault.colors.LEGACY_BLUR_FALLBACK_DEFAULT, tmp5);
-    const tmpResult = tmp(4462);
-    let token1 = tmp(4462).useToken(nativeDefault.colors.LEGACY_BLUR_FALLBACK_ULTRA_THIN, tmp5);
+    const token = tmp(4494).useToken(nativeDefault.colors.LEGACY_BLUR_FALLBACK_DEFAULT, tmp5);
+    const tmpResult = tmp(4494);
+    let token1 = tmp(4494).useToken(nativeDefault.colors.LEGACY_BLUR_FALLBACK_ULTRA_THIN, tmp5);
     if ("default" === tmp4) {
       token1 = token;
     }
@@ -110,7 +110,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[8] = style;
     cResult[9] = items;
     tmp16 = items;
-    const tmpResult2 = tmp(4462);
+    const tmpResult2 = tmp(4494);
   }
 }) : ((arg0) => {
   ({ blurTheme, android_fallbackColor } = arg0);
@@ -149,15 +149,15 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
     cResult[0] = arg0;
     cResult[1] = DARK;
   } else {
-    const token = tmp(4462).useToken(nativeDefault.colors.LEGACY_ANDROID_BLUR_OVERLAY_DEFAULT, cResult[1]);
-    const tmpResult = tmp(4462);
-    const useToken = tmp(4462).useToken;
+    const token = tmp(4494).useToken(nativeDefault.colors.LEGACY_ANDROID_BLUR_OVERLAY_DEFAULT, cResult[1]);
+    const tmpResult = tmp(4494);
+    const useToken = tmp(4494).useToken;
     if ("default" === arg1) {
       return token;
     } else {
       return "ultra-thin" === arg1 ? tmp10 : undefined;
     }
-    const tmpResult2 = tmp(4462);
+    const tmpResult2 = tmp(4494);
   }
 }) : ((DARK, arg1) => {
   if ("light" === DARK) {
@@ -468,8 +468,8 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
     obj3.tintColor = tintColorOverride;
     obj3.blurTargetViewNativeId = android_blurTargetViewNativeId;
     const merged2 = Object.assign(merged);
-    tmp10Result = tmp10(tmp11(5181), obj3);
-    const tmp11Result = tmp11(5181);
+    tmp10Result = tmp10(tmp11(5213), obj3);
+    const tmp11Result = tmp11(5213);
   } else {
     const obj = { ref, blurEffectName: null, blurAmount: null, tintColor: null };
     if (blurEffectNameOverride == null) {
@@ -487,8 +487,8 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
     }
     obj.tintColor = tmp16;
     const merged3 = Object.assign(merged);
-    tmp10Result = tmp10(tmp11(5178), obj);
-    const tmp11Result2 = tmp11(5178);
+    tmp10Result = tmp10(tmp11(5210), obj);
+    const tmp11Result2 = tmp11(5210);
   }
   return tmp10Result;
 }));

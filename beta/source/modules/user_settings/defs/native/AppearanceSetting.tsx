@@ -1,16 +1,16 @@
-// Module ID: 15520
-// Function ID: 15521
+// Module ID: 15530
+// Function ID: 15531
 // Name: AppearanceSetting
-// Dependencies: [4578, 1189, 1078, 558, 568, 4693, 504, 1232, 8123, 1119, 2716, 11594, 15521, 15523, 2]
+// Dependencies: [4610, 1189, 1078, 558, 568, 4725, 504, 1232, 8155, 1119, 2716, 11630, 15531, 15533, 2]
 
-// Module 15520 (AppearanceSetting)
+// Module 15530 (AppearanceSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1232 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import useActiveTheme from "useActiveTheme" /* 8123 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4578 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import useActiveTheme from "useActiveTheme" /* 8155 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4610 */;
 
 const _modDef2716 = tmp4(2716);
 require = fn;
@@ -117,14 +117,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return tmp8.DEFAULT === activeThemeType ? themeName : undefined;
   }
 });
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["iHH+ky"]);
   },
   parent: null,
-  IconComponent: fn(15521).PaintPaletteIcon,
+  IconComponent: fn(15531).PaintPaletteIcon,
   useTrailing: tmp2,
   screen: {
     route: fn(1078).UserSettingsSections.APPEARANCE,

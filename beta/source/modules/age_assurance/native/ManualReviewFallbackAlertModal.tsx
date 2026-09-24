@@ -1,14 +1,14 @@
-// Module ID: 8869
-// Function ID: 8870
+// Module ID: 8901
+// Function ID: 8902
 // Name: ManualReviewFallbackAlertModal
-// Dependencies: [19, 21, 558, 568, 1119, 3070, 5116, 5116, 8870, 2]
+// Dependencies: [19, 21, 558, 568, 1119, 3102, 5148, 5148, 8902, 2]
 
-// Module 8869 (ManualReviewFallbackAlertModal)
+// Module 8901 (ManualReviewFallbackAlertModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import _modDef3070 from "module_3070" /* 3070 */;
-import AlertModal from "AlertModal" /* 5116 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8870 */;
+import _modDef3102 from "module_3102" /* 3102 */;
+import AlertModal from "AlertModal" /* 5148 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8902 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,9 +22,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1119).intl;
-    const stringResult = intl.string(_modDef3070["+c5sxg"]);
+    const stringResult = intl.string(_modDef3102["+c5sxg"]);
     const intl2 = tmp(1119).intl;
-    const stringResult1 = intl2.string(_modDef3070["RFLH++"]);
+    const stringResult1 = intl2.string(_modDef3102["RFLH++"]);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
     tmp4 = stringResult;
@@ -36,7 +36,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { text: null };
     const intl3 = tmp(1119).intl;
     obj2.text = intl3.string(tmp(1119).t["NX+WJN"]);
-    const tmp11 = React3(tmp(5116).AlertActionButton, obj2, "got-it");
+    const tmp11 = React3(tmp(5148).AlertActionButton, obj2, "got-it");
     cResult[2] = tmp11;
     let tmp9 = tmp11;
   } else {
@@ -48,14 +48,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const items = [tmp9, ];
     const obj5 = { variant: "secondary", text: null, onPress: null };
     const intl4 = tmp(1119).intl;
-    obj5.text = intl4.string(_modDef3070.Z61nkt);
+    obj5.text = intl4.string(_modDef3102.Z61nkt);
     obj5.onPress = function onPress() {
       return ManualReviewActionCreators.handleManualReviewCta();
     };
-    items[1] = React3(tmp(5116).AlertActionButton, obj5, "request-manual-review");
+    items[1] = React3(tmp(5148).AlertActionButton, obj5, "request-manual-review");
     obj4.children = items;
-    obj3.actions = React4(tmp(5116).AlertActions, obj4);
-    const tmp16 = React3(tmp(5116).AlertModal, obj3);
+    obj3.actions = React4(tmp(5148).AlertActions, obj4);
+    const tmp16 = React3(tmp(5148).AlertModal, obj3);
     cResult[3] = tmp16;
     let tmp12 = tmp16;
   } else {
@@ -65,9 +65,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const obj = { title: null, content: null, actions: null };
   const intl = util.intl;
-  obj.title = intl.string(_modDef3070["+c5sxg"]);
+  obj.title = intl.string(_modDef3102["+c5sxg"]);
   const intl2 = util.intl;
-  obj.content = intl2.string(_modDef3070["RFLH++"]);
+  obj.content = intl2.string(_modDef3102["RFLH++"]);
   const obj2 = { children: null };
   const obj3 = { text: null };
   const intl3 = util.intl;
@@ -75,7 +75,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items = [React3(AlertModal.AlertActionButton, obj3, "got-it"), ];
   const obj4 = { variant: "secondary", text: null, onPress: null };
   const intl4 = util.intl;
-  obj4.text = intl4.string(_modDef3070.Z61nkt);
+  obj4.text = intl4.string(_modDef3102.Z61nkt);
   obj4.onPress = function onPress() {
     return ManualReviewActionCreators.handleManualReviewCta();
   };

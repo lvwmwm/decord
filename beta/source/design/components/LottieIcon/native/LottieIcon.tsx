@@ -1,14 +1,14 @@
-// Module ID: 10204
-// Function ID: 10205
+// Module ID: 10243
+// Function ID: 10244
 // Name: LottieIcon
-// Dependencies: [19, 17, 21, 558, 568, 580, 6855, 4481, 4462, 5750, 2]
+// Dependencies: [19, 17, 21, 558, 568, 580, 6887, 4513, 4494, 5782, 2]
 
-// Module 10204 (LottieIcon)
+// Module 10243 (LottieIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import _modDef5750 from "module_5750" /* 5750 */;
-import IconSize from "IconSize" /* 6855 */;
+import useToken from "useToken" /* 4494 */;
+import _modDef5782 from "module_5782" /* 5782 */;
+import IconSize from "IconSize" /* 6887 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -98,7 +98,7 @@ export const LottieIcon = noop.forwardRef(ReactCompilerGating.isReactCompilerEna
         }
         const sum1 = tmp17 + tmp18;
         const ref = noop.useRef(null);
-        const enabled = noop.useContext(tmp(4481).AccessibilityPreferencesContext).reducedMotion.enabled;
+        const enabled = noop.useContext(tmp(4513).AccessibilityPreferencesContext).reducedMotion.enabled;
         if ("custom" === str) {
           class R {
             constructor(arg0) {
@@ -135,7 +135,7 @@ export const LottieIcon = noop.forwardRef(ReactCompilerGating.isReactCompilerEna
               }
             }
           }
-          const token = tmp(4462).useToken(color);
+          const token = tmp(4494).useToken(color);
           if (cResult[13] === layers) {
             class R {
               constructor(arg0) {
@@ -201,7 +201,7 @@ export const LottieIcon = noop.forwardRef(ReactCompilerGating.isReactCompilerEna
           cResult[13] = layers;
           cResult[14] = token;
           cResult[15] = undefined;
-          const tmpResult = tmp(4462);
+          const tmpResult = tmp(4494);
         }
         const size1 = { width: tmp5, height: tmp5 };
         cResult[8] = tmp5;
@@ -308,7 +308,7 @@ export const LottieIcon = noop.forwardRef(ReactCompilerGating.isReactCompilerEna
   }
   sum1 = num2 + num3;
   ref = noop.useRef(null);
-  enabled = noop.useContext(tmp3(4481).AccessibilityPreferencesContext).reducedMotion.enabled;
+  enabled = noop.useContext(tmp3(4513).AccessibilityPreferencesContext).reducedMotion.enabled;
   let tmp12 = tmp5;
   if ("custom" === size) {
     tmp12 = width;
@@ -377,6 +377,6 @@ export const LottieIcon = noop.forwardRef(ReactCompilerGating.isReactCompilerEna
   obj3.onAnimationLoaded = callback1;
   const items4 = [size1, { opacity: num }];
   obj3.style = items4;
-  obj2.children = jsx(_modDef5750, { ref, source: color.dotLottie, colorFilters: null, hardwareAccelerationAndroid: true, loop: false, onAnimationLoaded: null, resizeMode: "cover", style: null });
+  obj2.children = jsx(_modDef5782, { ref, source: color.dotLottie, colorFilters: null, hardwareAccelerationAndroid: true, loop: false, onAnimationLoaded: null, resizeMode: "cover", style: null });
   return <tmp19 style={size1}>{null}</tmp19>;
 }));

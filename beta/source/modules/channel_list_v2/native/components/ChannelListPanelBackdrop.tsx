@@ -1,14 +1,14 @@
-// Module ID: 16440
-// Function ID: 16441
+// Module ID: 16450
+// Function ID: 16451
 // Name: ChannelListPanelBackdrop
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 16361, 1616, 15347, 16441, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 16371, 1616, 15357, 16451, 2]
 
-// Module 16440 (ChannelListPanelBackdrop)
+// Module 16450 (ChannelListPanelBackdrop)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import QuestHooks from "QuestHooks" /* 15347 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16361 */;
+import QuestHooks from "QuestHooks" /* 15357 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16371 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,7 +17,7 @@ get_ActivityIndicator = fn(17);
 const DM_WIDTH = fn(1078).DM_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, position: "relative", overflow: "hidden" }, panelTint: null, listWrapper: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -122,7 +122,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 tmp19 = tmp22;
               }
             }
-            let tmp12Result = 16441;
+            let tmp12Result = 16451;
             if (isHomeDrawerEnabled) {
               let ScreenAlignedThemedGradientSliding = tmp(tmp12Result).ScreenAlignedThemedGradientSliding;
             } else {

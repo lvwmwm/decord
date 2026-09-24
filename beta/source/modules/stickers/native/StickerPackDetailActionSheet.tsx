@@ -1,23 +1,23 @@
-// Module ID: 10687
-// Function ID: 10688
+// Module ID: 10723
+// Function ID: 10724
 // Name: StickerPackDetailActionSheet
-// Dependencies: [32, 19, 10650, 1078, 7398, 21, 4758, 558, 568, 1482, 1616, 12, 1245, 7397, 10688, 10689, 7401, 6863, 10693, 5341, 10694, 2]
+// Dependencies: [32, 19, 10686, 1078, 7430, 21, 4790, 558, 568, 1482, 1616, 12, 1245, 7429, 10724, 10725, 7433, 6895, 10729, 5373, 10730, 2]
 
-// Module 10687 (StickerPackDetailActionSheet)
+// Module 10723 (StickerPackDetailActionSheet)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import StickerPickerListRowDefault from "StickerPickerListRow" /* 10693 */;
+import StickerPickerListRowDefault from "StickerPickerListRow" /* 10729 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const StickerPickerConstants = fn(10650);
+const StickerPickerConstants = fn(10686);
 ({ MIN_MARGIN: hasOwnProperty, STICKER_SIZE: metroRequire } = StickerPickerConstants);
 const AnalyticEvents = fn(1078).AnalyticEvents;
-const ACTION_SHEET_MAX_WIDTH = fn(7398).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(7430).ACTION_SHEET_MAX_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
-let closure_12 = createStyles.createStyles({ focusedStickerPreviewContainer: { position: "absolute", left: 0, top: 0, height: "100%", width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "rgba(0, 0, 0, 0.85)" }, header: { marginHorizontal: 16, marginVertical: 8, backgroundColor: "transparent", height: "emoji" }, stickers: { paddingHorizontal: 16, marginBottom: 16 }, popoutContainer: { position: "absolute", bottom: 50 } });
+const createStyles = fn(4790);
+let closure_12 = createStyles.createStyles({ focusedStickerPreviewContainer: { position: "absolute", left: 0, top: 0, height: "100%", width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "rgba(0, 0, 0, 0.85)" }, header: { marginHorizontal: 16, marginVertical: 8, backgroundColor: "transparent", height: "forEach" }, stickers: { paddingHorizontal: 16, marginBottom: 16 }, popoutContainer: { position: "absolute", bottom: 50 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stickers/native/StickerPackDetailActionSheet.tsx");

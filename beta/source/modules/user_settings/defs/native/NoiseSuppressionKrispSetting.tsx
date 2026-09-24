@@ -1,14 +1,14 @@
-// Module ID: 15514
-// Function ID: 15515
+// Module ID: 15524
+// Function ID: 15525
 // Name: NoiseSuppressionKrispSetting
-// Dependencies: [1996, 8238, 10247, 558, 568, 10248, 1119, 504, 11594, 2]
+// Dependencies: [1996, 8270, 10286, 558, 568, 10287, 1119, 504, 11630, 2]
 
-// Module 15514 (NoiseSuppressionKrispSetting)
+// Module 15524 (NoiseSuppressionKrispSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 10247 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 10248 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 10286 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 10287 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
 require = fn;
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] !== noiseCancellationDeferredToSystem) {
-    const obj3 = { value: tmp(10247).NoiseSuppressionOpt.KRISP, label: first, disabled: noiseCancellationDeferredToSystem };
+    const obj3 = { value: tmp(10286).NoiseSuppressionOpt.KRISP, label: first, disabled: noiseCancellationDeferredToSystem };
     cResult[1] = noiseCancellationDeferredToSystem;
     cResult[2] = obj3;
     let tmp7 = obj3;
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[3];
   }
   if (cResult[4] !== noiseCancellationDeferredToSystem) {
-    const obj4 = { value: tmp(10247).NoiseSuppressionOpt.STANDARD, disabled: noiseCancellationDeferredToSystem, label: tmp8 };
+    const obj4 = { value: tmp(10286).NoiseSuppressionOpt.STANDARD, disabled: noiseCancellationDeferredToSystem, label: tmp8 };
     cResult[4] = noiseCancellationDeferredToSystem;
     cResult[5] = obj4;
     let tmp10 = obj4;
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[6];
   }
   if (cResult[7] !== noiseCancellationDeferredToSystem) {
-    const obj5 = { value: tmp(10247).NoiseSuppressionOpt.NONE, disabled: noiseCancellationDeferredToSystem, label: tmp11 };
+    const obj5 = { value: tmp(10286).NoiseSuppressionOpt.NONE, disabled: noiseCancellationDeferredToSystem, label: tmp11 };
     cResult[7] = noiseCancellationDeferredToSystem;
     cResult[8] = obj5;
     let tmp13 = obj5;
@@ -96,7 +96,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   items[2] = obj4;
   return items;
 });
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -121,7 +121,7 @@ const radio = SettingBuilders.createRadio({
     const intl = util.intl;
     return intl.string(util.t.t8Qhib);
   },
-  parent: fn(8238).MobileUserSettings.VOICE,
+  parent: fn(8270).MobileUserSettings.VOICE,
   useValue() {
     return UserSettingsVoiceUtils.useSelectedNoiseSuppressionOption();
   },

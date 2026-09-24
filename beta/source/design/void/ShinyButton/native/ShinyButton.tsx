@@ -1,15 +1,15 @@
-// Module ID: 14357
-// Function ID: 14358
+// Module ID: 14395
+// Function ID: 14396
 // Name: ShinyButton/ShinyButton
-// Dependencies: [32, 109, 19, 17, 4750, 21, 4758, 558, 568, 504, 4497, 4759, 1184, 2]
+// Dependencies: [32, 109, 19, 17, 4782, 21, 4790, 558, 568, 504, 4529, 4791, 1184, 2]
 
-// Module 14357 (ShinyButton/ShinyButton)
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
+// Module 14395 (ShinyButton/ShinyButton)
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 const require = globalThis.__r;
 const ReanimatedRexportDefault = ReanimatedRexport;
@@ -21,7 +21,7 @@ let jsx = fn(21).jsx;
 let c10 = 2000;
 let c11 = 750;
 let c12 = 100;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { shinyButton: { overflow: "hidden" }, shineContainer: { width: "100%", height: "100%", position: "absolute", overflow: "hidden" }, shine: null, shineInner: { width: 16, height: "100%", backgroundColor: "rgba(255,255,255,0.1)" } };
 let size = { width: 56, height: "500%", transform: null, backgroundColor: "rgba(255,255,255,0.1)", top: "-100%", alignItems: "center" };
 let items = [{ rotate: "30deg" }];

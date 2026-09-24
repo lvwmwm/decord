@@ -1,15 +1,15 @@
-// Module ID: 6843
-// Function ID: 6844
+// Module ID: 6875
+// Function ID: 6876
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 5838, 21, 558, 568, 1488, 1098, 6841, 1119, 6844, 2]
+// Dependencies: [5, 19, 5870, 21, 558, 568, 1488, 1098, 6873, 1119, 6876, 2]
 
-// Module 6843 (ConfirmEmailChangeCode)
+// Module 6875 (ConfirmEmailChangeCode)
 import ConstantsIOS from "ConstantsIOS" /* 1098 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const setEmailToken = fn(5838).setEmailToken;
+const setEmailToken = fn(5870).setEmailToken;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -121,7 +121,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) =
     }
     if (cResult[7] !== tmp5) {
       let obj3 = { onFormSubmit: tmp7, onSuccess: tmp5, onResend: tmp9, headerText: tmp10, confirmButtonText: tmp11 };
-      const tmp18 = jsx(navigation(6844), { onFormSubmit: tmp7, onSuccess: tmp5, onResend: tmp9, headerText: tmp10, confirmButtonText: tmp11 });
+      const tmp18 = jsx(navigation(6876), { onFormSubmit: tmp7, onSuccess: tmp5, onResend: tmp9, headerText: tmp10, confirmButtonText: tmp11 });
       cResult[7] = tmp5;
       cResult[8] = tmp18;
       let tmp15 = tmp18;
@@ -234,5 +234,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) =
   obj2.headerText = intl.string(isChangeEmail(1119).t["2x/2Uo"]);
   const intl2 = isChangeEmail(1119).intl;
   obj2.confirmButtonText = intl2.string(isChangeEmail(1119).t.PDTjLN);
-  return jsx(navigation(6844), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
+  return jsx(navigation(6876), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
 });

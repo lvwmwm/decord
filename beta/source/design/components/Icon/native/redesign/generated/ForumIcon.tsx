@@ -1,13 +1,13 @@
-// Module ID: 5308
-// Function ID: 5309
+// Module ID: 5340
+// Function ID: 5341
 // Name: ForumIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 5262, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 5294, 4493, 2]
 
-// Module 5308 (ForumIcon)
+// Module 5340 (ForumIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod5262 from "module_5262" /* 5262 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod5294 from "module_5294" /* 5294 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const ForumIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(5262);
+    const tmpResult = tmp(5294);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const ForumIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5262, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5294, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

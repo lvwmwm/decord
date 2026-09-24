@@ -1,13 +1,13 @@
-// Module ID: 15932
-// Function ID: 15933
+// Module ID: 15942
+// Function ID: 15943
 // Name: LettersIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 15933, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 15943, 4493, 2]
 
-// Module 15932 (LettersIcon)
+// Module 15942 (LettersIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod15933 from "module_15933" /* 15933 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod15943 from "module_15943" /* 15943 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const LettersIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(15933);
+    const tmpResult = tmp(15943);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const LettersIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15933, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15943, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

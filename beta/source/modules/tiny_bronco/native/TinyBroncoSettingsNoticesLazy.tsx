@@ -1,49 +1,18 @@
-// Module ID: 15083
-// Function ID: 15084
+// Module ID: 15092
+// Function ID: 15093
 // Name: TinyBroncoSettingsNoticesLazy
-// Dependencies: [21, 558, 568, 2]
-// Exports: shouldShowTinyBroncoTeenNotice, shouldShowTinyBroncoUnconfirmedNotice, useIsTinyBroncoSettingsNoticeEnabled, useTinyBroncoMessageRequestsNoticeVariant
+// Dependencies: [2, 15093]
 
-// Module 15083 (TinyBroncoSettingsNoticesLazy)
-import jsxProd from "jsxProd" /* 21 */;
-import c from "c" /* 568 */;
-import "ReactCompilerGating";
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 15092 (TinyBroncoSettingsNoticesLazy)
+import TinyBroncoSettingsNotices from "TinyBroncoSettingsNotices" /* 15093 */;
 import size from "module_2" /* 2 */;
 
-const jsx = jsxProd.jsx;
-let c2 = null;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  c.c(1);
-  return null;
-}) : (() => null);
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  c.c(1);
-  return null;
-}) : (() => null);
 const result = size.fileFinishedImporting("modules/tiny_bronco/native/TinyBroncoSettingsNoticesLazy.tsx");
 
-export const ContentFiltersTeenNotice = tmp2;
-export const ContentFiltersUnconfirmedNotice = tmp3;
-export const MessageRequestsNotice = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  c.c(1);
-  return null;
-}) : (() => null);
-export const useTinyBroncoMessageRequestsNoticeVariant = function useTinyBroncoMessageRequestsNoticeVariant() {
-  let messageRequestsNoticeVariant;
-  if (_null != null) {
-    messageRequestsNoticeVariant = _null.useMessageRequestsNoticeVariant();
-  }
-  return messageRequestsNoticeVariant;
-};
-export function useIsTinyBroncoSettingsNoticeEnabled() {
-  return false;
-}
-export function shouldShowTinyBroncoUnconfirmedNotice() {
-  return false;
-}
-export function shouldShowTinyBroncoTeenNotice() {
-  return false;
-}
+export const ContentFiltersTeenNotice = TinyBroncoSettingsNotices.ContentFiltersTeenNotice;
+export const ContentFiltersUnconfirmedNotice = TinyBroncoSettingsNotices.ContentFiltersUnconfirmedNotice;
+export const MessageRequestsNotice = TinyBroncoSettingsNotices.MessageRequestsNotice;
+export const shouldShowTinyBroncoTeenNotice = TinyBroncoSettingsNotices.shouldShowTeenNotice;
+export const shouldShowTinyBroncoUnconfirmedNotice = TinyBroncoSettingsNotices.shouldShowUnconfirmedNotice;
+export const useIsTinyBroncoSettingsNoticeEnabled = TinyBroncoSettingsNotices.useIsEnabled;
+export const useTinyBroncoMessageRequestsNoticeVariant = TinyBroncoSettingsNotices.useMessageRequestsNoticeVariant;

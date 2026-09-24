@@ -1,16 +1,16 @@
-// Module ID: 14362
-// Function ID: 14363
+// Module ID: 14400
+// Function ID: 14401
 // Name: Ellipsis
-// Dependencies: [19, 17, 4750, 21, 4758, 580, 558, 568, 4497, 4759, 504, 2]
+// Dependencies: [19, 17, 4782, 21, 4790, 580, 558, 568, 4529, 4791, 504, 2]
 
-// Module 14362 (Ellipsis)
+// Module 14400 (Ellipsis)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const View = fn(17).View;
@@ -20,7 +20,7 @@ let c8 = 233.33333333333334;
 let c9 = 116.66666666666667;
 let c10 = 0.4;
 let c11 = 0.75;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { typingIndicator: { justifyContent: "center", alignItems: "center", flexDirection: "row", marginRight: 4 }, typingIndicatorDot: null };
 let size = { backgroundColor: nativeDefault.colors.TEXT_DEFAULT, borderRadius: nativeDefault.radii.round, marginRight: 2, height: 6, width: 6 };
 obj.typingIndicatorDot = size;

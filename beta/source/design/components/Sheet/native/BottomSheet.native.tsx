@@ -1,20 +1,20 @@
-// Module ID: 7397
-// Function ID: 7398
+// Module ID: 7429
+// Function ID: 7430
 // Name: Sheet/BottomSheet
-// Dependencies: [32, 109, 19, 17, 7398, 21, 4758, 580, 1368, 558, 568, 1616, 5173, 5897, 6863, 5198, 1098, 4497, 7399, 4481, 7400, 5203, 7401, 7402, 7286, 1482, 4612, 7403, 4471, 2]
+// Dependencies: [32, 109, 19, 17, 7430, 21, 4790, 580, 1368, 558, 568, 1616, 5205, 5929, 6895, 5230, 1098, 4529, 7431, 4513, 7432, 5235, 7433, 7434, 7318, 1482, 4644, 7435, 4503, 2]
 
-// Module 7397 (Sheet/BottomSheet)
+// Module 7429 (Sheet/BottomSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5173 */;
-import BottomSheetModal from "BottomSheetModal" /* 6863 */;
-import NavScrim from "NavScrim" /* 7286 */;
-import ActionSheetContextDefault from "ActionSheetContext" /* 7399 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 7401 */;
-import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 7402 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5205 */;
+import BottomSheetModal from "BottomSheetModal" /* 6895 */;
+import NavScrim from "NavScrim" /* 7318 */;
+import ActionSheetContextDefault from "ActionSheetContext" /* 7431 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 7433 */;
+import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 7434 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -28,11 +28,11 @@ let closure_4 = ["startHeight", "contentHeight", "maxHeight", "hasEverExpanded",
 let closure_5 = ["scrollable", "startHeight", "maxHeight", "containerHeight", "startExpanded", "backdropOpacity", "backdropChildren", "header", "handleComponent", "handleDisabled", "dismissAccessibilityLabel", "footer", "onExpand", "onDismiss", "keyboardShouldPersistTaps", "children", "backgroundStyles", "contentStyles", "bodyStyles", "borderGradient", "showGradient", "extraContent", "contentHeight"];
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: closure_9, View: c10, Platform } = get_ActivityIndicator);
-const ActionSheetConstants = fn(7398);
+const ActionSheetConstants = fn(7430);
 ({ ACTION_SHEET_START_HEIGHT_RATIO: closure_11, ACTION_SHEET_MAX_WIDTH: closure_12, ACTION_SHEET_SPRING_CONFIG: map1, ACTION_SHEET_SPRING_CONFIG_REDUCED_MOTION: closure_14, ACTION_SHEET_GRADIENT_BORDER_WIDTH: closure_15, ACTION_SHEET_GRADIENT_BORDER_RADIUS: closure_16, ACTION_SHEET_BORDER_RADIUS: closure_17, ACTION_SHEET_INNER_BORDER_RADIUS: closure_18, ACTION_SHEET_MINIMUM_BOTTOM_PADDING: closure_19 } = ActionSheetConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_20, jsxs: closure_21 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_22 = createStyles.createStyles((arg0) => {
   let num = arg1;
   if (arg1 === undefined) {
@@ -127,7 +127,7 @@ let closure_23 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
   }
   closure_3 = result;
   if (diff == null) {
-    diff = height - tmp(5897).NAV_BAR_HEIGHT_MULTILINE - useSafeAreaInsetsDefault().top;
+    diff = height - tmp(5929).NAV_BAR_HEIGHT_MULTILINE - useSafeAreaInsetsDefault().top;
   }
   if (cResult[12] === result) {
     if (cResult[13] === isScreenReaderEnabled) {
@@ -325,7 +325,7 @@ let closure_23 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
     const merged1 = Object.assign(merged);
     obj3.enableDynamicSizing = true;
     if (maxDynamicContentSize == null) {
-      maxDynamicContentSize = height - tmp4(5897).NAV_BAR_HEIGHT_MULTILINE - useSafeAreaInsetsDefault().top;
+      maxDynamicContentSize = height - tmp4(5929).NAV_BAR_HEIGHT_MULTILINE - useSafeAreaInsetsDefault().top;
     }
     obj3.maxDynamicContentSize = maxDynamicContentSize;
     obj3.ref = ref;
@@ -333,7 +333,7 @@ let closure_23 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
     const obj4 = { bounces: false, keyboardShouldPersistTaps, style: scrollViewStyle, children: null };
     const obj5 = { onLayout: callback, style: wrapperStyle, children };
     obj4.children = closure_1_20(v65535, obj5);
-    obj3.children = closure_1_20(tmp4(6863).BottomSheetScrollView, obj4);
+    obj3.children = closure_1_20(tmp4(6895).BottomSheetScrollView, obj4);
     return closure_1_20(BottomSheetModalDefault, obj3);
   }
   items = [];
@@ -395,7 +395,7 @@ let closure_24 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
     diff = tmp7;
   }
   if (diff == null) {
-    diff = height - tmp(5897).NAV_BAR_HEIGHT_MULTILINE - useSafeAreaInsetsDefault().top;
+    diff = height - tmp(5929).NAV_BAR_HEIGHT_MULTILINE - useSafeAreaInsetsDefault().top;
   }
   if (cResult[13] === result) {
     if (cResult[14] === tmp9) {
@@ -484,7 +484,7 @@ let closure_24 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
                     obj3.onChange = tmp27;
                     const items = [tmp34, tmp8];
                     obj3.children = items;
-                    const tmp44 = guild(tmp20(6863), obj3);
+                    const tmp44 = guild(tmp20(6895), obj3);
                     cResult[34] = tmp7;
                     cResult[35] = tmp8;
                     cResult[36] = tmp27;
@@ -494,7 +494,7 @@ let closure_24 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
                     cResult[40] = tmp34;
                     cResult[41] = tmp44;
                     tmp39 = tmp44;
-                    const tmp20Result = tmp20(6863);
+                    const tmp20Result = tmp20(6895);
                   }
                 }
                 let tmp35 = tmp30;
@@ -517,8 +517,8 @@ let closure_24 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
                   }
                   obj4.colors = tmp5;
                   obj4.children = tmp30;
-                  tmp35 = closure_1_20(tmp20(5198), obj4);
-                  const tmp20Result2 = tmp20(5198);
+                  tmp35 = closure_1_20(tmp20(5230), obj4);
+                  const tmp20Result2 = tmp20(5230);
                 }
                 class L {
                   constructor(arg0, arg1, arg2) {
@@ -646,7 +646,7 @@ let closure_24 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
     maxHeight = contentHeight;
   }
   if (maxHeight == null) {
-    maxHeight = height - tmp5(5897).NAV_BAR_HEIGHT_MULTILINE - useSafeAreaInsetsDefault().top;
+    maxHeight = height - tmp5(5929).NAV_BAR_HEIGHT_MULTILINE - useSafeAreaInsetsDefault().top;
   }
   let items = [hasEverExpanded, isScreenReaderEnabled, maxHeight, startHeight];
   const memo = noop.useMemo(() => {
@@ -693,8 +693,8 @@ let closure_24 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
   let tmp10Result = tmp11;
   if (null != borderGradient) {
     const obj4 = { style: tmp2.gradient, start: tmp5(1098).VerticalGradient.START, end: tmp5(1098).VerticalGradient.END, colors: borderGradient, children: tmp11 };
-    tmp10Result = tmp10(tmp3(5198), obj4);
-    const tmp3Result2 = tmp3(5198);
+    tmp10Result = tmp10(tmp3(5230), obj4);
+    const tmp3Result2 = tmp3(5230);
   }
   const items3 = [tmp10Result, extraContent];
   obj3.children = items3;
@@ -883,7 +883,7 @@ export const BottomSheet = noop.forwardRef(ReactCompilerGating.isReactCompilerEn
       let tmp42 = cResult[28];
     }
     const layoutEffect = obj2.useLayoutEffect(tmp41, tmp42);
-    const bottomSheetImperativeHandle = tmp(7400).useBottomSheetImperativeHandle(arg1, ref);
+    const bottomSheetImperativeHandle = tmp(7432).useBottomSheetImperativeHandle(arg1, ref);
     if (cResult[29] === close) {
       if (cResult[30] === transitionState) {
         let tmp46 = cResult[31];
@@ -894,7 +894,7 @@ export const BottomSheet = noop.forwardRef(ReactCompilerGating.isReactCompilerEn
         if (cResult[34] === onLeave) {
           let tmp49 = cResult[35];
         }
-        const unmountEffect = tmp(5203).useUnmountEffect(tmp49);
+        const unmountEffect = tmp(5235).useUnmountEffect(tmp49);
         if (cResult[36] !== close) {
           function ie(arg0, arg1, arg2, arg3, arg4) {
             if (arg4 !== BottomSheetModal.ANIMATION_SOURCE.KEYBOARD) {
@@ -944,7 +944,7 @@ export const BottomSheet = noop.forwardRef(ReactCompilerGating.isReactCompilerEn
         }
         const tmp54 = closure_28(tmp12.animatedIndex);
         closure_14 = tmp54;
-        const tmpResult4 = tmp(5203);
+        const tmpResult4 = tmp(5235);
         function ke() {
           return closure_14.get() <= -1;
         }
@@ -952,8 +952,8 @@ export const BottomSheet = noop.forwardRef(ReactCompilerGating.isReactCompilerEn
         ke.__closure = obj3;
         ke.__workletHash = 4341912681188;
         ke.__initData = __initData;
-        const derivedValue = tmp(4497).useDerivedValue(ke);
-        const tmpResult5 = tmp(4497);
+        const derivedValue = tmp(4529).useDerivedValue(ke);
+        const tmpResult5 = tmp(4529);
         class Oe {
           constructor() {
             return closure_15.get();
@@ -981,11 +981,11 @@ export const BottomSheet = noop.forwardRef(ReactCompilerGating.isReactCompilerEn
             return;
           }
         }
-        const obj5 = { transitionState, runOnJS: tmp(4497).runOnJS, onLeave };
+        const obj5 = { transitionState, runOnJS: tmp(4529).runOnJS, onLeave };
         De.__closure = obj5;
         De.__workletHash = 1921852093213;
         De.__initData = __initData3;
-        const animatedReaction = tmp(4497).useAnimatedReaction(Oe, De);
+        const animatedReaction = tmp(4529).useAnimatedReaction(Oe, De);
         if (cResult[40] !== tmp21) {
           class He {
             constructor() {
@@ -1091,7 +1091,7 @@ export const BottomSheet = noop.forwardRef(ReactCompilerGating.isReactCompilerEn
             }
           }
           closure_27(tmp34(1482)(tmp64));
-          tmp34(4612)();
+          tmp34(4644)();
           if (tmp12.backgroundComponent != null) {
             class Me {
               constructor(arg0) {
@@ -1260,7 +1260,7 @@ export const BottomSheet = noop.forwardRef(ReactCompilerGating.isReactCompilerEn
                         let items = [tmp76, tmp80];
                         obj7.children = items;
                         obj6.children = closure_21(ref, obj7);
-                        const tmp88 = closure_20(tmp(7403).LayerScope, obj6);
+                        const tmp88 = closure_20(tmp(7435).LayerScope, obj6);
                         cResult[66] = tmp75;
                         cResult[67] = tmp76;
                         class Oe {
@@ -1357,7 +1357,7 @@ export const BottomSheet = noop.forwardRef(ReactCompilerGating.isReactCompilerEn
         cResult[42] = tmp30;
         cResult[43] = tmp29;
         cResult[44] = Le;
-        const tmpResult6 = tmp(4497);
+        const tmpResult6 = tmp(4529);
       }
       function oe() {
         if (ref.current) {
@@ -1399,7 +1399,7 @@ export const BottomSheet = noop.forwardRef(ReactCompilerGating.isReactCompilerEn
     cResult[32] = items5;
     tmp47 = items5;
     tmp46 = re;
-    let tmpResult = tmp(7400);
+    let tmpResult = tmp(7432);
   }
   function te() {
     registerDismissHandler(closure_4);

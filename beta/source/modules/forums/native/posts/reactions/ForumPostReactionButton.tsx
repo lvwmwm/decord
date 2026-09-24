@@ -1,25 +1,25 @@
-// Module ID: 10600
-// Function ID: 10601
+// Module ID: 10636
+// Function ID: 10637
 // Name: ForumPostReactionButton
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 10601, 1119, 4754, 5341, 8010, 10425, 10598, 2023, 10547, 1096, 1401, 4411, 7377, 11545, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 10637, 1119, 4786, 5373, 8042, 10464, 10634, 2023, 10583, 1096, 1401, 4443, 7409, 11581, 2]
 
-// Module 10600 (ForumPostReactionButton)
+// Module 10636 (ForumPostReactionButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
 import util from "util" /* 1119 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import ReactionUtils from "ReactionUtils" /* 4411 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
-import EmojiDefault from "Emoji" /* 7377 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 8010 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10425 */;
-import useEmojiColorPalette from "useEmojiColorPalette" /* 10547 */;
-import useReactionPermissionsDefault from "useReactionPermissions" /* 10598 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10601 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 11545 */;
+import ReactionUtils from "ReactionUtils" /* 4443 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
+import EmojiDefault from "Emoji" /* 7409 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 8042 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10464 */;
+import useEmojiColorPalette from "useEmojiColorPalette" /* 10583 */;
+import useReactionPermissionsDefault from "useReactionPermissions" /* 10634 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10637 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 11581 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -55,7 +55,7 @@ class BurstReactionButton {
     obj1 = { backgroundColor: str, borderColor: null, borderWidth: null };
     backgroundColor1 = undefined;
     tmp5 = jsx;
-    tmp6 = f54541;
+    tmp6 = f54592;
     if (emojiColorPalette != null) {
       backgroundColor1 = emojiColorPalette.backgroundColor;
     }
@@ -86,7 +86,7 @@ class BurstReactionButton {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsxs: hasOwnProperty, jsx: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: 8, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.REACTION_BORDER_DEFAULT, backgroundColor: nativeDefault.colors.REACTION_BACKGROUND_DEFAULT, minWidth: 32, minHeight: 26, maxHeight: 26 }, selected: null, textEmoji: null, imageEmoji: null, countContainer: null };
 let obj3 = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: 8, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.REACTION_BORDER_DEFAULT, backgroundColor: nativeDefault.colors.REACTION_BACKGROUND_DEFAULT, minWidth: 32, minHeight: 26, maxHeight: 26 };
 obj2.selected = { borderColor: nativeDefault.colors.REACTION_BORDER_REACTED_DEFAULT, backgroundColor: nativeDefault.colors.REACTION_BACKGROUND_REACTED_DEFAULT };
@@ -126,7 +126,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj3 = { variant: "heading-sm/medium", color: "interactive-text-default", children: null };
       const items = ["+", count];
       obj3.children = items;
-      const tmp11 = hasOwnProperty(tmp(4754).Text, obj3);
+      const tmp11 = hasOwnProperty(tmp(4786).Text, obj3);
       cResult[6] = count;
       cResult[7] = tmp11;
       let tmp9 = tmp11;
@@ -142,7 +142,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj4 = { accessible: true, accessibilityLabel: tmp6, style: tmp8, onPress: onTapReactionCount, children: tmp9 };
-    const tmp14 = timestampProducer(tmp(5341).PressableOpacity, obj4);
+    const tmp14 = timestampProducer(tmp(5373).PressableOpacity, obj4);
     cResult[8] = onTapReactionCount;
     cResult[9] = tmp8;
     cResult[10] = tmp9;
@@ -173,7 +173,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = c.c(13);
   ({ threadId, containerStyle, reactionType } = arg0);
   if (undefined === reactionType) {
-    reactionType = tmp(8010).ReactionTypes.NORMAL;
+    reactionType = tmp(8042).ReactionTypes.NORMAL;
   }
   const tmp4 = closure_7();
   if (cResult[0] === reactionType) {
@@ -181,7 +181,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp5 = cResult[2];
     }
     const onTapAddReaction = useNativeForumPostHandlersDefault(tmp5).onTapAddReaction;
-    const tmp7 = tmp(10425).ADD_REACTION_ICON_COMPONENTS[reactionType];
+    const tmp7 = tmp(10464).ADD_REACTION_ICON_COMPONENTS[reactionType];
     if (cResult[3] === containerStyle) {
       if (cResult[4] === tmp4.container) {
         let tmp8 = cResult[5];
@@ -212,7 +212,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj2 = { style: tmp8, accessible: true, accessibilityLabel: tmp10, onPress: onTapAddReaction, children: tmp12 };
-      const tmp17 = timestampProducer(tmp(5341).PressableOpacity, obj2);
+      const tmp17 = timestampProducer(tmp(5373).PressableOpacity, obj2);
       cResult[9] = onTapAddReaction;
       cResult[10] = tmp8;
       cResult[11] = tmp12;
@@ -303,7 +303,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             const obj3 = { style: tmp10, accessible, accessibilityLabel: tmp11, onPress, onLongPress, disabled: tmp4, children: null };
                             const items = [tmp17, tmp21];
                             obj3.children = items;
-                            const tmp29 = hasOwnProperty(tmp(5341).PressableOpacity, obj3);
+                            const tmp29 = hasOwnProperty(tmp(5373).PressableOpacity, obj3);
                             cResult[23] = accessible;
                             cResult[24] = tmp4;
                             cResult[25] = onLongPress;
@@ -349,7 +349,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 tmp17 = tmp20;
               }
             }
-            const tmpResult = tmp(4411);
+            const tmpResult = tmp(4443);
             const accessibleEmojiDisplayName = tmpResult.getAccessibleEmojiDisplayName(selected, count, emoji, false);
             cResult[9] = count;
             cResult[10] = emoji;

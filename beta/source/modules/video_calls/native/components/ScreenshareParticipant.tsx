@@ -1,18 +1,18 @@
-// Module ID: 10278
-// Function ID: 10279
+// Module ID: 10317
+// Function ID: 10318
 // Name: ScreenshareParticipant
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 9676, 9677, 1119, 4754, 5188, 10206, 6891, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 9708, 9709, 1119, 4786, 5220, 10245, 6923, 2]
 
-// Module 10278 (ScreenshareParticipant)
+// Module 10317 (ScreenshareParticipant)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 9676 */;
-import _modDef9677 from "module_9677" /* 9677 */;
-import useScreenshareUtils from "useScreenshareUtils" /* 10206 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6923 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 9708 */;
+import _modDef9709 from "module_9709" /* 9709 */;
+import useScreenshareUtils from "useScreenshareUtils" /* 10245 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { alignItems: "center", justifyContent: "center", flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, image: { marginBottom: 12 }, title: { textAlign: "center", marginBottom: 8 }, description: { lineHeight: 18, textAlign: "center", marginBottom: 16 } };
 let closure_8 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -53,7 +53,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => 
             let tmp11 = cResult[11];
           }
           if (cResult[12] !== tmp10.image) {
-            const obj2 = { source: tmp7(9677), style: tmp10.image };
+            const obj2 = { source: tmp7(9709), style: tmp10.image };
             const tmp15 = timestampProducer(hasOwnProperty, obj2);
             cResult[12] = tmp10.image;
             cResult[13] = tmp15;
@@ -72,7 +72,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => 
           }
           if (cResult[15] !== tmp10.title) {
             const obj3 = { style: tmp10.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp17 };
-            const tmp21 = timestampProducer(tmp(4754).Text, obj3);
+            const tmp21 = timestampProducer(tmp(4786).Text, obj3);
             cResult[15] = tmp10.title;
             cResult[16] = tmp21;
             let tmp19 = tmp21;
@@ -90,7 +90,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => 
           }
           if (cResult[18] !== tmp10.description) {
             const obj4 = { style: tmp10.description, variant: "text-sm/medium", color: "interactive-text-default", children: tmp22 };
-            const tmp26 = timestampProducer(tmp(4754).Text, obj4);
+            const tmp26 = timestampProducer(tmp(4786).Text, obj4);
             cResult[18] = tmp10.description;
             cResult[19] = tmp26;
             let tmp24 = tmp26;
@@ -102,8 +102,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => 
             const obj5 = { variant: "primary-overlay", text: null, onPress: null };
             const intl3 = tmp(1119).intl;
             obj5.text = intl3.string(tmp(1119).t.CpkXwZ);
-            obj5.onPress = tmp(10206).stopScreenshare;
-            const tmp29 = timestampProducer(tmp(5188).Button, obj5);
+            obj5.onPress = tmp(10245).stopScreenshare;
+            const tmp29 = timestampProducer(tmp(5220).Button, obj5);
             cResult[20] = tmp29;
             let tmp27 = tmp29;
           } else {
@@ -122,7 +122,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => 
                   return tmp34;
                 }
                 const obj6 = { gesture: tmp8, children: tmp30 };
-                const tmp36 = timestampProducer(tmp(6891).GestureDetector, obj6);
+                const tmp36 = timestampProducer(tmp(6923).GestureDetector, obj6);
                 cResult[26] = tmp8;
                 cResult[27] = tmp30;
                 cResult[28] = tmp36;
@@ -203,7 +203,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => 
   const items2 = [tmp4.container, participant.containerStyle];
   obj2.style = items2;
   const tmp3 = useParticipantTileTapGestureDefault({ onSingleTapStart: callback, onDoubleTapStart: callback1 });
-  const items3 = [timestampProducer(hasOwnProperty, { source: _modDef9677, style: tmp4.image }), , , ];
+  const items3 = [timestampProducer(hasOwnProperty, { source: _modDef9709, style: tmp4.image }), , , ];
   const obj4 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;
   obj4.children = intl.string(util.t.gMOwov);

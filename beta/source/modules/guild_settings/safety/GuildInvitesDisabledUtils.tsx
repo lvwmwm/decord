@@ -1,11 +1,11 @@
-// Module ID: 12519
-// Function ID: 12520
+// Module ID: 12555
+// Function ID: 12556
 // Name: GuildInvitesDisabledUtils
-// Dependencies: [11663, 4399, 1078, 558, 568, 504, 2]
+// Dependencies: [11699, 4431, 1078, 558, 568, 504, 2]
 
-// Module 12519 (GuildInvitesDisabledUtils)
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11663 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+// Module 12555 (GuildInvitesDisabledUtils)
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11699 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 const require = fn;
 const Constants = fn(1078);

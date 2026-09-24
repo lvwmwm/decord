@@ -1,8 +1,8 @@
-// Module ID: 5995
-// Function ID: 5996
+// Module ID: 6027
+// Function ID: 6028
 // Dependencies: [2]
 
-// Module 5995
+// Module 6027
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarDannoExample-2x.png.js");

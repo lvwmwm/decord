@@ -1,22 +1,22 @@
-// Module ID: 13608
-// Function ID: 13609
+// Module ID: 13644
+// Function ID: 13645
 // Name: BetaTag
-// Dependencies: [19, 17, 7676, 21, 4758, 580, 558, 568, 1119, 4754, 5198, 1098, 2]
+// Dependencies: [19, 17, 7708, 21, 4790, 580, 558, 568, 1119, 4786, 5230, 1098, 2]
 
-// Module 13608 (BetaTag)
+// Module 13644 (BetaTag)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ConstantsIOS from "ConstantsIOS" /* 1098 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const Gradients = fn(7676).Gradients;
+const Gradients = fn(7708).Gradients;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.lg, marginLeft: 8, paddingHorizontal: 8, justifyContent: "center" }, text: { textTransform: "uppercase" } };
 let closure_6 = createStyles.createStyles(obj2);
 let obj4 = { SMALL: "small", MEDIUM: "medium" };
@@ -74,7 +74,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp27 = tmp32;
         }
         const obj3 = { variant: str, color: "text-overlay-light", style: tmp20, children: tmp22 };
-        const tmp26 = jsx(tmp(4754).Text, { variant: str, color: "text-overlay-light", style: tmp20, children: tmp22 });
+        const tmp26 = jsx(tmp(4786).Text, { variant: str, color: "text-overlay-light", style: tmp20, children: tmp22 });
         cResult[7] = tmp20;
         cResult[8] = str;
         cResult[9] = tmp26;
@@ -127,7 +127,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp15 = tmp18;
         }
         const obj5 = { variant: str, color: "text-overlay-light", style: tmp8, children: tmp10 };
-        const tmp14 = jsx(tmp(4754).Text, { variant: str, color: "text-overlay-light", style: tmp8, children: tmp10 });
+        const tmp14 = jsx(tmp(4786).Text, { variant: str, color: "text-overlay-light", style: tmp8, children: tmp10 });
         cResult[20] = tmp8;
         cResult[21] = str;
         cResult[22] = tmp14;

@@ -1,17 +1,17 @@
-// Module ID: 11191
-// Function ID: 11192
+// Module ID: 11227
+// Function ID: 11228
 // Name: PresenceActivityStatus
-// Dependencies: [19, 1078, 21, 7986, 9346, 5280, 10146, 11187, 558, 568, 11192, 11186, 11189, 2]
+// Dependencies: [19, 1078, 21, 8018, 9378, 5312, 10185, 11223, 558, 568, 11228, 11222, 11225, 2]
 
-// Module 11191 (PresenceActivityStatus)
+// Module 11227 (PresenceActivityStatus)
 import c from "c" /* 568 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7986 */;
-import GameControllerIcon2 from "GameControllerIcon" /* 9346 */;
-import MusicIcon from "MusicIcon" /* 10146 */;
-import ActivityStatusIconDefault from "ActivityStatusIcon" /* 11186 */;
-import TvIcon from "TvIcon" /* 11187 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 11189 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 11192 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8018 */;
+import GameControllerIcon2 from "GameControllerIcon" /* 9378 */;
+import MusicIcon from "MusicIcon" /* 10185 */;
+import ActivityStatusIconDefault from "ActivityStatusIcon" /* 11222 */;
+import TvIcon from "TvIcon" /* 11223 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 11225 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 11228 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -19,10 +19,10 @@ function getActivityStatusIcon(activity) {
   let tmp = dependencyMap;
   if (isEmbeddedActivityDefault(activity)) {
     if (flag) {
-      tmp = tmp8(9346);
+      tmp = tmp8(9378);
       let AppsIcon = tmp.GameControllerIcon;
     } else {
-      AppsIcon = tmp8(5280).AppsIcon;
+      AppsIcon = tmp8(5312).AppsIcon;
     }
   } else {
     if (activity.type === ActivityTypes.PLAYING) {
@@ -151,13 +151,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (tmp6) {
     const obj = { icon: tmp3, style: iconStyle };
-    tmp6 = React4(tmp(11186), obj);
+    tmp6 = React4(tmp(11222), obj);
   }
   const children = [tmp6, ];
   let tmp9 = !flag;
   if (!flag) {
     const obj2 = { style: textStyle, maxFontSizeMultiplier, children: getActivityStatusTextDefault(activity, true).text };
-    tmp9 = React4(tmp(11189), obj2);
+    tmp9 = React4(tmp(11225), obj2);
   }
   children[1] = tmp9;
   return timestampProducer(hasOwnProperty, { children });

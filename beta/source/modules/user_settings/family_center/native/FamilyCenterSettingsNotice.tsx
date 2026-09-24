@@ -1,17 +1,17 @@
-// Module ID: 15082
-// Function ID: 15083
+// Module ID: 15091
+// Function ID: 15092
 // Name: FamilyCenterSettingsNotice
-// Dependencies: [19, 8675, 21, 558, 568, 8921, 7833, 4771, 14951, 2486, 2]
+// Dependencies: [19, 8707, 21, 558, 568, 8953, 7865, 4803, 14986, 2486, 2]
 
-// Module 15082 (FamilyCenterSettingsNotice)
+// Module 15091 (FamilyCenterSettingsNotice)
 import _modDef2486 from "module_2486" /* 2486 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4771 */;
-import LayerActionCreators from "LayerActionCreators" /* 7833 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14951 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4803 */;
+import LayerActionCreators from "LayerActionCreators" /* 7865 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14986 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const SafetySettingsNoticeType = fn(8675).SafetySettingsNoticeType;
+const SafetySettingsNoticeType = fn(8707).SafetySettingsNoticeType;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/user_settings/family_center/n
 export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = activeLinkUserIds(568).c(5);
   let obj = activeLinkUserIds(568);
-  activeLinkUserIds = activeLinkUserIds(8921).useActiveLinkUserIds();
+  activeLinkUserIds = activeLinkUserIds(8953).useActiveLinkUserIds();
   if (cResult[0] !== activeLinkUserIds) {
     const fn = function o() {
       LayerActionCreators.popLayer();
@@ -39,7 +39,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return tmp4;
   }
   const obj3 = { label: null, noticeType: null, labelHook: null, count: null };
-  const obj2 = activeLinkUserIds(8921);
+  const obj2 = activeLinkUserIds(8953);
   obj3.label = _modDef2486.i284fU;
   obj3.noticeType = SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE;
   obj3.labelHook = tmp3;
@@ -50,9 +50,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = tmp6;
   tmp4 = tmp6;
 }) : (() => {
-  activeLinkUserIds = activeLinkUserIds(8921).useActiveLinkUserIds();
+  activeLinkUserIds = activeLinkUserIds(8953).useActiveLinkUserIds();
   const obj2 = { label: null, noticeType: null, labelHook: null, count: null };
-  let obj = activeLinkUserIds(8921);
+  let obj = activeLinkUserIds(8953);
   obj2.label = _modDef2486.i284fU;
   obj2.noticeType = SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE;
   obj2.labelHook = function labelHook() {

@@ -1,13 +1,13 @@
-// Module ID: 16650
-// Function ID: 16651
+// Module ID: 16660
+// Function ID: 16661
 // Name: transitionGuildsBarToGuildOrOpenSelectedChannel
-// Dependencies: [2099, 4580, 1078, 4617, 4616, 4769, 7586, 2]
+// Dependencies: [2099, 4612, 1078, 4649, 4648, 4801, 7618, 2]
 // Exports: default
 
-// Module 16650 (transitionGuildsBarToGuildOrOpenSelectedChannel)
-import RootNavigationRef from "RootNavigationRef" /* 4617 */;
+// Module 16660 (transitionGuildsBarToGuildOrOpenSelectedChannel)
+import RootNavigationRef from "RootNavigationRef" /* 4649 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 
 require = fn;
 const ME = fn(1078).ME;
@@ -22,7 +22,7 @@ export default function transitionGuildsBarToGuildOrOpenSelectedChannel(arg0) {
   }
   let tmp4;
   if (true === isReadyResult) {
-    const coerceGuildsRouteResult = tmp(4616).coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
+    const coerceGuildsRouteResult = tmp(4648).coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
     let drawerOpen;
     if (coerceGuildsRouteResult != null) {
       const params = coerceGuildsRouteResult.params;
@@ -46,13 +46,13 @@ export default function transitionGuildsBarToGuildOrOpenSelectedChannel(arg0) {
       }
       tmp4 = tmp10;
     }
-    const tmpResult = tmp(4616);
+    const tmpResult = tmp(4648);
   }
   if (null != tmp4) {
-    tmp(4769).transitionToChannel(tmp4);
-    const tmpResult3 = tmp(4769);
+    tmp(4801).transitionToChannel(tmp4);
+    const tmpResult3 = tmp(4801);
   } else {
-    tmp(7586).transitionToGuild(arg0);
-    const tmpResult4 = tmp(7586);
+    tmp(7618).transitionToGuild(arg0);
+    const tmpResult4 = tmp(7618);
   }
 };

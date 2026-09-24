@@ -1,9 +1,9 @@
-// Module ID: 12268
-// Function ID: 12269
+// Module ID: 12304
+// Function ID: 12305
 // Name: useNavigationTransitionEnded
 // Dependencies: [32, 19, 1487, 558, 568, 1489, 2]
 
-// Module 12268 (useNavigationTransitionEnded)
+// Module 12304 (useNavigationTransitionEnded)
 import c from "c" /* 568 */;
 import Link from "Link" /* 1489 */;
 import _slicedToArray from "module_32" /* 32 */;

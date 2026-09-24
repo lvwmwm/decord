@@ -1,18 +1,18 @@
-// Module ID: 5802
-// Function ID: 5803
+// Module ID: 5834
+// Function ID: 5835
 // Name: FastImage
-// Dependencies: [19, 17, 21, 4758, 558, 568, 5803, 1368, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 5835, 1368, 2]
 
-// Module 5802 (FastImage)
+// Module 5834 (FastImage)
 import c from "c" /* 568 */;
-import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 5803 */;
+import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 5835 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: c3, NativeModules: closure_4 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ base: { overflow: "hidden" } });
 let ReactCompilerGating = fn(558);
 let merged = Object.assign(noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {

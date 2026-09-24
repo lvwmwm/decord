@@ -1,23 +1,23 @@
-// Module ID: 13447
-// Function ID: 13448
+// Module ID: 13483
+// Function ID: 13484
 // Name: IndividualProductPreview
-// Dependencies: [19, 17, 1080, 21, 4758, 580, 558, 568, 5198, 8452, 11389, 11473, 13448, 13449, 1977, 1081, 13450, 13453, 2]
+// Dependencies: [19, 17, 1080, 21, 4790, 580, 558, 568, 5230, 8484, 11425, 11509, 13484, 13485, 1977, 1081, 13486, 13489, 2]
 
-// Module 13447 (IndividualProductPreview)
+// Module 13483 (IndividualProductPreview)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import useCurrentUser from "useCurrentUser" /* 8452 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11389 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11473 */;
-import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 13448 */;
-import NameplateProductPreviewDefault from "NameplateProductPreview" /* 13449 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import useCurrentUser from "useCurrentUser" /* 8484 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11425 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11509 */;
+import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 13484 */;
+import NameplateProductPreviewDefault from "NameplateProductPreview" /* 13485 */;
 import noop from "module_19" /* 19 */;
 
 const FractionalPremiumSKUs = FractionalNitroPreview(1081);
-const FractionalNitroPreview2 = FractionalNitroPreview(13450);
-const OrbBadgePreview = FractionalNitroPreview(13453);
+const FractionalNitroPreview2 = FractionalNitroPreview(13486);
+const OrbBadgePreview = FractionalNitroPreview(13489);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Pressable: c3, View: closure_4, StyleSheet } = get_ActivityIndicator);
@@ -25,7 +25,7 @@ const CollectiblesShopConstants = fn(1080);
 ({ EXTERNAL_PRODUCT_SKU_IDS: hasOwnProperty, ShopCtaEnum: metroRequire } = CollectiblesShopConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { collectiblePreview: { marginTop: nativeDefault.space.PX_12, position: "relative", height: 280 }, profilePreviewContainer: { position: "relative", flex: 1, alignItems: "center", overflow: "hidden" }, profilePreview: { width: "66%" }, profilePreviewGradient: null };
 let obj4 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -100,7 +100,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((handlePreviewP
         tmp14 = tmp17;
       }
       const obj4 = { style: tmp3.profilePreviewGradient, start: tmp6, end: tmp7, colors: tmp9 };
-      const tmp13 = closure_7(onTrackPress(5198), obj4);
+      const tmp13 = closure_7(onTrackPress(5230), obj4);
       cResult[8] = tmp3.profilePreviewGradient;
       cResult[9] = tmp9;
       cResult[10] = tmp13;
@@ -251,7 +251,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTrackPress) 
     }
     if (cResult[3] !== product) {
       const obj2 = { product };
-      const tmp8 = closure_7(onTrackPress(13448), obj2);
+      const tmp8 = closure_7(onTrackPress(13484), obj2);
       cResult[3] = product;
       cResult[4] = tmp8;
       let tmp5 = tmp8;
@@ -444,11 +444,11 @@ export const IndividualProductPreview = ReactCompilerGating.isReactCompilerEnabl
   } else if (tmp(1977).CollectiblesItemType.EXTERNAL_SKU === type) {
     const ALL = tmp(1081).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      let tmp5 = React5(tmp(13450).FractionalNitroPreview, {});
+      let tmp5 = React5(tmp(13486).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === constants.ORB_PROFILE_BADGE) {
-        tmp5 = React5(tmp(13453).OrbBadgePreview, {});
+        tmp5 = React5(tmp(13489).OrbBadgePreview, {});
       }
     }
     return tmp5;

@@ -1,13 +1,13 @@
-// Module ID: 6716
-// Function ID: 6717
+// Module ID: 6748
+// Function ID: 6749
 // Name: SoundboardSpotIllustration
-// Dependencies: [21, 558, 568, 6717, 5802, 2]
+// Dependencies: [21, 558, 568, 6749, 5834, 2]
 
-// Module 6716 (SoundboardSpotIllustration)
+// Module 6748 (SoundboardSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6717 from "module_6717" /* 6717 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6749 from "module_6749" /* 6749 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const SoundboardSpotIllustration = ReactCompilerGating.isReactCompilerEna
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6717 };
+    const obj2 = { uri: _modDef6749 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const SoundboardSpotIllustration = ReactCompilerGating.isReactCompilerEna
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6717 };
+  const obj2 = { uri: _modDef6749 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

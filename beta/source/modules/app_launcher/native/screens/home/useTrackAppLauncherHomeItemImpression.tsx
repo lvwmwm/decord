@@ -1,9 +1,9 @@
-// Module ID: 12240
-// Function ID: 12241
+// Module ID: 12276
+// Function ID: 12277
 // Name: useTrackAppLauncherHomeItemImpression
-// Dependencies: [19, 558, 568, 12241, 12228, 9133, 1090, 2]
+// Dependencies: [19, 558, 568, 12277, 12264, 9165, 1090, 2]
 
-// Module 12240 (useTrackAppLauncherHomeItemImpression)
+// Module 12276 (useTrackAppLauncherHomeItemImpression)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,7 +17,7 @@ const result = size.fileFinishedImporting("modules/app_launcher/native/screens/h
 export const useTrackAppLauncherHomeItemImpression = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = trackAppLauncherItemImpressionOnFirstView(568).c(4);
   let obj = trackAppLauncherItemImpressionOnFirstView(568);
-  trackAppLauncherItemImpressionOnFirstView = trackAppLauncherItemImpressionOnFirstView(12241).useTrackAppLauncherItemImpressionOnFirstView().trackAppLauncherItemImpressionOnFirstView;
+  trackAppLauncherItemImpressionOnFirstView = trackAppLauncherItemImpressionOnFirstView(12277).useTrackAppLauncherItemImpressionOnFirstView().trackAppLauncherItemImpressionOnFirstView;
   if (cResult[0] !== trackAppLauncherItemImpressionOnFirstView) {
     const fn = function t(viewableItems) {
       viewableItems = viewableItems.viewableItems;
@@ -85,7 +85,7 @@ export const useTrackAppLauncherHomeItemImpression = ReactCompilerGating.isReact
   }
   return tmp3;
 }) : (() => {
-  trackAppLauncherItemImpressionOnFirstView = trackAppLauncherItemImpressionOnFirstView(12241).useTrackAppLauncherItemImpressionOnFirstView().trackAppLauncherItemImpressionOnFirstView;
+  trackAppLauncherItemImpressionOnFirstView = trackAppLauncherItemImpressionOnFirstView(12277).useTrackAppLauncherItemImpressionOnFirstView().trackAppLauncherItemImpressionOnFirstView;
   let obj2 = { trackAppLauncherHomeItemImpression: null };
   const items = [trackAppLauncherItemImpressionOnFirstView];
   obj2.trackAppLauncherHomeItemImpression = noop.useCallback((viewableItems) => {

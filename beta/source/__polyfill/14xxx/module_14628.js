@@ -7,10 +7,10 @@ import _mod14629 from "module_14629" /* 14629 */;
 
 
 export default (arg0) => {
-  const tmp = _mod14629(arg0);
-  let num = 0;
-  if (tmp > 0) {
-    num = min(tmp, 9007199254740991);
+  if (_mod14629(arg0)) {
+    const tmp4 = new TypeError("Can't call method on " + arg0);
+    throw tmp4;
+  } else {
+    return arg0;
   }
-  return num;
 };

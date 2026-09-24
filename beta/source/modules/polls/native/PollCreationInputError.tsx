@@ -1,18 +1,18 @@
-// Module ID: 12376
-// Function ID: 12377
+// Module ID: 12412
+// Function ID: 12413
 // Name: PollCreationInputError
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4472, 1181, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4504, 1181, 4786, 2]
 
-// Module 12376 (PollCreationInputError)
+// Module 12412 (PollCreationInputError)
 import nativeDefault from "native" /* 580 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4472 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4504 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flexDirection: "row", alignItems: "center", marginTop: -10 }, icon: { alignSelf: "center", marginRight: 5, color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -57,7 +57,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   }
   if (cResult[5] !== message) {
     const obj2 = { variant: "text-xs/medium", color: "text-feedback-critical", children: message };
-    const tmp13 = closure_4(tmp(4754).Text, obj2);
+    const tmp13 = closure_4(tmp(4786).Text, obj2);
     cResult[5] = message;
     cResult[6] = tmp13;
     let tmp11 = tmp13;
@@ -97,7 +97,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   }, items);
   const obj = { style: tmp.container, children: null };
   const size = { width: 16, height: 16, style: tmp.icon };
-  const items1 = [closure_4(message(1181).WarningCircle, size), closure_4(message(4754).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children: message })];
+  const items1 = [closure_4(message(1181).WarningCircle, size), closure_4(message(4786).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children: message })];
   obj.children = items1;
   return closure_5(View, obj);
 });

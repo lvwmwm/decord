@@ -1,22 +1,22 @@
-// Module ID: 18076
-// Function ID: 18077
+// Module ID: 18086
+// Function ID: 18087
 // Name: GuildSettingsRoleEditConnectionConfiguration
-// Dependencies: [32, 19, 17, 1078, 5627, 21, 4758, 580, 558, 568, 4693, 11683, 1181, 4610, 1401, 1119, 5846, 5341, 5822, 7446, 18077, 1368, 4754, 5502, 5903, 2]
+// Dependencies: [32, 19, 17, 1078, 5659, 21, 4790, 580, 558, 568, 4725, 11719, 1181, 4642, 1401, 1119, 5878, 5373, 5854, 7478, 18087, 1368, 4786, 5534, 5935, 2]
 
-// Module 18076 (GuildSettingsRoleEditConnectionConfiguration)
+// Module 18086 (GuildSettingsRoleEditConnectionConfiguration)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
-import PlatformsDefault from "Platforms" /* 5502 */;
-import TableRow from "TableRow" /* 5822 */;
-import XSmallIcon from "XSmallIcon" /* 5846 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11683 */;
-import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 18077 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
+import PlatformsDefault from "Platforms" /* 5534 */;
+import TableRow from "TableRow" /* 5854 */;
+import XSmallIcon from "XSmallIcon" /* 5878 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11719 */;
+import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 18087 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -97,11 +97,11 @@ function ApplicationMetadataRules(arg0) {
 }
 const View = fn(17).View;
 const PlatformTypes = fn(1078).PlatformTypes;
-const Constants = fn(5627);
+const Constants = fn(5659);
 ({ MetadataFields: closure_7, OperatorTypes: closure_8, MetadataItemTypes: closure_9, GUILD_ROLE_CONNECTION_APPLICATION_CONNECTION_TYPE: c10, GUILD_ROLE_CONNECTION_APPLICATION_IDENTITY_CONNECTION_TYPE: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { numericalInputContainerIOSInline: { marginTop: -2 }, numericalInputContainerAndroidInline: null, numericalInputContainerBase: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.sm }, numericalInput: null, appNumericalInput: null, appNumericalInputContainer: null, appNumericalInputText: null, numericalInputDisabled: null, metadataRow: null, metadataRowText: null };
 let obj3 = { transform: null };
 let items = [{ translateY: 10 }];
@@ -174,7 +174,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     } else if (null != platform) {
       const icon = platform.icon;
-      const tmp9 = tmp(4610).isThemeDark(tmp4) ? icon.darkPNG : icon.lightPNG;
+      const tmp9 = tmp(4642).isThemeDark(tmp4) ? icon.darkPNG : icon.lightPNG;
       if (cResult[4] !== tmp9) {
         const source = tmp(1401).makeSource(tmp9);
         cResult[4] = tmp9;
@@ -190,7 +190,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[6] = tmp10;
         cResult[7] = tmp14;
       }
-      const tmpResult = tmp(4610);
+      const tmpResult = tmp(4642);
     }
     let name2;
     if (platform != null) {
@@ -211,7 +211,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const _Symbol2 = Symbol;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp38 = onChangeText(tmp(5846).XSmallIcon, {});
+        const tmp38 = onChangeText(tmp(5878).XSmallIcon, {});
         cResult[12] = tmp38;
         let tmp36 = tmp38;
       } else {
@@ -230,7 +230,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj6 = { icon: tmp15, label: tmp29, trailing: tmp39 };
-        const tmp44 = onChangeText(tmp(5822).TableRow, obj6);
+        const tmp44 = onChangeText(tmp(5854).TableRow, obj6);
         cResult[16] = tmp15;
         cResult[17] = tmp29;
         cResult[18] = tmp39;
@@ -238,7 +238,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp42 = tmp44;
       }
       const obj7 = { "aria-label": tmp34, onPress: onRemove, disabled: locked, children: tmp36 };
-      const tmp41 = onChangeText(tmp(5341).PressableOpacity, obj7);
+      const tmp41 = onChangeText(tmp(5373).PressableOpacity, obj7);
       cResult[13] = locked;
       cResult[14] = onRemove;
       cResult[15] = tmp41;
@@ -316,9 +316,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp3Result = tmp3(1401);
     const tmp8 = onChangeText;
     const icon = platform.icon;
-    const obj4 = { source: tmp3Result.makeSource(tmp3(4610).isThemeDark(tmp2) ? icon.darkPNG : icon.lightPNG), disableColor: true };
+    const obj4 = { source: tmp3Result.makeSource(tmp3(4642).isThemeDark(tmp2) ? icon.darkPNG : icon.lightPNG), disableColor: true };
     tmp8Result = tmp8(tmp3(1181).Icon, obj4);
-    const tmp3Result2 = tmp3(4610);
+    const tmp3Result2 = tmp3(4642);
   }
   const obj5 = { icon: tmp8Result, label: null, trailing: null };
   const intl = tmp3(1119).intl;
@@ -472,7 +472,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((existingPendin
     }
     _slicedToArray(tmp, num);
   };
-  return onChangeText(metadataField(7446).TableSwitchRow, obj, metadataField);
+  return onChangeText(metadataField(7478).TableSwitchRow, obj, metadataField);
 });
 ReactCompilerGating = fn(558);
 let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((existingPendingConfiguration) => {
@@ -1281,7 +1281,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((existingPendin
   if (num == null) {
     num = -1;
   }
-  const realizedOperatorForResult = metadataField(18077).realizedOperatorFor(existingPendingConfiguration.operator);
+  const realizedOperatorForResult = metadataField(18087).realizedOperatorFor(existingPendingConfiguration.operator);
   c7 = realizedOperatorForResult;
   value = undefined;
   if (existingPendingConfiguration != null) {
@@ -1289,9 +1289,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((existingPendin
       value = iter.value;
     }
   }
-  let obj = metadataField(18077);
-  const tmpResult = metadataField(18077);
-  str1 = metadataField(18077).displayedValueFor(value, realizedOperatorForResult).toString();
+  let obj = metadataField(18087);
+  const tmpResult = metadataField(18087);
+  str1 = metadataField(18087).displayedValueFor(value, realizedOperatorForResult).toString();
   let mapped = noop;
   [value] = noop.useState(str1);
   closure_10 = tmp9;
@@ -1367,7 +1367,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((existingPendin
       obj5.children = onInputValueChange(tmp(1181).TextInput, obj6, metadataField);
       let items1 = [onInputValueChange(map, obj5, "_numericalInputContainer"), ];
       const obj7 = { variant: "text-md/semibold", style: map.appNumericalInputText, children: fieldText };
-      items1[1] = onInputValueChange(tmp(4754).Text, obj7);
+      items1[1] = onInputValueChange(tmp(4786).Text, obj7);
       obj4.children = items1;
       tmp21Result = closure_13(tmp22, obj4);
     }
@@ -1403,7 +1403,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((existingPendin
           _slicedToArray(tmp3, num);
         }
     };
-    return onInputValueChange(tmp(7446).TableSwitchRow, obj8, metadataField);
+    return onInputValueChange(tmp(7478).TableSwitchRow, obj8, metadataField);
   }
 });
 ReactCompilerGating = fn(558);

@@ -1,9 +1,9 @@
-// Module ID: 17880
-// Function ID: 17881
+// Module ID: 17890
+// Function ID: 17891
 // Name: NativeProximitySensorManagerModule
 // Dependencies: [17, 2]
 
-// Module 17880 (NativeProximitySensorManagerModule)
+// Module 17890 (NativeProximitySensorManagerModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

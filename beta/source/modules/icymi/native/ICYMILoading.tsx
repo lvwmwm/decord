@@ -1,21 +1,21 @@
-// Module ID: 16856
-// Function ID: 16857
+// Module ID: 16866
+// Function ID: 16867
 // Name: ICYMILoading
-// Dependencies: [19, 17, 21, 16795, 580, 558, 568, 12803, 4497, 16834, 2]
+// Dependencies: [19, 17, 21, 16805, 580, 558, 568, 12839, 4529, 16844, 2]
 
-// Module 16856 (ICYMILoading)
+// Module 16866 (ICYMILoading)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
-import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 12803 */;
-import ICYMIShared from "ICYMIShared" /* 16834 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
+import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 12839 */;
+import ICYMIShared from "ICYMIShared" /* 16844 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
-const createICYMIStyles = fn(16795);
+const createICYMIStyles = fn(16805);
 let closure_8 = createICYMIStyles.createICYMIStyles((marginBottom) => {
   const obj = { backgroundColor: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE }, container: { padding: marginBottom.margin }, avatarRow: { flexDirection: "row", alignItems: "center", marginBottom: marginBottom.margin }, avatar: null, avatarTitle: null, title: null, subtitle: null, image: null, separator: null };
   const size = { width: 40, height: 40, borderRadius: nativeDefault.radii.md, marginRight: nativeDefault.space.PX_12 };
@@ -167,7 +167,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                       ({ backgroundColor: arr6[0], image: arr6[1] } = tmp4);
                       items2[2] = tmp7;
                       obj9.style = items2;
-                      const tmp38 = hasOwnProperty(tmp6(4497).View, obj9);
+                      const tmp38 = hasOwnProperty(tmp6(4529).View, obj9);
                       cResult[25] = tmp7;
                       cResult[26] = tmp4.backgroundColor;
                       cResult[27] = tmp4.image;
@@ -181,7 +181,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   items3[2] = tmp7;
                   items3[3] = tmp31;
                   obj10.style = items3;
-                  const tmp35 = hasOwnProperty(tmp6(4497).View, obj10);
+                  const tmp35 = hasOwnProperty(tmp6(4529).View, obj10);
                   cResult[21] = tmp7;
                   cResult[22] = tmp4.backgroundColor;
                   cResult[23] = tmp4.subtitle;
@@ -195,7 +195,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               items4[2] = tmp7;
               items4[3] = tmp26;
               obj11.style = items4;
-              const tmp30 = hasOwnProperty(tmp6(4497).View, obj11);
+              const tmp30 = hasOwnProperty(tmp6(4529).View, obj11);
               cResult[16] = tmp7;
               cResult[17] = tmp4.backgroundColor;
               cResult[18] = tmp4.title;
@@ -220,7 +220,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       items6[2] = tmp7;
       items6[3] = tmp17;
       obj13.style = items6;
-      const tmp21 = hasOwnProperty(tmp6(4497).View, obj13);
+      const tmp21 = hasOwnProperty(tmp6(4529).View, obj13);
       cResult[7] = tmp7;
       cResult[8] = tmp4.avatarTitle;
       cResult[9] = tmp4.backgroundColor;

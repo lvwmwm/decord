@@ -1,10 +1,10 @@
-// Module ID: 7826
-// Function ID: 7827
+// Module ID: 7858
+// Function ID: 7859
 // Name: ImmersiveBannerBlockRecord
-// Dependencies: [7819, 2]
+// Dependencies: [7851, 2]
 
-// Module 7826 (ImmersiveBannerBlockRecord)
-import ShopBlockType from "ShopBlockType" /* 7819 */;
+// Module 7858 (ImmersiveBannerBlockRecord)
+import ShopBlockType from "ShopBlockType" /* 7851 */;
 import size from "module_2" /* 2 */;
 
 const prototype = function ImmersiveBannerBlockRecord(end_time) {

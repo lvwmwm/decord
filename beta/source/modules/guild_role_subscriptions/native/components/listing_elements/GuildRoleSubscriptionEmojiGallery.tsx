@@ -1,12 +1,12 @@
-// Module ID: 15498
-// Function ID: 15499
+// Module ID: 15508
+// Function ID: 15509
 // Name: GuildRoleSubscriptionEmojiGallery
-// Dependencies: [19, 17, 21, 558, 568, 10523, 10525, 15499, 2]
+// Dependencies: [19, 17, 21, 558, 568, 10559, 10561, 15509, 2]
 
-// Module 15498 (GuildRoleSubscriptionEmojiGallery)
-import chunkDefault from "chunk" /* 10523 */;
-import LayoutUtils from "LayoutUtils" /* 10525 */;
-import EmojiIconDefault from "EmojiIcon" /* 15499 */;
+// Module 15508 (GuildRoleSubscriptionEmojiGallery)
+import chunkDefault from "chunk" /* 10559 */;
+import LayoutUtils from "LayoutUtils" /* 10561 */;
+import EmojiIconDefault from "EmojiIcon" /* 15509 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -73,7 +73,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((maxPerRow) => {
   cResult[0] = emojiIds;
   cResult[1] = guildId;
   cResult[2] = num;
-  cResult[3] = tmp(10525).GappedList;
+  cResult[3] = tmp(10561).GappedList;
   cResult[4] = View;
   cResult[5] = 8;
   cResult[6] = mapped;

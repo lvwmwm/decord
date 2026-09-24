@@ -1,9 +1,9 @@
-// Module ID: 13821
-// Function ID: 13822
+// Module ID: 13857
+// Function ID: 13858
 // Name: UserSettingsPremiumGifting
-// Dependencies: [32, 19, 17, 8466, 7638, 1078, 1378, 21, 4758, 580, 558, 568, 5903, 7658, 1488, 1616, 504, 4996, 12, 7661, 13822, 11037, 8458, 13670, 577, 7644, 7663, 8471, 7236, 7241, 9474, 13823, 4754, 1119, 13824, 13830, 13832, 13835, 13837, 2582, 13838, 5796, 11567, 7244, 2]
+// Dependencies: [32, 19, 17, 8498, 7670, 1078, 1378, 21, 4790, 580, 558, 568, 5935, 7690, 1488, 1616, 504, 5028, 12, 7693, 13858, 11073, 8490, 13706, 577, 7676, 7695, 8503, 7268, 7273, 9506, 13859, 4786, 1119, 13860, 13866, 13868, 13871, 13873, 2582, 13874, 5828, 11603, 7276, 2]
 
-// Module 13821 (UserSettingsPremiumGifting)
+// Module 13857 (UserSettingsPremiumGifting)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
@@ -11,27 +11,27 @@ import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import _modDef2582 from "module_2582" /* 2582 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 4996 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5796 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7236 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7241 */;
-import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /* 7658 */;
-import BadgeId from "BadgeId" /* 8458 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8471 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9474 */;
-import _modDef13823 from "module_13823" /* 13823 */;
-import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 13824 */;
-import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 13830 */;
-import PremiumTierCardDefault from "PremiumTierCard" /* 13832 */;
-import GiftPurchaseButtonDefault from "GiftPurchaseButton" /* 13835 */;
-import PremiumUnverifiedWarningDefault from "PremiumUnverifiedWarning" /* 13837 */;
-import UserSettingsGiftingBadgeProgressDefault from "UserSettingsGiftingBadgeProgress" /* 13838 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5028 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5828 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7268 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7273 */;
+import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /* 7690 */;
+import BadgeId from "BadgeId" /* 8490 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8503 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9506 */;
+import _modDef13859 from "module_13859" /* 13859 */;
+import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 13860 */;
+import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 13866 */;
+import PremiumTierCardDefault from "PremiumTierCard" /* 13868 */;
+import GiftPurchaseButtonDefault from "GiftPurchaseButton" /* 13871 */;
+import PremiumUnverifiedWarningDefault from "PremiumUnverifiedWarning" /* 13873 */;
+import UserSettingsGiftingBadgeProgressDefault from "UserSettingsGiftingBadgeProgress" /* 13874 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8466 */;
-import EntitlementStore from "EntitlementStore" /* 7638 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8498 */;
+import EntitlementStore from "EntitlementStore" /* 7670 */;
 
 const require = globalThis.__r;
 
@@ -44,7 +44,7 @@ const PremiumConstants = fn(1378);
 ({ PremiumTypes: closure_12, SubscriptionPlans: map1 } = PremiumConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { scrollView: { paddingHorizontal: nativeDefault.modules.mobile.GIFTING_SETTINGS_PADDING_HORIZONTAL }, giftingSettingsContainer: { flex: 1 }, inventorySectionWrapper: { flex: 1 }, giftPurchaseSectionWrapper: { flex: 1, paddingTop: 36, paddingBottom: 16 }, emptyGiftLinks: null, emptyImage: null, emptyGiftHeader: null, emptyGiftDescription: null, emptyGiftInformation: null, titleWrapper: null, cardText: null, tierCard: null, giftPurchaseButton: null, buttonWrapper: null, loading: null, warningMargins: null };
 let obj3 = { paddingHorizontal: nativeDefault.modules.mobile.GIFTING_SETTINGS_PADDING_HORIZONTAL };
 obj.emptyGiftLinks = { flex: 1, flexDirection: "row", alignItems: "center", paddingVertical: 16, borderWidth: StyleSheet.hairlineWidth, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
@@ -145,13 +145,13 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
     cResult[5] = groupByResult;
   } else {
     noop = cResult[5];
-    tmp(7661);
+    tmp(7693);
     class U {
       constructor() {
         return enabled.getGiftable();
       }
     }
-    const outboundPromotions = tmp(13822).useOutboundPromotions();
+    const outboundPromotions = tmp(13858).useOutboundPromotions();
     const promotionsLoaded = outboundPromotions.promotionsLoaded;
     const activeOutboundPromotions = outboundPromotions.activeOutboundPromotions;
     closure_7 = outboundPromotions.claimedEndedOutboundPromotions;
@@ -168,7 +168,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
     } else {
       const tmp19 = cResult[7];
     }
-    const GiftingBadgeExperiment = tmp(11037).GiftingBadgeExperiment;
+    const GiftingBadgeExperiment = tmp(11073).GiftingBadgeExperiment;
     enabled = GiftingBadgeExperiment.useConfig(tmp19).enabled;
     const _Symbol3 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
@@ -186,23 +186,23 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
       tmp20 = cResult[8];
       tmp21 = cResult[9];
     }
-    const tmpResult8 = tmp(13822);
+    const tmpResult8 = tmp(13858);
     const stateFromStores = tmp(504).useStateFromStores(tmp20, tmp21);
     const tmp25 = navigation(noop.useState(false), 2);
     closure_10 = tmp25[0];
     constants2 = tmp25[1];
     const tmpResult9 = tmp(504);
-    const subscriptionPlansLoaded = tmp(13670).useSubscriptionPlansLoaded();
+    const subscriptionPlansLoaded = tmp(13706).useSubscriptionPlansLoaded();
     const _Symbol4 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
       class X {
         constructor() {
           obj = closure_1(closure_2[24]);
           waitResult = obj.wait(() => {
-            const giftableEntitlements = recipientUserId(7644).fetchGiftableEntitlements();
+            const giftableEntitlements = recipientUserId(7676).fetchGiftableEntitlements();
             giftableEntitlements.then(() => { ... });
-            const obj = recipientUserId(7644);
-            closure_1(7663).init();
+            const obj = recipientUserId(7676);
+            closure_1(7695).init();
           });
           return;
         }
@@ -221,10 +221,10 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
         constructor() {
           obj = closure_1(closure_2[24]);
           waitResult = obj.wait(() => {
-            const giftableEntitlements = recipientUserId(7644).fetchGiftableEntitlements();
+            const giftableEntitlements = recipientUserId(7676).fetchGiftableEntitlements();
             giftableEntitlements.then(() => { ... });
-            const obj = recipientUserId(7644);
-            closure_1(7663).init();
+            const obj = recipientUserId(7676);
+            closure_1(7695).init();
           });
           return;
         }
@@ -353,7 +353,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
     }
     function st() {
       const obj = { style: closure_2.emptyGiftLinks, children: null };
-      const items = [state(hasOwnProperty, { style: closure_2.emptyImage, source: _modDef13823 }), ];
+      const items = [state(hasOwnProperty, { style: closure_2.emptyImage, source: _modDef13859 }), ];
       const obj3 = { style: closure_2.emptyGiftDescription, accessible: true, children: null };
       const obj4 = { style: closure_2.emptyGiftHeader, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
       const intl = util.intl;
@@ -374,7 +374,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
     cResult[22] = tmp7.emptyGiftLinks;
     cResult[23] = tmp7.emptyImage;
     cResult[24] = st;
-    const tmpResult10 = tmp(13670);
+    const tmpResult10 = tmp(13706);
   }
 }) : ((arg0, ref) => {
   ({ recipientUserId, analyticsLocation } = arg0);

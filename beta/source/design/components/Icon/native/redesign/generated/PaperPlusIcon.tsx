@@ -1,13 +1,13 @@
-// Module ID: 13354
-// Function ID: 13355
+// Module ID: 13390
+// Function ID: 13391
 // Name: PaperPlusIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 13355, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 13391, 4493, 2]
 
-// Module 13354 (PaperPlusIcon)
+// Module 13390 (PaperPlusIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod13355 from "module_13355" /* 13355 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod13391 from "module_13391" /* 13391 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const PaperPlusIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(13355);
+    const tmpResult = tmp(13391);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const PaperPlusIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod13355, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod13391, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

@@ -1,18 +1,18 @@
-// Module ID: 17123
-// Function ID: 17124
+// Module ID: 17133
+// Function ID: 17134
 // Name: Separators
-// Dependencies: [19, 17, 8127, 21, 4758, 558, 568, 2]
+// Dependencies: [19, 17, 8159, 21, 4790, 558, 568, 2]
 
-// Module 17123 (Separators)
+// Module 17133 (Separators)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const SearchConstants = fn(8127);
+const SearchConstants = fn(8159);
 ({ MEDIA_ITEM_GAP_WIDTH, FILES_OR_LINKS_GAP_WIDTH } = SearchConstants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ filesOrLinksSeparator: { height: FILES_OR_LINKS_GAP_WIDTH }, mediaSeparator: { height: MEDIA_ITEM_GAP_WIDTH }, messageSeparator: { height: 4 } });
 fn(558);
 let ReactCompilerGating = fn(558);

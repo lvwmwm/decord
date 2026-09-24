@@ -1,11 +1,11 @@
-// Module ID: 11290
-// Function ID: 11291
+// Module ID: 11326
+// Function ID: 11327
 // Name: useAutocompleter
-// Dependencies: [32, 19, 558, 568, 10070, 5813, 2]
+// Dependencies: [32, 19, 558, 568, 10109, 5845, 2]
 
-// Module 11290 (useAutocompleter)
-import useInitialValueDefault from "useInitialValue" /* 5813 */;
-import sortByMatchScoreDefault from "sortByMatchScore" /* 10070 */;
+// Module 11326 (useAutocompleter)
+import useInitialValueDefault from "useInitialValue" /* 5845 */;
+import sortByMatchScoreDefault from "sortByMatchScore" /* 10109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

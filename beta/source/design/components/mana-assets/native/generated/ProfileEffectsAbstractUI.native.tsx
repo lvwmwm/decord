@@ -1,13 +1,13 @@
-// Module ID: 6606
-// Function ID: 6607
+// Module ID: 6638
+// Function ID: 6639
 // Name: ProfileEffectsAbstractUI
-// Dependencies: [21, 558, 568, 6607, 5802, 2]
+// Dependencies: [21, 558, 568, 6639, 5834, 2]
 
-// Module 6606 (ProfileEffectsAbstractUI)
+// Module 6638 (ProfileEffectsAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6607 from "module_6607" /* 6607 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6639 from "module_6639" /* 6639 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const ProfileEffectsAbstractUI = ReactCompilerGating.isReactCompilerEnabl
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6607 };
+    const obj2 = { uri: _modDef6639 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const ProfileEffectsAbstractUI = ReactCompilerGating.isReactCompilerEnabl
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6607 };
+  const obj2 = { uri: _modDef6639 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

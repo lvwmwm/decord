@@ -1,16 +1,16 @@
-// Module ID: 8182
-// Function ID: 8183
+// Module ID: 8214
+// Function ID: 8215
 // Name: ContextMenu
-// Dependencies: [19, 21, 1368, 4497, 1482, 8183, 5195, 8184, 5182, 8185, 4610, 1119, 8186, 6891, 4726, 5173, 2]
+// Dependencies: [19, 21, 1368, 4529, 1482, 8215, 5227, 8216, 5214, 8217, 4642, 1119, 8218, 6923, 4758, 5205, 2]
 // Exports: ContextMenu
 
-// Module 8182 (ContextMenu)
+// Module 8214 (ContextMenu)
 import PlatformUtils2 from "PlatformUtils" /* 1368 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5182 */;
-import ContextMenuState from "ContextMenuState" /* 8183 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 8184 */;
-import UID from "UID" /* 8185 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5214 */;
+import ContextMenuState from "ContextMenuState" /* 8215 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 8216 */;
+import UID from "UID" /* 8217 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -164,7 +164,7 @@ export const ContextMenu = function ContextMenu(triggerOnLongPress) {
     const size = { key: UID.uid(), x, y, positionX, positionY, height, width, state: contextMenuState, items: items3, title, keyboardShouldPersistTaps, requestClose, onClose: callback1, dividerIndexes, ignoreKeyboardHide: flag4 };
     ContextMenuState.showContextMenu(size);
     if (obj4.isAndroid()) {
-      const AccessibilityAnnouncer = tmp3(4610).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp3(4642).AccessibilityAnnouncer;
       const intl = tmp3(1119).intl;
       AccessibilityAnnouncer.announce(intl.string(tmp3(1119).t.ZqK0uI));
     }
@@ -420,36 +420,36 @@ export const ContextMenu = function ContextMenu(triggerOnLongPress) {
     onPanGestureEnd.__workletHash = 13880456258652;
     onPanGestureEnd.__initData = __initData;
     if (flag) {
-      const Gesture2 = tmp2(6891).Gesture;
+      const Gesture2 = tmp2(6923).Gesture;
       const PanResult = Gesture2.Pan();
       const fn4 = function i(absoluteX) {
         const result = items(flag2[5]).updateContextMenuState(absoluteX.absoluteX, absoluteX.absoluteY, activeIndex);
       };
-      const obj2 = { updateContextMenuState: tmp2(8183).updateContextMenuState, state: tmp };
+      const obj2 = { updateContextMenuState: tmp2(8215).updateContextMenuState, state: tmp };
       fn4.__closure = obj2;
       fn4.__workletHash = 2460213213323;
       fn4.__initData = __initData2;
       const enabledResult = Gesture2.Pan().enabled(flag5);
       const onUpdateResult = Gesture2.Pan().enabled(flag5).onUpdate(fn4);
-      const Gesture3 = tmp2(6891).Gesture;
+      const Gesture3 = tmp2(6923).Gesture;
       const onEndResult = Gesture2.Pan().enabled(flag5).onUpdate(fn4).onEnd(onPanGestureEnd);
       const LongPressResult = Gesture3.LongPress();
       const enabledResult1 = Gesture3.LongPress().enabled(flag5);
-      let result = Gesture3.LongPress().enabled(flag5).minDuration(tmp2(8184).CONTEXT_MENU_LONG_PRESS_DURATION_MS).shouldCancelWhenOutside(false);
+      let result = Gesture3.LongPress().enabled(flag5).minDuration(tmp2(8216).CONTEXT_MENU_LONG_PRESS_DURATION_MS).shouldCancelWhenOutside(false);
       const fn5 = function n() {
         const obj = items(flag2[3]);
         items(flag2[3]).runOnJS(items(flag2[14]).triggerHapticFeedback)(items(flag2[7]).CONTEXT_MENU_OPEN_HAPTIC);
         callback3();
       };
-      const obj3 = { runOnJS: tmp2(4497).runOnJS, triggerHapticFeedback: tmp2(4726).triggerHapticFeedback, CONTEXT_MENU_OPEN_HAPTIC: tmp2(8184).CONTEXT_MENU_OPEN_HAPTIC, measureButtonAndShowMenu: callback3 };
+      const obj3 = { runOnJS: tmp2(4529).runOnJS, triggerHapticFeedback: tmp2(4758).triggerHapticFeedback, CONTEXT_MENU_OPEN_HAPTIC: tmp2(8216).CONTEXT_MENU_OPEN_HAPTIC, measureButtonAndShowMenu: callback3 };
       fn5.__closure = obj3;
       fn5.__workletHash = 13919366908951;
       fn5.__initData = __initData3;
-      const minDurationResult = Gesture3.LongPress().enabled(flag5).minDuration(tmp2(8184).CONTEXT_MENU_LONG_PRESS_DURATION_MS);
-      const Gesture4 = tmp2(6891).Gesture;
+      const minDurationResult = Gesture3.LongPress().enabled(flag5).minDuration(tmp2(8216).CONTEXT_MENU_LONG_PRESS_DURATION_MS);
+      const Gesture4 = tmp2(6923).Gesture;
       return Gesture4.Simultaneous(result.onStart(fn5), onEndResult);
     } else {
-      const Gesture = tmp2(6891).Gesture;
+      const Gesture = tmp2(6923).Gesture;
       if (flag2) {
         const TapResult = Gesture.Tap();
         const fn3 = function o() {
@@ -468,7 +468,7 @@ export const ContextMenu = function ContextMenu(triggerOnLongPress) {
           items(flag2[3]).runOnJS(items(flag2[14]).triggerHapticFeedback)(items(flag2[7]).CONTEXT_MENU_OPEN_HAPTIC);
           callback3();
         };
-        const obj5 = { runOnJS: tmp2(4497).runOnJS, triggerHapticFeedback: tmp2(4726).triggerHapticFeedback, CONTEXT_MENU_OPEN_HAPTIC: tmp2(8184).CONTEXT_MENU_OPEN_HAPTIC, measureButtonAndShowMenu: callback3 };
+        const obj5 = { runOnJS: tmp2(4529).runOnJS, triggerHapticFeedback: tmp2(4758).triggerHapticFeedback, CONTEXT_MENU_OPEN_HAPTIC: tmp2(8216).CONTEXT_MENU_OPEN_HAPTIC, measureButtonAndShowMenu: callback3 };
         fn.__closure = obj5;
         fn.__workletHash = 11906156003448;
         fn.__initData = __initData6;
@@ -476,7 +476,7 @@ export const ContextMenu = function ContextMenu(triggerOnLongPress) {
         const fn2 = function e(absoluteX) {
           const result = items(flag2[5]).updateContextMenuState(absoluteX.absoluteX, absoluteX.absoluteY, activeIndex);
         };
-        const obj6 = { updateContextMenuState: tmp2(8183).updateContextMenuState, state: tmp };
+        const obj6 = { updateContextMenuState: tmp2(8215).updateContextMenuState, state: tmp };
         fn2.__closure = obj6;
         fn2.__workletHash = 12092888447433;
         fn2.__initData = __initData5;
@@ -505,12 +505,12 @@ export const ContextMenu = function ContextMenu(triggerOnLongPress) {
   const callback5 = obj3.useCallback(() => {
     let isAndroidResult = PlatformUtils2.isAndroid();
     if (isAndroidResult) {
-      isAndroidResult = tmp(5173).getIsScreenReaderEnabled();
-      const tmpResult = tmp(5173);
+      isAndroidResult = tmp(5205).getIsScreenReaderEnabled();
+      const tmpResult = tmp(5205);
     }
     if (isAndroidResult) {
-      tmp(4497).runOnUI(callback3)();
-      const tmpResult2 = tmp(4497);
+      tmp(4529).runOnUI(callback3)();
+      const tmpResult2 = tmp(4529);
     }
   }, items13);
   let obj5 = { ref: buttonRef, onPress: callback5, onLongPress: null, accessibilityActions: null, onAccessibilityAction: null };

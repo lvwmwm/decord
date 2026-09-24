@@ -1,22 +1,22 @@
-// Module ID: 9310
-// Function ID: 9311
+// Module ID: 9342
+// Function ID: 9343
 // Name: VibegrationsPlatformUtils
-// Dependencies: [5, 9311, 1983, 9307, 9312, 9315, 8615, 9316, 9317, 1090, 9553, 9557, 8574, 9558, 9560, 13181, 13182, 13183, 13185, 13186, 2]
+// Dependencies: [5, 9343, 1983, 9339, 9344, 9347, 8647, 9348, 9349, 1090, 9585, 9589, 8606, 9590, 9592, 13217, 13218, 13219, 13221, 13222, 2]
 // Exports: inspectVibegrationsPreviewPoint
 
-// Module 9310 (VibegrationsPlatformUtils)
+// Module 9342 (VibegrationsPlatformUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9316 */;
-import ApplicationUtils from "ApplicationUtils" /* 9317 */;
-import PushNotificationDefault from "PushNotification" /* 9553 */;
-import vibegrationsPreviewCall from "vibegrationsPreviewCall" /* 9557 */;
-import vibegrationsPreviewControlLease from "vibegrationsPreviewControlLease" /* 13182 */;
-import vibegrationsPreviewNativeSurfaces from "vibegrationsPreviewNativeSurfaces" /* 13183 */;
-import restartVibegrationsAppFramesDefault from "restartVibegrationsAppFrames" /* 13186 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9348 */;
+import ApplicationUtils from "ApplicationUtils" /* 9349 */;
+import PushNotificationDefault from "PushNotification" /* 9585 */;
+import vibegrationsPreviewCall from "vibegrationsPreviewCall" /* 9589 */;
+import vibegrationsPreviewControlLease from "vibegrationsPreviewControlLease" /* 13218 */;
+import vibegrationsPreviewNativeSurfaces from "vibegrationsPreviewNativeSurfaces" /* 13219 */;
+import restartVibegrationsAppFramesDefault from "restartVibegrationsAppFrames" /* 13222 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import FramesStore from "FramesStore" /* 9311 */;
+import FramesStore from "FramesStore" /* 9343 */;
 import AppStateStore from "AppStateStore" /* 1983 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9307 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9339 */;
 
 require = fn;
 function previewFrameIdentity(arg0) {
@@ -616,12 +616,12 @@ let closure_21 = async function _relayPreviewControl(arg0, value) {
     }
   }
 };
-const FramesConstants = fn(9312);
+const FramesConstants = fn(9344);
 ({ isLaunched: closure_8, MAIN_SURFACE: closure_9, makeFrameId: c10 } = FramesConstants);
-const LocalNotificationTypes = fn(9315).LocalNotificationTypes;
-let items = [fn(8615).OAuth2Scopes.BOT, fn(8615).OAuth2Scopes.APPLICATIONS_COMMANDS];
+const LocalNotificationTypes = fn(9347).LocalNotificationTypes;
+let items = [fn(8647).OAuth2Scopes.BOT, fn(8647).OAuth2Scopes.APPLICATIONS_COMMANDS];
 let c19 = 0;
-const vibegrationsPreviewOperationSurfaces = fn(13185);
+const vibegrationsPreviewOperationSurfaces = fn(13221);
 let closure_22 = vibegrationsPreviewOperationSurfaces.createPreviewOperationSurfaces((arg0) => {
   const project = VibegrationsProjectStore.getProject(arg0);
   let prop;

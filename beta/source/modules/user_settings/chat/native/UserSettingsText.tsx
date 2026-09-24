@@ -1,26 +1,26 @@
-// Module ID: 15725
-// Function ID: 15726
+// Module ID: 15735
+// Function ID: 15736
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1376, 4424, 1187, 1188, 1078, 21, 4758, 580, 1245, 2023, 9470, 558, 568, 4462, 504, 4418, 1488, 7236, 5903, 1119, 7446, 1181, 10691, 4754, 5901, 5900, 8876, 5186, 2]
+// Dependencies: [19, 17, 1376, 4456, 1187, 1188, 1078, 21, 4790, 580, 1245, 2023, 9502, 558, 568, 4494, 504, 4450, 1488, 7268, 5935, 1119, 7478, 1181, 10727, 4786, 5933, 5932, 8908, 5218, 2]
 // Exports: setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 15725 (UserSettingsText)
+// Module 15735 (UserSettingsText)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import TableRadioRow from "TableRadioRow" /* 5900 */;
-import TableRadioGroup from "TableRadioGroup" /* 5901 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7236 */;
-import TableSwitchRow from "TableSwitchRow" /* 7446 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9470 */;
-import _modDef10691 from "module_10691" /* 10691 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import TableRadioRow from "TableRadioRow" /* 5932 */;
+import TableRadioGroup from "TableRadioGroup" /* 5933 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7268 */;
+import TableSwitchRow from "TableSwitchRow" /* 7478 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9502 */;
+import _modDef10727 from "module_10727" /* 10727 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
-import SubscriptionStore from "SubscriptionStore" /* 4424 */;
+import SubscriptionStore from "SubscriptionStore" /* 4456 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1187 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1188 */;
 
@@ -33,7 +33,7 @@ const Constants = fn(1078);
 ({ AnalyticEvents: closure_9, AnalyticsSections: c10, UserSettingsSections: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { flex: { flex: 1 }, nitroUpsell: { flexDirection: "row", alignItems: "center" }, nitroIcon: null };
 let size = { width: 16, height: 16, tintColor: nativeDefault.unsafe_rawColors.PRIMARY_400 };
 obj2.nitroIcon = size;

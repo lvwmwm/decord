@@ -1,19 +1,19 @@
-// Module ID: 12994
-// Function ID: 12995
+// Module ID: 13030
+// Function ID: 13031
 // Name: NotificationSettingsMessageUnread
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 12988, 1119, 4754, 12995, 5341, 12986, 4725, 12996, 1984, 10420, 12998, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 13024, 1119, 4786, 13031, 5373, 13022, 4757, 13032, 1984, 10459, 13034, 2]
 // Exports: NotificationSettingsChannelMessageUnread, NotificationSettingsGuildMessageUnread
 
-// Module 12994 (NotificationSettingsMessageUnread)
+// Module 13030 (NotificationSettingsMessageUnread)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
-import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 12988 */;
-import NotificationSettingsMockChannelsDefault from "NotificationSettingsMockChannels" /* 12995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
+import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 13024 */;
+import NotificationSettingsMockChannelsDefault from "NotificationSettingsMockChannels" /* 13031 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -22,7 +22,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { card: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: 20, borderWidth: 1, padding: 14 }, cta: { marginTop: 4, textAlign: "center" }, label: { marginTop: 8, textAlign: "center" }, header: { marginBottom: 8 }, headerTitle: { marginBottom: 4 } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -30,12 +30,12 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((setting) => {
   const cResult = c.c(32);
   const tmp4 = closure_6();
   if (cResult[0] !== setting.setting) {
-    const unreadSelectOptions = tmp(12988).getUnreadSelectOptions();
+    const unreadSelectOptions = tmp(13024).getUnreadSelectOptions();
     const found = unreadSelectOptions.find((value) => value.value === setting.setting);
     cResult[0] = setting.setting;
     cResult[1] = found;
     let tmp5 = found;
-    const tmpResult = tmp(12988);
+    const tmpResult = tmp(13024);
   } else {
     tmp5 = cResult[1];
   }
@@ -50,7 +50,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((setting) => {
   }
   if (cResult[3] !== tmp4.headerTitle) {
     const obj2 = { variant: "text-sm/semibold", color: "text-default", style: headerTitle, children: tmp7 };
-    const tmp11 = React4(tmp(4754).Text, obj2);
+    const tmp11 = React4(tmp(4786).Text, obj2);
     cResult[3] = tmp4.headerTitle;
     cResult[4] = tmp11;
     let tmp9 = tmp11;
@@ -61,7 +61,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((setting) => {
     const obj3 = { variant: "text-xs/semibold", color: "text-default", children: null };
     const intl2 = tmp(1119).intl;
     obj3.children = intl2.string(tmp(1119).t.RpQgm5);
-    const tmp14 = React4(tmp(4754).Text, obj3);
+    const tmp14 = React4(tmp(4786).Text, obj3);
     cResult[5] = tmp14;
     let tmp12 = tmp14;
   } else {
@@ -104,7 +104,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((setting) => {
         const obj5 = { variant: "text-sm/semibold", style: tmp4.cta, color: "text-brand", children: null };
         const items = [tmp25, " "];
         obj5.children = items;
-        const tmp29 = hasOwnProperty(tmp(4754).Text, obj5);
+        const tmp29 = hasOwnProperty(tmp(4786).Text, obj5);
         cResult[15] = tmp4.cta;
         cResult[16] = tmp29;
         let tmp27 = tmp29;
@@ -144,7 +144,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((setting) => {
                 tmp40 = tmp43;
               }
               const obj7 = { onPress: setting.onCustomize, activeOpacity: 0.6, children: tmp33 };
-              const tmp39 = React4(tmp(5341).PressableOpacity, obj7);
+              const tmp39 = React4(tmp(5373).PressableOpacity, obj7);
               cResult[25] = setting.onCustomize;
               cResult[26] = tmp33;
               cResult[27] = tmp39;
@@ -164,14 +164,14 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((setting) => {
         tmp33 = tmp36;
       }
       const obj9 = { onPress: setting.onCustomize, children: tmp27 };
-      const tmp32 = React4(tmp(5341).PressableOpacity, obj9);
+      const tmp32 = React4(tmp(5373).PressableOpacity, obj9);
       cResult[17] = setting.onCustomize;
       cResult[18] = tmp27;
       cResult[19] = tmp32;
       tmp30 = tmp32;
     }
     const obj10 = { variant: "text-sm/medium", style: tmp4.label, children: str };
-    const tmp24 = React4(tmp(4754).Text, obj10);
+    const tmp24 = React4(tmp(4786).Text, obj10);
     cResult[11] = tmp4.label;
     cResult[12] = str;
     cResult[13] = tmp24;
@@ -236,7 +236,7 @@ export const NotificationSettingsGuildMessageUnread = function NotificationSetti
     style: style.style,
     setting: require("notificationSettingsGuildFlagUtils").useGuildPresetSettings(style.guildId).unread,
     onCustomize() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12996, dependencyMap.paths), "MessageUnreadActionSheet", { guildId: style.guildId });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(13032, dependencyMap.paths), "MessageUnreadActionSheet", { guildId: style.guildId });
     }
   };
   return closure_4(closure_7, obj);
@@ -247,7 +247,7 @@ export const NotificationSettingsChannelMessageUnread = function NotificationSet
     style: style.style,
     setting: require("notficationSettingsChannelFlagUtils").useChannelPresetSettings(style.channel).unread,
     onCustomize() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12998, dependencyMap.paths), "MessageUnreadActionSheet", { channel: style.channel });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(13034, dependencyMap.paths), "MessageUnreadActionSheet", { channel: style.channel });
     }
   };
   return closure_4(closure_7, obj);

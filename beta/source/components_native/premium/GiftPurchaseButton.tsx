@@ -1,13 +1,13 @@
-// Module ID: 13835
-// Function ID: 13836
+// Module ID: 13871
+// Function ID: 13872
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 4424, 7484, 21, 558, 568, 5194, 4754, 504, 7487, 11347, 7409, 11040, 5111, 1119, 4418, 10959, 5189, 13836, 2]
+// Dependencies: [5, 19, 17, 4456, 7516, 21, 558, 568, 5226, 4786, 504, 7519, 11383, 7441, 11076, 5143, 1119, 4450, 10995, 5221, 13872, 2]
 
-// Module 13835 (GiftPurchaseButton)
+// Module 13871 (GiftPurchaseButton)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 4424 */;
-import IAPStore from "IAPStore" /* 7484 */;
+import SubscriptionStore from "SubscriptionStore" /* 4456 */;
+import IAPStore from "IAPStore" /* 7516 */;
 
 const require = globalThis.__r;
 
@@ -41,7 +41,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   dependencyMap = tmp4;
   const obj = require("c");
   const buttonTextColorStyles = require("ButtonHooks").useButtonTextColorStyles(str);
-  const merged = Object.assign(tmp(4754).TextStyleSheet["text-sm/semibold"]);
+  const merged = Object.assign(tmp(4786).TextStyleSheet["text-sm/semibold"]);
   const merged1 = Object.assign(buttonTextColorStyles);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SubscriptionStore];
@@ -59,11 +59,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = require("ButtonHooks");
   const stateFromStores = require("initialize").useStateFromStores(tmp8, tmp9);
   if (cResult[4] !== planId) {
-    const productIdForGift = tmp(7487).getProductIdForGift(planId);
+    const productIdForGift = tmp(7519).getProductIdForGift(planId);
     cResult[4] = planId;
     cResult[5] = productIdForGift;
     let tmp12 = productIdForGift;
-    const tmpResult8 = tmp(7487);
+    const tmpResult8 = tmp(7519);
   } else {
     tmp12 = cResult[5];
   }
@@ -136,7 +136,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  const analyticsLocations = recipientUserId(7409)().analyticsLocations;
+  const analyticsLocations = recipientUserId(7441)().analyticsLocations;
   tmp23 = null != stateFromStores;
   const tmpResult11 = require("initialize");
   const createOrReuseGiftOrder = require("createOrReuseGiftOrder").useCreateOrReuseGiftOrder("GiftPurchaseButton");
@@ -223,17 +223,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj3 = { style: style.style, children: null };
   const callback = analyticsLocations.useCallback(productIdForGift(function*() {
     closure_128_0 = yield createOrReuseGiftOrder({ planId, recipientUserId, productId: productIdForGift });
-    const premiumTypeFromPlanId = planId(4418).getPremiumTypeFromPlanId(closure_129_0);
+    const premiumTypeFromPlanId = planId(4450).getPremiumTypeFromPlanId(closure_129_0);
     const premiumType = premiumTypeFromPlanId.premiumType;
     const planInterval = premiumTypeFromPlanId.planInterval;
-    planId(10959).openGiftModal({ recipientUserId: closure_129_2, premiumType, planInterval, analyticsLocation: closure_129_1, analyticsLocations: closure_129_4, order: closure_128_0 });
+    planId(10995).openGiftModal({ recipientUserId: closure_129_2, premiumType, planInterval, analyticsLocation: closure_129_1, analyticsLocations: closure_129_4, order: closure_128_0 });
     yield "IconComponent";
     const obj7 = { title: null, body: null };
     const intl = planId(1119).intl;
     obj7.title = intl.string(planId(1119).t.R0RpRX);
     const intl2 = planId(1119).intl;
     obj7.body = intl2.string(planId(1119).t.CKsXk3);
-    tmp3(5111).show(obj7);
+    tmp3(5143).show(obj7);
   }), items3);
   const tmpResult = planId(recipientUserId[14]);
   obj3.children = jsx(planId(recipientUserId[19]).BaseTextButton, { textElement: analyticsLocation(recipientUserId[20])({ style: obj, basePlanId: planId, isCurrentPlan: tmp11, isGift: true, product: stateFromStores2 }), variant: str, size: "sm", onPress: callback, loading: stateFromStores1, disabled: !canPurchaseIAP, grow: true });

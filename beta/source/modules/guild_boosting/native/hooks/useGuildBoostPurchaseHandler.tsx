@@ -1,9 +1,9 @@
-// Module ID: 12703
-// Function ID: 12704
+// Module ID: 12739
+// Function ID: 12740
 // Name: useGuildBoostPurchaseHandler
-// Dependencies: [5, 19, 1078, 3, 558, 568, 7650, 10961, 7649, 1245, 5111, 1119, 5653, 2]
+// Dependencies: [5, 19, 1078, 3, 558, 568, 7682, 10997, 7681, 1245, 5143, 1119, 5685, 2]
 
-// Module 12703 (useGuildBoostPurchaseHandler)
+// Module 12739 (useGuildBoostPurchaseHandler)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -57,8 +57,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             } else {
               let newAnalyticsLoadId = tmp2;
               newAnalyticsLoadId = undefined;
-              newAnalyticsLoadId = args(10961).getNewAnalyticsLoadId();
-              const obj7 = args(7649);
+              newAnalyticsLoadId = args(10997).getNewAnalyticsLoadId();
+              const obj7 = args(7681);
               c3 = 1;
               c4 = 1;
               const obj4 = {
@@ -91,7 +91,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const obj5 = { value, done: true };
             return obj5;
           } else {
-            args(5653).closeApplyBoostModal();
+            args(5685).closeApplyBoostModal();
             c4 = 3;
             return { value: "IconComponent", done: null };
           }
@@ -156,8 +156,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           } else {
             let newAnalyticsLoadId = tmp2;
             newAnalyticsLoadId = undefined;
-            newAnalyticsLoadId = args(10961).getNewAnalyticsLoadId();
-            const obj7 = args(7649);
+            newAnalyticsLoadId = args(10997).getNewAnalyticsLoadId();
+            const obj7 = args(7681);
             c3 = 1;
             c4 = 1;
             const obj4 = {
@@ -190,7 +190,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          args(5653).closeApplyBoostModal();
+          args(5685).closeApplyBoostModal();
           c4 = 3;
           return { value: "IconComponent", done: null };
         }

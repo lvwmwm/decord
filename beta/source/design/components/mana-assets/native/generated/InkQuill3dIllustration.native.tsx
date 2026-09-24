@@ -1,13 +1,13 @@
-// Module ID: 6446
-// Function ID: 6447
+// Module ID: 6478
+// Function ID: 6479
 // Name: InkQuill3dIllustration
-// Dependencies: [21, 558, 568, 6447, 5802, 2]
+// Dependencies: [21, 558, 568, 6479, 5834, 2]
 
-// Module 6446 (InkQuill3dIllustration)
+// Module 6478 (InkQuill3dIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6447 from "module_6447" /* 6447 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6479 from "module_6479" /* 6479 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const InkQuill3dIllustration = ReactCompilerGating.isReactCompilerEnabled
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6447 };
+    const obj2 = { uri: _modDef6479 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const InkQuill3dIllustration = ReactCompilerGating.isReactCompilerEnabled
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6447 };
+  const obj2 = { uri: _modDef6479 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

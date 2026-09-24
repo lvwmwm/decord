@@ -1,17 +1,17 @@
-// Module ID: 17332
-// Function ID: 17333
+// Module ID: 17342
+// Function ID: 17343
 // Name: SearchNavigatorPreviewHeader
-// Dependencies: [19, 17, 21, 4758, 558, 568, 13574, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 13610, 2]
 
-// Module 17332 (SearchNavigatorPreviewHeader)
+// Module 17342 (SearchNavigatorPreviewHeader)
 import c from "c" /* 568 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 13574 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 13610 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ container: { flexShrink: 1, paddingRight: 12, flexDirection: "row", alignItems: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

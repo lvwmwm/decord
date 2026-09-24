@@ -1,22 +1,22 @@
-// Module ID: 10088
-// Function ID: 10089
+// Module ID: 10127
+// Function ID: 10128
 // Name: InstantInviteEmptyState
-// Dependencies: [19, 17, 10056, 21, 4758, 580, 558, 568, 504, 10057, 1119, 1181, 10089, 7180, 7624, 5341, 4754, 5188, 2]
+// Dependencies: [19, 17, 10095, 21, 4790, 580, 558, 568, 504, 10096, 1119, 1181, 10128, 7212, 7656, 5373, 4786, 5220, 2]
 
-// Module 10088 (InstantInviteEmptyState)
+// Module 10127 (InstantInviteEmptyState)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import FreeFormTextInputDefault from "FreeFormTextInput" /* 7180 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10057 */;
-import _modDef10089 from "module_10089" /* 10089 */;
+import FreeFormTextInputDefault from "FreeFormTextInput" /* 7212 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10096 */;
+import _modDef10128 from "module_10128" /* 10128 */;
 import noop from "module_19" /* 19 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 10056 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 10095 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: 16 }, emptyStateContainer: { padding: 0, marginBottom: 16 }, emptyStateArt: { marginBottom: 16 }, emptyStateTitle: { marginBottom: 4 }, linkContainer: { maxWidth: "100%", flexDirection: "row", marginBottom: 8, gap: 8 }, inviteInput: { flexShrink: 1 }, expireCaption: { marginBottom: 16 }, settingsButton: null };
 let size = { width: 48, height: 48, justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs };
 obj2.settingsButton = size;
@@ -119,7 +119,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const _Symbol2 = Symbol;
           if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp26 = closure_5(tmp(7624).SettingsIcon, {});
+            const tmp26 = closure_5(tmp(7656).SettingsIcon, {});
             cResult[15] = tmp26;
             let tmp24 = tmp26;
           } else {
@@ -157,7 +157,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   }
                   if (cResult[29] !== onShare) {
                     const obj2 = { text: tmp39, onPress: onShare };
-                    const tmp43 = closure_5(tmp(5188).Button, obj2);
+                    const tmp43 = closure_5(tmp(5220).Button, obj2);
                     cResult[29] = onShare;
                     cResult[30] = tmp43;
                     let tmp41 = tmp43;
@@ -189,7 +189,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   tmp44 = tmp47;
                 }
                 const obj4 = { style: tmp4.expireCaption, variant: "text-xs/medium", color: "text-muted", children: tmp34 };
-                const tmp38 = closure_5(tmp(4754).Text, obj4);
+                const tmp38 = closure_5(tmp(4786).Text, obj4);
                 cResult[25] = tmp4.expireCaption;
                 cResult[26] = tmp34;
                 cResult[27] = tmp38;
@@ -207,7 +207,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp30 = tmp33;
           }
           const obj6 = { accessibilityLabel: tmp22, accessibilityRole: "button", onPress: onPressSettings, style: tmp4.settingsButton, children: tmp24 };
-          const tmp29 = closure_5(tmp(5341).PressableOpacity, obj6);
+          const tmp29 = closure_5(tmp(5373).PressableOpacity, obj6);
           cResult[16] = onPressSettings;
           cResult[17] = tmp4.settingsButton;
           cResult[18] = tmp29;
@@ -224,7 +224,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const tmpResult = stateFromStores(504);
-  const tmp15 = closure_5(stateFromStores(1181).RefreshEmptyState, { containerStyle: emptyStateContainer, imageStyle: emptyStateArt, titleStyle: emptyStateTitle, source: _modDef10089, title: tmp10, body: tmp11 });
+  const tmp15 = closure_5(stateFromStores(1181).RefreshEmptyState, { containerStyle: emptyStateContainer, imageStyle: emptyStateArt, titleStyle: emptyStateTitle, source: _modDef10128, title: tmp10, body: tmp11 });
   cResult[6] = tmp4.emptyStateArt;
   cResult[7] = tmp4.emptyStateContainer;
   cResult[8] = tmp4.emptyStateTitle;
@@ -238,7 +238,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items = [CreateInviteModalStore];
   stateFromStores = stateFromStores(504).useStateFromStores(items, () => inviteSettings.getInviteSettings());
   const obj2 = { style: tmp.container, children: null };
-  const obj3 = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: _modDef10089, title: null, body: null };
+  const obj3 = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: _modDef10128, title: null, body: null };
   const intl = stateFromStores(1119).intl;
   obj3.title = intl.string(stateFromStores(1119).t.tQc0l8);
   const intl2 = stateFromStores(1119).intl;
@@ -259,8 +259,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj6.accessibilityLabel = intl3.string(stateFromStores(1119).t["3D5yo/"]);
   obj6.onPress = onPressSettings;
   obj6.style = tmp.settingsButton;
-  obj6.children = closure_5(stateFromStores(7624).SettingsIcon, {});
-  items2[1] = closure_5(stateFromStores(5341).PressableOpacity, obj6);
+  obj6.children = closure_5(stateFromStores(7656).SettingsIcon, {});
+  items2[1] = closure_5(stateFromStores(5373).PressableOpacity, obj6);
   obj4.children = items2;
   items1[1] = closure_6(View, obj4);
   const obj7 = { style: tmp.expireCaption, variant: "text-xs/medium", color: "text-muted", children: null };
@@ -271,11 +271,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl5 = tmp2(1119).intl;
     obj8.text = intl5.string(tmp2(1119).t.Ej3B3Y);
     obj8.onPress = onShare;
-    items1[3] = tmp7(tmp2(5188).Button, obj8);
+    items1[3] = tmp7(tmp2(5220).Button, obj8);
     obj2.children = items1;
     return tmp5(tmp6, obj2);
   } else {
-    const maxAgeOptionByValue = tmp8(10057).getMaxAgeOptionByValue(stateFromStores.maxAge);
+    const maxAgeOptionByValue = tmp8(10096).getMaxAgeOptionByValue(stateFromStores.maxAge);
     let str2 = "";
     let str3 = "";
     if (null != maxAgeOptionByValue) {
@@ -285,7 +285,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       str3 = descriptiveLabel;
     }
-    const getMaxUsesOptions = tmp8(10057).getMaxUsesOptions;
+    const getMaxUsesOptions = tmp8(10096).getMaxUsesOptions;
     const found = getMaxUsesOptions.find((value) => value.value === stateFromStores.maxUses);
     if (null != found) {
       str2 = found.descriptiveLabel;
@@ -298,6 +298,6 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl4 = tmp2(1119).intl;
     const obj9 = { maxAge: str3, maxUses: str2 };
     intl4.format(dqPWMN, obj9);
-    const tmp8Result = tmp8(10057);
+    const tmp8Result = tmp8(10096);
   }
 });

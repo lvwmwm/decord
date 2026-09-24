@@ -1,18 +1,18 @@
-// Module ID: 8025
-// Function ID: 8026
+// Module ID: 8057
+// Function ID: 8058
 // Name: ApplicationCommandActionCreators
-// Dependencies: [502, 8026, 1078, 38, 7770, 577, 1275, 11, 1982, 2]
+// Dependencies: [502, 8058, 1078, 38, 7802, 577, 1275, 11, 1982, 2]
 // Exports: fetchCommand, fetchCommands, fetchCommandsForApplication, performAutocomplete, setActiveCommand, setAppLauncherActiveCommand, setPreferredCommandId, updateApplicationGuildCommandPermissions, updateChannelState, updateOptionStates, updateOptionValidationStates, updateRegistry
 
-// Module 8025 (ApplicationCommandActionCreators)
+// Module 8057 (ApplicationCommandActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import HTTPUtils from "HTTPUtils" /* 1275 */;
 import Server from "Server" /* 1982 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7770 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7802 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8026 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8058 */;
 
 require = fn;
 const Endpoints = fn(1078).Endpoints;

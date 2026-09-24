@@ -1,117 +1,283 @@
 // Module ID: 5130
 // Function ID: 5131
-// Dependencies: [109, 19, 17, 21, 5131, 5132, 5133]
-// Exports: default
+// Dependencies: []
+// Exports: loadStripe
 
 // Module 5130
-import _mod5131 from "module_5131" /* 5131 */;
-import _modDef5132 from "module_5132" /* 5132 */;
-import _mod5133 from "module_5133" /* 5133 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import noop from "module_19" /* 19 */;
-
-require = fn;
-let closure_3 = ["android", "ios"];
-let closure_4 = ["onDidAppear", "onDidDisappear", "onWillAppear", "onWillDisappear", "children", "style"];
-let closure_5 = ["tabBarBackgroundColor", "tabBarItemRippleColor", "normal", "selected", "focused", "disabled", "tabBarItemActiveIndicatorColor", "tabBarItemTitleFontWeight", "tabBarItemBadgeBackgroundColor", "tabBarItemBadgeTextColor"];
-let closure_6 = ["tabBarItemTitleFontColor", "tabBarItemIconColor"];
-get_ActivityIndicator = fn(17);
-({ StyleSheet, processColor: closure_9 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-const fillParent = StyleSheet.create({ fillParent: { position: "absolute", flex: 1, width: "100%", height: "100%" } });
-
-export default function TabsScreen(arg0) {
-  ({ android, ios } = arg0);
-  const tmp2 = _objectWithoutProperties(arg0, closure_3);
-  const ref = noop.useRef(null);
-  ({ onDidAppear, onDidDisappear, onWillAppear, onWillDisappear, children, style } = tmp2);
-  const tmp4 = _objectWithoutProperties(tmp2, closure_4);
-  let icon;
-  if (android != null) {
-    icon = android.icon;
+let fn = function _typeof(arg0) {
+  if (typeof Symbol === "function") {
+    let _Symbol = Symbol;
+    if (typeof Symbol.iterator === "symbol") {
+      fn = (arg0) => typeof arg0;
+    }
+    return fn(arg0);
   }
-  let selectedIcon;
-  if (android != null) {
-    selectedIcon = android.selectedIcon;
-  }
-  const obj = _mod5131;
-  const obj2 = { componentNodeRef: ref, onDidAppear, onDidDisappear, onWillAppear, onWillDisappear, screenKey: tmp4.screenKey };
-  const result = _mod5133.parseAndroidIconToNativeProps(icon);
-  const tmp5Result = _mod5133;
-  const result1 = _mod5133.parseAndroidIconToNativeProps(selectedIcon);
-  const obj4 = { collapsable: false, style: null, ref };
-  const items = [style, fillParent.fillParent];
-  obj4.style = items;
-  const obj3 = { imageIconResource: result.imageIconResource, drawableIconResourceName: result.drawableIconResourceName, selectedImageIconResource: result1.imageIconResource, selectedDrawableIconResourceName: result1.drawableIconResourceName };
-  const tmp11 = jsx;
-  const tmp5Result2 = _mod5133;
-  const merged = Object.assign(obj.useTabsScreen(obj2).lifecycleCallbacks);
-  const merged1 = Object.assign(obj3);
-  const merged2 = Object.assign(tmp4);
-  let standardAppearance;
-  if (android != null) {
-    standardAppearance = android.standardAppearance;
-  }
-  let tmp17;
-  if (standardAppearance) {
-    ({ normal, selected, focused, disabled, tabBarItemTitleFontWeight } = standardAppearance);
-    const obj5 = {};
-    ({ tabBarBackgroundColor, tabBarItemRippleColor, tabBarItemActiveIndicatorColor, tabBarItemBadgeBackgroundColor, tabBarItemBadgeTextColor } = standardAppearance);
-    const merged3 = Object.assign(tmp(standardAppearance, closure_5));
-    obj5.tabBarBackgroundColor = options(tabBarBackgroundColor);
-    obj5.tabBarItemRippleColor = options(tabBarItemRippleColor);
-    let tmp22;
-    if (normal) {
-      const obj6 = {};
-      ({ tabBarItemTitleFontColor, tabBarItemIconColor } = normal);
-      const merged4 = Object.assign(tmp(normal, closure_6));
-      obj6.tabBarItemTitleFontColor = tmp21(tabBarItemTitleFontColor);
-      obj6.tabBarItemIconColor = tmp21(tabBarItemIconColor);
-      tmp22 = obj6;
+  fn = (arg0) => {
+    if (arg0) {
+      const _Symbol = Symbol;
+      if (typeof Symbol === "function") {
+        const _Symbol3 = Symbol;
+        if (arg0.constructor === Symbol) {
+          const _Symbol2 = Symbol;
+          let str = "symbol";
+        }
+        return str;
+      }
     }
-    obj5.normal = tmp22;
-    let tmp26;
-    if (selected) {
-      const obj7 = {};
-      ({ tabBarItemTitleFontColor: tabBarItemTitleFontColor2, tabBarItemIconColor: tabBarItemIconColor2 } = selected);
-      const merged5 = Object.assign(tmp(selected, closure_6));
-      obj7.tabBarItemTitleFontColor = tmp21(tabBarItemTitleFontColor2);
-      obj7.tabBarItemIconColor = tmp21(tabBarItemIconColor2);
-      tmp26 = obj7;
-    }
-    obj5.selected = tmp26;
-    let tmp30;
-    if (focused) {
-      const obj8 = {};
-      ({ tabBarItemTitleFontColor: tabBarItemTitleFontColor3, tabBarItemIconColor: tabBarItemIconColor3 } = focused);
-      const merged6 = Object.assign(tmp(focused, closure_6));
-      obj8.tabBarItemTitleFontColor = tmp21(tabBarItemTitleFontColor3);
-      obj8.tabBarItemIconColor = tmp21(tabBarItemIconColor3);
-      tmp30 = obj8;
-    }
-    obj5.focused = tmp30;
-    let tmp34;
-    if (disabled) {
-      const obj9 = {};
-      ({ tabBarItemTitleFontColor: tabBarItemTitleFontColor4, tabBarItemIconColor: tabBarItemIconColor4 } = disabled);
-      const merged7 = Object.assign(tmp(disabled, closure_6));
-      obj9.tabBarItemTitleFontColor = tmp21(tabBarItemTitleFontColor4);
-      obj9.tabBarItemIconColor = tmp21(tabBarItemIconColor4);
-      tmp34 = obj9;
-    }
-    obj5.disabled = tmp34;
-    obj5.tabBarItemActiveIndicatorColor = options(tabBarItemActiveIndicatorColor);
-    let StringResult;
-    if (undefined !== tabBarItemTitleFontWeight) {
-      const _String = String;
-      StringResult = String(tabBarItemTitleFontWeight);
-    }
-    obj5.tabBarItemTitleFontWeight = StringResult;
-    obj5.tabBarItemBadgeBackgroundColor = options(tabBarItemBadgeBackgroundColor);
-    obj5.tabBarItemBadgeTextColor = options(tabBarItemBadgeTextColor);
-    tmp17 = obj5;
-  }
-  obj4.standardAppearance = tmp17;
-  obj4.children = children;
-  return tmp11(_modDef5132, obj4);
+    str = typeof arg0;
+  };
 };
+const basil = "basil";
+let c3 = "https://js.stripe.com";
+let combined = "".concat("https://js.stripe.com", "/");
+let closure_4 = combined.concat("basil", "/stripe.js");
+const re5 = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/;
+const re6 = /^https:\/\/js\.stripe\.com\/(v3|[a-z]+)\/stripe\.js(\?.*)?$/;
+let c7 = "loadStripe.setLoadParameters was called but an existing Stripe.js script already exists in the document; existing script parameters will be used";
+function isStripeJSURL(arg0) {
+
+}
+function injectScript(array) {
+  let str = "";
+  if (array) {
+    str = "";
+    if (!array.advancedFraudSignals) {
+      str = "?advancedFraudSignals=false";
+    }
+  }
+  const element = <script />;
+  const combined = "".concat(closure_4);
+  element.src = combined.concat(str);
+  let body = document.head;
+  if (!body) {
+    const _document = document;
+    body = document.body;
+  }
+  if (body) {
+    body.appendChild(element);
+    return element;
+  } else {
+    const _Error = Error;
+    const error = new Error("Expected document.body not to be null. Stripe.js requires a <body> element.");
+    throw error;
+  }
+}
+let c10 = null;
+let closure_11 = null;
+let closure_12 = null;
+function loadScript(arg0) {
+
+}
+function validateLoadParams(arg0) {
+
+}
+let c15 = false;
+function loadStripe() {
+  const length = arguments.length;
+  const array = new Array(length);
+  for (let num = 0; num < length; num = num + 1) {
+    array[num] = arguments[num];
+  }
+  c15 = true;
+  closure_1 = Date.now();
+  if (typeof loadScript === "function") {
+    closure_129_0 = closure_1;
+    let catchPromise = c10;
+    if (null === c10) {
+      const promise = new Promise((fn, arg1) => {
+        if (typeof window !== "undefined") {
+          const _document = document;
+          if (typeof document !== "undefined") {
+            let _window = window;
+            if (tmp4) {
+              const _console = console;
+              console.warn(c7);
+            }
+            const _window2 = window;
+            if (window.Stripe) {
+              const _window3 = window;
+              fn(window.Stripe);
+            } else {
+              try {
+                const tmp8 = (function findScript() {
+                  const elements = document.querySelectorAll("script[src^=\"".concat(closure_1_3, "\"]"));
+                  let num = 0;
+                  if (0 < elements.length) {
+                    const src = tmp.src;
+                    while (typeof closure_1_8 === "function") {
+                      let isMatch = regex.test(src);
+                      if (!isMatch) {
+                        isMatch = regex2.test(src);
+                      }
+                      if (isMatch) {
+                        return tmp;
+                      } else {
+                        num = num + 1;
+                      }
+                    }
+                    throw new TypeError("Trying to call a non-function");
+                  }
+                  return null;
+                })();
+                let obj = tmp8;
+                if (tmp8) {
+                  if (array) {
+                    const _console2 = console;
+                    console.warn(c7);
+                  }
+                  closure_12 = (function onLoad(fn, arg1) {
+                    closure_0 = fn;
+                    closure_1 = arg1;
+                    return () => {
+                      if (window.Stripe) {
+                        const _window = window;
+                        closure_0(window.Stripe);
+                      } else {
+                        const _Error = Error;
+                        const error = new Error("Stripe.js not available");
+                        closure_1(error);
+                      }
+                    };
+                  })(fn, arg1);
+                  closure_11 = (function onError(arg0) {
+                    closure_0 = arg0;
+                    return (cause) => {
+                      const error = new Error("Failed to load Stripe.js", { cause });
+                      closure_0(error);
+                    };
+                  })(arg1);
+                  const listener = obj.addEventListener("load", closure_12);
+                  const listener1 = obj.addEventListener("error", closure_11);
+                }
+                if (obj) {
+                  if (obj) {
+                    if (null !== closure_12) {
+                      if (null !== closure_11) {
+                        const removed = obj.removeEventListener("load", closure_12);
+                        const removed1 = obj.removeEventListener("error", closure_11);
+                        const parentNode = obj.parentNode;
+                        let tmp17 = null === parentNode;
+                        if (!tmp17) {
+                          tmp17 = undefined === obj2;
+                        }
+                        if (!tmp17) {
+                          obj2.removeChild(obj);
+                        }
+                        obj = injectScript(array);
+                      }
+                    }
+                  }
+                } else {
+                  obj = injectScript(array);
+                }
+              } catch (tmp30) {
+                tmp2(tmp30);
+              }
+            }
+            tmp4 = window.Stripe && array;
+          }
+        }
+        fn(null);
+      });
+      c10 = promise;
+      catchPromise = promise.catch((error) => {
+        c10 = null;
+        return Promise.reject(error);
+      });
+    }
+    return catchPromise.then((version) => {
+      let tmp3 = null;
+      if (null !== version) {
+        let match = tmp[0].match(/^pk_test/);
+        version = version.version;
+        let str = "v3";
+        if (3 !== version) {
+          str = version;
+        }
+        if (match) {
+          match = str !== tmp4;
+        }
+        if (match) {
+          const _console = console;
+          const concat = "Stripe.js@".concat;
+          const combined = "Stripe.js@".concat(str, " was loaded on the page, but @stripe/stripe-js@");
+          const combined1 = combined.concat("7.3.1", " expected Stripe.js@");
+          console.warn(combined1.concat(tmp4, ". This may result in unexpected behavior. For more information, see https://docs.stripe.com/sdks/stripejs-versioning"));
+        }
+        const applyResult = version.apply(undefined, tmp);
+        let _registerWrapper = applyResult;
+        if (applyResult) {
+          _registerWrapper = applyResult._registerWrapper;
+        }
+        tmp3 = applyResult;
+        if (_registerWrapper) {
+          const obj = { name: "stripe-js", version: "7.3.1", startTime: tmp2 };
+          applyResult._registerWrapper(obj);
+          tmp3 = applyResult;
+        }
+      }
+      return tmp3;
+    });
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+}
+loadStripe.setLoadParameters = (advancedFraudSignals) => {
+  if (c15) {
+    if (closure_1) {
+      if (typeof validateLoadParams === "function") {
+        const concat = "invalid load parameters; expected object of shape\n\n    {advancedFraudSignals: boolean}\n\nbut received\n\n    ".concat;
+        const _JSON = JSON;
+        const combined = "invalid load parameters; expected object of shape\n\n    {advancedFraudSignals: boolean}\n\nbut received\n\n    ".concat(JSON.stringify(advancedFraudSignals), "\n");
+        if (null !== advancedFraudSignals) {
+          if ("object" === advancedFraudSignals(advancedFraudSignals)) {
+            const _Object3 = Object;
+            if (1 === Object.keys(advancedFraudSignals).length) {
+              if (typeof advancedFraudSignals.advancedFraudSignals === "boolean") {
+                const _Object = Object;
+                const keys = Object.keys(advancedFraudSignals);
+              }
+            }
+            const _Error = Error;
+            const error = new Error(combined);
+            throw error;
+          }
+        }
+        const _Error5 = Error;
+        const error1 = new Error(combined);
+        throw error1;
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    }
+  }
+  if (c15) {
+    const _Error4 = Error;
+    const error2 = new Error("You cannot change load parameters after calling loadStripe");
+    throw error2;
+  } else if (typeof validateLoadParams === "function") {
+    const concat2 = "invalid load parameters; expected object of shape\n\n    {advancedFraudSignals: boolean}\n\nbut received\n\n    ".concat;
+    const _JSON2 = JSON;
+    const combined1 = "invalid load parameters; expected object of shape\n\n    {advancedFraudSignals: boolean}\n\nbut received\n\n    ".concat(JSON.stringify(advancedFraudSignals), "\n");
+    if (null !== advancedFraudSignals) {
+      if ("object" === advancedFraudSignals(advancedFraudSignals)) {
+        const _Object2 = Object;
+        if (1 === Object.keys(advancedFraudSignals).length) {
+          if (typeof advancedFraudSignals.advancedFraudSignals === "boolean") {
+            closure_1 = advancedFraudSignals;
+          }
+        }
+        const _Error2 = Error;
+        const error3 = new Error(combined1);
+        throw error3;
+      }
+    }
+    const _Error3 = Error;
+    const error4 = new Error(combined1);
+    throw error4;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+};
+
+export { loadStripe };

@@ -1,11 +1,11 @@
-// Module ID: 5683
-// Function ID: 5684
+// Module ID: 5715
+// Function ID: 5716
 // Name: RoleSubscriptionEmojiUtils
-// Dependencies: [5679, 2]
+// Dependencies: [5711, 2]
 // Exports: isPurchasableRoleSubscriptionEmoji, isRoleSubscriptionEmoji, isUnusableRoleSubscriptionEmoji
 
-// Module 5683 (RoleSubscriptionEmojiUtils)
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5679 */;
+// Module 5715 (RoleSubscriptionEmojiUtils)
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5711 */;
 
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/RoleSubscriptionEmojiUtils.tsx");

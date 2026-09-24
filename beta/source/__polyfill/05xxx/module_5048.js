@@ -1,34 +1,36 @@
 // Module ID: 5048
 // Function ID: 5049
-// Dependencies: [5049, 1286, 5050, 5051]
+// Dependencies: [1319, 1449]
 
 // Module 5048
-import _mod5049 from "module_5049" /* 5049 */;
-import _mod5050 from "module_5050" /* 5050 */;
-import _mod5051 from "module_5051" /* 5051 */;
+import callBoundIntrinsic from "callBoundIntrinsic" /* 1319 */;
+import _mod1449 from "module_1449" /* 1449 */;
 
-const _mod1286 = tmp(1286);
-if (_mod5049) {
-  function setProto(arg0, arg1) {
-    if (_mod5049(arg0, arg1)) {
-      return arg0;
+let closure_0 = callBoundIntrinsic("String.prototype.valueOf");
+let closure_1 = callBoundIntrinsic("Object.prototype.toString");
+let closure_2 = _mod1449();
+
+export default function isString(str) {
+  let tmp = typeof str === "string";
+  if (typeof str !== "string") {
+    let tmp2 = !str;
+    if (str) {
+      tmp2 = typeof str !== "object";
+    }
+    if (tmp2) {
+      tmp = !tmp2;
+    } else if (closure_2) {
+      let tmp5 = (function tryStringObject(arg0) {
+        try {
+          closure_1_0(arg0);
+          return true;
+        } catch (err) {
+          return false;
+        }
+      })(str);
     } else {
-      const tmp5 = new _mod1286("Reflect.setPrototypeOf: failed to set [[Prototype]]");
-      throw tmp5;
+      tmp5 = "[object String]" === closure_1(str);
     }
   }
-} else {
-  setProto = _mod5050;
-  if (!setProto) {
-    let setProto2 = null;
-    if (_mod5051) {
-      setProto2 = function setProto(arg0, arg1) {
-        _mod5051(arg0, arg1);
-        return arg0;
-      };
-    }
-    setProto = setProto2;
-  }
-}
-
-export default setProto;
+  return tmp;
+};

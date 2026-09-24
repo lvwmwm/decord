@@ -1,10 +1,10 @@
-// Module ID: 17535
-// Function ID: 17536
+// Module ID: 17545
+// Function ID: 17546
 // Name: VoicePanelChannelOptInNotice
-// Dependencies: [19, 21, 558, 568, 7360, 1119, 5828, 14115, 5822, 5804, 2]
+// Dependencies: [19, 21, 558, 568, 7392, 1119, 5860, 14152, 5854, 5836, 2]
 
-// Module 17535 (VoicePanelChannelOptInNotice)
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7360 */;
+// Module 17545 (VoicePanelChannelOptInNotice)
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7392 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -28,8 +28,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((analyt
         const stringResult = intl.string(tmp(1119).t["9mysCh"]);
         const intl2 = tmp(1119).intl;
         const stringResult1 = intl2.string(tmp(1119).t.PDUCIN);
-        const obj2 = { IconComponent: tmp(14115).ChannelListMagnifyingGlassIcon };
-        const tmp12 = jsx(tmp(5828).TableRowIcon, { IconComponent: tmp(14115).ChannelListMagnifyingGlassIcon });
+        const obj2 = { IconComponent: tmp(14152).ChannelListMagnifyingGlassIcon };
+        const tmp12 = jsx(tmp(5860).TableRowIcon, { IconComponent: tmp(14152).ChannelListMagnifyingGlassIcon });
         cResult[4] = stringResult;
         cResult[5] = stringResult1;
         cResult[6] = tmp12;
@@ -43,7 +43,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((analyt
       }
       if (cResult[7] !== tmp4) {
         const obj3 = { label: tmp6, subLabel: tmp7, icon: tmp8, onPress: tmp4, start: true, end: true, arrow: true };
-        const tmp15 = jsx(tmp(5822).TableRow, { label: tmp6, subLabel: tmp7, icon: tmp8, onPress: tmp4, start: true, end: true, arrow: true });
+        const tmp15 = jsx(tmp(5854).TableRow, { label: tmp6, subLabel: tmp7, icon: tmp8, onPress: tmp4, start: true, end: true, arrow: true });
         cResult[7] = tmp4;
         cResult[8] = tmp15;
         let tmp13 = tmp15;
@@ -57,7 +57,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((analyt
         return tmp16;
       }
       const obj4 = { style, children: tmp13 };
-      const tmp19 = jsx(analyticsSection(5804), { style, children: tmp13 });
+      const tmp19 = jsx(analyticsSection(5836), { style, children: tmp13 });
       cResult[9] = style;
       cResult[10] = tmp13;
       cResult[11] = tmp19;
@@ -85,9 +85,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((analyt
   obj2.label = intl.string(channel(1119).t["9mysCh"]);
   const intl2 = channel(1119).intl;
   obj2.subLabel = intl2.string(channel(1119).t.PDUCIN);
-  const tmp2 = analyticsSection(5804);
-  obj2.icon = jsx(channel(5828).TableRowIcon, { IconComponent: channel(14115).ChannelListMagnifyingGlassIcon });
+  const tmp2 = analyticsSection(5836);
+  obj2.icon = jsx(channel(5860).TableRowIcon, { IconComponent: channel(14152).ChannelListMagnifyingGlassIcon });
   obj2.onPress = callback;
-  obj.children = jsx(channel(5822).TableRow, { label: null, subLabel: null, icon: null, onPress: null, start: true, end: true, arrow: true });
+  obj.children = jsx(channel(5854).TableRow, { label: null, subLabel: null, icon: null, onPress: null, start: true, end: true, arrow: true });
   return <tmp2 style={arg0.style}>{null}</tmp2>;
 }));

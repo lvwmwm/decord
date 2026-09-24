@@ -1,13 +1,13 @@
-// Module ID: 11185
-// Function ID: 11186
+// Module ID: 11221
+// Function ID: 11222
 // Name: ApplicationStreamActivityStatus
-// Dependencies: [19, 21, 558, 568, 1119, 11186, 11187, 11189, 2]
+// Dependencies: [19, 21, 558, 568, 1119, 11222, 11223, 11225, 2]
 
-// Module 11185 (ApplicationStreamActivityStatus)
+// Module 11221 (ApplicationStreamActivityStatus)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import ActivityStatusIconDefault from "ActivityStatusIcon" /* 11186 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 11189 */;
+import ActivityStatusIconDefault from "ActivityStatusIcon" /* 11222 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 11225 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -90,7 +90,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     let tmp13 = !tmp4;
     if (!tmp4) {
-      const obj5 = { icon: tmp(11187).TvIcon, style: iconStyle };
+      const obj5 = { icon: tmp(11223).TvIcon, style: iconStyle };
       tmp13 = React3(ActivityStatusIconDefault, obj5);
     }
     cResult[2] = tmp4;
@@ -137,7 +137,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let tmp12 = !hideIcon;
   if (!hideIcon) {
-    const obj2 = { icon: tmp7(11187).TvIcon, style: iconStyle };
+    const obj2 = { icon: tmp7(11223).TvIcon, style: iconStyle };
     tmp12 = React3(ActivityStatusIconDefault, obj2);
   }
   const children = [tmp12, ];

@@ -1,12 +1,12 @@
-// Module ID: 10161
-// Function ID: 10162
+// Module ID: 10200
+// Function ID: 10201
 // Name: ChannelCallNavigatorIcon
-// Dependencies: [19, 17, 9636, 1078, 21, 4758, 580, 558, 568, 4610, 5176, 1181, 5341, 2]
+// Dependencies: [19, 17, 9668, 1078, 21, 4790, 580, 558, 568, 4642, 5208, 1181, 5373, 2]
 
-// Module 10161 (ChannelCallNavigatorIcon)
+// Module 10200 (ChannelCallNavigatorIcon)
 import nativeDefault from "native" /* 580 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5176 */;
-import Pressables from "Pressables" /* 5341 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5208 */;
+import Pressables from "Pressables" /* 5373 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -14,12 +14,12 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, StyleSheet: closure_4 } = get_ActivityIndicator);
-const resetFocusTimer = fn(9636).resetFocusTimer;
+const resetFocusTimer = fn(9668).resetFocusTimer;
 const Constants = fn(1078);
 ({ ThemeTypes: metroRequire, Fonts } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { pressableContainer: { marginHorizontal: 4 }, pressable: { borderRadius: nativeDefault.radii.lg }, container: null, text: null, disabled: null, iconColor: null };
 let size = { flexDirection: "row", height: 32, width: 32, borderRadius: nativeDefault.radii.lg, alignItems: "center", justifyContent: "center", overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.container = size;
@@ -109,7 +109,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
                       const obj3 = { accessibilityRole: "button", accessibilityLabel, disabled, style: tmp6.pressable, onPress: tmp7, children: null };
                       const items = [tmp24, children];
                       obj3.children = items;
-                      const tmp30 = closure_8(tmp(5341).PressableOpacity, obj3);
+                      const tmp30 = closure_8(tmp(5373).PressableOpacity, obj3);
                       cResult[21] = accessibilityLabel;
                       cResult[22] = children;
                       cResult[23] = disabled;
@@ -172,7 +172,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
       cResult[7] = theme;
       cResult[8] = tmp10;
       tmp9 = tmp10;
-      tmpResult = tmp(4610);
+      tmpResult = tmp(4642);
     }
   }
   const items2 = [tmp6.container, containerStyle, disabled2];

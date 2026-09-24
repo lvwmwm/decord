@@ -1,17 +1,17 @@
-// Module ID: 5189
-// Function ID: 5190
+// Module ID: 5221
+// Function ID: 5222
 // Name: BaseTextButton
-// Dependencies: [32, 19, 17, 21, 4758, 580, 4497, 5190, 558, 568, 5187, 5191, 5193, 1368, 5194, 4754, 4481, 4726, 4464, 5196, 5205, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 4529, 5222, 558, 568, 5219, 5223, 5225, 1368, 5226, 4786, 4513, 4758, 4496, 5228, 5237, 2]
 
-// Module 5189 (BaseTextButton)
+// Module 5221 (BaseTextButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4497 */;
-import HapticUtils from "HapticUtils" /* 4726 */;
-import spring from "spring" /* 5187 */;
-import IconDefault from "Icon" /* 5190 */;
-import springPresets from "springPresets" /* 5191 */;
-import ButtonHooks from "ButtonHooks" /* 5194 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4529 */;
+import HapticUtils from "HapticUtils" /* 4758 */;
+import spring from "spring" /* 5219 */;
+import IconDefault from "Icon" /* 5222 */;
+import springPresets from "springPresets" /* 5223 */;
+import ButtonHooks from "ButtonHooks" /* 5226 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -22,7 +22,7 @@ get_ActivityIndicator = fn(17);
 ({ Text: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let closure_9 = createStyles.createStyles((arg0, sm) => {
   const obj = { grow: { flexGrow: 1, alignSelf: "stretch" }, shrink: { flexShrink: 1 }, buttonText: { flexShrink: 1, flexGrow: 0 }, androidLineHeight: null, icon: null, iconLeft: null, iconRight: null, expressiveButtonContainer: null };
   if (typeof getTextPlatformLineHeight === "function") {
@@ -45,9 +45,9 @@ let closure_9 = createStyles.createStyles((arg0, sm) => {
     throw new TypeError("Trying to call a non-function");
   }
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let closure_10 = createStyles.createStyles({ container: { flexDirection: "row", alignItems: "center", position: "relative" }, textCollapsed: { position: "absolute", left: 0 } });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj = { entityWrapper: { borderWidth: 1, borderRadius: nativeDefault.radii.round, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden" } };
 let closure_11 = createStyles.createStyles(obj);
 const Icon = ReanimatedRexport.createAnimatedComponent(IconDefault);
@@ -220,7 +220,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((containerWidth
   fn.__initData = __initData6;
   return ReanimatedRexport2.useAnimatedStyle(fn);
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let closure_23 = createStyles.createStyles((arg0, marginLeft) => {
   if (0 === marginLeft) {
     const obj2 = { offset: {} };
@@ -241,15 +241,15 @@ let closure_23 = createStyles.createStyles((arg0, marginLeft) => {
   }
 });
 let obj6 = { sm: null, md: null, lg: null };
-const LARGE_BUTTON_HEIGHT = fn(5193).LARGE_BUTTON_HEIGHT;
-const bound = Math.max((fn(5193).MINIMUM_HIT_AREA - fn(5193).SMALL_BUTTON_HEIGHT) / 2, 0);
+const LARGE_BUTTON_HEIGHT = fn(5225).LARGE_BUTTON_HEIGHT;
+const bound = Math.max((fn(5225).MINIMUM_HIT_AREA - fn(5225).SMALL_BUTTON_HEIGHT) / 2, 0);
 const rect = { top: bound, left: "Array", right: "toCharArray$esjava$1", bottom: bound };
 obj6.sm = rect;
-const LARGE_BUTTON_HEIGHT2 = fn(5193).LARGE_BUTTON_HEIGHT;
-const bound1 = Math.max((fn(5193).MINIMUM_HIT_AREA - fn(5193).MEDIUM_BUTTON_HEIGHT) / 2, 0);
+const LARGE_BUTTON_HEIGHT2 = fn(5225).LARGE_BUTTON_HEIGHT;
+const bound1 = Math.max((fn(5225).MINIMUM_HIT_AREA - fn(5225).MEDIUM_BUTTON_HEIGHT) / 2, 0);
 const rect1 = { top: bound1, left: "Array", right: "toCharArray$esjava$1", bottom: bound1 };
 obj6.md = rect1;
-const bound2 = Math.max((fn(5193).MINIMUM_HIT_AREA - fn(5193).LARGE_BUTTON_HEIGHT) / 2, 0);
+const bound2 = Math.max((fn(5225).MINIMUM_HIT_AREA - fn(5225).LARGE_BUTTON_HEIGHT) / 2, 0);
 const rect2 = { top: bound2, left: "Array", right: "toCharArray$esjava$1", bottom: bound2 };
 obj6.lg = rect2;
 function getTextPlatformLineHeight(arg0, arg1) {

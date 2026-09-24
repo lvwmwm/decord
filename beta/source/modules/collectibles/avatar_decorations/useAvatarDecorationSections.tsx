@@ -1,14 +1,14 @@
-// Module ID: 13475
-// Function ID: 13476
+// Module ID: 13511
+// Function ID: 13512
 // Name: useAvatarDecorationSections
-// Dependencies: [32, 19, 7789, 7804, 558, 568, 565, 7801, 1119, 2]
+// Dependencies: [32, 19, 7821, 7836, 558, 568, 565, 7833, 1119, 2]
 
-// Module 13475 (useAvatarDecorationSections)
+// Module 13511 (useAvatarDecorationSections)
 import util from "util" /* 1119 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7801 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7833 */;
 import _slicedToArray from "module_32" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7789 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7804 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7821 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7836 */;
 
 require = fn;
 const useMemo = fn(19).useMemo;
@@ -130,7 +130,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   const tmp11 = _slicedToArray(stateFromStores(565).useStateFromStoresArray(tmp8, tmp9), 2);
-  let avatarDecorations = stateFromStores(7801).getAvatarDecorations(stateFromStores, tmp12);
+  let avatarDecorations = stateFromStores(7833).getAvatarDecorations(stateFromStores, tmp12);
   if (cResult[10] === tmp13) {
     if (cResult[11] === stateFromStores) {
       let tmp17 = cResult[12];

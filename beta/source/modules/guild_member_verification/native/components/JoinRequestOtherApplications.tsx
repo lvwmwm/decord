@@ -1,15 +1,15 @@
-// Module ID: 16934
-// Function ID: 16935
+// Module ID: 16944
+// Function ID: 16945
 // Name: JoinRequestOtherApplications
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4583, 4717, 6851, 16935, 1119, 4754, 16931, 4442, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4615, 4749, 6883, 16945, 1119, 4786, 16941, 4474, 2]
 
-// Module 16934 (JoinRequestOtherApplications)
+// Module 16944 (JoinRequestOtherApplications)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import DateUtils from "DateUtils" /* 4442 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4583 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16931 */;
+import DateUtils from "DateUtils" /* 4474 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4615 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16941 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { label: { marginHorizontal: 16, marginBottom: 8 }, container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginHorizontal: 16, marginBottom: 12, borderRadius: nativeDefault.radii.md }, row: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", padding: 16 }, divider: null };
 let size = { width: "100%", height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 obj.divider = size;
@@ -32,18 +32,18 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-      const tmp14 = timestampProducer(tmp(4717).CircleCheckIcon, obj2);
+      const tmp14 = timestampProducer(tmp(4749).CircleCheckIcon, obj2);
       cResult[0] = tmp14;
       let first = tmp14;
     } else {
       first = cResult[0];
     }
     return first;
-  } else if (tmp(4583).GuildJoinRequestApplicationStatuses.REJECTED === status) {
+  } else if (tmp(4615).GuildJoinRequestApplicationStatuses.REJECTED === status) {
     const _Symbol = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-      const tmp9 = timestampProducer(tmp(6851).CircleXIcon, obj3);
+      const tmp9 = timestampProducer(tmp(6883).CircleXIcon, obj3);
       cResult[1] = tmp9;
       let tmp6 = tmp9;
     } else {
@@ -57,10 +57,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
   status = status.status;
   if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED === status) {
     const obj2 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-    return timestampProducer(tmp(4717).CircleCheckIcon, obj2);
-  } else if (tmp(4583).GuildJoinRequestApplicationStatuses.REJECTED === status) {
+    return timestampProducer(tmp(4749).CircleCheckIcon, obj2);
+  } else if (tmp(4615).GuildJoinRequestApplicationStatuses.REJECTED === status) {
     const obj = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-    return timestampProducer(tmp(6851).CircleXIcon, obj);
+    return timestampProducer(tmp(6883).CircleXIcon, obj);
   } else {
     return null;
   }
@@ -80,7 +80,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       if (cResult[2] === userId) {
         let tmp5 = cResult[3];
       }
-      row = tmp(16935).useOtherGuildJoinRequestsForUser(tmp5);
+      row = tmp(16945).useOtherGuildJoinRequestsForUser(tmp5);
       if (0 === row.length) {
         return null;
       } else {
@@ -95,7 +95,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         }
         if (cResult[5] !== tmp4.label) {
           let obj2 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp4.label, children: tmp6 };
-          const tmp10 = closure_6(tmp(4754).Text, obj2);
+          const tmp10 = closure_6(tmp(4786).Text, obj2);
           cResult[5] = tmp4.label;
           cResult[6] = tmp10;
           let tmp8 = tmp10;
@@ -174,7 +174,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         cResult[13] = fn;
         tmp13 = fn;
       }
-      const tmpResult = tmp(16935);
+      const tmpResult = tmp(16945);
     }
   }
   let obj5 = { guildId, userId, selectedJoinRequestId };
@@ -194,7 +194,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     let obj3 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.label, children: null };
     const intl = tmp2(1119).intl;
     obj3.children = intl.string(tmp2(1119).t["hxa+G3"]);
-    let items = [closure_6(tmp2(4754).Text, obj3), ];
+    let items = [closure_6(tmp2(4786).Text, obj3), ];
     let obj4 = {
       style: tmp.container,
       children: otherGuildJoinRequestsForUser.map((createdAt, index) => {

@@ -1,17 +1,17 @@
-// Module ID: 10040
-// Function ID: 10041
+// Module ID: 10079
+// Function ID: 10080
 // Name: useIsVideoMode
-// Dependencies: [4780, 2045, 1996, 2099, 4777, 558, 568, 504, 2]
+// Dependencies: [4812, 2045, 1996, 2099, 4809, 558, 568, 504, 2]
 // Exports: isVideoMode
 
-// Module 10040 (useIsVideoMode)
+// Module 10079 (useIsVideoMode)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4812 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import VoiceStateStore from "VoiceStateStore" /* 4777 */;
+import VoiceStateStore from "VoiceStateStore" /* 4809 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);

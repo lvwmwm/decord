@@ -1,15 +1,15 @@
-// Module ID: 12664
-// Function ID: 12665
+// Module ID: 12700
+// Function ID: 12701
 // Name: GuildPowerupsNotificationsDCF
-// Dependencies: [558, 568, 2031, 7632, 12658, 12665, 2]
+// Dependencies: [558, 568, 2031, 7664, 12694, 12701, 2]
 // Exports: useExpiringPowerupCoachmarkDCF, useGameServerPricingCoachmarkDCF, useNewGamesCoachmarkDC, useNewPerkAvailableCoachmarkDCF
 
-// Module 12664 (GuildPowerupsNotificationsDCF)
+// Module 12700 (GuildPowerupsNotificationsDCF)
 import c from "c" /* 568 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7632 */;
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 12658 */;
-import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 12665 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7664 */;
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 12694 */;
+import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 12701 */;
 import "ReactCompilerGating";
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[0] = arg0;
     cResult[1] = items1;
   } else {
-    return tmp(7632).useSelectedDismissibleContent(cResult[1]);
+    return tmp(7664).useSelectedDismissibleContent(cResult[1]);
   }
 }) : ((arg0) => {
   if (arg0) {
@@ -44,7 +44,7 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = c.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { cooldownDurationMs: tmp(12658).GUILD_POWERUP_NOTIFICATION_COOLDOWN };
+    const obj2 = { cooldownDurationMs: tmp(12694).GUILD_POWERUP_NOTIFICATION_COOLDOWN };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -111,7 +111,7 @@ export const useBoostToUnlockCoachmarkDCF = ReactCompilerGating.isReactCompilerE
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { cooldownDurationMs: tmp(12658).BOOST_TO_UNLOCK_COACHMARK_COOLDOWN, numTimesToRecur: tmp(12658).BOOST_TO_UNLOCK_COACHMARK_MAX_TIMES_TO_RECUR };
+    const obj4 = { cooldownDurationMs: tmp(12694).BOOST_TO_UNLOCK_COACHMARK_COOLDOWN, numTimesToRecur: tmp(12694).BOOST_TO_UNLOCK_COACHMARK_MAX_TIMES_TO_RECUR };
     cResult[2] = obj4;
     let tmp5 = obj4;
   } else {

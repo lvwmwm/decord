@@ -1,22 +1,22 @@
-// Module ID: 4758
-// Function ID: 4759
+// Module ID: 4790
+// Function ID: 4791
 // Name: createStyles
-// Dependencies: [32, 17, 4750, 4578, 558, 568, 4471, 1368, 580, 4463, 4497, 4759, 4762, 4690, 2]
+// Dependencies: [32, 17, 4782, 4610, 558, 568, 4503, 1368, 580, 4495, 4529, 4791, 4794, 4722, 2]
 // Exports: createAnimatedThemedStyles, createLegacyClassComponentStyles, createNativeStyleProperties, createStyleProperties, createStyles, experimental_createToken, processColorOrThrow
 
-// Module 4758 (createStyles)
+// Module 4790 (createStyles)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import SemanticColorContext from "SemanticColorContext" /* 4463 */;
-import native from "native" /* 4471 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 4690 */;
-import timing from "timing" /* 4759 */;
-import timingPresets from "timingPresets" /* 4762 */;
+import SemanticColorContext from "SemanticColorContext" /* 4495 */;
+import native from "native" /* 4503 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 4722 */;
+import timing from "timing" /* 4791 */;
+import timingPresets from "timingPresets" /* 4794 */;
 import _slicedToArray from "module_32" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4578 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4610 */;
 
 const require = globalThis.__r;
 
@@ -145,7 +145,7 @@ export const createStyles = function createStyles(rect) {
     items = undefined;
     const cResult = closure_0(568).c(4);
     const obj = closure_0(568);
-    const themeContext = closure_0(4471).useThemeContext();
+    const themeContext = closure_0(4503).useThemeContext();
     if (cResult[0] === items) {
       if (cResult[1] === themeContext) {
         obj4 = cResult[2];
@@ -159,7 +159,7 @@ export const createStyles = function createStyles(rect) {
     }
     let fromEntries = globalThis;
     const items1 = [];
-    const obj2 = closure_0(4471);
+    const obj2 = closure_0(4503);
     items1[HermesBuiltin.arraySpread(items, 0)] = themeContext.key;
     const tmp6 = createCacheKey();
     value = items.get(tmp6);
@@ -212,7 +212,7 @@ export const createStyles = function createStyles(rect) {
   }) : (() => {
     items = [...arguments];
     let obj3;
-    const themeContext = closure_0(4471).useThemeContext();
+    const themeContext = closure_0(4503).useThemeContext();
     const items1 = [];
     items1[HermesBuiltin.arraySpread(items, 0)] = themeContext.key;
     const tmp2 = createCacheKey();
@@ -257,7 +257,7 @@ export const createStyles = function createStyles(rect) {
       const result = obj2.set(tmp2, obj3);
       return obj3;
     }
-    const obj = closure_0(4471);
+    const obj = closure_0(4503);
     obj2 = themeContext;
   });
 };
@@ -392,7 +392,7 @@ export const createNativeStyleProperties = function createNativeStyleProperties(
     }
     if (null == customBackgroundGradient) {
       const obj2 = {};
-      const merged = Object.assign(tmp2(4471).FALLBACK_THEME_CONTEXT_VALUE);
+      const merged = Object.assign(tmp2(4503).FALLBACK_THEME_CONTEXT_VALUE);
       obj2.flags = 0;
       obj2.saturation = AccessibilityStore.saturation;
       obj2.theme = theme;
@@ -440,12 +440,12 @@ export const createNativeStyleProperties = function createNativeStyleProperties(
       }
     } else {
       if ("light" === customBackgroundGradient.theme) {
-        let MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp2(4471).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED;
+        let MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp2(4503).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED;
       } else {
-        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp2(4471).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED;
+        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp2(4503).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED;
       }
-      tmp2(4471).setThemeFlag(0, MOBILE_DARK_GRADIENT_THEME_ENABLED);
-      const tmp2Result = tmp2(4471);
+      tmp2(4503).setThemeFlag(0, MOBILE_DARK_GRADIENT_THEME_ENABLED);
+      const tmp2Result = tmp2(4503);
     }
   };
 };

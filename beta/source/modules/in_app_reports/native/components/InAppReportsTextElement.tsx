@@ -1,19 +1,19 @@
-// Module ID: 8926
-// Function ID: 8927
+// Module ID: 8958
+// Function ID: 8959
 // Name: InAppReportsTextElement
-// Dependencies: [19, 17, 21, 4758, 5208, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 5240, 4786, 2]
 // Exports: default
 
-// Module 8926 (InAppReportsTextElement)
-import Text_Text from "Text/Text" /* 4754 */;
-import CustomMarkupAll from "CustomMarkup" /* 5208 */;
+// Module 8958 (InAppReportsTextElement)
+import Text_Text from "Text/Text" /* 4786 */;
+import CustomMarkupAll from "CustomMarkup" /* 5240 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ container: { marginBottom: 16, paddingHorizontal: 16 }, header: { marginBottom: 8 }, body: { marginBottom: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsTextElement.tsx");

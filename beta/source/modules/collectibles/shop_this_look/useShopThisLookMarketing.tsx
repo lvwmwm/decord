@@ -1,13 +1,13 @@
-// Module ID: 13431
-// Function ID: 13432
+// Module ID: 13467
+// Function ID: 13468
 // Name: useShopThisLookMarketing
-// Dependencies: [32, 558, 568, 8489, 2031, 7632, 2]
+// Dependencies: [32, 558, 568, 8521, 2031, 7664, 2]
 
-// Module 13431 (useShopThisLookMarketing)
+// Module 13467 (useShopThisLookMarketing)
 import c from "c" /* 568 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7632 */;
-import useMaybeFetchEquippedCollectibleProducts from "useMaybeFetchEquippedCollectibleProducts" /* 8489 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7664 */;
+import useMaybeFetchEquippedCollectibleProducts from "useMaybeFetchEquippedCollectibleProducts" /* 8521 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -21,7 +21,7 @@ export const useShopThisLookMarketing = ReactCompilerGating.isReactCompilerEnabl
   const tmp4 = useMaybeFetchEquippedCollectibleProducts.useEquippedCollectibleSkuIds(arg0, arg1).length > 0;
   if (cResult[0] === tmp4) {
     if (cResult[1] === arg2) {
-      const tmp7 = _slicedToArray(tmp(7632).useSelectedDismissibleContent(cResult[2], undefined, true), 2);
+      const tmp7 = _slicedToArray(tmp(7664).useSelectedDismissibleContent(cResult[2], undefined, true), 2);
       if (cResult[3] === tmp7[1]) {
         if (cResult[4] === tmp10) {
           let tmp11 = cResult[5];
@@ -33,7 +33,7 @@ export const useShopThisLookMarketing = ReactCompilerGating.isReactCompilerEnabl
       cResult[4] = null != tmp7[0];
       cResult[5] = obj3;
       tmp11 = obj3;
-      const tmpResult = tmp(7632);
+      const tmpResult = tmp(7664);
     }
   }
   if (!arg2) {

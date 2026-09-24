@@ -1,13 +1,13 @@
-// Module ID: 12939
-// Function ID: 12940
+// Module ID: 12975
+// Function ID: 12976
 // Name: NavigationPathUtils
-// Dependencies: [1078, 558, 568, 4591, 2]
+// Dependencies: [1078, 558, 568, 4623, 2]
 // Exports: getSelectedSpecialNavigationPath
 
-// Module 12939 (NavigationPathUtils)
+// Module 12975 (NavigationPathUtils)
 import c from "c" /* 568 */;
 import Constants from "Constants" /* 1078 */;
-import _mod4591 from "module_4591" /* 4591 */;
+import _mod4623 from "module_4623" /* 4623 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ export { getSelectedSpecialNavigationPath };
 export const useSelectedSpecialNavigationPath = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = c;
   const cResult = obj.c(2);
-  const _location = _mod4591.useLocation();
+  const _location = _mod4623.useLocation();
   if (cResult[0] !== _location) {
     let FRIENDS;
     if (_location.pathname === Routes.FRIENDS) {
@@ -39,7 +39,7 @@ export const useSelectedSpecialNavigationPath = ReactCompilerGating.isReactCompi
   }
   return tmp3;
 }) : (() => {
-  const obj = _mod4591;
+  const obj = _mod4623;
   let FRIENDS;
   if (obj.useLocation().pathname === Routes.FRIENDS) {
     FRIENDS = obj.FRIENDS;

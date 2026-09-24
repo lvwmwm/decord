@@ -1,13 +1,13 @@
-// Module ID: 11916
-// Function ID: 11917
+// Module ID: 11952
+// Function ID: 11953
 // Name: CloudIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 11917, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 11953, 4493, 2]
 
-// Module 11916 (CloudIcon)
+// Module 11952 (CloudIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod11917 from "module_11917" /* 11917 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod11953 from "module_11953" /* 11953 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const CloudIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(11917);
+    const tmpResult = tmp(11953);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const CloudIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11917, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11953, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

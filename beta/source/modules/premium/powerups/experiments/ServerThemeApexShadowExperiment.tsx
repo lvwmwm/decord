@@ -1,9 +1,9 @@
-// Module ID: 4688
-// Function ID: 4689
+// Module ID: 4720
+// Function ID: 4721
 // Name: ServerThemeApexShadowExperiment
 // Dependencies: [1438, 2]
 
-// Module 4688 (ServerThemeApexShadowExperiment)
+// Module 4720 (ServerThemeApexShadowExperiment)
 import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 

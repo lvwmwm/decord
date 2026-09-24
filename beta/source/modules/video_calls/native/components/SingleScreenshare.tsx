@@ -1,20 +1,20 @@
-// Module ID: 10277
-// Function ID: 10278
+// Module ID: 10316
+// Function ID: 10317
 // Name: SingleScreenshare
-// Dependencies: [19, 9636, 21, 4758, 580, 558, 568, 5203, 4959, 10278, 2]
+// Dependencies: [19, 9668, 21, 4790, 580, 558, 568, 5235, 4991, 10317, 2]
 
-// Module 10277 (SingleScreenshare)
+// Module 10316 (SingleScreenshare)
 import nativeDefault from "native" /* 580 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4959 */;
-import useMountEffectDefault from "useMountEffect" /* 5203 */;
-import ScreenshareParticipantDefault from "ScreenshareParticipant" /* 10278 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4991 */;
+import useMountEffectDefault from "useMountEffect" /* 5235 */;
+import ScreenshareParticipantDefault from "ScreenshareParticipant" /* 10317 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const ChannelCallStore = fn(9636);
+const ChannelCallStore = fn(9668);
 ({ resetFocus: c3, toggleFocus: closure_4 } = ChannelCallStore);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { stageStreamContainer: { backgroundColor: nativeDefault.colors.BLACK } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

@@ -1,19 +1,19 @@
-// Module ID: 11053
-// Function ID: 11054
+// Module ID: 11089
+// Function ID: 11090
 // Name: PremiumGiftPromotionDetails
-// Dependencies: [109, 32, 19, 17, 4750, 21, 580, 4758, 558, 568, 4754, 504, 9087, 1369, 11054, 5802, 1977, 9050, 2]
+// Dependencies: [109, 32, 19, 17, 4782, 21, 580, 4790, 558, 568, 4786, 504, 9119, 1369, 11090, 5834, 1977, 9082, 2]
 
-// Module 11053 (PremiumGiftPromotionDetails)
+// Module 11089 (PremiumGiftPromotionDetails)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1369 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import SKUPreview from "SKUPreview" /* 9050 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import SKUPreview from "SKUPreview" /* 9082 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 let closure_3 = ["imageUrl", "shouldAnimate"];
@@ -22,7 +22,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const PX_40 = nativeDefault.space.PX_40;
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let closure_13 = createStyles.createStyles(() => {
   const obj = { container: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 }, image: null, textContainer: null };
   const size = { width: PX_40, height: PX_40, borderRadius: nativeDefault.radii.xs };
@@ -100,7 +100,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj4 = { variant: subtitleVariant, color: subtitleColor, children: subtitle };
-        const tmp12 = v65535(tmp(4754).Text, obj4);
+        const tmp12 = v65535(tmp(4786).Text, obj4);
         cResult[7] = subtitle;
         cResult[8] = subtitleVariant;
         cResult[9] = subtitleColor;
@@ -109,7 +109,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj5 = { variant: titleVariant, color: titleColor, children: title };
-    const tmp9 = v65535(tmp(4754).Text, obj5);
+    const tmp9 = v65535(tmp(4786).Text, obj5);
     cResult[3] = titleVariant;
     cResult[4] = titleColor;
     cResult[5] = title;
@@ -350,7 +350,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmp13 = closure_10(tmp9(tmp2[15]), { style, resizeMode: "contain", source: { uri: imageUrl } });
 });
 ReactCompilerGating = fn(558);
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj6 = { preview: null };
 let size = { width: PX_40, height: PX_40, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, border: null, overflow: "hidden" };
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -499,7 +499,7 @@ export const PremiumGiftPromotionCollectibleRewardDetails = ReactCompilerGating.
       }
     }
     obj11.size = rounded;
-    obj11 = tmp16(tmp(9050).CollectiblesPreview, obj11);
+    obj11 = tmp16(tmp(9082).CollectiblesPreview, obj11);
     obj6.children = obj11;
     v65535(View, obj6);
   }

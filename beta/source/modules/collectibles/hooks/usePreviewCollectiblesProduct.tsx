@@ -1,22 +1,22 @@
-// Module ID: 11388
-// Function ID: 11389
+// Module ID: 11424
+// Function ID: 11425
 // Name: usePreviewCollectiblesProduct
-// Dependencies: [32, 19, 8434, 7794, 1975, 7795, 7796, 558, 568, 8445, 11387, 1977, 8438, 2]
+// Dependencies: [32, 19, 8466, 7826, 1975, 7827, 7828, 558, 568, 8477, 11423, 1977, 8470, 2]
 
-// Module 11388 (usePreviewCollectiblesProduct)
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8438 */;
-import CollectiblePreviewSession from "CollectiblePreviewSession" /* 11387 */;
+// Module 11424 (usePreviewCollectiblesProduct)
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8470 */;
+import CollectiblePreviewSession from "CollectiblePreviewSession" /* 11423 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8434 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8466 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const isAvatarDecorationRecord = fn(7794).isAvatarDecorationRecord;
+const isAvatarDecorationRecord = fn(7826).isAvatarDecorationRecord;
 const isNameplateRecord = fn(1975).isNameplateRecord;
-const isProfileEffectRecord = fn(7795).isProfileEffectRecord;
-const isProfileFrameRecord = fn(7796).isProfileFrameRecord;
+const isProfileEffectRecord = fn(7827).isProfileEffectRecord;
+const isProfileFrameRecord = fn(7828).isProfileFrameRecord;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/hooks/usePreviewCollectiblesProduct.tsx");
@@ -51,7 +51,7 @@ export const usePreviewCollectibleProduct = ReactCompilerGating.isReactCompilerE
   }
   const fn = function v() {
     let obj = closure_0;
-    closure_0 = closure_0(11387).currentPreviewGeneration();
+    closure_0 = closure_0(11423).currentPreviewGeneration();
     const pendingChanges = firstAvatarDecoration.getPendingChanges();
     dependencyMap = { avatarDecoration: pendingChanges.pendingAvatarDecoration, profileEffect: pendingChanges.pendingProfileEffect, nameplate: pendingChanges.pendingNameplate, profileFrame: pendingChanges.pendingProfileFrame };
     if (closure_0.type === closure_0(1977).CollectiblesItemType.BUNDLE) {
@@ -82,26 +82,26 @@ export const usePreviewCollectibleProduct = ReactCompilerGating.isReactCompilerE
           obj3.nameplate = tmp12;
         }
       }
-      obj = obj(8438);
+      obj = obj(8470);
       obj.setPendingChanges(obj3);
     } else {
       const first = closure_2(closure_0.items, 1)[0];
       if (firstNameplate(first)) {
         const obj4 = { avatarDecoration: first };
-        obj(8438).setPendingChanges(obj4);
-        const objResult = obj(8438);
+        obj(8470).setPendingChanges(obj4);
+        const objResult = obj(8470);
       } else if (isProfileEffectRecord(first)) {
         const obj5 = { profileEffect: first };
-        obj(8438).setPendingChanges(obj5);
-        const objResult4 = obj(8438);
+        obj(8470).setPendingChanges(obj5);
+        const objResult4 = obj(8470);
       } else if (firstProfileFrame(first)) {
         const obj6 = { nameplate: first };
-        obj(8438).setPendingChanges(obj6);
-        const objResult5 = obj(8438);
+        obj(8470).setPendingChanges(obj6);
+        const objResult5 = obj(8470);
       } else if (isProfileFrameRecord(first)) {
         const obj7 = { profileFrame: first };
-        obj(8438).setPendingChanges(obj7);
-        const objResult6 = obj(8438);
+        obj(8470).setPendingChanges(obj7);
+        const objResult6 = obj(8470);
       }
       return () => {
         let tmp = closure_1;
@@ -138,7 +138,7 @@ export const usePreviewCollectibleProduct = ReactCompilerGating.isReactCompilerE
   const items = [arg0, arg1, firstProfileEffect, firstAvatarDecoration, firstNameplate, firstProfileFrame, arg2];
   const effect = firstProfileEffect.useEffect(() => {
     let obj = closure_0;
-    closure_0 = closure_0(11387).currentPreviewGeneration();
+    closure_0 = closure_0(11423).currentPreviewGeneration();
     const pendingChanges = firstAvatarDecoration.getPendingChanges();
     dependencyMap = { avatarDecoration: pendingChanges.pendingAvatarDecoration, profileEffect: pendingChanges.pendingProfileEffect, nameplate: pendingChanges.pendingNameplate, profileFrame: pendingChanges.pendingProfileFrame };
     if (closure_0.type === closure_0(1977).CollectiblesItemType.BUNDLE) {
@@ -169,26 +169,26 @@ export const usePreviewCollectibleProduct = ReactCompilerGating.isReactCompilerE
           obj3.nameplate = tmp12;
         }
       }
-      obj = obj(8438);
+      obj = obj(8470);
       obj.setPendingChanges(obj3);
     } else {
       const first = closure_2(closure_0.items, 1)[0];
       if (firstNameplate(first)) {
         const obj4 = { avatarDecoration: first };
-        obj(8438).setPendingChanges(obj4);
-        const objResult = obj(8438);
+        obj(8470).setPendingChanges(obj4);
+        const objResult = obj(8470);
       } else if (isProfileEffectRecord(first)) {
         const obj5 = { profileEffect: first };
-        obj(8438).setPendingChanges(obj5);
-        const objResult4 = obj(8438);
+        obj(8470).setPendingChanges(obj5);
+        const objResult4 = obj(8470);
       } else if (firstProfileFrame(first)) {
         const obj6 = { nameplate: first };
-        obj(8438).setPendingChanges(obj6);
-        const objResult5 = obj(8438);
+        obj(8470).setPendingChanges(obj6);
+        const objResult5 = obj(8470);
       } else if (isProfileFrameRecord(first)) {
         const obj7 = { profileFrame: first };
-        obj(8438).setPendingChanges(obj7);
-        const objResult6 = obj(8438);
+        obj(8470).setPendingChanges(obj7);
+        const objResult6 = obj(8470);
       }
       return () => {
         let tmp = closure_1;

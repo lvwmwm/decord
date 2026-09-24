@@ -1,13 +1,13 @@
-// Module ID: 7786
-// Function ID: 7787
+// Module ID: 7818
+// Function ID: 7819
 // Name: FamilyCenterActionCreators
-// Dependencies: [5, 7787, 7785, 1078, 7788, 577, 1275, 1245, 2029, 1190, 1226, 2]
+// Dependencies: [5, 7819, 7817, 1078, 7820, 577, 1275, 1245, 2029, 1190, 1226, 2]
 // Exports: getLinkCodeForCurrentUser, removeLinkForUserId, shareIarWithParents, updateLinkForUserId
 
-// Module 7786 (FamilyCenterActionCreators)
+// Module 7818 (FamilyCenterActionCreators)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7787 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7819 */;
 
 const require = globalThis.__r;
 
@@ -382,7 +382,7 @@ let closure_15 = async function _shareIarWithParents(arg0, value) {
     }
   }
 };
-const FamilyCenterAction = fn(7785).FamilyCenterAction;
+const FamilyCenterAction = fn(7817).FamilyCenterAction;
 const Constants = fn(1078);
 ({ AnalyticEvents: metroRequire, Endpoints: closure_7 } = Constants);
 const size = fn(2);

@@ -1,9 +1,9 @@
-// Module ID: 10510
-// Function ID: 10511
+// Module ID: 10546
+// Function ID: 10547
 // Name: useMaybeAddPollsMarketingEasterEggNote
 // Dependencies: [2113, 558, 568, 504, 1119, 2]
 
-// Module 10510 (useMaybeAddPollsMarketingEasterEggNote)
+// Module 10546 (useMaybeAddPollsMarketingEasterEggNote)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import LocaleStore from "LocaleStore" /* 2113 */;

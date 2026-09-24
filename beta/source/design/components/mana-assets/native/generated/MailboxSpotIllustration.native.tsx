@@ -1,13 +1,13 @@
-// Module ID: 6470
-// Function ID: 6471
+// Module ID: 6502
+// Function ID: 6503
 // Name: MailboxSpotIllustration
-// Dependencies: [21, 558, 568, 6471, 5802, 2]
+// Dependencies: [21, 558, 568, 6503, 5834, 2]
 
-// Module 6470 (MailboxSpotIllustration)
+// Module 6502 (MailboxSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6471 from "module_6471" /* 6471 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6503 from "module_6503" /* 6503 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const MailboxSpotIllustration = ReactCompilerGating.isReactCompilerEnable
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6471 };
+    const obj2 = { uri: _modDef6503 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const MailboxSpotIllustration = ReactCompilerGating.isReactCompilerEnable
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6471 };
+  const obj2 = { uri: _modDef6503 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

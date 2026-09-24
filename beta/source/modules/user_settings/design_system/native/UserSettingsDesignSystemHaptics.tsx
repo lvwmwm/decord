@@ -1,23 +1,23 @@
-// Module ID: 16106
-// Function ID: 16107
+// Module ID: 16116
+// Function ID: 16117
 // Name: UserSettingsDesignSystemHaptics
-// Dependencies: [19, 17, 21, 4758, 558, 568, 4726, 5188, 4727, 5824, 5186, 4754, 4728, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 4758, 5220, 4759, 5856, 5218, 4786, 4760, 2]
 
-// Module 16106 (UserSettingsDesignSystemHaptics)
+// Module 16116 (UserSettingsDesignSystemHaptics)
 import c from "c" /* 568 */;
-import HapticUtils from "HapticUtils" /* 4726 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4727 */;
-import Patterns from "Patterns" /* 4728 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import Card from "Card" /* 5824 */;
+import HapticUtils from "HapticUtils" /* 4758 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4759 */;
+import Patterns from "Patterns" /* 4760 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import Card from "Card" /* 5856 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ScrollView = fn(17).ScrollView;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ container: { padding: 16, alignItems: "center" } });
 let ReactCompilerGating = fn(558);
 let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
@@ -40,14 +40,14 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
     }
     return tmp5;
   }
-  const tmp6 = closure_3(type(5188).Button, { variant: "secondary", onPress: tmp4, text: label });
+  const tmp6 = closure_3(type(5220).Button, { variant: "secondary", onPress: tmp4, text: label });
   cResult[2] = label;
   cResult[3] = tmp4;
   cResult[4] = tmp6;
   tmp5 = tmp6;
 }) : ((text) => {
   const type = text.type;
-  return closure_3(type(5188).Button, {
+  return closure_3(type(5220).Button, {
     variant: "secondary",
     onPress() {
       return HapticUtils.triggerHapticFeedback(type);
@@ -132,14 +132,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { children: null };
     const obj3 = { children: null };
-    items = [React3(tmp(4754).Text, { variant: "text-lg/bold", children: "Semantic Types" }), React3(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "Existing haptic types with platform-specific remapping for the best feel." }), ];
+    items = [React3(tmp(4786).Text, { variant: "text-lg/bold", children: "Semantic Types" }), React3(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "Existing haptic types with platform-specific remapping for the best feel." }), ];
     items[2] = items.map((label) => {
       label = label.label;
       return closure_1_3(closure_1_6, { type: label.type, label }, label);
     });
     obj3.children = items;
-    obj2.children = React4(tmp(5186).Stack, obj3);
-    const tmp9 = React3(tmp(5824).Card, obj2);
+    obj2.children = React4(tmp(5218).Stack, obj3);
+    const tmp9 = React3(tmp(5856).Card, obj2);
     cResult[0] = tmp9;
     let first = tmp9;
   } else {
@@ -148,14 +148,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { children: null };
     const obj5 = { children: null };
-    items1 = [React3(tmp(4754).Text, { variant: "text-lg/bold", children: "Impact / Notification Types" }), React3(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "Direct 1:1 mappings for impact and notification feedback." }), ];
+    items1 = [React3(tmp(4786).Text, { variant: "text-lg/bold", children: "Impact / Notification Types" }), React3(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "Direct 1:1 mappings for impact and notification feedback." }), ];
     items1[2] = items1.map((label) => {
       label = label.label;
       return closure_1_3(closure_1_6, { type: label.type, label }, label);
     });
     obj5.children = items1;
-    obj4.children = React4(tmp(5186).Stack, obj5);
-    const tmp14 = React3(tmp(5824).Card, obj4);
+    obj4.children = React4(tmp(5218).Stack, obj5);
+    const tmp14 = React3(tmp(5856).Card, obj4);
     cResult[1] = tmp14;
     let tmp10 = tmp14;
   } else {
@@ -164,14 +164,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { children: null };
     const obj7 = { children: null };
-    items2 = [React3(tmp(4754).Text, { variant: "text-lg/bold", children: "Gesture / UI Types" }), React3(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "Feedback for gestures, toggles, and UI confirmations. New in v3." }), ];
+    items2 = [React3(tmp(4786).Text, { variant: "text-lg/bold", children: "Gesture / UI Types" }), React3(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "Feedback for gestures, toggles, and UI confirmations. New in v3." }), ];
     items2[2] = items2.map((label) => {
       label = label.label;
       return closure_1_3(closure_1_6, { type: label.type, label }, label);
     });
     obj7.children = items2;
-    obj6.children = React4(tmp(5186).Stack, obj7);
-    const tmp19 = React3(tmp(5824).Card, obj6);
+    obj6.children = React4(tmp(5218).Stack, obj7);
+    const tmp19 = React3(tmp(5856).Card, obj6);
     cResult[2] = tmp19;
     let tmp15 = tmp19;
   } else {
@@ -180,14 +180,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj8 = { children: null };
     const obj9 = { children: null };
-    items3 = [React3(tmp(4754).Text, { variant: "text-lg/bold", children: "Platform Haptic Types" }), React3(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "Native Android haptics with iOS Core Haptics approximations. Cross-platform in v3." }), ];
+    items3 = [React3(tmp(4786).Text, { variant: "text-lg/bold", children: "Platform Haptic Types" }), React3(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "Native Android haptics with iOS Core Haptics approximations. Cross-platform in v3." }), ];
     items3[2] = items3.map((label) => {
       label = label.label;
       return closure_1_3(closure_1_6, { type: label.type, label }, label);
     });
     obj9.children = items3;
-    obj8.children = React4(tmp(5186).Stack, obj9);
-    const tmp24 = React3(tmp(5824).Card, obj8);
+    obj8.children = React4(tmp(5218).Stack, obj9);
+    const tmp24 = React3(tmp(5856).Card, obj8);
     cResult[3] = tmp24;
     let tmp20 = tmp24;
   } else {
@@ -199,11 +199,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj11 = { children: null };
     const obj12 = { children: null };
     const items5 = [
-      React3(tmp(4754).Text, { variant: "text-lg/bold", children: "Pattern Presets" }),
-      React3(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "Built-in haptic sequences using triggerPattern(). Each preset uses a compact notation (o=soft, O=strong, .=short gap, -=medium gap, ==long gap)." }),
+      React3(tmp(4786).Text, { variant: "text-lg/bold", children: "Pattern Presets" }),
+      React3(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "Built-in haptic sequences using triggerPattern(). Each preset uses a compact notation (o=soft, O=strong, .=short gap, -=medium gap, ==long gap)." }),
       items4.map((description) => {
           ({ label, pattern: closure_0 } = description);
-          return closure_3(closure_0(5188).Button, {
+          return closure_3(closure_0(5220).Button, {
             variant: "secondary",
             onPress() {
               return Patterns.triggerPattern(Patterns.Patterns[closure_1_0]);
@@ -213,10 +213,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         })
     ];
     obj12.children = items5;
-    obj11.children = React4(tmp(5186).Stack, obj12);
-    items4[4] = React3(tmp(5824).Card, obj11);
+    obj11.children = React4(tmp(5218).Stack, obj12);
+    items4[4] = React3(tmp(5856).Card, obj11);
     obj10.children = items4;
-    const tmp29 = React4(tmp(5186).Stack, obj10);
+    const tmp29 = React4(tmp(5218).Stack, obj10);
     cResult[4] = tmp29;
     let tmp25 = tmp29;
   } else {
@@ -291,7 +291,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     React3(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Built-in haptic sequences using triggerPattern(). Each preset uses a compact notation (o=soft, O=strong, .=short gap, -=medium gap, ==long gap)." }),
     items4.map((description) => {
       ({ label, pattern: closure_0 } = description);
-      return closure_3(closure_0(5188).Button, {
+      return closure_3(closure_0(5220).Button, {
         variant: "secondary",
         onPress() {
           return Patterns.triggerPattern(Patterns.Patterns[closure_1_0]);

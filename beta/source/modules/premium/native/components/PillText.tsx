@@ -1,17 +1,17 @@
-// Module ID: 13688
-// Function ID: 13689
+// Module ID: 13724
+// Function ID: 13725
 // Name: PillText
-// Dependencies: [1078, 21, 4758, 580, 558, 568, 13689, 4754, 5198, 2]
+// Dependencies: [1078, 21, 4790, 580, 558, 568, 13725, 4786, 5230, 2]
 
-// Module 13688 (PillText)
+// Module 13724 (PillText)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import Constants from "Constants" /* 1078 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 13689 */;
-import createStyles from "createStyles" /* 4758 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 13725 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

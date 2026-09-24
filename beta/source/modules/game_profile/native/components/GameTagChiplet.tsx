@@ -1,19 +1,19 @@
-// Module ID: 17580
-// Function ID: 17581
+// Module ID: 17590
+// Function ID: 17591
 // Name: GameTagChiplet
-// Dependencies: [19, 17, 21, 4758, 558, 568, 8944, 8945, 9980, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 8976, 8977, 10012, 2]
 
-// Module 17580 (GameTagChiplet)
+// Module 17590 (GameTagChiplet)
 import c from "c" /* 568 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8944 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8945 */;
-import GuildTag from "GuildTag" /* 9980 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8976 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8977 */;
+import GuildTag from "GuildTag" /* 10012 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Image = fn(17).Image;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ container: { flexShrink: 1, minWidth: 0, overflow: "hidden" }, text: { flexShrink: 1, minWidth: 0 }, image: { width: 12, height: 12 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -58,7 +58,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       ({ container: obj5.containerStyles, text: obj5.textStyle } = tmp4);
       obj2.onPress = tmp9;
       obj2.textColor = textColor;
-      const tmp17 = jsx(tmp(9980).BaseGuildTagChiplet, { guildTag: game.name, guildBadge: tmp10, containerStyles: null, textStyle: null, onPress: null, textColor: null });
+      const tmp17 = jsx(tmp(10012).BaseGuildTagChiplet, { guildTag: game.name, guildBadge: tmp10, containerStyles: null, textStyle: null, onPress: null, textColor: null });
       cResult[8] = game.name;
       cResult[9] = tmp9;
       cResult[10] = tmp4.container;

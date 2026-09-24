@@ -1,14 +1,14 @@
-// Module ID: 8702
-// Function ID: 8703
+// Module ID: 8734
+// Function ID: 8735
 // Name: AgeVerificationAuthSession
-// Dependencies: [5, 3, 562, 4724, 1368, 558, 568, 2]
+// Dependencies: [5, 3, 562, 4756, 1368, 558, 568, 2]
 // Exports: closeAgeVerificationAuthSession, getIsAgeVerificationAuthSessionAwaitingResult, getIsAgeVerificationAuthSessionOpen, openAgeVerificationAuthSession
 
-// Module 8702 (AgeVerificationAuthSession)
+// Module 8734 (AgeVerificationAuthSession)
 import LoggerDefault from "Logger" /* 3 */;
 import c from "c" /* 568 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import NativeBrowserManagerModuleIOSDefault from "NativeBrowserManagerModuleIOS" /* 4724 */;
+import NativeBrowserManagerModuleIOSDefault from "NativeBrowserManagerModuleIOS" /* 4756 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

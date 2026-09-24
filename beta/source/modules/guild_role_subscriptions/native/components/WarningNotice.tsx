@@ -1,22 +1,22 @@
-// Module ID: 18146
-// Function ID: 18147
+// Module ID: 18156
+// Function ID: 18157
 // Name: WarningNotice
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 5802, 5812, 4754, 5188, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 5834, 5844, 4786, 5220, 2]
 
-// Module 18146 (WarningNotice)
+// Module 18156 (WarningNotice)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef5812 from "module_5812" /* 5812 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef5844 from "module_5844" /* 5844 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { borderRadius: nativeDefault.radii.xs, borderWidth: 1, padding: 12 }, horizontalContainer: { flexDirection: "row", alignItems: "center" }, message: { flex: 1, marginStart: 10, textAlignVertical: "center" }, actionButtonWrapper: { marginTop: 24, alignSelf: "center", width: "100%" }, containerYellow: null, textYellow: null, alertIcon: null };
 let obj3 = { borderRadius: nativeDefault.radii.xs, borderWidth: 1, padding: 12 };
 obj2.containerYellow = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, borderColor: nativeDefault.colors.STATUS_WARNING };
@@ -39,7 +39,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp5 = cResult[3];
       }
       if (cResult[4] !== tmp4.alertIcon) {
-        const obj2 = { style: tmp4.alertIcon, source: _modDef5812 };
+        const obj2 = { style: tmp4.alertIcon, source: _modDef5844 };
         const tmp10 = React4(FastImageDefault, obj2);
         cResult[4] = tmp4.alertIcon;
         cResult[5] = tmp10;
@@ -92,7 +92,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               if (tmp21) {
                 const obj4 = { style: tmp4.actionButtonWrapper, children: null };
                 const obj5 = { onPress: onClick, disabled, loading: submitting, text: ctaLabel, grow: true };
-                obj4.children = React4(tmp(5188).Button, obj5);
+                obj4.children = React4(tmp(5220).Button, obj5);
                 tmp21 = React4(View, obj4);
               }
               cResult[16] = ctaLabel;
@@ -115,7 +115,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp15 = tmp18;
         }
         const obj7 = { style: tmp11, variant: "text-sm/medium", color: "interactive-text-active", children: notice };
-        const tmp14 = React4(tmp(4754).Text, obj7);
+        const tmp14 = React4(tmp(4786).Text, obj7);
         cResult[9] = notice;
         cResult[10] = tmp11;
         cResult[11] = tmp14;
@@ -145,7 +145,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ container: arr[1], containerYellow: arr[2] } = tmp);
   obj.style = items;
   const obj2 = { style: tmp.horizontalContainer, children: null };
-  const obj3 = { style: tmp.alertIcon, source: _modDef5812 };
+  const obj3 = { style: tmp.alertIcon, source: _modDef5844 };
   const items1 = [React4(FastImageDefault, obj3), ];
   const obj4 = { style: null, variant: "text-sm/medium", color: "interactive-text-active", children: notice };
   const items2 = [, ];

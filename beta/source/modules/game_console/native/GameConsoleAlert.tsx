@@ -1,17 +1,17 @@
-// Module ID: 10028
-// Function ID: 10029
+// Module ID: 10067
+// Function ID: 10068
 // Name: GameConsoleAlert
-// Dependencies: [19, 17, 4775, 21, 4758, 558, 568, 504, 4754, 2]
+// Dependencies: [19, 17, 4807, 21, 4790, 558, 568, 504, 4786, 2]
 
-// Module 10028 (GameConsoleAlert)
+// Module 10067 (GameConsoleAlert)
 import noop from "module_19" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 4775 */;
+import GameConsoleStore from "GameConsoleStore" /* 4807 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ errorCodeText: { marginTop: 16 }, alertBody: { marginTop: 0 }, container: { flex: 1 }, body: { marginTop: 16 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

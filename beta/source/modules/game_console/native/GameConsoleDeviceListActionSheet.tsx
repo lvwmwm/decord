@@ -1,22 +1,22 @@
-// Module ID: 10031
-// Function ID: 10032
+// Module ID: 10070
+// Function ID: 10071
 // Name: GameConsoleDeviceListActionSheet
-// Dependencies: [5, 32, 19, 17, 4775, 1078, 21, 4758, 580, 558, 568, 1119, 5188, 7371, 10032, 4754, 10033, 504, 10023, 38, 10030, 4725, 1114, 1181, 10034, 7396, 6863, 7397, 2]
+// Dependencies: [5, 32, 19, 17, 4807, 1078, 21, 4790, 580, 558, 568, 1119, 5220, 7403, 10071, 4786, 10072, 504, 10062, 38, 10069, 4757, 1114, 1181, 10073, 7428, 6895, 7429, 2]
 
-// Module 10031 (GameConsoleDeviceListActionSheet)
+// Module 10070 (GameConsoleDeviceListActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10023 */;
-import _modDef10032 from "module_10032" /* 10032 */;
-import _modDef10033 from "module_10033" /* 10033 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10062 */;
+import _modDef10071 from "module_10071" /* 10071 */;
+import _modDef10072 from "module_10072" /* 10072 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 4775 */;
+import GameConsoleStore from "GameConsoleStore" /* 4807 */;
 
 const require = globalThis.__r;
 
@@ -26,7 +26,7 @@ get_ActivityIndicator = fn(17);
 const ComponentActions = fn(1078).ComponentActions;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: 16, justifyContent: "center", paddingBottom: 90 }, loading: { minHeight: 56 }, footerContainer: { padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, paddingBottom: 16 }, radioItem: null, deviceIcon: null, deviceOption: null, deviceText: null, emptyContainer: null, emptyArt: null, emptyHeader: null, emptyBody: null, infoBox: null };
 let obj3 = { padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, paddingBottom: 16 };
 obj2.radioItem = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.xs, padding: 16 };
@@ -69,7 +69,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp11;
       }
       const obj2 = { bottom: true, style: tmp4.footerContainer, children: tmp9 };
-      const tmp13 = __initData(tmp(7371).SafeAreaPaddingView, obj2);
+      const tmp13 = __initData(tmp(7403).SafeAreaPaddingView, obj2);
       cResult[5] = tmp4.footerContainer;
       cResult[6] = tmp9;
       cResult[7] = tmp13;
@@ -103,7 +103,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp4 = closure_15();
   ({ deviceOption, deviceIcon } = tmp4);
   if (cResult[0] !== platform) {
-    const tmp7 = _modDef10032;
+    const tmp7 = _modDef10071;
     cResult[0] = platform;
     cResult[1] = tmp7;
     let tmp5 = tmp7;
@@ -151,7 +151,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 }) : ((children) => {
   const tmp = closure_15();
   const obj = { style: tmp.deviceOption, children: null };
-  const items = [__initData(closure_1_8, { style: tmp.deviceIcon, source: _modDef10032 }), __initData(Text_Text.Text, { style: tmp.deviceText, color: "mobile-text-heading-primary", variant: "text-md/bold", children: children.name })];
+  const items = [__initData(closure_1_8, { style: tmp.deviceIcon, source: _modDef10071 }), __initData(Text_Text.Text, { style: tmp.deviceText, color: "mobile-text-heading-primary", variant: "text-md/bold", children: children.name })];
   obj.children = items;
   return __initData2(React5, obj);
 });
@@ -160,7 +160,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(13);
   const tmp4 = closure_15();
   if (cResult[0] !== tmp4.emptyArt) {
-    const obj2 = { source: _modDef10033, style: tmp4.emptyArt };
+    const obj2 = { source: _modDef10072, style: tmp4.emptyArt };
     const tmp9 = __initData(closure_1_8, obj2);
     cResult[0] = tmp4.emptyArt;
     cResult[1] = tmp9;
@@ -178,7 +178,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[3] !== tmp4.emptyHeader) {
     const obj3 = { style: tmp4.emptyHeader, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: tmp10 };
-    const tmp14 = __initData(tmp(4754).Text, obj3);
+    const tmp14 = __initData(tmp(4786).Text, obj3);
     cResult[3] = tmp4.emptyHeader;
     cResult[4] = tmp14;
     let tmp12 = tmp14;
@@ -195,7 +195,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[6] !== tmp4.emptyBody) {
     const obj4 = { style: tmp4.emptyBody, variant: "text-md/normal", color: "text-default", children: tmp15 };
-    const tmp19 = __initData(tmp(4754).Text, obj4);
+    const tmp19 = __initData(tmp(4786).Text, obj4);
     cResult[6] = tmp4.emptyBody;
     cResult[7] = tmp19;
     let tmp17 = tmp19;
@@ -225,7 +225,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const tmp = closure_15();
   const obj = { style: tmp.emptyContainer, children: null };
-  const items = [__initData(closure_1_8, { source: _modDef10033, style: tmp.emptyArt }), , ];
+  const items = [__initData(closure_1_8, { source: _modDef10072, style: tmp.emptyArt }), , ];
   const obj3 = { style: tmp.emptyHeader, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t.OkJf1e);
@@ -485,7 +485,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
             timestampProducer(true);
             v1 = 1;
             dependencyMap = 1;
-            const obj4 = { value: tmp4(10030).transferToPlaystationWithAlert(_require, stateFromStores[_slicedToArray], importDefault), done: false };
+            const obj4 = { value: tmp4(10069).transferToPlaystationWithAlert(_require, stateFromStores[_slicedToArray], importDefault), done: false };
             return obj4;
           }
         } else if (arg0 === 1) {
@@ -496,7 +496,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          v1(4725).hideActionSheet();
+          v1(4757).hideActionSheet();
           const ComponentDispatch = tmp4(1114).ComponentDispatch;
           ComponentDispatch.dispatch(constants.TOGGLE_CALL_CONTROL_DRAWER);
           dependencyMap = 3;

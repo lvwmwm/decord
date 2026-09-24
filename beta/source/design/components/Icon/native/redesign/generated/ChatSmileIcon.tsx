@@ -1,13 +1,13 @@
-// Module ID: 9531
-// Function ID: 9532
+// Module ID: 9563
+// Function ID: 9564
 // Name: ChatSmileIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 9532, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9564, 4493, 2]
 
-// Module 9531 (ChatSmileIcon)
+// Module 9563 (ChatSmileIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod9532 from "module_9532" /* 9532 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9564 from "module_9564" /* 9564 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const ChatSmileIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(9532);
+    const tmpResult = tmp(9564);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const ChatSmileIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9532, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9564, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

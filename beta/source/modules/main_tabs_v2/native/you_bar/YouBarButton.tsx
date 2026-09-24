@@ -1,25 +1,25 @@
-// Module ID: 16735
-// Function ID: 16736
+// Module ID: 16745
+// Function ID: 16746
 // Name: YouBarButton
-// Dependencies: [19, 17, 15354, 21, 4758, 580, 558, 568, 9092, 8117, 8178, 2]
+// Dependencies: [19, 17, 15364, 21, 4790, 580, 558, 568, 9124, 8149, 8210, 2]
 
-// Module 16735 (YouBarButton)
+// Module 16745 (YouBarButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BadgeDefault from "Badge" /* 8117 */;
-import IconButton from "IconButton" /* 8178 */;
-import ClipView from "ClipView" /* 9092 */;
+import BadgeDefault from "Badge" /* 8149 */;
+import IconButton from "IconButton" /* 8210 */;
+import ClipView from "ClipView" /* 9124 */;
 import noop from "module_19" /* 19 */;
 
 const ClipViewDefault = ClipView;
 
 require = fn;
 const View = fn(17).View;
-const YouBarConstants = fn(15354);
+const YouBarConstants = fn(15364);
 ({ YOU_BAR_BUTTON_HIT_SLOP: hasOwnProperty, YOU_BAR_BUTTON_ICON_SIZE: metroRequire } = YouBarConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { buttonContainer: { position: "relative", borderRadius: nativeDefault.modules.button.BORDER_RADIUS, overflow: "hidden" } };
 let closure_9 = createStyles.createStyles(obj);
 let ReactCompilerGating = fn(558);
@@ -112,7 +112,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp6;
   }
-  const rect = { position: "absolute", left: sum, top: sum1, right: "unicodeVersion", bottom: "messageId", padding: "ind", minWidth: "applicationId" };
+  const rect = { position: "absolute", left: sum, top: sum1, right: "unicodeVersion", bottom: "Math", padding: "flags", minWidth: "applicationId" };
   cResult[0] = sum;
   cResult[1] = sum1;
   cResult[2] = rect;
@@ -130,7 +130,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const items = [size, badgeSize, num2, num];
   return noop.useMemo(() => {
-    const rect = { position: "absolute", left: size - badgeSize + num, top: size - badgeSize + num2, right: "unicodeVersion", bottom: "messageId", padding: "ind", minWidth: "applicationId" };
+    const rect = { position: "absolute", left: size - badgeSize + num, top: size - badgeSize + num2, right: "unicodeVersion", bottom: "Math", padding: "flags", minWidth: "applicationId" };
     return rect;
   }, items);
 });

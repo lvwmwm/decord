@@ -1,12 +1,12 @@
-// Module ID: 18339
-// Function ID: 18340
+// Module ID: 18349
+// Function ID: 18350
 // Name: AgeVerificationScreen
-// Dependencies: [19, 17, 1376, 1078, 21, 4758, 558, 568, 1259, 18332, 504, 18326, 8864, 1982, 8689, 5907, 1119, 2780, 3038, 8687, 2112, 6832, 14459, 4754, 8866, 18335, 2]
+// Dependencies: [19, 17, 1376, 1078, 21, 4790, 558, 568, 1259, 18342, 504, 18336, 8896, 1982, 8721, 5939, 1119, 2780, 3038, 8719, 2112, 6864, 14497, 4786, 8898, 18345, 2]
 
-// Module 18339 (AgeVerificationScreen)
+// Module 18349 (AgeVerificationScreen)
 import Server from "Server" /* 1982 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8689 */;
-import types from "types" /* 18326 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8721 */;
+import types from "types" /* 18336 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -14,7 +14,7 @@ require = fn;
 const Pressable = fn(17).Pressable;
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ helpLink: { textAlign: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

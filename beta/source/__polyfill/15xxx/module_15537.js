@@ -1,9 +1,0 @@
-// Module ID: 15537
-// Function ID: 15538
-// Dependencies: [1125]
-
-// Module 15537
-import registerAsset from "module_1125" /* 1125 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/images", width: 16, height: 16, scales: [1, 2, 3], hash: "feb0699dba8bf9a96f37b026eba6ef56", name: "arrow-sm-down", type: "png" });

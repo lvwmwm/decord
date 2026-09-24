@@ -1,14 +1,14 @@
-// Module ID: 8521
-// Function ID: 8522
+// Module ID: 8553
+// Function ID: 8554
 // Name: profile_customization/ProfileCustomizationUtils
-// Dependencies: [558, 568, 1401, 8522, 1096, 2]
+// Dependencies: [558, 568, 1401, 8554, 1096, 2]
 // Exports: getAvatarSource
 
-// Module 8521 (profile_customization/ProfileCustomizationUtils)
+// Module 8553 (profile_customization/ProfileCustomizationUtils)
 import c from "c" /* 568 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
 import AvatarUtils from "AvatarUtils" /* 1401 */;
-import VideoBackground from "VideoBackground" /* 8522 */;
+import VideoBackground from "VideoBackground" /* 8554 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,11 +48,11 @@ export const useUserProfileBannerBackgroundColor = ReactCompilerGating.isReactCo
     }
   }
   if (cResult[6] !== tmp4) {
-    const memoizedImageSourceResult = tmp(8522).memoizedImageSource(tmp4);
+    const memoizedImageSourceResult = tmp(8554).memoizedImageSource(tmp4);
     cResult[6] = tmp4;
     cResult[7] = memoizedImageSourceResult;
     let tmp13 = memoizedImageSourceResult;
-    const tmpResult4 = tmp(8522);
+    const tmpResult4 = tmp(8554);
   } else {
     tmp13 = cResult[7];
   }

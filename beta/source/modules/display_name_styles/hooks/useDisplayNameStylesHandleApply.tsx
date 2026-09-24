@@ -1,9 +1,9 @@
-// Module ID: 15597
-// Function ID: 15598
+// Module ID: 15607
+// Function ID: 15608
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [19, 1078, 558, 568, 1395, 8441, 8438, 1245, 1396, 2]
+// Dependencies: [19, 1078, 558, 568, 1395, 8473, 8470, 1245, 1396, 2]
 
-// Module 15597 (useDisplayNameStylesHandleApply)
+// Module 15607 (useDisplayNameStylesHandleApply)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1395 */;
 import DisplayNameFont from "DisplayNameFont" /* 1396 */;
@@ -58,12 +58,12 @@ export const useDisplayNameStylesHandleApply = ReactCompilerGating.isReactCompil
       }
       const obj = { fontId: selectedFontId, effectId: selectedEffectId, colors: items };
       if (isTryItOut) {
-        const result = tmp2(8441).setTryItOutDisplayNameStyles(obj);
-        const tmp2Result = tmp2(8441);
+        const result = tmp2(8473).setTryItOutDisplayNameStyles(obj);
+        const tmp2Result = tmp2(8473);
       } else {
         const obj2 = { guildId, displayNameStyles: obj };
-        tmp2(8438).setPendingChanges(obj2);
-        const tmp2Result2 = tmp2(8438);
+        tmp2(8470).setPendingChanges(obj2);
+        const tmp2Result2 = tmp2(8470);
       }
       const obj3 = { font_name: DisplayNameFont.DisplayNameFont[selectedFontId], effect_name: DisplayNameEffect.DisplayNameEffect[selectedEffectId], colors: selectedColors };
       AnalyticsUtilsDefault.track(AnalyticEvents.DISPLAY_NAME_STYLES_APPLIED, obj3);
@@ -107,12 +107,12 @@ export const useDisplayNameStylesHandleApply = ReactCompilerGating.isReactCompil
       }
       const obj = { fontId: selectedFontId, effectId: selectedEffectId, colors: items };
       if (isTryItOut) {
-        const result = tmp2(8441).setTryItOutDisplayNameStyles(obj);
-        const tmp2Result = tmp2(8441);
+        const result = tmp2(8473).setTryItOutDisplayNameStyles(obj);
+        const tmp2Result = tmp2(8473);
       } else {
         const obj2 = { guildId, displayNameStyles: obj };
-        tmp2(8438).setPendingChanges(obj2);
-        const tmp2Result2 = tmp2(8438);
+        tmp2(8470).setPendingChanges(obj2);
+        const tmp2Result2 = tmp2(8470);
       }
       const obj3 = { font_name: DisplayNameFont.DisplayNameFont[selectedFontId], effect_name: DisplayNameEffect.DisplayNameEffect[selectedEffectId], colors: selectedColors };
       AnalyticsUtilsDefault.track(AnalyticEvents.DISPLAY_NAME_STYLES_APPLIED, obj3);

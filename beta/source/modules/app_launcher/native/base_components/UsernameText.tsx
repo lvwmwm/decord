@@ -1,12 +1,12 @@
-// Module ID: 12324
-// Function ID: 12325
+// Module ID: 12360
+// Function ID: 12361
 // Name: UsernameText
-// Dependencies: [19, 21, 558, 568, 4910, 4754, 2]
+// Dependencies: [19, 21, 558, 568, 4942, 4786, 2]
 
-// Module 12324 (UsernameText)
+// Module 12360 (UsernameText)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import NicknameUtils from "NicknameUtils" /* 4910 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import NicknameUtils from "NicknameUtils" /* 4942 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -77,7 +77,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     const obj2 = {};
                     const merged = Object.assign(tmp4);
                     obj2.children = tmp26;
-                    const tmp38 = React4(tmp(4754).Text, obj2);
+                    const tmp38 = React4(tmp(4786).Text, obj2);
                     cResult[24] = tmp26;
                     cResult[25] = tmp4;
                     cResult[26] = tmp38;
@@ -94,7 +94,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 obj4.color = "text-muted";
                 const items1 = ["(", tmp19, ")"];
                 obj4.children = items1;
-                items[2] = React2(tmp(4754).Text, obj4);
+                items[2] = React2(tmp(4786).Text, obj4);
                 obj3.children = items;
                 tmp27 = React2(React3, obj3);
               }
@@ -119,7 +119,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           obj6.color = "text-muted";
           const items3 = ["#", user.discriminator];
           obj6.children = items3;
-          const tmp18 = React2(tmp(4754).Text, obj6);
+          const tmp18 = React2(tmp(4786).Text, obj6);
           cResult[13] = tmp4;
           cResult[14] = user.discriminator;
           cResult[15] = tmp18;
@@ -132,12 +132,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[8] = tmp10;
       tmp8 = tmp10;
     }
-    const name = tmp(4910).getName(guildId, null, user);
+    const name = tmp(4942).getName(guildId, null, user);
     cResult[3] = guildId;
     cResult[4] = user;
     cResult[5] = name;
     tmp5 = name;
-    const tmpResult = tmp(4910);
+    const tmpResult = tmp(4942);
   }
   const obj7 = { variant: str, color: str2 };
   cResult[0] = str2;
@@ -165,7 +165,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj4.color = "text-muted";
     const items1 = ["#", user.discriminator];
     obj4.children = items1;
-    items[1] = React2(tmp(4754).Text, obj4);
+    items[1] = React2(tmp(4786).Text, obj4);
     obj3.children = items;
     str1 = React2(React3, obj3);
   }
@@ -180,7 +180,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj7.color = "text-muted";
     const items3 = ["(", str1, ")"];
     obj7.children = items3;
-    items2[2] = React2(tmp(4754).Text, obj7);
+    items2[2] = React2(tmp(4786).Text, obj7);
     obj6.children = items2;
     tmp13 = React2(React3, obj6);
   }

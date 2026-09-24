@@ -1,15 +1,15 @@
-// Module ID: 17480
-// Function ID: 17481
+// Module ID: 17490
+// Function ID: 17491
 // Name: panel/LeaveActivityButton
-// Dependencies: [19, 9313, 21, 558, 568, 9558, 17470, 2]
+// Dependencies: [19, 9345, 21, 558, 568, 9590, 17480, 2]
 
-// Module 17480 (panel/LeaveActivityButton)
-import FramesNativeManagerDefault from "FramesNativeManager" /* 9558 */;
-import LeaveActivityButton from "LeaveActivityButton" /* 17470 */;
+// Module 17490 (panel/LeaveActivityButton)
+import FramesNativeManagerDefault from "FramesNativeManager" /* 9590 */;
+import LeaveActivityButton from "LeaveActivityButton" /* 17480 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const ActivityPanelModes = fn(9313).ActivityPanelModes;
+const ActivityPanelModes = fn(9345).ActivityPanelModes;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -25,7 +25,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((frame)
     }
     return tmp4;
   }
-  const tmp5 = jsx(frame(17470).BaseLeaveActivityButton, {
+  const tmp5 = jsx(frame(17480).BaseLeaveActivityButton, {
     onPress() {
       setMode(ActivityPanelModes.DISCONNECTED);
       const timerId = setTimeout(() => {

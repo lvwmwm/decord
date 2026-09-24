@@ -1,16 +1,16 @@
-// Module ID: 16986
-// Function ID: 16987
+// Module ID: 16996
+// Function ID: 16997
 // Name: MediaKeyboardFloatingSend
-// Dependencies: [32, 19, 17, 5106, 21, 4758, 580, 558, 568, 504, 4497, 1616, 5187, 676, 5198, 1119, 4702, 9189, 2]
+// Dependencies: [32, 19, 17, 5138, 21, 4790, 580, 558, 568, 504, 4529, 1616, 5219, 676, 5230, 1119, 4734, 9221, 2]
 
-// Module 16986 (MediaKeyboardFloatingSend)
+// Module 16996 (MediaKeyboardFloatingSend)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef676 from "module_676" /* 676 */;
-import spring from "spring" /* 5187 */;
+import spring from "spring" /* 5219 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5106 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5138 */;
 
 const require = globalThis.__r;
 
@@ -19,7 +19,7 @@ const StyleSheet = fn(17).StyleSheet;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 let c8 = 0.7;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { sendContainer: null, gradient: null };
 let obj3 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -148,12 +148,12 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
         obj.opacity = spring.withSpring(num);
         return obj;
       };
-      const obj3 = { insetFab: bottom, tokens: tmp5(580), withSpring: tmp(5187).withSpring, sendVisibleSharedValue: tmp10 };
+      const obj3 = { insetFab: bottom, tokens: tmp5(580), withSpring: tmp(5219).withSpring, sendVisibleSharedValue: tmp10 };
       fn.__closure = obj3;
       fn.__workletHash = 16399716270519;
       fn.__initData = __initData5;
-      const animatedStyle = tmp(4497).useAnimatedStyle(fn);
-      const tmpResult = tmp(4497);
+      const animatedStyle = tmp(4529).useAnimatedStyle(fn);
+      const tmpResult = tmp(4529);
       class T {
         constructor() {
           pointerEvents = "none";
@@ -167,7 +167,7 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
       T.__closure = obj4;
       T.__workletHash = 17338809179807;
       T.__initData = __initData6;
-      const animatedProps = tmp(4497).useAnimatedProps(T);
+      const animatedProps = tmp(4529).useAnimatedProps(T);
       const _Symbol = Symbol;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
         const point = { x: 0, y: 0 };
@@ -245,7 +245,7 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
                 }
               }
               const stringResult = obj15.string(tmp(1119).t.TXNS7S);
-              const tmp38 = closure_6(tmp(4702).SendMessageIcon, {});
+              const tmp38 = closure_6(tmp(4734).SendMessageIcon, {});
               cResult[20] = stringResult;
               cResult[21] = tmp38;
               let tmp35 = tmp38;
@@ -277,7 +277,7 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
               const obj5 = { style: tmp26, animatedProps, children: null };
               const items = [tmp27, tmp39];
               obj5.children = items;
-              const tmp44 = closure_7(tmp5(4497).View, obj5);
+              const tmp44 = closure_7(tmp5(4529).View, obj5);
               cResult[25] = animatedProps;
               cResult[26] = tmp39;
               cResult[27] = tmp26;
@@ -294,7 +294,7 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
               cResult[29] = tmp44;
             }
             const obj6 = { accessibilityLabel: tmp34, icon: tmp35, onPress: onSend, positionBottom: bottom };
-            const tmp41 = closure_6(tmp(9189).FloatingActionButton, obj6);
+            const tmp41 = closure_6(tmp(9221).FloatingActionButton, obj6);
             cResult[22] = bottom;
             cResult[23] = onSend;
             cResult[24] = tmp41;
@@ -302,11 +302,11 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
           const obj7 = { style: tmp4.gradient };
           const merged = Object.assign(tmp22);
           obj7.pointerEvents = "none";
-          const tmp33 = closure_6(tmp5(5198), obj7);
+          const tmp33 = closure_6(tmp5(5230), obj7);
           cResult[17] = tmp22;
           cResult[18] = tmp4.gradient;
           cResult[19] = tmp33;
-          const tmp5Result = tmp5(5198);
+          const tmp5Result = tmp5(5230);
         }
         const items1 = [animatedStyle, tmp4.sendContainer];
         cResult[14] = animatedStyle;
@@ -320,7 +320,7 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
       cResult[11] = tmp20;
       cResult[12] = obj8;
       tmp22 = obj8;
-      const tmpResult2 = tmp(4497);
+      const tmpResult2 = tmp(4529);
     }
   }
   const obj9 = { animatedIndex, channelId, draftType };

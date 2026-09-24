@@ -1,14 +1,14 @@
-// Module ID: 16108
-// Function ID: 16109
+// Module ID: 16118
+// Function ID: 16119
 // Name: UserSettingsDesignSystemAILoader
-// Dependencies: [19, 17, 21, 4758, 558, 568, 4754, 5824, 5186, 14406, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 4786, 5856, 5218, 14444, 2]
 
-// Module 16108 (UserSettingsDesignSystemAILoader)
+// Module 16118 (UserSettingsDesignSystemAILoader)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import Card from "Card" /* 5824 */;
-import AILoader from "AILoader" /* 14406 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import Card from "Card" /* 5856 */;
+import AILoader from "AILoader" /* 14444 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ ScrollView: c2, View: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ container: { padding: 16 }, row: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" } });
 let closure_7 = [12, 16, 24];
 let items = [{ color: "text-default", label: "text-default" }, { color: "text-subtle", label: "text-subtle" }];
@@ -69,16 +69,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { children: null };
     const obj3 = { children: null };
     items = [
-      React4(tmp(4754).Text, { variant: "text-lg/bold", children: "Sizes" }),
-      React4(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "`size` is the glyph size in pixels; the gap between slots scales with it. Default 16." }),
+      React4(tmp(4786).Text, { variant: "text-lg/bold", children: "Sizes" }),
+      React4(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "`size` is the glyph size in pixels; the gap between slots scales with it. Default 16." }),
       closure_7.map((size) => {
           const obj = { label: "" + size + "px", children: closure_1_4(AILoader.AILoader, { size }) };
           return closure_1_4(closure_1_9, obj, size);
         })
     ];
     obj3.children = items;
-    obj2.children = hasOwnProperty(tmp(5186).Stack, obj3);
-    const tmp9 = React4(tmp(5824).Card, obj2);
+    obj2.children = hasOwnProperty(tmp(5218).Stack, obj3);
+    const tmp9 = React4(tmp(5856).Card, obj2);
     cResult[0] = tmp9;
     let first = tmp9;
   } else {
@@ -90,18 +90,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj5 = { children: null };
     const obj6 = { children: null };
     const items2 = [
-      React4(tmp(4754).Text, { variant: "text-lg/bold", children: "Colors" }),
-      React4(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "Any semantic text token. Defaults to `text-default`." }),
+      React4(tmp(4786).Text, { variant: "text-lg/bold", children: "Colors" }),
+      React4(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "Any semantic text token. Defaults to `text-default`." }),
       items.map((color) => {
           const label = color.label;
           return closure_1_4(closure_1_9, { label, children: closure_1_4(AILoader.AILoader, { color: color.color }) }, label);
         })
     ];
     obj6.children = items2;
-    obj5.children = hasOwnProperty(tmp(5186).Stack, obj6);
-    items1[1] = React4(tmp(5824).Card, obj5);
+    obj5.children = hasOwnProperty(tmp(5218).Stack, obj6);
+    items1[1] = React4(tmp(5856).Card, obj5);
     obj4.children = items1;
-    const tmp14 = hasOwnProperty(tmp(5186).Stack, obj4);
+    const tmp14 = hasOwnProperty(tmp(5218).Stack, obj4);
     cResult[1] = tmp14;
     let tmp10 = tmp14;
   } else {

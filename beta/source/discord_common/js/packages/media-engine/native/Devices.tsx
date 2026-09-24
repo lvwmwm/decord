@@ -1,12 +1,12 @@
-// Module ID: 4884
-// Function ID: 4885
+// Module ID: 4916
+// Function ID: 4917
 // Name: Devices
-// Dependencies: [4815, 1344, 1998, 2]
+// Dependencies: [4847, 1344, 1998, 2]
 // Exports: getAudioInputDevices, getAudioOutputDevices, getVideoInputDevices, sanitizeDevices
 
-// Module 4884 (Devices)
+// Module 4916 (Devices)
 import formatDefault from "format" /* 1344 */;
-import Constants from "Constants" /* 4815 */;
+import Constants from "Constants" /* 4847 */;
 import size from "module_2" /* 2 */;
 
 ({ DEFAULT_DEVICE_ID: c3, DeviceTypes: closure_4 } = Constants);

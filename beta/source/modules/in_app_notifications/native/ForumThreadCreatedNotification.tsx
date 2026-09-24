@@ -1,17 +1,17 @@
-// Module ID: 13006
-// Function ID: 13007
+// Module ID: 13042
+// Function ID: 13043
 // Name: ForumThreadCreatedNotification
-// Dependencies: [19, 12960, 21, 4911, 1119, 4990, 4769, 4961, 12979, 1984, 13000, 1181, 4754, 2]
+// Dependencies: [19, 12996, 21, 4943, 1119, 5022, 4801, 4993, 13015, 1984, 13036, 1181, 4786, 2]
 // Exports: default
 
-// Module 13006 (ForumThreadCreatedNotification)
+// Module 13042 (ForumThreadCreatedNotification)
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import transitionToChannel from "transitionToChannel" /* 4769 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
+import transitionToChannel from "transitionToChannel" /* 4801 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_4 = fn(12960).NOTIFICATION_PREVIEW_LINE_CLAMP;
+let closure_4 = fn(12996).NOTIFICATION_PREVIEW_LINE_CLAMP;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/ForumThreadCreatedNotification.tsx");
@@ -38,7 +38,7 @@ export default function ForumThreadCreatedNotification(notification) {
   const callback = guild.useCallback(() => {
     transitionToChannel.transitionToThread(thread);
   }, items1);
-  const callback1 = guild.useCallback(() => ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12979, dependencyMap.paths), { channelId: notification.parentChannel.id }, "in-app-notification-settings-modal"), items2);
+  const callback1 = guild.useCallback(() => ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(13015, dependencyMap.paths), { channelId: notification.parentChannel.id }, "in-app-notification-settings-modal"), items2);
   const obj2 = { icon: null, children: null, header: null, onPress: null, onSettingsPress: null, notification: null };
   const obj = notification(parentChannel[5]);
   obj2.icon = jsx(notification(parentChannel[11]).Avatar, { size: notification(parentChannel[11]).AvatarSizes.NORMAL, user: threadCreator, guildId: thread.guild_id });

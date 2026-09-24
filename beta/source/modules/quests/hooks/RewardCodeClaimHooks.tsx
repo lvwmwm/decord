@@ -1,13 +1,13 @@
-// Module ID: 11901
-// Function ID: 11902
+// Module ID: 11937
+// Function ID: 11938
 // Name: RewardCodeClaimHooks
-// Dependencies: [5, 32, 19, 558, 568, 10564, 5666, 11902, 11610, 7970, 7971, 7981, 5670, 7969, 4449, 2]
+// Dependencies: [5, 32, 19, 558, 568, 10600, 5698, 11938, 11646, 8002, 8003, 8013, 5702, 8001, 4481, 2]
 
-// Module 11901 (RewardCodeClaimHooks)
-import openURLDefault from "openURL" /* 4449 */;
-import QuestTypes from "QuestTypes" /* 5666 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7970 */;
-import QuestActionCreators from "QuestActionCreators" /* 10564 */;
+// Module 11937 (RewardCodeClaimHooks)
+import openURLDefault from "openURL" /* 4481 */;
+import QuestTypes from "QuestTypes" /* 5698 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 8002 */;
+import QuestActionCreators from "QuestActionCreators" /* 10600 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -45,16 +45,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   const fn = function n() {
     if (null != redemptionLink) {
       if (obj7.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_reward_code_redemption_link")) {
-        const obj2 = { type: tmp18(7981).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp18(5670).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: tmp18(7969).QuestContentCTA.REDEEM_REWARD, surfaceId: questContent, sourceQuestContent, impressionId: questImpressionId, questContentPosition };
-        tmp18(7971).captureAdUserAction(obj2);
-        const tmp18Result = tmp18(7971);
-        const obj3 = { type: tmp18(7981).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp18(5670).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: tmp18(7969).QuestContentCTA.VISIT_REDEMPTION_LINK, surfaceId: questContent, sourceQuestContent, impressionId: questImpressionId, questContentPosition };
-        tmp18(7971).captureAdUserAction(obj3);
-        const tmp18Result2 = tmp18(7971);
+        const obj2 = { type: tmp18(8013).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp18(5702).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: tmp18(8001).QuestContentCTA.REDEEM_REWARD, surfaceId: questContent, sourceQuestContent, impressionId: questImpressionId, questContentPosition };
+        tmp18(8003).captureAdUserAction(obj2);
+        const tmp18Result = tmp18(8003);
+        const obj3 = { type: tmp18(8013).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp18(5702).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: tmp18(8001).QuestContentCTA.VISIT_REDEMPTION_LINK, surfaceId: questContent, sourceQuestContent, impressionId: questImpressionId, questContentPosition };
+        tmp18(8003).captureAdUserAction(obj3);
+        const tmp18Result2 = tmp18(8003);
       } else {
-        const obj = { questId: quest.id, questContent, questContentCTA: tmp18(7969).QuestContentCTA.REDEEM_REWARD, questContentPosition, sourceQuestContent };
+        const obj = { questId: quest.id, questContent, questContentCTA: tmp18(8001).QuestContentCTA.REDEEM_REWARD, questContentPosition, sourceQuestContent };
         trackQuestContentClickedWithImpression(obj);
-        const obj4 = { questId: quest.id, questContent, questContentCTA: tmp18(7969).QuestContentCTA.VISIT_REDEMPTION_LINK, questContentPosition, sourceQuestContent };
+        const obj4 = { questId: quest.id, questContent, questContentCTA: tmp18(8001).QuestContentCTA.VISIT_REDEMPTION_LINK, questContentPosition, sourceQuestContent };
         trackQuestContentClickedWithImpression(obj4);
       }
       openURLDefault(tmp);
@@ -83,16 +83,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   return trackQuestContentClickedWithImpression.useCallback(() => {
     if (null != redemptionLink) {
       if (obj7.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_reward_code_redemption_link")) {
-        const obj2 = { type: tmp18(7981).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp18(5670).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: tmp18(7969).QuestContentCTA.REDEEM_REWARD, surfaceId: questContent, sourceQuestContent, impressionId: questImpressionId, questContentPosition };
-        tmp18(7971).captureAdUserAction(obj2);
-        const tmp18Result = tmp18(7971);
-        const obj3 = { type: tmp18(7981).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp18(5670).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: tmp18(7969).QuestContentCTA.VISIT_REDEMPTION_LINK, surfaceId: questContent, sourceQuestContent, impressionId: questImpressionId, questContentPosition };
-        tmp18(7971).captureAdUserAction(obj3);
-        const tmp18Result2 = tmp18(7971);
+        const obj2 = { type: tmp18(8013).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp18(5702).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: tmp18(8001).QuestContentCTA.REDEEM_REWARD, surfaceId: questContent, sourceQuestContent, impressionId: questImpressionId, questContentPosition };
+        tmp18(8003).captureAdUserAction(obj2);
+        const tmp18Result = tmp18(8003);
+        const obj3 = { type: tmp18(8013).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp18(5702).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: tmp18(8001).QuestContentCTA.VISIT_REDEMPTION_LINK, surfaceId: questContent, sourceQuestContent, impressionId: questImpressionId, questContentPosition };
+        tmp18(8003).captureAdUserAction(obj3);
+        const tmp18Result2 = tmp18(8003);
       } else {
-        const obj = { questId: quest.id, questContent, questContentCTA: tmp18(7969).QuestContentCTA.REDEEM_REWARD, questContentPosition, sourceQuestContent };
+        const obj = { questId: quest.id, questContent, questContentCTA: tmp18(8001).QuestContentCTA.REDEEM_REWARD, questContentPosition, sourceQuestContent };
         trackQuestContentClickedWithImpression(obj);
-        const obj4 = { questId: quest.id, questContent, questContentCTA: tmp18(7969).QuestContentCTA.VISIT_REDEMPTION_LINK, questContentPosition, sourceQuestContent };
+        const obj4 = { questId: quest.id, questContent, questContentCTA: tmp18(8001).QuestContentCTA.VISIT_REDEMPTION_LINK, questContentPosition, sourceQuestContent };
         trackQuestContentClickedWithImpression(obj4);
       }
       openURLDefault(tmp);
@@ -433,9 +433,9 @@ export const useClaimRewardCodePrimaryCtaClickHandler = ReactCompilerGating.isRe
       } else {
         claimCode(tmp7.id, QuestTypes.QuestRewardCodePlatforms.CROSS_PLATFORM, questContent);
         if (obj4.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_reward_code_primary_cta")) {
-          const obj2 = { type: tmp23(7981).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp23(5670).AdCreativeType.QUEST, adCreativeId: tmp7.id, questContentCTA, surfaceId: tmp25, sourceQuestContent, impressionId: questImpressionId, questContentPosition };
-          tmp23(7971).captureAdUserAction(obj2);
-          const tmp23Result = tmp23(7971);
+          const obj2 = { type: tmp23(8013).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp23(5702).AdCreativeType.QUEST, adCreativeId: tmp7.id, questContentCTA, surfaceId: tmp25, sourceQuestContent, impressionId: questImpressionId, questContentPosition };
+          tmp23(8003).captureAdUserAction(obj2);
+          const tmp23Result = tmp23(8003);
         } else {
           const obj = { questId: tmp7.id, questContent: tmp25, questContentCTA, questContentPosition, sourceQuestContent };
           trackQuestContentClickedWithImpression(obj);
@@ -504,9 +504,9 @@ export const useClaimRewardCodePrimaryCtaClickHandler = ReactCompilerGating.isRe
       } else {
         claimCode(tmp7.id, QuestTypes.QuestRewardCodePlatforms.CROSS_PLATFORM, questContent);
         if (obj4.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_reward_code_primary_cta")) {
-          const obj2 = { type: tmp23(7981).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp23(5670).AdCreativeType.QUEST, adCreativeId: tmp7.id, questContentCTA: GET_REWARD_CODE, surfaceId: tmp25, sourceQuestContent, impressionId: questImpressionId, questContentPosition };
-          tmp23(7971).captureAdUserAction(obj2);
-          const tmp23Result = tmp23(7971);
+          const obj2 = { type: tmp23(8013).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp23(5702).AdCreativeType.QUEST, adCreativeId: tmp7.id, questContentCTA: GET_REWARD_CODE, surfaceId: tmp25, sourceQuestContent, impressionId: questImpressionId, questContentPosition };
+          tmp23(8003).captureAdUserAction(obj2);
+          const tmp23Result = tmp23(8003);
         } else {
           const obj = { questId: tmp7.id, questContent: tmp25, questContentCTA: GET_REWARD_CODE, questContentPosition, sourceQuestContent };
           trackQuestContentClickedWithImpression(obj);

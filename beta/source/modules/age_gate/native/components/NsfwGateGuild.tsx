@@ -1,15 +1,15 @@
-// Module ID: 10470
-// Function ID: 10471
+// Module ID: 10039
+// Function ID: 10040
 // Name: NsfwGateGuild
-// Dependencies: [19, 17, 2109, 1376, 10471, 1078, 21, 4758, 580, 558, 568, 1119, 2112, 1245, 9408, 7216, 10472, 4754, 5188, 2]
+// Dependencies: [19, 17, 2109, 1376, 10040, 1078, 21, 4790, 580, 558, 568, 1119, 2112, 1245, 9440, 7248, 10041, 4786, 5220, 2]
 
-// Module 10470 (NsfwGateGuild)
+// Module 10039 (NsfwGateGuild)
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import BackgroundImageDefault from "BackgroundImage" /* 7216 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 9408 */;
-import _modDef10472 from "module_10472" /* 10472 */;
+import BackgroundImageDefault from "BackgroundImage" /* 7248 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 9440 */;
+import _modDef10041 from "module_10041" /* 10041 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 import UserStore from "UserStore" /* 1376 */;
@@ -17,12 +17,12 @@ import UserStore from "UserStore" /* 1376 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
-const NsfwGateSource = fn(10471).NsfwGateSource;
+const NsfwGateSource = fn(10040).NsfwGateSource;
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_9, HelpdeskArticles: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, alignItems: "center", justifyContent: "center", padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, header: { textAlign: "center", marginBottom: 8 }, description: { textAlign: "center", marginBottom: 16 }, image: { marginBottom: 16 } };
 let closure_13 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -250,7 +250,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return;
       }
     }
-    const obj4 = { source: _modDef10472, style: tmp4.image };
+    const obj4 = { source: _modDef10041, style: tmp4.image };
     const tmp25 = closure_11(closure_5, obj4);
     cResult[8] = tmp4.image;
     cResult[9] = tmp25;
@@ -324,7 +324,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj5 = { style: tmp4.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: first };
-    const tmp27 = closure_11(tmp(4754).Text, obj5);
+    const tmp27 = closure_11(tmp(4786).Text, obj5);
     cResult[10] = tmp4.header;
     cResult[11] = tmp27;
   } else {
@@ -397,9 +397,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj6 = { style: tmp4.description, variant: "text-md/normal", color: "text-default", children: tmp7 };
-    const tmp30 = closure_11(tmp(4754).Text, obj6);
+    const tmp30 = closure_11(tmp(4786).Text, obj6);
     const obj7 = { style: tmp4.description, variant: "text-md/normal", color: "text-default", children: tmp9 };
-    const tmp31 = closure_11(tmp(4754).Text, obj7);
+    const tmp31 = closure_11(tmp(4786).Text, obj7);
     cResult[12] = tmp4.description;
     cResult[13] = tmp30;
     cResult[14] = tmp31;
@@ -547,7 +547,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj9 = { onPress: onClose, size: "md", text: tmp32 };
-    const tmp35 = closure_11(tmp(5188).Button, obj9);
+    const tmp35 = closure_11(tmp(5220).Button, obj9);
     cResult[16] = onClose;
     cResult[17] = tmp35;
   } else {
@@ -669,16 +669,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     AnalyticsUtilsDefault.track(constants.GUILD_NSFW_GATE_VIEWED, obj2);
   }, items);
   let obj3 = { style: tmp.container, children: null };
-  const items1 = [closure_11(currentUser(7216), {}), , , , , ];
+  const items1 = [closure_11(currentUser(7248), {}), , , , , ];
   const formatResult = intl3.format(guildId(1119).t.Z12LNW, obj);
-  items1[1] = closure_11(closure_5, { source: currentUser(10472), style: tmp.image });
-  items1[2] = closure_11(guildId(4754).Text, { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult });
-  items1[3] = closure_11(guildId(4754).Text, { style: tmp.description, variant: "text-md/normal", color: "text-default", children: stringResult1 });
-  items1[4] = closure_11(guildId(4754).Text, { style: tmp.description, variant: "text-md/normal", color: "text-default", children: formatResult });
+  items1[1] = closure_11(closure_5, { source: currentUser(10041), style: tmp.image });
+  items1[2] = closure_11(guildId(4786).Text, { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult });
+  items1[3] = closure_11(guildId(4786).Text, { style: tmp.description, variant: "text-md/normal", color: "text-default", children: stringResult1 });
+  items1[4] = closure_11(guildId(4786).Text, { style: tmp.description, variant: "text-md/normal", color: "text-default", children: formatResult });
   const obj8 = { onPress: guildId.onClose, size: "md", text: null };
   const intl4 = guildId(1119).intl;
   obj8.text = intl4.string(guildId(1119).t.gRqiWV);
-  items1[5] = closure_11(guildId(5188).Button, obj8);
+  items1[5] = closure_11(guildId(5220).Button, obj8);
   obj3.children = items1;
   return closure_12(closure_4, obj3);
 });

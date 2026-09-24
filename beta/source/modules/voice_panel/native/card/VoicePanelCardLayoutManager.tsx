@@ -1,16 +1,16 @@
-// Module ID: 12422
-// Function ID: 12423
+// Module ID: 12458
+// Function ID: 12459
 // Name: VoicePanelCardLayoutManager
-// Dependencies: [32, 19, 17, 4774, 12420, 12423, 4779, 558, 568, 4497, 10345, 560, 9705, 12424, 12425, 1252, 2]
+// Dependencies: [32, 19, 17, 4806, 12456, 12459, 4811, 558, 568, 4529, 10384, 560, 9737, 12460, 12461, 1252, 2]
 
-// Module 12422 (VoicePanelCardLayoutManager)
+// Module 12458 (VoicePanelCardLayoutManager)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 560 */;
 import c from "c" /* 568 */;
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10345 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10384 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4806 */;
 
 require = fn;
 function getTargetCardSize(windowWidth) {
@@ -23,12 +23,12 @@ function getTargetCardSize(windowWidth) {
   return Math.max(closure_1_8, (windowWidth - safeAreaLeft - safeAreaRight - gutter * (num - 1)) / num);
 }
 const PixelRatio = fn(17).PixelRatio;
-const VoicePanelConstants = fn(12420);
+const VoicePanelConstants = fn(12456);
 const VoicePanelCardItemType = VoicePanelConstants.VoicePanelCardItemType;
 ({ BASE_TARGET_CARD_SIZE: closure_8, VoicePanelCTACardDimensionKeys: closure_9, VoicePanelCTACardDimensions: c10, VOICE_PANEL_CHUNK_DIVISOR: closure_11 } = VoicePanelConstants);
-const VoicePanelCardConstants = fn(12423);
+const VoicePanelCardConstants = fn(12459);
 ({ EDGE_GUTTER: closure_12, CALL_TILE_GUTTER: map1 } = VoicePanelCardConstants);
-const ParticipantTypes = fn(4779).ParticipantTypes;
+const ParticipantTypes = fn(4811).ParticipantTypes;
 let closure_15 = { id: "invalid", type: VoicePanelCardItemType.PARTICIPANT, x: 0, y: 0, width: 0, height: 0, zIndex: 0 };
 fn(558);
 let ReactCompilerGating = fn(558);

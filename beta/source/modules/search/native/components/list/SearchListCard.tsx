@@ -1,27 +1,27 @@
-// Module ID: 17146
-// Function ID: 17147
+// Module ID: 17156
+// Function ID: 17157
 // Name: SearchListCard
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1181, 4603, 4754, 4911, 11216, 5308, 1119, 5241, 5824, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1181, 4635, 4786, 4943, 11252, 5340, 1119, 5273, 5856, 2]
 
-// Module 17146 (SearchListCard)
+// Module 17156 (SearchListCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useChannelNameDefault from "useChannelName" /* 4911 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5241 */;
-import ForumIcon from "ForumIcon" /* 5308 */;
-import Card from "Card" /* 5824 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 11216 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useChannelNameDefault from "useChannelName" /* 4943 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5273 */;
+import ForumIcon from "ForumIcon" /* 5340 */;
+import Card from "Card" /* 5856 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 11252 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { channelName: { flexShrink: 1, marginStart: 4 }, channelIcon: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT }, avatar: { marginRight: 2 }, channel: { flexDirection: "row", alignItems: "center" }, author: { flexDirection: "row", alignItems: "center" }, authorName: { flexShrink: 1, marginStart: 2 }, container: null, content: null, footer: null, thumbnail: null, privateChannelIcon: null, icon: null, gdmIcon: null };
 let obj3 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 obj2.container = { flex: 1, padding: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
@@ -74,7 +74,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp14 = tmp17;
       }
       const obj4 = { style: tmp4.authorName, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: tmp8 };
-      const tmp13 = hasOwnProperty(tmp(4754).Text, obj4);
+      const tmp13 = hasOwnProperty(tmp(4786).Text, obj4);
       cResult[6] = tmp4.authorName;
       cResult[7] = tmp8;
       cResult[8] = tmp13;
@@ -140,7 +140,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         cResult[11] = tmp31;
       }
       const obj4 = { style: channel2.channelName, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: tmp5 };
-      const tmp27 = hasOwnProperty(tmp(4754).Text, obj4);
+      const tmp27 = hasOwnProperty(tmp(4786).Text, obj4);
       cResult[5] = tmp5;
       cResult[6] = channel2.channelName;
       cResult[7] = tmp27;
@@ -155,7 +155,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   } else {
     if (cResult[12] !== channel2.icon) {
       const obj6 = { style: channel2.icon, size: "xs", color: "interactive-text-default" };
-      const tmp8 = hasOwnProperty(tmp(5308).ForumIcon, obj6);
+      const tmp8 = hasOwnProperty(tmp(5340).ForumIcon, obj6);
       cResult[12] = channel2.icon;
       cResult[13] = tmp8;
       let tmp6 = tmp8;
@@ -167,7 +167,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       const obj7 = { variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: null };
       const intl = tmp(1119).intl;
       obj7.children = intl.string(tmp(1119).t.ACgJhM);
-      const tmp12 = hasOwnProperty(tmp(4754).Text, obj7);
+      const tmp12 = hasOwnProperty(tmp(4786).Text, obj7);
       cResult[14] = tmp12;
       let tmp10 = tmp12;
     } else {
@@ -223,11 +223,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmp4 = closure_7();
   const tmp5 = useChannelNameDefault(channel);
   if (cResult[0] !== channel) {
-    const channelIcon = tmp(5241).getChannelIcon(channel, { ignoreTraits: true });
+    const channelIcon = tmp(5273).getChannelIcon(channel, { ignoreTraits: true });
     cResult[0] = channel;
     cResult[1] = channelIcon;
     let tmp6 = channelIcon;
-    const tmpResult = tmp(5241);
+    const tmpResult = tmp(5273);
   } else {
     tmp6 = cResult[1];
   }
@@ -258,7 +258,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       tmp13 = tmp16;
     }
     const obj3 = { style: tmp4.channelName, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: tmp5 };
-    const tmp12 = hasOwnProperty(tmp(4754).Text, obj3);
+    const tmp12 = hasOwnProperty(tmp(4786).Text, obj3);
     cResult[5] = tmp5;
     cResult[6] = tmp4.channelName;
     cResult[7] = tmp12;
@@ -345,7 +345,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp6 = label;
     if (typeof label === "string") {
       const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: label };
-      tmp6 = hasOwnProperty(tmp(4754).Text, obj2);
+      tmp6 = hasOwnProperty(tmp(4786).Text, obj2);
     }
     cResult[0] = label;
     cResult[1] = tmp6;
@@ -357,7 +357,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp8 = subLabel;
     if (typeof subLabel === "string") {
       const obj3 = { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: subLabel };
-      tmp8 = hasOwnProperty(tmp(4754).Text, obj3);
+      tmp8 = hasOwnProperty(tmp(4786).Text, obj3);
     }
     cResult[2] = subLabel;
     cResult[3] = tmp8;

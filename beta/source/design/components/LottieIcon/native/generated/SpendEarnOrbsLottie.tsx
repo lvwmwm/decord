@@ -1,12 +1,12 @@
-// Module ID: 11481
-// Function ID: 11482
+// Module ID: 11517
+// Function ID: 11518
 // Name: SpendEarnOrbsLottie
-// Dependencies: [19, 21, 558, 568, 11482, 10204, 2]
+// Dependencies: [19, 21, 558, 568, 11518, 10243, 2]
 
-// Module 11481 (SpendEarnOrbsLottie)
+// Module 11517 (SpendEarnOrbsLottie)
 import c from "c" /* 568 */;
-import LottieIcon from "LottieIcon" /* 10204 */;
-import _mod11482 from "module_11482" /* 11482 */;
+import LottieIcon from "LottieIcon" /* 10243 */;
+import _mod11518 from "module_11518" /* 11518 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("design/components/LottieIcon/native/g
 export const SpendEarnOrbsLottie = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
   const cResult = c.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(11482);
+    const tmpResult = tmp(11518);
     cResult[0] = tmpResult;
     let first = tmpResult;
   } else {
@@ -40,5 +40,5 @@ export const SpendEarnOrbsLottie = noop.forwardRef(ReactCompilerGating.isReactCo
   tmp6 = tmp8;
 }) : ((arg0, ref) => {
   const merged = Object.assign(arg0);
-  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod11482, ref, layers, markers: items });
+  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod11518, ref, layers, markers: items });
 }));

@@ -1,13 +1,13 @@
-// Module ID: 12581
-// Function ID: 12582
+// Module ID: 12617
+// Function ID: 12618
 // Name: ScheduledMessageDraftCoachmark
-// Dependencies: [109, 19, 17, 2042, 21, 4758, 558, 568, 1119, 12366, 10452, 2]
+// Dependencies: [109, 19, 17, 2042, 21, 4790, 558, 568, 1119, 12402, 10491, 2]
 
-// Module 12581 (ScheduledMessageDraftCoachmark)
+// Module 12617 (ScheduledMessageDraftCoachmark)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import useCoachmark from "useCoachmark" /* 10452 */;
-import _modDef12366 from "module_12366" /* 12366 */;
+import useCoachmark from "useCoachmark" /* 10491 */;
+import _modDef12402 from "module_12402" /* 12402 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ let closure_3 = ["buttonRef"];
 const Image = fn(17).Image;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ image: { width: 100, height: 80 } });
 fn(558);
 const ReactCompilerGating = fn(558);
@@ -73,7 +73,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[4] !== tmp4.image) {
     const fn2 = function p() {
-      return <Image source={_modDef12366} style={image.image} />;
+      return <Image source={_modDef12402} style={image.image} />;
     };
     cResult[4] = tmp4.image;
     cResult[5] = fn2;

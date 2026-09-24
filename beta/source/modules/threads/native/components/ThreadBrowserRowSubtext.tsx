@@ -1,25 +1,25 @@
-// Module ID: 17185
-// Function ID: 17186
+// Module ID: 17195
+// Function ID: 17196
 // Name: ThreadBrowserRowSubtext
-// Dependencies: [19, 17, 4750, 2109, 1376, 7550, 1078, 1089, 21, 4758, 580, 558, 568, 504, 8028, 5217, 5739, 1119, 4603, 4754, 7555, 4990, 11, 1181, 8137, 8224, 2]
+// Dependencies: [19, 17, 4782, 2109, 1376, 7582, 1078, 1089, 21, 4790, 580, 558, 568, 504, 8060, 5249, 5771, 1119, 4635, 4786, 7587, 5022, 11, 1181, 8169, 8256, 2]
 
-// Module 17185 (ThreadBrowserRowSubtext)
+// Module 17195 (ThreadBrowserRowSubtext)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useMessageAuthorDefault from "useMessageAuthor" /* 4990 */;
-import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 5217 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
-import renderMessageMarkupDefault from "renderMessageMarkup" /* 8137 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8224 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useMessageAuthorDefault from "useMessageAuthor" /* 5022 */;
+import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 5249 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5771 */;
+import renderMessageMarkupDefault from "renderMessageMarkup" /* 8169 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8256 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 import UserStore from "UserStore" /* 1376 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7550 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7582 */;
 
 require = fn;
 const View = fn(17).View;
@@ -27,7 +27,7 @@ const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
 let items = [, ];
 ({ CHANNEL_NAME_CHANGE: arr[0], THREAD_STARTER_MESSAGE: arr[1] } = fn(1078).MessageTypes);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { row: { flexDirection: "row" }, subtextContent: { lineHeight: 18, flexShrink: 1 }, timestamp: { lineHeight: 18 }, username: { fontSize: 14, lineHeight: 18, fontFamily: fn(1089).Fonts.PRIMARY_SEMIBOLD, color: nativeDefault.colors.TEXT_SUBTLE }, dividerDot: null };
 let size = { width: 4, height: 4, marginHorizontal: 4, borderRadius: 2, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, alignSelf: "center" };
 obj.dividerDot = size;
@@ -484,8 +484,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let roleStyle;
   const tmp = closure_13();
   items = [message.author.id];
-  const subscribeGuildMembers = message(7555).useSubscribeGuildMembers({ [thread.guild_id]: items }, "ThreadBrowserRowSubtext");
-  let obj = message(7555);
+  const subscribeGuildMembers = message(7587).useSubscribeGuildMembers({ [thread.guild_id]: items }, "ThreadBrowserRowSubtext");
+  let obj = message(7587);
   const items1 = [UserStore];
   const stateFromStores = message(504).useStateFromStores(items1, () => {
     let author = UserStore.getUser(message.author.id);
@@ -501,9 +501,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ nick: c2, colorString: c3, colorStrings: c4 } = useMessageAuthorDefault(message));
   let tmp4 = useMessageAuthorDefault(message);
   const extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(message.id);
-  const timestampString = message(8028).getTimestampString(extractTimestampResult);
-  const obj5 = message(8028);
-  const timestampAccessibilityLabel = message(8028).getTimestampAccessibilityLabel(extractTimestampResult);
+  const timestampString = message(8060).getTimestampString(extractTimestampResult);
+  const obj5 = message(8060);
+  const timestampAccessibilityLabel = message(8060).getTimestampAccessibilityLabel(extractTimestampResult);
   roleStyle = useHasEnhancedRoleColorsDefault(thread.guild_id, stateFromStores.id);
   const obj7 = { user: stateFromStores, timestamp: timestampString, accessibilityLabel: timestampAccessibilityLabel, children: null };
   const obj8 = { lineClamp: 1, ellipsizeMode: "tail", lineBreakMode: "tail", style: tmp.subtextContent, variant: "text-sm/medium", color: "text-default", children: null };
@@ -533,7 +533,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return options(native.LegacyText, { children: renderMessageMarkupDefault(message, { formatInline: true, allowGameMentions: true }).content }, arg1);
     }
   });
-  obj7.children = closure_9(message(4754).Text, obj8);
+  obj7.children = closure_9(message(4786).Text, obj8);
   return closure_9(closure_16, obj7);
 });
 ReactCompilerGating = fn(558);
@@ -563,7 +563,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       }
     }
     const obj3 = { style: tmp4.timestamp, accessibilityLabel, variant: "text-sm/medium", color: "text-muted", children: text };
-    const tmp21 = options(tmp(4754).Text, obj3);
+    const tmp21 = options(tmp(4786).Text, obj3);
     cResult[0] = accessibilityLabel;
     cResult[1] = tmp4.timestamp;
     cResult[2] = text;
@@ -609,7 +609,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       }
     }
     const obj6 = { style: tmp4.timestamp, accessibilityLabel, variant: "text-sm/medium", color: "text-muted", children: combined };
-    const tmp13 = options(tmp(4754).Text, obj6);
+    const tmp13 = options(tmp(4786).Text, obj6);
     cResult[9] = accessibilityLabel;
     cResult[10] = tmp4.timestamp;
     cResult[11] = combined;
@@ -662,7 +662,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[4] = items;
   } else {
     const username2 = username.username;
-    const processColorStringsArray = tmp(8224).useProcessColorStringsArray(roleColors);
+    const processColorStringsArray = tmp(8256).useProcessColorStringsArray(roleColors);
     let tmp7 = !shouldShowRoleDot;
     if (!shouldShowRoleDot) {
       tmp7 = processColorStringsArray.length > 1;
@@ -698,7 +698,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj4 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", gradientColors: tmp11, style: username2, children: nickname };
-        const tmp14 = options(tmp(4754).Text, obj4);
+        const tmp14 = options(tmp(4786).Text, obj4);
         cResult[9] = nickname;
         cResult[10] = username2;
         cResult[11] = tmp11;
@@ -716,7 +716,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = shouldShowRoleDot;
     cResult[8] = tmp9;
     tmp8 = tmp9;
-    const tmpResult = tmp(8224);
+    const tmpResult = tmp(8256);
   }
 }) : ((usernameColor) => {
   usernameColor = usernameColor.usernameColor;
@@ -786,7 +786,7 @@ export const ThreadSubtext = ReactCompilerGating.isReactCompilerEnabled() ? ((th
   const obj = id(568);
   const stateFromStores = id(504).useStateFromStores(first, tmp6, tmp7);
   const tmpResult = id(504);
-  const lastMessageTimestamp = id(8028).useLastMessageTimestamp(thread);
+  const lastMessageTimestamp = id(8060).useLastMessageTimestamp(thread);
   if (null != stateFromStores) {
     if (!items.includes(stateFromStores.type)) {
       if (!thread.isArchivedThread()) {
@@ -806,20 +806,20 @@ export const ThreadSubtext = ReactCompilerGating.isReactCompilerEnabled() ? ((th
     }
   }
   if (cResult[4] !== lastMessageTimestamp) {
-    const timestampString = tmp(8028).getTimestampString(lastMessageTimestamp);
+    const timestampString = tmp(8060).getTimestampString(lastMessageTimestamp);
     cResult[4] = lastMessageTimestamp;
     cResult[5] = timestampString;
     let tmp15 = timestampString;
-    const tmpResult5 = tmp(8028);
+    const tmpResult5 = tmp(8060);
   } else {
     tmp15 = cResult[5];
   }
   if (cResult[6] !== lastMessageTimestamp) {
-    const timestampAccessibilityLabel = tmp(8028).getTimestampAccessibilityLabel(lastMessageTimestamp);
+    const timestampAccessibilityLabel = tmp(8060).getTimestampAccessibilityLabel(lastMessageTimestamp);
     cResult[6] = lastMessageTimestamp;
     cResult[7] = timestampAccessibilityLabel;
     let tmp17 = timestampAccessibilityLabel;
-    const tmpResult6 = tmp(8028);
+    const tmpResult6 = tmp(8060);
   } else {
     tmp17 = cResult[7];
   }
@@ -844,7 +844,7 @@ export const ThreadSubtext = ReactCompilerGating.isReactCompilerEnabled() ? ((th
   const items1 = [id];
   const stateFromStores = id(504).useStateFromStores(items, () => ThreadMessageStore.getMostRecentMessage(id), items1);
   const obj = id(504);
-  const lastMessageTimestamp = id(8028).useLastMessageTimestamp(thread);
+  const lastMessageTimestamp = id(8060).useLastMessageTimestamp(thread);
   if (null != stateFromStores) {
     if (!items.includes(stateFromStores.type)) {
       if (!thread.isArchivedThread()) {
@@ -853,9 +853,9 @@ export const ThreadSubtext = ReactCompilerGating.isReactCompilerEnabled() ? ((th
       }
     }
   }
-  const obj2 = id(8028);
-  const timestampString = id(8028).getTimestampString(lastMessageTimestamp);
-  const tmpResult = id(8028);
-  const tmpResult2 = id(8028);
-  return closure_9(closure_14, { thread, timestamp: timestampString, accessibilityLabel: id(8028).getTimestampAccessibilityLabel(lastMessageTimestamp) });
+  const obj2 = id(8060);
+  const timestampString = id(8060).getTimestampString(lastMessageTimestamp);
+  const tmpResult = id(8060);
+  const tmpResult2 = id(8060);
+  return closure_9(closure_14, { thread, timestamp: timestampString, accessibilityLabel: id(8060).getTimestampAccessibilityLabel(lastMessageTimestamp) });
 });

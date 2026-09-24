@@ -1,13 +1,13 @@
-// Module ID: 6700
-// Function ID: 6701
+// Module ID: 6732
+// Function ID: 6733
 // Name: SkullIllocon
-// Dependencies: [21, 558, 568, 6701, 5802, 2]
+// Dependencies: [21, 558, 568, 6733, 5834, 2]
 
-// Module 6700 (SkullIllocon)
+// Module 6732 (SkullIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6701 from "module_6701" /* 6701 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6733 from "module_6733" /* 6733 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const SkullIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6701 };
+    const obj2 = { uri: _modDef6733 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const SkullIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6701 };
+  const obj2 = { uri: _modDef6733 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

@@ -1,11 +1,11 @@
-// Module ID: 12706
-// Function ID: 12707
+// Module ID: 12742
+// Function ID: 12743
 // Name: useGuildPowerupOnDeactivate
-// Dependencies: [19, 558, 568, 12701, 2]
+// Dependencies: [19, 558, 568, 12737, 2]
 
-// Module 12706 (useGuildPowerupOnDeactivate)
+// Module 12742 (useGuildPowerupOnDeactivate)
 import c from "c" /* 568 */;
-import useGuildPowerupOnToggleDefault from "useGuildPowerupOnToggle" /* 12701 */;
+import useGuildPowerupOnToggleDefault from "useGuildPowerupOnToggle" /* 12737 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

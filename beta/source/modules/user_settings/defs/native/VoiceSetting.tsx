@@ -1,9 +1,9 @@
-// Module ID: 15505
-// Function ID: 15506
+// Module ID: 15515
+// Function ID: 15516
 // Name: VoiceSetting
-// Dependencies: [1996, 1078, 558, 568, 504, 1119, 11594, 10259, 15506, 2]
+// Dependencies: [1996, 1078, 558, 568, 504, 1119, 11630, 10298, 15516, 2]
 
-// Module 15505 (VoiceSetting)
+// Module 15515 (VoiceSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
@@ -13,7 +13,7 @@ require = fn;
 const Constants = fn(1078);
 ({ InputModes: c3, UserSettingsSections } = Constants);
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let Q8gkVL = dependencyMap;
   const cResult = c.c(4);
@@ -61,7 +61,7 @@ const route = SettingBuilders.createRoute({
     return intl.string(util.t.K3lovD);
   },
   parent: null,
-  IconComponent: fn(10259).MicrophoneIcon,
+  IconComponent: fn(10298).MicrophoneIcon,
   useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let Q8gkVL = dependencyMap;
     const cResult = c.c(4);

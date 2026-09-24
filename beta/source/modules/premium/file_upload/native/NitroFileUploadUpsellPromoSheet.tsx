@@ -1,12 +1,12 @@
-// Module ID: 17419
-// Function ID: 17420
+// Module ID: 17429
+// Function ID: 17430
 // Name: NitroFileUploadUpsellPromoSheet
-// Dependencies: [19, 17, 1078, 2042, 21, 4758, 580, 558, 568, 5203, 7626, 10221, 5907, 1119, 2586, 5188, 10613, 2]
+// Dependencies: [19, 17, 1078, 2042, 21, 4790, 580, 558, 568, 5235, 7658, 10260, 5939, 1119, 2586, 5220, 10649, 2]
 
-// Module 17419 (NitroFileUploadUpsellPromoSheet)
+// Module 17429 (NitroFileUploadUpsellPromoSheet)
 import nativeDefault from "native" /* 580 */;
-import openUserSettings from "openUserSettings" /* 7626 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 10221 */;
+import openUserSettings from "openUserSettings" /* 7658 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 10260 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -17,7 +17,7 @@ const Constants = fn(1078);
 ({ AnalyticsPages: hasOwnProperty, UserSettingsSections: metroRequire } = Constants);
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { illustration: { paddingTop: nativeDefault.space.PX_12 } };
 let closure_9 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -64,7 +64,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
     }
   }
   const obj = markAsDismissed(568);
-  const unmountEffect = markAsDismissed(5203).useUnmountEffect(tmp6);
+  const unmountEffect = markAsDismissed(5235).useUnmountEffect(tmp6);
   if (cResult[4] !== tmp5) {
     class P {
       constructor() {
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
       }
     }
   }
-  const tmpResult = markAsDismissed(5203);
+  const tmpResult = markAsDismissed(5235);
   ({ loading, onPress } = usePremiumFeatureUpsellGetNitroDefault(false, tmp8, constants.PREMIUM_UPSELL_FILE_UPLOAD));
   if (cResult[6] !== onPress) {
     class M {
@@ -134,7 +134,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
         return;
       }
     }
-    const tmp14 = jsx(tmp(5907).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
+    const tmp14 = jsx(tmp(5939).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
     cResult[10] = tmp14;
     const tmp13 = tmp14;
   } else {
@@ -229,13 +229,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
       }
     }
     const obj4 = { illustration: tmp15, title: tmp18, description: tmp19, onDismiss: tmp12, actions: tmp25 };
-    const tmp29 = jsx(tmp(10613).PromoSheet, { illustration: tmp15, title: tmp18, description: tmp19, onDismiss: tmp12, actions: tmp25 });
+    const tmp29 = jsx(tmp(10649).PromoSheet, { illustration: tmp15, title: tmp18, description: tmp19, onDismiss: tmp12, actions: tmp25 });
     cResult[19] = tmp12;
     cResult[20] = tmp25;
     cResult[21] = tmp15;
     cResult[22] = tmp29;
   }
-  const tmp26 = jsx(markAsDismissed(5188).Button, { grow: true, size: "lg", variant: "primary", loading, text: tmp22, onPress: null });
+  const tmp26 = jsx(markAsDismissed(5220).Button, { grow: true, size: "lg", variant: "primary", loading, text: tmp22, onPress: null });
   cResult[16] = loading;
   cResult[17] = null;
   cResult[18] = tmp26;

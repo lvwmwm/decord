@@ -1,14 +1,14 @@
-// Module ID: 15061
-// Function ID: 15062
+// Module ID: 15070
+// Function ID: 15071
 // Name: AccountViewBackupCodesSetting
-// Dependencies: [19, 8238, 1078, 14944, 1119, 1181, 15062, 558, 568, 11594, 14945, 14943, 2]
+// Dependencies: [19, 8270, 1078, 14982, 1119, 1181, 15071, 558, 568, 11630, 14983, 14981, 2]
 
-// Module 15061 (AccountViewBackupCodesSetting)
+// Module 15070 (AccountViewBackupCodesSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 14944 */;
-import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 15062 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 14982 */;
+import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 15071 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -42,7 +42,7 @@ function onConfirmBackups(onSuccess) {
 const Constants = fn(1078);
 ({ NOOP_NULL: closure_4, UserSettingsSections } = Constants);
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -70,7 +70,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const intl3 = closure_0(1119).intl;
       obj.actionText = intl3.string(closure_0(1119).t.PDTjLN);
       obj.confirmColor = closure_0(1181).ButtonColors.BRAND;
-      closure_1(15062)(obj);
+      closure_1(15071)(obj);
       return false;
     };
     cResult[0] = fn;
@@ -103,7 +103,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const intl3 = closure_0(1119).intl;
   obj.actionText = intl3.string(closure_0(1119).t.PDTjLN);
   obj.confirmColor = closure_0(1181).ButtonColors.BRAND;
-  closure_1(15062)(obj);
+  closure_1(15071)(obj);
   return false;
 }, []));
 const route = SettingBuilders.createRoute({
@@ -111,8 +111,8 @@ const route = SettingBuilders.createRoute({
     const intl = util.intl;
     return intl.string(util.t.xZEzbu);
   },
-  parent: fn(8238).MobileUserSettings.ACCOUNT,
-  usePredicate: fn(14945).useIs2FAEnabled,
+  parent: fn(8270).MobileUserSettings.ACCOUNT,
+  usePredicate: fn(14983).useIs2FAEnabled,
   usePreNavigationAction: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(1);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -140,7 +140,7 @@ const route = SettingBuilders.createRoute({
         const intl3 = closure_0(1119).intl;
         obj.actionText = intl3.string(closure_0(1119).t.PDTjLN);
         obj.confirmColor = closure_0(1181).ButtonColors.BRAND;
-        closure_1(15062)(obj);
+        closure_1(15071)(obj);
         return false;
       };
       cResult[0] = fn;
@@ -173,7 +173,7 @@ const route = SettingBuilders.createRoute({
     const intl3 = closure_0(1119).intl;
     obj.actionText = intl3.string(closure_0(1119).t.PDTjLN);
     obj.confirmColor = closure_0(1181).ButtonColors.BRAND;
-    closure_1(15062)(obj);
+    closure_1(15071)(obj);
     return false;
   }, [])),
   screen: {

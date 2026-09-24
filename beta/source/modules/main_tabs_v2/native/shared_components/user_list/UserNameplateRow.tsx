@@ -1,16 +1,16 @@
-// Module ID: 11214
-// Function ID: 11215
+// Module ID: 11250
+// Function ID: 11251
 // Name: UserNameplateRow
-// Dependencies: [32, 109, 19, 21, 4758, 580, 558, 568, 5823, 4462, 9097, 5822, 5824, 5817, 2]
+// Dependencies: [32, 109, 19, 21, 4790, 580, 558, 568, 5855, 4494, 9129, 5854, 5856, 5849, 2]
 
-// Module 11214 (UserNameplateRow)
+// Module 11250 (UserNameplateRow)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import TableRow from "TableRow" /* 5822 */;
-import TableRowGroupContext from "TableRowGroupContext" /* 5823 */;
-import Card from "Card" /* 5824 */;
-import NameplateDefault from "Nameplate" /* 9097 */;
+import useToken from "useToken" /* 4494 */;
+import TableRow from "TableRow" /* 5854 */;
+import TableRowGroupContext from "TableRowGroupContext" /* 5855 */;
+import Card from "Card" /* 5856 */;
+import NameplateDefault from "Nameplate" /* 9129 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -19,7 +19,7 @@ require = fn;
 let closure_3 = ["label", "subLabel", "icon", "trailing", "arrow", "onPress", "onPressIn", "onPressOut", "disabled", "start", "end", "labelLineClamp", "subLabelLineClamp", "variant", "draggable", "dragHandlePressableProps", "nameplate", "isPreviewRow"];
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { card: { padding: 0, paddingRight: nativeDefault.space.PX_40, overflow: "hidden" } };
 let closure_10 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -67,7 +67,7 @@ export const UserNameplateRow = ReactCompilerGating.isReactCompilerEnabled() ? (
     tmp21 = cResult[18];
   }
   closure_10();
-  const context = noop.useContext(tmp(5823).TableRowGroupContext);
+  const context = noop.useContext(tmp(5855).TableRowGroupContext);
   let tmp31 = !context;
   if (!context) {
     tmp31 = true === tmp8;
@@ -191,7 +191,7 @@ export const UserNameplateRow = ReactCompilerGating.isReactCompilerEnabled() ? (
       const obj3 = { children: null };
       const items3 = [tmp12Result, ];
       const obj4 = { adjustSpacingForIcon: null != icon };
-      items3[1] = tmp15(tmp3(5817).TableRowDivider, obj4);
+      items3[1] = tmp15(tmp3(5849).TableRowDivider, obj4);
       obj3.children = items3;
       tmp12Result2 = tmp12(options, obj3);
     }

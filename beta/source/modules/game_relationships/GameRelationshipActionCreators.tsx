@@ -1,13 +1,13 @@
-// Module ID: 11175
-// Function ID: 11176
+// Module ID: 11211
+// Function ID: 11212
 // Name: GameRelationshipActionCreators
-// Dependencies: [5, 1078, 4659, 5110, 1119, 1275, 4610, 2]
+// Dependencies: [5, 1078, 4691, 5142, 1119, 1275, 4642, 2]
 
-// Module 11175 (GameRelationshipActionCreators)
+// Module 11211 (GameRelationshipActionCreators)
 import util from "util" /* 1119 */;
-import shared from "shared" /* 4610 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4659 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
+import shared from "shared" /* 4642 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4691 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -119,7 +119,7 @@ let closure_9 = async function _removeGameFriend() {
     userId: closure_129_0,
     applicationId: closure_129_1,
     onSuccess() {
-      const AccessibilityAnnouncer = closure_1_0(4610).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = closure_1_0(4642).AccessibilityAnnouncer;
       const intl = closure_1_0(1119).intl;
       AccessibilityAnnouncer.announce(intl.string(closure_1_0(1119).t.zRf8cO));
     }
@@ -134,7 +134,7 @@ let closure_10 = async function _cancelGameFriendRequest() {
     userId: closure_129_0,
     applicationId: closure_129_1,
     onSuccess() {
-      const AccessibilityAnnouncer = closure_1_0(4610).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = closure_1_0(4642).AccessibilityAnnouncer;
       const intl = closure_1_0(1119).intl;
       AccessibilityAnnouncer.announce(intl.string(closure_1_0(1119).t.XMf21q));
     }
@@ -173,7 +173,7 @@ export default {
       const intl = util.intl;
       AccessibilityAnnouncer.announce(intl.string(util.t.taJiuc));
     }).catch((error) => {
-      const aPIError = new onSuccess(4659).APIError(error);
+      const aPIError = new onSuccess(4691).APIError(error);
       let anyErrorMessage = aPIError.getAnyErrorMessage();
       const obj = { title: null, body: null };
       const intl = onSuccess(1119).intl;

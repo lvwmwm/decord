@@ -1,18 +1,18 @@
-// Module ID: 17027
-// Function ID: 17028
+// Module ID: 17037
+// Function ID: 17038
 // Name: VibegrationsMessageAuthor
-// Dependencies: [19, 17, 1376, 21, 4758, 580, 17024, 558, 568, 17028, 504, 17029, 4754, 5341, 1119, 4603, 17030, 3682, 1181, 5280, 2]
+// Dependencies: [19, 17, 1376, 21, 4790, 580, 17034, 558, 568, 17038, 504, 17039, 4786, 5373, 1119, 4635, 17040, 3714, 1181, 5312, 2]
 
-// Module 17027 (VibegrationsMessageAuthor)
+// Module 17037 (VibegrationsMessageAuthor)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AppsIcon from "AppsIcon" /* 5280 */;
-import vibegrationsMessageAuthors from "vibegrationsMessageAuthors" /* 17028 */;
-import VibegrationsMessageTime from "VibegrationsMessageTime" /* 17029 */;
-import VibegrationsMessageActionSheet from "VibegrationsMessageActionSheet" /* 17030 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AppsIcon from "AppsIcon" /* 5312 */;
+import vibegrationsMessageAuthors from "vibegrationsMessageAuthors" /* 17038 */;
+import VibegrationsMessageTime from "VibegrationsMessageTime" /* 17039 */;
+import VibegrationsMessageActionSheet from "VibegrationsMessageActionSheet" /* 17040 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -20,9 +20,9 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { header: { flexDirection: "row", alignItems: "baseline", gap: nativeDefault.space.PX_8 }, name: { flexShrink: 1 }, time: { flexShrink: 0 }, conjureTile: null };
-let size = { width: fn(17024).MESSAGE_AVATAR_SIZE, height: fn(17024).MESSAGE_AVATAR_SIZE, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_CODE, alignItems: "center", justifyContent: "center" };
+let size = { width: fn(17034).MESSAGE_AVATAR_SIZE, height: fn(17034).MESSAGE_AVATAR_SIZE, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_CODE, alignItems: "center", justifyContent: "center" };
 obj2.conjureTile = size;
 let closure_8 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -92,11 +92,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ name, color, at, onPressName } = arg0);
   const tmp4 = closure_8();
   if (cResult[0] !== at) {
-    const describeMessageTimeResult = tmp(17029).describeMessageTime(at);
+    const describeMessageTimeResult = tmp(17039).describeMessageTime(at);
     cResult[0] = at;
     cResult[1] = describeMessageTimeResult;
     let tmp5 = describeMessageTimeResult;
-    const tmpResult = tmp(17029);
+    const tmpResult = tmp(17039);
   } else {
     tmp5 = cResult[1];
   }
@@ -136,7 +136,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             let tmp14 = null;
             if (null != tmp5) {
               const obj3 = { variant: "text-xs/medium", color: "text-muted", style: tmp4.time, children: tmp5 };
-              tmp14 = timestampProducer(tmp(4754).Text, obj3);
+              tmp14 = timestampProducer(tmp(4786).Text, obj3);
             }
             cResult[11] = tmp4.time;
             cResult[12] = tmp5;
@@ -152,7 +152,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj5 = { username: name };
         obj4.accessibilityLabel = intl.formatToPlainString(tmp(1119).t.uCenkh, obj5);
         obj4.children = tmp7;
-        tmp11 = timestampProducer(tmp(5341).PressableOpacity, obj4);
+        tmp11 = timestampProducer(tmp(5373).PressableOpacity, obj4);
       }
       cResult[6] = name;
       cResult[7] = tmp7;
@@ -182,13 +182,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj5 = { username: name };
     obj4.accessibilityLabel = intl.formatToPlainString(tmp2(1119).t.uCenkh, obj5);
     obj4.children = tmp6;
-    tmp5Result = tmp5(tmp2(5341).PressableOpacity, obj4);
+    tmp5Result = tmp5(tmp2(5373).PressableOpacity, obj4);
   }
   const items = [tmp5Result, ];
   let tmp5Result2 = null;
   if (null != describeMessageTimeResult) {
     const obj6 = { variant: "text-xs/medium", color: "text-muted", style: tmp.time, children: describeMessageTimeResult };
-    tmp5Result2 = tmp5(tmp2(4754).Text, obj6);
+    tmp5Result2 = tmp5(tmp2(4786).Text, obj6);
   }
   items[1] = tmp5Result2;
   obj3.children = items;
@@ -255,7 +255,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const at = arg0.at;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = util.intl;
-    const stringResult = intl.string(_modDef3682.Xmvb23);
+    const stringResult = intl.string(_modDef3714.Xmvb23);
     cResult[0] = stringResult;
     let first = stringResult;
   } else {
@@ -274,7 +274,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 }) : ((arg0) => {
   const obj = { name: null, color: "text-brand", at: null };
   const intl = util.intl;
-  obj.name = intl.string(_modDef3682.Xmvb23);
+  obj.name = intl.string(_modDef3714.Xmvb23);
   obj.at = arg0.at;
   return timestampProducer(closure_10, obj);
 });
@@ -319,7 +319,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[6] === tmp4) {
       }
-      PressableOpacity = PressableOpacity(5341).PressableOpacity;
+      PressableOpacity = PressableOpacity(5373).PressableOpacity;
       const obj2 = { onPress: tmp4, onLongPress: tmp4, accessibilityRole: "button", accessibilityLabel: tmp6, children: tmp8 };
       tmp = closure_6(PressableOpacity, obj2);
       cResult[6] = tmp4;

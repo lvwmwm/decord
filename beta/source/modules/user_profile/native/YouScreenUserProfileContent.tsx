@@ -1,34 +1,34 @@
-// Module ID: 17271
-// Function ID: 17272
+// Module ID: 17281
+// Function ID: 17282
 // Name: YouScreenUserProfileContent
-// Dependencies: [32, 19, 17, 2037, 5498, 7862, 8457, 7455, 2042, 11451, 21, 558, 568, 17264, 16711, 1368, 8530, 8515, 13360, 13361, 8943, 13372, 8464, 9975, 11446, 17272, 12097, 2031, 7632, 10626, 580, 1119, 5188, 13292, 17273, 17274, 17260, 1489, 8460, 9626, 8516, 504, 8501, 8512, 13241, 17275, 13194, 13195, 13362, 13382, 13383, 13384, 11395, 17276, 13387, 15998, 13294, 11461, 8882, 13393, 17278, 13347, 13398, 13404, 9868, 11391, 9846, 11407, 12778, 12780, 4497, 7403, 2]
+// Dependencies: [32, 19, 17, 2037, 5530, 7894, 8489, 7487, 2042, 11487, 21, 558, 568, 17274, 16721, 1368, 8562, 8547, 13396, 13397, 8975, 13408, 8496, 10007, 11482, 17282, 12133, 2031, 7664, 10662, 580, 1119, 5220, 13328, 17283, 17284, 17270, 1489, 8492, 9658, 8548, 504, 8533, 8544, 13277, 17285, 13230, 13231, 13398, 13418, 13419, 13420, 11431, 17286, 13423, 16008, 13330, 11497, 8914, 13429, 17288, 13383, 13434, 13440, 9900, 11427, 9878, 11443, 12814, 12816, 4529, 7435, 2]
 
-// Module 17271 (YouScreenUserProfileContent)
+// Module 17281 (YouScreenUserProfileContent)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8515 */;
-import UserProfileAvatarDefault from "UserProfileAvatar" /* 8530 */;
-import FormDividerDefault from "FormDivider" /* 8882 */;
-import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 8943 */;
-import getRandomCustomStatusPromptDefault from "getRandomCustomStatusPrompt" /* 11395 */;
-import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 11461 */;
-import UserProfileActivityDefault from "UserProfileActivity" /* 13294 */;
-import UserProfileNoteDefault from "UserProfileNote" /* 13347 */;
-import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 13360 */;
-import VibegrationsCustomWidgetAddOptionDefault from "VibegrationsCustomWidgetAddOption" /* 13361 */;
-import UserProfileActivityTabDefault from "UserProfileActivityTab" /* 13372 */;
-import UserProfileConnections from "UserProfileConnections" /* 13393 */;
-import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 13398 */;
-import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 13404 */;
-import showYouAccountActionSheet from "showYouAccountActionSheet" /* 16711 */;
-import you_tracking_Tracking from "you/tracking/Tracking" /* 17264 */;
-import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 17276 */;
-import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 17278 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8547 */;
+import UserProfileAvatarDefault from "UserProfileAvatar" /* 8562 */;
+import FormDividerDefault from "FormDivider" /* 8914 */;
+import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 8975 */;
+import getRandomCustomStatusPromptDefault from "getRandomCustomStatusPrompt" /* 11431 */;
+import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 11497 */;
+import UserProfileActivityDefault from "UserProfileActivity" /* 13330 */;
+import UserProfileNoteDefault from "UserProfileNote" /* 13383 */;
+import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 13396 */;
+import VibegrationsCustomWidgetAddOptionDefault from "VibegrationsCustomWidgetAddOption" /* 13397 */;
+import UserProfileActivityTabDefault from "UserProfileActivityTab" /* 13408 */;
+import UserProfileConnections from "UserProfileConnections" /* 13429 */;
+import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 13434 */;
+import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 13440 */;
+import showYouAccountActionSheet from "showYouAccountActionSheet" /* 16721 */;
+import you_tracking_Tracking from "you/tracking/Tracking" /* 17274 */;
+import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 17286 */;
+import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 17288 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
-import UserProfileStore from "UserProfileStore" /* 7862 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5530 */;
+import UserProfileStore from "UserProfileStore" /* 7894 */;
 
 const UserProfileWishlistGridDefault = UserProfileWishlistGrid;
 
@@ -36,10 +36,10 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const useIsContentShown = fn(2037).useIsContentShown;
-let UserProfileSections = fn(8457).UserProfileSections;
-const UserProfileThemeTypes = fn(7455).UserProfileThemeTypes;
+let UserProfileSections = fn(8489).UserProfileSections;
+const UserProfileThemeTypes = fn(7487).UserProfileThemeTypes;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const constants = fn(11451).UserProfileEditAutoFocusElement;
+const constants = fn(11487).UserProfileEditAutoFocusElement;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
 let ReactCompilerGating = fn(558);
@@ -133,8 +133,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   const tmp4 = UserProfileSharedStylesDefault();
   const tmp5 = closure_18(containerBackground, containerBorderColor);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp9 = state(tmp3(13360), {});
-    const tmp10 = state(tmp3(13361), {});
+    const tmp9 = state(tmp3(13396), {});
+    const tmp10 = state(tmp3(13397), {});
     cResult[0] = tmp9;
     cResult[1] = tmp10;
     tmp6 = tmp9;
@@ -980,12 +980,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     let tmp3Result = !shouldShowExpiringTrialOfferCard;
     if (!shouldShowExpiringTrialOfferCard) {
       const obj4 = { navigateToPremium, navigateToShop, hasCustomProfileTheme };
-      tmp3Result = tmp3(tmp4(13387), obj4);
+      tmp3Result = tmp3(tmp4(13423), obj4);
     }
     items2[1] = tmp3Result;
     let tmp3Result2 = enabled;
     if (enabled) {
-      tmp3Result2 = tmp3(tmp4(15998), {});
+      tmp3Result2 = tmp3(tmp4(16008), {});
     }
     items2[2] = tmp3Result2;
     items2[3] = state(UserProfileActivityDefault, { user, currentUser: user, style: items });

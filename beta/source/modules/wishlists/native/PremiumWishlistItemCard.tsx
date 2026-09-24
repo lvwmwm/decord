@@ -1,11 +1,11 @@
-// Module ID: 11336
-// Function ID: 11337
+// Module ID: 11372
+// Function ID: 11373
 // Name: PremiumWishlistItemCard
-// Dependencies: [109, 19, 21, 558, 568, 9050, 9051, 2]
+// Dependencies: [109, 19, 21, 558, 568, 9082, 9083, 2]
 
-// Module 11336 (PremiumWishlistItemCard)
-import SKUPreview from "SKUPreview" /* 9050 */;
-import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 9051 */;
+// Module 11372 (PremiumWishlistItemCard)
+import SKUPreview from "SKUPreview" /* 9082 */;
+import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 9083 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

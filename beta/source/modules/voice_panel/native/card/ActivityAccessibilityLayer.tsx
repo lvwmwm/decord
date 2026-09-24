@@ -1,11 +1,11 @@
-// Module ID: 17565
-// Function ID: 17566
+// Module ID: 17575
+// Function ID: 17576
 // Name: ActivityAccessibilityLayer
-// Dependencies: [109, 32, 19, 17, 12420, 21, 4758, 558, 568, 5182, 1119, 5170, 5173, 2]
+// Dependencies: [109, 32, 19, 17, 12456, 21, 4790, 558, 568, 5214, 1119, 5202, 5205, 2]
 
-// Module 17565 (ActivityAccessibilityLayer)
+// Module 17575 (ActivityAccessibilityLayer)
 import c from "c" /* 568 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5182 */;
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5214 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -14,10 +14,10 @@ require = fn;
 let closure_2 = ["isActivityFocused"];
 get_ActivityIndicator = fn(17);
 ({ Pressable: metroRequire, StyleSheet: closure_7, View: closure_8 } = get_ActivityIndicator);
-const IS_IOS = fn(12420).IS_IOS;
+const IS_IOS = fn(12456).IS_IOS;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_12 = createStyles.createStyles({ fill: { flex: 1 } });
 let ReactCompilerGating = fn(558);
 let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {

@@ -1,13 +1,13 @@
-// Module ID: 4409
-// Function ID: 4410
+// Module ID: 4441
+// Function ID: 4442
 // Name: RelationshipStore
-// Dependencies: [32, 4410, 1376, 1078, 577, 504, 2]
+// Dependencies: [32, 4442, 1376, 1078, 577, 504, 2]
 
-// Module 4409 (RelationshipStore)
+// Module 4441 (RelationshipStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import _slicedToArray from "module_32" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4410 */;
+import MessageRecord from "MessageRecord" /* 4442 */;
 import UserStore from "UserStore" /* 1376 */;
 
 function markAllUserIdListsStale() {
@@ -98,7 +98,7 @@ let closure_14 = 0;
 const dependencyMap = {};
 let closure_16 = 0;
 let size = 0;
-let closure_19 = { friends: "Array", blocked: "T", ignored: "y", blockedOrIgnored: "IconComponent" };
+let closure_19 = { friends: "unicodeVersion", blocked: "h", ignored: "runOnJS", blockedOrIgnored: "Array" };
 const set3 = new Set();
 const map1 = new Map();
 const Store = initializeDefault.Store;

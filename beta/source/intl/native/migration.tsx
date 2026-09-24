@@ -1,17 +1,17 @@
-// Module ID: 14467
-// Function ID: 14468
+// Module ID: 14505
+// Function ID: 14506
 // Name: migration
-// Dependencies: [19, 21, 4758, 580, 558, 568, 4481, 4455, 1933, 1181, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 4513, 4487, 1933, 1181, 2]
 
-// Module 14467 (migration)
+// Module 14505 (migration)
 import nativeDefault from "native" /* 580 */;
 import _modDef1933 from "module_1933" /* 1933 */;
-import LinkingDefault from "Linking" /* 4455 */;
+import LinkingDefault from "Linking" /* 4487 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles((arg0) => {
   const link = { color: nativeDefault.colors.TEXT_LINK, textDecorationLine: null };
   let str = "none";
@@ -29,7 +29,7 @@ export const IntlLink = ReactCompilerGating.isReactCompilerEnabled() ? ((target)
   const cResult = target(568).c(7);
   target = target.target;
   const children = target.children;
-  const tmp4 = closure_5(noop.useContext(target(4481).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  const tmp4 = closure_5(noop.useContext(target(4513).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
   if (typeof target === "string") {
     if (cResult[0] !== target) {
       const fn = function s() {
@@ -98,6 +98,6 @@ export const IntlLink = ReactCompilerGating.isReactCompilerEnabled() ? ((target)
     }
   }
   const tmp = target;
-  const tmp3 = closure_5(noop.useContext(target(4481).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
-  return jsx(tmp(1181).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: closure_5(noop.useContext(target(4481).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: children.children });
+  const tmp3 = closure_5(noop.useContext(target(4513).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  return jsx(tmp(1181).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: closure_5(noop.useContext(target(4513).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: children.children });
 });

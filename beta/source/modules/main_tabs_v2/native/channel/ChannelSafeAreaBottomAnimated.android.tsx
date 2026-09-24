@@ -1,16 +1,16 @@
-// Module ID: 12808
-// Function ID: 12809
+// Module ID: 12844
+// Function ID: 12845
 // Name: ChannelSafeAreaBottomAnimated
-// Dependencies: [19, 17, 21, 558, 568, 10343, 10348, 4497, 2]
+// Dependencies: [19, 17, 21, 558, 568, 10382, 10387, 4529, 2]
 
-// Module 12808 (ChannelSafeAreaBottomAnimated)
+// Module 12844 (ChannelSafeAreaBottomAnimated)
 import c from "c" /* 568 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 10343 */;
-import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 10348 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 10382 */;
+import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 10387 */;
 import noop from "module_19" /* 19 */;
 
-const ReanimatedRexportDefault = tmp3(4497);
+const ReanimatedRexportDefault = tmp3(4529);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);

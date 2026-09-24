@@ -1,17 +1,17 @@
-// Module ID: 14131
-// Function ID: 14132
+// Module ID: 14168
+// Function ID: 14169
 // Name: MidjourneyOnboardingUtils
-// Dependencies: [2067, 4580, 14132, 558, 568, 504, 2]
+// Dependencies: [2067, 4612, 14169, 558, 568, 504, 2]
 // Exports: hasRedirectedToGuild, isEligibleForMidjourneyRedirect, isMidjourneyOnboardingFlow
 
-// Module 14131 (MidjourneyOnboardingUtils)
+// Module 14168 (MidjourneyOnboardingUtils)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 
 require = fn;
-const MidjourneyOnboardingConstants = fn(14132);
+const MidjourneyOnboardingConstants = fn(14169);
 ({ MIDJOURNEY_BOT_ID: closure_4, MIDJOURNEY_GUILD_ID: hasOwnProperty } = MidjourneyOnboardingConstants);
 const ReactCompilerGating = fn(558);
 function isMidjourneyOnboardingFlow() {

@@ -1,16 +1,16 @@
-// Module ID: 14924
-// Function ID: 14925
+// Module ID: 14962
+// Function ID: 14963
 // Name: UserSettingsWebAuthn
-// Dependencies: [19, 14922, 21, 558, 568, 14925, 7246, 2]
+// Dependencies: [19, 14960, 21, 558, 568, 14963, 7278, 2]
 
-// Module 14924 (UserSettingsWebAuthn)
+// Module 14962 (UserSettingsWebAuthn)
 import c from "c" /* 568 */;
-import Navigator from "Navigator" /* 7246 */;
-import WebAuthnScreens2 from "WebAuthnScreens" /* 14925 */;
+import Navigator from "Navigator" /* 7278 */;
+import WebAuthnScreens2 from "WebAuthnScreens" /* 14963 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const WebAuthnScreens = fn(14922).WebAuthnScreens;
+const WebAuthnScreens = fn(14960).WebAuthnScreens;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -34,10 +34,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
     tmp6 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const screens = tmp(14925).getScreens({ isModal: false });
+    const screens = tmp(14963).getScreens({ isModal: false });
     cResult[2] = screens;
     let tmp7 = screens;
-    const tmpResult = tmp(14925);
+    const tmpResult = tmp(14963);
   } else {
     tmp7 = cResult[2];
   }
@@ -53,7 +53,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
       return tmp12;
     }
     const obj3 = { screens: tmp7, initialRouteName, initialRouteStack: tmp6, useContainer: false };
-    const tmp14 = jsx(tmp(7246).Navigator, { screens: tmp7, initialRouteName, initialRouteStack: tmp6, useContainer: false });
+    const tmp14 = jsx(tmp(7278).Navigator, { screens: tmp7, initialRouteName, initialRouteStack: tmp6, useContainer: false });
     cResult[6] = initialRouteName;
     cResult[7] = tmp6;
     cResult[8] = tmp14;

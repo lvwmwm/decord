@@ -1,13 +1,13 @@
-// Module ID: 15068
-// Function ID: 15069
+// Module ID: 15077
+// Function ID: 15078
 // Name: Blocked
-// Dependencies: [19, 17, 21, 8507, 15069, 15070, 15071, 558, 568, 4610, 2]
+// Dependencies: [19, 17, 21, 8539, 15078, 15079, 15080, 558, 568, 4642, 2]
 // Exports: getBlockedSource
 
-// Module 15068 (Blocked)
+// Module 15077 (Blocked)
 import c from "c" /* 568 */;
-import shared from "shared" /* 4610 */;
-import _mod8507 from "module_8507" /* 8507 */;
+import shared from "shared" /* 4642 */;
+import _mod8539 from "module_8539" /* 8539 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,50 +20,50 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] !== theme) {
     const obj3 = {
       dark() {
-          return require("module_15069");
+          return require("module_15078");
         },
       darker() {
-          return require("module_15070");
+          return require("module_15079");
         },
       light() {
-          return require("module_15071");
+          return require("module_15080");
         }
     };
-    const illustrationSource = _mod8507.getIllustrationSource(theme, obj3);
+    const illustrationSource = _mod8539.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
     let tmp4 = illustrationSource;
-    const tmpResult = _mod8507;
+    const tmpResult = _mod8539;
   } else {
     tmp4 = cResult[1];
   }
   return tmp4;
 }) : (() => {
   const obj = shared;
-  return _mod8507.getIllustrationSource(obj.useThemeContext().theme, {
+  return _mod8539.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_15069");
+      return require("module_15078");
     },
     darker() {
-      return require("module_15070");
+      return require("module_15079");
     },
     light() {
-      return require("module_15071");
+      return require("module_15080");
     }
   });
 });
 let closure_4 = tmp3;
 ReactCompilerGating = fn(558);
 function getBlockedSource(theme) {
-  return _mod8507.getIllustrationSource(theme, {
+  return _mod8539.getIllustrationSource(theme, {
     dark() {
-      return require("module_15069");
+      return require("module_15078");
     },
     darker() {
-      return require("module_15070");
+      return require("module_15079");
     },
     light() {
-      return require("module_15071");
+      return require("module_15080");
     }
   });
 }

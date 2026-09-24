@@ -1,198 +1,140 @@
 // Module ID: 7055
 // Function ID: 7056
-// Dependencies: [19, 21, 6868, 1641, 6867, 6864, 6880, 7056]
+// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 7056]
 
 // Module 7055
-import jsxProd from "jsxProd" /* 21 */;
-import DEFAULT_HANDLE_HEIGHT from "DEFAULT_HANDLE_HEIGHT" /* 6867 */;
-import noop_mod from "module_19" /* 19 */;
+import _modDef7056 from "module_7056" /* 7056 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import metroRequire from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import noop from "module_19" /* 19 */;
 
-const value22 = tmp2(6864);
-let noop = noop_mod;
-({ useMemo: c3, memo } = noop);
-let noop = noop_mod;
-const jsx = jsxProd.jsx;
-let closure_5 = { code: "function pnpm_BottomSheetContentTsx1(){const{animatedContainerHeight,INITIAL_CONTAINER_HEIGHT,animatedKeyboardState,animatedKeyboardHeightInContainer,animatedHandleHeight,animatedSheetHeight,keyboardBehavior,KEYBOARD_BEHAVIOR,KEYBOARD_STATE,isInTemporaryPosition}=this.__closure;if(animatedContainerHeight.get()===INITIAL_CONTAINER_HEIGHT){return 0;}const keyboardState=animatedKeyboardState.get();const keyboardHeightInContainer=animatedKeyboardHeightInContainer.get();const handleHeight=Math.max(0,animatedHandleHeight.get());const containerHeight=animatedContainerHeight.get();let contentHeight=animatedSheetHeight.get()-handleHeight;switch(keyboardBehavior){case KEYBOARD_BEHAVIOR.extend:if(keyboardState===KEYBOARD_STATE.SHOWN){contentHeight=contentHeight-keyboardHeightInContainer;}break;case KEYBOARD_BEHAVIOR.fillParent:if(!isInTemporaryPosition.get()){break;}if(keyboardState===KEYBOARD_STATE.SHOWN){contentHeight=containerHeight-handleHeight-keyboardHeightInContainer;}else{contentHeight=containerHeight-handleHeight;}break;case KEYBOARD_BEHAVIOR.interactive:{if(!isInTemporaryPosition.get()){break;}const contentWithKeyboardHeight=contentHeight+keyboardHeightInContainer;if(keyboardState===KEYBOARD_STATE.SHOWN){if(keyboardHeightInContainer+animatedSheetHeight.get()>containerHeight){contentHeight=containerHeight-keyboardHeightInContainer-handleHeight;}}else if(contentWithKeyboardHeight+handleHeight>containerHeight){contentHeight=containerHeight-handleHeight;}else{contentHeight=contentWithKeyboardHeight;}break;}}return Math.max(contentHeight,0);}" };
-let closure_6 = { code: "function pnpm_BottomSheetContentTsx2(){const{animatedContainerHeight,INITIAL_CONTAINER_HEIGHT,animatedHighestSnapPoint,animatedPosition,overDragResistanceFactor,animatedKeyboardState,KEYBOARD_STATE,animatedKeyboardHeightInContainer}=this.__closure;const containerHeight=animatedContainerHeight.get();if(containerHeight===INITIAL_CONTAINER_HEIGHT){return 0;}const highestSnapPoint=Math.max(animatedHighestSnapPoint.get(),animatedPosition.get());const overDragSafePaddingBottom=Math.sqrt(highestSnapPoint-containerHeight*-1)*overDragResistanceFactor;let paddingBottom=overDragSafePaddingBottom;if(animatedKeyboardState.get()===KEYBOARD_STATE.SHOWN){paddingBottom=overDragSafePaddingBottom+animatedKeyboardHeightInContainer.get();}return paddingBottom;}" };
-let closure_7 = { code: "function pnpm_BottomSheetContentTsx3(){const{animatedContainerHeight,INITIAL_CONTAINER_HEIGHT,enableDynamicSizing,animatedContentHeight,detached,animatedPaddingBottom,animate,animationConfigs,overrideReduceMotion,animatedContentHeightMax}=this.__closure;if(animatedContainerHeight.get()===INITIAL_CONTAINER_HEIGHT){return{};}if(enableDynamicSizing&&animatedContentHeight.get()===INITIAL_CONTAINER_HEIGHT){return{};}const paddingBottom=detached?0:animatedPaddingBottom.get();return{paddingBottom:animate({point:paddingBottom,configs:animationConfigs,overrideReduceMotion:overrideReduceMotion}),height:animate({point:animatedContentHeightMax.get()+paddingBottom,configs:animationConfigs,overrideReduceMotion:overrideReduceMotion})};}" };
-const memoResult = memo(function BottomSheetContentComponent(detached) {
-  detached = detached.detached;
-  const animationConfigs = detached.animationConfigs;
-  const overrideReduceMotion = detached.overrideReduceMotion;
-  const keyboardBehavior = detached.keyboardBehavior;
-  let derivedValue;
-  let derivedValue1;
-  let animatedStyle;
-  ({ accessible, accessibilityLabel, accessibilityHint, accessibilityRole, children } = detached);
-  const bottomSheetInternal = detached(overrideReduceMotion[2]).useBottomSheetInternal();
-  const enableDynamicSizing = bottomSheetInternal.enableDynamicSizing;
-  const overDragResistanceFactor = bottomSheetInternal.overDragResistanceFactor;
-  const animatedPosition = bottomSheetInternal.animatedPosition;
-  const animatedHandleHeight = bottomSheetInternal.animatedHandleHeight;
-  const animatedHighestSnapPoint = bottomSheetInternal.animatedHighestSnapPoint;
-  const animatedContainerHeight = bottomSheetInternal.animatedContainerHeight;
-  const animatedContentHeight = bottomSheetInternal.animatedContentHeight;
-  const animatedSheetHeight = bottomSheetInternal.animatedSheetHeight;
-  const animatedKeyboardState = bottomSheetInternal.animatedKeyboardState;
-  const animatedKeyboardHeightInContainer = bottomSheetInternal.animatedKeyboardHeightInContainer;
-  const isInTemporaryPosition = bottomSheetInternal.isInTemporaryPosition;
-  let obj = detached(overrideReduceMotion[2]);
-  class N {
-    constructor() {
-      obj = animatedContainerHeight;
-      tmp2 = closure_0;
-      tmp3 = closure_2;
-      value = animatedContainerHeight.get();
-      if (value === closure_0(closure_2[4]).INITIAL_CONTAINER_HEIGHT) {
-        num = 0;
-        return 0;
-      } else {
-        tmp8 = animatedKeyboardState;
-        value1 = animatedKeyboardState.get();
-        tmp10 = closure_13;
-        value2 = closure_13.get();
-        tmp12 = globalThis;
-        _Math2 = Math;
-        tmp13 = animatedHandleHeight;
-        num2 = 0;
-        bound = Math.max(0, animatedHandleHeight.get());
-        value3 = obj.get();
-        obj2 = animatedSheetHeight;
-        diff = animatedSheetHeight.get() - bound;
-        tmp17 = keyboardBehavior;
-        if (tmp2(tmp3[5]).KEYBOARD_BEHAVIOR.extend === keyboardBehavior) {
-          diff1 = diff;
-          if (value1 === tmp2(tmp3[5]).KEYBOARD_STATE.SHOWN) {
-            diff1 = diff - value2;
-          }
-        } else if (tmp2(tmp3[5]).KEYBOARD_BEHAVIOR.fillParent === tmp17) {
-          tmp6 = isInTemporaryPosition;
-          diff1 = diff;
-          if (isInTemporaryPosition.get()) {
-            if (value1 === tmp2(tmp3[5]).KEYBOARD_STATE.SHOWN) {
-              diff2 = value3 - bound - value2;
-            } else {
-              diff2 = value3 - bound;
-            }
-            diff1 = diff2;
-          }
-        } else {
-          diff1 = diff;
-          if (tmp2(tmp3[5]).KEYBOARD_BEHAVIOR.interactive === tmp17) {
-            tmp18 = isInTemporaryPosition;
-            diff1 = diff;
-            if (isInTemporaryPosition.get()) {
-              sum = diff + value2;
-              if (value1 === tmp2(tmp3[5]).KEYBOARD_STATE.SHOWN) {
-                diff1 = diff;
-                if (value2 + obj2.get() > value3) {
-                  diff1 = value3 - value2 - bound;
-                }
-              } else {
-                if (sum + bound > value3) {
-                  sum = value3 - bound;
-                }
-                diff1 = sum;
-              }
-            }
-          }
-        }
-        _Math = Math;
-        return Math.max(diff1, 0);
-      }
-    }
-  }
-  let obj2 = detached(overrideReduceMotion[3]);
-  N.__closure = { animatedContainerHeight, INITIAL_CONTAINER_HEIGHT: detached(overrideReduceMotion[4]).INITIAL_CONTAINER_HEIGHT, animatedKeyboardState, animatedKeyboardHeightInContainer, animatedHandleHeight, animatedSheetHeight, keyboardBehavior, KEYBOARD_BEHAVIOR: detached(overrideReduceMotion[5]).KEYBOARD_BEHAVIOR, KEYBOARD_STATE: detached(overrideReduceMotion[5]).KEYBOARD_STATE, isInTemporaryPosition };
-  N.__workletHash = 2170474579366;
-  N.__initData = overDragResistanceFactor;
-  let items = [animatedContainerHeight, animatedHandleHeight, animatedKeyboardHeightInContainer, animatedKeyboardState, animatedSheetHeight, isInTemporaryPosition, keyboardBehavior];
-  derivedValue = obj2.useDerivedValue(N, items);
-  let obj3 = { animatedContainerHeight, INITIAL_CONTAINER_HEIGHT: detached(overrideReduceMotion[4]).INITIAL_CONTAINER_HEIGHT, animatedKeyboardState, animatedKeyboardHeightInContainer, animatedHandleHeight, animatedSheetHeight, keyboardBehavior, KEYBOARD_BEHAVIOR: detached(overrideReduceMotion[5]).KEYBOARD_BEHAVIOR, KEYBOARD_STATE: detached(overrideReduceMotion[5]).KEYBOARD_STATE, isInTemporaryPosition };
-  const fn = function l() {
-    value = animatedContainerHeight.get();
-    if (value === DEFAULT_HANDLE_HEIGHT.INITIAL_CONTAINER_HEIGHT) {
-      return 0;
+const TouchableHighlight = fn;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
     } else {
-      const _Math = Math;
-      value3 = animatedHighestSnapPoint.get();
-      const _Math2 = Math;
-      const result = Math.sqrt(Math.max(value3, animatedPosition.get()) - -1 * value) * overDragResistanceFactor;
-      const value4 = animatedKeyboardState.get();
-      let sum = result;
-      if (value4 === value22.KEYBOARD_STATE.SHOWN) {
-        sum = result + animatedKeyboardHeightInContainer.get();
-      }
-      return sum;
+      callResult = call(constructResult);
     }
-  };
-  const obj4 = detached(overrideReduceMotion[3]);
-  fn.__closure = { animatedContainerHeight, INITIAL_CONTAINER_HEIGHT: detached(overrideReduceMotion[4]).INITIAL_CONTAINER_HEIGHT, animatedHighestSnapPoint, animatedPosition, overDragResistanceFactor, animatedKeyboardState, KEYBOARD_STATE: detached(overrideReduceMotion[5]).KEYBOARD_STATE, animatedKeyboardHeightInContainer };
-  fn.__workletHash = 3484699588399;
-  fn.__initData = animatedPosition;
-  const items1 = [overDragResistanceFactor, animatedPosition, animatedContainerHeight, animatedHighestSnapPoint, animatedKeyboardState, animatedKeyboardHeightInContainer];
-  derivedValue1 = obj4.useDerivedValue(fn, items1);
-  const obj5 = { animatedContainerHeight, INITIAL_CONTAINER_HEIGHT: detached(overrideReduceMotion[4]).INITIAL_CONTAINER_HEIGHT, animatedHighestSnapPoint, animatedPosition, overDragResistanceFactor, animatedKeyboardState, KEYBOARD_STATE: detached(overrideReduceMotion[5]).KEYBOARD_STATE, animatedKeyboardHeightInContainer };
-  class S {
-    constructor() {
-      tmp2 = closure_0;
-      tmp3 = closure_2;
-      value = animatedContainerHeight.get();
-      if (value === closure_0(closure_2[4]).INITIAL_CONTAINER_HEIGHT) {
-        return {};
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+let closure_3 = ["style"];
+get_ActivityIndicator = fn(17);
+({ StyleSheet: closure_9, View: c10 } = get_ActivityIndicator);
+const jsx = fn(21).jsx;
+class TouchableHighlight {
+  constructor(arg0) {
+    self = this;
+    tmp = hasOwnProperty(this, TouchableHighlight);
+    items = [];
+    items[0] = global;
+    tmp2 = closure_7;
+    obj = closure_7(TouchableHighlight);
+    tmp3 = metroRequire;
+    if (closure_12()) {
+      tmp5 = globalThis;
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.showUnderlay = () => {
+      if (closure_0.hasPressHandler()) {
+        const obj2 = { extraChildStyle: null, extraUnderlayStyle: null };
+        const obj3 = { opacity: obj.props.activeOpacity };
+        obj2.extraChildStyle = obj3;
+        const obj4 = { backgroundColor: obj.props.underlayColor };
+        obj2.extraUnderlayStyle = obj4;
+        obj.setState(obj2);
+        const props = obj.props;
+        const onShowUnderlay = props.onShowUnderlay;
+        if (onShowUnderlay != null) {
+          onShowUnderlay();
+        }
+      }
+    };
+    tmp3Result.hasPressHandler = () => closure_0.props.onPress || closure_0.props.onPressIn || closure_0.props.onPressOut || closure_0.props.onLongPress;
+    tmp3Result.hideUnderlay = () => {
+      closure_0.setState({ extraChildStyle: null, extraUnderlayStyle: null });
+      const props = closure_0.props;
+      const onHideUnderlay = props.onHideUnderlay;
+      if (onHideUnderlay != null) {
+        onHideUnderlay();
+      }
+    };
+    tmp3Result.onStateChange = (arg0, arg1) => {
+      if (arg1 === TouchableHighlight(7056).TOUCHABLE_STATE.BEGAN) {
+        closure_0.showUnderlay();
       } else {
-        tmp11 = enableDynamicSizing;
-        if (enableDynamicSizing) {
-          tmp4 = animatedContentHeight;
-          value1 = animatedContentHeight.get();
-          if (value1 === tmp2(tmp3[4]).INITIAL_CONTAINER_HEIGHT) {
-            return {};
-          }
+        if (!tmp3) {
+          closure_0.hideUnderlay();
         }
-        tmp6 = detached;
-        num = 0;
-        if (!detached) {
-          tmp7 = closure_16;
-          num = closure_16.get();
-        }
-        obj = { paddingBottom: null, height: null };
-        tmp2Result = tmp2(tmp3[6]);
-        obj1 = { point: null, configs: null, overrideReduceMotion: null };
-        obj1.point = num;
-        tmp8 = animationConfigs;
-        obj1.configs = animationConfigs;
-        tmp9 = overrideReduceMotion;
-        obj1.overrideReduceMotion = overrideReduceMotion;
-        obj.paddingBottom = tmp2Result.animate(obj1);
-        tmp2Result1 = tmp2(tmp3[6]);
-        obj6 = { point: null, configs: null, overrideReduceMotion: null };
-        tmp10 = closure_15;
-        obj6.point = closure_15.get() + num;
-        obj6.configs = animationConfigs;
-        obj6.overrideReduceMotion = overrideReduceMotion;
-        obj.height = tmp2Result1.animate(obj6);
-        return obj;
+        tmp3 = arg1 !== tmp(7056).TOUCHABLE_STATE.UNDETERMINED && arg1 !== tmp(7056).TOUCHABLE_STATE.MOVED_OUTSIDE;
       }
+    };
+    tmp3Result.state = { extraChildStyle: null, extraUnderlayStyle: null };
+    return tmp3Result;
+  }
+}
+_inherits(TouchableHighlight, fn(19).Component);
+const entry = {
+  key: "renderChildren",
+  value: function renderChildren() {
+    const self = this;
+    if (this.props.children) {
+      const Children = noop.Children;
+      const onlyResult = Children.only(self.props.children);
+      const obj = { style: options.compose(onlyResult.props.style, self.state.extraChildStyle) };
+      return noop.cloneElement(onlyResult, obj);
+    } else {
+      return <v65535 />;
     }
   }
-  const obj6 = detached(overrideReduceMotion[3]);
-  S.__closure = { animatedContainerHeight, INITIAL_CONTAINER_HEIGHT: detached(overrideReduceMotion[4]).INITIAL_CONTAINER_HEIGHT, enableDynamicSizing, animatedContentHeight, detached, animatedPaddingBottom: derivedValue1, animate: detached(overrideReduceMotion[6]).animate, animationConfigs, overrideReduceMotion, animatedContentHeightMax: derivedValue };
-  S.__workletHash = 8203943631786;
-  S.__initData = animatedHandleHeight;
-  const items2 = [overDragResistanceFactor, enableDynamicSizing, detached, animationConfigs, overrideReduceMotion, animatedContentHeight, derivedValue, animatedContainerHeight];
-  animatedStyle = obj6.useAnimatedStyle(S, items2);
-  const items3 = [animatedStyle, detached];
-  const style = keyboardBehavior(() => {
-    const items = [detached ? { overflow: "visible" } : { overflow: "hidden" }, animatedStyle];
-    return items;
-  }, items3);
-  if (bottomSheetInternal.enableContentPanningGesture) {
-    let View = tmp7(tmp[7]);
-  } else {
-    View = tmp7(tmp[3]).View;
+};
+let items = [
+  entry,
+  {
+    key: "render",
+    value: function render() {
+      const self = this;
+      const props = this.props;
+      let style = props.style;
+      if (undefined === style) {
+        style = {};
+      }
+      const obj = {};
+      const tmp = _objectWithoutProperties(props, closure_3);
+      const merged = Object.assign(tmp);
+      const items = [style, self.state.extraUnderlayStyle];
+      obj.style = items;
+      obj.onStateChange = self.onStateChange;
+      obj.children = self.renderChildren();
+      return jsx(_modDef7056, {});
+    }
   }
-  return enableDynamicSizing(View, { accessible, accessibilityLabel, accessibilityHint, accessibilityRole, style, children });
-});
-memoResult.displayName = "BottomSheetContent";
+];
+const importDefaultResultResult = _createClass(TouchableHighlight, items);
+let obj = {};
+let merged = Object.assign(_modDef7056.defaultProps);
+obj.activeOpacity = 0.85;
+obj.delayPressOut = 100;
+obj.underlayColor = "black";
+importDefaultResultResult.defaultProps = obj;
 
-export const BottomSheetContent = memoResult;
+export default importDefaultResultResult;

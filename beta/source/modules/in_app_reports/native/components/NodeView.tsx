@@ -1,27 +1,27 @@
-// Module ID: 8912
-// Function ID: 8913
+// Module ID: 8944
+// Function ID: 8945
 // Name: NodeView
-// Dependencies: [32, 109, 19, 17, 4757, 2045, 4399, 8913, 8911, 1078, 1089, 21, 4758, 580, 558, 568, 5208, 5813, 4754, 4608, 4712, 504, 8914, 5341, 1488, 5173, 5182, 8908, 8906, 4938, 4472, 8916, 8920, 8921, 7371, 8924, 8925, 8926, 8927, 8932, 8933, 13197, 13198, 13199, 13200, 13201, 13202, 13203, 13205, 13207, 13208, 13209, 13210, 13211, 13212, 13213, 13216, 2]
+// Dependencies: [32, 109, 19, 17, 4789, 2045, 4431, 8945, 8943, 1078, 1089, 21, 4790, 580, 558, 568, 5240, 5845, 4786, 4640, 4744, 504, 8946, 5373, 1488, 5205, 5214, 8940, 8938, 4970, 4504, 8948, 8952, 8953, 7403, 8956, 8957, 8958, 8959, 8964, 8965, 13233, 13234, 13235, 13236, 13237, 13238, 13239, 13241, 13243, 13244, 13245, 13246, 13247, 13248, 13249, 13252, 2]
 // Exports: default
 
-// Module 8912 (NodeView)
+// Module 8944 (NodeView)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4472 */;
-import ColorUtils from "ColorUtils" /* 4608 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4712 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4938 */;
-import CustomMarkupAll from "CustomMarkup" /* 5208 */;
-import useInitialValueDefault from "useInitialValue" /* 5813 */;
-import MenuTypes from "MenuTypes" /* 8906 */;
-import ArrowDefault from "Arrow" /* 8914 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4504 */;
+import ColorUtils from "ColorUtils" /* 4640 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4744 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4970 */;
+import CustomMarkupAll from "CustomMarkup" /* 5240 */;
+import useInitialValueDefault from "useInitialValue" /* 5845 */;
+import MenuTypes from "MenuTypes" /* 8938 */;
+import ArrowDefault from "Arrow" /* 8946 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4757 */;
+import DevSettingsStore from "DevSettingsStore" /* 4789 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 require = fn;
 function NullComponent() {
@@ -30,14 +30,14 @@ function NullComponent() {
 let closure_4 = ["child", "nodeMap"];
 get_ActivityIndicator = fn(17);
 ({ View: closure_8, ScrollView: closure_9 } = get_ActivityIndicator);
-const REMEDIATION_ELEMENT_TYPES = fn(8913).REMEDIATION_ELEMENT_TYPES;
-const IN_APP_REPORTS_NODE = fn(8911).IN_APP_REPORTS_NODE;
+const REMEDIATION_ELEMENT_TYPES = fn(8945).REMEDIATION_ELEMENT_TYPES;
+const IN_APP_REPORTS_NODE = fn(8943).IN_APP_REPORTS_NODE;
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_15, ChannelTypes: closure_16 } = Constants);
 const Permissions = fn(1089).Permissions;
 const jsxProd = fn(21);
 ({ jsx: closure_18, jsxs: closure_19 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, alignSelf: "stretch", justifyContent: "flex-start", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, marginTop: 30 }, scrollView: { flex: 1, alignSelf: "stretch", marginTop: 24 }, childrenContainer: { flex: 1, alignSelf: "stretch", paddingHorizontal: 16 }, headerContainer: { alignSelf: "stretch", marginBottom: 24, paddingHorizontal: 16 }, header: { marginBottom: 8, textAlign: "center" }, subheader: { lineHeight: 20, marginBottom: 8, textAlign: "center" }, description: { lineHeight: 16, marginBottom: 8, textAlign: "center" }, infoBox: null, infoBoxText: null, childButton: null, childContainer: null, childContent: null, childButtonText: null, debugText: null };
 let obj3 = { flex: 1, alignSelf: "stretch", justifyContent: "flex-start", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, marginTop: 30 };
 obj2.infoBox = { alignSelf: "stretch", alignItems: "center", backgroundColor: nativeDefault.unsafe_rawColors.BLUE_345, borderRadius: nativeDefault.radii.xs, borderColor: nativeDefault.unsafe_rawColors.BLUE_345, borderWidth: 1, padding: 8, flexDirection: "row", marginBottom: 16, marginHorizontal: 16 };
@@ -106,7 +106,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp16 = null;
             if (description.length > 0) {
               const obj3 = { style: tmp4.description, variant: "text-xs/medium", color: "text-default", children: description };
-              tmp16 = collapsedCategories(tmp(4754).Text, obj3);
+              tmp16 = collapsedCategories(tmp(4786).Text, obj3);
             }
           }
           cResult[9] = description;
@@ -120,7 +120,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp12 = null;
         if (subheader.length > 0) {
           const obj4 = { style: tmp4.subheader, variant: "text-md/medium", color: "text-default", children: tmp6(subheader) };
-          tmp12 = collapsedCategories(tmp(4754).Text, obj4);
+          tmp12 = collapsedCategories(tmp(4786).Text, obj4);
         }
       }
       cResult[5] = tmp6;
@@ -136,7 +136,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (tmp8) {
     const obj5 = { ref: headerRef, style: tmp4.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: header };
-    tmp8 = collapsedCategories(tmp(4754).Text, obj5);
+    tmp8 = collapsedCategories(tmp(4786).Text, obj5);
   }
   cResult[1] = header;
   cResult[2] = headerRef;
@@ -196,11 +196,11 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
     return null;
   } else {
     if (cResult[1] !== tmp4.infoBox.backgroundColor) {
-      const hexWithOpacityResult = tmp(4608).hexWithOpacity(tmp4.infoBox.backgroundColor, 0.1);
+      const hexWithOpacityResult = tmp(4640).hexWithOpacity(tmp4.infoBox.backgroundColor, 0.1);
       cResult[1] = tmp4.infoBox.backgroundColor;
       cResult[2] = hexWithOpacityResult;
       let tmp7 = hexWithOpacityResult;
-      const tmpResult = tmp(4608);
+      const tmpResult = tmp(4640);
     } else {
       tmp7 = cResult[2];
     }
@@ -218,7 +218,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
       }
       if (cResult[8] !== tmp4.infoBox.backgroundColor) {
         const obj3 = { size: "md", color: tmp4.infoBox.backgroundColor };
-        const tmp13 = collapsedCategories(tmp(4712).CircleInformationIcon, obj3);
+        const tmp13 = collapsedCategories(tmp(4744).CircleInformationIcon, obj3);
         cResult[8] = tmp4.infoBox.backgroundColor;
         cResult[9] = tmp13;
         let tmp11 = tmp13;
@@ -231,7 +231,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
         }
         if (cResult[13] !== tmp15) {
           const obj4 = { variant: "text-sm/normal", color: "interactive-text-active", includeFontPadding: true, children: tmp15 };
-          const tmp19 = collapsedCategories(tmp(4754).Text, obj4);
+          const tmp19 = collapsedCategories(tmp(4786).Text, obj4);
           cResult[13] = tmp15;
           cResult[14] = tmp19;
           let tmp17 = tmp19;
@@ -388,7 +388,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((child) => {
                 tmp42[0] = tmp10.childButton;
                 tmp42[2] = first1;
                 tmp42[3] = tmp36;
-                const tmp43 = closure_18(tmp(5341).PressableHighlight, tmp42);
+                const tmp43 = closure_18(tmp(5373).PressableHighlight, tmp42);
                 cResult[24] = first1;
                 cResult[25] = tmp10.childButton;
                 cResult[26] = tmp36;
@@ -434,7 +434,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((child) => {
             return closure_1_10.get("iar_show_report_sub_type_labels");
           }
         }
-        tmp29 = closure_18(tmp(4754).Text, obj4);
+        tmp29 = closure_18(tmp(4786).Text, obj4);
       }
       cResult[12] = stateFromStores;
       cResult[13] = tmp10.debugText;
@@ -443,7 +443,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((child) => {
       tmp28 = tmp29;
     }
     const obj5 = { style: tmp10.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: first };
-    const tmp27 = closure_18(tmp(4754).Text, obj5);
+    const tmp27 = closure_18(tmp(4786).Text, obj5);
     cResult[9] = first;
     cResult[10] = tmp10.childButtonText;
     cResult[11] = tmp27;
@@ -471,20 +471,20 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((child) => {
   const obj2 = { style: tmp.childButton, accessibilityRole: "button", onPress: _slicedToArray(noop.useState(() => () => closure_1_1.onPress(child)), 1)[0], children: null };
   const obj3 = { style: tmp.childContainer, children: null };
   const obj4 = { style: tmp.childContent, children: null };
-  const items1 = [closure_18(child(4754).Text, { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp3 }), ];
+  const items1 = [closure_18(child(4786).Text, { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp3 }), ];
   if (stateFromStores) {
     stateFromStores = null != report_type;
   }
   if (stateFromStores) {
     const obj6 = { style: tmp.debugText, variant: "text-xs/normal", color: "text-muted", children: report_type };
-    stateFromStores = tmp9(tmp5(4754).Text, obj6);
+    stateFromStores = tmp9(tmp5(4786).Text, obj6);
   }
   items1[1] = stateFromStores;
   obj4.children = items1;
   const items2 = [closure_19(closure_8, obj4), closure_18(ArrowDefault, {})];
   obj3.children = items2;
   obj2.children = closure_19(closure_8, obj3);
-  return closure_18(child(5341).PressableHighlight, obj2);
+  return closure_18(child(5373).PressableHighlight, obj2);
 });
 ReactCompilerGating = fn(558);
 let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectChild) => {

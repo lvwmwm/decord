@@ -1,18 +1,18 @@
-// Module ID: 13339
-// Function ID: 13340
+// Module ID: 13375
+// Function ID: 13376
 // Name: UserProfileVoiceSettings
-// Dependencies: [19, 17, 5226, 1996, 4399, 1078, 1089, 21, 4758, 558, 568, 8464, 504, 4905, 9968, 9889, 10240, 1119, 9925, 10259, 7454, 13340, 12691, 13342, 11733, 7176, 4754, 12784, 10006, 8876, 4725, 9952, 9948, 2]
+// Dependencies: [19, 17, 5258, 1996, 4431, 1078, 1089, 21, 4790, 558, 568, 8496, 504, 4937, 10000, 9921, 10279, 1119, 9957, 10298, 7486, 13376, 12727, 13378, 11769, 7208, 4786, 12820, 10045, 8908, 4757, 9984, 9980, 2]
 
-// Module 13339 (UserProfileVoiceSettings)
+// Module 13375 (UserProfileVoiceSettings)
 import c from "c" /* 568 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9889 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9952 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12784 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9921 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9984 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12820 */;
 import noop from "module_19" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 5226 */;
+import SoundboardStore from "SoundboardStore" /* 5258 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 require = fn;
 const View = fn(17).View;
@@ -20,7 +20,7 @@ const VideoToggleState = fn(1078).VideoToggleState;
 const Permissions = fn(1089).Permissions;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_11 = createStyles.createStyles({ card: { paddingBottom: 0 }, cardTitle: { marginBottom: 0 }, volumeSlider: { paddingVertical: 20 }, disableVideoSublabel: { flexDirection: "row", alignItems: "center", gap: 4 } });
 let ReactCompilerGating = fn(558);
 let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
@@ -364,7 +364,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const style = channel.style;
   const tmp4 = closure_11();
   const obj = channel(568);
-  const trackUserProfileAction = channel(8464).useUserProfileAnalyticsContext().trackUserProfileAction;
+  const trackUserProfileAction = channel(8496).useUserProfileAnalyticsContext().trackUserProfileAction;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [MediaEngineStore];
     const fn = function n() {
@@ -377,7 +377,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   } else {
     [tmp5, tmp6] = cResult;
   }
-  const obj2 = channel(8464);
+  const obj2 = channel(8496);
   const stateFromStores = channel(504).useStateFromStores(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [PermissionStore];
@@ -590,8 +590,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
         const obj3 = { children: null };
         const obj4 = { label: tmp16, icon: tmp19, onPress: tmp20 };
-        obj3.children = closure_9(tmp(7454).UserProfileFormRow, obj4, "mute");
-        const tmp23 = closure_9(tmp(7454).UserProfileCardRows, obj3);
+        obj3.children = closure_9(tmp(7486).UserProfileFormRow, obj4, "mute");
+        const tmp23 = closure_9(tmp(7486).UserProfileCardRows, obj3);
         cResult[13] = tmp16;
         cResult[14] = tmp19;
         cResult[15] = tmp20;
@@ -609,8 +609,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   ({ user, style } = channel);
   const tmp = closure_11();
   let tmp9Result = dependencyMap;
-  const trackUserProfileAction = channel(8464).useUserProfileAnalyticsContext().trackUserProfileAction;
-  const obj = channel(8464);
+  const trackUserProfileAction = channel(8496).useUserProfileAnalyticsContext().trackUserProfileAction;
+  const obj = channel(8496);
   const items = [MediaEngineStore];
   const stateFromStores = channel(504).useStateFromStores(items, () => selfMute.isSelfMute());
   const obj2 = channel(504);
@@ -643,9 +643,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     const obj5 = { label: stringResult, icon: null, onPress: null };
     if (stateFromStores) {
-      let MicrophoneIcon = tmp2(9925).MicrophoneSlashIcon;
+      let MicrophoneIcon = tmp2(9957).MicrophoneSlashIcon;
     } else {
-      MicrophoneIcon = tmp2(10259).MicrophoneIcon;
+      MicrophoneIcon = tmp2(10298).MicrophoneIcon;
     }
     const obj6 = { children: null };
     obj5.icon = MicrophoneIcon;
@@ -653,11 +653,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       trackUserProfileAction({ action: "MUTE" });
       AudioActionCreatorsDefault.toggleSelfMute();
     };
-    obj6.children = closure_9(tmp2(7454).UserProfileFormRow, obj5, "mute");
-    tmp9Result = tmp9(tmp2(7454).UserProfileCardRows, obj6);
+    obj6.children = closure_9(tmp2(7486).UserProfileFormRow, obj5, "mute");
+    tmp9Result = tmp9(tmp2(7486).UserProfileCardRows, obj6);
     obj4.children = tmp9Result;
-    closure_9(trackUserProfileAction(7454), obj4);
-    const tmp6Result = trackUserProfileAction(7454);
+    closure_9(trackUserProfileAction(7486), obj4);
+    const tmp6Result = trackUserProfileAction(7486);
   }
   return tmp8;
 });

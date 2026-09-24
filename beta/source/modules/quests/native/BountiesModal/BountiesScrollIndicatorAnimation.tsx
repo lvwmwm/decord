@@ -1,20 +1,20 @@
-// Module ID: 15310
-// Function ID: 15311
+// Module ID: 15320
+// Function ID: 15321
 // Name: BountiesScrollIndicatorAnimation
-// Dependencies: [32, 19, 17, 21, 4758, 558, 568, 4462, 580, 4471, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 558, 568, 4494, 580, 4503, 2]
 
-// Module 15310 (BountiesScrollIndicatorAnimation)
+// Module 15320 (BountiesScrollIndicatorAnimation)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
+import useToken from "useToken" /* 4494 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const native = tmp(4471);
+const native = tmp(4503);
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles(() => ({ container: { width: 80, height: 80 } }));
 const ReactCompilerGating = fn(558);
 const size = fn(2);

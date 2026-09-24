@@ -1,29 +1,29 @@
-// Module ID: 16277
-// Function ID: 16278
+// Module ID: 16287
+// Function ID: 16288
 // Name: Auth
-// Dependencies: [32, 19, 17, 12562, 1078, 21, 16278, 16279, 5839, 16288, 7248, 7192, 4758, 580, 558, 568, 16329, 7185, 1630, 7216, 16330, 7214, 7246, 1369, 1119, 16331, 7722, 16335, 2]
+// Dependencies: [32, 19, 17, 12598, 1078, 21, 16288, 16289, 5871, 16298, 7280, 7224, 4790, 580, 558, 568, 16339, 7217, 1630, 7248, 16340, 7246, 7278, 1369, 1119, 16341, 7754, 16345, 2]
 
-// Module 16277 (Auth)
+// Module 16287 (Auth)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7185 */;
-import BackgroundImageDefault from "BackgroundImage" /* 7216 */;
-import StackNavigator from "StackNavigator" /* 7248 */;
-import RegistrationHandoff from "RegistrationHandoff" /* 16278 */;
-import RegistrationUtils from "RegistrationUtils" /* 16288 */;
-import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 16329 */;
-import AuthManagerDefault from "AuthManager" /* 16331 */;
-import useOrientationLockDefault from "useOrientationLock" /* 16335 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7217 */;
+import BackgroundImageDefault from "BackgroundImage" /* 7248 */;
+import StackNavigator from "StackNavigator" /* 7280 */;
+import RegistrationHandoff from "RegistrationHandoff" /* 16288 */;
+import RegistrationUtils from "RegistrationUtils" /* 16298 */;
+import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 16339 */;
+import AuthManagerDefault from "AuthManager" /* 16341 */;
+import useOrientationLockDefault from "useOrientationLock" /* 16345 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import MultiAccountStore from "MultiAccountStore" /* 12562 */;
+import MultiAccountStore from "MultiAccountStore" /* 12598 */;
 
 const util = PX_24(1119);
 const utils_PlatformUtils = PX_24(1369);
 const KeyboardChatScrollView = PX_24(1630);
-const WideAuthScrollContext = PX_24(7214);
-const Navigator = PX_24(7246);
-const _mod16330 = PX_24(16330);
+const WideAuthScrollContext = PX_24(7246);
+const Navigator = PX_24(7278);
+const _mod16340 = PX_24(16340);
 require = fn;
 function getInitialAuthRouteStack() {
   if (!obj.hasRegistrationHandoff()) {
@@ -43,7 +43,7 @@ get_ActivityIndicator = fn(17);
 const AuthStates = fn(1078).AuthStates;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-let RegistrationStepsUtils = fn(16279);
+let RegistrationStepsUtils = fn(16289);
 RegistrationStepsUtils = RegistrationStepsUtils.getAllAuthScreens();
 RegistrationStepsUtils = Object.entries(RegistrationStepsUtils);
 const screens = Object.fromEntries(RegistrationStepsUtils.map((item) => {
@@ -96,13 +96,13 @@ const screens = Object.fromEntries(RegistrationStepsUtils.map((item) => {
   return items;
 }));
 let num = 540;
-if (fn(7192).hasWebAuthn) {
+if (fn(7224).hasWebAuthn) {
   num = 600;
 }
 let obj = {};
 obj[AuthStates.LOGIN] = num;
 obj[AuthStates.MFA] = 600;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj3 = { transparent: { backgroundColor: "transparent" }, cardContainer: { flex: 1, position: "relative", backgroundColor: "transparent" }, wideOuterContainer: { flex: 1, justifyContent: "center" }, wideCard: null, wideHeaderFlat: null, wideHeader: null };
 let size = { backgroundColor: "transparent", borderRadius: nativeDefault.radii.lg, maxWidth: 600, alignSelf: "center", width: "100%", maxHeight: "90%", overflow: "hidden", height: 520 };
 obj3.wideCard = size;
@@ -176,11 +176,11 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return arg0.height;
       }
     }
-    const obj4 = { backgroundImageSource: _mod16330, backgroundImageCover: true };
-    const tmp19 = closure_9(tmp3(7216), obj4);
+    const obj4 = { backgroundImageSource: _mod16340, backgroundImageCover: true };
+    const tmp19 = closure_9(tmp3(7248), obj4);
     cResult[4] = tmp19;
     const tmp17 = tmp19;
-    const tmp3Result = tmp3(7216);
+    const tmp3Result = tmp3(7248);
   } else {
     class O {
       constructor(arg0) {
@@ -339,7 +339,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj3 = { backgroundImageSource: null, backgroundImageCover: true };
   const tmp15 = closure_11;
   const tmp16 = closure_10;
-  obj3.backgroundImageSource = _mod16330;
+  obj3.backgroundImageSource = _mod16340;
   const children = [closure_9(BackgroundImageDefault, obj3), ];
   if (tmp5) {
     const obj5 = { value: tmp11, children: null };
@@ -386,10 +386,10 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const obj12 = { paddingLeft: num2, paddingTop: tmp4(580).space.PX_24, paddingBottom: tmp4(580).space.PX_16 };
     obj11.headerLeftContainerStyle = obj12;
-    obj10.children = tmp17(tmp(7246).Navigator, obj11);
+    obj10.children = tmp17(tmp(7278).Navigator, obj11);
     obj7.children = tmp17(closure_6, obj10);
     obj5.children = tmp17(closure_6, obj7);
-    let tmp17Result = tmp17(tmp(7214).WideAuthScrollContext.Provider, obj5);
+    let tmp17Result = tmp17(tmp(7246).WideAuthScrollContext.Provider, obj5);
     tmpResult = tmp(1369);
   } else {
     const obj13 = { screens: RegistrationStepsUtils, viewStyle: null, containerStyle: null, headerBackTitle: null, initialRouteStack: null, onWillFocus: null, headerStyle: null };
@@ -399,7 +399,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj13.initialRouteStack = first;
     obj13.onWillFocus = closure_5.dismiss;
     obj13.headerStyle = { borderBottomWidth: 0 };
-    tmp17Result = tmp17(tmp(7246).Navigator, obj13);
+    tmp17Result = tmp17(tmp(7278).Navigator, obj13);
   }
   children[1] = tmp17Result;
   return tmp15(tmp16, { children });
@@ -416,7 +416,7 @@ export default noop.memo(function Auth() {
     AuthManagerDefault.initialize();
     return () => closure_1_1(dependencyMap[25]).terminate();
   }, []);
-  const layoutEffect = noop.useLayoutEffect(() => closure_0(7722).trackAppUIViewed(), []);
+  const layoutEffect = noop.useLayoutEffect(() => closure_0(7754).trackAppUIViewed(), []);
   useOrientationLockDefault();
   closure_0 = noop.useRef(undefined);
   return closure_9(context.Provider, { value: noop.useCallback(() => RegistrationUtils.getTrackRegTransition(closure_0), [])(), children: closure_9(closure_17, {}) });

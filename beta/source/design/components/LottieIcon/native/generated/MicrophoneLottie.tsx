@@ -1,12 +1,12 @@
-// Module ID: 14424
-// Function ID: 14425
+// Module ID: 14462
+// Function ID: 14463
 // Name: MicrophoneLottie
-// Dependencies: [19, 21, 558, 568, 14425, 10204, 2]
+// Dependencies: [19, 21, 558, 568, 14463, 10243, 2]
 
-// Module 14424 (MicrophoneLottie)
+// Module 14462 (MicrophoneLottie)
 import c from "c" /* 568 */;
-import LottieIcon from "LottieIcon" /* 10204 */;
-import _mod14425 from "module_14425" /* 14425 */;
+import LottieIcon from "LottieIcon" /* 10243 */;
+import _mod14463 from "module_14463" /* 14463 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("design/components/LottieIcon/native/g
 export const MicrophoneLottie = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
   const cResult = c.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(14425);
+    const tmpResult = tmp(14463);
     cResult[0] = tmpResult;
     let first = tmpResult;
   } else {
@@ -40,5 +40,5 @@ export const MicrophoneLottie = noop.forwardRef(ReactCompilerGating.isReactCompi
   tmp6 = tmp8;
 }) : ((arg0, ref) => {
   const merged = Object.assign(arg0);
-  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod14425, ref, layers, markers: items });
+  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod14463, ref, layers, markers: items });
 }));

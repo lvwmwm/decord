@@ -1,15 +1,18 @@
 // Module ID: 8795
 // Function ID: 8796
-// Dependencies: [41, 42, 93, 95, 98, 19, 8749]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8796, 8780, 8789]
 
 // Module 8795
+import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
+import _modDef8789 from "module_8789" /* 8789 */;
+import _modDef8796 from "module_8796" /* 8796 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
+import noop from "module_19" /* 19 */;
 
-const FePointLight = fn;
+const ClipPath = fn;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,14 +32,16 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FePointLight {
+_possibleConstructorReturnDefault;
+const jsx = fn(21).jsx;
+class ClipPath {
   constructor() {
     self = this;
-    tmp = c2(this, FePointLight);
-    tmp2 = closure_4;
-    obj = closure_4(FePointLight);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
+    tmp = closure_3(this, ClipPath);
+    tmp2 = hasOwnProperty;
+    obj = hasOwnProperty(ClipPath);
+    tmp3 = closure_4;
+    if (closure_7()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
       tmp8 = arguments;
@@ -49,17 +54,19 @@ class FePointLight {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FePointLight, fn(19).Component);
+_inherits(ClipPath, _modDef8789);
 const entry = {
   key: "render",
   value: function render() {
-    const result = FePointLight(8749).warnUnimplementedFilter();
-    return null;
+    const props = this.props;
+    const obj = { ref: this.refMethod };
+    const merged = Object.assign(ClipPath(8780).extract(this, props));
+    obj.children = props.children;
+    return <tmp ref={this.refMethod} />;
   }
 };
 const items = [entry];
-const importDefaultResultResult = _createClass(FePointLight, items);
-importDefaultResultResult.displayName = "FePointLight";
-importDefaultResultResult.defaultProps = {};
+const importDefaultResultResult = _createClass(ClipPath, items);
+importDefaultResultResult.displayName = "ClipPath";
 
 export default importDefaultResultResult;

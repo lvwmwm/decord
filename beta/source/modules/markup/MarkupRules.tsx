@@ -1,26 +1,26 @@
-// Module ID: 5211
-// Function ID: 5212
+// Module ID: 5243
+// Function ID: 5244
 // Name: MarkupRules
-// Dependencies: [32, 722, 2045, 2103, 2067, 1376, 1078, 5212, 5213, 5214, 1119, 5217, 2106, 4910, 4603, 5218, 1933, 5219, 5220, 5223, 4413, 5225, 5236, 5237, 5238, 5239, 5210, 5240, 12, 2]
+// Dependencies: [32, 722, 2045, 2103, 2067, 1376, 1078, 5244, 5245, 5246, 1119, 5249, 2106, 4942, 4635, 5250, 1933, 5251, 5252, 5255, 4445, 5257, 5268, 5269, 5270, 5271, 5242, 5272, 12, 2]
 // Exports: hydrateCommandMention
 
-// Module 5211 (MarkupRules)
+// Module 5243 (MarkupRules)
 import util from "util" /* 1119 */;
 import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 2106 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4413 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
-import MarkupLinkRule from "MarkupLinkRule" /* 5214 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5217 */;
-import StaticRouteRendering from "StaticRouteRendering" /* 5218 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5219 */;
-import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5220 */;
-import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5223 */;
-import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5225 */;
-import TimestampUtils from "TimestampUtils" /* 5236 */;
-import MarkupHeadingRuleDefault from "MarkupHeadingRule" /* 5237 */;
-import MarkupListRuleDefault from "MarkupListRule" /* 5238 */;
-import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 5239 */;
-import PlatformMarkupRulesDefault from "PlatformMarkupRules" /* 5240 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4445 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
+import MarkupLinkRule from "MarkupLinkRule" /* 5246 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5249 */;
+import StaticRouteRendering from "StaticRouteRendering" /* 5250 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5251 */;
+import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5252 */;
+import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5255 */;
+import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5257 */;
+import TimestampUtils from "TimestampUtils" /* 5268 */;
+import MarkupHeadingRuleDefault from "MarkupHeadingRule" /* 5269 */;
+import MarkupListRuleDefault from "MarkupListRule" /* 5270 */;
+import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 5271 */;
+import PlatformMarkupRulesDefault from "PlatformMarkupRules" /* 5272 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _toArray from "_toArray" /* 722 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -28,7 +28,7 @@ import GuildRoleStore from "GuildRoleStore" /* 2103 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1376 */;
 import t_mod from "module_1933" /* 1933 */;
-import combineMarkupRules_mod from "combineMarkupRules" /* 5210 */;
+import combineMarkupRules_mod from "combineMarkupRules" /* 5242 */;
 import "module_12";
 import apply_mod from "module_12" /* 12 */;
 
@@ -137,8 +137,8 @@ function hydrateUserMention(everyoneOrHere, channelId) {
     if (null != channel) {
       let nickname = NicknameUtilsDefault.getNickname(channel.getGuildId(), channelId.channelId, str);
       if (nickname == null) {
-        nickname = tmp4(4603).getName(str);
-        const tmp4Result = tmp4(4603);
+        nickname = tmp4(4635).getName(str);
+        const tmp4Result = tmp4(4635);
       }
       str1 = nickname;
       tmp4 = importDefault;
@@ -234,8 +234,8 @@ function hydrateStaticRouteLink(id, itemId, guildId) {
 }
 const Constants = fn(1078);
 ({ ID_REGEX: closure_9, MARKDOWN_SPOILER_REGEXP: c10, MARKDOWN_STATIC_ROUTE_NAME_REGEXP: closure_11 } = Constants);
-const SUB_COMMAND_KEY_SEPARATOR = fn(5212).SUB_COMMAND_KEY_SEPARATOR;
-const GAME_MENTION_RAW_RE = fn(5213).GAME_MENTION_RAW_RE;
+const SUB_COMMAND_KEY_SEPARATOR = fn(5244).SUB_COMMAND_KEY_SEPARATOR;
+const GAME_MENTION_RAW_RE = fn(5245).GAME_MENTION_RAW_RE;
 const re14 = /^( *>>> +([\s\S]*))|^( *>(?!>>) +[^\n]*(\n *>(?!>>) +[^\n]*)*\n?)/;
 const re15 = /^$|\n *$/;
 const re16 = /^ *>>> ?/;

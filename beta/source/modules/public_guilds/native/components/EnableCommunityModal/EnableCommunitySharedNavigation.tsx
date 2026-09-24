@@ -1,12 +1,12 @@
-// Module ID: 18103
-// Function ID: 18104
+// Module ID: 18113
+// Function ID: 18114
 // Name: EnableCommunitySharedNavigation
-// Dependencies: [19, 17, 9834, 1078, 21, 4758, 558, 568, 504, 1488, 5173, 5182, 577, 18101, 7285, 1119, 5188, 7371, 2]
+// Dependencies: [19, 17, 9866, 1078, 21, 4790, 558, 568, 504, 1488, 5205, 5214, 577, 18111, 7317, 1119, 5220, 7403, 2]
 
-// Module 18103 (EnableCommunitySharedNavigation)
+// Module 18113 (EnableCommunitySharedNavigation)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import noop from "module_19" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9834 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9866 */;
 
 const require = globalThis.__r;
 
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 let GuildFeatures = fn(1078).GuildFeatures;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles({ container: { flex: 1, height: "100%" }, modal: { height: "100%", flex: 1, justifyContent: "space-between" }, button: { flexGrow: 0, paddingLeft: 16, paddingTop: 16, paddingRight: 16 } });
 let obj2 = { STEP_1: "STEP_1", STEP_2: "STEP_2", STEP_3: "STEP_3" };
 const ReactCompilerGating = fn(558);

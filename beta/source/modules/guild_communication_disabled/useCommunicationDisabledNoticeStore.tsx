@@ -1,13 +1,13 @@
 // Module ID: 2110
 // Function ID: 2111
 // Name: useCommunicationDisabledNoticeStore
-// Dependencies: [32, 2111, 510, 563, 1252, 558, 568, 1247, 4383, 2]
+// Dependencies: [32, 2111, 510, 563, 1252, 558, 568, 1247, 4415, 2]
 // Exports: clearCommunicationDisabledNotice
 
 // Module 2110 (useCommunicationDisabledNoticeStore)
 import c from "c" /* 568 */;
 import _mod1247 from "module_1247" /* 1247 */;
-import _mod4383 from "module_4383" /* 4383 */;
+import _mod4415 from "module_4415" /* 4415 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -69,7 +69,7 @@ export const useCommunicationDisabledNoticeStore = ReactCompilerGating.isReactCo
     first = cResult[0];
   }
   const tmpResult = _mod1247;
-  [obj3, tmp6] = _mod1247.useStoreWithEqualityFn(closure_4, first, _mod4383.shallow);
+  [obj3, tmp6] = _mod1247.useStoreWithEqualityFn(closure_4, first, _mod4415.shallow);
   if (cResult[1] === arg0) {
     if (cResult[2] === obj3) {
       let tmp7 = cResult[3];
@@ -96,7 +96,7 @@ export const useCommunicationDisabledNoticeStore = ReactCompilerGating.isReactCo
     const items = [, ];
     ({ notificationDismissedInGuilds: arr[0], dismissNotification: arr[1] } = arg0);
     return items;
-  }, _mod4383.shallow), 2);
+  }, _mod4415.shallow), 2);
   const first = tmp[0];
   let items = [!first.has(arg0), tmp[1]];
   return items;

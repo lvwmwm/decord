@@ -1,24 +1,24 @@
-// Module ID: 16687
-// Function ID: 16688
+// Module ID: 16697
+// Function ID: 16698
 // Name: GuildsBarPendingGuild
-// Dependencies: [19, 4581, 2063, 4580, 5657, 21, 4758, 580, 558, 568, 16635, 4462, 504, 5799, 16669, 16638, 4583, 5746, 16650, 16679, 16627, 4497, 16658, 5802, 2]
+// Dependencies: [19, 4613, 2063, 4612, 5689, 21, 4790, 580, 558, 568, 16645, 4494, 504, 5831, 16679, 16648, 4615, 5778, 16660, 16689, 16637, 4529, 16668, 5834, 2]
 
-// Module 16687 (GuildsBarPendingGuild)
+// Module 16697 (GuildsBarPendingGuild)
 import nativeDefault from "native" /* 580 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4583 */;
-import GuildIcon from "GuildIcon" /* 5799 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 16627 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16650 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4615 */;
+import GuildIcon from "GuildIcon" /* 5831 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 16637 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16660 */;
 import noop from "module_19" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4581 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
-import SortedGuildStore from "SortedGuildStore" /* 5657 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4613 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
+import SortedGuildStore from "SortedGuildStore" /* 5689 */;
 
 require = fn;
 const GuildRecord = fn(2063);
 ({ getGuildIconSource: hasOwnProperty, getGuildIconURL: metroRequire } = GuildRecord);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { guildIcon: null };
 let size = { width: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE, height: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE };
 obj.guildIcon = size;
@@ -204,17 +204,17 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
                 applicationStatus = stateFromStores1.applicationStatus;
               }
               if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.STARTED === applicationStatus) {
-                const result = tmp2(5746).openMemberVerificationIncompleteAlert(guildId);
-                const tmp2Result = tmp2(5746);
-              } else if (tmp2(4583).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
-                const result1 = tmp2(5746).openMemberVerificationPendingAlert(guildId);
-                const tmp2Result3 = tmp2(5746);
-              } else if (tmp2(4583).GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
+                const result = tmp2(5778).openMemberVerificationIncompleteAlert(guildId);
+                const tmp2Result = tmp2(5778);
+              } else if (tmp2(4615).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
+                const result1 = tmp2(5778).openMemberVerificationPendingAlert(guildId);
+                const tmp2Result3 = tmp2(5778);
+              } else if (tmp2(4615).GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
                 transitionGuildsBarToGuildOrOpenSelectedChannelDefault(guildId);
-              } else if (tmp2(4583).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+              } else if (tmp2(4615).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
                 const obj = { guildId, canWithdraw: true };
-                const result2 = tmp2(5746).openMemberVerificationRejectedAlert(obj);
-                const tmp2Result4 = tmp2(5746);
+                const result2 = tmp2(5778).openMemberVerificationRejectedAlert(obj);
+                const tmp2Result4 = tmp2(5778);
               }
             }
       };

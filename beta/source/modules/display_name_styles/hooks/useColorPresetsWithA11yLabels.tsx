@@ -1,9 +1,9 @@
-// Module ID: 15607
-// Function ID: 15608
+// Module ID: 15617
+// Function ID: 15618
 // Name: useColorPresetsWithA11yLabels
 // Dependencies: [19, 1394, 558, 568, 1119, 2876, 1096, 2]
 
-// Module 15607 (useColorPresetsWithA11yLabels)
+// Module 15617 (useColorPresetsWithA11yLabels)
 import c from "c" /* 568 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
 import util from "util" /* 1119 */;

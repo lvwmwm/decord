@@ -1,10 +1,10 @@
-// Module ID: 16541
-// Function ID: 16542
+// Module ID: 16551
+// Function ID: 16552
 // Name: FavoritesGuildSuggestionsStore
-// Dependencies: [32, 19, 2037, 1078, 2042, 562, 558, 568, 10606, 2031, 7632, 2]
+// Dependencies: [32, 19, 2037, 1078, 2042, 562, 558, 568, 10642, 2031, 7664, 2]
 // Exports: setFavoritesGuildSuggestions
 
-// Module 16541 (FavoritesGuildSuggestionsStore)
+// Module 16551 (FavoritesGuildSuggestionsStore)
 import c from "c" /* 568 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -109,7 +109,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return arg0.postConnectionOpen;
       }
     }
-    const tmp11 = _slicedToArray(tmp(7632).useSelectedDismissibleContent(tmp7), 2);
+    const tmp11 = _slicedToArray(tmp(7664).useSelectedDismissibleContent(tmp7), 2);
     _require = tmp12;
     if (cResult[3] !== tmp11[1]) {
       class I {
@@ -171,7 +171,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[9] = tmp18;
     cResult[10] = obj3;
     tmp20 = obj3;
-    const tmpResult = tmp(7632);
+    const tmpResult = tmp(7664);
   }
 }) : (() => {
   const favoritesAccess = require("FavoritesHooks").useFavoritesAccess();

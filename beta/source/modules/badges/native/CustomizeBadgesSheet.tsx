@@ -1,53 +1,53 @@
-// Module ID: 14885
-// Function ID: 14886
+// Module ID: 14923
+// Function ID: 14924
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 8434, 1376, 8466, 1078, 7398, 1378, 21, 4758, 580, 4726, 8184, 14886, 558, 568, 1119, 7209, 8182, 4712, 11445, 8178, 5824, 11452, 7205, 4497, 4759, 4762, 13380, 8183, 6891, 4472, 11446, 1616, 504, 4418, 7409, 7429, 7399, 9502, 9474, 8465, 1245, 8471, 4458, 1482, 11293, 14887, 4754, 5796, 7397, 7396, 6863, 2]
+// Dependencies: [19, 17, 8466, 1376, 8498, 1078, 7430, 1378, 21, 4790, 580, 4758, 8216, 14924, 558, 568, 1119, 7241, 8214, 4744, 11481, 8210, 5856, 11488, 7237, 4529, 4791, 4794, 13416, 8215, 6923, 4504, 11482, 1616, 504, 4450, 7441, 7461, 7431, 9534, 9506, 8497, 1245, 8503, 4490, 1482, 11329, 14925, 4786, 5828, 7429, 7428, 6895, 2]
 // Exports: default
 
-// Module 14885 (CustomizeBadgesSheet)
+// Module 14923 (CustomizeBadgesSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4472 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4712 */;
-import HapticUtils from "HapticUtils" /* 4726 */;
-import timing from "timing" /* 4759 */;
-import timingPresets from "timingPresets" /* 4762 */;
-import Card from "Card" /* 5824 */;
-import EyeSlashIcon from "EyeSlashIcon" /* 7209 */;
-import ContextMenu from "ContextMenu" /* 8182 */;
-import ContextMenuState from "ContextMenuState" /* 8183 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 8184 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8465 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8471 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9474 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9502 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11293 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11445 */;
-import BadgeUtils from "BadgeUtils" /* 11452 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 13380 */;
-import BadgeGrid from "BadgeGrid" /* 14886 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4504 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4744 */;
+import HapticUtils from "HapticUtils" /* 4758 */;
+import timing from "timing" /* 4791 */;
+import timingPresets from "timingPresets" /* 4794 */;
+import Card from "Card" /* 5856 */;
+import EyeSlashIcon from "EyeSlashIcon" /* 7241 */;
+import ContextMenu from "ContextMenu" /* 8214 */;
+import ContextMenuState from "ContextMenuState" /* 8215 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 8216 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8497 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8503 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9506 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9534 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11329 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11481 */;
+import BadgeUtils from "BadgeUtils" /* 11488 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 13416 */;
+import BadgeGrid from "BadgeGrid" /* 14924 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8434 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8466 */;
 import UserStore from "UserStore" /* 1376 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8466 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8498 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Platform, Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_9, AnalyticsObjects: c10, AnalyticsPages: closure_11, AnalyticsSections: closure_12 } = Constants);
-let closure_13 = fn(7398).ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
+let closure_13 = fn(7430).ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
 const PremiumUpsellTypes = fn(1378).PremiumUpsellTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
 let c17 = 1.05;
 let c18 = 80;
 let c19 = 16.666666666666668;
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let obj = { gridInset: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 }, grid: null, upsell: null, upsellCard: null, upsellContent: null, upsellCta: null, upsellText: null, message: null, messageText: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 obj.grid = { position: "relative", width: "100%", marginTop: nativeDefault.space.PX_8 };
@@ -83,11 +83,11 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
       let tmp6 = cResult[3];
     }
     if (cResult[4] !== index) {
-      const result = index % tmp(14886).BADGE_GRID_COLUMNS;
+      const result = index % tmp(14924).BADGE_GRID_COLUMNS;
       let str = "right";
       if (0 !== result) {
         let str2 = "above";
-        if (result === tmp(14886).BADGE_GRID_COLUMNS - 1) {
+        if (result === tmp(14924).BADGE_GRID_COLUMNS - 1) {
           str2 = "left";
         }
         str = str2;
@@ -107,7 +107,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
       }
     }
     const obj2 = { items: tmp6, align: tmp7, disableGesture: true, triggerOnLongPress: true, children };
-    const tmp11 = closure_1_15(tmp(8182).ContextMenu, obj2);
+    const tmp11 = closure_1_15(tmp(8214).ContextMenu, obj2);
     cResult[6] = children;
     cResult[7] = tmp6;
     cResult[8] = tmp7;
@@ -153,7 +153,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
   obj.children = children;
   return closure_1_15(ContextMenu.ContextMenu, obj);
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj10 = { position: { position: "absolute" }, fill: { flex: 1 }, card: { flex: 1, alignItems: "center", justifyContent: "center", padding: 0 }, indicator: null, indicatorButton: null, iconHidden: null };
 let size = { position: "absolute", top: nativeDefault.space.PX_8, end: nativeDefault.space.PX_8, width: 32, height: 32, alignItems: "flex-end", justifyContent: "flex-start" };
 obj10.indicator = size;
@@ -169,7 +169,7 @@ function getSlotOffset(arg0, arg1) {
   return point;
 }
 let obj9 = { alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_32 };
-getSlotOffset.__closure = { BADGE_GRID_COLUMNS: fn(14886).BADGE_GRID_COLUMNS, BADGE_GRID_GAP: fn(14886).BADGE_GRID_GAP };
+getSlotOffset.__closure = { BADGE_GRID_COLUMNS: fn(14924).BADGE_GRID_COLUMNS, BADGE_GRID_GAP: fn(14924).BADGE_GRID_GAP };
 getSlotOffset.__workletHash = 8647997879684;
 getSlotOffset.__initData = { code: "function getSlotOffset_CustomizeBadgesSheetTsx1(index,tileSize){const{BADGE_GRID_COLUMNS,BADGE_GRID_GAP}=this.__closure;const column=index%BADGE_GRID_COLUMNS;return{x:column*(tileSize+BADGE_GRID_GAP),y:Math.floor(index/BADGE_GRID_COLUMNS)*(tileSize+BADGE_GRID_GAP)};}" };
 ReactCompilerGating = fn(558);
@@ -185,7 +185,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp6 = null;
     if (alwaysVisible) {
       const obj2 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-      tmp6 = closure_1_15(tmp(4712).CircleInformationIcon, obj2);
+      tmp6 = closure_1_15(tmp(4744).CircleInformationIcon, obj2);
     }
     cResult[0] = alwaysVisible;
     cResult[1] = tmp6;
@@ -226,7 +226,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   const obj3 = { variant: "secondary", border: "none", radius: 16, style: tmp4.card, children: null };
                   const items = [tmp10, cResult[12]];
                   obj3.children = items;
-                  const tmp23 = value2(tmp(5824).Card, obj3);
+                  const tmp23 = value2(tmp(5856).Card, obj3);
                   cResult[13] = tmp4.card;
                   cResult[14] = tmp10;
                   cResult[15] = cResult[12];
@@ -243,7 +243,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj4 = { style: tmp4.indicatorButton, children: null };
       const obj5 = { size: "sm", variant: "secondary-overlay", icon: null, accessibilityLabel: null, accessibilityHint: null, onPress: null };
       const obj6 = { size: "sm", color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT };
-      obj5.icon = closure_1_15(tmp(7209).EyeSlashIcon, obj6);
+      obj5.icon = closure_1_15(tmp(7241).EyeSlashIcon, obj6);
       let name = showAccessibilityLabel;
       if (showAccessibilityLabel == null) {
         name = badge.name;
@@ -252,7 +252,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const intl = tmp(1119).intl;
       obj5.accessibilityHint = intl.string(tmp(1119).t.hHHpvU);
       obj5.onPress = onShowPress;
-      obj4.children = closure_1_15(tmp(8178).IconButton, obj5);
+      obj4.children = closure_1_15(tmp(8210).IconButton, obj5);
       let tmp17Result = tmp17(style, obj4);
     } else {
       tmp17Result = null != tmp5;
@@ -305,7 +305,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj4 = { style: tmp.indicatorButton, children: null };
         const obj5 = { size: "sm", variant: "secondary-overlay", icon: null, accessibilityLabel: null, accessibilityHint: null, onPress: null };
         const obj6 = { size: "sm", color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT };
-        obj5.icon = tmp10(tmp8(7209).EyeSlashIcon, obj6);
+        obj5.icon = tmp10(tmp8(7241).EyeSlashIcon, obj6);
         if (showAccessibilityLabel == null) {
           showAccessibilityLabel = badge.name;
         }
@@ -313,7 +313,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const intl = tmp8(1119).intl;
         obj5.accessibilityHint = intl.string(tmp8(1119).t.hHHpvU);
         obj5.onPress = onShowPress;
-        obj4.children = tmp10(tmp8(8178).IconButton, obj5);
+        obj4.children = tmp10(tmp8(8210).IconButton, obj5);
         let tmp10Result = tmp10(style, obj4);
       }
       items[1] = tmp10Result;
@@ -476,7 +476,7 @@ let gesture = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) 
                           obj.onLongPress = fn;
                           obj.delayLongPress = tmp6(tmp7[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
                           obj.style = closure_5;
-                          obj.children = tmp(f67929, { badge: tmp4, alwaysVisible: tmp8 });
+                          obj.children = tmp(f67983, { badge: tmp4, alwaysVisible: tmp8 });
                           return tmp(tmp2, obj);
                         }
                       }
@@ -531,7 +531,7 @@ let gesture = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) 
                             obj.onLongPress = fn;
                             obj.delayLongPress = tmp6(tmp7[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
                             obj.style = closure_5;
-                            obj.children = tmp(f67929, { badge: tmp4, alwaysVisible: tmp8 });
+                            obj.children = tmp(f67983, { badge: tmp4, alwaysVisible: tmp8 });
                             return tmp(tmp2, obj);
                           }
                         }
@@ -598,7 +598,7 @@ let gesture = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) 
                   obj.onLongPress = fn;
                   obj.delayLongPress = tmp6(tmp7[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
                   obj.style = closure_5;
-                  obj.children = tmp(f67929, { badge: tmp4, alwaysVisible: tmp8 });
+                  obj.children = tmp(f67983, { badge: tmp4, alwaysVisible: tmp8 });
                   return tmp(tmp2, obj);
                 }
               }
@@ -709,7 +709,7 @@ let gesture = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) 
         obj.onLongPress = fn;
         obj.delayLongPress = tmp6(tmp7[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
         obj.style = closure_5;
-        obj.children = tmp(f67929, { badge: tmp4, alwaysVisible: tmp8 });
+        obj.children = tmp(f67983, { badge: tmp4, alwaysVisible: tmp8 });
         return tmp(tmp2, obj);
       }
     }
@@ -777,7 +777,7 @@ let gesture = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) 
         obj.onLongPress = fn;
         obj.delayLongPress = tmp6(tmp7[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
         obj.style = closure_5;
-        obj.children = tmp(f67929, { badge: tmp4, alwaysVisible: tmp8 });
+        obj.children = tmp(f67983, { badge: tmp4, alwaysVisible: tmp8 });
         return tmp(tmp2, obj);
       }
     }
@@ -827,8 +827,8 @@ let gesture = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) 
         let stringResult;
         if (alwaysVisible) {
           const intl2 = tmp6(1119).intl;
-          stringResult = intl2.string(tmp6(11452).getAlwaysVisibleCopy(tmp9));
-          const tmp6Result = tmp6(11452);
+          stringResult = intl2.string(tmp6(11488).getAlwaysVisibleCopy(tmp9));
+          const tmp6Result = tmp6(11488);
         }
         const merged = Object.assign({ accessibilityRole: "button", accessibilityHint: stringResult });
         let accessibilityActions;
@@ -2045,7 +2045,7 @@ let closure_50 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badg
                       const obj3 = { pageY: null, height: null };
                     }
                     const result3 = sharedValue1.set(tmp15);
-                    const result4 = sharedValue5.set(timing.withTiming(c17, tmp2(4762).timingStandard));
+                    const result4 = sharedValue5.set(timing.withTiming(c17, tmp2(4794).timingStandard));
                     const tmp2Result = timing;
                     const tmp2Result2 = ReanimatedRexport;
                     ReanimatedRexport.runOnJS(HapticUtils.triggerHapticFeedback)(HapticUtils.HapticFeedbackTypes.DRAG_AND_DROP_START);
@@ -2128,9 +2128,9 @@ let closure_50 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badg
         const result = PendingBadgeSettings.moveBadgeInDisplayOrder(value, value.indexOf(badge_id), clampResult1);
         if (result !== value) {
           const result1 = obj.set(result);
-          const tmpResult = tmp(4497);
-          tmp(4497).runOnJS(tmp(4726).triggerHapticFeedback)(tmp(4726).HapticFeedbackTypes.DRAG_AND_DROP_MOVE);
-          const runOnJSResult = tmp(4497).runOnJS(tmp(4726).triggerHapticFeedback);
+          const tmpResult = tmp(4529);
+          tmp(4529).runOnJS(tmp(4758).triggerHapticFeedback)(tmp(4758).HapticFeedbackTypes.DRAG_AND_DROP_MOVE);
+          const runOnJSResult = tmp(4529).runOnJS(tmp(4758).triggerHapticFeedback);
         }
       };
       const obj14 = { orderShared, tileSize, BADGE_GRID_GAP: tmp(tmp2[13]).BADGE_GRID_GAP, clamp: tmp(tmp2[25]).clamp, positionX: sharedValue2, BADGE_GRID_COLUMNS: tmp(tmp2[13]).BADGE_GRID_COLUMNS, positionY: sharedValue3, slotOffset, moveBadgeInDisplayOrder: tmp(tmp2[28]).moveBadgeInDisplayOrder, badgeId: badge_id, runOnJS: tmp(tmp2[25]).runOnJS, triggerHapticFeedback: tmp(tmp2[11]).triggerHapticFeedback, HapticFeedbackTypes: tmp(tmp2[11]).HapticFeedbackTypes };
@@ -2507,7 +2507,7 @@ let closure_50 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badg
         if (result !== value) {
           const result1 = obj.set(result);
           onCommitOrder(result);
-          const AccessibilityAnnouncer = tmp4(4472).AccessibilityAnnouncer;
+          const AccessibilityAnnouncer = tmp4(4504).AccessibilityAnnouncer;
           const intl = tmp4(1119).intl;
           const obj3 = { from: index + slotOffset + 1, to: clampResult + slotOffset + 1 };
           AccessibilityAnnouncer.announce(intl.formatToPlainString(tmp4(1119).t.qPHr0x, obj3));

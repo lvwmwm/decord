@@ -1,37 +1,48 @@
 // Module ID: 13110
 // Function ID: 13111
-// Dependencies: [13096, 13055, 13093]
-// Exports: createCheckInEnvelope
+// Dependencies: []
 
 // Module 13110
-import _mod13055 from "module_13055" /* 13055 */;
-import _mod13093 from "module_13093" /* 13093 */;
-import _mod13096 from "module_13096" /* 13096 */;
+function merge(arg0, obj) {
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 2;
+  }
+  if (obj) {
+    if (typeof obj === "object") {
+      if (num > 0) {
+        if (arg0) {
+          if (obj) {
+            const _Object = Object;
+            if (0 === Object.keys(obj).length) {
+              return arg0;
+            }
+          }
+        }
+        obj = {};
+        const merged = Object.assign(arg0);
+        for (const key10016 in arg1) {
+          let _Object2 = Object;
+          hasOwnProperty = Object.prototype.hasOwnProperty;
+          let call = hasOwnProperty.call;
+          if (typeof call === "unknown") {
+            let hasOwnPropertyResult = hasOwnProperty(key10016);
+          } else {
+            hasOwnPropertyResult = call(arg1, key10016);
+          }
+          if (!hasOwnPropertyResult) {
+            continue;
+          } else {
+            obj[key10016] = merge(obj[key10016], arg1[key10016], num - 1);
+            continue;
+          }
+          continue;
+        }
+        return obj;
+      }
+    }
+  }
+  return obj;
+}
 
-require = arg1;
-const dependencyMap = arg6;
-
-export const createCheckInEnvelope = function createCheckInEnvelope(arg0, arg1, sdk, arg3, arg4) {
-  const obj = { sent_at: new Date().toISOString() };
-  if (sdk) {
-    sdk = sdk.sdk;
-  }
-  if (sdk) {
-    const obj2 = { name: sdk.sdk.name, version: sdk.sdk.version };
-    obj.sdk = obj2;
-  }
-  let tmp = arg3;
-  if (arg3) {
-    tmp = arg4;
-  }
-  if (tmp) {
-    obj.dsn = _mod13096.dsnToString(arg4);
-  }
-  if (arg1) {
-    obj.trace = _mod13055.dropUndefinedKeys(arg1);
-  }
-  const items = [{ type: "check_in" }, arg0];
-  const date = new Date();
-  const items1 = [items];
-  return _mod13093.createEnvelope(obj, items1);
-};
+export { merge };

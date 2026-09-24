@@ -1,18 +1,18 @@
-// Module ID: 15513
-// Function ID: 15514
+// Module ID: 15523
+// Function ID: 15524
 // Name: AndroidMobileOverlaySetting
-// Dependencies: [10234, 8238, 558, 568, 504, 1119, 11594, 10245, 2]
+// Dependencies: [10273, 8270, 558, 568, 504, 1119, 11630, 10284, 2]
 
-// Module 15513 (AndroidMobileOverlaySetting)
+// Module 15523 (AndroidMobileOverlaySetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 10245 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 10234 */;
+import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 10284 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 10273 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -37,7 +37,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t["9CSZJm"]);
   },
-  parent: fn(8238).MobileUserSettings.VOICE,
+  parent: fn(8270).MobileUserSettings.VOICE,
   useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -62,7 +62,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.Wfoivk);
   },
-  usePredicate: fn(10234).isMobileOverlaySupported
+  usePredicate: fn(10273).isMobileOverlaySupported
 });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AndroidMobileOverlaySetting.tsx");

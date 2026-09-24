@@ -1,21 +1,21 @@
-// Module ID: 17629
-// Function ID: 17630
+// Module ID: 17639
+// Function ID: 17640
 // Name: VoicePanelDrawerToggleButton
-// Dependencies: [19, 21, 4758, 580, 558, 568, 17608, 17594, 5804, 11408, 13839, 17609, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 17618, 17604, 5836, 11444, 13875, 17619, 2]
 
-// Module 17629 (VoicePanelDrawerToggleButton)
+// Module 17639 (VoicePanelDrawerToggleButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import NativeViewDefault from "NativeView" /* 5804 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 17594 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 17608 */;
-import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 17609 */;
+import NativeViewDefault from "NativeView" /* 5836 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 17604 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 17618 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 17619 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { circle: null, iconContainer: null };
 let size = { width: "100%", height: "100%", borderRadius: nativeDefault.radii.round };
 obj2.circle = size;
@@ -67,7 +67,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
           const element = { onPress: handlePress, props, accessibilityLabel, children: null };
           const items = [tmp9, tmp15];
           element.children = items;
-          const tmp20 = React4(tmp6(17609), element);
+          const tmp20 = React4(tmp6(17619), element);
           cResult[11] = accessibilityLabel;
           cResult[12] = handlePress;
           cResult[13] = props;
@@ -77,7 +77,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
           tmp18 = tmp20;
         }
         const obj4 = { style: tmp4.iconContainer, children: cResult[7] };
-        const tmp17 = React3(tmp6(5804), obj4);
+        const tmp17 = React3(tmp6(5836), obj4);
         cResult[8] = tmp4.iconContainer;
         cResult[9] = cResult[7];
         cResult[10] = tmp17;
@@ -85,9 +85,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
       }
     }
     if (isDrawerOpen) {
-      let ChevronSmallUpIcon = tmp(11408).ChevronSmallDownIcon;
+      let ChevronSmallUpIcon = tmp(11444).ChevronSmallDownIcon;
     } else {
-      ChevronSmallUpIcon = tmp(13839).ChevronSmallUpIcon;
+      ChevronSmallUpIcon = tmp(13875).ChevronSmallUpIcon;
     }
     const obj5 = { color };
     const tmp12Result = React3(ChevronSmallUpIcon, obj5);
@@ -118,9 +118,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
   const obj3 = { style: tmp.iconContainer, children: null };
   const tmp7 = VoicePanelAnimatedButtonWrapperDefault;
   if (isDrawerOpen) {
-    let ChevronSmallUpIcon = tmp2(11408).ChevronSmallDownIcon;
+    let ChevronSmallUpIcon = tmp2(11444).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp2(13839).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp2(13875).ChevronSmallUpIcon;
   }
   obj3.children = React3(ChevronSmallUpIcon, { color: voicePanelButtonStyles.iconFill.color });
   items1[1] = React3(NativeViewDefault, obj3);

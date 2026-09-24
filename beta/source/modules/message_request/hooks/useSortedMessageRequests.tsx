@@ -1,13 +1,13 @@
-// Module ID: 17354
-// Function ID: 17355
+// Module ID: 17364
+// Function ID: 17365
 // Name: useSortedMessageRequests
-// Dependencies: [19, 2045, 1376, 7466, 558, 568, 504, 17355, 2]
+// Dependencies: [19, 2045, 1376, 7498, 558, 568, 504, 17365, 2]
 
-// Module 17354 (useSortedMessageRequests)
+// Module 17364 (useSortedMessageRequests)
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1376 */;
-import MessageRequestStore from "MessageRequestStore" /* 7466 */;
+import MessageRequestStore from "MessageRequestStore" /* 7498 */;
 
 const require = fn;
 const ReactCompilerGating = fn(558);

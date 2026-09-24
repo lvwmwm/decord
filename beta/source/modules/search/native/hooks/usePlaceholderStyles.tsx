@@ -1,20 +1,20 @@
-// Module ID: 17120
-// Function ID: 17121
+// Module ID: 17130
+// Function ID: 17131
 // Name: usePlaceholderStyles
-// Dependencies: [4750, 8127, 558, 568, 1482, 504, 4497, 4759, 1181, 2]
+// Dependencies: [4782, 8159, 558, 568, 1482, 504, 4529, 4791, 1181, 2]
 
-// Module 17120 (usePlaceholderStyles)
+// Module 17130 (usePlaceholderStyles)
 import c from "c" /* 568 */;
 import native from "native" /* 1181 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const FADE_LAYOUT_ANIMATION_DURATION = fn(8127).FADE_LAYOUT_ANIMATION_DURATION;
+const FADE_LAYOUT_ANIMATION_DURATION = fn(8159).FADE_LAYOUT_ANIMATION_DURATION;
 fn(558);
 const __initData = { code: "function usePlaceholderStylesTsx1(){const{useReducedMotion,visible,withRepeat,withSequence,withTiming,STANDARD_EASING,FADE_LAYOUT_ANIMATION_DURATION}=this.__closure;if(useReducedMotion){return{opacity:visible?1:0};}if(visible){return{opacity:withRepeat(withSequence(withTiming(0.5,{duration:0}),withTiming(1,{duration:1300,easing:STANDARD_EASING}),withTiming(0.5,{duration:1300,easing:STANDARD_EASING})),-1)};}return{opacity:withTiming(0,{duration:FADE_LAYOUT_ANIMATION_DURATION})};}" };
 const __initData2 = { code: "function usePlaceholderStylesTsx2(){const{useReducedMotion,visible,withRepeat,withSequence,withTiming,STANDARD_EASING,FADE_LAYOUT_ANIMATION_DURATION}=this.__closure;if(useReducedMotion){return{opacity:visible?1:0};}if(visible){return{opacity:withRepeat(withSequence(withTiming(0.5,{duration:0}),withTiming(1,{duration:1300,easing:STANDARD_EASING}),withTiming(0.5,{duration:1300,easing:STANDARD_EASING})),-1)};}return{opacity:withTiming(0,{duration:FADE_LAYOUT_ANIMATION_DURATION})};}" };
@@ -66,7 +66,7 @@ export const usePlaceholderAnimatedStyle = ReactCompilerGating.isReactCompilerEn
       obj.opacity = num5;
       let tmp5 = obj;
     } else if (tmp) {
-      const tmp2Result = tmp2(4497);
+      const tmp2Result = tmp2(4529);
       const obj5 = ReanimatedRexport;
       const withTimingResult = timing.withTiming(0.5, { duration: 0 });
       const obj2 = { duration: 1300, easing: native.STANDARD_EASING };
@@ -76,9 +76,9 @@ export const usePlaceholderAnimatedStyle = ReactCompilerGating.isReactCompilerEn
       tmp5 = obj;
     } else {
       const obj4 = { duration };
-      obj.opacity = tmp2(4759).withTiming(0, obj4);
+      obj.opacity = tmp2(4791).withTiming(0, obj4);
       tmp5 = obj;
-      const tmp2Result2 = tmp2(4759);
+      const tmp2Result2 = tmp2(4791);
     }
     return tmp5;
   };
@@ -102,7 +102,7 @@ export const usePlaceholderAnimatedStyle = ReactCompilerGating.isReactCompilerEn
       obj.opacity = num5;
       let tmp5 = obj;
     } else if (tmp) {
-      const tmp2Result = tmp2(4497);
+      const tmp2Result = tmp2(4529);
       const obj5 = ReanimatedRexport;
       const withTimingResult = timing.withTiming(0.5, { duration: 0 });
       const obj2 = { duration: 1300, easing: native.STANDARD_EASING };
@@ -112,9 +112,9 @@ export const usePlaceholderAnimatedStyle = ReactCompilerGating.isReactCompilerEn
       tmp5 = obj;
     } else {
       const obj4 = { duration };
-      obj.opacity = tmp2(4759).withTiming(0, obj4);
+      obj.opacity = tmp2(4791).withTiming(0, obj4);
       tmp5 = obj;
-      const tmp2Result2 = tmp2(4759);
+      const tmp2Result2 = tmp2(4791);
     }
     return tmp5;
   };

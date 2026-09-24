@@ -1,22 +1,22 @@
-// Module ID: 12372
-// Function ID: 12373
+// Module ID: 12408
+// Function ID: 12409
 // Name: useRenderPollAnswerImage
-// Dependencies: [32, 19, 17, 5107, 5106, 1379, 21, 558, 568, 504, 12352, 5802, 4416, 1401, 7377, 2]
+// Dependencies: [32, 19, 17, 5139, 5138, 1379, 21, 558, 568, 504, 12388, 5834, 4448, 1401, 7409, 2]
 
-// Module 12372 (useRenderPollAnswerImage)
+// Module 12408 (useRenderPollAnswerImage)
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import EmojiTypes from "EmojiTypes" /* 4416 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import EmojiDefault from "Emoji" /* 7377 */;
+import EmojiTypes from "EmojiTypes" /* 4448 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import EmojiDefault from "Emoji" /* 7409 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5106 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5138 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const ActivityIndicator = fn(17).ActivityIndicator;
-const DraftType = fn(5107).DraftType;
+const DraftType = fn(5139).DraftType;
 const EMOJI_URL_BASE_SIZE = fn(1379).EMOJI_URL_BASE_SIZE;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
@@ -48,7 +48,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, medi
         status = mediaAttachmentState.status;
       }
     }
-    if (status === tmp(12352).PollMediaUploadAttachmentStatus.PREPARING) {
+    if (status === tmp(12388).PollMediaUploadAttachmentStatus.PREPARING) {
       const _Symbol = Symbol;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
         const tmp38 = <ActivityIndicator />;
@@ -74,7 +74,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, medi
             tmp25 = cResult[13];
             tmp26 = cResult[14];
           }
-          let str = emoji.type === tmp(4416).EmojiTypes.UNICODE ? emoji.surrogates : emoji.name;
+          let str = emoji.type === tmp(4448).EmojiTypes.UNICODE ? emoji.surrogates : emoji.name;
           if (str == null) {
             str = "";
           }

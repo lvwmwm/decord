@@ -1,13 +1,13 @@
-// Module ID: 17073
-// Function ID: 17074
+// Module ID: 17083
+// Function ID: 17084
 // Name: VibegrationsHistoryState
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 3682, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 3714, 4786, 2]
 
-// Module 17073 (VibegrationsHistoryState)
+// Module 17083 (VibegrationsHistoryState)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 const util = intl(1119);
@@ -15,7 +15,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { placeholder: { alignItems: "center", gap: nativeDefault.space.PX_4, padding: nativeDefault.space.PX_24 } };
 let closure_6 = createStyles.createStyles(obj2);
 fn(558);
@@ -31,7 +31,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
     }
     if (cResult[3] !== tmp6) {
       const obj2 = { variant: "text-sm/medium", color: "text-default", children: tmp6 };
-      const tmp11 = React4(tmp(4754).Text, obj2);
+      const tmp11 = React4(tmp(4786).Text, obj2);
       cResult[3] = tmp6;
       cResult[4] = tmp11;
       let tmp9 = tmp11;
@@ -44,7 +44,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
       }
       if (cResult[8] !== tmp12) {
         const obj3 = { variant: "text-xs/normal", color: "text-muted", children: tmp12 };
-        const tmp17 = React4(tmp(4754).Text, obj3);
+        const tmp17 = React4(tmp(4786).Text, obj3);
         cResult[8] = tmp12;
         cResult[9] = tmp17;
         let tmp15 = tmp17;
@@ -75,7 +75,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
     let stringResult = emptyBody;
     if (tmp5) {
       const intl2 = tmp(1119).intl;
-      stringResult = intl2.string(_modDef3682["+2AMt1"]);
+      stringResult = intl2.string(_modDef3714["+2AMt1"]);
     }
     cResult[5] = emptyBody;
     cResult[6] = tmp5;
@@ -85,7 +85,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   let stringResult1 = emptyTitle;
   if ("failed" === state.state.status) {
     const intl = tmp(1119).intl;
-    stringResult1 = intl.string(_modDef3682.TV42NS);
+    stringResult1 = intl.string(_modDef3714.TV42NS);
   }
   cResult[0] = emptyTitle;
   cResult[1] = "failed" === state.state.status;
@@ -101,12 +101,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   obj.accessibilityRole = str;
   if ("failed" === state.state.status) {
     const intl = tmp5(1119).intl;
-    emptyTitle = intl.string(_modDef3682.TV42NS);
+    emptyTitle = intl.string(_modDef3714.TV42NS);
   }
   const items = [React4(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: emptyTitle }), ];
   if ("failed" === state.state.status) {
     const intl2 = tmp5(1119).intl;
-    emptyBody = intl2.string(_modDef3682["+2AMt1"]);
+    emptyBody = intl2.string(_modDef3714["+2AMt1"]);
   }
   items[1] = React4(Text_Text.Text, { variant: "text-xs/normal", color: "text-muted", children: emptyBody });
   obj.children = items;
@@ -130,7 +130,7 @@ export const VibegrationsHistoryNotice = ReactCompilerGating.isReactCompilerEnab
         if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
           const obj2 = { variant: "text-xs/normal", color: "text-muted", children: null };
           const intl2 = util.intl;
-          obj2.children = intl2.string(_modDef3682["U/qDX9"]);
+          obj2.children = intl2.string(_modDef3714["U/qDX9"]);
           const tmp7 = React4(Text_Text.Text, obj2);
           cResult[1] = tmp7;
         }
@@ -140,7 +140,7 @@ export const VibegrationsHistoryNotice = ReactCompilerGating.isReactCompilerEnab
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { variant: "text-xs/normal", color: "text-feedback-critical", children: null };
       intl = util.intl;
-      stringResult = intl.string(_modDef3682.TV42NS);
+      stringResult = intl.string(_modDef3714.TV42NS);
       obj3.children = stringResult;
       const tmp13 = React4(Text_Text.Text, obj3);
       cResult[0] = tmp13;
@@ -156,12 +156,12 @@ export const VibegrationsHistoryNotice = ReactCompilerGating.isReactCompilerEnab
   } else if ("failed" === state.status) {
     const obj2 = { variant: "text-xs/normal", color: "text-feedback-critical", children: null };
     const intl2 = util.intl;
-    obj2.children = intl2.string(_modDef3682.TV42NS);
+    obj2.children = intl2.string(_modDef3714.TV42NS);
     let tmp = React4(Text_Text.Text, obj2);
   } else if (state.truncated) {
     const obj = { variant: "text-xs/normal", color: "text-muted", children: null };
     const intl = util.intl;
-    obj.children = intl.string(_modDef3682["U/qDX9"]);
+    obj.children = intl.string(_modDef3714["U/qDX9"]);
     tmp = React4(Text_Text.Text, obj);
   }
 });

@@ -1,10 +1,10 @@
-// Module ID: 10045
-// Function ID: 10046
+// Module ID: 10084
+// Function ID: 10085
 // Name: useStartEvent
-// Dependencies: [5, 32, 19, 558, 568, 10046, 10047, 4659, 2]
+// Dependencies: [5, 32, 19, 558, 568, 10085, 10086, 4691, 2]
 
-// Module 10045 (useStartEvent)
-import StartEventUtilsAll from "StartEventUtils" /* 10046 */;
+// Module 10084 (useStartEvent)
+import StartEventUtilsAll from "StartEventUtils" /* 10085 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -51,7 +51,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (1 === tmp8) {
         c6 = 0;
         closure_131_3 = closure_5;
-        const aPIError = new closure_0(4659).APIError(closure_131_3);
+        const aPIError = new closure_0(4691).APIError(closure_131_3);
         closure_131_4 = aPIError;
         closure_1(closure_131_4);
         closure_0(false);
@@ -81,7 +81,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         } else {
           c7 = 4;
           c8 = 1;
-          return { value: closure_0(10047).navigateToEvent(closure_131_0, closure_131_2), done: false };
+          return { value: closure_0(10086).navigateToEvent(closure_131_0, closure_131_2), done: false };
         }
       } else if (4 === tmp8) {
         if (arg0 === 1) {
@@ -94,7 +94,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         } else {
           c7 = 5;
           c8 = 1;
-          return { value: closure_0(10047).postStartActions(closure_131_0, closure_131_2), done: false };
+          return { value: closure_0(10086).postStartActions(closure_131_0, closure_131_2), done: false };
         }
       } else if (arg0 === 1) {
         c8 = 3;
@@ -202,14 +202,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               c6 = 1;
               c7 = 3;
               c8 = 1;
-              const obj7 = { value: closure_1(10046).preStartEventActions(closure_131_0, closure_131_3), done: false };
+              const obj7 = { value: closure_1(10085).preStartEventActions(closure_131_0, closure_131_3), done: false };
               return obj7;
             }
           } else {
             if (2 === tmp7) {
               c6 = 0;
               closure_131_5 = closure_5;
-              const aPIError = new closure_0(4659).APIError(closure_131_5);
+              const aPIError = new closure_0(4691).APIError(closure_131_5);
               closure_131_4 = aPIError;
               closure_132_1(closure_131_4);
               closure_132_0(false);
@@ -227,7 +227,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               } else {
                 c7 = 4;
                 c8 = 1;
-                const obj10 = { value: closure_1(10046).setEventAsActive(closure_131_0, closure_131_1), done: false };
+                const obj10 = { value: closure_1(10085).setEventAsActive(closure_131_0, closure_131_1), done: false };
                 return obj10;
               }
             } else if (4 === tmp7) {
@@ -242,7 +242,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               } else {
                 c7 = 5;
                 c8 = 1;
-                const obj13 = { value: closure_0(10047).navigateToEvent(closure_131_0, closure_131_2), done: false };
+                const obj13 = { value: closure_0(10086).navigateToEvent(closure_131_0, closure_131_2), done: false };
                 return obj13;
               }
             } else if (5 === tmp7) {
@@ -257,7 +257,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               } else {
                 c7 = 6;
                 c8 = 1;
-                const obj15 = { value: closure_0(10047).postStartActions(closure_131_0, closure_131_2), done: false };
+                const obj15 = { value: closure_0(10086).postStartActions(closure_131_0, closure_131_2), done: false };
                 return obj15;
               }
             } else if (arg0 === 1) {

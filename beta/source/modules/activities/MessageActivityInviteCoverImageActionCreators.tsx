@@ -1,10 +1,10 @@
-// Module ID: 13546
-// Function ID: 13547
+// Module ID: 13582
+// Function ID: 13583
 // Name: MessageActivityInviteCoverImageActionCreators
 // Dependencies: [577, 2]
 // Exports: setCoverImageURL
 
-// Module 13546 (MessageActivityInviteCoverImageActionCreators)
+// Module 13582 (MessageActivityInviteCoverImageActionCreators)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import size from "module_2" /* 2 */;
 

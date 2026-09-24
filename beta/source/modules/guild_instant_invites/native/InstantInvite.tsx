@@ -1,19 +1,19 @@
-// Module ID: 11237
-// Function ID: 11238
+// Module ID: 11273
+// Function ID: 11274
 // Name: InstantInvite
-// Dependencies: [109, 19, 17, 2049, 1376, 1078, 21, 4758, 580, 558, 568, 504, 7415, 11238, 11239, 5111, 1119, 11240, 1105, 11242, 7419, 4754, 8178, 8182, 5186, 11246, 11247, 5824, 11249, 11252, 11254, 2]
+// Dependencies: [109, 19, 17, 2049, 1376, 1078, 21, 4790, 580, 558, 568, 504, 7447, 11274, 11275, 5143, 1119, 11276, 1105, 11278, 7451, 4786, 8210, 8214, 5218, 11282, 11283, 5856, 11285, 11288, 11290, 2]
 
-// Module 11237 (InstantInvite)
+// Module 11273 (InstantInvite)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import router_utils from "router_utils" /* 1105 */;
 import util from "util" /* 1119 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5111 */;
-import ArrowSmallRightIcon from "ArrowSmallRightIcon" /* 11240 */;
-import InstantInviteIconsDefault from "InstantInviteIcons" /* 11242 */;
-import InstantInviteCreatorDefault from "InstantInviteCreator" /* 11247 */;
-import InviteRolesDisplayDefault from "InviteRolesDisplay" /* 11252 */;
-import InstantInviteUsesLabelDefault from "InstantInviteUsesLabel" /* 11254 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5143 */;
+import ArrowSmallRightIcon from "ArrowSmallRightIcon" /* 11276 */;
+import InstantInviteIconsDefault from "InstantInviteIcons" /* 11278 */;
+import InstantInviteCreatorDefault from "InstantInviteCreator" /* 11283 */;
+import InviteRolesDisplayDefault from "InviteRolesDisplay" /* 11288 */;
+import InstantInviteUsesLabelDefault from "InstantInviteUsesLabel" /* 11290 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
@@ -26,7 +26,7 @@ let closure_8 = fn(2049).createChannelRecordFromInvite;
 const Routes = fn(1078).Routes;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { creatorWrapper: { marginTop: nativeDefault.space.PX_8, flex: 1 }, gameWrapper: { flex: 1, flexDirection: "row", alignItems: "center", gap: 8 }, gameText: { flex: 1 } };
 let closure_13 = createStyles.createStyles(obj);
 fn(558);
@@ -76,18 +76,18 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (linkedLobby3 != null) {
     application_id = linkedLobby3.application_id;
   }
-  const getOrFetchApplication = channel(7415).useGetOrFetchApplication(application_id);
-  const tmpResult3 = channel(7415);
-  const canUnlinkLobbyChannel = channel(11238).useCanUnlinkLobbyChannel(channel);
+  const getOrFetchApplication = channel(7447).useGetOrFetchApplication(application_id);
+  const tmpResult3 = channel(7447);
+  const canUnlinkLobbyChannel = channel(11274).useCanUnlinkLobbyChannel(channel);
   let str;
-  const tmpResult4 = channel(11238);
+  const tmpResult4 = channel(11274);
   if (getOrFetchApplication != null) {
     str = getOrFetchApplication.name;
   }
   if (str == null) {
     str = "";
   }
-  const tmp15Result = canUnlinkLobbyChannel(11239)(channel.id, str);
+  const tmp15Result = canUnlinkLobbyChannel(11275)(channel.id, str);
   dependencyMap = tmp15Result;
   if (cResult[3] === canUnlinkLobbyChannel) {
     if (cResult[4] === tmp15Result) {
@@ -116,7 +116,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         tmp21 = cResult[10];
       }
       if (cResult[11] !== tmp17) {
-        let obj2 = { label: tmp21, iconSource: tmp14(11242).revoke, variant: "destructive", action: tmp17 };
+        let obj2 = { label: tmp21, iconSource: tmp14(11278).revoke, variant: "destructive", action: tmp17 };
         cResult[11] = tmp17;
         cResult[12] = obj2;
         let tmp23 = obj2;
@@ -128,12 +128,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           let tmp24 = cResult[15];
         }
         if (cResult[16] !== getOrFetchApplication) {
-          const obj3 = { game: getOrFetchApplication, size: tmp(7419).GameIconSizes.SIZE_24 };
-          const tmp28 = closure_11(tmp14(7419), obj3);
+          const obj3 = { game: getOrFetchApplication, size: tmp(7451).GameIconSizes.SIZE_24 };
+          const tmp28 = closure_11(tmp14(7451), obj3);
           cResult[16] = getOrFetchApplication;
           cResult[17] = tmp28;
           let tmp25 = tmp28;
-          const tmp14Result = tmp14(7419);
+          const tmp14Result = tmp14(7451);
         } else {
           tmp25 = cResult[17];
         }
@@ -191,7 +191,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
                   }
                 }
                 const obj4 = { items: tmp24, children: tmp37 };
-                const tmp39 = closure_11(tmp(8182).ContextMenu, obj4);
+                const tmp39 = closure_11(tmp(8214).ContextMenu, obj4);
                 cResult[26] = tmp24;
                 cResult[27] = tmp39;
               } else {
@@ -232,7 +232,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
                     }
                   }
                   const obj5 = { channel };
-                  const tmp44 = closure_11(tmp(11246).InstantInviteDetails, obj5);
+                  const tmp44 = closure_11(tmp(11282).InstantInviteDetails, obj5);
                   cResult[31] = channel;
                   cResult[32] = tmp44;
                 } else {
@@ -288,7 +288,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
                     const obj6 = { children: null };
                     const items1 = [tmp40, tmp43, tmp48];
                     obj6.children = items1;
-                    const tmp54 = closure_12(tmp(5824).Card, obj6);
+                    const tmp54 = closure_12(tmp(5856).Card, obj6);
                     cResult[39] = tmp40;
                     cResult[40] = tmp43;
                     cResult[41] = tmp48;
@@ -297,13 +297,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
                   const obj7 = { direction: "horizontal", align: "flex-end", children: null };
                   const obj8 = { style: tmp4.creatorWrapper, children: tmp45 };
                   obj7.children = closure_11(View, obj8);
-                  const tmp51 = closure_11(tmp(5186).Stack, obj7);
+                  const tmp51 = closure_11(tmp(5218).Stack, obj7);
                   cResult[36] = tmp4.creatorWrapper;
                   cResult[37] = tmp45;
                   cResult[38] = tmp51;
                 }
                 const obj9 = { user: stateFromStores, guildId: channel.guild_id };
-                const tmp47 = closure_11(tmp14(11247), obj9);
+                const tmp47 = closure_11(tmp14(11283), obj9);
                 cResult[33] = channel.guild_id;
                 cResult[34] = stateFromStores;
                 cResult[35] = tmp47;
@@ -311,7 +311,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               const obj10 = { direction: "horizontal", justify: "space-between", children: null };
               const items2 = [tmp33, tmp38];
               obj10.children = items2;
-              const tmp42 = closure_12(tmp(5186).Stack, obj10);
+              const tmp42 = closure_12(tmp(5218).Stack, obj10);
               cResult[28] = tmp33;
               cResult[29] = tmp38;
               cResult[30] = tmp42;
@@ -328,7 +328,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           tmp33 = tmp36;
         }
         const obj12 = { ellipsizeMode: "tail", lineClamp: 1, variant: "text-lg/bold", style: tmp4.gameText, children: name };
-        const tmp32 = closure_11(tmp(4754).Text, obj12);
+        const tmp32 = closure_11(tmp(4786).Text, obj12);
         cResult[18] = tmp4.gameText;
         cResult[19] = name;
         cResult[20] = tmp32;
@@ -342,7 +342,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     const obj13 = {
       label: tmp18,
-      IconComponent: tmp(11240).ArrowSmallRightIcon,
+      IconComponent: tmp(11276).ArrowSmallRightIcon,
       action() {
           router_utils.transitionTo(Routes.CHANNEL(channel.guild_id, channel.id));
         }
@@ -389,18 +389,18 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (linkedLobby != null) {
     application_id = linkedLobby.application_id;
   }
-  const getOrFetchApplication = channel(7415).useGetOrFetchApplication(application_id);
-  let obj2 = channel(7415);
-  canUnlinkLobbyChannel = channel(11238).useCanUnlinkLobbyChannel(channel);
+  const getOrFetchApplication = channel(7447).useGetOrFetchApplication(application_id);
+  let obj2 = channel(7447);
+  canUnlinkLobbyChannel = channel(11274).useCanUnlinkLobbyChannel(channel);
   let str;
-  const tmp2Result = channel(11238);
+  const tmp2Result = channel(11274);
   if (getOrFetchApplication != null) {
     str = getOrFetchApplication.name;
   }
   if (str == null) {
     str = "";
   }
-  const tmp9Result = canUnlinkLobbyChannel(11239)(channel.id, str);
+  const tmp9Result = canUnlinkLobbyChannel(11275)(channel.id, str);
   dependencyMap = tmp9Result;
   const items1 = [canUnlinkLobbyChannel, tmp9Result];
   action = noop.useCallback(() => {
@@ -437,9 +437,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }, items2);
   const obj3 = { style: tmp.gameWrapper, children: null };
   const obj4 = { game: getOrFetchApplication, size: null };
-  const tmp9 = canUnlinkLobbyChannel(11239);
-  obj4.size = channel(7419).GameIconSizes.SIZE_24;
-  const items3 = [closure_11(canUnlinkLobbyChannel(7419), obj4), ];
+  const tmp9 = canUnlinkLobbyChannel(11275);
+  obj4.size = channel(7451).GameIconSizes.SIZE_24;
+  const items3 = [closure_11(canUnlinkLobbyChannel(7451), obj4), ];
   const obj5 = { ellipsizeMode: "tail", lineClamp: 1, variant: "text-lg/bold", style: tmp.gameText, children: null };
   let name;
   if (getOrFetchApplication != null) {
@@ -448,31 +448,31 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const obj6 = { children: null };
   const obj7 = { direction: "horizontal", justify: "space-between", children: null };
   obj5.children = name;
-  items3[1] = closure_11(channel(4754).Text, obj5);
+  items3[1] = closure_11(channel(4786).Text, obj5);
   obj3.children = items3;
   const items4 = [
     closure_12(View, obj3),
-    closure_11(channel(8182).ContextMenu, {
+    closure_11(channel(8214).ContextMenu, {
       items: memo,
       children(ref) {
         const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-        const obj = { size: "sm", variant: "secondary", icon: canUnlinkLobbyChannel(11242).more, accessibilityLabel: null, ref: null };
+        const obj = { size: "sm", variant: "secondary", icon: canUnlinkLobbyChannel(11278).more, accessibilityLabel: null, ref: null };
         const intl = channel(1119).intl;
         obj.accessibilityLabel = intl.string(channel(1119).t.DEoVWZ);
         obj.ref = ref.ref;
         const merged1 = Object.assign(merged);
-        return closure_1_11(channel(8178).IconButton, obj);
+        return closure_1_11(channel(8210).IconButton, obj);
       }
     })
   ];
   obj7.children = items4;
-  const items5 = [closure_12(channel(5186).Stack, obj7), closure_11(channel(11246).InstantInviteDetails, { channel }), ];
+  const items5 = [closure_12(channel(5218).Stack, obj7), closure_11(channel(11282).InstantInviteDetails, { channel }), ];
   const obj9 = { direction: "horizontal", align: "flex-end", children: null };
-  const obj10 = { style: tmp.creatorWrapper, children: closure_11(canUnlinkLobbyChannel(11247), { user: stateFromStores, guildId: channel.guild_id }) };
+  const obj10 = { style: tmp.creatorWrapper, children: closure_11(canUnlinkLobbyChannel(11283), { user: stateFromStores, guildId: channel.guild_id }) };
   obj9.children = closure_11(View, obj10);
-  items5[2] = closure_11(channel(5186).Stack, obj9);
+  items5[2] = closure_11(channel(5218).Stack, obj9);
   obj6.children = items5;
-  return closure_12(channel(5824).Card, obj6);
+  return closure_12(channel(5856).Card, obj6);
 });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_instant_invites/native/InstantInvite.tsx");
@@ -497,7 +497,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     if (cResult[3] === onInviteRevoked) {
       let tmp8 = cResult[4];
     }
-    const inviteActions = tmp(11249).useInviteActions(tmp8);
+    const inviteActions = tmp(11285).useInviteActions(tmp8);
     if (cResult[5] !== invite.roles) {
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
@@ -532,7 +532,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
           }
         }
         const obj2 = { variant: "text-lg/bold", tabularNumbers: true, children: invite.code };
-        const tmp16 = closure_1_11(tmp(4754).Text, obj2);
+        const tmp16 = closure_1_11(tmp(4786).Text, obj2);
         cResult[8] = invite.code;
         cResult[9] = tmp16;
       } else {
@@ -583,7 +583,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
           }
         }
         const obj3 = { items: inviteActions, children: tmp18 };
-        const tmp20 = closure_1_11(tmp(8182).ContextMenu, obj3);
+        const tmp20 = closure_1_11(tmp(8214).ContextMenu, obj3);
         cResult[11] = inviteActions;
         cResult[12] = tmp20;
       } else {
@@ -685,7 +685,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
           cResult[24] = tmp30;
         }
         const obj5 = { channel: tmp5, expiresAt: tmp24 };
-        const tmp28 = closure_1_11(tmp(11246).InstantInviteDetails, obj5);
+        const tmp28 = closure_1_11(tmp(11282).InstantInviteDetails, obj5);
         cResult[18] = tmp5;
         cResult[19] = tmp24;
         cResult[20] = tmp28;
@@ -693,12 +693,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       const obj6 = { direction: "horizontal", justify: "space-between", children: null };
       const items = [tmp15, tmp19];
       obj6.children = items;
-      const tmp23 = __initData(tmp(5186).Stack, obj6);
+      const tmp23 = __initData(tmp(5218).Stack, obj6);
       cResult[13] = tmp15;
       cResult[14] = tmp19;
       cResult[15] = tmp23;
     }
-    const tmpResult = tmp(11249);
+    const tmpResult = tmp(11285);
   }
   const obj7 = { invite, onInviteRevoked };
   cResult[2] = invite;
@@ -717,7 +717,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   const memo = noop.useMemo(() => closure_8(invite.channel), items);
   const tmp = closure_13();
   const items1 = [invite.roles];
-  const inviteActions = invite(11249).useInviteActions({ invite, onInviteRevoked: onInviteRevoked.onInviteRevoked });
+  const inviteActions = invite(11285).useInviteActions({ invite, onInviteRevoked: onInviteRevoked.onInviteRevoked });
   const memo1 = noop.useMemo(() => {
     const roles = invite.roles;
     return roles.map((id) => id.id);
@@ -725,8 +725,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   let tmp9Result = memo1.length > 0 && null != id;
   const obj2 = { direction: "horizontal", justify: "space-between", children: null };
   const items2 = [
-    closure_11(invite(4754).Text, { variant: "text-lg/bold", tabularNumbers: true, children: invite.code }),
-    closure_11(invite(8182).ContextMenu, {
+    closure_11(invite(4786).Text, { variant: "text-lg/bold", tabularNumbers: true, children: invite.code }),
+    closure_11(invite(8214).ContextMenu, {
       items: inviteActions,
       children(ref) {
         const merged = Object.assign(ref, Object.assign({ ref: 0 }));
@@ -735,13 +735,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         obj.accessibilityLabel = intl.string(invite(1119).t.DEoVWZ);
         obj.ref = ref.ref;
         const merged1 = Object.assign(merged);
-        return closure_1_11(invite(8178).IconButton, obj);
+        return closure_1_11(invite(8210).IconButton, obj);
       }
     })
   ];
   obj2.children = items2;
-  const items3 = [closure_12(invite(5186).Stack, obj2), , , ];
-  let obj = invite(11249);
+  const items3 = [closure_12(invite(5218).Stack, obj2), , , ];
+  let obj = invite(11285);
   const obj3 = { variant: "text-lg/bold", tabularNumbers: true, children: invite.code };
   const obj4 = {
     items: inviteActions,
@@ -752,10 +752,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       obj.accessibilityLabel = intl.string(invite(1119).t.DEoVWZ);
       obj.ref = ref.ref;
       const merged1 = Object.assign(merged);
-      return closure_1_11(invite(8178).IconButton, obj);
+      return closure_1_11(invite(8210).IconButton, obj);
     }
   };
-  items3[1] = closure_11(invite(11246).InstantInviteDetails, { channel: memo, expiresAt: invite.getExpiresAt() });
+  items3[1] = closure_11(invite(11282).InstantInviteDetails, { channel: memo, expiresAt: invite.getExpiresAt() });
   if (tmp9Result) {
     const obj6 = { roleIds: memo1, guildId: id };
     tmp9Result = tmp9(InviteRolesDisplayDefault, obj6);
@@ -766,8 +766,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   const obj9 = { style: tmp.creatorWrapper, children: closure_11(InstantInviteCreatorDefault, { user: invite.inviter, guildId: id }) };
   const items4 = [closure_11(View, obj9), closure_11(InstantInviteUsesLabelDefault, { uses, maxUses })];
   obj8.children = items4;
-  items3[3] = closure_12(invite(5186).Stack, obj8);
+  items3[3] = closure_12(invite(5218).Stack, obj8);
   obj7.children = items3;
-  return closure_12(invite(5824).Card, obj7);
+  return closure_12(invite(5856).Card, obj7);
 }));
 export const LinkedChannelInvite = tmp3;

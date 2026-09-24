@@ -1,21 +1,21 @@
-// Module ID: 17584
-// Function ID: 17585
+// Module ID: 17594
+// Function ID: 17595
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 558, 568, 7553, 8944, 8945, 1119, 10018, 5822, 9976, 17585, 9916, 2]
+// Dependencies: [19, 21, 558, 568, 7585, 8976, 8977, 1119, 10057, 5854, 10008, 17595, 9948, 2]
 
-// Module 17584 (VoicePanelGamesSection)
+// Module 17594 (VoicePanelGamesSection)
 import c from "c" /* 568 */;
-import useGame from "useGame" /* 7553 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8945 */;
-import FormComponents from "FormComponents" /* 9916 */;
-import VoiceChannelGamesExperimentDefault from "VoiceChannelGamesExperiment" /* 9976 */;
-import GameActivityIconDefault from "GameActivityIcon" /* 10018 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 17585 */;
+import useGame from "useGame" /* 7585 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8977 */;
+import FormComponents from "FormComponents" /* 9948 */;
+import VoiceChannelGamesExperimentDefault from "VoiceChannelGamesExperiment" /* 10008 */;
+import GameActivityIconDefault from "GameActivityIcon" /* 10057 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 17595 */;
 import noop from "module_19" /* 19 */;
 
 const util = v9sZWVp(1119);
-const TableRow = v9sZWVp(5822);
-const GameProfileAnalyticUtils = v9sZWVp(8944);
+const TableRow = v9sZWVp(5854);
+const GameProfileAnalyticUtils = v9sZWVp(8976);
 require = fn;
 const jsx = fn(21).jsx;
 let ReactCompilerGating = fn(558);
@@ -127,7 +127,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((gameId) => {
       const obj6 = { gameName: name };
       obj5.accessibilityLabel = intl2.formatToPlainString(tmp(1119).t["9sZWVp"], obj6);
     }
-    return jsx(tmp(5822).TableRow, obj5);
+    return jsx(tmp(5854).TableRow, obj5);
   }
 });
 ReactCompilerGating = fn(558);
@@ -167,7 +167,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       } else {
         if (cResult[4] !== cResult[2]) {
           const obj2 = { title: first, hasIcons: true, children: tmp7 };
-          const tmp13 = jsx(tmp(9916).VoicePanelFormSection, { title: first, hasIcons: true, children: tmp7 });
+          const tmp13 = jsx(tmp(9948).VoicePanelFormSection, { title: first, hasIcons: true, children: tmp7 });
           cResult[4] = tmp7;
           cResult[5] = tmp13;
           let tmp11 = tmp13;

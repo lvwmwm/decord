@@ -1,21 +1,21 @@
-// Module ID: 15172
-// Function ID: 15173
+// Module ID: 15182
+// Function ID: 15183
 // Name: FamilyCenterActivityGiftRow
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 8447, 15160, 15169, 15171, 4603, 15170, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 8479, 15170, 15179, 15181, 4635, 15180, 4786, 2]
 
-// Module 15172 (FamilyCenterActivityGiftRow)
+// Module 15182 (FamilyCenterActivityGiftRow)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8447 */;
-import useSelectedTeenUser from "useSelectedTeenUser" /* 15160 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 15169 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8479 */;
+import useSelectedTeenUser from "useSelectedTeenUser" /* 15170 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 15179 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { display: "flex", flexDirection: "row", alignItems: "center", borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1, paddingVertical: 12 }, textContainer: { display: "flex", flexDirection: "column", flexShrink: 1 } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -66,7 +66,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((gifterUserId) =>
                     }
                     if (cResult[14] !== displayName) {
                       const obj3 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: displayName };
-                      const tmp19 = React4(tmp(4754).Text, obj3);
+                      const tmp19 = React4(tmp(4786).Text, obj3);
                       cResult[14] = displayName;
                       cResult[15] = tmp19;
                       let tmp17 = tmp19;
@@ -75,7 +75,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((gifterUserId) =>
                     }
                     if (cResult[16] !== tmp11) {
                       const obj4 = { variant: "text-xs/medium", color: "text-muted", children: tmp11 };
-                      const tmp22 = React4(tmp(4754).Text, obj4);
+                      const tmp22 = React4(tmp(4786).Text, obj4);
                       cResult[16] = tmp11;
                       cResult[17] = tmp22;
                       let tmp20 = tmp22;
@@ -119,7 +119,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((gifterUserId) =>
                 }
               }
               const obj7 = { displayName, product, isSubscription, subscriptionPlanId };
-              const tmp16 = React4(tmp5(15170), obj7);
+              const tmp16 = React4(tmp5(15180), obj7);
               cResult[9] = displayName;
               cResult[10] = isSubscription;
               cResult[11] = subscriptionPlanId;
@@ -133,13 +133,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((gifterUserId) =>
       const obj8 = { claimed, price, gifterName: null, offeredAt: null, claimedAt: null };
       let name = null;
       if (null != teenUserForId) {
-        name = tmp5(4603).getName(teenUserForId);
-        const tmp5Result = tmp5(4603);
+        name = tmp5(4635).getName(teenUserForId);
+        const tmp5Result = tmp5(4635);
       }
       obj8.gifterName = name;
       obj8.offeredAt = offeredAt;
       obj8.claimedAt = claimedAt;
-      const giftSubtext = tmp(15171).getGiftSubtext(obj8);
+      const giftSubtext = tmp(15181).getGiftSubtext(obj8);
       cResult[3] = claimed;
       cResult[4] = claimedAt;
       cResult[5] = teenUserForId;
@@ -147,7 +147,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((gifterUserId) =>
       cResult[7] = price;
       cResult[8] = giftSubtext;
       tmp11 = giftSubtext;
-      const tmpResult = tmp(15171);
+      const tmpResult = tmp(15181);
     }
   }
   const purchaseDisplayInfo = FamilyCenterActivityPurchaseRowUtils.getPurchaseDisplayInfo(tmp8, subscriptionPlanId);
@@ -180,28 +180,28 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((gifterUserId) =>
     const obj3 = { claimed, price, gifterName: null, offeredAt: null, claimedAt: null };
     let name = null;
     if (null != teenUserForId) {
-      name = tmp2(4603).getName(teenUserForId);
-      const tmp2Result = tmp2(4603);
+      name = tmp2(4635).getName(teenUserForId);
+      const tmp2Result = tmp2(4635);
     }
     obj3.gifterName = name;
     obj3.offeredAt = offeredAt;
     obj3.claimedAt = claimedAt;
     const obj4 = { style: tmp.container, children: null };
-    const giftSubtext = tmp5(15171).getGiftSubtext(obj3);
+    const giftSubtext = tmp5(15181).getGiftSubtext(obj3);
     const obj5 = { displayName, product: null, isSubscription: null, subscriptionPlanId: null };
-    const tmp5Result = tmp5(15171);
+    const tmp5Result = tmp5(15181);
     if (product == null) {
       product = null;
     }
     obj5.product = product;
     obj5.isSubscription = isSubscription;
     obj5.subscriptionPlanId = subscriptionPlanId;
-    const items = [React4(tmp2(15170), obj5), ];
+    const items = [React4(tmp2(15180), obj5), ];
     const obj6 = { style: tmp.textContainer, children: null };
     const obj7 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: displayName };
-    const items1 = [React4(tmp5(4754).Text, obj7), ];
+    const items1 = [React4(tmp5(4786).Text, obj7), ];
     const obj8 = { variant: "text-xs/medium", color: "text-muted", children: giftSubtext };
-    items1[1] = React4(tmp5(4754).Text, obj8);
+    items1[1] = React4(tmp5(4786).Text, obj8);
     obj6.children = items1;
     items[1] = hasOwnProperty(View, obj6);
     obj4.children = items;

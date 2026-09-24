@@ -1,24 +1,24 @@
-// Module ID: 10649
-// Function ID: 10650
+// Module ID: 10685
+// Function ID: 10686
 // Name: ExpressionPickerActionSheet
-// Dependencies: [19, 2045, 7398, 10650, 21, 558, 568, 4497, 4627, 1614, 504, 10651, 4725, 1482, 1616, 5897, 1368, 10463, 10652, 7397, 2]
+// Dependencies: [19, 2045, 7430, 10686, 21, 558, 568, 4529, 4659, 1614, 504, 10687, 4757, 1482, 1616, 5929, 1368, 10502, 10688, 7429, 2]
 
-// Module 10649 (ExpressionPickerActionSheet)
+// Module 10685 (ExpressionPickerActionSheet)
 import initialize from "initialize" /* 504 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
 import KeyboardTypes from "KeyboardTypes" /* 1614 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import useKeyboardType from "useKeyboardType" /* 4627 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import NavigatorConstants from "NavigatorConstants" /* 5897 */;
-import KeyboardUtils from "KeyboardUtils" /* 10651 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import useKeyboardType from "useKeyboardType" /* 4659 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import NavigatorConstants from "NavigatorConstants" /* 5929 */;
+import KeyboardUtils from "KeyboardUtils" /* 10687 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
-let closure_5 = fn(7398).ACTION_SHEET_START_HEIGHT_RATIO;
-const STICKER_FORMATS = fn(10650).STICKER_FORMATS;
+let closure_5 = fn(7430).ACTION_SHEET_START_HEIGHT_RATIO;
+const STICKER_FORMATS = fn(10686).STICKER_FORMATS;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
 const ReactCompilerGating = fn(558);
@@ -219,7 +219,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     let isIOSResult = tmp2(1368).isIOS();
     if (isIOSResult) {
       const obj4 = { animatedSheetIndex: sharedValue, followSystemKeyboard: true };
-      isIOSResult = closure_7(tmp7(10463), obj4);
+      isIOSResult = closure_7(tmp7(10502), obj4);
     }
     const obj5 = { children: null };
     const items1 = [isIOSResult, ];
@@ -250,8 +250,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       stickerFormats: STICKER_FORMATS,
       height: diff
     };
-    obj6.children = closure_7(tmp7(10652), obj7);
-    items1[1] = closure_7(tmp2(7397).BottomSheet, obj6);
+    obj6.children = closure_7(tmp7(10688), obj7);
+    items1[1] = closure_7(tmp2(7429).BottomSheet, obj6);
     obj5.children = items1;
     tmp15Result = closure_9(closure_8, obj5);
     const tmp2Result = tmp2(1368);

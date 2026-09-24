@@ -1,12 +1,12 @@
-// Module ID: 14840
-// Function ID: 14841
+// Module ID: 14878
+// Function ID: 14879
 // Name: useTrackNavigatorScreenImpression
-// Dependencies: [558, 568, 1253, 9046, 2]
+// Dependencies: [558, 568, 1253, 9078, 2]
 
-// Module 14840 (useTrackNavigatorScreenImpression)
+// Module 14878 (useTrackNavigatorScreenImpression)
 import c from "c" /* 568 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9046 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9078 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

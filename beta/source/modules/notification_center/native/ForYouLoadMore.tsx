@@ -1,19 +1,19 @@
-// Module ID: 16790
-// Function ID: 16791
+// Module ID: 16800
+// Function ID: 16801
 // Name: ForYouLoadMore
-// Dependencies: [19, 17, 7880, 21, 4758, 558, 568, 565, 5188, 1119, 2]
+// Dependencies: [19, 17, 7912, 21, 4790, 558, 568, 565, 5220, 1119, 2]
 
-// Module 16790 (ForYouLoadMore)
+// Module 16800 (ForYouLoadMore)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7880 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7912 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: c2, View: c3 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ container: { alignItems: "center", flexDirection: "row", justifyContent: "center", marginTop: 8, marginBottom: 24, marginHorizontal: 16, height: 42 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -59,7 +59,7 @@ export const ForYouLoadMore = ReactCompilerGating.isReactCompilerEnabled() ? ((o
     const intl = tmp(1119).intl;
     obj3.text = intl.string(tmp(1119).t["Q/LSXp"]);
     obj3.onPress = onPressLoad;
-    tmp10Result = tmp10(tmp(5188).Button, obj3);
+    tmp10Result = tmp10(tmp(5220).Button, obj3);
   }
   cResult[2] = stateFromStores;
   cResult[3] = onPressLoad;
@@ -75,7 +75,7 @@ export const ForYouLoadMore = ReactCompilerGating.isReactCompilerEnabled() ? ((o
     const intl = tmp2(1119).intl;
     obj3.text = intl.string(tmp2(1119).t["Q/LSXp"]);
     obj3.onPress = onPressLoad.onPressLoad;
-    tmp4Result = tmp4(tmp2(5188).Button, obj3);
+    tmp4Result = tmp4(tmp2(5220).Button, obj3);
   }
   obj2.children = tmp4Result;
   return <React3 style={tmp.container}>{null}</React3>;

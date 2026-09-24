@@ -1,12 +1,12 @@
-// Module ID: 10688
-// Function ID: 10689
+// Module ID: 10724
+// Function ID: 10725
 // Name: StickerPackInformationPopout
-// Dependencies: [19, 17, 21, 4758, 580, 5105, 1119, 558, 568, 4754, 5341, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 5137, 1119, 558, 568, 4786, 5373, 2]
 // Exports: doesStickerPackHavePopoutInformation
 
-// Module 10688 (StickerPackInformationPopout)
+// Module 10724 (StickerPackInformationPopout)
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c2, FlatList: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { informationContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, width: "90%", marginHorizontal: "5%", padding: 16, borderRadius: nativeDefault.radii.xs, shadowColor: nativeDefault.colors.BLACK, shadowOffset: { width: 2, height: 2 }, shadowOpacity: 0.25, shadowRadius: 5 }, headerContainer: { flexDirection: "row", justifyContent: "space-between", marginBottom: 8 }, informationHeader: { lineHeight: 20 }, informationContentContainer: { flexDirection: "row" }, informationContent: { lineHeight: 20 }, informationContentDescription: { flex: 1, marginLeft: 5 } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -40,7 +40,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[0] = stickerPack;
     cResult[1] = items;
     let tmp5 = items;
-    tmpResult = tmp(5105);
+    tmpResult = tmp(5137);
   } else {
     tmp5 = cResult[1];
   }
@@ -82,7 +82,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const obj4 = { variant: "text-md/bold", color: "text-brand", children: null };
             const intl4 = tmp(1119).intl;
             obj4.children = intl4.string(tmp(1119).t.cpT0Cq);
-            const tmp19 = closure_4(tmp(4754).Text, obj4);
+            const tmp19 = closure_4(tmp(4786).Text, obj4);
             cResult[15] = tmp19;
             let tmp17 = tmp19;
           } else {
@@ -90,7 +90,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           if (cResult[16] !== onClose) {
             const obj5 = { onPress: onClose, accessibilityRole: "button", accessibilityLabel: tmp15, children: tmp17 };
-            const tmp22 = closure_4(tmp(5341).PressableOpacity, obj5);
+            const tmp22 = closure_4(tmp(5373).PressableOpacity, obj5);
             cResult[16] = onClose;
             cResult[17] = tmp22;
             let tmp20 = tmp22;
@@ -143,7 +143,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp23 = tmp26;
         }
         const obj9 = { style: informationHeader, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp9 };
-        const tmp13 = closure_4(tmp(4754).Text, obj9);
+        const tmp13 = closure_4(tmp(4786).Text, obj9);
         cResult[11] = tmp4.informationHeader;
         cResult[12] = tmp9;
         cResult[13] = tmp13;

@@ -1,15 +1,15 @@
-// Module ID: 9355
-// Function ID: 9356
+// Module ID: 9387
+// Function ID: 9388
 // Name: XboxLinkDiscordConsent
-// Dependencies: [19, 9342, 1078, 9356, 21, 558, 568, 1488, 9357, 9358, 2]
+// Dependencies: [19, 9374, 1078, 9388, 21, 558, 568, 1488, 9389, 9390, 2]
 
-// Module 9355 (XboxLinkDiscordConsent)
+// Module 9387 (XboxLinkDiscordConsent)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const XboxLinkModalScenes = fn(9342).XboxLinkModalScenes;
+const XboxLinkModalScenes = fn(9374).XboxLinkModalScenes;
 const PlatformTypes = fn(1078).PlatformTypes;
-const XBOX_CLIENT_SCOPES = fn(9356).XBOX_CLIENT_SCOPES;
+const XBOX_CLIENT_SCOPES = fn(9388).XBOX_CLIENT_SCOPES;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -51,7 +51,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj2 = navigation(1488);
-  const tmp8 = jsx(navigation(9357).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.XBOX, callbackCode, callbackState, clientId: navigation(9358).ConsoleOAuthApplications.XBOX_APPLICATION_ID, scopes: XBOX_CLIENT_SCOPES, onNext: tmp5, onError: tmp6 });
+  const tmp8 = jsx(navigation(9389).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.XBOX, callbackCode, callbackState, clientId: navigation(9390).ConsoleOAuthApplications.XBOX_APPLICATION_ID, scopes: XBOX_CLIENT_SCOPES, onNext: tmp5, onError: tmp6 });
   cResult[4] = callbackCode;
   cResult[5] = callbackState;
   cResult[6] = tmp6;
@@ -71,5 +71,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     navigation.push(XboxLinkModalScenes.ERROR);
   }, items1);
   const obj = navigation(1488);
-  return jsx(navigation(9357).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.XBOX, callbackCode, callbackState, clientId: navigation(9358).ConsoleOAuthApplications.XBOX_APPLICATION_ID, scopes: XBOX_CLIENT_SCOPES, onNext: callback, onError: callback1 });
+  return jsx(navigation(9389).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.XBOX, callbackCode, callbackState, clientId: navigation(9390).ConsoleOAuthApplications.XBOX_APPLICATION_ID, scopes: XBOX_CLIENT_SCOPES, onNext: callback, onError: callback1 });
 });

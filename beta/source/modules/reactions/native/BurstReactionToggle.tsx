@@ -1,23 +1,23 @@
-// Module ID: 10450
-// Function ID: 10451
+// Module ID: 10489
+// Function ID: 10490
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 4750, 2042, 21, 4497, 558, 568, 504, 4462, 580, 4759, 5187, 4758, 10451, 1119, 9485, 2]
+// Dependencies: [19, 17, 4782, 2042, 21, 4529, 558, 568, 504, 4494, 580, 4791, 5219, 4790, 10490, 1119, 9517, 2]
 
-// Module 10450 (BurstReactionToggle)
+// Module 10489 (BurstReactionToggle)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import timing from "timing" /* 4759 */;
-import spring from "spring" /* 5187 */;
+import timing from "timing" /* 4791 */;
+import spring from "spring" /* 5219 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const Pressable = fn(17).Pressable;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
 let obj = { duration: 100, easing: null };
-const Easing = fn(4497).Easing;
-obj.easing = Easing.out(fn(4497).Easing.quad);
+const Easing = fn(4529).Easing;
+obj.easing = Easing.out(fn(4529).Easing.quad);
 let closure_9 = { stiffness: 750, mass: 2.5, damping: 70 };
 const __initData = { code: "function BurstReactionToggleTsx1(){const{reducedMotion,targetBackgroundColor,backgroundColor,rotation}=this.__closure;const _backgroundColor=reducedMotion?targetBackgroundColor:backgroundColor.get();const _rotation=reducedMotion?0:rotation.get();return{backgroundColor:_backgroundColor,transform:[{rotate:_rotation+\"deg\"}]};}" };
 const __initData2 = { code: "function BurstReactionToggleTsx2(){const{reducedMotion,targetBackgroundColor,backgroundColor,rotation}=this.__closure;const _backgroundColor=reducedMotion?targetBackgroundColor:backgroundColor.get();const _rotation=reducedMotion?0:rotation.get();return{backgroundColor:_backgroundColor,transform:[{rotate:_rotation+\"deg\"}]};}" };
@@ -155,7 +155,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
   return { containerStyle };
 });
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj4 = { container: null };
 let size = { borderRadius: nativeDefault.modules.button.BORDER_RADIUS, padding: 8, marginLeft: 8, width: 40, height: 40 };
 obj4.container = size;
@@ -178,7 +178,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     tmp6 = tmp5;
   }
   const ref = noop.useRef(null);
-  const tmp8 = tmp6(10451)(ref);
+  const tmp8 = tmp6(10490)(ref);
   importDefault = tmp8;
   if (cResult[0] === tmp8) {
     if (cResult[1] === onPress) {
@@ -212,7 +212,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
         }
         if (cResult[10] !== INTERACTIVE_TEXT_DEFAULT) {
           const obj3 = { color: INTERACTIVE_TEXT_DEFAULT };
-          const tmp19 = jsx(tmp(9485).SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT });
+          const tmp19 = jsx(tmp(9517).SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT });
           cResult[10] = INTERACTIVE_TEXT_DEFAULT;
           cResult[11] = tmp19;
           let tmp17 = tmp19;
@@ -243,7 +243,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
           tmp23 = tmp26;
         }
         const obj5 = { style: tmp16, ref, children: tmp17 };
-        const tmp22 = jsx(tmp6(4497).View, { style: tmp16, ref, children: tmp17 });
+        const tmp22 = jsx(tmp6(4529).View, { style: tmp16, ref, children: tmp17 });
         cResult[12] = tmp16;
         cResult[13] = tmp17;
         cResult[14] = tmp22;
@@ -276,7 +276,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     tmp5 = tmp2;
   }
   const ref = noop.useRef(null);
-  importDefault = tmp5(10451)(ref);
+  importDefault = tmp5(10490)(ref);
   obj = {
     onPress() {
       closure_1(ContentDismissActionType.AUTO);
@@ -303,8 +303,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   const obj2 = { style: null, ref, children: null };
   const items = [closure_13().container, closure_12(isActive).containerStyle];
   obj2.style = items;
-  obj2.children = jsx(tmp11(9485).SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT });
-  obj.children = jsx(tmp5(4497).View, { style: null, ref, children: null });
+  obj2.children = jsx(tmp11(9517).SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT });
+  obj.children = jsx(tmp5(4529).View, { style: null, ref, children: null });
   return <Pressable onPress={function onPress() {
     closure_1(ContentDismissActionType.AUTO);
     _require();

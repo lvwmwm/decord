@@ -1,9 +1,9 @@
-// Module ID: 8920
-// Function ID: 8921
+// Module ID: 8952
+// Function ID: 8953
 // Name: useUserIsTeen
 // Dependencies: [1376, 558, 568, 504, 2]
 
-// Module 8920 (useUserIsTeen)
+// Module 8952 (useUserIsTeen)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import UserStore from "UserStore" /* 1376 */;

@@ -1,12 +1,12 @@
-// Module ID: 12672
-// Function ID: 12673
+// Module ID: 12708
+// Function ID: 12709
 // Name: GameServerPricingExperiment
-// Dependencies: [4672, 558, 568, 4671, 2]
+// Dependencies: [4704, 558, 568, 4703, 2]
 
-// Module 12672 (GameServerPricingExperiment)
+// Module 12708 (GameServerPricingExperiment)
 import c from "c" /* 568 */;
-import GameServerExperiment from "GameServerExperiment" /* 4671 */;
-import createExperiment from "module_4672" /* 4672 */;
+import GameServerExperiment from "GameServerExperiment" /* 4703 */;
+import createExperiment from "module_4704" /* 4704 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

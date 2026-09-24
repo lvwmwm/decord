@@ -1,30 +1,30 @@
-// Module ID: 11991
-// Function ID: 11992
+// Module ID: 12027
+// Function ID: 12028
 // Name: GuildRaidResolveActionSheet
-// Dependencies: [32, 19, 17, 1078, 8675, 21, 4758, 580, 558, 568, 1119, 7765, 4725, 4938, 11960, 8680, 7449, 7287, 4754, 8876, 1181, 5188, 2]
+// Dependencies: [32, 19, 17, 1078, 8707, 21, 4790, 580, 558, 568, 1119, 7797, 4757, 4970, 11996, 8712, 7481, 7319, 4786, 8908, 1181, 5220, 2]
 
-// Module 11991 (GuildRaidResolveActionSheet)
+// Module 12027 (GuildRaidResolveActionSheet)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7287 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
-import AutomodFeedback from "AutomodFeedback" /* 7765 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8680 */;
-import GuildAntiRaidActionCreators from "GuildAntiRaidActionCreators" /* 11960 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7319 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
+import AutomodFeedback from "AutomodFeedback" /* 7797 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8712 */;
+import GuildAntiRaidActionCreators from "GuildAntiRaidActionCreators" /* 11996 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const AnalyticEvents = fn(1078).AnalyticEvents;
-const SafetyToastType = fn(8675).SafetyToastType;
+const SafetyToastType = fn(8707).SafetyToastType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { paddingVertical: 24, paddingHorizontal: 16, display: "flex", flexDirection: "column", alignItems: "center" }, title: { marginBottom: 8, textAlign: "center" }, subtitle: { marginBottom: 16, textAlign: "center" }, optionContainer: { borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: nativeDefault.radii.xs, display: "flex", flexDirection: "column", marginBottom: 14, width: "100%" }, option: { width: "100%" }, textInputContainer: { paddingLeft: 54, paddingRight: 16, paddingBottom: 16 }, textInput: null };
 let obj3 = { borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: nativeDefault.radii.xs, display: "flex", flexDirection: "column", marginBottom: 14, width: "100%" };
 obj2.textInput = { backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, width: "100%", padding: 8, borderRadius: nativeDefault.radii.xs };
@@ -72,7 +72,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                         }
                         if (cResult[33] !== cResult[15]) {
                           let obj2 = { onPress: tmp13, text: tmp19, size: "md" };
-                          const tmp23 = handleTextInputChange(tmp(5188).Button, obj2);
+                          const tmp23 = handleTextInputChange(tmp(5220).Button, obj2);
                           cResult[33] = tmp13;
                           cResult[34] = tmp23;
                           let tmp21 = tmp23;
@@ -90,7 +90,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                         }
                         if (cResult[36] !== cResult[14]) {
                           let obj3 = { onPress: tmp12, text: tmp24, variant: "secondary", size: "md" };
-                          const tmp28 = handleTextInputChange(tmp(5188).Button, obj3);
+                          const tmp28 = handleTextInputChange(tmp(5220).Button, obj3);
                           cResult[36] = tmp12;
                           cResult[37] = tmp28;
                           let tmp26 = tmp28;
@@ -151,22 +151,22 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let obj6 = { text: null, value: null };
   let intl = tmp(1119).intl;
   obj6.text = intl.string(guildId(1119).t.yeaXw5);
-  obj6.value = guildId(7765).RaidResolutionType.LEGITIMATE_ACTIVITY;
+  obj6.value = guildId(7797).RaidResolutionType.LEGITIMATE_ACTIVITY;
   const items2 = [obj6, , , ];
   const obj7 = { text: null, value: null };
   const intl2 = tmp(1119).intl;
   obj7.text = intl2.string(guildId(1119).t["o++3B8"]);
-  obj7.value = guildId(7765).RaidResolutionType.DM_SPAM;
+  obj7.value = guildId(7797).RaidResolutionType.DM_SPAM;
   items2[1] = obj7;
   const obj8 = { text: null, value: null };
   const intl3 = tmp(1119).intl;
   obj8.text = intl3.string(guildId(1119).t.UfHAwZ);
-  obj8.value = guildId(7765).RaidResolutionType.JOIN_RAID;
+  obj8.value = guildId(7797).RaidResolutionType.JOIN_RAID;
   items2[2] = obj8;
   const obj9 = { text: null, value: null };
   const intl4 = tmp(1119).intl;
   obj9.text = intl4.string(guildId(1119).t.K3UWeR);
-  obj9.value = guildId(7765).RaidResolutionType.OTHER;
+  obj9.value = guildId(7797).RaidResolutionType.OTHER;
   items2[3] = obj9;
   handleTextInputChange = function handleTextInputChange(Button) {
     closure_7(Button);

@@ -1,56 +1,37 @@
 // Module ID: 13147
 // Function ID: 13148
-// Dependencies: [13076, 13077, 13049]
+// Dependencies: [13113, 13085, 13112]
+// Exports: initAndBind, setCurrentClient
 
 // Module 13147
-import _mod13076 from "module_13076" /* 13076 */;
+import _mod13085 from "module_13085" /* 13085 */;
+import _mod13112 from "module_13112" /* 13112 */;
+import _mod13113 from "module_13113" /* 13113 */;
 
 require = arg1;
 const dependencyMap = arg6;
 
-export const profiler = {
-  startProfiler() {
-    const client = _mod13076.getClient();
-    if (client) {
-      const integrationByName = client.getIntegrationByName("ProfilingIntegration");
-      if (integrationByName) {
-        if (tmp6) {
-          const _profiler = integrationByName._profiler;
-          _profiler.start();
-        } else if (tmp(13077).DEBUG_BUILD) {
-          const logger3 = tmp(13049).logger;
-          logger3.warn("Profiler is not available on profiling integration.");
-        }
-        tmp6 = integrationByName && undefined !== integrationByName._profiler && typeof integrationByName._profiler.start === "function" && typeof integrationByName._profiler.stop === "function";
-      } else if (tmp(13077).DEBUG_BUILD) {
-        const logger2 = tmp(13049).logger;
-        logger2.warn("ProfilingIntegration is not available");
-      }
-    } else if (tmp(13077).DEBUG_BUILD) {
-      const logger = tmp(13049).logger;
-      logger.warn("No Sentry client available, profiling is not started");
-    }
-  },
-  stopProfiler() {
-    const client = _mod13076.getClient();
-    if (client) {
-      const integrationByName = client.getIntegrationByName("ProfilingIntegration");
-      if (integrationByName) {
-        if (tmp6) {
-          const _profiler = integrationByName._profiler;
-          _profiler.stop();
-        } else if (tmp(13077).DEBUG_BUILD) {
-          const logger3 = tmp(13049).logger;
-          logger3.warn("Profiler is not available on profiling integration.");
-        }
-        tmp6 = integrationByName && undefined !== integrationByName._profiler && typeof integrationByName._profiler.start === "function" && typeof integrationByName._profiler.stop === "function";
-      } else if (tmp(13077).DEBUG_BUILD) {
-        const logger2 = tmp(13049).logger;
-        logger2.warn("ProfilingIntegration is not available");
-      }
-    } else if (tmp(13077).DEBUG_BUILD) {
-      const logger = tmp(13049).logger;
-      logger.warn("No Sentry client available, profiling is not started");
+export const initAndBind = function initAndBind(arg0, debug) {
+  if (true === debug.debug) {
+    const obj = _mod13085;
+    if (_mod13113.DEBUG_BUILD) {
+      const logger = obj.logger;
+      logger.enable();
+    } else {
+      obj.consoleSandbox(() => {
+        console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle.");
+      });
     }
   }
+  const currentScope = _mod13112.getCurrentScope();
+  currentScope.update(debug.initialScope);
+  const obj4 = new arg0(debug);
+  const currentScope1 = _mod13112.getCurrentScope();
+  currentScope1.setClient(obj4);
+  obj4.init();
+  return obj4;
+};
+export const setCurrentClient = function setCurrentClient(arg0) {
+  const currentScope = _mod13112.getCurrentScope();
+  currentScope.setClient(arg0);
 };

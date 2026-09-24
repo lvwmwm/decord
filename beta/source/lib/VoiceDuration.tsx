@@ -1,11 +1,11 @@
-// Module ID: 14091
-// Function ID: 14092
+// Module ID: 14128
+// Function ID: 14129
 // Name: VoiceDuration
-// Dependencies: [4787, 4829, 2]
+// Dependencies: [4819, 4861, 2]
 
-// Module 14091 (VoiceDuration)
-import TimeUtils from "TimeUtils" /* 4787 */;
-import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 4829 */;
+// Module 14128 (VoiceDuration)
+import TimeUtils from "TimeUtils" /* 4819 */;
+import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 4861 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = [1, 100, 1000, 10000];

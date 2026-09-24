@@ -1,23 +1,23 @@
-// Module ID: 5826
-// Function ID: 5827
+// Module ID: 5858
+// Function ID: 5859
 // Name: AnimatedPressableHighlight
-// Dependencies: [109, 19, 17, 21, 4497, 5341, 558, 568, 5827, 4462, 580, 1368, 2]
+// Dependencies: [109, 19, 17, 21, 4529, 5373, 558, 568, 5859, 4494, 580, 1368, 2]
 
-// Module 5826 (AnimatedPressableHighlight)
+// Module 5858 (AnimatedPressableHighlight)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import useIOSPressEffects from "useIOSPressEffects" /* 5827 */;
+import useToken from "useToken" /* 4494 */;
+import useIOSPressEffects from "useIOSPressEffects" /* 5859 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
 
 require = fn;
 let closure_3 = ["children"];
 let closure_4 = ["children"];
 const Pressable = fn(17).Pressable;
 const jsx = fn(21).jsx;
-let closure_9 = ReanimatedRexport.createAnimatedComponent(fn(5341).PressableHighlight);
+let closure_9 = ReanimatedRexport.createAnimatedComponent(fn(5373).PressableHighlight);
 let ReactCompilerGating = fn(558);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const cResult = c.c(12);

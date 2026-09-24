@@ -1,12 +1,12 @@
-// Module ID: 10587
-// Function ID: 10588
+// Module ID: 10623
+// Function ID: 10624
 // Name: QuestHomeHeroTypes
-// Dependencies: [10570, 10588, 2]
+// Dependencies: [10606, 10624, 2]
 // Exports: questHomeHeroFromServer
 
-// Module 10587 (QuestHomeHeroTypes)
-import AssetUtils from "AssetUtils" /* 10570 */;
-import QuestHomeHeroCta from "QuestHomeHeroCta" /* 10588 */;
+// Module 10623 (QuestHomeHeroTypes)
+import AssetUtils from "AssetUtils" /* 10606 */;
+import QuestHomeHeroCta from "QuestHomeHeroCta" /* 10624 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/QuestHomeHeroTypes.tsx");
@@ -23,12 +23,12 @@ export const questHomeHeroFromServer = function questHomeHeroFromServer(creative
     const quest_home_entrypoint = creative_content.quest_home_entrypoint;
     const obj7 = { linearGradient: null, radialGradient: null, gradientPreset: null, image: null, tooltipImage: null, tooltipTitle: null, tooltipSubtitle: null };
     ({ linear_gradient: obj6.linearGradient, radial_gradient: obj6.radialGradient, gradient_preset: obj6.gradientPreset } = quest_home_entrypoint);
-    obj7.image = tmp(10570).resolveOptionalAdCreativeCdnUrl(quest_home_entrypoint.image);
-    const tmpResult = tmp(10570);
-    obj7.tooltipImage = tmp(10570).resolveOptionalAdCreativeCdnUrl(quest_home_entrypoint.tooltip_image);
+    obj7.image = tmp(10606).resolveOptionalAdCreativeCdnUrl(quest_home_entrypoint.image);
+    const tmpResult = tmp(10606);
+    obj7.tooltipImage = tmp(10606).resolveOptionalAdCreativeCdnUrl(quest_home_entrypoint.tooltip_image);
     ({ tooltip_title: obj6.tooltipTitle, tooltip_subtitle: obj6.tooltipSubtitle } = quest_home_entrypoint);
     tmp3 = obj7;
-    const tmpResult4 = tmp(10570);
+    const tmpResult4 = tmp(10606);
   }
   obj.questHomeEntrypoint = tmp3;
   obj.shelfImage = AssetUtils.resolveOptionalAdCreativeCdnUrl(creative_content.shelf_image);

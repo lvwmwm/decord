@@ -1,13 +1,13 @@
-// Module ID: 4462
-// Function ID: 4463
+// Module ID: 4494
+// Function ID: 4495
 // Name: useToken
-// Dependencies: [580, 4463, 12, 558, 568, 4471, 2]
+// Dependencies: [580, 4495, 12, 558, 568, 4503, 2]
 // Exports: useToken
 
-// Module 4462 (useToken)
+// Module 4494 (useToken)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 580 */;
-import SemanticColorContext from "SemanticColorContext" /* 4463 */;
+import SemanticColorContext from "SemanticColorContext" /* 4495 */;
 
 require = fn;
 function getCachedTokenColor(BACKGROUND_BASE_LOW, themeContext, theme) {
@@ -62,7 +62,7 @@ export const useToken = function useToken(BACKGROUND_BASE_LOW, DARK) {
   if (closure_6) {
     const cResult = tmp(568).c(8);
     const tmpResult = tmp(568);
-    const themeContext = tmp(4471).useThemeContext();
+    const themeContext = tmp(4503).useThemeContext();
     if (theme == null) {
       theme = themeContext.theme;
     }
@@ -105,9 +105,9 @@ export const useToken = function useToken(BACKGROUND_BASE_LOW, DARK) {
     cResult[5] = BACKGROUND_BASE_LOW;
     cResult[6] = theme;
     cResult[7] = tmp19;
-    const tmpResult3 = tmp(4471);
+    const tmpResult3 = tmp(4503);
   } else {
-    const themeContext1 = tmp(4471).useThemeContext();
+    const themeContext1 = tmp(4503).useThemeContext();
     let theme2 = theme;
     if (theme == null) {
       theme2 = themeContext1.theme;
@@ -137,6 +137,6 @@ export const useToken = function useToken(BACKGROUND_BASE_LOW, DARK) {
       }
       resolveResult1 = getCachedTokenColor(BACKGROUND_BASE_LOW, themeContext1, theme2);
     }
-    const tmpResult4 = tmp(4471);
+    const tmpResult4 = tmp(4503);
   }
 };

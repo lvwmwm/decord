@@ -1,25 +1,25 @@
-// Module ID: 8237
-// Function ID: 8238
+// Module ID: 8269
+// Function ID: 8270
 // Name: DoubleTapNitroAlert
-// Dependencies: [19, 17, 8232, 1078, 8238, 21, 4758, 558, 568, 7626, 5112, 7176, 1119, 5116, 2]
+// Dependencies: [19, 17, 8264, 1078, 8270, 21, 4790, 558, 568, 7658, 5144, 7208, 1119, 5148, 2]
 
-// Module 8237 (DoubleTapNitroAlert)
+// Module 8269 (DoubleTapNitroAlert)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AlertModal from "AlertModal" /* 5116 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7176 */;
+import AlertModal from "AlertModal" /* 5148 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7208 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const NITRO_UPSELL_ALERT_KEY = fn(8232).NITRO_UPSELL_ALERT_KEY;
+const NITRO_UPSELL_ALERT_KEY = fn(8264).NITRO_UPSELL_ALERT_KEY;
 const UserSettingsSections = fn(1078).UserSettingsSections;
-const MobileUserSettings = fn(8238).MobileUserSettings;
+const MobileUserSettings = fn(8270).MobileUserSettings;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles({ icon: { alignItems: "center", justifyContent: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -76,7 +76,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((emojiName) => {
       }
     }
     let obj2 = { size: "custom", style: { width: 40, height: 40 } };
-    const tmp8 = React5(tmp(7176).CircleErrorIcon, obj2);
+    const tmp8 = React5(tmp(7208).CircleErrorIcon, obj2);
     cResult[2] = tmp8;
     const tmp7 = tmp8;
   } else {
@@ -185,7 +185,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((emojiName) => {
     const obj7 = { onPress: first, text: null };
     const intl = tmp(1119).intl;
     obj7.text = intl.string(tmp(1119).t.LIIHRy);
-    const tmp17 = React5(tmp(5116).AlertActionButton, obj7, "confirm");
+    const tmp17 = React5(tmp(5148).AlertActionButton, obj7, "confirm");
     cResult[8] = tmp17;
     const tmp16 = tmp17;
   } else {
@@ -216,7 +216,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((emojiName) => {
     const obj9 = { variant: "secondary", text: null };
     const intl2 = tmp(1119).intl;
     obj9.text = intl2.string(tmp(1119).t["Nr6v2+"]);
-    items[1] = React5(tmp(5116).AlertActionButton, obj9, "cancel");
+    items[1] = React5(tmp(5148).AlertActionButton, obj9, "cancel");
     obj8.children = items;
     const tmp21 = options(closure_1_8, obj8);
     cResult[9] = tmp21;

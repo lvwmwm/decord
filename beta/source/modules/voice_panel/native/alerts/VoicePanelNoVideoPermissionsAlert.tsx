@@ -1,12 +1,12 @@
-// Module ID: 17621
-// Function ID: 17622
+// Module ID: 17631
+// Function ID: 17632
 // Name: VoicePanelNoVideoPermissionsAlert
-// Dependencies: [19, 21, 558, 568, 5116, 1119, 5116, 2]
+// Dependencies: [19, 21, 558, 568, 5148, 1119, 5148, 2]
 
-// Module 17621 (VoicePanelNoVideoPermissionsAlert)
+// Module 17631 (VoicePanelNoVideoPermissionsAlert)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AlertModal from "AlertModal" /* 5116 */;
+import AlertModal from "AlertModal" /* 5148 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -41,8 +41,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[3] !== dismissModalCallback) {
     const obj3 = { title: tmp5, content: tmp6, actions: null };
     const obj4 = { variant: "secondary", text: tmp9, onPress: dismissModalCallback };
-    obj3.actions = jsx(tmp(5116).AlertActionButton, { variant: "secondary", text: tmp9, onPress: dismissModalCallback });
-    const tmp13 = jsx(tmp(5116).AlertModal, { title: tmp5, content: tmp6, actions: null });
+    obj3.actions = jsx(tmp(5148).AlertActionButton, { variant: "secondary", text: tmp9, onPress: dismissModalCallback });
+    const tmp13 = jsx(tmp(5148).AlertModal, { title: tmp5, content: tmp6, actions: null });
     cResult[3] = dismissModalCallback;
     cResult[4] = tmp13;
     let tmp11 = tmp13;

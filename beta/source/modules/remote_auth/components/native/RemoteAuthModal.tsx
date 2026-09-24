@@ -1,9 +1,9 @@
-// Module ID: 14135
-// Function ID: 14136
+// Module ID: 14172
+// Function ID: 14173
 // Name: RemoteAuthModal
-// Dependencies: [32, 19, 17, 1078, 21, 4758, 580, 558, 568, 1616, 14134, 14136, 7226, 1275, 4961, 12, 14137, 4754, 1119, 1181, 5188, 5652, 14138, 5796, 2]
+// Dependencies: [32, 19, 17, 1078, 21, 4790, 580, 558, 568, 1616, 14171, 14173, 7258, 1275, 4993, 12, 14174, 4786, 1119, 1181, 5220, 5684, 14175, 5828, 2]
 
-// Module 14135 (RemoteAuthModal)
+// Module 14172 (RemoteAuthModal)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -11,26 +11,26 @@ import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import HTTPUtils from "HTTPUtils" /* 1275 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import ButtonGroup from "ButtonGroup" /* 5652 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5796 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 7226 */;
-import _modDef14134 from "module_14134" /* 14134 */;
-import _modDef14136 from "module_14136" /* 14136 */;
-import _modDef14138 from "module_14138" /* 14138 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import ButtonGroup from "ButtonGroup" /* 5684 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5828 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 7258 */;
+import _modDef14171 from "module_14171" /* 14171 */;
+import _modDef14173 from "module_14173" /* 14173 */;
+import _modDef14175 from "module_14175" /* 14175 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const _modDef14137 = tmp7(14137);
+const _modDef14174 = tmp7(14174);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ImageBackground: hasOwnProperty, Image: metroRequire, View: closure_7 } = get_ActivityIndicator);
 const Endpoints = fn(1078).Endpoints;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { background: { width: "100%", height: "100%" }, container: { flex: 1, alignItems: "stretch", alignContent: "center" }, imageStyle: { resizeMode: "cover" }, logo: { position: "absolute", top: 16, alignSelf: "center", width: 32, height: 32 }, mainImage: { marginTop: 16, marginBottom: 32 }, warningCaption: { fontSize: 16, lineHeight: 20, color: nativeDefault.unsafe_rawColors.RED_400, textAlign: "center", marginTop: 8, marginBottom: 32 }, caption: { lineHeight: 20, textAlign: "center", marginTop: 8, marginBottom: 32 }, mainCard: null, buttonGroup: null, loadingContainer: null };
 let obj3 = { fontSize: 16, lineHeight: 20, color: nativeDefault.unsafe_rawColors.RED_400, textAlign: "center", marginTop: 8, marginBottom: 32 };
 obj2.mainCard = { display: "flex", flexDirection: "column", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: "auto", marginBottom: "auto", marginLeft: 16, marginRight: 16, borderRadius: nativeDefault.radii.sm, padding: 16, shadowColor: nativeDefault.colors.BLACK, shadowOpacity: 0.16, shadowRadius: 2, shadowOffset: { height: 2, width: 0 } };
@@ -197,10 +197,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((remoteAuthFing
     HTTP.post(request).then((body) => {
       dependencyMap(body.body.handshake_token);
       closure_1_1(constants.LOADED);
-      const result = remoteAuthFingerprint(7226).DeprecatedLayoutAnimation();
+      const result = remoteAuthFingerprint(7258).DeprecatedLayoutAnimation();
     }).catch(() => {
       closure_1_1(constants.NOT_FOUND);
-      const result = remoteAuthFingerprint(7226).DeprecatedLayoutAnimation();
+      const result = remoteAuthFingerprint(7258).DeprecatedLayoutAnimation();
     });
   }, items);
   if (constants.LOADING === tmp3) {
@@ -276,7 +276,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((handshakeToken
       tmp14 = !tmp7[0];
     }
     if (cResult[7] !== tmp4.mainImage) {
-      const obj4 = { source: setAuthStep(14137), style: tmp4.mainImage };
+      const obj4 = { source: setAuthStep(14174), style: tmp4.mainImage };
       const tmp19 = closure_9(closure_6, obj4);
       cResult[7] = tmp4.mainImage;
       cResult[8] = tmp19;
@@ -289,7 +289,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((handshakeToken
       const obj5 = { variant: "heading-md/extrabold", children: null };
       const intl = tmp(1119).intl;
       obj5.children = intl.string(tmp(1119).t.jD2pqF);
-      const tmp22 = closure_9(tmp(4754).Heading, obj5);
+      const tmp22 = closure_9(tmp(4786).Heading, obj5);
       cResult[9] = tmp22;
       let tmp20 = tmp22;
     } else {
@@ -340,7 +340,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((handshakeToken
         }
         if (cResult[19] !== tmp11) {
           const obj7 = { variant: "secondary", text: tmp34, onPress: tmp11 };
-          const tmp38 = closure_9(tmp(5188).Button, obj7);
+          const tmp38 = closure_9(tmp(5220).Button, obj7);
           cResult[19] = tmp11;
           cResult[20] = tmp38;
           let tmp36 = tmp38;
@@ -374,7 +374,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((handshakeToken
         const obj9 = { style: tmp4.buttonGroup, children: null };
         const items2 = [tmp31, tmp36];
         obj9.children = items2;
-        const tmp41 = closure_10(tmp(5652).ButtonGroup, obj9);
+        const tmp41 = closure_10(tmp(5684).ButtonGroup, obj9);
         cResult[21] = tmp4.buttonGroup;
         cResult[22] = tmp31;
         cResult[23] = tmp36;
@@ -383,7 +383,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((handshakeToken
       }
     }
     const obj10 = { text: tmp29, onPress: tmp12, disabled: tmp14 };
-    const tmp33 = closure_9(tmp(5188).Button, obj10, combined);
+    const tmp33 = closure_9(tmp(5220).Button, obj10, combined);
     cResult[14] = tmp12;
     cResult[15] = tmp14;
     cResult[16] = combined;
@@ -439,7 +439,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((handshakeToken
       closure_1_1(constants.NOT_FOUND);
     });
   }, 1000, { leading: true, trailing: false });
-  const items = [closure_9(closure_6, { source: _modDef14137, style: tmp.mainImage }), , , ];
+  const items = [closure_9(closure_6, { source: _modDef14174, style: tmp.mainImage }), , , ];
   const obj4 = { variant: "heading-md/extrabold", children: null };
   const intl = util.intl;
   obj4.children = intl.string(util.t.jD2pqF);
@@ -475,7 +475,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(13);
   const tmp4 = closure_12();
   if (cResult[0] !== tmp4.mainImage) {
-    const obj2 = { source: _modDef14138, style: tmp4.mainImage };
+    const obj2 = { source: _modDef14175, style: tmp4.mainImage };
     const tmp9 = options(timestampProducer, obj2);
     cResult[0] = tmp4.mainImage;
     cResult[1] = tmp9;
@@ -487,7 +487,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj3 = { variant: "heading-xl/extrabold", children: null };
     const intl = tmp(1119).intl;
     obj3.children = intl.string(tmp(1119).t.HbwTOZ);
-    const tmp12 = options(tmp(4754).Heading, obj3);
+    const tmp12 = options(tmp(4786).Heading, obj3);
     cResult[2] = tmp12;
     let tmp10 = tmp12;
   } else {
@@ -503,7 +503,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[4] !== tmp4.caption) {
     const obj4 = { style: tmp4.caption, variant: "text-md/medium", color: "text-muted", children: tmp13 };
-    const tmp17 = options(tmp(4754).Text, obj4);
+    const tmp17 = options(tmp(4786).Text, obj4);
     cResult[4] = tmp4.caption;
     cResult[5] = tmp17;
     let tmp15 = tmp17;
@@ -515,7 +515,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl3 = tmp(1119).intl;
     obj5.text = intl3.string(tmp(1119).t.pYWLA0);
     obj5.onPress = ModalActionCreatorsDefault.pop;
-    const tmp21 = options(tmp(5188).Button, obj5);
+    const tmp21 = options(tmp(5220).Button, obj5);
     cResult[6] = tmp21;
     let tmp18 = tmp21;
   } else {
@@ -523,7 +523,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[7] !== tmp4.buttonGroup) {
     const obj6 = { style: tmp4.buttonGroup, children: tmp18 };
-    const tmp24 = options(tmp(5652).ButtonGroup, obj6);
+    const tmp24 = options(tmp(5684).ButtonGroup, obj6);
     cResult[7] = tmp4.buttonGroup;
     cResult[8] = tmp24;
     let tmp22 = tmp24;
@@ -550,7 +550,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const tmp = closure_12();
   const obj = { children: null };
-  const items = [options(timestampProducer, { source: _modDef14138, style: tmp.mainImage }), , , ];
+  const items = [options(timestampProducer, { source: _modDef14175, style: tmp.mainImage }), , , ];
   const obj3 = { variant: "heading-xl/extrabold", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t.HbwTOZ);
@@ -577,7 +577,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { variant: "heading-xl/extrabold", children: null };
     const intl = tmp(1119).intl;
     obj2.children = intl.string(tmp(1119).t.NShI3Q);
-    const tmp7 = options(tmp(4754).Heading, obj2);
+    const tmp7 = options(tmp(4786).Heading, obj2);
     cResult[0] = tmp7;
     let first = tmp7;
   } else {
@@ -593,7 +593,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] !== tmp4.caption) {
     const obj3 = { style: tmp4.caption, variant: "text-md/medium", color: "text-muted", children: tmp8 };
-    const tmp12 = options(tmp(4754).Text, obj3);
+    const tmp12 = options(tmp(4786).Text, obj3);
     cResult[2] = tmp4.caption;
     cResult[3] = tmp12;
     let tmp10 = tmp12;
@@ -605,7 +605,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl3 = tmp(1119).intl;
     obj4.text = intl3.string(tmp(1119).t["ETE/oC"]);
     obj4.onPress = ModalActionCreatorsDefault.pop;
-    const tmp16 = options(tmp(5188).Button, obj4);
+    const tmp16 = options(tmp(5220).Button, obj4);
     cResult[4] = tmp16;
     let tmp13 = tmp16;
   } else {
@@ -613,7 +613,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[5] !== tmp4.buttonGroup) {
     const obj5 = { style: tmp4.buttonGroup, children: tmp13 };
-    const tmp19 = options(tmp(5652).ButtonGroup, obj5);
+    const tmp19 = options(tmp(5684).ButtonGroup, obj5);
     cResult[5] = tmp4.buttonGroup;
     cResult[6] = tmp19;
     let tmp17 = tmp19;
@@ -724,7 +724,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
         }
-        const obj4 = { source: tmp4(14136), imageStyle: null, style: null, children: null };
+        const obj4 = { source: tmp4(14173), imageStyle: null, style: null, children: null };
         ({ imageStyle: obj7.imageStyle, background: obj7.style } = tmp3);
         const items = [tmp6, tmp20];
         obj4.children = items;
@@ -750,7 +750,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[9] = tmp19;
     tmp16 = tmp19;
   }
-  const obj13 = { style: null, source: _modDef14134 };
+  const obj13 = { style: null, source: _modDef14171 };
   const items1 = [tmp3.logo, tmp5];
   obj13.style = items1;
   const tmp7 = options(timestampProducer, obj13);
@@ -760,9 +760,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmp6 = tmp7;
 }) : ((arg0) => {
   const tmp = closure_12();
-  const obj = { source: _modDef14136, imageStyle: null, style: null, children: null };
+  const obj = { source: _modDef14173, imageStyle: null, style: null, children: null };
   ({ imageStyle: obj.imageStyle, background: obj.style } = tmp);
-  const obj2 = { style: null, source: _modDef14134 };
+  const obj2 = { style: null, source: _modDef14171 };
   const items = [tmp.logo, { marginTop: useSafeAreaInsetsDefault().top }];
   obj2.style = items;
   const items1 = [options(timestampProducer, obj2), ];

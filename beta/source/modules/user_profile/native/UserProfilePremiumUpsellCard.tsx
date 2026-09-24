@@ -1,19 +1,19 @@
-// Module ID: 14909
-// Function ID: 14910
+// Module ID: 14947
+// Function ID: 14948
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [19, 1078, 21, 4758, 558, 568, 1616, 1488, 7693, 7429, 7409, 7236, 9502, 9474, 1119, 4754, 14887, 2]
+// Dependencies: [19, 1078, 21, 4790, 558, 568, 1616, 1488, 7725, 7461, 7441, 7268, 9534, 9506, 1119, 4786, 14925, 2]
 
-// Module 14909 (UserProfilePremiumUpsellCard)
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7236 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9474 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9502 */;
+// Module 14947 (UserProfilePremiumUpsellCard)
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7268 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9506 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9534 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Constants = fn(1078);
 ({ AnalyticsObjects: closure_4, AnalyticsPages: hasOwnProperty, AnalyticsSections: metroRequire, UserSettingsSections: closure_7 } = Constants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles((bottom) => {
   const obj = { container: { position: "absolute", bottom, start: 0, end: 0 } };
   return obj;
@@ -30,8 +30,8 @@ export const UserProfilePremiumUpsellCard = ReactCompilerGating.isReactCompilerE
   const tmp4 = analyticsLocations;
   navigation = navigation(1488).useNavigation();
   const obj2 = navigation(1488);
-  const nitroTrialCtaOverride = navigation(7693).useNitroTrialCtaOverride("user_profile_premium_upsell_card");
-  const tmp8 = analyticsLocations(7429);
+  const nitroTrialCtaOverride = navigation(7725).useNitroTrialCtaOverride("user_profile_premium_upsell_card");
+  const tmp8 = analyticsLocations(7461);
   const tmp9 = isTryItOut ? tmp8.USER_SETTINGS_TRY_OUT_PREMIUM : tmp8.USER_SETTINGS_USER_PROFILE;
   if (cResult[0] !== tmp9) {
     const items = [tmp9];
@@ -41,7 +41,7 @@ export const UserProfilePremiumUpsellCard = ReactCompilerGating.isReactCompilerE
   } else {
     tmp10 = cResult[1];
   }
-  analyticsLocations = tmp4(7409)(tmp10).analyticsLocations;
+  analyticsLocations = tmp4(7441)(tmp10).analyticsLocations;
   if (cResult[2] !== navigation) {
     const fn = function p() {
       UserSettingsModalActionCreatorsDefault.setSection(constants4.PROFILE_CUSTOMIZATION_TRY_IT_OUT);
@@ -143,11 +143,11 @@ export const UserProfilePremiumUpsellCard = ReactCompilerGating.isReactCompilerE
   const tmp3 = closure_9(analyticsLocations(1616)().bottom);
   navigation = navigation(1488).useNavigation();
   let obj = navigation(1488);
-  let nitroTrialCtaOverride = navigation(7693).useNitroTrialCtaOverride("user_profile_premium_upsell_card");
-  const obj2 = navigation(7693);
-  const tmp8 = analyticsLocations(7429);
+  let nitroTrialCtaOverride = navigation(7725).useNitroTrialCtaOverride("user_profile_premium_upsell_card");
+  const obj2 = navigation(7725);
+  const tmp8 = analyticsLocations(7461);
   const items = [isTryItOut ? tmp8.USER_SETTINGS_TRY_OUT_PREMIUM : tmp8.USER_SETTINGS_USER_PROFILE];
-  analyticsLocations = analyticsLocations(7409)(items).analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)(items).analyticsLocations;
   const items1 = [navigation];
   let callback = noop.useCallback(() => {
     UserSettingsModalActionCreatorsDefault.setSection(constants4.PROFILE_CUSTOMIZATION_TRY_IT_OUT);
@@ -159,7 +159,7 @@ export const UserProfilePremiumUpsellCard = ReactCompilerGating.isReactCompilerE
     openPremiumModalDefault(obj);
   }, items2);
   const obj3 = { style: tmp3.container, ctaText: null, showLinearGradient: true, onPress: null, children: null };
-  const tmp7 = analyticsLocations(7409);
+  const tmp7 = analyticsLocations(7441);
   if (isTryItOut) {
     if (nitroTrialCtaOverride == null) {
       const intl2 = tmp4(1119).intl;
@@ -183,6 +183,6 @@ export const UserProfilePremiumUpsellCard = ReactCompilerGating.isReactCompilerE
   } else {
     stringResult1 = string(t.Tii53U);
   }
-  obj3.children = jsx(navigation(4754).Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2.5, children: stringResult1 });
-  return jsx(tmp(14887), { style: tmp3.container, ctaText: null, showLinearGradient: true, onPress: null, children: null });
+  obj3.children = jsx(navigation(4786).Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2.5, children: stringResult1 });
+  return jsx(tmp(14925), { style: tmp3.container, ctaText: null, showLinearGradient: true, onPress: null, children: null });
 });

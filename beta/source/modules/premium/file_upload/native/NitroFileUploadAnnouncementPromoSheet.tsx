@@ -1,9 +1,9 @@
-// Module ID: 17418
-// Function ID: 17419
+// Module ID: 17428
+// Function ID: 17429
 // Name: NitroFileUploadAnnouncementPromoSheet
-// Dependencies: [19, 17, 2042, 21, 4758, 580, 558, 568, 5203, 5907, 1119, 2586, 5188, 10613, 2]
+// Dependencies: [19, 17, 2042, 21, 4790, 580, 558, 568, 5235, 5939, 1119, 2586, 5220, 10649, 2]
 
-// Module 17418 (NitroFileUploadAnnouncementPromoSheet)
+// Module 17428 (NitroFileUploadAnnouncementPromoSheet)
 import nativeDefault from "native" /* 580 */;
 import _modDef2586 from "module_2586" /* 2586 */;
 import noop from "module_19" /* 19 */;
@@ -14,7 +14,7 @@ const require = fn;
 const View = fn(17).View;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { illustration: { paddingTop: nativeDefault.space.PX_12 } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -60,7 +60,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
     }
   }
   const obj = markAsDismissed(568);
-  const unmountEffect = markAsDismissed(5203).useUnmountEffect(tmp6);
+  const unmountEffect = markAsDismissed(5235).useUnmountEffect(tmp6);
   if (cResult[4] !== tmp5) {
     class I {
       constructor() {
@@ -85,7 +85,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
         return;
       }
     }
-    const tmp11 = jsx(tmp(5907).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
+    const tmp11 = jsx(tmp(5939).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
     cResult[6] = tmp11;
     const tmp10 = tmp11;
   } else {
@@ -164,7 +164,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
       }
     }
     const obj3 = { grow: true, size: "lg", variant: "primary", text: tmp20, onPress: tmp8 };
-    const tmp23 = jsx(tmp(5188).Button, { grow: true, size: "lg", variant: "primary", text: tmp20, onPress: tmp8 });
+    const tmp23 = jsx(tmp(5220).Button, { grow: true, size: "lg", variant: "primary", text: tmp20, onPress: tmp8 });
     cResult[12] = tmp8;
     cResult[13] = tmp23;
   } else {
@@ -183,11 +183,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
       }
     }
   }
-  const tmpResult = markAsDismissed(5203);
+  const tmpResult = markAsDismissed(5235);
   cResult[14] = tmp8;
   cResult[15] = tmp12;
   cResult[16] = tmp22;
-  cResult[17] = jsx(markAsDismissed(10613).PromoSheet, { illustration: tmp12, title: tmp15, description: tmp16, onDismiss: tmp8, actions: tmp22 });
+  cResult[17] = jsx(markAsDismissed(10649).PromoSheet, { illustration: tmp12, title: tmp15, description: tmp16, onDismiss: tmp8, actions: tmp22 });
 }) : ((markAsDismissed) => {
   markAsDismissed = markAsDismissed.markAsDismissed;
   importDefault = noop.useRef(false);

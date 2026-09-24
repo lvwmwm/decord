@@ -1,22 +1,22 @@
-// Module ID: 14051
-// Function ID: 14052
+// Module ID: 14088
+// Function ID: 14089
 // Name: GuildEventVoiceBanner
-// Dependencies: [19, 17, 2099, 7773, 21, 4758, 580, 558, 568, 9746, 504, 9755, 9749, 4725, 9760, 4965, 9865, 9847, 5188, 1119, 5341, 2]
+// Dependencies: [19, 17, 2099, 7805, 21, 4790, 580, 558, 568, 9778, 504, 9787, 9781, 4757, 9792, 4997, 9897, 9879, 5220, 1119, 5373, 2]
 
-// Module 14051 (GuildEventVoiceBanner)
+// Module 14088 (GuildEventVoiceBanner)
 import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9760 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 9865 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9792 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 9897 */;
 import noop from "module_19" /* 19 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_6 = fn(7773).isGuildScheduledEventActive;
+let closure_6 = fn(7805).isGuildScheduledEventActive;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { header: { margin: 12, padding: 12, borderRadius: nativeDefault.radii.sm, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, descriptionContainerStyle: { paddingTop: 4 }, buttonContainer: { marginTop: 12 } };
 let closure_9 = createStyles.createStyles(obj);
 const ReactCompilerGating = fn(558);

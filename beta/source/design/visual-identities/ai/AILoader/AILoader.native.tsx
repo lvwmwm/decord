@@ -1,17 +1,17 @@
-// Module ID: 14406
-// Function ID: 14407
+// Module ID: 14444
+// Function ID: 14445
 // Name: AILoader
-// Dependencies: [19, 17, 14407, 21, 4758, 558, 568, 4497, 4759, 14408, 4471, 2]
+// Dependencies: [19, 17, 14445, 21, 4790, 558, 568, 4529, 4791, 14446, 4503, 2]
 
-// Module 14406 (AILoader)
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
-import AIGlyphText from "AIGlyphText" /* 14408 */;
+// Module 14444 (AILoader)
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
+import AIGlyphText from "AIGlyphText" /* 14446 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const AILoaderConstants = fn(14407);
+const AILoaderConstants = fn(14445);
 ({ AI_LOADER_CYCLE_MS: hasOwnProperty, AI_LOADER_GAP_EM: metroRequire, AI_LOADER_GLYPHS: closure_7, AI_LOADER_REDUCED_MOTION_CYCLE_MS: closure_8, AI_LOADER_REST_FRACTION } = AILoaderConstants);
 ({ AI_LOADER_SLOT_COUNT: c10, AI_LOADER_SLOT_STAGGER_MS: closure_11, AI_LOADER_STEP_FRACTION } = AILoaderConstants);
 const AI_LOADER_TRACK_STEPS = AILoaderConstants.AI_LOADER_TRACK_STEPS;
@@ -28,7 +28,7 @@ function trackStepAt(arg0) {
 trackStepAt.__closure = { AI_LOADER_REST_FRACTION, AI_LOADER_TRACK_STEPS, AI_LOADER_STEP_FRACTION };
 trackStepAt.__workletHash = 2403964493846;
 trackStepAt.__initData = { code: "function trackStepAt_AILoaderNativeTsx1(progress){const{AI_LOADER_REST_FRACTION,AI_LOADER_TRACK_STEPS,AI_LOADER_STEP_FRACTION}=this.__closure;if(progress<AI_LOADER_REST_FRACTION)return AI_LOADER_TRACK_STEPS[0];const step=Math.floor((progress-AI_LOADER_REST_FRACTION)/AI_LOADER_STEP_FRACTION)+1;return AI_LOADER_TRACK_STEPS[Math.min(step,AI_LOADER_TRACK_STEPS.length-1)];}" };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_16 = createStyles.createStyles((width) => {
   const obj = { loader: { flexDirection: "row", gap: width * timestampProducer }, slot: { width, height: width, overflow: "hidden" }, glyph: { height: width } };
   return obj;
@@ -218,7 +218,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   const stagger = index.stagger;
   const tmp = closure_16(size);
   const glyph = tmp;
-  const sharedValue = index(4497).useSharedValue(0);
+  const sharedValue = index(4529).useSharedValue(0);
   let items = [cycle, index, sharedValue, stagger];
   const effect = cycle.useEffect(() => {
     const result = sharedValue.set(0);
@@ -229,7 +229,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
     const result2 = sharedValue.set(obj.withDelay(result1, obj2.withRepeat(obj3.withTiming(1, { duration: cycle, easing: ReanimatedRexport.Easing.linear }, "animate-always"), -1)));
     return () => index(color[7]).cancelAnimation(sharedValue);
   }, items);
-  let obj = index(4497);
+  let obj = index(4529);
   class R {
     constructor() {
       value = closure_6.get();
@@ -264,10 +264,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   R.__workletHash = 6102802507505;
   R.__initData = __initData2;
   const obj4 = { style: tmp.slot, children: null };
-  const animatedStyle = index(4497).useAnimatedStyle(R);
-  let obj2 = index(4497);
+  const animatedStyle = index(4529).useAnimatedStyle(R);
+  let obj2 = index(4529);
   let obj3 = { trackStepAt, progress: sharedValue, size };
-  obj4.children = jsx(size(4497).View, { style: animatedStyle, children: closure_7.map((children) => jsx(AIGlyphText.AIGlyphText, { size, color, allowFontScaling: false, style: glyph.glyph, children }, children)) });
+  obj4.children = jsx(size(4529).View, { style: animatedStyle, children: closure_7.map((children) => jsx(AIGlyphText.AIGlyphText, { size, color, allowFontScaling: false, style: glyph.glyph, children }, children)) });
   return <stagger style={tmp.slot}>{null}</stagger>;
 });
 ReactCompilerGating = fn(558);
@@ -286,7 +286,7 @@ export const AILoader = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ?
     str = color;
   }
   const tmp4 = closure_16(num);
-  const reducedMotion = num2.useContext(num(4471).AccessibilityPreferencesContext).reducedMotion;
+  const reducedMotion = num2.useContext(num(4503).AccessibilityPreferencesContext).reducedMotion;
   const tmp5 = reducedMotion.enabled ? closure_8 : closure_5;
   dependencyMap = tmp5;
   num2 = 0;
@@ -363,7 +363,7 @@ export const AILoader = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ?
   }
   const accessibilityLabel = size.accessibilityLabel;
   let num2;
-  const reducedMotion = num2.useContext(num(4471).AccessibilityPreferencesContext).reducedMotion;
+  const reducedMotion = num2.useContext(num(4503).AccessibilityPreferencesContext).reducedMotion;
   dependencyMap = reducedMotion.enabled ? closure_8 : closure_5;
   num2 = 0;
   if (!reducedMotion.enabled) {

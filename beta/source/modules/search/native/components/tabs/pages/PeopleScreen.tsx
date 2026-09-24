@@ -1,21 +1,21 @@
-// Module ID: 17161
-// Function ID: 17162
+// Module ID: 17171
+// Function ID: 17172
 // Name: PeopleScreen
-// Dependencies: [5, 19, 12513, 12487, 8127, 8126, 21, 558, 568, 12488, 504, 17120, 17116, 4771, 12506, 17162, 17112, 17124, 2]
+// Dependencies: [5, 19, 12549, 12523, 8159, 8158, 21, 558, 568, 12524, 504, 17130, 17126, 4803, 12542, 17172, 17122, 17134, 2]
 
-// Module 17161 (PeopleScreen)
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12506 */;
+// Module 17171 (PeopleScreen)
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12542 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12513 */;
-import SearchQueryStore from "SearchQueryStore" /* 12487 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12549 */;
+import SearchQueryStore from "SearchQueryStore" /* 12523 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const SearchConstants = fn(8127);
+const SearchConstants = fn(8159);
 ({ SearchListItemTypes: closure_7, USER_ESTIMATED_ITEM_SIZE: closure_8 } = SearchConstants);
-const constants2 = fn(8126).SearchResultContentEntityTypes;
+const constants2 = fn(8158).SearchResultContentEntityTypes;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

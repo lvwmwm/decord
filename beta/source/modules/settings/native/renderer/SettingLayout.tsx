@@ -1,16 +1,16 @@
-// Module ID: 14953
-// Function ID: 14954
+// Module ID: 14988
+// Function ID: 14989
 // Name: SettingLayout
-// Dependencies: [19, 11595, 21, 558, 568, 14954, 14967, 2]
+// Dependencies: [19, 11631, 21, 558, 568, 14989, 15002, 2]
 
-// Module 14953 (SettingLayout)
+// Module 14988 (SettingLayout)
 import c from "c" /* 568 */;
-import SettingSegmentedControlRendererDefault from "SettingSegmentedControlRenderer" /* 14967 */;
+import SettingSegmentedControlRendererDefault from "SettingSegmentedControlRenderer" /* 15002 */;
 import noop from "module_19" /* 19 */;
 
-const SettingListRenderer = tmp(14954);
+const SettingListRenderer = tmp(14989);
 require = fn;
-const NodeType = fn(11595).NodeType;
+const NodeType = fn(11631).NodeType;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

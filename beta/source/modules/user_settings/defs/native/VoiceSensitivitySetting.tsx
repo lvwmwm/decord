@@ -1,19 +1,19 @@
-// Module ID: 15509
-// Function ID: 15510
+// Module ID: 15519
+// Function ID: 15520
 // Name: VoiceSensitivitySetting
-// Dependencies: [17, 1996, 8238, 21, 4758, 558, 568, 504, 9889, 10238, 11594, 1119, 2]
+// Dependencies: [17, 1996, 8270, 21, 4790, 558, 568, 504, 9921, 10277, 11630, 1119, 2]
 
-// Module 15509 (VoiceSensitivitySetting)
+// Module 15519 (VoiceSensitivitySetting)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import util from "util" /* 1119 */;
-import SettingsConstants from "SettingsConstants" /* 8238 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9889 */;
-import VoiceSensitivityDefault from "VoiceSensitivity" /* 10238 */;
+import SettingsConstants from "SettingsConstants" /* 8270 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9921 */;
+import VoiceSensitivityDefault from "VoiceSensitivity" /* 10277 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;

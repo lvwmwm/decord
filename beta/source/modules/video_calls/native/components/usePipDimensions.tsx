@@ -1,13 +1,13 @@
-// Module ID: 9657
-// Function ID: 9658
+// Module ID: 9689
+// Function ID: 9690
 // Name: usePipDimensions
-// Dependencies: [19, 558, 568, 9658, 1482, 8608, 2]
+// Dependencies: [19, 558, 568, 9690, 1482, 8640, 2]
 
-// Module 9657 (usePipDimensions)
+// Module 9689 (usePipDimensions)
 import c from "c" /* 568 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import DeviceOrientation from "DeviceOrientation" /* 8608 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 9658 */;
+import DeviceOrientation from "DeviceOrientation" /* 8640 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 9690 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -39,11 +39,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = useIsViewingActivity;
   ({ width, height } = useWindowDimensionsDefault());
   let tmp8 = width > height;
-  let tmp9 = tmp4 === tmp(8608).OrientationType.LANDSCAPE;
+  let tmp9 = tmp4 === tmp(8640).OrientationType.LANDSCAPE;
   if (!tmp9) {
     let tmp10 = tmp8;
     if (tmp8) {
-      tmp10 = tmp4 !== tmp(8608).OrientationType.PORTRAIT;
+      tmp10 = tmp4 !== tmp(8640).OrientationType.PORTRAIT;
     }
     tmp9 = tmp10;
   }

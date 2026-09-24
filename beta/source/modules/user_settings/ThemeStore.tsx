@@ -1,7 +1,7 @@
 // Module ID: 1186
 // Function ID: 1187
 // Name: ThemeStore
-// Dependencies: [1187, 1188, 1224, 1189, 1088, 1078, 1223, 1230, 14356, 504, 2028, 577, 2]
+// Dependencies: [1187, 1188, 1224, 1189, 1088, 1078, 1223, 1230, 14394, 504, 2028, 577, 2]
 
 // Module 1186 (ThemeStore)
 import initializeDefault from "initialize" /* 504 */;
@@ -9,7 +9,7 @@ import DispatcherDefault from "Dispatcher" /* 577 */;
 import getSystemThemeDefault from "getSystemTheme" /* 1223 */;
 import resolveThemeDefault from "resolveTheme" /* 1230 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2028 */;
-import updateBackgroundColorDefault from "updateBackgroundColor" /* 14356 */;
+import updateBackgroundColorDefault from "updateBackgroundColor" /* 14394 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1187 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1188 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
@@ -154,7 +154,7 @@ const themeStore = new ThemeStore(DispatcherDefault, {
       let flag = tmp7 !== closure_13;
       if (flag) {
         closure_13 = tmp7;
-        tmp2(14356)(closure_13);
+        tmp2(14394)(closure_13);
         flag = true;
       }
       tmp = flag;

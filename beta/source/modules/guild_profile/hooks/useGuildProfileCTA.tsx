@@ -1,19 +1,19 @@
-// Module ID: 9999
-// Function ID: 10000
+// Module ID: 10031
+// Function ID: 10032
 // Name: useGuildProfileCTA
-// Dependencies: [19, 502, 2109, 2067, 4742, 1376, 1078, 558, 568, 504, 1389, 8668, 10000, 8439, 5769, 2]
+// Dependencies: [19, 502, 2109, 2067, 4774, 1376, 1078, 558, 568, 504, 1389, 8700, 10032, 8471, 5801, 2]
 // Exports: getGuildProfileCTAType
 
-// Module 9999 (useGuildProfileCTA)
+// Module 10031 (useGuildProfileCTA)
 import FlagUtils from "FlagUtils" /* 1389 */;
-import GuildTagUtils from "GuildTagUtils" /* 8439 */;
-import GuildInviteFlags from "GuildInviteFlags" /* 8668 */;
-import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 10000 */;
+import GuildTagUtils from "GuildTagUtils" /* 8471 */;
+import GuildInviteFlags from "GuildInviteFlags" /* 8700 */;
+import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 10032 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import InviteStore from "InviteStore" /* 4742 */;
+import InviteStore from "InviteStore" /* 4774 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;

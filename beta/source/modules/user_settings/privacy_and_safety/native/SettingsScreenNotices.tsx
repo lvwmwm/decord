@@ -1,33 +1,33 @@
-// Module ID: 15081
-// Function ID: 15082
+// Module ID: 15090
+// Function ID: 15091
 // Name: SettingsScreenNotices
-// Dependencies: [19, 17, 1376, 21, 4758, 580, 7839, 15082, 15083, 5642, 5643, 4970, 15084, 15085, 558, 568, 2]
+// Dependencies: [19, 17, 1376, 21, 4790, 580, 7871, 15091, 15092, 5674, 5675, 5002, 15099, 15100, 558, 568, 2]
 
-// Module 15081 (SettingsScreenNotices)
+// Module 15090 (SettingsScreenNotices)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 4970 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5642 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5643 */;
-import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 15082 */;
-import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 15084 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5002 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5674 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5675 */;
+import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 15091 */;
+import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 15099 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { noticeContainer: { marginHorizontal: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_16 }, listHeaderNoticeContainer: null };
 const obj3 = { marginHorizontal: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_16 };
 obj2.listHeaderNoticeContainer = { marginTop: nativeDefault.space.PX_16 };
 let closure_6 = createStyles.createStyles(obj2);
 const obj5 = { SENSITIVE_CONTENT_FILTERS: null, CONTENT_AND_SOCIAL: null, DATA_AND_PRIVACY: null };
 const obj4 = { marginTop: nativeDefault.space.PX_16 };
-let items = [{ order: 100, predicate: fn(7839).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }, , , ];
-const obj6 = { order: 100, predicate: fn(7839).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault };
-items[1] = { order: 150, predicate: fn(15083).shouldShowTinyBroncoUnconfirmedNotice, Component: fn(15083).ContentFiltersUnconfirmedNotice };
-const obj7 = { order: 150, predicate: fn(15083).shouldShowTinyBroncoUnconfirmedNotice, Component: fn(15083).ContentFiltersUnconfirmedNotice };
+let items = [{ order: 100, predicate: fn(7871).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }, , , ];
+const obj6 = { order: 100, predicate: fn(7871).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault };
+items[1] = { order: 150, predicate: fn(15092).shouldShowTinyBroncoUnconfirmedNotice, Component: fn(15092).ContentFiltersUnconfirmedNotice };
+const obj7 = { order: 150, predicate: fn(15092).shouldShowTinyBroncoUnconfirmedNotice, Component: fn(15092).ContentFiltersUnconfirmedNotice };
 items[2] = {
   order: 200,
   predicate() {
@@ -62,7 +62,7 @@ items[3] = {
     }
     return false === nsfwAllowed;
   },
-  Component: fn(15085).SensitiveContentFiltersTeenNotice
+  Component: fn(15100).SensitiveContentFiltersTeenNotice
 };
 obj5.SENSITIVE_CONTENT_FILTERS = items;
 const obj9 = {
@@ -75,10 +75,10 @@ const obj9 = {
     }
     return false === nsfwAllowed;
   },
-  Component: fn(15085).SensitiveContentFiltersTeenNotice
+  Component: fn(15100).SensitiveContentFiltersTeenNotice
 };
-const items1 = [{ order: 100, predicate: fn(7839).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }, ];
-const obj10 = { order: 100, predicate: fn(7839).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault };
+const items1 = [{ order: 100, predicate: fn(7871).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }, ];
+const obj10 = { order: 100, predicate: fn(7871).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault };
 items1[1] = {
   order: 200,
   predicate() {
@@ -104,10 +104,10 @@ const obj11 = {
   },
   Component: AgeConfirmationNoticeDefault
 };
-const items2 = [{ order: 100, predicate: fn(7839).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }];
+const items2 = [{ order: 100, predicate: fn(7871).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }];
 obj5.DATA_AND_PRIVACY = items2;
 const ReactCompilerGating = fn(558);
-const obj12 = { order: 100, predicate: fn(7839).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault };
+const obj12 = { order: 100, predicate: fn(7871).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsScreenNotices.tsx");
 

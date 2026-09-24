@@ -1,11 +1,11 @@
-// Module ID: 16133
-// Function ID: 16134
+// Module ID: 16143
+// Function ID: 16144
 // Name: FeaturedFirstCardCoachmarkAnchor
-// Dependencies: [19, 17, 21, 558, 568, 16134, 2]
+// Dependencies: [19, 17, 21, 558, 568, 16144, 2]
 
-// Module 16133 (FeaturedFirstCardCoachmarkAnchor)
+// Module 16143 (FeaturedFirstCardCoachmarkAnchor)
 import c from "c" /* 568 */;
-import WishlistButtonCoachmarkDefault from "WishlistButtonCoachmark" /* 16134 */;
+import WishlistButtonCoachmarkDefault from "WishlistButtonCoachmark" /* 16144 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

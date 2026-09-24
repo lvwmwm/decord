@@ -1,30 +1,30 @@
-// Module ID: 12417
-// Function ID: 12418
+// Module ID: 12453
+// Function ID: 12454
 // Name: VoicePanelChatView
-// Dependencies: [19, 17, 12418, 1078, 21, 4758, 4959, 558, 568, 1114, 12415, 1119, 4711, 12419, 4497, 5343, 7320, 8121, 1482, 1616, 12427, 4771, 4612, 12428, 10331, 5170, 4471, 11649, 2]
+// Dependencies: [19, 17, 12454, 1078, 21, 4790, 4991, 558, 568, 1114, 12451, 1119, 4743, 12455, 4529, 5375, 7352, 8153, 1482, 1616, 12463, 4803, 4644, 12464, 10370, 5202, 4503, 11685, 2]
 
-// Module 12417 (VoicePanelChatView)
+// Module 12453 (VoicePanelChatView)
 import c from "c" /* 568 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
 import util from "util" /* 1119 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import _modDef4711 from "module_4711" /* 4711 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4771 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4959 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5343 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7320 */;
-import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 12415 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12419 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import _modDef4743 from "module_4743" /* 4743 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4803 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4991 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5375 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7352 */;
+import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 12451 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12455 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Platform = fn(17).Platform;
-const CONTROLS_DRAWER_HEADER_SIZE = fn(12418).CONTROLS_DRAWER_HEADER_SIZE;
+const CONTROLS_DRAWER_HEADER_SIZE = fn(12454).CONTROLS_DRAWER_HEADER_SIZE;
 const Constants = fn(1078);
 ({ ComponentActions: closure_4, ME: hasOwnProperty } = Constants);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ container: { flex: 1, overflow: "hidden", paddingTop: CONTROLS_DRAWER_HEADER_SIZE }, gradientWrapper: { position: "absolute", top: CONTROLS_DRAWER_HEADER_SIZE, left: 0 }, titleBlur: { opacity: 0 } });
 fn(558);
 const __initData = { code: "function VoicePanelChatViewTsx1(){const{windowDimensions}=this.__closure;return{width:windowDimensions.get().width,height:windowDimensions.get().height};}" };
@@ -48,7 +48,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() =>
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp10 = timestampProducer(tmp3(5343), { absolute: true });
+      const tmp10 = timestampProducer(tmp3(5375), { absolute: true });
       cResult[3] = tmp10;
       let tmp8 = tmp10;
     } else {
@@ -56,7 +56,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() =>
     }
     if (cResult[4] !== tmp6) {
       const obj3 = { style: tmp6, children: tmp8 };
-      const tmp13 = timestampProducer(tmp3(7320), obj3);
+      const tmp13 = timestampProducer(tmp3(7352), obj3);
       cResult[4] = tmp6;
       cResult[5] = tmp13;
       let tmp11 = tmp13;
@@ -104,7 +104,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() 
     const obj2 = { accessibilityLabel: null, icon: null, onPress: null };
     const intl = tmp(1119).intl;
     obj2.accessibilityLabel = intl.string(tmp(1119).t["5MstTl"]);
-    obj2.icon = _modDef4711;
+    obj2.icon = _modDef4743;
     obj2.onPress = first;
     const tmp9 = timestampProducer(ChatFloatingNavButtonDefault, obj2);
     cResult[1] = tmp9;
@@ -121,7 +121,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() 
   const obj = { accessibilityLabel: null, icon: null, onPress: null };
   const intl = util.intl;
   obj.accessibilityLabel = intl.string(util.t["5MstTl"]);
-  obj.icon = _modDef4711;
+  obj.icon = _modDef4743;
   obj.onPress = callback;
   return timestampProducer(ChatFloatingNavButtonDefault, obj);
 }));

@@ -1,21 +1,21 @@
-// Module ID: 12315
-// Function ID: 12316
+// Module ID: 12351
+// Function ID: 12352
 // Name: AppLauncherAttachmentOption
-// Dependencies: [19, 17, 5107, 5106, 21, 4758, 580, 558, 568, 12316, 11517, 1982, 12298, 504, 9419, 1119, 5346, 11509, 12318, 2]
+// Dependencies: [19, 17, 5139, 5138, 21, 4790, 580, 558, 568, 12352, 11553, 1982, 12334, 504, 9451, 1119, 5378, 11545, 12354, 2]
 
-// Module 12315 (AppLauncherAttachmentOption)
+// Module 12351 (AppLauncherAttachmentOption)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 11517 */;
-import FileIcon from "FileIcon" /* 12316 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 11553 */;
+import FileIcon from "FileIcon" /* 12352 */;
 import noop from "module_19" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5106 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5138 */;
 
 require = fn;
 let View = fn(17).View;
-const DraftType = fn(5107).DraftType;
+const DraftType = fn(5139).DraftType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { imageIconWrapper: null, selectedImage: null };
 let size = { justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, width: 32, height: 32, borderRadius: nativeDefault.radii.lg };
 obj2.imageIconWrapper = size;

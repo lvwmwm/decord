@@ -1,16 +1,16 @@
-// Module ID: 8406
-// Function ID: 8407
+// Module ID: 8438
+// Function ID: 8439
 // Name: useAvatarColor
-// Dependencies: [32, 5, 19, 4750, 562, 1252, 1479, 4608, 558, 568, 504, 7799, 2]
+// Dependencies: [32, 5, 19, 4782, 562, 1252, 1479, 4640, 558, 568, 504, 7831, 2]
 // Exports: maybeFetchColors
 
-// Module 8406 (useAvatarColor)
+// Module 8438 (useAvatarColor)
 import c from "c" /* 568 */;
-import tinycolorDefault from "tinycolor" /* 7799 */;
+import tinycolorDefault from "tinycolor" /* 7831 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 function hasFetchedColors(game_name) {
@@ -407,11 +407,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
     if (dependencyMap != null) {
       mapped = dependencyMap.map((item) => {
         [tmp, tmp2, tmp3] = item;
-        const obj = flag(7799)({ r: tmp, g: tmp2, b: tmp3 });
-        ({ h, s, l } = flag(7799)({ r: tmp, g: tmp2, b: tmp3 }).toHsl());
+        const obj = flag(7831)({ r: tmp, g: tmp2, b: tmp3 });
+        ({ h, s, l } = flag(7831)({ r: tmp, g: tmp2, b: tmp3 }).toHsl());
         const obj2 = { h, s: s * stateFromStores, l };
-        const toHslResult = flag(7799)({ r: tmp, g: tmp2, b: tmp3 }).toHsl();
-        return flag(7799)({ h, s: s * stateFromStores, l }).toHexString();
+        const toHslResult = flag(7831)({ r: tmp, g: tmp2, b: tmp3 }).toHsl();
+        return flag(7831)({ h, s: s * stateFromStores, l }).toHexString();
       });
     }
     return mapped;

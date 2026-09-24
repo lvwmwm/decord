@@ -1,12 +1,12 @@
-// Module ID: 8925
-// Function ID: 8926
+// Module ID: 8957
+// Function ID: 8958
 // Name: InAppReportsTextLineElement
-// Dependencies: [5, 32, 19, 17, 21, 4758, 580, 558, 568, 5208, 5813, 7436, 4457, 1368, 4737, 4455, 4754, 1119, 5188, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4790, 580, 558, 568, 5240, 5845, 7468, 4489, 1368, 4769, 4487, 4786, 1119, 5220, 2]
 
-// Module 8925 (InAppReportsTextLineElement)
+// Module 8957 (InAppReportsTextLineElement)
 import nativeDefault from "native" /* 580 */;
-import ToastUtils from "ToastUtils" /* 4457 */;
-import ClipboardUtils from "ClipboardUtils" /* 7436 */;
+import ToastUtils from "ToastUtils" /* 4489 */;
+import ClipboardUtils from "ClipboardUtils" /* 7468 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_7, Linking: closure_8 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { marginBottom: 16, paddingHorizontal: 16 }, header: { marginBottom: 8 }, description: { marginBottom: 16 }, trailingButtonContainer: { paddingHorizontal: 8 }, smsInfoContainer: { display: "flex", flexDirection: "row", alignItems: "center" }, smsNumberContainer: { flex: 1, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderRadius: nativeDefault.radii.xs, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 1, padding: 8, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginBottom: 8 }, smsNumberContainerSuccess: null, startButtonContainer: null };
 let obj3 = { flex: 1, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderRadius: nativeDefault.radii.xs, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 1, padding: 8, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginBottom: 8 };
 obj2.smsNumberContainerSuccess = { borderColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND };
@@ -47,7 +47,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((element) => {
   } else {
     first = cResult[0];
   }
-  sms_body(5813)(first);
+  sms_body(5845)(first);
   if (data.is_localized) {
     if (cResult[1] !== sms) {
       class T {
@@ -173,8 +173,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((element) => {
             return obj5;
           } else {
             if (value) {
-              sms_body(4455).openURL(closure_128_0);
-              const obj = sms_body(4455);
+              sms_body(4487).openURL(closure_128_0);
+              const obj = sms_body(4487);
             }
             dependencyMap = 3;
             return { value: "IconComponent", done: null };

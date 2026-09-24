@@ -1,24 +1,24 @@
-// Module ID: 17549
-// Function ID: 17550
+// Module ID: 17559
+// Function ID: 17560
 // Name: VoicePanelHeaderChatButton
-// Dependencies: [19, 1078, 21, 4758, 580, 558, 568, 1114, 17550, 17469, 5291, 1119, 5804, 2]
+// Dependencies: [19, 1078, 21, 4790, 580, 558, 568, 1114, 17560, 17479, 5323, 1119, 5836, 2]
 
-// Module 17549 (VoicePanelHeaderChatButton)
+// Module 17559 (VoicePanelHeaderChatButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
 import util from "util" /* 1119 */;
-import ChatIcon from "ChatIcon" /* 5291 */;
-import NativeViewDefault from "NativeView" /* 5804 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17469 */;
-import useChatBadgeDefault from "useChatBadge" /* 17550 */;
+import ChatIcon from "ChatIcon" /* 5323 */;
+import NativeViewDefault from "NativeView" /* 5836 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17479 */;
+import useChatBadgeDefault from "useChatBadge" /* 17560 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ComponentActions = fn(1078).ComponentActions;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { badgeContainer: { position: "absolute", top: -2, right: -2 }, badge: null, notificationBadge: null };
 let size = { width: 8, height: 8, borderRadius: nativeDefault.radii.round };
 obj2.badge = size;
@@ -46,14 +46,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { icon: null, accessibilityLabel: null, onPress: null };
     const obj3 = { color: tmp6(580).colors.WHITE, size: "sm" };
-    obj2.icon = hasOwnProperty(tmp(5291).ChatIcon, obj3);
+    obj2.icon = hasOwnProperty(tmp(5323).ChatIcon, obj3);
     const intl = tmp(1119).intl;
     obj2.accessibilityLabel = intl.string(tmp(1119).t["5KxXrK"]);
     obj2.onPress = first;
-    const tmp11 = hasOwnProperty(tmp6(17469), obj2);
+    const tmp11 = hasOwnProperty(tmp6(17479), obj2);
     cResult[1] = tmp11;
     let tmp8 = tmp11;
-    const tmp6Result = tmp6(17469);
+    const tmp6Result = tmp6(17479);
   } else {
     tmp8 = cResult[1];
   }
@@ -65,7 +65,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       const obj4 = { children: null };
       const items = [tmp8, tmp12];
       obj4.children = items;
-      const tmp18 = timestampProducer(tmp6(5804), obj4);
+      const tmp18 = timestampProducer(tmp6(5836), obj4);
       cResult[5] = tmp12;
       cResult[6] = tmp18;
       let tmp16 = tmp18;
@@ -81,9 +81,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     const items1 = [, ];
     ({ badge: arr[0], notificationBadge: arr[1] } = tmp4);
     obj6.style = items1;
-    obj5.children = hasOwnProperty(tmp6(5804), obj6);
-    tmp13 = hasOwnProperty(tmp6(5804), obj5);
-    const tmp6Result2 = tmp6(5804);
+    obj5.children = hasOwnProperty(tmp6(5836), obj6);
+    tmp13 = hasOwnProperty(tmp6(5836), obj5);
+    const tmp6Result2 = tmp6(5836);
   }
   cResult[2] = tmp7;
   cResult[3] = tmp4;
@@ -112,9 +112,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     const items1 = [, ];
     ({ badge: arr2[0], notificationBadge: arr2[1] } = tmp);
     obj4.style = items1;
-    obj3.children = tmp8(tmp3(5804), obj4);
-    tmp8Result = tmp8(tmp3(5804), obj3);
-    const tmp3Result = tmp3(5804);
+    obj3.children = tmp8(tmp3(5836), obj4);
+    tmp8Result = tmp8(tmp3(5836), obj3);
+    const tmp3Result = tmp3(5836);
   }
   children[1] = tmp8Result;
   return tmp6(tmp7, { children });

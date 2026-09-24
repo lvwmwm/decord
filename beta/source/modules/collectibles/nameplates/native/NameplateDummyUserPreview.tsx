@@ -1,15 +1,15 @@
-// Module ID: 9096
-// Function ID: 9097
+// Module ID: 9128
+// Function ID: 9129
 // Name: NameplateDummyUserPreview
-// Dependencies: [19, 17, 1186, 21, 1181, 580, 4758, 558, 568, 4469, 504, 9097, 9099, 9100, 2]
+// Dependencies: [19, 17, 1186, 21, 1181, 580, 4790, 558, 568, 4501, 504, 9129, 9131, 9132, 2]
 
-// Module 9096 (NameplateDummyUserPreview)
+// Module 9128 (NameplateDummyUserPreview)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import themes from "themes" /* 4469 */;
-import NameplateDefault from "Nameplate" /* 9097 */;
+import themes from "themes" /* 4501 */;
+import NameplateDefault from "Nameplate" /* 9129 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 
@@ -22,7 +22,7 @@ NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG[fn(1181).AvatarSizes.XSMALL_20] = { padding:
 NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG[fn(1181).AvatarSizes.XSMALL] = { padding: 6, avatarMarginRight: 6, placeholderBarHeight: 8 };
 let obj2 = { padding: nativeDefault.space.PX_4, avatarMarginRight: nativeDefault.space.PX_4, placeholderBarHeight: 6 };
 NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG[fn(1181).AvatarSizes.NORMAL] = { padding: nativeDefault.space.PX_8, avatarMarginRight: nativeDefault.space.PX_8, placeholderBarHeight: 14 };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles((arg0, arg1) => {
   obj = { container: { padding: obj[arg0].padding, flexDirection: "row", alignItems: "center", justifyContent: "flex-start", width: "100%", position: "relative", borderRadius: nativeDefault.radii.sm }, avatarContainer: null, avatar: null, placeholderBar: null, nameplate: null };
   const obj3 = { borderRadius: nativeDefault.radii.round, marginRight: obj[arg0].avatarMarginRight, backgroundColor: null };
@@ -76,7 +76,7 @@ export const NameplateDummyUserPreview = ReactCompilerGating.isReactCompilerEnab
         if (cResult[7] === tmp6.nameplate) {
           let tmp13 = cResult[8];
         }
-        const tmp17 = importDefault(tmp11 ? 9099 : 9100);
+        const tmp17 = importDefault(tmp11 ? 9131 : 9132);
         if (cResult[9] === avatarSize) {
           if (cResult[10] === tmp6.avatar) {
             if (cResult[11] === tmp17) {
@@ -181,7 +181,7 @@ export const NameplateDummyUserPreview = ReactCompilerGating.isReactCompilerEnab
   const obj4 = { style: tmp3.avatarContainer, children: null };
   const obj3 = { nameplate, fullOpacity: true, style: tmp3.nameplate, animate };
   const tmp6 = timestampProducer;
-  obj4.children = hasOwnProperty(native.Avatar, { source: importDefault(stateFromStores ? 9099 : 9100), size: NORMAL, "aria-hidden": true, style: tmp3.avatar });
+  obj4.children = hasOwnProperty(native.Avatar, { source: importDefault(stateFromStores ? 9131 : 9132), size: NORMAL, "aria-hidden": true, style: tmp3.avatar });
   items2[1] = hasOwnProperty(View, obj4);
   const obj6 = { style: null };
   const items3 = [tmp3.placeholderBar, { width: hideAvatar.width }];

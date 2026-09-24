@@ -1,19 +1,19 @@
-// Module ID: 9737
-// Function ID: 9738
+// Module ID: 9769
+// Function ID: 9770
 // Name: PopoutMenu
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 1181, 8876, 7385, 1482, 1616, 12, 4497, 4759, 4728, 6891, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 1181, 8908, 7417, 1482, 1616, 12, 4529, 4791, 4760, 6923, 2]
 
-// Module 9737 (PopoutMenu)
+// Module 9769 (PopoutMenu)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import Patterns from "Patterns" /* 4728 */;
-import timing from "timing" /* 4759 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
-import FormRowDefault from "FormRow" /* 7385 */;
-import Form from "Form" /* 8876 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import Patterns from "Patterns" /* 4760 */;
+import timing from "timing" /* 4791 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6923 */;
+import FormRowDefault from "FormRow" /* 7417 */;
+import Form from "Form" /* 8908 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -22,7 +22,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
 let c9 = 250;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { position: "absolute", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.sm }, popoutMenuRow: { flex: 1 }, popoutMenuRowLabel: { width: "100%" } };
 let closure_10 = createStyles.createStyles(obj);
 let ReactCompilerGating = fn(558);
@@ -71,7 +71,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
       tmp12 = tmp15;
     }
     const obj4 = { style: tmp4.popoutMenuRowLabel, text };
-    const tmp11 = timestampProducer(tmp(8876).FormLabel, obj4);
+    const tmp11 = timestampProducer(tmp(8908).FormLabel, obj4);
     cResult[5] = tmp4.popoutMenuRowLabel;
     cResult[6] = text;
     cResult[7] = tmp11;
@@ -337,11 +337,11 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
           return obj1;
         }
       }
-      let obj3 = { withTiming: tmp(4759).withTiming, animateIn: tmp8[0] > 0 && !first, STANDARD_EASING: tmp(1181).STANDARD_EASING, ANIMATION_DURATION: v250, runOnJS: tmp(4497).runOnJS, handleClose, EXTRA_PADDING: 8 };
+      let obj3 = { withTiming: tmp(4791).withTiming, animateIn: tmp8[0] > 0 && !first, STANDARD_EASING: tmp(1181).STANDARD_EASING, ANIMATION_DURATION: v250, runOnJS: tmp(4529).runOnJS, handleClose, EXTRA_PADDING: 8 };
       De.__closure = obj3;
       De.__workletHash = 4709130936628;
       De.__initData = debounceResult;
-      const animatedStyle = tmp(4497).useAnimatedStyle(De);
+      const animatedStyle = tmp(4529).useAnimatedStyle(De);
       const _Symbol3 = Symbol;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
         class Ie {
@@ -404,7 +404,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
               return;
             }
           }
-          let obj4 = { runOnJS: tmp(4497).runOnJS, _setClose: tmp11 };
+          let obj4 = { runOnJS: tmp(4529).runOnJS, _setClose: tmp11 };
           PopoutMenuTsx4.__closure = obj4;
           PopoutMenuTsx4.__workletHash = 15929711498886;
           PopoutMenuTsx4.__initData = Ie;
@@ -419,12 +419,12 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
             }
           }
         }
-        const Gesture = tmp(6891).Gesture;
+        const Gesture = tmp(6923).Gesture;
         const LongPressResult = Gesture.LongPress();
         function ve() {
           ReanimatedRexport.runOnJS(Oe)();
         }
-        let obj5 = { runOnJS: tmp(4497).runOnJS, handleLongPress: tmp38 };
+        let obj5 = { runOnJS: tmp(4529).runOnJS, handleLongPress: tmp38 };
         ve.__closure = obj5;
         ve.__workletHash = 1649917173815;
         tmp11 = handleClose;
@@ -499,7 +499,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
           const obj6 = { gesture: tmp39, children: null };
           const obj8 = { ref, children: trigger };
           obj6.children = closure_6(first1, obj8);
-          const items2 = [closure_6(tmp(6891).GestureDetector, obj6), ];
+          const items2 = [closure_6(tmp(6923).GestureDetector, obj6), ];
           let tmp46Result = null;
           if (first1) {
             class PopoutMenuTsx4 {
@@ -574,7 +574,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
               return timestampProducer(closure_11, obj, index);
             });
             tmp51[3] = items4;
-            tmp46Result = tmp46(tmp5(4497).View, tmp51);
+            tmp46Result = tmp46(tmp5(4529).View, tmp51);
           }
           class De {
             constructor() {
@@ -668,7 +668,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
         cResult[30] = trigger;
         cResult[31] = tmp46Result2;
       }
-      let tmpResult = tmp(4497);
+      let tmpResult = tmp(4529);
     }
     const rect = { left, top };
     cResult[9] = left;

@@ -1,20 +1,20 @@
-// Module ID: 15226
-// Function ID: 15227
+// Module ID: 15236
+// Function ID: 15237
 // Name: ConnectionsEmptyStateUpsell
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 4693, 9339, 15227, 15228, 4610, 1401, 1181, 5824, 4725, 15224, 1984, 4754, 7750, 1616, 5186, 1119, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 4725, 9371, 15237, 15238, 4642, 1401, 1181, 5856, 4757, 15234, 1984, 4786, 7782, 1616, 5218, 1119, 2]
 
-// Module 15226 (ConnectionsEmptyStateUpsell)
+// Module 15236 (ConnectionsEmptyStateUpsell)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import AvatarUtils from "AvatarUtils" /* 1401 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import shared from "shared" /* 4610 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Card from "Card" /* 5824 */;
-import ConnectionsHooks from "ConnectionsHooks" /* 7750 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9339 */;
-import ConnectionsTracking from "ConnectionsTracking" /* 15227 */;
+import shared from "shared" /* 4642 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Card from "Card" /* 5856 */;
+import ConnectionsHooks from "ConnectionsHooks" /* 7782 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9371 */;
+import ConnectionsTracking from "ConnectionsTracking" /* 15237 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -31,7 +31,7 @@ const View = fn(17).View;
 const AnalyticsLocations = fn(1078).AnalyticsLocations;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles(() => {
   const obj = { container: { flex: 1, alignItems: "center" }, content: { flex: 1, width: "100%", maxWidth: 260, alignItems: "center", justifyContent: "center" }, card: { flex: 1, maxHeight: 76, maxWidth: 76, aspectRatio: 1, alignItems: "center", justifyContent: "center", padding: 12 }, textContainer: { marginTop: 32 }, text: { textAlign: "center" }, iconContainer: { flex: 1, maxHeight: 52, maxWidth: 52, aspectRatio: 1, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center", padding: 8 }, icon: { flex: 1, aspectRatio: 1 } };
   return obj;
@@ -54,11 +54,11 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
     tmp6 = cResult[1];
   }
   if (cResult[2] !== platform.type) {
-    const connectionBackgroundColor = tmp(15228).getConnectionBackgroundColor(platform.type);
+    const connectionBackgroundColor = tmp(15238).getConnectionBackgroundColor(platform.type);
     cResult[2] = platform.type;
     cResult[3] = connectionBackgroundColor;
     let tmp7 = connectionBackgroundColor;
-    const tmpResult = tmp(15228);
+    const tmpResult = tmp(15238);
   } else {
     tmp7 = cResult[3];
   }
@@ -93,7 +93,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
                         }
                       }
                       const obj2 = { onPress: tmp6, style: tmp4.card, border: "strong", children: tmp19 };
-                      const tmp25 = closure_6(tmp(5824).Card, obj2);
+                      const tmp25 = closure_6(tmp(5856).Card, obj2);
                       cResult[23] = tmp6;
                       cResult[24] = tmp4.card;
                       cResult[25] = tmp19;
@@ -142,8 +142,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
     let whitePNG2 = platform.icon.whitePNG;
   } else {
     const icon = platform.icon;
-    whitePNG2 = tmp(4610).isThemeDark(tmp5) ? icon.darkPNG : icon.lightPNG;
-    const tmpResult4 = tmp(4610);
+    whitePNG2 = tmp(4642).isThemeDark(tmp5) ? icon.darkPNG : icon.lightPNG;
+    const tmpResult4 = tmp(4642);
   }
   const tmpResult3 = platform(1401);
   cResult[4] = tmp7;
@@ -260,7 +260,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
         }
         const obj4 = { spacing: 16, justify: "center", direction: "horizontal", children: tmp10 };
-        const tmp16 = timestampProducer(tmp(5186).Stack, obj4);
+        const tmp16 = timestampProducer(tmp(5218).Stack, obj4);
         cResult[12] = tmp10;
         cResult[13] = tmp16;
       } else {
@@ -344,7 +344,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj6 = { spacing: 16, direction: "vertical", align: "center", style: tmp9, children: null };
           const items = [tmp15, tmp25];
           obj6.children = items;
-          const tmp30 = React5(tmp(5186).Stack, obj6);
+          const tmp30 = React5(tmp(5218).Stack, obj6);
           cResult[22] = tmp4.textContainer;
           cResult[23] = tmp25;
           cResult[24] = tmp15;
@@ -353,7 +353,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const obj7 = { spacing: 16, justify: "center", direction: "horizontal", children: null };
         const items1 = [tmp17, tmp22];
         obj7.children = items1;
-        const tmp27 = React5(tmp(5186).Stack, obj7);
+        const tmp27 = React5(tmp(5218).Stack, obj7);
         cResult[19] = tmp22;
         cResult[20] = tmp17;
         cResult[21] = tmp27;
@@ -366,37 +366,37 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[8] = items2;
 }) : (() => {
   const tmp = closure_8();
-  emptyStatePlatforms = emptyStatePlatforms(7750).useEmptyStatePlatforms();
+  emptyStatePlatforms = emptyStatePlatforms(7782).useEmptyStatePlatforms();
   const items = [emptyStatePlatforms];
   const memo = noop.useMemo(() => emptyStatePlatforms.slice(0, 3), items);
   const items1 = [emptyStatePlatforms];
   const memo1 = noop.useMemo(() => emptyStatePlatforms.slice(3, 5), items1);
   const obj2 = { style: null, children: null };
   const items2 = [tmp.container, ];
-  const obj = emptyStatePlatforms(7750);
+  const obj = emptyStatePlatforms(7782);
   items2[1] = { paddingBottom: useSafeAreaInsetsDefault().bottom };
   obj2.style = items2;
   const obj4 = { style: tmp.content, children: null };
   const obj5 = { spacing: 16, direction: "vertical", align: "center", style: tmp.textContainer, children: null };
   const obj3 = { paddingBottom: useSafeAreaInsetsDefault().bottom };
-  const items3 = [closure_6(emptyStatePlatforms(5186).Stack, { spacing: 16, justify: "center", direction: "horizontal", children: memo.map((platform) => closure_1_6(closure_1_9, { platform }, platform.type)) }), ];
+  const items3 = [closure_6(emptyStatePlatforms(5218).Stack, { spacing: 16, justify: "center", direction: "horizontal", children: memo.map((platform) => closure_1_6(closure_1_9, { platform }, platform.type)) }), ];
   const obj7 = { spacing: 16, justify: "center", direction: "horizontal", children: null };
   const items4 = [memo1.map((platform) => closure_1_6(closure_1_9, { platform }, platform.type)), closure_6(OtherConnectionsCard, { count: emptyStatePlatforms.length - 5 })];
   obj7.children = items4;
-  items3[1] = closure_7(emptyStatePlatforms(5186).Stack, obj7);
+  items3[1] = closure_7(emptyStatePlatforms(5218).Stack, obj7);
   obj5.children = items3;
-  const items5 = [closure_7(emptyStatePlatforms(5186).Stack, obj5), ];
+  const items5 = [closure_7(emptyStatePlatforms(5218).Stack, obj5), ];
   const obj9 = { spacing: 8, align: "center", style: tmp.textContainer, children: null };
   const obj10 = { variant: "text-lg/bold", color: "mobile-text-heading-primary", style: tmp.text, children: null };
   const intl = emptyStatePlatforms(1119).intl;
   obj10.children = intl.string(emptyStatePlatforms(1119).t.JlrHXb);
-  const items6 = [closure_6(emptyStatePlatforms(4754).Text, obj10), ];
+  const items6 = [closure_6(emptyStatePlatforms(4786).Text, obj10), ];
   const obj11 = { variant: "text-md/medium", color: "text-default", style: tmp.text, children: null };
   const intl2 = emptyStatePlatforms(1119).intl;
   obj11.children = intl2.string(emptyStatePlatforms(1119).t.XijaQP);
-  items6[1] = closure_6(emptyStatePlatforms(4754).Text, obj11);
+  items6[1] = closure_6(emptyStatePlatforms(4786).Text, obj11);
   obj9.children = items6;
-  items5[1] = closure_7(emptyStatePlatforms(5186).Stack, obj9);
+  items5[1] = closure_7(emptyStatePlatforms(5218).Stack, obj9);
   obj4.children = items5;
   obj2.children = closure_7(View, obj4);
   return closure_6(View, obj2);

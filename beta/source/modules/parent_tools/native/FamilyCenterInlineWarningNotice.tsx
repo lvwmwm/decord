@@ -1,20 +1,20 @@
-// Module ID: 15141
-// Function ID: 15142
+// Module ID: 15151
+// Function ID: 15152
 // Name: FamilyCenterInlineWarningNotice
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 8871, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 8903, 4786, 2]
 
-// Module 15141 (FamilyCenterInlineWarningNotice)
+// Module 15151 (FamilyCenterInlineWarningNotice)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import WarningIcon from "WarningIcon" /* 8871 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import WarningIcon from "WarningIcon" /* 8903 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_WARNING, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING }, text: null };
 let obj3 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_WARNING, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING };
 obj2.text = { flex: 1, paddingRight: nativeDefault.space.PX_8 };
@@ -35,7 +35,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
-      const tmp10 = React4(tmp(8871).WarningIcon, obj2);
+      const tmp10 = React4(tmp(8903).WarningIcon, obj2);
       cResult[3] = tmp10;
       let tmp7 = tmp10;
     } else {
@@ -61,7 +61,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp14 = tmp17;
     }
     const obj4 = { variant: "text-sm/medium", color: "text-strong", style: tmp4.text, children: text };
-    const tmp13 = React4(tmp(4754).Text, obj4);
+    const tmp13 = React4(tmp(4786).Text, obj4);
     cResult[4] = tmp4.text;
     cResult[5] = text;
     cResult[6] = tmp13;

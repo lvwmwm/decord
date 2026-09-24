@@ -1,32 +1,32 @@
-// Module ID: 18053
-// Function ID: 18054
+// Module ID: 18063
+// Function ID: 18064
 // Name: action_sheet/AddMembersActionSheet
-// Dependencies: [32, 19, 17, 18047, 21, 4758, 580, 558, 568, 4479, 5820, 11248, 7224, 4745, 1181, 11, 4472, 1119, 5738, 18052, 8995, 9821, 9826, 7555, 9833, 4725, 5188, 7396, 4754, 7397, 2]
+// Dependencies: [32, 19, 17, 18057, 21, 4790, 580, 558, 568, 4511, 5852, 11284, 7256, 4777, 1181, 11, 4504, 1119, 5770, 18062, 9027, 9853, 9858, 7587, 9865, 4757, 5220, 7428, 4786, 7429, 2]
 
-// Module 18053 (action_sheet/AddMembersActionSheet)
+// Module 18063 (action_sheet/AddMembersActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4472 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4479 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import RegexUtilsDefault from "RegexUtils" /* 4745 */;
-import GuildUtilsDefault from "GuildUtils" /* 5738 */;
-import FormCheckbox from "FormCheckbox" /* 5820 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11248 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 18052 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4504 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4511 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import RegexUtilsDefault from "RegexUtils" /* 4777 */;
+import GuildUtilsDefault from "GuildUtils" /* 5770 */;
+import FormCheckbox from "FormCheckbox" /* 5852 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9865 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11284 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 18062 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let MAX_BULK_ROLE_MEMBERS_ADD = fn(18047).MAX_BULK_ROLE_MEMBERS_ADD;
+let MAX_BULK_ROLE_MEMBERS_ADD = fn(18057).MAX_BULK_ROLE_MEMBERS_ADD;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1 }, inputContainer: null, tagAvatar: null, emptyStateText: null, addMembersDescription: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1 };
 obj2.inputContainer = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12 };
@@ -45,11 +45,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[1] === disabled) {
       let tmp4 = cResult[2];
     }
-    const checkboxA11yNative = tmp(4479).useCheckboxA11yNative(tmp4);
+    const checkboxA11yNative = tmp(4511).useCheckboxA11yNative(tmp4);
     ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
     if (cResult[3] !== checked) {
       const obj2 = { checked };
-      const tmp8 = React5(tmp(5820).FormCheckbox, obj2);
+      const tmp8 = React5(tmp(5852).FormCheckbox, obj2);
       cResult[3] = checked;
       cResult[4] = tmp8;
       let tmp6 = tmp8;
@@ -89,7 +89,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[13] = userId;
     cResult[14] = tmp12;
     tmp9 = tmp12;
-    const tmpResult = tmp(4479);
+    const tmpResult = tmp(4511);
   }
   const obj4 = { checked, disabled };
   cResult[0] = checked;
@@ -393,7 +393,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       AccessibilityAnnouncer.announce(intl.formatToPlainString(util.t.ZGVL3g, obj), "polite");
     }
   }, items1);
-  const tmp9 = require("module_8995");
+  const tmp9 = require("module_9027");
   if (inActionSheet) {
     let FlashList = tmp9.BottomSheetFlashList;
     let ErpIY3 = tmp8;

@@ -1,14 +1,14 @@
-// Module ID: 16786
-// Function ID: 16787
+// Module ID: 16796
+// Function ID: 16797
 // Name: ContactSuggestionActions
-// Dependencies: [19, 17, 21, 4497, 4758, 580, 558, 568, 16383, 4759, 5187, 1181, 16787, 1119, 5188, 2]
+// Dependencies: [19, 17, 21, 4529, 4790, 580, 558, 568, 16393, 4791, 5219, 1181, 16797, 1119, 5220, 2]
 
-// Module 16786 (ContactSuggestionActions)
+// Module 16796 (ContactSuggestionActions)
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
-import spring from "spring" /* 5187 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16383 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
+import spring from "spring" /* 5219 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16393 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,19 +16,19 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 let obj = { duration: 200, easing: null };
-const Easing = fn(4497).Easing;
-obj.easing = Easing.in(fn(4497).Easing.quad);
+const Easing = fn(4529).Easing;
+obj.easing = Easing.in(fn(4529).Easing.quad);
 let obj2 = { duration: 250, easing: null };
-const Easing2 = fn(4497).Easing;
-obj2.easing = Easing2.in(fn(4497).Easing.quad);
+const Easing2 = fn(4529).Easing;
+obj2.easing = Easing2.in(fn(4529).Easing.quad);
 let obj3 = { duration: 250, easing: null };
-const Easing3 = fn(4497).Easing;
-obj3.easing = Easing3.in(fn(4497).Easing.quad);
+const Easing3 = fn(4529).Easing;
+obj3.easing = Easing3.in(fn(4529).Easing.quad);
 let obj4 = { duration: 250, easing: null };
-const Easing4 = fn(4497).Easing;
-obj4.easing = Easing4.out(fn(4497).Easing.quad);
+const Easing4 = fn(4529).Easing;
+obj4.easing = Easing4.out(fn(4529).Easing.quad);
 const SPRING_CONFIG = { mass: 1, stiffness: 172, damping: 17.3 };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj6 = { icon: { position: "absolute", top: 4, zIndex: 2, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, opacity: 0 } };
 let closure_12 = createStyles.createStyles(obj6);
 const __initData = { code: "function ContactSuggestionActionsTsx1(){const{right,opacity,scale}=this.__closure;return{right:right.get(),opacity:opacity.get(),transform:[{scale:scale.get()}]};}" };

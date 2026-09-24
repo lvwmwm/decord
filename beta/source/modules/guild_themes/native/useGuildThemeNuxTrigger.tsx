@@ -1,14 +1,14 @@
-// Module ID: 16499
-// Function ID: 16500
+// Module ID: 16509
+// Function ID: 16510
 // Name: useGuildThemeNuxTrigger
-// Dependencies: [19, 4451, 504, 16500, 16500, 1984, 4725, 16505, 2]
+// Dependencies: [19, 4483, 504, 16510, 16510, 1984, 4757, 16515, 2]
 // Exports: default
 
-// Module 16499 (useGuildThemeNuxTrigger)
+// Module 16509 (useGuildThemeNuxTrigger)
 import initialize from "initialize" /* 504 */;
-import guild_themes_useGuildThemeNuxTriggerDefault from "guild_themes/useGuildThemeNuxTrigger" /* 16505 */;
+import guild_themes_useGuildThemeNuxTriggerDefault from "guild_themes/useGuildThemeNuxTrigger" /* 16515 */;
 import noop from "module_19" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4451 */;
+import ActionSheetStore from "ActionSheetStore" /* 4483 */;
 
 const require = globalThis.__r;
 

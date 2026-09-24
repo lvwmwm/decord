@@ -1,24 +1,24 @@
-// Module ID: 10415
-// Function ID: 10416
+// Module ID: 10454
+// Function ID: 10455
 // Name: SafetyToolsAboutActionSheet
-// Dependencies: [32, 19, 17, 10355, 1078, 21, 4758, 580, 558, 568, 10399, 4725, 10369, 10370, 10416, 1119, 4457, 2112, 4754, 5188, 10404, 2]
+// Dependencies: [32, 19, 17, 10394, 1078, 21, 4790, 580, 558, 568, 10438, 4757, 10408, 10409, 10455, 1119, 4489, 2112, 4786, 5220, 10443, 2]
 
-// Module 10415 (SafetyToolsAboutActionSheet)
+// Module 10454 (SafetyToolsAboutActionSheet)
 import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10369 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10370 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10408 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10409 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 let View = fn(17).View;
-let isNudgeWarning = fn(10355).getSafetyToolsActionSheetKey;
+let isNudgeWarning = fn(10394).getSafetyToolsActionSheetKey;
 let HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { aboutContainer: { marginHorizontal: nativeDefault.space.PX_32 }, description: null, reportFalsePositive: null };
 let obj3 = { marginHorizontal: nativeDefault.space.PX_32 };
 obj2.description = { alignSelf: "center", textAlign: "center", marginBottom: nativeDefault.space.PX_24 };

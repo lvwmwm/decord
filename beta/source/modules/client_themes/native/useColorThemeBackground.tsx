@@ -1,19 +1,19 @@
-// Module ID: 4612
-// Function ID: 4613
+// Module ID: 4644
+// Function ID: 4645
 // Name: useColorThemeBackground
-// Dependencies: [19, 1186, 4578, 1119, 1234, 4613, 558, 568, 4615, 565, 4690, 2]
+// Dependencies: [19, 1186, 4610, 1119, 1234, 4645, 558, 568, 4647, 565, 4722, 2]
 
-// Module 4612 (useColorThemeBackground)
+// Module 4644 (useColorThemeBackground)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1234 */;
-import GuildThemePresets from "GuildThemePresets" /* 4613 */;
-import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 4615 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 4690 */;
+import GuildThemePresets from "GuildThemePresets" /* 4645 */;
+import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 4647 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 4722 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4578 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4610 */;
 
 const require = globalThis.__r;
 
@@ -112,7 +112,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = tmp16;
   tmp15 = tmp16;
 }) : (() => {
-  const tmp = stateFromStores(4615)();
+  const tmp = stateFromStores(4647)();
   _require = tmp;
   const items = [ThemeStore];
   stateFromStores = require("useStateFromStores").useStateFromStores(items, () => theme.theme);

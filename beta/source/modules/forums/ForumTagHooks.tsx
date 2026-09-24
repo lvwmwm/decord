@@ -1,15 +1,15 @@
-// Module ID: 7519
-// Function ID: 7520
+// Module ID: 7551
+// Function ID: 7552
 // Name: ForumTagHooks
-// Dependencies: [19, 2045, 4399, 1089, 558, 568, 504, 1374, 7520, 2]
+// Dependencies: [19, 2045, 4431, 1089, 558, 568, 504, 1374, 7552, 2]
 
-// Module 7519 (ForumTagHooks)
+// Module 7551 (ForumTagHooks)
 import c from "c" /* 568 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
-import ReportToModUtils from "ReportToModUtils" /* 7520 */;
+import ReportToModUtils from "ReportToModUtils" /* 7552 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 const require = globalThis.__r;
 
@@ -114,8 +114,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((appliedTags) => {
   }
   let result1 = found;
   if (result) {
-    result1 = tmp(7520).sortedModeratorReportTags(found);
-    const tmpResult = tmp(7520);
+    result1 = tmp(7552).sortedModeratorReportTags(found);
+    const tmpResult = tmp(7552);
   }
   cResult[0] = tmp4;
   cResult[1] = appliedTags;

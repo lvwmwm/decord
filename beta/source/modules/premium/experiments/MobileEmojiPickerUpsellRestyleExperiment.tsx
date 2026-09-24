@@ -1,12 +1,12 @@
-// Module ID: 8105
-// Function ID: 8106
+// Module ID: 8137
+// Function ID: 8138
 // Name: MobileEmojiPickerUpsellRestyleExperiment
-// Dependencies: [1438, 558, 568, 8101, 2]
+// Dependencies: [1438, 558, 568, 8133, 2]
 // Exports: getMobileEmojiPickerUpsellRestyleEnabledForFeature
 
-// Module 8105 (MobileEmojiPickerUpsellRestyleExperiment)
+// Module 8137 (MobileEmojiPickerUpsellRestyleExperiment)
 import c from "c" /* 568 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8101 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8133 */;
 import ApexExperiment from "ApexExperiment" /* 1438 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

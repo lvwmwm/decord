@@ -1,13 +1,13 @@
-// Module ID: 10515
-// Function ID: 10516
+// Module ID: 10551
+// Function ID: 10552
 // Name: StarIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 10516, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 10552, 4493, 2]
 
-// Module 10515 (StarIcon)
+// Module 10551 (StarIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod10516 from "module_10516" /* 10516 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod10552 from "module_10552" /* 10552 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const StarIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(10516);
+    const tmpResult = tmp(10552);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const StarIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10516, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10552, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

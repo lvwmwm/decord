@@ -1,26 +1,26 @@
-// Module ID: 13200
-// Function ID: 13201
+// Module ID: 13236
+// Function ID: 13237
 // Name: InAppReportsGuildDiscoveryPreviewElement
-// Dependencies: [19, 17, 4750, 21, 4758, 580, 558, 568, 7222, 504, 4608, 1119, 4754, 2059, 5799, 2]
+// Dependencies: [19, 17, 4782, 21, 4790, 580, 558, 568, 7254, 504, 4640, 1119, 4786, 2059, 5831, 2]
 
-// Module 13200 (InAppReportsGuildDiscoveryPreviewElement)
+// Module 13236 (InAppReportsGuildDiscoveryPreviewElement)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
-import ColorUtils from "ColorUtils" /* 4608 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import GuildIconDefault from "GuildIcon" /* 5799 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7222 */;
+import ColorUtils from "ColorUtils" /* 4640 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import GuildIconDefault from "GuildIcon" /* 5831 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7254 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, borderColor: { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY }, title: { textTransform: "uppercase", lineHeight: 16, marginBottom: 8 }, itemContainer: null, guildInfo: null, guildName: null, guildIcon: null };
 let obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj2.itemContainer = { minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 8 };
@@ -53,11 +53,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   }
   const stateFromStores = initialize.useStateFromStores(tmp6, tmp7);
   if (cResult[2] !== tmp4.borderColor.color) {
-    const hexWithOpacityResult = tmp(4608).hexWithOpacity(tmp4.borderColor.color, 0.08);
+    const hexWithOpacityResult = tmp(4640).hexWithOpacity(tmp4.borderColor.color, 0.08);
     cResult[2] = tmp4.borderColor.color;
     cResult[3] = hexWithOpacityResult;
     let tmp10 = hexWithOpacityResult;
-    const tmpResult3 = tmp(4608);
+    const tmpResult3 = tmp(4640);
   } else {
     tmp10 = cResult[3];
   }
@@ -155,7 +155,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               tmp31 = tmp34;
             }
             const obj7 = { style: tmp4.guildName, variant: "text-sm/medium", color: "text-default", children: guild.name };
-            const tmp30 = hasOwnProperty(tmp(4754).Text, obj7);
+            const tmp30 = hasOwnProperty(tmp(4786).Text, obj7);
             cResult[22] = guild.name;
             cResult[23] = tmp4.guildName;
             cResult[24] = tmp30;
@@ -177,7 +177,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       tmp20 = items3;
     }
     const obj9 = { style: tmp13, accessibilityRole: "header", variant: typeConsolidationEyebrow.variant, children: tmp14 };
-    const tmp18 = hasOwnProperty(tmp(4754).Text, obj9);
+    const tmp18 = hasOwnProperty(tmp(4786).Text, obj9);
     cResult[8] = typeConsolidationEyebrow.variant;
     cResult[9] = tmp13;
     cResult[10] = tmp18;

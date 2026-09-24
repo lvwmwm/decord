@@ -1,13 +1,13 @@
-// Module ID: 6460
-// Function ID: 6461
+// Module ID: 6492
+// Function ID: 6493
 // Name: LightningIllocon
-// Dependencies: [21, 558, 568, 6461, 5802, 2]
+// Dependencies: [21, 558, 568, 6493, 5834, 2]
 
-// Module 6460 (LightningIllocon)
+// Module 6492 (LightningIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6461 from "module_6461" /* 6461 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6493 from "module_6493" /* 6493 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const LightningIllocon = ReactCompilerGating.isReactCompilerEnabled() ? (
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6461 };
+    const obj2 = { uri: _modDef6493 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const LightningIllocon = ReactCompilerGating.isReactCompilerEnabled() ? (
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6461 };
+  const obj2 = { uri: _modDef6493 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

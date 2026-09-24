@@ -1,15 +1,15 @@
-// Module ID: 11912
-// Function ID: 11913
+// Module ID: 11948
+// Function ID: 11949
 // Name: OrbsRewardBackground
-// Dependencies: [32, 19, 4750, 1983, 21, 558, 568, 504, 1098, 11913, 5802, 8583, 11914, 2]
+// Dependencies: [32, 19, 4782, 1983, 21, 558, 568, 504, 1098, 11949, 5834, 8615, 11950, 2]
 
-// Module 11912 (OrbsRewardBackground)
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef11913 from "module_11913" /* 11913 */;
-import _modDef11914 from "module_11914" /* 11914 */;
+// Module 11948 (OrbsRewardBackground)
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef11949 from "module_11949" /* 11949 */;
+import _modDef11950 from "module_11950" /* 11950 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import AppStateStore from "AppStateStore" /* 1983 */;
 
 const require = fn;
@@ -115,7 +115,7 @@ export const OrbsRewardBackground = ReactCompilerGating.isReactCompilerEnabled()
           return closure_2(true);
         }
       }
-      tmp20[0] = _modDef11913;
+      tmp20[0] = _modDef11949;
       cResult[10] = tmp20;
       const tmp19 = tmp20;
     } else {
@@ -165,11 +165,11 @@ export const OrbsRewardBackground = ReactCompilerGating.isReactCompilerEnabled()
         }
       }
       const obj3 = { source: null, style: null, resizeMode: "cover", onLoad: null, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
-      const obj5 = { uri: _modDef11914 };
+      const obj5 = { uri: _modDef11950 };
       obj3.source = obj5;
       obj3.style = style;
       obj3.onLoad = tmp16;
-      tmp27 = closure_7(tmp(8583).VideoComponent, obj3);
+      tmp27 = closure_7(tmp(8615).VideoComponent, obj3);
     }
     cResult[13] = tmp25;
     cResult[14] = stateFromStores;
@@ -237,7 +237,7 @@ export const OrbsRewardBackground = ReactCompilerGating.isReactCompilerEnabled()
   const tmp13 = closure_8;
   const tmp14 = closure_7;
   const tmp7 = _slicedToArray(noop.useState(false), 2);
-  obj5.uri = _modDef11913;
+  obj5.uri = _modDef11949;
   obj4.source = obj5;
   obj4.style = style;
   obj4.onLoad = callback;
@@ -248,11 +248,11 @@ export const OrbsRewardBackground = ReactCompilerGating.isReactCompilerEnabled()
   }
   if (tmp14Result) {
     const obj6 = { source: null, style: null, resizeMode: "cover", onLoad: null, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
-    const obj7 = { uri: _modDef11914 };
+    const obj7 = { uri: _modDef11950 };
     obj6.source = obj7;
     obj6.style = style;
     obj6.onLoad = callback1;
-    tmp14Result = tmp14(tmp(8583).VideoComponent, obj6);
+    tmp14Result = tmp14(tmp(8615).VideoComponent, obj6);
   }
   children[1] = tmp14Result;
   return tmp13(noop.Fragment, { children });

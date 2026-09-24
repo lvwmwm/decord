@@ -1,9 +1,9 @@
-// Module ID: 17401
-// Function ID: 17402
+// Module ID: 17411
+// Function ID: 17412
 // Name: RobloxConnectionCoachmark
-// Dependencies: [32, 19, 17, 5500, 1376, 13984, 1078, 2042, 21, 4758, 580, 558, 568, 4471, 1616, 4725, 9339, 7626, 7396, 7444, 5186, 1119, 4754, 13252, 5188, 7397, 4469, 5502, 1401, 1181, 8733, 504, 13985, 5625, 4579, 2031, 2]
+// Dependencies: [32, 19, 17, 5532, 1376, 14020, 1078, 2042, 21, 4790, 580, 558, 568, 4503, 1616, 4757, 9371, 7658, 7428, 7476, 5218, 1119, 4786, 13288, 5220, 7429, 4501, 5534, 1401, 1181, 8765, 504, 14021, 5657, 4611, 2031, 2]
 
-// Module 17401 (RobloxConnectionCoachmark)
+// Module 17411 (RobloxConnectionCoachmark)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -11,19 +11,19 @@ import native from "native" /* 1181 */;
 import AvatarUtils from "AvatarUtils" /* 1401 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
-import themes from "themes" /* 4469 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4579 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import PlatformsDefault from "Platforms" /* 5502 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5625 */;
-import openUserSettings from "openUserSettings" /* 7626 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9339 */;
+import themes from "themes" /* 4501 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4611 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import PlatformsDefault from "Platforms" /* 5534 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5657 */;
+import openUserSettings from "openUserSettings" /* 7658 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9371 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5532 */;
 import UserStore from "UserStore" /* 1376 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13984 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14020 */;
 
 const inlineStylesDefault = inlineStyles;
 
@@ -34,7 +34,7 @@ const Constants = fn(1078);
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { robloxIconContainer: null, content: null, text: null, avatarContainer: null, avatarInnerBorder: null };
 let size = { width: 40, height: 40, borderRadius: nativeDefault.radii.md, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 obj2.robloxIconContainer = size;
@@ -52,11 +52,11 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
   theme = theme.theme;
   const tmp4 = closure_15();
   if (cResult[0] !== theme) {
-    const isThemeDarkResult = tmp(4469).isThemeDark(theme);
+    const isThemeDarkResult = tmp(4501).isThemeDark(theme);
     cResult[0] = theme;
     cResult[1] = isThemeDarkResult;
     let tmp5 = isThemeDarkResult;
-    const tmpResult = tmp(4469);
+    const tmpResult = tmp(4501);
   } else {
     tmp5 = cResult[1];
   }
@@ -139,7 +139,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
   }
   const id = noop.useId();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = __initData2(tmp(8733).Path, { fill: "url(#a)", d: "M1.7002 0.799805C2.36285 0.79991 2.90039 1.33732 2.90039 2C2.90029 2.66259 2.36278 3.20009 1.7002 3.2002C1.03752 3.2002 0.500106 2.66265 0.5 2C0.5 1.33726 1.03745 0.799805 1.7002 0.799805ZM8.90039 0.799805C9.56297 0.799989 10.0996 1.33737 10.0996 2C10.0995 2.66254 9.56291 3.20001 8.90039 3.2002C8.23771 3.2002 7.70029 2.66266 7.7002 2C7.7002 1.33726 8.23765 0.799805 8.90039 0.799805ZM16.0996 0.799805C16.7624 0.799805 17.2998 1.33726 17.2998 2C17.2997 2.66266 16.7623 3.2002 16.0996 3.2002C15.4371 3.19996 14.9005 2.66251 14.9004 2C14.9004 1.3374 15.4371 0.800042 16.0996 0.799805ZM23.2998 0.799805C23.9625 0.799805 24.5 1.33726 24.5 2C24.4999 2.66266 23.9625 3.2002 23.2998 3.2002C22.6372 3.20006 22.0997 2.66258 22.0996 2C22.0996 1.33734 22.6372 0.799936 23.2998 0.799805Z" });
+    const tmp7 = __initData2(tmp(8765).Path, { fill: "url(#a)", d: "M1.7002 0.799805C2.36285 0.79991 2.90039 1.33732 2.90039 2C2.90029 2.66259 2.36278 3.20009 1.7002 3.2002C1.03752 3.2002 0.500106 2.66265 0.5 2C0.5 1.33726 1.03745 0.799805 1.7002 0.799805ZM8.90039 0.799805C9.56297 0.799989 10.0996 1.33737 10.0996 2C10.0995 2.66254 9.56291 3.20001 8.90039 3.2002C8.23771 3.2002 7.70029 2.66266 7.7002 2C7.7002 1.33726 8.23765 0.799805 8.90039 0.799805ZM16.0996 0.799805C16.7624 0.799805 17.2998 1.33726 17.2998 2C17.2997 2.66266 16.7623 3.2002 16.0996 3.2002C15.4371 3.19996 14.9005 2.66251 14.9004 2C14.9004 1.3374 15.4371 0.800042 16.0996 0.799805ZM23.2998 0.799805C23.9625 0.799805 24.5 1.33726 24.5 2C24.4999 2.66266 23.9625 3.2002 23.2998 3.2002C22.6372 3.20006 22.0997 2.66258 22.0996 2C22.0996 1.33734 22.6372 0.799936 23.2998 0.799805Z" });
     cResult[0] = tmp7;
     let first = tmp7;
   } else {
@@ -149,12 +149,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
     const obj3 = { children: null };
     const obj4 = { id: "a", x1: 0.5, y1: 2, x2: 24.5, y2: 2, gradientUnits: "userSpaceOnUse", children: null };
     const obj5 = { stopColor: str, stopOpacity: 0.3 };
-    const items = [__initData2(tmp(8733).Stop, obj5), ];
+    const items = [__initData2(tmp(8765).Stop, obj5), ];
     const obj6 = { offset: 1, stopColor: str, stopOpacity: 0.7 };
-    items[1] = __initData2(tmp(8733).Stop, obj6);
+    items[1] = __initData2(tmp(8765).Stop, obj6);
     obj4.children = items;
-    obj3.children = state(tmp(8733).LinearGradient, obj4);
-    const tmp11 = __initData2(tmp(8733).Defs, obj3);
+    obj3.children = state(tmp(8765).LinearGradient, obj4);
+    const tmp11 = __initData2(tmp(8765).Defs, obj3);
     cResult[1] = str;
     cResult[2] = tmp11;
     let tmp8 = tmp11;
@@ -263,7 +263,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   markAsDismissed = markAsDismissed.markAsDismissed;
   const tmp4 = closure_15();
   let obj = markAsDismissed(568);
-  const theme = markAsDismissed(4471).useThemeContext().theme;
+  const theme = markAsDismissed(4503).useThemeContext().theme;
   const bottom = useSafeAreaInsetsDefault().bottom;
   if (cResult[0] !== markAsDismissed) {
     const fn = function n() {
@@ -322,8 +322,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
     }
     const obj3 = { title: null, leading: null };
     const obj4 = { onPress: tmp7 };
-    obj3.leading = closure_13(tmp(7444).ActionSheetCloseButton, obj4);
-    const tmp9 = closure_13(tmp(7396).BottomSheetTitleHeader, obj3);
+    obj3.leading = closure_13(tmp(7476).ActionSheetCloseButton, obj4);
+    const tmp9 = closure_13(tmp(7428).BottomSheetTitleHeader, obj3);
     cResult[4] = tmp7;
     cResult[5] = tmp9;
   } else {
@@ -438,7 +438,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
         }
       }
       const obj7 = { variant: "heading-xl/bold", style: tmp4.text, children: tmp24 };
-      const tmp27 = closure_13(tmp(4754).Text, obj7);
+      const tmp27 = closure_13(tmp(4786).Text, obj7);
       cResult[18] = tmp4.text;
       cResult[19] = tmp27;
     } else {
@@ -472,7 +472,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
         }
       }
       const obj9 = { variant: "text-md/medium", style: tmp4.text, children: tmp28 };
-      const tmp31 = closure_13(tmp(4754).Text, obj9);
+      const tmp31 = closure_13(tmp(4786).Text, obj9);
       cResult[21] = tmp4.text;
       cResult[22] = tmp31;
     } else {
@@ -497,7 +497,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
         }
         const stringResult2 = obj13.string(tmp(1119).t.ItuabN);
         const obj11 = { size: "sm", color: nativeDefault.colors.WHITE };
-        const tmp39 = closure_13(tmp(13252).WindowLaunchIcon, obj11);
+        const tmp39 = closure_13(tmp(13288).WindowLaunchIcon, obj11);
         cResult[26] = stringResult2;
         cResult[27] = tmp39;
         let tmp36 = tmp39;
@@ -517,7 +517,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
           }
         }
         const obj12 = { text: tmp35, icon: tmp36, iconPosition: "end", size: "lg", onPress: tmp6 };
-        const tmp41 = closure_13(tmp(5188).Button, obj12);
+        const tmp41 = closure_13(tmp(5220).Button, obj12);
         cResult[28] = tmp6;
         cResult[29] = tmp41;
       } else {
@@ -551,7 +551,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
           }
         }
         const obj14 = { text: tmp42, variant: "secondary", size: "lg", onPress: tmp7 };
-        const tmp45 = closure_13(tmp(5188).Button, obj14);
+        const tmp45 = closure_13(tmp(5220).Button, obj14);
         cResult[31] = tmp7;
         cResult[32] = tmp45;
       } else {
@@ -577,7 +577,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
         const obj15 = { spacing: 24, style: tmp11, children: null };
         const items = [tmp22, tmp32, tmp46];
         obj15.children = items;
-        const tmp51 = closure_14(tmp(5186).Stack, obj15);
+        const tmp51 = closure_14(tmp(5218).Stack, obj15);
         cResult[36] = tmp22;
         cResult[37] = tmp32;
         cResult[38] = tmp46;
@@ -587,7 +587,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
       const obj17 = { children: null };
       const items1 = [tmp40, tmp44];
       obj17.children = items1;
-      const tmp48 = closure_14(tmp(5186).Stack, obj17);
+      const tmp48 = closure_14(tmp(5218).Stack, obj17);
       cResult[33] = tmp40;
       cResult[34] = tmp44;
       cResult[35] = tmp48;
@@ -595,7 +595,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
     const obj18 = { justify: "center", children: null };
     const items2 = [tmp26, tmp30];
     obj18.children = items2;
-    const tmp34 = closure_14(tmp(5186).Stack, obj18);
+    const tmp34 = closure_14(tmp(5218).Stack, obj18);
     cResult[23] = tmp26;
     cResult[24] = tmp30;
     cResult[25] = tmp34;
@@ -603,7 +603,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   const obj19 = { justify: "center", align: "center", direction: "horizontal", children: null };
   const items3 = [tmp13, tmp14, tmp19];
   obj19.children = items3;
-  const tmp23 = closure_14(markAsDismissed(5186).Stack, obj19);
+  const tmp23 = closure_14(markAsDismissed(5218).Stack, obj19);
   cResult[14] = tmp13;
   cResult[15] = tmp14;
   cResult[16] = tmp23;
@@ -616,10 +616,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
     }
   }
   let tmp = closure_15();
-  const theme = markAsDismissed(4471).useThemeContext().theme;
+  const theme = markAsDismissed(4503).useThemeContext().theme;
   let obj2 = { startExpanded: true, contentStyles: tmp.content, header: null, onDismiss: null, children: null };
-  let obj = markAsDismissed(4471);
-  obj2.header = closure_13(markAsDismissed(7396).BottomSheetTitleHeader, { title: null, leading: closure_13(markAsDismissed(7444).ActionSheetCloseButton, { onPress: handleCancel }) });
+  let obj = markAsDismissed(4503);
+  obj2.header = closure_13(markAsDismissed(7428).BottomSheetTitleHeader, { title: null, leading: closure_13(markAsDismissed(7476).ActionSheetCloseButton, { onPress: handleCancel }) });
   obj2.onDismiss = function onDismiss() {
     return markAsDismissed(ContentDismissActionType.DISMISS);
   };
@@ -627,24 +627,24 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   const obj5 = { justify: "center", align: "center", direction: "horizontal", children: null };
   const items = [closure_13(closure_16, { theme }), closure_13(closure_17, { theme }), closure_13(closure_18, {})];
   obj5.children = items;
-  const items1 = [closure_14(markAsDismissed(5186).Stack, obj5), , ];
+  const items1 = [closure_14(markAsDismissed(5218).Stack, obj5), , ];
   const obj6 = { justify: "center", children: null };
   const obj7 = { variant: "heading-xl/bold", style: tmp.text, children: null };
   const intl = markAsDismissed(1119).intl;
   obj7.children = intl.string(markAsDismissed(1119).t.t3asUZ);
-  const items2 = [closure_13(markAsDismissed(4754).Text, obj7), ];
+  const items2 = [closure_13(markAsDismissed(4786).Text, obj7), ];
   const obj8 = { variant: "text-md/medium", style: tmp.text, children: null };
   const intl2 = markAsDismissed(1119).intl;
   obj8.children = intl2.string(markAsDismissed(1119).t.no96NU);
-  items2[1] = closure_13(markAsDismissed(4754).Text, obj8);
+  items2[1] = closure_13(markAsDismissed(4786).Text, obj8);
   obj6.children = items2;
-  items1[1] = closure_14(markAsDismissed(5186).Stack, obj6);
+  items1[1] = closure_14(markAsDismissed(5218).Stack, obj6);
   const obj9 = { children: null };
   const obj10 = { text: null, icon: null, iconPosition: "end", size: "lg", onPress: null };
   const intl3 = markAsDismissed(1119).intl;
   obj10.text = intl3.string(markAsDismissed(1119).t.ItuabN);
-  const obj3 = { title: null, leading: closure_13(markAsDismissed(7444).ActionSheetCloseButton, { onPress: handleCancel }) };
-  obj10.icon = closure_13(markAsDismissed(13252).WindowLaunchIcon, { size: "sm", color: nativeDefault.colors.WHITE });
+  const obj3 = { title: null, leading: closure_13(markAsDismissed(7476).ActionSheetCloseButton, { onPress: handleCancel }) };
+  obj10.icon = closure_13(markAsDismissed(13288).WindowLaunchIcon, { size: "sm", color: nativeDefault.colors.WHITE });
   obj10.onPress = function onPress() {
     ActionSheetActionCreatorsDefault.hideActionSheet();
     if (markAsDismissed != null) {
@@ -654,17 +654,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
     const obj2 = { platformType: constants2.ROBLOX, location: constants.ROBLOX_CONNECTION_ACTION_SHEET };
     openUserSettings.openUserSettings({ screen: constants3.CONNECTIONS });
   };
-  const items3 = [closure_13(markAsDismissed(5188).Button, obj10), ];
+  const items3 = [closure_13(markAsDismissed(5220).Button, obj10), ];
   const obj12 = { text: null, variant: "secondary", size: "lg", onPress: null };
   const intl4 = markAsDismissed(1119).intl;
   obj12.text = intl4.string(markAsDismissed(1119).t.DiGJy3);
   obj12.onPress = handleCancel;
-  items3[1] = closure_13(markAsDismissed(5188).Button, obj12);
+  items3[1] = closure_13(markAsDismissed(5220).Button, obj12);
   obj9.children = items3;
-  items1[2] = closure_14(markAsDismissed(5186).Stack, obj9);
+  items1[2] = closure_14(markAsDismissed(5218).Stack, obj9);
   obj4.children = items1;
-  obj2.children = closure_14(markAsDismissed(5186).Stack, obj4);
-  return closure_13(markAsDismissed(7397).BottomSheet, obj2);
+  obj2.children = closure_14(markAsDismissed(5218).Stack, obj4);
+  return closure_13(markAsDismissed(7429).BottomSheet, obj2);
 });
 size = fn(2);
 let result = size.fileFinishedImporting("modules/local_app_detection/native/RobloxConnectionCoachmark.tsx");
@@ -676,7 +676,7 @@ export const useShouldShowRobloxConnectionCoachmark = ReactCompilerGating.isReac
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [LocalAppDetectionStore];
     const fn = function c() {
-      return appInstalled.isAppInstalled(stateFromStores(13985).DetectableAppNames.ROBLOX);
+      return appInstalled.isAppInstalled(stateFromStores(14021).DetectableAppNames.ROBLOX);
     };
     cResult[0] = items;
     cResult[1] = fn;
@@ -774,7 +774,7 @@ export const useShouldShowRobloxConnectionCoachmark = ReactCompilerGating.isReac
   tmp14 = fn2;
 }) : (() => {
   const items = [LocalAppDetectionStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => appInstalled.isAppInstalled(stateFromStores(13985).DetectableAppNames.ROBLOX));
+  stateFromStores = stateFromStores(504).useStateFromStores(items, () => appInstalled.isAppInstalled(stateFromStores(14021).DetectableAppNames.ROBLOX));
   const tmp2 = hasRoloxAccount(noop.useState(false), 2);
   const first = tmp2[0];
   dependencyMap = tmp2[1];

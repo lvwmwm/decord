@@ -1,15 +1,15 @@
-// Module ID: 16110
-// Function ID: 16111
+// Module ID: 16120
+// Function ID: 16121
 // Name: UserSettingsDesignSystemAIShimmer
-// Dependencies: [32, 19, 17, 21, 4758, 558, 568, 5188, 4754, 14410, 5824, 5186, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 558, 568, 5220, 4786, 14448, 5856, 5218, 2]
 
-// Module 16110 (UserSettingsDesignSystemAIShimmer)
+// Module 16120 (UserSettingsDesignSystemAIShimmer)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import Card from "Card" /* 5824 */;
-import AIShimmer from "AIShimmer" /* 14410 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import Card from "Card" /* 5856 */;
+import AIShimmer from "AIShimmer" /* 14448 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ container: { padding: 16 }, buttonRow: { flexDirection: "row", flexWrap: "wrap", gap: 8 }, stage: { minHeight: 28, justifyContent: "center" } });
 const text = ["Reading the channel", "Finding the highlights", "Writing it up"];
 const options = ["text-xs/normal", "text-sm/normal", "text-md/normal", "text-lg/semibold"];
@@ -130,8 +130,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp10 = _slicedToArray(noop.useState("text-subtle"), 2);
   const first2 = tmp10[0];
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp15 = timestampProducer(tmp(4754).Text, { variant: "text-lg/bold", children: "Variant" });
-    const tmp16 = timestampProducer(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "Any Mana text variant. The glyph band scales with the font size. Default `text-md/normal`." });
+    const tmp15 = timestampProducer(tmp(4786).Text, { variant: "text-lg/bold", children: "Variant" });
+    const tmp16 = timestampProducer(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "Any Mana text variant. The glyph band scales with the font size. Default `text-md/normal`." });
     cResult[0] = tmp15;
     cResult[1] = tmp16;
     tmp12 = tmp15;
@@ -151,7 +151,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[4] !== first) {
     const obj3 = { children: null };
     const obj4 = { text, variant: first };
-    obj3.children = timestampProducer(tmp(14410).AIShimmer, obj4);
+    obj3.children = timestampProducer(tmp(14448).AIShimmer, obj4);
     const tmp26 = timestampProducer(closure_13, obj3);
     cResult[4] = first;
     cResult[5] = tmp26;
@@ -165,9 +165,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp33 = timestampProducer(tmp(4754).Text, { variant: "text-lg/bold", children: "Colors" });
-      const tmp34 = timestampProducer(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "The text and moving glyph band can use different colors." });
-      const tmp35 = timestampProducer(tmp(4754).Text, { variant: "text-md/medium", children: "Text color" });
+      const tmp33 = timestampProducer(tmp(4786).Text, { variant: "text-lg/bold", children: "Colors" });
+      const tmp34 = timestampProducer(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "The text and moving glyph band can use different colors." });
+      const tmp35 = timestampProducer(tmp(4786).Text, { variant: "text-md/medium", children: "Text color" });
       cResult[9] = tmp33;
       cResult[10] = tmp34;
       cResult[11] = tmp35;
@@ -190,7 +190,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const _Symbol2 = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp43 = timestampProducer(tmp(4754).Text, { variant: "text-md/medium", children: "Glyph color" });
+      const tmp43 = timestampProducer(tmp(4786).Text, { variant: "text-md/medium", children: "Glyph color" });
       cResult[14] = tmp43;
       let tmp41 = tmp43;
     } else {
@@ -216,9 +216,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           const _Symbol3 = Symbol;
           if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp61 = timestampProducer(tmp(4754).Text, { variant: "text-lg/bold", children: "Manual Trigger" });
+            const tmp61 = timestampProducer(tmp(4786).Text, { variant: "text-lg/bold", children: "Manual Trigger" });
             const obj7 = { variant: "text-md/medium", color: "text-subtle", children: ["`delay=", null, "` turns off automatic changes. Use play() to run the next animation."] };
-            const tmp63 = React5(tmp(4754).Text, obj7);
+            const tmp63 = React5(tmp(4786).Text, obj7);
             cResult[24] = tmp61;
             cResult[25] = tmp63;
             let tmp59 = tmp63;
@@ -242,7 +242,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                           return playResult;
                         }
             };
-            const tmp66 = timestampProducer(tmp(5188).Button, obj8);
+            const tmp66 = timestampProducer(tmp(5220).Button, obj8);
             cResult[26] = tmp66;
             let tmp64 = tmp66;
           } else {
@@ -263,7 +263,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                           return stopResult;
                         }
             };
-            const tmp69 = timestampProducer(tmp(5188).Button, obj9);
+            const tmp69 = timestampProducer(tmp(5220).Button, obj9);
             cResult[27] = tmp69;
             let tmp67 = tmp69;
           } else {
@@ -284,7 +284,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
             const obj11 = { children: null };
             const obj12 = { ref, text, delay: null };
-            obj11.children = timestampProducer(tmp(14410).AIShimmer, obj12);
+            obj11.children = timestampProducer(tmp(14448).AIShimmer, obj12);
             const tmp78 = timestampProducer(closure_13, obj11);
             cResult[30] = tmp78;
             let tmp74 = tmp78;
@@ -296,8 +296,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const obj14 = { children: null };
             const items1 = [tmp58, tmp59, tmp70, tmp74];
             obj14.children = items1;
-            obj13.children = React5(tmp(5186).Stack, obj14);
-            const tmp82 = timestampProducer(tmp(5824).Card, obj13);
+            obj13.children = React5(tmp(5218).Stack, obj14);
+            const tmp82 = timestampProducer(tmp(5856).Card, obj13);
             cResult[31] = tmp70;
             cResult[32] = tmp82;
             let tmp79 = tmp82;
@@ -326,7 +326,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj16 = { spacing: 24, children: null };
           const items2 = [tmp27, tmp54, tmp79];
           obj16.children = items2;
-          const tmp85 = React5(tmp(5186).Stack, obj16);
+          const tmp85 = React5(tmp(5218).Stack, obj16);
           cResult[33] = tmp54;
           cResult[34] = tmp79;
           cResult[35] = tmp27;
@@ -338,8 +338,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj18 = { children: null };
       const items3 = [tmp29, tmp30, tmp31, tmp36, tmp41, tmp44, tmp49];
       obj18.children = items3;
-      obj17.children = React5(tmp(5186).Stack, obj18);
-      const tmp57 = timestampProducer(tmp(5824).Card, obj17);
+      obj17.children = React5(tmp(5218).Stack, obj18);
+      const tmp57 = timestampProducer(tmp(5856).Card, obj17);
       cResult[20] = tmp44;
       cResult[21] = tmp49;
       cResult[22] = tmp36;
@@ -348,7 +348,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const obj19 = { children: null };
     const obj20 = { text, color: first1, glyphColor: first2 };
-    obj19.children = timestampProducer(tmp(14410).AIShimmer, obj20);
+    obj19.children = timestampProducer(tmp(14448).AIShimmer, obj20);
     const tmp53 = timestampProducer(closure_13, obj19);
     cResult[17] = first1;
     cResult[18] = first2;

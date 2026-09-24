@@ -1,19 +1,19 @@
-// Module ID: 17530
-// Function ID: 17531
+// Module ID: 17540
+// Function ID: 17541
 // Name: VoicePanelSettingsActionSheet
-// Dependencies: [19, 21, 4758, 558, 568, 17531, 7397, 6863, 7371, 2]
+// Dependencies: [19, 21, 4790, 558, 568, 17541, 7429, 6895, 7403, 2]
 
-// Module 17530 (VoicePanelSettingsActionSheet)
+// Module 17540 (VoicePanelSettingsActionSheet)
 import c from "c" /* 568 */;
-import BottomSheetModal from "BottomSheetModal" /* 6863 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import VoicePanelSettingsOverviewDefault from "VoicePanelSettingsOverview" /* 17531 */;
+import BottomSheetModal from "BottomSheetModal" /* 6895 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import VoicePanelSettingsOverviewDefault from "VoicePanelSettingsOverview" /* 17541 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ wrapper: { gap: 24 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -36,9 +36,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     const obj2 = { startExpanded: true, scrollable: true, children: null };
     const obj3 = { children: null };
     const obj4 = { bottom: true, style: tmp4.wrapper, children: tmp5 };
-    obj3.children = jsx(tmp(7371).SafeAreaPaddingView, { bottom: true, style: tmp4.wrapper, children: tmp5 });
-    obj2.children = jsx(tmp(6863).BottomSheetScrollView, { children: null });
-    const tmp9 = jsx(tmp(7397).BottomSheet, { startExpanded: true, scrollable: true, children: null });
+    obj3.children = jsx(tmp(7403).SafeAreaPaddingView, { bottom: true, style: tmp4.wrapper, children: tmp5 });
+    obj2.children = jsx(tmp(6895).BottomSheetScrollView, { children: null });
+    const tmp9 = jsx(tmp(7429).BottomSheet, { startExpanded: true, scrollable: true, children: null });
     cResult[3] = tmp4.wrapper;
     cResult[4] = tmp5;
     cResult[5] = tmp9;

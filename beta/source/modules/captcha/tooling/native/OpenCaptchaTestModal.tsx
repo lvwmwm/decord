@@ -1,11 +1,11 @@
-// Module ID: 15985
-// Function ID: 15986
+// Module ID: 15995
+// Function ID: 15996
 // Name: OpenCaptchaTestModal
-// Dependencies: [5, 19, 21, 4961, 15986, 1984, 2]
+// Dependencies: [5, 19, 21, 4993, 15996, 1984, 2]
 // Exports: showCaptchaTestModal
 
-// Module 15985 (OpenCaptchaTestModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
+// Module 15995 (OpenCaptchaTestModal)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 

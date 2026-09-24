@@ -1,13 +1,13 @@
-// Module ID: 11792
-// Function ID: 11793
+// Module ID: 11828
+// Function ID: 11829
 // Name: PublishModal
-// Dependencies: [32, 19, 17, 21, 4758, 5660, 558, 568, 11793, 1181, 1119, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 5692, 558, 568, 11829, 1181, 1119, 2]
 
-// Module 11792 (PublishModal)
+// Module 11828 (PublishModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 11793 */;
+import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 11829 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -15,11 +15,11 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ActivityIndicator: hasOwnProperty } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
-let obj2 = { alertContainer: { paddingTop: 16 }, alertLoading: { paddingTop: 62, paddingBottom: 46 }, alertBodyText: { marginBottom: 16, fontSize: 16, lineHeight: 24, color: fn(5660).DARK_PRIMARY_300_LIGHT_PRIMARY_400 } };
+const createStyles = fn(4790);
+let obj2 = { alertContainer: { paddingTop: 16 }, alertLoading: { paddingTop: 62, paddingBottom: 46 }, alertBodyText: { marginBottom: 16, fontSize: 16, lineHeight: 24, color: fn(5692).DARK_PRIMARY_300_LIGHT_PRIMARY_400 } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
-let obj3 = { marginBottom: 16, fontSize: 16, lineHeight: 24, color: fn(5660).DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
+let obj3 = { marginBottom: 16, fontSize: 16, lineHeight: 24, color: fn(5692).DARK_PRIMARY_300_LIGHT_PRIMARY_400 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/action_sheet/native/components/PublishModal.tsx");
 

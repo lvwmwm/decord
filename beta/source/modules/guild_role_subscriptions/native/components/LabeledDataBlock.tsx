@@ -1,20 +1,20 @@
-// Module ID: 15479
-// Function ID: 15480
+// Module ID: 15489
+// Function ID: 15490
 // Name: LabeledDataBlock
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 5743, 558, 568, 4754, 5341, 1181, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 5775, 558, 568, 4786, 5373, 1181, 2]
 
-// Module 15479 (LabeledDataBlock)
+// Module 15489 (LabeledDataBlock)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5743 */;
+import TextStyles from "TextStyles" /* 5775 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderRadius: nativeDefault.radii.sm, flexBasis: "auto", flexGrow: 1, padding: 16 }, title: { marginRight: 4 }, data: null, titleSection: null };
 const merged = Object.assign(TextStyles(fn(1078).Fonts.PRIMARY_MEDIUM, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 obj2.data = {};
@@ -95,7 +95,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj5 = { accessibilityRole: "button", onPress: onPressIcon, children: null };
         const obj6 = { size: tmp(1181).Icon.Sizes.SMALL, source: icon };
         obj5.children = React3(tmp(1181).Icon, obj6);
-        tmp11 = React3(tmp(5341).PressableOpacity, obj5);
+        tmp11 = React3(tmp(5373).PressableOpacity, obj5);
       }
       cResult[6] = icon;
       cResult[7] = onPressIcon;
@@ -103,7 +103,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp9 = tmp11;
     }
     const obj7 = { style: tmp4.title, accessibilityRole: "header", variant: "text-sm/medium", color: "interactive-text-default", children: title };
-    const tmp8 = React3(tmp(4754).Text, obj7);
+    const tmp8 = React3(tmp(4786).Text, obj7);
     cResult[3] = tmp4.title;
     cResult[4] = title;
     cResult[5] = tmp8;
@@ -128,7 +128,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj4 = { accessibilityRole: "button", onPress: onPressIcon, children: null };
     const obj5 = { size: tmp5(1181).Icon.Sizes.SMALL, source: icon };
     obj4.children = tmp4(tmp5(1181).Icon, obj5);
-    tmp4Result = tmp4(tmp5(5341).PressableOpacity, obj4);
+    tmp4Result = tmp4(tmp5(5373).PressableOpacity, obj4);
   }
   items1[1] = tmp4Result;
   obj2.children = items1;

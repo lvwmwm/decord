@@ -1,19 +1,19 @@
-// Module ID: 14937
-// Function ID: 14938
+// Module ID: 14975
+// Function ID: 14976
 // Name: WebAuthnEditStep
-// Dependencies: [32, 19, 21, 4758, 580, 558, 568, 1488, 5839, 6836, 4458, 1119, 10950, 4717, 8876, 1181, 5188, 2]
+// Dependencies: [32, 19, 21, 4790, 580, 558, 568, 1488, 5871, 6868, 4490, 1119, 10986, 4749, 8908, 1181, 5220, 2]
 
-// Module 14937 (WebAuthnEditStep)
+// Module 14975 (WebAuthnEditStep)
 import nativeDefault from "native" /* 580 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6836 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6868 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { inputField: { marginBottom: nativeDefault.space.PX_16 }, form: null };
 let obj3 = { marginBottom: nativeDefault.space.PX_16 };
 obj2.form = { paddingHorizontal: nativeDefault.space.PX_16 };
@@ -80,7 +80,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
               }
               const _Symbol2 = Symbol;
               if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-                const tmp24 = closure_5(tmp(8876).FormDivider, {});
+                const tmp24 = closure_5(tmp(8908).FormDivider, {});
                 cResult[14] = tmp24;
                 let tmp22 = tmp24;
               } else {
@@ -115,7 +115,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
                   const obj4 = { style: form, children: null };
                   const items1 = [tmp19, tmp22, tmp28];
                   obj4.children = items1;
-                  const tmp33 = closure_6(tmp(8876).Form, obj4);
+                  const tmp33 = closure_6(tmp(8908).Form, obj4);
                   cResult[20] = tmp4.form;
                   cResult[21] = tmp28;
                   cResult[22] = tmp19;
@@ -124,7 +124,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
                 }
               }
               const obj5 = { onPress: tmp15, disabled: tmp25, loading: tmp7, size: "lg", text: tmp26, grow: true };
-              const tmp30 = closure_5(tmp(5188).Button, obj5);
+              const tmp30 = closure_5(tmp(5220).Button, obj5);
               cResult[16] = tmp7;
               cResult[17] = tmp15;
               cResult[18] = tmp25;
@@ -135,7 +135,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
         }
       }
       const obj6 = { showTopContainer: false, value, onChange: tmp8[1], style: inputField, error: tmp11, title: tmp17, placeholder: credential.name, disabled: tmp7, clearButtonVisibility: tmp(1181).ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
-      const tmp21 = closure_5(tmp(8876).FormInput, obj6);
+      const tmp21 = closure_5(tmp(8908).FormInput, obj6);
       cResult[8] = credential.name;
       cResult[9] = tmp11;
       cResult[10] = tmp7;
@@ -153,18 +153,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
       const obj2 = { key: "WEBAUTHN_CREDENTIAL_EDIT_SUCCESS_TOAST_KEY", content: null, icon: null, IconComponent: null, iconColor: "status-positive" };
       const intl = credential(1119).intl;
       obj2.content = intl.string(credential(1119).t.IV13mH);
-      obj2.icon = navigation(10950);
-      obj2.IconComponent = credential(4717).CircleCheckIcon;
-      navigation(4458).open(obj2);
+      obj2.icon = navigation(10986);
+      obj2.IconComponent = credential(4749).CircleCheckIcon;
+      navigation(4490).open(obj2);
       closure_1_1.popToTop();
     });
     result.then(() => {
       const obj2 = { key: "WEBAUTHN_CREDENTIAL_EDIT_SUCCESS_TOAST_KEY", content: null, icon: null, IconComponent: null, iconColor: "status-positive" };
       const intl = credential(1119).intl;
       obj2.content = intl.string(credential(1119).t.IV13mH);
-      obj2.icon = navigation(10950);
-      obj2.IconComponent = credential(4717).CircleCheckIcon;
-      navigation(4458).open(obj2);
+      obj2.icon = navigation(10986);
+      obj2.IconComponent = credential(4749).CircleCheckIcon;
+      navigation(4490).open(obj2);
       closure_1_1.popToTop();
     }).catch((error) => {
       closure_1_4(error.body.message);
@@ -206,7 +206,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
   obj3.placeholder = credential.name;
   obj3.disabled = tmp6;
   obj3.clearButtonVisibility = credential(1181).ClearButtonVisibility.WITH_CONTENT;
-  const items1 = [closure_5(credential(8876).FormInput, obj3), closure_5(credential(8876).FormDivider, {}), ];
+  const items1 = [closure_5(credential(8908).FormInput, obj3), closure_5(credential(8908).FormDivider, {}), ];
   const obj4 = {
     onPress() {
       _undefined(true);
@@ -216,18 +216,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
         const obj2 = { key: "WEBAUTHN_CREDENTIAL_EDIT_SUCCESS_TOAST_KEY", content: null, icon: null, IconComponent: null, iconColor: "status-positive" };
         const intl = credential(1119).intl;
         obj2.content = intl.string(credential(1119).t.IV13mH);
-        obj2.icon = navigation(10950);
-        obj2.IconComponent = credential(4717).CircleCheckIcon;
-        navigation(4458).open(obj2);
+        obj2.icon = navigation(10986);
+        obj2.IconComponent = credential(4749).CircleCheckIcon;
+        navigation(4490).open(obj2);
         closure_1_1.popToTop();
       });
       result.then(() => {
         const obj2 = { key: "WEBAUTHN_CREDENTIAL_EDIT_SUCCESS_TOAST_KEY", content: null, icon: null, IconComponent: null, iconColor: "status-positive" };
         const intl = credential(1119).intl;
         obj2.content = intl.string(credential(1119).t.IV13mH);
-        obj2.icon = navigation(10950);
-        obj2.IconComponent = credential(4717).CircleCheckIcon;
-        navigation(4458).open(obj2);
+        obj2.icon = navigation(10986);
+        obj2.IconComponent = credential(4749).CircleCheckIcon;
+        navigation(4490).open(obj2);
         closure_1_1.popToTop();
       }).catch((error) => {
         closure_1_4(error.body.message);
@@ -249,7 +249,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
   obj4.loading = tmp6;
   const intl2 = tmp2(1119).intl;
   obj4.text = intl2.string(credential(1119).t["7asiR3"]);
-  items1[2] = closure_5(credential(5188).Button, obj4);
+  items1[2] = closure_5(credential(5220).Button, obj4);
   obj2.children = items1;
-  return closure_6(credential(8876).Form, obj2);
+  return closure_6(credential(8908).Form, obj2);
 });

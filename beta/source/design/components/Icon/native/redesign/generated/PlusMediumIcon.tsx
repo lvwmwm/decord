@@ -1,13 +1,13 @@
-// Module ID: 12904
-// Function ID: 12905
+// Module ID: 12940
+// Function ID: 12941
 // Name: PlusMediumIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 12345, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 12381, 4493, 2]
 
-// Module 12904 (PlusMediumIcon)
+// Module 12940 (PlusMediumIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod12345 from "module_12345" /* 12345 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod12381 from "module_12381" /* 12381 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const PlusMediumIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(12345);
+    const tmpResult = tmp(12381);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const PlusMediumIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12345, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12381, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

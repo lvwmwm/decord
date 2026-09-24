@@ -1,10 +1,10 @@
-// Module ID: 7182
-// Function ID: 7183
+// Module ID: 7214
+// Function ID: 7215
 // Name: FreeFormErrorLabel
-// Dependencies: [19, 21, 558, 568, 4464, 4610, 4754, 2]
+// Dependencies: [19, 21, 558, 568, 4496, 4642, 4786, 2]
 
-// Module 7182 (FreeFormErrorLabel)
-import shared from "shared" /* 4610 */;
+// Module 7214 (FreeFormErrorLabel)
+import shared from "shared" /* 4642 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -19,11 +19,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = require("c").c(8);
   ({ children, style } = arg0);
   if (cResult[0] !== children) {
-    const nodeText = tmp(4464).getNodeText(children);
+    const nodeText = tmp(4496).getNodeText(children);
     cResult[0] = children;
     cResult[1] = nodeText;
     let tmp4 = nodeText;
-    const tmpResult = tmp(4464);
+    const tmpResult = tmp(4496);
   } else {
     tmp4 = cResult[1];
   }
@@ -64,7 +64,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 }) : ((style) => {
   const children = style.children;
   let nodeText;
-  nodeText = nodeText(4464).getNodeText(children);
+  nodeText = nodeText(4496).getNodeText(children);
   const items = [nodeText];
   const effect = noop.useEffect(() => {
     let tmp2 = null != nodeText;
@@ -76,5 +76,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       AccessibilityAnnouncer.announce(tmp);
     }
   }, items);
-  return jsx(nodeText(4754).Text, { style: style.style, variant: "text-xs/medium", color: "text-feedback-critical", children });
+  return jsx(nodeText(4786).Text, { style: style.style, variant: "text-xs/medium", color: "text-feedback-critical", children });
 });

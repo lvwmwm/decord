@@ -1,19 +1,19 @@
-// Module ID: 11179
-// Function ID: 11180
+// Module ID: 11215
+// Function ID: 11216
 // Name: AcceptRequestConfirmationModal
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 5110, 4754, 5207, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 5142, 4786, 5239, 2]
 
-// Module 11179 (AcceptRequestConfirmationModal)
+// Module 11215 (AcceptRequestConfirmationModal)
 import nativeDefault from "native" /* 580 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
-import common_AlertDefault from "common/Alert" /* 5207 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
+import common_AlertDefault from "common/Alert" /* 5239 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { bodyText: { textAlign: "center", alignItems: "center", gap: nativeDefault.space.PX_8 }, text: { textAlign: "center" } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj3 = { variant: "heading-lg/bold", color: "text-strong", style: text, children: tmp10 };
-    const tmp13 = closure_4(tmp(4754).Text, obj3);
+    const tmp13 = closure_4(tmp(4786).Text, obj3);
     cResult[5] = tmp4.text;
     cResult[6] = tmp13;
   } else {
@@ -134,7 +134,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj5 = { variant: "text-md/medium", color: "text-subtle", style: tmp4.text, children: tmp14 };
-    const tmp17 = closure_4(tmp(4754).Text, obj5);
+    const tmp17 = closure_4(tmp(4786).Text, obj5);
     cResult[8] = tmp4.text;
     cResult[9] = tmp17;
   } else {
@@ -182,11 +182,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj3 = { variant: "heading-lg/bold", color: "text-strong", style: tmp.text, children: null };
   const intl3 = onConfirm(1119).intl;
   obj3.children = intl3.string(onConfirm(1119).t.eJzSDT);
-  const items = [closure_4(onConfirm(4754).Text, obj3), ];
+  const items = [closure_4(onConfirm(4786).Text, obj3), ];
   const obj4 = { variant: "text-md/medium", color: "text-subtle", style: tmp.text, children: null };
   const intl4 = onConfirm(1119).intl;
   obj4.children = intl4.string(onConfirm(1119).t.GB4jUw);
-  items[1] = closure_4(onConfirm(4754).Text, obj4);
+  items[1] = closure_4(onConfirm(4786).Text, obj4);
   obj2.children = items;
   obj.children = closure_5(View, obj2);
   return closure_4(common_AlertDefault, obj);

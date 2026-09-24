@@ -1,19 +1,19 @@
-// Module ID: 11709
-// Function ID: 11710
+// Module ID: 11745
+// Function ID: 11746
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 2045, 4399, 4409, 1376, 11169, 1078, 21, 4758, 558, 568, 565, 9801, 7296, 11710, 11719, 11720, 1119, 10285, 10286, 4579, 2031, 11722, 11727, 7624, 11728, 1879, 10055, 8878, 2]
+// Dependencies: [32, 19, 17, 2045, 4431, 4441, 1376, 11205, 1078, 21, 4790, 558, 568, 565, 9833, 7328, 11746, 11755, 11756, 1119, 10324, 10325, 4611, 2031, 11758, 11763, 7656, 11764, 1879, 10094, 8910, 2]
 
-// Module 11709 (useMemberListAction)
+// Module 11745 (useMemberListAction)
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1879 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10055 */;
-import openGroupDMAddMembers from "openGroupDMAddMembers" /* 11710 */;
-import showChatGDMUpsellActionSheetDefault from "showChatGDMUpsellActionSheet" /* 11722 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11728 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10094 */;
+import openGroupDMAddMembers from "openGroupDMAddMembers" /* 11746 */;
+import showChatGDMUpsellActionSheetDefault from "showChatGDMUpsellActionSheet" /* 11758 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11764 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
@@ -24,11 +24,11 @@ const View = fn(17).View;
 const Constants = fn(1078);
 ({ Permissions: c10, AnalyticsSections: closure_11, InstantInviteSources: closure_12 } = Constants);
 const jsx = fn(21).jsx;
-let closure_14 = { listActionRenderer: "Array", listActionHeight: "Set" };
-const createStyles = fn(4758);
-let closure_15 = createStyles.createStyles({ wrapper: { paddingTop: fn(11169).USERS_LIST_PADDING_BETWEEN_SECTIONS } });
+let closure_14 = { listActionRenderer: "state", listActionHeight: "toCharArray$esjava$1" };
+const createStyles = fn(4790);
+let closure_15 = createStyles.createStyles({ wrapper: { paddingTop: fn(11205).USERS_LIST_PADDING_BETWEEN_SECTIONS } });
 const ReactCompilerGating = fn(558);
-let obj2 = { wrapper: { paddingTop: fn(11169).USERS_LIST_PADDING_BETWEEN_SECTIONS } };
+let obj2 = { wrapper: { paddingTop: fn(11205).USERS_LIST_PADDING_BETWEEN_SECTIONS } };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");
 
@@ -121,7 +121,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     if (channel != null) {
       id = channel.id;
     }
-    id(7296)();
+    id(7328)();
     [r10096, dependencyMap] = noop.useState(undefined);
     const _Symbol = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {

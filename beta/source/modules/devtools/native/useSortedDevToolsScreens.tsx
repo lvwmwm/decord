@@ -1,16 +1,16 @@
-// Module ID: 16047
-// Function ID: 16048
+// Module ID: 16057
+// Function ID: 16058
 // Name: useSortedDevToolsScreens
-// Dependencies: [32, 7960, 15847, 15843, 558, 568, 504, 2]
+// Dependencies: [32, 7992, 15857, 15853, 558, 568, 504, 2]
 // Exports: updateSortOrder
 
-// Module 16047 (useSortedDevToolsScreens)
+// Module 16057 (useSortedDevToolsScreens)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import DevToolsActionCreators from "DevToolsActionCreators" /* 15843 */;
-import DevToolsScreens from "DevToolsScreens" /* 15847 */;
+import DevToolsActionCreators from "DevToolsActionCreators" /* 15853 */;
+import DevToolsScreens from "DevToolsScreens" /* 15857 */;
 import _slicedToArray from "module_32" /* 32 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7960 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7992 */;
 
 require = fn;
 function getSortedDevToolsScreens() {
@@ -69,7 +69,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       sortedScreenKeys = DevToolsSettingsStore.sortedScreenKeys;
     }
     const _Object = Object;
-    const entries = Object.entries(tmp(15847).DevToolsScreens);
+    const entries = Object.entries(tmp(15857).DevToolsScreens);
     const found = entries.filter((item) => {
       [, obj] = item;
       return null == obj.predicate || obj.predicate();

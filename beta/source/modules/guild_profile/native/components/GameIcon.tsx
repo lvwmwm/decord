@@ -1,22 +1,22 @@
-// Module ID: 9990
-// Function ID: 9991
+// Module ID: 10022
+// Function ID: 10023
 // Name: components/GameIcon
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1401, 9991, 9992, 5341, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1401, 10023, 10024, 5373, 2]
 
-// Module 9990 (components/GameIcon)
+// Module 10022 (components/GameIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
 import noop from "module_19" /* 19 */;
 
-const Pressables = PressableHighlight(5341);
-const FireIcon2 = PressableHighlight(9992);
+const Pressables = PressableHighlight(5373);
+const FireIcon2 = PressableHighlight(10024);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { gameIcon: { width: 32, height: 32 }, gameIconImage: null, gameIconMask: null, fireIcon: null };
 let size = { width: 32, height: 32, borderRadius: nativeDefault.radii.xs, borderWidth: 1, borderStyle: "solid", borderColor: nativeDefault.colors.BORDER_STRONG };
 obj2.gameIconImage = size;

@@ -1,13 +1,13 @@
-// Module ID: 17061
-// Function ID: 17062
+// Module ID: 17071
+// Function ID: 17072
 // Name: VibegrationsNativeStatusStrip
-// Dependencies: [32, 19, 17, 14407, 21, 4758, 580, 558, 568, 17053, 14406, 14410, 4725, 17062, 5341, 1119, 3682, 4754, 4712, 2]
+// Dependencies: [32, 19, 17, 14445, 21, 4790, 580, 558, 568, 17063, 14444, 14448, 4757, 17072, 5373, 1119, 3714, 4786, 4744, 2]
 
-// Module 17061 (VibegrationsNativeStatusStrip)
+// Module 17071 (VibegrationsNativeStatusStrip)
 import nativeDefault from "native" /* 580 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
-import VibegrationsUsageSheet from "VibegrationsUsageSheet" /* 17062 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4757 */;
+import VibegrationsUsageSheet from "VibegrationsUsageSheet" /* 17072 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -15,10 +15,10 @@ const VibegrationsUsageSheetDefault = VibegrationsUsageSheet;
 
 require = fn;
 const View = fn(17).View;
-const AI_LOADER_CYCLE_MS = fn(14407).AI_LOADER_CYCLE_MS;
+const AI_LOADER_CYCLE_MS = fn(14445).AI_LOADER_CYCLE_MS;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { row: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_4, minHeight: nativeDefault.space.PX_4 + nativeDefault.space.PX_24 }, activity: null, indicator: null, label: null, runes: null };
 let obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_4, minHeight: nativeDefault.space.PX_4 + nativeDefault.space.PX_24 };
 obj2.activity = { flex: 1, minHeight: nativeDefault.space.PX_16, justifyContent: "center" };
@@ -110,15 +110,15 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((line) => {
   }
   const effect2 = obj2.useEffect(tmp14, tmp15);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp19 = closure_7(tmp(14406).AILoader, { size: 10, color: "text-subtle" });
+    const tmp19 = closure_7(tmp(14444).AILoader, { size: 10, color: "text-subtle" });
     cResult[8] = tmp19;
     let tmp17 = tmp19;
   } else {
     tmp17 = cResult[8];
   }
   if (cResult[9] !== text) {
-    const obj3 = { ref, text, variant: "text-xs/medium", color: "text-subtle", duration: tmp(17053).INDICATOR_PASS_MS, delay: null };
-    const tmp22 = closure_7(tmp(14410).AIShimmer, obj3);
+    const obj3 = { ref, text, variant: "text-xs/medium", color: "text-subtle", duration: tmp(17063).INDICATOR_PASS_MS, delay: null };
+    const tmp22 = closure_7(tmp(14448).AIShimmer, obj3);
     cResult[9] = text;
     cResult[10] = tmp22;
     let tmp20 = tmp22;
@@ -199,8 +199,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((line) => {
     };
   }, []);
   const obj = { style: tmp.indicator, children: null };
-  const items2 = [closure_7(line(14406).AILoader, { size: 10, color: "text-subtle" }), ];
-  const obj2 = { style: tmp.label, children: closure_7(line(14410).AIShimmer, { ref, text, variant: "text-xs/medium", color: "text-subtle", duration: line(17053).INDICATOR_PASS_MS, delay: null }) };
+  const items2 = [closure_7(line(14444).AILoader, { size: 10, color: "text-subtle" }), ];
+  const obj2 = { style: tmp.label, children: closure_7(line(14448).AIShimmer, { ref, text, variant: "text-xs/medium", color: "text-subtle", duration: line(17063).INDICATOR_PASS_MS, delay: null }) };
   items2[1] = closure_7(ref, obj2);
   obj.children = items2;
   return closure_8(ref, obj);
@@ -223,8 +223,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       if (cResult[4] !== projectUsage) {
         let runesUsedLabelsResult = null;
         if (null != projectUsage) {
-          runesUsedLabelsResult = tmp(17053).runesUsedLabels(projectUsage);
-          const tmpResult = tmp(17053);
+          runesUsedLabelsResult = tmp(17063).runesUsedLabels(projectUsage);
+          const tmpResult = tmp(17063);
         }
         cResult[4] = projectUsage;
         cResult[5] = runesUsedLabelsResult;
@@ -340,14 +340,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
               return;
             }
           }
-          stringResult = obj5.string(_modDef3682["0PGVTy"]);
+          stringResult = obj5.string(_modDef3714["0PGVTy"]);
         }
         obj2.accessibilityHint = stringResult;
         obj2.disabled = !tmp10;
         obj2.onPress = onToggleThinking;
         const obj3 = { line: tmp5 };
         obj2.children = tmp14(closure_10, obj3);
-        tmp14Result = tmp14(tmp(5341).PressableOpacity, obj2);
+        tmp14Result = tmp14(tmp(5373).PressableOpacity, obj2);
       }
       cResult[8] = tmp10;
       cResult[9] = tmp5;
@@ -358,7 +358,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     }
   }
   const obj = projectId(568);
-  const thinkingLineResult = projectId(17053).thinkingLine({ activity, compacting, controlling });
+  const thinkingLineResult = projectId(17063).thinkingLine({ activity, compacting, controlling });
   cResult[0] = activity;
   cResult[1] = compacting;
   cResult[2] = controlling;
@@ -369,11 +369,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   ({ activity, projectUsage, connLabel, thinkingOpen } = projectId);
   ({ thinking, compacting, connFailed, controlling, onToggleThinking } = projectId);
   const tmp = closure_9();
-  const thinkingLineResult = projectId(17053).thinkingLine({ activity, compacting, controlling });
+  const thinkingLineResult = projectId(17063).thinkingLine({ activity, compacting, controlling });
   let runesUsedLabelsResult = null;
   if (null != projectUsage) {
-    runesUsedLabelsResult = tmp2(17053).runesUsedLabels(projectUsage);
-    const tmp2Result = tmp2(17053);
+    runesUsedLabelsResult = tmp2(17063).runesUsedLabels(projectUsage);
+    const tmp2Result = tmp2(17063);
   }
   let tmp6 = null != activity;
   if (tmp6) {
@@ -411,14 +411,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     let stringResult;
     if (tmp6) {
       const intl = tmp2(1119).intl;
-      stringResult = intl.string(_modDef3682["0PGVTy"]);
+      stringResult = intl.string(_modDef3714["0PGVTy"]);
     }
     obj4.accessibilityHint = stringResult;
     obj4.disabled = !tmp6;
     obj4.onPress = onToggleThinking;
     const obj6 = { line: thinkingLineResult };
     obj4.children = tmp10(closure_10, obj6);
-    tmp10Result = tmp10(tmp2(5341).PressableOpacity, obj4);
+    tmp10Result = tmp10(tmp2(5373).PressableOpacity, obj4);
   }
   obj3.children = tmp10Result;
   const items1 = [closure_7(View, obj3), , ];
@@ -429,18 +429,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       str3 = "text-feedback-critical";
     }
     const obj7 = { variant: "text-xs/medium", color: str3, children: connLabel };
-    tmp10Result2 = tmp10(tmp2(4754).Text, obj7);
+    tmp10Result2 = tmp10(tmp2(4786).Text, obj7);
   }
   items1[1] = tmp10Result2;
   let tmp8Result = null;
   if (null != runesUsedLabelsResult) {
     const obj8 = { accessibilityRole: "button", accessibilityLabel: runesUsedLabelsResult.aria, hitSlop: 8, style: tmp.runes, onPress: callback, children: null };
     const obj9 = { variant: "text-xs/medium", color: "text-muted", children: runesUsedLabelsResult.text };
-    const items2 = [tmp10(tmp2(4754).Text, obj9), ];
+    const items2 = [tmp10(tmp2(4786).Text, obj9), ];
     const obj10 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-    items2[1] = tmp10(tmp2(4712).CircleInformationIcon, obj10);
+    items2[1] = tmp10(tmp2(4744).CircleInformationIcon, obj10);
     obj8.children = items2;
-    tmp8Result = tmp8(tmp2(5341).PressableOpacity, obj8);
+    tmp8Result = tmp8(tmp2(5373).PressableOpacity, obj8);
   }
   items1[2] = tmp8Result;
   obj2.children = items1;

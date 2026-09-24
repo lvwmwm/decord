@@ -1,16 +1,16 @@
-// Module ID: 4571
-// Function ID: 4572
+// Module ID: 4603
+// Function ID: 4604
 // Name: TeenScreenTimeRive
-// Dependencies: [109, 19, 21, 558, 568, 4491, 4572, 4544, 2]
+// Dependencies: [109, 19, 21, 558, 568, 4523, 4604, 4576, 2]
 
-// Module 4571 (TeenScreenTimeRive)
+// Module 4603 (TeenScreenTimeRive)
 import c from "c" /* 568 */;
-import RiveErrorBoundary from "RiveErrorBoundary" /* 4544 */;
-import _modDef4572 from "module_4572" /* 4572 */;
+import RiveErrorBoundary from "RiveErrorBoundary" /* 4576 */;
+import _modDef4604 from "module_4604" /* 4604 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
-const BaseRive = tmp(4491);
+const BaseRive = tmp(4523);
 require = fn;
 let closure_3 = ["fallback", "artboard", "stateMachine", "defaultViewModelInstance"];
 let closure_4 = ["fallback", "artboard", "stateMachine", "defaultViewModelInstance"];
@@ -59,7 +59,7 @@ let closure_9 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? (
     }
   }
   const merged = Object.assign(tmp4);
-  const tmp14 = jsx(BaseRive.BaseRive, { ref, src: _modDef4572, artboard: str, artboardProperties, artboardViewModelInstances, defaultViewModelInstance: tmp11, stateMachine: tmp5 });
+  const tmp14 = jsx(BaseRive.BaseRive, { ref, src: _modDef4604, artboard: str, artboardProperties, artboardViewModelInstances, defaultViewModelInstance: tmp11, stateMachine: tmp5 });
   cResult[5] = str;
   cResult[6] = tmp11;
   cResult[7] = ref;
@@ -80,7 +80,7 @@ let closure_9 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? (
   }
   const tmp2 = _objectWithoutProperties(defaultViewModelInstance, closure_4);
   const merged = Object.assign(tmp2);
-  return jsx(BaseRive.BaseRive, { ref, src: _modDef4572, artboard: str, artboardProperties, artboardViewModelInstances, defaultViewModelInstance: tmp, stateMachine: defaultViewModelInstance.stateMachine });
+  return jsx(BaseRive.BaseRive, { ref, src: _modDef4604, artboard: str, artboardProperties, artboardViewModelInstances, defaultViewModelInstance: tmp, stateMachine: defaultViewModelInstance.stateMachine });
 }));
 ReactCompilerGating = fn(558);
 const size = fn(2);

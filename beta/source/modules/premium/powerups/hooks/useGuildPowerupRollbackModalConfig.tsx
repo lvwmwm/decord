@@ -1,17 +1,17 @@
-// Module ID: 12675
-// Function ID: 12676
+// Module ID: 12711
+// Function ID: 12712
 // Name: useGuildPowerupRollbackModalConfig
-// Dependencies: [19, 2067, 4647, 12661, 2031, 1119, 2518, 558, 568, 504, 12676, 4651, 12662, 2]
+// Dependencies: [19, 2067, 4679, 12697, 2031, 1119, 2518, 558, 568, 504, 12712, 4683, 12698, 2]
 
-// Module 12675 (useGuildPowerupRollbackModalConfig)
+// Module 12711 (useGuildPowerupRollbackModalConfig)
 import util from "util" /* 1119 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
 import _modDef2518 from "module_2518" /* 2518 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12661 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12676 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12697 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12712 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4647 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4679 */;
 
 const require = globalThis.__r;
 
@@ -91,7 +91,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   if (stateFromStores1 != null) {
     const allPowerups = stateFromStores1.allPowerups;
     if (allPowerups != null) {
-      tmp12 = allPowerups[tmp(undefined, 4651).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+      tmp12 = allPowerups[tmp(undefined, 4683).GUILD_POWERUP_GUILD_THEME_SKU_ID];
     }
   }
   const tmpResult3 = require("initialize");

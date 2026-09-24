@@ -1,14 +1,14 @@
-// Module ID: 16490
-// Function ID: 16491
+// Module ID: 16500
+// Function ID: 16501
 // Name: useFavoritesGuildHeaderAction
-// Dependencies: [19, 1078, 558, 568, 10606, 1105, 1119, 3328, 2]
+// Dependencies: [19, 1078, 558, 568, 10642, 1105, 1119, 3360, 2]
 
-// Module 16490 (useFavoritesGuildHeaderAction)
+// Module 16500 (useFavoritesGuildHeaderAction)
 import c from "c" /* 568 */;
 import router_utils from "router_utils" /* 1105 */;
 import util from "util" /* 1119 */;
-import _modDef3328 from "module_3328" /* 3328 */;
-import FavoritesHooks from "FavoritesHooks" /* 10606 */;
+import _modDef3360 from "module_3360" /* 3360 */;
+import FavoritesHooks from "FavoritesHooks" /* 10642 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -33,7 +33,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[1] !== hasAccess) {
     const intl = tmp(1119).intl;
     if (hasAccess) {
-      tmp2 = _modDef3328;
+      tmp2 = _modDef3360;
       let ojM1xJ = tmp2.G9fGlP;
     } else {
       ojM1xJ = tmp(1119).t.ojM1xJ;
@@ -62,7 +62,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, []);
   const intl = util.intl;
   if (hasAccess) {
-    let ojM1xJ = _modDef3328.G9fGlP;
+    let ojM1xJ = _modDef3360.G9fGlP;
   } else {
     ojM1xJ = util.t.ojM1xJ;
   }

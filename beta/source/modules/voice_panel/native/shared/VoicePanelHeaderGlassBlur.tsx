@@ -1,21 +1,21 @@
-// Module ID: 12429
-// Function ID: 12430
+// Module ID: 12465
+// Function ID: 12466
 // Name: VoicePanelHeaderGlassBlur
-// Dependencies: [19, 17, 21, 4758, 1368, 558, 568, 4497, 5187, 4693, 4610, 5175, 5804, 7320, 2]
+// Dependencies: [19, 17, 21, 4790, 1368, 558, 568, 4529, 5219, 4725, 4642, 5207, 5836, 7352, 2]
 
-// Module 12429 (VoicePanelHeaderGlassBlur)
-import useThemeDefault from "useTheme" /* 4693 */;
-import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5175 */;
-import spring from "spring" /* 5187 */;
-import NativeViewDefault from "NativeView" /* 5804 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7320 */;
+// Module 12465 (VoicePanelHeaderGlassBlur)
+import useThemeDefault from "useTheme" /* 4725 */;
+import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5207 */;
+import spring from "spring" /* 5219 */;
+import NativeViewDefault from "NativeView" /* 5836 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7352 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const StyleSheet = fn(17).StyleSheet;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ blur: { position: "absolute", top: 0, left: 0, right: 0 }, strokeContainer: { position: "absolute", left: 0, right: 0, bottom: -StyleSheet.hairlineWidth, height: StyleSheet.hairlineWidth }, stroke: { height: StyleSheet.hairlineWidth, opacity: 0.15, backgroundColor: "white" }, strokeAlt: { height: StyleSheet.hairlineWidth, opacity: 0.8, backgroundColor: "black" }, strokeAltLight: { height: StyleSheet.hairlineWidth, opacity: 0.2, backgroundColor: "black" } });
 const PlatformUtils = fn(1368);
 const IS_ANDROID = PlatformUtils.isAndroid();
@@ -47,8 +47,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((shown)
   fn.__closure = { shown, IS_ANDROID };
   fn.__workletHash = 3451055086565;
   fn.__initData = __initData;
-  const animatedStyle = shown(4497).useAnimatedStyle(fn);
-  const obj2 = shown(4497);
+  const animatedStyle = shown(4529).useAnimatedStyle(fn);
+  const obj2 = shown(4529);
   const obj3 = { shown, IS_ANDROID };
   const fn2 = function k() {
     let num = 0;
@@ -57,8 +57,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((shown)
     }
     return { blurAmount: spring.withSpring(num) };
   };
-  const obj4 = shown(4497);
-  fn2.__closure = { withSpring: shown(5187).withSpring, shown };
+  const obj4 = shown(4529);
+  fn2.__closure = { withSpring: shown(5219).withSpring, shown };
   fn2.__workletHash = 5642055202507;
   fn2.__initData = __initData2;
   const animatedProps = obj4.useAnimatedProps(fn2);
@@ -87,7 +87,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((shown)
           }
           if (cResult[10] !== tmp4.stroke) {
             const obj6 = { style: tmp4.stroke };
-            const tmp17 = closure_4(tmp7(5804), obj6);
+            const tmp17 = closure_4(tmp7(5836), obj6);
             cResult[10] = tmp4.stroke;
             cResult[11] = tmp17;
             let tmp15 = tmp17;
@@ -99,7 +99,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((shown)
               if (cResult[14] === tmp8) {
                 if (cResult[16] !== cResult[15]) {
                   const obj7 = { style: tmp18 };
-                  const tmp23 = closure_4(tmp7(5804), obj7);
+                  const tmp23 = closure_4(tmp7(5836), obj7);
                   cResult[16] = tmp18;
                   cResult[17] = tmp23;
                   let tmp21 = tmp23;
@@ -122,7 +122,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((shown)
                     const obj8 = { style: tmp9, children: null };
                     const items1 = [tmp12, tmp24];
                     obj8.children = items1;
-                    const tmp29 = closure_5(tmp7(7320), obj8);
+                    const tmp29 = closure_5(tmp7(7352), obj8);
                     cResult[22] = tmp9;
                     cResult[23] = tmp12;
                     cResult[24] = tmp24;
@@ -133,7 +133,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((shown)
                 const obj9 = { style: tmp4.strokeContainer, children: null };
                 const items2 = [tmp15, tmp21];
                 obj9.children = items2;
-                const tmp26 = closure_5(tmp7(5804), obj9);
+                const tmp26 = closure_5(tmp7(5836), obj9);
                 cResult[18] = tmp4.strokeContainer;
                 cResult[19] = tmp15;
                 cResult[20] = tmp21;
@@ -142,22 +142,22 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((shown)
               }
             }
           }
-          const tmp19 = tmp(4610).isThemeDark(tmp8) ? tmp4.strokeAlt : tmp4.strokeAltLight;
+          const tmp19 = tmp(4642).isThemeDark(tmp8) ? tmp4.strokeAlt : tmp4.strokeAltLight;
           cResult[12] = tmp4.strokeAlt;
           cResult[13] = tmp4.strokeAltLight;
           cResult[14] = tmp8;
           cResult[15] = tmp19;
-          const tmpResult2 = tmp(4610);
+          const tmpResult2 = tmp(4642);
         }
       }
       const obj10 = { blurStyle: "ultra-thin", blurTheme: str, style: tmp10, animatedProps };
-      const tmp14 = closure_4(tmp7(5175), obj10);
+      const tmp14 = closure_4(tmp7(5207), obj10);
       cResult[6] = animatedProps;
       cResult[7] = str;
       cResult[8] = tmp10;
       cResult[9] = tmp14;
       tmp12 = tmp14;
-      tmpResult = tmp(4610);
+      tmpResult = tmp(4642);
     }
   }
   const items3 = [tmp4.blur, style, animatedStyle];
@@ -184,8 +184,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((shown)
   fn.__closure = { shown, IS_ANDROID };
   fn.__workletHash = 13658868332711;
   fn.__initData = __initData3;
-  const animatedStyle = shown(4497).useAnimatedStyle(fn);
-  let obj = shown(4497);
+  const animatedStyle = shown(4529).useAnimatedStyle(fn);
+  let obj = shown(4529);
   const obj2 = { shown, IS_ANDROID };
   const tmp2 = shown;
   const fn2 = function w() {
@@ -195,8 +195,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((shown)
     }
     return { blurAmount: spring.withSpring(num) };
   };
-  const obj3 = shown(4497);
-  fn2.__closure = { withSpring: shown(5187).withSpring, shown };
+  const obj3 = shown(4529);
+  fn2.__closure = { withSpring: shown(5219).withSpring, shown };
   fn2.__workletHash = 10766437578125;
   fn2.__initData = __initData4;
   const animatedProps = obj3.useAnimatedProps(fn2);
@@ -204,7 +204,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((shown)
   const obj5 = { style: null, children: null };
   const items = [tmp.blur, style, animatedStyle];
   obj5.style = items;
-  const obj4 = { withSpring: shown(5187).withSpring, shown };
+  const obj4 = { withSpring: shown(5219).withSpring, shown };
   const tmp9 = ReanimatedNativeViewDefault;
   const tmp11 = VisualEffectViewAnimatedDefault;
   let str = "light";
@@ -216,13 +216,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((shown)
   obj7.style = items1;
   const items2 = [closure_4(tmp11, obj7), ];
   const obj8 = { style: tmp.strokeContainer, children: null };
-  obj6 = shown(4610);
+  obj6 = shown(4642);
   const items3 = [closure_4(NativeViewDefault, { style: tmp.stroke }), ];
   const obj9 = { style: tmp.stroke };
   const tmp6Result = NativeViewDefault;
   const tmp6Result2 = NativeViewDefault;
-  const tmp2Result = tmp2(4610);
-  items3[1] = closure_4(tmp6Result2, { style: tmp2(4610).isThemeDark(tmp7) ? tmp.strokeAlt : tmp.strokeAltLight });
+  const tmp2Result = tmp2(4642);
+  items3[1] = closure_4(tmp6Result2, { style: tmp2(4642).isThemeDark(tmp7) ? tmp.strokeAlt : tmp.strokeAltLight });
   obj8.children = items3;
   items2[1] = closure_5(tmp6Result, obj8);
   obj5.children = items2;

@@ -1,11 +1,11 @@
-// Module ID: 15072
-// Function ID: 15073
+// Module ID: 15081
+// Function ID: 15082
 // Name: BlockedUserRowV2
-// Dependencies: [19, 1376, 21, 10009, 558, 568, 7409, 1181, 1119, 8453, 5188, 5822, 504, 2]
+// Dependencies: [19, 1376, 21, 10048, 558, 568, 7441, 1181, 1119, 8485, 5220, 5854, 504, 2]
 
-// Module 15072 (BlockedUserRowV2)
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10009 */;
+// Module 15081 (BlockedUserRowV2)
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10048 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -15,7 +15,7 @@ let ReactCompilerGating = fn(558);
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userRecord) => {
   const cResult = userRecord(568).c(18);
   userRecord = userRecord.userRecord;
-  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)().analyticsLocations;
   if (cResult[0] !== userRecord.id) {
     const fn = function t(nativeEvent) {
       if ("unblock" === nativeEvent.nativeEvent.actionName) {
@@ -87,7 +87,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userRecord) => 
               RelationshipActionCreatorsDefault.unblockUser(userRecord.id, { location: "blocked-users-list-mobile-v2" });
             }
       };
-      const tmp18 = jsx(tmp(5188).Button, {
+      const tmp18 = jsx(tmp(5220).Button, {
         size: "sm",
         variant: "secondary",
         text: tmp14,
@@ -116,7 +116,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userRecord) => 
       }
     }
     const obj5 = { icon: tmp5, label: tmp8, subLabel: tmp10, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: tmp12, onAccessibilityAction: tmp4, onPress: tmp13, trailing: tmp16 };
-    const tmp21 = jsx(tmp(5822).TableRow, { icon: tmp5, label: tmp8, subLabel: tmp10, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: tmp12, onAccessibilityAction: tmp4, onPress: tmp13, trailing: tmp16 });
+    const tmp21 = jsx(tmp(5854).TableRow, { icon: tmp5, label: tmp8, subLabel: tmp10, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: tmp12, onAccessibilityAction: tmp4, onPress: tmp13, trailing: tmp16 });
     cResult[11] = tmp4;
     cResult[12] = tmp5;
     cResult[13] = tmp8;
@@ -136,7 +136,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userRecord) => 
 }) : ((userRecord) => {
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)().analyticsLocations;
   const obj = { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null };
   const obj2 = { user: userRecord, guildId: "Array", size: userRecord(1181).AvatarSizes.REFRESH_MEDIUM_32 };
   obj.icon = jsx(userRecord(1181).Avatar, { user: userRecord, guildId: "Array", size: userRecord(1181).AvatarSizes.REFRESH_MEDIUM_32 });
@@ -181,8 +181,8 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userRecord) => 
   obj4.onPress = function onPress() {
     RelationshipActionCreatorsDefault.unblockUser(userRecord.id, { location: "blocked-users-list-mobile-v2" });
   };
-  obj.trailing = jsx(userRecord(5188).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
-  return jsx(userRecord(5822).TableRow, { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null });
+  obj.trailing = jsx(userRecord(5220).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
+  return jsx(userRecord(5854).TableRow, { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null });
 });
 ReactCompilerGating = fn(558);
 const size = fn(2);

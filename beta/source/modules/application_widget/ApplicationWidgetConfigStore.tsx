@@ -1,9 +1,9 @@
-// Module ID: 9302
-// Function ID: 9303
+// Module ID: 9334
+// Function ID: 9335
 // Name: ApplicationWidgetConfigStore
 // Dependencies: [32, 504, 577, 2]
 
-// Module 9302 (ApplicationWidgetConfigStore)
+// Module 9334 (ApplicationWidgetConfigStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import _slicedToArray from "module_32" /* 32 */;

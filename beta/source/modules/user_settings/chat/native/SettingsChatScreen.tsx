@@ -1,19 +1,19 @@
-// Module ID: 15721
-// Function ID: 15722
+// Module ID: 15731
+// Function ID: 15732
 // Name: SettingsChatScreen
-// Dependencies: [19, 17, 1376, 4424, 8238, 1078, 21, 4758, 580, 558, 568, 1488, 4418, 565, 4754, 1119, 5824, 1181, 10691, 7236, 11594, 14953, 2]
+// Dependencies: [19, 17, 1376, 4456, 8270, 1078, 21, 4790, 580, 558, 568, 1488, 4450, 565, 4786, 1119, 5856, 1181, 10727, 7268, 11630, 14988, 2]
 
-// Module 15721 (SettingsChatScreen)
+// Module 15731 (SettingsChatScreen)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7236 */;
-import _modDef10691 from "module_10691" /* 10691 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
-import SettingLayoutDefault from "SettingLayout" /* 14953 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7268 */;
+import _modDef10727 from "module_10727" /* 10727 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
+import SettingLayoutDefault from "SettingLayout" /* 14988 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
-import SubscriptionStore from "SubscriptionStore" /* 4424 */;
+import SubscriptionStore from "SubscriptionStore" /* 4456 */;
 
 require = fn;
 function getChatSettings() {
@@ -89,11 +89,11 @@ function getChatSettings() {
   return items1;
 }
 const View = fn(17).View;
-const MobileUserSettings = fn(8238).MobileUserSettings;
+const MobileUserSettings = fn(8270).MobileUserSettings;
 const UserSettingsSections = fn(1078).UserSettingsSections;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { card: { marginTop: 8, borderColor: nativeDefault.colors.REDESIGN_INPUT_CONTROL_SELECTED, borderWidth: 1, borderRadius: nativeDefault.radii.lg }, cardContent: { flexDirection: "row", alignItems: "center" }, cardIcon: { marginEnd: 8 } };
 let closure_11 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -122,7 +122,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj3 = { variant: "text-xs/normal", color: "text-muted", children: null };
     const intl = tmp(1119).intl;
     obj3.children = intl.format(tmp(1119).t["Up+hSO"], { supportURL: "https://support.discord.com/hc/articles/9665451164951" });
-    const tmp13 = closure_9(tmp(4754).Text, obj3);
+    const tmp13 = closure_9(tmp(4786).Text, obj3);
     cResult[2] = tmp13;
     let tmp11 = tmp13;
   } else {
@@ -152,7 +152,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj5 = { style: tmp5.card, children: null };
     const obj6 = { border: "none", shadow: "none", children: null };
     const obj7 = { style: tmp5.cardContent, children: null };
-    const obj8 = { style: tmp5.cardIcon, source: _modDef10691, size: tmp(1181).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
+    const obj8 = { style: tmp5.cardIcon, source: _modDef10727, size: tmp(1181).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
     const items2 = [closure_9(tmp(1181).Icon, obj8), ];
     const obj9 = { variant: "text-sm/medium", color: "text-muted", children: null };
     const intl2 = tmp(1119).intl;
@@ -163,10 +163,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
     };
     obj9.children = intl2.format(tmp(1119).t.uW1zul, obj10);
-    items2[1] = closure_9(tmp(4754).Text, obj9);
+    items2[1] = closure_9(tmp(4786).Text, obj9);
     obj7.children = items2;
     obj6.children = closure_10(View, obj7);
-    obj5.children = closure_9(tmp(5824).Card, obj6);
+    obj5.children = closure_9(tmp(5856).Card, obj6);
     tmp15 = closure_9(View, obj5);
   }
   cResult[3] = stackNavigation;
@@ -193,7 +193,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj4 = { style: tmp3.card, children: null };
     const obj5 = { border: "none", shadow: "none", children: null };
     const obj6 = { style: tmp3.cardContent, children: null };
-    const obj7 = { style: tmp3.cardIcon, source: _modDef10691, size: tmp(1181).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
+    const obj7 = { style: tmp3.cardIcon, source: _modDef10727, size: tmp(1181).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
     const items2 = [tmp7(tmp(1181).Icon, obj7), ];
     const obj8 = { variant: "text-sm/medium", color: "text-muted", children: null };
     const intl2 = tmp(1119).intl;
@@ -204,10 +204,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
     };
     obj8.children = intl2.format(tmp(1119).t.uW1zul, obj9);
-    items2[1] = tmp7(tmp(4754).Text, obj8);
+    items2[1] = tmp7(tmp(4786).Text, obj8);
     obj6.children = items2;
     obj5.children = tmp5(tmp6, obj6);
-    obj4.children = tmp7(tmp(5824).Card, obj5);
+    obj4.children = tmp7(tmp(5856).Card, obj5);
     tmp7Result = tmp7(tmp6, obj4);
   }
   children[1] = tmp7Result;

@@ -1,11 +1,11 @@
-// Module ID: 17307
-// Function ID: 17308
+// Module ID: 17317
+// Function ID: 17318
 // Name: ChannelSettingsPermissionsOverrideCheckbox
-// Dependencies: [19, 17, 21, 580, 4758, 4404, 1119, 8192, 9074, 17308, 558, 568, 4479, 2]
+// Dependencies: [19, 17, 21, 580, 4790, 4436, 1119, 8224, 9106, 17318, 558, 568, 4511, 2]
 
-// Module 17307 (ChannelSettingsPermissionsOverrideCheckbox)
+// Module 17317 (ChannelSettingsPermissionsOverrideCheckbox)
 import nativeDefault from "native" /* 580 */;
-import PermissionUtils from "PermissionUtils" /* 4404 */;
+import PermissionUtils from "PermissionUtils" /* 4436 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -14,17 +14,17 @@ function getIcon(arg0, arg1, icon) {
     const obj2 = { size: "sm", style: icon.icon, color: null };
     const colors3 = nativeDefault.colors;
     obj2.color = arg1 ? colors3.WHITE : colors3.ICON_FEEDBACK_CRITICAL;
-    return jsx(tmp(8192).DenyIcon, { size: "sm", style: icon.icon, color: null });
-  } else if (tmp(4404).ALLOW === arg0) {
+    return jsx(tmp(8224).DenyIcon, { size: "sm", style: icon.icon, color: null });
+  } else if (tmp(4436).ALLOW === arg0) {
     const obj3 = { size: "sm", style: icon.icon, color: null };
     const colors2 = nativeDefault.colors;
     obj3.color = arg1 ? colors2.WHITE : colors2.ICON_FEEDBACK_POSITIVE;
-    return jsx(tmp(9074).CheckmarkLargeBoldIcon, { size: "sm", style: icon.icon, color: null });
-  } else if (tmp(4404).PASSTHROUGH === arg0) {
+    return jsx(tmp(9106).CheckmarkLargeBoldIcon, { size: "sm", style: icon.icon, color: null });
+  } else if (tmp(4436).PASSTHROUGH === arg0) {
     const obj = { size: "sm", style: icon.icon, color: null };
     const colors = nativeDefault.colors;
     obj.color = arg1 ? colors.WHITE : colors.INTERACTIVE_TEXT_DEFAULT;
-    return jsx(tmp(17308).SlashIcon, { size: "sm", style: icon.icon, color: null });
+    return jsx(tmp(17318).SlashIcon, { size: "sm", style: icon.icon, color: null });
   } else {
     return null;
   }
@@ -34,7 +34,7 @@ get_ActivityIndicator = fn(17);
 const jsx = fn(21).jsx;
 const PX_4 = nativeDefault.space.PX_4;
 const md = nativeDefault.radii.md;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { ternaryCheckBox: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: md, height: nativeDefault.space.PX_32, paddingVertical: PX_4, paddingHorizontal: PX_4 / 2, flexDirection: "row" }, iconWrapper: { borderRadius: md - PX_4, marginHorizontal: PX_4 / 2, justifyContent: "center", height: "100%" }, icon: null, denyActive: null, denySelected: null, allowActive: null, allowSelected: null, passthroughSelected: null, passthroughActive: null, disabled: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: md, height: nativeDefault.space.PX_32, paddingVertical: PX_4, paddingHorizontal: PX_4 / 2, flexDirection: "row" };
 obj.icon = { marginHorizontal: nativeDefault.space.PX_8 };
@@ -52,7 +52,7 @@ const obj9 = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELE
 obj.passthroughActive = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_HOVER };
 obj.disabled = { opacity: 0.3 };
 let closure_6 = createStyles.createStyles(obj);
-let items = [fn(4404).DENY, fn(4404).PASSTHROUGH, fn(4404).ALLOW];
+let items = [fn(4436).DENY, fn(4436).PASSTHROUGH, fn(4436).ALLOW];
 let ReactCompilerGating = fn(558);
 let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
   let v6639O5 = styles;
@@ -276,9 +276,9 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
     }
     let iconWrapper = styles;
     if (PermissionUtils.DENY !== type) {
-      if (tmp3(4404).ALLOW === tmp2) {
+      if (tmp3(4436).ALLOW === tmp2) {
         let tmp5 = items ? iconWrapper.allowSelected : iconWrapper.allowActive;
-      } else if (tmp3(4404).PASSTHROUGH === tmp2) {
+      } else if (tmp3(4436).PASSTHROUGH === tmp2) {
         tmp5 = items ? iconWrapper.passthroughSelected : iconWrapper.passthroughActive;
       }
       items = [tmp5, ];

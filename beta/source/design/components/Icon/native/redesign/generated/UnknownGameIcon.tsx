@@ -1,13 +1,13 @@
-// Module ID: 8845
-// Function ID: 8846
+// Module ID: 8877
+// Function ID: 8878
 // Name: UnknownGameIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 8405, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 8437, 4493, 2]
 
-// Module 8845 (UnknownGameIcon)
+// Module 8877 (UnknownGameIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod8405 from "module_8405" /* 8405 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod8437 from "module_8437" /* 8437 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const UnknownGameIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(8405);
+    const tmpResult = tmp(8437);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const UnknownGameIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8405, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8437, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

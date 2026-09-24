@@ -1,9 +1,9 @@
-// Module ID: 4755
-// Function ID: 4756
+// Module ID: 4787
+// Function ID: 4788
 // Name: TextVariants
 // Dependencies: [2]
 
-// Module 4755 (TextVariants)
+// Module 4787 (TextVariants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/tokens/typography/generated/TextVariants.tsx");

@@ -1,8 +1,8 @@
-// Module ID: 6525
-// Function ID: 6526
+// Module ID: 6557
+// Function ID: 6558
 // Dependencies: [2]
 
-// Module 6525
+// Module 6557
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroRocketNameplateAbstractUI-2x.png.js");

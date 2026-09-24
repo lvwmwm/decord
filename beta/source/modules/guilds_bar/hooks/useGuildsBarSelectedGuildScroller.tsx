@@ -1,11 +1,11 @@
-// Module ID: 16701
-// Function ID: 16702
+// Module ID: 16711
+// Function ID: 16712
 // Name: useGuildsBarSelectedGuildScroller
-// Dependencies: [19, 4580, 558, 568, 2]
+// Dependencies: [19, 4612, 558, 568, 2]
 
-// Module 16701 (useGuildsBarSelectedGuildScroller)
+// Module 16711 (useGuildsBarSelectedGuildScroller)
 import noop from "module_19" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 
 const require = globalThis.__r;
 

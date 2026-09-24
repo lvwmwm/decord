@@ -1,10 +1,10 @@
-// Module ID: 10608
-// Function ID: 10609
+// Module ID: 10644
+// Function ID: 10645
 // Name: FavoritesGuildExperiment
 // Dependencies: [1438, 558, 568, 2]
 // Exports: getFavoritesGuildConfig
 
-// Module 10608 (FavoritesGuildExperiment)
+// Module 10644 (FavoritesGuildExperiment)
 import c from "c" /* 568 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1438 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

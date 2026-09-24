@@ -1,16 +1,16 @@
-// Module ID: 8699
-// Function ID: 8700
+// Module ID: 8731
+// Function ID: 8732
 // Name: ModalContent
-// Dependencies: [19, 17, 21, 4758, 558, 568, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 2]
 
-// Module 8699 (ModalContent)
+// Module 8731 (ModalContent)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ScrollView = fn(17).ScrollView;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ scrollContainer: { flex: 1 }, contentContainer: { flexDirection: "column", paddingTop: 24, paddingHorizontal: 16, alignItems: "center", flexGrow: 1 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

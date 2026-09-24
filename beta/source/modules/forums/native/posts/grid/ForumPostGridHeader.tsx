@@ -1,24 +1,24 @@
-// Module ID: 12132
-// Function ID: 12133
+// Module ID: 12168
+// Function ID: 12169
 // Name: ForumPostGridHeader
-// Dependencies: [19, 17, 7517, 2052, 21, 4758, 558, 568, 12133, 12135, 12144, 12145, 12146, 2]
+// Dependencies: [19, 17, 7549, 2052, 21, 4790, 558, 568, 12169, 12171, 12180, 12181, 12182, 2]
 
-// Module 12132 (ForumPostGridHeader)
+// Module 12168 (ForumPostGridHeader)
 import c from "c" /* 568 */;
-import ForumPostPinIconDefault from "ForumPostPinIcon" /* 12133 */;
-import ForumPostUsername from "ForumPostUsername" /* 12135 */;
-import ForumPostTimestampDefault from "ForumPostTimestamp" /* 12144 */;
-import ForumPostNewTagDefault from "ForumPostNewTag" /* 12145 */;
-import ForumPostTitleDefault from "ForumPostTitle" /* 12146 */;
+import ForumPostPinIconDefault from "ForumPostPinIcon" /* 12169 */;
+import ForumPostUsername from "ForumPostUsername" /* 12171 */;
+import ForumPostTimestampDefault from "ForumPostTimestamp" /* 12180 */;
+import ForumPostNewTagDefault from "ForumPostNewTag" /* 12181 */;
+import ForumPostTitleDefault from "ForumPostTitle" /* 12182 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const ForumTimestampFormats = fn(7517).ForumTimestampFormats;
+const ForumTimestampFormats = fn(7549).ForumTimestampFormats;
 const ChannelFlags = fn(2052).ChannelFlags;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ pinIcon: { marginEnd: 8 }, container: { display: "flex", flexDirection: "column", marginBottom: 4 }, details: { flexDirection: "row", alignItems: "center", marginBottom: 4 }, timestampText: { flex: 1 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -148,7 +148,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const items = [hasFlagResult, timestampProducer(ForumPostUsername.ForumPostAuthor, { thread, hasUnreads }), timestampProducer(ForumPostTimestampDefault, { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO, textStyle: tmp.timestampText }), ];
   if (isNew) {
-    isNew = tmp8(tmp10(12145), {});
+    isNew = tmp8(tmp10(12181), {});
   }
   items[3] = isNew;
   obj2.children = items;

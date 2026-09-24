@@ -1,17 +1,17 @@
-// Module ID: 12209
-// Function ID: 12210
+// Module ID: 12245
+// Function ID: 12246
 // Name: AppLauncherNavigator
-// Dependencies: [109, 19, 1487, 1078, 21, 8162, 4758, 580, 558, 568, 7409, 7429, 4627, 1614, 7246, 4938, 12210, 12267, 12293, 12337, 1489, 11469, 2]
+// Dependencies: [109, 19, 1487, 1078, 21, 8194, 4790, 580, 558, 568, 7441, 7461, 4659, 1614, 7278, 4970, 12246, 12303, 12329, 12373, 1489, 11505, 2]
 
-// Module 12209 (AppLauncherNavigator)
+// Module 12245 (AppLauncherNavigator)
 import nativeDefault from "native" /* 580 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import AppLauncherHomeScreenDefault from "AppLauncherHomeScreen" /* 12210 */;
-import AppLauncherApplicationViewScreenDefault from "AppLauncherApplicationViewScreen" /* 12267 */;
-import AppLauncherCommandViewScreenDefault from "AppLauncherCommandViewScreen" /* 12293 */;
-import AppLauncherViewAllScreenDefault from "AppLauncherViewAllScreen" /* 12337 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7441 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
+import AppLauncherHomeScreenDefault from "AppLauncherHomeScreen" /* 12246 */;
+import AppLauncherApplicationViewScreenDefault from "AppLauncherApplicationViewScreen" /* 12303 */;
+import AppLauncherCommandViewScreenDefault from "AppLauncherCommandViewScreen" /* 12329 */;
+import AppLauncherViewAllScreenDefault from "AppLauncherViewAllScreen" /* 12373 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -22,9 +22,9 @@ const AppLauncherRouteName = fn(1487).AppLauncherRouteName;
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const NativeStackNavigator = fn(8162);
+const NativeStackNavigator = fn(8194);
 let closure_11 = NativeStackNavigator.createNativeStackNavigator();
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { navigator: { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, paddingTop: 16, overflow: "visible", flex: 1 } };
 let closure_12 = createStyles.createStyles(obj);
 const ReactCompilerGating = fn(558);
@@ -43,8 +43,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   if (overrideParams == null) {
     overrideParams = obj2.useKeyboardContextForType(entrypoint(1614).KeyboardTypes.APP_LAUNCHER);
   }
-  obj2 = entrypoint(4627);
-  const accessibilityNativeStackOptions = tmp(7246).useAccessibilityNativeStackOptions();
+  obj2 = entrypoint(4659);
+  const accessibilityNativeStackOptions = tmp(7278).useAccessibilityNativeStackOptions();
   if (cResult[0] !== overrideParams) {
     const initialRouteName = overrideParams.initialRouteName;
     const tmp12 = _objectWithoutProperties(overrideParams, closure_3);
@@ -140,7 +140,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
               }
             }
           }
-          const obj3 = { name: tmp21.APPLICATION_VIEW, component: tmp4(12267), initialParams: null };
+          const obj3 = { name: tmp21.APPLICATION_VIEW, component: tmp4(12303), initialParams: null };
           const obj4 = { context };
           const merged = Object.assign(tmp27);
           obj4.expandBottomSheet = expandBottomSheet;
@@ -165,7 +165,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         cResult[16] = tmp9;
         cResult[17] = tmp9;
       }
-      const obj5 = { name: AppLauncherRouteName.HOME, component: tmp4(12210), initialParams: null };
+      const obj5 = { name: AppLauncherRouteName.HOME, component: tmp4(12246), initialParams: null };
       const obj6 = { context, initialSearchQuery: undefined };
       obj5.initialParams = obj6;
       const tmp26 = closure_9(closure_11.Screen, obj5);
@@ -192,8 +192,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   if (overrideParams == null) {
     overrideParams = obj.useKeyboardContextForType(entrypoint(1614).KeyboardTypes.APP_LAUNCHER);
   }
-  obj = entrypoint(4627);
-  const accessibilityNativeStackOptions = entrypoint(7246).useAccessibilityNativeStackOptions();
+  obj = entrypoint(4659);
+  const accessibilityNativeStackOptions = entrypoint(7278).useAccessibilityNativeStackOptions();
   const initialRouteName = overrideParams.initialRouteName;
   let obj15 = _objectWithoutProperties(overrideParams, closure_4);
   const items = [entrypoint];
@@ -251,11 +251,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   items2[3] = closure_9(closure_11.Screen, obj13);
   obj3.children = items2;
   obj2.children = closure_10(closure_11.Navigator, obj3);
-  obj17.children = closure_9(entrypoint(7409).AnalyticsLocationProvider, obj2);
+  obj17.children = closure_9(entrypoint(7441).AnalyticsLocationProvider, obj2);
   obj16.children = closure_9(entrypoint(1489).NavigationContainer, obj17);
   let tmp19 = "customId" in overrideParams;
   const obj14 = { context };
-  const tmp5Result = entrypoint(7246);
+  const tmp5Result = entrypoint(7278);
   if (!tmp19) {
     tmp19 = "referrerId" in overrideParams;
   }
@@ -266,5 +266,5 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     const obj18 = { customId: null, referrerId: null };
   }
   const tmp8Result = closure_9(entrypoint(1489).NavigationIndependentTree, obj16);
-  return closure_9(entrypoint(11469).AppLauncherContext.Provider, { value: { bottomSheetExpandReasonRef, bottomSheetIndex, bottomSheetPosition, chatInputRef, entrypoint, entrypointParams: tmp20, keyboardCloseReasonRef, onActivityItemSelected, width }, children: closure_9(entrypoint(1489).NavigationIndependentTree, obj16) });
+  return closure_9(entrypoint(11505).AppLauncherContext.Provider, { value: { bottomSheetExpandReasonRef, bottomSheetIndex, bottomSheetPosition, chatInputRef, entrypoint, entrypointParams: tmp20, keyboardCloseReasonRef, onActivityItemSelected, width }, children: closure_9(entrypoint(1489).NavigationIndependentTree, obj16) });
 }));

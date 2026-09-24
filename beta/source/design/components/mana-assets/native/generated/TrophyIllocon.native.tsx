@@ -1,13 +1,13 @@
-// Module ID: 6790
-// Function ID: 6791
+// Module ID: 6822
+// Function ID: 6823
 // Name: TrophyIllocon
-// Dependencies: [21, 558, 568, 6791, 5802, 2]
+// Dependencies: [21, 558, 568, 6823, 5834, 2]
 
-// Module 6790 (TrophyIllocon)
+// Module 6822 (TrophyIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6791 from "module_6791" /* 6791 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6823 from "module_6823" /* 6823 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const TrophyIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6791 };
+    const obj2 = { uri: _modDef6823 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const TrophyIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6791 };
+  const obj2 = { uri: _modDef6823 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

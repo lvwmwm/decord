@@ -1,17 +1,17 @@
-// Module ID: 5822
-// Function ID: 5823
+// Module ID: 5854
+// Function ID: 5855
 // Name: TableRow
-// Dependencies: [109, 19, 17, 21, 4758, 580, 558, 568, 5823, 4462, 5824, 5817, 5828, 5829, 5831, 5195, 1368, 5832, 4754, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 580, 558, 568, 5855, 4494, 5856, 5849, 5860, 5861, 5863, 5227, 1368, 5864, 4786, 2]
 
-// Module 5822 (TableRow)
+// Module 5854 (TableRow)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import useToken from "useToken" /* 4462 */;
-import useFontScale from "useFontScale" /* 5195 */;
-import TableRowGroupContext from "TableRowGroupContext" /* 5823 */;
-import Card from "Card" /* 5824 */;
-import TableRowTrailingText from "TableRowTrailingText" /* 5831 */;
+import useToken from "useToken" /* 4494 */;
+import useFontScale from "useFontScale" /* 5227 */;
+import TableRowGroupContext from "TableRowGroupContext" /* 5855 */;
+import Card from "Card" /* 5856 */;
+import TableRowTrailingText from "TableRowTrailingText" /* 5863 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -22,7 +22,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
 const style = { padding: 0 };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_12 = createStyles.createStyles((arg0, arg1, arg2) => {
   const obj = { padding: nativeDefault.modules.mobile.TABLE_ROW_PADDING, minHeight: nativeDefault.modules.mobile.TABLE_ROW_HEIGHT, flexDirection: "row", alignItems: "center", opacity: null, borderRadius: null };
   let num = 1;
@@ -140,7 +140,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (undefined !== tmp18) {
     str = tmp18;
   }
-  const context = noop.useContext(tmp(5823).TableRowGroupContext);
+  const context = noop.useContext(tmp(5855).TableRowGroupContext);
   let tmp25 = !context;
   if (!context) {
     tmp25 = true === tmp14;
@@ -190,7 +190,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                       const obj2 = { children: null };
                                       const items = [tmp32, ];
                                       const obj3 = { adjustSpacingForIcon: tmp28 };
-                                      items[1] = closure_1_8(tmp(5817).TableRowDivider, obj3);
+                                      items[1] = closure_1_8(tmp(5849).TableRowDivider, obj3);
                                       obj2.children = items;
                                       tmp40 = v65535(options, obj2);
                                     }
@@ -208,7 +208,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         const obj4 = { radius: token, shadow: "none", border: "none", variant: "muted", start: tmp25, end: tmp26, onPress: tmp13, disabled: tmp23, style };
                         const merged = Object.assign(tmp5);
                         obj4.children = tmp30;
-                        const tmp38 = closure_1_8(tmp(5824).InternalCard, obj4);
+                        const tmp38 = closure_1_8(tmp(5856).InternalCard, obj4);
                         cResult[30] = token;
                         cResult[31] = tmp5;
                         cResult[32] = tmp23;
@@ -282,16 +282,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj2 = { children: null };
       const items = [tmp7Result, ];
       const obj3 = { adjustSpacingForIcon: null != icon };
-      items[1] = tmp7(tmp2(5817).TableRowDivider, obj3);
+      items[1] = tmp7(tmp2(5849).TableRowDivider, obj3);
       obj2.children = items;
       tmp11 = v65535(options, obj2);
     }
   }
   return tmp11;
 });
-tmp4.Icon = fn(5828).TableRowIcon;
-tmp4.Arrow = fn(5829).TableRowArrow;
-tmp4.TrailingText = fn(5831).TableRowTrailingText;
+tmp4.Icon = fn(5860).TableRowIcon;
+tmp4.Arrow = fn(5861).TableRowArrow;
+tmp4.TrailingText = fn(5863).TableRowTrailingText;
 ReactCompilerGating = fn(558);
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
   const cResult = c.c(53);
@@ -312,9 +312,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     tmpResult4 = tmp(1368);
   } else {
     const tmp11 = closure_12(true === disabled.disabled, null != tmp6, cResult[1]);
-    const token = tmp(4462).useToken(nativeDefault.modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
-    const tmpResult5 = tmp(4462);
-    const token1 = tmp(4462).useToken(nativeDefault.modules.mobile.TABLE_ROW_LABEL_COLOR);
+    const token = tmp(4494).useToken(nativeDefault.modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
+    const tmpResult5 = tmp(4494);
+    const token1 = tmp(4494).useToken(nativeDefault.modules.mobile.TABLE_ROW_LABEL_COLOR);
     if (cResult[2] === borderRadius) {
       if (cResult[3] === height) {
         let tmp15 = cResult[4];
@@ -370,7 +370,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
                                                 if (cResult[44] !== arrow) {
                                                   let tmp53 = arrow;
                                                   if (arrow) {
-                                                    tmp53 = closure_1_8(tmp(5829).TableRowArrow, {});
+                                                    tmp53 = closure_1_8(tmp(5861).TableRowArrow, {});
                                                   }
                                                   cResult[44] = arrow;
                                                   cResult[45] = tmp53;
@@ -469,7 +469,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
                               str5 = "text-feedback-critical";
                             }
                             const obj8 = { variant: "text-xs/medium", color: str5, lineClamp: subLabelLineClamp, includeFontPadding: true, children: subLabel };
-                            tmp35Result = closure_1_8(tmp(4754).Text, obj8);
+                            tmp35Result = closure_1_8(tmp(4786).Text, obj8);
                           }
                           tmp33 = tmp35Result;
                         }
@@ -492,7 +492,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
                   obj9.color = str3;
                   obj9.lineClamp = labelLineClamp;
                   obj9.children = label;
-                  tmp31Result = closure_1_8(tmp(4754).Text, obj9);
+                  tmp31Result = closure_1_8(tmp(4786).Text, obj9);
                 }
                 cResult[16] = label;
                 cResult[17] = token1;
@@ -520,7 +520,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
           const obj11 = {};
           const merged = Object.assign(dragHandlePressableProps);
           const obj12 = { size: "xs", style: tmp11.dragHandle };
-          obj11.children = closure_1_8(tmp(5832).DragIcon, obj12);
+          obj11.children = closure_1_8(tmp(5864).DragIcon, obj12);
           tmp18 = closure_1_8(timestampProducer, obj11);
         }
         cResult[8] = dragHandlePressableProps;
@@ -540,7 +540,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     cResult[3] = height;
     cResult[4] = obj13;
     tmp15 = obj13;
-    const tmpResult6 = tmp(4462);
+    const tmpResult6 = tmp(4494);
   }
 }) : ((draggable) => {
   ({ label, subLabel, icon, trailing, arrow, variant } = draggable);
@@ -579,7 +579,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     const obj5 = {};
     const merged = Object.assign(dragHandlePressableProps);
     const obj6 = { size: "xs", style: tmp8.dragHandle };
-    obj5.children = closure_1_8(tmp4(5832).DragIcon, obj6);
+    obj5.children = closure_1_8(tmp4(5864).DragIcon, obj6);
     tmp13 = closure_1_8(timestampProducer, obj5);
   }
   const items1 = [tmp13, , , , ];
@@ -606,7 +606,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     obj10.color = str2;
     obj10.lineClamp = labelLineClamp;
     obj10.children = label;
-    tmp23Result = closure_1_8(tmp4(4754).Text, obj10);
+    tmp23Result = closure_1_8(tmp4(4786).Text, obj10);
   }
   const items2 = [tmp23Result, ];
   let tmp24 = null != subLabel;
@@ -618,7 +618,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
         str4 = "text-feedback-critical";
       }
       const obj11 = { variant: "text-xs/medium", color: str4, lineClamp: subLabelLineClamp, includeFontPadding: true, children: subLabel };
-      tmp26Result = closure_1_8(tmp4(4754).Text, obj11);
+      tmp26Result = closure_1_8(tmp4(4786).Text, obj11);
     }
     tmp24 = tmp26Result;
   }
@@ -644,7 +644,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
   }
   items1[3] = tmp29;
   if (arrow) {
-    arrow = closure_1_8(tmp4(5829).TableRowArrow, {});
+    arrow = closure_1_8(tmp4(5861).TableRowArrow, {});
   }
   items1[4] = arrow;
   obj4.children = items1;

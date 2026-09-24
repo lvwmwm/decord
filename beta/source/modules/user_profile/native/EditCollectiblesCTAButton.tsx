@@ -1,26 +1,26 @@
-// Module ID: 8446
-// Function ID: 8447
+// Module ID: 8478
+// Function ID: 8479
 // Name: EditCollectiblesCTAButton
-// Dependencies: [19, 4750, 1080, 1612, 21, 4758, 558, 568, 1616, 504, 8447, 4497, 5187, 4418, 7801, 8448, 1119, 4726, 8449, 8450, 7788, 4725, 5188, 2]
+// Dependencies: [19, 4782, 1080, 1612, 21, 4790, 558, 568, 1616, 504, 8479, 4529, 5219, 4450, 7833, 8480, 1119, 4758, 8481, 8482, 7820, 4757, 5220, 2]
 
-// Module 8446 (EditCollectiblesCTAButton)
+// Module 8478 (EditCollectiblesCTAButton)
 import util from "util" /* 1119 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import HapticUtils from "HapticUtils" /* 4726 */;
-import spring from "spring" /* 5187 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7788 */;
-import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 8449 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8450 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4450 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import HapticUtils from "HapticUtils" /* 4758 */;
+import spring from "spring" /* 5219 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7820 */;
+import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 8481 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8482 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 let closure_5 = fn(1080).CollectiblesMobileShopScreen;
 let closure_6 = fn(1612).MEDIA_PICKER_SEND_BUTTON_SPRING;
 const jsx = fn(21).jsx;
 let c8 = 0.9;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ buttonRowContainer: { flexGrow: 0, flexDirection: "row", justifyContent: "flex-end", paddingHorizontal: 12, height: 48 }, buttonContainer: { position: "absolute", bottom: 0, left: 0, right: 0, marginLeft: 24, marginRight: 24, flexDirection: "column", justifyContent: "flex-end" } });
 const __initData = { code: "function EditCollectiblesCTAButtonTsx1(){const{shouldShowButton,APPLY_BUTTON_BOUNCE_DISTANCE,APPLY_BUTTON_SCALE_TRANSITION,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetTranslateY=shouldShowButton.get()?0:APPLY_BUTTON_BOUNCE_DISTANCE;const targetScale=shouldShowButton.get()?1:APPLY_BUTTON_SCALE_TRANSITION;return{transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}]};}" };
 const __initData2 = { code: "function EditCollectiblesCTAButtonTsx2(){const{shouldShowButton}=this.__closure;return{pointerEvents:shouldShowButton.get()?\"box-none\":\"none\"};}" };

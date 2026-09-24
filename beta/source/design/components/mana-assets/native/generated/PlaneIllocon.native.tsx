@@ -1,13 +1,13 @@
-// Module ID: 6586
-// Function ID: 6587
+// Module ID: 6618
+// Function ID: 6619
 // Name: PlaneIllocon
-// Dependencies: [21, 558, 568, 6587, 5802, 2]
+// Dependencies: [21, 558, 568, 6619, 5834, 2]
 
-// Module 6586 (PlaneIllocon)
+// Module 6618 (PlaneIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6587 from "module_6587" /* 6587 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6619 from "module_6619" /* 6619 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const PlaneIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6587 };
+    const obj2 = { uri: _modDef6619 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const PlaneIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6587 };
+  const obj2 = { uri: _modDef6619 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

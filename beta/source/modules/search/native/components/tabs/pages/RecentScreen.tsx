@@ -1,32 +1,32 @@
-// Module ID: 17114
-// Function ID: 17115
+// Module ID: 17124
+// Function ID: 17125
 // Name: RecentScreen
-// Dependencies: [32, 5, 19, 7525, 12511, 17115, 12487, 8127, 12501, 1078, 21, 558, 568, 12509, 1119, 4754, 5341, 11164, 17116, 4771, 12506, 12488, 504, 1489, 17119, 12486, 15088, 8687, 8689, 17120, 17121, 17124, 2]
+// Dependencies: [32, 5, 19, 7557, 12547, 17125, 12523, 8159, 12537, 1078, 21, 558, 568, 12545, 1119, 4786, 5373, 11200, 17126, 4803, 12542, 12524, 504, 1489, 17129, 12522, 15103, 8719, 8721, 17130, 17131, 17134, 2]
 
-// Module 17114 (RecentScreen)
+// Module 17124 (RecentScreen)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8687 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8689 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12486 */;
-import SearchUtils from "SearchUtils" /* 12488 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12506 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12509 */;
-import MediaGridPlaceholder from "MediaGridPlaceholder" /* 17121 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8719 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8721 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12522 */;
+import SearchUtils from "SearchUtils" /* 12524 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12542 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12545 */;
+import MediaGridPlaceholder from "MediaGridPlaceholder" /* 17131 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 7525 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12511 */;
-import SearchHistoryStore from "SearchHistoryStore" /* 17115 */;
-import SearchQueryStore from "SearchQueryStore" /* 12487 */;
+import SearchMessageStore from "SearchMessageStore" /* 7557 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12547 */;
+import SearchHistoryStore from "SearchHistoryStore" /* 17125 */;
+import SearchQueryStore from "SearchQueryStore" /* 12523 */;
 
 require = fn;
-const SearchConstants = fn(8127);
+const SearchConstants = fn(8159);
 ({ EMPTY_SEARCH_QUERY_STRING: c10, MESSAGE_PLACEHOLDER_ITEM_SIZE: closure_11, SearchListItemTypes: closure_12, SearchTabs: map1 } = SearchConstants);
-const EMPTY_MEDIA_RESULTS = fn(12501).EMPTY_MEDIA_RESULTS;
+const EMPTY_MEDIA_RESULTS = fn(12537).EMPTY_MEDIA_RESULTS;
 const SearchTypes = fn(1078).SearchTypes;
 const jsx = fn(21).jsx;
 let ReactCompilerGating = fn(558);
@@ -55,7 +55,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
     const obj2 = { variant: "text-sm/semibold", color: "text-brand", children: null };
     const intl2 = tmp(1119).intl;
     obj2.children = intl2.string(tmp(1119).t.LFTAUp);
-    const tmp9 = jsx(tmp(4754).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
+    const tmp9 = jsx(tmp(4786).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
     cResult[3] = tmp9;
     let tmp7 = tmp9;
   } else {
@@ -63,7 +63,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
   }
   if (cResult[4] !== tmp4) {
     const obj3 = { onPress: tmp4, accessibilityRole: "button", unstable_pressDelay: 130, accessibilityLabel: tmp5, children: tmp7 };
-    const tmp12 = jsx(tmp(5341).PressableHighlight, { onPress: tmp4, accessibilityRole: "button", unstable_pressDelay: 130, accessibilityLabel: tmp5, children: tmp7 });
+    const tmp12 = jsx(tmp(5373).PressableHighlight, { onPress: tmp4, accessibilityRole: "button", unstable_pressDelay: 130, accessibilityLabel: tmp5, children: tmp7 });
     cResult[4] = tmp4;
     cResult[5] = tmp12;
     let tmp10 = tmp12;
@@ -87,8 +87,8 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
   const obj2 = { variant: "text-sm/semibold", color: "text-brand", children: null };
   const intl2 = searchContext(1119).intl;
   obj2.children = intl2.string(searchContext(1119).t.LFTAUp);
-  obj.children = jsx(searchContext(4754).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
-  return jsx(searchContext(5341).PressableHighlight, {
+  obj.children = jsx(searchContext(4786).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  return jsx(searchContext(5373).PressableHighlight, {
     onPress() {
       return SearchPlatformActionCreatorsDefault.clearSearchHistory(searchContext);
     },
@@ -114,7 +114,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onJumpToMedia)
     const obj2 = { variant: "text-sm/semibold", color: "text-brand", children: null };
     const intl2 = tmp(1119).intl;
     obj2.children = intl2.string(tmp(1119).t.Ofpgwh);
-    const tmp8 = jsx(tmp(4754).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
+    const tmp8 = jsx(tmp(4786).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
     cResult[1] = tmp8;
     let tmp6 = tmp8;
   } else {
@@ -122,7 +122,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onJumpToMedia)
   }
   if (cResult[2] !== onJumpToMedia) {
     const obj3 = { onPress: onJumpToMedia, accessibilityRole: "button", unstable_pressDelay: 130, accessibilityLabel: first, children: tmp6 };
-    const tmp11 = jsx(tmp(5341).PressableHighlight, { onPress: onJumpToMedia, accessibilityRole: "button", unstable_pressDelay: 130, accessibilityLabel: first, children: tmp6 });
+    const tmp11 = jsx(tmp(5373).PressableHighlight, { onPress: onJumpToMedia, accessibilityRole: "button", unstable_pressDelay: 130, accessibilityLabel: first, children: tmp6 });
     cResult[2] = onJumpToMedia;
     cResult[3] = tmp11;
     let tmp9 = tmp11;
@@ -152,7 +152,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
   } else {
     first = cResult[0];
   }
-  const arr = onPressDMItem(11164)(first);
+  const arr = onPressDMItem(11200)(first);
   if (cResult[1] !== searchContext) {
     let obj3 = { searchContext };
     cResult[1] = searchContext;
@@ -582,16 +582,16 @@ let closure_22 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sear
   const messages = stateFromStoresObject.messages;
   ({ isLoadingMediaGrid, isInitialSearchQuery } = stateFromStoresObject);
   if (cResult[3] !== searchContext) {
-    const searchContextId = tmp2(12488).getSearchContextId(searchContext);
+    const searchContextId = tmp2(12524).getSearchContextId(searchContext);
     cResult[3] = searchContext;
     cResult[4] = searchContextId;
     let tmp11 = searchContextId;
-    const tmp2Result2 = tmp2(12488);
+    const tmp2Result2 = tmp2(12524);
   } else {
     tmp11 = cResult[4];
   }
   const arr3 = closure_21(tmp11);
-  const tmp15 = messages(17119)(searchContext.width);
+  const tmp15 = messages(17129)(searchContext.width);
   dependencyMap = tmp15;
   if (null != messages) {
     if (0 !== messages.length) {
@@ -603,7 +603,7 @@ let closure_22 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sear
       items1 = [];
       const obj4 = messages[Symbol.iterator]();
       while (obj4 !== undefined) {
-        let obj5 = searchContext(12486);
+        let obj5 = searchContext(12522);
         let items2 = [tmp19];
         let media = obj5.getMedia(searchContext, items2);
         let item = media.forEach((item) => items1.push(item));
@@ -625,7 +625,7 @@ let closure_22 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sear
       let tmp30 = cResult[10];
     }
     let num11 = searchContext;
-    const onPressMediaItem = searchContext(17116).useOnPressMediaItem(tmp30);
+    const onPressMediaItem = searchContext(17126).useOnPressMediaItem(tmp30);
     if (cResult[11] === messages) {
       if (cResult[12] === onPressMediaItem) {
         let tmp35 = cResult[13];
@@ -638,7 +638,7 @@ let closure_22 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sear
       } else {
         tmp36 = cResult[14];
       }
-      const fullscreenPlaceholderCount = num11(17120).useFullscreenPlaceholderCount(tmp36);
+      const fullscreenPlaceholderCount = num11(17130).useFullscreenPlaceholderCount(tmp36);
       if (cResult[15] === tmp35) {
         if (cResult[16] === isInitialSearchQuery) {
           if (cResult[17] === arr4) {
@@ -965,7 +965,7 @@ let closure_22 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sear
           arr8.push(element);
         });
       }
-      const num11Result = num11(17120);
+      const num11Result = num11(17130);
     }
     class F {
       constructor(arg0) {
@@ -995,7 +995,7 @@ let closure_22 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sear
     cResult[12] = onPressMediaItem;
     cResult[13] = F;
     tmp35 = F;
-    const obj7 = searchContext(17116);
+    const obj7 = searchContext(17126);
   }
   const obj13 = { searchContext, allMediaResults: EMPTY_MEDIA_RESULTS };
   cResult[8] = EMPTY_MEDIA_RESULTS;

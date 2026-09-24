@@ -1,23 +1,23 @@
-// Module ID: 15940
-// Function ID: 15941
+// Module ID: 15950
+// Function ID: 15951
 // Name: WebAuthnScreen
-// Dependencies: [32, 19, 21, 4758, 580, 6839, 558, 568, 1119, 1181, 1368, 1275, 7192, 14940, 7190, 15941, 15942, 2]
+// Dependencies: [32, 19, 21, 4790, 580, 6871, 558, 568, 1119, 1181, 1368, 1275, 7224, 14978, 7222, 15951, 15952, 2]
 
-// Module 15940 (WebAuthnScreen)
+// Module 15950 (WebAuthnScreen)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import NativeSecurityKeyManagerModuleDefault from "NativeSecurityKeyManagerModule" /* 6839 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7190 */;
-import MfaOptionScreenDefault from "MfaOptionScreen" /* 15942 */;
+import NativeSecurityKeyManagerModuleDefault from "NativeSecurityKeyManagerModule" /* 6871 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7222 */;
+import MfaOptionScreenDefault from "MfaOptionScreen" /* 15952 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const buttonDefault = tmp15(15941);
+const buttonDefault = tmp15(15951);
 require = fn;
 let jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { radioItem: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.md } };
 let closure_6 = createStyles.createStyles(obj2);
 let obj4 = { AUTHENTICATE: 0, [0]: "AUTHENTICATE", ANDROID_PASSKEY: 1, [1]: "ANDROID_PASSKEY" };
@@ -158,16 +158,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   const intl = tmp(1119).intl;
                   dependencyMap(intl.string(tmp(1119).t.xSCvBf));
                 } else {
-                  const result = tmp(7192).captureWebAuthnException(error, {});
+                  const result = tmp(7224).captureWebAuthnException(error, {});
                   dependencyMap(error.message);
-                  const tmpResult = tmp(7192);
+                  const tmpResult = tmp(7224);
                 }
               });
               cleanupPromise = catchPromise.finally(() => closure_1_1(false));
               return;
             }
           }
-          const tmp27 = jsx(tmp(14940).KeyImage, {});
+          const tmp27 = jsx(tmp(14978).KeyImage, {});
           cResult[7] = stringResult;
           cResult[8] = stringResult1;
           cResult[9] = tmp27;
@@ -184,9 +184,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 const intl = tmp(1119).intl;
                 dependencyMap(intl.string(tmp(1119).t.xSCvBf));
               } else {
-                const result = tmp(7192).captureWebAuthnException(error, {});
+                const result = tmp(7224).captureWebAuthnException(error, {});
                 dependencyMap(error.message);
-                const tmpResult = tmp(7192);
+                const tmpResult = tmp(7224);
               }
             });
             cleanupPromise = catchPromise.finally(() => closure_1_1(false));
@@ -208,9 +208,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   const intl = tmp(1119).intl;
                   dependencyMap(intl.string(tmp(1119).t.xSCvBf));
                 } else {
-                  const result = tmp(7192).captureWebAuthnException(error, {});
+                  const result = tmp(7224).captureWebAuthnException(error, {});
                   dependencyMap(error.message);
-                  const tmpResult = tmp(7192);
+                  const tmpResult = tmp(7224);
                 }
               });
               cleanupPromise = catchPromise.finally(() => closure_1_1(false));
@@ -238,9 +238,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const intl = tmp(1119).intl;
             dependencyMap(intl.string(tmp(1119).t.xSCvBf));
           } else {
-            const result = tmp(7192).captureWebAuthnException(error, {});
+            const result = tmp(7224).captureWebAuthnException(error, {});
             dependencyMap(error.message);
-            const tmpResult = tmp(7192);
+            const tmpResult = tmp(7224);
           }
         });
         cleanupPromise = catchPromise.finally(() => closure_1_1(false));
@@ -281,9 +281,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const intl = tmp(1119).intl;
         dependencyMap(intl.string(tmp(1119).t.xSCvBf));
       } else {
-        const result = tmp(7192).captureWebAuthnException(error, {});
+        const result = tmp(7224).captureWebAuthnException(error, {});
         dependencyMap(error.message);
-        const tmpResult = tmp(7192);
+        const tmpResult = tmp(7224);
       }
     }).finally(() => _undefined(false));
   }, items1);
@@ -293,7 +293,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj3.headerText = intl.string(finish(1119).t.saHocI);
   const intl2 = tmp5(1119).intl;
   obj3.subtitle = intl2.string(finish(1119).t.YpMrqM);
-  obj3.headerImage = challenge(finish(14940).KeyImage, {});
+  obj3.headerImage = challenge(finish(14978).KeyImage, {});
   let shouldDisplayAndroidFidoSelector = NativeCeremoniesDefault.shouldDisplayAndroidFidoSelector;
   if (shouldDisplayAndroidFidoSelector) {
     obj4 = { authenticatorSelection, setAuthenticator: tmpResult[1], inProgress: null };

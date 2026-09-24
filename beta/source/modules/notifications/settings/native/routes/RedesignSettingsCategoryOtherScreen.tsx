@@ -1,13 +1,13 @@
-// Module ID: 16241
-// Function ID: 16242
+// Module ID: 16251
+// Function ID: 16252
 // Name: RedesignSettingsCategoryOtherScreen
-// Dependencies: [19, 21, 558, 568, 11594, 16233, 14953, 2]
+// Dependencies: [19, 21, 558, 568, 11630, 16243, 14988, 2]
 
-// Module 16241 (RedesignSettingsCategoryOtherScreen)
+// Module 16251 (RedesignSettingsCategoryOtherScreen)
 import c from "c" /* 568 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
-import SettingLayoutDefault from "SettingLayout" /* 14953 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 16233 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
+import SettingLayoutDefault from "SettingLayout" /* 14988 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 16243 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,13 +20,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: null };
-    const tmpResult = tmp(11594);
-    const items = [tmp(16233).buildCategoryOtherSettingsSection()];
+    const tmpResult = tmp(11630);
+    const items = [tmp(16243).buildCategoryOtherSettingsSection()];
     obj2.sections = items;
     const list = tmpResult.createList(obj2);
     cResult[0] = list;
     let first = list;
-    const tmpResult2 = tmp(16233);
+    const tmpResult2 = tmp(16243);
   } else {
     first = cResult[0];
   }

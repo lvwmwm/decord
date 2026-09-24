@@ -1,13 +1,13 @@
-// Module ID: 13342
-// Function ID: 13343
+// Module ID: 13378
+// Function ID: 13379
 // Name: VideoSlashIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 13343, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 13379, 4493, 2]
 
-// Module 13342 (VideoSlashIcon)
+// Module 13378 (VideoSlashIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod13343 from "module_13343" /* 13343 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod13379 from "module_13379" /* 13379 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const VideoSlashIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(13343);
+    const tmpResult = tmp(13379);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const VideoSlashIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod13343, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod13379, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

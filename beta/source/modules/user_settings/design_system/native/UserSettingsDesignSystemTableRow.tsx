@@ -1,32 +1,32 @@
-// Module ID: 16072
-// Function ID: 16073
+// Module ID: 16082
+// Function ID: 16083
 // Name: UserSettingsDesignSystemTableRow
-// Dependencies: [32, 19, 17, 4580, 1376, 1078, 21, 558, 568, 5822, 7624, 504, 1616, 4754, 1401, 5903, 1181, 7446, 5819, 5901, 5900, 5828, 14384, 14381, 14382, 14383, 8878, 5186, 5198, 2]
+// Dependencies: [32, 19, 17, 4612, 1376, 1078, 21, 558, 568, 5854, 7656, 504, 1616, 4786, 1401, 5935, 1181, 7478, 5851, 5933, 5932, 5860, 14422, 14419, 14420, 14421, 8910, 5218, 5230, 2]
 
-// Module 16072 (UserSettingsDesignSystemTableRow)
+// Module 16082 (UserSettingsDesignSystemTableRow)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import native from "native" /* 1181 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5819 */;
-import TableRow from "TableRow" /* 5822 */;
-import TableRowIcon from "TableRowIcon" /* 5828 */;
-import TableRadioRow from "TableRadioRow" /* 5900 */;
-import TableRadioGroup from "TableRadioGroup" /* 5901 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import TableSwitchRow from "TableSwitchRow" /* 7446 */;
-import SettingsIcon from "SettingsIcon" /* 7624 */;
-import RowButton from "RowButton" /* 8878 */;
-import _modDef14381 from "module_14381" /* 14381 */;
-import _modDef14382 from "module_14382" /* 14382 */;
-import _modDef14383 from "module_14383" /* 14383 */;
-import _modDef14384 from "module_14384" /* 14384 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5851 */;
+import TableRow from "TableRow" /* 5854 */;
+import TableRowIcon from "TableRowIcon" /* 5860 */;
+import TableRadioRow from "TableRadioRow" /* 5932 */;
+import TableRadioGroup from "TableRadioGroup" /* 5933 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import TableSwitchRow from "TableSwitchRow" /* 7478 */;
+import SettingsIcon from "SettingsIcon" /* 7656 */;
+import RowButton from "RowButton" /* 8910 */;
+import _modDef14419 from "module_14419" /* 14419 */;
+import _modDef14420 from "module_14420" /* 14420 */;
+import _modDef14421 from "module_14421" /* 14421 */;
+import _modDef14422 from "module_14422" /* 14422 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
@@ -44,9 +44,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { label: "Notifications", onPress, icon: null };
-    const obj3 = { IconComponent: tmp(7624).SettingsIcon };
-    obj2.icon = __initData(tmp(5822).TableRow.Icon, obj3);
-    const tmp7 = __initData(tmp(5822).TableRow, obj2);
+    const obj3 = { IconComponent: tmp(7656).SettingsIcon };
+    obj2.icon = __initData(tmp(5854).TableRow.Icon, obj3);
+    const tmp7 = __initData(tmp(5854).TableRow, obj2);
     cResult[0] = tmp7;
     let first = tmp7;
   } else {
@@ -125,8 +125,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return;
         }
       }
-      const obj2 = { IconComponent: tmp(7624).SettingsIcon };
-      const tmp17 = closure_12(tmp(5822).TableRow.Icon, obj2);
+      const obj2 = { IconComponent: tmp(7656).SettingsIcon };
+      const tmp17 = closure_12(tmp(5854).TableRow.Icon, obj2);
       cResult[8] = tmp17;
       const tmp16 = tmp17;
     } else {
@@ -145,8 +145,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return;
         }
       }
-      const obj3 = { onPress, icon: tmp16, label: "Boost your Server", subLabel: "Unlock perks for the entire community", trailing: closure_12(tmp(5822).TableRow.Arrow, {}) };
-      const tmp21 = closure_12(tmp(5822).TableRow, obj3);
+      const obj3 = { onPress, icon: tmp16, label: "Boost your Server", subLabel: "Unlock perks for the entire community", trailing: closure_12(tmp(5854).TableRow.Arrow, {}) };
+      const tmp21 = closure_12(tmp(5854).TableRow, obj3);
       const tmp23 = closure_12(closure_14, {});
       cResult[9] = tmp21;
       cResult[10] = tmp23;
@@ -170,9 +170,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       const obj4 = { icon: null, label: "Add a Friend" };
-      const obj5 = { IconComponent: tmp(7624).SettingsIcon };
-      obj4.icon = closure_12(tmp(5822).TableRow.Icon, obj5);
-      const tmp25 = closure_12(tmp(5822).TableRow, obj4);
+      const obj5 = { IconComponent: tmp(7656).SettingsIcon };
+      obj4.icon = closure_12(tmp(5854).TableRow.Icon, obj5);
+      const tmp25 = closure_12(tmp(5854).TableRow, obj4);
       cResult[11] = tmp25;
       const tmp24 = tmp25;
     } else {
@@ -192,9 +192,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       const obj6 = { icon: null, label: "A really long label that takes up all of the space and then some", subLabel: "A really long sublabel that takes up all of the space and then some" };
-      const obj7 = { IconComponent: tmp(7624).SettingsIcon };
-      obj6.icon = closure_12(tmp(5822).TableRow.Icon, obj7);
-      const tmp27 = closure_12(tmp(5822).TableRow, obj6);
+      const obj7 = { IconComponent: tmp(7656).SettingsIcon };
+      obj6.icon = closure_12(tmp(5854).TableRow.Icon, obj7);
+      const tmp27 = closure_12(tmp(5854).TableRow, obj6);
       cResult[12] = tmp27;
       const tmp26 = tmp27;
     } else {
@@ -213,8 +213,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return;
         }
       }
-      const obj8 = { IconComponent: tmp(7624).SettingsIcon };
-      const tmp29 = closure_12(tmp(5822).TableRow.Icon, obj8);
+      const obj8 = { IconComponent: tmp(7656).SettingsIcon };
+      const tmp29 = closure_12(tmp(5854).TableRow.Icon, obj8);
       cResult[13] = tmp29;
       const tmp28 = tmp29;
     } else {
@@ -233,8 +233,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return;
         }
       }
-      const obj9 = { icon: tmp28, label: "A really long label, but next to an arrow, that takes up all of the space and then some", subLabel: "A really long sublabel, but next to an arrow, that takes up all of the space and then some", trailing: closure_12(tmp(5822).TableRow.Arrow, {}) };
-      const tmp31 = closure_12(tmp(5822).TableRow, obj9);
+      const obj9 = { icon: tmp28, label: "A really long label, but next to an arrow, that takes up all of the space and then some", subLabel: "A really long sublabel, but next to an arrow, that takes up all of the space and then some", trailing: closure_12(tmp(5854).TableRow.Arrow, {}) };
+      const tmp31 = closure_12(tmp(5854).TableRow, obj9);
       cResult[14] = tmp31;
       const tmp30 = tmp31;
     } else {
@@ -253,9 +253,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return;
         }
       }
-      const obj10 = { IconComponent: tmp(7624).SettingsIcon };
-      const tmp34 = closure_12(tmp(5822).TableRow.Icon, obj10);
-      const tmp35 = closure_12(tmp(4754).Text, { variant: "text-md/medium", lineClamp: 1, children: "Custom node for label - A really long label that takes up all of the space and then some" });
+      const obj10 = { IconComponent: tmp(7656).SettingsIcon };
+      const tmp34 = closure_12(tmp(5854).TableRow.Icon, obj10);
+      const tmp35 = closure_12(tmp(4786).Text, { variant: "text-md/medium", lineClamp: 1, children: "Custom node for label - A really long label that takes up all of the space and then some" });
       cResult[15] = tmp34;
       cResult[16] = tmp35;
       let tmp33 = tmp35;
@@ -322,10 +322,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj14 = { style: tmp36, children: null };
       const items1 = [tmp38, ];
       const obj15 = { variant: "text-md/medium", lineClamp: 1, color: "text-muted", style: { flexShrink: 1 }, children: "Custom node for subLabel - A really long sublabel that takes up all of the space and then some" };
-      items1[1] = closure_12(tmp(4754).Text, obj15);
+      items1[1] = closure_12(tmp(4786).Text, obj15);
       obj14.children = items1;
       obj13.subLabel = closure_13(closure_5, obj14);
-      const tmp44 = closure_12(tmp(5822).TableRow, obj13);
+      const tmp44 = closure_12(tmp(5854).TableRow, obj13);
       cResult[19] = tmp44;
       const tmp41 = tmp44;
     } else {
@@ -347,11 +347,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj16 = { hasIcons: true, children: null };
       const items2 = [tmp18, tmp19, tmp24, tmp26, tmp30, tmp41, ];
       const obj17 = { icon: null, label: "A disabled row", subLabel: "you cant do anything with this", disabled: true };
-      const obj18 = { IconComponent: tmp(7624).SettingsIcon };
-      obj17.icon = closure_12(tmp(5822).TableRow.Icon, obj18);
-      items2[6] = closure_12(tmp(5822).TableRow, obj17);
+      const obj18 = { IconComponent: tmp(7656).SettingsIcon };
+      obj17.icon = closure_12(tmp(5854).TableRow.Icon, obj18);
+      items2[6] = closure_12(tmp(5854).TableRow, obj17);
       obj16.children = items2;
-      const tmp47 = closure_13(tmp(5903).TableRowGroup, obj16);
+      const tmp47 = closure_13(tmp(5935).TableRowGroup, obj16);
       cResult[20] = tmp47;
     } else {
       class E {
@@ -391,7 +391,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj20 = { label: null, subLabel: null, icon: null };
     ({ globalName: obj23.label, username: obj23.subLabel } = stateFromStores);
     obj20.icon = tmp48;
-    const tmp53 = closure_12(tmp(5822).TableRow, obj20);
+    const tmp53 = closure_12(tmp(5854).TableRow, obj20);
     cResult[23] = stateFromStores.globalName;
     cResult[24] = stateFromStores.username;
     cResult[25] = tmp48;
@@ -539,26 +539,26 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj50 = { label: "First Item", subLabel: "Here is an item", onPress };
   const obj51 = { label: "Second Item", subLabel: "Here is another item", onPress };
   const obj52 = { label: "Third Item", subLabel: "Here is yet another item", onPress };
-  obj55.icon = closure_12(TableRowIcon.TableRowIcon, { variant: "text-status-online", source: _modDef14384 });
+  obj55.icon = closure_12(TableRowIcon.TableRowIcon, { variant: "text-status-online", source: _modDef14422 });
   const items8 = [closure_12(TableRadioRow.TableRadioRow, obj55), , , ];
   const obj57 = { icon: null, label: "Idle", value: "option2" };
-  const obj56 = { variant: "text-status-online", source: _modDef14384 };
-  obj57.icon = closure_12(TableRowIcon.TableRowIcon, { variant: "text-status-idle", source: _modDef14381 });
+  const obj56 = { variant: "text-status-online", source: _modDef14422 };
+  obj57.icon = closure_12(TableRowIcon.TableRowIcon, { variant: "text-status-idle", source: _modDef14419 });
   items8[1] = closure_12(TableRadioRow.TableRadioRow, obj57);
   const obj59 = { icon: null, label: "Do Not Disturb", value: "option3" };
-  const obj58 = { variant: "text-status-idle", source: _modDef14381 };
-  obj59.icon = closure_12(TableRowIcon.TableRowIcon, { variant: "text-status-dnd", source: _modDef14382 });
+  const obj58 = { variant: "text-status-idle", source: _modDef14419 };
+  obj59.icon = closure_12(TableRowIcon.TableRowIcon, { variant: "text-status-dnd", source: _modDef14420 });
   items8[2] = closure_12(TableRadioRow.TableRadioRow, obj59);
   const obj61 = { icon: null, label: "Invisible", value: "option4" };
-  const obj60 = { variant: "text-status-dnd", source: _modDef14382 };
-  obj61.icon = closure_12(TableRowIcon.TableRowIcon, { variant: "text-status-offline", source: _modDef14383 });
+  const obj60 = { variant: "text-status-dnd", source: _modDef14420 };
+  obj61.icon = closure_12(TableRowIcon.TableRowIcon, { variant: "text-status-offline", source: _modDef14421 });
   items8[3] = closure_12(TableRadioRow.TableRadioRow, obj61);
   obj54.children = items8;
   items3[5] = closure_13(TableRadioGroup.TableRadioGroup, obj54);
   const obj63 = { spacing: 12, children: null };
   const items9 = [closure_12(Text_Text.Text, { variant: "heading-sm/semibold", children: "Row buttons" }), , , ];
   const obj64 = { icon: null, label: "Boost your server", onPress: null };
-  const obj62 = { variant: "text-status-offline", source: _modDef14383 };
+  const obj62 = { variant: "text-status-offline", source: _modDef14421 };
   obj64.icon = closure_12(TableRow.TableRow.Icon, { IconComponent: SettingsIcon.SettingsIcon });
   obj64.onPress = onPress;
   items9[1] = closure_12(RowButton.RowButton, obj64);

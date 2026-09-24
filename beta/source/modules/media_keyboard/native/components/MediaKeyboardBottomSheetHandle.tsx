@@ -1,13 +1,13 @@
-// Module ID: 10939
-// Function ID: 10940
+// Module ID: 10975
+// Function ID: 10976
 // Name: MediaKeyboardBottomSheetHandle
-// Dependencies: [19, 21, 558, 568, 8543, 1119, 9182, 2]
+// Dependencies: [19, 21, 558, 568, 8575, 1119, 9214, 2]
 
-// Module 10939 (MediaKeyboardBottomSheetHandle)
+// Module 10975 (MediaKeyboardBottomSheetHandle)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import useStateFromSharedValue from "useStateFromSharedValue" /* 8543 */;
-import native from "native" /* 9182 */;
+import useStateFromSharedValue from "useStateFromSharedValue" /* 8575 */;
+import native from "native" /* 9214 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -51,7 +51,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onPres
       }
     }
     const obj2 = { onPress, accessibilityLabel: cResult[2], "aria-hidden": null == onPress };
-    const tmp13 = jsx(tmp(9182).ActionSheetDragHandle, { onPress, accessibilityLabel: cResult[2], "aria-hidden": null == onPress });
+    const tmp13 = jsx(tmp(9214).ActionSheetDragHandle, { onPress, accessibilityLabel: cResult[2], "aria-hidden": null == onPress });
     cResult[3] = cResult[2];
     cResult[4] = onPress;
     cResult[5] = null == onPress;

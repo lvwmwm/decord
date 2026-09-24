@@ -1,9 +1,9 @@
-// Module ID: 12578
-// Function ID: 12579
+// Module ID: 12614
+// Function ID: 12615
 // Name: ChatInputCharCounter
-// Dependencies: [32, 19, 1376, 1078, 1378, 21, 4758, 558, 568, 4418, 504, 9416, 9425, 4458, 1119, 5341, 4754, 8938, 2]
+// Dependencies: [32, 19, 1376, 1078, 1378, 21, 4790, 558, 568, 4450, 504, 9448, 9457, 4490, 1119, 5373, 4786, 8970, 2]
 
-// Module 12578 (ChatInputCharCounter)
+// Module 12614 (ChatInputCharCounter)
 import util from "util" /* 1119 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -14,7 +14,7 @@ const UpsellTypes = fn(1078).UpsellTypes;
 const PremiumUpsellTypes = fn(1378).PremiumUpsellTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles({ container: { alignItems: "center", paddingBottom: 6 } });
 const ReactCompilerGating = fn(558);
 const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocations, ref) => {
@@ -38,7 +38,7 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   let obj3 = noop;
   let tmpResult = analyticsLocations(504);
   [r10036, dependencyMap] = maxLength(noop.useState(0), 2);
-  const tmp10 = stateFromStores(9416)();
+  const tmp10 = stateFromStores(9448)();
   maxLength = tmp10;
   if (cResult[2] !== tmp10) {
     class E {
@@ -124,7 +124,7 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   const stateFromStores = analyticsLocations(504).useStateFromStores(items, () => stateFromStores(_undefined[9]).canUseIncreasedMessageLength(currentUser.getCurrentUser()));
   let obj = analyticsLocations(504);
   [tmp6, c2] = maxLength(noop.useState(0), 2);
-  const tmp7 = stateFromStores(9416)();
+  const tmp7 = stateFromStores(9448)();
   maxLength = tmp7;
   const imperativeHandle = noop.useImperativeHandle(ref, () => ({
     onMessageLengthChanged(arg0) {
@@ -138,9 +138,9 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
     let obj3 = { color: "text-feedback-critical", lineClamp: 1, variant: "text-xs/medium", children: null };
     const _HermesInternal = HermesInternal;
     obj3.children = "-" + tmp6;
-    const items2 = [closure_8(tmp2(4754).Text, obj3), closure_8(tmp2(8938).NitroWheelIcon, { size: "sm" })];
+    const items2 = [closure_8(tmp2(4786).Text, obj3), closure_8(tmp2(8970).NitroWheelIcon, { size: "sm" })];
     obj2.children = items2;
-    tmp10 = closure_9(tmp2(5341).PressableOpacity, obj2);
+    tmp10 = closure_9(tmp2(5373).PressableOpacity, obj2);
   }
   return tmp10;
 }));

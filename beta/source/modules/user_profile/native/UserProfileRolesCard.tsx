@@ -1,17 +1,17 @@
-// Module ID: 7432
-// Function ID: 7433
+// Module ID: 7464
+// Function ID: 7465
 // Name: UserProfileRolesCard
-// Dependencies: [19, 17, 2109, 2103, 1078, 21, 4758, 580, 558, 568, 7433, 2023, 7435, 7436, 4457, 1119, 7434, 7441, 7450, 4754, 7452, 5341, 7453, 504, 7454, 2]
+// Dependencies: [19, 17, 2109, 2103, 1078, 21, 4790, 580, 558, 568, 7465, 2023, 7467, 7468, 4489, 1119, 7466, 7473, 7482, 4786, 7484, 5373, 7485, 504, 7486, 2]
 
-// Module 7432 (UserProfileRolesCard)
+// Module 7464 (UserProfileRolesCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ToastUtils from "ToastUtils" /* 4457 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ClipboardUtils from "ClipboardUtils" /* 7436 */;
-import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7450 */;
-import RoleIconDefault from "RoleIcon" /* 7452 */;
-import UserProfileRoleUtils from "UserProfileRoleUtils" /* 7453 */;
+import ToastUtils from "ToastUtils" /* 4489 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ClipboardUtils from "ClipboardUtils" /* 7468 */;
+import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7482 */;
+import RoleIconDefault from "RoleIcon" /* 7484 */;
+import UserProfileRoleUtils from "UserProfileRoleUtils" /* 7485 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 import GuildRoleStore from "GuildRoleStore" /* 2103 */;
@@ -23,7 +23,7 @@ const Constants = fn(1078);
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
 let c12 = 12;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { roleContainer: { flexDirection: "row", gap: 8, flexWrap: "wrap" }, role: { flexDirection: "row", alignItems: "center", columnGap: 4, padding: 6, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.sm }, roleDot: null };
 let size = { borderRadius: nativeDefault.radii.round, height: 12, width: 12 };
 obj2.roleDot = size;
@@ -94,7 +94,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
       if (cResult[3] === role.id) {
         let tmp9 = cResult[4];
       }
-      const roleIconProps = tmp(7433).useRoleIconProps(tmp9);
+      const roleIconProps = tmp(7465).useRoleIconProps(tmp9);
       const tags = role.tags;
       let guild_connections;
       if (tags != null) {
@@ -110,7 +110,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
         cResult[5] = obj2;
         cResult[6] = obj3;
       }
-      guildId(7435);
+      guildId(7467);
       if (cResult[7] === tmp4) {
         if (cResult[8] === role.id) {
           let tmp20 = cResult[9];
@@ -265,7 +265,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
                               } else {
                                 tmp5 = colorString;
                                 tmp6 = null;
-                                tmp4 = f40518;
+                                tmp4 = f40559;
                                 obj = { color: null };
                                 obj.color = tmp5;
                                 tmp3Result = tmp3(tmp4, obj);
@@ -298,7 +298,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
                           obj4.style = role2.role;
                           tmp2 = tmp23();
                           obj4.children = tmp2;
-                          const tmp24Result = tmp24(tmp(5341).PressableHighlight, obj4);
+                          const tmp24Result = tmp24(tmp(5373).PressableHighlight, obj4);
                         } else {
                           class T {
                             constructor() {
@@ -358,7 +358,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
                               } else {
                                 tmp5 = colorString;
                                 tmp6 = null;
-                                tmp4 = f40518;
+                                tmp4 = f40559;
                                 obj = { color: null };
                                 obj.color = tmp5;
                                 tmp3Result = tmp3(tmp4, obj);
@@ -412,7 +412,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
                             } else {
                               tmp5 = colorString;
                               tmp6 = null;
-                              tmp4 = f40518;
+                              tmp4 = f40559;
                               obj = { color: null };
                               obj.color = tmp5;
                               tmp3Result = tmp3(tmp4, obj);
@@ -488,7 +488,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
                 } else {
                   tmp5 = colorString;
                   tmp6 = null;
-                  tmp4 = f40518;
+                  tmp4 = f40559;
                   obj = { color: null };
                   obj.color = tmp5;
                   tmp3Result = tmp3(tmp4, obj);
@@ -583,7 +583,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
       cResult[8] = role.id;
       cResult[9] = D;
       tmp20 = D;
-      let tmpResult = tmp(7433);
+      let tmpResult = tmp(7465);
     }
     const obj6 = { guildId, roleId: role.id, size };
     cResult[2] = guildId;
@@ -716,7 +716,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildMemberRol
         class C {
           constructor(arg0) {
             obj = { role: guildMemberRoleIds, guildId };
-            return jsx(f40520, obj, guildMemberRoleIds.id);
+            return jsx(f40561, obj, guildMemberRoleIds.id);
           }
         }
         cResult[8] = guildId;
@@ -726,7 +726,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildMemberRol
         class C {
           constructor(arg0) {
             obj = { role: guildMemberRoleIds, guildId };
-            return jsx(f40520, obj, guildMemberRoleIds.id);
+            return jsx(f40561, obj, guildMemberRoleIds.id);
           }
         }
       }
@@ -830,7 +830,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         if (cResult[11] === style) {
         }
         const obj2 = { title: tmp13, style, children: tmp15 };
-        tmp2 = closure_9(guildId(7454), obj2);
+        tmp2 = closure_9(guildId(7486), obj2);
         cResult[11] = style;
         cResult[12] = tmp15;
         cResult[13] = tmp2;
@@ -875,8 +875,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     obj2.style = userId.style;
     const obj3 = { guildId, guildMemberRoleIds: roles };
     obj2.children = closure_9(closure_16, obj3);
-    tmp4 = closure_9(guildId(7454), obj2);
-    const tmp7 = guildId(7454);
+    tmp4 = closure_9(guildId(7486), obj2);
+    const tmp7 = guildId(7486);
   }
   return tmp4;
 });

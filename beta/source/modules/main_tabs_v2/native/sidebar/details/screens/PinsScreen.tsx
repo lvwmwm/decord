@@ -1,19 +1,19 @@
-// Module ID: 17335
-// Function ID: 17336
+// Module ID: 17345
+// Function ID: 17346
 // Name: PinsScreen
-// Dependencies: [19, 17, 2045, 8127, 21, 4758, 580, 558, 568, 1491, 504, 12447, 17195, 2]
+// Dependencies: [19, 17, 2045, 8159, 21, 4790, 580, 558, 568, 1491, 504, 12483, 17205, 2]
 
-// Module 17335 (PinsScreen)
+// Module 17345 (PinsScreen)
 import nativeDefault from "native" /* 580 */;
-import messages_PinsScreenDefault from "messages/PinsScreen" /* 17195 */;
+import messages_PinsScreenDefault from "messages/PinsScreen" /* 17205 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 const require = fn;
 const View = fn(17).View;
-const SearchTabs = fn(8127).SearchTabs;
+const SearchTabs = fn(8159).SearchTabs;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER } };
 let closure_7 = createStyles.createStyles(obj);
 const ReactCompilerGating = fn(558);
@@ -50,7 +50,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj2 = channelId(1491);
   const stateFromStores = channelId(504).useStateFromStores(first, tmp6);
   const tmpResult = channelId(504);
-  const channelDetailsSearchContext = channelId(12447).useChannelDetailsSearchContext(channelId, stateFromStores);
+  const channelDetailsSearchContext = channelId(12483).useChannelDetailsSearchContext(channelId, stateFromStores);
   const tmp9 = closure_7();
   if (cResult[3] !== channelDetailsSearchContext) {
     const obj3 = { searchContext: channelDetailsSearchContext, isFocused: true, tab: SearchTabs.PINS };
@@ -85,7 +85,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return guild_id;
   });
   const obj2 = channelId(504);
-  const channelDetailsSearchContext = channelId(12447).useChannelDetailsSearchContext(channelId, stateFromStores);
+  const channelDetailsSearchContext = channelId(12483).useChannelDetailsSearchContext(channelId, stateFromStores);
   const obj4 = { style: closure_7().container, children: jsx(messages_PinsScreenDefault, { searchContext: channelDetailsSearchContext, isFocused: true, tab: SearchTabs.PINS }) };
   return <View style={closure_7().container}>{jsx(messages_PinsScreenDefault, { searchContext: channelDetailsSearchContext, isFocused: true, tab: SearchTabs.PINS })}</View>;
 }));

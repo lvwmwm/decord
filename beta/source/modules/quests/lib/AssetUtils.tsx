@@ -1,22 +1,22 @@
-// Module ID: 10570
-// Function ID: 10571
+// Module ID: 10606
+// Function ID: 10607
 // Name: AssetUtils
-// Dependencies: [5663, 1078, 10571, 10572, 10573, 10574, 10575, 7949, 10582, 10583, 5671, 1370, 1883, 2]
+// Dependencies: [5695, 1078, 10607, 10608, 10609, 10610, 10611, 7981, 10618, 10619, 5703, 1370, 1883, 2]
 // Exports: buildUrl, getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl
 
-// Module 10570 (AssetUtils)
+// Module 10606 (AssetUtils)
 import URLUtilsDefault from "URLUtils" /* 1370 */;
 import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1883 */;
-import FirstPartyQuestTaskTypes2 from "FirstPartyQuestTaskTypes" /* 5671 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7949 */;
-import _modDef10571 from "module_10571" /* 10571 */;
-import _modDef10572 from "module_10572" /* 10572 */;
-import _modDef10573 from "module_10573" /* 10573 */;
-import _modDef10574 from "module_10574" /* 10574 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 10575 */;
-import _modDef10582 from "module_10582" /* 10582 */;
-import _modDef10583 from "module_10583" /* 10583 */;
-import QuestConstants from "QuestConstants" /* 5663 */;
+import FirstPartyQuestTaskTypes2 from "FirstPartyQuestTaskTypes" /* 5703 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7981 */;
+import _modDef10607 from "module_10607" /* 10607 */;
+import _modDef10608 from "module_10608" /* 10608 */;
+import _modDef10609 from "module_10609" /* 10609 */;
+import _modDef10610 from "module_10610" /* 10610 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 10611 */;
+import _modDef10618 from "module_10618" /* 10618 */;
+import _modDef10619 from "module_10619" /* 10619 */;
+import QuestConstants from "QuestConstants" /* 5695 */;
 import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
@@ -197,7 +197,7 @@ let obj2 = { VIDEO: "video", VIDEO_LOW_RES: "videoLowRes", VIDEO_HLS: "videoHls"
 let obj3 = { VIDEO: "url", THUMBNAIL: "thumbnail", CAPTION: "caption", TRANSCRIPT: "transcript" };
 let obj4 = { TIER_1: 1, [1]: "TIER_1", TIER_2: 2, [2]: "TIER_2", TIER_3: 3, [3]: "TIER_3", TIER_4: 4, [4]: "TIER_4" };
 let closure_11 = { [QuestAssetType.VIDEO_PLAYER_VIDEO]: { variant: obj2.VIDEO, property: obj3.VIDEO }, [QuestAssetType.VIDEO_PLAYER_VIDEO_LOW_RES]: { variant: obj2.VIDEO_LOW_RES, property: obj3.VIDEO }, [QuestAssetType.VIDEO_PLAYER_VIDEO_HLS]: { variant: obj2.VIDEO_HLS, property: obj3.VIDEO }, [QuestAssetType.VIDEO_PLAYER_THUMBNAIL]: { variant: obj2.VIDEO, property: obj3.THUMBNAIL }, [QuestAssetType.VIDEO_PLAYER_CAPTION]: { variant: obj2.VIDEO, property: obj3.CAPTION }, [QuestAssetType.VIDEO_PLAYER_TRANSCRIPT]: { variant: obj2.VIDEO, property: obj3.TRANSCRIPT } };
-const obj11 = { [TIER_1]: _modDef10571, [TIER_2]: _modDef10572, [TIER_3]: _modDef10573, [TIER_4]: _modDef10574 };
+const obj11 = { [TIER_1]: _modDef10607, [TIER_2]: _modDef10608, [TIER_3]: _modDef10609, [TIER_4]: _modDef10610 };
 ({ TIER_1, TIER_2, TIER_3, TIER_4 } = obj4);
 let result = size.fileFinishedImporting("modules/quests/lib/AssetUtils.tsx");
 
@@ -252,10 +252,10 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_THUMBNAI
         const obj3 = { url: tmp29, mimetype: "video/webm", isAnimated: true };
         let obj5 = obj3;
       } else if (arg3) {
-        const obj4 = { url: _modDef10582, mimetype: "video/mp4", isAnimated: true };
+        const obj4 = { url: _modDef10618, mimetype: "video/mp4", isAnimated: true };
         obj5 = obj4;
       } else {
-        obj5 = { url: _modDef10583, mimetype: "video/webm", isAnimated: true };
+        obj5 = { url: _modDef10619, mimetype: "video/webm", isAnimated: true };
       }
       return obj5;
     } else {

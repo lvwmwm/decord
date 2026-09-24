@@ -1,16 +1,16 @@
-// Module ID: 13611
-// Function ID: 13612
+// Module ID: 13647
+// Function ID: 13648
 // Name: useCheckoutPlanPriceString
-// Dependencies: [19, 7668, 558, 568, 1368, 7653, 2]
+// Dependencies: [19, 7700, 558, 568, 1368, 7685, 2]
 
-// Module 13611 (useCheckoutPlanPriceString)
+// Module 13647 (useCheckoutPlanPriceString)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
 const PlatformUtils = obj(1368);
-const PremiumBundledPlansUtils = obj(7653);
+const PremiumBundledPlansUtils = obj(7685);
 require = fn;
-const useNativeCheckoutStore = fn(7668).useNativeCheckoutStore;
+const useNativeCheckoutStore = fn(7700).useNativeCheckoutStore;
 let ReactCompilerGating = fn(558);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((productId) => {
   let obj = require;

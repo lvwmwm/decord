@@ -1,16 +1,16 @@
-// Module ID: 10940
-// Function ID: 10941
+// Module ID: 10976
+// Function ID: 10977
 // Name: MediaKeyboardBottomSheetActions
-// Dependencies: [19, 17, 21, 4758, 580, 1368, 558, 568, 4577, 676, 1616, 4462, 5198, 5341, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 1368, 558, 568, 4609, 676, 1616, 4494, 5230, 5373, 4786, 2]
 
-// Module 10940 (MediaKeyboardBottomSheetActions)
+// Module 10976 (MediaKeyboardBottomSheetActions)
 import nativeDefault from "native" /* 580 */;
 import _modDef676 from "module_676" /* 676 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import Pressables from "Pressables" /* 5341 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import Pressables from "Pressables" /* 5373 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles((arg0, arg1, arg2) => {
   let PX_24 = arg0;
   const obj = { wrap: null, container: null, buttonsContainer: null, button: null, gradient: null };
@@ -216,22 +216,22 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onHeig
   dependencyMap = undefined;
   noop = undefined;
   variant = undefined;
-  const gradientValue = onHeightChange(4577).useGradientValue(onHeightChange(4577).GradientPercentage.END);
+  const gradientValue = onHeightChange(4609).useGradientValue(onHeightChange(4609).GradientPercentage.END);
   let hexResult = null;
   if (null != gradientValue) {
     let obj2 = _modDef676(gradientValue);
     hexResult = _modDef676(gradientValue).alpha(0.95).hex();
     let alphaResult = _modDef676(gradientValue).alpha(0.95);
   }
-  let obj = onHeightChange(4577);
-  const tmp6 = closure_8(useSafeAreaInsetsDefault().bottom, onHeightChange(4462).useToken(nativeDefault.colors.MOBILE_FLOATINGBAR_BACKGROUND_HIGHER), hexResult);
+  let obj = onHeightChange(4609);
+  const tmp6 = closure_8(useSafeAreaInsetsDefault().bottom, onHeightChange(4494).useToken(nativeDefault.colors.MOBILE_FLOATINGBAR_BACKGROUND_HIGHER), hexResult);
   importDefault = tmp6;
-  const tmpResult = onHeightChange(4462);
-  dependencyMap = onHeightChange(4462).useToken(nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_ICON_COLOR_ACTIVE);
-  const tmpResult4 = onHeightChange(4462);
-  noop = onHeightChange(4462).useToken(nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_COLOR_ACTIVE);
-  const tmpResult5 = onHeightChange(4462);
-  variant = onHeightChange(4462).useToken(nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_VARIANT);
+  const tmpResult = onHeightChange(4494);
+  dependencyMap = onHeightChange(4494).useToken(nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_ICON_COLOR_ACTIVE);
+  const tmpResult4 = onHeightChange(4494);
+  noop = onHeightChange(4494).useToken(nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_COLOR_ACTIVE);
+  const tmpResult5 = onHeightChange(4494);
+  variant = onHeightChange(4494).useToken(nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_VARIANT);
   let items = [tmp6.gradient.color];
   const memo = noop.useMemo(() => {
     const obj = { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: null };
@@ -253,7 +253,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onHeig
     children: null
   };
   let obj4 = { style: tmp6.gradient };
-  const tmpResult6 = onHeightChange(4462);
+  const tmpResult6 = onHeightChange(4494);
   const merged = Object.assign(memo);
   obj4.pointerEvents = "none";
   const items2 = [closure_6(LinearGradientDefault, obj4), ];

@@ -1,46 +1,52 @@
 // Module ID: 4301
 // Function ID: 4302
-// Dependencies: [4302, 4303, 4304, 4305, 4306]
+// Dependencies: [3885, 3881, 4153, 3882]
+// Exports: default
 
 // Module 4301
-import module_4302 from "module_4302" /* 4302 */;
-import module_4303 from "module_4303" /* 4303 */;
-import module_4304 from "module_4304" /* 4304 */;
-import date_mod from "module_4305" /* 4305 */;
-import date_mod from "module_4306" /* 4306 */;
+import module_3885_mod from "module_3885" /* 3885 */;
+import _typeof_mod from "module_3881" /* 3881 */;
+import module_4153_mod from "module_4153" /* 4153 */;
+import requiredArgs_mod from "requiredArgs" /* 3882 */;
 
-if (!module_4302) {
-  const obj = { default: module_4302 };
+let module_3885 = module_3885_mod;
+if (!module_3885) {
+  const obj = { default: module_3885 };
   let tmp3 = obj;
 } else {
-  tmp3 = module_4302;
+  tmp3 = module_3885;
 }
-if (!module_4303) {
-  const obj2 = { default: module_4303 };
+module_3885 = tmp3;
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj2 = { default: _typeof };
   let tmp5 = obj2;
 } else {
-  tmp5 = module_4303;
+  tmp5 = _typeof;
 }
-if (!module_4304) {
-  const obj3 = { default: module_4304 };
+_typeof = tmp5;
+let module_4153 = module_4153_mod;
+if (!module_4153) {
+  const obj3 = { default: module_4153 };
   let tmp7 = obj3;
 } else {
-  tmp7 = module_4304;
+  tmp7 = module_4153;
 }
-let date = date_mod;
-if (!date) {
-  const obj4 = { default: date };
+module_4153 = tmp7;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj4 = { default: requiredArgs };
   let tmp9 = obj4;
 } else {
-  tmp9 = date;
+  tmp9 = requiredArgs;
 }
-let date = date_mod;
-if (!date) {
-  const obj5 = { default: date };
-  let tmp11 = obj5;
-} else {
-  tmp11 = date;
-}
+requiredArgs = tmp9;
 
-export default { code: "zh-CN", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
+export default function setISOWeek(arg0, arg1) {
+  requiredArgs.default(2, arguments);
+  const defaultResult1 = _typeof.default(arg0);
+  const diff = module_4153.default(defaultResult1) - module_3885.default(arg1);
+  defaultResult1.setDate(defaultResult1.getDate() - 7 * diff);
+  return defaultResult1;
+};
 export default exports.default;

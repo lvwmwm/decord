@@ -1,15 +1,15 @@
-// Module ID: 17543
-// Function ID: 17544
+// Module ID: 17553
+// Function ID: 17554
 // Name: useConsoleConnectedAccountForVoiceUpsell
-// Dependencies: [5500, 5498, 4775, 9356, 1078, 558, 568, 504, 17544, 2]
+// Dependencies: [5532, 5530, 4807, 9388, 1078, 558, 568, 504, 17554, 2]
 
-// Module 17543 (useConsoleConnectedAccountForVoiceUpsell)
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
-import GameConsoleStore from "GameConsoleStore" /* 4775 */;
+// Module 17553 (useConsoleConnectedAccountForVoiceUpsell)
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5532 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5530 */;
+import GameConsoleStore from "GameConsoleStore" /* 4807 */;
 
 const require = fn;
-const CONSOLE_VOICE_PLATFORMS = fn(9356).CONSOLE_VOICE_PLATFORMS;
+const CONSOLE_VOICE_PLATFORMS = fn(9388).CONSOLE_VOICE_PLATFORMS;
 const ActivityTypes = fn(1078).ActivityTypes;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

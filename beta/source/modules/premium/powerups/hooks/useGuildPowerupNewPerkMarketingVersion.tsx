@@ -1,19 +1,19 @@
-// Module ID: 12666
-// Function ID: 12667
+// Module ID: 12702
+// Function ID: 12703
 // Name: useGuildPowerupNewPerkMarketingVersion
-// Dependencies: [19, 2067, 4399, 4648, 1078, 558, 568, 4671, 504, 4687, 4686, 4651, 9836, 2]
+// Dependencies: [19, 2067, 4431, 4680, 1078, 558, 568, 4703, 504, 4719, 4718, 4683, 9868, 2]
 
-// Module 12666 (useGuildPowerupNewPerkMarketingVersion)
-import Powerups from "Powerups" /* 4651 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9836 */;
+// Module 12702 (useGuildPowerupNewPerkMarketingVersion)
+import Powerups from "Powerups" /* 4683 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9868 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const GuildPowerupsConstants = fn(4648);
+const GuildPowerupsConstants = fn(4680);
 ({ GuildPowerupNewPerkMarketingVersion: hasOwnProperty, NEW_PERK_MARKETING_VERSION_TO_POWERUP_SKU_ID_SET: metroRequire } = GuildPowerupsConstants);
 const Constants = fn(1078);
 ({ GuildFeatures: closure_7, Permissions: closure_8 } = Constants);

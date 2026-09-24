@@ -1,36 +1,36 @@
-// Module ID: 17527
-// Function ID: 17528
+// Module ID: 17537
+// Function ID: 17538
 // Name: VoicePanelTitleButton
-// Dependencies: [19, 17, 4985, 2050, 2045, 4779, 21, 4758, 558, 568, 10006, 1119, 5189, 7390, 504, 4911, 9929, 9182, 580, 12419, 4910, 17528, 5246, 17465, 5186, 17500, 5250, 8543, 1099, 17499, 17529, 2]
+// Dependencies: [19, 17, 5017, 2050, 2045, 4811, 21, 4790, 558, 568, 10045, 1119, 5221, 7422, 504, 4943, 9961, 9214, 580, 12455, 4942, 17538, 5278, 17475, 5218, 17510, 5282, 8575, 1099, 17509, 17539, 2]
 
-// Module 17527 (VoicePanelTitleButton)
+// Module 17537 (VoicePanelTitleButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
-import useChannelNameDefault from "useChannelName" /* 4911 */;
-import BaseTextButton from "BaseTextButton" /* 5189 */;
-import _modDef5246 from "module_5246" /* 5246 */;
-import _modDef5250 from "module_5250" /* 5250 */;
-import _modDef7390 from "module_7390" /* 7390 */;
-import native from "native" /* 9182 */;
-import ShieldLockIcon from "ShieldLockIcon" /* 10006 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12419 */;
-import QuestActivityButtonDefault from "QuestActivityButton" /* 17465 */;
-import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 17500 */;
-import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 17529 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
+import useChannelNameDefault from "useChannelName" /* 4943 */;
+import BaseTextButton from "BaseTextButton" /* 5221 */;
+import _modDef5278 from "module_5278" /* 5278 */;
+import _modDef5282 from "module_5282" /* 5282 */;
+import _modDef7422 from "module_7422" /* 7422 */;
+import native from "native" /* 9214 */;
+import ShieldLockIcon from "ShieldLockIcon" /* 10045 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12455 */;
+import QuestActivityButtonDefault from "QuestActivityButton" /* 17475 */;
+import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 17510 */;
+import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 17539 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 4985 */;
+import ApplicationStore from "ApplicationStore" /* 5017 */;
 import StageInstanceStore from "StageInstanceStore" /* 2050 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
-const _modDef17528 = tmp4(17528);
+const _modDef17538 = tmp4(17538);
 require = fn;
 const View = fn(17).View;
-const ParticipantTypes = fn(4779).ParticipantTypes;
+const ParticipantTypes = fn(4811).ParticipantTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_11 = createStyles.createStyles({ userIcons: { marginLeft: -6 }, channelButtons: { alignItems: "center", flexDirection: "row", gap: 2 } });
 let ReactCompilerGating = fn(558);
 let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -40,9 +40,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { size: "xs", accessibilityLabel: null };
     const intl = tmp(1119).intl;
     obj2.accessibilityLabel = intl.string(tmp(1119).t.VHXh8a);
-    const tmp8 = options(tmp(10006).ShieldLockIcon, obj2);
-    const obj3 = { source: _modDef7390 };
-    const tmp10 = options(tmp(5189).BaseTextButton.Icon, obj3);
+    const tmp8 = options(tmp(10045).ShieldLockIcon, obj2);
+    const obj3 = { source: _modDef7422 };
+    const tmp10 = options(tmp(5221).BaseTextButton.Icon, obj3);
     cResult[0] = tmp8;
     cResult[1] = tmp10;
     tmp5 = tmp8;
@@ -67,7 +67,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj2 = { size: "xs", accessibilityLabel: null };
   const intl = util.intl;
   obj2.accessibilityLabel = intl.string(util.t.VHXh8a);
-  const items = [options(ShieldLockIcon.ShieldLockIcon, obj2), options(BaseTextButton.BaseTextButton.Icon, { source: _modDef7390 })];
+  const items = [options(ShieldLockIcon.ShieldLockIcon, obj2), options(BaseTextButton.BaseTextButton.Icon, { source: _modDef7422 })];
   obj.children = items;
   return v65535(View, obj);
 });
@@ -105,7 +105,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
     tmp10 = cResult[4];
   }
   const tmpResult = channelId(504);
-  const isCallSecureFramesVerified = channelId(9929).useIsCallSecureFramesVerified(tmp10);
+  const isCallSecureFramesVerified = channelId(9961).useIsCallSecureFramesVerified(tmp10);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1119).intl;
     const stringResult = intl.string(tmp(1119).t["Y2b7+e"]);
@@ -122,7 +122,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
     if (isCallSecureFramesVerified) {
       let tmp8Result = closure_9(closure_12, {});
     } else {
-      tmp8Result = tmp8(7390);
+      tmp8Result = tmp8(7422);
     }
     cResult[6] = isCallSecureFramesVerified;
     cResult[7] = tmp8Result;
@@ -136,7 +136,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
       }
     }
     const obj3 = { accessibilityRole: "button", accessibilityHint: tmp12, text: str, icon: cResult[7], iconOpticalOffsetMargin: -tmp8(580).space.PX_4, iconPosition: "end", onPress, maxFontSizeMultiplier: 2 };
-    const tmp21 = closure_9(tmp(9182).HeaderButton, obj3);
+    const tmp21 = closure_9(tmp(9214).HeaderButton, obj3);
     cResult[8] = onPress;
     cResult[9] = str;
     cResult[10] = cResult[7];
@@ -149,7 +149,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   const stateFromStores = channelId(504).useStateFromStores(items, () => ChannelStore.getChannel(channelId));
   let str = useChannelNameDefault(stateFromStores);
   const obj = channelId(504);
-  const isCallSecureFramesVerified = channelId(9929).useIsCallSecureFramesVerified({ channelId });
+  const isCallSecureFramesVerified = channelId(9961).useIsCallSecureFramesVerified({ channelId });
   const obj3 = { accessibilityRole: "button", accessibilityHint: null, text: null, icon: null, iconOpticalOffsetMargin: null, iconPosition: "end", onPress: null, maxFontSizeMultiplier: 2 };
   const intl = channelId(1119).intl;
   obj3.accessibilityHint = intl.string(channelId(1119).t["Y2b7+e"]);
@@ -160,12 +160,12 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   if (isCallSecureFramesVerified) {
     let tmp3Result = tmp5(closure_12, {});
   } else {
-    tmp3Result = tmp3(7390);
+    tmp3Result = tmp3(7422);
   }
   obj3.icon = tmp3Result;
   obj3.iconOpticalOffsetMargin = -nativeDefault.space.PX_4;
   obj3.onPress = channelId.onPress;
-  return closure_9(channelId(9182).HeaderButton, obj3);
+  return closure_9(channelId(9214).HeaderButton, obj3);
 });
 ReactCompilerGating = fn(558);
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
@@ -200,7 +200,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
       return tmp11;
     }
   }
-  const tmp12 = options(native.HeaderButton, { accessibilityRole: "button", accessibilityHint: first, accessibilityLabel: tmp9, text: name, icon: _modDef17528, iconPosition: "start", onPress });
+  const tmp12 = options(native.HeaderButton, { accessibilityRole: "button", accessibilityHint: first, accessibilityLabel: tmp9, text: name, icon: _modDef17538, iconPosition: "start", onPress });
   cResult[3] = name;
   cResult[4] = onPress;
   cResult[5] = tmp9;
@@ -217,7 +217,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   const intl2 = util.intl;
   obj2.accessibilityLabel = intl2.formatToPlainString(util.t.I0mOAs, { username: name });
   obj2.text = name;
-  obj2.icon = _modDef17528;
+  obj2.icon = _modDef17538;
   obj2.onPress = onPress;
   return options(native.HeaderButton, obj2);
 });
@@ -282,14 +282,14 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) =
     const obj3 = { direction: "horizontal", spacing: nativeDefault.space.PX_8, children: null };
     const items1 = [tmp10, tmp12];
     obj3.children = items1;
-    const tmp19 = closure_10(tmp(5186).Stack, obj3);
+    const tmp19 = closure_10(tmp(5218).Stack, obj3);
     cResult[9] = tmp10;
     cResult[10] = tmp12;
     cResult[11] = tmp19;
     tmp16 = tmp19;
   }
   const tmpResult = participant(504);
-  const tmp11 = closure_9(participant(9182).HeaderButton, { accessibilityRole: "button", accessibilityHint: tmp8, text: str, icon: _modDef5246, iconPosition: "start", onPress, shrink: true });
+  const tmp11 = closure_9(participant(9214).HeaderButton, { accessibilityRole: "button", accessibilityHint: tmp8, text: str, icon: _modDef5278, iconPosition: "start", onPress, shrink: true });
   cResult[4] = onPress;
   cResult[5] = str;
   cResult[6] = tmp11;
@@ -310,11 +310,11 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) =
     str = "???";
   }
   obj3.text = str;
-  obj3.icon = _modDef5246;
+  obj3.icon = _modDef5278;
   obj3.onPress = participant.onPress;
-  const items1 = [closure_9(participant(9182).HeaderButton, obj3), closure_9(QuestActivityButtonDefault, { applicationId: participant.applicationId })];
+  const items1 = [closure_9(participant(9214).HeaderButton, obj3), closure_9(QuestActivityButtonDefault, { applicationId: participant.applicationId })];
   obj2.children = items1;
-  return closure_10(participant(5186).Stack, obj2);
+  return closure_10(participant(5218).Stack, obj2);
 });
 ReactCompilerGating = fn(558);
 let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -472,8 +472,8 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
       }
       return tmp20;
     }
-    const obj2 = { accessibilityRole: "button", accessibilityHint: tmp15, text: tmp18, icon: _modDef5250, iconPosition: "start", onPress };
-    const tmp22 = closure_9(tmp(9182).HeaderButton, obj2);
+    const obj2 = { accessibilityRole: "button", accessibilityHint: tmp15, text: tmp18, icon: _modDef5282, iconPosition: "start", onPress };
+    const tmp22 = closure_9(tmp(9214).HeaderButton, obj2);
     cResult[11] = onPress;
     cResult[12] = tmp18;
     cResult[13] = tmp22;
@@ -536,9 +536,9 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
     topic = intl2.string(tmp(1119).t.zLZPmk);
   }
   obj3.text = topic;
-  obj3.icon = _modDef5250;
+  obj3.icon = _modDef5282;
   obj3.onPress = channelId.onPress;
-  return closure_9(channelId(9182).HeaderButton, obj3);
+  return closure_9(channelId(9214).HeaderButton, obj3);
 });
 ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -546,7 +546,7 @@ let result = size.fileFinishedImporting("modules/voice_panel/native/shared/Voice
 
 export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = guildId(568).c(19);
-  const context = noop.useContext(channelId(12419));
+  const context = noop.useContext(channelId(12455));
   guildId = context.guildId;
   channelId = context.channelId;
   ({ channelType, focused } = context);
@@ -565,8 +565,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const obj = guildId(568);
   const tmp4 = channelId;
-  const derivedStateFromSharedValue = guildId(8543).useDerivedStateFromSharedValue(focused, first);
-  const tmp8 = tmp4(17499)(derivedStateFromSharedValue, channelId, guildId);
+  const derivedStateFromSharedValue = guildId(8575).useDerivedStateFromSharedValue(focused, first);
+  const tmp8 = tmp4(17509)(derivedStateFromSharedValue, channelId, guildId);
   if (cResult[1] === channelId) {
     if (cResult[2] === guildId) {
       let tmp9 = cResult[3];
@@ -648,18 +648,18 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = I;
   tmp9 = I;
 }) : (() => {
-  const context = noop.useContext(channelId(12419));
+  const context = noop.useContext(channelId(12455));
   const guildId = context.guildId;
   channelId = context.channelId;
   ({ channelType, focused } = context);
-  const derivedStateFromSharedValue = guildId(8543).useDerivedStateFromSharedValue(focused, (id) => {
+  const derivedStateFromSharedValue = guildId(8575).useDerivedStateFromSharedValue(focused, (id) => {
     id = undefined;
     if (id != null) {
       id = id.id;
     }
     return id;
   });
-  const tmp3 = channelId(17499)(derivedStateFromSharedValue, channelId, guildId);
+  const tmp3 = channelId(17509)(derivedStateFromSharedValue, channelId, guildId);
   const items = [guildId, channelId];
   const onPress = noop.useCallback(() => {
     const result = VoicePanelSettingsActionCreators.openVoicePanelSettingsActionSheet(guildId, channelId);

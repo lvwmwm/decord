@@ -1,13 +1,13 @@
-// Module ID: 15418
-// Function ID: 15419
+// Module ID: 15428
+// Function ID: 15429
 // Name: QuestBottomSheetTaskSelect
-// Dependencies: [19, 5663, 21, 558, 568, 9159, 1119, 5822, 9346, 5903, 2]
+// Dependencies: [19, 5695, 21, 558, 568, 9191, 1119, 5854, 9378, 5935, 2]
 
-// Module 15418 (QuestBottomSheetTaskSelect)
+// Module 15428 (QuestBottomSheetTaskSelect)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const QuestTaskPlatform = fn(5663).QuestTaskPlatform;
+const QuestTaskPlatform = fn(5695).QuestTaskPlatform;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
 const ReactCompilerGating = fn(558);
@@ -18,7 +18,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onTaskSelect) =>
   const cResult = onTaskSelect(568).c(11);
   onTaskSelect = onTaskSelect.onTaskSelect;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = closure_3(tmp(9159).ScreenIcon, {});
+    const tmp7 = closure_3(tmp(9191).ScreenIcon, {});
     const intl = tmp(1119).intl;
     const stringResult = intl.string(tmp(1119).t["QXc01+"]);
     cResult[0] = tmp7;
@@ -41,7 +41,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onTaskSelect) =>
           return tmpResult;
         }
     };
-    const tmp11 = closure_3(tmp(5822).TableRow, obj2);
+    const tmp11 = closure_3(tmp(5854).TableRow, obj2);
     cResult[2] = onTaskSelect;
     cResult[3] = tmp11;
     let tmp9 = tmp11;
@@ -49,7 +49,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onTaskSelect) =>
     tmp9 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp15 = closure_3(tmp(9346).GameControllerIcon, {});
+    const tmp15 = closure_3(tmp(9378).GameControllerIcon, {});
     const intl2 = tmp(1119).intl;
     const stringResult1 = intl2.string(tmp(1119).t["8lAfuB"]);
     cResult[4] = tmp15;
@@ -73,7 +73,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onTaskSelect) =>
           return tmpResult;
         }
     };
-    const tmp19 = closure_3(tmp(5822).TableRow, obj3);
+    const tmp19 = closure_3(tmp(5854).TableRow, obj3);
     cResult[6] = onTaskSelect;
     cResult[7] = tmp19;
     let tmp17 = tmp19;
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onTaskSelect) =>
   const obj4 = { hasIcons: true, children: null };
   const items = [tmp9, tmp17];
   obj4.children = items;
-  const tmp21 = closure_4(onTaskSelect(5903).TableRowGroup, obj4);
+  const tmp21 = closure_4(onTaskSelect(5935).TableRowGroup, obj4);
   cResult[8] = tmp9;
   cResult[9] = tmp17;
   cResult[10] = tmp21;
@@ -97,7 +97,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onTaskSelect) =>
 }) : ((onTaskSelect) => {
   onTaskSelect = onTaskSelect.onTaskSelect;
   const obj = { hasIcons: true, children: null };
-  const obj2 = { arrow: true, icon: closure_3(onTaskSelect(9159).ScreenIcon, {}), label: null, onPress: null };
+  const obj2 = { arrow: true, icon: closure_3(onTaskSelect(9191).ScreenIcon, {}), label: null, onPress: null };
   const intl = onTaskSelect(1119).intl;
   obj2.label = intl.string(onTaskSelect(1119).t["QXc01+"]);
   obj2.onPress = function onPress() {
@@ -107,8 +107,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onTaskSelect) =>
     }
     return tmpResult;
   };
-  const items = [closure_3(onTaskSelect(5822).TableRow, obj2), ];
-  const obj3 = { arrow: true, icon: closure_3(onTaskSelect(9346).GameControllerIcon, {}), label: null, onPress: null };
+  const items = [closure_3(onTaskSelect(5854).TableRow, obj2), ];
+  const obj3 = { arrow: true, icon: closure_3(onTaskSelect(9378).GameControllerIcon, {}), label: null, onPress: null };
   const intl2 = onTaskSelect(1119).intl;
   obj3.label = intl2.string(onTaskSelect(1119).t["8lAfuB"]);
   obj3.onPress = function onPress() {
@@ -118,7 +118,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onTaskSelect) =>
     }
     return tmpResult;
   };
-  items[1] = closure_3(onTaskSelect(5822).TableRow, obj3);
+  items[1] = closure_3(onTaskSelect(5854).TableRow, obj3);
   obj.children = items;
-  return closure_4(onTaskSelect(5903).TableRowGroup, obj);
+  return closure_4(onTaskSelect(5935).TableRowGroup, obj);
 });

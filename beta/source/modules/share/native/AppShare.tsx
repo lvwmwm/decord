@@ -1,16 +1,16 @@
-// Module ID: 18387
-// Function ID: 18388
+// Module ID: 18397
+// Function ID: 18398
 // Name: AppShare
-// Dependencies: [32, 19, 17, 7707, 14678, 502, 1078, 12563, 21, 558, 568, 504, 6832, 1368, 14717, 12566, 7722, 1245, 5203, 14171, 1613, 8638, 7285, 17381, 17427, 5116, 14837, 2]
+// Dependencies: [32, 19, 17, 7739, 14716, 502, 1078, 12599, 21, 558, 568, 504, 6864, 1368, 14755, 12602, 7754, 1245, 5235, 14208, 1613, 8670, 7317, 17391, 17437, 5148, 14875, 2]
 
-// Module 18387 (AppShare)
+// Module 18397 (AppShare)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import useMountEffectDefault from "useMountEffect" /* 5203 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6832 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7722 */;
-import ShareScreenDefault from "ShareScreen" /* 14171 */;
-import AccessibilityManagerDefault from "AccessibilityManager" /* 14717 */;
+import useMountEffectDefault from "useMountEffect" /* 5235 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6864 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7754 */;
+import ShareScreenDefault from "ShareScreen" /* 14208 */;
+import AccessibilityManagerDefault from "AccessibilityManager" /* 14755 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -20,10 +20,10 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ BackHandler: hasOwnProperty, NativeModules: metroRequire } = get_ActivityIndicator);
-const AnalyticsTrackingStore = fn(7707);
-const ShareStore = fn(14678);
+const AnalyticsTrackingStore = fn(7739);
+const ShareStore = fn(14716);
 const AnalyticEvents = fn(1078).AnalyticEvents;
-let closure_9 = fn(12563).MultiAccountSwitchLocation;
+let closure_9 = fn(12599).MultiAccountSwitchLocation;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 let ReactCompilerGating = fn(558);
@@ -273,9 +273,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((attachments) => 
         const _Symbol = Symbol;
         if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
           const obj2 = { appEntryKey: share };
-          const tmp27 = closure_10(tmp(17381).ActionSheetContainer, obj2);
-          const tmp28 = closure_10(tmp11(17427), {});
-          const tmp29 = closure_10(tmp(5116).AlertModalContainer, {});
+          const tmp27 = closure_10(tmp(17391).ActionSheetContainer, obj2);
+          const tmp28 = closure_10(tmp11(17437), {});
+          const tmp29 = closure_10(tmp(5148).AlertModalContainer, {});
           cResult[9] = tmp27;
           cResult[10] = tmp28;
           cResult[11] = tmp29;
@@ -291,7 +291,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((attachments) => 
           const obj3 = { appEntryKey: share, children: null };
           const items = [tmp13, tmp22, tmp23, tmp24];
           obj3.children = items;
-          const tmp33 = closure_11(tmp11(14837), obj3);
+          const tmp33 = closure_11(tmp11(14875), obj3);
           cResult[12] = tmp13;
           cResult[13] = tmp33;
           let tmp30 = tmp33;
@@ -302,7 +302,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((attachments) => 
       }
     }
     if (!tmp4) {
-      const tmp14Result = tmp14(tmp(7285).SceneLoadingIndicator, {});
+      const tmp14Result = tmp14(tmp(7317).SceneLoadingIndicator, {});
       cResult[6] = tmp4;
       cResult[7] = attachments;
       cResult[8] = tmp14Result;
@@ -310,7 +310,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((attachments) => 
     const obj4 = { appEntryKey: share, sharedContent: attachments, onClose: null };
     const tmp11Result = ShareScreenDefault;
     if (tmpResult.isMetaQuest()) {
-      let exitApp = tmp11(8638).close;
+      let exitApp = tmp11(8670).close;
     } else {
       exitApp = closure_5.exitApp;
     }
@@ -357,9 +357,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((attachments) => 
   const obj = { appEntryKey: share, children: null };
   if (tmp) {
     const obj2 = { appEntryKey: tmp9, sharedContent: attachments, onClose: null };
-    const tmp4Result = tmp4(14171);
+    const tmp4Result = tmp4(14208);
     if (obj3.isMetaQuest()) {
-      let exitApp = tmp4(8638).close;
+      let exitApp = tmp4(8670).close;
     } else {
       exitApp = closure_5.exitApp;
     }
@@ -370,7 +370,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((attachments) => 
     const items1 = [tmp10(require("SceneLoadingIndicator").SceneLoadingIndicator, {}), , , ];
     const obj4 = { appEntryKey: tmp9 };
     items1[1] = tmp10(require("MainShared").ActionSheetContainer, obj4);
-    items1[2] = tmp10(tmp4(17427), {});
+    items1[2] = tmp10(tmp4(17437), {});
     items1[3] = tmp10(require("AlertModal").AlertModalContainer, {});
     obj.children = items1;
     return closure_11(tmp8, obj);

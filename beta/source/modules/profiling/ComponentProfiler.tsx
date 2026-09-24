@@ -1,10 +1,10 @@
-// Module ID: 13018
-// Function ID: 13019
+// Module ID: 13054
+// Function ID: 13055
 // Name: ComponentProfiler
 // Dependencies: [19, 21, 558, 568, 2]
 // Exports: clearComponentRenderStats, dumpStats, getComponentRenderStats, pauseComponentProfiler, resetComponentProfiler, resumeComponentProfiler, serializeComponentRenderAverages
 
-// Module 13018 (ComponentProfiler)
+// Module 13054 (ComponentProfiler)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,30 +1,30 @@
-// Module ID: 13361
-// Function ID: 13362
+// Module ID: 13397
+// Function ID: 13398
 // Name: VibegrationsCustomWidgetAddOption
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 8515, 13362, 4725, 13363, 1119, 3682, 12984, 4754, 7456, 5341, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 8547, 13398, 4757, 13399, 1119, 3714, 13020, 4786, 7488, 5373, 2]
 
-// Module 13361 (VibegrationsCustomWidgetAddOption)
+// Module 13397 (VibegrationsCustomWidgetAddOption)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8515 */;
-import VibegrationsCustomWidget from "VibegrationsCustomWidget" /* 13362 */;
-import VibegrationsCustomWidgetSheet from "VibegrationsCustomWidgetSheet" /* 13363 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4757 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8547 */;
+import VibegrationsCustomWidget from "VibegrationsCustomWidget" /* 13398 */;
+import VibegrationsCustomWidgetSheet from "VibegrationsCustomWidgetSheet" /* 13399 */;
 import noop from "module_19" /* 19 */;
 
 const VibegrationsCustomWidgetSheetDefault = VibegrationsCustomWidgetSheet;
 
 const util = PressableOpacity(1119);
-const Text_Text = PressableOpacity(4754);
-const Pressables = PressableOpacity(5341);
-const ChevronSmallRightIcon = PressableOpacity(7456);
-const MagicWandIcon = PressableOpacity(12984);
+const Text_Text = PressableOpacity(4786);
+const Pressables = PressableOpacity(5373);
+const ChevronSmallRightIcon = PressableOpacity(7488);
+const MagicWandIcon = PressableOpacity(13020);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const VibegrationsCustomWidgetAddOption = "VibegrationsCustomWidgetAddOption";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { row: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_16 }, copy: null };
 let obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_16 };
 obj2.copy = { flex: 1, gap: nativeDefault.space.PX_4 };
@@ -57,7 +57,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = util.intl;
-      const stringResult = intl.string(tmp4(3682)["27bu14"]);
+      const stringResult = intl.string(tmp4(3714)["27bu14"]);
       cResult[1] = stringResult;
       let tmp7 = stringResult;
     } else {
@@ -80,7 +80,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const obj4 = { variant: "text-sm/semibold", color: "text-strong", children: null };
         const intl2 = util.intl;
-        obj4.children = intl2.string(tmp4(3682)["4OR+L+"]);
+        obj4.children = intl2.string(tmp4(3714)["4OR+L+"]);
         const tmp15 = hasOwnProperty(Text_Text.Text, obj4);
         cResult[6] = tmp15;
         let tmp13 = tmp15;
@@ -91,7 +91,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
         const obj5 = { variant: "text-xs/normal", color: "text-muted", children: null };
         const intl3 = util.intl;
-        obj5.children = intl3.string(tmp4(3682)["27bu14"]);
+        obj5.children = intl3.string(tmp4(3714)["27bu14"]);
         const tmp18 = hasOwnProperty(Text_Text.Text, obj5);
         cResult[7] = tmp18;
         let tmp16 = tmp18;
@@ -143,27 +143,27 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (canConjureVibegrationsCustomWidget) {
     const obj2 = { accessibilityRole: "button", accessibilityLabel: null, style: null, onPress: null, children: null };
     const intl = tmp5(1119).intl;
-    obj2.accessibilityLabel = intl.string(tmp2(3682)["27bu14"]);
+    obj2.accessibilityLabel = intl.string(tmp2(3714)["27bu14"]);
     const items = [tmp4.card, tmp.row];
     obj2.style = items;
     obj2.onPress = tmp7;
     const obj3 = { size: "sm", color: tmp2(580).colors.ICON_MUTED };
-    const items1 = [hasOwnProperty(tmp5(12984).MagicWandIcon, obj3), , ];
+    const items1 = [hasOwnProperty(tmp5(13020).MagicWandIcon, obj3), , ];
     const obj4 = { style: tmp.copy, children: null };
     const obj5 = { variant: "text-sm/semibold", color: "text-strong", children: null };
     const intl2 = tmp5(1119).intl;
-    obj5.children = intl2.string(tmp2(3682)["4OR+L+"]);
-    const items2 = [hasOwnProperty(tmp5(4754).Text, obj5), ];
+    obj5.children = intl2.string(tmp2(3714)["4OR+L+"]);
+    const items2 = [hasOwnProperty(tmp5(4786).Text, obj5), ];
     const obj6 = { variant: "text-xs/normal", color: "text-muted", children: null };
     const intl3 = tmp5(1119).intl;
-    obj6.children = intl3.string(tmp2(3682)["27bu14"]);
-    items2[1] = hasOwnProperty(tmp5(4754).Text, obj6);
+    obj6.children = intl3.string(tmp2(3714)["27bu14"]);
+    items2[1] = hasOwnProperty(tmp5(4786).Text, obj6);
     obj4.children = items2;
     items1[1] = timestampProducer(View, obj4);
     const obj7 = { size: "xs", color: tmp2(580).colors.ICON_MUTED };
-    items1[2] = hasOwnProperty(tmp5(7456).ChevronSmallRightIcon, obj7);
+    items1[2] = hasOwnProperty(tmp5(7488).ChevronSmallRightIcon, obj7);
     obj2.children = items1;
-    tmp8 = timestampProducer(tmp5(5341).PressableOpacity, obj2);
+    tmp8 = timestampProducer(tmp5(5373).PressableOpacity, obj2);
   }
   return tmp8;
 });

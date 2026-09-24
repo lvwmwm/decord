@@ -1,14 +1,14 @@
-// Module ID: 16451
-// Function ID: 16452
+// Module ID: 16461
+// Function ID: 16462
 // Name: FavoritesGuildCategorySettingsModal
-// Dependencies: [32, 19, 17, 2048, 2058, 21, 4758, 580, 558, 568, 1488, 504, 2070, 10605, 8112, 1119, 5110, 1181, 6846, 4715, 5903, 5822, 5186, 11228, 11229, 2]
+// Dependencies: [32, 19, 17, 2048, 2058, 21, 4790, 580, 558, 568, 1488, 504, 2070, 10641, 8144, 1119, 5142, 1181, 6878, 4747, 5935, 5854, 5218, 11264, 11265, 2]
 
-// Module 16451 (FavoritesGuildCategorySettingsModal)
+// Module 16461 (FavoritesGuildCategorySettingsModal)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10605 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10641 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
@@ -18,7 +18,7 @@ let ScrollView = fn(17).ScrollView;
 let maxLength = fn(2058).MAX_FAVORITE_CATEGORY_NAME_LENGTH;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, content: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.content = { padding: nativeDefault.space.PX_16 };
@@ -246,7 +246,7 @@ let result = size.fileFinishedImporting("modules/favorites/native/modal/Favorite
 export default ReactCompilerGating.isReactCompilerEnabled() ? ((categoryId) => {
   const cResult = categoryId(568).c(4);
   categoryId = categoryId.categoryId;
-  onGoBack = onGoBack(11228)().onGoBack;
+  onGoBack = onGoBack(11264)().onGoBack;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1119).intl;
     const stringResult = intl.string(tmp(1119).t["/uELTj"]);
@@ -261,7 +261,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((categoryId) => {
     }
     return tmp7;
   }
-  const tmp8 = closure_8(onGoBack(11229), {
+  const tmp8 = closure_8(onGoBack(11265), {
     screenKey: "favoritesGuildCategorySettings",
     title: first,
     render() {
@@ -275,12 +275,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((categoryId) => {
 }) : ((categoryId) => {
   categoryId = categoryId.categoryId;
   let onGoBack;
-  onGoBack = onGoBack(11228)().onGoBack;
+  onGoBack = onGoBack(11264)().onGoBack;
   const obj = { screenKey: "favoritesGuildCategorySettings", title: null, render: null };
   const intl = categoryId(1119).intl;
   obj.title = intl.string(categoryId(1119).t["/uELTj"]);
   obj.render = function render() {
     return closure_2_8(closure_11, { categoryId, onGoBack });
   };
-  return closure_8(onGoBack(11229), obj);
+  return closure_8(onGoBack(11265), obj);
 });

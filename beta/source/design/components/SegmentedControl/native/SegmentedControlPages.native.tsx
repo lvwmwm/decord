@@ -1,14 +1,14 @@
-// Module ID: 12780
-// Function ID: 12781
+// Module ID: 12816
+// Function ID: 12817
 // Name: SegmentedControlPages
-// Dependencies: [109, 32, 19, 17, 21, 4497, 558, 568, 12781, 1368, 6891, 5182, 5141, 2]
+// Dependencies: [109, 32, 19, 17, 21, 4529, 558, 568, 12817, 1368, 6923, 5214, 5173, 2]
 
-// Module 12780 (SegmentedControlPages)
+// Module 12816 (SegmentedControlPages)
 import c from "c" /* 568 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4497 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5182 */;
-import MathUtils from "MathUtils" /* 12781 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4529 */;
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5214 */;
+import MathUtils from "MathUtils" /* 12817 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -328,7 +328,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
     fn.__closure = obj6;
     fn.__workletHash = 6740536171688;
     fn.__initData = __initData17;
-    const animatedStyle = tmp(4497).useAnimatedStyle(fn);
+    const animatedStyle = tmp(4529).useAnimatedStyle(fn);
     if (cResult[15] === tmp4) {
       class H {
         constructor() {
@@ -373,7 +373,7 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((reportedPageIn
     cResult[16] = tmp5;
     cResult[17] = tmp6;
     cResult[18] = N;
-    const tmpResult4 = tmp(4497);
+    const tmpResult4 = tmp(4529);
   }
   class C {
     constructor() {
@@ -729,9 +729,9 @@ export const SegmentedControlPages = ReactCompilerGating.isReactCompilerEnabled(
           }
           if (tmp4) {
             const result2 = sharedValue1.set(obj2.get());
-            const tmp13Result = tmp13(4497);
-            tmp13(4497).runOnJS(onPageChanged)(obj2.get());
-            const runOnJSResult = tmp13(4497).runOnJS(onPageChanged);
+            const tmp13Result = tmp13(4529);
+            tmp13(4529).runOnJS(onPageChanged)(obj2.get());
+            const runOnJSResult = tmp13(4529).runOnJS(onPageChanged);
           }
         }
       }
@@ -768,8 +768,8 @@ export const SegmentedControlPages = ReactCompilerGating.isReactCompilerEnabled(
             const result = obj.set(-1);
           } else {
             value = obj.get();
-            tmp(4497).runOnJS(closure_18)(value);
-            const tmpResult = tmp(4497);
+            tmp(4529).runOnJS(closure_18)(value);
+            const tmpResult = tmp(4529);
           }
           obj2 = MathUtils;
           tmp = require;
@@ -967,7 +967,7 @@ export const SegmentedControlPages = ReactCompilerGating.isReactCompilerEnabled(
                                     class Pe {
                                       constructor(arg0, arg1) {
                                         obj = { index: arg1, activePageRangeStart: closure_21, activePageRangeEnd: closure_22, reportedPageIndex: closure_11, pageIndex: closure_10, scrollTargetPageIndex: closure_23, style: closure_20, item: onEndDragWorklet };
-                                        return jsx(f61334, obj, arg1);
+                                        return jsx(f61385, obj, arg1);
                                       }
                                     }
                                     if (null != nativeGesture) {
@@ -975,7 +975,7 @@ export const SegmentedControlPages = ReactCompilerGating.isReactCompilerEnabled(
                                       class Pe {
                                         constructor(arg0, arg1) {
                                           obj = { index: arg1, activePageRangeStart: closure_21, activePageRangeEnd: closure_22, reportedPageIndex: closure_11, pageIndex: closure_10, scrollTargetPageIndex: closure_23, style: closure_20, item: onEndDragWorklet };
-                                          return jsx(f61334, obj, arg1);
+                                          return jsx(f61385, obj, arg1);
                                         }
                                       }
                                       const tmp47 = scrollOverflow(tmp(tmp2[10]).GestureDetector, obj17);
@@ -994,7 +994,7 @@ export const SegmentedControlPages = ReactCompilerGating.isReactCompilerEnabled(
                         class Pe {
                           constructor(arg0, arg1) {
                             obj = { index: arg1, activePageRangeStart: closure_21, activePageRangeEnd: closure_22, reportedPageIndex: closure_11, pageIndex: closure_10, scrollTargetPageIndex: closure_23, style: closure_20, item: onEndDragWorklet };
-                            return jsx(f61334, obj, arg1);
+                            return jsx(f61385, obj, arg1);
                           }
                         }
                         obj18.style = tmp36;
@@ -1038,7 +1038,7 @@ export const SegmentedControlPages = ReactCompilerGating.isReactCompilerEnabled(
                     class Pe {
                       constructor(arg0, arg1) {
                         obj = { index: arg1, activePageRangeStart: closure_21, activePageRangeEnd: closure_22, reportedPageIndex: closure_11, pageIndex: closure_10, scrollTargetPageIndex: closure_23, style: closure_20, item: onEndDragWorklet };
-                        return jsx(f61334, obj, arg1);
+                        return jsx(f61385, obj, arg1);
                       }
                     }
                     cResult[19] = first;
@@ -1056,7 +1056,7 @@ export const SegmentedControlPages = ReactCompilerGating.isReactCompilerEnabled(
           class Pe {
             constructor(arg0, arg1) {
               obj = { index: arg1, activePageRangeStart: closure_21, activePageRangeEnd: closure_22, reportedPageIndex: closure_11, pageIndex: closure_10, scrollTargetPageIndex: closure_23, style: closure_20, item: onEndDragWorklet };
-              return jsx(f61334, obj, arg1);
+              return jsx(f61385, obj, arg1);
             }
           }
           cResult[26] = tmp30;
@@ -1267,8 +1267,8 @@ export const SegmentedControlPages = ReactCompilerGating.isReactCompilerEnabled(
         const result = obj.set(-1);
       } else {
         value = obj.get();
-        tmp(4497).runOnJS(callback2)(value);
-        const tmpResult = tmp(4497);
+        tmp(4529).runOnJS(callback2)(value);
+        const tmpResult = tmp(4529);
       }
       obj2 = MathUtils;
       tmp = require;

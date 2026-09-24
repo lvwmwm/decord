@@ -1,24 +1,24 @@
-// Module ID: 11669
-// Function ID: 11670
+// Module ID: 11705
+// Function ID: 11706
 // Name: ChannelsAndRolesModal
-// Dependencies: [32, 19, 17, 2067, 7348, 21, 4758, 580, 558, 568, 565, 7579, 1119, 9868, 9869, 11670, 11676, 11229, 2]
+// Dependencies: [32, 19, 17, 2067, 7380, 21, 4790, 580, 558, 568, 565, 7611, 1119, 9900, 9901, 11706, 11712, 11265, 2]
 
-// Module 11669 (ChannelsAndRolesModal)
+// Module 11705 (ChannelsAndRolesModal)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7579 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11229 */;
+import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7611 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11265 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
 const View = fn(17).View;
-const GuildOnboardingTab = fn(7348).GuildOnboardingTab;
+const GuildOnboardingTab = fn(7380).GuildOnboardingTab;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { screen: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, tabBar: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.tabBar = { paddingHorizontal: nativeDefault.space.PX_12, paddingTop: nativeDefault.space.PX_16 };
@@ -218,7 +218,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   const obj = guildId(568);
   const stateFromStores = guildId(565).useStateFromStores(first, tmp6);
-  const tmp9 = defaultTab(7579)(stateFromStores);
+  const tmp9 = defaultTab(7611)(stateFromStores);
   if (cResult[3] !== tmp9) {
     const intl = tmp(1119).intl;
     const string = intl.string;
@@ -245,11 +245,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       class I {
         constructor() {
           obj = { guildId, defaultTab };
-          return jsx(f57638, obj);
+          return jsx(f57689, obj);
         }
       }
       const obj2 = { screenKey: "channelAndRolesModal", title: tmp10, render: tmp13 };
-      const tmp15 = closure_8(defaultTab(11229), obj2);
+      const tmp15 = closure_8(defaultTab(11265), obj2);
       cResult[8] = tmp10;
       cResult[9] = tmp13;
       cResult[10] = tmp15;
@@ -258,7 +258,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     class I {
       constructor() {
         obj = { guildId, defaultTab };
-        return jsx(f57638, obj);
+        return jsx(f57689, obj);
       }
     }
     cResult[5] = defaultTab;

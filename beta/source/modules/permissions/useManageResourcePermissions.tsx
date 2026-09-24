@@ -1,14 +1,14 @@
-// Module ID: 9755
-// Function ID: 9756
+// Module ID: 9787
+// Function ID: 9788
 // Name: useManageResourcePermissions
-// Dependencies: [32, 19, 4399, 1376, 9756, 1089, 1090, 558, 568, 2059, 504, 2]
+// Dependencies: [32, 19, 4431, 1376, 9788, 1089, 1090, 558, 568, 2059, 504, 2]
 // Exports: attachChannelPermissions, getManageResourcePermissions
 
-// Module 9755 (useManageResourcePermissions)
+// Module 9787 (useManageResourcePermissions)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
@@ -64,7 +64,7 @@ function canManageResource(arg0, stateFromStores, canResult1, c0) {
   }
   return tmp;
 }
-const PermissionsConstants = fn(9756);
+const PermissionsConstants = fn(9788);
 ({ CREATE_GUILD_EVENT_CORE_PERMISSIONS: closure_7, CREATE_GUILD_EVENT_STAGE_CHANNEL_PERMISSIONS: closure_8, CREATE_GUILD_EVENT_VOICE_CHANNEL_PERMISSIONS: closure_9 } = PermissionsConstants);
 const Permissions = fn(1089).Permissions;
 let closure_11 = {

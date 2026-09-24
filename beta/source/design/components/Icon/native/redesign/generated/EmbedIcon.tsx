@@ -1,13 +1,13 @@
-// Module ID: 9541
-// Function ID: 9542
+// Module ID: 9573
+// Function ID: 9574
 // Name: EmbedIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 9542, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9574, 4493, 2]
 
-// Module 9541 (EmbedIcon)
+// Module 9573 (EmbedIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod9542 from "module_9542" /* 9542 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9574 from "module_9574" /* 9574 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const EmbedIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(9542);
+    const tmpResult = tmp(9574);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const EmbedIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9542, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9574, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

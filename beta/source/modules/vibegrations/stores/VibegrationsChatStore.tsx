@@ -1,25 +1,25 @@
-// Module ID: 13365
-// Function ID: 13366
+// Module ID: 13401
+// Function ID: 13402
 // Name: VibegrationsChatStore
-// Dependencies: [32, 109, 7784, 12948, 2099, 4580, 5498, 9307, 1078, 2052, 1119, 3682, 9310, 2023, 10137, 504, 577, 2]
+// Dependencies: [32, 109, 7816, 12984, 2099, 4612, 5530, 9339, 1078, 2052, 1119, 3714, 9342, 2023, 10176, 504, 577, 2]
 // Exports: getOlderHistoryCursor, turnSettled
 
-// Module 13365 (VibegrationsChatStore)
+// Module 13401 (VibegrationsChatStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import util from "util" /* 1119 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 9310 */;
-import SoundUtils from "SoundUtils" /* 10137 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 9342 */;
+import SoundUtils from "SoundUtils" /* 10176 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7784 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 12948 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7816 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 12984 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9307 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5530 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9339 */;
 
 require = fn;
 function newMessage(assistant, content, arg2) {
@@ -344,8 +344,8 @@ function recordThinkingTransition(projectId) {
             isWindowFocusedResult = SelectedChannelStore.getChannelId() === StaticChannelRoute.VIBEGRATIONS;
           }
           if (isWindowFocusedResult) {
-            isWindowFocusedResult = tmp68(9310).isWindowFocused();
-            const tmp68Result = tmp68(9310);
+            isWindowFocusedResult = tmp68(9342).isWindowFocused();
+            const tmp68Result = tmp68(9342);
           }
           if (guild_id == null) {
             guild_id = project.guild_id;
@@ -387,7 +387,7 @@ function recordThinkingTransition(projectId) {
                     if ("terminal_error" !== tmp47.kind) {
                       if ("preview_ready" === tmp47.kind) {
                         let intl = util.intl;
-                        content = intl.string(_modDef3682["78YNh7"]);
+                        content = intl.string(_modDef3714["78YNh7"]);
                       } else {
                         diff3 = diff3 - 1;
                         content = null;
@@ -1069,7 +1069,7 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
                 const items = [];
                 const obj2 = { type: "step", kind: "terminal_error", message: null };
                 const intl = util.intl;
-                obj2.message = intl.string(_modDef3682["wjWm+/"]);
+                obj2.message = intl.string(_modDef3714["wjWm+/"]);
                 items[HermesBuiltin.arraySpread(disposition.steps, 0)] = obj2;
                 obj.steps = items;
                 tmp2 = obj;

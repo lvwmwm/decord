@@ -1,18 +1,18 @@
-// Module ID: 12496
-// Function ID: 12497
+// Module ID: 12532
+// Function ID: 12533
 // Name: SearchTabsFetchManager
-// Dependencies: [109, 8127, 1078, 12497, 12498, 2]
+// Dependencies: [109, 8159, 1078, 12533, 12534, 2]
 
-// Module 12496 (SearchTabsFetchManager)
-import SearchFetcher from "SearchFetcher" /* 12498 */;
+// Module 12532 (SearchTabsFetchManager)
+import SearchFetcher from "SearchFetcher" /* 12534 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 
 require = fn;
 let closure_2 = ["include_nsfw", "channel_id", "search_session_id", "search_query_id"];
-const SearchConstants = fn(8127);
+const SearchConstants = fn(8159);
 ({ SEARCH_FILTERS_BY_TAB: closure_4, SEARCH_QUERY_BY_SEARCH_FILTER: hasOwnProperty, SEARCH_QUERY_DEFAULT_FILTERS: metroRequire } = SearchConstants);
 const SearchTypes = fn(1078).SearchTypes;
-const AbstractSearchFetchManager = fn(12497).AbstractSearchFetchManager;
+const AbstractSearchFetchManager = fn(12533).AbstractSearchFetchManager;
 class SearchTabsFetchManager extends AbstractSearchFetchManager {
 }
 const prototype = SearchTabsFetchManager.prototype;

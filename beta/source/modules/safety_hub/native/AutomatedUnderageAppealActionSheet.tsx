@@ -1,27 +1,27 @@
-// Module ID: 12015
-// Function ID: 12016
+// Module ID: 12051
+// Function ID: 12052
 // Name: AutomatedUnderageAppealActionSheet
-// Dependencies: [19, 17, 8707, 8696, 21, 4758, 580, 1119, 558, 568, 504, 1616, 12014, 8687, 8689, 4725, 4455, 4754, 5822, 5903, 12012, 5188, 6863, 7397, 2]
+// Dependencies: [19, 17, 8739, 8728, 21, 4790, 580, 1119, 558, 568, 504, 1616, 12050, 8719, 8721, 4757, 4487, 4786, 5854, 5935, 12048, 5220, 6895, 7429, 2]
 
-// Module 12015 (AutomatedUnderageAppealActionSheet)
+// Module 12051 (AutomatedUnderageAppealActionSheet)
 import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import TableRow from "TableRow" /* 5822 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8687 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8689 */;
-import SafetyHubActionCreators from "SafetyHubActionCreators" /* 12012 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12014 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import TableRow from "TableRow" /* 5854 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8719 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8721 */;
+import SafetyHubActionCreators from "SafetyHubActionCreators" /* 12048 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12050 */;
 import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8707 */;
+import SafetyHubStore from "SafetyHubStore" /* 8739 */;
 
 require = fn;
 let View = fn(17).View;
-const SafetyHubConstants = fn(8696);
+const SafetyHubConstants = fn(8728);
 ({ AGE_APPEAL_ACTION_SHEET_NAME: metroRequire, SafetyHubLinks: closure_7 } = SafetyHubConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8 }, header: { alignItems: "center" }, content: null, moreInfo: null, learnMore: null, footer: null, number: null };
 let obj3 = { flex: 1, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8 };
 obj2.content = { flex: 1, gap: nativeDefault.space.PX_16 };
@@ -226,7 +226,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
           }
         }
         obj2.children = obj6.string(tmp(1119).t["yvx//1"]);
-        const tmp28 = closure_8(tmp(4754).Text, obj2);
+        const tmp28 = closure_8(tmp(4786).Text, obj2);
         cResult[17] = tmp28;
         const tmp27 = tmp28;
       } else {
@@ -305,7 +305,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
           }
         }
         tmp36[1] = tmp32;
-        obj4.children = closure_8(tmp(5903).TableRowGroup, tmp36);
+        obj4.children = closure_8(tmp(5935).TableRowGroup, tmp36);
         const tmp37 = closure_8(View, obj4);
         cResult[22] = tmp32;
         cResult[23] = tmp37;
@@ -362,7 +362,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         const intl2 = tmp(1119).intl;
         obj7.subLabel = intl2.string(tmp(1119).t.NHq382);
         obj7.onPress = tmp18;
-        obj5.children = closure_8(tmp(5822).TableRow, obj7);
+        obj5.children = closure_8(tmp(5854).TableRow, obj7);
         const tmp42 = closure_8(tmp41, obj5);
         cResult[25] = tmp42;
         const tmp40 = tmp42;
@@ -496,7 +496,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
               return closure_5.getIsLoadingAgeVerification();
             }
           }
-          const tmp56 = closure_8(tmp(4754).Text, obj11);
+          const tmp56 = closure_8(tmp(4786).Text, obj11);
           cResult[35] = tmp4.learnMore;
           cResult[36] = tmp56;
         } else {
@@ -525,7 +525,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         cResult[40] = tmp60;
       }
       const obj14 = { onPress: tmp46, loading: stateFromStores1, disabled: stateFromStores1, text: tmp47 };
-      const tmp51 = closure_8(tmp(5188).Button, obj14);
+      const tmp51 = closure_8(tmp(5220).Button, obj14);
       cResult[31] = stateFromStores1;
       class R {
         constructor() {
@@ -628,16 +628,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   const obj8 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
   const intl = onClose(1119).intl;
   obj8.children = intl.string(onClose(1119).t["9SDLnj"]);
-  const items5 = [closure_8(onClose(4754).Text, obj8), ];
+  const items5 = [closure_8(onClose(4786).Text, obj8), ];
   const obj9 = { variant: "heading-md/medium", color: "text-default", children: null };
   const intl2 = onClose(1119).intl;
   obj9.children = intl2.string(onClose(1119).t["yvx//1"]);
-  items5[1] = closure_8(onClose(4754).Text, obj9);
+  items5[1] = closure_8(onClose(4786).Text, obj9);
   obj7.children = items5;
   const items6 = [closure_9(callback, obj7), , , ];
   const obj10 = { children: null };
   let obj2 = onClose(504);
-  obj10.children = closure_8(onClose(5903).TableRowGroup, {
+  obj10.children = closure_8(onClose(5935).TableRowGroup, {
     hasIcons: true,
     children: items.map((item, index) => {
       ({ title, description } = item);
@@ -660,8 +660,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   obj14.onPress = function onPress() {
     return classificationId(number[16]).openURL(constants.AGE_VERIFICATION_LINK);
   };
-  obj13.children = closure_8(onClose(5822).TableRow, obj14);
-  obj12.children = closure_8(onClose(5903).TableRowGroup, obj13);
+  obj13.children = closure_8(onClose(5854).TableRow, obj14);
+  obj12.children = closure_8(onClose(5935).TableRowGroup, obj13);
   items6[2] = closure_8(callback, obj12);
   const obj15 = { style: tmp.footer, children: null };
   const obj16 = {
@@ -674,15 +674,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   };
   const intl6 = onClose(1119).intl;
   obj16.text = intl6.string(onClose(1119).t["54b8V0"]);
-  const items7 = [closure_8(onClose(5188).Button, obj16), ];
+  const items7 = [closure_8(onClose(5220).Button, obj16), ];
   const obj17 = { variant: "heading-sm/medium", color: "text-subtle", style: tmp.learnMore, children: null };
   const intl7 = onClose(1119).intl;
   obj17.children = intl7.format(onClose(1119).t.ZbWsOF, { learnMoreLink: constants.LEARN_MORE_UU_APPEAL_LINK });
-  items7[1] = closure_8(onClose(4754).Text, obj17);
+  items7[1] = closure_8(onClose(4786).Text, obj17);
   obj15.children = items7;
   items6[3] = closure_9(callback, obj15);
   obj5.children = items6;
   obj4.children = closure_9(callback, obj5);
-  obj3.children = closure_8(onClose(6863).BottomSheetScrollView, obj4);
-  return closure_8(onClose(7397).BottomSheet, obj3);
+  obj3.children = closure_8(onClose(6895).BottomSheetScrollView, obj4);
+  return closure_8(onClose(7429).BottomSheet, obj3);
 });

@@ -1,13 +1,13 @@
-// Module ID: 12669
-// Function ID: 12670
+// Module ID: 12705
+// Function ID: 12706
 // Name: useFeaturedExpiringPowerup
-// Dependencies: [19, 4668, 4647, 558, 568, 504, 12670, 7801, 2]
+// Dependencies: [19, 4700, 4679, 558, 568, 504, 12706, 7833, 2]
 
-// Module 12669 (useFeaturedExpiringPowerup)
-import CollectiblesUtils from "CollectiblesUtils" /* 7801 */;
+// Module 12705 (useFeaturedExpiringPowerup)
+import CollectiblesUtils from "CollectiblesUtils" /* 7833 */;
 import noop from "module_19" /* 19 */;
-import GameServerStore from "GameServerStore" /* 4668 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4647 */;
+import GameServerStore from "GameServerStore" /* 4700 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4679 */;
 
 const require = globalThis.__r;
 
@@ -153,7 +153,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const _Math = Math;
       const _Date = Date;
       const date = new Date(reduced.ends_at);
-      const bound = Math.max(0, tmp(7801).getDaysRemaining(date));
+      const bound = Math.max(0, tmp(7833).getDaysRemaining(date));
       let metadata = reduced.metadata;
       let num10;
       if (metadata != null) {
@@ -177,7 +177,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[15] = title;
       cResult[16] = num10;
       cResult[17] = obj2;
-      const tmpResult6 = tmp(7801);
+      const tmpResult6 = tmp(7833);
     }
   }
   cResult[6] = expiringPowerupCoachmarkEnabled;

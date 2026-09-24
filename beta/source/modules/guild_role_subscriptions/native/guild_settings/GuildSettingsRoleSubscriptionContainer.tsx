@@ -1,25 +1,25 @@
-// Module ID: 18197
-// Function ID: 18198
+// Module ID: 18207
+// Function ID: 18208
 // Name: GuildSettingsRoleSubscriptionContainer
-// Dependencies: [19, 17, 2067, 1078, 21, 4758, 558, 568, 504, 18173, 12369, 18146, 1119, 15472, 18187, 2]
+// Dependencies: [19, 17, 2067, 1078, 21, 4790, 558, 568, 504, 18183, 12405, 18156, 1119, 15482, 18197, 2]
 
-// Module 18197 (GuildSettingsRoleSubscriptionContainer)
+// Module 18207 (GuildSettingsRoleSubscriptionContainer)
 import c from "c" /* 568 */;
-import GroupListingsFetchContext from "GroupListingsFetchContext" /* 15472 */;
-import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 18173 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18187 */;
+import GroupListingsFetchContext from "GroupListingsFetchContext" /* 15482 */;
+import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 18183 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18197 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
-const ErrorBlockDefault = tmp13(12369);
-const WarningNoticeDefault = tmp13(18146);
+const ErrorBlockDefault = tmp13(12405);
+const WarningNoticeDefault = tmp13(18156);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: c3, View: closure_4 } = get_ActivityIndicator);
 const GuildFeatures = fn(1078).GuildFeatures;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ container: { flex: 1 }, warningBlockContainer: { marginHorizontal: 16, marginTop: 16 }, spinner: { marginTop: 12 } });
 let ReactCompilerGating = fn(558);
 let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
@@ -189,39 +189,39 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   ({ resubmissionError, requestRejectedNoticeText, reapplyNoticeText } = useOnboardingMonetizationEnableFlowDefault(stateFromStores));
   if (null != resubmissionError) {
     const obj2 = { children: resubmissionError.getAnyErrorMessage() };
-    let tmp14 = closure_7(tmp9(12369), obj2);
-    const tmp9Result = tmp9(12369);
+    let tmp14 = closure_7(tmp9(12405), obj2);
+    const tmp9Result = tmp9(12405);
   } else if (null != requestRejectedNoticeText) {
     const obj3 = { notice: requestRejectedNoticeText };
-    tmp14 = closure_7(tmp9(18146), obj3);
+    tmp14 = closure_7(tmp9(18156), obj3);
   } else if (tmp13) {
     const obj4 = { notice: null };
     const intl3 = tmp2(1119).intl;
     obj4.notice = intl3.string(tmp2(1119).t.MyJpJT);
-    tmp14 = closure_7(tmp9(18146), obj4);
-    const tmp9Result5 = tmp9(18146);
+    tmp14 = closure_7(tmp9(18156), obj4);
+    const tmp9Result5 = tmp9(18156);
   } else if (null != reapplyNoticeText) {
     const obj5 = { notice: reapplyNoticeText, ctaLabel: null, onClick: null, submitting: null };
     const intl2 = tmp2(1119).intl;
     obj5.ctaLabel = intl2.string(tmp2(1119).t["YKw/NQ"]);
     obj5.onClick = tmp12;
     obj5.submitting = tmp11;
-    tmp14 = closure_7(tmp9(18146), obj5);
-    const tmp9Result6 = tmp9(18146);
+    tmp14 = closure_7(tmp9(18156), obj5);
+    const tmp9Result6 = tmp9(18156);
   } else if (true === hasItem1) {
     const obj6 = { notice: null };
     const intl = tmp2(1119).intl;
     obj6.notice = intl.string(tmp2(1119).t.e2g9sW);
-    tmp14 = closure_7(tmp9(18146), obj6);
-    const tmp9Result7 = tmp9(18146);
+    tmp14 = closure_7(tmp9(18156), obj6);
+    const tmp9Result7 = tmp9(18156);
   } else {
     tmp14 = null;
     if (true === hasItem) {
       const obj7 = { notice: null };
       const intl4 = tmp2(1119).intl;
       obj7.notice = intl4.string(tmp2(1119).t.rxI9sl);
-      tmp14 = closure_7(tmp9(18146), obj7);
-      const tmp9Result8 = tmp9(18146);
+      tmp14 = closure_7(tmp9(18156), obj7);
+      const tmp9Result8 = tmp9(18156);
     }
   }
   let tmp24 = null;
@@ -321,7 +321,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       return tmp13;
     }
     const obj3 = { guildId: guildId.guildId, refetchOnMount: true, children: tmp11 };
-    const tmp15 = React5(tmp(15472).GroupListingsFetchContextProvider, obj3);
+    const tmp15 = React5(tmp(15482).GroupListingsFetchContextProvider, obj3);
     cResult[5] = guildId.guildId;
     cResult[6] = tmp11;
     cResult[7] = tmp15;

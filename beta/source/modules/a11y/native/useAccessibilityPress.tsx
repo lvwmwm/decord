@@ -1,9 +1,9 @@
-// Module ID: 9825
-// Function ID: 9826
+// Module ID: 9857
+// Function ID: 9858
 // Name: useAccessibilityPress
 // Dependencies: [19, 558, 568, 2]
 
-// Module 9825 (useAccessibilityPress)
+// Module 9857 (useAccessibilityPress)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

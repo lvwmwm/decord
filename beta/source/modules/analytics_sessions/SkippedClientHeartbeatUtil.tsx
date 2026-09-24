@@ -1,11 +1,11 @@
-// Module ID: 7716
-// Function ID: 7717
+// Module ID: 7748
+// Function ID: 7749
 // Name: SkippedClientHeartbeatUtil
-// Dependencies: [1376, 7717, 2]
+// Dependencies: [1376, 7749, 2]
 // Exports: shouldLogClientHeartbeatSkipped
 
-// Module 7716 (SkippedClientHeartbeatUtil)
-import sampleWithUserId from "sampleWithUserId" /* 7717 */;
+// Module 7748 (SkippedClientHeartbeatUtil)
+import sampleWithUserId from "sampleWithUserId" /* 7749 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;

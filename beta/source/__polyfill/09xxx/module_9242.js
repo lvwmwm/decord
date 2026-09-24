@@ -1,9 +1,18 @@
 // Module ID: 9242
 // Function ID: 9243
-// Dependencies: [9215]
+// Dependencies: [9243, 9309, 9310, 9313, 9312, 9314, 9262, 9306, 9315, 9253, 9311, 9316]
 
 // Module 9242
-import _mod9215 from "module_9215" /* 9215 */;
+import ar from "ar" /* 9253 */;
+import _mod9262 from "module_9262" /* 9262 */;
+import _mod9309 from "module_9309" /* 9309 */;
+import lt from "lt" /* 9310 */;
+import _mod9312 from "module_9312" /* 9312 */;
+import _mod9313 from "module_9313" /* 9313 */;
+import _mod9314 from "module_9314" /* 9314 */;
+import _mod9316 from "module_9316" /* 9316 */;
+
+const require = globalThis.__r;
 
 const self = this;
 let self2 = this;
@@ -55,149 +64,254 @@ if (self2) {
         return obj;
       };
     }
-    const _Object3 = Object;
-    exports.default = function default_1() {
-      if (typeof error === "function") {
-        const obj = { localeError: null };
-        const obj2 = { string: { unit: "caratteri", verb: "avere" }, file: { unit: "byte", verb: "avere" }, array: { unit: "elementi", verb: "avere" }, set: { unit: "elementi", verb: "avere" } };
-        closure_1 = { regex: "input", email: "indirizzo email", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "data e ora ISO", date: "data ISO", time: "ora ISO", duration: "durata ISO", ipv4: "indirizzo IPv4", ipv6: "indirizzo IPv6", cidrv4: "intervallo IPv4", cidrv6: "intervallo IPv6", base64: "stringa codificata in base64", base64url: "URL codificata in base64", json_string: "stringa JSON", e164: "numero E.164", jwt: "JWT", template_literal: "input" };
-        closure_2 = { nan: "NaN", number: "numero", array: "vettore" };
-        obj.localeError = (code) => {
-          switch (code.code) {
-            case "invalid_type":
-              let expected = closure_2[code.expected];
-              if (expected == null) {
-                expected = code.expected;
-              }
-              const parsedTypeResult = closure_2.parsedType(code.input);
-              let tmp50 = closure_2[parsedTypeResult];
-              if (tmp50 == null) {
-                tmp50 = parsedTypeResult;
-              }
-              if (obj.test(code.expected)) {
-                const _HermesInternal17 = HermesInternal;
-                let combined = "Input non valido: atteso instanceof " + code.expected + ", ricevuto " + tmp50;
-              } else {
-                const _HermesInternal16 = HermesInternal;
-                combined = "Input non valido: atteso " + expected + ", ricevuto " + tmp50;
-              }
-              return combined;
-            case "invalid_value":
-              if (1 === code.values.length) {
-                const _HermesInternal15 = HermesInternal;
-                let combined1 = "Input non valido: atteso " + closure_2.stringifyPrimitive(code.values[0]);
-              } else {
-                const _HermesInternal14 = HermesInternal;
-                combined1 = "Opzione non valida: atteso uno tra " + closure_2.joinValues(code.values, "|");
-              }
-              return combined1;
-            case "too_big":
-              let str27 = "<";
-              if (code.inclusive) {
-                str27 = "<=";
-              }
-              let tmp29 = obj2[code.origin];
-              if (tmp29 == null) {
-                tmp29 = null;
-              }
-              let str28 = code.origin;
-              if (tmp29) {
-                if (str28 == null) {
-                  str28 = "valore";
-                }
-                const str1 = code.maximum.toString();
-                let str34 = tmp29.unit;
-                if (str34 == null) {
-                  str34 = "elementi";
-                }
-                const _HermesInternal13 = HermesInternal;
-                let combined2 = "Troppo grande: " + str28 + " deve avere " + str27 + str1 + " " + str34;
-              } else {
-                let str29 = str28;
-                if (str28 == null) {
-                  str29 = "valore";
-                }
-                const _HermesInternal12 = HermesInternal;
-                combined2 = "Troppo grande: " + str29 + " deve essere " + str27 + code.maximum.toString();
-              }
-              return combined2;
-            case "too_small":
-              let str21 = ">";
-              if (code.inclusive) {
-                str21 = ">=";
-              }
-              let tmp17 = obj2[code.origin];
-              if (tmp17 == null) {
-                tmp17 = null;
-              }
-              ({ origin, minimum } = code);
-              const str48 = minimum.toString();
-              if (tmp17) {
-                const _HermesInternal11 = HermesInternal;
-                let combined3 = "Troppo piccolo: " + origin + " deve avere " + str21 + str48 + " " + tmp17.unit;
-              } else {
-                const _HermesInternal10 = HermesInternal;
-                combined3 = "Troppo piccolo: " + origin + " deve essere " + str21 + str48;
-              }
-              return combined3;
-            case "invalid_format":
-              if ("starts_with" === code.format) {
-                const _HermesInternal9 = HermesInternal;
-                let combined4 = "Stringa non valida: deve iniziare con \"" + code.prefix + "\"";
-              } else if ("ends_with" === code.format) {
-                const _HermesInternal8 = HermesInternal;
-                combined4 = "Stringa non valida: deve terminare con \"" + code.suffix + "\"";
-              } else if ("includes" === code.format) {
-                const _HermesInternal7 = HermesInternal;
-                combined4 = "Stringa non valida: deve includere \"" + code.includes + "\"";
-              } else if ("regex" === code.format) {
-                const _HermesInternal6 = HermesInternal;
-                combined4 = "Stringa non valida: deve corrispondere al pattern " + code.pattern;
-              } else {
-                let format = closure_1[code.format];
-                if (format == null) {
-                  format = code.format;
-                }
-                const _HermesInternal5 = HermesInternal;
-                combined4 = "Invalid " + format;
-              }
-              return combined4;
-            case "not_multiple_of":
-              const _HermesInternal4 = HermesInternal;
-              return "Numero non valido: deve essere un multiplo di " + code.divisor;
-            case "unrecognized_keys":
-              let str4 = "e";
-              if (code.keys.length > 1) {
-                str4 = "i";
-              }
-              let str5 = "a";
-              if (code.keys.length > 1) {
-                str5 = "e";
-              }
-              const _HermesInternal3 = HermesInternal;
-              return "Chiav" + str4 + " non riconosciut" + str5 + ": " + closure_2.joinValues(code.keys, ", ");
-            case "invalid_key":
-              const _HermesInternal2 = HermesInternal;
-              return "Chiave non valida in " + code.origin;
-            case "invalid_union":
-              return "Input non valido";
-            case "invalid_element":
-              const _HermesInternal = HermesInternal;
-              return "Valore non valido in " + code.origin;
-            default:
-              return "Input non valido";
-          }
-        };
-        return obj;
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    };
-    let closure_2 = fn(_mod9215);
-    function error() {
-
+    let fn2 = self;
+    if (self) {
+      fn2 = self.__exportStar;
     }
-    module.exports = exports.default;
+    if (!fn2) {
+      fn2 = (obj, exports) => {
+        for (const key10007 in arg0) {
+          let tmp6 = "default" === key10007;
+          if (tmp6) {
+            if (tmp6) {
+              continue;
+            } else {
+              let tmp4 = self2(arg1, arg0, key10007);
+              continue;
+            }
+            continue;
+          } else {
+            let _Object = Object;
+            hasOwnProperty = Object.prototype.hasOwnProperty;
+            let call = hasOwnProperty.call;
+            if (typeof call === "unknown") {
+              let hasOwnPropertyResult = hasOwnProperty(key10007);
+            } else {
+              hasOwnPropertyResult = call(arg1, key10007);
+            }
+          }
+        }
+      };
+    }
+    let fn3 = self;
+    if (self) {
+      fn3 = self.__importDefault;
+    }
+    if (!fn3) {
+      fn3 = (__esModule) => {
+        if (!__esModule) {
+          const obj = { default: __esModule };
+          let tmp = obj;
+        } else {
+          tmp = __esModule;
+        }
+        return tmp;
+      };
+    }
+    const _Object3 = Object;
+    exports.core = undefined;
+    exports.globalRegistry = undefined;
+    exports.registry = undefined;
+    exports.config = undefined;
+    exports.$output = undefined;
+    exports.$input = undefined;
+    exports.$brand = undefined;
+    exports.clone = undefined;
+    exports.regexes = undefined;
+    exports.treeifyError = undefined;
+    exports.prettifyError = undefined;
+    exports.formatError = undefined;
+    exports.flattenError = undefined;
+    exports.TimePrecision = undefined;
+    exports.util = undefined;
+    exports.NEVER = undefined;
+    exports.toJSONSchema = undefined;
+    exports.fromJSONSchema = undefined;
+    exports.locales = undefined;
+    exports.ZodISODateTime = undefined;
+    exports.ZodISODate = undefined;
+    exports.ZodISOTime = undefined;
+    exports.ZodISODuration = undefined;
+    exports.iso = undefined;
+    exports.coerce = undefined;
+    exports.core = fn(require("module_9243"));
+    fn2(_mod9309, exports);
+    fn2(lt, exports);
+    fn2(_mod9313, exports);
+    fn2(_mod9312, exports);
+    fn2(_mod9314, exports);
+    require("module_9243").config(fn3(_mod9262).default());
+    const _Object4 = Object;
+    let obj = {
+      enumerable: true,
+      get() {
+            return require("module_9243").globalRegistry;
+          }
+    };
+    Object.defineProperty(exports, "globalRegistry", obj);
+    const _Object5 = Object;
+    const obj2 = {
+      enumerable: true,
+      get() {
+            return require("module_9243").registry;
+          }
+    };
+    Object.defineProperty(exports, "registry", obj2);
+    const _Object6 = Object;
+    const obj3 = {
+      enumerable: true,
+      get() {
+            return require("module_9243").config;
+          }
+    };
+    Object.defineProperty(exports, "config", obj3);
+    const _Object7 = Object;
+    const obj4 = {
+      enumerable: true,
+      get() {
+            return require("module_9243").$output;
+          }
+    };
+    Object.defineProperty(exports, "$output", obj4);
+    const _Object8 = Object;
+    const obj5 = {
+      enumerable: true,
+      get() {
+            return require("module_9243").$input;
+          }
+    };
+    Object.defineProperty(exports, "$input", obj5);
+    const _Object9 = Object;
+    const obj6 = {
+      enumerable: true,
+      get() {
+            return require("module_9243").$brand;
+          }
+    };
+    Object.defineProperty(exports, "$brand", obj6);
+    const _Object10 = Object;
+    const obj7 = {
+      enumerable: true,
+      get() {
+            return require("module_9243").clone;
+          }
+    };
+    Object.defineProperty(exports, "clone", obj7);
+    const _Object11 = Object;
+    const obj8 = {
+      enumerable: true,
+      get() {
+            return require("module_9243").regexes;
+          }
+    };
+    Object.defineProperty(exports, "regexes", obj8);
+    const _Object12 = Object;
+    const obj9 = {
+      enumerable: true,
+      get() {
+            return require("module_9243").treeifyError;
+          }
+    };
+    Object.defineProperty(exports, "treeifyError", obj9);
+    const _Object13 = Object;
+    const obj10 = {
+      enumerable: true,
+      get() {
+            return require("module_9243").prettifyError;
+          }
+    };
+    Object.defineProperty(exports, "prettifyError", obj10);
+    const _Object14 = Object;
+    const obj11 = {
+      enumerable: true,
+      get() {
+            return require("module_9243").formatError;
+          }
+    };
+    Object.defineProperty(exports, "formatError", obj11);
+    const _Object15 = Object;
+    const obj12 = {
+      enumerable: true,
+      get() {
+            return require("module_9243").flattenError;
+          }
+    };
+    Object.defineProperty(exports, "flattenError", obj12);
+    const _Object16 = Object;
+    const obj13 = {
+      enumerable: true,
+      get() {
+            return require("module_9243").TimePrecision;
+          }
+    };
+    Object.defineProperty(exports, "TimePrecision", obj13);
+    const _Object17 = Object;
+    const obj14 = {
+      enumerable: true,
+      get() {
+            return require("module_9243").util;
+          }
+    };
+    Object.defineProperty(exports, "util", obj14);
+    const _Object18 = Object;
+    const obj15 = {
+      enumerable: true,
+      get() {
+            return require("module_9243").NEVER;
+          }
+    };
+    Object.defineProperty(exports, "NEVER", obj15);
+    const _Object19 = Object;
+    const obj16 = {
+      enumerable: true,
+      get() {
+            return require("stringProcessor").toJSONSchema;
+          }
+    };
+    Object.defineProperty(exports, "toJSONSchema", obj16);
+    const _Object20 = Object;
+    const obj17 = {
+      enumerable: true,
+      get() {
+            return require("convertBaseSchema").fromJSONSchema;
+          }
+    };
+    Object.defineProperty(exports, "fromJSONSchema", obj17);
+    exports.locales = fn(ar);
+    const _Object21 = Object;
+    const obj18 = {
+      enumerable: true,
+      get() {
+            return require("module_9311").ZodISODateTime;
+          }
+    };
+    Object.defineProperty(exports, "ZodISODateTime", obj18);
+    const _Object22 = Object;
+    const obj19 = {
+      enumerable: true,
+      get() {
+            return require("module_9311").ZodISODate;
+          }
+    };
+    Object.defineProperty(exports, "ZodISODate", obj19);
+    const _Object23 = Object;
+    const obj20 = {
+      enumerable: true,
+      get() {
+            return require("module_9311").ZodISOTime;
+          }
+    };
+    Object.defineProperty(exports, "ZodISOTime", obj20);
+    const _Object24 = Object;
+    const obj21 = {
+      enumerable: true,
+      get() {
+            return require("module_9311").ZodISODuration;
+          }
+    };
+    Object.defineProperty(exports, "ZodISODuration", obj21);
+    exports.iso = fn(require("module_9311"));
+    exports.coerce = fn(_mod9316);
   } else {
     const _Object2 = Object;
   }

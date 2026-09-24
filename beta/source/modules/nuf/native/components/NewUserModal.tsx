@@ -1,11 +1,11 @@
-// Module ID: 17858
-// Function ID: 17859
+// Module ID: 17868
+// Function ID: 17869
 // Name: NewUserModal
-// Dependencies: [32, 19, 17, 21, 8162, 4758, 580, 17859, 1984, 5112, 558, 568, 7246, 17856, 4961, 17857, 5845, 1368, 16333, 17860, 12843, 12832, 17861, 17863, 2]
+// Dependencies: [32, 19, 17, 21, 8194, 4790, 580, 17869, 1984, 5144, 558, 568, 7278, 17866, 4993, 17867, 5877, 1368, 16343, 17870, 12879, 12868, 17871, 17873, 2]
 
-// Module 17858 (NewUserModal)
+// Module 17868 (NewUserModal)
 import nativeDefault from "native" /* 580 */;
-import NewUserUtils from "NewUserUtils" /* 17856 */;
+import NewUserUtils from "NewUserUtils" /* 17866 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -15,9 +15,9 @@ require = fn;
 let NativeModules = fn(17).NativeModules;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const NativeStackNavigator = fn(8162);
+const NativeStackNavigator = fn(8194);
 let closure_8 = NativeStackNavigator.createNativeStackNavigator();
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj3 = { header: { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" } };
 let closure_9 = createStyles.createStyles(obj3);
 const ReactCompilerGating = fn(558);
@@ -65,7 +65,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    tmp(5845).useNavigatorBackPressHandler(tmp12);
+    tmp(5877).useNavigatorBackPressHandler(tmp12);
     if (cResult[4] === accessibilityNativeStackOptions) {
       class M {
         constructor() {
@@ -151,13 +151,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       obj.onPress = function onPress() {
                         closure_0 = closure_1_7;
                         const lazyResult = React.lazy(() => closure_0(paths[8])(paths[7], paths.paths));
-                        closure_2_0(5112).openAlert("skip-avatar-upload", accessibilityNativeStackOptions(lazyResult, {
+                        closure_2_0(5144).openAlert("skip-avatar-upload", accessibilityNativeStackOptions(lazyResult, {
                           onConfirm() {
                             return closure_0(true);
                           }
                         }));
                       };
-                      return accessibilityNativeStackOptions(first(12843), obj);
+                      return accessibilityNativeStackOptions(first(12879), obj);
                     }
                   };
                 },
@@ -372,7 +372,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[4] = accessibilityNativeStackOptions;
     cResult[5] = tmp4.header;
     cResult[6] = fn2;
-    const tmpResult = tmp(5845);
+    const tmpResult = tmp(5877);
   }
   const fn = function u(flag) {
     if (flag == null) {
@@ -386,11 +386,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       closure_1_4(lastShownStepIndex);
       if (continueNavigation) {
         if (null != ref.current) {
-          closure_0(17856).continueToNextStep(onboardingStepIndex, tmp3.current);
-          const obj2 = closure_0(17856);
+          closure_0(17866).continueToNextStep(onboardingStepIndex, tmp3.current);
+          const obj2 = closure_0(17866);
         }
       }
-      first(4961).popWithKey(closure_0(17857).NEW_USER_MODAL_KEY);
+      first(4993).popWithKey(closure_0(17867).NEW_USER_MODAL_KEY);
     });
   };
   cResult[0] = first1;
@@ -423,11 +423,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       closure_1_4(lastShownStepIndex);
       if (continueNavigation) {
         if (null != ref.current) {
-          closure_0(17856).continueToNextStep(onboardingStepIndex, tmp3.current);
-          const obj2 = closure_0(17856);
+          closure_0(17866).continueToNextStep(onboardingStepIndex, tmp3.current);
+          const obj2 = closure_0(17866);
         }
       }
-      first(4961).popWithKey(closure_0(17857).NEW_USER_MODAL_KEY);
+      first(4993).popWithKey(closure_0(17867).NEW_USER_MODAL_KEY);
     });
   }, items);
   let obj = require("Navigator");
@@ -473,14 +473,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     closure_6(closure_8.Screen, {
       name: "enable-notification",
       getComponent() {
-        return closure_0(16333).RedesignNotificationScreen;
+        return closure_0(16343).RedesignNotificationScreen;
       },
       initialParams: { onComplete }
     }),
     closure_6(closure_8.Screen, {
       name: "choose-avatar",
       getComponent() {
-        return closure_0(17860).default;
+        return closure_0(17870).default;
       },
       options() {
         return {
@@ -490,13 +490,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             obj.onPress = function onPress() {
               closure_0 = closure_1_7;
               const lazyResult = React.lazy(() => closure_0(paths[8])(paths[7], paths.paths));
-              closure_2_0(5112).openAlert("skip-avatar-upload", closure_2_6(lazyResult, {
+              closure_2_0(5144).openAlert("skip-avatar-upload", closure_2_6(lazyResult, {
                 onConfirm() {
                   return closure_0(true);
                 }
               }));
             };
-            return closure_6(first(12843), obj);
+            return closure_6(first(12879), obj);
           }
         };
       },
@@ -506,7 +506,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       name: "contact-sync",
       options: { headerShown: false },
       getComponent() {
-        return closure_0(12832).ContactSyncOnboardingModal;
+        return closure_0(12868).ContactSyncOnboardingModal;
       },
       initialParams: { onComplete }
     }),
@@ -514,14 +514,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       name: "discoverability",
       options: { headerShown: false },
       getComponent() {
-        return closure_0(17861).default;
+        return closure_0(17871).default;
       },
       initialParams: { onComplete }
     }),
     closure_6(closure_8.Screen, {
       name: "connect-guardian",
       getComponent() {
-        return closure_0(17863).default;
+        return closure_0(17873).default;
       },
       initialParams: { onComplete }
     })

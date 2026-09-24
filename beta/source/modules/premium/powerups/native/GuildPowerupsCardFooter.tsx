@@ -1,22 +1,22 @@
-// Module ID: 12687
-// Function ID: 12688
+// Module ID: 12723
+// Function ID: 12724
 // Name: GuildPowerupsCardFooter
-// Dependencies: [17, 21, 4758, 558, 568, 4717, 580, 4754, 7176, 1119, 2518, 12688, 12661, 7223, 9487, 2]
+// Dependencies: [17, 21, 4790, 558, 568, 4749, 580, 4786, 7208, 1119, 2518, 12724, 12697, 7255, 9519, 2]
 
-// Module 12687 (GuildPowerupsCardFooter)
+// Module 12723 (GuildPowerupsCardFooter)
 import _mod17 from "module_17" /* 17 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import _modDef2518 from "module_2518" /* 2518 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4717 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7176 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7223 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12661 */;
-import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 12688 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4749 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7208 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7255 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12697 */;
+import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 12724 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_POSITIVE };
-    const tmp8 = React4(tmp(4717).CircleCheckIcon, obj2);
+    const tmp8 = React4(tmp(4749).CircleCheckIcon, obj2);
     cResult[0] = tmp8;
     let first = tmp8;
   } else {
@@ -38,7 +38,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
   }
   if (cResult[1] !== text) {
     const obj3 = { color: "status-positive", variant: "text-sm/bold", children: text };
-    const tmp11 = React4(tmp(4754).Text, obj3);
+    const tmp11 = React4(tmp(4786).Text, obj3);
     cResult[1] = text;
     cResult[2] = tmp11;
     let tmp9 = tmp11;
@@ -73,7 +73,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((dateString) => {
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_WARNING };
-    const tmp8 = React4(tmp(7176).CircleErrorIcon, obj2);
+    const tmp8 = React4(tmp(7208).CircleErrorIcon, obj2);
     cResult[0] = tmp8;
     let first = tmp8;
   } else {
@@ -91,7 +91,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((dateString) => {
   }
   if (cResult[3] !== tmp9) {
     const obj4 = { color: "text-feedback-warning", variant: "text-sm/bold", children: tmp9 };
-    const tmp14 = React4(tmp(4754).Text, obj4);
+    const tmp14 = React4(tmp(4786).Text, obj4);
     cResult[3] = tmp9;
     cResult[4] = tmp14;
     let tmp12 = tmp14;
@@ -131,7 +131,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((removingAt) => {
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_WARNING };
-    const tmp8 = React4(tmp(7176).CircleErrorIcon, obj2);
+    const tmp8 = React4(tmp(7208).CircleErrorIcon, obj2);
     cResult[0] = tmp8;
     let first = tmp8;
   } else {
@@ -149,7 +149,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((removingAt) => {
   }
   if (cResult[3] !== tmp9) {
     const obj4 = { color: "text-feedback-warning", variant: "text-sm/bold", children: tmp9 };
-    const tmp14 = React4(tmp(4754).Text, obj4);
+    const tmp14 = React4(tmp(4786).Text, obj4);
     cResult[3] = tmp9;
     cResult[4] = tmp14;
     let tmp12 = tmp14;
@@ -256,7 +256,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-      const tmp10 = React4(tmp(9487).BoostGemIcon, obj2);
+      const tmp10 = React4(tmp(9519).BoostGemIcon, obj2);
       cResult[0] = tmp10;
       let first = tmp10;
     } else {
@@ -290,7 +290,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp16 = tmp19;
       }
       const obj4 = { variant: str, color: "text-subtle", children: tmp11 };
-      const tmp15 = React4(tmp(4754).Text, obj4);
+      const tmp15 = React4(tmp(4786).Text, obj4);
       cResult[4] = str;
       cResult[5] = tmp11;
       cResult[6] = tmp15;
@@ -316,7 +316,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (null != cost) {
     const obj = { style: tmp.inline, children: null };
     const obj2 = { size: "sm", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-    const items = [React4(tmp2(9487).BoostGemIcon, obj2), ];
+    const items = [React4(tmp2(9519).BoostGemIcon, obj2), ];
     let str = "heading-sm/semibold";
     if (tmp5) {
       str = "experimental/body-sm/semibold";
@@ -329,7 +329,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     obj4.decorator = costDecorator;
     obj3.children = intl.formatToPlainString(tmp2(1119).t.t2Wbo1, obj4);
-    items[1] = React4(tmp2(4754).Text, obj3);
+    items[1] = React4(tmp2(4786).Text, obj3);
     obj.children = items;
     tmp7Result = hasOwnProperty(View, obj);
   }

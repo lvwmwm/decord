@@ -1,21 +1,21 @@
-// Module ID: 15400
-// Function ID: 15401
+// Module ID: 15410
+// Function ID: 15411
 // Name: VideoQuestCaptions
-// Dependencies: [19, 17, 21, 4758, 580, 676, 558, 568, 15401, 15403, 4754, 5176, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 676, 558, 568, 15411, 15413, 4786, 5208, 2]
 
-// Module 15400 (VideoQuestCaptions)
+// Module 15410 (VideoQuestCaptions)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5176 */;
-import useVideoQuestCaptions from "useVideoQuestCaptions" /* 15401 */;
-import VideoQuestCaptionsUtils from "VideoQuestCaptionsUtils" /* 15403 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5208 */;
+import useVideoQuestCaptions from "useVideoQuestCaptions" /* 15411 */;
+import VideoQuestCaptionsUtils from "VideoQuestCaptionsUtils" /* 15413 */;
 import noop from "module_19" /* 19 */;
 import n from "module_676" /* 676 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: null, captionBox: null, captionText: null };
 const rect = { position: "absolute", bottom: nativeDefault.space.PX_32, left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, alignItems: "center", justifyContent: "flex-end" };
 obj2.container = rect;
@@ -49,11 +49,11 @@ export const VideoQuestCaptions = ReactCompilerGating.isReactCompilerEnabled() ?
     if (tmp4) {
       if (cResult[0] === captions) {
       }
-      const findActiveCaptionResult = tmp(15403).findActiveCaption(captions, currentTime);
+      const findActiveCaptionResult = tmp(15413).findActiveCaption(captions, currentTime);
       cResult[0] = captions;
       cResult[1] = currentTime;
       cResult[2] = findActiveCaptionResult;
-      const tmpResult2 = tmp(15403);
+      const tmpResult2 = tmp(15413);
     }
   }
   let tmp11 = null;
@@ -88,7 +88,7 @@ export const VideoQuestCaptions = ReactCompilerGating.isReactCompilerEnabled() ?
           tmp16 = tmp19;
         }
         const obj4 = { variant: "heading-sm/medium", style: tmp5.captionText, children: tmp7.text };
-        const tmp15 = jsx(tmp(4754).Text, { variant: "heading-sm/medium", style: tmp5.captionText, children: tmp7.text });
+        const tmp15 = jsx(tmp(4786).Text, { variant: "heading-sm/medium", style: tmp5.captionText, children: tmp7.text });
         cResult[6] = tmp7.text;
         cResult[7] = tmp5.captionText;
         cResult[8] = tmp15;

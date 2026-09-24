@@ -1,10 +1,10 @@
-// Module ID: 9855
-// Function ID: 9856
+// Module ID: 9887
+// Function ID: 9888
 // Name: getGuildEventImage
 // Dependencies: [1078, 1435, 2]
 // Exports: default
 
-// Module 9855 (getGuildEventImage)
+// Module 9887 (getGuildEventImage)
 import Constants from "Constants" /* 1078 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1435 */;
 import size from "module_2" /* 2 */;

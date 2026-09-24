@@ -1,23 +1,23 @@
-// Module ID: 8179
-// Function ID: 8180
+// Module ID: 8211
+// Function ID: 8212
 // Name: BaseIconButton
-// Dependencies: [19, 21, 4758, 5193, 4497, 5190, 558, 568, 5194, 5196, 5205, 2]
+// Dependencies: [19, 21, 4790, 5225, 4529, 5222, 558, 568, 5226, 5228, 5237, 2]
 
-// Module 8179 (BaseIconButton)
+// Module 8211 (BaseIconButton)
 import c from "c" /* 568 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4497 */;
-import IconDefault from "Icon" /* 5190 */;
-import ButtonConstants from "ButtonConstants" /* 5193 */;
-import ButtonHooks from "ButtonHooks" /* 5194 */;
-import ButtonPill from "ButtonPill" /* 5196 */;
-import Button_BaseButton from "Button/BaseButton" /* 5205 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4529 */;
+import IconDefault from "Icon" /* 5222 */;
+import ButtonConstants from "ButtonConstants" /* 5225 */;
+import ButtonHooks from "ButtonHooks" /* 5226 */;
+import ButtonPill from "ButtonPill" /* 5228 */;
+import Button_BaseButton from "Button/BaseButton" /* 5237 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles((arg0, arg1) => {
   if ("sm" === arg1) {
     const obj2 = { paddingHorizontal: ButtonConstants.SMALL_BUTTON_PADDING, paddingVertical: ButtonConstants.SMALL_BUTTON_PADDING };
@@ -50,7 +50,7 @@ export const BaseIconButton = noop.forwardRef(ReactCompilerGating.isReactCompile
     str = variant;
   }
   if (undefined === size) {
-    size = tmp(5193).DEFAULT_BUTTON_SIZE;
+    size = tmp(5225).DEFAULT_BUTTON_SIZE;
   }
   let num = 4;
   if (undefined !== scaleAmountInPx) {
@@ -64,14 +64,14 @@ export const BaseIconButton = noop.forwardRef(ReactCompilerGating.isReactCompile
   const tmpResult3 = ButtonHooks;
   const iconSizeStyles = ButtonHooks.useIconSizeStyles(size, true, maxFontSizeMultiplier.maxFontSizeMultiplier);
   if (cResult[0] !== size) {
-    let MEDIUM_BUTTON_HEIGHT = tmp(5193).LARGE_BUTTON_HEIGHT;
+    let MEDIUM_BUTTON_HEIGHT = tmp(5225).LARGE_BUTTON_HEIGHT;
     if ("sm" === size) {
-      MEDIUM_BUTTON_HEIGHT = tmp(5193).SMALL_BUTTON_HEIGHT;
+      MEDIUM_BUTTON_HEIGHT = tmp(5225).SMALL_BUTTON_HEIGHT;
     } else if ("md" === size) {
-      MEDIUM_BUTTON_HEIGHT = tmp(5193).MEDIUM_BUTTON_HEIGHT;
+      MEDIUM_BUTTON_HEIGHT = tmp(5225).MEDIUM_BUTTON_HEIGHT;
     }
     const _Math = Math;
-    const bound = Math.max((tmp(5193).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, num2);
+    const bound = Math.max((tmp(5225).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, num2);
     cResult[num2] = size;
     num2 = 1;
     cResult[1] = bound;
@@ -126,7 +126,7 @@ export const BaseIconButton = noop.forwardRef(ReactCompilerGating.isReactCompile
                         obj2.scaleAmountInPx = num;
                         obj2.hitSlop = tmp8;
                         obj2.children = tmp19;
-                        const tmp28 = jsx(tmp(5205).BaseButton, {});
+                        const tmp28 = jsx(tmp(5237).BaseButton, {});
                         cResult[20] = tmp8;
                         cResult[21] = sharedValue;
                         cResult[22] = maxFontSizeMultiplier;
@@ -143,7 +143,7 @@ export const BaseIconButton = noop.forwardRef(ReactCompilerGating.isReactCompile
               }
             }
             const obj3 = { style: tmp13, variant: str, size, loading, loaderSize: str4, pressed: sharedValue, children: tmp14 };
-            const tmp21 = jsx(tmp(5196).ButtonPill, { style: tmp13, variant: str, size, loading, loaderSize: str4, pressed: sharedValue, children: tmp14 });
+            const tmp21 = jsx(tmp(5228).ButtonPill, { style: tmp13, variant: str, size, loading, loaderSize: str4, pressed: sharedValue, children: tmp14 });
             cResult[12] = loading;
             cResult[13] = sharedValue;
             cResult[14] = size;
@@ -203,11 +203,11 @@ export const BaseIconButton = noop.forwardRef(ReactCompilerGating.isReactCompile
   const iconSizeStyles = ButtonHooks.useIconSizeStyles(DEFAULT_BUTTON_SIZE, true, maxFontSizeMultiplier);
   let MEDIUM_BUTTON_HEIGHT = ButtonConstants.LARGE_BUTTON_HEIGHT;
   if ("sm" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp4(5193).SMALL_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp4(5225).SMALL_BUTTON_HEIGHT;
   } else if ("md" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp4(5193).MEDIUM_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp4(5225).MEDIUM_BUTTON_HEIGHT;
   }
-  const bound = Math.max((tmp4(5193).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
+  const bound = Math.max((tmp4(5225).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
   const obj4 = {};
   const merged = Object.assign(variant);
   obj4.ref = ref;

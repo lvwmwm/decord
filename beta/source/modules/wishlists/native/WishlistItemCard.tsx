@@ -1,13 +1,13 @@
-// Module ID: 11333
-// Function ID: 11334
+// Module ID: 11369
+// Function ID: 11370
 // Name: WishlistItemCard
-// Dependencies: [109, 19, 1078, 21, 558, 568, 11334, 11336, 11337, 2]
+// Dependencies: [109, 19, 1078, 21, 558, 568, 11370, 11372, 11373, 2]
 
-// Module 11333 (WishlistItemCard)
+// Module 11369 (WishlistItemCard)
 import c from "c" /* 568 */;
-import CollectiblesWishlistItemCardDefault from "CollectiblesWishlistItemCard" /* 11334 */;
-import PremiumWishlistItemCardDefault from "PremiumWishlistItemCard" /* 11336 */;
-import SocialLayerStorefrontWishlistItemCardDefault from "SocialLayerStorefrontWishlistItemCard" /* 11337 */;
+import CollectiblesWishlistItemCardDefault from "CollectiblesWishlistItemCard" /* 11370 */;
+import PremiumWishlistItemCardDefault from "PremiumWishlistItemCard" /* 11372 */;
+import SocialLayerStorefrontWishlistItemCardDefault from "SocialLayerStorefrontWishlistItemCard" /* 11373 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

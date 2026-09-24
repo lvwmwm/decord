@@ -1,14 +1,14 @@
-// Module ID: 18015
-// Function ID: 18016
+// Module ID: 18025
+// Function ID: 18026
 // Name: useLoadGuildStickerWithCreator
-// Dependencies: [5, 32, 19, 1376, 5722, 558, 568, 504, 10680, 2]
+// Dependencies: [5, 32, 19, 1376, 5754, 558, 568, 504, 10716, 2]
 
-// Module 18015 (useLoadGuildStickerWithCreator)
+// Module 18025 (useLoadGuildStickerWithCreator)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
-import GuildStickersStore from "GuildStickersStore" /* 5722 */;
+import GuildStickersStore from "GuildStickersStore" /* 5754 */;
 
 const require = globalThis.__r;
 
@@ -48,7 +48,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const abortController = new AbortController();
       const signal = abortController.signal;
       closure_0 = asyncGeneratorStep(async () => {
-        await _null(10680).fetchGuildStickersWithCreator(_null, c1);
+        await _null(10716).fetchGuildStickersWithCreator(_null, c1);
         if (1 === tmp7) {
           c3 = 0;
           signal("error");

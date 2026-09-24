@@ -1,11 +1,11 @@
-// Module ID: 11113
-// Function ID: 11114
+// Module ID: 11149
+// Function ID: 11150
 // Name: useMobileSocialLayerPurchaseSKU
-// Dependencies: [109, 19, 1078, 558, 568, 9479, 11114, 2]
+// Dependencies: [109, 19, 1078, 558, 568, 9511, 11150, 2]
 
-// Module 11113 (useMobileSocialLayerPurchaseSKU)
-import GPlayActionCreators from "GPlayActionCreators" /* 9479 */;
-import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 11114 */;
+// Module 11149 (useMobileSocialLayerPurchaseSKU)
+import GPlayActionCreators from "GPlayActionCreators" /* 9511 */;
+import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 11150 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 12339
-// Function ID: 12340
+// Module ID: 12375
+// Function ID: 12376
 // Name: useCustomKeyboardBottomSheetConfig
-// Dependencies: [19, 4750, 1368, 1882, 4627, 1614, 558, 568, 1482, 10347, 5813, 10346, 2]
+// Dependencies: [19, 4782, 1368, 1882, 4659, 1614, 558, 568, 1482, 10386, 5845, 10385, 2]
 
-// Module 12339 (useCustomKeyboardBottomSheetConfig)
+// Module 12375 (useCustomKeyboardBottomSheetConfig)
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 const require = globalThis.__r;
 
@@ -26,14 +26,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmp8 = minimum(1482)(first);
   _require = tmp8;
-  const tmp9 = minimum(10347)();
+  const tmp9 = minimum(10386)();
   minimum = tmp9.minimum;
   const maximum = tmp9.maximum;
   if (cResult[1] === minimum) {
     if (cResult[2] === tmp8.height) {
       let tmp10 = cResult[3];
     }
-    ({ initialPosition, animateOnMount } = minimum(5813)(tmp10));
+    ({ initialPosition, animateOnMount } = minimum(5845)(tmp10));
     if (cResult[4] === maximum) {
       if (cResult[5] === minimum) {
         if (cResult[6] === tmp4) {
@@ -58,7 +58,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           obj3.containerHeight = tmp8.height;
           obj3.initialPosition = initialPosition;
           let str;
-          if (tmp(10346).IS_SYSTEM_KEYBOARD_EXTERNAL) {
+          if (tmp(10385).IS_SYSTEM_KEYBOARD_EXTERNAL) {
             str = "adjustResize";
           }
           obj3.android_keyboardInputMode = str;
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[5] = minimum;
     cResult[6] = tmp4;
     cResult[7] = tmp13;
-    const tmp11 = minimum(5813)(tmp10);
+    const tmp11 = minimum(5845)(tmp10);
   }
   const fn = function c() {
     const obj = { initialPosition: styles.height - minimum, animateOnMount: false };
@@ -99,12 +99,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (!AccessibilityStore.useReducedMotion) {
         let obj3 = obj;
         if (0 === tmpResult.getSystemKeyboardHeight()) {
-          const keyboardTypePrevious = tmp(4627).getKeyboardTypePrevious();
+          const keyboardTypePrevious = tmp(4659).getKeyboardTypePrevious();
           obj3 = obj;
           if (keyboardTypePrevious === tmp(1614).KeyboardTypes.SYSTEM) {
             obj3 = { animateOnMount: true };
           }
-          const tmpResult2 = tmp(4627);
+          const tmpResult2 = tmp(4659);
         }
         tmp3 = obj3;
         tmpResult = tmp(1882);
@@ -141,12 +141,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (!AccessibilityStore.useReducedMotion) {
         let obj3 = obj;
         if (0 === tmpResult.getSystemKeyboardHeight()) {
-          const keyboardTypePrevious = tmp(4627).getKeyboardTypePrevious();
+          const keyboardTypePrevious = tmp(4659).getKeyboardTypePrevious();
           obj3 = obj;
           if (keyboardTypePrevious === tmp(1614).KeyboardTypes.SYSTEM) {
             obj3 = { animateOnMount: true };
           }
-          const tmpResult2 = tmp(4627);
+          const tmpResult2 = tmp(4659);
         }
         tmp3 = obj3;
         tmpResult = tmp(1882);
@@ -173,12 +173,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (!AccessibilityStore.useReducedMotion) {
         let obj3 = obj;
         if (0 === tmpResult.getSystemKeyboardHeight()) {
-          const keyboardTypePrevious = tmp(4627).getKeyboardTypePrevious();
+          const keyboardTypePrevious = tmp(4659).getKeyboardTypePrevious();
           obj3 = obj;
           if (keyboardTypePrevious === tmp(1614).KeyboardTypes.SYSTEM) {
             obj3 = { animateOnMount: true };
           }
-          const tmpResult2 = tmp(4627);
+          const tmpResult2 = tmp(4659);
         }
         tmp3 = obj3;
         tmpResult = tmp(1882);

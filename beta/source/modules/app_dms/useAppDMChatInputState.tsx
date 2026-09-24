@@ -1,21 +1,21 @@
-// Module ID: 13572
-// Function ID: 13573
+// Module ID: 13608
+// Function ID: 13609
 // Name: useAppDMChatInputState
-// Dependencies: [19, 9402, 4985, 7862, 2006, 1376, 1078, 1982, 558, 568, 504, 8461, 577, 7415, 2]
+// Dependencies: [19, 9434, 5017, 7894, 2006, 1376, 1078, 1982, 558, 568, 504, 8493, 577, 7447, 2]
 
-// Module 13572 (useAppDMChatInputState)
+// Module 13608 (useAppDMChatInputState)
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8461 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8493 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 4985 */;
-import UserProfileStore from "UserProfileStore" /* 7862 */;
+import ApplicationStore from "ApplicationStore" /* 5017 */;
+import UserProfileStore from "UserProfileStore" /* 7894 */;
 import ApplicationRecord from "ApplicationRecord" /* 2006 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const useQueryState = fn(9402).useQueryState;
+const useQueryState = fn(9434).useQueryState;
 const EMPTY_STRING_SNOWFLAKE_ID = fn(1078).EMPTY_STRING_SNOWFLAKE_ID;
 let items = [fn(1982).ApplicationCommandType.PRIMARY_ENTRY_POINT, fn(1982).ApplicationCommandType.CHAT, fn(1982).ApplicationCommandType.MESSAGE, fn(1982).ApplicationCommandType.USER];
 const ReactCompilerGating = fn(558);
@@ -579,7 +579,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
               }
             }
           }
-          const useGetOrFetchApplication = tmp(7415).useGetOrFetchApplication;
+          const useGetOrFetchApplication = tmp(7447).useGetOrFetchApplication;
           if (null == tmp41) {
             class U {
               constructor() {
@@ -706,7 +706,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
           cResult[30] = undefined;
           cResult[31] = obj2;
           tmp45 = obj2;
-          const tmpResult4 = tmp(7415);
+          const tmpResult4 = tmp(7447);
         }
         const descriptors = tmp37.descriptors;
         const found = descriptors.find((application) => {

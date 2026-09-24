@@ -1,13 +1,13 @@
-// Module ID: 11868
-// Function ID: 11869
+// Module ID: 11904
+// Function ID: 11905
 // Name: StampIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 11869, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 11905, 4493, 2]
 
-// Module 11868 (StampIcon)
+// Module 11904 (StampIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod11869 from "module_11869" /* 11869 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod11905 from "module_11905" /* 11905 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const StampIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(11869);
+    const tmpResult = tmp(11905);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const StampIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11869, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11905, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

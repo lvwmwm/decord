@@ -1,17 +1,17 @@
-// Module ID: 8244
-// Function ID: 8245
+// Module ID: 8276
+// Function ID: 8277
 // Name: useIsCallActive
-// Dependencies: [5497, 4774, 4779, 558, 568, 504, 2]
+// Dependencies: [5529, 4806, 4811, 558, 568, 504, 2]
 // Exports: checkIsCallActive
 
-// Module 8244 (useIsCallActive)
-import CallStore from "CallStore" /* 5497 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
+// Module 8276 (useIsCallActive)
+import CallStore from "CallStore" /* 5529 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4806 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ParticipantTypes = fn(4779).ParticipantTypes;
+const ParticipantTypes = fn(4811).ParticipantTypes;
 fn(558);
 const ReactCompilerGating = fn(558);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {

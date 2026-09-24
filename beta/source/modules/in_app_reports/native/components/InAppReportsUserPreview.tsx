@@ -1,22 +1,22 @@
-// Module ID: 8932
-// Function ID: 8933
+// Module ID: 8964
+// Function ID: 8965
 // Name: InAppReportsUserPreview
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 7222, 4608, 1119, 4754, 1181, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 7254, 4640, 1119, 4786, 1181, 2]
 
-// Module 8932 (InAppReportsUserPreview)
+// Module 8964 (InAppReportsUserPreview)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import ColorUtils from "ColorUtils" /* 4608 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7222 */;
+import ColorUtils from "ColorUtils" /* 4640 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7254 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, borderColor: { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY }, title: { lineHeight: 16, marginBottom: 8 }, userContainer: null, userProfileInfo: null };
 let obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj2.userContainer = { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 12 };
@@ -33,11 +33,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   const tmp4 = closure_5();
   const typeConsolidationEyebrow = useTypeConsolidationTextTransform.useTypeConsolidationEyebrow("InAppReportsUserPreview", "text-xs/bold");
   if (cResult[0] !== tmp4.borderColor.color) {
-    const hexWithOpacityResult = tmp(4608).hexWithOpacity(tmp4.borderColor.color, 0.08);
+    const hexWithOpacityResult = tmp(4640).hexWithOpacity(tmp4.borderColor.color, 0.08);
     cResult[0] = tmp4.borderColor.color;
     cResult[1] = hexWithOpacityResult;
     let tmp6 = hexWithOpacityResult;
-    const tmpResult = tmp(4608);
+    const tmpResult = tmp(4640);
   } else {
     tmp6 = cResult[1];
   }
@@ -85,7 +85,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                 let tmp23 = null != user.globalName;
                 if (tmp23) {
                   const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: user.globalName };
-                  tmp23 = React3(tmp(4754).Text, obj5);
+                  tmp23 = React3(tmp(4786).Text, obj5);
                 }
                 cResult[18] = user.globalName;
                 cResult[19] = tmp23;
@@ -95,7 +95,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
               }
               if (cResult[20] !== user.username) {
                 const obj6 = { color: "text-default", variant: "text-sm/normal", children: user.username };
-                const tmp27 = React3(tmp(4754).Text, obj6);
+                const tmp27 = React3(tmp(4786).Text, obj6);
                 cResult[20] = user.username;
                 cResult[21] = tmp27;
                 let tmp25 = tmp27;
@@ -160,7 +160,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           }
         }
         const obj10 = { style: tmp8, accessibilityRole: "header", variant: typeConsolidationEyebrow.variant, children: cResult[6] };
-        const tmp15 = React3(tmp(4754).Text, obj10);
+        const tmp15 = React3(tmp(4786).Text, obj10);
         cResult[7] = typeConsolidationEyebrow.variant;
         cResult[8] = tmp8;
         cResult[9] = cResult[6];
@@ -209,7 +209,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   let tmp8Result = null != user.globalName;
   if (tmp8Result) {
     const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: user.globalName };
-    tmp8Result = tmp8(tmp2(4754).Text, obj8);
+    tmp8Result = tmp8(tmp2(4786).Text, obj8);
   }
   const items4 = [tmp8Result, React3(Text_Text.Text, { color: "text-default", variant: "text-sm/normal", children: user.username })];
   obj7.children = items4;

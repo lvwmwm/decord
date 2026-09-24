@@ -1,13 +1,13 @@
-// Module ID: 6788
-// Function ID: 6789
+// Module ID: 6820
+// Function ID: 6821
 // Name: TreasureChestSpotIllustration
-// Dependencies: [21, 558, 568, 6789, 5802, 2]
+// Dependencies: [21, 558, 568, 6821, 5834, 2]
 
-// Module 6788 (TreasureChestSpotIllustration)
+// Module 6820 (TreasureChestSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6789 from "module_6789" /* 6789 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6821 from "module_6821" /* 6821 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const TreasureChestSpotIllustration = ReactCompilerGating.isReactCompiler
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6789 };
+    const obj2 = { uri: _modDef6821 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const TreasureChestSpotIllustration = ReactCompilerGating.isReactCompiler
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6789 };
+  const obj2 = { uri: _modDef6821 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

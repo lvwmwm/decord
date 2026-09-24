@@ -1,14 +1,14 @@
-// Module ID: 7446
-// Function ID: 7447
+// Module ID: 7478
+// Function ID: 7479
 // Name: TableSwitchRow
-// Dependencies: [32, 109, 19, 17, 21, 4758, 558, 568, 1368, 4464, 4754, 7447, 5822, 2]
+// Dependencies: [32, 109, 19, 17, 21, 4790, 558, 568, 1368, 4496, 4786, 7479, 5854, 2]
 
-// Module 7446 (TableSwitchRow)
+// Module 7478 (TableSwitchRow)
 import c from "c" /* 568 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import native from "native" /* 4464 */;
-import TableRow from "TableRow" /* 5822 */;
-import FormSwitch from "FormSwitch" /* 7447 */;
+import native from "native" /* 4496 */;
+import TableRow from "TableRow" /* 5854 */;
+import FormSwitch from "FormSwitch" /* 7479 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -18,7 +18,7 @@ let closure_2 = ["value", "onValueChange", "label", "subLabel", "trailing", "dis
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles(() => ({ labelWithTrailing: { flexDirection: "row", alignItems: "center", gap: 8 } }));
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -69,16 +69,16 @@ export const TableSwitchRow = ReactCompilerGating.isReactCompilerEnabled() ? ((v
   PlatformUtils;
   if (cResult[10] === tmp6) {
     if (cResult[13] !== tmp5) {
-      const nodeText = tmp(4464).getNodeText(tmp5);
+      const nodeText = tmp(4496).getNodeText(tmp5);
       cResult[13] = tmp5;
       cResult[14] = nodeText;
-      const tmpResult3 = tmp(4464);
+      const tmpResult3 = tmp(4496);
     }
     if (cResult[15] !== tmp8) {
-      const nodeText1 = tmp(4464).getNodeText(tmp8);
+      const nodeText1 = tmp(4496).getNodeText(tmp8);
       cResult[15] = tmp8;
       cResult[16] = nodeText1;
-      const tmpResult4 = tmp(4464);
+      const tmpResult4 = tmp(4496);
     }
     [r10076, closure_2] = noop.useState(tmp11);
     if (cResult[17] !== tmp11) {
@@ -145,7 +145,7 @@ export const TableSwitchRow = ReactCompilerGating.isReactCompilerEnabled() ? ((v
             }
           }
           const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", includeFontPadding: true, children: tmp5 };
-          tmp32Result = tmp32(tmp(4754).Text, obj2);
+          tmp32Result = tmp32(tmp(4786).Text, obj2);
         }
         const items1 = [tmp32Result, tmp10];
         tmp36[1] = items1;
@@ -236,7 +236,7 @@ export const TableSwitchRow = ReactCompilerGating.isReactCompilerEnabled() ? ((v
         str = "text-feedback-critical";
       }
       const obj7 = { variant: "text-md/semibold", color: str, includeFontPadding: true, children: label };
-      tmp10Result = tmp10(tmp3(4754).Text, obj7);
+      tmp10Result = tmp10(tmp3(4786).Text, obj7);
     }
     const items1 = [tmp10Result, trailing];
     obj6.children = items1;

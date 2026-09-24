@@ -1,12 +1,12 @@
-// Module ID: 9007
-// Function ID: 9008
+// Module ID: 9039
+// Function ID: 9040
 // Name: OpenCriticRatingCircle
-// Dependencies: [21, 558, 568, 8733, 2]
+// Dependencies: [21, 558, 568, 8765, 2]
 
-// Module 9007 (OpenCriticRatingCircle)
+// Module 9039 (OpenCriticRatingCircle)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

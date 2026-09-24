@@ -1,13 +1,13 @@
-// Module ID: 6032
-// Function ID: 6033
+// Module ID: 6064
+// Function ID: 6065
 // Name: BellSpotIllustration
-// Dependencies: [21, 558, 568, 6033, 5802, 2]
+// Dependencies: [21, 558, 568, 6065, 5834, 2]
 
-// Module 6032 (BellSpotIllustration)
+// Module 6064 (BellSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6033 from "module_6033" /* 6033 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6065 from "module_6065" /* 6065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const BellSpotIllustration = ReactCompilerGating.isReactCompilerEnabled()
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6033 };
+    const obj2 = { uri: _modDef6065 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const BellSpotIllustration = ReactCompilerGating.isReactCompilerEnabled()
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6033 };
+  const obj2 = { uri: _modDef6065 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

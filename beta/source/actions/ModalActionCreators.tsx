@@ -1,15 +1,15 @@
-// Module ID: 4961
-// Function ID: 4962
+// Module ID: 4993
+// Function ID: 4994
 // Name: ModalActionCreators
-// Dependencies: [1078, 4962, 4616, 4963, 4624, 577, 4617, 4964, 2]
+// Dependencies: [1078, 4994, 4648, 4995, 4656, 577, 4649, 4996, 2]
 
-// Module 4961 (ModalActionCreators)
+// Module 4993 (ModalActionCreators)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import Constants from "Constants" /* 1078 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4616 */;
-import Types from "Types" /* 4624 */;
-import uniqueIdDefault from "uniqueId" /* 4962 */;
-import getDeprecatedModalDataDefault from "getDeprecatedModalData" /* 4963 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4648 */;
+import Types from "Types" /* 4656 */;
+import uniqueIdDefault from "uniqueId" /* 4994 */;
+import getDeprecatedModalDataDefault from "getDeprecatedModalData" /* 4995 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

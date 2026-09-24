@@ -1,13 +1,13 @@
-// Module ID: 6820
-// Function ID: 6821
+// Module ID: 6852
+// Function ID: 6853
 // Name: WorldIllocon
-// Dependencies: [21, 558, 568, 6821, 5802, 2]
+// Dependencies: [21, 558, 568, 6853, 5834, 2]
 
-// Module 6820 (WorldIllocon)
+// Module 6852 (WorldIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6821 from "module_6821" /* 6821 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6853 from "module_6853" /* 6853 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const WorldIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6821 };
+    const obj2 = { uri: _modDef6853 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const WorldIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6821 };
+  const obj2 = { uri: _modDef6853 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

@@ -1,22 +1,22 @@
-// Module ID: 8190
-// Function ID: 8191
+// Module ID: 8222
+// Function ID: 8223
 // Name: ConversationPreviewSkeleton
-// Dependencies: [19, 17, 7842, 21, 4758, 580, 558, 568, 4497, 4759, 2]
+// Dependencies: [19, 17, 7874, 21, 4790, 580, 558, 568, 4529, 4791, 2]
 
-// Module 8190 (ConversationPreviewSkeleton)
+// Module 8222 (ConversationPreviewSkeleton)
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-let closure_5 = fn(7842).MOBILE_PREVIEW_MESSAGE_COUNT;
+let closure_5 = fn(7874).MOBILE_PREVIEW_MESSAGE_COUNT;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { row: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_4 }, rowSpacing: null, avatar: null, lines: null, lineName: null, lineText: null };
 let obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_4 };
 obj2.rowSpacing = { marginTop: nativeDefault.space.PX_26 };
@@ -66,7 +66,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   fn2.__closure = { opacity: sharedValue };
   fn2.__workletHash = 11432452203963;
   fn2.__initData = __initData;
-  const animatedStyle = tmp(4497).useAnimatedStyle(fn2);
+  const animatedStyle = tmp(4529).useAnimatedStyle(fn2);
   if (cResult[3] !== tmp4) {
     const _Array = Array;
     let obj3 = { length: closure_5 };
@@ -94,7 +94,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp14;
   }
-  const tmp15 = closure_6(sharedValue(4497).View, { style: animatedStyle, "aria-hidden": true, children: tmp10 });
+  const tmp15 = closure_6(sharedValue(4529).View, { style: animatedStyle, "aria-hidden": true, children: tmp10 });
   cResult[5] = animatedStyle;
   cResult[6] = tmp10;
   cResult[7] = tmp15;
@@ -131,5 +131,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return React5(View, obj, arg1);
     })
   };
-  return closure_6(sharedValue(4497).View, obj3);
+  return closure_6(sharedValue(4529).View, obj3);
 });

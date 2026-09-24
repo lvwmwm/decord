@@ -1,19 +1,19 @@
-// Module ID: 15319
-// Function ID: 15320
+// Module ID: 15329
+// Function ID: 15330
 // Name: BountiesModalCloseButton
-// Dependencies: [19, 21, 4758, 580, 558, 568, 1119, 5846, 5341, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 1119, 5878, 5373, 2]
 
-// Module 15319 (BountiesModalCloseButton)
+// Module 15329 (BountiesModalCloseButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Pressables from "Pressables" /* 5341 */;
-import XSmallIcon from "XSmallIcon" /* 5846 */;
+import Pressables from "Pressables" /* 5373 */;
+import XSmallIcon from "XSmallIcon" /* 5878 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles(() => {
   const obj = { closeButton: null };
   const size = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.round, width: nativeDefault.space.PX_32, height: nativeDefault.space.PX_32 };
@@ -38,7 +38,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "sm", color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT };
-    const tmp10 = jsx(tmp(5846).XSmallIcon, { size: "sm", color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT });
+    const tmp10 = jsx(tmp(5878).XSmallIcon, { size: "sm", color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT });
     cResult[1] = tmp10;
     let tmp7 = tmp10;
   } else {

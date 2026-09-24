@@ -1,13 +1,13 @@
-// Module ID: 4702
-// Function ID: 4703
+// Module ID: 4734
+// Function ID: 4735
 // Name: SendMessageIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 4703, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 4735, 4493, 2]
 
-// Module 4702 (SendMessageIcon)
+// Module 4734 (SendMessageIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod4703 from "module_4703" /* 4703 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod4735 from "module_4735" /* 4735 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const SendMessageIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(4703);
+    const tmpResult = tmp(4735);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const SendMessageIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod4703, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod4735, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

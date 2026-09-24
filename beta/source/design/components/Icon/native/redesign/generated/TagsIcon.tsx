@@ -1,13 +1,13 @@
-// Module ID: 11537
-// Function ID: 11538
+// Module ID: 11573
+// Function ID: 11574
 // Name: TagsIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 11538, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 11574, 4493, 2]
 
-// Module 11537 (TagsIcon)
+// Module 11573 (TagsIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod11538 from "module_11538" /* 11538 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod11574 from "module_11574" /* 11574 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const TagsIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(11538);
+    const tmpResult = tmp(11574);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const TagsIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11538, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11574, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

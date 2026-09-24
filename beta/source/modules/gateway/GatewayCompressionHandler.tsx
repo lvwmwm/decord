@@ -1,17 +1,17 @@
-// Module ID: 13915
-// Function ID: 13916
+// Module ID: 13951
+// Function ID: 13952
 // Name: GatewayCompressionHandler
-// Dependencies: [17, 13916, 13918, 3, 1368, 13917, 5359, 2]
+// Dependencies: [17, 13952, 13954, 3, 1368, 13953, 5391, 2]
 // Exports: getCompressionHandler
 
-// Module 13915 (GatewayCompressionHandler)
+// Module 13951 (GatewayCompressionHandler)
 import LoggerDefault from "Logger" /* 3 */;
 import _mod17 from "module_17" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import ProcessArgs2 from "ProcessArgs" /* 5359 */;
-import GatewayZstdUtils from "GatewayZstdUtils" /* 13916 */;
-import NativeCompressionModule from "NativeCompressionModule" /* 13917 */;
-import _mod13918 from "module_13918" /* 13918 */;
+import ProcessArgs2 from "ProcessArgs" /* 5391 */;
+import GatewayZstdUtils from "GatewayZstdUtils" /* 13952 */;
+import NativeCompressionModule from "NativeCompressionModule" /* 13953 */;
+import _mod13954 from "module_13954" /* 13954 */;
 import size from "module_2" /* 2 */;
 
 const NativeModules = _mod17.NativeModules;
@@ -95,7 +95,7 @@ prototype2["close"] = function close() {
 items.push(fn);
 const fn2 = (arg0) => {
   const tmp2 = new tmp(arg0, new.target, tmp, new.target);
-  tmp2._pako = _mod13918;
+  tmp2._pako = _mod13954;
   tmp2._usesZstd = false;
   tmp2._zstdDecoder = null;
   tmp2._zstdStream = null;
@@ -223,7 +223,7 @@ prototype3["handleFlushEnd"] = function handleFlushEnd(arg0) {
 items.push(fn2);
 const fn3 = () => {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  applyArgumentsResult._pako = _mod13918;
+  applyArgumentsResult._pako = _mod13954;
   return applyArgumentsResult;
 };
 const prototype4 = fn3.prototype;
@@ -286,7 +286,7 @@ prototype5["bindWebSocket"] = function bindWebSocket(_socketId) {
   const isAndroidResult = PlatformUtils.isAndroid();
   if (supportsZstdResult) {
     if (isAndroidResult) {
-      const _default2 = tmp2(13917).default;
+      const _default2 = tmp2(13953).default;
       if (_default2 != null) {
         const result = _default2.enableZstdStreamSupport(self._socketId);
       }
@@ -295,7 +295,7 @@ prototype5["bindWebSocket"] = function bindWebSocket(_socketId) {
       const result1 = DCDCompressionManager2.enableZstdStreamSupport(self._socketId, 0);
     }
   } else if (isAndroidResult) {
-    const _default = tmp2(13917).default;
+    const _default = tmp2(13953).default;
     if (_default != null) {
       const result2 = _default.enableZlibStreamSupport(self._socketId);
     }
@@ -329,7 +329,7 @@ prototype5["close"] = function close() {
   this._socketId = null;
   if (null !== _socketId) {
     if (obj.isAndroid()) {
-      const _default = tmp(13917).default;
+      const _default = tmp(13953).default;
       if (_default != null) {
         const result = _default.disableZlibStreamSupport(_socketId);
       }

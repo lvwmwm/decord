@@ -1,25 +1,25 @@
-// Module ID: 16746
-// Function ID: 16747
+// Module ID: 16756
+// Function ID: 16757
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 7877, 21, 4758, 580, 558, 568, 504, 16737, 1181, 9092, 1369, 5843, 5846, 4710, 2]
+// Dependencies: [19, 17, 7909, 21, 4790, 580, 558, 568, 504, 16747, 1181, 9124, 1369, 5875, 5878, 4742, 2]
 
-// Module 16746 (BackIconWithBadge)
+// Module 16756 (BackIconWithBadge)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import XLargeIcon from "XLargeIcon" /* 4710 */;
-import ArrowLargeLeftIcon2 from "ArrowLargeLeftIcon" /* 5843 */;
-import ClipView from "ClipView" /* 9092 */;
-import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 16737 */;
+import XLargeIcon from "XLargeIcon" /* 4742 */;
+import ArrowLargeLeftIcon2 from "ArrowLargeLeftIcon" /* 5875 */;
+import ClipView from "ClipView" /* 9124 */;
+import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 16747 */;
 import noop from "module_19" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7877 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7909 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { badgeWrapper: { position: "absolute", top: 16, left: 12 }, backIcon: { height: 24, width: 24 }, iconWithBadge: { display: "flex", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, borderRadius: nativeDefault.modules.button.BORDER_RADIUS, padding: 7, backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT } };
 let closure_8 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -81,7 +81,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let num8 = 2;
     const sum1 = BADGE_SIZE + 2 * tmp(1181).BADGE_PADDING;
     if (cResult[2] !== sum1) {
-      const size1 = { shape: tmp(9092).CutoutShape.RoundedRect, x: null, y: null, width: null, height: null, cornerRadius: null };
+      const size1 = { shape: tmp(9124).CutoutShape.RoundedRect, x: null, y: null, width: null, height: null, cornerRadius: null };
       class I {
         constructor() {
           return closure_1_5.getTotalMentionCount();
@@ -117,7 +117,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let num2 = 0;
   if (flag) {
-    num2 = memo(16737)().value;
+    num2 = memo(16747)().value;
   }
   const sum = num + num2;
   _require = sum;
@@ -155,7 +155,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items4 = [];
   }
   const obj4 = { cutouts: items4, children: closure_6(includeNotificationsCount.Icon, { size: "md", style: tmp.backIcon, color: "interactive-text-default" }) };
-  const items5 = [closure_6(tmp5(9092), obj4), ];
+  const items5 = [closure_6(tmp5(9124), obj4), ];
   let tmp9Result = null;
   if (sum > 0) {
     const obj6 = { style: tmp.badgeWrapper, children: null };
@@ -190,11 +190,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const obj2 = { includeNotificationsCount: undefined !== includeNotificationsCount && includeNotificationsCount, Icon: null };
   if (tmp4.index > 0) {
-    ArrowLargeLeftIcon = tmp(5843).ArrowLargeLeftIcon;
+    ArrowLargeLeftIcon = tmp(5875).ArrowLargeLeftIcon;
     obj2.Icon = ArrowLargeLeftIcon;
     let tmp9 = obj2;
   } else {
-    obj2.Icon = tmp(5846).XSmallIcon;
+    obj2.Icon = tmp(5878).XSmallIcon;
     tmp9 = obj2;
   }
   cResult[2] = undefined !== includeNotificationsCount && includeNotificationsCount;
@@ -209,10 +209,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items = [navigation];
   const obj = { includeNotificationsCount: flag, Icon: null };
   if (noop.useMemo(() => navigation.getState().index > 0, items)) {
-    obj.Icon = tmp3(5843).ArrowLargeLeftIcon;
+    obj.Icon = tmp3(5875).ArrowLargeLeftIcon;
     let tmp5 = obj;
   } else {
-    obj.Icon = tmp3(5846).XSmallIcon;
+    obj.Icon = tmp3(5878).XSmallIcon;
     tmp5 = obj;
   }
   return timestampProducer(closure_9, tmp5);
@@ -249,7 +249,7 @@ export const CloseIconWithBadgeOnSide = ReactCompilerGating.isReactCompilerEnabl
   count = count.count;
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = timestampProducer(tmp(4710).XLargeIcon, { size: "sm", color: "white" });
+    const tmp7 = timestampProducer(tmp(4742).XLargeIcon, { size: "sm", color: "white" });
     cResult[0] = tmp7;
     let first = tmp7;
   } else {

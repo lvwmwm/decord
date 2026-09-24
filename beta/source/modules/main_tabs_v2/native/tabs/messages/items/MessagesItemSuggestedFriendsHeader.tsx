@@ -1,16 +1,16 @@
-// Module ID: 16434
-// Function ID: 16435
+// Module ID: 16444
+// Function ID: 16445
 // Name: MessagesItemSuggestedFriendsHeader
-// Dependencies: [19, 17, 21, 4754, 580, 4758, 558, 568, 4497, 8543, 5343, 1119, 2]
+// Dependencies: [19, 17, 21, 4786, 580, 4790, 558, 568, 4529, 8575, 5375, 1119, 2]
 
-// Module 16434 (MessagesItemSuggestedFriendsHeader)
+// Module 16444 (MessagesItemSuggestedFriendsHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5343 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8543 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5375 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8575 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,8 +18,8 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const sum = fn(4754).TextStyleSheet["text-md/semibold"].lineHeight + nativeDefault.space.PX_24;
-const createStyles = fn(4758);
+const sum = fn(4786).TextStyleSheet["text-md/semibold"].lineHeight + nativeDefault.space.PX_24;
+const createStyles = fn(4790);
 let obj = { headerContainer: { height: sum, justifyContent: "center", overflow: "hidden" }, stickyOverlay: null, headerText: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -72,7 +72,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sticky
         }
         if (cResult[8] !== tmp4.headerText) {
           const obj3 = { style: tmp4.headerText, maxFontSizeMultiplier: 2, lineClamp: 1, accessibilityRole: "header", variant: "text-md/semibold", color: "text-default", children: tmp19 };
-          const tmp23 = hasOwnProperty(tmp(4754).Text, obj3);
+          const tmp23 = hasOwnProperty(tmp(4786).Text, obj3);
           cResult[8] = tmp4.headerText;
           cResult[9] = tmp23;
           let tmp21 = tmp23;

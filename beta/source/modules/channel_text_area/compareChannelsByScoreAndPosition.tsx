@@ -1,10 +1,10 @@
-// Module ID: 7580
-// Function ID: 7581
+// Module ID: 7612
+// Function ID: 7613
 // Name: compareChannelsByScoreAndPosition
 // Dependencies: [2045, 1078, 2]
 // Exports: default
 
-// Module 7580 (compareChannelsByScoreAndPosition)
+// Module 7612 (compareChannelsByScoreAndPosition)
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 const ChannelTypes = fn(1078).ChannelTypes;

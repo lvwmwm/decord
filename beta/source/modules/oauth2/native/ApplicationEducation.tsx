@@ -1,14 +1,14 @@
-// Module ID: 9530
-// Function ID: 9531
+// Module ID: 9562
+// Function ID: 9563
 // Name: ApplicationEducation
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 9333, 8615, 1119, 4459, 9531, 9346, 7624, 4754, 9533, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 9365, 8647, 1119, 4491, 9563, 9378, 7656, 4786, 9565, 2]
 
-// Module 9530 (ApplicationEducation)
+// Module 9562 (ApplicationEducation)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8615 */;
-import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 9333 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8647 */;
+import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 9365 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ const View = fn(17).View;
 const MAX_FRIENDS = fn(1078).MAX_FRIENDS;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { applicationEducation: { flexDirection: "column", gap: 16 }, entry: { flexDirection: "row", alignItems: "center", gap: 12 }, entryText: { flex: 1 }, entryIcon: null };
 let size = { width: 20, height: 20, tintColor: nativeDefault.colors.TEXT_MUTED };
 obj2.entryIcon = size;
@@ -109,7 +109,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           cResult[4] = formatToPlainString2Result;
         } else {
           if (cResult[5] !== cResult[4]) {
-            const obj3 = { iconComponent: tmp(4459).FriendsIcon, text: tmp28 };
+            const obj3 = { iconComponent: tmp(4491).FriendsIcon, text: tmp28 };
             cResult[5] = tmp28;
             cResult[6] = obj3;
             let tmp33 = obj3;
@@ -130,7 +130,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             cResult[8] = string3Result;
           } else {
             if (cResult[9] !== cResult[8]) {
-              const obj4 = { iconComponent: tmp(9531).ChatSmileIcon, text: tmp34 };
+              const obj4 = { iconComponent: tmp(9563).ChatSmileIcon, text: tmp34 };
               cResult[9] = tmp34;
               cResult[10] = obj4;
               let tmp37 = obj4;
@@ -151,7 +151,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               cResult[12] = string4Result;
             } else {
               if (cResult[13] !== cResult[12]) {
-                const obj5 = { iconComponent: tmp(9346).GameControllerIcon, text: tmp38 };
+                const obj5 = { iconComponent: tmp(9378).GameControllerIcon, text: tmp38 };
                 cResult[13] = tmp38;
                 cResult[14] = obj5;
                 let tmp42 = obj5;
@@ -172,7 +172,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 cResult[16] = string5Result;
               } else {
                 if (cResult[17] !== cResult[16]) {
-                  const obj6 = { iconComponent: tmp(7624).SettingsIcon, text: tmp43 };
+                  const obj6 = { iconComponent: tmp(7656).SettingsIcon, text: tmp43 };
                   cResult[17] = tmp43;
                   cResult[18] = obj6;
                   let tmp46 = obj6;
@@ -197,7 +197,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[1] = tmp5;
     cResult[2] = formatToPlainStringResult;
   } else {
-    if (accountScopes.includes(tmp(8615).OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE)) {
+    if (accountScopes.includes(tmp(8647).OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE)) {
       if (cResult[19] === application) {
         if (cResult[20] === tmp5) {
           if (cResult[22] !== tmp5) {
@@ -215,7 +215,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             cResult[23] = formatToPlainStringResult1;
           } else {
             if (cResult[24] !== cResult[23]) {
-              const obj9 = { iconComponent: tmp(4459).FriendsIcon, text: tmp9 };
+              const obj9 = { iconComponent: tmp(4491).FriendsIcon, text: tmp9 };
               cResult[24] = tmp9;
               cResult[25] = obj9;
               let tmp14 = obj9;
@@ -236,7 +236,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               cResult[27] = stringResult;
             } else {
               if (cResult[28] !== cResult[27]) {
-                const obj10 = { iconComponent: tmp(9346).GameControllerIcon, text: tmp15 };
+                const obj10 = { iconComponent: tmp(9378).GameControllerIcon, text: tmp15 };
                 cResult[28] = tmp15;
                 cResult[29] = obj10;
                 let tmp19 = obj10;
@@ -257,7 +257,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 cResult[31] = string2Result;
               } else {
                 if (cResult[32] !== cResult[31]) {
-                  const obj11 = { iconComponent: tmp(7624).SettingsIcon, text: tmp20 };
+                  const obj11 = { iconComponent: tmp(7656).SettingsIcon, text: tmp20 };
                   cResult[32] = tmp20;
                   cResult[33] = obj11;
                   let tmp23 = obj11;
@@ -290,7 +290,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp56 = null;
           if (arr2.length > 0) {
             const obj13 = { variant: "text-sm/normal", color: "text-default", children: arr2 };
-            tmp56 = hasOwnProperty(tmp(4754).Text, obj13);
+            tmp56 = hasOwnProperty(tmp(4786).Text, obj13);
           }
         }
         cResult[34] = arr2;
@@ -307,7 +307,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const _Symbol = Symbol;
           if (cResult[40] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp66 = hasOwnProperty(tmp(9533).AuthorizeFormSeparator, {});
+            const tmp66 = hasOwnProperty(tmp(9565).AuthorizeFormSeparator, {});
             cResult[40] = tmp66;
             let tmp64 = tmp66;
           } else {
@@ -350,7 +350,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       formatToPlainStringResult = intl5.string(tmp4(1119).t.ex4sMU);
     }
-    const obj3 = { iconComponent: tmp4(4459).FriendsIcon, text: null };
+    const obj3 = { iconComponent: tmp4(4491).FriendsIcon, text: null };
     const intl6 = tmp4(1119).intl;
     const formatToPlainString2 = intl6.formatToPlainString;
     const t4 = tmp4(1119).t;
@@ -362,7 +362,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       formatToPlainString2Result = formatToPlainString2(t4.WNKzo9, obj5);
     }
     obj3.text = formatToPlainString2Result;
-    const obj6 = { iconComponent: tmp4(9531).ChatSmileIcon, text: null };
+    const obj6 = { iconComponent: tmp4(9563).ChatSmileIcon, text: null };
     const intl7 = tmp4(1119).intl;
     const string3 = intl7.string;
     const t5 = tmp4(1119).t;
@@ -372,7 +372,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       string3Result = string3(t5.j7peBh);
     }
     obj6.text = string3Result;
-    const obj7 = { iconComponent: tmp4(9346).GameControllerIcon, text: null };
+    const obj7 = { iconComponent: tmp4(9378).GameControllerIcon, text: null };
     const intl8 = tmp4(1119).intl;
     const string4 = intl8.string;
     const t6 = tmp4(1119).t;
@@ -382,7 +382,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       string4Result = string4(t6["feD3+i"]);
     }
     obj7.text = string4Result;
-    let obj8 = { iconComponent: tmp4(7624).SettingsIcon, text: null };
+    let obj8 = { iconComponent: tmp4(7656).SettingsIcon, text: null };
     const intl9 = tmp4(1119).intl;
     const string5 = intl9.string;
     let mSqazC = tmp4(1119).t;
@@ -395,7 +395,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj8.text = string5Result;
     obj8 = items.push(obj3, obj6, obj7, obj8);
   } else {
-    if (accountScopes.includes(tmp4(8615).OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE)) {
+    if (accountScopes.includes(tmp4(8647).OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE)) {
       const intl = tmp4(1119).intl;
       if (tmp3) {
         const obj = { applicationName: application.name };
@@ -403,7 +403,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       } else {
         formatToPlainStringResult1 = intl.string(tmp4(1119).t.ex4sMU);
       }
-      const obj9 = { iconComponent: tmp4(4459).FriendsIcon, text: null };
+      const obj9 = { iconComponent: tmp4(4491).FriendsIcon, text: null };
       const intl2 = tmp4(1119).intl;
       const formatToPlainString = intl2.formatToPlainString;
       const t = tmp4(1119).t;
@@ -415,7 +415,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         formatToPlainStringResult2 = formatToPlainString(t.WNKzo9, obj11);
       }
       obj9.text = formatToPlainStringResult2;
-      const obj12 = { iconComponent: tmp4(9346).GameControllerIcon, text: null };
+      const obj12 = { iconComponent: tmp4(9378).GameControllerIcon, text: null };
       const intl3 = tmp4(1119).intl;
       const string = intl3.string;
       const t2 = tmp4(1119).t;
@@ -425,7 +425,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         stringResult = string(t2["feD3+i"]);
       }
       obj12.text = stringResult;
-      const obj13 = { iconComponent: tmp4(7624).SettingsIcon, text: null };
+      const obj13 = { iconComponent: tmp4(7656).SettingsIcon, text: null };
       const intl4 = tmp4(1119).intl;
       const string2 = intl4.string;
       const t3 = tmp4(1119).t;
@@ -445,13 +445,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp27 = null;
         if (arr2.length > 0) {
           const obj15 = { variant: "text-sm/normal", color: "text-default", children: arr2 };
-          tmp27 = hasOwnProperty(tmp4(4754).Text, obj15);
+          tmp27 = hasOwnProperty(tmp4(4786).Text, obj15);
         }
       }
       const obj16 = { children: null };
       const items1 = [tmp27, items.map((iconComponent, index) => closure_1_5(closure_1_9, { iconComponent: iconComponent.iconComponent, text: iconComponent.text }, index))];
       obj14.children = items1;
-      const items2 = [timestampProducer(View, obj14), hasOwnProperty(tmp4(9533).AuthorizeFormSeparator, {})];
+      const items2 = [timestampProducer(View, obj14), hasOwnProperty(tmp4(9565).AuthorizeFormSeparator, {})];
       obj16.children = items2;
       tmp30Result = tmp30(React5, obj16);
     }

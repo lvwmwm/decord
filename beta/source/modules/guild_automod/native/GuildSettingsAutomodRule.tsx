@@ -1,29 +1,29 @@
-// Module ID: 17960
-// Function ID: 17961
+// Module ID: 17970
+// Function ID: 17971
 // Name: GuildSettingsAutomodRule
-// Dependencies: [5, 19, 17944, 17946, 11993, 21, 4758, 580, 558, 568, 1488, 17305, 2023, 17947, 5116, 1119, 5839, 7621, 11998, 4457, 4659, 7436, 4754, 6846, 7446, 17961, 17972, 17975, 5903, 5822, 5186, 8876, 7286, 2]
+// Dependencies: [5, 19, 17954, 17956, 12029, 21, 4790, 580, 558, 568, 1488, 17315, 2023, 17957, 5148, 1119, 5871, 7653, 12034, 4489, 4691, 7468, 4786, 6878, 7478, 17971, 17982, 17985, 5935, 5854, 5218, 8908, 7318, 2]
 
-// Module 17960 (GuildSettingsAutomodRule)
+// Module 17970 (GuildSettingsAutomodRule)
 import nativeDefault from "native" /* 580 */;
-import ToastUtils from "ToastUtils" /* 4457 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import ClipboardUtils from "ClipboardUtils" /* 7436 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 17947 */;
+import ToastUtils from "ToastUtils" /* 4489 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import ClipboardUtils from "ClipboardUtils" /* 7468 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 17957 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const useAutomodRulesList = fn(17944).useAutomodRulesList;
-const GuildSettingsAutomodRuleStore = fn(17946);
+const useAutomodRulesList = fn(17954).useAutomodRulesList;
+const GuildSettingsAutomodRuleStore = fn(17956);
 ({ useAutomodEditingRuleActions: metroRequire, useAutomodEditingRuleState: closure_7 } = GuildSettingsAutomodRuleStore);
-const MAX_RULE_NAME_LENGTH = fn(11993).MAX_RULE_NAME_LENGTH;
+const MAX_RULE_NAME_LENGTH = fn(12029).MAX_RULE_NAME_LENGTH;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
 let c12 = "automod-delete-rule";
 let c13 = "automod-unsaved-changes";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { stack: { marginTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING } };
 let closure_14 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -533,20 +533,20 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                         let v0 = 1;
                         c5 = 2;
                         c6 = 1;
-                        const obj6 = { value: closure_0(11998).deleteAutomodRule(id, closure_0), done: false };
+                        const obj6 = { value: closure_0(12034).deleteAutomodRule(id, closure_0), done: false };
                         return obj6;
                       }
                     } else if (1 === tmp7) {
                       v0 = 0;
                       closure_129_0 = closure_3;
-                      const aPIError = new closure_0(4659).APIError(closure_129_0);
+                      const aPIError = new closure_0(4691).APIError(closure_129_0);
                       const anyErrorMessage = aPIError.getAnyErrorMessage();
                       closure_0 = anyErrorMessage;
                       if (anyErrorMessage == null) {
                         const intl = closure_0(1119).intl;
                         closure_0 = intl.string(closure_0(1119).t.fEptJP);
                       }
-                      closure_0(4457).presentError(closure_0);
+                      closure_0(4489).presentError(closure_0);
                       throw closure_129_0;
                     } else if (arg0 === 1) {
                       c6 = 3;

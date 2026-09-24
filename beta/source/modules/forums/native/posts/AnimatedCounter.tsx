@@ -1,16 +1,16 @@
-// Module ID: 11545
-// Function ID: 11546
+// Module ID: 11581
+// Function ID: 11582
 // Name: AnimatedCounter
-// Dependencies: [32, 19, 17, 21, 4758, 558, 568, 38, 4497, 4471, 5187, 4754, 5191, 11546, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 558, 568, 38, 4529, 4503, 5219, 4786, 5223, 11582, 2]
 
-// Module 11545 (AnimatedCounter)
+// Module 11581 (AnimatedCounter)
 import c from "c" /* 568 */;
-import native from "native" /* 4471 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import spring from "spring" /* 5187 */;
-import springPresets from "springPresets" /* 5191 */;
-import AnimatedCounterUtils from "AnimatedCounterUtils" /* 11546 */;
+import native from "native" /* 4503 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import spring from "spring" /* 5219 */;
+import springPresets from "springPresets" /* 5223 */;
+import AnimatedCounterUtils from "AnimatedCounterUtils" /* 11582 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -22,7 +22,7 @@ get_ActivityIndicator = fn(17);
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 createStyles.createStyles({ container: { flex: 0, flexGrow: 0, flexShrink: 0, justifyContent: "flex-start", alignItems: "flex-start", overflow: "hidden" }, hidden: { opacity: 0 } });
 let obj = { ABOVE: -1, [-1]: "ABOVE", NEUTRAL: 0, [0]: "NEUTRAL", BELOW: 1, [1]: "BELOW" };
 let items = [, , ];
@@ -387,7 +387,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
       obj = { formatter: closure_1, springConfig: null, count: null, state: null, cleanUp: null, height: null, textColor: null, textVariant: null, textStyle: null };
       springStandard = springConfig;
       tmp = jsx;
-      tmp2 = f57040;
+      tmp2 = f57091;
       if (null == springConfig) {
         tmp3 = closure_0;
         tmp4 = closure_2;

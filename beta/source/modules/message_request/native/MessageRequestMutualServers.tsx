@@ -1,17 +1,17 @@
-// Module ID: 17352
-// Function ID: 17353
+// Module ID: 17362
+// Function ID: 17363
 // Name: MessageRequestMutualServers
-// Dependencies: [19, 17, 21, 4758, 558, 568, 5799, 17353, 1119, 12782, 4754, 5341, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 5831, 17363, 1119, 12818, 4786, 5373, 2]
 
-// Module 17352 (MessageRequestMutualServers)
-import GuildIconDefault from "GuildIcon" /* 5799 */;
+// Module 17362 (MessageRequestMutualServers)
+import GuildIconDefault from "GuildIcon" /* 5831 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ container: { flexDirection: "row", alignItems: "center", gap: 4 }, label: { flexShrink: 1 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -23,7 +23,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = iconSize(568).c(26);
   ({ style, onPress, iconSize, textVariant, suffix, userId } = arg0);
   if (undefined === iconSize) {
-    iconSize = PressableOpacity(5799).GuildIconSizes.XXSMALL_12;
+    iconSize = PressableOpacity(5831).GuildIconSizes.XXSMALL_12;
   }
   let str = "text-xs/medium";
   if (undefined !== textVariant) {
@@ -31,7 +31,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmp3 = closure_6();
   const obj = iconSize(568);
-  const mutualGuildsForMessageRequests = PressableOpacity(17353).useMutualGuildsForMessageRequests(userId);
+  const mutualGuildsForMessageRequests = PressableOpacity(17363).useMutualGuildsForMessageRequests(userId);
   if (cResult[0] === mutualGuildsForMessageRequests.length) {
     if (cResult[1] === iconSize) {
       if (cResult[2] === mutualGuildsForMessageRequests) {
@@ -64,7 +64,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       if (length > 0) {
                         if (cResult[23] === tmp21) {
                         }
-                        PressableOpacity = PressableOpacity(5341).PressableOpacity;
+                        PressableOpacity = PressableOpacity(5373).PressableOpacity;
                         const obj2 = { accessibilityRole: "button", onPress, children: tmp21 };
                         tmp = closure_4(PressableOpacity, obj2);
                         cResult[23] = tmp21;
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj4 = { variant: str, color: "text-muted", lineClamp: 1, style: tmp3.label, children: combined };
-          const tmp20 = closure_4(PressableOpacity(4754).Text, obj4);
+          const tmp20 = closure_4(PressableOpacity(4786).Text, obj4);
           cResult[14] = tmp3.label;
           cResult[15] = combined;
           cResult[16] = str;
@@ -119,7 +119,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp13 = length > 0;
       if (tmp13) {
         const obj6 = { size: iconSize, names: substr.map((name) => name.name), children: substr.map((guild) => React4(GuildIconDefault, { guild, size: iconSize }, guild.id)) };
-        tmp13 = closure_4(PressableOpacity(12782).GuildIconPile, obj6);
+        tmp13 = closure_4(PressableOpacity(12818).GuildIconPile, obj6);
       }
       cResult[0] = length;
       cResult[1] = iconSize;
@@ -145,7 +145,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ onPress, iconSize } = textVariant);
   ({ userId, style } = textVariant);
   if (iconSize === undefined) {
-    iconSize = iconSize(5799).GuildIconSizes.XXSMALL_12;
+    iconSize = iconSize(5831).GuildIconSizes.XXSMALL_12;
   }
   let str = textVariant.textVariant;
   if (str === undefined) {
@@ -153,7 +153,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const suffix = textVariant.suffix;
   const tmp3 = closure_6();
-  const mutualGuildsForMessageRequests = iconSize(17353).useMutualGuildsForMessageRequests(userId);
+  const mutualGuildsForMessageRequests = iconSize(17363).useMutualGuildsForMessageRequests(userId);
   const substr = mutualGuildsForMessageRequests.slice(0, 3);
   if (mutualGuildsForMessageRequests.length > 0) {
     const intl2 = tmp4(1119).intl;
@@ -169,7 +169,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp9 = length > 0;
   if (tmp9) {
     const obj4 = { size: iconSize, names: substr.map((name) => name.name), children: substr.map((guild) => React4(GuildIconDefault, { guild, size: iconSize }, guild.id)) };
-    tmp9 = closure_4(tmp4(12782).GuildIconPile, obj4);
+    tmp9 = closure_4(tmp4(12818).GuildIconPile, obj4);
   }
   const items1 = [tmp9, ];
   const obj5 = { variant: str, color: "text-muted", lineClamp: 1, style: tmp3.label, children: null };
@@ -179,7 +179,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     combined = "" + formatResult + " \u00B7 " + suffix;
   }
   obj5.children = combined;
-  items1[1] = closure_4(iconSize(4754).Text, obj5);
+  items1[1] = closure_4(iconSize(4786).Text, obj5);
   obj3.children = items1;
   const tmp7Result = closure_5(View, obj3);
   let tmp11Result = tmp7Result;
@@ -187,7 +187,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp11Result = tmp7Result;
     if (length > 0) {
       const obj6 = { accessibilityRole: "button", onPress, children: tmp7Result };
-      tmp11Result = tmp11(tmp4(5341).PressableOpacity, obj6);
+      tmp11Result = tmp11(tmp4(5373).PressableOpacity, obj6);
     }
   }
   return tmp11Result;

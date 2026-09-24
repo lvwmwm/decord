@@ -1,9 +1,9 @@
-// Module ID: 15964
-// Function ID: 15965
+// Module ID: 15974
+// Function ID: 15975
 // Name: CheckpointWelcomeScreen
-// Dependencies: [17, 1376, 21, 4758, 580, 558, 568, 1482, 504, 4603, 1119, 3004, 15965, 3036, 15966, 15967, 2]
+// Dependencies: [17, 1376, 21, 4790, 580, 558, 568, 1482, 504, 4635, 1119, 3004, 15975, 3036, 15976, 15977, 2]
 
-// Module 15964 (CheckpointWelcomeScreen)
+// Module 15974 (CheckpointWelcomeScreen)
 import _mod17 from "module_17" /* 17 */;
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
@@ -12,13 +12,13 @@ import util from "util" /* 1119 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
 import _modDef3004 from "module_3004" /* 3004 */;
 import _modDef3036 from "module_3036" /* 3036 */;
-import UserUtils from "UserUtils" /* 4603 */;
-import CheckpointTextDefault from "CheckpointText" /* 15965 */;
-import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 15966 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 15967 */;
+import UserUtils from "UserUtils" /* 4635 */;
+import CheckpointTextDefault from "CheckpointText" /* 15975 */;
+import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 15976 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 15977 */;
 import UserStore from "UserStore" /* 1376 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -77,7 +77,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[8] !== tmp4.titleText) {
       const obj4 = { style: tmp4.titleText, variant: "display-lg", children: tmp14 };
-      const tmp18 = hasOwnProperty(tmp5(15965), obj4);
+      const tmp18 = hasOwnProperty(tmp5(15975), obj4);
       cResult[8] = tmp4.titleText;
       cResult[9] = tmp18;
       let tmp16 = tmp18;
@@ -100,7 +100,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       if (cResult[15] !== tmp23) {
         const obj6 = { variant: "heading-xl/medium", children: tmp23 };
-        const tmp27 = hasOwnProperty(tmp5(15965), obj6);
+        const tmp27 = hasOwnProperty(tmp5(15975), obj6);
         cResult[15] = tmp23;
         cResult[16] = tmp27;
         let tmp25 = tmp27;
@@ -113,7 +113,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
         if (cResult[20] !== tmp4.knickKnacks) {
           const obj7 = { style: tmp4.knickKnacks };
-          const tmp34 = hasOwnProperty(tmp5(15966), obj7);
+          const tmp34 = hasOwnProperty(tmp5(15976), obj7);
           cResult[20] = tmp4.knickKnacks;
           cResult[21] = tmp34;
           let tmp32 = tmp34;
@@ -135,12 +135,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const obj8 = { children: null };
               const obj9 = { style: container, children: tmp35 };
               obj8.children = hasOwnProperty(View, obj9);
-              const tmp43 = hasOwnProperty(tmp5(15967), obj8);
+              const tmp43 = hasOwnProperty(tmp5(15977), obj8);
               cResult[27] = tmp4.container;
               cResult[28] = tmp35;
               cResult[29] = tmp43;
               tmp39 = tmp43;
-              const tmp5Result = tmp5(15967);
+              const tmp5Result = tmp5(15977);
             }
           }
         }

@@ -1,13 +1,13 @@
-// Module ID: 9548
-// Function ID: 9549
+// Module ID: 9580
+// Function ID: 9581
 // Name: BotTag
-// Dependencies: [19, 17, 1353, 21, 4758, 580, 1119, 558, 568, 9549, 4754, 2]
+// Dependencies: [19, 17, 1353, 21, 4790, 580, 1119, 558, 568, 9581, 4786, 2]
 
-// Module 9548 (BotTag)
+// Module 9580 (BotTag)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import CheckmarkSmallBoldIcon from "CheckmarkSmallBoldIcon" /* 9549 */;
+import CheckmarkSmallBoldIcon from "CheckmarkSmallBoldIcon" /* 9581 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -35,7 +35,7 @@ const View = fn(17).View;
 const BotTagTypes = fn(1353).BotTagTypes;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { tag: { paddingLeft: 4, paddingRight: 4, borderRadius: nativeDefault.radii.xs, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 1 }, verifiedTagLeftPadding: { paddingLeft: 1 }, tagNormal: null, tagInverted: null, tagTextNormal: null, tagTextInverted: null };
 let obj3 = { paddingLeft: 4, paddingRight: 4, borderRadius: nativeDefault.radii.xs, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 1 };
 obj2.tagNormal = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
@@ -153,7 +153,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               tmp39 = tmp42;
             }
             const obj3 = { variant: "text-xs/semibold", lineClamp: 1, maxFontSizeMultiplier: 2, style: tmp35, children: tmp7 };
-            const tmp38 = hasOwnProperty(tmp(4754).Text, obj3);
+            const tmp38 = hasOwnProperty(tmp(4786).Text, obj3);
             cResult[14] = tmp35;
             cResult[15] = tmp7;
             cResult[16] = tmp38;
@@ -173,7 +173,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { size: "xs", color: nativeDefault.colors.WHITE };
-      const tmp16 = hasOwnProperty(tmp(9549).CheckmarkSmallBoldIcon, obj4);
+      const tmp16 = hasOwnProperty(tmp(9581).CheckmarkSmallBoldIcon, obj4);
       cResult[2] = tmp16;
     }
   }
@@ -228,7 +228,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj3 = { variant: "text-xs/semibold", lineClamp: 1, maxFontSizeMultiplier: 2, style: null, children: getBotLabel(BOT) };
   const items2 = [flag ? tmp2.tagTextInverted : tmp2.tagTextNormal];
   obj3.style = items2;
-  items1[1] = hasOwnProperty(tmp17(4754).Text, obj3);
+  items1[1] = hasOwnProperty(tmp17(4786).Text, obj3);
   obj2.children = items1;
   return timestampProducer(View, obj2);
 });

@@ -1,13 +1,13 @@
-// Module ID: 9489
-// Function ID: 9490
+// Module ID: 9521
+// Function ID: 9522
 // Name: UserSquareIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 9490, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9522, 4493, 2]
 
-// Module 9489 (UserSquareIcon)
+// Module 9521 (UserSquareIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod9490 from "module_9490" /* 9490 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9522 from "module_9522" /* 9522 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const UserSquareIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(9490);
+    const tmpResult = tmp(9522);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const UserSquareIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9490, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9522, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

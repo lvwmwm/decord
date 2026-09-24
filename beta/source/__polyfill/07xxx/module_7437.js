@@ -1,12 +1,9 @@
 // Module ID: 7437
 // Function ID: 7438
-// Dependencies: [7438, 7439]
+// Dependencies: [1125]
 
 // Module 7437
-import _mod7439 from "module_7439" /* 7439 */;
-
-const require = globalThis.__r;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export const useClipboard = require("module_7438").useClipboard;
-export default _mod7439.Clipboard;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [1, 2, 3], hash: "481d8ce76f3be0e6139166c2fc65af25", name: "ic_arrow_down", type: "png" });

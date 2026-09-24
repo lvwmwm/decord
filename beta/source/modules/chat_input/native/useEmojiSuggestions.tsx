@@ -1,15 +1,15 @@
-// Module ID: 12576
-// Function ID: 12577
+// Module ID: 12612
+// Function ID: 12613
 // Name: useEmojiSuggestions
-// Dependencies: [32, 19, 5678, 5213, 1379, 558, 568, 504, 5661, 2]
+// Dependencies: [32, 19, 5710, 5245, 1379, 558, 568, 504, 5693, 2]
 
-// Module 12576 (useEmojiSuggestions)
+// Module 12612 (useEmojiSuggestions)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5661 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5693 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5678 */;
+import EmojiStore from "EmojiStore" /* 5710 */;
 
 require = fn;
 function findWordSpan(text, selectionStart, selectionEnd) {
@@ -50,8 +50,8 @@ function findWordSpan(text, selectionStart, selectionEnd) {
     return obj3;
   }
 }
-const LoadState = fn(5678).LoadState;
-const EMOJI_SENTINEL = fn(5213).EMOJI_SENTINEL;
+const LoadState = fn(5710).LoadState;
+const EMOJI_SENTINEL = fn(5245).EMOJI_SENTINEL;
 const EmojiIntention = fn(1379).EmojiIntention;
 const re9 = /(\S+)\s$/;
 let closure_10 = { unlockedEmojis: [], lockedEmojis: [], queryStart: 0, queryEnd: 0 };
@@ -304,7 +304,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj2.channel = channel;
     obj2.intention = EmojiIntention.CHAT;
     obj2.maxCount = maxCount;
-    const emojis = enabled(5661).queryEmojiResults(obj2).emojis;
+    const emojis = enabled(5693).queryEmojiResults(obj2).emojis;
     length = emojis.unlocked.length;
     if (length < minUnlockedEmojis) {
       class W {
@@ -335,7 +335,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[14] = obj4;
       length = obj4;
     }
-    const obj3 = enabled(5661);
+    const obj3 = enabled(5693);
   } else {
     class W {
       constructor() {

@@ -1,15 +1,15 @@
-// Module ID: 17460
-// Function ID: 17461
+// Module ID: 17470
+// Function ID: 17471
 // Name: InviteActivityButton
-// Dependencies: [19, 9621, 5498, 21, 4725, 17461, 1984, 558, 568, 11889, 504, 1119, 5188, 10285, 2]
+// Dependencies: [19, 9653, 5530, 21, 4757, 17471, 1984, 558, 568, 11925, 504, 1119, 5220, 10324, 2]
 
-// Module 17460 (InviteActivityButton)
+// Module 17470 (InviteActivityButton)
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11889 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11925 */;
 import noop from "module_19" /* 19 */;
-import LocalActivityStore from "LocalActivityStore" /* 9621 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
+import LocalActivityStore from "LocalActivityStore" /* 9653 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5530 */;
 
 require = fn;
 const jsx = fn(21).jsx;
@@ -51,7 +51,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applic
     if (cResult[4] !== stateFromStores) {
       const fn2 = function y() {
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequireImpl(17461, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
+        obj.openLazy(asyncRequireImpl(17471, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
       };
       cResult[4] = stateFromStores;
       cResult[5] = fn2;
@@ -74,9 +74,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applic
       tmp11 = cResult[7];
     }
     if (cResult[8] !== tmp9) {
-      Button = Button(5188).Button;
+      Button = Button(5220).Button;
       const obj2 = { onPress: tmp9, icon: null, text: null, accessibilityLabel: null, variant: "secondary-overlay", size: "sm", shrink: true, maxFontSizeMultiplier: 1 };
-      tmp = stateFromStores(10285);
+      tmp = stateFromStores(10324);
       obj2.icon = tmp;
       obj2.text = tmp10;
       obj2.accessibilityLabel = tmp11;
@@ -95,9 +95,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applic
     const obj2 = {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
-          obj.openLazy(asyncRequireImpl(17461, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
+          obj.openLazy(asyncRequireImpl(17471, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
         },
-      icon: stateFromStores(10285),
+      icon: stateFromStores(10324),
       text: null,
       accessibilityLabel: null,
       variant: "secondary-overlay",
@@ -109,12 +109,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applic
     obj2.text = intl.string(tmp(1119).t["OzOM/q"]);
     const intl2 = tmp(1119).intl;
     obj2.accessibilityLabel = intl2.string(tmp(1119).t["OzOM/q"]);
-    tmp4 = jsx(tmp(5188).Button, {
+    tmp4 = jsx(tmp(5220).Button, {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
-          obj.openLazy(asyncRequireImpl(17461, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
+          obj.openLazy(asyncRequireImpl(17471, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
         },
-      icon: stateFromStores(10285),
+      icon: stateFromStores(10324),
       text: null,
       accessibilityLabel: null,
       variant: "secondary-overlay",

@@ -1,16 +1,16 @@
-// Module ID: 12466
-// Function ID: 12467
+// Module ID: 12502
+// Function ID: 12503
 // Name: useAvailableAndAddedGuilds
-// Dependencies: [5, 32, 19, 2067, 4399, 5657, 12460, 1078, 558, 568, 504, 12464, 5203, 2]
+// Dependencies: [5, 32, 19, 2067, 4431, 5689, 12496, 1078, 558, 568, 504, 12500, 5235, 2]
 
-// Module 12466 (useAvailableAndAddedGuilds)
+// Module 12502 (useAvailableAndAddedGuilds)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
-import SortedGuildStore from "SortedGuildStore" /* 5657 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 12460 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
+import SortedGuildStore from "SortedGuildStore" /* 5689 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 12496 */;
 
 const require = globalThis.__r;
 
@@ -138,7 +138,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }
   class R {
     constructor() {
-      tmp = closure_4(/* F140847 */ function() { ... })();
+      tmp = closure_4(/* F140935 */ function() { ... })();
       return;
     }
   }

@@ -1,20 +1,20 @@
-// Module ID: 17819
-// Function ID: 17820
+// Module ID: 17829
+// Function ID: 17830
 // Name: JankNavigationReporter
-// Dependencies: [4617, 16350, 16346, 16351, 4619, 2]
+// Dependencies: [4649, 16360, 16356, 16361, 4651, 2]
 
-// Module 17819 (JankNavigationReporter)
-import RootNavigationRef from "RootNavigationRef" /* 4617 */;
-import getJankScreenName from "getJankScreenName" /* 16346 */;
-import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 16350 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 16351 */;
+// Module 17829 (JankNavigationReporter)
+import RootNavigationRef from "RootNavigationRef" /* 4649 */;
+import getJankScreenName from "getJankScreenName" /* 16356 */;
+import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 16360 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 16361 */;
 import size from "module_2" /* 2 */;
 
 const getJankScreenNameDefault = getJankScreenName;
 
 class JankNavigationReporter {
   constructor() {
-    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Set" });
+    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Array" });
   }
 }
 const prototype = JankNavigationReporter.prototype;
@@ -87,8 +87,8 @@ prototype["shouldSettleInJS"] = function shouldSettleInJS(focusedRoute) {
     }
     let isChatLockedOpen = name === getJankScreenName.CHAT_PANEL_ROUTE;
     if (isChatLockedOpen) {
-      isChatLockedOpen = tmp4(4619).getChatLayout().isChatLockedOpen;
-      const tmp4Result = tmp4(4619);
+      isChatLockedOpen = tmp4(4651).getChatLayout().isChatLockedOpen;
+      const tmp4Result = tmp4(4651);
     }
     tmp2 = isChatLockedOpen;
     tmp4 = require;
@@ -97,4 +97,4 @@ prototype["shouldSettleInJS"] = function shouldSettleInJS(focusedRoute) {
 };
 let result = size.fileFinishedImporting("modules/jank_stats/native/JankNavigationReporter.android.tsx");
 
-export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Set" });
+export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Array" });

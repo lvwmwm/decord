@@ -1,18 +1,18 @@
-// Module ID: 10036
-// Function ID: 10037
+// Module ID: 10075
+// Function ID: 10076
 // Name: getXboxURIForChannel
-// Dependencies: [2067, 1996, 4409, 1376, 9356, 1078, 4911, 1119, 1275, 2]
+// Dependencies: [2067, 1996, 4441, 1376, 9388, 1078, 4943, 1119, 1275, 2]
 // Exports: default
 
-// Module 10036 (getXboxURIForChannel)
-import useChannelName from "useChannelName" /* 4911 */;
+// Module 10075 (getXboxURIForChannel)
+import useChannelName from "useChannelName" /* 4943 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-const GameConsoleConstants = fn(9356);
+const GameConsoleConstants = fn(9388);
 ({ XBOX_HANDOFF_SEARCH_PARAMS: metroRequire, XBOX_URL_BASE: closure_7 } = GameConsoleConstants);
 const Constants = fn(1078);
 ({ Endpoints: closure_8, ZERO_STRING_GUILD_ID: closure_9 } = Constants);

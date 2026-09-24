@@ -1,15 +1,15 @@
-// Module ID: 4911
-// Function ID: 4912
+// Module ID: 4943
+// Function ID: 4944
 // Name: useChannelName
-// Dependencies: [32, 4674, 4409, 1376, 1078, 1374, 4603, 1119, 558, 568, 504, 2]
+// Dependencies: [32, 4706, 4441, 1376, 1078, 1374, 4635, 1119, 558, 568, 504, 2]
 // Exports: computeDefaultGroupDmName, computeDefaultGroupDmNameFromUserIds, computeGroupDmName, escapeChannelName, unescapeChannelName
 
-// Module 4911 (useChannelName)
+// Module 4943 (useChannelName)
 import GlobalUtils from "GlobalUtils" /* 1374 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 4674 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import ExperimentStore from "ExperimentStore" /* 4706 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;

@@ -1,16 +1,16 @@
-// Module ID: 9109
-// Function ID: 9110
+// Module ID: 9141
+// Function ID: 9142
 // Name: CollectiblesBadges
-// Dependencies: [19, 17, 1378, 21, 4758, 580, 558, 568, 1119, 4754, 9110, 5315, 8938, 2]
+// Dependencies: [19, 17, 1378, 21, 4790, 580, 558, 568, 1119, 4786, 9142, 5347, 8970, 2]
 
-// Module 9109 (CollectiblesBadges)
+// Module 9141 (CollectiblesBadges)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import LockIcon from "LockIcon" /* 5315 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8938 */;
-import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9110 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import LockIcon from "LockIcon" /* 5347 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8970 */;
+import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9142 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ const View = fn(17).View;
 const PremiumTypes = fn(1378).PremiumTypes;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { badgeTextUppercase: { textTransform: "uppercase" }, badgeSurfaceDarkMode: { backgroundColor: nativeDefault.colors.WHITE }, badgeSurfaceLightMode: null, newIconBadge: null, limitedTimeBadge: null, lockIconBadge: null, newLockIconBadge: null, badgePill: null, iconTextBadge: null };
 let obj3 = { backgroundColor: nativeDefault.colors.WHITE };
 obj2.badgeSurfaceLightMode = { backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND };
@@ -57,7 +57,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     }
     if (cResult[4] !== tmp4.badgeTextUppercase) {
       const obj2 = { variant: "text-sm/bold", color: "text-overlay-light", style: tmp4.badgeTextUppercase, children: tmp7 };
-      const tmp11 = hasOwnProperty(tmp(4754).Text, obj2);
+      const tmp11 = hasOwnProperty(tmp(4786).Text, obj2);
       cResult[4] = tmp4.badgeTextUppercase;
       cResult[5] = tmp11;
       let tmp9 = tmp11;
@@ -115,12 +115,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items = [newLockIconBadge.newLockIconBadge, lockIconBadge];
     obj2.style = items;
     const obj3 = { size: "xxs", color: nativeDefault.colors.WHITE };
-    const items1 = [hasOwnProperty(tmp(5315).LockIcon, obj3), ];
+    const items1 = [hasOwnProperty(tmp(5347).LockIcon, obj3), ];
     const obj4 = { variant: "text-xs/bold", color: "text-overlay-light", style: newLockIconBadge.badgeTextUppercase, children: null };
     const intl = tmp(1119).intl;
     stringResult = intl.string(tmp(1119).t.y2b7CA);
     obj4.children = stringResult;
-    items1[1] = hasOwnProperty(tmp(4754).Text, obj4);
+    items1[1] = hasOwnProperty(tmp(4786).Text, obj4);
     obj2.children = items1;
     let tmp8 = timestampProducer(PremiumFeaturesBackgroundDefault, obj2);
   } else {
@@ -128,7 +128,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items2 = [newLockIconBadge.lockIconBadge, lockIconBadge];
     obj5.style = items2;
     const obj6 = { size: "sm", color: nativeDefault.colors.WHITE };
-    obj5.children = hasOwnProperty(tmp(5315).LockIcon, obj6);
+    obj5.children = hasOwnProperty(tmp(5347).LockIcon, obj6);
     tmp8 = hasOwnProperty(View, obj5);
   }
   cResult[0] = undefined !== isNew && isNew;
@@ -189,12 +189,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items = [newLockIconBadge.newLockIconBadge, lockIconBadge];
     obj2.style = items;
     const obj3 = { size: "xxs", color: nativeDefault.colors.WHITE };
-    const items1 = [hasOwnProperty(tmp(8938).NitroWheelIcon, obj3), ];
+    const items1 = [hasOwnProperty(tmp(8970).NitroWheelIcon, obj3), ];
     const obj4 = { variant: "text-xs/bold", color: "text-overlay-light", style: newLockIconBadge.badgeTextUppercase, children: null };
     const intl = tmp(1119).intl;
     stringResult = intl.string(tmp(1119).t.y2b7CA);
     obj4.children = stringResult;
-    items1[1] = hasOwnProperty(tmp(4754).Text, obj4);
+    items1[1] = hasOwnProperty(tmp(4786).Text, obj4);
     obj2.children = items1;
     let tmp8 = timestampProducer(PremiumFeaturesBackgroundDefault, obj2);
   } else {
@@ -202,7 +202,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items2 = [newLockIconBadge.lockIconBadge, lockIconBadge];
     obj5.style = items2;
     const obj6 = { size: "sm", color: nativeDefault.colors.WHITE };
-    obj5.children = hasOwnProperty(tmp(8938).NitroWheelIcon, obj6);
+    obj5.children = hasOwnProperty(tmp(8970).NitroWheelIcon, obj6);
     tmp8 = hasOwnProperty(View, obj5);
   }
   cResult[0] = undefined !== isNew && isNew;
@@ -261,7 +261,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     }
     if (cResult[4] !== tmp4.badgeTextUppercase) {
       const obj2 = { variant: "text-xs/bold", color: "text-overlay-dark", style: tmp4.badgeTextUppercase, children: tmp7 };
-      const tmp11 = hasOwnProperty(tmp(4754).Text, obj2);
+      const tmp11 = hasOwnProperty(tmp(4786).Text, obj2);
       cResult[4] = tmp4.badgeTextUppercase;
       cResult[5] = tmp11;
       let tmp9 = tmp11;

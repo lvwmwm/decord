@@ -1,13 +1,13 @@
-// Module ID: 13345
-// Function ID: 13346
+// Module ID: 13381
+// Function ID: 13382
 // Name: ThreadMinusIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 13346, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 13382, 4493, 2]
 
-// Module 13345 (ThreadMinusIcon)
+// Module 13381 (ThreadMinusIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod13346 from "module_13346" /* 13346 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod13382 from "module_13382" /* 13382 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const ThreadMinusIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(13346);
+    const tmpResult = tmp(13382);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const ThreadMinusIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod13346, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod13382, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

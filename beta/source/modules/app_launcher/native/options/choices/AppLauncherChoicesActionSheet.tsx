@@ -1,15 +1,15 @@
-// Module ID: 12304
-// Function ID: 12305
+// Module ID: 12340
+// Function ID: 12341
 // Name: AppLauncherChoicesActionSheet
-// Dependencies: [32, 109, 19, 17, 1487, 21, 4758, 580, 558, 568, 8995, 1616, 1368, 5661, 8876, 4725, 7186, 12305, 12307, 2]
+// Dependencies: [32, 109, 19, 17, 1487, 21, 4790, 580, 558, 568, 9027, 1616, 1368, 5693, 8908, 4757, 7218, 12341, 12343, 2]
 
-// Module 12304 (AppLauncherChoicesActionSheet)
+// Module 12340 (AppLauncherChoicesActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5661 */;
-import Form from "Form" /* 8876 */;
-import _mod8995 from "module_8995" /* 8995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5693 */;
+import Form from "Form" /* 8908 */;
+import _mod9027 from "module_9027" /* 9027 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -19,7 +19,7 @@ const View = fn(17).View;
 const DEFAULT_CONTENT_PADDING = fn(1487).DEFAULT_CONTENT_PADDING;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { listItemContainer: { overflow: "hidden" }, listItem: { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT }, firstItem: null, lastItem: null, divider: null };
 let obj3 = { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT };
 obj2.firstItem = { borderTopLeftRadius: nativeDefault.radii.xl, borderTopRightRadius: nativeDefault.radii.xl };
@@ -48,7 +48,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollable) =>
       return cResult[5];
     }
   }
-  let obj2 = _mod8995;
+  let obj2 = _mod9027;
   if (tmp5) {
     obj2 = { preserveScrollMomentum: true };
     const merged = Object.assign(tmp4);
@@ -63,7 +63,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollable) =>
   cResult[5] = tmp9Result;
 }) : ((scrollable) => {
   const merged = Object.assign(scrollable, Object.assign({ scrollable: 0 }));
-  const tmp3 = _mod8995;
+  const tmp3 = _mod9027;
   if (scrollable.scrollable) {
     const obj2 = { preserveScrollMomentum: true };
     const merged1 = Object.assign(merged);
@@ -297,11 +297,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   let tmp16 = tmp13;
   if (tmp13) {
     const obj3 = { onChange: callback };
-    tmp16 = closure_9(tmp3(12305).AppLauncherListSearchBar, obj3);
+    tmp16 = closure_9(tmp3(12341).AppLauncherListSearchBar, obj3);
   }
   const items3 = [tmp16, ];
   if (0 === data.length) {
-    let tmp20 = closure_9(tmp3(12305).AppLauncherListEmptyState, {});
+    let tmp20 = closure_9(tmp3(12341).AppLauncherListEmptyState, {});
   } else {
     const obj4 = { scrollable: tmp13, contentContainerStyle: null, scrollIndicatorInsets: null, keyExtractor: null, data: null, renderItem: null, ItemSeparatorComponent: null, accessibilityRole: "radiogroup" };
     const obj5 = { paddingBottom: sum };
@@ -318,5 +318,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
   }
   items3[1] = tmp20;
   obj2.children = items3;
-  return closure_10(option(12307).AppLauncherCommandOptionActionSheet, obj2);
+  return closure_10(option(12343).AppLauncherCommandOptionActionSheet, obj2);
 });

@@ -1,26 +1,26 @@
-// Module ID: 17668
-// Function ID: 17669
+// Module ID: 17678
+// Function ID: 17679
 // Name: LaunchPadWrapper
-// Dependencies: [32, 19, 17, 11590, 1078, 21, 4758, 580, 558, 568, 13041, 1114, 4616, 17669, 8543, 1245, 17666, 4726, 5183, 5801, 4497, 17670, 1119, 17672, 5141, 5170, 2]
+// Dependencies: [32, 19, 17, 11626, 1078, 21, 4790, 580, 558, 568, 13077, 1114, 4648, 17679, 8575, 1245, 17676, 4758, 5215, 5833, 4529, 17680, 1119, 17682, 5173, 5202, 2]
 
-// Module 17668 (LaunchPadWrapper)
+// Module 17678 (LaunchPadWrapper)
 import nativeDefault from "native" /* 580 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import RouteManagerDefault from "RouteManager" /* 13041 */;
-import LaunchPadPullTabCache from "LaunchPadPullTabCache" /* 17666 */;
+import RouteManagerDefault from "RouteManager" /* 13077 */;
+import LaunchPadPullTabCache from "LaunchPadPullTabCache" /* 17676 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Pressable: metroRequire, TouchableOpacity: closure_7, StyleSheet: closure_8 } = get_ActivityIndicator);
-const LaunchPadTypes = fn(11590).LaunchPadTypes;
+const LaunchPadTypes = fn(11626).LaunchPadTypes;
 const Constants = fn(1078);
 ({ AnalyticEvents: c10, ComponentActions: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { modalWrapper: null, a11yDismiss: null };
 let size = { height: "100%", width: "100%", paddingTop: nativeDefault.space.PX_8 };
 obj2.modalWrapper = size;
@@ -205,8 +205,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((launchPadType) =
             if (!isModalOpen) {
               const result = LaunchPadPullTabCache.setLaunchPadPullTabExclusionRect();
               if (closure_3) {
-                const result1 = tmp2(4726).triggerHapticFeedback(tmp2(4726).HapticFeedbackTypes.IMPACT_LIGHT);
-                const tmp2Result = tmp2(4726);
+                const result1 = tmp2(4758).triggerHapticFeedback(tmp2(4758).HapticFeedbackTypes.IMPACT_LIGHT);
+                const tmp2Result = tmp2(4758);
               }
             }
           }
@@ -309,8 +309,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((launchPadType) =
       if (!isModalOpen) {
         const result = LaunchPadPullTabCache.setLaunchPadPullTabExclusionRect();
         if (closure_3) {
-          const result1 = tmp2(4726).triggerHapticFeedback(tmp2(4726).HapticFeedbackTypes.IMPACT_LIGHT);
-          const tmp2Result = tmp2(4726);
+          const result1 = tmp2(4758).triggerHapticFeedback(tmp2(4758).HapticFeedbackTypes.IMPACT_LIGHT);
+          const tmp2Result = tmp2(4758);
         }
       }
     }

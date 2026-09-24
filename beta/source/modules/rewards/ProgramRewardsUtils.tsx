@@ -1,14 +1,14 @@
-// Module ID: 13998
-// Function ID: 13999
+// Module ID: 14034
+// Function ID: 14035
 // Name: ProgramRewardsUtils
-// Dependencies: [1376, 1378, 4193, 13999, 14002, 558, 14003, 4418, 2]
+// Dependencies: [1376, 1378, 4225, 14035, 14038, 558, 14039, 4450, 2]
 // Exports: canFetchAnyProgramReward, canFetchNitroProgramReward, canFetchXboxProgramReward, hasNecessaryPremiumSubscriptionStatus, isEligibleForProgramReward, isProgramRewardStale
 
-// Module 13998 (ProgramRewardsUtils)
-import _modDef4193 from "module_4193" /* 4193 */;
-import PremiumUtils from "PremiumUtils" /* 4418 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 13999 */;
-import PremiumRewardsOrbsExperiment from "PremiumRewardsOrbsExperiment" /* 14002 */;
+// Module 14034 (ProgramRewardsUtils)
+import _modDef4225 from "module_4225" /* 4225 */;
+import PremiumUtils from "PremiumUtils" /* 4450 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 14035 */;
+import PremiumRewardsOrbsExperiment from "PremiumRewardsOrbsExperiment" /* 14038 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -24,18 +24,18 @@ function canFetchNitroProgramReward(ProgramRewardsUtils) {
     str = "ProgramRewardsUtils";
   }
   if (ProgramRewardsTypes.RewardProgram.NITRO === NITRO) {
-    let flag = tmp(14002).getPremiumRewardsOrbsExperiment(str).isInTreatment;
-    const tmpResult = tmp(14002);
+    let flag = tmp(14038).getPremiumRewardsOrbsExperiment(str).isInTreatment;
+    const tmpResult = tmp(14038);
   } else {
     flag = false;
-    if (tmp(13999).RewardProgram.XBOX === NITRO) {
+    if (tmp(14035).RewardProgram.XBOX === NITRO) {
       flag = true;
     }
   }
   if (flag) {
     const currentUser = UserStore.getCurrentUser();
-    flag = tmp(4418).isPremiumExactly(currentUser, PremiumTypes.TIER_2);
-    const tmpResult2 = tmp(4418);
+    flag = tmp(4450).isPremiumExactly(currentUser, PremiumTypes.TIER_2);
+    const tmpResult2 = tmp(4450);
   }
   return flag;
 }
@@ -49,17 +49,17 @@ function canFetchXboxProgramReward(ProgramRewardsUtils) {
     str = "ProgramRewardsUtils";
   }
   if (ProgramRewardsTypes.RewardProgram.NITRO === XBOX) {
-    let flag = tmp(14002).getPremiumRewardsOrbsExperiment(str).isInTreatment;
-    const tmpResult = tmp(14002);
+    let flag = tmp(14038).getPremiumRewardsOrbsExperiment(str).isInTreatment;
+    const tmpResult = tmp(14038);
   } else {
     flag = false;
-    if (tmp(13999).RewardProgram.XBOX === XBOX) {
+    if (tmp(14035).RewardProgram.XBOX === XBOX) {
       flag = true;
     }
   }
   if (flag) {
-    flag = tmp(14003).hasCrepeMonthlyOrbsPerk(UserStore.getCurrentUser());
-    const tmpResult2 = tmp(14003);
+    flag = tmp(14039).hasCrepeMonthlyOrbsPerk(UserStore.getCurrentUser());
+    const tmpResult2 = tmp(14039);
   }
   return flag;
 }
@@ -70,8 +70,8 @@ function isEligibleForProgramReward(arg0, ProgramRewardsUtils) {
     str = "ProgramRewardsUtils";
   }
   if (ProgramRewardsTypes.RewardProgram.NITRO === arg0) {
-    return tmp(14002).getPremiumRewardsOrbsExperiment(str).isInTreatment;
-  } else if (tmp(13999).RewardProgram.XBOX === arg0) {
+    return tmp(14038).getPremiumRewardsOrbsExperiment(str).isInTreatment;
+  } else if (tmp(14035).RewardProgram.XBOX === arg0) {
     return true;
   } else {
     return false;
@@ -84,8 +84,8 @@ function hasNecessaryPremiumSubscriptionStatus(stateFromStores) {
   }
   return PremiumUtils.isPremiumExactly(currentUser, PremiumTypes.TIER_2);
 }
-obj2[fn(13999).RewardProgram.NITRO] = canFetchNitroProgramReward;
-obj2[fn(13999).RewardProgram.XBOX] = canFetchXboxProgramReward;
+obj2[fn(14035).RewardProgram.NITRO] = canFetchNitroProgramReward;
+obj2[fn(14035).RewardProgram.XBOX] = canFetchXboxProgramReward;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/rewards/ProgramRewardsUtils.tsx");
 
@@ -101,7 +101,7 @@ export const isProgramRewardStale = function isProgramRewardStale(next_reward_da
     if (tmp) {
       const _Date = Date;
       const date = new Date(next_reward_date);
-      tmp = _modDef4193(date);
+      tmp = _modDef4225(date);
     }
     return tmp;
   }

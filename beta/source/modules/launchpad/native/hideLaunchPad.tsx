@@ -1,10 +1,10 @@
-// Module ID: 11270
-// Function ID: 11271
+// Module ID: 11306
+// Function ID: 11307
 // Name: hideLaunchPad
 // Dependencies: [1078, 1114, 2]
 // Exports: default
 
-// Module 11270 (hideLaunchPad)
+// Module 11306 (hideLaunchPad)
 import Constants from "Constants" /* 1078 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
 import size from "module_2" /* 2 */;

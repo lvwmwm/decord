@@ -1,21 +1,21 @@
-// Module ID: 16852
-// Function ID: 16853
+// Module ID: 16862
+// Function ID: 16863
 // Name: ReplyRow
-// Dependencies: [19, 17, 21, 16795, 580, 558, 568, 4754, 9035, 5341, 2]
+// Dependencies: [19, 17, 21, 16805, 580, 558, 568, 4786, 9067, 5373, 2]
 
-// Module 16852 (ReplyRow)
+// Module 16862 (ReplyRow)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
-import ReactionIcon from "ReactionIcon" /* 9035 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
+import ReactionIcon from "ReactionIcon" /* 9067 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createICYMIStyles = fn(16795);
+const createICYMIStyles = fn(16805);
 let closure_6 = createICYMIStyles.createICYMIStyles((marginLeft) => {
   const obj = { separator: null, container: null, buttonContainer: null, feedbackContainer: null, icon: null, feedbackButtonIcon: null, input: null, contentInventoryPressable: null, contentInventoryContainer: null, contentInventoryText: null, replyContainer: null };
   const size = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: marginLeft.margin, width: "100%" };
@@ -52,7 +52,7 @@ export const ContentInventoryReplyRow = ReactCompilerGating.isReactCompilerEnabl
     }
     if (cResult[3] !== tmp4.icon) {
       const obj2 = { style: tmp4.icon, size: "custom" };
-      const tmp9 = React4(tmp(9035).ReactionIcon, obj2);
+      const tmp9 = React4(tmp(9067).ReactionIcon, obj2);
       cResult[3] = tmp4.icon;
       cResult[4] = tmp9;
       let tmp7 = tmp9;
@@ -86,7 +86,7 @@ export const ContentInventoryReplyRow = ReactCompilerGating.isReactCompilerEnabl
           }
         }
         const obj4 = { accessibilityRole: "button", onPress: onReply, style: tmp4.contentInventoryPressable, accessibilityLabel: reactText, pointerEvents: "box-only", children: tmp10 };
-        const tmp16 = React4(tmp(5341).PressableOpacity, obj4);
+        const tmp16 = React4(tmp(5373).PressableOpacity, obj4);
         cResult[9] = onReply;
         cResult[10] = reactText;
         cResult[11] = tmp4.contentInventoryPressable;

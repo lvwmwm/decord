@@ -1,22 +1,22 @@
-// Module ID: 16611
-// Function ID: 16612
+// Module ID: 16621
+// Function ID: 16622
 // Name: FavoritesGuildChannels
-// Dependencies: [19, 16541, 21, 558, 568, 7296, 5195, 16612, 16603, 16613, 16440, 16474, 16540, 16618, 16442, 2]
+// Dependencies: [19, 16551, 21, 558, 568, 7328, 5227, 16622, 16613, 16623, 16450, 16484, 16550, 16628, 16452, 2]
 
-// Module 16611 (FavoritesGuildChannels)
+// Module 16621 (FavoritesGuildChannels)
 import c from "c" /* 568 */;
-import useFontScale from "useFontScale" /* 5195 */;
-import useScaledRowHeightDefault from "useScaledRowHeight" /* 7296 */;
-import FavoritesGuildChannelList from "FavoritesGuildChannelList" /* 16612 */;
+import useFontScale from "useFontScale" /* 5227 */;
+import useScaledRowHeightDefault from "useScaledRowHeight" /* 7328 */;
+import FavoritesGuildChannelList from "FavoritesGuildChannelList" /* 16622 */;
 import noop from "module_19" /* 19 */;
 
-const ChannelListPanelBackdropDefault = tmp4(16440);
-const ChannelListStickyHeaderDefault = tmp4(16474);
-const FavoritesGuildSuggestedChannelsDefault = tmp4(16540);
-const FavoritesGuildSuggestionsLoaderDefault = tmp4(16613);
-const FavoritesGuildSidebarHeaderDefault = tmp4(16618);
+const ChannelListPanelBackdropDefault = tmp4(16450);
+const ChannelListStickyHeaderDefault = tmp4(16484);
+const FavoritesGuildSuggestedChannelsDefault = tmp4(16550);
+const FavoritesGuildSuggestionsLoaderDefault = tmp4(16623);
+const FavoritesGuildSidebarHeaderDefault = tmp4(16628);
 require = fn;
-let closure_3 = fn(16541).useFavoritesGuildSuggestionCount;
+let closure_3 = fn(16551).useFavoritesGuildSuggestionCount;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = jsxProd);
 const ReactCompilerGating = fn(558);
@@ -74,9 +74,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       const merged = Object.assign(guild);
       obj7.guildChannels = guildChannels;
       obj7.guildChannelsVersion = 0;
-      obj7.favoritesSuggestionsNoticeHeight = tmp(16540).getFavoritesSuggestionsNoticeHeight(fontScale, tmp5, tmp3);
-      tmp15Result = React4(tmp(16442).ChannelList, obj7);
-      const tmpResult4 = tmp(16540);
+      obj7.favoritesSuggestionsNoticeHeight = tmp(16550).getFavoritesSuggestionsNoticeHeight(fontScale, tmp5, tmp3);
+      tmp15Result = React4(tmp(16452).ChannelList, obj7);
+      const tmpResult4 = tmp(16550);
     }
     const obj8 = { children: null };
     items[1] = tmp15Result;
@@ -127,9 +127,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       const merged = Object.assign(tmp2Result2);
       obj9.guildChannels = guildChannels;
       obj9.guildChannelsVersion = 0;
-      obj9.favoritesSuggestionsNoticeHeight = tmp4(16540).getFavoritesSuggestionsNoticeHeight(fontScale, tmp3, tmp);
-      tmp10Result1 = tmp10(tmp4(16442).ChannelList, obj9);
-      const tmp4Result = tmp4(16540);
+      obj9.favoritesSuggestionsNoticeHeight = tmp4(16550).getFavoritesSuggestionsNoticeHeight(fontScale, tmp3, tmp);
+      tmp10Result1 = tmp10(tmp4(16452).ChannelList, obj9);
+      const tmp4Result = tmp4(16550);
     }
     const obj10 = { children: null };
     items[1] = tmp10Result1;

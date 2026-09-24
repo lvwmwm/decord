@@ -1,9 +1,9 @@
-// Module ID: 17732
-// Function ID: 17733
+// Module ID: 17742
+// Function ID: 17743
 // Name: ExistingUserAgeGateConfirm
-// Dependencies: [5, 32, 19, 17, 1078, 21, 4758, 558, 568, 1488, 1119, 4754, 2112, 5188, 7371, 2]
+// Dependencies: [5, 32, 19, 17, 1078, 21, 4790, 558, 568, 1488, 1119, 4786, 2112, 5220, 7403, 2]
 
-// Module 17732 (ExistingUserAgeGateConfirm)
+// Module 17742 (ExistingUserAgeGateConfirm)
 import c from "c" /* 568 */;
 import useNavigation from "useNavigation" /* 1488 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
@@ -16,7 +16,7 @@ const View = fn(17).View;
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles({ container: { padding: 16, flex: 1, alignItems: "center", justifyContent: "center" }, header: { textAlign: "center", marginBottom: 8 }, body: { textAlign: "center", lineHeight: 20, marginBottom: 16 }, buttonWrapper: { width: "100%" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -60,7 +60,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[9] !== tmp4.body) {
         const obj5 = { style: tmp4.body, variant: "text-md/medium", color: "interactive-text-default", children: tmp15 };
-        const tmp21 = closure_1_8(tmp(4754).Text, obj5);
+        const tmp21 = closure_1_8(tmp(4786).Text, obj5);
         cResult[9] = tmp4.body;
         cResult[10] = tmp21;
         let tmp19 = tmp21;
@@ -97,7 +97,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj7 = { top: true, style: container, children: null };
           const items = [tmp11, tmp19, tmp27];
           obj7.children = items;
-          const tmp33 = options(tmp(7371).SafeAreaPaddingView, obj7);
+          const tmp33 = options(tmp(7403).SafeAreaPaddingView, obj7);
           cResult[18] = tmp4.container;
           cResult[19] = tmp27;
           cResult[20] = tmp11;
@@ -113,14 +113,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp27 = tmp30;
       }
       const obj9 = { loading: tmp7, disabled: tmp7, text: tmp22, onPress: tmp8, grow: true };
-      const tmp26 = closure_1_8(tmp(5188).Button, obj9);
+      const tmp26 = closure_1_8(tmp(5220).Button, obj9);
       cResult[12] = tmp8;
       cResult[13] = tmp7;
       cResult[14] = tmp26;
       tmp24 = tmp26;
     }
     const obj10 = { style: header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp9 };
-    const tmp13 = closure_1_8(tmp(4754).Text, obj10);
+    const tmp13 = closure_1_8(tmp(4786).Text, obj10);
     cResult[5] = tmp4.header;
     cResult[6] = tmp9;
     cResult[7] = tmp13;
@@ -190,14 +190,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj3 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = onConfirm(1119).intl;
   obj3.children = intl.format(onConfirm(1119).t.wumolR, { age: age.age });
-  const items = [closure_8(onConfirm(4754).Text, obj3), , ];
+  const items = [closure_8(onConfirm(4786).Text, obj3), , ];
   const obj4 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: null };
   const intl2 = onConfirm(1119).intl;
   const obj5 = { helpURL: null };
   const tmp2 = _slicedToArray(noop.useState(false), 2);
   obj5.helpURL = HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.AGE_GATE);
   obj4.children = intl2.format(onConfirm(1119).t.n3QjDE, obj5);
-  items[1] = closure_8(onConfirm(4754).Text, obj4);
+  items[1] = closure_8(onConfirm(4786).Text, obj4);
   const obj7 = { style: tmp.buttonWrapper, children: null };
   const obj8 = { loading: tmp3, disabled: tmp3, text: null, onPress: null, grow: true };
   const intl3 = onConfirm(1119).intl;
@@ -212,8 +212,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return applyArgumentsResult;
   };
-  obj7.children = closure_8(onConfirm(5188).Button, obj8);
+  obj7.children = closure_8(onConfirm(5220).Button, obj8);
   items[2] = closure_8(View, obj7);
   obj2.children = items;
-  return closure_9(onConfirm(7371).SafeAreaPaddingView, obj2);
+  return closure_9(onConfirm(7403).SafeAreaPaddingView, obj2);
 });

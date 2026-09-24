@@ -1,13 +1,13 @@
-// Module ID: 16377
-// Function ID: 16378
+// Module ID: 16387
+// Function ID: 16388
 // Name: usePrivateChannelWaveEligible
-// Dependencies: [4978, 4409, 2052, 1078, 558, 568, 504, 11, 4442, 4352, 10356, 2]
+// Dependencies: [5010, 4441, 2052, 1078, 558, 568, 504, 11, 4474, 4384, 10395, 2]
 
-// Module 16377 (usePrivateChannelWaveEligible)
+// Module 16387 (usePrivateChannelWaveEligible)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import _modDef4352 from "module_4352" /* 4352 */;
-import MessageStore from "MessageStore" /* 4978 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import _modDef4384 from "module_4384" /* 4384 */;
+import MessageStore from "MessageStore" /* 5010 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 
 const require = globalThis.__r;
 
@@ -304,11 +304,11 @@ export const usePrivateChannelWaveEligible = ReactCompilerGating.isReactCompiler
         }
       }
       const extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(isDM.id);
-      const tmpResult9 = tmp(4442);
-      const isWithinIntervalResult = tmpResult9.isWithinInterval(_modDef4352(), _modDef4352(extractTimestampResult), c7);
+      const tmpResult9 = tmp(4474);
+      const isWithinIntervalResult = tmpResult9.isWithinInterval(_modDef4384(), _modDef4384(extractTimestampResult), c7);
       cResult[19] = isDM.id;
       cResult[20] = isWithinIntervalResult;
-      const tmp27 = _modDef4352();
+      const tmp27 = _modDef4384();
     } else {
       class W {
         constructor() {
@@ -317,7 +317,7 @@ export const usePrivateChannelWaveEligible = ReactCompilerGating.isReactCompiler
       }
     }
     const tmpResult8 = tmp(504);
-    const strangerDangerWarning = tmp(10356).useStrangerDangerWarning(isDM.id);
+    const strangerDangerWarning = tmp(10395).useStrangerDangerWarning(isDM.id);
     if (tmp4) {
       class W {
         constructor() {
@@ -433,8 +433,8 @@ export const usePrivateChannelWaveEligible = ReactCompilerGating.isReactCompiler
   const obj5 = recipientId(11);
   const extractTimestampResult = recipientId(11).extractTimestamp(isDM.id);
   const obj6 = require("DateUtils");
-  const tmp9 = recipientId(4352)();
-  const isWithinIntervalResult = obj6.isWithinInterval(recipientId(4352)(), recipientId(4352)(extractTimestampResult), c7);
+  const tmp9 = recipientId(4384)();
+  const isWithinIntervalResult = obj6.isWithinInterval(recipientId(4384)(), recipientId(4384)(extractTimestampResult), c7);
   const strangerDangerWarning = require("useStrangerDangerWarning").useStrangerDangerWarning(isDM.id);
   if (tmp) {
     tmp = stateFromStores;

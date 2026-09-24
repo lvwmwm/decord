@@ -1,24 +1,24 @@
-// Module ID: 17844
-// Function ID: 17845
+// Module ID: 17854
+// Function ID: 17855
 // Name: AddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8434, 1078, 21, 4758, 580, 5897, 5743, 558, 568, 1616, 504, 14858, 17845, 8443, 8522, 5356, 8438, 8440, 1119, 4754, 17854, 1181, 17842, 5188, 1253, 7621, 5839, 7246, 2]
+// Dependencies: [5, 32, 19, 17, 8466, 1078, 21, 4790, 580, 5929, 5775, 558, 568, 1616, 504, 14896, 17855, 8475, 8554, 5388, 8470, 8472, 1119, 4786, 17864, 1181, 17852, 5220, 1253, 7653, 5871, 7278, 2]
 
-// Module 17844 (AddAvatarModal)
+// Module 17854 (AddAvatarModal)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import Navigator from "Navigator" /* 7246 */;
-import VideoBackground from "VideoBackground" /* 8522 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 17842 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import Navigator from "Navigator" /* 7278 */;
+import VideoBackground from "VideoBackground" /* 8554 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 17852 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8434 */;
-import TextStyles from "TextStyles" /* 5743 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8466 */;
+import TextStyles from "TextStyles" /* 5775 */;
 
 require = fn;
 const View = fn(17).View;
@@ -26,8 +26,8 @@ const Constants = fn(1078);
 ({ UPLOAD_MEDIUM_SIZE: closure_8, Fonts, ModalAnimation } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
-let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: fn(5897).NAV_BAR_HEIGHT + 32, alignItems: "center" }, headerContainer: { display: "flex", alignItems: "center" }, buttonContainer: { marginHorizontal: 16, marginBottom: 16 }, title: { marginBottom: 8, textAlign: "center" }, subtitle: { textAlign: "center" }, errorContainer: { alignSelf: "center", paddingTop: 24 }, errorText: null };
+const createStyles = fn(4790);
+let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: fn(5929).NAV_BAR_HEIGHT + 32, alignItems: "center" }, headerContainer: { display: "flex", alignItems: "center" }, buttonContainer: { marginHorizontal: 16, marginBottom: 16 }, title: { marginBottom: 8, textAlign: "center" }, subtitle: { textAlign: "center" }, errorContainer: { alignSelf: "center", paddingTop: 24 }, errorText: null };
 const merged = Object.assign(TextStyles(Fonts.DISPLAY_MEDIUM, nativeDefault.unsafe_rawColors.RED_400, 12));
 obj2.errorText = {};
 let closure_11 = createStyles.createStyles(obj2);
@@ -57,11 +57,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[2] !== selectedAvatar) {
     let pendingImage;
     if (null != selectedAvatar) {
-      let obj2 = { imageUri: tmp(17845).DEFAULT_AVATARS[selectedAvatar], description: null };
-      const tmpResult4 = tmp(14858);
-      obj2.description = tmp(8443).generateAvatarDescription();
+      let obj2 = { imageUri: tmp(17855).DEFAULT_AVATARS[selectedAvatar], description: null };
+      const tmpResult4 = tmp(14896);
+      obj2.description = tmp(8475).generateAvatarDescription();
       pendingImage = tmpResult4.createPendingImage(obj2);
-      const tmpResult5 = tmp(8443);
+      const tmpResult5 = tmp(8475);
     }
     cResult[2] = selectedAvatar;
     cResult[3] = pendingImage;
@@ -78,11 +78,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     imageUri = tmp15.imageUri;
   }
   if (cResult[4] !== imageUri) {
-    const memoizedImageSourceResult = tmp(8522).memoizedImageSource(imageUri);
+    const memoizedImageSourceResult = tmp(8554).memoizedImageSource(imageUri);
     cResult[4] = imageUri;
     cResult[5] = memoizedImageSourceResult;
     let tmp19 = memoizedImageSourceResult;
-    const tmpResult6 = tmp(8522);
+    const tmpResult6 = tmp(8554);
   } else {
     tmp19 = cResult[5];
   }
@@ -119,7 +119,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const obj7 = { size };
               dependencyMap = 1;
               c3 = 1;
-              const obj9 = { value: tmp2(5356).openImagePicker(obj7), done: false };
+              const obj9 = { value: tmp2(5388).openImagePicker(obj7), done: false };
               return obj9;
             }
           } else if (arg0 === 1) {
@@ -135,23 +135,23 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               let pendingImage;
               if (null != base64) {
                 const obj11 = { imageUri: base64, description: null };
-                const obj = tmp2(14858);
-                obj11.description = tmp2(8443).generateAvatarDescription();
+                const obj = tmp2(14896);
+                obj11.description = tmp2(8475).generateAvatarDescription();
                 pendingImage = obj.createPendingImage(obj11);
-                const obj3 = tmp2(8443);
+                const obj3 = tmp2(8475);
               }
               closure_128_1 = pendingImage;
               const obj12 = { avatar: closure_128_1 };
-              tmp2(8438).setPendingChanges(obj12);
-              const obj4 = tmp2(8438);
+              tmp2(8470).setPendingChanges(obj12);
+              const obj4 = tmp2(8470);
               let str = "set";
               if (null == closure_128_1) {
                 str = "remove";
               }
-              const result = tmp2(8440).announcePendingAvatarChange(str);
+              const result = tmp2(8472).announcePendingAvatarChange(str);
               dependencyMap(undefined);
               c3 = 3;
-              const obj6 = tmp2(8440);
+              const obj6 = tmp2(8472);
             }
             tmp2(true);
           }
@@ -204,7 +204,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[13] !== tmp4.title) {
       let obj4 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp25 };
-      const tmp29 = closure_9(tmp(4754).Text, obj4);
+      const tmp29 = closure_9(tmp(4786).Text, obj4);
       cResult[13] = tmp4.title;
       cResult[14] = tmp29;
       let tmp27 = tmp29;
@@ -222,7 +222,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[16] !== tmp4.subtitle) {
       let obj5 = { style: tmp4.subtitle, variant: "heading-deprecated-12/medium", color: "text-default", children: tmp30 };
-      const tmp34 = closure_9(tmp(4754).Text, obj5);
+      const tmp34 = closure_9(tmp(4786).Text, obj5);
       cResult[16] = tmp4.subtitle;
       cResult[17] = tmp34;
       let tmp32 = tmp34;
@@ -265,7 +265,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   }
                   if (cResult[37] !== selectedAvatar) {
                     let obj6 = { onAvatarSelect: tmp9, selectedAvatar };
-                    const tmp58 = closure_9(tmp10(17845), obj6);
+                    const tmp58 = closure_9(tmp10(17855), obj6);
                     cResult[37] = selectedAvatar;
                     cResult[38] = tmp58;
                     let tmp56 = tmp58;
@@ -322,7 +322,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                       tmp66 = tmp69;
                     }
                     let obj9 = { text: tmp59, grow: true, onPress: tmp61, disabled: null == tmp15 };
-                    const tmp65 = closure_9(tmp(5188).Button, obj9);
+                    const tmp65 = closure_9(tmp(5220).Button, obj9);
                     cResult[43] = tmp61;
                     cResult[44] = null == tmp15;
                     cResult[45] = tmp65;
@@ -364,7 +364,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         tmp45 = tmp47;
       }
       const obj13 = { avatarSource: tmp19, showPendingAvatar: null != tmp15, onSelectAvatar: tmp21 };
-      const tmp42 = closure_9(tmp10(17854), obj13);
+      const tmp42 = closure_9(tmp10(17864), obj13);
       cResult[21] = tmp19;
       cResult[22] = null != tmp15;
       cResult[23] = tmp42;
@@ -417,7 +417,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const obj7 = { size };
             dependencyMap = 1;
             c3 = 1;
-            const obj9 = { value: tmp2(5356).openImagePicker(obj7), done: false };
+            const obj9 = { value: tmp2(5388).openImagePicker(obj7), done: false };
             return obj9;
           }
         } else if (noop === 1) {
@@ -433,23 +433,23 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             pendingImage = undefined;
             if (null != base64) {
               const obj11 = { imageUri: base64, description: null };
-              const obj = tmp2(14858);
-              obj11.description = tmp2(8443).generateAvatarDescription();
+              const obj = tmp2(14896);
+              obj11.description = tmp2(8475).generateAvatarDescription();
               pendingImage = obj.createPendingImage(obj11);
-              const obj3 = tmp2(8443);
+              const obj3 = tmp2(8475);
             }
             closure_128_1 = pendingImage;
             const obj12 = { avatar: closure_128_1 };
-            tmp2(8438).setPendingChanges(obj12);
-            const obj4 = tmp2(8438);
+            tmp2(8470).setPendingChanges(obj12);
+            const obj4 = tmp2(8470);
             let str = "set";
             if (null == closure_128_1) {
               str = "remove";
             }
-            const result = tmp2(8440).announcePendingAvatarChange(str);
+            const result = tmp2(8472).announcePendingAvatarChange(str);
             closure_129_2(undefined);
             c3 = 3;
-            const obj6 = tmp2(8440);
+            const obj6 = tmp2(8472);
           }
           closure_129_0(true);
         }
@@ -470,11 +470,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let pendingImage;
   const stateFromStores = initialize.useStateFromStores(items, () => pendingChanges.getPendingChanges().pendingAvatar);
   if (null != selectedAvatar) {
-    let obj2 = { imageUri: tmp9(17845).DEFAULT_AVATARS[selectedAvatar], description: null };
-    const tmp9Result = tmp9(14858);
-    obj2.description = tmp9(8443).generateAvatarDescription();
+    let obj2 = { imageUri: tmp9(17855).DEFAULT_AVATARS[selectedAvatar], description: null };
+    const tmp9Result = tmp9(14896);
+    obj2.description = tmp9(8475).generateAvatarDescription();
     pendingImage = tmp9Result.createPendingImage(obj2);
-    const tmp9Result3 = tmp9(8443);
+    const tmp9Result3 = tmp9(8475);
   }
   if (pendingImage == null) {
     pendingImage = stateFromStores;
@@ -504,7 +504,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj5.children = items2;
   const items3 = [closure_10(View, obj5), , ];
   const memoizedImageSourceResult = VideoBackground.memoizedImageSource(imageUri);
-  items3[1] = closure_9(selectedAvatar(17854), {
+  items3[1] = closure_9(selectedAvatar(17864), {
     avatarSource: VideoBackground.memoizedImageSource(imageUri),
     showPendingAvatar: null != pendingImage,
     onSelectAvatar: function handleSelectAvatar() {
@@ -528,7 +528,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj9.children = closure_9(native.LegacyText, obj10);
   items3[2] = closure_9(View, obj9);
   obj4.children = items3;
-  const items4 = [closure_10(View, obj4), closure_9(selectedAvatar(17845), { onAvatarSelect: tmp4[1], selectedAvatar }), ];
+  const items4 = [closure_10(View, obj4), closure_9(selectedAvatar(17855), { onAvatarSelect: tmp4[1], selectedAvatar }), ];
   let obj11 = { style: tmp.buttonContainer, children: null };
   let obj12 = { text: null, grow: true, onPress: null, disabled: null };
   const intl4 = tmp9(1119).intl;
@@ -556,12 +556,12 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAvatarM
           obj.onPress = function onPress() {
             return closure_1_0(dependencyMap[26]).showSkipAvatarModal();
           };
-          return closure_1_9(closure_1_0(7621).HeaderActionButton, obj);
+          return closure_1_9(closure_1_0(7653).HeaderActionButton, obj);
         },
       headerLeft() {
           return null;
         },
-      headerTitle: tmp(5839).getHeaderNoTitle(),
+      headerTitle: tmp(5871).getHeaderNoTitle(),
       ignoreKeyboard: true,
       fullscreen: true,
       render() {
@@ -571,13 +571,13 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAvatarM
     obj2.ADD_AVATAR = obj3;
     cResult[0] = obj2;
     let first = obj2;
-    const tmpResult = tmp(5839);
+    const tmpResult = tmp(5871);
   } else {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { screens: first, initialRouteName: "ADD_AVATAR" };
-    const tmp7 = options(tmp(7246).Navigator, obj4);
+    const tmp7 = options(tmp(7278).Navigator, obj4);
     cResult[1] = tmp7;
     let tmp5 = tmp7;
   } else {
@@ -596,7 +596,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAvatarM
         obj.onPress = function onPress() {
           return closure_1_0(dependencyMap[26]).showSkipAvatarModal();
         };
-        return closure_1_9(closure_1_0(7621).HeaderActionButton, obj);
+        return closure_1_9(closure_1_0(7653).HeaderActionButton, obj);
       },
       headerLeft() {
         return null;

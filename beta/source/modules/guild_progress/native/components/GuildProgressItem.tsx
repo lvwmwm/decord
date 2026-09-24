@@ -1,17 +1,17 @@
-// Module ID: 12753
-// Function ID: 12754
+// Module ID: 12789
+// Function ID: 12790
 // Name: GuildProgressItem
-// Dependencies: [19, 21, 4758, 558, 568, 12637, 12640, 6583, 1119, 12754, 12641, 2]
+// Dependencies: [19, 21, 4790, 558, 568, 12673, 12676, 6615, 1119, 12790, 12677, 2]
 
-// Module 12753 (GuildProgressItem)
-import GuildProgressUtils from "GuildProgressUtils" /* 12637 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12640 */;
-import GuildProgressCircleDefault from "GuildProgressCircle" /* 12754 */;
+// Module 12789 (GuildProgressItem)
+import GuildProgressUtils from "GuildProgressUtils" /* 12673 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12676 */;
+import GuildProgressCircleDefault from "GuildProgressCircle" /* 12790 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ icon: { width: 32, height: 32 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

@@ -1,19 +1,19 @@
-// Module ID: 14250
-// Function ID: 14251
+// Module ID: 14287
+// Function ID: 14288
 // Name: RowGroup
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 5186, 5903, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 5218, 5935, 2]
 
-// Module 14250 (RowGroup)
+// Module 14287 (RowGroup)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { overflow: "hidden" }, content: { backgroundColor: nativeDefault.colors.TABLEROW_BACKGROUND_DEFAULT, borderRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, padding: nativeDefault.modules.mobile.TABLE_ROW_PADDING } };
 let closure_5 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -63,12 +63,12 @@ export const RowGroup = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     let tmp8 = null != title;
     if (tmp8) {
       const obj4 = { title };
-      tmp8 = React3(tmp(5903).TableRowGroupTitle, obj4);
+      tmp8 = React3(tmp(5935).TableRowGroupTitle, obj4);
     }
     const obj5 = { direction: "horizontal", spacing: 4, children: null };
     const items1 = [tmp8, trailing];
     obj5.children = items1;
-    tmp7Result = React4(tmp(5186).Stack, obj5);
+    tmp7Result = React4(tmp(5218).Stack, obj5);
   }
   cResult[0] = title;
   cResult[1] = trailing;
@@ -83,7 +83,7 @@ export const RowGroup = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     let tmp7 = null != title;
     if (tmp7) {
       const obj2 = { title };
-      tmp7 = React3(tmp5(5903).TableRowGroupTitle, obj2);
+      tmp7 = React3(tmp5(5935).TableRowGroupTitle, obj2);
     }
     const obj3 = { direction: "horizontal", spacing: 4, children: null };
     const items = [tmp7, trailing];

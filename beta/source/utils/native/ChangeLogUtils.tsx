@@ -1,25 +1,25 @@
-// Module ID: 8358
-// Function ID: 8359
+// Module ID: 8390
+// Function ID: 8391
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 4758, 580, 5660, 5208, 4754, 558, 568, 7223, 8359, 1933, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 5692, 5240, 4786, 558, 568, 7255, 8391, 1933, 2]
 
-// Module 8358 (utils/ChangeLogUtils)
+// Module 8390 (utils/ChangeLogUtils)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef1933 from "module_1933" /* 1933 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
-import CustomMarkup from "CustomMarkup" /* 5208 */;
+import CustomMarkup from "CustomMarkup" /* 5240 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { link: { color: nativeDefault.colors.TEXT_LINK }, list: { marginBottom: 10 }, image: { alignSelf: "center", flex: 1 }, container: null, text: null };
 let obj3 = { color: nativeDefault.colors.TEXT_LINK };
-obj2.container = { borderLeftWidth: 2, paddingLeft: 8, marginBottom: 10, borderLeftColor: fn(5660).DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
-const obj4 = { borderLeftWidth: 2, paddingLeft: 8, marginBottom: 10, borderLeftColor: fn(5660).DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
+obj2.container = { borderLeftWidth: 2, paddingLeft: 8, marginBottom: 10, borderLeftColor: fn(5692).DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
+const obj4 = { borderLeftWidth: 2, paddingLeft: 8, marginBottom: 10, borderLeftColor: fn(5692).DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
 obj2.text = { fontSize: 14, lineHeight: 18, marginBottom: 8, color: nativeDefault.colors.TEXT_MUTED };
 let closure_6 = createStyles.createStyles(obj2);
 const rules = CustomMarkup.createRules({});
@@ -289,20 +289,20 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return tmp10;
         }
         const obj3 = { variant: "experimental/body-sm/semibold", color: str, children: tmp8 };
-        const tmp12 = jsx(tmp(4754).Text, { variant: "experimental/body-sm/semibold", color: str, children: tmp8 });
+        const tmp12 = jsx(tmp(4786).Text, { variant: "experimental/body-sm/semibold", color: str, children: tmp8 });
         cResult[8] = str;
         cResult[9] = tmp8;
         cResult[10] = tmp12;
         tmp10 = tmp12;
       }
     }
-    const smartOutputResult = tmp(8359).smartOutput(node, output, state);
+    const smartOutputResult = tmp(8391).smartOutput(node, output, state);
     cResult[4] = node;
     cResult[5] = output;
     cResult[6] = state;
     cResult[7] = smartOutputResult;
     tmp8 = smartOutputResult;
-    const tmpResult = tmp(8359);
+    const tmpResult = tmp(8391);
   } else {
     if (cResult[0] === node) {
       if (cResult[1] === output) {
@@ -330,9 +330,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (str == null) {
       str = "text-default";
     }
-    const obj2 = { variant: "experimental/body-sm/semibold", color: str, children: tmp(8359).smartOutput(node, output, state) };
-    let reactResult = jsx(tmp(4754).Text, { variant: "experimental/body-sm/semibold", color: str, children: tmp(8359).smartOutput(node, output, state) });
-    const tmpResult = tmp(8359);
+    const obj2 = { variant: "experimental/body-sm/semibold", color: str, children: tmp(8391).smartOutput(node, output, state) };
+    let reactResult = jsx(tmp(4786).Text, { variant: "experimental/body-sm/semibold", color: str, children: tmp(8391).smartOutput(node, output, state) });
+    const tmpResult = tmp(8391);
   } else {
     const strong = rules.strong;
     reactResult = strong.react(node, output, state);

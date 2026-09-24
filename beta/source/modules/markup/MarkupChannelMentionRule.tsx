@@ -1,23 +1,23 @@
-// Module ID: 5220
-// Function ID: 5221
+// Module ID: 5252
+// Function ID: 5253
 // Name: MarkupChannelMentionRule
-// Dependencies: [2101, 2045, 2067, 4399, 4409, 1376, 1078, 2013, 1401, 1119, 5221, 4903, 4911, 5222, 4912, 5219, 1933, 2]
+// Dependencies: [2101, 2045, 2067, 4431, 4441, 1376, 1078, 2013, 1401, 1119, 5253, 4935, 4943, 5254, 4944, 5251, 1933, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 5220 (MarkupChannelMentionRule)
+// Module 5252 (MarkupChannelMentionRule)
 import util from "util" /* 1119 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
 import _modDef1933 from "module_1933" /* 1933 */;
 import StringUtils from "StringUtils" /* 2013 */;
-import ChannelUtils from "ChannelUtils" /* 4903 */;
-import LinkUtils from "LinkUtils" /* 4912 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5219 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5221 */;
+import ChannelUtils from "ChannelUtils" /* 4935 */;
+import LinkUtils from "LinkUtils" /* 4944 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5251 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5253 */;
 import GatedChannelStore from "GatedChannelStore" /* 2101 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -51,18 +51,18 @@ function getChannel(id, arr) {
   if (null != channel) {
     const obj5 = { type: null, id: null, guildId: null, name: null, isDm: null, isForumPost: null, isMentionable: null, canViewChannel: null, roleSubscriptionGated: null, iconType: null, parentId: null };
     ({ type: obj4.type, id: obj4.id, guild_id: obj4.guildId } = channel);
-    obj5.name = tmp(4911).computeChannelName(channel, UserStore, RelationshipStore);
+    obj5.name = tmp(4943).computeChannelName(channel, UserStore, RelationshipStore);
     obj5.isDm = channel.isPrivate();
     obj5.isForumPost = channel.isForumPost();
-    const tmpResult = tmp(4911);
-    obj5.isMentionable = tmp(5222).isChannelTypeMentionable(channel.type);
-    const tmpResult3 = tmp(5222);
-    obj5.canViewChannel = tmp(4912).canViewChannel(channel);
+    const tmpResult = tmp(4943);
+    obj5.isMentionable = tmp(5254).isChannelTypeMentionable(channel.type);
+    const tmpResult3 = tmp(5254);
+    obj5.canViewChannel = tmp(4944).canViewChannel(channel);
     obj5.roleSubscriptionGated = isSubscriptionGated;
     obj5.iconType = str;
     obj5.parentId = channel.parent_id;
     tmp4 = obj5;
-    const tmpResult4 = tmp(4912);
+    const tmpResult4 = tmp(4944);
   }
   return tmp4;
 }
@@ -164,14 +164,14 @@ function parseChannel(channel, messageId, guildIdFromChannelId, combined1) {
             if (channel.isForumPost) {
               channel = ChannelStore.getChannel(channel.parentId);
               if (null != channel) {
-                const channelName = tmp35(4911).computeChannelName(channel, UserStore, RelationshipStore);
-                const tmp35Result = tmp35(4911);
-                let str3 = tmp35(4903).getMentionIconType(channel);
+                const channelName = tmp35(4943).computeChannelName(channel, UserStore, RelationshipStore);
+                const tmp35Result = tmp35(4943);
+                let str3 = tmp35(4935).getMentionIconType(channel);
                 if (str3 == null) {
                   str3 = "forum";
                 }
                 const obj18 = { inContent: null, content: null };
-                const tmp35Result3 = tmp35(4903);
+                const tmp35Result3 = tmp35(4935);
                 const obj19 = { type: "text", content: tmp35(2013).truncateText(channelName, 32) };
                 const obj21 = { type: "channel", content: null, channelType: null, iconType: null };
                 const items7 = [obj19];

@@ -1,13 +1,13 @@
-// Module ID: 6008
-// Function ID: 6009
+// Module ID: 6040
+// Function ID: 6041
 // Name: AvatarMoatmonsturrExample
-// Dependencies: [21, 558, 568, 6009, 5802, 2]
+// Dependencies: [21, 558, 568, 6041, 5834, 2]
 
-// Module 6008 (AvatarMoatmonsturrExample)
+// Module 6040 (AvatarMoatmonsturrExample)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6009 from "module_6009" /* 6009 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6041 from "module_6041" /* 6041 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const AvatarMoatmonsturrExample = ReactCompilerGating.isReactCompilerEnab
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6009 };
+    const obj2 = { uri: _modDef6041 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const AvatarMoatmonsturrExample = ReactCompilerGating.isReactCompilerEnab
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6009 };
+  const obj2 = { uri: _modDef6041 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,17 +1,17 @@
-// Module ID: 15412
-// Function ID: 15413
+// Module ID: 15422
+// Function ID: 15423
 // Name: useVideoExternallyPaused
-// Dependencies: [4451, 558, 568, 8183, 4616, 11636, 504, 5112, 1368, 2]
+// Dependencies: [4483, 558, 568, 8215, 4648, 11672, 504, 5144, 1368, 2]
 
-// Module 15412 (useVideoExternallyPaused)
+// Module 15422 (useVideoExternallyPaused)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4616 */;
-import useAlertStore from "useAlertStore" /* 5112 */;
-import ContextMenuState from "ContextMenuState" /* 8183 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 11636 */;
-import ActionSheetStore from "ActionSheetStore" /* 4451 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4648 */;
+import useAlertStore from "useAlertStore" /* 5144 */;
+import ContextMenuState from "ContextMenuState" /* 8215 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 11672 */;
+import ActionSheetStore from "ActionSheetStore" /* 4483 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
@@ -23,11 +23,11 @@ export const useVideoExternallyPaused = ReactCompilerGating.isReactCompilerEnabl
   const tmp4 = null != ContextMenuState.useActiveContextMenu();
   const openModalKey = NavigationRouteUtils.useOpenModalKey();
   if (cResult[0] !== questId) {
-    const videoQuestModalKey = tmp(11636).getVideoQuestModalKey(questId);
+    const videoQuestModalKey = tmp(11672).getVideoQuestModalKey(questId);
     cResult[0] = questId;
     cResult[1] = videoQuestModalKey;
     let tmp6 = videoQuestModalKey;
-    const tmpResult = tmp(11636);
+    const tmpResult = tmp(11672);
   } else {
     tmp6 = cResult[1];
   }

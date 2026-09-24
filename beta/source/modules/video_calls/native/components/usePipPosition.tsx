@@ -1,12 +1,12 @@
-// Module ID: 9652
-// Function ID: 9653
+// Module ID: 9684
+// Function ID: 9685
 // Name: usePipPosition
-// Dependencies: [32, 19, 558, 568, 510, 9653, 2]
+// Dependencies: [32, 19, 558, 568, 510, 9685, 2]
 
-// Module 9652 (usePipPosition)
+// Module 9684 (usePipPosition)
 import Storage2 from "Storage" /* 510 */;
 import c from "c" /* 568 */;
-import PictureInPicture from "PictureInPicture" /* 9653 */;
+import PictureInPicture from "PictureInPicture" /* 9685 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -52,7 +52,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const tmp = _slicedToArray(noop.useState(() => {
     const Storage = closure_0(510).Storage;
-    return Storage.get(CameraPreviewPosition, closure_0(9653).DEFAULT_PIP_POSITION);
+    return Storage.get(CameraPreviewPosition, closure_0(9685).DEFAULT_PIP_POSITION);
   }), 2);
   closure_0 = tmp[1];
   const items = [

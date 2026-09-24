@@ -1,32 +1,32 @@
-// Module ID: 16008
-// Function ID: 16009
+// Module ID: 16018
+// Function ID: 16019
 // Name: UserSettingsSurveyChangelogOverride
-// Dependencies: [32, 19, 17, 4772, 4949, 21, 4758, 580, 558, 568, 7396, 7449, 7445, 4704, 7436, 6846, 4950, 4725, 5188, 504, 8548, 5822, 5903, 4754, 8356, 5186, 2]
+// Dependencies: [32, 19, 17, 4804, 4981, 21, 4790, 580, 558, 568, 7428, 7481, 7477, 4736, 7468, 6878, 4982, 4757, 5220, 504, 8580, 5854, 5935, 4786, 8388, 5218, 2]
 
-// Module 16008 (UserSettingsSurveyChangelogOverride)
+// Module 16018 (UserSettingsSurveyChangelogOverride)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import SurveyActionCreatorsAll from "SurveyActionCreators" /* 4950 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import TableRow from "TableRow" /* 5822 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import ActionSheetRow from "ActionSheetRow" /* 7445 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8356 */;
-import usePreviousDefault from "usePrevious" /* 8548 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import SurveyActionCreatorsAll from "SurveyActionCreators" /* 4982 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import TableRow from "TableRow" /* 5854 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import ActionSheetRow from "ActionSheetRow" /* 7477 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8388 */;
+import usePreviousDefault from "usePrevious" /* 8580 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChangelogStore from "ChangelogStore" /* 4772 */;
-import SurveyStore from "SurveyStore" /* 4949 */;
+import ChangelogStore from "ChangelogStore" /* 4804 */;
+import SurveyStore from "SurveyStore" /* 4981 */;
 
 require = fn;
 const ScrollView = fn(17).ScrollView;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { scrollView: { padding: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW } };
 let closure_11 = createStyles.createStyles(obj);
 let ReactCompilerGating = fn(558);
@@ -34,7 +34,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((survey) => {
   const cResult = c.c(3);
   survey = survey.survey;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = options(tmp(7396).BottomSheetTitleHeader, { title: "Last Survey Data" });
+    const tmp6 = options(tmp(7428).BottomSheetTitleHeader, { title: "Last Survey Data" });
     cResult[0] = tmp6;
     let first = tmp6;
   } else {
@@ -55,7 +55,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((survey) => {
         str = JSON.stringify(tmp3);
       }
       obj.subLabel = str;
-      obj.icon = closure_9(closure_0(4704).CopyIcon, {});
+      obj.icon = closure_9(closure_0(4736).CopyIcon, {});
       obj.onPress = function onPress() {
         let str = "null";
         if (null != closure_0) {
@@ -64,10 +64,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((survey) => {
         }
         require("ClipboardUtils").copy(str);
       };
-      return closure_9(closure_0(7445).ActionSheetRow, obj, tmp2);
+      return closure_9(closure_0(7477).ActionSheetRow, obj, tmp2);
     });
-    obj2.children = options(tmp(7445).ActionSheetRow.Group, obj3);
-    const tmp9 = options(tmp(7449).ActionSheet, obj2);
+    obj2.children = options(tmp(7477).ActionSheetRow.Group, obj3);
+    const tmp9 = options(tmp(7481).ActionSheet, obj2);
     cResult[1] = survey;
     cResult[2] = tmp9;
     let tmp7 = tmp9;
@@ -88,7 +88,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((survey) => {
       str = JSON.stringify(tmp2);
     }
     obj.subLabel = str;
-    obj.icon = closure_9(closure_0(4704).CopyIcon, {});
+    obj.icon = closure_9(closure_0(4736).CopyIcon, {});
     obj.onPress = function onPress() {
       let str = "null";
       if (null != closure_1_0) {
@@ -97,7 +97,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((survey) => {
       }
       require("ClipboardUtils").copy(str);
     };
-    return closure_9(closure_0(7445).ActionSheetRow, obj, tmp);
+    return closure_9(closure_0(7477).ActionSheetRow, obj, tmp);
   });
   obj.children = options(ActionSheetRow.ActionSheetRow.Group, obj2);
   return options(ActionSheet.ActionSheet, obj);
@@ -121,9 +121,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp5 = _slicedToArray(noop.useState(first), 2);
   first1 = tmp5[0];
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp10 = closure_9(tmp(7396).BottomSheetTitleHeader, { title: "Survey Override" });
+    const tmp10 = closure_9(tmp(7428).BottomSheetTitleHeader, { title: "Survey Override" });
     let obj2 = { label: "Survey Override", size: "md", placeholder: "Enter the ID of the Survey you want to test", onChange: tmp5[1], clearable: true };
-    const tmp11 = closure_9(tmp(6846).TextInput, obj2);
+    const tmp11 = closure_9(tmp(6878).TextInput, obj2);
     cResult[1] = tmp10;
     cResult[2] = tmp11;
     let tmp8 = tmp11;
@@ -168,9 +168,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   const obj3 = { header: tmp7, children: null };
-  const items = [tmp8, closure_9(first1(5188).Button, { text: str, variant: str2, onPress: tmp14 })];
+  const items = [tmp8, closure_9(first1(5220).Button, { text: str, variant: str2, onPress: tmp14 })];
   obj3.children = items;
-  const tmp16 = closure_10(first1(7449).ActionSheet, obj3);
+  const tmp16 = closure_10(first1(7481).ActionSheet, obj3);
   cResult[5] = str;
   cResult[6] = str2;
   cResult[7] = tmp14;
@@ -185,8 +185,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return surveyOverride;
   }), 2);
   const first = tmp[0];
-  let obj = { header: closure_9(first(7396).BottomSheetTitleHeader, { title: "Survey Override" }), children: null };
-  const items = [closure_9(first(6846).TextInput, { label: "Survey Override", size: "md", placeholder: "Enter the ID of the Survey you want to test", onChange: tmp[1], clearable: true }), ];
+  let obj = { header: closure_9(first(7428).BottomSheetTitleHeader, { title: "Survey Override" }), children: null };
+  const items = [closure_9(first(6878).TextInput, { label: "Survey Override", size: "md", placeholder: "Enter the ID of the Survey you want to test", onChange: tmp[1], clearable: true }), ];
   let str = "Fetch Survey";
   if ("" === first) {
     str = "Reset Survey Override";
@@ -209,9 +209,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     ActionSheetActionCreatorsDefault.hideActionSheet("SurveyOverrideActionSheet");
   };
-  items[1] = closure_9(first(5188).Button, obj2);
+  items[1] = closure_9(first(5220).Button, obj2);
   obj.children = items;
-  return closure_10(first(7449).ActionSheet, obj);
+  return closure_10(first(7481).ActionSheet, obj);
 });
 ReactCompilerGating = fn(558);
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -241,7 +241,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           ActionSheetActionCreatorsDefault.openLazy(Promise.resolve({ default: closure_1_13 }), "SurveyOverrideActionSheet");
         }
     };
-    const tmp11 = closure_9(tmp(5822).TableRow, obj2);
+    const tmp11 = closure_9(tmp(5854).TableRow, obj2);
     cResult[2] = tmp11;
     let tmp9 = tmp11;
   } else {
@@ -318,7 +318,7 @@ ReactCompilerGating = fn(558);
 let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = options(tmp(7396).BottomSheetTitleHeader, { title: "Changelog Debugging" });
+    const tmp6 = options(tmp(7428).BottomSheetTitleHeader, { title: "Changelog Debugging" });
     cResult[0] = tmp6;
     let first = tmp6;
   } else {
@@ -330,8 +330,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _JSON = JSON;
     const _HermesInternal = HermesInternal;
     obj3.children = "" + JSON.stringify(ChangelogStore.getStateForDebugging(), undefined, "\t");
-    obj2.children = options(tmp(4754).Text, obj3);
-    const tmp10 = options(tmp(7449).ActionSheet, obj2);
+    obj2.children = options(tmp(4786).Text, obj3);
+    const tmp10 = options(tmp(7481).ActionSheet, obj2);
     cResult[1] = tmp10;
     let tmp7 = tmp10;
   } else {
@@ -357,9 +357,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp5 = _slicedToArray(noop.useState(first), 2);
   first1 = tmp5[0];
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp10 = closure_9(tmp(7396).BottomSheetTitleHeader, { title: "Changelog Override" });
+    const tmp10 = closure_9(tmp(7428).BottomSheetTitleHeader, { title: "Changelog Override" });
     let obj2 = { label: "Changelog Override", size: "md", placeholder: "Enter the ID of the changelog you want to test", onChange: tmp5[1], clearable: true };
-    const tmp11 = closure_9(tmp(6846).TextInput, obj2);
+    const tmp11 = closure_9(tmp(6878).TextInput, obj2);
     cResult[1] = tmp10;
     cResult[2] = tmp11;
     let tmp8 = tmp11;
@@ -404,9 +404,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   const obj3 = { header: tmp7, children: null };
-  const items = [tmp8, closure_9(first1(5188).Button, { text: str, variant: str2, onPress: tmp14 })];
+  const items = [tmp8, closure_9(first1(5220).Button, { text: str, variant: str2, onPress: tmp14 })];
   obj3.children = items;
-  const tmp16 = closure_10(first1(7449).ActionSheet, obj3);
+  const tmp16 = closure_10(first1(7481).ActionSheet, obj3);
   cResult[5] = str;
   cResult[6] = str2;
   cResult[7] = tmp14;
@@ -415,8 +415,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const tmp = _slicedToArray(noop.useState(() => ChangelogStore.overrideId()), 2);
   const first = tmp[0];
-  let obj = { header: closure_9(first(7396).BottomSheetTitleHeader, { title: "Changelog Override" }), children: null };
-  const items = [closure_9(first(6846).TextInput, { label: "Changelog Override", size: "md", placeholder: "Enter the ID of the changelog you want to test", onChange: tmp[1], clearable: true }), ];
+  let obj = { header: closure_9(first(7428).BottomSheetTitleHeader, { title: "Changelog Override" }), children: null };
+  const items = [closure_9(first(6878).TextInput, { label: "Changelog Override", size: "md", placeholder: "Enter the ID of the changelog you want to test", onChange: tmp[1], clearable: true }), ];
   let str = "Fetch Changelog";
   if ("" === first) {
     str = "Reset Changelog Override";
@@ -439,9 +439,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     ActionSheetActionCreatorsDefault.hideActionSheet("ChangelogOverrideActionSheet");
   };
-  items[1] = closure_9(first(5188).Button, obj2);
+  items[1] = closure_9(first(5220).Button, obj2);
   obj.children = items;
-  return closure_10(first(7449).ActionSheet, obj);
+  return closure_10(first(7481).ActionSheet, obj);
 });
 ReactCompilerGating = fn(558);
 let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -455,7 +455,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           ActionSheetActionCreatorsDefault.openLazy(Promise.resolve({ default: closure_1_16 }), "ChangelogOverrideActionSheet");
         }
     };
-    const tmp6 = options(tmp(5822).TableRow, obj2);
+    const tmp6 = options(tmp(5854).TableRow, obj2);
     cResult[0] = tmp6;
     let first = tmp6;
   } else {
@@ -471,9 +471,9 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           ActionSheetActionCreatorsDefault.openLazy(Promise.resolve({ default: closure_1_15 }), "ChangelogOverrideDebuggingActionSheet");
         }
     };
-    items[1] = options(tmp(5822).TableRow, obj4);
+    items[1] = options(tmp(5854).TableRow, obj4);
     obj3.children = items;
-    const tmp10 = v65535(tmp(5903).TableRowGroup, obj3);
+    const tmp10 = v65535(tmp(5935).TableRowGroup, obj3);
     cResult[1] = tmp10;
     let tmp7 = tmp10;
   } else {

@@ -1,11 +1,11 @@
-// Module ID: 12548
-// Function ID: 12549
+// Module ID: 12584
+// Function ID: 12585
 // Name: ApplicationCommandItem
-// Dependencies: [19, 17, 2109, 10640, 21, 4758, 580, 558, 568, 5195, 504, 12377, 1119, 5802, 4754, 5341, 2]
+// Dependencies: [19, 17, 2109, 10676, 21, 4790, 580, 558, 568, 5227, 504, 12413, 1119, 5834, 4786, 5373, 2]
 
-// Module 12548 (ApplicationCommandItem)
+// Module 12584 (ApplicationCommandItem)
 import nativeDefault from "native" /* 580 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 12377 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 12413 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 
@@ -13,10 +13,10 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const AUTOCOMPLETE_ROW_HEIGHT = fn(10640).AUTOCOMPLETE_ROW_HEIGHT;
+const AUTOCOMPLETE_ROW_HEIGHT = fn(10676).AUTOCOMPLETE_ROW_HEIGHT;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles((arg0) => {
   const obj = { applicationCommandItem: { flexDirection: "row", paddingVertical: 8, paddingHorizontal: 16, alignItems: "center", height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) }, highlightedApplicationCommandItem: null, applicationCommandIcon: null, applicationCommandDescriptionWrapper: null, applicationCommandSectionName: null };
   const obj2 = { flexDirection: "row", paddingVertical: 8, paddingHorizontal: 16, alignItems: "center", height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) };
@@ -38,7 +38,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   ({ showIcon, highlighted } = guildId);
   let highlightedApplicationCommandItem = undefined !== highlighted && highlighted;
   const obj = section(568);
-  const tmp5 = closure_9(section(5195).useFontScale());
+  const tmp5 = closure_9(section(5227).useFontScale());
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildMemberStore];
     cResult[0] = items;
@@ -83,7 +83,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                     const text = `/ ${command.displayName}`;
                     if (cResult[21] !== `/ ${command.displayName}`) {
                       const obj2 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: text };
-                      const tmp32 = closure_7(tmp(4754).Text, obj2);
+                      const tmp32 = closure_7(tmp(4786).Text, obj2);
                       cResult[21] = text;
                       cResult[22] = tmp32;
                       let tmp30 = tmp32;
@@ -92,7 +92,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                     }
                     if (cResult[23] !== command.displayDescription) {
                       const obj3 = { lineClamp: 1, variant: "text-xs/medium", color: "text-default", children: command.displayDescription };
-                      const tmp35 = closure_7(tmp(4754).Text, obj3);
+                      const tmp35 = closure_7(tmp(4786).Text, obj3);
                       cResult[23] = command.displayDescription;
                       cResult[24] = tmp35;
                       let tmp33 = tmp35;
@@ -125,7 +125,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                           const obj4 = { accessibilityLabel: tmp14, style: tmp19, accessibilityRole: "button", onPress, children: null };
                           const items1 = [tmp25, tmp36, tmp40];
                           obj4.children = items1;
-                          const tmp45 = closure_8(tmp(5341).PressableOpacity, obj4);
+                          const tmp45 = closure_8(tmp(5373).PressableOpacity, obj4);
                           cResult[32] = onPress;
                           cResult[33] = tmp36;
                           cResult[34] = tmp40;
@@ -136,7 +136,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                           tmp43 = tmp45;
                         }
                         const obj6 = { style: tmp5.applicationCommandSectionName, variant: "eyebrow", color: "text-muted", children: name };
-                        const tmp42 = closure_7(tmp(4754).Text, obj6);
+                        const tmp42 = closure_7(tmp(4786).Text, obj6);
                         cResult[29] = name;
                         cResult[30] = tmp5.applicationCommandSectionName;
                         cResult[31] = tmp42;
@@ -160,7 +160,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                 }
                 if (tmp26) {
                   const obj8 = { style: tmp5.applicationCommandIcon, source: tmp10 };
-                  tmp26 = closure_7(guildId(5802), obj8);
+                  tmp26 = closure_7(guildId(5834), obj8);
                 }
                 cResult[17] = tmp10;
                 cResult[18] = tmp4;
@@ -195,12 +195,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       tmp14 = formatToPlainStringResult;
     }
     const tmpResult3 = tmp(504);
-    const applicationCommandsIconSource = tmp(12377).getApplicationCommandsIconSource(section, stateFromStores);
+    const applicationCommandsIconSource = tmp(12413).getApplicationCommandsIconSource(section, stateFromStores);
     cResult[4] = stateFromStores;
     cResult[5] = section;
     cResult[6] = applicationCommandsIconSource;
     tmp10 = applicationCommandsIconSource;
-    const tmpResult4 = tmp(12377);
+    const tmpResult4 = tmp(12413);
   }
   const fn = function c() {
     if (null != guildId) {

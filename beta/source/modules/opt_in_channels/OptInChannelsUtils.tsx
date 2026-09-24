@@ -1,23 +1,23 @@
-// Module ID: 11679
-// Function ID: 11680
+// Module ID: 11715
+// Function ID: 11716
 // Name: OptInChannelsUtils
-// Dependencies: [19, 2045, 7358, 4773, 4409, 1376, 1078, 2052, 7781, 4940, 7469, 5736, 4911, 7359, 7775, 11680, 7357, 1105, 558, 568, 4579, 2031, 504, 1119, 4352, 11, 2]
+// Dependencies: [19, 2045, 7390, 4805, 4441, 1376, 1078, 2052, 7813, 4972, 7501, 5768, 4943, 7391, 7807, 11716, 7389, 1105, 558, 568, 4611, 2031, 504, 1119, 4384, 11, 2]
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useFilterCategoriesByQuery
 
-// Module 11679 (OptInChannelsUtils)
+// Module 11715 (OptInChannelsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import util from "util" /* 1119 */;
-import _modDef4352 from "module_4352" /* 4352 */;
-import useChannelName from "useChannelName" /* 4911 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5736 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7357 */;
-import ChannelListState from "ChannelListState" /* 7775 */;
-import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 11680 */;
+import _modDef4384 from "module_4384" /* 4384 */;
+import useChannelName from "useChannelName" /* 4943 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5768 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7389 */;
+import ChannelListState from "ChannelListState" /* 7807 */;
+import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 11716 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7358 */;
-import ReadStateStore from "ReadStateStore" /* 4773 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7390 */;
+import ReadStateStore from "ReadStateStore" /* 4805 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
@@ -31,8 +31,8 @@ const Constants = fn(1078);
 ({ Routes: closure_9, ChannelTypes: c10 } = Constants);
 const ChannelConstants = fn(2052);
 ({ ChannelFlags: closure_11, StaticChannelRoute: closure_12 } = ChannelConstants);
-const ChannelListGuildActionRow = fn(7781).ChannelListGuildActionRow;
-const ReadStateTypes = fn(4940).ReadStateTypes;
+const ChannelListGuildActionRow = fn(7813).ChannelListGuildActionRow;
+const ReadStateTypes = fn(4972).ReadStateTypes;
 fn(558);
 const ReactCompilerGating = fn(558);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, _categories, arg2, rowHeight) => {
@@ -370,7 +370,7 @@ export const useChannelBrowserChannelCount = ReactCompilerGating.isReactCompiler
 });
 export const getActiveAgoTimestamp = function getActiveAgoTimestamp(id) {
   const intl = util.intl;
-  const tmp = _modDef4352;
+  const tmp = _modDef4384;
   let lastMessageIdResult = ReadStateStore.lastMessageId(id);
   if (lastMessageIdResult == null) {
     lastMessageIdResult = id;

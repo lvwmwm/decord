@@ -1,14 +1,14 @@
-// Module ID: 11783
-// Function ID: 11784
+// Module ID: 11819
+// Function ID: 11820
 // Name: canForwardMessage
-// Dependencies: [2101, 2045, 2067, 4399, 1078, 1389, 558, 568, 504, 2]
+// Dependencies: [2101, 2045, 2067, 4431, 1078, 1389, 558, 568, 504, 2]
 
-// Module 11783 (canForwardMessage)
+// Module 11819 (canForwardMessage)
 import FlagUtils from "FlagUtils" /* 1389 */;
 import GatedChannelStore from "GatedChannelStore" /* 2101 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 const require = globalThis.__r;
 

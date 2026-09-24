@@ -1,18 +1,18 @@
-// Module ID: 16285
-// Function ID: 16286
+// Module ID: 16295
+// Function ID: 16296
 // Name: useMultiAccount
-// Dependencies: [19, 1376, 12562, 558, 568, 504, 577, 12566, 2]
+// Dependencies: [19, 1376, 12598, 558, 568, 504, 577, 12602, 2]
 
-// Module 16285 (useMultiAccount)
+// Module 16295 (useMultiAccount)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
-import MultiAccountStore from "MultiAccountStore" /* 12562 */;
+import MultiAccountStore from "MultiAccountStore" /* 12598 */;
 
 require = fn;
-const MultiAccountTokenStatus = fn(12562).MultiAccountTokenStatus;
+const MultiAccountTokenStatus = fn(12598).MultiAccountTokenStatus;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/multi_account/useMultiAccount.tsx");

@@ -1,8 +1,8 @@
-// Module ID: 6183
-// Function ID: 6184
+// Module ID: 6215
+// Function ID: 6216
 // Dependencies: [2]
 
-// Module 6183
+// Module 6215
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EmojiDistrustExample-2x.png.js");

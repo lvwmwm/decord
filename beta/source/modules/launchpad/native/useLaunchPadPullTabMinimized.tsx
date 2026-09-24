@@ -1,11 +1,11 @@
-// Module ID: 17671
-// Function ID: 17672
+// Module ID: 17681
+// Function ID: 17682
 // Name: useLaunchPadPullTabMinimized
-// Dependencies: [19, 17, 558, 568, 4497, 10183, 2]
+// Dependencies: [19, 17, 558, 568, 4529, 10222, 2]
 
-// Module 17671 (useLaunchPadPullTabMinimized)
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import VoicePanelUtils from "VoicePanelUtils" /* 10183 */;
+// Module 17681 (useLaunchPadPullTabMinimized)
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import VoicePanelUtils from "VoicePanelUtils" /* 10222 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ let ReactCompilerGating = fn(558);
 let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = sharedValue(568).c(3);
   const obj = sharedValue(568);
-  sharedValue = sharedValue(4497).useSharedValue(false);
+  sharedValue = sharedValue(4529).useSharedValue(false);
   if (cResult[0] !== sharedValue) {
     const fn = function t() {
       closure_0 = -1;
@@ -59,7 +59,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const effect = noop.useEffect(tmp3, tmp4);
   return sharedValue;
 }) : (() => {
-  sharedValue = sharedValue(4497).useSharedValue(false);
+  sharedValue = sharedValue(4529).useSharedValue(false);
   const items = [sharedValue];
   const effect = noop.useEffect(() => {
     closure_0 = -1;

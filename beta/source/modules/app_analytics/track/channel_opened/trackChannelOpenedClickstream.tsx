@@ -1,11 +1,11 @@
-// Module ID: 8022
-// Function ID: 8023
+// Module ID: 8054
+// Function ID: 8055
 // Name: trackChannelOpenedClickstream
-// Dependencies: [2045, 1078, 2052, 7712, 2]
+// Dependencies: [2045, 1078, 2052, 7744, 2]
 // Exports: default
 
-// Module 8022 (trackChannelOpenedClickstream)
-import Clickstream from "Clickstream" /* 7712 */;
+// Module 8054 (trackChannelOpenedClickstream)
+import Clickstream from "Clickstream" /* 7744 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;

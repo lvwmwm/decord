@@ -1,26 +1,26 @@
-// Module ID: 15164
-// Function ID: 15165
+// Module ID: 15174
+// Function ID: 15175
 // Name: FamilyCenterTopUsersBottomSheet
-// Dependencies: [19, 1376, 21, 4758, 558, 568, 7839, 5822, 4603, 1181, 1119, 2486, 4754, 5903, 7449, 2]
+// Dependencies: [19, 1376, 21, 4790, 558, 568, 7871, 5854, 4635, 1181, 1119, 2486, 4786, 5935, 7481, 2]
 
-// Module 15164 (FamilyCenterTopUsersBottomSheet)
+// Module 15174 (FamilyCenterTopUsersBottomSheet)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import _modDef2486 from "module_2486" /* 2486 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import TableRow2 from "TableRow" /* 5822 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7839 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import TableRow2 from "TableRow" /* 5854 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7871 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ header: { textAlign: "center" } });
 let ReactCompilerGating = fn(558);
 let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((userActivity) => {
@@ -75,14 +75,14 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((userActivity) =
     tmp8 = user;
   } else {
     if (cResult[8] === userActivity.call_count) {
-      const TableRow = tmp(5822).TableRow;
+      const TableRow = tmp(5854).TableRow;
       const name = UserUtilsDefault.getName(user);
     }
-    const topUserOrGuildDescription = tmp(7839).getTopUserOrGuildDescription(userActivity.dms_sent, userActivity.call_count);
+    const topUserOrGuildDescription = tmp(7871).getTopUserOrGuildDescription(userActivity.dms_sent, userActivity.call_count);
     cResult[8] = userActivity.call_count;
     cResult[9] = userActivity.dms_sent;
     cResult[10] = topUserOrGuildDescription;
-    const tmpResult = tmp(7839);
+    const tmpResult = tmp(7871);
   }
 }) : ((userActivity) => {
   userActivity = userActivity.userActivity;
@@ -117,7 +117,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((topUserActivitie
   }
   if (cResult[1] !== tmp4.header) {
     const obj2 = { variant: "text-md/bold", style: tmp4.header, children: first };
-    const tmp10 = React4(tmp(4754).Text, obj2);
+    const tmp10 = React4(tmp(4786).Text, obj2);
     cResult[1] = tmp4.header;
     cResult[2] = tmp10;
     let tmp8 = tmp10;
@@ -141,7 +141,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((topUserActivitie
   } else {
     if (cResult[6] !== cResult[4]) {
       const obj3 = { hasIcons: true, children: tmp11 };
-      const tmp17 = React4(tmp(5903).TableRowGroup, obj3);
+      const tmp17 = React4(tmp(5935).TableRowGroup, obj3);
       cResult[6] = tmp11;
       cResult[7] = tmp17;
       let tmp15 = tmp17;
@@ -157,7 +157,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((topUserActivitie
     const obj4 = { children: null };
     const items = [tmp8, tmp15];
     obj4.children = items;
-    const tmp20 = hasOwnProperty(tmp(7449).ActionSheet, obj4);
+    const tmp20 = hasOwnProperty(tmp(7481).ActionSheet, obj4);
     cResult[8] = tmp8;
     cResult[9] = tmp15;
     cResult[10] = tmp20;

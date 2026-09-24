@@ -1,13 +1,13 @@
-// Module ID: 7452
-// Function ID: 7453
+// Module ID: 7484
+// Function ID: 7485
 // Name: RoleIcon
-// Dependencies: [19, 17, 21, 1368, 558, 568, 4754, 2]
+// Dependencies: [19, 17, 21, 1368, 558, 568, 4786, 2]
 
-// Module 7452 (RoleIcon)
+// Module 7484 (RoleIcon)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
-const Text_Text = Text(4754);
+const Text_Text = Text(4786);
 require = fn;
 const Image = fn(17).Image;
 const jsx = fn(21).jsx;
@@ -90,7 +90,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = obj5;
     roleIcon = obj5;
   }
-  const obj6 = { fontFamily: "System", fontSize: result, lineHeight: "unicodeVersion", textAlign: null, width: num, marginBottom: null };
+  const obj6 = { fontFamily: "System", fontSize: result, lineHeight: "unicodeVersion", textAlign: "add", width: num, marginBottom: "duration" };
   cResult[2] = num;
   cResult[3] = result;
   cResult[4] = obj6;
@@ -101,6 +101,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     size = 20;
   }
   const size1 = { height: size, width: size };
+  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "unicodeVersion", textAlign: "add", width: size, marginBottom: "duration" };
   if (null != src) {
     const obj2 = { resizeMode: "contain", source: null, style: null };
     const obj3 = { uri: src };

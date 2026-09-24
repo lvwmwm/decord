@@ -1,12 +1,12 @@
-// Module ID: 11033
-// Function ID: 11034
-// Dependencies: [4757, 558, 568, 504, 11034, 2]
+// Module ID: 11069
+// Function ID: 11070
+// Dependencies: [4789, 558, 568, 504, 11070, 2]
 
-// Module 11033
+// Module 11069
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import useMaybeFetchCollectiblesCategoriesShared from "useMaybeFetchCollectiblesCategoriesShared" /* 11034 */;
-import DevSettingsStore from "DevSettingsStore" /* 4757 */;
+import useMaybeFetchCollectiblesCategoriesShared from "useMaybeFetchCollectiblesCategoriesShared" /* 11070 */;
+import DevSettingsStore from "DevSettingsStore" /* 4789 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
@@ -48,7 +48,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((paymentGateway, 
           if (cResult[6] === logPerf) {
             let tmp11 = cResult[7];
           }
-          const tmpResult2 = tmp(11034);
+          const tmpResult2 = tmp(11070);
           let noOp;
           if (paymentGateway != null) {
             noOp = paymentGateway.noOp;

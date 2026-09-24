@@ -1,20 +1,20 @@
-// Module ID: 15451
-// Function ID: 15452
+// Module ID: 15461
+// Function ID: 15462
 // Name: QuestDockBlurredHeaderPlaceholder
-// Dependencies: [19, 17, 5663, 15351, 21, 4758, 558, 568, 15352, 15452, 4497, 7320, 2]
+// Dependencies: [19, 17, 5695, 15361, 21, 4790, 558, 568, 15362, 15462, 4529, 7352, 2]
 
-// Module 15451 (QuestDockBlurredHeaderPlaceholder)
-import thumbHashToRGBA from "thumbHashToRGBA" /* 15452 */;
+// Module 15461 (QuestDockBlurredHeaderPlaceholder)
+import thumbHashToRGBA from "thumbHashToRGBA" /* 15462 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const StyleSheet = fn(17).StyleSheet;
-const QuestDockMode = fn(5663).QuestDockMode;
-const QuestDockConstants = fn(15351);
+const QuestDockMode = fn(5695).QuestDockMode;
+const QuestDockConstants = fn(15361);
 ({ QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT, QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED } = QuestDockConstants);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { image: null, overlay: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -36,7 +36,7 @@ const result = size.fileFinishedImporting("modules/quests/native/QuestDock/Quest
 export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = questDockWrapperSpecs(568).c(20);
   ({ layoutAnimation, layoutAnimatedStyle, opacityAnimatedStyle, placeholder } = arg0);
-  const context = noop.useContext(questDockWrapperSpecs(15352).QuestDockGestureContext);
+  const context = noop.useContext(questDockWrapperSpecs(15362).QuestDockGestureContext);
   questDockWrapperSpecs = context.questDockWrapperSpecs;
   const activeQuestDockMode = context.activeQuestDockMode;
   if (cResult[0] !== placeholder) {
@@ -52,10 +52,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       tmp6 = cResult[2];
     }
     const _Uint8Array = thumbHashToDataURLResult.Uint8Array;
-    thumbHashToDataURLResult = tmp(15452).thumbHashToDataURL(_Uint8Array.from(thumbHashToDataURLResult.atob(placeholder), tmp6));
+    thumbHashToDataURLResult = tmp(15462).thumbHashToDataURL(_Uint8Array.from(thumbHashToDataURLResult.atob(placeholder), tmp6));
     cResult[0] = placeholder;
     cResult[1] = thumbHashToDataURLResult;
-    const tmpResult = tmp(15452);
+    const tmpResult = tmp(15462);
   } else {
     if (cResult[3] !== cResult[1]) {
       const obj2 = { uri: tmp5 };
@@ -91,7 +91,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     O.__closure = obj3;
     O.__workletHash = 11176778421725;
     O.__initData = __initData;
-    const animatedStyle = tmp(4497).useAnimatedStyle(O);
+    const animatedStyle = tmp(4529).useAnimatedStyle(O);
     if (cResult[5] === animatedStyle) {
       if (cResult[6] === layoutAnimatedStyle) {
         if (cResult[7] === opacityAnimatedStyle) {
@@ -149,7 +149,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
               tmp23[0] = tmp10.overlay;
               tmp23[1] = opacityAnimatedStyle;
               obj5.style = tmp23;
-              const tmp24 = closure_6(activeQuestDockMode(7320), obj5);
+              const tmp24 = closure_6(activeQuestDockMode(7352), obj5);
               cResult[14] = opacityAnimatedStyle;
               cResult[15] = tmp10.overlay;
               cResult[16] = tmp24;
@@ -170,7 +170,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
           }
           obj6.style = tmp15;
           obj6.layout = layoutAnimation;
-          const tmp19 = closure_6(activeQuestDockMode(4497).Image, obj6);
+          const tmp19 = closure_6(activeQuestDockMode(4529).Image, obj6);
           cResult[10] = tmp8;
           cResult[11] = layoutAnimation;
           cResult[12] = tmp15;
@@ -186,7 +186,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     cResult[8] = tmp10.image;
     cResult[9] = items;
     tmp15 = items;
-    const tmpResult2 = tmp(4497);
+    const tmpResult2 = tmp(4529);
   }
 }) : ((arg0) => {
   ({ opacityAnimatedStyle, placeholder } = arg0);

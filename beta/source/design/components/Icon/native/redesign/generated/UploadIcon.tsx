@@ -1,13 +1,13 @@
-// Module ID: 9483
-// Function ID: 9484
+// Module ID: 9515
+// Function ID: 9516
 // Name: UploadIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 9484, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9516, 4493, 2]
 
-// Module 9483 (UploadIcon)
+// Module 9515 (UploadIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod9484 from "module_9484" /* 9484 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9516 from "module_9516" /* 9516 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const UploadIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(9484);
+    const tmpResult = tmp(9516);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const UploadIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9484, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9516, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

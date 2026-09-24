@@ -1,15 +1,15 @@
-// Module ID: 11561
-// Function ID: 11562
+// Module ID: 11597
+// Function ID: 11598
 // Name: GiftCodeStore
-// Dependencies: [10998, 1078, 2040, 4352, 4996, 577, 11562, 504, 2]
+// Dependencies: [11034, 1078, 2040, 4384, 5028, 577, 11598, 504, 2]
 
-// Module 11561 (GiftCodeStore)
+// Module 11597 (GiftCodeStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import _modDef4352 from "module_4352" /* 4352 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 4996 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11562 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10998 */;
+import _modDef4384 from "module_4384" /* 4384 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5028 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11598 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 11034 */;
 
 require = fn;
 function updateGiftCode(giftCode) {
@@ -28,7 +28,7 @@ function updateGiftCode(giftCode) {
         if (null != value2.expiresAt) {
           const expiresAt = value2.expiresAt;
           const valueOfResult = expiresAt.valueOf();
-          const diff = valueOfResult - _modDef4352().valueOf();
+          const diff = valueOfResult - _modDef4384().valueOf();
           if (diff <= 0) {
             obj.delete(code);
             delete tmp2[tmp];
@@ -113,7 +113,7 @@ function updateGiftCode(giftCode) {
               }
             });
           }
-          const obj4 = _modDef4352();
+          const obj4 = _modDef4384();
         }
       }
       tmp18 = closure_7;

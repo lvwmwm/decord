@@ -1,11 +1,11 @@
-// Module ID: 18105
-// Function ID: 18106
+// Module ID: 18115
+// Function ID: 18116
 // Name: EnableCommunitySharedStyles
-// Dependencies: [17, 4758, 2]
+// Dependencies: [17, 4790, 2]
 
-// Module 18105 (EnableCommunitySharedStyles)
+// Module 18115 (EnableCommunitySharedStyles)
 import _mod17 from "module_17" /* 17 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import size from "module_2" /* 2 */;
 
 const Platform = _mod17.Platform;

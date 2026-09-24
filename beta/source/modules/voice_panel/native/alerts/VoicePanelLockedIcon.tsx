@@ -1,19 +1,19 @@
-// Module ID: 17612
-// Function ID: 17613
+// Module ID: 17622
+// Function ID: 17623
 // Name: VoicePanelLockedIcon
-// Dependencies: [19, 21, 4758, 580, 558, 568, 1181, 17613, 5804, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 1181, 17623, 5836, 2]
 
-// Module 17612 (VoicePanelLockedIcon)
+// Module 17622 (VoicePanelLockedIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import NativeViewDefault from "NativeView" /* 5804 */;
-import _modDef17613 from "module_17613" /* 17613 */;
+import NativeViewDefault from "NativeView" /* 5836 */;
+import _modDef17623 from "module_17623" /* 17623 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: null, icon: null };
 let size = { alignItems: "center", justifyContent: "center", alignSelf: "center", width: 64, height: 64, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.round };
 obj2.container = size;
@@ -27,8 +27,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(5);
   const tmp4 = closure_4();
   if (cResult[0] !== tmp4.icon) {
-    const obj2 = { style: tmp4.icon, source: _modDef17613, size: tmp(1181).IconSizes.LARGE };
-    const tmp8 = jsx(tmp(1181).Icon, { style: tmp4.icon, source: _modDef17613, size: tmp(1181).IconSizes.LARGE });
+    const obj2 = { style: tmp4.icon, source: _modDef17623, size: tmp(1181).IconSizes.LARGE };
+    const tmp8 = jsx(tmp(1181).Icon, { style: tmp4.icon, source: _modDef17623, size: tmp(1181).IconSizes.LARGE });
     cResult[0] = tmp4.icon;
     cResult[1] = tmp8;
     let tmp5 = tmp8;
@@ -49,6 +49,6 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const tmp = closure_4();
   const obj = { style: tmp.container, children: null };
-  obj.children = jsx(native.Icon, { style: tmp.icon, source: _modDef17613, size: native.IconSizes.LARGE });
+  obj.children = jsx(native.Icon, { style: tmp.icon, source: _modDef17623, size: native.IconSizes.LARGE });
   return <tmp2 style={tmp.container}>{null}</tmp2>;
 });

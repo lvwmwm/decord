@@ -1,17 +1,17 @@
-// Module ID: 7324
-// Function ID: 7325
+// Module ID: 7356
+// Function ID: 7357
 // Name: SMSBackupWarningAlert
-// Dependencies: [19, 21, 4758, 558, 568, 5111, 1119, 4754, 5207, 2]
+// Dependencies: [19, 21, 4790, 558, 568, 5143, 1119, 4786, 5239, 2]
 
-// Module 7324 (SMSBackupWarningAlert)
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5111 */;
-import common_AlertDefault from "common/Alert" /* 5207 */;
+// Module 7356 (SMSBackupWarningAlert)
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5143 */;
+import common_AlertDefault from "common/Alert" /* 5239 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ title: { textAlign: "center" }, body: { marginTop: 8, textAlign: "center", lineHeight: 18 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -64,7 +64,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   if (cResult[6] !== tmp4.title) {
     const obj2 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp11 };
-    const tmp15 = closure_3(tmp(4754).Text, obj2);
+    const tmp15 = closure_3(tmp(4786).Text, obj2);
     cResult[6] = tmp4.title;
     cResult[7] = tmp15;
     let tmp13 = tmp15;
@@ -81,7 +81,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   if (cResult[9] !== tmp4.body) {
     const obj3 = { style: tmp4.body, variant: "text-sm/medium", color: "text-default", children: tmp16 };
-    const tmp20 = closure_3(tmp(4754).Text, obj3);
+    const tmp20 = closure_3(tmp(4786).Text, obj3);
     cResult[9] = tmp4.body;
     cResult[10] = tmp20;
     let tmp18 = tmp20;
@@ -123,11 +123,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl3 = onConfirm(1119).intl;
   obj2.children = intl3.string(onConfirm(1119).t.Ed4XQB);
-  const items = [closure_3(onConfirm(4754).Text, obj2), ];
+  const items = [closure_3(onConfirm(4786).Text, obj2), ];
   const obj3 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: null };
   const intl4 = onConfirm(1119).intl;
   obj3.children = intl4.string(onConfirm(1119).t.EDU2Eg);
-  items[1] = closure_3(onConfirm(4754).Text, obj3);
+  items[1] = closure_3(onConfirm(4786).Text, obj3);
   obj.children = items;
   return closure_4(common_AlertDefault, obj);
 });

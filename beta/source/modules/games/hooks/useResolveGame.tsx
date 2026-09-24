@@ -1,14 +1,14 @@
-// Module ID: 8949
-// Function ID: 8950
+// Module ID: 8981
+// Function ID: 8982
 // Name: useResolveGame
-// Dependencies: [19, 558, 568, 7415, 7553, 2]
+// Dependencies: [19, 558, 568, 7447, 7585, 2]
 
-// Module 8949 (useResolveGame)
+// Module 8981 (useResolveGame)
 import c from "c" /* 568 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7415 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7447 */;
 import noop from "module_19" /* 19 */;
 
-const useGame = tmp(7553);
+const useGame = tmp(7585);
 require = fn;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

@@ -1,17 +1,17 @@
-// Module ID: 14466
-// Function ID: 14467
+// Module ID: 14504
+// Function ID: 14505
 // Name: RefreshEmptyState
-// Dependencies: [109, 19, 17, 1078, 21, 4758, 5743, 580, 558, 568, 8895, 5188, 4610, 2]
+// Dependencies: [109, 19, 17, 1078, 21, 4790, 5775, 580, 558, 568, 8927, 5220, 4642, 2]
 
-// Module 14466 (RefreshEmptyState)
+// Module 14504 (RefreshEmptyState)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import shared from "shared" /* 4610 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8895 */;
+import shared from "shared" /* 4642 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8927 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import TextStyles_mod from "TextStyles" /* 5743 */;
+import TextStyles_mod from "TextStyles" /* 5775 */;
 
 require = fn;
 let closure_3 = ["lightSource", "darkSource"];
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 const Fonts = fn(1078).Fonts;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { alignItems: "center", justifyContent: "center", padding: 16 }, title: null, body: null, image: null, cta: null };
 let obj3 = {};
 let TextStyles = TextStyles_mod;

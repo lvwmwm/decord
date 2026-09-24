@@ -1,15 +1,15 @@
-// Module ID: 13974
-// Function ID: 13975
+// Module ID: 14010
+// Function ID: 14011
 // Name: ActiveChannelsStore
-// Dependencies: [2045, 4580, 2052, 11, 12, 504, 577, 2]
+// Dependencies: [2045, 4612, 2052, 11, 12, 504, 577, 2]
 
-// Module 13974 (ActiveChannelsStore)
+// Module 14010 (ActiveChannelsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 
 function truncateOldMessageData(channelId) {
   if (null != dependencyMap2[channelId]) {

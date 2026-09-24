@@ -1,18 +1,18 @@
-// Module ID: 18261
-// Function ID: 18262
+// Module ID: 18271
+// Function ID: 18272
 // Name: SelectInviteRolesActionSheet
-// Dependencies: [32, 19, 21, 4758, 558, 568, 11170, 7296, 4725, 12, 8876, 11968, 4754, 1119, 5341, 7396, 7302, 7449, 2]
+// Dependencies: [32, 19, 21, 4790, 558, 568, 11206, 7328, 4757, 12, 8908, 12004, 4786, 1119, 5373, 7428, 7334, 7481, 2]
 
-// Module 18261 (SelectInviteRolesActionSheet)
+// Module 18271 (SelectInviteRolesActionSheet)
 import _mod12 from "module_12" /* 12 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ list: { flex: 1 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

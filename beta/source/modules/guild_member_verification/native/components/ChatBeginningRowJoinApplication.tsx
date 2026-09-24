@@ -1,13 +1,13 @@
-// Module ID: 12795
-// Function ID: 12796
+// Module ID: 12831
+// Function ID: 12832
 // Name: ChatBeginningRowJoinApplication
-// Dependencies: [19, 17, 4399, 1376, 1078, 21, 4758, 580, 558, 568, 12796, 504, 12797, 5799, 4754, 1119, 4583, 5652, 5188, 2]
+// Dependencies: [19, 17, 4431, 1376, 1078, 21, 4790, 580, 558, 568, 12832, 504, 12833, 5831, 4786, 1119, 4615, 5684, 5220, 2]
 
-// Module 12795 (ChatBeginningRowJoinApplication)
+// Module 12831 (ChatBeginningRowJoinApplication)
 import nativeDefault from "native" /* 580 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4583 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4615 */;
 import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
@@ -17,7 +17,7 @@ const View = fn(17).View;
 const Permissions = fn(1078).Permissions;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { width: "100%", marginTop: 12, display: "flex", flexDirection: "column", alignSelf: "flex-start", padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: nativeDefault.radii.lg }, guildInfoRow: { display: "flex", flexDirection: "row", alignItems: "center", gap: 4 }, divider: null, formQuestion: null };
 let obj3 = { width: "100%", marginTop: 12, display: "flex", flexDirection: "column", alignSelf: "flex-start", padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: nativeDefault.radii.lg };
 obj2.divider = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: 1, border: "none", marginVertical: 16 };
@@ -164,9 +164,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           const obj2 = { style: closure_0.divider };
           const items = [React5(View, obj2), , ];
           const obj3 = { style: closure_0.formQuestion, variant: "text-xs/semibold", color: "text-muted", children: field_type.label };
-          items[1] = React5(tmp(4754).Text, obj3);
+          items[1] = React5(tmp(4786).Text, obj3);
           const obj4 = { variant: "text-md/medium", color: "text-strong", children: response };
-          items[2] = React5(tmp(4754).Text, obj4);
+          items[2] = React5(tmp(4786).Text, obj4);
           obj.children = items;
           const _HermesInternal = HermesInternal;
           return closure_2_8(View, obj, "form-response-" + index);

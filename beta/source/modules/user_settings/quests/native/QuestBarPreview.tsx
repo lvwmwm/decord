@@ -1,21 +1,21 @@
-// Module ID: 15437
-// Function ID: 15438
+// Module ID: 15447
+// Function ID: 15448
 // Name: QuestBarPreview
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 15355, 15438, 15439, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 15365, 15448, 15449, 2]
 
-// Module 15437 (QuestBarPreview)
+// Module 15447 (QuestBarPreview)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 15355 */;
-import QuestDockVisibilityContextDefault from "QuestDockVisibilityContext" /* 15438 */;
-import QuestDock from "QuestDock" /* 15439 */;
+import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 15365 */;
+import QuestDockVisibilityContextDefault from "QuestDockVisibilityContext" /* 15448 */;
+import QuestDock from "QuestDock" /* 15449 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
 const value = { isRendered: true, isVisibleToUser: true };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { overlay: { position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 1000, elevation: 1000, pointerEvents: "box-none" }, questDockContainer: null };
 const rect = { position: "absolute", bottom: 0, left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, zIndex: 1001, elevation: 1001 };
 obj2.questDockContainer = rect;
@@ -36,9 +36,9 @@ export const QuestBarPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((
         const obj2 = { children: null };
         const obj3 = { value, children: null };
         const obj4 = { quest };
-        obj3.children = jsx(tmp(15439).QuestDockQuestContent, { quest });
+        obj3.children = jsx(tmp(15449).QuestDockQuestContent, { quest });
         obj2.children = jsx(QuestDockVisibilityContextDefault.Provider, { value, children: null });
-        const tmp9 = jsx(tmp(15355).QuestDockExternalCoordinationContextProvider, { children: null });
+        const tmp9 = jsx(tmp(15365).QuestDockExternalCoordinationContextProvider, { children: null });
         cResult[0] = quest;
         cResult[1] = tmp9;
         let tmp5 = tmp9;

@@ -1,10 +1,10 @@
-// Module ID: 7935
-// Function ID: 7936
+// Module ID: 7967
+// Function ID: 7968
 // Name: appMessageEmbedTracking
-// Dependencies: [19, 1078, 1245, 558, 568, 7936, 7937, 2]
+// Dependencies: [19, 1078, 1245, 558, 568, 7968, 7969, 2]
 // Exports: trackAppEmbedClick, trackAppEmbedLinkSent, trackAppEmbedViewed
 
-// Module 7935 (appMessageEmbedTracking)
+// Module 7967 (appMessageEmbedTracking)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import noop from "module_19" /* 19 */;
 
@@ -29,11 +29,11 @@ export { trackAppEmbedViewed };
 export const useTrackAppEmbedViewed = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   const cResult = require("c").c(4);
   if (cResult[0] !== id) {
-    const result = tmp(7936).trackingConfigWithDefaults(id);
+    const result = tmp(7968).trackingConfigWithDefaults(id);
     cResult[0] = id;
     cResult[1] = result;
     let tmp4 = result;
-    const tmpResult = tmp(7936);
+    const tmpResult = tmp(7968);
   } else {
     tmp4 = cResult[1];
   }

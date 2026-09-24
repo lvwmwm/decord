@@ -1,13 +1,13 @@
-// Module ID: 6582
-// Function ID: 6583
+// Module ID: 6614
+// Function ID: 6615
 // Name: PencilIllocon
-// Dependencies: [21, 558, 568, 6583, 5802, 2]
+// Dependencies: [21, 558, 568, 6615, 5834, 2]
 
-// Module 6582 (PencilIllocon)
+// Module 6614 (PencilIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6583 from "module_6583" /* 6583 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6615 from "module_6615" /* 6615 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const PencilIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6583 };
+    const obj2 = { uri: _modDef6615 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const PencilIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6583 };
+  const obj2 = { uri: _modDef6615 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

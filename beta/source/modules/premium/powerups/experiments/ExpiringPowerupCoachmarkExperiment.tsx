@@ -1,9 +1,9 @@
-// Module ID: 12670
-// Function ID: 12671
+// Module ID: 12706
+// Function ID: 12707
 // Name: ExpiringPowerupCoachmarkExperiment
 // Dependencies: [1439, 558, 568, 2]
 
-// Module 12670 (ExpiringPowerupCoachmarkExperiment)
+// Module 12706 (ExpiringPowerupCoachmarkExperiment)
 import c from "c" /* 568 */;
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1439 */;
 

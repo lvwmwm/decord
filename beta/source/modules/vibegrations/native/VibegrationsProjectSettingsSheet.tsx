@@ -1,19 +1,19 @@
-// Module ID: 16957
-// Function ID: 16958
+// Module ID: 16967
+// Function ID: 16968
 // Name: VibegrationsProjectSettingsSheet
-// Dependencies: [5, 32, 19, 17, 2103, 9307, 1078, 21, 4758, 580, 558, 568, 504, 5277, 4725, 1119, 3682, 4754, 7396, 9781, 7297, 5903, 5819, 7449, 5276, 16958, 9308, 6846, 5822, 5188, 2]
+// Dependencies: [5, 32, 19, 17, 2103, 9339, 1078, 21, 4790, 580, 558, 568, 504, 5309, 4757, 1119, 3714, 4786, 7428, 9813, 7329, 5935, 5851, 7481, 5308, 16968, 9340, 6878, 5854, 5220, 2]
 // Exports: default
 
-// Module 16957 (VibegrationsProjectSettingsSheet)
+// Module 16967 (VibegrationsProjectSettingsSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5277 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4757 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5309 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2103 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9307 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9339 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
 
@@ -24,7 +24,7 @@ const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const VibegrationsProjectSettingsSheet = "VibegrationsProjectSettingsSheet";
 const VibegrationsCollaboratorRolesSheet = "VibegrationsCollaboratorRolesSheet";
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let obj2 = { content: { gap: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 }, roleLabel: null, roleListContent: null, roleListEmpty: null, roleListFooter: null };
 let obj3 = { gap: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 obj2.roleLabel = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
@@ -35,7 +35,7 @@ obj2.roleListEmpty = { alignItems: "center", paddingVertical: nativeDefault.spac
 let obj6 = { alignItems: "center", paddingVertical: nativeDefault.space.PX_24 };
 obj2.roleListFooter = { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_48, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let closure_14 = createStyles.createStyles(obj2);
-createStyles = fn(4758);
+createStyles = fn(4790);
 let closure_15 = createStyles.createStyles((backgroundColor) => {
   const obj = { circle: null };
   const size = { width: 12, height: 12, borderRadius: nativeDefault.radii.round, backgroundColor, flexShrink: 0 };
@@ -805,13 +805,13 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let obj2 = { count: first.size, max: guildId(onSave[13]).MAX_PROJECT_COLLABORATOR_ROLES };
   const obj3 = { startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: null, footer: null, header: null, children: null };
   const intl2 = guildId(onSave[15]).intl;
-  obj3.dismissAccessibilityLabel = intl2.string(require("module_3682")["9yHiDe"]);
-  let formatToPlainStringResult = intl.formatToPlainString(require("module_3682").eaqbJt, { count: first.size, max: guildId(onSave[13]).MAX_PROJECT_COLLABORATOR_ROLES });
+  obj3.dismissAccessibilityLabel = intl2.string(require("module_3714")["9yHiDe"]);
+  let formatToPlainStringResult = intl.formatToPlainString(require("module_3714").eaqbJt, { count: first.size, max: guildId(onSave[13]).MAX_PROJECT_COLLABORATOR_ROLES });
   const tmp12 = closure_11;
-  obj3.footer = closure_10(closure_6, { style: tmp.roleListFooter, children: closure_10(guildId(onSave[17]).Text, { variant: "text-xs/normal", color: "text-muted", children: intl.formatToPlainString(require("module_3682").eaqbJt, { count: first.size, max: guildId(onSave[13]).MAX_PROJECT_COLLABORATOR_ROLES }) }) });
+  obj3.footer = closure_10(closure_6, { style: tmp.roleListFooter, children: closure_10(guildId(onSave[17]).Text, { variant: "text-xs/normal", color: "text-muted", children: intl.formatToPlainString(require("module_3714").eaqbJt, { count: first.size, max: guildId(onSave[13]).MAX_PROJECT_COLLABORATOR_ROLES }) }) });
   const obj5 = { title: null, trailing: null };
   const intl3 = guildId(onSave[15]).intl;
-  obj5.title = intl3.string(require("module_3682").fqvhf0);
+  obj5.title = intl3.string(require("module_3714").fqvhf0);
   const obj6 = { label: null, onPress: null };
   const intl4 = guildId(onSave[15]).intl;
   obj6.label = intl4.string(guildId(onSave[15]).t.i4jeWR);
@@ -865,7 +865,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           if (tmp3) {
             const intl = guildId(onSave[15]).intl;
             const obj4 = { max: guildId(onSave[13]).MAX_PROJECT_COLLABORATOR_ROLES };
-            formatToPlainStringResult = intl.formatToPlainString(require("module_3682").VPUL05, obj4);
+            formatToPlainStringResult = intl.formatToPlainString(require("module_3714").VPUL05, obj4);
           }
           obj2.accessibilityHint = formatToPlainStringResult;
           obj2.onPress = function onPress(arg0) {

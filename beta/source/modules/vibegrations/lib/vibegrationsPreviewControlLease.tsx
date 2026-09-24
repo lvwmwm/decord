@@ -1,10 +1,10 @@
-// Module ID: 13182
-// Function ID: 13183
+// Module ID: 13218
+// Function ID: 13219
 // Name: vibegrationsPreviewControlLease
 // Dependencies: [19, 558, 568, 2]
 // Exports: acquireVibegrationsControlLease, beginVibegrationsControlOperation, endVibegrationsControlOperation, getVibegrationsControlActiveProjectIds, isVibegrationsControlActive, releaseVibegrationsControlLeases
 
-// Module 13182 (vibegrationsPreviewControlLease)
+// Module 13218 (vibegrationsPreviewControlLease)
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

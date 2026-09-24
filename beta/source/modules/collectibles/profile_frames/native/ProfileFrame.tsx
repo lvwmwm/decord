@@ -1,23 +1,23 @@
-// Module ID: 8495
-// Function ID: 8496
+// Module ID: 8527
+// Function ID: 8528
 // Name: ProfileFrame
-// Dependencies: [19, 17, 8477, 8496, 7455, 21, 4758, 558, 568, 8497, 5802, 8498, 8499, 2]
+// Dependencies: [19, 17, 8509, 8528, 7487, 21, 4790, 558, 568, 8529, 5834, 8530, 8531, 2]
 
-// Module 8495 (ProfileFrame)
+// Module 8527 (ProfileFrame)
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import FramePreviewOverrideFrameDefault from "FramePreviewOverrideFrame" /* 8499 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import FramePreviewOverrideFrameDefault from "FramePreviewOverrideFrame" /* 8531 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-let closure_5 = fn(8477).useFramePreviewOverrideStore;
-const ProfileFrameConstants = fn(8496);
+let closure_5 = fn(8509).useFramePreviewOverrideStore;
+const ProfileFrameConstants = fn(8528);
 ({ PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO: metroRequire, PROFILE_FRAME_Z_INDEX: closure_7 } = ProfileFrameConstants);
-const UserProfileThemeTypes = fn(7455).UserProfileThemeTypes;
+const UserProfileThemeTypes = fn(7487).UserProfileThemeTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: null, layer: null };
 let obj3 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -393,7 +393,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
                               class H {
                                 constructor(arg0) {
                                   obj = { skuId: frame.skuId, layer: frame, overflowTop, overflowBottom, overflowHorizontal, containerWidth, containerHeight };
-                                  return jsx(f46491, obj, frame.id);
+                                  return jsx(f46532, obj, frame.id);
                                 }
                               }
                               cResult[28] = cResult[19];
@@ -422,7 +422,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
                           class H {
                             constructor(arg0) {
                               obj = { skuId: frame.skuId, layer: frame, overflowTop, overflowBottom, overflowHorizontal, containerWidth, containerHeight };
-                              return jsx(f46491, obj, frame.id);
+                              return jsx(f46532, obj, frame.id);
                             }
                           }
                           cResult[15] = overflowBottom;
@@ -438,7 +438,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
                 class H {
                   constructor(arg0) {
                     obj = { skuId: frame.skuId, layer: frame, overflowTop, overflowBottom, overflowHorizontal, containerWidth, containerHeight };
-                    return jsx(f46491, obj, frame.id);
+                    return jsx(f46532, obj, frame.id);
                   }
                 }
                 cResult[20] = containerHeight;
@@ -474,7 +474,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
       class H {
         constructor(arg0) {
           obj = { skuId: frame.skuId, layer: frame, overflowTop, overflowBottom, overflowHorizontal, containerWidth, containerHeight };
-          return jsx(f46491, obj, frame.id);
+          return jsx(f46532, obj, frame.id);
         }
       }
       cResult[3] = profileThemeType;
@@ -547,7 +547,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
   }, items);
   if (0 !== memo.length) {
     if (0 !== containerWidth) {
-      ({ overflowTop: c6, overflowBottom: c7, overflowHorizontal: c8 } = containerWidth(8498)(frame, containerWidth));
+      ({ overflowTop: c6, overflowBottom: c7, overflowHorizontal: c8 } = containerWidth(8530)(frame, containerWidth));
       const obj = { style: tmp.container, children: memo.map((layer) => <closure_11 key={arg0.id} skuId={frame.skuId} layer={arg0} overflowTop={overflowTop} overflowBottom={overflowBottom} overflowHorizontal={overflowHorizontal} containerWidth={containerWidth} containerHeight={containerHeight} />) };
       return <frameOrder style={tmp.container}>{memo.map((layer) => <closure_11 key={arg0.id} skuId={frame.skuId} layer={arg0} overflowTop={overflowTop} overflowBottom={overflowBottom} overflowHorizontal={overflowHorizontal} containerWidth={containerWidth} containerHeight={containerHeight} />)}</frameOrder>;
     }

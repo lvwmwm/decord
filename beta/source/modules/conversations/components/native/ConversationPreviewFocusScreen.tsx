@@ -1,12 +1,12 @@
-// Module ID: 17334
-// Function ID: 17335
+// Module ID: 17344
+// Function ID: 17345
 // Name: ConversationPreviewFocusScreen
-// Dependencies: [19, 7841, 21, 558, 568, 1491, 504, 13558, 2]
+// Dependencies: [19, 7873, 21, 558, 568, 1491, 504, 13594, 2]
 
-// Module 17334 (ConversationPreviewFocusScreen)
-import ConversationFocusViewDefault from "ConversationFocusView" /* 13558 */;
+// Module 17344 (ConversationPreviewFocusScreen)
+import ConversationFocusViewDefault from "ConversationFocusView" /* 13594 */;
 import noop from "module_19" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7841 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7873 */;
 
 const require = fn;
 const jsx = fn(21).jsx;

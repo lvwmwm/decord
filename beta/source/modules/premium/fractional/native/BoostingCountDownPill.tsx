@@ -1,18 +1,18 @@
-// Module ID: 13784
-// Function ID: 13785
+// Module ID: 13820
+// Function ID: 13821
 // Name: BoostingCountDownPill
-// Dependencies: [17, 21, 4758, 580, 4725, 13785, 1984, 1119, 558, 568, 4754, 2]
+// Dependencies: [17, 21, 4790, 580, 4757, 13821, 1984, 1119, 558, 568, 4786, 2]
 
-// Module 13784 (BoostingCountDownPill)
+// Module 13820 (BoostingCountDownPill)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ function handlePress() {
   const obj = ActionSheetActionCreatorsDefault;
   const intl = util.intl;
   obj2.aboutText = intl.string(util.t["07lzz7"]);
-  obj.openLazy(asyncRequireImpl(13785, dependencyMap.paths), "NitroCreditEducationActionSheet", obj2);
+  obj.openLazy(asyncRequireImpl(13821, dependencyMap.paths), "NitroCreditEducationActionSheet", obj2);
 }
 ({ TouchableOpacity: c3, View: closure_4 } = get_ActivityIndicator);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
@@ -64,7 +64,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           if (cResult[9] !== prop) {
             const obj2 = { variant: "text-md/normal", color: "interactive-text-active", style: prop, children: tmp13 };
-            const tmp17 = hasOwnProperty(tmp(4754).Text, obj2);
+            const tmp17 = hasOwnProperty(tmp(4786).Text, obj2);
             cResult[9] = prop;
             cResult[10] = tmp17;
             let tmp15 = tmp17;
@@ -117,7 +117,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (!isInReverseTrial) {
       const obj6 = { style: tmp4.fpDurationPill, children: null };
       const obj7 = { variant: "text-sm/bold", style: tmp4.fpDurationText, children: fpDurationText.toUpperCase() };
-      obj6.children = hasOwnProperty(tmp(4754).Text, obj7);
+      obj6.children = hasOwnProperty(tmp(4786).Text, obj7);
       tmp8 = hasOwnProperty(React4, obj6);
     }
     cResult[3] = fpDurationText;

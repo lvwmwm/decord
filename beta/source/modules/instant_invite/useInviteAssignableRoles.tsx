@@ -1,13 +1,13 @@
-// Module ID: 18260
-// Function ID: 18261
+// Module ID: 18270
+// Function ID: 18271
 // Name: useInviteAssignableRoles
-// Dependencies: [19, 2104, 2103, 4399, 1376, 1078, 558, 568, 504, 4404, 2]
+// Dependencies: [19, 2104, 2103, 4431, 1376, 1078, 558, 568, 504, 4436, 2]
 
-// Module 18260 (useInviteAssignableRoles)
-import PermissionUtilsAll from "PermissionUtils" /* 4404 */;
+// Module 18270 (useInviteAssignableRoles)
+import PermissionUtilsAll from "PermissionUtils" /* 4436 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2103 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;

@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 78 (pointsDiffer)
-let closure_0 = { x: "Array", y: "Set" };
+let closure_0 = { x: "state", y: "toCharArray$esjava$1" };
 
 export default function pointsDiffer(arg0, arg1) {
   let point = arg0;

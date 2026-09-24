@@ -1,12 +1,12 @@
-// Module ID: 7318
-// Function ID: 7319
+// Module ID: 7350
+// Function ID: 7351
 // Name: fastest_list/FastestList
-// Dependencies: [109, 19, 17, 21, 558, 568, 7313, 7307, 7319, 7311, 2]
+// Dependencies: [109, 19, 17, 21, 558, 568, 7345, 7339, 7351, 7343, 2]
 
-// Module 7318 (fastest_list/FastestList)
-import FastestListItemTypeDefault from "FastestListItemType" /* 7311 */;
-import useFastestListPropsScrollReportingDefault from "useFastestListPropsScrollReporting" /* 7313 */;
-import FastList from "FastList" /* 7319 */;
+// Module 7350 (fastest_list/FastestList)
+import FastestListItemTypeDefault from "FastestListItemType" /* 7343 */;
+import useFastestListPropsScrollReportingDefault from "useFastestListPropsScrollReporting" /* 7345 */;
+import FastList from "FastList" /* 7351 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop_mod from "module_19" /* 19 */;
 
@@ -149,7 +149,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
     if (cResult[36] === tmp41) {
       let tmp48 = cResult[37];
     }
-    const tmp49 = tmp45(7307)(tmp48);
+    const tmp49 = tmp45(7339)(tmp48);
     if (cResult[38] !== tmp34) {
       function _e(arg0, arg1, arg2) {
         if (FastList.FastListItemTypes.ITEM === arg0) {
@@ -162,13 +162,13 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
             tmp11Result = tmp11(FastestListItemTypeDefault.ITEM, arg1, num3);
           }
           return tmp11Result;
-        } else if (tmp(7319).FastListItemTypes.SECTION === arg0) {
+        } else if (tmp(7351).FastListItemTypes.SECTION === arg0) {
           let tmp7Result;
           if (closure_0 != null) {
             tmp7Result = tmp7(FastestListItemTypeDefault.SECTION_HEADER, arg1, -1);
           }
           return tmp7Result;
-        } else if (tmp(7319).FastListItemTypes.SECTION_FOOTER === arg0) {
+        } else if (tmp(7351).FastListItemTypes.SECTION_FOOTER === arg0) {
           let tmp3Result;
           if (closure_0 != null) {
             tmp3Result = tmp3(FastestListItemTypeDefault.SECTION_FOOTER, arg1, -1);
@@ -189,9 +189,9 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
             let tmp54 = cResult[46];
           }
           if ("animatedCallbacks" === tmp26.scrollReporting) {
-            let AnimatedFastList = tmp(7319).AnimatedFastList;
+            let AnimatedFastList = tmp(7351).AnimatedFastList;
           } else {
-            AnimatedFastList = tmp45(7319);
+            AnimatedFastList = tmp45(7351);
           }
           if (cResult[47] === tmp41) {
             if (cResult[50] !== str) {
@@ -468,13 +468,13 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
         tmp11Result = tmp11(FastestListItemTypeDefault.ITEM, arg1, num3);
       }
       return tmp11Result;
-    } else if (tmp(7319).FastListItemTypes.SECTION === arg0) {
+    } else if (tmp(7351).FastListItemTypes.SECTION === arg0) {
       let tmp7Result;
       if (keyExtractor != null) {
         tmp7Result = tmp7(FastestListItemTypeDefault.SECTION_HEADER, arg1, -1);
       }
       return tmp7Result;
-    } else if (tmp(7319).FastListItemTypes.SECTION_FOOTER === arg0) {
+    } else if (tmp(7351).FastListItemTypes.SECTION_FOOTER === arg0) {
       let tmp3Result;
       if (keyExtractor != null) {
         tmp3Result = tmp3(FastestListItemTypeDefault.SECTION_FOOTER, arg1, -1);

@@ -1,19 +1,19 @@
-// Module ID: 18390
-// Function ID: 18391
+// Module ID: 18400
+// Function ID: 18401
 // Name: TTITestAction
-// Dependencies: [5, 17698, 4674, 5777, 502, 2045, 4584, 2067, 1078, 3, 4623, 13018, 16350, 577, 1362, 1367, 1245, 4616, 7703, 16882, 10196, 4769, 6832, 8654, 4770, 13040, 15839, 1191, 2]
+// Dependencies: [5, 17708, 4706, 5809, 502, 2045, 4616, 2067, 1078, 3, 4655, 13054, 16360, 577, 1362, 1367, 1245, 4648, 7735, 16892, 10235, 4801, 6864, 8686, 4802, 13076, 15849, 1191, 2]
 
-// Module 18390 (TTITestAction)
+// Module 18400 (TTITestAction)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import ProcessUtilsDefault from "ProcessUtils" /* 1362 */;
-import NativeTTIManagerModuleDefault from "NativeTTIManagerModule" /* 4623 */;
-import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 16350 */;
+import NativeTTIManagerModuleDefault from "NativeTTIManagerModule" /* 4655 */;
+import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 16360 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ExperimentStore from "ExperimentStore" /* 4674 */;
+import ExperimentStore from "ExperimentStore" /* 4706 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4584 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4616 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
 const require = globalThis.__r;
@@ -110,7 +110,7 @@ let closure_18 = async function _captureNavigationTTI(arg0, value) {
   return value;
 };
 function resetNavigationToDMs() {
-  return closure_0(4616).navigateToRootTab({ screen: "guilds", guildId, resetRoot: true, forceNavigate: true, drawerOpen: false });
+  return closure_0(4648).navigateToRootTab({ screen: "guilds", guildId, resetRoot: true, forceNavigate: true, drawerOpen: false });
 }
 let closure_20 = async function _navigateToDMs(arg0, value) {
   await new Promise((arg0) => closure_1_7(arg0));
@@ -784,13 +784,13 @@ let closure_25 = async function _apiLogin(arg0, value) {
         const items = ["LOGIN_FAILURE", "PASSWORDLESS_FAILURE", "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION", "LOGIN_ACCOUNT_DISABLED", "LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED"];
         function _loop(iter) {
           obj = password(577);
-          const f154059 = () => {
+          const f154154 = () => {
             const error = new Error("Unable to login " + login + ". Login failed with action '" + obj + "'");
             iter(error);
           };
           function handler(arg0) {
             obj.unsubscribe(closure_1, handler);
-            return f154059(arg0);
+            return f154154(arg0);
           }
           const subscription = obj.subscribe(iter, handler);
         }
@@ -800,7 +800,7 @@ let closure_25 = async function _apiLogin(arg0, value) {
           continue;
         }
         closure_1_26(password(577), "LOGIN_SUCCESS", (token) => closure_0(token.token));
-        password(6832).login({ login, password });
+        password(6864).login({ login, password });
       });
       c6 = 1;
       c7 = 1;
@@ -818,12 +818,12 @@ function subscribeOnce(subscribe, arg1, arg2) {
   closure_2 = arg2;
   function handler(arg0) {
     obj.unsubscribe(closure_1, handler);
-    return f154059(arg0);
+    return f154154(arg0);
   }
   return subscribe.subscribe("LOGIN_SUCCESS", handler);
 }
-const applicationReady = fn(17698).applicationReady;
-fn(5777).addPostConnectionCallback;
+const applicationReady = fn(17708).applicationReady;
+fn(5809).addPostConnectionCallback;
 const Constants = fn(1078);
 ({ ME: closure_12, Routes: map1 } = Constants);
 const logger = new LoggerDefault("TTITestAction");
@@ -854,34 +854,34 @@ let obj = {
     NativeTTIManagerModuleDefault.logToDevice(json);
   },
   () => {
-    const result = closure_0(13018).resetComponentProfiler();
+    const result = closure_0(13054).resetComponentProfiler();
     const merged = Object.assign(undefined);
     const json = JSON.stringify({ type: "response", status: "success", message: "reset-component-profiler" });
-    obj = closure_0(13018);
+    obj = closure_0(13054);
     const obj2 = { type: "response", status: "success", message: "reset-component-profiler" };
     NativeTTIManagerModuleDefault.logToDevice(json);
   },
   () => {
-    const result = closure_0(13018).pauseComponentProfiler();
+    const result = closure_0(13054).pauseComponentProfiler();
     const merged = Object.assign(undefined);
     const json = JSON.stringify({ type: "response", status: "success", message: "pause-component-profiler" });
-    obj = closure_0(13018);
+    obj = closure_0(13054);
     const obj2 = { type: "response", status: "success", message: "pause-component-profiler" };
     NativeTTIManagerModuleDefault.logToDevice(json);
   },
   () => {
-    const result = closure_0(13018).resumeComponentProfiler();
+    const result = closure_0(13054).resumeComponentProfiler();
     const merged = Object.assign(undefined);
     const json = JSON.stringify({ type: "response", status: "success", message: "resume-component-profiler" });
-    obj = closure_0(13018);
+    obj = closure_0(13054);
     const obj2 = { type: "response", status: "success", message: "resume-component-profiler" };
     NativeTTIManagerModuleDefault.logToDevice(json);
   },
   () => {
-    obj = { stats: closure_0(13018).dumpStats() };
+    obj = { stats: closure_0(13054).dumpStats() };
     const merged = Object.assign(obj);
     const json = JSON.stringify({ type: "response", status: "success", message: "dump-component-profiler-stats" });
-    const obj2 = closure_0(13018);
+    const obj2 = closure_0(13054);
     const obj3 = { type: "response", status: "success", message: "dump-component-profiler-stats" };
     NativeTTIManagerModuleDefault.logToDevice(json);
   },
@@ -971,7 +971,7 @@ let closure_3 = asyncGeneratorStep(async (arg0, value) => {
           const obj4 = { ClientInfoUtils: null, ComponentProfiler: null, Dispatcher: null, ExperimentStore: null, NativeJankStats: null, ProcessUtils: null, AnalyticsUtils: null, TTITestAction: null };
           const obj5 = { getConstants: closure_0(1367).getConstants };
           obj4.ClientInfoUtils = obj5;
-          const obj6 = { resetComponentProfiler: closure_0(13018).resetComponentProfiler, resumeComponentProfiler: closure_0(13018).resumeComponentProfiler, pauseComponentProfiler: closure_0(13018).pauseComponentProfiler, dumpStats: closure_0(13018).dumpStats };
+          const obj6 = { resetComponentProfiler: closure_0(13054).resetComponentProfiler, resumeComponentProfiler: closure_0(13054).resumeComponentProfiler, pauseComponentProfiler: closure_0(13054).pauseComponentProfiler, dumpStats: closure_0(13054).dumpStats };
           obj4.ComponentProfiler = obj6;
           obj4.Dispatcher = DispatcherDefault;
           obj4.ExperimentStore = ExperimentStore;

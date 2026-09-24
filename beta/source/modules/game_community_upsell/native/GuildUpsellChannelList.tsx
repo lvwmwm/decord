@@ -1,30 +1,30 @@
-// Module ID: 16604
-// Function ID: 16605
+// Module ID: 16614
+// Function ID: 16615
 // Name: GuildUpsellChannelList
-// Dependencies: [19, 17, 13984, 6834, 16605, 1078, 21, 4758, 580, 1119, 5907, 558, 568, 13987, 504, 16606, 1245, 12855, 4754, 5824, 5188, 15356, 16607, 2]
+// Dependencies: [19, 17, 14020, 6866, 16615, 1078, 21, 4790, 580, 1119, 5939, 558, 568, 14023, 504, 16616, 1245, 12891, 4786, 5856, 5220, 15366, 16617, 2]
 
-// Module 16604 (GuildUpsellChannelList)
+// Module 16614 (GuildUpsellChannelList)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import Card from "Card" /* 5824 */;
-import MobileGameCommunitiesActionCreatorsAll from "MobileGameCommunitiesActionCreators" /* 16606 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import Card from "Card" /* 5856 */;
+import MobileGameCommunitiesActionCreatorsAll from "MobileGameCommunitiesActionCreators" /* 16616 */;
 import noop from "module_19" /* 19 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13984 */;
-import ConsentStore from "ConsentStore" /* 6834 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14020 */;
+import ConsentStore from "ConsentStore" /* 6866 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-let closure_9 = fn(16605).MAX_DISPLAYED_UPSELL_GUILDS;
+let closure_9 = fn(16615).MAX_DISPLAYED_UPSELL_GUILDS;
 const Constants = fn(1078);
 ({ AnalyticEvents: c10, Consents: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.PANEL_BG }, header: null, headerTitle: null, listContainer: null, subheaderWrapper: null, createDescription: null, templateScroll: null, templateRow: null, templateCard: null, templateIconWrapper: null, templateTitle: null, buttonGroup: null, descriptionSpacing: null, joinSection: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.PANEL_BG };
 obj2.header = { height: 56, flexDirection: "row", alignItems: "center", marginHorizontal: nativeDefault.space.PX_16 };
@@ -51,13 +51,13 @@ const obj12 = { marginBottom: nativeDefault.space.PX_8 };
 obj2.joinSection = { gap: nativeDefault.space.PX_4 };
 let closure_14 = createStyles.createStyles(obj2);
 const obj13 = { gap: nativeDefault.space.PX_4 };
-let items = [{ id: "hangout", title: fn(1119).t.ScXySs, description: fn(1119).t.DSCqxM, Icon: fn(5907).BumpingFistsSpotIllustration }, , ];
-const obj14 = { id: "hangout", title: fn(1119).t.ScXySs, description: fn(1119).t.DSCqxM, Icon: fn(5907).BumpingFistsSpotIllustration };
-items[1] = { id: "gaming", title: fn(1119).t["F+MTAZ"], description: fn(1119).t.srNlJw, Icon: fn(5907).ChatControllersSpotIllustration };
-const obj15 = { id: "gaming", title: fn(1119).t["F+MTAZ"], description: fn(1119).t.srNlJw, Icon: fn(5907).ChatControllersSpotIllustration };
-items[2] = { id: "hobbies", title: fn(1119).t["0Ka6B5"], description: fn(1119).t["5oGAp/"], Icon: fn(5907).MiniaturesSpotIllustration };
+let items = [{ id: "hangout", title: fn(1119).t.ScXySs, description: fn(1119).t.DSCqxM, Icon: fn(5939).BumpingFistsSpotIllustration }, , ];
+const obj14 = { id: "hangout", title: fn(1119).t.ScXySs, description: fn(1119).t.DSCqxM, Icon: fn(5939).BumpingFistsSpotIllustration };
+items[1] = { id: "gaming", title: fn(1119).t["F+MTAZ"], description: fn(1119).t.srNlJw, Icon: fn(5939).ChatControllersSpotIllustration };
+const obj15 = { id: "gaming", title: fn(1119).t["F+MTAZ"], description: fn(1119).t.srNlJw, Icon: fn(5939).ChatControllersSpotIllustration };
+items[2] = { id: "hobbies", title: fn(1119).t["0Ka6B5"], description: fn(1119).t["5oGAp/"], Icon: fn(5939).MiniaturesSpotIllustration };
 const ReactCompilerGating = fn(558);
-const obj16 = { id: "hobbies", title: fn(1119).t["0Ka6B5"], description: fn(1119).t["5oGAp/"], Icon: fn(5907).MiniaturesSpotIllustration };
+const obj16 = { id: "hobbies", title: fn(1119).t["0Ka6B5"], description: fn(1119).t["5oGAp/"], Icon: fn(5939).MiniaturesSpotIllustration };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/game_community_upsell/native/GuildUpsellChannelList.tsx");
 
@@ -72,7 +72,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     first = cResult[0];
   }
-  const GameCommunityAddServerEntryExperiment = tmp(13987).GameCommunityAddServerEntryExperiment;
+  const GameCommunityAddServerEntryExperiment = tmp(14023).GameCommunityAddServerEntryExperiment;
   const cardAction = GameCommunityAddServerEntryExperiment.useConfig(first).cardAction;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     items = [ConsentStore, LocalAppDetectionStore];
@@ -173,7 +173,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function w() {
-      onPress(12855).openCreateGuildModal();
+      onPress(12891).openCreateGuildModal();
     };
     cResult[8] = fn2;
     let tmp16 = fn2;
@@ -228,7 +228,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return someResult;
       }
     }
-    const tmp19 = closure_12(tmp(4754).Text, { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: null });
+    const tmp19 = closure_12(tmp(4786).Text, { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: null });
     cResult[10] = tmp19;
     let obj3 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: null };
   } else {
@@ -288,7 +288,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     let obj4 = { variant: "text-sm/medium", color: "text-subtle", style: tmp4.createDescription, children: tmp20 };
-    const tmp23 = closure_12(tmp(4754).Text, obj4);
+    const tmp23 = closure_12(tmp(4786).Text, obj4);
     class I {
       constructor() {
         hasConsentedResult = closure_1_8.hasConsented(closure_1_11.PERSONALIZATION);
@@ -447,11 +447,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj9 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: null };
       const intl5 = tmp5(1119).intl;
       obj9.children = intl5.string(tmp5(1119).t.rJRote);
-      const items2 = [tmp4(tmp5(4754).Text, obj9), ];
+      const items2 = [tmp4(tmp5(4786).Text, obj9), ];
       const obj10 = { variant: "text-sm/medium", color: "text-subtle", style: tmp3.descriptionSpacing, children: null };
       const intl6 = tmp5(1119).intl;
       obj10.children = intl6.string(tmp5(1119).t.pJT2DK);
-      items2[1] = tmp4(tmp5(4754).Text, obj10);
+      items2[1] = tmp4(tmp5(4786).Text, obj10);
       obj8.children = items2;
       tmpResult = tmp(tmp2, obj8);
     }

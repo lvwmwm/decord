@@ -1,25 +1,25 @@
-// Module ID: 12579
-// Function ID: 12580
+// Module ID: 12615
+// Function ID: 12616
 // Name: ChatInputRightActions
-// Dependencies: [32, 19, 17, 12092, 21, 4758, 580, 558, 568, 4462, 4471, 1614, 12314, 12394, 12393, 12392, 4497, 2]
+// Dependencies: [32, 19, 17, 12128, 21, 4790, 580, 558, 568, 4494, 4503, 1614, 12350, 12430, 12429, 12428, 4529, 2]
 
-// Module 12579 (ChatInputRightActions)
+// Module 12615 (ChatInputRightActions)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import native from "native" /* 4471 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
-import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 12392 */;
-import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 12393 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12394 */;
+import native from "native" /* 4503 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
+import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 12428 */;
+import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 12429 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12430 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const enterDelayMs = fn(12092).CHAT_INPUT_FLOATING_BOUNCE_ENTER_DELAY_MS;
+const enterDelayMs = fn(12128).CHAT_INPUT_FLOATING_BOUNCE_ENTER_DELAY_MS;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles(() => {
   const obj = { container: { flexDirection: "row", alignItems: "center", gap: nativeDefault.modules.mobile.CHAT_INPUT_ACTION_BUTTON_GAP }, leftSlot: { alignItems: "center", justifyContent: "center" } };
   return obj;
@@ -31,14 +31,14 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   ({ showKeyboardIcon, shouldShowGiftButton, onPressAction } = channel);
   ({ onPressExpression, keyboardType } = channel);
   const obj = channel(568);
-  const token = channel(4462).useToken(onPressAction(580).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-  const obj2 = channel(4462);
+  const token = channel(4494).useToken(onPressAction(580).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const obj2 = channel(4494);
   const tmp4 = onPressAction;
-  const sum = token + 2 * channel(4462).useToken(onPressAction(580).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  const sum = token + 2 * channel(4494).useToken(onPressAction(580).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
   dependencyMap = sum;
   const tmp7 = closure_9();
   const _slicedToArray = tmp7;
-  const obj3 = channel(4462);
+  const obj3 = channel(4494);
   const obj4 = noop;
   [tmp9, noop] = noop.useState(true);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -105,7 +105,7 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
               }
             }
             const obj7 = { active: tmp19, showKeyboardIcon, onPress: onPressExpression };
-            const tmp22 = closure_7(tmp4(12314), obj7);
+            const tmp22 = closure_7(tmp4(12350), obj7);
             cResult[12] = onPressExpression;
             cResult[13] = showKeyboardIcon;
             cResult[14] = tmp19;
@@ -120,7 +120,7 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
             tmp18 = tmp13;
           }
           const obj8 = { item: tmp18, renderItem: tmp14 };
-          tmp17Result = closure_7(tmp(4471).TransitionItem, obj8);
+          tmp17Result = closure_7(tmp(4503).TransitionItem, obj8);
         }
         cResult[8] = tmp14;
         cResult[9] = shouldShowGiftButton;
@@ -133,7 +133,7 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   class U {
     constructor(arg0, arg1, arg2, arg3) {
       obj = { state: arg2, cleanup: arg3, channel, onPress: onPressAction, wrapperStyle: closure_3.leftSlot, slotWidth: closure_2 };
-      return jsx(f60778, obj, channel);
+      return jsx(f60829, obj, channel);
     }
   }
   cResult[3] = sum;
@@ -147,10 +147,10 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   const onPressAction = channel.onPressAction;
   noop = undefined;
   ({ keyboardType, showKeyboardIcon, shouldShowGiftButton, onPressExpression } = channel);
-  const token = channel(4462).useToken(onPressAction(580).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-  const obj = channel(4462);
+  const token = channel(4494).useToken(onPressAction(580).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const obj = channel(4494);
   const tmp3 = onPressAction;
-  const sum = token + 2 * channel(4462).useToken(onPressAction(580).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  const sum = token + 2 * channel(4494).useToken(onPressAction(580).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
   dependencyMap = sum;
   const tmp6 = closure_9();
   const _slicedToArray = tmp6;
@@ -174,17 +174,17 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
       tmp15 = memo;
     }
     const obj4 = { item: tmp15, renderItem: tmp10 };
-    tmp14Result = closure_7(tmp(4471).TransitionItem, obj4);
+    tmp14Result = closure_7(tmp(4503).TransitionItem, obj4);
   }
   const items1 = [tmp14Result, ];
   const obj5 = { active: null, showKeyboardIcon: null, onPress: null };
-  const obj2 = channel(4462);
+  const obj2 = channel(4494);
   const tmp11 = closure_8;
   const tmp12 = View;
   obj5.active = keyboardType === channel(1614).KeyboardTypes.EXPRESSION;
   obj5.showKeyboardIcon = showKeyboardIcon;
   obj5.onPress = onPressExpression;
-  items1[1] = closure_7(tmp3(12314), obj5);
+  items1[1] = closure_7(tmp3(12350), obj5);
   obj3.children = items1;
   return tmp11(tmp12, obj3);
 }));
@@ -238,15 +238,15 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const obj3 = { style: tmp10 };
             const merged = Object.assign(tmp11);
             obj3.children = tmp13;
-            const tmp21 = React5(tmp7(4497).View, obj3);
+            const tmp21 = React5(tmp7(4529).View, obj3);
             cResult[15] = tmp10;
             cResult[16] = tmp11;
             cResult[17] = tmp13;
             cResult[18] = tmp21;
             tmp16 = tmp21;
           }
-          const obj4 = { canStartThreads: false, channel, onPress, styleButton: "Set", shouldShowThread: "getInfoByName" };
-          const tmp15 = React5(tmp7(12392), obj4);
+          const obj4 = { canStartThreads: false, channel, onPress, styleButton: "Set", shouldShowThread: 3007 };
+          const tmp15 = React5(tmp7(12428), obj4);
           cResult[12] = channel;
           cResult[13] = onPress;
           cResult[14] = tmp15;
@@ -278,7 +278,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj2.style = items;
   const tmp = useChatInputFloatingBounceDefault({ visible: state !== native.TransitionStates.YEETED, initiallyVisible: state !== native.TransitionStates.ENTERED, enterDelayMs, onExitComplete: cleanup });
   const merged = Object.assign(ChatInputActionButtonTransitionItem.interactivityProps(isInteractive));
-  obj2.children = React5(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "Set", shouldShowThread: "getInfoByName" });
+  obj2.children = React5(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "Set", shouldShowThread: 3007 });
   return React5(ReanimatedRexportDefault.View, obj2);
 });
 const size = fn(2);

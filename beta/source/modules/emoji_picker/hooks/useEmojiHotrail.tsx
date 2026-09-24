@@ -1,15 +1,15 @@
-// Module ID: 10445
-// Function ID: 10446
+// Module ID: 10484
+// Function ID: 10485
 // Name: useEmojiHotrail
-// Dependencies: [19, 5682, 558, 568, 2]
+// Dependencies: [19, 5714, 558, 568, 2]
 // Exports: getEmojiHotrail
 
-// Module 10445 (useEmojiHotrail)
+// Module 10484 (useEmojiHotrail)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const EMOJI_ROW_SIZE = fn(5682).EMOJI_ROW_SIZE;
+const EMOJI_ROW_SIZE = fn(5714).EMOJI_ROW_SIZE;
 const ReactCompilerGating = fn(558);
 function getEmojiHotrail(arg0) {
   ({ topEmojis, newlyAddedEmojis, rowSize } = arg0);

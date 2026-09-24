@@ -1,42 +1,42 @@
-// Module ID: 16845
-// Function ID: 16846
+// Module ID: 16855
+// Function ID: 16856
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 2045, 5107, 5106, 1078, 11162, 4751, 21, 4758, 580, 558, 568, 9850, 1119, 16846, 4458, 1482, 4612, 8121, 5343, 4577, 4471, 16847, 7224, 11818, 11826, 5188, 4961, 11279, 1374, 7923, 9419, 1259, 5346, 7703, 9421, 1616, 1368, 8112, 5839, 5848, 11282, 2]
+// Dependencies: [32, 5, 19, 17, 2045, 5139, 5138, 1078, 11198, 4783, 21, 4790, 580, 558, 568, 9882, 1119, 16856, 4490, 1482, 4644, 8153, 5375, 4609, 4503, 16857, 7256, 11854, 11862, 5220, 4993, 11315, 1374, 7955, 9451, 1259, 5378, 7735, 9453, 1616, 1368, 8144, 5871, 5880, 11318, 2]
 
-// Module 16845 (ICYMIShareModal)
+// Module 16855 (ICYMIShareModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
-import native from "native" /* 4471 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4577 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4612 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5343 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7224 */;
-import HeaderShared from "HeaderShared" /* 8112 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 8121 */;
-import ShareEventUtils from "ShareEventUtils" /* 9850 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 11818 */;
-import _modDef16847 from "module_16847" /* 16847 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
+import native from "native" /* 4503 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4609 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4644 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5375 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7256 */;
+import HeaderShared from "HeaderShared" /* 8144 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 8153 */;
+import ShareEventUtils from "ShareEventUtils" /* 9882 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 11854 */;
+import _modDef16857 from "module_16857" /* 16857 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5106 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5138 */;
 
 const require = globalThis.__r;
 
-const ShareChatInputDefault = tmp9(11826);
+const ShareChatInputDefault = tmp9(11862);
 require = fn;
 const View = fn(17).View;
-const DraftType = fn(5107).DraftType;
+const DraftType = fn(5139).DraftType;
 const AbortCodes = fn(1078).AbortCodes;
-const UserRowModes = fn(11162).UserRowModes;
-const MessageSendLocation = fn(4751).MessageSendLocation;
+const UserRowModes = fn(11198).UserRowModes;
+const MessageSendLocation = fn(4783).MessageSendLocation;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { headerLeftContainer: { paddingLeft: nativeDefault.space.PX_16 }, headerRightContainer: null, preview: null, base: null, contentContainer: null, footer: null };
 let obj3 = { paddingLeft: nativeDefault.space.PX_16 };
 obj2.headerRightContainer = { paddingRight: nativeDefault.space.PX_16 };
@@ -179,12 +179,12 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol2 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
       const obj6 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
-      const obj7 = { dark: tmp(4577).OverlayOpacity.LEVEL_7, light: tmp(4577).OverlayOpacity.LEVEL_8 };
+      const obj7 = { dark: tmp(4609).OverlayOpacity.LEVEL_7, light: tmp(4609).OverlayOpacity.LEVEL_8 };
       obj6.mixAmount = obj7;
-      const tmp19 = __initData2(tmp9(5343), obj6);
+      const tmp19 = __initData2(tmp9(5375), obj6);
       cResult[10] = tmp19;
       let tmp16 = tmp19;
-      const tmp9Result = tmp9(5343);
+      const tmp9Result = tmp9(5375);
     } else {
       tmp16 = cResult[10];
     }
@@ -232,15 +232,15 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const items1 = [tmp16, tmp27];
           obj11.children = items1;
           obj10.children = state(View, obj11);
-          const tmp35 = __initData2(tmp9(16847), obj10);
+          const tmp35 = __initData2(tmp9(16857), obj10);
           cResult[22] = tmp4.base;
           cResult[23] = tmp27;
           cResult[24] = tmp35;
           tmp30 = tmp35;
-          const tmp9Result2 = tmp9(16847);
+          const tmp9Result2 = tmp9(16857);
         }
         const obj12 = { gradient: tmp10, children: tmp23 };
-        const tmp29 = __initData2(tmp(4471).ThemeContextProvider, obj12);
+        const tmp29 = __initData2(tmp(4503).ThemeContextProvider, obj12);
         cResult[19] = tmp10;
         cResult[20] = tmp23;
         cResult[21] = tmp29;
@@ -295,7 +295,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj5 = { style: tmp.base, children: null };
   const obj6 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
   const obj7 = { dark: null, light: null };
-  const tmp6 = _modDef16847;
+  const tmp6 = _modDef16857;
   obj7.dark = client_themes_ClientThemesUtils.OverlayOpacity.LEVEL_7;
   obj7.light = client_themes_ClientThemesUtils.OverlayOpacity.LEVEL_8;
   obj6.mixAmount = obj7;
@@ -400,7 +400,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           }
                         }
                         const obj6 = { variant: "primary", size: "md", text: tmp12, disabled: tmp18, onPress: tmp22, loading: isSending };
-                        const tmp25 = __initData2(tmp(5188).Button, obj6);
+                        const tmp25 = __initData2(tmp(5220).Button, obj6);
                         cResult[20] = isSending;
                         cResult[21] = tmp12;
                         cResult[22] = tmp18;
@@ -476,7 +476,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     obj5.onPress = tmp17;
     obj5.loading = isSending;
-    items2[1] = __initData2(tmp7(5188).Button, obj5);
+    items2[1] = __initData2(tmp7(5220).Button, obj5);
     obj3.children = items2;
     tmp14Result = state(View, obj3);
   }
@@ -1000,7 +1000,7 @@ export const GameShareModal = ReactCompilerGating.isReactCompilerEnabled() ? ((c
               const obj5 = { channel: entry, content: "", entry, whenReady: false, doNotNotifyOnError: true, location: constants2.ICYMI };
               c5 = 2;
               c6 = 1;
-              const obj6 = { value: entry(16846).sendMessageWithEmbed(obj5), done: false };
+              const obj6 = { value: entry(16856).sendMessageWithEmbed(obj5), done: false };
               return obj6;
             }
           } else if (1 === tmp7) {
@@ -1100,7 +1100,7 @@ export const GameShareModal = ReactCompilerGating.isReactCompilerEnabled() ? ((c
             const obj6 = { channel: entry, content: "", entry, whenReady: false, doNotNotifyOnError: true, location: constants2.ICYMI };
             c5 = 2;
             c6 = 1;
-            const obj7 = { value: entry(16846).sendMessageWithEmbed(obj6), done: false };
+            const obj7 = { value: entry(16856).sendMessageWithEmbed(obj6), done: false };
             return obj7;
           }
         } else if (1 === tmp7) {

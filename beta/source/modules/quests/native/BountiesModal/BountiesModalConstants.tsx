@@ -1,11 +1,11 @@
-// Module ID: 15273
-// Function ID: 15274
+// Module ID: 15283
+// Function ID: 15284
 // Name: BountiesModalConstants
-// Dependencies: [11626, 2]
+// Dependencies: [11662, 2]
 // Exports: getBountyVideoEndAppStoreSheetHeight, getBountyVideoEndPeekTargetScale
 
-// Module 15273 (BountiesModalConstants)
-import AppStoreOverlayBody from "AppStoreOverlayBody" /* 11626 */;
+// Module 15283 (BountiesModalConstants)
+import AppStoreOverlayBody from "AppStoreOverlayBody" /* 11662 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalConstants.tsx");

@@ -1,20 +1,20 @@
-// Module ID: 7465
-// Function ID: 7466
+// Module ID: 7497
+// Function ID: 7498
 // Name: PrivateChannelSortStore
-// Dependencies: [7466, 7467, 2049, 2045, 2067, 4773, 4939, 1376, 11, 4395, 4352, 7468, 504, 577, 2]
+// Dependencies: [7498, 7499, 2049, 2045, 2067, 4805, 4971, 1376, 11, 4427, 4384, 7500, 504, 577, 2]
 
-// Module 7465 (PrivateChannelSortStore)
+// Module 7497 (PrivateChannelSortStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import _modDef4352 from "module_4352" /* 4352 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7468 */;
-import MessageRequestStore from "MessageRequestStore" /* 7466 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7467 */;
+import _modDef4384 from "module_4384" /* 4384 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7500 */;
+import MessageRequestStore from "MessageRequestStore" /* 7498 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7499 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import ReadStateStore from "ReadStateStore" /* 4773 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
+import ReadStateStore from "ReadStateStore" /* 4805 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -31,8 +31,8 @@ function makeSortedChannel(channel, id) {
     const isMessageRequestTimestamp = channel.isMessageRequestTimestamp;
     let tmp2 = id;
     if (null != isMessageRequestTimestamp) {
-      const obj = _modDef4352(isMessageRequestTimestamp);
-      const valueOfResult = _modDef4352(isMessageRequestTimestamp).valueOf();
+      const obj = _modDef4384(isMessageRequestTimestamp);
+      const valueOfResult = _modDef4384(isMessageRequestTimestamp).valueOf();
       let fromTimestampResult = SnowflakeUtilsDefault.fromTimestamp(valueOfResult);
       if (obj3.compare(id, fromTimestampResult) > 0) {
         fromTimestampResult = id;
@@ -66,7 +66,7 @@ function handleCacheLoaded() {
 }
 const isPrivate = fn(2049).isPrivate;
 const constants = { DEFAULT: "DEFAULT", FAVORITE: "FAVORITE" };
-const secondaryIndexMap = new fn(4395).SecondaryIndexMap(function indexBy(value) {
+const secondaryIndexMap = new fn(4427).SecondaryIndexMap(function indexBy(value) {
   if (value.isRequest) {
     let items = [];
   } else {
@@ -79,7 +79,7 @@ const secondaryIndexMap = new fn(4395).SecondaryIndexMap(function indexBy(value)
 let values = [];
 let values2 = [];
 let closure_17 = [];
-const f40626 = () => {
+const f40667 = () => {
 
 };
 const Store = initializeDefault.Store;
@@ -92,7 +92,7 @@ prototype["initialize"] = function initialize() {
   this.syncWith(items, handleConnectionOpen);
 };
 prototype["getPrivateChannelIds"] = function getPrivateChannelIds() {
-  if (typeof f40626 === "function") {
+  if (typeof f40667 === "function") {
     values = secondaryIndexMap.values(constants.FAVORITE);
     values2 = secondaryIndexMap.values(constants.DEFAULT);
     let tmp4 = values === values;

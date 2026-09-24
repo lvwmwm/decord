@@ -1,24 +1,24 @@
-// Module ID: 12063
-// Function ID: 12064
+// Module ID: 12099
+// Function ID: 12100
 // Name: SoundmojiActionSheet
-// Dependencies: [19, 17, 21, 4758, 580, 1368, 558, 568, 5225, 7377, 12064, 4754, 1119, 7397, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 1368, 558, 568, 5257, 7409, 12100, 4786, 1119, 7429, 2]
 
-// Module 12063 (SoundmojiActionSheet)
+// Module 12099 (SoundmojiActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import EmojiDefault from "Emoji" /* 7377 */;
-import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12064 */;
+import EmojiDefault from "Emoji" /* 7409 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12100 */;
 import noop from "module_19" /* 19 */;
 
 const util = BottomSheet(1119);
-const Text_Text = BottomSheet(4754);
-const getSoundmojiASTFromString = BottomSheet(5225);
-const Sheet_BottomSheet = BottomSheet(7397);
+const Text_Text = BottomSheet(4786);
+const getSoundmojiASTFromString = BottomSheet(5257);
+const Sheet_BottomSheet = BottomSheet(7429);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_16 }, soundmojiContainer: { flexDirection: "row", alignItems: "center" }, emoji: null, textContainer: null };
 const PlatformUtils = fn(1368);
 let num;

@@ -1,17 +1,17 @@
-// Module ID: 10244
-// Function ID: 10245
+// Module ID: 10283
+// Function ID: 10284
 // Name: UserSettingsVoiceOverlay
-// Dependencies: [19, 10234, 21, 558, 568, 565, 1119, 10233, 7446, 10245, 2]
+// Dependencies: [19, 10273, 21, 558, 568, 565, 1119, 10272, 7478, 10284, 2]
 
-// Module 10244 (UserSettingsVoiceOverlay)
+// Module 10283 (UserSettingsVoiceOverlay)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import TableSwitchRow from "TableSwitchRow" /* 7446 */;
-import UserSettingsVoice from "UserSettingsVoice" /* 10233 */;
-import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 10245 */;
+import TableSwitchRow from "TableSwitchRow" /* 7478 */;
+import UserSettingsVoice from "UserSettingsVoice" /* 10272 */;
+import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 10284 */;
 import noop from "module_19" /* 19 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 10234 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 10273 */;
 
 require = fn;
 const jsx = fn(21).jsx;
@@ -58,8 +58,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[5] !== stateFromStores) {
     const obj2 = { title: tmp8, hasIcons: false, children: null };
     const obj3 = { label: tmp10, subLabel: tmp11, value: stateFromStores, onValueChange: MobileVoiceOverlayActionCreatorsDefault.setEnabled };
-    obj2.children = jsx(tmp(7446).TableSwitchRow, { label: tmp10, subLabel: tmp11, value: stateFromStores, onValueChange: MobileVoiceOverlayActionCreatorsDefault.setEnabled });
-    const tmp17 = jsx(tmp(10233).UserSettingsTableRowGroup, { title: tmp8, hasIcons: false, children: null });
+    obj2.children = jsx(tmp(7478).TableSwitchRow, { label: tmp10, subLabel: tmp11, value: stateFromStores, onValueChange: MobileVoiceOverlayActionCreatorsDefault.setEnabled });
+    const tmp17 = jsx(tmp(10272).UserSettingsTableRowGroup, { title: tmp8, hasIcons: false, children: null });
     cResult[5] = stateFromStores;
     cResult[6] = tmp17;
     let tmp14 = tmp17;

@@ -1,13 +1,13 @@
-// Module ID: 6502
-// Function ID: 6503
+// Module ID: 6534
+// Function ID: 6535
 // Name: NitroDiamondBadgeSmallBadge
-// Dependencies: [21, 558, 568, 6503, 5802, 2]
+// Dependencies: [21, 558, 568, 6535, 5834, 2]
 
-// Module 6502 (NitroDiamondBadgeSmallBadge)
+// Module 6534 (NitroDiamondBadgeSmallBadge)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6503 from "module_6503" /* 6503 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6535 from "module_6535" /* 6535 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const NitroDiamondBadgeSmallBadge = ReactCompilerGating.isReactCompilerEn
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6503 };
+    const obj2 = { uri: _modDef6535 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const NitroDiamondBadgeSmallBadge = ReactCompilerGating.isReactCompilerEn
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6503 };
+  const obj2 = { uri: _modDef6535 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

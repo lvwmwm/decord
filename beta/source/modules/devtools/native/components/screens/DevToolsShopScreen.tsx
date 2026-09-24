@@ -1,22 +1,22 @@
-// Module ID: 16020
-// Function ID: 16021
+// Module ID: 16030
+// Function ID: 16031
 // Name: DevToolsShopScreen
-// Dependencies: [19, 17, 4757, 21, 4758, 580, 558, 568, 7224, 504, 15885, 2031, 15993, 5822, 7447, 7446, 5186, 5903, 2]
+// Dependencies: [19, 17, 4789, 21, 4790, 580, 558, 568, 7256, 504, 15895, 2031, 16003, 5854, 7479, 7478, 5218, 5935, 2]
 
-// Module 16020 (DevToolsShopScreen)
+// Module 16030 (DevToolsShopScreen)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import TableRow from "TableRow" /* 5822 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7224 */;
-import TableSwitchRow from "TableSwitchRow" /* 7446 */;
-import FormSwitch from "FormSwitch" /* 7447 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15885 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import TableRow from "TableRow" /* 5854 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7256 */;
+import TableSwitchRow from "TableSwitchRow" /* 7478 */;
+import FormSwitch from "FormSwitch" /* 7479 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15895 */;
 import noop from "module_19" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4757 */;
+import DevSettingsStore from "DevSettingsStore" /* 4789 */;
 
 const require = globalThis.__r;
 
@@ -24,7 +24,7 @@ require = fn;
 const ScrollView = fn(17).ScrollView;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { wrap: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -143,8 +143,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     tmp30[0] = stateFromStores;
     tmp30[1] = tmp27;
-    obj4.trailing = hasOwnProperty(tmp(7447).FormSwitch, tmp30);
-    const tmp31 = hasOwnProperty(tmp(5822).TableRow, obj4);
+    obj4.trailing = hasOwnProperty(tmp(7479).FormSwitch, tmp30);
+    const tmp31 = hasOwnProperty(tmp(5854).TableRow, obj4);
     cResult[12] = stateFromStores;
     cResult[13] = tmp31;
     let tmp28 = tmp31;
@@ -173,8 +173,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     tmp35[0] = stateFromStores1;
     tmp35[1] = tmp32;
-    obj5.trailing = hasOwnProperty(tmp(7447).FormSwitch, tmp35);
-    const tmp36 = hasOwnProperty(tmp(5822).TableRow, obj5);
+    obj5.trailing = hasOwnProperty(tmp(7479).FormSwitch, tmp35);
+    const tmp36 = hasOwnProperty(tmp(5854).TableRow, obj5);
     cResult[15] = stateFromStores1;
     cResult[16] = tmp36;
     let tmp33 = tmp36;
@@ -200,8 +200,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       tmp43[0] = stateFromStores2;
       tmp43[1] = tmp40;
-      obj6.trailing = hasOwnProperty(tmp(7447).FormSwitch, tmp43);
-      const tmp44 = hasOwnProperty(tmp(5822).TableRow, obj6);
+      obj6.trailing = hasOwnProperty(tmp(7479).FormSwitch, tmp43);
+      const tmp44 = hasOwnProperty(tmp(5854).TableRow, obj6);
       cResult[21] = stateFromStores2;
       cResult[22] = tmp44;
       let tmp41 = tmp44;
@@ -245,8 +245,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       tmp47[0] = stateFromStores3;
       tmp47[1] = tmp45;
-      obj7.trailing = hasOwnProperty(tmp(7447).FormSwitch, tmp47);
-      const tmp48 = hasOwnProperty(tmp(5822).TableRow, obj7);
+      obj7.trailing = hasOwnProperty(tmp(7479).FormSwitch, tmp47);
+      const tmp48 = hasOwnProperty(tmp(5854).TableRow, obj7);
       cResult[24] = stateFromStores3;
       cResult[25] = tmp48;
     } else {
@@ -269,8 +269,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj9 = { title: "Shop Toggles", hasIcons: false, children: null };
     const items4 = [tmp28, tmp33, tmp37, tmp41, tmp46];
     obj9.children = items4;
-    obj8.children = timestampProducer(tmp(5903).TableRowGroup, obj9);
-    const tmp52 = hasOwnProperty(tmp(5186).Stack, obj8);
+    obj8.children = timestampProducer(tmp(5935).TableRowGroup, obj9);
+    const tmp52 = hasOwnProperty(tmp(5218).Stack, obj8);
     cResult[26] = tmp28;
     cResult[27] = tmp33;
     cResult[28] = tmp37;

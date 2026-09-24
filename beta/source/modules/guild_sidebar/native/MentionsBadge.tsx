@@ -1,9 +1,9 @@
-// Module ID: 16570
-// Function ID: 16571
+// Module ID: 16580
+// Function ID: 16581
 // Name: MentionsBadge
 // Dependencies: [19, 21, 558, 568, 1181, 2]
 
-// Module 16570 (MentionsBadge)
+// Module 16580 (MentionsBadge)
 import c from "c" /* 568 */;
 import native from "native" /* 1181 */;
 import noop from "module_19" /* 19 */;

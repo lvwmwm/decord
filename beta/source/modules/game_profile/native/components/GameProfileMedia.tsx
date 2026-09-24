@@ -1,17 +1,17 @@
-// Module ID: 8990
-// Function ID: 8991
+// Module ID: 9022
+// Function ID: 9023
 // Name: GameProfileMedia
-// Dependencies: [32, 19, 17, 4750, 1089, 21, 580, 8991, 4758, 558, 568, 8944, 8535, 8583, 1119, 8992, 8981, 504, 8995, 8996, 2]
+// Dependencies: [32, 19, 17, 4782, 1089, 21, 580, 9023, 4790, 558, 568, 8976, 8567, 8615, 1119, 9024, 9013, 504, 9027, 9028, 2]
 
-// Module 8990 (GameProfileMedia)
+// Module 9022 (GameProfileMedia)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import openMediaModal from "openMediaModal" /* 8535 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8944 */;
-import GameProfileMediaSources from "GameProfileMediaSources" /* 8991 */;
+import openMediaModal from "openMediaModal" /* 8567 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8976 */;
+import GameProfileMediaSources from "GameProfileMediaSources" /* 9023 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 function keyExtractor(originalUrl, arg1) {
@@ -33,12 +33,12 @@ const jsxProd = fn(21);
 ({ jsx: c10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
 const PX_12 = nativeDefault.space.PX_12;
 const PX_16 = nativeDefault.space.PX_16;
-let closure_15 = 2 * (fn(8991).MEDIA_ITEM_MAX_WIDTH + PX_12);
-const createStyles = fn(4758);
+let closure_15 = 2 * (fn(9023).MEDIA_ITEM_MAX_WIDTH + PX_12);
+const createStyles = fn(4790);
 let obj = { container: { gap: nativeDefault.space.PX_12, marginHorizontal: -nativeDefault.space.PX_16 }, list: { overflow: "visible" }, separator: { width: PX_12 }, listPadding: { width: PX_16 }, mediaItem: null, mediaImage: null, mediaVideo: null, reducedMotionPoster: null, playIconWrapper: null };
 let obj3 = { gap: nativeDefault.space.PX_12, marginHorizontal: -nativeDefault.space.PX_16 };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_HIGH);
-obj.mediaItem = { maxWidth: fn(8991).MEDIA_ITEM_MAX_WIDTH, maxHeight: fn(8991).MEDIA_ITEM_MAX_HEIGHT, borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
+obj.mediaItem = { maxWidth: fn(9023).MEDIA_ITEM_MAX_WIDTH, maxHeight: fn(9023).MEDIA_ITEM_MAX_HEIGHT, borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
 obj.mediaImage = { width: "100%", height: "100%", resizeMode: "cover" };
 let size = { width: "100%", height: "100%", backgroundColor: nativeDefault.colors.BLACK };
 obj.mediaVideo = size;
@@ -286,7 +286,7 @@ let closure_22 = noop.memo((sources) => {
   return closure_10(closure_7, obj2);
 });
 ReactCompilerGating = fn(558);
-let obj4 = { maxWidth: fn(8991).MEDIA_ITEM_MAX_WIDTH, maxHeight: fn(8991).MEDIA_ITEM_MAX_HEIGHT, borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
+let obj4 = { maxWidth: fn(9023).MEDIA_ITEM_MAX_WIDTH, maxHeight: fn(9023).MEDIA_ITEM_MAX_HEIGHT, borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
 size = fn(2);
 let result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileMedia.tsx");
 
@@ -295,7 +295,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ game, trackAction } = arg0);
   closure_16();
   let obj = trackAction(568);
-  const obscured = trackAction(8981).useObscuredSurface().obscured;
+  const obscured = trackAction(9013).useObscuredSurface().obscured;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [mediaViewerSources];
     const fn = function s() {
@@ -308,7 +308,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     [tmp5, tmp6] = cResult;
   }
-  const obj2 = trackAction(8981);
+  const obj2 = trackAction(9013);
   const stateFromStores = trackAction(504).useStateFromStores(tmp5, tmp6);
   const tmpResult = trackAction(504);
   [tmp10, dependencyMap] = noop.useState(0);
@@ -318,10 +318,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   noop = _slicedToArray(noop.useState(false), 2)[1];
   const ref = noop.useRef(null);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const carouselPreviewPixelSize = tmp(8991).getCarouselPreviewPixelSize();
+    const carouselPreviewPixelSize = tmp(9023).getCarouselPreviewPixelSize();
     cResult[2] = carouselPreviewPixelSize;
     let tmp14 = carouselPreviewPixelSize;
-    const tmpResult2 = tmp(8991);
+    const tmpResult2 = tmp(9023);
   } else {
     tmp14 = cResult[2];
   }
@@ -359,8 +359,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  const bound = Math.max(0, Math.min(tmp(8991).MEDIA_ITEM_MAX_WIDTH, tmp10 - PX_12 - 2 * PX_16));
-  const bound1 = Math.min(tmp(8991).MEDIA_ITEM_MAX_HEIGHT, bound / tmp(8991).MEDIA_ITEM_ASPECT_RATIO);
+  const bound = Math.max(0, Math.min(tmp(9023).MEDIA_ITEM_MAX_WIDTH, tmp10 - PX_12 - 2 * PX_16));
+  const bound1 = Math.min(tmp(9023).MEDIA_ITEM_MAX_HEIGHT, bound / tmp(9023).MEDIA_ITEM_ASPECT_RATIO);
   if (cResult[6] !== arr2) {
     class F {
       constructor(arg0) {

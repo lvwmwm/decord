@@ -1,17 +1,17 @@
-// Module ID: 18170
-// Function ID: 18171
+// Module ID: 18180
+// Function ID: 18181
 // Name: CreatorHighlightSection
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4754, 1181, 10477, 1119, 7222, 18171, 4455, 18143, 5802, 15499, 5189, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4786, 1181, 10513, 1119, 7254, 18181, 4487, 18153, 5834, 15509, 5221, 2]
 
-// Module 18170 (CreatorHighlightSection)
+// Module 18180 (CreatorHighlightSection)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import LinkingDefault from "Linking" /* 4455 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import _modDef10477 from "module_10477" /* 10477 */;
-import EmojiIconDefault from "EmojiIcon" /* 15499 */;
+import LinkingDefault from "Linking" /* 4487 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import _modDef10513 from "module_10513" /* 10513 */;
+import EmojiIconDefault from "EmojiIcon" /* 15509 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -19,7 +19,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, FlatList: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { horizontalContainer: { flexDirection: "row" }, serverSubscriberCount: { marginTop: 8 }, subscriberCountContainer: { alignItems: "center", backgroundColor: nativeDefault.unsafe_rawColors.BRAND_530, paddingEnd: 8, borderRadius: nativeDefault.radii.xs, overflow: "hidden" }, subscriberCount: null, subscriberCountIcon: null, cardContainer: null, cardHeaderContainer: null, guildIcon: null, ownerQuote: null, ownerUsername: null, premiumEmojisTitle: null, viewServerButtonContainer: null, viewServerButton: null, emojiSectionContainer: null, emojiContainer: null, emojiListItem: null, emoji: null };
 let obj3 = { alignItems: "center", backgroundColor: nativeDefault.unsafe_rawColors.BRAND_530, paddingEnd: 8, borderRadius: nativeDefault.radii.xs, overflow: "hidden" };
 obj2.subscriberCount = { backgroundColor: nativeDefault.unsafe_rawColors.BRAND_630, paddingHorizontal: 8, paddingVertical: 4 };
@@ -55,7 +55,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp6 = cResult[6];
         }
         if (cResult[7] !== tmp4.subscriberCountIcon) {
-          const obj2 = { size: tmp(1181).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.WHITE, style: tmp4.subscriberCountIcon, source: _modDef10477 };
+          const obj2 = { size: tmp(1181).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.WHITE, style: tmp4.subscriberCountIcon, source: _modDef10513 };
           const tmp12 = timestampProducer(tmp(1181).Icon, obj2);
           cResult[7] = tmp4.subscriberCountIcon;
           cResult[8] = tmp12;
@@ -68,7 +68,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj3 = { variant: "text-sm/normal", color: "text-overlay-light", children: null };
           const intl = tmp(1119).intl;
           obj3.children = intl.string(tmp(1119).t["3NNXPW"]);
-          const tmp16 = timestampProducer(tmp(4754).Text, obj3);
+          const tmp16 = timestampProducer(tmp(4786).Text, obj3);
           cResult[9] = tmp16;
           let tmp14 = tmp16;
         } else {
@@ -93,7 +93,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp17 = tmp20;
       }
       const obj5 = { style: tmp4.subscriberCount, variant: "text-sm/medium", color: "text-overlay-light", children: subscriberCount };
-      const tmp8 = timestampProducer(tmp(4754).Text, obj5);
+      const tmp8 = timestampProducer(tmp(4786).Text, obj5);
       cResult[4] = tmp4.subscriberCount;
       cResult[5] = subscriberCount;
       cResult[6] = tmp8;
@@ -116,7 +116,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ horizontalContainer: arr[0], subscriberCountContainer: arr[1] } = tmp);
   items[2] = style;
   obj.style = items;
-  const items1 = [timestampProducer(Text_Text.Text, { style: tmp.subscriberCount, variant: "text-sm/medium", color: "text-overlay-light", children: subscriberCount }), timestampProducer(native.Icon, { size: native.Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.WHITE, style: tmp.subscriberCountIcon, source: _modDef10477 }), ];
+  const items1 = [timestampProducer(Text_Text.Text, { style: tmp.subscriberCount, variant: "text-sm/medium", color: "text-overlay-light", children: subscriberCount }), timestampProducer(native.Icon, { size: native.Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.WHITE, style: tmp.subscriberCountIcon, source: _modDef10513 }), ];
   const obj4 = { variant: "text-sm/normal", color: "text-overlay-light", children: null };
   const intl = util.intl;
   obj4.children = intl.string(util.t["3NNXPW"]);
@@ -134,7 +134,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
   const typeConsolidationEyebrow = require("useTypeConsolidationTextTransform").useTypeConsolidationEyebrow("CreatorHighlightSection", "text-xs/semibold");
   const guild_id = highlightedCreatorGuild.guild_id;
   ({ quote, quote_attribution, quote_attribution_title } = highlightedCreatorGuild);
-  const tmp7 = guild_id(18171)(guild_id, 3, 60);
+  const tmp7 = guild_id(18181)(guild_id, 3, 60);
   dependencyMap = tmp7;
   const hasAllImperativeDetails = tmp7.hasAllImperativeDetails;
   if (cResult[0] === tmp7.details) {
@@ -144,7 +144,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
     if (tmp8) {
       const _Symbol2 = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp67 = closure_6(tmp6(18143), {});
+        const tmp67 = closure_6(tmp6(18153), {});
         cResult[3] = tmp67;
         let tmp65 = tmp67;
       } else {
@@ -176,7 +176,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
         }
         if (cResult[11] !== guildName) {
           const obj5 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", lineClamp: 1, lineBreakMode: "tail", children: guildName };
-          const tmp17 = closure_6(tmp(4754).Text, obj5);
+          const tmp17 = closure_6(tmp(4786).Text, obj5);
           cResult[11] = guildName;
           cResult[12] = tmp17;
           let tmp15 = tmp17;
@@ -274,7 +274,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
                                             tmp56 = tmp59;
                                           }
                                           const obj8 = { pillStyle: viewServerButton, text: tmp51, onPress: tmp9, shrink: true };
-                                          const tmp55 = closure_6(tmp(5189).BaseTextButton, obj8);
+                                          const tmp55 = closure_6(tmp(5221).BaseTextButton, obj8);
                                           cResult[45] = tmp9;
                                           cResult[46] = tmp4.viewServerButton;
                                           cResult[47] = tmp55;
@@ -300,7 +300,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
                           obj10.variant = typeConsolidationEyebrow.variant;
                           const intl3 = tmp(1119).intl;
                           obj10.children = intl3.string(tmp(1119).t.wg53L8);
-                          const items2 = [closure_6(tmp(4754).Text, obj10), ];
+                          const items2 = [closure_6(tmp(4786).Text, obj10), ];
                           const obj11 = { style: null, children: null };
                           const items3 = [, ];
                           ({ horizontalContainer: arr5[0], emojiContainer: arr5[1] } = tmp4);
@@ -320,7 +320,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
                             const obj12 = { style: tmp4.emojiListItem, variant: "text-sm/semibold", color: "text-default", children: null };
                             const _HermesInternal = HermesInternal;
                             obj12.children = "+" + notShownEmojiCount;
-                            tmp47Result = tmp47(tmp(4754).Text, obj12);
+                            tmp47Result = tmp47(tmp(4786).Text, obj12);
                           }
                           items4[1] = tmp47Result;
                           obj11.children = items4;
@@ -343,7 +343,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
                         tmp42 = tmp45Result;
                       }
                       const obj13 = { style: tmp34, variant: "text-sm/normal", color: "text-default", lineClamp: 1, lineBreakMode: "tail", children: tmp35 };
-                      const tmp41 = closure_6(tmp(4754).Text, obj13);
+                      const tmp41 = closure_6(tmp(4786).Text, obj13);
                       cResult[30] = tmp4.ownerUsername;
                       cResult[31] = tmp35;
                       cResult[32] = tmp41;
@@ -364,7 +364,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
                     tmp35 = formatResult;
                   }
                   const obj15 = { style: tmp4.ownerQuote, variant: "text-md/normal", color: "text-default", children: quote };
-                  const tmp33 = closure_6(tmp(4754).Text, obj15);
+                  const tmp33 = closure_6(tmp(4786).Text, obj15);
                   cResult[24] = quote;
                   cResult[25] = tmp4.ownerQuote;
                   cResult[26] = tmp33;
@@ -403,7 +403,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
         tmp18 = tmp20;
       }
       const obj19 = { style: tmp4.guildIcon, source: tmp11 };
-      const tmp14 = closure_6(tmp6(5802), obj19);
+      const tmp14 = closure_6(tmp6(5834), obj19);
       cResult[8] = tmp4.guildIcon;
       cResult[9] = tmp11;
       cResult[10] = tmp14;
@@ -432,12 +432,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
   const guild_id = highlightedCreatorGuild.guild_id;
   let quote_attribution_title = highlightedCreatorGuild.quote_attribution_title;
   ({ quote, quote_attribution } = highlightedCreatorGuild);
-  const tmp6 = guild_id(18171)(guild_id, 3, 60);
+  const tmp6 = guild_id(18181)(guild_id, 3, 60);
   dependencyMap = tmp6;
   const hasAllImperativeDetails = tmp6.hasAllImperativeDetails;
   let items = [hasAllImperativeDetails, tmp6];
   if (tmp6.isLoading) {
-    const obj2 = { style: tmp.cardContainer, children: closure_6(tmp5(18143), {}) };
+    const obj2 = { style: tmp.cardContainer, children: closure_6(tmp5(18153), {}) };
     return closure_6(closure_4, obj2);
   } else if (hasAllImperativeDetails) {
     const details = tmp6.details;
@@ -448,10 +448,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
     const obj5 = { style: tmp.guildIcon, source: null };
     const obj6 = { uri: guildAvatarUrl };
     obj5.source = obj6;
-    const items1 = [closure_6(tmp5(5802), obj5), ];
+    const items1 = [closure_6(tmp5(5834), obj5), ];
     const obj7 = { style: tmp.cardHeaderContainer, children: null };
     const obj8 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", lineClamp: 1, lineBreakMode: "tail", children: guildName };
-    const items2 = [closure_6(tmp2(4754).Text, obj8), ];
+    const items2 = [closure_6(tmp2(4786).Text, obj8), ];
     let tmp11Result = null != subscriberCount;
     if (tmp11Result) {
       const obj9 = { subscriberCount, style: tmp.serverSubscriberCount };
@@ -463,7 +463,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
     obj4.children = items1;
     const items3 = [closure_7(closure_4, obj4), , , , ];
     const obj10 = { style: tmp.ownerQuote, variant: "text-md/normal", color: "text-default", children: quote };
-    items3[1] = closure_6(tmp2(4754).Text, obj10);
+    items3[1] = closure_6(tmp2(4786).Text, obj10);
     const obj11 = { style: tmp.ownerUsername, variant: "text-sm/normal", color: "text-default", lineClamp: 1, lineBreakMode: "tail", children: null };
     const intl = tmp2(1119).intl;
     const obj12 = { attributionName: quote_attribution, attributionTitle: null };
@@ -473,7 +473,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
     }
     obj12.attributionTitle = quote_attribution_title;
     obj11.children = intl.format(tmp2(1119).t.m0b6Kj, obj12);
-    items3[2] = closure_6(tmp2(4754).Text, obj11);
+    items3[2] = closure_6(tmp2(4786).Text, obj11);
     let tmp9Result = null != emojisToShow;
     if (tmp9Result) {
       tmp9Result = emojisToShow.length > 0;
@@ -486,7 +486,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
       obj14.variant = typeConsolidationEyebrow.variant;
       const intl3 = tmp2(1119).intl;
       obj14.children = intl3.string(tmp2(1119).t.wg53L8);
-      const items5 = [tmp11(tmp2(4754).Text, obj14), ];
+      const items5 = [tmp11(tmp2(4786).Text, obj14), ];
       const obj15 = { style: null, children: null };
       const items6 = [, ];
       ({ horizontalContainer: arr7[0], emojiContainer: arr7[1] } = tmp);
@@ -506,7 +506,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
         const obj16 = { style: tmp.emojiListItem, variant: "text-sm/semibold", color: "text-default", children: null };
         const _HermesInternal = HermesInternal;
         obj16.children = "+" + notShownEmojiCount;
-        tmp11Result2 = tmp11(tmp2(4754).Text, obj16);
+        tmp11Result2 = tmp11(tmp2(4786).Text, obj16);
       }
       items7[1] = tmp11Result2;
       obj15.children = items7;
@@ -520,7 +520,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
     const intl4 = tmp2(1119).intl;
     obj18.text = intl4.string(tmp2(1119).t.mQ2IGa);
     obj18.onPress = tmp7;
-    obj17.children = closure_6(tmp2(5189).BaseTextButton, obj18);
+    obj17.children = closure_6(tmp2(5221).BaseTextButton, obj18);
     items3[4] = closure_6(closure_4, obj17);
     obj3.children = items3;
     return closure_7(closure_4, obj3);

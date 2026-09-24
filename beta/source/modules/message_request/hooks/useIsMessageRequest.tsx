@@ -1,11 +1,11 @@
-// Module ID: 10359
-// Function ID: 10360
+// Module ID: 10398
+// Function ID: 10399
 // Name: useIsMessageRequest
-// Dependencies: [7466, 7467, 558, 568, 504, 2]
+// Dependencies: [7498, 7499, 558, 568, 504, 2]
 
-// Module 10359 (useIsMessageRequest)
-import MessageRequestStore from "MessageRequestStore" /* 7466 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7467 */;
+// Module 10398 (useIsMessageRequest)
+import MessageRequestStore from "MessageRequestStore" /* 7498 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7499 */;
 
 const require = globalThis.__r;
 

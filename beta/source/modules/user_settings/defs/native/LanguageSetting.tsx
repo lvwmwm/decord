@@ -1,15 +1,15 @@
-// Module ID: 15682
-// Function ID: 15683
+// Module ID: 15692
+// Function ID: 15693
 // Name: LanguageSetting
-// Dependencies: [2113, 1078, 558, 568, 504, 1119, 11594, 15683, 15685, 2]
+// Dependencies: [2113, 1078, 558, 568, 504, 1119, 11630, 15693, 15695, 2]
 
-// Module 15682 (LanguageSetting)
+// Module 15692 (LanguageSetting)
 import util from "util" /* 1119 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = stateFromStores(568).c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -62,7 +62,7 @@ const route = SettingBuilders.createRoute({
     return intl.string(util.t.IHMsPn);
   },
   parent: null,
-  IconComponent: fn(15683).LanguageIcon,
+  IconComponent: fn(15693).LanguageIcon,
   useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = stateFromStores(568).c(4);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {

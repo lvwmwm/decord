@@ -1,10 +1,10 @@
-// Module ID: 17982
-// Function ID: 17983
+// Module ID: 17992
+// Function ID: 17993
 // Name: AuditLogUtils
-// Dependencies: [5678, 7347, 4945, 2050, 5721, 17981, 2045, 2103, 4409, 1376, 17980, 1078, 2052, 11993, 7348, 2051, 3, 4787, 1119, 8668, 11, 17983, 1090, 1389, 4911, 1982, 4603, 14, 1096, 10057, 17947, 4442, 4352, 2]
+// Dependencies: [5710, 7379, 4977, 2050, 5753, 17991, 2045, 2103, 4441, 1376, 17990, 1078, 2052, 12029, 7380, 2051, 3, 4819, 1119, 8700, 11, 17993, 1090, 1389, 4943, 1982, 4635, 14, 1096, 10096, 17957, 4474, 4384, 2]
 // Exports: checkChangesToRender, findChangeByKey, getChangeStrings, getChangeTitle, getSimpleAuditLogChangeDetails, getSimpleAuditLogTitleContextFromChange, getSimpleAuditLogTitleFromChange, getStringForAddedChannelFlag, getStringForPermission, getStringForRemovedChannelFlag, shouldNotRenderChangeDetail, transformLogs
 
-// Module 17982 (AuditLogUtils)
+// Module 17992 (AuditLogUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import IntegerDefault from "Integer" /* 14 */;
@@ -12,24 +12,24 @@ import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
 import util from "util" /* 1119 */;
 import FlagUtilsAll from "FlagUtils" /* 1389 */;
-import _modDef4352 from "module_4352" /* 4352 */;
-import DateUtils from "DateUtils" /* 4442 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import TimeUtils from "TimeUtils" /* 4787 */;
-import useChannelName from "useChannelName" /* 4911 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10057 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 17947 */;
-import GuildFeedItemTypes from "GuildFeedItemTypes" /* 17983 */;
-import EmojiStore from "EmojiStore" /* 5678 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7347 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4945 */;
+import _modDef4384 from "module_4384" /* 4384 */;
+import DateUtils from "DateUtils" /* 4474 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import TimeUtils from "TimeUtils" /* 4819 */;
+import useChannelName from "useChannelName" /* 4943 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10096 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 17957 */;
+import GuildFeedItemTypes from "GuildFeedItemTypes" /* 17993 */;
+import EmojiStore from "EmojiStore" /* 5710 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7379 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4977 */;
 import StageInstanceStore from "StageInstanceStore" /* 2050 */;
-import StickersStore from "StickersStore" /* 5721 */;
+import StickersStore from "StickersStore" /* 5753 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildRoleStore from "GuildRoleStore" /* 2103 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17980 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17990 */;
 
 require = fn;
 function getPermissionChanges(oldValue, newValue) {
@@ -258,18 +258,18 @@ function transformAvailableForumTagChange(newValue) {
   }
   return newValue;
 }
-const AuditLogChange = fn(17981).AuditLogChange;
+const AuditLogChange = fn(17991).AuditLogChange;
 const Constants = fn(1078);
 ({ AuditLogActions: closure_15, AuditLogChangeKeys } = Constants);
 const AuditLogTargetTypes = Constants.AuditLogTargetTypes;
 ({ MFALevels: closure_18, VerificationLevels: closure_19, UserNotificationSettings: closure_20, GuildExplicitContentFilterTypes: closure_21, ChannelTypes: closure_22, Permissions: closure_23, NOOP_NULL: closure_24, VideoQualityMode: closure_25, ApplicationCommandPermissionTypes: closure_26, AuditLogSubtargetTypes: closure_27, SystemChannelFlags: closure_28, AuditLogActionTypes: closure_29 } = Constants);
 const ChannelFlags = fn(2052).ChannelFlags;
-const AutomodTriggerType = fn(11993).AutomodTriggerType;
-const GuildOnboardingMode = fn(7348).GuildOnboardingMode;
+const AutomodTriggerType = fn(12029).AutomodTriggerType;
+const GuildOnboardingMode = fn(7380).GuildOnboardingMode;
 const GuildScheduledEventsConstants = fn(2051);
 ({ GuildScheduledEventEntityTypes: closure_33, GuildScheduledEventStatus: closure_34, GuildScheduledEventPrivacyLevel: closure_35 } = GuildScheduledEventsConstants);
 let closure_36 = new LoggerDefault("AuditLogUtils");
-let items = [fn(4787).TimeUnits.DAYS, fn(4787).TimeUnits.HOURS, fn(4787).TimeUnits.MINUTES, fn(4787).TimeUnits.SECONDS];
+let items = [fn(4819).TimeUnits.DAYS, fn(4819).TimeUnits.HOURS, fn(4819).TimeUnits.MINUTES, fn(4819).TimeUnits.SECONDS];
 let closure_38 = { [AuditLogTargetTypes.CHANNEL]: { [AuditLogChangeKeys.ID]: true, [AuditLogChangeKeys.PERMISSION_OVERWRITES]: true }, [AuditLogTargetTypes.CHANNEL_OVERWRITE]: { [AuditLogChangeKeys.TYPE]: true, [AuditLogChangeKeys.ID]: true, [AuditLogChangeKeys.PERMISSION_OVERWRITES]: true }, [AuditLogTargetTypes.INVITE]: { [AuditLogChangeKeys.INVITER_ID]: true, [AuditLogChangeKeys.USES]: true }, [AuditLogTargetTypes.WEBHOOK]: { [AuditLogChangeKeys.TYPE]: true, [AuditLogChangeKeys.APPLICATION_ID]: true }, [AuditLogTargetTypes.INTEGRATION]: { [AuditLogChangeKeys.TYPE]: true, [AuditLogChangeKeys.NAME]: true }, [AuditLogTargetTypes.THREAD]: { [AuditLogChangeKeys.ID]: true, [AuditLogChangeKeys.TYPE]: true }, [AuditLogTargetTypes.STICKER]: { [AuditLogChangeKeys.ID]: true, [AuditLogChangeKeys.TYPE]: true, [AuditLogChangeKeys.ASSET]: true, [AuditLogChangeKeys.FORMAT_TYPE]: true, [AuditLogChangeKeys.AVAILABLE]: true, [AuditLogChangeKeys.GUILD_ID]: true }, [AuditLogTargetTypes.GUILD_HOME]: { [AuditLogChangeKeys.ENTITY_TYPE]: true }, [AuditLogTargetTypes.GUILD_ONBOARDING]: { [AuditLogChangeKeys.PROMPTS]: true }, [AuditLogTargetTypes.GUILD_SOUNDBOARD]: { [AuditLogChangeKeys.ID]: true, [AuditLogChangeKeys.SOUND_ID]: true } };
 class ACTION_FILTER_ITEMS {
   constructor() {
@@ -548,19 +548,19 @@ class ACTION_FILTER_ITEMS {
   }
 }
 let obj = {
-  [fn(4787).TimeUnits.SECONDS]: (seconds) => {
+  [fn(4819).TimeUnits.SECONDS]: (seconds) => {
     const intl = util.intl;
     return intl.formatToPlainString(util.t.geSp4K, { seconds });
   },
-  [fn(4787).TimeUnits.MINUTES]: (minutes) => {
+  [fn(4819).TimeUnits.MINUTES]: (minutes) => {
     const intl = util.intl;
     return intl.formatToPlainString(util.t.iXLF9W, { minutes });
   },
-  [fn(4787).TimeUnits.HOURS]: (hours) => {
+  [fn(4819).TimeUnits.HOURS]: (hours) => {
     const intl = util.intl;
     return intl.formatToPlainString(util.t.xCjYxK, { hours });
   },
-  [fn(4787).TimeUnits.DAYS]: (days) => {
+  [fn(4819).TimeUnits.DAYS]: (days) => {
     const intl = util.intl;
     return intl.formatToPlainString(util.t["k2UNz+"], { days });
   }
@@ -811,7 +811,7 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           __3TkD = __3TkD(1119).t.MWp6H7;
           obj20[AuditLogChangeKeys.TEMPORARY] = (newValue) => newValue.newValue ? __3TkD : _5kDYS3;
           const obj23 = {};
-          obj23[__3TkD(8668).GuildInviteFlags.IS_GUEST_INVITE] = __3TkD(1119).t.XYZMbL;
+          obj23[__3TkD(8700).GuildInviteFlags.IS_GUEST_INVITE] = __3TkD(1119).t.XYZMbL;
           __3TkD = obj23;
           obj20[AuditLogChangeKeys.FLAGS] = (arg0) => __3TkD[arg0.newValue];
           obj20[AuditLogChangeKeys.ROLE_IDS] = () => __3TkD(1119).t.gb1Owj;
@@ -1307,7 +1307,7 @@ export const getSimpleAuditLogTitleContextFromChange = function getSimpleAuditLo
         if (null != timeAndUnit.time) {
           if (timeAndUnit.unit in obj) {
             ({ unit, unit: unit2 } = timeAndUnit);
-            if (unit2 === tmp25(4787).TimeUnits.SECONDS) {
+            if (unit2 === tmp25(4819).TimeUnits.SECONDS) {
               const _Math2 = Math;
               let time = Math.round(diff / 1000);
             } else {
@@ -1617,7 +1617,7 @@ export const getChangeTitle = function getChangeTitle(log) {
             const newValue = found2.newValue;
             if (GuildFeedItemTypes.GuildFeedItemTypes.MESSAGE === newValue) {
               return tmp198(1119).t["PyEa+J"];
-            } else if (tmp198(17983).GuildFeedItemTypes.FORUM_POST === newValue) {
+            } else if (tmp198(17993).GuildFeedItemTypes.FORUM_POST === newValue) {
               return tmp198(1119).t.hCuAb1;
             } else {
               return tmp198(1119).t["UZ+U3A"];
@@ -2435,7 +2435,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                             let tmp7 = ((targetId) => closure_1_10.getChannel(targetId))(targetId);
                             let tmp10 = null;
                             if (tmp9) {
-                              tmp10 = ((channel) => result3(4911).computeChannelName(channel, user, closure_1_12, true))(tmp7);
+                              tmp10 = ((channel) => result3(4943).computeChannelName(channel, user, closure_1_12, true))(tmp7);
                             }
                             let tmp11 = tmp10;
                             if (null == tmp10) {
@@ -2517,7 +2517,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
           const tmp205 = ((targetId16) => closure_1_10.getChannel(targetId16))(targetId16);
           let tmp208 = null;
           if (tmp207) {
-            tmp208 = ((channel) => result3(4911).computeChannelName(channel, user, closure_1_12, true))(tmp205);
+            tmp208 = ((channel) => result3(4943).computeChannelName(channel, user, closure_1_12, true))(tmp205);
           }
           let tmp209 = tmp208;
           if (null == tmp208) {
@@ -2560,8 +2560,8 @@ export const transformLogs = function transformLogs(arr, arg1) {
           let id = result1.options.id;
           user = user.getUser(id);
           if (tmp224) {
-            id = items(4603).getUserTag(user);
-            let obj4 = items(4603);
+            id = items(4635).getUserTag(user);
+            let obj4 = items(4635);
           }
           obj.subtarget = id;
           tmp224 = null != user && true;
@@ -2629,8 +2629,8 @@ export const transformLogs = function transformLogs(arr, arg1) {
             const prop = found19.guild_scheduled_event_exceptions;
             found20 = prop.find((event_exception_id) => event_exception_id.event_exception_id === result3.options.event_exception_id);
           }
-          let obj5 = closure_0(4442);
-          let tmp244 = items(4352);
+          let obj5 = closure_0(4474);
+          let tmp244 = items(4384);
           let str5;
           if (found20 != null) {
             str5 = found20.event_exception_id;
@@ -3198,14 +3198,14 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                               const _Date = Date;
                                               obj = DateUtils;
                                               const date = new Date(newValue2);
-                                              newValue = obj.dateFormat(_modDef4352(date), "LLLL");
+                                              newValue = obj.dateFormat(_modDef4384(date), "LLLL");
                                             }
                                             if (null != newValue.oldValue) {
                                               const oldValue2 = newValue.oldValue;
                                               const _Date2 = Date;
                                               const obj2 = DateUtils;
                                               const date1 = new Date(oldValue2);
-                                              oldValue = obj2.dateFormat(_modDef4352(date1), "LLLL");
+                                              oldValue = obj2.dateFormat(_modDef4384(date1), "LLLL");
                                             }
                                             if (!oldValue) {
                                               oldValue = newValue.oldValue;

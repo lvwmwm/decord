@@ -1,12 +1,12 @@
-// Module ID: 13606
-// Function ID: 13607
+// Module ID: 13642
+// Function ID: 13643
 // Name: ForLaterNitroUpsellBar
-// Dependencies: [19, 1378, 8100, 21, 558, 568, 7409, 11832, 12367, 4418, 1119, 2]
+// Dependencies: [19, 1378, 8132, 21, 558, 568, 7441, 11868, 12403, 4450, 1119, 2]
 
-// Module 13606 (ForLaterNitroUpsellBar)
+// Module 13642 (ForLaterNitroUpsellBar)
 import util from "util" /* 1119 */;
-import PremiumUtils from "PremiumUtils" /* 4418 */;
-import openForLaterLimitUpsellDefault from "openForLaterLimitUpsell" /* 11832 */;
+import PremiumUtils from "PremiumUtils" /* 4450 */;
+import openForLaterLimitUpsellDefault from "openForLaterLimitUpsell" /* 11868 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,7 +24,7 @@ function formatUpsellText(isReminder, isAtLimit) {
   }
 }
 const PremiumTypes = fn(1378).PremiumTypes;
-const SavedMessagesConstants = fn(8100);
+const SavedMessagesConstants = fn(8132);
 ({ SAVED_BOOKMARKS_MAX: hasOwnProperty, SAVED_REMINDERS_MAX: metroRequire } = SavedMessagesConstants);
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
@@ -35,7 +35,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => {
   const cResult = isReminder(568).c(10);
   isReminder = isReminder.isReminder;
   const isAtLimit = isReminder.isAtLimit;
-  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)().analyticsLocations;
   if (cResult[0] === analyticsLocations) {
     if (cResult[1] === isReminder) {
       let tmp4 = cResult[2];
@@ -53,7 +53,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => {
         }
       }
       const obj2 = { text: tmp5, isAtLimit, onPress: tmp4 };
-      const tmp10 = jsx(analyticsLocations(12367), { text: tmp5, isAtLimit, onPress: tmp4 });
+      const tmp10 = jsx(analyticsLocations(12403), { text: tmp5, isAtLimit, onPress: tmp4 });
       cResult[6] = isAtLimit;
       cResult[7] = tmp4;
       cResult[8] = tmp5;
@@ -77,9 +77,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => {
   isReminder = isReminder.isReminder;
   const isAtLimit = isReminder.isAtLimit;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)().analyticsLocations;
   const items = [isReminder, analyticsLocations];
   const callback = noop.useCallback(() => openForLaterLimitUpsellDefault(isReminder, analyticsLocations), items);
   const obj = { text: formatUpsellText(isReminder, isAtLimit), isAtLimit, onPress: callback };
-  return jsx(analyticsLocations(12367), { text: formatUpsellText(isReminder, isAtLimit), isAtLimit, onPress: callback });
+  return jsx(analyticsLocations(12403), { text: formatUpsellText(isReminder, isAtLimit), isAtLimit, onPress: callback });
 });

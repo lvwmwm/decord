@@ -1,13 +1,13 @@
-// Module ID: 16665
-// Function ID: 16666
+// Module ID: 16675
+// Function ID: 16676
 // Name: MentionSubtitle
-// Dependencies: [19, 17, 21, 558, 568, 16666, 5241, 5300, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 558, 568, 16676, 5273, 5332, 1119, 4786, 2]
 
-// Module 16665 (MentionSubtitle)
+// Module 16675 (MentionSubtitle)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 16666 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 16676 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -57,7 +57,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp17 = tmp20;
         }
         const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: tmp11, children: tmp12 };
-        const tmp16 = React3(tmp(4754).Text, obj4);
+        const tmp16 = React3(tmp(4786).Text, obj4);
         cResult[9] = subtitleStyles.subtitleText;
         cResult[10] = tmp12;
         cResult[11] = tmp16;
@@ -86,11 +86,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let channelIconComponentWithGuild;
   if (null != channel) {
-    channelIconComponentWithGuild = tmp(5241).getChannelIconComponentWithGuild(channel, guild);
-    const tmpResult = tmp(5241);
+    channelIconComponentWithGuild = tmp(5273).getChannelIconComponentWithGuild(channel, guild);
+    const tmpResult = tmp(5273);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(5300).TextIcon;
+    channelIconComponentWithGuild = tmp(5332).TextIcon;
   }
   cResult[0] = channel;
   cResult[1] = guild;
@@ -102,11 +102,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const subtitleStyles = useSubtitleStyles.useSubtitleStyles();
   let channelIconComponentWithGuild;
   if (null != channel) {
-    channelIconComponentWithGuild = tmp(5241).getChannelIconComponentWithGuild(channel, guild);
-    const tmpResult = tmp(5241);
+    channelIconComponentWithGuild = tmp(5273).getChannelIconComponentWithGuild(channel, guild);
+    const tmpResult = tmp(5273);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(5300).TextIcon;
+    channelIconComponentWithGuild = tmp(5332).TextIcon;
   }
   const obj2 = { style: subtitleStyles.subtitleRow, children: null };
   const items = [React3(channelIconComponentWithGuild, { size: "xxs", color: "icon-muted", style: subtitleStyles.channelIcon }), ];

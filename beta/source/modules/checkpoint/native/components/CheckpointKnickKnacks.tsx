@@ -1,19 +1,19 @@
-// Module ID: 15966
-// Function ID: 15967
+// Module ID: 15976
+// Function ID: 15977
 // Name: CheckpointKnickKnacks
-// Dependencies: [19, 17, 4750, 4983, 21, 4758, 558, 568, 504, 1368, 4471, 2]
+// Dependencies: [19, 17, 4782, 5015, 21, 4790, 558, 568, 504, 1368, 4503, 2]
 
-// Module 15966 (CheckpointKnickKnacks)
+// Module 15976 (CheckpointKnickKnacks)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const View = fn(17).View;
-const CHECKPOINT_PRIMARY = fn(4983).CHECKPOINT_PRIMARY;
+const CHECKPOINT_PRIMARY = fn(5015).CHECKPOINT_PRIMARY;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ rive: { width: 143, height: 32 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -54,7 +54,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
       }
       if (cResult[7] !== tmp9) {
         const obj3 = { artboard: "Entry", dataBinding: tmp9 };
-        const tmp14 = jsx(tmp(4471).CheckpointKnickKnacksRive, { artboard: "Entry", dataBinding: tmp9 });
+        const tmp14 = jsx(tmp(4503).CheckpointKnickKnacksRive, { artboard: "Entry", dataBinding: tmp9 });
         cResult[7] = tmp9;
         cResult[8] = tmp14;
         let tmp12 = tmp14;
@@ -90,7 +90,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     const items2 = [tmp4.rive, style.style];
     obj3.style = items2;
     const obj4 = { artboard: "Entry", dataBinding: memo };
-    obj3.children = jsx(tmp(4471).CheckpointKnickKnacksRive, { artboard: "Entry", dataBinding: memo });
+    obj3.children = jsx(tmp(4503).CheckpointKnickKnacksRive, { artboard: "Entry", dataBinding: memo });
     tmp6 = <View style={null}>{null}</View>;
   }
   return tmp6;

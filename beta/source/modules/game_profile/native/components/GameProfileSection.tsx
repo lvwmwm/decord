@@ -1,13 +1,13 @@
-// Module ID: 9012
-// Function ID: 9013
+// Module ID: 9044
+// Function ID: 9045
 // Name: GameProfileSection
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 9010, 4754, 5188, 1119, 7456, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 9042, 4786, 5220, 1119, 7488, 2]
 
-// Module 9012 (GameProfileSection)
+// Module 9044 (GameProfileSection)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9010 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9042 */;
 import noop from "module_19" /* 19 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { gap: nativeDefault.space.PX_8 }, header: null, skeletonTitle: null };
 let obj3 = { gap: nativeDefault.space.PX_8 };
 obj2.header = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8, minHeight: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_8 };
@@ -53,7 +53,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (cResult[11] !== showViewAllSkeleton) {
           let tmp13 = showViewAllSkeleton;
           if (showViewAllSkeleton) {
-            tmp13 = React4(tmp(9010).GameProfileSkeletonButton, { size: "sm" });
+            tmp13 = React4(tmp(9042).GameProfileSkeletonButton, { size: "sm" });
           }
           cResult[11] = showViewAllSkeleton;
           cResult[12] = tmp13;
@@ -90,7 +90,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj4 = { animationDelayMs, style: tmp6, children: null };
         const items1 = [tmp8, tmp12];
         obj4.children = items1;
-        const tmp17 = hasOwnProperty(tmp(9010).GameProfileSkeletonContainer, obj4);
+        const tmp17 = hasOwnProperty(tmp(9042).GameProfileSkeletonContainer, obj4);
         cResult[13] = animationDelayMs;
         cResult[14] = tmp6;
         cResult[15] = tmp8;
@@ -158,7 +158,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[6] !== title) {
         const obj2 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: title };
-        const tmp9 = React4(tmp(4754).Heading, obj2);
+        const tmp9 = React4(tmp(4786).Heading, obj2);
         cResult[6] = title;
         cResult[7] = tmp9;
         let tmp7 = tmp9;
@@ -171,9 +171,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj3 = { text: null, variant: "tertiary", size: "sm", icon: null, iconPosition: "end", onPress: null };
           const intl = tmp(1119).intl;
           obj3.text = intl.string(tmp(1119).t.budhsM);
-          obj3.icon = React4(tmp(7456).ChevronSmallRightIcon, { size: "sm" });
+          obj3.icon = React4(tmp(7488).ChevronSmallRightIcon, { size: "sm" });
           obj3.onPress = onPressViewAll;
-          tmp12 = React4(tmp(5188).Button, obj3);
+          tmp12 = React4(tmp(5220).Button, obj3);
         }
         cResult[8] = onPressViewAll;
         cResult[9] = tmp12;
@@ -242,9 +242,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { text: null, variant: "tertiary", size: "sm", icon: null, iconPosition: "end", onPress: null };
     const intl = tmp5(1119).intl;
     obj3.text = intl.string(tmp5(1119).t.budhsM);
-    obj3.icon = tmp4(tmp5(7456).ChevronSmallRightIcon, { size: "sm" });
+    obj3.icon = tmp4(tmp5(7488).ChevronSmallRightIcon, { size: "sm" });
     obj3.onPress = onPressViewAll;
-    tmp4Result = tmp4(tmp5(5188).Button, obj3);
+    tmp4Result = tmp4(tmp5(5220).Button, obj3);
   }
   items2[1] = tmp4Result;
   obj2.children = items2;

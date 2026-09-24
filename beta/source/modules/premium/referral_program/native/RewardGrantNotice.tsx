@@ -1,25 +1,25 @@
-// Module ID: 13721
-// Function ID: 13722
+// Module ID: 13757
+// Function ID: 13758
 // Name: RewardGrantNotice
-// Dependencies: [19, 17, 13706, 21, 4758, 580, 558, 568, 13708, 11475, 4754, 1119, 7380, 2]
+// Dependencies: [19, 17, 13742, 21, 4790, 580, 558, 568, 13744, 11511, 4786, 1119, 7412, 2]
 
-// Module 13721 (RewardGrantNotice)
+// Module 13757 (RewardGrantNotice)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 7380 */;
-import BalanceWidgetPill from "BalanceWidgetPill" /* 11475 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13708 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 7412 */;
+import BalanceWidgetPill from "BalanceWidgetPill" /* 11511 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13744 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const Constants = fn(13706);
+const Constants = fn(13742);
 ({ REFERRAL_INCENTIVE_DISCOUNT_PERCENTAGE: closure_4, REFERRAL_INCENTIVE_ORBS_PER_CONVERSION: hasOwnProperty } = Constants);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, marginTop: nativeDefault.space.PX_8, alignSelf: "flex-start" }, orbsPillContainer: null, balancePillOverride: null };
 let obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, marginTop: nativeDefault.space.PX_8, alignSelf: "flex-start" };
 obj2.orbsPillContainer = { flexDirection: "row", alignItems: "center", marginTop: nativeDefault.space.PX_8, alignSelf: "flex-start" };
@@ -42,7 +42,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((nRewardsGranted
       const intl = tmp(1119).intl;
       const items = [" ", intl.string(tmp(1119).t.UhguER)];
       obj2.children = items;
-      const tmp11 = React5(tmp(4754).Text, obj2);
+      const tmp11 = React5(tmp(4786).Text, obj2);
       cResult[3] = tmp11;
       let tmp9 = tmp11;
     } else {
@@ -97,7 +97,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((nRewardsGrante
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE, size: "xs" };
-    const tmp11 = timestampProducer(tmp(7380).CheckmarkSmallIcon, obj3);
+    const tmp11 = timestampProducer(tmp(7412).CheckmarkSmallIcon, obj3);
     cResult[2] = tmp11;
     let tmp8 = tmp11;
   } else {
@@ -115,7 +115,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((nRewardsGrante
   }
   if (cResult[5] !== tmp12) {
     const obj5 = { variant: "text-sm/medium", color: "text-strong", children: tmp12 };
-    const tmp17 = timestampProducer(tmp(4754).Text, obj5);
+    const tmp17 = timestampProducer(tmp(4786).Text, obj5);
     cResult[5] = tmp12;
     cResult[6] = tmp17;
     let tmp15 = tmp17;
@@ -161,8 +161,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (nRewardsGranted < 1) {
     return null;
   } else {
-    if (referralRewardType !== tmp(13708).ReferralRewardType.ORBS) {
-      if (referralRewardType === tmp(13708).ReferralRewardType.DISCOUNT) {
+    if (referralRewardType !== tmp(13744).ReferralRewardType.ORBS) {
+      if (referralRewardType === tmp(13744).ReferralRewardType.DISCOUNT) {
         if (cResult[2] !== nRewardsGranted) {
           const obj2 = { nRewardsGranted };
           const tmp8 = timestampProducer(closure_10, obj2);
@@ -186,7 +186,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (referralRewardType === PremiumReferralIncentivesExperiment.ReferralRewardType.ORBS) {
       const obj2 = { nRewardsGranted };
       let tmp3 = timestampProducer(closure_9, obj2);
-    } else if (referralRewardType === tmp(13708).ReferralRewardType.DISCOUNT) {
+    } else if (referralRewardType === tmp(13744).ReferralRewardType.DISCOUNT) {
       const obj = { nRewardsGranted };
       tmp3 = timestampProducer(closure_10, obj);
     }

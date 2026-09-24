@@ -1,13 +1,13 @@
-// Module ID: 13389
-// Function ID: 13390
+// Module ID: 13425
+// Function ID: 13426
 // Name: PrivateProfilesExperiment
-// Dependencies: [1438, 558, 568, 13390, 13391, 2]
+// Dependencies: [1438, 558, 568, 13426, 13427, 2]
 // Exports: getIsInPrivateProfilesExperiment
 
-// Module 13389 (PrivateProfilesExperiment)
+// Module 13425 (PrivateProfilesExperiment)
 import c from "c" /* 568 */;
-import PrivateProfilesStrictExperiment from "PrivateProfilesStrictExperiment" /* 13390 */;
-import PrivateProfilesStrictGbExperiment from "PrivateProfilesStrictGbExperiment" /* 13391 */;
+import PrivateProfilesStrictExperiment from "PrivateProfilesStrictExperiment" /* 13426 */;
+import PrivateProfilesStrictGbExperiment from "PrivateProfilesStrictGbExperiment" /* 13427 */;
 import ApexExperiment from "ApexExperiment" /* 1438 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

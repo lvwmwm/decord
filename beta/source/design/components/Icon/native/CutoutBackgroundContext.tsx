@@ -1,16 +1,16 @@
-// Module ID: 9093
-// Function ID: 9094
+// Module ID: 9125
+// Function ID: 9126
 // Name: CutoutBackgroundContext
-// Dependencies: [19, 21, 558, 568, 676, 9094, 580, 4462, 2]
+// Dependencies: [19, 21, 558, 568, 676, 9126, 580, 4494, 2]
 
-// Module 9093 (CutoutBackgroundContext)
+// Module 9125 (CutoutBackgroundContext)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef676 from "module_676" /* 676 */;
-import useToken from "useToken" /* 4462 */;
+import useToken from "useToken" /* 4494 */;
 import noop from "module_19" /* 19 */;
 
-const shared_colors = obj(9094);
+const shared_colors = obj(9126);
 require = fn;
 const jsx = fn(21).jsx;
 let context = noop.createContext(undefined);

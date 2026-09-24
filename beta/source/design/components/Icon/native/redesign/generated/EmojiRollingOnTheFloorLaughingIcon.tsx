@@ -1,13 +1,13 @@
-// Module ID: 15663
-// Function ID: 15664
+// Module ID: 15673
+// Function ID: 15674
 // Name: EmojiRollingOnTheFloorLaughingIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 15664, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 15674, 4493, 2]
 
-// Module 15663 (EmojiRollingOnTheFloorLaughingIcon)
+// Module 15673 (EmojiRollingOnTheFloorLaughingIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod15664 from "module_15664" /* 15664 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod15674 from "module_15674" /* 15674 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const EmojiRollingOnTheFloorLaughingIcon = ReactCompilerGating.isReactCom
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(15664);
+    const tmpResult = tmp(15674);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const EmojiRollingOnTheFloorLaughingIcon = ReactCompilerGating.isReactCom
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15664, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15674, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

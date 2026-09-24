@@ -1,14 +1,14 @@
-// Module ID: 16470
-// Function ID: 16471
+// Module ID: 16480
+// Function ID: 16481
 // Name: RedesignVoiceUserSummary
-// Dependencies: [19, 2099, 4782, 21, 558, 568, 504, 4903, 16466, 2]
+// Dependencies: [19, 2099, 4814, 21, 558, 568, 504, 4935, 16476, 2]
 
-// Module 16470 (RedesignVoiceUserSummary)
-import ChannelUtils from "ChannelUtils" /* 4903 */;
-import VoiceUserSummaryDefault from "VoiceUserSummary" /* 16466 */;
+// Module 16480 (RedesignVoiceUserSummary)
+import ChannelUtils from "ChannelUtils" /* 4935 */;
+import VoiceUserSummaryDefault from "VoiceUserSummary" /* 16476 */;
 import noop from "module_19" /* 19 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4782 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4814 */;
 
 require = fn;
 const jsx = fn(21).jsx;
@@ -95,17 +95,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp15 = cResult[14];
       }
       const obj3 = { channels, selectedChannelId: "r", selectedVoiceChannelId: stateFromStores1, voiceStates: stateFromStores };
-      summarizedVoiceUsers = summarizedVoiceUsers(4903).computeSummarizedVoiceUsers(obj3);
+      summarizedVoiceUsers = summarizedVoiceUsers(4935).computeSummarizedVoiceUsers(obj3);
       const found = summarizedVoiceUsers.filter(tmp15);
       cResult[10] = channels;
       cResult[11] = stateFromStores1;
       cResult[12] = stateFromStores;
       cResult[13] = found;
-      const summarizedVoiceUsersResult2 = summarizedVoiceUsers(4903);
+      const summarizedVoiceUsersResult2 = summarizedVoiceUsers(4935);
     }
   }
   const summarizedVoiceUsersResult1 = summarizedVoiceUsers(504);
-  const isAnyVoiceStateStageResult = summarizedVoiceUsers(4903).isAnyVoiceStateStage(channels, stateFromStores1, stateFromStores);
+  const isAnyVoiceStateStageResult = summarizedVoiceUsers(4935).isAnyVoiceStateStage(channels, stateFromStores1, stateFromStores);
   cResult[6] = channels;
   cResult[7] = stateFromStores1;
   cResult[8] = stateFromStores;

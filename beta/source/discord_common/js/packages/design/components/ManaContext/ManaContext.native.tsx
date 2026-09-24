@@ -1,9 +1,9 @@
-// Module ID: 4540
-// Function ID: 4541
+// Module ID: 4572
+// Function ID: 4573
 // Name: ManaContext
 // Dependencies: [19, 21, 558, 568, 2]
 
-// Module 4540 (ManaContext)
+// Module 4572 (ManaContext)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 15110
-// Function ID: 15111
+// Module ID: 15120
+// Function ID: 15121
 // Name: SyncContactsSetting
-// Dependencies: [5500, 1376, 8238, 1078, 558, 568, 12827, 15111, 11594, 1119, 2]
+// Dependencies: [5532, 1376, 8270, 1078, 558, 568, 12863, 15121, 11630, 1119, 2]
 
-// Module 15110 (SyncContactsSetting)
+// Module 15120 (SyncContactsSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12827 */;
-import ContactSyncSettings from "ContactSyncSettings" /* 15111 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12863 */;
+import ContactSyncSettings from "ContactSyncSettings" /* 15121 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5532 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const PlatformTypes = fn(1078).PlatformTypes;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   const contactSyncAccount = ContactSyncUtils.useContactSyncAccount();
@@ -37,7 +37,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.uSvEy7);
   },
-  parent: fn(8238).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: fn(8270).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     const contactSyncAccount = ContactSyncUtils.useContactSyncAccount();

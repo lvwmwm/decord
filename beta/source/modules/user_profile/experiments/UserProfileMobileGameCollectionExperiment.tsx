@@ -1,9 +1,9 @@
-// Module ID: 13195
-// Function ID: 13196
+// Module ID: 13231
+// Function ID: 13232
 // Name: UserProfileMobileGameCollectionExperiment
 // Dependencies: [1438, 558, 568, 2]
 
-// Module 13195 (UserProfileMobileGameCollectionExperiment)
+// Module 13231 (UserProfileMobileGameCollectionExperiment)
 import c from "c" /* 568 */;
 import ApexExperiment from "ApexExperiment" /* 1438 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

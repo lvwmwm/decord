@@ -1,9 +1,9 @@
-// Module ID: 11046
-// Function ID: 11047
+// Module ID: 11082
+// Function ID: 11083
 // Name: GiftingBadgeIcon
 // Dependencies: [19, 17, 21, 558, 568, 2]
 
-// Module 11046 (GiftingBadgeIcon)
+// Module 11082 (GiftingBadgeIcon)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

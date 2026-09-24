@@ -1,19 +1,19 @@
-// Module ID: 17526
-// Function ID: 17527
+// Module ID: 17536
+// Function ID: 17537
 // Name: SoundboardSoundPickerCategories
-// Dependencies: [19, 17, 17508, 1376, 1078, 21, 4758, 580, 558, 568, 5234, 5799, 1119, 10683, 4720, 17524, 8989, 1181, 5315, 5341, 4726, 4727, 4418, 504, 10220, 1616, 6891, 8519, 4632, 2]
+// Dependencies: [19, 17, 17518, 1376, 1078, 21, 4790, 580, 558, 568, 5266, 5831, 1119, 10719, 4752, 17534, 9021, 1181, 5347, 5373, 4758, 4759, 4450, 504, 10259, 1616, 6923, 8551, 4664, 2]
 
-// Module 17526 (SoundboardSoundPickerCategories)
+// Module 17536 (SoundboardSoundPickerCategories)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import HapticUtils from "HapticUtils" /* 4726 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4727 */;
-import SoundboardTypes from "SoundboardTypes" /* 5234 */;
-import Pressables from "Pressables" /* 5341 */;
-import GuildIconDefault from "GuildIcon" /* 5799 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10220 */;
-import _modDef10683 from "module_10683" /* 10683 */;
-import _modDef17524 from "module_17524" /* 17524 */;
+import HapticUtils from "HapticUtils" /* 4758 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4759 */;
+import SoundboardTypes from "SoundboardTypes" /* 5266 */;
+import Pressables from "Pressables" /* 5373 */;
+import GuildIconDefault from "GuildIcon" /* 5831 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10259 */;
+import _modDef10719 from "module_10719" /* 10719 */;
+import _modDef17534 from "module_17534" /* 17534 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -24,12 +24,12 @@ function getItemLayout(arg0, index) {
 get_ActivityIndicator = fn(17);
 const StyleSheet = get_ActivityIndicator.StyleSheet;
 ({ View: hasOwnProperty, FlatList: metroRequire } = get_ActivityIndicator);
-const setSearchQuery = fn(17508).setSearchQuery;
+const setSearchQuery = fn(17518).setSearchQuery;
 const Constants = fn(1078);
 ({ CATEGORY_ICON_SIZE, EXPRESSION_FOOTER_HEIGHT: closure_9, NODE_SIZE, NODE_MARGIN } = Constants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { borderTopWidth: StyleSheet.hairlineWidth, paddingHorizontal: 8, flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderTopColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, item: null, fadedItem: { opacity: 0.5 }, activeItem: null, guildItem: null, keyboardItem: null, lockContainer: null, lock: null };
 let size = { margin: NODE_MARGIN, height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2, alignItems: "center", justifyContent: "center" };
 obj.item = size;
@@ -61,7 +61,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
     cResult[1] = guildItem;
     cResult[2] = tmp37;
   } else {
-    if (tmp(5234).SoundboardSoundGridSectionType.FAVORITES === type) {
+    if (tmp(5266).SoundboardSoundGridSectionType.FAVORITES === type) {
       const _Symbol4 = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
         const intl5 = tmp(1119).intl;
@@ -71,11 +71,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
       } else {
         tmp30 = cResult[3];
       }
-      let tmp12 = _modDef10683;
+      let tmp12 = _modDef10719;
       let tmp11 = null;
       let tmp14 = tmp30;
       let tmp13 = null;
-    } else if (tmp(5234).SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
+    } else if (tmp(5266).SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
       const _Symbol3 = Symbol;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
         const intl4 = tmp(1119).intl;
@@ -87,7 +87,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
       }
       if (cResult[5] !== tmp5.keyboardItem) {
         const obj3 = { style: tmp5.keyboardItem };
-        const tmp28 = v65535(tmp(4720).ClockIcon, obj3);
+        const tmp28 = v65535(tmp(4752).ClockIcon, obj3);
         cResult[5] = tmp5.keyboardItem;
         cResult[6] = tmp28;
         let tmp26 = tmp28;
@@ -98,7 +98,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
       tmp11 = tmp26;
       tmp13 = null;
       tmp14 = tmp24;
-    } else if (tmp(5234).SoundboardSoundGridSectionType.DEFAULTS === type) {
+    } else if (tmp(5266).SoundboardSoundGridSectionType.DEFAULTS === type) {
       const _Symbol2 = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
         const intl3 = tmp(1119).intl;
@@ -108,11 +108,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
       } else {
         tmp20 = cResult[7];
       }
-      tmp12 = _modDef17524;
+      tmp12 = _modDef17534;
       tmp11 = null;
       tmp14 = tmp20;
       tmp13 = null;
-    } else if (tmp(5234).SoundboardSoundGridSectionType.SEARCH === type) {
+    } else if (tmp(5266).SoundboardSoundGridSectionType.SEARCH === type) {
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
         const intl2 = tmp(1119).intl;
@@ -122,7 +122,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
       } else {
         tmp16 = cResult[8];
       }
-      tmp12 = _modDef17524;
+      tmp12 = _modDef17534;
       tmp11 = null;
       tmp14 = tmp16;
       tmp13 = null;
@@ -131,7 +131,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
       tmp11 = null;
       tmp13 = null;
       tmp14 = null;
-      if (tmp(5234).SoundboardSoundGridSectionType.TOP_SOUNDS === type) {
+      if (tmp(5266).SoundboardSoundGridSectionType.TOP_SOUNDS === type) {
         if (cResult[9] !== category.categoryInfo.guild.name) {
           const intl = tmp(1119).intl;
           const obj4 = { guildName: category.categoryInfo.guild.name };
@@ -144,7 +144,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
         }
         if (cResult[11] !== tmp5.keyboardItem) {
           const obj5 = { style: tmp5.keyboardItem };
-          const tmp10 = v65535(tmp(8989).TrophyIcon, obj5);
+          const tmp10 = v65535(tmp(9021).TrophyIcon, obj5);
           cResult[11] = tmp5.keyboardItem;
           cResult[12] = tmp10;
           let tmp8 = tmp10;
@@ -190,7 +190,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
                         }
                       }
                       const obj6 = { onPress: tmp42, accessibilityRole: "button", accessibilityLabel: tmp14, children: tmp52 };
-                      const tmp58 = v65535(tmp(5341).PressableOpacity, obj6, tmp14);
+                      const tmp58 = v65535(tmp(5373).PressableOpacity, obj6, tmp14);
                       cResult[32] = tmp14;
                       cResult[33] = tmp42;
                       cResult[34] = tmp52;
@@ -213,7 +213,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
               if (tmp4) {
                 const obj8 = { style: tmp5.lockContainer, children: null };
                 const obj9 = { style: tmp5.lock };
-                obj8.children = v65535(tmp(5315).LockIcon, obj9);
+                obj8.children = v65535(tmp(5347).LockIcon, obj9);
                 tmp49 = v65535(hasOwnProperty, obj8);
               }
               cResult[24] = tmp4;
@@ -267,29 +267,29 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
     let tmp14Result = v65535(GuildIconDefault, obj2);
     let tmp6 = null;
     let tmp7 = null;
-  } else if (tmp2(5234).SoundboardSoundGridSectionType.FAVORITES === type) {
+  } else if (tmp2(5266).SoundboardSoundGridSectionType.FAVORITES === type) {
     const intl4 = tmp2(1119).intl;
     name = intl4.string(tmp2(1119).t.y3LQCG);
-    tmp6 = _modDef10683;
+    tmp6 = _modDef10719;
     tmp7 = null;
     tmp14Result = null;
-  } else if (tmp2(5234).SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
+  } else if (tmp2(5266).SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
     const intl3 = tmp2(1119).intl;
     name = intl3.string(tmp2(1119).t["+cGVV6"]);
     const obj = { style: tmp.keyboardItem };
-    tmp7 = v65535(tmp2(4720).ClockIcon, obj);
+    tmp7 = v65535(tmp2(4752).ClockIcon, obj);
     tmp6 = null;
     tmp14Result = null;
-  } else if (tmp2(5234).SoundboardSoundGridSectionType.DEFAULTS === type) {
+  } else if (tmp2(5266).SoundboardSoundGridSectionType.DEFAULTS === type) {
     const intl2 = tmp2(1119).intl;
     name = intl2.string(tmp2(1119).t.Rtvk9X);
-    tmp6 = _modDef17524;
+    tmp6 = _modDef17534;
     tmp7 = null;
     tmp14Result = null;
-  } else if (tmp2(5234).SoundboardSoundGridSectionType.SEARCH === type) {
+  } else if (tmp2(5266).SoundboardSoundGridSectionType.SEARCH === type) {
     const intl = tmp2(1119).intl;
     name = intl.string(tmp2(1119).t.sKt3xS);
-    tmp6 = _modDef17524;
+    tmp6 = _modDef17534;
     tmp7 = null;
     tmp14Result = null;
   } else {
@@ -297,12 +297,12 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
     tmp7 = null;
     tmp14Result = null;
     name = null;
-    if (tmp2(5234).SoundboardSoundGridSectionType.TOP_SOUNDS === type) {
+    if (tmp2(5266).SoundboardSoundGridSectionType.TOP_SOUNDS === type) {
       const intl5 = tmp2(1119).intl;
       const obj3 = { guildName: category.categoryInfo.guild.name };
       name = intl5.formatToPlainString(tmp2(1119).t.GXs41w, obj3);
       const obj4 = { style: tmp.keyboardItem };
-      tmp7 = v65535(tmp2(8989).TrophyIcon, obj4);
+      tmp7 = v65535(tmp2(9021).TrophyIcon, obj4);
       tmp6 = null;
       tmp14Result = null;
     }
@@ -329,7 +329,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   if (locked) {
     const obj8 = { style: tmp.lockContainer, children: null };
     const obj9 = { style: tmp.lock };
-    obj8.children = tmp14(tmp2(5315).LockIcon, obj9);
+    obj8.children = tmp14(tmp2(5347).LockIcon, obj9);
     locked = tmp14(tmp16, obj8);
   }
   items1[1] = locked;

@@ -1,18 +1,18 @@
-// Module ID: 11541
-// Function ID: 11542
+// Module ID: 11577
+// Function ID: 11578
 // Name: MutedUntilText
-// Dependencies: [19, 21, 4758, 558, 568, 1119, 4754, 2]
+// Dependencies: [19, 21, 4790, 558, 568, 1119, 4786, 2]
 
-// Module 11541 (MutedUntilText)
+// Module 11577 (MutedUntilText)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
 const MuteSettingType = { SERVER: 0, [0]: "SERVER", CHANNEL: 1, [1]: "CHANNEL", DM: 2, [2]: "DM", CATEGORY: 3, [3]: "CATEGORY" };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ formHintText: { lineHeight: 18, marginBottom: 8, marginTop: 8, paddingHorizontal: 16 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -47,7 +47,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return tmp30;
         }
         const obj2 = { style: tmp23, variant: "text-sm/medium", color: "text-muted", children: tmp24 };
-        const tmp32 = jsx(tmp(4754).Text, { style: tmp23, variant: "text-sm/medium", color: "text-muted", children: tmp24 });
+        const tmp32 = jsx(tmp(4786).Text, { style: tmp23, variant: "text-sm/medium", color: "text-muted", children: tmp24 });
         cResult[3] = tmp4.formHintText;
         cResult[4] = tmp24;
         cResult[5] = tmp32;
@@ -118,7 +118,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp19;
     }
     const obj4 = { style: tmp4.formHintText, variant: "text-sm/medium", color: "text-muted", children: tmp7 };
-    const tmp21 = jsx(tmp(4754).Text, { style: tmp4.formHintText, variant: "text-sm/medium", color: "text-muted", children: tmp7 });
+    const tmp21 = jsx(tmp(4786).Text, { style: tmp4.formHintText, variant: "text-sm/medium", color: "text-muted", children: tmp7 });
     cResult[10] = tmp4.formHintText;
     cResult[11] = tmp7;
     cResult[12] = tmp21;
@@ -154,7 +154,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return jsx(Text_Text.Text, { variant: "text-sm/medium", color: "control-brand-foreground", children }, "muted");
       };
       obj2.children = intl5.format(N2NXMd, obj3);
-      return jsx(tmp15(4754).Text, { style: tmp.formHintText, variant: "text-sm/medium", color: "text-muted", children: null });
+      return jsx(tmp15(4786).Text, { style: tmp.formHintText, variant: "text-sm/medium", color: "text-muted", children: null });
     }
   }
   if (obj.SERVER === type) {
@@ -177,6 +177,6 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return null;
   }
   obj = { style: tmp.formHintText, variant: "text-sm/medium", color: "text-muted", children: stringResult };
-  return jsx(tmp3(4754).Text, { style: tmp.formHintText, variant: "text-sm/medium", color: "text-muted", children: stringResult });
+  return jsx(tmp3(4786).Text, { style: tmp.formHintText, variant: "text-sm/medium", color: "text-muted", children: stringResult });
 });
 export { MuteSettingType };

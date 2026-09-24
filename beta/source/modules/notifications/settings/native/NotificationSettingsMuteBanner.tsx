@@ -1,22 +1,22 @@
-// Module ID: 12982
-// Function ID: 12983
+// Module ID: 13018
+// Function ID: 13019
 // Name: NotificationSettingsMuteBanner
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4754, 1119, 5188, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4786, 1119, 5220, 2]
 // Exports: getMuteBannerSubtitleFromConfig
 
-// Module 12982 (NotificationSettingsMuteBanner)
+// Module 13018 (NotificationSettingsMuteBanner)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { card: { padding: 16, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderRadius: nativeDefault.radii.lg + 8, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND } };
 let closure_5 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -41,7 +41,7 @@ export const NotificationSettingsMuteBanner = ReactCompilerGating.isReactCompile
     }
     if (cResult[4] !== style.title) {
       const obj3 = { variant: "text-md/semibold", color: "text-overlay-light", children: style.title };
-      const tmp10 = React3(tmp(4754).Text, obj3);
+      const tmp10 = React3(tmp(4786).Text, obj3);
       cResult[4] = style.title;
       cResult[5] = tmp10;
       let tmp8 = tmp10;
@@ -50,7 +50,7 @@ export const NotificationSettingsMuteBanner = ReactCompilerGating.isReactCompile
     }
     if (cResult[6] !== style.subtitle) {
       const obj4 = { variant: "text-xs/medium", color: "text-overlay-light", children: style.subtitle };
-      const tmp13 = React3(tmp(4754).Text, obj4);
+      const tmp13 = React3(tmp(4786).Text, obj4);
       cResult[6] = style.subtitle;
       cResult[7] = tmp13;
       let tmp11 = tmp13;
@@ -72,7 +72,7 @@ export const NotificationSettingsMuteBanner = ReactCompilerGating.isReactCompile
       }
       if (cResult[12] !== style.onPressUnmute) {
         const obj5 = { text: tmp18, onPress: style.onPressUnmute, variant: "primary-overlay" };
-        const tmp22 = React3(tmp(5188).Button, obj5);
+        const tmp22 = React3(tmp(5220).Button, obj5);
         cResult[12] = style.onPressUnmute;
         cResult[13] = tmp22;
         let tmp20 = tmp22;

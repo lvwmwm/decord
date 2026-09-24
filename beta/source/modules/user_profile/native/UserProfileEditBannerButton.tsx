@@ -1,23 +1,23 @@
-// Module ID: 14856
-// Function ID: 14857
+// Module ID: 14894
+// Function ID: 14895
 // Name: UserProfileEditBannerButton
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 7409, 8464, 8453, 1119, 4754, 5341, 10626, 8504, 8520, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 7441, 8496, 8485, 1119, 4786, 5373, 10662, 8536, 8552, 2]
 
-// Module 14856 (UserProfileEditBannerButton)
+// Module 14894 (UserProfileEditBannerButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Pressables from "Pressables" /* 5341 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8504 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 8520 */;
-import PencilIcon from "PencilIcon" /* 10626 */;
+import Pressables from "Pressables" /* 5373 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
+import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8536 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 8552 */;
+import PencilIcon from "PencilIcon" /* 10662 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { position: "relative" }, editButton: null, previewButton: null };
 let size = { position: "absolute", top: 12, right: 12, width: 28, height: 28, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.round };
 obj2.editButton = size;
@@ -118,7 +118,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp5 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.WHITE };
-    const tmp9 = hasOwnProperty(tmp(10626).PencilIcon, obj2);
+    const tmp9 = hasOwnProperty(tmp(10662).PencilIcon, obj2);
     cResult[0] = tmp9;
     let first = tmp9;
   } else {

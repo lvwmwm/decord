@@ -1,21 +1,21 @@
-// Module ID: 11160
-// Function ID: 11161
+// Module ID: 11196
+// Function ID: 11197
 // Name: PremiumGiftCustomMessage
-// Dependencies: [19, 17, 1378, 21, 4758, 580, 558, 568, 1119, 7332, 10997, 2]
+// Dependencies: [19, 17, 1378, 21, 4790, 580, 558, 568, 1119, 7364, 11033, 2]
 
-// Module 11160 (PremiumGiftCustomMessage)
+// Module 11196 (PremiumGiftCustomMessage)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import TextArea from "TextArea" /* 7332 */;
-import NativeGiftContext from "NativeGiftContext" /* 10997 */;
+import TextArea from "TextArea" /* 7364 */;
+import NativeGiftContext from "NativeGiftContext" /* 11033 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const maxLength = fn(1378).CUSTOM_GIFT_MESSAGE_MAX_LENGTH;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { marginTop: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_16 } };
 let closure_6 = createStyles.createStyles(obj);
 let ReactCompilerGating = fn(558);

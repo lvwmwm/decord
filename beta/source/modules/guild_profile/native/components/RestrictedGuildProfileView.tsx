@@ -1,18 +1,18 @@
-// Module ID: 9983
-// Function ID: 9984
+// Module ID: 10015
+// Function ID: 10016
 // Name: RestrictedGuildProfileView
-// Dependencies: [19, 17, 21, 558, 568, 9984, 4693, 4462, 580, 5198, 5799, 4754, 1119, 2]
+// Dependencies: [19, 17, 21, 558, 568, 10016, 4725, 4494, 580, 5230, 5831, 4786, 1119, 2]
 
-// Module 9983 (RestrictedGuildProfileView)
+// Module 10015 (RestrictedGuildProfileView)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import useToken from "useToken" /* 4462 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import GuildIcon from "GuildIcon" /* 5799 */;
-import GuildProfileView from "GuildProfileView" /* 9984 */;
+import useToken from "useToken" /* 4494 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import GuildIcon from "GuildIcon" /* 5831 */;
+import GuildProfileView from "GuildProfileView" /* 10016 */;
 import noop from "module_19" /* 19 */;
 
 const GuildIconDefault = GuildIcon;
@@ -39,12 +39,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         let tmp12 = cResult[5];
       }
       if (cResult[6] !== styles.restrictedAcronym) {
-        const obj4 = { size: tmp(5799).GuildIconSizes.XXLARGE, value: "?", selected: false, textStyle: styles.restrictedAcronym };
-        const tmp19 = React4(tmp5(5799), obj4);
+        const obj4 = { size: tmp(5831).GuildIconSizes.XXLARGE, value: "?", selected: false, textStyle: styles.restrictedAcronym };
+        const tmp19 = React4(tmp5(5831), obj4);
         cResult[6] = styles.restrictedAcronym;
         cResult[7] = tmp19;
         let tmp16 = tmp19;
-        const tmp5Result = tmp5(5799);
+        const tmp5Result = tmp5(5831);
       } else {
         tmp16 = cResult[7];
       }
@@ -61,7 +61,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const obj5 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
             const intl = tmp(1119).intl;
             obj5.children = intl.string(tmp(1119).t.wZmueu);
-            const tmp31 = React4(tmp(4754).Text, obj5);
+            const tmp31 = React4(tmp(4786).Text, obj5);
             cResult[14] = tmp31;
             let tmp29 = tmp31;
           } else {
@@ -72,7 +72,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const obj6 = { variant: "text-md/medium", color: "text-subtle", children: null };
             const intl2 = tmp(1119).intl;
             obj6.children = intl2.string(tmp(1119).t["8mfCqY"]);
-            const tmp34 = React4(tmp(4754).Text, obj6);
+            const tmp34 = React4(tmp(4786).Text, obj6);
             cResult[15] = tmp34;
             let tmp32 = tmp34;
           } else {
@@ -124,13 +124,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       cResult[10] = tmp23;
       tmp20 = tmp23;
     }
-    const obj11 = { style: tmp9, start: tmp(9984).DiagonalGradient.START, end: tmp(9984).DiagonalGradient.END, colors: tmp10 };
-    const tmp15 = React4(tmp5(5198), obj11);
+    const obj11 = { style: tmp9, start: tmp(10016).DiagonalGradient.START, end: tmp(10016).DiagonalGradient.END, colors: tmp10 };
+    const tmp15 = React4(tmp5(5230), obj11);
     cResult[3] = styles.colorBanner;
     cResult[4] = tmp10;
     cResult[5] = tmp15;
     tmp12 = tmp15;
-    const tmp5Result2 = tmp5(5198);
+    const tmp5Result2 = tmp5(5230);
   }
   const backgroundForProfile = GuildProfileView.getBackgroundForProfile(tmp6, token);
   cResult[0] = token;

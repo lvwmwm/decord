@@ -1,13 +1,13 @@
-// Module ID: 10286
-// Function ID: 10287
+// Module ID: 10325
+// Function ID: 10326
 // Name: GroupPlusIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 10285, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 10324, 4493, 2]
 
-// Module 10286 (GroupPlusIcon)
+// Module 10325 (GroupPlusIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod10285 from "module_10285" /* 10285 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod10324 from "module_10324" /* 10324 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const GroupPlusIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(10285);
+    const tmpResult = tmp(10324);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const GroupPlusIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10285, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10324, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

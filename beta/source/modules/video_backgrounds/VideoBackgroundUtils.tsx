@@ -1,15 +1,15 @@
-// Module ID: 9897
-// Function ID: 9898
+// Module ID: 9929
+// Function ID: 9930
 // Name: VideoBackgroundUtils
-// Dependencies: [2045, 4781, 7233, 1078, 1401, 4938, 1245, 2]
+// Dependencies: [2045, 4813, 7265, 1078, 1401, 4970, 1245, 2]
 // Exports: getEffectAnalyticsType, getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, isCustomBackgroundOption, isDefaultBackgroundOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 9897 (VideoBackgroundUtils)
+// Module 9929 (VideoBackgroundUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import AvatarUtils from "AvatarUtils" /* 1401 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
 
 require = fn;
 function isAnimatedBackgroundOption(type) {
@@ -97,7 +97,7 @@ function getEffectDetailAnalyticsName(lastUsedVideoBackgroundOption) {
   }
   return str;
 }
-const VideoBackgroundConstants = fn(7233);
+const VideoBackgroundConstants = fn(7265);
 ({ DefaultVideoBackground: hasOwnProperty, VideoFilterType: metroRequire, ANIMATED_DEFAULT_VIDEO_BACKGROUNDS: closure_7 } = VideoBackgroundConstants);
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const size = fn(2);

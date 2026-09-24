@@ -1,13 +1,13 @@
-// Module ID: 6020
-// Function ID: 6021
+// Module ID: 6052
+// Function ID: 6053
 // Name: BadgeCustomizeAbstractUI
-// Dependencies: [21, 558, 568, 6021, 5802, 2]
+// Dependencies: [21, 558, 568, 6053, 5834, 2]
 
-// Module 6020 (BadgeCustomizeAbstractUI)
+// Module 6052 (BadgeCustomizeAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6021 from "module_6021" /* 6021 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6053 from "module_6053" /* 6053 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const BadgeCustomizeAbstractUI = ReactCompilerGating.isReactCompilerEnabl
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6021 };
+    const obj2 = { uri: _modDef6053 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const BadgeCustomizeAbstractUI = ReactCompilerGating.isReactCompilerEnabl
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6021 };
+  const obj2 = { uri: _modDef6053 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

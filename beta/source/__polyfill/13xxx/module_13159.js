@@ -1,23 +1,35 @@
 // Module ID: 13159
 // Function ID: 13160
-// Dependencies: []
-// Exports: getBreadcrumbLogLevelFromHttpStatusCode
+// Dependencies: [13091, 13112, 13141]
 
 // Module 13159
+import setupIntegration from "module_13141" /* 13141 */;
 
-export const getBreadcrumbLogLevelFromHttpStatusCode = function getBreadcrumbLogLevelFromHttpStatusCode(arg0) {
-  let tmp;
-  if (undefined !== arg0) {
-    if (arg0 < 400) {
-      let str2;
-      if (arg0 >= 500) {
-        str2 = "error";
-      }
-      let str = str2;
-    } else {
-      str = "warning";
+const weakMap = new WeakMap();
+
+export const functionToStringIntegration = setupIntegration.defineIntegration(() => ({
+  name: "FunctionToString",
+  setupOnce() {
+    toString = Function.prototype.toString;
+    try {
+      const _Function = Function;
+      Function.prototype.toString = function() {
+        const items = [...arguments];
+        const originalFunction = closure_1_0(13091).getOriginalFunction(this);
+        const obj = closure_1_0(13091);
+        let self = this;
+        if (set.has(obj2.getClient())) {
+          self = this;
+          if (undefined !== originalFunction) {
+            self = originalFunction;
+          }
+        }
+        return toString.apply(self, items);
+      };
+    } catch (err) {
     }
-    tmp = str;
+  },
+  setup(arg0) {
+    const result = weakMap.set(arg0, true);
   }
-  return tmp;
-};
+}));

@@ -1,17 +1,17 @@
-// Module ID: 17442
-// Function ID: 17443
+// Module ID: 17452
+// Function ID: 17453
 // Name: ActivityPanelUtils
-// Dependencies: [2044, 9313, 558, 568, 4389, 9610, 504, 2]
+// Dependencies: [2044, 9345, 558, 568, 4421, 9642, 504, 2]
 
-// Module 17442 (ActivityPanelUtils)
+// Module 17452 (ActivityPanelUtils)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4389 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 9610 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4421 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 9642 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 
 require = fn;
-const ActivityPanelModes = fn(9313).ActivityPanelModes;
+const ActivityPanelModes = fn(9345).ActivityPanelModes;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/panel/native/utils/ActivityPanelUtils.tsx");

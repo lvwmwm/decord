@@ -1,9 +1,9 @@
-// Module ID: 14906
-// Function ID: 14907
+// Module ID: 14944
+// Function ID: 14945
 // Name: useUserAvailableGuildsWithTags
-// Dependencies: [2109, 2067, 558, 568, 8439, 504, 2]
+// Dependencies: [2109, 2067, 558, 568, 8471, 504, 2]
 
-// Module 14906 (useUserAvailableGuildsWithTags)
+// Module 14944 (useUserAvailableGuildsWithTags)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;

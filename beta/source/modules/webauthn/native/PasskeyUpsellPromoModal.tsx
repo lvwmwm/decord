@@ -1,17 +1,17 @@
-// Module ID: 14932
-// Function ID: 14933
+// Module ID: 14970
+// Function ID: 14971
 // Name: PasskeyUpsellPromoModal
-// Dependencies: [19, 14922, 21, 558, 568, 14925, 1119, 11453, 2]
+// Dependencies: [19, 14960, 21, 558, 568, 14963, 1119, 11489, 2]
 
-// Module 14932 (PasskeyUpsellPromoModal)
+// Module 14970 (PasskeyUpsellPromoModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Modal from "Modal" /* 11453 */;
-import WebAuthnScreens2 from "WebAuthnScreens" /* 14925 */;
+import Modal from "Modal" /* 11489 */;
+import WebAuthnScreens2 from "WebAuthnScreens" /* 14963 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const WebAuthnScreens = fn(14922).WebAuthnScreens;
+const WebAuthnScreens = fn(14960).WebAuthnScreens;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -20,10 +20,10 @@ const result = size.fileFinishedImporting("modules/webauthn/native/PasskeyUpsell
 export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = c.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const screens = tmp(14925).getScreens({ isModal: true });
+    const screens = tmp(14963).getScreens({ isModal: true });
     cResult[0] = screens;
     let first = screens;
-    const tmpResult = tmp(14925);
+    const tmpResult = tmp(14963);
   } else {
     first = cResult[0];
   }
@@ -43,7 +43,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj2.params = obj3;
     const items = [obj2];
     const obj4 = { screens: first, initialRouteStack: items };
-    const tmp14 = jsx(tmp(11453).Modal, { screens: first, initialRouteStack: items });
+    const tmp14 = jsx(tmp(11489).Modal, { screens: first, initialRouteStack: items });
     cResult[2] = arg0;
     cResult[3] = tmp14;
     let tmp8 = tmp14;

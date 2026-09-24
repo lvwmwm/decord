@@ -1,12 +1,12 @@
-// Module ID: 15035
-// Function ID: 15036
+// Module ID: 15044
+// Function ID: 15045
 // Name: useSafetyHubLoading
-// Dependencies: [8707, 558, 568, 504, 2]
+// Dependencies: [8739, 558, 568, 504, 2]
 
-// Module 15035 (useSafetyHubLoading)
+// Module 15044 (useSafetyHubLoading)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import SafetyHubStore from "SafetyHubStore" /* 8707 */;
+import SafetyHubStore from "SafetyHubStore" /* 8739 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);

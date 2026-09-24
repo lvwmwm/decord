@@ -1,9 +1,9 @@
-// Module ID: 16140
-// Function ID: 16141
+// Module ID: 16150
+// Function ID: 16151
 // Name: VisibilitySensor
 // Dependencies: [19, 17, 21, 558, 568, 1482, 2]
 
-// Module 16140 (VisibilitySensor)
+// Module 16150 (VisibilitySensor)
 import _mod17 from "module_17" /* 17 */;
 import c from "c" /* 568 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;

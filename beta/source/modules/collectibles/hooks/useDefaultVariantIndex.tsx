@@ -1,10 +1,10 @@
-// Module ID: 9043
-// Function ID: 9044
+// Module ID: 9075
+// Function ID: 9076
 // Name: useDefaultVariantIndex
-// Dependencies: [7804, 558, 568, 504, 7800, 2]
+// Dependencies: [7836, 558, 568, 504, 7832, 2]
 
-// Module 9043 (useDefaultVariantIndex)
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7804 */;
+// Module 9075 (useDefaultVariantIndex)
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7836 */;
 
 const require = globalThis.__r;
 
@@ -55,7 +55,7 @@ export const useDefaultVariantIndex = ReactCompilerGating.isReactCompilerEnabled
       cResult[3] = stateFromStores;
       cResult[4] = findIndexResult;
     }
-    tmpResult2 = tmp(7800);
+    tmpResult2 = tmp(7832);
   }
   return 0;
 }) : ((variants) => {

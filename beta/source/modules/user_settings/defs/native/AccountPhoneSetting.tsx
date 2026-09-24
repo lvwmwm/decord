@@ -1,21 +1,21 @@
-// Module ID: 14978
-// Function ID: 14979
+// Module ID: 15013
+// Function ID: 15014
 // Name: AccountPhoneSetting
-// Dependencies: [1376, 8238, 7290, 558, 568, 504, 4961, 7289, 1984, 7292, 11594, 1119, 2]
+// Dependencies: [1376, 8270, 7322, 558, 568, 504, 4993, 7321, 1984, 7324, 11630, 1119, 2]
 
-// Module 14978 (AccountPhoneSetting)
+// Module 15013 (AccountPhoneSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 7292 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 7324 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-let closure_4 = fn(7290).PHONE_VERIFICATION_MODAL_KEY;
+let closure_4 = fn(7322).PHONE_VERIFICATION_MODAL_KEY;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -52,7 +52,7 @@ const pressable = SettingBuilders.createPressable({
     const intl = util.intl;
     return intl.string(util.t.dEYpSt);
   },
-  parent: fn(8238).MobileUserSettings.ACCOUNT,
+  parent: fn(8270).MobileUserSettings.ACCOUNT,
   useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -88,7 +88,7 @@ const pressable = SettingBuilders.createPressable({
     const obj2 = { allowDeletePhone: true, reason: null };
     const obj = ModalActionCreatorsDefault;
     obj2.reason = PhoneActionCreators.ChangePhoneReason.USER_SETTINGS_UPDATE;
-    obj.pushLazy(asyncRequireImpl(7289, dependencyMap.paths), obj2, closure_4);
+    obj.pushLazy(asyncRequireImpl(7321, dependencyMap.paths), obj2, closure_4);
   },
   withArrow: true
 });

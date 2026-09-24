@@ -1,15 +1,15 @@
-// Module ID: 17049
-// Function ID: 17050
+// Module ID: 17059
+// Function ID: 17060
 // Name: VibegrationsSettingsRequestCard
-// Dependencies: [19, 17, 13364, 21, 4758, 580, 558, 568, 504, 4725, 16993, 4754, 1119, 3682, 5188, 2]
+// Dependencies: [19, 17, 13400, 21, 4790, 580, 558, 568, 504, 4757, 17003, 4786, 1119, 3714, 5220, 2]
 
-// Module 17049 (VibegrationsSettingsRequestCard)
+// Module 17059 (VibegrationsSettingsRequestCard)
 import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import VibegrationsSettingsSheet from "VibegrationsSettingsSheet" /* 16993 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import VibegrationsSettingsSheet from "VibegrationsSettingsSheet" /* 17003 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 13364 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 13400 */;
 
 const VibegrationsSettingsSheetDefault = VibegrationsSettingsSheet;
 
@@ -17,7 +17,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { card: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 }, chips: null, chip: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 obj2.chips = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_4 };
@@ -66,7 +66,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
             const _Symbol = Symbol;
             if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
               const intl = tmp(1119).intl;
-              const stringResult = intl.string(request(3682)["KO2xN+"]);
+              const stringResult = intl.string(request(3714)["KO2xN+"]);
               cResult[27] = stringResult;
               let tmp22 = stringResult;
             } else {
@@ -74,7 +74,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
             }
             if (cResult[28] !== tmp12) {
               let obj2 = { variant: "secondary", size: "sm", onPress: tmp12, text: tmp22 };
-              const tmp27 = closure_6(tmp(5188).Button, obj2);
+              const tmp27 = closure_6(tmp(5220).Button, obj2);
               cResult[28] = tmp12;
               cResult[29] = tmp27;
               let tmp25 = tmp27;
@@ -223,8 +223,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   }, items1);
   const obj3 = { variant: "text-xs/semibold", color: "text-muted", children: null };
   const intl = tmp2(1119).intl;
-  obj3.children = intl.string(request(3682).wgDhiQ);
-  const items2 = [closure_6(projectId(4754).Text, obj3), , , ];
+  obj3.children = intl.string(request(3714).wgDhiQ);
+  const items2 = [closure_6(projectId(4786).Text, obj3), , , ];
   if (null != request.note) {
     if ("" !== request.note) {
       let note = request.note;
@@ -245,11 +245,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     items2[2] = tmp7Result;
     const obj6 = { variant: "secondary", size: "sm", onPress: callback, text: null };
     const intl3 = tmp2(1119).intl;
-    obj6.text = intl3.string(tmp8(3682)["KO2xN+"]);
-    items2[3] = tmp7(tmp2(5188).Button, obj6);
+    obj6.text = intl3.string(tmp8(3714)["KO2xN+"]);
+    items2[3] = tmp7(tmp2(5220).Button, obj6);
     obj2.children = items2;
     return closure_7(tmp6, obj2);
   }
   const intl2 = tmp2(1119).intl;
-  note = intl2.string(tmp8(3682)["V+DBhs"]);
+  note = intl2.string(tmp8(3714)["V+DBhs"]);
 });

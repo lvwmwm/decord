@@ -1,14 +1,14 @@
-// Module ID: 8715
-// Function ID: 8716
+// Module ID: 8747
+// Function ID: 8748
 // Name: AgeVerificationMethodAvailability
-// Dependencies: [5, 32, 19, 1384, 1368, 8716, 558, 568, 8717, 2]
+// Dependencies: [5, 32, 19, 1384, 1368, 8748, 558, 568, 8749, 2]
 // Exports: getAvailableMethodsV2
 
-// Module 8715 (AgeVerificationMethodAvailability)
+// Module 8747 (AgeVerificationMethodAvailability)
 import c from "c" /* 568 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 8716 */;
-import GoogleWalletActionCreators from "GoogleWalletActionCreators" /* 8717 */;
+import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 8748 */;
+import GoogleWalletActionCreators from "GoogleWalletActionCreators" /* 8749 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -81,8 +81,8 @@ export const useAvailableMethodsV2 = ReactCompilerGating.isReactCompilerEnabled(
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let isIOSResult = tmp(1368).isIOS();
     if (isIOSResult) {
-      isIOSResult = tmp(8716).isAppStoreAgeSignalSupported();
-      const tmpResult2 = tmp(8716);
+      isIOSResult = tmp(8748).isAppStoreAgeSignalSupported();
+      const tmpResult2 = tmp(8748);
     }
     cResult[2] = isIOSResult;
     let tmp9 = isIOSResult;

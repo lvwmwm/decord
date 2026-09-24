@@ -1,16 +1,16 @@
-// Module ID: 15474
-// Function ID: 15475
+// Module ID: 15484
+// Function ID: 15485
 // Name: LoadingIndicator
-// Dependencies: [19, 17, 21, 4758, 558, 568, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 2]
 
-// Module 15474 (LoadingIndicator)
+// Module 15484 (LoadingIndicator)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ActivityIndicator = fn(17).ActivityIndicator;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ indicator: { margin: 16 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

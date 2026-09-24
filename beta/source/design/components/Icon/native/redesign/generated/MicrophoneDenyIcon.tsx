@@ -1,13 +1,13 @@
-// Module ID: 9923
-// Function ID: 9924
+// Module ID: 9955
+// Function ID: 9956
 // Name: MicrophoneDenyIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 9924, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9956, 4493, 2]
 
-// Module 9923 (MicrophoneDenyIcon)
+// Module 9955 (MicrophoneDenyIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod9924 from "module_9924" /* 9924 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9956 from "module_9956" /* 9956 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const MicrophoneDenyIcon = ReactCompilerGating.isReactCompilerEnabled() ?
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(9924);
+    const tmpResult = tmp(9956);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const MicrophoneDenyIcon = ReactCompilerGating.isReactCompilerEnabled() ?
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9924, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9956, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

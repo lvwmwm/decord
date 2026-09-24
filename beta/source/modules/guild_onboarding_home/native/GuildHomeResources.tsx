@@ -1,20 +1,20 @@
-// Module ID: 16917
-// Function ID: 16918
+// Module ID: 16927
+// Function ID: 16928
 // Name: GuildHomeResources
-// Dependencies: [19, 17, 2045, 2100, 4978, 4399, 1078, 21, 4758, 580, 558, 568, 504, 8146, 12139, 16918, 7703, 12432, 1401, 4754, 4748, 5341, 16911, 1105, 1119, 16919, 5188, 2]
+// Dependencies: [19, 17, 2045, 2100, 5010, 4431, 1078, 21, 4790, 580, 558, 568, 504, 8178, 12175, 16928, 7735, 12468, 1401, 4786, 4780, 5373, 16921, 1105, 1119, 16929, 5220, 2]
 
-// Module 16917 (GuildHomeResources)
+// Module 16927 (GuildHomeResources)
 import nativeDefault from "native" /* 580 */;
 import router_utils from "router_utils" /* 1105 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7703 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12432 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 16911 */;
-import _modDef16919 from "module_16919" /* 16919 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7735 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12468 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 16921 */;
+import _modDef16929 from "module_16929" /* 16929 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildChannelStore from "GuildChannelStore" /* 2100 */;
-import MessageStore from "MessageStore" /* 4978 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import MessageStore from "MessageStore" /* 5010 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -23,7 +23,7 @@ const Constants = fn(1078);
 ({ Permissions: c10, Routes: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { paddingHorizontal: 12, display: "flex", flexDirection: "column", alignItems: "center" }, emptyStateContainer: { padding: 20, display: "flex", flexDirection: "column", alignItems: "center" }, channelContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginBottom: 8, padding: 12, borderRadius: nativeDefault.radii.sm, display: "flex", flexDirection: "row", alignItems: "flex-start" }, messageContent: { marginTop: 8 }, textContent: { flex: 1 }, thumbnail: { marginLeft: 8 }, emptyStateImage: { marginTop: 12, marginBottom: 20 }, icon: { width: 72, height: 72 } };
 let closure_14 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -141,9 +141,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
     }
   }
   const tmpResult7 = channelId(504);
-  const forumPostMediaProperties = channelId(8146).useForumPostMediaProperties(tmp14, false);
-  const tmpResult8 = channelId(8146);
-  const firstMediaIsEmbed = channelId(8146).useFirstMediaIsEmbed(tmp14, false);
+  const forumPostMediaProperties = channelId(8178).useForumPostMediaProperties(tmp14, false);
+  const tmpResult8 = channelId(8178);
+  const firstMediaIsEmbed = channelId(8178).useFirstMediaIsEmbed(tmp14, false);
   if (forumPostMediaProperties != null) {
     class R {
       constructor() {
@@ -164,8 +164,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
         return closure_8.getMessages(channelId);
       }
     }
-    const shouldObscure = tmp(12139).useSharedMediaProps(obj2).shouldObscure;
-    stateFromStores(16918)(tmp14);
+    const shouldObscure = tmp(12175).useSharedMediaProps(obj2).shouldObscure;
+    stateFromStores(16928)(tmp14);
     if (cResult[14] === stateFromStores) {
       class R {
         constructor() {
@@ -243,7 +243,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
     cResult[14] = stateFromStores;
     cResult[15] = stateFromStores2;
     cResult[16] = tmp22;
-    const tmpResult10 = tmp(12139);
+    const tmpResult10 = tmp(12175);
   }
   obj2 = { channel: stateFromStores, media: null };
   cResult[11] = stateFromStores;
@@ -264,10 +264,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   const stateFromStores2 = channelId(504).useStateFromStores(items2, () => MessageStore.getMessages(channelId));
   const firstResult = stateFromStores2.first();
   const obj3 = channelId(504);
-  const forumPostMediaProperties = channelId(8146).useForumPostMediaProperties(firstResult, false);
-  const obj5 = channelId(8146);
+  const forumPostMediaProperties = channelId(8178).useForumPostMediaProperties(firstResult, false);
+  const obj5 = channelId(8178);
   let length;
-  const firstMediaIsEmbed = channelId(8146).useFirstMediaIsEmbed(firstResult, false);
+  const firstMediaIsEmbed = channelId(8178).useFirstMediaIsEmbed(firstResult, false);
   if (forumPostMediaProperties != null) {
     length = forumPostMediaProperties.length;
   }
@@ -275,9 +275,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   if (length > 0) {
     first = forumPostMediaProperties[0];
   }
-  const obj6 = channelId(8146);
-  let flag = channelId(12139).useSharedMediaProps({ channel: stateFromStores, media: first }).shouldObscure;
-  const tmp11 = stateFromStores(16918)(firstResult);
+  const obj6 = channelId(8178);
+  let flag = channelId(12175).useSharedMediaProps({ channel: stateFromStores, media: first }).shouldObscure;
+  const tmp11 = stateFromStores(16928)(firstResult);
   const tmp12 = null != stateFromStores && null == stateFromStores2.first() && !stateFromStores2.loadingMore && !stateFromStores2.ready && !stateFromStores2.hasFetched;
   dependencyMap = tmp12;
   const items3 = [channelId, tmp12];
@@ -295,7 +295,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
       const obj7 = { onPress: tmp14, style: tmp.channelContainer, children: null };
       const obj8 = { style: tmp.textContent, children: null };
       const obj9 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: channelId.title };
-      const items4 = [closure_12(tmp2(4754).Text, obj9), , ];
+      const items4 = [closure_12(tmp2(4786).Text, obj9), , ];
       let tmp19Result = tmp16;
       if (null == description || 0 === description.length) {
         tmp19Result = null != tmp11;
@@ -303,20 +303,20 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
       if (tmp19Result) {
         const obj10 = { variant: "text-sm/normal", color: "text-default", style: tmp.messageContent, lineClamp: 3, ellipsizeMode: "tail", children: null };
         ({ guild_id: obj15.guildId, id: obj15.channelId } = stateFromStores);
-        obj10.children = tmp10(4748).parse(tmp11, true, { guildId: null, channelId: null });
-        tmp19Result = tmp19(tmp2(4754).Text, obj10);
+        obj10.children = tmp10(4780).parse(tmp11, true, { guildId: null, channelId: null });
+        tmp19Result = tmp19(tmp2(4786).Text, obj10);
         const obj11 = { guildId: null, channelId: null };
-        const tmp10Result3 = tmp10(4748);
+        const tmp10Result3 = tmp10(4780);
       }
       items4[1] = tmp19Result;
       let tmp19Result4 = !tmp16;
       if (!(null == description || 0 === description.length)) {
         const obj12 = { variant: "text-sm/normal", color: "text-default", style: tmp.messageContent, lineClamp: 3, ellipsizeMode: "tail", children: null };
         ({ guild_id: obj18.guildId, id: obj18.channelId } = stateFromStores);
-        obj12.children = tmp10(4748).parse(description, true, { guildId: null, channelId: null });
-        tmp19Result4 = tmp19(tmp2(4754).Text, obj12);
+        obj12.children = tmp10(4780).parse(description, true, { guildId: null, channelId: null });
+        tmp19Result4 = tmp19(tmp2(4786).Text, obj12);
         const obj13 = { guildId: null, channelId: null };
-        const tmp10Result4 = tmp10(4748);
+        const tmp10Result4 = tmp10(4780);
       }
       items4[2] = tmp19Result4;
       obj8.children = items4;
@@ -349,22 +349,22 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
               if (flag == null) {
                 flag = false;
               }
-              obj17.embedLeftBorderColor = tmp2(8146).getEmbedColor(firstResult, flag);
+              obj17.embedLeftBorderColor = tmp2(8178).getEmbedColor(firstResult, flag);
               let id;
               if (firstResult != null) {
                 id = firstResult.id;
               }
               obj17.firstMessageId = id;
               obj17.containerStyle = tmp.thumbnail;
-              tmp19Result6 = tmp19(tmp2(12139).ForumPostMediaThumbnail, obj17);
-              const tmp2Result2 = tmp2(8146);
+              tmp19Result6 = tmp19(tmp2(12175).ForumPostMediaThumbnail, obj17);
+              const tmp2Result2 = tmp2(8178);
             }
           }
         }
       }
       items5[2] = tmp19Result6;
       obj7.children = items5;
-      return closure_13(tmp2(5341).PressableOpacity, obj7);
+      return closure_13(tmp2(5373).PressableOpacity, obj7);
     }
   }
   return null;
@@ -398,14 +398,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       const obj2 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
       const intl = tmp(1119).intl;
       obj2.children = intl.string(tmp(1119).t.owvC9U);
-      const tmp19 = closure_12(tmp(4754).Text, obj2);
+      const tmp19 = closure_12(tmp(4786).Text, obj2);
       cResult[2] = tmp19;
       let tmp17 = tmp19;
     } else {
       tmp17 = cResult[2];
     }
     if (cResult[3] !== tmp4.emptyStateImage) {
-      const obj3 = { style: tmp4.emptyStateImage, source: _modDef16919 };
+      const obj3 = { style: tmp4.emptyStateImage, source: _modDef16929 };
       const tmp23 = closure_12(closure_5, obj3);
       cResult[3] = tmp4.emptyStateImage;
       cResult[4] = tmp23;
@@ -424,7 +424,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     if (cResult[6] !== tmp6) {
       const obj4 = { onPress: tmp6, text: tmp24 };
-      const tmp28 = closure_12(tmp(5188).Button, obj4);
+      const tmp28 = closure_12(tmp(5220).Button, obj4);
       cResult[6] = tmp6;
       cResult[7] = tmp28;
       let tmp26 = tmp28;
@@ -502,8 +502,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
     const intl = guildId(1119).intl;
     obj3.children = intl.string(guildId(1119).t.owvC9U);
-    const items = [closure_12(guildId(4754).Text, obj3), , ];
-    const obj4 = { style: tmp.emptyStateImage, source: _modDef16919 };
+    const items = [closure_12(guildId(4786).Text, obj3), , ];
+    const obj4 = { style: tmp.emptyStateImage, source: _modDef16929 };
     items[1] = closure_12(closure_5, obj4);
     const obj5 = {
       onPress() {
@@ -516,7 +516,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     };
     const intl2 = guildId(1119).intl;
     obj5.text = intl2.string(guildId(1119).t["3iCBUn"]);
-    items[2] = closure_12(guildId(5188).Button, obj5);
+    items[2] = closure_12(guildId(5220).Button, obj5);
     obj2.children = items;
     let tmp6 = closure_13(closure_4, obj2);
   } else {

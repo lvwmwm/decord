@@ -1,16 +1,16 @@
-// Module ID: 16204
-// Function ID: 16205
+// Module ID: 16214
+// Function ID: 16215
 // Name: DoubleTapEmojiSetting
-// Dependencies: [5, 19, 8238, 1078, 1379, 21, 4758, 580, 558, 568, 2023, 8231, 1401, 7377, 10436, 1245, 7429, 10449, 11594, 1119, 2]
+// Dependencies: [5, 19, 8270, 1078, 1379, 21, 4790, 580, 558, 568, 2023, 8263, 1401, 7409, 10475, 1245, 7461, 10488, 11630, 1119, 2]
 
-// Module 16204 (DoubleTapEmojiSetting)
+// Module 16214 (DoubleTapEmojiSetting)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import EmojiDefault from "Emoji" /* 7377 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8231 */;
+import EmojiDefault from "Emoji" /* 7409 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8263 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ require = fn;
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const EmojiIntention = fn(1379).EmojiIntention;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { textEmoji: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT } };
 let closure_7 = createStyles.createStyles(obj2);
 fn(558);
@@ -103,19 +103,19 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const DoubleTapReactionEmoji = UserSettings.DoubleTapReactionEmoji;
   const setting = DoubleTapReactionEmoji.useSetting();
   if (cResult[0] !== setting) {
-    const result = tmp(8231).disambiguatedEmojiFromSettingsValue(setting);
+    const result = tmp(8263).disambiguatedEmojiFromSettingsValue(setting);
     cResult[0] = setting;
     cResult[1] = result;
     let tmp5 = result;
-    const tmpResult = tmp(8231);
+    const tmpResult = tmp(8263);
   } else {
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fallbackDoubleTapDisambiguatedEmoji = tmp(8231).getFallbackDoubleTapDisambiguatedEmoji();
+    const fallbackDoubleTapDisambiguatedEmoji = tmp(8263).getFallbackDoubleTapDisambiguatedEmoji();
     cResult[2] = fallbackDoubleTapDisambiguatedEmoji;
     let tmp7 = fallbackDoubleTapDisambiguatedEmoji;
-    const tmpResult2 = tmp(8231);
+    const tmpResult2 = tmp(8263);
   } else {
     tmp7 = cResult[2];
   }
@@ -157,7 +157,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 ReactCompilerGating = fn(558);
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   const DoubleTapReactionEmoji = UserSettings.DoubleTapReactionEmoji;
@@ -193,7 +193,7 @@ const pressable = SettingBuilders.createPressable({
     const intl = util.intl;
     return intl.string(util.t["96WKNB"]);
   },
-  parent: fn(8238).MobileUserSettings.CHAT,
+  parent: fn(8270).MobileUserSettings.CHAT,
   useTrailing: tmp3,
   onPress: function onPressSetting() {
     let obj2 = { pickerIntention: EmojiIntention.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };

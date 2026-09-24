@@ -1,11 +1,11 @@
-// Module ID: 18060
-// Function ID: 18061
+// Module ID: 18070
+// Function ID: 18071
 // Name: GuildSettingsRoleItem
-// Dependencies: [5, 19, 17, 1078, 21, 4758, 580, 4754, 558, 568, 5217, 7433, 5111, 1119, 11693, 5739, 5207, 4715, 8178, 7452, 7450, 5198, 1374, 1096, 9818, 5309, 1181, 10477, 5315, 5822, 2]
+// Dependencies: [5, 19, 17, 1078, 21, 4790, 580, 4786, 558, 568, 5249, 7465, 5143, 1119, 11729, 5771, 5239, 4747, 8210, 7484, 7482, 5230, 1374, 1096, 9850, 5341, 1181, 10513, 5347, 5854, 2]
 
-// Module 18060 (GuildSettingsRoleItem)
+// Module 18070 (GuildSettingsRoleItem)
 import nativeDefault from "native" /* 580 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5771 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,9 +18,9 @@ const DEFAULT_ROLE_COLOR_HEX = fn(1078).DEFAULT_ROLE_COLOR_HEX;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let c9 = "text-md/semibold";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { row: { flexDirection: "row", gap: 4, alignItems: "center" }, everyone: { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: 20, padding: 8 }, label: null, sparkleIcon: null, dragHandlePressable: null, container: null, gradient: null, image: null };
-let prop = fn(4754).TextStyleSheet["text-md/semibold"];
+let prop = fn(4786).TextStyleSheet["text-md/semibold"];
 let num;
 if (prop != null) {
   num = prop.lineHeight;
@@ -979,7 +979,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
               } else if (closure_1_5) {
                 c1 = 1;
                 c2 = 1;
-                const obj6 = { value: tmp2(11693).putRoleConnectionsConfigurations(guildId, tmp2.id, []), done: false };
+                const obj6 = { value: tmp2(11729).putRoleConnectionsConfigurations(guildId, tmp2.id, []), done: false };
                 return obj6;
               }
             } else if (arg0 === 1) {
@@ -990,7 +990,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
               const obj = { value, done: true };
               return obj;
             }
-            onPress(5739).deleteRole(guildId, tmp2.id);
+            onPress(5771).deleteRole(guildId, tmp2.id);
             c2 = 3;
             return { value: "IconComponent", done: null };
           } catch (tmp16) {
@@ -1120,7 +1120,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
                   } else if (closure_1_5) {
                     c1 = 1;
                     c2 = 1;
-                    const obj6 = { value: tmp2(11693).putRoleConnectionsConfigurations(guildId, tmp2.id, []), done: false };
+                    const obj6 = { value: tmp2(11729).putRoleConnectionsConfigurations(guildId, tmp2.id, []), done: false };
                     return obj6;
                   }
                 } else if (arg0 === 1) {

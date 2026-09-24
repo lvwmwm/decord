@@ -1,14 +1,14 @@
-// Module ID: 9186
-// Function ID: 9187
+// Module ID: 9218
+// Function ID: 9219
 // Name: InputButton
-// Dependencies: [109, 19, 17, 21, 4758, 580, 558, 568, 5193, 6856, 5189, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 580, 558, 568, 5225, 6888, 5221, 2]
 
-// Module 9186 (InputButton)
+// Module 9218 (InputButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseTextButton from "BaseTextButton" /* 5189 */;
-import ButtonConstants from "ButtonConstants" /* 5193 */;
-import InputFieldContainer from "InputFieldContainer" /* 6856 */;
+import BaseTextButton from "BaseTextButton" /* 5221 */;
+import ButtonConstants from "ButtonConstants" /* 5225 */;
+import InputFieldContainer from "InputFieldContainer" /* 6888 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,7 +17,7 @@ let closure_2 = ["size", "round", "text", "value", "icon", "iconPosition", "acce
 let closure_3 = ["size", "round", "text", "value", "icon", "iconPosition", "accessibilityLabel", "accessibilityValue", "maxFontSizeMultiplier"];
 const Text = fn(17).Text;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 const obj = { buttonText: { flexGrow: 1, flexShrink: 1, width: "100%" }, buttonTextPlaceholder: { color: nativeDefault.colors.INPUT_PLACEHOLDER_TEXT_DEFAULT }, buttonTextValue: null };
 let obj3 = { color: nativeDefault.colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
 obj.buttonTextValue = { color: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_TEXT };
@@ -74,14 +74,14 @@ export const InputButton = noop.forwardRef(ReactCompilerGating.isReactCompilerEn
     str3 = tmp10;
   }
   if (undefined === BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER) {
-    BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = tmp(5193).BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
+    BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = tmp(5225).BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
   }
   if (cResult[11] === (undefined !== tmp9 && tmp9)) {
     if (cResult[12] === str2) {
       if (cResult[13] === tmp16) {
         let tmp17 = cResult[14];
       }
-      const inputStyles = tmp(6856).useInputStyles(tmp17);
+      const inputStyles = tmp(6888).useInputStyles(tmp17);
       const tmp20 = closure_7();
       if (cResult[15] === tmp7) {
         if (cResult[16] === str3) {
@@ -145,7 +145,7 @@ export const InputButton = noop.forwardRef(ReactCompilerGating.isReactCompilerEn
                               obj2.accessibilityLabel = tmp26;
                               obj2.accessibilityValue = tmp30;
                               obj2.textElement = tmp36;
-                              const tmp46 = jsx(tmp(5189).BaseTextButton, {});
+                              const tmp46 = jsx(tmp(5221).BaseTextButton, {});
                               cResult[38] = tmp6;
                               cResult[39] = tmp7;
                               cResult[40] = str3;
@@ -223,7 +223,7 @@ export const InputButton = noop.forwardRef(ReactCompilerGating.isReactCompilerEn
       } else {
         const obj7 = { paddingEnd: inputStyles.trailingIcon.paddingStart };
       }
-      const tmpResult = tmp(6856);
+      const tmpResult = tmp(6888);
     }
   }
   const obj8 = { size: str2, round: undefined !== tmp9 && tmp9, hasLeadingIcon: "start" === str3 };

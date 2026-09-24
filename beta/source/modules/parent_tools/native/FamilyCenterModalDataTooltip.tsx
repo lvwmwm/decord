@@ -1,29 +1,29 @@
-// Module ID: 15158
-// Function ID: 15159
+// Module ID: 15168
+// Function ID: 15169
 // Name: FamilyCenterModalDataTooltip
-// Dependencies: [32, 19, 17, 7785, 21, 5291, 12051, 4459, 13854, 5293, 12053, 4720, 11330, 4758, 580, 558, 568, 4754, 1119, 2486, 12050, 8922, 7839, 8698, 8699, 12057, 5188, 4961, 5839, 11453, 2]
+// Dependencies: [32, 19, 17, 7817, 21, 5323, 12087, 4491, 13890, 5325, 12089, 4752, 11366, 4790, 580, 558, 568, 4786, 1119, 2486, 12086, 8954, 7871, 8730, 8731, 12093, 5220, 4993, 5871, 11489, 2]
 
-// Module 15158 (FamilyCenterModalDataTooltip)
+// Module 15168 (FamilyCenterModalDataTooltip)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import _modDef2486 from "module_2486" /* 2486 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8922 */;
-import Modal from "Modal" /* 11453 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8954 */;
+import Modal from "Modal" /* 11489 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const ModalActionCreatorsDefault = tmp10(4961);
+const ModalActionCreatorsDefault = tmp10(4993);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-let obj = { [USER_INTERACTION]: fn(5291).ChatIcon, [USER_CALLED]: fn(12051).PhoneIcon, [USER_ADD]: fn(4459).FriendsIcon, [GUILD_ADD]: fn(13854).ServerGridIcon, [GUILD_INTERACTION]: fn(5293).ThreadIcon, [PURCHASES]: fn(12053).CreditCardIcon, [TOTAL_VOICE_MINUTES]: fn(4720).ClockIcon, [GIFTS]: fn(11330).GiftIcon };
-({ USER_INTERACTION, USER_CALLED, USER_ADD, GUILD_ADD, GUILD_INTERACTION, PURCHASES, TOTAL_VOICE_MINUTES, GIFTS } = fn(7785).TeenActionDisplayType);
-let createStyles = fn(4758);
+let obj = { [USER_INTERACTION]: fn(5323).ChatIcon, [USER_CALLED]: fn(12087).PhoneIcon, [USER_ADD]: fn(4491).FriendsIcon, [GUILD_ADD]: fn(13890).ServerGridIcon, [GUILD_INTERACTION]: fn(5325).ThreadIcon, [PURCHASES]: fn(12089).CreditCardIcon, [TOTAL_VOICE_MINUTES]: fn(4752).ClockIcon, [GIFTS]: fn(11366).GiftIcon };
+({ USER_INTERACTION, USER_CALLED, USER_ADD, GUILD_ADD, GUILD_INTERACTION, PURCHASES, TOTAL_VOICE_MINUTES, GIFTS } = fn(7817).TeenActionDisplayType);
+let createStyles = fn(4790);
 let obj3 = { row: { display: "flex", flexDirection: "row", width: "100%", alignItems: "center", marginBottom: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm }, content: { flexShrink: 1 }, iconContainer: null, header: null, icon: null };
 let size = { display: "flex", alignItems: "center", justifyContent: "center", width: 40, height: 40, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.round, flexShrink: 0, marginRight: nativeDefault.space.PX_12 };
 obj3.iconContainer = size;
@@ -51,7 +51,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[9] !== description) {
           const obj2 = { variant: "text-xs/medium", color: "text-default", children: description };
-          const tmp16 = timestampProducer(tmp(4754).Text, obj2);
+          const tmp16 = timestampProducer(tmp(4786).Text, obj2);
           cResult[9] = description;
           cResult[10] = tmp16;
           let tmp14 = tmp16;
@@ -93,7 +93,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp17 = tmp20;
       }
       const obj5 = { style: tmp4.header, variant: "text-sm/bold", color: "mobile-text-heading-primary", children: header };
-      const tmp13 = timestampProducer(tmp(4754).Text, obj5);
+      const tmp13 = timestampProducer(tmp(4786).Text, obj5);
       cResult[6] = header;
       cResult[7] = tmp4.header;
       cResult[8] = tmp13;
@@ -124,7 +124,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj.children = items;
   return React5(View, obj);
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj7 = { container: null, groupHeader: null };
 let obj6 = { tintColor: nativeDefault.colors.TEXT_BRAND };
 obj7.container = { display: "flex", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, width: "100%" };
@@ -148,7 +148,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [tmp4, tmp5] = cResult;
   }
   obj = container(568);
-  const ageSpecificText = container(12050).useAgeSpecificText(tmp4, tmp5);
+  const ageSpecificText = container(12086).useAgeSpecificText(tmp4, tmp5);
   container = useIsInAdultAgeGroupDefault();
   if (cResult[2] === ageSpecificText) {
     if (cResult[3] === container) {
@@ -171,8 +171,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     const intl3 = tmp(1119).intl;
                     obj3.text = intl3.string(tmp(1119).t["NX+WJN"]);
                     obj3.onPress = ModalActionCreatorsDefault.pop;
-                    obj2.children = closure_6(tmp(5188).Button, obj3);
-                    const tmp36 = closure_6(tmp(12057).ModalFooter, obj2);
+                    obj2.children = closure_6(tmp(5220).Button, obj3);
+                    const tmp36 = closure_6(tmp(12093).ModalFooter, obj2);
                     cResult[25] = tmp36;
                     let tmp34 = tmp36;
                   } else {
@@ -216,10 +216,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
   }
-  const tmpResult = container(12050);
-  const sortedActivityTypeConfigs = container(7839).getSortedActivityTypeConfigs();
-  const ModalScreen = tmp(8698).ModalScreen;
-  const ModalContent = tmp(8699).ModalContent;
+  const tmpResult = container(12086);
+  const sortedActivityTypeConfigs = container(7871).getSortedActivityTypeConfigs();
+  const ModalScreen = tmp(8730).ModalScreen;
+  const ModalContent = tmp(8731).ModalContent;
   const container2 = groupHeader.container;
   if (cResult[12] === ageSpecificText) {
     if (cResult[13] === groupHeader.groupHeader) {
@@ -232,7 +232,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           [tmp2, obj] = tmp;
           obj1 = { IconComponent: closure_8[tmp2], header: obj.tooltipHeader(), description: null };
           tmp3 = jsx;
-          tmp4 = f68806;
+          tmp4 = f68846;
           tmp5 = closure_0;
           obj1.description = obj.tooltipDescription(tmp5);
           return tmp3(tmp4, obj1, tmp2);
@@ -248,7 +248,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           [tmp2, obj] = tmp;
           obj1 = { IconComponent: closure_8[tmp2], header: obj.tooltipHeader(), description: null };
           tmp3 = jsx;
-          tmp4 = f68806;
+          tmp4 = f68846;
           tmp5 = closure_0;
           obj1.description = obj.tooltipDescription(tmp5);
           return tmp3(tmp4, obj1, tmp2);
@@ -269,7 +269,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[10] = tmp18;
     cResult[11] = mapped;
   }
-  const tmp19 = closure_6(container(4754).Text, { style: groupHeader.groupHeader, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: ageSpecificText });
+  const tmp19 = closure_6(container(4786).Text, { style: groupHeader.groupHeader, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: ageSpecificText });
   cResult[12] = ageSpecificText;
   cResult[13] = groupHeader.groupHeader;
   cResult[14] = tmp19;
@@ -318,7 +318,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { DATA_TOOLTIP: null };
     const obj3 = {
       headerShown: true,
-      headerLeft: tmp(5839).getHeaderCloseButton(ModalActionCreatorsDefault.pop),
+      headerLeft: tmp(5871).getHeaderCloseButton(ModalActionCreatorsDefault.pop),
       headerTitle() {
           return null;
         },
@@ -329,7 +329,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj2.DATA_TOOLTIP = obj3;
     cResult[0] = obj2;
     let first = obj2;
-    const tmpResult = tmp(5839);
+    const tmpResult = tmp(5871);
   } else {
     first = cResult[0];
   }
@@ -337,7 +337,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj4 = { initialRouteName: "DATA_TOOLTIP", screens: first, headerBackTitle: null };
     const intl = tmp(1119).intl;
     obj4.headerBackTitle = intl.string(tmp(1119).t["13/7kX"]);
-    const tmp8 = timestampProducer(tmp(11453).Modal, obj4);
+    const tmp8 = timestampProducer(tmp(11489).Modal, obj4);
     cResult[1] = tmp8;
     let tmp6 = tmp8;
   } else {

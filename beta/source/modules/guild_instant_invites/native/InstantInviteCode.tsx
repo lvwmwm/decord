@@ -1,18 +1,18 @@
-// Module ID: 11246
-// Function ID: 11247
+// Module ID: 11282
+// Function ID: 11283
 // Name: InstantInviteCode
-// Dependencies: [19, 17, 2049, 4409, 1376, 21, 4758, 580, 558, 568, 5241, 5300, 4911, 4754, 5186, 4720, 1119, 11235, 2]
+// Dependencies: [19, 17, 2049, 4441, 1376, 21, 4790, 580, 558, 568, 5273, 5332, 4943, 4786, 5218, 4752, 1119, 11271, 2]
 
-// Module 11246 (InstantInviteCode)
+// Module 11282 (InstantInviteCode)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useChannelName from "useChannelName" /* 4911 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5241 */;
-import CountDownDefault from "CountDown" /* 11235 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useChannelName from "useChannelName" /* 4943 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5273 */;
+import CountDownDefault from "CountDown" /* 11271 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -20,7 +20,7 @@ const View = fn(17).View;
 let closure_5 = fn(2049).createChannelRecordFromInvite;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { flex: { flex: 1 }, channel: { flex: 0 }, time: { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE } };
 let closure_10 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -29,14 +29,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ channel, expiresAt } = arg0);
   const tmp4 = closure_10();
   if (cResult[0] !== channel) {
-    let TextIcon = tmp(5241).getSimpleChannelIconComponent(channel);
+    let TextIcon = tmp(5273).getSimpleChannelIconComponent(channel);
     if (TextIcon == null) {
-      TextIcon = tmp(5300).TextIcon;
+      TextIcon = tmp(5332).TextIcon;
     }
     cResult[0] = channel;
     cResult[1] = TextIcon;
     let tmp5 = TextIcon;
-    const tmpResult = tmp(5241);
+    const tmpResult = tmp(5273);
   } else {
     tmp5 = cResult[1];
   }
@@ -49,7 +49,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp7 = cResult[3];
   }
   if (cResult[4] !== channel) {
-    const tmpResult2 = tmp(4911);
+    const tmpResult2 = tmp(4943);
     const channelName = tmpResult2.computeChannelName(channel, UserStore, RelationshipStore, false);
     cResult[4] = channel;
     cResult[5] = channelName;
@@ -78,7 +78,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj2 = { children: null };
         const items = [tmp18, tmp21];
         obj2.children = items;
-        const tmp29 = options(tmp(5186).Stack, obj2);
+        const tmp29 = options(tmp(5218).Stack, obj2);
         cResult[15] = tmp18;
         cResult[16] = tmp21;
         cResult[17] = tmp29;
@@ -87,15 +87,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp23 = null != expiresAt;
       if (tmp23) {
         const obj3 = { direction: "horizontal", align: "center", children: null };
-        const items1 = [closure_1_8(tmp(4720).ClockIcon, { size: "xs", color: "icon-subtle" }), , ];
+        const items1 = [closure_1_8(tmp(4752).ClockIcon, { size: "xs", color: "icon-subtle" }), , ];
         const obj4 = { variant: "text-md/semibold", color: "text-subtle", children: null };
         const intl = tmp(1119).intl;
         obj4.children = intl.string(tmp(1119).t.aTABYx);
-        items1[1] = closure_1_8(tmp(4754).Text, obj4);
+        items1[1] = closure_1_8(tmp(4786).Text, obj4);
         const obj5 = { style: tmp4.time, deadline: expiresAt };
         items1[2] = closure_1_8(CountDownDefault, obj5);
         obj3.children = items1;
-        tmp23 = options(tmp(5186).Stack, obj3);
+        tmp23 = options(tmp(5218).Stack, obj3);
       }
       cResult[12] = expiresAt;
       cResult[13] = tmp4.time;
@@ -105,7 +105,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj6 = { direction: "horizontal", align: "center", children: null };
     const items2 = [tmp7, tmp16];
     obj6.children = items2;
-    const tmp20 = options(tmp(5186).Stack, obj6);
+    const tmp20 = options(tmp(5218).Stack, obj6);
     cResult[9] = tmp7;
     cResult[10] = tmp16;
     cResult[11] = tmp20;
@@ -121,7 +121,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp = closure_10();
   let TextIcon = utils_ChannelUtils.getSimpleChannelIconComponent(channel);
   if (TextIcon == null) {
-    TextIcon = tmp2(5300).TextIcon;
+    TextIcon = tmp2(5332).TextIcon;
   }
   const obj2 = { direction: "horizontal", align: "center", children: null };
   const items = [closure_1_8(TextIcon, { color: "icon-subtle", size: "xs" }), ];
@@ -133,15 +133,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp4Result = null != expiresAt;
   if (tmp4Result) {
     const obj4 = { direction: "horizontal", align: "center", children: null };
-    const items2 = [tmp5(tmp2(4720).ClockIcon, { size: "xs", color: "icon-subtle" }), , ];
+    const items2 = [tmp5(tmp2(4752).ClockIcon, { size: "xs", color: "icon-subtle" }), , ];
     const obj5 = { variant: "text-md/semibold", color: "text-subtle", children: null };
     const intl = tmp2(1119).intl;
     obj5.children = intl.string(tmp2(1119).t.aTABYx);
-    items2[1] = tmp5(tmp2(4754).Text, obj5);
+    items2[1] = tmp5(tmp2(4786).Text, obj5);
     const obj6 = { style: tmp.time, deadline: expiresAt };
     items2[2] = tmp5(CountDownDefault, obj6);
     obj4.children = items2;
-    tmp4Result = tmp4(tmp2(5186).Stack, obj4);
+    tmp4Result = tmp4(tmp2(5218).Stack, obj4);
   }
   children[1] = tmp4Result;
   return options(Stack_Stack.Stack, { children });
@@ -166,7 +166,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
   }
   if (cResult[2] !== invite.code) {
     const obj2 = { variant: "text-lg/bold", tabularNumbers: true, children: invite.code };
-    const tmp10 = closure_1_8(tmp(4754).Text, obj2);
+    const tmp10 = closure_1_8(tmp(4786).Text, obj2);
     cResult[2] = invite.code;
     cResult[3] = tmp10;
     let tmp8 = tmp10;
@@ -205,7 +205,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
     const obj4 = { children: null };
     const items = [tmp8, tmp13];
     obj4.children = items;
-    const tmp17 = options(tmp(5186).Stack, obj4);
+    const tmp17 = options(tmp(5218).Stack, obj4);
     cResult[9] = tmp8;
     cResult[10] = tmp13;
     cResult[11] = tmp17;
@@ -222,12 +222,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
   const obj = { style: closure_10().flex, children: null };
   const memo = noop.useMemo(() => closure_5(invite.channel), items);
   const obj2 = { children: null };
-  const items1 = [closure_8(invite(4754).Text, { variant: "text-lg/bold", tabularNumbers: true, children: invite.code }), ];
+  const items1 = [closure_8(invite(4786).Text, { variant: "text-lg/bold", tabularNumbers: true, children: invite.code }), ];
   const obj3 = { variant: "text-lg/bold", tabularNumbers: true, children: invite.code };
   const tmp = closure_10();
   items1[1] = closure_8(closure_11, { channel: memo, expiresAt: invite.getExpiresAt() });
   obj2.children = items1;
-  obj.children = closure_9(invite(5186).Stack, obj2);
+  obj.children = closure_9(invite(5218).Stack, obj2);
   return closure_8(View, obj);
 });
 export const InstantInviteDetails = tmp3;

@@ -1,36 +1,45 @@
 // Module ID: 13158
 // Function ID: 13159
-// Dependencies: []
-// Exports: flatten
+// Dependencies: [13112, 13099, 13085]
+// Exports: addBreadcrumb
 
 // Module 13158
+import _mod13112 from "module_13112" /* 13112 */;
 
-export const flatten = function flatten(arr) {
-  const items = [];
-  const item = arr.forEach((arr) => {
-    if (Array.isArray(arr)) {
-      let item = arr.forEach((arr) => {
-        if (Array.isArray(arr)) {
-          let item = arr.forEach((arr) => {
-            if (Array.isArray(arr)) {
-              let item = arr.forEach((arr) => {
-                if (Array.isArray(arr)) {
-                  let item = arr.forEach(() => { ... });
-                } else {
-                  closure_1_0.push(arr);
-                }
-              });
-            } else {
-              closure_1_0.push(arr);
-            }
-          });
-        } else {
-          closure_1_0.push(arr);
-        }
-      });
-    } else {
-      closure_1_0.push(arr);
+require = arg1;
+const dependencyMap = arg6;
+
+export const addBreadcrumb = function addBreadcrumb(arg0, arg1) {
+  closure_0 = arg1;
+  const client = _mod13112.getClient();
+  const isolationScope = _mod13112.getIsolationScope();
+  if (client) {
+    options = client.getOptions();
+    let beforeBreadcrumb = options.beforeBreadcrumb;
+    let tmp5 = null;
+    if (undefined !== beforeBreadcrumb) {
+      tmp5 = beforeBreadcrumb;
     }
-  });
-  return items;
+    beforeBreadcrumb = tmp5;
+    const maxBreadcrumbs = options.maxBreadcrumbs;
+    let num = 100;
+    if (undefined !== maxBreadcrumbs) {
+      num = maxBreadcrumbs;
+    }
+    if (num > 0) {
+      let obj2 = { timestamp: tmp(13099).dateTimestampInSeconds() };
+      const merged = Object.assign(arg0);
+      if (tmp5) {
+        obj2 = tmp(13085).consoleSandbox(() => beforeBreadcrumb(obj2, closure_0));
+        const tmpResult2 = tmp(13085);
+      }
+      if (null !== obj2) {
+        if (client.emit) {
+          client.emit("beforeAddBreadcrumb", obj2, arg1);
+        }
+        isolationScope.addBreadcrumb(obj2, num);
+      }
+      const tmpResult = tmp(13099);
+    }
+  }
 };

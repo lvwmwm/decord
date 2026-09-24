@@ -1,22 +1,22 @@
-// Module ID: 17744
-// Function ID: 17745
+// Module ID: 17754
+// Function ID: 17755
 // Name: AudioSettingsManager
-// Dependencies: [32, 4775, 5226, 502, 1996, 4783, 9893, 11, 1190, 510, 2028, 9892, 12, 14343, 10023, 7365, 2]
+// Dependencies: [32, 4807, 5258, 502, 1996, 4815, 9925, 11, 1190, 510, 2028, 9924, 12, 14381, 10062, 7397, 2]
 
-// Module 17744 (AudioSettingsManager)
+// Module 17754 (AudioSettingsManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Storage2 from "Storage" /* 510 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2028 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 9892 */;
-import AudioSettingsDefaultVolumes from "AudioSettingsDefaultVolumes" /* 9893 */;
-import AudioSettingsPending from "AudioSettingsPending" /* 14343 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 9924 */;
+import AudioSettingsDefaultVolumes from "AudioSettingsDefaultVolumes" /* 9925 */;
+import AudioSettingsPending from "AudioSettingsPending" /* 14381 */;
 import _slicedToArray from "module_32" /* 32 */;
-import GameConsoleStore from "GameConsoleStore" /* 4775 */;
-import SoundboardStore from "SoundboardStore" /* 5226 */;
+import GameConsoleStore from "GameConsoleStore" /* 4807 */;
+import SoundboardStore from "SoundboardStore" /* 5258 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 import apply_mod from "module_12" /* 12 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
 
 require = fn;
 function handleConnectionOpen() {
@@ -118,7 +118,7 @@ function handleSetLocalMute(arg0) {
     const PreloadedUserSettingsActionCreators = UserSettingsProtoActionCreators.PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", async (arg0) => {
       closure_0 = arg0;
-      let result = closure_0(14343).drainPendingAudioSettings((arg0, arg1, arg2) => {
+      let result = closure_0(14381).drainPendingAudioSettings((arg0, arg1, arg2) => {
         let diff;
         const result = AudioSettingsUtils.coerceAudioContextForProto(arg0);
         flag = false;
@@ -132,9 +132,9 @@ function handleSetLocalMute(arg0) {
             tmp9[arg1].modifiedAt = String(Date.now());
             if (typeof DEFAULT_VOLUME_FOR_CONTEXT === "function") {
               if (arg0 === constants.STREAM) {
-                let USER2 = tmp5(9893).AudioSettingsDefaultVolumes.STREAM;
+                let USER2 = tmp5(9925).AudioSettingsDefaultVolumes.STREAM;
               } else {
-                USER2 = tmp5(9893).AudioSettingsDefaultVolumes.USER;
+                USER2 = tmp5(9925).AudioSettingsDefaultVolumes.USER;
               }
               if (!tmp21) {
                 delete tmp2[tmp];
@@ -160,9 +160,9 @@ function handleSetLocalMute(arg0) {
             }
           } else if (typeof DEFAULT_VOLUME_FOR_CONTEXT === "function") {
             if (arg0 === constants.STREAM) {
-              let USER = tmp5(9893).AudioSettingsDefaultVolumes.STREAM;
+              let USER = tmp5(9925).AudioSettingsDefaultVolumes.STREAM;
             } else {
-              USER = tmp5(9893).AudioSettingsDefaultVolumes.USER;
+              USER = tmp5(9925).AudioSettingsDefaultVolumes.USER;
             }
             const obj2 = { muted: false, volume: USER };
             tmp11(obj2);
@@ -190,7 +190,7 @@ function handleSetLocalSoundboardMute(userId) {
     const PreloadedUserSettingsActionCreators = UserSettingsProtoActionCreators.PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", async (arg0) => {
       closure_0 = arg0;
-      let result = closure_0(14343).drainPendingAudioSettings((arg0, arg1, arg2) => {
+      let result = closure_0(14381).drainPendingAudioSettings((arg0, arg1, arg2) => {
         let diff;
         const result = AudioSettingsUtils.coerceAudioContextForProto(arg0);
         flag = false;
@@ -204,9 +204,9 @@ function handleSetLocalSoundboardMute(userId) {
             tmp9[arg1].modifiedAt = String(Date.now());
             if (typeof DEFAULT_VOLUME_FOR_CONTEXT === "function") {
               if (arg0 === constants.STREAM) {
-                let USER2 = tmp5(9893).AudioSettingsDefaultVolumes.STREAM;
+                let USER2 = tmp5(9925).AudioSettingsDefaultVolumes.STREAM;
               } else {
-                USER2 = tmp5(9893).AudioSettingsDefaultVolumes.USER;
+                USER2 = tmp5(9925).AudioSettingsDefaultVolumes.USER;
               }
               if (!tmp21) {
                 delete tmp2[tmp];
@@ -232,9 +232,9 @@ function handleSetLocalSoundboardMute(userId) {
             }
           } else if (typeof DEFAULT_VOLUME_FOR_CONTEXT === "function") {
             if (arg0 === constants.STREAM) {
-              let USER = tmp5(9893).AudioSettingsDefaultVolumes.STREAM;
+              let USER = tmp5(9925).AudioSettingsDefaultVolumes.STREAM;
             } else {
-              USER = tmp5(9893).AudioSettingsDefaultVolumes.USER;
+              USER = tmp5(9925).AudioSettingsDefaultVolumes.USER;
             }
             const obj2 = { muted: false, volume: USER };
             tmp11(obj2);
@@ -263,7 +263,7 @@ function handleResetMediaEngineSettings(arg0) {
     }, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
   }
 }
-const MediaEngineContextTypes = fn(4783).MediaEngineContextTypes;
+const MediaEngineContextTypes = fn(4815).MediaEngineContextTypes;
 function SETTINGS_MIGRATION_KEY(arg0) {
   return "AudioContextSettingsMigrated:" + arg0;
 }
@@ -280,7 +280,7 @@ let closure_12 = apply.debounce(() => {
   const PreloadedUserSettingsActionCreators = UserSettingsProtoActionCreators.PreloadedUserSettingsActionCreators;
   PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", async (arg0) => {
     closure_0 = arg0;
-    let result = closure_0(14343).drainPendingAudioSettings((arg0, arg1, arg2) => {
+    let result = closure_0(14381).drainPendingAudioSettings((arg0, arg1, arg2) => {
       let diff;
       const result = AudioSettingsUtils.coerceAudioContextForProto(arg0);
       flag = false;
@@ -294,9 +294,9 @@ let closure_12 = apply.debounce(() => {
           tmp9[arg1].modifiedAt = String(Date.now());
           if (typeof DEFAULT_VOLUME_FOR_CONTEXT === "function") {
             if (arg0 === constants.STREAM) {
-              let USER2 = tmp5(9893).AudioSettingsDefaultVolumes.STREAM;
+              let USER2 = tmp5(9925).AudioSettingsDefaultVolumes.STREAM;
             } else {
-              USER2 = tmp5(9893).AudioSettingsDefaultVolumes.USER;
+              USER2 = tmp5(9925).AudioSettingsDefaultVolumes.USER;
             }
             if (!tmp21) {
               delete tmp2[tmp];
@@ -322,9 +322,9 @@ let closure_12 = apply.debounce(() => {
           }
         } else if (typeof DEFAULT_VOLUME_FOR_CONTEXT === "function") {
           if (arg0 === constants.STREAM) {
-            let USER = tmp5(9893).AudioSettingsDefaultVolumes.STREAM;
+            let USER = tmp5(9925).AudioSettingsDefaultVolumes.STREAM;
           } else {
-            USER = tmp5(9893).AudioSettingsDefaultVolumes.USER;
+            USER = tmp5(9925).AudioSettingsDefaultVolumes.USER;
           }
           const obj2 = { muted: false, volume: USER };
           tmp11(obj2);
@@ -342,7 +342,7 @@ let closure_12 = apply.debounce(() => {
   }, UserSettingsProtoActionCreators.UserSettingsDelay.INFREQUENT_USER_ACTION);
 }, 2000);
 let apply = apply_mod;
-let closure_13 = apply.debounce(fn(10023).remoteAudioSettingsUpdate, 500, { maxWait: 500 });
+let closure_13 = apply.debounce(fn(10062).remoteAudioSettingsUpdate, 500, { maxWait: 500 });
 const prototype = function AudioSettingsManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   applyArgumentsResult.actions = { POST_CONNECTION_OPEN: handleConnectionOpen, AUDIO_SET_LOCAL_VOLUME: handleSetLocalVolume, AUDIO_TOGGLE_LOCAL_MUTE: handleSetLocalMute, AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: handleSetLocalSoundboardMute, MEDIA_ENGINE_RESET_SETTINGS: handleResetMediaEngineSettings };

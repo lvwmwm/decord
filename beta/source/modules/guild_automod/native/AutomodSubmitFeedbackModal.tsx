@@ -1,23 +1,23 @@
-// Module ID: 11997
-// Function ID: 11998
+// Module ID: 12033
+// Function ID: 12034
 // Name: AutomodSubmitFeedbackModal
-// Dependencies: [32, 19, 17, 1078, 21, 4758, 580, 558, 568, 1119, 7621, 7238, 7371, 7765, 1616, 4754, 8876, 1181, 5188, 4938, 11998, 7764, 4457, 7246, 2]
+// Dependencies: [32, 19, 17, 1078, 21, 4790, 580, 558, 568, 1119, 7653, 7270, 7403, 7797, 1616, 4786, 8908, 1181, 5220, 4970, 12034, 7796, 4489, 7278, 2]
 
-// Module 11997 (AutomodSubmitFeedbackModal)
+// Module 12033 (AutomodSubmitFeedbackModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import ToastUtils from "ToastUtils" /* 4457 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import _modDef7238 from "module_7238" /* 7238 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
-import HeaderActionButton from "HeaderActionButton" /* 7621 */;
-import AutomodAlert from "AutomodAlert" /* 7764 */;
-import AutomodFeedback from "AutomodFeedback" /* 7765 */;
-import GuildAutomodActionCreators from "GuildAutomodActionCreators" /* 11998 */;
+import ToastUtils from "ToastUtils" /* 4489 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import _modDef7270 from "module_7270" /* 7270 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
+import HeaderActionButton from "HeaderActionButton" /* 7653 */;
+import AutomodAlert from "AutomodAlert" /* 7796 */;
+import AutomodFeedback from "AutomodFeedback" /* 7797 */;
+import GuildAutomodActionCreators from "GuildAutomodActionCreators" /* 12034 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -28,7 +28,7 @@ const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const SUBMIT_FEEDBACK = "SUBMIT_FEEDBACK";
 let c10 = 16;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, paddingVertical: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "column", height: "100%", paddingTop: 8 }, header: null, headerTitle: null, headerSubtitle: null, closeButtonContainer: null, formBody: null, formRow: null, radioIndicator: null, submitButtonContainer: null };
 let obj3 = { flex: 1, paddingVertical: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "column", height: "100%", paddingTop: 8 };
 obj2.header = { flexDirection: "row", justifyContent: "flex-end", paddingHorizontal: 16, paddingVertical: 8, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
@@ -57,8 +57,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     first = cResult[0];
   }
   if (cResult[1] !== onClose) {
-    const obj2 = { accessibilityLabel: first, onPress: onClose, source: _modDef7238 };
-    const tmp10 = React5(tmp(7621).HeaderActionButton, obj2);
+    const obj2 = { accessibilityLabel: first, onPress: onClose, source: _modDef7270 };
+    const tmp10 = React5(tmp(7653).HeaderActionButton, obj2);
     cResult[1] = onClose;
     cResult[2] = tmp10;
     let tmp7 = tmp10;
@@ -76,7 +76,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
       return tmp13;
     }
     const rect = { top: true, left: true, right: true, style: header, children: tmp11 };
-    const tmp15 = React5(tmp(7371).SafeAreaPaddingView, rect);
+    const tmp15 = React5(tmp(7403).SafeAreaPaddingView, rect);
     cResult[6] = tmp4.header;
     cResult[7] = tmp11;
     cResult[8] = tmp15;
@@ -95,7 +95,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   const intl = util.intl;
   obj2.accessibilityLabel = intl.string(util.t.cpT0Cq);
   obj2.onPress = onClose.onClose;
-  obj2.source = _modDef7238;
+  obj2.source = _modDef7270;
   obj.children = React5(HeaderActionButton.HeaderActionButton, obj2);
   rect.children = React5(View, obj);
   return React5(common_SafeAreaView.SafeAreaPaddingView, rect);
@@ -140,7 +140,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[9] !== tmp4.headerTitle) {
         const obj3 = { style: tmp4.headerTitle, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: tmp14 };
-        const tmp18 = closure_7(tmp(4754).Text, obj3);
+        const tmp18 = closure_7(tmp(4786).Text, obj3);
         cResult[9] = tmp4.headerTitle;
         cResult[10] = tmp18;
         let tmp16 = tmp18;
@@ -158,7 +158,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[12] !== tmp4.headerSubtitle) {
         const obj4 = { style: tmp4.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: tmp19 };
-        const tmp23 = closure_7(tmp(4754).Text, obj4);
+        const tmp23 = closure_7(tmp(4786).Text, obj4);
         cResult[12] = tmp4.headerSubtitle;
         cResult[13] = tmp23;
         let tmp21 = tmp23;
@@ -206,7 +206,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 }
                 if (cResult[26] !== onSubmit) {
                   const obj5 = { size: "md", text: tmp33, onPress: onSubmit };
-                  const tmp37 = closure_7(tmp(5188).Button, obj5);
+                  const tmp37 = closure_7(tmp(5220).Button, obj5);
                   cResult[26] = onSubmit;
                   cResult[27] = tmp37;
                   let tmp35 = tmp37;

@@ -1,23 +1,23 @@
-// Module ID: 17856
-// Function ID: 17857
+// Module ID: 17866
+// Function ID: 17867
 // Name: NewUserUtils
-// Dependencies: [5, 17, 16292, 5500, 1376, 1078, 12825, 4967, 12827, 1368, 10055, 577, 1489, 12830, 4616, 17857, 4961, 1105, 12895, 2]
+// Dependencies: [5, 17, 16302, 5532, 1376, 1078, 12861, 4999, 12863, 1368, 10094, 577, 1489, 12866, 4648, 17867, 4993, 1105, 12931, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 17856 (NewUserUtils)
+// Module 17866 (NewUserUtils)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import router_utils from "router_utils" /* 1105 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
 import Link from "Link" /* 1489 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4616 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12827 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12830 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12895 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 17857 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4648 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12863 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12866 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12931 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 17867 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 16292 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 16302 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5532 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -78,7 +78,7 @@ let closure_12 = async function _shouldSkipContactSyncStep(arg0, value) {
 function lastStepComplete(STEP_GUILD_TEMPLATE) {
   NewUserAnalyticsUtils.trackNUFStep(STEP_GUILD_TEMPLATE, "NUF Complete");
   if (obj2.isModalOpen(NewUserModalTypes.NEW_USER_MODAL_KEY)) {
-    ModalActionCreatorsDefault.popWithKey(tmp(17857).NEW_USER_MODAL_KEY);
+    ModalActionCreatorsDefault.popWithKey(tmp(17867).NEW_USER_MODAL_KEY);
   }
   obj2 = NavigationRouteUtils;
   router_utils.transitionTo(constants2.ME, { navigationReplace: true });
@@ -232,8 +232,8 @@ let closure_18 = async function _getNextOnboardingStep(arg0, value) {
 const NativeModules = fn(17).NativeModules;
 const Constants = fn(1078);
 ({ PlatformTypes: closure_8, Routes: closure_9 } = Constants);
-const ContactPermissions = fn(12825).ContactPermissions;
-let closure_11 = fn(4967).NotificationAuthorizationStatus;
+const ContactPermissions = fn(12861).ContactPermissions;
+let closure_11 = fn(4999).NotificationAuthorizationStatus;
 let obj2 = { key: "enable-notification", shouldShowStep: null };
 let closure_13 = asyncGeneratorStep(async (arg0, value) => {
   if (c2 === 2) {
@@ -398,7 +398,7 @@ let items = [
   },
   {
     key: "accept-invite",
-    shouldShowStep: fn(10055).hasDeferredInvite,
+    shouldShowStep: fn(10094).hasDeferredInvite,
     transitionStep() {
       DispatcherDefault.dispatch({ type: "DEFERRED_INVITE_SHOW" });
     }

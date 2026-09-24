@@ -1,16 +1,16 @@
-// Module ID: 16913
-// Function ID: 16914
+// Module ID: 16923
+// Function ID: 16924
 // Name: HomeWelcomeMessage
-// Dependencies: [19, 17, 2067, 1376, 4945, 21, 4758, 580, 558, 568, 565, 8460, 8501, 7555, 8461, 4603, 1096, 8531, 1181, 4910, 4754, 9819, 11406, 4471, 2]
+// Dependencies: [19, 17, 2067, 1376, 4977, 21, 4790, 580, 558, 568, 565, 8492, 8533, 7587, 8493, 4635, 1096, 8563, 1181, 4942, 4786, 9851, 11442, 4503, 2]
 
-// Module 16913 (HomeWelcomeMessage)
+// Module 16923 (HomeWelcomeMessage)
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8461 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8493 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1376 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4945 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4977 */;
 
 require = fn;
 function replaceUsernameVariable(message, str, arg2) {
@@ -37,7 +37,7 @@ function replaceUsernameVariable(message, str, arg2) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { relativeContainer: { position: "relative" }, welcomeContainer: { marginHorizontal: 12, marginVertical: 16, borderRadius: nativeDefault.radii.sm, padding: 2, display: "flex", flexDirection: "column" }, welcomeContent: null, avatarBackground: null, avatarBorder: null, avatar: null, adminUsernameContainer: null, adminUsername: null, message: null, icon: null };
 let obj3 = { marginHorizontal: 12, marginVertical: 16, borderRadius: nativeDefault.radii.sm, padding: 2, display: "flex", flexDirection: "column" };
 obj2.welcomeContent = { borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: 12, paddingBottom: 12, paddingTop: 4 };

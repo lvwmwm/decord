@@ -1,12 +1,12 @@
-// Module ID: 16165
-// Function ID: 16166
+// Module ID: 16175
+// Function ID: 16176
 // Name: useSecureFramesUserVerifiedKeys
-// Dependencies: [32, 9932, 558, 568, 12, 504, 2]
+// Dependencies: [32, 9964, 558, 568, 12, 504, 2]
 
-// Module 16165 (useSecureFramesUserVerifiedKeys)
+// Module 16175 (useSecureFramesUserVerifiedKeys)
 import _modDef12 from "module_12" /* 12 */;
 import _slicedToArray from "module_32" /* 32 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 9932 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 9964 */;
 
 const require = globalThis.__r;
 

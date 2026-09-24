@@ -1,10 +1,10 @@
-// Module ID: 4968
-// Function ID: 4969
+// Module ID: 5000
+// Function ID: 5001
 // Name: AgeGateUtils
-// Dependencies: [2063, 2045, 4969, 2067, 1376, 1103, 1078, 1119, 11, 4970, 5642, 5643, 558, 568, 504, 8689, 2112, 7458, 7573, 2]
+// Dependencies: [2063, 2045, 5001, 2067, 1376, 1103, 1078, 1119, 11, 5002, 5674, 5675, 558, 568, 14072, 504, 8721, 2112, 7490, 7605, 2]
 // Exports: guildNeedsAgeGate, isChannelAgeVerificationGated, isChannelOrGuildNSFW, isCurrentUserMissingDateOfBirth, maybeOpenAgeGateForVoiceChannel, maybeShowAgeGate, shouldAgeVerifyForAgeGate, shouldAgeVerifyForSettingsToggles, shouldShowAgeGateForChannelId, shouldShowAgeGateForCurrentUser, shouldShowAgeGateForGuildContentLevel, userCannotSeeNSFWContent, userNeedsAgeGate
 
-// Module 4968 (AgeGateUtils)
+// Module 5000 (AgeGateUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
@@ -12,12 +12,12 @@ import AgeGateConstants from "AgeGateConstants" /* 1103 */;
 import util from "util" /* 1119 */;
 import GuildRecord from "GuildRecord" /* 2063 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 4970 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5642 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5643 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 7458 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5002 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5674 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5675 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 7490 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 4969 */;
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 5001 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1376 */;
 import Constants from "Constants" /* 1078 */;
@@ -27,6 +27,7 @@ import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
+const getTinyBroncoWarningDescriptions2 = tmp(14072);
 function getLargeGuildUnderageContent(isAgeVerified) {
   const intl = util.intl;
   const string = intl.string;
@@ -81,12 +82,12 @@ function shouldShowAgeGateForVoiceChannel(channelId) {
     const currentUser = UserStore.getCurrentUser();
     let flag = false;
     if (null != currentUser) {
-      const result1 = tmp(4970).shouldShowTiggerPawtect();
-      const tmpResult = tmp(4970);
-      const tmpResult2 = tmp(5642);
-      const tmp9 = tmp(5642).isFeatureAgeGated(tmp(5643).AgeGatedFeature.AGE_GATED_SPACES) && result1;
-      flag = true !== currentUser.nsfwAllowed || tmp(5642).isFeatureAgeGated(tmp(5643).AgeGatedFeature.AGE_GATED_SPACES) && result1;
-      const tmp10 = true !== currentUser.nsfwAllowed || tmp(5642).isFeatureAgeGated(tmp(5643).AgeGatedFeature.AGE_GATED_SPACES) && result1;
+      const result1 = tmp(5002).shouldShowTiggerPawtect();
+      const tmpResult = tmp(5002);
+      const tmpResult2 = tmp(5674);
+      const tmp9 = tmp(5674).isFeatureAgeGated(tmp(5675).AgeGatedFeature.AGE_GATED_SPACES) && result1;
+      flag = true !== currentUser.nsfwAllowed || tmp(5674).isFeatureAgeGated(tmp(5675).AgeGatedFeature.AGE_GATED_SPACES) && result1;
+      const tmp10 = true !== currentUser.nsfwAllowed || tmp(5674).isFeatureAgeGated(tmp(5675).AgeGatedFeature.AGE_GATED_SPACES) && result1;
     }
     let tmp12 = !flag;
     if (flag) {
@@ -165,42 +166,57 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
   if (obj2.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES)) {
     if (cResult[0] !== name) {
       const _Symbol = Symbol;
+      const tmp11 = isGuildNSFW(name);
       let str2;
-      const forResult = Symbol.for("react.early_return_sentinel");
       if (name != null) {
         str2 = name.name;
       }
       if (str2 == null) {
         str2 = "";
       }
-      if (tmp9) {
-        let tmp11 = forResult;
+      if (tmp11) {
+        const tinyBroncoWarningDescriptions = getTinyBroncoWarningDescriptions2.getTinyBroncoWarningDescriptions(tmp11, str2);
+        let tmp13 = forResult;
+        const tmpResult = getTinyBroncoWarningDescriptions2;
       } else {
-        tmp11 = null;
+        tmp13 = null;
       }
       cResult[0] = name;
-      cResult[1] = tmp12;
-      cResult[2] = tmp11;
-      let tmp5 = tmp11;
-      let tmp4 = tmp12;
-      tmp9 = isGuildNSFW(name);
+      cResult[1] = tinyBroncoWarningDescriptions;
+      cResult[2] = tmp13;
+      let tmp7 = tmp13;
+      let tmp6 = tinyBroncoWarningDescriptions;
+      forResult = Symbol.for("react.early_return_sentinel");
     } else {
-      tmp4 = cResult[1];
-      tmp5 = cResult[2];
+      tmp6 = cResult[1];
+      tmp7 = cResult[2];
     }
     const _Symbol2 = Symbol;
-    if (tmp5 !== Symbol.for("react.early_return_sentinel")) {
-      tmp4 = tmp5;
+    if (tmp7 !== Symbol.for("react.early_return_sentinel")) {
+      tmp6 = tmp7;
     }
-    return tmp4;
+    return tmp6;
   } else {
     return null;
   }
   obj2 = RegionalFeatureConfigUtils;
-}) : ((guild) => {
+}) : ((name) => {
   if (obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES)) {
-    isGuildNSFW(guild);
-    return null;
+    const tmp5 = isGuildNSFW(name);
+    let str;
+    if (name != null) {
+      str = name.name;
+    }
+    if (str == null) {
+      str = "";
+    }
+    if (tmp5) {
+      let tinyBroncoWarningDescriptions = getTinyBroncoWarningDescriptions2.getTinyBroncoWarningDescriptions(tmp5, str);
+      const tmpResult = getTinyBroncoWarningDescriptions2;
+    } else {
+      tinyBroncoWarningDescriptions = null;
+    }
+    return tinyBroncoWarningDescriptions;
   } else {
     return null;
   }
@@ -208,24 +224,36 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let getTinyBroncoWarningDescriptions = require;
+  let tinyBroncoWarningDescriptions1 = dependencyMap;
   const cResult = c.c(1);
-  let tmp2 = null;
+  let tmp3 = null;
   if (obj2.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES)) {
-    tmp2 = null;
+    tmp3 = null;
     if (arg0) {
       const _Symbol = Symbol;
       if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-        cResult[0] = null;
-        let first = null;
+        const tinyBroncoWarningDescriptions = getTinyBroncoWarningDescriptions2;
+        getTinyBroncoWarningDescriptions = tinyBroncoWarningDescriptions.getTinyBroncoWarningDescriptions;
+        tinyBroncoWarningDescriptions1 = getTinyBroncoWarningDescriptions(true, "");
+        cResult[0] = tinyBroncoWarningDescriptions1;
+        let first = tinyBroncoWarningDescriptions1;
       } else {
         first = cResult[0];
       }
     }
   }
-  return tmp2;
+  return tmp3;
 }) : ((arg0) => {
-  const isFeatureAgeGated = RegionalFeatureConfigUtils.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES);
-  return null;
+  let tinyBroncoWarningDescriptions = null;
+  if (obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES)) {
+    tinyBroncoWarningDescriptions = null;
+    if (arg0) {
+      tinyBroncoWarningDescriptions = getTinyBroncoWarningDescriptions2.getTinyBroncoWarningDescriptions(true, "");
+      const tmpResult = getTinyBroncoWarningDescriptions2;
+    }
+  }
+  return tinyBroncoWarningDescriptions;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
@@ -234,7 +262,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const tmp5 = isGuildNSFW(guild);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     items = [UserStore];
-    const fn = function u() {
+    const fn = function o() {
       currentUser = currentUser.getCurrentUser();
       let nsfwAllowed;
       if (currentUser != null) {
@@ -289,7 +317,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             }
           }
         }
-        const obj3 = { title: tmp13, description: teen, agreement: cResult[5], modalType: tmp(8689).NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY, emphasiseDisagree: null != tmp11 };
+        const obj3 = { title: tmp13, description: teen, agreement: cResult[5], modalType: tmp(8721).NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY, emphasiseDisagree: null != tmp11 };
         cResult[6] = tmp13;
         cResult[7] = teen;
         cResult[8] = cResult[5];
@@ -320,7 +348,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         }
         return tmp35;
       }
-      const obj4 = { title: tmp13, description: unverified, agreement: tmp33, modalType: tmp(8689).NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY };
+      const obj4 = { title: tmp13, description: unverified, agreement: tmp33, modalType: tmp(8721).NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY };
       cResult[12] = tmp13;
       cResult[13] = unverified;
       cResult[14] = obj4;
@@ -348,7 +376,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         }
         return tmp29;
       }
-      const obj7 = { title: tmp21, description: cResult[18], agreement: null, modalType: tmp(8689).NsfwSpaceWarningModalType.NSFW_CHANNEL_UNDERAGE };
+      const obj7 = { title: tmp21, description: cResult[18], agreement: null, modalType: tmp(8721).NsfwSpaceWarningModalType.NSFW_CHANNEL_UNDERAGE };
       cResult[19] = tmp21;
       cResult[20] = cResult[18];
       cResult[21] = obj7;
@@ -377,7 +405,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       }
       return tmp20;
     }
-    const obj8 = { title: tmp13, description: adult, agreement: tmp18, modalType: tmp(8689).NsfwSpaceWarningModalType.NSFW_CHANNEL_VERIFIED };
+    const obj8 = { title: tmp13, description: adult, agreement: tmp18, modalType: tmp(8721).NsfwSpaceWarningModalType.NSFW_CHANNEL_VERIFIED };
     cResult[23] = tmp13;
     cResult[24] = adult;
     cResult[25] = obj8;
@@ -414,7 +442,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       obj3.description = unverified;
       const intl5 = tmp(1119).intl;
       obj3.agreement = intl5.string(tmp(1119).t.FDSSia);
-      obj3.modalType = tmp(8689).NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY;
+      obj3.modalType = tmp(8721).NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY;
     }
     const obj4 = { title: stringResult, description: null, agreement: null, modalType: null, emphasiseDisagree: null };
     let tmp18 = null;
@@ -433,7 +461,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       Zt4Mf4 = tmp(1119).t.Zt4Mf4;
     }
     obj4.agreement = intl6.string(Zt4Mf4);
-    NSFW_CHANNEL_AGE_VERIFY = tmp(8689).NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY;
+    NSFW_CHANNEL_AGE_VERIFY = tmp(8721).NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY;
     obj4.modalType = NSFW_CHANNEL_AGE_VERIFY;
     tmp18 = tmp18 != tmp6;
     obj4.emphasiseDisagree = tmp18;
@@ -447,7 +475,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       let NSFW_CHANNEL_UNDERAGE = tmp(1119).t;
       const obj7 = { helpURL: HelpdeskUtilsDefault.getArticleURL(constants.NSFW_AGE_GATING) };
       obj6.description = intl4.format(tmp3 ? NSFW_CHANNEL_UNDERAGE["6++3cX"] : NSFW_CHANNEL_UNDERAGE["2kHZes"], obj7);
-      NSFW_CHANNEL_UNDERAGE = tmp(8689).NsfwSpaceWarningModalType.NSFW_CHANNEL_UNDERAGE;
+      NSFW_CHANNEL_UNDERAGE = tmp(8721).NsfwSpaceWarningModalType.NSFW_CHANNEL_UNDERAGE;
       obj6.modalType = NSFW_CHANNEL_UNDERAGE;
       const tmp12 = tmp3 ? NSFW_CHANNEL_UNDERAGE["6++3cX"] : NSFW_CHANNEL_UNDERAGE["2kHZes"];
     } else {
@@ -462,7 +490,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       obj6.description = adult;
       const intl2 = tmp(1119).intl;
       obj6.agreement = intl2.string(tmp(1119).t.wVq7uo);
-      obj6.modalType = tmp(8689).NsfwSpaceWarningModalType.NSFW_CHANNEL_VERIFIED;
+      obj6.modalType = tmp(8721).NsfwSpaceWarningModalType.NSFW_CHANNEL_VERIFIED;
       return obj6;
     }
   }
@@ -538,7 +566,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
   const tmpResult = require("initialize");
   const stateFromStores1 = require("initialize").useStateFromStores(tmp11, tmp12);
   const tmpResult4 = require("initialize");
-  let isFeatureAgeGated = require("RegionalFeatureConfigUtils").useIsFeatureAgeGated(tmp(5643).AgeGatedFeature.AGE_GATED_SPACES);
+  let isFeatureAgeGated = require("RegionalFeatureConfigUtils").useIsFeatureAgeGated(tmp(5675).AgeGatedFeature.AGE_GATED_SPACES);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [];
     class S {

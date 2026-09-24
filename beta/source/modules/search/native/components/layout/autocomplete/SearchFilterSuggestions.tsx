@@ -1,17 +1,17 @@
-// Module ID: 17104
-// Function ID: 17105
+// Module ID: 17114
+// Function ID: 17115
 // Name: SearchFilterSuggestions
-// Dependencies: [32, 109, 19, 17, 8126, 21, 4758, 580, 558, 568, 17105, 4754, 5822, 4497, 5187, 5191, 4471, 17108, 12486, 2]
+// Dependencies: [32, 109, 19, 17, 8158, 21, 4790, 580, 558, 568, 17115, 4786, 5854, 4529, 5219, 5223, 4503, 17118, 12522, 2]
 
-// Module 17104 (SearchFilterSuggestions)
+// Module 17114 (SearchFilterSuggestions)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import native from "native" /* 4471 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import spring from "spring" /* 5187 */;
-import springPresets from "springPresets" /* 5191 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12486 */;
-import SearchFilterUtils from "SearchFilterUtils" /* 17105 */;
+import native from "native" /* 4503 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import spring from "spring" /* 5219 */;
+import springPresets from "springPresets" /* 5223 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12522 */;
+import SearchFilterUtils from "SearchFilterUtils" /* 17115 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -23,9 +23,9 @@ function getSuggestionsKey(arr) {
 }
 let closure_3 = ["text", "searchTokenType", "onPress"];
 const View = fn(17).View;
-const SearchFilterAddLocations = fn(8126).SearchFilterAddLocations;
+const SearchFilterAddLocations = fn(8158).SearchFilterAddLocations;
 let jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { card: null };
 let merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 obj.card = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: nativeDefault.radii.lg, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1 };
@@ -53,11 +53,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
     closure_1 = cResult[4];
   }
   if (cResult[5] !== tmp5) {
-    const searchTokenIcon = tmp(17105).getSearchTokenIcon(tmp5);
+    const searchTokenIcon = tmp(17115).getSearchTokenIcon(tmp5);
     cResult[5] = tmp5;
     cResult[6] = searchTokenIcon;
     let tmp11 = searchTokenIcon;
-    const tmpResult = tmp(17105);
+    const tmpResult = tmp(17115);
   } else {
     tmp11 = cResult[6];
   }
@@ -73,11 +73,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
     tmp13 = cResult[8];
   }
   if (cResult[9] !== tmp5) {
-    const searchTokenSubLabel = tmp(17105).getSearchTokenSubLabel(tmp5);
+    const searchTokenSubLabel = tmp(17115).getSearchTokenSubLabel(tmp5);
     cResult[9] = tmp5;
     cResult[10] = searchTokenSubLabel;
     let tmp16 = searchTokenSubLabel;
-    const tmpResult2 = tmp(17105);
+    const tmpResult2 = tmp(17115);
   } else {
     tmp16 = cResult[10];
   }
@@ -87,7 +87,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
     }
     if (cResult[14] !== tmp7) {
       const obj2 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp7 };
-      const tmp21 = jsx(tmp(4754).Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp7 });
+      const tmp21 = jsx(tmp(4786).Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp7 });
       cResult[14] = tmp7;
       cResult[15] = tmp21;
       let tmp19 = tmp21;
@@ -108,7 +108,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
     }
     const obj3 = { icon: tmp13, onPress: tmp18, label: tmp19, subLabel: tmp16 };
     const merged = Object.assign(tmp6);
-    const tmp27 = jsx(tmp(5822).TableRow, { icon: tmp13, onPress: tmp18, label: tmp19, subLabel: tmp16 });
+    const tmp27 = jsx(tmp(5854).TableRow, { icon: tmp13, onPress: tmp18, label: tmp19, subLabel: tmp16 });
     cResult[16] = tmp18;
     cResult[17] = tmp13;
     cResult[18] = tmp16;
@@ -491,7 +491,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((search
                             })
               };
               obj.children = jsx(View, obj1);
-              return jsx(f75206, obj, searchContext);
+              return jsx(f75246, obj, searchContext);
             }
           }
           class D {
@@ -522,7 +522,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((search
                         })
             };
             obj.children = jsx(View, obj1);
-            return jsx(f75206, obj, searchContext);
+            return jsx(f75246, obj, searchContext);
           }
         }
         class D {

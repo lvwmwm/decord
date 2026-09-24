@@ -1,16 +1,16 @@
-// Module ID: 8513
-// Function ID: 8514
+// Module ID: 8545
+// Function ID: 8546
 // Name: useUserProfileGradientColors
-// Dependencies: [19, 4750, 558, 568, 504, 4471, 7431, 8503, 2]
+// Dependencies: [19, 4782, 558, 568, 504, 4503, 7463, 8535, 2]
 
-// Module 8513 (useUserProfileGradientColors)
+// Module 8545 (useUserProfileGradientColors)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import native from "native" /* 4471 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7431 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8503 */;
+import native from "native" /* 4503 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7463 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8535 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 const require = globalThis.__r;
 
@@ -60,16 +60,16 @@ export const useUserProfileGradientColors = ReactCompilerGating.isReactCompilerE
   if (null != secondaryColor) {
     result = null;
     if (null != overlay) {
-      result = tmp(8503).calculateOverlayedColor(secondaryColor, overlay);
-      const tmpResult8 = tmp(8503);
+      result = tmp(8535).calculateOverlayedColor(secondaryColor, overlay);
+      const tmpResult8 = tmp(8535);
     }
   }
   let result1 = null;
   if (null != secondaryColor) {
     result1 = null;
     if (null != overlay) {
-      result1 = tmp(8503).calculateOverlayedColor(secondaryColor, overlay);
-      const tmpResult9 = tmp(8503);
+      result1 = tmp(8535).calculateOverlayedColor(secondaryColor, overlay);
+      const tmpResult9 = tmp(8535);
     }
   }
   const tmpResult7 = useProfileThemeValues;

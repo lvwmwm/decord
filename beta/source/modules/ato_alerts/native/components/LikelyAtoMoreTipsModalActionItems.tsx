@@ -1,10 +1,10 @@
-// Module ID: 10381
-// Function ID: 10382
+// Module ID: 10420
+// Function ID: 10421
 // Name: LikelyAtoMoreTipsModalActionItems
-// Dependencies: [19, 1376, 21, 558, 568, 504, 4603, 1119, 10382, 5903, 5822, 2]
+// Dependencies: [19, 1376, 21, 558, 568, 504, 4635, 1119, 10421, 5935, 5854, 2]
 
-// Module 10381 (LikelyAtoMoreTipsModalActionItems)
-import UserUtilsDefault from "UserUtils" /* 4603 */;
+// Module 10420 (LikelyAtoMoreTipsModalActionItems)
+import UserUtilsDefault from "UserUtils" /* 4635 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -68,7 +68,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
     tmp14 = cResult[8];
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp18 = jsx(tmp(10382).BellSlashIcon, {});
+    const tmp18 = jsx(tmp(10421).BellSlashIcon, {});
     cResult[9] = tmp18;
     let tmp16 = tmp18;
   } else {
@@ -81,7 +81,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
     return tmp19;
   }
   const tmpResult = senderId(504);
-  const tmp20 = jsx(senderId(5903).TableRowGroup, { hasIcons: true, children: jsx(senderId(5822).TableRow, { label: tmp12, subLabel: tmp14, onPress: handleMutePressed, icon: tmp16 }) });
+  const tmp20 = jsx(senderId(5935).TableRowGroup, { hasIcons: true, children: jsx(senderId(5854).TableRow, { label: tmp12, subLabel: tmp14, onPress: handleMutePressed, icon: tmp16 }) });
   cResult[10] = handleMutePressed;
   cResult[11] = tmp12;
   cResult[12] = tmp20;
@@ -100,7 +100,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
   const intl2 = senderId(1119).intl;
   obj3.subLabel = intl2.string(senderId(1119).t.w2ve0t);
   obj3.onPress = senderId.handleMutePressed;
-  obj3.icon = jsx(senderId(10382).BellSlashIcon, {});
-  obj2.children = jsx(senderId(5822).TableRow, { label: null, subLabel: null, onPress: null, icon: null });
-  return jsx(senderId(5903).TableRowGroup, { hasIcons: true, children: null });
+  obj3.icon = jsx(senderId(10421).BellSlashIcon, {});
+  obj2.children = jsx(senderId(5854).TableRow, { label: null, subLabel: null, onPress: null, icon: null });
+  return jsx(senderId(5935).TableRowGroup, { hasIcons: true, children: null });
 });

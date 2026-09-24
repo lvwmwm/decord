@@ -1,15 +1,15 @@
-// Module ID: 8939
-// Function ID: 8940
+// Module ID: 8971
+// Function ID: 8972
 // Name: UserProfileWidgetReportButton
-// Dependencies: [109, 19, 17, 21, 558, 568, 1119, 8940, 8942, 8180, 580, 8182, 2]
+// Dependencies: [109, 19, 17, 21, 558, 568, 1119, 8972, 8974, 8212, 580, 8214, 2]
 
-// Module 8939 (UserProfileWidgetReportButton)
+// Module 8971 (UserProfileWidgetReportButton)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 8180 */;
-import ContextMenu from "ContextMenu" /* 8182 */;
-import FlagIcon from "FlagIcon" /* 8940 */;
-import showReportModalForUserWidget from "showReportModalForUserWidget" /* 8942 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 8212 */;
+import ContextMenu from "ContextMenu" /* 8214 */;
+import FlagIcon from "FlagIcon" /* 8972 */;
+import showReportModalForUserWidget from "showReportModalForUserWidget" /* 8974 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -47,7 +47,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         obj.accessibilityRole = "button";
         const intl = userId(1119).intl;
         obj.accessibilityLabel = intl.string(userId(1119).t.xpSHSk);
-        obj.children = jsx(userId(8180).MoreHorizontalIcon, { size: "sm", color: widget(580).colors.TEXT_MUTED });
+        obj.children = jsx(userId(8212).MoreHorizontalIcon, { size: "sm", color: widget(580).colors.TEXT_MUTED });
         return <Pressable ref={arg0.ref} />;
       };
       cResult[4] = fn;
@@ -57,7 +57,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     }
     if (cResult[5] !== tmp6) {
       const obj2 = { items: tmp6, children: tmp7 };
-      const tmp10 = jsx(tmp(8182).ContextMenu, { items: tmp6, children: tmp7 });
+      const tmp10 = jsx(tmp(8214).ContextMenu, { items: tmp6, children: tmp7 });
       cResult[5] = tmp6;
       cResult[6] = tmp10;
       let tmp8 = tmp10;
@@ -71,7 +71,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     {
       label: first,
       variant: "destructive",
-      IconComponent: userId(8940).FlagIcon,
+      IconComponent: userId(8972).FlagIcon,
       action() {
         return showReportModalForUserWidget.showReportModalForUserWidget(userId, widget);
       }

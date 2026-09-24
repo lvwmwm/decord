@@ -1,13 +1,13 @@
-// Module ID: 9170
-// Function ID: 9171
+// Module ID: 9202
+// Function ID: 9203
 // Name: BlueskyNeutralIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 9171, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9203, 4493, 2]
 
-// Module 9170 (BlueskyNeutralIcon)
+// Module 9202 (BlueskyNeutralIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod9171 from "module_9171" /* 9171 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9203 from "module_9203" /* 9203 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const BlueskyNeutralIcon = ReactCompilerGating.isReactCompilerEnabled() ?
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(9171);
+    const tmpResult = tmp(9203);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const BlueskyNeutralIcon = ReactCompilerGating.isReactCompilerEnabled() ?
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9171, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9203, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

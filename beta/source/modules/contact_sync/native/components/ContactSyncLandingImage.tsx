@@ -1,12 +1,12 @@
-// Module ID: 12836
-// Function ID: 12837
+// Module ID: 12872
+// Function ID: 12873
 // Name: ContactSyncLandingImage
-// Dependencies: [19, 17, 21, 4758, 558, 568, 12837, 12838, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 12873, 12874, 2]
 
-// Module 12836 (ContactSyncLandingImage)
+// Module 12872 (ContactSyncLandingImage)
 import c from "c" /* 568 */;
-import _modDef12837 from "module_12837" /* 12837 */;
-import _modDef12838 from "module_12838" /* 12838 */;
+import _modDef12873 from "module_12873" /* 12873 */;
+import _modDef12874 from "module_12874" /* 12874 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -14,7 +14,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ leftContainer: { zIndex: 2, height: 106, width: 102, position: "absolute" }, landingImageLeft: { left: 58, top: -92 }, rightContainer: { position: "absolute", height: 113, width: 103 }, landingImageRight: { left: 134, top: -99 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -24,7 +24,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(13);
   const tmp3 = closure_8();
   if (cResult[0] !== tmp3.landingImageLeft) {
-    const obj2 = { resizeMode: "contain", style: tmp3.landingImageLeft, source: _modDef12837 };
+    const obj2 = { resizeMode: "contain", style: tmp3.landingImageLeft, source: _modDef12873 };
     const tmp8 = hasOwnProperty(React3, obj2);
     cResult[0] = tmp3.landingImageLeft;
     cResult[1] = tmp8;
@@ -37,7 +37,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let tmp9 = cResult[4];
     }
     if (cResult[5] !== tmp3.landingImageRight) {
-      const obj3 = { resizeMode: "contain", style: tmp3.landingImageRight, source: _modDef12838 };
+      const obj3 = { resizeMode: "contain", style: tmp3.landingImageRight, source: _modDef12874 };
       const tmp15 = hasOwnProperty(React3, obj3);
       cResult[5] = tmp3.landingImageRight;
       cResult[6] = tmp15;
@@ -79,11 +79,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const tmp = closure_8();
   const obj = { children: null };
-  const obj2 = { style: tmp.leftContainer, children: hasOwnProperty(React3, { resizeMode: "contain", style: tmp.landingImageLeft, source: _modDef12837 }) };
+  const obj2 = { style: tmp.leftContainer, children: hasOwnProperty(React3, { resizeMode: "contain", style: tmp.landingImageLeft, source: _modDef12873 }) };
   const items = [hasOwnProperty(React4, obj2), ];
   const obj4 = { style: tmp.rightContainer, children: null };
-  const obj3 = { resizeMode: "contain", style: tmp.landingImageLeft, source: _modDef12837 };
-  obj4.children = hasOwnProperty(React3, { resizeMode: "contain", style: tmp.landingImageRight, source: _modDef12838 });
+  const obj3 = { resizeMode: "contain", style: tmp.landingImageLeft, source: _modDef12873 };
+  obj4.children = hasOwnProperty(React3, { resizeMode: "contain", style: tmp.landingImageRight, source: _modDef12874 });
   items[1] = hasOwnProperty(React4, obj4);
   obj.children = items;
   return React5(timestampProducer, obj);

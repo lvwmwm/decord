@@ -1,27 +1,27 @@
-// Module ID: 17012
-// Function ID: 17013
+// Module ID: 17022
+// Function ID: 17023
 // Name: UploadLogsActionSheet
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 13012, 1245, 4725, 7396, 1119, 4754, 5188, 7397, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 13048, 1245, 4757, 7428, 1119, 4786, 5220, 7429, 2]
 
-// Module 17012 (UploadLogsActionSheet)
+// Module 17022 (UploadLogsActionSheet)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import DebugUploadManager from "DebugUploadManager" /* 13012 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import DebugUploadManager from "DebugUploadManager" /* 13048 */;
 import noop from "module_19" /* 19 */;
 
-const ActionSheetActionCreatorsDefault = tmp3(4725);
+const ActionSheetActionCreatorsDefault = tmp3(4757);
 require = fn;
 const View = fn(17).View;
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_4, DebugLogCategory: hasOwnProperty } = Constants);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: nativeDefault.space.PX_16 }, body: null, buttonSpacer: null };
 let obj3 = { padding: nativeDefault.space.PX_16 };
 obj2.body = { textAlign: "center", marginBottom: nativeDefault.space.PX_16 };
@@ -47,7 +47,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((mediaSessionId) 
       let obj2 = { title: null };
       const intl = tmp(1119).intl;
       obj2.title = intl.string(tmp(1119).t.KTjjrG);
-      const tmp9 = closure_6(tmp(7396).BottomSheetTitleHeader, obj2);
+      const tmp9 = closure_6(tmp(7428).BottomSheetTitleHeader, obj2);
       cResult[3] = tmp9;
       let tmp7 = tmp9;
     } else {
@@ -65,7 +65,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((mediaSessionId) 
     }
     if (cResult[5] !== tmp4.body) {
       let obj3 = { variant: "text-sm/normal", color: "text-muted", style: body, children: tmp10 };
-      const tmp14 = closure_6(tmp(4754).Text, obj3);
+      const tmp14 = closure_6(tmp(4786).Text, obj3);
       cResult[5] = tmp4.body;
       cResult[6] = tmp14;
       let tmp12 = tmp14;
@@ -83,7 +83,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((mediaSessionId) 
     }
     if (cResult[8] !== tmp5) {
       const obj4 = { text: tmp15, onPress: tmp5 };
-      const tmp19 = closure_6(tmp(5188).Button, obj4);
+      const tmp19 = closure_6(tmp(5220).Button, obj4);
       cResult[8] = tmp5;
       cResult[9] = tmp19;
       let tmp17 = tmp19;
@@ -117,7 +117,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((mediaSessionId) 
               return rtcConnectionId(dependencyMap[10]).hideActionSheet();
             }
       };
-      const tmp28 = closure_6(tmp(5188).Button, obj6);
+      const tmp28 = closure_6(tmp(5220).Button, obj6);
       cResult[13] = tmp28;
       let tmp26 = tmp28;
     } else {
@@ -138,7 +138,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((mediaSessionId) 
     const items = [tmp12, tmp17, tmp20, tmp26];
     obj8.children = items;
     obj7.children = closure_7(View, obj8);
-    const tmp33 = closure_6(tmp(7397).BottomSheet, obj7);
+    const tmp33 = closure_6(tmp(7429).BottomSheet, obj7);
     cResult[14] = tmp4.container;
     cResult[15] = tmp12;
     cResult[16] = tmp17;

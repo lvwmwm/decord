@@ -1,11 +1,11 @@
-// Module ID: 11395
-// Function ID: 11396
+// Module ID: 11431
+// Function ID: 11432
 // Name: getRandomCustomStatusPrompt
-// Dependencies: [11394, 1119, 2]
+// Dependencies: [11430, 1119, 2]
 // Exports: default
 
-// Module 11395 (getRandomCustomStatusPrompt)
-import Constants from "Constants" /* 11394 */;
+// Module 11431 (getRandomCustomStatusPrompt)
+import Constants from "Constants" /* 11430 */;
 import size from "module_2" /* 2 */;
 
 ({ CustomStatusPrompts: c2, CustomStatusPromptValues: c3 } = Constants);

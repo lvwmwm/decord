@@ -1,11 +1,11 @@
-// Module ID: 10373
-// Function ID: 10374
+// Module ID: 10412
+// Function ID: 10413
 // Name: SafetyWarningBanner
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 5086, 5091, 10369, 1119, 1181, 10374, 10375, 4754, 5188, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 5118, 5123, 10408, 1119, 1181, 10413, 10414, 4786, 5220, 2]
 
-// Module 10373 (SafetyWarningBanner)
+// Module 10412 (SafetyWarningBanner)
 import nativeDefault from "native" /* 580 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10369 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10408 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -13,7 +13,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: closure_4, Pressable: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: null, contentContainer: null, safetyShieldIconContainer: null, safetyShieldIcon: null, textContainer: null, text: null, closeButton: null, closeButtonIcon: null, buttonsContainer: null };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 obj2.container = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12 };

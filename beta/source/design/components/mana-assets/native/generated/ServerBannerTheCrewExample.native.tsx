@@ -1,13 +1,13 @@
-// Module ID: 6652
-// Function ID: 6653
+// Module ID: 6684
+// Function ID: 6685
 // Name: ServerBannerTheCrewExample
-// Dependencies: [21, 558, 568, 6653, 5802, 2]
+// Dependencies: [21, 558, 568, 6685, 5834, 2]
 
-// Module 6652 (ServerBannerTheCrewExample)
+// Module 6684 (ServerBannerTheCrewExample)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6653 from "module_6653" /* 6653 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6685 from "module_6685" /* 6685 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const ServerBannerTheCrewExample = ReactCompilerGating.isReactCompilerEna
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6653 };
+    const obj2 = { uri: _modDef6685 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const ServerBannerTheCrewExample = ReactCompilerGating.isReactCompilerEna
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6653 };
+  const obj2 = { uri: _modDef6685 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

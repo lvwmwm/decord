@@ -1,28 +1,28 @@
-// Module ID: 16286
-// Function ID: 16287
+// Module ID: 16296
+// Function ID: 16297
 // Name: AccountSwitcherListItem
-// Dependencies: [19, 17, 1390, 4604, 1376, 12562, 21, 4758, 558, 568, 504, 4717, 580, 4712, 4754, 1119, 5341, 4479, 1181, 4603, 2]
+// Dependencies: [19, 17, 1390, 4636, 1376, 12598, 21, 4790, 558, 568, 504, 4749, 580, 4744, 4786, 1119, 5373, 4511, 1181, 4635, 2]
 
-// Module 16286 (AccountSwitcherListItem)
+// Module 16296 (AccountSwitcherListItem)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4479 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4511 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
 import noop from "module_19" /* 19 */;
 import UserRecord from "UserRecord" /* 1390 */;
-import StreamerModeStore from "StreamerModeStore" /* 4604 */;
+import StreamerModeStore from "StreamerModeStore" /* 4636 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const initialize = CircleCheckIcon(504);
-const CircleInformationIcon = CircleCheckIcon(4712);
-const CircleCheckIcon2 = CircleCheckIcon(4717);
+const CircleInformationIcon = CircleCheckIcon(4744);
+const CircleCheckIcon2 = CircleCheckIcon(4749);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Pressable: c3, View: closure_4 } = get_ActivityIndicator);
-const MultiAccountTokenStatus = fn(12562).MultiAccountTokenStatus;
+const MultiAccountTokenStatus = fn(12598).MultiAccountTokenStatus;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_11 = createStyles.createStyles({ accountListTag: { marginLeft: 12, flex: 1 }, tagContainer: { display: "flex", flexDirection: "row" }, accountSwitcherListItem: { display: "flex", flexDirection: "row", justifyContent: "flex-start", alignItems: "center", paddingVertical: 8, paddingHorizontal: 16 }, username: { flexShrink: 1 }, accountInfo: { flex: 1, minWidth: "30%", display: "flex", flexDirection: "row", alignItems: "center" } });
 let ReactCompilerGating = fn(558);
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
@@ -77,12 +77,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   }
   if (user.id === id) {
     const obj2 = { color: nativeDefault.colors.TEXT_BRAND };
-    let tmp6 = options(tmp(4717).CircleCheckIcon, obj2);
+    let tmp6 = options(tmp(4749).CircleCheckIcon, obj2);
   } else {
     tmp6 = null;
     if (user.tokenStatus === MultiAccountTokenStatus.INVALID) {
       const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-      tmp6 = options(tmp(4712).CircleInformationIcon, obj3);
+      tmp6 = options(tmp(4744).CircleInformationIcon, obj3);
     }
   }
   return tmp6;
@@ -155,7 +155,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         obj2.children = obj7.string(tmp(1119).t.seV8yt);
-        const tmp28 = options(tmp(4754).Text, obj2);
+        const tmp28 = options(tmp(4786).Text, obj2);
         cResult[6] = tmp28;
       }
       class U {
@@ -175,7 +175,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       obj3.children = obj5.string(tmp(1119).t.tYX2ps);
-      const tmp25 = options(tmp(4754).Text, obj3);
+      const tmp25 = options(tmp(4786).Text, obj3);
       cResult[7] = tmp25;
     }
     class U {
@@ -187,7 +187,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (null == onPressUser) {
     let PressableOpacity = React3;
   } else {
-    PressableOpacity = tmp(5341).PressableOpacity;
+    PressableOpacity = tmp(5373).PressableOpacity;
   }
   if (cResult[8] !== (user.id === id)) {
     const obj4 = { selected: tmp21 };
@@ -222,7 +222,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   ({ accountSwitcherListItem, accountInfo } = tmp5);
   if (cResult[12] !== tmp15) {
-    { user: null, guildId: "a" }.user = tmp15;
+    { user: null, guildId: "Array" }.user = tmp15;
     class U {
       constructor() {
         return closure_1_7.getCurrentUser();
@@ -231,7 +231,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[12] = tmp15;
     cResult[13] = tmp35;
     let tmp33 = tmp35;
-    const obj6 = { user: null, guildId: "a" };
+    const obj6 = { user: null, guildId: "Array" };
   } else {
     tmp33 = cResult[13];
   }
@@ -395,7 +395,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         obj12.children = "#" + tmp15.discriminator;
-        tmp46 = options(tmp(4754).Text, obj12);
+        tmp46 = options(tmp(4786).Text, obj12);
       }
       cResult[20] = stateFromStores;
       cResult[21] = tmp15;
@@ -409,7 +409,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     tmp43[2] = tmp38;
     tmp43[4] = tmp39;
-    const tmp44 = options(tmp(4754).Text, tmp43);
+    const tmp44 = options(tmp(4786).Text, tmp43);
     cResult[17] = tmp5.username;
     cResult[18] = tmp39;
     cResult[19] = tmp44;
@@ -447,15 +447,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj4 = { variant: "text-sm/semibold", color: "text-brand", children: null };
       const intl = tmp2(1119).intl;
       obj4.children = intl.string(tmp2(1119).t.seV8yt);
-      let tmp8 = options(tmp2(4754).Text, obj4);
+      let tmp8 = options(tmp2(4786).Text, obj4);
     }
     if (null == onPressUser) {
       let PressableOpacity = React3;
     } else {
-      PressableOpacity = tmp2(5341).PressableOpacity;
+      PressableOpacity = tmp2(5373).PressableOpacity;
     }
     const obj5 = { selected: tmp7 };
-    const radioA11yNative = tmp2(4479).useRadioA11yNative(obj5);
+    const radioA11yNative = tmp2(4511).useRadioA11yNative(obj5);
     const obj6 = { accessibilityRole: null, accessibilityState: null, accessibilityHint: null, style: null, delayLongPress: null, onPress: null };
     ({ accessibilityRole: obj7.accessibilityRole, accessibilityState: obj7.accessibilityState } = radioA11yNative);
     let stringResult;
@@ -470,19 +470,19 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const merged = Object.assign(sortHandlers);
     const items2 = [leading, , ];
     const obj8 = { style: tmp.accountInfo, children: null };
-    const obj9 = { user: obj3, guildId: "a" };
+    const obj9 = { user: obj3, guildId: "Array" };
     const items3 = [options(tmp2(1181).Avatar, obj9), ];
     const obj10 = { style: tmp.accountListTag, children: null };
     const obj11 = { style: tmp.tagContainer, children: null };
     const obj12 = { variant: "text-md/semibold", color: "text-default", style: tmp.username, lineClamp: 1, children: null };
-    const tmp2Result = tmp2(4479);
+    const tmp2Result = tmp2(4511);
     let str = "always";
     if (stateFromStores) {
       str = "never";
     }
     const obj14 = { mode: "username", identifiable: str };
     obj12.children = UserUtilsDefault.getUserTag(obj3, obj14);
-    const items4 = [options(tmp2(4754).Text, obj12), ];
+    const items4 = [options(tmp2(4786).Text, obj12), ];
     let tmp18Result = !stateFromStores;
     if (!stateFromStores) {
       tmp18Result = !obj3.hasUniqueUsername();
@@ -491,7 +491,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj15 = { variant: "text-md/normal", color: "text-muted", children: null };
       const _HermesInternal = HermesInternal;
       obj15.children = "#" + obj3.discriminator;
-      tmp18Result = tmp18(tmp2(4754).Text, obj15);
+      tmp18Result = tmp18(tmp2(4786).Text, obj15);
     }
     items4[1] = tmp18Result;
     obj11.children = items4;
@@ -513,7 +513,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj17 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: null };
     const intl3 = tmp2(1119).intl;
     obj17.children = intl3.string(tmp2(1119).t.tYX2ps);
-    tmp8 = options(tmp2(4754).Text, obj17);
+    tmp8 = options(tmp2(4786).Text, obj17);
   }
 });
 export const AccountStatusIcon = tmp5;

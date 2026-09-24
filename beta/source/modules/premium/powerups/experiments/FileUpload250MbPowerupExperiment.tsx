@@ -1,12 +1,12 @@
-// Module ID: 4685
-// Function ID: 4686
+// Module ID: 4717
+// Function ID: 4718
 // Name: FileUpload250MbPowerupExperiment
-// Dependencies: [4672, 558, 568, 2]
+// Dependencies: [4704, 558, 568, 2]
 // Exports: getFileUpload250MbPowerupEnabled, getFileUpload250MbPowerupRollbackEnabled
 
-// Module 4685 (FileUpload250MbPowerupExperiment)
+// Module 4717 (FileUpload250MbPowerupExperiment)
 import c from "c" /* 568 */;
-import createExperiment from "module_4672" /* 4672 */;
+import createExperiment from "module_4704" /* 4704 */;
 import "ReactCompilerGating";
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

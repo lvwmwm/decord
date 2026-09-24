@@ -1,13 +1,13 @@
-// Module ID: 8694
-// Function ID: 8695
+// Module ID: 8726
+// Function ID: 8727
 // Name: AgeVerificationURLActionCreators
-// Dependencies: [5, 502, 8688, 1078, 8695, 1275, 577, 2]
+// Dependencies: [5, 502, 8720, 1078, 8727, 1275, 577, 2]
 // Exports: getAgeVerificationMethods, registerIncodeInterview, requestAgeVerificationV2, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 8694 (AgeVerificationURLActionCreators)
+// Module 8726 (AgeVerificationURLActionCreators)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import HTTPUtils from "HTTPUtils" /* 1275 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8695 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8727 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -511,7 +511,7 @@ function fetchAgeVerificationMethodsSuspendedUser() {
   const request = { url: Endpoints.SAFETY_HUB_GET_SUSPENDED_AGE_VERIFICATION_METHODS, rejectWithError: true, body: { token: suspendedUserToken } };
   return HTTP.post(request);
 }
-const VerificationVendorName = fn(8688).VerificationVendorName;
+const VerificationVendorName = fn(8720).VerificationVendorName;
 const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationURLActionCreators.tsx");

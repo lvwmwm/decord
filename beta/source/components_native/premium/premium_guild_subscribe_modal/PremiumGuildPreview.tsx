@@ -1,23 +1,23 @@
-// Module ID: 13876
-// Function ID: 13877
+// Module ID: 13912
+// Function ID: 13913
 // Name: PremiumGuildPreview
-// Dependencies: [19, 17, 1186, 1078, 21, 4758, 580, 5660, 4610, 13877, 13878, 13879, 13880, 13881, 13882, 13883, 13884, 558, 568, 4652, 1181, 504, 5799, 2]
+// Dependencies: [19, 17, 1186, 1078, 21, 4790, 580, 5692, 4642, 13913, 13914, 13915, 13916, 13917, 13918, 13919, 13920, 558, 568, 4684, 1181, 504, 5831, 2]
 
-// Module 13876 (PremiumGuildPreview)
+// Module 13912 (PremiumGuildPreview)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4652 */;
-import GuildIcon from "GuildIcon" /* 5799 */;
-import _modDef13877 from "module_13877" /* 13877 */;
-import _modDef13878 from "module_13878" /* 13878 */;
-import _modDef13879 from "module_13879" /* 13879 */;
-import _modDef13880 from "module_13880" /* 13880 */;
-import _modDef13881 from "module_13881" /* 13881 */;
-import _modDef13882 from "module_13882" /* 13882 */;
-import _modDef13883 from "module_13883" /* 13883 */;
-import _modDef13884 from "module_13884" /* 13884 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 4684 */;
+import GuildIcon from "GuildIcon" /* 5831 */;
+import _modDef13913 from "module_13913" /* 13913 */;
+import _modDef13914 from "module_13914" /* 13914 */;
+import _modDef13915 from "module_13915" /* 13915 */;
+import _modDef13916 from "module_13916" /* 13916 */;
+import _modDef13917 from "module_13917" /* 13917 */;
+import _modDef13918 from "module_13918" /* 13918 */;
+import _modDef13919 from "module_13919" /* 13919 */;
+import _modDef13920 from "module_13920" /* 13920 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 
@@ -26,29 +26,29 @@ const GuildIconDefault = GuildIcon;
 require = fn;
 function getTierIcon(theme, tier) {
   if (BoostedGuildTiers.NONE === tier) {
-    let tmp20 = _modDef13878;
-    const tmp19 = _modDef13877;
+    let tmp20 = _modDef13914;
+    const tmp19 = _modDef13913;
     if (obj4.isThemeDark(theme)) {
       tmp20 = tmp19;
     }
     return tmp20;
   } else if (tmp.TIER_1 === tier) {
-    let tmp15 = _modDef13880;
-    const tmp14 = _modDef13879;
+    let tmp15 = _modDef13916;
+    const tmp14 = _modDef13915;
     if (obj3.isThemeDark(theme)) {
       tmp15 = tmp14;
     }
     return tmp15;
   } else if (tmp.TIER_2 === tier) {
-    let tmp10 = _modDef13882;
-    const tmp9 = _modDef13881;
+    let tmp10 = _modDef13918;
+    const tmp9 = _modDef13917;
     if (obj2.isThemeDark(theme)) {
       tmp10 = tmp9;
     }
     return tmp10;
   } else if (tmp.TIER_3 === tier) {
-    let tmp5 = _modDef13884;
-    const tmp4 = _modDef13883;
+    let tmp5 = _modDef13920;
+    const tmp4 = _modDef13919;
     if (obj.isThemeDark(theme)) {
       tmp5 = tmp4;
     }
@@ -60,15 +60,15 @@ get_ActivityIndicator = fn(17);
 const BoostedGuildTiers = fn(1078).BoostedGuildTiers;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { guild: { padding: 16, borderRadius: nativeDefault.radii.xs, flexDirection: "row", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, guildInfo: { marginLeft: 16 }, guildName: null, tierPill: null, tierPillImage: null, tierPillText: null };
 let obj3 = { padding: 16, borderRadius: nativeDefault.radii.xs, flexDirection: "row", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-obj2.guildName = { fontSize: 16, lineHeight: 20, color: fn(5660).DARK_WHITE_500_LIGHT_BLACK_500 };
-let obj4 = { fontSize: 16, lineHeight: 20, color: fn(5660).DARK_WHITE_500_LIGHT_BLACK_500 };
+obj2.guildName = { fontSize: 16, lineHeight: 20, color: fn(5692).DARK_WHITE_500_LIGHT_BLACK_500 };
+let obj4 = { fontSize: 16, lineHeight: 20, color: fn(5692).DARK_WHITE_500_LIGHT_BLACK_500 };
 obj2.tierPill = { marginTop: 8, padding: 4, paddingRight: 8, alignSelf: "flex-start", flexDirection: "row", borderRadius: 11, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.tierPillImage = { width: 16, height: 16 };
 let obj5 = { marginTop: 8, padding: 4, paddingRight: 8, alignSelf: "flex-start", flexDirection: "row", borderRadius: 11, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj2.tierPillText = { fontSize: 12, lineHeight: 16, marginLeft: 4, color: fn(5660).DARK_WHITE_500_LIGHT_PRIMARY_660 };
+obj2.tierPillText = { fontSize: 12, lineHeight: 16, marginLeft: 4, color: fn(5692).DARK_WHITE_500_LIGHT_PRIMARY_660 };
 let closure_9 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
 let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -84,11 +84,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp9 = cResult[5];
       }
       if (cResult[6] !== tier) {
-        const tierName = tmp(4652).getTierName(tier);
+        const tierName = tmp(4684).getTierName(tier);
         cResult[6] = tier;
         cResult[7] = tierName;
         let tmp13 = tierName;
-        const tmpResult = tmp(4652);
+        const tmpResult = tmp(4684);
       } else {
         tmp13 = cResult[7];
       }
@@ -146,7 +146,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_1_8(React3, obj);
 });
 ReactCompilerGating = fn(558);
-let obj6 = { fontSize: 12, lineHeight: 16, marginLeft: 4, color: fn(5660).DARK_WHITE_500_LIGHT_PRIMARY_660 };
+let obj6 = { fontSize: 12, lineHeight: 16, marginLeft: 4, color: fn(5692).DARK_WHITE_500_LIGHT_PRIMARY_660 };
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/PremiumGuildPreview.tsx");
 
@@ -172,7 +172,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp9 = cResult[4];
     }
     if (cResult[5] !== guild) {
-      const obj2 = { guild, size: tmp(5799).GuildIconSizes.LARGE, selected: false };
+      const obj2 = { guild, size: tmp(5831).GuildIconSizes.LARGE, selected: false };
       const tmp14 = React5(GuildIconDefault, obj2);
       cResult[5] = guild;
       cResult[6] = tmp14;

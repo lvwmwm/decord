@@ -1,13 +1,13 @@
-// Module ID: 6256
-// Function ID: 6257
+// Module ID: 6288
+// Function ID: 6289
 // Name: GameDepthTier2SmallBadge
-// Dependencies: [21, 558, 568, 6257, 5802, 2]
+// Dependencies: [21, 558, 568, 6289, 5834, 2]
 
-// Module 6256 (GameDepthTier2SmallBadge)
+// Module 6288 (GameDepthTier2SmallBadge)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6257 from "module_6257" /* 6257 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6289 from "module_6289" /* 6289 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const GameDepthTier2SmallBadge = ReactCompilerGating.isReactCompilerEnabl
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6257 };
+    const obj2 = { uri: _modDef6289 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const GameDepthTier2SmallBadge = ReactCompilerGating.isReactCompilerEnabl
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6257 };
+  const obj2 = { uri: _modDef6289 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

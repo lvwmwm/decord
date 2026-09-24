@@ -1,13 +1,13 @@
-// Module ID: 5341
-// Function ID: 5342
+// Module ID: 5373
+// Function ID: 5374
 // Name: Pressables
-// Dependencies: [109, 19, 17, 5206, 1185, 21, 4758, 580, 558, 568, 1368, 5342, 2]
+// Dependencies: [109, 19, 17, 5238, 1185, 21, 4790, 580, 558, 568, 1368, 5374, 2]
 
-// Module 5341 (Pressables)
+// Module 5373 (Pressables)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import StyleSheetUtilsDefault from "StyleSheetUtils" /* 5342 */;
+import StyleSheetUtilsDefault from "StyleSheetUtils" /* 5374 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,10 +16,10 @@ let closure_3 = ["children", "androidRippleConfig", "style", "type", "activeOpac
 let closure_4 = ["activeOpacity"];
 let closure_5 = ["underlayColor"];
 const Pressable = fn(17).Pressable;
-const IOS_POINTER_STYLE = fn(5206).IOS_POINTER_STYLE;
+const IOS_POINTER_STYLE = fn(5238).IOS_POINTER_STYLE;
 const getThemedRippleConfig = fn(1185).getThemedRippleConfig;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { pressedHighlight: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED } };
 let closure_12 = createStyles.createStyles(obj);
 let ReactCompilerGating = fn(558);

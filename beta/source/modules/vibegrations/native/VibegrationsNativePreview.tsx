@@ -1,44 +1,44 @@
-// Module ID: 16968
-// Function ID: 16969
+// Module ID: 16978
+// Function ID: 16979
 // Name: VibegrationsNativePreview
-// Dependencies: [32, 19, 17, 9311, 502, 2045, 4773, 1983, 16939, 1078, 9312, 21, 4758, 580, 558, 568, 4754, 5824, 9558, 13182, 16969, 9567, 16970, 16971, 16978, 1119, 3682, 5188, 504, 7874, 9199, 7410, 4771, 7357, 10331, 1368, 16980, 2]
+// Dependencies: [32, 19, 17, 9343, 502, 2045, 4805, 1983, 16949, 1078, 9344, 21, 4790, 580, 558, 568, 4786, 5856, 9590, 13218, 16979, 9599, 16980, 16981, 16988, 1119, 3714, 5220, 504, 7906, 9231, 7442, 4803, 7389, 10370, 1368, 16990, 2]
 // Exports: leaveVibegrationsPreviewFrame
 
-// Module 16968 (VibegrationsNativePreview)
+// Module 16978 (VibegrationsNativePreview)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4771 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import Card from "Card" /* 5824 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7357 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 9199 */;
-import FramesNativeManagerDefault from "FramesNativeManager" /* 9558 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 9567 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4803 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import Card from "Card" /* 5856 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7389 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 9231 */;
+import FramesNativeManagerDefault from "FramesNativeManager" /* 9590 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 9599 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9311 */;
+import FramesStore from "FramesStore" /* 9343 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import ReadStateStore from "ReadStateStore" /* 4773 */;
+import ReadStateStore from "ReadStateStore" /* 4805 */;
 import AppStateStore from "AppStateStore" /* 1983 */;
 
 const initialize = intl(504);
 const util = intl(1119);
-const UserProfileApplicationWidgetTypes = intl(7874);
+const UserProfileApplicationWidgetTypes = intl(7906);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, ScrollView: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const vibegrationsDesignFeedbackStore = fn(16939);
+const vibegrationsDesignFeedbackStore = fn(16949);
 ({ exitVibegrationsDesignFeedback: map1, useVibegrationsDesignFeedback: closure_14 } = vibegrationsDesignFeedbackStore);
 const Constants = fn(1078);
 ({ AnalyticsObjects: closure_15, AnalyticsObjectTypes: closure_16, AnalyticsSections: closure_17, AppStates: closure_18, ME: closure_19 } = Constants);
-const FramesConstants = fn(9312);
+const FramesConstants = fn(9344);
 ({ FrameLayoutModes: closure_20, isLaunched: closure_21, MAIN_SURFACE: closure_22, makeFrameId: closure_23 } = FramesConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_24, jsxs: closure_25 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { frame: { flex: 1 }, centered: { flex: 1, alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_24 }, card: { alignSelf: "stretch" }, cardBody: null, cardCopy: null, cardText: null, widget: null, controlOverlay: null, controlText: null, dm: null };
 let obj3 = { flex: 1, alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_24 };
 obj2.cardBody = { padding: nativeDefault.space.PX_16, alignItems: "center", gap: nativeDefault.space.PX_12 };
@@ -94,7 +94,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 tmp21 = tmp24;
               }
               const obj3 = { variant: "primary", style: tmp4.card, children: tmp14 };
-              const tmp20 = closure_1_24(tmp(5824).Card, obj3);
+              const tmp20 = closure_1_24(tmp(5856).Card, obj3);
               cResult[14] = tmp4.card;
               cResult[15] = tmp14;
               cResult[16] = tmp20;
@@ -123,7 +123,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp10 = tmp13;
     }
     const obj6 = { variant: "text-sm/normal", color: "text-muted", style: tmp4.cardText, children: body };
-    const tmp9 = closure_1_24(tmp(4754).Text, obj6);
+    const tmp9 = closure_1_24(tmp(4786).Text, obj6);
     cResult[3] = body;
     cResult[4] = tmp4.cardText;
     cResult[5] = tmp9;
@@ -156,7 +156,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
   const projectId = applicationId.projectId;
   const visible = applicationId.visible;
   let obj = applicationId(568);
-  const vibegrationsControlActive = applicationId(13182).useVibegrationsControlActive(projectId);
+  const vibegrationsControlActive = applicationId(13218).useVibegrationsControlActive(projectId);
   const active = closure_14(projectId).active;
   if (cResult[0] !== projectId) {
     const fn = function c() {
@@ -183,7 +183,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
       tmp9 = cResult[6];
     }
     dependencyMap = tmp9;
-    const tmp15 = projectId(16969)(applicationId, closure_22);
+    const tmp15 = projectId(16979)(applicationId, closure_22);
     _slicedToArray = tmp15;
     if (cResult[7] !== tmp15) {
       let tmp18 = null;
@@ -212,11 +212,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
           if (visible) {
             tmp27 = null != tmp16;
           }
-          tmp13(16970)(tmp27);
+          tmp13(16980)(tmp27);
           if (null != tmp16) {
             if (cResult[15] !== tmp16.id) {
               let obj4 = { frameId: tmp16.id, layoutMode: constants4.FOCUSED };
-              const tmp52 = closure_24(tmp(16971).InlineFrameView, obj4);
+              const tmp52 = closure_24(tmp(16981).InlineFrameView, obj4);
               cResult[15] = tmp16.id;
               cResult[16] = tmp52;
               let tmp49 = tmp52;
@@ -292,8 +292,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
                       const obj6 = { style: frame.controlOverlay, pointerEvents: "box-only", accessibilityLiveRegion: "polite", children: null };
                       const obj7 = { variant: "text-sm/medium", color: "text-default", style: frame.controlText, children: null };
                       const intl4 = tmp(1119).intl;
-                      obj7.children = intl4.string(tmp13(3682).dIE9zO);
-                      obj6.children = closure_24(tmp(4754).Text, obj7);
+                      obj7.children = intl4.string(tmp13(3714).dIE9zO);
+                      obj6.children = closure_24(tmp(4786).Text, obj7);
                       tmp57 = closure_24(closure_7, obj6);
                     }
                   }
@@ -313,7 +313,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
                 tmp54 = null;
                 if (!vibegrationsControlActive) {
                   const obj8 = { projectId };
-                  tmp54 = closure_24(tmp13(16978), obj8);
+                  tmp54 = closure_24(tmp13(16988), obj8);
                 }
               }
             }
@@ -327,9 +327,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
             const _Symbol2 = Symbol;
             if (cResult[32] === Symbol.for("react.memo_cache_sentinel")) {
               const intl = tmp(1119).intl;
-              const stringResult = intl.string(tmp13(3682).MeLWCr);
+              const stringResult = intl.string(tmp13(3714).MeLWCr);
               const intl2 = tmp(1119).intl;
-              const stringResult1 = intl2.string(tmp13(3682)["1RCbQT"]);
+              const stringResult1 = intl2.string(tmp13(3714)["1RCbQT"]);
               cResult[32] = stringResult;
               cResult[33] = stringResult1;
               let tmp41 = stringResult1;
@@ -341,10 +341,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
             const _Symbol3 = Symbol;
             if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
               const obj9 = { title: Button, body: tmp41, children: null };
-              Button = tmp(5188).Button;
+              Button = tmp(5220).Button;
               const obj10 = { variant: "primary", size: "sm", text: null, onPress: null };
               const intl3 = tmp(1119).intl;
-              obj10.text = intl3.string(tmp13(3682)["42EdIV"]);
+              obj10.text = intl3.string(tmp13(3714)["42EdIV"]);
               obj10.onPress = function onPress() {
                 return closure_5(false);
               };
@@ -373,7 +373,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
             }
             return tmp36;
           }
-          const tmp13Result = tmp13(16970);
+          const tmp13Result = tmp13(16980);
         }
       }
     }
@@ -430,13 +430,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
   const visible = applicationId.visible;
   first = undefined;
   closure_5 = undefined;
-  const vibegrationsControlActive = applicationId(13182).useVibegrationsControlActive(projectId);
+  const vibegrationsControlActive = applicationId(13218).useVibegrationsControlActive(projectId);
   const items = [projectId, visible];
   const effect = first.useEffect(() => () => closure_2_13(projectId), items);
   const tmp5 = closure_26();
   const tmp6 = closure_23(applicationId, closure_22);
   dependencyMap = tmp6;
-  const tmp8 = projectId(16969)(applicationId, closure_22);
+  const tmp8 = projectId(16979)(applicationId, closure_22);
   _slicedToArray = tmp8;
   let tmp9 = null;
   if (null != tmp8) {
@@ -462,15 +462,15 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
     }
   }, items1);
   let tmp15 = visible;
-  let obj = applicationId(13182);
+  let obj = applicationId(13218);
   if (visible) {
     tmp15 = null != tmp9;
   }
-  projectId(16970)(tmp15);
+  projectId(16980)(tmp15);
   if (null != tmp9) {
     let obj3 = { style: tmp5.frame, children: null };
     let obj4 = { frameId: tmp9.id, layoutMode: constants4.FOCUSED };
-    const items2 = [closure_24(tmp(16971).InlineFrameView, obj4), , ];
+    const items2 = [closure_24(tmp(16981).InlineFrameView, obj4), , ];
     let tmp23Result = null;
     if (visible) {
       tmp23Result = null;
@@ -478,7 +478,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
         tmp23Result = null;
         if (!vibegrationsControlActive) {
           const obj5 = { projectId };
-          tmp23Result = tmp23(tmp7(16978), obj5);
+          tmp23Result = tmp23(tmp7(16988), obj5);
         }
       }
     }
@@ -490,8 +490,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
         const obj6 = { style: tmp5.controlOverlay, pointerEvents: "box-only", accessibilityLiveRegion: "polite", children: null };
         const obj7 = { variant: "text-sm/medium", color: "text-default", style: tmp5.controlText, children: null };
         const intl4 = tmp(1119).intl;
-        obj7.children = intl4.string(tmp7(3682).dIE9zO);
-        obj6.children = tmp23(tmp(4754).Text, obj7);
+        obj7.children = intl4.string(tmp7(3714).dIE9zO);
+        obj6.children = tmp23(tmp(4786).Text, obj7);
         tmp23Result2 = tmp23(tmp22, obj6);
       }
     }
@@ -501,16 +501,16 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
   } else if (first) {
     const obj8 = { title: null, body: null, children: null };
     const intl = tmp(1119).intl;
-    obj8.title = intl.string(tmp7(3682).MeLWCr);
+    obj8.title = intl.string(tmp7(3714).MeLWCr);
     const intl2 = tmp(1119).intl;
-    obj8.body = intl2.string(tmp7(3682)["1RCbQT"]);
+    obj8.body = intl2.string(tmp7(3714)["1RCbQT"]);
     const obj9 = { variant: "primary", size: "sm", text: null, onPress: null };
     const intl3 = tmp(1119).intl;
-    obj9.text = intl3.string(tmp7(3682)["42EdIV"]);
+    obj9.text = intl3.string(tmp7(3714)["42EdIV"]);
     obj9.onPress = function onPress() {
       return closure_5(false);
     };
-    obj8.children = tmp27(tmp(5188).Button, obj9);
+    obj8.children = tmp27(tmp(5220).Button, obj9);
     tmp27Result = tmp27(closure_27, obj8);
   } else {
     const obj10 = { style: tmp5.centered, children: tmp27(closure_5, {}) };
@@ -553,9 +553,9 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { title: null, body: null };
       const intl2 = util.intl;
-      obj3.title = intl2.string(_modDef3682.SGHO9K);
+      obj3.title = intl2.string(_modDef3714.SGHO9K);
       intl = util.intl;
-      stringResult = intl.string(_modDef3682["pV/rS2"]);
+      stringResult = intl.string(_modDef3714["pV/rS2"]);
       obj3.body = stringResult;
       const tmp26 = closure_1_24(closure_27, obj3);
       cResult[4] = tmp26;
@@ -594,9 +594,9 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
   if (applicationId.revoked) {
     const obj2 = { title: null, body: null };
     const intl = tmp2(1119).intl;
-    obj2.title = intl.string(_modDef3682.SGHO9K);
+    obj2.title = intl.string(_modDef3714.SGHO9K);
     const intl2 = tmp2(1119).intl;
-    obj2.body = intl2.string(_modDef3682["pV/rS2"]);
+    obj2.body = intl2.string(_modDef3714["pV/rS2"]);
     let tmp6Result = tmp6(closure_27, obj2);
   } else {
     const obj3 = { contentContainerStyle: tmp.widget, children: null };
@@ -611,7 +611,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewApplica
   const cResult = id(568).c(43);
   closure_26();
   let obj = id(568);
-  const application = id(7410).useApplication(previewApplicationId.previewApplicationId);
+  const application = id(7442).useApplication(previewApplicationId.previewApplicationId);
   const data = application.data;
   id = undefined;
   if (data != null) {
@@ -653,7 +653,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewApplica
     tmp9 = cResult[2];
     tmp10 = cResult[3];
   }
-  let obj2 = id(7410);
+  let obj2 = id(7442);
   const stateFromStores = id(504).useStateFromStores(first, tmp9, tmp10);
   const tmp13 = _slicedToArray(noop.useState(null), 2);
   dependencyMap = tmp13[1];
@@ -899,7 +899,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewApplica
   let stateFromStores1;
   let stateFromStores2;
   let tmp = closure_26();
-  const application = id(7410).useApplication(previewApplicationId.previewApplicationId);
+  const application = id(7442).useApplication(previewApplicationId.previewApplicationId);
   const data = application.data;
   id = undefined;
   if (data != null) {
@@ -911,7 +911,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewApplica
   if (id == null) {
     id = null;
   }
-  let obj = id(7410);
+  let obj = id(7442);
   const items = [ChannelStore];
   const items1 = [id];
   stateFromStores = id(504).useStateFromStores(items, () => {
@@ -938,8 +938,8 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewApplica
         if (!closure_3) {
           c0 = false;
           const obj2 = { recipientIds: tmp, navigateToChannel: false };
-          const obj = stateFromStores(4771);
-          stateFromStores(4771).openPrivateChannel(obj2).catch(() => {
+          const obj = stateFromStores(4803);
+          stateFromStores(4803).openPrivateChannel(obj2).catch(() => {
             if (!c0) {
               closure_2(id);
             }
@@ -999,16 +999,16 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewApplica
   if (!application.isLoading) {
     let obj2 = { title: null, body: null, children: null };
     const intl = tmp2(1119).intl;
-    obj2.title = intl.string(stateFromStores(3682).bl4eBc);
+    obj2.title = intl.string(stateFromStores(3714).bl4eBc);
     const intl2 = tmp2(1119).intl;
-    obj2.body = intl2.string(stateFromStores(3682)["4iyrze"]);
+    obj2.body = intl2.string(stateFromStores(3714)["4iyrze"]);
     let tmp19Result = null;
     if (tmp9) {
       const obj4 = { variant: "secondary", size: "sm", text: null, onPress: null };
       const intl3 = tmp2(1119).intl;
       obj4.text = intl3.string(tmp2(1119).t["5911Lb"]);
       obj4.onPress = callback;
-      tmp19Result = tmp19(tmp2(5188).Button, obj4);
+      tmp19Result = tmp19(tmp2(5220).Button, obj4);
     }
     obj2.children = tmp19Result;
     return closure_24(closure_27, obj2);
@@ -1021,10 +1021,10 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewApplica
   } else {
     const obj6 = { style: tmp.dm, children: null };
     const obj7 = { guildId, channelId: stateFromStores.id, chatInputRef: ref, screenIndex: "vibegrations-preview", alwaysRespectKeyboard: true, disableGradient: true };
-    const items8 = [closure_24(stateFromStores(10331), obj7, stateFromStores.id), ];
+    const items8 = [closure_24(stateFromStores(10370), obj7, stateFromStores.id), ];
     let tmp29Result = null;
     if (tmp2Result6.isAndroid()) {
-      tmp29Result = tmp29(tmp2(16980).PortalKeyboardRenderer, { portal: true });
+      tmp29Result = tmp29(tmp2(16990).PortalKeyboardRenderer, { portal: true });
     }
     items8[1] = tmp29Result;
     obj6.children = items8;
@@ -1045,9 +1045,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const intl5 = tmp(1119).intl;
-      const stringResult = intl5.string(_modDef3682.DYwf2n);
+      const stringResult = intl5.string(_modDef3714.DYwf2n);
       const intl6 = tmp(1119).intl;
-      const stringResult1 = intl6.string(_modDef3682.WWj3pN);
+      const stringResult1 = intl6.string(_modDef3714.WWj3pN);
       cResult[0] = stringResult;
       cResult[1] = stringResult1;
       tmp25 = stringResult;
@@ -1058,7 +1058,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol3 = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const intl7 = tmp(1119).intl;
-      const stringResult2 = intl7.string(_modDef3682["CRfE/E"]);
+      const stringResult2 = intl7.string(_modDef3714["CRfE/E"]);
       cResult[2] = stringResult2;
       let tmp30 = stringResult2;
     } else {
@@ -1073,7 +1073,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj2 = { title: tmp25, body: tmp26, children: null };
     const obj3 = { variant: "primary", size: "sm", text: tmp30, onPress: null, loading: null };
     ({ onReviewPermissions: obj8.onPress, loading: obj8.loading } = permissionsGate);
-    obj2.children = closure_1_24(tmp(5188).Button, obj3);
+    obj2.children = closure_1_24(tmp(5220).Button, obj3);
     const tmp36 = closure_1_24(closure_27, obj2);
     cResult[3] = permissionsGate.loading;
     cResult[4] = permissionsGate.onReviewPermissions;
@@ -1093,9 +1093,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       const obj5 = { title: null, body: null };
       const intl3 = tmp(1119).intl;
-      obj5.title = intl3.string(_modDef3682.FHOJiH);
+      obj5.title = intl3.string(_modDef3714.FHOJiH);
       const intl4 = tmp(1119).intl;
-      obj5.body = intl4.string(_modDef3682["1yLQoV"]);
+      obj5.body = intl4.string(_modDef3714["1yLQoV"]);
       tmp18Result = tmp18(closure_27, obj5);
     }
     cResult[6] = frameHostAvailable;
@@ -1134,9 +1134,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
       const obj15 = { title: null, body: null };
       const intl = tmp(1119).intl;
-      obj15.title = intl.string(_modDef3682.FHOJiH);
+      obj15.title = intl.string(_modDef3714.FHOJiH);
       const intl2 = tmp(1119).intl;
-      obj15.body = intl2.string(_modDef3682["1yLQoV"]);
+      obj15.body = intl2.string(_modDef3714["1yLQoV"]);
       const tmp9 = closure_1_24(closure_27, obj15);
       cResult[15] = tmp9;
       let tmp5 = tmp9;
@@ -1150,12 +1150,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (null != permissionsGate) {
     const obj2 = { title: null, body: null, children: null };
     const intl5 = util.intl;
-    obj2.title = intl5.string(_modDef3682.DYwf2n);
+    obj2.title = intl5.string(_modDef3714.DYwf2n);
     const intl6 = util.intl;
-    obj2.body = intl6.string(_modDef3682.WWj3pN);
+    obj2.body = intl6.string(_modDef3714.WWj3pN);
     const obj3 = { variant: "primary", size: "sm", text: null, onPress: null, loading: null };
     const intl7 = util.intl;
-    obj3.text = intl7.string(_modDef3682["CRfE/E"]);
+    obj3.text = intl7.string(_modDef3714["CRfE/E"]);
     ({ onReviewPermissions: obj7.onPress, loading: obj7.loading } = permissionsGate);
     obj2.children = closure_1_24(components_Button_Button.Button, obj3);
     return closure_1_24(closure_27, obj2);
@@ -1166,9 +1166,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       const obj5 = { title: null, body: null };
       const intl3 = util.intl;
-      obj5.title = intl3.string(_modDef3682.FHOJiH);
+      obj5.title = intl3.string(_modDef3714.FHOJiH);
       const intl4 = util.intl;
-      obj5.body = intl4.string(_modDef3682["1yLQoV"]);
+      obj5.body = intl4.string(_modDef3714["1yLQoV"]);
       tmp14Result = tmp14(closure_27, obj5);
     }
     return tmp14Result;
@@ -1185,9 +1185,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else if (null === mode) {
     const obj = { title: null, body: null };
     const intl = util.intl;
-    obj.title = intl.string(_modDef3682.FHOJiH);
+    obj.title = intl.string(_modDef3714.FHOJiH);
     const intl2 = util.intl;
-    obj.body = intl2.string(_modDef3682["1yLQoV"]);
+    obj.body = intl2.string(_modDef3714["1yLQoV"]);
     return closure_1_24(closure_27, obj);
   }
 });

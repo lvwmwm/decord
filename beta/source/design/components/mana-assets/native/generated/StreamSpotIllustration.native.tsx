@@ -1,13 +1,13 @@
-// Module ID: 6726
-// Function ID: 6727
+// Module ID: 6758
+// Function ID: 6759
 // Name: StreamSpotIllustration
-// Dependencies: [21, 558, 568, 6727, 5802, 2]
+// Dependencies: [21, 558, 568, 6759, 5834, 2]
 
-// Module 6726 (StreamSpotIllustration)
+// Module 6758 (StreamSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6727 from "module_6727" /* 6727 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6759 from "module_6759" /* 6759 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const StreamSpotIllustration = ReactCompilerGating.isReactCompilerEnabled
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6727 };
+    const obj2 = { uri: _modDef6759 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const StreamSpotIllustration = ReactCompilerGating.isReactCompilerEnabled
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6727 };
+  const obj2 = { uri: _modDef6759 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

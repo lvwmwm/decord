@@ -1,25 +1,25 @@
-// Module ID: 9142
-// Function ID: 9143
+// Module ID: 9174
+// Function ID: 9175
 // Name: CollectiblesShopCardVariants
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 9119, 9143, 7380, 9144, 9043, 7800, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 9151, 9175, 7412, 9176, 9075, 7832, 2]
 
-// Module 9142 (CollectiblesShopCardVariants)
+// Module 9174 (CollectiblesShopCardVariants)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9119 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9143 */;
-import PlusSmallIcon from "PlusSmallIcon" /* 9144 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9151 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9175 */;
+import PlusSmallIcon from "PlusSmallIcon" /* 9176 */;
 import noop from "module_19" /* 19 */;
 
-const CheckmarkSmallIcon = tmp(7380);
+const CheckmarkSmallIcon = tmp(7412);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let obj = { variantsContainer: { display: "flex", flexDirection: "row", alignItems: "center", paddingStart: nativeDefault.space.PX_4 } };
 let closure_6 = createStyles.createStyles(obj);
-createStyles = fn(4758);
+createStyles = fn(4790);
 let closure_7 = createStyles.createStyles((arg0) => {
   const obj = { variantOption: null, variantOptionInner: null, variantOverflowInner: null };
   const size = { marginStart: -nativeDefault.space.PX_4, width: 14, height: 14, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.round, justifyContent: "center", alignItems: "center" };
@@ -239,8 +239,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((produc
   let variants = product.product;
   const tmp2 = closure_6();
   const obj = defaultVariantIndex(568);
-  defaultVariantIndex = defaultVariantIndex(9043).useDefaultVariantIndex(variants);
-  const obj2 = defaultVariantIndex(9043);
+  defaultVariantIndex = defaultVariantIndex(9075).useDefaultVariantIndex(variants);
+  const obj2 = defaultVariantIndex(9075);
   if (obj3.getIsVariantProduct(variants)) {
     let num3 = 3;
     if (variants.variants.length <= 4) {
@@ -316,8 +316,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((produc
   product = product.product;
   let defaultVariantIndex;
   const tmp = closure_6();
-  defaultVariantIndex = defaultVariantIndex(9043).useDefaultVariantIndex(product);
-  const obj = defaultVariantIndex(9043);
+  defaultVariantIndex = defaultVariantIndex(9075).useDefaultVariantIndex(product);
+  const obj = defaultVariantIndex(9075);
   if (obj2.getIsVariantProduct(product)) {
     let num3 = 3;
     if (product.variants.length <= 4) {
@@ -343,5 +343,5 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((produc
   } else {
     return null;
   }
-  obj2 = defaultVariantIndex(7800);
+  obj2 = defaultVariantIndex(7832);
 }));

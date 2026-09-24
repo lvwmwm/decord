@@ -1,16 +1,16 @@
-// Module ID: 17268
-// Function ID: 17269
+// Module ID: 17278
+// Function ID: 17279
 // Name: YouScreenNavIconNitroSubscriber
-// Dependencies: [32, 19, 7699, 13666, 2042, 21, 558, 568, 8320, 504, 17263, 7632, 2031, 1119, 17265, 8938, 2]
+// Dependencies: [32, 19, 7731, 13702, 2042, 21, 558, 568, 8352, 504, 17273, 7664, 2031, 1119, 17275, 8970, 2]
 
-// Module 17268 (YouScreenNavIconNitroSubscriber)
+// Module 17278 (YouScreenNavIconNitroSubscriber)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7699 */;
-import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 13666 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7731 */;
+import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 13702 */;
 
 const require = fn;
-const NitroHomeSectionId = fn(13666).NitroHomeSectionId;
+const NitroHomeSectionId = fn(13702).NitroHomeSectionId;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
@@ -46,10 +46,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onPres
     tmp6 = cResult[2];
     tmp7 = cResult[3];
   }
-  obj2 = onPress(8320);
+  obj2 = onPress(8352);
   const stateFromStores = onPress(504).useStateFromStores(first, tmp6, tmp7);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { cooldownDurationMs: tmp(17263).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS };
+    const obj3 = { cooldownDurationMs: tmp(17273).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS };
     cResult[4] = obj3;
     let tmp9 = obj3;
   } else {
@@ -66,7 +66,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onPres
       }
     }
   }
-  const tmp11 = _slicedToArray(onPress(7632).useSelectedTimeRecurringDismissibleContent(prop, tmp9, undefined, true), 2);
+  const tmp11 = _slicedToArray(onPress(7664).useSelectedTimeRecurringDismissibleContent(prop, tmp9, undefined, true), 2);
   dependencyMap = tmp12;
   const tmp13 = tmp11[0] === onPress(2031).DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_BUTTON_NOTIFICATION;
   _slicedToArray = tmp13;
@@ -90,13 +90,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onPres
         }
         return tmp17;
       }
-      const obj4 = { IconComponent: tmp(8938).NitroWheelIcon, accessibilityLabel: tmp15, onPress: tmp14, showRedDot: tmp13 };
-      const tmp21 = jsx(showReferralNotificationDot(17265), { IconComponent: tmp(8938).NitroWheelIcon, accessibilityLabel: tmp15, onPress: tmp14, showRedDot: tmp13 });
+      const obj4 = { IconComponent: tmp(8970).NitroWheelIcon, accessibilityLabel: tmp15, onPress: tmp14, showRedDot: tmp13 };
+      const tmp21 = jsx(showReferralNotificationDot(17275), { IconComponent: tmp(8970).NitroWheelIcon, accessibilityLabel: tmp15, onPress: tmp14, showRedDot: tmp13 });
       cResult[10] = tmp14;
       cResult[11] = tmp13;
       cResult[12] = tmp21;
       tmp17 = tmp21;
-      const tmp20 = showReferralNotificationDot(17265);
+      const tmp20 = showReferralNotificationDot(17275);
     }
   }
   class C {
@@ -128,7 +128,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onPres
   if (showReferralNotificationDot) {
     showReferralNotificationDot = obj.useIsEligibleSenderForReferralProgram(!showReferralNotificationDot);
   }
-  obj = onPress(8320);
+  obj = onPress(8352);
   const items = [ReferralTrialStore];
   const items1 = [showReferralNotificationDot];
   const stateFromStores = onPress(504).useStateFromStores(items, () => ReferralTrialStore.getReferralsRemaining({ bypassFetch: !showReferralNotificationDot }), items1);
@@ -143,8 +143,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onPres
       }
     }
   }
-  const tmpResult2 = onPress(7632);
-  const tmp5 = _slicedToArray(tmpResult2.useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: onPress(17263).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS }, undefined, true), 2);
+  const tmpResult2 = onPress(7664);
+  const tmp5 = _slicedToArray(tmpResult2.useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: onPress(17273).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS }, undefined, true), 2);
   dependencyMap = tmp6;
   const tmp7 = tmp5[0] === onPress(2031).DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_BUTTON_NOTIFICATION;
   _slicedToArray = tmp7;
@@ -158,11 +158,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onPres
     onPress();
   }, items2);
   const obj3 = { IconComponent: null, accessibilityLabel: null, onPress: null, showRedDot: null };
-  const obj2 = { cooldownDurationMs: onPress(17263).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS };
-  obj3.IconComponent = onPress(8938).NitroWheelIcon;
+  const obj2 = { cooldownDurationMs: onPress(17273).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS };
+  obj3.IconComponent = onPress(8970).NitroWheelIcon;
   const intl = tmp(1119).intl;
   obj3.accessibilityLabel = intl.string(onPress(1119).t.Ipxkog);
   obj3.onPress = callback;
   obj3.showRedDot = tmp7;
-  return jsx(showReferralNotificationDot(17265), { IconComponent: null, accessibilityLabel: null, onPress: null, showRedDot: null });
+  return jsx(showReferralNotificationDot(17275), { IconComponent: null, accessibilityLabel: null, onPress: null, showRedDot: null });
 }));

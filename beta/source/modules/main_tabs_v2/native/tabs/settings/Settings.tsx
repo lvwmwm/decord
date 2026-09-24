@@ -1,23 +1,23 @@
-// Module ID: 17375
-// Function ID: 17376
+// Module ID: 17385
+// Function ID: 17386
 // Name: Settings
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 17255, 1616, 7186, 4737, 17376, 4497, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 17265, 1616, 7218, 4769, 17386, 4529, 2]
 
-// Module 17375 (Settings)
+// Module 17385 (Settings)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7186 */;
-import profileModalTransition from "profileModalTransition" /* 17255 */;
-import SettingsNavigatorDefault from "SettingsNavigator" /* 17376 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7218 */;
+import profileModalTransition from "profileModalTransition" /* 17265 */;
+import SettingsNavigatorDefault from "SettingsNavigator" /* 17386 */;
 import noop from "module_19" /* 19 */;
 
-const DeviceUtils = tmp(4737);
+const DeviceUtils = tmp(4769);
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { containerOuter: { flex: 1, overflow: "hidden" }, containerOuterTablet: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, flex: 1 }, container: { flex: 1 }, containerTablet: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, flex: 1 };
 obj2.containerTablet = { borderRadius: nativeDefault.radii.md, overflow: "hidden", flex: 1 };
@@ -54,7 +54,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const tmp12 = tmp8 ? tmp10.containerTablet : tmp10.container;
               const _Symbol = Symbol;
               if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-                const tmp16 = jsx(tmp5(17376), {});
+                const tmp16 = jsx(tmp5(17386), {});
                 cResult[9] = tmp16;
                 let tmp14 = tmp16;
               } else {
@@ -62,7 +62,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               }
               if (cResult[10] !== tmp12) {
                 const obj3 = { style: tmp12, children: tmp14 };
-                const tmp19 = jsx(tmp5(4497).View, { style: tmp12, children: tmp14 });
+                const tmp19 = jsx(tmp5(4529).View, { style: tmp12, children: tmp14 });
                 cResult[10] = tmp12;
                 cResult[11] = tmp19;
                 let tmp17 = tmp19;

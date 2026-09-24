@@ -1,12 +1,11 @@
 // Module ID: 4177
 // Function ID: 4178
-// Dependencies: [3849, 3850, 3853]
+// Dependencies: [3881, 3882]
 // Exports: default
 
 // Module 4177
-import _typeof_mod from "module_3849" /* 3849 */;
-import requiredArgs_mod from "requiredArgs" /* 3850 */;
-import module_3853_mod from "module_3853" /* 3853 */;
+import _typeof_mod from "module_3881" /* 3881 */;
+import requiredArgs_mod from "requiredArgs" /* 3882 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,30 +23,11 @@ if (!requiredArgs) {
   tmp5 = requiredArgs;
 }
 requiredArgs = tmp5;
-let module_3853 = module_3853_mod;
-if (!module_3853) {
-  const obj3 = { default: module_3853 };
-  let tmp7 = obj3;
-} else {
-  tmp7 = module_3853;
-}
-module_3853 = tmp7;
 
-export default function setUTCISODay(arg0, arg1) {
+export default function isEqual(arg0, arg1) {
   requiredArgs.default(2, arguments);
-  const defaultResult1 = module_3853.default(arg1);
-  let diff = defaultResult1;
-  if (defaultResult1 % 7 === 0) {
-    diff = defaultResult1 - 7;
-  }
-  const defaultResult2 = _typeof.default(arg0);
-  let num = 0;
-  const uTCDay = defaultResult2.getUTCDay();
-  if ((diff % 7 + 7) % 7 < 1) {
-    num = 7;
-  }
-  const diff1 = num + diff - uTCDay;
-  defaultResult2.setUTCDate(defaultResult2.getUTCDate() + diff1);
-  return defaultResult2;
+  const defaultResult1 = _typeof.default(arg0);
+  const time = defaultResult1.getTime();
+  return time === _typeof.default(arg1).getTime();
 };
 export default exports.default;

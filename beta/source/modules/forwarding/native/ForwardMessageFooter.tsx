@@ -1,16 +1,16 @@
-// Module ID: 11817
-// Function ID: 11818
+// Module ID: 11853
+// Function ID: 11854
 // Name: ForwardMessageFooter
-// Dependencies: [32, 19, 5107, 21, 558, 568, 11806, 11809, 504, 8024, 11818, 1119, 11819, 5188, 11826, 11827, 2]
+// Dependencies: [32, 19, 5139, 21, 558, 568, 11842, 11845, 504, 8056, 11854, 1119, 11855, 5220, 11862, 11863, 2]
 
-// Module 11817 (ForwardMessageFooter)
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8024 */;
+// Module 11853 (ForwardMessageFooter)
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8056 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import DraftStore from "DraftStore" /* 5107 */;
+import DraftStore from "DraftStore" /* 5139 */;
 
 const require = fn;
-const DraftType = fn(5107).DraftType;
+const DraftType = fn(5139).DraftType;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

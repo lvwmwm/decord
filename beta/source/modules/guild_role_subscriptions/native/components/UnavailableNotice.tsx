@@ -1,21 +1,21 @@
-// Module ID: 16887
-// Function ID: 16888
+// Module ID: 16897
+// Function ID: 16898
 // Name: UnavailableNotice
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 5802, 16583, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 5834, 16593, 4786, 2]
 
-// Module 16887 (UnavailableNotice)
+// Module 16897 (UnavailableNotice)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef16583 from "module_16583" /* 16583 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef16593 from "module_16593" /* 16593 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, brightTitle: null, unavailableContainer: null, unavailableInfo: null, unavailableDescription: null, joinCtaTitle: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.brightTitle = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
@@ -39,7 +39,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { source: _modDef16583 };
+      const obj2 = { source: _modDef16593 };
       const tmp11 = React4(FastImageDefault, obj2);
       cResult[3] = tmp11;
       let tmp7 = tmp11;
@@ -91,14 +91,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp19 = tmp22;
         }
         const obj5 = { style: tmp4.unavailableDescription, variant: "text-sm/medium", color: "text-default", children: description };
-        const tmp18 = React4(tmp(4754).Text, obj5);
+        const tmp18 = React4(tmp(4786).Text, obj5);
         cResult[10] = description;
         cResult[11] = tmp4.unavailableDescription;
         cResult[12] = tmp18;
         tmp16 = tmp18;
       }
       const obj6 = { variant: "heading-lg/extrabold", color: "text-default", style: tmp12, children: title };
-      const tmp15 = React4(tmp(4754).Text, obj6);
+      const tmp15 = React4(tmp(4786).Text, obj6);
       cResult[7] = tmp12;
       cResult[8] = title;
       cResult[9] = tmp15;
@@ -125,7 +125,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ container: arr[0], unavailableContainer: arr[1] } = tmp);
   obj.style = items;
   const obj2 = { style: tmp.unavailableInfo, children: null };
-  const obj3 = { source: _modDef16583 };
+  const obj3 = { source: _modDef16593 };
   const items1 = [React4(FastImageDefault, obj3), , ];
   const items2 = [tmp.joinCtaTitle, ];
   if (brightTitle) {

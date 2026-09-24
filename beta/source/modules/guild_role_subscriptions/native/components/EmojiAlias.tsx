@@ -1,18 +1,18 @@
-// Module ID: 18208
-// Function ID: 18209
+// Module ID: 18218
+// Function ID: 18219
 // Name: EmojiAlias
-// Dependencies: [19, 17, 21, 4758, 558, 568, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 4786, 2]
 
-// Module 18208 (EmojiAlias)
+// Module 18218 (EmojiAlias)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ emojiAlias: { alignItems: "center", flexDirection: "row" }, emojiColon: { width: 4 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -28,7 +28,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[3] !== tmp4.emojiColon) {
       const obj2 = { style: tmp4.emojiColon, "aria-hidden": true, variant: "text-md/medium", color: "text-muted", children: ":" };
-      const tmp8 = React3(tmp(4754).Text, obj2);
+      const tmp8 = React3(tmp(4786).Text, obj2);
       cResult[3] = tmp4.emojiColon;
       cResult[4] = tmp8;
       let tmp6 = tmp8;
@@ -37,7 +37,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[5] !== name) {
       const obj3 = { lineClamp: 1, variant: "text-md/bold", color: "interactive-text-active", children: name };
-      const tmp11 = React3(tmp(4754).Text, obj3);
+      const tmp11 = React3(tmp(4786).Text, obj3);
       cResult[5] = name;
       cResult[6] = tmp11;
       let tmp9 = tmp11;
@@ -46,7 +46,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[7] !== tmp4.emojiColon) {
       const obj4 = { style: tmp4.emojiColon, "aria-hidden": true, variant: "text-md/medium", color: "text-muted", children: ":" };
-      const tmp14 = React3(tmp(4754).Text, obj4);
+      const tmp14 = React3(tmp(4786).Text, obj4);
       cResult[7] = tmp4.emojiColon;
       cResult[8] = tmp14;
       let tmp12 = tmp14;

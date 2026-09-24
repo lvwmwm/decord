@@ -1,19 +1,19 @@
-// Module ID: 17112
-// Function ID: 17113
+// Module ID: 17122
+// Function ID: 17123
 // Name: pages/ErrorScreen
-// Dependencies: [19, 17, 21, 4758, 558, 568, 7224, 4472, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 7256, 4504, 4786, 2]
 
-// Module 17112 (pages/ErrorScreen)
+// Module 17122 (pages/ErrorScreen)
 import c from "c" /* 568 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4472 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7224 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4504 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7256 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ container: { justifyContent: "center", alignItems: "center", height: "100%", display: "flex" }, text: { textAlign: "center", width: "75%" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

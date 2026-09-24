@@ -1,25 +1,25 @@
-// Module ID: 16971
-// Function ID: 16972
+// Module ID: 16981
+// Function ID: 16982
 // Name: FrameView
-// Dependencies: [109, 32, 19, 9311, 9312, 2008, 21, 558, 568, 7410, 577, 9558, 16972, 9718, 16973, 9725, 16976, 504, 16977, 2]
+// Dependencies: [109, 32, 19, 9343, 9344, 2008, 21, 558, 568, 7442, 577, 9590, 16982, 9750, 16983, 9757, 16986, 504, 16987, 2]
 
-// Module 16971 (FrameView)
+// Module 16981 (FrameView)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import FramesNativeManagerDefault from "FramesNativeManager" /* 9558 */;
-import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 16972 */;
-import useInlineFrameOAuthNavigationDefault from "useInlineFrameOAuthNavigation" /* 16977 */;
+import FramesNativeManagerDefault from "FramesNativeManager" /* 9590 */;
+import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 16982 */;
+import useInlineFrameOAuthNavigationDefault from "useInlineFrameOAuthNavigation" /* 16987 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9311 */;
+import FramesStore from "FramesStore" /* 9343 */;
 
 const require = globalThis.__r;
 
 require = fn;
 let closure_3 = ["frameId"];
-const FramesConstants = fn(9312);
+const FramesConstants = fn(9344);
 ({ asLaunched: closure_8, FrameLayoutModes: closure_9 } = FramesConstants);
 const ActivityPlatform = fn(2008).ActivityPlatform;
 const jsx = fn(21).jsx;

@@ -1,32 +1,32 @@
-// Module ID: 16730
-// Function ID: 16731
+// Module ID: 16740
+// Function ID: 16741
 // Name: YouBarAvatar
-// Dependencies: [5, 32, 19, 17, 4750, 5498, 1376, 15354, 1078, 21, 4758, 580, 558, 568, 504, 1181, 4471, 4497, 8490, 9092, 5187, 4462, 9091, 8431, 4726, 7626, 1984, 6891, 2]
+// Dependencies: [5, 32, 19, 17, 4782, 5530, 1376, 15364, 1078, 21, 4790, 580, 558, 568, 504, 1181, 4503, 4529, 8522, 9124, 5219, 4494, 9123, 8463, 4758, 7658, 1984, 6923, 2]
 
-// Module 16730 (YouBarAvatar)
+// Module 16740 (YouBarAvatar)
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import native2 from "native" /* 4471 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import spring from "spring" /* 5187 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
-import ClipView from "ClipView" /* 9092 */;
+import native2 from "native" /* 4503 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import spring from "spring" /* 5219 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6923 */;
+import ClipView from "ClipView" /* 9124 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5530 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, Pressable: closure_7 } = get_ActivityIndicator);
-const YouBarConstants = fn(15354);
+const YouBarConstants = fn(15364);
 ({ YOU_BAR_AVATAR_LARGE_SIZE: closure_11, YOU_BAR_AVATAR_PLACEHOLDER_SIZE: closure_12, YOU_BAR_AVATAR_SIZE: map1, YOU_BAR_STATUS_INSET: closure_14, YOU_BAR_HEIGHT: closure_15, YOU_BAR_LARGE_STATUS_SIZE: closure_16, YOU_BAR_PADDING: closure_17, YOU_BAR_SPRING_CONFIG: closure_18, YOU_BAR_STATUS_OFFSET: closure_19, YOU_BAR_AVATAR_LARGE_PX: closure_20 } = YouBarConstants);
 const StatusTypes = fn(1078).StatusTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_22, jsxs: closure_23 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { avatarShadow: null };
 let merged = Object.assign(nativeDefault.shadows.SHADOW_MEDIUM);
 obj.avatarShadow = {};
@@ -75,33 +75,33 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((transitionStat
   let result = tmp(1181).AVATAR_SIZE_MAP[closure_13] / closure_20;
   dependencyMap = result;
   let result1 = (closure_20 - tmp(1181).AVATAR_SIZE_MAP[closure_13]) / 2;
-  const tmp16 = transitionState === transitionState(4471).TransitionStates.MOUNTED;
+  const tmp16 = transitionState === transitionState(4503).TransitionStates.MOUNTED;
   const tmpResult10 = transitionState(504);
   let num5 = 0;
   if (tmp16) {
     num5 = 1;
   }
-  const sharedValue = transitionState(4497).useSharedValue(num5);
-  const tmpResult11 = transitionState(4497);
+  const sharedValue = transitionState(4529).useSharedValue(num5);
+  const tmpResult11 = transitionState(4529);
   let num6 = 1;
   if (!tmp16) {
     num6 = result;
   }
-  const sharedValue1 = transitionState(4497).useSharedValue(num6);
-  const tmpResult12 = transitionState(4497);
+  const sharedValue1 = transitionState(4529).useSharedValue(num6);
+  const tmpResult12 = transitionState(4529);
   if (tmp16) {
     let tmp19 = -closure_17;
   } else {
     tmp19 = -result1;
   }
-  const sharedValue2 = transitionState(4497).useSharedValue(tmp19);
-  const tmpResult13 = transitionState(4497);
+  const sharedValue2 = transitionState(4529).useSharedValue(tmp19);
+  const tmpResult13 = transitionState(4529);
   if (tmp16) {
     let diff = -closure_17 - (tmp13 - closure_15) / 2;
   } else {
     diff = -result1;
   }
-  const sharedValue3 = transitionState(4497).useSharedValue(diff);
+  const sharedValue3 = transitionState(4529).useSharedValue(diff);
   if (cResult[4] === sharedValue2) {
     if (cResult[5] === sharedValue) {
       if (cResult[6] === sharedValue1) {
@@ -139,7 +139,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((transitionStat
             OFFLINE = tmp35.OFFLINE;
           }
           if (null == OFFLINE) {
-            tmp(4497);
+            tmp(4529);
             function et() {
               const rect = { transform: null, left: null, top: null, opacity: null };
               let obj = { scale: spring.withSpring(sharedValue1.get(), YOU_BAR_SPRING_CONFIG) };
@@ -171,23 +171,23 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((transitionStat
                 return closure_1_8.animateYouBarAvatarDeco;
               }
             }
-            rect.withSpring = tmp(5187).withSpring;
+            rect.withSpring = tmp(5219).withSpring;
             rect.scale = sharedValue1;
             rect.YOU_BAR_SPRING_CONFIG = YOU_BAR_SPRING_CONFIG;
             rect.left = sharedValue2;
             rect.top = sharedValue3;
             rect.opacity = sharedValue;
             rect.transitionState = transitionState;
-            rect.TransitionStates = tmp(4471).TransitionStates;
-            rect.runOnJS = tmp(4497).runOnJS;
+            rect.TransitionStates = tmp(4503).TransitionStates;
+            rect.runOnJS = tmp(4529).runOnJS;
             rect.cleanup = cleanup;
             et.__closure = rect;
             et.__workletHash = 15831722009842;
             et.__initData = __initData;
             const tmp45Result = tmp45(et);
-            const token = tmp(4462).useToken(cleanup(580).colors.MOBILE_FLOATINGBAR_BACKGROUND);
-            const tmpResult17 = tmp(4462);
-            const token1 = tmp(4462).useToken(cleanup(580).colors.BORDER_SUBTLE);
+            const token = tmp(4494).useToken(cleanup(580).colors.MOBILE_FLOATINGBAR_BACKGROUND);
+            const tmpResult17 = tmp(4494);
+            const token1 = tmp(4494).useToken(cleanup(580).colors.BORDER_SUBTLE);
             if (null == stateFromStores1) {
               return null;
             } else {
@@ -214,7 +214,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((transitionStat
               cResult[16] = tmp4.avatarShadow;
               cResult[17] = items3;
             }
-            const tmpResult18 = tmp(4462);
+            const tmpResult18 = tmp(4494);
           } else {
             let result2 = closure_16 / 2;
             let sum = result2 + tmp(1181).STATUS_PADDING;

@@ -1,12 +1,12 @@
-// Module ID: 16447
-// Function ID: 16448
+// Module ID: 16457
+// Function ID: 16458
 // Name: useFavoritesGuildCategoryLongPress
-// Dependencies: [19, 1078, 558, 568, 2070, 1119, 16448, 2]
+// Dependencies: [19, 1078, 558, 568, 2070, 1119, 16458, 2]
 
-// Module 16447 (useFavoritesGuildCategoryLongPress)
+// Module 16457 (useFavoritesGuildCategoryLongPress)
 import util from "util" /* 1119 */;
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
-import openFavoritesGuildCategoryActionSheetDefault from "openFavoritesGuildCategoryActionSheet" /* 16448 */;
+import openFavoritesGuildCategoryActionSheetDefault from "openFavoritesGuildCategoryActionSheet" /* 16458 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

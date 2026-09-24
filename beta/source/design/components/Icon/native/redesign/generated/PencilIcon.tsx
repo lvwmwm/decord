@@ -1,13 +1,13 @@
-// Module ID: 10626
-// Function ID: 10627
+// Module ID: 10662
+// Function ID: 10663
 // Name: PencilIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 8229, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 8261, 4493, 2]
 
-// Module 10626 (PencilIcon)
+// Module 10662 (PencilIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod8229 from "module_8229" /* 8229 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod8261 from "module_8261" /* 8261 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const PencilIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(8229);
+    const tmpResult = tmp(8261);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const PencilIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8229, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8261, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

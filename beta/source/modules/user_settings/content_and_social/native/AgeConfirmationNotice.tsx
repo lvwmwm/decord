@@ -1,19 +1,19 @@
-// Module ID: 15084
-// Function ID: 15085
+// Module ID: 15099
+// Function ID: 15100
 // Name: AgeConfirmationNotice
-// Dependencies: [19, 17, 8675, 21, 558, 568, 7545, 14952, 4455, 2112, 8687, 8689, 580, 5188, 1119, 4754, 1181, 2]
+// Dependencies: [19, 17, 8707, 21, 558, 568, 7577, 14987, 4487, 2112, 8719, 8721, 580, 5220, 1119, 4786, 1181, 2]
 
-// Module 15084 (AgeConfirmationNotice)
+// Module 15099 (AgeConfirmationNotice)
 import nativeDefault from "native" /* 580 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import LinkingDefault from "Linking" /* 4455 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 14952 */;
+import LinkingDefault from "Linking" /* 4487 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 14987 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const Constants = fn(8675);
+const Constants = fn(8707);
 ({ SafetySettingsNoticeAction: hasOwnProperty, SafetySettingsNoticeType: metroRequire } = Constants);
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
@@ -23,10 +23,10 @@ let result = size.fileFinishedImporting("modules/user_settings/content_and_socia
 export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = sensitiveContentFilterHelpArticle(568).c(11);
   let obj = sensitiveContentFilterHelpArticle(568);
-  sensitiveContentFilterHelpArticle = sensitiveContentFilterHelpArticle(7545).useSensitiveContentFilterHelpArticle();
+  sensitiveContentFilterHelpArticle = sensitiveContentFilterHelpArticle(7577).useSensitiveContentFilterHelpArticle();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function o() {
-      const result = sensitiveContentFilterHelpArticle(14952).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.VIEWED);
+      const result = sensitiveContentFilterHelpArticle(14987).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.VIEWED);
     };
     const items = [];
     cResult[0] = fn;
@@ -52,10 +52,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   importDefault = tmp8;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const fn3 = function f() {
-      const obj = onPress(8687);
-      const result = obj.showAgeVerificationGetStartedModal({ entryPoint: sensitiveContentFilterHelpArticle(8689).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE });
-      const obj2 = { entryPoint: sensitiveContentFilterHelpArticle(8689).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
-      const result1 = sensitiveContentFilterHelpArticle(14952).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
+      const obj = onPress(8719);
+      const result = obj.showAgeVerificationGetStartedModal({ entryPoint: sensitiveContentFilterHelpArticle(8721).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE });
+      const obj2 = { entryPoint: sensitiveContentFilterHelpArticle(8721).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+      const result1 = sensitiveContentFilterHelpArticle(14987).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
     };
     cResult[4] = fn3;
     let tmp9 = fn3;
@@ -74,7 +74,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl = tmp(1119).intl;
     obj4.text = intl.string(tmp(1119).t.FDSSia);
     obj4.onPress = tmp9;
-    const tmp14 = jsx(tmp(5188).Button, { variant: "secondary", size: "sm", text: null, onPress: null });
+    const tmp14 = jsx(tmp(5220).Button, { variant: "secondary", size: "sm", text: null, onPress: null });
     cResult[6] = tmp14;
     let tmp12 = tmp14;
   } else {
@@ -107,9 +107,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   return tmp17;
 }) : (() => {
-  sensitiveContentFilterHelpArticle = sensitiveContentFilterHelpArticle(7545).useSensitiveContentFilterHelpArticle();
+  sensitiveContentFilterHelpArticle = sensitiveContentFilterHelpArticle(7577).useSensitiveContentFilterHelpArticle();
   const effect = noop.useEffect(() => {
-    const result = sensitiveContentFilterHelpArticle(14952).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.VIEWED);
+    const result = sensitiveContentFilterHelpArticle(14987).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.VIEWED);
   }, []);
   const items = [sensitiveContentFilterHelpArticle];
   importDefault = noop.useCallback(() => {
@@ -120,10 +120,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj2 = { style: null, children: null };
   const obj3 = { marginBottom: null };
   const callback = noop.useCallback(() => {
-    const obj = onPress(8687);
-    const result = obj.showAgeVerificationGetStartedModal({ entryPoint: sensitiveContentFilterHelpArticle(8689).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE });
-    const obj2 = { entryPoint: sensitiveContentFilterHelpArticle(8689).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
-    const result1 = sensitiveContentFilterHelpArticle(14952).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
+    const obj = onPress(8719);
+    const result = obj.showAgeVerificationGetStartedModal({ entryPoint: sensitiveContentFilterHelpArticle(8721).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE });
+    const obj2 = { entryPoint: sensitiveContentFilterHelpArticle(8721).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+    const result1 = sensitiveContentFilterHelpArticle(14987).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
   }, []);
   obj3.marginBottom = nativeDefault.space.PX_8;
   obj2.style = obj3;
@@ -132,7 +132,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const intl = sensitiveContentFilterHelpArticle(1119).intl;
   obj5.text = intl.string(sensitiveContentFilterHelpArticle(1119).t.FDSSia);
   obj5.onPress = callback;
-  obj4.button = jsx(sensitiveContentFilterHelpArticle(5188).Button, { variant: "secondary", size: "sm", text: null, onPress: null });
+  obj4.button = jsx(sensitiveContentFilterHelpArticle(5220).Button, { variant: "secondary", size: "sm", text: null, onPress: null });
   const intl2 = sensitiveContentFilterHelpArticle(1119).intl;
   obj4.children = intl2.format(sensitiveContentFilterHelpArticle(1119).t.mFgsfg, {
     hook(children) {

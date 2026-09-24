@@ -1,16 +1,16 @@
-// Module ID: 11627
-// Function ID: 11628
+// Module ID: 11663
+// Function ID: 11664
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 4758, 580, 11628, 1119, 11629, 558, 568, 4754, 1368, 6891, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 11664, 1119, 11665, 558, 568, 4786, 1368, 6923, 2]
 
-// Module 11627 (AppStoreOverlayStatsCarousel)
+// Module 11663 (AppStoreOverlayStatsCarousel)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
-import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 11628 */;
-import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 11629 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6923 */;
+import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 11664 */;
+import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 11665 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,8 +24,8 @@ function getStatCardContent(stat) {
     const result = AppStoreOverlayStatCardUtils.formatAppStoreRatingValue(stat.rating, util.intl.currentLocale);
     let result1;
     if (null != stat.ratingCount) {
-      result1 = tmp11(11628).formatAppStoreRatingCount(stat.ratingCount, tmp11(1119).intl.currentLocale);
-      const tmp11Result = tmp11(11628);
+      result1 = tmp11(11664).formatAppStoreRatingCount(stat.ratingCount, tmp11(1119).intl.currentLocale);
+      const tmp11Result = tmp11(11664);
     }
     const appStoreStarFillAmounts = AppStoreOverlayStatCardUtils.getAppStoreStarFillAmounts(stat.rating, num);
     const intl = tmp11(1119).intl;
@@ -65,7 +65,7 @@ get_ActivityIndicator = fn(17);
 ({ Pressable: c3, ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { carousel: { marginHorizontal: -nativeDefault.space.PX_16 }, carouselContent: null, statCard: null, statCardExpanded: null, expandedCarouselContent: null, secondaryRow: null };
 let obj3 = { marginHorizontal: -nativeDefault.space.PX_16 };
 obj2.carouselContent = { gap: nativeDefault.space.PX_16, paddingLeft: nativeDefault.space.PX_16, paddingRight: nativeDefault.space.PX_16 };
@@ -114,7 +114,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[8] !== primaryText) {
         const obj2 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, children: primaryText };
-        const tmp18 = timestampProducer(tmp(4754).Text, obj2);
+        const tmp18 = timestampProducer(tmp(4786).Text, obj2);
         cResult[8] = primaryText;
         cResult[9] = tmp18;
         let tmp16 = tmp18;
@@ -194,7 +194,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp21Result = secondaryContent;
         if (null == secondaryContent) {
           const obj7 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
-          tmp21Result = tmp21(tmp(4754).Text, obj7);
+          tmp21Result = tmp21(tmp(4786).Text, obj7);
         }
         obj6.children = tmp21Result;
         tmp21Result2 = tmp21(hasOwnProperty, obj6);
@@ -208,7 +208,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj8 = { variant: "text-xs/semibold", color: "text-subtle", children: null };
     const items1 = [stat.label, " ", str];
     obj8.children = items1;
-    const tmp15 = React5(tmp(4754).Text, obj8);
+    const tmp15 = React5(tmp(4786).Text, obj8);
     cResult[5] = stat.label;
     cResult[6] = str;
     cResult[7] = tmp15;
@@ -250,7 +250,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj = { style: tmp.secondaryRow, children: null };
     if (null == secondaryContent) {
       const obj2 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
-      secondaryContent = tmp10(tmp7(4754).Text, obj2);
+      secondaryContent = tmp10(tmp7(4786).Text, obj2);
     }
     obj.children = secondaryContent;
     tmp10Result = tmp10(hasOwnProperty, obj);
@@ -291,7 +291,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   let obj = onRatingPress(568);
-  const nativeGesture = onRatingPress(6891).useNativeGesture(first);
+  const nativeGesture = onRatingPress(6923).useNativeGesture(first);
   let num2 = 2;
   if (0 === stats.length) {
     return null;
@@ -329,7 +329,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           obj = { stat: arg0, expanded: true, onRatingPress: null };
           tmp3 = undefined;
           tmp = jsx;
-          tmp2 = f57471;
+          tmp2 = f57522;
           if ("rating" === arg0.type) {
             tmp3 = onRatingPress;
           }
@@ -346,7 +346,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           obj = { stat: arg0, expanded: true, onRatingPress: null };
           tmp3 = undefined;
           tmp = jsx;
-          tmp2 = f57471;
+          tmp2 = f57522;
           if ("rating" === arg0.type) {
             tmp3 = onRatingPress;
           }
@@ -366,7 +366,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         obj = { stat: arg0, expanded: true, onRatingPress: null };
         tmp3 = undefined;
         tmp = jsx;
-        tmp2 = f57471;
+        tmp2 = f57522;
         if ("rating" === arg0.type) {
           tmp3 = onRatingPress;
         }
@@ -380,7 +380,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           obj = { stat: arg0, expanded: true, onRatingPress: null };
           tmp3 = undefined;
           tmp = jsx;
-          tmp2 = f57471;
+          tmp2 = f57522;
           if ("rating" === arg0.type) {
             tmp3 = onRatingPress;
           }
@@ -397,7 +397,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           obj = { stat: arg0, expanded: true, onRatingPress: null };
           tmp3 = undefined;
           tmp = jsx;
-          tmp2 = f57471;
+          tmp2 = f57522;
           if ("rating" === arg0.type) {
             tmp3 = onRatingPress;
           }

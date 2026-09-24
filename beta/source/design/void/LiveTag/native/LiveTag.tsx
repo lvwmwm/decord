@@ -1,19 +1,19 @@
-// Module ID: 14394
-// Function ID: 14395
+// Module ID: 14432
+// Function ID: 14433
 // Name: LiveTag
-// Dependencies: [19, 17, 21, 4758, 580, 1368, 558, 568, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 1368, 558, 568, 1119, 4786, 2]
 
-// Module 14394 (LiveTag)
+// Module 14432 (LiveTag)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { tag: { paddingHorizontal: 6, paddingVertical: 2, borderRadius: nativeDefault.radii.round, overflow: "hidden", justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BADGE_NOTIFICATION_BACKGROUND }, tagText: null };
 const obj4 = { textAlign: "center", color: nativeDefault.unsafe_rawColors.WHITE, marginTop: null };
 const PlatformUtils = fn(1368);
@@ -69,7 +69,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp13 = tmp16;
       }
       const obj3 = { variant: "text-xs/bold", style: tmp6, lineClamp: 1, allowFontScaling, children: tmp8 };
-      const tmp12 = jsx(tmp(4754).Text, { variant: "text-xs/bold", style: tmp6, lineClamp: 1, allowFontScaling, children: tmp8 });
+      const tmp12 = jsx(tmp(4786).Text, { variant: "text-xs/bold", style: tmp6, lineClamp: 1, allowFontScaling, children: tmp8 });
       cResult[7] = allowFontScaling;
       cResult[8] = tmp6;
       cResult[9] = tmp12;

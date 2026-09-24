@@ -1,9 +1,9 @@
-// Module ID: 14845
-// Function ID: 14846
+// Module ID: 14883
+// Function ID: 14884
 // Name: SafeAreaProvider
 // Dependencies: [19, 17, 21, 1613, 1618, 1368, 1617, 1628, 1252, 558, 568, 1619, 1485, 2]
 
-// Module 14845 (SafeAreaProvider)
+// Module 14883 (SafeAreaProvider)
 import c from "c" /* 568 */;
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
 import SafeAreaConstants from "SafeAreaConstants" /* 1618 */;

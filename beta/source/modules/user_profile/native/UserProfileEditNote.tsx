@@ -1,10 +1,10 @@
-// Module ID: 13352
-// Function ID: 13353
+// Module ID: 13388
+// Function ID: 13389
 // Name: UserProfileEditNote
-// Dependencies: [32, 19, 17, 1078, 21, 4758, 558, 568, 1488, 13348, 5839, 11227, 4625, 8112, 1119, 13353, 4754, 7332, 2]
+// Dependencies: [32, 19, 17, 1078, 21, 4790, 558, 568, 1488, 13384, 5871, 11263, 4657, 8144, 1119, 13389, 4786, 7364, 2]
 
-// Module 13352 (UserProfileEditNote)
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
+// Module 13388 (UserProfileEditNote)
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -13,7 +13,7 @@ const ScrollView = fn(17).ScrollView;
 const NOTE_MAX_LENGTH = fn(1078).NOTE_MAX_LENGTH;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ contentContainer: { paddingVertical: 24, paddingHorizontal: 16, gap: 8 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -206,10 +206,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         if (closure_5 == null) {
           str = "";
         }
-        const tmp2 = closure_1_1(11227);
+        const tmp2 = closure_1_1(11263);
         tmp2({
           hasEdits: str !== closure_6,
-          onHasEdits: closure_1_0(4625).dismissKeyboard,
+          onHasEdits: closure_1_0(4657).dismissKeyboard,
           resetPending() {
             let str = closure_1_5;
             if (closure_1_5 == null) {

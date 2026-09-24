@@ -1,13 +1,13 @@
-// Module ID: 6444
-// Function ID: 6445
+// Module ID: 6476
+// Function ID: 6477
 // Name: IceCreamIllocon
-// Dependencies: [21, 558, 568, 6445, 5802, 2]
+// Dependencies: [21, 558, 568, 6477, 5834, 2]
 
-// Module 6444 (IceCreamIllocon)
+// Module 6476 (IceCreamIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6445 from "module_6445" /* 6445 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6477 from "module_6477" /* 6477 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const IceCreamIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6445 };
+    const obj2 = { uri: _modDef6477 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const IceCreamIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6445 };
+  const obj2 = { uri: _modDef6477 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

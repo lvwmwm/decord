@@ -1,9 +1,9 @@
-// Module ID: 11217
-// Function ID: 11218
+// Module ID: 11253
+// Function ID: 11254
 // Name: useRecipientsLabel
-// Dependencies: [19, 1376, 1119, 558, 568, 1374, 4603, 504, 2]
+// Dependencies: [19, 1376, 1119, 558, 568, 1374, 4635, 504, 2]
 
-// Module 11217 (useRecipientsLabel)
+// Module 11253 (useRecipientsLabel)
 import util from "util" /* 1119 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
 import noop from "module_19" /* 19 */;

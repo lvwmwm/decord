@@ -1,23 +1,23 @@
-// Module ID: 14938
-// Function ID: 14939
+// Module ID: 14976
+// Function ID: 14977
 // Name: WebAuthnRegisterStep
-// Dependencies: [32, 19, 17, 14922, 21, 4758, 580, 7190, 558, 568, 1119, 1181, 1488, 1368, 14939, 14940, 4754, 5652, 5188, 7371, 2]
+// Dependencies: [32, 19, 17, 14960, 21, 4790, 580, 7222, 558, 568, 1119, 1181, 1488, 1368, 14977, 14978, 4786, 5684, 5220, 7403, 2]
 
-// Module 14938 (WebAuthnRegisterStep)
+// Module 14976 (WebAuthnRegisterStep)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7190 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7222 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const WebAuthnScreens = fn(14922).WebAuthnScreens;
+const WebAuthnScreens = fn(14960).WebAuthnScreens;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { flexContainer: { flex: 1, flexDirection: "column", alignItems: "stretch", justifyContent: "space-between", marginLeft: 16, marginRight: 16, marginTop: 16 }, centerFlex: { display: "flex", alignItems: "center" }, margin: { marginTop: 16, textAlign: "center" }, radioItem: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.md } };
 let closure_9 = createStyles.createStyles(obj2);
 let obj4 = { PASSKEY_CREDENTIAL_MANAGER: 0, [0]: "PASSKEY_CREDENTIAL_MANAGER", PASSKEY_DEVICE: 1, [1]: "PASSKEY_DEVICE", OTHER_AND_ANDROID_NONDISCOVERABLE: 2, [2]: "OTHER_AND_ANDROID_NONDISCOVERABLE" };
@@ -155,9 +155,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   dependencyMap = tmp18;
   const tmp6Result = tmp6(obj3.useState(obj4.isAndroid() ? obj4.PASSKEY_CREDENTIAL_MANAGER : obj4.OTHER_AND_ANDROID_NONDISCOVERABLE), 2);
-  const announceError = navigation(14939).useAnnounceError(tmp10);
+  const announceError = navigation(14977).useAnnounceError(tmp10);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp22 = closure_7(tmp(14940).KeyImage, {});
+    const tmp22 = closure_7(tmp(14978).KeyImage, {});
     cResult[4] = tmp22;
     let tmp20 = tmp22;
   } else {
@@ -184,7 +184,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         let tmp30 = "" !== tmp10;
         if (tmp30) {
           const obj6 = { variant: "text-md/normal", color: "text-feedback-critical", children: tmp10 };
-          tmp30 = closure_7(tmp(4754).Text, obj6);
+          tmp30 = closure_7(tmp(4786).Text, obj6);
         }
         cResult[10] = tmp10;
         cResult[11] = tmp30;
@@ -236,7 +236,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     const rect = { bottom: true, left: true, right: true, style: tmp5.flexContainer, children: null };
                     const items = [tmp32, tmp36, tmp44];
                     rect.children = items;
-                    const tmp49 = closure_8(tmp(7371).SafeAreaPaddingView, rect);
+                    const tmp49 = closure_8(tmp(7403).SafeAreaPaddingView, rect);
                     cResult[28] = tmp5.flexContainer;
                     cResult[29] = tmp44;
                     cResult[30] = tmp32;
@@ -247,8 +247,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 }
                 const obj7 = { children: null };
                 const obj8 = { text: tmp40, disabled: first, loading: first, onPress: tmp43, size: "lg" };
-                obj7.children = closure_7(tmp(5188).Button, obj8);
-                const tmp46 = closure_7(tmp(5652).ButtonGroup, obj7);
+                obj7.children = closure_7(tmp(5220).Button, obj8);
+                const tmp46 = closure_7(tmp(5684).ButtonGroup, obj7);
                 cResult[24] = first;
                 cResult[25] = tmp40;
                 cResult[26] = tmp43;
@@ -286,7 +286,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp32 = tmp35;
     }
     const obj11 = { style: tmp5.margin, variant: "text-md/normal", children: cResult[6] };
-    const tmp28 = closure_7(tmp(4754).Text, obj11);
+    const tmp28 = closure_7(tmp(4786).Text, obj11);
     cResult[7] = tmp5.margin;
     cResult[8] = cResult[6];
     cResult[9] = tmp28;
@@ -314,10 +314,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items2 = [onRegisterSuccess, tmp11, tmp8];
   closure_6 = obj2.useMemo(() => ({ onRegisterSuccess, setError, setRegistering }), items2);
   const obj3 = navigation(1368);
-  const announceError = navigation(14939).useAnnounceError(tmp10);
+  const announceError = navigation(14977).useAnnounceError(tmp10);
   const rect = { bottom: true, left: true, right: true, style: tmp4.flexContainer, children: null };
   obj4 = { style: tmp4.centerFlex, children: null };
-  const items3 = [closure_7(navigation(14940).KeyImage, {}), , ];
+  const items3 = [closure_7(navigation(14978).KeyImage, {}), , ];
   obj5 = { style: tmp4.margin, variant: "text-md/normal", children: null };
   const intl = tmp(1119).intl;
   const string = intl.string;
@@ -328,11 +328,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     stringResult = string(t.Lh5vTW);
   }
   obj5.children = stringResult;
-  items3[1] = closure_7(navigation(4754).Text, obj5);
+  items3[1] = closure_7(navigation(4786).Text, obj5);
   let tmp19Result = "" !== tmp10;
   if (tmp19Result) {
     const obj6 = { variant: "text-md/normal", color: "text-feedback-critical", children: tmp10 };
-    tmp19Result = tmp19(tmp(4754).Text, obj6);
+    tmp19Result = tmp19(tmp(4786).Text, obj6);
   }
   items3[2] = tmp19Result;
   obj4.children = items3;
@@ -352,7 +352,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     string2Result = string2(t2.oibaQa);
   }
   const obj8 = {
-    children: closure_7(navigation(5188).Button, {
+    children: closure_7(navigation(5220).Button, {
       text: string2Result,
       disabled: tmp7,
       loading: tmp7,
@@ -362,7 +362,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       size: "lg"
     })
   };
-  items4[2] = closure_7(navigation(5652).ButtonGroup, obj8);
+  items4[2] = closure_7(navigation(5684).ButtonGroup, obj8);
   rect.children = items4;
-  return closure_8(navigation(7371).SafeAreaPaddingView, rect);
+  return closure_8(navigation(7403).SafeAreaPaddingView, rect);
 });

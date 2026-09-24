@@ -1,13 +1,13 @@
-// Module ID: 8192
-// Function ID: 8193
+// Module ID: 8224
+// Function ID: 8225
 // Name: DenyIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 8193, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 8225, 4493, 2]
 
-// Module 8192 (DenyIcon)
+// Module 8224 (DenyIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod8193 from "module_8193" /* 8193 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod8225 from "module_8225" /* 8225 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const DenyIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(8193);
+    const tmpResult = tmp(8225);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const DenyIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8193, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8225, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

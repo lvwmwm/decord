@@ -1,28 +1,28 @@
-// Module ID: 11958
-// Function ID: 11959
+// Module ID: 11994
+// Function ID: 11995
 // Name: GuildIncidentActionsActionSheet
-// Dependencies: [19, 11663, 11959, 8279, 1078, 21, 4758, 558, 568, 7449, 7396, 1119, 7445, 565, 8278, 4725, 1181, 5822, 5903, 7446, 9708, 8871, 5652, 5188, 11960, 1245, 11962, 2]
+// Dependencies: [19, 11699, 11995, 8311, 1078, 21, 4790, 558, 568, 7481, 7428, 1119, 7477, 565, 8310, 4757, 1181, 5854, 5935, 7478, 9740, 8903, 5684, 5220, 11996, 1245, 11998, 2]
 
-// Module 11958 (GuildIncidentActionsActionSheet)
+// Module 11994 (GuildIncidentActionsActionSheet)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8278 */;
-import GuildAntiRaidActionCreators from "GuildAntiRaidActionCreators" /* 11960 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4757 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8310 */;
+import GuildAntiRaidActionCreators from "GuildAntiRaidActionCreators" /* 11996 */;
 import noop from "module_19" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11663 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11699 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
 
-const GuildRaidLockdownFeedbackActionSheetDefault = tmp7(11962);
+const GuildRaidLockdownFeedbackActionSheetDefault = tmp7(11998);
 require = fn;
-const GuildIncidentsActionSheetStore = fn(11959);
+const GuildIncidentsActionSheetStore = fn(11995);
 ({ resetGuildIncidentsActionSheetStore: hasOwnProperty, setInitialTime: metroRequire, setPauseDms: closure_7, setPauseInvites: closure_8, setTime: closure_9, useGuildIncidentsActionSheetStore: c10 } = GuildIncidentsActionSheetStore);
-const getTimeframes = fn(8279).getTimeframes;
+const getTimeframes = fn(8311).getTimeframes;
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_12, GuildFeatures: map1 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 const value2 = createStyles.createStyles({ beta: { marginLeft: -12 } });
 const ReactCompilerGating = fn(558);
 let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
@@ -31,19 +31,19 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   const cResult = onClose(568).c(15);
   onClose = onClose.onClose;
   if (cResult[0] !== onClose) {
-    const ActionSheet = map(7449).ActionSheet;
+    const ActionSheet = map(7481).ActionSheet;
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { title: null };
       const intl = map(1119).intl;
       obj2.title = intl.string(map(1119).t.vKYZzc);
-      const tmp11 = closure_14(map(7396).BottomSheetTitleHeader, obj2);
+      const tmp11 = closure_14(map(7428).BottomSheetTitleHeader, obj2);
       cResult[6] = tmp11;
       let tmp9 = tmp11;
     } else {
       tmp9 = cResult[6];
     }
-    Group = map(7445).ActionSheetRow.Group;
+    Group = map(7477).ActionSheetRow.Group;
     map = getTimeframes().map;
     const mapped = map((label) => closure_1_14(onClose(dependencyMap[12]).ActionSheetRow, {
       label: label.label,
@@ -98,9 +98,9 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   const obj2 = { title: null };
   const intl = onClose(1119).intl;
   obj2.title = intl.string(onClose(1119).t.vKYZzc);
-  const items = [closure_14(onClose(7396).BottomSheetTitleHeader, obj2), ];
+  const items = [closure_14(onClose(7428).BottomSheetTitleHeader, obj2), ];
   const arr = getTimeframes();
-  items[1] = closure_14(onClose(7445).ActionSheetRow.Group, {
+  items[1] = closure_14(onClose(7477).ActionSheetRow.Group, {
     hasIcons: false,
     children: getTimeframes().map((label) => closure_1_14(onClose(dependencyMap[12]).ActionSheetRow, {
       label: label.label,
@@ -111,7 +111,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     }, label.value))
   });
   obj.children = items;
-  return closure_15(onClose(7449).ActionSheet, obj);
+  return closure_15(onClose(7481).ActionSheet, obj);
 });
 class GuildIncidentActionsActionSheet {
   constructor(arg0) {

@@ -3,17 +3,17 @@
 // Dependencies: [3890, 3891, 3892, 3893, 3894]
 
 // Module 3889
-import futureSeconds from "futureSeconds" /* 3890 */;
+import module_3890 from "module_3890" /* 3890 */;
 import module_3891 from "module_3891" /* 3891 */;
 import module_3892 from "module_3892" /* 3892 */;
 import date_mod from "module_3893" /* 3893 */;
 import date_mod from "module_3894" /* 3894 */;
 
-if (!futureSeconds) {
-  const obj = { default: futureSeconds };
+if (!module_3890) {
+  const obj = { default: module_3890 };
   let tmp3 = obj;
 } else {
-  tmp3 = futureSeconds;
+  tmp3 = module_3890;
 }
 if (!module_3891) {
   const obj2 = { default: module_3891 };
@@ -42,5 +42,5 @@ if (!date) {
   tmp11 = date;
 }
 
-export default { code: "fi", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
+export default { code: "cs", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
 export default exports.default;

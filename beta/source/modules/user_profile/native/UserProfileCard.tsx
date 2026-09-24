@@ -1,25 +1,25 @@
-// Module ID: 7454
-// Function ID: 7455
+// Module ID: 7486
+// Function ID: 7487
 // Name: UserProfileCard
-// Dependencies: [109, 19, 17, 7455, 21, 4758, 580, 558, 568, 4754, 7456, 5341, 2]
+// Dependencies: [109, 19, 17, 7487, 21, 4790, 580, 558, 568, 4786, 7488, 5373, 2]
 
-// Module 7454 (UserProfileCard)
+// Module 7486 (UserProfileCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7456 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7488 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 let closure_2 = ["title", "titleLeadingIcon", "titleIcon", "titleStyle", "trailingAction", "children", "style"];
 const View = fn(17).View;
-const Constants = fn(7455);
+const Constants = fn(7487);
 ({ CARD_ROWS_COLUMN_GAP, CARD_ROWS_ICON_SIZE, CARD_ROWS_ICON_SIZE_VARIANT: metroRequire } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { title: { marginBottom: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, titleContent: null, text: null, row: null, rowLabel: null, rowLabelText: null, rowSublabel: null };
 let obj3 = { marginBottom: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 obj2.titleContent = { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
@@ -63,7 +63,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (cResult[10] !== tmp4) {
             let tmp17 = tmp4;
             if (tmp4) {
-              tmp17 = React5(tmp(7456).ChevronSmallRightIcon, { size: "sm" });
+              tmp17 = React5(tmp(7488).ChevronSmallRightIcon, { size: "sm" });
             }
             cResult[10] = tmp4;
             cResult[11] = tmp17;
@@ -99,7 +99,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     const obj2 = { style: tmp5.row, accessibilityRole: "button", accessibilityLabel: label, disabled, onPress, children: null };
                     const items = [tmp19, tmp23];
                     obj2.children = items;
-                    const tmp29 = closure_1_8(tmp(5341).PressableOpacity, obj2);
+                    const tmp29 = closure_1_8(tmp(5373).PressableOpacity, obj2);
                     cResult[21] = disabled;
                     cResult[22] = label;
                     cResult[23] = onPress;
@@ -146,7 +146,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj6 = { variant: "text-md/semibold", color: labelColor, style: tmp5.rowLabelText, children: label };
-    const tmp11 = React5(tmp(4754).Text, obj6);
+    const tmp11 = React5(tmp(4786).Text, obj6);
     cResult[3] = label;
     cResult[4] = tmp5.rowLabelText;
     cResult[5] = labelColor;

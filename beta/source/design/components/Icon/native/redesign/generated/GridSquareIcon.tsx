@@ -1,13 +1,13 @@
-// Module ID: 17289
-// Function ID: 17290
+// Module ID: 17299
+// Function ID: 17300
 // Name: GridSquareIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 16083, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 16093, 4493, 2]
 
-// Module 17289 (GridSquareIcon)
+// Module 17299 (GridSquareIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod16083 from "module_16083" /* 16083 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod16093 from "module_16093" /* 16093 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const GridSquareIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(16083);
+    const tmpResult = tmp(16093);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const GridSquareIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16083, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod16093, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

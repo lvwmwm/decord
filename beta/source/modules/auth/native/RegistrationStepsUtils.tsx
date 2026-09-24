@@ -1,29 +1,29 @@
-// Module ID: 16279
-// Function ID: 16280
+// Module ID: 16289
+// Function ID: 16290
 // Name: RegistrationStepsUtils
-// Dependencies: [5, 19, 14973, 6833, 16280, 16281, 1078, 21, 1253, 16282, 16288, 16289, 16301, 16302, 16308, 7183, 16310, 16311, 7295, 7292, 16315, 16316, 16320, 16321, 1489, 2013, 16291, 4659, 7189, 16328, 2]
+// Dependencies: [5, 19, 15008, 6865, 16290, 16291, 1078, 21, 1253, 16292, 16298, 16299, 16311, 16312, 16318, 7215, 16320, 16321, 7327, 7324, 16325, 16326, 16330, 16331, 1489, 2013, 16301, 4691, 7221, 16338, 2]
 // Exports: getAllAuthScreens, getNextRegistrationTransitionStep, getPreviousAuthState, getPreviousRegistrationTransitionStep, getRegistrationSteps, handleNextOrSubmitRegistration
 
-// Module 16279 (RegistrationStepsUtils)
+// Module 16289 (RegistrationStepsUtils)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
 import Link from "Link" /* 1489 */;
-import LoginDefault from "Login" /* 7183 */;
-import WelcomeDefault from "Welcome" /* 16282 */;
-import RegistrationUtils from "RegistrationUtils" /* 16288 */;
-import RegisterIdentity from "RegisterIdentity" /* 16289 */;
-import auth_register from "auth/register" /* 16291 */;
-import RegisterDisplayNameDefault from "RegisterDisplayName" /* 16301 */;
-import RegisterAccountInformationDefault from "RegisterAccountInformation" /* 16302 */;
-import components_VerifyPhoneDefault from "components/VerifyPhone" /* 16308 */;
-import components_MFADefault from "components/MFA" /* 16310 */;
-import AccountDisabledOrDeletionScheduledDefault from "AccountDisabledOrDeletionScheduled" /* 16311 */;
-import ExternalLinkDefault from "ExternalLink" /* 16315 */;
-import RegisterAgeGateDefault from "RegisterAgeGate" /* 16316 */;
-import AgeGateUnderageDefault from "AgeGateUnderage" /* 16320 */;
-import CompanionRemoteAuth from "CompanionRemoteAuth" /* 16321 */;
+import LoginDefault from "Login" /* 7215 */;
+import WelcomeDefault from "Welcome" /* 16292 */;
+import RegistrationUtils from "RegistrationUtils" /* 16298 */;
+import RegisterIdentity from "RegisterIdentity" /* 16299 */;
+import auth_register from "auth/register" /* 16301 */;
+import RegisterDisplayNameDefault from "RegisterDisplayName" /* 16311 */;
+import RegisterAccountInformationDefault from "RegisterAccountInformation" /* 16312 */;
+import components_VerifyPhoneDefault from "components/VerifyPhone" /* 16318 */;
+import components_MFADefault from "components/MFA" /* 16320 */;
+import AccountDisabledOrDeletionScheduledDefault from "AccountDisabledOrDeletionScheduled" /* 16321 */;
+import ExternalLinkDefault from "ExternalLink" /* 16325 */;
+import RegisterAgeGateDefault from "RegisterAgeGate" /* 16326 */;
+import AgeGateUnderageDefault from "AgeGateUnderage" /* 16330 */;
+import CompanionRemoteAuth from "CompanionRemoteAuth" /* 16331 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14973 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 15008 */;
 
 require = fn;
 function headerTitle() {
@@ -152,10 +152,10 @@ let closure_21 = async function _handleRegistrationSubmit(arg0, arg1) {
   }
   return arg1;
 };
-const usePromoEmailConsentStore = fn(6833).usePromoEmailConsentStore;
-const RegistrationUIStore = fn(16280);
+const usePromoEmailConsentStore = fn(6865).usePromoEmailConsentStore;
+const RegistrationUIStore = fn(16290);
 ({ setRegistrationErrors: metroRequire, setSubmitting: closure_7, useRegistrationUIStore: closure_8, clearRegistrationErrorMessage: closure_9 } = RegistrationUIStore);
-const RegistrationConstants = fn(16281);
+const RegistrationConstants = fn(16291);
 ({ authStateToRegisterTransitionStep: c10, RegisterTransitionSteps: closure_11, RegistrationSteps: closure_12, RegistrationTransitionActionTypes: map1 } = RegistrationConstants);
 const AuthStates = fn(1078).AuthStates;
 const jsx = fn(21).jsx;
@@ -309,7 +309,7 @@ export const getAllAuthScreens = function getAllAuthScreens() {
     headerTitle,
     render(arg0, arg1) {
       closure_0 = arg1;
-      return closure_15(closure_1(7295), {
+      return closure_15(closure_1(7327), {
         onClose() {
           return closure_0.pop();
         },

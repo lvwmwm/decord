@@ -1,19 +1,19 @@
-// Module ID: 12457
-// Function ID: 12458
+// Module ID: 12493
+// Function ID: 12494
 // Name: GuildDirectoryAddModal
-// Dependencies: [19, 12458, 21, 4758, 5897, 1253, 5839, 12456, 12459, 12467, 12471, 12481, 558, 568, 7371, 5813, 1119, 7246, 2]
+// Dependencies: [19, 12494, 21, 4790, 5929, 1253, 5871, 12492, 12495, 12503, 12507, 12517, 558, 568, 7403, 5845, 1119, 7278, 2]
 
-// Module 12457 (GuildDirectoryAddModal)
+// Module 12493 (GuildDirectoryAddModal)
 import c from "c" /* 568 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
-import useInitialValueDefault from "useInitialValue" /* 5813 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12456 */;
-import GuildDirectoryCreateOrAddDefault from "GuildDirectoryCreateOrAdd" /* 12459 */;
-import GuildDirectoryCreateOrAddDescriptionDefault from "GuildDirectoryCreateOrAddDescription" /* 12467 */;
-import GuildDirectoryTemplatesDefault from "GuildDirectoryTemplates" /* 12471 */;
-import CreateGuildContainerDefault from "CreateGuildContainer" /* 12481 */;
+import useInitialValueDefault from "useInitialValue" /* 5845 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12492 */;
+import GuildDirectoryCreateOrAddDefault from "GuildDirectoryCreateOrAdd" /* 12495 */;
+import GuildDirectoryCreateOrAddDescriptionDefault from "GuildDirectoryCreateOrAddDescription" /* 12503 */;
+import GuildDirectoryTemplatesDefault from "GuildDirectoryTemplates" /* 12507 */;
+import CreateGuildContainerDefault from "CreateGuildContainer" /* 12517 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -91,13 +91,13 @@ function getScreens() {
   };
   return obj;
 }
-const GuildDirectoryCreate = fn(12458).GuildDirectoryCreate;
+const GuildDirectoryCreate = fn(12494).GuildDirectoryCreate;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
-let obj2 = { safeArea: { marginTop: fn(5897).NAV_BAR_HEIGHT, flex: 1 } };
+const createStyles = fn(4790);
+let obj2 = { safeArea: { marginTop: fn(5929).NAV_BAR_HEIGHT, flex: 1 } };
 let closure_5 = createStyles.createStyles(obj2);
 fn(558);
-let obj3 = { marginTop: fn(5897).NAV_BAR_HEIGHT, flex: 1 };
+let obj3 = { marginTop: fn(5929).NAV_BAR_HEIGHT, flex: 1 };
 const ReactCompilerGating = fn(558);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const cResult = c.c(3);

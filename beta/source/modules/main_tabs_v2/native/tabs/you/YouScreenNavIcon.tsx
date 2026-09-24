@@ -1,28 +1,28 @@
-// Module ID: 17265
-// Function ID: 17266
+// Module ID: 17275
+// Function ID: 17276
 // Name: YouScreenNavIcon
-// Dependencies: [19, 17, 21, 16748, 580, 9092, 4758, 558, 568, 1119, 4754, 9182, 2]
+// Dependencies: [19, 17, 21, 16758, 580, 9124, 4790, 558, 568, 1119, 4786, 9214, 2]
 
-// Module 17265 (YouScreenNavIcon)
+// Module 17275 (YouScreenNavIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ClipViewDefault from "ClipView" /* 9092 */;
-import native from "native" /* 9182 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ClipViewDefault from "ClipView" /* 9124 */;
+import native from "native" /* 9214 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const md = fn(16748).ICON_SIZE.md;
+const md = fn(16758).ICON_SIZE.md;
 const result = (nativeDefault.space.PX_32 - md) / 2;
 const TEXT_DEFAULT = nativeDefault.colors.TEXT_DEFAULT;
 let c7 = "text-default";
-const point = { shape: fn(9092).CutoutShape.Circle, x: md - 8 - 4, y: -4, size: 16 };
+const point = { shape: fn(9124).CutoutShape.Circle, x: md - 8 - 4, y: -4, size: 16 };
 let items = [point];
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 const obj = { container: { borderRadius: nativeDefault.modules.button.BORDER_RADIUS, marginHorizontal: nativeDefault.space.PX_4, flexDirection: "column", alignItems: "center", padding: result }, label: null, dot: null };
 let obj2 = { borderRadius: nativeDefault.modules.button.BORDER_RADIUS, marginHorizontal: nativeDefault.space.PX_4, flexDirection: "column", alignItems: "center", padding: result };
 obj.label = { marginTop: nativeDefault.space.PX_4 };
@@ -92,7 +92,7 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
         const obj4 = { ref, style: tmp5.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp17, onPress, hitSlop: nativeDefault.space.PX_8, children: null };
         items = [tmp10, tmp20];
         obj4.children = items;
-        const tmp28 = hasOwnProperty(tmp(9182).PressableScale, obj4);
+        const tmp28 = hasOwnProperty(tmp(9214).PressableScale, obj4);
         cResult[11] = accessibilityLabel;
         cResult[12] = tmp17;
         cResult[13] = tmp10;
@@ -104,7 +104,7 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
         tmp25 = tmp28;
       }
       const obj5 = { style: tmp5.label, variant: "text-xs/semibold", color, maxFontSizeMultiplier: 2, children: label };
-      const tmp23 = React4(tmp(4754).Text, obj5);
+      const tmp23 = React4(tmp(4786).Text, obj5);
       cResult[8] = tmp5.label;
       cResult[9] = label;
       cResult[10] = tmp23;

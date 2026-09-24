@@ -1,26 +1,26 @@
-// Module ID: 11450
-// Function ID: 11451
+// Module ID: 11486
+// Function ID: 11487
 // Name: BadgeDirectoryView
-// Dependencies: [19, 17, 1376, 8466, 1078, 11451, 21, 4758, 580, 558, 1482, 568, 4754, 11445, 1616, 504, 8471, 11452, 1119, 11448, 7626, 5188, 5796, 2]
+// Dependencies: [19, 17, 1376, 8498, 1078, 11487, 21, 4790, 580, 558, 1482, 568, 4786, 11481, 1616, 504, 8503, 11488, 1119, 11484, 7658, 5220, 5828, 2]
 
-// Module 11450 (BadgeDirectoryView)
+// Module 11486 (BadgeDirectoryView)
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8471 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11445 */;
-import BadgeUtils from "BadgeUtils" /* 11452 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8503 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11481 */;
+import BadgeUtils from "BadgeUtils" /* 11488 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8466 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8498 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const UserSettingsSections = fn(1078).UserSettingsSections;
-let closure_9 = fn(11451).UserProfileEditAutoFocusElement;
+let closure_9 = fn(11487).UserProfileEditAutoFocusElement;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, content: null, centered: null, section: null, grid: null, tile: null, footer: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.content = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_48 };
@@ -37,7 +37,7 @@ obj2.footer = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: native
 let closure_12 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
 ReactCompilerGating.isReactCompilerEnabled();
-const f56888 = () => {
+const f56939 = () => {
 
 };
 ReactCompilerGating = fn(558);
@@ -53,7 +53,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((emptyText) => 
   }
   if (cResult[0] !== title) {
     const obj2 = { variant: "text-md/medium", color: "text-strong", children: title };
-    const tmp7 = closure_10(tmp(4754).Text, obj2);
+    const tmp7 = closure_10(tmp(4786).Text, obj2);
     cResult[0] = title;
     cResult[1] = tmp7;
     let tmp5 = tmp7;
@@ -98,7 +98,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((emptyText) => 
     let tmp10 = closure_10(closure_5, obj4);
   } else {
     const obj5 = { variant: "text-md/medium", color: "text-muted", children: tile };
-    tmp10 = closure_10(tmp(4754).Text, obj5);
+    tmp10 = closure_10(tmp(4786).Text, obj5);
   }
   cResult[2] = badges;
   cResult[3] = tile;
@@ -145,7 +145,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((targetUserId) =>
   const cResult = targetUserId(568).c(68);
   targetUserId = targetUserId.targetUserId;
   const tmp4 = closure_12();
-  if (typeof f56888 === "function") {
+  if (typeof f56939 === "function") {
     const diff = targetUserId(1482)().width - 2 * targetUserId(580).space.PX_16;
     let result = 3 * targetUserId(580).space.PX_12;
     const sum = targetUserId(1616)().bottom + targetUserId(580).space.PX_16;
@@ -613,7 +613,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((targetUserId) =>
   targetUserId = undefined;
   let stateFromStoresArray;
   const tmp = closure_12();
-  if (typeof f56888 === "function") {
+  if (typeof f56939 === "function") {
     let stringResult1 = stateFromStoresArray;
     const diff = targetUserId(stateFromStoresArray[10])().width - 2 * targetUserId(stateFromStoresArray[8]).space.PX_16;
     let result = 3 * targetUserId(stateFromStoresArray[8]).space.PX_12;

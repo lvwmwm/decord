@@ -1,23 +1,23 @@
-// Module ID: 16331
-// Function ID: 16332
+// Module ID: 16341
+// Function ID: 16342
 // Name: AuthManager
-// Dependencies: [5, 17, 12558, 1078, 4967, 12852, 1986, 577, 2041, 16332, 1368, 12561, 10055, 12895, 12851, 7586, 8007, 2]
+// Dependencies: [5, 17, 12594, 1078, 4999, 12888, 1986, 577, 2041, 16342, 1368, 12597, 10094, 12931, 12887, 7618, 8039, 2]
 
-// Module 16331 (AuthManager)
+// Module 16341 (AuthManager)
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import transitionToGuild from "transitionToGuild" /* 7586 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 8007 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12561 */;
+import transitionToGuild from "transitionToGuild" /* 7618 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 8039 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12597 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import LifecycleManager from "LifecycleManager" /* 1986 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ NativeModules: closure_4, Keyboard: hasOwnProperty } = get_ActivityIndicator);
-const PermissionStateType = fn(12558).PermissionStateType;
+const PermissionStateType = fn(12594).PermissionStateType;
 const ME = fn(1078).ME;
-let closure_8 = fn(4967).NotificationAuthorizationStatus;
-const NewUserTypes = fn(12852).NewUserTypes;
+let closure_8 = fn(4999).NotificationAuthorizationStatus;
+const NewUserTypes = fn(12888).NewUserTypes;
 let closure_10 = { REGISTER: "register", LOGIN: "login" };
 let c11 = null;
 class AuthManager extends tmp3 {
@@ -82,8 +82,8 @@ class AuthManager extends tmp3 {
             closure_129_0();
           }
           const obj6 = { onComplete: closure_129_0 };
-          const result = applyArgumentsResult(16332).showPushNotificationPromptModal(obj6);
-          const obj = applyArgumentsResult(16332);
+          const result = applyArgumentsResult(16342).showPushNotificationPromptModal(obj6);
+          const obj = applyArgumentsResult(16342);
         } catch (tmp19) {
           DCDShortcutManager = tmp;
           throw tmp19;
@@ -109,16 +109,16 @@ class AuthManager extends tmp3 {
     };
     applyArgumentsResult.handleRegisterComplete = function handleRegisterComplete() {
       if (!obj.hasDeferredInvite()) {
-        tmp(12895).setNewUser(constants.ORGANIC_REGISTERED);
-        const tmpResult = tmp(12895);
+        tmp(12931).setNewUser(constants.ORGANIC_REGISTERED);
+        const tmpResult = tmp(12931);
       }
-      obj = applyArgumentsResult(10055);
-      applyArgumentsResult(12851).startOnboarding();
+      obj = applyArgumentsResult(10094);
+      applyArgumentsResult(12887).startOnboarding();
     };
     applyArgumentsResult.handleLoginWithConnection = function handleLoginWithConnection() {
       const result = applyArgumentsResult.handlePushNotificationOptIn(() => {
-        closure_1_0(7586).transitionToGuild(closure_1_7);
-        const obj = closure_1_0(7586);
+        closure_1_0(7618).transitionToGuild(closure_1_7);
+        const obj = closure_1_0(7618);
         closure_1_1(577).dispatch({ type: "DEFERRED_INVITE_SHOW" });
       });
     };

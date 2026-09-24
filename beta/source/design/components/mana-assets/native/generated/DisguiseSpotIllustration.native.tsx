@@ -1,13 +1,13 @@
-// Module ID: 6156
-// Function ID: 6157
+// Module ID: 6188
+// Function ID: 6189
 // Name: DisguiseSpotIllustration
-// Dependencies: [21, 558, 568, 6157, 5802, 2]
+// Dependencies: [21, 558, 568, 6189, 5834, 2]
 
-// Module 6156 (DisguiseSpotIllustration)
+// Module 6188 (DisguiseSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6157 from "module_6157" /* 6157 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6189 from "module_6189" /* 6189 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const DisguiseSpotIllustration = ReactCompilerGating.isReactCompilerEnabl
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6157 };
+    const obj2 = { uri: _modDef6189 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const DisguiseSpotIllustration = ReactCompilerGating.isReactCompilerEnabl
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6157 };
+  const obj2 = { uri: _modDef6189 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

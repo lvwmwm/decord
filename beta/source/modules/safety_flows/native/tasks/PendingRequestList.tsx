@@ -1,13 +1,13 @@
-// Module ID: 18344
-// Function ID: 18345
+// Module ID: 18354
+// Function ID: 18355
 // Name: PendingRequestList
-// Dependencies: [19, 17, 1376, 21, 4758, 580, 1181, 558, 568, 504, 18342, 18345, 1401, 4754, 1119, 2780, 5341, 2486, 9074, 15190, 15144, 4458, 5907, 13206, 15149, 5186, 2]
+// Dependencies: [19, 17, 1376, 21, 4790, 580, 1181, 558, 568, 504, 18352, 18355, 1401, 4786, 1119, 2780, 5373, 2486, 9106, 15200, 15154, 4490, 5939, 13242, 15159, 5218, 2]
 
-// Module 18344 (PendingRequestList)
+// Module 18354 (PendingRequestList)
 import nativeDefault from "native" /* 580 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
 import _modDef2780 from "module_2780" /* 2780 */;
-import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 15144 */;
+import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 15154 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { card: { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" }, row: null, divider: null, avatar: null, details: null, actions: null, actionButton: null, acceptButton: null, declineButton: null, acceptIcon: null, declineIcon: null, inviteIconContainer: null, inviteQrButton: null, inviteShareButton: null, dividerRow: null, dividerLine: null, dividerLabel: null };
 let obj3 = { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" };
 obj2.row = { flexDirection: "row", alignItems: "center", paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16 };
@@ -354,24 +354,24 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((request) => {
     avatar = request.parent_avatar;
   }
   const obj = request(504);
-  const pendingRequestResolution = request(18342).usePendingRequestResolution(request.parent_id);
+  const pendingRequestResolution = request(18352).usePendingRequestResolution(request.parent_id);
   ({ isConnected, isResolved } = pendingRequestResolution);
-  const tmp2Result = request(18342);
+  const tmp2Result = request(18352);
   const obj2 = { style: tmp.row, children: null };
-  const result = request(18345).formatPendingRequestSentText(request.created_at);
+  const result = request(18355).formatPendingRequestSentText(request.created_at);
   const obj3 = { avatarStyle: tmp.avatar, source: null, disablePlaceholder: true };
-  const tmp2Result2 = request(18345);
+  const tmp2Result2 = request(18355);
   obj3.source = AvatarUtilsDefault.getUserAvatarSource({ id: request.parent_id, avatar });
   const items1 = [closure_7(request(1181).Avatar, obj3), , ];
   const obj5 = { style: tmp.details, children: null };
-  const items2 = [closure_7(request(4754).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: globalName }), , ];
+  const items2 = [closure_7(request(4786).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: globalName }), , ];
   let tmp13Result = username1 !== globalName;
   if (tmp13Result) {
     const obj7 = { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: username1 };
-    tmp13Result = tmp13(tmp2(4754).Text, obj7);
+    tmp13Result = tmp13(tmp2(4786).Text, obj7);
   }
   items2[1] = tmp13Result;
-  items2[2] = closure_7(request(4754).Text, { variant: "text-xs/medium", color: "text-muted", children: result });
+  items2[2] = closure_7(request(4786).Text, { variant: "text-xs/medium", color: "text-muted", children: result });
   obj5.children = items2;
   items1[1] = closure_8(closure_5, obj5);
   if (isResolved) {
@@ -379,7 +379,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((request) => {
     tmp14(2780);
     const obj8 = { variant: "text-sm/normal", color: "text-muted", children: null };
     obj8.children = intl3.string(isConnected ? obj8.YQP5dE : obj8["2HvOvh"]);
-    tmp13(tmp2(4754).Text, obj8);
+    tmp13(tmp2(4786).Text, obj8);
     const tmp22 = isConnected ? obj8.YQP5dE : obj8["2HvOvh"];
   } else {
     const obj9 = { style: tmp.actions, children: null };
@@ -400,11 +400,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((request) => {
         const obj12 = { size: "small", color: tmp.declineIcon.color };
         let tmp13Result6 = tmp13(closure_4, obj12);
       } else {
-        const obj13 = { size: tmp2(1181).Icon.Sizes.SMALL, color: tmp.declineIcon.color, source: tmp14(15190) };
+        const obj13 = { size: tmp2(1181).Icon.Sizes.SMALL, color: tmp.declineIcon.color, source: tmp14(15200) };
         tmp13Result6 = tmp13(tmp2(1181).Icon, obj13);
       }
       obj10.children = tmp13Result6;
-      items3[1] = tmp13(tmp2(5341).PressableOpacity, obj10);
+      items3[1] = tmp13(tmp2(5373).PressableOpacity, obj10);
       obj9.children = items3;
       items1[2] = tmp11(tmp12, obj9);
       obj2.children = items1;
@@ -426,10 +426,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((request) => {
         let tmp13Result7 = tmp13(closure_4, obj16);
       } else {
         const obj17 = { size: "sm", color: tmp14(580).colors.WHITE };
-        tmp13Result7 = tmp13(tmp2(9074).CheckmarkLargeBoldIcon, obj17);
+        tmp13Result7 = tmp13(tmp2(9106).CheckmarkLargeBoldIcon, obj17);
       }
       obj14.children = tmp13Result7;
-      tmp13(tmp2(5341).PressableOpacity, obj14);
+      tmp13(tmp2(5373).PressableOpacity, obj14);
     }
   }
 });

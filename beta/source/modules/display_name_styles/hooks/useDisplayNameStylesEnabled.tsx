@@ -1,14 +1,14 @@
-// Module ID: 4992
-// Function ID: 4993
+// Module ID: 5024
+// Function ID: 5025
 // Name: useDisplayNameStylesEnabled
-// Dependencies: [19, 4750, 558, 568, 504, 4993, 2]
+// Dependencies: [19, 4782, 558, 568, 504, 5025, 2]
 
-// Module 4992 (useDisplayNameStylesEnabled)
+// Module 5024 (useDisplayNameStylesEnabled)
 import _mod19 from "module_19" /* 19 */;
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import DisplayNameStylesContext from "DisplayNameStylesContext" /* 4993 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import DisplayNameStylesContext from "DisplayNameStylesContext" /* 5025 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ export const useDisplayNameStylesEnabled = ReactCompilerGating.isReactCompilerEn
   }
   let overrideSettings = initialize.useStateFromStores(tmp4, tmp5);
   if (!overrideSettings) {
-    overrideSettings = useContext(tmp(4993).DisplayNameStylesContext).overrideSettings;
+    overrideSettings = useContext(tmp(5025).DisplayNameStylesContext).overrideSettings;
   }
   return overrideSettings;
 }) : (() => {

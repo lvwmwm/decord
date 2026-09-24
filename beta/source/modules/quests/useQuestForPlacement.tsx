@@ -1,16 +1,16 @@
-// Module ID: 15372
-// Function ID: 15373
+// Module ID: 15382
+// Function ID: 15383
 // Name: useQuestForPlacement
-// Dependencies: [19, 7941, 7944, 1095, 11608, 10585, 10564, 558, 568, 504, 15373, 7942, 7940, 2]
+// Dependencies: [19, 7973, 7976, 1095, 11644, 10621, 10600, 558, 568, 504, 15383, 7974, 7972, 2]
 
-// Module 15372 (useQuestForPlacement)
+// Module 15382 (useQuestForPlacement)
 import DurationsDefault from "Durations" /* 1095 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 10585 */;
-import QuestsEligibility from "QuestsEligibility" /* 11608 */;
-import AdRecheckIntervalExperimentDefault from "AdRecheckIntervalExperiment" /* 15373 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 10621 */;
+import QuestsEligibility from "QuestsEligibility" /* 11644 */;
+import AdRecheckIntervalExperimentDefault from "AdRecheckIntervalExperiment" /* 15383 */;
 import noop from "module_19" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7941 */;
-import QuestStore from "QuestStore" /* 7944 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7973 */;
+import QuestStore from "QuestStore" /* 7976 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,16 +31,16 @@ function maybeRefreshAd(fetchedAt, MOBILE_HOME_DOCK_AREA, arg2) {
     if ("active" === obj2.getState()) {
       if (!AdDeliveryStore.isFetchingAdToDeliverByPlacement(MOBILE_HOME_DOCK_AREA)) {
         if (obj4.canRefreshAd(MOBILE_HOME_DOCK_AREA)) {
-          const currentQuests = tmp(10564).fetchCurrentQuests();
-          const tmpResult = tmp(10564);
-          const questToDeliver = tmp(10564).fetchQuestToDeliver(MOBILE_HOME_DOCK_AREA, arg2);
-          const tmpResult3 = tmp(10564);
+          const currentQuests = tmp(10600).fetchCurrentQuests();
+          const tmpResult = tmp(10600);
+          const questToDeliver = tmp(10600).fetchQuestToDeliver(MOBILE_HOME_DOCK_AREA, arg2);
+          const tmpResult3 = tmp(10600);
         }
       }
       obj4 = AdDeliveryStore;
     } else if (null != fetchedAt) {
-      tmp(10564).clearQuestAdDecision(MOBILE_HOME_DOCK_AREA, fetchedAt.ttlMillis);
-      const tmpResult4 = tmp(10564);
+      tmp(10600).clearQuestAdDecision(MOBILE_HOME_DOCK_AREA, fetchedAt.ttlMillis);
+      const tmpResult4 = tmp(10600);
     }
     obj2 = DiscordAppStateDefault;
   }
@@ -192,11 +192,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     creative = tmp5.creative;
   }
   if (cResult[0] !== creative) {
-    const deliveredQuestId = tmp(7942).getDeliveredQuestId(creative);
+    const deliveredQuestId = tmp(7974).getDeliveredQuestId(creative);
     cResult[0] = creative;
     cResult[1] = deliveredQuestId;
     let tmp7 = deliveredQuestId;
-    const tmpResult = tmp(7942);
+    const tmpResult = tmp(7974);
   } else {
     tmp7 = cResult[1];
   }
@@ -311,7 +311,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (!tmp3Result2.isQuestExpired(stateFromStores)) {
       tmp7 = stateFromStores;
     }
-    tmp3Result2 = tmp3(7940);
+    tmp3Result2 = tmp3(7972);
   }
   return tmp7;
 });

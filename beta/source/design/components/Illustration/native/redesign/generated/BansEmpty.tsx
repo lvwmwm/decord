@@ -1,13 +1,13 @@
-// Module ID: 18091
-// Function ID: 18092
+// Module ID: 18101
+// Function ID: 18102
 // Name: BansEmpty
-// Dependencies: [19, 17, 21, 8507, 18092, 18093, 18094, 558, 568, 4610, 2]
+// Dependencies: [19, 17, 21, 8539, 18102, 18103, 18104, 558, 568, 4642, 2]
 // Exports: getBansEmptySource
 
-// Module 18091 (BansEmpty)
+// Module 18101 (BansEmpty)
 import c from "c" /* 568 */;
-import shared from "shared" /* 4610 */;
-import _mod8507 from "module_8507" /* 8507 */;
+import shared from "shared" /* 4642 */;
+import _mod8539 from "module_8539" /* 8539 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,50 +20,50 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] !== theme) {
     const obj3 = {
       dark() {
-          return require("module_18092");
+          return require("module_18102");
         },
       darker() {
-          return require("module_18093");
+          return require("module_18103");
         },
       light() {
-          return require("module_18094");
+          return require("module_18104");
         }
     };
-    const illustrationSource = _mod8507.getIllustrationSource(theme, obj3);
+    const illustrationSource = _mod8539.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
     let tmp4 = illustrationSource;
-    const tmpResult = _mod8507;
+    const tmpResult = _mod8539;
   } else {
     tmp4 = cResult[1];
   }
   return tmp4;
 }) : (() => {
   const obj = shared;
-  return _mod8507.getIllustrationSource(obj.useThemeContext().theme, {
+  return _mod8539.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_18092");
+      return require("module_18102");
     },
     darker() {
-      return require("module_18093");
+      return require("module_18103");
     },
     light() {
-      return require("module_18094");
+      return require("module_18104");
     }
   });
 });
 let closure_4 = tmp3;
 ReactCompilerGating = fn(558);
 function getBansEmptySource(theme) {
-  return _mod8507.getIllustrationSource(theme, {
+  return _mod8539.getIllustrationSource(theme, {
     dark() {
-      return require("module_18092");
+      return require("module_18102");
     },
     darker() {
-      return require("module_18093");
+      return require("module_18103");
     },
     light() {
-      return require("module_18094");
+      return require("module_18104");
     }
   });
 }

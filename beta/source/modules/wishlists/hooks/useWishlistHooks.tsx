@@ -1,21 +1,21 @@
-// Module ID: 9054
-// Function ID: 9055
+// Module ID: 9086
+// Function ID: 9087
 // Name: useWishlistHooks
-// Dependencies: [32, 19, 7862, 502, 1376, 9055, 9056, 558, 568, 504, 9061, 12, 9062, 8461, 9068, 9073, 2]
+// Dependencies: [32, 19, 7894, 502, 1376, 9087, 9088, 558, 568, 504, 9093, 12, 9094, 8493, 9100, 9105, 2]
 
-// Module 9054 (useWishlistHooks)
+// Module 9086 (useWishlistHooks)
 import _mod12 from "module_12" /* 12 */;
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8461 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9061 */;
-import useDisplayProfileSocialLayerStorefrontApplicationIdsDefault from "useDisplayProfileSocialLayerStorefrontApplicationIds" /* 9068 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8493 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9093 */;
+import useDisplayProfileSocialLayerStorefrontApplicationIdsDefault from "useDisplayProfileSocialLayerStorefrontApplicationIds" /* 9100 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7862 */;
+import UserProfileStore from "UserProfileStore" /* 7894 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1376 */;
-import WishlistStore from "WishlistStore" /* 9055 */;
+import WishlistStore from "WishlistStore" /* 9087 */;
 
 require = fn;
 function getUserWishlistKey(userId, arg1) {
@@ -29,7 +29,7 @@ function getUserWishlistKey(userId, arg1) {
   return combined;
 }
 let useEffect = fn(19).useEffect;
-const getWishlistSkuIds = fn(9056).getWishlistSkuIds;
+const getWishlistSkuIds = fn(9088).getWishlistSkuIds;
 const WishlistFetchSource = { USER_PROFILE: "user_profile" };
 fn(558);
 let ReactCompilerGating = fn(558);
@@ -857,7 +857,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isSocialLayerStorefr
       let tmp17 = cResult[11];
     }
     const wishlist = closure_13(tmp17).wishlist;
-    tmp(9073);
+    tmp(9105);
     let flag2 = false;
     if (true === isGift) {
       flag2 = false;

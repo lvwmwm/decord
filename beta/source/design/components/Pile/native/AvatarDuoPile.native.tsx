@@ -1,13 +1,13 @@
-// Module ID: 14460
-// Function ID: 14461
+// Module ID: 14498
+// Function ID: 14499
 // Name: AvatarDuoPile
-// Dependencies: [109, 19, 21, 558, 568, 11303, 12783, 12, 13324, 9092, 2]
+// Dependencies: [109, 19, 21, 558, 568, 11339, 12819, 12, 13360, 9124, 2]
 
-// Module 14460 (AvatarDuoPile)
+// Module 14498 (AvatarDuoPile)
 import c from "c" /* 568 */;
-import ClipView from "ClipView" /* 9092 */;
-import Pile2 from "Pile" /* 11303 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 13324 */;
+import ClipView from "ClipView" /* 9124 */;
+import Pile2 from "Pile" /* 11339 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 13360 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -23,12 +23,12 @@ export const AvatarDuoPile = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   if (cResult[0] !== arg0) {
     ({ size, children } = arg0);
     const tmp9 = _objectWithoutProperties(arg0, closure_2);
-    const Pile = tmp(11303).Pile;
+    const Pile = tmp(11339).Pile;
     if ("aria-label" in tmp9) {
       let prop = tmp9["aria-label"];
     } else {
-      prop = tmp(12783).getListSummaryLabel(tmp9.names);
-      const tmpResult = tmp(12783);
+      prop = tmp(12819).getListSummaryLabel(tmp9.names);
+      const tmpResult = tmp(12819);
     }
     cResult[0] = arg0;
     cResult[1] = Pile;
@@ -39,7 +39,7 @@ export const AvatarDuoPile = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     if (tmpResult2.isArray(arr)) {
       let mapped = arr.map((item) => CutoutableAvatarImage.AVATAR_SIZE_MAP[item]);
     } else {
-      mapped = tmp(13324).AVATAR_SIZE_MAP[arr];
+      mapped = tmp(13360).AVATAR_SIZE_MAP[arr];
     }
     cResult[5] = arr;
     cResult[6] = mapped;
@@ -55,8 +55,8 @@ export const AvatarDuoPile = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
         }
       }
     }
-    const obj2 = { "aria-label": tmp6, shape: tmp(9092).CutoutShape.Circle, size: cResult[6], gap: 4, depthX: 0.5, depthY: 0.5, children: tmp5 };
-    const tmp20 = <tmp4 aria-label={tmp6} shape={tmp(9092).CutoutShape.Circle} size={cResult[6]} gap={4} depthX={0.5} depthY={0.5}>{tmp5}</tmp4>;
+    const obj2 = { "aria-label": tmp6, shape: tmp(9124).CutoutShape.Circle, size: cResult[6], gap: 4, depthX: 0.5, depthY: 0.5, children: tmp5 };
+    const tmp20 = <tmp4 aria-label={tmp6} shape={tmp(9124).CutoutShape.Circle} size={cResult[6]} gap={4} depthX={0.5} depthY={0.5}>{tmp5}</tmp4>;
     cResult[7] = tmp4;
     cResult[8] = tmp5;
     cResult[9] = tmp6;
@@ -70,14 +70,14 @@ export const AvatarDuoPile = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   if ("aria-label" in merged) {
     let prop = merged["aria-label"];
   } else {
-    prop = tmp3(12783).getListSummaryLabel(merged.names);
-    const tmp3Result = tmp3(12783);
+    prop = tmp3(12819).getListSummaryLabel(merged.names);
+    const tmp3Result = tmp3(12819);
   }
   const obj = { "aria-label": prop, shape: ClipView.CutoutShape.Circle, size: null, gap: 4, depthX: 0.5, depthY: 0.5, children: null };
   if (tmp3Result2.isArray(size)) {
     let mapped = size.map((item) => CutoutableAvatarImage.AVATAR_SIZE_MAP[item]);
   } else {
-    mapped = tmp3(13324).AVATAR_SIZE_MAP[size];
+    mapped = tmp3(13360).AVATAR_SIZE_MAP[size];
   }
   obj.size = mapped;
   obj.children = size.children;

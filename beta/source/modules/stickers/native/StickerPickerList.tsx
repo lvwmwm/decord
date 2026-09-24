@@ -1,33 +1,33 @@
-// Module ID: 10709
-// Function ID: 10710
+// Module ID: 10745
+// Function ID: 10746
 // Name: StickerPickerList
-// Dependencies: [32, 19, 17, 5721, 10682, 10650, 21, 4758, 580, 558, 568, 1181, 10710, 1119, 4754, 10482, 5487, 4497, 10498, 10465, 504, 10711, 10481, 10712, 10693, 12, 7309, 10713, 7227, 10490, 7302, 10503, 8101, 2]
+// Dependencies: [32, 19, 17, 5753, 10718, 10686, 21, 4790, 580, 558, 568, 1181, 10746, 1119, 4786, 10518, 5519, 4529, 10534, 10504, 504, 10747, 10517, 10748, 10729, 12, 7341, 10749, 7259, 10526, 7334, 10539, 8133, 2]
 
-// Module 10709 (StickerPickerList)
+// Module 10745 (StickerPickerList)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7309 */;
-import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 10481 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10482 */;
-import StickerPickerListRowDefault from "StickerPickerListRow" /* 10693 */;
-import _modDef10710 from "module_10710" /* 10710 */;
-import useStickerPickerListData from "useStickerPickerListData" /* 10711 */;
-import StickerPickerPremiumSearchUpsellDefault from "StickerPickerPremiumSearchUpsell" /* 10712 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7341 */;
+import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 10517 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10518 */;
+import StickerPickerListRowDefault from "StickerPickerListRow" /* 10729 */;
+import _modDef10746 from "module_10746" /* 10746 */;
+import useStickerPickerListData from "useStickerPickerListData" /* 10747 */;
+import StickerPickerPremiumSearchUpsellDefault from "StickerPickerPremiumSearchUpsell" /* 10748 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import StickersStore from "StickersStore" /* 5721 */;
+import StickersStore from "StickersStore" /* 5753 */;
 
 require = fn;
 const View = fn(17).View;
-const useStickerPickerStore = fn(10682).useStickerPickerStore;
-const StickerPickerConstants = fn(10650);
+const useStickerPickerStore = fn(10718).useStickerPickerStore;
+const StickerPickerConstants = fn(10686);
 ({ STICKER_SCROLL_LOAD_DELAY_MS: closure_8, STICKER_SCROLL_LOAD_DELAY_AFTER_HEIGHT_CHANGE_MS: closure_9, STICKER_SIZE: c10 } = StickerPickerConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { listPlaceholder: { color: nativeDefault.colors.BACKGROUND_MOD_MUTED }, section: null, sectionSticker: null, nsfwContainer: null, nsfwText: null };
 let obj3 = { color: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 obj.section = { justifyContent: "center", overflow: "hidden", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
@@ -56,7 +56,7 @@ let closure_15 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((heig
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { source: _modDef10710, size: tmp(1181).Icon.Sizes.SMALL };
+      const obj3 = { source: _modDef10746, size: tmp(1181).Icon.Sizes.SMALL };
       const tmp11 = closure_1_11(tmp(1181).Icon, obj3);
       cResult[5] = tmp11;
       let tmp8 = tmp11;
@@ -74,7 +74,7 @@ let closure_15 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((heig
     }
     if (cResult[7] !== tmp4.nsfwText) {
       const obj4 = { style: tmp4.nsfwText, variant: "text-sm/normal", color: "interactive-text-active", children: tmp12 };
-      const tmp16 = closure_1_11(tmp(4754).Text, obj4);
+      const tmp16 = closure_1_11(tmp(4786).Text, obj4);
       cResult[7] = tmp4.nsfwText;
       cResult[8] = tmp16;
       let tmp14 = tmp16;
@@ -106,7 +106,7 @@ let closure_15 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((heig
   const obj = { style: null, children: null };
   const items = [tmp.nsfwContainer, { height: height.height }];
   obj.style = items;
-  const items1 = [closure_1_11(native.Icon, { source: _modDef10710, size: native.Icon.Sizes.SMALL }), ];
+  const items1 = [closure_1_11(native.Icon, { source: _modDef10746, size: native.Icon.Sizes.SMALL }), ];
   const obj3 = { style: tmp.nsfwText, variant: "text-sm/normal", color: "interactive-text-active", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t.uy25Qz);
@@ -135,7 +135,7 @@ let closure_16 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
       if (cResult[6] !== isSectionNitroLocked) {
         let tmp8 = isSectionNitroLocked;
         if (isSectionNitroLocked) {
-          tmp8 = closure_1_11(tmp(10482).PremiumUpsellGradientBackground, {});
+          tmp8 = closure_1_11(tmp(10518).PremiumUpsellGradientBackground, {});
         }
         cResult[6] = isSectionNitroLocked;
         cResult[7] = tmp8;
@@ -145,7 +145,7 @@ let closure_16 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
       }
       if (cResult[8] !== label) {
         const obj3 = { lineClamp: 1, color: "interactive-text-default", variant: "heading-sm/semibold", children: label };
-        const tmp12 = closure_1_11(tmp(4754).Text, obj3);
+        const tmp12 = closure_1_11(tmp(4786).Text, obj3);
         cResult[8] = label;
         cResult[9] = tmp12;
         let tmp10 = tmp12;
@@ -533,7 +533,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((bottom
         const obj2 = { containerWidth, stickers: tmp.stickersByRow[arg1], rowSize, isSectionNitroLocked: sectionNitroLocked[arg0], onPressSticker, onLongPressStickerDetail, focusedSticker, setFocusedSticker, channel };
         let tmp5 = closure_2_11(StickerPickerListRowDefault, obj2);
         let tmp2 = closure_2_11;
-      } else if (tmp21(10711).StickerPickerSectionType.NSFW === type) {
+      } else if (tmp21(10747).StickerPickerSectionType.NSFW === type) {
         tmp2 = closure_2_11;
         const obj = { height: rowHeight };
         tmp5 = closure_2_11(closure_15, obj);
@@ -543,7 +543,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((bottom
       let tmp18 = tmp5;
       if (true === sectionNitroLocked[arg0]) {
         const obj3 = { children: null };
-        const items = [tmp2(tmp21(10482).PremiumUpsellGradientBackground, {}), tmp5];
+        const items = [tmp2(tmp21(10518).PremiumUpsellGradientBackground, {}), tmp5];
         obj3.children = items;
         tmp18 = __initData(__initData2, obj3);
       }

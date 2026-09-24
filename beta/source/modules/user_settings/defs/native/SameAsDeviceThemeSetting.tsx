@@ -1,18 +1,18 @@
-// Module ID: 15563
-// Function ID: 15564
+// Module ID: 15573
+// Function ID: 15574
 // Name: SameAsDeviceThemeSetting
-// Dependencies: [1186, 8238, 558, 568, 504, 15433, 11594, 1119, 2]
+// Dependencies: [1186, 8270, 558, 568, 504, 15443, 11630, 1119, 2]
 
-// Module 15563 (SameAsDeviceThemeSetting)
+// Module 15573 (SameAsDeviceThemeSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 15433 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 15443 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -37,7 +37,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.c445ix);
   },
-  parent: fn(8238).MobileUserSettings.APPEARANCE,
+  parent: fn(8270).MobileUserSettings.APPEARANCE,
   useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {

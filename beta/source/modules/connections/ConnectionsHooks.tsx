@@ -1,23 +1,23 @@
-// Module ID: 7750
-// Function ID: 7751
+// Module ID: 7782
+// Function ID: 7783
 // Name: ConnectionsHooks
-// Dependencies: [32, 19, 5500, 1376, 1078, 7751, 1095, 558, 568, 504, 7753, 12, 5502, 2]
+// Dependencies: [32, 19, 5532, 1376, 1078, 7783, 1095, 558, 568, 504, 7785, 12, 5534, 2]
 // Exports: useLegacyPlatformType
 
-// Module 7750 (ConnectionsHooks)
+// Module 7782 (ConnectionsHooks)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import DurationsDefault from "Durations" /* 1095 */;
-import PlatformsDefault from "Platforms" /* 5502 */;
+import PlatformsDefault from "Platforms" /* 5534 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5532 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const Constants = fn(1078);
 ({ ACTIVITY_PLATFORM_TYPES: closure_7, PlatformTypes } = Constants);
-const KeyboardKeysUpdated = fn(7751).KeyboardKeysUpdated;
+const KeyboardKeysUpdated = fn(7783).KeyboardKeysUpdated;
 let closure_10 = { [PlatformTypes.INSTAGRAM]: ["1036753656588017764"] };
 let items = [PlatformTypes.INSTAGRAM, new Date(2023, 1, 18).getTime()];
 let items1 = [items];
@@ -256,7 +256,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult = require("initialize");
   const obj4 = set(12);
   const items1 = [tmp15, tmp16, tmp17, tmp18, tmp19];
-  sortByResult = obj4.sortBy(set(5502).filter(tmp8), items1);
+  sortByResult = obj4.sortBy(set(5534).filter(tmp8), items1);
   cResult[5] = tmp9;
   cResult[6] = tmp8;
   cResult[7] = sortByResult;

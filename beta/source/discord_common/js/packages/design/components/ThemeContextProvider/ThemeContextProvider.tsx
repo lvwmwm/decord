@@ -1,11 +1,11 @@
-// Module ID: 4486
-// Function ID: 4487
+// Module ID: 4518
+// Function ID: 4519
 // Name: ThemeContextProvider
-// Dependencies: [19, 21, 558, 568, 4478, 2]
+// Dependencies: [19, 21, 558, 568, 4510, 2]
 
-// Module 4486 (ThemeContextProvider)
+// Module 4518 (ThemeContextProvider)
 import c from "c" /* 568 */;
-import ThemeContext from "ThemeContext" /* 4478 */;
+import ThemeContext from "ThemeContext" /* 4510 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -72,7 +72,7 @@ export const ThemeContextProvider = ReactCompilerGating.isReactCompilerEnabled()
                         return tmp7;
                       }
                       const obj2 = { value: tmp5, children };
-                      const tmp9 = jsx(tmp(4478).ThemeContext.Provider, { value: tmp5, children });
+                      const tmp9 = jsx(tmp(4510).ThemeContext.Provider, { value: tmp5, children });
                       cResult[12] = children;
                       cResult[13] = tmp5;
                       cResult[14] = tmp9;

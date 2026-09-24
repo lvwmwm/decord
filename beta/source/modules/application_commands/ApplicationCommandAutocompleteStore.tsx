@@ -1,14 +1,14 @@
-// Module ID: 8026
-// Function ID: 8027
+// Module ID: 8058
+// Function ID: 8059
 // Name: ApplicationCommandAutocompleteStore
-// Dependencies: [8027, 1078, 1368, 1982, 4938, 504, 577, 2]
+// Dependencies: [8059, 1078, 1368, 1982, 4970, 504, 577, 2]
 
-// Module 8026 (ApplicationCommandAutocompleteStore)
+// Module 8058 (ApplicationCommandAutocompleteStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import Server from "Server" /* 1982 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8027 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8059 */;
 
 require = fn;
 function handleInit() {

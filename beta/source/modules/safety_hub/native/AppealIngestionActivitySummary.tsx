@@ -1,17 +1,17 @@
-// Module ID: 12020
-// Function ID: 12021
+// Module ID: 12056
+// Function ID: 12057
 // Name: AppealIngestionActivitySummary
-// Dependencies: [19, 17, 21, 4758, 558, 568, 12021, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 12057, 2]
 
-// Module 12020 (AppealIngestionActivitySummary)
+// Module 12056 (AppealIngestionActivitySummary)
 import c from "c" /* 568 */;
-import ClassificationEvidenceDefault from "ClassificationEvidence" /* 12021 */;
+import ClassificationEvidenceDefault from "ClassificationEvidence" /* 12057 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ activity: { marginBottom: 16 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

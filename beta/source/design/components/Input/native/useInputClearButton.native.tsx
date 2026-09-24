@@ -1,12 +1,12 @@
-// Module ID: 6850
-// Function ID: 6851
+// Module ID: 6882
+// Function ID: 6883
 // Name: useInputClearButton
-// Dependencies: [19, 17, 21, 558, 568, 6851, 1119, 2]
+// Dependencies: [19, 17, 21, 558, 568, 6883, 1119, 2]
 
-// Module 6850 (useInputClearButton)
+// Module 6882 (useInputClearButton)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import CircleXIcon from "CircleXIcon" /* 6851 */;
+import CircleXIcon from "CircleXIcon" /* 6883 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,7 +22,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((clearable, hasValu
       if (hasValue.hasValue) {
         const _Symbol = Symbol;
         if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp8 = jsx(tmp(6851).CircleXIcon, { size: "xs" });
+          const tmp8 = jsx(tmp(6883).CircleXIcon, { size: "xs" });
           cResult[0] = tmp8;
           let first = tmp8;
         } else {

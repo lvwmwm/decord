@@ -1,19 +1,19 @@
-// Module ID: 14883
-// Function ID: 14884
+// Module ID: 14921
+// Function ID: 14922
 // Name: UserProfileEditFormControls
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 4754, 8938, 1181, 1119, 5829, 5341, 7174, 1368, 7447, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 4786, 8970, 1181, 1119, 5861, 5373, 7206, 1368, 7479, 2]
 
-// Module 14883 (UserProfileEditFormControls)
+// Module 14921 (UserProfileEditFormControls)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
-import Input from "Input" /* 7174 */;
-import FormSwitch from "FormSwitch" /* 7447 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8938 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
+import Input from "Input" /* 7206 */;
+import FormSwitch from "FormSwitch" /* 7479 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8970 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -22,7 +22,7 @@ get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { button: { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: 12, padding: 12, borderColor: nativeDefault.colors.BORDER_STRONG, borderWidth: 1, borderRadius: nativeDefault.radii.md }, buttonDisabled: { opacity: 0.5 }, buttonTextContainer: { flexGrow: 1, flexShrink: 1, flexDirection: "column" }, formControlText: { marginRight: "auto", flexShrink: 1 }, labelTrailing: null, newBadge: null };
 let obj3 = { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: 12, padding: 12, borderColor: nativeDefault.colors.BORDER_STRONG, borderWidth: 1, borderRadius: nativeDefault.radii.md };
 obj2.labelTrailing = { flexDirection: "row", alignItems: "center", marginLeft: nativeDefault.space.PX_4, gap: nativeDefault.space.PX_4 };
@@ -92,7 +92,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[0] !== (undefined !== showPremiumIcon && showPremiumIcon)) {
     let tmp8 = null;
     if (tmp4) {
-      tmp8 = timestampProducer(tmp(8938).NitroWheelIcon, { size: "xs" });
+      tmp8 = timestampProducer(tmp(8970).NitroWheelIcon, { size: "xs" });
     }
     cResult[0] = tmp4;
     cResult[1] = tmp8;
@@ -201,7 +201,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             if (cResult[13] !== tmp6) {
               let tmp23 = !tmp6;
               if (!tmp6) {
-                tmp23 = timestampProducer(tmp(5829).TableRowArrow, {});
+                tmp23 = timestampProducer(tmp(5861).TableRowArrow, {});
               }
               cResult[13] = tmp6;
               cResult[14] = tmp23;
@@ -231,7 +231,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                   }
                                 }
                                 const obj2 = { label, labelTrailing, children: tmp25 };
-                                const tmp30 = timestampProducer(tmp(7174).Input, obj2);
+                                const tmp30 = timestampProducer(tmp(7206).Input, obj2);
                                 cResult[27] = label;
                                 cResult[28] = labelTrailing;
                                 cResult[29] = tmp25;
@@ -250,7 +250,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const obj3 = { onPress, style: tmp8, accessibilityRole: "button", accessibilityLabel: label, accessibilityValue, accessibilityHint: tmp9, accessibilityState: tmp11, disabled: tmp4, children: null };
             const items = [leading, tmp12, trailing, tmp22];
             obj3.children = items;
-            const tmp27 = React5(tmp(5341).PressableHighlight, obj3);
+            const tmp27 = React5(tmp(5373).PressableHighlight, obj3);
             cResult[15] = accessibilityValue;
             cResult[16] = tmp4;
             cResult[17] = label;
@@ -351,7 +351,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items1[2] = trailing;
   let tmp2Result2 = !flag2;
   if (!flag2) {
-    tmp2Result2 = tmp2(tmp3(5829).TableRowArrow, {});
+    tmp2Result2 = tmp2(tmp3(5861).TableRowArrow, {});
   }
   items1[3] = tmp2Result2;
   obj2.children = items1;
@@ -519,7 +519,7 @@ export const UserProfileEditFormSwitch = ReactCompilerGating.isReactCompilerEnab
         tmp20[1] = value;
         tmp20[2] = tmp9;
         tmp20[3] = tmp4;
-        const tmp21 = timestampProducer(tmp(7447).FormSwitch, tmp20);
+        const tmp21 = timestampProducer(tmp(7479).FormSwitch, tmp20);
         cResult[14] = tmp4;
         cResult[15] = tmp9;
         cResult[16] = value;
@@ -573,7 +573,7 @@ export const UserProfileEditFormSwitch = ReactCompilerGating.isReactCompilerEnab
     closure_2(value);
   }, items);
   if (isAndroidResult) {
-    let PressableHighlight = tmp2(5341).PressableHighlight;
+    let PressableHighlight = tmp2(5373).PressableHighlight;
   } else {
     PressableHighlight = React4;
   }

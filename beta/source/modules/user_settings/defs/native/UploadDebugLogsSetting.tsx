@@ -1,13 +1,13 @@
-// Module ID: 15802
-// Function ID: 15803
+// Module ID: 15812
+// Function ID: 15813
 // Name: UploadDebugLogsSetting
-// Dependencies: [5, 17, 1078, 21, 562, 1252, 558, 568, 1368, 13012, 4458, 4712, 1119, 11594, 2]
+// Dependencies: [5, 17, 1078, 21, 562, 1252, 558, 568, 1368, 13048, 4490, 4744, 1119, 11630, 2]
 
-// Module 15802 (UploadDebugLogsSetting)
+// Module 15812 (UploadDebugLogsSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import DebugUploadManager from "DebugUploadManager" /* 13012 */;
+import DebugUploadManager from "DebugUploadManager" /* 13048 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -115,17 +115,17 @@ const module_562 = fn(562);
 let closure_7 = module_562.create(() => ({ isDisabled: false, isUploading: false }));
 let ReactCompilerGating = fn(558);
 ReactCompilerGating.isReactCompilerEnabled();
-const f70824 = () => {
+const f70864 = () => {
 
 };
 ReactCompilerGating = fn(558);
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = fn(558);
 fn = () => closure_7().isDisabled;
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
-  if (typeof f70824 === "function") {
+  if (typeof f70864 === "function") {
     const isUploading = closure_7().isUploading;
     if (cResult[0] !== isUploading) {
       let tmp4 = null;
@@ -143,7 +143,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     throw new TypeError("Trying to call a non-function");
   }
 }) : (() => {
-  if (typeof f70824 === "function") {
+  if (typeof f70864 === "function") {
     let tmp2 = null;
     if (closure_7().isUploading) {
       tmp2 = <ActivityIndicator />;
@@ -159,7 +159,7 @@ const pressable = SettingBuilders.createPressable({
     return intl.string(util.t.aY1OH2);
   },
   parent: null,
-  IconComponent: fn(4712).CircleInformationIcon,
+  IconComponent: fn(4744).CircleInformationIcon,
   onPress: function handleUploadDebugLogSettingPress() {
     const self = this;
     const apply = closure_9.apply;
@@ -172,7 +172,7 @@ const pressable = SettingBuilders.createPressable({
   },
   useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
-    if (typeof f70824 === "function") {
+    if (typeof f70864 === "function") {
       const isUploading = closure_7().isUploading;
       if (cResult[0] !== isUploading) {
         let tmp4 = null;
@@ -190,7 +190,7 @@ const pressable = SettingBuilders.createPressable({
       throw new TypeError("Trying to call a non-function");
     }
   }) : (() => {
-    if (typeof f70824 === "function") {
+    if (typeof f70864 === "function") {
       let tmp2 = null;
       if (closure_7().isUploading) {
         tmp2 = <ActivityIndicator />;

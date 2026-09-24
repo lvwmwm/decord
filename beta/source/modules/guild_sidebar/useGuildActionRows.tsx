@@ -1,20 +1,20 @@
-// Module ID: 16597
-// Function ID: 16598
+// Module ID: 16607
+// Function ID: 16608
 // Name: useGuildActionRows
-// Dependencies: [32, 4945, 7781, 1078, 558, 568, 12520, 7508, 7494, 7506, 7473, 7469, 565, 5276, 7470, 12436, 7509, 7471, 12676, 16496, 16562, 7511, 4671, 16598, 2031, 7632, 2]
+// Dependencies: [32, 4977, 7813, 1078, 558, 568, 12556, 7540, 7526, 7538, 7505, 7501, 565, 5308, 7502, 12472, 7541, 7503, 12712, 16506, 16572, 7543, 4703, 16608, 2031, 7664, 2]
 
-// Module 16597 (useGuildActionRows)
-import useIsNewMemberDefault from "useIsNewMember" /* 7470 */;
-import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 12520 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12676 */;
-import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 16562 */;
+// Module 16607 (useGuildActionRows)
+import useIsNewMemberDefault from "useIsNewMember" /* 7502 */;
+import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 12556 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12712 */;
+import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 16572 */;
 import _slicedToArray from "module_32" /* 32 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4945 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4977 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ChannelListGuildActionRow = fn(7781).ChannelListGuildActionRow;
+const ChannelListGuildActionRow = fn(7813).ChannelListGuildActionRow;
 const GuildFeatures = fn(1078).GuildFeatures;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -168,7 +168,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
         if (tmp39) {
           items2.push(ChannelListGuildActionRow.GUILD_PREMIUM_PROGRESS_BAR);
         }
-        tmpResult18 = tmp(7632);
+        tmpResult18 = tmp(7664);
       }
     }
   }

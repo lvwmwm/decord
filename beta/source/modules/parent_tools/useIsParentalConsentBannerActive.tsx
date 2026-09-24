@@ -1,15 +1,15 @@
-// Module ID: 15132
-// Function ID: 15133
+// Module ID: 15142
+// Function ID: 15143
 // Name: useIsParentalConsentBannerActive
-// Dependencies: [558, 568, 15133, 15135, 2]
+// Dependencies: [558, 568, 15143, 15145, 2]
 
-// Module 15132 (useIsParentalConsentBannerActive)
+// Module 15142 (useIsParentalConsentBannerActive)
 import c from "c" /* 568 */;
-import useParentalConsentWarning from "useParentalConsentWarning" /* 15133 */;
+import useParentalConsentWarning from "useParentalConsentWarning" /* 15143 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const ParentalConsentWarningTypes = tmp(15135);
+const ParentalConsentWarningTypes = tmp(15145);
 const result = size.fileFinishedImporting("modules/parent_tools/useIsParentalConsentBannerActive.tsx");
 
 export const useIsParentalConsentBannerActive = ReactCompilerGating.isReactCompilerEnabled() ? (() => {

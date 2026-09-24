@@ -1,14 +1,14 @@
-// Module ID: 12867
-// Function ID: 12868
+// Module ID: 12903
+// Function ID: 12904
 // Name: GuildInviteIcon
-// Dependencies: [19, 17, 21, 4758, 580, 4471, 12868, 1119, 1401, 5802, 2013, 1181, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 4503, 12904, 1119, 1401, 5834, 2013, 1181, 2]
 
-// Module 12867 (GuildInviteIcon)
+// Module 12903 (GuildInviteIcon)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import StylesheetUtils from "StylesheetUtils" /* 12868 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import StylesheetUtils from "StylesheetUtils" /* 12904 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ const View = fn(17).View;
 const jsx = fn(21).jsx;
 let obj = { SMALL: "small", MEDIUM: "medium", LARGE: "large" };
 let closure_5 = [16, 16, 14, 14, 12];
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 const obj3 = { icon: { justifyContent: "center", alignItems: "center", overflow: "hidden" }, iconSmall: { width: 40, height: 40, borderRadius: 20 }, iconMedium: { width: 80, height: 80, borderRadius: 40 }, iconLarge: null, textContainer: null, acronym: null };
 let size = { width: 128, height: 128, borderRadius: nativeDefault.radii.round };
 obj3.iconLarge = size;
@@ -69,7 +69,7 @@ GuildInviteIcon.prototype["render"] = function render() {
 };
 GuildInviteIcon.defaultProps = { size: obj.SMALL, textScale: 1 };
 GuildInviteIcon.Sizes = obj;
-GuildInviteIcon.contextType = fn(4471).ThemeContext;
+GuildInviteIcon.contextType = fn(4503).ThemeContext;
 size = fn(2);
 let result = size.fileFinishedImporting("modules/guild/native/GuildInviteIcon.tsx");
 

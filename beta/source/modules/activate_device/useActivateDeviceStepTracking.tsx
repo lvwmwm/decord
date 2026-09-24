@@ -1,12 +1,12 @@
-// Module ID: 14147
-// Function ID: 14148
+// Module ID: 14184
+// Function ID: 14185
 // Name: useActivateDeviceStepTracking
-// Dependencies: [19, 1078, 558, 568, 8548, 14148, 1245, 2]
+// Dependencies: [19, 1078, 558, 568, 8580, 14185, 1245, 2]
 
-// Module 14147 (useActivateDeviceStepTracking)
+// Module 14184 (useActivateDeviceStepTracking)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import usePreviousDefault from "usePrevious" /* 8548 */;
-import ActivateDeviceUtils from "ActivateDeviceUtils" /* 14148 */;
+import usePreviousDefault from "usePrevious" /* 8580 */;
+import ActivateDeviceUtils from "ActivateDeviceUtils" /* 14185 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

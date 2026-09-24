@@ -1,10 +1,10 @@
-// Module ID: 5212
-// Function ID: 5213
+// Module ID: 5244
+// Function ID: 5245
 // Name: ApplicationCommandConstants
 // Dependencies: [1119, 1982, 2]
 // Exports: getValidationErrorText
 
-// Module 5212 (ApplicationCommandConstants)
+// Module 5244 (ApplicationCommandConstants)
 import util from "util" /* 1119 */;
 import Server from "Server" /* 1982 */;
 import size from "module_2" /* 2 */;

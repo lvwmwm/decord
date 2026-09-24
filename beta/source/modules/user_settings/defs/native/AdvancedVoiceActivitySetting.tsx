@@ -1,13 +1,13 @@
-// Module ID: 15519
-// Function ID: 15520
+// Module ID: 15529
+// Function ID: 15530
 // Name: AdvancedVoiceActivitySetting
-// Dependencies: [1996, 8238, 558, 568, 504, 9889, 1119, 11594, 2]
+// Dependencies: [1996, 8270, 558, 568, 504, 9921, 1119, 11630, 2]
 
-// Module 15519 (AdvancedVoiceActivitySetting)
+// Module 15529 (AdvancedVoiceActivitySetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9889 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9921 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
 require = fn;
@@ -32,7 +32,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items = [MediaEngineStore];
   return initialize.useStateFromStores(items, () => advancedVoiceActivitySupported.isAdvancedVoiceActivitySupported());
 });
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -57,7 +57,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.BbESsg);
   },
-  parent: fn(8238).MobileUserSettings.VOICE,
+  parent: fn(8270).MobileUserSettings.VOICE,
   useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {

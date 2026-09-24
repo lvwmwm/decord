@@ -1,13 +1,13 @@
-// Module ID: 8956
-// Function ID: 8957
+// Module ID: 8988
+// Function ID: 8989
 // Name: useInAppBrowserReturn
-// Dependencies: [19, 8952, 558, 568, 1369, 4722, 8950, 8944, 2]
+// Dependencies: [19, 8984, 558, 568, 1369, 4754, 8982, 8976, 2]
 
-// Module 8956 (useInAppBrowserReturn)
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8944 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8950 */;
+// Module 8988 (useInAppBrowserReturn)
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8976 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8982 */;
 import noop from "module_19" /* 19 */;
-import GameProfileStore from "GameProfileStore" /* 8952 */;
+import GameProfileStore from "GameProfileStore" /* 8984 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);

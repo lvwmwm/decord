@@ -1,8 +1,8 @@
-// Module ID: 6691
-// Function ID: 6692
+// Module ID: 6723
+// Function ID: 6724
 // Dependencies: [2]
 
-// Module 6691
+// Module 6723
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SharingGemSpotIllustration-2x.png.js");

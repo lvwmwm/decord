@@ -1,17 +1,17 @@
-// Module ID: 16407
-// Function ID: 16408
+// Module ID: 16417
+// Function ID: 16418
 // Name: HappeningNowCardLiveStage
-// Dependencies: [19, 17, 15555, 1078, 21, 4758, 580, 1245, 13179, 1984, 16408, 16409, 16410, 15556, 5317, 1181, 16419, 558, 568, 4911, 1119, 4910, 2]
+// Dependencies: [19, 17, 15565, 1078, 21, 4790, 580, 1245, 13215, 1984, 16418, 16419, 16420, 15566, 5349, 1181, 16429, 558, 568, 4943, 1119, 4942, 2]
 
-// Module 16407 (HappeningNowCardLiveStage)
+// Module 16417 (HappeningNowCardLiveStage)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
-import HappeningNowCard from "HappeningNowCard" /* 15556 */;
-import useLiveStageData from "useLiveStageData" /* 16408 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
+import HappeningNowCard from "HappeningNowCard" /* 15566 */;
+import useLiveStageData from "useLiveStageData" /* 16418 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -97,12 +97,12 @@ function getUsersSubtitle(arg0) {
   }
 }
 const View = fn(17).View;
-const HappeningNowConstants = fn(15555);
+const HappeningNowConstants = fn(15565);
 ({ HappeningNowCardTrackingType: hasOwnProperty, HAPPENING_NOW_CONTENT_HEIGHT, HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, HAPPENING_NOW_STAGE_PREVIEW_WIDTH } = HappeningNowConstants);
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { content: { flexShrink: 1, gap: 2 }, stagePreviewContainer: { marginRight: 12, flexDirection: "column", justifyContent: "space-between", height: "100%", width: HAPPENING_NOW_STAGE_PREVIEW_WIDTH }, stagePreviewBackground: { height: HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_800, borderRadius: nativeDefault.radii.sm, alignItems: "center", paddingTop: 6 }, stagePreviewBackgroundNoAudience: null, avatarStackContainer: null };
 let obj3 = { height: HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_800, borderRadius: nativeDefault.radii.sm, alignItems: "center", paddingTop: 6 };
 obj.stagePreviewBackgroundNoAudience = { height: HAPPENING_NOW_CONTENT_HEIGHT, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_800, borderRadius: nativeDefault.radii.sm, justifyContent: "center", alignItems: "center" };
@@ -194,7 +194,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderingContext) 
   }
   if (cResult[12] !== stage.topic) {
     const obj6 = { lineClamp: 3, children: stage.topic };
-    const tmp29 = React5(tmp(15556).HappeningNowCardHeader, obj6);
+    const tmp29 = React5(tmp(15566).HappeningNowCardHeader, obj6);
     cResult[12] = stage.topic;
     cResult[13] = tmp29;
     let tmp27 = tmp29;
@@ -203,7 +203,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderingContext) 
   }
   if (cResult[14] !== tmp13) {
     const obj7 = { lineClamp: 1, children: tmp13 };
-    const tmp32 = React5(tmp(15556).HappeningNowCardSubtitle, obj7);
+    const tmp32 = React5(tmp(15566).HappeningNowCardSubtitle, obj7);
     cResult[14] = tmp13;
     cResult[15] = tmp32;
     let tmp30 = tmp32;
@@ -301,7 +301,7 @@ export default noop.memo((arg0) => {
   const callback = noop.useCallback(() => {
     AnalyticsUtilsDefault.track(AnalyticEvents.ACTIVITY_CARD_CLICKED, { order: index, guild_id, type: constants.GUILD_LIVE_STAGE_CARD, destination_channel_id: channel_id });
     const obj2 = { order: index, guild_id, type: constants.GUILD_LIVE_STAGE_CARD, destination_channel_id: channel_id };
-    asyncRequireImpl(13179, dependencyMap.paths).then((result) => {
+    asyncRequireImpl(13215, dependencyMap.paths).then((result) => {
       result.default(channel_id, true);
     });
   }, items);

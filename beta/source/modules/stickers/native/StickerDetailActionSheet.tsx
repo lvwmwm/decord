@@ -1,28 +1,28 @@
-// Module ID: 10699
-// Function ID: 10700
+// Module ID: 10735
+// Function ID: 10736
 // Name: StickerDetailActionSheet
-// Dependencies: [5, 32, 19, 17, 2067, 1376, 5721, 10650, 1078, 7398, 21, 4758, 1368, 580, 558, 568, 10679, 10515, 10517, 4725, 4754, 1119, 10680, 4458, 504, 1482, 1245, 10693, 5188, 10698, 10681, 10686, 4418, 7435, 2023, 5105, 10700, 1984, 4938, 5739, 10701, 7626, 10694, 8180, 10224, 10702, 8876, 10521, 7397, 2]
+// Dependencies: [5, 32, 19, 17, 2067, 1376, 5753, 10686, 1078, 7430, 21, 4790, 1368, 580, 558, 568, 10715, 10551, 10553, 4757, 4786, 1119, 10716, 4490, 504, 1482, 1245, 10729, 5220, 10734, 10717, 10722, 4450, 7467, 2023, 5137, 10736, 1984, 4970, 5771, 10737, 7658, 10730, 8212, 10263, 10738, 8908, 10557, 7429, 2]
 
-// Module 10699 (StickerDetailActionSheet)
+// Module 10735 (StickerDetailActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import openUserSettings from "openUserSettings" /* 7626 */;
-import StickersHooks from "StickersHooks" /* 10679 */;
-import StickersActionCreators from "StickersActionCreators" /* 10680 */;
-import openStickerPackDetailActionSheet from "openStickerPackDetailActionSheet" /* 10686 */;
-import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 10698 */;
-import openStickersPremiumUpsellAlertDefault from "openStickersPremiumUpsellAlert" /* 10702 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5771 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import openUserSettings from "openUserSettings" /* 7658 */;
+import StickersHooks from "StickersHooks" /* 10715 */;
+import StickersActionCreators from "StickersActionCreators" /* 10716 */;
+import openStickerPackDetailActionSheet from "openStickerPackDetailActionSheet" /* 10722 */;
+import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 10734 */;
+import openStickersPremiumUpsellAlertDefault from "openStickersPremiumUpsellAlert" /* 10738 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1376 */;
-import StickersStore from "StickersStore" /* 5721 */;
+import StickersStore from "StickersStore" /* 5753 */;
 
 const openStickerPackDetailActionSheetDefault = openStickerPackDetailActionSheet;
 
@@ -58,7 +58,7 @@ function UnavailableStickerDetail(arg0) {
     if (null != stickerAssetUrl) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { stickerUrl: tmp };
-      obj.openLazy(asyncRequireImpl(10700, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequireImpl(10736, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
     }
   }, items1);
   const items2 = [closure_21(require("Sticker"), { sticker: renderableSticker, size: 48 }), , ];
@@ -102,14 +102,14 @@ function UnavailableStickerDetail(arg0) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ActivityIndicator: closure_7, Pressable: closure_8 } = get_ActivityIndicator);
-const StickerPickerConstants = fn(10650);
+const StickerPickerConstants = fn(10686);
 ({ PADDING_HORIZONTAL: closure_12, MIN_MARGIN: map1, STICKER_SIZE: closure_14 } = StickerPickerConstants);
 const Constants = fn(1078);
 ({ AnalyticsPages: closure_15, AnalyticsSections: closure_16, AnalyticEvents: closure_17, GuildFeatures: closure_18, UserSettingsSections: closure_19 } = Constants);
-const ACTION_SHEET_MAX_WIDTH = fn(7398).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(7430).ACTION_SHEET_MAX_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: closure_21, Fragment: closure_22, jsxs: closure_23 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 const PlatformUtils = fn(1368);
 let num = 0;
 if (PlatformUtils.isAndroid()) {
@@ -152,9 +152,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           style = obj;
         }
         if (arg0) {
-          let StarOutlineIcon = tmp9(10515).StarIcon;
+          let StarOutlineIcon = tmp9(10551).StarIcon;
         } else {
-          StarOutlineIcon = tmp9(10517).StarOutlineIcon;
+          StarOutlineIcon = tmp9(10553).StarOutlineIcon;
         }
         return guild(StarOutlineIcon, { style });
       };
@@ -199,7 +199,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           stringResult = string(t.mE2e8A);
         }
         obj.children = stringResult;
-        return closure_2_21(closure_0(4754).Text, obj);
+        return closure_2_21(closure_0(4786).Text, obj);
       }
       const obj2 = StickersActionCreators;
       if (dependencyMap) {
@@ -211,8 +211,8 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             },
           content
         };
-        tmp(4458).open(obj3);
-        const tmpResult = tmp(4458);
+        tmp(4490).open(obj3);
+        const tmpResult = tmp(4490);
       } else {
         obj2.favoriteSticker(closure_0);
         const obj4 = {
@@ -222,8 +222,8 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             },
           content
         };
-        tmp(4458).open(obj4);
-        const tmpResult2 = tmp(4458);
+        tmp(4490).open(obj4);
+        const tmpResult2 = tmp(4490);
       }
     };
     cResult[5] = tmp3;
@@ -255,9 +255,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       style = obj;
     }
     if (arg0) {
-      let StarOutlineIcon = tmp9(10515).StarIcon;
+      let StarOutlineIcon = tmp9(10551).StarIcon;
     } else {
-      StarOutlineIcon = tmp9(10517).StarOutlineIcon;
+      StarOutlineIcon = tmp9(10553).StarOutlineIcon;
     }
     return guild(StarOutlineIcon, { style });
   }, items);
@@ -290,8 +290,8 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             },
           content
         };
-        tmp(4458).open(obj3);
-        const tmpResult = tmp(4458);
+        tmp(4490).open(obj3);
+        const tmpResult = tmp(4490);
       } else {
         obj2.favoriteSticker(closure_0);
         const obj4 = {
@@ -301,8 +301,8 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             },
           content
         };
-        tmp(4458).open(obj4);
-        const tmpResult2 = tmp(4458);
+        tmp(4490).open(obj4);
+        const tmpResult2 = tmp(4490);
       }
     }, items1),
     renderStarIcon
@@ -468,8 +468,8 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             const result = showStickerDetailActionSheet.hideStickerDetailActionSheet();
             if (closure_6) {
               if (null != chatInputRef) {
-                const result1 = tmp(10681).openStickerPickerToPackId(tmp4, pack_id);
-                const tmpResult = tmp(10681);
+                const result1 = tmp(10717).openStickerPickerToPackId(tmp4, pack_id);
+                const tmpResult = tmp(10717);
               }
             }
             const obj2 = { analyticsLocation, analyticsPopoutType: null, stickerPack: null };
@@ -585,8 +585,8 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         if (null != stateFromStores) {
           if (stateFromStores1) {
             if (null != chatInputRef) {
-              const result1 = tmp(10681).openStickerPickerToPackId(tmp5, pack_id);
-              const tmpResult = tmp(10681);
+              const result1 = tmp(10717).openStickerPickerToPackId(tmp5, pack_id);
+              const tmpResult = tmp(10717);
             }
           }
         }
@@ -648,7 +648,7 @@ function GuildStickerDetail(sticker) {
     if (null != stickerAssetUrl) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { stickerUrl: tmp };
-      obj.openLazy(asyncRequireImpl(10700, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequireImpl(10736, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
     }
   }, items1);
   analyticsLocation = obj.useMemo(() => {
@@ -990,9 +990,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (functio
         cResult[9] = first;
         cResult[10] = tmp15;
       }
-      tmpResult2 = tmp(5105);
+      tmpResult2 = tmp(5137);
     }
-    tmpResult = tmp(5105);
+    tmpResult = tmp(5137);
   }
   if (cResult[11] === tmp11) {
     if (cResult[12] === tmp4.content) {
@@ -1020,7 +1020,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (functio
     const obj3 = { startExpanded: true, children: null };
     const obj4 = { style: tmp.content, children: tmp6Result };
     obj3.children = tmp6(timestampProducer, obj4);
-    return tmp6(tmp2(7397).BottomSheet, obj3);
+    return tmp6(tmp2(7429).BottomSheet, obj3);
   }
   tmp6Result = tmp6Result2;
   if (null != first) {
@@ -1032,9 +1032,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (functio
         const obj6 = { sticker: first, channel };
         tmp6Result2 = tmp6(GuildStickerDetail, obj6);
       }
-      tmp2Result2 = tmp2(5105);
+      tmp2Result2 = tmp2(5137);
     }
     tmp6Result = tmp6Result2;
-    tmp2Result = tmp2(5105);
+    tmp2Result = tmp2(5137);
   }
 }));

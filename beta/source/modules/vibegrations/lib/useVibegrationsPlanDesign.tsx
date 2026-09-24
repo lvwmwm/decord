@@ -1,16 +1,16 @@
-// Module ID: 17032
-// Function ID: 17033
+// Module ID: 17042
+// Function ID: 17043
 // Name: useVibegrationsPlanDesign
-// Dependencies: [32, 19, 13364, 558, 568, 2]
+// Dependencies: [32, 19, 13400, 558, 568, 2]
 
-// Module 17032 (useVibegrationsPlanDesign)
+// Module 17042 (useVibegrationsPlanDesign)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const VibegrationsConnectionStore = fn(13364);
+const VibegrationsConnectionStore = fn(13400);
 ({ getAttachmentUrl: closure_4, isAttachmentAvailable: hasOwnProperty } = VibegrationsConnectionStore);
 const ReactCompilerGating = fn(558);
 const size = fn(2);

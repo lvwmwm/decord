@@ -1,29 +1,29 @@
-// Module ID: 14984
-// Function ID: 14985
+// Module ID: 15025
+// Function ID: 15026
 // Name: SettingsAgeGroupScreen
-// Dependencies: [19, 17, 8238, 1078, 21, 4758, 580, 558, 568, 8687, 2112, 4754, 1119, 3038, 14946, 11594, 14985, 14953, 2]
+// Dependencies: [19, 17, 8270, 1078, 21, 4790, 580, 558, 568, 8719, 2112, 4786, 1119, 3038, 14984, 11630, 15026, 14988, 2]
 
-// Module 14984 (SettingsAgeGroupScreen)
+// Module 15025 (SettingsAgeGroupScreen)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
 import _modDef3038 from "module_3038" /* 3038 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8687 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14946 */;
-import SettingLayoutDefault from "SettingLayout" /* 14953 */;
-import TinyBroncoAgeGroupHeader2 from "TinyBroncoAgeGroupHeader" /* 14985 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8719 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14984 */;
+import SettingLayoutDefault from "SettingLayout" /* 14988 */;
+import TinyBroncoAgeGroupHeader2 from "TinyBroncoAgeGroupHeader" /* 15026 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const MobileUserSettings = fn(8238).MobileUserSettings;
+const MobileUserSettings = fn(8270).MobileUserSettings;
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { headerContainer: { gap: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16 } };
 let closure_9 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -44,7 +44,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
     const intl = tmp(1119).intl;
     obj2.children = intl.string(_modDef3038.PY4MA0);
-    const tmp9 = React5(tmp(4754).Text, obj2);
+    const tmp9 = React5(tmp(4786).Text, obj2);
     cResult[1] = tmp9;
     let tmp6 = tmp9;
   } else {
@@ -55,7 +55,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl2 = tmp(1119).intl;
     const obj4 = { handleOnHelpUrlHook: first };
     obj3.children = intl2.format(_modDef3038["1DN29p"], obj4);
-    const tmp13 = React5(tmp(4754).Text, obj3);
+    const tmp13 = React5(tmp(4786).Text, obj3);
     cResult[2] = tmp13;
     let tmp10 = tmp13;
   } else {
@@ -109,15 +109,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const items1 = [obj4];
     obj3.sections = items1;
     if (isTinyBroncoSettingsEnabled) {
-      let TinyBroncoAgeGroupHeader = tmp(14985).TinyBroncoAgeGroupHeader;
+      let TinyBroncoAgeGroupHeader = tmp(15026).TinyBroncoAgeGroupHeader;
     } else {
       TinyBroncoAgeGroupHeader = closure_10;
     }
     obj3.ListHeaderComponent = TinyBroncoAgeGroupHeader;
-    obj3 = tmp(11594).createList(obj3);
+    obj3 = tmp(11630).createList(obj3);
     cResult[0] = isTinyBroncoSettingsEnabled;
     cResult[1] = obj3;
-    const tmpResult = tmp(11594);
+    const tmpResult = tmp(11630);
   } else {
     if (cResult[2] !== cResult[1]) {
       const obj5 = { node: tmp5 };
@@ -131,7 +131,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return tmp9;
   }
 }) : (() => {
-  isTinyBroncoSettingsEnabled = isTinyBroncoSettingsEnabled(14946).useIsTinyBroncoSettingsEnabled();
+  isTinyBroncoSettingsEnabled = isTinyBroncoSettingsEnabled(14984).useIsTinyBroncoSettingsEnabled();
   let items = [isTinyBroncoSettingsEnabled];
   const node = noop.useMemo(() => {
     const obj2 = { sections: null, ListHeaderComponent: null };

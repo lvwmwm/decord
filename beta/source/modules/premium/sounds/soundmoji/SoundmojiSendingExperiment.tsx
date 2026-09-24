@@ -1,10 +1,10 @@
-// Module ID: 10446
-// Function ID: 10447
+// Module ID: 10485
+// Function ID: 10486
 // Name: SoundmojiSendingExperiment
 // Dependencies: [1438, 558, 568, 2]
 // Exports: getSoundmojiSendExperiment
 
-// Module 10446 (SoundmojiSendingExperiment)
+// Module 10485 (SoundmojiSendingExperiment)
 import c from "c" /* 568 */;
 import ApexExperiment from "ApexExperiment" /* 1438 */;
 import "ReactCompilerGating";

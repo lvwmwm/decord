@@ -1,16 +1,16 @@
-// Module ID: 9682
-// Function ID: 9683
+// Module ID: 9714
+// Function ID: 9715
 // Name: VideoEmptyState
-// Dependencies: [109, 19, 17, 2045, 1078, 21, 4758, 580, 558, 568, 9683, 1181, 1119, 9681, 504, 4900, 4810, 5203, 4754, 5188, 2]
+// Dependencies: [109, 19, 17, 2045, 1078, 21, 4790, 580, 558, 568, 9715, 1181, 1119, 9713, 504, 4932, 4842, 5235, 4786, 5220, 2]
 
-// Module 9682 (VideoEmptyState)
+// Module 9714 (VideoEmptyState)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4810 */;
-import StreamActionCreators from "StreamActionCreators" /* 4900 */;
-import useMountEffectDefault from "useMountEffect" /* 5203 */;
-import StreamEnded from "StreamEnded" /* 9683 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4842 */;
+import StreamActionCreators from "StreamActionCreators" /* 4932 */;
+import useMountEffectDefault from "useMountEffect" /* 5235 */;
+import StreamEnded from "StreamEnded" /* 9715 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -23,7 +23,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
 const VideoEmptyTypes = { NONE: "NONE", STREAM_ENDED: "STREAM_ENDED", STREAM_FAILED: "STREAM_FAILED" };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj3 = { container: { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_700, padding: 8 }, placeholderImage: { marginBottom: 8, width: "100%", resizeMode: "contain" }, placeholderText: null, buttonWrapper: null };
 let obj4 = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_700, padding: 8 };
 obj3.placeholderText = { color: nativeDefault.unsafe_rawColors.WHITE, fontFamily: fn(1078).Fonts.PRIMARY_SEMIBOLD, fontSize: 16, lineHeight: 20, textAlign: "center" };
@@ -134,7 +134,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 return jsx(closure_0(closure_2[11]).LegacyText, obj);
               }
             }
-            errorCode = obj2.getErrorInfo(tmp(9681).AVError.STREAM_FAILED_TO_START).errorCode;
+            errorCode = obj2.getErrorInfo(tmp(9713).AVError.STREAM_FAILED_TO_START).errorCode;
           }
         }
         const _Symbol = Symbol;
@@ -205,7 +205,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               let intl = tmp(1119).intl;
               const obj5 = { errorCode };
               obj4.children = intl.formatToPlainString(tmp(1119).t.ejOT95, obj5);
-              tmp31 = closure_7(tmp(4754).Text, obj4);
+              tmp31 = closure_7(tmp(4786).Text, obj4);
             }
             if (cResult[28] === tmp6) {
               class N {
@@ -229,7 +229,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 const obj = StreamActionCreators;
                 obj.stopStream(StreamKeyUtils.encodeStreamKey(closure_1));
               };
-              obj6.children = closure_7(tmp(5188).Button, obj7);
+              obj6.children = closure_7(tmp(5220).Button, obj7);
               tmp33 = closure_7(tmp29, obj6);
             }
             cResult[28] = tmp6;
@@ -290,7 +290,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp10 = !removeSplashImage;
     if (!removeSplashImage) {
       let obj2 = { style: tmp2.placeholderImage };
-      tmp10 = closure_7(stream(9683).StreamEnded, obj2);
+      tmp10 = closure_7(stream(9715).StreamEnded, obj2);
     }
     let obj3 = { children: null };
     const items = [tmp10, ];
@@ -309,13 +309,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8Result = null;
   }
   if (null != avError) {
-    let errorCode = stream(9681).getErrorInfo(avError).errorCode;
-    const obj6 = stream(9681);
+    let errorCode = stream(9713).getErrorInfo(avError).errorCode;
+    const obj6 = stream(9713);
   } else {
     errorCode = null;
     if (type === tmp3.STREAM_FAILED) {
-      errorCode = stream(9681).getErrorInfo(stream(9681).AVError.STREAM_FAILED_TO_START).errorCode;
-      const obj5 = stream(9681);
+      errorCode = stream(9713).getErrorInfo(stream(9713).AVError.STREAM_FAILED_TO_START).errorCode;
+      const obj5 = stream(9713);
     }
   }
   const items1 = [ChannelStore];
@@ -342,7 +342,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl3 = tmp22(1119).intl;
     const obj10 = { errorCode };
     obj9.children = intl3.formatToPlainString(tmp22(1119).t.ejOT95, obj10);
-    tmp28 = closure_7(tmp22(4754).Text, obj9);
+    tmp28 = closure_7(tmp22(4786).Text, obj9);
   }
   items4[1] = tmp28;
   let tmp30 = !removeCloseButton;
@@ -355,7 +355,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj = StreamActionCreators;
       obj.stopStream(StreamKeyUtils.encodeStreamKey(stream));
     };
-    obj11.children = closure_7(tmp22(5188).Button, obj12);
+    obj11.children = closure_7(tmp22(5220).Button, obj12);
     tmp30 = closure_7(tmp26, obj11);
   }
   items4[2] = tmp30;

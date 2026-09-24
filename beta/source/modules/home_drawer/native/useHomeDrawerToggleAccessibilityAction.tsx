@@ -1,12 +1,12 @@
-// Module ID: 16637
-// Function ID: 16638
+// Module ID: 16647
+// Function ID: 16648
 // Name: useHomeDrawerToggleAccessibilityAction
-// Dependencies: [19, 558, 568, 1119, 4616, 4472, 2]
+// Dependencies: [19, 558, 568, 1119, 4648, 4504, 2]
 
-// Module 16637 (useHomeDrawerToggleAccessibilityAction)
+// Module 16647 (useHomeDrawerToggleAccessibilityAction)
 import util from "util" /* 1119 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4472 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4616 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4504 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4648 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -80,7 +80,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
         name,
         label: stringResult,
         action() {
-            closure_0(4616).setHomeDrawerState(!dependencyMap);
+            closure_0(4648).setHomeDrawerState(!dependencyMap);
             const intl = closure_0(1119).intl;
             const string = intl.string;
             const t = closure_0(1119).t;
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
             } else {
               stringResult = string(t.hfxfVb);
             }
-            const AccessibilityAnnouncer = closure_0(4472).AccessibilityAnnouncer;
+            const AccessibilityAnnouncer = closure_0(4504).AccessibilityAnnouncer;
             AccessibilityAnnouncer.announce(stringResult);
           }
       };

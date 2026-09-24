@@ -1,10 +1,10 @@
-// Module ID: 13722
-// Function ID: 13723
+// Module ID: 13758
+// Function ID: 13759
 // Name: PremiumPerkCarousel
-// Dependencies: [32, 19, 17, 21, 4758, 558, 568, 13669, 4754, 9473, 1181, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 558, 568, 13705, 4786, 9505, 1181, 2]
 
-// Module 13722 (PremiumPerkCarousel)
-import PremiumPerkCard from "PremiumPerkCard" /* 13669 */;
+// Module 13758 (PremiumPerkCarousel)
+import PremiumPerkCard from "PremiumPerkCard" /* 13705 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -15,7 +15,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ title: { marginLeft: 24 }, indicators: { marginBottom: -36 }, carousel: { marginTop: 16 }, carouselCard: { marginLeft: 8 }, lastCarouselCard: { marginRight: 8 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

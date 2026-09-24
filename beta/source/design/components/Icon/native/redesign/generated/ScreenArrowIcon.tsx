@@ -1,13 +1,13 @@
-// Module ID: 12695
-// Function ID: 12696
+// Module ID: 12731
+// Function ID: 12732
 // Name: ScreenArrowIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 10226, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 10265, 4493, 2]
 
-// Module 12695 (ScreenArrowIcon)
+// Module 12731 (ScreenArrowIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod10226 from "module_10226" /* 10226 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod10265 from "module_10265" /* 10265 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const ScreenArrowIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(10226);
+    const tmpResult = tmp(10265);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const ScreenArrowIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10226, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10265, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

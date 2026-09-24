@@ -1,16 +1,16 @@
-// Module ID: 16942
-// Function ID: 16943
+// Module ID: 16952
+// Function ID: 16953
 // Name: VibegrationsHeaderIconButton
-// Dependencies: [19, 21, 4758, 558, 568, 5341, 2]
+// Dependencies: [19, 21, 4790, 558, 568, 5373, 2]
 
-// Module 16942 (VibegrationsHeaderIconButton)
+// Module 16952 (VibegrationsHeaderIconButton)
 import c from "c" /* 568 */;
-import Pressables from "Pressables" /* 5341 */;
+import Pressables from "Pressables" /* 5373 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_3 = createStyles.createStyles({ button: { width: 40, height: 40, alignItems: "center", justifyContent: "center" } });
 const androidRippleConfig = { borderless: true, radius: 20 };
 const ReactCompilerGating = fn(558);

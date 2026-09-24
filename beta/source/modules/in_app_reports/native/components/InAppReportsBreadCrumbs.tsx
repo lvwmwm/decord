@@ -1,11 +1,11 @@
-// Module ID: 13201
-// Function ID: 13202
+// Module ID: 13237
+// Function ID: 13238
 // Name: InAppReportsBreadCrumbs
-// Dependencies: [32, 109, 19, 17, 21, 4758, 580, 558, 568, 12, 8908, 1119, 2618, 4754, 2]
+// Dependencies: [32, 109, 19, 17, 21, 4790, 580, 558, 568, 12, 8940, 1119, 2618, 4786, 2]
 
-// Module 13201 (InAppReportsBreadCrumbs)
+// Module 13237 (InAppReportsBreadCrumbs)
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -17,7 +17,7 @@ let closure_3 = ["element", "menuName"];
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 0, alignSelf: "stretch", marginBottom: 16, paddingHorizontal: 16 }, title: { lineHeight: 16, marginBottom: 8 }, breadCrumbItemContainer: { flexDirection: "row", justifyContent: "flex-start", marginBottom: 8, marginEnd: 32, overflow: "visible" }, breadCrumbDot: null, breadCrumbBar: null, breadCrumbText: null };
 let size = { marginStart: 2, marginTop: 8, width: 4, height: 4, borderRadius: 2, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj2.breadCrumbDot = size;
@@ -80,7 +80,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (0 === found.length) {
         return null;
       } else if (cResult[2] !== menuName) {
-        const REPORT_TO_MOD = tmp(8908).ReportMenuTypeSets.REPORT_TO_MOD;
+        const REPORT_TO_MOD = tmp(8940).ReportMenuTypeSets.REPORT_TO_MOD;
         const hasItem = REPORT_TO_MOD.has(menuName);
         const intl = tmp(1119).intl;
         const string = intl.string;
@@ -129,7 +129,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp17 = tmp19;
         }
         const obj4 = { style: tmp5.title, accessibilityRole: "header", variant: "text-xs/bold", children: cResult[3] };
-        const tmp15 = closure_7(tmp(4754).Text, obj4);
+        const tmp15 = closure_7(tmp(4786).Text, obj4);
         cResult[4] = tmp5.title;
         cResult[5] = cResult[3];
         cResult[6] = tmp15;

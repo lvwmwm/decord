@@ -1,9 +1,9 @@
-// Module ID: 16647
-// Function ID: 16648
+// Module ID: 16657
+// Function ID: 16658
 // Name: HomeDrawerShared
-// Dependencies: [19, 17, 21, 4758, 558, 568, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 2]
 
-// Module 16647 (HomeDrawerShared)
+// Module 16657 (HomeDrawerShared)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
@@ -11,7 +11,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsxs: c3, jsx: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ container: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 12 }, titleContainer: { flex: 1, flexDirection: "column", justifyContent: "center", gap: 2 }, rightContainer: { overflow: "hidden" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

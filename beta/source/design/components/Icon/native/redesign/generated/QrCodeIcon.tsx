@@ -1,13 +1,13 @@
-// Module ID: 15149
-// Function ID: 15150
+// Module ID: 15159
+// Function ID: 15160
 // Name: QrCodeIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 10097, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 10136, 4493, 2]
 
-// Module 15149 (QrCodeIcon)
+// Module 15159 (QrCodeIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod10097 from "module_10097" /* 10097 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod10136 from "module_10136" /* 10136 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const QrCodeIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(10097);
+    const tmpResult = tmp(10136);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const QrCodeIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10097, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10136, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

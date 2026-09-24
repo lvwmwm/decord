@@ -1,20 +1,20 @@
-// Module ID: 8073
-// Function ID: 8074
+// Module ID: 8105
+// Function ID: 8106
 // Name: BurstReactionAnimation
-// Dependencies: [109, 19, 4750, 21, 4758, 558, 568, 8031, 504, 8074, 5749, 2]
+// Dependencies: [109, 19, 4782, 21, 4790, 558, 568, 8063, 504, 8106, 5781, 2]
 
-// Module 8073 (BurstReactionAnimation)
+// Module 8105 (BurstReactionAnimation)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 8031 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 8063 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 let closure_3 = ["channelId", "messageId", "emoji", "isFullscreen", "onComplete", "withFadeOut"];
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ content: { width: "100%" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -54,7 +54,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (cResult[11] === tmp7) {
           let tmp16 = cResult[12];
         }
-        const burstReactionAnimationSource = tmp(8031).useBurstReactionAnimationSource(tmp16);
+        const burstReactionAnimationSource = tmp(8063).useBurstReactionAnimationSource(tmp16);
         const _Symbol = Symbol;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
           const items = [AccessibilityStore];
@@ -68,7 +68,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (null == burstReactionAnimationSource) {
           return null;
         } else {
-          const tmp25 = importDefault(tmp14 ? 8074 : 5749);
+          const tmp25 = importDefault(tmp14 ? 8106 : 5781);
           if (cResult[15] === tmp8) {
             if (cResult[16] === tmp14) {
               let num14 = 1.2;
@@ -114,7 +114,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           cResult[16] = tmp14;
           cResult[17] = obj4;
         }
-        const tmpResult = tmp(8031);
+        const tmpResult = tmp(8063);
       }
     }
   }
@@ -154,6 +154,6 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const merged1 = Object.assign(merged);
     const merged2 = Object.assign(obj3);
     obj4.source = burstReactionAnimationSource;
-    return jsx(importDefault(withFadeOut ? 8074 : 5749), { style: tmp2.content, loop: false, speed: null });
+    return jsx(importDefault(withFadeOut ? 8106 : 5781), { style: tmp2.content, loop: false, speed: null });
   }
 });

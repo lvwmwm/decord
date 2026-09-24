@@ -1,11 +1,11 @@
-// Module ID: 12035
-// Function ID: 12036
+// Module ID: 12071
+// Function ID: 12072
 // Name: AppealIngestionBreadcrumbs
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 4786, 2]
 
-// Module 12035 (AppealIngestionBreadcrumbs)
+// Module 12071 (AppealIngestionBreadcrumbs)
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -14,7 +14,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 0, alignSelf: "stretch", marginBottom: 8 }, title: { lineHeight: 16, marginBottom: 8 }, breadCrumbItemContainer: { flexDirection: "row", justifyContent: "flex-start", marginBottom: 8, marginEnd: 32, overflow: "visible" }, breadCrumbDot: null, breadCrumbBar: null, breadCrumbText: null };
 let size = { marginStart: 2, marginTop: 8, width: 4, height: 4, borderRadius: 2, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj2.breadCrumbDot = size;
@@ -46,7 +46,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((reasons) => {
     }
     if (cResult[1] !== tmp4.title) {
       const obj2 = { style: title, accessibilityRole: "header", variant: "text-xs/bold", children: first };
-      const tmp9 = closure_3(tmp(4754).Text, obj2);
+      const tmp9 = closure_3(tmp(4786).Text, obj2);
       cResult[1] = tmp4.title;
       cResult[2] = tmp9;
       let tmp7 = tmp9;

@@ -1,20 +1,20 @@
-// Module ID: 8921
-// Function ID: 8922
+// Module ID: 8953
+// Function ID: 8954
 // Name: useUserLinks
-// Dependencies: [19, 1376, 7784, 7785, 558, 568, 565, 8922, 8923, 7839, 2]
+// Dependencies: [19, 1376, 7816, 7817, 558, 568, 565, 8954, 8955, 7871, 2]
 // Exports: getActiveLinkUserIds, useAcceptedRequestsCount, useActiveLinkUsers, useHasActiveLinks
 
-// Module 8921 (useUserLinks)
+// Module 8953 (useUserLinks)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7784 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7816 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const FamilyCenterConstants = fn(7785);
+const FamilyCenterConstants = fn(7817);
 ({ ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER: metroRequire, FAMILY_CENTER_REQUEST_QR_CODE_URL: closure_7, MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: closure_8, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: closure_9, PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER: c10, UserLinkStatus: closure_11, UserLinkType: closure_12 } = FamilyCenterConstants);
 let ReactCompilerGating = fn(558);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -463,7 +463,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       tmp9 = cResult[7];
     }
-    tmp = tmp(7839);
+    tmp = tmp(7871);
     formatUserActivityTimestamp = tmp.formatUserActivityTimestamp;
     const date = new result.Date(stateFromStores);
     result = formatUserActivityTimestamp(date.getTime(), tmp9, 7);
@@ -488,8 +488,8 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (null != stateFromStores) {
     const _Date = Date;
     const date = new Date(stateFromStores);
-    result = tmp(7839).formatUserActivityTimestamp(date.getTime(), () => closure_0, 7);
-    const tmpResult = tmp(7839);
+    result = tmp(7871).formatUserActivityTimestamp(date.getTime(), () => closure_0, 7);
+    const tmpResult = tmp(7871);
   }
   return result;
 });
@@ -575,8 +575,8 @@ export const useLinkTimestampText = ReactCompilerGating.isReactCompilerEnabled()
     tmp8 = null;
   } else {
     const _Date = Date;
-    tmp(7839).formatLinkTimestamp(Date.parse(stateFromStores), arg1 === constants.PENDING ? closure_10 : closure_6);
-    const tmpResult2 = tmp(7839);
+    tmp(7871).formatLinkTimestamp(Date.parse(stateFromStores), arg1 === constants.PENDING ? closure_10 : closure_6);
+    const tmpResult2 = tmp(7871);
   }
 }) : ((arg0, arg1) => {
   _require = arg0;

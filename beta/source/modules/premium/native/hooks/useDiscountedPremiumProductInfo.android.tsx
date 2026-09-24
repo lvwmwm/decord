@@ -1,12 +1,12 @@
-// Module ID: 9491
-// Function ID: 9492
+// Module ID: 9523
+// Function ID: 9524
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: [19, 1089, 558, 568, 9492, 7487, 7481, 2]
+// Dependencies: [19, 1089, 558, 568, 9524, 7519, 7513, 2]
 
-// Module 9491 (useDiscountedPremiumProductInfo)
+// Module 9523 (useDiscountedPremiumProductInfo)
 import c from "c" /* 568 */;
-import ProductIds from "ProductIds" /* 7487 */;
-import useDiscountedPremiumPlan from "useDiscountedPremiumPlan" /* 9492 */;
+import ProductIds from "ProductIds" /* 7519 */;
+import useDiscountedPremiumPlan from "useDiscountedPremiumPlan" /* 9524 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -44,7 +44,7 @@ export const useDiscountedPremiumProductInfo = ReactCompilerGating.isReactCompil
   if (null != arg0) {
     formatPriceResult = null;
     if (null != discountedProduct) {
-      const tmp7 = tmp(7487).DiscountIdToProductOfferId[arg0.discountId];
+      const tmp7 = tmp(7519).DiscountIdToProductOfferId[arg0.discountId];
       let subscriptionOffers1;
       if (tmp7 != null) {
         subscriptionOffers1 = tmp7[discountedProduct.identifier];
@@ -67,8 +67,8 @@ export const useDiscountedPremiumProductInfo = ReactCompilerGating.isReactCompil
                   formatPriceResult = null;
                   if (tmp10.pricingPhases.length > 0) {
                     const result = tmp10.pricingPhases[0].price / 100;
-                    formatPriceResult = tmp(7481).formatPrice(result, USD, { convertToMajorUnits: false });
-                    const tmpResult = tmp(7481);
+                    formatPriceResult = tmp(7513).formatPrice(result, USD, { convertToMajorUnits: false });
+                    const tmpResult = tmp(7513);
                   }
                 }
               }
@@ -138,7 +138,7 @@ export const useDiscountedPremiumProductInfo = ReactCompilerGating.isReactCompil
                 if (null != found.pricingPhases) {
                   if (found.pricingPhases.length > 0) {
                     const result = found.pricingPhases[0].price / 100;
-                    return tmp6(7481).formatPrice(result, USD, { convertToMajorUnits: false });
+                    return tmp6(7513).formatPrice(result, USD, { convertToMajorUnits: false });
                   }
                 }
               }

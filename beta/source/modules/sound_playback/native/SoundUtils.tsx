@@ -1,10 +1,10 @@
-// Module ID: 10141
-// Function ID: 10142
+// Module ID: 10180
+// Function ID: 10181
 // Name: sound_playback/SoundUtils
 // Dependencies: [17, 1613, 1368, 2]
 // Exports: MobileAudioSound
 
-// Module 10141 (sound_playback/SoundUtils)
+// Module 10180 (sound_playback/SoundUtils)
 import _mod17 from "module_17" /* 17 */;
 import MetaQuestUtils_mod from "MetaQuestUtils" /* 1613 */;
 import size from "module_2" /* 2 */;

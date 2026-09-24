@@ -1,18 +1,18 @@
-// Module ID: 13002
-// Function ID: 13003
+// Module ID: 13038
+// Function ID: 13039
 // Name: MessageNotificationHeader
-// Dependencies: [19, 17, 4750, 4409, 1376, 21, 4758, 580, 558, 568, 4754, 4911, 1099, 5291, 5293, 5241, 504, 2]
+// Dependencies: [19, 17, 4782, 4441, 1376, 21, 4790, 580, 558, 568, 4786, 4943, 1099, 5323, 5325, 5273, 504, 2]
 
-// Module 13002 (MessageNotificationHeader)
+// Module 13038 (MessageNotificationHeader)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ChannelTypes from "ChannelTypes" /* 1099 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useChannelName from "useChannelName" /* 4911 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useChannelName from "useChannelName" /* 4943 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -52,8 +52,8 @@ function getLocationLabel(arg0) {
                   }
                   let channelName1 = null;
                   if (null != parentChannel) {
-                    channelName1 = tmp(4911).computeChannelName(parentChannel, tmp3, tmp4);
-                    const tmpResult = tmp(4911);
+                    channelName1 = tmp(4943).computeChannelName(parentChannel, tmp3, tmp4);
+                    const tmpResult = tmp(4943);
                   }
                   if (null != channelName1) {
                     const _HermesInternal2 = HermesInternal;
@@ -86,7 +86,7 @@ function getLocationLabel(arg0) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 }, headerContent: { flex: 1, flexDirection: "row", alignItems: "center" }, primaryText: { flexShrink: 1, marginRight: 2 }, secondaryTextContainer: { flexDirection: "row", alignItems: "center", gap: 2, flex: 1, overflow: "hidden" }, separator: { marginHorizontal: 2 }, icon: { width: 16, height: 16 }, secondaryText: { flex: 1 } };
 let closure_9 = createStyles.createStyles(obj2);
 fn(558);
@@ -138,7 +138,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
             }
             const obj3 = { variant: "text-md/semibold", color, lineClamp: 1, style: tmp4.secondaryText, children: _location };
-            const tmp15 = React5(tmp(4754).Text, obj3);
+            const tmp15 = React5(tmp(4786).Text, obj3);
             cResult[11] = _location;
             cResult[12] = tmp4.secondaryText;
             cResult[13] = color;
@@ -149,7 +149,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp11 = null != author;
         if (tmp11) {
           const obj4 = { variant: "text-md/bold", color, maxFontSizeMultiplier: 1.75, style: tmp4.separator, children: "\u00B7" };
-          tmp11 = React5(tmp(4754).Text, obj4);
+          tmp11 = React5(tmp(4786).Text, obj4);
         }
         cResult[7] = author;
         cResult[8] = tmp4.separator;
@@ -176,13 +176,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[2] = undefined;
   } else {
     if (channel.type !== tmp(1099).ChannelTypes.PUBLIC_THREAD) {
-      const simpleChannelIconComponent = tmp(5241).getSimpleChannelIconComponent(channel);
-      const tmpResult = tmp(5241);
+      const simpleChannelIconComponent = tmp(5273).getSimpleChannelIconComponent(channel);
+      const tmpResult = tmp(5273);
     }
     if (null == parentChannel) {
-      const ThreadIcon = tmp(5293).ThreadIcon;
+      const ThreadIcon = tmp(5325).ThreadIcon;
     }
-    const ChatIcon = tmp(5291).ChatIcon;
+    const ChatIcon = tmp(5323).ChatIcon;
   }
 }) : ((channel) => {
   channel = channel.channel;
@@ -209,13 +209,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return element;
     } else {
       if (tmp.type !== tmp3(1099).ChannelTypes.PUBLIC_THREAD) {
-        const simpleChannelIconComponent = tmp3(5241).getSimpleChannelIconComponent(tmp);
-        const tmp3Result = tmp3(5241);
+        const simpleChannelIconComponent = tmp3(5273).getSimpleChannelIconComponent(tmp);
+        const tmp3Result = tmp3(5273);
       }
       if (null == tmp2) {
-        const ThreadIcon = tmp3(5293).ThreadIcon;
+        const ThreadIcon = tmp3(5325).ThreadIcon;
       }
-      tmp3Result2 = tmp3(5291);
+      tmp3Result2 = tmp3(5323);
       const ChatIcon = tmp3Result2.ChatIcon;
     }
   }, items);
@@ -270,9 +270,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (tmp11) {
         const obj3 = { style: tmp4.secondaryTextContainer, children: null };
         const obj4 = { variant: "text-md/bold", color: "text-muted", maxFontSizeMultiplier: 1.75, style: tmp4.separator, children: "\u00B7" };
-        const items1 = [React5(tmp(4754).Text, obj4), ];
+        const items1 = [React5(tmp(4786).Text, obj4), ];
         const obj5 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: tmp4.secondaryText, children: secondaryText };
-        items1[1] = React5(tmp(4754).Text, obj5);
+        items1[1] = React5(tmp(4786).Text, obj5);
         obj3.children = items1;
         tmp11 = closure_1_8(View, obj3);
       }
@@ -284,7 +284,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp9 = tmp11;
     }
     const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp5, children: text };
-    const tmp8 = React5(tmp(4754).Text, obj6);
+    const tmp8 = React5(tmp(4786).Text, obj6);
     cResult[3] = tmp5;
     cResult[4] = text;
     cResult[5] = tmp8;
@@ -308,9 +308,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (tmp2Result) {
     const obj3 = { style: tmp.secondaryTextContainer, children: null };
     const obj4 = { variant: "text-md/bold", color: "text-muted", maxFontSizeMultiplier: 1.75, style: tmp.separator, children: "\u00B7" };
-    const items2 = [tmp4(tmp5(4754).Text, obj4), ];
+    const items2 = [tmp4(tmp5(4786).Text, obj4), ];
     const obj5 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: tmp.secondaryText, children: secondaryText };
-    items2[1] = tmp4(tmp5(4754).Text, obj5);
+    items2[1] = tmp4(tmp5(4786).Text, obj5);
     obj3.children = items2;
     tmp2Result = tmp2(tmp3, obj3);
   }
@@ -426,7 +426,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const items2 = [tmp4.primaryText, tmp10];
         obj6.style = items2;
         obj6.children = author.nick;
-        tmp15 = React5(tmp(4754).Text, obj6);
+        tmp15 = React5(tmp(4786).Text, obj6);
       }
       cResult[8] = author;
       cResult[9] = tmp10;

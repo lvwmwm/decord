@@ -1,21 +1,21 @@
-// Module ID: 17351
-// Function ID: 17352
+// Module ID: 17361
+// Function ID: 17362
 // Name: MessageRequestPreview
-// Dependencies: [19, 17, 4409, 1078, 21, 4758, 5743, 580, 558, 568, 12758, 504, 1245, 1119, 8137, 5105, 1181, 2]
+// Dependencies: [19, 17, 4441, 1078, 21, 4790, 5775, 580, 558, 568, 12794, 504, 1245, 1119, 8169, 5137, 1181, 2]
 
-// Module 17351 (MessageRequestPreview)
+// Module 17361 (MessageRequestPreview)
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
-import TextStyles_mod from "TextStyles" /* 5743 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
+import TextStyles_mod from "TextStyles" /* 5775 */;
 
 const require = fn;
 const View = fn(17).View;
 const Constants = fn(1078);
 ({ Fonts, AnalyticEvents: metroRequire, MessageFlags: closure_7 } = Constants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { systemContent: null, messageContent: null };
 let obj3 = { fontStyle: "italic" };
 let TextStyles = TextStyles_mod;
@@ -38,7 +38,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
   const style = channel.style;
   const tmp4 = closure_9();
   let obj = channel(568);
-  const messageRequestPreview = channel(12758).useMessageRequestPreview(channel);
+  const messageRequestPreview = channel(12794).useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -94,7 +94,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
     }
     tmp9 = cResult[3];
   }
-  const obj2 = channel(12758);
+  const obj2 = channel(12794);
   const stateFromStoresObject = channel(504).useStateFromStoresObject(first, tmp8, tmp9);
   if (cResult[4] === channel) {
     class S {
@@ -629,10 +629,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
 }) : ((channel) => {
   channel = channel.channel;
   const tmp = closure_9();
-  const messageRequestPreview = channel(12758).useMessageRequestPreview(channel);
+  const messageRequestPreview = channel(12794).useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
-  let obj = channel(12758);
+  let obj = channel(12794);
   const items = [RelationshipStore];
   const items1 = [message];
   const stateFromStoresObject = channel(504).useStateFromStoresObject(items, () => {
@@ -686,7 +686,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(8137)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(8169)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
@@ -723,7 +723,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
         }
         stringResult = stringResult1;
         flag = false;
-        tmp2Result = tmp2(5105);
+        tmp2Result = tmp2(5137);
       } else {
         const intl = tmp2(1119).intl;
         stringResult = intl.string(tmp2(1119).t["0KfDxM"]);

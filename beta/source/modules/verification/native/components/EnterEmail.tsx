@@ -1,9 +1,9 @@
-// Module ID: 7228
-// Function ID: 7229
+// Module ID: 7260
+// Function ID: 7261
 // Name: EnterEmail
-// Dependencies: [5, 32, 19, 17, 1376, 5838, 1078, 21, 4758, 580, 558, 568, 1488, 504, 1098, 7229, 1245, 1119, 4754, 6845, 5188, 2]
+// Dependencies: [5, 32, 19, 17, 1376, 5870, 1078, 21, 4790, 580, 558, 568, 1488, 504, 1098, 7261, 1245, 1119, 4786, 6877, 5220, 2]
 
-// Module 7228 (EnterEmail)
+// Module 7260 (EnterEmail)
 import nativeDefault from "native" /* 580 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -13,12 +13,12 @@ import UserStore from "UserStore" /* 1376 */;
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
-const ChangeEmailStore = fn(5838);
+const ChangeEmailStore = fn(5870);
 ({ useChangeEmailError: c10, useChangeEmailStore: closure_11, ChangeEmailFields: closure_12 } = ChangeEmailStore);
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { background: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, container: { paddingVertical: 12, paddingHorizontal: 16 }, title: { textAlign: "center" }, prompt: { marginTop: 8, lineHeight: 18, textAlign: "center" }, input: { marginTop: 24, marginBottom: 16 } };
 let closure_16 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

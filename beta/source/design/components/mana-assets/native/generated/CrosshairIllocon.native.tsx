@@ -1,13 +1,13 @@
-// Module ID: 6116
-// Function ID: 6117
+// Module ID: 6148
+// Function ID: 6149
 // Name: CrosshairIllocon
-// Dependencies: [21, 558, 568, 6117, 5802, 2]
+// Dependencies: [21, 558, 568, 6149, 5834, 2]
 
-// Module 6116 (CrosshairIllocon)
+// Module 6148 (CrosshairIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6117 from "module_6117" /* 6117 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6149 from "module_6149" /* 6149 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const CrosshairIllocon = ReactCompilerGating.isReactCompilerEnabled() ? (
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6117 };
+    const obj2 = { uri: _modDef6149 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const CrosshairIllocon = ReactCompilerGating.isReactCompilerEnabled() ? (
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6117 };
+  const obj2 = { uri: _modDef6149 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

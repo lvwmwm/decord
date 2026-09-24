@@ -1,21 +1,21 @@
-// Module ID: 11922
-// Function ID: 11923
+// Module ID: 11958
+// Function ID: 11959
 // Name: AcceptGuildTemplateModal
-// Dependencies: [5, 32, 19, 7704, 1078, 21, 4758, 5897, 558, 568, 504, 5738, 11923, 11924, 11921, 5356, 11925, 7371, 5839, 7246, 2]
+// Dependencies: [5, 32, 19, 7736, 1078, 21, 4790, 5929, 558, 568, 504, 5770, 11959, 11960, 11957, 5388, 11961, 7403, 5871, 7278, 2]
 
-// Module 11922 (AcceptGuildTemplateModal)
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import AcceptGuildTemplateActionCreatorsDefault from "AcceptGuildTemplateActionCreators" /* 11924 */;
+// Module 11958 (AcceptGuildTemplateModal)
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import AcceptGuildTemplateActionCreatorsDefault from "AcceptGuildTemplateActionCreators" /* 11960 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7704 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7736 */;
 
 require = fn;
 const UPLOAD_MEDIUM_SIZE = fn(1078).UPLOAD_MEDIUM_SIZE;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
-let obj2 = { container: { flex: 1, marginTop: fn(5897).NAV_BAR_HEIGHT } };
+const createStyles = fn(4790);
+let obj2 = { container: { flex: 1, marginTop: fn(5929).NAV_BAR_HEIGHT } };
 let closure_10 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
 let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((code) => {
@@ -43,10 +43,10 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((code) => {
   let obj = require("c");
   const stateFromStores = require("initialize").useStateFromStores(first, tmp7);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const guildNameSuggestion = first1(5738).getGuildNameSuggestion();
+    const guildNameSuggestion = first1(5770).getGuildNameSuggestion();
     cResult[3] = guildNameSuggestion;
     let tmp9 = guildNameSuggestion;
-    let obj3 = first1(5738);
+    let obj3 = first1(5770);
   } else {
     tmp9 = cResult[3];
   }
@@ -54,7 +54,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((code) => {
   [first2, _slicedToArray] = noop.useState(null);
   const tmpResult = require("initialize");
   [tmp17, noop] = noop.useState(null);
-  stateFromStores(11923)(stateFromStores);
+  stateFromStores(11959)(stateFromStores);
   if (cResult[4] === stateFromStores) {
     if (cResult[5] === first2) {
       if (cResult[6] === first1) {
@@ -165,7 +165,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((code) => {
         }
       }
       const obj2 = { code, guildTemplate: stateFromStores, name: first1, setName: tmp21, icon: first2, errors: tmp17, chooseIcon: tmp22, createServer: tmp20 };
-      const tmp25 = jsx(stateFromStores(11925), { code, guildTemplate: stateFromStores, name: first1, setName: tmp21, icon: first2, errors: tmp17, chooseIcon: tmp22, createServer: tmp20 });
+      const tmp25 = jsx(stateFromStores(11961), { code, guildTemplate: stateFromStores, name: first1, setName: tmp21, icon: first2, errors: tmp17, chooseIcon: tmp22, createServer: tmp20 });
       cResult[10] = code;
       cResult[11] = tmp17;
       cResult[12] = stateFromStores;
@@ -197,11 +197,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((code) => {
   const items = [GuildTemplateStore];
   const stateFromStores = code(504).useStateFromStores(items, () => GuildTemplateStore.getGuildTemplate(code));
   let obj = code(504);
-  [name, dependencyMap] = noop.useState(name(5738).getGuildNameSuggestion());
+  [name, dependencyMap] = noop.useState(name(5770).getGuildNameSuggestion());
   [first1, _slicedToArray] = noop.useState(null);
   const tmp7 = _slicedToArray(noop.useState(null), 2);
   noop = tmp7[1];
-  stateFromStores(11923)(stateFromStores);
+  stateFromStores(11959)(stateFromStores);
   let obj3 = { top: true, style: tmp.container, children: null };
   let obj4 = {
     code,
@@ -215,7 +215,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((code) => {
     chooseIcon: null,
     createServer: null
   };
-  const obj2 = name(5738);
+  const obj2 = name(5770);
   obj4.chooseIcon = first1(function*(arg0, value) {
     if (dependencyMap === 2) {
       dependencyMap = 3;
@@ -276,7 +276,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((code) => {
       const acceptGuildTemplateResult = AcceptGuildTemplateActionCreatorsDefault.acceptGuildTemplate(tmp.code, first, first1);
     }
   };
-  obj3.children = jsx(stateFromStores(11925), {
+  obj3.children = jsx(stateFromStores(11961), {
     code,
     guildTemplate: stateFromStores,
     name,
@@ -288,11 +288,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((code) => {
     chooseIcon: null,
     createServer: null
   });
-  return jsx(code(7371).SafeAreaPaddingView, { top: true, style: tmp.container, children: null });
+  return jsx(code(7403).SafeAreaPaddingView, { top: true, style: tmp.container, children: null });
 });
 const ACCEPT_GUILD_TEMPLATE = "ACCEPT_GUILD_TEMPLATE";
 ReactCompilerGating = fn(558);
-let obj3 = { flex: 1, marginTop: fn(5897).NAV_BAR_HEIGHT };
+let obj3 = { flex: 1, marginTop: fn(5929).NAV_BAR_HEIGHT };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_templates/native/AcceptGuildTemplateModal.tsx");
 
@@ -305,7 +305,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((code) => {
     const obj4 = {
       title: "",
       fullscreen: true,
-      headerLeft: tmp(5839).getHeaderCloseButton(() => closure_1_1(closure_1_3[14]).hideModal()),
+      headerLeft: tmp(5871).getHeaderCloseButton(() => closure_1_1(closure_1_3[14]).hideModal()),
       render() {
           obj = {};
           const merged = Object.assign(obj);
@@ -316,13 +316,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((code) => {
     cResult[0] = code;
     cResult[1] = obj3;
     let tmp4 = obj3;
-    const tmpResult = tmp(5839);
+    const tmpResult = tmp(5871);
   } else {
     tmp4 = cResult[1];
   }
   if (cResult[2] !== tmp4) {
     const obj5 = { initialRouteName: ACCEPT_GUILD_TEMPLATE, screens: tmp4 };
-    const tmp9 = jsx(tmp(7246).Navigator, { initialRouteName: ACCEPT_GUILD_TEMPLATE, screens: tmp4 });
+    const tmp9 = jsx(tmp(7278).Navigator, { initialRouteName: ACCEPT_GUILD_TEMPLATE, screens: tmp4 });
     cResult[2] = tmp4;
     cResult[3] = tmp9;
     let tmp6 = tmp9;
@@ -349,5 +349,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((code) => {
     obj2[ACCEPT_GUILD_TEMPLATE] = obj3;
     return obj2;
   }, items);
-  return jsx(code(7246).Navigator, { initialRouteName: ACCEPT_GUILD_TEMPLATE, screens: memo });
+  return jsx(code(7278).Navigator, { initialRouteName: ACCEPT_GUILD_TEMPLATE, screens: memo });
 });

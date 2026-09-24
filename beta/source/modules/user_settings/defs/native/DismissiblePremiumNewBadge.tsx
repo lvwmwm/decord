@@ -1,21 +1,21 @@
-// Module ID: 14982
-// Function ID: 14983
+// Module ID: 15023
+// Function ID: 15024
 // Name: DismissiblePremiumNewBadge
-// Dependencies: [19, 7676, 21, 4758, 580, 558, 568, 1368, 1181, 5198, 1098, 10921, 2]
+// Dependencies: [19, 7708, 21, 4790, 580, 558, 568, 1368, 1181, 5230, 1098, 10957, 2]
 
-// Module 14982 (DismissiblePremiumNewBadge)
+// Module 15023 (DismissiblePremiumNewBadge)
 import nativeDefault from "native" /* 580 */;
 import ConstantsIOS from "ConstantsIOS" /* 1098 */;
 import native from "native" /* 1181 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10921 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10957 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const Gradients = fn(7676).Gradients;
+const Gradients = fn(7708).Gradients;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { newTag: { backgroundColor: "transparent" }, newTagContainer: { borderRadius: nativeDefault.radii.sm, marginLeft: nativeDefault.space.PX_4 } };
 let closure_5 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

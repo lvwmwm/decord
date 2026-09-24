@@ -1,17 +1,16 @@
 // Module ID: 7001
 // Function ID: 7002
-// Dependencies: [6999, 6950]
-// Exports: useSimultaneousGestures
+// Dependencies: [19]
+// Exports: useInterceptingDetectorContext
 
 // Module 7001
-import ComposedGestureName from "ComposedGestureName" /* 6950 */;
-import _mod6999 from "module_6999" /* 6999 */;
+import noop from "module_19" /* 19 */;
 
-require = arg1;
-const dependencyMap = arg6;
+const use = noop.use;
+const context = noop.createContext(null);
 
-export const useSimultaneousGestures = function useSimultaneousGestures() {
-  const items = [...arguments];
-  const items1 = [ComposedGestureName.ComposedGestureName.Simultaneous, ...items];
-  return _mod6999.useComposedGesture.apply(items1);
+export const InterceptingDetectorMode = { DEFAULT: 0, [0]: "DEFAULT", ANIMATED: 1, [1]: "ANIMATED", REANIMATED: 2, [2]: "REANIMATED" };
+export const InterceptingDetectorContext = context;
+export const useInterceptingDetectorContext = function useInterceptingDetectorContext() {
+  return use(context);
 };

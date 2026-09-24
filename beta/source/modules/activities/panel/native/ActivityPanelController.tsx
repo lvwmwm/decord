@@ -1,29 +1,29 @@
-// Module ID: 17441
-// Function ID: 17442
+// Module ID: 17451
+// Function ID: 17452
 // Name: ActivityPanelController
-// Dependencies: [32, 19, 4985, 8566, 9742, 2045, 2044, 2008, 9313, 21, 2021, 558, 568, 17442, 4497, 8608, 17443, 1616, 1482, 17444, 17447, 9641, 9717, 10183, 17448, 5845, 9719, 4625, 4389, 9610, 504, 5630, 4769, 17449, 9589, 2]
+// Dependencies: [32, 19, 5017, 8598, 9774, 2045, 2044, 2008, 9345, 21, 2021, 558, 568, 17452, 4529, 8640, 17453, 1616, 1482, 17454, 17457, 9673, 9749, 10222, 17458, 5877, 9751, 4657, 4421, 9642, 504, 5662, 4801, 17459, 9621, 2]
 
-// Module 17441 (ActivityPanelController)
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import ChatInputUtils from "ChatInputUtils" /* 4625 */;
-import transitionToChannel from "transitionToChannel" /* 4769 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5630 */;
-import DeviceOrientation from "DeviceOrientation" /* 8608 */;
-import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 9589 */;
-import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 9719 */;
-import applyActivityOrientationLockDefault from "applyActivityOrientationLock" /* 17443 */;
+// Module 17451 (ActivityPanelController)
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import ChatInputUtils from "ChatInputUtils" /* 4657 */;
+import transitionToChannel from "transitionToChannel" /* 4801 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5662 */;
+import DeviceOrientation from "DeviceOrientation" /* 8640 */;
+import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 9621 */;
+import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 9751 */;
+import applyActivityOrientationLockDefault from "applyActivityOrientationLock" /* 17453 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 4985 */;
-import AppFreezeStore from "AppFreezeStore" /* 8566 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 9742 */;
+import ApplicationStore from "ApplicationStore" /* 5017 */;
+import AppFreezeStore from "AppFreezeStore" /* 8598 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 9774 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 
 require = fn;
 const Constants = fn(2008);
 ({ OrientationLockState: closure_11, ACTIVITY_LOCKED_ASPECT_RATIO: closure_12 } = Constants);
-const ActivityPanelModes = fn(9313).ActivityPanelModes;
+const ActivityPanelModes = fn(9345).ActivityPanelModes;
 const jsx = fn(21).jsx;
 let closure_15 = { x: 0, y: 0, gestureActive: false };
 const FunctionUtils = fn(2021);
@@ -1164,8 +1164,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
         }
       }
     }
-    const obj2 = { context: connectedActivityInTextChannelId(17449), orientationLockStateForApp, mode, hasConnectedActivity, connectedActivityAppId, currentApp, updateActivityPanelMode: EmbeddedActivitiesActionCreatorsAll.updateActivityPanelMode, children };
-    const tmp19 = <closure_24 context={connectedActivityInTextChannelId(17449)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={EmbeddedActivitiesActionCreatorsAll.updateActivityPanelMode}>{children}</closure_24>;
+    const obj2 = { context: connectedActivityInTextChannelId(17459), orientationLockStateForApp, mode, hasConnectedActivity, connectedActivityAppId, currentApp, updateActivityPanelMode: EmbeddedActivitiesActionCreatorsAll.updateActivityPanelMode, children };
+    const tmp19 = <closure_24 context={connectedActivityInTextChannelId(17459)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={EmbeddedActivitiesActionCreatorsAll.updateActivityPanelMode}>{children}</closure_24>;
     cResult[7] = children;
     cResult[8] = connectedActivityAppId;
     cResult[9] = currentApp;
@@ -1243,6 +1243,6 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     }
   }, items1);
   let obj = mode(504);
-  return <closure_24 context={connectedActivityInTextChannelId(17449)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={EmbeddedActivitiesActionCreatorsAll.updateActivityPanelMode}>{arg0.children}</closure_24>;
+  return <closure_24 context={connectedActivityInTextChannelId(17459)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={EmbeddedActivitiesActionCreatorsAll.updateActivityPanelMode}>{arg0.children}</closure_24>;
 });
 export const BaseActivityPanelController = tmp3;

@@ -1,9 +1,9 @@
 // Module ID: 4186
 // Function ID: 4187
-// Dependencies: [4157, 4158, 4155]
+// Dependencies: [4187]
 
 // Module 4186
-import Parser2 from "Parser" /* 4155 */;
+import Parser2 from "Parser" /* 4187 */;
 
 function _typeof(arg0) {
   if (typeof Symbol === "function") {
@@ -30,15 +30,15 @@ function _typeof(arg0) {
     str = typeof arg0;
   };
 }
-function _setPrototypeOf(SecondParser, Parser) {
+function _setPrototypeOf(EraParser, Parser) {
   _setPrototypeOf = Object.setPrototypeOf;
   if (!_setPrototypeOf) {
-    _setPrototypeOf = function _setPrototypeOf(SecondParser, Parser) {
-      SecondParser.__proto__ = Parser;
-      return SecondParser;
+    _setPrototypeOf = function _setPrototypeOf(EraParser, Parser) {
+      EraParser.__proto__ = Parser;
+      return EraParser;
     };
   }
-  return _setPrototypeOf(SecondParser, Parser);
+  return _setPrototypeOf(EraParser, Parser);
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
@@ -57,10 +57,10 @@ function _getPrototypeOf(arg0) {
   return _getPrototypeOf(arg0);
 }
 const Parser = Parser2.Parser;
-let _createSuperInternal;
-class SecondParser {
+let closure_129_0;
+class EraParser {
   constructor() {
-    if (this instanceof closure_1) {
+    if (this instanceof _setPrototypeOf) {
       length = arguments.length;
       _Array = Array;
       tmp6 = new.target;
@@ -76,11 +76,11 @@ class SecondParser {
           num = num + 1;
         } while (num < length);
       }
-      tmp11 = _createSuperInternal;
-      call = _createSuperInternal.call;
+      tmp11 = _typeof;
+      call = _typeof.call;
       items = [];
       items[0] = tmp;
-      applyResult = call.apply(_createSuperInternal, items.concat(array));
+      applyResult = call.apply(_typeof, items.concat(array));
       tmp13 = undefined === applyResult;
       if (tmp13) {
         _ReferenceError2 = ReferenceError;
@@ -94,10 +94,10 @@ class SecondParser {
         str2 = "priority";
         if ("priority" in applyResult) {
           _Object = Object;
-          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 50, enumerable: true, configurable: true, writable: true });
+          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 140, enumerable: true, configurable: true, writable: true });
         } else {
-          num3 = 50;
-          applyResult.priority = 50;
+          num3 = 140;
+          applyResult.priority = 140;
         }
         if (tmp13) {
           _ReferenceError = ReferenceError;
@@ -108,7 +108,7 @@ class SecondParser {
           tmp19 = referenceError1;
           throw referenceError1;
         } else {
-          items1 = ["t", "T"];
+          items1 = ["R", "u", "t", "T"];
           str3 = "incompatibleTokens";
           if ("incompatibleTokens" in applyResult) {
             _Object2 = Object;
@@ -132,7 +132,7 @@ class SecondParser {
     }
   }
 }
-let dependencyMap = SecondParser;
+let closure_129_1 = EraParser;
 if (typeof Parser !== "function") {
   if (null !== Parser) {
     let _TypeError = TypeError;
@@ -144,12 +144,13 @@ let prototype = Parser;
 if (Parser) {
   prototype = Parser.prototype;
 }
-SecondParser.prototype = Object.create(prototype, { constructor: { value: SecondParser, writable: true, configurable: true } });
+EraParser.prototype = Object.create(prototype, { constructor: { value: EraParser, writable: true, configurable: true } });
 if (Parser) {
-  _setPrototypeOf(SecondParser, Parser);
+  _setPrototypeOf(EraParser, Parser);
 }
+_typeof = EraParser;
 let num = 0;
-dependencyMap = (function _isNativeReflectConstruct() {
+_setPrototypeOf = (function _isNativeReflectConstruct() {
   if (typeof Reflect !== "undefined") {
     const _Reflect3 = Reflect;
     if (Reflect.construct) {
@@ -181,10 +182,10 @@ dependencyMap = (function _isNativeReflectConstruct() {
   }
   return false;
 })();
-_createSuperInternal = function _createSuperInternal() {
+closure_129_0 = function _createSuperInternal() {
   const self = this;
-  const obj = _getPrototypeOf(_createSuperInternal);
-  if (closure_1) {
+  const obj = _getPrototypeOf(_typeof);
+  if (_setPrototypeOf) {
     const _Reflect = Reflect;
     let constructResult = Reflect.construct(obj, arguments, _getPrototypeOf(self).constructor);
   } else {
@@ -207,33 +208,30 @@ _createSuperInternal = function _createSuperInternal() {
 };
 const entry = {
   key: "parse",
-  value: function parse(arg0, arg1, ordinalNumber) {
-    if ("s" === arg1) {
-      return _createSuperInternal(4157).parseNumericPattern(_createSuperInternal(4158).numericPatterns.second, arg0);
-    } else if ("so" === arg1) {
-      return ordinalNumber.ordinalNumber(arg0, { unit: "second" });
-    } else {
-      return _createSuperInternal(4157).parseNDigits(arg1.length, arg0);
+  value: function parse(arg0, arg1, era) {
+    if ("G" !== arg1) {
+      if ("GG" !== arg1) {
+        if ("GGG" !== arg1) {
+          if ("GGGGG" === arg1) {
+            return era.era(arg0, { width: "narrow" });
+          } else {
+            return era.era(arg0, { width: "wide" }) || era.era(arg0, { width: "abbreviated" }) || era.era(arg0, { width: "narrow" });
+          }
+        }
+      }
     }
+    return era.era(arg0, { width: "abbreviated" }) || era.era(arg0, { width: "narrow" });
   }
 };
 let items = [
   entry,
   {
-    key: "validate",
-    value: function validate(arg0, arg1) {
-      let tmp = arg1 >= 0;
-      if (tmp) {
-        tmp = arg1 <= 59;
-      }
-      return tmp;
-    }
-  },
-  {
     key: "set",
-    value: function set(setUTCSeconds, arg1, arg2) {
-      setUTCSeconds.setUTCSeconds(arg2, 0);
-      return setUTCSeconds;
+    value: function set(setUTCFullYear, arg1, era) {
+      arg1.era = era;
+      setUTCFullYear.setUTCFullYear(era, 0, 1);
+      setUTCFullYear.setUTCHours(0, 0, 0, 0);
+      return setUTCFullYear;
     }
   }
 ];
@@ -255,4 +253,4 @@ if (0 < items.length) {
   } while (num < items.length);
 }
 
-export { SecondParser };
+export { EraParser };

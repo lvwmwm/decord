@@ -1,16 +1,16 @@
-// Module ID: 7737
-// Function ID: 7738
+// Module ID: 7769
+// Function ID: 7770
 // Name: ReadStates
-// Dependencies: [5, 2045, 4773, 3, 2074, 12, 11, 2]
+// Dependencies: [5, 2045, 4805, 3, 2074, 12, 11, 2]
 
-// Module 7737 (ReadStates)
+// Module 7769 (ReadStates)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import ReadStateStore from "ReadStateStore" /* 4773 */;
+import ReadStateStore from "ReadStateStore" /* 4805 */;
 
 const logger = new LoggerDefault("ReadStates");
 class ReadStates {

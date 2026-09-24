@@ -1,13 +1,13 @@
-// Module ID: 11617
-// Function ID: 11618
+// Module ID: 11653
+// Function ID: 11654
 // Name: IosAttributionImpressionRegistry
-// Dependencies: [5, 11618, 3, 11615, 11616, 11619, 2]
+// Dependencies: [5, 11654, 3, 11651, 11652, 11655, 2]
 // Exports: endImpression, getStoreKitCredential, registerViewThroughImpression
 
-// Module 11617 (IosAttributionImpressionRegistry)
+// Module 11653 (IosAttributionImpressionRegistry)
 import LoggerDefault from "Logger" /* 3 */;
-import IosAttributionNativeModule from "IosAttributionNativeModule" /* 11615 */;
-import IosAttributionMetrics from "IosAttributionMetrics" /* 11616 */;
+import IosAttributionNativeModule from "IosAttributionNativeModule" /* 11651 */;
+import IosAttributionMetrics from "IosAttributionMetrics" /* 11652 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -342,9 +342,9 @@ let closure_11 = async function _getStoreKitCredential(arg0) {
   return iter;
 };
 let obj = {};
-let obj2 = { viewThroughSpec: { kind: fn(11618).IosAttributionFramework.AD_ATTRIBUTION_KIT } };
-obj[fn(11618).IosAttributionFramework.AD_ATTRIBUTION_KIT] = obj2;
-let obj3 = { kind: fn(11618).IosAttributionFramework.AD_ATTRIBUTION_KIT };
+let obj2 = { viewThroughSpec: { kind: fn(11654).IosAttributionFramework.AD_ATTRIBUTION_KIT } };
+obj[fn(11654).IosAttributionFramework.AD_ATTRIBUTION_KIT] = obj2;
+let obj3 = { kind: fn(11654).IosAttributionFramework.AD_ATTRIBUTION_KIT };
 let closure_4 = new LoggerDefault("IosAttribution");
 const map = new Map();
 const size = fn(2);

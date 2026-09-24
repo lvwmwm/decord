@@ -1,16 +1,16 @@
-// Module ID: 10195
-// Function ID: 10196
+// Module ID: 10234
+// Function ID: 10235
 // Name: JoinStageView
-// Dependencies: [19, 21, 558, 568, 5650, 5644, 10177, 1119, 8676, 10133, 2]
+// Dependencies: [19, 21, 558, 568, 5682, 5676, 10216, 1119, 8708, 10172, 2]
 
-// Module 10195 (JoinStageView)
+// Module 10234 (JoinStageView)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5644 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5650 */;
-import StageChannelUtils from "StageChannelUtils" /* 8676 */;
-import StageActionBarButtons from "StageActionBarButtons" /* 10133 */;
-import StageViewWithPromptsDefault from "StageViewWithPrompts" /* 10177 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 5676 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5682 */;
+import StageChannelUtils from "StageChannelUtils" /* 8708 */;
+import StageActionBarButtons from "StageActionBarButtons" /* 10172 */;
+import StageViewWithPromptsDefault from "StageViewWithPrompts" /* 10216 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -27,7 +27,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     if (cResult[1] === channel) {
       if (cResult[7] !== channel) {
         const obj3 = { channel };
-        const tmp15 = jsx(tmp(10133).JoinStagePrompt, { channel });
+        const tmp15 = jsx(tmp(10172).JoinStagePrompt, { channel });
         cResult[7] = channel;
         cResult[8] = tmp15;
         let tmp13 = tmp15;

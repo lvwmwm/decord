@@ -1,29 +1,29 @@
-// Module ID: 10188
-// Function ID: 10189
+// Module ID: 10227
+// Function ID: 10228
 // Name: GlobalStageChannelStatus
-// Dependencies: [5, 32, 19, 17, 4451, 2050, 1078, 21, 1119, 4758, 580, 558, 568, 4911, 504, 9553, 5203, 8903, 10178, 5641, 8687, 8689, 8674, 8670, 1181, 4754, 5189, 5188, 10180, 9668, 4693, 4469, 9646, 5241, 2]
+// Dependencies: [5, 32, 19, 17, 4483, 2050, 1078, 21, 1119, 4790, 580, 558, 568, 4943, 504, 9585, 5235, 8935, 10217, 5673, 8719, 8721, 8706, 8702, 1181, 4786, 5221, 5220, 10219, 9700, 4725, 4501, 9678, 5273, 2]
 
-// Module 10188 (GlobalStageChannelStatus)
+// Module 10227 (GlobalStageChannelStatus)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import useChannelNameDefault from "useChannelName" /* 4911 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8674 */;
-import PushNotificationDefault from "PushNotification" /* 9553 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 9668 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10180 */;
+import useChannelNameDefault from "useChannelName" /* 4943 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8706 */;
+import PushNotificationDefault from "PushNotification" /* 9585 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 9700 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10219 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4451 */;
+import ActionSheetStore from "ActionSheetStore" /* 4483 */;
 import StageInstanceStore from "StageInstanceStore" /* 2050 */;
 
-const useMountEffectDefault = tmp5(5203);
+const useMountEffectDefault = tmp5(5235);
 require = fn;
 const View = fn(17).View;
 const Fonts = fn(1078).Fonts;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { invitedContainer: { paddingHorizontal: nativeDefault.space.PX_8 }, icon: null, activeSpeakerIcon: null, activeStageIcon: null, topic: null, channel: null, invitedHeaderText: null, noticeContainer: null, row: null, buttonWrapper: null, declineButtonPill: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_8 };
 obj2.icon = { marginEnd: nativeDefault.space.PX_8, tintColor: nativeDefault.colors.TEXT_DEFAULT };
@@ -117,8 +117,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
       }
     }
-    const stageBlockedUsersCount = tmp(8903).useStageBlockedUsersCount(tmp17);
-    const tmpResult4 = tmp(8903);
+    const stageBlockedUsersCount = tmp(8935).useStageBlockedUsersCount(tmp17);
+    const tmpResult4 = tmp(8935);
     if (channel != null) {
       class S {
         constructor() {
@@ -126,8 +126,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
       }
     }
-    const stageIgnoredUsersCount = tmp(8903).useStageIgnoredUsersCount(tmp19);
-    const tmpResult5 = tmp(8903);
+    const stageIgnoredUsersCount = tmp(8935).useStageIgnoredUsersCount(tmp19);
+    const tmpResult5 = tmp(8935);
     if (channel != null) {
       class S {
         constructor() {
@@ -135,7 +135,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
       }
     }
-    const getStageRTCPanelHeight = tmp(10178).useGetStageRTCPanelHeight(tmp21);
+    const getStageRTCPanelHeight = tmp(10217).useGetStageRTCPanelHeight(tmp21);
     if (cResult[7] !== channel) {
       class S {
         constructor() {
@@ -172,18 +172,18 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
                 closure_128_0 = undefined;
                 if (null != id) {
                   if (obj9.shouldAgeVerifyToSpeakForCurrentUser(id.id)) {
-                    const obj5 = { entryPoint: tmp41(8689).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND };
-                    const result = stringResult(8687).showAgeVerificationGetStartedModal(obj5);
-                    const obj4 = stringResult(8687);
+                    const obj5 = { entryPoint: tmp41(8721).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND };
+                    const result = stringResult(8719).showAgeVerificationGetStartedModal(obj5);
+                    const obj4 = stringResult(8719);
                   } else {
                     v0(true);
                     v0 = 1;
                     c4 = 2;
                     c5 = 1;
-                    const obj6 = { value: tmp41(8674).audienceAckRequestToSpeak(id, false), done: false };
+                    const obj6 = { value: tmp41(8706).audienceAckRequestToSpeak(id, false), done: false };
                     return obj6;
                   }
-                  obj9 = id(5641);
+                  obj9 = id(5673);
                 }
                 c5 = 3;
               }
@@ -199,8 +199,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               v0 = 0;
               v0(false);
               if (null == key.getKey()) {
-                stateFromStores(8670).openStageChannel(id);
-                const obj8 = stateFromStores(8670);
+                stateFromStores(8702).openStageChannel(id);
+                const obj8 = stateFromStores(8702);
               }
             }
             v0 = 0;
@@ -474,7 +474,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       cResult[14] = tmp25;
       cResult[15] = items2;
     }
-    const tmpResult6 = tmp(10178);
+    const tmpResult6 = tmp(10217);
   }
   cResult[4] = stringResult;
   if (stateFromStores != null) {
@@ -541,18 +541,18 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             channel = tmp7;
             if (null != id) {
               if (obj9.shouldAgeVerifyToSpeakForCurrentUser(id.id)) {
-                const obj5 = { entryPoint: tmp41(8689).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND };
-                const result = tmp3(8687).showAgeVerificationGetStartedModal(obj5);
-                const obj4 = tmp3(8687);
+                const obj5 = { entryPoint: tmp41(8721).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND };
+                const result = tmp3(8719).showAgeVerificationGetStartedModal(obj5);
+                const obj4 = tmp3(8719);
               } else {
                 dependencyMap(true);
                 dependencyMap = 1;
                 c4 = 2;
                 c5 = 1;
-                const obj6 = { value: tmp41(8674).audienceAckRequestToSpeak(id, false), done: false };
+                const obj6 = { value: tmp41(8706).audienceAckRequestToSpeak(id, false), done: false };
                 return obj6;
               }
-              obj9 = channel(5641);
+              obj9 = channel(5673);
             }
             c5 = 3;
           }
@@ -568,8 +568,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           dependencyMap = 0;
           closure_129_3(false);
           if (null == key.getKey()) {
-            tmp27(8670).openStageChannel(closure_129_0);
-            const obj8 = tmp27(8670);
+            tmp27(8702).openStageChannel(closure_129_0);
+            const obj8 = tmp27(8702);
           }
         }
         dependencyMap = 0;
@@ -614,14 +614,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (channel != null) {
     id1 = channel.id;
   }
-  const stageBlockedUsersCount = channel(8903).useStageBlockedUsersCount(id1);
-  let obj2 = channel(8903);
+  const stageBlockedUsersCount = channel(8935).useStageBlockedUsersCount(id1);
+  let obj2 = channel(8935);
   let id2;
   if (channel != null) {
     id2 = channel.id;
   }
-  let stageIgnoredUsersCount = channel(8903).useStageIgnoredUsersCount(id2);
-  channel(10178);
+  let stageIgnoredUsersCount = channel(8935).useStageIgnoredUsersCount(id2);
+  channel(10217);
   if (channel != null) {
     const id = channel.id;
   }
@@ -657,7 +657,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         };
         const intl6 = tmp6(1119).intl;
         obj9.text = intl6.string(tmp6(1119).t["1YDv7a"]);
-        obj8.children = tmp20(tmp6(5189).BaseTextButton, obj9);
+        obj8.children = tmp20(tmp6(5221).BaseTextButton, obj9);
         const items4 = [tmp20(tmp19, obj8), ];
         const obj10 = { style: tmp.buttonWrapper, children: null };
         const obj11 = {
@@ -682,7 +682,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         obj11.text = intl7.string(tmp6(1119).t.MpO0px);
         obj11.loading = tmp10;
         obj11.disabled = tmp10;
-        obj10.children = tmp20(tmp6(5188).Button, obj11);
+        obj10.children = tmp20(tmp6(5220).Button, obj11);
         items4[1] = tmp20(tmp19, obj10);
         obj7.children = items4;
         items3[2] = tmp18(tmp19, obj7);
@@ -765,7 +765,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalSt
   if (!tmp9) {
     if (!tmp8) {
       let str = "dark-content";
-      const tmpResult3 = tmp(4469);
+      const tmpResult3 = tmp(4501);
     }
     if (null != channel) {
       if (null != guild) {
@@ -793,7 +793,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalSt
         } else {
           if (cResult[6] !== str) {
             const obj3 = { animated: true, barStyle: str };
-            const tmp19 = closure_10(tmp6(9646), obj3);
+            const tmp19 = closure_10(tmp6(9678), obj3);
             cResult[6] = str;
             cResult[7] = tmp19;
             let tmp17 = tmp19;
@@ -916,12 +916,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalSt
             cResult[13] = tmp24;
             tmp22 = tmp24;
           }
-          const channelIconWithGuild = tmp(5241).getChannelIconWithGuild(channel, guild);
+          const channelIconWithGuild = tmp(5273).getChannelIconWithGuild(channel, guild);
           cResult[8] = channel;
           cResult[9] = guild;
           cResult[10] = channelIconWithGuild;
           tmp20 = channelIconWithGuild;
-          const tmpResult4 = tmp(5241);
+          const tmpResult4 = tmp(5273);
         }
       }
     }
@@ -941,7 +941,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalSt
     stringResult = intl.string(id(1119).t["/YzI63"]);
   }
   const tmp7 = useIsInvitedToSpeakDefault();
-  let invitedHeaderText = tmp3(9668)(id);
+  let invitedHeaderText = tmp3(9700)(id);
   const items = [StageInstanceStore];
   const items1 = [id];
   const stateFromStores = id(504).useStateFromStores(items, () => StageInstanceStore.getStageInstanceByChannel(id), items1);
@@ -953,7 +953,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalSt
   if (!invitedHeaderText) {
     if (!tmp7) {
       let str = "dark-content";
-      const tmp8Result = tmp8(4469);
+      const tmp8Result = tmp8(4501);
     }
     if (null != channel) {
       if (null != guild) {
@@ -973,8 +973,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalSt
         } else {
           const obj3 = { style: tmp.noticeContainer, children: null };
           const obj4 = { animated: true, barStyle: str };
-          const items2 = [closure_10(tmp3(9646), obj4), , ];
-          const obj5 = { style: activeSpeakerIcon, size: tmp8(1181).Icon.Sizes.REFRESH_SMALL_16, source: tmp8(5241).getChannelIconWithGuild(channel, guild) };
+          const items2 = [closure_10(tmp3(9678), obj4), , ];
+          const obj5 = { style: activeSpeakerIcon, size: tmp8(1181).Icon.Sizes.REFRESH_SMALL_16, source: tmp8(5273).getChannelIconWithGuild(channel, guild) };
           items2[1] = closure_10(tmp8(1181).Icon, obj5);
           let tmp13Result = "" !== str2;
           if (tmp13Result) {
@@ -1014,7 +1014,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalSt
           obj3.children = items2;
           tmp13Result2 = tmp13(View, obj3);
           tmp15 = closure_10;
-          const tmp8Result2 = tmp8(5241);
+          const tmp8Result2 = tmp8(5273);
         }
         return tmp13Result2;
       }

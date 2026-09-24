@@ -1,15 +1,15 @@
-// Module ID: 15782
-// Function ID: 15783
+// Module ID: 15792
+// Function ID: 15793
 // Name: ScreenDowntimeScheduleSetting
-// Dependencies: [8238, 558, 15178, 8921, 11594, 1119, 2023, 2]
+// Dependencies: [8270, 558, 15188, 8953, 11630, 1119, 2023, 2]
 
-// Module 15782 (ScreenDowntimeScheduleSetting)
+// Module 15792 (ScreenDowntimeScheduleSetting)
 import util from "util" /* 1119 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import SettingsConstants from "SettingsConstants" /* 8238 */;
-import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 15178 */;
+import SettingsConstants from "SettingsConstants" /* 8270 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 15188 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
 import size from "module_2" /* 2 */;
 
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {

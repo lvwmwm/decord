@@ -1,11 +1,11 @@
-// Module ID: 12787
-// Function ID: 12788
+// Module ID: 12823
+// Function ID: 12824
 // Name: UserProfileConfirmRemoveGameFriend
-// Dependencies: [19, 21, 558, 568, 8465, 11174, 1119, 5116, 5116, 2]
+// Dependencies: [19, 21, 558, 568, 8497, 11210, 1119, 5148, 5148, 2]
 
-// Module 12787 (UserProfileConfirmRemoveGameFriend)
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8465 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 11174 */;
+// Module 12823 (UserProfileConfirmRemoveGameFriend)
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8497 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 11210 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -48,7 +48,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[9] !== tmp4) {
         const obj3 = { variant: "destructive", text: tmp10, onPress: tmp4 };
-        const tmp14 = closure_4(tmp(5116).AlertActionButton, obj3, "confirm-remove");
+        const tmp14 = closure_4(tmp(5148).AlertActionButton, obj3, "confirm-remove");
         cResult[9] = tmp4;
         cResult[10] = tmp14;
         let tmp12 = tmp14;
@@ -60,7 +60,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj4 = { variant: "secondary", text: null };
         const intl4 = tmp(1119).intl;
         obj4.text = intl4.string(tmp(1119).t["eN6+rI"]);
-        const tmp17 = closure_4(tmp(5116).AlertActionButton, obj4, "nevermind");
+        const tmp17 = closure_4(tmp(5148).AlertActionButton, obj4, "nevermind");
         cResult[11] = tmp17;
         let tmp15 = tmp17;
       } else {
@@ -70,7 +70,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj5 = { children: null };
         const items = [tmp12, tmp15];
         obj5.children = items;
-        const tmp20 = closure_5(tmp(5116).AlertActions, obj5);
+        const tmp20 = closure_5(tmp(5148).AlertActions, obj5);
         cResult[12] = tmp12;
         cResult[13] = tmp20;
         let tmp18 = tmp20;
@@ -86,7 +86,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj6 = { title: tmp5, content: tmp7, actions: tmp18 };
-      const tmp23 = closure_4(tmp(5116).AlertModal, obj6);
+      const tmp23 = closure_4(tmp(5148).AlertModal, obj6);
       cResult[14] = tmp5;
       cResult[15] = tmp7;
       cResult[16] = tmp18;
@@ -127,12 +127,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const intl3 = userId(1119).intl;
   obj3.text = intl3.string(userId(1119).t.RLcE6x);
   obj3.onPress = callback;
-  const items1 = [closure_4(userId(5116).AlertActionButton, obj3, "confirm-remove"), ];
+  const items1 = [closure_4(userId(5148).AlertActionButton, obj3, "confirm-remove"), ];
   const obj4 = { variant: "secondary", text: null };
   const intl4 = userId(1119).intl;
   obj4.text = intl4.string(userId(1119).t["eN6+rI"]);
-  items1[1] = closure_4(userId(5116).AlertActionButton, obj4, "nevermind");
+  items1[1] = closure_4(userId(5148).AlertActionButton, obj4, "nevermind");
   obj2.children = items1;
-  obj.actions = closure_5(userId(5116).AlertActions, obj2);
-  return closure_4(userId(5116).AlertModal, obj);
+  obj.actions = closure_5(userId(5148).AlertActions, obj2);
+  return closure_4(userId(5148).AlertModal, obj);
 });

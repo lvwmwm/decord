@@ -1,23 +1,23 @@
-// Module ID: 15523
-// Function ID: 15524
+// Module ID: 15533
+// Function ID: 15534
 // Name: SettingsAppearanceScreen
-// Dependencies: [19, 4578, 1187, 1186, 15524, 8238, 1078, 21, 558, 568, 1488, 1368, 8112, 1119, 11292, 1252, 3328, 2112, 15525, 5203, 565, 11594, 14953, 2]
+// Dependencies: [19, 4610, 1187, 1186, 15534, 8270, 1078, 21, 558, 568, 1488, 1368, 8144, 1119, 11328, 1252, 3360, 2112, 15535, 5235, 565, 11630, 14988, 2]
 
-// Module 15523 (SettingsAppearanceScreen)
+// Module 15533 (SettingsAppearanceScreen)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import _modDef3328 from "module_3328" /* 3328 */;
-import useMountEffectDefault from "useMountEffect" /* 5203 */;
+import _modDef3360 from "module_3360" /* 3360 */;
+import useMountEffectDefault from "useMountEffect" /* 5235 */;
 import noop from "module_19" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4578 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4610 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1187 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 
 const require = globalThis.__r;
 
-const SettingLayoutDefault = tmp5(14953);
+const SettingLayoutDefault = tmp5(14988);
 require = fn;
 function getAppearanceSettings() {
   const obj = { label: null, settings: null };
@@ -51,7 +51,7 @@ function getAppearanceSettings() {
   obj6.settings = items6;
   const intl3 = util.intl;
   const obj7 = { helpCenterLink: HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.FAVORITES_GUILD) };
-  obj6.subLabel = intl3.format(_modDef3328.GR2KOG, obj7);
+  obj6.subLabel = intl3.format(_modDef3360.GR2KOG, obj7);
   items1[5] = obj6;
   const obj9 = { label: null, settings: null };
   const intl4 = util.intl;
@@ -71,9 +71,9 @@ function getAppearanceSettings() {
   items1[8] = obj11;
   return items1;
 }
-const FontScaleStore = fn(15524);
+const FontScaleStore = fn(15534);
 ({ DEFAULT_FONT_SCALE_STORE_STATE: closure_7, useFontScaleStore: closure_8 } = FontScaleStore);
-const MobileUserSettings = fn(8238).MobileUserSettings;
+const MobileUserSettings = fn(8270).MobileUserSettings;
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsx = fn(21).jsx;
 let ReactCompilerGating = fn(558);
@@ -122,9 +122,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const obj2 = { headerRight: null };
       const intl = tmp(1119).intl;
-      obj2.headerRight = tmp(8112).getRenderHeaderTextButton(intl.string(tmp(1119).t["R3BPH+"]), () => nativeStackNavigation(dependencyMap[14]).setCustomFontScale(closure_1_0.fontScale, closure_1_0.isClassicChatFontScaleEnabled));
+      obj2.headerRight = tmp(8144).getRenderHeaderTextButton(intl.string(tmp(1119).t["R3BPH+"]), () => nativeStackNavigation(dependencyMap[14]).setCustomFontScale(closure_1_0.fontScale, closure_1_0.isClassicChatFontScaleEnabled));
       nativeStackNavigation.setOptions(obj2);
-      const tmpResult = tmp(8112);
+      const tmpResult = tmp(8144);
     }
   };
   const items1 = [nativeStackNavigation, , , , ];
@@ -153,9 +153,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const obj2 = { headerRight: null };
       const intl = tmp(1119).intl;
-      obj2.headerRight = tmp(8112).getRenderHeaderTextButton(intl.string(tmp(1119).t["R3BPH+"]), () => nativeStackNavigation(dependencyMap[14]).setCustomFontScale(closure_1_0.fontScale, closure_1_0.isClassicChatFontScaleEnabled));
+      obj2.headerRight = tmp(8144).getRenderHeaderTextButton(intl.string(tmp(1119).t["R3BPH+"]), () => nativeStackNavigation(dependencyMap[14]).setCustomFontScale(closure_1_0.fontScale, closure_1_0.isClassicChatFontScaleEnabled));
       nativeStackNavigation.setOptions(obj2);
-      const tmpResult = tmp(8112);
+      const tmpResult = tmp(8144);
     }
   }, items);
   const effect1 = noop.useEffect(() => () => {
@@ -209,10 +209,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   closure_12();
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getAppearanceSettings() };
-    const list = tmp(11594).createList(obj2);
+    const list = tmp(11630).createList(obj2);
     cResult[3] = list;
     let tmp13 = list;
-    const tmpResult2 = tmp(11594);
+    const tmpResult2 = tmp(11630);
   } else {
     tmp13 = cResult[3];
   }

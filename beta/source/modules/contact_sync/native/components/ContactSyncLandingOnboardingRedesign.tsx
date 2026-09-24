@@ -1,14 +1,14 @@
-// Module ID: 12839
-// Function ID: 12840
+// Module ID: 12875
+// Function ID: 12876
 // Name: ContactSyncLandingOnboardingRedesign
-// Dependencies: [5, 19, 17, 4967, 21, 4758, 580, 5897, 558, 568, 5357, 12840, 1119, 4754, 5188, 12841, 12833, 2]
+// Dependencies: [5, 19, 17, 4999, 21, 4790, 580, 5929, 558, 568, 5389, 12876, 1119, 4786, 5220, 12877, 12869, 2]
 
-// Module 12839 (ContactSyncLandingOnboardingRedesign)
+// Module 12875 (ContactSyncLandingOnboardingRedesign)
 import nativeDefault from "native" /* 580 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 5357 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12833 */;
-import _modDef12840 from "module_12840" /* 12840 */;
-import ContactSyncErrorDefault from "ContactSyncError" /* 12841 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 5389 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12869 */;
+import _modDef12876 from "module_12876" /* 12876 */;
+import ContactSyncErrorDefault from "ContactSyncError" /* 12877 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,12 +17,12 @@ const require = globalThis.__r;
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
-const NativePermissionTypes = fn(4967).NativePermissionTypes;
+const NativePermissionTypes = fn(4999).NativePermissionTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { content: null, headerImage: null, title: null, subtitle: null, buttonContainer: null, trailing: null };
-let obj3 = { flex: 1, justifyContent: "center", alignItems: "center", textAlign: "center", marginTop: -nativeDefault.space.PX_32 - fn(5897).NAV_BAR_HEIGHT };
+let obj3 = { flex: 1, justifyContent: "center", alignItems: "center", textAlign: "center", marginTop: -nativeDefault.space.PX_32 - fn(5929).NAV_BAR_HEIGHT };
 obj2.content = obj3;
 let size = { height: 135, width: 216, marginBottom: nativeDefault.space.PX_24 };
 obj2.headerImage = size;
@@ -114,7 +114,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
     tmp5 = cResult[1];
   }
   if (cResult[2] !== tmp4.headerImage) {
-    const obj2 = { resizeMode: "contain", style: tmp4.headerImage, source: _modDef12840 };
+    const obj2 = { resizeMode: "contain", style: tmp4.headerImage, source: _modDef12876 };
     const tmp11 = closure_8(closure_6, obj2);
     cResult[2] = tmp4.headerImage;
     cResult[3] = tmp11;
@@ -132,7 +132,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   }
   if (cResult[5] !== tmp4.title) {
     let obj3 = { style: tmp4.title, variant: "heading-xl/bold", children: tmp12 };
-    const tmp16 = closure_8(tmp(4754).Text, obj3);
+    const tmp16 = closure_8(tmp(4786).Text, obj3);
     cResult[5] = tmp4.title;
     cResult[6] = tmp16;
     let tmp14 = tmp16;
@@ -149,7 +149,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   }
   if (cResult[8] !== tmp4.subtitle) {
     let obj4 = { style: tmp4.subtitle, variant: "text-sm/medium", children: tmp17 };
-    const tmp21 = closure_8(tmp(4754).Text, obj4);
+    const tmp21 = closure_8(tmp(4786).Text, obj4);
     cResult[8] = tmp4.subtitle;
     cResult[9] = tmp21;
     let tmp19 = tmp21;
@@ -314,23 +314,23 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
       }
     }
   }), items);
-  obj3.source = _modDef12840;
+  obj3.source = _modDef12876;
   const items1 = [closure_8(closure_6, obj3), , , , ];
   let obj4 = { style: tmp.title, variant: "heading-xl/bold", children: null };
   const intl = onNext(1119).intl;
   obj4.children = intl.string(onNext(1119).t["/G+nci"]);
-  items1[1] = closure_8(onNext(4754).Text, obj4);
+  items1[1] = closure_8(onNext(4786).Text, obj4);
   let obj5 = { style: tmp.subtitle, variant: "text-sm/medium", children: null };
   const intl2 = onNext(1119).intl;
   obj5.children = intl2.string(onNext(1119).t.G8zcHt);
-  items1[2] = closure_8(onNext(4754).Text, obj5);
+  items1[2] = closure_8(onNext(4786).Text, obj5);
   const obj6 = { style: tmp.buttonContainer, children: null };
   const obj7 = { variant: "primary", size: "lg", text: null, onPress: null, loading: null };
   const intl3 = onNext(1119).intl;
   obj7.text = intl3.string(onNext(1119).t.LhlgY9);
   obj7.onPress = callback;
   obj7.loading = loading;
-  obj6.children = closure_8(onNext(5188).Button, obj7);
+  obj6.children = closure_8(onNext(5220).Button, obj7);
   items1[3] = closure_8(closure_5, obj6);
   items1[4] = closure_8(ContactSyncErrorDefault, { error });
   obj2.children = items1;

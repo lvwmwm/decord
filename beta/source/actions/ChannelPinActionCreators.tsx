@@ -1,15 +1,15 @@
-// Module ID: 11797
-// Function ID: 11798
+// Module ID: 11833
+// Function ID: 11834
 // Name: ChannelPinActionCreators
-// Dependencies: [5, 11798, 1078, 8012, 1275, 4659, 1119, 5110, 577, 2]
+// Dependencies: [5, 11834, 1078, 8044, 1275, 4691, 1119, 5142, 577, 2]
 
-// Module 11797 (ChannelPinActionCreators)
+// Module 11833 (ChannelPinActionCreators)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelPinsStore from "ChannelPinsStore" /* 11798 */;
+import ChannelPinsStore from "ChannelPinsStore" /* 11834 */;
 
 const require = fn;
-const FetchState = fn(11798).FetchState;
+const FetchState = fn(11834).FetchState;
 const Constants = fn(1078);
 ({ AbortCodes: metroRequire, Endpoints: closure_7, MAX_PINS_PER_CHANNEL: closure_8 } = Constants);
 let obj = {
@@ -46,7 +46,7 @@ let obj = {
               ({ id: closure_128_0, name: closure_128_1 } = tmp3);
               dependencyMap = 1;
               c3 = 1;
-              const obj5 = { value: tmp2(8012).unarchiveThreadIfNecessary(tmp3.id), done: false };
+              const obj5 = { value: tmp2(8044).unarchiveThreadIfNecessary(tmp3.id), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -60,7 +60,7 @@ let obj = {
             const HTTP = tmp3(1275).HTTP;
             const obj6 = { url: closure_1_7.PIN(closure_128_0, closure_129_1), rejectWithError: true };
             HTTP.put(obj6).catch((error) => {
-              const aPIError = new _private(4659).APIError(error);
+              const aPIError = new _private(4691).APIError(error);
               const code = aPIError.code;
               const intl = _private(1119).intl;
               const intl2 = _private(1119).intl;
@@ -122,7 +122,7 @@ let obj = {
               const obj2 = { title: stringResult3, body: stringResult1, confirmText: null };
               const intl17 = tmp(1119).intl;
               obj2.confirmText = intl17.string(_private(1119).t.BddRzS);
-              channelName(5110).show(obj2);
+              channelName(5142).show(obj2);
             });
             c3 = 3;
             return { value: "IconComponent", done: null };
@@ -164,7 +164,7 @@ let obj = {
               channel = tmp4;
               dependencyMap = 1;
               c3 = 1;
-              const obj5 = { value: id(8012).unarchiveThreadIfNecessary(channel.id), done: false };
+              const obj5 = { value: id(8044).unarchiveThreadIfNecessary(channel.id), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -189,7 +189,7 @@ let obj = {
               obj2.cancelText = intl4.string(closure_0(1119).t["ETE/oC"]);
               unpinMessage = unpinMessage.unpinMessage;
               obj2.onConfirm = unpinMessage.bind(unpinMessage, closure_1_0, closure_1_1);
-              return closure_1(5110).show(obj2);
+              return closure_1(5142).show(obj2);
             });
             c3 = 3;
             return { value: "IconComponent", done: null };

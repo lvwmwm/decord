@@ -1,9 +1,9 @@
-// Module ID: 8023
-// Function ID: 8024
+// Module ID: 8055
+// Function ID: 8056
 // Name: ThreadSummaryStore
 // Dependencies: [504, 577, 2]
 
-// Module 8023 (ThreadSummaryStore)
+// Module 8055 (ThreadSummaryStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 

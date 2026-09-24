@@ -1,28 +1,28 @@
-// Module ID: 8700
-// Function ID: 8701
+// Module ID: 8732
+// Function ID: 8733
 // Name: AgeVerificationWebViewScreen
-// Dependencies: [32, 19, 17, 8688, 8691, 21, 3, 4758, 580, 558, 568, 4616, 4970, 8694, 4455, 1368, 8574, 5796, 2]
+// Dependencies: [32, 19, 17, 8720, 8723, 21, 3, 4790, 580, 558, 568, 4648, 5002, 8726, 4487, 1368, 8606, 5828, 2]
 
-// Module 8700 (AgeVerificationWebViewScreen)
+// Module 8732 (AgeVerificationWebViewScreen)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 580 */;
-import LinkingDefault from "Linking" /* 4455 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4616 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 4970 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8694 */;
+import LinkingDefault from "Linking" /* 4487 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4648 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5002 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8726 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_6 = fn(8688).AGE_VERIFICATION_MODAL_KEY;
-const AgeVerificationIncodeWebViewConstants = fn(8691);
+let closure_6 = fn(8720).AGE_VERIFICATION_MODAL_KEY;
+const AgeVerificationIncodeWebViewConstants = fn(8723);
 ({ AgeVerificationIncodeResultStatus: closure_7, buildIncodeFallbackSessionInjection: closure_8, parseIncodeWebViewMessage: closure_9 } = AgeVerificationIncodeWebViewConstants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 let closure_12 = new LoggerDefault("AgeVerificationWebViewScreen");
 let c13 = 15000;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: null, loadingOverlay: null, webView: null };
 const tmp4 = new LoggerDefault("AgeVerificationWebViewScreen");
 obj2.container = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };

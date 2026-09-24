@@ -1,14 +1,14 @@
-// Module ID: 14462
-// Function ID: 14463
+// Module ID: 14500
+// Function ID: 14501
 // Name: Badge/Badge
-// Dependencies: [19, 17, 2113, 1078, 1183, 21, 4758, 580, 1368, 558, 568, 4610, 504, 4754, 1885, 8895, 2]
+// Dependencies: [19, 17, 2113, 1078, 1183, 21, 4790, 580, 1368, 558, 568, 4642, 504, 4786, 1885, 8927, 2]
 
-// Module 14462 (Badge/Badge)
+// Module 14500 (Badge/Badge)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import shared from "shared" /* 4610 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8895 */;
+import shared from "shared" /* 4642 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8927 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
 
@@ -18,7 +18,7 @@ const BadgeConstants = fn(1183);
 ({ BADGE_MASK_SIZE: metroRequire, BADGE_MASK_UNREAD_SIZE: closure_7, BADGE_PADDING, BADGE_SIZE } = BadgeConstants);
 const BADGE_SIZE_UNREAD = BadgeConstants.BADGE_SIZE_UNREAD;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { badgeMask: { position: "absolute", bottom: -BADGE_PADDING, right: -BADGE_PADDING, padding: BADGE_PADDING, zIndex: 1 }, badge: { paddingLeft: BADGE_PADDING, paddingRight: BADGE_PADDING, borderRadius: nativeDefault.space.PX_8, justifyContent: "center", alignItems: "center", overflow: "hidden" }, badgeText: null, experimentalBadgeText: null, noCount: null, unread: null, mention: null, lowImportanceMention: null, eventsMentionBadge: null };
 let obj4 = { minWidth: BADGE_SIZE - 2 * BADGE_PADDING, color: nativeDefault.colors.WHITE, fontSize: 12, lineHeight: null, fontFamily: null, textAlign: "center", textAlignVertical: null };
 let PlatformUtils = fn(1368);
@@ -187,7 +187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 obj5.style = items2;
                 const _Math2 = Math;
                 obj5.children = tmp(1885).humanizeValue(Math.min(value, num), stateFromStores);
-                tmp20Result = tmp20(tmp(4754).Text, obj5);
+                tmp20Result = tmp20(tmp(4786).Text, obj5);
                 const tmpResult5 = tmp(1885);
               } else {
                 const obj6 = { style: null, numberOfLines: 1, allowFontScaling: false, children: null };

@@ -1,14 +1,14 @@
-// Module ID: 9350
-// Function ID: 9351
+// Module ID: 9382
+// Function ID: 9383
 // Name: TwoWayLinkStepHeader
-// Dependencies: [19, 21, 558, 568, 9349, 7222, 1119, 4754, 2]
+// Dependencies: [19, 21, 558, 568, 9381, 7254, 1119, 4786, 2]
 
-// Module 9350 (TwoWayLinkStepHeader)
+// Module 9382 (TwoWayLinkStepHeader)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7222 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9349 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7254 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9381 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -39,7 +39,7 @@ export const TwoWayLinkStepHeader = ReactCompilerGating.isReactCompilerEnabled()
         }
       }
       const obj4 = { variant: tmp6, color: "text-default", style: tmp7, children: tmp8 };
-      const tmp12 = jsx(tmp(4754).Text, { variant: tmp6, color: "text-default", style: tmp7, children: tmp8 });
+      const tmp12 = jsx(tmp(4786).Text, { variant: tmp6, color: "text-default", style: tmp7, children: tmp8 });
       cResult[6] = typeConsolidationEyebrow.variant;
       cResult[7] = tmp7;
       cResult[8] = tmp8;

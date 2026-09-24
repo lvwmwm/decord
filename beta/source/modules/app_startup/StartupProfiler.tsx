@@ -1,9 +1,9 @@
-// Module ID: 12087
-// Function ID: 12088
+// Module ID: 12123
+// Function ID: 12124
 // Name: StartupProfiler
 // Dependencies: [19, 21, 558, 568, 10, 2]
 
-// Module 12087 (StartupProfiler)
+// Module 12123 (StartupProfiler)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import noop from "module_19" /* 19 */;
 

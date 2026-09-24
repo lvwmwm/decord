@@ -1,13 +1,13 @@
-// Module ID: 6192
-// Function ID: 6193
+// Module ID: 6224
+// Function ID: 6225
 // Name: EmojiSparkleEyesExample
-// Dependencies: [21, 558, 568, 6193, 5802, 2]
+// Dependencies: [21, 558, 568, 6225, 5834, 2]
 
-// Module 6192 (EmojiSparkleEyesExample)
+// Module 6224 (EmojiSparkleEyesExample)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6193 from "module_6193" /* 6193 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6225 from "module_6225" /* 6225 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const EmojiSparkleEyesExample = ReactCompilerGating.isReactCompilerEnable
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6193 };
+    const obj2 = { uri: _modDef6225 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const EmojiSparkleEyesExample = ReactCompilerGating.isReactCompilerEnable
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6193 };
+  const obj2 = { uri: _modDef6225 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

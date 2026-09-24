@@ -1,22 +1,22 @@
-// Module ID: 8933
-// Function ID: 8934
+// Module ID: 8965
+// Function ID: 8966
 // Name: InAppReportsWidgetPreviewElement
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 7222, 8515, 7871, 8934, 7864, 8943, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 7254, 8547, 7903, 8966, 7896, 8975, 1119, 4786, 2]
 
-// Module 8933 (InAppReportsWidgetPreviewElement)
+// Module 8965 (InAppReportsWidgetPreviewElement)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7222 */;
-import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7871 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8515 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7254 */;
+import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7903 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8547 */;
 import noop from "module_19" /* 19 */;
 
-const UserProfilePersonalWidgetCardDefault = tmp5(8934);
+const UserProfilePersonalWidgetCardDefault = tmp5(8966);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, title: { lineHeight: 16, marginBottom: 8 }, card: { backgroundColor: nativeDefault.colors.USER_PROFILE_CONTAINER_BACKGROUND } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -73,7 +73,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     }
                   }
                   const obj4 = { style: tmp13, accessibilityRole: "header", variant: typeConsolidationEyebrow.variant, children: cResult[9] };
-                  const tmp20 = React4(tmp(4754).Text, obj4);
+                  const tmp20 = React4(tmp(4786).Text, obj4);
                   cResult[10] = typeConsolidationEyebrow.variant;
                   cResult[11] = tmp13;
                   cResult[12] = cResult[9];
@@ -110,10 +110,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj6 = { userId, widget, disableInteraction: true, cardStyle: null };
         const items3 = [tmp6.card, container.card];
         obj6.cardStyle = items3;
-        tmp8 = React4(tmp(8943).WidgetSection, obj6);
+        tmp8 = React4(tmp(8975).WidgetSection, obj6);
       }
     }
-    tmpResult = tmp(7864);
+    tmpResult = tmp(7896);
   }
   cResult[0] = tmp6;
   cResult[1] = container;
@@ -139,16 +139,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj3 = { userId, widget, disableInteraction: true, cardStyle: null };
         const items1 = [tmp5.card, tmp.card];
         obj3.cardStyle = items1;
-        tmp6 = React4(tmp2(8943).WidgetSection, obj3);
+        tmp6 = React4(tmp2(8975).WidgetSection, obj3);
       }
     }
-    tmp2Result = tmp2(7864);
+    tmp2Result = tmp2(7896);
   }
   if (null === tmp6) {
     return null;
   } else {
     const obj4 = { style: tmp.container, children: null };
-    let Text = tmp2(4754).Text;
+    let Text = tmp2(4786).Text;
     if (null != typeConsolidationEyebrow.style) {
       const items2 = [tmp.title, typeConsolidationEyebrow.style];
       let title = items2;

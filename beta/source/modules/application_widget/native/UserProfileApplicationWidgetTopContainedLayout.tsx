@@ -1,13 +1,13 @@
-// Module ID: 9293
-// Function ID: 9294
+// Module ID: 9325
+// Function ID: 9326
 // Name: UserProfileApplicationWidgetTopContainedLayout
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 9202, 9289, 9290, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 9234, 9321, 9322, 2]
 
-// Module 9293 (UserProfileApplicationWidgetTopContainedLayout)
+// Module 9325 (UserProfileApplicationWidgetTopContainedLayout)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9202 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 9289 */;
+import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9234 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 9321 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: c2, View: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { contentRow: { flexDirection: "row", gap: nativeDefault.space.PX_12, alignItems: "center" }, text: null, imageContainer: null, image: null, imageSkeleton: null };
 let obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_12, alignItems: "center" };
 obj2.text = { flex: 1, gap: nativeDefault.space.PX_4 };
@@ -65,7 +65,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     }
                     if (cResult[19] !== tmp5) {
                       const obj2 = { field: tmp5, variant: "text-lg/medium", color: "text-default" };
-                      const tmp18 = React4(tmp(9289).FieldText, obj2);
+                      const tmp18 = React4(tmp(9321).FieldText, obj2);
                       cResult[19] = tmp5;
                       cResult[20] = tmp18;
                       let tmp16 = tmp18;
@@ -74,7 +74,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     }
                     if (cResult[21] !== tmp7) {
                       const obj3 = { field: tmp7, variant: "text-sm/normal", color: "text-muted" };
-                      const tmp21 = React4(tmp(9289).FieldText, obj3);
+                      const tmp21 = React4(tmp(9321).FieldText, obj3);
                       cResult[21] = tmp7;
                       cResult[22] = tmp21;
                       let tmp19 = tmp21;
@@ -83,7 +83,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     }
                     if (cResult[23] !== tmp9) {
                       const obj4 = { field: tmp9, variant: "text-sm/normal", color: "text-muted" };
-                      const tmp24 = React4(tmp(9289).FieldText, obj4);
+                      const tmp24 = React4(tmp(9321).FieldText, obj4);
                       cResult[23] = tmp9;
                       cResult[24] = tmp24;
                       let tmp22 = tmp24;
@@ -92,7 +92,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     }
                     if (cResult[25] !== tmp11) {
                       const obj5 = { field: tmp11, variant: "text-sm/normal", color: "text-muted" };
-                      const tmp27 = React4(tmp(9289).FieldText, obj5);
+                      const tmp27 = React4(tmp(9321).FieldText, obj5);
                       cResult[25] = tmp11;
                       cResult[26] = tmp27;
                       let tmp25 = tmp27;
@@ -154,7 +154,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                               let tmp34 = React4(React3, obj8);
                             } else {
                               const obj11 = { style: tmp4.imageSkeleton };
-                              tmp34 = React4(tmp(9290).ImageSkeleton, obj11);
+                              tmp34 = React4(tmp(9322).ImageSkeleton, obj11);
                             }
                             cResult[33] = imageSkeleton;
                             cResult[34] = tmp4.image;
@@ -177,7 +177,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     cResult[32] = tmp31;
                     tmp28 = tmp31;
                   }
-                  const items3 = [tmp(9202).ResolvedValueType.MEDIA];
+                  const items3 = [tmp(9234).ResolvedValueType.MEDIA];
                   const fieldValue = resolveFieldValue(image, items3);
                   cResult[16] = resolveFieldValue;
                   cResult[17] = image;
@@ -185,31 +185,31 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   imageSkeleton = fieldValue;
                 }
               }
-              const textComponentValues = tmp(9202).resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
+              const textComponentValues = tmp(9234).resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
               cResult[12] = numberFormat;
               cResult[13] = resolveFieldValue;
               cResult[14] = topConfig.components.subtitle_3;
               cResult[15] = textComponentValues;
               tmp11 = textComponentValues;
-              const tmpResult = tmp(9202);
+              const tmpResult = tmp(9234);
             }
           }
-          const textComponentValues1 = tmp(9202).resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
+          const textComponentValues1 = tmp(9234).resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
           cResult[8] = numberFormat;
           cResult[9] = resolveFieldValue;
           cResult[10] = topConfig.components.subtitle_2;
           cResult[11] = textComponentValues1;
           tmp9 = textComponentValues1;
-          const tmpResult4 = tmp(9202);
+          const tmpResult4 = tmp(9234);
         }
       }
-      const textComponentValues2 = tmp(9202).resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
+      const textComponentValues2 = tmp(9234).resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
       cResult[4] = numberFormat;
       cResult[5] = resolveFieldValue;
       cResult[6] = topConfig.components.subtitle_1;
       cResult[7] = textComponentValues2;
       tmp7 = textComponentValues2;
-      const tmpResult5 = tmp(9202);
+      const tmpResult5 = tmp(9234);
     }
   }
   const textComponentValues3 = resolvedValuesFromUserApplicationIdentityProfile.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
@@ -248,7 +248,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp12Result = tmp12(tmp11, obj7);
   } else {
     const obj10 = { style: tmp.imageSkeleton };
-    tmp12Result = tmp12(tmp2(9290).ImageSkeleton, obj10);
+    tmp12Result = tmp12(tmp2(9322).ImageSkeleton, obj10);
   }
   const obj11 = { children: null };
   items3[1] = tmp12Result;

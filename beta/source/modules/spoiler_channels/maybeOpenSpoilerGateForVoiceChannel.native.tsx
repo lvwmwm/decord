@@ -1,13 +1,13 @@
-// Module ID: 13228
-// Function ID: 13229
+// Module ID: 13264
+// Function ID: 13265
 // Name: maybeOpenSpoilerGateForVoiceChannel
-// Dependencies: [2045, 21, 7573, 5112, 13229, 2]
+// Dependencies: [2045, 21, 7605, 5144, 13265, 2]
 // Exports: maybeOpenSpoilerGateForVoiceChannel
 
-// Module 13228 (maybeOpenSpoilerGateForVoiceChannel)
-import useAlertStore from "useAlertStore" /* 5112 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 7573 */;
-import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 13229 */;
+// Module 13264 (maybeOpenSpoilerGateForVoiceChannel)
+import useAlertStore from "useAlertStore" /* 5144 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 7605 */;
+import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 13265 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 const VoicePanelSpoilerAlertDefault = VoicePanelSpoilerAlert;

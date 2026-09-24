@@ -1,18 +1,18 @@
-// Module ID: 8114
-// Function ID: 8115
+// Module ID: 8146
+// Function ID: 8147
 // Name: PressableNavigatorBackIcon
-// Dependencies: [109, 19, 17, 2045, 7877, 2099, 21, 4758, 1181, 580, 558, 568, 504, 4462, 4577, 1119, 8115, 8116, 8118, 5341, 2]
+// Dependencies: [109, 19, 17, 2045, 7909, 2099, 21, 4790, 1181, 580, 558, 568, 504, 4494, 4609, 1119, 8147, 8148, 8150, 5373, 2]
 
-// Module 8114 (PressableNavigatorBackIcon)
+// Module 8146 (PressableNavigatorBackIcon)
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import _modDef8115 from "module_8115" /* 8115 */;
-import MaskedBadgeDefault from "MaskedBadge" /* 8116 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 8118 */;
+import _modDef8147 from "module_8147" /* 8147 */;
+import MaskedBadgeDefault from "MaskedBadge" /* 8148 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 8150 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7877 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7909 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 const require = globalThis.__r;
@@ -23,7 +23,7 @@ get_ActivityIndicator = fn(17);
 ({ View: metroRequire, Image: closure_7 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_13 = createStyles.createStyles(() => {
   const obj = { maskWrapper: null, maskStroke: null, actionButtonPressable: null, actionButtonIcon: null };
   const rect = { position: "absolute", minWidth: native.BADGE_SIZE, height: native.BADGE_SIZE, top: 10, left: 8, flexShrink: 0, flexGrow: 1, zIndex: 100 };
@@ -110,7 +110,7 @@ export const PressableNavigatorBackIcon = noop.forwardRef(ReactCompilerGating.is
   let backgroundColor = require("useToken").useToken(tmp4);
   const tmpResult3 = require("useToken");
   if (backgroundColor == null) {
-    backgroundColor = tmpResult4.useGradientValue(tmp(4577).GradientPercentage.START);
+    backgroundColor = tmpResult4.useGradientValue(tmp(4609).GradientPercentage.START);
   }
   if (backgroundColor == null) {
     backgroundColor = tmp11.maskStroke.backgroundColor;
@@ -132,7 +132,7 @@ export const PressableNavigatorBackIcon = noop.forwardRef(ReactCompilerGating.is
       cResult[13] = formatToPlainStringResult;
     } else {
       if (cResult[14] !== tmp11.actionButtonIcon.tintColor) {
-        const obj5 = { source: _modDef8115, style: null };
+        const obj5 = { source: _modDef8147, style: null };
         const obj6 = { tintColor: tmp11.actionButtonIcon.tintColor };
         obj5.style = obj6;
         const tmp30 = closure_11(closure_7, obj5);
@@ -174,7 +174,7 @@ export const PressableNavigatorBackIcon = noop.forwardRef(ReactCompilerGating.is
               obj8.onPress = tmp22;
               obj8.style = tmp11.actionButtonPressable;
               obj8.children = tmp36;
-              obj7.children = closure_11(tmp(5341).PressableOpacity, obj8);
+              obj7.children = closure_11(tmp(5373).PressableOpacity, obj8);
               const tmp48 = closure_11(PressableNavigatorButtonWrapperDefault, obj7);
               cResult[24] = tmp22;
               cResult[25] = tmp7;

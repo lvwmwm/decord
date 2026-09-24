@@ -1,13 +1,13 @@
-// Module ID: 15876
-// Function ID: 15877
+// Module ID: 15886
+// Function ID: 15887
 // Name: PawPrintIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 15877, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 15887, 4493, 2]
 
-// Module 15876 (PawPrintIcon)
+// Module 15886 (PawPrintIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod15877 from "module_15877" /* 15877 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod15887 from "module_15887" /* 15887 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const PawPrintIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(15877);
+    const tmpResult = tmp(15887);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const PawPrintIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15877, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15887, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

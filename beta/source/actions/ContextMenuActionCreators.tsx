@@ -1,10 +1,10 @@
-// Module ID: 5772
-// Function ID: 5773
+// Module ID: 5804
+// Function ID: 5805
 // Name: ContextMenuActionCreators
-// Dependencies: [1078, 577, 5773, 1368, 5776, 2]
+// Dependencies: [1078, 577, 5805, 1368, 5808, 2]
 // Exports: closeContextMenu, openContextMenuLazy
 
-// Module 5772 (ContextMenuActionCreators)
+// Module 5804 (ContextMenuActionCreators)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
@@ -103,7 +103,7 @@ function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) 
     const _DOMRect = DOMRect;
     const dOMRect = new DOMRect(tmp3, sum1, 0, 0);
     contextMenu.rect = dOMRect;
-    let APP = contextMenu(5773).getCurrentlyInteractingAppContext();
+    let APP = contextMenu(5805).getCurrentlyInteractingAppContext();
     if (APP == null) {
       APP = AppContext.APP;
     }
@@ -121,18 +121,18 @@ function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) 
     if (enableSpellCheck) {
       if (tmp16Result.isDesktop()) {
         if (nativeEvent.isTrusted) {
-          importDefault = tmp16(5776).addResultListener(() => {
+          importDefault = tmp16(5808).addResultListener(() => {
             closure_1();
             contextMenu = DispatcherDefault;
             contextMenu.dispatch({ type: "CONTEXT_MENU_OPEN", contextMenu });
           });
-          const tmp16Result2 = tmp16(5776);
+          const tmp16Result2 = tmp16(5808);
         }
       }
       tmp16Result = tmp16(1368);
     }
     stopPropagation.preventDefault();
-    const obj3 = contextMenu(5773);
+    const obj3 = contextMenu(5805);
     const obj4 = { type: "CONTEXT_MENU_OPEN", contextMenu };
     DispatcherDefault.dispatch(obj4);
   } else {

@@ -1,12 +1,12 @@
-// Module ID: 9627
-// Function ID: 9628
+// Module ID: 9659
+// Function ID: 9660
 // Name: PresenceActivityFiltering
-// Dependencies: [4985, 1982, 2]
+// Dependencies: [5017, 1982, 2]
 // Exports: doesGameHaveRichPresence
 
-// Module 9627 (PresenceActivityFiltering)
+// Module 9659 (PresenceActivityFiltering)
 import Server from "Server" /* 1982 */;
-import ApplicationStore from "ApplicationStore" /* 4985 */;
+import ApplicationStore from "ApplicationStore" /* 5017 */;
 
 require = fn;
 const size = fn(2);

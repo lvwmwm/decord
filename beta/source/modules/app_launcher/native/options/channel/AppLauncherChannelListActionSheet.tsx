@@ -1,18 +1,18 @@
-// Module ID: 12333
-// Function ID: 12334
+// Module ID: 12369
+// Function ID: 12370
 // Name: AppLauncherChannelListActionSheet
-// Dependencies: [32, 19, 2067, 21, 4758, 580, 558, 568, 5300, 5241, 12322, 5661, 4725, 12305, 12307, 4911, 4754, 5822, 2]
+// Dependencies: [32, 19, 2067, 21, 4790, 580, 558, 568, 5332, 5273, 12358, 5693, 4757, 12341, 12343, 4943, 4786, 5854, 2]
 
-// Module 12333 (AppLauncherChannelListActionSheet)
+// Module 12369 (AppLauncherChannelListActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useChannelNameDefault from "useChannelName" /* 4911 */;
-import TextIcon3 from "TextIcon" /* 5300 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5661 */;
-import TableRow from "TableRow" /* 5822 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12322 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useChannelNameDefault from "useChannelName" /* 4943 */;
+import TextIcon3 from "TextIcon" /* 5332 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5693 */;
+import TableRow from "TableRow" /* 5854 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12358 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -23,7 +23,7 @@ require = fn;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 let AppLauncherChannelListActionSheet = "AppLauncherChannelListActionSheet";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { channelIconWrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE } };
 let closure_9 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -39,7 +39,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = wrapperSize;
   }
   const tmp4 = closure_9();
-  const TextIcon = tmp(5300).TextIcon;
+  const TextIcon = tmp(5332).TextIcon;
   if (null == channel) {
     if (cResult[2] === TextIcon) {
       if (cResult[3] === str) {
@@ -69,13 +69,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = tmp11;
   } else if (cResult[0] !== channel) {
     guild = GuildStore.getGuild(channel.getGuildId());
-    let TextIcon2 = tmp(5241).getChannelIconComponentWithGuild(channel, guild);
+    let TextIcon2 = tmp(5273).getChannelIconComponentWithGuild(channel, guild);
     if (TextIcon2 == null) {
-      TextIcon2 = tmp(5300).TextIcon;
+      TextIcon2 = tmp(5332).TextIcon;
     }
     cResult[0] = channel;
     cResult[1] = TextIcon2;
-    const tmpResult = tmp(5241);
+    const tmpResult = tmp(5273);
   }
 }) : ((wrapperSize) => {
   ({ channel, size } = wrapperSize);
@@ -89,12 +89,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let TextIcon = TextIcon3.TextIcon;
   if (null != channel) {
     guild = GuildStore.getGuild(channel.getGuildId());
-    let TextIcon2 = tmp2(5241).getChannelIconComponentWithGuild(channel, guild);
+    let TextIcon2 = tmp2(5273).getChannelIconComponentWithGuild(channel, guild);
     if (TextIcon2 == null) {
-      TextIcon2 = tmp2(5300).TextIcon;
+      TextIcon2 = tmp2(5332).TextIcon;
     }
     TextIcon = TextIcon2;
-    const tmp2Result = tmp2(5241);
+    const tmp2Result = tmp2(5273);
   }
   const obj = { icon: null, wrapperStyle: null, wrapperSize: null };
   const tmp = closure_9();
@@ -113,7 +113,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((totalCount) =>
   const tmp4 = useChannelNameDefault(channel);
   if (cResult[0] !== tmp4) {
     const obj2 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp4 };
-    const tmp7 = ref(tmp(4754).Text, obj2);
+    const tmp7 = ref(tmp(4786).Text, obj2);
     cResult[0] = tmp4;
     cResult[1] = tmp7;
     let tmp5 = tmp7;

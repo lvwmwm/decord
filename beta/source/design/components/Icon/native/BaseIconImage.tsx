@@ -1,17 +1,17 @@
-// Module ID: 4461
-// Function ID: 4462
+// Module ID: 4493
+// Function ID: 4494
 // Name: BaseIconImage
-// Dependencies: [19, 17, 21, 558, 568, 4462, 2]
+// Dependencies: [19, 17, 21, 558, 568, 4494, 2]
 
-// Module 4461 (BaseIconImage)
+// Module 4493 (BaseIconImage)
 import c from "c" /* 568 */;
-import useToken from "useToken" /* 4462 */;
+import useToken from "useToken" /* 4494 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Image = fn(17).Image;
 const jsx = fn(21).jsx;
-const dependencyMap = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "Array", height: "Set" }, refresh_sm: { width: 18, height: 18 } };
+const dependencyMap = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "state", height: "toCharArray$esjava$1" }, refresh_sm: { width: 18, height: 18 } };
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Icon/native/BaseIconImage.tsx");

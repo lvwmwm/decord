@@ -1,13 +1,13 @@
-// Module ID: 15551
-// Function ID: 15552
+// Module ID: 15561
+// Function ID: 15562
 // Name: SettingsAppearanceChannelRowItem
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 1181, 558, 568, 11216, 4754, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 1181, 558, 568, 11252, 4786, 2]
 
-// Module 15551 (SettingsAppearanceChannelRowItem)
+// Module 15561 (SettingsAppearanceChannelRowItem)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native2 from "native" /* 1181 */;
-import GroupDMAvatar from "GroupDMAvatar" /* 11216 */;
+import GroupDMAvatar from "GroupDMAvatar" /* 11252 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ const View = fn(17).View;
 const StatusTypes = fn(1078).StatusTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { channelItemContainer: { flexDirection: "row", gap: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.sm, paddingVertical: nativeDefault.space.PX_8, paddingRight: nativeDefault.space.PX_16, paddingLeft: nativeDefault.space.PX_8 }, channelItemLeft: { alignItems: "center", justifyContent: "center" }, channelItemUnreadIndicator: null, channelItemAvatar: null, channelItemContent: null, channelItemTop: null };
 let size = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, height: 8, width: 8, borderRadius: nativeDefault.radii.round, margin: nativeDefault.space.PX_8 };
 obj2.channelItemUnreadIndicator = size;
@@ -140,7 +140,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         tmp36 = null;
                       } else {
                         const obj5 = { animated: true, style: tmp5 ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "redesign/message-preview/medium", lineClamp: 1, children: preview };
-                        React4(tmp(4754).Text, obj5);
+                        React4(tmp(4786).Text, obj5);
                       }
                     }
                   }
@@ -155,14 +155,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   tmp32 = tmp35;
                 }
                 const obj7 = { animated: true, style: animatedStyles.textMuted, variant: "text-xs/medium", children: timestamp };
-                const tmp31 = React4(tmp(4754).Text, obj7);
+                const tmp31 = React4(tmp(4786).Text, obj7);
                 cResult[18] = animatedStyles.textMuted;
                 cResult[19] = timestamp;
                 cResult[20] = tmp31;
                 tmp29 = tmp31;
               }
               const obj8 = { animated: true, style: tmp25, variant: "redesign/channel-title/semibold", children: title };
-              const tmp28 = React4(tmp(4754).Text, obj8);
+              const tmp28 = React4(tmp(4786).Text, obj8);
               cResult[15] = tmp25;
               cResult[16] = title;
               cResult[17] = tmp28;
@@ -182,7 +182,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const items3 = [avatar1, avatar2];
         obj10.sources = items3;
         obj10.size = tmp(1181).AvatarSizes.LARGE_48;
-        let tmp18 = React4(tmp(11216).FacepileGroupDMAvatar, obj10);
+        let tmp18 = React4(tmp(11252).FacepileGroupDMAvatar, obj10);
       } else {
         const obj11 = { status, source: avatar1, cutout: obj6, size: tmp(1181).AvatarSizes.LARGE_48 };
         tmp18 = React4(tmp(1181).Avatar, obj11);
@@ -245,7 +245,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items1[1] = React4(View, obj3);
   obj6 = { style: tmp2.channelItemContent, children: null };
   const obj7 = { style: tmp2.channelItemTop, children: null };
-  const items3 = [React4(tmp6(4754).Text, { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "redesign/channel-title/semibold", children: title }), React4(tmp6(4754).Text, { animated: true, style: animatedStyles.textMuted, variant: "text-xs/medium", children: timestamp })];
+  const items3 = [React4(tmp6(4786).Text, { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "redesign/channel-title/semibold", children: title }), React4(tmp6(4786).Text, { animated: true, style: animatedStyles.textMuted, variant: "text-xs/medium", children: timestamp })];
   obj7.children = items3;
   const items4 = [hasOwnProperty(View, obj7), ];
   if (null == preview) {
@@ -258,7 +258,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     animatedStyles = { animated: true, style: null, variant: "redesign/message-preview/medium", lineClamp: 1, children: null };
     animatedStyles.style = flag ? animatedStyles.textNormal : animatedStyles.textMuted;
     animatedStyles.children = preview;
-    tmp5(tmp6(4754).Text, animatedStyles);
+    tmp5(tmp6(4786).Text, animatedStyles);
     const tmp12 = flag ? animatedStyles.textNormal : animatedStyles.textMuted;
   }
 });

@@ -1,25 +1,25 @@
-// Module ID: 11771
-// Function ID: 11772
+// Module ID: 11807
+// Function ID: 11808
 // Name: PublicGuildAnnouncementProfile
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 8298, 5802, 1181, 11772, 1119, 4754, 7397, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 8330, 5834, 1181, 11808, 1119, 4786, 7429, 2]
 
-// Module 11771 (PublicGuildAnnouncementProfile)
+// Module 11807 (PublicGuildAnnouncementProfile)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import PublicGuildsUtils from "PublicGuildsUtils" /* 8298 */;
-import _modDef11772 from "module_11772" /* 11772 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import PublicGuildsUtils from "PublicGuildsUtils" /* 8330 */;
+import _modDef11808 from "module_11808" /* 11808 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { content: { padding: 16 }, avatar: null, nameWrapper: null, headerText: null, description: null };
 let size = { borderRadius: nativeDefault.radii.lg, height: 80, width: 80, marginVertical: 16 };
 obj2.avatar = size;
@@ -36,10 +36,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_6();
   ({ content, avatar } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const publicSystemMessageAvatar = tmp(8298).getPublicSystemMessageAvatar();
+    const publicSystemMessageAvatar = tmp(8330).getPublicSystemMessageAvatar();
     cResult[0] = publicSystemMessageAvatar;
     let first = publicSystemMessageAvatar;
-    const tmpResult = tmp(8298);
+    const tmpResult = tmp(8330);
   } else {
     first = cResult[0];
   }
@@ -53,7 +53,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { source: _modDef11772, disableColor: true };
+    const obj3 = { source: _modDef11808, disableColor: true };
     const tmp14 = React4(tmp(1181).Icon, obj3);
     cResult[3] = tmp14;
     let tmp11 = tmp14;
@@ -70,7 +70,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[5] !== tmp4.headerText) {
     const obj4 = { style: tmp4.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp15 };
-    const tmp19 = React4(tmp(4754).Text, obj4);
+    const tmp19 = React4(tmp(4786).Text, obj4);
     cResult[5] = tmp4.headerText;
     cResult[6] = tmp19;
     let tmp17 = tmp19;
@@ -92,7 +92,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[11] !== tmp4.description) {
       const obj5 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: tmp22 };
-      const tmp26 = React4(tmp(4754).Text, obj5);
+      const tmp26 = React4(tmp(4786).Text, obj5);
       cResult[11] = tmp4.description;
       cResult[12] = tmp26;
       let tmp24 = tmp26;
@@ -110,7 +110,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[14] !== tmp4.description) {
       const obj6 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: tmp27 };
-      const tmp31 = React4(tmp(4754).Text, obj6);
+      const tmp31 = React4(tmp(4786).Text, obj6);
       cResult[14] = tmp4.description;
       cResult[15] = tmp31;
       let tmp29 = tmp31;
@@ -134,7 +134,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const items = [tmp7, tmp20, tmp24, tmp29];
     obj8.children = items;
     obj7.children = hasOwnProperty(View, obj8);
-    const tmp36 = React4(tmp(7397).BottomSheet, obj7);
+    const tmp36 = React4(tmp(7429).BottomSheet, obj7);
     cResult[16] = tmp4.content;
     cResult[17] = tmp24;
     cResult[18] = tmp29;
@@ -160,7 +160,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj3.source = PublicGuildsUtils.getPublicSystemMessageAvatar();
   const items = [React4(tmp2, obj3), , , ];
   const obj5 = { style: tmp.nameWrapper, children: null };
-  const items1 = [React4(native.Icon, { source: _modDef11772, disableColor: true }), ];
+  const items1 = [React4(native.Icon, { source: _modDef11808, disableColor: true }), ];
   const obj7 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;
   obj7.children = intl.string(util.t.xfAlNx);

@@ -1,13 +1,13 @@
-// Module ID: 6590
-// Function ID: 6591
+// Module ID: 6622
+// Function ID: 6623
 // Name: PotionBookGemSpotIllustration
-// Dependencies: [21, 558, 568, 6591, 5802, 2]
+// Dependencies: [21, 558, 568, 6623, 5834, 2]
 
-// Module 6590 (PotionBookGemSpotIllustration)
+// Module 6622 (PotionBookGemSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6591 from "module_6591" /* 6591 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6623 from "module_6623" /* 6623 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const PotionBookGemSpotIllustration = ReactCompilerGating.isReactCompiler
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6591 };
+    const obj2 = { uri: _modDef6623 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const PotionBookGemSpotIllustration = ReactCompilerGating.isReactCompiler
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6591 };
+  const obj2 = { uri: _modDef6623 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

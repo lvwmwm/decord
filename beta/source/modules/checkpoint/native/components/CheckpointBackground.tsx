@@ -1,17 +1,17 @@
-// Module ID: 15961
-// Function ID: 15962
+// Module ID: 15971
+// Function ID: 15972
 // Name: CheckpointBackground
-// Dependencies: [17, 4983, 1078, 21, 4758, 558, 568, 5198, 15962, 2]
+// Dependencies: [17, 5015, 1078, 21, 4790, 558, 568, 5230, 15972, 2]
 
-// Module 15961 (CheckpointBackground)
+// Module 15971 (CheckpointBackground)
 import _mod17 from "module_17" /* 17 */;
 import c from "c" /* 568 */;
 import Constants from "Constants" /* 1078 */;
-import CheckpointConstants from "CheckpointConstants" /* 4983 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import _modDef15962 from "module_15962" /* 15962 */;
+import CheckpointConstants from "CheckpointConstants" /* 5015 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import _modDef15972 from "module_15972" /* 15972 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { uri: _modDef15962 };
+    const obj4 = { uri: _modDef15972 };
     cResult[2] = obj4;
     let tmp10 = obj4;
   } else {
@@ -70,7 +70,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp = closure_9();
   const obj = { children: null };
   const items = [timestampProducer(LinearGradientDefault, { colors, start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.background }), ];
-  const obj3 = { source: { uri: _modDef15962 }, style: tmp.background, resizeMode: "cover" };
+  const obj3 = { source: { uri: _modDef15972 }, style: tmp.background, resizeMode: "cover" };
   items[1] = timestampProducer(Image, obj3);
   obj.children = items;
   return closure_1_8(React5, obj);

@@ -1,10 +1,10 @@
-// Module ID: 13457
-// Function ID: 13458
+// Module ID: 13493
+// Function ID: 13494
 // Name: useOpenNitroSubscribeActionSheet
-// Dependencies: [19, 1078, 1378, 558, 568, 7409, 7666, 2]
+// Dependencies: [19, 1078, 1378, 558, 568, 7441, 7698, 2]
 
-// Module 13457 (useOpenNitroSubscribeActionSheet)
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7666 */;
+// Module 13493 (useOpenNitroSubscribeActionSheet)
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7698 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -21,7 +21,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (undefined === arg0) {
     COLLECTIBLES_SHOP = constants2.COLLECTIBLES_SHOP;
   }
-  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)().analyticsLocations;
   if (cResult[0] === analyticsLocations) {
     if (cResult[1] === COLLECTIBLES_SHOP) {
       let tmp4 = cResult[2];
@@ -42,7 +42,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     COLLECTIBLES_SHOP = constants2.COLLECTIBLES_SHOP;
   }
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)().analyticsLocations;
   const items = [analyticsLocations, COLLECTIBLES_SHOP];
   return noop.useCallback(() => {
     const obj = { analyticsLocation: { page: constants.COLLECTIBLES_SHOP, section: COLLECTIBLES_SHOP }, analyticsLocations, premiumType: PremiumTypes.TIER_2 };

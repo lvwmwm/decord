@@ -1,14 +1,14 @@
-// Module ID: 17566
-// Function ID: 17567
+// Module ID: 17576
+// Function ID: 17577
 // Name: ActivitiesDebugOverlay
-// Dependencies: [19, 17, 21, 4758, 4608, 580, 558, 568, 9588, 1616, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 4640, 580, 558, 568, 9620, 1616, 4786, 2]
 
-// Module 17566 (ActivitiesDebugOverlay)
+// Module 17576 (ActivitiesDebugOverlay)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useThermalState from "useThermalState" /* 9588 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useThermalState from "useThermalState" /* 9620 */;
 import noop from "module_19" /* 19 */;
 
 const useThermalStateDefault = useThermalState;
@@ -18,10 +18,10 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsxs: closure_4, jsx: hasOwnProperty } = jsxProd);
 let c6 = 16;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: null, row: null };
 let rect = { position: "absolute", top: 0, left: 0, backgroundColor: null, paddingRight: 16, paddingBottom: 16 };
-const ColorUtils = fn(4608);
+const ColorUtils = fn(4640);
 rect.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.7);
 obj2.container = rect;
 obj2.row = { flexDirection: "row" };
@@ -39,14 +39,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (useThermalState.ThermalStates.UNHANDLED !== tmp6) {
     str = "text-feedback-positive";
     str2 = "nominal";
-    if (tmp(9588).ThermalStates.NOMINAL !== tmp6) {
+    if (tmp(9620).ThermalStates.NOMINAL !== tmp6) {
       str = "text-feedback-warning";
       str2 = "fair";
-      if (tmp(9588).ThermalStates.FAIR !== tmp6) {
+      if (tmp(9620).ThermalStates.FAIR !== tmp6) {
         str2 = "serious";
         str = "text-feedback-critical";
-        if (tmp(9588).ThermalStates.SERIOUS !== tmp6) {
-          if (tmp(9588).ThermalStates.CRITICAL === tmp6) {
+        if (tmp(9620).ThermalStates.SERIOUS !== tmp6) {
+          if (tmp(9620).ThermalStates.CRITICAL === tmp6) {
             str2 = "critical";
             str = "text-feedback-critical";
           }
@@ -68,7 +68,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const obj2 = { variant: "text-md/normal", color: "text-overlay-light", children: ["thermal state:", " "] };
-        const tmp14 = React4(tmp(4754).Text, obj2);
+        const tmp14 = React4(tmp(4786).Text, obj2);
         cResult[6] = tmp14;
         let tmp12 = tmp14;
       } else {
@@ -105,7 +105,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         tmp18 = tmp21;
       }
       const obj5 = { variant: "text-md/normal", color: str, children: str2 };
-      const tmp17 = hasOwnProperty(tmp(4754).Text, obj5);
+      const tmp17 = hasOwnProperty(tmp(4786).Text, obj5);
       cResult[7] = str2;
       cResult[8] = str;
       cResult[9] = tmp17;
@@ -130,14 +130,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (useThermalState.ThermalStates.UNHANDLED !== tmp4) {
     str = "text-feedback-positive";
     str2 = "nominal";
-    if (tmp5(9588).ThermalStates.NOMINAL !== tmp4) {
+    if (tmp5(9620).ThermalStates.NOMINAL !== tmp4) {
       str = "text-feedback-warning";
       str2 = "fair";
-      if (tmp5(9588).ThermalStates.FAIR !== tmp4) {
+      if (tmp5(9620).ThermalStates.FAIR !== tmp4) {
         str2 = "serious";
         str = "text-feedback-critical";
-        if (tmp5(9588).ThermalStates.SERIOUS !== tmp4) {
-          if (tmp5(9588).ThermalStates.CRITICAL === tmp4) {
+        if (tmp5(9620).ThermalStates.SERIOUS !== tmp4) {
+          if (tmp5(9620).ThermalStates.CRITICAL === tmp4) {
             str2 = "critical";
             str = "text-feedback-critical";
           }

@@ -1,22 +1,22 @@
-// Module ID: 17665
-// Function ID: 17666
+// Module ID: 17675
+// Function ID: 17676
 // Name: useLaunchPadState
-// Dependencies: [19, 11590, 17666, 558, 568, 4497, 12163, 10344, 10345, 2]
+// Dependencies: [19, 11626, 17676, 558, 568, 4529, 12199, 10383, 10384, 2]
 
-// Module 17665 (useLaunchPadState)
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import useSafeAreaInsetsSharedValue from "useSafeAreaInsetsSharedValue" /* 10344 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10345 */;
-import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 12163 */;
-import LaunchPadPullTabCache2 from "LaunchPadPullTabCache" /* 17666 */;
+// Module 17675 (useLaunchPadState)
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import useSafeAreaInsetsSharedValue from "useSafeAreaInsetsSharedValue" /* 10383 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10384 */;
+import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 12199 */;
+import LaunchPadPullTabCache2 from "LaunchPadPullTabCache" /* 17676 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const LaunchPadConstants = fn(11590);
+const LaunchPadConstants = fn(11626);
 ({ LAUNCH_PAD_PULL_TAB_MAX_POSITION: closure_4, LAUNCH_PAD_PULL_TAB_SCALE_OFFSET: hasOwnProperty } = LaunchPadConstants);
 let closure_6 = { active: false, initialLaunchPadPosition: 0, initialPullTabPosition: 0, initialTouchX: 0, initialTouchY: 0, positionOffsetX: 0, positionOffsetY: 0, startTime: -1, requiresPop: false, startShown: false };
 let __closure = { position: null, scale: 1, offset: 0, minimized: false };
-const LaunchPadPullTabCache = fn(17666);
+const LaunchPadPullTabCache = fn(17676);
 __closure.position = LaunchPadPullTabCache.getLaunchPadPullTabPositionCached();
 const __initData = { code: "function setLaunchPadShown_useLaunchPadStateNativeTsx1(shown){const{launchPadShown}=this.__closure;launchPadShown.set(shown);}" };
 const __initData2 = { code: "function setLaunchPadPosition_useLaunchPadStateNativeTsx2(value){const{launchPadSharedState}=this.__closure;launchPadSharedState.set(Math.max(Math.min(value,1),0));}" };

@@ -1,19 +1,19 @@
-// Module ID: 12700
-// Function ID: 12701
+// Module ID: 12736
+// Function ID: 12737
 // Name: useGuildPowerupOnActivate
-// Dependencies: [19, 2067, 4653, 4648, 558, 568, 12701, 504, 12702, 7409, 12703, 4652, 4725, 12680, 5653, 7647, 4961, 7656, 2]
+// Dependencies: [19, 2067, 4685, 4680, 558, 568, 12737, 504, 12738, 7441, 12739, 4684, 4757, 12716, 5685, 7679, 4993, 7688, 2]
 
-// Module 12700 (useGuildPowerupOnActivate)
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4652 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5653 */;
+// Module 12736 (useGuildPowerupOnActivate)
+import GuildBoostingUtils from "GuildBoostingUtils" /* 4684 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5685 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4653 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4685 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const GuildPowerupsConstants = fn(4648);
+const GuildPowerupsConstants = fn(4680);
 ({ BoostPurchaseIntent: metroRequire, GuildPowerupType: closure_7 } = GuildPowerupsConstants);
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -220,7 +220,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
               analyticsLocations,
               guildId: tmp.id,
               onBack() {
-                        return PERK(4961).popWithKey(diff(7656).PREMIUM_KEY);
+                        return PERK(4993).popWithKey(diff(7688).PREMIUM_KEY);
                       },
               onPaymentSuccess() {
                         const availableGuildBoostSlots = GuildBoostingUtils.getAvailableGuildBoostSlots(GuildBoostSlotStore.boostSlots);
@@ -240,7 +240,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
                         }
                       },
               onPaymentDismiss() {
-                        return PERK(4961).popWithKey(diff(7656).PREMIUM_KEY);
+                        return PERK(4993).popWithKey(diff(7688).PREMIUM_KEY);
                       }
             };
             const result = tmp17(tmp18[15]).launchGuildBoostFlowOrAlert(obj3);

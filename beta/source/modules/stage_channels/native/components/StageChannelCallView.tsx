@@ -1,24 +1,24 @@
-// Module ID: 10295
-// Function ID: 10296
+// Module ID: 10334
+// Function ID: 10335
 // Name: StageChannelCallView
-// Dependencies: [19, 21, 10179, 4758, 558, 568, 1616, 10296, 10297, 4497, 9646, 10298, 2]
+// Dependencies: [19, 21, 10218, 4790, 558, 568, 1616, 10335, 10336, 4529, 9678, 10337, 2]
 
-// Module 10295 (StageChannelCallView)
+// Module 10334 (StageChannelCallView)
 import c from "c" /* 568 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import StatusBarDefault from "StatusBar" /* 9646 */;
-import StageChannelAnimationUtils from "StageChannelAnimationUtils" /* 10296 */;
-import StageChannelCallListDefault from "StageChannelCallList" /* 10298 */;
+import StatusBarDefault from "StatusBar" /* 9678 */;
+import StageChannelAnimationUtils from "StageChannelAnimationUtils" /* 10335 */;
+import StageChannelCallListDefault from "StageChannelCallList" /* 10337 */;
 import noop from "module_19" /* 19 */;
 
-const FocusedControls = tmp4(10179);
+const FocusedControls = tmp4(10218);
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = jsxProd);
 function CONTROL_PADDING_PX(arg0) {
 
 }
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ container: { flex: 1, paddingHorizontal: 12 } });
 let ReactCompilerGating = fn(558);
 let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
@@ -28,7 +28,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const top = useSafeAreaInsetsDefault().top;
   if (cResult[0] !== top) {
     if (typeof CONTROL_PADDING_PX === "function") {
-      const sum = tmp(10179).FOCUSED_CONTROLS_HEADER_HEIGHT + top;
+      const sum = tmp(10218).FOCUSED_CONTROLS_HEADER_HEIGHT + top;
       cResult[0] = top;
       cResult[1] = sum;
       let tmp6 = sum;
@@ -51,13 +51,13 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     }
     const obj2 = { children: null };
     const obj3 = { style: tmp10, children };
-    obj2.children = React3(tmp5(4497).View, obj3);
-    const tmp14 = React3(tmp5(10297), obj2);
+    obj2.children = React3(tmp5(4529).View, obj3);
+    const tmp14 = React3(tmp5(10336), obj2);
     cResult[5] = children;
     cResult[6] = tmp10;
     cResult[7] = tmp14;
     tmp11 = tmp14;
-    const tmp5Result = tmp5(10297);
+    const tmp5Result = tmp5(10336);
   }
   const items = [tmp4.container, stageActionBarAnimation];
   cResult[2] = stageActionBarAnimation;
@@ -74,8 +74,8 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     const items = [tmp.container, tmp6Result];
     obj2.style = items;
     obj2.children = children;
-    obj.children = React3(tmp2(4497).View, obj2);
-    return React3(tmp2(10297), obj);
+    obj.children = React3(tmp2(4529).View, obj2);
+    return React3(tmp2(10336), obj);
   } else {
     throw new TypeError("Trying to call a non-function");
   }

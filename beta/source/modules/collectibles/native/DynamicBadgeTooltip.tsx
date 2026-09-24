@@ -1,13 +1,13 @@
-// Module ID: 13443
-// Function ID: 13444
+// Module ID: 13479
+// Function ID: 13480
 // Name: DynamicBadgeTooltip
-// Dependencies: [32, 19, 21, 558, 568, 1119, 10453, 5341, 2]
+// Dependencies: [32, 19, 21, 558, 568, 1119, 10492, 5373, 2]
 
-// Module 13443 (DynamicBadgeTooltip)
+// Module 13479 (DynamicBadgeTooltip)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Pressables from "Pressables" /* 5341 */;
-import useTooltip from "useTooltip" /* 10453 */;
+import Pressables from "Pressables" /* 5373 */;
+import useTooltip from "useTooltip" /* 10492 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -59,7 +59,7 @@ export const DynamicBadgeTooltip = ReactCompilerGating.isReactCompilerEnabled() 
         return;
       }
     }
-    const tooltip = tmp(10453).useTooltip(ref, obj4);
+    const tooltip = tmp(10492).useTooltip(ref, obj4);
     if (cResult[5] !== visible) {
       class E {
         constructor() {
@@ -146,12 +146,12 @@ export const DynamicBadgeTooltip = ReactCompilerGating.isReactCompilerEnabled() 
       return tmp16;
     }
     const obj3 = { ref, onPress: tmp14, hitSlop, accessibilityRole: "button", accessibilityLabel, accessibilityHint: first1, children };
-    const tmp19 = jsx(tmp(5341).PressableOpacity, { ref, onPress: tmp14, hitSlop, accessibilityRole: "button", accessibilityLabel, accessibilityHint: first1, children });
+    const tmp19 = jsx(tmp(5373).PressableOpacity, { ref, onPress: tmp14, hitSlop, accessibilityRole: "button", accessibilityLabel, accessibilityHint: first1, children });
     cResult[9] = accessibilityLabel;
     cResult[10] = children;
     cResult[11] = tmp19;
     tmp16 = tmp19;
-    const tmpResult = tmp(10453);
+    const tmpResult = tmp(10492);
   }
   obj4 = { position: str, label: first1, visible, onPress: tmp9 };
   cResult[2] = str;

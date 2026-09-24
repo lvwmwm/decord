@@ -1,17 +1,17 @@
-// Module ID: 7377
-// Function ID: 7378
+// Module ID: 7409
+// Function ID: 7410
 // Name: Emoji
-// Dependencies: [19, 17, 1186, 21, 558, 568, 1368, 4417, 1181, 5802, 4610, 7378, 7379, 2]
+// Dependencies: [19, 17, 1186, 21, 558, 568, 1368, 4449, 1181, 5834, 4642, 7410, 7411, 2]
 
-// Module 7377 (Emoji)
+// Module 7409 (Emoji)
 import c from "c" /* 568 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4417 */;
-import FastImageDefault from "FastImage" /* 5802 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4449 */;
+import FastImageDefault from "FastImage" /* 5834 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 
 const native = LegacyText(1181);
-const shared = LegacyText(4610);
+const shared = LegacyText(4642);
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
@@ -60,9 +60,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const tmp10 = FastImageDefault;
           const tmp8 = jsx;
           if (LegacyTextResult.isThemeDark(ThemeStore.theme)) {
-            let tmp9Result = tmp9(7378);
+            let tmp9Result = tmp9(7410);
           } else {
-            tmp9Result = tmp9(7379);
+            tmp9Result = tmp9(7411);
           }
           obj5.placeholder = tmp9Result;
           const obj6 = { uri: tmp2 };
@@ -113,16 +113,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj4 = { resizeMode: "contain", style: fastImageStyle, placeholder: null, source: null, onError: null };
         const tmp10 = FastImageDefault;
         if (tmpResult.isThemeDark(ThemeStore.theme)) {
-          let tmp9Result = tmp9(7378);
+          let tmp9Result = tmp9(7410);
         } else {
-          tmp9Result = tmp9(7379);
+          tmp9Result = tmp9(7411);
         }
         obj4.placeholder = tmp9Result;
         const obj5 = { uri: uRL };
         obj4.source = obj5;
         obj4.onError = onError;
         let tmp6Result = tmp6(tmp10, obj4);
-        tmpResult = tmp(4610);
+        tmpResult = tmp(4642);
       }
       obj3.children = tmp6Result;
       return tmp6(tmp7, obj3);

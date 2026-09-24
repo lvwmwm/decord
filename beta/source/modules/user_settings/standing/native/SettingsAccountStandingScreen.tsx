@@ -1,12 +1,12 @@
-// Module ID: 15031
-// Function ID: 15032
+// Module ID: 15040
+// Function ID: 15041
 // Name: SettingsAccountStandingScreen
-// Dependencies: [21, 558, 568, 15032, 2]
+// Dependencies: [21, 558, 568, 15041, 2]
 
-// Module 15031 (SettingsAccountStandingScreen)
+// Module 15040 (SettingsAccountStandingScreen)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import SafetyHubPageDefault from "SafetyHubPage" /* 15032 */;
+import SafetyHubPageDefault from "SafetyHubPage" /* 15041 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

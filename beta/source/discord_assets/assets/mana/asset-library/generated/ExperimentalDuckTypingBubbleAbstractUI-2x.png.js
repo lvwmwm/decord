@@ -1,8 +1,8 @@
-// Module ID: 6213
-// Function ID: 6214
+// Module ID: 6245
+// Function ID: 6246
 // Dependencies: [2]
 
-// Module 6213
+// Module 6245
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ExperimentalDuckTypingBubbleAbstractUI-2x.png.js");

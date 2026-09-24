@@ -1,9 +1,9 @@
-// Module ID: 12798
-// Function ID: 12799
+// Module ID: 12834
+// Function ID: 12835
 // Name: JoinRequestRejectionReasonActionSheet
-// Dependencies: [5, 32, 19, 21, 4758, 8444, 5760, 4583, 4458, 1119, 6851, 580, 4725, 7397, 7371, 7332, 5652, 5188, 2]
+// Dependencies: [5, 32, 19, 21, 4790, 8476, 5792, 4615, 4490, 1119, 6883, 580, 4757, 7429, 7403, 7364, 5684, 5220, 2]
 
-// Module 12798 (JoinRequestRejectionReasonActionSheet)
+// Module 12834 (JoinRequestRejectionReasonActionSheet)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -87,7 +87,7 @@ class JoinRequestRejectionReasonActionSheet {
               const intl = tmp4(tmp24[9]).intl;
               obj6.content = intl.string(tmp4(tmp24[9]).t["TQY/Rd"]);
               obj6.icon = function icon() {
-                return closure_1_6(closure_1_0(6851).CircleXIcon, { color: closure_1_1(580).colors.BACKGROUND_FEEDBACK_CRITICAL, secondaryColor: closure_1_1(580).colors.ICON_FEEDBACK_CRITICAL });
+                return closure_1_6(closure_1_0(6883).CircleXIcon, { color: closure_1_1(580).colors.BACKGROUND_FEEDBACK_CRITICAL, secondaryColor: closure_1_1(580).colors.ICON_FEEDBACK_CRITICAL });
               };
               tmp42(tmp24[8]).open(obj6);
               const obj5 = tmp42(tmp24[8]);
@@ -145,7 +145,7 @@ class JoinRequestRejectionReasonActionSheet {
 }
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ container: { padding: 20 }, buttonGroup: { marginTop: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/JoinRequestRejectionReasonActionSheet.tsx");

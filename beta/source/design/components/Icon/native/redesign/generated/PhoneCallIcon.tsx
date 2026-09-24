@@ -1,13 +1,13 @@
-// Module ID: 8129
-// Function ID: 8130
+// Module ID: 8161
+// Function ID: 8162
 // Name: PhoneCallIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 8130, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 8162, 4493, 2]
 
-// Module 8129 (PhoneCallIcon)
+// Module 8161 (PhoneCallIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod8130 from "module_8130" /* 8130 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod8162 from "module_8162" /* 8162 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const PhoneCallIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(8130);
+    const tmpResult = tmp(8162);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const PhoneCallIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8130, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8162, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

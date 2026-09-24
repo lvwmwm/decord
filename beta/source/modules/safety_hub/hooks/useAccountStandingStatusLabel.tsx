@@ -1,18 +1,18 @@
-// Module ID: 15028
-// Function ID: 15029
+// Module ID: 15037
+// Function ID: 15038
 // Name: useAccountStandingStatusLabel
-// Dependencies: [558, 568, 12013, 12041, 15029, 1119, 15030, 2]
+// Dependencies: [558, 568, 12049, 12077, 15038, 1119, 15039, 2]
 
-// Module 15028 (useAccountStandingStatusLabel)
+// Module 15037 (useAccountStandingStatusLabel)
 import c from "c" /* 568 */;
-import useSafetyHubAccountStanding from "useSafetyHubAccountStanding" /* 12013 */;
-import useSafetyHubInitialized from "useSafetyHubInitialized" /* 12041 */;
-import useSafetyHubFetchError from "useSafetyHubFetchError" /* 15029 */;
+import useSafetyHubAccountStanding from "useSafetyHubAccountStanding" /* 12049 */;
+import useSafetyHubInitialized from "useSafetyHubInitialized" /* 12077 */;
+import useSafetyHubFetchError from "useSafetyHubFetchError" /* 15038 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const util = tmp(1119);
-const SafetyHubAccountStandingLabels = tmp(15030);
+const SafetyHubAccountStandingLabels = tmp(15039);
 const result = size.fileFinishedImporting("modules/safety_hub/hooks/useAccountStandingStatusLabel.tsx");
 
 export const useAccountStandingStatusLabel = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -68,7 +68,7 @@ export const useAccountStandingStatusLabel = ReactCompilerGating.isReactCompiler
           return arg0;
         }
     };
-    let formatToPlainStringResult = intl.formatToPlainString(tmp(15030).ACCOUNT_STANDING_SHORT_STATUS[safetyHubAccountStanding.state], obj4);
+    let formatToPlainStringResult = intl.formatToPlainString(tmp(15039).ACCOUNT_STANDING_SHORT_STATUS[safetyHubAccountStanding.state], obj4);
   } else {
     if (null != safetyHubFetchError) {
       let ZTNur7 = tmp(1119).t.TDRvqs;

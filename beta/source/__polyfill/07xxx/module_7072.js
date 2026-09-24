@@ -1,163 +1,121 @@
 // Module ID: 7072
 // Function ID: 7073
-// Dependencies: [19, 21, 1641, 6867, 7070, 6864, 6874, 7046, 4632]
-// Exports: default
+// Dependencies: [1641, 6899, 6912]
+// Exports: useAnimatedSnapPoints
 
 // Module 7072
-import value2 from "value2" /* 6864 */;
-import noop_mod from "module_19" /* 19 */;
-import jsxProd from "jsxProd" /* 21 */;
+import DEFAULT_HANDLE_HEIGHT from "DEFAULT_HANDLE_HEIGHT" /* 6899 */;
 
-let noop = noop_mod;
-({ useCallback: c2, useMemo: c3, useRef: closure_4 } = noop);
-let noop = noop_mod;
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
+const require = globalThis.__r;
 
-export default function _default(children) {
-  let sharedValue;
-  let sharedValue1;
-  closure_3 = undefined;
-  let mountSheet;
-  sharedValue = sharedValue(sharedValue1[2]).useSharedValue(sharedValue(sharedValue1[3]).INITIAL_CONTAINER_HEIGHT);
-  let obj = sharedValue(sharedValue1[2]);
-  sharedValue1 = sharedValue(sharedValue1[2]).useSharedValue(sharedValue(sharedValue1[3]).INITIAL_CONTAINER_OFFSET);
-  let tmp3 = closure_3(() => "bottom-sheet-portal-" + sharedValue(sharedValue1[4]).id(), []);
-  const hostName = tmp3;
-  closure_3 = mountSheet([]);
-  const tmp4 = hostName((key, current, arg2) => {
-    closure_0 = key;
-    const current1 = closure_3.current;
-    const substr = current1.slice();
-    const findIndexResult = substr.findIndex((key) => key.key === closure_0);
-    if (-1 === findIndexResult) {
-      let tmp5 = tmp4;
-      if (substr[substr.length - 1]) {
-        tmp5 = !tmp4.willUnmount;
-      }
-      if (tmp5) {
-        if (arg2 === value2.MODAL_STACK_BEHAVIOR.replace) {
-          if (tmp4.ref != null) {
-            const current2 = ref2.current;
-            if (current2 != null) {
-              current2.dismiss();
+require = arg1;
+let dependencyMap = arg6;
+let __initData = { code: "function pnpm_useAnimatedSnapPointsTs1(){const{containerHeight,INITIAL_CONTAINER_HEIGHT,INITIAL_SNAP_POINT,snapPoints,normalizeSnapPoint,enableDynamicSizing,handleHeight,INITIAL_HANDLE_HEIGHT,contentHeight,maxDynamicContentSize,dynamicSnapPointIndex}=this.__closure;const isContainerLayoutReady=containerHeight.value!==INITIAL_CONTAINER_HEIGHT;if(!isContainerLayoutReady){return[INITIAL_SNAP_POINT];}const _snapPoints=snapPoints?'value'in snapPoints?snapPoints.value:snapPoints:[];let _normalizedSnapPoints=_snapPoints.map(function(snapPoint){return normalizeSnapPoint(snapPoint,containerHeight.value);});if(!enableDynamicSizing){return _normalizedSnapPoints;}if(handleHeight.value===INITIAL_HANDLE_HEIGHT){return[INITIAL_SNAP_POINT];}if(contentHeight.value===INITIAL_CONTAINER_HEIGHT){return[INITIAL_SNAP_POINT];}const dynamicSnapPoint=containerHeight.value-Math.min(contentHeight.value+handleHeight.value,maxDynamicContentSize!==undefined?maxDynamicContentSize:containerHeight.value);if(!_normalizedSnapPoints.includes(dynamicSnapPoint)){_normalizedSnapPoints.push(dynamicSnapPoint);}_normalizedSnapPoints=_normalizedSnapPoints.sort(function(a,b){return b-a;});dynamicSnapPointIndex.value=_normalizedSnapPoints.indexOf(dynamicSnapPoint);return _normalizedSnapPoints;}" };
+let __initData2 = { code: "function pnpm_useAnimatedSnapPointsTs2(){const{enableDynamicSizing,snapPoints}=this.__closure;if(enableDynamicSizing){return true;}const _snapPoints=snapPoints?'value'in snapPoints?snapPoints.value:snapPoints:[];if(_snapPoints.length&&_snapPoints.find(function(snapPoint){return typeof snapPoint==='string';})){return true;}return false;}" };
+
+export const useAnimatedSnapPoints = (snapPoints, containerHeight, contentHeight, handleHeight, arg4, enableDynamicSizing, maxDynamicContentSize) => {
+  _require = snapPoints;
+  dependencyMap = containerHeight;
+  __initData = contentHeight;
+  __initData2 = handleHeight;
+  closure_4 = enableDynamicSizing;
+  closure_5 = maxDynamicContentSize;
+  const sharedValue = require("cancelAnimation").useSharedValue(-1);
+  const obj = require("cancelAnimation");
+  class P {
+    constructor() {
+      iter = closure_1;
+      tmp = closure_0;
+      tmp2 = closure_1;
+      if (closure_1.value === closure_0(closure_1[1]).INITIAL_CONTAINER_HEIGHT) {
+        items = [];
+        items[0] = tmp(tmp2[1]).INITIAL_SNAP_POINT;
+        return items;
+      } else {
+        iter3 = closure_0;
+        if (closure_0) {
+          str = "value";
+          value = iter3;
+          if ("value" in iter3) {
+            value = iter3.value;
+          }
+          items1 = value;
+        } else {
+          items1 = [];
+        }
+        mapped = items1.map(() => { ... });
+        tmp3 = closure_4;
+        if (closure_4) {
+          iter2 = closure_3;
+          if (closure_3.value === tmp(tmp2[1]).INITIAL_HANDLE_HEIGHT) {
+            items2 = [];
+            items2[0] = tmp(tmp2[1]).INITIAL_SNAP_POINT;
+            return items2;
+          } else {
+            iter4 = closure_2;
+            if (closure_2.value === tmp(tmp2[1]).INITIAL_CONTAINER_HEIGHT) {
+              items3 = [];
+              items3[0] = tmp(tmp2[1]).INITIAL_SNAP_POINT;
+              return items3;
+            } else {
+              tmp4 = globalThis;
+              value1 = closure_5;
+              sum = iter4.value + iter2.value;
+              if (undefined === closure_5) {
+                value1 = iter.value;
+              }
+              diff = iter.value - Math.min(sum, value1);
+              if (!mapped.includes(diff)) {
+                arr1 = mapped.push(diff);
+              }
+              sorted = mapped.sort(() => { ... });
+              tmp8 = closure_6;
+              closure_6.value = sorted.indexOf(diff);
+              return sorted;
             }
           }
-        } else if (arg2 === tmp7(6864).MODAL_STACK_BEHAVIOR.switch) {
-          if (tmp4.ref != null) {
-            current = ref.current;
-            if (current != null) {
-              current.minimize();
-            }
-          }
-        }
-        tmp7 = require;
-      }
-      if (-1 !== findIndexResult) {
-        substr.splice(findIndexResult, 1);
-        if (current != null) {
-          const current3 = current.current;
-          if (current3 != null) {
-            current3.restore();
-          }
-        }
-      }
-      const obj = { key, ref: current, willUnmount: false };
-      substr.push(obj);
-      closure_3.current = substr;
-    }
-  }, []);
-  mountSheet = tmp4;
-  let tmp5 = hostName((arg0) => {
-    closure_0 = arg0;
-    const current1 = closure_3.current;
-    const substr = current1.slice();
-    const findIndexResult = substr.findIndex((key) => key.key === closure_0);
-    let tmp3 = findIndexResult === substr.length - 1;
-    substr.splice(findIndexResult, 1);
-    closure_3.current = substr;
-    if (tmp3) {
-      tmp3 = closure_3.current.length > 0;
-    }
-    if (tmp3) {
-      tmp3 = tmp5;
-    }
-    if (tmp3) {
-      tmp3 = !tmp5.willUnmount;
-    }
-    if (tmp3) {
-      const ref = tmp.current[tmp.current.length - 1].ref;
-      if (ref != null) {
-        const current = ref.current;
-        if (current != null) {
-          current.restore();
+        } else {
+          return mapped;
         }
       }
     }
-  }, []);
-  const unmountSheet = tmp5;
-  const tmp6 = hostName((arg0) => {
-    closure_0 = arg0;
-    const current1 = closure_3.current;
-    const substr = current1.slice();
-    const findIndexResult = substr.findIndex((key) => key.key === closure_0);
-    const diff = substr.length - 1;
-    if (-1 !== findIndexResult) {
-      substr[findIndexResult].willUnmount = true;
-    }
-    if (tmp4) {
-      if (substr[substr.length - 2].ref != null) {
-        const current = ref.current;
-        if (current != null) {
-          current.restore();
-        }
-      }
-    }
-    closure_3.current = substr;
-  }, []);
-  const willUnmountSheet = tmp6;
-  let tmp7 = hostName((arg0) => {
-    closure_0 = arg0;
-    const current1 = closure_3.current;
-    if (arg0) {
-      let found = current1.find((key) => key.key === closure_0);
-    } else {
-      found = current1[tmp.current.length - 1];
-    }
-    let flag = found;
-    if (flag) {
-      flag = true;
-      if (found.ref != null) {
-        const current = ref.current;
+  }
+  const obj2 = require("cancelAnimation");
+  P.__closure = { containerHeight, INITIAL_CONTAINER_HEIGHT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_CONTAINER_HEIGHT, INITIAL_SNAP_POINT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_SNAP_POINT, snapPoints, normalizeSnapPoint: require("normalizeSnapPoint").normalizeSnapPoint, enableDynamicSizing, handleHeight, INITIAL_HANDLE_HEIGHT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_HANDLE_HEIGHT, contentHeight, maxDynamicContentSize, dynamicSnapPointIndex: sharedValue };
+  P.__workletHash = 15015207820492;
+  P.__initData = __initData;
+  let items = [snapPoints, containerHeight, handleHeight, contentHeight, arg4, enableDynamicSizing, maxDynamicContentSize, sharedValue];
+  const derivedValue = obj2.useDerivedValue(P, items);
+  const obj3 = { containerHeight, INITIAL_CONTAINER_HEIGHT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_CONTAINER_HEIGHT, INITIAL_SNAP_POINT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_SNAP_POINT, snapPoints, normalizeSnapPoint: require("normalizeSnapPoint").normalizeSnapPoint, enableDynamicSizing, handleHeight, INITIAL_HANDLE_HEIGHT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_HANDLE_HEIGHT, contentHeight, maxDynamicContentSize, dynamicSnapPointIndex: sharedValue };
+  class N {
+    constructor() {
+      if (closure_4) {
         flag = true;
-        if (current != null) {
-          current.dismiss();
-          flag = true;
+        return true;
+      } else {
+        iter = closure_0;
+        if (closure_0) {
+          str = "value";
+          value = iter;
+          if ("value" in iter) {
+            value = iter.value;
+          }
+          items = value;
+        } else {
+          items = [];
         }
+        length = items.length;
+        tmp = !length;
+        if (length) {
+          tmp = !items.find(/* F136328 */ function() { ... });
+        }
+        return !tmp;
       }
     }
-    return flag;
-  }, []);
-  const dismiss = tmp7;
-  const tmp8 = hostName(() => {
-    let current = closure_3.current;
-    const mapped = current.map((ref) => {
-      if (ref.ref != null) {
-        const current = ref.current;
-        if (current != null) {
-          current.dismiss();
-        }
-      }
-    });
-  }, []);
-  const dismissAll = tmp8;
-  const items = [tmp7, tmp8];
-  const items1 = [tmp3, sharedValue, sharedValue1, tmp4, tmp5, tmp6];
-  const obj2 = sharedValue(sharedValue1[2]);
-  const tmp9 = closure_3(() => ({ dismiss, dismissAll }), items);
-  const obj3 = { value: tmp9, children: null };
-  const obj4 = { value: closure_3(() => ({ hostName, containerHeight: sharedValue, containerOffset: sharedValue1, mountSheet, unmountSheet, willUnmountSheet }), items1), children: null };
-  const items2 = [unmountSheet(sharedValue(sharedValue1[7]).BottomSheetHostingContainer, { containerOffset: sharedValue1, containerHeight: sharedValue }), unmountSheet(sharedValue(sharedValue1[8]).PortalProvider, { rootHostName: tmp3, children: children.children })];
-  obj4.children = items2;
-  obj3.children = willUnmountSheet(sharedValue(sharedValue1[6]).BottomSheetModalInternalProvider, obj4);
-  return unmountSheet(sharedValue(sharedValue1[6]).BottomSheetModalProvider, obj3);
+  }
+  N.__closure = { enableDynamicSizing, snapPoints };
+  N.__workletHash = 4816362093278;
+  N.__initData = __initData2;
+  let items1 = [derivedValue, sharedValue, require("cancelAnimation").useDerivedValue(N)];
+  return items1;
 };

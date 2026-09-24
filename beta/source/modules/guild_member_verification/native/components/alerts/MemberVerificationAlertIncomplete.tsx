@@ -1,16 +1,16 @@
-// Module ID: 7339
-// Function ID: 7340
+// Module ID: 7371
+// Function ID: 7372
 // Name: MemberVerificationAlertIncomplete
-// Dependencies: [109, 19, 4581, 21, 558, 568, 565, 5788, 5746, 1119, 5188, 5756, 7340, 2]
+// Dependencies: [109, 19, 4613, 21, 558, 568, 565, 5820, 5778, 1119, 5220, 5788, 7372, 2]
 
-// Module 7339 (MemberVerificationAlertIncomplete)
+// Module 7371 (MemberVerificationAlertIncomplete)
 import util from "util" /* 1119 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5746 */;
-import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 5756 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5788 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5778 */;
+import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 5788 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5820 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4581 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4613 */;
 
 const require = globalThis.__r;
 
@@ -180,7 +180,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             }
           }
           obj2.onPress = tmp15;
-          const tmp28 = closure_7(tmp(5188).Button, obj2);
+          const tmp28 = closure_7(tmp(5220).Button, obj2);
           cResult[17] = tmp15;
           cResult[18] = tmp28;
           let tmp26 = tmp28;
@@ -225,7 +225,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             }
           }
           obj3.onPress = tmp16;
-          const tmp33 = closure_7(tmp(5188).Button, obj3);
+          const tmp33 = closure_7(tmp(5220).Button, obj3);
           cResult[20] = tmp16;
           cResult[21] = tmp33;
           let tmp31 = tmp33;
@@ -261,7 +261,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
           const obj4 = {};
           const merged = Object.assign(tmp6);
-          obj4.icon = tmp(7340).ListViewIcon;
+          obj4.icon = tmp(7372).ListViewIcon;
           obj4.header = tmp17;
           obj4.buttons = tmp34;
           const tmp44 = closure_7(MemberVerificationAlertDefault, obj4);
@@ -352,20 +352,20 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const obj3 = {};
   const obj = guildId(565);
   const merged1 = Object.assign(merged);
-  obj3.icon = guildId(7340).ListViewIcon;
+  obj3.icon = guildId(7372).ListViewIcon;
   obj3.header = formatToPlainStringResult;
   const obj4 = { children: null };
   const obj5 = { variant: "secondary", text: null, onPress: null };
   const intl3 = tmp2(1119).intl;
   obj5.text = intl3.string(guildId(1119).t.h3aGmv);
   obj5.onPress = callback;
-  const items4 = [closure_7(guildId(5188).Button, obj5), ];
+  const items4 = [closure_7(guildId(5220).Button, obj5), ];
   const obj6 = { text: null, variant: "destructive", onPress: null };
   const intl4 = tmp2(1119).intl;
   obj6.text = intl4.string(guildId(1119).t.OQFlFD);
   obj6.onPress = callback1;
-  items4[1] = closure_7(guildId(5188).Button, obj6);
+  items4[1] = closure_7(guildId(5220).Button, obj6);
   obj4.children = items4;
   obj3.buttons = closure_9(closure_8, obj4);
-  return closure_7(onClose(5756), obj3);
+  return closure_7(onClose(5788), obj3);
 });

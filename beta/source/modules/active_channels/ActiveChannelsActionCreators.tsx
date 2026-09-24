@@ -1,10 +1,10 @@
-// Module ID: 16398
-// Function ID: 16399
+// Module ID: 16408
+// Function ID: 16409
 // Name: ActiveChannelsActionCreators
-// Dependencies: [5, 1078, 577, 1275, 4660, 2]
+// Dependencies: [5, 1078, 577, 1275, 4692, 2]
 // Exports: fetchActiveChannels
 
-// Module 16398 (ActiveChannelsActionCreators)
+// Module 16408 (ActiveChannelsActionCreators)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;

@@ -1,9 +1,9 @@
-// Module ID: 10074
-// Function ID: 10075
+// Module ID: 10113
+// Function ID: 10114
 // Name: UserSearchManager
-// Dependencies: [2049, 1390, 2045, 2109, 4409, 1376, 1078, 4603, 1389, 1259, 7365, 10075, 1374, 1235, 12, 11, 2]
+// Dependencies: [2049, 1390, 2045, 2109, 4441, 1376, 1078, 4635, 1389, 1259, 7397, 10114, 1374, 1235, 12, 11, 2]
 
-// Module 10074 (UserSearchManager)
+// Module 10113 (UserSearchManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1078 */;
@@ -11,14 +11,14 @@ import SentryUtilsDefault from "SentryUtils" /* 1235 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
 import FlagUtilsAll from "FlagUtils" /* 1389 */;
 import ChannelRecord from "ChannelRecord" /* 2049 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import UserSearchWorkerManager from "UserSearchWorkerManager" /* 10075 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import UserSearchWorkerManager from "UserSearchWorkerManager" /* 10114 */;
 import UserRecord from "UserRecord" /* 1390 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
 import size from "module_2" /* 2 */;
 
 function getTransformedUser(user) {

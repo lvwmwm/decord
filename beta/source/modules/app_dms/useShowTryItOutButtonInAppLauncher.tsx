@@ -1,16 +1,16 @@
-// Module ID: 12284
-// Function ID: 12285
+// Module ID: 12320
+// Function ID: 12321
 // Name: useShowTryItOutButtonInAppLauncher
-// Dependencies: [558, 568, 9597, 12285, 9590, 2]
+// Dependencies: [558, 568, 9629, 12321, 9622, 2]
 
-// Module 12284 (useShowTryItOutButtonInAppLauncher)
+// Module 12320 (useShowTryItOutButtonInAppLauncher)
 import c from "c" /* 568 */;
-import getPrimaryAppCommand from "getPrimaryAppCommand" /* 9597 */;
-import useIsAppDMDefault from "useIsAppDM" /* 12285 */;
+import getPrimaryAppCommand from "getPrimaryAppCommand" /* 9629 */;
+import useIsAppDMDefault from "useIsAppDM" /* 12321 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const canLaunchFrame = tmp(9590);
+const canLaunchFrame = tmp(9622);
 const result = size.fileFinishedImporting("modules/app_dms/useShowTryItOutButtonInAppLauncher.tsx");
 
 export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -21,14 +21,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[2] === context) {
         let tmp4 = cResult[3];
       }
-      let isPrimaryAppCommandUsableInAppDM = tmp(9597).useIsPrimaryAppCommandUsableInAppDM(tmp4);
+      let isPrimaryAppCommandUsableInAppDM = tmp(9629).useIsPrimaryAppCommandUsableInAppDM(tmp4);
       let channel;
-      const tmpResult = tmp(9597);
+      const tmpResult = tmp(9629);
       if ("channel" === context.type) {
         channel = context.channel;
       }
       const tmp7Result = useIsAppDMDefault(channel);
-      const canLaunchFrameResult = tmp(9590).canLaunchFrame(application);
+      const canLaunchFrameResult = tmp(9622).canLaunchFrame(application);
       let tmp11 = !canLaunchFrameResult;
       if (!canLaunchFrameResult) {
         if (isPrimaryAppCommandUsableInAppDM) {

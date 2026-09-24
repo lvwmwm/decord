@@ -1,9 +1,9 @@
-// Module ID: 15803
-// Function ID: 15804
+// Module ID: 15813
+// Function ID: 15814
 // Name: UploadIntlDataSetting
-// Dependencies: [5, 17, 1078, 21, 562, 1252, 558, 568, 1367, 1123, 1157, 1119, 1368, 1275, 4458, 4712, 11594, 15804, 15109, 2]
+// Dependencies: [5, 17, 1078, 21, 562, 1252, 558, 568, 1367, 1123, 1157, 1119, 1368, 1275, 4490, 4744, 11630, 15814, 15119, 2]
 
-// Module 15803 (UploadIntlDataSetting)
+// Module 15813 (UploadIntlDataSetting)
 import c from "c" /* 568 */;
 import AssetJsonUtils from "AssetJsonUtils" /* 1123 */;
 import _mod1157 from "module_1157" /* 1157 */;
@@ -259,17 +259,17 @@ const module_562 = fn(562);
 let closure_9 = module_562.create(() => ({ isDisabled: false, isUploading: false }));
 let ReactCompilerGating = fn(558);
 ReactCompilerGating.isReactCompilerEnabled();
-const f70833 = () => {
+const f70873 = () => {
 
 };
 ReactCompilerGating = fn(558);
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = fn(558);
 fn = () => closure_9().isDisabled;
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
-  if (typeof f70833 === "function") {
+  if (typeof f70873 === "function") {
     const isUploading = closure_9().isUploading;
     if (cResult[0] !== isUploading) {
       let tmp4 = null;
@@ -287,7 +287,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     throw new TypeError("Trying to call a non-function");
   }
 }) : (() => {
-  if (typeof f70833 === "function") {
+  if (typeof f70873 === "function") {
     let tmp2 = null;
     if (closure_9().isUploading) {
       tmp2 = <ActivityIndicator />;
@@ -302,7 +302,7 @@ const pressable = SettingBuilders.createPressable({
     return "Upload i18n data";
   },
   parent: null,
-  IconComponent: fn(15804).FileUpIcon,
+  IconComponent: fn(15814).FileUpIcon,
   onPress: function handleUploadIntlDataSettingPress() {
     const self = this;
     const apply = closure_12.apply;
@@ -313,10 +313,10 @@ const pressable = SettingBuilders.createPressable({
     }
     return applyArgumentsResult;
   },
-  usePredicate: fn(15109).useStaffOrDeveloperSettingPredicate,
+  usePredicate: fn(15119).useStaffOrDeveloperSettingPredicate,
   useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
-    if (typeof f70833 === "function") {
+    if (typeof f70873 === "function") {
       const isUploading = closure_9().isUploading;
       if (cResult[0] !== isUploading) {
         let tmp4 = null;
@@ -334,7 +334,7 @@ const pressable = SettingBuilders.createPressable({
       throw new TypeError("Trying to call a non-function");
     }
   }) : (() => {
-    if (typeof f70833 === "function") {
+    if (typeof f70873 === "function") {
       let tmp2 = null;
       if (closure_9().isUploading) {
         tmp2 = <ActivityIndicator />;

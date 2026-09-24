@@ -1,17 +1,17 @@
-// Module ID: 15511
-// Function ID: 15512
+// Module ID: 15521
+// Function ID: 15522
 // Name: StreamOutputVolumeSetting
-// Dependencies: [4780, 502, 1996, 8238, 558, 568, 4813, 504, 38, 9889, 10236, 11594, 1119, 2]
+// Dependencies: [4812, 502, 1996, 8270, 558, 568, 4845, 504, 38, 9921, 10275, 11630, 1119, 2]
 
-// Module 15511 (StreamOutputVolumeSetting)
+// Module 15521 (StreamOutputVolumeSetting)
 import _modDef38 from "module_38" /* 38 */;
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4813 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9889 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10236 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4845 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9921 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10275 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4812 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
@@ -67,7 +67,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return num;
   });
 });
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -114,7 +114,7 @@ const volumeSlider = SettingBuilders.createVolumeSlider({
     const intl = util.intl;
     return intl.string(util.t.pEAl4b);
   },
-  parent: fn(8238).MobileUserSettings.VOICE,
+  parent: fn(8270).MobileUserSettings.VOICE,
   maximum: 200,
   useValue: tmp2,
   onValueChange: function onStreamValueSettingValueChange(arg0) {

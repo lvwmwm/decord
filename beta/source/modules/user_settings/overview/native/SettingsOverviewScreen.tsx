@@ -1,15 +1,15 @@
-// Module ID: 17379
-// Function ID: 17380
+// Module ID: 17389
+// Function ID: 17390
 // Name: SettingsOverviewScreen
-// Dependencies: [19, 8238, 21, 1119, 1374, 15751, 558, 568, 4418, 11594, 14954, 2]
+// Dependencies: [19, 8270, 21, 1119, 1374, 15761, 558, 568, 4450, 11630, 14989, 2]
 
-// Module 17379 (SettingsOverviewScreen)
+// Module 17389 (SettingsOverviewScreen)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
-import PremiumUtils from "PremiumUtils" /* 4418 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15751 */;
+import PremiumUtils from "PremiumUtils" /* 4450 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15761 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -91,7 +91,7 @@ function getOverviewSettings(isPremiumUser) {
   items1[9] = obj10;
   return items1;
 }
-const MobileUserSettings = fn(8238).MobileUserSettings;
+const MobileUserSettings = fn(8270).MobileUserSettings;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -104,17 +104,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj3 = { sections: null };
     const obj4 = { isPremiumUser: hasPremiumSubscriptionToDisplay };
     obj3.sections = getOverviewSettings(obj4);
-    const list = tmp(11594).createList(obj3);
+    const list = tmp(11630).createList(obj3);
     cResult[0] = hasPremiumSubscriptionToDisplay;
     cResult[1] = list;
     let tmp5 = list;
-    const tmpResult = tmp(11594);
+    const tmpResult = tmp(11630);
   } else {
     tmp5 = cResult[1];
   }
   if (cResult[2] !== tmp5) {
     const obj5 = { node: tmp5 };
-    const tmp10 = jsx(tmp(14954).SearchableSettingsList, { node: tmp5 });
+    const tmp10 = jsx(tmp(14989).SearchableSettingsList, { node: tmp5 });
     cResult[2] = tmp5;
     cResult[3] = tmp10;
     let tmp8 = tmp10;
@@ -123,11 +123,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   return tmp8;
 }) : (() => {
-  hasPremiumSubscriptionToDisplay = hasPremiumSubscriptionToDisplay(4418).useHasPremiumSubscriptionToDisplay();
+  hasPremiumSubscriptionToDisplay = hasPremiumSubscriptionToDisplay(4450).useHasPremiumSubscriptionToDisplay();
   const items = [hasPremiumSubscriptionToDisplay];
   const node = noop.useMemo(() => {
     const obj2 = { sections: getOverviewSettings({ isPremiumUser: hasPremiumSubscriptionToDisplay }) };
     return SettingBuilders.createList(obj2);
   }, items);
-  return jsx(hasPremiumSubscriptionToDisplay(14954).SearchableSettingsList, { node });
+  return jsx(hasPremiumSubscriptionToDisplay(14989).SearchableSettingsList, { node });
 });

@@ -1,16 +1,16 @@
-// Module ID: 8567
-// Function ID: 8568
+// Module ID: 8599
+// Function ID: 8600
 // Name: useMediaViewerSyncer
-// Dependencies: [32, 19, 8568, 1368, 8537, 4497, 8569, 1616, 8570, 8541, 5187, 8571, 558, 568, 2]
+// Dependencies: [32, 19, 8600, 1368, 8569, 4529, 8601, 1616, 8602, 8573, 5219, 8603, 558, 568, 2]
 
-// Module 8567 (useMediaViewerSyncer)
+// Module 8599 (useMediaViewerSyncer)
 import c from "c" /* 568 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import spring from "spring" /* 5187 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8537 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8541 */;
-import portraitThumbnailHelpers from "portraitThumbnailHelpers" /* 8570 */;
-import resolveSelectedIndex from "resolveSelectedIndex" /* 8571 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import spring from "spring" /* 5219 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8569 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8573 */;
+import portraitThumbnailHelpers from "portraitThumbnailHelpers" /* 8602 */;
+import resolveSelectedIndex from "resolveSelectedIndex" /* 8603 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -632,7 +632,7 @@ function buildThumbnailScrollPositions(sources) {
   }
   return items;
 }
-const Constants = fn(8568);
+const Constants = fn(8600);
 ({ THUMBNAIL_MARGIN: hasOwnProperty, THUMBNAIL_HEIGHT: metroRequire, THUMBNAIL_MAX_WIDTH: closure_7, THUMBNAIL_MIN_WIDTH: closure_8, THUMBNAIL_WIDTH_MARGIN: closure_9 } = Constants);
 const PlatformUtils = fn(1368);
 let closure_10 = PlatformUtils.isAndroid();
@@ -671,25 +671,25 @@ export const useMediaViewerSyncer = ReactCompilerGating.isReactCompilerEnabled()
   const cResult = c.c(7);
   ({ sources, initialIndex, onEndReached, onEndReachedThreshold } = arg0);
   if (cResult[0] !== initialIndex) {
-    const obj2 = { selectedIndex: tmp(4497).makeMutable(initialIndex), thumbnailsIndex: null, thumbnailsScrolling: null, thumbnailsAnimateTo: null, viewerPos: null, viewerScrolling: null, zoomed: null, swipeSource: null };
-    const tmpResult = tmp(4497);
-    obj2.thumbnailsIndex = tmp(4497).makeMutable(initialIndex);
-    const tmpResult8 = tmp(4497);
-    obj2.thumbnailsScrolling = tmp(4497).makeMutable(0);
-    const tmpResult9 = tmp(4497);
-    obj2.thumbnailsAnimateTo = tmp(4497).makeMutable(-1);
-    const tmpResult10 = tmp(4497);
-    obj2.viewerPos = tmp(4497).makeMutable(initialIndex);
-    const tmpResult11 = tmp(4497);
-    obj2.viewerScrolling = tmp(4497).makeMutable(0);
-    const tmpResult12 = tmp(4497);
-    obj2.zoomed = tmp(4497).makeMutable(false);
-    const tmpResult13 = tmp(4497);
-    obj2.swipeSource = tmp(4497).makeMutable(undefined);
+    const obj2 = { selectedIndex: tmp(4529).makeMutable(initialIndex), thumbnailsIndex: null, thumbnailsScrolling: null, thumbnailsAnimateTo: null, viewerPos: null, viewerScrolling: null, zoomed: null, swipeSource: null };
+    const tmpResult = tmp(4529);
+    obj2.thumbnailsIndex = tmp(4529).makeMutable(initialIndex);
+    const tmpResult8 = tmp(4529);
+    obj2.thumbnailsScrolling = tmp(4529).makeMutable(0);
+    const tmpResult9 = tmp(4529);
+    obj2.thumbnailsAnimateTo = tmp(4529).makeMutable(-1);
+    const tmpResult10 = tmp(4529);
+    obj2.viewerPos = tmp(4529).makeMutable(initialIndex);
+    const tmpResult11 = tmp(4529);
+    obj2.viewerScrolling = tmp(4529).makeMutable(0);
+    const tmpResult12 = tmp(4529);
+    obj2.zoomed = tmp(4529).makeMutable(false);
+    const tmpResult13 = tmp(4529);
+    obj2.swipeSource = tmp(4529).makeMutable(undefined);
     cResult[0] = initialIndex;
     cResult[1] = obj2;
     let tmp4 = obj2;
-    const tmpResult14 = tmp(4497);
+    const tmpResult14 = tmp(4529);
   } else {
     tmp4 = cResult[1];
   }

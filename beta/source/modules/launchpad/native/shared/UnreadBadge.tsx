@@ -1,23 +1,23 @@
-// Module ID: 17681
-// Function ID: 17682
+// Module ID: 17691
+// Function ID: 17692
 // Name: UnreadBadge
-// Dependencies: [19, 17, 12213, 4940, 21, 4758, 558, 568, 17137, 5195, 8117, 2]
+// Dependencies: [19, 17, 12249, 4972, 21, 4790, 558, 568, 17147, 5227, 8149, 2]
 
-// Module 17681 (UnreadBadge)
+// Module 17691 (UnreadBadge)
 import c from "c" /* 568 */;
-import useFontScale from "useFontScale" /* 5195 */;
-import Badge from "Badge" /* 8117 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17137 */;
+import useFontScale from "useFontScale" /* 5227 */;
+import Badge from "Badge" /* 8149 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17147 */;
 import noop from "module_19" /* 19 */;
 
 const BadgeDefault = Badge;
 
 require = fn;
 const View = fn(17).View;
-const MUTED_OPACITY_CONTENT = fn(12213).MUTED_OPACITY_CONTENT;
-const UnreadSetting = fn(4940).UnreadSetting;
+const MUTED_OPACITY_CONTENT = fn(12249).MUTED_OPACITY_CONTENT;
+const UnreadSetting = fn(4972).UnreadSetting;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ unreadBadge: { flexGrow: 0, flexShrink: 0, position: "absolute" } });
 const ReactCompilerGating = fn(558);
 let size = fn(2);
@@ -56,7 +56,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     obj2.style = items;
     const obj3 = { classic: true, size: null, badgeStyle: null };
     const _Math = Math;
-    obj3.size = tmp(8117).CHANNEL_BADGE_SIZE * Math.max(fontScale, 1);
+    obj3.size = tmp(8149).CHANNEL_BADGE_SIZE * Math.max(fontScale, 1);
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
       let num3 = MUTED_OPACITY_CONTENT;
     } else {

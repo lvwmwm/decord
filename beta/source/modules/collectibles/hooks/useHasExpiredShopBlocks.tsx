@@ -1,9 +1,9 @@
-// Module ID: 16119
-// Function ID: 16120
+// Module ID: 16129
+// Function ID: 16130
 // Name: useHasExpiredShopBlocks
-// Dependencies: [32, 19, 1078, 558, 568, 7819, 2]
+// Dependencies: [32, 19, 1078, 558, 568, 7851, 2]
 
-// Module 16119 (useHasExpiredShopBlocks)
+// Module 16129 (useHasExpiredShopBlocks)
 import _slicedToArray from "module_32" /* 32 */;
 
 const require = globalThis.__r;

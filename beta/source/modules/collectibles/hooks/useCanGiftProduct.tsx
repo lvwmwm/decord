@@ -1,13 +1,13 @@
-// Module ID: 13469
-// Function ID: 13470
+// Module ID: 13505
+// Function ID: 13506
 // Name: useCanGiftProduct
-// Dependencies: [558, 8452, 7801, 7800, 4418, 1977, 4431, 2]
+// Dependencies: [558, 8484, 7833, 7832, 4450, 1977, 4463, 2]
 
-// Module 13469 (useCanGiftProduct)
-import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7800 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7801 */;
-import useCurrentUser from "useCurrentUser" /* 8452 */;
+// Module 13505 (useCanGiftProduct)
+import PremiumUtilsDefault from "PremiumUtils" /* 4450 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7832 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7833 */;
+import useCurrentUser from "useCurrentUser" /* 8484 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,12 +35,12 @@ export const useCanGiftProduct = ReactCompilerGating.isReactCompilerEnabled() ? 
     if (result3 != null) {
       currency = result3.currency;
     }
-    result = tmp(7801).shouldHideGiftingForCurrency(currency);
-    const tmpResult = tmp(7801);
+    result = tmp(7833).shouldHideGiftingForCurrency(currency);
+    const tmpResult = tmp(7833);
   }
   if (!result) {
-    result = !tmp(4431).isCollectibleGiftingSupported();
-    const tmpResult2 = tmp(4431);
+    result = !tmp(4463).isCollectibleGiftingSupported();
+    const tmpResult2 = tmp(4463);
   }
   return !result;
 }) : ((type) => {
@@ -65,12 +65,12 @@ export const useCanGiftProduct = ReactCompilerGating.isReactCompilerEnabled() ? 
     if (result3 != null) {
       currency = result3.currency;
     }
-    result = tmp(7801).shouldHideGiftingForCurrency(currency);
-    const tmpResult = tmp(7801);
+    result = tmp(7833).shouldHideGiftingForCurrency(currency);
+    const tmpResult = tmp(7833);
   }
   if (!result) {
-    result = !tmp(4431).isCollectibleGiftingSupported();
-    const tmpResult2 = tmp(4431);
+    result = !tmp(4463).isCollectibleGiftingSupported();
+    const tmpResult2 = tmp(4463);
   }
   return !result;
 });

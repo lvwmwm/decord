@@ -1,32 +1,32 @@
-// Module ID: 12459
-// Function ID: 12460
+// Module ID: 12495
+// Function ID: 12496
 // Name: GuildDirectoryCreateOrAdd
-// Dependencies: [32, 19, 17, 12460, 12458, 21, 4758, 580, 558, 568, 504, 5799, 12461, 5822, 1119, 9868, 4754, 9869, 1616, 5188, 1488, 5801, 12466, 12457, 2]
+// Dependencies: [32, 19, 17, 12496, 12494, 21, 4790, 580, 558, 568, 504, 5831, 12497, 5854, 1119, 9900, 4786, 9901, 1616, 5220, 1488, 5833, 12502, 12493, 2]
 
-// Module 12459 (GuildDirectoryCreateOrAdd)
+// Module 12495 (GuildDirectoryCreateOrAdd)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import GuildIconDefault from "GuildIcon" /* 5799 */;
-import TableRow from "TableRow" /* 5822 */;
-import SegmentedControlState from "SegmentedControlState" /* 9868 */;
-import SegmentedControl from "SegmentedControl" /* 9869 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import GuildIconDefault from "GuildIcon" /* 5831 */;
+import TableRow from "TableRow" /* 5854 */;
+import SegmentedControlState from "SegmentedControlState" /* 9900 */;
+import SegmentedControl from "SegmentedControl" /* 9901 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 12460 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 12496 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ActivityIndicator: metroRequire, FlatList: closure_7 } = get_ActivityIndicator);
-const GuildDirectoryCreate = fn(12458).GuildDirectoryCreate;
+const GuildDirectoryCreate = fn(12494).GuildDirectoryCreate;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { loadingContainer: { flex: 1, alignItems: "center", justifyContent: "center" }, container: { flex: 1 }, guildIcon: { borderRadius: nativeDefault.radii.sm }, header: { padding: 16, alignItems: "center", justifyContent: "center" }, title: { marginBottom: 8, textAlign: "center" }, description: { textAlign: "center" }, footerSafeAreaContainer: null, footerContainer: null, footerTitle: null, segmentedControl: null };
 let obj3 = { borderRadius: nativeDefault.radii.sm };
 obj.footerSafeAreaContainer = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, position: "absolute", bottom: 0, width: "100%" };
@@ -60,7 +60,7 @@ let closure_13 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guil
       }
       if (cResult[7] !== stateFromStores) {
         const obj2 = { entry: stateFromStores };
-        const tmp16 = closure_10(directoryChannelId(12461), obj2);
+        const tmp16 = closure_10(directoryChannelId(12497), obj2);
         cResult[7] = stateFromStores;
         cResult[8] = tmp16;
         let tmp13 = tmp16;
@@ -80,7 +80,7 @@ let closure_13 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guil
         }
       }
       const obj3 = { label: guild.name, icon: tmp9, trailing: tmp13, start, end };
-      const tmp19 = closure_10(tmp(5822).TableRow, obj3);
+      const tmp19 = closure_10(tmp(5854).TableRow, obj3);
       cResult[9] = end;
       cResult[10] = guild.name;
       cResult[11] = start;
@@ -90,7 +90,7 @@ let closure_13 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guil
       tmp17 = tmp19;
     }
     const obj4 = { style: tmp4.guildIcon, guild };
-    const tmp12 = closure_10(directoryChannelId(5799), obj4);
+    const tmp12 = closure_10(directoryChannelId(5831), obj4);
     cResult[4] = guild;
     cResult[5] = tmp4.guildIcon;
     cResult[6] = tmp12;
@@ -111,8 +111,8 @@ let closure_13 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guil
   const tmp = closure_12();
   const items = [GuildDirectoryStore];
   const stateFromStores = guild(504).useStateFromStores(items, () => GuildDirectoryStore.getDirectoryEntry(directoryChannelId, guild.id));
-  const obj2 = { label: guild.name, icon: closure_10(directoryChannelId(5799), { style: tmp.guildIcon, guild }), trailing: closure_10(directoryChannelId(12461), { entry: stateFromStores }), start, end };
-  return closure_10(guild(5822).TableRow, obj2);
+  const obj2 = { label: guild.name, icon: closure_10(directoryChannelId(5831), { style: tmp.guildIcon, guild }), trailing: closure_10(directoryChannelId(12497), { entry: stateFromStores }), start, end };
+  return closure_10(guild(5854).TableRow, obj2);
 }));
 ReactCompilerGating = fn(558);
 let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
@@ -131,7 +131,7 @@ let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guil
       }
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp13 = v65535(tmp(5822).TableRow.Arrow, {});
+        const tmp13 = v65535(tmp(5854).TableRow.Arrow, {});
         cResult[6] = tmp13;
         let tmp11 = tmp13;
       } else {
@@ -150,7 +150,7 @@ let closure_14 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guil
         }
       }
       const obj2 = { onPress: tmp5, label: guild.name, icon: tmp6, trailing: tmp11, start, end };
-      const tmp16 = v65535(tmp(5822).TableRow, obj2);
+      const tmp16 = v65535(tmp(5854).TableRow, obj2);
       cResult[7] = end;
       cResult[8] = guild.name;
       cResult[9] = start;
@@ -211,7 +211,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[2] === tabIndex) {
       let tmp7 = cResult[3];
     }
-    const segmentedControlState = tmp(9868).useSegmentedControlState(tmp7);
+    const segmentedControlState = tmp(9900).useSegmentedControlState(tmp7);
     ({ header, title } = tmp4);
     if (cResult[4] !== directoryGuildName) {
       const intl3 = tmp(1119).intl;
@@ -238,7 +238,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[10] !== tmp4.description) {
         const obj3 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: tmp14 };
-        const tmp18 = v65535(tmp(4754).Text, obj3);
+        const tmp18 = v65535(tmp(4786).Text, obj3);
         cResult[10] = tmp4.description;
         cResult[11] = tmp18;
         let tmp16 = tmp18;
@@ -247,7 +247,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[12] !== segmentedControlState) {
         const obj4 = { state: segmentedControlState };
-        const tmp21 = v65535(tmp(9869).SegmentedControl, obj4);
+        const tmp21 = v65535(tmp(9901).SegmentedControl, obj4);
         cResult[12] = segmentedControlState;
         cResult[13] = tmp21;
         let tmp19 = tmp21;
@@ -287,12 +287,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp22 = tmp25;
     }
     const obj7 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp9 };
-    const tmp13 = v65535(tmp(4754).Text, obj7);
+    const tmp13 = v65535(tmp(4786).Text, obj7);
     cResult[6] = tmp4.title;
     cResult[7] = tmp9;
     cResult[8] = tmp13;
     tmp11 = tmp13;
-    const tmpResult = tmp(9868);
+    const tmpResult = tmp(9900);
   }
   const obj8 = { pageWidth: 0, defaultIndex: tabIndex, onSetActiveIndex: setTabIndex, items: first };
   cResult[1] = setTabIndex;
@@ -352,7 +352,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((handleFooterPr
     }
     if (cResult[6] !== tmp4.footerTitle) {
       const obj3 = { style: footerTitle, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp8 };
-      const tmp12 = v65535(tmp(4754).Text, obj3);
+      const tmp12 = v65535(tmp(4786).Text, obj3);
       cResult[6] = tmp4.footerTitle;
       cResult[7] = tmp12;
       let tmp10 = tmp12;
@@ -370,7 +370,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((handleFooterPr
     }
     if (cResult[9] !== handleFooterPress) {
       const obj4 = { variant: "secondary", text: tmp13, onPress: handleFooterPress };
-      const tmp17 = v65535(tmp(5188).Button, obj4);
+      const tmp17 = v65535(tmp(5220).Button, obj4);
       cResult[9] = handleFooterPress;
       cResult[10] = tmp17;
       let tmp15 = tmp17;

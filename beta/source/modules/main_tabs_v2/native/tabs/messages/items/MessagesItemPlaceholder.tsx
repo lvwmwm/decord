@@ -1,11 +1,11 @@
-// Module ID: 16379
-// Function ID: 16380
+// Module ID: 16389
+// Function ID: 16390
 // Name: MessagesItemPlaceholder
-// Dependencies: [19, 21, 558, 568, 10064, 2]
+// Dependencies: [19, 21, 558, 568, 10103, 2]
 
-// Module 16379 (MessagesItemPlaceholder)
+// Module 16389 (MessagesItemPlaceholder)
 import c from "c" /* 568 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 10064 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 10103 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,13 +1,13 @@
-// Module ID: 9872
-// Function ID: 9873
+// Module ID: 9904
+// Function ID: 9905
 // Name: GuildEventRecurrences
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 9873, 4754, 1119, 11, 9875, 5188, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 9905, 4786, 1119, 11, 9907, 5220, 2]
 
-// Module 9872 (GuildEventRecurrences)
+// Module 9904 (GuildEventRecurrences)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 580 */;
-import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 9873 */;
-import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 9875 */;
+import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 9905 */;
+import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 9907 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -15,7 +15,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { marginTop: 16 }, scrollView: { marginTop: 8, marginBottom: 8, borderRadius: nativeDefault.radii.sm, maxHeight: 140 } };
 let closure_8 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -157,7 +157,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildEventId) =>
   const obj2 = { variant: "heading-md/semibold", children: null };
   const intl = guildEventId(1119).intl;
   obj2.children = intl.string(guildEventId(1119).t["D/jjoa"]);
-  const items = [closure_6(guildEventId(4754).Text, obj2), , ];
+  const items = [closure_6(guildEventId(4786).Text, obj2), , ];
   const tmp4 = useGuildEventRecurrencesDefault(guildEventId, guildId, recurrenceRule);
   const tmp5 = closure_7;
   const tmp6 = c4;
@@ -185,7 +185,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildEventId) =>
         current.scrollToEnd();
       }
     };
-    canViewMoreRecurrences = tmp7(tmp8(5188).Button, obj4);
+    canViewMoreRecurrences = tmp7(tmp8(5220).Button, obj4);
   }
   items[2] = canViewMoreRecurrences;
   obj.children = items;

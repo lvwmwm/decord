@@ -1,12 +1,12 @@
-// Module ID: 10924
-// Function ID: 10925
+// Module ID: 10960
+// Function ID: 10961
 // Name: ForumTagContextMenu
-// Dependencies: [21, 558, 568, 2023, 1119, 10925, 7436, 4457, 8182, 2]
+// Dependencies: [21, 558, 568, 2023, 1119, 10961, 7468, 4489, 8214, 2]
 
-// Module 10924 (ForumTagContextMenu)
+// Module 10960 (ForumTagContextMenu)
 import jsxProd from "jsxProd" /* 21 */;
-import ToastUtils from "ToastUtils" /* 4457 */;
-import ClipboardUtils from "ClipboardUtils" /* 7436 */;
+import ToastUtils from "ToastUtils" /* 4489 */;
+import ClipboardUtils from "ClipboardUtils" /* 7468 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((tagId) => {
   if (cResult[1] !== tagId) {
     const obj2 = {
       label: first,
-      IconComponent: tmp(10925).IdIcon,
+      IconComponent: tmp(10961).IdIcon,
       action() {
           ClipboardUtils.copy(tagId);
           ToastUtils.presentIdCopied();
@@ -51,7 +51,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((tagId) => {
       return tmp8;
     }
   }
-  const tmp9 = jsx(tagId(8182).ContextMenu, { triggerOnLongPress: true, items: tmp7, enabled: setting, children });
+  const tmp9 = jsx(tagId(8214).ContextMenu, { triggerOnLongPress: true, items: tmp7, enabled: setting, children });
   cResult[3] = children;
   cResult[4] = tmp7;
   cResult[5] = setting;
@@ -64,11 +64,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((tagId) => {
   const enabled = DeveloperMode.useSetting();
   const intl = tagId(1119).intl;
   obj.label = intl.string(tagId(1119).t["8VG6IY"]);
-  obj.IconComponent = tagId(10925).IdIcon;
+  obj.IconComponent = tagId(10961).IdIcon;
   obj.action = function action() {
     ClipboardUtils.copy(tagId);
     ToastUtils.presentIdCopied();
   };
   const items = [obj];
-  return jsx(tagId(8182).ContextMenu, { triggerOnLongPress: true, items, enabled, children: children.children });
+  return jsx(tagId(8214).ContextMenu, { triggerOnLongPress: true, items, enabled, children: children.children });
 });

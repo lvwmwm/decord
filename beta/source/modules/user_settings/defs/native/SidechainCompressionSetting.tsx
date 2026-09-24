@@ -1,19 +1,19 @@
-// Module ID: 15517
-// Function ID: 15518
+// Module ID: 15527
+// Function ID: 15528
 // Name: SidechainCompressionSetting
-// Dependencies: [1996, 8238, 4783, 558, 568, 504, 11594, 1119, 9889, 2]
+// Dependencies: [1996, 8270, 4815, 558, 568, 504, 11630, 1119, 9921, 2]
 
-// Module 15517 (SidechainCompressionSetting)
+// Module 15527 (SidechainCompressionSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9889 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9921 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
 require = fn;
-const Features = fn(4783).Features;
+const Features = fn(4815).Features;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -38,7 +38,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t["/jwMtn"]);
   },
-  parent: fn(8238).MobileUserSettings.VOICE,
+  parent: fn(8270).MobileUserSettings.VOICE,
   usePredicate() {
     return MediaEngineStore.supports(Features.SIDECHAIN_COMPRESSION);
   },

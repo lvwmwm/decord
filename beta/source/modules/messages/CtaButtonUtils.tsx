@@ -1,15 +1,15 @@
-// Module ID: 12042
-// Function ID: 12043
+// Module ID: 12078
+// Function ID: 12079
 // Name: CtaButtonUtils
-// Dependencies: [4971, 12043, 4970, 558, 568, 504, 2]
+// Dependencies: [5003, 12079, 5002, 558, 568, 504, 2]
 // Exports: getCtaButtonType
 
-// Module 12042 (CtaButtonUtils)
+// Module 12078 (CtaButtonUtils)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 4970 */;
-import useShouldRenderReportFalsePositiveButton from "useShouldRenderReportFalsePositiveButton" /* 12043 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 4971 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5002 */;
+import useShouldRenderReportFalsePositiveButton from "useShouldRenderReportFalsePositiveButton" /* 12079 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 5003 */;
 
 require = fn;
 const CtaButtonType = { MARK_AS_FALSE_POSITIVE: "mark_as_false_positive", AGE_VERIFICATION_RETRY: "age_verification_retry", CONNECT_TO_TEEN: "connect_to_teen", AGE_VERIFICATION_MANUAL_REVIEW: "age_verification_manual_review" };
@@ -29,9 +29,9 @@ export const getCtaButtonType = function getCtaButtonType(id, channel_id) {
       if (tmpResult2.isAgeVerificationMessageWithConnectToTeenCta(channel_id, id)) {
         CONNECT_TO_TEEN = obj.CONNECT_TO_TEEN;
       }
-      tmpResult2 = tmp(4970);
+      tmpResult2 = tmp(5002);
     }
-    tmpResult = tmp(4970);
+    tmpResult = tmp(5002);
   }
   return CONNECT_TO_TEEN;
 };
@@ -56,8 +56,8 @@ export const useCtaButtonType = ReactCompilerGating.isReactCompilerEnabled() ? (
   }
   let result1 = null != initialize.useStateFromStores(tmp6, tmp7);
   if (result1) {
-    result1 = tmp(4970).isAgeVerificationMessageWithConnectToTeenCta(channel_id, id);
-    const tmpResult2 = tmp(4970);
+    result1 = tmp(5002).isAgeVerificationMessageWithConnectToTeenCta(channel_id, id);
+    const tmpResult2 = tmp(5002);
   }
   if (shouldRenderReportFalsePositiveButton) {
     let CONNECT_TO_TEEN = obj.MARK_AS_FALSE_POSITIVE;

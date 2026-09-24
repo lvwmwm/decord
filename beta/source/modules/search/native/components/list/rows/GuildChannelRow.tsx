@@ -1,16 +1,16 @@
-// Module ID: 17133
-// Function ID: 17134
+// Module ID: 17143
+// Function ID: 17144
 // Name: GuildChannelRow
-// Dependencies: [109, 19, 17, 8127, 21, 4758, 580, 558, 568, 4911, 17134, 5241, 17136, 17126, 2]
+// Dependencies: [109, 19, 17, 8159, 21, 4790, 580, 558, 568, 4943, 17144, 5273, 17146, 17136, 2]
 
-// Module 17133 (GuildChannelRow)
+// Module 17143 (GuildChannelRow)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useChannelNameDefault from "useChannelName" /* 4911 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5241 */;
-import SearchListRow from "SearchListRow" /* 17126 */;
-import ChannelContent from "ChannelContent" /* 17134 */;
-import renderChannelItem from "renderChannelItem" /* 17136 */;
+import useChannelNameDefault from "useChannelName" /* 4943 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5273 */;
+import SearchListRow from "SearchListRow" /* 17136 */;
+import ChannelContent from "ChannelContent" /* 17144 */;
+import renderChannelItem from "renderChannelItem" /* 17146 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,9 +18,9 @@ require = fn;
 let closure_3 = ["channel", "subtitle", "trailing", "extras", "onPress", "voiceStates"];
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const layout = fn(8127).CHANNEL_LIST_SEARCH_LAYOUT;
+const layout = fn(8159).CHANNEL_LIST_SEARCH_LAYOUT;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { paddingVertical: 10 }, content: { flexDirection: "row", alignItems: "center" }, iconContainer: { marginRight: 0 }, simpleIcon: null };
 let size = { width: 20, height: 20, marginRight: 8, tintColor: nativeDefault.colors.TEXT_MUTED };
 obj.simpleIcon = size;
@@ -148,7 +148,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       obj3.onPress = tmp6;
       obj3.trailing = tmp9;
       obj3.extras = tmp5;
-      const tmp32 = jsx(tmp(17126).SearchListRow, {});
+      const tmp32 = jsx(tmp(17136).SearchListRow, {});
       cResult[16] = tmp15;
       cResult[17] = tmp5;
       cResult[18] = icon;
@@ -164,13 +164,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       tmp24 = tmp32;
     }
     const obj4 = { icon: null, iconWidth: 32 };
-    const obj5 = { style: tmp14.simpleIcon, source: tmp(5241).getSimpleChannelIcon(tmp4) };
-    obj4.icon = <hasOwnProperty style={tmp14.simpleIcon} source={tmp(5241).getSimpleChannelIcon(tmp4)} />;
+    const obj5 = { style: tmp14.simpleIcon, source: tmp(5273).getSimpleChannelIcon(tmp4) };
+    obj4.icon = <hasOwnProperty style={tmp14.simpleIcon} source={tmp(5273).getSimpleChannelIcon(tmp4)} />;
     cResult[11] = tmp4;
     cResult[12] = tmp14;
     cResult[13] = obj4;
     tmp17 = obj4;
-    const tmpResult = tmp(5241);
+    const tmpResult = tmp(5273);
   }
   const channelAccessibilityProps = renderChannelItem.getChannelAccessibilityProps({ channel: tmp4, unread: false, mentionCount: 0, voiceStates: tmp10 });
   cResult[8] = tmp4;

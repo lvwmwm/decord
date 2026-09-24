@@ -1,13 +1,13 @@
-// Module ID: 10451
-// Function ID: 10452
+// Module ID: 10490
+// Function ID: 10491
 // Name: useBurstToggleCoachmark
-// Dependencies: [32, 19, 17, 1376, 2042, 21, 2031, 4758, 580, 558, 568, 9485, 504, 4418, 7632, 1119, 10452, 2]
+// Dependencies: [32, 19, 17, 1376, 2042, 21, 2031, 4790, 580, 558, 568, 9517, 504, 4450, 7664, 1119, 10491, 2]
 
-// Module 10451 (useBurstToggleCoachmark)
+// Module 10490 (useBurstToggleCoachmark)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import SuperReactionIcon from "SuperReactionIcon" /* 9485 */;
+import SuperReactionIcon from "SuperReactionIcon" /* 9517 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
@@ -19,7 +19,7 @@ const View = fn(17).View;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
 let closure_9 = fn(2031).DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { upsellImageContainer: null };
 let size = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.round, height: 40, width: 40, display: "flex", alignItems: "center", justifyContent: "center" };
 obj2.upsellImageContainer = size;
@@ -89,14 +89,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     cResult[3] = items2;
-    tmpResult4 = tmp(4418);
+    tmpResult4 = tmp(4450);
   } else {
     class C {
       constructor() {
         return closure_1_6.getCurrentUser();
       }
     }
-    const tmp11 = _slicedToArray(tmp(7632).useSelectedDismissibleContent(cResult[3]), 2);
+    const tmp11 = _slicedToArray(tmp(7664).useSelectedDismissibleContent(cResult[3]), 2);
     _require = tmp12;
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
@@ -158,7 +158,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return closure_1_8(closure_1_11, {});
         }
       }
-      tmp(10452);
+      tmp(10491);
       class C {
         constructor() {
           return closure_1_6.getCurrentUser();
@@ -170,7 +170,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[9] = tmp15;
     cResult[10] = tmp11[0] === closure_9;
     cResult[11] = obj2;
-    const tmpResult5 = tmp(7632);
+    const tmpResult5 = tmp(7664);
   }
 }) : ((arg0) => {
   const items = [UserStore];
@@ -182,8 +182,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     items2 = [];
   }
-  obj2 = first(4418);
-  const tmp5 = _slicedToArray(first(7632).useSelectedDismissibleContent(items2), 2);
+  obj2 = first(4450);
+  const tmp5 = _slicedToArray(first(7664).useSelectedDismissibleContent(items2), 2);
   first = tmp5[0];
   closure_1 = tmp7;
   const items3 = [first, tmp5[1]];
@@ -202,7 +202,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj.visible = first === closure_9;
     return obj;
   }, items3);
-  const tmpResult = first(7632);
-  const coachmark = first(10452).useCoachmark(arg0, memo);
+  const tmpResult = first(7664);
+  const coachmark = first(10491).useCoachmark(arg0, memo);
   return tmp5[1];
 });

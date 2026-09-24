@@ -1,10 +1,10 @@
-// Module ID: 7507
-// Function ID: 7508
+// Module ID: 7539
+// Function ID: 7540
 // Name: useGuildShopPreviewVisible
-// Dependencies: [4399, 1078, 558, 568, 4579, 2031, 565, 7502, 2]
+// Dependencies: [4431, 1078, 558, 568, 4611, 2031, 565, 7534, 2]
 
-// Module 7507 (useGuildShopPreviewVisible)
-import PermissionStore from "PermissionStore" /* 4399 */;
+// Module 7539 (useGuildShopPreviewVisible)
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 const require = globalThis.__r;
 
@@ -126,9 +126,9 @@ export const useGuildShopPreviewVisible = ReactCompilerGating.isReactCompilerEna
   }
   const items1 = [, , ];
   ({ CREATOR_MONETIZABLE: arr2[0], CREATOR_MONETIZABLE_PROVISIONAL: arr2[1], ROLE_SUBSCRIPTIONS_ENABLED: arr2[2] } = constants2);
-  const guildEligibleForGuildProducts = tmp(7502).useGuildEligibleForGuildProducts(id);
+  const guildEligibleForGuildProducts = tmp(7534).useGuildEligibleForGuildProducts(id);
   let tmp9 = null != features;
-  const tmpResult = tmp(7502);
+  const tmpResult = tmp(7534);
   if (tmp9) {
     tmp9 = stateFromStores;
   }

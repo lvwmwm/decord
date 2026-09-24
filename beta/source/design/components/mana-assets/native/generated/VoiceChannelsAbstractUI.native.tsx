@@ -1,13 +1,13 @@
-// Module ID: 6798
-// Function ID: 6799
+// Module ID: 6830
+// Function ID: 6831
 // Name: VoiceChannelsAbstractUI
-// Dependencies: [21, 558, 568, 6799, 5802, 2]
+// Dependencies: [21, 558, 568, 6831, 5834, 2]
 
-// Module 6798 (VoiceChannelsAbstractUI)
+// Module 6830 (VoiceChannelsAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6799 from "module_6799" /* 6799 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6831 from "module_6831" /* 6831 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const VoiceChannelsAbstractUI = ReactCompilerGating.isReactCompilerEnable
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6799 };
+    const obj2 = { uri: _modDef6831 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const VoiceChannelsAbstractUI = ReactCompilerGating.isReactCompilerEnable
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6799 };
+  const obj2 = { uri: _modDef6831 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

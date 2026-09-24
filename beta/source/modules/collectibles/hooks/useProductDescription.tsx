@@ -1,9 +1,9 @@
-// Module ID: 13455
-// Function ID: 13456
+// Module ID: 13491
+// Function ID: 13492
 // Name: useProductDescription
 // Dependencies: [19, 1119, 1977, 558, 568, 2]
 
-// Module 13455 (useProductDescription)
+// Module 13491 (useProductDescription)
 import _mod19 from "module_19" /* 19 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;

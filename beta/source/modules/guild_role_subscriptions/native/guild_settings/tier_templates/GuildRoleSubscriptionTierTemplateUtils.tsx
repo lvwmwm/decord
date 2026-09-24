@@ -1,10 +1,10 @@
-// Module ID: 18250
-// Function ID: 18251
+// Module ID: 18260
+// Function ID: 18261
 // Name: GuildRoleSubscriptionTierTemplateUtils
-// Dependencies: [1099, 5298, 5318, 5316, 5306, 5305, 5313, 2]
+// Dependencies: [1099, 5330, 5350, 5348, 5338, 5337, 5345, 2]
 // Exports: getPrivateChannelIconComponent
 
-// Module 18250 (GuildRoleSubscriptionTierTemplateUtils)
+// Module 18260 (GuildRoleSubscriptionTierTemplateUtils)
 import ChannelTypes from "ChannelTypes" /* 1099 */;
 import size from "module_2" /* 2 */;
 
@@ -12,18 +12,18 @@ const result = size.fileFinishedImporting("modules/guild_role_subscriptions/nati
 
 export const getPrivateChannelIconComponent = function getPrivateChannelIconComponent(type) {
   if (ChannelTypes.ChannelTypes.GUILD_TEXT === type) {
-    return tmp(5298).TextLockIcon;
+    return tmp(5330).TextLockIcon;
   } else if (tmp(1099).ChannelTypes.GUILD_VOICE === type) {
-    return tmp(5318).VoiceLockIcon;
+    return tmp(5350).VoiceLockIcon;
   } else if (tmp(1099).ChannelTypes.GUILD_STAGE_VOICE === type) {
-    return tmp(5316).StageLockIcon;
+    return tmp(5348).StageLockIcon;
   } else if (tmp(1099).ChannelTypes.GUILD_FORUM === type) {
-    return tmp(5306).ForumLockIcon;
+    return tmp(5338).ForumLockIcon;
   } else if (tmp(1099).ChannelTypes.GUILD_MEDIA === type) {
-    return tmp(5305).ImageLockIcon;
+    return tmp(5337).ImageLockIcon;
   } else if (tmp(1099).ChannelTypes.GUILD_ANNOUNCEMENT === type) {
-    return tmp(5313).AnnouncementsLockIcon;
+    return tmp(5345).AnnouncementsLockIcon;
   } else {
-    return tmp(5298).TextLockIcon;
+    return tmp(5330).TextLockIcon;
   }
 };

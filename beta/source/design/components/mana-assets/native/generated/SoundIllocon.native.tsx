@@ -1,13 +1,13 @@
-// Module ID: 6714
-// Function ID: 6715
+// Module ID: 6746
+// Function ID: 6747
 // Name: SoundIllocon
-// Dependencies: [21, 558, 568, 6715, 5802, 2]
+// Dependencies: [21, 558, 568, 6747, 5834, 2]
 
-// Module 6714 (SoundIllocon)
+// Module 6746 (SoundIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6715 from "module_6715" /* 6715 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6747 from "module_6747" /* 6747 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const SoundIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6715 };
+    const obj2 = { uri: _modDef6747 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const SoundIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6715 };
+  const obj2 = { uri: _modDef6747 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

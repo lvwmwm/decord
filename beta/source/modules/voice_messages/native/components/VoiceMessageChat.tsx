@@ -1,31 +1,31 @@
-// Module ID: 12811
-// Function ID: 12812
+// Module ID: 12847
+// Function ID: 12848
 // Name: VoiceMessageChat
-// Dependencies: [32, 19, 17, 4750, 12090, 12091, 21, 4497, 4758, 580, 1368, 558, 568, 5187, 4759, 4462, 5387, 4754, 2]
+// Dependencies: [32, 19, 17, 4782, 12126, 12127, 21, 4529, 4790, 580, 1368, 558, 568, 5219, 4791, 4494, 5419, 4786, 2]
 
-// Module 12811 (VoiceMessageChat)
+// Module 12847 (VoiceMessageChat)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
-import spring from "spring" /* 5187 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 5387 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
+import spring from "spring" /* 5219 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 5419 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ActivityIndicator } = get_ActivityIndicator);
-let useVoiceMessagesUIStore = fn(12090).useVoiceMessagesUIStore;
-const VoiceMessageConstants = fn(12091);
+let useVoiceMessagesUIStore = fn(12126).useVoiceMessagesUIStore;
+const VoiceMessageConstants = fn(12127);
 ({ VOICE_RECORDING_MAX_DURATION_MILLIS: closure_8, VOICE_RECORDING_MAX_DURATION_OFFSET: closure_9, VOICE_RECORDING_REALLY_WARN_DURATION_MILLIS: c10, VOICE_RECORDING_WARN_DURATION_MILLIS: closure_11, WAVEFORM_WAVE_MAX_VALUE: closure_12 } = VoiceMessageConstants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
 let closure_15 = ReanimatedRexport.createAnimatedComponent(ActivityIndicator);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { height: "100%", flexDirection: "row", alignItems: "center", paddingVertical: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_VERTICAL, paddingHorizontal: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_PILL_PADDING_HORIZONTAL, gap: nativeDefault.modules.mobile.VOICE_MESSAGE_CHAT_GAP, borderRadius: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_PILL_BORDER_RADIUS, backgroundColor: nativeDefault.colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: nativeDefault.colors.MOBILE_CHATINPUT_BORDER_ACTIVE }, loading: { position: "absolute", left: 12 }, dot: null, dotDismissed: null, waveformContainer: null, waveformBar: null, durationContainer: null, duration: null };
 let size = { height: 6, width: 6, backgroundColor: nativeDefault.unsafe_rawColors.RED_400, borderRadius: nativeDefault.radii.round };
 obj.dot = size;
@@ -350,7 +350,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
   const tmp6Result = tmp6(tmp14);
   closure_5 = tmp6Result;
   const tmp10 = first1(noop.useState(tmp8), 2);
-  const token = animationValue(4462).useToken(nativeDefault.modules.mobile.VOICE_MESSAGE_DURATION_TEXT_STYLE);
+  const token = animationValue(4494).useToken(nativeDefault.modules.mobile.VOICE_MESSAGE_DURATION_TEXT_STYLE);
   if (cResult[4] === tmp6Result) {
     class O {
       constructor(arg0) {
@@ -478,7 +478,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
     Z.__closure = obj3;
     Z.__workletHash = 9127206038844;
     Z.__initData = __initData3;
-    const animatedStyle = tmp(4497).useAnimatedStyle(Z);
+    const animatedStyle = tmp(4529).useAnimatedStyle(Z);
     if (cResult[13] === animatedStyle) {
       class F {
         constructor() {
@@ -688,7 +688,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
           }
         }
         const obj5 = { style: tmp4.duration, variant: token, color: "text-default", tabularNumbers: true, children: tmp19 };
-        const tmp38 = closure_13(tmp(4754).Text, obj5);
+        const tmp38 = closure_13(tmp(4786).Text, obj5);
         class Z {
           constructor() {
             obj = { opacity: animationValue.get() };
@@ -717,7 +717,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
     cResult[13] = animatedStyle;
     cResult[14] = tmp4.durationContainer;
     cResult[15] = items2;
-    const tmpResult2 = tmp(4497);
+    const tmpResult2 = tmp(4529);
   }
   class G {
     constructor() {

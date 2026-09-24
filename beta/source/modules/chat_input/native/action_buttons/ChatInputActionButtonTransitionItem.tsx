@@ -1,19 +1,19 @@
-// Module ID: 12393
-// Function ID: 12394
+// Module ID: 12429
+// Function ID: 12430
 // Name: ChatInputActionButtonTransitionItem
-// Dependencies: [19, 17, 12092, 21, 558, 568, 4471, 4497, 4759, 12394, 2]
+// Dependencies: [19, 17, 12128, 21, 558, 568, 4503, 4529, 4791, 12430, 2]
 // Exports: interactivityProps
 
-// Module 12393 (ChatInputActionButtonTransitionItem)
+// Module 12429 (ChatInputActionButtonTransitionItem)
 import c from "c" /* 568 */;
-import native from "native" /* 4471 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12394 */;
+import native from "native" /* 4503 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12430 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const StyleSheet = fn(17).StyleSheet;
-const CHAT_INPUT_TIMING_CONFIG = fn(12092).CHAT_INPUT_TIMING_CONFIG;
+const CHAT_INPUT_TIMING_CONFIG = fn(12128).CHAT_INPUT_TIMING_CONFIG;
 const jsx = fn(21).jsx;
 const styles = StyleSheet.create({ transitionItem: { position: "absolute" }, transitionItemCentered: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0, alignItems: "center", justifyContent: "center" } });
 let closure_7 = { code: "function ChatInputActionButtonTransitionItemTsx1(finished){const{runOnJS,cleanup}=this.__closure;if(finished===true){runOnJS(cleanup)();}}" };
@@ -96,21 +96,21 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   }
   let fn = function p() {
     if (state === native.TransitionStates.YEETED) {
-      const tmpResult = tmp(4759);
+      const tmpResult = tmp(4791);
       const fn = function t(arg0) {
         if (true === arg0) {
           state(sharedValue[7]).runOnJS(cleanup)();
           const obj = state(sharedValue[7]);
         }
       };
-      let obj = { runOnJS: tmp(4497).runOnJS, cleanup };
+      let obj = { runOnJS: tmp(4529).runOnJS, cleanup };
       fn.__closure = obj;
       fn.__workletHash = 10965161938750;
       fn.__initData = __initData;
       const result = sharedValue.set(tmpResult.withTiming(0, CHAT_INPUT_TIMING_CONFIG, "respect-motion-settings", fn));
     } else {
-      const result1 = sharedValue.set(tmp(4759).withTiming(1, CHAT_INPUT_TIMING_CONFIG, "respect-motion-settings"));
-      const tmpResult2 = tmp(4759);
+      const result1 = sharedValue.set(tmp(4791).withTiming(1, CHAT_INPUT_TIMING_CONFIG, "respect-motion-settings"));
+      const tmpResult2 = tmp(4791);
     }
   };
   const items1 = [state, sharedValue, cleanup];
@@ -134,21 +134,21 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   const items = [state, sharedValue, cleanup];
   const effect = noop.useEffect(() => {
     if (state === native.TransitionStates.YEETED) {
-      const tmpResult = tmp(4759);
+      const tmpResult = tmp(4791);
       const fn = function t(arg0) {
         if (true === arg0) {
           state(sharedValue[7]).runOnJS(cleanup)();
           const obj = state(sharedValue[7]);
         }
       };
-      let obj = { runOnJS: tmp(4497).runOnJS, cleanup };
+      let obj = { runOnJS: tmp(4529).runOnJS, cleanup };
       fn.__closure = obj;
       fn.__workletHash = 12574891324796;
       fn.__initData = __initData;
       const result = sharedValue.set(tmpResult.withTiming(0, CHAT_INPUT_TIMING_CONFIG, "respect-motion-settings", fn));
     } else {
-      const result1 = sharedValue.set(tmp(4759).withTiming(1, CHAT_INPUT_TIMING_CONFIG, "respect-motion-settings"));
-      const tmpResult2 = tmp(4759);
+      const result1 = sharedValue.set(tmp(4791).withTiming(1, CHAT_INPUT_TIMING_CONFIG, "respect-motion-settings"));
+      const tmpResult2 = tmp(4791);
     }
   }, items);
   let obj = state(sharedValue[7]);

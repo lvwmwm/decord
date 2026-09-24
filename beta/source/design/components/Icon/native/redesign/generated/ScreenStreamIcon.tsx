@@ -1,13 +1,13 @@
-// Module ID: 9344
-// Function ID: 9345
+// Module ID: 9376
+// Function ID: 9377
 // Name: ScreenStreamIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 9345, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9377, 4493, 2]
 
-// Module 9344 (ScreenStreamIcon)
+// Module 9376 (ScreenStreamIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod9345 from "module_9345" /* 9345 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9377 from "module_9377" /* 9377 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const ScreenStreamIcon = ReactCompilerGating.isReactCompilerEnabled() ? (
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(9345);
+    const tmpResult = tmp(9377);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const ScreenStreamIcon = ReactCompilerGating.isReactCompilerEnabled() ? (
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9345, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9377, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

@@ -1,11 +1,11 @@
-// Module ID: 17177
-// Function ID: 17178
+// Module ID: 17187
+// Function ID: 17188
 // Name: SearchIndexingScreen
-// Dependencies: [19, 21, 558, 568, 12506, 12488, 17112, 2]
+// Dependencies: [19, 21, 558, 568, 12542, 12524, 17122, 2]
 
-// Module 17177 (SearchIndexingScreen)
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12506 */;
-import pages_ErrorScreenDefault from "pages/ErrorScreen" /* 17112 */;
+// Module 17187 (SearchIndexingScreen)
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12542 */;
+import pages_ErrorScreenDefault from "pages/ErrorScreen" /* 17122 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -33,11 +33,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) =
   }
   const effect = noop.useEffect(tmp4, tmp5);
   if (cResult[3] !== searchContext) {
-    const indexingErrorText = searchContext(12488).getIndexingErrorText(searchContext);
+    const indexingErrorText = searchContext(12524).getIndexingErrorText(searchContext);
     cResult[3] = searchContext;
     cResult[4] = indexingErrorText;
     let tmp7 = indexingErrorText;
-    const tmpResult = searchContext(12488);
+    const tmpResult = searchContext(12524);
   } else {
     tmp7 = cResult[4];
   }
@@ -57,6 +57,6 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) =
   const effect = noop.useEffect(() => {
     search_tracking_TrackingDefault.trackSearchIndexing({ searchContext });
   }, items);
-  const text = searchContext(12488).getIndexingErrorText(searchContext);
+  const text = searchContext(12524).getIndexingErrorText(searchContext);
   return jsx(pages_ErrorScreenDefault, { text });
 });

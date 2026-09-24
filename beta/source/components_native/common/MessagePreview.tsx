@@ -1,14 +1,14 @@
-// Module ID: 17290
-// Function ID: 17291
+// Module ID: 17300
+// Function ID: 17301
 // Name: MessagePreview
-// Dependencies: [19, 8636, 1078, 21, 558, 568, 504, 1119, 17118, 13559, 2]
+// Dependencies: [19, 8668, 1078, 21, 558, 568, 504, 1119, 17128, 13595, 2]
 
-// Module 17290 (MessagePreview)
+// Module 17300 (MessagePreview)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import noop from "module_19" /* 19 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8636 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8668 */;
 
 require = fn;
 const Constants = fn(1078);
@@ -83,7 +83,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj2 = { channelId, messages, jumpToChatProps: tmp10, analyticsLocation };
-    const tmp18 = jsx(tmp(13559).ChatPreview, { channelId, messages, jumpToChatProps: tmp10, analyticsLocation });
+    const tmp18 = jsx(tmp(13595).ChatPreview, { channelId, messages, jumpToChatProps: tmp10, analyticsLocation });
     cResult[8] = channelId;
     cResult[9] = tmp10;
     cResult[10] = messages;
@@ -111,5 +111,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const effect = noop.useEffect(() => () => {
     jumpTargetId(closure_1_2[8]).clearMessages();
   }, []);
-  return jsx(onBeforeJumpToMessage(13559).ChatPreview, { channelId: channelId.channelId, messages: stateFromStoresObject.messages, jumpToChatProps: memo, analyticsLocation });
+  return jsx(onBeforeJumpToMessage(13595).ChatPreview, { channelId: channelId.channelId, messages: stateFromStoresObject.messages, jumpToChatProps: memo, analyticsLocation });
 });

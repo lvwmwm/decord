@@ -1,10 +1,10 @@
-// Module ID: 16496
-// Function ID: 16497
+// Module ID: 16506
+// Function ID: 16507
 // Name: MobileBoostProgressBarExperiment
 // Dependencies: [1438, 558, 568, 2]
 // Exports: getMobileBoostProgressBarEnabled
 
-// Module 16496 (MobileBoostProgressBarExperiment)
+// Module 16506 (MobileBoostProgressBarExperiment)
 import c from "c" /* 568 */;
 import ApexExperiment from "ApexExperiment" /* 1438 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

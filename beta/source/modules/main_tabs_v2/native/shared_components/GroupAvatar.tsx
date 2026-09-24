@@ -1,18 +1,18 @@
-// Module ID: 13335
-// Function ID: 13336
+// Module ID: 13371
+// Function ID: 13372
 // Name: GroupAvatar
-// Dependencies: [19, 17, 4750, 21, 4758, 580, 558, 568, 4610, 5801, 565, 4497, 4759, 5187, 7223, 4754, 5802, 2]
+// Dependencies: [19, 17, 4782, 21, 4790, 580, 558, 568, 4642, 5833, 565, 4529, 4791, 5219, 7255, 4786, 5834, 2]
 
-// Module 13335 (GroupAvatar)
+// Module 13371 (GroupAvatar)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import timing from "timing" /* 4759 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7223 */;
+import timing from "timing" /* 4791 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7255 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
-const Text_Text = tmp(4754);
+const Text_Text = tmp(4786);
 require = fn;
 let View = fn(17).View;
 const jsxProd = fn(21);
@@ -21,7 +21,7 @@ const createElement = fn(19).createElement;
 let c9 = 38;
 const SPRING_OPTIONS_SCALE = { damping: 30, stiffness: 400 };
 const SPRING_OPTIONS_POSITION = { damping: 30, stiffness: 400 };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_12 = createStyles.createStyles(() => {
   const obj = { groupContainer: { position: "relative" }, shadowContainer: { borderRadius: nativeDefault.radii.sm }, shadowContainerBackground: {}, shadowContainerBackgroundLight: { opacity: 0.4 }, shadowContainerBackgroundDark: { opacity: 0.15 }, gradientContainer: null, gradientDimOverlay: null, gradientImageBorder: null, avatarContainer: null, avatar: null, avatarWrapper: null, overflowCount: null };
   const size = { width: nativeDefault.modules.mobile.GROUP_AVATAR_SIZE, height: nativeDefault.modules.mobile.GROUP_AVATAR_SIZE, overflow: "hidden", borderRadius: nativeDefault.radii.sm };
@@ -644,7 +644,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((users) => {
               obj = {};
               tmp5 = obj;
               tmp3 = createElement;
-              tmp4 = f63003;
+              tmp4 = f63054;
               merged = Object.assign(users);
               obj.key = tmp.id;
               tmp7 = closure_6;
@@ -652,22 +652,22 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((users) => {
               tmp8 = closure_3;
               if (!closure_3) {
                 tmp10 = jsx;
-                tmp11 = f63007;
+                tmp11 = f63058;
                 obj1 = { guildId: null, user: null };
                 tmp12 = guildId;
                 obj1.guildId = guildId;
                 obj1.user = tmp;
-                tmp13 = jsx(f63007, obj1);
+                tmp13 = jsx(f63058, obj1);
                 tmp3Result = tmp3(tmp4, obj, tmp13);
               } else {
                 tmp9 = c5;
               }
               tmp14 = jsx;
-              tmp15 = f63005;
+              tmp15 = f63056;
               obj4 = { count: null };
               tmp16 = closure_4;
               obj4.count = closure_4;
-              tmp13 = jsx(f63005, obj4);
+              tmp13 = jsx(f63056, obj4);
             }
             return;
           }

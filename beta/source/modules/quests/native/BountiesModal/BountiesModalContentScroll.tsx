@@ -1,41 +1,41 @@
-// Module ID: 15272
-// Function ID: 15273
+// Module ID: 15282
+// Function ID: 15283
 // Name: BountiesModalContentScroll
-// Dependencies: [32, 19, 17, 7943, 5663, 15273, 1078, 2042, 21, 1369, 580, 558, 568, 4758, 4497, 1482, 1616, 15274, 11607, 7940, 15269, 4759, 4762, 7959, 11621, 1114, 504, 15277, 15278, 1259, 7969, 15279, 10564, 5670, 5668, 11636, 15280, 15313, 11906, 15314, 8995, 15318, 5198, 15319, 15283, 4486, 15320, 2]
+// Dependencies: [32, 19, 17, 7975, 5695, 15283, 1078, 2042, 21, 1369, 580, 558, 568, 4790, 4529, 1482, 1616, 15284, 11643, 7972, 15279, 4791, 4794, 7991, 11657, 1114, 504, 15287, 15288, 1259, 8001, 15289, 10600, 5702, 5700, 11672, 15290, 15323, 11942, 15324, 9027, 15328, 5230, 15329, 15293, 4518, 15330, 2]
 
-// Module 15272 (BountiesModalContentScroll)
+// Module 15282 (BountiesModalContentScroll)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import ThemeContextProvider from "ThemeContextProvider" /* 4486 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
-import timingPresets from "timingPresets" /* 4762 */;
-import QuestContent from "QuestContent" /* 5668 */;
-import AdCreativeType from "AdCreativeType" /* 5670 */;
-import QuestDataUtils from "QuestDataUtils" /* 7940 */;
-import AnalyticsActions from "AnalyticsActions" /* 7959 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7969 */;
-import QuestActionCreators from "QuestActionCreators" /* 10564 */;
-import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 11621 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 11636 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15269 */;
-import useBountiesRecapScroll from "useBountiesRecapScroll" /* 15278 */;
-import BountiesScrollVideoItem from "BountiesScrollVideoItem" /* 15280 */;
-import BountiesScrollRecapPage from "BountiesScrollRecapPage" /* 15314 */;
-import shared_ThemeTypes from "shared/ThemeTypes" /* 15320 */;
+import ThemeContextProvider from "ThemeContextProvider" /* 4518 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
+import timingPresets from "timingPresets" /* 4794 */;
+import QuestContent from "QuestContent" /* 5700 */;
+import AdCreativeType from "AdCreativeType" /* 5702 */;
+import QuestDataUtils from "QuestDataUtils" /* 7972 */;
+import AnalyticsActions from "AnalyticsActions" /* 7991 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8001 */;
+import QuestActionCreators from "QuestActionCreators" /* 10600 */;
+import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 11657 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 11672 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15279 */;
+import useBountiesRecapScroll from "useBountiesRecapScroll" /* 15288 */;
+import BountiesScrollVideoItem from "BountiesScrollVideoItem" /* 15290 */;
+import BountiesScrollRecapPage from "BountiesScrollRecapPage" /* 15324 */;
+import shared_ThemeTypes from "shared/ThemeTypes" /* 15330 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BountyStore from "BountyStore" /* 7943 */;
+import BountyStore from "BountyStore" /* 7975 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const QuestConstants = fn(5663);
+const QuestConstants = fn(5695);
 ({ BOUNTY_ORB_AMOUNT: closure_8, DEFAULT_PLACEHOLDER_ENTRYPOINT_BOUNTY_ID: closure_9 } = QuestConstants);
-const BountiesModalConstants = fn(15273);
+const BountiesModalConstants = fn(15283);
 ({ getBountyVideoEndAppStoreSheetHeight: c10, getBountyVideoEndPeekTargetScale: closure_11 } = BountiesModalConstants);
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_12, ComponentActions: map1 } = Constants);
@@ -107,7 +107,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((height) => {
   }
   return tmp2;
 }) : ((height) => closure_1_15(timestampProducer, { style: { height: height.height } }));
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_33 = createStyles.createStyles(() => {
   const obj = { root: { flex: 1 }, recapPage: { position: "absolute", zIndex }, listWrapper: { position: "absolute", zIndex: zIndex2, overflow: "hidden" }, closeButton: { position: "absolute", zIndex: zIndex4 }, peekGradient: { position: "absolute", zIndex: zIndex3 } };
   return obj;
@@ -319,7 +319,7 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
   let ref = questHomeBounties.useRef(null);
   let obj = initialBountyId(568);
   let tmp6 = _slicedToArray;
-  [tmp8, dependencyMap] = questHomeBounties.useState(initialBountyId(15274).BOUNTIES_MODAL_BASE_FOOTER_HEIGHT);
+  [tmp8, dependencyMap] = questHomeBounties.useState(initialBountyId(15284).BOUNTIES_MODAL_BASE_FOOTER_HEIGHT);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function c(nativeEvent) {
       dependencyMap(Math.ceil(nativeEvent.nativeEvent.layout.height));
@@ -339,8 +339,8 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
   }
   const tmp11 = closure_37(tmp10);
   _slicedToArray = tmp11;
-  let tmp7 = _slicedToArray(questHomeBounties.useState(initialBountyId(15274).BOUNTIES_MODAL_BASE_FOOTER_HEIGHT), 2);
-  questHomeBounties = initialBountyId(11607).useQuestHomeBounties().questHomeBounties;
+  let tmp7 = _slicedToArray(questHomeBounties.useState(initialBountyId(15284).BOUNTIES_MODAL_BASE_FOOTER_HEIGHT), 2);
+  questHomeBounties = initialBountyId(11643).useQuestHomeBounties().questHomeBounties;
   if (cResult[3] === initialBountyId) {
     if (cResult[4] === questHomeBounties) {
       let tmp12 = cResult[5];
@@ -354,9 +354,9 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
           let tmp15 = cResult[10];
         }
         const effect = obj2.useEffect(tmp14, tmp15);
-        const sharedValue = tmp(4497).useSharedValue(1);
-        const tmpResult3 = tmp(4497);
-        const sharedValue1 = tmp(4497).useSharedValue(0);
+        const sharedValue = tmp(4529).useSharedValue(1);
+        const tmpResult3 = tmp(4529);
+        const sharedValue1 = tmp(4529).useSharedValue(0);
         class Oe {
           constructor() {
             if (closure_6) {
@@ -558,7 +558,7 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
         cResult[13] = height;
         cResult[14] = tmp24;
         tmp22 = tmp24;
-        const tmpResult4 = tmp(4497);
+        const tmpResult4 = tmp(4529);
       }
     }
     class Oe {
@@ -636,14 +636,14 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
   dependencyMap = tmp;
   const height = sourceQuestContent(1482)().height;
   noop.useRef(null);
-  [tmp7, c4] = height(noop.useState(initialBountyId(15274).BOUNTIES_MODAL_BASE_FOOTER_HEIGHT), 2);
+  [tmp7, c4] = height(noop.useState(initialBountyId(15284).BOUNTIES_MODAL_BASE_FOOTER_HEIGHT), 2);
   const callback = noop.useCallback((nativeEvent) => {
     _undefined(Math.ceil(nativeEvent.nativeEvent.layout.height));
   }, []);
   const tmp9 = sharedValue2({ footerHeight: tmp7 });
   styles = tmp9;
-  let tmp6 = height(noop.useState(initialBountyId(15274).BOUNTIES_MODAL_BASE_FOOTER_HEIGHT), 2);
-  const questHomeBounties = initialBountyId(11607).useQuestHomeBounties().questHomeBounties;
+  let tmp6 = height(noop.useState(initialBountyId(15284).BOUNTIES_MODAL_BASE_FOOTER_HEIGHT), 2);
+  const questHomeBounties = initialBountyId(11643).useQuestHomeBounties().questHomeBounties;
   const data = height(noop.useState(() => {
     const findIndexResult = questHomeBounties.findIndex((id) => id.id === initialBountyId);
     if (findIndexResult < 0) {
@@ -673,11 +673,11 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
     }
   }, items);
   adContentId = closure_8;
-  let obj2 = initialBountyId(11607);
-  const sharedValue = initialBountyId(4497).useSharedValue(1);
-  let obj3 = initialBountyId(4497);
-  const sharedValue1 = initialBountyId(4497).useSharedValue(0);
-  let obj4 = initialBountyId(4497);
+  let obj2 = initialBountyId(11643);
+  const sharedValue = initialBountyId(4529).useSharedValue(1);
+  let obj3 = initialBountyId(4529);
+  const sharedValue1 = initialBountyId(4529).useSharedValue(0);
+  let obj4 = initialBountyId(4529);
   [tmp15, c12] = height(noop.useState(null), 2);
   const ref = noop.useRef(null);
   noop.useRef(0);
@@ -720,7 +720,7 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
   const items7 = [data, closure_8];
   const stateFromStores = initialBountyId(504).useStateFromStores(items6, () => BountyStore.getCompletedBountyCount(first) * closure_9, items7);
   let obj5 = initialBountyId(504);
-  const bountyRecurringSwipeUpNux = initialBountyId(15277).useBountyRecurringSwipeUpNux({ isEligible: tmp23 });
+  const bountyRecurringSwipeUpNux = initialBountyId(15287).useBountyRecurringSwipeUpNux({ isEligible: tmp23 });
   let hasRecurringSwipeUpNux = bountyRecurringSwipeUpNux.hasRecurringSwipeUpNux;
   const dismissRecurringSwipeUpNux = bountyRecurringSwipeUpNux.dismissRecurringSwipeUpNux;
   const height2 = tmp9.height;
@@ -734,8 +734,8 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
   const sum1 = result + height2;
   const items8 = [sum1, result, height2];
   const memo3 = noop.useMemo(() => ({ lastBounty, fullRecap: sum1, revealHeight: height2 }), items8);
-  const obj6 = initialBountyId(15277);
-  const handleRecapMomentumEnd = initialBountyId(15278).useBountiesRecapScroll({ listRef: ref, enabled: tmp27, offsets: memo3 }).handleRecapMomentumEnd;
+  const obj6 = initialBountyId(15287);
+  const handleRecapMomentumEnd = initialBountyId(15288).useBountiesRecapScroll({ listRef: ref, enabled: tmp27, offsets: memo3 }).handleRecapMomentumEnd;
   const items9 = [data, sum1, stateFromStores > 0, sum];
   const memo4 = noop.useMemo(() => {
     const mapped = first.map((item, index) => index * slotHeight);
@@ -750,7 +750,7 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
   const tmp35 = height(noop.useState(false), 2);
   const first2 = tmp35[0];
   closure_32 = tmp37;
-  const obj7 = initialBountyId(15278);
+  const obj7 = initialBountyId(15288);
   [tmp39, tmp40] = height(noop.useState(true), 2);
   c33 = tmp40;
   const tmp38 = height(noop.useState(true), 2);
@@ -760,11 +760,11 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
   const first3 = tmp44[0];
   closure_36 = tmp44[1];
   const tmp41 = height(noop.useState(false), 2);
-  sharedValue2 = initialBountyId(4497).useSharedValue(false);
-  const obj8 = initialBountyId(4497);
-  const sharedValue3 = initialBountyId(4497).useSharedValue(false);
-  const obj9 = initialBountyId(4497);
-  const sharedValue4 = initialBountyId(4497).useSharedValue(0);
+  sharedValue2 = initialBountyId(4529).useSharedValue(false);
+  const obj8 = initialBountyId(4529);
+  const sharedValue3 = initialBountyId(4529).useSharedValue(false);
+  const obj9 = initialBountyId(4529);
+  const sharedValue4 = initialBountyId(4529).useSharedValue(0);
   const memo5 = noop.useMemo(() => initialBountyId(closure_2[29]).v4(), []);
   noop.useRef(0);
   noop.useRef(0);
@@ -806,8 +806,8 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
     callback2();
     callback3(arg0);
   }, items11);
-  const obj10 = initialBountyId(4497);
-  const orbAmount = initialBountyId(15279).useBountiesRecapOrbCount({ scrollY: sharedValue4, lastBountyScrollOffset: result, recapRevealHeight: height2, targetOrbAmount: stateFromStores, enabled: tmp27 });
+  const obj10 = initialBountyId(4529);
+  const orbAmount = initialBountyId(15289).useBountiesRecapOrbCount({ scrollY: sharedValue4, lastBountyScrollOffset: result, recapRevealHeight: height2, targetOrbAmount: stateFromStores, enabled: tmp27 });
   const items12 = [data, first3];
   const effect2 = noop.useEffect(() => {
     if (null != first[first3]) {
@@ -860,7 +860,7 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
     obj.trackAdContentEvent(obj2);
     BountiesModalActionCreatorsDefault.hideModal();
   }, items14);
-  const obj11 = initialBountyId(15279);
+  const obj11 = initialBountyId(15289);
   const obj13 = { onScroll: null, onBeginDrag: null, onEndDrag: null, onMomentumEnd: null };
   class Tt {
     constructor(arg0) {
@@ -926,14 +926,14 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
     }
     const result = sharedValue2.set(false);
   }
-  const obj12 = initialBountyId(4497);
+  const obj12 = initialBountyId(4529);
   const obj14 = { scrollY: sharedValue4, isDraggingSharedValue: sharedValue3, isScrollingInBoundsSharedValue: sharedValue2, isScrollEventInBounds: first2 };
   const obj15 = { isDraggingSharedValue: sharedValue3, IS_ANDROID: callback1, isScrollingInBoundsSharedValue: sharedValue2 };
-  ft.__closure = { showRecapPullZone: stateFromStores > 0, runOnJS: initialBountyId(4497).runOnJS, handleRecapMomentumEnd, isScrollingInBoundsSharedValue: sharedValue2 };
+  ft.__closure = { showRecapPullZone: stateFromStores > 0, runOnJS: initialBountyId(4529).runOnJS, handleRecapMomentumEnd, isScrollingInBoundsSharedValue: sharedValue2 };
   ft.__workletHash = 12889620623212;
   ft.__initData = __initData6;
   obj13.onMomentumEnd = ft;
-  const obj16 = { showRecapPullZone: stateFromStores > 0, runOnJS: initialBountyId(4497).runOnJS, handleRecapMomentumEnd, isScrollingInBoundsSharedValue: sharedValue2 };
+  const obj16 = { showRecapPullZone: stateFromStores > 0, runOnJS: initialBountyId(4529).runOnJS, handleRecapMomentumEnd, isScrollingInBoundsSharedValue: sharedValue2 };
   const animatedScrollHandler = obj12.useAnimatedScrollHandler(obj13);
   function yt() {
     return Math.min(Math.max(Math.round(sharedValue4.get() / c22), 0), c23);
@@ -953,12 +953,12 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
       return;
     }
   }
-  const obj17 = initialBountyId(4497);
-  Dt.__closure = { runOnJS: initialBountyId(4497).runOnJS, commitSwipe: callback4 };
+  const obj17 = initialBountyId(4529);
+  Dt.__closure = { runOnJS: initialBountyId(4529).runOnJS, commitSwipe: callback4 };
   Dt.__workletHash = 13969036336836;
   Dt.__initData = __initData8;
   const animatedReaction = obj17.useAnimatedReaction(yt, Dt);
-  const obj18 = { runOnJS: initialBountyId(4497).runOnJS, commitSwipe: callback4 };
+  const obj18 = { runOnJS: initialBountyId(4529).runOnJS, commitSwipe: callback4 };
   class It {
     constructor() {
       tmp = closure_24;
@@ -973,8 +973,8 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
       return tmp;
     }
   }
-  const obj19 = initialBountyId(4497);
-  It.__closure = { showRecapPullZone: stateFromStores > 0, scrollY: sharedValue4, lastBountyScrollOffset: result, RECAP_SNAP_EPSILON: initialBountyId(15278).RECAP_SNAP_EPSILON };
+  const obj19 = initialBountyId(4529);
+  It.__closure = { showRecapPullZone: stateFromStores > 0, scrollY: sharedValue4, lastBountyScrollOffset: result, RECAP_SNAP_EPSILON: initialBountyId(15288).RECAP_SNAP_EPSILON };
   It.__workletHash = 9483642326616;
   It.__initData = __initData9;
   class Ct {
@@ -989,12 +989,12 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
       return;
     }
   }
-  const obj20 = { showRecapPullZone: stateFromStores > 0, scrollY: sharedValue4, lastBountyScrollOffset: result, RECAP_SNAP_EPSILON: initialBountyId(15278).RECAP_SNAP_EPSILON };
-  Ct.__closure = { runOnJS: initialBountyId(4497).runOnJS, setShowRecapFooter: tmp43 };
+  const obj20 = { showRecapPullZone: stateFromStores > 0, scrollY: sharedValue4, lastBountyScrollOffset: result, RECAP_SNAP_EPSILON: initialBountyId(15288).RECAP_SNAP_EPSILON };
+  Ct.__closure = { runOnJS: initialBountyId(4529).runOnJS, setShowRecapFooter: tmp43 };
   Ct.__workletHash = 16849792087458;
   Ct.__initData = __initData10;
   const animatedReaction1 = obj19.useAnimatedReaction(It, Ct);
-  const obj21 = { runOnJS: initialBountyId(4497).runOnJS, setShowRecapFooter: tmp43 };
+  const obj21 = { runOnJS: initialBountyId(4529).runOnJS, setShowRecapFooter: tmp43 };
   function mt() {
     let tmp = closure_24;
     if (closure_24) {
@@ -1017,12 +1017,12 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
       return;
     }
   }
-  const obj22 = initialBountyId(4497);
-  Bt.__closure = { runOnJS: initialBountyId(4497).runOnJS, setIsRecapPageRevealed: tmp32[1] };
+  const obj22 = initialBountyId(4529);
+  Bt.__closure = { runOnJS: initialBountyId(4529).runOnJS, setIsRecapPageRevealed: tmp32[1] };
   Bt.__workletHash = 6558318546127;
   Bt.__initData = __initData12;
   const animatedReaction2 = obj22.useAnimatedReaction(mt, Bt);
-  const obj23 = { runOnJS: initialBountyId(4497).runOnJS, setIsRecapPageRevealed: tmp32[1] };
+  const obj23 = { runOnJS: initialBountyId(4529).runOnJS, setIsRecapPageRevealed: tmp32[1] };
   function wt() {
     let tmp = closure_24;
     if (closure_24) {
@@ -1031,8 +1031,8 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
     }
     return tmp;
   }
-  const obj24 = initialBountyId(4497);
-  wt.__closure = { showRecapPullZone: stateFromStores > 0, scrollY: sharedValue4, fullRecapScrollOffset: sum1, RECAP_SNAP_EPSILON: initialBountyId(15278).RECAP_SNAP_EPSILON };
+  const obj24 = initialBountyId(4529);
+  wt.__closure = { showRecapPullZone: stateFromStores > 0, scrollY: sharedValue4, fullRecapScrollOffset: sum1, RECAP_SNAP_EPSILON: initialBountyId(15288).RECAP_SNAP_EPSILON };
   wt.__workletHash = 14769605032316;
   wt.__initData = __initData13;
   function xt(arg0, arg1) {
@@ -1040,8 +1040,8 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
       ReanimatedRexport.runOnJS(closure_32)(arg0);
     }
   }
-  const obj25 = { showRecapPullZone: stateFromStores > 0, scrollY: sharedValue4, fullRecapScrollOffset: sum1, RECAP_SNAP_EPSILON: initialBountyId(15278).RECAP_SNAP_EPSILON };
-  xt.__closure = { runOnJS: initialBountyId(4497).runOnJS, setIsRecapPageOnTop: tmp35[1] };
+  const obj25 = { showRecapPullZone: stateFromStores > 0, scrollY: sharedValue4, fullRecapScrollOffset: sum1, RECAP_SNAP_EPSILON: initialBountyId(15288).RECAP_SNAP_EPSILON };
+  xt.__closure = { runOnJS: initialBountyId(4529).runOnJS, setIsRecapPageOnTop: tmp35[1] };
   xt.__workletHash = 2311489082799;
   xt.__initData = __initData14;
   const animatedReaction3 = obj24.useAnimatedReaction(wt, xt);
@@ -1054,7 +1054,7 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
     }
     return tmp;
   }, items15);
-  const obj26 = { runOnJS: initialBountyId(4497).runOnJS, setIsRecapPageOnTop: tmp35[1] };
+  const obj26 = { runOnJS: initialBountyId(4529).runOnJS, setIsRecapPageOnTop: tmp35[1] };
   class Vt {
     constructor() {
       value = closure_10.get();
@@ -1073,7 +1073,7 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
   Vt.__closure = { videoEndPeekScale: sharedValue, videoEndAppStoreProgress: sharedValue1, BOUNTIES_MODAL_FOOTER_HEIGHT, videoLayout: tmp9 };
   Vt.__workletHash = 1951449511294;
   Vt.__initData = __initData15;
-  animatedStyle = initialBountyId(4497).useAnimatedStyle(Vt);
+  animatedStyle = initialBountyId(4529).useAnimatedStyle(Vt);
   const items16 = [animatedStyle, tmp.listWrapper, , ];
   ({ left: arr18[2], width: arr18[3] } = tmp9);
   const memo7 = noop.useMemo(() => {
@@ -1086,7 +1086,7 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
   const tmp63 = height(noop.useState(false), 2);
   first4 = tmp63[0];
   closure_49 = tmp65;
-  const obj27 = initialBountyId(4497);
+  const obj27 = initialBountyId(4529);
   const obj28 = { videoEndPeekScale: sharedValue, videoEndAppStoreProgress: sharedValue1, BOUNTIES_MODAL_FOOTER_HEIGHT, videoLayout: tmp9 };
   function kt() {
     value = sharedValue.get();
@@ -1104,8 +1104,8 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
       ReanimatedRexport.runOnJS(closure_49)(arg0);
     }
   }
-  const obj29 = initialBountyId(4497);
-  bt.__closure = { runOnJS: initialBountyId(4497).runOnJS, setHideListFooterPadding: tmp63[1] };
+  const obj29 = initialBountyId(4529);
+  bt.__closure = { runOnJS: initialBountyId(4529).runOnJS, setHideListFooterPadding: tmp63[1] };
   bt.__workletHash = 4435232161253;
   bt.__initData = __initData17;
   const animatedReaction4 = obj29.useAnimatedReaction(kt, bt);
@@ -1151,31 +1151,31 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
     items[1] = size;
     return items;
   }, items20);
-  const obj30 = { runOnJS: initialBountyId(4497).runOnJS, setHideListFooterPadding: tmp63[1] };
+  const obj30 = { runOnJS: initialBountyId(4529).runOnJS, setHideListFooterPadding: tmp63[1] };
   class Zt {
     constructor() {
       obj = closure_0(closure_2[28]);
       return obj.getRevealProgress(closure_39.get(), closure_26, height);
     }
   }
-  const obj31 = initialBountyId(4497);
-  Zt.__closure = { getRevealProgress: initialBountyId(15278).getRevealProgress, scrollY: sharedValue4, lastBountyScrollOffset: result, recapRevealHeight: height2 };
+  const obj31 = initialBountyId(4529);
+  Zt.__closure = { getRevealProgress: initialBountyId(15288).getRevealProgress, scrollY: sharedValue4, lastBountyScrollOffset: result, recapRevealHeight: height2 };
   Zt.__workletHash = 11341453871635;
   Zt.__initData = __initData18;
   derivedValue = obj31.useDerivedValue(Zt);
-  const obj32 = { getRevealProgress: initialBountyId(15278).getRevealProgress, scrollY: sharedValue4, lastBountyScrollOffset: result, recapRevealHeight: height2 };
+  const obj32 = { getRevealProgress: initialBountyId(15288).getRevealProgress, scrollY: sharedValue4, lastBountyScrollOffset: result, recapRevealHeight: height2 };
   function zt() {
     const obj = { opacity: null };
     value = derivedValue.get();
     obj.opacity = ReanimatedRexport.interpolate(value, [0, 1], [0, 1], ReanimatedRexport.Extrapolation.CLAMP);
     return obj;
   }
-  const obj33 = initialBountyId(4497);
-  zt.__closure = { interpolate: initialBountyId(4497).interpolate, recapPullProgress: derivedValue, Extrapolation: initialBountyId(4497).Extrapolation };
+  const obj33 = initialBountyId(4529);
+  zt.__closure = { interpolate: initialBountyId(4529).interpolate, recapPullProgress: derivedValue, Extrapolation: initialBountyId(4529).Extrapolation };
   zt.__workletHash = 120061230536;
   zt.__initData = __initData19;
   const animatedStyle1 = obj33.useAnimatedStyle(zt);
-  const obj34 = { interpolate: initialBountyId(4497).interpolate, recapPullProgress: derivedValue, Extrapolation: initialBountyId(4497).Extrapolation };
+  const obj34 = { interpolate: initialBountyId(4529).interpolate, recapPullProgress: derivedValue, Extrapolation: initialBountyId(4529).Extrapolation };
   class Wt {
     constructor() {
       obj = { opacity: null };
@@ -1188,12 +1188,12 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
       return obj;
     }
   }
-  const obj35 = initialBountyId(4497);
-  Wt.__closure = { interpolate: initialBountyId(4497).interpolate, recapPullProgress: derivedValue, FOOTER_FADE_START_PROGRESS: handleRecapMomentumEnd, FOOTER_FADE_END_PROGRESS: first1, Extrapolation: initialBountyId(4497).Extrapolation };
+  const obj35 = initialBountyId(4529);
+  Wt.__closure = { interpolate: initialBountyId(4529).interpolate, recapPullProgress: derivedValue, FOOTER_FADE_START_PROGRESS: handleRecapMomentumEnd, FOOTER_FADE_END_PROGRESS: first1, Extrapolation: initialBountyId(4529).Extrapolation };
   Wt.__workletHash = 2307930075336;
   Wt.__initData = __initData20;
   const animatedStyle2 = obj35.useAnimatedStyle(Wt);
-  const obj36 = { interpolate: initialBountyId(4497).interpolate, recapPullProgress: derivedValue, FOOTER_FADE_START_PROGRESS: handleRecapMomentumEnd, FOOTER_FADE_END_PROGRESS: first1, Extrapolation: initialBountyId(4497).Extrapolation };
+  const obj36 = { interpolate: initialBountyId(4529).interpolate, recapPullProgress: derivedValue, FOOTER_FADE_START_PROGRESS: handleRecapMomentumEnd, FOOTER_FADE_END_PROGRESS: first1, Extrapolation: initialBountyId(4529).Extrapolation };
   const tmp73 = first1;
   class Kt {
     constructor() {
@@ -1218,8 +1218,8 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
       return obj1;
     }
   }
-  const obj37 = initialBountyId(4497);
-  Kt.__closure = { scrollY: sharedValue4, lastBountyScrollOffset: result, slotHeight: sum, recapPullProgress: derivedValue, getRevealProgress: initialBountyId(15278).getRevealProgress, recapRevealHeight: height2, interpolate: initialBountyId(4497).interpolate, FOOTER_FADE_START_PROGRESS: handleRecapMomentumEnd, FOOTER_FADE_END_PROGRESS: first1, Extrapolation: initialBountyId(4497).Extrapolation };
+  const obj37 = initialBountyId(4529);
+  Kt.__closure = { scrollY: sharedValue4, lastBountyScrollOffset: result, slotHeight: sum, recapPullProgress: derivedValue, getRevealProgress: initialBountyId(15288).getRevealProgress, recapRevealHeight: height2, interpolate: initialBountyId(4529).interpolate, FOOTER_FADE_START_PROGRESS: handleRecapMomentumEnd, FOOTER_FADE_END_PROGRESS: first1, Extrapolation: initialBountyId(4529).Extrapolation };
   Kt.__workletHash = 10371859077651;
   Kt.__initData = __initData21;
   const items21 = [tmp.peekGradient, , , , ];
@@ -1242,7 +1242,7 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
   if (hasRecurringSwipeUpNux) {
     hasRecurringSwipeUpNux = tmp23;
   }
-  const obj38 = { scrollY: sharedValue4, lastBountyScrollOffset: result, slotHeight: sum, recapPullProgress: derivedValue, getRevealProgress: initialBountyId(15278).getRevealProgress, recapRevealHeight: height2, interpolate: initialBountyId(4497).interpolate, FOOTER_FADE_START_PROGRESS: handleRecapMomentumEnd, FOOTER_FADE_END_PROGRESS: first1, Extrapolation: initialBountyId(4497).Extrapolation };
+  const obj38 = { scrollY: sharedValue4, lastBountyScrollOffset: result, slotHeight: sum, recapPullProgress: derivedValue, getRevealProgress: initialBountyId(15288).getRevealProgress, recapRevealHeight: height2, interpolate: initialBountyId(4529).interpolate, FOOTER_FADE_START_PROGRESS: handleRecapMomentumEnd, FOOTER_FADE_END_PROGRESS: first1, Extrapolation: initialBountyId(4529).Extrapolation };
   class Xt {
     constructor() {
       obj = { opacity: null };
@@ -1254,12 +1254,12 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
       return obj;
     }
   }
-  const tmp5Result = initialBountyId(4497);
-  Xt.__closure = { interpolate: initialBountyId(4497).interpolate, scrollY: sharedValue4, slotHeight: sum, Extrapolation: initialBountyId(4497).Extrapolation };
+  const tmp5Result = initialBountyId(4529);
+  Xt.__closure = { interpolate: initialBountyId(4529).interpolate, scrollY: sharedValue4, slotHeight: sum, Extrapolation: initialBountyId(4529).Extrapolation };
   Xt.__workletHash = 17578041414706;
   Xt.__initData = __initData22;
   const animatedStyle4 = tmp5Result.useAnimatedStyle(Xt);
-  const obj39 = { interpolate: initialBountyId(4497).interpolate, scrollY: sharedValue4, slotHeight: sum, Extrapolation: initialBountyId(4497).Extrapolation };
+  const obj39 = { interpolate: initialBountyId(4529).interpolate, scrollY: sharedValue4, slotHeight: sum, Extrapolation: initialBountyId(4529).Extrapolation };
   function jt() {
     return derivedValue.get() < c29;
   }
@@ -1271,8 +1271,8 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
       ReanimatedRexport.runOnJS(c33)(arg0);
     }
   }
-  const tmp5Result2 = initialBountyId(4497);
-  qt.__closure = { runOnJS: initialBountyId(4497).runOnJS, setIsCloseButtonPressable: tmp40 };
+  const tmp5Result2 = initialBountyId(4529);
+  qt.__closure = { runOnJS: initialBountyId(4529).runOnJS, setIsCloseButtonPressable: tmp40 };
   qt.__workletHash = 2587138880527;
   qt.__initData = __initData24;
   const animatedReaction5 = tmp5Result2.useAnimatedReaction(jt, qt);
@@ -1324,7 +1324,7 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
     let tmp84 = null;
     if (tmp42) {
       const obj41 = { orbAmount: stateFromStores };
-      tmp84 = isVideoEndAppStoreOverlayVisible(tmp5(15313).BountiesScrollRecapFooter, obj41);
+      tmp84 = isVideoEndAppStoreOverlayVisible(tmp5(15323).BountiesScrollRecapFooter, obj41);
     }
     const obj42 = { value: memo2, children: null };
     const obj43 = { style: tmp.root, children: null };
@@ -1340,16 +1340,16 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
       obj44.pointerEvents = str;
       const obj45 = {
         adContentId,
-        adCreativeType: tmp5(5670).AdCreativeType.BOUNTY,
-        questContent: tmp5(5668).QuestContent.BOUNTIES_END_INTERSTITIAL,
+        adCreativeType: tmp5(5702).AdCreativeType.BOUNTY,
+        questContent: tmp5(5700).QuestContent.BOUNTIES_END_INTERSTITIAL,
         overrideVisibility: first2,
         sourceQuestContent,
         children() {
               return closure_2_15(BountiesScrollRecapPage.BountiesScrollRecapPage, { orbAmount, onClose, style: { flex: 1 } });
             }
       };
-      obj44.children = tmp85(tmp5(11906).QuestContentImpressionTrackerNative, obj45);
-      tmp85Result = tmp85(tmp2(4497).View, obj44);
+      obj44.children = tmp85(tmp5(11942).QuestContentImpressionTrackerNative, obj45);
+      tmp85Result = tmp85(tmp2(4529).View, obj44);
     }
     const items25 = [tmp85Result, , , , , ];
     const obj46 = { style: memo7, children: null };
@@ -1374,12 +1374,12 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
       scrollEnabled: !tmp16,
       contentContainerStyle: memo8
     };
-    obj46.children = isVideoEndAppStoreOverlayVisible(tmp5(8995).AnimatedFlashList, obj47);
-    items25[1] = isVideoEndAppStoreOverlayVisible(tmp2(4497).View, obj46);
+    obj46.children = isVideoEndAppStoreOverlayVisible(tmp5(9027).AnimatedFlashList, obj47);
+    items25[1] = isVideoEndAppStoreOverlayVisible(tmp2(4529).View, obj46);
     let tmp85Result4 = null;
     if (null != tmp15) {
       const obj48 = { metadata: tmp15.metadata, sheetHeight: memo1, revealProgress: sharedValue1, onDismiss: callback2, onInstallPress: tmp15.onInstallPress };
-      tmp85Result4 = tmp85(tmp2(15318), obj48);
+      tmp85Result4 = tmp85(tmp2(15328), obj48);
     }
     items25[2] = tmp85Result4;
     let tmp85Result5 = null;
@@ -1390,8 +1390,8 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
         const items26 = [memo12, animatedStyle4];
         obj49.style = items26;
         const obj50 = { colors: sum1, style: styles.absoluteFill };
-        obj49.children = tmp85(tmp2(5198), obj50);
-        tmp85Result5 = tmp85(tmp2(4497).View, obj49);
+        obj49.children = tmp85(tmp2(5230), obj50);
+        tmp85Result5 = tmp85(tmp2(4529).View, obj49);
       }
     }
     items25[3] = tmp85Result5;
@@ -1406,17 +1406,17 @@ let closure_82 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialBountyI
     let tmp85Result6 = null;
     if (tmp39) {
       const obj52 = { onPress: callback5 };
-      tmp85Result6 = tmp85(tmp2(15319), obj52);
+      tmp85Result6 = tmp85(tmp2(15329), obj52);
     }
     obj51.children = tmp85Result6;
-    items25[4] = isVideoEndAppStoreOverlayVisible(tmp2(4497).View, obj51);
+    items25[4] = isVideoEndAppStoreOverlayVisible(tmp2(4529).View, obj51);
     const obj53 = { visible: tmp42, onContentLayout: callback, zIndex: height2, opacityStyle: animatedStyle3, children: tmp84 };
-    items25[5] = isVideoEndAppStoreOverlayVisible(tmp2(15274), obj53);
+    items25[5] = isVideoEndAppStoreOverlayVisible(tmp2(15284), obj53);
     obj43.children = items25;
     obj42.children = memo(questHomeBounties, obj43);
-    return isVideoEndAppStoreOverlayVisible(tmp5(15283).BountyVideoEndAppStoreProvider, obj42);
+    return isVideoEndAppStoreOverlayVisible(tmp5(15293).BountyVideoEndAppStoreProvider, obj42);
   }
-  const obj40 = { runOnJS: initialBountyId(4497).runOnJS, setIsCloseButtonPressable: tmp40 };
+  const obj40 = { runOnJS: initialBountyId(4529).runOnJS, setIsCloseButtonPressable: tmp40 };
 });
 ReactCompilerGating = fn(558);
 let size = fn(2);

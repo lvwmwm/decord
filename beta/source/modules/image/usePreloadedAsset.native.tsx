@@ -1,12 +1,12 @@
-// Module ID: 17424
-// Function ID: 17425
+// Module ID: 17434
+// Function ID: 17435
 // Name: usePreloadedAsset
-// Dependencies: [32, 19, 4750, 558, 568, 504, 1368, 17425, 5802, 2]
+// Dependencies: [32, 19, 4782, 558, 568, 504, 1368, 17435, 5834, 2]
 
-// Module 17424 (usePreloadedAsset)
+// Module 17434 (usePreloadedAsset)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 const require = globalThis.__r;
 
@@ -56,7 +56,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     dependencyMap = tmp10;
     let tmp12 = !tmp10;
     if (tmp10) {
-      tmp12 = null != num3(17425);
+      tmp12 = null != num3(17435);
     }
     _slicedToArray = tmp12;
     let str = "image";
@@ -217,7 +217,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   dependencyMap = tmp3;
   let tmp4 = !tmp3;
   if (tmp3) {
-    tmp4 = null != num(17425);
+    tmp4 = null != num(17435);
   }
   _slicedToArray = tmp4;
   let str = "image";
@@ -257,9 +257,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
           }
         }, timeout);
         if (dependencyMap) {
-          if (null != num(17425)) {
-            let preloadResult = num(17425).preload(tmp);
-            const obj2 = num(17425);
+          if (null != num(17435)) {
+            let preloadResult = num(17435).preload(tmp);
+            const obj2 = num(17435);
           }
           preloadResult.then(() => {
             if (!c0) {
@@ -279,8 +279,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
             clearTimeout(closure_1);
           };
         }
-        preloadResult = num(5802).preload(tmp, timeout + 1000);
-        let obj = num(5802);
+        preloadResult = num(5834).preload(tmp, timeout + 1000);
+        let obj = num(5834);
       }
     }
   }, items1);

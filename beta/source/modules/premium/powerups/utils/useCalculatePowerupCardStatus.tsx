@@ -1,16 +1,16 @@
-// Module ID: 12682
-// Function ID: 12683
+// Module ID: 12718
+// Function ID: 12719
 // Name: useCalculatePowerupCardStatus
-// Dependencies: [19, 4648, 558, 568, 1119, 2518, 2]
+// Dependencies: [19, 4680, 558, 568, 1119, 2518, 2]
 
-// Module 12682 (useCalculatePowerupCardStatus)
+// Module 12718 (useCalculatePowerupCardStatus)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import _modDef2518 from "module_2518" /* 2518 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const PowerupActiveStatusType = fn(4648).PowerupActiveStatusType;
+const PowerupActiveStatusType = fn(4680).PowerupActiveStatusType;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/utils/useCalculatePowerupCardStatus.tsx");

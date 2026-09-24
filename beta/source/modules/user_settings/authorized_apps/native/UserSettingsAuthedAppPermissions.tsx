@@ -1,10 +1,10 @@
-// Module ID: 15211
-// Function ID: 15212
+// Module ID: 15221
+// Function ID: 15222
 // Name: UserSettingsAuthedAppPermissions
-// Dependencies: [19, 17, 21, 4758, 558, 568, 9328, 8615, 1119, 4754, 4717, 580, 9330, 15205, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 9360, 8647, 1119, 4786, 4749, 580, 9362, 15215, 2]
 
-// Module 15211 (UserSettingsAuthedAppPermissions)
-import disclosures2 from "disclosures" /* 9330 */;
+// Module 15221 (UserSettingsAuthedAppPermissions)
+import disclosures2 from "disclosures" /* 9362 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -14,7 +14,7 @@ get_ActivityIndicator = fn(17);
 ({ ScrollView: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ container: { paddingHorizontal: 16, paddingVertical: 24 }, permissionContainer: { flexDirection: "row", marginTop: 8 }, permissionIcon: { marginTop: 1 }, permissionText: { flexShrink: 1, marginLeft: 12 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -98,9 +98,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((oauth2Token) => 
         if (null != textForDisclosure) {
           const obj2 = { style: items.permissionContainer, children: null };
           const obj3 = { style: items.permissionIcon, disclosure };
-          items = [hasOwnProperty(tmp(15205).DisclosureIcon, obj3), ];
+          items = [hasOwnProperty(tmp(15215).DisclosureIcon, obj3), ];
           const obj4 = { style: items.permissionText, variant: "text-sm/normal", children: textForDisclosure };
-          items[1] = hasOwnProperty(tmp(4754).Text, obj4);
+          items[1] = hasOwnProperty(tmp(4786).Text, obj4);
           obj2.children = items;
           tmp4 = timestampProducer(React4, obj2, index + items.length);
         }
@@ -151,8 +151,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((oauth2Token) => 
       children[2] = items.map((children, index) => {
         const obj = { style: items.permissionContainer, children: null };
         items = [, ];
-        items[0] = closure_2_5(items(4717).CircleCheckIcon, { style: items.permissionIcon, size: "xs", color: c1(580).colors.STATUS_POSITIVE });
-        items[1] = closure_2_5(items(4754).Text, { style: items.permissionText, variant: "text-sm/normal", color: "text-default", children });
+        items[0] = closure_2_5(items(4749).CircleCheckIcon, { style: items.permissionIcon, size: "xs", color: c1(580).colors.STATUS_POSITIVE });
+        items[1] = closure_2_5(items(4786).Text, { style: items.permissionText, variant: "text-sm/normal", color: "text-default", children });
         obj.children = items;
         return closure_2_6(closure_2_4, obj, index);
       });
@@ -164,9 +164,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((oauth2Token) => 
           if (null != textForDisclosure) {
             const obj2 = { style: items.permissionContainer, children: null };
             const obj3 = { style: items.permissionIcon, disclosure };
-            items = [hasOwnProperty(tmp(15205).DisclosureIcon, obj3), ];
+            items = [hasOwnProperty(tmp(15215).DisclosureIcon, obj3), ];
             const obj4 = { style: items.permissionText, variant: "text-sm/normal", children: textForDisclosure };
-            items[1] = hasOwnProperty(tmp(4754).Text, obj4);
+            items[1] = hasOwnProperty(tmp(4786).Text, obj4);
             obj2.children = items;
             tmp4 = timestampProducer(React4, obj2, index + items.length);
           }

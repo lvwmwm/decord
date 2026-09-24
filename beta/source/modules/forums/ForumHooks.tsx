@@ -1,40 +1,40 @@
-// Module ID: 8134
-// Function ID: 8135
+// Module ID: 8166
+// Function ID: 8167
 // Name: ForumHooks
-// Dependencies: [5, 19, 5678, 5725, 5726, 7550, 2045, 5645, 2067, 4399, 4773, 1376, 7549, 7521, 8135, 8015, 7517, 1078, 2052, 1118, 558, 568, 504, 7551, 577, 12, 1374, 5203, 11, 8028, 2054, 8136, 4990, 8137, 8146, 8147, 7357, 2]
+// Dependencies: [5, 19, 5710, 5757, 5758, 7582, 2045, 5677, 2067, 4431, 4805, 1376, 7581, 7553, 8167, 8047, 7549, 1078, 2052, 1118, 558, 568, 504, 7583, 577, 12, 1374, 5235, 11, 8060, 2054, 8168, 5022, 8169, 8178, 8179, 7389, 2]
 // Exports: getForumPostAuthor
 
-// Module 8134 (ForumHooks)
+// Module 8166 (ForumHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
-import useMessageAuthor from "useMessageAuthor" /* 4990 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7357 */;
-import renderMessageMarkupDefault from "renderMessageMarkup" /* 8137 */;
+import useMessageAuthor from "useMessageAuthor" /* 5022 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7389 */;
+import renderMessageMarkupDefault from "renderMessageMarkup" /* 8169 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5678 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5725 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 5726 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7550 */;
+import EmojiStore from "EmojiStore" /* 5710 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5757 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 5758 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7582 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5645 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5677 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
-import ReadStateStore from "ReadStateStore" /* 4773 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
+import ReadStateStore from "ReadStateStore" /* 4805 */;
 import UserStore from "UserStore" /* 1376 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7549 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7521 */;
-import ForumPostUnreadCountStore from "ForumPostUnreadCountStore" /* 8135 */;
-import ForumSearchStore from "ForumSearchStore" /* 8015 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7581 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7553 */;
+import ForumPostUnreadCountStore from "ForumPostUnreadCountStore" /* 8167 */;
+import ForumSearchStore from "ForumSearchStore" /* 8047 */;
 
 const ThreadSortOrder = tmp(2054);
-const ForumUtils = tmp(7551);
-const ThreadUtils = tmp(8028);
+const ForumUtils = tmp(7583);
+const ThreadUtils = tmp(8060);
 require = fn;
-const ForumTimestampFormats = fn(7517).ForumTimestampFormats;
+const ForumTimestampFormats = fn(7549).ForumTimestampFormats;
 const Constants = fn(1078);
 ({ AnalyticsObjectTypes: closure_20, AnalyticsObjects: closure_21, EMPTY_STRING_SNOWFLAKE_ID: closure_22, Permissions: closure_23 } = Constants);
 const ChannelFlags = fn(2052).ChannelFlags;
@@ -332,11 +332,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, DURATION_A
   const items2 = [lastMessageTimestamp, arg1, memo, memo1];
   return lastMessageTimestamp.useMemo(() => {
     if (closure_1 === ThreadSortOrder.ThreadSortOrder.CREATION_DATE) {
-      let timestampString = tmp(8028).getTimestampString(memo, memo1);
-      const tmpResult = tmp(8028);
+      let timestampString = tmp(8060).getTimestampString(memo, memo1);
+      const tmpResult = tmp(8060);
     } else {
-      timestampString = tmp(8028).getTimestampString(lastMessageTimestamp, memo1);
-      const tmpResult2 = tmp(8028);
+      timestampString = tmp(8060).getTimestampString(lastMessageTimestamp, memo1);
+      const tmpResult2 = tmp(8060);
     }
     return timestampString;
   }, items2);
@@ -1016,7 +1016,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((author, getGuildId)
   const obj = id(568);
   const stateFromStores = id(504).useStateFromStores(tmp7, tmp9);
   const tmpResult = id(504);
-  const nullableMessageAuthor = id(4990).useNullableMessageAuthor(author);
+  const nullableMessageAuthor = id(5022).useNullableMessageAuthor(author);
   if (cResult[5] === tmp5) {
     if (cResult[6] === id) {
       let tmp12 = cResult[7];
@@ -1094,7 +1094,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((author, getGuildId)
   const items = [UserStore];
   const stateFromStores = id(504).useStateFromStores(items, () => UserStore.getUser(id));
   const obj = id(504);
-  const nullableMessageAuthor = id(4990).useNullableMessageAuthor(author);
+  const nullableMessageAuthor = id(5022).useNullableMessageAuthor(author);
   const items1 = [guildId, id];
   const effect = noop.useEffect(() => {
     let tmp2 = null != id;
@@ -1275,9 +1275,9 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[2] === tmp5) {
         if (cResult[3] === str) {
           ({ hasSpoilerEmbeds, content } = cResult[4]);
-          const findFirstMediaProperties = tmp(8146).useFindFirstMediaProperties(firstMessage, hasSpoilerEmbeds);
-          const tmpResult = tmp(8146);
-          const firstMediaIsEmbed = tmp(8146).useFirstMediaIsEmbed(firstMessage, hasSpoilerEmbeds);
+          const findFirstMediaProperties = tmp(8178).useFindFirstMediaProperties(firstMessage, hasSpoilerEmbeds);
+          const tmpResult = tmp(8178);
+          const firstMediaIsEmbed = tmp(8178).useFirstMediaIsEmbed(firstMessage, hasSpoilerEmbeds);
           if (cResult[5] === content) {
             if (cResult[6] === findFirstMediaProperties) {
               if (cResult[7] === firstMediaIsEmbed) {
@@ -1295,7 +1295,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           cResult[8] = hasSpoilerEmbeds;
           cResult[9] = obj2;
           tmp10 = obj2;
-          const tmpResult2 = tmp(8146);
+          const tmpResult2 = tmp(8178);
         }
       }
     }
@@ -1871,7 +1871,7 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2, a
                   _setTimeout = setTimeout;
                   tmp12 = closure_3;
                   num = 350;
-                  closure_0 = setTimeout(closure_3(/* F137139 */ function() { ... }), 350);
+                  closure_0 = setTimeout(closure_3(/* F137222 */ function() { ... }), 350);
                   return () => { ... };
                 }
               } else {
@@ -1935,7 +1935,7 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2, a
   const effect = isSearchLoading.useEffect(() => {
     if (null == searchQuery) {
       if (null != ref.current) {
-        closure_1(8147).clearForumSearch(user.id);
+        closure_1(8179).clearForumSearch(user.id);
         tmp.current = null;
       }
     }
@@ -1967,8 +1967,8 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2, a
               }
             }
           } else {
-            closure_1(8147).clearForumSearch(user.id);
-            const obj = closure_1(8147);
+            closure_1(8179).clearForumSearch(user.id);
+            const obj = closure_1(8179);
           }
         }
       }

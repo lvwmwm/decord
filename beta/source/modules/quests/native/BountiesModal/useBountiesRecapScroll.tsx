@@ -1,9 +1,9 @@
-// Module ID: 15278
-// Function ID: 15279
+// Module ID: 15288
+// Function ID: 15289
 // Name: useBountiesRecapScroll
 // Dependencies: [19, 558, 568, 2]
 
-// Module 15278 (useBountiesRecapScroll)
+// Module 15288 (useBountiesRecapScroll)
 import noop from "module_19" /* 19 */;
 
 const require = fn;

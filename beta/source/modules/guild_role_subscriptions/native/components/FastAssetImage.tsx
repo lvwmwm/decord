@@ -1,17 +1,17 @@
-// Module ID: 15495
-// Function ID: 15496
+// Module ID: 15505
+// Function ID: 15506
 // Name: FastAssetImage
-// Dependencies: [32, 19, 21, 558, 568, 4999, 5802, 2]
+// Dependencies: [32, 19, 21, 558, 568, 5031, 5834, 2]
 
-// Module 15495 (FastAssetImage)
+// Module 15505 (FastAssetImage)
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
+import FastImageDefault from "FastImage" /* 5834 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const StoreUtils = tmp(4999);
+const StoreUtils = tmp(5031);
 require = fn;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);

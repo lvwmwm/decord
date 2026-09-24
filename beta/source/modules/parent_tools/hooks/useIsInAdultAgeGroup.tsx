@@ -1,12 +1,12 @@
-// Module ID: 8922
-// Function ID: 8923
+// Module ID: 8954
+// Function ID: 8955
 // Name: useIsInAdultAgeGroup
-// Dependencies: [7784, 558, 568, 504, 2]
+// Dependencies: [7816, 558, 568, 504, 2]
 
-// Module 8922 (useIsInAdultAgeGroup)
+// Module 8954 (useIsInAdultAgeGroup)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7784 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7816 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);

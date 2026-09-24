@@ -1,16 +1,16 @@
-// Module ID: 15593
-// Function ID: 15594
+// Module ID: 15603
+// Function ID: 15604
 // Name: OfficialMessageStyleSetting
-// Dependencies: [19, 4750, 8238, 558, 568, 504, 14720, 1119, 11594, 2]
+// Dependencies: [19, 4782, 8270, 558, 568, 504, 14758, 1119, 11630, 2]
 // Exports: onOfficialMessageStyleSettingValueChange
 
-// Module 15593 (OfficialMessageStyleSetting)
+// Module 15603 (OfficialMessageStyleSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14720 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14758 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 let ReactCompilerGating = fn(558);
@@ -81,13 +81,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 function onOfficialMessageStyleSettingValueChange(officialMessageStyle) {
   const result = AccessibilityActionCreators.setOfficialMessageStyle(officialMessageStyle);
 }
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const radio = SettingBuilders.createRadio({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.nC2XBl);
   },
-  parent: fn(8238).MobileUserSettings.ACCESSIBILITY,
+  parent: fn(8270).MobileUserSettings.ACCESSIBILITY,
   useValue: tmp2,
   onValueChange: onOfficialMessageStyleSettingValueChange,
   useOptions: tmp3

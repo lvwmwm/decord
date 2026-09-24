@@ -1,28 +1,28 @@
-// Module ID: 14950
-// Function ID: 14951
+// Module ID: 14985
+// Function ID: 14986
 // Name: SettingsAccountHeader
-// Dependencies: [19, 17, 4409, 1376, 1078, 8675, 21, 4758, 580, 558, 568, 7626, 14951, 1119, 504, 7244, 5836, 5822, 5188, 2]
+// Dependencies: [19, 17, 4441, 1376, 1078, 8707, 21, 4790, 580, 558, 568, 7658, 14986, 1119, 504, 7276, 5868, 5854, 5220, 2]
 
-// Module 14950 (SettingsAccountHeader)
+// Module 14985 (SettingsAccountHeader)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5836 */;
-import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 7244 */;
-import openUserSettings from "openUserSettings" /* 7626 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14951 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5868 */;
+import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 7276 */;
+import openUserSettings from "openUserSettings" /* 7658 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14986 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const View = fn(17).View;
 const AnalyticsSections = fn(1078).AnalyticsSections;
-const SafetySettingsNoticeType = fn(8675).SafetySettingsNoticeType;
+const SafetySettingsNoticeType = fn(8707).SafetySettingsNoticeType;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { header: { paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 } };
 let closure_11 = createStyles.createStyles(obj);
 let ReactCompilerGating = fn(558);
@@ -75,11 +75,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
   if (cResult[2] !== stateFromStores) {
-    const bannerText = tmp(7244).getBannerText(stateFromStores);
+    const bannerText = tmp(7276).getBannerText(stateFromStores);
     cResult[2] = stateFromStores;
     cResult[3] = bannerText;
     let tmp8 = bannerText;
-    const tmpResult3 = tmp(7244);
+    const tmpResult3 = tmp(7276);
   } else {
     tmp8 = cResult[3];
   }
@@ -184,8 +184,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj3 = { text: null, accessibilityLabel: null, onPress: null };
       ({ button: obj6.text, button: obj6.accessibilityLabel } = tmp8);
       obj3.onPress = tmp14;
-      obj2.trailing = options(tmp(5188).Button, obj3);
-      const tmp19 = options(tmp(5822).TableRow, obj2);
+      obj2.trailing = options(tmp(5220).Button, obj3);
+      const tmp19 = options(tmp(5854).TableRow, obj2);
     }
     cResult[9] = tmp8;
     cResult[10] = tmp19;
@@ -240,8 +240,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj10 = { text: null, accessibilityLabel: null, onPress: null };
       ({ button: obj6.text, button: obj6.accessibilityLabel } = bannerText);
       obj10.onPress = callback;
-      obj9.trailing = options(tmp2(5188).Button, obj10);
-      tmp14 = options(tmp2(5822).TableRow, obj9);
+      obj9.trailing = options(tmp2(5220).Button, obj10);
+      tmp14 = options(tmp2(5854).TableRow, obj9);
     }
     items2[1] = tmp14;
     obj4.children = items2;

@@ -1,23 +1,23 @@
-// Module ID: 11374
-// Function ID: 11375
+// Module ID: 11410
+// Function ID: 11411
 // Name: PremiumGiftDMPurchaseSuccess
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 10997, 1488, 11037, 10960, 1119, 2550, 5188, 11132, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 11033, 1488, 11073, 10996, 1119, 2550, 5220, 11168, 4786, 2]
 
-// Module 11374 (PremiumGiftDMPurchaseSuccess)
+// Module 11410 (PremiumGiftDMPurchaseSuccess)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import PremiumGiftModal from "PremiumGiftModal" /* 10960 */;
-import NativeGiftContext from "NativeGiftContext" /* 10997 */;
-import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 11132 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import PremiumGiftModal from "PremiumGiftModal" /* 10996 */;
+import NativeGiftContext from "NativeGiftContext" /* 11033 */;
+import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 11168 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { title: { marginTop: nativeDefault.space.PX_24, textAlign: "center" }, description: null };
 let obj3 = { marginTop: nativeDefault.space.PX_24, textAlign: "center" };
 obj2.description = { marginTop: nativeDefault.space.PX_8, textAlign: "center" };
@@ -137,7 +137,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[3] !== tmp4.title) {
     const obj5 = { style: tmp4.title, variant: "heading-lg/bold", children: tmp10 };
-    const tmp14 = hasOwnProperty(tmp(4754).Text, obj5);
+    const tmp14 = hasOwnProperty(tmp(4786).Text, obj5);
     cResult[3] = tmp4.title;
     cResult[4] = tmp14;
     let tmp12 = tmp14;
@@ -154,7 +154,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[6] !== tmp4.description) {
     const obj6 = { style: tmp4.description, variant: "text-md/medium", children: tmp15 };
-    const tmp19 = hasOwnProperty(tmp(4754).Text, obj6);
+    const tmp19 = hasOwnProperty(tmp(4786).Text, obj6);
     cResult[6] = tmp4.description;
     cResult[7] = tmp19;
     let tmp17 = tmp19;

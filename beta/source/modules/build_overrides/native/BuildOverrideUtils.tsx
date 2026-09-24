@@ -1,15 +1,15 @@
-// Module ID: 11918
-// Function ID: 11919
+// Module ID: 11954
+// Function ID: 11955
 // Name: build_overrides/BuildOverrideUtils
-// Dependencies: [5, 11557, 1368, 11919, 11920, 5111, 1365, 2]
+// Dependencies: [5, 11593, 1368, 11955, 11956, 5143, 1365, 2]
 // Exports: refreshBuildOverride, setBuildOverrideForId, setBuildOverrideFromLink, toggleOverride
 
-// Module 11918 (build_overrides/BuildOverrideUtils)
+// Module 11954 (build_overrides/BuildOverrideUtils)
 import BuildOverrideUtils from "BuildOverrideUtils" /* 1365 */;
-import ApplyBuildOverrideUtils from "ApplyBuildOverrideUtils" /* 11919 */;
-import BundleUpdaterDefault from "BundleUpdater" /* 11920 */;
+import ApplyBuildOverrideUtils from "ApplyBuildOverrideUtils" /* 11955 */;
+import BundleUpdaterDefault from "BundleUpdater" /* 11956 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11557 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11593 */;
 
 require = fn;
 function setBuildOverrideForBranch(id) {

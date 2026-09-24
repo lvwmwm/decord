@@ -1,24 +1,24 @@
-// Module ID: 14103
-// Function ID: 14104
+// Module ID: 14140
+// Function ID: 14141
 // Name: GuildLimitedAccessInfoAlert
-// Dependencies: [19, 2067, 14104, 1078, 21, 4758, 5743, 580, 558, 568, 1119, 1181, 4754, 5207, 2]
+// Dependencies: [19, 2067, 14141, 1078, 21, 4790, 5775, 580, 558, 568, 1119, 1181, 4786, 5239, 2]
 
-// Module 14103 (GuildLimitedAccessInfoAlert)
+// Module 14140 (GuildLimitedAccessInfoAlert)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import common_AlertDefault from "common/Alert" /* 5207 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import common_AlertDefault from "common/Alert" /* 5239 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import TextStyles from "TextStyles" /* 5743 */;
+import TextStyles from "TextStyles" /* 5775 */;
 
 require = fn;
-const helpdeskArticle = fn(14104).GUILD_LIMITED_ACCESS_HC_LINK;
+const helpdeskArticle = fn(14141).GUILD_LIMITED_ACCESS_HC_LINK;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { header: null, text: null };
 let obj3 = {};
 const merged = Object.assign(TextStyles(fn(1078).Fonts.PRIMARY_BOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));

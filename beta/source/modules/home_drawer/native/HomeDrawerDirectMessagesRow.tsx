@@ -1,26 +1,26 @@
-// Module ID: 16651
-// Function ID: 16652
+// Module ID: 16661
+// Function ID: 16662
 // Name: HomeDrawerDirectMessagesRow
-// Dependencies: [19, 17, 4798, 4409, 1078, 21, 4758, 580, 558, 568, 504, 4754, 1119, 16647, 4622, 4619, 2]
+// Dependencies: [19, 17, 4830, 4441, 1078, 21, 4790, 580, 558, 568, 504, 4786, 1119, 16657, 4654, 4651, 2]
 
-// Module 16651 (HomeDrawerDirectMessagesRow)
+// Module 16661 (HomeDrawerDirectMessagesRow)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4622 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 16647 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4654 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 16657 */;
 import noop from "module_19" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 
 require = fn;
 const View = fn(17).View;
 const StatusTypes = fn(1078).StatusTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { subtitle: { flexDirection: "row", alignItems: "center", gap: 4 }, onlineDot: null };
 let size = { width: 8, height: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.TEXT_STATUS_ONLINE };
 obj2.onlineDot = size;
@@ -52,7 +52,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj2 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null };
       const intl2 = tmp(1119).intl;
       obj2.children = intl2.string(tmp(1119).t.YUU0RF);
-      const tmp17 = React5(tmp(4754).Text, obj2);
+      const tmp17 = React5(tmp(4786).Text, obj2);
       cResult[5] = tmp17;
       let tmp15 = tmp17;
     } else {
@@ -60,7 +60,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[6] !== tmp10) {
       const obj3 = { title: tmp15, subtitle: tmp10 };
-      const tmp20 = React5(tmp(16647).HomeDrawerSharedItem, obj3);
+      const tmp20 = React5(tmp(16657).HomeDrawerSharedItem, obj3);
       cResult[6] = tmp10;
       cResult[7] = tmp20;
       let tmp18 = tmp20;
@@ -78,7 +78,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl = tmp(1119).intl;
     const obj7 = { numFriends: stateFromStores };
     obj6.children = intl.format(tmp(1119).t.N5UIKr, obj7);
-    items1[1] = React5(tmp(4754).Text, obj6);
+    items1[1] = React5(tmp(4786).Text, obj6);
     obj4.children = items1;
     tmp11 = closure_1_8(View, obj4);
   }
@@ -102,7 +102,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl = tmp2(1119).intl;
     const obj5 = { numFriends: stateFromStores };
     obj4.children = intl.format(tmp2(1119).t.N5UIKr, obj5);
-    items1[1] = React5(tmp2(4754).Text, obj4);
+    items1[1] = React5(tmp2(4786).Text, obj4);
     obj2.children = items1;
     tmp5 = closure_1_8(View, obj2);
   }

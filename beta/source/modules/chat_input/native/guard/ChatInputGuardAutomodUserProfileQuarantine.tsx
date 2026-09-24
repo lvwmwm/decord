@@ -1,18 +1,18 @@
-// Module ID: 12627
-// Function ID: 12628
+// Module ID: 12663
+// Function ID: 12664
 // Name: ChatInputGuardAutomodUserProfileQuarantine
-// Dependencies: [19, 502, 2109, 4386, 21, 558, 568, 4405, 504, 11992, 1119, 12628, 12597, 2]
+// Dependencies: [19, 502, 2109, 4418, 21, 558, 568, 4437, 504, 12028, 1119, 12664, 12633, 2]
 
-// Module 12627 (ChatInputGuardAutomodUserProfileQuarantine)
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4405 */;
-import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 11992 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12597 */;
+// Module 12663 (ChatInputGuardAutomodUserProfileQuarantine)
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4437 */;
+import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 12028 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12633 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 
 require = fn;
-const GuildMemberFlags = fn(4386).GuildMemberFlags;
+const GuildMemberFlags = fn(4418).GuildMemberFlags;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -173,7 +173,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
             return;
           }
         }
-        const tmp20 = jsx(tmp(12628).ChatXIcon, {});
+        const tmp20 = jsx(tmp(12664).ChatXIcon, {});
         cResult[12] = tmp20;
         const tmp19 = tmp20;
       } else {
@@ -221,7 +221,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
     const result = GuildAutomodActionActionCreators.openAutomodProfileQuarantineAlert(guildId);
   }, items2);
   const obj = guildId(504);
-  const automodReason = guildId(4405).getAutomodReason(stateFromStores);
+  const automodReason = guildId(4437).getAutomodReason(stateFromStores);
   if (automodReason === GuildMemberFlags.AUTOMOD_QUARANTINED_SERVER_TAG) {
     const intl2 = tmp(1119).intl;
     let stringResult = intl2.string(tmp(1119).t.Viksoo);
@@ -237,9 +237,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
     stringResult1 = intl3.string(tmp(1119).t["8HW7r9"]);
   }
   const obj3 = { type: "simple-action", actionOnPress: callback, actionLabel: stringResult, icon: null, message: null };
-  const obj2 = guildId(4405);
+  const obj2 = guildId(4437);
   tmp6 = GuildMemberFlags;
-  obj3.icon = jsx(guildId(12628).ChatXIcon, {});
+  obj3.icon = jsx(guildId(12664).ChatXIcon, {});
   obj3.message = stringResult1;
   return jsx(ChatInputGuardDefault, { type: "simple-action", actionOnPress: callback, actionLabel: stringResult, icon: null, message: null });
 }));

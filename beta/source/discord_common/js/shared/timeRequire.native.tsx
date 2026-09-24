@@ -1,10 +1,10 @@
-// Module ID: 7739
-// Function ID: 7740
+// Module ID: 7771
+// Function ID: 7772
 // Name: timeRequire
 // Dependencies: [10, 2]
 // Exports: default
 
-// Module 7739 (timeRequire)
+// Module 7771 (timeRequire)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import size from "module_2" /* 2 */;
 

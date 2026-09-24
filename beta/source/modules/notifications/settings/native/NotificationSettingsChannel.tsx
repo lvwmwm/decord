@@ -1,17 +1,17 @@
-// Module ID: 12981
-// Function ID: 12982
+// Module ID: 13017
+// Function ID: 13018
 // Name: NotificationSettingsChannel
-// Dependencies: [19, 17, 4939, 21, 4758, 580, 558, 568, 10420, 1119, 4911, 1488, 5839, 7366, 7361, 504, 12982, 12983, 12987, 12994, 12999, 5188, 8876, 2]
+// Dependencies: [19, 17, 4971, 21, 4790, 580, 558, 568, 10459, 1119, 4943, 1488, 5871, 7398, 7393, 504, 13018, 13019, 13023, 13030, 13035, 5220, 8908, 2]
 
-// Module 12981 (NotificationSettingsChannel)
+// Module 13017 (NotificationSettingsChannel)
 import nativeDefault from "native" /* 580 */;
-import useChannelNameDefault from "useChannelName" /* 4911 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7361 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7366 */;
-import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10420 */;
+import useChannelNameDefault from "useChannelName" /* 4943 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7393 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7398 */;
+import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10459 */;
 import noop from "module_19" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
 
 const require = globalThis.__r;
 
@@ -19,7 +19,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { screenContainer: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: 16 } };
 let closure_8 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -40,7 +40,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   } else {
     first = cResult[0];
   }
-  const tmp7 = first(4911)(channel.channel);
+  const tmp7 = first(4943)(channel.channel);
   dependencyMap = tmp7;
   const obj2 = require("notficationSettingsChannelFlagUtils");
   const navigation = require("useNavigation").useNavigation();
@@ -161,17 +161,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const obj5 = { style: { marginBottom: 16 }, title: null, subtitle: null, onPressUnmute: null };
     const intl2 = tmp(1119).intl;
     obj5.title = intl2.string(tmp(1119).t["6MCxAy"]);
-    obj5.subtitle = tmp(12982).getMuteBannerSubtitleFromConfig(stateFromStoresObject.config);
+    obj5.subtitle = tmp(13018).getMuteBannerSubtitleFromConfig(stateFromStoresObject.config);
     obj5.onPressUnmute = callback1;
-    muted = closure_6(tmp(12982).NotificationSettingsMuteBanner, obj5);
-    const tmpResult = tmp(12982);
+    muted = closure_6(tmp(13018).NotificationSettingsMuteBanner, obj5);
+    const tmpResult = tmp(13018);
   }
   const items3 = [muted, closure_6(require("NotificationSettingsPresets").NotificationSettingsChannelPresets, { channel: channel.channel }), closure_6(require("NotificationSettingsMessageNotification").NotificationSettingsChannelMessageNotification, { style: { marginTop: 24 }, channel: channel.channel }), closure_6(require("NotificationSettingsMessageUnread").NotificationSettingsChannelMessageUnread, { style: { marginTop: 24 }, channel: channel.channel }), , ];
   channel = channel.channel;
   let isForumLikeChannelResult = channel.isForumLikeChannel();
   if (isForumLikeChannelResult) {
     const obj9 = { style: { marginTop: 24 }, channel: channel.channel };
-    isForumLikeChannelResult = tmp11(tmp(12999).NotificationSettingsChannelPost, obj9);
+    isForumLikeChannelResult = tmp11(tmp(13035).NotificationSettingsChannelPost, obj9);
   }
   items3[4] = isForumLikeChannelResult;
   const inherited = channelPresetInheritance.inherited;
@@ -181,7 +181,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const obj11 = { variant: "secondary", onPress: callback, text: null };
     const intl3 = tmp(1119).intl;
     obj11.text = intl3.string(tmp(1119).t["3PBFN6"]);
-    obj10.children = tmp11(tmp(5188).Button, obj11);
+    obj10.children = tmp11(tmp(5220).Button, obj11);
     tmp11Result = tmp11(View, obj10);
   }
   items3[5] = tmp11Result;

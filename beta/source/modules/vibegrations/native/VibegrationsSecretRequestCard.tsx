@@ -1,13 +1,13 @@
-// Module ID: 17047
-// Function ID: 17048
+// Module ID: 17057
+// Function ID: 17058
 // Name: VibegrationsSecretRequestCard
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4725, 17048, 4754, 1119, 3682, 5188, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4757, 17058, 4786, 1119, 3714, 5220, 2]
 
-// Module 17047 (VibegrationsSecretRequestCard)
+// Module 17057 (VibegrationsSecretRequestCard)
 import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import VibegrationsSecretsSheet from "VibegrationsSecretsSheet" /* 17048 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import VibegrationsSecretsSheet from "VibegrationsSecretsSheet" /* 17058 */;
 import noop from "module_19" /* 19 */;
 
 const VibegrationsSecretsSheetDefault = VibegrationsSecretsSheet;
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { card: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 }, chips: null, chip: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 obj2.chips = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_4 };
@@ -42,8 +42,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2 = { variant: "text-xs/semibold", color: "text-muted", children: null };
       const intl = tmp(1119).intl;
-      obj2.children = intl.string(chip(3682)["/e28TK"]);
-      const tmp10 = closure_5(tmp(4754).Text, obj2);
+      obj2.children = intl.string(chip(3714)["/e28TK"]);
+      const tmp10 = closure_5(tmp(4786).Text, obj2);
       cResult[3] = tmp10;
       let tmp7 = tmp10;
     } else {
@@ -52,7 +52,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     if (cResult[4] !== chip.note) {
       if (null == chip.note) {
         const intl2 = tmp(1119).intl;
-        let note = intl2.string(chip(3682).jxvtin);
+        let note = intl2.string(chip(3714).jxvtin);
         cResult[4] = chip.note;
         cResult[5] = note;
       }
@@ -60,7 +60,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     } else {
       if (cResult[6] !== cResult[5]) {
         const obj3 = { variant: "text-sm/normal", color: "text-default", children: tmp11 };
-        const tmp17 = closure_5(tmp(4754).Text, obj3);
+        const tmp17 = closure_5(tmp(4786).Text, obj3);
         cResult[6] = tmp11;
         cResult[7] = tmp17;
         let tmp15 = tmp17;
@@ -76,7 +76,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
             const _Symbol2 = Symbol;
             if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
               const intl3 = tmp(1119).intl;
-              const stringResult = intl3.string(chip(3682)["gVV+HX"]);
+              const stringResult = intl3.string(chip(3714)["gVV+HX"]);
               cResult[16] = stringResult;
               let tmp27 = stringResult;
             } else {
@@ -84,7 +84,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
             }
             if (cResult[17] !== tmp5) {
               const obj4 = { variant: "secondary", size: "sm", onPress: tmp5, text: tmp27 };
-              const tmp32 = closure_5(tmp(5188).Button, obj4);
+              const tmp32 = closure_5(tmp(5220).Button, obj4);
               cResult[17] = tmp5;
               cResult[18] = tmp32;
               let tmp30 = tmp32;
@@ -171,8 +171,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   }, items);
   let obj2 = { variant: "text-xs/semibold", color: "text-muted", children: null };
   const intl = projectId(1119).intl;
-  obj2.children = intl.string(request(3682)["/e28TK"]);
-  const items1 = [closure_5(projectId(4754).Text, obj2), , , ];
+  obj2.children = intl.string(request(3714)["/e28TK"]);
+  const items1 = [closure_5(projectId(4786).Text, obj2), , , ];
   if (null != request.note) {
     if ("" !== request.note) {
       let note = request.note;
@@ -188,11 +188,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     items1[2] = tmp5(tmp4, obj4);
     const obj5 = { variant: "secondary", size: "sm", onPress: callback, text: null };
     const intl3 = tmp6(1119).intl;
-    obj5.text = intl3.string(tmp8(3682)["gVV+HX"]);
-    items1[3] = tmp5(tmp6(5188).Button, obj5);
+    obj5.text = intl3.string(tmp8(3714)["gVV+HX"]);
+    items1[3] = tmp5(tmp6(5220).Button, obj5);
     obj.children = items1;
     return closure_6(tmp4, obj);
   }
   const intl2 = tmp6(1119).intl;
-  note = intl2.string(tmp8(3682).jxvtin);
+  note = intl2.string(tmp8(3714).jxvtin);
 });

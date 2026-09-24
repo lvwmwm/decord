@@ -1,9 +1,9 @@
-// Module ID: 10060
-// Function ID: 10061
+// Module ID: 10099
+// Function ID: 10100
 // Name: InstantInviteConstants
 // Dependencies: [2]
 
-// Module 10060 (InstantInviteConstants)
+// Module 10099 (InstantInviteConstants)
 import size from "module_2" /* 2 */;
 
 const obj = { TWITTER: "twitter", WHATSAPP: "whatsapp", GMAIL: "googlegmail", LINE: "line", MESSENGER: "fb-messenger", TELEGRAM: "tg" };

@@ -1,15 +1,15 @@
-// Module ID: 8885
-// Function ID: 8886
+// Module ID: 8917
+// Function ID: 8918
 // Name: FormSection
-// Dependencies: [19, 17, 1185, 21, 4758, 580, 558, 568, 5902, 7385, 8882, 5903, 8886, 1368, 2]
+// Dependencies: [19, 17, 1185, 21, 4790, 580, 558, 568, 5934, 7417, 8914, 5935, 8918, 1368, 2]
 
-// Module 8885 (FormSection)
+// Module 8917 (FormSection)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import RedesignCompat from "RedesignCompat" /* 5902 */;
-import FormRowDefault from "FormRow" /* 7385 */;
-import FormDividerDefault from "FormDivider" /* 8882 */;
-import FormTitleDefault from "FormTitle" /* 8886 */;
+import RedesignCompat from "RedesignCompat" /* 5934 */;
+import FormRowDefault from "FormRow" /* 7417 */;
+import FormDividerDefault from "FormDivider" /* 8914 */;
+import FormTitleDefault from "FormTitle" /* 8918 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 const TitleStyleType = fn(1185).TitleStyleType;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { titledSectionHeader: { borderTopWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: 16 }, titledSectionNoBorder: { marginTop: 24 }, titledSectionNoBorderOrMargin: {}, emptySectionHeader: { marginTop: 24 }, sectionBody: {}, sectionBodyIOSBorder: {} };
 let closure_8 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -239,7 +239,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const TableRowGroup = tmp(5903).TableRowGroup;
+    const TableRowGroup = tmp(5935).TableRowGroup;
     if (hasIcons == null) {
       class X {
         constructor(arg0) {
@@ -555,7 +555,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     obj4.hasTrailingText = flag;
     obj4.children = found;
-    obj3.children = timestampProducer(tmp3(5903).TableRowGroup, obj4);
+    obj3.children = timestampProducer(tmp3(5935).TableRowGroup, obj4);
     const items = [timestampProducer(React4, obj3), ];
     let tmp20Result = null;
     if (null != hint) {

@@ -1,9 +1,9 @@
-// Module ID: 18183
-// Function ID: 18184
+// Module ID: 18193
+// Function ID: 18194
 // Name: useRoleSubscriptionFormat
-// Dependencies: [19, 2104, 2103, 2067, 15464, 1078, 558, 568, 504, 2]
+// Dependencies: [19, 2104, 2103, 2067, 15474, 1078, 558, 568, 504, 2]
 
-// Module 18183 (useRoleSubscriptionFormat)
+// Module 18193 (useRoleSubscriptionFormat)
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2103 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -12,7 +12,7 @@ const require = globalThis.__r;
 
 const require = fn;
 const hasPermission = fn(2104).hasPermission;
-const constants = fn(15464).GuildRoleSubscriptionFormat;
+const constants = fn(15474).GuildRoleSubscriptionFormat;
 const Permissions = fn(1078).Permissions;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

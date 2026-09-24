@@ -136,7 +136,7 @@ let items = [
     key: "setUser",
     value: function setUser(user) {
       if (!user) {
-        user = { email: "Array", id: "T", ip_address: "y", username: "IconComponent" };
+        user = { email: "unicodeVersion", id: "h", ip_address: "runOnJS", username: "Array" };
       }
       const self = this;
       this._user = user;

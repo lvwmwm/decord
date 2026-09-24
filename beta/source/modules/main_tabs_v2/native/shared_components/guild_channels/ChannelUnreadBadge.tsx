@@ -1,20 +1,20 @@
-// Module ID: 16372
-// Function ID: 16373
+// Module ID: 16382
+// Function ID: 16383
 // Name: ChannelUnreadBadge
-// Dependencies: [19, 17, 12213, 4940, 21, 4758, 558, 12214, 5195, 8117, 2]
+// Dependencies: [19, 17, 12249, 4972, 21, 4790, 558, 12250, 5227, 8149, 2]
 
-// Module 16372 (ChannelUnreadBadge)
-import useFontScale from "useFontScale" /* 5195 */;
-import BadgeDefault from "Badge" /* 8117 */;
-import ChannelListLayout from "ChannelListLayout" /* 12214 */;
+// Module 16382 (ChannelUnreadBadge)
+import useFontScale from "useFontScale" /* 5227 */;
+import BadgeDefault from "Badge" /* 8149 */;
+import ChannelListLayout from "ChannelListLayout" /* 12250 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const MUTED_OPACITY_CONTENT = fn(12213).MUTED_OPACITY_CONTENT;
-const UnreadSetting = fn(4940).UnreadSetting;
+const MUTED_OPACITY_CONTENT = fn(12249).MUTED_OPACITY_CONTENT;
+const UnreadSetting = fn(4972).UnreadSetting;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ unreadBadge: { flexGrow: 0, flexShrink: 0, position: "absolute" }, unreadBadgePanel: { marginLeft: -16 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -41,13 +41,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((panelV
     const unreadBadge = layoutStyles.unreadBadge;
     const obj2 = { style: null, children: null };
     items[2] = isThread ? unreadBadge.positionThread : unreadBadge.position;
-    items[3] = tmp3(12214).makeSizeStyle(layoutStyles.unreadBadge.size);
+    items[3] = tmp3(12250).makeSizeStyle(layoutStyles.unreadBadge.size);
     obj2.style = items;
     const obj3 = { classic: tmp, size: null, badgeStyle: null };
     const tmp10 = View;
-    const tmp3Result = tmp3(12214);
+    const tmp3Result = tmp3(12250);
     const _Math = Math;
-    obj3.size = tmp3(8117).CHANNEL_BADGE_SIZE * Math.max(tmp7, 1);
+    obj3.size = tmp3(8149).CHANNEL_BADGE_SIZE * Math.max(tmp7, 1);
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
       let num2 = MUTED_OPACITY_CONTENT;
     } else {
@@ -80,13 +80,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((panelV
     const unreadBadge = layoutStyles.unreadBadge;
     const obj2 = { style: null, children: null };
     items[2] = isThread ? unreadBadge.positionThread : unreadBadge.position;
-    items[3] = tmp2(12214).makeSizeStyle(layoutStyles.unreadBadge.size);
+    items[3] = tmp2(12250).makeSizeStyle(layoutStyles.unreadBadge.size);
     obj2.style = items;
     const obj3 = { classic: flag, size: null, badgeStyle: null };
-    const tmp2Result = tmp2(12214);
+    const tmp2Result = tmp2(12250);
     const tmp9 = View;
     const _Math = Math;
-    obj3.size = tmp2(8117).CHANNEL_BADGE_SIZE * Math.max(tmp6, 1);
+    obj3.size = tmp2(8149).CHANNEL_BADGE_SIZE * Math.max(tmp6, 1);
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
       let num2 = MUTED_OPACITY_CONTENT;
     } else {

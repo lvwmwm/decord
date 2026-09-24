@@ -1,17 +1,17 @@
-// Module ID: 16057
-// Function ID: 16058
+// Module ID: 16067
+// Function ID: 16068
 // Name: UserSettingsDesignSystemText
-// Dependencies: [19, 17, 21, 558, 568, 4462, 580, 5903, 4755, 5822, 4754, 5186, 2]
+// Dependencies: [19, 17, 21, 558, 568, 4494, 580, 5935, 4787, 5854, 4786, 5218, 2]
 
-// Module 16057 (UserSettingsDesignSystemText)
+// Module 16067 (UserSettingsDesignSystemText)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import TextVariants from "TextVariants" /* 4755 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import TableRow from "TableRow" /* 5822 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
+import useToken from "useToken" /* 4494 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import TextVariants from "TextVariants" /* 4787 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import TableRow from "TableRow" /* 5854 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -34,7 +34,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { title: "Text Variants", hasIcons: false, children: null };
-    const TEXT_VARIANT = tmp(4755).TEXT_VARIANT;
+    const TEXT_VARIANT = tmp(4787).TEXT_VARIANT;
     obj4.children = TEXT_VARIANT.map((variant) => {
       let tmp = null;
       if ("code" !== variant) {
@@ -45,7 +45,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       return tmp;
     });
-    const tmp9 = jsx(tmp(5903).TableRowGroup, { title: "Text Variants", hasIcons: false, children: null });
+    const tmp9 = jsx(tmp(5935).TableRowGroup, { title: "Text Variants", hasIcons: false, children: null });
     cResult[2] = tmp9;
     let tmp7 = tmp9;
   } else {
@@ -54,7 +54,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[3] !== tmp6) {
     const obj5 = { children: null };
     const obj6 = { spacing: nativeDefault.space.PX_24, style: tmp6, children: tmp7 };
-    obj5.children = jsx(tmp(5186).Stack, { spacing: nativeDefault.space.PX_24, style: tmp6, children: tmp7 });
+    obj5.children = jsx(tmp(5218).Stack, { spacing: nativeDefault.space.PX_24, style: tmp6, children: tmp7 });
     const tmp13 = <ScrollView>{null}</ScrollView>;
     cResult[3] = tmp6;
     cResult[4] = tmp13;

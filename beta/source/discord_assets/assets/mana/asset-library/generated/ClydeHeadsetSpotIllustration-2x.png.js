@@ -1,8 +1,8 @@
-// Module ID: 6095
-// Function ID: 6096
+// Module ID: 6127
+// Function ID: 6128
 // Dependencies: [2]
 
-// Module 6095
+// Module 6127
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ClydeHeadsetSpotIllustration-2x.png.js");

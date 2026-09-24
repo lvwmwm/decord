@@ -1,10 +1,10 @@
-// Module ID: 15837
-// Function ID: 15838
+// Module ID: 15847
+// Function ID: 15848
 // Name: DiskUsageManager
-// Dependencies: [7365, 2]
+// Dependencies: [7397, 2]
 
-// Module 15837 (DiskUsageManager)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+// Module 15847 (DiskUsageManager)
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
 
 class DiskUsageManager extends tmp2 {
   constructor() {

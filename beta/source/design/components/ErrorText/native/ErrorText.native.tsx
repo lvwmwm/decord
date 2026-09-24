@@ -1,10 +1,10 @@
-// Module ID: 7175
-// Function ID: 7176
+// Module ID: 7207
+// Function ID: 7208
 // Name: ErrorText
-// Dependencies: [19, 21, 558, 568, 4464, 4610, 7176, 4754, 5186, 2]
+// Dependencies: [19, 21, 558, 568, 4496, 4642, 7208, 4786, 5218, 2]
 
-// Module 7175 (ErrorText)
-import shared from "shared" /* 4610 */;
+// Module 7207 (ErrorText)
+import shared from "shared" /* 4642 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -20,11 +20,11 @@ export const ErrorText = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   const cResult = require("c").c(11);
   ({ children, style } = arg0);
   if (cResult[0] !== children) {
-    const nodeText = tmp(4464).getNodeText(children);
+    const nodeText = tmp(4496).getNodeText(children);
     cResult[0] = children;
     cResult[1] = nodeText;
     let tmp4 = nodeText;
-    const tmpResult = tmp(4464);
+    const tmpResult = tmp(4496);
   } else {
     tmp4 = cResult[1];
   }
@@ -52,7 +52,7 @@ export const ErrorText = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   const effect = noop.useEffect(tmp6, tmp7);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = closure_3(tmp(7176).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" });
+    const tmp11 = closure_3(tmp(7208).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" });
     cResult[5] = tmp11;
     let tmp9 = tmp11;
   } else {
@@ -60,7 +60,7 @@ export const ErrorText = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   if (cResult[6] !== children) {
     const obj2 = { variant: "text-xs/medium", color: "text-feedback-critical", children };
-    const tmp14 = closure_3(tmp(4754).Text, obj2);
+    const tmp14 = closure_3(tmp(4786).Text, obj2);
     cResult[6] = children;
     cResult[7] = tmp14;
     let tmp12 = tmp14;
@@ -84,7 +84,7 @@ export const ErrorText = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
 }) : ((children) => {
   children = children.children;
   let nodeText;
-  nodeText = nodeText(4464).getNodeText(children);
+  nodeText = nodeText(4496).getNodeText(children);
   const items = [nodeText];
   const effect = noop.useEffect(() => {
     let tmp2 = null != nodeText;
@@ -97,7 +97,7 @@ export const ErrorText = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     }
   }, items);
   const obj2 = { direction: "horizontal", spacing: 4, align: "flex-start", style: children.style, children: null };
-  const items1 = [closure_3(nodeText(7176).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), closure_3(nodeText(4754).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })];
+  const items1 = [closure_3(nodeText(7208).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), closure_3(nodeText(4786).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })];
   obj2.children = items1;
-  return closure_4(nodeText(5186).Stack, obj2);
+  return closure_4(nodeText(5218).Stack, obj2);
 });

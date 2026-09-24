@@ -1,9 +1,9 @@
-// Module ID: 10357
-// Function ID: 10358
+// Module ID: 10396
+// Function ID: 10397
 // Name: ChannelSafetyWarningsStore
 // Dependencies: [2045, 1095, 504, 577, 2]
 
-// Module 10357 (ChannelSafetyWarningsStore)
+// Module 10396 (ChannelSafetyWarningsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import DurationsDefault from "Durations" /* 1095 */;

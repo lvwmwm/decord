@@ -1,10 +1,10 @@
-// Module ID: 10153
-// Function ID: 10154
+// Module ID: 10192
+// Function ID: 10193
 // Name: useRequestToSpeakPermission
-// Dependencies: [32, 19, 2045, 1078, 558, 568, 504, 4404, 8674, 2]
+// Dependencies: [32, 19, 2045, 1078, 558, 568, 504, 4436, 8706, 2]
 
-// Module 10153 (useRequestToSpeakPermission)
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8674 */;
+// Module 10192 (useRequestToSpeakPermission)
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8706 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -55,10 +55,10 @@ export const useRequestToSpeakPermission = ReactCompilerGating.isReactCompilerEn
         return closure_5.getChannel(closure_0);
       }
     }
-    const canEveryoneRoleResult = stateFromStores(4404).canEveryoneRole(Permissions.REQUEST_TO_SPEAK, stateFromStores);
+    const canEveryoneRoleResult = stateFromStores(4436).canEveryoneRole(Permissions.REQUEST_TO_SPEAK, stateFromStores);
     cResult[4] = stateFromStores;
     cResult[5] = canEveryoneRoleResult;
-    const obj3 = stateFromStores(4404);
+    const obj3 = stateFromStores(4436);
   } else {
     class E {
       constructor() {
@@ -139,8 +139,8 @@ export const useRequestToSpeakPermission = ReactCompilerGating.isReactCompilerEn
   const items1 = [arg0];
   const stateFromStores = require("initialize").useStateFromStores(items, () => ChannelStore.getChannel(closure_0), items1);
   let obj = require("initialize");
-  const canEveryoneRoleResult = stateFromStores(4404).canEveryoneRole(Permissions.REQUEST_TO_SPEAK, stateFromStores);
-  const obj2 = stateFromStores(4404);
+  const canEveryoneRoleResult = stateFromStores(4436).canEveryoneRole(Permissions.REQUEST_TO_SPEAK, stateFromStores);
+  const obj2 = stateFromStores(4436);
   [tmp4, tmp5] = noop.useState(canEveryoneRoleResult);
   dependencyMap = tmp5;
   if (canEveryoneRoleResult !== tmp4) {

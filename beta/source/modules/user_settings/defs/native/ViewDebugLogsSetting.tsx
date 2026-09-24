@@ -1,29 +1,29 @@
-// Module ID: 15827
-// Function ID: 15828
+// Module ID: 15837
+// Function ID: 15838
 // Name: ViewDebugLogsSetting
-// Dependencies: [19, 17, 21, 4725, 558, 568, 4961, 11229, 7445, 7396, 1119, 15828, 15830, 4720, 7449, 15833, 1368, 11265, 15834, 11594, 14115, 2023, 2]
+// Dependencies: [19, 17, 21, 4757, 558, 568, 4993, 11265, 7477, 7428, 1119, 15838, 15840, 4752, 7481, 15843, 1368, 11301, 15844, 11630, 14152, 2023, 2]
 
-// Module 15827 (ViewDebugLogsSetting)
+// Module 15837 (ViewDebugLogsSetting)
 import _mod17 from "module_17" /* 17 */;
 import _mod19 from "module_19" /* 19 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import ClockIcon from "ClockIcon" /* 4720 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import ActionSheetRow from "ActionSheetRow" /* 7445 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11229 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 14115 */;
-import WrenchIcon from "WrenchIcon" /* 15828 */;
-import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 15830 */;
-import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 15833 */;
-import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 15834 */;
+import ClockIcon from "ClockIcon" /* 4752 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import ActionSheetRow from "ActionSheetRow" /* 7477 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11265 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 14152 */;
+import WrenchIcon from "WrenchIcon" /* 15838 */;
+import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 15840 */;
+import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 15843 */;
+import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 15844 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
 import size from "module_2" /* 2 */;
 
 const Suspense = _mod19.Suspense;
@@ -74,7 +74,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenKey) => {
 }) : ((icon) => {
   const title = icon.title;
   ({ screenKey: importDefault, render: dependencyMap } = icon);
-  return closure_5(title(7445).ActionSheetRow, {
+  return closure_5(title(7477).ActionSheetRow, {
     icon: icon.icon,
     label: title,
     onPress() {
@@ -94,14 +94,14 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { title: null };
     const intl = tmp(1119).intl;
     obj2.title = intl.string(tmp(1119).t.BUOCPi);
-    const tmp6 = hasOwnProperty(tmp(7396).BottomSheetTitleHeader, obj2);
+    const tmp6 = hasOwnProperty(tmp(7428).BottomSheetTitleHeader, obj2);
     cResult[0] = tmp6;
     let first = tmp6;
   } else {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp10 = hasOwnProperty(tmp(15828).WrenchIcon, {});
+    const tmp10 = hasOwnProperty(tmp(15838).WrenchIcon, {});
     const intl2 = tmp(1119).intl;
     const stringResult = intl2.string(tmp(1119).t.XpPGhL);
     cResult[1] = tmp10;
@@ -128,7 +128,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp12 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp19 = hasOwnProperty(tmp(4720).ClockIcon, {});
+    const tmp19 = hasOwnProperty(tmp(4752).ClockIcon, {});
     const intl3 = tmp(1119).intl;
     const stringResult1 = intl3.string(tmp(1119).t.b0nJvk);
     cResult[4] = tmp19;
@@ -153,7 +153,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     items[1] = hasOwnProperty(closure_8, obj5);
     let tmp22Result = null;
     if (tmpResult.isAndroid()) {
-      const obj6 = { icon: tmp22(tmp(11265).ChannelNotificationIcon, {}), title: null, screenKey: "pushNotificationLogs", render: null };
+      const obj6 = { icon: tmp22(tmp(11301).ChannelNotificationIcon, {}), title: null, screenKey: "pushNotificationLogs", render: null };
       const intl4 = tmp(1119).intl;
       obj6.title = intl4.string(tmp(1119).t.Ljj0ps);
       obj6.render = function render() {
@@ -164,8 +164,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj7 = { hasIcons: true, children: null };
     items[2] = tmp22Result;
     obj7.children = items;
-    obj4.children = timestampProducer(tmp(7445).ActionSheetRow.Group, obj7);
-    const tmp22Result2 = hasOwnProperty(tmp(7449).ActionSheet, obj4);
+    obj4.children = timestampProducer(tmp(7477).ActionSheetRow.Group, obj7);
+    const tmp22Result2 = hasOwnProperty(tmp(7481).ActionSheet, obj4);
     cResult[6] = tmp22Result2;
     let tmp21 = tmp22Result2;
     tmp24 = closure_8;
@@ -196,7 +196,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   items[1] = hasOwnProperty(closure_8, obj4);
   let tmpResult = null;
   if (obj5.isAndroid()) {
-    const obj6 = { icon: tmp(tmp2(11265).ChannelNotificationIcon, {}), title: null, screenKey: "pushNotificationLogs", render: null };
+    const obj6 = { icon: tmp(tmp2(11301).ChannelNotificationIcon, {}), title: null, screenKey: "pushNotificationLogs", render: null };
     const intl4 = tmp2(1119).intl;
     obj6.title = intl4.string(tmp2(1119).t.Ljj0ps);
     obj6.render = function render() {

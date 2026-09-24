@@ -1,12 +1,12 @@
-// Module ID: 15503
-// Function ID: 15504
+// Module ID: 15513
+// Function ID: 15514
 // Name: PremiumRestorationAlert
-// Dependencies: [19, 7484, 21, 15504, 504, 2]
+// Dependencies: [19, 7516, 21, 15514, 504, 2]
 
-// Module 15503 (PremiumRestorationAlert)
-import UntouchableAlertDefault from "UntouchableAlert" /* 15504 */;
+// Module 15513 (PremiumRestorationAlert)
+import UntouchableAlertDefault from "UntouchableAlert" /* 15514 */;
 import noop from "module_19" /* 19 */;
-import IAPStore from "IAPStore" /* 7484 */;
+import IAPStore from "IAPStore" /* 7516 */;
 import initialize from "initialize" /* 504 */;
 
 const jsx = fn(21).jsx;

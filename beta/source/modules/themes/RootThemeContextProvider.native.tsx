@@ -1,16 +1,16 @@
-// Module ID: 16271
-// Function ID: 16272
+// Module ID: 16281
+// Function ID: 16282
 // Name: RootThemeContextProvider
-// Dependencies: [19, 4750, 1186, 1089, 21, 558, 568, 504, 4612, 7223, 16272, 4471, 4763, 10329, 2]
+// Dependencies: [19, 4782, 1186, 1089, 21, 558, 568, 504, 4644, 7255, 16282, 4503, 4795, 10368, 2]
 
-// Module 16271 (RootThemeContextProvider)
+// Module 16281 (RootThemeContextProvider)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4612 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7223 */;
-import PlainTextExperiment from "PlainTextExperiment" /* 16272 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4644 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7255 */;
+import PlainTextExperiment from "PlainTextExperiment" /* 16282 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 
 require = fn;
@@ -95,7 +95,7 @@ export const RootThemeContextProvider = ReactCompilerGating.isReactCompilerEnabl
         obj2.contrast = contrast;
         obj2.enabledExperiments = tmp12;
         obj2.children = tmp20;
-        const tmp25 = jsx(tmp(10329).RootThemeContextProvider, { theme, flags: null, saturation: null, contrast: null, enabledExperiments: null, children: null });
+        const tmp25 = jsx(tmp(10368).RootThemeContextProvider, { theme, flags: null, saturation: null, contrast: null, enabledExperiments: null, children: null });
         cResult[11] = contrast;
         cResult[12] = tmp12;
         cResult[13] = tmp14;
@@ -112,7 +112,7 @@ export const RootThemeContextProvider = ReactCompilerGating.isReactCompilerEnabl
           return obj;
         }
       }
-      const tmp22 = jsx(tmp(4763).PlainTextExperimentProvider, { enabled: plainTextExperiment, children: null });
+      const tmp22 = jsx(tmp(4795).PlainTextExperimentProvider, { enabled: plainTextExperiment, children: null });
       cResult[8] = children;
       cResult[9] = plainTextExperiment;
       cResult[10] = tmp22;
@@ -122,8 +122,8 @@ export const RootThemeContextProvider = ReactCompilerGating.isReactCompilerEnabl
   if (null == tmp9) {
     let num6 = 0;
     if (1 !== saturation) {
-      num6 = tmp(4471).setThemeFlag(0, tmp(4471).ThemeContextFlags.REDUCE_SATURATION_ENABLED);
-      const tmpResult9 = tmp(4471);
+      num6 = tmp(4503).setThemeFlag(0, tmp(4503).ThemeContextFlags.REDUCE_SATURATION_ENABLED);
+      const tmpResult9 = tmp(4503);
     }
     if (1 === contrast) {
       cResult[4] = contrast;
@@ -138,19 +138,19 @@ export const RootThemeContextProvider = ReactCompilerGating.isReactCompilerEnabl
       tmp14 = num6;
     } else {
       if (contrast > 1) {
-        let REDUCED_CONTRAST_ENABLED = tmp(4471).ThemeContextFlags.INCREASED_CONTRAST_ENABLED;
+        let REDUCED_CONTRAST_ENABLED = tmp(4503).ThemeContextFlags.INCREASED_CONTRAST_ENABLED;
       } else {
-        REDUCED_CONTRAST_ENABLED = tmp(4471).ThemeContextFlags.REDUCED_CONTRAST_ENABLED;
+        REDUCED_CONTRAST_ENABLED = tmp(4503).ThemeContextFlags.REDUCED_CONTRAST_ENABLED;
       }
-      tmp(4471).setThemeFlag(num6, REDUCED_CONTRAST_ENABLED);
-      const tmpResult10 = tmp(4471);
+      tmp(4503).setThemeFlag(num6, REDUCED_CONTRAST_ENABLED);
+      const tmpResult10 = tmp(4503);
     }
   } else if (tmp9.theme === ThemeTypes.LIGHT) {
-    let setThemeFlagResult1 = tmp(4471).setThemeFlag(0, tmp(4471).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED);
-    const tmpResult11 = tmp(4471);
+    let setThemeFlagResult1 = tmp(4503).setThemeFlag(0, tmp(4503).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED);
+    const tmpResult11 = tmp(4503);
   } else {
-    setThemeFlagResult1 = tmp(4471).setThemeFlag(0, tmp(4471).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED);
-    const tmpResult12 = tmp(4471);
+    setThemeFlagResult1 = tmp(4503).setThemeFlag(0, tmp(4503).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED);
+    const tmpResult12 = tmp(4503);
   }
 }) : ((children) => {
   let manaTypeConsolidationExperiment;
@@ -159,35 +159,35 @@ export const RootThemeContextProvider = ReactCompilerGating.isReactCompilerEnabl
   ({ saturation, contrast } = stateFromStoresObject);
   const tmp4 = useColorThemeBackgroundDefault();
   const obj = manaTypeConsolidationExperiment(504);
-  manaTypeConsolidationExperiment = manaTypeConsolidationExperiment(7223).useManaTypeConsolidationExperiment("RootThemeContextProvider");
-  const obj2 = manaTypeConsolidationExperiment(7223);
+  manaTypeConsolidationExperiment = manaTypeConsolidationExperiment(7255).useManaTypeConsolidationExperiment("RootThemeContextProvider");
+  const obj2 = manaTypeConsolidationExperiment(7255);
   [][0] = manaTypeConsolidationExperiment;
-  const plainTextExperiment = manaTypeConsolidationExperiment(16272).usePlainTextExperiment("RootThemeContextProvider");
+  const plainTextExperiment = manaTypeConsolidationExperiment(16282).usePlainTextExperiment("RootThemeContextProvider");
   if (null == tmp4) {
     let num2 = 0;
     if (1 !== saturation) {
-      num2 = tmp(4471).setThemeFlag(0, tmp(4471).ThemeContextFlags.REDUCE_SATURATION_ENABLED);
-      const tmpResult = tmp(4471);
+      num2 = tmp(4503).setThemeFlag(0, tmp(4503).ThemeContextFlags.REDUCE_SATURATION_ENABLED);
+      const tmpResult = tmp(4503);
     }
     if (1 === contrast) {
       const obj4 = { theme: stateFromStoresObject.theme, flags: num2, saturation, contrast, enabledExperiments: tmp7, children: null };
       const obj5 = { enabled: plainTextExperiment, children: children.children };
-      obj4.children = jsx(tmp(4763).PlainTextExperimentProvider, { enabled: plainTextExperiment, children: children.children });
-      return jsx(tmp(10329).RootThemeContextProvider, { theme: stateFromStoresObject.theme, flags: num2, saturation, contrast, enabledExperiments: tmp7, children: null });
+      obj4.children = jsx(tmp(4795).PlainTextExperimentProvider, { enabled: plainTextExperiment, children: children.children });
+      return jsx(tmp(10368).RootThemeContextProvider, { theme: stateFromStoresObject.theme, flags: num2, saturation, contrast, enabledExperiments: tmp7, children: null });
     } else {
       if (contrast > 1) {
-        let REDUCED_CONTRAST_ENABLED = tmp(4471).ThemeContextFlags.INCREASED_CONTRAST_ENABLED;
+        let REDUCED_CONTRAST_ENABLED = tmp(4503).ThemeContextFlags.INCREASED_CONTRAST_ENABLED;
       } else {
-        REDUCED_CONTRAST_ENABLED = tmp(4471).ThemeContextFlags.REDUCED_CONTRAST_ENABLED;
+        REDUCED_CONTRAST_ENABLED = tmp(4503).ThemeContextFlags.REDUCED_CONTRAST_ENABLED;
       }
-      tmp(4471).setThemeFlag(num2, REDUCED_CONTRAST_ENABLED);
-      const tmpResult4 = tmp(4471);
+      tmp(4503).setThemeFlag(num2, REDUCED_CONTRAST_ENABLED);
+      const tmpResult4 = tmp(4503);
     }
   } else if (tmp4.theme === ThemeTypes.LIGHT) {
-    let setThemeFlagResult1 = tmp(4471).setThemeFlag(0, tmp(4471).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED);
-    const tmpResult5 = tmp(4471);
+    let setThemeFlagResult1 = tmp(4503).setThemeFlag(0, tmp(4503).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED);
+    const tmpResult5 = tmp(4503);
   } else {
-    setThemeFlagResult1 = tmp(4471).setThemeFlag(0, tmp(4471).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED);
-    const tmpResult6 = tmp(4471);
+    setThemeFlagResult1 = tmp(4503).setThemeFlag(0, tmp(4503).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED);
+    const tmpResult6 = tmp(4503);
   }
 });

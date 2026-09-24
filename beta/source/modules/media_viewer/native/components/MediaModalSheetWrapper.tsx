@@ -1,10 +1,10 @@
-// Module ID: 8564
-// Function ID: 8565
+// Module ID: 8596
+// Function ID: 8597
 // Name: MediaModalSheetWrapper
-// Dependencies: [109, 19, 1078, 21, 558, 568, 7399, 4725, 8565, 2]
+// Dependencies: [109, 19, 1078, 21, 558, 568, 7431, 4757, 8597, 2]
 
-// Module 8564 (MediaModalSheetWrapper)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+// Module 8596 (MediaModalSheetWrapper)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -31,7 +31,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseCallback)
     _require = cResult[1];
     tmp4 = cResult[2];
   }
-  context = noop.useContext(context(7399));
+  context = noop.useContext(context(7431));
   if (cResult[3] !== context) {
     const fn = function f() {
       let transitionState;
@@ -76,7 +76,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseCallback)
   const obj = require("c");
   const merged = Object.assign(tmp4);
   obj3.onClose = tmp13;
-  const tmp17 = jsx(context(8565), {});
+  const tmp17 = jsx(context(8597), {});
   cResult[8] = tmp13;
   cResult[9] = tmp4;
   cResult[10] = tmp17;
@@ -85,7 +85,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseCallback)
   onCloseCallback = onCloseCallback.onCloseCallback;
   const merged = Object.assign(onCloseCallback, Object.assign({ onCloseCallback: 0 }));
   let context;
-  context = noop.useContext(context(7399));
+  context = noop.useContext(context(7431));
   const items = [context];
   const effect = noop.useEffect(() => {
     let transitionState;
@@ -106,5 +106,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onCloseCallback)
   const obj = {};
   const merged1 = Object.assign(merged);
   obj.onClose = callback;
-  return jsx(context(8565), {});
+  return jsx(context(8597), {});
 });

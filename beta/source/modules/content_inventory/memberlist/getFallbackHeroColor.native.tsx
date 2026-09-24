@@ -1,10 +1,10 @@
-// Module ID: 8408
-// Function ID: 8409
+// Module ID: 8440
+// Function ID: 8441
 // Name: getFallbackHeroColor
 // Dependencies: [580, 2]
 // Exports: getFallbackHeroColor
 
-// Module 8408 (getFallbackHeroColor)
+// Module 8440 (getFallbackHeroColor)
 import nativeDefault from "native" /* 580 */;
 import size from "module_2" /* 2 */;
 

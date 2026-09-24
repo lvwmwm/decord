@@ -1,21 +1,21 @@
-// Module ID: 8988
-// Function ID: 8989
+// Module ID: 9020
+// Function ID: 9021
 // Name: GameProfileRankPill
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 8989, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 9021, 1119, 4786, 2]
 
-// Module 8988 (GameProfileRankPill)
+// Module 9020 (GameProfileRankPill)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import TrophyIcon from "TrophyIcon" /* 8989 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import TrophyIcon from "TrophyIcon" /* 9021 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, flexDirection: "row", alignItems: "flex-end" }, gameRankPill: null };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 obj2.gameRankPill = { flexDirection: "row", backgroundColor: nativeDefault.colors.WHITE, borderRadius: nativeDefault.radii.round, paddingHorizontal: nativeDefault.space.PX_8, alignItems: "center", gap: nativeDefault.space.PX_4 };
@@ -32,7 +32,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ container, gameRankPill } = tmp5);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xxs", color: nativeDefault.colors.BLACK };
-    const tmp9 = React4(tmp(8989).TrophyIcon, obj2);
+    const tmp9 = React4(tmp(9021).TrophyIcon, obj2);
     cResult[0] = tmp9;
     let first = tmp9;
   } else {
@@ -42,7 +42,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[2] === rank) {
       if (cResult[4] !== cResult[3]) {
         const obj3 = { variant: "text-xs/bold", color: "text-overlay-dark", children: tmp10 };
-        const tmp13 = React4(tmp(4754).Text, obj3);
+        const tmp13 = React4(tmp(4786).Text, obj3);
         cResult[4] = tmp10;
         cResult[5] = tmp13;
         let tmp11 = tmp13;

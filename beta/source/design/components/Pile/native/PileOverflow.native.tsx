@@ -1,14 +1,14 @@
-// Module ID: 11304
-// Function ID: 11305
+// Module ID: 11340
+// Function ID: 11341
 // Name: PileOverflow
-// Dependencies: [19, 17, 2113, 21, 4758, 580, 558, 568, 565, 1885, 4754, 2]
+// Dependencies: [19, 17, 2113, 21, 4790, 580, 558, 568, 565, 1885, 4786, 2]
 
-// Module 11304 (PileOverflow)
+// Module 11340 (PileOverflow)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import NumberUtils from "NumberUtils" /* 1885 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
 
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsxs: closure_4, jsx: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, flexShrink: 0 } };
 let closure_6 = createStyles.createStyles(obj2);
 let items = [[64, "text-lg/semibold"], [48, "text-md/semibold"], [40, "text-md/semibold"], [30, "text-sm/semibold"], [24, "text-xs/semibold"], [16, "text-xxs/semibold"]];
@@ -91,7 +91,7 @@ export const PileOverflow = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
           const obj3 = { lineClamp: 1, maxFontSizeMultiplier: 2, variant: tmp11, children: null };
           const items1 = ["+", tmp14];
           obj3.children = items1;
-          const tmp18 = React4(tmp(4754).Text, obj3);
+          const tmp18 = React4(tmp(4786).Text, obj3);
           cResult[14] = tmp11;
           cResult[15] = tmp14;
           cResult[16] = tmp18;

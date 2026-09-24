@@ -1,9 +1,9 @@
-// Module ID: 9087
-// Function ID: 9088
+// Module ID: 9119
+// Function ID: 9120
 // Name: APNGPlayer
-// Dependencies: [109, 19, 21, 558, 568, 9088, 2]
+// Dependencies: [109, 19, 21, 558, 568, 9120, 2]
 
-// Module 9087 (APNGPlayer)
+// Module 9119 (APNGPlayer)
 import c from "c" /* 568 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -150,27 +150,27 @@ export const APNGPlayer = noop.forwardRef(ReactCompilerGating.isReactCompilerEna
       return {
         play() {
           if (null != ref.current) {
-            const Commands = closure_0(9088).Commands;
+            const Commands = closure_0(9120).Commands;
             Commands.play(tmp.current);
           }
         },
         pause() {
           if (null != ref.current) {
-            const Commands = closure_0(9088).Commands;
+            const Commands = closure_0(9120).Commands;
             Commands.pause(tmp.current);
           }
         },
         stop() {
           if (null != ref.current) {
-            const Commands = closure_0(9088).Commands;
+            const Commands = closure_0(9120).Commands;
             Commands.seek(tmp.current, 0);
-            const Commands2 = closure_0(9088).Commands;
+            const Commands2 = closure_0(9120).Commands;
             Commands2.pause(tmp.current);
           }
         },
         seek(arg0) {
           if (null != ref.current) {
-            const Commands = closure_0(9088).Commands;
+            const Commands = closure_0(9120).Commands;
             Commands.seek(tmp.current, arg0);
           }
         }
@@ -191,7 +191,7 @@ export const APNGPlayer = noop.forwardRef(ReactCompilerGating.isReactCompilerEna
   const obj = require("c");
   const obj3 = { ref, onLoad: tmp9 };
   const merged = Object.assign(tmp4);
-  const tmp15 = jsx(ref(9088), { ref, onLoad: tmp9 });
+  const tmp15 = jsx(ref(9120), { ref, onLoad: tmp9 });
   cResult[6] = tmp9;
   cResult[7] = tmp4;
   cResult[8] = tmp15;
@@ -209,31 +209,31 @@ export const APNGPlayer = noop.forwardRef(ReactCompilerGating.isReactCompilerEna
   const imperativeHandle = noop.useImperativeHandle(ref, () => ({
     play() {
       if (null != ref.current) {
-        const Commands = onLoad(9088).Commands;
+        const Commands = onLoad(9120).Commands;
         Commands.play(tmp.current);
       }
     },
     pause() {
       if (null != ref.current) {
-        const Commands = onLoad(9088).Commands;
+        const Commands = onLoad(9120).Commands;
         Commands.pause(tmp.current);
       }
     },
     stop() {
       if (null != ref.current) {
-        const Commands = onLoad(9088).Commands;
+        const Commands = onLoad(9120).Commands;
         Commands.seek(tmp.current, 0);
-        const Commands2 = onLoad(9088).Commands;
+        const Commands2 = onLoad(9120).Commands;
         Commands2.pause(tmp.current);
       }
     },
     seek(arg0) {
       if (null != ref.current) {
-        const Commands = onLoad(9088).Commands;
+        const Commands = onLoad(9120).Commands;
         Commands.seek(tmp.current, arg0);
       }
     }
   }));
   const merged1 = Object.assign(merged);
-  return jsx(ref(9088), { ref, onLoad: callback });
+  return jsx(ref(9120), { ref, onLoad: callback });
 }));

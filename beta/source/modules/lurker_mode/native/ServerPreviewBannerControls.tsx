@@ -1,16 +1,16 @@
-// Module ID: 16517
-// Function ID: 16518
+// Module ID: 16527
+// Function ID: 16528
 // Name: ServerPreviewBannerControls
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 7586, 8178, 5844, 1119, 16518, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 7618, 8210, 5876, 1119, 16528, 2]
 
-// Module 16517 (ServerPreviewBannerControls)
+// Module 16527 (ServerPreviewBannerControls)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import _modDef5844 from "module_5844" /* 5844 */;
-import transitionToGuild from "transitionToGuild" /* 7586 */;
-import IconButton from "IconButton" /* 8178 */;
-import ServerPreviewPillDefault from "ServerPreviewPill" /* 16518 */;
+import _modDef5876 from "module_5876" /* 5876 */;
+import transitionToGuild from "transitionToGuild" /* 7618 */;
+import IconButton from "IconButton" /* 8210 */;
+import ServerPreviewPillDefault from "ServerPreviewPill" /* 16528 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ const View = fn(17).View;
 const MOBILE_GUILD_UPSELL_LIST = fn(1078).MOBILE_GUILD_UPSELL_LIST;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { row: null };
 const rect = { position: "absolute", top: nativeDefault.space.PX_16, left: nativeDefault.space.PX_16, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 obj2.row = rect;
@@ -40,10 +40,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { size: "md", variant: "secondary-overlay", icon: _modDef5844, onPress: first, accessibilityLabel: null, maxFontSizeMultiplier: 1.5 };
+    const obj2 = { size: "md", variant: "secondary-overlay", icon: _modDef5876, onPress: first, accessibilityLabel: null, maxFontSizeMultiplier: 1.5 };
     const intl = tmp(1119).intl;
     obj2.accessibilityLabel = intl.string(tmp(1119).t["13/7kX"]);
-    const tmp10 = timestampProducer(tmp(8178).IconButton, obj2);
+    const tmp10 = timestampProducer(tmp(8210).IconButton, obj2);
     const tmp11 = timestampProducer(ServerPreviewPillDefault, {});
     cResult[1] = tmp10;
     cResult[2] = tmp11;
@@ -70,7 +70,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const callback = noop.useCallback(() => {
     transitionToGuild.transitionToGuild(MOBILE_GUILD_UPSELL_LIST);
   }, []);
-  const obj2 = { size: "md", variant: "secondary-overlay", icon: _modDef5844, onPress: callback, accessibilityLabel: null, maxFontSizeMultiplier: 1.5 };
+  const obj2 = { size: "md", variant: "secondary-overlay", icon: _modDef5876, onPress: callback, accessibilityLabel: null, maxFontSizeMultiplier: 1.5 };
   const intl = util.intl;
   obj2.accessibilityLabel = intl.string(util.t["13/7kX"]);
   const items = [timestampProducer(IconButton.IconButton, obj2), timestampProducer(ServerPreviewPillDefault, {})];

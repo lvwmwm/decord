@@ -1,29 +1,29 @@
-// Module ID: 16635
-// Function ID: 16636
+// Module ID: 16645
+// Function ID: 16646
 // Name: GuildsBarAnimatedItemWrapper
-// Dependencies: [19, 5206, 16623, 21, 4758, 580, 558, 568, 4462, 4471, 5187, 4497, 7320, 16636, 16361, 16364, 1119, 4472, 16637, 5804, 9092, 2]
+// Dependencies: [19, 5238, 16633, 21, 4790, 580, 558, 568, 4494, 4503, 5219, 4529, 7352, 16646, 16371, 16374, 1119, 4504, 16647, 5836, 9124, 2]
 
-// Module 16635 (GuildsBarAnimatedItemWrapper)
+// Module 16645 (GuildsBarAnimatedItemWrapper)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import useToken from "useToken" /* 4462 */;
-import native from "native" /* 4471 */;
-import spring from "spring" /* 5187 */;
+import useToken from "useToken" /* 4494 */;
+import native from "native" /* 4503 */;
+import spring from "spring" /* 5219 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function renderUnreadIndicator(arg0, sharedId, transitionState, cleanUp) {
   return closure_1_8(closure_18, { sharedId: sharedId.sharedId, id: sharedId.id, selected: sharedId.selected, transitionState, cleanUp }, arg0);
 }
-const IOS_POINTER_STYLE = fn(5206).IOS_POINTER_STYLE;
-const GuildsBarConstants = fn(16623);
+const IOS_POINTER_STYLE = fn(5238).IOS_POINTER_STYLE;
+const GuildsBarConstants = fn(16633);
 ({ GUILD_ITEM_HIT_SLOP: hasOwnProperty, GUILD_ITEM_INSET_LEFT: metroRequire, useGuildWrapperSize: closure_7 } = GuildsBarConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const CORNER_SPRING_PHYSICS = { mass: 0.8, damping: 100, stiffness: 150 };
 const BAR_SPRING_PHYSICS = { mass: 0.25, damping: 100, stiffness: 200 };
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let closure_12 = createStyles.createStyles(() => {
   let num = arg0;
   if (arg0 === undefined) {
@@ -36,7 +36,7 @@ let closure_12 = createStyles.createStyles(() => {
   obj.expandedChildrenWrapper = rect;
   return obj;
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let closure_13 = createStyles.createStyles((arg0, arg1, width, height) => {
   const obj = { pressableWrapper: null, itemShape: null, itemShapeSelected: null };
   const size = { position: "relative", paddingTop: nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN, paddingBottom: nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN, paddingLeft, height, width: width + hasOwnProperty.left + hasOwnProperty.right };
@@ -813,7 +813,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
         let AccessibilityAnnouncer = require;
         const intl = util.intl;
         const t = util.t;
-        AccessibilityAnnouncer = AccessibilityAnnouncer(4472).AccessibilityAnnouncer;
+        AccessibilityAnnouncer = AccessibilityAnnouncer(4504).AccessibilityAnnouncer;
         AccessibilityAnnouncer.announce(intl.string(tmp3 ? t.CUnsOR : t.jsudFd));
         tmp.current = tmp3;
         const stringResult = intl.string(tmp3 ? t.CUnsOR : t.jsudFd);

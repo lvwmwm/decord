@@ -1,13 +1,13 @@
-// Module ID: 11725
-// Function ID: 11726
+// Module ID: 11761
+// Function ID: 11762
 // Name: TimerIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 11726, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 11762, 4493, 2]
 
-// Module 11725 (TimerIcon)
+// Module 11761 (TimerIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod11726 from "module_11726" /* 11726 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod11762 from "module_11762" /* 11762 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const TimerIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(11726);
+    const tmpResult = tmp(11762);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const TimerIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11726, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11762, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

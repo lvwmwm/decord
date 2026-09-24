@@ -1,33 +1,33 @@
-// Module ID: 12729
-// Function ID: 12730
+// Module ID: 12765
+// Function ID: 12766
 // Name: GuildPowerupsLevelCard
-// Dependencies: [19, 17, 4648, 1078, 12730, 21, 4758, 580, 558, 568, 5198, 9487, 7223, 12713, 12690, 4754, 1119, 2518, 12663, 12682, 12731, 12687, 12732, 2]
+// Dependencies: [19, 17, 4680, 1078, 12766, 21, 4790, 580, 558, 568, 5230, 9519, 7255, 12749, 12726, 4786, 1119, 2518, 12699, 12718, 12767, 12723, 12768, 2]
 
-// Module 12729 (GuildPowerupsLevelCard)
+// Module 12765 (GuildPowerupsLevelCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7223 */;
-import BoostGemIcon from "BoostGemIcon" /* 9487 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12663 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12682 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 12687 */;
-import GuildBoostingMarketingUtils from "GuildBoostingMarketingUtils" /* 12690 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12731 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7255 */;
+import BoostGemIcon from "BoostGemIcon" /* 9519 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12699 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12718 */;
+import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 12723 */;
+import GuildBoostingMarketingUtils from "GuildBoostingMarketingUtils" /* 12726 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12767 */;
 import noop from "module_19" /* 19 */;
 
-const GuildPowerupsCardDefault = tmp6(12732);
+const GuildPowerupsCardDefault = tmp6(12768);
 require = fn;
 const View = fn(17).View;
-const GuildPowerupsConstants = fn(4648);
+const GuildPowerupsConstants = fn(4680);
 ({ LevelCardPosition: hasOwnProperty, PowerupActiveStatusType: metroRequire } = GuildPowerupsConstants);
 const Constants = fn(1078);
 ({ BoostedGuildTiers: closure_7, HorizontalGradient: closure_8 } = Constants);
-const TIER_CARDS = fn(12730).TIER_CARDS;
+const TIER_CARDS = fn(12766).TIER_CARDS;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { cardContainer: { flex: 1 }, card: { padding: 0, overflow: "hidden", flex: 1 }, progressContainer: { marginVertical: nativeDefault.space.PX_24, position: "relative" }, progress: null, progressStart: null, progressEnd: null, boostContainerBackground: null, boostContainer: null, boostContainerActive: null, boostContainerInactive: null, contentContainer: null, perkRowContainer: null, perkRow: null, perkRowStyle: null, perkText: null, footerContainer: null };
 let obj3 = { marginVertical: nativeDefault.space.PX_24, position: "relative" };
 obj2.progress = { height: 6, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
@@ -543,7 +543,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 tmp33 = tmp36;
               }
               const obj7 = { cost: powerup.cost, status: calculatePowerupCardStatus };
-              const tmp32 = v65535(tmp(12687).GuildPowerupsCardFooter, obj7);
+              const tmp32 = v65535(tmp(12723).GuildPowerupsCardFooter, obj7);
               cResult[14] = powerup.cost;
               cResult[15] = calculatePowerupCardStatus;
               cResult[16] = tmp32;
@@ -558,7 +558,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj9 = { color: str, variant: str2, children: powerup.title };
-        const tmp25 = v65535(tmp(4754).Text, obj9);
+        const tmp25 = v65535(tmp(4786).Text, obj9);
         cResult[7] = powerup.title;
         cResult[8] = str;
         cResult[9] = str2;

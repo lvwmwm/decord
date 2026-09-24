@@ -1,13 +1,13 @@
-// Module ID: 6576
-// Function ID: 6577
+// Module ID: 6608
+// Function ID: 6609
 // Name: PaintIllocon
-// Dependencies: [21, 558, 568, 6577, 5802, 2]
+// Dependencies: [21, 558, 568, 6609, 5834, 2]
 
-// Module 6576 (PaintIllocon)
+// Module 6608 (PaintIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6577 from "module_6577" /* 6577 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6609 from "module_6609" /* 6609 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const PaintIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6577 };
+    const obj2 = { uri: _modDef6609 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const PaintIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6577 };
+  const obj2 = { uri: _modDef6609 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

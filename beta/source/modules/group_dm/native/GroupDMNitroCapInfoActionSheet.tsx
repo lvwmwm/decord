@@ -1,24 +1,24 @@
-// Module ID: 12331
-// Function ID: 12332
+// Module ID: 12367
+// Function ID: 12368
 // Name: GroupDMNitroCapInfoActionSheet
-// Dependencies: [19, 17, 11713, 21, 4758, 580, 558, 568, 4725, 1119, 4754, 5188, 7397, 2]
+// Dependencies: [19, 17, 11749, 21, 4790, 580, 558, 568, 4757, 1119, 4786, 5220, 7429, 2]
 
-// Module 12331 (GroupDMNitroCapInfoActionSheet)
+// Module 12367 (GroupDMNitroCapInfoActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const number = fn(11713).MAX_GROUP_DM_NITRO_PARTICIPANTS;
+const number = fn(11749).MAX_GROUP_DM_NITRO_PARTICIPANTS;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 }, title: null, body: null, button: null };
 let obj3 = { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 obj2.title = { marginTop: nativeDefault.space.PX_8, textAlign: "center" };
@@ -55,7 +55,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] !== tmp4.title) {
     const obj2 = { style: title, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: tmp6 };
-    const tmp10 = timestampProducer(tmp(4754).Text, obj2);
+    const tmp10 = timestampProducer(tmp(4786).Text, obj2);
     cResult[2] = tmp4.title;
     cResult[3] = tmp10;
     let tmp8 = tmp10;
@@ -73,7 +73,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[5] !== tmp4.body) {
     const obj4 = { style: tmp4.body, variant: "text-md/medium", color: "text-muted", children: tmp11 };
-    const tmp16 = timestampProducer(tmp(4754).Text, obj4);
+    const tmp16 = timestampProducer(tmp(4786).Text, obj4);
     cResult[5] = tmp4.body;
     cResult[6] = tmp16;
     let tmp14 = tmp16;
@@ -85,7 +85,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl3 = tmp(1119).intl;
     obj5.text = intl3.string(tmp(1119).t.cpT0Cq);
     obj5.onPress = first;
-    const tmp19 = timestampProducer(tmp(5188).Button, obj5);
+    const tmp19 = timestampProducer(tmp(5220).Button, obj5);
     cResult[7] = tmp19;
     let tmp17 = tmp19;
   } else {

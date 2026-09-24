@@ -1,27 +1,27 @@
-// Module ID: 16333
-// Function ID: 16334
+// Module ID: 16343
+// Function ID: 16344
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 12558, 12559, 1078, 21, 4758, 580, 558, 568, 12560, 1245, 12561, 16334, 1119, 12835, 2]
+// Dependencies: [19, 17, 12594, 12595, 1078, 21, 4790, 580, 558, 568, 12596, 1245, 12597, 16344, 1119, 12871, 2]
 
-// Module 16333 (RedesignNotificationModal)
+// Module 16343 (RedesignNotificationModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12560 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12561 */;
-import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12835 */;
-import _modDef16334 from "module_16334" /* 16334 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12596 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12597 */;
+import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12871 */;
+import _modDef16344 from "module_16344" /* 16344 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const PermissionStateType = fn(12558).PermissionStateType;
-const NotificationPermissionConstants = fn(12559);
+const PermissionStateType = fn(12594).PermissionStateType;
+const NotificationPermissionConstants = fn(12595);
 ({ EventActionLocation: closure_7, EventActionType: closure_8 } = NotificationPermissionConstants);
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: -nativeDefault.space.PX_48 }, notificationHeaderImage: { position: "absolute", alignSelf: "center", zIndex: 2, top: -140, height: 156, width: 150 } };
 let closure_11 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -60,8 +60,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
     tmp6 = cResult[3];
   }
   if (cResult[4] !== tmp4.notificationHeaderImage) {
-    let obj2 = { resizeMode: "contain", style: tmp4.notificationHeaderImage, source: _modDef16334 };
-    const tmp11 = <closure_4 resizeMode="contain" style={tmp4.notificationHeaderImage} source={_modDef16334} />;
+    let obj2 = { resizeMode: "contain", style: tmp4.notificationHeaderImage, source: _modDef16344 };
+    const tmp11 = <closure_4 resizeMode="contain" style={tmp4.notificationHeaderImage} source={_modDef16344} />;
     cResult[4] = tmp4.notificationHeaderImage;
     cResult[5] = tmp11;
     let tmp7 = tmp11;
@@ -129,8 +129,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
     }
   }, items1);
   let obj2 = { onAllow: callback, onDontAllow: callback1, header: null, title: null, subtitle: null };
-  let obj3 = { resizeMode: "contain", style: tmp.notificationHeaderImage, source: _modDef16334 };
-  obj2.header = <closure_4 resizeMode="contain" style={tmp.notificationHeaderImage} source={_modDef16334} />;
+  let obj3 = { resizeMode: "contain", style: tmp.notificationHeaderImage, source: _modDef16344 };
+  obj2.header = <closure_4 resizeMode="contain" style={tmp.notificationHeaderImage} source={_modDef16344} />;
   const intl = onComplete(1119).intl;
   obj2.title = intl.string(onComplete(1119).t["3nx0b5"]);
   const intl2 = onComplete(1119).intl;

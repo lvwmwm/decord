@@ -1,13 +1,13 @@
-// Module ID: 6118
-// Function ID: 6119
+// Module ID: 6150
+// Function ID: 6151
 // Name: CrownIllocon
-// Dependencies: [21, 558, 568, 6119, 5802, 2]
+// Dependencies: [21, 558, 568, 6151, 5834, 2]
 
-// Module 6118 (CrownIllocon)
+// Module 6150 (CrownIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6119 from "module_6119" /* 6119 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6151 from "module_6151" /* 6151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const CrownIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6119 };
+    const obj2 = { uri: _modDef6151 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const CrownIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6119 };
+  const obj2 = { uri: _modDef6151 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

@@ -1,15 +1,15 @@
-// Module ID: 11405
-// Function ID: 11406
+// Module ID: 11441
+// Function ID: 11442
 // Name: UserProfileStackedActionSheet
-// Dependencies: [109, 19, 17, 21, 4758, 580, 558, 568, 1616, 8876, 1368, 6863, 5341, 1119, 5843, 4754, 7397, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 580, 558, 568, 1616, 8908, 1368, 6895, 5373, 1119, 5875, 4786, 7429, 2]
 
-// Module 11405 (UserProfileStackedActionSheet)
+// Module 11441 (UserProfileStackedActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import Form from "Form" /* 8876 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import Form from "Form" /* 8908 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -20,7 +20,7 @@ let closure_5 = ["title", "children", "onBack"];
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { header: { flexDirection: "row", marginHorizontal: nativeDefault.space.PX_16 }, headerSpacer: null, list: null, contentContainer: null, divider: null };
 let size = { width: nativeDefault.space.PX_24, height: nativeDefault.space.PX_24 };
 obj2.headerSpacer = size;
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
         obj3.ItemSeparatorComponent = tmp12;
         obj3.contentContainerStyle = tmp15;
         obj3.renderItem = tmp16;
-        const tmp21 = closure_8(tmp(6863).BottomSheetFlatList, obj3);
+        const tmp21 = closure_8(tmp(6895).BottomSheetFlatList, obj3);
         cResult[16] = arr;
         cResult[17] = tmp5;
         cResult[18] = tmp10.list;
@@ -170,7 +170,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
     index = index.index;
     return renderItem({ item: index.item, index, start: 0 === index, end: index === data.length - 1 });
   };
-  return closure_8(data(6863).BottomSheetFlatList, obj);
+  return closure_8(data(6895).BottomSheetFlatList, obj);
 });
 ReactCompilerGating = fn(558);
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -249,7 +249,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj.ItemSeparatorComponent = function ItemSeparatorComponent() {
     return closure_2_8(Form.FormDivider, { style: divider.divider });
   };
-  return closure_8(renderItem(6863).BottomSheetSectionList, obj);
+  return closure_8(renderItem(6895).BottomSheetSectionList, obj);
 });
 size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileStackedActionSheet.tsx");
@@ -297,7 +297,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[13] !== tmp7) {
         const obj3 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: tmp7 };
-        const tmp20 = closure_1_8(tmp(4754).Text, obj3);
+        const tmp20 = closure_1_8(tmp(4786).Text, obj3);
         cResult[13] = tmp7;
         cResult[14] = tmp20;
         let tmp18 = tmp20;
@@ -326,7 +326,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               const merged = Object.assign(tmp6);
               obj4.header = tmp25;
               obj4.children = tmp4;
-              const tmp34 = closure_1_8(tmp(7397).BottomSheet, obj4);
+              const tmp34 = closure_1_8(tmp(7429).BottomSheet, obj4);
               cResult[23] = tmp4;
               cResult[24] = tmp6;
               cResult[25] = tmp25;
@@ -362,8 +362,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const intl = tmp(1119).intl;
       obj7.accessibilityLabel = intl.string(tmp(1119).t["13/7kX"]);
       obj7.onPress = tmp5;
-      obj7.children = closure_1_8(tmp(5843).ArrowLargeLeftIcon, { size: "md" });
-      tmp16 = closure_1_8(tmp(5341).PressableOpacity, obj7);
+      obj7.children = closure_1_8(tmp(5875).ArrowLargeLeftIcon, { size: "md" });
+      tmp16 = closure_1_8(tmp(5373).PressableOpacity, obj7);
     }
     cResult[10] = tmp5;
     cResult[11] = tmp12;
@@ -396,8 +396,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl = tmp5(1119).intl;
     obj3.accessibilityLabel = intl.string(tmp5(1119).t["13/7kX"]);
     obj3.onPress = onBack;
-    obj3.children = tmp4(tmp5(5843).ArrowLargeLeftIcon, { size: "md" });
-    tmp4Result = tmp4(tmp5(5341).PressableOpacity, obj3);
+    obj3.children = tmp4(tmp5(5875).ArrowLargeLeftIcon, { size: "md" });
+    tmp4Result = tmp4(tmp5(5373).PressableOpacity, obj3);
   }
   const items1 = [tmp4Result, closure_1_8(Text_Text.Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title }), ];
   if (tmp4Result2) {

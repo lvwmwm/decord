@@ -1,21 +1,21 @@
-// Module ID: 18078
-// Function ID: 18079
+// Module ID: 18088
+// Function ID: 18089
 // Name: SelectConnectionActionSheet
-// Dependencies: [32, 19, 17, 21, 558, 568, 11683, 1181, 5822, 4693, 7396, 1119, 7750, 1401, 4610, 4725, 9868, 9869, 6863, 7371, 5903, 7449, 2]
+// Dependencies: [32, 19, 17, 21, 558, 568, 11719, 1181, 5854, 4725, 7428, 1119, 7782, 1401, 4642, 4757, 9900, 9901, 6895, 7403, 5935, 7481, 2]
 
-// Module 18078 (SelectConnectionActionSheet)
+// Module 18088 (SelectConnectionActionSheet)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import BottomSheetModal from "BottomSheetModal" /* 6863 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
-import ConnectionsHooks from "ConnectionsHooks" /* 7750 */;
-import SegmentedControlState from "SegmentedControlState" /* 9868 */;
-import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11683 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import BottomSheetModal from "BottomSheetModal" /* 6895 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
+import ConnectionsHooks from "ConnectionsHooks" /* 7782 */;
+import SegmentedControlState from "SegmentedControlState" /* 9900 */;
+import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11719 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -61,7 +61,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj4 = { icon: tmp5, label: getOrFetchApplicationBatched.name, subLabel: description, onPress };
-    const tmp11 = timestampProducer(tmp(5822).TableRow, obj4);
+    const tmp11 = timestampProducer(tmp(5854).TableRow, obj4);
     cResult[2] = getOrFetchApplicationBatched.name;
     cResult[3] = onPress;
     cResult[4] = tmp5;
@@ -88,7 +88,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     obj3.subLabel = description;
     obj3.onPress = onPress;
-    return timestampProducer(tmp(5822).TableRow, obj3);
+    return timestampProducer(tmp(5854).TableRow, obj3);
   }
 });
 ReactCompilerGating = fn(558);
@@ -514,7 +514,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((addConnection) =
   if (num > 0) {
     const obj4 = { children: null };
     const obj5 = { state: segmentedControlState };
-    obj4.children = tmp2(tmp3(9869).SegmentedControl, obj5);
+    obj4.children = tmp2(tmp3(9901).SegmentedControl, obj5);
     let tmp2Result = tmp2(closure_5, obj4);
   } else {
     tmp2Result = null;

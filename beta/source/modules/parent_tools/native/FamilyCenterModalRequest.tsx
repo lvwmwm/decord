@@ -1,9 +1,9 @@
-// Module ID: 12045
-// Function ID: 12046
+// Module ID: 12081
+// Function ID: 12082
 // Name: FamilyCenterModalRequest
-// Dependencies: [5, 19, 17, 1376, 7785, 21, 4758, 580, 558, 568, 1488, 565, 7786, 12046, 7839, 12047, 1181, 1401, 1119, 2486, 4754, 12048, 12049, 8699, 5188, 4961, 12057, 5652, 8698, 5907, 8922, 38, 11684, 7238, 5796, 8548, 1982, 8687, 8689, 4970, 5839, 12058, 11453, 2]
+// Dependencies: [5, 19, 17, 1376, 7817, 21, 4790, 580, 558, 568, 1488, 565, 7818, 12082, 7871, 12083, 1181, 1401, 1119, 2486, 4786, 12084, 12085, 8731, 5220, 4993, 12093, 5684, 8730, 5939, 8954, 38, 11720, 7270, 5828, 8580, 1982, 8719, 8721, 5002, 5871, 12094, 11489, 2]
 
-// Module 12045 (FamilyCenterModalRequest)
+// Module 12081 (FamilyCenterModalRequest)
 import _modDef38 from "module_38" /* 38 */;
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
@@ -13,20 +13,20 @@ import native from "native" /* 1181 */;
 import useNavigation from "useNavigation" /* 1488 */;
 import Server from "Server" /* 1982 */;
 import _modDef2486 from "module_2486" /* 2486 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import ButtonGroup from "ButtonGroup" /* 5652 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5796 */;
-import native2 from "native" /* 5907 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7786 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7839 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8687 */;
-import ModalScreen from "ModalScreen" /* 8698 */;
-import ModalContent from "ModalContent" /* 8699 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8922 */;
-import FamilyCenterModalRequestRouting from "FamilyCenterModalRequestRouting" /* 12046 */;
-import ModalFooter from "ModalFooter" /* 12057 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import ButtonGroup from "ButtonGroup" /* 5684 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5828 */;
+import native2 from "native" /* 5939 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7818 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7871 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8719 */;
+import ModalScreen from "ModalScreen" /* 8730 */;
+import ModalContent from "ModalContent" /* 8731 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8954 */;
+import FamilyCenterModalRequestRouting from "FamilyCenterModalRequestRouting" /* 12082 */;
+import ModalFooter from "ModalFooter" /* 12093 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
@@ -201,11 +201,11 @@ function getScreens(userId, linkCode) {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const FamilyCenterConstants = fn(7785);
+const FamilyCenterConstants = fn(7817);
 ({ FAMILY_CENTER_AGE_VERIFICATION_RESUME_TIMEOUT: closure_8, FAMILY_CENTER_LINK_REQUEST_ERROR_EXPERIENCES: closure_9, FamilyCenterFailureCode: c10, FamilyCenterIconType: closure_11 } = FamilyCenterConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let obj2 = { headerText: { marginTop: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16 }, art: { width: 165, height: 119 }, connectionHeader: null, headerIcons: null, ellipseGroup: null, ellipse: null, title: null, teenName: null, consent: null };
 let obj3 = { marginTop: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16 };
 obj2.connectionHeader = { alignItems: "center", marginBottom: nativeDefault.space.PX_16 };
@@ -671,7 +671,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   return closure_13(userId(navigation[28]).ModalScreen, obj24);
 });
 let closure_16 = tmp5;
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj9 = { content: null, textWrapper: null, header: null, description: null, illustration: null };
 let obj8 = { marginTop: nativeDefault.space.PX_8, textAlign: "center", paddingHorizontal: nativeDefault.space.PX_16 };
 obj9.content = { flex: 1, flexDirection: "column", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_16 };
@@ -713,7 +713,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   ({ content, textWrapper } = tmp4);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp14 = __initData(tmp(5907).EnvelopeSpotIllustration, { scale: 0.7 });
+    const tmp14 = __initData(tmp(5939).EnvelopeSpotIllustration, { scale: 0.7 });
     cResult[3] = tmp14;
     let tmp12 = tmp14;
   } else {
@@ -738,7 +738,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[7] !== tmp4.header) {
     const obj3 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp4.header, children: tmp19 };
-    const tmp24 = __initData(tmp(4754).Text, obj3);
+    const tmp24 = __initData(tmp(4786).Text, obj3);
     cResult[7] = tmp4.header;
     cResult[8] = tmp24;
     let tmp22 = tmp24;
@@ -788,8 +788,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const intl3 = tmp(1119).intl;
               obj6.text = intl3.string(tmp(1119).t.cpT0Cq);
               obj6.onPress = tmp9;
-              obj5.children = __initData(tmp(5188).Button, obj6);
-              const tmp43 = __initData(tmp(12057).ModalFooter, obj5);
+              obj5.children = __initData(tmp(5220).Button, obj6);
+              const tmp43 = __initData(tmp(12093).ModalFooter, obj5);
               cResult[22] = tmp43;
               let tmp41 = tmp43;
             } else {
@@ -799,7 +799,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const obj7 = { children: null };
               const items1 = [tmp37, tmp41];
               obj7.children = items1;
-              const tmp46 = __initData2(tmp(8698).ModalScreen, obj7);
+              const tmp46 = __initData2(tmp(8730).ModalScreen, obj7);
               cResult[23] = tmp37;
               cResult[24] = tmp46;
               let tmp44 = tmp46;
@@ -811,7 +811,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj8 = { children: null };
           const obj9 = { style: content, children: tmp33 };
           obj8.children = __initData(timestampProducer, obj9);
-          const tmp40 = __initData(tmp(8699).ModalContent, obj8);
+          const tmp40 = __initData(tmp(8731).ModalContent, obj8);
           cResult[19] = tmp4.content;
           cResult[20] = tmp33;
           cResult[21] = tmp40;
@@ -877,7 +877,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return __initData2(ModalScreen.ModalScreen, obj7);
 });
 let closure_18 = tmp6;
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj14 = { header: { marginBottom: 8, textAlign: "center" }, description: { textAlign: "center" }, ring: null, iconContainer: null, positive: null, negative: null };
 const size1 = { display: "flex", justifyContent: "center", alignItems: "center", height: 64, width: 64, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginBottom: 24 };
 obj14.ring = size1;
@@ -947,10 +947,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[14] !== icon) {
           if (icon === tmp20.CHECK) {
-            const obj2 = { source: tmp9(11684), color: "#FFF" };
+            const obj2 = { source: tmp9(11720), color: "#FFF" };
             let tmp26 = __initData(tmp(1181).Icon, obj2);
           } else {
-            const obj3 = { source: tmp9(7238), color: "#FFF" };
+            const obj3 = { source: tmp9(7270), color: "#FFF" };
             tmp26 = __initData(tmp(1181).Icon, obj3);
           }
           cResult[14] = icon;
@@ -984,8 +984,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         const intl = tmp(1119).intl;
                         obj6.text = intl.string(tmp(1119).t.cpT0Cq);
                         obj6.onPress = tmp13;
-                        obj5.children = __initData(tmp(5188).Button, obj6);
-                        const tmp48 = __initData(tmp(12057).ModalFooter, obj5);
+                        obj5.children = __initData(tmp(5220).Button, obj6);
+                        const tmp48 = __initData(tmp(12093).ModalFooter, obj5);
                         cResult[32] = tmp48;
                         let tmp46 = tmp48;
                       } else {
@@ -995,7 +995,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         const obj7 = { children: null };
                         const items2 = [tmp43, tmp46];
                         obj7.children = items2;
-                        const tmp51 = __initData2(tmp(8698).ModalScreen, obj7);
+                        const tmp51 = __initData2(tmp(8730).ModalScreen, obj7);
                         cResult[33] = tmp43;
                         cResult[34] = tmp51;
                         let tmp49 = tmp51;
@@ -1008,7 +1008,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   const obj8 = { children: null };
                   const items3 = [tmp33, tmp37, tmp40];
                   obj8.children = items3;
-                  const tmp45 = __initData2(tmp(8699).ModalContent, obj8);
+                  const tmp45 = __initData2(tmp(8731).ModalContent, obj8);
                   cResult[28] = tmp33;
                   cResult[29] = tmp37;
                   cResult[30] = tmp40;
@@ -1016,14 +1016,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   tmp43 = tmp45;
                 }
                 const obj9 = { variant: "text-sm/medium", color: "text-muted", style: tmp4.description, children: tmp17 };
-                const tmp42 = __initData(tmp(4754).Text, obj9);
+                const tmp42 = __initData(tmp(4786).Text, obj9);
                 cResult[25] = tmp17;
                 cResult[26] = tmp4.description;
                 cResult[27] = tmp42;
                 tmp40 = tmp42;
               }
               const obj10 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp4.header, children: tmp16 };
-              const tmp39 = __initData(tmp(4754).Text, obj10);
+              const tmp39 = __initData(tmp(4786).Text, obj10);
               cResult[22] = tmp4.header;
               cResult[23] = tmp16;
               cResult[24] = tmp39;
@@ -1084,10 +1084,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj6 = { style: items2, children: null };
   items2[1] = icon === constants2.CHECK ? tmp.positive : tmp.negative;
   if (icon === tmp13.CHECK) {
-    const obj7 = { source: tmp5(11684), color: "#FFF" };
+    const obj7 = { source: tmp5(11720), color: "#FFF" };
     let tmp15Result = tmp15(tmp2(1181).Icon, obj7);
   } else {
-    const obj8 = { source: tmp5(7238), color: "#FFF" };
+    const obj8 = { source: tmp5(7270), color: "#FFF" };
     tmp15Result = tmp15(tmp2(1181).Icon, obj8);
   }
   const obj9 = { children: null };
@@ -1112,9 +1112,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return __initData2(ModalScreen.ModalScreen, obj9);
 });
 let closure_20 = tmp7;
-createStyles = fn(4758);
+createStyles = fn(4790);
 let closure_21 = createStyles.createStyles({ container: { flex: 1, justifyContent: "center", alignItems: "center" } });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj19 = { content: { flex: 1, flexDirection: "column", alignItems: "center", justifyContent: "center", paddingHorizontal: 32 }, title: null, description: null };
 let obj18 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL };
 obj19.title = { textAlign: "center", marginBottom: nativeDefault.space.PX_8 };
@@ -1151,7 +1151,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
             const obj2 = { children: null };
             const items = [tmp10, tmp14];
             obj2.children = items;
-            const tmp19 = __initData2(tmp(8698).ModalScreen, obj2);
+            const tmp19 = __initData2(tmp(8730).ModalScreen, obj2);
             cResult[13] = tmp10;
             cResult[14] = tmp14;
             cResult[15] = tmp19;
@@ -1159,8 +1159,8 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
           }
           const obj3 = { children: null };
           ({ text: obj6.text, onPress: obj6.onPress } = primaryButton);
-          obj3.children = __initData(tmp(5188).Button, { text: null, onPress: null });
-          const tmp16 = __initData(tmp(12057).ModalFooter, obj3);
+          obj3.children = __initData(tmp(5220).Button, { text: null, onPress: null });
+          const tmp16 = __initData(tmp(12093).ModalFooter, obj3);
           cResult[10] = primaryButton.onPress;
           cResult[11] = primaryButton.text;
           cResult[12] = tmp16;
@@ -1179,7 +1179,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
       tmp10 = tmp13;
     }
     const obj7 = { variant: "text-sm/medium", color: "text-muted", style: tmp4.description, children: description };
-    const tmp9 = __initData(tmp(4754).Text, obj7);
+    const tmp9 = __initData(tmp(4786).Text, obj7);
     cResult[3] = description;
     cResult[4] = tmp4.description;
     cResult[5] = tmp9;
@@ -1204,7 +1204,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   obj.children = items1;
   return __initData2(ModalScreen.ModalScreen, obj);
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj21 = { content: { flex: 1, flexDirection: "column", alignItems: "center", justifyContent: "center", paddingHorizontal: 32 }, art: null, title: null, description: null };
 let obj20 = { textAlign: "center", marginBottom: nativeDefault.space.PX_8 };
 obj21.art = { marginBottom: nativeDefault.space.PX_24 };
@@ -1237,7 +1237,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNav
   }
   const obj2 = navigation(1488);
   const stateFromStores = tmp(565).useStateFromStores(tmp5, tmp6);
-  const tmp9 = stateFromStores(8548)(stateFromStores);
+  const tmp9 = stateFromStores(8580)(stateFromStores);
   dependencyMap = tmp9;
   if (cResult[2] === stateFromStores) {
     if (cResult[3] === navigation) {
@@ -1283,7 +1283,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNav
     }
     return prop;
   });
-  const tmp3 = stateFromStores(8548)(stateFromStores);
+  const tmp3 = stateFromStores(8580)(stateFromStores);
   dependencyMap = tmp3;
   const items1 = [stateFromStores, tmp3, navigation];
   const effect = noop.useEffect(() => {
@@ -1319,7 +1319,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp9 = __initData(tmp(5907).FamilyShieldSpotIllustration, {});
+    const tmp9 = __initData(tmp(5939).FamilyShieldSpotIllustration, {});
     cResult[1] = tmp9;
     let tmp7 = tmp9;
   } else {
@@ -1361,7 +1361,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
       }
       if (cResult[11] !== tmp4.description) {
         const obj3 = { variant: "text-sm/medium", color: "text-muted", style: tmp4.description, children: tmp24 };
-        const tmp29 = __initData(tmp(4754).Text, obj3);
+        const tmp29 = __initData(tmp(4786).Text, obj3);
         cResult[11] = tmp4.description;
         cResult[12] = tmp29;
         let tmp27 = tmp29;
@@ -1380,7 +1380,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
               const intl3 = tmp(1119).intl;
               obj4.text = intl3.string(_modDef2486["3oUE4o"]);
               obj4.onPress = first;
-              const tmp37 = __initData(tmp(5188).Button, obj4);
+              const tmp37 = __initData(tmp(5220).Button, obj4);
               cResult[18] = tmp37;
               let tmp34 = tmp37;
             } else {
@@ -1397,10 +1397,10 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
               obj7.onPress = function onPress() {
                 return ModalActionCreatorsDefault.pop();
               };
-              items[1] = __initData(tmp(5188).Button, obj7);
+              items[1] = __initData(tmp(5220).Button, obj7);
               obj6.children = items;
-              obj5.children = __initData2(tmp(5652).ButtonGroup, obj6);
-              const tmp41 = __initData(tmp(12057).ModalFooter, obj5);
+              obj5.children = __initData2(tmp(5684).ButtonGroup, obj6);
+              const tmp41 = __initData(tmp(12093).ModalFooter, obj5);
               cResult[19] = tmp41;
               let tmp38 = tmp41;
             } else {
@@ -1410,7 +1410,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
               const obj8 = { children: null };
               const items1 = [tmp30, tmp38];
               obj8.children = items1;
-              const tmp44 = __initData2(tmp(8698).ModalScreen, obj8);
+              const tmp44 = __initData2(tmp(8730).ModalScreen, obj8);
               cResult[20] = tmp30;
               cResult[21] = tmp44;
               let tmp42 = tmp44;
@@ -1433,7 +1433,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
       tmp30 = tmp33;
     }
     const obj10 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp4.title, children: tmp16 };
-    const tmp23 = __initData(tmp(4754).Text, obj10);
+    const tmp23 = __initData(tmp(4786).Text, obj10);
     cResult[7] = tmp4.title;
     cResult[8] = tmp16;
     cResult[9] = tmp23;
@@ -1803,7 +1803,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   return __initData(closure_24, obj);
 });
 let obj27 = { headerShown: true, headerLeft: null, headerTitle: null };
-const NavigatorHeader = fn(5839);
+const NavigatorHeader = fn(5871);
 obj27.headerLeft = NavigatorHeader.getHeaderCloseButton(ModalActionCreatorsDefault.pop);
 obj27.headerTitle = function headerTitle() {
   return null;
@@ -1823,12 +1823,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCe
   } else {
     first = cResult[0];
   }
-  const FamilyCenterConnectionPrereqExperiment = tmp(12058).FamilyCenterConnectionPrereqExperiment;
+  const FamilyCenterConnectionPrereqExperiment = tmp(12094).FamilyCenterConnectionPrereqExperiment;
   if (cResult[1] === linkCode) {
     if (cResult[2] === userId) {
       let tmp7 = cResult[3];
     }
-    const FamilyCenterModalRequestSections = tmp(12046).FamilyCenterModalRequestSections;
+    const FamilyCenterModalRequestSections = tmp(12082).FamilyCenterModalRequestSections;
     if (tmp6) {
       let PREREQ_LOADING = FamilyCenterModalRequestSections.PREREQ_LOADING;
     } else {
@@ -1850,7 +1850,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCe
       return tmp11;
     }
     const obj3 = { initialRouteName: PREREQ_LOADING, screens: tmp7, headerBackTitle: tmp9 };
-    const tmp13 = __initData(tmp(11453).Modal, obj3);
+    const tmp13 = __initData(tmp(11489).Modal, obj3);
     cResult[5] = PREREQ_LOADING;
     cResult[6] = tmp7;
     cResult[7] = tmp13;
@@ -1864,10 +1864,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCe
 }) : (function FamilyCenterRequestModal(userId) {
   userId = userId.userId;
   const linkCode = userId.linkCode;
-  const FamilyCenterConnectionPrereqExperiment = userId(12058).FamilyCenterConnectionPrereqExperiment;
+  const FamilyCenterConnectionPrereqExperiment = userId(12094).FamilyCenterConnectionPrereqExperiment;
   const items = [linkCode, userId];
   const memo = noop.useMemo(() => getScreens(userId, linkCode), items);
-  const FamilyCenterModalRequestSections = userId(12046).FamilyCenterModalRequestSections;
+  const FamilyCenterModalRequestSections = userId(12082).FamilyCenterModalRequestSections;
   if (FamilyCenterConnectionPrereqExperiment.useConfig({ location: "FamilyCenterRequestModal" }).enabled) {
     let PREREQ_LOADING = FamilyCenterModalRequestSections.PREREQ_LOADING;
   } else {
@@ -1876,7 +1876,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCe
   const obj = { initialRouteName: PREREQ_LOADING, screens: memo, headerBackTitle: null };
   const intl = tmp3(1119).intl;
   obj.headerBackTitle = intl.string(userId(1119).t["13/7kX"]);
-  return closure_12(userId(11453).Modal, obj);
+  return closure_12(userId(11489).Modal, obj);
 });
 export const FamilyCenterModalRequestConfirm = tmp5;
 export const FamilyCenterModalRequestSuccess = tmp6;

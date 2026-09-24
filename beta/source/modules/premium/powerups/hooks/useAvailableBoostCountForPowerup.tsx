@@ -1,18 +1,18 @@
-// Module ID: 12702
-// Function ID: 12703
+// Module ID: 12738
+// Function ID: 12739
 // Name: useAvailableBoostCountForPowerup
-// Dependencies: [32, 19, 2067, 4647, 4648, 558, 568, 504, 4667, 1374, 2]
+// Dependencies: [32, 19, 2067, 4679, 4680, 558, 568, 504, 4699, 1374, 2]
 
-// Module 12702 (useAvailableBoostCountForPowerup)
+// Module 12738 (useAvailableBoostCountForPowerup)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4647 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4679 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const GuildPowerupsConstants = fn(4648);
+const GuildPowerupsConstants = fn(4680);
 ({ GuildPowerupType: closure_7, POWERUPS_INCLUDED_IN_LEVEL: closure_8, LEVEL_SKU_ID_TO_BOOSTING_TIER: closure_9 } = GuildPowerupsConstants);
 const ReactCompilerGating = fn(558);
 const size = fn(2);

@@ -1,97 +1,15 @@
 // Module ID: 4534
 // Function ID: 4535
-// Dependencies: [32, 19, 4529]
-// Exports: useRiveTrigger
+// Dependencies: []
 
 // Module 4534
-import _mod4529 from "module_4529" /* 4529 */;
-import _slicedToArray from "module_32" /* 32 */;
+const require = globalThis.__r;
 
-require = fn;
-const noop = fn(19);
-({ useCallback: c3, useEffect: closure_4, useRef: hasOwnProperty, useState: metroRequire } = noop);
+const obj = { name: "react-native-nitro-modules", version: "0.35.4", description: "Insanely fast native C++, Swift or Kotlin modules with a statically compiled binding layer to JSI.", main: "lib/commonjs/index", module: "lib/module/index", types: "lib/typescript/index.d.ts", "react-native": "src/index", source: "src/index", files: ["src", "!src/__tests__", "react-native.config.js", "lib", "android/build.gradle", "android/gradle.properties", "android/fix-prefab.gradle", "android/CMakeLists.txt", "android/src/", "ios/", "cpp/", "app.plugin.js", "*.podspec", "nitro_pod_utils.rb", "README.md"], keywords: ["react-native", "nitro", "ios", "android", "visionOS", "tvOS", "macOS", "cpp", "framework", "react", "swift", "native", "modules", "fast", "jsi", "turbo", "scaffold", "template", "views"], repository: { type: "git", url: "git+https://github.com/mrousavy/nitro.git" }, author: "Marc Rousavy <me@mrousavy.com> (https://github.com/mrousavy)", license: "MIT", bugs: { url: "https://github.com/mrousavy/nitro/issues" }, homepage: "https://github.com/mrousavy/nitro#readme", publishConfig: { registry: "https://registry.npmjs.org/" }, scripts: { "write-native-version": "version=$(node -p \"require('./package.json').version\") && sed -i '' \"s/#define NITRO_VERSION \\\".*\\\"/#define NITRO_VERSION \\\"$version\\\"/\" ./cpp/utils/NitroDefines.hpp", postversion: "bun run write-native-version", build: "rm -rf lib && bun typecheck && bob build", typecheck: "tsc --noEmit", lint: "eslint \"**/*.{js,ts,tsx}\" --fix", "lint-ci": "eslint \"**/*.{js,ts,tsx}\" -f @jamesacarr/github-actions", test: "jest", clean: "rm -rf android/build node_modules/**/android/build lib", release: "release-it" }, devDependencies: { "@types/jest": "*", "@types/react": "*", jest: "*", react: "19.2.0", "react-native": "0.83.0", "react-native-builder-bob": "^0.37.0", "react-native-worklets": "^0.7.2" }, peerDependencies: { react: "*", "react-native": "*" }, codegenConfig: { name: "NitroModulesSpec", type: "modules", jsSrcsDir: "./src", android: { javaPackageName: "com.margelo.nitro" } }, jest: { preset: "react-native", modulePathIgnorePatterns: ["<rootDir>/example/node_modules", "<rootDir>/lib/"] }, "release-it": { npm: { publish: true }, git: false, github: { release: false }, hooks: { "before:init": "bun typecheck && bun lint", "after:bump": "bun run build" } }, "react-native-builder-bob": null };
+const obj2 = { source: "src", output: "lib", targets: null };
+const items = ["typescript", { project: "tsconfig.build.json" }];
+const items1 = ["commonjs", "module", items];
+obj2.targets = items1;
+obj["react-native-builder-bob"] = obj2;
 
-export const useRiveTrigger = function useRiveTrigger(arg0, arg1, cResult) {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  let obj = cResult;
-  if (cResult == null) {
-    obj = {};
-  }
-  const onTrigger = obj.onTrigger;
-  let tmp = hasOwnProperty(undefined);
-  const tmp2 = hasOwnProperty(false);
-  const tmp3 = hasOwnProperty(onTrigger);
-  closure_4 = tmp3;
-  tmp3.current = onTrigger;
-  const items = [arg1, arg0];
-  const disposableMemo = _mod4529.useDisposableMemo(() => {
-    if (closure_1) {
-      return obj.triggerProperty(closure_0);
-    }
-    obj = closure_1;
-  }, (dispose) => {
-    let disposeResult;
-    if (dispose != null) {
-      disposeResult = dispose.dispose();
-    }
-    return disposeResult;
-  }, items, tmp);
-  if (tmp.current) {
-    tmp2.current = true;
-  }
-  const tmp5 = _slicedToArray(timestampProducer(null), 2);
-  closure_6 = tmp5[1];
-  const items1 = [arg0, arg1];
-  React4(() => {
-    closure_6(null);
-  }, items1);
-  const items2 = [arg1, disposableMemo, arg0];
-  React4(() => {
-    let tmp = closure_1;
-    if (closure_1) {
-      tmp = !disposableMemo;
-    }
-    if (tmp) {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const error = new Error("Property \"" + closure_0 + "\" not found in the ViewModel instance");
-      closure_6(error);
-    }
-  }, items2);
-  const items3 = [disposableMemo];
-  React4(() => {
-    if (disposableMemo) {
-      closure_0 = obj.addListener(() => {
-        const current = ref.current;
-        if (current != null) {
-          current();
-        }
-      });
-      return () => {
-        try {
-          closure_0();
-        } catch (err) {
-        }
-      };
-    }
-    obj = disposableMemo;
-  }, items3);
-  const obj3 = { trigger: null, error: tmp5[0] };
-  const items4 = [arg0];
-  obj3.trigger = React3(() => {
-    if (ref.current) {
-      const current = ref.current;
-      current.trigger();
-    } else {
-      const _console = console;
-      const _HermesInternal = HermesInternal;
-      if (ref2.current) {
-        warn(concat(tmp3, "') called after dispose. The property has been cleaned up \u2014 this is likely a stale closure from an async callback that fired after unmount."));
-      } else {
-        warn(concat(tmp3, "') called but the property is not available yet. The viewModelInstance may still be loading."));
-      }
-    }
-  }, items4);
-  return obj3;
-};
+export default obj;

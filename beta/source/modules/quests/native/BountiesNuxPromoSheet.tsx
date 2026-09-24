@@ -1,23 +1,23 @@
-// Module ID: 15327
-// Function ID: 15328
+// Module ID: 15337
+// Function ID: 15338
 // Name: BountiesNuxPromoSheet
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4725, 15326, 1119, 6044, 5188, 10613, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4757, 15336, 1119, 6076, 5220, 10649, 2]
 
-// Module 15327 (BountiesNuxPromoSheet)
+// Module 15337 (BountiesNuxPromoSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 6044 */;
-import PromoSheet from "PromoSheet" /* 10613 */;
-import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 15326 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 6076 */;
+import PromoSheet from "PromoSheet" /* 10649 */;
+import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 15336 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { illustrationContainer: { paddingTop: nativeDefault.space.PX_12 } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -51,7 +51,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp12 = jsx(tmp(6044).BountiesPosterSpotIllustration, { width: 273, height: 205 });
+    const tmp12 = jsx(tmp(6076).BountiesPosterSpotIllustration, { width: 273, height: 205 });
     cResult[3] = tmp12;
     let tmp10 = tmp12;
   } else {
@@ -71,7 +71,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl3 = tmp(1119).intl;
     obj3.text = intl3.string(tmp(1119).t.cpT0Cq);
     obj3.onPress = first;
-    const tmp19 = jsx(tmp(5188).Button, { grow: true, size: "lg", variant: "primary", text: null, onPress: null });
+    const tmp19 = jsx(tmp(5220).Button, { grow: true, size: "lg", variant: "primary", text: null, onPress: null });
     cResult[6] = tmp19;
     let tmp17 = tmp19;
   } else {
@@ -79,7 +79,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[7] !== tmp13) {
     const obj4 = { gradientColor: "purple", title: tmp6, description: tmp7, illustration: tmp13, actions: tmp17 };
-    const tmp22 = jsx(tmp(10613).PromoSheet, { gradientColor: "purple", title: tmp6, description: tmp7, illustration: tmp13, actions: tmp17 });
+    const tmp22 = jsx(tmp(10649).PromoSheet, { gradientColor: "purple", title: tmp6, description: tmp7, illustration: tmp13, actions: tmp17 });
     cResult[7] = tmp13;
     cResult[8] = tmp22;
     let tmp20 = tmp22;

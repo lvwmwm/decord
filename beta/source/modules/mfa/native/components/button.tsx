@@ -1,11 +1,11 @@
-// Module ID: 15941
-// Function ID: 15942
+// Module ID: 15951
+// Function ID: 15952
 // Name: button
-// Dependencies: [19, 21, 558, 568, 5188, 2]
+// Dependencies: [19, 21, 558, 568, 5220, 2]
 
-// Module 15941 (button)
+// Module 15951 (button)
 import c from "c" /* 568 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

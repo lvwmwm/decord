@@ -1,21 +1,21 @@
-// Module ID: 5654
-// Function ID: 5655
+// Module ID: 5686
+// Function ID: 5687
 // Name: PremiumGuildSubscribeModal
-// Dependencies: [32, 19, 1186, 5655, 1078, 21, 5656, 5839, 5653, 7621, 4610, 7622, 7623, 7624, 1119, 7241, 7626, 1181, 7628, 13874, 558, 568, 5813, 5183, 7246, 2]
+// Dependencies: [32, 19, 1186, 5687, 1078, 21, 5688, 5871, 5685, 7653, 4642, 7654, 7655, 7656, 1119, 7273, 7658, 1181, 7660, 13910, 558, 568, 5845, 5215, 7278, 2]
 
-// Module 5654 (PremiumGuildSubscribeModal)
+// Module 5686 (PremiumGuildSubscribeModal)
 import util from "util" /* 1119 */;
-import useBackPressHandlerDefault from "useBackPressHandler" /* 5183 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5653 */;
-import useInitialValueDefault from "useInitialValue" /* 5813 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import Navigator from "Navigator" /* 7246 */;
+import useBackPressHandlerDefault from "useBackPressHandler" /* 5215 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5685 */;
+import useInitialValueDefault from "useInitialValue" /* 5845 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import Navigator from "Navigator" /* 7278 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 
 require = fn;
-const constants = fn(5655).PremiumGuildSubscribeModalScenes;
+const constants = fn(5687).PremiumGuildSubscribeModalScenes;
 const UserSettingsSections = fn(1078).UserSettingsSections;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
@@ -160,7 +160,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           headerShown: false,
           render(arg0) {
                 const merged = Object.assign(arg0);
-                return closure_1_8(guildBoostSlots(5656), {});
+                return closure_1_8(guildBoostSlots(5688), {});
               }
         };
         obj5[constants.GUILD_SELECT] = obj6;
@@ -168,24 +168,24 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           headerLeft: NavigatorHeader.getHeaderCloseButton(actions_BoostingActionCreators.closeApplyBoostModal),
           headerRight() {
                 if (obj.isThemeDark(theme.theme)) {
-                  let tmp4Result = tmp4(7622);
+                  let tmp4Result = tmp4(7654);
                 } else {
-                  tmp4Result = tmp4(7623);
+                  tmp4Result = tmp4(7655);
                 }
-                let obj2 = { source: tmp4Result, IconComponent: closure_1_0(7624).SettingsIcon, accessibilityLabel: null, accessibilityHint: null, onPress: null };
+                let obj2 = { source: tmp4Result, IconComponent: closure_1_0(7656).SettingsIcon, accessibilityLabel: null, accessibilityHint: null, onPress: null };
                 const intl = tmp2(1119).intl;
                 obj2.accessibilityLabel = intl.string(closure_1_0(1119).t["3D5yo/"]);
                 const intl2 = tmp2(1119).intl;
                 obj2.accessibilityHint = intl2.string(closure_1_0(1119).t["+CbP2v"]);
                 obj2.onPress = function onPress() {
-                  const result = closure_1_0(7241).trackUserSettingsPaneViewed({ destinationPane: constants.GUILD_BOOSTING });
-                  const obj = closure_1_0(7241);
+                  const result = closure_1_0(7273).trackUserSettingsPaneViewed({ destinationPane: constants.GUILD_BOOSTING });
+                  const obj = closure_1_0(7273);
                   const obj2 = { destinationPane: constants.GUILD_BOOSTING };
-                  closure_1_0(5653).closeApplyBoostModal();
-                  const obj3 = closure_1_0(5653);
-                  closure_1_0(7626).openUserSettings({ screen: constants.GUILD_BOOSTING });
+                  closure_1_0(5685).closeApplyBoostModal();
+                  const obj3 = closure_1_0(5685);
+                  closure_1_0(7658).openUserSettings({ screen: constants.GUILD_BOOSTING });
                 };
-                return closure_1_8(closure_1_0(7621).HeaderActionButton, obj2);
+                return closure_1_8(closure_1_0(7653).HeaderActionButton, obj2);
               },
           headerTitle(children) {
                 children = children.children;
@@ -198,11 +198,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                   tmpResult = tmp(closure_1_0(1181).LegacyText, obj2);
                 }
                 obj.subtitle = tmpResult;
-                return closure_1_8(closure_1_0(5839).NavigatorHeader, obj);
+                return closure_1_8(closure_1_0(5871).NavigatorHeader, obj);
               },
           render(arg0) {
                 const merged = Object.assign(arg0);
-                return closure_1_8(guildBoostSlots(7628), {});
+                return closure_1_8(guildBoostSlots(7660), {});
               }
         };
         obj5[constants.OVERVIEW] = obj7;
@@ -212,7 +212,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         obj8.headerTitle = intl.string(util.t.VJEVbu);
         obj8.render = function render(arg0) {
           const merged = Object.assign(arg0);
-          return closure_1_8(guildBoostSlots(13874), {});
+          return closure_1_8(guildBoostSlots(13910), {});
         };
         obj5[constants.CONFIRMATION] = obj8;
         obj4.screens = obj5;
@@ -257,7 +257,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           headerShown: false,
           render(arg0) {
                 const merged = Object.assign(arg0);
-                return closure_1_8(guildBoostSlots(5656), {});
+                return closure_1_8(guildBoostSlots(5688), {});
               }
         };
         obj5[constants.GUILD_SELECT] = obj6;
@@ -265,24 +265,24 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           headerLeft: NavigatorHeader.getHeaderCloseButton(actions_BoostingActionCreators.closeApplyBoostModal),
           headerRight() {
                 if (obj.isThemeDark(theme.theme)) {
-                  let tmp4Result = tmp4(7622);
+                  let tmp4Result = tmp4(7654);
                 } else {
-                  tmp4Result = tmp4(7623);
+                  tmp4Result = tmp4(7655);
                 }
-                let obj2 = { source: tmp4Result, IconComponent: closure_1_0(7624).SettingsIcon, accessibilityLabel: null, accessibilityHint: null, onPress: null };
+                let obj2 = { source: tmp4Result, IconComponent: closure_1_0(7656).SettingsIcon, accessibilityLabel: null, accessibilityHint: null, onPress: null };
                 const intl = tmp2(1119).intl;
                 obj2.accessibilityLabel = intl.string(closure_1_0(1119).t["3D5yo/"]);
                 const intl2 = tmp2(1119).intl;
                 obj2.accessibilityHint = intl2.string(closure_1_0(1119).t["+CbP2v"]);
                 obj2.onPress = function onPress() {
-                  const result = closure_1_0(7241).trackUserSettingsPaneViewed({ destinationPane: constants.GUILD_BOOSTING });
-                  const obj = closure_1_0(7241);
+                  const result = closure_1_0(7273).trackUserSettingsPaneViewed({ destinationPane: constants.GUILD_BOOSTING });
+                  const obj = closure_1_0(7273);
                   const obj2 = { destinationPane: constants.GUILD_BOOSTING };
-                  closure_1_0(5653).closeApplyBoostModal();
-                  const obj3 = closure_1_0(5653);
-                  closure_1_0(7626).openUserSettings({ screen: constants.GUILD_BOOSTING });
+                  closure_1_0(5685).closeApplyBoostModal();
+                  const obj3 = closure_1_0(5685);
+                  closure_1_0(7658).openUserSettings({ screen: constants.GUILD_BOOSTING });
                 };
-                return closure_1_8(closure_1_0(7621).HeaderActionButton, obj2);
+                return closure_1_8(closure_1_0(7653).HeaderActionButton, obj2);
               },
           headerTitle(children) {
                 children = children.children;
@@ -295,11 +295,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                   tmpResult = tmp(closure_1_0(1181).LegacyText, obj2);
                 }
                 obj.subtitle = tmpResult;
-                return closure_1_8(closure_1_0(5839).NavigatorHeader, obj);
+                return closure_1_8(closure_1_0(5871).NavigatorHeader, obj);
               },
           render(arg0) {
                 const merged = Object.assign(arg0);
-                return closure_1_8(guildBoostSlots(7628), {});
+                return closure_1_8(guildBoostSlots(7660), {});
               }
         };
         obj5[constants.OVERVIEW] = obj7;
@@ -309,7 +309,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         obj8.headerTitle = intl.string(util.t.VJEVbu);
         obj8.render = function render(arg0) {
           const merged = Object.assign(arg0);
-          return closure_1_8(guildBoostSlots(13874), {});
+          return closure_1_8(guildBoostSlots(13910), {});
         };
         obj5[constants.CONFIRMATION] = obj8;
         obj4.screens = obj5;

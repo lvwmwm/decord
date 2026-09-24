@@ -1,15 +1,15 @@
-// Module ID: 15960
-// Function ID: 15961
+// Module ID: 15970
+// Function ID: 15971
 // Name: CheckpointCharacterStage
-// Dependencies: [17, 21, 4758, 580, 558, 568, 4754, 2]
+// Dependencies: [17, 21, 4790, 580, 558, 568, 4786, 2]
 
-// Module 15960 (CheckpointCharacterStage)
+// Module 15970 (CheckpointCharacterStage)
 import _mod17 from "module_17" /* 17 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((stage) => {
   stage = stage.stage;
   const tmp4 = closure_5();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = React3(tmp(4754).Text, { color: "text-muted", variant: "text-md/medium", children: "Character Stage" });
+    const tmp7 = React3(tmp(4786).Text, { color: "text-muted", variant: "text-md/medium", children: "Character Stage" });
     cResult[0] = tmp7;
     let first = tmp7;
   } else {
@@ -33,7 +33,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((stage) => {
   }
   if (cResult[1] !== stage) {
     const obj2 = { color: "text-muted", variant: "text-md/medium", children: stage };
-    const tmp10 = React3(tmp(4754).Text, obj2);
+    const tmp10 = React3(tmp(4786).Text, obj2);
     cResult[1] = stage;
     cResult[2] = tmp10;
     let tmp8 = tmp10;

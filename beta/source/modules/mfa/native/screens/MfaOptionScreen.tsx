@@ -1,16 +1,16 @@
-// Module ID: 15942
-// Function ID: 15943
+// Module ID: 15952
+// Function ID: 15953
 // Name: MfaOptionScreen
-// Dependencies: [19, 17, 21, 558, 568, 7185, 15943, 4754, 5186, 15944, 7371, 7216, 2]
+// Dependencies: [19, 17, 21, 558, 568, 7217, 15953, 4786, 5218, 15954, 7403, 7248, 2]
 
-// Module 15942 (MfaOptionScreen)
+// Module 15952 (MfaOptionScreen)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7185 */;
-import BackgroundImageDefault from "BackgroundImage" /* 7216 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
-import MfaScreenUtilsDefault from "MfaScreenUtils" /* 15943 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7217 */;
+import BackgroundImageDefault from "BackgroundImage" /* 7248 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
+import MfaScreenUtilsDefault from "MfaScreenUtils" /* 15953 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -38,7 +38,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((mfaMethod) => {
       let tmp14 = null != subtitle;
       if (tmp14) {
         const obj3 = { variant: "heading-sm/normal", color: "text-default", children: subtitle };
-        tmp14 = React4(tmp(4754).Text, obj3);
+        tmp14 = React4(tmp(4786).Text, obj3);
       }
       cResult[3] = subtitle;
       cResult[4] = tmp14;
@@ -50,7 +50,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((mfaMethod) => {
       let tmp17 = null != error;
       if (tmp17) {
         const obj4 = { variant: "text-sm/normal", color: "text-feedback-critical", children: error };
-        tmp17 = React4(tmp(4754).Text, obj4);
+        tmp17 = React4(tmp(4786).Text, obj4);
       }
       cResult[5] = error;
       cResult[6] = tmp17;
@@ -88,7 +88,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((mfaMethod) => {
                               }
                               const _Symbol = Symbol;
                               if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
-                                const tmp38 = React4(tmp4(7216), { backgroundImageCover: false });
+                                const tmp38 = React4(tmp4(7248), { backgroundImageCover: false });
                                 cResult[30] = tmp38;
                                 let tmp36 = tmp38;
                               } else {
@@ -122,7 +122,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((mfaMethod) => {
                     const rect = { bottom: tmp8, top: tmp9, style: screenStyles.contentContainer, children: null };
                     const items1 = [tmp22, content, tmp29];
                     rect.children = items1;
-                    const tmp34 = hasOwnProperty(tmp(7371).SafeAreaPaddingView, rect);
+                    const tmp34 = hasOwnProperty(tmp(7403).SafeAreaPaddingView, rect);
                     cResult[23] = content;
                     cResult[24] = screenStyles.contentContainer;
                     cResult[25] = tmp8;
@@ -136,7 +136,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((mfaMethod) => {
                 const obj7 = { style: screenStyles.submit, children: null };
                 const items2 = [submit, tmp26];
                 obj7.children = items2;
-                const tmp31 = hasOwnProperty(tmp(5186).Stack, obj7);
+                const tmp31 = hasOwnProperty(tmp(5218).Stack, obj7);
                 cResult[19] = screenStyles.submit;
                 cResult[20] = submit;
                 cResult[21] = tmp26;
@@ -146,7 +146,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((mfaMethod) => {
               let tmp27 = tmp25;
               if (type === mfaMethod.mfaMethod) {
                 const obj8 = { props: screenProps };
-                tmp27 = React4(tmp4(15944), obj8);
+                tmp27 = React4(tmp4(15954), obj8);
               }
               cResult[16] = screenProps;
               cResult[17] = type === mfaMethod.mfaMethod;
@@ -156,7 +156,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((mfaMethod) => {
             const obj9 = { children: null };
             const items3 = [tmp19, input];
             obj9.children = items3;
-            const tmp24 = hasOwnProperty(tmp(5186).Stack, obj9);
+            const tmp24 = hasOwnProperty(tmp(5218).Stack, obj9);
             cResult[13] = input;
             cResult[14] = tmp19;
             cResult[15] = tmp24;
@@ -168,7 +168,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((mfaMethod) => {
     const obj10 = { style: screenStyles.mfaContainerHeader, spacing: 4, children: null };
     const items4 = [tmp10, tmp11, tmp13, tmp16];
     obj10.children = items4;
-    const tmp21 = hasOwnProperty(tmp(5186).Stack, obj10);
+    const tmp21 = hasOwnProperty(tmp(5218).Stack, obj10);
     cResult[7] = screenStyles.mfaContainerHeader;
     cResult[8] = tmp10;
     cResult[9] = tmp11;
@@ -202,13 +202,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((mfaMethod) => {
   let tmp10Result = null != subtitle;
   if (tmp10Result) {
     const obj4 = { variant: "heading-sm/normal", color: "text-default", children: subtitle };
-    tmp10Result = tmp10(tmp8(4754).Text, obj4);
+    tmp10Result = tmp10(tmp8(4786).Text, obj4);
   }
   items[2] = tmp10Result;
   let tmp10Result4 = null != error;
   if (tmp10Result4) {
     const obj5 = { variant: "text-sm/normal", color: "text-feedback-critical", children: error };
-    tmp10Result4 = tmp10(tmp8(4754).Text, obj5);
+    tmp10Result4 = tmp10(tmp8(4786).Text, obj5);
   }
   let tmp10Result5 = type === mfaMethod;
   const obj6 = { children: null };
@@ -221,7 +221,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((mfaMethod) => {
   const items3 = [submit, ];
   if (tmp10Result5) {
     const obj8 = { props: screenProps };
-    tmp10Result5 = tmp10(tmp(15944), obj8);
+    tmp10Result5 = tmp10(tmp(15954), obj8);
   }
   items3[1] = tmp10Result5;
   obj7.children = items3;

@@ -1,12 +1,12 @@
-// Module ID: 9771
-// Function ID: 9772
+// Module ID: 9803
+// Function ID: 9804
 // Name: GuildEventSchedule
-// Dependencies: [19, 21, 558, 568, 4352, 9749, 1119, 9772, 2]
+// Dependencies: [19, 21, 558, 568, 4384, 9781, 1119, 9804, 2]
 
-// Module 9771 (GuildEventSchedule)
+// Module 9803 (GuildEventSchedule)
 import c from "c" /* 568 */;
-import _modDef4352 from "module_4352" /* 4352 */;
-import ScheduleUtils from "ScheduleUtils" /* 9749 */;
+import _modDef4384 from "module_4384" /* 4384 */;
+import ScheduleUtils from "ScheduleUtils" /* 9781 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -21,7 +21,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
   ({ guildEvent, recurrenceId, schedule } = onChange);
   onChange = onChange.onChange;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = _modDef4352();
+    const tmp6 = _modDef4384();
     cResult[0] = tmp6;
     let first = tmp6;
   } else {
@@ -147,7 +147,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
               obj6.dateLabel = intl2.string(tmp(1119).t.CTLgZJ);
               const intl3 = tmp(1119).intl;
               obj6.timeLabel = intl3.string(tmp(1119).t.j2RuXF);
-              tmp26 = React4(tmp(9772).GuildEventDatetime, obj6);
+              tmp26 = React4(tmp(9804).GuildEventDatetime, obj6);
             }
             cResult[20] = guildEvent.scheduled_end_time;
             cResult[21] = tmp16;
@@ -159,7 +159,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
           }
         }
         const obj7 = { date: tmp17, onChange: tmp15, minimumDate: first, maximumDate: tmp8, dateLabel: tmp18, timeLabel: tmp19 };
-        const tmp24 = React4(tmp(9772).GuildEventDatetime, obj7);
+        const tmp24 = React4(tmp(9804).GuildEventDatetime, obj7);
         cResult[16] = tmp15;
         cResult[17] = tmp8;
         cResult[18] = schedule.startDate;
@@ -194,7 +194,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
     cResult[10] = C;
     tmp15 = C;
   }
-  const addResult = _modDef4352().add(ScheduleUtils.MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
+  const addResult = _modDef4384().add(ScheduleUtils.MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
   if (cResult[6] !== schedule.startDate) {
     class T {
       constructor(arg0) {
@@ -205,16 +205,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
         return;
       }
     }
-    const addResult1 = tmp10(4352)(schedule.startDate).add(15, "minutes");
+    const addResult1 = tmp10(4384)(schedule.startDate).add(15, "minutes");
     cResult[6] = schedule.startDate;
     cResult[7] = addResult1;
     let tmp12 = addResult1;
-    const obj3 = tmp10(4352)(schedule.startDate);
+    const obj3 = tmp10(4384)(schedule.startDate);
   } else {
     tmp12 = cResult[7];
   }
-  const obj2 = _modDef4352();
-  const addResult2 = _modDef4352().add(ScheduleUtils.MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
+  const obj2 = _modDef4384();
+  const addResult2 = _modDef4384().add(ScheduleUtils.MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
   if (null != recurrenceId) {
     const add = addResult.add;
     class T {
@@ -226,7 +226,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
         return;
       }
     }
-    addResult2.add(tmp(9749).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
+    addResult2.add(tmp(9781).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
   }
   cResult[1] = recurrenceId;
   cResult[2] = schedule;
@@ -239,15 +239,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
   schedule = schedule.schedule;
   const onChange = schedule.onChange;
   ({ guildEvent, recurrenceId } = schedule);
-  const tmp2 = onChange(4352)();
-  const addResult = onChange(4352)().add(schedule(9749).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
+  const tmp2 = onChange(4384)();
+  const addResult = onChange(4384)().add(schedule(9781).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
   const items = [schedule.startDate];
-  const memo = noop.useMemo(() => _modDef4352(schedule.startDate).add(15, "minutes"), items);
-  let obj = onChange(4352)();
-  const addResult1 = onChange(4352)().add(schedule(9749).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
+  const memo = noop.useMemo(() => _modDef4384(schedule.startDate).add(15, "minutes"), items);
+  let obj = onChange(4384)();
+  const addResult1 = onChange(4384)().add(schedule(9781).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
   if (null != recurrenceId) {
-    addResult.add(tmp3(9749).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
-    addResult1.add(tmp3(9749).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
+    addResult.add(tmp3(9781).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
+    addResult1.add(tmp3(9781).MAX_YEARS_AHEAD_RECURRING_EVENT, "years");
   }
   const obj2 = {
     date: schedule.startDate,
@@ -266,7 +266,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
   obj2.dateLabel = intl.string(schedule(1119).t.kKOIwJ);
   const intl2 = tmp3(1119).intl;
   obj2.timeLabel = intl2.string(schedule(1119).t["6dGmCD"]);
-  const children = [closure_4(schedule(9772).GuildEventDatetime, obj2), ];
+  const children = [closure_4(schedule(9804).GuildEventDatetime, obj2), ];
   let tmp9Result = null != guildEvent.scheduled_end_time;
   if (tmp9Result) {
     const obj4 = {
@@ -286,7 +286,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
     obj4.dateLabel = intl3.string(tmp3(1119).t.CTLgZJ);
     const intl4 = tmp3(1119).intl;
     obj4.timeLabel = intl4.string(tmp3(1119).t.j2RuXF);
-    tmp9Result = closure_4(tmp3(9772).GuildEventDatetime, obj4);
+    tmp9Result = closure_4(tmp3(9804).GuildEventDatetime, obj4);
   }
   children[1] = tmp9Result;
   return closure_6(closure_5, { children });

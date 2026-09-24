@@ -1,10 +1,10 @@
-// Module ID: 16062
-// Function ID: 16063
+// Module ID: 16072
+// Function ID: 16073
 // Name: UserSettingsDesignSystemButtonActionSheet
-// Dependencies: [19, 21, 558, 568, 16060, 1252, 7396, 8876, 7397, 2]
+// Dependencies: [19, 21, 558, 568, 16070, 1252, 7428, 8908, 7429, 2]
 
-// Module 16062 (UserSettingsDesignSystemButtonActionSheet)
-import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 16060 */;
+// Module 16072 (UserSettingsDesignSystemButtonActionSheet)
+import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 16070 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/user_settings/design_system/n
 
 export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = require("c").c(37);
-  const tmp4 = first(16060)();
+  const tmp4 = first(16070)();
   _require = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function o(buttonSize) {
@@ -147,7 +147,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return;
       }
     }
-    const tmp15 = tmp9(tmp(7396).BottomSheetTitleHeader, { title: "Button Settings" });
+    const tmp15 = tmp9(tmp(7428).BottomSheetTitleHeader, { title: "Button Settings" });
     cResult[6] = tmp15;
     const tmp14 = tmp15;
   } else {
@@ -174,7 +174,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       closure_0 = value;
       const obj = { children: null };
       items = [
-        tmp9(closure_0(8876).FormRadioRow, {
+        tmp9(closure_0(8908).FormRadioRow, {
           align: "right",
           selected: closure_0.buttonSize === value,
           label: label.label,
@@ -182,7 +182,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             return first(value);
           }
         }),
-        tmp9(closure_0(8876).FormDivider, {})
+        tmp9(closure_0(8908).FormDivider, {})
       ];
       obj.children = items;
       return tmp11(React.Fragment, obj, value);
@@ -209,7 +209,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     let obj2 = { title: "Button Size", accessibilityRole: "radiogroup", children: tmp16 };
-    const tmp19 = tmp9(tmp(8876).FormSection, obj2);
+    const tmp19 = tmp9(tmp(8908).FormSection, obj2);
     cResult[9] = tmp16;
     cResult[10] = tmp19;
   } else {
@@ -231,7 +231,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return;
       }
     }
-    const tmp21 = tmp9(tmp(8876).FormHint, { children: "The amount in pixels that the button width will scale when pressed" });
+    const tmp21 = tmp9(tmp(8908).FormHint, { children: "The amount in pixels that the button width will scale when pressed" });
     cResult[11] = tmp21;
     const tmp20 = tmp21;
   } else {
@@ -258,7 +258,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       closure_0 = value;
       const obj = { children: null };
       items = [
-        tmp9(closure_0(8876).FormRadioRow, {
+        tmp9(closure_0(8908).FormRadioRow, {
           align: "right",
           selected: closure_0.buttonScale === value,
           label: label.label,
@@ -266,7 +266,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             return closure_2(value);
           }
         }),
-        tmp9(closure_0(8876).FormDivider, {})
+        tmp9(closure_0(8908).FormDivider, {})
       ];
       obj.children = items;
       return tmp11(React.Fragment, obj, value);
@@ -295,7 +295,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj3 = { title: "Button Scale", accessibilityRole: "radiogroup", children: null };
     items = [tmp20, tmp22];
     obj3.children = items;
-    const tmp25 = tmp11(tmp(8876).FormSection, obj3);
+    const tmp25 = tmp11(tmp(8908).FormSection, obj3);
     cResult[14] = tmp22;
     cResult[15] = tmp25;
   } else {
@@ -331,8 +331,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const obj4 = { children: null };
     const obj5 = { label: "Disabled", value: tmp4.showDisabled, onValueChange: tmp26 };
-    obj4.children = tmp9(tmp(8876).FormSwitchRow, obj5);
-    const tmp28 = tmp9(tmp(8876).FormSection, obj4);
+    obj4.children = tmp9(tmp(8908).FormSwitchRow, obj5);
+    const tmp28 = tmp9(tmp(8908).FormSection, obj4);
     cResult[17] = tmp4.showDisabled;
     cResult[18] = tmp28;
   } else {
@@ -365,8 +365,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const obj6 = { children: null };
     const obj7 = { label: "Show Icons", value: tmp4.showIcon, onValueChange: tmp29 };
-    obj6.children = tmp9(tmp(8876).FormSwitchRow, obj7);
-    const tmp31 = tmp9(tmp(8876).FormSection, obj6);
+    obj6.children = tmp9(tmp(8908).FormSwitchRow, obj7);
+    const tmp31 = tmp9(tmp(8908).FormSection, obj6);
     cResult[20] = tmp4.showIcon;
     cResult[21] = tmp31;
   } else {
@@ -382,7 +382,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return closure_4(arg0);
       }
     }
-    const tmp33 = tmp9(tmp(8876).FormHint, { children: "Whether to show the example icon on the left (default) or right." });
+    const tmp33 = tmp9(tmp(8908).FormHint, { children: "Whether to show the example icon on the left (default) or right." });
     items1 = ["start", "end"];
     cResult[22] = tmp33;
     cResult[23] = items1;
@@ -409,7 +409,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           closure_0 = label;
           const obj = { children: null };
           items = [
-            tmp9(closure_0(8876).FormRadioRow, {
+            tmp9(closure_0(8908).FormRadioRow, {
               align: "right",
               selected: closure_0.iconPosition === label,
               label,
@@ -417,14 +417,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 return closure_5(closure_0);
               }
             }),
-            tmp9(closure_0(8876).FormDivider, {})
+            tmp9(closure_0(8908).FormDivider, {})
           ];
           obj.children = items;
           return tmp11(React.Fragment, obj, label);
         })
     ];
     obj8.children = items2;
-    const tmp35 = tmp11(tmp(8876).FormSection, obj8);
+    const tmp35 = tmp11(tmp(8908).FormSection, obj8);
     cResult[24] = tmp4.iconPosition;
     cResult[25] = tmp35;
   } else {
@@ -440,7 +440,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return closure_4(arg0);
       }
     }
-    const tmp37 = tmp9(tmp(8876).FormHint, { children: "Whether or not to show a loading state when a button is pressed" });
+    const tmp37 = tmp9(tmp(8908).FormHint, { children: "Whether or not to show a loading state when a button is pressed" });
     const items3 = [true, false];
     cResult[26] = tmp37;
     cResult[27] = items3;
@@ -475,7 +475,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           obj.onPress = function onPress() {
             return closure_6(closure_0);
           };
-          items = [tmp9(closure_0(8876).FormRadioRow, obj), tmp9(closure_0(8876).FormDivider, {})];
+          items = [tmp9(closure_0(8908).FormRadioRow, obj), tmp9(closure_0(8908).FormDivider, {})];
           obj2.children = items;
           let str2 = "disabled";
           if (true === item) {
@@ -485,7 +485,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         })
     ];
     obj9.children = items4;
-    const tmp39 = tmp11(tmp(8876).FormSection, obj9);
+    const tmp39 = tmp11(tmp(8908).FormSection, obj9);
     cResult[28] = tmp4.enableLoadingState;
     cResult[29] = tmp39;
   } else {
@@ -550,7 +550,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         closure_0 = value;
         const obj = { children: null };
         items = [
-          closure_4(closure_0(8876).FormRadioRow, {
+          closure_4(closure_0(8908).FormRadioRow, {
             align: "right",
             selected: closure_0.buttonSize === value,
             label: label.label,
@@ -558,7 +558,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               return closure_1(value);
             }
           }),
-          closure_4(closure_0(8876).FormDivider, {})
+          closure_4(closure_0(8908).FormDivider, {})
         ];
         obj.children = items;
         return closure_5(React.Fragment, obj, value);
@@ -578,7 +578,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       closure_0 = value;
       const obj = { children: null };
       items = [
-        closure_4(closure_0(8876).FormRadioRow, {
+        closure_4(closure_0(8908).FormRadioRow, {
           align: "right",
           selected: closure_0.buttonScale === value,
           label: label.label,
@@ -586,7 +586,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             return closure_2(value);
           }
         }),
-        closure_4(closure_0(8876).FormDivider, {})
+        closure_4(closure_0(8908).FormDivider, {})
       ];
       obj.children = items;
       return closure_5(React.Fragment, obj, value);
@@ -621,7 +621,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     closure_0 = label;
     const obj = { children: null };
     items = [
-      closure_4(closure_0(8876).FormRadioRow, {
+      closure_4(closure_0(8908).FormRadioRow, {
         align: "right",
         selected: closure_0.iconPosition === label,
         label,
@@ -629,7 +629,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return closure_5(closure_0);
         }
       }),
-      closure_4(closure_0(8876).FormDivider, {})
+      closure_4(closure_0(8908).FormDivider, {})
     ];
     obj.children = items;
     return closure_5(React.Fragment, obj, label);
@@ -651,7 +651,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj.onPress = function onPress() {
       return closure_6(closure_0);
     };
-    items = [closure_4(closure_0(8876).FormRadioRow, obj), closure_4(closure_0(8876).FormDivider, {})];
+    items = [closure_4(closure_0(8908).FormRadioRow, obj), closure_4(closure_0(8908).FormDivider, {})];
     obj2.children = items;
     let str2 = "disabled";
     if (true === item) {

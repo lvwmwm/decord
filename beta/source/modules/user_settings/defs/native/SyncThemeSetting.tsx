@@ -1,15 +1,15 @@
-// Module ID: 15569
-// Function ID: 15570
+// Module ID: 15579
+// Function ID: 15580
 // Name: SyncThemeSetting
-// Dependencies: [4578, 1187, 1186, 1224, 8238, 1078, 558, 568, 504, 1119, 15570, 9470, 11594, 2]
+// Dependencies: [4610, 1187, 1186, 1224, 8270, 1078, 558, 568, 504, 1119, 15580, 9502, 11630, 2]
 
-// Module 15569 (SyncThemeSetting)
+// Module 15579 (SyncThemeSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9470 */;
-import actions_AnalyticsTrackingActionCreators from "actions/AnalyticsTrackingActionCreators" /* 15570 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4578 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9502 */;
+import actions_AnalyticsTrackingActionCreators from "actions/AnalyticsTrackingActionCreators" /* 15580 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4610 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1187 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items = [ThemeStore];
   return initialize.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
 });
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -62,7 +62,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t["3340dY"]);
   },
-  parent: fn(8238).MobileUserSettings.APPEARANCE,
+  parent: fn(8270).MobileUserSettings.APPEARANCE,
   useIsDisabled: tmp2,
   useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);

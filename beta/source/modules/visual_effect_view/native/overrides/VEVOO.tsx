@@ -1,15 +1,15 @@
-// Module ID: 16246
-// Function ID: 16247
+// Module ID: 16256
+// Function ID: 16257
 // Name: VEVOO
-// Dependencies: [19, 17, 4757, 578, 21, 4758, 580, 558, 568, 4497, 5187, 5191, 16247, 16249, 16250, 8876, 11199, 5846, 504, 15993, 2]
+// Dependencies: [19, 17, 4789, 578, 21, 4790, 580, 558, 568, 4529, 5219, 5223, 16257, 16259, 16260, 8908, 11235, 5878, 504, 16003, 2]
 
-// Module 16246 (VEVOO)
+// Module 16256 (VEVOO)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import spring from "spring" /* 5187 */;
-import springPresets from "springPresets" /* 5191 */;
+import spring from "spring" /* 5219 */;
+import springPresets from "springPresets" /* 5223 */;
 import noop from "module_19" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4757 */;
+import DevSettingsStore from "DevSettingsStore" /* 4789 */;
 
 const require = globalThis.__r;
 
@@ -18,9 +18,9 @@ const ScrollView = fn(17).ScrollView;
 const DEV_WIDGET_SIZE = fn(578).DEV_WIDGET_SIZE;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 const styles = createStyles.createStyles({ zeroPadding: { paddingVertical: 0, paddingHorizontal: 0 }, zeroPaddingVertical: { paddingVertical: 0 }, zeroPaddingHorizontal: { paddingHorizontal: 0 }, zeroHeight: { height: 0 }, enabledSwitchStyle: { alignSelf: "flex-start" } });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj = { wrapper: null, scrollView: null, scrollViewContent: null, close: null };
 let size = { borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_660, borderRadius: nativeDefault.radii.lg, position: "absolute", top: 0, left: 0, width: 300, height: 400 };
 let merged = Object.assign(nativeDefault.shadows.SHADOW_MOBILE_NAVIGATOR_X);

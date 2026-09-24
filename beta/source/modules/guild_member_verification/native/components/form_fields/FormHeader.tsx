@@ -1,20 +1,20 @@
-// Module ID: 10051
-// Function ID: 10052
+// Module ID: 10090
+// Function ID: 10091
 // Name: FormHeader
-// Dependencies: [109, 19, 1089, 21, 4758, 5743, 580, 558, 568, 1181, 2]
+// Dependencies: [109, 19, 1089, 21, 4790, 5775, 580, 558, 568, 1181, 2]
 
-// Module 10051 (FormHeader)
+// Module 10090 (FormHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5743 */;
+import TextStyles from "TextStyles" /* 5775 */;
 
 require = fn;
 let closure_2 = ["children"];
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { fieldHeader: null };
 const obj3 = {};
 let merged = Object.assign(TextStyles(fn(1089).Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.TEXT_SUBTLE, 12, { uppercase: true }));

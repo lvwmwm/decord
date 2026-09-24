@@ -1,15 +1,15 @@
-// Module ID: 11802
-// Function ID: 11803
+// Module ID: 11838
+// Function ID: 11839
 // Name: useContentHarmTypes
-// Dependencies: [19, 1224, 2045, 4409, 1376, 558, 568, 7536, 504, 7544, 7539, 2]
+// Dependencies: [19, 1224, 2045, 4441, 1376, 558, 568, 7568, 504, 7576, 7571, 2]
 
-// Module 11802 (useContentHarmTypes)
+// Module 11838 (useContentHarmTypes)
 import c from "c" /* 568 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7536 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7568 */;
 import noop from "module_19" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -19,10 +19,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   dependencyMap = arg1;
   const cResult = require("c").c(18);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const eligibleHarmTypesConfigsForContext = tmp(7536).getEligibleHarmTypesConfigsForContext();
+    const eligibleHarmTypesConfigsForContext = tmp(7568).getEligibleHarmTypesConfigsForContext();
     cResult[0] = eligibleHarmTypesConfigsForContext;
     let first = eligibleHarmTypesConfigsForContext;
-    const tmpResult = tmp(7536);
+    const tmpResult = tmp(7568);
   } else {
     first = cResult[0];
   }
@@ -87,7 +87,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       tmp15 = cResult[9];
     }
     const tmpResult7 = tmp(504);
-    stateFromStores2 = tmpResult7.useStateFromStores(tmp13, tmp14, tmp15, tmp(7544).areSettingsEqual);
+    stateFromStores2 = tmpResult7.useStateFromStores(tmp13, tmp14, tmp15, tmp(7576).areSettingsEqual);
     if (null != stateFromStores1) {
       let id;
       if (stateFromStores != null) {
@@ -150,9 +150,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       }
     }
     if (0 === arr6.length) {
-      let NONE = tmp(7539).ContentHarmTypeBitMask.NONE;
+      let NONE = tmp(7571).ContentHarmTypeBitMask.NONE;
     } else if (cResult[16] !== arr6) {
-      const result = tmp(7536).contentHarmTypesToFlags(arr6);
+      const result = tmp(7568).contentHarmTypesToFlags(arr6);
       class S {
         constructor() {
           return closure_1_6.getCurrentUser();
@@ -160,7 +160,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       }
       cResult[17] = result;
       NONE = result;
-      const tmpResult8 = tmp(7536);
+      const tmpResult8 = tmp(7568);
     } else {
       NONE = cResult[17];
     }
@@ -224,10 +224,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     }
   }, items4);
   if (0 === memo.length) {
-    let NONE = tmp(7539).ContentHarmTypeBitMask.NONE;
+    let NONE = tmp(7571).ContentHarmTypeBitMask.NONE;
   } else {
-    NONE = tmp(7536).contentHarmTypesToFlags(memo);
-    const tmpResult = tmp(7536);
+    NONE = tmp(7568).contentHarmTypesToFlags(memo);
+    const tmpResult = tmp(7568);
   }
   return NONE;
 });

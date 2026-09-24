@@ -1,21 +1,21 @@
-// Module ID: 15091
-// Function ID: 15092
+// Module ID: 15094
+// Function ID: 15095
 // Name: useParentalControlSettings
-// Dependencies: [5, 19, 7787, 8675, 558, 568, 8923, 15092, 15095, 1190, 7545, 7241, 8921, 504, 7786, 8680, 2]
+// Dependencies: [5, 19, 7819, 8707, 558, 568, 8955, 15095, 15098, 1190, 7577, 7273, 8953, 504, 7818, 8712, 2]
 // Exports: useIsParentallyControlled
 
-// Module 15091 (useParentalControlSettings)
+// Module 15094 (useParentalControlSettings)
 import c from "c" /* 568 */;
-import useUserLinks from "useUserLinks" /* 8921 */;
-import useSelectedTeen from "useSelectedTeen" /* 8923 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15092 */;
+import useUserLinks from "useUserLinks" /* 8953 */;
+import useSelectedTeen from "useSelectedTeen" /* 8955 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15095 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7787 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7819 */;
 
-const UserSettingsUtils = tmp(7241);
+const UserSettingsUtils = tmp(7273);
 require = fn;
-const SafetyToastType = fn(8675).SafetyToastType;
+const SafetyToastType = fn(8707).SafetyToastType;
 fn(558);
 let ReactCompilerGating = fn(558);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -67,20 +67,20 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         tmp15 = obj3;
       }
       const obj4 = { teenId: id2, setting: prop1, isFriend: true };
-      const explicitContentSettingWithDefaultsForTeen = tmp(15095).resolveExplicitContentSettingWithDefaultsForTeen(obj4);
+      const explicitContentSettingWithDefaultsForTeen = tmp(15098).resolveExplicitContentSettingWithDefaultsForTeen(obj4);
       cResult[3] = id2;
       cResult[4] = prop1;
       cResult[5] = explicitContentSettingWithDefaultsForTeen;
       tmp13 = explicitContentSettingWithDefaultsForTeen;
-      const tmpResult = tmp(15095);
+      const tmpResult = tmp(15098);
     }
     const obj5 = { teenId: id1, setting: prop };
-    const explicitContentSettingWithDefaultsForTeen1 = tmp(15095).resolveExplicitContentSettingWithDefaultsForTeen(obj5);
+    const explicitContentSettingWithDefaultsForTeen1 = tmp(15098).resolveExplicitContentSettingWithDefaultsForTeen(obj5);
     cResult[0] = id1;
     cResult[1] = prop;
     cResult[2] = explicitContentSettingWithDefaultsForTeen1;
     tmp9 = explicitContentSettingWithDefaultsForTeen1;
-    const tmpResult2 = tmp(15095);
+    const tmpResult2 = tmp(15098);
   }
 }) : (() => {
   const selectedTeen = useSelectedTeen.useSelectedTeen();
@@ -103,8 +103,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const obj3 = { explicitContentNonFriendDm: null, explicitContentFriendDm: null, explicitContentGuilds: null };
     obj2.setting = prop;
-    obj3.explicitContentNonFriendDm = tmp(15095).resolveExplicitContentSettingWithDefaultsForTeen(obj2);
-    const tmpResult = tmp(15095);
+    obj3.explicitContentNonFriendDm = tmp(15098).resolveExplicitContentSettingWithDefaultsForTeen(obj2);
+    const tmpResult = tmp(15098);
     let id2;
     if (selectedTeen != null) {
       id2 = selectedTeen.id;
@@ -115,10 +115,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       prop1 = controlledSetting.explicitContentFriendDm;
     }
     obj4.setting = prop1;
-    obj3.explicitContentFriendDm = tmp(15095).resolveExplicitContentSettingWithDefaultsForTeen(obj4);
+    obj3.explicitContentFriendDm = tmp(15098).resolveExplicitContentSettingWithDefaultsForTeen(obj4);
     obj3.explicitContentGuilds = tmp(1190).ExplicitContentRedaction.BLUR;
     tmp6 = obj3;
-    const tmpResult2 = tmp(15095);
+    const tmpResult2 = tmp(15098);
   }
   return tmp6;
 });
@@ -150,26 +150,26 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (cResult[2] !== goreContentNonFriendDm) {
       let goreSettingWithDefaultsForTeen = goreContentNonFriendDm;
       if (!tmpResult.isSetAndNotDefault(goreContentNonFriendDm)) {
-        goreSettingWithDefaultsForTeen = tmp(7545).resolveGoreSettingWithDefaultsForTeen({ isDm: true });
-        const tmpResult4 = tmp(7545);
+        goreSettingWithDefaultsForTeen = tmp(7577).resolveGoreSettingWithDefaultsForTeen({ isDm: true });
+        const tmpResult4 = tmp(7577);
       }
       cResult[2] = goreContentNonFriendDm;
       cResult[3] = goreSettingWithDefaultsForTeen;
       let tmp8 = goreSettingWithDefaultsForTeen;
-      tmpResult = tmp(15095);
+      tmpResult = tmp(15098);
     } else {
       tmp8 = cResult[3];
     }
     if (cResult[4] !== goreContentFriendDm) {
       let goreSettingWithDefaultsForTeen1 = goreContentFriendDm;
       if (!tmpResult5.isSetAndNotDefault(goreContentFriendDm)) {
-        goreSettingWithDefaultsForTeen1 = tmp(7545).resolveGoreSettingWithDefaultsForTeen({ isDm: true, isFriend: true });
-        const tmpResult6 = tmp(7545);
+        goreSettingWithDefaultsForTeen1 = tmp(7577).resolveGoreSettingWithDefaultsForTeen({ isDm: true, isFriend: true });
+        const tmpResult6 = tmp(7577);
       }
       cResult[4] = goreContentFriendDm;
       cResult[5] = goreSettingWithDefaultsForTeen1;
       let tmp10 = goreSettingWithDefaultsForTeen1;
-      tmpResult5 = tmp(15095);
+      tmpResult5 = tmp(15098);
     } else {
       tmp10 = cResult[5];
     }
@@ -201,14 +201,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     ({ goreContentNonFriendDm, goreContentFriendDm } = controlledSetting);
     if (!tmpResult.isSetAndNotDefault(goreContentNonFriendDm)) {
-      goreContentNonFriendDm = tmp(7545).resolveGoreSettingWithDefaultsForTeen({ isDm: true });
-      const tmpResult4 = tmp(7545);
+      goreContentNonFriendDm = tmp(7577).resolveGoreSettingWithDefaultsForTeen({ isDm: true });
+      const tmpResult4 = tmp(7577);
     }
     const obj2 = { goreContentNonFriendDm, goreContentFriendDm: null, goreContentGuilds: null };
-    tmpResult = tmp(15095);
+    tmpResult = tmp(15098);
     if (!tmpResult5.isSetAndNotDefault(goreContentFriendDm)) {
-      goreContentFriendDm = tmp(7545).resolveGoreSettingWithDefaultsForTeen({ isDm: true, isFriend: true });
-      const tmpResult6 = tmp(7545);
+      goreContentFriendDm = tmp(7577).resolveGoreSettingWithDefaultsForTeen({ isDm: true, isFriend: true });
+      const tmpResult6 = tmp(7577);
     }
     obj2.goreContentFriendDm = goreContentFriendDm;
     obj2.goreContentGuilds = tmp(1190).ExplicitContentRedaction.BLUR;
@@ -342,17 +342,17 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 items2 = [closure_0];
               }
               c4 = 1;
-              selectedTeenId(7786).updateTeenConsents(tmp28, items1, items2);
+              selectedTeenId(7818).updateTeenConsents(tmp28, items1, items2);
               c2 = 2;
               c5 = 1;
-              const obj3 = selectedTeenId(7786);
+              const obj3 = selectedTeenId(7818);
             }
           }
         } else {
           if (1 === tmp7) {
             c4 = 0;
-            selectedTeenId(8680).showFailedToast(constants.GENERIC_ERROR);
-            const obj2 = selectedTeenId(8680);
+            selectedTeenId(8712).showFailedToast(constants.GENERIC_ERROR);
+            const obj2 = selectedTeenId(8712);
           } else if (arg0 === 1) {
             c5 = 3;
             throw value;
@@ -432,17 +432,17 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 items2 = [closure_0];
               }
               c4 = 1;
-              selectedTeenId(7786).updateTeenConsents(tmp28, items1, items2);
+              selectedTeenId(7818).updateTeenConsents(tmp28, items1, items2);
               c2 = 2;
               c5 = 1;
-              const obj3 = selectedTeenId(7786);
+              const obj3 = selectedTeenId(7818);
             }
           }
         } else {
           if (1 === tmp7) {
             c4 = 0;
-            selectedTeenId(8680).showFailedToast(constants.GENERIC_ERROR);
-            const obj2 = selectedTeenId(8680);
+            selectedTeenId(8712).showFailedToast(constants.GENERIC_ERROR);
+            const obj2 = selectedTeenId(8712);
           } else if (arg0 === 1) {
             c5 = 3;
             throw value;
@@ -499,8 +499,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   return tmp7.mutualGuilds && !tmp7.all;
 }) : (() => {
-  const selectedTeen = controlledSetting(8923).useSelectedTeen();
-  const ParentalControlledFriendSourceFlags = controlledSetting(15092).ParentalControlledFriendSourceFlags;
+  const selectedTeen = controlledSetting(8955).useSelectedTeen();
+  const ParentalControlledFriendSourceFlags = controlledSetting(15095).ParentalControlledFriendSourceFlags;
   let id;
   if (selectedTeen != null) {
     id = selectedTeen.id;

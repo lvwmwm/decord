@@ -1,14 +1,14 @@
-// Module ID: 16870
-// Function ID: 16871
+// Module ID: 16880
+// Function ID: 16881
 // Name: MainTabsContentScrim
-// Dependencies: [17, 21, 4758, 580, 558, 568, 4497, 2]
+// Dependencies: [17, 21, 4790, 580, 558, 568, 4529, 2]
 
-// Module 16870 (MainTabsContentScrim)
+// Module 16880 (MainTabsContentScrim)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import createStyles from "createStyles" /* 4758 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,8 +37,8 @@ export const MainTabsContentScrim = ReactCompilerGating.isReactCompilerEnabled()
     obj.opacity = ReanimatedRexport.interpolate(value, items, [0, 0.5], ReanimatedRexport.Extrapolation.CLAMP);
     return obj;
   };
-  const obj2 = translateX(4497);
-  fn.__closure = { interpolate: translateX(4497).interpolate, translateX, maxWidth, Extrapolation: translateX(4497).Extrapolation };
+  const obj2 = translateX(4529);
+  fn.__closure = { interpolate: translateX(4529).interpolate, translateX, maxWidth, Extrapolation: translateX(4529).Extrapolation };
   fn.__workletHash = 7933670426250;
   fn.__initData = __initData;
   const animatedStyle = obj2.useAnimatedStyle(fn);
@@ -51,7 +51,7 @@ export const MainTabsContentScrim = ReactCompilerGating.isReactCompilerEnabled()
   const obj4 = { style: null, pointerEvents: "none" };
   let items = [tmp3.scrim, animatedStyle];
   obj4.style = items;
-  const tmp6 = jsx(maxWidth(4497).View, { style: null, pointerEvents: "none" });
+  const tmp6 = jsx(maxWidth(4529).View, { style: null, pointerEvents: "none" });
   cResult[0] = animatedStyle;
   cResult[1] = tmp3.scrim;
   cResult[2] = tmp6;
@@ -67,13 +67,13 @@ export const MainTabsContentScrim = ReactCompilerGating.isReactCompilerEnabled()
     obj.opacity = ReanimatedRexport.interpolate(value, items, [0, 0.5], ReanimatedRexport.Extrapolation.CLAMP);
     return obj;
   };
-  let obj = translateX(4497);
-  fn.__closure = { interpolate: translateX(4497).interpolate, translateX, maxWidth, Extrapolation: translateX(4497).Extrapolation };
+  let obj = translateX(4529);
+  fn.__closure = { interpolate: translateX(4529).interpolate, translateX, maxWidth, Extrapolation: translateX(4529).Extrapolation };
   fn.__workletHash = 9902483670729;
   fn.__initData = __initData2;
   const animatedStyle = obj.useAnimatedStyle(fn);
   const obj3 = { style: null, pointerEvents: "none" };
   let items = [tmp.scrim, animatedStyle];
   obj3.style = items;
-  return jsx(maxWidth(4497).View, { style: null, pointerEvents: "none" });
+  return jsx(maxWidth(4529).View, { style: null, pointerEvents: "none" });
 });

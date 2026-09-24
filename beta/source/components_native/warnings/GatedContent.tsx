@@ -1,17 +1,17 @@
-// Module ID: 12815
-// Function ID: 12816
+// Module ID: 12851
+// Function ID: 12852
 // Name: GatedContent
-// Dependencies: [19, 21, 4758, 580, 558, 568, 8689, 4754, 5186, 5188, 5652, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 8721, 4786, 5218, 5220, 5684, 2]
 
-// Module 12815 (GatedContent)
+// Module 12851 (GatedContent)
 import nativeDefault from "native" /* 580 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8689 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8721 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, padding: 20, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, textAlign: "center" }, title: { textAlign: "center" }, description: { textAlign: "center" }, buttonGroup: { width: "100%", maxWidth: 400 } };
 let closure_5 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

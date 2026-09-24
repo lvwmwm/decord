@@ -1,11 +1,11 @@
-// Module ID: 5117
-// Function ID: 5118
+// Module ID: 5149
+// Function ID: 5150
 // Name: OverlayView
-// Dependencies: [109, 19, 17, 21, 1368, 5118, 558, 568, 5167, 2]
+// Dependencies: [109, 19, 17, 21, 1368, 5150, 558, 568, 5199, 2]
 
-// Module 5117 (OverlayView)
+// Module 5149 (OverlayView)
 import c from "c" /* 568 */;
-import _modDef5167 from "module_5167" /* 5167 */;
+import _modDef5199 from "module_5199" /* 5199 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,12 +18,12 @@ const jsx = fn(21).jsx;
 let PlatformUtils = fn(1368);
 let FullWindowOverlay = View;
 if (PlatformUtils.isIOS()) {
-  FullWindowOverlay = fn(5118).FullWindowOverlay;
+  FullWindowOverlay = fn(5150).FullWindowOverlay;
 }
 const ReactCompilerGating = fn(558);
 PlatformUtils = fn(1368);
 if (PlatformUtils.isIOS()) {
-  View = _modDef5167;
+  View = _modDef5199;
 }
 const size = fn(2);
 const result = size.fileFinishedImporting("design/void/OverlayView/native/OverlayView.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 18239
-// Function ID: 18240
+// Module ID: 18249
+// Function ID: 18250
 // Name: ActionableNotice
-// Dependencies: [19, 17, 21, 4758, 558, 568, 4754, 5188, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 4786, 5220, 2]
 
-// Module 18239 (ActionableNotice)
+// Module 18249 (ActionableNotice)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ container: { flexDirection: "row", paddingVertical: 12, alignItems: "center" }, message: { marginEnd: 27, flex: 3 }, actionButton: { flexGrow: 0, alignSelf: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -70,7 +70,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj4 = { size: "sm", onPress: onClick, disabled: submitting, text: ctaMessage };
-      const tmp12 = React3(tmp(5188).Button, obj4);
+      const tmp12 = React3(tmp(5220).Button, obj4);
       cResult[6] = ctaMessage;
       cResult[7] = onClick;
       cResult[8] = submitting;
@@ -78,7 +78,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp10 = tmp12;
     }
     const obj5 = { style: tmp5.message, variant: "text-sm/medium", color: "text-default", children: message };
-    const tmp9 = React3(tmp(4754).Text, obj5);
+    const tmp9 = React3(tmp(4786).Text, obj5);
     cResult[3] = message;
     cResult[4] = tmp5.message;
     cResult[5] = tmp9;

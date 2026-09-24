@@ -1,19 +1,19 @@
-// Module ID: 9155
-// Function ID: 9156
+// Module ID: 9187
+// Function ID: 9188
 // Name: GameProfileSimilarGames
-// Dependencies: [32, 19, 17, 8983, 9039, 21, 580, 4758, 558, 568, 8944, 8946, 8950, 1119, 9010, 4754, 9029, 9012, 9156, 1482, 8995, 8996, 2]
+// Dependencies: [32, 19, 17, 9015, 9071, 21, 580, 4790, 558, 568, 8976, 8978, 8982, 1119, 9042, 4786, 9061, 9044, 9188, 1482, 9027, 9028, 2]
 
-// Module 9155 (GameProfileSimilarGames)
+// Module 9187 (GameProfileSimilarGames)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8944 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8950 */;
-import _mod8995 from "module_8995" /* 8995 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9010 */;
-import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9029 */;
-import useSimilarGamesDefault from "useSimilarGames" /* 9156 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8976 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8982 */;
+import _mod9027 from "module_9027" /* 9027 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9042 */;
+import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9061 */;
+import useSimilarGamesDefault from "useSimilarGames" /* 9188 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -22,14 +22,14 @@ const GameProfileSkeletonDefault = GameProfileSkeleton;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, Pressable: metroRequire, View: closure_7 } = get_ActivityIndicator);
-let closure_8 = fn(8983).MOBILE_GAME_PROFILE_MAX_WIDTH;
-fn(9039).SIMILAR_GAMES_BLOCKED_GAME_IDS;
+let closure_8 = fn(9015).MOBILE_GAME_PROFILE_MAX_WIDTH;
+fn(9071).SIMILAR_GAMES_BLOCKED_GAME_IDS;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 let c13 = 1.34;
 const PX_16 = nativeDefault.space.PX_16;
 const PX_12 = nativeDefault.space.PX_12;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { gap: nativeDefault.space.PX_8, marginHorizontal: -1 * nativeDefault.space.PX_16 }, header: null, card: null, spacer: null, listPadding: null, coverArtContainer: null, coverArt: null, coverArtPlaceholder: null, coverArtFallback: null, skeletonCards: null, skeletonArtwork: null };
 let obj3 = { gap: nativeDefault.space.PX_8, marginHorizontal: -1 * nativeDefault.space.PX_16 };
 obj.header = { paddingHorizontal: nativeDefault.space.PX_16 };
@@ -98,7 +98,7 @@ let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((game
       dependencyMap = tmp7;
       [, _slicedToArray] = shouldOpenGameProfile.useState(undefined);
       if (cResult[6] !== name.id) {
-        let obj2 = { gameId: name.id, source: tmp(8944).GameProfileSources.SimilarGames };
+        let obj2 = { gameId: name.id, source: tmp(8976).GameProfileSources.SimilarGames };
         cResult[6] = name.id;
         cResult[7] = obj2;
         let tmp15 = obj2;
@@ -106,7 +106,7 @@ let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((game
         tmp15 = cResult[7];
       }
       let tmp16 = trackAction;
-      const tmp17 = trackAction(8946)(tmp15);
+      const tmp17 = trackAction(8978)(tmp15);
       shouldOpenGameProfile = tmp17.shouldOpenGameProfile;
       const gameId = tmp17.gameId;
       if (cResult[8] === name.id) {
@@ -200,10 +200,10 @@ let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((game
                     }
                   }
                   const obj5 = { style: coverArtPlaceholder.coverArtPlaceholder, children: null };
-                  tmp16 = tmp16(9010);
+                  tmp16 = tmp16(9042);
                   const obj6 = { style: coverArtPlaceholder.coverArt };
                   obj5.children = closure_10(tmp16, obj6);
-                  tmp29 = closure_10(tmp(9010).GameProfileSkeletonContainer, obj5);
+                  tmp29 = closure_10(tmp(9042).GameProfileSkeletonContainer, obj5);
                 }
                 const items1 = [tmp29, ];
                 tmp = gameId;
@@ -252,7 +252,7 @@ let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((game
                 const items2 = [coverArtPlaceholder.coverArtFallback, tmp5];
                 obj9.style = items2;
                 const obj10 = { variant: "text-xs/medium", color: "text-overlay-light", lineClamp: 3, children: name.name };
-                obj9.children = closure_10(tmp(4754).Text, obj10);
+                obj9.children = closure_10(tmp(4786).Text, obj10);
                 tmp26Result = closure_10(closure_7, obj9);
               }
               cResult[22] = tmp5;
@@ -511,7 +511,7 @@ let closure_21 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((card
       }
     }
     const obj2 = { style: container, headerStyle: header, showViewAllSkeleton: false, skeletonTitleWidth: 124, children: tmp8 };
-    const tmp12 = closure_10(cardWidth(9012).GameProfileSectionSkeleton, obj2);
+    const tmp12 = closure_10(cardWidth(9044).GameProfileSectionSkeleton, obj2);
     cResult[5] = tmp4.container;
     cResult[6] = tmp4.header;
     cResult[7] = tmp8;
@@ -529,7 +529,7 @@ let closure_21 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((card
   const obj = { style: tmp.container, headerStyle: tmp.header, showViewAllSkeleton: false, skeletonTitleWidth: 124, children: null };
   const obj2 = { contentContainerStyle: tmp.skeletonCards, children: Array.from({ length: 4 }, (arg0, arg1) => v65535(closure_20, { animationDelayMs: arg1 * GameProfileSkeleton.SKELETON_CARD_ANIMATION_DELAY_MS, cardWidth }, arg1)) };
   obj.children = closure_10(GameProfileSkeletonCardRowDefault, obj2);
-  return closure_10(cardWidth(9012).GameProfileSectionSkeleton, obj);
+  return closure_10(cardWidth(9044).GameProfileSectionSkeleton, obj);
 }));
 ReactCompilerGating = fn(558);
 let obj9 = { borderRadius: nativeDefault.radii.sm };
@@ -595,7 +595,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return jsx(closure_19, obj);
             }
           }
-          const tmp20 = closure_10(tmp5(9012), obj3);
+          const tmp20 = closure_10(tmp5(9044), obj3);
           cResult[10] = tmp4.container;
           cResult[11] = tmp4.header;
           cResult[12] = tmp13;
@@ -603,7 +603,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp18 = tmp20;
         }
       }
-      const obj4 = { horizontal: true, renderScrollComponent: tmp5(8996), data: null, renderItem: null, showsHorizontalScrollIndicator: false, ItemSeparatorComponent: null, ListHeaderComponent: null, ListFooterComponent: null, decelerationRate: "fast", snapToInterval: null };
+      const obj4 = { horizontal: true, renderScrollComponent: tmp5(9028), data: null, renderItem: null, showsHorizontalScrollIndicator: false, ItemSeparatorComponent: null, ListHeaderComponent: null, ListFooterComponent: null, decelerationRate: "fast", snapToInterval: null };
       class L {
         constructor(arg0) {
           obj = { game: arg0.item, trackAction, cardWidth: closure_1 };
@@ -615,7 +615,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       obj4.ListHeaderComponent = ListFooterComponent;
       obj4.ListFooterComponent = ListFooterComponent;
       obj4.snapToInterval = sum;
-      const tmp17 = closure_10(tmp(8995).FlashList, obj4);
+      const tmp17 = closure_10(tmp(9027).FlashList, obj4);
       cResult[6] = similarGames;
       cResult[7] = tmp11;
       cResult[8] = sum;
@@ -651,7 +651,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj3.title = intl.string(util.t["6rLyQB"]);
     const obj5 = {
       horizontal: true,
-      renderScrollComponent: tmp2(8996),
+      renderScrollComponent: tmp2(9028),
       data: similarGames,
       renderItem(game) {
           return v65535(closure_19, { game: game.item, trackAction, cardWidth });
@@ -663,8 +663,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       decelerationRate: "fast",
       snapToInterval: result + PX_12
     };
-    obj3.children = closure_10(_mod8995.FlashList, obj5);
-    tmp7 = closure_10(tmp2(9012), obj3);
-    const tmp2Result = tmp2(9012);
+    obj3.children = closure_10(_mod9027.FlashList, obj5);
+    tmp7 = closure_10(tmp2(9044), obj3);
+    const tmp2Result = tmp2(9044);
   }
 });

@@ -1,20 +1,20 @@
-// Module ID: 14054
-// Function ID: 14055
+// Module ID: 14091
+// Function ID: 14092
 // Name: JoinVoiceChannelButton
-// Dependencies: [19, 17, 4399, 1078, 21, 4758, 558, 568, 10174, 504, 1119, 1879, 5630, 5188, 2]
+// Dependencies: [19, 17, 4431, 1078, 21, 4790, 558, 568, 10213, 504, 1119, 1879, 5662, 5220, 2]
 
-// Module 14054 (JoinVoiceChannelButton)
+// Module 14091 (JoinVoiceChannelButton)
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1879 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5630 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 10174 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5662 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 10213 */;
 import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 const require = fn;
 const View = fn(17).View;
 const Permissions = fn(1078).Permissions;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ container: { flexDirection: "row" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -110,7 +110,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
       }
       const obj3 = { disabled: flag, text: tmp10, onPress: tmp17 };
-      const tmp21 = jsx(tmp(5188).Button, { disabled: flag, text: tmp10, onPress: tmp17 });
+      const tmp21 = jsx(tmp(5220).Button, { disabled: flag, text: tmp10, onPress: tmp17 });
       cResult[11] = tmp10;
       cResult[12] = flag;
       cResult[13] = tmp17;
@@ -151,6 +151,6 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const result = KeyboardManagerUtilsAll.dismissGlobalKeyboard();
     const voiceChannel = SelectedChannelActionCreatorsDefault.selectVoiceChannel(channel.id);
   }, items1);
-  obj2.children = jsx(channel(5188).Button, { disabled: flag, text: stringResult, onPress: callback });
+  obj2.children = jsx(channel(5220).Button, { disabled: flag, text: stringResult, onPress: callback });
   return <View style={null}>{null}</View>;
 });

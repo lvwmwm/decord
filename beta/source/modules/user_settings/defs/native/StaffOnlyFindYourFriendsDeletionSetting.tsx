@@ -1,11 +1,11 @@
-// Module ID: 15108
-// Function ID: 15109
+// Module ID: 15118
+// Function ID: 15119
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 8238, 21, 1247, 1252, 558, 568, 4383, 12827, 1329, 4458, 11594, 15109, 2]
+// Dependencies: [5, 17, 8270, 21, 1247, 1252, 558, 568, 4415, 12863, 1329, 4490, 11630, 15119, 2]
 
-// Module 15108 (StaffOnlyFindYourFriendsDeletionSetting)
+// Module 15118 (StaffOnlyFindYourFriendsDeletionSetting)
 import c from "c" /* 568 */;
-import _mod4383 from "module_4383" /* 4383 */;
+import _mod4415 from "module_4415" /* 4415 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -112,13 +112,13 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     first = cResult[0];
   }
-  return closure_6(first, _mod4383.shallow);
-}) : (() => closure_6((isLoading) => isLoading.isLoading, _mod4383.shallow));
+  return closure_6(first, _mod4415.shallow);
+}) : (() => closure_6((isLoading) => isLoading.isLoading, _mod4415.shallow));
 ReactCompilerGating = fn(558);
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = fn(558);
 fn = () => closure_8();
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   const tmp2 = closure_8();
@@ -145,7 +145,7 @@ const pressable = SettingBuilders.createPressable({
   useTitle() {
     return "STAFF ONLY - Find your friends deletion";
   },
-  parent: fn(8238).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: fn(8270).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useIsDisabled: fn,
   onPress: function onFindYourFriendsDeletionPress() {
     const self = this;
@@ -157,7 +157,7 @@ const pressable = SettingBuilders.createPressable({
     }
     return applyArgumentsResult;
   },
-  usePredicate: fn(15109).useStaffOrDeveloperSettingPredicate,
+  usePredicate: fn(15119).useStaffOrDeveloperSettingPredicate,
   useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     const tmp2 = closure_8();

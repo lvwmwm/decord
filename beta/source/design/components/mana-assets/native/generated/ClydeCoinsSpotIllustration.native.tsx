@@ -1,13 +1,13 @@
-// Module ID: 6092
-// Function ID: 6093
+// Module ID: 6124
+// Function ID: 6125
 // Name: ClydeCoinsSpotIllustration
-// Dependencies: [21, 558, 568, 6093, 5802, 2]
+// Dependencies: [21, 558, 568, 6125, 5834, 2]
 
-// Module 6092 (ClydeCoinsSpotIllustration)
+// Module 6124 (ClydeCoinsSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6093 from "module_6093" /* 6093 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6125 from "module_6125" /* 6125 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const ClydeCoinsSpotIllustration = ReactCompilerGating.isReactCompilerEna
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6093 };
+    const obj2 = { uri: _modDef6125 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const ClydeCoinsSpotIllustration = ReactCompilerGating.isReactCompilerEna
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6093 };
+  const obj2 = { uri: _modDef6125 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

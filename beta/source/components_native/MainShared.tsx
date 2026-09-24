@@ -1,30 +1,30 @@
-// Module ID: 17381
-// Function ID: 17382
+// Module ID: 17391
+// Function ID: 17392
 // Name: MainShared
-// Dependencies: [19, 2045, 4781, 21, 558, 568, 504, 9655, 4616, 10183, 17382, 1368, 5184, 1119, 17384, 14717, 2, 17385, 17386, 17387, 17388, 17396, 17397, 17427]
+// Dependencies: [19, 2045, 4813, 21, 558, 568, 504, 9687, 4648, 10222, 17392, 1368, 5216, 1119, 17394, 14755, 2, 17395, 17396, 17397, 17398, 17406, 17407, 17437]
 
-// Module 17381 (MainShared)
+// Module 17391 (MainShared)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4616 */;
-import KeyCommands from "KeyCommands" /* 5184 */;
-import usePipVideoOrStream from "usePipVideoOrStream" /* 9655 */;
-import VoicePanelUtils from "VoicePanelUtils" /* 10183 */;
-import AccessibilityManagerDefault from "AccessibilityManager" /* 14717 */;
-import PictureInPictureGlobalDefault from "PictureInPictureGlobal" /* 17382 */;
-import showLaunchPadDefault from "showLaunchPad" /* 17384 */;
-import BurstReactionAnimationContainerDefault from "BurstReactionAnimationContainer" /* 17385 */;
-import NativeMenuPresenterDefault from "NativeMenuPresenter" /* 17386 */;
-import components_ActionSheetPresenterDefault from "components/ActionSheetPresenter" /* 17387 */;
-import AlertsDefault from "Alerts" /* 17388 */;
-import SoundPlayerDefault from "SoundPlayer" /* 17396 */;
-import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 17397 */;
-import ToastContainerDefault from "ToastContainer" /* 17427 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4648 */;
+import KeyCommands from "KeyCommands" /* 5216 */;
+import usePipVideoOrStream from "usePipVideoOrStream" /* 9687 */;
+import VoicePanelUtils from "VoicePanelUtils" /* 10222 */;
+import AccessibilityManagerDefault from "AccessibilityManager" /* 14755 */;
+import PictureInPictureGlobalDefault from "PictureInPictureGlobal" /* 17392 */;
+import showLaunchPadDefault from "showLaunchPad" /* 17394 */;
+import BurstReactionAnimationContainerDefault from "BurstReactionAnimationContainer" /* 17395 */;
+import NativeMenuPresenterDefault from "NativeMenuPresenter" /* 17396 */;
+import components_ActionSheetPresenterDefault from "components/ActionSheetPresenter" /* 17397 */;
+import AlertsDefault from "Alerts" /* 17398 */;
+import SoundPlayerDefault from "SoundPlayer" /* 17406 */;
+import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 17407 */;
+import ToastContainerDefault from "ToastContainer" /* 17437 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
 
 require = fn;
 const jsx = fn(21).jsx;
@@ -104,7 +104,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmpResult = tmp(1368);
-    tmp(5184).KeyModifierFlags;
+    tmp(5216).KeyModifierFlags;
     const isAndroidResult = tmp(1368).isAndroid();
     const KeyModifierFlags = { input: "k", modifierFlags: null, eventName: "keyCommandShowQuickSwitcher", discoverabilityTitle: null, onKeyCommand: null };
     KeyModifierFlags.modifierFlags = tmp(1368).isAndroid() ? KeyModifierFlags.keyModifierControl : KeyModifierFlags.keyModifierCommand;
@@ -118,7 +118,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[0] = items;
     const tmp5 = tmp(1368).isAndroid() ? KeyModifierFlags.keyModifierControl : KeyModifierFlags.keyModifierCommand;
   } else {
-    const keyCommands = tmp(5184).useKeyCommands(cResult[0]);
+    const keyCommands = tmp(5216).useKeyCommands(cResult[0]);
   }
 }) : (() => {
   const memo = noop.useMemo(() => {

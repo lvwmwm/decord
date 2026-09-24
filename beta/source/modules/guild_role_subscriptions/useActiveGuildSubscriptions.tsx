@@ -1,18 +1,18 @@
-// Module ID: 15470
-// Function ID: 15471
+// Module ID: 15480
+// Function ID: 15481
 // Name: useActiveGuildSubscriptions
-// Dependencies: [19, 4424, 15464, 558, 568, 15465, 504, 5081, 2]
+// Dependencies: [19, 4456, 15474, 558, 568, 15475, 504, 5113, 2]
 
-// Module 15470 (useActiveGuildSubscriptions)
-import actions_BillingActionCreatorsAll from "actions/BillingActionCreators" /* 5081 */;
-import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 15465 */;
+// Module 15480 (useActiveGuildSubscriptions)
+import actions_BillingActionCreatorsAll from "actions/BillingActionCreators" /* 5113 */;
+import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 15475 */;
 import noop from "module_19" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 4424 */;
+import SubscriptionStore from "SubscriptionStore" /* 4456 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const constants = fn(15464).UserGuildRoleSubscriptionRelationship;
+const constants = fn(15474).UserGuildRoleSubscriptionRelationship;
 let closure_7 = [];
 const ReactCompilerGating = fn(558);
 const size = fn(2);

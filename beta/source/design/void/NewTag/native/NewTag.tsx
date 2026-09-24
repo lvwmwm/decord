@@ -1,14 +1,14 @@
-// Module ID: 14366
-// Function ID: 14367
+// Module ID: 14404
+// Function ID: 14405
 // Name: NewTag
-// Dependencies: [109, 19, 17, 1078, 21, 4758, 580, 558, 568, 1119, 4754, 5198, 2]
+// Dependencies: [109, 19, 17, 1078, 21, 4790, 580, 558, 568, 1119, 4786, 5230, 2]
 
-// Module 14366 (NewTag)
+// Module 14404 (NewTag)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Platform } = get_ActivityIndicator);
 const HorizontalGradient = fn(1078).HorizontalGradient;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { tagContainer: { height: "auto", backgroundColor: nativeDefault.unsafe_rawColors.RED_400, justifyContent: "center", alignItems: "center", paddingHorizontal: 4, marginBottom: 2, borderRadius: nativeDefault.radii.round }, tagText: { textTransform: "uppercase" } };
 let closure_8 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -144,7 +144,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const merged = Object.assign(tmp9);
         obj5.style = tmp38;
         obj5.children = tmp40;
-        const tmp47 = jsx(tmp(4754).Text, { variant: str, color: str2 });
+        const tmp47 = jsx(tmp(4786).Text, { variant: str, color: str2 });
         cResult[20] = str2;
         cResult[21] = tmp38;
         cResult[22] = tmp9;
@@ -206,7 +206,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const merged1 = Object.assign(tmp9);
         obj13.style = tmp21;
         obj13.children = tmp23;
-        const tmp30 = jsx(tmp(4754).Text, { variant: str, color: str2 });
+        const tmp30 = jsx(tmp(4786).Text, { variant: str, color: str2 });
         cResult[39] = str2;
         cResult[40] = tmp21;
         cResult[41] = tmp9;

@@ -1,13 +1,13 @@
-// Module ID: 11216
-// Function ID: 11217
+// Module ID: 11252
+// Function ID: 11253
 // Name: GroupDMAvatar
-// Dependencies: [19, 17, 1376, 21, 1181, 4758, 558, 568, 9092, 1374, 504, 2]
+// Dependencies: [19, 17, 1376, 21, 1181, 4790, 558, 568, 9124, 1374, 504, 2]
 
-// Module 11216 (GroupDMAvatar)
+// Module 11252 (GroupDMAvatar)
 import c from "c" /* 568 */;
 import native from "native" /* 1181 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
-import ClipView from "ClipView" /* 9092 */;
+import ClipView from "ClipView" /* 9124 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -24,7 +24,7 @@ obj[fn(1181).AvatarSizes.REFRESH_MEDIUM_32] = fn(1181).AvatarSizes.XSMALL_20;
 obj[fn(1181).AvatarSizes.XSMALL] = fn(1181).AvatarSizes.SIZE_16;
 obj[fn(1181).AvatarSizes.SIZE_16] = fn(1181).AvatarSizes.XXSMALL_10;
 obj[fn(1181).AvatarSizes.NORMAL] = fn(1181).AvatarSizes.XSMALL;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ firstFace: { position: "absolute", top: 0, left: 0 }, secondFace: { position: "absolute", bottom: 0, right: 0 } });
 let ReactCompilerGating = fn(558);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -163,7 +163,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj9 = { nativeCutouts: null };
-  const point = { shape: tmp(9092).CutoutShape.Circle, x: diff1, y: diff2, size: result1 };
+  const point = { shape: tmp(9124).CutoutShape.Circle, x: diff1, y: diff2, size: result1 };
   const items2 = [point];
   obj9.nativeCutouts = items2;
   cResult[2] = result1;

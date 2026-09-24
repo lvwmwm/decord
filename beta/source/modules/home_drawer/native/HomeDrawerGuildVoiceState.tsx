@@ -1,23 +1,23 @@
-// Module ID: 16661
-// Function ID: 16662
+// Module ID: 16671
+// Function ID: 16672
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 2100, 4409, 4939, 4782, 1078, 21, 4758, 580, 558, 568, 1181, 13323, 1119, 4754, 10316, 5802, 5198, 16660, 504, 13978, 12, 2]
+// Dependencies: [19, 17, 2100, 4441, 4971, 4814, 1078, 21, 4790, 580, 558, 568, 1181, 13359, 1119, 4786, 10355, 5834, 5230, 16670, 504, 14014, 12, 2]
 
-// Module 16661 (HomeDrawerGuildVoiceState)
+// Module 16671 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10316 */;
-import AvatarPile from "AvatarPile" /* 13323 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 13978 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10355 */;
+import AvatarPile from "AvatarPile" /* 13359 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 14014 */;
 import noop from "module_19" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 2100 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4782 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4814 */;
 
 const require = globalThis.__r;
 
@@ -27,7 +27,7 @@ const GUILD_VOCAL_CHANNELS_KEY = fn(2100).GUILD_VOCAL_CHANNELS_KEY;
 const ChannelTypes = fn(1078).ChannelTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let obj2 = { voiceContainer: { paddingRight: 8, height: 40, gap: 4, justifyContent: "center" }, streamPreviewShadow: null, streamPreview: null, streamPreviewDarkGradient: null, streamPreviewGradient: null, streamPreviewBorder: null };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_MEDIUM);
 obj2.streamPreviewShadow = { borderRadius: nativeDefault.radii.sm };
@@ -91,7 +91,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const obj3 = { style: tmp5, children: null };
           const obj4 = { size: tmp(1181).AvatarSizes.XSMALL, names: tmp6, totalCount: tmp10, children: cResult[8] };
-          obj3.children = closure_11(tmp(13323).AvatarPile, obj4);
+          obj3.children = closure_11(tmp(13359).AvatarPile, obj4);
           const tmp18 = closure_11(View, obj3);
           cResult[11] = tmp6;
           cResult[12] = cResult[8];
@@ -131,7 +131,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   return tmp;
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj4 = { tag: null, tagText: null };
 const rect1 = { paddingHorizontal: 4, paddingVertical: 1, borderBottomRightRadius: nativeDefault.radii.xs, overflow: "hidden", justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.unsafe_rawColors.RED_400, position: "absolute", top: 0, left: 0 };
 obj4.tag = rect1;
@@ -154,7 +154,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp4.tagText) {
     const obj2 = { variant: "text-xxs/bold", style: tagText, lineClamp: 1, children: first };
-    const tmp9 = closure_1_11(tmp(4754).Text, obj2);
+    const tmp9 = closure_1_11(tmp(4786).Text, obj2);
     cResult[1] = tmp4.tagText;
     cResult[2] = tmp9;
     let tmp7 = tmp9;
@@ -248,11 +248,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj7 = { style: streamPreviewShadow.streamPreview, source: null };
         const obj8 = { uri: streamPreviewGradient };
         obj7.source = obj8;
-        const items = [closure_1_11(tmp4(5802), obj7), , , , ];
+        const items = [closure_1_11(tmp4(5834), obj7), , , , ];
         const obj9 = { colors: ["rgba(0, 0, 0, 1)", "rgba(0, 0, 0, 0)"], start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: streamPreviewShadow.streamPreviewDarkGradient, pointerEvents: "none" };
-        items[1] = closure_1_11(tmp4(5198), obj9);
+        items[1] = closure_1_11(tmp4(5230), obj9);
         const obj10 = { colors: ["rgba(255, 255, 255, 1)", "rgba(255, 255, 255, 0)"], start: { x: 0, y: 0 }, end: { x: 1, y: 1 }, style: streamPreviewShadow.streamPreviewGradient, pointerEvents: "none" };
-        items[2] = closure_1_11(tmp4(5198), obj10);
+        items[2] = closure_1_11(tmp4(5230), obj10);
         const obj11 = { style: streamPreviewShadow.streamPreviewBorder, pointerEvents: "none" };
         items[3] = closure_1_11(View, obj11);
         items[4] = closure_1_11(closure_16, {});
@@ -308,11 +308,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj6 = { style: tmp.streamPreview, source: null };
       const obj7 = { uri: previewUrl };
       obj6.source = obj7;
-      const items1 = [tmp7(tmp3(5802), obj6), , , , ];
+      const items1 = [tmp7(tmp3(5834), obj6), , , , ];
       const obj8 = { colors: ["rgba(0, 0, 0, 1)", "rgba(0, 0, 0, 0)"], start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: tmp.streamPreviewDarkGradient, pointerEvents: "none" };
-      items1[1] = tmp7(tmp3(5198), obj8);
+      items1[1] = tmp7(tmp3(5230), obj8);
       const obj9 = { colors: ["rgba(255, 255, 255, 1)", "rgba(255, 255, 255, 0)"], start: { x: 0, y: 0 }, end: { x: 1, y: 1 }, style: tmp.streamPreviewGradient, pointerEvents: "none" };
-      items1[2] = tmp7(tmp3(5198), obj9);
+      items1[2] = tmp7(tmp3(5230), obj9);
       const obj10 = { style: tmp.streamPreviewBorder, pointerEvents: "none" };
       items1[3] = tmp7(tmp8, obj10);
       items1[4] = tmp7(closure_16, {});

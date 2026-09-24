@@ -1,27 +1,27 @@
-// Module ID: 17313
-// Function ID: 17314
+// Module ID: 17323
+// Function ID: 17324
 // Name: IntegrationsSettingsWebhooksOverview
-// Dependencies: [5, 109, 19, 2045, 2100, 2067, 4399, 1376, 17314, 1078, 21, 4758, 580, 558, 568, 1488, 1401, 1181, 1119, 11, 4603, 5822, 504, 17315, 8878, 17316, 4471, 2112, 4754, 17318, 5903, 8876, 5186, 7286, 2]
+// Dependencies: [5, 109, 19, 2045, 2100, 2067, 4431, 1376, 17324, 1078, 21, 4790, 580, 558, 568, 1488, 1401, 1181, 1119, 11, 4635, 5854, 504, 17325, 8910, 17326, 4503, 2112, 4786, 17328, 5935, 8908, 5218, 7318, 2]
 
-// Module 17313 (IntegrationsSettingsWebhooksOverview)
+// Module 17323 (IntegrationsSettingsWebhooksOverview)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AvatarUtils from "AvatarUtils" /* 1401 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import NavScrim from "NavScrim" /* 7286 */;
-import Form from "Form" /* 8876 */;
-import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 17315 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import NavScrim from "NavScrim" /* 7318 */;
+import Form from "Form" /* 8908 */;
+import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 17325 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildChannelStore_mod from "GuildChannelStore" /* 2100 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 import UserStore from "UserStore" /* 1376 */;
-import WebhooksStore from "WebhooksStore" /* 17314 */;
+import WebhooksStore from "WebhooksStore" /* 17324 */;
 
 require = fn;
 let closure_3 = ["channelId", "user"];
@@ -32,7 +32,7 @@ const Constants = fn(1078);
 ({ HelpdeskArticles: closure_15, ChannelSettingsSections: closure_16, NON_USER_BOT_DISCRIMINATOR: closure_17, Permissions: closure_18, WebhookTypes: closure_19 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_20, Fragment: closure_21, jsxs: closure_22 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { form: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, content: null, hint: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.content = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
@@ -556,7 +556,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   }
   let dkHRkE = dependencyMap;
   const helpText = self.getHelpText();
-  const items = [closure_20(webhookType(4754).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
+  const items = [closure_20(webhookType(4786).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
   let tmp4Result = webhookType === constants3.INCOMING;
   if (tmp4Result) {
     let obj = { guild: self.props.guild, channel: self.props.channel };
@@ -564,7 +564,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   }
   items[1] = tmp4Result;
   if (0 === found.length) {
-    const obj2 = { Illustration: tmp5(17318).WebhookEmpty, title: null };
+    const obj2 = { Illustration: tmp5(17328).WebhookEmpty, title: null };
     if (webhookType === constants3.CHANNEL_FOLLOWER) {
       const intl2 = tmp5(1119).intl;
       dkHRkE = tmp5(1119).t.dkHRkE;
@@ -586,7 +586,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
         })
     };
     const obj4 = { children: null };
-    items[2] = tmp4(tmp5(5903).TableRowGroup, obj3);
+    items[2] = tmp4(tmp5(5935).TableRowGroup, obj3);
     obj4.children = items;
     return closure_22(closure_21, obj4);
   }
@@ -599,7 +599,7 @@ prototype["render"] = function render() {
   obj.children = items;
   return closure_1_22(guild, obj);
 };
-WebhooksOverview.contextType = fn(4471).ThemeContext;
+WebhooksOverview.contextType = fn(4503).ThemeContext;
 let closure_28 = [];
 ReactCompilerGating = fn(558);
 let obj5 = { paddingHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16 };

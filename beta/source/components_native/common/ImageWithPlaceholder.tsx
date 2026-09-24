@@ -1,12 +1,12 @@
-// Module ID: 9033
-// Function ID: 9034
+// Module ID: 9065
+// Function ID: 9066
 // Name: ImageWithPlaceholder
-// Dependencies: [109, 17, 21, 1368, 9034, 558, 568, 5802, 2]
+// Dependencies: [109, 17, 21, 1368, 9066, 558, 568, 5834, 2]
 
-// Module 9033 (ImageWithPlaceholder)
+// Module 9065 (ImageWithPlaceholder)
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import ImageWithThumbhashPlaceholderNativeComponentDefault from "ImageWithThumbhashPlaceholderNativeComponent" /* 9034 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import ImageWithThumbhashPlaceholderNativeComponentDefault from "ImageWithThumbhashPlaceholderNativeComponent" /* 9066 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 
 require = fn;

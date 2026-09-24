@@ -1,12 +1,12 @@
-// Module ID: 13400
-// Function ID: 13401
+// Module ID: 13436
+// Function ID: 13437
 // Name: useCardGridLayout
-// Dependencies: [7455, 558, 568, 1482, 2]
+// Dependencies: [7487, 558, 568, 1482, 2]
 
-// Module 13400 (useCardGridLayout)
+// Module 13436 (useCardGridLayout)
 import c from "c" /* 568 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import Constants from "Constants" /* 7455 */;
+import Constants from "Constants" /* 7487 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -81,7 +81,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const diff1 = num6 - 1;
     if (diff < bound1 * num6 + num5 * diff1) {
       if (cResult[5] !== num5) {
-        const obj3 = { columns: 1, cardWidth: "Array", rowWidth: "unicodeVersion", gap: num5 };
+        const obj3 = { columns: 1, cardWidth: "Array", rowWidth: "apply", gap: num5 };
         cResult[5] = num5;
         cResult[6] = obj3;
         let tmp15 = obj3;
@@ -169,7 +169,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const bound1 = Math.min(Math.max(tmp4, num), num2);
   const diff2 = num4 - 1;
   if (diff < bound1 * num4 + num3 * diff2) {
-    const obj2 = { columns: 1, cardWidth: "Array", rowWidth: "unicodeVersion", gap: num3 };
+    const obj2 = { columns: 1, cardWidth: "Array", rowWidth: "apply", gap: num3 };
     let obj3 = obj2;
   } else {
     obj3 = { columns: num4, cardWidth: bound1, rowWidth: bound1 * num4 + num3 * diff2, gap: num3 };

@@ -1,11 +1,11 @@
-// Module ID: 12140
-// Function ID: 12141
+// Module ID: 12176
+// Function ID: 12177
 // Name: SpoilerIcon
-// Dependencies: [109, 19, 21, 558, 568, 8733, 2]
+// Dependencies: [109, 19, 21, 558, 568, 8765, 2]
 
-// Module 12140 (SpoilerIcon)
+// Module 12176 (SpoilerIcon)
 import c from "c" /* 568 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -51,9 +51,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[5] !== str) {
     const obj2 = { fill: str, d: "M9.09091 12C9.09091 13.5786 10.3935 14.8571 12 14.8571C13.6065 14.8571 14.9091 13.5786 14.9091 12C14.9091 10.4214 13.6065 9.14286 12 9.14286C10.3935 9.14286 9.09091 10.4214 9.09091 12ZM13.3402 12C13.3402 12.789 12.689 13.4286 11.8857 13.4286C11.0823 13.4286 10.4311 12.789 10.4311 12C10.4311 11.211 11.0823 10.5714 11.8857 10.5714C12.689 10.5714 13.3402 11.211 13.3402 12Z" };
-    const tmp14 = React4(tmp(8733).Path, obj2);
+    const tmp14 = React4(tmp(8765).Path, obj2);
     const obj3 = { fill: str, d: "M4 2C2.89543 2 2 2.89543 2 4V20C2 21.1046 2.89543 22 4 22H20C21.1046 22 22 21.1046 22 20V4C22 2.89543 21.1046 2 20 2H4ZM4 12C4 12 7.38036 7 12 7C16.6196 7 20 12 20 12C20 12 16.6196 17 12 17C7.38036 17 4 12 4 12Z" };
-    const tmp15 = React4(tmp(8733).Path, obj3);
+    const tmp15 = React4(tmp(8765).Path, obj3);
     cResult[5] = str;
     cResult[6] = tmp14;
     cResult[7] = tmp15;

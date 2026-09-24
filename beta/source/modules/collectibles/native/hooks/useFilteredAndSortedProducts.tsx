@@ -1,17 +1,17 @@
-// Module ID: 15331
-// Function ID: 15332
+// Module ID: 15341
+// Function ID: 15342
 // Name: useFilteredAndSortedProducts
-// Dependencies: [19, 1376, 1080, 558, 568, 15332, 15333, 15334, 504, 4418, 7800, 2]
+// Dependencies: [19, 1376, 1080, 558, 568, 15342, 15343, 15344, 504, 4450, 7832, 2]
 
-// Module 15331 (useFilteredAndSortedProducts)
+// Module 15341 (useFilteredAndSortedProducts)
 import c from "c" /* 568 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
-import useBadBundleFilter from "useBadBundleFilter" /* 15332 */;
-import useAndroidUnsyncedFilter from "useAndroidUnsyncedFilter" /* 15333 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4450 */;
+import useBadBundleFilter from "useBadBundleFilter" /* 15342 */;
+import useAndroidUnsyncedFilter from "useAndroidUnsyncedFilter" /* 15343 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
-const usePurchasedProductsSort = tmp(15334);
+const usePurchasedProductsSort = tmp(15344);
 require = fn;
 const constants = fn(1080).CollectiblesMobileShopScreen;
 fn(558);

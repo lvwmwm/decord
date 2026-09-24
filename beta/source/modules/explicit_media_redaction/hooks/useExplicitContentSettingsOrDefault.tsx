@@ -1,13 +1,13 @@
-// Module ID: 15087
-// Function ID: 15088
+// Module ID: 15102
+// Function ID: 15103
 // Name: useExplicitContentSettingsOrDefault
-// Dependencies: [1224, 558, 568, 7542, 565, 7545, 2]
+// Dependencies: [1224, 558, 568, 7574, 565, 7577, 2]
 
-// Module 15087 (useExplicitContentSettingsOrDefault)
+// Module 15102 (useExplicitContentSettingsOrDefault)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7542 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7545 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7574 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7577 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
 
 require = fn;
@@ -42,11 +42,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] !== prop) {
     const obj2 = { setting: prop };
-    const explicitContentSettingWithDefaults = tmp(7542).resolveExplicitContentSettingWithDefaults(obj2);
+    const explicitContentSettingWithDefaults = tmp(7574).resolveExplicitContentSettingWithDefaults(obj2);
     cResult[2] = prop;
     cResult[3] = explicitContentSettingWithDefaults;
     let tmp9 = explicitContentSettingWithDefaults;
-    const tmpResult4 = tmp(7542);
+    const tmpResult4 = tmp(7574);
   } else {
     tmp9 = cResult[3];
   }
@@ -56,11 +56,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[4] !== prop1) {
     const obj3 = { setting: prop1, isDm: true };
-    const explicitContentSettingWithDefaults1 = tmp(7542).resolveExplicitContentSettingWithDefaults(obj3);
+    const explicitContentSettingWithDefaults1 = tmp(7574).resolveExplicitContentSettingWithDefaults(obj3);
     cResult[4] = prop1;
     cResult[5] = explicitContentSettingWithDefaults1;
     let tmp12 = explicitContentSettingWithDefaults1;
-    const tmpResult5 = tmp(7542);
+    const tmpResult5 = tmp(7574);
   } else {
     tmp12 = cResult[5];
   }
@@ -70,11 +70,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[6] !== prop2) {
     const obj4 = { setting: prop2, isDm: true, isFriend: true };
-    const explicitContentSettingWithDefaults2 = tmp(7542).resolveExplicitContentSettingWithDefaults(obj4);
+    const explicitContentSettingWithDefaults2 = tmp(7574).resolveExplicitContentSettingWithDefaults(obj4);
     cResult[6] = prop2;
     cResult[7] = explicitContentSettingWithDefaults2;
     let tmp15 = explicitContentSettingWithDefaults2;
-    const tmpResult6 = tmp(7542);
+    const tmpResult6 = tmp(7574);
   } else {
     tmp15 = cResult[7];
   }
@@ -156,11 +156,11 @@ export const useGoreContentSettingOrDefault = ReactCompilerGating.isReactCompile
   }
   if (cResult[2] !== goreContentGuilds) {
     const obj2 = { setting: goreContentGuilds };
-    const goreSettingWithDefaults = tmp(7545).resolveGoreSettingWithDefaults(obj2);
+    const goreSettingWithDefaults = tmp(7577).resolveGoreSettingWithDefaults(obj2);
     cResult[2] = goreContentGuilds;
     cResult[3] = goreSettingWithDefaults;
     let tmp9 = goreSettingWithDefaults;
-    const tmpResult4 = tmp(7545);
+    const tmpResult4 = tmp(7577);
   } else {
     tmp9 = cResult[3];
   }
@@ -170,11 +170,11 @@ export const useGoreContentSettingOrDefault = ReactCompilerGating.isReactCompile
   }
   if (cResult[4] !== prop) {
     const obj3 = { setting: prop, isDm: true };
-    const goreSettingWithDefaults1 = tmp(7545).resolveGoreSettingWithDefaults(obj3);
+    const goreSettingWithDefaults1 = tmp(7577).resolveGoreSettingWithDefaults(obj3);
     cResult[4] = prop;
     cResult[5] = goreSettingWithDefaults1;
     let tmp12 = goreSettingWithDefaults1;
-    const tmpResult5 = tmp(7545);
+    const tmpResult5 = tmp(7577);
   } else {
     tmp12 = cResult[5];
   }
@@ -184,11 +184,11 @@ export const useGoreContentSettingOrDefault = ReactCompilerGating.isReactCompile
   }
   if (cResult[6] !== goreContentFriendDm) {
     const obj4 = { setting: goreContentFriendDm, isDm: true, isFriend: true };
-    const goreSettingWithDefaults2 = tmp(7545).resolveGoreSettingWithDefaults(obj4);
+    const goreSettingWithDefaults2 = tmp(7577).resolveGoreSettingWithDefaults(obj4);
     cResult[6] = goreContentFriendDm;
     cResult[7] = goreSettingWithDefaults2;
     let tmp15 = goreSettingWithDefaults2;
-    const tmpResult6 = tmp(7545);
+    const tmpResult6 = tmp(7577);
   } else {
     tmp15 = cResult[7];
   }

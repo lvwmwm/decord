@@ -1,17 +1,17 @@
-// Module ID: 17464
-// Function ID: 17465
+// Module ID: 17474
+// Function ID: 17475
 // Name: MinimizeActivityButton
-// Dependencies: [19, 17, 9313, 21, 4758, 558, 568, 1119, 5188, 11409, 8178, 2]
+// Dependencies: [19, 17, 9345, 21, 4790, 558, 568, 1119, 5220, 11445, 8210, 2]
 
-// Module 17464 (MinimizeActivityButton)
-import _modDef11409 from "module_11409" /* 11409 */;
+// Module 17474 (MinimizeActivityButton)
+import _modDef11445 from "module_11445" /* 11445 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
-const ActivityPanelModes = fn(9313).ActivityPanelModes;
+const ActivityPanelModes = fn(9345).ActivityPanelModes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ buttonParent: { flexShrink: 1 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -59,8 +59,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         cResult[8] = tmp22;
         tmp19 = tmp22;
       }
-      const obj3 = { icon: _modDef11409, accessibilityLabel: tmp13, onPress: tmp4, text: activityName, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true };
-      const tmp18 = jsx(tmp(5188).Button, { icon: _modDef11409, accessibilityLabel: tmp13, onPress: tmp4, text: activityName, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true });
+      const obj3 = { icon: _modDef11445, accessibilityLabel: tmp13, onPress: tmp4, text: activityName, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true };
+      const tmp18 = jsx(tmp(5220).Button, { icon: _modDef11445, accessibilityLabel: tmp13, onPress: tmp4, text: activityName, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true });
       cResult[3] = activityName;
       cResult[4] = tmp4;
       cResult[5] = tmp18;
@@ -76,8 +76,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     tmp6 = cResult[9];
   }
   if (cResult[10] !== tmp4) {
-    const obj4 = { icon: _modDef11409, accessibilityLabel: tmp6, onPress: tmp4, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1 };
-    const tmp11 = jsx(tmp(8178).IconButton, { icon: _modDef11409, accessibilityLabel: tmp6, onPress: tmp4, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1 });
+    const obj4 = { icon: _modDef11445, accessibilityLabel: tmp6, onPress: tmp4, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1 };
+    const tmp11 = jsx(tmp(8210).IconButton, { icon: _modDef11445, accessibilityLabel: tmp6, onPress: tmp4, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1 });
     cResult[10] = tmp4;
     cResult[11] = tmp11;
     let tmp8 = tmp11;
@@ -94,19 +94,19 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   if (undefined !== activityName) {
     if ("" !== activityName) {
       const obj2 = { style: tmp2.buttonParent, children: null };
-      const obj3 = { icon: _modDef11409, accessibilityLabel: null, onPress: null, text: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true };
+      const obj3 = { icon: _modDef11445, accessibilityLabel: null, onPress: null, text: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true };
       const intl2 = setMode(1119).intl;
       obj3.accessibilityLabel = intl2.string(setMode(1119).t.brPQ5U);
       obj3.onPress = callback;
       obj3.text = activityName;
-      obj2.children = jsx(setMode(5188).Button, { icon: _modDef11409, accessibilityLabel: null, onPress: null, text: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true });
+      obj2.children = jsx(setMode(5220).Button, { icon: _modDef11445, accessibilityLabel: null, onPress: null, text: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true });
       let tmp3 = <View style={tmp2.buttonParent}>{null}</View>;
     }
     return tmp3;
   }
-  const obj = { icon: _modDef11409, accessibilityLabel: null, onPress: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1 };
+  const obj = { icon: _modDef11445, accessibilityLabel: null, onPress: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1 };
   const intl = setMode(1119).intl;
   obj.accessibilityLabel = intl.string(setMode(1119).t.brPQ5U);
   obj.onPress = callback;
-  tmp3 = jsx(setMode(8178).IconButton, { icon: _modDef11409, accessibilityLabel: null, onPress: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1 });
+  tmp3 = jsx(setMode(8210).IconButton, { icon: _modDef11445, accessibilityLabel: null, onPress: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1 });
 }));

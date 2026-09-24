@@ -1,31 +1,31 @@
-// Module ID: 16307
-// Function ID: 16308
+// Module ID: 16317
+// Function ID: 16318
 // Name: RegisterPasswordInput
-// Dependencies: [109, 32, 19, 7184, 16280, 21, 4758, 580, 4497, 558, 568, 16304, 1119, 4754, 16298, 7198, 4975, 504, 4467, 7209, 7211, 6846, 2]
+// Dependencies: [109, 32, 19, 7216, 16290, 21, 4790, 580, 4529, 558, 568, 16314, 1119, 4786, 16308, 7230, 5007, 504, 4499, 7241, 7243, 6878, 2]
 
-// Module 16307 (RegisterPasswordInput)
+// Module 16317 (RegisterPasswordInput)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 16298 */;
-import usePasswordScore from "usePasswordScore" /* 16304 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 16308 */;
+import usePasswordScore from "usePasswordScore" /* 16314 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import PhoneStore from "PhoneStore" /* 7184 */;
+import PhoneStore from "PhoneStore" /* 7216 */;
 
 const require = globalThis.__r;
 
-const getErrorDefault = tmp7(7198);
+const getErrorDefault = tmp7(7230);
 require = fn;
 let closure_3 = ["password"];
 let closure_4 = ["password"];
-const RegistrationUIStore = fn(16280);
+const RegistrationUIStore = fn(16290);
 ({ setRegistrationErrors: closure_9, useRegistrationUIStore: c10 } = RegistrationUIStore);
 const jsxProd = fn(21);
 ({ jsxs: closure_11, jsx: closure_12, Fragment: map1 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { weak: { color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL }, medium: null, strong: null, passwordStrength: null, inputHint: null };
 let obj3 = { color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
 obj.medium = { color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
@@ -35,15 +35,15 @@ obj.passwordStrength = { marginTop: 4, marginBottom: 4 };
 obj.inputHint = { width: "100%" };
 let closure_14 = createStyles.createStyles(obj);
 let obj6 = { entering: null, exiting: null };
-const FadeIn = fn(4497).FadeIn;
+const FadeIn = fn(4529).FadeIn;
 obj6.entering = FadeIn.duration(300);
-const FadeOut = fn(4497).FadeOut;
+const FadeOut = fn(4529).FadeOut;
 obj6.exiting = FadeOut.duration(300);
 const obj7 = { layout: null };
-const LinearTransition = fn(4497).LinearTransition;
-const Easing = fn(4497).Easing;
+const LinearTransition = fn(4529).LinearTransition;
+const Easing = fn(4529).Easing;
 const obj5 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE };
-obj7.layout = LinearTransition.easing(Easing.inOut(fn(4497).Easing.quad)).duration(300);
+obj7.layout = LinearTransition.easing(Easing.inOut(fn(4529).Easing.quad)).duration(300);
 let ReactCompilerGating = fn(558);
 let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((passwordScore) => {
   const cResult = c.c(10);
@@ -54,7 +54,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((passwordScore)
     if (isPasswordFocused) {
       if (0 !== password.length) {
         if (null == passwordError) {
-          if (passwordScore <= tmp(16304).PasswordScore.WEAK) {
+          if (passwordScore <= tmp(16314).PasswordScore.WEAK) {
             const _Symbol2 = Symbol;
             if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
               const intl3 = tmp(1119).intl;
@@ -66,7 +66,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((passwordScore)
             }
             const weak = tmp4.weak;
           } else {
-            if (passwordScore === tmp(16304).PasswordScore.MEDIUM) {
+            if (passwordScore === tmp(16314).PasswordScore.MEDIUM) {
               const _Symbol = Symbol;
               if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
                 const intl2 = tmp(1119).intl;
@@ -80,7 +80,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((passwordScore)
               let str = tmp8;
             } else {
               str = "";
-              if (passwordScore === tmp(16304).PasswordScore.STRONG) {
+              if (passwordScore === tmp(16314).PasswordScore.STRONG) {
                 const _Symbol4 = Symbol;
                 if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
                   const intl = tmp(1119).intl;
@@ -121,7 +121,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((passwordScore)
               obj2.animated = true;
               const items = [tmp16, ": ", str];
               obj2.children = items;
-              const tmp26 = closure_1_11(tmp(4754).Text, obj2);
+              const tmp26 = closure_1_11(tmp(4786).Text, obj2);
               cResult[7] = str;
               cResult[8] = tmp14;
               cResult[9] = tmp26;
@@ -150,13 +150,13 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((passwordScore)
             const intl2 = tmp9(1119).intl;
             let str = intl2.string(tmp9(1119).t["w/8TuV"]);
             let strong = tmp.weak;
-          } else if (passwordScore === tmp9(16304).PasswordScore.MEDIUM) {
+          } else if (passwordScore === tmp9(16314).PasswordScore.MEDIUM) {
             const intl = tmp9(1119).intl;
             str = intl.string(tmp9(1119).t["2fmTpT"]);
             strong = tmp.medium;
           } else {
             str = "";
-            if (passwordScore === tmp9(16304).PasswordScore.STRONG) {
+            if (passwordScore === tmp9(16314).PasswordScore.STRONG) {
               const intl4 = tmp9(1119).intl;
               str = intl4.string(tmp9(1119).t.Xraqqc);
               strong = tmp.strong;
@@ -180,7 +180,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((passwordScore)
   return null;
 });
 ReactCompilerGating = fn(558);
-const easingResult = LinearTransition.easing(Easing.inOut(fn(4497).Easing.quad));
+const easingResult = LinearTransition.easing(Easing.inOut(fn(4529).Easing.quad));
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/components/RegisterPasswordInput.tsx");
 
@@ -520,7 +520,7 @@ export const RegisterPasswordInput = noop.forwardRef(ReactCompilerGating.isReact
           }
         }
         const obj4 = { ref: tmp30, textContentType: "newPassword", autoComplete: "new-password", onChange: tmp17, value: password, label: tmp32, accessibilityHint: tmp33, secureTextEntry: tmp36, returnKeyType, autoCapitalize: "none", onSubmitEditing, onFocus: tmp23, onBlur: tmp25, trailingIcon: tmp37, trailingPressableProps: tmp43, errorMessage: tmp15, status: undefined };
-        const tmp48 = closure_12(tmp(6846).TextInput, obj4);
+        const tmp48 = closure_12(tmp(6878).TextInput, obj4);
         cResult[24] = tmp17;
         cResult[25] = onSubmitEditing;
         cResult[26] = password;

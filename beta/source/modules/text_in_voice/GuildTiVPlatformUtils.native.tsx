@@ -1,9 +1,9 @@
-// Module ID: 8679
-// Function ID: 8680
+// Module ID: 8711
+// Function ID: 8712
 // Name: GuildTiVPlatformUtils
 // Dependencies: [1119, 2]
 
-// Module 8679 (GuildTiVPlatformUtils)
+// Module 8711 (GuildTiVPlatformUtils)
 import util from "util" /* 1119 */;
 import size from "module_2" /* 2 */;
 

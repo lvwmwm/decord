@@ -1,9 +1,9 @@
-// Module ID: 16186
-// Function ID: 16187
+// Module ID: 16196
+// Function ID: 16197
 // Name: DefultGuildsRestrictedSetting
 // Dependencies: [558, 2023, 2]
 
-// Module 16186 (DefultGuildsRestrictedSetting)
+// Module 16196 (DefultGuildsRestrictedSetting)
 import UserSettings from "UserSettings" /* 2023 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

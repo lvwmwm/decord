@@ -1,12 +1,12 @@
-// Module ID: 11543
-// Function ID: 11544
+// Module ID: 11579
+// Function ID: 11580
 // Name: ThreadNotificationSettingsBottomSheet
-// Dependencies: [1118, 21, 558, 568, 11544, 7396, 1119, 8012, 5900, 7449, 5901, 2]
+// Dependencies: [1118, 21, 558, 568, 11580, 7428, 1119, 8044, 5932, 7481, 5933, 2]
 
-// Module 11543 (ThreadNotificationSettingsBottomSheet)
+// Module 11579 (ThreadNotificationSettingsBottomSheet)
 import jsxProd from "jsxProd" /* 21 */;
 import ThreadConstants from "ThreadConstants" /* 1118 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8012 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8044 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,12 +18,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const cResult = channel(568).c(8);
   channel = channel.channel;
   const obj = channel(568);
-  const threadNotificationSetting = channel(11544).useThreadNotificationSetting(channel);
+  const threadNotificationSetting = channel(11580).useThreadNotificationSetting(channel);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { title: null };
     const intl = tmp(1119).intl;
     obj3.title = intl.string(tmp(1119).t.h850Ss);
-    const tmp7 = jsx(tmp(7396).BottomSheetTitleHeader, { title: null });
+    const tmp7 = jsx(tmp(7428).BottomSheetTitleHeader, { title: null });
     cResult[0] = tmp7;
     let first = tmp7;
   } else {
@@ -61,20 +61,20 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     return tmp14;
   }
-  const obj2 = channel(11544);
-  const tmp15 = jsx(channel(7449).ActionSheet, { header: first, children: jsx(channel(5901).TableRadioGroup, { hasIcons: false, value: threadNotificationSetting, onChange: tmp8, accessibilityLabel: tmp9, children: tmp10 }) });
+  const obj2 = channel(11580);
+  const tmp15 = jsx(channel(7481).ActionSheet, { header: first, children: jsx(channel(5933).TableRadioGroup, { hasIcons: false, value: threadNotificationSetting, onChange: tmp8, accessibilityLabel: tmp9, children: tmp10 }) });
   cResult[5] = threadNotificationSetting;
   cResult[6] = tmp8;
   cResult[7] = tmp15;
   tmp14 = tmp15;
 }) : ((channel) => {
   channel = channel.channel;
-  const threadNotificationSetting = channel(11544).useThreadNotificationSetting(channel);
+  const threadNotificationSetting = channel(11580).useThreadNotificationSetting(channel);
   const obj2 = { header: null, children: null };
   const obj3 = { title: null };
   const intl = channel(1119).intl;
   obj3.title = intl.string(channel(1119).t.h850Ss);
-  obj2.header = jsx(channel(7396).BottomSheetTitleHeader, { title: null });
+  obj2.header = jsx(channel(7428).BottomSheetTitleHeader, { title: null });
   const obj4 = {
     hasIcons: false,
     value: threadNotificationSetting,
@@ -86,12 +86,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   };
   const intl2 = channel(1119).intl;
   obj4.accessibilityLabel = intl2.string(channel(1119).t.h850Ss);
-  const obj = channel(11544);
+  const obj = channel(11580);
   obj4.children = closure_3().map((label) => {
     const setting = label.setting;
     return jsx(channel(dependencyMap[8]).TableRadioRow, { value: setting, label: label.label }, "" + setting);
   });
-  obj2.children = jsx(channel(5901).TableRadioGroup, {
+  obj2.children = jsx(channel(5933).TableRadioGroup, {
     hasIcons: false,
     value: threadNotificationSetting,
     onChange(flags) {
@@ -100,5 +100,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     accessibilityLabel: null,
     children: null
   });
-  return jsx(channel(7449).ActionSheet, { header: null, children: null });
+  return jsx(channel(7481).ActionSheet, { header: null, children: null });
 });

@@ -1,17 +1,17 @@
-// Module ID: 12662
-// Function ID: 12663
+// Module ID: 12698
+// Function ID: 12699
 // Name: guildTheme
-// Dependencies: [4647, 4648, 558, 568, 504, 4651, 12663, 4687, 2]
+// Dependencies: [4679, 4680, 558, 568, 504, 4683, 12699, 4719, 2]
 // Exports: shouldShowGuildThemeRollback
 
-// Module 12662 (guildTheme)
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12663 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4647 */;
+// Module 12698 (guildTheme)
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12699 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4679 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const PowerupActiveStatusType = fn(4648).PowerupActiveStatusType;
+const PowerupActiveStatusType = fn(4680).PowerupActiveStatusType;
 const ReactCompilerGating = fn(558);
 function shouldShowGuildThemeRollback(arg0, storeRemovalDate, arg2) {
   let tmp = arg0;
@@ -54,7 +54,7 @@ export const useShouldShowGuildThemeRollback = ReactCompilerGating.isReactCompil
   const stateFromStores = require("initialize").useStateFromStores(first, tmp6);
   let tmp8;
   if (stateFromStores != null) {
-    tmp8 = stateFromStores.allPowerups[tmp(undefined, 4651).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+    tmp8 = stateFromStores.allPowerups[tmp(undefined, 4683).GUILD_POWERUP_GUILD_THEME_SKU_ID];
   }
   const tmp9 = usePowerupActiveStatusDefault(arg0, tmp8);
   const tmpResult = require("initialize");
@@ -88,7 +88,7 @@ export const useShouldShowGuildThemeRollback = ReactCompilerGating.isReactCompil
   const stateFromStores = require("initialize").useStateFromStores(items, () => GuildPowerupsStore.getStateForGuild(closure_0));
   let tmp4;
   if (stateFromStores != null) {
-    tmp4 = stateFromStores.allPowerups[tmp(undefined, 4651).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+    tmp4 = stateFromStores.allPowerups[tmp(undefined, 4683).GUILD_POWERUP_GUILD_THEME_SKU_ID];
   }
   const obj = require("initialize");
   const tmp5 = usePowerupActiveStatusDefault(arg0, tmp4);

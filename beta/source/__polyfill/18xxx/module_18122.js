@@ -1,19 +1,9 @@
 // Module ID: 18122
 // Function ID: 18123
-// Dependencies: [4880, 18123, 18127]
+// Dependencies: [1125]
 
 // Module 18122
-import arrayReduce from "arrayReduce" /* 4880 */;
-import words from "words" /* 18123 */;
-import deburr from "deburr" /* 18127 */;
+import registerAsset from "module_1125" /* 1125 */;
 
-let closure_2 = RegExp("['\u2019]", "g");
 
-export default function createCompounder(arg0) {
-  closure_0 = arg0;
-  return (arg0) => {
-    const tmp = arrayReduce;
-    const tmp2 = words;
-    return tmp(tmp2(deburr(arg0).replace(closure_2, "")), closure_0, "");
-  };
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/guild_settings/community_settings", width: 88, height: 80, scales: [2, 3], hash: "0b8a6fa235bbde823695fe5cdeccf7e4", name: "channel_setup_light", type: "png" });

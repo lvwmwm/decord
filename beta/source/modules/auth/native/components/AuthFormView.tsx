@@ -1,13 +1,13 @@
-// Module ID: 7213
-// Function ID: 7214
+// Module ID: 7245
+// Function ID: 7246
 // Name: AuthFormView
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 7185, 7214, 7215, 7216, 7219, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 7217, 7246, 7247, 7248, 7251, 2]
 
-// Module 7213 (AuthFormView)
+// Module 7245 (AuthFormView)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7185 */;
-import WideAuthScrollContext from "WideAuthScrollContext" /* 7214 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7217 */;
+import WideAuthScrollContext from "WideAuthScrollContext" /* 7246 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles((arg0) => {
   const obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, flex: { flex: 1 }, content: null, subHeader: null };
   let num = 0;
@@ -84,7 +84,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp35 = null;
         if (null != headerText) {
           const obj3 = { children: headerText };
-          tmp35 = timestampProducer(tmp3(7215), obj3);
+          tmp35 = timestampProducer(tmp3(7247), obj3);
         }
         cResult[6] = headerText;
         cResult[7] = tmp35;
@@ -145,7 +145,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const _Symbol = Symbol;
         if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp13 = timestampProducer(tmp3(7219), {});
+          const tmp13 = timestampProducer(tmp3(7251), {});
           cResult[24] = tmp13;
           let tmp11 = tmp13;
         } else {
@@ -168,7 +168,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               let tmp17 = null;
               if (null != headerText) {
                 const obj7 = { children: headerText };
-                tmp17 = timestampProducer(tmp3(7215), obj7);
+                tmp17 = timestampProducer(tmp3(7247), obj7);
               }
               cResult[30] = headerText;
               cResult[31] = tmp17;
@@ -241,7 +241,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp15 = items3;
       }
       const obj11 = { backgroundImageSource, backgroundImageCover };
-      const tmp9 = timestampProducer(tmp3(7216), obj11);
+      const tmp9 = timestampProducer(tmp3(7248), obj11);
       cResult[21] = backgroundImageCover;
       cResult[22] = backgroundImageSource;
       cResult[23] = tmp9;
@@ -279,7 +279,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp15 = null;
     if (null != headerText) {
       const obj3 = { children: headerText };
-      tmp15 = timestampProducer(tmp(7215), obj3);
+      tmp15 = timestampProducer(tmp(7247), obj3);
     }
     const items1 = [tmp15, , ];
     let tmp17 = null;
@@ -297,7 +297,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     ({ container: arr[0], flex: arr[1] } = tmp4);
     obj.style = items2;
     const obj5 = { backgroundImageSource, backgroundImageCover };
-    const items3 = [timestampProducer(tmp(7216), obj5), timestampProducer(tmp(7219), {}), ];
+    const items3 = [timestampProducer(tmp(7248), obj5), timestampProducer(tmp(7251), {}), ];
     const obj6 = { contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, style: tmp4.flex, contentContainerStyle: null, children: null };
     const items4 = [, , ];
     ({ content: arr3[0], flex: arr3[1] } = tmp4);
@@ -306,7 +306,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp7Result = null;
     if (null != headerText) {
       const obj7 = { children: headerText };
-      tmp7Result = tmp7(tmp(7215), obj7);
+      tmp7Result = tmp7(tmp(7247), obj7);
     }
     const items5 = [tmp7Result, , ];
     let tmp7Result2 = null;

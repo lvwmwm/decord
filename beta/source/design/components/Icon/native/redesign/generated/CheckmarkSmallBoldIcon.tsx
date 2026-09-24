@@ -1,13 +1,13 @@
-// Module ID: 9549
-// Function ID: 9550
+// Module ID: 9581
+// Function ID: 9582
 // Name: CheckmarkSmallBoldIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 5821, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 5853, 4493, 2]
 
-// Module 9549 (CheckmarkSmallBoldIcon)
+// Module 9581 (CheckmarkSmallBoldIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod5821 from "module_5821" /* 5821 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod5853 from "module_5853" /* 5853 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const CheckmarkSmallBoldIcon = ReactCompilerGating.isReactCompilerEnabled
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(5821);
+    const tmpResult = tmp(5853);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const CheckmarkSmallBoldIcon = ReactCompilerGating.isReactCompilerEnabled
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5821, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5853, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

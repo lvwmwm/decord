@@ -1,17 +1,17 @@
-// Module ID: 9675
-// Function ID: 9676
+// Module ID: 9707
+// Function ID: 9708
 // Name: ScreenshareTile
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 9676, 1181, 9677, 1119, 4754, 6891, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 9708, 1181, 9709, 1119, 4786, 6923, 2]
 
-// Module 9675 (ScreenshareTile)
+// Module 9707 (ScreenshareTile)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 9676 */;
-import _modDef9677 from "module_9677" /* 9677 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6923 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 9708 */;
+import _modDef9709 from "module_9709" /* 9709 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 const NOOP = fn(1078).NOOP;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BLACK, overflow: "hidden", flex: 1 }, image: { marginBottom: 8, width: 60, height: 40 }, label: { lineHeight: 18, textAlign: "center" }, liveContainer: { position: "absolute", top: 8, right: 8, zIndex: 2 } };
 let closure_8 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -61,7 +61,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp12 = cResult[5];
     }
     if (cResult[6] !== tmp4.image) {
-      const obj3 = { source: tmp6(9677), style: tmp4.image, resizeMode: "contain" };
+      const obj3 = { source: tmp6(9709), style: tmp4.image, resizeMode: "contain" };
       const tmp19 = timestampProducer(React4, obj3);
       cResult[6] = tmp4.image;
       cResult[7] = tmp19;
@@ -80,7 +80,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[9] !== tmp4.label) {
       const obj4 = { style: tmp4.label, variant: "text-xs/bold", color: "text-overlay-light", children: tmp20 };
-      const tmp24 = timestampProducer(tmp(4754).Text, obj4);
+      const tmp24 = timestampProducer(tmp(4786).Text, obj4);
       cResult[9] = tmp4.label;
       cResult[10] = tmp24;
       let tmp22 = tmp24;
@@ -100,7 +100,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             return tmp29;
           }
           const obj5 = { gesture: tmp7, children: tmp25 };
-          const tmp31 = timestampProducer(tmp(6891).GestureDetector, obj5);
+          const tmp31 = timestampProducer(tmp(6923).GestureDetector, obj5);
           cResult[16] = tmp7;
           cResult[17] = tmp25;
           cResult[18] = tmp31;
@@ -140,7 +140,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp2 = useParticipantTileTapGestureDefault({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap });
   const items = [timestampProducer(React3, { style: tmp.liveContainer, children: timestampProducer(native.LiveTag, {}) }), , ];
   const obj3 = { style: tmp.liveContainer, children: timestampProducer(native.LiveTag, {}) };
-  items[1] = timestampProducer(React4, { source: _modDef9677, style: tmp.image, resizeMode: "contain" });
+  items[1] = timestampProducer(React4, { source: _modDef9709, style: tmp.image, resizeMode: "contain" });
   const obj5 = { style: tmp.label, variant: "text-xs/bold", color: "text-overlay-light", children: null };
   const intl = util.intl;
   obj5.children = intl.string(util.t.G84gtR);

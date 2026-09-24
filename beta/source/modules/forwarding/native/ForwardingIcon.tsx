@@ -1,12 +1,12 @@
-// Module ID: 11814
-// Function ID: 11815
+// Module ID: 11850
+// Function ID: 11851
 // Name: ForwardingIcon
-// Dependencies: [21, 558, 568, 11815, 2]
+// Dependencies: [21, 558, 568, 11851, 2]
 
-// Module 11814 (ForwardingIcon)
+// Module 11850 (ForwardingIcon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import ArrowAngleRightUpIcon from "ArrowAngleRightUpIcon" /* 11815 */;
+import ArrowAngleRightUpIcon from "ArrowAngleRightUpIcon" /* 11851 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

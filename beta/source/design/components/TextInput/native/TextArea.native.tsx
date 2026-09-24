@@ -1,14 +1,14 @@
-// Module ID: 7332
-// Function ID: 7333
+// Module ID: 7364
+// Function ID: 7365
 // Name: TextArea
-// Dependencies: [109, 19, 21, 558, 568, 4480, 6847, 7333, 7174, 2]
+// Dependencies: [109, 19, 21, 558, 568, 4512, 6879, 7365, 7206, 2]
 
-// Module 7332 (TextArea)
+// Module 7364 (TextArea)
 import c from "c" /* 568 */;
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4480 */;
-import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6847 */;
-import Input from "Input" /* 7174 */;
-import TextAreaField from "TextAreaField" /* 7333 */;
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4512 */;
+import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6879 */;
+import Input from "Input" /* 7206 */;
+import TextAreaField from "TextAreaField" /* 7365 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -61,7 +61,7 @@ export const TextArea = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabl
           const merged = Object.assign(required);
           obj3.labelId = tmp7;
           obj3.children = tmp14;
-          const tmp28 = jsx(tmp(7174).Input, {});
+          const tmp28 = jsx(tmp(7206).Input, {});
           cResult[12] = tmp7;
           cResult[13] = required;
           cResult[14] = tmp14;
@@ -74,7 +74,7 @@ export const TextArea = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabl
     const merged1 = Object.assign(required);
     const merged2 = Object.assign(tmp6);
     obj4.accessibilityLabel = tmp11;
-    const tmp22 = jsx(tmp(7333).TextAreaField, { ref });
+    const tmp22 = jsx(tmp(7365).TextAreaField, { ref });
     cResult[7] = tmp6;
     cResult[8] = required;
     cResult[9] = ref;

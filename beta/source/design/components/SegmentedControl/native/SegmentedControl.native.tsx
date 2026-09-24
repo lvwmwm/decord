@@ -1,12 +1,12 @@
-// Module ID: 9869
-// Function ID: 9870
+// Module ID: 9901
+// Function ID: 9902
 // Name: SegmentedControl
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4462, 4497, 5187, 9870, 6891, 1368, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4494, 4529, 5219, 9902, 6923, 1368, 2]
 
-// Module 9869 (SegmentedControl)
+// Module 9901 (SegmentedControl)
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import spring from "spring" /* 5187 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import spring from "spring" /* 5219 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
@@ -19,7 +19,7 @@ const jsxProd = fn(21);
 let c8 = 0.04;
 let c9 = 0.9;
 let closure_10 = { mass: 0.3, damping: 13, stiffness: 100, restDisplacementThreshold: 0.001, overshootClamping: true };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_11 = createStyles.createStyles((borderRadius, paddingVertical) => {
   const obj = { scrollContentContainer: { flexGrow: 1 }, controlsContainer: { backgroundColor: nativeDefault.colors.MOBILE_SEGMENTED_CONTROL_BACKGROUND, borderRadius: borderRadius + paddingVertical, paddingVertical, display: "flex", flexDirection: "row", alignItems: "center" }, indicatorContainer: { position: "absolute", width: "100%", height: "100%", borderRadius, flexDirection: "row" }, indicator: null };
   const obj2 = { backgroundColor: nativeDefault.colors.MOBILE_SEGMENTED_CONTROL_BACKGROUND, borderRadius: borderRadius + paddingVertical, paddingVertical, display: "flex", flexDirection: "row", alignItems: "center" };

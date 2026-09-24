@@ -1,18 +1,18 @@
-// Module ID: 15430
-// Function ID: 15431
+// Module ID: 15440
+// Function ID: 15441
 // Name: QuestEmbedPreview
-// Dependencies: [19, 4410, 1376, 1078, 21, 558, 568, 8195, 504, 4746, 10580, 1119, 15429, 8928, 2]
+// Dependencies: [19, 4442, 1376, 1078, 21, 558, 568, 8227, 504, 4778, 10616, 1119, 15439, 8960, 2]
 
-// Module 15430 (QuestEmbedPreview)
+// Module 15440 (QuestEmbedPreview)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import CodedLink from "CodedLink" /* 4746 */;
-import RowGeneratorDefault from "RowGenerator" /* 8195 */;
-import ChatItemDefault from "ChatItem" /* 8928 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 10580 */;
-import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 15429 */;
+import CodedLink from "CodedLink" /* 4778 */;
+import RowGeneratorDefault from "RowGenerator" /* 8227 */;
+import ChatItemDefault from "ChatItem" /* 8960 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 10616 */;
+import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 15439 */;
 import noop from "module_19" /* 19 */;
-import MessageRecord from "MessageRecord" /* 4410 */;
+import MessageRecord from "MessageRecord" /* 4442 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -63,14 +63,14 @@ export const QuestEmbedPreview = ReactCompilerGating.isReactCompilerEnabled() ? 
       obj3.attachments = [];
       obj3.embeds = [];
       obj3.reactions = [];
-      const obj4 = { type: tmp(4746).CodedLinkType.QUESTS_EMBED, code: questId, url: tmp(10580).getQuestUrl(questId) };
+      const obj4 = { type: tmp(4778).CodedLinkType.QUESTS_EMBED, code: questId, url: tmp(10616).getQuestUrl(questId) };
       const items1 = [obj4];
       obj3.codedLinks = items1;
       const tmp25 = new MessageRecord(obj3);
       cResult[3] = stateFromStores;
       cResult[4] = questId;
       cResult[5] = tmp25;
-      const tmpResult2 = tmp(10580);
+      const tmpResult2 = tmp(10616);
     }
   }
   if (null == tmp14) {
@@ -133,9 +133,9 @@ export const QuestEmbedPreview = ReactCompilerGating.isReactCompilerEnabled() ? 
     const intl = tmp2(1119).intl;
     obj2.title = intl.string(tmp2(1119).t["habP/M"]);
     let obj3 = { rowGenerator: memo, message: memo1, horizontalOffset: 0, pointerEvents: "none" };
-    obj2.children = jsx(stateFromStores(8928), { rowGenerator: memo, message: memo1, horizontalOffset: 0, pointerEvents: "none" });
-    tmp6 = jsx(stateFromStores(15429), { title: null, children: null });
-    const tmp9 = stateFromStores(15429);
+    obj2.children = jsx(stateFromStores(8960), { rowGenerator: memo, message: memo1, horizontalOffset: 0, pointerEvents: "none" });
+    tmp6 = jsx(stateFromStores(15439), { title: null, children: null });
+    const tmp9 = stateFromStores(15439);
   }
   return tmp6;
 });

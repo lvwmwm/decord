@@ -1,20 +1,20 @@
-// Module ID: 14905
-// Function ID: 14906
+// Module ID: 14943
+// Function ID: 14944
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 2067, 8207, 21, 4758, 580, 504, 14906, 8439, 8438, 1119, 1368, 4754, 14883, 4725, 14907, 1984, 5799, 9980, 2]
+// Dependencies: [19, 2067, 8239, 21, 4790, 580, 504, 14944, 8471, 8470, 1119, 1368, 4786, 14921, 4757, 14945, 1984, 5831, 10012, 2]
 // Exports: default
 
-// Module 14905 (UserProfilePrimaryGuildEditButton)
+// Module 14943 (UserProfilePrimaryGuildEditButton)
 import nativeDefault from "native" /* 580 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
-const GuildTagBadgeSize = fn(8207).GuildTagBadgeSize;
+const GuildTagBadgeSize = fn(8239).GuildTagBadgeSize;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { tag: { paddingHorizontal: 6, paddingVertical: 2, columnGap: 4, borderRadius: nativeDefault.radii.sm } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -115,7 +115,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     const obj5 = { text: combined };
     obj4.accessibilityValue = obj5;
     obj4.onPress = function onPress() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14907, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14945, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild });
     };
     let tmp23Result = null;
     if (null != stateFromStores) {

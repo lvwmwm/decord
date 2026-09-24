@@ -1,11 +1,11 @@
-// Module ID: 13482
-// Function ID: 13483
+// Module ID: 13518
+// Function ID: 13519
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 4758, 13477, 558, 568, 4754, 12, 8995, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 13513, 558, 568, 4786, 12, 9027, 2]
 
-// Module 13482 (EditCollectiblesPickerList)
+// Module 13518 (EditCollectiblesPickerList)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -13,8 +13,8 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
-let obj = { list: { flex: 1, marginTop: 12 }, listContent: { paddingBottom: 88 }, loadingContainer: { paddingVertical: 80, alignItems: "center" }, header: { paddingHorizontal: fn(13477).GUTTER_SIZE, paddingTop: 10, paddingBottom: 5 } };
+const createStyles = fn(4790);
+let obj = { list: { flex: 1, marginTop: 12 }, listContent: { paddingBottom: 88 }, loadingContainer: { paddingVertical: 80, alignItems: "center" }, header: { paddingHorizontal: fn(13513).GUTTER_SIZE, paddingTop: 10, paddingBottom: 5 } };
 let closure_7 = createStyles.createStyles(obj);
 let ReactCompilerGating = fn(558);
 let closure_8 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((header) => {
@@ -43,7 +43,7 @@ let closure_8 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((heade
   tmp8 = tmp9;
 }) : ((children) => <hasOwnProperty style={closure_7().header}>{jsx(Text_Text.Heading, { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: arg0.header })}</hasOwnProperty>));
 ReactCompilerGating = fn(558);
-let obj3 = { paddingHorizontal: fn(13477).GUTTER_SIZE, paddingTop: 10, paddingBottom: 5 };
+let obj3 = { paddingHorizontal: fn(13513).GUTTER_SIZE, paddingTop: 10, paddingBottom: 5 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/EditCollectiblesPickerList.tsx");
 
@@ -249,7 +249,7 @@ export const EditCollectiblesPickerList = ReactCompilerGating.isReactCompilerEna
         items.push({ type: "header", key: "header-" + header.section, header: header.header });
         const obj = { type: "header", key: "header-" + header.section, header: header.header };
         const obj2 = items(12);
-        const item = items(12).chunk(header.items, items(13477).ROW_SIZE).forEach((items, index) => {
+        const item = items(12).chunk(header.items, items(13513).ROW_SIZE).forEach((items, index) => {
           items.push({ type: "row", key: "row-" + header.section + "-" + index, items });
         });
       });

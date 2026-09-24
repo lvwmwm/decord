@@ -1,24 +1,24 @@
-// Module ID: 11826
-// Function ID: 11827
+// Module ID: 11862
+// Function ID: 11863
 // Name: ShareChatInput
-// Dependencies: [32, 19, 17, 1078, 21, 4758, 580, 1368, 558, 568, 9416, 1119, 8884, 9035, 5341, 2]
+// Dependencies: [32, 19, 17, 1078, 21, 4790, 580, 1368, 558, 568, 9448, 1119, 8916, 9067, 5373, 2]
 
-// Module 11826 (ShareChatInput)
+// Module 11862 (ShareChatInput)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Pressables from "Pressables" /* 5341 */;
-import ReactionIcon from "ReactionIcon" /* 9035 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9416 */;
+import Pressables from "Pressables" /* 5373 */;
+import ReactionIcon from "ReactionIcon" /* 9067 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9448 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const FormInputDefault = tmp6(8884);
+const FormInputDefault = tmp6(8916);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, flexDirection: "row", backgroundColor: nativeDefault.colors.SHARE_CHAT_INPUT_BACKGROUND, borderRadius: nativeDefault.modules.mobile.CHAT_INPUT_BORDER_RADIUS, borderWidth: nativeDefault.modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH, borderColor: nativeDefault.colors.MOBILE_CHATINPUT_BORDER_DEFAULT, paddingHorizontal: nativeDefault.space.PX_12 }, chatInput: null, chatText: null, inputPlaceholder: null, emojiButton: null, focused: null };
 let obj3 = { flex: 1, flexDirection: "row", backgroundColor: nativeDefault.colors.SHARE_CHAT_INPUT_BACKGROUND, borderRadius: nativeDefault.modules.mobile.CHAT_INPUT_BORDER_RADIUS, borderWidth: nativeDefault.modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH, borderColor: nativeDefault.colors.MOBILE_CHATINPUT_BORDER_DEFAULT, paddingHorizontal: nativeDefault.space.PX_12 };
 obj2.chatInput = { flex: 1, paddingVertical: 0, paddingHorizontal: nativeDefault.space.PX_4, maxHeight: 80 };

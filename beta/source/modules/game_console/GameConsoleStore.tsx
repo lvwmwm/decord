@@ -1,13 +1,13 @@
-// Module ID: 4775
-// Function ID: 4776
+// Module ID: 4807
+// Function ID: 4808
 // Name: GameConsoleStore
-// Dependencies: [4776, 4777, 504, 577, 2]
+// Dependencies: [4808, 4809, 504, 577, 2]
 
-// Module 4775 (GameConsoleStore)
+// Module 4807 (GameConsoleStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import SessionsStore from "SessionsStore" /* 4776 */;
-import VoiceStateStore from "VoiceStateStore" /* 4777 */;
+import SessionsStore from "SessionsStore" /* 4808 */;
+import VoiceStateStore from "VoiceStateStore" /* 4809 */;
 
 let c2 = null;
 let obj = null;

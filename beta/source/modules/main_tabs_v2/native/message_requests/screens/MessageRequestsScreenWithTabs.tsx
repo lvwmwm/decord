@@ -1,18 +1,18 @@
-// Module ID: 17347
-// Function ID: 17348
+// Module ID: 17357
+// Function ID: 17358
 // Name: MessageRequestsScreenWithTabs
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 1119, 17348, 17364, 9868, 9869, 12780, 12026, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 1119, 17358, 17374, 9900, 9901, 12816, 12062, 2]
 
-// Module 17347 (MessageRequestsScreenWithTabs)
+// Module 17357 (MessageRequestsScreenWithTabs)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import SegmentedControlState from "SegmentedControlState" /* 9868 */;
-import SegmentedControl from "SegmentedControl" /* 9869 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12026 */;
-import SegmentedControlPages from "SegmentedControlPages" /* 12780 */;
-import MessageRequestListDefault from "MessageRequestList" /* 17348 */;
-import SpamMessageListDefault from "SpamMessageList" /* 17364 */;
+import SegmentedControlState from "SegmentedControlState" /* 9900 */;
+import SegmentedControl from "SegmentedControl" /* 9901 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12062 */;
+import SegmentedControlPages from "SegmentedControlPages" /* 12816 */;
+import MessageRequestListDefault from "MessageRequestList" /* 17358 */;
+import SpamMessageListDefault from "SpamMessageList" /* 17374 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,7 +21,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const constants = { REQUEST: "REQUEST", SPAM: "SPAM" };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, messageRequestContent: { flex: 1 }, tabContainer: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj.tabContainer = { minHeight: 32, paddingHorizontal: nativeDefault.space.PX_16 };
@@ -99,10 +99,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
       if (cResult[13] === tmp21) {
         let tmp22 = cResult[14];
       }
-      const segmentedControlState = tmp(9868).useSegmentedControlState(tmp22);
+      const segmentedControlState = tmp(9900).useSegmentedControlState(tmp22);
       if (cResult[15] !== segmentedControlState) {
         const obj6 = { state: segmentedControlState };
-        const tmp26 = timestampProducer(tmp(9869).SegmentedControl, obj6);
+        const tmp26 = timestampProducer(tmp(9901).SegmentedControl, obj6);
         cResult[15] = segmentedControlState;
         cResult[16] = tmp26;
         let tmp24 = tmp26;
@@ -115,7 +115,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
         }
         if (cResult[20] !== segmentedControlState) {
           const obj7 = { state: segmentedControlState };
-          const tmp33 = timestampProducer(tmp(12780).SegmentedControlPages, obj7);
+          const tmp33 = timestampProducer(tmp(12816).SegmentedControlPages, obj7);
           cResult[20] = segmentedControlState;
           cResult[21] = tmp33;
           let tmp31 = tmp33;
@@ -128,7 +128,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
           }
           const _Symbol = Symbol;
           if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp40 = timestampProducer(tmp(12026).TTIFirstContentfulPaint, { label: "message_requests" });
+            const tmp40 = timestampProducer(tmp(12062).TTIFirstContentfulPaint, { label: "message_requests" });
             cResult[25] = tmp40;
             let tmp38 = tmp40;
           } else {
@@ -165,7 +165,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
       cResult[18] = tmp24;
       cResult[19] = tmp30;
       tmp27 = tmp30;
-      const tmpResult = tmp(9868);
+      const tmpResult = tmp(9900);
     }
     const obj11 = { items: tmp21, pageWidth: tmp6, defaultIndex: 0 };
     cResult[12] = tmp6;

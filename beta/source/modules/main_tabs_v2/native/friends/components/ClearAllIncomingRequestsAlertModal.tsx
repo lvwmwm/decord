@@ -1,13 +1,13 @@
-// Module ID: 17249
-// Function ID: 17250
+// Module ID: 17259
+// Function ID: 17260
 // Name: ClearAllIncomingRequestsAlertModal
-// Dependencies: [5, 19, 21, 10009, 558, 568, 1119, 5116, 5116, 2]
+// Dependencies: [5, 19, 21, 10048, 558, 568, 1119, 5148, 5148, 2]
 
-// Module 17249 (ClearAllIncomingRequestsAlertModal)
+// Module 17259 (ClearAllIncomingRequestsAlertModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AlertModal from "AlertModal" /* 5116 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10009 */;
+import AlertModal from "AlertModal" /* 5148 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10048 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -100,7 +100,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((incomingRequestC
     const obj3 = { variant: "destructive", onPress: handleConfirm, text: null };
     const intl3 = tmp(1119).intl;
     obj3.text = intl3.string(tmp(1119).t["cY+Oob"]);
-    const tmp11 = React4(tmp(5116).AlertActionButton, obj3, "confirm");
+    const tmp11 = React4(tmp(5148).AlertActionButton, obj3, "confirm");
     cResult[3] = tmp11;
     let tmp8 = tmp11;
   } else {
@@ -112,9 +112,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((incomingRequestC
     const obj5 = { variant: "secondary", text: null };
     const intl4 = tmp(1119).intl;
     obj5.text = intl4.string(tmp(1119).t["ETE/oC"]);
-    items[1] = React4(tmp(5116).AlertActionButton, obj5, "cancel");
+    items[1] = React4(tmp(5148).AlertActionButton, obj5, "cancel");
     obj4.children = items;
-    const tmp15 = hasOwnProperty(tmp(5116).AlertActions, obj4);
+    const tmp15 = hasOwnProperty(tmp(5148).AlertActions, obj4);
     cResult[4] = tmp15;
     let tmp12 = tmp15;
   } else {
@@ -122,7 +122,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((incomingRequestC
   }
   if (cResult[5] !== tmp6) {
     const obj6 = { title: first, content: tmp6, actions: tmp12 };
-    const tmp18 = React4(tmp(5116).AlertModal, obj6);
+    const tmp18 = React4(tmp(5148).AlertModal, obj6);
     cResult[5] = tmp6;
     cResult[6] = tmp18;
     let tmp16 = tmp18;

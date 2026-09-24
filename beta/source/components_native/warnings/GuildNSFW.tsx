@@ -1,12 +1,12 @@
-// Module ID: 12814
-// Function ID: 12815
+// Module ID: 12850
+// Function ID: 12851
 // Name: GuildNSFW
-// Dependencies: [109, 19, 2067, 21, 558, 568, 504, 4968, 5739, 8687, 8689, 1119, 12815, 2]
+// Dependencies: [109, 19, 2067, 21, 558, 568, 504, 5000, 5771, 8719, 8721, 1119, 12851, 2]
 
-// Module 12814 (GuildNSFW)
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8687 */;
-import GatedContentDefault from "GatedContent" /* 12815 */;
+// Module 12850 (GuildNSFW)
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5771 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8719 */;
+import GatedContentDefault from "GatedContent" /* 12851 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -167,7 +167,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const obj3 = {};
   const callback = noop.useCallback(() => {
     const obj = AgeVerificationActionCreatorsDefault;
-    const result = obj.showAgeVerificationGetStartedModal({ entryPoint: channelId(8689).AgeVerificationModalEntryPoint.NSFW_GUILD });
+    const result = obj.showAgeVerificationGetStartedModal({ entryPoint: channelId(8721).AgeVerificationModalEntryPoint.NSFW_GUILD });
   }, []);
   const merged = Object.assign(_objectWithoutProperties(ageGateVerifyContentForGuild, closure_4));
   let id;
@@ -185,8 +185,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const intl = tmp(1119).intl;
   obj3.disagreement = intl.string(require("util").t["/g10LC"]);
   if (require("AgeVerificationAnalyticsUtils").NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY !== modalType) {
-    if (tmp(8689).NsfwSpaceWarningModalType.GUILD_LARGE_SERVER !== modalType) {
-      if (tmp(8689).NsfwSpaceWarningModalType.NSFW_CHANNEL_UNDERAGE === modalType) {
+    if (tmp(8721).NsfwSpaceWarningModalType.GUILD_LARGE_SERVER !== modalType) {
+      if (tmp(8721).NsfwSpaceWarningModalType.NSFW_CHANNEL_UNDERAGE === modalType) {
         const obj4 = { modalType, disagreementButtonVariant: "primary", onDisagree: handleDisagree };
         const merged1 = Object.assign(obj3);
         return jsx(GatedContentDefault, { modalType, disagreementButtonVariant: "primary", onDisagree: handleDisagree });

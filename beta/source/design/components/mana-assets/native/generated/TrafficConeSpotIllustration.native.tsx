@@ -1,13 +1,13 @@
-// Module ID: 6784
-// Function ID: 6785
+// Module ID: 6816
+// Function ID: 6817
 // Name: TrafficConeSpotIllustration
-// Dependencies: [21, 558, 568, 6785, 5802, 2]
+// Dependencies: [21, 558, 568, 6817, 5834, 2]
 
-// Module 6784 (TrafficConeSpotIllustration)
+// Module 6816 (TrafficConeSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6785 from "module_6785" /* 6785 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6817 from "module_6817" /* 6817 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const TrafficConeSpotIllustration = ReactCompilerGating.isReactCompilerEn
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6785 };
+    const obj2 = { uri: _modDef6817 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const TrafficConeSpotIllustration = ReactCompilerGating.isReactCompilerEn
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6785 };
+  const obj2 = { uri: _modDef6817 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

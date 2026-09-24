@@ -1,18 +1,18 @@
-// Module ID: 11412
-// Function ID: 11413
+// Module ID: 11448
+// Function ID: 11449
 // Name: TieredTenureBadgeActionSheet
-// Dependencies: [19, 17, 1376, 1378, 1078, 21, 4758, 580, 558, 568, 11413, 7875, 11438, 5802, 4754, 1119, 11439, 504, 1973, 1253, 9046, 1616, 7626, 4725, 8453, 10221, 10224, 6863, 7397, 2]
+// Dependencies: [19, 17, 1376, 1378, 1078, 21, 4790, 580, 558, 568, 11449, 7907, 11474, 5834, 4786, 1119, 11475, 504, 1973, 1253, 9078, 1616, 7658, 4757, 8485, 10260, 10263, 6895, 7429, 2]
 
-// Module 11412 (TieredTenureBadgeActionSheet)
+// Module 11448 (TieredTenureBadgeActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import openUserSettings from "openUserSettings" /* 7626 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7875 */;
-import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8453 */;
-import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 11413 */;
-import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 11438 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import openUserSettings from "openUserSettings" /* 7658 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7907 */;
+import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8485 */;
+import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 11449 */;
+import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 11474 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -27,7 +27,7 @@ const Constants = fn(1078);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const TIERED_TENURE_BADGE_ACTION_SHEET = "TIERED_TENURE_BADGE_ACTION_SHEET";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { headerContainer: { paddingHorizontal: 24, alignItems: "center" }, title: { marginTop: 8, paddingHorizontal: 12, textAlign: "center" }, subtitle: { marginTop: 8, textAlign: "center" }, container: { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", paddingHorizontal: 24, marginTop: 16 }, rowContainer: { flexDirection: "row", width: "100%", height: 160, gap: 8, justifyContent: "center", alignItems: "center", marginTop: 24 }, rowContainerWithUsersBadge: { height: 186 }, badgeContainer: { minWidth: 110, height: "100%", paddingTop: 16, alignItems: "center", paddingHorizontal: 8 }, usersBadgeContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderWidth: 1.2, borderColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: nativeDefault.radii.sm }, badgeName: { marginTop: 8 }, badgeRequirement: { marginTop: 4 }, badgePremiumSince: { width: 90, marginTop: 4, textAlign: "center" }, footer: { marginHorizontal: 24 } };
 let closure_13 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -101,7 +101,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       const date = new Date(premiumSince);
                       obj5.date = date;
                       obj4.children = intl2.formatToPlainString(tmp(1119).t.Hu4jfi, obj5);
-                      tmp38 = v65535(tmp(4754).Text, obj4);
+                      tmp38 = v65535(tmp(4786).Text, obj4);
                     }
                     cResult[28] = isUsersBadge;
                     cResult[29] = premiumSince;
@@ -110,7 +110,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     tmp37 = tmp38;
                   }
                   const obj6 = { style: tmp4.badgeRequirement, variant: "text-xs/normal", color: "mobile-text-heading-primary", children: tmp15 };
-                  const tmp36 = v65535(tmp(4754).Text, obj6);
+                  const tmp36 = v65535(tmp(4786).Text, obj6);
                   cResult[25] = tmp4.badgeRequirement;
                   cResult[26] = tmp15;
                   cResult[27] = tmp36;
@@ -169,7 +169,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[17] = small;
         cResult[18] = tmp24;
       }
-      const Text = tmp(4754).Text;
+      const Text = tmp(4786).Text;
       const badgeName = tmp4.badgeName;
       const intl = tmp(1119).intl;
       nameUnformatted = nameUnformatted.nameUnformatted;
@@ -207,9 +207,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj4 = { style: tmp.badgeName, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
     const intl = tmp2(1119).intl;
     obj4.children = intl.string(tieredTenureBadgeData.nameUnformatted);
-    items1[1] = v65535(tmp2(4754).Text, obj4);
+    items1[1] = v65535(tmp2(4786).Text, obj4);
     const obj5 = { style: tmp.badgeRequirement, variant: "text-xs/normal", color: "mobile-text-heading-primary", children: tmp7 };
-    items1[2] = v65535(tmp2(4754).Text, obj5);
+    items1[2] = v65535(tmp2(4786).Text, obj5);
     if (isUsersBadge) {
       isUsersBadge = null != premiumSince;
     }
@@ -221,7 +221,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const date = new Date(premiumSince);
       obj7.date = date;
       obj6.children = intl2.formatToPlainString(tmp2(1119).t.Hu4jfi, obj7);
-      isUsersBadge = tmp11(tmp2(4754).Text, obj6);
+      isUsersBadge = tmp11(tmp2(4786).Text, obj6);
     }
     items1[3] = isUsersBadge;
     obj2.children = items1;

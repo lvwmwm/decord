@@ -1,21 +1,21 @@
-// Module ID: 16123
-// Function ID: 16124
+// Module ID: 16133
+// Function ID: 16134
 // Name: ShopNitroUpsellPromoSheet
-// Dependencies: [19, 1078, 21, 558, 568, 7409, 10220, 8101, 9425, 10221, 5907, 1119, 10224, 5188, 10613, 5652, 2]
+// Dependencies: [19, 1078, 21, 558, 568, 7441, 10259, 8133, 9457, 10260, 5939, 1119, 10263, 5220, 10649, 5684, 2]
 
-// Module 16123 (ShopNitroUpsellPromoSheet)
+// Module 16133 (ShopNitroUpsellPromoSheet)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import ButtonGroup from "ButtonGroup" /* 5652 */;
-import native from "native" /* 5907 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8101 */;
-import PremiumUpsellUtils from "PremiumUpsellUtils" /* 9425 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10220 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 10221 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10224 */;
-import PromoSheet from "PromoSheet" /* 10613 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import ButtonGroup from "ButtonGroup" /* 5684 */;
+import native from "native" /* 5939 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7441 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8133 */;
+import PremiumUpsellUtils from "PremiumUpsellUtils" /* 9457 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10259 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 10260 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10263 */;
+import PromoSheet from "PromoSheet" /* 10649 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -41,10 +41,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const upsellType = tmp(10220).getUpsellType(tmp(8101).EntitlementFeatureNames.SHOP_MEMBER_PRICING);
+    const upsellType = tmp(10259).getUpsellType(tmp(8133).EntitlementFeatureNames.SHOP_MEMBER_PRICING);
     cResult[2] = upsellType;
     let tmp7 = upsellType;
-    const tmpResult = tmp(10220);
+    const tmpResult = tmp(10259);
   } else {
     tmp7 = cResult[2];
   }
@@ -53,7 +53,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
   const tmpResult2 = PremiumUpsellUtils;
   ({ loading, onPress } = usePremiumFeatureUpsellGetNitroDefault(false, onViewAllPerks, AnalyticsPages.PREMIUM_UPSELL_SHOP_MEMBER_PRICING, undefined, tmp6));
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp14 = React4(tmp(5907).DiscountsMegaphoneSpotIllustration, {});
+    const tmp14 = React4(tmp(5939).DiscountsMegaphoneSpotIllustration, {});
     const intl = tmp(1119).intl;
     const stringResult = intl.string(tmp(1119).t.GZWBoL);
     const intl2 = tmp(1119).intl;
@@ -92,7 +92,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
     }
     if (cResult[11] !== onViewAllPerks) {
       const obj2 = { size: "lg", variant: "secondary", text: tmp21, onPress: onViewAllPerks };
-      const tmp25 = React4(tmp(5188).Button, obj2);
+      const tmp25 = React4(tmp(5220).Button, obj2);
       cResult[11] = onViewAllPerks;
       cResult[12] = tmp25;
       let tmp23 = tmp25;
@@ -109,8 +109,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
     const obj4 = { children: null };
     const items1 = [tmp19, tmp23];
     obj4.children = items1;
-    obj3.actions = hasOwnProperty(tmp(5652).ButtonGroup, obj4);
-    const tmp29 = React4(tmp(10613).PromoSheet, obj3);
+    obj3.actions = hasOwnProperty(tmp(5684).ButtonGroup, obj4);
+    const tmp29 = React4(tmp(10649).PromoSheet, obj3);
     cResult[13] = tmp23;
     cResult[14] = tmp19;
     cResult[15] = tmp29;

@@ -1,19 +1,19 @@
-// Module ID: 16518
-// Function ID: 16519
+// Module ID: 16528
+// Function ID: 16529
 // Name: ServerPreviewPill
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 4786, 2]
 
-// Module 16518 (ServerPreviewPill)
+// Module 16528 (ServerPreviewPill)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { pill: { paddingHorizontal: 10, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.WHITE }, text: null };
 const obj3 = { paddingHorizontal: 10, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.WHITE };
 obj2.text = { color: nativeDefault.colors.BLACK, textTransform: "uppercase", letterSpacing: 0.5 };
@@ -37,7 +37,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp4.text) {
     const obj2 = { variant: "text-xs/bold", style: text, children: first };
-    const tmp9 = jsx(tmp(4754).Text, { variant: "text-xs/bold", style: text, children: first });
+    const tmp9 = jsx(tmp(4786).Text, { variant: "text-xs/bold", style: text, children: first });
     cResult[1] = tmp4.text;
     cResult[2] = tmp9;
     let tmp7 = tmp9;

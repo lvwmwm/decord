@@ -1,24 +1,24 @@
-// Module ID: 8386
-// Function ID: 8387
+// Module ID: 8418
+// Function ID: 8419
 // Name: ComponentStateContext
-// Dependencies: [32, 19, 8204, 4400, 2045, 2109, 5632, 1376, 8387, 21, 1982, 4989, 4987, 558, 568, 504, 8240, 7513, 8389, 8390, 577, 5203, 4982, 2]
+// Dependencies: [32, 19, 8236, 4432, 2045, 2109, 5664, 1376, 8419, 21, 1982, 5021, 5019, 558, 568, 504, 8272, 7545, 8421, 8422, 577, 5235, 5014, 2]
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentState, useComponentStateContext
 
-// Module 8386 (ComponentStateContext)
+// Module 8418 (ComponentStateContext)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import Server from "Server" /* 1982 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 4989 */;
-import useMountEffectDefault from "useMountEffect" /* 5203 */;
-import InteractionUtils from "InteractionUtils" /* 8390 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5021 */;
+import useMountEffectDefault from "useMountEffect" /* 5235 */;
+import InteractionUtils from "InteractionUtils" /* 8422 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import InteractionStore from "InteractionStore" /* 8204 */;
-import LurkingStore from "LurkingStore" /* 4400 */;
+import InteractionStore from "InteractionStore" /* 8236 */;
+import LurkingStore from "LurkingStore" /* 4432 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5632 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5664 */;
 import UserStore from "UserStore" /* 1376 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8387 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8419 */;
 
 require = fn;
 function isInteractionComponent(type) {
@@ -51,7 +51,7 @@ function getActionComponentState(interaction, id, shouldDisableInteractiveCompon
   let LOADING = InteractionComponentTypes.ActionComponentState.NORMAL;
   let tmp3 = null != interaction;
   if (tmp3) {
-    tmp3 = interaction.state !== tmp(4987).InteractionState.FAILED;
+    tmp3 = interaction.state !== tmp(5019).InteractionState.FAILED;
   }
   let DISABLED = LOADING;
   if (!tmp3) {
@@ -59,16 +59,16 @@ function getActionComponentState(interaction, id, shouldDisableInteractiveCompon
       flag = isInteractionComponent(id);
     }
     if (flag) {
-      DISABLED = tmp(4989).ActionComponentState.DISABLED;
+      DISABLED = tmp(5021).ActionComponentState.DISABLED;
     }
     return DISABLED;
   } else {
     if (interaction.data.interactionType !== tmp(1982).InteractionTypes.MESSAGE_COMPONENT) {
       if (isInteractionComponent(id)) {
-        LOADING = tmp(4989).ActionComponentState.DISABLED;
+        LOADING = tmp(5021).ActionComponentState.DISABLED;
       }
     }
-    LOADING = tmp(4989).ActionComponentState.LOADING;
+    LOADING = tmp(5021).ActionComponentState.LOADING;
   }
 }
 const jsx = fn(21).jsx;
@@ -589,11 +589,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (channel != null) {
     guild_id = channel.guild_id;
   }
-  const obj5 = channel(8240);
-  const isThreadModerator = channel(7513).useIsThreadModerator(channel);
-  const tmpResult = channel(7513);
+  const obj5 = channel(8272);
+  const isThreadModerator = channel(7545).useIsThreadModerator(channel);
+  const tmpResult = channel(7545);
   let tmp9 = !stateFromStores;
-  const canUnarchiveThread = channel(7513).useCanUnarchiveThread(channel);
+  const canUnarchiveThread = channel(7545).useCanUnarchiveThread(channel);
   if (stateFromStores) {
     tmp9 = stateFromStores1;
   }
@@ -1045,7 +1045,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((customId, id, 
                 return tmp17;
               }
             }
-            let obj2 = { state: first1, executeStateUpdate: tmp12, isDisabled: false, visualState: tmp(4989).ActionComponentState.NORMAL, error };
+            let obj2 = { state: first1, executeStateUpdate: tmp12, isDisabled: false, visualState: tmp(5021).ActionComponentState.NORMAL, error };
             class S {
               constructor(arg0) {
                 tmp = null == customId;

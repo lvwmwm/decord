@@ -1,20 +1,20 @@
-// Module ID: 16841
-// Function ID: 16842
+// Module ID: 16851
+// Function ID: 16852
 // Name: ICYMICardInCard
-// Dependencies: [19, 17, 2045, 2109, 2067, 1078, 21, 16795, 580, 558, 568, 9092, 5799, 1181, 5195, 504, 4991, 9974, 4910, 4754, 4911, 16842, 1119, 5300, 16835, 5341, 7882, 8180, 2]
+// Dependencies: [19, 17, 2045, 2109, 2067, 1078, 21, 16805, 580, 558, 568, 9124, 5831, 1181, 5227, 504, 5023, 10006, 4942, 4786, 4943, 16852, 1119, 5332, 16845, 5373, 7914, 8212, 2]
 // Exports: default
 
-// Module 16841 (ICYMICardInCard)
+// Module 16851 (ICYMICardInCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import TextIcon2 from "TextIcon" /* 5300 */;
-import GuildIcon from "GuildIcon" /* 5799 */;
-import ClipView from "ClipView" /* 9092 */;
-import openDetailsActionSheet from "openDetailsActionSheet" /* 16835 */;
-import getIconForChannel from "getIconForChannel" /* 16842 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import TextIcon2 from "TextIcon" /* 5332 */;
+import GuildIcon from "GuildIcon" /* 5831 */;
+import ClipView from "ClipView" /* 9124 */;
+import openDetailsActionSheet from "openDetailsActionSheet" /* 16845 */;
+import getIconForChannel from "getIconForChannel" /* 16852 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
@@ -28,7 +28,7 @@ const View = fn(17).View;
 const DEFAULT_ROLE_COLOR_HEX = fn(1078).DEFAULT_ROLE_COLOR_HEX;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
-const createICYMIStyles = fn(16795);
+const createICYMIStyles = fn(16805);
 let closure_12 = createICYMIStyles.createICYMIStyles((marginHorizontal) => {
   const obj = { container: { marginTop: marginHorizontal.margin }, content: { flex: 1, overflow: "hidden" }, channelNameAndAccessory: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: nativeDefault.space.PX_4, marginHorizontal: marginHorizontal.margin }, channelNameAndAccessoryLarge: null, header: null, headerInfo: null, title: null, titleLeft: null, subTitleContainer: null, subtitle: null, genContentSubtitle: null, genContentSubtitleChannel: null, subtitleTrailing: null, separator: null, normalContent: null, authorAvatar: null };
   const obj2 = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: nativeDefault.space.PX_4, marginHorizontal: marginHorizontal.margin };
@@ -64,7 +64,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const point = { shape: tmp(9092).CutoutShape.Circle, x: 18, y: 18, size: 24 };
+    const point = { shape: tmp(9124).CutoutShape.Circle, x: 18, y: 18, size: 24 };
     const items = [point];
     cResult[1] = items;
     let tmp6 = items;
@@ -75,7 +75,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj2 = { cutouts: tmp6, children: null };
     const obj3 = { guild, size: null };
     const tmp10 = ClipViewDefault;
-    obj3.size = tmp(5799).GuildIconSizes.SMALL_32;
+    obj3.size = tmp(5831).GuildIconSizes.SMALL_32;
     obj2.children = options(GuildIconDefault, obj3);
     const tmp12 = options(tmp10, obj2);
     cResult[2] = guild;

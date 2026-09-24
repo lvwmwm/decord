@@ -1,18 +1,18 @@
-// Module ID: 10325
-// Function ID: 10326
+// Module ID: 10364
+// Function ID: 10365
 // Name: useStageChannelGridParticipants
-// Dependencies: [32, 19, 4774, 5637, 504, 5651, 5644, 12, 558, 568, 5650, 10326, 2]
+// Dependencies: [32, 19, 4806, 5669, 504, 5683, 5676, 12, 558, 568, 5682, 10365, 2]
 // Exports: useStageChannelParticipantsList
 
-// Module 10325 (useStageChannelGridParticipants)
+// Module 10364 (useStageChannelGridParticipants)
 import _mod12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5644 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5650 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 5676 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5682 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5637 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4806 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5669 */;
 
 const require = globalThis.__r;
 
@@ -89,12 +89,12 @@ function useStageChannelParticipantsList(arg0, arg1, arg2) {
     c2 = -1;
     const items2 = [];
     if (c2) {
-      let mutableParticipants = StageChannelParticipantStore.getMutableParticipants(items, closure_0(5644).StageChannelParticipantNamedIndex.SPEAKER);
+      let mutableParticipants = StageChannelParticipantStore.getMutableParticipants(items, closure_0(5676).StageChannelParticipantNamedIndex.SPEAKER);
       const iter = mutableParticipants[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
         let tmp10 = nextResult;
-        if (nextResult.type !== closure_0(5644).StageChannelParticipantTypes.STREAM) {
+        if (nextResult.type !== closure_0(5676).StageChannelParticipantTypes.STREAM) {
           iter.return();
           break;
         } else {
@@ -129,7 +129,7 @@ function useStageChannelParticipantsList(arg0, arg1, arg2) {
       items.push(chunkResult.length);
     }
     pushSection(items4, 1, false);
-    const items5 = [closure_0(5644).StageChannelParticipantNamedIndex.SPEAKER, closure_0(5644).StageChannelParticipantNamedIndex.AUDIENCE];
+    const items5 = [closure_0(5676).StageChannelParticipantNamedIndex.SPEAKER, closure_0(5676).StageChannelParticipantNamedIndex.AUDIENCE];
     const item = items5.forEach((item) => {
       const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(stateFromStores[0], item);
       let found = mutableParticipants;
@@ -167,7 +167,7 @@ export const useStageChannelParticipantsListThrottled = ReactCompilerGating.isRe
   const stateFromStores = require("initialize").useStateFromStores(items, () => {
     const items = [closure_0, StageChannelParticipantStore.getParticipantsVersion(closure_0)];
     return items;
-  }, items1, tmp(5651).isVersionEqual);
+  }, items1, tmp(5683).isVersionEqual);
   const tmpResult = require("initialize");
   const items2 = [stateFromStores1];
   const items3 = [arg0];
@@ -180,12 +180,12 @@ export const useStageChannelParticipantsListThrottled = ReactCompilerGating.isRe
     c2 = -1;
     const items2 = [];
     if (c2) {
-      let mutableParticipants = StageChannelParticipantStore.getMutableParticipants(items, closure_0(5644).StageChannelParticipantNamedIndex.SPEAKER);
+      let mutableParticipants = StageChannelParticipantStore.getMutableParticipants(items, closure_0(5676).StageChannelParticipantNamedIndex.SPEAKER);
       const iter = mutableParticipants[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
         let tmp10 = nextResult;
-        if (nextResult.type !== closure_0(5644).StageChannelParticipantTypes.STREAM) {
+        if (nextResult.type !== closure_0(5676).StageChannelParticipantTypes.STREAM) {
           iter.return();
           break;
         } else {
@@ -220,7 +220,7 @@ export const useStageChannelParticipantsListThrottled = ReactCompilerGating.isRe
       items.push(chunkResult.length);
     }
     pushSection(items4, 1, false);
-    const items5 = [closure_0(5644).StageChannelParticipantNamedIndex.SPEAKER, closure_0(5644).StageChannelParticipantNamedIndex.AUDIENCE];
+    const items5 = [closure_0(5676).StageChannelParticipantNamedIndex.SPEAKER, closure_0(5676).StageChannelParticipantNamedIndex.AUDIENCE];
     const item = items5.forEach((item) => {
       const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(stateFromStores[0], item);
       let found = mutableParticipants;
@@ -326,12 +326,12 @@ export const useStageChannelParticipantsListThrottled = ReactCompilerGating.isRe
     c2 = -1;
     const items2 = [];
     if (c2) {
-      let mutableParticipants = StageChannelParticipantStore.getMutableParticipants(items, closure_0(5644).StageChannelParticipantNamedIndex.SPEAKER);
+      let mutableParticipants = StageChannelParticipantStore.getMutableParticipants(items, closure_0(5676).StageChannelParticipantNamedIndex.SPEAKER);
       const iter = mutableParticipants[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
         let tmp10 = nextResult;
-        if (nextResult.type !== closure_0(5644).StageChannelParticipantTypes.STREAM) {
+        if (nextResult.type !== closure_0(5676).StageChannelParticipantTypes.STREAM) {
           iter.return();
           break;
         } else {
@@ -366,7 +366,7 @@ export const useStageChannelParticipantsListThrottled = ReactCompilerGating.isRe
       items.push(chunkResult.length);
     }
     pushSection(items4, 1, false);
-    const items5 = [closure_0(5644).StageChannelParticipantNamedIndex.SPEAKER, closure_0(5644).StageChannelParticipantNamedIndex.AUDIENCE];
+    const items5 = [closure_0(5676).StageChannelParticipantNamedIndex.SPEAKER, closure_0(5676).StageChannelParticipantNamedIndex.AUDIENCE];
     const item = items5.forEach((item) => {
       const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(stateFromStores[0], item);
       let found = mutableParticipants;

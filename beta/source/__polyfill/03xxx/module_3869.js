@@ -1,46 +1,9 @@
 // Module ID: 3869
 // Function ID: 3870
-// Dependencies: [3870, 3871, 3872, 3873, 3874]
+// Dependencies: [1125]
 
 // Module 3869
-import module_3870 from "module_3870" /* 3870 */;
-import module_3871 from "module_3871" /* 3871 */;
-import module_3872 from "module_3872" /* 3872 */;
-import date_mod from "module_3873" /* 3873 */;
-import date_mod from "module_3874" /* 3874 */;
+import registerAsset from "module_1125" /* 1125 */;
 
-if (!module_3870) {
-  const obj = { default: module_3870 };
-  let tmp3 = obj;
-} else {
-  tmp3 = module_3870;
-}
-if (!module_3871) {
-  const obj2 = { default: module_3871 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_3871;
-}
-if (!module_3872) {
-  const obj3 = { default: module_3872 };
-  let tmp7 = obj3;
-} else {
-  tmp7 = module_3872;
-}
-let date = date_mod;
-if (!date) {
-  const obj4 = { default: date };
-  let tmp9 = obj4;
-} else {
-  tmp9 = date;
-}
-let date = date_mod;
-if (!date) {
-  const obj5 = { default: date };
-  let tmp11 = obj5;
-} else {
-  tmp11 = date;
-}
 
-export default { code: "de", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
-export default exports.default;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Jpb3RfY3JlZGl0X2NhbXBhaWdu", scales: [1], hash: "eb60b442f7364c690f66372e1429d9d3", name: "th.messages.eb60b442f7364c690f66372e1429d9d3.compiled.messages", type: "jsona" });

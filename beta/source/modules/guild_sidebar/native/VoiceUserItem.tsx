@@ -1,28 +1,28 @@
-// Module ID: 16459
-// Function ID: 16460
+// Module ID: 16469
+// Function ID: 16470
 // Name: VoiceUserItem
-// Dependencies: [19, 17, 4750, 1078, 21, 1181, 11291, 4758, 580, 12214, 558, 568, 504, 9976, 9977, 9979, 1245, 4497, 4759, 1401, 16460, 9923, 9925, 9919, 9921, 11733, 10038, 5246, 10018, 2]
+// Dependencies: [19, 17, 4782, 1078, 21, 1181, 11327, 4790, 580, 12250, 558, 568, 504, 10008, 10009, 10011, 1245, 4529, 4791, 1401, 16470, 9955, 9957, 9951, 9953, 11769, 10077, 5278, 10057, 2]
 // Exports: getVoiceUserHeight
 
-// Module 16459 (VoiceUserItem)
+// Module 16469 (VoiceUserItem)
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
-import _modDef5246 from "module_5246" /* 5246 */;
-import HeadphonesDenyIcon from "HeadphonesDenyIcon" /* 9919 */;
-import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 9921 */;
-import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 9923 */;
-import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 9925 */;
-import GameActivityIconDefault from "GameActivityIcon" /* 10018 */;
-import getConsoleIcon from "getConsoleIcon" /* 10038 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11291 */;
-import VideoIcon from "VideoIcon" /* 11733 */;
-import VoiceUserNameItemDefault from "VoiceUserNameItem" /* 16460 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
+import _modDef5278 from "module_5278" /* 5278 */;
+import HeadphonesDenyIcon from "HeadphonesDenyIcon" /* 9951 */;
+import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 9953 */;
+import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 9955 */;
+import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 9957 */;
+import GameActivityIconDefault from "GameActivityIcon" /* 10057 */;
+import getConsoleIcon from "getConsoleIcon" /* 10077 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11327 */;
+import VideoIcon from "VideoIcon" /* 11769 */;
+import VoiceUserNameItemDefault from "VoiceUserNameItem" /* 16470 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 const require = globalThis.__r;
 
@@ -39,11 +39,11 @@ let c13 = 0.4;
 let c14 = 100;
 let c15 = 250;
 let c16 = 500;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { voiceState: { flex: 1, flexDirection: "row", alignItems: "center", paddingVertical: 5 }, disabled: { opacity: 0.5 }, voiceStateCollapsed: null, voiceStateIcon: null, legacyVoiceStateIcon: null, gameIcon: null };
 let size = { marginTop: 4, marginRight: 8, width: 32, height: 32, borderRadius: nativeDefault.radii.lg, borderWidth: 4, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", overflow: "hidden" };
 obj.voiceStateCollapsed = size;
-const ChannelListLayout = fn(12214);
+const ChannelListLayout = fn(12250);
 let merged = Object.assign(ChannelListLayout.makeSizeStyle(14));
 obj.voiceStateIcon = { marginLeft: 6 };
 obj.legacyVoiceStateIcon = { tintColor: nativeDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, marginLeft: 6 };

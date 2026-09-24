@@ -1,21 +1,21 @@
-// Module ID: 13438
-// Function ID: 13439
+// Module ID: 13474
+// Function ID: 13475
 // Name: ShopThisLookMarketingCoachmark
-// Dependencies: [19, 17, 2042, 7455, 21, 4758, 558, 568, 6054, 13436, 1119, 10452, 2]
+// Dependencies: [19, 17, 2042, 7487, 21, 4790, 558, 568, 6086, 13472, 1119, 10491, 2]
 
-// Module 13438 (ShopThisLookMarketingCoachmark)
+// Module 13474 (ShopThisLookMarketingCoachmark)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 6054 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 13436 */;
+import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 6086 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 13472 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
-const UserProfileThemeTypes = fn(7455).UserProfileThemeTypes;
+const UserProfileThemeTypes = fn(7487).UserProfileThemeTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" } });
 let ReactCompilerGating = fn(558);
 let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {

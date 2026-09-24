@@ -1,18 +1,18 @@
-// Module ID: 8643
-// Function ID: 8644
+// Module ID: 8675
+// Function ID: 8676
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 5174, 1119, 5846, 8644, 8645, 5796, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 5206, 1119, 5878, 8676, 8677, 5828, 4786, 2]
 
-// Module 8643 (SharePreparingModal)
+// Module 8675 (SharePreparingModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Backdrop from "Backdrop" /* 5174 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5796 */;
-import XSmallIcon from "XSmallIcon" /* 5846 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8644 */;
-import MediaModalOverlayHeaderWrapper from "MediaModalOverlayHeaderWrapper" /* 8645 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Backdrop from "Backdrop" /* 5206 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5828 */;
+import XSmallIcon from "XSmallIcon" /* 5878 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8676 */;
+import MediaModalOverlayHeaderWrapper from "MediaModalOverlayHeaderWrapper" /* 8677 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { content: { flex: 1, alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_12 }, topBar: null, topBarEnd: null };
 let obj4 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -53,7 +53,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onCancel) => {
   }
   const effect = noop.useEffect(tmp5, tmp6);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp10 = hasOwnProperty(tmp(5174).Backdrop, { blur: "none", "aria-hidden": true });
+    const tmp10 = hasOwnProperty(tmp(5206).Backdrop, { blur: "none", "aria-hidden": true });
     cResult[3] = tmp10;
     let tmp8 = tmp10;
   } else {
@@ -63,7 +63,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onCancel) => {
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1119).intl;
     const stringResult = intl.string(tmp(1119).t.cpT0Cq);
-    const tmp15 = hasOwnProperty(tmp(5846).XSmallIcon, { size: "md", color: "interactive-text-active" });
+    const tmp15 = hasOwnProperty(tmp(5878).XSmallIcon, { size: "md", color: "interactive-text-active" });
     cResult[4] = stringResult;
     cResult[5] = tmp15;
     let tmp12 = tmp15;
@@ -91,7 +91,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onCancel) => {
       }
       const _Symbol = Symbol;
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp28 = hasOwnProperty(tmp(5796).ActivityIndicator, {});
+        const tmp28 = hasOwnProperty(tmp(5828).ActivityIndicator, {});
         cResult[14] = tmp28;
         let tmp26 = tmp28;
       } else {
@@ -102,7 +102,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onCancel) => {
         const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", children: null };
         const intl2 = tmp(1119).intl;
         obj3.children = intl2.string(tmp(1119).t.DwTQE5);
-        const tmp31 = hasOwnProperty(tmp(4754).Text, obj3);
+        const tmp31 = hasOwnProperty(tmp(4786).Text, obj3);
         cResult[15] = tmp31;
         let tmp29 = tmp31;
       } else {

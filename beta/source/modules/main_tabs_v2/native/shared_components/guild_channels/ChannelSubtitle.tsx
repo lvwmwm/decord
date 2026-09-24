@@ -1,14 +1,14 @@
-// Module ID: 17130
-// Function ID: 17131
+// Module ID: 17140
+// Function ID: 17141
 // Name: guild_channels/ChannelSubtitle
-// Dependencies: [19, 21, 12214, 4754, 558, 568, 16566, 12211, 2]
+// Dependencies: [19, 21, 12250, 4786, 558, 568, 16576, 12247, 2]
 // Exports: renderChannelSubtitle
 
-// Module 17130 (guild_channels/ChannelSubtitle)
+// Module 17140 (guild_channels/ChannelSubtitle)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ChannelListLayout from "ChannelListLayout" /* 12214 */;
-import getChannelSubtitleData from "getChannelSubtitleData" /* 16566 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ChannelListLayout from "ChannelListLayout" /* 12250 */;
+import getChannelSubtitleData from "getChannelSubtitleData" /* 16576 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -69,12 +69,12 @@ let closure_3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj3.guildId = guildId;
     obj3.layout = layout;
     obj3.disableAnimatedEmoji = !("voice" === channelSubtitleData.type && connected);
-    result = tmp(12211).renderMessagePreviewMarkup(obj3);
+    result = tmp(12247).renderMessagePreviewMarkup(obj3);
     tmp10 = forResult;
     tmp12 = textProps;
-    Text = tmp(4754).Text;
+    Text = tmp(4786).Text;
     const tmp14 = "voice" === channelSubtitleData.type && connected;
-    const tmpResult2 = tmp(12211);
+    const tmpResult2 = tmp(12247);
   }
   cResult[0] = channelId;
   cResult[1] = connected;
@@ -109,8 +109,8 @@ let closure_3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj3.guildId = guildId;
     obj3.layout = layout;
     obj3.disableAnimatedEmoji = !("voice" === channelSubtitleData.type && connected);
-    obj2.children = tmp(12211).renderMessagePreviewMarkup(obj3);
-    return jsx(tmp(4754).Text, {});
+    obj2.children = tmp(12247).renderMessagePreviewMarkup(obj3);
+    return jsx(tmp(4786).Text, {});
   }
 });
 const size = fn(2);

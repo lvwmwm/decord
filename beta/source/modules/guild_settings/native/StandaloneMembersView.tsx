@@ -1,14 +1,14 @@
-// Module ID: 16921
-// Function ID: 16922
+// Module ID: 16931
+// Function ID: 16932
 // Name: StandaloneMembersView
-// Dependencies: [19, 21, 558, 568, 1488, 1616, 9833, 5839, 1119, 16922, 11966, 11980, 11982, 7246, 2]
+// Dependencies: [19, 21, 558, 568, 1488, 1616, 9865, 5871, 1119, 16932, 12002, 12016, 12018, 7278, 2]
 
-// Module 16921 (StandaloneMembersView)
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
-import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 11966 */;
-import KickConfirmDefault from "KickConfirm" /* 11980 */;
-import BanConfirmDefault from "BanConfirm" /* 11982 */;
-import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 16922 */;
+// Module 16931 (StandaloneMembersView)
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9865 */;
+import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 12002 */;
+import KickConfirmDefault from "KickConfirm" /* 12016 */;
+import BanConfirmDefault from "BanConfirm" /* 12018 */;
+import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 16932 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -54,11 +54,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   dependencyMap = tmp9;
   if (cResult[5] !== navigation) {
-    const headerCloseButton = tmp(5839).getHeaderCloseButton(() => navigation.goBack());
+    const headerCloseButton = tmp(5871).getHeaderCloseButton(() => navigation.goBack());
     cResult[5] = navigation;
     cResult[6] = headerCloseButton;
     let tmp10 = headerCloseButton;
-    const tmpResult = tmp(5839);
+    const tmpResult = tmp(5871);
   } else {
     tmp10 = cResult[6];
   }
@@ -67,7 +67,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       const obj = { title: null };
       const intl = guildId(1119).intl;
       obj.title = intl.string(guildId(1119).t["9Oq93m"]);
-      return jsx(guildId(5839).NavigatorHeader, { title: null });
+      return jsx(guildId(5871).NavigatorHeader, { title: null });
     };
     cResult[7] = fn2;
     let tmp12 = fn2;

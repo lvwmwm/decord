@@ -1,11 +1,11 @@
-// Module ID: 16783
-// Function ID: 16784
+// Module ID: 16793
+// Function ID: 16794
 // Name: ChannelPressableWrapper
-// Dependencies: [19, 17, 21, 12214, 2]
+// Dependencies: [19, 17, 21, 12250, 2]
 // Exports: renderChannelPressableWrapper
 
-// Module 16783 (ChannelPressableWrapper)
-import ChannelListLayout from "ChannelListLayout" /* 12214 */;
+// Module 16793 (ChannelPressableWrapper)
+import ChannelListLayout from "ChannelListLayout" /* 12250 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

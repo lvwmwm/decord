@@ -1,9 +1,9 @@
-// Module ID: 8015
-// Function ID: 8016
+// Module ID: 8047
+// Function ID: 8048
 // Name: ForumSearchStore
 // Dependencies: [2045, 504, 577, 2]
 
-// Module 8015 (ForumSearchStore)
+// Module 8047 (ForumSearchStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

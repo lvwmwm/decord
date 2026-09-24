@@ -1,16 +1,16 @@
-// Module ID: 8856
-// Function ID: 8857
+// Module ID: 8888
+// Function ID: 8889
 // Name: AgeVerificationGetStartedModal
-// Dependencies: [19, 21, 4758, 580, 4961, 5839, 8857, 8862, 8863, 8846, 558, 568, 1259, 8689, 1119, 7246, 2]
+// Dependencies: [19, 21, 4790, 580, 4993, 5871, 8889, 8894, 8895, 8878, 558, 568, 1259, 8721, 1119, 7278, 2]
 
-// Module 8856 (AgeVerificationGetStartedModal)
+// Module 8888 (AgeVerificationGetStartedModal)
 import nativeDefault from "native" /* 580 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8689 */;
-import GoogleWalletVerificationScreenDefault from "GoogleWalletVerificationScreen" /* 8846 */;
-import AgeVerificationIntroScreenDefault from "AgeVerificationIntroScreen" /* 8857 */;
-import AgeVerificationRetryScreenDefault from "AgeVerificationRetryScreen" /* 8862 */;
-import AgeVerificationEmbeddedIntroScreenDefault from "AgeVerificationEmbeddedIntroScreen" /* 8863 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8721 */;
+import GoogleWalletVerificationScreenDefault from "GoogleWalletVerificationScreen" /* 8878 */;
+import AgeVerificationIntroScreenDefault from "AgeVerificationIntroScreen" /* 8889 */;
+import AgeVerificationRetryScreenDefault from "AgeVerificationRetryScreen" /* 8894 */;
+import AgeVerificationEmbeddedIntroScreenDefault from "AgeVerificationEmbeddedIntroScreen" /* 8895 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -84,7 +84,7 @@ function getScreens(headerStyle, modalSessionId, entryPoint, classificationId, a
   return obj;
 }
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { headerStyle: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" } };
 let closure_5 = createStyles.createStyles(obj2);
 let obj4 = { INTRO: "INTRO", RETRY: "RETRY", EXPRESSIVE_INTRO: "EXPRESSIVE_INTRO", GOOGLE_WALLET_VERIFICATION: "GOOGLE_WALLET_VERIFICATION" };

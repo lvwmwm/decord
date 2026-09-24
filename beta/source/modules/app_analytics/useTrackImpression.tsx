@@ -1,20 +1,20 @@
-// Module ID: 9046
-// Function ID: 9047
+// Module ID: 9078
+// Function ID: 9079
 // Name: useTrackImpression
-// Dependencies: [19, 2045, 2099, 4580, 1246, 1253, 1245, 577, 4938, 558, 568, 1335, 4962, 5203, 2]
+// Dependencies: [19, 2045, 2099, 4612, 1246, 1253, 1245, 577, 4970, 558, 568, 1335, 4994, 5235, 2]
 
-// Module 9046 (useTrackImpression)
+// Module 9078 (useTrackImpression)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import AnalyticsUtils2 from "AnalyticsUtils" /* 1245 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
 import _modDef1335 from "module_1335" /* 1335 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
-import uniqueIdDefault from "uniqueId" /* 4962 */;
-import useMountEffectDefault from "useMountEffect" /* 5203 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
+import uniqueIdDefault from "uniqueId" /* 4994 */;
+import useMountEffectDefault from "useMountEffect" /* 5235 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 
 const require = globalThis.__r;
 
@@ -174,7 +174,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, curr
   noop = undefined;
   noop = noop.useRef(undefined);
   noop.useRef(undefined);
-  obj(5203)(() => {
+  obj(5235)(() => {
     if (obj.trackOnInitialLoad) {
       const tmp6 = _modDef1335(ref.current, closure_0);
       if (!tmp6) {
@@ -187,7 +187,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, curr
       if (!tmp6) {
         obj = {};
         const merged = Object.assign(tmp5);
-        obj.sequenceId = tmp2(4962)("impression_");
+        obj.sequenceId = tmp2(4994)("impression_");
         trackImpression(obj, tmp.disableTrack);
         const fn = () => {
           if (null != obj) {
@@ -211,7 +211,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, curr
       if (!tmp6) {
         obj = {};
         const merged = Object.assign(tmp5);
-        obj.sequenceId = tmp2(4962)("impression_");
+        obj.sequenceId = tmp2(4994)("impression_");
         trackImpression(obj, tmp.disableTrack);
         const fn = () => {
           if (null != obj) {

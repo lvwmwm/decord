@@ -1,13 +1,13 @@
-// Module ID: 9189
-// Function ID: 9190
+// Module ID: 9221
+// Function ID: 9222
 // Name: FloatingActionButton
-// Dependencies: [109, 19, 21, 4758, 580, 5193, 558, 568, 4497, 5187, 8179, 2]
+// Dependencies: [109, 19, 21, 4790, 580, 5225, 558, 568, 4529, 5219, 8211, 2]
 
-// Module 9189 (FloatingActionButton)
+// Module 9221 (FloatingActionButton)
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
-import spring from "spring" /* 5187 */;
-import ButtonConstants from "ButtonConstants" /* 5193 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
+import spring from "spring" /* 5219 */;
+import ButtonConstants from "ButtonConstants" /* 5225 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,7 +17,7 @@ require = fn;
 let closure_3 = ["icon", "positionBottom", "positionRight", "accessibilityLabel"];
 const jsx = fn(21).jsx;
 let c7 = 16;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 const styles = createStyles.createStyles(() => {
   const obj = { button: null, iconButtonPill: null };
   const merged = Object.assign(nativeDefault.shadows.SHADOW_HIGH);
@@ -203,8 +203,8 @@ export const FloatingActionButton = ReactCompilerGating.isReactCompilerEnabled()
       return rect;
     }
   }
-  let obj = positionBottom(4497);
-  F.__closure = { withSpring: positionBottom(5187).withSpring, positionBottom, DEFAULT_POSITION_OFFSET, SPRING_CONFIG, positionRight };
+  let obj = positionBottom(4529);
+  F.__closure = { withSpring: positionBottom(5219).withSpring, positionBottom, DEFAULT_POSITION_OFFSET, SPRING_CONFIG, positionRight };
   F.__workletHash = 9924952956188;
   F.__initData = __initData2;
   const animatedStyle = obj.useAnimatedStyle(F);
@@ -221,6 +221,6 @@ export const FloatingActionButton = ReactCompilerGating.isReactCompilerEnabled()
   }
   obj6.icon = cloneElementResult;
   ({ button: obj4.style, iconButtonPill: obj4.pillStyle } = tmp2);
-  obj3.children = jsx(positionBottom(8179).BaseIconButton, {});
-  return jsx(positionRight(4497).View, { style: animatedStyle, children: null });
+  obj3.children = jsx(positionBottom(8211).BaseIconButton, {});
+  return jsx(positionRight(4529).View, { style: animatedStyle, children: null });
 });

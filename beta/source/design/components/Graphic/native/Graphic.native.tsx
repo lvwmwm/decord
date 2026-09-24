@@ -1,12 +1,12 @@
-// Module ID: 10461
-// Function ID: 10462
+// Module ID: 10500
+// Function ID: 10501
 // Name: Graphic
-// Dependencies: [109, 19, 17, 21, 4758, 558, 568, 5802, 4471, 4576, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 558, 568, 5834, 4503, 4608, 2]
 
-// Module 10461 (Graphic)
+// Module 10500 (Graphic)
 import c from "c" /* 568 */;
-import GraphicTypes from "GraphicTypes" /* 4576 */;
-import FastImageDefault from "FastImage" /* 5802 */;
+import GraphicTypes from "GraphicTypes" /* 4608 */;
+import FastImageDefault from "FastImage" /* 5834 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -15,7 +15,7 @@ let closure_3 = ["aspectRatio", "style"];
 const View = fn(17).View;
 const jsx = fn(21).jsx;
 const dependencyMap = { "21/9": 2.3333333333333335, "16/9": 1.7777777777777777, "6/4": 1.5, "2/1": 2, "1/1": 1 };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ container: { width: "100%", justifyContent: "center", alignItems: "center", overflow: "hidden" }, image: { width: "100%", height: "100%" } });
 let ReactCompilerGating = fn(558);
 let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((src) => {
@@ -176,7 +176,7 @@ export const Graphic = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
     cResult[12] = tmp29;
     cResult[13] = items;
     tmp30 = items;
-    tmpResult2 = tmp(4576);
+    tmpResult2 = tmp(4608);
   }
 }) : ((aspectRatio) => {
   let str = aspectRatio.aspectRatio;

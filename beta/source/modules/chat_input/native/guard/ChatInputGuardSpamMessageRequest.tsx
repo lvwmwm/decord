@@ -1,9 +1,9 @@
-// Module ID: 12598
-// Function ID: 12599
+// Module ID: 12634
+// Function ID: 12635
 // Name: ChatInputGuardSpamMessageRequest
-// Dependencies: [19, 1376, 21, 558, 568, 1488, 504, 12599, 4458, 1119, 5812, 12591, 4769, 12597, 2]
+// Dependencies: [19, 1376, 21, 558, 568, 1488, 504, 12635, 4490, 1119, 5844, 12627, 4801, 12633, 2]
 
-// Module 12598 (ChatInputGuardSpamMessageRequest)
+// Module 12634 (ChatInputGuardSpamMessageRequest)
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -149,20 +149,20 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
   const items = [c4];
   const stateFromStores = channel(504).useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
   let obj2 = channel(504);
-  dependencyMap = channel(12599).useLongestChannelMessageBeforeReply(channel.id, channel.getRecipientId());
+  dependencyMap = channel(12635).useLongestChannelMessageBeforeReply(channel.id, channel.getRecipientId());
   const items1 = [navigation];
   const callback = noop.useCallback(() => {
     navigation.pop();
   }, items1);
-  const obj3 = channel(12599);
-  const messageRequestActions = channel(12591).useMessageRequestActions({
+  const obj3 = channel(12635);
+  const messageRequestActions = channel(12627).useMessageRequestActions({
     user: stateFromStores,
     onError() {
       const obj2 = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
       const intl = channel(1119).intl;
       obj2.content = intl.string(channel(1119).t["EDYbS+"]);
-      obj2.icon = navigation(5812);
-      navigation(4458).open(obj2);
+      obj2.icon = navigation(5844);
+      navigation(4490).open(obj2);
     },
     onRejectSuccess: callback
   });
@@ -175,15 +175,15 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
     tmp7 = isOptimisticRejected;
   }
   const obj6 = { type: "button-action", message: null, subtext: null, buttonPrimaryText: null, buttonPrimaryOnPress: null, buttonPrimaryDisabled: null, buttonPrimaryLoading: null, buttonPrimaryVariant: "destructive", buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonSecondaryDisabled: null, buttonSecondaryLoading: null };
-  const obj4 = channel(12591);
+  const obj4 = channel(12627);
   const obj5 = {
     user: stateFromStores,
     onError() {
       const obj2 = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
       const intl = channel(1119).intl;
       obj2.content = intl.string(channel(1119).t["EDYbS+"]);
-      obj2.icon = navigation(5812);
-      navigation(4458).open(obj2);
+      obj2.icon = navigation(5844);
+      navigation(4490).open(obj2);
     },
     onRejectSuccess: callback
   };
@@ -211,5 +211,5 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
   };
   obj6.buttonSecondaryDisabled = tmp7;
   obj6.buttonSecondaryLoading = isUserProfileLoading;
-  return tmp8(navigation(12597), obj6);
+  return tmp8(navigation(12633), obj6);
 }));

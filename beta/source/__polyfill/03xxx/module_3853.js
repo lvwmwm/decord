@@ -1,32 +1,9 @@
 // Module ID: 3853
 // Function ID: 3854
-// Dependencies: []
-// Exports: default
+// Dependencies: [1125]
 
 // Module 3853
+import registerAsset from "module_1125" /* 1125 */;
 
-export default function toInteger(arg0) {
-  if (null !== arg0) {
-    if (true !== arg0) {
-      if (false !== arg0) {
-        const _Number = Number;
-        const NumberResult = Number(arg0);
-        const _isNaN = isNaN;
-        if (isNaN(NumberResult)) {
-          return NumberResult;
-        } else {
-          if (NumberResult < 0) {
-            const _Math2 = Math;
-            let rounded = Math.ceil(NumberResult);
-          } else {
-            const _Math = Math;
-            rounded = Math.floor(NumberResult);
-          }
-          return rounded;
-        }
-      }
-    }
-  }
-  return NaN;
-};
-export default exports.default;
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Jpb3RfY3JlZGl0X2NhbXBhaWdu", scales: [1], hash: "249e51632407205ba876a4265a7df525", name: "fi.messages.249e51632407205ba876a4265a7df525.compiled.messages", type: "jsona" });

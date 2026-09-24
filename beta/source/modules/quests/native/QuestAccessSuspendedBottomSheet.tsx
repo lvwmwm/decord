@@ -1,16 +1,16 @@
-// Module ID: 15375
-// Function ID: 15376
+// Module ID: 15385
+// Function ID: 15386
 // Name: QuestAccessSuspendedBottomSheet
-// Dependencies: [19, 21, 558, 568, 4725, 15374, 12040, 1119, 10613, 5188, 2]
+// Dependencies: [19, 21, 558, 568, 4757, 15384, 12076, 1119, 10649, 5220, 2]
 
-// Module 15375 (QuestAccessSuspendedBottomSheet)
+// Module 15385 (QuestAccessSuspendedBottomSheet)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import PromoSheet from "PromoSheet" /* 10613 */;
-import openAccountStanding from "openAccountStanding" /* 12040 */;
-import openQuestAccessSuspendedBottomSheet from "openQuestAccessSuspendedBottomSheet" /* 15374 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import PromoSheet from "PromoSheet" /* 10649 */;
+import openAccountStanding from "openAccountStanding" /* 12076 */;
+import openQuestAccessSuspendedBottomSheet from "openQuestAccessSuspendedBottomSheet" /* 15384 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -50,8 +50,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl3 = tmp(1119).intl;
     obj3.text = intl3.string(tmp(1119).t.hvVgAZ);
     obj3.onPress = first;
-    obj2.actions = jsx(tmp(5188).Button, { grow: true, size: "lg", variant: "primary", text: null, onPress: null });
-    const tmp11 = jsx(tmp(10613).PromoSheet, { title: tmp5, description: tmp6, actions: null });
+    obj2.actions = jsx(tmp(5220).Button, { grow: true, size: "lg", variant: "primary", text: null, onPress: null });
+    const tmp11 = jsx(tmp(10649).PromoSheet, { title: tmp5, description: tmp6, actions: null });
     cResult[3] = tmp11;
     let tmp9 = tmp11;
   } else {

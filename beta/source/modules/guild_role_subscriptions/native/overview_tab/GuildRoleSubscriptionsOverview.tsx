@@ -1,23 +1,23 @@
-// Module ID: 16886
-// Function ID: 16887
+// Module ID: 16896
+// Function ID: 16897
 // Name: GuildRoleSubscriptionsOverview
-// Dependencies: [19, 5496, 4584, 2067, 21, 4754, 558, 568, 1119, 16887, 9478, 16888, 15472, 565, 7495, 5718, 5111, 1105, 2]
+// Dependencies: [19, 5528, 4616, 2067, 21, 4786, 558, 568, 1119, 16897, 9510, 16898, 15482, 565, 7527, 5750, 5143, 1105, 2]
 
-// Module 16886 (GuildRoleSubscriptionsOverview)
+// Module 16896 (GuildRoleSubscriptionsOverview)
 import c from "c" /* 568 */;
 import router_utils from "router_utils" /* 1105 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5111 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9478 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 16887 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5143 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9510 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 16897 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4584 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5528 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4616 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
-const GroupListingsFetchContext = tmp(15472);
-const GuildRoleSubscriptionPurchasePageDefault = tmp4(16888);
+const GroupListingsFetchContext = tmp(15482);
+const GuildRoleSubscriptionPurchasePageDefault = tmp4(16898);
 require = fn;
 function serverNameHook(children) {
   return jsx(Text_Text.Text, { variant: "heading-lg/extrabold", color: "interactive-text-active", children });

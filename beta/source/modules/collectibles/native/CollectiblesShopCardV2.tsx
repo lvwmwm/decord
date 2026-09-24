@@ -1,20 +1,20 @@
-// Module ID: 9042
-// Function ID: 9043
+// Module ID: 9074
+// Function ID: 9075
 // Name: CollectiblesShopCardV2
-// Dependencies: [19, 17, 1186, 7789, 1080, 21, 4758, 580, 558, 568, 9043, 7800, 9044, 8452, 9047, 9048, 1119, 4458, 7409, 9106, 9108, 4610, 504, 7801, 4754, 9109, 9111, 9113, 8938, 9114, 9116, 9121, 9124, 5341, 9045, 4725, 8450, 4418, 9119, 9146, 9147, 1259, 2]
+// Dependencies: [19, 17, 1186, 7821, 1080, 21, 4790, 580, 558, 568, 9075, 7832, 9076, 8484, 9079, 9080, 1119, 4490, 7441, 9138, 9140, 4642, 504, 7833, 4786, 9141, 9143, 9145, 8970, 9146, 9148, 9153, 9156, 5373, 9077, 4757, 8482, 4450, 9151, 9178, 9179, 1259, 2]
 
-// Module 9042 (CollectiblesShopCardV2)
+// Module 9074 (CollectiblesShopCardV2)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7801 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8450 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9045 */;
-import LimitedTimeBadgeDefault from "LimitedTimeBadge" /* 9113 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7833 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8482 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9077 */;
+import LimitedTimeBadgeDefault from "LimitedTimeBadge" /* 9145 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7789 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7821 */;
 
 const require = globalThis.__r;
 
@@ -30,7 +30,7 @@ if (PixelRatio.getFontScale() >= 1.78) {
   num = 302;
 }
 let c11 = 150;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { card: null, topRowOverlay: null, badge: null, badgePill: null, badgeOverrideText: null, badgePillDarkMode: null, badgePillLightMode: null, wishlistButton: null };
 let size = { position: "relative", height: num, width: 150, display: "flex", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
 obj.card = size;

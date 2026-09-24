@@ -1,22 +1,22 @@
-// Module ID: 16222
-// Function ID: 16223
+// Module ID: 16232
+// Function ID: 16233
 // Name: ActivityPrivacyDefaultSharingSetting
-// Dependencies: [19, 8238, 558, 568, 1190, 1119, 2023, 16223, 15118, 4725, 16224, 1984, 11594, 2]
+// Dependencies: [19, 8270, 558, 568, 1190, 1119, 2023, 16233, 15128, 4757, 16234, 1984, 11630, 2]
 
-// Module 16222 (ActivityPrivacyDefaultSharingSetting)
+// Module 16232 (ActivityPrivacyDefaultSharingSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import ActivityPrivacyMatchingExperiment from "ActivityPrivacyMatchingExperiment" /* 16223 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import ActivityPrivacyMatchingExperiment from "ActivityPrivacyMatchingExperiment" /* 16233 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 fn(558);
 let ReactCompilerGating = fn(558);
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -77,7 +77,7 @@ const radio = SettingBuilders.createRadio({
     const intl = util.intl;
     return intl.string(util.t.vpgck1);
   },
-  parent: fn(8238).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: fn(8270).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   usePredicate() {
     return ActivityPrivacyMatchingExperiment.useIsInActivityPrivacyCopyExperiment("ActivityPrivacyDefaultSharingSetting");
   },
@@ -147,16 +147,16 @@ const radio = SettingBuilders.createRadio({
     const DefaultGuildsActivityRestrictedV22 = UserSettings.DefaultGuildsActivityRestrictedV2;
     DefaultGuildsActivityRestrictedV22.updateSetting(NumberResult);
     if (obj.getIsInActivityPrivacyUpsellExperiment("ActivityPrivacyDefaultSharingSetting")) {
-      const affectedGuilds = tmp2(15118).computeAffectedGuilds(setting, NumberResult);
+      const affectedGuilds = tmp2(15128).computeAffectedGuilds(setting, NumberResult);
       if (null != affectedGuilds) {
-        const activityRestrictionSettingName = tmp2(15118).getActivityRestrictionSettingName(NumberResult);
-        const tmp2Result2 = tmp2(15118);
+        const activityRestrictionSettingName = tmp2(15128).getActivityRestrictionSettingName(NumberResult);
+        const tmp2Result2 = tmp2(15128);
         const obj2 = { direction: null, affectedGuildIds: null, settingName: null };
         ({ direction: obj5.direction, affectedGuildIds: obj5.affectedGuildIds } = affectedGuilds);
         obj2.settingName = activityRestrictionSettingName;
-        ActionSheetActionCreatorsDefault.openLazy(tmp2(1984)(16224, dependencyMap.paths), "ActivityPrivacyUpsellActionSheet", obj2);
+        ActionSheetActionCreatorsDefault.openLazy(tmp2(1984)(16234, dependencyMap.paths), "ActivityPrivacyUpsellActionSheet", obj2);
       }
-      const tmp2Result = tmp2(15118);
+      const tmp2Result = tmp2(15128);
     }
   }
 });

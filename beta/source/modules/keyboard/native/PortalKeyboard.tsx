@@ -1,11 +1,11 @@
-// Module ID: 4631
-// Function ID: 4632
+// Module ID: 4663
+// Function ID: 4664
 // Name: PortalKeyboard
-// Dependencies: [19, 21, 558, 568, 4616, 1368, 4632, 2]
+// Dependencies: [19, 21, 558, 568, 4648, 1368, 4664, 2]
 
-// Module 4631 (PortalKeyboard)
+// Module 4663 (PortalKeyboard)
 import c from "c" /* 568 */;
-import Portal from "Portal" /* 4632 */;
+import Portal from "Portal" /* 4664 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -28,7 +28,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
       return tmp5;
     }
     const obj3 = { hostName: tmp4, children };
-    const tmp7 = jsx(tmp(4632).Portal, { hostName: tmp4, children });
+    const tmp7 = jsx(tmp(4664).Portal, { hostName: tmp4, children });
     cResult[0] = children;
     cResult[1] = tmp4;
     cResult[2] = tmp7;
@@ -42,7 +42,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
       let tmp3 = modal;
     }
     const obj2 = { hostName: tmp3, children: children.children };
-    return jsx(tmp(4632).Portal, { hostName: tmp3, children: children.children });
+    return jsx(tmp(4664).Portal, { hostName: tmp3, children: children.children });
   }
   tmp3 = c3;
 });

@@ -1,11 +1,11 @@
-// Module ID: 17274
-// Function ID: 17275
+// Module ID: 17284
+// Function ID: 17285
 // Name: BadgeCustomizationProfileCoachmark
-// Dependencies: [19, 1376, 2042, 558, 568, 4418, 504, 1119, 4471, 10452, 2]
+// Dependencies: [19, 1376, 2042, 558, 568, 4450, 504, 1119, 4503, 10491, 2]
 
-// Module 17274 (BadgeCustomizationProfileCoachmark)
+// Module 17284 (BadgeCustomizationProfileCoachmark)
 import util from "util" /* 1119 */;
-import native from "native" /* 4471 */;
+import native from "native" /* 4503 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -49,7 +49,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onTryItOut) => {
     cResult[4] = stringResult1;
   } else {
     if (cResult[5] !== visible) {
-      const obj2 = { type: "rive", rive: tmp(4471).BadgesCoachmarkRive, aspectRatio: "16/9", riveProps: null };
+      const obj2 = { type: "rive", rive: tmp(4503).BadgesCoachmarkRive, aspectRatio: "16/9", riveProps: null };
       const obj3 = { dataBinding: null };
       const obj4 = { on: visible };
       obj3.dataBinding = obj4;
@@ -90,7 +90,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onTryItOut) => {
               if (cResult[17] === visible) {
                 let tmp18 = cResult[18];
               }
-              const coachmark = tmp(10452).useCoachmark(onTryItOut.targetRef, tmp18);
+              const coachmark = tmp(10491).useCoachmark(onTryItOut.targetRef, tmp18);
               return null;
             }
           }

@@ -1,10 +1,10 @@
-// Module ID: 12329
-// Function ID: 12330
+// Module ID: 12365
+// Function ID: 12366
 // Name: MobileVisualRefreshExperiment
 // Dependencies: [1439, 558, 568, 2]
 // Exports: isMobileVisualRefreshEnabled, resolveRefreshToken
 
-// Module 12329 (MobileVisualRefreshExperiment)
+// Module 12365 (MobileVisualRefreshExperiment)
 import c from "c" /* 568 */;
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1439 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 9301
-// Function ID: 9302
+// Module ID: 9333
+// Function ID: 9334
 // Name: useApplicationWidgetConfigs
-// Dependencies: [19, 9302, 558, 568, 2023, 504, 1374, 9303, 2]
+// Dependencies: [19, 9334, 558, 568, 2023, 504, 1374, 9335, 2]
 
-// Module 9301 (useApplicationWidgetConfigs)
+// Module 9333 (useApplicationWidgetConfigs)
 import GlobalUtils from "GlobalUtils" /* 1374 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 9303 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 9335 */;
 import noop from "module_19" /* 19 */;
-import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 9302 */;
+import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 9334 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const FetchState = fn(9302).FetchState;
+const FetchState = fn(9334).FetchState;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/application_widget/hooks/useApplicationWidgetConfigs.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 17175
-// Function ID: 17176
+// Module ID: 17185
+// Function ID: 17186
 // Name: SearchFetchPendingManager
-// Dependencies: [19, 12486, 558, 568, 5813, 2]
+// Dependencies: [19, 12522, 558, 568, 5845, 2]
 
-// Module 17175 (SearchFetchPendingManager)
-import useInitialValueDefault from "useInitialValue" /* 5813 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12486 */;
+// Module 17185 (SearchFetchPendingManager)
+import useInitialValueDefault from "useInitialValue" /* 5845 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12522 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

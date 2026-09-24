@@ -1,14 +1,14 @@
-// Module ID: 16094
-// Function ID: 16095
+// Module ID: 16104
+// Function ID: 16105
 // Name: UserSettingsDesignSystemStack
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4754, 5824, 5186, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4786, 5856, 5218, 2]
 
-// Module 16094 (UserSettingsDesignSystemStack)
+// Module 16104 (UserSettingsDesignSystemStack)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import Card from "Card" /* 5824 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import Card from "Card" /* 5856 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c2, ScrollView: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: 16, flex: 1, alignItems: "center" }, block: { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, height: 80, flex: 1 } };
 let closure_6 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -43,8 +43,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(11);
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp8 = React4(tmp(4754).Text, { variant: "text-lg/bold", children: "Basic Example" });
-    const tmp9 = React4(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "By default, stacks are vertical and have a spacing of 8." });
+    const tmp8 = React4(tmp(4786).Text, { variant: "text-lg/bold", children: "Basic Example" });
+    const tmp9 = React4(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "By default, stacks are vertical and have a spacing of 8." });
     cResult[0] = tmp8;
     cResult[1] = tmp9;
     tmp5 = tmp8;
@@ -59,18 +59,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj4 = { children: null };
     const items1 = [React4(closure_7, {}), React4(closure_7, {})];
     obj4.children = items1;
-    items[2] = hasOwnProperty(tmp(5186).Stack, obj4);
+    items[2] = hasOwnProperty(tmp(5218).Stack, obj4);
     obj3.children = items;
-    obj2.children = hasOwnProperty(tmp(5186).Stack, obj3);
-    const tmp14 = React4(tmp(5824).Card, obj2);
+    obj2.children = hasOwnProperty(tmp(5218).Stack, obj3);
+    const tmp14 = React4(tmp(5856).Card, obj2);
     cResult[2] = tmp14;
     let tmp10 = tmp14;
   } else {
     tmp10 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp18 = React4(tmp(4754).Text, { variant: "text-lg/bold", children: "Spacing" });
-    const tmp19 = React4(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "You can control the spacing with the spacing prop. The spacing prop uses our 4px-based spacing scale. By default, stacks are vertical and have a spacing of 8." });
+    const tmp18 = React4(tmp(4786).Text, { variant: "text-lg/bold", children: "Spacing" });
+    const tmp19 = React4(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "You can control the spacing with the spacing prop. The spacing prop uses our 4px-based spacing scale. By default, stacks are vertical and have a spacing of 8." });
     cResult[3] = tmp18;
     cResult[4] = tmp19;
     let tmp16 = tmp19;
@@ -86,18 +86,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj7 = { spacing: 24, children: null };
     const items3 = [React4(closure_7, {}), React4(closure_7, {})];
     obj7.children = items3;
-    items2[2] = hasOwnProperty(tmp(5186).Stack, obj7);
+    items2[2] = hasOwnProperty(tmp(5218).Stack, obj7);
     obj6.children = items2;
-    obj5.children = hasOwnProperty(tmp(5186).Stack, obj6);
-    const tmp24 = React4(tmp(5824).Card, obj5);
+    obj5.children = hasOwnProperty(tmp(5218).Stack, obj6);
+    const tmp24 = React4(tmp(5856).Card, obj5);
     cResult[5] = tmp24;
     let tmp20 = tmp24;
   } else {
     tmp20 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp28 = React4(tmp(4754).Text, { variant: "text-lg/bold", children: "Horizontal" });
-    const tmp29 = React4(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "You can control the direction with the direction prop. The direction prop can be either horizontal or vertical." });
+    const tmp28 = React4(tmp(4786).Text, { variant: "text-lg/bold", children: "Horizontal" });
+    const tmp29 = React4(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "You can control the direction with the direction prop. The direction prop can be either horizontal or vertical." });
     cResult[6] = tmp28;
     cResult[7] = tmp29;
     let tmp26 = tmp29;
@@ -115,12 +115,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj11 = { direction: "horizontal", children: null };
     const items6 = [React4(closure_7, {}), React4(closure_7, {})];
     obj11.children = items6;
-    items5[2] = hasOwnProperty(tmp(5186).Stack, obj11);
+    items5[2] = hasOwnProperty(tmp(5218).Stack, obj11);
     obj10.children = items5;
-    obj9.children = hasOwnProperty(tmp(5186).Stack, obj10);
-    items4[2] = React4(tmp(5824).Card, obj9);
+    obj9.children = hasOwnProperty(tmp(5218).Stack, obj10);
+    items4[2] = React4(tmp(5856).Card, obj9);
     obj8.children = items4;
-    const tmp34 = hasOwnProperty(tmp(5186).Stack, obj8);
+    const tmp34 = hasOwnProperty(tmp(5218).Stack, obj8);
     cResult[8] = tmp34;
     let tmp30 = tmp34;
   } else {

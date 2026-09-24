@@ -1,30 +1,30 @@
-// Module ID: 15456
-// Function ID: 15457
+// Module ID: 15466
+// Function ID: 15467
 // Name: QuestDockInsetHeaderBody
-// Dependencies: [19, 17, 15351, 21, 580, 4758, 558, 568, 11899, 11898, 15348, 1616, 15417, 4754, 5188, 1181, 15420, 2]
+// Dependencies: [19, 17, 15361, 21, 580, 4790, 558, 568, 11935, 11934, 15358, 1616, 15427, 4786, 5220, 1181, 15430, 2]
 
-// Module 15456 (QuestDockInsetHeaderBody)
+// Module 15466 (QuestDockInsetHeaderBody)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import QuestRewardTileDefault from "QuestRewardTile" /* 11898 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 11899 */;
-import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 15417 */;
-import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 15420 */;
+import QuestRewardTileDefault from "QuestRewardTile" /* 11934 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 11935 */;
+import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 15427 */;
+import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 15430 */;
 import noop from "module_19" /* 19 */;
 
 const native = Button(1181);
-const Text_Text = Button(4754);
-const components_Button_Button = Button(5188);
-const QuestDockHooks = Button(15348);
+const Text_Text = Button(4786);
+const components_Button_Button = Button(5220);
+const QuestDockHooks = Button(15358);
 require = fn;
 const View = fn(17).View;
-const QuestDockConstants = fn(15351);
+const QuestDockConstants = fn(15361);
 const QUEST_DOCK_EXPANDED_PADDING_BOTTOM = QuestDockConstants.QUEST_DOCK_EXPANDED_PADDING_BOTTOM;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const PX_80 = nativeDefault.space.PX_80;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { rewardTile: { borderRadius: nativeDefault.radii.lg }, wrapper: { flexGrow: 1, flexShrink: 0, justifyContent: "flex-end", paddingHorizontal: QuestDockConstants.QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL, paddingBottom: QUEST_DOCK_EXPANDED_PADDING_BOTTOM }, rewardContentContainer: { position: "relative" }, rewardContentWrapper: null, contentBadge: null, rewardContent: null, rewardContentCopy: null, premiumRewardPerkPill: null, titleRow: null, questDockCtaWrapper: null, questDockCta: null, questDockCtaRow: null, questDockCtaSaparator: null };
 let obj3 = { borderRadius: nativeDefault.radii.lg };
 obj.rewardContentWrapper = { borderRadius: nativeDefault.modules.mobile.QUEST_DOCK_BORDER_RADIUS, overflow: "hidden", padding: 8, paddingRight: 16 };
@@ -131,7 +131,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp13 = hasOwnProperty(tmp7(15417), {});
+      const tmp13 = hasOwnProperty(tmp7(15427), {});
       cResult[5] = tmp13;
       let tmp11 = tmp13;
     } else {
@@ -226,7 +226,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
                                                 const obj6 = { visible: tmp4, glow: true, style: tmp10, children: null };
                                                 const items = [tmp46, tmp65];
                                                 obj6.children = items;
-                                                const tmp71 = timestampProducer(tmp7(15420), obj6);
+                                                const tmp71 = timestampProducer(tmp7(15430), obj6);
                                                 cResult[53] = tmp4;
                                                 cResult[54] = tmp46;
                                                 cResult[55] = tmp65;
@@ -425,7 +425,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     }
     obj14.icon = renderCtaIconResult;
     obj14.text = ctaText;
-    let tmp8Result4 = tmp8(tmp2(5188).Button, obj14);
+    let tmp8Result4 = tmp8(tmp2(5220).Button, obj14);
   } else {
     const obj15 = { style: tmp.questDockCta, onPress: onCtaPress, loading: ctaLoading, renderIcon: renderCtaIcon, text: ctaText, shineDisabled: !isQuestDockExpanded };
     tmp8Result4 = tmp8(tmp2(1181).ShinyButton, obj15);

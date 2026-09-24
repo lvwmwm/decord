@@ -1,14 +1,14 @@
-// Module ID: 17961
-// Function ID: 17962
+// Module ID: 17971
+// Function ID: 17972
 // Name: TriggerFields
-// Dependencies: [19, 21, 558, 568, 17947, 4754, 1119, 17962, 17963, 17967, 17971, 2]
+// Dependencies: [19, 21, 558, 568, 17957, 4786, 1119, 17972, 17973, 17977, 17981, 2]
 
-// Module 17961 (TriggerFields)
+// Module 17971 (TriggerFields)
 import c from "c" /* 568 */;
-import MentionSpamTriggerFieldsDefault from "MentionSpamTriggerFields" /* 17962 */;
-import DefaultKeywordListTriggerFieldsDefault from "DefaultKeywordListTriggerFields" /* 17963 */;
-import ApplicationTriggerFieldsDefault from "ApplicationTriggerFields" /* 17967 */;
-import KeywordFilterTriggerFieldsDefault from "KeywordFilterTriggerFields" /* 17971 */;
+import MentionSpamTriggerFieldsDefault from "MentionSpamTriggerFields" /* 17972 */;
+import DefaultKeywordListTriggerFieldsDefault from "DefaultKeywordListTriggerFields" /* 17973 */;
+import ApplicationTriggerFieldsDefault from "ApplicationTriggerFields" /* 17977 */;
+import KeywordFilterTriggerFieldsDefault from "KeywordFilterTriggerFields" /* 17981 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -28,7 +28,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const intl = tmp(1119).intl;
       stringResult = intl.string(tmp(1119).t["1YgPj/"]);
       obj3.children = stringResult;
-      const tmp28 = jsx(tmp(4754).Text, { variant: "text-md/normal", color: "text-default", children: null });
+      const tmp28 = jsx(tmp(4786).Text, { variant: "text-md/normal", color: "text-default", children: null });
       cResult[0] = tmp28;
       let first = tmp28;
     } else {
@@ -66,7 +66,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             if (!tmpResult8.isRuleKeywordFilter(rule)) {
               return null;
             }
-            tmpResult8 = tmp(17947);
+            tmpResult8 = tmp(17957);
           }
           if (cResult[10] === onChangeRule) {
           }
@@ -75,13 +75,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           cResult[10] = onChangeRule;
           cResult[11] = rule;
           cResult[12] = tmp8;
-          tmpResult7 = tmp(17947);
+          tmpResult7 = tmp(17957);
         }
-        tmpResult6 = tmp(17947);
+        tmpResult6 = tmp(17957);
       }
-      tmpResult5 = tmp(17947);
+      tmpResult5 = tmp(17957);
     }
-    tmpResult = tmp(17947);
+    tmpResult = tmp(17957);
   }
 }) : ((arg0) => {
   ({ rule, onChangeRule } = arg0);
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj2 = { variant: "text-md/normal", color: "text-default", children: null };
     const intl = tmp(1119).intl;
     obj2.children = intl.string(tmp(1119).t["1YgPj/"]);
-    let tmp3 = jsx(tmp(4754).Text, { variant: "text-md/normal", color: "text-default", children: null });
+    let tmp3 = jsx(tmp(4786).Text, { variant: "text-md/normal", color: "text-default", children: null });
   } else {
     if (tmpResult.isRuleMentionSpamFilter(rule)) {
       const obj3 = { rule, onChangeRule };
@@ -108,15 +108,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp3 = jsx(KeywordFilterTriggerFieldsDefault, { rule, onChangeRule });
           } else {
             tmp3 = null;
-            const tmpResult8 = tmp(17947);
+            const tmpResult8 = tmp(17957);
           }
-          tmpResult7 = tmp(17947);
+          tmpResult7 = tmp(17957);
         }
-        tmpResult6 = tmp(17947);
+        tmpResult6 = tmp(17957);
       }
-      tmpResult5 = tmp(17947);
+      tmpResult5 = tmp(17957);
     }
-    tmpResult = tmp(17947);
+    tmpResult = tmp(17957);
   }
   return tmp3;
 });

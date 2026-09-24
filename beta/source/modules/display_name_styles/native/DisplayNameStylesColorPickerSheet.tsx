@@ -1,16 +1,16 @@
-// Module ID: 15614
-// Function ID: 15615
+// Module ID: 15624
+// Function ID: 15625
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 1394, 1078, 21, 4758, 580, 558, 568, 8444, 11206, 4726, 4725, 14860, 1245, 1119, 2876, 15604, 5188, 1096, 12, 1395, 15612, 7397, 2]
+// Dependencies: [32, 19, 17, 1394, 1078, 21, 4790, 580, 558, 568, 8476, 11242, 4758, 4757, 14898, 1245, 1119, 2876, 15614, 5220, 1096, 12, 1395, 15622, 7429, 2]
 
-// Module 15614 (DisplayNameStylesColorPickerSheet)
+// Module 15624 (DisplayNameStylesColorPickerSheet)
 import nativeDefault from "native" /* 580 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import HapticUtils from "HapticUtils" /* 4726 */;
-import useDisplayNameStylesEffectDefaultColorsDefault from "useDisplayNameStylesEffectDefaultColors" /* 11206 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14860 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import HapticUtils from "HapticUtils" /* 4758 */;
+import useDisplayNameStylesEffectDefaultColorsDefault from "useDisplayNameStylesEffectDefaultColors" /* 11242 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14898 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,7 +21,7 @@ const getColorPresetsForEffect = fn(1394).getColorPresetsForEffect;
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1 }, contentContainer: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 }, presetGrid: null, presetRow: null, presetColor: null, presetColorSelected: null, buttonsContainer: null, button: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 obj2.presetGrid = { gap: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16 };
@@ -46,7 +46,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = onSelectColor(568);
   importDefault = closure_11();
   let tmp2 = closure_11();
-  const bottomSheetRef = onSelectColor(8444).useBottomSheetRef().bottomSheetRef;
+  const bottomSheetRef = onSelectColor(8476).useBottomSheetRef().bottomSheetRef;
   let tmp3 = useDisplayNameStylesEffectDefaultColorsDefault()[selectedEffectId];
   dependencyMap = tmp3;
   if (cResult[0] !== selectedEffectId) {

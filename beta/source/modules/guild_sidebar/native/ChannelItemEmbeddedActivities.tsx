@@ -1,13 +1,13 @@
-// Module ID: 16572
-// Function ID: 16573
+// Module ID: 16582
+// Function ID: 16583
 // Name: ChannelItemEmbeddedActivities
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 7419, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 7451, 4786, 2]
 
-// Module 16572 (ChannelItemEmbeddedActivities)
+// Module 16582 (ChannelItemEmbeddedActivities)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import GameIcon from "GameIcon" /* 7419 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import GameIcon from "GameIcon" /* 7451 */;
 import noop from "module_19" /* 19 */;
 
 const GameIconDefault = GameIcon;
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { overflow: { lineHeight: 16, textAlign: "center", textAlignVertical: "center", padding: 4 }, overflowContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, display: "flex", alignItems: "center", justifyContent: "center" }, container: { display: "flex", flexDirection: "row" }, modeMuted: { opacity: 0.3 } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -28,7 +28,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = c.c(20);
   ({ embeddedApps, size, muted } = arg0);
   if (undefined === size) {
-    size = tmp(7419).GameIconSizes.SIZE_24;
+    size = tmp(7451).GameIconSizes.SIZE_24;
   }
   const tmp4 = closure_6();
   if (embeddedApps.length <= 0) {
@@ -56,7 +56,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const application = embeddedApps[0].application;
     overflowContainer = embeddedApps[1].application;
     const diff = embeddedApps.length - 1;
-    const tmp25 = tmp(7419).GameIconImageSize[size];
+    const tmp25 = tmp(7451).GameIconImageSize[size];
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { marginRight: 4 };
@@ -112,7 +112,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj8 = { style: tmp4.overflow, variant: "text-xs/bold", children: null };
         const _HermesInternal = HermesInternal;
         obj8.children = "+" + diff;
-        obj6.children = React4(tmp(4754).Text, obj8);
+        obj6.children = React4(tmp(4786).Text, obj8);
         tmp13 = React4(View, obj6);
       }
       cResult[8] = embeddedApps.length;

@@ -1,12 +1,12 @@
-// Module ID: 17272
-// Function ID: 17273
+// Module ID: 17282
+// Function ID: 17283
 // Name: useOwnsAnyBadge
-// Dependencies: [1376, 8466, 558, 568, 504, 8460, 8516, 2]
+// Dependencies: [1376, 8498, 558, 568, 504, 8492, 8548, 2]
 
-// Module 17272 (useOwnsAnyBadge)
-import useBadgesDefault from "useBadges" /* 8516 */;
+// Module 17282 (useOwnsAnyBadge)
+import useBadgesDefault from "useBadges" /* 8548 */;
 import UserStore from "UserStore" /* 1376 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8466 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8498 */;
 
 const require = fn;
 const ReactCompilerGating = fn(558);

@@ -1,13 +1,13 @@
-// Module ID: 6702
-// Function ID: 6703
+// Module ID: 6734
+// Function ID: 6735
 // Name: SleepingWumpusSpotIllustration
-// Dependencies: [21, 558, 568, 6703, 5802, 2]
+// Dependencies: [21, 558, 568, 6735, 5834, 2]
 
-// Module 6702 (SleepingWumpusSpotIllustration)
+// Module 6734 (SleepingWumpusSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6703 from "module_6703" /* 6703 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6735 from "module_6735" /* 6735 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const SleepingWumpusSpotIllustration = ReactCompilerGating.isReactCompile
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6703 };
+    const obj2 = { uri: _modDef6735 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const SleepingWumpusSpotIllustration = ReactCompilerGating.isReactCompile
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6703 };
+  const obj2 = { uri: _modDef6735 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

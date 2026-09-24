@@ -1,9 +1,9 @@
-// Module ID: 5734
-// Function ID: 5735
+// Module ID: 5766
+// Function ID: 5767
 // Name: autocompleter/AutocompleterConstants
 // Dependencies: [2]
 
-// Module 5734 (autocompleter/AutocompleterConstants)
+// Module 5766 (autocompleter/AutocompleterConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/autocompleter/AutocompleterConstants.tsx");

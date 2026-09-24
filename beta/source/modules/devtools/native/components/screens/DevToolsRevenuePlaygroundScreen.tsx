@@ -1,32 +1,32 @@
-// Module ID: 15989
-// Function ID: 15990
+// Module ID: 15999
+// Function ID: 16000
 // Name: DevToolsRevenuePlaygroundScreen
-// Dependencies: [5, 32, 19, 17, 8341, 7900, 1224, 2045, 2099, 1376, 4757, 1378, 21, 577, 565, 1275, 4458, 5822, 5829, 5903, 7442, 7703, 1181, 580, 11038, 4758, 7694, 4725, 15990, 1984, 558, 568, 7446, 15993, 11347, 11920, 4961, 15994, 15997, 16001, 16003, 16006, 2]
+// Dependencies: [5, 32, 19, 17, 8373, 7932, 1224, 2045, 2099, 1376, 4789, 1378, 21, 577, 565, 1275, 4490, 5854, 5861, 5935, 7474, 7735, 1181, 580, 11074, 4790, 7726, 4757, 16000, 1984, 558, 568, 7478, 16003, 11383, 11956, 4993, 16004, 16007, 16011, 16013, 16016, 2]
 
-// Module 15989 (DevToolsRevenuePlaygroundScreen)
+// Module 15999 (DevToolsRevenuePlaygroundScreen)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import TableRow from "TableRow" /* 5822 */;
-import TableRowArrow from "TableRowArrow" /* 5829 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7442 */;
-import TableSwitchRow from "TableSwitchRow" /* 7446 */;
-import IAPUtils from "IAPUtils" /* 11347 */;
-import BundleUpdaterDefault from "BundleUpdater" /* 11920 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import TableRow from "TableRow" /* 5854 */;
+import TableRowArrow from "TableRowArrow" /* 5861 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7474 */;
+import TableSwitchRow from "TableSwitchRow" /* 7478 */;
+import IAPUtils from "IAPUtils" /* 11383 */;
+import BundleUpdaterDefault from "BundleUpdater" /* 11956 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8341 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7900 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8373 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7932 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import UserStore from "UserStore" /* 1376 */;
-import DevSettingsStore from "DevSettingsStore" /* 4757 */;
+import DevSettingsStore from "DevSettingsStore" /* 4789 */;
 
 require = fn;
 function describeServerError(status) {
@@ -655,7 +655,7 @@ function FriendAnniversary() {
   return closure_18(closure_19, obj16);
 }
 function TrialOfferSheetExample() {
-  premiumTrialOffer = premiumTrialOffer(7694).usePremiumTrialOffer();
+  premiumTrialOffer = premiumTrialOffer(7726).usePremiumTrialOffer();
   let obj2 = {
     label: "Trial Offer Nitro Basic",
     subLabel: "No trial offer in store",
@@ -669,13 +669,13 @@ function TrialOfferSheetExample() {
 
             }
         };
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15990, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16000, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
-  items = [closure_17(premiumTrialOffer(5822).TableRow, obj2), ];
+  items = [closure_17(premiumTrialOffer(5854).TableRow, obj2), ];
   const obj3 = { title: "Trial Offers", hasIcons: false, children: null };
-  items[1] = closure_17(premiumTrialOffer(5822).TableRow, {
+  items[1] = closure_17(premiumTrialOffer(5854).TableRow, {
     label: "Trial Offer Nitro",
     subLabel: "No trial offer in store",
     disabled: null == premiumTrialOffer,
@@ -688,12 +688,12 @@ function TrialOfferSheetExample() {
 
             }
         };
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15990, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16000, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   });
   obj3.children = items;
-  return closure_18(premiumTrialOffer(5903).TableRowGroup, obj3);
+  return closure_18(premiumTrialOffer(5935).TableRowGroup, obj3);
 }
 function PaymentFlowTest() {
   const obj = {
@@ -767,7 +767,7 @@ function GuildTagBadges() {
   return constants(TableRowGroup.TableRowGroup, obj);
 }
 const ScrollView = fn(17).ScrollView;
-const DevSettingsCategory = fn(4757).DevSettingsCategory;
+const DevSettingsCategory = fn(4789).DevSettingsCategory;
 const PremiumConstants = fn(1378);
 ({ GiftIntentType: closure_15, PremiumTypes: closure_16 } = PremiumConstants);
 const jsxProd = fn(21);
@@ -775,7 +775,7 @@ const jsxProd = fn(21);
 let items = [{ label: "None", value: null }, { label: "1", value: 1 }, { label: "2", value: 2 }, { label: "3", value: 3 }, { label: "4", value: 4 }, { label: "5", value: 5 }, { label: "10", value: 10 }, { label: "25", value: 25 }];
 let c21 = "/users/@me/gift-intents/dismissals";
 const FRIEND_ANNIVERSARY = "FRIEND_ANNIVERSARY";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, scrollContainer: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj2.scrollContainer = { padding: nativeDefault.space.PX_16 };
@@ -805,7 +805,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const fn2 = function u(arg0) {
         const tmp = closure_4(arg0, 3);
         const subLabel = tmp[0];
-        return closure_17(subLabel(7446).TableSwitchRow, {
+        return closure_17(subLabel(7478).TableSwitchRow, {
           label: tmp[2].label,
           subLabel,
           value: tmp[1],
@@ -825,7 +825,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     if (cResult[6] !== cResult[4]) {
       const obj2 = { title: "Premium Toggles", hasIcons: false, children: tmp8 };
-      const tmp14 = constants(tmp(5903).TableRowGroup, obj2);
+      const tmp14 = constants(tmp(5935).TableRowGroup, obj2);
       cResult[6] = tmp8;
       cResult[7] = tmp14;
       let tmp12 = tmp14;
@@ -845,7 +845,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     hasIcons: false,
     children: stateFromStores.map((item) => {
       [tmp, tmp2, ] = item;
-      return closure_17(closure_0(7446).TableSwitchRow, {
+      return closure_17(closure_0(7478).TableSwitchRow, {
         label: tmp3,
         subLabel: tmp,
         value: tmp2,
@@ -873,10 +873,10 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const stateFromStores = useStateFromStores.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    let result = tmp(11347).shouldMockIAPForceEnable();
+    let result = tmp(11383).shouldMockIAPForceEnable();
     cResult[2] = result;
     let tmp8 = result;
-    const tmpResult2 = tmp(11347);
+    const tmpResult2 = tmp(11383);
   } else {
     tmp8 = cResult[2];
   }
@@ -903,8 +903,8 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const obj2 = { title: "iOS IAP Mock", hasIcons: false, children: null };
     const obj3 = { label: "Force mock IAP products", subLabel: str, value: tmp10, disabled: tmp8, onValueChange: tmp11 };
-    obj2.children = constants(tmp(7446).TableSwitchRow, obj3);
-    const tmp13Result = constants(tmp(5903).TableRowGroup, obj2);
+    obj2.children = constants(tmp(7478).TableSwitchRow, obj3);
+    const tmp13Result = constants(tmp(5935).TableRowGroup, obj2);
     cResult[4] = tmp10;
     cResult[5] = tmp13Result;
     let tmp12 = tmp13Result;

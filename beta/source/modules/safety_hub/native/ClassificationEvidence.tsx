@@ -1,21 +1,21 @@
-// Module ID: 12021
-// Function ID: 12022
+// Module ID: 12057
+// Function ID: 12058
 // Name: ClassificationEvidence
-// Dependencies: [19, 17, 21, 4758, 1181, 580, 558, 568, 4754, 1119, 12022, 2]
+// Dependencies: [19, 17, 21, 4790, 1181, 580, 558, 568, 4786, 1119, 12058, 2]
 
-// Module 12021 (ClassificationEvidence)
+// Module 12057 (ClassificationEvidence)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ClassificationMessageEvidenceDefault from "ClassificationMessageEvidence" /* 12022 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ClassificationMessageEvidenceDefault from "ClassificationMessageEvidence" /* 12058 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { cardShadow: null, flaggedContent: null, sectionContainer: null };
 const native = fn(1181);
 obj2.cardShadow = native.generateBoxShadowStyle(fn(1181).FOUR_DP_ELEVATION_SHADOW_PARAMS);
@@ -40,7 +40,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((flaggedContent) 
       const obj2 = { variant: "eyebrow", color: "text-default", children: null };
       const intl = tmp(1119).intl;
       obj2.children = intl.string(tmp(1119).t.s64CMg);
-      const tmp6 = React4(tmp(4754).Text, obj2);
+      const tmp6 = React4(tmp(4786).Text, obj2);
       cResult[0] = tmp6;
       let first = tmp6;
     } else {

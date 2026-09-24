@@ -1,13 +1,13 @@
-// Module ID: 12236
-// Function ID: 12237
+// Module ID: 12272
+// Function ID: 12273
 // Name: TrackSectionHeader
-// Dependencies: [9518, 558, 568, 1253, 9046, 2]
+// Dependencies: [9550, 558, 568, 1253, 9078, 2]
 
-// Module 12236 (TrackSectionHeader)
+// Module 12272 (TrackSectionHeader)
 import c from "c" /* 568 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9046 */;
-import AppLauncherStore from "AppLauncherStore" /* 9518 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9078 */;
+import AppLauncherStore from "AppLauncherStore" /* 9550 */;
 
 require = fn;
 fn(558);

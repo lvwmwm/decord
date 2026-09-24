@@ -1,21 +1,21 @@
-// Module ID: 13471
-// Function ID: 13472
+// Module ID: 13507
+// Function ID: 13508
 // Name: HeadlessCollectiblesPurchaseFlow
-// Dependencies: [19, 1078, 1089, 21, 558, 568, 9477, 9119, 11309, 1368, 4431, 4725, 8450, 13472, 11121, 11103, 2]
+// Dependencies: [19, 1078, 1089, 21, 558, 568, 9509, 9151, 11345, 1368, 4463, 4757, 8482, 13508, 11157, 11139, 2]
 
-// Module 13471 (HeadlessCollectiblesPurchaseFlow)
+// Module 13507 (HeadlessCollectiblesPurchaseFlow)
 import c from "c" /* 568 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8450 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9119 */;
-import ACOMExperiments from "ACOMExperiments" /* 9477 */;
-import NativePaymentContext from "NativePaymentContext" /* 11121 */;
-import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 11309 */;
-import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 13472 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8482 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9151 */;
+import ACOMExperiments from "ACOMExperiments" /* 9509 */;
+import NativePaymentContext from "NativePaymentContext" /* 11157 */;
+import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 11345 */;
+import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 13508 */;
 import noop from "module_19" /* 19 */;
 
-const NativeCheckoutStoreProviderDefault = tmp5(11103);
+const NativeCheckoutStoreProviderDefault = tmp5(11139);
 require = fn;
 const application_id = fn(1078).COLLECTIBLES_APPLICATION_ID;
 const PaymentGateways = fn(1089).PaymentGateways;
@@ -34,7 +34,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     first = cResult[0];
   }
-  const OTPACOMOrderExperiment = tmp(9477).OTPACOMOrderExperiment;
+  const OTPACOMOrderExperiment = tmp(9509).OTPACOMOrderExperiment;
   const enabled = OTPACOMOrderExperiment.useConfig(first).enabled;
   const isPurchased = useProductPurchaseState.useProductPurchaseState(product).isPurchased;
   const tmp6 = useCollectiblesExternalGatewayFacetDefault(product);
@@ -105,7 +105,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 const obj3 = { skuIDs: tmp13, activeSubscription: null, children: null };
                 const obj4 = { headless: true, paymentGateway: GOOGLE, orderRequired: tmp9, skuIds: tmp14, isGift: false, activeSubscription: null, initialExternalGatewayFacet: tmp6, onOrderRetryCancellation: tmp15, checkoutAnalyticsFields: tmp16, children: tmp18 };
                 obj3.children = jsx(NativeCheckoutStoreProviderDefault, { headless: true, paymentGateway: GOOGLE, orderRequired: tmp9, skuIds: tmp14, isGift: false, activeSubscription: null, initialExternalGatewayFacet: tmp6, onOrderRetryCancellation: tmp15, checkoutAnalyticsFields: tmp16, children: tmp18 }, product.skuId);
-                const tmp23 = jsx(tmp(11121).NativePaymentContextProvider, { skuIDs: tmp13, activeSubscription: null, children: null });
+                const tmp23 = jsx(tmp(11157).NativePaymentContextProvider, { skuIDs: tmp13, activeSubscription: null, children: null });
                 cResult[18] = tmp6;
                 cResult[19] = tmp9;
                 cResult[20] = product.skuId;
@@ -120,7 +120,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj5 = { product, attempt, analyticsLocations, onBuy, onBuySettled, stageCollectibleChangeForEditProfile };
-      const tmp20 = jsx(tmp(13472).HeadlessCollectiblesPurchaseRunner, { product, attempt, analyticsLocations, onBuy, onBuySettled, stageCollectibleChangeForEditProfile });
+      const tmp20 = jsx(tmp(13508).HeadlessCollectiblesPurchaseRunner, { product, attempt, analyticsLocations, onBuy, onBuySettled, stageCollectibleChangeForEditProfile });
       cResult[11] = analyticsLocations;
       cResult[12] = attempt;
       cResult[13] = onBuy;
@@ -142,8 +142,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (!tmp11) {
       let result = GOOGLE === tmp8.GOOGLE;
       if (result) {
-        result = tmp(4431).isGooglePlayBillingSupported();
-        const tmpResult4 = tmp(4431);
+        result = tmp(4463).isGooglePlayBillingSupported();
+        const tmpResult4 = tmp(4463);
       }
       tmp11 = result;
     }
@@ -172,8 +172,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (!tmp8) {
       let result = GOOGLE === tmp6.GOOGLE;
       if (result) {
-        result = tmp(4431).isGooglePlayBillingSupported();
-        const tmpResult = tmp(4431);
+        result = tmp(4463).isGooglePlayBillingSupported();
+        const tmpResult = tmp(4463);
       }
       tmp8 = result;
     }

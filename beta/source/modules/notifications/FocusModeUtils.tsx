@@ -1,21 +1,21 @@
-// Module ID: 12955
-// Function ID: 12956
+// Module ID: 12991
+// Function ID: 12992
 // Name: FocusModeUtils
-// Dependencies: [5498, 4412, 1078, 558, 568, 2023, 2028, 1221, 1245, 5110, 1119, 12956, 2]
+// Dependencies: [5530, 4444, 1078, 558, 568, 2023, 2028, 1221, 1245, 5142, 1119, 12992, 2]
 // Exports: getFocusModeEnabled, setFocusMode
 
-// Module 12955 (FocusModeUtils)
+// Module 12991 (FocusModeUtils)
 import c from "c" /* 568 */;
 import wrappers from "wrappers" /* 1221 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5530 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const constants = fn(4412).NotificationSettingsUpdateType;
+const constants = fn(4444).NotificationSettingsUpdateType;
 const Constants = fn(1078);
 ({ AnalyticEvents: hasOwnProperty, StatusTypes: metroRequire } = Constants);
 const ReactCompilerGating = fn(558);

@@ -1,15 +1,15 @@
-// Module ID: 5763
-// Function ID: 5764
+// Module ID: 5795
+// Function ID: 5796
 // Name: MemberVerificationAlertRejected
-// Dependencies: [5, 109, 19, 2109, 1376, 4581, 21, 558, 568, 5764, 504, 5765, 5760, 5788, 1119, 5188, 5756, 5846, 2]
+// Dependencies: [5, 109, 19, 2109, 1376, 4613, 21, 558, 568, 5796, 504, 5797, 5792, 5820, 1119, 5220, 5788, 5878, 2]
 
-// Module 5763 (MemberVerificationAlertRejected)
+// Module 5795 (MemberVerificationAlertRejected)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 import UserStore from "UserStore" /* 1376 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4581 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4613 */;
 
 const require = globalThis.__r;
 
@@ -374,7 +374,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             if (stateFromStores2 != null) {
               isPending = stateFromStores2.isPending;
             }
-            const obj4 = v1(5760);
+            const obj4 = v1(5792);
             if (isPending) {
               v1 = 2;
               dependencyMap = 1;
@@ -408,7 +408,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           if (closure_128_1 != null) {
             tmp6();
           }
-          const result = guildId(5788).openMemberVerificationModal(closure_128_0);
+          const result = guildId(5820).openMemberVerificationModal(closure_128_0);
           dependencyMap = 3;
           return { value: "IconComponent", done: null };
         }
@@ -468,7 +468,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             if (stateFromStores2 != null) {
               isPending = stateFromStores2.isPending;
             }
-            const obj4 = v1(5760);
+            const obj4 = v1(5792);
             if (isPending) {
               v1 = 2;
               dependencyMap = 1;
@@ -502,7 +502,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           if (closure_128_1 != null) {
             tmp6();
           }
-          const result = guildId(5788).openMemberVerificationModal(closure_128_0);
+          const result = guildId(5820).openMemberVerificationModal(closure_128_0);
           dependencyMap = 3;
           return { value: "IconComponent", done: null };
         }

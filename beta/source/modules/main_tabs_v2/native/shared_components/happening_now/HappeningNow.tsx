@@ -1,28 +1,28 @@
-// Module ID: 16395
-// Function ID: 16396
+// Module ID: 16405
+// Function ID: 16406
 // Name: HappeningNow
-// Dependencies: [32, 19, 17, 15555, 1078, 21, 7321, 4758, 580, 6891, 558, 568, 16396, 7205, 1245, 5203, 1489, 16397, 7409, 7429, 16404, 16405, 4497, 10345, 12, 1119, 8995, 16406, 16407, 16424, 16426, 16427, 16410, 16423, 16428, 16422, 16409, 1374, 2]
+// Dependencies: [32, 19, 17, 15565, 1078, 21, 7353, 4790, 580, 6923, 558, 568, 16406, 7237, 1245, 5235, 1489, 16407, 7441, 7461, 16414, 16415, 4529, 10384, 12, 1119, 9027, 16416, 16417, 16434, 16436, 16437, 16420, 16433, 16438, 16432, 16419, 1374, 2]
 
-// Module 16395 (HappeningNow)
+// Module 16405 (HappeningNow)
 import _mod12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
-import updateSharedValueIfChanged from "updateSharedValueIfChanged" /* 10345 */;
-import HappeningNowAnalytics from "HappeningNowAnalytics" /* 16396 */;
-import happeningNowRankingUtils from "happeningNowRankingUtils" /* 16404 */;
-import HappeningNowCardPlaceholder from "HappeningNowCardPlaceholder" /* 16406 */;
-import HappeningNowCardLiveStageDefault from "HappeningNowCardLiveStage" /* 16407 */;
-import HappeningNowCardUnifiedVCDefault from "HappeningNowCardUnifiedVC" /* 16409 */;
-import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 16410 */;
-import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 16422 */;
-import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 16423 */;
-import HappeningNowCardEventDefault from "HappeningNowCardEvent" /* 16424 */;
-import HappeningNowCardActiveChannelDefault from "HappeningNowCardActiveChannel" /* 16426 */;
-import HappeningNowCardUserDefault from "HappeningNowCardUser" /* 16427 */;
-import HappeningNowActions from "HappeningNowActions" /* 16428 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6923 */;
+import updateSharedValueIfChanged from "updateSharedValueIfChanged" /* 10384 */;
+import HappeningNowAnalytics from "HappeningNowAnalytics" /* 16406 */;
+import happeningNowRankingUtils from "happeningNowRankingUtils" /* 16414 */;
+import HappeningNowCardPlaceholder from "HappeningNowCardPlaceholder" /* 16416 */;
+import HappeningNowCardLiveStageDefault from "HappeningNowCardLiveStage" /* 16417 */;
+import HappeningNowCardUnifiedVCDefault from "HappeningNowCardUnifiedVC" /* 16419 */;
+import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 16420 */;
+import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 16432 */;
+import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 16433 */;
+import HappeningNowCardEventDefault from "HappeningNowCardEvent" /* 16434 */;
+import HappeningNowCardActiveChannelDefault from "HappeningNowCardActiveChannel" /* 16436 */;
+import HappeningNowCardUserDefault from "HappeningNowCardUser" /* 16437 */;
+import HappeningNowActions from "HappeningNowActions" /* 16438 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -167,16 +167,16 @@ function getItemType(kind) {
 }
 get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const HappeningNowConstants = fn(15555);
+const HappeningNowConstants = fn(15565);
 ({ HAPPENING_NOW_CARD_WIDTH_NORMAL_WITH_MARGIN: closure_7, HAPPENING_NOW_CARD_WIDTH_XSMALL_WITH_MARGIN: closure_8, HAPPENING_NOW_PANELS_CONTAINER_PADDING, HappeningNowKindIds: closure_9 } = HappeningNowConstants);
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsx = fn(21).jsx;
-const ReanimatedHelperTypes = fn(7321);
+const ReanimatedHelperTypes = fn(7353);
 const context = noop.createContext(ReanimatedHelperTypes.createFakeSharedValue([]));
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { containerInner: { paddingLeft: HAPPENING_NOW_PANELS_CONTAINER_PADDING, paddingRight: HAPPENING_NOW_PANELS_CONTAINER_PADDING }, loading: { paddingHorizontal: nativeDefault.space.PX_8, flex: 1 } };
 let closure_13 = createStyles.createStyles(obj);
-const Gesture = fn(6891).Gesture;
+const Gesture = fn(6923).Gesture;
 let obj4 = { paddingHorizontal: nativeDefault.space.PX_8, flex: 1 };
 const gesture = Gesture.Native().disallowInterruption(true);
 const maintainVisibleContentPosition = { disabled: true };
@@ -346,7 +346,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRe
   const obj = listRef(568);
   const isFocused = listRef(1489).useIsFocused();
   if (cResult[0] !== isFocused) {
-    const obj3 = { withoutUserCards: "IconComponent", guildId: "Array", showMultipleActivitiesPerChannel: "YCbCrCoefficients", isFocused };
+    const obj3 = { withoutUserCards: "IconComponent", guildId: "Array", showMultipleActivitiesPerChannel: "bank", isFocused };
     cResult[0] = isFocused;
     cResult[1] = obj3;
     let tmp6 = obj3;
@@ -356,10 +356,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRe
   const obj2 = listRef(1489);
   const tmp7 = isFocused;
   const tmp8 = ref;
-  [arr, tmp10] = ref(isFocused(16397)(listRef.cards, tmp6), 2);
+  [arr, tmp10] = ref(isFocused(16407)(listRef.cards, tmp6), 2);
   dependencyMap = tmp10;
-  const tmp9 = ref(isFocused(16397)(listRef.cards, tmp6), 2);
-  const analyticsLocations = isFocused(7409)(isFocused(7429).ACTIVITIES_HAPPENING_NOW).analyticsLocations;
+  const tmp9 = ref(isFocused(16407)(listRef.cards, tmp6), 2);
+  const analyticsLocations = isFocused(7441)(isFocused(7461).ACTIVITIES_HAPPENING_NOW).analyticsLocations;
   let num3 = 0;
   ref = noop.useRef(0);
   if (cResult[2] === length) {
@@ -427,7 +427,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRe
               return obj.cardSize(listRef) === closure_1_8;
             }
           }
-          const first = tmp8(tmp7(16405)(num9, tmp22), 2)[0];
+          const first = tmp8(tmp7(16415)(num9, tmp22), 2)[0];
           class S {
             constructor() {
               if (!closure_1) {
@@ -452,7 +452,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRe
               }
             }
             let result = obj6.filterHappeningNowCards(length);
-            const result1 = tmp(16404).sortHappeningNowCards(result);
+            const result1 = tmp(16414).sortHappeningNowCards(result);
             class S {
               constructor() {
                 if (!closure_1) {
@@ -471,7 +471,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRe
             }
             cResult[14] = length;
             cResult[15] = result1;
-            const tmpResult = tmp(16404);
+            const tmpResult = tmp(16414);
           } else {
             class V {
               constructor(arg0) {
@@ -480,8 +480,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRe
               }
             }
           }
-          const tmp8Result = tmp8(tmp7(16405)(num9, tmp22), 2);
-          const happeningNowScrollSnapping = tmp(16405).useHappeningNowScrollSnapping(listRef);
+          const tmp8Result = tmp8(tmp7(16415)(num9, tmp22), 2);
+          const happeningNowScrollSnapping = tmp(16415).useHappeningNowScrollSnapping(listRef);
           if (cResult[16] !== tmp10) {
             class Y {
               constructor(arg0) {
@@ -514,8 +514,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRe
               }
             }
           }
-          const tmpResult3 = tmp(16405);
-          const sharedValue = tmp(4497).useSharedValue([]);
+          const tmpResult3 = tmp(16415);
+          const sharedValue = tmp(4529).useSharedValue([]);
           if (cResult[18] !== sharedValue) {
             class X {
               constructor(arg0) {
@@ -725,7 +725,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRe
             obj7.onViewableItemsChanged = tmp33;
             obj7.keyExtractor = keyExtractor;
             obj7.getItemType = getItemType;
-            const tmp41 = jsx(tmp(8995).FlashList, { ref: listRef, horizontal: true, renderScrollComponent, decelerationRate: "fast", onScroll: first, maintainVisibleContentPosition, snapToInterval: tmp25, snapToOffsets: null, showsHorizontalScrollIndicator: false, accessibilityLabel: null, contentContainerStyle: null, data: null, renderItem: null, onViewableItemsChanged: null, keyExtractor: null, getItemType: null });
+            const tmp41 = jsx(tmp(9027).FlashList, { ref: listRef, horizontal: true, renderScrollComponent, decelerationRate: "fast", onScroll: first, maintainVisibleContentPosition, snapToInterval: tmp25, snapToOffsets: null, showsHorizontalScrollIndicator: false, accessibilityLabel: null, contentContainerStyle: null, data: null, renderItem: null, onViewableItemsChanged: null, keyExtractor: null, getItemType: null });
             cResult[31] = tmp33;
             cResult[32] = first;
             cResult[33] = tmp26;
@@ -736,7 +736,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRe
             cResult[38] = tmp4.containerInner;
             cResult[39] = tmp41;
           }
-          const tmpResult4 = tmp(4497);
+          const tmpResult4 = tmp(4529);
         }
         class D {
           constructor(arg0, arg1) {
@@ -799,7 +799,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRe
   let callback2;
   const tmp = closure_13();
   const isFocused = listRef(children[16]).useIsFocused();
-  const tmp7 = _slicedToArray(isFocused(children[17])(listRef.cards, { withoutUserCards: "IconComponent", guildId: "Array", showMultipleActivitiesPerChannel: "YCbCrCoefficients", isFocused }), 2);
+  const obj2 = { withoutUserCards: "IconComponent", guildId: "Array", showMultipleActivitiesPerChannel: "bank", isFocused };
+  const tmp7 = _slicedToArray(isFocused(children[17])(listRef.cards, obj2), 2);
   children = tmp7[0];
   _slicedToArray = tmp8;
   let obj = listRef(children[16]);
@@ -824,7 +825,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRe
     num = sharedValue * findIndexResult;
   }
   const items1 = [findIndexResult, num];
-  const callback = obj2.useCallback((arg0, arg1) => {
+  const callback = obj3.useCallback((arg0, arg1) => {
     const sum = arg1 + arg0;
     if (sum < num) {
       let sum1 = sum / React5 | 0;
@@ -840,47 +841,47 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRe
     const tmp17 = sharedValue;
   }
   const items2 = [children];
-  const memo = obj2.useMemo(() => {
+  const memo = obj3.useMemo(() => {
     const result = happeningNowRankingUtils.filterHappeningNowCards(first);
     return happeningNowRankingUtils.sortHappeningNowCards(result);
   }, items2);
   const tmp9 = isFocused(children[18]);
   const items3 = [tmp7[1]];
   const happeningNowScrollSnapping = listRef(children[21]).useHappeningNowScrollSnapping(listRef);
-  const callback1 = obj2.useCallback((index) => renderCard(index.item, { index: index.index, loading, panelVariant: true }), items3);
+  const callback1 = obj3.useCallback((index) => renderCard(index.item, { index: index.index, loading, panelVariant: true }), items3);
   const tmp2Result = listRef(children[21]);
   sharedValue = listRef(children[22]).useSharedValue([]);
   const items4 = [sharedValue];
-  callback2 = obj2.useCallback((viewableItems) => {
+  callback2 = obj3.useCallback((viewableItems) => {
     viewableItems = viewableItems.viewableItems;
     const result = updateSharedValueIfChanged.updateSharedValueArrayIfChanged(sharedValue, viewableItems.map((item) => closure_1_19(item.item)));
   }, items4);
   const items5 = [callback2];
-  const memo1 = obj2.useMemo(() => _mod12.debounce(callback2, 130), items5);
+  const memo1 = obj3.useMemo(() => _mod12.debounce(callback2, 130), items5);
   if (0 === children.length) {
     if (!tmp8) {
       return <num />;
     }
   }
   if (!tmp7[1]) {
-    const obj3 = { value: sharedValue, children: null };
-    const obj4 = { value: tmp9(isFocused(children[19]).ACTIVITIES_HAPPENING_NOW).analyticsLocations, children: null };
-    const obj5 = { ref: listRef, horizontal: true, renderScrollComponent, decelerationRate: "fast", onScroll: tmp6Result[0], maintainVisibleContentPosition, snapToInterval: tmp17, snapToOffsets: happeningNowScrollSnapping, showsHorizontalScrollIndicator: false, accessibilityLabel: null, contentContainerStyle: null, data: null, renderItem: null, onViewableItemsChanged: null, keyExtractor: null, getItemType: null };
+    const obj4 = { value: sharedValue, children: null };
+    const obj5 = { value: tmp9(isFocused(children[19]).ACTIVITIES_HAPPENING_NOW).analyticsLocations, children: null };
+    const obj6 = { ref: listRef, horizontal: true, renderScrollComponent, decelerationRate: "fast", onScroll: tmp6Result[0], maintainVisibleContentPosition, snapToInterval: tmp17, snapToOffsets: happeningNowScrollSnapping, showsHorizontalScrollIndicator: false, accessibilityLabel: null, contentContainerStyle: null, data: null, renderItem: null, onViewableItemsChanged: null, keyExtractor: null, getItemType: null };
     const intl = tmp2(tmp3[25]).intl;
-    obj5.accessibilityLabel = intl.string(tmp2(tmp3[25]).t["1+boPi"]);
-    obj5.contentContainerStyle = tmp.containerInner;
-    obj5.data = memo;
-    obj5.renderItem = callback1;
-    obj5.onViewableItemsChanged = memo1;
-    obj5.keyExtractor = keyExtractor;
-    obj5.getItemType = getItemType;
-    obj4.children = tmp26(tmp2(tmp3[26]).FlashList, obj5);
-    obj3.children = tmp26(tmp2(tmp3[18]).AnalyticsLocationProvider, obj4);
-    tmp26(context.Provider, obj3);
+    obj6.accessibilityLabel = intl.string(tmp2(tmp3[25]).t["1+boPi"]);
+    obj6.contentContainerStyle = tmp.containerInner;
+    obj6.data = memo;
+    obj6.renderItem = callback1;
+    obj6.onViewableItemsChanged = memo1;
+    obj6.keyExtractor = keyExtractor;
+    obj6.getItemType = getItemType;
+    obj5.children = tmp26(tmp2(tmp3[26]).FlashList, obj6);
+    obj4.children = tmp26(tmp2(tmp3[18]).AnalyticsLocationProvider, obj5);
+    tmp26(context.Provider, obj4);
   }
-  const obj6 = { style: tmp.loading, children: null };
+  const obj7 = { style: tmp.loading, children: null };
   children = renderCard(children.length > 0 ? children[0] : { kind: "placeholder", index: 0 }, { index: 0, loading: tmp8, fullwidth: true, panelVariant: true });
-  obj6.children = children;
+  obj7.children = children;
   <num style={tmp.loading}>{null}</num>;
 }));
 export const ViewableHappeningNowCardKeysContext = context;

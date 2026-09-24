@@ -1,13 +1,13 @@
-// Module ID: 9545
-// Function ID: 9546
+// Module ID: 9577
+// Function ID: 9578
 // Name: RobotIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 9546, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9578, 4493, 2]
 
-// Module 9545 (RobotIcon)
+// Module 9577 (RobotIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod9546 from "module_9546" /* 9546 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9578 from "module_9578" /* 9578 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const RobotIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(9546);
+    const tmpResult = tmp(9578);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const RobotIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9546, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9578, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

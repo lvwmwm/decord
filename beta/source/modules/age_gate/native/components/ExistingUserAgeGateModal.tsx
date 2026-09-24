@@ -1,22 +1,22 @@
-// Module ID: 17727
-// Function ID: 17728
+// Module ID: 17737
+// Function ID: 17738
 // Name: ExistingUserAgeGateModal
-// Dependencies: [19, 4580, 1103, 17728, 1078, 21, 1368, 4458, 17729, 1119, 7458, 5739, 4961, 1245, 1253, 5839, 17730, 17732, 17733, 16320, 10470, 558, 568, 4968, 4970, 7246, 2]
+// Dependencies: [19, 4612, 1103, 17738, 1078, 21, 1368, 4490, 17739, 1119, 7490, 5771, 4993, 1245, 1253, 5871, 17740, 17742, 17743, 16330, 10039, 558, 568, 5000, 5002, 7278, 2]
 
-// Module 17727 (ExistingUserAgeGateModal)
+// Module 17737 (ExistingUserAgeGateModal)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 7458 */;
-import NsfwGateGuildDefault from "NsfwGateGuild" /* 10470 */;
-import AgeGateUnderageDefault from "AgeGateUnderage" /* 16320 */;
-import _modDef17729 from "module_17729" /* 17729 */;
-import ExistingUserAgeGateDefault from "ExistingUserAgeGate" /* 17730 */;
-import ExistingUserAgeGateConfirmDefault from "ExistingUserAgeGateConfirm" /* 17732 */;
-import AgeGateVerifyDefault from "AgeGateVerify" /* 17733 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5771 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 7490 */;
+import NsfwGateGuildDefault from "NsfwGateGuild" /* 10039 */;
+import AgeGateUnderageDefault from "AgeGateUnderage" /* 16330 */;
+import _modDef17739 from "module_17739" /* 17739 */;
+import ExistingUserAgeGateDefault from "ExistingUserAgeGate" /* 17740 */;
+import ExistingUserAgeGateConfirmDefault from "ExistingUserAgeGateConfirm" /* 17742 */;
+import AgeGateVerifyDefault from "AgeGateVerify" /* 17743 */;
 import noop from "module_19" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 
 require = fn;
 function onClose() {
@@ -83,7 +83,7 @@ function getScreens(source) {
             if (obj.isIOS()) {
               let fn = () => {
                 closure_0.push(NSFWGateGuild.NSFWGateGuild);
-                const obj2 = { key: "AGE_GATE_AGE_VERIFIED", icon: _modDef17729, content: null };
+                const obj2 = { key: "AGE_GATE_AGE_VERIFIED", icon: _modDef17739, content: null };
                 const intl = closure_0(1119).intl;
                 obj2.content = intl.string(closure_0(1119).t.gUiIGZ);
                 ToastActionCreatorsDefault.open(obj2);
@@ -93,12 +93,12 @@ function getScreens(source) {
             return jsx(ExistingUserAgeGateDefault, { onSuccess: fn, onClose, source: tmp });
           }
           fn = () => {
-            closure_0(7458).closeAgeGateModal();
-            const obj = closure_0(7458);
-            const obj3 = { key: "AGE_GATE_AGE_VERIFIED", icon: closure_1_1(17729), content: null };
+            closure_0(7490).closeAgeGateModal();
+            const obj = closure_0(7490);
+            const obj3 = { key: "AGE_GATE_AGE_VERIFIED", icon: closure_1_1(17739), content: null };
             const intl = closure_0(1119).intl;
             obj3.content = intl.string(closure_0(1119).t.gUiIGZ);
-            closure_1_1(4458).open(obj3);
+            closure_1_1(4490).open(obj3);
           };
         }
     };
@@ -148,7 +148,7 @@ function getScreens(source) {
 }
 const AgeGateConstants = fn(1103);
 ({ AgeGateAnalyticAction: hasOwnProperty, AgeGateSource: metroRequire } = AgeGateConstants);
-let closure_7 = fn(17728).ExistingUserAgeGateScreens;
+let closure_7 = fn(17738).ExistingUserAgeGateScreens;
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
@@ -159,7 +159,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
   const cResult = source(568).c(8);
   source = source.source;
   let obj = source(568);
-  const shouldAgeVerifyForAgeGate = source(4968).useShouldAgeVerifyForAgeGate();
+  const shouldAgeVerifyForAgeGate = source(5000).useShouldAgeVerifyForAgeGate();
   noop.useRef(shouldAgeVerifyForAgeGate);
   if (cResult[0] !== source) {
     const fn = function s() {
@@ -173,8 +173,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
   } else {
     tmp5 = cResult[1];
   }
-  const obj2 = source(4968);
-  const watchAgeVerificationStatusChange = source(4970).useWatchAgeVerificationStatusChange(tmp5);
+  const obj2 = source(5000);
+  const watchAgeVerificationStatusChange = source(5002).useWatchAgeVerificationStatusChange(tmp5);
   if (cResult[2] !== source) {
     const tmp9 = getScreens(source);
     cResult[2] = source;
@@ -198,18 +198,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
     }
     return tmp14;
   }
-  const tmp15 = jsx(source(7246).Navigator, { screens: tmp7, initialRouteName: tmp11, headerBackTitle: tmp12 });
+  const tmp15 = jsx(source(7278).Navigator, { screens: tmp7, initialRouteName: tmp11, headerBackTitle: tmp12 });
   cResult[5] = tmp7;
   cResult[6] = tmp11;
   cResult[7] = tmp15;
   tmp14 = tmp15;
 }) : ((source) => {
   source = source.source;
-  const shouldAgeVerifyForAgeGate = source(4968).useShouldAgeVerifyForAgeGate();
+  const shouldAgeVerifyForAgeGate = source(5000).useShouldAgeVerifyForAgeGate();
   noop.useRef(shouldAgeVerifyForAgeGate);
-  let obj = source(4968);
+  let obj = source(5000);
   const items = [source];
-  const watchAgeVerificationStatusChange = source(4970).useWatchAgeVerificationStatusChange(noop.useCallback(() => {
+  const watchAgeVerificationStatusChange = source(5002).useWatchAgeVerificationStatusChange(noop.useCallback(() => {
     if (ref.current) {
       AgeGateModalActionCreators.closeAgeGateModal(source);
     }
@@ -219,5 +219,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
   obj3.screens = noop.useMemo(() => getScreens(source), items1);
   const intl = tmp(1119).intl;
   obj3.headerBackTitle = intl.string(source(1119).t["13/7kX"]);
-  return jsx(source(7246).Navigator, { screens: null, initialRouteName: shouldAgeVerifyForAgeGate ? closure_7.Pawtect : closure_7.AgeGate, headerBackTitle: null });
+  return jsx(source(7278).Navigator, { screens: null, initialRouteName: shouldAgeVerifyForAgeGate ? closure_7.Pawtect : closure_7.AgeGate, headerBackTitle: null });
 });

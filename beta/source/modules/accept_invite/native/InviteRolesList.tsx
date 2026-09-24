@@ -1,18 +1,18 @@
-// Module ID: 12869
-// Function ID: 12870
+// Module ID: 12905
+// Function ID: 12906
 // Name: InviteRolesList
-// Dependencies: [19, 17, 21, 4758, 558, 568, 2107, 4754, 1119, 11253, 5186, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 2107, 4786, 1119, 11289, 5218, 2]
 
-// Module 12869 (InviteRolesList)
+// Module 12905 (InviteRolesList)
 import GuildRoleUtils from "GuildRoleUtils" /* 2107 */;
-import RolePillDefault from "RolePill" /* 11253 */;
+import RolePillDefault from "RolePill" /* 11289 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ rolesRow: { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", gap: 4 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -96,7 +96,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj2 = { variant: "text-sm/semibold", color: "text-default", children: null };
         const intl = tmp(1119).intl;
         obj2.children = intl.string(tmp(1119).t.stcSfI);
-        const tmp14 = closure_5(tmp(4754).Text, obj2);
+        const tmp14 = closure_5(tmp(4786).Text, obj2);
         cResult[6] = tmp14;
       } else {
         class R {
@@ -165,11 +165,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj2 = { variant: "text-sm/semibold", color: "text-default", children: null };
       const intl = guild(1119).intl;
       obj2.children = intl.string(guild(1119).t.stcSfI);
-      const items1 = [closure_5(guild(4754).Text, obj2), ];
+      const items1 = [closure_5(guild(4786).Text, obj2), ];
       const obj3 = { style: tmp.rolesRow, children: memo.map((role) => hasOwnProperty(RolePillDefault, { role, guildId: guild.id }, role.id)) };
       items1[1] = closure_5(View, obj3);
       obj.children = items1;
-      tmp2 = closure_6(guild(5186).Stack, obj);
+      tmp2 = closure_6(guild(5218).Stack, obj);
     }
   }
   return tmp2;

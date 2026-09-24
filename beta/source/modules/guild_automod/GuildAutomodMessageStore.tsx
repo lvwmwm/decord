@@ -1,18 +1,18 @@
-// Module ID: 8201
-// Function ID: 8202
+// Module ID: 8233
+// Function ID: 8234
 // Name: GuildAutomodMessageStore
-// Dependencies: [2045, 4978, 1078, 8081, 8202, 4980, 7755, 11, 504, 577, 2]
+// Dependencies: [2045, 5010, 1078, 8113, 8234, 5012, 7787, 11, 504, 577, 2]
 
-// Module 8201 (GuildAutomodMessageStore)
+// Module 8233 (GuildAutomodMessageStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 4980 */;
-import AutomodMessageUtils from "AutomodMessageUtils" /* 7755 */;
-import MessageQueue from "MessageQueue" /* 8081 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 8202 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5012 */;
+import AutomodMessageUtils from "AutomodMessageUtils" /* 7787 */;
+import MessageQueue from "MessageQueue" /* 8113 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 8234 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import MessageStore from "MessageStore" /* 4978 */;
+import MessageStore from "MessageStore" /* 5010 */;
 
 require = fn;
 function handleMessageSendFailedAutomod(messageData) {
@@ -135,13 +135,13 @@ const guildAutomodMessageStore = new GuildAutomodMessageStore(DispatcherDefault,
       const tmp = require;
       let result = AutomodMessageUtils.isAutomodMessageRecord(messageRecord);
       if (result) {
-        let flag = tmp(7755).isAutomodNotification(messageRecord);
+        let flag = tmp(7787).isAutomodNotification(messageRecord);
         if (flag) {
           closure_11[guildId] = messageRecord.id;
           flag = true;
         }
         result = flag;
-        const tmpResult = tmp(7755);
+        const tmpResult = tmp(7787);
       }
       return result;
     }

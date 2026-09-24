@@ -1,15 +1,15 @@
-// Module ID: 5662
-// Function ID: 5663
+// Module ID: 5694
+// Function ID: 5695
 // Name: InAppNavigationRecord
-// Dependencies: [1391, 1078, 5663, 1088, 5673, 2]
+// Dependencies: [1391, 1078, 5695, 1088, 5705, 2]
 
-// Module 5662 (InAppNavigationRecord)
-import UserSettingsURLUtils from "UserSettingsURLUtils" /* 5673 */;
+// Module 5694 (InAppNavigationRecord)
+import UserSettingsURLUtils from "UserSettingsURLUtils" /* 5705 */;
 import Record from "Record" /* 1391 */;
 
 require = fn;
 const Routes = fn(1078).Routes;
-const RewardFilterTypes = fn(5663).RewardFilterTypes;
+const RewardFilterTypes = fn(5695).RewardFilterTypes;
 const UserSettingsPath = fn(1088).UserSettingsPath;
 const InAppNavigationType = { SHOP: "SHOP", SHOP_ORBS_TAB: "SHOP_ORBS_TAB", NITRO_HOME: "NITRO_HOME", QUEST_HOME: "QUEST_HOME", QUEST_ORBS: "QUEST_ORBS", APPS_HOME: "APPS_HOME", SETTINGS: "SETTINGS", PLAYGROUND: "PLAYGROUND" };
 const prototype = function InAppNavigationRecord(collectionId) {

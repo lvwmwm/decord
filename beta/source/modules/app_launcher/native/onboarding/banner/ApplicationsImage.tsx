@@ -1,20 +1,20 @@
-// Module ID: 12180
-// Function ID: 12181
+// Module ID: 12216
+// Function ID: 12217
 // Name: ApplicationsImage
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 12181, 5802, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 12217, 5834, 2]
 
-// Module 12180 (ApplicationsImage)
+// Module 12216 (ApplicationsImage)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12181 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12217 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { appIconContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.sm + 3, position: "absolute", padding: 3 }, appIconLeftContainer: null, appIconRightContainer: null, appIcon: null };
 let obj4 = { transform: null };
 let items = [{ rotate: "-10deg" }];
@@ -39,8 +39,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[0] !== firstApplication) {
     let appLauncherIconSource = null;
     if (null != firstApplication) {
-      appLauncherIconSource = tmp(12181).getAppLauncherIconSource(firstApplication);
-      const tmpResult = tmp(12181);
+      appLauncherIconSource = tmp(12217).getAppLauncherIconSource(firstApplication);
+      const tmpResult = tmp(12217);
     }
     cResult[0] = firstApplication;
     cResult[1] = appLauncherIconSource;
@@ -51,8 +51,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[2] !== secondApplication) {
     let appLauncherIconSource1 = null;
     if (null != secondApplication) {
-      appLauncherIconSource1 = tmp(12181).getAppLauncherIconSource(secondApplication);
-      const tmpResult2 = tmp(12181);
+      appLauncherIconSource1 = tmp(12217).getAppLauncherIconSource(secondApplication);
+      const tmpResult2 = tmp(12217);
     }
     cResult[2] = secondApplication;
     cResult[3] = appLauncherIconSource1;

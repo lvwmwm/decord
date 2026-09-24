@@ -1,13 +1,13 @@
-// Module ID: 8703
-// Function ID: 8704
+// Module ID: 8735
+// Function ID: 8736
 // Name: AgeVerificationQuestUnsupportedAlertModal
-// Dependencies: [19, 21, 558, 568, 1119, 3038, 5116, 5116, 2]
+// Dependencies: [19, 21, 558, 568, 1119, 3038, 5148, 5148, 2]
 
-// Module 8703 (AgeVerificationQuestUnsupportedAlertModal)
+// Module 8735 (AgeVerificationQuestUnsupportedAlertModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import _modDef3038 from "module_3038" /* 3038 */;
-import AlertModal from "AlertModal" /* 5116 */;
+import AlertModal from "AlertModal" /* 5148 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -36,9 +36,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj4 = { text: null };
     const intl3 = tmp(1119).intl;
     obj4.text = intl3.string(tmp(1119).t["NX+WJN"]);
-    obj3.children = jsx(tmp(5116).AlertActionButton, { text: null }, "got-it");
-    obj2.actions = jsx(tmp(5116).AlertActions, { children: null });
-    const tmp11 = jsx(tmp(5116).AlertModal, { title: tmp4, content: tmp5, actions: null });
+    obj3.children = jsx(tmp(5148).AlertActionButton, { text: null }, "got-it");
+    obj2.actions = jsx(tmp(5148).AlertActions, { children: null });
+    const tmp11 = jsx(tmp(5148).AlertModal, { title: tmp4, content: tmp5, actions: null });
     cResult[2] = tmp11;
     let tmp9 = tmp11;
   } else {

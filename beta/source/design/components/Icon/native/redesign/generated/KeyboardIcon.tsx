@@ -1,13 +1,13 @@
-// Module ID: 11533
-// Function ID: 11534
+// Module ID: 11569
+// Function ID: 11570
 // Name: KeyboardIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 11534, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 11570, 4493, 2]
 
-// Module 11533 (KeyboardIcon)
+// Module 11569 (KeyboardIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod11534 from "module_11534" /* 11534 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod11570 from "module_11570" /* 11570 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const KeyboardIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(11534);
+    const tmpResult = tmp(11570);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const KeyboardIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11534, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11570, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

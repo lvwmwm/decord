@@ -1,21 +1,21 @@
-// Module ID: 16154
-// Function ID: 16155
+// Module ID: 16164
+// Function ID: 16165
 // Name: ShopFlashList
-// Dependencies: [19, 21, 4758, 580, 558, 568, 16125, 8995, 1181, 8506, 1119, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 16135, 9027, 1181, 8538, 1119, 2]
 
-// Module 16154 (ShopFlashList)
+// Module 16164 (ShopFlashList)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import generated_NoResults from "generated/NoResults" /* 8506 */;
-import _mod8995 from "module_8995" /* 8995 */;
-import useScrollToInitialIndexOnce from "useScrollToInitialIndexOnce" /* 16125 */;
+import generated_NoResults from "generated/NoResults" /* 8538 */;
+import _mod9027 from "module_9027" /* 9027 */;
+import useScrollToInitialIndexOnce from "useScrollToInitialIndexOnce" /* 16135 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { contentContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST } };
 let closure_4 = createStyles.createStyles(obj2);
 fn(558);
@@ -31,10 +31,10 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { style: first, Illustration: tmp(8506).NoResults, body: null };
+    const obj3 = { style: first, Illustration: tmp(8538).NoResults, body: null };
     const intl = tmp(1119).intl;
     obj3.body = intl.string(tmp(1119).t.eAn6z2);
-    const tmp7 = jsx(tmp(1181).EmptyState, { style: first, Illustration: tmp(8506).NoResults, body: null });
+    const tmp7 = jsx(tmp(1181).EmptyState, { style: first, Illustration: tmp(8538).NoResults, body: null });
     cResult[1] = tmp7;
     let tmp5 = tmp7;
   } else {
@@ -63,7 +63,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[1] === tmp6) {
       let tmp7 = cResult[2];
     }
-    const scrollToInitialIndexOnce = tmp(16125).useScrollToInitialIndexOnce(tmp7);
+    const scrollToInitialIndexOnce = tmp(16135).useScrollToInitialIndexOnce(tmp7);
     if (cResult[3] === data) {
       if (cResult[4] === getItemType) {
         if (cResult[5] === initialScrollIndex) {
@@ -77,7 +77,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj2 = { ref, data, renderItem, showsVerticalScrollIndicator: false, ListEmptyComponent, initialScrollIndex, getItemType, contentContainerStyle: tmp5.contentContainer };
-    const tmp12 = jsx(tmp(8995).FlashList, { ref, data, renderItem, showsVerticalScrollIndicator: false, ListEmptyComponent, initialScrollIndex, getItemType, contentContainerStyle: tmp5.contentContainer });
+    const tmp12 = jsx(tmp(9027).FlashList, { ref, data, renderItem, showsVerticalScrollIndicator: false, ListEmptyComponent, initialScrollIndex, getItemType, contentContainerStyle: tmp5.contentContainer });
     cResult[3] = data;
     cResult[4] = getItemType;
     cResult[5] = initialScrollIndex;
@@ -85,7 +85,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = tmp5.contentContainer;
     cResult[8] = tmp12;
     tmp9 = tmp12;
-    const tmpResult = tmp(16125);
+    const tmpResult = tmp(16135);
   }
   const obj3 = { shouldScroll: tmp6, initialScrollIndex, flashListRef: ref, afterMs: useScrollToInitialIndexOnce.INITIAL_SCROLL_DELAY_MS };
   cResult[0] = initialScrollIndex;
@@ -103,5 +103,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const obj = useScrollToInitialIndexOnce;
   const scrollToInitialIndexOnce = obj.useScrollToInitialIndexOnce({ shouldScroll: tmp5, initialScrollIndex, flashListRef: ref, afterMs: useScrollToInitialIndexOnce.INITIAL_SCROLL_DELAY_MS });
-  return jsx(_mod8995.FlashList, { ref, data, renderItem, showsVerticalScrollIndicator: false, ListEmptyComponent, initialScrollIndex, getItemType, contentContainerStyle: tmp2.contentContainer });
+  return jsx(_mod9027.FlashList, { ref, data, renderItem, showsVerticalScrollIndicator: false, ListEmptyComponent, initialScrollIndex, getItemType, contentContainerStyle: tmp2.contentContainer });
 });

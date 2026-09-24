@@ -1,26 +1,26 @@
-// Module ID: 14852
-// Function ID: 14853
+// Module ID: 14890
+// Function ID: 14891
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 10002, 8434, 1088, 1078, 21, 4758, 1119, 14853, 14910, 558, 568, 4462, 580, 1488, 7240, 9868, 11227, 7230, 4625, 14869, 14911, 565, 4938, 10004, 5839, 8112, 1489, 12778, 12780, 2]
+// Dependencies: [5, 109, 32, 19, 17, 10034, 8466, 1088, 1078, 21, 4790, 1119, 14891, 14948, 558, 568, 4494, 580, 1488, 7272, 9900, 11263, 7262, 4657, 14907, 14949, 565, 4970, 10036, 5871, 8144, 1489, 12814, 12816, 2]
 
-// Module 14852 (ProfileCustomizationSettingScreen)
+// Module 14890 (ProfileCustomizationSettingScreen)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ChatInputUtils from "ChatInputUtils" /* 4625 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4938 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7230 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10004 */;
-import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 11227 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 14853 */;
-import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 14869 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 14910 */;
-import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 14911 */;
+import ChatInputUtils from "ChatInputUtils" /* 4657 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4970 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7262 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10036 */;
+import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 11263 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 14891 */;
+import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 14907 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 14948 */;
+import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 14949 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10002 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8434 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10034 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8466 */;
 
 const require = globalThis.__r;
 
@@ -35,7 +35,7 @@ const Constants = fn(1078);
 ({ AnalyticEvents: closure_15, AnalyticsSections: closure_16 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_19 = createStyles.createStyles({ container: { height: "100%" }, controls: { paddingTop: 4 } });
 let items = [
   {
@@ -69,15 +69,15 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj5(568).c(55);
   closure_19();
   let obj = obj5(568);
-  const token = obj5(4462).useToken(nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
+  const token = obj5(4494).useToken(nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
   obj5 = token;
   const tmp7 = _slicedToArray(stateFromStores.useState(0), 2);
   importDefault = tmp7[1];
   [dependencyMap, closure_3] = stateFromStores.useState(false);
-  let obj2 = obj5(4462);
+  let obj2 = obj5(4494);
   const nativeStackNavigation = obj5(1488).useNativeStackNavigation();
   let obj3 = obj5(1488);
-  const params = obj5(7240).useSettingNavigationRoute().params;
+  const params = obj5(7272).useSettingNavigationRoute().params;
   let autoFocusElement;
   if (params != null) {
     autoFocusElement = params.autoFocusElement;
@@ -122,7 +122,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
   }
-  let obj4 = obj5(7240);
+  let obj4 = obj5(7272);
   const obj6 = { items: tmp12, pageWidth: tmp7[0], defaultIndex: null, onPageChange: null, onPageChangeStart: null };
   if (field === ProfileCustomizationSubsection.GUILD) {
     class D {
@@ -143,7 +143,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj = { hasEdits: stateFromStores, resetPending: UserSettingsAccountActionCreators.resetAllPending, onHasEdits: ChatInputUtils.dismissKeyboard, onConfirm };
     return maybeShowDiscardChangesAlertDefault(obj);
   };
-  const segmentedControlState = obj5(9868).useSegmentedControlState(obj6);
+  const segmentedControlState = obj5(9900).useSegmentedControlState(obj6);
   const activeIndex = segmentedControlState.activeIndex;
   const tmp17 = items[activeIndex.get(activeIndex)];
   if (tmp17 == null) {
@@ -269,7 +269,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     tmp34 = cResult[11];
   }
-  const tmpResult = obj5(9868);
+  const tmpResult = obj5(9900);
   stateFromStores = obj5(565).useStateFromStores(tmp33, tmp34);
   closure_11 = tmp19.isSubmitting || tmp27.isSubmitting;
   if (cResult[12] === tmp28) {

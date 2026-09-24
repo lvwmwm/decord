@@ -1,13 +1,13 @@
-// Module ID: 15868
-// Function ID: 15869
+// Module ID: 15878
+// Function ID: 15879
 // Name: TeacupIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 15869, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 15879, 4493, 2]
 
-// Module 15868 (TeacupIcon)
+// Module 15878 (TeacupIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod15869 from "module_15869" /* 15869 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod15879 from "module_15879" /* 15879 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const TeacupIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(15869);
+    const tmpResult = tmp(15879);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const TeacupIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15869, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15879, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

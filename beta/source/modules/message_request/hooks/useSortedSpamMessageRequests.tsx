@@ -1,13 +1,13 @@
-// Module ID: 17365
-// Function ID: 17366
+// Module ID: 17375
+// Function ID: 17376
 // Name: useSortedSpamMessageRequests
-// Dependencies: [19, 2045, 1376, 7467, 558, 568, 504, 17355, 2]
+// Dependencies: [19, 2045, 1376, 7499, 558, 568, 504, 17365, 2]
 
-// Module 17365 (useSortedSpamMessageRequests)
+// Module 17375 (useSortedSpamMessageRequests)
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1376 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7467 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7499 */;
 
 const require = fn;
 const ReactCompilerGating = fn(558);

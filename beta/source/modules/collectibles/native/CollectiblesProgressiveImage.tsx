@@ -1,11 +1,11 @@
-// Module ID: 16160
-// Function ID: 16161
+// Module ID: 16170
+// Function ID: 16171
 // Name: CollectiblesProgressiveImage
-// Dependencies: [109, 19, 17, 21, 558, 568, 4497, 4759, 2]
+// Dependencies: [109, 19, 17, 21, 558, 568, 4529, 4791, 2]
 
-// Module 16160 (CollectiblesProgressiveImage)
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
+// Module 16170 (CollectiblesProgressiveImage)
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -38,7 +38,7 @@ export const CollectiblesProgressiveImage = ReactCompilerGating.isReactCompilerE
     tmp6 = cResult[3];
   }
   const obj = sharedValue(568);
-  sharedValue = sharedValue(4497).useSharedValue(0);
+  sharedValue = sharedValue(4529).useSharedValue(0);
   if (cResult[4] !== sharedValue) {
     const fn = function h() {
       const obj2 = { duration: 500, easing: null };
@@ -99,7 +99,7 @@ export const CollectiblesProgressiveImage = ReactCompilerGating.isReactCompilerE
   ({ source, style } = arg0);
   let sharedValue;
   const merged = Object.assign(arg0, Object.assign({ source: 0, style: 0 }));
-  sharedValue = sharedValue(4497).useSharedValue(0);
+  sharedValue = sharedValue(4529).useSharedValue(0);
   let obj2 = { style, children: null };
   const obj3 = {};
   const merged1 = Object.assign(merged);

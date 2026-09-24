@@ -1,21 +1,21 @@
-// Module ID: 12547
-// Function ID: 12548
+// Module ID: 12583
+// Function ID: 12584
 // Name: ApplicationCommandLoadingItem
-// Dependencies: [19, 17, 10640, 21, 4758, 580, 558, 568, 5195, 2]
+// Dependencies: [19, 17, 10676, 21, 4790, 580, 558, 568, 5227, 2]
 
-// Module 12547 (ApplicationCommandLoadingItem)
+// Module 12583 (ApplicationCommandLoadingItem)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useFontScale from "useFontScale" /* 5195 */;
+import useFontScale from "useFontScale" /* 5227 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const AUTOCOMPLETE_ROW_HEIGHT = fn(10640).AUTOCOMPLETE_ROW_HEIGHT;
+const AUTOCOMPLETE_ROW_HEIGHT = fn(10676).AUTOCOMPLETE_ROW_HEIGHT;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 let c7 = 16;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles((arg0) => {
   const obj = { applicationCommandLoadingItem: { flexDirection: "row", paddingVertical: 4, paddingHorizontal: 16, alignItems: "center", height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) }, applicationCommandLoadingLeftWrapper: { flexDirection: "column", width: "75%", height: "100%", justifyContent: "space-between" }, applicationCommandLoadingName: null, applicationCommandLoadingDescription: null, applicationCommandLoadingSectionName: null };
   const size = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, height: v16, borderRadius: v16, width: "20%" };

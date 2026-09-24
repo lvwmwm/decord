@@ -1,13 +1,13 @@
-// Module ID: 8176
-// Function ID: 8177
+// Module ID: 8208
+// Function ID: 8209
 // Name: ThumbsDownIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 8177, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 8209, 4493, 2]
 
-// Module 8176 (ThumbsDownIcon)
+// Module 8208 (ThumbsDownIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod8177 from "module_8177" /* 8177 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod8209 from "module_8209" /* 8209 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const ThumbsDownIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(8177);
+    const tmpResult = tmp(8209);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const ThumbsDownIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8177, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8209, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

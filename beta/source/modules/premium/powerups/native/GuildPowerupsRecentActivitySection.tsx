@@ -1,20 +1,20 @@
-// Module ID: 12744
-// Function ID: 12745
+// Module ID: 12780
+// Function ID: 12781
 // Name: GuildPowerupsRecentActivitySection
-// Dependencies: [17, 4750, 21, 4758, 580, 558, 568, 7223, 12745, 4442, 504, 8224, 9487, 12747, 12749, 1181, 4754, 12751, 1119, 2]
+// Dependencies: [17, 4782, 21, 4790, 580, 558, 568, 7255, 12781, 4474, 504, 8256, 9519, 12783, 12785, 1181, 4786, 12787, 1119, 2]
 
-// Module 12744 (GuildPowerupsRecentActivitySection)
+// Module 12780 (GuildPowerupsRecentActivitySection)
 import _mod17 from "module_17" /* 17 */;
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import DateUtils from "DateUtils" /* 4442 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7223 */;
-import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 12745 */;
-import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 12751 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import DateUtils from "DateUtils" /* 4474 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7255 */;
+import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 12781 */;
+import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 12787 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,10 +42,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((row) => {
   if (cResult[0] !== sortKey) {
     const _Date = Date;
     const date = new Date(sortKey);
-    const calendarFormatResult = tmp(4442).calendarFormat(date);
+    const calendarFormatResult = tmp(4474).calendarFormat(date);
     cResult[0] = sortKey;
     cResult[1] = calendarFormatResult;
-    const tmpResult = tmp(4442);
+    const tmpResult = tmp(4474);
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
@@ -65,7 +65,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((row) => {
   const stateFromStores = initialize.useStateFromStores(tmp15, tmp16);
   if (cResult[4] === roleColor) {
     if (cResult[5] === stateFromStores) {
-      const processColorStringsArray = tmp(8224).useProcessColorStringsArray(roleColorStrings);
+      const processColorStringsArray = tmp(8256).useProcessColorStringsArray(roleColorStrings);
       class R {
         constructor() {
           return closure_1_4.roleStyle;
@@ -73,11 +73,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((row) => {
       }
       const isRoleStyleAndRoleColorsEligibleForERC = obj8.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
       if ("gave" === phase) {
-        let BoostGemSlashIcon = tmp(9487).BoostGemIcon;
+        let BoostGemSlashIcon = tmp(9519).BoostGemIcon;
       } else if ("expiring" === phase) {
-        BoostGemSlashIcon = tmp(12747).BoostTier1Icon;
+        BoostGemSlashIcon = tmp(12783).BoostTier1Icon;
       } else {
-        BoostGemSlashIcon = tmp(12749).BoostGemSlashIcon;
+        BoostGemSlashIcon = tmp(12785).BoostGemSlashIcon;
       }
       if (cResult[7] === BoostGemSlashIcon) {
         if (cResult[8] === phase) {
@@ -97,7 +97,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((row) => {
                   }
                 }
                 const obj4 = { variant: "text-md/medium", color: "interactive-text-active", lineClamp: 1, style: tmp37, gradientColors: tmp38, children: username };
-                const tmp41 = hasOwnProperty(tmp(4754).Text, obj4);
+                const tmp41 = hasOwnProperty(tmp(4786).Text, obj4);
                 cResult[17] = tmp38;
                 cResult[18] = tmp37;
                 cResult[19] = username;
@@ -154,7 +154,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((row) => {
       cResult[7] = BoostGemSlashIcon;
       cResult[8] = phase;
       cResult[9] = tmp29Result;
-      const tmpResult4 = tmp(8224);
+      const tmpResult4 = tmp(8256);
     }
   }
   if ("username" !== stateFromStores) {
@@ -185,15 +185,15 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((row) => {
     if (null != roleColor) {
       const obj5 = { color: roleColor };
     }
-    const processColorStringsArray = tmp(8224).useProcessColorStringsArray(roleColorStrings);
-    const tmpResult2 = tmp(8224);
+    const processColorStringsArray = tmp(8256).useProcessColorStringsArray(roleColorStrings);
+    const tmpResult2 = tmp(8256);
     const isRoleStyleAndRoleColorsEligibleForERC = tmpResult2.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      let BoostGemSlashIcon = tmp(9487).BoostGemIcon;
+      let BoostGemSlashIcon = tmp(9519).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp(12747).BoostTier1Icon;
+      BoostGemSlashIcon = tmp(12783).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp(12749).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp(12785).BoostGemSlashIcon;
     }
     const obj6 = { style: tmp4.boostRowContainer, children: null };
     if ("gave" === phase) {
@@ -222,10 +222,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((row) => {
     }
     obj11.gradientColors = tmp23;
     obj11.children = username;
-    items2[1] = hasOwnProperty(tmp(4754).Text, obj11);
-    items2[2] = hasOwnProperty(tmp(4754).Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
+    items2[1] = hasOwnProperty(tmp(4786).Text, obj11);
+    items2[2] = hasOwnProperty(tmp(4786).Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
     const obj12 = { variant: "text-md/medium", lineClamp: 1, style: tmp4.messageText, children: getBoostRowMessageTextDefault(row) };
-    items2[3] = hasOwnProperty(tmp(4754).Text, obj12);
+    items2[3] = hasOwnProperty(tmp(4786).Text, obj12);
     obj9.children = items2;
     items1[1] = timestampProducer(View, obj9);
     let str4 = "text-xs/semibold";
@@ -240,7 +240,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((row) => {
     obj13.color = str5;
     obj13.style = tmp4.timestamp;
     obj13.children = calendarFormatResult;
-    items1[2] = hasOwnProperty(tmp(4754).Text, obj13);
+    items1[2] = hasOwnProperty(tmp(4786).Text, obj13);
     obj6.children = items1;
     return timestampProducer(View, obj6);
   }
@@ -272,7 +272,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     if (cResult[1] !== str) {
       const obj3 = { variant: "heading-lg/semibold", color: str, children: first };
-      const tmp11 = hasOwnProperty(tmp(4754).Text, obj3);
+      const tmp11 = hasOwnProperty(tmp(4786).Text, obj3);
       cResult[1] = str;
       cResult[2] = tmp11;
       let tmp9 = tmp11;
@@ -338,7 +338,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const obj3 = { variant: "heading-lg/semibold", color: str, children: null };
     const intl = tmp(1119).intl;
     obj3.children = intl.string(tmp(1119).t.yM9Krm);
-    const items = [hasOwnProperty(tmp(4754).Text, obj3), ];
+    const items = [hasOwnProperty(tmp(4786).Text, obj3), ];
     const obj4 = { style: tmp4.boostContainer, children: arr.map((row) => closure_1_5(closure_1_8, { row }, "boost-" + row.boost.id)) };
     items[1] = hasOwnProperty(View, obj4);
     obj2.children = items;

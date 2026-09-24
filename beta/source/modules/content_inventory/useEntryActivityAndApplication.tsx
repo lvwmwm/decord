@@ -1,12 +1,12 @@
-// Module ID: 13296
-// Function ID: 13297
+// Module ID: 13332
+// Function ID: 13333
 // Name: useEntryActivityAndApplication
-// Dependencies: [32, 2044, 13297, 558, 568, 504, 7415, 2]
+// Dependencies: [32, 2044, 13333, 558, 568, 504, 7447, 2]
 
-// Module 13296 (useEntryActivityAndApplication)
+// Module 13332 (useEntryActivityAndApplication)
 import _slicedToArray from "module_32" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import ContentInventoryActivityStore from "ContentInventoryActivityStore" /* 13297 */;
+import ContentInventoryActivityStore from "ContentInventoryActivityStore" /* 13333 */;
 
 const require = globalThis.__r;
 
@@ -49,7 +49,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((extra) => {
     if (cResult[4] === application_id1) {
       let tmp10 = cResult[5];
     }
-    [first1] = first1(7415)(tmp10);
+    [first1] = first1(7447)(tmp10);
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const items1 = [EmbeddedActivitiesStore];
@@ -130,9 +130,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((extra) => {
     application_id1 = extra.extra.application_id;
   }
   items1[1] = application_id1;
-  [activityApplication, obj2.fallbackApplication] = activityApplication(7415)(items1);
+  [activityApplication, obj2.fallbackApplication] = activityApplication(7447)(items1);
   const obj2 = { activity: stateFromStores, embeddedActivity: null, anyMatchingApplication: null, activityApplication: null, fallbackApplication: null };
-  const tmp4 = activityApplication(7415);
+  const tmp4 = activityApplication(7447);
   const items2 = [EmbeddedActivitiesStore];
   obj2.embeddedActivity = tmp(504).useStateFromStores(items2, () => {
     let id;

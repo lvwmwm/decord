@@ -1,40 +1,40 @@
-// Module ID: 16840
-// Function ID: 16841
+// Module ID: 16850
+// Function ID: 16851
 // Name: ICYMICardInteractionRow
-// Dependencies: [32, 19, 17, 7550, 2045, 5632, 4399, 1078, 1379, 21, 4411, 8011, 4758, 580, 1368, 4608, 558, 568, 504, 4771, 7703, 10436, 1119, 9035, 4754, 5341, 10547, 1096, 1401, 10423, 11198, 11545, 11814, 11862, 16834, 5291, 8010, 8234, 11783, 8627, 11805, 11791, 4462, 5198, 676, 7456, 2]
+// Dependencies: [32, 19, 17, 7582, 2045, 5664, 4431, 1078, 1379, 21, 4443, 8043, 4790, 580, 1368, 4640, 558, 568, 504, 4803, 7735, 10475, 1119, 9067, 4786, 5373, 10583, 1096, 1401, 10462, 11234, 11581, 11850, 11898, 16844, 5323, 8042, 8266, 11819, 8659, 11841, 11827, 4494, 5230, 676, 7488, 2]
 // Exports: onAddReaction
 
-// Module 16840 (ICYMICardInteractionRow)
+// Module 16850 (ICYMICardInteractionRow)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import ReactionUtils from "ReactionUtils" /* 4411 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4771 */;
-import Pressables from "Pressables" /* 5341 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7703 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 8010 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 8011 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 8234 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8627 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 10423 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10436 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 11791 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 11805 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 11814 */;
-import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 11862 */;
-import ICYMIShared from "ICYMIShared" /* 16834 */;
+import ReactionUtils from "ReactionUtils" /* 4443 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4803 */;
+import Pressables from "Pressables" /* 5373 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7735 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 8042 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 8043 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 8266 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8659 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 10462 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10475 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 11827 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 11841 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 11850 */;
+import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 11898 */;
+import ICYMIShared from "ICYMIShared" /* 16844 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7550 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7582 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5632 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5664 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 const require = globalThis.__r;
 
-const ColorUtils = tmp4(4608);
+const ColorUtils = tmp4(4640);
 require = fn;
 function EmojiReaction(count) {
   const messageId = count.messageId;
@@ -180,7 +180,7 @@ const EmojiIntention = fn(1379).EmojiIntention;
 const jsxProd = fn(21);
 ({ jsx: closure_16, jsxs: closure_17, Fragment: closure_18 } = jsxProd);
 let c19 = 20;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_20 = createStyles.createStyles(() => {
   const obj = { container: { flexDirection: "row", alignItems: "center", flexWrap: "wrap", justifyContent: "space-between" }, replyForwardButtonContainer: { flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: 6 }, emojisRowContainer: { position: "relative", flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: 6 }, emojisContainer: { position: "relative", flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: 6 }, emojiContainer: { flexDirection: "row", backgroundColor: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: nativeDefault.radii.sm, flexShrink: 3, paddingHorizontal: 8, gap: 6 }, innerEmojiContainer: { paddingVertical: 5 }, selectedInnerEmojiContainer: { paddingVertical: 4 }, addEmojiContainer: { minHeight: 30, alignItems: "center" }, disabled: { opacity: 0.4 }, defaultEmoji: null, emojiText: null, selectedInnerTextContainer: null, innerTextContainer: null, emojiImage: null, selected: null, gradient: null, overflowChevron: null, comments: null, commentCount: null, commentsIcon: null };
   const size = { width: v20, height: v20 };
@@ -541,7 +541,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj2 = { onPress, style: tmp6, accessible: true, disabled, accessibilityLabel: tmp8, children: tmp9 };
-      const tmp16 = value2(tmp(5341).PressableOpacity, obj2);
+      const tmp16 = value2(tmp(5373).PressableOpacity, obj2);
       cResult[6] = disabled;
       cResult[7] = onPress;
       cResult[8] = tmp6;
@@ -593,7 +593,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = tmp(1119).intl;
         const stringResult = intl.string(tmp(1119).t["5NwaNY"]);
-        const tmp12 = value2(tmp(11862).ArrowAngleLeftUpIcon, { size: "sm" });
+        const tmp12 = value2(tmp(11898).ArrowAngleLeftUpIcon, { size: "sm" });
         cResult[4] = stringResult;
         cResult[5] = tmp12;
         let tmp9 = tmp12;
@@ -611,7 +611,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj2 = { onPress, style: tmp6, accessible: true, disabled, accessibilityLabel: tmp8, children: tmp9 };
-      const tmp15 = value2(tmp(5341).PressableOpacity, obj2);
+      const tmp15 = value2(tmp(5373).PressableOpacity, obj2);
       cResult[6] = disabled;
       cResult[7] = onPress;
       cResult[8] = tmp6;

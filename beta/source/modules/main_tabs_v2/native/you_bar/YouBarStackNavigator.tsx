@@ -1,18 +1,18 @@
-// Module ID: 16352
-// Function ID: 16353
+// Module ID: 16362
+// Function ID: 16363
 // Name: YouBarStackNavigator
-// Dependencies: [19, 17, 2099, 4580, 11383, 21, 8162, 16353, 16744, 16792, 504, 558, 568, 16866, 8628, 7246, 7403, 2]
+// Dependencies: [19, 17, 2099, 4612, 11419, 21, 8194, 16363, 16754, 16802, 504, 558, 568, 16876, 8660, 7278, 7435, 2]
 
-// Module 16352 (YouBarStackNavigator)
+// Module 16362 (YouBarStackNavigator)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import Navigator from "Navigator" /* 7246 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 8628 */;
-import notifications_Notifications from "notifications/Notifications" /* 16744 */;
-import useNotificationPermissionPromptDefault from "useNotificationPermissionPrompt" /* 16866 */;
+import Navigator from "Navigator" /* 7278 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 8660 */;
+import notifications_Notifications from "notifications/Notifications" /* 16754 */;
+import useNotificationPermissionPromptDefault from "useNotificationPermissionPrompt" /* 16876 */;
 import noop from "module_19" /* 19 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 
 require = fn;
 function getGuildsComponent() {
@@ -26,10 +26,10 @@ function getICYMIComponent() {
 }
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const YouBarNavigatorScreens = fn(11383).YouBarNavigatorScreens;
+const YouBarNavigatorScreens = fn(11419).YouBarNavigatorScreens;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const NativeStackNavigator = fn(8162);
+const NativeStackNavigator = fn(8194);
 let closure_12 = NativeStackNavigator.createNativeStackNavigator();
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -114,7 +114,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj7 = { children: null };
           const obj8 = { id: "tabs", screenOptions: tmp12, children: tmp31 };
           obj7.children = options(closure_12.Navigator, obj8);
-          obj6.children = options(tmp(7403).LayerScope, obj7);
+          obj6.children = options(tmp(7435).LayerScope, obj7);
           const tmp40 = options(hasOwnProperty, obj6);
           cResult[16] = tmp12;
           cResult[17] = tmp31;

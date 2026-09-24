@@ -1,13 +1,13 @@
-// Module ID: 8977
-// Function ID: 8978
+// Module ID: 9009
+// Function ID: 9010
 // Name: XboxNeutralIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 8978, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9010, 4493, 2]
 
-// Module 8977 (XboxNeutralIcon)
+// Module 9009 (XboxNeutralIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod8978 from "module_8978" /* 8978 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9010 from "module_9010" /* 9010 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const XboxNeutralIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(8978);
+    const tmpResult = tmp(9010);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const XboxNeutralIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8978, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9010, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

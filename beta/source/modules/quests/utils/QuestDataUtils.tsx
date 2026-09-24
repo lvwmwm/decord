@@ -1,17 +1,17 @@
-// Module ID: 7940
-// Function ID: 7941
+// Module ID: 7972
+// Function ID: 7973
 // Name: QuestDataUtils
-// Dependencies: [7941, 2113, 7943, 7944, 5663, 5666, 1389, 7942, 1235, 2]
+// Dependencies: [7973, 2113, 7975, 7976, 5695, 5698, 1389, 7974, 1235, 2]
 // Exports: captureQuestsException, earnedDecisionIsValid, findNextUpcomingExpirationEpochMs, findQuestOrReplacement, getAdContext, getAdDecisionData, getAdMetadataSealed, getAdProvenanceMetadataSealed, getAdTrafficMetadataSealed, getBountyByPlacementAndId, getIsQuestExpiredButWithinThirtyDayLookback, getQuestFormattedDate, getQuestPlacementFromQuestContent, hasUnclaimedReward, isBillableQuestContent, isBountyQuestHomePlacement, isDismissed, isDismissible, isQuestConfigExpired, isQuestExpired
 
-// Module 7940 (QuestDataUtils)
+// Module 7972 (QuestDataUtils)
 import SentryUtilsDefault from "SentryUtils" /* 1235 */;
-import QuestTypes from "QuestTypes" /* 5666 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7942 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7941 */;
+import QuestTypes from "QuestTypes" /* 5698 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7974 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7973 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
-import BountyStore from "BountyStore" /* 7943 */;
-import QuestStore from "QuestStore" /* 7944 */;
+import BountyStore from "BountyStore" /* 7975 */;
+import QuestStore from "QuestStore" /* 7976 */;
 
 require = fn;
 function getQuestDeliveryDataForPlacement(questPlacementFromQuestContent, adContentId) {
@@ -37,37 +37,37 @@ function getQuestDeliveryDataForPlacement(questPlacementFromQuestContent, adCont
     value = deliveryAdDecisionByPlacement.get(questPlacementFromQuestContent);
     if (questPlacementFromQuestContent === QuestTypes.AdPlacement.QUEST_HOME_BANNER_DESKTOP) {
       if (null != value) {
-        const obj5 = { questId: tmp11(7942).getDeliveredQuestId(value.creative), adCreativeId: null, adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null, provenanceMetadataSealed: null };
-        const tmp11Result = tmp11(7942);
-        obj5.adCreativeId = tmp11(7942).getDeliveredAdCreativeId(value.creative);
+        const obj5 = { questId: tmp11(7974).getDeliveredQuestId(value.creative), adCreativeId: null, adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null, provenanceMetadataSealed: null };
+        const tmp11Result = tmp11(7974);
+        obj5.adCreativeId = tmp11(7974).getDeliveredAdCreativeId(value.creative);
         ({ adDecisionData: obj7.adDecisionData, adContext: obj7.adContext, metadataSealed: obj7.metadataSealed, trafficMetadataSealed: obj7.trafficMetadataSealed, provenanceMetadataSealed: obj7.provenanceMetadataSealed } = value);
         let tmp8 = obj5;
-        const tmp11Result4 = tmp11(7942);
+        const tmp11Result4 = tmp11(7974);
       }
       return tmp8;
     }
     tmp8 = null;
     if (null != value) {
-      const obj6 = { questId: tmp11(7942).getDeliveredQuestId(value.creative), adCreativeId: null, adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null, provenanceMetadataSealed: null };
-      const tmp11Result5 = tmp11(7942);
-      obj6.adCreativeId = tmp11(7942).getDeliveredAdCreativeId(value.creative);
+      const obj6 = { questId: tmp11(7974).getDeliveredQuestId(value.creative), adCreativeId: null, adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null, provenanceMetadataSealed: null };
+      const tmp11Result5 = tmp11(7974);
+      obj6.adCreativeId = tmp11(7974).getDeliveredAdCreativeId(value.creative);
       ({ adDecisionData: obj4.adDecisionData, adContext: obj4.adContext, metadataSealed: obj4.metadataSealed, trafficMetadataSealed: obj4.trafficMetadataSealed, provenanceMetadataSealed: obj4.provenanceMetadataSealed } = value);
       tmp8 = obj6;
-      const tmp11Result6 = tmp11(7942);
+      const tmp11Result6 = tmp11(7974);
     }
   }
 }
-const QuestConstants = fn(5663);
+const QuestConstants = fn(5695);
 ({ DismissibleQuestContentFlags: closure_7, BILLABLE_PLACEMENTS: closure_8, NON_BILLABLE_CREATIVE_TYPES: closure_9, EMPTY_AD_DECISION_DATA: c10 } = QuestConstants);
 let c11 = 2592000000;
 let obj = {};
-obj[fn(5666).QuestContent.QUEST_BAR] = fn(5666).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA;
-obj[fn(5666).QuestContent.QUEST_BAR_V2] = fn(5666).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA;
-obj[fn(5666).QuestContent.QUEST_BAR_MOBILE] = fn(5666).AdPlacement.MOBILE_HOME_DOCK_AREA;
-obj[fn(5666).QuestContent.QUEST_HOME_HERO] = fn(5666).AdPlacement.QUEST_HOME_BANNER_DESKTOP;
-obj[fn(5666).QuestContent.QUEST_HOME_HERO_SHELF] = fn(5666).AdPlacement.QUEST_HOME_BANNER_DESKTOP;
-obj[fn(5666).QuestContent.VIDEO_MODAL_MOBILE] = fn(5666).AdPlacement.VIDEO_MODAL_MOBILE;
-let items = [fn(5666).AdPlacement.VIDEO_MODAL_MOBILE];
+obj[fn(5698).QuestContent.QUEST_BAR] = fn(5698).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA;
+obj[fn(5698).QuestContent.QUEST_BAR_V2] = fn(5698).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA;
+obj[fn(5698).QuestContent.QUEST_BAR_MOBILE] = fn(5698).AdPlacement.MOBILE_HOME_DOCK_AREA;
+obj[fn(5698).QuestContent.QUEST_HOME_HERO] = fn(5698).AdPlacement.QUEST_HOME_BANNER_DESKTOP;
+obj[fn(5698).QuestContent.QUEST_HOME_HERO_SHELF] = fn(5698).AdPlacement.QUEST_HOME_BANNER_DESKTOP;
+obj[fn(5698).QuestContent.VIDEO_MODAL_MOBILE] = fn(5698).AdPlacement.VIDEO_MODAL_MOBILE;
+let items = [fn(5698).AdPlacement.VIDEO_MODAL_MOBILE];
 const set = new Set(items);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/utils/QuestDataUtils.tsx");
@@ -122,7 +122,7 @@ export const isDismissible = function isDismissible(arg0) {
 export const isDismissed = function isDismissed(dismissedQuestContent, arg1) {
   const keys = Object.keys(React5);
   if (keys.includes(QuestTypes.QuestContent[arg1])) {
-    return tmp2(1389).hasFlag(dismissedQuestContent.dismissedQuestContent, tmp[tmp2(undefined, 5666).QuestContent[arg1]]);
+    return tmp2(1389).hasFlag(dismissedQuestContent.dismissedQuestContent, tmp[tmp2(undefined, 5698).QuestContent[arg1]]);
   } else {
     return false;
   }

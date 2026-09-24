@@ -1,37 +1,37 @@
-// Module ID: 16088
-// Function ID: 16089
+// Module ID: 16098
+// Function ID: 16099
 // Name: UserSettingsDesignSystemTextInput
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 5186, 5824, 6846, 5310, 14453, 7396, 7397, 7332, 4754, 5300, 7297, 7624, 7174, 8178, 6848, 5188, 4725, 7207, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 5218, 5856, 6878, 5342, 14491, 7428, 7429, 7364, 4786, 5332, 7329, 7656, 7206, 8210, 6880, 5220, 4757, 7239, 2]
 
-// Module 16088 (UserSettingsDesignSystemTextInput)
+// Module 16098 (UserSettingsDesignSystemTextInput)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import AtIcon from "AtIcon" /* 5310 */;
-import Card from "Card" /* 5824 */;
-import TextInput from "TextInput" /* 6846 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import AtIcon from "AtIcon" /* 5342 */;
+import Card from "Card" /* 5856 */;
+import TextInput from "TextInput" /* 6878 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const Text_Text = tmp(4754);
-const components_Button_Button = tmp(5188);
-const TextIcon = tmp(5300);
-const TextField = tmp(6848);
-const Input = tmp(7174);
-const SplitTextInput = tmp(7207);
-const SearchField = tmp(7297);
-const TextArea = tmp(7332);
-const SettingsIcon = tmp(7624);
-const IconButton = tmp(8178);
-const GhostInput = tmp(14453);
+const Text_Text = tmp(4786);
+const components_Button_Button = tmp(5220);
+const TextIcon = tmp(5332);
+const TextField = tmp(6880);
+const Input = tmp(7206);
+const SplitTextInput = tmp(7239);
+const SearchField = tmp(7329);
+const TextArea = tmp(7364);
+const SettingsIcon = tmp(7656);
+const IconButton = tmp(8210);
+const GhostInput = tmp(14491);
 require = fn;
 const ScrollView = fn(17).ScrollView;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: 16 }, sample: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.xl } };
 let closure_8 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -41,7 +41,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const tmp4 = closure_8();
   if (cResult[0] !== children) {
     const obj2 = { spacing: 24, children };
-    const tmp7 = timestampProducer(tmp(5186).Stack, obj2);
+    const tmp7 = timestampProducer(tmp(5218).Stack, obj2);
     cResult[0] = children;
     cResult[1] = tmp7;
     let tmp5 = tmp7;
@@ -225,7 +225,7 @@ ReactCompilerGating = fn(558);
 let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = timestampProducer(tmp(7396).BottomSheetTitleHeader, { title: "Ghost Input - Centered" });
+    const tmp6 = timestampProducer(tmp(7428).BottomSheetTitleHeader, { title: "Ghost Input - Centered" });
     cResult[0] = tmp6;
     let first = tmp6;
   } else {
@@ -244,9 +244,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj4 = { style: tmp7, children: null };
     const obj5 = { children: timestampProducer(closure_11, { placeholder: "@wumpus", description: "You can use up to 16 alpha-numeric characters" }) };
     obj4.children = timestampProducer(closure_9, obj5);
-    items[1] = timestampProducer(tmp(5186).Stack, obj4);
+    items[1] = timestampProducer(tmp(5218).Stack, obj4);
     obj3.children = items;
-    const tmp13 = React5(tmp(7397).BottomSheet, obj3);
+    const tmp13 = React5(tmp(7429).BottomSheet, obj3);
     cResult[2] = tmp13;
     let tmp8 = tmp13;
   } else {
@@ -265,7 +265,7 @@ ReactCompilerGating = fn(558);
 let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = timestampProducer(tmp(7396).BottomSheetTitleHeader, { title: "Ghost Input - Left Aligned" });
+    const tmp6 = timestampProducer(tmp(7428).BottomSheetTitleHeader, { title: "Ghost Input - Left Aligned" });
     cResult[0] = tmp6;
     let first = tmp6;
   } else {
@@ -284,9 +284,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj4 = { style: tmp7, children: null };
     const obj5 = { children: timestampProducer(closure_11, { placeholder: "@wumpus", description: "You can use up to 16 alpha-numeric characters", centered: false, size: "md" }) };
     obj4.children = timestampProducer(closure_9, obj5);
-    items[1] = timestampProducer(tmp(5186).Stack, obj4);
+    items[1] = timestampProducer(tmp(5218).Stack, obj4);
     obj3.children = items;
-    const tmp13 = React5(tmp(7397).BottomSheet, obj3);
+    const tmp13 = React5(tmp(7429).BottomSheet, obj3);
     cResult[2] = tmp13;
     let tmp8 = tmp13;
   } else {

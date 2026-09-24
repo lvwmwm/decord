@@ -1,12 +1,12 @@
-// Module ID: 15140
-// Function ID: 15141
+// Module ID: 15150
+// Function ID: 15151
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [19, 21, 4758, 580, 558, 568, 15132, 15133, 4455, 4754, 1119, 2486, 15141, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 15142, 15143, 4487, 4786, 1119, 2486, 15151, 2]
 
-// Module 15140 (FamilyCenterParentalConsentNotice)
+// Module 15150 (FamilyCenterParentalConsentNotice)
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 15141 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 15151 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 require = fn;
 const jsx = fn(21).jsx;
 let c5 = "https://support.discord.com/hc/articles/14155060633623";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { marginTop: nativeDefault.space.PX_16 }, link: { textDecorationLine: "underline" } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -69,7 +69,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               return tmp14;
             }
             const obj4 = { style: tmp3.container, text: cResult[5] };
-            const tmp17 = jsx(onPress(15141), { style: tmp3.container, text: cResult[5] });
+            const tmp17 = jsx(onPress(15151), { style: tmp3.container, text: cResult[5] });
             cResult[6] = tmp3.container;
             cResult[7] = cResult[5];
             cResult[8] = tmp17;

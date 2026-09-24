@@ -1,17 +1,17 @@
-// Module ID: 10309
-// Function ID: 10310
+// Module ID: 10348
+// Function ID: 10349
 // Name: StageGridRow
-// Dependencies: [19, 17, 21, 4758, 10301, 5644, 558, 568, 5344, 10310, 10300, 2]
+// Dependencies: [19, 17, 21, 4790, 10340, 5676, 558, 568, 5376, 10349, 10339, 2]
 
-// Module 10309 (StageGridRow)
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5344 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5644 */;
+// Module 10348 (StageGridRow)
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5376 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 5676 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ container: { flexDirection: "row", alignItems: "center" }, containerLandscape: { justifyContent: "center" } });
 const ReactCompilerGating = fn(558);
 let size = fn(2);
@@ -24,21 +24,21 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
   const participants = channel.participants;
   const tmp3 = closure_5();
   let obj = channel(568);
-  const isScreenLandscape = channel(5344).useIsScreenLandscape();
+  const isScreenLandscape = channel(5376).useIsScreenLandscape();
   let num = 3;
   if (0 === channel.row) {
     num = participants.length;
   }
   if (cResult[0] !== num) {
     if (1 === num) {
-      StageTileSize = tmp(10301).StageTileSize;
+      StageTileSize = tmp(10340).StageTileSize;
       let HALF = StageTileSize.FULL;
       cResult[0] = num;
       cResult[1] = HALF;
     } else if (2 !== num) {
-      HALF = tmp(10301).StageTileSize.THIRD;
+      HALF = tmp(10340).StageTileSize.THIRD;
     }
-    HALF = tmp(10301).StageTileSize.HALF;
+    HALF = tmp(10340).StageTileSize.HALF;
   } else {
     const size = tmp5;
     let containerLandscape = isScreenLandscape;
@@ -94,13 +94,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
         if (flag) {
           const obj2 = { participant: type, size, channel };
           const _HermesInternal2 = HermesInternal;
-          let tmp5Result = tmp5(tmp6(10310), obj2, "stage-media-participant-" + type.id);
-          const tmp6Result = tmp6(10310);
+          let tmp5Result = tmp5(tmp6(10349), obj2, "stage-media-participant-" + type.id);
+          const tmp6Result = tmp6(10349);
         } else {
           const obj = { channel, participant: type, size };
           const _HermesInternal = HermesInternal;
-          tmp5Result = tmp5(tmp6(10300), obj, "stage-user-participant-" + type.id);
-          const tmp6Result2 = tmp6(10300);
+          tmp5Result = tmp5(tmp6(10339), obj, "stage-user-participant-" + type.id);
+          const tmp6Result2 = tmp6(10339);
         }
         return tmp5Result;
       };
@@ -125,11 +125,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
     num = participants.length;
   }
   if (1 === num) {
-    THIRD = tmp2(10301).StageTileSize.FULL;
+    THIRD = tmp2(10340).StageTileSize.FULL;
   } else if (2 === num) {
-    THIRD = tmp2(10301).StageTileSize.HALF;
+    THIRD = tmp2(10340).StageTileSize.HALF;
   } else {
-    THIRD = tmp2(10301).StageTileSize.THIRD;
+    THIRD = tmp2(10340).StageTileSize.THIRD;
   }
   const items = [tmp.container, ];
   if (containerLandscape) {
@@ -157,13 +157,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
       if (flag) {
         const obj2 = { participant: type, size: THIRD, channel };
         const _HermesInternal2 = HermesInternal;
-        let tmp5Result = tmp5(tmp6(10310), obj2, "stage-media-participant-" + type.id);
-        const tmp6Result = tmp6(10310);
+        let tmp5Result = tmp5(tmp6(10349), obj2, "stage-media-participant-" + type.id);
+        const tmp6Result = tmp6(10349);
       } else {
         const obj = { channel, participant: type, size: THIRD };
         const _HermesInternal = HermesInternal;
-        tmp5Result = tmp5(tmp6(10300), obj, "stage-user-participant-" + type.id);
-        const tmp6Result2 = tmp6(10300);
+        tmp5Result = tmp5(tmp6(10339), obj, "stage-user-participant-" + type.id);
+        const tmp6Result2 = tmp6(10339);
       }
       return tmp5Result;
     })

@@ -1,12 +1,12 @@
-// Module ID: 16664
-// Function ID: 16665
+// Module ID: 16674
+// Function ID: 16675
 // Name: VoiceSubtitle
-// Dependencies: [19, 21, 558, 568, 4910, 1119, 4754, 2]
+// Dependencies: [19, 21, 558, 568, 4942, 1119, 4786, 2]
 
-// Module 16664 (VoiceSubtitle)
+// Module 16674 (VoiceSubtitle)
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,7 +23,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     if (cResult[1] === voiceUsers) {
       if (cResult[5] !== cResult[2]) {
         const obj2 = { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 };
-        const tmp9 = jsx(tmp(4754).Text, { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 });
+        const tmp9 = jsx(tmp(4786).Text, { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 });
         cResult[5] = tmp4;
         cResult[6] = tmp9;
         let tmp7 = tmp9;

@@ -1,17 +1,17 @@
-// Module ID: 13392
-// Function ID: 13393
+// Module ID: 13428
+// Function ID: 13429
 // Name: UserProfileGameFriendsCard
-// Dependencies: [19, 21, 4758, 558, 568, 7415, 1119, 12792, 4754, 7454, 2]
+// Dependencies: [19, 21, 4790, 558, 568, 7447, 1119, 12828, 4786, 7486, 2]
 
-// Module 13392 (UserProfileGameFriendsCard)
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7415 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12792 */;
+// Module 13428 (UserProfileGameFriendsCard)
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7447 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12828 */;
 import noop from "module_19" /* 19 */;
 
-const UserProfileCardDefault = tmp5(7454);
+const UserProfileCardDefault = tmp5(7486);
 const require = fn;
 let jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ card: { flexDirection: "column" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -101,7 +101,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
         }
         if (cResult[8] !== tmp7) {
           const obj5 = { variant: "text-md/normal", color: "text-default", children: tmp7 };
-          const tmp21 = jsx(tmp(4754).Text, { variant: "text-md/normal", color: "text-default", children: tmp7 });
+          const tmp21 = jsx(tmp(4786).Text, { variant: "text-md/normal", color: "text-default", children: tmp7 });
           cResult[8] = tmp7;
           cResult[9] = tmp21;
           let tmp19 = tmp21;
@@ -176,7 +176,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     const intl3 = tmp6(1119).intl;
     obj4.title = intl3.string(tmp6(1119).t["Uv/eTx"]);
     const obj5 = { variant: "text-md/normal", color: "text-default", children: formatResult };
-    obj4.children = jsx(tmp6(4754).Text, { variant: "text-md/normal", color: "text-default", children: formatResult });
+    obj4.children = jsx(tmp6(4786).Text, { variant: "text-md/normal", color: "text-default", children: formatResult });
     return jsx(UserProfileCardDefault, { style: null, title: null, children: null });
   }
   const arr = useGetOrFetchApplicationsDefault(applicationIds);

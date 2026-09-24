@@ -1,16 +1,16 @@
-// Module ID: 11312
-// Function ID: 11313
+// Module ID: 11348
+// Function ID: 11349
 // Name: OrbCheckoutAmountTag
-// Dependencies: [17, 21, 4758, 580, 558, 568, 9114, 1119, 4754, 2]
+// Dependencies: [17, 21, 4790, 580, 558, 568, 9146, 1119, 4786, 2]
 
-// Module 11312 (OrbCheckoutAmountTag)
+// Module 11348 (OrbCheckoutAmountTag)
 import _mod17 from "module_17" /* 17 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import OrbsIcon from "OrbsIcon" /* 9114 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import OrbsIcon from "OrbsIcon" /* 9146 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((orbAmount) => {
   const tmp4 = closure_5();
   if (cResult[0] !== tmp4.orbsIcon) {
     const obj2 = { size: "custom", color: "icon-strong", style: tmp4.orbsIcon };
-    const tmp7 = React3(tmp(9114).OrbsIcon, obj2);
+    const tmp7 = React3(tmp(9146).OrbsIcon, obj2);
     cResult[0] = tmp4.orbsIcon;
     cResult[1] = tmp7;
     let tmp5 = tmp7;
@@ -73,7 +73,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((orbAmount) => {
       tmp16 = tmp19;
     }
     const obj5 = { variant: "text-md/semibold", accessibilityLabel: cResult[3], children: str };
-    const tmp15 = React3(tmp(4754).Text, obj5);
+    const tmp15 = React3(tmp(4786).Text, obj5);
     cResult[4] = cResult[3];
     cResult[5] = str;
     cResult[6] = tmp15;

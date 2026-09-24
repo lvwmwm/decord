@@ -1,12 +1,12 @@
-// Module ID: 13183
-// Function ID: 13184
+// Module ID: 13219
+// Function ID: 13220
 // Name: vibegrationsPreviewNativeSurfaces
-// Dependencies: [1078, 13184, 2]
+// Dependencies: [1078, 13220, 2]
 // Exports: beginNativeSurfaceSessionForFrame
 
-// Module 13183 (vibegrationsPreviewNativeSurfaces)
+// Module 13219 (vibegrationsPreviewNativeSurfaces)
 import Constants from "Constants" /* 1078 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 13184 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 13220 */;
 import size from "module_2" /* 2 */;
 
 function asString(str) {
@@ -181,8 +181,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "unicodeVersion", answered: false }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "unicodeVersion", answered: false })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "unicodeVersion", answered: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002496666848918749 }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "unicodeVersion", answered: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002496666848918749 })
 };
 let closure_5 = {
   drain() {
@@ -221,8 +221,8 @@ export const beginNativeSurfaceSessionForFrame = function beginNativeSurfaceSess
       closure_6.unshift(obj3);
     }
     if (1 === arr.length) {
-      let result = obj3(13184).setRpcCommandInterceptor(answerFor);
-      const obj2 = obj3(13184);
+      let result = obj3(13220).setRpcCommandInterceptor(answerFor);
+      const obj2 = obj3(13220);
     }
     const obj4 = {
       iframeId,

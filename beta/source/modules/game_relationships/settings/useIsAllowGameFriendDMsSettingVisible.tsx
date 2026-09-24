@@ -1,12 +1,12 @@
-// Module ID: 16202
-// Function ID: 16203
+// Module ID: 16212
+// Function ID: 16213
 // Name: useIsAllowGameFriendDMsSettingVisible
-// Dependencies: [7899, 558, 568, 504, 2]
+// Dependencies: [7931, 558, 568, 504, 2]
 
-// Module 16202 (useIsAllowGameFriendDMsSettingVisible)
+// Module 16212 (useIsAllowGameFriendDMsSettingVisible)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7899 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7931 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);

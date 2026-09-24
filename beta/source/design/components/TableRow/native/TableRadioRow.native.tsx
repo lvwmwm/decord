@@ -1,15 +1,15 @@
-// Module ID: 5900
-// Function ID: 5901
+// Module ID: 5932
+// Function ID: 5933
 // Name: TableRadioRow
-// Dependencies: [109, 19, 21, 558, 568, 5901, 4464, 4479, 5904, 5822, 2]
+// Dependencies: [109, 19, 21, 558, 568, 5933, 4496, 4511, 5936, 5854, 2]
 
-// Module 5900 (TableRadioRow)
+// Module 5932 (TableRadioRow)
 import c from "c" /* 568 */;
-import native from "native" /* 4464 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4479 */;
-import TableRow from "TableRow" /* 5822 */;
-import TableRadioGroup from "TableRadioGroup" /* 5901 */;
-import FormRadio from "FormRadio" /* 5904 */;
+import native from "native" /* 4496 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4511 */;
+import TableRow from "TableRow" /* 5854 */;
+import TableRadioGroup from "TableRadioGroup" /* 5933 */;
+import FormRadio from "FormRadio" /* 5936 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -51,7 +51,7 @@ export const TableRadioRow = ReactCompilerGating.isReactCompilerEnabled() ? ((va
     tmp9 = cResult[6];
     closure_1 = cResult[8];
   }
-  const context = noop.useContext(tmp(5901).TableRadioGroupContext);
+  const context = noop.useContext(tmp(5933).TableRadioGroupContext);
   const onSelect = context.onSelect;
   if (tmp7 == null) {
     tmp7 = context.selectedValue === tmp11;
@@ -62,20 +62,20 @@ export const TableRadioRow = ReactCompilerGating.isReactCompilerEnabled() ? ((va
         let tmp17 = cResult[12];
       }
       if (cResult[13] !== tmp5) {
-        const nodeText = tmp(4464).getNodeText(tmp5);
+        const nodeText = tmp(4496).getNodeText(tmp5);
         cResult[13] = tmp5;
         cResult[14] = nodeText;
         let tmp18 = nodeText;
-        const tmpResult = tmp(4464);
+        const tmpResult = tmp(4496);
       } else {
         tmp18 = cResult[14];
       }
       if (cResult[15] !== tmp9) {
-        const nodeText1 = tmp(4464).getNodeText(tmp9);
+        const nodeText1 = tmp(4496).getNodeText(tmp9);
         cResult[15] = tmp9;
         cResult[16] = nodeText1;
         let str = nodeText1;
-        const tmpResult3 = tmp(4464);
+        const tmpResult3 = tmp(4496);
       } else {
         str = cResult[16];
       }
@@ -83,7 +83,7 @@ export const TableRadioRow = ReactCompilerGating.isReactCompilerEnabled() ? ((va
         if (cResult[18] === tmp7) {
           let tmp21 = cResult[19];
         }
-        const radioA11yNative = tmp(4479).useRadioA11yNative(tmp21);
+        const radioA11yNative = tmp(4511).useRadioA11yNative(tmp21);
         ({ accessibilityRole, accessibilityState } = radioA11yNative);
         if (str == null) {
           str = "";
@@ -92,7 +92,7 @@ export const TableRadioRow = ReactCompilerGating.isReactCompilerEnabled() ? ((va
         const combined = "" + tmp18 + ", " + str;
         if (cResult[20] !== tmp7) {
           const obj2 = { selected: tmp7 };
-          const tmp27 = jsx(tmp(5904).FormRadio, { selected: tmp7 });
+          const tmp27 = jsx(tmp(5936).FormRadio, { selected: tmp7 });
           cResult[20] = tmp7;
           cResult[21] = tmp27;
           let tmp25 = tmp27;
@@ -134,7 +134,7 @@ export const TableRadioRow = ReactCompilerGating.isReactCompilerEnabled() ? ((va
         obj3.accessibilityHint = tmp4;
         obj3.onPress = tmp17;
         obj3.trailing = tmp25;
-        const tmp33 = jsx(tmp(5822).TableRow, {});
+        const tmp33 = jsx(tmp(5854).TableRow, {});
         cResult[22] = tmp4;
         cResult[23] = accessibilityRole;
         cResult[24] = accessibilityState;
@@ -147,7 +147,7 @@ export const TableRadioRow = ReactCompilerGating.isReactCompilerEnabled() ? ((va
         cResult[31] = tmp25;
         cResult[32] = tmp33;
         tmp28 = tmp33;
-        const tmpResult4 = tmp(4479);
+        const tmpResult4 = tmp(4511);
       }
       const obj4 = { selected: tmp7, disabled: tmp15 };
       cResult[17] = tmp15;

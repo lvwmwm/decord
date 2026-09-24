@@ -1,29 +1,29 @@
-// Module ID: 12323
-// Function ID: 12324
+// Module ID: 12359
+// Function ID: 12360
 // Name: AppLauncherMentionableOption
-// Dependencies: [32, 19, 4750, 2103, 1376, 1089, 21, 4758, 580, 558, 568, 504, 11222, 12322, 12320, 1181, 12321, 12324, 12318, 4725, 12320, 1984, 2]
+// Dependencies: [32, 19, 4782, 2103, 1376, 1089, 21, 4790, 580, 558, 568, 504, 11258, 12358, 12356, 1181, 12357, 12360, 12354, 4757, 12356, 1984, 2]
 // Exports: default
 
-// Module 12323 (AppLauncherMentionableOption)
+// Module 12359 (AppLauncherMentionableOption)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import UserCircleIcon from "UserCircleIcon" /* 11222 */;
-import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 12320 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12322 */;
-import UsernameTextDefault from "UsernameText" /* 12324 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import UserCircleIcon from "UserCircleIcon" /* 11258 */;
+import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 12356 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12358 */;
+import UsernameTextDefault from "UsernameText" /* 12360 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import GuildRoleStore from "GuildRoleStore" /* 2103 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const StatusTypes = fn(1089).StatusTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { iconWrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE } };
 let closure_10 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -45,7 +45,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const stateFromStores = initialize.useStateFromStores(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = jsx(tmp(11222).UserCircleIcon, { size: "sm", color: "interactive-text-default" });
+    const tmp11 = jsx(tmp(11258).UserCircleIcon, { size: "sm", color: "interactive-text-default" });
     cResult[2] = tmp11;
     let tmp9 = tmp11;
   } else {
@@ -64,7 +64,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return tmp12;
   } else {
     const type = mentionable.type;
-    if (tmp(12320).MentionableItemTypes.USER === type) {
+    if (tmp(12356).MentionableItemTypes.USER === type) {
       const user = mentionable.result.user;
       if (cResult[5] === guildId) {
         if (cResult[6] === tmp19) {
@@ -81,11 +81,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[7] = user;
       cResult[8] = tmp22;
       tmp20 = tmp22;
-    } else if (tmp(12320).MentionableItemTypes.ROLE === type) {
+    } else if (tmp(12356).MentionableItemTypes.ROLE === type) {
       const result = mentionable.result;
       if (cResult[9] !== result) {
         const obj4 = { role: result };
-        const tmp18 = jsx(tmp(12321).RoleIcon, { role: result });
+        const tmp18 = jsx(tmp(12357).RoleIcon, { role: result });
         cResult[9] = result;
         cResult[10] = tmp18;
         let tmp16 = tmp18;
@@ -94,7 +94,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp16;
     } else {
-      const GLOBAL = tmp(12320).MentionableItemTypes.GLOBAL;
+      const GLOBAL = tmp(12356).MentionableItemTypes.GLOBAL;
       return tmp12;
     }
   }
@@ -111,14 +111,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return tmp7;
   } else {
     const type = mentionable.type;
-    if (tmp2(12320).MentionableItemTypes.USER === type) {
+    if (tmp2(12356).MentionableItemTypes.USER === type) {
       const obj3 = { user: mentionable.result.user, guildId: mentionable.guildId, animate: !stateFromStores, size: tmp2(1181).AvatarSizes.REFRESH_MEDIUM_32 };
       return tmp5(tmp2(1181).Avatar, obj3);
-    } else if (tmp2(12320).MentionableItemTypes.ROLE === type) {
+    } else if (tmp2(12356).MentionableItemTypes.ROLE === type) {
       const obj4 = { role: mentionable.result };
-      return tmp5(tmp2(12321).RoleIcon, obj4);
+      return tmp5(tmp2(12357).RoleIcon, obj4);
     } else {
-      const GLOBAL = tmp2(12320).MentionableItemTypes.GLOBAL;
+      const GLOBAL = tmp2(12356).MentionableItemTypes.GLOBAL;
       return tmp7;
     }
   }
@@ -180,9 +180,9 @@ export default function AppLauncherMentionableOption(option) {
       if (AppLauncherMentionableListActionSheet.MentionableItemTypes.USER === type) {
         const obj = { guildId: guild_id, user: tmp.result.user };
         return jsx(UsernameTextDefault, { guildId: guild_id, user: tmp.result.user });
-      } else if (tmp5(12320).MentionableItemTypes.ROLE === type) {
+      } else if (tmp5(12356).MentionableItemTypes.ROLE === type) {
         return tmp.result.name;
-      } else if (tmp5(12320).MentionableItemTypes.GLOBAL === type) {
+      } else if (tmp5(12356).MentionableItemTypes.GLOBAL === type) {
         return tmp.result.text;
       }
     }
@@ -199,7 +199,7 @@ export default function AppLauncherMentionableOption(option) {
       tmp();
     }
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequireImpl(12320, dependencyMap.paths), AppLauncherMentionableListActionSheet.APP_LAUNCHER_MENTIONABLE_LIST_ACTION_SHEET_KEY, {
+    obj.openLazy(asyncRequireImpl(12356, dependencyMap.paths), AppLauncherMentionableListActionSheet.APP_LAUNCHER_MENTIONABLE_LIST_ACTION_SHEET_KEY, {
       option,
       channel,
       onMentionablePress(mentionable) {

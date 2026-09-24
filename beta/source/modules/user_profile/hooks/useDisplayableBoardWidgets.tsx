@@ -1,27 +1,27 @@
-// Module ID: 13194
-// Function ID: 13195
+// Module ID: 13230
+// Function ID: 13231
 // Name: useDisplayableBoardWidgets
-// Dependencies: [19, 7874, 7871, 7864, 558, 568, 13195, 13196, 2]
+// Dependencies: [19, 7906, 7903, 7896, 558, 568, 13231, 13232, 2]
 
-// Module 13194 (useDisplayableBoardWidgets)
+// Module 13230 (useDisplayableBoardWidgets)
 import c from "c" /* 568 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7874 */;
-import UserProfileMobileGameCollectionExperiment from "UserProfileMobileGameCollectionExperiment" /* 13195 */;
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 13196 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7906 */;
+import UserProfileMobileGameCollectionExperiment from "UserProfileMobileGameCollectionExperiment" /* 13231 */;
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 13232 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function isNonEmptyBoardWidget(games) {
   let tmp3 = games instanceof UserProfileApplicationWidgetTypes.ApplicationWidget;
   if (!tmp3) {
-    let tmp4 = games instanceof tmp(7871).UserProfilePersonalWidget;
+    let tmp4 = games instanceof tmp(7903).UserProfilePersonalWidget;
     if (!tmp4) {
-      let isGameWidgetResult = tmp(7864).isGameWidget(games);
+      let isGameWidgetResult = tmp(7896).isGameWidget(games);
       if (isGameWidgetResult) {
         isGameWidgetResult = games.games.length > 0;
       }
       tmp4 = isGameWidgetResult;
-      const tmpResult = tmp(7864);
+      const tmpResult = tmp(7896);
     }
     tmp3 = tmp4;
   }
@@ -49,7 +49,7 @@ export const useDisplayableBoardWidgets = ReactCompilerGating.isReactCompilerEna
   cResult[1] = arr;
   cResult[2] = found;
 }) : ((arg0) => {
-  isMobileGameCollectionExperimentEnabled = isMobileGameCollectionExperimentEnabled(13195).useIsMobileGameCollectionExperimentEnabled("UserProfileWidgetsBoard");
+  isMobileGameCollectionExperimentEnabled = isMobileGameCollectionExperimentEnabled(13231).useIsMobileGameCollectionExperimentEnabled("UserProfileWidgetsBoard");
   const tmp2 = useUserProfileWidgetsDefault(arg0);
   importDefault = tmp2;
   const items = [isMobileGameCollectionExperimentEnabled, tmp2];

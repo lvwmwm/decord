@@ -1,21 +1,21 @@
-// Module ID: 9178
-// Function ID: 9179
+// Module ID: 9210
+// Function ID: 9211
 // Name: GameDetectionReportModal
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 1488, 8944, 9179, 4961, 1119, 7621, 5846, 5839, 4754, 5901, 5900, 6846, 5188, 7332, 7246, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 1488, 8976, 9211, 4993, 1119, 7653, 5878, 5871, 4786, 5933, 5932, 6878, 5220, 7364, 7278, 2]
 
-// Module 9178 (GameDetectionReportModal)
+// Module 9210 (GameDetectionReportModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import TableRadioRow from "TableRadioRow" /* 5900 */;
-import TableRadioGroup from "TableRadioGroup" /* 5901 */;
-import TextInput from "TextInput" /* 6846 */;
-import Navigator from "Navigator" /* 7246 */;
-import TextArea from "TextArea" /* 7332 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8944 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import TableRadioRow from "TableRadioRow" /* 5932 */;
+import TableRadioGroup from "TableRadioGroup" /* 5933 */;
+import TextInput from "TextInput" /* 6878 */;
+import Navigator from "Navigator" /* 7278 */;
+import TextArea from "TextArea" /* 7364 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8976 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -25,7 +25,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
 let c10 = "game-detection-report";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, content: null, submitContainer: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.content = { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_24 };

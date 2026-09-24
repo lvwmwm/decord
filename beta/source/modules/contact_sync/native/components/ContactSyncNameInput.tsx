@@ -1,14 +1,14 @@
-// Module ID: 12844
-// Function ID: 12845
+// Module ID: 12880
+// Function ID: 12881
 // Name: ContactSyncNameInput
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 7224, 1119, 4754, 1181, 5188, 12841, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 7256, 1119, 4786, 1181, 5220, 12877, 2]
 
-// Module 12844 (ContactSyncNameInput)
+// Module 12880 (ContactSyncNameInput)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7224 */;
-import ContactSyncErrorDefault from "ContactSyncError" /* 12841 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7256 */;
+import ContactSyncErrorDefault from "ContactSyncError" /* 12877 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { flex: { flex: 1 }, content: { flex: 1, padding: 16, paddingBottom: 0 }, title: { marginBottom: 8, textAlign: "center" }, subtitle: { lineHeight: 18, textAlign: "center", marginBottom: 16 }, input: { width: "100%", marginTop: 8, marginBottom: 12, padding: 12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.lg }, formSubtitle: { lineHeight: 16 }, button: null, error: null };
 let obj3 = { width: "100%", marginTop: 8, marginBottom: 12, padding: 12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.lg };
 obj2.button = { flexGrow: 0, paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_12 };
@@ -116,7 +116,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRemoveName) =>
                 const obj4 = { variant: "eyebrow", color: "interactive-text-default", children: null };
                 const intl5 = tmp(1119).intl;
                 obj4.children = intl5.string(tmp(1119).t["42/D2U"]);
-                const tmp34 = timestampProducer(tmp(4754).Text, obj4);
+                const tmp34 = timestampProducer(tmp(4786).Text, obj4);
                 cResult[18] = tmp34;
                 let tmp32 = tmp34;
               } else {
@@ -221,7 +221,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRemoveName) =>
                                         }
                                         return tmp;
                                       };
-                                      obj6.children = timestampProducer(tmp(5188).Button, tmp54);
+                                      obj6.children = timestampProducer(tmp(5220).Button, tmp54);
                                       tmp51 = timestampProducer(View, obj6);
                                     }
                                     class Q {
@@ -244,7 +244,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRemoveName) =>
                               }
                             }
                             const obj7 = { variant: "primary", size: str, text: tmp11, onPress: tmp46, loading, disabled: "" === value };
-                            const tmp49 = timestampProducer(tmp(5188).Button, obj7);
+                            const tmp49 = timestampProducer(tmp(5220).Button, obj7);
                             cResult[34] = loading;
                             cResult[35] = tmp11;
                             cResult[36] = str;
@@ -287,7 +287,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRemoveName) =>
                     }
                   }
                   obj8.children = obj9.string(tmp(1119).t.bCQt9K);
-                  tmp39 = timestampProducer(tmp(4754).Text, obj8);
+                  tmp39 = timestampProducer(tmp(4786).Text, obj8);
                 }
                 cResult[22] = tmp4;
                 cResult[23] = tmp5.formSubtitle;
@@ -302,7 +302,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRemoveName) =>
               tmp35 = tmp37;
             }
             const obj11 = { style: null, variant: "text-sm/medium", color: "text-default", children: cResult[14] };
-            const tmp31 = timestampProducer(tmp(4754).Text, obj11);
+            const tmp31 = timestampProducer(tmp(4786).Text, obj11);
             cResult[15] = tmp5.subtitle;
             cResult[16] = cResult[14];
             cResult[17] = tmp31;
@@ -310,7 +310,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRemoveName) =>
           }
         }
         const obj12 = { style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: cResult[9] };
-        const tmp24 = timestampProducer(tmp(4754).Text, obj12);
+        const tmp24 = timestampProducer(tmp(4786).Text, obj12);
         cResult[10] = tmp5.title;
         cResult[11] = cResult[9];
         cResult[12] = tmp24;
@@ -357,7 +357,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRemoveName) =>
     string2Result = string2(t2["sO+NI5"]);
   }
   obj3.children = string2Result;
-  const items1 = [timestampProducer(tmp9(4754).Text, obj3), , , , ];
+  const items1 = [timestampProducer(tmp9(4786).Text, obj3), , , , ];
   const obj4 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: null };
   const intl3 = tmp9(1119).intl;
   const string3 = intl3.string;
@@ -368,18 +368,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRemoveName) =>
     string3Result = string3(t3.xI496M);
   }
   obj4.children = string3Result;
-  items1[1] = timestampProducer(tmp9(4754).Text, obj4);
+  items1[1] = timestampProducer(tmp9(4786).Text, obj4);
   const obj5 = { variant: "eyebrow", color: "interactive-text-default", children: null };
   const intl4 = tmp9(1119).intl;
   obj5.children = intl4.string(tmp9(1119).t["42/D2U"]);
-  items1[2] = timestampProducer(tmp9(4754).Text, obj5);
+  items1[2] = timestampProducer(tmp9(4786).Text, obj5);
   items1[3] = timestampProducer(tmp9(1181).InputView, { value, onChangeText: tmp2[1], style: tmp.input, autoFocus: true, showBorder: false, showTopContainer: false, clearButtonVisibility: tmp9(1181).ClearButtonVisibility.WITH_CONTENT, autoCorrect: true, autoComplete: "name", textContentType: "name" });
   let tmp12Result = null;
   if (flag) {
     const obj7 = { style: tmp.formSubtitle, variant: "text-xs/medium", color: "text-default", children: null };
     const intl5 = tmp9(1119).intl;
     obj7.children = intl5.string(tmp9(1119).t.bCQt9K);
-    tmp12Result = tmp12(tmp9(4754).Text, obj7);
+    tmp12Result = tmp12(tmp9(4786).Text, obj7);
   }
   items1[4] = tmp12Result;
   obj2.children = items1;
@@ -388,7 +388,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRemoveName) =>
   if (null != onRemoveName) {
     str = "md";
   }
-  items2[1] = timestampProducer(tmp9(5188).Button, {
+  items2[1] = timestampProducer(tmp9(5220).Button, {
     variant: "primary",
     size: str,
     text: stringResult,
@@ -411,7 +411,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRemoveName) =>
       }
       return tmp;
     };
-    obj9.children = tmp12(tmp9(5188).Button, obj10);
+    obj9.children = tmp12(tmp9(5220).Button, obj10);
     tmp12Result2 = tmp12(tmp11, obj9);
   }
   items2[2] = tmp12Result2;

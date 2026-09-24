@@ -1,11 +1,11 @@
-// Module ID: 17713
-// Function ID: 17714
+// Module ID: 17723
+// Function ID: 17724
 // Name: HcaptchaModal
-// Dependencies: [109, 19, 17, 2113, 1376, 1078, 21, 4758, 558, 568, 504, 1488, 1982, 1616, 1119, 5084, 5183, 5186, 580, 4754, 1368, 17712, 4710, 5341, 2]
+// Dependencies: [109, 19, 17, 2113, 1376, 1078, 21, 4790, 558, 568, 504, 1488, 1982, 1616, 1119, 5116, 5215, 5218, 580, 4786, 1368, 17722, 4742, 5373, 2]
 
-// Module 17713 (HcaptchaModal)
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5084 */;
-import useBackPressHandlerDefault from "useBackPressHandler" /* 5183 */;
+// Module 17723 (HcaptchaModal)
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5116 */;
+import useBackPressHandlerDefault from "useBackPressHandler" /* 5215 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: closure_7, View: closure_8, StyleSheet: closure_9 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_14 = createStyles.createStyles({ container: { flex: 1, justifyContent: "center", alignItems: "center" }, title: { textAlign: "center" }, closeButtonContainer: { position: "absolute", top: 0, left: 0, zIndex: 2 }, closeButtonHitArea: { minWidth: 44, minHeight: 44, justifyContent: "center", alignItems: "center" } });
 const ReactCompilerGating = fn(558);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -214,7 +214,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 return closure_1_11.getCurrentUser();
               }
             }
-            const tmp49 = closure_12(tmp(4710).XLargeIcon, { color: null });
+            const tmp49 = closure_12(tmp(4742).XLargeIcon, { color: null });
             cResult[25] = tmp49;
             let obj2 = { color: null };
             const tmp48 = tmp49;
@@ -275,7 +275,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             cResult[31] = tmp55;
           }
           const obj5 = { accessibilityRole: "button", accessibilityLabel: tmp47, onPress: tmp22, style: tmp9.closeButtonHitArea, children: tmp48 };
-          const tmp52 = closure_12(tmp(5341).PressableOpacity, obj5);
+          const tmp52 = closure_12(tmp(5373).PressableOpacity, obj5);
           cResult[26] = tmp22;
           cResult[27] = tmp9.closeButtonHitArea;
           cResult[28] = tmp52;
@@ -306,12 +306,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const merged = Object.assign(tmp4);
     obj8.languageCode = LocaleStore.locale;
     obj8.onMessage = tmp5;
-    obj7.children = closure_12(tmp18(17712), obj8);
+    obj7.children = closure_12(tmp18(17722), obj8);
     const tmp40 = closure_12(closure_8, obj7);
     cResult[15] = tmp4;
     cResult[16] = tmp5;
     cResult[17] = tmp40;
-    const tmp18Result = tmp18(17712);
+    const tmp18Result = tmp18(17722);
   }
   let tmp28Result = !tmp16;
   if (!tmp16) {
@@ -328,7 +328,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj10 = { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp9.title, children: tmp20 };
-    const items3 = [closure_12(tmp(4754).Text, obj10), ];
+    const items3 = [closure_12(tmp(4786).Text, obj10), ];
     if (tmpResult4.isAndroid()) {
       class F {
         constructor() {
@@ -340,7 +340,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj11 = { size: "small", color: undefined };
     items3[1] = closure_12(closure_7, obj11);
     obj9.children = items3;
-    tmp28Result = tmp28(tmp(5186).Stack, obj9);
+    tmp28Result = tmp28(tmp(5218).Stack, obj9);
     tmpResult4 = tmp(1368);
   }
   cResult[12] = tmp16;
@@ -378,7 +378,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp(obj);
     }
   }, items1);
-  onPress(5183)(() => {
+  onPress(5215)(() => {
     callback();
     return true;
   });
@@ -387,7 +387,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (!tmp6) {
     const obj4 = { spacing: tmp9(580).space.PX_16, align: "center", children: null };
     const obj5 = { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp2.title, children: stringResult };
-    const items2 = [closure_12(tmp3(4754).Text, obj5), ];
+    const items2 = [closure_12(tmp3(4786).Text, obj5), ];
     let WHITE;
     if (tmp3Result.isAndroid()) {
       WHITE = tmp9(580).unsafe_rawColors.WHITE;
@@ -395,7 +395,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj6 = { size: "small", color: WHITE };
     items2[1] = closure_12(closure_7, obj6);
     obj4.children = items2;
-    tmp13Result = tmp13(tmp3(5186).Stack, obj4);
+    tmp13Result = tmp13(tmp3(5218).Stack, obj4);
     tmp3Result = tmp3(1368);
   }
   const items3 = [tmp13Result, , ];
@@ -405,11 +405,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const merged = Object.assign(tmp);
   obj8.languageCode = LocaleStore.locale;
   obj8.onMessage = onMessage;
-  obj7.children = closure_12(onPress(17712), obj8);
+  obj7.children = closure_12(onPress(17722), obj8);
   items3[1] = closure_12(closure_8, obj7);
   const obj9 = { style: null, pointerEvents: "box-none", children: null };
   const items4 = [tmp2.closeButtonContainer, ];
-  const tmp9Result = onPress(17712);
+  const tmp9Result = onPress(17722);
   items4[1] = { paddingTop: rect.top + onPress(580).space.PX_8, paddingLeft: rect.left + onPress(580).space.PX_16 };
   obj9.style = items4;
   const obj11 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
@@ -418,8 +418,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj11.onPress = onPress;
   obj11.style = tmp2.closeButtonHitArea;
   const obj10 = { paddingTop: rect.top + onPress(580).space.PX_8, paddingLeft: rect.left + onPress(580).space.PX_16 };
-  obj11.children = closure_12(onMessage(4710).XLargeIcon, { color: onPress(580).colors.INTERACTIVE_ICON_DEFAULT });
-  obj9.children = closure_12(onMessage(5341).PressableOpacity, obj11);
+  obj11.children = closure_12(onMessage(4742).XLargeIcon, { color: onPress(580).colors.INTERACTIVE_ICON_DEFAULT });
+  obj9.children = closure_12(onMessage(5373).PressableOpacity, obj11);
   items3[2] = closure_12(closure_8, obj9);
   obj3.children = items3;
   return closure_13(closure_8, obj3);

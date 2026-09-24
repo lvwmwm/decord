@@ -1,13 +1,13 @@
-// Module ID: 16763
-// Function ID: 16764
+// Module ID: 16773
+// Function ID: 16774
 // Name: LightbulbIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 16764, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 16774, 4493, 2]
 
-// Module 16763 (LightbulbIcon)
+// Module 16773 (LightbulbIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod16764 from "module_16764" /* 16764 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod16774 from "module_16774" /* 16774 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const LightbulbIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(16764);
+    const tmpResult = tmp(16774);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const LightbulbIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16764, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod16774, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

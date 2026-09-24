@@ -1,14 +1,14 @@
-// Module ID: 17700
-// Function ID: 17701
+// Module ID: 17710
+// Function ID: 17711
 // Name: updateRules
-// Dependencies: [19, 1078, 21, 558, 568, 4481, 4462, 580, 4455, 1933, 1181, 2]
+// Dependencies: [19, 1078, 21, 558, 568, 4513, 4494, 580, 4487, 1933, 1181, 2]
 // Exports: default
 
-// Module 17700 (updateRules)
+// Module 17710 (updateRules)
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import _modDef1933 from "module_1933" /* 1933 */;
-import LinkingDefault from "Linking" /* 4455 */;
+import LinkingDefault from "Linking" /* 4487 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -21,9 +21,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
   ({ output, state } = node);
   let obj = node(568);
   const tmp = node;
-  const token = node(4462).useToken(nativeDefault.colors.TEXT_LINK);
+  const token = node(4494).useToken(nativeDefault.colors.TEXT_LINK);
   let str = "none";
-  if (noop.useContext(node(4481).AccessibilityPreferencesContext).alwaysShowLinkDecorations) {
+  if (noop.useContext(node(4513).AccessibilityPreferencesContext).alwaysShowLinkDecorations) {
     str = "underline";
   }
   if (cResult[0] === token) {

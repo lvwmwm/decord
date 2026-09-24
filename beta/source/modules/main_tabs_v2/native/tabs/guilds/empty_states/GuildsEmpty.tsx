@@ -1,23 +1,23 @@
-// Module ID: 16609
-// Function ID: 16610
+// Module ID: 16619
+// Function ID: 16620
 // Name: GuildsEmpty
-// Dependencies: [32, 19, 17, 502, 2067, 4580, 1078, 21, 4758, 580, 4754, 12855, 558, 568, 16610, 1119, 5188, 5186, 1489, 565, 1253, 9046, 2070, 4618, 5344, 15356, 2]
+// Dependencies: [32, 19, 17, 502, 2067, 4612, 1078, 21, 4790, 580, 4786, 12891, 558, 568, 16620, 1119, 5220, 5218, 1489, 565, 1253, 9078, 2070, 4650, 5376, 15366, 2]
 
-// Module 16609 (GuildsEmpty)
+// Module 16619 (GuildsEmpty)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12855 */;
-import _modDef16610 from "module_16610" /* 16610 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12891 */;
+import _modDef16620 from "module_16620" /* 16620 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 
 require = fn;
 function handleJoinGuild() {
@@ -32,7 +32,7 @@ const Constants = fn(1078);
 ({ ME: closure_11, MOBILE_GUILD_UPSELL_LIST: closure_12 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { scrollView: { borderTopLeftRadius: nativeDefault.radii.xxl, borderTopRightRadius: nativeDefault.radii.sm }, header: null, headerTitle: null, scrollViewContentContainer: null, headerInner: null, content: null, illustrationWrapper: null, illustration: null, buttonContainer: null, textWrapper: null, headerText: null, text: null };
 let obj3 = { borderTopLeftRadius: nativeDefault.radii.xxl, borderTopRightRadius: nativeDefault.radii.sm };
 obj.header = { zIndex: 100, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
@@ -50,7 +50,7 @@ obj.buttonContainer = { paddingBottom: nativeDefault.space.PX_16, paddingHorizon
 let obj8 = { paddingBottom: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj.textWrapper = { marginHorizontal: nativeDefault.space.PX_16, marginVertical: nativeDefault.space.PX_24 };
 let obj10 = {};
-const merged = Object.assign(fn(4754).TextStyleSheet["heading-md/bold"]);
+const merged = Object.assign(fn(4786).TextStyleSheet["heading-md/bold"]);
 obj10.fontSize = 18;
 obj10.marginBottom = 8;
 obj.headerText = obj10;
@@ -66,7 +66,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentContainerStyl
       let tmp6 = cResult[2];
     }
     if (cResult[3] !== tmp4.illustration) {
-      const obj2 = { source: _modDef16610, style: tmp4.illustration };
+      const obj2 = { source: _modDef16620, style: tmp4.illustration };
       const tmp11 = __initData2(hasOwnProperty, obj2);
       cResult[3] = tmp4.illustration;
       cResult[4] = tmp11;
@@ -93,7 +93,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentContainerStyl
         }
         if (cResult[12] !== tmp17) {
           const obj3 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: tmp17, children: tmp19 };
-          const tmp23 = __initData2(tmp(4754).Heading, obj3);
+          const tmp23 = __initData2(tmp(4786).Heading, obj3);
           cResult[12] = tmp17;
           cResult[13] = tmp23;
           let tmp21 = tmp23;
@@ -111,7 +111,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentContainerStyl
         }
         if (cResult[15] !== tmp4.text) {
           const obj4 = { color: "text-default", variant: "text-md/medium", style: tmp4.text, children: tmp24 };
-          const tmp28 = __initData2(tmp(4754).Text, obj4);
+          const tmp28 = __initData2(tmp(4786).Text, obj4);
           cResult[15] = tmp4.text;
           cResult[16] = tmp28;
           let tmp26 = tmp28;
@@ -134,7 +134,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentContainerStyl
                   const intl3 = tmp(1119).intl;
                   obj5.text = intl3.string(tmp(1119).t.riOUtB);
                   obj5.onPress = handleJoinGuild;
-                  const tmp40 = __initData2(tmp(5188).Button, obj5);
+                  const tmp40 = __initData2(tmp(5220).Button, obj5);
                   cResult[25] = tmp40;
                   let tmp37 = tmp40;
                 } else {
@@ -146,7 +146,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentContainerStyl
                   const intl4 = tmp(1119).intl;
                   obj6.text = intl4.string(tmp(1119).t["BetvT+"]);
                   obj6.onPress = handleCreateGuild;
-                  const tmp44 = __initData2(tmp(5188).Button, obj6);
+                  const tmp44 = __initData2(tmp(5220).Button, obj6);
                   cResult[26] = tmp44;
                   let tmp41 = tmp44;
                 } else {
@@ -156,7 +156,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentContainerStyl
                   const obj7 = { style: tmp4.buttonContainer, spacing: 12, children: null };
                   const items = [tmp37, tmp41];
                   obj7.children = items;
-                  const tmp47 = state(tmp(5186).Stack, obj7);
+                  const tmp47 = state(tmp(5218).Stack, obj7);
                   cResult[27] = tmp4.buttonContainer;
                   cResult[28] = tmp47;
                   let tmp45 = tmp47;
@@ -240,7 +240,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentContainerStyl
   obj.contentContainerStyle = items;
   const obj2 = { children: null };
   const obj3 = { style: tmp.content, children: null };
-  const obj4 = { style: tmp.illustrationWrapper, children: __initData2(hasOwnProperty, { source: _modDef16610, style: tmp.illustration }) };
+  const obj4 = { style: tmp.illustrationWrapper, children: __initData2(hasOwnProperty, { source: _modDef16620, style: tmp.illustration }) };
   const items1 = [__initData2(timestampProducer, obj4), ];
   const obj6 = { style: tmp.textWrapper, children: null };
   const obj7 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: null, children: null };
@@ -312,16 +312,16 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((style)
   } else {
     tmp11 = cResult[2];
   }
-  selectedGuildId(9046)(tmp11);
+  selectedGuildId(9078)(tmp11);
   if (cResult[3] === selectedGuildId) {
     if (cResult[4] === navigation) {
       let tmp13 = cResult[5];
       let tmp14 = cResult[6];
     }
     const effect = noop.useEffect(tmp13, tmp14);
-    const isScreenLandscape = tmp(5344).useIsScreenLandscape();
-    const tmpResult3 = tmp(5344);
-    const youBarTotalHeight = tmp(15356).useYouBarTotalHeight();
+    const isScreenLandscape = tmp(5376).useIsScreenLandscape();
+    const tmpResult3 = tmp(5376);
+    const youBarTotalHeight = tmp(15366).useYouBarTotalHeight();
     if (!stateFromStores) {
       return null;
     } else {
@@ -334,7 +334,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((style)
           const obj4 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
           const intl = tmp(1119).intl;
           obj4.children = intl.string(tmp(1119).t["7hB4kg"]);
-          const tmp23 = closure_13(tmp(4754).Text, obj4);
+          const tmp23 = closure_13(tmp(4786).Text, obj4);
           cResult[10] = tmp23;
           let tmp21 = tmp23;
         } else {
@@ -402,7 +402,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((style)
       cResult[9] = items2;
       tmp20 = items2;
     }
-    const tmpResult4 = tmp(15356);
+    const tmpResult4 = tmp(15366);
   }
   const fn2 = function w() {
     if (null != selectedGuildId) {
@@ -422,12 +422,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((style)
                 guild = guilds[obj4.getGuildIds(obj4)[0]];
               }
               if (null != guild) {
-                closure_0 = _slicedToArray(tmp10(4618).getInitialGuildState(guild.id, undefined, false), 2)[1];
+                closure_0 = _slicedToArray(tmp10(4650).getInitialGuildState(guild.id, undefined, false), 2)[1];
                 obj2.dispatch(() => {
                   const CommonActions = navigation(dependencyMap[18]).CommonActions;
                   return CommonActions.reset(closure_0);
                 });
-                const tmp10Result = tmp10(4618);
+                const tmp10Result = tmp10(4650);
               }
             }
           }
@@ -463,7 +463,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((style)
   let obj2 = navigation(565);
   obj3.type = navigation(1253).ImpressionTypes.VIEW;
   obj3.name = navigation(1253).ImpressionNames.GUILDS_EMPTY_NUX;
-  selectedGuildId(9046)(obj3);
+  selectedGuildId(9078)(obj3);
   const items1 = [tmp6, navigation];
   const effect = noop.useEffect(() => {
     if (null != selectedGuildId) {
@@ -483,12 +483,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((style)
                 guild = guilds[obj4.getGuildIds(obj4)[0]];
               }
               if (null != guild) {
-                closure_0 = _slicedToArray(tmp10(4618).getInitialGuildState(guild.id, undefined, false), 2)[1];
+                closure_0 = _slicedToArray(tmp10(4650).getInitialGuildState(guild.id, undefined, false), 2)[1];
                 obj2.dispatch(() => {
                   const CommonActions = navigation(dependencyMap[18]).CommonActions;
                   return CommonActions.reset(closure_0);
                 });
-                const tmp10Result = tmp10(4618);
+                const tmp10Result = tmp10(4650);
               }
             }
           }
@@ -499,9 +499,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((style)
       obj2 = navigation;
     }
   }, items1);
-  const tmp7 = selectedGuildId(9046);
-  const isScreenLandscape = navigation(5344).useIsScreenLandscape();
-  navigation(15356);
+  const tmp7 = selectedGuildId(9078);
+  const isScreenLandscape = navigation(5376).useIsScreenLandscape();
+  navigation(15366);
   let tmp14Result = null;
   if (stateFromStores) {
     const obj4 = { style: null, children: null };
@@ -512,7 +512,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((style)
     const obj7 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
     const intl = tmp2(1119).intl;
     obj7.children = intl.string(tmp2(1119).t["7hB4kg"]);
-    obj6.children = closure_13(tmp2(4754).Text, obj7);
+    obj6.children = closure_13(tmp2(4786).Text, obj7);
     obj5.children = closure_13(closure_6, obj6);
     const items3 = [closure_13(closure_6, obj5), ];
     let tmp18;

@@ -1,38 +1,38 @@
-// Module ID: 16104
-// Function ID: 16105
+// Module ID: 16114
+// Function ID: 16115
 // Name: UserSettingsDesignSystemFormPrimitives
-// Dependencies: [32, 19, 17, 1078, 21, 4758, 558, 568, 4754, 5901, 5900, 5903, 7446, 9539, 5819, 5822, 14461, 10241, 5321, 5186, 2]
+// Dependencies: [32, 19, 17, 1078, 21, 4790, 558, 568, 4786, 5933, 5932, 5935, 7478, 9571, 5851, 5854, 14499, 10280, 5353, 5218, 2]
 
-// Module 16104 (UserSettingsDesignSystemFormPrimitives)
+// Module 16114 (UserSettingsDesignSystemFormPrimitives)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5321 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5819 */;
-import TableRow from "TableRow" /* 5822 */;
-import TableRadioRow from "TableRadioRow" /* 5900 */;
-import TableRadioGroup from "TableRadioGroup" /* 5901 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import TableSwitchRow from "TableSwitchRow" /* 7446 */;
-import VoiceXIcon from "VoiceXIcon" /* 10241 */;
-import Slider from "Slider" /* 14461 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5353 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5851 */;
+import TableRow from "TableRow" /* 5854 */;
+import TableRadioRow from "TableRadioRow" /* 5932 */;
+import TableRadioGroup from "TableRadioGroup" /* 5933 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import TableSwitchRow from "TableSwitchRow" /* 7478 */;
+import VoiceXIcon from "VoiceXIcon" /* 10280 */;
+import Slider from "Slider" /* 14499 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const Checkbox = tmp(9539);
+const Checkbox = tmp(9571);
 require = fn;
 const ScrollView = fn(17).ScrollView;
 const NOOP = fn(1078).NOOP;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ container: { padding: 16, paddingBottom: 32 } });
 let ReactCompilerGating = fn(558);
 let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = timestampProducer(tmp(4754).Text, { variant: "heading-lg/bold", children: "Radio" });
-    const tmp8 = timestampProducer(tmp(4754).Text, { variant: "text-md/normal", children: "Select a single option from a short list of multiple options" });
+    const tmp7 = timestampProducer(tmp(4786).Text, { variant: "heading-lg/bold", children: "Radio" });
+    const tmp8 = timestampProducer(tmp(4786).Text, { variant: "text-md/normal", children: "Select a single option from a short list of multiple options" });
     cResult[0] = tmp7;
     cResult[1] = tmp8;
     tmp4 = tmp7;
@@ -44,9 +44,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { children: null };
     const items = [tmp4, tmp5, ];
     const obj3 = { title: "Role Colors", hasIcons: false, defaultValue: "color-in-names", onChange: NOOP, children: null };
-    const items1 = [timestampProducer(tmp(5900).TableRadioRow, { label: "Show role colors in names", value: "color-in-names" }), timestampProducer(tmp(5900).TableRadioRow, { label: "Show role colors next to names", value: "color-next-to-names" }), timestampProducer(tmp(5900).TableRadioRow, { label: "Don't show role colors", value: "no-color" }), timestampProducer(tmp(5900).TableRadioRow, { label: "Disabled Item", subLabel: "This should not be selectable", value: "option4", disabled: true })];
+    const items1 = [timestampProducer(tmp(5932).TableRadioRow, { label: "Show role colors in names", value: "color-in-names" }), timestampProducer(tmp(5932).TableRadioRow, { label: "Show role colors next to names", value: "color-next-to-names" }), timestampProducer(tmp(5932).TableRadioRow, { label: "Don't show role colors", value: "no-color" }), timestampProducer(tmp(5932).TableRadioRow, { label: "Disabled Item", subLabel: "This should not be selectable", value: "option4", disabled: true })];
     obj3.children = items1;
-    items[2] = React5(tmp(5901).TableRadioGroup, obj3);
+    items[2] = React5(tmp(5933).TableRadioGroup, obj3);
     obj2.children = items;
     const tmp14 = React5(closure_1_8, obj2);
     cResult[2] = tmp14;
@@ -110,8 +110,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp6 = closure_11();
   const tmp7 = closure_11(false);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = timestampProducer(tmp(4754).Text, { variant: "heading-lg/bold", children: "Switch" });
-    const tmp12 = timestampProducer(tmp(4754).Text, { variant: "text-md/normal", children: "Toggle the state of a single setting on or off, immediately" });
+    const tmp11 = timestampProducer(tmp(4786).Text, { variant: "heading-lg/bold", children: "Switch" });
+    const tmp12 = timestampProducer(tmp(4786).Text, { variant: "text-md/normal", children: "Toggle the state of a single setting on or off, immediately" });
     cResult[0] = tmp11;
     cResult[1] = tmp12;
     tmp8 = tmp11;
@@ -123,8 +123,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { title: "Emoji", hasIcons: false, children: null };
     const obj3 = { label: "Show emoji reactions on messages", subLabel: "Show more information in less space" };
     const merged = Object.assign(tmp4);
-    obj2.children = timestampProducer(tmp(7446).TableSwitchRow, obj3);
-    const tmp18 = timestampProducer(tmp(5903).TableRowGroup, obj2);
+    obj2.children = timestampProducer(tmp(7478).TableSwitchRow, obj3);
+    const tmp18 = timestampProducer(tmp(5935).TableRowGroup, obj2);
     cResult[2] = tmp4;
     cResult[3] = tmp18;
     let tmp13 = tmp18;
@@ -134,7 +134,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[4] !== tmp5) {
     const obj4 = { label: "When posted as links to chat" };
     const merged1 = Object.assign(tmp5);
-    const tmp24 = timestampProducer(tmp(7446).TableSwitchRow, obj4);
+    const tmp24 = timestampProducer(tmp(7478).TableSwitchRow, obj4);
     cResult[4] = tmp5;
     cResult[5] = tmp24;
     let tmp19 = tmp24;
@@ -144,7 +144,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[6] !== tmp6) {
     const obj5 = { label: "When uploaded directly to Discord" };
     const merged2 = Object.assign(tmp6);
-    const tmp30 = timestampProducer(tmp(7446).TableSwitchRow, obj5);
+    const tmp30 = timestampProducer(tmp(7478).TableSwitchRow, obj5);
     cResult[6] = tmp6;
     cResult[7] = tmp30;
     let tmp25 = tmp30;
@@ -154,7 +154,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[8] !== tmp7) {
     const obj6 = { label: "With image descriptions" };
     const merged3 = Object.assign(tmp7);
-    const tmp36 = timestampProducer(tmp(7446).TableSwitchRow, obj6);
+    const tmp36 = timestampProducer(tmp(7478).TableSwitchRow, obj6);
     cResult[8] = tmp7;
     cResult[9] = tmp36;
     let tmp31 = tmp36;
@@ -163,7 +163,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     const obj7 = { label: "Disabled switch item", subLabel: "This should not be switchable", disabled: true, value: false, onValueChange: NOOP };
-    const tmp40 = timestampProducer(tmp(7446).TableSwitchRow, obj7);
+    const tmp40 = timestampProducer(tmp(7478).TableSwitchRow, obj7);
     cResult[10] = tmp40;
     let tmp37 = tmp40;
   } else {
@@ -321,8 +321,8 @@ ReactCompilerGating = fn(558);
 let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = timestampProducer(tmp(4754).Text, { variant: "heading-lg/bold", children: "Checkbox" });
-    const tmp8 = timestampProducer(tmp(4754).Text, { variant: "text-md/normal", children: "Select one or more options from a short list of options" });
+    const tmp7 = timestampProducer(tmp(4786).Text, { variant: "heading-lg/bold", children: "Checkbox" });
+    const tmp8 = timestampProducer(tmp(4786).Text, { variant: "text-md/normal", children: "Select one or more options from a short list of options" });
     cResult[0] = tmp7;
     cResult[1] = tmp8;
     tmp4 = tmp7;
@@ -335,13 +335,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const items = [tmp4, tmp5, ];
     const obj3 = { title: "Who can send you a friend request?", hasIcons: false, children: null };
     const obj4 = { label: "Everyone", subLabel: "Anyone can send you a friend request", checked: false, onPress: NOOP };
-    const items1 = [timestampProducer(tmp(5819).TableCheckboxRow, obj4), , ];
+    const items1 = [timestampProducer(tmp(5851).TableCheckboxRow, obj4), , ];
     const obj5 = { label: "Friends of Friends", subLabel: "Anyone who is friends with your friends can send you a friend request", checked: true, onPress: NOOP };
-    items1[1] = timestampProducer(tmp(5819).TableCheckboxRow, obj5);
+    items1[1] = timestampProducer(tmp(5851).TableCheckboxRow, obj5);
     const obj6 = { label: "Server Members", subLabel: "Anyone who is in a server with you can send you a friend request", checked: true, onPress: NOOP };
-    items1[2] = timestampProducer(tmp(5819).TableCheckboxRow, obj6);
+    items1[2] = timestampProducer(tmp(5851).TableCheckboxRow, obj6);
     obj3.children = items1;
-    items[2] = React5(tmp(5903).TableRowGroup, obj3);
+    items[2] = React5(tmp(5935).TableRowGroup, obj3);
     obj2.children = items;
     const tmp14 = React5(closure_1_8, obj2);
     cResult[2] = tmp14;
@@ -364,7 +364,7 @@ ReactCompilerGating = fn(558);
 let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = timestampProducer(tmp(4754).Text, { variant: "heading-lg/bold", children: "Slider" });
+    const tmp6 = timestampProducer(tmp(4786).Text, { variant: "heading-lg/bold", children: "Slider" });
     cResult[0] = tmp6;
     let first = tmp6;
   } else {
@@ -374,9 +374,9 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { children: null };
     const items = [first, ];
     const obj3 = { start: true, end: true, label: "Volume", subLabel: null };
-    const obj4 = { startIcon: timestampProducer(tmp(10241).VoiceXIcon, {}), endIcon: timestampProducer(tmp(5321).VoiceNormalIcon, {}), onValueChange: NOOP };
-    obj3.subLabel = timestampProducer(tmp(14461).Slider, obj4);
-    items[1] = timestampProducer(tmp(5822).TableRow, obj3);
+    const obj4 = { startIcon: timestampProducer(tmp(10280).VoiceXIcon, {}), endIcon: timestampProducer(tmp(5353).VoiceNormalIcon, {}), onValueChange: NOOP };
+    obj3.subLabel = timestampProducer(tmp(14499).Slider, obj4);
+    items[1] = timestampProducer(tmp(5854).TableRow, obj3);
     obj2.children = items;
     const tmp12 = React5(closure_1_8, obj2);
     cResult[1] = tmp12;

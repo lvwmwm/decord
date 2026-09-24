@@ -1,11 +1,11 @@
-// Module ID: 7216
-// Function ID: 7217
+// Module ID: 7248
+// Function ID: 7249
 // Name: BackgroundImage
-// Dependencies: [19, 17, 21, 558, 568, 4693, 4610, 7217, 7218, 2]
+// Dependencies: [19, 17, 21, 558, 568, 4725, 4642, 7249, 7250, 2]
 
-// Module 7216 (BackgroundImage)
+// Module 7248 (BackgroundImage)
 import c from "c" /* 568 */;
-import shared from "shared" /* 4610 */;
+import shared from "shared" /* 4642 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -50,10 +50,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp13 = obj4;
   } else {
     if (tmpResult.isThemeDark(tmp6)) {
-      tmp2 = 7217;
+      tmp2 = 7249;
       let tmp5Result = tmp5(tmp2);
     } else {
-      tmp5Result = tmp5(7218);
+      tmp5Result = tmp5(7250);
     }
     tmpResult = shared;
   }
@@ -63,7 +63,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (flag === undefined) {
     flag = false;
   }
-  const tmp = flag(4693)();
+  const tmp = flag(4725)();
   dependencyMap = tmp;
   let items = [backgroundImageSource, flag, tmp];
   let obj = { style: absoluteFill.absoluteFill, children: null };
@@ -77,10 +77,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       let tmp2 = dependencyMap;
       if (obj2.isThemeDark(closure_2)) {
-        tmp2 = 7217;
+        tmp2 = 7249;
         let tmp4Result = tmp4(tmp2);
       } else {
-        tmp4Result = tmp4(7218);
+        tmp4Result = tmp4(7250);
       }
       obj2 = shared;
     }

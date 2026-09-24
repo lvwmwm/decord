@@ -1,16 +1,16 @@
-// Module ID: 17516
-// Function ID: 17517
+// Module ID: 17526
+// Function ID: 17527
 // Name: SoundButton
-// Dependencies: [19, 17, 17509, 21, 4497, 4758, 580, 1368, 5341, 558, 568, 5187, 12064, 7377, 17517, 17518, 7409, 7429, 17520, 17506, 17522, 4754, 5315, 2]
+// Dependencies: [19, 17, 17519, 21, 4529, 4790, 580, 1368, 5373, 558, 568, 5219, 12100, 7409, 17527, 17528, 7441, 7461, 17530, 17516, 17532, 4786, 5347, 2]
 
-// Module 17516 (SoundButton)
+// Module 17526 (SoundButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4497 */;
-import spring from "spring" /* 5187 */;
-import EmojiDefault from "Emoji" /* 7377 */;
-import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12064 */;
-import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 17522 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4529 */;
+import spring from "spring" /* 5219 */;
+import EmojiDefault from "Emoji" /* 7409 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12100 */;
+import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 17532 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexport_mod = ReanimatedRexport2;
@@ -22,11 +22,11 @@ const jsxProd = fn(21);
 let ReanimatedRexport = ReanimatedRexport_mod;
 let closure_7 = ReanimatedRexport.createAnimatedComponent(View);
 const SPRING_CONFIG = { damping: 10, stiffness: 300, mass: 1 };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { button: null, buttonPressed: null, buttonDisabled: null, buttonPlaying: null, playingBackground: null, emoji: null, emojiWrapper: null, text: null, textPlaying: null, lock: null };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
-obj.button = { marginTop: 4, height: fn(17509).SOUND_BUTTON_HEIGHT, backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
-let obj2 = { marginTop: 4, height: fn(17509).SOUND_BUTTON_HEIGHT, backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
+obj.button = { marginTop: 4, height: fn(17519).SOUND_BUTTON_HEIGHT, backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
+let obj2 = { marginTop: 4, height: fn(17519).SOUND_BUTTON_HEIGHT, backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
 obj.buttonPressed = { backgroundColor: nativeDefault.colors.CARD_PRIMARY_PRESSED_BG };
 obj.buttonDisabled = { opacity: 0.5 };
 let obj4 = { backgroundColor: nativeDefault.colors.CARD_PRIMARY_PRESSED_BG };
@@ -47,7 +47,7 @@ const size1 = { position: "absolute", top: nativeDefault.space.PX_12, end: nativ
 obj.lock = size1;
 let closure_9 = createStyles.createStyles(obj);
 let ReanimatedRexport = ReanimatedRexport_mod;
-let closure_10 = ReanimatedRexport.createAnimatedComponent(fn(5341).PressableOpacity);
+let closure_10 = ReanimatedRexport.createAnimatedComponent(fn(5373).PressableOpacity);
 let ReactCompilerGating = fn(558);
 let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   closure_0 = arg0;

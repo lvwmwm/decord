@@ -1,16 +1,9 @@
 // Module ID: 3859
 // Function ID: 3860
-// Dependencies: [2118]
+// Dependencies: [1125]
 
 // Module 3859
-import module_2118 from "module_2118" /* 2118 */;
+import registerAsset from "module_1125" /* 1125 */;
 
-if (!module_2118) {
-  const obj2 = { default: module_2118 };
-  let obj = obj2;
-} else {
-  obj = module_2118;
-}
 
-export default { date: obj.default({ formats: { full: "EEEE, d. MMMM yyyy", long: "d. MMMM yyyy", medium: "d. M. yyyy", short: "dd.MM.yyyy" }, defaultWidth: "full" }), time: obj.default({ formats: { full: "H:mm:ss zzzz", long: "H:mm:ss z", medium: "H:mm:ss", short: "H:mm" }, defaultWidth: "full" }), dateTime: obj.default({ formats: { full: "{{date}} 'v' {{time}}", long: "{{date}} 'v' {{time}}", medium: "{{date}}, {{time}}", short: "{{date}}, {{time}}" }, defaultWidth: "full" }) };
-export default exports.default;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Jpb3RfY3JlZGl0X2NhbXBhaWdu", scales: [1], hash: "81581518bf8ebe4fbe0cc1a29b5af979", name: "ja.messages.81581518bf8ebe4fbe0cc1a29b5af979.compiled.messages", type: "jsona" });

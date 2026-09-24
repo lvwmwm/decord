@@ -1,14 +1,14 @@
-// Module ID: 13774
-// Function ID: 13775
+// Module ID: 13810
+// Function ID: 13811
 // Name: BoostedGuildTierProgressCircle
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 13775, 13779, 13780, 13781, 558, 568, 4667, 4652, 4754, 12755, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 13811, 13815, 13816, 13817, 558, 568, 4699, 4684, 4786, 12791, 2]
 
-// Module 13774 (BoostedGuildTierProgressCircle)
+// Module 13810 (BoostedGuildTierProgressCircle)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4652 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 4667 */;
-import Tier048Px from "Tier048Px" /* 13775 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 4684 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 4699 */;
+import Tier048Px from "Tier048Px" /* 13811 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ const Constants = fn(1078);
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: hasOwnProperty, BoostedGuildTiers: metroRequire } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { guildTierProgressCircle: { position: "relative", width: 70, height: 70 }, guildTierBackground: null, guildTierNoneIcon: null, guildTierIcon: null, guildTierName: null };
 let size = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, width: 64, height: 64, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.xxl };
 obj2.guildTierBackground = size;
@@ -40,11 +40,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (null == guild) {
     if (cResult[0] !== theme) {
-      const tier048PxSource = tmp(13775).getTier048PxSource(theme);
+      const tier048PxSource = tmp(13811).getTier048PxSource(theme);
       cResult[0] = theme;
       cResult[1] = tier048PxSource;
       let tmp32 = tier048PxSource;
-      const tmpResult = tmp(13775);
+      const tmpResult = tmp(13811);
     } else {
       tmp32 = cResult[1];
     }
@@ -72,7 +72,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[4] = tmp37;
     tmp34 = tmp37;
   } else {
-    const nextGuildTierFromGuild = tmp(4652).getNextGuildTierFromGuild(guild.id);
+    const nextGuildTierFromGuild = tmp(4684).getNextGuildTierFromGuild(guild.id);
     let tmp9 = null;
     if (null != nextGuildTierFromGuild) {
       tmp9 = dependencyMap[nextGuildTierFromGuild];
@@ -91,11 +91,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             let tmp16 = cResult[13];
           }
           if (cResult[14] !== guild.premiumTier) {
-            const tierName = tmp(4652).getTierName(guild.premiumTier);
+            const tierName = tmp(4684).getTierName(guild.premiumTier);
             cResult[14] = guild.premiumTier;
             cResult[15] = tierName;
             let tmp20 = tierName;
-            const tmpResult5 = tmp(4652);
+            const tmpResult5 = tmp(4684);
           } else {
             tmp20 = cResult[15];
           }
@@ -117,7 +117,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   }
                 }
                 const obj4 = { style: tmp10, percent: num2, children: tmp25 };
-                const tmp31 = React5(tmp5(12755), obj4);
+                const tmp31 = React5(tmp5(12791), obj4);
                 cResult[23] = num2;
                 cResult[24] = tmp4.guildTierProgressCircle;
                 cResult[25] = tmp25;
@@ -136,7 +136,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp25 = tmp28;
           }
           const obj6 = { style: tmp4.guildTierName, variant: "text-xs/semibold", color: "interactive-text-active", children: tmp20 };
-          const tmp24 = React5(tmp(4754).Text, obj6);
+          const tmp24 = React5(tmp(4786).Text, obj6);
           cResult[16] = tmp4.guildTierName;
           cResult[17] = tmp20;
           cResult[18] = tmp24;
@@ -154,21 +154,21 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (guild.premiumTier !== constants.NONE) {
         const premiumTier = guild.premiumTier;
         if (tmp13.TIER_1 === premiumTier) {
-          let tier048PxSource1 = tmp5(13779);
+          let tier048PxSource1 = tmp5(13815);
         } else if (tmp13.TIER_2 !== premiumTier) {
           if (tmp13.TIER_3 === premiumTier) {
-            tier048PxSource1 = tmp5(13781);
+            tier048PxSource1 = tmp5(13817);
           }
         }
-        tier048PxSource1 = tmp5(13780);
+        tier048PxSource1 = tmp5(13816);
       }
       cResult[8] = guild;
       cResult[9] = theme;
       cResult[10] = tier048PxSource1;
     }
-    const tmpResult4 = tmp(4652);
-    tier048PxSource1 = tmp(13775).getTier048PxSource(theme);
-    const tmpResult6 = tmp(13775);
+    const tmpResult4 = tmp(4684);
+    tier048PxSource1 = tmp(13811).getTier048PxSource(theme);
+    const tmpResult6 = tmp(13811);
   }
 }) : ((arg0) => {
   ({ guild, theme } = arg0);
@@ -201,17 +201,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (guild.premiumTier !== constants.NONE) {
         const premiumTier = guild.premiumTier;
         if (tmp13.TIER_1 === premiumTier) {
-          let tier048PxSource = tmp2(13779);
+          let tier048PxSource = tmp2(13815);
         } else if (tmp13.TIER_2 === premiumTier) {
-          tier048PxSource = tmp2(13780);
+          tier048PxSource = tmp2(13816);
         } else if (tmp13.TIER_3 === premiumTier) {
-          tier048PxSource = tmp2(13781);
+          tier048PxSource = tmp2(13817);
         }
       }
       const obj5 = { source: tier048PxSource, style: tmp.guildTierIcon, accessibilityElementsHidden: true, importantForAccessibility: "no" };
       const items = [tmp8(tmp12, obj5), ];
-      const obj6 = { style: tmp.guildTierName, variant: "text-xs/semibold", color: "interactive-text-active", children: tmp19(4652).getTierName(guild.premiumTier) };
-      items[1] = tmp8(tmp19(4754).Text, obj6);
+      const obj6 = { style: tmp.guildTierName, variant: "text-xs/semibold", color: "interactive-text-active", children: tmp19(4684).getTierName(guild.premiumTier) };
+      items[1] = tmp8(tmp19(4786).Text, obj6);
       obj4.children = items;
       obj.children = tmp10(tmp11, obj4);
       return tmp8(tmp9, obj);

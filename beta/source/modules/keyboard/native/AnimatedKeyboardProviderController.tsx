@@ -1,21 +1,21 @@
-// Module ID: 16261
-// Function ID: 16262
+// Module ID: 16271
+// Function ID: 16272
 // Name: AnimatedKeyboardProviderController
-// Dependencies: [19, 21, 4497, 558, 568, 1630, 2]
+// Dependencies: [19, 21, 4529, 558, 568, 1630, 2]
 
-// Module 16261 (AnimatedKeyboardProviderController)
+// Module 16271 (AnimatedKeyboardProviderController)
 import c from "c" /* 568 */;
 import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1630 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4497 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4529 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c2, jsxs: c3 } = jsxProd);
-let ReanimatedRexport = fn(4497);
+let ReanimatedRexport = fn(4529);
 const mutable = ReanimatedRexport.makeMutable(0);
-ReanimatedRexport = fn(4497);
-const mutable1 = ReanimatedRexport.makeMutable(fn(4497).KeyboardState.UNKNOWN);
+ReanimatedRexport = fn(4529);
+const mutable1 = ReanimatedRexport.makeMutable(fn(4529).KeyboardState.UNKNOWN);
 fn(558);
 const __initData = { code: "function AnimatedKeyboardProviderControllerTsx1(e){const{animatedKeyboardState,KeyboardState}=this.__closure;animatedKeyboardState.set(e.height===0?KeyboardState.CLOSED:KeyboardState.OPEN);}" };
 const __initData2 = { code: "function AnimatedKeyboardProviderControllerTsx2(e_0){const{animatedKeyboardHeight}=this.__closure;animatedKeyboardHeight.set(e_0.height);}" };
@@ -36,7 +36,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() =>
       }
       const result = mutable1.set(OPEN);
     };
-    const obj3 = { animatedKeyboardState: mutable1, KeyboardState: tmp(4497).KeyboardState };
+    const obj3 = { animatedKeyboardState: mutable1, KeyboardState: tmp(4529).KeyboardState };
     fn.__closure = obj3;
     fn.__workletHash = 12130162639136;
     fn.__initData = __initData;
@@ -58,7 +58,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() =>
       const result = mutable1.set(OPEN);
       const result1 = mutable.set(height.height);
     };
-    const obj5 = { animatedKeyboardState: mutable1, KeyboardState: tmp(4497).KeyboardState, animatedKeyboardHeight: mutable };
+    const obj5 = { animatedKeyboardState: mutable1, KeyboardState: tmp(4529).KeyboardState, animatedKeyboardHeight: mutable };
     fn3.__closure = obj5;
     fn3.__workletHash = 12335874047522;
     fn3.__initData = __initData3;

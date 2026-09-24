@@ -1,14 +1,14 @@
-// Module ID: 17533
-// Function ID: 17534
+// Module ID: 17543
+// Function ID: 17544
 // Name: SecureFramesCallVerificationBottomSheet
-// Dependencies: [19, 4781, 1078, 21, 558, 568, 504, 9959, 8637, 1119, 9948, 9965, 2]
+// Dependencies: [19, 4813, 1078, 21, 558, 568, 504, 9991, 8669, 1119, 9980, 9997, 2]
 
-// Module 17533 (SecureFramesCallVerificationBottomSheet)
-import showShareActionSheet from "showShareActionSheet" /* 8637 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9959 */;
-import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 9965 */;
+// Module 17543 (SecureFramesCallVerificationBottomSheet)
+import showShareActionSheet from "showShareActionSheet" /* 8669 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9991 */;
+import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 9997 */;
 import noop from "module_19" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
 
 require = fn;
 const AnalyticsSections = fn(1078).AnalyticsSections;
@@ -57,7 +57,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     const intl2 = tmp(1119).intl;
     const stringResult1 = intl2.string(tmp(1119).t["MPp7+C"]);
     const intl3 = tmp(1119).intl;
-    let obj2 = { helpArticle: tmp(9948).getSecureFramesHelpdeskArticle() };
+    let obj2 = { helpArticle: tmp(9980).getSecureFramesHelpdeskArticle() };
     const formatResult = intl3.format(tmp(1119).t.wKxADe, obj2);
     cResult[4] = stringResult;
     cResult[5] = stringResult1;
@@ -65,7 +65,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     let tmp11 = formatResult;
     let tmp10 = stringResult1;
     let tmp9 = stringResult;
-    const tmpResult2 = tmp(9948);
+    const tmpResult2 = tmp(9980);
   } else {
     tmp9 = cResult[4];
     tmp10 = cResult[5];
@@ -107,7 +107,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   obj2.subtitle = intl2.string(channelId(1119).t["MPp7+C"]);
   const intl3 = channelId(1119).intl;
   const obj3 = { helpArticle: null };
-  obj3.helpArticle = channelId(9948).getSecureFramesHelpdeskArticle();
+  obj3.helpArticle = channelId(9980).getSecureFramesHelpdeskArticle();
   obj2.footer = intl3.format(channelId(1119).t.wKxADe, obj3);
   obj2.epochAuthenticator = stateFromStores;
   obj2.onShareClick = callback;

@@ -1,14 +1,14 @@
-// Module ID: 8464
-// Function ID: 8465
+// Module ID: 8496
+// Function ID: 8497
 // Name: UserProfileAnalyticsContext
-// Dependencies: [19, 21, 7409, 8465, 558, 568, 1259, 2]
+// Dependencies: [19, 21, 7441, 8497, 558, 568, 1259, 2]
 // Exports: UserProfileAnalyticsProvider
 
-// Module 8464 (UserProfileAnalyticsContext)
+// Module 8496 (UserProfileAnalyticsContext)
 import c from "c" /* 568 */;
 import v1 from "v1" /* 1259 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8465 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7441 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8497 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -160,7 +160,7 @@ export const useCreateUserProfileAnalyticsContext = tmp2;
 export const useUserProfileAnalyticsContext = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = context(568).c(18);
   context = noop.useContext(closure_5);
-  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)().analyticsLocations;
   if (cResult[0] === analyticsLocations) {
     if (cResult[1] === context) {
       let tmp3 = cResult[2];
@@ -275,7 +275,7 @@ export const useUserProfileAnalyticsContext = ReactCompilerGating.isReactCompile
   tmp3 = fn;
 }) : (() => {
   const context = noop.useContext(closure_5);
-  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)().analyticsLocations;
   let obj = { context, trackUserProfileAction: null, trackUserProfileEditAction: null, trackUserProfileEditSaved: null, trackUserProfileWishlistAction: null };
   const items = [context, analyticsLocations];
   obj.trackUserProfileAction = noop.useCallback((arg0) => {

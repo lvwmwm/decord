@@ -1,7 +1,7 @@
 // Module ID: 2033
 // Function ID: 2034
 // Name: DismissibleContentUtils
-// Dependencies: [32, 5, 1224, 2034, 2035, 2037, 2042, 1078, 2032, 2043, 11, 2028, 4601, 558, 568, 504, 2031, 577, 10615, 1245, 2036, 2]
+// Dependencies: [32, 5, 1224, 2034, 2035, 2037, 2042, 1078, 2032, 2043, 11, 2028, 4633, 558, 568, 504, 2031, 577, 10651, 1245, 2036, 2]
 // Exports: UNSAFE_addGuildDismissedContent, UNSAFE_addSnowflakeBoundGuildDismissedContent, UNSAFE_addTimeRecurringGuildDismissedContent, UNSAFE_isSnowflakeBoundGuildDismissibleContentDismissed, UNSAFE_isTimeRecurringGuildDismissibleContentDismissed, UNSAFE_removeGuildDismissedContent, UNSAFE_removeSnowflakeBoundGuildDismissedContent, UNSAFE_removeTimeRecurringGuildDismissedContent, getDismissedRecurringDismissibleContentState, getGuildNextNumTimesDismissed, isDismissibleContentBlockedByOverlay, isTimeRecurringDismissibleContentDismissed, isTimeRecurringSnowflakeBoundDismissibleContentDismissed, isVersionedDismissibleContentDismissed, markLatestVersionDismissibleContentAsDismissed, markSnowflakeBoundDismissibleContentAsDismissed, markTimeRecurringDismissibleContentAsDismissed, requestMarkDismissibleContentAsShown
 
 // Module 2033 (DismissibleContentUtils)
@@ -12,8 +12,8 @@ import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /*
 import dismissible_content from "dismissible_content" /* 2031 */;
 import DismissibleContentTypes from "DismissibleContentTypes" /* 2032 */;
 import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2036 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4601 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 10615 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4633 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 10651 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
@@ -607,7 +607,7 @@ export const isTimeRecurringDismissibleContentDismissed = function isTimeRecurri
       }
     }
     if (undefined === tmp5) {
-      return { isDismissed: false, lastDismissedAtMs: "Set" };
+      return { isDismissed: false, lastDismissedAtMs: "Array" };
     } else {
       let flag = true;
       if (null != cooldownConfig) {

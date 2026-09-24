@@ -1,13 +1,13 @@
-// Module ID: 6658
-// Function ID: 6659
+// Module ID: 6690
+// Function ID: 6691
 // Name: ServerIconBonkBonkExample
-// Dependencies: [21, 558, 568, 6659, 5802, 2]
+// Dependencies: [21, 558, 568, 6691, 5834, 2]
 
-// Module 6658 (ServerIconBonkBonkExample)
+// Module 6690 (ServerIconBonkBonkExample)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6659 from "module_6659" /* 6659 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6691 from "module_6691" /* 6691 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const ServerIconBonkBonkExample = ReactCompilerGating.isReactCompilerEnab
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6659 };
+    const obj2 = { uri: _modDef6691 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const ServerIconBonkBonkExample = ReactCompilerGating.isReactCompilerEnab
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6659 };
+  const obj2 = { uri: _modDef6691 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

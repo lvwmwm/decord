@@ -1,17 +1,17 @@
-// Module ID: 9091
-// Function ID: 9092
+// Module ID: 9123
+// Function ID: 9124
 // Name: CutoutableAvatarDecoration
-// Dependencies: [19, 17, 4750, 21, 558, 568, 565, 1401, 1368, 9092, 9088, 5802, 2]
+// Dependencies: [19, 17, 4782, 21, 558, 568, 565, 1401, 1368, 9124, 9120, 5834, 2]
 
-// Module 9091 (CutoutableAvatarDecoration)
+// Module 9123 (CutoutableAvatarDecoration)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
 import AvatarUtils from "AvatarUtils" /* 1401 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 9088 */;
-import ClipViewDefault from "ClipView" /* 9092 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 9120 */;
+import ClipViewDefault from "ClipView" /* 9124 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const View = fn(17).View;

@@ -1,10 +1,10 @@
-// Module ID: 18115
-// Function ID: 18116
+// Module ID: 18125
+// Function ID: 18126
 // Name: CommunityRequirementSatisfiedForm
-// Dependencies: [19, 17, 21, 4457, 558, 568, 18105, 5341, 2]
+// Dependencies: [19, 17, 21, 4489, 558, 568, 18115, 5373, 2]
 
-// Module 18115 (CommunityRequirementSatisfiedForm)
-import ToastUtils from "ToastUtils" /* 4457 */;
+// Module 18125 (CommunityRequirementSatisfiedForm)
+import ToastUtils from "ToastUtils" /* 4489 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -21,7 +21,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((formSwitchDisabl
   const children = formSwitchDisabled.children;
   let obj = formSwitchDisabled(568);
   const tmp = formSwitchDisabled;
-  const enableCommunitySharedStyles = formSwitchDisabled(18105).useEnableCommunitySharedStyles();
+  const enableCommunitySharedStyles = formSwitchDisabled(18115).useEnableCommunitySharedStyles();
   if (cResult[0] === enableCommunitySharedStyles.communityRequirementSatisfiedFormPressable) {
     if (cResult[1] === formSwitchDisabled) {
       let tmp5 = cResult[2];
@@ -55,7 +55,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((formSwitchDisabl
           }
         }
     };
-    tmp6 = closure_3(tmp(5341).PressableOpacity, obj4);
+    tmp6 = closure_3(tmp(5373).PressableOpacity, obj4);
   }
   cResult[0] = enableCommunitySharedStyles.communityRequirementSatisfiedFormPressable;
   cResult[1] = formSwitchDisabled;
@@ -63,7 +63,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((formSwitchDisabl
   tmp5 = tmp6;
 }) : ((formSwitchDisabled) => {
   formSwitchDisabled = formSwitchDisabled.formSwitchDisabled;
-  const enableCommunitySharedStyles = formSwitchDisabled(18105).useEnableCommunitySharedStyles();
+  const enableCommunitySharedStyles = formSwitchDisabled(18115).useEnableCommunitySharedStyles();
   const obj2 = { style: enableCommunitySharedStyles.communityRequirementSatisfiedFormWrapper, children: null };
   const items = [formSwitchDisabled.children, ];
   let tmp6 = null;
@@ -77,7 +77,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((formSwitchDisabl
           }
         }
     };
-    tmp6 = closure_3(formSwitchDisabled(5341).PressableOpacity, obj3);
+    tmp6 = closure_3(formSwitchDisabled(5373).PressableOpacity, obj3);
   }
   items[1] = tmp6;
   obj2.children = items;

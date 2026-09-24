@@ -1,13 +1,13 @@
-// Module ID: 16207
-// Function ID: 16208
+// Module ID: 16217
+// Function ID: 16218
 // Name: ParentalControlsSensitiveContentFiltersScreen
-// Dependencies: [19, 8238, 21, 1119, 558, 568, 11594, 14953, 2]
+// Dependencies: [19, 8270, 21, 1119, 558, 568, 11630, 14988, 2]
 
-// Module 16207 (ParentalControlsSensitiveContentFiltersScreen)
+// Module 16217 (ParentalControlsSensitiveContentFiltersScreen)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
-import SettingLayoutDefault from "SettingLayout" /* 14953 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
+import SettingLayoutDefault from "SettingLayout" /* 14988 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -32,7 +32,7 @@ function getContentCategory() {
   items1[1] = obj2;
   return items1;
 }
-const MobileUserSettings = fn(8238).MobileUserSettings;
+const MobileUserSettings = fn(8270).MobileUserSettings;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

@@ -1,13 +1,13 @@
-// Module ID: 6164
-// Function ID: 6165
+// Module ID: 6196
+// Function ID: 6197
 // Name: DisplayNameStylesV2AbstractUI
-// Dependencies: [21, 558, 568, 6165, 5802, 2]
+// Dependencies: [21, 558, 568, 6197, 5834, 2]
 
-// Module 6164 (DisplayNameStylesV2AbstractUI)
+// Module 6196 (DisplayNameStylesV2AbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6165 from "module_6165" /* 6165 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6197 from "module_6197" /* 6197 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const DisplayNameStylesV2AbstractUI = ReactCompilerGating.isReactCompiler
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6165 };
+    const obj2 = { uri: _modDef6197 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const DisplayNameStylesV2AbstractUI = ReactCompilerGating.isReactCompiler
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6165 };
+  const obj2 = { uri: _modDef6197 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

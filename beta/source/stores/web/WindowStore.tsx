@@ -1,13 +1,13 @@
-// Module ID: 14105
-// Function ID: 14106
+// Module ID: 14142
+// Function ID: 14143
 // Name: WindowStore
-// Dependencies: [38, 504, 5774, 577, 1245, 1984, 2]
+// Dependencies: [38, 504, 5806, 577, 1245, 1984, 2]
 
-// Module 14105 (WindowStore)
+// Module 14142 (WindowStore)
 import _modDef38 from "module_38" /* 38 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import WindowIdUtils from "WindowIdUtils" /* 5774 */;
+import WindowIdUtils from "WindowIdUtils" /* 5806 */;
 
 require = fn;
 let c3 = null;

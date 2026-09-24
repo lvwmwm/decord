@@ -1,22 +1,22 @@
-// Module ID: 16871
-// Function ID: 16872
+// Module ID: 16881
+// Function ID: 16882
 // Name: ThemedHeaderBackgroundGradient
-// Dependencies: [19, 17, 21, 4758, 558, 568, 580, 1616, 4462, 1096, 5198, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 580, 1616, 4494, 1096, 5230, 2]
 
-// Module 16871 (ThemedHeaderBackgroundGradient)
+// Module 16881 (ThemedHeaderBackgroundGradient)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import useToken from "useToken" /* 4462 */;
+import useToken from "useToken" /* 4494 */;
 import noop from "module_19" /* 19 */;
 
-const LinearGradientDefault = tmp6(5198);
+const LinearGradientDefault = tmp6(5230);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ container: { position: "absolute", left: 0, right: 0, top: 0 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

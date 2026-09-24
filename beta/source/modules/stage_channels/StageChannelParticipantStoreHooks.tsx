@@ -1,12 +1,12 @@
-// Module ID: 5650
-// Function ID: 5651
+// Module ID: 5682
+// Function ID: 5683
 // Name: StageChannelParticipantStoreHooks
-// Dependencies: [32, 5637, 558, 568, 504, 5651, 5644, 2]
+// Dependencies: [32, 5669, 558, 568, 504, 5683, 5676, 2]
 
-// Module 5650 (StageChannelParticipantStoreHooks)
-import StageChannelParticipants from "StageChannelParticipants" /* 5644 */;
+// Module 5682 (StageChannelParticipantStoreHooks)
+import StageChannelParticipants from "StageChannelParticipants" /* 5676 */;
 import _slicedToArray from "module_32" /* 32 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5637 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5669 */;
 
 const require = globalThis.__r;
 
@@ -30,7 +30,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       let tmp7 = cResult[4];
     }
     const tmpResult = tmp(504);
-    return _slicedToArray(tmpResult.useStateFromStores(first, tmp6, tmp7, tmp(5651).isVersionEqual), 1)[0];
+    return _slicedToArray(tmpResult.useStateFromStores(first, tmp6, tmp7, tmp(5683).isVersionEqual), 1)[0];
   }
   const fn = function u() {
     const items = [StageChannelParticipantStore.getMutableParticipants(closure_0, closure_1), StageChannelParticipantStore.getParticipantsVersion(closure_0)];

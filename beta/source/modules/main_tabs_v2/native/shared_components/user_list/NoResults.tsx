@@ -1,11 +1,11 @@
-// Module ID: 11294
-// Function ID: 11295
+// Module ID: 11330
+// Function ID: 11331
 // Name: NoResults
-// Dependencies: [19, 17, 21, 4758, 558, 568, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 4786, 2]
 
-// Module 11294 (NoResults)
+// Module 11330 (NoResults)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -13,7 +13,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c2, ScrollView: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ headerContainer: { paddingHorizontal: 16 }, container: { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: 16, paddingBottom: 16, paddingTop: 32 }, image: { marginBottom: 12 }, textContainer: { justifyContent: "center", alignItems: "center" }, text: { textAlign: "center", marginTop: 4 }, fullHeightContentContainer: { paddingBottom: 0, paddingTop: 0 }, fullHeightScrollContent: { flexGrow: 1 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -112,7 +112,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp16 = null;
           if (null != subtitle) {
             const obj5 = { variant: "text-xs/medium", color: "interactive-text-default", style: tmp4.text, children: subtitle };
-            tmp16 = React4(tmp(4754).Text, obj5);
+            tmp16 = React4(tmp(4786).Text, obj5);
           }
           cResult[12] = tmp4.text;
           cResult[13] = subtitle;
@@ -120,7 +120,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp15 = tmp16;
         }
         const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp4.text, children: title };
-        const tmp14 = React4(tmp(4754).Text, obj6);
+        const tmp14 = React4(tmp(4786).Text, obj6);
         cResult[9] = tmp4.text;
         cResult[10] = title;
         cResult[11] = tmp14;

@@ -1,20 +1,20 @@
-// Module ID: 11629
-// Function ID: 11630
+// Module ID: 11665
+// Function ID: 11666
 // Name: AppStoreOverlayStarRating
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 10517, 10515, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 10553, 10551, 2]
 
-// Module 11629 (AppStoreOverlayStarRating)
+// Module 11665 (AppStoreOverlayStarRating)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import StarIcon from "StarIcon" /* 10515 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 10517 */;
+import StarIcon from "StarIcon" /* 10551 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 10553 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { row: { flexDirection: "row", alignItems: "center", gap: 2 }, star: null, starIcon: null, starFillMask: null };
 let size = { width: nativeDefault.space.PX_10, height: nativeDefault.space.PX_10, position: "relative" };
 obj2.star = size;
@@ -30,7 +30,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((fillAmount) => 
   const tmp4 = closure_6();
   if (cResult[0] !== tmp4.starIcon) {
     const obj2 = { size: "custom", color: nativeDefault.colors.TEXT_MUTED, style: tmp4.starIcon };
-    const tmp8 = React4(tmp(10517).StarOutlineIcon, obj2);
+    const tmp8 = React4(tmp(10553).StarOutlineIcon, obj2);
     cResult[0] = tmp4.starIcon;
     cResult[1] = tmp8;
     let tmp5 = tmp8;
@@ -69,7 +69,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((fillAmount) => 
     items1[1] = obj5;
     obj4.style = items1;
     const obj6 = { size: "custom", color: nativeDefault.colors.TEXT_MUTED, style: tmp4.starIcon };
-    obj4.children = React4(tmp(10515).StarIcon, obj6);
+    obj4.children = React4(tmp(10551).StarIcon, obj6);
     tmp10 = React4(View, obj4);
   }
   cResult[2] = fillAmount;

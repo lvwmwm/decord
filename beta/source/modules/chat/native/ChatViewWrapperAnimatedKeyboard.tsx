@@ -1,25 +1,25 @@
-// Module ID: 10342
-// Function ID: 10343
+// Module ID: 10381
+// Function ID: 10382
 // Name: ChatViewWrapperAnimatedKeyboard
-// Dependencies: [19, 17, 21, 4497, 4762, 558, 10343, 4759, 568, 7227, 10348, 10351, 7403, 10352, 2]
+// Dependencies: [19, 17, 21, 4529, 4794, 558, 10382, 4791, 568, 7259, 10387, 10390, 7435, 10391, 2]
 
-// Module 10342 (ChatViewWrapperAnimatedKeyboard)
+// Module 10381 (ChatViewWrapperAnimatedKeyboard)
 import c from "c" /* 568 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 7227 */;
-import LayerScope from "LayerScope" /* 7403 */;
-import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 10348 */;
-import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 10351 */;
-import StickyWrapper from "StickyWrapper" /* 10352 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 7259 */;
+import LayerScope from "LayerScope" /* 7435 */;
+import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 10387 */;
+import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 10390 */;
+import StickyWrapper from "StickyWrapper" /* 10391 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const Easing = fn(4497).Easing;
-let obj = { duration: fn(4762).timingStandardDuration, easing: Easing.bezier(0.2, 0, 0, 1) };
+const Easing = fn(4529).Easing;
+let obj = { duration: fn(4794).timingStandardDuration, easing: Easing.bezier(0.2, 0, 0, 1) };
 const __initData = { code: "function ChatViewWrapperAnimatedKeyboardTsx1(){const{animatedHeight}=this.__closure;return animatedHeight.get();}" };
 const __initData2 = { code: "function ChatViewWrapperAnimatedKeyboardTsx2(height,heightPrev){const{animatedAdjustedMargin,animatedAdjustedMarginPending}=this.__closure;if(heightPrev==null){return;}if(height<heightPrev){animatedAdjustedMargin.set(height);animatedAdjustedMarginPending.set(-1);}else{animatedAdjustedMarginPending.set(height);}}" };
 const __initData3 = { code: "function ChatViewWrapperAnimatedKeyboardTsx3(){const{animatedAdjustedMargin,withTiming,animatedHeight,INSET_ANIMATION_CONFIG2,animatedAdjustedMarginPending}=this.__closure;return{flex:1,marginTop:animatedAdjustedMargin.get(),transform:[{translateY:withTiming(-animatedHeight.get(),INSET_ANIMATION_CONFIG2,\"respect-motion-settings\",function(finished){if(!finished){return;}if(animatedAdjustedMarginPending.get()!==-1){animatedAdjustedMargin.set(animatedAdjustedMarginPending.get());animatedAdjustedMarginPending.set(-1);}})}]};}" };
@@ -220,8 +220,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const obj3 = { children: null };
         const obj4 = { header: stickyHeader, style, pointerEvents: tmp5, children: tmp13 };
-        obj3.children = hasOwnProperty(tmp(10352).StickyWrapper, obj4);
-        const tmp18 = hasOwnProperty(tmp(7403).LayerScope, obj3);
+        obj3.children = hasOwnProperty(tmp(10391).StickyWrapper, obj4);
+        const tmp18 = hasOwnProperty(tmp(7435).LayerScope, obj3);
         cResult[9] = tmp5;
         cResult[10] = stickyHeader;
         cResult[11] = style;

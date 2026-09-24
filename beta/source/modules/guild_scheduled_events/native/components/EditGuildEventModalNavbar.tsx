@@ -1,17 +1,17 @@
-// Module ID: 9769
-// Function ID: 9770
+// Module ID: 9801
+// Function ID: 9802
 // Name: EditGuildEventModalNavbar
-// Dependencies: [32, 19, 17, 21, 4758, 9765, 1374, 558, 568, 7222, 7371, 4754, 1119, 7621, 7238, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 9797, 1374, 558, 568, 7254, 7403, 4786, 1119, 7653, 7270, 2]
 
-// Module 9769 (EditGuildEventModalNavbar)
+// Module 9801 (EditGuildEventModalNavbar)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7222 */;
-import _modDef7238 from "module_7238" /* 7238 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
-import HeaderActionButton from "HeaderActionButton" /* 7621 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9765 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7254 */;
+import _modDef7270 from "module_7270" /* 7270 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
+import HeaderActionButton from "HeaderActionButton" /* 7653 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9797 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -19,7 +19,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ header: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 4, paddingVertical: 8 }, headerTitle: { lineHeight: 28, textTransform: "uppercase" }, buttonContainer: { width: 60 }, rightButton: { marginLeft: 12 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -94,8 +94,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         cResult[32] = tmp44;
                         tmp41 = tmp44;
                       }
-                      const obj5 = { accessibilityLabel: tmp35, onPress: onClose, source: _modDef7238, style: tmp4.rightButton };
-                      const tmp40 = hasOwnProperty(tmp(7621).HeaderActionButton, obj5);
+                      const obj5 = { accessibilityLabel: tmp35, onPress: onClose, source: _modDef7270, style: tmp4.rightButton };
+                      const tmp40 = hasOwnProperty(tmp(7653).HeaderActionButton, obj5);
                       cResult[27] = onClose;
                       cResult[28] = tmp4.rightButton;
                       cResult[29] = tmp40;
@@ -121,9 +121,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (EditGuildEventUtils.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
     let items1 = [1, 3];
-  } else if (tmp(9765).EditGuildEventScreens.DETAILS === screen) {
+  } else if (tmp(9797).EditGuildEventScreens.DETAILS === screen) {
     items1 = [2, 3];
-  } else if (tmp(9765).EditGuildEventScreens.PREVIEW === screen) {
+  } else if (tmp(9797).EditGuildEventScreens.PREVIEW === screen) {
     items1 = [3, 3];
   } else {
     tmp(1374).assertNever(screen);
@@ -131,7 +131,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let num = 2;
   [tmp16, tmp17] = items1;
-  const SafeAreaPaddingView = tmp(7371).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp(7403).SafeAreaPaddingView;
   const header = tmp4.header;
   if (cResult[15] !== tmp4.buttonContainer) {
     const obj7 = { style: tmp4.buttonContainer };
@@ -142,7 +142,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     tmp18 = cResult[16];
   }
-  const Text = tmp(4754).Text;
+  const Text = tmp(4786).Text;
   if (cResult[17] === variant.style) {
     if (cResult[18] === tmp4.headerTitle) {
       let tmp22 = cResult[19];
@@ -180,9 +180,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const typeConsolidationEyebrow = useTypeConsolidationTextTransform.useTypeConsolidationEyebrow("EditGuildEventModalNavbar", "text-xs/bold");
   if (EditGuildEventUtils.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
     let items = [1, 3];
-  } else if (tmp2(9765).EditGuildEventScreens.DETAILS === screen) {
+  } else if (tmp2(9797).EditGuildEventScreens.DETAILS === screen) {
     items = [2, 3];
-  } else if (tmp2(9765).EditGuildEventScreens.PREVIEW === screen) {
+  } else if (tmp2(9797).EditGuildEventScreens.PREVIEW === screen) {
     items = [3, 3];
   } else {
     tmp2(1374).assertNever(screen);
@@ -202,7 +202,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const intl2 = tmp2(1119).intl;
   obj6.accessibilityLabel = intl2.string(util.t.cpT0Cq);
   obj6.onPress = screen.onClose;
-  obj6.source = _modDef7238;
+  obj6.source = _modDef7270;
   obj6.style = tmp.rightButton;
   obj5.children = hasOwnProperty(HeaderActionButton.HeaderActionButton, obj6);
   items1[2] = hasOwnProperty(View, obj5);

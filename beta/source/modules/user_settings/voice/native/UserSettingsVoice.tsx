@@ -1,29 +1,29 @@
-// Module ID: 10233
-// Function ID: 10234
+// Module ID: 10272
+// Function ID: 10273
 // Name: UserSettingsVoice
-// Dependencies: [19, 17, 10234, 10235, 21, 4758, 558, 568, 5903, 10236, 10237, 10239, 1119, 4754, 10243, 10244, 10246, 7371, 5186, 2]
+// Dependencies: [19, 17, 10273, 10274, 21, 4790, 558, 568, 5935, 10275, 10276, 10278, 1119, 4786, 10282, 10283, 10285, 7403, 5218, 2]
 
-// Module 10233 (UserSettingsVoice)
+// Module 10272 (UserSettingsVoice)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10236 */;
-import UserSettingsVoiceInputOptionsDefault from "UserSettingsVoiceInputOptions" /* 10237 */;
-import UserSettingsSoundboardVolumeDefault from "UserSettingsSoundboardVolume" /* 10243 */;
-import UserSettingsVoiceOverlayDefault from "UserSettingsVoiceOverlay" /* 10244 */;
-import UserSettingsVoiceProcessingDefault from "UserSettingsVoiceProcessing" /* 10246 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10275 */;
+import UserSettingsVoiceInputOptionsDefault from "UserSettingsVoiceInputOptions" /* 10276 */;
+import UserSettingsSoundboardVolumeDefault from "UserSettingsSoundboardVolume" /* 10282 */;
+import UserSettingsVoiceOverlayDefault from "UserSettingsVoiceOverlay" /* 10283 */;
+import UserSettingsVoiceProcessingDefault from "UserSettingsVoiceProcessing" /* 10285 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const isMobileOverlaySupported = fn(10234).isMobileOverlaySupported;
-const guideURL = fn(10235).USER_SETTINGS_VOICE_GUILD_URL;
+const isMobileOverlaySupported = fn(10273).isMobileOverlaySupported;
+const guideURL = fn(10274).USER_SETTINGS_VOICE_GUILD_URL;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ container: { paddingHorizontal: 16 }, tableRow: { marginTop: 12 } });
 fn(558);
 const ReactCompilerGating = fn(558);
@@ -59,7 +59,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const nonContextualStreamOutputPresent = MobileAudioOutputExperimentDefault.useConfig(first).nonContextualStreamOutputPresent;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp9 = timestampProducer(tmp6(10237), {});
+    const tmp9 = timestampProducer(tmp6(10276), {});
     cResult[1] = tmp9;
     let tmp7 = tmp9;
   } else {
@@ -68,7 +68,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[2] !== nonContextualStreamOutputPresent) {
     let tmp11 = nonContextualStreamOutputPresent;
     if (nonContextualStreamOutputPresent) {
-      tmp11 = timestampProducer(tmp6(10239), {});
+      tmp11 = timestampProducer(tmp6(10278), {});
     }
     cResult[2] = nonContextualStreamOutputPresent;
     cResult[3] = tmp11;
@@ -87,7 +87,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[5] !== tmp4.tableRow) {
     const obj5 = { style: tmp4.tableRow, variant: "text-sm/medium", children: tmp13 };
-    const tmp18 = timestampProducer(tmp(4754).Text, obj5);
+    const tmp18 = timestampProducer(tmp(4786).Text, obj5);
     cResult[5] = tmp4.tableRow;
     cResult[6] = tmp18;
     let tmp16 = tmp18;
@@ -95,10 +95,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp16 = cResult[6];
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp24 = timestampProducer(tmp6(10243), {});
-    const tmp26 = isMobileOverlaySupported() && timestampProducer(tmp6(10244), {});
-    const tmp23Result = timestampProducer(tmp6(10246), {});
-    const tmp23Result2 = timestampProducer(tmp(7371).SafeAreaPaddingView, { bottom: true });
+    const tmp24 = timestampProducer(tmp6(10282), {});
+    const tmp26 = isMobileOverlaySupported() && timestampProducer(tmp6(10283), {});
+    const tmp23Result = timestampProducer(tmp6(10285), {});
+    const tmp23Result2 = timestampProducer(tmp(7403).SafeAreaPaddingView, { bottom: true });
     cResult[7] = tmp23Result2;
     cResult[8] = tmp24;
     cResult[9] = tmp26;
@@ -144,7 +144,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj2 = { style: tmp.container, children: null };
   const items = [timestampProducer(UserSettingsVoiceInputOptionsDefault, {}), , , , , , ];
   if (nonContextualStreamOutputPresent) {
-    nonContextualStreamOutputPresent = tmp4(tmp2(10239), {});
+    nonContextualStreamOutputPresent = tmp4(tmp2(10278), {});
   }
   items[1] = nonContextualStreamOutputPresent;
   const obj3 = { style: tmp.tableRow, variant: "text-sm/medium", children: null };

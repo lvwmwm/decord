@@ -1,21 +1,21 @@
-// Module ID: 17450
-// Function ID: 17451
+// Module ID: 17460
+// Function ID: 17461
 // Name: ActivityPanelUI
-// Dependencies: [19, 17, 9313, 21, 17451, 17457, 558, 568, 17471, 4471, 7403, 17472, 17449, 2]
+// Dependencies: [19, 17, 9345, 21, 17461, 17467, 558, 568, 17481, 4503, 7435, 17482, 17459, 2]
 
-// Module 17450 (ActivityPanelUI)
+// Module 17460 (ActivityPanelUI)
 import c from "c" /* 568 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17449 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17471 */;
-import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 17472 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17459 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17481 */;
+import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 17482 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   if ("pip" === arg1) {
-    let tmp4 = 17451;
+    let tmp4 = 17461;
   } else {
-    tmp4 = 17457;
+    tmp4 = 17467;
   }
   return React5(importDefault(tmp4), { transitionState, transitionCleanUp }, arg0);
 }
@@ -27,7 +27,7 @@ function wrapChildren(children) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet: hasOwnProperty } = get_ActivityIndicator);
-const ActivityPanelModes = fn(9313).ActivityPanelModes;
+const ActivityPanelModes = fn(9345).ActivityPanelModes;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let closure_12 = [];
@@ -61,14 +61,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
         const obj2 = { children: null };
         const items = [tmp7, tmp9];
         obj2.children = items;
-        const tmp16 = closure_1_8(tmp(7403).LayerScope, obj2);
+        const tmp16 = closure_1_8(tmp(7435).LayerScope, obj2);
         cResult[5] = tmp7;
         cResult[6] = tmp9;
         cResult[7] = tmp16;
         tmp14 = tmp16;
       }
       const obj3 = { items: tmp6, renderItem: renderActivityOrPIP, getItemKey: getKey, wrapChildren };
-      const tmp13 = React5(tmp(4471).TransitionGroup, obj3);
+      const tmp13 = React5(tmp(4503).TransitionGroup, obj3);
       cResult[2] = tmp6;
       cResult[3] = renderActivityOrPIP;
       cResult[4] = tmp13;
@@ -93,9 +93,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
     tmp4 = closure_12;
   }, items);
   const obj = { children: null };
-  const items1 = [renderActivityPanelSystemUIManager(), closure_7(mode(4471).TransitionGroup, { items: memo, renderItem: renderActivityOrPIP, getItemKey: getKey, wrapChildren })];
+  const items1 = [renderActivityPanelSystemUIManager(), closure_7(mode(4503).TransitionGroup, { items: memo, renderItem: renderActivityOrPIP, getItemKey: getKey, wrapChildren })];
   obj.children = items1;
-  return closure_8(mode(7403).LayerScope, obj);
+  return closure_8(mode(7435).LayerScope, obj);
 });
 let closure_15 = tmp4;
 ReactCompilerGating = fn(558);

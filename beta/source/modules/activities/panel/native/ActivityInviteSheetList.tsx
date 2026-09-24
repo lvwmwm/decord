@@ -1,20 +1,20 @@
-// Module ID: 17462
-// Function ID: 17463
+// Module ID: 17472
+// Function ID: 17473
 // Name: ActivityInviteSheetList
-// Dependencies: [19, 1078, 21, 4758, 5743, 580, 558, 568, 1119, 1181, 4725, 4617, 5341, 4754, 17463, 7224, 6863, 2]
+// Dependencies: [19, 1078, 21, 4790, 5775, 580, 558, 568, 1119, 1181, 4757, 4649, 5373, 4786, 17473, 7256, 6895, 2]
 
-// Module 17462 (ActivityInviteSheetList)
+// Module 17472 (ActivityInviteSheetList)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import RootNavigationRef from "RootNavigationRef" /* 4617 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
-import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 17463 */;
+import RootNavigationRef from "RootNavigationRef" /* 4649 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
+import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 17473 */;
 import noop from "module_19" /* 19 */;
-import TextStyles_mod from "TextStyles" /* 5743 */;
+import TextStyles_mod from "TextStyles" /* 5775 */;
 
 require = fn;
 function keyExtractor(item) {
@@ -23,7 +23,7 @@ function keyExtractor(item) {
 const Fonts = fn(1078).Fonts;
 const jsxProd = fn(21);
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { emptyTitle: null, emptyBody: null, goToFriendsLink: null };
 let obj3 = {};
 let TextStyles = TextStyles_mod;
@@ -107,8 +107,8 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
     if (cResult[11] !== tmp15) {
       const obj2 = { onPress: tmp11, accessibilityRole: "link", accessibilityLabel: tmp12, hitSlop: tmp13, children: null };
       let obj3 = { style: tmp15, variant: "text-sm/semibold", color: "text-link", children: tmp16 };
-      obj2.children = React4(tmp(4754).Text, obj3);
-      const tmp20 = React4(tmp(5341).PressableOpacity, obj2);
+      obj2.children = React4(tmp(4786).Text, obj3);
+      const tmp20 = React4(tmp(5373).PressableOpacity, obj2);
       cResult[11] = tmp15;
       cResult[12] = tmp20;
       let tmp18 = tmp20;

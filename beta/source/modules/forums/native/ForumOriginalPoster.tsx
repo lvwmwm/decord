@@ -1,24 +1,24 @@
-// Module ID: 12003
-// Function ID: 12004
+// Module ID: 12039
+// Function ID: 12040
 // Name: ForumOriginalPoster
-// Dependencies: [19, 17, 21, 4758, 580, 5660, 558, 568, 4754, 1119, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 5692, 558, 568, 4786, 1119, 2]
 // Exports: getForumOriginalPoster
 
-// Module 12003 (ForumOriginalPoster)
+// Module 12039 (ForumOriginalPoster)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flexDirection: "row", alignItems: "center", justifyContent: "center" }, opIcon: { borderRadius: nativeDefault.radii.sm, marginEnd: 8, paddingHorizontal: 4 }, opIconBackground: null };
 let obj3 = { borderRadius: nativeDefault.radii.sm, marginEnd: 8, paddingHorizontal: 4 };
-obj2.opIconBackground = { backgroundColor: fn(5660).DARK_BRAND_260_LIGHT_BRAND_200 };
+obj2.opIconBackground = { backgroundColor: fn(5692).DARK_BRAND_260_LIGHT_BRAND_200 };
 let closure_5 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -33,7 +33,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj2 = { variant: "text-xs/semibold", color: "text-brand", children: null };
       const intl = tmp(1119).intl;
       obj2.children = intl.string(tmp(1119).t.fyE8sH);
-      const tmp9 = React3(tmp(4754).Text, obj2);
+      const tmp9 = React3(tmp(4786).Text, obj2);
       cResult[3] = tmp9;
       let tmp7 = tmp9;
     } else {
@@ -53,7 +53,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
       const intl2 = tmp(1119).intl;
       obj4.children = intl2.string(tmp(1119).t.uN6Emt);
-      const tmp16 = React3(tmp(4754).Text, obj4);
+      const tmp16 = React3(tmp(4786).Text, obj4);
       cResult[6] = tmp16;
       let tmp14 = tmp16;
     } else {

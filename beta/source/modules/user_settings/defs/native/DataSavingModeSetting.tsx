@@ -1,19 +1,19 @@
-// Module ID: 15727
-// Function ID: 15728
+// Module ID: 15737
+// Function ID: 15738
 // Name: DataSavingModeSetting
-// Dependencies: [1188, 8238, 558, 568, 504, 15725, 2023, 11594, 1119, 2]
+// Dependencies: [1188, 8270, 558, 568, 504, 15735, 2023, 11630, 1119, 2]
 
-// Module 15727 (DataSavingModeSetting)
+// Module 15737 (DataSavingModeSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import UserSettingsText from "UserSettingsText" /* 15725 */;
+import UserSettingsText from "UserSettingsText" /* 15735 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1188 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -38,7 +38,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.ix8XIj);
   },
-  parent: fn(8238).MobileUserSettings.CHAT,
+  parent: fn(8270).MobileUserSettings.CHAT,
   useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {

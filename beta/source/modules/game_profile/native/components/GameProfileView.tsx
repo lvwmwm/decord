@@ -1,39 +1,39 @@
-// Module ID: 8982
-// Function ID: 8983
+// Module ID: 9014
+// Function ID: 9015
 // Name: GameProfileView
-// Dependencies: [19, 17, 8983, 21, 4758, 580, 558, 568, 7409, 7429, 8984, 8985, 8990, 8997, 8998, 9008, 9009, 9015, 9028, 9041, 9155, 9157, 9176, 9177, 2]
+// Dependencies: [19, 17, 9015, 21, 4790, 580, 558, 568, 7441, 7461, 9016, 9017, 9022, 9029, 9030, 9040, 9041, 9047, 9060, 9073, 9187, 9189, 9208, 9209, 2]
 
-// Module 8982 (GameProfileView)
+// Module 9014 (GameProfileView)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7409 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import GameProfileMediaDefault from "GameProfileMedia" /* 8990 */;
-import GameProfileReviewsDefault from "GameProfileReviews" /* 8998 */;
-import GameProfileSummaryDefault from "GameProfileSummary" /* 9008 */;
-import GameProfileLinkAccountDefault from "GameProfileLinkAccount" /* 9009 */;
-import GameProfileCommunityDefault from "GameProfileCommunity" /* 9015 */;
-import GameProfileAnnouncementsDefault from "GameProfileAnnouncements" /* 9028 */;
-import GameProfileShopCarouselDefault from "GameProfileShopCarousel" /* 9041 */;
-import GameProfileSimilarGamesDefault from "GameProfileSimilarGames" /* 9155 */;
-import GameProfileDetailsDefault from "GameProfileDetails" /* 9157 */;
-import GameProfileGameClaimCtaDefault from "GameProfileGameClaimCta" /* 9176 */;
-import GameProfileReportButtonDefault from "GameProfileReportButton" /* 9177 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7441 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
+import GameProfileMediaDefault from "GameProfileMedia" /* 9022 */;
+import GameProfileReviewsDefault from "GameProfileReviews" /* 9030 */;
+import GameProfileSummaryDefault from "GameProfileSummary" /* 9040 */;
+import GameProfileLinkAccountDefault from "GameProfileLinkAccount" /* 9041 */;
+import GameProfileCommunityDefault from "GameProfileCommunity" /* 9047 */;
+import GameProfileAnnouncementsDefault from "GameProfileAnnouncements" /* 9060 */;
+import GameProfileShopCarouselDefault from "GameProfileShopCarousel" /* 9073 */;
+import GameProfileSimilarGamesDefault from "GameProfileSimilarGames" /* 9187 */;
+import GameProfileDetailsDefault from "GameProfileDetails" /* 9189 */;
+import GameProfileGameClaimCtaDefault from "GameProfileGameClaimCta" /* 9208 */;
+import GameProfileReportButtonDefault from "GameProfileReportButton" /* 9209 */;
 import noop from "module_19" /* 19 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
 
-const useGameProfileInvite = tmp(8984);
-const GameProfileHeaderDefault = tmp5(8985);
+const useGameProfileInvite = tmp(9016);
+const GameProfileHeaderDefault = tmp5(9017);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingBottom: nativeDefault.space.PX_16 }, body: null, buttonsContainer: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingBottom: nativeDefault.space.PX_16 };
-obj2.body = { flexDirection: "column", paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_32, maxWidth: fn(8983).MOBILE_GAME_PROFILE_MAX_WIDTH, alignSelf: "center", width: "100%" };
-let obj4 = { flexDirection: "column", paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_32, maxWidth: fn(8983).MOBILE_GAME_PROFILE_MAX_WIDTH, alignSelf: "center", width: "100%" };
+obj2.body = { flexDirection: "column", paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_32, maxWidth: fn(9015).MOBILE_GAME_PROFILE_MAX_WIDTH, alignSelf: "center", width: "100%" };
+let obj4 = { flexDirection: "column", paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_32, maxWidth: fn(9015).MOBILE_GAME_PROFILE_MAX_WIDTH, alignSelf: "center", width: "100%" };
 obj2.buttonsContainer = { flexDirection: "column", gap: nativeDefault.space.PX_8 };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -148,7 +148,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onHeaderHeightMe
       children: null
     };
     const obj6 = { game, websiteButtons, trackAction };
-    obj5.children = tmp6(tmp2(8997), obj6);
+    obj5.children = tmp6(tmp2(9029), obj6);
     tmp6Result = tmp6(tmp8, obj5);
   }
   items2[1] = tmp6Result;

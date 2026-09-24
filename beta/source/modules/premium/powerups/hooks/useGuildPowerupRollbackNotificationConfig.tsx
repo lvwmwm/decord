@@ -1,15 +1,15 @@
-// Module ID: 12660
-// Function ID: 12661
+// Module ID: 12696
+// Function ID: 12697
 // Name: useGuildPowerupRollbackNotificationConfig
-// Dependencies: [4647, 12661, 2031, 1119, 2518, 558, 568, 504, 4651, 12662, 2]
+// Dependencies: [4679, 12697, 2031, 1119, 2518, 558, 568, 504, 4683, 12698, 2]
 // Exports: getGuildThemeRollbackNotificationConfig
 
-// Module 12660 (useGuildPowerupRollbackNotificationConfig)
+// Module 12696 (useGuildPowerupRollbackNotificationConfig)
 import util from "util" /* 1119 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
 import _modDef2518 from "module_2518" /* 2518 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12661 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4647 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12697 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4679 */;
 
 const require = globalThis.__r;
 
@@ -62,7 +62,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   const stateFromStores = require("initialize").useStateFromStores(first, tmp6);
   let tmp8;
   if (stateFromStores != null) {
-    tmp8 = stateFromStores.allPowerups[tmp(undefined, 4651).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+    tmp8 = stateFromStores.allPowerups[tmp(undefined, 4683).GUILD_POWERUP_GUILD_THEME_SKU_ID];
   }
   const tmpResult = require("initialize");
   const shouldShowGuildThemeRollback = require("guildTheme").useShouldShowGuildThemeRollback(arg0, arg1);
@@ -104,7 +104,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   const items = [GuildPowerupsStore];
   const stateFromStores = require("initialize").useStateFromStores(items, () => GuildPowerupsStore.getStateForGuild(closure_0));
   if (stateFromStores != null) {
-    const tmp4 = stateFromStores.allPowerups[tmp(undefined, 4651).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+    const tmp4 = stateFromStores.allPowerups[tmp(undefined, 4683).GUILD_POWERUP_GUILD_THEME_SKU_ID];
   }
   const obj = require("initialize");
   let tmp5 = null;

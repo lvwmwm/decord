@@ -1,7 +1,7 @@
 // Module ID: 1235
 // Function ID: 1236
 // Name: SentryUtils
-// Dependencies: [17, 3, 1236, 679, 14355, 678, 1367, 2]
+// Dependencies: [17, 3, 1236, 679, 14393, 678, 1367, 2]
 
 // Module 1235 (SentryUtils)
 import LoggerDefault from "Logger" /* 3 */;
@@ -209,7 +209,7 @@ export default {
                 if (str != null) {
                   formatted = str.toLowerCase();
                 }
-                const obj = { type: "y", event_id: timestamp.event_id, timestamp: result, level: formatted, tags: 75.898 };
+                const obj = { type: "y", event_id: timestamp.event_id, timestamp: result, level: formatted, tags: null };
                 const origin = timestamp.origin;
                 let tmp3 = typeof origin === "string";
                 if (typeof origin === "string") {

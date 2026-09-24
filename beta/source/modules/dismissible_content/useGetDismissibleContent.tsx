@@ -1,19 +1,19 @@
-// Module ID: 7633
-// Function ID: 7634
+// Module ID: 7665
+// Function ID: 7666
 // Name: useGetDismissibleContent
-// Dependencies: [32, 19, 1224, 4580, 2035, 2037, 1078, 1088, 1245, 2031, 7634, 2033, 504, 558, 568, 4601, 2030, 4579, 11, 2]
+// Dependencies: [32, 19, 1224, 4612, 2035, 2037, 1078, 1088, 1245, 2031, 7666, 2033, 504, 558, 568, 4633, 2030, 4611, 11, 2]
 
-// Module 7633 (useGetDismissibleContent)
+// Module 7665 (useGetDismissibleContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2030 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2033 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4579 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4611 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2035 */;
 import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2037 */;
 
@@ -540,7 +540,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
     cResult[4] = version;
     cResult[5] = tmp9;
   } else {
-    result = result(4601).disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
+    result = result(4633).disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
     if (!UserSettingsProtoStore.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
       tmp9 = null;
       if (null != lastDismissedVersion) {
@@ -555,7 +555,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
         tmp9 = tmp13;
       }
     }
-    const resultResult1 = result(4601);
+    const resultResult1 = result(4633);
   }
   let tmp14 = null;
   if (!result) {
@@ -704,7 +704,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
     }
     dependencyMap = tmp10;
     tmp5 = tmp10;
-    tmp2Result = tmp2(4601);
+    tmp2Result = tmp2(4633);
   }
   const items1 = [useGetVisibleContent(tmp5, stateFromStores, groupName), ];
   const items2 = [tmp5, groupName, stateFromStores];
@@ -786,7 +786,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
     cResult[4] = id;
     cResult[5] = tmp8;
   } else {
-    result = result(4601).disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
+    result = result(4633).disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
     if (!UserSettingsProtoStore.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
       tmp8 = null;
       if (null != lastDismissedObjectId) {
@@ -802,7 +802,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
         tmp8 = tmp12;
       }
     }
-    const resultResult1 = result(4601);
+    const resultResult1 = result(4633);
   }
   let tmp14 = null;
   if (!result) {
@@ -956,7 +956,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
     cResult[5] = id;
     cResult[6] = tmp11;
   } else {
-    result = result(4601).disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
+    result = result(4633).disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
     if (!UserSettingsProtoStore.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
       tmp11 = null;
       if (null != lastDismissedObjectId) {
@@ -972,7 +972,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
         tmp11 = tmp15;
       }
     }
-    const resultResult1 = result(4601);
+    const resultResult1 = result(4633);
   }
   let tmp17 = null;
   if (!result) {
@@ -1428,7 +1428,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
   dependencyMap = null;
   let tmp14 = null;
   if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
-    const tmp15 = !tmp(4601).disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
+    const tmp15 = !tmp(4633).disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
     let lastDismissedAtMs1;
     if (tmp8 != null) {
       lastDismissedAtMs1 = tmp8.lastDismissedAtMs;
@@ -1439,7 +1439,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((PREMIUM_TAB_MARKETIN
     }
     dependencyMap = tmp22;
     tmp14 = tmp22;
-    const tmpResult2 = tmp(4601);
+    const tmpResult2 = tmp(4633);
   }
   cResult[3] = PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
   let lastDismissedAtMs2;

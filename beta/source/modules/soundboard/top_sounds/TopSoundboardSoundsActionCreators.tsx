@@ -1,14 +1,14 @@
-// Module ID: 17514
-// Function ID: 17515
+// Module ID: 17524
+// Function ID: 17525
 // Name: TopSoundboardSoundsActionCreators
-// Dependencies: [1376, 5226, 5227, 1078, 17513, 4598, 577, 1275, 2]
+// Dependencies: [1376, 5258, 5259, 1078, 17523, 4630, 577, 1275, 2]
 // Exports: fetchTopSoundboardSounds, maybeFetchTopSoundboardSoundsByGuild
 
-// Module 17514 (TopSoundboardSoundsActionCreators)
+// Module 17524 (TopSoundboardSoundsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import UserStore from "UserStore" /* 1376 */;
-import SoundboardStore from "SoundboardStore" /* 5226 */;
-import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5227 */;
+import SoundboardStore from "SoundboardStore" /* 5258 */;
+import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5259 */;
 
 const require = globalThis.__r;
 
@@ -45,7 +45,7 @@ export const maybeFetchTopSoundboardSoundsByGuild = function maybeFetchTopSoundb
               return DispatcherDefault.dispatch(obj2);
             }, () => DispatcherDefault.dispatch({ type: "TOP_SOUNDBOARD_SOUNDS_FETCH_FAILURE", guildId }));
           }
-          tmp9Result = tmp9(4598);
+          tmp9Result = tmp9(4630);
         }
       }
     }

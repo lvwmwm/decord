@@ -1,16 +1,16 @@
-// Module ID: 7239
-// Function ID: 7240
+// Module ID: 7271
+// Function ID: 7272
 // Name: UserSettingsConfirmPassword
-// Dependencies: [5, 32, 19, 17, 1376, 1078, 21, 4758, 580, 558, 568, 7240, 504, 7241, 4659, 1235, 1119, 7244, 4754, 6845, 7182, 5188, 2]
+// Dependencies: [5, 32, 19, 17, 1376, 1078, 21, 4790, 580, 558, 568, 7272, 504, 7273, 4691, 1235, 1119, 7276, 4786, 6877, 7214, 5220, 2]
 
-// Module 7239 (UserSettingsConfirmPassword)
+// Module 7271 (UserSettingsConfirmPassword)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6845 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7240 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7241 */;
-import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 7244 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6877 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7272 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7273 */;
+import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 7276 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -22,7 +22,7 @@ get_ActivityIndicator = fn(17);
 const UserSettingsSections = fn(1078).UserSettingsSections;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { background: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, container: { paddingVertical: 12, paddingHorizontal: 16 }, title: { textAlign: "center" }, prompt: { marginTop: 8, lineHeight: 18, textAlign: "center" }, input: { marginTop: 24 }, redesignInput: null, button: null, hint: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj.redesignInput = { borderRadius: nativeDefault.radii.lg };
@@ -185,11 +185,11 @@ const forwardRefResult = noop.forwardRef((arg0, ref) => {
     let obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
     let intl = tmp3(1119).intl;
     obj5.children = intl.string(tmp3(1119).t["x+d9t3"]);
-    const items3 = [closure_10(tmp3(4754).Text, obj5), , , , ];
+    const items3 = [closure_10(tmp3(4786).Text, obj5), , , , ];
     let obj6 = { style: tmp.prompt, variant: "text-sm/medium", color: "text-default", children: null };
     const intl2 = tmp3(1119).intl;
     obj6.children = intl2.string(tmp3(1119).t.vaZmAx);
-    items3[1] = closure_10(tmp3(4754).Text, obj6);
+    items3[1] = closure_10(tmp3(4786).Text, obj6);
     const obj8 = { style: null, textStyle: null, label: null, textContentType: "password", keyboardType: "default", secureTextEntry: true, value: null, onChangeText: null, onSubmitEditing: null, error: null, returnKeyType: "done", autoCapitalize: "none", autoFocus: true };
     ({ input: obj7.style, redesignInput: obj7.textStyle } = tmp);
     const intl3 = tmp3(1119).intl;
@@ -208,7 +208,7 @@ const forwardRefResult = noop.forwardRef((arg0, ref) => {
       tmp19Result = null;
       if (null == obj2.getFieldMessage("password")) {
         const obj9 = { style: tmp.hint, children: obj2.message };
-        tmp19Result = tmp19(tmp20(7182), obj9);
+        tmp19Result = tmp19(tmp20(7214), obj9);
       }
     }
     items3[3] = tmp19Result;
@@ -218,7 +218,7 @@ const forwardRefResult = noop.forwardRef((arg0, ref) => {
     obj18.text = intl4.string(tmp3(1119).t.i4jeWR);
     obj18.onPress = handleSubmit;
     obj18.loading = tmp7;
-    obj10.children = closure_10(tmp3(5188).Button, obj18);
+    obj10.children = closure_10(tmp3(5220).Button, obj18);
     items3[4] = closure_10(closure_6, obj10);
     obj4.children = items3;
     items2[1] = closure_11(closure_6, obj4);

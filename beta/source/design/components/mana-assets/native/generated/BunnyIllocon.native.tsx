@@ -1,13 +1,13 @@
-// Module ID: 6056
-// Function ID: 6057
+// Module ID: 6088
+// Function ID: 6089
 // Name: BunnyIllocon
-// Dependencies: [21, 558, 568, 6057, 5802, 2]
+// Dependencies: [21, 558, 568, 6089, 5834, 2]
 
-// Module 6056 (BunnyIllocon)
+// Module 6088 (BunnyIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6057 from "module_6057" /* 6057 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6089 from "module_6089" /* 6089 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const BunnyIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6057 };
+    const obj2 = { uri: _modDef6089 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const BunnyIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6057 };
+  const obj2 = { uri: _modDef6089 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

@@ -1,9 +1,9 @@
-// Module ID: 15615
-// Function ID: 15616
+// Module ID: 15625
+// Function ID: 15626
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 4750, 21, 4758, 580, 558, 568, 8440, 1974, 1119, 2876, 11390, 11474, 8490, 8433, 504, 4442, 1181, 11202, 11203, 4754, 2]
+// Dependencies: [19, 17, 4782, 21, 4790, 580, 558, 568, 8472, 1974, 1119, 2876, 11426, 11510, 8522, 8465, 504, 4474, 1181, 11238, 11239, 4786, 2]
 
-// Module 15615 (DisplayNameStylesEditPreview)
+// Module 15625 (DisplayNameStylesEditPreview)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -11,23 +11,23 @@ import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import utils from "utils" /* 1974 */;
 import _modDef2876 from "module_2876" /* 2876 */;
-import DateUtils from "DateUtils" /* 4442 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8433 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8440 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 8490 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11202 */;
-import types from "types" /* 11203 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 11390 */;
-import NameplatePreview from "NameplatePreview" /* 11474 */;
+import DateUtils from "DateUtils" /* 4474 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8465 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8472 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 8522 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11238 */;
+import types from "types" /* 11239 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 11426 */;
+import NameplatePreview from "NameplatePreview" /* 11510 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { previewSection: { marginBottom: nativeDefault.space.PX_24, alignItems: "center", alignSelf: "center", width: "100%", maxWidth: 360 }, chatPreviewWrapper: null, nameplatePreviewWrapper: null, chatContainer: null, chatContent: null, chatHeader: null, chatUsername: null, chatTimestamp: null, chatMessageText: null };
 let obj3 = { marginBottom: nativeDefault.space.PX_24, alignItems: "center", alignSelf: "center", width: "100%", maxWidth: 360 };
 obj2.chatPreviewWrapper = { marginTop: -18, alignSelf: "flex-end", width: 260, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
@@ -81,9 +81,9 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const date = new Date();
-    const calendarFormatResult = tmp(4442).calendarFormat(date, true);
+    const calendarFormatResult = tmp(4474).calendarFormat(date, true);
     cResult[4] = calendarFormatResult;
-    const tmpResult2 = tmp(4442);
+    const tmpResult2 = tmp(4474);
   }
   let tmp17 = avatarDecoration;
   if (undefined !== pendingAvatarDecoration) {
@@ -109,7 +109,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       return closure_1_5.useReducedMotion;
                     }
                   }
-                  const tmp30 = timestampProducer(tmp(4754).Text, obj4);
+                  const tmp30 = timestampProducer(tmp(4786).Text, obj4);
                   cResult[16] = tmp4.chatTimestamp;
                   cResult[17] = tmp30;
                   let tmp28 = tmp30;
@@ -144,7 +144,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           return closure_1_5.useReducedMotion;
                         }
                       }
-                      const tmp39 = timestampProducer(tmp(4754).Text, obj5);
+                      const tmp39 = timestampProducer(tmp(4786).Text, obj5);
                       cResult[23] = tmp4.chatMessageText;
                       cResult[24] = tmp39;
                       let tmp37 = tmp39;
@@ -217,10 +217,10 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp26[0] = user.id;
         tmp26[1] = guildId;
         tmp26[2] = displayName;
-        tmp26[4] = tmp(11203).EffectDisplayType.PLAIN;
+        tmp26[4] = tmp(11239).EffectDisplayType.PLAIN;
         tmp26[6] = displayNameStyles;
         tmp26[7] = tmp4.chatUsername;
-        const tmp27 = timestampProducer(tmp7(11202), tmp26);
+        const tmp27 = timestampProducer(tmp7(11238), tmp26);
         cResult[10] = displayName;
         cResult[11] = displayNameStyles;
         cResult[12] = guildId;
@@ -228,7 +228,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[14] = user.id;
         cResult[15] = tmp27;
         tmp23 = tmp27;
-        const tmp7Result = tmp7(11202);
+        const tmp7Result = tmp7(11238);
       }
     }
   }
@@ -377,7 +377,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       }
                     }
                     const obj5 = { user, nameplate: pendingNameplate, nameplateData: tmp26, guildId, pendingDisplayNameStyles: tmp8, pendingGlobalName: displayName };
-                    const tmp29 = timestampProducer(tmp(11474).NameplatePreview, obj5);
+                    const tmp29 = timestampProducer(tmp(11510).NameplatePreview, obj5);
                     cResult[20] = displayName;
                     cResult[21] = tmp8;
                     cResult[22] = guildId;

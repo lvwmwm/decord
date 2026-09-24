@@ -1,23 +1,23 @@
-// Module ID: 16191
-// Function ID: 16192
+// Module ID: 16201
+// Function ID: 16202
 // Name: SafetyGuildSettingDirectMessages
-// Dependencies: [2067, 16183, 8238, 11595, 558, 15091, 568, 16186, 2023, 5110, 1119, 5207, 7241, 16192, 11594, 2]
+// Dependencies: [2067, 16193, 8270, 11631, 558, 15094, 568, 16196, 2023, 5142, 1119, 5239, 7273, 16202, 11630, 2]
 
-// Module 16191 (SafetyGuildSettingDirectMessages)
+// Module 16201 (SafetyGuildSettingDirectMessages)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
-import common_AlertDefault from "common/Alert" /* 5207 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15091 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 16186 */;
-import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 16192 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
+import common_AlertDefault from "common/Alert" /* 5239 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15094 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 16196 */;
+import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 16202 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
-const UserSettingsSafetySelectedGuildStore = fn(16183);
+const UserSettingsSafetySelectedGuildStore = fn(16193);
 ({ getSelectedGuildId: closure_4, useUserSafetySettingsSelectedGuildStore: hasOwnProperty } = UserSettingsSafetySelectedGuildStore);
-let closure_6 = fn(11595).GUILD_SELECT_ALL_SERVERS_OPTION_ID;
+let closure_6 = fn(11631).GUILD_SELECT_ALL_SERVERS_OPTION_ID;
 fn(558);
 let ReactCompilerGating = fn(558);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -119,7 +119,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return stringResult;
   }
 });
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   const allowFriendsFromMutualGuildsOnly = useAllowFriendsFromMutualGuildsOnly.useAllowFriendsFromMutualGuildsOnly();
@@ -182,7 +182,7 @@ const toggle = SettingBuilders.createToggle({
     return stringResult;
   }),
   useDescription: tmp5,
-  parent: fn(8238).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: fn(8270).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: tmp4,
   onValueChange: function onAllowDirectMessagesFromServerMembersValueChange(arg0) {
     const tmp = closure_4();

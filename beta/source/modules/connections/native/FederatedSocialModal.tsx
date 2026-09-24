@@ -1,10 +1,10 @@
-// Module ID: 9395
-// Function ID: 9396
+// Module ID: 9427
+// Function ID: 9428
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 1078, 21, 4758, 5502, 1119, 5625, 4455, 9396, 7371, 4754, 6845, 1181, 5188, 558, 568, 5839, 7246, 2]
+// Dependencies: [5, 32, 19, 1078, 21, 4790, 5534, 1119, 5657, 4487, 9428, 7403, 4786, 6877, 1181, 5220, 558, 568, 5871, 7278, 2]
 
-// Module 9395 (FederatedSocialModal)
-import PlatformsDefault from "Platforms" /* 5502 */;
+// Module 9427 (FederatedSocialModal)
+import PlatformsDefault from "Platforms" /* 5534 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -152,7 +152,7 @@ function FederatedSocialModalScreen(onClose) {
 const WebBrowserType = fn(1078).WebBrowserType;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ container: { padding: 16 }, description: { textAlign: "center" }, input: { paddingHorizontal: 0, paddingVertical: 0, marginVertical: 16 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -181,11 +181,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((platformType) =>
     tmp4 = cResult[1];
   }
   if (cResult[2] !== platformType.onClose) {
-    const headerBackButton = tmp(5839).getHeaderBackButton(platformType.onClose);
+    const headerBackButton = tmp(5871).getHeaderBackButton(platformType.onClose);
     cResult[2] = platformType.onClose;
     cResult[3] = headerBackButton;
     let tmp10 = headerBackButton;
-    const tmpResult = tmp(5839);
+    const tmpResult = tmp(5871);
   } else {
     tmp10 = cResult[3];
   }

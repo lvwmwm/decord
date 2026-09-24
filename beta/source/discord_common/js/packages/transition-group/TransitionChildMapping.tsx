@@ -1,10 +1,10 @@
-// Module ID: 12573
-// Function ID: 12574
+// Module ID: 12609
+// Function ID: 12610
 // Name: TransitionChildMapping
 // Dependencies: [19, 2]
 // Exports: getChildMapping, mergeChildMappings
 
-// Module 12573 (TransitionChildMapping)
+// Module 12609 (TransitionChildMapping)
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

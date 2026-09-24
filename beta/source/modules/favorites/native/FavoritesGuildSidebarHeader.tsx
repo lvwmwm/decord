@@ -1,18 +1,18 @@
-// Module ID: 16618
-// Function ID: 16619
+// Module ID: 16628
+// Function ID: 16629
 // Name: FavoritesGuildSidebarHeader
-// Dependencies: [19, 17, 16541, 21, 4758, 580, 10606, 11274, 4725, 10610, 1984, 10609, 4754, 1119, 3328, 558, 568, 5300, 5321, 5291, 5186, 2]
+// Dependencies: [19, 17, 16551, 21, 4790, 580, 10642, 11310, 4757, 10646, 1984, 10645, 4786, 1119, 3360, 558, 568, 5332, 5353, 5323, 5218, 2]
 
-// Module 16618 (FavoritesGuildSidebarHeader)
+// Module 16628 (FavoritesGuildSidebarHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import _modDef3328 from "module_3328" /* 3328 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import ChatIcon from "ChatIcon" /* 5291 */;
-import TextIcon from "TextIcon" /* 5300 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5321 */;
+import _modDef3360 from "module_3360" /* 3360 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import ChatIcon from "ChatIcon" /* 5323 */;
+import TextIcon from "TextIcon" /* 5332 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5353 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -28,15 +28,15 @@ function EmptyBody() {
   }, []);
   const obj = { variant: "text-sm/medium", color: "text-muted", children: null };
   const intl = util.intl;
-  obj.children = intl.format(_modDef3328.Z3Hdr5, { onClick: callback });
+  obj.children = intl.format(_modDef3360.Z3Hdr5, { onClick: callback });
   return timestampProducer(Text_Text.Text, obj);
 }
 const View = fn(17).View;
-let closure_5 = fn(16541).useHasFavoritesGuildSuggestions;
+let closure_5 = fn(16551).useHasFavoritesGuildSuggestions;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
 let c9 = "heading-md/semibold";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { copy: { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 }, divider: null, placeholderRows: null, placeholderRow: null, placeholderBar: null, placeholderBarShort: null, placeholderBarLong: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.divider = { height: 1, marginTop: nativeDefault.space.PX_12, marginHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
@@ -57,7 +57,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-    const tmp8 = timestampProducer(tmp(5300).TextIcon, obj2);
+    const tmp8 = timestampProducer(tmp(5332).TextIcon, obj2);
     cResult[0] = tmp8;
     let first = tmp8;
   } else {
@@ -74,7 +74,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-        const tmp18 = timestampProducer(tmp(5321).VoiceNormalIcon, obj3);
+        const tmp18 = timestampProducer(tmp(5353).VoiceNormalIcon, obj3);
         cResult[7] = tmp18;
         let tmp15 = tmp18;
       } else {
@@ -91,7 +91,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const _Symbol2 = Symbol;
           if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
             const obj4 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-            const tmp30 = timestampProducer(tmp(5291).ChatIcon, obj4);
+            const tmp30 = timestampProducer(tmp(5323).ChatIcon, obj4);
             cResult[14] = tmp30;
             let tmp27 = tmp30;
           } else {
@@ -234,8 +234,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant, color: "mobile-text-heading-primary", children: null };
       const intl = tmp(1119).intl;
-      obj2.children = intl.string(_modDef3328["1n0TGE"]);
-      const tmp16 = timestampProducer(tmp(4754).Heading, obj2);
+      obj2.children = intl.string(_modDef3360["1n0TGE"]);
+      const tmp16 = timestampProducer(tmp(4786).Heading, obj2);
       const tmp18 = timestampProducer(EmptyBody, {});
       cResult[3] = tmp16;
       cResult[4] = tmp18;
@@ -249,7 +249,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp4.copy, children: null };
       const items = [tmp11, tmp12];
       obj3.children = items;
-      const tmp22 = React5(tmp(5186).Stack, obj3);
+      const tmp22 = React5(tmp(5218).Stack, obj3);
       cResult[5] = tmp4.copy;
       cResult[6] = tmp22;
       let tmp19 = tmp22;
@@ -271,7 +271,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj4 = { spacing: nativeDefault.space.PX_8, children: null };
       const items1 = [tmp6, tmp19, tmp23];
       obj4.children = items1;
-      const tmp33 = React5(tmp(5186).Stack, obj4);
+      const tmp33 = React5(tmp(5218).Stack, obj4);
       cResult[10] = tmp6;
       cResult[11] = tmp19;
       cResult[12] = tmp23;
@@ -313,7 +313,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp.copy, children: null };
   const obj4 = { variant, color: "mobile-text-heading-primary", children: null };
   const intl = tmp4(1119).intl;
-  obj4.children = intl.string(_modDef3328["1n0TGE"]);
+  obj4.children = intl.string(_modDef3360["1n0TGE"]);
   const items1 = [timestampProducer(Text_Text.Heading, obj4), timestampProducer(EmptyBody, {})];
   obj3.children = items1;
   items[1] = React5(Stack_Stack.Stack, obj3);

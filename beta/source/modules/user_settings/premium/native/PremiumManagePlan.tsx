@@ -1,9 +1,9 @@
-// Module ID: 13764
-// Function ID: 13765
+// Module ID: 13800
+// Function ID: 13801
 // Name: PremiumManagePlan
-// Dependencies: [5, 32, 19, 17, 4419, 1376, 4420, 4423, 4424, 7638, 1983, 7484, 1078, 5818, 4740, 1378, 21, 3, 4758, 580, 558, 568, 1488, 5843, 5341, 4754, 1119, 7409, 13659, 7429, 504, 4471, 4610, 1098, 5081, 5813, 10961, 7648, 1245, 4418, 38, 7481, 13765, 13766, 13636, 13646, 8331, 5188, 13625, 13663, 13662, 5311, 9475, 13668, 2112, 5198, 1181, 8315, 5824, 1616, 13727, 7637, 7501, 5203, 8329, 13729, 13695, 2062, 7236, 7241, 5175, 13664, 13743, 2]
+// Dependencies: [5, 32, 19, 17, 4451, 1376, 4452, 4455, 4456, 7670, 1983, 7516, 1078, 5850, 4772, 1378, 21, 3, 4790, 580, 558, 568, 1488, 5875, 5373, 4786, 1119, 7441, 13695, 7461, 504, 4503, 4642, 1098, 5113, 5845, 10997, 7680, 1245, 4450, 38, 7513, 13801, 13802, 13672, 13682, 8363, 5220, 13661, 13699, 13698, 5343, 9507, 13704, 2112, 5230, 1181, 8347, 5856, 1616, 13763, 7669, 7533, 5235, 8361, 13765, 13731, 2062, 7268, 7273, 5207, 13700, 13779, 2]
 
-// Module 13764 (PremiumManagePlan)
+// Module 13800 (PremiumManagePlan)
 import LoggerDefault from "Logger" /* 3 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -13,35 +13,35 @@ import native from "native" /* 1181 */;
 import useNavigation from "useNavigation" /* 1488 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5081 */;
-import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5175 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import useMountEffectDefault from "useMountEffect" /* 5203 */;
-import Pressables from "Pressables" /* 5341 */;
-import Card from "Card" /* 5824 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5843 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7236 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7241 */;
-import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7637 */;
-import PremiumManagementUtils from "PremiumManagementUtils" /* 7648 */;
-import _modDef8315 from "module_8315" /* 8315 */;
-import PremiumFeaturesCardDefault from "PremiumFeaturesCard" /* 9475 */;
-import PremiumSubscriptionDetails from "PremiumSubscriptionDetails" /* 13625 */;
-import PremiumAccountCreditDefault from "PremiumAccountCredit" /* 13664 */;
-import PremiumNitroHomeUtils from "PremiumNitroHomeUtils" /* 13695 */;
-import useFPDurationLeftDefault from "useFPDurationLeft" /* 13729 */;
-import PremiumFeaturesTableDefault from "PremiumFeaturesTable" /* 13743 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5113 */;
+import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5207 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import useMountEffectDefault from "useMountEffect" /* 5235 */;
+import Pressables from "Pressables" /* 5373 */;
+import Card from "Card" /* 5856 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5875 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7268 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7273 */;
+import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7669 */;
+import PremiumManagementUtils from "PremiumManagementUtils" /* 7680 */;
+import _modDef8347 from "module_8347" /* 8347 */;
+import PremiumFeaturesCardDefault from "PremiumFeaturesCard" /* 9507 */;
+import PremiumSubscriptionDetails from "PremiumSubscriptionDetails" /* 13661 */;
+import PremiumAccountCreditDefault from "PremiumAccountCredit" /* 13700 */;
+import PremiumNitroHomeUtils from "PremiumNitroHomeUtils" /* 13731 */;
+import useFPDurationLeftDefault from "useFPDurationLeft" /* 13765 */;
+import PremiumFeaturesTableDefault from "PremiumFeaturesTable" /* 13779 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
-import BillingInfoStore from "BillingInfoStore" /* 4420 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4423 */;
-import SubscriptionStore from "SubscriptionStore" /* 4424 */;
-import EntitlementStore from "EntitlementStore" /* 7638 */;
+import BillingInfoStore from "BillingInfoStore" /* 4452 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4455 */;
+import SubscriptionStore from "SubscriptionStore" /* 4456 */;
+import EntitlementStore from "EntitlementStore" /* 7670 */;
 import AppStateStore from "AppStateStore" /* 1983 */;
-import IAPStore from "IAPStore" /* 7484 */;
+import IAPStore from "IAPStore" /* 7516 */;
 
 require = fn;
 function SubscriptionAndBillingInfo(subscription) {
@@ -404,17 +404,17 @@ function SubscriptionAndBillingInfo(subscription) {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: metroRequire, ImageBackground: closure_7, View: closure_8, ScrollView: closure_9, ActivityIndicator: c10 } = get_ActivityIndicator);
-const isNoneSubscription = fn(4419).isNoneSubscription;
+const isNoneSubscription = fn(4451).isNoneSubscription;
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_19, HelpdeskArticles: closure_20, SubscriptionStatusTypes: closure_21, UserSettingsSections: closure_22 } = Constants);
-const TABLE_DIVIDER_WIDTH = fn(5818).TABLE_DIVIDER_WIDTH;
-const CustomCheckoutFlow = fn(4740).CustomCheckoutFlow;
+const TABLE_DIVIDER_WIDTH = fn(5850).TABLE_DIVIDER_WIDTH;
+const CustomCheckoutFlow = fn(4772).CustomCheckoutFlow;
 const PremiumConstants = fn(1378);
 ({ FractionalPremiumStates: closure_25, PREMIUM_SUBSCRIPTION_APPLICATION: closure_26, PremiumTypes: closure_27, SubscriptionPlanInfo: closure_28 } = PremiumConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_29, jsxs: closure_30 } = jsxProd);
 let closure_31 = new LoggerDefault("PremiumManagePlan");
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let obj2 = { background: null, container: null, contentContainer: null, topBlur: null, accountCredit: null, accountCreditList: null, featuresTable: null, subscriptionHeader: null, billingInfo: null };
 let tmp6 = new LoggerDefault("PremiumManagePlan");
 obj2.background = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, height: "100%" };
@@ -429,7 +429,7 @@ obj2.featuresTable = { paddingTop: 16 };
 obj2.subscriptionHeader = { marginTop: 20, width: "100%" };
 obj2.billingInfo = { marginTop: 20, width: "100%" };
 let closure_32 = createStyles.createStyles(obj2);
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj7 = { headerContainer: { display: "flex", flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: 8, justifyContent: "space-between" }, backButtonWrapper: null };
 let size = { width: 24, height: 24, borderRadius: nativeDefault.radii.lg, alignItems: "center", justifyContent: "center" };
 obj7.backButtonWrapper = size;
@@ -450,7 +450,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp9 = closure_1_29(tmp(5843).ArrowLargeLeftIcon, { size: "md" });
+    const tmp9 = closure_1_29(tmp(5875).ArrowLargeLeftIcon, { size: "md" });
     cResult[2] = tmp9;
     let tmp7 = tmp9;
   } else {
@@ -465,7 +465,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj3 = { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: null };
       const intl = tmp(1119).intl;
       obj3.children = intl.string(tmp(1119).t["1bX7Tx"]);
-      const tmp14 = closure_1_29(tmp(4754).Text, obj3);
+      const tmp14 = closure_1_29(tmp(4786).Text, obj3);
       cResult[6] = tmp14;
       let tmp12 = tmp14;
     } else {
@@ -526,7 +526,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj2.children = items;
   return __initData3(closure_1_8, obj2);
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let closure_35 = createStyles.createStyles(() => {
   const obj = { container: { display: "flex", flexDirection: "column", gap: 12 }, errorHeader: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, overflow: "hidden" }, headerBackground: { padding: 16 }, logoContainer: { flexDirection: "row", alignItems: "center", marginBottom: 12 }, wumpusImg: { marginRight: 10, height: 36, width: 51 }, logoStyle: { height: 32, width: 78 }, errorHeaderPrimaryButton: { marginBottom: 16, marginHorizontal: 16 }, extraInfoContainer: { paddingTop: 16, paddingHorizontal: 16, display: "flex", gap: 8 }, extraInfoTextContainer: null, mutationWarningContainer: null, mutationText: null, fpTimeRemaining: null, fpTimeRemainingPill: null, fpUnactivatedHoursPill: null, fpTimeRemainingText: null, fpUnitsTitle: null, fpUnitsStatusText: null, fpRowStart: null, fpRowIcon: null, fpRowContent: null, fpRowEnd: null, dividerContainer: null, divider: null, pillAndCardContainer: null, pillPosition: null };
   const obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
@@ -581,7 +581,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { variant: "eyebrow", color: "text-default", children: null };
     const intl = tmp(1119).intl;
     obj3.children = intl.string(tmp(1119).t.Obre8v);
-    const tmp12 = closure_1_29(tmp(4754).Text, obj3);
+    const tmp12 = closure_1_29(tmp(4786).Text, obj3);
     cResult[2] = tmp12;
     let tmp10 = tmp12;
   } else {
@@ -592,7 +592,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl2 = tmp(1119).intl;
     const obj5 = { helpCenterLink: HelpdeskUtilsDefault.getArticleURL(constants.FRACTIONAL_PREMIUM_ABOUT) };
     obj4.children = intl2.format(tmp(1119).t.AYGoBn, obj5);
-    const tmp17 = closure_1_29(tmp(4754).Text, obj4);
+    const tmp17 = closure_1_29(tmp(4786).Text, obj4);
     cResult[3] = tmp17;
     let tmp13 = tmp17;
   } else {
@@ -620,7 +620,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const obj8 = { style: tmp19, start: tmp20, end: tmp21, colors: tmp18, children: null };
     const obj9 = { children: null };
-    const obj10 = { color: nativeDefault.unsafe_rawColors.WHITE, source: _modDef8315, size: tmp(1181).IconSizes.LARGE };
+    const obj10 = { color: nativeDefault.unsafe_rawColors.WHITE, source: _modDef8347, size: tmp(1181).IconSizes.LARGE };
     obj9.children = closure_1_29(tmp(1181).Icon, obj10);
     obj8.children = closure_1_29(closure_1_8, obj9);
     const tmp28 = closure_1_29(LinearGradientDefault, obj8);
@@ -649,7 +649,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[12] !== tmp4.fpUnitsTitle) {
     const obj12 = { variant: "text-sm/semibold", style: fpUnitsTitle, children: tmp33 };
-    const tmp37 = closure_1_29(tmp(4754).Text, obj12);
+    const tmp37 = closure_1_29(tmp(4786).Text, obj12);
     cResult[12] = tmp4.fpUnitsTitle;
     cResult[13] = tmp37;
     let tmp35 = tmp37;
@@ -751,7 +751,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                                 tmp82 = tmp85;
                                               }
                                               const obj17 = { start: false, end: true, style: tmp4.fpRowEnd, variant: "secondary", children: tmp75 };
-                                              const tmp81 = closure_1_29(tmp(5824).Card, obj17);
+                                              const tmp81 = closure_1_29(tmp(5856).Card, obj17);
                                               cResult[49] = tmp4.fpRowEnd;
                                               cResult[50] = tmp75;
                                               cResult[51] = tmp81;
@@ -777,7 +777,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             if (!fpUnactivatedHoursPill) {
                               const obj19 = { style: tmp4.fpTimeRemainingPill, children: null };
                               const obj20 = { variant: "text-sm/medium", style: tmp4.fpTimeRemainingText, children: durationText };
-                              obj19.children = closure_1_29(tmp(4754).Text, obj20);
+                              obj19.children = closure_1_29(tmp(4786).Text, obj20);
                               let tmp71 = closure_1_29(closure_1_8, obj19);
                               cResult[37] = durationText;
                               cResult[38] = fractionalPremiumInfo;
@@ -790,7 +790,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             }
                             const obj21 = { style: tmp4.fpUnactivatedHoursPill, children: null };
                             const obj22 = { variant: "text-sm/medium", style: tmp4.fpTimeRemainingText, children: unactivatedHoursString };
-                            obj21.children = closure_1_29(tmp(4754).Text, obj22);
+                            obj21.children = closure_1_29(tmp(4786).Text, obj22);
                             tmp71 = closure_1_29(closure_1_8, obj21);
                           }
                         }
@@ -800,7 +800,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       const obj23 = { variant: "text-md/semibold", style: tmp4.fpTimeRemaining, children: null };
                       const intl5 = tmp(1119).intl;
                       obj23.children = intl5.string(tmp(1119).t["3G0CTC"]);
-                      let tmp62Result = closure_1_29(tmp(4754).Text, obj23);
+                      let tmp62Result = closure_1_29(tmp(4786).Text, obj23);
                       cResult[32] = activationDate;
                       cResult[33] = fractionalPremiumInfo;
                       cResult[34] = fpUnactivatedHoursPill;
@@ -811,14 +811,14 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     const obj24 = { variant: "text-md/semibold", children: null };
                     const intl6 = tmp(1119).intl;
                     obj24.children = intl6.string(tmp(1119).t["hT6i/0"]);
-                    const items5 = [closure_1_29(tmp(4754).Text, obj24), ];
+                    const items5 = [closure_1_29(tmp(4786).Text, obj24), ];
                     let tmp64Result = undefined !== activationDate;
                     if (tmp64Result) {
                       const obj25 = { variant: "text-xs/medium", color: "text-subtle", children: null };
                       const intl7 = tmp(1119).intl;
                       const obj26 = { activateDate: activationDate };
                       obj25.children = intl7.format(tmp(1119).t["0Vwb/l"], obj26);
-                      tmp64Result = tmp64(tmp(4754).Text, obj25);
+                      tmp64Result = tmp64(tmp(4786).Text, obj25);
                     }
                     const obj27 = { children: null };
                     items5[1] = tmp64Result;
@@ -837,7 +837,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               const obj29 = { style: tmp4.fpRowStart, start: true, end: false, variant: "primary", children: null };
               const items6 = [tmp29, tmp43];
               obj29.children = items6;
-              const tmp49 = __initData3(tmp(5824).Card, obj29);
+              const tmp49 = __initData3(tmp(5856).Card, obj29);
               cResult[23] = tmp4.fpRowStart;
               cResult[24] = tmp29;
               cResult[25] = tmp43;
@@ -862,14 +862,14 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj31 = { variant: "text-sm/medium", style: tmp4.fpUnitsStatusText, children: null };
     const intl4 = tmp(1119).intl;
     obj31.children = intl4.string(tmp(1119).t["B66Z+f"]);
-    let tmp41 = closure_1_29(tmp(4754).Text, obj31);
+    let tmp41 = closure_1_29(tmp(4786).Text, obj31);
     cResult[14] = fractionalPremiumInfo;
     cResult[15] = fpUnactivatedHoursPill;
     cResult[16] = tmp4.fpUnitsStatusText;
     cResult[17] = unactivatedHoursString;
     cResult[18] = tmp41;
   }
-  tmp41 = closure_1_29(tmp(4754).Text, { variant: "text-sm/medium", children: unactivatedHoursString });
+  tmp41 = closure_1_29(tmp(4786).Text, { variant: "text-sm/medium", children: unactivatedHoursString });
 }) : ((durationText) => {
   ({ fractionalPremiumInfo, showPremiumFeaturesCard, hasUnactivatedUnits, unactivatedHoursString, activationDate } = durationText);
   const tmp = closure_35();
@@ -901,7 +901,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj10.colors = items2;
   const obj12 = { children: null };
   const tmp11 = LinearGradientDefault;
-  obj12.children = closure_1_29(native.Icon, { color: nativeDefault.unsafe_rawColors.WHITE, source: _modDef8315, size: native.IconSizes.LARGE });
+  obj12.children = closure_1_29(native.Icon, { color: nativeDefault.unsafe_rawColors.WHITE, source: _modDef8347, size: native.IconSizes.LARGE });
   obj10.children = closure_1_29(closure_1_8, obj12);
   obj9.children = closure_1_29(tmp11, obj10);
   const items3 = [closure_1_29(closure_1_8, obj9), ];
@@ -913,7 +913,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (hasUnactivatedUnits) {
     if (fractionalPremiumInfo.fractionalState === constants4.NONE) {
       const obj16 = { variant: "text-sm/medium", children: unactivatedHoursString };
-      let tmp8Result = tmp8(tmp9(4754).Text, obj16);
+      let tmp8Result = tmp8(tmp9(4786).Text, obj16);
     }
     items4[1] = tmp8Result;
     obj14.children = items4;
@@ -931,14 +931,14 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj21 = { variant: "text-md/semibold", children: null };
         const intl6 = tmp9(1119).intl;
         obj21.children = intl6.string(tmp9(1119).t["hT6i/0"]);
-        const items6 = [tmp8(tmp9(4754).Text, obj21), ];
+        const items6 = [tmp8(tmp9(4786).Text, obj21), ];
         let tmp8Result3 = undefined !== activationDate;
         if (tmp8Result3) {
           const obj22 = { variant: "text-xs/medium", color: "text-subtle", children: null };
           const intl7 = tmp9(1119).intl;
           const obj23 = { activateDate: activationDate };
           obj22.children = intl7.format(tmp9(1119).t["0Vwb/l"], obj23);
-          tmp8Result3 = tmp8(tmp9(4754).Text, obj22);
+          tmp8Result3 = tmp8(tmp9(4786).Text, obj22);
         }
         const obj24 = { children: null };
         items6[1] = tmp8Result3;
@@ -950,7 +950,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (fractionalPremiumInfo.fractionalState === constants4.NONE) {
           const obj25 = { style: tmp.fpUnactivatedHoursPill, children: null };
           const obj26 = { variant: "text-sm/medium", style: tmp.fpTimeRemainingText, children: unactivatedHoursString };
-          obj25.children = tmp8(tmp9(4754).Text, obj26);
+          obj25.children = tmp8(tmp9(4786).Text, obj26);
           let tmp8Result4 = tmp8(tmp3, obj25);
         }
         const obj27 = { children: null };
@@ -967,18 +967,18 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const obj28 = { style: tmp.fpTimeRemainingPill, children: null };
       const obj29 = { variant: "text-sm/medium", style: tmp.fpTimeRemainingText, children: durationText.durationText };
-      obj28.children = tmp8(tmp9(4754).Text, obj29);
+      obj28.children = tmp8(tmp9(4786).Text, obj29);
       tmp8Result4 = tmp8(tmp3, obj28);
     }
     const obj30 = { variant: "text-md/semibold", style: tmp.fpTimeRemaining, children: null };
     const intl5 = tmp9(1119).intl;
     obj30.children = intl5.string(tmp9(1119).t["3G0CTC"]);
-    tmp8Result5 = tmp8(tmp9(4754).Text, obj30);
+    tmp8Result5 = tmp8(tmp9(4786).Text, obj30);
   }
   const obj31 = { variant: "text-sm/medium", style: tmp.fpUnitsStatusText, children: null };
   const intl4 = tmp9(1119).intl;
   obj31.children = intl4.string(util.t["B66Z+f"]);
-  tmp8Result = tmp8(tmp9(4754).Text, obj31);
+  tmp8Result = tmp8(tmp9(4786).Text, obj31);
 });
 ReactCompilerGating = fn(558);
 let obj5 = { borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
@@ -991,8 +991,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = navigation(568);
   ({ top, bottom } = useSafeAreaInsetsDefault());
   const tmp6 = useSafeAreaInsetsDefault();
-  const youBarSettingsOutsideSafeAreaTop = navigation(13727).useYouBarSettingsOutsideSafeAreaTop();
-  const obj2 = navigation(13727);
+  const youBarSettingsOutsideSafeAreaTop = navigation(13763).useYouBarSettingsOutsideSafeAreaTop();
+  const obj2 = navigation(13763);
   navigation = navigation(1488).useNavigation();
   if (cResult[0] !== navigation) {
     const fn = function t() {
@@ -1134,9 +1134,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   useMountEffectDefault(tmp27);
   const tmpResult7 = navigation(504);
-  const isInReverseTrial = navigation(8329).useIsInReverseTrial();
-  const tmpResult8 = navigation(8329);
-  useFPDurationLeftDefault(tmp26.endsAt, navigation(13729).CountDownMessageTypes.SHORT_TIME);
+  const isInReverseTrial = navigation(8361).useIsInReverseTrial();
+  const tmpResult8 = navigation(8361);
+  useFPDurationLeftDefault(tmp26.endsAt, navigation(13765).CountDownMessageTypes.SHORT_TIME);
   if (cResult[11] !== tmp26) {
     class X {
       constructor() {
@@ -1328,7 +1328,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   const tmp5Result = useFPDurationLeftDefault;
-  const theme = navigation(4471).useThemeContext().theme;
+  const theme = navigation(4503).useThemeContext().theme;
   importDefault = obj4.useRef(false);
   if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
     class J {
@@ -1385,7 +1385,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp37 = cResult[15];
     tmp38 = cResult[16];
   }
-  const tmpResult9 = navigation(4471);
+  const tmpResult9 = navigation(4503);
   const stateFromStores2 = navigation(504).useStateFromStores(tmp36, tmp37, tmp38, tmp(2062).areSetsEqual);
   if (cResult[17] !== navigation) {
     class J {
@@ -1537,7 +1537,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     tmp50[1] = tmp47;
     tmp50[2] = theme;
-    const tmp51 = closure_29(tmp5(5175), tmp50);
+    const tmp51 = closure_29(tmp5(5207), tmp50);
     cResult[26] = tmp47;
     cResult[27] = theme;
     cResult[28] = tmp51;
@@ -1550,8 +1550,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp = closure_32();
   const rect = useSafeAreaInsetsDefault();
   const top = rect.top;
-  const youBarSettingsOutsideSafeAreaTop = navigation(13727).useYouBarSettingsOutsideSafeAreaTop();
-  let obj = navigation(13727);
+  const youBarSettingsOutsideSafeAreaTop = navigation(13763).useYouBarSettingsOutsideSafeAreaTop();
+  let obj = navigation(13763);
   navigation = navigation(1488).useNavigation();
   let items = [navigation];
   const layoutEffect = noop.useLayoutEffect(() => {
@@ -1580,19 +1580,19 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       isSubscriptionFetching = BillingInfoStore.isSubscriptionFetching;
     }
     if (!isSubscriptionFetching) {
-      const subscriptions = navigation(5081).fetchSubscriptions();
-      const obj = navigation(5081);
+      const subscriptions = navigation(5113).fetchSubscriptions();
+      const obj = navigation(5113);
     }
     if (!tmp5) {
-      const premiumSubscriptionPlans = navigation(7501).fetchPremiumSubscriptionPlans();
-      const obj3 = navigation(7501);
+      const premiumSubscriptionPlans = navigation(7533).fetchPremiumSubscriptionPlans();
+      const obj3 = navigation(7533);
     }
   });
   const obj6 = navigation(504);
-  let isInReverseTrial = navigation(8329).useIsInReverseTrial();
-  const obj8 = navigation(8329);
-  const tmp15Result = useFPDurationLeftDefault(tmp12.endsAt, navigation(13729).CountDownMessageTypes.SHORT_TIME);
-  const unactivatedFractionalPremiumDurationString = navigation(4418).getUnactivatedFractionalPremiumDurationString(tmp12);
+  let isInReverseTrial = navigation(8361).useIsInReverseTrial();
+  const obj8 = navigation(8361);
+  const tmp15Result = useFPDurationLeftDefault(tmp12.endsAt, navigation(13765).CountDownMessageTypes.SHORT_TIME);
+  const unactivatedFractionalPremiumDurationString = navigation(4450).getUnactivatedFractionalPremiumDurationString(tmp12);
   if (null !== tmp10) {
     if (!tmp10.isPurchasedExternally) {
       const currentPeriodEnd = tmp10.currentPeriodEnd;
@@ -1609,10 +1609,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (!tmp29Result4) {
     tmp29Result4 = tmp17;
   }
-  const obj9 = navigation(4418);
+  const obj9 = navigation(4450);
   importDefault = obj3.useRef(false);
   const callback = obj3.useCallback((nativeEvent) => PremiumNitroHomeUtils.trackIfScrolledToBottom({ nativeEvent: nativeEvent.nativeEvent, trackedType: "your_nitro_plan", hasTrackedScrolledToBottom }), []);
-  const tmp4Result = navigation(4471);
+  const tmp4Result = navigation(4503);
   const items4 = [EntitlementStore];
   let tmp23 = null != tmp10;
   const stateFromStores2 = navigation(504).useStateFromStores(items4, () => {
@@ -1667,7 +1667,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items9 = [tmp29Result, , , , , , ];
   if (isInReverseTrial) {
     const obj13 = { premiumType: closure_27.TIER_2, forFractionalPremium: true, hideButton: true };
-    isInReverseTrial = tmp29(tmp2(9475), obj13);
+    isInReverseTrial = tmp29(tmp2(9507), obj13);
   }
   items9[1] = isInReverseTrial;
   let tmp29Result3 = result;
@@ -1676,7 +1676,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (tmp29Result3) {
     const obj14 = { premiumType: closure_27.TIER_2, hideButton: true, hidePrice: true, isPremiumGroup: true, premiumGroupRole };
-    tmp29Result3 = tmp29(tmp2(9475), obj14);
+    tmp29Result3 = tmp29(tmp2(9507), obj14);
   }
   items9[2] = tmp29Result3;
   if (tmp29Result4) {
@@ -1701,9 +1701,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         },
       subscription: tmp10
     };
-    const items10 = [tmp29(tmp2(13625), obj17), ];
+    const items10 = [tmp29(tmp2(13661), obj17), ];
     const obj18 = { style: tmp.billingInfo, subscription: tmp10 };
-    items10[1] = tmp29(tmp2(13662), obj18);
+    items10[1] = tmp29(tmp2(13698), obj18);
     obj16.children = items10;
     tmp27Result = tmp27(tmp28, obj16);
   }

@@ -1,25 +1,25 @@
-// Module ID: 10484
-// Function ID: 10485
+// Module ID: 10520
+// Function ID: 10521
 // Name: EmojiPickerListComponents
-// Dependencies: [19, 17, 10439, 21, 4758, 580, 558, 568, 1181, 8430, 1119, 4754, 10482, 2]
+// Dependencies: [19, 17, 10478, 21, 4790, 580, 558, 568, 1181, 8462, 1119, 4786, 10518, 2]
 
-// Module 10484 (EmojiPickerListComponents)
+// Module 10520 (EmojiPickerListComponents)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import _modDef8430 from "module_8430" /* 8430 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10482 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import _modDef8462 from "module_8462" /* 8462 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10518 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const EmojiPickerListConstants = fn(10439);
+const EmojiPickerListConstants = fn(10478);
 ({ LABEL_BOTTOM_PADDING, LABEL_TOP_PADDING, NSFW_ROW_HEIGHT } = EmojiPickerListConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { section: { justifyContent: "center", overflow: "hidden", backgroundColor: nativeDefault.colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT, paddingTop: LABEL_TOP_PADDING, paddingBottom: LABEL_BOTTOM_PADDING }, nsfwContainer: null, nsfwText: null };
 let obj3 = { justifyContent: "center", overflow: "hidden", backgroundColor: nativeDefault.colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT, paddingTop: LABEL_TOP_PADDING, paddingBottom: LABEL_BOTTOM_PADDING };
 obj.nsfwContainer = { flexDirection: "row", height: NSFW_ROW_HEIGHT, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.sm, marginLeft: 12, marginRight: 12, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
@@ -32,7 +32,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() 
   const cResult = c.c(7);
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { source: _modDef8430, size: tmp(1181).Icon.Sizes.SMALL };
+    const obj2 = { source: _modDef8462, size: tmp(1181).Icon.Sizes.SMALL };
     const tmp8 = React4(tmp(1181).Icon, obj2);
     cResult[0] = tmp8;
     let first = tmp8;
@@ -49,7 +49,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() 
   }
   if (cResult[2] !== tmp4.nsfwText) {
     const obj3 = { style: tmp4.nsfwText, variant: "text-sm/normal", color: "interactive-text-active", children: tmp9 };
-    const tmp13 = React4(tmp(4754).Text, obj3);
+    const tmp13 = React4(tmp(4786).Text, obj3);
     cResult[2] = tmp4.nsfwText;
     cResult[3] = tmp13;
     let tmp11 = tmp13;
@@ -73,7 +73,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() 
 }) : (() => {
   const tmp = closure_6();
   const obj = { style: tmp.nsfwContainer, children: null };
-  const items = [React4(native.Icon, { source: _modDef8430, size: native.Icon.Sizes.SMALL }), ];
+  const items = [React4(native.Icon, { source: _modDef8462, size: native.Icon.Sizes.SMALL }), ];
   const obj3 = { style: tmp.nsfwText, variant: "text-sm/normal", color: "interactive-text-active", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t.SLzV5z);
@@ -97,7 +97,7 @@ export const Section = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? 
       let tmp9 = null;
       if ("" !== label) {
         const obj2 = { lineClamp: 1, color: "interactive-text-default", variant: "heading-sm/semibold", children: label };
-        tmp9 = React4(tmp(4754).Text, obj2);
+        tmp9 = React4(tmp(4786).Text, obj2);
       }
       cResult[3] = label;
       cResult[4] = tmp9;
@@ -126,7 +126,7 @@ export const Section = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? 
   let tmp6 = isSectionNitroLocked;
   if (isSectionNitroLocked) {
     const obj4 = { useTier0UpsellContent };
-    tmp6 = React4(tmp(10482).PremiumUpsellGradientBackground, obj4);
+    tmp6 = React4(tmp(10518).PremiumUpsellGradientBackground, obj4);
   }
   cResult[0] = isSectionNitroLocked;
   cResult[1] = useTier0UpsellContent;

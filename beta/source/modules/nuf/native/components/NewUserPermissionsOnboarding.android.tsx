@@ -1,14 +1,14 @@
-// Module ID: 12835
-// Function ID: 12836
+// Module ID: 12871
+// Function ID: 12872
 // Name: NewUserPermissionsOnboarding
-// Dependencies: [19, 17, 21, 4758, 5897, 580, 558, 568, 4754, 1119, 5188, 2]
+// Dependencies: [19, 17, 21, 4790, 5929, 580, 558, 568, 4786, 1119, 5220, 2]
 
-// Module 12835 (NewUserPermissionsOnboarding)
+// Module 12871 (NewUserPermissionsOnboarding)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,9 +16,9 @@ get_ActivityIndicator = fn(17);
 ({ View: c2, ScrollView: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
-let obj2 = { scrollContainer: { minHeight: "100%" }, container: { flexGrow: 1, alignItems: "center", justifyContent: "center" }, alertContainer: { paddingTop: 80 + fn(5897).NAV_BAR_HEIGHT }, alert: null, alertContent: null, alertTitle: null, alertSubtitle: null, buttonWrapper: null, primaryButtonContainer: null, trailing: null };
-let obj3 = { paddingTop: 80 + fn(5897).NAV_BAR_HEIGHT };
+const createStyles = fn(4790);
+let obj2 = { scrollContainer: { minHeight: "100%" }, container: { flexGrow: 1, alignItems: "center", justifyContent: "center" }, alertContainer: { paddingTop: 80 + fn(5929).NAV_BAR_HEIGHT }, alert: null, alertContent: null, alertTitle: null, alertSubtitle: null, buttonWrapper: null, primaryButtonContainer: null, trailing: null };
+let obj3 = { paddingTop: 80 + fn(5929).NAV_BAR_HEIGHT };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_HIGH);
 obj2.alert = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.xl, borderWidth: 1, borderColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE, alignItems: "center", maxWidth: 290 };
 obj2.alertContent = { paddingVertical: 24, paddingHorizontal: 24, alignItems: "center" };
@@ -183,7 +183,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               const intl2 = tmp(1119).intl;
               obj10.text = intl2.string(tmp(1119).t["5Wxrcd"]);
               obj10.onPress = onDontAllow;
-              obj9.children = React4(tmp(5188).Button, obj10);
+              obj9.children = React4(tmp(5220).Button, obj10);
               tmp28 = React4(React2, obj9);
             }
             cResult[16] = onDontAllow;
@@ -200,7 +200,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp23 = tmp26;
         }
         const obj12 = { variant: "primary", size: "md", text: tmp18, onPress: onAllow, loading, grow: true };
-        const tmp22 = React4(tmp(5188).Button, obj12);
+        const tmp22 = React4(tmp(5220).Button, obj12);
         cResult[10] = loading;
         cResult[11] = onAllow;
         cResult[12] = tmp22;
@@ -213,7 +213,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp16 = items3;
     }
     const obj13 = { style: tmp5.alertSubtitle, variant: "text-sm/medium", color: "text-default", children: subtitle };
-    const tmp15 = React4(tmp(4754).Text, obj13);
+    const tmp15 = React4(tmp(4786).Text, obj13);
     cResult[3] = tmp5.alertSubtitle;
     cResult[4] = subtitle;
     cResult[5] = tmp15;
@@ -259,7 +259,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl2 = tmp6(1119).intl;
     obj11.text = intl2.string(tmp6(1119).t["5Wxrcd"]);
     obj11.onPress = onDontAllow;
-    obj10.children = tmp4(tmp6(5188).Button, obj11);
+    obj10.children = tmp4(tmp6(5220).Button, obj11);
     flag = tmp4(tmp5, obj10);
   }
   const obj12 = { children: null };

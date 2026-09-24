@@ -1,10 +1,10 @@
-// Module ID: 11111
-// Function ID: 11112
+// Module ID: 11147
+// Function ID: 11148
 // Name: OrderUtils
-// Dependencies: [5, 4740, 7673, 2]
+// Dependencies: [5, 4772, 7705, 2]
 // Exports: discardDraftOrder
 
-// Module 11111 (OrderUtils)
+// Module 11147 (OrderUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -93,7 +93,7 @@ let closure_4 = async function _discardDraftOrder(arg0, value) {
     }
   }
 };
-const OrderStatus = fn(4740).OrderStatus;
+const OrderStatus = fn(4772).OrderStatus;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/checkout/utils/OrderUtils.native.tsx");
 

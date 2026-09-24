@@ -1,12 +1,12 @@
-// Module ID: 16028
-// Function ID: 16029
+// Module ID: 16038
+// Function ID: 16039
 // Name: DevToolsPerformanceTestingScreen
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 1488, 1616, 15847, 5903, 5822, 14847, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 1488, 1616, 15857, 5935, 5854, 14885, 2]
 
-// Module 16028 (DevToolsPerformanceTestingScreen)
+// Module 16038 (DevToolsPerformanceTestingScreen)
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14847 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14885 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 require = fn;
 const ScrollView = fn(17).ScrollView;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: nativeDefault.space.PX_16 } };
 let closure_6 = createStyles.createStyles(obj);
 const ReactCompilerGating = fn(558);
@@ -39,7 +39,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const _Object = Object;
-    const entries = Object.entries(tmp(15847).PerformanceTestingScreens);
+    const entries = Object.entries(tmp(15857).PerformanceTestingScreens);
     cResult[2] = entries;
     let arr = entries;
   } else {
@@ -50,9 +50,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       hasIcons: true,
       children: arr.map((item) => {
           [screenKey, { headerTitle, Icon }] = item;
-          return jsx(navigation(5822).TableRow, {
+          return jsx(navigation(5854).TableRow, {
             label: headerTitle,
-            icon: jsx(navigation(5822).TableRow.Icon, { IconComponent: Icon }),
+            icon: jsx(navigation(5854).TableRow.Icon, { IconComponent: Icon }),
             arrow: true,
             onPress() {
               if (null != navigation.push) {
@@ -65,13 +65,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }, screenKey);
         })
     };
-    const tmp11 = jsx(tmp(5903).TableRowGroup, {
+    const tmp11 = jsx(tmp(5935).TableRowGroup, {
       hasIcons: true,
       children: arr.map((item) => {
           [screenKey, { headerTitle, Icon }] = item;
-          return jsx(navigation(5822).TableRow, {
+          return jsx(navigation(5854).TableRow, {
             label: headerTitle,
-            icon: jsx(navigation(5822).TableRow.Icon, { IconComponent: Icon }),
+            icon: jsx(navigation(5854).TableRow.Icon, { IconComponent: Icon }),
             arrow: true,
             onPress() {
               if (null != navigation.push) {
@@ -114,9 +114,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const entries = Object.entries(require("DevToolsScreens").PerformanceTestingScreens);
   obj4.children = entries.map((item) => {
     [tmp, ] = item;
-    return jsx(screenKey(5822).TableRow, {
+    return jsx(screenKey(5854).TableRow, {
       label: tmp2,
-      icon: jsx(screenKey(5822).TableRow.Icon, { IconComponent: tmp3 }),
+      icon: jsx(screenKey(5854).TableRow.Icon, { IconComponent: tmp3 }),
       arrow: true,
       onPress() {
         if (null != screenKey.push) {

@@ -1,9 +1,9 @@
-// Module ID: 16036
-// Function ID: 16037
+// Module ID: 16046
+// Function ID: 16047
 // Name: useBenchmarkResults
 // Dependencies: [32, 19, 558, 568, 2]
 
-// Module 16036 (useBenchmarkResults)
+// Module 16046 (useBenchmarkResults)
 import c from "c" /* 568 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

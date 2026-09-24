@@ -1,13 +1,13 @@
-// Module ID: 13872
-// Function ID: 13873
+// Module ID: 13908
+// Function ID: 13909
 // Name: GuildBoostingMarketingFaq
-// Dependencies: [32, 19, 17, 1078, 21, 4758, 7645, 580, 1119, 2112, 558, 568, 4754, 5341, 1181, 13873, 2]
+// Dependencies: [32, 19, 17, 1078, 21, 4790, 7677, 580, 1119, 2112, 558, 568, 4786, 5373, 1181, 13909, 2]
 
-// Module 13872 (GuildBoostingMarketingFaq)
+// Module 13908 (GuildBoostingMarketingFaq)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import _modDef13873 from "module_13873" /* 13873 */;
+import _modDef13909 from "module_13909" /* 13909 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,9 +18,9 @@ const View = fn(17).View;
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
-let obj2 = { wrapper: { alignSelf: "center", marginTop: 50, marginBottom: fn(7645).VISIBILITY_OFFSET, maxWidth: 800, paddingHorizontal: 16, width: "100%" }, content: null, heading: null, list: null, listItem: null, questionWrapper: null, questionWrapperExpanded: null, question: null, questionIcon: null, questionIconExpanded: null, answer: null };
-let obj3 = { alignSelf: "center", marginTop: 50, marginBottom: fn(7645).VISIBILITY_OFFSET, maxWidth: 800, paddingHorizontal: 16, width: "100%" };
+const createStyles = fn(4790);
+let obj2 = { wrapper: { alignSelf: "center", marginTop: 50, marginBottom: fn(7677).VISIBILITY_OFFSET, maxWidth: 800, paddingHorizontal: 16, width: "100%" }, content: null, heading: null, list: null, listItem: null, questionWrapper: null, questionWrapperExpanded: null, question: null, questionIcon: null, questionIconExpanded: null, answer: null };
+let obj3 = { alignSelf: "center", marginTop: 50, marginBottom: fn(7677).VISIBILITY_OFFSET, maxWidth: 800, paddingHorizontal: 16, width: "100%" };
 obj2.content = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderRadius: nativeDefault.radii.sm, paddingHorizontal: 16, paddingVertical: 28 };
 obj2.heading = { marginBottom: 20, textAlign: "center" };
 let obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderRadius: nativeDefault.radii.sm, paddingHorizontal: 16, paddingVertical: 28 };
@@ -162,7 +162,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp4.heading) {
     let obj2 = { style: heading, variant: "heading-xxl/bold", children: first1 };
-    const tmp11 = closure_7(tmp(4754).Heading, obj2);
+    const tmp11 = closure_7(tmp(4786).Heading, obj2);
     cResult[1] = tmp4.heading;
     cResult[2] = tmp11;
     let tmp9 = tmp11;
@@ -326,8 +326,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (tmp) {
         str = "interactive-text-active";
       }
-      items1 = [closure_1_7(closure_0(4754).Text, { color: str, style: closure_0.question, variant: "text-md/normal", children: getQuestion.getQuestion() }), ];
-      const obj4 = { source: _modDef13873, style: null };
+      items1 = [closure_1_7(closure_0(4786).Text, { color: str, style: closure_0.question, variant: "text-md/normal", children: getQuestion.getQuestion() }), ];
+      const obj4 = { source: _modDef13909, style: null };
       const items2 = [closure_0.questionIcon, ];
       let questionIconExpanded = tmp;
       if (tmp) {
@@ -337,10 +337,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj4.style = items2;
       items1[1] = closure_1_7(closure_0(1181).Icon, obj4);
       obj2.children = items1;
-      const items3 = [closure_1_8(closure_0(5341).PressableOpacity, obj2), ];
+      const items3 = [closure_1_8(closure_0(5373).PressableOpacity, obj2), ];
       if (tmp) {
         const obj5 = { style: tmp4.answer, color: "interactive-text-active", variant: "text-sm/normal", children: getQuestion.getAnswer() };
-        tmp = tmp7(tmp5(4754).Text, obj5);
+        tmp = tmp7(tmp5(4786).Text, obj5);
       }
       items3[1] = tmp;
       obj.children = items3;

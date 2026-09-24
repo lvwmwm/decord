@@ -1,21 +1,21 @@
-// Module ID: 11692
-// Function ID: 11693
+// Module ID: 11728
+// Function ID: 11729
 // Name: LeaveConnectionRoleActionSheet
-// Dependencies: [19, 17, 21, 4758, 558, 568, 4754, 1119, 5188, 7397, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 4786, 1119, 5220, 7429, 2]
 
-// Module 11692 (LeaveConnectionRoleActionSheet)
+// Module 11728 (LeaveConnectionRoleActionSheet)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ container: { padding: 12 }, marginTop: { marginTop: 8 }, button: { marginTop: 8, marginBottom: 16 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -29,7 +29,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onLeaveRolePress
     const obj2 = { variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
     const intl = tmp(1119).intl;
     obj2.children = intl.string(tmp(1119).t.vytvJF);
-    const tmp7 = React3(tmp(4754).Text, obj2);
+    const tmp7 = React3(tmp(4786).Text, obj2);
     cResult[0] = tmp7;
     let first = tmp7;
   } else {
@@ -45,7 +45,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onLeaveRolePress
   }
   if (cResult[2] !== tmp4.marginTop) {
     const obj3 = { style: tmp4.marginTop, variant: "text-md/normal", color: "text-default", children: tmp8 };
-    const tmp12 = React3(tmp(4754).Text, obj3);
+    const tmp12 = React3(tmp(4786).Text, obj3);
     cResult[2] = tmp4.marginTop;
     cResult[3] = tmp12;
     let tmp10 = tmp12;
@@ -62,7 +62,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onLeaveRolePress
   }
   if (cResult[5] !== onLeaveRolePressed) {
     const obj4 = { variant: "destructive", onPress: onLeaveRolePressed, text: tmp13, grow: true };
-    const tmp17 = React3(tmp(5188).Button, obj4);
+    const tmp17 = React3(tmp(5220).Button, obj4);
     cResult[5] = onLeaveRolePressed;
     cResult[6] = tmp17;
     let tmp15 = tmp17;
@@ -86,7 +86,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onLeaveRolePress
     const items = [first, tmp10, tmp18];
     obj6.children = items;
     obj5.children = React4(View, obj6);
-    const tmp24 = React3(tmp(7397).BottomSheet, obj5);
+    const tmp24 = React3(tmp(7429).BottomSheet, obj5);
     cResult[10] = tmp4.container;
     cResult[11] = tmp10;
     cResult[12] = tmp18;

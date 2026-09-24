@@ -1,16 +1,16 @@
-// Module ID: 8878
-// Function ID: 8879
+// Module ID: 8910
+// Function ID: 8911
 // Name: RowButton
-// Dependencies: [109, 19, 21, 4758, 580, 558, 568, 5828, 5822, 4497, 8879, 5824, 2]
+// Dependencies: [109, 19, 21, 4790, 580, 558, 568, 5860, 5854, 4529, 8911, 5856, 2]
 
-// Module 8878 (RowButton)
+// Module 8910 (RowButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import TableRow from "TableRow" /* 5822 */;
-import Card from "Card" /* 5824 */;
-import TableRowIcon from "TableRowIcon" /* 5828 */;
-import BackgroundBlurView from "BackgroundBlurView" /* 8879 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import TableRow from "TableRow" /* 5854 */;
+import Card from "Card" /* 5856 */;
+import TableRowIcon from "TableRowIcon" /* 5860 */;
+import BackgroundBlurView from "BackgroundBlurView" /* 8911 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ require = fn;
 let closure_3 = ["arrow", "disabled", "variant", "icon", "onPress", "experimental_withBlurBackground"];
 let closure_4 = ["experimental_withBlurBackground", "onPress", "disabled", "children"];
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles(() => {
   const obj = { card: null, cardWithBlur: null };
   const obj2 = { padding: "y", borderTopStartRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, borderTopEndRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, borderBottomStartRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, borderBottomEndRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS };
@@ -75,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[8] === str3) {
       }
       const obj2 = { source: tmp5, variant: str3 };
-      const tmp19 = jsx(tmp(5828).TableRowIcon, { source: tmp5, variant: str3 });
+      const tmp19 = jsx(tmp(5860).TableRowIcon, { source: tmp5, variant: str3 });
       cResult[8] = str3;
       cResult[9] = tmp5;
       cResult[10] = tmp19;
@@ -297,7 +297,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp17.variant = "control-secondary";
     tmp17.border = "control-secondary";
     tmp17.children = tmp4;
-    const tmp21 = jsx(tmp(5824).InternalCard, tmp17);
+    const tmp21 = jsx(tmp(5856).InternalCard, tmp17);
     cResult[30] = tmp4;
     cResult[31] = tmp5;
     cResult[32] = tmp7;
@@ -360,9 +360,9 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   return jsx(Card.InternalCard, obj4);
 });
-tmp2.Icon = fn(5828).TableRowIcon;
+tmp2.Icon = fn(5860).TableRowIcon;
 const size = fn(2);
 let result = size.fileFinishedImporting("design/components/TableRow/native/RowButton.native.tsx");
 
-export const RowButtonIconProps = fn(5828).TableRowIconProps;
+export const RowButtonIconProps = fn(5860).TableRowIconProps;
 export const RowButton = tmp2;

@@ -1,11 +1,11 @@
-// Module ID: 7433
-// Function ID: 7434
+// Module ID: 7465
+// Function ID: 7466
 // Name: useRoleIconProps
-// Dependencies: [19, 2103, 2067, 558, 568, 504, 7434, 2]
+// Dependencies: [19, 2103, 2067, 558, 568, 504, 7466, 2]
 // Exports: computeRoleIconRole, getRoleIconProps
 
-// Module 7433 (useRoleIconProps)
-import RoleIconUtils from "RoleIconUtils" /* 7434 */;
+// Module 7465 (useRoleIconProps)
+import RoleIconUtils from "RoleIconUtils" /* 7466 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2103 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -228,14 +228,14 @@ export const useRoleIconPropsForPreview = ReactCompilerGating.isReactCompilerEna
     if (cResult[5] !== stateFromStores) {
       let tmp12;
       if (null != stateFromStores) {
-        const roleIconData = tmp(7434).getRoleIconData(stateFromStores, undefined);
+        const roleIconData = tmp(7466).getRoleIconData(stateFromStores, undefined);
         if (null != roleIconData) {
           const obj2 = { src: roleIconData.customIconSrc, name: null, roleId: null, size: "Array", unicodeEmoji: 0 };
           ({ name: obj4.name, id: obj4.roleId } = stateFromStores);
           obj2.unicodeEmoji = roleIconData.unicodeEmoji;
           tmp12 = obj2;
         }
-        const tmpResult2 = tmp(7434);
+        const tmpResult2 = tmp(7466);
       }
       cResult[5] = stateFromStores;
       cResult[6] = tmp12;

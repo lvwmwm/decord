@@ -1,13 +1,13 @@
-// Module ID: 6584
-// Function ID: 6585
+// Module ID: 6616
+// Function ID: 6617
 // Name: PingPongPaddleIllocon
-// Dependencies: [21, 558, 568, 6585, 5802, 2]
+// Dependencies: [21, 558, 568, 6617, 5834, 2]
 
-// Module 6584 (PingPongPaddleIllocon)
+// Module 6616 (PingPongPaddleIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6585 from "module_6585" /* 6585 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6617 from "module_6617" /* 6617 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const PingPongPaddleIllocon = ReactCompilerGating.isReactCompilerEnabled(
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6585 };
+    const obj2 = { uri: _modDef6617 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const PingPongPaddleIllocon = ReactCompilerGating.isReactCompilerEnabled(
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6585 };
+  const obj2 = { uri: _modDef6617 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

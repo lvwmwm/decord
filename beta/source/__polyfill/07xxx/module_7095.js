@@ -1,143 +1,71 @@
 // Module ID: 7095
 // Function ID: 7096
-// Dependencies: []
+// Dependencies: [19, 17, 21, 7096, 7097]
 
 // Module 7095
+import _mod7097 from "module_7097" /* 7097 */;
+import noop_mod from "module_19" /* 19 */;
+import get_ActivityIndicator from "module_17" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
 
-export default function _iterableToArrayLimit(iterable, arg1) {
-  let tmp7 = null;
-  if (null != iterable) {
-    const _Symbol = Symbol;
-    let prop = typeof Symbol !== "undefined";
-    if (typeof Symbol !== "undefined") {
-      const _Symbol2 = Symbol;
-      prop = iterable[Symbol.iterator];
-    }
-    if (!prop) {
-      prop = iterable[Symbol.iterator];
-    }
-    tmp7 = prop;
+let noop = noop_mod;
+const useMemo = noop.useMemo;
+let noop = noop_mod;
+({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
+const memoResult = noop.memo(function BottomSheetHandleComponent(style) {
+  style = style.style;
+  const indicatorStyle = style.indicatorStyle;
+  let DEFAULT_ACCESSIBLE = style.accessible;
+  if (DEFAULT_ACCESSIBLE === undefined) {
+    DEFAULT_ACCESSIBLE = style(indicatorStyle[3]).DEFAULT_ACCESSIBLE;
   }
-  if (null != tmp7) {
-    let flag2 = false;
-    try {
-      const items = [];
-      try {
-        const call = tmp10.call;
-        if (typeof call === "unknown") {
-          let iter = tmp10();
-        } else {
-          iter = call(iterable);
-        }
-        const next = iter.next;
-        if (0 === arg1) {
-          const _Object = Object;
-          if (Object(obj2) !== obj2) {
-            try {
-              if (flag2) {
-                throw tmp6;
-              }
-            } catch (tmp23) {
-              if (tmp2) {
-                throw tmp;
-              } else {
-                throw tmp23;
-              }
-            }
-          } else {
-            let flag3 = false;
-          }
-        } else {
-          const call3 = next.call;
-          if (typeof call3 === "unknown") {
-            let iter2 = next();
-          } else {
-            iter2 = call3(obj2);
-          }
-          const done = iter2.done;
-          flag3 = done;
-          if (!done) {
-            items.push(iter3.value);
-            if (items.length !== arg1) {
-              while (true) {
-                let flag4 = true;
-                let call2 = next.call;
-                if (typeof call2 === "unknown") {
-                  let iter4 = next();
-                } else {
-                  iter4 = call2(obj2);
-                }
-                let done2 = iter4.done;
-                flag3 = done2;
-                if (done2) {
-                  break;
-                } else {
-                  let arr3 = items.push(iter5.value);
-                  if (items.length !== arg1) {
-                    continue;
-                  } else {
-                    break;
-                  }
-                  break;
-                }
-              }
-            }
-          }
-        }
-        try {
-          if (!flag3) {
-            if (null != obj2.return) {
-              const returnResult = obj2.return();
-              const _Object2 = Object;
-              if (Object(returnResult) !== returnResult) {
-                if (flag2) {
-                  throw tmp6;
-                }
-              }
-            }
-          }
-          if (flag2) {
-            throw tmp6;
-          } else {
-            return items;
-          }
-        } catch (tmp35) {
-          if (tmp2) {
-            throw tmp;
-          } else {
-            throw tmp35;
-          }
-        }
-      } catch (tmp6) {
-        flag2 = true;
-      }
-    } catch (tmp38) {
-      try {
-        if (!tmp4) {
-          if (tmp5 != obj.return) {
-            const returnResult1 = obj.return();
-            const _Object3 = Object;
-            if (Object(returnResult1) !== returnResult1) {
-              if (tmp2) {
-                throw tmp;
-              } else {
-                return tmp3;
-              }
-            }
-          }
-        }
-        if (tmp2) {
-          throw tmp;
-        } else {
-          throw tmp38;
-        }
-      } catch (tmp47) {
-        if (tmp2) {
-          throw tmp;
-        } else {
-          throw tmp47;
-        }
-      }
-    }
+  let DEFAULT_ACCESSIBILITY_ROLE = style.accessibilityRole;
+  if (DEFAULT_ACCESSIBILITY_ROLE === undefined) {
+    DEFAULT_ACCESSIBILITY_ROLE = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_ROLE;
   }
-};
+  let DEFAULT_ACCESSIBILITY_LABEL = style.accessibilityLabel;
+  if (DEFAULT_ACCESSIBILITY_LABEL === undefined) {
+    DEFAULT_ACCESSIBILITY_LABEL = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_LABEL;
+  }
+  let DEFAULT_ACCESSIBILITY_HINT = style.accessibilityHint;
+  if (DEFAULT_ACCESSIBILITY_HINT === undefined) {
+    DEFAULT_ACCESSIBILITY_HINT = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_HINT;
+  }
+  let items = [style];
+  const items1 = [indicatorStyle];
+  const obj = {
+    style: useMemo(() => {
+      const items = [_mod7097.styles.container, React3.flatten(style)];
+      return items;
+    }, items),
+    accessible: null,
+    accessibilityRole: null,
+    accessibilityLabel: null,
+    accessibilityHint: null,
+    collapsable: true,
+    children: null
+  };
+  const tmp9 = useMemo(() => {
+    const items = [_mod7097.styles.container, React3.flatten(style)];
+    return items;
+  }, items);
+  obj.accessible = DEFAULT_ACCESSIBLE;
+  obj.accessibilityRole = DEFAULT_ACCESSIBILITY_ROLE;
+  obj.accessibilityLabel = DEFAULT_ACCESSIBILITY_LABEL;
+  obj.accessibilityHint = DEFAULT_ACCESSIBILITY_HINT;
+  const items2 = [
+    closure_5(closure_4, {
+      style: useMemo(() => {
+        const items = [_mod7097.styles.indicator, React3.flatten(indicatorStyle)];
+        return items;
+      }, items1)
+    }),
+    style.children
+  ];
+  obj.children = items2;
+  return closure_6(closure_4, obj);
+});
+memoResult.displayName = "BottomSheetHandle";
+
+export default memoResult;

@@ -1,17 +1,9 @@
 // Module ID: 6885
 // Function ID: 6886
-// Dependencies: []
-// Exports: noop, workletNoop
+// Dependencies: [1125]
 
 // Module 6885
-const fn = function o() {
+import registerAsset from "module_1125" /* 1125 */;
 
-};
-fn.__closure = {};
-fn.__workletHash = 16791771801238;
-fn.__initData = { code: "function pnpm_noopTs1(){}" };
 
-export () => {
-
-}
-export const workletNoop = fn;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "737159bf8222c1bab03c6bbf25897f2f", name: "CircleXIcon-primary", type: "png" });

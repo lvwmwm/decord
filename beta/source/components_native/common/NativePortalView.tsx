@@ -1,11 +1,11 @@
-// Module ID: 8544
-// Function ID: 8545
+// Module ID: 8576
+// Function ID: 8577
 // Name: NativePortalView
-// Dependencies: [109, 19, 17, 21, 4758, 1368, 8545, 558, 568, 8546, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 1368, 8577, 558, 568, 8578, 2]
 // Exports: createPortalControls, isPortalExpired, markPortalAlive
 
-// Module 8544 (NativePortalView)
-import PortalViewNativeComponentDefault from "PortalViewNativeComponent" /* 8545 */;
+// Module 8576 (NativePortalView)
+import PortalViewNativeComponentDefault from "PortalViewNativeComponent" /* 8577 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ let closure_3 = ["style", "children", "paused", "muted", "onLoad"];
 get_ActivityIndicator = fn(17);
 ({ NativeModules, requireNativeComponent, NativeEventEmitter } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ base: { overflow: "hidden" } });
 const PlatformUtils = fn(1368);
 if (PlatformUtils.isAndroid()) {

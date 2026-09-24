@@ -1,27 +1,27 @@
-// Module ID: 13476
-// Function ID: 13477
+// Module ID: 13512
+// Function ID: 13513
 // Name: EditAvatarDecorationSection
-// Dependencies: [19, 17, 7794, 1402, 21, 4758, 13477, 558, 568, 13475, 13478, 7429, 9091, 2]
+// Dependencies: [19, 17, 7826, 1402, 21, 4790, 13513, 558, 568, 13511, 13514, 7461, 9123, 2]
 
-// Module 13476 (EditAvatarDecorationSection)
+// Module 13512 (EditAvatarDecorationSection)
 import c from "c" /* 568 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9091 */;
-import useAvatarDecorationSections from "useAvatarDecorationSections" /* 13475 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 13477 */;
-import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 13478 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9123 */;
+import useAvatarDecorationSections from "useAvatarDecorationSections" /* 13511 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 13513 */;
+import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 13514 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const isAvatarDecorationRecord = fn(7794).isAvatarDecorationRecord;
+const isAvatarDecorationRecord = fn(7826).isAvatarDecorationRecord;
 const AVATAR_DECORATION_SIZE = fn(1402).AVATAR_DECORATION_SIZE;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
-let obj = { row: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: fn(13477).GUTTER_SIZE }, rowSpacer: null };
-let obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: fn(13477).GUTTER_SIZE };
-obj.rowSpacer = { height: fn(13477).GUTTER_SIZE };
+const createStyles = fn(4790);
+let obj = { row: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: fn(13513).GUTTER_SIZE }, rowSpacer: null };
+let obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: fn(13513).GUTTER_SIZE };
+obj.rowSpacer = { height: fn(13513).GUTTER_SIZE };
 let closure_10 = createStyles.createStyles(obj);
 let ReactCompilerGating = fn(558);
 const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((setSelectedAvatarDecoration) => {
@@ -100,10 +100,10 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((se
   const mapped = substr.map((avatarDecoration, index) => {
     if (avatarDecoration === useAvatarDecorationSections.NONE_ITEM) {
       const obj2 = { size, onPress, isSelected, asDefault: null != guildId };
-      return React5(tmp(13478).EditCollectiblesListItemNone, obj2, "none");
-    } else if (avatarDecoration === tmp(13475).SHOP_ITEM) {
+      return React5(tmp(13514).EditCollectiblesListItemNone, obj2, "none");
+    } else if (avatarDecoration === tmp(13511).SHOP_ITEM) {
       const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_AVATAR_DECORATION_SHEET };
-      return React5(tmp(13478).EditCollectiblesListItemShop, obj3, "shop");
+      return React5(tmp(13514).EditCollectiblesListItemShop, obj3, "shop");
     } else if (isAvatarDecorationRecord(avatarDecoration)) {
       const obj4 = { avatarDecoration, isSelected: selectedSkuId === avatarDecoration.skuId, setSelectedAvatarDecoration, isTryItOut, size };
       return React5(memoResult1, obj4, avatarDecoration.skuId);
@@ -145,10 +145,10 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((se
   obj2.children = substr.map((avatarDecoration, index) => {
     if (avatarDecoration === useAvatarDecorationSections.NONE_ITEM) {
       const obj2 = { size, onPress, isSelected: null == closure_1_0, asDefault: null != dependencyMap };
-      return React5(tmp(13478).EditCollectiblesListItemNone, obj2, "none");
-    } else if (avatarDecoration === tmp(13475).SHOP_ITEM) {
+      return React5(tmp(13514).EditCollectiblesListItemNone, obj2, "none");
+    } else if (avatarDecoration === tmp(13511).SHOP_ITEM) {
       const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_AVATAR_DECORATION_SHEET };
-      return React5(tmp(13478).EditCollectiblesListItemShop, obj3, "shop");
+      return React5(tmp(13514).EditCollectiblesListItemShop, obj3, "shop");
     } else if (isAvatarDecorationRecord(avatarDecoration)) {
       const obj4 = { avatarDecoration, isSelected: closure_1_0 === avatarDecoration.skuId, setSelectedAvatarDecoration, isTryItOut, size };
       return React5(memoResult1, obj4, avatarDecoration.skuId);

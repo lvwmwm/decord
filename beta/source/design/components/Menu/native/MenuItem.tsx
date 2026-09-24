@@ -1,19 +1,19 @@
-// Module ID: 14404
-// Function ID: 14405
+// Module ID: 14442
+// Function ID: 14443
 // Name: MenuItem
-// Dependencies: [19, 21, 4758, 558, 568, 14402, 5190, 7387, 7385, 2]
+// Dependencies: [19, 21, 4790, 558, 568, 14440, 5222, 7419, 7417, 2]
 
-// Module 14404 (MenuItem)
+// Module 14442 (MenuItem)
 import c from "c" /* 568 */;
-import IconDefault from "Icon" /* 5190 */;
-import FormRowDefault from "FormRow" /* 7385 */;
-import FormLabelDefault from "FormLabel" /* 7387 */;
-import Menu from "Menu" /* 14402 */;
+import IconDefault from "Icon" /* 5222 */;
+import FormRowDefault from "FormRow" /* 7417 */;
+import FormLabelDefault from "FormLabel" /* 7419 */;
+import Menu from "Menu" /* 14440 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ formIcon: { width: 20, height: 20 }, formLabel: { fontSize: 14, fontWeight: "500" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

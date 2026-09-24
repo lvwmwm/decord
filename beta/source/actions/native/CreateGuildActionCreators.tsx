@@ -1,10 +1,10 @@
-// Module ID: 12893
-// Function ID: 12894
+// Module ID: 12929
+// Function ID: 12930
 // Name: CreateGuildActionCreators
-// Dependencies: [2100, 1078, 10055, 2]
+// Dependencies: [2100, 1078, 10094, 2]
 // Exports: showInstantInviteModal
 
-// Module 12893 (CreateGuildActionCreators)
+// Module 12929 (CreateGuildActionCreators)
 import GuildChannelStore from "GuildChannelStore" /* 2100 */;
 
 const require = fn;

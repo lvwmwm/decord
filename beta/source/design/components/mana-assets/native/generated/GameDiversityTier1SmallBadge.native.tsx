@@ -1,13 +1,13 @@
-// Module ID: 6292
-// Function ID: 6293
+// Module ID: 6324
+// Function ID: 6325
 // Name: GameDiversityTier1SmallBadge
-// Dependencies: [21, 558, 568, 6293, 5802, 2]
+// Dependencies: [21, 558, 568, 6325, 5834, 2]
 
-// Module 6292 (GameDiversityTier1SmallBadge)
+// Module 6324 (GameDiversityTier1SmallBadge)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6293 from "module_6293" /* 6293 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6325 from "module_6325" /* 6325 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const GameDiversityTier1SmallBadge = ReactCompilerGating.isReactCompilerE
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6293 };
+    const obj2 = { uri: _modDef6325 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const GameDiversityTier1SmallBadge = ReactCompilerGating.isReactCompilerE
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6293 };
+  const obj2 = { uri: _modDef6325 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

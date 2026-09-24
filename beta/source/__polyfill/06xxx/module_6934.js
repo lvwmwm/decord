@@ -1,57 +1,178 @@
 // Module ID: 6934
 // Function ID: 6935
-// Dependencies: [1641, 4496, 6923, 6935, 6896]
+// Dependencies: [109, 19, 17, 21, 6935, 7019, 7021]
+// Exports: BorderlessButton, RectButton
 
 // Module 6934
-import cancelAnimation from "cancelAnimation" /* 1641 */;
-import reactNativeWorkletsCompat from "reactNativeWorkletsCompat" /* 4496 */;
-import tagMessage from "tagMessage" /* 6896 */;
-import ghQueueMicrotask from "ghQueueMicrotask" /* 6923 */;
-import _mod6935 from "module_6935" /* 6935 */;
+import ButtonComponentDefault from "ButtonComponent" /* 7019 */;
+import _mod7021 from "module_7021" /* 7021 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import noop from "module_19" /* 19 */;
+import module_6935 from "module_6935" /* 6935 */;
 
-try {
-  const _module = cancelAnimation;
-  try {
-    const _module1 = reactNativeWorkletsCompat;
-    if (_module1 != null) {
-      const fn = function t() {
-
-      };
-      fn.__closure = {};
-      fn.__workletHash = 1792171573139;
-      fn.__initData = { code: "function pnpm_reanimatedWrapperTs1(){}" };
-      _module1.scheduleOnUI(fn);
-    }
-    const _module2 = ghQueueMicrotask;
-    _module2.ghQueueMicrotask(() => {
-      const NativeProxy = _mod6935.NativeProxy;
-      if (!NativeProxy.installUIRuntimeBindings()) {
-        const _console = console;
-        console.warn(tagMessage.tagMessage("Failed to install UI runtime bindings. Please report this at https://github.com/software-mansion/react-native-gesture-handler/issues."));
-        const tmpResult = tagMessage;
-      }
-    });
-    let useSharedValue;
-    if (_module != null) {
-      useSharedValue = _module.useSharedValue;
-    }
-    let setGestureState = undefined === _module;
-    if (!setGestureState) {
-      setGestureState = _module.setGestureState;
-    }
-    if (!setGestureState) {
-      const fn2 = function o() {
-        console.warn(tagMessage.tagMessage("Please use newer version of react-native-reanimated in order to control state of the gestures."));
-      };
-      const obj = { tagMessage: tagMessage.tagMessage };
-      fn2.__closure = obj;
-      fn2.__workletHash = 3596069664305;
-      fn2.__initData = { code: "function pnpm_reanimatedWrapperTs2(){const{tagMessage}=this.__closure;console.warn(tagMessage('Please use newer version of react-native-reanimated in order to control state of the gestures.'));}" };
-      _module.setGestureState = fn2;
-      const obj2 = { code: "function pnpm_reanimatedWrapperTs2(){const{tagMessage}=this.__closure;console.warn(tagMessage('Please use newer version of react-native-reanimated in order to control state of the gestures.'));}" };
-    }
-    exports.Reanimated = _module;
-  } catch (err) {
+require = fn;
+let closure_2 = ["onLongPress", "onPress", "onActiveStateChange", "style"];
+let closure_3 = ["children", "style", "activeOpacity", "underlayColor"];
+let closure_4 = ["children", "style", "ref"];
+const useRef = fn(19).useRef;
+get_ActivityIndicator = fn(17);
+const Animated = get_ActivityIndicator.Animated;
+({ Platform, StyleSheet } = get_ActivityIndicator);
+const jsxProd = fn(21);
+({ jsx: closure_9, jsxs: c10 } = jsxProd);
+const ButtonComponent = module_6935(ButtonComponentDefault, { shouldCancelWhenOutside: false, shouldActivateOnStart: false });
+class RawButton {
+  constructor(arg0) {
+    obj = {};
+    merged = Object.assign(global);
+    obj.needsOffscreenAlphaCompositing = true;
+    return jsx(closure_11, obj);
   }
-} catch (err) {
 }
+class BaseButton {
+  constructor(arg0) {
+    closure_0 = global;
+    closure_1 = useRef(false);
+    closure_2 = useRef(undefined);
+    num = global.delayLongPress;
+    if (num == null) {
+      num = 600;
+    }
+    c3 = num;
+    ({ onLongPress, onPress, onActiveStateChange } = global);
+    tmp = closure_5(global, closure_2);
+    wrappedLongPress = function wrappedLongPress() {
+      closure_1.current = true;
+      if (closure_1_4 != null) {
+        tmp();
+      }
+    };
+    obj = closure_0(closure_1[6]);
+    tVProps = obj.getTVProps(tmp);
+    obj1 = { style: null };
+    items = [, ];
+    items[0] = global.style;
+    items[1] = false;
+    obj1.style = items;
+    merged = Object.assign(tmp);
+    merged1 = Object.assign(tVProps);
+    obj1.onBegin = function onBegin(pointerInside) {
+      if (pointerInside.pointerInside) {
+        if (useRef != null) {
+          tmp(true);
+        }
+        closure_1.current = false;
+        if (closure_1_4) {
+          const _setTimeout = setTimeout;
+          closure_2.current = setTimeout(wrappedLongPress, num);
+        }
+        const onBegin = delayLongPress.onBegin;
+        if (onBegin != null) {
+          onBegin(pointerInside);
+        }
+      }
+    };
+    obj1.onActivate = function onActivate(pointerInside) {
+      pointerInside = pointerInside.pointerInside;
+      if (!pointerInside) {
+        pointerInside = undefined === ref2.current;
+      }
+      if (!pointerInside) {
+        const _clearTimeout = clearTimeout;
+        clearTimeout(ref2.current);
+        ref2.current = undefined;
+      }
+      const onActivate = delayLongPress.onActivate;
+      if (onActivate != null) {
+        onActivate(pointerInside);
+      }
+    };
+    obj1.onDeactivate = function onDeactivate(dependencyMap) {
+      const onDeactivate = delayLongPress.onDeactivate;
+      if (onDeactivate != null) {
+        onDeactivate(dependencyMap);
+      }
+    };
+    obj1.onFinalize = function onFinalize(canceled) {
+      if (useRef != null) {
+        tmp(false);
+      }
+      let current = canceled.canceled;
+      if (!current) {
+        current = ref.current;
+      }
+      if (!current) {
+        if (_objectWithoutProperties != null) {
+          tmp4(canceled.pointerInside);
+        }
+      }
+      if (undefined !== ref2.current) {
+        const _clearTimeout = clearTimeout;
+        clearTimeout(tmp6.current);
+        tmp6.current = undefined;
+      }
+      const onFinalize = delayLongPress.onFinalize;
+      if (onFinalize != null) {
+        onFinalize(canceled);
+      }
+    };
+    return jsx(RawButton, obj1);
+  }
+}
+let closure_14 = Animated.createAnimatedComponent(BaseButton);
+const underlay = StyleSheet.create({ underlay: { position: "absolute", left: 0, right: 0, bottom: 0, top: 0 } });
+
+export { RawButton };
+export { BaseButton };
+export const RectButton = (children) => {
+  let onActiveStateChange = children;
+  ({ style, activeOpacity, underlayColor } = children);
+  let str = "black";
+  if (undefined !== underlayColor) {
+    str = underlayColor;
+  }
+  value = new Animated.Value(0);
+  if (style == null) {
+    style = {};
+  }
+  const flattenResult = StyleSheet.flatten(style);
+  const obj = {};
+  const merged = Object.assign(_objectWithoutProperties(children, closure_3));
+  obj.style = flattenResult;
+  obj.onActiveStateChange = function onActiveStateChange(arg0) {
+    onActiveStateChange = onActiveStateChange.onActiveStateChange;
+    if (onActiveStateChange != null) {
+      onActiveStateChange(arg0);
+    }
+  };
+  const obj2 = { style: null };
+  const items = [underlay.underlay, { opacity: useRef(value).current, backgroundColor: str, borderRadius: flattenResult.borderRadius, borderTopLeftRadius: flattenResult.borderTopLeftRadius, borderTopRightRadius: flattenResult.borderTopRightRadius, borderBottomLeftRadius: flattenResult.borderBottomLeftRadius, borderBottomRightRadius: flattenResult.borderBottomRightRadius }];
+  obj2.style = items;
+  const items1 = [options(Animated.View, obj2), children.children];
+  obj.children = items1;
+  return v65535(BaseButton, obj);
+};
+export const BorderlessButton = (ref) => {
+  let onActiveStateChange = ref;
+  value = new Animated.Value(1);
+  const current = useRef(value).current;
+  ref = ref.ref;
+  ({ children, style } = ref);
+  const obj = { borderless: true };
+  const merged = Object.assign(_objectWithoutProperties(ref, closure_4));
+  if (ref == null) {
+    ref = null;
+  }
+  obj.ref = ref;
+  obj.onActiveStateChange = function onActiveStateChange(arg0) {
+    onActiveStateChange = onActiveStateChange.onActiveStateChange;
+    if (onActiveStateChange != null) {
+      onActiveStateChange(arg0);
+    }
+  };
+  const items = [style, false];
+  obj.style = items;
+  obj.children = children;
+  return options(closure_14, obj);
+};
+export const PureNativeButton = ButtonComponentDefault;

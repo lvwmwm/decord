@@ -1,7 +1,7 @@
 // Module ID: 502
 // Function ID: 503
 // Name: AuthenticationStore
-// Dependencies: [503, 1077, 1078, 1103, 3, 1104, 510, 1105, 1245, 14473, 577, 14474, 7189, 4660, 1258, 14475, 1235, 12564, 504, 11606, 14476, 7909, 1982, 2]
+// Dependencies: [503, 1077, 1078, 1103, 3, 1104, 510, 1105, 1245, 14511, 577, 14512, 7221, 4692, 1258, 14513, 1235, 12600, 504, 11642, 14514, 7941, 1982, 2]
 
 // Module 502 (AuthenticationStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -13,14 +13,14 @@ import SentryUtilsDefault from "SentryUtils" /* 1235 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import FingerprintUtils from "FingerprintUtils" /* 1258 */;
 import Server from "Server" /* 1982 */;
-import APIErrorDefault from "APIError" /* 4660 */;
-import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 7189 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 7909 */;
-import ApexActionCreators from "ApexActionCreators" /* 11606 */;
-import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 12564 */;
-import fetchExperiments from "fetchExperiments" /* 14473 */;
-import awaitExperiments from "awaitExperiments" /* 14474 */;
-import ClientStateStoreStorage from "ClientStateStoreStorage" /* 14476 */;
+import APIErrorDefault from "APIError" /* 4692 */;
+import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 7221 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 7941 */;
+import ApexActionCreators from "ApexActionCreators" /* 11642 */;
+import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 12600 */;
+import fetchExperiments from "fetchExperiments" /* 14511 */;
+import awaitExperiments from "awaitExperiments" /* 14512 */;
+import ClientStateStoreStorage from "ClientStateStoreStorage" /* 14514 */;
 import BrowserHandoffStore from "BrowserHandoffStore" /* 503 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1077 */;
 import Dispatcher from "Dispatcher" /* 577 */;
@@ -74,7 +74,7 @@ function fetchFingerprint(arg0) {
           }
           const obj3 = { withGuildExperiments: true, headers: obj2, context: null };
           const obj5 = { location: null };
-          const tmpResult3 = tmp(14473);
+          const tmpResult3 = tmp(14511);
           obj5.location = tmp(1105).getFingerprintLocation();
           obj3.context = obj5;
           const experiments = tmpResult3.fetchExperiments(obj3);
@@ -347,7 +347,7 @@ const authenticationStore = new AuthenticationStore(Dispatcher, {
           const Storage3 = tmp4(510).Storage;
           const result1 = Storage3.set(analytics_installation, installation);
         }
-        tmp6Result = tmp6(14475);
+        tmp6Result = tmp6(14513);
       }
     }
     const Storage4 = tmp4(510).Storage;

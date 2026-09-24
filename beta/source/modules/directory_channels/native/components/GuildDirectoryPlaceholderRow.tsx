@@ -1,11 +1,11 @@
-// Module ID: 12484
-// Function ID: 12485
+// Module ID: 12520
+// Function ID: 12521
 // Name: GuildDirectoryPlaceholderRow
-// Dependencies: [19, 17, 21, 4758, 580, 5660, 558, 568, 12485, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 5692, 558, 568, 12521, 2]
 
-// Module 12484 (GuildDirectoryPlaceholderRow)
+// Module 12520 (GuildDirectoryPlaceholderRow)
 import nativeDefault from "native" /* 580 */;
-import getChatPlaceholderRowWidthDefault from "getChatPlaceholderRowWidth" /* 12485 */;
+import getChatPlaceholderRowWidthDefault from "getChatPlaceholderRowWidth" /* 12521 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -14,15 +14,15 @@ const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { row: { flexDirection: "row", padding: 16 }, rowInner: { flex: 1 }, placeholderAvatar: null, placeholderText: null, placeholderBody: null };
-let size = { width: 40, height: 40, borderRadius: nativeDefault.radii.sm, overflow: "hidden", marginRight: 16, backgroundColor: fn(5660).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
+let size = { width: 40, height: 40, borderRadius: nativeDefault.radii.sm, overflow: "hidden", marginRight: 16, backgroundColor: fn(5692).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
 obj.placeholderAvatar = size;
-obj.placeholderText = { height: 15, borderRadius: 5, backgroundColor: fn(5660).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
+obj.placeholderText = { height: 15, borderRadius: 5, backgroundColor: fn(5692).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
 obj.placeholderBody = { width: "100%", marginTop: 10 };
 let closure_6 = createStyles.createStyles(obj);
 const ReactCompilerGating = fn(558);
-let obj3 = { height: 15, borderRadius: 5, backgroundColor: fn(5660).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
+let obj3 = { height: 15, borderRadius: 5, backgroundColor: fn(5692).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
 size = fn(2);
 const result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryPlaceholderRow.tsx");
 

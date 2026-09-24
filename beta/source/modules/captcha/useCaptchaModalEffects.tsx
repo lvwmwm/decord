@@ -1,9 +1,9 @@
-// Module ID: 17710
-// Function ID: 17711
+// Module ID: 17720
+// Function ID: 17721
 // Name: useCaptchaModalEffects
-// Dependencies: [19, 1078, 558, 568, 5084, 5203, 1245, 2]
+// Dependencies: [19, 1078, 558, 568, 5116, 5235, 1245, 2]
 
-// Module 17710 (useCaptchaModalEffects)
+// Module 17720 (useCaptchaModalEffects)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import noop from "module_19" /* 19 */;
 
@@ -40,7 +40,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onReject) => {
   } else {
     tmp3 = cResult[1];
   }
-  str(5203)(tmp3);
+  str(5235)(tmp3);
   if (cResult[2] !== str) {
     const fn2 = function o() {
       AnalyticsUtilsDefault.track(AnalyticEvents.OPEN_MODAL, { type: str });
@@ -79,7 +79,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onReject) => {
     analyticsType = "Guild Join Captcha";
   }
   dependencyMap = noop.useRef(true);
-  analyticsType(5203)(() => () => {
+  analyticsType(5235)(() => () => {
     if (ref.current) {
       if (closure_1_0 != null) {
         tmp(require("SharedCaptchaUtils").CaptchaError.CANCEL);

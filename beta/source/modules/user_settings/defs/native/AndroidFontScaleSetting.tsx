@@ -1,21 +1,21 @@
-// Module ID: 15572
-// Function ID: 15573
+// Module ID: 15582
+// Function ID: 15583
 // Name: AndroidFontScaleSetting
-// Dependencies: [19, 15524, 1088, 8238, 21, 558, 568, 1252, 15573, 11458, 1119, 11594, 1368, 2]
+// Dependencies: [19, 15534, 1088, 8270, 21, 558, 568, 1252, 15583, 11494, 1119, 11630, 1368, 2]
 
-// Module 15572 (AndroidFontScaleSetting)
+// Module 15582 (AndroidFontScaleSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 11458 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 15573 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 11494 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 15583 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const useFontScaleStore = fn(15524).useFontScaleStore;
+const useFontScaleStore = fn(15534).useFontScaleStore;
 const FontScales = fn(1088).FontScales;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(13);
   const tmp4 = useFontScaleStore();
@@ -42,8 +42,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const fontScale = tmp4.fontScale;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp14 = jsx(tmp(15573).CircleMinusIcon, {});
-    const tmp15 = jsx(tmp(11458).CirclePlusIcon, {});
+    const tmp14 = jsx(tmp(15583).CircleMinusIcon, {});
+    const tmp15 = jsx(tmp(11494).CirclePlusIcon, {});
     const intl = tmp(1119).intl;
     const stringResult = intl.string(tmp(1119).t.i19n5L);
     cResult[3] = tmp14;
@@ -115,7 +115,7 @@ const slider = SettingBuilders.createSlider({
     const intl = util.intl;
     return intl.string(util.t.i19n5L);
   },
-  parent: fn(8238).MobileUserSettings.APPEARANCE,
+  parent: fn(8270).MobileUserSettings.APPEARANCE,
   useProps: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(13);
     const tmp4 = useFontScaleStore();
@@ -142,8 +142,8 @@ const slider = SettingBuilders.createSlider({
     }
     const fontScale = tmp4.fontScale;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp14 = jsx(tmp(15573).CircleMinusIcon, {});
-      const tmp15 = jsx(tmp(11458).CirclePlusIcon, {});
+      const tmp14 = jsx(tmp(15583).CircleMinusIcon, {});
+      const tmp15 = jsx(tmp(11494).CirclePlusIcon, {});
       const intl = tmp(1119).intl;
       const stringResult = intl.string(tmp(1119).t.i19n5L);
       cResult[3] = tmp14;

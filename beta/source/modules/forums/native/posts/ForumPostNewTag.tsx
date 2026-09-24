@@ -1,9 +1,9 @@
-// Module ID: 12145
-// Function ID: 12146
+// Module ID: 12181
+// Function ID: 12182
 // Name: ForumPostNewTag
-// Dependencies: [19, 21, 4758, 580, 558, 568, 1181, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 1181, 2]
 
-// Module 12145 (ForumPostNewTag)
+// Module 12181 (ForumPostNewTag)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
@@ -11,7 +11,7 @@ import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { paddingVertical: 1, backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND } };
 let closure_3 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

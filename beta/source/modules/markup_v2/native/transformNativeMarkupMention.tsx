@@ -1,15 +1,15 @@
-// Module ID: 8375
-// Function ID: 8376
+// Module ID: 8407
+// Function ID: 8408
 // Name: transformNativeMarkupMention
-// Dependencies: [5240, 5211, 5209, 5220, 8376, 2]
+// Dependencies: [5272, 5243, 5241, 5252, 8408, 2]
 // Exports: applyChannelMentionIcons, transformNativeMention
 
-// Module 8375 (transformNativeMarkupMention)
-import MarkupTypes from "MarkupTypes" /* 5209 */;
-import MarkupRules from "MarkupRules" /* 5211 */;
-import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5220 */;
-import PlatformMarkupRules from "PlatformMarkupRules" /* 5240 */;
-import StaticMentionRoutes from "StaticMentionRoutes" /* 8376 */;
+// Module 8407 (transformNativeMarkupMention)
+import MarkupTypes from "MarkupTypes" /* 5241 */;
+import MarkupRules from "MarkupRules" /* 5243 */;
+import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5252 */;
+import PlatformMarkupRules from "PlatformMarkupRules" /* 5272 */;
+import StaticMentionRoutes from "StaticMentionRoutes" /* 8408 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupMention.tsx");
@@ -31,18 +31,18 @@ export const transformNativeMention = function transformNativeMention(value, all
     obj5.id = str1;
     return MarkupRules.hydrateUserMention(obj5, allowGameMentions);
   } else if ("everyone" === type) {
-    return MarkupRules.hydrateUserMention({ fullMatch: "@everyone", id: "applicationId", everyoneOrHere: null }, allowGameMentions);
+    return MarkupRules.hydrateUserMention({ fullMatch: "@everyone", id: "applicationId", everyoneOrHere: "sk" }, allowGameMentions);
   } else if ("here" === type) {
-    return MarkupRules.hydrateUserMention({ fullMatch: "@here", id: "applicationId", everyoneOrHere: null }, allowGameMentions);
+    return MarkupRules.hydrateUserMention({ fullMatch: "@here", id: "applicationId", everyoneOrHere: "sk" }, allowGameMentions);
   } else if ("role" === type) {
     return MarkupRules.hydrateRoleMention(value.value.toString(), allowGameMentions);
   } else if ("game" === type) {
     const str19 = value.value.toString();
     if (allowGameMentions.allowGameMentions) {
-      let hydrateGameMentionResult = tmp25(5240).hydrateGameMention(str19, allowGameMentions);
-      const tmp25Result = tmp25(5240);
+      let hydrateGameMentionResult = tmp25(5272).hydrateGameMention(str19, allowGameMentions);
+      const tmp25Result = tmp25(5272);
     } else {
-      hydrateGameMentionResult = { type: tmp25(5209).AST_KEY.TEXT, content: null };
+      hydrateGameMentionResult = { type: tmp25(5241).AST_KEY.TEXT, content: null };
       const _HermesInternal = HermesInternal;
       hydrateGameMentionResult.content = "<@$" + str19 + ">";
     }
@@ -54,11 +54,11 @@ export const transformNativeMention = function transformNativeMention(value, all
     const guildIdFromChannelId = MarkupChannelMentionRule.getGuildIdFromChannelId(allowGameMentions.channelId);
     const channel = MarkupChannelMentionRule.getChannel(str20, allowGameMentions.mentionChannels);
     if (null == channel) {
-      const tmp8Result = tmp8(5220);
+      const tmp8Result = tmp8(5252);
       let handleUnknownChannelResult = tmp8Result.handleUnknownChannel(null, str20, null, guildIdFromChannelId);
     } else {
-      handleUnknownChannelResult = tmp8(5220).parseChannel(channel, null, guildIdFromChannelId);
-      const tmp8Result4 = tmp8(5220);
+      handleUnknownChannelResult = tmp8(5252).parseChannel(channel, null, guildIdFromChannelId);
+      const tmp8Result4 = tmp8(5252);
     }
     const obj6 = {};
     const merged = Object.assign(handleUnknownChannelResult);

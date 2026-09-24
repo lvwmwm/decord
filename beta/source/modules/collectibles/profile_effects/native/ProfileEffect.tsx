@@ -1,28 +1,28 @@
-// Module ID: 9080
-// Function ID: 9081
+// Module ID: 9112
+// Function ID: 9113
 // Name: ProfileEffect
-// Dependencies: [32, 19, 17, 4750, 1983, 21, 4758, 558, 568, 1482, 9081, 9082, 9083, 9085, 504, 1098, 9086, 9084, 5802, 8500, 2]
+// Dependencies: [32, 19, 17, 4782, 1983, 21, 4790, 558, 568, 1482, 9113, 9114, 9115, 9117, 504, 1098, 9118, 9116, 5834, 8532, 2]
 
-// Module 9080 (ProfileEffect)
+// Module 9112 (ProfileEffect)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import ConstantsIOS from "ConstantsIOS" /* 1098 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8500 */;
-import utils from "utils" /* 9081 */;
-import constants from "constants" /* 9082 */;
-import ProfileEffectUtils from "ProfileEffectUtils" /* 9083 */;
-import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9086 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8532 */;
+import utils from "utils" /* 9113 */;
+import constants from "constants" /* 9114 */;
+import ProfileEffectUtils from "ProfileEffectUtils" /* 9115 */;
+import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9118 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import AppStateStore from "AppStateStore" /* 1983 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
 let jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles({ profileEffects: { position: "absolute", width: "100%", top: 0, bottom: 0, left: 0, right: 0, flex: 1, justifyContent: "flex-start" }, effect: { position: "absolute" } });
 let ReactCompilerGating = fn(558);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {

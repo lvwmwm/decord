@@ -1,17 +1,17 @@
-// Module ID: 15981
-// Function ID: 15982
+// Module ID: 15991
+// Function ID: 15992
 // Name: CheckpointNavigationControls
-// Dependencies: [17, 4983, 1078, 21, 4758, 580, 558, 568, 1616, 1119, 15982, 8550, 3036, 15965, 4455, 2112, 5843, 15983, 2]
+// Dependencies: [17, 5015, 1078, 21, 4790, 580, 558, 568, 1616, 1119, 15992, 8582, 3036, 15975, 4487, 2112, 5875, 15993, 2]
 
-// Module 15981 (CheckpointNavigationControls)
+// Module 15991 (CheckpointNavigationControls)
 import nativeDefault from "native" /* 580 */;
 import Constants from "Constants" /* 1078 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import CheckpointTextDefault from "CheckpointText" /* 15965 */;
+import CheckpointTextDefault from "CheckpointText" /* 15975 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 4983 */;
+import CheckpointConstants from "CheckpointConstants" /* 5015 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -66,12 +66,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
               tmp46 = cResult[10];
             }
             if (cResult[11] !== onNext) {
-              const obj2 = { Icon: tmp(8550).PlayIcon, label: tmp46, onPress: onNext };
-              const tmp51 = closure_7(tmp5(15982), obj2);
+              const obj2 = { Icon: tmp(8582).PlayIcon, label: tmp46, onPress: onNext };
+              const tmp51 = closure_7(tmp5(15992), obj2);
               cResult[11] = onNext;
               cResult[12] = tmp51;
               let tmp48 = tmp51;
-              const tmp5Result = tmp5(15982);
+              const tmp5Result = tmp5(15992);
             } else {
               tmp48 = cResult[12];
             }
@@ -83,7 +83,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
                                 variant: "text-sm/medium",
                                 style: link.link,
                                 onPress() {
-                                  const obj = closure_1_1(4455);
+                                  const obj = closure_1_1(4487);
                                   return obj.openURL(closure_1_1(2112).getArticleURL(constants.CHECKPOINT));
                                 },
                                 accessibilityRole: "link",
@@ -100,7 +100,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
             }
             if (cResult[15] !== tmp52) {
               const obj4 = { variant: "text-sm/medium", children: tmp52 };
-              const tmp56 = closure_7(tmp5(15965), obj4);
+              const tmp56 = closure_7(tmp5(15975), obj4);
               cResult[15] = tmp52;
               cResult[16] = tmp56;
               let tmp54 = tmp56;
@@ -140,7 +140,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
               const intl = tmp(1119).intl;
               const stringResult1 = intl.string(tmp(1119).t["13/7kX"]);
               const obj6 = { color: CHECKPOINT_PRIMARY };
-              const tmp15 = closure_7(tmp(5843).ArrowLargeLeftIcon, obj6);
+              const tmp15 = closure_7(tmp(5875).ArrowLargeLeftIcon, obj6);
               cResult[24] = stringResult1;
               cResult[25] = tmp15;
               let tmp11 = tmp15;
@@ -176,7 +176,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
                   const _Symbol2 = Symbol;
                   if (cResult[36] === Symbol.for("react.memo_cache_sentinel")) {
                     const obj8 = { color: CHECKPOINT_PRIMARY };
-                    const tmp31 = closure_7(tmp(15983).ArrowLargeRightIcon, obj8);
+                    const tmp31 = closure_7(tmp(15993).ArrowLargeRightIcon, obj8);
                     cResult[36] = tmp31;
                     let tmp28 = tmp31;
                   } else {
@@ -281,9 +281,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
     const intl3 = require("util").intl;
     obj2.label = intl3.string(require("util").t.I0v0Qv);
     obj2.onPress = onNext;
-    const items2 = [closure_7(tmp2(15982), obj2), ];
+    const items2 = [closure_7(tmp2(15992), obj2), ];
     const obj3 = { variant: "text-sm/medium", children: null };
-    const tmp2Result = tmp2(15982);
+    const tmp2Result = tmp2(15992);
     const intl4 = require("util").intl;
     const obj4 = {
       learnMoreHook(children, arg1) {
@@ -291,7 +291,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
             variant: "text-sm/medium",
             style: link.link,
             onPress() {
-              const obj = closure_1_1(4455);
+              const obj = closure_1_1(4487);
               return obj.openURL(closure_1_1(2112).getArticleURL(constants.CHECKPOINT));
             },
             accessibilityRole: "link",
@@ -300,10 +300,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
         }
     };
     obj3.children = intl4.format(tmp2(3036).hcNhyq, obj4);
-    items2[1] = closure_7(tmp2(15965), obj3);
+    items2[1] = closure_7(tmp2(15975), obj3);
     obj.children = items2;
     let tmp10 = obj;
-    const tmp2Result2 = tmp2(15965);
+    const tmp2Result2 = tmp2(15975);
   } else {
     items1[1] = tmp.routeControls;
     obj.style = items1;

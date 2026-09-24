@@ -1,19 +1,19 @@
-// Module ID: 11331
-// Function ID: 11332
+// Module ID: 11367
+// Function ID: 11368
 // Name: GiftingBadgeProgress
-// Dependencies: [19, 17, 8466, 21, 558, 568, 4758, 580, 11041, 11046, 4754, 1119, 2582, 2]
+// Dependencies: [19, 17, 8498, 21, 558, 568, 4790, 580, 11077, 11082, 4786, 1119, 2582, 2]
 
-// Module 11331 (GiftingBadgeProgress)
+// Module 11367 (GiftingBadgeProgress)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef2582 from "module_2582" /* 2582 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 11041 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11046 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 11077 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11082 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_4 = fn(8466).getSingleRequirementThreshold;
+let closure_4 = fn(8498).getSingleRequirementThreshold;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 let ReactCompilerGating = fn(558);
@@ -63,7 +63,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((percent) => {
   obj.children = hasOwnProperty(View, obj2);
   return hasOwnProperty(View, obj);
 });
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj3 = { container: { flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_16 }, content: null, progressBarTrack: null, progressBarFill: null, labels: null };
 let obj4 = { flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_16 };
 obj3.content = { flex: 1, paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_4 };
@@ -216,7 +216,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp31 = null != title;
           if (tmp31) {
             const obj6 = { variant: "text-md/semibold", children: title };
-            tmp31 = hasOwnProperty(tmp(4754).Text, obj6);
+            tmp31 = hasOwnProperty(tmp(4786).Text, obj6);
           }
           cResult[27] = title;
           cResult[28] = tmp31;
@@ -240,7 +240,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const intl = tmp(1119).intl;
           const obj9 = { count: progress, threshold: tmp21 };
           obj8.children = intl.format(_modDef2582.iIpfQe, obj9);
-          tmp37 = hasOwnProperty(tmp(4754).Text, obj8);
+          tmp37 = hasOwnProperty(tmp(4786).Text, obj8);
         }
         cResult[6] = tmp6;
         cResult[7] = num;
@@ -281,12 +281,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[26] = tmp27;
       tmp26 = tmp27;
     }
-    const giftingBadgeTierIconUrl = tmp(11041).getGiftingBadgeTierIconUrl(nextTier, isGiftingBadgeComplexArtEnabled);
+    const giftingBadgeTierIconUrl = tmp(11077).getGiftingBadgeTierIconUrl(nextTier, isGiftingBadgeComplexArtEnabled);
     cResult[3] = isGiftingBadgeComplexArtEnabled;
     cResult[4] = nextTier;
     cResult[5] = giftingBadgeTierIconUrl;
     tmp8 = giftingBadgeTierIconUrl;
-    const tmpResult3 = tmp(11041);
+    const tmpResult3 = tmp(11077);
   }
   const tmpResult = GiftingBadgesUtils;
   const giftingBadgeTierIconUrl1 = GiftingBadgesUtils.getGiftingBadgeTierIconUrl(currentTier, isGiftingBadgeComplexArtEnabled);
@@ -326,7 +326,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp15 = null != title;
   if (tmp15) {
     const obj7 = { variant: "text-md/semibold", children: title };
-    tmp15 = hasOwnProperty(tmp2(4754).Text, obj7);
+    tmp15 = hasOwnProperty(tmp2(4786).Text, obj7);
   }
   const items1 = [tmp15, hasOwnProperty(closure_7, { percent: num2 }), ];
   const obj8 = { style: tmp.labels, children: null };
@@ -336,7 +336,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl = tmp2(1119).intl;
     const obj10 = { count: progress, threshold: tmp7 };
     obj9.children = intl.format(_modDef2582.iIpfQe, obj10);
-    tmp17Result = tmp17(tmp2(4754).Text, obj9);
+    tmp17Result = tmp17(tmp2(4786).Text, obj9);
   }
   obj8.children = tmp17Result;
   items1[2] = hasOwnProperty(View, obj8);

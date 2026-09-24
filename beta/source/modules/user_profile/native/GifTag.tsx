@@ -1,16 +1,16 @@
-// Module ID: 8529
-// Function ID: 8530
+// Module ID: 8561
+// Function ID: 8562
 // Name: GifTag
-// Dependencies: [17, 21, 4758, 580, 676, 558, 568, 1119, 4754, 2]
+// Dependencies: [17, 21, 4790, 580, 676, 558, 568, 1119, 4786, 2]
 
-// Module 8529 (GifTag)
+// Module 8561 (GifTag)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import createStyles from "createStyles" /* 4758 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import createStyles from "createStyles" /* 4790 */;
 import n from "module_676" /* 676 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     }
     if (cResult[4] !== tmp4.gifTagText) {
       const obj2 = { variant: "text-sm/bold", color: "none", style: tmp4.gifTagText, children: tmp7 };
-      const tmp11 = jsx(tmp(4754).Text, { variant: "text-sm/bold", color: "none", style: tmp4.gifTagText, children: tmp7 });
+      const tmp11 = jsx(tmp(4786).Text, { variant: "text-sm/bold", color: "none", style: tmp4.gifTagText, children: tmp7 });
       cResult[4] = tmp4.gifTagText;
       cResult[5] = tmp11;
       let tmp9 = tmp11;

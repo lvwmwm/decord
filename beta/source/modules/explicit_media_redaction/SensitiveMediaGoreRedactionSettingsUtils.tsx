@@ -1,13 +1,13 @@
-// Module ID: 7545
-// Function ID: 7546
+// Module ID: 7577
+// Function ID: 7578
 // Name: SensitiveMediaGoreRedactionSettingsUtils
-// Dependencies: [19, 1376, 1078, 1190, 5642, 7543, 2023, 558, 2]
+// Dependencies: [19, 1376, 1078, 1190, 5674, 7575, 2023, 558, 2]
 // Exports: getGoreContentSettingOrDefault, resolveGoreSettingWithDefaultsForTeen, updateGoreContentSetting
 
-// Module 7545 (SensitiveMediaGoreRedactionSettingsUtils)
+// Module 7577 (SensitiveMediaGoreRedactionSettingsUtils)
 import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7543 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7575 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 

@@ -1,30 +1,30 @@
-// Module ID: 12022
-// Function ID: 12023
+// Module ID: 12058
+// Function ID: 12059
 // Name: ClassificationMessageEvidence
-// Dependencies: [32, 19, 17, 1186, 1376, 8707, 8696, 1078, 21, 8195, 4758, 558, 568, 504, 4610, 12023, 12024, 8695, 4908, 8535, 8584, 12025, 4980, 11, 8928, 2]
+// Dependencies: [32, 19, 17, 1186, 1376, 8739, 8728, 1078, 21, 8227, 4790, 558, 568, 504, 4642, 12059, 12060, 8727, 4940, 8567, 8616, 12061, 5012, 11, 8960, 2]
 
-// Module 12022 (ClassificationMessageEvidence)
-import RowGeneratorDefault from "RowGenerator" /* 8195 */;
-import openMediaModal from "openMediaModal" /* 8535 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8695 */;
+// Module 12058 (ClassificationMessageEvidence)
+import RowGeneratorDefault from "RowGenerator" /* 8227 */;
+import openMediaModal from "openMediaModal" /* 8567 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8727 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 import UserStore from "UserStore" /* 1376 */;
-import SafetyHubStore from "SafetyHubStore" /* 8707 */;
+import SafetyHubStore from "SafetyHubStore" /* 8739 */;
 
-const MediaFormatTesters = tmp2(4908);
+const MediaFormatTesters = tmp2(4940);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, findNodeHandle: metroRequire, Image: closure_7, ActivityIndicator: closure_8 } = get_ActivityIndicator);
-const SafetyHubConstants = fn(8696);
+const SafetyHubConstants = fn(8728);
 ({ DEFAULT_MEDIA_MAX_WIDTH: closure_12, DEFAULT_MEDIA_MAX_HEIGHT: map1, VIDEO_PLACEHOLDER_WIDTH: closure_14, VIDEO_PLACEHOLDER_HEIGHT: closure_15, VIDEO_PLACEHOLDER_FILENAME: closure_16 } = SafetyHubConstants);
 const MessageTypes = fn(1078).MessageTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_18, jsxs: closure_19 } = jsxProd);
 let c20 = "1";
 const rowGenerator = new RowGeneratorDefault();
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_22 = createStyles.createStyles({ dummyVideoAttachments: { width: 0, height: 0 } });
 const ReactCompilerGating = fn(558);
 let tmp5 = new RowGeneratorDefault();
@@ -245,7 +245,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                       }
                       obj4.onTapImage = tmp36;
-                      const tmp47 = closure_18(reactTag(12025), obj4);
+                      const tmp47 = closure_18(reactTag(12061), obj4);
                       cResult[38] = tmp36;
                       cResult[39] = tmp47;
                       let tmp44 = tmp47;
@@ -289,7 +289,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                               }
                             }
                             const obj6 = { rowGenerator, message: tmp48, modifyRow: tmp38, pointerEvents: "none" };
-                            const tmp61 = closure_18(reactTag(8928), obj6);
+                            const tmp61 = closure_18(reactTag(8960), obj6);
                             cResult[46] = tmp38;
                             cResult[47] = tmp48;
                             cResult[48] = tmp61;
@@ -305,7 +305,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     }
                     tmp49[0] = first2.id;
                     const _Date = Date;
-                    const tmpResult6 = tmp(4980);
+                    const tmpResult6 = tmp(5012);
                     const date = new Date(reactTag(11).extractTimestamp(first2.id));
                     tmp49[1] = date.toUTCString();
                     tmp49[2] = c20;
@@ -430,11 +430,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp5 = first1;
   const items1 = [id];
   const resolveAssetSource = first3.resolveAssetSource;
-  if (obj3.useStateFromStores(items1, () => ref(4610).isThemeLight(id.theme))) {
-    let assetSource = resolveAssetSource(tmp11(12023));
+  if (obj3.useStateFromStores(items1, () => ref(4642).isThemeLight(id.theme))) {
+    let assetSource = resolveAssetSource(tmp11(12059));
     let tmp13 = tmp11;
   } else {
-    assetSource = resolveAssetSource(tmp11(12024));
+    assetSource = resolveAssetSource(tmp11(12060));
     tmp13 = tmp11;
   }
   let first2 = arg0.flaggedContent[0];
@@ -456,10 +456,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         str = "";
       }
       obj.filename = str;
-      obj.flags = ref(8695).getSpoilerFlagsForAttachment(filename);
+      obj.flags = ref(8727).getSpoilerFlagsForAttachment(filename);
       obj.size = 0;
       obj.proxy_url = filename.url;
-      const obj2 = ref(8695);
+      const obj2 = ref(8727);
       const tmp2 = ref;
       if (obj3.isImageFile(filename.filename)) {
         const obj4 = {};
@@ -492,7 +492,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           obj5.filename = filename;
           tmp4 = obj5;
         }
-        tmp2Result = tmp2(4908);
+        tmp2Result = tmp2(4940);
       }
       return tmp4;
     });
@@ -588,10 +588,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items8 = [closure_18(closure_8, {}), ];
     let obj5 = { style: attachments.dummyVideoAttachments, children: null };
     attachments = first2.attachments;
-    first2 = attachments.filter((filename) => ref(4908).isVideoFile(filename.filename));
+    first2 = attachments.filter((filename) => ref(4940).isVideoFile(filename.filename));
     obj5.children = first2.map((uri, index) => {
       closure_0 = uri;
-      return closure_1_18(first(8584), {
+      return closure_1_18(first(8616), {
         source: { uri: uri.url },
         onLoad(arg0) {
           closure_0 = arg0;
@@ -614,13 +614,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let obj10 = obj4;
   } else {
     const obj6 = { ref, onTapImage: callback, inverted: false };
-    const items9 = [closure_18(tmp13(12025), obj6), ];
+    const items9 = [closure_18(tmp13(12061), obj6), ];
     const obj7 = { rowGenerator, message: null, modifyRow: null, pointerEvents: "none" };
-    const tmp13Result = tmp13(8928);
+    const tmp13Result = tmp13(8960);
     const tmp29 = closure_18;
     const obj8 = { id: first2.id, timestamp: null, channel_id: null, type: null, author: null, content: null, attachments: null };
     const _Date = Date;
-    const tmpResult2 = tmp(4980);
+    const tmpResult2 = tmp(5012);
     const date = new Date(tmp13(11).extractTimestamp(first2.id));
     obj8.timestamp = date.toUTCString();
     obj8.channel_id = channel_id;

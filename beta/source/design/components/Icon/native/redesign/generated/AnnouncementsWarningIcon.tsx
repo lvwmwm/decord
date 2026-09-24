@@ -1,13 +1,13 @@
-// Module ID: 5311
-// Function ID: 5312
+// Module ID: 5343
+// Function ID: 5344
 // Name: AnnouncementsWarningIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 5259, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 5291, 4493, 2]
 
-// Module 5311 (AnnouncementsWarningIcon)
+// Module 5343 (AnnouncementsWarningIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod5259 from "module_5259" /* 5259 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod5291 from "module_5291" /* 5291 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const AnnouncementsWarningIcon = ReactCompilerGating.isReactCompilerEnabl
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(5259);
+    const tmpResult = tmp(5291);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const AnnouncementsWarningIcon = ReactCompilerGating.isReactCompilerEnabl
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5259, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5291, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

@@ -1,19 +1,19 @@
-// Module ID: 15571
-// Function ID: 15572
+// Module ID: 15581
+// Function ID: 15582
 // Name: DefaultGuildThemePreferenceSetting
-// Dependencies: [19, 8238, 2023, 558, 568, 1119, 1190, 11594, 4686, 2]
+// Dependencies: [19, 8270, 2023, 558, 568, 1119, 1190, 11630, 4718, 2]
 
-// Module 15571 (DefaultGuildThemePreferenceSetting)
+// Module 15581 (DefaultGuildThemePreferenceSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4686 */;
+import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4718 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -51,7 +51,7 @@ const radio = SettingBuilders.createRadio({
     const intl = util.intl;
     return intl.string(util.t.Q7mm4g);
   },
-  parent: fn(8238).MobileUserSettings.APPEARANCE,
+  parent: fn(8270).MobileUserSettings.APPEARANCE,
   useValue: fn(2023).DefaultGuildThemePreference.useSetting,
   onValueChange: function onDefaultGuildThemePreferenceChange(arg0) {
     const DefaultGuildThemePreference = UserSettings.DefaultGuildThemePreference;

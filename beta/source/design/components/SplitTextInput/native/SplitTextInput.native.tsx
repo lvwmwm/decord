@@ -1,14 +1,14 @@
-// Module ID: 7207
-// Function ID: 7208
+// Module ID: 7239
+// Function ID: 7240
 // Name: SplitTextInput
-// Dependencies: [109, 19, 21, 558, 568, 4480, 6847, 7208, 7174, 2]
+// Dependencies: [109, 19, 21, 558, 568, 4512, 6879, 7240, 7206, 2]
 
-// Module 7207 (SplitTextInput)
+// Module 7239 (SplitTextInput)
 import c from "c" /* 568 */;
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4480 */;
-import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6847 */;
-import Input from "Input" /* 7174 */;
-import SplitTextField from "SplitTextField" /* 7208 */;
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4512 */;
+import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6879 */;
+import Input from "Input" /* 7206 */;
+import SplitTextField from "SplitTextField" /* 7240 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -61,7 +61,7 @@ export const SplitTextInput = noop.forwardRef(ReactCompilerGating.isReactCompile
           const merged = Object.assign(required);
           obj3.labelId = tmp7;
           obj3.children = tmp14;
-          const tmp28 = jsx(tmp(7174).Input, {});
+          const tmp28 = jsx(tmp(7206).Input, {});
           cResult[12] = tmp7;
           cResult[13] = required;
           cResult[14] = tmp14;
@@ -74,7 +74,7 @@ export const SplitTextInput = noop.forwardRef(ReactCompilerGating.isReactCompile
     const merged1 = Object.assign(required);
     const merged2 = Object.assign(tmp6);
     obj4.accessibilityLabel = tmp11;
-    const tmp22 = jsx(tmp(7208).SplitTextField, { ref });
+    const tmp22 = jsx(tmp(7240).SplitTextField, { ref });
     cResult[7] = tmp6;
     cResult[8] = required;
     cResult[9] = ref;

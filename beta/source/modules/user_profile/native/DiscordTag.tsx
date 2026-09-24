@@ -1,20 +1,20 @@
-// Module ID: 9879
-// Function ID: 9880
+// Module ID: 9911
+// Function ID: 9912
 // Name: DiscordTag
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4754, 9548, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4786, 9580, 2]
 
-// Module 9879 (DiscordTag)
+// Module 9911 (DiscordTag)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BotTagDefault from "BotTag" /* 9548 */;
+import BotTagDefault from "BotTag" /* 9580 */;
 import noop from "module_19" /* 19 */;
 
-const Text_Text = Text(4754);
+const Text_Text = Text(4786);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flexGrow: 1, alignItems: "center", flexDirection: "row" }, botTag: { marginLeft: nativeDefault.space.PX_4 } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -128,7 +128,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj4 = { variant: "text-md/semibold", color: "text-muted", style: discriminatorStyle, children: null };
         const items1 = ["#", user.discriminator];
         obj4.children = items1;
-        tmp2Result = tmp2(tmp4(4754).Text, obj4);
+        tmp2Result = tmp2(tmp4(4786).Text, obj4);
       }
       items[1] = tmp2Result;
       obj3.children = items;

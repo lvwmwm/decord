@@ -1,24 +1,24 @@
-// Module ID: 12995
-// Function ID: 12996
+// Module ID: 13031
+// Function ID: 13032
 // Name: NotificationSettingsMockChannels
-// Dependencies: [19, 17, 4940, 21, 4758, 580, 558, 568, 1119, 12528, 5300, 4754, 1181, 2]
+// Dependencies: [19, 17, 4972, 21, 4790, 580, 558, 568, 1119, 12564, 5332, 4786, 1181, 2]
 
-// Module 12995 (NotificationSettingsMockChannels)
+// Module 13031 (NotificationSettingsMockChannels)
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import TextIcon from "TextIcon" /* 5300 */;
-import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 12528 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import TextIcon from "TextIcon" /* 5332 */;
+import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 12564 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const UnreadSetting = fn(4940).UnreadSetting;
+const UnreadSetting = fn(4972).UnreadSetting;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { card: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden", borderRadius: 10, paddingVertical: 8 }, channel: { display: "flex", flexDirection: "row", alignItems: "center", paddingVertical: 4, justifyContent: "space-between", paddingRight: 12 }, channelName: { display: "flex", flexDirection: "row", alignItems: "center" } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

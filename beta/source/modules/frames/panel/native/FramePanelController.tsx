@@ -1,18 +1,18 @@
-// Module ID: 17474
-// Function ID: 17475
+// Module ID: 17484
+// Function ID: 17485
 // Name: FramePanelController
-// Dependencies: [19, 4985, 9311, 9312, 9313, 21, 558, 568, 504, 9567, 17441, 17475, 2]
+// Dependencies: [19, 5017, 9343, 9344, 9345, 21, 558, 568, 504, 9599, 17451, 17485, 2]
 
-// Module 17474 (FramePanelController)
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 9567 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 17475 */;
+// Module 17484 (FramePanelController)
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 9599 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 17485 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 4985 */;
-import FramesStore from "FramesStore" /* 9311 */;
+import ApplicationStore from "ApplicationStore" /* 5017 */;
+import FramesStore from "FramesStore" /* 9343 */;
 
 const require = fn;
-const asLaunched = fn(9312).asLaunched;
-const ActivityPanelModes = fn(9313).ActivityPanelModes;
+const asLaunched = fn(9344).asLaunched;
+const ActivityPanelModes = fn(9345).ActivityPanelModes;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -93,7 +93,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     }
   }
   const tmpResult = mainFrameId(504);
-  const tmp13 = jsx(mainFrameId(17441).BaseActivityPanelController, { context: FramePanelStateContextDefault, orientationLockStateForApp, mode, hasConnectedActivity: null != mainFrameId, connectedActivityAppId, currentApp, updateActivityPanelMode: tmp10, children });
+  const tmp13 = jsx(mainFrameId(17451).BaseActivityPanelController, { context: FramePanelStateContextDefault, orientationLockStateForApp, mode, hasConnectedActivity: null != mainFrameId, connectedActivityAppId, currentApp, updateActivityPanelMode: tmp10, children });
   cResult[5] = children;
   cResult[6] = connectedActivityAppId;
   cResult[7] = currentApp;
@@ -142,5 +142,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     }
   }, items1);
   let obj = mainFrameId(504);
-  return jsx(mainFrameId(17441).BaseActivityPanelController, { context: FramePanelStateContextDefault, orientationLockStateForApp, mode, hasConnectedActivity: null != mainFrameId, connectedActivityAppId, currentApp, updateActivityPanelMode: callback, children: children.children });
+  return jsx(mainFrameId(17451).BaseActivityPanelController, { context: FramePanelStateContextDefault, orientationLockStateForApp, mode, hasConnectedActivity: null != mainFrameId, connectedActivityAppId, currentApp, updateActivityPanelMode: callback, children: children.children });
 });

@@ -1,21 +1,21 @@
-// Module ID: 17110
-// Function ID: 17111
+// Module ID: 17120
+// Function ID: 17121
 // Name: SearchScreenLayout
-// Dependencies: [19, 17, 12487, 21, 4758, 558, 568, 16865, 504, 17111, 17203, 2]
+// Dependencies: [19, 17, 12523, 21, 4790, 558, 568, 16875, 504, 17121, 17213, 2]
 
-// Module 17110 (SearchScreenLayout)
+// Module 17120 (SearchScreenLayout)
 import c from "c" /* 568 */;
-import AppFreezerDefault from "AppFreezer" /* 16865 */;
-import SearchTabsLayoutDefault from "SearchTabsLayout" /* 17111 */;
-import AutocompleteScreenDefault from "AutocompleteScreen" /* 17203 */;
+import AppFreezerDefault from "AppFreezer" /* 16875 */;
+import SearchTabsLayoutDefault from "SearchTabsLayout" /* 17121 */;
+import AutocompleteScreenDefault from "AutocompleteScreen" /* 17213 */;
 import noop from "module_19" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 12487 */;
+import SearchQueryStore from "SearchQueryStore" /* 12523 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ hidden: { opacity: 0 }, visible: { flex: 1 } });
 let ReactCompilerGating = fn(558);
 let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {

@@ -1,14 +1,14 @@
-// Module ID: 15080
-// Function ID: 15081
+// Module ID: 15089
+// Function ID: 15090
 // Name: SensitiveContentFiltersScreen
-// Dependencies: [19, 8238, 21, 1119, 558, 568, 15081, 11594, 14953, 2]
+// Dependencies: [19, 8270, 21, 1119, 558, 568, 15090, 11630, 14988, 2]
 
-// Module 15080 (SensitiveContentFiltersScreen)
+// Module 15089 (SensitiveContentFiltersScreen)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
-import SettingLayoutDefault from "SettingLayout" /* 14953 */;
-import SettingsScreenNotices from "SettingsScreenNotices" /* 15081 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
+import SettingLayoutDefault from "SettingLayout" /* 14988 */;
+import SettingsScreenNotices from "SettingsScreenNotices" /* 15090 */;
 import noop from "module_19" /* 19 */;
 
 const SettingsScreenNoticesDefault = SettingsScreenNotices;
@@ -35,7 +35,7 @@ function getContentCategory() {
   items1[1] = obj2;
   return items1;
 }
-const MobileUserSettings = fn(8238).MobileUserSettings;
+const MobileUserSettings = fn(8270).MobileUserSettings;
 const jsx = fn(21).jsx;
 let ReactCompilerGating = fn(558);
 const ListHeaderComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() => {

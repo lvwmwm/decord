@@ -1,12 +1,12 @@
-// Module ID: 15968
-// Function ID: 15969
+// Module ID: 15978
+// Function ID: 15979
 // Name: CheckpointVoiceStatsScreen
-// Dependencies: [21, 558, 568, 15969, 2]
+// Dependencies: [21, 558, 568, 15979, 2]
 
-// Module 15968 (CheckpointVoiceStatsScreen)
+// Module 15978 (CheckpointVoiceStatsScreen)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15969 */;
+import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15979 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

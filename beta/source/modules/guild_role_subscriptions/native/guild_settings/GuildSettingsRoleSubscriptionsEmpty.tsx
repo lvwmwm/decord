@@ -1,16 +1,16 @@
-// Module ID: 18141
-// Function ID: 18142
+// Module ID: 18151
+// Function ID: 18152
 // Name: GuildSettingsRoleSubscriptionsEmpty
-// Dependencies: [19, 2067, 1078, 1353, 21, 558, 568, 1488, 18142, 18143, 18144, 504, 2]
+// Dependencies: [19, 2067, 1078, 1353, 21, 558, 568, 1488, 18152, 18153, 18154, 504, 2]
 
-// Module 18141 (GuildSettingsRoleSubscriptionsEmpty)
+// Module 18151 (GuildSettingsRoleSubscriptionsEmpty)
 import c from "c" /* 568 */;
 import useNavigation from "useNavigation" /* 1488 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
-const PlaceholderDefault = tmp3(18143);
-const GuildSettingsRoleSubscriptionWelcomeViewDefault = tmp3(18144);
+const PlaceholderDefault = tmp3(18153);
+const GuildSettingsRoleSubscriptionWelcomeViewDefault = tmp3(18154);
 require = fn;
 const Constants = fn(1078);
 ({ GuildFeatures: closure_4, GuildSettingsSections: hasOwnProperty } = Constants);
@@ -61,14 +61,14 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   guild = guild.guild;
   const str = useNavigation.useNavigation();
   if (tmp3.loading) {
-    let tmp7 = jsx(tmp2(18143), {});
+    let tmp7 = jsx(tmp2(18153), {});
   } else {
     const features = guild.features;
     if (!features.has(constants.CREATOR_MONETIZABLE)) {
       const features2 = guild.features;
       if (!features2.has(tmp5.CREATOR_MONETIZABLE_PROVISIONAL)) {
         const obj2 = { guild };
-        tmp7 = jsx(tmp2(18144), { guild });
+        tmp7 = jsx(tmp2(18154), { guild });
       }
     }
     if (null == tmp4) {

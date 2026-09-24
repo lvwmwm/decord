@@ -1,20 +1,36 @@
 // Module ID: 7121
 // Function ID: 7122
-// Dependencies: [7106, 7122]
+// Dependencies: [17]
+// Exports: isNewArch
 
 // Module 7121
-import _mod7122 from "module_7122" /* 7122 */;
+import _mod17 from "module_17" /* 17 */;
 
+const Platform = _mod17.Platform;
 
-export default function _possibleConstructorReturn(arg0, fn) {
-  if (fn) {
-    return fn;
-  }
-  if (undefined !== fn) {
-    const _TypeError = TypeError;
-    const typeError = new TypeError("Derived constructors may only return object or undefined");
-    throw typeError;
+export const isNewArch = function isNewArch() {
+  if (undefined !== c1) {
+    return c1;
   } else {
-    return _mod7122(arg0);
+    try {
+      let prop;
+      if (global != null) {
+        prop = tmp2.nativeFabricUIManager;
+      }
+      let flag = Boolean(prop);
+      if (global != null) {
+        const __turboModuleProxy = tmp2.__turboModuleProxy;
+      }
+      if (!flag) {
+        flag = Boolean(__turboModuleProxy);
+      }
+      if (!flag) {
+        flag = false;
+      }
+      c1 = flag;
+      return c1;
+    } catch (err) {
+      c1 = true;
+    }
   }
 };

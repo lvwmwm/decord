@@ -1,14 +1,14 @@
-// Module ID: 13488
-// Function ID: 13489
+// Module ID: 13524
+// Function ID: 13525
 // Name: formatSharedClientThemeData
-// Dependencies: [17, 8315, 1119, 2716, 2]
+// Dependencies: [17, 8347, 1119, 2716, 2]
 // Exports: formatSharedClientThemeData
 
-// Module 13488 (formatSharedClientThemeData)
+// Module 13524 (formatSharedClientThemeData)
 import _mod17 from "module_17" /* 17 */;
 import util from "util" /* 1119 */;
 import _modDef2716 from "module_2716" /* 2716 */;
-import _modDef8315 from "module_8315" /* 8315 */;
+import _modDef8347 from "module_8347" /* 8347 */;
 import size from "module_2" /* 2 */;
 
 const Image = _mod17.Image;
@@ -25,7 +25,7 @@ export const formatSharedClientThemeData = function formatSharedClientThemeData(
       str2 = ensureAvatarSourceResult.uri;
     }
     obj.createdByAvatarUrl = str2;
-    obj.nitroWheelIconUrl = Image.resolveAssetSource(_modDef8315).uri;
+    obj.nitroWheelIconUrl = Image.resolveAssetSource(_modDef8347).uri;
     const intl = util.intl;
     obj.previewLabel = intl.string(util.t.SKNnqq);
     const intl2 = util.intl;

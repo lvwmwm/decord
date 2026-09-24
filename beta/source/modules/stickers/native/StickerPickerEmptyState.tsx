@@ -1,18 +1,18 @@
-// Module ID: 10708
-// Function ID: 10709
+// Module ID: 10744
+// Function ID: 10745
 // Name: StickerPickerEmptyState
-// Dependencies: [32, 19, 17, 5721, 2026, 1078, 1378, 21, 4758, 558, 568, 10679, 10694, 7409, 7429, 504, 1245, 1119, 4754, 5341, 4726, 4727, 5802, 9472, 10702, 5188, 2]
+// Dependencies: [32, 19, 17, 5753, 2026, 1078, 1378, 21, 4790, 558, 568, 10715, 10730, 7441, 7461, 504, 1245, 1119, 4786, 5373, 4758, 4759, 5834, 9504, 10738, 5220, 2]
 
-// Module 10708 (StickerPickerEmptyState)
+// Module 10744 (StickerPickerEmptyState)
 import c from "c" /* 568 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import HapticUtils from "HapticUtils" /* 4726 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4727 */;
-import StickersHooks from "StickersHooks" /* 10679 */;
-import StickerDefault from "Sticker" /* 10694 */;
+import HapticUtils from "HapticUtils" /* 4758 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4759 */;
+import StickersHooks from "StickersHooks" /* 10715 */;
+import StickerDefault from "Sticker" /* 10730 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import StickersStore from "StickersStore" /* 5721 */;
+import StickersStore from "StickersStore" /* 5753 */;
 
 const require = globalThis.__r;
 
@@ -24,7 +24,7 @@ const Constants = fn(1078);
 const PremiumUpsellTypes = fn(1378).PremiumUpsellTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_13 = createStyles.createStyles({ header: { marginBottom: 8, textAlign: "center" }, blurb: { lineHeight: 18, textAlign: "center", marginBottom: 12 }, premiumButton: { marginTop: 20, alignSelf: "center", paddingLeft: 5, paddingRight: 10, flexGrow: 0 }, nitroWheel: { width: 32 }, stickersRow: { flexDirection: "row", alignSelf: "center" }, sticker: { paddingHorizontal: 2 } });
 let ReactCompilerGating = fn(558);
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -284,8 +284,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   _require = tmp;
   const fetchStickerPacks = require("StickersHooks").useFetchStickerPacks();
   let obj = require("StickersHooks");
-  analyticsLocations = analyticsLocations(7409)(analyticsLocations(7429).EMPTY_STATE).analyticsLocations;
-  const tmp3 = analyticsLocations(7409);
+  analyticsLocations = analyticsLocations(7441)(analyticsLocations(7461).EMPTY_STATE).analyticsLocations;
+  const tmp3 = analyticsLocations(7441);
   const items = [StickersStore];
   const stateFromStoresArray = require("initialize").useStateFromStoresArray(items, () => {
     const mapped = EMPTY_STATE_STICKERS.map((item) => stickerById.getStickerById(item));
@@ -324,7 +324,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (sticker != null) {
         id = sticker.id;
       }
-      return closure_1_11(sticker(5341).PressableOpacity, obj, id);
+      return closure_1_11(sticker(5373).PressableOpacity, obj, id);
     })
   });
   const obj7 = { style: tmp.premiumButton, children: null };
@@ -346,16 +346,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (sticker != null) {
         id = sticker.id;
       }
-      return closure_1_11(sticker(5341).PressableOpacity, obj, id);
+      return closure_1_11(sticker(5373).PressableOpacity, obj, id);
     })
   };
-  obj9.source = analyticsLocations(9472);
+  obj9.source = analyticsLocations(9504);
   obj9.style = tmp.nitroWheel;
-  obj8.icon = closure_11(analyticsLocations(5802), obj9);
+  obj8.icon = closure_11(analyticsLocations(5834), obj9);
   const intl3 = require("util").intl;
   obj8.text = intl3.string(require("util").t.pj0XBN);
   obj8.onPress = function onPress() {
-    return analyticsLocations(10702)({ section: constants.EXPRESSION_PICKER });
+    return analyticsLocations(10738)({ section: constants.EXPRESSION_PICKER });
   };
   obj7.children = closure_11(require("components/Button/Button").Button, obj8);
   items2[3] = closure_11(View, obj7);

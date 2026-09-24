@@ -1,22 +1,22 @@
-// Module ID: 18346
-// Function ID: 18347
+// Module ID: 18356
+// Function ID: 18357
 // Name: AppStoreParentalRevocationScreen
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4455, 1119, 2780, 4754, 5186, 8699, 18333, 12057, 11297, 8860, 8698, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4487, 1119, 2780, 4786, 5218, 8731, 18343, 12093, 11333, 8892, 8730, 2]
 
-// Module 18346 (AppStoreParentalRevocationScreen)
+// Module 18356 (AppStoreParentalRevocationScreen)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import _modDef2780 from "module_2780" /* 2780 */;
-import LinkingDefault from "Linking" /* 4455 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import ModalScreen from "ModalScreen" /* 8698 */;
-import ModalContent from "ModalContent" /* 8699 */;
-import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8860 */;
-import ModalActionButton from "ModalActionButton" /* 11297 */;
-import ModalFooter from "ModalFooter" /* 12057 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 18333 */;
+import LinkingDefault from "Linking" /* 4487 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import ModalScreen from "ModalScreen" /* 8730 */;
+import ModalContent from "ModalContent" /* 8731 */;
+import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8892 */;
+import ModalActionButton from "ModalActionButton" /* 11333 */;
+import ModalFooter from "ModalFooter" /* 12093 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 18343 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,7 +24,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 let c7 = "https://support.discord.com/hc/en-us/articles/42855178312087";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { content: { flexGrow: 1, width: "100%" }, upperHalf: { flex: 1, justifyContent: "flex-end", alignItems: "center" }, lowerHalf: { flex: 1 }, text: { textAlign: "center" }, body: { paddingHorizontal: nativeDefault.space.PX_16 } };
 let closure_8 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -55,7 +55,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] !== tmp4.text) {
     const obj2 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: text, children: tmp6 };
-    const tmp11 = hasOwnProperty(tmp(4754).Text, obj2);
+    const tmp11 = hasOwnProperty(tmp(4786).Text, obj2);
     cResult[2] = tmp4.text;
     cResult[3] = tmp11;
     let tmp9 = tmp11;
@@ -73,7 +73,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[5] !== tmp4.text) {
     const obj3 = { variant: "text-md/medium", color: "text-subtle", style: text2, children: tmp12 };
-    const tmp17 = hasOwnProperty(tmp(4754).Text, obj3);
+    const tmp17 = hasOwnProperty(tmp(4786).Text, obj3);
     cResult[5] = tmp4.text;
     cResult[6] = tmp17;
     let tmp15 = tmp17;
@@ -90,7 +90,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[8] !== tmp4.text) {
     const obj4 = { variant: "text-md/medium", color: "text-subtle", style: tmp4.text, children: tmp18 };
-    const tmp23 = hasOwnProperty(tmp(4754).Text, obj4);
+    const tmp23 = hasOwnProperty(tmp(4786).Text, obj4);
     cResult[8] = tmp4.text;
     cResult[9] = tmp23;
     let tmp21 = tmp23;
@@ -140,11 +140,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 const intl4 = tmp(1119).intl;
                 obj7.text = intl4.string(_modDef2780["6FXIU6"]);
                 const obj8 = { color: nativeDefault.colors.WHITE };
-                obj7.icon = hasOwnProperty(tmp(8860).LinkExternalSmallIcon, obj8);
+                obj7.icon = hasOwnProperty(tmp(8892).LinkExternalSmallIcon, obj8);
                 obj7.onPress = first;
-                items[1] = hasOwnProperty(tmp(11297).ModalActionButton, obj7);
+                items[1] = hasOwnProperty(tmp(11333).ModalActionButton, obj7);
                 obj6.children = items;
-                const tmp51 = timestampProducer(tmp(12057).ModalFooter, obj6);
+                const tmp51 = timestampProducer(tmp(12093).ModalFooter, obj6);
                 cResult[27] = tmp51;
                 let tmp47 = tmp51;
               } else {
@@ -154,7 +154,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 const obj9 = { children: null };
                 const items1 = [tmp38, tmp47];
                 obj9.children = items1;
-                const tmp54 = timestampProducer(tmp(8698).ModalScreen, obj9);
+                const tmp54 = timestampProducer(tmp(8730).ModalScreen, obj9);
                 cResult[28] = tmp38;
                 cResult[29] = tmp54;
                 let tmp52 = tmp54;
@@ -169,7 +169,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const items2 = [tmp30, tmp34];
           obj11.children = items2;
           obj10.children = timestampProducer(View, obj11);
-          const tmp42 = hasOwnProperty(tmp(8699).ModalContent, obj10);
+          const tmp42 = hasOwnProperty(tmp(8731).ModalContent, obj10);
           cResult[22] = tmp4.content;
           cResult[23] = tmp30;
           cResult[24] = tmp34;
@@ -186,7 +186,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj13 = { align: "center", spacing: nativeDefault.space.PX_16, children: null };
       const items3 = [tmp9, tmp24];
       obj13.children = items3;
-      const tmp29 = timestampProducer(tmp(5186).Stack, obj13);
+      const tmp29 = timestampProducer(tmp(5218).Stack, obj13);
       cResult[14] = tmp24;
       cResult[15] = tmp9;
       cResult[16] = tmp29;

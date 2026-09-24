@@ -1,14 +1,14 @@
-// Module ID: 9089
-// Function ID: 9090
+// Module ID: 9121
+// Function ID: 9122
 // Name: AvatarDecorationSampleV2
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 38, 1977, 9090, 9091, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 38, 1977, 9122, 9123, 2]
 
-// Module 9089 (AvatarDecorationSampleV2)
+// Module 9121 (AvatarDecorationSampleV2)
 import _modDef38 from "module_38" /* 38 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9091 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9123 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,7 +17,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
 let c8 = 0.8333333333333334;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles((arg0) => {
   const obj = { avatar: null, solidAvatar: null, avatarDecoration: null };
   const size = { position: "absolute", height: arg0 * c8, width: arg0 * c8, borderRadius: arg0 * c8 / 2, opacity: 0.8, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
@@ -47,7 +47,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((threeTierBundle)
       let tmp7 = cResult[2];
     }
     if (null == avatarSource) {
-      avatarSource = tmp4(9090);
+      avatarSource = tmp4(9122);
     }
     if (cResult[3] === tmp7) {
       if (cResult[4] === avatarSource) {
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((threeTierBundle)
         }
       }
       const obj4 = { avatarDecoration: item, size, animate };
-      const tmp14 = hasOwnProperty(tmp4(9091), obj4);
+      const tmp14 = hasOwnProperty(tmp4(9123), obj4);
       cResult[6] = animate;
       cResult[7] = item;
       cResult[8] = size;
@@ -124,7 +124,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((threeTierBundle)
   const obj = { style: items, resizeMode: "contain", source: null, accessible: false };
   items[1] = solidAvatar;
   if (null == avatarSource) {
-    avatarSource = tmp2(9090);
+    avatarSource = tmp2(9122);
   }
   const obj2 = { children: null };
   obj.source = avatarSource;

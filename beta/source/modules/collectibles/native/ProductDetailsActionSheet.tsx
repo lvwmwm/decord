@@ -1,26 +1,26 @@
-// Module ID: 8451
-// Function ID: 8452
+// Module ID: 8483
+// Function ID: 8484
 // Name: ProductDetailsActionSheet
-// Dependencies: [109, 32, 19, 17, 7789, 1080, 1078, 1089, 21, 3, 4758, 580, 5193, 4471, 558, 568, 4610, 1119, 7211, 1977, 8452, 8453, 8450, 7800, 9477, 7429, 7409, 13442, 11388, 9045, 1253, 9046, 1245, 504, 13443, 9109, 9111, 7801, 9113, 9114, 9116, 13444, 13454, 13459, 1181, 6863, 13460, 13471, 7397, 9151, 11031, 8506, 5188, 13474, 8448, 2]
+// Dependencies: [109, 32, 19, 17, 7821, 1080, 1078, 1089, 21, 3, 4790, 580, 5225, 4503, 558, 568, 4642, 1119, 7243, 1977, 8484, 8485, 8482, 7832, 9509, 7461, 7441, 13478, 11424, 9077, 1253, 9078, 1245, 504, 13479, 9141, 9143, 7833, 9145, 9146, 9148, 13480, 13490, 13495, 1181, 6895, 13496, 13507, 7429, 9183, 11067, 8538, 5220, 13510, 8480, 2]
 
-// Module 8451 (ProductDetailsActionSheet)
+// Module 8483 (ProductDetailsActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7800 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9045 */;
-import useCollectiblesShopProducts from "useCollectiblesShopProducts" /* 9151 */;
-import useFetchCollectiblesCategoriesAndPurchases from "useFetchCollectiblesCategoriesAndPurchases" /* 11031 */;
-import ProductDetailsActionSheetSkeletonDefault from "ProductDetailsActionSheetSkeleton" /* 13474 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7832 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9077 */;
+import useCollectiblesShopProducts from "useCollectiblesShopProducts" /* 9183 */;
+import useFetchCollectiblesCategoriesAndPurchases from "useFetchCollectiblesCategoriesAndPurchases" /* 11067 */;
+import ProductDetailsActionSheetSkeletonDefault from "ProductDetailsActionSheetSkeleton" /* 13510 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import "module_19";
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7789 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7821 */;
 
-const Sheet_BottomSheet = tmp(7397);
+const Sheet_BottomSheet = tmp(7429);
 require = fn;
 let closure_3 = ["shopAnalyticsContext"];
 let noop = fn(19);
@@ -34,18 +34,18 @@ const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
 let closure_17 = {};
 const logger = new LoggerDefault("ProductDetailsActionSheet");
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { position: "relative", flex: 1 }, actionButtons: null, previewProfileButton: null, previewProfileButtonLight: null, previewProfileButtonLightPressed: null, previewProfileButtonDark: null, previewProfileButtonDarkPressed: null, previewProfileButtonMidnight: null, badgeWrapper: null };
 const rect = { position: "absolute", top: 0, right: nativeDefault.space.PX_16, zIndex: 2, flexDirection: "row", gap: nativeDefault.space.PX_8 };
 obj.actionButtons = rect;
-let size = { width: fn(5193).MEDIUM_BUTTON_HEIGHT, height: fn(5193).MEDIUM_BUTTON_HEIGHT, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.CONTROL_SECONDARY_BORDER_DEFAULT };
+let size = { width: fn(5225).MEDIUM_BUTTON_HEIGHT, height: fn(5225).MEDIUM_BUTTON_HEIGHT, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.CONTROL_SECONDARY_BORDER_DEFAULT };
 obj.previewProfileButton = size;
 let obj3 = { backgroundColor: null };
-let native = fn(4471);
+let native = fn(4503);
 obj3.backgroundColor = native.setColorOpacity("white", 0.72);
 obj.previewProfileButtonLight = obj3;
 let obj4 = { backgroundColor: null };
-native = fn(4471);
+native = fn(4503);
 obj4.backgroundColor = native.setColorOpacity("white", 0.62);
 obj.previewProfileButtonLightPressed = obj4;
 let tmp5 = new LoggerDefault("ProductDetailsActionSheet");
@@ -65,9 +65,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((handlePreviewP
   const tmp4 = closure_19();
   dependencyMap = tmp4;
   const obj = handlePreviewPress(568);
-  const theme = handlePreviewPress(4471).useThemeContext().theme;
-  const obj2 = handlePreviewPress(4471);
-  const isThemeLightResult = handlePreviewPress(4610).isThemeLight(theme);
+  const theme = handlePreviewPress(4503).useThemeContext().theme;
+  const obj2 = handlePreviewPress(4503);
+  const isThemeLightResult = handlePreviewPress(4642).isThemeLight(theme);
   closure_3 = tmp6;
   const tmp7 = isThemeLightResult ? tmp4.previewProfileButtonLight : tmp4.previewProfileButtonDark;
   closure_4 = tmp7;
@@ -89,7 +89,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((handlePreviewP
               const intl = tmp(1119).intl;
               const stringResult = intl.string(tmp(1119).t["3Qcx6K"]);
               const obj4 = { size: "md", color: onTrackPress(580).colors.INTERACTIVE_ICON_DEFAULT };
-              const tmp17 = closure_15(tmp(7211).EyeIcon, obj4);
+              const tmp17 = closure_15(tmp(7243).EyeIcon, obj4);
               cResult[9] = stringResult;
               cResult[10] = tmp17;
               let tmp13 = tmp17;
@@ -149,9 +149,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((handlePreviewP
   const onTrackPress = handlePreviewPress.onTrackPress;
   const tmp = closure_19();
   dependencyMap = tmp;
-  const theme = handlePreviewPress(4471).useThemeContext().theme;
-  const obj = handlePreviewPress(4471);
-  const isThemeLightResult = handlePreviewPress(4610).isThemeLight(theme);
+  const theme = handlePreviewPress(4503).useThemeContext().theme;
+  const obj = handlePreviewPress(4503);
+  const isThemeLightResult = handlePreviewPress(4642).isThemeLight(theme);
   closure_3 = theme === ThemeTypes.ONYX;
   closure_4 = isThemeLightResult ? tmp.previewProfileButtonLight : tmp.previewProfileButtonDark;
   closure_5 = isThemeLightResult ? tmp.previewProfileButtonLightPressed : tmp.previewProfileButtonDarkPressed;
@@ -181,8 +181,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((handlePreviewP
   };
   const intl = tmp2(1119).intl;
   obj3.accessibilityLabel = intl.string(handlePreviewPress(1119).t["3Qcx6K"]);
-  const obj2 = handlePreviewPress(4610);
-  obj3.children = closure_15(handlePreviewPress(7211).EyeIcon, { size: "md", color: onTrackPress(580).colors.INTERACTIVE_ICON_DEFAULT });
+  const obj2 = handlePreviewPress(4642);
+  obj3.children = closure_15(handlePreviewPress(7243).EyeIcon, { size: "md", color: onTrackPress(580).colors.INTERACTIVE_ICON_DEFAULT });
   return closure_15(closure_9, obj3);
 });
 ReactCompilerGating = fn(558);
@@ -1238,7 +1238,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
       cResult[2] = _Math;
       cResult[3] = findIndexResult;
     }
-    tmpResult4 = tmp(7800);
+    tmpResult4 = tmp(7832);
   }
   if ("ready" === state) {
     class T {
@@ -1292,9 +1292,9 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
           return skuId.skuId === skuId;
         }
       }
-      const obj3 = { Illustration: tmp(8506).NoResults, body: tmp18, children: null };
+      const obj3 = { Illustration: tmp(8538).NoResults, body: tmp18, children: null };
       const obj4 = { text: tmp20, onPress: retry };
-      tmp18 = closure_1_15(tmp(5188).Button, obj4);
+      tmp18 = closure_1_15(tmp(5220).Button, obj4);
       obj3.children = tmp18;
       const tmp23 = closure_1_15(tmp(1181).EmptyState, obj3);
       cResult[13] = retry;
@@ -1332,14 +1332,14 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   skuId = skuId.skuId;
   const initialVariantIndex = skuId.initialVariantIndex;
   ({ analyticsLocations, stageCollectibleChangeForEditProfile } = skuId);
-  const collectiblesShopProduct = skuId(9151).useCollectiblesShopProduct(skuId, { needsCategory: false, seedCategoryStore: true });
+  const collectiblesShopProduct = skuId(9183).useCollectiblesShopProduct(skuId, { needsCategory: false, seedCategoryStore: true });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
   ({ state, retry } = collectiblesShopProduct);
-  const obj = skuId(9151);
-  const getOrFetchPurchases = skuId(11031).useGetOrFetchPurchases();
+  const obj = skuId(9183);
+  const getOrFetchPurchases = skuId(11067).useGetOrFetchPurchases();
   ({ hasPreviouslyFetched, fetchPurchasesError } = getOrFetchPurchases);
-  const obj2 = skuId(11031);
+  const obj2 = skuId(11067);
   const ref1 = noop.useRef(null);
   const items = [product, skuId, initialVariantIndex];
   if ("ready" === state) {
@@ -1368,22 +1368,22 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
           ref,
           children: closure_15(closure_22, obj3)
         };
-        return closure_15(tmp(7397).BottomSheet, obj4);
+        return closure_15(tmp(7429).BottomSheet, obj4);
       }
     }
   }
   if ("error" === state) {
-    const obj5 = { Illustration: tmp(8506).NoResults, body: null, children: null };
+    const obj5 = { Illustration: tmp(8538).NoResults, body: null, children: null };
     const intl = tmp(1119).intl;
     obj5.body = intl.string(tmp(1119).t.eAn6z2);
     const obj6 = { text: null, onPress: null };
     const intl2 = tmp(1119).intl;
     obj6.text = intl2.string(tmp(1119).t["+hivLW"]);
     obj6.onPress = retry;
-    obj5.children = closure_15(tmp(5188).Button, obj6);
+    obj5.children = closure_15(tmp(5220).Button, obj6);
     closure_15(tmp(1181).EmptyState, obj5);
   } else {
-    closure_15(initialVariantIndex(13474), {});
+    closure_15(initialVariantIndex(13510), {});
   }
 });
 ReactCompilerGating = fn(558);

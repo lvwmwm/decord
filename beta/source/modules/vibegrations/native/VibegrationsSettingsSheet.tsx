@@ -1,37 +1,37 @@
-// Module ID: 16993
-// Function ID: 16994
+// Module ID: 17003
+// Function ID: 17004
 // Name: VibegrationsSettingsSheet
-// Dependencies: [5, 32, 19, 17, 2100, 2067, 4409, 1376, 13365, 13364, 9307, 21, 4758, 580, 7224, 504, 1119, 3682, 9868, 13186, 4725, 5901, 5900, 5903, 5819, 6846, 4754, 5188, 7449, 7396, 9869, 558, 568, 5276, 5822, 5831, 4911, 12610, 2]
+// Dependencies: [5, 32, 19, 17, 2100, 2067, 4441, 1376, 13401, 13400, 9339, 21, 4790, 580, 7256, 504, 1119, 3714, 9900, 13222, 4757, 5933, 5932, 5935, 5851, 6878, 4786, 5220, 7481, 7428, 9901, 558, 568, 5308, 5854, 5863, 4943, 12646, 2]
 // Exports: default
 
-// Module 16993 (VibegrationsSettingsSheet)
+// Module 17003 (VibegrationsSettingsSheet)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 5276 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12610 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4757 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 5308 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12646 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 2100 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
-import VibegrationsChatStore from "VibegrationsChatStore" /* 13365 */;
-import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13364 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9307 */;
+import VibegrationsChatStore from "VibegrationsChatStore" /* 13401 */;
+import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13400 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9339 */;
 
 require = fn;
 let View = fn(17).View;
-let VibegrationsConnectionStore = fn(13364);
+let VibegrationsConnectionStore = fn(13400);
 ({ requestProjectRebuild: closure_12, sendUserMessage: map1, submitProjectSettings: closure_14 } = VibegrationsConnectionStore);
 let VibegrationsConnectionStore = VibegrationsConnectionStore_mod;
 const jsxProd = fn(21);
 ({ jsx: closure_17, jsxs: closure_18, Fragment: closure_19 } = jsxProd);
 const VibegrationsSettingsSheet = "VibegrationsSettingsSheet";
 const VibegrationsSettingsChannelSheet = "VibegrationsSettingsChannelSheet";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_22 = createStyles.createStyles((paddingBottom) => {
   const obj = { container: { gap: nativeDefault.space.PX_16, paddingBottom }, section: null, secretRow: null, secretRowInfo: null };
   const obj2 = { gap: nativeDefault.space.PX_16, paddingBottom };
@@ -252,7 +252,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Vibegr
         obj3.channels = channels;
         obj3.selectedChannel = found;
         const intl = util.intl;
-        obj3.noChannelOptionLabel = intl.string(_modDef3682.aO4AM6);
+        obj3.noChannelOptionLabel = intl.string(_modDef3714.aO4AM6);
         obj3.onSelect = function onSelect(id) {
           let str;
           if (id != null) {
@@ -638,12 +638,12 @@ export default function VibegrationsSettingsSheet(projectId) {
   const memo3 = obj2.useMemo(() => {
     const obj = { id: "settings", label: null, count: null, page: null };
     const intl = util.intl;
-    obj.label = intl.string(_modDef3682.jczqxT);
+    obj.label = intl.string(_modDef3714.jczqxT);
     obj.count = found.length;
     const items = [obj, ];
     const obj2 = { id: "secrets", label: null, count: null, page: null };
     const intl2 = util.intl;
-    obj2.label = intl2.string(_modDef3682.iD7xfZ);
+    obj2.label = intl2.string(_modDef3714.iD7xfZ);
     obj2.count = memo2.length;
     items[1] = obj2;
     return items;
@@ -786,9 +786,9 @@ export default function VibegrationsSettingsSheet(projectId) {
                   if (application_id == null) {
                     _null = null;
                   }
-                  _null2(13186)(_null);
+                  _null2(13222)(_null);
                   let prop;
-                  const tmp19 = _null2(13186);
+                  const tmp19 = _null2(13222);
                   if (project2 != null) {
                     prop = project2.preview_application_id;
                   }
@@ -796,16 +796,16 @@ export default function VibegrationsSettingsSheet(projectId) {
                   if (prop == null) {
                     _null2 = null;
                   }
-                  _null2(13186)(_null2);
-                  const tmp27 = _null2(13186);
+                  _null2(13222)(_null2);
+                  const tmp27 = _null2(13222);
                 }
               }
-              _null2(4725).hideActionSheet(closure_1_20);
+              _null2(4757).hideActionSheet(closure_1_20);
               c5 = 1;
-              const obj = _null2(4725);
+              const obj = _null2(4757);
             }
             const intl = _null(1119).intl;
-            closure_1_13(closure_131_0, intl.string(_null2(3682).gqJFu0));
+            closure_1_13(closure_131_0, intl.string(_null2(3714).gqJFu0));
           }
           c5 = 0;
           closure_131_12(false);

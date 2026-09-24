@@ -1,15 +1,15 @@
-// Module ID: 12406
-// Function ID: 12407
+// Module ID: 12442
+// Function ID: 12443
 // Name: useChatInputFloatingWidth
-// Dependencies: [19, 12092, 558, 568, 4497, 4759, 2]
+// Dependencies: [19, 12128, 558, 568, 4529, 4791, 2]
 
-// Module 12406 (useChatInputFloatingWidth)
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
+// Module 12442 (useChatInputFloatingWidth)
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_3 = fn(12092).CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG;
+let closure_3 = fn(12128).CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG;
 let closure_4 = { code: "function useChatInputFloatingWidthTsx1(){const{collapsedWidth,expandedWidth,progress}=this.__closure;return{width:collapsedWidth+(expandedWidth-collapsedWidth)*progress.get()};}" };
 const __initData = { code: "function useChatInputFloatingWidthTsx2(){const{collapsedWidth,expandedWidth,progress}=this.__closure;return{width:collapsedWidth+(expandedWidth-collapsedWidth)*progress.get()};}" };
 const ReactCompilerGating = fn(558);

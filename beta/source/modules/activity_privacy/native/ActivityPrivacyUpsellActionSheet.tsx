@@ -1,10 +1,10 @@
-// Module ID: 16224
-// Function ID: 16225
+// Module ID: 16234
+// Function ID: 16235
 // Name: ActivityPrivacyUpsellActionSheet
-// Dependencies: [19, 21, 558, 568, 15118, 15120, 2]
+// Dependencies: [19, 21, 558, 568, 15128, 15130, 2]
 
-// Module 16224 (ActivityPrivacyUpsellActionSheet)
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 15118 */;
+// Module 16234 (ActivityPrivacyUpsellActionSheet)
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 15128 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((direction) => {
   direction = direction.direction;
   const affectedGuildIds = direction.affectedGuildIds;
   const settingName = direction.settingName;
-  const tmp4 = direction === direction(15118).ChangeDirection.RESTRICTING;
+  const tmp4 = direction === direction(15128).ChangeDirection.RESTRICTING;
   if (cResult[0] === tmp4) {
     if (cResult[1] === settingName) {
       let tmp5 = cResult[2];
@@ -57,7 +57,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((direction) => {
       obj2.confirmText = confirmText;
       obj2.toastContent = toastContent;
       obj2.onConfirm = tmp7;
-      const tmp11 = jsx(affectedGuildIds(15120), { direction, affectedGuildIds: null, title: null, subtitle: null, confirmText: null, toastContent: null, onConfirm: null });
+      const tmp11 = jsx(affectedGuildIds(15130), { direction, affectedGuildIds: null, title: null, subtitle: null, confirmText: null, toastContent: null, onConfirm: null });
       cResult[6] = affectedGuildIds;
       cResult[7] = confirmText;
       cResult[8] = direction;
@@ -81,7 +81,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((direction) => {
     tmp7 = C;
   }
   const obj = direction(568);
-  const upsellStrings = direction(15118).getUpsellStrings(tmp4, settingName);
+  const upsellStrings = direction(15128).getUpsellStrings(tmp4, settingName);
   cResult[0] = tmp4;
   cResult[1] = settingName;
   cResult[2] = upsellStrings;
@@ -89,11 +89,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((direction) => {
 }) : ((direction) => {
   direction = direction.direction;
   const affectedGuildIds = direction.affectedGuildIds;
-  const upsellStrings = direction(15118).getUpsellStrings(direction === direction(15118).ChangeDirection.RESTRICTING, direction.settingName);
+  const upsellStrings = direction(15128).getUpsellStrings(direction === direction(15128).ChangeDirection.RESTRICTING, direction.settingName);
   const items = [direction, affectedGuildIds];
   ({ title, subtitle, confirmText, toastContent } = upsellStrings);
   const onConfirm = noop.useCallback(() => {
     const result = ActivityPrivacyUpsellUtils.applyBulkGuildRestrictionChange(direction, affectedGuildIds);
   }, items);
-  return jsx(affectedGuildIds(15120), { direction, affectedGuildIds, title, subtitle, confirmText, toastContent, onConfirm });
+  return jsx(affectedGuildIds(15130), { direction, affectedGuildIds, title, subtitle, confirmText, toastContent, onConfirm });
 });

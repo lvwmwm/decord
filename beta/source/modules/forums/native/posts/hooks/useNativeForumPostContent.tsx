@@ -1,15 +1,15 @@
-// Module ID: 12154
-// Function ID: 12155
+// Module ID: 12190
+// Function ID: 12191
 // Name: useNativeForumPostContent
-// Dependencies: [1078, 4758, 558, 568, 1119, 7514, 5105, 2]
+// Dependencies: [1078, 4790, 558, 568, 1119, 7546, 5137, 2]
 
-// Module 12154 (useNativeForumPostContent)
+// Module 12190 (useNativeForumPostContent)
 import c from "c" /* 568 */;
 import Constants from "Constants" /* 1078 */;
 import util from "util" /* 1119 */;
-import StickersUtils from "StickersUtils" /* 5105 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7514 */;
-import createStyles from "createStyles" /* 4758 */;
+import StickersUtils from "StickersUtils" /* 5137 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7546 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -148,7 +148,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   }
                   tmp16 = MessageFlags;
                 }
-                tmpResult = tmp(5105);
+                tmpResult = tmp(5137);
               }
               const _Symbol6 = Symbol;
               if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {

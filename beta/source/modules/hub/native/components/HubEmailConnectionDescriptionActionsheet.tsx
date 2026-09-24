@@ -1,20 +1,20 @@
-// Module ID: 12882
-// Function ID: 12883
+// Module ID: 12918
+// Function ID: 12919
 // Name: HubEmailConnectionDescriptionActionsheet
-// Dependencies: [19, 21, 4758, 558, 568, 7396, 1119, 4754, 7397, 2]
+// Dependencies: [19, 21, 4790, 558, 568, 7428, 1119, 4786, 7429, 2]
 
-// Module 12882 (HubEmailConnectionDescriptionActionsheet)
+// Module 12918 (HubEmailConnectionDescriptionActionsheet)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c2, jsxs: c3 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ description: { marginBottom: 8 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -27,7 +27,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { title: null };
     const intl = tmp(1119).intl;
     obj2.title = intl.string(tmp(1119).t["48kg+O"]);
-    const tmp7 = React2(tmp(7396).BottomSheetTitleHeader, obj2);
+    const tmp7 = React2(tmp(7428).BottomSheetTitleHeader, obj2);
     cResult[0] = tmp7;
     let first = tmp7;
   } else {
@@ -43,7 +43,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] !== tmp4.description) {
     const obj3 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: tmp8 };
-    const tmp12 = React2(tmp(4754).Text, obj3);
+    const tmp12 = React2(tmp(4786).Text, obj3);
     cResult[2] = tmp4.description;
     cResult[3] = tmp12;
     let tmp10 = tmp12;
@@ -60,7 +60,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[5] !== tmp4.description) {
     const obj4 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: tmp13 };
-    const tmp17 = React2(tmp(4754).Text, obj4);
+    const tmp17 = React2(tmp(4786).Text, obj4);
     cResult[5] = tmp4.description;
     cResult[6] = tmp17;
     let tmp15 = tmp17;

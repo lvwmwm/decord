@@ -1,16 +1,16 @@
-// Module ID: 8538
-// Function ID: 8539
+// Module ID: 8570
+// Function ID: 8571
 // Name: useVideoControls
-// Dependencies: [32, 19, 4750, 21, 562, 1252, 8539, 4758, 558, 568, 504, 8540, 8548, 8541, 8536, 8549, 2]
+// Dependencies: [32, 19, 4782, 21, 562, 1252, 8571, 4790, 558, 568, 504, 8572, 8580, 8573, 8568, 8581, 2]
 // Exports: initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8538 (useVideoControls)
+// Module 8570 (useVideoControls)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 8536 */;
-import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8539 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 8568 */;
+import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8571 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 const require = globalThis.__r;
 
@@ -18,7 +18,7 @@ require = fn;
 const jsx = fn(21).jsx;
 const module_562 = fn(562);
 const obj5 = module_562.create(() => ({ controls: "Set", paused: true }));
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ slider: { marginBottom: 8 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

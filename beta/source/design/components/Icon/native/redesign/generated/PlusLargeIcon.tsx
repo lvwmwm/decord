@@ -1,13 +1,13 @@
-// Module ID: 11257
-// Function ID: 11258
+// Module ID: 11293
+// Function ID: 11294
 // Name: PlusLargeIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 11258, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 11294, 4493, 2]
 
-// Module 11257 (PlusLargeIcon)
+// Module 11293 (PlusLargeIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod11258 from "module_11258" /* 11258 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod11294 from "module_11294" /* 11294 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const PlusLargeIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(11258);
+    const tmpResult = tmp(11294);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const PlusLargeIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11258, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11294, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

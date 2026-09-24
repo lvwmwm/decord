@@ -1,12 +1,12 @@
-// Module ID: 14039
-// Function ID: 14040
+// Module ID: 14076
+// Function ID: 14077
 // Name: NUFChannelsActionSheet
-// Dependencies: [19, 2042, 21, 558, 568, 4725, 14040, 1119, 14047, 7397, 2]
+// Dependencies: [19, 2042, 21, 558, 568, 4757, 14077, 1119, 14084, 7429, 2]
 
-// Module 14039 (NUFChannelsActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import NUFChannelIllustrationDefault from "NUFChannelIllustration" /* 14040 */;
-import NUFTemplateV2Default from "NUFTemplateV2" /* 14047 */;
+// Module 14076 (NUFChannelsActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import NUFChannelIllustrationDefault from "NUFChannelIllustration" /* 14077 */;
+import NUFTemplateV2Default from "NUFTemplateV2" /* 14084 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -83,7 +83,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
     }
     return tmp20;
   }
-  const tmp21 = jsx(markAsDismissed(7397).BottomSheet, { onDismiss: tmp5, startExpanded: true, children: tmp16 });
+  const tmp21 = jsx(markAsDismissed(7429).BottomSheet, { onDismiss: tmp5, startExpanded: true, children: tmp16 });
   cResult[10] = tmp5;
   cResult[11] = tmp16;
   cResult[12] = tmp21;
@@ -117,7 +117,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
   obj2.CTALabel = intl3.string(markAsDismissed(1119).t.BddRzS);
   obj2.onCTAPress = callback;
   obj.children = jsx(NUFTemplateV2Default, { illustration: jsx(NUFChannelIllustrationDefault, {}), title: null, description: null, CTALabel: null, onCTAPress: null });
-  return jsx(markAsDismissed(7397).BottomSheet, {
+  return jsx(markAsDismissed(7429).BottomSheet, {
     onDismiss() {
       let tmpResult;
       if (markAsDismissed != null) {

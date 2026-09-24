@@ -1,20 +1,20 @@
-// Module ID: 15197
-// Function ID: 15198
+// Module ID: 15207
+// Function ID: 15208
 // Name: FamilyCenterParentalControlsContentAndSocial
-// Dependencies: [19, 17, 1078, 8238, 21, 558, 568, 11594, 1119, 2112, 14953, 2]
+// Dependencies: [19, 17, 1078, 8270, 21, 558, 568, 11630, 1119, 2112, 14988, 2]
 
-// Module 15197 (FamilyCenterParentalControlsContentAndSocial)
+// Module 15207 (FamilyCenterParentalControlsContentAndSocial)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
-import SettingLayoutDefault from "SettingLayout" /* 14953 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
+import SettingLayoutDefault from "SettingLayout" /* 14988 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
-const MobileUserSettings = fn(8238).MobileUserSettings;
+const MobileUserSettings = fn(8270).MobileUserSettings;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -29,7 +29,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj3.settings = items;
     const intl = tmp(1119).intl;
     const obj4 = { learnMoreLink: null };
-    const tmpResult = tmp(11594);
+    const tmpResult = tmp(11630);
     obj4.learnMoreLink = HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.EXPLICIT_MEDIA_REDACTION);
     obj3.subLabel = intl.format(tmp(1119).t.dliU4j, obj4);
     const items1 = [obj3, , ];

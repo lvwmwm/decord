@@ -1,19 +1,19 @@
-// Module ID: 12193
-// Function ID: 12194
+// Module ID: 12229
+// Function ID: 12230
 // Name: AppsBanner
-// Dependencies: [19, 17, 21, 4758, 558, 568, 12194, 1119, 12191, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 12230, 1119, 12227, 2]
 
-// Module 12193 (AppsBanner)
+// Module 12229 (AppsBanner)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import BannerBaseDefault from "BannerBase" /* 12191 */;
-import OnboardingAppsRocketDefault from "OnboardingAppsRocket" /* 12194 */;
+import BannerBaseDefault from "BannerBase" /* 12227 */;
+import OnboardingAppsRocketDefault from "OnboardingAppsRocket" /* 12230 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ rocketIconContainer: { position: "absolute", top: -20 }, rocketIcon: { width: 90, height: 90 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

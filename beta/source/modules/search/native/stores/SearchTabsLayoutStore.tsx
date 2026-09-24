@@ -1,18 +1,18 @@
-// Module ID: 12510
-// Function ID: 12511
+// Module ID: 12546
+// Function ID: 12547
 // Name: SearchTabsLayoutStore
-// Dependencies: [2045, 7525, 12511, 12512, 12513, 12487, 8127, 560, 12488, 504, 577, 2]
+// Dependencies: [2045, 7557, 12547, 12548, 12549, 12523, 8159, 560, 12524, 504, 577, 2]
 
-// Module 12510 (SearchTabsLayoutStore)
+// Module 12546 (SearchTabsLayoutStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import SearchUtils from "SearchUtils" /* 12488 */;
+import SearchUtils from "SearchUtils" /* 12524 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import SearchMessageStore from "SearchMessageStore" /* 7525 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12511 */;
-import SearchMemberTabStore from "SearchMemberTabStore" /* 12512 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12513 */;
-import SearchQueryStore from "SearchQueryStore" /* 12487 */;
+import SearchMessageStore from "SearchMessageStore" /* 7557 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12547 */;
+import SearchMemberTabStore from "SearchMemberTabStore" /* 12548 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12549 */;
+import SearchQueryStore from "SearchQueryStore" /* 12523 */;
 
 require = fn;
 function handleSearchQuery(searchContext) {
@@ -160,7 +160,7 @@ function computeLayoutForAll() {
   }
   return flag;
 }
-const SearchConstants = fn(8127);
+const SearchConstants = fn(8159);
 ({ SearchTabs: closure_9, SEARCH_TYPE_TO_SEARCH_INITIAL_TABS: c10, SEARCH_TYPE_TO_SEARCH_RESULT_TABS: closure_11 } = SearchConstants);
 let closure_12 = [];
 const map = new Map();

@@ -1,15 +1,15 @@
-// Module ID: 6152
-// Function ID: 6153
+// Module ID: 6184
+// Function ID: 6185
 // Name: DiscordWordmarkLogo
-// Dependencies: [17, 21, 558, 568, 580, 4462, 6153, 2]
+// Dependencies: [17, 21, 558, 568, 580, 4494, 6185, 2]
 
-// Module 6152 (DiscordWordmarkLogo)
+// Module 6184 (DiscordWordmarkLogo)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import _modDef6153 from "module_6153" /* 6153 */;
+import useToken from "useToken" /* 4494 */;
+import _modDef6185 from "module_6185" /* 6185 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ export const DiscordWordmarkLogo = ReactCompilerGating.isReactCompilerEnabled() 
     }
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { uri: _modDef6153 };
+      const obj4 = { uri: _modDef6185 };
       cResult[4] = obj4;
       let tmp12 = obj4;
     } else {
@@ -130,7 +130,7 @@ export const DiscordWordmarkLogo = ReactCompilerGating.isReactCompilerEnabled() 
     tmp5 = null != ICON_STRONG && typeof ICON_STRONG === "string";
   }
   const obj4 = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj4.source = { uri: _modDef6153 };
+  obj4.source = { uri: _modDef6185 };
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size, tmp6];
   obj4.style = items;

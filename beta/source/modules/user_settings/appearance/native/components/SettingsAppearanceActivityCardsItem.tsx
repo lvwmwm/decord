@@ -1,11 +1,11 @@
-// Module ID: 15553
-// Function ID: 15554
+// Module ID: 15563
+// Function ID: 15564
 // Name: SettingsAppearanceActivityCardsItem
-// Dependencies: [19, 21, 558, 568, 580, 15554, 8995, 2]
+// Dependencies: [19, 21, 558, 568, 580, 15564, 9027, 2]
 
-// Module 15553 (SettingsAppearanceActivityCardsItem)
+// Module 15563 (SettingsAppearanceActivityCardsItem)
 import nativeDefault from "native" /* 580 */;
-import SettingsAppearanceActivityCardItemDefault from "SettingsAppearanceActivityCardItem" /* 15554 */;
+import SettingsAppearanceActivityCardItemDefault from "SettingsAppearanceActivityCardItem" /* 15564 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -50,7 +50,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp8;
   }
-  const tmp9 = jsx(animatedStyles(8995).FlashList, { contentContainerStyle: first, data: cards, renderItem: tmp6, keyExtractor: tmp7, showsHorizontalScrollIndicator: false, horizontal: true });
+  const tmp9 = jsx(animatedStyles(9027).FlashList, { contentContainerStyle: first, data: cards, renderItem: tmp6, keyExtractor: tmp7, showsHorizontalScrollIndicator: false, horizontal: true });
   cResult[4] = cards;
   cResult[5] = tmp6;
   cResult[6] = tmp9;
@@ -70,7 +70,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     showsHorizontalScrollIndicator: false,
     horizontal: true
   };
-  return jsx(animatedStyles(8995).FlashList, {
+  return jsx(animatedStyles(9027).FlashList, {
     contentContainerStyle: { paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 },
     data: animatedStyles.cards,
     renderItem(item) {

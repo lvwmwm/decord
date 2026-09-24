@@ -1,16 +1,16 @@
-// Module ID: 11650
-// Function ID: 11651
+// Module ID: 11686
+// Function ID: 11687
 // Name: useLoadMessageContentEntries
-// Dependencies: [32, 5, 19, 4985, 2008, 9304, 8455, 7410, 8406, 38, 8413, 1982, 8403, 558, 568, 7546, 2]
+// Dependencies: [32, 5, 19, 5017, 2008, 9336, 8487, 7442, 8438, 38, 8445, 1982, 8435, 558, 568, 7578, 2]
 
-// Module 11650 (useLoadMessageContentEntries)
+// Module 11686 (useLoadMessageContentEntries)
 import _modDef38 from "module_38" /* 38 */;
 import Server from "Server" /* 1982 */;
-import useAvatarColor from "useAvatarColor" /* 8406 */;
+import useAvatarColor from "useAvatarColor" /* 8438 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 4985 */;
+import ApplicationStore from "ApplicationStore" /* 5017 */;
 
 const require = globalThis.__r;
 
@@ -684,7 +684,7 @@ function isMessageRenderable(message) {
     let tmp2 = nextResult;
     let tmp3 = require;
     if (nextResult.type === Server.ComponentType.CONTENT_INVENTORY_ENTRY) {
-      let tmp3Result = tmp3(8403);
+      let tmp3Result = tmp3(8435);
       let obj = { component: null, message: null };
       let obj2 = { contentInventoryEntry: null };
       obj2.contentInventoryEntry = tmp2.contentInventoryEntry;
@@ -701,9 +701,9 @@ function isMessageRenderable(message) {
   return true;
 }
 const ImageSizes = fn(2008).ImageSizes;
-const promiseDeduper = new fn(9304).PromiseDeduper();
-const promiseDeduper3 = new fn(9304).PromiseDeduper();
-const promiseDeduper4 = new fn(9304).PromiseDeduper();
+const promiseDeduper = new fn(9336).PromiseDeduper();
+const promiseDeduper3 = new fn(9336).PromiseDeduper();
+const promiseDeduper4 = new fn(9336).PromiseDeduper();
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/interaction_components/content_inventory_entry/native/useLoadMessageContentEntries.tsx");
@@ -761,7 +761,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadM
     tmp27 = cResult[4];
   }
   const tmp19Result = tmp19(set2.useState(tmp21), 2);
-  const colorStore = tmp(8406).useColorStore(tmp27);
+  const colorStore = tmp(8438).useColorStore(tmp27);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     _require = asyncGeneratorStep(async (arg0, value) => {
       if (c7 === 2) {

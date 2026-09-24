@@ -1,20 +1,20 @@
-// Module ID: 13843
-// Function ID: 13844
+// Module ID: 13879
+// Function ID: 13880
 // Name: useMarketablePowerupPerks
-// Dependencies: [19, 4647, 4648, 4651, 558, 568, 504, 12741, 4687, 2]
+// Dependencies: [19, 4679, 4680, 4683, 558, 568, 504, 12777, 4719, 2]
 
-// Module 13843 (useMarketablePowerupPerks)
-import Powerups from "Powerups" /* 4651 */;
-import useGameServerPerkDefault from "useGameServerPerk" /* 12741 */;
+// Module 13879 (useMarketablePowerupPerks)
+import Powerups from "Powerups" /* 4683 */;
+import useGameServerPerkDefault from "useGameServerPerk" /* 12777 */;
 import noop from "module_19" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4647 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4679 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const GuildPowerupsConstants = fn(4648);
+const GuildPowerupsConstants = fn(4680);
 const GuildPowerupType = GuildPowerupsConstants.GuildPowerupType;
-let items = [...Array.from(tmp2.GUILD_TAG_BADGE_PACKS_WAVE_ONE_SKU_ID_SET), ...Array.from(tmp2.GUILD_TAG_BADGE_PACKS_WAVE_TWO_SKU_ID_SET), fn(4651).VANITY_URL_POWERUP_SKU_ID];
+let items = [...Array.from(tmp2.GUILD_TAG_BADGE_PACKS_WAVE_ONE_SKU_ID_SET), ...Array.from(tmp2.GUILD_TAG_BADGE_PACKS_WAVE_TWO_SKU_ID_SET), fn(4683).VANITY_URL_POWERUP_SKU_ID];
 let set = new Set(items);
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -57,7 +57,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Set = Set;
     set = new Set(set);
     if (serverThemeRollbackEnabled) {
-      set.add(tmp(4651).GUILD_POWERUP_GUILD_THEME_SKU_ID);
+      set.add(tmp(4683).GUILD_POWERUP_GUILD_THEME_SKU_ID);
     }
     cResult[3] = serverThemeRollbackEnabled;
     cResult[4] = set;
@@ -115,7 +115,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp2;
   });
-  let tmp2 = stateFromStores(12741)(arg0);
+  let tmp2 = stateFromStores(12777)(arg0);
   dependencyMap = tmp2;
   const obj = require("initialize");
   const serverThemeRollbackEnabled = require("ServerThemeExperiment").useServerThemeRollbackEnabled(arg0, "useMarketablePowerupPerks");

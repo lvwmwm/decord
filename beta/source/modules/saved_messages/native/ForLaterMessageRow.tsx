@@ -1,13 +1,13 @@
-// Module ID: 12362
-// Function ID: 12363
+// Module ID: 12398
+// Function ID: 12399
 // Name: ForLaterMessageRow
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4693, 1368, 2023, 8195, 8928, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4725, 1368, 2023, 8227, 8960, 2]
 
-// Module 12362 (ForLaterMessageRow)
+// Module 12398 (ForLaterMessageRow)
 import nativeDefault from "native" /* 580 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import RowGeneratorDefault from "RowGenerator" /* 8195 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import RowGeneratorDefault from "RowGenerator" /* 8227 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { preview: { marginHorizontal: -16, marginTop: -9, overflow: "hidden" }, flushToCardBottom: { marginBottom: -16, borderBottomLeftRadius: nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS, borderBottomRightRadius: nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS }, footer: { paddingHorizontal: 16, paddingTop: 8 } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -32,11 +32,11 @@ export const ForLaterMessageRow = ReactCompilerGating.isReactCompilerEnabled() ?
   const tmp6 = useThemeDefault();
   if (cResult[0] !== tmp6) {
     let obj2 = { seeMoreLabelColor: tmp5(580).colors.TEXT_DEFAULT };
-    const tmp8 = tmp(4758).createNativeStyleProperties(obj2)(tmp6);
+    const tmp8 = tmp(4790).createNativeStyleProperties(obj2)(tmp6);
     cResult[0] = tmp6;
     cResult[1] = tmp8;
     let tmp7 = tmp8;
-    const tmpResult = tmp(4758);
+    const tmpResult = tmp(4790);
   } else {
     tmp7 = cResult[1];
   }
@@ -74,7 +74,7 @@ export const ForLaterMessageRow = ReactCompilerGating.isReactCompilerEnabled() ?
     }
     const _Symbol4 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = new tmp5(8195)();
+      const obj4 = new tmp5(8227)();
       let obj3 = { renderEmbeds: tmp11, inlineEmbedMedia: tmp13, inlineAttachmentMedia: tmp15, renderReplies: false, renderExecutedCommands: false, animateEmoji: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderThreadEmbeds: false, renderForumPostActions: false, ignoreMentioned: true, shouldDisableInteractiveComponents: true };
       obj4.setOptions(obj3);
       cResult[8] = obj4;
@@ -151,7 +151,7 @@ export const ForLaterMessageRow = ReactCompilerGating.isReactCompilerEnabled() ?
         }
       }
       const obj7 = { pointerEvents: "none", horizontalOffset: 0, modifyRow: tmp9, message, rowGenerator: tmp17, maxHeight };
-      const tmp28 = closure_5(tmp5(8928), obj7);
+      const tmp28 = closure_5(tmp5(8960), obj7);
       cResult[12] = maxHeight;
       cResult[13] = message;
       cResult[14] = tmp9;

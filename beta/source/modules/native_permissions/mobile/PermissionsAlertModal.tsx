@@ -1,12 +1,12 @@
-// Module ID: 5367
-// Function ID: 5368
+// Module ID: 5399
+// Function ID: 5400
 // Name: PermissionsAlertModal
-// Dependencies: [19, 21, 558, 568, 1119, 5116, 5116, 2]
+// Dependencies: [19, 21, 558, 568, 1119, 5148, 5148, 2]
 
-// Module 5367 (PermissionsAlertModal)
+// Module 5399 (PermissionsAlertModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AlertModal from "AlertModal" /* 5116 */;
+import AlertModal from "AlertModal" /* 5148 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -29,7 +29,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] !== onConfirm) {
     const obj2 = { onPress: onConfirm, text: first };
-    const tmp8 = React2(tmp(5116).AlertActionButton, obj2, "confirm");
+    const tmp8 = React2(tmp(5148).AlertActionButton, obj2, "confirm");
     cResult[1] = onConfirm;
     cResult[2] = tmp8;
     let tmp6 = tmp8;
@@ -40,7 +40,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { variant: "secondary", text: null };
     const intl2 = tmp(1119).intl;
     obj3.text = intl2.string(tmp(1119).t.cpT0Cq);
-    const tmp11 = React2(tmp(5116).AlertActionButton, obj3, "close");
+    const tmp11 = React2(tmp(5148).AlertActionButton, obj3, "close");
     cResult[3] = tmp11;
     let tmp9 = tmp11;
   } else {
@@ -50,7 +50,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj4 = { children: null };
     const items = [tmp6, tmp9];
     obj4.children = items;
-    const tmp14 = React3(tmp(5116).AlertActions, obj4);
+    const tmp14 = React3(tmp(5148).AlertActions, obj4);
     cResult[4] = tmp6;
     cResult[5] = tmp14;
     let tmp12 = tmp14;

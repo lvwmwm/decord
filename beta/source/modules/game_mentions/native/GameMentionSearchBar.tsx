@@ -1,30 +1,30 @@
-// Module ID: 12551
-// Function ID: 12552
+// Module ID: 12587
+// Function ID: 12588
 // Name: GameMentionSearchBar
-// Dependencies: [19, 17, 21, 4758, 580, 12537, 558, 568, 9346, 4754, 1119, 8876, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 12573, 558, 568, 9378, 4786, 1119, 8908, 2]
 
-// Module 12551 (GameMentionSearchBar)
+// Module 12587 (GameMentionSearchBar)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Form from "Form" /* 8876 */;
-import GameControllerIcon from "GameControllerIcon" /* 9346 */;
-import useGameMentionSearchBarHeight from "useGameMentionSearchBarHeight" /* 12537 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Form from "Form" /* 8908 */;
+import GameControllerIcon from "GameControllerIcon" /* 9378 */;
+import useGameMentionSearchBarHeight from "useGameMentionSearchBarHeight" /* 12573 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND }, headerRow: null, icon: null, description: null, divider: null };
 let obj3 = { backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
-obj.headerRow = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: fn(12537).GAME_MENTION_SEARCH_BAR_HEADER_PADDING_VERTICAL };
+obj.headerRow = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: fn(12573).GAME_MENTION_SEARCH_BAR_HEADER_PADDING_VERTICAL };
 obj.icon = { marginRight: 12 };
-let obj4 = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: fn(12537).GAME_MENTION_SEARCH_BAR_HEADER_PADDING_VERTICAL };
-obj.description = { paddingHorizontal: 16, paddingBottom: fn(12537).GAME_MENTION_SEARCH_BAR_DESCRIPTION_PADDING_BOTTOM };
-let obj5 = { paddingHorizontal: 16, paddingBottom: fn(12537).GAME_MENTION_SEARCH_BAR_DESCRIPTION_PADDING_BOTTOM };
+let obj4 = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: fn(12573).GAME_MENTION_SEARCH_BAR_HEADER_PADDING_VERTICAL };
+obj.description = { paddingHorizontal: 16, paddingBottom: fn(12573).GAME_MENTION_SEARCH_BAR_DESCRIPTION_PADDING_BOTTOM };
+let obj5 = { paddingHorizontal: 16, paddingBottom: fn(12573).GAME_MENTION_SEARCH_BAR_DESCRIPTION_PADDING_BOTTOM };
 obj.divider = { marginLeft: 0, backgroundColor: nativeDefault.colors.MOBILE_COMMAND_BAR_DIVIDER };
 let closure_5 = createStyles.createStyles(obj);
 const ReactCompilerGating = fn(558);
@@ -37,7 +37,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_5();
   if (cResult[0] !== tmp4.icon) {
     const obj2 = { size: "sm", style: tmp4.icon };
-    const tmp7 = React3(tmp(9346).GameControllerIcon, obj2);
+    const tmp7 = React3(tmp(9378).GameControllerIcon, obj2);
     cResult[0] = tmp4.icon;
     cResult[1] = tmp7;
     let tmp5 = tmp7;
@@ -45,8 +45,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { variant: tmp(12537).GAME_MENTION_SEARCH_BAR_TITLE_VARIANT, color: "mobile-text-heading-primary", children: "@game" };
-    const tmp10 = React3(tmp(4754).Text, obj3);
+    const obj3 = { variant: tmp(12573).GAME_MENTION_SEARCH_BAR_TITLE_VARIANT, color: "mobile-text-heading-primary", children: "@game" };
+    const tmp10 = React3(tmp(4786).Text, obj3);
     cResult[2] = tmp10;
     let tmp8 = tmp10;
   } else {
@@ -66,8 +66,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp13 = cResult[6];
     }
     if (cResult[7] !== tmp4.description) {
-      const obj4 = { style: tmp4.description, variant: tmp(12537).GAME_MENTION_SEARCH_BAR_DESCRIPTION_VARIANT, color: "text-muted", children: tmp13 };
-      const tmp17 = React3(tmp(4754).Text, obj4);
+      const obj4 = { style: tmp4.description, variant: tmp(12573).GAME_MENTION_SEARCH_BAR_DESCRIPTION_VARIANT, color: "text-muted", children: tmp13 };
+      const tmp17 = React3(tmp(4786).Text, obj4);
       cResult[7] = tmp4.description;
       cResult[8] = tmp17;
       let tmp15 = tmp17;
@@ -80,7 +80,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       if (cResult[12] !== tmp4.divider) {
         const obj5 = { style: tmp4.divider };
-        const tmp24 = React3(tmp(8876).FormDivider, obj5);
+        const tmp24 = React3(tmp(8908).FormDivider, obj5);
         cResult[12] = tmp4.divider;
         cResult[13] = tmp24;
         let tmp22 = tmp24;

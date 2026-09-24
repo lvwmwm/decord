@@ -1,9 +1,9 @@
-// Module ID: 17994
-// Function ID: 17995
+// Module ID: 18004
+// Function ID: 18005
 // Name: AuditLog
-// Dependencies: [19, 17, 1186, 1390, 4409, 1376, 1078, 21, 4758, 580, 1404, 1401, 5502, 4610, 558, 568, 7415, 4754, 1368, 4471, 17982, 1119, 4603, 1181, 2059, 4911, 4903, 4352, 1374, 1096, 10923, 7377, 5824, 17986, 5341, 4725, 8453, 14867, 504, 2]
+// Dependencies: [19, 17, 1186, 1390, 4441, 1376, 1078, 21, 4790, 580, 1404, 1401, 5534, 4642, 558, 568, 7447, 4786, 1368, 4503, 17992, 1119, 4635, 1181, 2059, 4943, 4935, 4384, 1374, 1096, 10959, 7409, 5856, 17996, 5373, 4757, 8485, 14905, 504, 2]
 
-// Module 17994 (AuditLog)
+// Module 18004 (AuditLog)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -11,29 +11,29 @@ import native from "native" /* 1181 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import PlatformsDefault from "Platforms" /* 5502 */;
-import EmojiDefault from "Emoji" /* 7377 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7415 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import AppliedForumTag from "AppliedForumTag" /* 10923 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 17982 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import PlatformsDefault from "Platforms" /* 5534 */;
+import EmojiDefault from "Emoji" /* 7409 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7447 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
+import AppliedForumTag from "AppliedForumTag" /* 10959 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 17992 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 import UserRecord from "UserRecord" /* 1390 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 import initialize from "initialize" /* 504 */;
 
-const Text_Text = tmp(4754);
+const Text_Text = tmp(4786);
 require = fn;
 const View = fn(17).View;
 const Constants = fn(1078);
 ({ AuditLogTargetTypes: c10, AuditLogActionTypes: closure_11, AuditLogActions: closure_12, Fonts, AuditLogChangeKeys: map1 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { marginHorizontal: 8, marginVertical: 4, borderRadius: 3 }, rowContainer: { flex: 1, flexDirection: "row", alignItems: "center" }, titleContainer: { marginRight: 24, flex: 1 }, title: { marginHorizontal: 8 }, discriminator: { fontSize: 12, lineHeight: 30, color: nativeDefault.unsafe_rawColors.PRIMARY_400 }, avatar: { marginLeft: 10, height: 32, width: 32 }, timestamp: null, arrow: null, rotate90: null, changesContainer: null, changeRow: null, changeNumberText: null, changeItemText: null, colorHook: null, colorsHook: null, changeItemContent: null, changeItemRow: null, changeItemTextLine: null, forumTag: null, imageEmoji: null, textEmoji: null };
 let obj3 = { fontSize: 12, lineHeight: 30, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
 obj2.timestamp = { fontSize: 12, marginHorizontal: 8, marginTop: 8, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
@@ -206,7 +206,7 @@ prototype["renderTitle"] = function renderTitle() {
             if (typeof target === "object") {
               if (obj6.isGuildRecord(tmp5)) {
                 const obj5 = { variant: "text-md/medium", color: "text-default", children: tmp5.name };
-                tmp8Result = state(tmp15(4754).Text, obj5, `target${tmp5.id}`);
+                tmp8Result = state(tmp15(4786).Text, obj5, `target${tmp5.id}`);
               }
               obj6 = GuildRecordUtils;
               tmp15 = require;
@@ -576,7 +576,7 @@ prototype["render"] = function render() {
   obj4.border = str3;
   obj4.onPress = onHeaderClick;
   const obj5 = { style: tmp.rowContainer, children: null };
-  const items2 = [closure_14(user(17986), { action: log.action }), , , ];
+  const items2 = [closure_14(user(17996), { action: log.action }), , , ];
   const obj7 = { accessibilityRole: "button", accessibilityLabel: null, accessibilityHint: null, onPress: null, children: null };
   const intl = tmp10(1119).intl;
   obj7.accessibilityLabel = intl.string(tmp10(1119).t.iXAna6);
@@ -598,15 +598,15 @@ prototype["render"] = function render() {
       if (log.action !== tmp21.AUTO_MODERATION_USER_COMMUNICATION_DISABLED) {
         if (log.action !== tmp21.AUTO_MODERATION_QUARANTINE_USER) {
           if (null != log.options.integration_type) {
-            value = tmp18(5502).get(log.options.integration_type);
+            value = tmp18(5534).get(log.options.integration_type);
             if (null != value) {
               const icon = value.icon;
-              const tmp9Result = tmp9(4610);
-              const tmp25 = tmp9(4610).isThemeDark(theme) ? icon.darkPNG : icon.lightPNG;
+              const tmp9Result = tmp9(4642);
+              const tmp25 = tmp9(4642).isThemeDark(theme) ? icon.darkPNG : icon.lightPNG;
               let source = tmp9(1401).makeSource(tmp25);
               const tmp9Result5 = tmp9(1401);
             }
-            const tmp18Result = tmp18(5502);
+            const tmp18Result = tmp18(5534);
           }
           if (null != guildId) {
             const user2 = log.user;
@@ -620,7 +620,7 @@ prototype["render"] = function render() {
         obj8.source = source;
         obj8.size = tmp10(1181).AvatarSizes.SMALL;
         obj7.children = tmp17(tmp20, obj8);
-        items2[1] = tmp17(tmp10(5341).PressableOpacity, obj7);
+        items2[1] = tmp17(tmp10(5373).PressableOpacity, obj7);
         obj9 = { accessibilityRole: "button", accessibilityState: null, onPress: null, style: null, disabled: null, children: null };
         const obj10 = { expanded, disabled: !checkChangesToRenderResult };
         obj9.accessibilityState = obj10;
@@ -629,14 +629,14 @@ prototype["render"] = function render() {
         obj9.disabled = !checkChangesToRenderResult;
         const items3 = [self.renderTitle(), tmp8];
         obj9.children = items3;
-        items2[2] = tmp15(tmp10(5341).PressableOpacity, obj9);
+        items2[2] = tmp15(tmp10(5373).PressableOpacity, obj9);
         let tmp17Result = null;
         if (checkChangesToRenderResult) {
           const obj11 = { style: null, size: null, source: null };
           const items4 = [tmp.arrow, rotate90];
           obj11.style = items4;
           obj11.size = tmp10(1181).Icon.Sizes.CUSTOM;
-          obj11.source = tmp18(14867);
+          obj11.source = tmp18(14905);
           tmp17Result = tmp17(tmp10(1181).Icon, obj11);
         }
         items2[3] = tmp17Result;
@@ -648,7 +648,7 @@ prototype["render"] = function render() {
         }
         items5[1] = renderChangeSummaryResult;
         obj4.children = items5;
-        return tmp15(tmp10(5824).Card, obj4);
+        return tmp15(tmp10(5856).Card, obj4);
       }
     }
   }
@@ -658,7 +658,7 @@ prototype["render"] = function render() {
   const tmp9Result7 = tmp9(1401);
   source = tmp9Result6.ensureAvatarSource(tmp9Result7.makeSource(tmp9(1404).getAutomodAvatarURL()));
 };
-AuditLog.contextType = fn(4471).ThemeContext;
+AuditLog.contextType = fn(4503).ThemeContext;
 let items3 = [ThemeStore];
 let obj7 = { color: nativeDefault.unsafe_rawColors.PRIMARY_400, alignItems: "baseline", fontSize: 14 };
 size = fn(2);

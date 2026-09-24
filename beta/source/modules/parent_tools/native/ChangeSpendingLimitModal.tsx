@@ -1,17 +1,17 @@
-// Module ID: 15174
-// Function ID: 15175
+// Module ID: 15184
+// Function ID: 15185
 // Name: ChangeSpendingLimitModal
-// Dependencies: [5, 19, 17, 21, 4758, 580, 8871, 4754, 1119, 2486, 558, 568, 15175, 4458, 4717, 4961, 4457, 7481, 8698, 8699, 5186, 6846, 5188, 12057, 5652, 5839, 11453, 2]
+// Dependencies: [5, 19, 17, 21, 4790, 580, 8903, 4786, 1119, 2486, 558, 568, 15185, 4490, 4749, 4993, 4489, 7513, 8730, 8731, 5218, 6878, 5220, 12093, 5684, 5871, 11489, 2]
 
-// Module 15174 (ChangeSpendingLimitModal)
+// Module 15184 (ChangeSpendingLimitModal)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import _modDef2486 from "module_2486" /* 2486 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import WarningIcon from "WarningIcon" /* 8871 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import WarningIcon from "WarningIcon" /* 8903 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -42,7 +42,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { warningOverlay: null, warningRow: null, warningText: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -69,9 +69,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
       if (1 === tmp7) {
         c2 = 0;
         const intl = tmp3(1119).intl;
-        tmp3(4457).presentFailedToast(intl.string(_modDef2486.Wu8BK2));
+        tmp3(4489).presentFailedToast(intl.string(_modDef2486.Wu8BK2));
         c3 = 3;
-        tmp3(4457);
+        tmp3(4489);
       } else if (arg0 === 1) {
         c3 = 3;
         throw arg1;
@@ -79,7 +79,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
         const obj7 = { key: "SPENDING_CONTROLS_CHANGED", content: null, IconComponent: null, iconColor: "status-positive" };
         const intl2 = tmp3(1119).intl;
         obj7.content = intl2.string(_modDef2486["2WKfG1"]);
-        obj7.IconComponent = tmp3(4717).CircleCheckIcon;
+        obj7.IconComponent = tmp3(4749).CircleCheckIcon;
         ToastActionCreatorsDefault.open(obj7);
         ToastActionCreatorsDefault;
         ModalActionCreatorsDefault.pop();
@@ -140,7 +140,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
                                               const intl7 = tmp(1119).intl;
                                               obj3.text = intl7.string(tmp(1119).t["ETE/oC"]);
                                               obj3.onPress = ModalActionCreatorsDefault.pop;
-                                              const tmp77 = closure_6(tmp(5188).Button, obj3);
+                                              const tmp77 = closure_6(tmp(5220).Button, obj3);
                                               cResult[55] = tmp77;
                                               let tmp74 = tmp77;
                                             } else {
@@ -151,8 +151,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
                                               const obj5 = { children: null };
                                               const items = [tmp67, tmp74];
                                               obj5.children = items;
-                                              obj4.children = closure_7(tmp(5652).ButtonGroup, obj5);
-                                              const tmp81 = closure_6(tmp(12057).ModalFooter, obj4);
+                                              obj4.children = closure_7(tmp(5684).ButtonGroup, obj5);
+                                              const tmp81 = closure_6(tmp(12093).ModalFooter, obj4);
                                               cResult[56] = tmp67;
                                               cResult[57] = tmp81;
                                               let tmp78 = tmp81;
@@ -200,7 +200,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
                                       obj8.disabled = tmp69;
                                       obj8.loading = isSubmitting;
                                     }
-                                    const tmp68Result = closure_6(tmp(5188).Button, obj8);
+                                    const tmp68Result = closure_6(tmp(5220).Button, obj8);
                                     cResult[50] = canSave;
                                     cResult[51] = tmp6;
                                     cResult[52] = isClearingCap;
@@ -254,31 +254,31 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
   if (null != monthlySpend) {
     formatPriceResult = null;
     if (monthlySpend > 0) {
-      formatPriceResult = tmp(7481).formatPrice(monthlySpend, currency);
-      const tmpResult = tmp(7481);
+      formatPriceResult = tmp(7513).formatPrice(monthlySpend, currency);
+      const tmpResult = tmp(7513);
     }
   }
-  const ModalScreen = tmp(8698).ModalScreen;
-  const ModalContent = tmp(8699).ModalContent;
-  const Stack = tmp(5186).Stack;
+  const ModalScreen = tmp(8730).ModalScreen;
+  const ModalContent = tmp(8731).ModalContent;
+  const Stack = tmp(5218).Stack;
   const PX_16 = nativeDefault.space.PX_16;
   if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
     const obj12 = { variant: "text-sm/normal", children: null };
     let intl = tmp(1119).intl;
     obj12.children = intl.string(tmp20(2486).IFguF2);
-    const tmp23 = closure_6(tmp(4754).Text, obj12);
+    const tmp23 = closure_6(tmp(4786).Text, obj12);
     cResult[21] = tmp23;
     let tmp21 = tmp23;
   } else {
     tmp21 = cResult[21];
   }
-  const Stack2 = tmp(5186).Stack;
+  const Stack2 = tmp(5218).Stack;
   const PX_8 = tmp20(580).space.PX_8;
   if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
     const obj13 = { variant: "text-sm/semibold", color: "text-subtle", children: null };
     let intl2 = tmp(1119).intl;
     obj13.children = intl2.string(tmp20(2486)["1fHSu2"]);
-    const tmp26 = closure_6(tmp(4754).Text, obj13);
+    const tmp26 = closure_6(tmp(4786).Text, obj13);
     cResult[22] = tmp26;
     let tmp24 = tmp26;
   } else {
@@ -378,9 +378,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
     if (1 === tmp7) {
       dependencyMap = 0;
       const intl = tmp3(1119).intl;
-      tmp3(4457).presentFailedToast(intl.string(v2(2486).Wu8BK2));
+      tmp3(4489).presentFailedToast(intl.string(v2(2486).Wu8BK2));
       c3 = 3;
-      tmp3(4457);
+      tmp3(4489);
     } else if (dependencyMap === 1) {
       c3 = 3;
       throw arg1;
@@ -388,12 +388,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
       const obj7 = { key: "SPENDING_CONTROLS_CHANGED", content: null, IconComponent: null, iconColor: "status-positive" };
       const intl2 = tmp3(1119).intl;
       obj7.content = intl2.string(v2(2486)["2WKfG1"]);
-      obj7.IconComponent = tmp3(4717).CircleCheckIcon;
-      v2(4458).open(obj7);
-      v2(4458);
-      v2(4961).pop();
+      obj7.IconComponent = tmp3(4749).CircleCheckIcon;
+      v2(4490).open(obj7);
+      v2(4490);
+      v2(4993).pop();
       dependencyMap = 0;
-      v2(4961);
+      v2(4993);
     }
     return arg1;
   };
@@ -405,8 +405,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
   if (null != monthlySpend) {
     formatPriceResult = null;
     if (monthlySpend > 0) {
-      formatPriceResult = tmp2(7481).formatPrice(monthlySpend, tmp5);
-      const tmp2Result = tmp2(7481);
+      formatPriceResult = tmp2(7513).formatPrice(monthlySpend, tmp5);
+      const tmp2Result = tmp2(7513);
     }
   }
   const obj2 = { spacing: nativeDefault.space.PX_16, children: null };
@@ -508,12 +508,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
     const obj2 = { CHANGE_SPENDING_LIMIT: null };
     const obj3 = {
       headerShown: true,
-      headerLeft: tmp(5839).getHeaderCloseButton(ModalActionCreatorsDefault.pop),
+      headerLeft: tmp(5871).getHeaderCloseButton(ModalActionCreatorsDefault.pop),
       headerTitle() {
           const obj = { variant: "text-md/semibold", children: null };
           const intl = teenId(1119).intl;
           obj.children = intl.string(closure_1_1(2486).xMRO6A);
-          return closure_1_6(teenId(4754).Text, obj);
+          return closure_1_6(teenId(4786).Text, obj);
         },
       render() {
           return closure_2_6(closure_2_10, { teenId });
@@ -523,7 +523,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
     cResult[0] = teenId;
     cResult[1] = obj2;
     let tmp4 = obj2;
-    const tmpResult = tmp(5839);
+    const tmpResult = tmp(5871);
   } else {
     tmp4 = cResult[1];
   }
@@ -537,7 +537,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
   }
   if (cResult[3] !== tmp4) {
     const obj4 = { initialRouteName: "CHANGE_SPENDING_LIMIT", screens: tmp4, headerBackTitle: tmp6 };
-    const tmp10 = closure_6(tmp(11453).Modal, obj4);
+    const tmp10 = closure_6(tmp(11489).Modal, obj4);
     cResult[3] = tmp4;
     cResult[4] = tmp10;
     let tmp8 = tmp10;
@@ -557,7 +557,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
         const obj = { variant: "text-md/semibold", children: null };
         const intl = teenId(1119).intl;
         obj.children = intl.string(closure_1_1(2486).xMRO6A);
-        return closure_1_6(teenId(4754).Text, obj);
+        return closure_1_6(teenId(4786).Text, obj);
       },
       render() {
         return closure_2_6(closure_2_10, { teenId });
@@ -569,5 +569,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((teenId) => {
   let obj = { initialRouteName: "CHANGE_SPENDING_LIMIT", screens: memo, headerBackTitle: null };
   let intl = teenId(1119).intl;
   obj.headerBackTitle = intl.string(teenId(1119).t["13/7kX"]);
-  return closure_6(teenId(11453).Modal, obj);
+  return closure_6(teenId(11489).Modal, obj);
 });

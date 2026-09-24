@@ -1,23 +1,23 @@
-// Module ID: 12397
-// Function ID: 12398
+// Module ID: 12433
+// Function ID: 12434
 // Name: GiftIconTrinketsAnimation
-// Dependencies: [19, 17, 4750, 21, 4758, 558, 568, 4462, 580, 504, 2013, 1368, 9087, 5802, 2]
+// Dependencies: [19, 17, 4782, 21, 4790, 558, 568, 4494, 580, 504, 2013, 1368, 9119, 5834, 2]
 
-// Module 12397 (GiftIconTrinketsAnimation)
+// Module 12433 (GiftIconTrinketsAnimation)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
+import useToken from "useToken" /* 4494 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 const initialize = APNGPlayer(504);
 const PlatformUtils = APNGPlayer(1368);
-const FastImageDefault = tmp2(5802);
-const APNGPlayer2 = APNGPlayer(9087);
+const FastImageDefault = tmp2(5834);
+const APNGPlayer2 = APNGPlayer(9119);
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles((width) => ({ containerRefresh: { position: "absolute", top: 0, left: 0, width, height: width, overflow: "visible", marginLeft: 0, zIndex: 0 }, trinketsRefresh: { zIndex: 4, position: "absolute", pointerEvents: "none", width: "175%", height: "175%", top: "-37.5%", left: "-37.5%" } }));
 const ReactCompilerGating = fn(558);
 const size = fn(2);

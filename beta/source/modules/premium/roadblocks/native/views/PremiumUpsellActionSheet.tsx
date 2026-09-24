@@ -1,44 +1,44 @@
-// Module ID: 8099
-// Function ID: 8100
+// Module ID: 8131
+// Function ID: 8132
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 4750, 1186, 4580, 1376, 1378, 1078, 4805, 8100, 8094, 21, 4758, 580, 558, 568, 4462, 4418, 8101, 5380, 5352, 8102, 8103, 8105, 5907, 1119, 8106, 8107, 4725, 8098, 8108, 8109, 13603, 13604, 12357, 12366, 13607, 1098, 1368, 9087, 5802, 5198, 504, 7409, 10220, 9425, 9433, 1245, 10221, 4625, 7449, 13608, 4754, 5188, 8315, 2]
+// Dependencies: [19, 17, 4782, 1186, 4612, 1376, 1378, 1078, 4837, 8132, 8126, 21, 4790, 580, 558, 568, 4494, 4450, 8133, 5412, 5384, 8134, 8135, 8137, 5939, 1119, 8138, 8139, 4757, 8130, 8140, 8141, 13639, 13640, 12393, 12402, 13643, 1098, 1368, 9119, 5834, 5230, 504, 7441, 10259, 9457, 9465, 1245, 10260, 4657, 7481, 13644, 4786, 5220, 8347, 2]
 
-// Module 8099 (PremiumUpsellActionSheet)
+// Module 8131 (PremiumUpsellActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import PremiumUtils from "PremiumUtils" /* 4418 */;
-import ChatInputUtils from "ChatInputUtils" /* 4625 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 8098 */;
-import _modDef8106 from "module_8106" /* 8106 */;
-import _modDef8107 from "module_8107" /* 8107 */;
-import showForLaterModal from "showForLaterModal" /* 8108 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 8109 */;
-import _modDef12366 from "module_12366" /* 12366 */;
-import _modDef13607 from "module_13607" /* 13607 */;
+import PremiumUtils from "PremiumUtils" /* 4450 */;
+import ChatInputUtils from "ChatInputUtils" /* 4657 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 8130 */;
+import _modDef8138 from "module_8138" /* 8138 */;
+import _modDef8139 from "module_8139" /* 8139 */;
+import showForLaterModal from "showForLaterModal" /* 8140 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 8141 */;
+import _modDef12402 from "module_12402" /* 12402 */;
+import _modDef13643 from "module_13643" /* 13643 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 import UserStore from "UserStore" /* 1376 */;
 
-const APNGPlayer = tmp(9087);
+const APNGPlayer = tmp(9119);
 require = fn;
 const View = fn(17).View;
 const PremiumConstants = fn(1378);
 ({ PremiumSubscriptionSKUs: closure_9, PremiumTypes: c10, PremiumUpsellTypes: closure_11 } = PremiumConstants);
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_12, AnalyticsPages: map1, ThemeTypes: closure_14 } = Constants);
-const ApplicationStreamFPS = fn(4805).ApplicationStreamFPS;
-const SavedMessagesConstants = fn(8100);
+const ApplicationStreamFPS = fn(4837).ApplicationStreamFPS;
+const SavedMessagesConstants = fn(8132);
 ({ SAVED_BOOKMARKS_MAX: closure_16, SAVED_REMINDERS_MAX: closure_17 } = SavedMessagesConstants);
-const premiumMax = fn(8094).MAX_SCHEDULED_MESSAGES_PER_USER;
+const premiumMax = fn(8126).MAX_SCHEDULED_MESSAGES_PER_USER;
 const jsxProd = fn(21);
 ({ jsx: closure_19, Fragment: closure_20, jsxs: closure_21 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { hero: { alignSelf: "center", marginTop: nativeDefault.space.PX_16 }, image: { width: 240, height: 144 }, text: { alignSelf: "center", textAlign: "center" }, betaTag: { marginLeft: 0 }, description: null, textContainer: null, buttonContainer: null, imageGradientBackgroundContainer: null, imageGradientBackground: null, imageInGradientBackground: null };
 let obj3 = { alignSelf: "center", marginTop: nativeDefault.space.PX_16 };
 obj2.description = { marginHorizontal: nativeDefault.space.PX_16 };
@@ -71,7 +71,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (cResult[3] === premiumType) {
           if (cResult[4] === subfeatureName) {
             _require = tmp7;
-            const tmp4Result = tmp4(cResult[5] ? 13603 : 13604);
+            const tmp4Result = tmp4(cResult[5] ? 13639 : 13640);
             if (cResult[46] === cResult[6]) {
               if (cResult[47] === tmp4Result) {
                 if (cResult[48] === tmp18) {
@@ -96,15 +96,15 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     const obj7 = {
                       premiumMax,
                       onClick() {
-                                          ActionSheetActionCreatorsDefault.hideActionSheet(closure_0(8098).PREMIUM_UPSELL_ACTION_SHEET_KEY);
-                                          const result = closure_0(12357).showScheduledMessagesModal();
+                                          ActionSheetActionCreatorsDefault.hideActionSheet(closure_0(8130).PREMIUM_UPSELL_ACTION_SHEET_KEY);
+                                          const result = closure_0(12393).showScheduledMessagesModal();
                                         }
                     };
                     obj6.children = intl19.format(tmp(1119).t["1kFyto"], obj7);
                     obj5.description = closure_19(closure_20, obj6);
                     obj5.analyticsPage = constants3.PREMIUM_UPSELL_SCHEDULED_MESSAGES;
                     obj5.upsellType = constants.SCHEDULED_MESSAGES_MODAL_UPSELL;
-                    obj5.image = tmp4(12366);
+                    obj5.image = tmp4(12402);
                     cResult[52] = obj5;
                     let tmp91 = obj5;
                   } else {
@@ -174,8 +174,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     obj9[tmp13] = tmp14;
                     obj9[tmp15] = tmp16;
                     obj9[tmp17] = tmp84;
-                    obj9[tmp(8101).EntitlementFeatureNames.SCHEDULED_MESSAGES] = tmp91;
-                    obj9[tmp(8101).EntitlementFeatureNames.STREAM_HIGH_QUALITY] = tmp102;
+                    obj9[tmp(8133).EntitlementFeatureNames.SCHEDULED_MESSAGES] = tmp91;
+                    obj9[tmp(8133).EntitlementFeatureNames.STREAM_HIGH_QUALITY] = tmp102;
                     cResult[58] = tmp9;
                     cResult[59] = tmp10;
                     cResult[60] = tmp11;
@@ -196,7 +196,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     cResult[75] = obj9;
                     tmp105 = obj9;
                   }
-                  const obj10 = { title: tmp97, description: tmp98, analyticsPage: constants3.PREMIUM_UPSELL_STREAM_HIGH_QUALITY, upsellType: constants.STREAM_QUALITY_UPSELL, image: tmp4(13607), imageGradientBackground: null };
+                  const obj10 = { title: tmp97, description: tmp98, analyticsPage: constants3.PREMIUM_UPSELL_STREAM_HIGH_QUALITY, upsellType: constants.STREAM_QUALITY_UPSELL, image: tmp4(13643), imageGradientBackground: null };
                   const obj11 = { colors: null, start: null, end: null };
                   const items = [token, token1];
                   obj11.colors = items;
@@ -223,33 +223,33 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj3 = require("useToken");
-  const premiumTypeDisplayName = tmp(4418).getPremiumTypeDisplayName(premiumType);
+  const premiumTypeDisplayName = tmp(4450).getPremiumTypeDisplayName(premiumType);
   let effectiveUploadLimit;
-  if (featureName === tmp(8101).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE) {
-    const tmpResult6 = tmp(5380);
-    effectiveUploadLimit = tmpResult6.getEffectiveUploadLimit(tmp(5352).maxFileSize(guildId));
-    const tmpResult7 = tmp(5352);
+  if (featureName === tmp(8133).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE) {
+    const tmpResult6 = tmp(5412);
+    effectiveUploadLimit = tmpResult6.getEffectiveUploadLimit(tmp(5384).maxFileSize(guildId));
+    const tmpResult7 = tmp(5384);
   }
-  const tmp28 = subfeatureName === tmp(8102).PremiumUpsellSubfeatureNames.SAVED_MESSAGES_REMINDER_LIMIT;
+  const tmp28 = subfeatureName === tmp(8134).PremiumUpsellSubfeatureNames.SAVED_MESSAGES_REMINDER_LIMIT;
   _require = tmp28;
-  if (subfeatureName === tmp(8102).PremiumUpsellSubfeatureNames.SAVED_MESSAGES_BOOKMARK_LIMIT) {
-    const forLaterLimit = tmp(8103).getForLaterLimit("native.PremiumUpsellActionSheet", tmp28);
-    const tmpResult8 = tmp(8103);
+  if (subfeatureName === tmp(8134).PremiumUpsellSubfeatureNames.SAVED_MESSAGES_BOOKMARK_LIMIT) {
+    const forLaterLimit = tmp(8135).getForLaterLimit("native.PremiumUpsellActionSheet", tmp28);
+    const tmpResult8 = tmp(8135);
   }
   const tmp30 = tmp28 ? closure_17 : closure_16;
   if (cResult[24] !== featureName) {
     let tmp32;
     if (tmpResult9.getMobileEmojiPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumUpsellActionSheet")) {
-      tmp32 = closure_19(tmp(5907).ReactionsSpotIllustration, { width: 198, height: 132, accessible: false });
+      tmp32 = closure_19(tmp(5939).ReactionsSpotIllustration, { width: 198, height: 132, accessible: false });
     }
     cResult[24] = featureName;
     cResult[25] = tmp32;
     let tmp31 = tmp32;
-    tmpResult9 = tmp(8105);
+    tmpResult9 = tmp(8137);
   } else {
     tmp31 = cResult[25];
   }
-  const SOUNDBOARD_EVERYWHERE = tmp(8101).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
+  const SOUNDBOARD_EVERYWHERE = tmp(8133).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE;
   const obj13 = { title: null, description: null, analyticsPage: null, upsellType: null, image: null };
   const intl = tmp(1119).intl;
   obj13.title = intl.string(tmp(1119).t.jGDYF0);
@@ -257,9 +257,9 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj13.description = intl2.formatToPlainString(tmp(1119).t["fc+8uy"], { nitroTierName: premiumTypeDisplayName });
   obj13.analyticsPage = constants3.PREMIUM_UPSELL_SOUNDBOARD_EVERYWHERE;
   obj13.upsellType = constants.SOUNDBOARD_EVERYWHERE_UPSELL;
-  const tmpResult = tmp(4418);
+  const tmpResult = tmp(4450);
   obj13.image = { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/soundboard_" + str + ".png" };
-  const EMOJIS_EVERYWHERE = tmp(8101).EntitlementFeatureNames.EMOJIS_EVERYWHERE;
+  const EMOJIS_EVERYWHERE = tmp(8133).EntitlementFeatureNames.EMOJIS_EVERYWHERE;
   const obj15 = { title: null, description: null, analyticsPage: null, upsellType: null, image: null, illustration: null };
   const intl3 = tmp(1119).intl;
   obj15.title = intl3.string(tmp(1119).t.zY5PPb);
@@ -270,7 +270,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj14 = { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/soundboard_" + str + ".png" };
   obj15.image = { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/emoji_" + str + ".png" };
   obj15.illustration = tmp31;
-  const STICKERS_EVERYWHERE = tmp(8101).EntitlementFeatureNames.STICKERS_EVERYWHERE;
+  const STICKERS_EVERYWHERE = tmp(8133).EntitlementFeatureNames.STICKERS_EVERYWHERE;
   if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
     const intl5 = tmp(1119).intl;
     const stringResult1 = intl5.string(tmp(1119).t.Eukdgl);
@@ -285,13 +285,13 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp37 = cResult[27];
   }
   if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj17 = { title: tmp36, description: tmp37, analyticsPage: tmp34.PREMIUM_UPSELL_STICKERS_EVERYWHERE, upsellType: tmp35.STICKERS_EVERYWHERE_UPSELL, illustration: closure_19(tmp(5907).StickersSpotIllustration, { width: 235, height: 132, accessible: false }) };
+    const obj17 = { title: tmp36, description: tmp37, analyticsPage: tmp34.PREMIUM_UPSELL_STICKERS_EVERYWHERE, upsellType: tmp35.STICKERS_EVERYWHERE_UPSELL, illustration: closure_19(tmp(5939).StickersSpotIllustration, { width: 235, height: 132, accessible: false }) };
     cResult[28] = obj17;
     let tmp40 = obj17;
   } else {
     tmp40 = cResult[28];
   }
-  const INCREASED_FILE_UPLOAD_SIZE = tmp(8101).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE;
+  const INCREASED_FILE_UPLOAD_SIZE = tmp(8133).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE;
   if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
     const intl7 = tmp(1119).intl;
     const stringResult3 = intl7.string(tmp(1119).t["G+pngo"]);
@@ -301,7 +301,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp42 = cResult[29];
   }
   const obj16 = { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/emoji_" + str + ".png" };
-  let result = tmp(5352).fileUploadLimitRoadblockDescription({ guildId, maxSize: effectiveUploadLimit });
+  let result = tmp(5384).fileUploadLimitRoadblockDescription({ guildId, maxSize: effectiveUploadLimit });
   if (cResult[30] !== result) {
     const obj18 = { children: result };
     const tmp48 = closure_19(closure_20, obj18);
@@ -324,7 +324,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[35] === tmp50) {
       let tmp51 = cResult[36];
     }
-    const ANIMATED_EMOJIS = tmp(8101).EntitlementFeatureNames.ANIMATED_EMOJIS;
+    const ANIMATED_EMOJIS = tmp(8133).EntitlementFeatureNames.ANIMATED_EMOJIS;
     const _Symbol = Symbol;
     if (cResult[37] === Symbol.for("react.memo_cache_sentinel")) {
       const intl8 = tmp(1119).intl;
@@ -352,7 +352,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (cResult[42] === tmp56) {
           let tmp57 = cResult[43];
         }
-        const CLIENT_THEMES = tmp(8101).EntitlementFeatureNames.CLIENT_THEMES;
+        const CLIENT_THEMES = tmp(8133).EntitlementFeatureNames.CLIENT_THEMES;
         const _Symbol2 = Symbol;
         if (cResult[44] === Symbol.for("react.memo_cache_sentinel")) {
           const obj22 = { title: null, description: null, analyticsPage: null, upsellType: null, image: null };
@@ -362,13 +362,13 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           obj22.description = intl11.string(tmp(1119).t.jBqF2k);
           obj22.analyticsPage = tmp34.PREMIUM_UPSELL_CLIENT_THEMES;
           obj22.upsellType = tmp35.CLIENT_THEMES_UPSELL;
-          obj22.image = tmp4(8106);
+          obj22.image = tmp4(8138);
           cResult[44] = obj22;
           let tmp58 = obj22;
         } else {
           tmp58 = cResult[44];
         }
-        const APP_ICONS = tmp(8101).EntitlementFeatureNames.APP_ICONS;
+        const APP_ICONS = tmp(8133).EntitlementFeatureNames.APP_ICONS;
         const _Symbol3 = Symbol;
         if (cResult[45] === Symbol.for("react.memo_cache_sentinel")) {
           const obj23 = { title: null, description: null, analyticsPage: null, upsellType: null, image: null };
@@ -378,13 +378,13 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           obj23.description = intl13.string(tmp(1119).t.HDt8ip);
           obj23.analyticsPage = tmp34.PREMIUM_UPSELL_APP_ICONS;
           obj23.upsellType = tmp35.APP_ICON_UPSELL;
-          obj23.image = tmp4(8107);
+          obj23.image = tmp4(8139);
           cResult[45] = obj23;
           let tmp59 = obj23;
         } else {
           tmp59 = cResult[45];
         }
-        const SAVED_MESSAGES = tmp(8101).EntitlementFeatureNames.SAVED_MESSAGES;
+        const SAVED_MESSAGES = tmp(8133).EntitlementFeatureNames.SAVED_MESSAGES;
         if (null == forLaterLimit) {
           const intl15 = tmp(1119).intl;
           let stringResult5 = intl15.string(tmp(1119).t.YXk6N7);
@@ -464,24 +464,24 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     str = "light";
   }
   const obj2 = require("useToken");
-  const premiumTypeDisplayName = tmp(4418).getPremiumTypeDisplayName(premiumType);
+  const premiumTypeDisplayName = tmp(4450).getPremiumTypeDisplayName(premiumType);
   let effectiveUploadLimit;
-  if (featureName === tmp(8101).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE) {
-    const tmpResult6 = tmp(5380);
-    effectiveUploadLimit = tmpResult6.getEffectiveUploadLimit(tmp(5352).maxFileSize(guildId));
-    const tmpResult7 = tmp(5352);
+  if (featureName === tmp(8133).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE) {
+    const tmpResult6 = tmp(5412);
+    effectiveUploadLimit = tmpResult6.getEffectiveUploadLimit(tmp(5384).maxFileSize(guildId));
+    const tmpResult7 = tmp(5384);
   }
-  const tmp8 = subfeatureName === tmp(8102).PremiumUpsellSubfeatureNames.SAVED_MESSAGES_REMINDER_LIMIT;
+  const tmp8 = subfeatureName === tmp(8134).PremiumUpsellSubfeatureNames.SAVED_MESSAGES_REMINDER_LIMIT;
   _require = tmp8;
-  if (subfeatureName === tmp(8102).PremiumUpsellSubfeatureNames.SAVED_MESSAGES_BOOKMARK_LIMIT) {
-    const forLaterLimit = tmp(8103).getForLaterLimit("native.PremiumUpsellActionSheet", tmp8);
-    const tmpResult8 = tmp(8103);
+  if (subfeatureName === tmp(8134).PremiumUpsellSubfeatureNames.SAVED_MESSAGES_BOOKMARK_LIMIT) {
+    const forLaterLimit = tmp(8135).getForLaterLimit("native.PremiumUpsellActionSheet", tmp8);
+    const tmpResult8 = tmp(8135);
   }
   const tmp10 = tmp8 ? closure_17 : closure_16;
-  const tmpResult = tmp(4418);
+  const tmpResult = tmp(4450);
   let tmp11;
   if (tmpResult9.getMobileEmojiPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumUpsellActionSheet")) {
-    tmp11 = closure_19(tmp(5907).ReactionsSpotIllustration, { width: 198, height: 132, accessible: false });
+    tmp11 = closure_19(tmp(5939).ReactionsSpotIllustration, { width: 198, height: 132, accessible: false });
   }
   const obj3 = {};
   const obj4 = { title: null, description: null, analyticsPage: null, upsellType: null, image: null };
@@ -491,9 +491,9 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj4.description = intl2.formatToPlainString(tmp(1119).t["fc+8uy"], { nitroTierName: premiumTypeDisplayName });
   obj4.analyticsPage = constants3.PREMIUM_UPSELL_SOUNDBOARD_EVERYWHERE;
   obj4.upsellType = constants.SOUNDBOARD_EVERYWHERE_UPSELL;
-  tmpResult9 = tmp(8105);
+  tmpResult9 = tmp(8137);
   obj4.image = { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/soundboard_" + str + ".png" };
-  obj3[tmp(8101).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE] = obj4;
+  obj3[tmp(8133).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE] = obj4;
   const obj6 = { title: null, description: null, analyticsPage: null, upsellType: null, image: null, illustration: null };
   const intl3 = tmp(1119).intl;
   obj6.title = intl3.string(tmp(1119).t.zY5PPb);
@@ -504,7 +504,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj5 = { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/soundboard_" + str + ".png" };
   obj6.image = { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/emoji_" + str + ".png" };
   obj6.illustration = tmp11;
-  obj3[tmp(8101).EntitlementFeatureNames.EMOJIS_EVERYWHERE] = obj6;
+  obj3[tmp(8133).EntitlementFeatureNames.EMOJIS_EVERYWHERE] = obj6;
   const obj8 = { title: null, description: null, analyticsPage: null, upsellType: null, illustration: null };
   const intl5 = tmp(1119).intl;
   obj8.title = intl5.string(tmp(1119).t.Eukdgl);
@@ -512,20 +512,20 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj8.description = intl6.string(tmp(1119).t.sMmd7s);
   obj8.analyticsPage = constants3.PREMIUM_UPSELL_STICKERS_EVERYWHERE;
   obj8.upsellType = constants.STICKERS_EVERYWHERE_UPSELL;
-  obj8.illustration = closure_19(tmp(5907).StickersSpotIllustration, { width: 235, height: 132, accessible: false });
-  obj3[tmp(8101).EntitlementFeatureNames.STICKERS_EVERYWHERE] = obj8;
+  obj8.illustration = closure_19(tmp(5939).StickersSpotIllustration, { width: 235, height: 132, accessible: false });
+  obj3[tmp(8133).EntitlementFeatureNames.STICKERS_EVERYWHERE] = obj8;
   const obj9 = { title: null, description: null, analyticsPage: null, upsellType: null, image: null };
   const intl7 = tmp(1119).intl;
   obj9.title = intl7.string(tmp(1119).t["G+pngo"]);
   const obj10 = { children: null };
   const obj7 = { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/emoji_" + str + ".png" };
-  obj10.children = tmp(5352).fileUploadLimitRoadblockDescription({ guildId, maxSize: effectiveUploadLimit });
+  obj10.children = tmp(5384).fileUploadLimitRoadblockDescription({ guildId, maxSize: effectiveUploadLimit });
   obj9.description = closure_19(closure_20, obj10);
   obj9.analyticsPage = constants3.PREMIUM_UPSELL_FILE_UPLOAD;
   obj9.upsellType = constants.LARGER_FILE_UPLOAD_UPSELL;
-  const tmpResult10 = tmp(5352);
+  const tmpResult10 = tmp(5384);
   obj9.image = { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_" + str + "_v2.png" };
-  obj3[tmp(8101).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE] = obj9;
+  obj3[tmp(8133).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE] = obj9;
   const obj12 = { title: null, description: null, analyticsPage: null, upsellType: null, image: null, illustration: null };
   const intl8 = tmp(1119).intl;
   obj12.title = intl8.string(tmp(1119).t.SI7R9I);
@@ -536,7 +536,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj11 = { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_" + str + "_v2.png" };
   obj12.image = { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/emoji_" + str + ".png" };
   obj12.illustration = tmp11;
-  obj3[tmp(8101).EntitlementFeatureNames.ANIMATED_EMOJIS] = obj12;
+  obj3[tmp(8133).EntitlementFeatureNames.ANIMATED_EMOJIS] = obj12;
   const obj14 = { title: null, description: null, analyticsPage: null, upsellType: null, image: null };
   const intl10 = tmp(1119).intl;
   obj14.title = intl10.string(tmp(1119).t.p0I2Bk);
@@ -544,8 +544,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj14.description = intl11.string(tmp(1119).t.jBqF2k);
   obj14.analyticsPage = constants3.PREMIUM_UPSELL_CLIENT_THEMES;
   obj14.upsellType = constants.CLIENT_THEMES_UPSELL;
-  obj14.image = _modDef8106;
-  obj3[tmp(8101).EntitlementFeatureNames.CLIENT_THEMES] = obj14;
+  obj14.image = _modDef8138;
+  obj3[tmp(8133).EntitlementFeatureNames.CLIENT_THEMES] = obj14;
   const obj15 = { title: null, description: null, analyticsPage: null, upsellType: null, image: null };
   const intl12 = tmp(1119).intl;
   obj15.title = intl12.string(tmp(1119).t.TYFwcy);
@@ -553,8 +553,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj15.description = intl13.string(tmp(1119).t.HDt8ip);
   obj15.analyticsPage = constants3.PREMIUM_UPSELL_APP_ICONS;
   obj15.upsellType = constants.APP_ICON_UPSELL;
-  obj15.image = _modDef8107;
-  obj3[tmp(8101).EntitlementFeatureNames.APP_ICONS] = obj15;
+  obj15.image = _modDef8139;
+  obj3[tmp(8133).EntitlementFeatureNames.APP_ICONS] = obj15;
   if (null == forLaterLimit) {
     const intl15 = tmp(1119).intl;
     let stringResult = intl15.string(tmp(1119).t.YXk6N7);
@@ -587,8 +587,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj17.description = stringResult1;
   obj17.analyticsPage = constants3.PREMIUM_UPSELL_FOR_LATER;
   obj17.upsellType = constants.FOR_LATER_MODAL_UPSELL;
-  obj17.image = importDefault(tmp8 ? 13603 : 13604);
-  obj3[tmp(8101).EntitlementFeatureNames.SAVED_MESSAGES] = obj17;
+  obj17.image = importDefault(tmp8 ? 13639 : 13640);
+  obj3[tmp(8133).EntitlementFeatureNames.SAVED_MESSAGES] = obj17;
   const obj20 = { title: null, showBetaBadge: true, description: null, analyticsPage: null, upsellType: null, image: null };
   const intl18 = tmp(1119).intl;
   obj20.title = intl18.formatToPlainString(tmp(1119).t.GNoaxo, { premiumMax });
@@ -597,15 +597,15 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj22.children = intl19.format(tmp(1119).t["1kFyto"], {
     premiumMax,
     onClick() {
-      ActionSheetActionCreatorsDefault.hideActionSheet(closure_0(8098).PREMIUM_UPSELL_ACTION_SHEET_KEY);
-      const result = closure_0(12357).showScheduledMessagesModal();
+      ActionSheetActionCreatorsDefault.hideActionSheet(closure_0(8130).PREMIUM_UPSELL_ACTION_SHEET_KEY);
+      const result = closure_0(12393).showScheduledMessagesModal();
     }
   });
   obj20.description = closure_19(closure_20, obj22);
   obj20.analyticsPage = constants3.PREMIUM_UPSELL_SCHEDULED_MESSAGES;
   obj20.upsellType = constants.SCHEDULED_MESSAGES_MODAL_UPSELL;
-  obj20.image = _modDef12366;
-  obj3[tmp(8101).EntitlementFeatureNames.SCHEDULED_MESSAGES] = obj20;
+  obj20.image = _modDef12402;
+  obj3[tmp(8133).EntitlementFeatureNames.SCHEDULED_MESSAGES] = obj20;
   const obj24 = { title: null, description: null, analyticsPage: null, upsellType: null, image: null, imageGradientBackground: null };
   const intl20 = tmp(1119).intl;
   obj24.title = intl20.string(tmp(1119).t.ETZQx5);
@@ -613,12 +613,12 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj24.description = intl21.formatToPlainString(tmp(1119).t["4nlpei"], { fps: ApplicationStreamFPS.FPS_60 });
   obj24.analyticsPage = constants3.PREMIUM_UPSELL_STREAM_HIGH_QUALITY;
   obj24.upsellType = constants.STREAM_QUALITY_UPSELL;
-  obj24.image = _modDef13607;
+  obj24.image = _modDef13643;
   const obj26 = { colors: null, start: tmp(1098).HorizontalGradient.START, end: tmp(1098).HorizontalGradient.END };
   const items = [token, token1];
   obj26.colors = items;
   obj24.imageGradientBackground = obj26;
-  obj3[tmp(8101).EntitlementFeatureNames.STREAM_HIGH_QUALITY] = obj24;
+  obj3[tmp(8133).EntitlementFeatureNames.STREAM_HIGH_QUALITY] = obj24;
   return obj3;
 });
 ReactCompilerGating = fn(558);

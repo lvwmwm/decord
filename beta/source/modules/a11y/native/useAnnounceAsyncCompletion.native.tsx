@@ -1,9 +1,9 @@
-// Module ID: 11232
-// Function ID: 11233
+// Module ID: 11268
+// Function ID: 11269
 // Name: useAnnounceAsyncCompletion
-// Dependencies: [19, 17, 558, 568, 4610, 1368, 5173, 2]
+// Dependencies: [19, 17, 558, 568, 4642, 1368, 5205, 2]
 
-// Module 11232 (useAnnounceAsyncCompletion)
+// Module 11268 (useAnnounceAsyncCompletion)
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -42,7 +42,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (undefined !== polite) {
         str = polite;
       }
-      const AccessibilityAnnouncer = ref(4610).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = ref(4642).AccessibilityAnnouncer;
       AccessibilityAnnouncer.announce(intl, str);
       if (obj.isIOS()) {
         if (tmpResult.getIsScreenReaderEnabled()) {
@@ -99,7 +99,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (polite === undefined) {
       str = "assertive";
     }
-    const AccessibilityAnnouncer = ref(4610).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = ref(4642).AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(intl, str);
     if (obj.isIOS()) {
       if (tmpResult.getIsScreenReaderEnabled()) {

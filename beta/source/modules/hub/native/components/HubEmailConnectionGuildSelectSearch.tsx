@@ -1,22 +1,22 @@
-// Module ID: 12890
-// Function ID: 12891
+// Module ID: 12926
+// Function ID: 12927
 // Name: HubEmailConnectionGuildSelectSearch
-// Dependencies: [5, 32, 19, 17, 12866, 21, 4758, 580, 558, 568, 12891, 1119, 4754, 1488, 5736, 1616, 12881, 4659, 5839, 7620, 1181, 12886, 2]
+// Dependencies: [5, 32, 19, 17, 12902, 21, 4790, 580, 558, 568, 12927, 1119, 4786, 1488, 5768, 1616, 12917, 4691, 5871, 7652, 1181, 12922, 2]
 // Exports: default
 
-// Module 12890 (HubEmailConnectionGuildSelectSearch)
+// Module 12926 (HubEmailConnectionGuildSelectSearch)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import useNavigation from "useNavigation" /* 1488 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5736 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import SearchBarNavDefault from "SearchBarNav" /* 7620 */;
-import HubActionCreatorsDefault from "HubActionCreators" /* 12881 */;
-import _modDef12891 from "module_12891" /* 12891 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5768 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import SearchBarNavDefault from "SearchBarNav" /* 7652 */;
+import HubActionCreatorsDefault from "HubActionCreators" /* 12917 */;
+import _modDef12927 from "module_12927" /* 12927 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -26,10 +26,10 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, Image: closure_7, FlatList: closure_8 } = get_ActivityIndicator);
-const HubEmailConnectionSteps = fn(12866).HubEmailConnectionSteps;
+const HubEmailConnectionSteps = fn(12902).HubEmailConnectionSteps;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { scrollContainer: { flex: 1, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, fauxHeader: { paddingHorizontal: 0 }, emptyWrapper: { flex: 1, alignItems: "center", justifyContent: "center", marginTop: 64, paddingHorizontal: 16 }, emptyStateImage: { marginBottom: 24 }, emptyStateTitle: { marginBottom: 4, textAlign: "center" }, error: null };
 let obj3 = { flex: 1, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.error = { color: nativeDefault.unsafe_rawColors.RED_400, alignSelf: "center", fontSize: 14, marginBottom: 8 };
@@ -39,7 +39,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(9);
   const tmp4 = closure_13();
   if (cResult[0] !== tmp4.emptyStateImage) {
-    const obj2 = { style: tmp4.emptyStateImage, source: _modDef12891 };
+    const obj2 = { style: tmp4.emptyStateImage, source: _modDef12927 };
     const tmp9 = v65535(React5, obj2);
     cResult[0] = tmp4.emptyStateImage;
     cResult[1] = tmp9;
@@ -57,7 +57,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[3] !== tmp4.emptyStateTitle) {
     const obj3 = { style: tmp4.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: tmp10 };
-    const tmp14 = v65535(tmp(4754).Text, obj3);
+    const tmp14 = v65535(tmp(4786).Text, obj3);
     cResult[3] = tmp4.emptyStateTitle;
     cResult[4] = tmp14;
     let tmp12 = tmp14;
@@ -84,7 +84,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const tmp = closure_13();
   const obj = { style: tmp.emptyWrapper, children: null };
-  const items = [v65535(React5, { style: tmp.emptyStateImage, source: _modDef12891 }), ];
+  const items = [v65535(React5, { style: tmp.emptyStateImage, source: _modDef12927 }), ];
   const obj3 = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t["6HXiuE"]);
@@ -188,7 +188,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
                 if (2 === tmp8) {
                   c3 = 1;
                   closure_128_0 = closure_2;
-                  const aPIError = new id(4659).APIError(closure_128_0);
+                  const aPIError = new id(4691).APIError(closure_128_0);
                   v3(aPIError);
                   c3 = 0;
                   closure_1_7(false);

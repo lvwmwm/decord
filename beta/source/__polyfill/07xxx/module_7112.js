@@ -1,18 +1,9 @@
 // Module ID: 7112
 // Function ID: 7113
-// Dependencies: [19]
-// Exports: useFlashListContext, useRecyclerViewContext
+// Dependencies: [7113]
 
 // Module 7112
-import noop from "module_19" /* 19 */;
+import _modDef7113 from "module_7113" /* 7113 */;
 
-const useContext = noop.useContext;
-const context = noop.createContext(undefined);
 
-export const RecyclerViewContextProvider = context.Provider;
-export const useRecyclerViewContext = function useRecyclerViewContext() {
-  return useContext(context);
-};
-export const useFlashListContext = function useFlashListContext() {
-  return useContext(context);
-};
+export default _modDef7113;

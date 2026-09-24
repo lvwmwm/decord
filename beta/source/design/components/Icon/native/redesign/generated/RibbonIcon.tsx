@@ -1,13 +1,13 @@
-// Module ID: 9194
-// Function ID: 9195
+// Module ID: 9226
+// Function ID: 9227
 // Name: RibbonIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 9195, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9227, 4493, 2]
 
-// Module 9194 (RibbonIcon)
+// Module 9226 (RibbonIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod9195 from "module_9195" /* 9195 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9227 from "module_9227" /* 9227 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const RibbonIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(9195);
+    const tmpResult = tmp(9227);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const RibbonIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9195, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9227, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

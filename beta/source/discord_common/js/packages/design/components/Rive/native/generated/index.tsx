@@ -1,8 +1,8 @@
-// Module ID: 4489
-// Function ID: 4490
-// Dependencies: [2, 4490, 4545, 4547, 4549, 4551, 4553, 4555, 4557, 4559, 4561, 4563, 4565, 4567, 4569, 4571, 4573]
+// Module ID: 4521
+// Function ID: 4522
+// Dependencies: [2, 4522, 4577, 4579, 4581, 4583, 4585, 4587, 4589, 4591, 4593, 4595, 4597, 4599, 4601, 4603, 4605]
 
-// Module 4489
+// Module 4521
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

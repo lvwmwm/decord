@@ -1,23 +1,23 @@
-// Module ID: 13481
-// Function ID: 13482
+// Module ID: 13517
+// Function ID: 13518
 // Name: EditCollectiblesPreviewDetails
-// Dependencies: [19, 17, 2113, 21, 4758, 558, 568, 504, 4418, 7801, 4442, 4754, 1119, 8447, 2]
+// Dependencies: [19, 17, 2113, 21, 4790, 558, 568, 504, 4450, 7833, 4474, 4786, 1119, 8479, 2]
 
-// Module 13481 (EditCollectiblesPreviewDetails)
+// Module 13517 (EditCollectiblesPreviewDetails)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7801 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8447 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4450 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7833 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8479 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
 
-const Text_Text = tmp(4754);
+const Text_Text = tmp(4786);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ productDetailsContainer: { width: "100%", marginTop: 16, alignItems: "center", gap: 2 } });
 let ReactCompilerGating = fn(558);
 let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
@@ -41,13 +41,13 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   const canUseCollectiblesResult = PremiumUtilsDefault.canUseCollectibles(user);
   let result = CollectiblesUtils.isPremiumCollectiblesProduct(product.product);
   if (!result) {
-    result = tmp(7801).isPremiumCollectiblesPurchase(purchase);
-    const tmpResult6 = tmp(7801);
+    result = tmp(7833).isPremiumCollectiblesPurchase(purchase);
+    const tmpResult6 = tmp(7833);
   }
   let result1 = !canUseCollectiblesResult;
   if (!canUseCollectiblesResult) {
-    result1 = tmp(7801).isPremiumCollectiblesPurchase(purchase);
-    const tmpResult7 = tmp(7801);
+    result1 = tmp(7833).isPremiumCollectiblesPurchase(purchase);
+    const tmpResult7 = tmp(7833);
   }
   if (null != purchase) {
     if (!result1) {
@@ -60,8 +60,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
         if (null != expiresAt1) {
           const _Date = Date;
           const date = new Date();
-          diffAsUnitsResult = tmp(4442).diffAsUnits(date, purchase.expiresAt);
-          const tmpResult8 = tmp(4442);
+          diffAsUnitsResult = tmp(4474).diffAsUnits(date, purchase.expiresAt);
+          const tmpResult8 = tmp(4474);
         }
         let tmp19 = null != diffAsUnitsResult;
         if (tmp19) {
@@ -69,7 +69,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
           const intl = tmp(1119).intl;
           const obj4 = { days: diffAsUnitsResult.days.toString() };
           obj2.children = intl.format(tmp(1119).t.Io7ozn, obj4);
-          tmp19 = hasOwnProperty(tmp(4754).Text, obj2);
+          tmp19 = hasOwnProperty(tmp(4786).Text, obj2);
         }
         cResult[2] = purchase;
         cResult[3] = tmp19;
@@ -87,7 +87,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
         }
         if (cResult[7] !== tmp22) {
           const obj5 = { variant: "text-sm/medium", color: "text-default", children: tmp22 };
-          const tmp28 = hasOwnProperty(tmp(4754).Text, obj5);
+          const tmp28 = hasOwnProperty(tmp(4786).Text, obj5);
           cResult[7] = tmp22;
           cResult[8] = tmp28;
           let tmp26 = tmp28;
@@ -128,7 +128,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
           const expiresAt = purchase.expiresAt;
           obj8.date = expiresAt.toLocaleDateString(stateFromStores, { minute: "numeric", hour: "numeric", day: "numeric", month: "long", year: "numeric" });
           obj7.children = intl3.format(tmp(1119).t.eZSTa5, obj8);
-          tmp31 = hasOwnProperty(tmp(4754).Text, obj7);
+          tmp31 = hasOwnProperty(tmp(4786).Text, obj7);
         }
         cResult[9] = stateFromStores;
         cResult[10] = purchase;
@@ -158,13 +158,13 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
       if (tmp8Result.isPremium(user)) {
         if (cResult[17] !== nitroUpgradeCTA) {
           const obj10 = { variant: "text-sm/medium", color: "text-default", children: nitroUpgradeCTA };
-          const tmp45 = hasOwnProperty(tmp(4754).Text, obj10);
+          const tmp45 = hasOwnProperty(tmp(4786).Text, obj10);
           cResult[17] = nitroUpgradeCTA;
           cResult[18] = tmp45;
         }
       } else if (cResult[19] !== nitroJoinCTA) {
         const obj11 = { variant: "text-sm/medium", color: "text-default", children: nitroJoinCTA };
-        const tmp42 = hasOwnProperty(tmp(4754).Text, obj11);
+        const tmp42 = hasOwnProperty(tmp(4786).Text, obj11);
         cResult[19] = nitroJoinCTA;
         cResult[20] = tmp42;
       }
@@ -176,7 +176,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
       const intl5 = tmp(1119).intl;
       stringResult = intl5.string(tmp(1119).t.hmyYK8);
       obj12.children = stringResult;
-      const tmp49 = hasOwnProperty(tmp(4754).Text, obj12);
+      const tmp49 = hasOwnProperty(tmp(4786).Text, obj12);
       cResult[16] = tmp49;
     }
   } else {
@@ -185,7 +185,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
       const obj13 = { variant: "text-sm/medium", color: "text-default", children: null };
       const intl4 = tmp(1119).intl;
       obj13.children = intl4.string(tmp(1119).t.fEGjVQ);
-      const tmp39 = hasOwnProperty(tmp(4754).Text, obj13);
+      const tmp39 = hasOwnProperty(tmp(4786).Text, obj13);
       cResult[21] = tmp39;
       let tmp37 = tmp39;
     } else {
@@ -202,13 +202,13 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   const canUseCollectiblesResult = PremiumUtilsDefault.canUseCollectibles(user);
   let result = CollectiblesUtils.isPremiumCollectiblesProduct(product);
   if (!result) {
-    result = tmp(7801).isPremiumCollectiblesPurchase(purchase);
-    const tmpResult = tmp(7801);
+    result = tmp(7833).isPremiumCollectiblesPurchase(purchase);
+    const tmpResult = tmp(7833);
   }
   let result1 = !canUseCollectiblesResult;
   if (!canUseCollectiblesResult) {
-    result1 = tmp(7801).isPremiumCollectiblesPurchase(purchase);
-    const tmpResult3 = tmp(7801);
+    result1 = tmp(7833).isPremiumCollectiblesPurchase(purchase);
+    const tmpResult3 = tmp(7833);
   }
   if (null != purchase) {
     if (!result1) {
@@ -220,8 +220,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
       if (null != expiresAt1) {
         const _Date = Date;
         const date = new Date();
-        diffAsUnitsResult = tmp(4442).diffAsUnits(date, purchase.expiresAt);
-        const tmpResult4 = tmp(4442);
+        diffAsUnitsResult = tmp(4474).diffAsUnits(date, purchase.expiresAt);
+        const tmpResult4 = tmp(4474);
       }
       let tmp17 = null != diffAsUnitsResult;
       if (tmp17) {
@@ -229,7 +229,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
         const intl = tmp(1119).intl;
         const obj5 = { days: diffAsUnitsResult.days.toString() };
         obj4.children = intl.format(tmp(1119).t.Io7ozn, obj5);
-        tmp17 = hasOwnProperty(tmp(4754).Text, obj4);
+        tmp17 = hasOwnProperty(tmp(4786).Text, obj4);
       }
       const items1 = [tmp17, , ];
       const intl2 = tmp(1119).intl;
@@ -241,7 +241,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
       const obj6 = { variant: "text-sm/medium", color: "text-default", children: null };
       const obj7 = { date: toLocaleDateStringResult };
       obj6.children = intl2.format(tmp(1119).t.gW9R4B, obj7);
-      items1[1] = hasOwnProperty(tmp(4754).Text, obj6);
+      items1[1] = hasOwnProperty(tmp(4786).Text, obj6);
       let expiresAt2;
       if (purchase != null) {
         expiresAt2 = purchase.expiresAt;
@@ -254,7 +254,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
         const expiresAt = purchase.expiresAt;
         obj9.date = expiresAt.toLocaleDateString(stateFromStores, { minute: "numeric", hour: "numeric", day: "numeric", month: "long", year: "numeric" });
         obj8.children = intl3.format(tmp(1119).t.eZSTa5, obj9);
-        tmp19Result = tmp19(tmp(4754).Text, obj8);
+        tmp19Result = tmp19(tmp(4786).Text, obj8);
       }
       const obj10 = { children: null };
       items1[2] = tmp19Result;
@@ -268,10 +268,10 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
       const intl5 = tmp(1119).intl;
       stringResult = intl5.string(tmp(1119).t.hmyYK8);
       obj11.children = stringResult;
-      let tmp25Result = hasOwnProperty(tmp(4754).Text, obj11);
+      let tmp25Result = hasOwnProperty(tmp(4786).Text, obj11);
     } else {
       const tmp4Result = PremiumUtilsDefault;
-      const Text = tmp(4754).Text;
+      const Text = tmp(4786).Text;
       const obj12 = { variant: "text-sm/medium", color: "text-default", children: null };
       if (isPremiumResult) {
         obj12.children = nitroUpgradeCTA;
@@ -286,7 +286,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
     const obj13 = { variant: "text-sm/medium", color: "text-default", children: null };
     const intl4 = tmp(1119).intl;
     obj13.children = intl4.string(tmp(1119).t.fEGjVQ);
-    return hasOwnProperty(tmp(4754).Text, obj13);
+    return hasOwnProperty(tmp(4786).Text, obj13);
   }
 });
 ReactCompilerGating = fn(558);

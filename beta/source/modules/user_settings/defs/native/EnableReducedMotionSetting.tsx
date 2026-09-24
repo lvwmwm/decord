@@ -1,18 +1,18 @@
-// Module ID: 15677
-// Function ID: 15678
+// Module ID: 15687
+// Function ID: 15688
 // Name: EnableReducedMotionSetting
-// Dependencies: [4750, 8238, 558, 568, 504, 14720, 11594, 1119, 2]
+// Dependencies: [4782, 8270, 558, 568, 504, 14758, 11630, 1119, 2]
 
-// Module 15677 (EnableReducedMotionSetting)
+// Module 15687 (EnableReducedMotionSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14720 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14758 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -37,7 +37,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.e3TR1b);
   },
-  parent: fn(8238).MobileUserSettings.ACCESSIBILITY,
+  parent: fn(8270).MobileUserSettings.ACCESSIBILITY,
   useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {

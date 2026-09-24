@@ -1,11 +1,11 @@
-// Module ID: 10613
-// Function ID: 10614
+// Module ID: 10649
+// Function ID: 10650
 // Name: PromoSheet
-// Dependencies: [109, 19, 17, 21, 4758, 580, 558, 568, 10462, 10461, 4754, 5186, 7397, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 580, 558, 568, 10501, 10500, 4786, 5218, 7429, 2]
 
-// Module 10613 (PromoSheet)
+// Module 10649 (PromoSheet)
 import nativeDefault from "native" /* 580 */;
-import ExpressiveGradient from "ExpressiveGradient" /* 10462 */;
+import ExpressiveGradient from "ExpressiveGradient" /* 10501 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,7 +17,7 @@ let closure_4 = ["title", "description", "illustration", "graphic", "gradientCol
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { content: { paddingHorizontal: 20, position: "relative" }, title: { textAlign: "center" }, description: { textAlign: "center" }, illustration: { alignSelf: "stretch", alignItems: "center" }, graphic: { alignSelf: "center", maxWidth: nativeDefault.modules.mobile.PROMO_SHEET_GRAPHIC_MAX_WIDTH } };
 let closure_10 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -94,7 +94,7 @@ export const PromoSheet = ReactCompilerGating.isReactCompilerEnabled() ? ((actio
                       obj2.contentStyles = tmp13.content;
                       obj2.backgroundComponent = undefined;
                       obj2.children = tmp34;
-                      const tmp42 = closure_8(tmp(7397).BottomSheet, obj2);
+                      const tmp42 = closure_8(tmp(7429).BottomSheet, obj2);
                       cResult[28] = undefined;
                       cResult[29] = tmp8;
                       cResult[30] = tmp13.content;
@@ -106,7 +106,7 @@ export const PromoSheet = ReactCompilerGating.isReactCompilerEnabled() ? ((actio
                   const obj3 = { spacing: 24, children: null };
                   const items = [tmp16, tmp31, tmp4];
                   obj3.children = items;
-                  const tmp36 = closure_9(tmp(5186).Stack, obj3);
+                  const tmp36 = closure_9(tmp(5218).Stack, obj3);
                   cResult[24] = tmp4;
                   cResult[25] = tmp16;
                   cResult[26] = tmp31;
@@ -116,7 +116,7 @@ export const PromoSheet = ReactCompilerGating.isReactCompilerEnabled() ? ((actio
                 const obj4 = { children: null };
                 const items1 = [tmp25, tmp28];
                 obj4.children = items1;
-                const tmp33 = closure_9(tmp(5186).Stack, obj4);
+                const tmp33 = closure_9(tmp(5218).Stack, obj4);
                 cResult[21] = tmp25;
                 cResult[22] = tmp28;
                 cResult[23] = tmp33;
@@ -125,7 +125,7 @@ export const PromoSheet = ReactCompilerGating.isReactCompilerEnabled() ? ((actio
               let tmp29 = null;
               if (null != tmp5) {
                 const obj5 = { variant: "redesign/heading-18/medium", color: "text-subtle", style: tmp13.description, children: tmp5 };
-                tmp29 = closure_8(tmp(4754).Text, obj5);
+                tmp29 = closure_8(tmp(4786).Text, obj5);
               }
               cResult[18] = tmp5;
               cResult[19] = tmp13.description;
@@ -133,7 +133,7 @@ export const PromoSheet = ReactCompilerGating.isReactCompilerEnabled() ? ((actio
               tmp28 = tmp29;
             }
             const obj6 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp13.title, children: tmp9 };
-            const tmp27 = closure_8(tmp(4754).Text, obj6);
+            const tmp27 = closure_8(tmp(4786).Text, obj6);
             cResult[15] = tmp13.title;
             cResult[16] = tmp9;
             cResult[17] = tmp27;
@@ -146,7 +146,7 @@ export const PromoSheet = ReactCompilerGating.isReactCompilerEnabled() ? ((actio
       const obj7 = {};
       const merged1 = Object.assign(tmp7);
       obj7.style = tmp13.graphic;
-      let tmp17 = closure_8(tmp(10461).Graphic, obj7);
+      let tmp17 = closure_8(tmp(10500).Graphic, obj7);
     } else {
       tmp17 = null;
       if (null != illustration) {
@@ -177,7 +177,7 @@ export const PromoSheet = ReactCompilerGating.isReactCompilerEnabled() ? ((actio
   const memo = noop.useMemo(() => null != gradientColor ? ((arg0) => {
     const obj = {};
     const merged = Object.assign(arg0);
-    obj.children = closure_2_8(gradientColor(10462).ExpressiveGradient, { offsetBottom: 0.25, color, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND });
+    obj.children = closure_2_8(gradientColor(10501).ExpressiveGradient, { offsetBottom: 0.25, color, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND });
     return closure_2_8(View, obj);
   }) : undefined, items);
   let obj = {};
@@ -189,7 +189,7 @@ export const PromoSheet = ReactCompilerGating.isReactCompilerEnabled() ? ((actio
     const obj2 = {};
     const merged1 = Object.assign(graphic);
     obj2.style = tmp2.graphic;
-    let tmp4Result = tmp4(tmp5(10461).Graphic, obj2);
+    let tmp4Result = tmp4(tmp5(10500).Graphic, obj2);
   } else {
     tmp4Result = null;
     if (null != illustration) {
@@ -198,17 +198,17 @@ export const PromoSheet = ReactCompilerGating.isReactCompilerEnabled() ? ((actio
     }
   }
   const items1 = [tmp4Result, , ];
-  const items2 = [closure_8(gradientColor(4754).Text, { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp2.title, children: title }), ];
+  const items2 = [closure_8(gradientColor(4786).Text, { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp2.title, children: title }), ];
   let tmp4Result2 = null;
   if (null != description) {
     const obj5 = { variant: "redesign/heading-18/medium", color: "text-subtle", style: tmp2.description, children: description };
-    tmp4Result2 = tmp4(tmp5(4754).Text, obj5);
+    tmp4Result2 = tmp4(tmp5(4786).Text, obj5);
   }
   const obj6 = { spacing: 24, children: null };
   items2[1] = tmp4Result2;
-  items1[1] = closure_9(gradientColor(5186).Stack, { children: items2 });
+  items1[1] = closure_9(gradientColor(5218).Stack, { children: items2 });
   items1[2] = actions;
   obj6.children = items1;
-  obj.children = closure_9(gradientColor(5186).Stack, obj6);
-  return closure_8(gradientColor(7397).BottomSheet, obj);
+  obj.children = closure_9(gradientColor(5218).Stack, obj6);
+  return closure_8(gradientColor(7429).BottomSheet, obj);
 });

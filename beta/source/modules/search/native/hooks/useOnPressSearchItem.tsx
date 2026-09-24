@@ -1,24 +1,24 @@
-// Module ID: 17116
-// Function ID: 17117
+// Module ID: 17126
+// Function ID: 17127
 // Name: useOnPressSearchItem
-// Dependencies: [5, 19, 7841, 2045, 12487, 8127, 17117, 8126, 1078, 2052, 12486, 12509, 558, 568, 1370, 4457, 1119, 8646, 4455, 1488, 17095, 17118, 13983, 8156, 8189, 1114, 7573, 8535, 4771, 4769, 4965, 1984, 4968, 13228, 5221, 5270, 5788, 1105, 12506, 2]
+// Dependencies: [5, 19, 7873, 2045, 12523, 8159, 17127, 8158, 1078, 2052, 12522, 12545, 558, 568, 1370, 4489, 1119, 8678, 4487, 1488, 17105, 17128, 14019, 8188, 8221, 1114, 7605, 8567, 4803, 4801, 4997, 1984, 5000, 13264, 5253, 5302, 5820, 1105, 12542, 2]
 // Exports: useOnPressMediaItem
 
-// Module 17116 (useOnPressSearchItem)
+// Module 17126 (useOnPressSearchItem)
 import util from "util" /* 1119 */;
 import URLUtilsDefault from "URLUtils" /* 1370 */;
-import LinkingDefault from "Linking" /* 4455 */;
-import ToastUtils from "ToastUtils" /* 4457 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4771 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8646 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12486 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12506 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12509 */;
+import LinkingDefault from "Linking" /* 4487 */;
+import ToastUtils from "ToastUtils" /* 4489 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4803 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8678 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12522 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12542 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12545 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7841 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7873 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import SearchQueryStore from "SearchQueryStore" /* 12487 */;
+import SearchQueryStore from "SearchQueryStore" /* 12523 */;
 
 const SearchPlatformUtilsDefault = SearchPlatformUtils;
 
@@ -93,10 +93,10 @@ let closure_20 = async function _handleVoiceOrStageChannelConnectPress(arg0, val
     }
   }
 };
-const SearchConstants = fn(8127);
+const SearchConstants = fn(8159);
 ({ SearchMediaTypes: closure_8, SearchHistoryItemTypes: closure_9, SearchQueryTagTypes: c10 } = SearchConstants);
-const SearchNavigatorScreens = fn(17117).SearchNavigatorScreens;
-const SearchFilterAddLocations = fn(8126).SearchFilterAddLocations;
+const SearchNavigatorScreens = fn(17127).SearchNavigatorScreens;
+const SearchFilterAddLocations = fn(8158).SearchFilterAddLocations;
 const Constants = fn(1078);
 ({ Routes: map1, ComponentActions: closure_14, ME: closure_15, SearchTypes: closure_16 } = Constants);
 const StaticChannelRoute = fn(2052).StaticChannelRoute;
@@ -926,8 +926,8 @@ export const useOnPressSearchHistoryText = ReactCompilerGating.isReactCompilerEn
       let obj = { type: constants.TEXT, text, tags };
       const type = searchContext.type;
       if (constants4.DMS === type) {
-        const result = searchContext(12486).delayUntilNavigationComplete(() => allMediaResults(onEndReached[11]).addSearchHistoryItem(closure_0, channel));
-        let obj2 = searchContext(12486);
+        const result = searchContext(12522).delayUntilNavigationComplete(() => allMediaResults(onEndReached[11]).addSearchHistoryItem(closure_0, channel));
+        let obj2 = searchContext(12522);
       }
       SearchPlatformActionCreatorsDefault.updateSearchQuery(searchContext, (setTags) => {
         if (null != obj) {
@@ -960,8 +960,8 @@ export const useOnPressSearchHistoryText = ReactCompilerGating.isReactCompilerEn
     let obj = { type: constants.TEXT, text, tags };
     const type = searchContext.type;
     if (constants4.DMS === type) {
-      const result = searchContext(12486).delayUntilNavigationComplete(() => allMediaResults(onEndReached[11]).addSearchHistoryItem(closure_0, channel));
-      let obj2 = searchContext(12486);
+      const result = searchContext(12522).delayUntilNavigationComplete(() => allMediaResults(onEndReached[11]).addSearchHistoryItem(closure_0, channel));
+      let obj2 = searchContext(12522);
     }
     SearchPlatformActionCreatorsDefault.updateSearchQuery(searchContext, (setTags) => {
       if (null != obj) {

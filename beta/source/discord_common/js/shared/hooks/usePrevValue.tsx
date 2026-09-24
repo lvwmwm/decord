@@ -1,10 +1,10 @@
-// Module ID: 9874
-// Function ID: 9875
+// Module ID: 9906
+// Function ID: 9907
 // Name: usePrevValue
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 9874 (usePrevValue)
+// Module 9906 (usePrevValue)
 import _mod19 from "module_19" /* 19 */;
 import size from "module_2" /* 2 */;
 

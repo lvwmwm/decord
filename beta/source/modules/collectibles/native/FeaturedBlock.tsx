@@ -1,18 +1,18 @@
-// Module ID: 16141
-// Function ID: 16142
+// Module ID: 16151
+// Function ID: 16152
 // Name: FeaturedBlock
-// Dependencies: [19, 17, 21, 580, 4758, 9045, 16142, 558, 568, 7409, 7429, 2]
+// Dependencies: [19, 17, 21, 580, 4790, 9077, 16152, 558, 568, 7441, 7461, 2]
 
-// Module 16141 (FeaturedBlock)
+// Module 16151 (FeaturedBlock)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9045 */;
-import FeaturedCategorySubblockDefault from "FeaturedCategorySubblock" /* 16142 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7441 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9077 */;
+import FeaturedCategorySubblockDefault from "FeaturedCategorySubblock" /* 16152 */;
 import noop from "module_19" /* 19 */;
 
-const useAnalyticsLocations = tmp(7409);
+const useAnalyticsLocations = tmp(7441);
 require = fn;
 function Subblocks(style) {
   style = style.style;
@@ -26,7 +26,7 @@ function Subblocks(style) {
 }
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ container: { display: "flex", width: "100%", flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16 }, featuredSubblock: { flex: 1, flexBasis: 400, maxWidth: "100%" } });
 const ReactCompilerGating = fn(558);
 let obj2 = { container: { display: "flex", width: "100%", flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16 }, featuredSubblock: { flex: 1, flexBasis: 400, maxWidth: "100%" } };

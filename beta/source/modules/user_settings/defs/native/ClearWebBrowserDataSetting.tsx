@@ -1,23 +1,23 @@
-// Module ID: 15742
-// Function ID: 15743
+// Module ID: 15752
+// Function ID: 15753
 // Name: ClearWebBrowserDataSetting
-// Dependencies: [5, 8238, 5116, 1119, 4722, 4458, 11594, 1368, 1098, 2]
+// Dependencies: [5, 8270, 5148, 1119, 4754, 4490, 11630, 1368, 1098, 2]
 
-// Module 15742 (ClearWebBrowserDataSetting)
+// Module 15752 (ClearWebBrowserDataSetting)
 import util from "util" /* 1119 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import BrowserManager from "BrowserManager" /* 4722 */;
+import BrowserManager from "BrowserManager" /* 4754 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const ConstantsIOS = tmp(1098);
 require = fn;
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.HNqvOh);
   },
-  parent: fn(8238).MobileUserSettings.WEB_BROWSER,
+  parent: fn(8270).MobileUserSettings.WEB_BROWSER,
   variant: "danger",
   onPress: function showClearWebBrowserDataAlert() {
     const obj2 = { key: "clear-web-browser-data", title: null, content: null, confirmText: null, onConfirm: null };
@@ -54,7 +54,7 @@ const pressable = SettingBuilders.createPressable({
             } else {
               v1 = 1;
               dependencyMap = 1;
-              const obj5 = { value: tmp4(4722).browserManagerClearWebsiteData(), done: false };
+              const obj5 = { value: tmp4(4754).browserManagerClearWebsiteData(), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -68,7 +68,7 @@ const pressable = SettingBuilders.createPressable({
             const obj7 = { key: "web-browser-data-cleared", content: null };
             const intl = tmp4(1119).intl;
             obj7.content = intl.string(tmp4(1119).t["zaEQz+"]);
-            v1(4458).open(obj7);
+            v1(4490).open(obj7);
             dependencyMap = 3;
             return { value: "IconComponent", done: null };
           }

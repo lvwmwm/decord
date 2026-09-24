@@ -1,12 +1,12 @@
-// Module ID: 16003
-// Function ID: 16004
+// Module ID: 16013
+// Function ID: 16014
 // Name: DevToolsGuildPowerupsModal
-// Dependencies: [109, 19, 21, 8162, 558, 568, 7246, 8112, 11230, 16004, 2]
+// Dependencies: [109, 19, 21, 8194, 558, 568, 7278, 8144, 11266, 16014, 2]
 
-// Module 16003 (DevToolsGuildPowerupsModal)
-import HeaderShared from "HeaderShared" /* 8112 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 11230 */;
-import DevToolsGuildPowerupsScreenDefault from "DevToolsGuildPowerupsScreen" /* 16004 */;
+// Module 16013 (DevToolsGuildPowerupsModal)
+import HeaderShared from "HeaderShared" /* 8144 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 11266 */;
+import DevToolsGuildPowerupsScreenDefault from "DevToolsGuildPowerupsScreen" /* 16014 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 require = fn;
 let closure_3 = ["children"];
 const jsx = fn(21).jsx;
-const NativeStackNavigator = fn(8162);
+const NativeStackNavigator = fn(8194);
 let closure_6 = NativeStackNavigator.createNativeStackNavigator();
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -24,7 +24,7 @@ const result = size.fileFinishedImporting("modules/devtools/native/components/sc
 export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = accessibilityNativeStackOptions(568).c(5);
   let obj = accessibilityNativeStackOptions(568);
-  accessibilityNativeStackOptions = accessibilityNativeStackOptions(7246).useAccessibilityNativeStackOptions();
+  accessibilityNativeStackOptions = accessibilityNativeStackOptions(7278).useAccessibilityNativeStackOptions();
   if (cResult[0] !== accessibilityNativeStackOptions) {
     const fn = function o(navigation) {
       const obj = {

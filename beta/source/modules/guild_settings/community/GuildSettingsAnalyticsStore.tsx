@@ -1,12 +1,12 @@
-// Module ID: 18120
-// Function ID: 18121
+// Module ID: 18130
+// Function ID: 18131
 // Name: GuildSettingsAnalyticsStore
-// Dependencies: [18121, 504, 577, 2]
+// Dependencies: [18131, 504, 577, 2]
 
-// Module 18120 (GuildSettingsAnalyticsStore)
+// Module 18130 (GuildSettingsAnalyticsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import _modDef18121 from "module_18121" /* 18121 */;
+import _modDef18131 from "module_18131" /* 18131 */;
 
 function handleFetchSuccess(arg0) {
   ({ guildId, stats } = arg0);
@@ -18,7 +18,7 @@ function handleFetchSuccess(arg0) {
   if (null != first) {
     const item = first.forEach((item) => {
       if (null != first[item]) {
-        const tmp8 = _modDef18121(item);
+        const tmp8 = _modDef18131(item);
         let tmp2 = null != closure_3;
         if (tmp2) {
           tmp2 = 0 !== tmp9[item];

@@ -1,33 +1,33 @@
-// Module ID: 9916
-// Function ID: 9917
+// Module ID: 9948
+// Function ID: 9949
 // Name: FormComponents
-// Dependencies: [109, 19, 4798, 21, 4758, 580, 558, 568, 5903, 5804, 9917, 1181, 7409, 9918, 9929, 9972, 4991, 9974, 8453, 7985, 504, 9976, 9977, 9979, 4754, 1119, 4603, 9980, 10006, 5188, 10008, 10018, 5822, 2]
+// Dependencies: [109, 19, 4830, 21, 4790, 580, 558, 568, 5935, 5836, 9949, 1181, 7441, 9950, 9961, 10004, 5023, 10006, 8485, 8017, 504, 10008, 10009, 10011, 4786, 1119, 4635, 10012, 10045, 5220, 10047, 10057, 5854, 2]
 // Exports: VoicePanelFormSection
 
-// Module 9916 (FormComponents)
+// Module 9948 (FormComponents)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import UserUtils from "UserUtils" /* 4603 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import NativeViewDefault from "NativeView" /* 5804 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7985 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 9917 */;
-import GuildTagDefault from "GuildTag" /* 9980 */;
-import ShieldLockIcon from "ShieldLockIcon" /* 10006 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 10008 */;
+import UserUtils from "UserUtils" /* 4635 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import NativeViewDefault from "NativeView" /* 5836 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8017 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 9949 */;
+import GuildTagDefault from "GuildTag" /* 10012 */;
+import ShieldLockIcon from "ShieldLockIcon" /* 10045 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 10047 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
 
 require = fn;
 let closure_3 = ["style"];
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { marginHorizontal: 16 }, voiceBadgesContainer: { flexDirection: "row" }, iconWrapper: { marginLeft: 8, padding: 6, backgroundColor: nativeDefault.colors.MOBILE_VOICE_PANEL_BADGE_BACKGROUND, borderRadius: nativeDefault.radii.round }, icon: null, notConnectedAvatar: null, memberRow: null, trailingContainer: null };
 let size = { width: 16, height: 16, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 obj2.icon = size;
@@ -75,7 +75,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (null != videoIconState) {
         const obj3 = { style: tmp4.iconWrapper, children: null };
         const obj4 = { state: videoIconState, size: tmp(1181).IconSizes.SMALL, style: tmp4.icon };
-        obj3.children = React5(tmp(9917).VideoIcon, obj4);
+        obj3.children = React5(tmp(9949).VideoIcon, obj4);
         tmp11 = React5(NativeViewDefault, obj3);
       }
       cResult[4] = tmp4.icon;
@@ -89,7 +89,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (null != muteDeafenIconState) {
     const obj5 = { style: tmp4.iconWrapper, children: null };
     const obj6 = { state: muteDeafenIconState, size: tmp(1181).IconSizes.SMALL, style: tmp4.icon };
-    obj5.children = React5(tmp(9917).MuteDeafenIcon, obj6);
+    obj5.children = React5(tmp(9949).MuteDeafenIcon, obj6);
     tmp6 = React5(NativeViewDefault, obj5);
   }
   cResult[0] = muteDeafenIconState;
@@ -106,8 +106,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj2 = { style: tmp.iconWrapper, children: null };
     const obj3 = { state: muteDeafenIconState, size: native.IconSizes.SMALL, style: tmp.icon };
     obj2.children = React5(VoiceStateIcons.MuteDeafenIcon, obj3);
-    tmp6 = React5(tmp3(5804), obj2);
-    const tmp3Result = tmp3(5804);
+    tmp6 = React5(tmp3(5836), obj2);
+    const tmp3Result = tmp3(5836);
   }
   const items = [tmp6, ];
   let tmp10 = null;
@@ -115,8 +115,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj4 = { style: tmp.iconWrapper, children: null };
     const obj5 = { state: videoIconState, size: native.IconSizes.SMALL, style: tmp.icon };
     obj4.children = React5(VoiceStateIcons.VideoIcon, obj5);
-    tmp10 = React5(tmp3(5804), obj4);
-    const tmp3Result2 = tmp3(5804);
+    tmp10 = React5(tmp3(5836), obj4);
+    const tmp3Result2 = tmp3(5836);
   }
   items[1] = tmp10;
   obj.children = items;
@@ -151,7 +151,7 @@ export const VoicePanelFormSection = function VoicePanelFormSection(style) {
       if (cResult[6] !== tmp16) {
         const obj2 = {};
         const merged = Object.assign(tmp16);
-        const tmp29 = React5(tmp13(5903).TableRowGroup, obj2);
+        const tmp29 = React5(tmp13(5935).TableRowGroup, obj2);
         cResult[6] = tmp16;
         cResult[7] = tmp29;
         let tmp24 = tmp29;

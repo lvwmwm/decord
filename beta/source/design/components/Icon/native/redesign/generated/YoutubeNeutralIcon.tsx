@@ -1,13 +1,13 @@
-// Module ID: 9168
-// Function ID: 9169
+// Module ID: 9200
+// Function ID: 9201
 // Name: YoutubeNeutralIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 9169, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9201, 4493, 2]
 
-// Module 9168 (YoutubeNeutralIcon)
+// Module 9200 (YoutubeNeutralIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod9169 from "module_9169" /* 9169 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9201 from "module_9201" /* 9201 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const YoutubeNeutralIcon = ReactCompilerGating.isReactCompilerEnabled() ?
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(9169);
+    const tmpResult = tmp(9201);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const YoutubeNeutralIcon = ReactCompilerGating.isReactCompilerEnabled() ?
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9169, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9201, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

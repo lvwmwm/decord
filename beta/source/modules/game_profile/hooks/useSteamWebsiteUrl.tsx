@@ -1,11 +1,11 @@
-// Module ID: 8959
-// Function ID: 8960
+// Module ID: 8991
+// Function ID: 8992
 // Name: useSteamWebsiteUrl
-// Dependencies: [2004, 1078, 558, 568, 8960, 8958, 2013, 504, 2]
+// Dependencies: [2004, 1078, 558, 568, 8992, 8990, 2013, 504, 2]
 // Exports: buildSteamStoreUrl
 
-// Module 8959 (useSteamWebsiteUrl)
-import SteamReleaseStatus from "SteamReleaseStatus" /* 8960 */;
+// Module 8991 (useSteamWebsiteUrl)
+import SteamReleaseStatus from "SteamReleaseStatus" /* 8992 */;
 import GameStore from "GameStore" /* 2004 */;
 
 const require = globalThis.__r;
@@ -42,7 +42,7 @@ export const useSteamWebsiteUrl = ReactCompilerGating.isReactCompilerEnabled() ?
           return null;
         } else {
           const websites = game.websites;
-          const found = websites.find((category) => category.category === closure_1_0(8958).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+          const found = websites.find((category) => category.category === closure_1_0(8990).ThirdPartyGameApplicationWebsiteCategory.STEAM);
           if (found != null) {
             const url = found.url;
           }
@@ -109,7 +109,7 @@ export const useSteamWebsiteUrl = ReactCompilerGating.isReactCompilerEnabled() ?
         return null;
       } else {
         const websites = game.websites;
-        const found = websites.find((category) => category.category === closure_1_0(8958).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+        const found = websites.find((category) => category.category === closure_1_0(8990).ThirdPartyGameApplicationWebsiteCategory.STEAM);
         if (found != null) {
           const url = found.url;
         }

@@ -1,10 +1,10 @@
-// Module ID: 8442
-// Function ID: 8443
+// Module ID: 8474
+// Function ID: 8475
 // Name: useShouldConvertBioEmoji
 // Dependencies: [558, 2023, 2]
 // Exports: getShouldConvertBioEmoji
 
-// Module 8442 (useShouldConvertBioEmoji)
+// Module 8474 (useShouldConvertBioEmoji)
 import UserSettings from "UserSettings" /* 2023 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,11 +1,11 @@
-// Module ID: 9798
-// Function ID: 9799
+// Module ID: 9830
+// Function ID: 9831
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 1078, 1982, 1090, 9799, 4610, 1119, 2]
+// Dependencies: [5, 32, 19, 1078, 1982, 1090, 9831, 4642, 1119, 2]
 // Exports: default
 
-// Module 9798 (useCreateChannelSubmit)
-import CreateChannelActionCreatorsDefault from "CreateChannelActionCreators" /* 9799 */;
+// Module 9830 (useCreateChannelSubmit)
+import CreateChannelActionCreatorsDefault from "CreateChannelActionCreators" /* 9831 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -102,7 +102,7 @@ export default function useCreateChannelSubmit(arg0) {
           if (3 === tmp8) {
             c6 = 1;
             closure_131_13 = closure_5;
-            const AccessibilityAnnouncer = closure_0(4610).AccessibilityAnnouncer;
+            const AccessibilityAnnouncer = closure_0(4642).AccessibilityAnnouncer;
             const intl = closure_0(1119).intl;
             AccessibilityAnnouncer.announce(intl.string(closure_0(1119).t["0SbUzm"]));
             const body = closure_131_13.body;
@@ -133,7 +133,7 @@ export default function useCreateChannelSubmit(arg0) {
               id = closure_131_10.id;
               guild_id = closure_131_10.guild_id;
               if (null != id) {
-                const AccessibilityAnnouncer2 = closure_0(4610).AccessibilityAnnouncer;
+                const AccessibilityAnnouncer2 = closure_0(4642).AccessibilityAnnouncer;
                 const intl2 = closure_0(1119).intl;
                 const obj9 = { name: closure_131_5 };
                 AccessibilityAnnouncer2.announce(intl2.formatToPlainString(closure_0(1119).t.Wke70b, obj9));

@@ -1,9 +1,9 @@
-// Module ID: 5902
-// Function ID: 5903
+// Module ID: 5934
+// Function ID: 5935
 // Name: RedesignCompat
 // Dependencies: [19, 21, 558, 568, 2]
 
-// Module 5902 (RedesignCompat)
+// Module 5934 (RedesignCompat)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

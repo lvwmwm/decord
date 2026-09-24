@@ -1,16 +1,16 @@
-// Module ID: 15969
-// Function ID: 15970
+// Module ID: 15979
+// Function ID: 15980
 // Name: CheckpointStatsScreen
-// Dependencies: [17, 21, 4758, 580, 558, 568, 15965, 15967, 2]
+// Dependencies: [17, 21, 4790, 580, 558, 568, 15975, 15977, 2]
 
-// Module 15969 (CheckpointStatsScreen)
+// Module 15979 (CheckpointStatsScreen)
 import _mod17 from "module_17" /* 17 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import CheckpointTextDefault from "CheckpointText" /* 15965 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 15967 */;
+import CheckpointTextDefault from "CheckpointText" /* 15975 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 15977 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

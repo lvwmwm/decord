@@ -1,15 +1,15 @@
-// Module ID: 15175
-// Function ID: 15176
+// Module ID: 15185
+// Function ID: 15186
 // Name: ChangeSpendingLimitFormState
-// Dependencies: [5, 32, 19, 7784, 15092, 504, 7482, 15094, 2]
+// Dependencies: [5, 32, 19, 7816, 15095, 504, 7514, 15097, 2]
 // Exports: useChangeSpendingLimitFormState
 
-// Module 15175 (ChangeSpendingLimitFormState)
-import SpendingLimitUtils from "SpendingLimitUtils" /* 15094 */;
+// Module 15185 (ChangeSpendingLimitFormState)
+import SpendingLimitUtils from "SpendingLimitUtils" /* 15097 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7784 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7816 */;
 
 const require = globalThis.__r;
 
@@ -125,13 +125,13 @@ export const useChangeSpendingLimitFormState = function useChangeSpendingLimitFo
               closure_8(true);
               c3 = 1;
               if (closure_5) {
-                const ParentalControlledSpendingLimit2 = tmp3(15092).ParentalControlledSpendingLimit;
+                const ParentalControlledSpendingLimit2 = tmp3(15095).ParentalControlledSpendingLimit;
                 dependencyMap = 2;
                 c4 = 1;
                 const obj4 = { value: ParentalControlledSpendingLimit2.updateControlledSetting(tmp3, null), done: false };
                 return obj4;
               } else if (null != rounded) {
-                const ParentalControlledSpendingLimit = tmp3(15092).ParentalControlledSpendingLimit;
+                const ParentalControlledSpendingLimit = tmp3(15095).ParentalControlledSpendingLimit;
                 const obj5 = { amount: tmp16, currency: formatted };
                 dependencyMap = 3;
                 c4 = 1;

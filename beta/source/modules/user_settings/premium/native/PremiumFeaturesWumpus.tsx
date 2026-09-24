@@ -1,21 +1,21 @@
-// Module ID: 9496
-// Function ID: 9497
+// Module ID: 9528
+// Function ID: 9529
 // Name: PremiumFeaturesWumpus
-// Dependencies: [19, 1378, 21, 4758, 558, 568, 7186, 9497, 9498, 7680, 9499, 9500, 7682, 5802, 2]
+// Dependencies: [19, 1378, 21, 4790, 558, 568, 7218, 9529, 9530, 7712, 9531, 9532, 7714, 5834, 2]
 
-// Module 9496 (PremiumFeaturesWumpus)
+// Module 9528 (PremiumFeaturesWumpus)
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7186 */;
-import _modDef7680 from "module_7680" /* 7680 */;
-import _modDef7682 from "module_7682" /* 7682 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7218 */;
+import _modDef7712 from "module_7712" /* 7712 */;
+import _modDef7714 from "module_7714" /* 7714 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const PremiumTypes = fn(1378).PremiumTypes;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { clouds: { position: "absolute", top: 0, right: 0 }, wumpus: { position: "absolute", top: 22, right: 22, height: 90 }, wumpusLeft: null };
 let obj3 = { transform: null };
 let items = [{ scaleX: -1 }];
@@ -32,16 +32,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => 
   const tmp3 = closure_8();
   const tmp5 = useIsWindowLargeDefault();
   if (premiumType === PremiumTypes.TIER_0) {
-    const tmp4Result = tmp4(tmp5 ? 9497 : 9498);
+    const tmp4Result = tmp4(tmp5 ? 9529 : 9530);
     if (cResult[0] !== tmp4Result) {
-      const obj2 = { wumpusImageSource: tmp4(7680), cloudsImageSource: tmp4Result };
+      const obj2 = { wumpusImageSource: tmp4(7712), cloudsImageSource: tmp4Result };
       cResult[0] = tmp4Result;
       cResult[1] = obj2;
     }
   } else {
-    const tmp4Result2 = tmp4(tmp5 ? 9499 : 9500);
+    const tmp4Result2 = tmp4(tmp5 ? 9531 : 9532);
     if (cResult[2] !== tmp4Result2) {
-      const obj3 = { wumpusImageSource: tmp4(7682), cloudsImageSource: tmp4Result2 };
+      const obj3 = { wumpusImageSource: tmp4(7714), cloudsImageSource: tmp4Result2 };
       cResult[2] = tmp4Result2;
       cResult[3] = obj3;
       let tmp8 = obj3;
@@ -77,7 +77,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => 
           tmp20 = tmp23;
         }
         const obj5 = { style: tmp16, resizeMode: "contain", source: wumpusImageSource };
-        const tmp19 = hasOwnProperty(tmp4(5802), obj5);
+        const tmp19 = hasOwnProperty(tmp4(5834), obj5);
         cResult[10] = tmp16;
         cResult[11] = wumpusImageSource;
         cResult[12] = tmp19;
@@ -90,7 +90,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => 
       tmp16 = items1;
     }
     const obj6 = { style: tmp3.clouds, resizeMode: "contain", source: cloudsImageSource };
-    const tmp14 = hasOwnProperty(tmp4(5802), obj6);
+    const tmp14 = hasOwnProperty(tmp4(5834), obj6);
     cResult[4] = cloudsImageSource;
     cResult[5] = tmp3.clouds;
     cResult[6] = tmp14;
@@ -104,14 +104,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => 
   const items = [premiumType, tmp2];
   const memo = noop.useMemo(() => {
     if (premiumType === PremiumTypes.TIER_0) {
-      const obj2 = { wumpusImageSource: _modDef7680, cloudsImageSource: importDefault(closure_1 ? 9497 : 9498) };
+      const obj2 = { wumpusImageSource: _modDef7712, cloudsImageSource: importDefault(closure_1 ? 9529 : 9530) };
     } else {
       if (closure_1) {
-        let tmp4 = 9499;
+        let tmp4 = 9531;
       } else {
-        tmp4 = 9500;
+        tmp4 = 9532;
       }
-      const obj = { wumpusImageSource: _modDef7682, cloudsImageSource: importDefault(tmp4) };
+      const obj = { wumpusImageSource: _modDef7714, cloudsImageSource: importDefault(tmp4) };
       return obj;
     }
   }, items);

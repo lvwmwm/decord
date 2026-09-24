@@ -1,11 +1,11 @@
-// Module ID: 17366
-// Function ID: 17367
+// Module ID: 17376
+// Function ID: 17377
 // Name: MessageRequestsSpamScreen
-// Dependencies: [19, 21, 558, 568, 17364, 2]
+// Dependencies: [19, 21, 558, 568, 17374, 2]
 
-// Module 17366 (MessageRequestsSpamScreen)
+// Module 17376 (MessageRequestsSpamScreen)
 import c from "c" /* 568 */;
-import SpamMessageListDefault from "SpamMessageList" /* 17364 */;
+import SpamMessageListDefault from "SpamMessageList" /* 17374 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

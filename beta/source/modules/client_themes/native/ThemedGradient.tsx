@@ -1,28 +1,28 @@
-// Module ID: 5343
-// Function ID: 5344
+// Module ID: 5375
+// Function ID: 5376
 // Name: ThemedGradient
-// Dependencies: [109, 19, 17, 4578, 21, 4758, 4610, 4609, 4608, 558, 568, 1482, 5198, 4693, 580, 4613, 4577, 676, 1235, 565, 4615, 4692, 1234, 2]
+// Dependencies: [109, 19, 17, 4610, 21, 4790, 4642, 4641, 4640, 558, 568, 1482, 5230, 4725, 580, 4645, 4609, 676, 1235, 565, 4647, 4724, 1234, 2]
 // Exports: validateColors
 
-// Module 5343 (ThemedGradient)
+// Module 5375 (ThemedGradient)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import SentryUtilsDefault from "SentryUtils" /* 1235 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4577 */;
-import ColorUtils from "ColorUtils" /* 4608 */;
-import utils_ColorDefault from "utils/Color" /* 4609 */;
-import shared from "shared" /* 4610 */;
-import GuildThemePresets from "GuildThemePresets" /* 4613 */;
-import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 4692 */;
-import useThemeDefault from "useTheme" /* 4693 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4609 */;
+import ColorUtils from "ColorUtils" /* 4640 */;
+import utils_ColorDefault from "utils/Color" /* 4641 */;
+import shared from "shared" /* 4642 */;
+import GuildThemePresets from "GuildThemePresets" /* 4645 */;
+import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 4724 */;
+import useThemeDefault from "useTheme" /* 4725 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4578 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4610 */;
 
-const useRoutedActiveGuildThemeDefault = tmp6(4615);
-const LinearGradientDefault = tmp4(5198);
+const useRoutedActiveGuildThemeDefault = tmp6(4647);
+const LinearGradientDefault = tmp4(5230);
 require = fn;
 function getMixedGradientColor(mixColorOverride) {
   ({ mixAmount, theme } = mixColorOverride);
@@ -89,7 +89,7 @@ let closure_5 = ["overlayOpacity", "gradientOverride"];
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_12 = createStyles.createStyles({ softenGradient: { flex: 1 }, linearGradient: { flex: 1 }, absolute: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0 } });
 let angleCenter = { x: 0.5, y: 0.5 };
 let c14 = 0.7;
@@ -222,7 +222,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = cResult[1];
   }
   dependencyMap = tmp3;
-  const tmp4 = mixColorOverride(4693)();
+  const tmp4 = mixColorOverride(4725)();
   const theme = tmp4;
   if (cResult[2] === gradient.colors) {
     if (cResult[3] === mix) {
@@ -378,7 +378,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = cResult[1];
   }
   dependencyMap = tmp4;
-  const tmp5 = mixColorOverride(4693)();
+  const tmp5 = mixColorOverride(4725)();
   const theme = tmp5;
   if (cResult[2] === mix) {
     if (cResult[3] === tmp4) {
@@ -424,7 +424,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   let obj = mix(568);
-  const guildThemePresetAppearance = mix(4613).getGuildThemePresetAppearance(preset, tmp5);
+  const guildThemePresetAppearance = mix(4645).getGuildThemePresetAppearance(preset, tmp5);
   if (cResult[11] === mix) {
     if (cResult[12] === tmp4) {
       if (cResult[13] === mixColorOverride) {
@@ -893,8 +893,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items2[3] = absolute;
     items2[4] = componentStyles;
     obj.style = items2;
-    tmp10Result = closure_10(reduced(5198), obj);
-    const tmp2Result = reduced(5198);
+    tmp10Result = closure_10(reduced(5230), obj);
+    const tmp2Result = reduced(5230);
   }
   return tmp10Result;
 });
@@ -964,7 +964,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       let GUILD_THEME_DEFAULT_BASE_MIX = customUserThemeSettings.baseMix;
       if (GUILD_THEME_DEFAULT_BASE_MIX == null) {
-        GUILD_THEME_DEFAULT_BASE_MIX = tmp(4613).GUILD_THEME_DEFAULT_BASE_MIX;
+        GUILD_THEME_DEFAULT_BASE_MIX = tmp(4645).GUILD_THEME_DEFAULT_BASE_MIX;
       }
       if (cResult[8] === tmp5) {
         if (cResult[9] === tmp18) {
@@ -995,12 +995,12 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp24 = tmp30;
     }
     const items1 = [];
-    HermesBuiltin.arraySpread(tmp(4613).getSingleColorGuildThemeGradientColors(first, tmp6), 0);
+    HermesBuiltin.arraySpread(tmp(4645).getSingleColorGuildThemeGradientColors(first, tmp6), 0);
     cResult[4] = first;
     cResult[5] = tmp6;
     cResult[6] = items1;
     tmp18 = items1;
-    const tmpResult = tmp(4613);
+    const tmpResult = tmp(4645);
   } else {
     if (cResult[14] === tmp4.preset) {
       if (cResult[15] === tmp5) {
@@ -1207,13 +1207,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const items1 = [tmp60, ];
           const obj4 = { style: null };
           const items2 = [styles.softenGradient, ];
-          const obj5 = { backgroundColor: tmp(4608).hexWithOpacity(overlayColor, overlayOpacity) };
+          const obj5 = { backgroundColor: tmp(4640).hexWithOpacity(overlayColor, overlayOpacity) };
           items2[1] = obj5;
           obj4.style = items2;
           items1[1] = v65535(View, obj4);
           obj3.children = items1;
           tmp61 = closure_1_11(View, obj3);
-          const tmpResult8 = tmp(4608);
+          const tmpResult8 = tmp(4640);
         }
         return tmp61;
       }
@@ -1229,13 +1229,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const items3 = [tmp49, ];
         const obj8 = { style: null };
         const items4 = [styles.softenGradient, ];
-        const obj9 = { backgroundColor: tmp(4608).hexWithOpacity(overlayColor, overlayOpacity) };
+        const obj9 = { backgroundColor: tmp(4640).hexWithOpacity(overlayColor, overlayOpacity) };
         items4[1] = obj9;
         obj8.style = items4;
         items3[1] = v65535(View, obj8);
         obj7.children = items3;
         tmp50 = closure_1_11(View, obj7);
-        const tmpResult9 = tmp(4608);
+        const tmpResult9 = tmp(4640);
       }
       return tmp50;
     }
@@ -1252,13 +1252,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const items5 = [tmp40, ];
       const obj12 = { style: null };
       const items6 = [styles.softenGradient, ];
-      const obj13 = { backgroundColor: tmp(4608).hexWithOpacity(overlayColor, overlayOpacity) };
+      const obj13 = { backgroundColor: tmp(4640).hexWithOpacity(overlayColor, overlayOpacity) };
       items6[1] = obj13;
       obj12.style = items6;
       items5[1] = tmp35(View, obj12);
       obj11.children = items5;
       tmp41 = closure_1_11(View, obj11);
-      const tmpResult10 = tmp(4608);
+      const tmpResult10 = tmp(4640);
     }
     let tmp14 = tmp41;
     tmp35 = v65535;
@@ -1276,13 +1276,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const items7 = [tmp31, ];
           const obj16 = { style: null };
           const items8 = [styles.softenGradient, ];
-          const obj17 = { backgroundColor: tmp(4608).hexWithOpacity(overlayColor, overlayOpacity) };
+          const obj17 = { backgroundColor: tmp(4640).hexWithOpacity(overlayColor, overlayOpacity) };
           items8[1] = obj17;
           obj16.style = items8;
           items7[1] = tmp24(View, obj16);
           obj15.children = items7;
           tmp32 = closure_1_11(View, obj15);
-          const tmpResult11 = tmp(4608);
+          const tmpResult11 = tmp(4640);
         }
         tmp14 = tmp32;
         tmp24 = v65535;
@@ -1300,13 +1300,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const items9 = [tmp20, ];
         const obj20 = { style: null };
         const items10 = [styles.softenGradient, ];
-        const obj21 = { backgroundColor: tmp(4608).hexWithOpacity(overlayColor, overlayOpacity) };
+        const obj21 = { backgroundColor: tmp(4640).hexWithOpacity(overlayColor, overlayOpacity) };
         items10[1] = obj21;
         obj20.style = items10;
         items9[1] = tmp15(View, obj20);
         obj19.children = items9;
         tmp21 = closure_1_11(View, obj19);
-        const tmpResult12 = tmp(4608);
+        const tmpResult12 = tmp(4640);
       }
       tmp14 = tmp21;
       tmp15 = v65535;
@@ -1342,13 +1342,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const items1 = [tmp55, ];
           const obj5 = { style: null };
           const items2 = [styles.softenGradient, ];
-          const obj6 = { backgroundColor: tmp5(4608).hexWithOpacity(overlayColor, num) };
+          const obj6 = { backgroundColor: tmp5(4640).hexWithOpacity(overlayColor, num) };
           items2[1] = obj6;
           obj5.style = items2;
           items1[1] = v65535(View, obj5);
           obj4.children = items1;
           tmp56 = closure_1_11(View, obj4);
-          const tmp5Result = tmp5(4608);
+          const tmp5Result = tmp5(4640);
         }
         return tmp56;
       }
@@ -1364,13 +1364,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const items3 = [tmp44, ];
         const obj9 = { style: null };
         const items4 = [styles.softenGradient, ];
-        const obj10 = { backgroundColor: tmp5(4608).hexWithOpacity(overlayColor, num) };
+        const obj10 = { backgroundColor: tmp5(4640).hexWithOpacity(overlayColor, num) };
         items4[1] = obj10;
         obj9.style = items4;
         items3[1] = v65535(View, obj9);
         obj8.children = items3;
         tmp45 = closure_1_11(View, obj8);
-        const tmp5Result5 = tmp5(4608);
+        const tmp5Result5 = tmp5(4640);
       }
       return tmp45;
     }
@@ -1387,13 +1387,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const items5 = [tmp35, ];
       const obj13 = { style: null };
       const items6 = [styles.softenGradient, ];
-      const obj14 = { backgroundColor: tmp5(4608).hexWithOpacity(overlayColor, num) };
+      const obj14 = { backgroundColor: tmp5(4640).hexWithOpacity(overlayColor, num) };
       items6[1] = obj14;
       obj13.style = items6;
       items5[1] = tmp30(View, obj13);
       obj12.children = items5;
       tmp36 = closure_1_11(View, obj12);
-      const tmp5Result6 = tmp5(4608);
+      const tmp5Result6 = tmp5(4640);
     }
     let tmp9 = tmp36;
     tmp30 = v65535;
@@ -1411,13 +1411,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const items7 = [tmp26, ];
           const obj17 = { style: null };
           const items8 = [styles.softenGradient, ];
-          const obj18 = { backgroundColor: tmp5(4608).hexWithOpacity(overlayColor, num) };
+          const obj18 = { backgroundColor: tmp5(4640).hexWithOpacity(overlayColor, num) };
           items8[1] = obj18;
           obj17.style = items8;
           items7[1] = tmp19(View, obj17);
           obj16.children = items7;
           tmp27 = closure_1_11(View, obj16);
-          const tmp5Result7 = tmp5(4608);
+          const tmp5Result7 = tmp5(4640);
         }
         tmp9 = tmp27;
         tmp19 = v65535;
@@ -1435,13 +1435,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const items9 = [tmp15, ];
         const obj21 = { style: null };
         const items10 = [styles.softenGradient, ];
-        const obj22 = { backgroundColor: tmp5(4608).hexWithOpacity(overlayColor, num) };
+        const obj22 = { backgroundColor: tmp5(4640).hexWithOpacity(overlayColor, num) };
         items10[1] = obj22;
         obj21.style = items10;
         items9[1] = tmp10(View, obj21);
         obj20.children = items9;
         tmp16 = closure_1_11(View, obj20);
-        const tmp5Result8 = tmp5(4608);
+        const tmp5Result8 = tmp5(4640);
       }
       tmp9 = tmp16;
       tmp10 = v65535;

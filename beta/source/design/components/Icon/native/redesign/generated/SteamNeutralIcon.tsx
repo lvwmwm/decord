@@ -1,13 +1,13 @@
-// Module ID: 8963
-// Function ID: 8964
+// Module ID: 8995
+// Function ID: 8996
 // Name: SteamNeutralIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 8964, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 8996, 4493, 2]
 
-// Module 8963 (SteamNeutralIcon)
+// Module 8995 (SteamNeutralIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod8964 from "module_8964" /* 8964 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod8996 from "module_8996" /* 8996 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const SteamNeutralIcon = ReactCompilerGating.isReactCompilerEnabled() ? (
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(8964);
+    const tmpResult = tmp(8996);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const SteamNeutralIcon = ReactCompilerGating.isReactCompilerEnabled() ? (
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8964, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8996, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

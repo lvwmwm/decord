@@ -1,20 +1,20 @@
-// Module ID: 18204
-// Function ID: 18205
+// Module ID: 18214
+// Function ID: 18215
 // Name: RoleTierEditScenesModal
-// Dependencies: [32, 19, 18192, 15464, 21, 4758, 38, 7621, 7238, 1119, 18205, 18191, 18206, 18227, 18230, 18232, 558, 568, 1616, 4961, 5813, 7246, 18234, 2]
+// Dependencies: [32, 19, 18202, 15474, 21, 4790, 38, 7653, 7270, 1119, 18215, 18201, 18216, 18237, 18240, 18242, 558, 568, 1616, 4993, 5845, 7278, 18244, 2]
 
-// Module 18204 (RoleTierEditScenesModal)
+// Module 18214 (RoleTierEditScenesModal)
 import _modDef38 from "module_38" /* 38 */;
 import util from "util" /* 1119 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import _modDef7238 from "module_7238" /* 7238 */;
-import HeaderActionButton from "HeaderActionButton" /* 7621 */;
-import GuildRoleSubscriptionGroupDetailsModalDefault from "GuildRoleSubscriptionGroupDetailsModal" /* 18191 */;
-import GuildRoleSubscriptionGroupGatingModalDefault from "GuildRoleSubscriptionGroupGatingModal" /* 18205 */;
-import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18206 */;
-import GuildRoleSubscriptionTierConfirmationModalDefault from "GuildRoleSubscriptionTierConfirmationModal" /* 18227 */;
-import GuildRoleSubscriptionTierDesignModalDefault from "GuildRoleSubscriptionTierDesignModal" /* 18230 */;
-import GuildRoleSubscriptionTierDetailsModalDefault from "GuildRoleSubscriptionTierDetailsModal" /* 18232 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import _modDef7270 from "module_7270" /* 7270 */;
+import HeaderActionButton from "HeaderActionButton" /* 7653 */;
+import GuildRoleSubscriptionGroupDetailsModalDefault from "GuildRoleSubscriptionGroupDetailsModal" /* 18201 */;
+import GuildRoleSubscriptionGroupGatingModalDefault from "GuildRoleSubscriptionGroupGatingModal" /* 18215 */;
+import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18216 */;
+import GuildRoleSubscriptionTierConfirmationModalDefault from "GuildRoleSubscriptionTierConfirmationModal" /* 18237 */;
+import GuildRoleSubscriptionTierDesignModalDefault from "GuildRoleSubscriptionTierDesignModal" /* 18240 */;
+import GuildRoleSubscriptionTierDetailsModalDefault from "GuildRoleSubscriptionTierDetailsModal" /* 18242 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -71,7 +71,7 @@ function buildScreenMap(arg0, handleClose) {
   closure_129_1 = handleClose;
   obj4.headerRight = () => {
     obj = {
-      source: _modDef7238,
+      source: _modDef7270,
       onPress() {
         return merged(obj);
       },
@@ -123,7 +123,7 @@ function buildScreenMap(arg0, handleClose) {
   closure_130_1 = handleClose;
   obj7.headerRight = () => {
     obj = {
-      source: _modDef7238,
+      source: _modDef7270,
       onPress() {
         return merged(obj);
       },
@@ -174,7 +174,7 @@ function buildScreenMap(arg0, handleClose) {
   closure_131_1 = handleClose;
   obj9.headerRight = () => {
     obj = {
-      source: _modDef7238,
+      source: _modDef7270,
       onPress() {
         return merged(obj);
       },
@@ -223,7 +223,7 @@ function buildScreenMap(arg0, handleClose) {
   closure_132_1 = handleClose;
   obj11.headerRight = () => {
     obj = {
-      source: _modDef7238,
+      source: _modDef7270,
       onPress() {
         return merged(obj);
       },
@@ -272,7 +272,7 @@ function buildScreenMap(arg0, handleClose) {
   closure_133_1 = handleClose;
   obj13.headerRight = () => {
     obj = {
-      source: _modDef7238,
+      source: _modDef7270,
       onPress() {
         return merged(obj);
       },
@@ -323,7 +323,7 @@ function buildScreenMap(arg0, handleClose) {
   closure_134_1 = handleClose;
   obj15.headerRight = () => {
     obj = {
-      source: _modDef7238,
+      source: _modDef7270,
       onPress() {
         return merged(obj);
       },
@@ -374,7 +374,7 @@ function buildScreenMap(arg0, handleClose) {
   closure_135_1 = handleClose;
   obj17.headerRight = () => {
     obj = {
-      source: _modDef7238,
+      source: _modDef7270,
       onPress() {
         return merged(obj);
       },
@@ -421,12 +421,12 @@ function buildScreenMap(arg0, handleClose) {
   obj6[constants.DETAILS] = obj17;
   return obj6;
 }
-const RoleTierEditStore = fn(18192);
+const RoleTierEditStore = fn(18202);
 ({ useCurrentTierEditScene: hasOwnProperty, useResetTierEditState: metroRequire } = RoleTierEditStore);
-let closure_7 = fn(15464).GuildRoleSubscriptionsTierScenes;
+let closure_7 = fn(15474).GuildRoleSubscriptionsTierScenes;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_11 = createStyles.createStyles({ stepsIndicator: { position: "absolute", alignSelf: "center", height: 48 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

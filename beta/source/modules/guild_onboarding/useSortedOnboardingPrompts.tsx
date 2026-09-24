@@ -1,12 +1,12 @@
-// Module ID: 11673
-// Function ID: 11674
+// Module ID: 11709
+// Function ID: 11710
 // Name: useSortedOnboardingPrompts
-// Dependencies: [19, 7347, 565, 2]
+// Dependencies: [19, 7379, 565, 2]
 // Exports: default
 
-// Module 11673 (useSortedOnboardingPrompts)
+// Module 11709 (useSortedOnboardingPrompts)
 import noop from "module_19" /* 19 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7347 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7379 */;
 
 const require = globalThis.__r;
 

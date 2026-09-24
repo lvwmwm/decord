@@ -1,15 +1,15 @@
-// Module ID: 14825
-// Function ID: 14826
+// Module ID: 14863
+// Function ID: 14864
 // Name: VoiceMessagesPlaybackManager
-// Dependencies: [17, 4750, 2099, 1368, 14826, 1986, 577, 5114, 2]
+// Dependencies: [17, 4782, 2099, 1368, 14864, 1986, 577, 5146, 2]
 // Exports: handleVoiceMessageDeleted, pauseCurrentAudioPlayer, playCurrentAudioPlayer
 
-// Module 14825 (VoiceMessagesPlaybackManager)
+// Module 14863 (VoiceMessagesPlaybackManager)
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import NativeDeviceAccessibilityModuleDefault from "NativeDeviceAccessibilityModule" /* 5114 */;
-import NativeAudioPlayerModuleDefault from "NativeAudioPlayerModule" /* 14826 */;
+import NativeDeviceAccessibilityModuleDefault from "NativeDeviceAccessibilityModule" /* 5146 */;
+import NativeAudioPlayerModuleDefault from "NativeAudioPlayerModule" /* 14864 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import LifecycleManager from "LifecycleManager" /* 1986 */;
 import size from "module_2" /* 2 */;

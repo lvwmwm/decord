@@ -1,29 +1,29 @@
-// Module ID: 16021
-// Function ID: 16022
+// Module ID: 16031
+// Function ID: 16032
 // Name: CollectiblesTool
-// Dependencies: [32, 19, 17, 7789, 7804, 8477, 21, 4758, 580, 558, 568, 9042, 4754, 5189, 565, 11031, 11376, 16022, 1181, 2]
+// Dependencies: [32, 19, 17, 7821, 7836, 8509, 21, 4790, 580, 558, 568, 9074, 4786, 5221, 565, 11067, 11412, 16032, 1181, 2]
 
-// Module 16021 (CollectiblesTool)
+// Module 16031 (CollectiblesTool)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import BaseTextButton from "BaseTextButton" /* 5189 */;
-import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9042 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 11376 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import BaseTextButton from "BaseTextButton" /* 5221 */;
+import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9074 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 11412 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7789 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7804 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7821 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7836 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-let closure_9 = fn(8477).useFramePreviewOverrideStore;
+let closure_9 = fn(8509).useFramePreviewOverrideStore;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, scrollContainer: null, section: null, sectionHeader: null, sectionTitle: null, inputContainer: null, inputWrapper: null, inputLabel: null, statusText: null, statusSuccess: null, statusError: null, statusLoading: null, previewContainer: null, previewButton: null, secondaryButton: null, description: null, placeholder: null, placeholderText: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.scrollContainer = { padding: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_32 };
@@ -179,7 +179,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if ("loading" === tmp6Result) {
     if (cResult[5] !== tmp4.sectionTitle) {
       const obj2 = { variant: "heading-md/semibold", style: tmp4.sectionTitle, children: "Frame Preview Override" };
-      const tmp25 = v65535(tmp(4754).Text, obj2);
+      const tmp25 = v65535(tmp(4786).Text, obj2);
       cResult[5] = tmp4.sectionTitle;
       cResult[6] = tmp25;
       let tmp23 = tmp25;
@@ -189,7 +189,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (cResult[7] === tmp4.sectionHeader) {
       if (cResult[10] !== tmp4.description) {
         const obj3 = { variant: "text-sm/normal", style: tmp4.description, children: "Overrides every profile-frame preview with a frame pushed to this device. Tap Load after Cap (or pushFrameOverride.mjs) pushes one." };
-        const tmp32 = v65535(tmp(4754).Text, obj3);
+        const tmp32 = v65535(tmp(4786).Text, obj3);
         cResult[10] = tmp4.description;
         cResult[11] = tmp32;
       }
@@ -239,7 +239,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 }
               }
               const obj4 = { pillStyle: tmp4.secondaryButton, text: "Clear override", onPress: tmp6Result6 };
-              tmp43 = v65535(tmp(5189).BaseTextButton, obj4);
+              tmp43 = v65535(tmp(5221).BaseTextButton, obj4);
             }
             cResult[23] = tmp6Result6;
             cResult[24] = tmp7;
@@ -247,13 +247,13 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             cResult[26] = tmp43;
           }
           const obj5 = { pillStyle: tmp4.secondaryButton, text: "Load from device", onPress: tmp37 };
-          const tmp40 = v65535(tmp(5189).BaseTextButton, obj5);
+          const tmp40 = v65535(tmp(5221).BaseTextButton, obj5);
           cResult[20] = tmp4.secondaryButton;
           cResult[21] = tmp37;
           cResult[22] = tmp40;
         }
         const obj6 = { variant: "text-xs/normal", style: tmp33, children: "Loading\u2026" };
-        const tmp36 = v65535(tmp(4754).Text, obj6);
+        const tmp36 = v65535(tmp(4786).Text, obj6);
         cResult[15] = "Loading\u2026";
         cResult[16] = tmp33;
         cResult[17] = tmp36;

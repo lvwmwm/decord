@@ -1,14 +1,14 @@
-// Module ID: 16692
-// Function ID: 16693
+// Module ID: 16702
+// Function ID: 16703
 // Name: GuildsBarItemEmptyNUX
-// Dependencies: [19, 17, 4580, 16623, 1078, 11383, 21, 4758, 580, 7586, 558, 568, 4462, 504, 4497, 5187, 16361, 16636, 1119, 16693, 16635, 5804, 16647, 4754, 2]
+// Dependencies: [19, 17, 4612, 16633, 1078, 11419, 21, 4790, 580, 7618, 558, 568, 4494, 504, 4529, 5219, 16371, 16646, 1119, 16703, 16645, 5836, 16657, 4786, 2]
 
-// Module 16692 (GuildsBarItemEmptyNUX)
+// Module 16702 (GuildsBarItemEmptyNUX)
 import nativeDefault from "native" /* 580 */;
-import spring from "spring" /* 5187 */;
-import transitionToGuild from "transitionToGuild" /* 7586 */;
+import spring from "spring" /* 5219 */;
+import transitionToGuild from "transitionToGuild" /* 7618 */;
 import noop from "module_19" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 
 require = fn;
 function handlePress() {
@@ -16,13 +16,13 @@ function handlePress() {
 }
 get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, Image: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const GuildsBarConstants = fn(16623);
+const GuildsBarConstants = fn(16633);
 ({ GUILD_ITEM_HIT_SLOP: closure_8, useGuildWrapperSize: closure_9 } = GuildsBarConstants);
 const EMPTY_NUX_SERVER = fn(1078).EMPTY_NUX_SERVER;
-const MODE_CHANGE_PHYSICS = fn(11383).MODE_CHANGE_PHYSICS;
+const MODE_CHANGE_PHYSICS = fn(11419).MODE_CHANGE_PHYSICS;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_14 = createStyles.createStyles((width, arg1) => {
   const diff = width - 10;
   const obj = { root: { alignSelf: "stretch", paddingLeft: hitSlop.left, marginTop: nativeDefault.modules.mobile.GUILD_BAR_ITEM_PADDING }, container: { position: "relative", flexDirection: "row", alignItems: "center", height: 55, width }, guildIndicator: null, icon: null, backdrop: null, expandedChildren: null };

@@ -1,21 +1,21 @@
-// Module ID: 12962
-// Function ID: 12963
+// Module ID: 12998
+// Function ID: 12999
 // Name: GuildAntiRaidHooks
-// Dependencies: [1224, 2067, 4399, 4580, 1376, 11663, 8279, 1078, 558, 568, 565, 11, 8278, 1090, 4404, 12963, 2]
+// Dependencies: [1224, 2067, 4431, 4612, 1376, 11699, 8311, 1078, 558, 568, 565, 11, 8310, 1090, 4436, 12999, 2]
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar
 
-// Module 12962 (GuildAntiRaidHooks)
+// Module 12998 (GuildAntiRaidHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4404 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8278 */;
-import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 12963 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4436 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8310 */;
+import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 12999 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 import UserStore from "UserStore" /* 1376 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11663 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11699 */;
 
 const require = globalThis.__r;
 
@@ -36,7 +36,7 @@ function getFirstGuildIncidentId(guildId) {
         let tmp19 = require;
         let obj7 = GuildAntiRaidUtils;
         if (obj7.hasDetectedActivity(tmp18)) {
-          let tmp19Result = tmp19(8278);
+          let tmp19Result = tmp19(8310);
           if (!tmp19Result.isUnderLockdown(tmp18)) {
             let obj4 = BigFlagUtilsAll;
             let obj5 = PermissionUtilsAll;
@@ -48,7 +48,7 @@ function getFirstGuildIncidentId(guildId) {
             }
           }
         } else {
-          let tmp19Result2 = tmp19(8278);
+          let tmp19Result2 = tmp19(8310);
         }
       }
     }
@@ -56,7 +56,7 @@ function getFirstGuildIncidentId(guildId) {
   }
   return null;
 }
-let closure_10 = fn(8279).IncidentAlertModeratorPermissions;
+let closure_10 = fn(8311).IncidentAlertModeratorPermissions;
 const Constants = fn(1078);
 ({ EMPTY_STRING_SNOWFLAKE_ID: closure_11, GuildFeatures: closure_12 } = Constants);
 fn(558);
@@ -175,7 +175,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let tmp16 = tmp15;
       if (null != tmp15) {
         let tmp18 = stateFromStores1;
-        let obj8 = stateFromStores1(8278);
+        let obj8 = stateFromStores1(8310);
         if (obj8.hasDetectedActivity(tmp16)) {
           let obj5 = BigFlagUtilsAll;
           let obj6 = PermissionUtilsAll;
@@ -186,7 +186,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             return nextResult.id;
           }
         } else {
-          let tmp18Result = tmp18(8278);
+          let tmp18Result = tmp18(8310);
         }
       }
     }
@@ -253,8 +253,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[6] !== stateFromStores1) {
     let isUnderLockdownResult = null != stateFromStores1;
     if (isUnderLockdownResult) {
-      isUnderLockdownResult = tmp(8278).isUnderLockdown(stateFromStores1);
-      const tmpResult4 = tmp(8278);
+      isUnderLockdownResult = tmp(8310).isUnderLockdown(stateFromStores1);
+      const tmpResult4 = tmp(8310);
     }
     cResult[6] = stateFromStores1;
     cResult[7] = isUnderLockdownResult;
@@ -305,8 +305,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj3 = { shouldShowIncidentActions: stateFromStores, incidentData: stateFromStores1, isUnderLockdown: null };
   let isUnderLockdownResult = null != stateFromStores1;
   if (isUnderLockdownResult) {
-    isUnderLockdownResult = tmp(8278).isUnderLockdown(stateFromStores1);
-    const tmpResult = tmp(8278);
+    isUnderLockdownResult = tmp(8310).isUnderLockdown(stateFromStores1);
+    const tmpResult = tmp(8310);
   }
   obj3.isUnderLockdown = isUnderLockdownResult;
   return obj3;

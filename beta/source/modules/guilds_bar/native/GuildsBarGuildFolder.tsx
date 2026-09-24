@@ -1,33 +1,33 @@
-// Module ID: 16634
-// Function ID: 16635
+// Module ID: 16644
+// Function ID: 16645
 // Name: GuildsBarGuildFolder
-// Dependencies: [19, 7877, 2067, 4580, 5657, 16626, 16631, 16623, 21, 4758, 580, 558, 568, 4462, 504, 5799, 5187, 4608, 1096, 7320, 4497, 4471, 5802, 5244, 16635, 16638, 12783, 16645, 4726, 5739, 5804, 16628, 16646, 2]
+// Dependencies: [19, 7909, 2067, 4612, 5689, 16636, 16641, 16633, 21, 4790, 580, 558, 568, 4494, 504, 5831, 5219, 4640, 1096, 7352, 4529, 4503, 5834, 5276, 16645, 16648, 12819, 16655, 4758, 5771, 5836, 16638, 16656, 2]
 
-// Module 16634 (GuildsBarGuildFolder)
+// Module 16644 (GuildsBarGuildFolder)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
-import useToken2 from "useToken" /* 4462 */;
-import native from "native" /* 4471 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import ColorUtils from "ColorUtils" /* 4608 */;
-import HapticUtils from "HapticUtils" /* 4726 */;
-import spring from "spring" /* 5187 */;
-import _modDef5244 from "module_5244" /* 5244 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import NativeViewDefault from "NativeView" /* 5804 */;
-import ListUtils from "ListUtils" /* 12783 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 16628 */;
+import useToken2 from "useToken" /* 4494 */;
+import native from "native" /* 4503 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import ColorUtils from "ColorUtils" /* 4640 */;
+import HapticUtils from "HapticUtils" /* 4758 */;
+import spring from "spring" /* 5219 */;
+import _modDef5276 from "module_5276" /* 5276 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5771 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import NativeViewDefault from "NativeView" /* 5836 */;
+import ListUtils from "ListUtils" /* 12819 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 16638 */;
 import noop from "module_19" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7877 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7909 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
-import SortedGuildStore from "SortedGuildStore" /* 5657 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
+import SortedGuildStore from "SortedGuildStore" /* 5689 */;
 
-const GuildIcon = tmp(5799);
-const GuildIconDefault = tmp4(5799);
+const GuildIcon = tmp(5831);
+const GuildIconDefault = tmp4(5831);
 require = fn;
 function getItemKey(type) {
   return type.type;
@@ -66,16 +66,16 @@ function renderGuildFolderContent(arg0, type, state, cleanUp) {
     return closure_16(closure_27, obj, arg0);
   }
 }
-const GuildsNodeType = fn(5657).GuildsNodeType;
-const GuildsBarDnDStore = fn(16626);
+const GuildsNodeType = fn(5689).GuildsNodeType;
+const GuildsBarDnDStore = fn(16636);
 ({ useItemDragState: closure_9, useFolderBGHeightOffset: c10 } = GuildsBarDnDStore);
-let GuildsBarConstants = fn(16631);
+let GuildsBarConstants = fn(16641);
 ({ DEFAULT_FOLDER_COLOR: closure_11, isDefaultFolderColor: closure_12, normalizeFolderColor: map1 } = GuildsBarConstants);
-GuildsBarConstants = fn(16623);
+GuildsBarConstants = fn(16633);
 ({ TRANSITION_PHYSICS: closure_14, FOLDER_SPRING_PHYSICS: closure_15 } = GuildsBarConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_18 = createStyles.createStyles(() => {
   let num = arg0;
   if (arg0 === undefined) {
@@ -105,7 +105,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   guildId = guildId.guildId;
   ({ position, selected } = guildId);
   const obj = guildId(568);
-  const tmp5 = closure_18(guildId(4462).useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE));
+  const tmp5 = closure_18(guildId(4494).useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE));
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildStore];
     cResult[0] = items;
@@ -123,7 +123,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   } else {
     tmp8 = cResult[2];
   }
-  const obj2 = guildId(4462);
+  const obj2 = guildId(4494);
   const stateFromStores = guildId(504).useStateFromStores(first, tmp8);
   if (0 === position) {
     let guildPreview3 = tmp5.guildPreview0;
@@ -154,7 +154,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
         }
       }
-      const obj3 = { style: tmp12, guild: stateFromStores, size: tmp(5799).GuildIconSizes.XXSMALL, selected };
+      const obj3 = { style: tmp12, guild: stateFromStores, size: tmp(5831).GuildIconSizes.XXSMALL, selected };
       const tmp16 = closure_16(GuildIconDefault, obj3, combined);
       cResult[7] = stateFromStores;
       cResult[8] = selected;
@@ -215,7 +215,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
       obj.initialValues = { height: height.currentHeight };
       return obj;
     };
-    const obj5 = { withSpring: tmp(5187).withSpring, TRANSITION_PHYSICS };
+    const obj5 = { withSpring: tmp(5219).withSpring, TRANSITION_PHYSICS };
     fn.__closure = obj5;
     fn.__workletHash = 11528904160406;
     fn.__initData = __initData;
@@ -245,7 +245,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     const obj7 = { pointerEvents: "none", collapsable: false, layout: first, style: null };
     const items = [tmp7.folderBackground, tmp14, tmp19];
     obj7.style = items;
-    const tmp22 = value2(tmp4(7320), obj7);
+    const tmp22 = value2(tmp4(7352), obj7);
     cResult[8] = tmp14;
     cResult[9] = tmp7.folderBackground;
     cResult[10] = tmp19;
@@ -258,7 +258,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     cResult[2] = token2;
     cResult[3] = undefined;
   } else {
-    const tmpResult3 = tmp(4608);
+    const tmpResult3 = tmp(4640);
     const hexWithOpacityResult = tmpResult3.hexWithOpacity(tmp(1096).int2hex(tmp15), token2);
     if (cResult[4] !== hexWithOpacityResult) {
       const obj8 = { backgroundColor: hexWithOpacityResult };
@@ -271,11 +271,11 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   color = color.color;
   let token2;
   ({ folderId, totalItems } = color);
-  const token = color(4462).useToken(token2(580).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  let obj = color(4462);
-  const token1 = color(4462).useToken(token2(580).modules.mobile.GUILD_BAR_ITEM_MARGIN);
-  let obj2 = color(4462);
-  const obj3 = color(4462);
+  const token = color(4494).useToken(token2(580).modules.mobile.GUILD_BAR_ITEM_SIZE);
+  let obj = color(4494);
+  const token1 = color(4494).useToken(token2(580).modules.mobile.GUILD_BAR_ITEM_MARGIN);
+  let obj2 = color(4494);
+  const obj3 = color(4494);
   const fn = function s(height) {
     const obj = { animations: null, initialValues: null };
     const obj2 = { height: color(dependencyMap[16]).withSpring(height.targetHeight, TRANSITION_PHYSICS, "animate-always") };
@@ -284,15 +284,15 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     return obj;
   };
   const obj4 = { withSpring: null, TRANSITION_PHYSICS: null };
-  const tmp3 = closure_18(token, color(4462).useToken(token2(580).modules.mobile.GUILD_FOLDER_BACKGROUND_WIDTH_OFFSET));
-  obj4.withSpring = color(5187).withSpring;
+  const tmp3 = closure_18(token, color(4494).useToken(token2(580).modules.mobile.GUILD_FOLDER_BACKGROUND_WIDTH_OFFSET));
+  obj4.withSpring = color(5219).withSpring;
   obj4.TRANSITION_PHYSICS = TRANSITION_PHYSICS;
   fn.__closure = obj4;
   fn.__workletHash = 15799331931829;
   fn.__initData = __initData2;
   const callback = noop.useCallback(fn, []);
   const tmp4 = closure_10(folderId);
-  token2 = color(4462).useToken(token2(580).modules.mobile.GUILD_FOLDER_COLOR_OPACITY);
+  token2 = color(4494).useToken(token2(580).modules.mobile.GUILD_FOLDER_COLOR_OPACITY);
   const items = [color, token2];
   const memo = noop.useMemo(() => {
     const tmp = __initData2(color);
@@ -306,7 +306,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   const obj6 = { pointerEvents: "none", collapsable: false, layout: callback, style: null };
   const items1 = [tmp3.folderBackground, memo, { height: token + token1 + (token + 2 * token1) * totalItems + tmp4 }];
   obj6.style = items1;
-  return closure_16(token2(7320), obj6);
+  return closure_16(token2(7352), obj6);
 }));
 const __initData3 = { code: "function GuildsBarGuildFolderTsx3(){const{withSpring,visible,FOLDER_SPRING_PHYSICS,state,TransitionStates,runOnJS,cleanUp,fromTop,guildItemSize}=this.__closure;return{opacity:withSpring(visible.get(),FOLDER_SPRING_PHYSICS,undefined,function(finished){if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}),transform:[{translateY:withSpring(visible.get()===1?0:fromTop?-guildItemSize:guildItemSize,FOLDER_SPRING_PHYSICS)},{scale:withSpring(visible.get()===1?1:fromTop?0.3:1.3,FOLDER_SPRING_PHYSICS)}]};}" };
 let closure_24 = { code: "function GuildsBarGuildFolderTsx4(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
@@ -319,27 +319,27 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   state = state.state;
   dependencyMap = tmp4;
   let obj = cleanUp(568);
-  const token = cleanUp(4462).useToken(state(580).modules.mobile.GUILD_BAR_ITEM_SIZE);
+  const token = cleanUp(4494).useToken(state(580).modules.mobile.GUILD_BAR_ITEM_SIZE);
   const tmp7 = closure_18(token);
   const tmp5 = state;
-  const tmpResult = cleanUp(4462);
+  const tmpResult = cleanUp(4494);
   let num = 0;
-  if (state === cleanUp(4471).TransitionStates.MOUNTED) {
+  if (state === cleanUp(4503).TransitionStates.MOUNTED) {
     num = 1;
   }
-  const sharedValue = cleanUp(4497).useSharedValue(num);
-  const tmpResult3 = cleanUp(4497);
+  const sharedValue = cleanUp(4529).useSharedValue(num);
+  const tmpResult3 = cleanUp(4529);
   let fn = function o() {
     let obj = { opacity: null, transform: null };
     value = sharedValue.get();
     const fn = function t(arg0) {
       let tmp = arg0;
       if (arg0) {
-        tmp = state === cleanUp(4471).TransitionStates.YEETED;
+        tmp = state === cleanUp(4503).TransitionStates.YEETED;
       }
       if (tmp) {
-        cleanUp(4497).runOnJS(closure_1_0)();
-        const obj = cleanUp(4497);
+        cleanUp(4529).runOnJS(closure_1_0)();
+        const obj = cleanUp(4529);
       }
     };
     const obj2 = spring;
@@ -366,8 +366,8 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
       return obj;
     }
   };
-  const tmpResult4 = cleanUp(4497);
-  fn.__closure = { withSpring: cleanUp(5187).withSpring, visible: sharedValue, FOLDER_SPRING_PHYSICS, state, TransitionStates: cleanUp(4471).TransitionStates, runOnJS: cleanUp(4497).runOnJS, cleanUp, fromTop: undefined !== fromTop && fromTop, guildItemSize: token };
+  const tmpResult4 = cleanUp(4529);
+  fn.__closure = { withSpring: cleanUp(5219).withSpring, visible: sharedValue, FOLDER_SPRING_PHYSICS, state, TransitionStates: cleanUp(4503).TransitionStates, runOnJS: cleanUp(4529).runOnJS, cleanUp, fromTop: undefined !== fromTop && fromTop, guildItemSize: token };
   fn.__workletHash = 6656244933777;
   fn.__initData = __initData3;
   const animatedStyle = tmpResult4.useAnimatedStyle(fn);
@@ -388,7 +388,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
         return tmp15;
       }
       let obj3 = { style: tmp14, children };
-      const tmp17 = closure_16(tmp5(7320), obj3);
+      const tmp17 = closure_16(tmp5(7352), obj3);
       cResult[7] = children;
       cResult[8] = tmp14;
       cResult[9] = tmp17;
@@ -495,7 +495,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   if ("icon" !== tintStyle2.type) {
     return null;
   } else if (cResult[0] !== tintStyle2.tintStyle) {
-    const obj2 = { source: _modDef5244, style: null };
+    const obj2 = { source: _modDef5276, style: null };
     tintStyle = tintStyle2.tintStyle;
     obj2.style = tintStyle;
     const tmp6 = value2(FastImageDefault, obj2);
@@ -507,7 +507,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   item = item.item;
   let tmp = null;
   if ("icon" === item.type) {
-    const obj = { source: _modDef5244, style: item.tintStyle };
+    const obj = { source: _modDef5276, style: item.tintStyle };
     tmp = value2(FastImageDefault, obj);
   }
   return tmp;

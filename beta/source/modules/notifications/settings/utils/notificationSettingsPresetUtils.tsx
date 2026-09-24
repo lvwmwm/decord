@@ -1,14 +1,14 @@
-// Module ID: 4942
-// Function ID: 4943
+// Module ID: 4974
+// Function ID: 4975
 // Name: notificationSettingsPresetUtils
-// Dependencies: [1078, 4940, 4943, 1119, 2]
+// Dependencies: [1078, 4972, 4975, 1119, 2]
 // Exports: arePresetSettingsUnset, presetFromSettings, presetName
 
-// Module 4942 (notificationSettingsPresetUtils)
+// Module 4974 (notificationSettingsPresetUtils)
 import Constants from "Constants" /* 1078 */;
 import util from "util" /* 1119 */;
-import ReadStateConstants from "ReadStateConstants" /* 4940 */;
-import _mod4943 from "module_4943" /* 4943 */;
+import ReadStateConstants from "ReadStateConstants" /* 4972 */;
+import _mod4975 from "module_4975" /* 4975 */;
 import size from "module_2" /* 2 */;
 
 const UserNotificationSettings = Constants.UserNotificationSettings;
@@ -19,7 +19,7 @@ const result = size.fileFinishedImporting("modules/notifications/settings/utils/
 export { Presets };
 export const presetFromSettings = function presetFromSettings(stateFromStores, UserGuildSettingsStore) {
   const items = [UserGuildSettingsStore, stateFromStores];
-  const match = _mod4943.match(items);
+  const match = _mod4975.match(items);
   const items1 = [UserNotificationSettings.ALL_MESSAGES, UnreadSetting.ALL_MESSAGES];
   const items2 = [UserNotificationSettings.ONLY_MENTIONS, UnreadSetting.UNSET];
   const withResult = match.with(items1, () => constants.ALL_MESSAGES);
@@ -32,7 +32,7 @@ export const presetFromSettings = function presetFromSettings(stateFromStores, U
   return match.with(items1, () => constants.ALL_MESSAGES).with(items2, () => constants.MENTIONS).with(items3, () => constants.MENTIONS).with(items4, () => constants.NOTHING).with(items5, () => constants.NOTHING).otherwise(() => constants.CUSTOM);
 };
 export const presetName = function presetName(tmp4Result5) {
-  const match = _mod4943.match(tmp4Result5);
+  const match = _mod4975.match(tmp4Result5);
   const withResult = match.with(obj.ALL_MESSAGES, () => {
     const intl = util.intl;
     return intl.string(util.t.hZrr6k);

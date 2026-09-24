@@ -1,11 +1,11 @@
-// Module ID: 16792
-// Function ID: 16793
+// Module ID: 16802
+// Function ID: 16803
 // Name: ICYMINavigator
-// Dependencies: [21, 8162, 558, 568, 7246, 16793, 16744, 2]
+// Dependencies: [21, 8194, 558, 568, 7278, 16803, 16754, 2]
 
-// Module 16792 (ICYMINavigator)
+// Module 16802 (ICYMINavigator)
 import jsxProd from "jsxProd" /* 21 */;
-import NativeStackNavigator from "NativeStackNavigator" /* 8162 */;
+import NativeStackNavigator from "NativeStackNavigator" /* 8194 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const result = size.fileFinishedImporting("modules/icymi/native/navigator/ICYMIN
 export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = accessibilityNativeStackOptions(568).c(6);
   const obj = accessibilityNativeStackOptions(568);
-  accessibilityNativeStackOptions = accessibilityNativeStackOptions(7246).useAccessibilityNativeStackOptions();
+  accessibilityNativeStackOptions = accessibilityNativeStackOptions(7278).useAccessibilityNativeStackOptions();
   if (cResult[0] !== accessibilityNativeStackOptions) {
     const fn = function n() {
       const merged = Object.assign(accessibilityNativeStackOptions);
@@ -34,7 +34,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj3 = {
       name: "icymi-screen",
       getComponent() {
-          return accessibilityNativeStackOptions(16793).ICYMITab;
+          return accessibilityNativeStackOptions(16803).ICYMITab;
         }
     };
     const tmp7 = closure_2(closure_4.Screen, obj3);
@@ -47,7 +47,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj4 = {
       name: "notifications-screen",
       getComponent() {
-          return accessibilityNativeStackOptions(16744).ThemedNotificationsModal;
+          return accessibilityNativeStackOptions(16754).ThemedNotificationsModal;
         }
     };
     const tmp11 = closure_2(closure_4.Screen, obj4);
@@ -82,13 +82,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     closure_2(closure_4.Screen, {
       name: "icymi-screen",
       getComponent() {
-        return closure_0(16793).ICYMITab;
+        return closure_0(16803).ICYMITab;
       }
     }),
     closure_2(closure_4.Screen, {
       name: "notifications-screen",
       getComponent() {
-        return closure_0(16744).ThemedNotificationsModal;
+        return closure_0(16754).ThemedNotificationsModal;
       }
     })
   ];

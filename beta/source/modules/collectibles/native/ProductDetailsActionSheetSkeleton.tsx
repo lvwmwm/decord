@@ -1,13 +1,13 @@
-// Module ID: 13474
-// Function ID: 13475
+// Module ID: 13510
+// Function ID: 13511
 // Name: ProductDetailsActionSheetSkeleton
-// Dependencies: [19, 17, 21, 4758, 580, 5193, 558, 568, 4497, 4759, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 5225, 558, 568, 4529, 4791, 2]
 
-// Module 13474 (ProductDetailsActionSheetSkeleton)
+// Module 13510 (ProductDetailsActionSheetSkeleton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1 }, scrollArea: { flex: 1 }, block: { backgroundColor: nativeDefault.colors.BORDER_SUBTLE }, preview: null, info: null, title: null, description: null, price: null, purchaseSection: null, purchaseButton: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 obj2.preview = { marginTop: nativeDefault.space.PX_12, marginHorizontal: nativeDefault.space.PX_16, height: 280, borderRadius: nativeDefault.radii.md };
@@ -31,7 +31,7 @@ obj2.price = size2;
 let obj5 = { marginTop: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
 obj2.purchaseSection = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_16 };
 let obj6 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_16 };
-obj2.purchaseButton = { height: fn(5193).LARGE_BUTTON_HEIGHT, borderRadius: nativeDefault.radii.round };
+obj2.purchaseButton = { height: fn(5225).LARGE_BUTTON_HEIGHT, borderRadius: nativeDefault.radii.round };
 let closure_7 = createStyles.createStyles(obj2);
 const __initData = { code: "function ProductDetailsActionSheetSkeletonTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
 const __initData2 = { code: "function ProductDetailsActionSheetSkeletonTsx2(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
@@ -40,7 +40,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = sharedValue(568).c(3);
   let obj = sharedValue(568);
   const tmp = sharedValue;
-  sharedValue = sharedValue(4497).useSharedValue(0.3);
+  sharedValue = sharedValue(4529).useSharedValue(0.3);
   if (cResult[0] !== sharedValue) {
     const fn = function o() {
       const obj = ReanimatedRexport;
@@ -57,32 +57,32 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[2];
   }
   const effect = noop.useEffect(tmp5, tmp6);
-  const obj2 = sharedValue(4497);
+  const obj2 = sharedValue(4529);
   const fn2 = function l() {
     return { opacity: sharedValue.get() };
   };
   fn2.__closure = { opacity: sharedValue };
   fn2.__workletHash = 4141895524740;
   fn2.__initData = __initData;
-  return tmp(4497).useAnimatedStyle(fn2);
+  return tmp(4529).useAnimatedStyle(fn2);
 }) : (() => {
-  sharedValue = sharedValue(4497).useSharedValue(0.3);
+  sharedValue = sharedValue(4529).useSharedValue(0.3);
   const items = [sharedValue];
   const effect = noop.useEffect(() => {
     const obj = ReanimatedRexport;
     const result = sharedValue.set(obj.withRepeat(timing.withTiming(1, { duration: 650 }), -1, true));
   }, items);
-  let obj = sharedValue(4497);
+  let obj = sharedValue(4529);
   const fn = function o() {
     return { opacity: sharedValue.get() };
   };
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 5056040834599;
   fn.__initData = __initData2;
-  return sharedValue(4497).useAnimatedStyle(fn);
+  return sharedValue(4529).useAnimatedStyle(fn);
 });
 ReactCompilerGating = fn(558);
-let obj7 = { height: fn(5193).LARGE_BUTTON_HEIGHT, borderRadius: nativeDefault.radii.round };
+let obj7 = { height: fn(5225).LARGE_BUTTON_HEIGHT, borderRadius: nativeDefault.radii.round };
 size = fn(2);
 let result = size.fileFinishedImporting("modules/collectibles/native/ProductDetailsActionSheetSkeleton.tsx");
 

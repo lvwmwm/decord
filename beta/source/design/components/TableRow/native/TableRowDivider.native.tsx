@@ -1,19 +1,19 @@
-// Module ID: 5817
-// Function ID: 5818
+// Module ID: 5849
+// Function ID: 5850
 // Name: TableRowDivider
-// Dependencies: [19, 17, 5818, 21, 4758, 580, 558, 568, 4462, 2]
+// Dependencies: [19, 17, 5850, 21, 4790, 580, 558, 568, 4494, 2]
 
-// Module 5817 (TableRowDivider)
+// Module 5849 (TableRowDivider)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
+import useToken from "useToken" /* 4494 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const TABLE_DIVIDER_WIDTH = fn(5818).TABLE_DIVIDER_WIDTH;
+const TABLE_DIVIDER_WIDTH = fn(5850).TABLE_DIVIDER_WIDTH;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles((arg0, arg1) => {
   const obj = { height: TABLE_DIVIDER_WIDTH, paddingStart: null, marginTop: null };
   let num = 12;

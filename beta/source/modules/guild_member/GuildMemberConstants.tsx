@@ -1,9 +1,9 @@
-// Module ID: 4386
-// Function ID: 4387
+// Module ID: 4418
+// Function ID: 4419
 // Name: GuildMemberConstants
 // Dependencies: [2]
 
-// Module 4386 (GuildMemberConstants)
+// Module 4418 (GuildMemberConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_member/GuildMemberConstants.tsx");

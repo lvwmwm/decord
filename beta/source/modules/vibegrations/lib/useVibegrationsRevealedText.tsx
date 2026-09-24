@@ -1,14 +1,14 @@
-// Module ID: 17035
-// Function ID: 17036
+// Module ID: 17045
+// Function ID: 17046
 // Name: useVibegrationsRevealedText
-// Dependencies: [32, 19, 4750, 558, 568, 504, 17036, 17037, 2]
+// Dependencies: [32, 19, 4782, 558, 568, 504, 17046, 17047, 2]
 
-// Module 17035 (useVibegrationsRevealedText)
-import VibegrationsStreamReveal from "VibegrationsStreamReveal" /* 17036 */;
-import vibegrationsPageVisibility from "vibegrationsPageVisibility" /* 17037 */;
+// Module 17045 (useVibegrationsRevealedText)
+import VibegrationsStreamReveal from "VibegrationsStreamReveal" /* 17046 */;
+import vibegrationsPageVisibility from "vibegrationsPageVisibility" /* 17047 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 const require = globalThis.__r;
 
@@ -767,8 +767,8 @@ export const useVibegrationsRevealedText = ReactCompilerGating.isReactCompilerEn
     obj5 = { target, length: null };
     if (streaming) {
       ({ target, length } = tmp2);
-      let length2 = target(17036).reconcileRevealedLength(target, target, length);
-      const targetResult = target(17036);
+      let length2 = target(17046).reconcileRevealedLength(target, target, length);
+      const targetResult = target(17046);
     } else {
       length2 = target.length;
     }

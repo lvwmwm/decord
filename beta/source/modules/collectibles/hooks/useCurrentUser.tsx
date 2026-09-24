@@ -1,9 +1,9 @@
-// Module ID: 8452
-// Function ID: 8453
+// Module ID: 8484
+// Function ID: 8485
 // Name: useCurrentUser
 // Dependencies: [1376, 558, 568, 504, 38, 2]
 
-// Module 8452 (useCurrentUser)
+// Module 8484 (useCurrentUser)
 import _modDef38 from "module_38" /* 38 */;
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;

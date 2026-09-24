@@ -1,18 +1,18 @@
-// Module ID: 18251
-// Function ID: 18252
+// Module ID: 18261
+// Function ID: 18262
 // Name: GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet
-// Dependencies: [32, 19, 17, 1378, 1089, 21, 4758, 580, 558, 568, 4479, 18155, 16915, 5802, 1119, 7481, 15490, 4754, 10017, 1616, 1181, 5189, 4725, 6863, 7397, 2]
+// Dependencies: [32, 19, 17, 1378, 1089, 21, 4790, 580, 558, 568, 4511, 18165, 16925, 5834, 1119, 7513, 15500, 4786, 10056, 1616, 1181, 5221, 4757, 6895, 7429, 2]
 
-// Module 18251 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
+// Module 18261 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4479 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import PriceUtils from "PriceUtils" /* 7481 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 10017 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15490 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4511 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import PriceUtils from "PriceUtils" /* 7513 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 10056 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15500 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -25,7 +25,7 @@ const SubscriptionIntervalTypes = fn(1378).SubscriptionIntervalTypes;
 const CurrencyCodes = fn(1089).CurrencyCodes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 24, borderTopLeftRadius: nativeDefault.radii.md, borderTopRightRadius: nativeDefault.radii.md }, rowContainer: null, containerSelected: null, rowStatusIcon: null, confirmButton: null, backToTemplates: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 24, borderTopLeftRadius: nativeDefault.radii.md, borderTopRightRadius: nativeDefault.radii.md };
 obj2.rowContainer = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, flexDirection: "row", alignSelf: "stretch", justifyContent: "flex-start", padding: 12, marginBottom: 12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
@@ -59,28 +59,28 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[3] === containerSelected) {
       let tmp8 = cResult[4];
     }
-    const tmp9Result = importDefault(selected ? 18155 : 16915);
+    const tmp9Result = importDefault(selected ? 18165 : 16925);
     if (cResult[5] === tmp4.rowStatusIcon) {
       if (cResult[6] === tmp9Result) {
         let tmp11 = cResult[7];
       }
       if (cResult[8] !== price) {
         const intl = tmp(1119).intl;
-        const obj3 = { price: tmp(7481).formatPrice(price, CurrencyCodes.USD), interval: null };
-        const tmpResult3 = tmp(7481);
+        const obj3 = { price: tmp(7513).formatPrice(price, CurrencyCodes.USD), interval: null };
+        const tmpResult3 = tmp(7513);
         const obj4 = { interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 };
-        obj3.interval = tmp(15490).formatPlanInterval(obj4);
+        obj3.interval = tmp(15500).formatPlanInterval(obj4);
         const formatResult = intl.format(tmp(1119).t.CgmBaG, obj3);
         cResult[8] = price;
         cResult[9] = formatResult;
         let tmp14 = formatResult;
-        const tmpResult4 = tmp(15490);
+        const tmpResult4 = tmp(15500);
       } else {
         tmp14 = cResult[9];
       }
       if (cResult[10] !== tmp14) {
         const obj5 = { variant: "text-sm/normal", color: "text-default", children: tmp14 };
-        const tmp20 = options(tmp(4754).Text, obj5);
+        const tmp20 = options(tmp(4786).Text, obj5);
         cResult[10] = tmp14;
         cResult[11] = tmp20;
         let tmp18 = tmp20;
@@ -104,7 +104,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj6 = { style: tmp8, accessibilityRole, accessibilityState, onPress, children: null };
       const items = [tmp11, tmp18];
       obj6.children = items;
-      const tmp23 = v65535(tmp9(10017), obj6);
+      const tmp23 = v65535(tmp9(10056), obj6);
       cResult[12] = accessibilityRole;
       cResult[13] = accessibilityState;
       cResult[14] = onPress;
@@ -142,7 +142,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[1] = containerSelected;
   const obj3 = { style: tmp.rowStatusIcon, source: null };
   const tmp7 = TouchableHitBoxDefault;
-  obj3.source = importDefault(selected ? 18155 : 16915);
+  obj3.source = importDefault(selected ? 18165 : 16925);
   const items1 = [options(FastImageDefault, obj3), ];
   const obj4 = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl = tmp2(1119).intl;

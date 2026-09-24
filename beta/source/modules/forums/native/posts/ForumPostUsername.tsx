@@ -1,24 +1,24 @@
-// Module ID: 12135
-// Function ID: 12136
+// Module ID: 12171
+// Function ID: 12172
 // Name: ForumPostUsername
-// Dependencies: [19, 17, 4750, 12131, 21, 4758, 558, 568, 8134, 2055, 11647, 12136, 504, 8224, 1181, 4754, 2]
+// Dependencies: [19, 17, 4782, 12167, 21, 4790, 558, 568, 8166, 2055, 11683, 12172, 504, 8256, 1181, 4786, 2]
 
-// Module 12135 (ForumPostUsername)
+// Module 12171 (ForumPostUsername)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import ForumLayout from "ForumLayout" /* 2055 */;
-import ForumHooks from "ForumHooks" /* 8134 */;
-import useChatWidthDefault from "useChatWidth" /* 11647 */;
-import ForumPostGridBody from "ForumPostGridBody" /* 12136 */;
+import ForumHooks from "ForumHooks" /* 8166 */;
+import useChatWidthDefault from "useChatWidth" /* 11683 */;
+import ForumPostGridBody from "ForumPostGridBody" /* 12172 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const View = fn(17).View;
-const useForumChannelStore = fn(12131).useForumChannelStore;
+const useForumChannelStore = fn(12167).useForumChannelStore;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ authorContainer: { flexDirection: "row", alignItems: "center", justifyContent: "center", marginEnd: 8 }, roleDotContainer: { alignItems: "center", justifyContent: "center", marginEnd: 2, marginBottom: 4 }, authorName: { overflow: "hidden", flexWrap: "nowrap" } });
 fn(558);
 let ReactCompilerGating = fn(558);
@@ -186,7 +186,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         cResult[8] = tmp15;
       } else {
-        const processColorStringsArray = tmp(8224).useProcessColorStringsArray(authorColors);
+        const processColorStringsArray = tmp(8256).useProcessColorStringsArray(authorColors);
         class A {
           constructor() {
             return closure_1_4.roleStyle;
@@ -273,7 +273,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           cResult[11] = obj5;
           tmp25 = obj5;
         }
-        const tmpResult2 = tmp(8224);
+        const tmpResult2 = tmp(8256);
       }
     }
   }
@@ -300,8 +300,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (null != authorColor) {
       const obj2 = { color: authorColor };
     }
-    const processColorStringsArray = tmp3(8224).useProcessColorStringsArray(authorColors);
-    const tmp3Result2 = tmp3(8224);
+    const processColorStringsArray = tmp3(8256).useProcessColorStringsArray(authorColors);
+    const tmp3Result2 = tmp3(8256);
     const useIsRoleStyleAndRoleColorsEligibleForERC = tmp3Result2.useIsRoleStyleAndRoleColorsEligibleForERC;
     const guild_id = thread.guild_id;
     let tmp18Result = null;
@@ -330,7 +330,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       obj7.style = items4;
       const items5 = [authorName, suffix];
       obj7.children = items5;
-      items3[1] = React5(tmp3(4754).Text, obj7);
+      items3[1] = React5(tmp3(4786).Text, obj7);
       obj3.children = items3;
       tmp18Result = tmp18(tmp19, obj3);
     }

@@ -1,18 +1,18 @@
-// Module ID: 12000
-// Function ID: 12001
+// Module ID: 12036
+// Function ID: 12037
 // Name: AutomodUserProfileQuarantineAlert
-// Dependencies: [32, 109, 19, 17, 502, 2109, 2067, 11993, 1078, 4386, 21, 4758, 580, 558, 568, 1119, 1181, 12001, 4754, 5207, 12002, 7626, 565, 4405, 1245, 5203, 2]
+// Dependencies: [32, 109, 19, 17, 502, 2109, 2067, 12029, 1078, 4418, 21, 4790, 580, 558, 568, 1119, 1181, 12037, 4786, 5239, 12038, 7658, 565, 4437, 1245, 5235, 2]
 
-// Module 12000 (AutomodUserProfileQuarantineAlert)
+// Module 12036 (AutomodUserProfileQuarantineAlert)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4405 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import common_AlertDefault from "common/Alert" /* 5207 */;
-import _modDef12001 from "module_12001" /* 12001 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4437 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import common_AlertDefault from "common/Alert" /* 5239 */;
+import _modDef12037 from "module_12037" /* 12037 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -28,13 +28,13 @@ let closure_6 = ["guildId", "guildName", "automodReason"];
 let closure_7 = ["guildName"];
 let closure_8 = ["guildName"];
 const View = fn(17).View;
-const QUARANTINE_USER_ALERT_KEY = fn(11993).QUARANTINE_USER_ALERT_KEY;
+const QUARANTINE_USER_ALERT_KEY = fn(12029).QUARANTINE_USER_ALERT_KEY;
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_16, UserSettingsSections: closure_17 } = Constants);
-const GuildMemberFlags = fn(4386).GuildMemberFlags;
+const GuildMemberFlags = fn(4418).GuildMemberFlags;
 const jsxProd = fn(21);
 ({ jsx: closure_19, jsxs: closure_20 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { wrapper: { padding: 16 }, body: { flexDirection: "column", alignItems: "center" }, mainIcon: null, title: null, description: null };
 let size = { width: 48, height: 48, tintColor: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL, marginBottom: 16 };
 obj2.mainIcon = size;
@@ -78,7 +78,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const onClose = tmp4.onClose;
   }
   if (cResult[7] !== tmp12.mainIcon) {
-    const obj2 = { source: _modDef12001, size: tmp(1181).Icon.Sizes.CUSTOM, style: tmp12.mainIcon };
+    const obj2 = { source: _modDef12037, size: tmp(1181).Icon.Sizes.CUSTOM, style: tmp12.mainIcon };
     const tmp18 = closure_1_19(tmp(1181).Icon, obj2);
     cResult[7] = tmp12.mainIcon;
     cResult[8] = tmp18;
@@ -146,7 +146,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp24 = tmp27;
     }
     const obj5 = { style: tmp12.description, variant: "text-sm/medium", color: "text-default", children: tmp6 };
-    const tmp23 = closure_1_19(tmp(4754).Text, obj5);
+    const tmp23 = closure_1_19(tmp(4786).Text, obj5);
     cResult[12] = tmp6;
     cResult[13] = tmp12.description;
     cResult[14] = tmp23;
@@ -175,7 +175,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj.onConfirm = onConfirm;
   const obj2 = { style: tmp2.body, children: null };
   const tmp6 = common_AlertDefault;
-  const items = [closure_1_19(native.Icon, { source: _modDef12001, size: native.Icon.Sizes.CUSTOM, style: tmp2.mainIcon }), closure_1_19(Text_Text.Text, { style: tmp2.title, accessibilityRole: "header", variant: "heading-md/medium", color: "mobile-text-heading-primary", children: title }), closure_1_19(Text_Text.Text, { style: tmp2.description, variant: "text-sm/medium", color: "text-default", children: description })];
+  const items = [closure_1_19(native.Icon, { source: _modDef12037, size: native.Icon.Sizes.CUSTOM, style: tmp2.mainIcon }), closure_1_19(Text_Text.Text, { style: tmp2.title, accessibilityRole: "header", variant: "heading-md/medium", color: "mobile-text-heading-primary", children: title }), closure_1_19(Text_Text.Text, { style: tmp2.description, variant: "text-sm/medium", color: "text-default", children: description })];
   obj2.children = items;
   obj.children = closure_1_20(View, obj2);
   return closure_1_19(tmp6, obj);
@@ -220,7 +220,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       tmp15 = cResult[8];
     }
-    const tmp17 = _slicedToArray(tmp(12002).useOpenFixQuarantinedProfileModal(tmp15), 2);
+    const tmp17 = _slicedToArray(tmp(12038).useOpenFixQuarantinedProfileModal(tmp15), 2);
     const first = tmp17[0];
     if (tmp17[1]) {
       if (cResult[10] !== tmp19) {
@@ -320,7 +320,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const tmpResult = tmp(12002);
+    const tmpResult = tmp(12038);
   }
 }) : ((arg0) => {
   ({ guildId, guildName, automodReason } = arg0);
@@ -334,8 +334,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     stringResult = intl.string(util.t.TBeZmG);
   }
   const tmp = _objectWithoutProperties(arg0, closure_6);
-  const tmp2Result = tmp2(12002);
-  [require, tmp8] = tmp2(12002).useOpenFixQuarantinedProfileModal({ guildId });
+  const tmp2Result = tmp2(12038);
+  [require, tmp8] = tmp2(12038).useOpenFixQuarantinedProfileModal({ guildId });
   if (!tmp8) {
     const intl3 = tmp2(1119).intl;
     stringResult = intl3.string(tmp2(1119).t.FFj5Dt);
@@ -505,7 +505,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       if (cResult[12] === stateFromStores) {
         let tmp18 = cResult[13];
       }
-      stateFromStores(5203)(tmp18);
+      stateFromStores(5235)(tmp18);
       if (stateFromStores2 !== GuildMemberFlags.AUTOMOD_QUARANTINED_BIO) {
         if (stateFromStores2 !== tmp21.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) {
           if (stateFromStores2 === tmp21.AUTOMOD_QUARANTINED_SERVER_TAG) {
@@ -608,7 +608,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       return AutomodPermissionUtils.getAutomodReason(automodQuarantinedGuildMemberFlags);
     }
   }, items4);
-  stateFromStores(5203)(() => {
+  stateFromStores(5235)(() => {
     AnalyticsUtilsDefault.track(constants.OPEN_MODAL, { type: QUARANTINE_USER_ALERT_KEY, guild_id: guildId, other_user_id: stateFromStores });
   });
   if (stateFromStores2 !== GuildMemberFlags.AUTOMOD_QUARANTINED_BIO) {

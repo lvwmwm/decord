@@ -1,13 +1,13 @@
-// Module ID: 18140
-// Function ID: 18141
+// Module ID: 18150
+// Function ID: 18151
 // Name: ArrowLargeDownIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 12416, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 12452, 4493, 2]
 
-// Module 18140 (ArrowLargeDownIcon)
+// Module 18150 (ArrowLargeDownIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod12416 from "module_12416" /* 12416 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod12452 from "module_12452" /* 12452 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const ArrowLargeDownIcon = ReactCompilerGating.isReactCompilerEnabled() ?
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(12416);
+    const tmpResult = tmp(12452);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const ArrowLargeDownIcon = ReactCompilerGating.isReactCompilerEnabled() ?
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12416, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12452, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

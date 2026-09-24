@@ -1,17 +1,17 @@
-// Module ID: 16655
-// Function ID: 16656
+// Module ID: 16665
+// Function ID: 16666
 // Name: FavoritesGuildCoachmarkIntro
-// Dependencies: [32, 19, 16626, 1078, 2042, 21, 558, 568, 4497, 10612, 16650, 1119, 3328, 16656, 10452, 2]
+// Dependencies: [32, 19, 16636, 1078, 2042, 21, 558, 568, 4529, 10648, 16660, 1119, 3360, 16666, 10491, 2]
 
-// Module 16655 (FavoritesGuildCoachmarkIntro)
+// Module 16665 (FavoritesGuildCoachmarkIntro)
 import util from "util" /* 1119 */;
-import _modDef3328 from "module_3328" /* 3328 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10612 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16650 */;
+import _modDef3360 from "module_3360" /* 3360 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10648 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16660 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16626 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16636 */;
 
 require = fn;
 const FAVORITES = fn(1078).FAVORITES;
@@ -62,8 +62,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
       ReanimatedRexport.runOnJS(closure_2)(arg0);
     }
   };
-  const tmpResult = markAsDismissed(4497);
-  fn2.__closure = { runOnJS: markAsDismissed(4497).runOnJS, setScrolledToTop: tmp10 };
+  const tmpResult = markAsDismissed(4529);
+  fn2.__closure = { runOnJS: markAsDismissed(4529).runOnJS, setScrolledToTop: tmp10 };
   fn2.__workletHash = 13648062364539;
   fn2.__initData = __initData2;
   const animatedReaction = tmpResult.useAnimatedReaction(C, fn2);
@@ -117,9 +117,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
         return;
       }
     }
-    const stringResult = obj4.string(scrollPosition(3328)["bu/mLv"]);
+    const stringResult = obj4.string(scrollPosition(3360)["bu/mLv"]);
     const intl = tmp(1119).intl;
-    const stringResult1 = intl.string(scrollPosition(3328).kxQJ7q);
+    const stringResult1 = intl.string(scrollPosition(3360).kxQJ7q);
     cResult[6] = stringResult;
     cResult[7] = stringResult1;
     let tmp15 = stringResult1;
@@ -143,7 +143,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
       }
     }
     const intl2 = tmp(1119).intl;
-    const stringResult2 = intl2.string(scrollPosition(3328)["vN/KQ9"]);
+    const stringResult2 = intl2.string(scrollPosition(3360)["vN/KQ9"]);
     cResult[8] = R;
     cResult[9] = stringResult2;
     let tmp20 = stringResult2;
@@ -206,15 +206,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
   const memo = onDismiss.useMemo(() => {
     const obj = { visible, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: null, buttonLabel: null, onButtonPress: null };
     const intl = util.intl;
-    obj.title = intl.string(_modDef3328["bu/mLv"]);
+    obj.title = intl.string(_modDef3360["bu/mLv"]);
     const intl2 = util.intl;
-    obj.description = intl2.string(_modDef3328.kxQJ7q);
+    obj.description = intl2.string(_modDef3360.kxQJ7q);
     obj.onDismiss = onDismiss;
     obj.renderImgComponent = function renderImgComponent() {
       return closure_1_8(scrollPosition(visible[13]), {});
     };
     const intl3 = util.intl;
-    obj.buttonLabel = intl3.string(_modDef3328["vN/KQ9"]);
+    obj.buttonLabel = intl3.string(_modDef3360["vN/KQ9"]);
     obj.onButtonPress = callback1;
     return obj;
   }, items2);

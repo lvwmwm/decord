@@ -1,13 +1,13 @@
-// Module ID: 6058
-// Function ID: 6059
+// Module ID: 6090
+// Function ID: 6091
 // Name: ButterflyIllocon
-// Dependencies: [21, 558, 568, 6059, 5802, 2]
+// Dependencies: [21, 558, 568, 6091, 5834, 2]
 
-// Module 6058 (ButterflyIllocon)
+// Module 6090 (ButterflyIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6059 from "module_6059" /* 6059 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6091 from "module_6091" /* 6091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const ButterflyIllocon = ReactCompilerGating.isReactCompilerEnabled() ? (
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6059 };
+    const obj2 = { uri: _modDef6091 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const ButterflyIllocon = ReactCompilerGating.isReactCompilerEnabled() ? (
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6059 };
+  const obj2 = { uri: _modDef6091 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

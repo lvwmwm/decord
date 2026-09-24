@@ -1,13 +1,13 @@
-// Module ID: 6628
-// Function ID: 6629
+// Module ID: 6660
+// Function ID: 6661
 // Name: RubberDuckSpotIllustration
-// Dependencies: [21, 558, 568, 6629, 5802, 2]
+// Dependencies: [21, 558, 568, 6661, 5834, 2]
 
-// Module 6628 (RubberDuckSpotIllustration)
+// Module 6660 (RubberDuckSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6629 from "module_6629" /* 6629 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6661 from "module_6661" /* 6661 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const RubberDuckSpotIllustration = ReactCompilerGating.isReactCompilerEna
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6629 };
+    const obj2 = { uri: _modDef6661 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const RubberDuckSpotIllustration = ReactCompilerGating.isReactCompilerEna
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6629 };
+  const obj2 = { uri: _modDef6661 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

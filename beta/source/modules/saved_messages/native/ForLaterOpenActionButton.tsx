@@ -1,31 +1,31 @@
-// Module ID: 16747
-// Function ID: 16748
+// Module ID: 16757
+// Function ID: 16758
 // Name: ForLaterOpenActionButton
-// Dependencies: [19, 17, 11782, 21, 9092, 16748, 4758, 580, 558, 568, 4693, 4462, 5194, 8109, 4720, 11833, 504, 8103, 8098, 8101, 7429, 8108, 1119, 8178, 2]
+// Dependencies: [19, 17, 11818, 21, 9124, 16758, 4790, 580, 558, 568, 4725, 4494, 5226, 8141, 4752, 11869, 504, 8135, 8130, 8133, 7461, 8140, 1119, 8210, 2]
 
-// Module 16747 (ForLaterOpenActionButton)
+// Module 16757 (ForLaterOpenActionButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import ButtonHooks from "ButtonHooks" /* 5194 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8098 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8101 */;
-import showForLaterModal from "showForLaterModal" /* 8108 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 8109 */;
+import useToken from "useToken" /* 4494 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import ButtonHooks from "ButtonHooks" /* 5226 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8130 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8133 */;
+import showForLaterModal from "showForLaterModal" /* 8140 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 8141 */;
 import noop from "module_19" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11782 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11818 */;
 
-const ClipViewDefault = tmp3(9092);
+const ClipViewDefault = tmp3(9124);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const point = { shape: fn(9092).CutoutShape.Circle, x: fn(16748).ICON_SIZE.sm - 7, y: fn(16748).ICON_SIZE.sm - 8, size: 10 };
-const createStyles = fn(4758);
+const point = { shape: fn(9124).CutoutShape.Circle, x: fn(16758).ICON_SIZE.sm - 7, y: fn(16758).ICON_SIZE.sm - 8, size: 10 };
+const createStyles = fn(4790);
 let obj = { container: { aspectRatio: 1, alignItems: "center", justifyContent: "center", position: "relative" }, iconAnchor: null, dot: null };
-let size = { width: fn(16748).ICON_SIZE.sm, height: fn(16748).ICON_SIZE.sm, position: "relative" };
+let size = { width: fn(16758).ICON_SIZE.sm, height: fn(16758).ICON_SIZE.sm, position: "relative" };
 obj.iconAnchor = size;
 const size1 = { position: "absolute", height: 6.5, width: 6.5, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION, borderRadius: nativeDefault.radii.lg, right: -2, bottom: -0.5 };
 obj.dot = size1;
@@ -41,9 +41,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((showRedDot) =>
   let iconAnchor = closure_9();
   const iconSizeStyles = ButtonHooks.useIconSizeStyles("sm", true, 2);
   if (showRedDot.type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER) {
-    let BookmarkIcon = tmp(4720).ClockIcon;
+    let BookmarkIcon = tmp(4752).ClockIcon;
   } else {
-    BookmarkIcon = tmp(11833).BookmarkIcon;
+    BookmarkIcon = tmp(11869).BookmarkIcon;
   }
   if (cResult[0] === iconSizeStyles) {
     if (cResult[1] === iconAnchor.container) {
@@ -110,9 +110,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((showRedDot) =>
   const tmp6 = closure_9();
   const iconSizeStyles = ButtonHooks.useIconSizeStyles("sm", true, 2);
   if (type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER) {
-    let BookmarkIcon = tmp4(4720).ClockIcon;
+    let BookmarkIcon = tmp4(4752).ClockIcon;
   } else {
-    BookmarkIcon = tmp4(11833).BookmarkIcon;
+    BookmarkIcon = tmp4(11869).BookmarkIcon;
   }
   const obj3 = { style: null, children: null };
   const items = [tmp6.container, iconSizeStyles];

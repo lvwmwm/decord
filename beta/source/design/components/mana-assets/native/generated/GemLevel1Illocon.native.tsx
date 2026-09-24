@@ -1,13 +1,13 @@
-// Module ID: 6344
-// Function ID: 6345
+// Module ID: 6376
+// Function ID: 6377
 // Name: GemLevel1Illocon
-// Dependencies: [21, 558, 568, 6345, 5802, 2]
+// Dependencies: [21, 558, 568, 6377, 5834, 2]
 
-// Module 6344 (GemLevel1Illocon)
+// Module 6376 (GemLevel1Illocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6345 from "module_6345" /* 6345 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6377 from "module_6377" /* 6377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const GemLevel1Illocon = ReactCompilerGating.isReactCompilerEnabled() ? (
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6345 };
+    const obj2 = { uri: _modDef6377 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const GemLevel1Illocon = ReactCompilerGating.isReactCompilerEnabled() ? (
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6345 };
+  const obj2 = { uri: _modDef6377 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

@@ -1,16 +1,16 @@
-// Module ID: 9289
-// Function ID: 9290
+// Module ID: 9321
+// Function ID: 9322
 // Name: UserProfileApplicationWidgetFieldUtils
-// Dependencies: [19, 17, 21, 4758, 580, 1119, 558, 568, 9290, 9291, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 1119, 558, 568, 9322, 9323, 4786, 2]
 // Exports: formatDurationNarrow
 
-// Module 9289 (UserProfileApplicationWidgetFieldUtils)
+// Module 9321 (UserProfileApplicationWidgetFieldUtils)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 9290 */;
-import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 9291 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 9322 */;
+import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 9323 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: c2, View: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { fieldTextRow: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, fieldIcon: { width: 16, height: 16 } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -72,7 +72,7 @@ export const FieldText = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       return tmp19;
     }
     const obj2 = { variant, widthChars: skeletonWidthChars };
-    const tmp21 = React4(tmp(9290).TextSkeleton, obj2);
+    const tmp21 = React4(tmp(9322).TextSkeleton, obj2);
     cResult[0] = skeletonWidthChars;
     cResult[1] = variant;
     cResult[2] = tmp21;
@@ -124,7 +124,7 @@ export const FieldText = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         }
       }
       const obj6 = { variant, color, lineClamp: 2, children: tmp5 };
-      const tmp9 = React4(tmp(4754).Text, obj6);
+      const tmp9 = React4(tmp(4786).Text, obj6);
       cResult[6] = color;
       cResult[7] = tmp5;
       cResult[8] = variant;
@@ -132,12 +132,12 @@ export const FieldText = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       tmp7 = tmp9;
     }
     const obj7 = { linkVariant: variant };
-    const result = tmp(9291).parseApplicationWidgetText(field.text, obj7);
+    const result = tmp(9323).parseApplicationWidgetText(field.text, obj7);
     cResult[3] = field.text;
     cResult[4] = variant;
     cResult[5] = result;
     tmp5 = result;
-    const tmpResult = tmp(9291);
+    const tmpResult = tmp(9323);
   }
 }) : ((arg0) => {
   ({ field, variant } = arg0);

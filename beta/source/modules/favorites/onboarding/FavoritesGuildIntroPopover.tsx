@@ -1,14 +1,14 @@
-// Module ID: 10616
-// Function ID: 10617
+// Module ID: 10652
+// Function ID: 10653
 // Name: FavoritesGuildIntroPopover
-// Dependencies: [32, 19, 2037, 2048, 1078, 562, 558, 568, 2031, 10606, 504, 10617, 7632, 2]
+// Dependencies: [32, 19, 2037, 2048, 1078, 562, 558, 568, 2031, 10642, 504, 10653, 7664, 2]
 // Exports: hasOfferedFavoritesGuildOnboarding, isFavoritesIntroPopoverShown, resetHasOfferedFavoritesGuildOnboarding
 
-// Module 10616 (FavoritesGuildIntroPopover)
+// Module 10652 (FavoritesGuildIntroPopover)
 import c from "c" /* 568 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
-import FavoritesHooks from "FavoritesHooks" /* 10606 */;
-import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10617 */;
+import FavoritesHooks from "FavoritesHooks" /* 10642 */;
+import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10653 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import DismissibleContentShownStateStore_mod from "DismissibleContentShownStateStore" /* 2037 */;
@@ -138,7 +138,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           } else {
             items3 = [];
           }
-          const tmp12 = _slicedToArray(tmp(7632).useSelectedDismissibleContent(items3, undefined, true), 1)[0] === tmp(2031).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
+          const tmp12 = _slicedToArray(tmp(7664).useSelectedDismissibleContent(items3, undefined, true), 1)[0] === tmp(2031).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
           importDefault = tmp12;
           const items4 = [tmp12];
           const effect = noop.useEffect(() => {

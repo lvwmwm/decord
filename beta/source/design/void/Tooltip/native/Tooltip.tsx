@@ -1,9 +1,9 @@
-// Module ID: 14373
-// Function ID: 14374
+// Module ID: 14411
+// Function ID: 14412
 // Name: Tooltip/Tooltip
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 1374, 4754, 1181, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 1374, 4786, 1181, 2]
 
-// Module 14373 (Tooltip/Tooltip)
+// Module 14411 (Tooltip/Tooltip)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
@@ -15,7 +15,7 @@ const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
 const TooltipArrowDirections = { UP: "UP", DOWN: "DOWN" };
 let obj2 = { CENTER: "CENTER", RIGHT: "RIGHT", LEFT: "LEFT" };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj4 = { container: { padding: 10, borderRadius: nativeDefault.radii.xs, alignSelf: "flex-start", minWidth: 60, alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, label: null, title: null, arrow: null };
 let obj5 = { padding: 10, borderRadius: nativeDefault.radii.xs, alignSelf: "flex-start", minWidth: 60, alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj4.label = { fontFamily: fn(1078).Fonts.PRIMARY_MEDIUM, fontSize: 12, color: nativeDefault.colors.WHITE };
@@ -198,7 +198,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 let tmp22 = null;
                 if (null != title) {
                   const obj10 = { style: tmp6.title, variant: "text-md/semibold", color: "text-overlay-light", children: title };
-                  tmp22 = React4(tmp(4754).Heading, obj10);
+                  tmp22 = React4(tmp(4786).Heading, obj10);
                 }
                 cResult[15] = tmp6.title;
                 cResult[16] = title;

@@ -1,12 +1,12 @@
-// Module ID: 13707
-// Function ID: 13708
+// Module ID: 13743
+// Function ID: 13744
 // Name: useReferralProgramBannerDetails
-// Dependencies: [19, 1376, 7699, 558, 568, 504, 8455, 2]
+// Dependencies: [19, 1376, 7731, 558, 568, 504, 8487, 2]
 
-// Module 13707 (useReferralProgramBannerDetails)
+// Module 13743 (useReferralProgramBannerDetails)
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7699 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7731 */;
 
 const require = fn;
 const ReactCompilerGating = fn(558);

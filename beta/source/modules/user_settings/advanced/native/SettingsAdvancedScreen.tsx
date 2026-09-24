@@ -1,13 +1,13 @@
-// Module ID: 15794
-// Function ID: 15795
+// Module ID: 15804
+// Function ID: 15805
 // Name: SettingsAdvancedScreen
-// Dependencies: [19, 8238, 1078, 21, 1119, 558, 568, 11594, 14953, 2]
+// Dependencies: [19, 8270, 1078, 21, 1119, 558, 568, 11630, 14988, 2]
 
-// Module 15794 (SettingsAdvancedScreen)
+// Module 15804 (SettingsAdvancedScreen)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
-import SettingLayoutDefault from "SettingLayout" /* 14953 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
+import SettingLayoutDefault from "SettingLayout" /* 14988 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -38,7 +38,7 @@ function getAdvancedSettings() {
   items1[3] = obj5;
   return items1;
 }
-const MobileUserSettings = fn(8238).MobileUserSettings;
+const MobileUserSettings = fn(8270).MobileUserSettings;
 const MarketingURLs = fn(1078).MarketingURLs;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);

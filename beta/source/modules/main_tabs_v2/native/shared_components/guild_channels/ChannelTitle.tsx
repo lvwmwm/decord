@@ -1,18 +1,18 @@
-// Module ID: 17135
-// Function ID: 17136
+// Module ID: 17145
+// Function ID: 17146
 // Name: guild_channels/ChannelTitle
-// Dependencies: [19, 4940, 21, 4758, 580, 558, 568, 12214, 4754, 2]
+// Dependencies: [19, 4972, 21, 4790, 580, 558, 568, 12250, 4786, 2]
 
-// Module 17135 (guild_channels/ChannelTitle)
+// Module 17145 (guild_channels/ChannelTitle)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const UnreadSetting = fn(4940).UnreadSetting;
+const UnreadSetting = fn(4972).UnreadSetting;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyleProperties({ muted: nativeDefault.colors.TEXT_MUTED, normal: nativeDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: nativeDefault.colors.REDESIGN_CHANNEL_NAME_TEXT });
 const ReactCompilerGating = fn(558);
 const obj = { muted: nativeDefault.colors.TEXT_MUTED, normal: nativeDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: nativeDefault.colors.REDESIGN_CHANNEL_NAME_TEXT };
@@ -23,11 +23,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   const cResult = c.c(8);
   ({ title, unread, layout, muted, resolvedUnreadSetting, connected } = arg0);
   if (cResult[0] !== layout) {
-    const layoutStyles = tmp(12214).getLayoutStyles(layout);
+    const layoutStyles = tmp(12250).getLayoutStyles(layout);
     cResult[0] = layout;
     cResult[1] = layoutStyles;
     let tmp4 = layoutStyles;
-    const tmpResult = tmp(12214);
+    const tmpResult = tmp(12250);
   } else {
     tmp4 = cResult[1];
   }

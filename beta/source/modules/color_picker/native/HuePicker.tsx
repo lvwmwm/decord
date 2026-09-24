@@ -1,12 +1,12 @@
-// Module ID: 14866
-// Function ID: 14867
+// Module ID: 14904
+// Function ID: 14905
 // Name: HuePicker
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 14863, 4497, 6891, 5198, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 14901, 4529, 6923, 5230, 2]
 
-// Module 14866 (HuePicker)
+// Module 14904 (HuePicker)
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 14863 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 14901 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -15,7 +15,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 let closure_8 = [0, 60, 120, 180, 240, 300, 360];
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { justifyContent: "center", alignItems: "center" }, containerFullWidth: { alignSelf: "stretch", overflow: "visible" }, slider: null, colorBar: null, colorBarFullWidth: null, colorBarInner: null, colorBarInnerFullWidth: null };
 let size = { left: 0, position: "absolute", borderColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, width: 24, height: 36, borderRadius: nativeDefault.radii.sm, borderWidth: 2 };
 obj2.slider = size;
@@ -48,7 +48,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue, barWidth,
             ReanimatedRexport.runOnJS(tmp)();
           }
         };
-        const obj2 = { onPanFinalize, runOnJS: tmp(4497).runOnJS };
+        const obj2 = { onPanFinalize, runOnJS: tmp(4529).runOnJS };
         fn3.__closure = obj2;
         fn3.__workletHash = 2479115151384;
         fn3.__initData = __initData3;
@@ -63,7 +63,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((hue, barWidth,
           if (cResult[9] === tmp6) {
             let tmp8 = cResult[10];
           }
-          const panGesture = tmp(6891).usePanGesture(tmp8);
+          const panGesture = tmp(6923).usePanGesture(tmp8);
           if (cResult[11] !== panGesture) {
             const obj3 = { gesture: panGesture };
             cResult[11] = panGesture;

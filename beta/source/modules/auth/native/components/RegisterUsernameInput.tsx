@@ -1,13 +1,13 @@
-// Module ID: 16306
-// Function ID: 16307
+// Module ID: 16316
+// Function ID: 16317
 // Name: RegisterUsernameInput
-// Dependencies: [109, 32, 19, 16280, 21, 4758, 4497, 558, 568, 14970, 7176, 580, 5186, 4754, 1119, 16298, 1368, 6846, 2]
+// Dependencies: [109, 32, 19, 16290, 21, 4790, 4529, 558, 568, 15005, 7208, 580, 5218, 4786, 1119, 16308, 1368, 6878, 2]
 
-// Module 16306 (RegisterUsernameInput)
+// Module 16316 (RegisterUsernameInput)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 14970 */;
-import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 16298 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 15005 */;
+import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 16308 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -15,21 +15,21 @@ import noop from "module_19" /* 19 */;
 require = fn;
 let closure_3 = ["username"];
 let closure_4 = ["username"];
-const RegistrationUIStore = fn(16280);
+const RegistrationUIStore = fn(16290);
 ({ setRegistrationErrors: closure_8, useRegistrationUIStore: closure_9 } = RegistrationUIStore);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_13 = createStyles.createStyles({ status: { width: "90%" }, inputHint: { width: "100%" } });
 let obj2 = { entering: null, exiting: null };
-const FadeIn = fn(4497).FadeIn;
+const FadeIn = fn(4529).FadeIn;
 obj2.entering = FadeIn.duration(300);
-const FadeOut = fn(4497).FadeOut;
+const FadeOut = fn(4529).FadeOut;
 obj2.exiting = FadeOut.duration(300);
 let obj3 = { layout: null };
-const LinearTransition = fn(4497).LinearTransition;
-const Easing = fn(4497).Easing;
-obj3.layout = LinearTransition.easing(Easing.inOut(fn(4497).Easing.quad)).duration(300);
+const LinearTransition = fn(4529).LinearTransition;
+const Easing = fn(4529).Easing;
+obj3.layout = LinearTransition.easing(Easing.inOut(fn(4529).Easing.quad)).duration(300);
 let ReactCompilerGating = fn(558);
 let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = c.c(12);
@@ -43,7 +43,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       obj2 = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
-      const tmp35 = v65535(tmp(7176).CircleErrorIcon, obj2);
+      const tmp35 = v65535(tmp(7208).CircleErrorIcon, obj2);
       cResult[0] = tmp35;
       let first = tmp35;
     } else {
@@ -62,9 +62,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const merged1 = Object.assign(obj3);
     obj4.animated = true;
     obj4.children = usernameStatus.message;
-    items[1] = v65535(tmp(4754).Text, obj4);
+    items[1] = v65535(tmp(4786).Text, obj4);
     obj3.children = items;
-    const tmp45 = closure_1_11(tmp(5186).Stack, obj3);
+    const tmp45 = closure_1_11(tmp(5218).Stack, obj3);
     cResult[1] = tmp4.status;
     cResult[2] = usernameStatus.message;
     cResult[3] = tmp45;
@@ -75,10 +75,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (usernameStatus != null) {
         type1 = usernameStatus.type;
       }
-      if (type1 === tmp(14970).NameValidationState.AVAILABLE) {
+      if (type1 === tmp(15005).NameValidationState.AVAILABLE) {
         if (cResult[4] !== usernameStatus.message) {
           const obj5 = { variant: "text-xs/medium", color: "text-feedback-positive", children: usernameStatus.message };
-          const tmp21 = v65535(tmp(4754).Text, obj5);
+          const tmp21 = v65535(tmp(4786).Text, obj5);
           cResult[4] = usernameStatus.message;
           cResult[5] = tmp21;
           let tmp19 = tmp21;
@@ -98,7 +98,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         obj6.variant = "text-xs/medium";
         obj6.animated = true;
         obj6.children = tmp19;
-        const tmp30 = v65535(tmp(4754).Text, obj6);
+        const tmp30 = v65535(tmp(4786).Text, obj6);
         cResult[6] = tmp4.status;
         cResult[7] = tmp19;
         cResult[8] = tmp30;
@@ -124,7 +124,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         obj7.color = "text-muted";
         obj7.animated = true;
         obj7.children = tmp8;
-        const tmp18 = v65535(tmp(4754).Text, obj7);
+        const tmp18 = v65535(tmp(4786).Text, obj7);
         cResult[10] = tmp4.inputHint;
         cResult[11] = tmp18;
         let tmp10 = tmp18;
@@ -146,22 +146,22 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (type === UniqueUsernamesTypes.NameValidationState.ERROR) {
     obj2 = { direction: "horizontal", spacing: 4, align: "flex-start", children: null };
     obj3 = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
-    const items = [v65535(tmp3(7176).CircleErrorIcon, obj3), ];
+    const items = [v65535(tmp3(7208).CircleErrorIcon, obj3), ];
     const obj4 = { variant: "text-xs/medium", color: "text-feedback-critical", style: tmp.status };
     const merged = Object.assign(obj2);
     const merged1 = Object.assign(obj3);
     obj4.animated = true;
     obj4.children = usernameStatus.message;
-    items[1] = v65535(tmp3(4754).Text, obj4);
+    items[1] = v65535(tmp3(4786).Text, obj4);
     obj2.children = items;
-    let tmp6 = closure_1_11(tmp3(5186).Stack, obj2);
+    let tmp6 = closure_1_11(tmp3(5218).Stack, obj2);
   } else {
     if (isUsernameFocused) {
       let type1;
       if (usernameStatus != null) {
         type1 = usernameStatus.type;
       }
-      if (type1 === tmp3(14970).NameValidationState.AVAILABLE) {
+      if (type1 === tmp3(15005).NameValidationState.AVAILABLE) {
         const obj5 = {};
         const merged2 = Object.assign(obj2);
         const merged3 = Object.assign(obj3);
@@ -169,8 +169,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         obj5.variant = "text-xs/medium";
         obj5.animated = true;
         const obj6 = { variant: "text-xs/medium", color: "text-feedback-positive", children: usernameStatus.message };
-        obj5.children = v65535(tmp3(4754).Text, obj6);
-        tmp6 = v65535(tmp3(4754).Text, obj5);
+        obj5.children = v65535(tmp3(4786).Text, obj6);
+        tmp6 = v65535(tmp3(4786).Text, obj5);
       }
     }
     tmp6 = null;
@@ -184,13 +184,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       obj.animated = true;
       const intl = tmp3(1119).intl;
       obj.children = intl.string(tmp3(1119).t.y7LSyU);
-      tmp6 = v65535(tmp3(4754).Text, obj);
+      tmp6 = v65535(tmp3(4786).Text, obj);
     }
   }
   return tmp6;
 });
 ReactCompilerGating = fn(558);
-const easingResult = LinearTransition.easing(Easing.inOut(fn(4497).Easing.quad));
+const easingResult = LinearTransition.easing(Easing.inOut(fn(4529).Easing.quad));
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/components/RegisterUsernameInput.tsx");
 
@@ -323,7 +323,7 @@ export const RegisterUsernameInput = ReactCompilerGating.isReactCompilerEnabled(
         }
       }
     }
-    if (undefined === tmp(14970).NameValidationState.ERROR) {
+    if (undefined === tmp(15005).NameValidationState.ERROR) {
       class H {
         constructor() {
           tmp = closure_1(true);
@@ -340,7 +340,7 @@ export const RegisterUsernameInput = ReactCompilerGating.isReactCompilerEnabled(
       }
     }
     const obj6 = { ref, label: tmp14, accessibilityHint: tmp15, onChange: tmp10, autoCorrect: false, secureTextEntry: tmp18, keyboardType: null, value: null, onSubmitEditing: null, returnKeyType: "next", autoComplete: "username", textContentType: "username", autoCapitalize: "none", onFocus: null, onBlur: null, clearable: true, status: null, submitBehavior: null };
-    const TextInput = tmp(6846).TextInput;
+    const TextInput = tmp(6878).TextInput;
     if (tmpResult.isAndroid()) {
       class H {
         constructor() {
@@ -453,13 +453,13 @@ export const RegisterUsernameInput = ReactCompilerGating.isReactCompilerEnabled(
     type = usernameStatus.type;
   }
   let str2;
-  if (type === tmp14(14970).NameValidationState.ERROR) {
+  if (type === tmp14(15005).NameValidationState.ERROR) {
     str2 = "error";
   }
   const obj6 = { children: null };
   obj3.status = str2;
   obj3.submitBehavior = submitBehavior;
-  const items3 = [closure_10(setUsername(6846).TextInput, obj3), closure_10(closure_16, { usernameStatus, isUsernameFocused: tmp5[0] })];
+  const items3 = [closure_10(setUsername(6878).TextInput, obj3), closure_10(closure_16, { usernameStatus, isUsernameFocused: tmp5[0] })];
   obj6.children = items3;
   return tmp11(tmp12, obj6);
 });

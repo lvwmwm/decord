@@ -1,20 +1,20 @@
-// Module ID: 9515
-// Function ID: 9516
+// Module ID: 9547
+// Function ID: 9548
 // Name: CommandPermissionUtils
-// Dependencies: [2049, 2067, 5212, 1078, 9516, 9407, 7770, 1982, 1090, 9316, 38, 7768, 7769, 2]
+// Dependencies: [2049, 2067, 5244, 1078, 9548, 9439, 7802, 1982, 1090, 9348, 38, 7800, 7801, 2]
 // Exports: computeAllowedForChannel, hasAccess
 
-// Module 9515 (CommandPermissionUtils)
+// Module 9547 (CommandPermissionUtils)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1078 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
 import ChannelRecord from "ChannelRecord" /* 2049 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5212 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7768 */;
-import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 7769 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7770 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9316 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 9407 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5244 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7800 */;
+import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 7801 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7802 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9348 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 9439 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import size from "module_2" /* 2 */;
 
@@ -156,15 +156,15 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
               if (null != tmp28) {
                 permission = tmp28.permission;
               } else {
-                const tmp27Result = tmp27(7769);
-                const tmp27Result2 = tmp27(7768);
-                const tmp30 = permissions[tmp27Result.toPermissionKey(tmp27Result, tmp27(7768).allChannelsSentinel(contextGuildId), tmp27(undefined, 7770).ApplicationCommandPermissionType.CHANNEL)];
+                const tmp27Result = tmp27(7801);
+                const tmp27Result2 = tmp27(7800);
+                const tmp30 = permissions[tmp27Result.toPermissionKey(tmp27Result, tmp27(7800).allChannelsSentinel(contextGuildId), tmp27(undefined, 7802).ApplicationCommandPermissionType.CHANNEL)];
                 let permission1 = null;
                 if (null != tmp30) {
                   permission1 = tmp30.permission;
                 }
                 permission = permission1;
-                const allChannelsSentinelResult = tmp27(7768).allChannelsSentinel(contextGuildId);
+                const allChannelsSentinelResult = tmp27(7800).allChannelsSentinel(contextGuildId);
               }
             }
             if (false === permission) {
@@ -223,9 +223,9 @@ export const computeAllowedForChannel = function computeAllowedForChannel(permis
     if (null != tmp3) {
       return tmp3.permission;
     } else {
-      const tmpResult = tmp(7769);
-      const tmpResult2 = tmp(7768);
-      const tmp6 = permissions[tmpResult.toPermissionKey(tmpResult, tmp(7768).allChannelsSentinel(guild_id), tmp(undefined, 7770).ApplicationCommandPermissionType.CHANNEL)];
+      const tmpResult = tmp(7801);
+      const tmpResult2 = tmp(7800);
+      const tmp6 = permissions[tmpResult.toPermissionKey(tmpResult, tmp(7800).allChannelsSentinel(guild_id), tmp(undefined, 7802).ApplicationCommandPermissionType.CHANNEL)];
       let permission = null;
       if (null != tmp6) {
         permission = tmp6.permission;

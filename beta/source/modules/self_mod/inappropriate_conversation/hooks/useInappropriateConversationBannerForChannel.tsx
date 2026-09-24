@@ -1,15 +1,15 @@
-// Module ID: 10362
-// Function ID: 10363
+// Module ID: 10401
+// Function ID: 10402
 // Name: useInappropriateConversationBannerForChannel
-// Dependencies: [10357, 558, 568, 10363, 10364, 10361, 10360, 2]
+// Dependencies: [10396, 558, 568, 10402, 10403, 10400, 10399, 2]
 
-// Module 10362 (useInappropriateConversationBannerForChannel)
+// Module 10401 (useInappropriateConversationBannerForChannel)
 import c from "c" /* 568 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10357 */;
-import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10360 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10361 */;
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10363 */;
-import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 10364 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10396 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10399 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10400 */;
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10402 */;
+import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 10403 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

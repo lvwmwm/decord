@@ -1,11 +1,11 @@
-// Module ID: 15252
-// Function ID: 15253
+// Module ID: 15262
+// Function ID: 15263
 // Name: PremiumManagePlanScreen
-// Dependencies: [19, 21, 558, 568, 13764, 2]
+// Dependencies: [19, 21, 558, 568, 13800, 2]
 
-// Module 15252 (PremiumManagePlanScreen)
+// Module 15262 (PremiumManagePlanScreen)
 import c from "c" /* 568 */;
-import PremiumManagePlanDefault from "PremiumManagePlan" /* 13764 */;
+import PremiumManagePlanDefault from "PremiumManagePlan" /* 13800 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

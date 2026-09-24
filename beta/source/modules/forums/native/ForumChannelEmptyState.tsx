@@ -1,13 +1,13 @@
-// Module ID: 12917
-// Function ID: 12918
+// Module ID: 12953
+// Function ID: 12954
 // Name: ForumChannelEmptyState
-// Dependencies: [19, 17, 21, 4758, 558, 568, 4610, 1616, 12918, 12919, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 4642, 1616, 12954, 12955, 1119, 4786, 2]
 
-// Module 12917 (ForumChannelEmptyState)
+// Module 12953 (ForumChannelEmptyState)
 import c from "c" /* 568 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import shared from "shared" /* 4610 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import shared from "shared" /* 4642 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ container: { flex: 1, alignSelf: "stretch", justifyContent: "center", alignItems: "center" }, image: { width: 120, height: 80 }, title: { textAlign: "center", marginTop: 16, marginHorizontal: 20 }, subtext: { textAlign: "center", marginTop: 4, marginHorizontal: 20 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -44,9 +44,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       let tmp9 = cResult[4];
     }
     if (tmpResult2.isThemeLight(tmpResult.useThemeContext().theme)) {
-      let tmp5Result = tmp5(12918);
+      let tmp5Result = tmp5(12954);
     } else {
-      tmp5Result = tmp5(12919);
+      tmp5Result = tmp5(12955);
     }
     if (cResult[5] === tmp4.image) {
       if (cResult[6] === tmp5Result) {
@@ -87,7 +87,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
                     tmp27 = tmp30;
                   }
                   const obj4 = { style: tmp4.subtext, variant: "text-sm/medium", color: "text-default", children: cResult[17] };
-                  const tmp26 = hasOwnProperty(tmp(4754).Text, obj4);
+                  const tmp26 = hasOwnProperty(tmp(4786).Text, obj4);
                   cResult[18] = tmp4.subtext;
                   cResult[19] = cResult[17];
                   cResult[20] = tmp26;
@@ -112,7 +112,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
             cResult[17] = formatToPlainStringResult;
           }
           const obj6 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: cResult[10] };
-          const tmp20 = hasOwnProperty(tmp(4754).Text, obj6);
+          const tmp20 = hasOwnProperty(tmp(4786).Text, obj6);
           cResult[11] = tmp4.title;
           cResult[12] = cResult[10];
           cResult[13] = tmp20;
@@ -136,7 +136,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     cResult[6] = tmp5Result;
     cResult[7] = tmp14;
     tmp11 = tmp14;
-    tmpResult2 = tmp(4610);
+    tmpResult2 = tmp(4642);
   }
   const items1 = [tmp4.container, tmp8];
   cResult[2] = tmp4.container;
@@ -159,9 +159,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   const tmp7 = React3;
   const tmp9 = React4;
   if (obj3.isThemeLight(obj.useThemeContext().theme)) {
-    let tmp4Result = tmp4(12918);
+    let tmp4Result = tmp4(12954);
   } else {
-    tmp4Result = tmp4(12919);
+    tmp4Result = tmp4(12955);
   }
   const items1 = [hasOwnProperty(tmp9, { source: tmp4Result, style: tmp.image }), , ];
   const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };

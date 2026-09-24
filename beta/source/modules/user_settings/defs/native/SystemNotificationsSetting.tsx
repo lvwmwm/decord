@@ -1,9 +1,9 @@
-// Module ID: 15752
-// Function ID: 15753
+// Module ID: 15762
+// Function ID: 15763
 // Name: SystemNotificationsSetting
-// Dependencies: [5, 17, 8238, 1078, 4967, 12559, 12567, 1245, 9553, 11594, 1119, 2]
+// Dependencies: [5, 17, 8270, 1078, 4999, 12595, 12603, 1245, 9585, 11630, 1119, 2]
 
-// Module 15752 (SystemNotificationsSetting)
+// Module 15762 (SystemNotificationsSetting)
 import util from "util" /* 1119 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -81,16 +81,16 @@ let closure_9 = async function _handleEnableSystemNotification(arg0, value) {
 };
 const NativeModules = fn(17).NativeModules;
 const AnalyticEvents = fn(1078).AnalyticEvents;
-let closure_6 = fn(4967).NotificationAuthorizationStatus;
-const NotificationPermissionConstants = fn(12559);
+let closure_6 = fn(4999).NotificationAuthorizationStatus;
+const NotificationPermissionConstants = fn(12595);
 ({ EventActionType: closure_7, EventActionLocation: closure_8 } = NotificationPermissionConstants);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.nl2Dqx);
   },
-  parent: fn(8238).MobileUserSettings.NOTIFICATIONS,
+  parent: fn(8270).MobileUserSettings.NOTIFICATIONS,
   onPress: function handleEnableSystemNotification() {
     const self = this;
     const apply = closure_9.apply;

@@ -1,14 +1,14 @@
-// Module ID: 14733
-// Function ID: 14734
+// Module ID: 14771
+// Function ID: 14772
 // Name: notifications/NotificationSettingsUtils
-// Dependencies: [32, 19, 14727, 14734, 14735, 558, 568, 1438, 504, 2]
+// Dependencies: [32, 19, 14765, 14772, 14773, 558, 568, 1438, 504, 2]
 // Exports: getAssignedNotifSettingsAndMappings, useNotifCategoryVisibility
 
-// Module 14733 (notifications/NotificationSettingsUtils)
+// Module 14771 (notifications/NotificationSettingsUtils)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 14734 */;
-import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 14735 */;
+import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 14772 */;
+import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 14773 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -50,7 +50,7 @@ function getExperimentAndConfigBySettingId(arg0) {
   }
   return {};
 }
-const NotificationSettingsConstants = fn(14727);
+const NotificationSettingsConstants = fn(14765);
 ({ NOTIF_SETTING_MAPPING: closure_4, NOTIF_SETTINGS: hasOwnProperty } = NotificationSettingsConstants);
 let ReactCompilerGating = fn(558);
 ReactCompilerGating.isReactCompilerEnabled();
@@ -154,7 +154,7 @@ export const useNotifSettingVisibility = ReactCompilerGating.isReactCompilerEnab
   let variation = initialize.useStateFromStores(tmp7, tmp8, tmp9);
   if (typeof fn === "function") {
     const _HermesInternal = HermesInternal;
-    let isDeclarativeNotificationSettingsRedesignEnabled = tmp(14735).useIsDeclarativeNotificationSettingsRedesignEnabled("useIsDeclarativeSettingsUIAvailable:" + "useNotifSettingVisibility");
+    let isDeclarativeNotificationSettingsRedesignEnabled = tmp(14773).useIsDeclarativeNotificationSettingsRedesignEnabled("useIsDeclarativeSettingsUIAvailable:" + "useNotifSettingVisibility");
     if (isDeclarativeNotificationSettingsRedesignEnabled) {
       let tmp11 = false !== tmp4.redesignState;
       if (tmp11) {

@@ -1,16 +1,16 @@
-// Module ID: 16052
-// Function ID: 16053
+// Module ID: 16062
+// Function ID: 16063
 // Name: BuildOverrideActiveSetting
-// Dependencies: [11557, 21, 14847, 558, 568, 11918, 504, 15109, 16046, 11594, 15414, 2]
+// Dependencies: [11593, 21, 14885, 558, 568, 11954, 504, 15119, 16056, 11630, 15424, 2]
 
-// Module 16052 (BuildOverrideActiveSetting)
+// Module 16062 (BuildOverrideActiveSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11918 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14847 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15109 */;
-import DevToolsContent from "DevToolsContent" /* 16046 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11557 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11954 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14885 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15119 */;
+import DevToolsContent from "DevToolsContent" /* 16056 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11593 */;
 
 require = fn;
 const jsx = fn(21).jsx;
@@ -61,7 +61,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const staffOrDeveloperSettingPredicate = useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate();
   return null != closure_4() && staffOrDeveloperSettingPredicate;
 });
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   const tmp4 = closure_4();
@@ -92,7 +92,7 @@ const pressable = SettingBuilders.createPressable({
     return "Build Override Active";
   },
   parent: null,
-  IconComponent: fn(15414).RefreshIcon,
+  IconComponent: fn(15424).RefreshIcon,
   useDescription: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     const tmp4 = closure_4();

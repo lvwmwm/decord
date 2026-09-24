@@ -1,12 +1,12 @@
-// Module ID: 13439
-// Function ID: 13440
+// Module ID: 13475
+// Function ID: 13476
 // Name: WishlistViewerCoachmark
-// Dependencies: [19, 17, 2042, 21, 4758, 558, 568, 13440, 1119, 10452, 2]
+// Dependencies: [19, 17, 2042, 21, 4790, 558, 568, 13476, 1119, 10491, 2]
 
-// Module 13439 (WishlistViewerCoachmark)
+// Module 13475 (WishlistViewerCoachmark)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import _modDef13440 from "module_13440" /* 13440 */;
+import _modDef13476 from "module_13476" /* 13476 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -14,14 +14,14 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" }, image: { width: 160, height: 106 } });
 let ReactCompilerGating = fn(558);
 let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(6);
   const tmp3 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef13440 };
+    const obj2 = { uri: _modDef13476 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -50,8 +50,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const tmp = closure_8();
   const obj = { style: tmp.imageContainer, children: null };
-  const obj2 = { source: { uri: _modDef13440 }, style: tmp.image };
-  obj.children = <hasOwnProperty source={{ uri: _modDef13440 }} style={tmp.image} />;
+  const obj2 = { source: { uri: _modDef13476 }, style: tmp.image };
+  obj.children = <hasOwnProperty source={{ uri: _modDef13476 }} style={tmp.image} />;
   return <React4 style={tmp.imageContainer}>{null}</React4>;
 });
 ReactCompilerGating = fn(558);
@@ -114,7 +114,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onViewWishlist) 
       if (cResult[10] === tmp9) {
         let tmp13 = cResult[11];
       }
-      const coachmark = tmp(10452).useCoachmark(onViewWishlist.anchorRef, tmp13);
+      const coachmark = tmp(10491).useCoachmark(onViewWishlist.anchorRef, tmp13);
       return null;
     }
   }

@@ -1,16 +1,28 @@
 // Module ID: 14610
 // Function ID: 14611
-// Dependencies: [14591, 14611]
+// Dependencies: [14521, 14611]
+// Exports: getSupportedUnits
 
 // Module 14610
-import _mod14591 from "module_14591" /* 14591 */;
-import _mod14611 from "module_14611" /* 14611 */;
+const require = globalThis.__r;
 
+const require = arg1;
+const dependencyMap = arg6;
 
-export default (arg0, arg1) => {
-  let tmp4;
-  if (!_mod14591(arg0[arg1])) {
-    tmp4 = _mod14611(tmp);
-  }
-  return tmp4;
+export const getSupportedUnits = function getSupportedUnits(locale) {
+  _require = locale;
+  const units = require("module_14611").units;
+  return units.filter((item) => (function isSupported(unit, arg1) {
+    let str = arg1;
+    if (undefined === arg1) {
+      str = "en";
+    }
+    try {
+      const obj = { style: "unit", unit };
+      const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(str, obj);
+      return memoizedNumberFormat.resolvedOptions().unit === unit;
+    } catch (err) {
+      return false;
+    }
+  })(item, closure_0));
 };

@@ -1,9 +1,9 @@
-// Module ID: 13734
-// Function ID: 13735
+// Module ID: 13770
+// Function ID: 13771
 // Name: IconButton/IconButton
-// Dependencies: [109, 19, 21, 4758, 580, 5660, 558, 568, 1181, 5341, 2]
+// Dependencies: [109, 19, 21, 4790, 580, 5692, 558, 568, 1181, 5373, 2]
 
-// Module 13734 (IconButton/IconButton)
+// Module 13770 (IconButton/IconButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -13,11 +13,11 @@ require = fn;
 let closure_2 = ["style", "size", "disableColor"];
 const jsx = fn(21).jsx;
 const Sizes = { SMALL_24: 24, [24]: "SMALL_24", MEDIUM_32: 32, [32]: "MEDIUM_32", LARGE_40: 40, [40]: "LARGE_40" };
-const createStyles = fn(4758);
-let obj3 = { container: { borderRadius: nativeDefault.radii.xs, alignItems: "center", justifyContent: "center", backgroundColor: fn(5660).DARK_PRIMARY_700_LIGHT_PRIMARY_230 }, small: { height: Sizes.SMALL_24, width: Sizes.SMALL_24 }, medium: { height: Sizes.MEDIUM_32, width: Sizes.MEDIUM_32 }, large: { height: Sizes.LARGE_40, width: Sizes.LARGE_40 }, smallCircular: { borderRadius: Sizes.SMALL_24 / 2 }, mediumCircular: { borderRadius: Sizes.MEDIUM_32 / 2 }, largeCircular: { borderRadius: Sizes.LARGE_40 / 2 }, icon: null };
-const obj4 = { borderRadius: nativeDefault.radii.xs, alignItems: "center", justifyContent: "center", backgroundColor: fn(5660).DARK_PRIMARY_700_LIGHT_PRIMARY_230 };
+const createStyles = fn(4790);
+let obj3 = { container: { borderRadius: nativeDefault.radii.xs, alignItems: "center", justifyContent: "center", backgroundColor: fn(5692).DARK_PRIMARY_700_LIGHT_PRIMARY_230 }, small: { height: Sizes.SMALL_24, width: Sizes.SMALL_24 }, medium: { height: Sizes.MEDIUM_32, width: Sizes.MEDIUM_32 }, large: { height: Sizes.LARGE_40, width: Sizes.LARGE_40 }, smallCircular: { borderRadius: Sizes.SMALL_24 / 2 }, mediumCircular: { borderRadius: Sizes.MEDIUM_32 / 2 }, largeCircular: { borderRadius: Sizes.LARGE_40 / 2 }, icon: null };
+const obj4 = { borderRadius: nativeDefault.radii.xs, alignItems: "center", justifyContent: "center", backgroundColor: fn(5692).DARK_PRIMARY_700_LIGHT_PRIMARY_230 };
 const obj5 = { borderRadius: Sizes.SMALL_24 / 2 };
-obj3.icon = { tintColor: fn(5660).DARK_PRIMARY_300_LIGHT_PRIMARY_500 };
+obj3.icon = { tintColor: fn(5692).DARK_PRIMARY_300_LIGHT_PRIMARY_500 };
 let closure_7 = createStyles.createStyles(obj3);
 let ReactCompilerGating = fn(558);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((accessibilityLabel) => {
@@ -75,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((accessibilityLabel) 
                 }
               }
               const obj2 = { accessibilityRole: "button", accessibilityLabel, accessibilityElementsHidden: accessibilityHidden, onPress, disabled, style: tmp6, children: tmp9 };
-              const tmp14 = jsx(tmp(5341).PressableOpacity, { accessibilityRole: "button", accessibilityLabel, accessibilityElementsHidden: accessibilityHidden, onPress, disabled, style: tmp6, children: tmp9 });
+              const tmp14 = jsx(tmp(5373).PressableOpacity, { accessibilityRole: "button", accessibilityLabel, accessibilityElementsHidden: accessibilityHidden, onPress, disabled, style: tmp6, children: tmp9 });
               cResult[12] = accessibilityHidden;
               cResult[13] = disabled;
               cResult[14] = onPress;
@@ -148,7 +148,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((accessibilityLabel) 
   obj2.disableColor = disableColor;
   obj2.source = source;
   obj.children = jsx(size(1181).Icon, { size: REFRESH_SMALL_16, style: null, disableColor: null, source: null });
-  return jsx(size(5341).PressableOpacity, { accessibilityRole: "button", accessibilityLabel: tmp6, accessibilityElementsHidden: accessibilityHidden, onPress, disabled, style: null, children: null });
+  return jsx(size(5373).PressableOpacity, { accessibilityRole: "button", accessibilityLabel: tmp6, accessibilityElementsHidden: accessibilityHidden, onPress, disabled, style: null, children: null });
 });
 let closure_8 = tmp2;
 tmp2.Sizes = Sizes;

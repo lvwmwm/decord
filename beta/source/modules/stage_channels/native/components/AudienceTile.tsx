@@ -1,15 +1,15 @@
-// Module ID: 10323
-// Function ID: 10324
+// Module ID: 10362
+// Function ID: 10363
 // Name: AudienceTile
-// Dependencies: [19, 17, 2109, 21, 4758, 580, 558, 568, 4905, 1181, 8898, 1482, 504, 5644, 8669, 4910, 6891, 1119, 10304, 4610, 10324, 2]
+// Dependencies: [19, 17, 2109, 21, 4790, 580, 558, 568, 4937, 1181, 8930, 1482, 504, 5676, 8701, 4942, 6923, 1119, 10343, 4642, 10363, 2]
 // Exports: getTileWidthStyle
 
-// Module 10323 (AudienceTile)
+// Module 10362 (AudienceTile)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4905 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8669 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4937 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8701 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 
@@ -17,7 +17,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { touchableContainer: { overflow: "visible" }, container: { alignItems: "center" }, avatarContainer: { position: "relative", padding: 8, paddingTop: 0, paddingBottom: 4 }, raisedHandContainer: null, activeBackground: null, raisedHand: null, nameplateContainer: null, usernameText: null, faded: null };
 let size = { position: "absolute", top: -8, right: 0, height: 24, width: 24, alignItems: "center", justifyContent: "center", borderRadius: 12, borderWidth: 2, borderColor: nativeDefault.unsafe_rawColors.PRIMARY_800, backgroundColor: nativeDefault.colors.WHITE };
 obj.raisedHandContainer = size;
@@ -65,7 +65,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((rtsState) => {
       cResult[8] = tmp14;
       tmp11 = tmp14;
     }
-    const obj3 = { style: tmp4.raisedHand, source: tmp6(8898), color: PRIMARY_800 };
+    const obj3 = { style: tmp4.raisedHand, source: tmp6(8930), color: PRIMARY_800 };
     const tmp10 = hasOwnProperty(native.Icon, obj3);
     cResult[3] = PRIMARY_800;
     cResult[4] = tmp4.raisedHand;
@@ -92,7 +92,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((rtsState) => {
   if (activeBackground) {
     activeBackground = tmp.activeBackground;
   }
-  const obj = { style: items, children: hasOwnProperty(native.Icon, { style: tmp.raisedHand, source: tmp5(8898), color: PRIMARY_800 }) };
+  const obj = { style: items, children: hasOwnProperty(native.Icon, { style: tmp.raisedHand, source: tmp5(8930), color: PRIMARY_800 }) };
   items[1] = activeBackground;
   return hasOwnProperty(View, obj);
 });
@@ -135,7 +135,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
     }
     const stateFromStores = tmp(504).useStateFromStores(tmp9, tmp11, tmp12);
     if (cResult[7] !== rtsState) {
-      const result = tmp(5644).isRequestedToSpeakAll(rtsState);
+      const result = tmp(5676).isRequestedToSpeakAll(rtsState);
       cResult[7] = rtsState;
       class H {
         constructor() {
@@ -146,7 +146,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
         }
       }
       let tmp14 = result;
-      const tmpResult3 = tmp(5644);
+      const tmpResult3 = tmp(5676);
     } else {
       tmp14 = cResult[8];
     }
@@ -225,7 +225,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
                             if (cResult[40] !== blocked) {
                               let tmp44 = blocked;
                               if (blocked) {
-                                tmp44 = closure_5(tmp(10304).BlockedStatus, {});
+                                tmp44 = closure_5(tmp(10343).BlockedStatus, {});
                               }
                               cResult[40] = blocked;
                               class H {
@@ -243,7 +243,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
                             if (cResult[42] !== ignored) {
                               let tmp47 = ignored;
                               if (ignored) {
-                                tmp47 = closure_5(tmp(10304).IgnoredStatus, {});
+                                tmp47 = closure_5(tmp(10343).IgnoredStatus, {});
                               }
                               cResult[42] = ignored;
                               class H {
@@ -269,7 +269,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
                                     cResult[49] = tmp52;
                                     let tmp51 = tmp52;
                                   } else {
-                                    const tmpResult4 = tmp(4610);
+                                    const tmpResult4 = tmp(4642);
                                     tmp5(580).unsafe_rawColors;
                                     const unsafe_rawColors = { color: null };
                                     class H {
@@ -280,7 +280,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
                                         return;
                                       }
                                     }
-                                    const isThemeDarkResult = tmp(4610).isThemeDark(theme);
+                                    const isThemeDarkResult = tmp(4642).isThemeDark(theme);
                                   }
                                 } else {
                                   tmp51 = cResult[49];
@@ -297,7 +297,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
                                       if (cResult[57] !== stateFromStores) {
                                         let tmp61 = stateFromStores;
                                         if (stateFromStores) {
-                                          const obj3 = { source: tmp5(10324), size: tmp(1181).Icon.Sizes.SMALL, color: null };
+                                          const obj3 = { source: tmp5(10363), size: tmp(1181).Icon.Sizes.SMALL, color: null };
                                           class H {
                                             constructor() {
                                               obj = closure_0(closure_2[14]);
@@ -514,7 +514,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
           }
         }
       }
-      const name = tmp5(4910).getName(tmp7, channel.id, user);
+      const name = tmp5(4942).getName(tmp7, channel.id, user);
       class H {
         constructor() {
           obj = closure_0(closure_2[14]);
@@ -523,10 +523,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
           return;
         }
       }
-      const LegacyPressable = tmp(6891).LegacyPressable;
+      const LegacyPressable = tmp(6923).LegacyPressable;
       const intl = tmp(1119).intl;
       const obj10 = { name };
-      const tmp5Result = tmp5(4910);
+      const tmp5Result = tmp5(4942);
       cResult[12] = blocked;
       cResult[13] = channel.id;
       cResult[14] = tmp7;

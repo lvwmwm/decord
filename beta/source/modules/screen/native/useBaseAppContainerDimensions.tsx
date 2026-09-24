@@ -1,10 +1,10 @@
-// Module ID: 4621
-// Function ID: 4622
+// Module ID: 4653
+// Function ID: 4654
 // Name: useBaseAppContainerDimensions
 // Dependencies: [19, 1482, 1616, 558, 568, 2]
 // Exports: getBaseAppContainerDimensions
 
-// Module 4621 (useBaseAppContainerDimensions)
+// Module 4653 (useBaseAppContainerDimensions)
 import c from "c" /* 568 */;
 import useWindowDimensions from "useWindowDimensions" /* 1482 */;
 import useSafeAreaInsets from "useSafeAreaInsets" /* 1616 */;

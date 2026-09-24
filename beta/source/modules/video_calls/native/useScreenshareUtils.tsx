@@ -1,23 +1,23 @@
-// Module ID: 10206
-// Function ID: 10207
+// Module ID: 10245
+// Function ID: 10246
 // Name: useScreenshareUtils
-// Dependencies: [19, 17, 4780, 1996, 1078, 4783, 4737, 8003, 1998, 9882, 4900, 4810, 9889, 9681, 10207, 10201, 1613, 10225, 10226, 10227, 10228, 558, 568, 504, 10213, 7409, 1119, 2]
+// Dependencies: [19, 17, 4812, 1996, 1078, 4815, 4769, 8035, 1998, 9914, 4932, 4842, 9921, 9713, 10246, 10240, 1613, 10264, 10265, 10266, 10267, 558, 568, 504, 10252, 7441, 1119, 2]
 // Exports: getOSRequirement, getStreamPressHandler, handleCloseScreenshare, tryStartScreenShare
 
-// Module 10206 (useScreenshareUtils)
+// Module 10245 (useScreenshareUtils)
 import util from "util" /* 1119 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1613 */;
 import inject from "inject" /* 1998 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4810 */;
-import StreamActionCreators from "StreamActionCreators" /* 4900 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8003 */;
-import CallsUtils from "CallsUtils" /* 9882 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9889 */;
-import useHasVideoPermission from "useHasVideoPermission" /* 10201 */;
-import MobileGoLiveUpsellExperimentDefault from "MobileGoLiveUpsellExperiment" /* 10213 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4842 */;
+import StreamActionCreators from "StreamActionCreators" /* 4932 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7441 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8035 */;
+import CallsUtils from "CallsUtils" /* 9914 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9921 */;
+import useHasVideoPermission from "useHasVideoPermission" /* 10240 */;
+import MobileGoLiveUpsellExperimentDefault from "MobileGoLiveUpsellExperiment" /* 10252 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4812 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
 const require = globalThis.__r;
@@ -29,9 +29,9 @@ function stopScreenshare() {
   voiceEngine.stopBroadcast();
   const currentUserActiveStream = ApplicationStreamingStore.getCurrentUserActiveStream();
   if (null != currentUserActiveStream) {
-    const tmpResult = tmp(4900);
-    tmpResult.stopStream(tmp(4810).encodeStreamKey(currentUserActiveStream));
-    const tmpResult2 = tmp(4810);
+    const tmpResult = tmp(4932);
+    tmpResult.stopStream(tmp(4842).encodeStreamKey(currentUserActiveStream));
+    const tmpResult2 = tmp(4842);
   }
   AudioActionCreatorsDefault.setGoLiveSource(null);
 }
@@ -52,8 +52,8 @@ function startStream() {
   }
 }
 const ApplicationStreamStates = fn(1078).ApplicationStreamStates;
-const Features = fn(4783).Features;
-const DeviceUtils = fn(4737);
+const Features = fn(4815).Features;
+const DeviceUtils = fn(4769);
 const systemVersionMajor = DeviceUtils.getSystemVersionMajor();
 const BroadcastUploadManager = fn(17).NativeModules.BroadcastUploadManager;
 const ReactCompilerGating = fn(558);
@@ -128,7 +128,7 @@ let result = size.fileFinishedImporting("modules/video_calls/native/useScreensha
 
 export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = require("c").c(24);
-  const tmp5 = analyticsLocations(10201)(arg0);
+  const tmp5 = analyticsLocations(10240)(arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     cResult[0] = closure_8 >= 12;
     let first = tmp8;
@@ -158,7 +158,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp13 = cResult[3];
   }
   const tmpResult = require("initialize");
-  const showMobileGoLiveUpsell = analyticsLocations(10213).useConfig(tmp13).showMobileGoLiveUpsell;
+  const showMobileGoLiveUpsell = analyticsLocations(10252).useConfig(tmp13).showMobileGoLiveUpsell;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [ApplicationStreamingStore];
     class E {
@@ -174,9 +174,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp14 = cResult[4];
     tmp15 = cResult[5];
   }
-  const tmp4Result = analyticsLocations(10213);
+  const tmp4Result = analyticsLocations(10252);
   const stateFromStores1 = require("initialize").useStateFromStores(tmp14, tmp15);
-  analyticsLocations = tmp4(7409)().analyticsLocations;
+  analyticsLocations = tmp4(7441)().analyticsLocations;
   let tmp18 = null != stateFromStores1;
   if (tmp18) {
     tmp18 = stateFromStores1.state === ApplicationStreamStates.ACTIVE;
@@ -234,7 +234,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     return closure_1_4.getCurrentUserActiveStream();
                   }
                 }
-                tmp4(tmp18 ? 10225 : 10226);
+                tmp4(tmp18 ? 10264 : 10265);
               }
             }
           }

@@ -1,21 +1,21 @@
-// Module ID: 18199
-// Function ID: 18200
+// Module ID: 18209
+// Function ID: 18210
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1616, 38, 18200, 4754, 1181, 5188, 4725, 1119, 6863, 7397, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1616, 38, 18210, 4786, 1181, 5220, 4757, 1119, 6895, 7429, 2]
 
-// Module 18199 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 18209 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import BottomSheetModal from "BottomSheetModal" /* 6863 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18200 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import BottomSheetModal from "BottomSheetModal" /* 6895 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18210 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,7 +23,7 @@ get_ActivityIndicator = fn(17);
 ({ TouchableOpacity: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 24 }, cancel: { alignSelf: "center" } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -49,7 +49,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId) 
   }
   if (cResult[2] !== headerText) {
     const obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: headerText };
-    const tmp10 = hasOwnProperty(tmp(4754).Text, obj3);
+    const tmp10 = hasOwnProperty(tmp(4786).Text, obj3);
     cResult[2] = headerText;
     cResult[3] = tmp10;
     let tmp8 = tmp10;
@@ -65,7 +65,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId) 
   }
   if (cResult[5] !== descriptionText) {
     const obj4 = { variant: "text-sm/normal", color: "text-default", children: descriptionText };
-    const tmp16 = hasOwnProperty(tmp(4754).Text, obj4);
+    const tmp16 = hasOwnProperty(tmp(4786).Text, obj4);
     cResult[5] = descriptionText;
     cResult[6] = tmp16;
     let tmp14 = tmp16;
@@ -124,7 +124,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId) 
         const obj5 = { variant: "text-sm/semibold", color: "interactive-text-active", children: null };
         const intl = tmp(1119).intl;
         obj5.children = intl.string(tmp(1119).t["ETE/oC"]);
-        const tmp27 = hasOwnProperty(tmp(4754).Text, obj5);
+        const tmp27 = hasOwnProperty(tmp(4786).Text, obj5);
         cResult[14] = tmp27;
         const tmp26 = tmp27;
       } else {
@@ -165,7 +165,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId) 
       const obj7 = { contentContainerStyle: tmp7, children: null };
       const items = [tmp8, tmp11, tmp14, tmp17, tmp20, tmp22, tmp28];
       obj7.children = items;
-      const tmp33 = timestampProducer(tmp(6863).BottomSheetScrollView, obj7);
+      const tmp33 = timestampProducer(tmp(6895).BottomSheetScrollView, obj7);
       cResult[17] = tmp7;
       cResult[18] = tmp28;
       cResult[19] = tmp8;

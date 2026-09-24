@@ -1,11 +1,11 @@
-// Module ID: 11254
-// Function ID: 11255
+// Module ID: 11290
+// Function ID: 11291
 // Name: InstantInviteUsesLabel
-// Dependencies: [19, 21, 558, 568, 4754, 2]
+// Dependencies: [19, 21, 558, 568, 4786, 2]
 
-// Module 11254 (InstantInviteUsesLabel)
+// Module 11290 (InstantInviteUsesLabel)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

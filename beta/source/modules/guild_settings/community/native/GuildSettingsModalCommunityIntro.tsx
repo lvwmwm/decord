@@ -1,23 +1,23 @@
-// Module ID: 18096
-// Function ID: 18097
+// Module ID: 18106
+// Function ID: 18107
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 2067, 4399, 9834, 1078, 21, 4758, 580, 10676, 1119, 4754, 16763, 4712, 558, 568, 1488, 504, 577, 9833, 18097, 18101, 4457, 2112, 5188, 7286, 2]
+// Dependencies: [19, 17, 2067, 4431, 9866, 1078, 21, 4790, 580, 10712, 1119, 4786, 16773, 4744, 558, 568, 1488, 504, 577, 9865, 18107, 18111, 4489, 2112, 5220, 7318, 2]
 
-// Module 18096 (GuildSettingsModalCommunityIntro)
+// Module 18106 (GuildSettingsModalCommunityIntro)
 import c from "c" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ToastUtils from "ToastUtils" /* 4457 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4712 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AnalyticsIcon from "AnalyticsIcon" /* 10676 */;
-import LightbulbIcon from "LightbulbIcon" /* 16763 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18101 */;
+import ToastUtils from "ToastUtils" /* 4489 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4744 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AnalyticsIcon from "AnalyticsIcon" /* 10712 */;
+import LightbulbIcon from "LightbulbIcon" /* 16773 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18111 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9834 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9866 */;
 
 const require = globalThis.__r;
 
@@ -78,7 +78,7 @@ const Constants = fn(1078);
 ({ HelpdeskArticles: c10, GuildFeatures: closure_11, GuildSettingsSections: closure_12, Permissions: map1 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { height: "100%" }, contentPadding: { padding: 16 }, header: { textAlign: "center", marginBottom: 8 }, body: { textAlign: "center", marginBottom: 24 }, details: { textAlign: "center", marginTop: 24 }, headerImage: { width: "100%" }, features: { marginTop: 32, marginBottom: 32 }, featureCard: { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, flex: 1, flexDirection: "row", padding: 16, borderRadius: nativeDefault.radii.sm, marginTop: 8, alignItems: "flex-start" }, featureIcon: null, featureDescription: null };
 let obj3 = { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, flex: 1, flexDirection: "row", padding: 16, borderRadius: nativeDefault.radii.sm, marginTop: 8, alignItems: "flex-start" };
 obj2.featureIcon = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: 40, marginRight: 16, padding: 8 };
@@ -104,7 +104,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[5] !== header) {
       const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: header };
-      const tmp11 = state(tmp(4754).Heading, obj2);
+      const tmp11 = state(tmp(4786).Heading, obj2);
       cResult[5] = header;
       cResult[6] = tmp11;
       let tmp9 = tmp11;
@@ -113,7 +113,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[7] !== body) {
       const obj3 = { variant: "text-sm/medium", color: "text-default", children: body };
-      const tmp14 = state(tmp(4754).Text, obj3);
+      const tmp14 = state(tmp(4786).Text, obj3);
       cResult[7] = body;
       cResult[8] = tmp14;
       let tmp12 = tmp14;

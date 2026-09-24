@@ -1,23 +1,23 @@
-// Module ID: 7366
-// Function ID: 7367
+// Module ID: 7398
+// Function ID: 7399
 // Name: NotificationSettingsModalActionCreators
-// Dependencies: [5, 4939, 1078, 4412, 1088, 577, 7361, 7363, 11, 4610, 1119, 1389, 1275, 2]
+// Dependencies: [5, 4971, 1078, 4444, 1088, 577, 7393, 7395, 11, 4642, 1119, 1389, 1275, 2]
 
-// Module 7366 (NotificationSettingsModalActionCreators)
+// Module 7398 (NotificationSettingsModalActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import util from "util" /* 1119 */;
-import shared from "shared" /* 4610 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7361 */;
-import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7363 */;
+import shared from "shared" /* 4642 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7393 */;
+import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7395 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const Endpoints = fn(1078).Endpoints;
-const constants = fn(4412).NotificationSettingsUpdateType;
+const constants = fn(4444).NotificationSettingsUpdateType;
 let closure_7 = fn(1088).ChannelNotificationSettingsFlags;
 const size = fn(2);
 let result = size.fileFinishedImporting("actions/NotificationSettingsModalActionCreators.tsx");

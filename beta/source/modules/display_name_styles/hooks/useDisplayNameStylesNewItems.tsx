@@ -1,13 +1,13 @@
-// Module ID: 15600
-// Function ID: 15601
+// Module ID: 15610
+// Function ID: 15611
 // Name: useDisplayNameStylesNewItems
-// Dependencies: [19, 15601, 1394, 558, 568, 504, 15602, 2]
+// Dependencies: [19, 15611, 1394, 558, 568, 504, 15612, 2]
 
-// Module 15600 (useDisplayNameStylesNewItems)
+// Module 15610 (useDisplayNameStylesNewItems)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
-import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 15601 */;
+import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 15611 */;
 
 const require = globalThis.__r;
 

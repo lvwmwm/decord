@@ -1,7 +1,7 @@
 // Module ID: 2023
 // Function ID: 2024
 // Name: UserSettings
-// Dependencies: [2024, 1088, 2025, 1078, 2026, 2027, 1221, 1190, 560, 8128, 12, 504, 5642, 7543, 1229, 2]
+// Dependencies: [2024, 1088, 2025, 1078, 2026, 2027, 1221, 1190, 560, 8160, 12, 504, 5674, 7575, 1229, 2]
 // Exports: explicitContentFromProto, explicitContentToProto, goreContentFromProto, goreContentToProto
 
 // Module 2023 (UserSettings)
@@ -10,9 +10,9 @@ import initialize from "initialize" /* 504 */;
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 560 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
 import wrappers from "wrappers" /* 1221 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5642 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7543 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 8128 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5674 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7575 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 8160 */;
 import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2024 */;
 
 require = fn;
@@ -1086,8 +1086,8 @@ const result4 = UserSettingDefinitions.wrapSettingWithSelectiveSyncing(UserSetti
 fn(2027);
 let items = [ListDensityMode.AUTO, , ];
 const obj84 = { comparator: discord_common_shallowEqualDefault };
-items[1] = fn(8128).ChannelListLayoutTypes.COZY;
-items[2] = fn(8128).ChannelListLayoutTypes.COMPACT;
+items[1] = fn(8160).ChannelListLayoutTypes.COZY;
+items[2] = fn(8160).ChannelListLayoutTypes.COMPACT;
 const set1 = new Set(items);
 UserSettingDefinitions = fn(2027);
 const defineProtoSettingResult73 = UserSettingDefinitions.defineProtoSetting("localization", "timezoneOffset", (value) => {
@@ -1107,7 +1107,7 @@ const defineProtoSettingResult73 = UserSettingDefinitions.defineProtoSetting("lo
   }
   return Int32Value.create({ value });
 });
-const items1 = [fn(8128).MessagePreviewTypes.ALL, fn(8128).MessagePreviewTypes.UNREADS, fn(8128).MessagePreviewTypes.NONE];
+const items1 = [fn(8160).MessagePreviewTypes.ALL, fn(8160).MessagePreviewTypes.UNREADS, fn(8160).MessagePreviewTypes.NONE];
 const set2 = new Set(items1);
 UserSettingDefinitions = fn(2027);
 const defineProtoSettingResult74 = UserSettingDefinitions.defineProtoSetting("appearance", "channelListLayout", (value) => {

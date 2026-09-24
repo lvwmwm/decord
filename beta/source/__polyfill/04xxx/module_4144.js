@@ -1,11 +1,11 @@
 // Module ID: 4144
 // Function ID: 4145
-// Dependencies: [3849, 3850]
+// Dependencies: [3881, 3882]
 // Exports: default
 
 // Module 4144
-import _typeof_mod from "module_3849" /* 3849 */;
-import requiredArgs_mod from "requiredArgs" /* 3850 */;
+import _typeof_mod from "module_3881" /* 3881 */;
+import requiredArgs_mod from "requiredArgs" /* 3882 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,10 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isBefore(arg0, arg1) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  const time = defaultResult1.getTime();
-  return time < _typeof.default(arg1).getTime();
+export default function getDay(arg0) {
+  requiredArgs.default(1, arguments);
+  return _typeof.default(arg0).getDay();
 };
 export default exports.default;

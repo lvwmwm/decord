@@ -1,28 +1,24 @@
 // Module ID: 14572
 // Function ID: 14573
-// Dependencies: [14483, 14573]
-// Exports: getSupportedUnits
+// Dependencies: [14562, 14565]
+// Exports: LookupSupportedLocales
 
 // Module 14572
-const require = globalThis.__r;
+import _mod14562 from "module_14562" /* 14562 */;
+import BestAvailableLocale from "BestAvailableLocale" /* 14565 */;
 
-const require = arg1;
+require = arg1;
 const dependencyMap = arg6;
 
-export const getSupportedUnits = function getSupportedUnits(locale) {
-  _require = locale;
-  const units = require("module_14573").units;
-  return units.filter((item) => (function isSupported(unit, arg1) {
-    let str = arg1;
-    if (undefined === arg1) {
-      str = "en";
+export const LookupSupportedLocales = function LookupSupportedLocales(arg0, arg1) {
+  const items = [];
+  for (let num = 0; num < arg1.length; num = num + 1) {
+    let str = arg1[num];
+    let replaced = str.replace(_mod14562.UNICODE_EXTENSION_SEQUENCE_REGEX, "");
+    let BestAvailableLocaleResult = BestAvailableLocale.BestAvailableLocale(arg0, replaced);
+    if (BestAvailableLocaleResult) {
+      let arr = items.push(BestAvailableLocaleResult);
     }
-    try {
-      const obj = { style: "unit", unit };
-      const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(str, obj);
-      return memoizedNumberFormat.resolvedOptions().unit === unit;
-    } catch (err) {
-      return false;
-    }
-  })(item, closure_0));
+  }
+  return items;
 };

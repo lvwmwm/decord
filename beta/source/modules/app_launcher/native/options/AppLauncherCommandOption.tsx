@@ -1,19 +1,19 @@
-// Module ID: 12302
-// Function ID: 12303
+// Module ID: 12338
+// Function ID: 12339
 // Name: AppLauncherCommandOption
-// Dependencies: [19, 17, 1487, 21, 4758, 580, 558, 568, 1982, 12303, 12310, 12312, 12315, 12319, 12320, 5735, 12323, 12325, 12326, 12332, 6851, 5341, 2]
+// Dependencies: [19, 17, 1487, 21, 4790, 580, 558, 568, 1982, 12339, 12346, 12348, 12351, 12355, 12356, 5767, 12359, 12361, 12362, 12368, 6883, 5373, 2]
 
-// Module 12302 (AppLauncherCommandOption)
+// Module 12338 (AppLauncherCommandOption)
 import nativeDefault from "native" /* 580 */;
-import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 5735 */;
-import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 12303 */;
-import AppLauncherAttachmentOptionDefault from "AppLauncherAttachmentOption" /* 12315 */;
-import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 12319 */;
-import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 12320 */;
-import AppLauncherMentionableOptionDefault from "AppLauncherMentionableOption" /* 12323 */;
-import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 12325 */;
-import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 12326 */;
-import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 12332 */;
+import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 5767 */;
+import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 12339 */;
+import AppLauncherAttachmentOptionDefault from "AppLauncherAttachmentOption" /* 12351 */;
+import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 12355 */;
+import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 12356 */;
+import AppLauncherMentionableOptionDefault from "AppLauncherMentionableOption" /* 12359 */;
+import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 12361 */;
+import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 12362 */;
+import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 12368 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -21,7 +21,7 @@ const View = fn(17).View;
 let closure_4 = fn(1487).AppLauncherOptionAutoFocusType;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { dismissableOptionWrapper: { flexDirection: "row", alignItems: "center" }, optionViewContainer: { flex: 1 }, dismissButton: { marginLeft: 8, marginRight: -4, padding: 4, borderRadius: nativeDefault.radii.round }, option: { flex: 1 } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -199,11 +199,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
                 const obj2 = { type: "userMention", userId: mentionable.result.user.id };
                 const items = [obj2];
                 onOptionValueChange(option, items);
-              } else if (tmp4(12320).MentionableItemTypes.ROLE === type) {
+              } else if (tmp4(12356).MentionableItemTypes.ROLE === type) {
                 const obj3 = { type: "roleMention", roleId: mentionable.result.id };
                 const items1 = [obj3];
                 onOptionValueChange(option, items1);
-              } else if (tmp4(12320).MentionableItemTypes.GLOBAL === type) {
+              } else if (tmp4(12356).MentionableItemTypes.GLOBAL === type) {
                 const result = mentionable.result;
                 if (result.text === obj4.MENTION_EVERYONE().text) {
                   const items2 = [{ type: "textMention", text: "@everyone" }];
@@ -1248,11 +1248,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
                 const obj2 = { type: "userMention", userId: mentionable.result.user.id };
                 const items = [obj2];
                 View(name, items);
-              } else if (tmp4(12320).MentionableItemTypes.ROLE === type) {
+              } else if (tmp4(12356).MentionableItemTypes.ROLE === type) {
                 const obj3 = { type: "roleMention", roleId: mentionable.result.id };
                 const items1 = [obj3];
                 View(name, items1);
-              } else if (tmp4(12320).MentionableItemTypes.GLOBAL === type) {
+              } else if (tmp4(12356).MentionableItemTypes.GLOBAL === type) {
                 const result = mentionable.result;
                 if (result.text === obj4.MENTION_EVERYONE().text) {
                   const items2 = [{ type: "textMention", text: "@everyone" }];
@@ -1373,9 +1373,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
             onPress() {
                       return onDismiss(name);
                     },
-            children: tmp13(tmp2(6851).CircleXIcon, { size: "md" })
+            children: tmp13(tmp2(6883).CircleXIcon, { size: "md" })
           };
-          items[1] = tmp13(tmp2(5341).PressableOpacity, obj9);
+          items[1] = tmp13(tmp2(5373).PressableOpacity, obj9);
           obj7.children = items;
           tmp62 = closure_6(View, obj7);
         }
@@ -1444,8 +1444,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
       return dependencyMap(name);
     };
     obj11.hasError = hasError;
-    tmp63(tmp64(12310), obj11, name.name);
-    const tmp64Result = tmp64(12310);
+    tmp63(tmp64(12346), obj11, name.name);
+    const tmp64Result = tmp64(12346);
   } else {
     const obj12 = { style: tmp.option, option: name, guildId: channel.guild_id, initialValue: null, onEndEditing: null, onChangeText: null, onFocus: null, autoFocus: null, hasError: null, onPressIn: null };
     let first7;
@@ -1467,7 +1467,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((option) => {
     obj12.autoFocus = items1.includes(autoFocusType);
     obj12.hasError = hasError;
     obj12.onPressIn = onPress;
-    tmp63(tmp64(12312), obj12, name.name);
-    const tmp64Result2 = tmp64(12312);
+    tmp63(tmp64(12348), obj12, name.name);
+    const tmp64Result2 = tmp64(12348);
   }
 });

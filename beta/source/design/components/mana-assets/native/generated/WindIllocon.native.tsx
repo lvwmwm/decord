@@ -1,13 +1,13 @@
-// Module ID: 6814
-// Function ID: 6815
+// Module ID: 6846
+// Function ID: 6847
 // Name: WindIllocon
-// Dependencies: [21, 558, 568, 6815, 5802, 2]
+// Dependencies: [21, 558, 568, 6847, 5834, 2]
 
-// Module 6814 (WindIllocon)
+// Module 6846 (WindIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6815 from "module_6815" /* 6815 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6847 from "module_6847" /* 6847 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const WindIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6815 };
+    const obj2 = { uri: _modDef6847 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const WindIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6815 };
+  const obj2 = { uri: _modDef6847 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

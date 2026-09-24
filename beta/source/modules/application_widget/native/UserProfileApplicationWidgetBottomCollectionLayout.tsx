@@ -1,22 +1,22 @@
-// Module ID: 9296
-// Function ID: 9297
+// Module ID: 9328
+// Function ID: 9329
 // Name: UserProfileApplicationWidgetBottomCollectionLayout
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 9202, 9290, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 9234, 9322, 4786, 2]
 
-// Module 9296 (UserProfileApplicationWidgetBottomCollectionLayout)
+// Module 9328 (UserProfileApplicationWidgetBottomCollectionLayout)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import noop from "module_19" /* 19 */;
 
-const Text_Text = Text(4754);
-const resolvedValuesFromUserApplicationIdentityProfile = Text(9202);
-const UserProfileApplicationWidgetSkeletons = Text(9290);
+const Text_Text = Text(4786);
+const resolvedValuesFromUserApplicationIdentityProfile = Text(9234);
+const UserProfileApplicationWidgetSkeletons = Text(9322);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: c2, View: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { grid: { flexDirection: "row", flexWrap: "wrap", rowGap: nativeDefault.space.PX_16, columnGap: nativeDefault.space.PX_16 }, item: null, itemImage: null, itemContent: null };
 let obj3 = { flexDirection: "row", flexWrap: "wrap", rowGap: nativeDefault.space.PX_16, columnGap: nativeDefault.space.PX_16 };
 obj2.item = { width: "47%", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 };
@@ -170,23 +170,23 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp12 = React4;
   } else {
     const obj6 = { style: tmp.itemImage };
-    tmp11 = React4(tmp3(9290).ImageSkeleton, obj6);
+    tmp11 = React4(tmp3(9322).ImageSkeleton, obj6);
     tmp12 = React4;
   }
   const items1 = [tmp11, ];
   const obj7 = { style: tmp.itemContent, children: null };
   if ("value" === singleStringOrSkeleton.status) {
     const obj8 = { variant: "text-xs/medium", lineClamp: 2, children: singleStringOrSkeleton.text };
-    let tmp12Result = tmp12(tmp3(4754).Text, obj8);
+    let tmp12Result = tmp12(tmp3(4786).Text, obj8);
   } else {
-    tmp12Result = tmp12(tmp3(9290).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
+    tmp12Result = tmp12(tmp3(9322).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
   }
   const items2 = [tmp12Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj9 = { variant: "text-xxs/medium", color: "text-subtle", lineClamp: 2, children: singleStringOrSkeleton1.text };
-    let tmp12Result2 = tmp12(tmp3(4754).Text, obj9);
+    let tmp12Result2 = tmp12(tmp3(4786).Text, obj9);
   } else {
-    tmp12Result2 = tmp12(tmp3(9290).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
+    tmp12Result2 = tmp12(tmp3(9322).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
   }
   items2[1] = tmp12Result2;
   obj7.children = items2;

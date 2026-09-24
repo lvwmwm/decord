@@ -1,18 +1,18 @@
-// Module ID: 15854
-// Function ID: 15855
+// Module ID: 15864
+// Function ID: 15865
 // Name: DevToolsLoggingFlagsScreen
-// Dependencies: [17, 1350, 21, 4758, 580, 558, 568, 504, 1351, 7446, 5903, 2]
+// Dependencies: [17, 1350, 21, 4790, 580, 558, 568, 504, 1351, 7478, 5935, 2]
 
-// Module 15854 (DevToolsLoggingFlagsScreen)
+// Module 15864 (DevToolsLoggingFlagsScreen)
 import _mod17 from "module_17" /* 17 */;
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import TableSwitchRow from "TableSwitchRow" /* 7446 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import TableSwitchRow from "TableSwitchRow" /* 7478 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1350 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[3] !== isLoggingGatewayEvents) {
     const obj2 = { label: "Gateway Events", subLabel: "Logs all gateway events to console, including content. Enable verbose logs to see them.", value: isLoggingGatewayEvents, onValueChange: tmp9 };
-    const tmp12 = React4(tmp(7446).TableSwitchRow, obj2);
+    const tmp12 = React4(tmp(7478).TableSwitchRow, obj2);
     cResult[3] = isLoggingGatewayEvents;
     cResult[4] = tmp12;
     let tmp10 = tmp12;
@@ -73,7 +73,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[6] !== isLoggingAnalyticsEvents) {
     const obj3 = { label: "Analytics Events", subLabel: "Logs all analytics events to the developer console.", value: isLoggingAnalyticsEvents, onValueChange: tmp13 };
-    const tmp16 = React4(tmp(7446).TableSwitchRow, obj3);
+    const tmp16 = React4(tmp(7478).TableSwitchRow, obj3);
     cResult[6] = isLoggingAnalyticsEvents;
     cResult[7] = tmp16;
     let tmp14 = tmp16;
@@ -108,7 +108,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const obj4 = { label: "Tracing Requests", subLabel: "Force trace all client requests with APM.", value: isTracingRequests, onValueChange: tmp17 };
-    const tmp19 = React4(tmp(7446).TableSwitchRow, obj4);
+    const tmp19 = React4(tmp(7478).TableSwitchRow, obj4);
     cResult[9] = isTracingRequests;
     cResult[10] = tmp19;
   } else {

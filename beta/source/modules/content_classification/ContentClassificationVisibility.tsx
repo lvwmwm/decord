@@ -1,14 +1,14 @@
-// Module ID: 12070
-// Function ID: 12071
+// Module ID: 12106
+// Function ID: 12107
 // Name: ContentClassificationVisibility
-// Dependencies: [1376, 5331, 5333, 558, 568, 504, 2]
+// Dependencies: [1376, 5363, 5365, 558, 568, 504, 2]
 // Exports: getContentClassificationVisibility
 
-// Module 12070 (ContentClassificationVisibility)
+// Module 12106 (ContentClassificationVisibility)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import ContentClassificationToAgeRestriction from "ContentClassificationToAgeRestriction" /* 5331 */;
-import AgeRestrictionStatus from "AgeRestrictionStatus" /* 5333 */;
+import ContentClassificationToAgeRestriction from "ContentClassificationToAgeRestriction" /* 5363 */;
+import AgeRestrictionStatus from "AgeRestrictionStatus" /* 5365 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -69,9 +69,9 @@ export const useContentClassificationVisibility = ReactCompilerGating.isReactCom
     }
   }
   if (null != data) {
-    const obj2 = { type: tmp(5331).ContentClassificationVariant.MINIMAL, data };
-    const result = tmp(5331).contentClassificationToAgeRestriction(obj2);
-    if (result === tmp(5333).AgeRestrictionStatus.ADULT) {
+    const obj2 = { type: tmp(5363).ContentClassificationVariant.MINIMAL, data };
+    const result = tmp(5363).contentClassificationToAgeRestriction(obj2);
+    if (result === tmp(5365).AgeRestrictionStatus.ADULT) {
       if (true !== stateFromStores) {
         let DISPLAY = obj.BLOCK_UNDERAGE;
       } else {
@@ -87,16 +87,16 @@ export const useContentClassificationVisibility = ReactCompilerGating.isReactCom
     cResult[3] = data;
     cResult[4] = stateFromStores;
     cResult[5] = DISPLAY;
-    const tmpResult2 = tmp(5331);
+    const tmpResult2 = tmp(5363);
   }
   DISPLAY = obj.DISPLAY;
 }) : ((data, isPrivate) => {
   initialize;
   [][0] = UserStore;
   if (null != data) {
-    const obj = { type: tmp(5331).ContentClassificationVariant.MINIMAL, data };
-    const result = tmp(5331).contentClassificationToAgeRestriction(obj);
-    if (result === tmp(5333).AgeRestrictionStatus.ADULT) {
+    const obj = { type: tmp(5363).ContentClassificationVariant.MINIMAL, data };
+    const result = tmp(5363).contentClassificationToAgeRestriction(obj);
+    if (result === tmp(5365).AgeRestrictionStatus.ADULT) {
       if (true !== tmp4) {
         let DISPLAY = obj.BLOCK_UNDERAGE;
       } else {

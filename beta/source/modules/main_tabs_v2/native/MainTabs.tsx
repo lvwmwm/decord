@@ -1,23 +1,23 @@
-// Module ID: 16336
-// Function ID: 16337
+// Module ID: 16346
+// Function ID: 16347
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 4758, 558, 568, 4612, 8123, 1616, 5343, 16337, 4471, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 4644, 8155, 1616, 5375, 16347, 4503, 2]
 
-// Module 16336 (MainTabs)
+// Module 16346 (MainTabs)
 import c from "c" /* 568 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4612 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5343 */;
-import useActiveTheme from "useActiveTheme" /* 8123 */;
-import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 16337 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4644 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5375 */;
+import useActiveTheme from "useActiveTheme" /* 8155 */;
+import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 16347 */;
 import noop from "module_19" /* 19 */;
 
-const native = tmp(4471);
+const native = tmp(4503);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ container: { flex: 1 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -39,7 +39,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       if (cResult[6] !== isCustomThemeActive) {
         const obj3 = { absolute: true, mix: isCustomThemeActive };
-        const tmp13 = React4(tmp4(5343), obj3);
+        const tmp13 = React4(tmp4(5375), obj3);
         cResult[6] = isCustomThemeActive;
         cResult[7] = tmp13;
         let tmp11 = tmp13;
@@ -48,7 +48,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp17 = React4(tmp4(16337), {});
+        const tmp17 = React4(tmp4(16347), {});
         cResult[8] = tmp17;
         let tmp15 = tmp17;
       } else {

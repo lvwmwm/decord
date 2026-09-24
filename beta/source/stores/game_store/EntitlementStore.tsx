@@ -1,17 +1,17 @@
-// Module ID: 7638
-// Function ID: 7639
+// Module ID: 7670
+// Function ID: 7671
 // Name: EntitlementStore
-// Dependencies: [7639, 7641, 5729, 1078, 1378, 504, 12, 7643, 1081, 577, 2]
+// Dependencies: [7671, 7673, 5761, 1078, 1378, 504, 12, 7675, 1081, 577, 2]
 
-// Module 7638 (EntitlementStore)
+// Module 7670 (EntitlementStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeAll from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1081 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7643 */;
-import EntitlementRecord from "EntitlementRecord" /* 7639 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 7641 */;
-import SKUStore from "SKUStore" /* 5729 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7675 */;
+import EntitlementRecord from "EntitlementRecord" /* 7671 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 7673 */;
+import SKUStore from "SKUStore" /* 5761 */;
 
 require = fn;
 function addEntitlement(entitlement) {

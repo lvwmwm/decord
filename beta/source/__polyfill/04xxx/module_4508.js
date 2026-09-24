@@ -1,54 +1,66 @@
 // Module ID: 4508
 // Function ID: 4509
-// Dependencies: [4500]
-// Exports: getHybridObjectConstructor
+// Dependencies: [19, 4507]
+// Exports: create, useStore
 
 // Module 4508
-import _mod4500 from "module_4500" /* 4500 */;
+import noop from "module_19" /* 19 */;
 
-require = arg1;
-const dependencyMap = arg6;
-const map = new Map();
-
-export const getHybridObjectConstructor = function getHybridObjectConstructor(arg0) {
-  closure_0 = arg0;
-  if (map.has(arg0)) {
-    return obj.get(arg0);
-  } else {
-    function constructorFunc() {
-      const NitroModules = _mod4500.NitroModules;
-      const hybridObject = NitroModules.createHybridObject(closure_0);
-      const prototypeOf = Object.getPrototypeOf(hybridObject);
-      if (constructorFunc.prototype !== prototypeOf) {
-        tmp3.prototype = prototypeOf;
-        tmp3.prototypeInitialized = true;
-      }
-      return hybridObject;
+function identity(arg0) {
+  return arg0;
+}
+function createImpl(arg0) {
+  store = store(4507).createStore(arg0);
+  function useBoundStore(arg0) {
+    let tmp = arg0;
+    closure_0 = store;
+    if (arg0 === undefined) {
+      tmp = identity;
     }
-    constructorFunc.prototypeInitialized = false;
-    let _Object = Object;
-    const _Symbol = Symbol;
-    const obj2 = {
-      value(arg0) {
-          if (!constructorFunc.prototypeInitialized) {
-            const NitroModules = _mod4500.NitroModules;
-            const _Object = Object;
-            tmp.prototype = Object.getPrototypeOf(NitroModules.createHybridObject(closure_0));
-            tmp.prototypeInitialized = true;
-          }
-          let prototypeOf = Object.getPrototypeOf(arg0);
-          if (null != prototypeOf) {
-            while (prototypeOf !== constructorFunc.prototype) {
-              let _Object2 = Object;
-              prototypeOf = Object.getPrototypeOf(prototypeOf);
-            }
-            return true;
-          }
-          return false;
-        }
-    };
-    Object.defineProperty(constructorFunc, Symbol.hasInstance, obj2);
-    const result = obj.set(arg0, constructorFunc);
-    return constructorFunc;
+    closure_1 = tmp;
+    const syncExternalStore = noop.useSyncExternalStore(store.subscribe, () => closure_1(closure_0.getState()), () => closure_1(closure_0.getInitialState()));
+    const debugValue = noop.useDebugValue(syncExternalStore);
+    return syncExternalStore;
   }
+  const merged = Object.assign(useBoundStore, store);
+  return useBoundStore;
+}
+
+export const create = (arg0) => {
+  if (arg0) {
+    if (typeof tmp === "function") {
+      store = store(4507).createStore(arg0);
+      function useBoundStore(arg0) {
+        let tmp = arg0;
+        closure_0 = store;
+        if (arg0 === undefined) {
+          tmp = identity;
+        }
+        closure_1 = tmp;
+        const syncExternalStore = noop.useSyncExternalStore(store.subscribe, () => closure_1(closure_0.getState()), () => closure_1(closure_0.getInitialState()));
+        const debugValue = noop.useDebugValue(syncExternalStore);
+        return syncExternalStore;
+      }
+      const _Object = Object;
+      const merged = Object.assign(useBoundStore, store);
+      let tmp2 = useBoundStore;
+      const obj = store(4507);
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    tmp2 = tmp;
+  }
+  return tmp2;
+};
+export const useStore = function useStore(subscribe) {
+  closure_0 = subscribe;
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    tmp = identity;
+  }
+  closure_1 = tmp;
+  const syncExternalStore = noop.useSyncExternalStore(subscribe.subscribe, () => closure_1(closure_0.getState()), () => closure_1(closure_0.getInitialState()));
+  const debugValue = noop.useDebugValue(syncExternalStore);
+  return syncExternalStore;
 };

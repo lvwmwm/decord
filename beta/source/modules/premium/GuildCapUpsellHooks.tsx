@@ -1,14 +1,14 @@
-// Module ID: 7459
-// Function ID: 7460
+// Module ID: 7491
+// Function ID: 7492
 // Name: GuildCapUpsellHooks
-// Dependencies: [2067, 1376, 1078, 558, 568, 504, 7460, 4418, 2]
+// Dependencies: [2067, 1376, 1078, 558, 568, 504, 7492, 4450, 2]
 // Exports: hasIncreasedGuildCap, hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium
 
-// Module 7459 (GuildCapUpsellHooks)
+// Module 7491 (GuildCapUpsellHooks)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
-import HotspotStore2 from "HotspotStore" /* 7460 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4450 */;
+import HotspotStore2 from "HotspotStore" /* 7492 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -45,7 +45,7 @@ export const useShouldShowInlineGuildCapUpsell = ReactCompilerGating.isReactComp
   }
   let stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [tmp(7460).HotspotStore];
+    const items1 = [tmp(7492).HotspotStore];
     const fn2 = function c() {
       const HotspotStore = HotspotStore2.HotspotStore;
       return HotspotStore.hasHotspot(HotspotStore2.HotspotLocations.GUILD_CAP_INLINE_UPSELL);

@@ -1,13 +1,13 @@
-// Module ID: 10243
-// Function ID: 10244
+// Module ID: 10282
+// Function ID: 10283
 // Name: UserSettingsSoundboardVolume
-// Dependencies: [19, 17, 1078, 21, 4758, 558, 568, 7588, 7409, 1119, 7582, 10240, 2112, 4754, 10233, 5822, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 558, 568, 7620, 7441, 1119, 7614, 10279, 2112, 4786, 10272, 5854, 2]
 
-// Module 10243 (UserSettingsSoundboardVolume)
+// Module 10282 (UserSettingsSoundboardVolume)
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7582 */;
-import VolumeSliderDefault from "VolumeSlider" /* 10240 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7441 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7614 */;
+import VolumeSliderDefault from "VolumeSlider" /* 10279 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ const View = fn(17).View;
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ slider: { marginTop: 4 }, text: { marginTop: 4 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -25,10 +25,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = analyticsLocations(568).c(17);
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const amplitudinalSoundboardVolume = tmp(7588).getAmplitudinalSoundboardVolume();
+    const amplitudinalSoundboardVolume = tmp(7620).getAmplitudinalSoundboardVolume();
     cResult[0] = amplitudinalSoundboardVolume;
     let first = amplitudinalSoundboardVolume;
-    const tmpResult = tmp(7588);
+    const tmpResult = tmp(7620);
   } else {
     first = cResult[0];
   }
@@ -69,7 +69,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[6] !== tmp12) {
     const obj2 = { value: first, maxVolume: 100, onValueChange: tmp12, accessibilityLabel: tmp13 };
-    const tmp17 = closure_5(tmp7(10240), obj2);
+    const tmp17 = closure_5(tmp7(10279), obj2);
     cResult[6] = tmp12;
     cResult[7] = tmp17;
     let tmp15 = tmp17;
@@ -93,7 +93,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[12] !== tmp4.text) {
       const obj4 = { style: tmp4.text, variant: "text-sm/medium", children: tmp20 };
-      const tmp25 = closure_5(tmp(4754).Text, obj4);
+      const tmp25 = closure_5(tmp(4786).Text, obj4);
       cResult[12] = tmp4.text;
       cResult[13] = tmp25;
       let tmp23 = tmp25;
@@ -112,8 +112,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const items = [tmp18, tmp23];
     obj7.children = items;
     obj6.subLabel = closure_7(closure_6, obj7);
-    obj5.children = closure_5(tmp(5822).TableRow, obj6);
-    const tmp30 = closure_5(tmp(10233).UserSettingsTableRowGroup, obj5);
+    obj5.children = closure_5(tmp(5854).TableRow, obj6);
+    const tmp30 = closure_5(tmp(10272).UserSettingsTableRowGroup, obj5);
     cResult[14] = tmp23;
     cResult[15] = tmp18;
     cResult[16] = tmp30;
@@ -126,7 +126,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp18 = tmp19;
 }) : (() => {
   const tmp = closure_8();
-  const amplitudinalSoundboardVolume = analyticsLocations(7588).getAmplitudinalSoundboardVolume();
+  const amplitudinalSoundboardVolume = analyticsLocations(7620).getAmplitudinalSoundboardVolume();
   analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const obj2 = { title: null, hasIcons: false, children: null };
   const intl = analyticsLocations(1119).intl;
@@ -144,7 +144,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     },
     accessibilityLabel: null
   };
-  const obj = analyticsLocations(7588);
+  const obj = analyticsLocations(7620);
   const intl3 = analyticsLocations(1119).intl;
   obj6.accessibilityLabel = intl3.string(analyticsLocations(1119).t.kbFsAD);
   obj5.children = closure_5(VolumeSliderDefault, obj6);
@@ -154,9 +154,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj8 = { helpCenterArticle: null };
   obj8.helpCenterArticle = HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.SOUNDBOARD);
   obj7.children = intl4.format(analyticsLocations(1119).t.BPbGq7, obj8);
-  items[1] = closure_5(analyticsLocations(4754).Text, obj7);
+  items[1] = closure_5(analyticsLocations(4786).Text, obj7);
   obj4.children = items;
   obj3.subLabel = closure_7(closure_6, obj4);
-  obj2.children = closure_5(analyticsLocations(5822).TableRow, obj3);
-  return closure_5(analyticsLocations(10233).UserSettingsTableRowGroup, obj2);
+  obj2.children = closure_5(analyticsLocations(5854).TableRow, obj3);
+  return closure_5(analyticsLocations(10272).UserSettingsTableRowGroup, obj2);
 });

@@ -1,12 +1,12 @@
-// Module ID: 10634
-// Function ID: 10635
+// Module ID: 10670
+// Function ID: 10671
 // Name: ChatRestrictions
-// Dependencies: [1078, 10635, 1119, 2]
+// Dependencies: [1078, 10671, 1119, 2]
 
-// Module 10634 (ChatRestrictions)
+// Module 10670 (ChatRestrictions)
 import Constants from "Constants" /* 1078 */;
 import util from "util" /* 1119 */;
-import MentionGuardUtilsDefault from "MentionGuardUtils" /* 10635 */;
+import MentionGuardUtilsDefault from "MentionGuardUtils" /* 10671 */;
 import size from "module_2" /* 2 */;
 
 const TOKEN_REGEX = Constants.TOKEN_REGEX;
@@ -22,7 +22,7 @@ const items = [
             return false;
           } else {
             if (tmp9Result.shouldShowEveryoneGuard(extractEveryoneRoleResult, getGuildId)) {
-              const everyoneMemberCountResult = tmp9(10635).everyoneMemberCount(extractEveryoneRoleResult, getGuildId);
+              const everyoneMemberCountResult = tmp9(10671).everyoneMemberCount(extractEveryoneRoleResult, getGuildId);
               const _Math = Math;
               const _Math2 = Math;
               const _Math3 = Math;
@@ -46,7 +46,7 @@ const items = [
             } else {
               return false;
             }
-            tmp9Result = tmp9(10635);
+            tmp9Result = tmp9(10671);
           }
         }
       } else {
@@ -54,7 +54,7 @@ const items = [
       }
     },
     analyticsType: "@Everyone Warning",
-    animation: "applicationId"
+    animation: "unicodeVersion"
   },
   {
     check(arg0) {

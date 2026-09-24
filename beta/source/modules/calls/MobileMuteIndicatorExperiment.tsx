@@ -1,9 +1,9 @@
-// Module ID: 17646
-// Function ID: 17647
+// Module ID: 17656
+// Function ID: 17657
 // Name: MobileMuteIndicatorExperiment
 // Dependencies: [1439, 2]
 
-// Module 17646 (MobileMuteIndicatorExperiment)
+// Module 17656 (MobileMuteIndicatorExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1439 */;
 
 const obj = { kind: "user", name: "2026-02-mobile-mute-indicator", defaultConfig: { enableMuteWarning: false }, variations: null };

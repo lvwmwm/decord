@@ -1,23 +1,23 @@
-// Module ID: 11055
-// Function ID: 11056
+// Module ID: 11091
+// Function ID: 11092
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 7409, 1253, 9046, 11046, 1119, 2582, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 7441, 1253, 9078, 11082, 1119, 2582, 4786, 2]
 
-// Module 11055 (GiftingBadgeProgressBanner)
+// Module 11091 (GiftingBadgeProgressBanner)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
 import _modDef2582 from "module_2582" /* 2582 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9046 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7441 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9078 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: null, iconContainer: null };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 obj2.container = { flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderStyle: "solid", borderColor: nativeDefault.colors.BORDER_MUTED };
@@ -59,12 +59,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         } else {
           tmp17 = cResult[6];
         }
-        tmp8(9046)(tmp15, tmp17);
+        tmp8(9078)(tmp15, tmp17);
         if (cResult[7] !== nextTierIcon) {
           let tmp21 = null != nextTierIcon;
           if (tmp21) {
             const obj3 = { icon: nextTierIcon, size: 24 };
-            tmp21 = React4(tmp8(11046), obj3);
+            tmp21 = React4(tmp8(11082), obj3);
           }
           cResult[7] = nextTierIcon;
           cResult[8] = tmp21;
@@ -82,7 +82,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             if (cResult[15] !== tmp27) {
               const obj4 = { variant: "text-md/semibold", children: tmp27 };
-              const tmp31 = React4(tmp(4754).Text, obj4);
+              const tmp31 = React4(tmp(4786).Text, obj4);
               cResult[15] = tmp27;
               cResult[16] = tmp31;
               let tmp29 = tmp31;
@@ -152,7 +152,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp10Result = null != nextTierIcon;
   if (tmp10Result) {
     const obj4 = { icon: nextTierIcon, size: 24 };
-    tmp10Result = tmp10(tmp2(11046), obj4);
+    tmp10Result = tmp10(tmp2(11082), obj4);
   }
   obj3.children = tmp10Result;
   const items2 = [React4(View, obj3), ];

@@ -1,67 +1,67 @@
-// Module ID: 13294
-// Function ID: 13295
+// Module ID: 13330
+// Function ID: 13331
 // Name: UserProfileActivity
-// Dependencies: [32, 109, 19, 17, 4985, 4780, 2045, 2067, 4399, 4798, 5498, 4777, 7862, 7455, 1078, 21, 4758, 580, 1368, 558, 568, 4754, 8646, 13295, 4471, 11195, 1119, 11876, 5802, 1401, 8620, 8845, 4610, 11190, 7986, 13300, 13310, 7409, 7429, 13316, 8944, 8945, 13317, 504, 13303, 13318, 13320, 13328, 13331, 8533, 4799, 13298, 13299, 5341, 7454, 1181, 13333, 10271, 4813, 7967, 5630, 4900, 4725, 10236, 13334, 10240, 13321, 4911, 11197, 9846, 4961, 4965, 7586, 9568, 13335, 13336, 13338, 13339, 2]
+// Dependencies: [32, 109, 19, 17, 5017, 4812, 2045, 2067, 4431, 4830, 5530, 4809, 7894, 7487, 1078, 21, 4790, 580, 1368, 558, 568, 4786, 8678, 13331, 4503, 11231, 1119, 11912, 5834, 1401, 8652, 8877, 4642, 11226, 8018, 13336, 13346, 7441, 7461, 13352, 8976, 8977, 13353, 504, 13339, 13354, 13356, 13364, 13367, 8565, 4831, 13334, 13335, 5373, 7486, 1181, 13369, 10310, 4845, 7999, 5662, 4932, 4757, 10275, 13370, 10279, 13357, 4943, 11233, 9878, 4993, 4997, 7618, 9600, 13371, 13372, 13374, 13375, 2]
 
-// Module 13294 (UserProfileActivity)
+// Module 13330 (UserProfileActivity)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AvatarUtils from "AvatarUtils" /* 1401 */;
-import shared from "shared" /* 4610 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import StreamActionCreators from "StreamActionCreators" /* 4900 */;
-import useChannelNameDefault from "useChannelName" /* 4911 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 4965 */;
-import Pressables from "Pressables" /* 5341 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5630 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import UserProfileCardDefault from "UserProfileCard" /* 7454 */;
-import transitionToGuild from "transitionToGuild" /* 7586 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7986 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8620 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8646 */;
-import UnknownGameIcon from "UnknownGameIcon" /* 8845 */;
-import closeVoicePanelsDefault from "closeVoicePanels" /* 9568 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9846 */;
-import isGameActivityDefault from "isGameActivity" /* 11190 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 11195 */;
-import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 11197 */;
-import UserActivitySpotify from "UserActivitySpotify" /* 11876 */;
-import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 13303 */;
-import UserProfileActivityVoiceChannelDefault from "UserProfileActivityVoiceChannel" /* 13320 */;
-import usePersonalizedVoiceChannelUsersDefault from "usePersonalizedVoiceChannelUsers" /* 13321 */;
-import UserProfileActivityButtons from "UserProfileActivityButtons" /* 13328 */;
-import isActivityJoinableOnCurrentPlatform from "isActivityJoinableOnCurrentPlatform" /* 13331 */;
-import UserProfileVoiceSettingsDefault from "UserProfileVoiceSettings" /* 13339 */;
+import shared from "shared" /* 4642 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import StreamActionCreators from "StreamActionCreators" /* 4932 */;
+import useChannelNameDefault from "useChannelName" /* 4943 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 4997 */;
+import Pressables from "Pressables" /* 5373 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5662 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7441 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7486 */;
+import transitionToGuild from "transitionToGuild" /* 7618 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8018 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8652 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8678 */;
+import UnknownGameIcon from "UnknownGameIcon" /* 8877 */;
+import closeVoicePanelsDefault from "closeVoicePanels" /* 9600 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9878 */;
+import isGameActivityDefault from "isGameActivity" /* 11226 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 11231 */;
+import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 11233 */;
+import UserActivitySpotify from "UserActivitySpotify" /* 11912 */;
+import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 13339 */;
+import UserProfileActivityVoiceChannelDefault from "UserProfileActivityVoiceChannel" /* 13356 */;
+import usePersonalizedVoiceChannelUsersDefault from "usePersonalizedVoiceChannelUsers" /* 13357 */;
+import UserProfileActivityButtons from "UserProfileActivityButtons" /* 13364 */;
+import isActivityJoinableOnCurrentPlatform from "isActivityJoinableOnCurrentPlatform" /* 13367 */;
+import UserProfileVoiceSettingsDefault from "UserProfileVoiceSettings" /* 13375 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 4985 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
+import ApplicationStore from "ApplicationStore" /* 5017 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4812 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
-import VoiceStateStore from "VoiceStateStore" /* 4777 */;
-import UserProfileStore from "UserProfileStore" /* 7862 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5530 */;
+import VoiceStateStore from "VoiceStateStore" /* 4809 */;
+import UserProfileStore from "UserProfileStore" /* 7894 */;
 
-const Text_Text = Text(4754);
-const UserProfileActivityTimebarDefault = tmp(13318);
+const Text_Text = Text(4786);
+const UserProfileActivityTimebarDefault = tmp(13354);
 require = fn;
 let user = ["children"];
 get_ActivityIndicator = fn(17);
 ({ TouchableOpacity: closure_7, TouchableWithoutFeedback: closure_8, View: closure_9 } = get_ActivityIndicator);
-const CARD_PADDING = fn(7455).CARD_PADDING;
+const CARD_PADDING = fn(7487).CARD_PADDING;
 const Constants = fn(1078);
 ({ ActivityTypes: closure_19, Permissions: closure_20, PlatformTypes: closure_21, StatusTypes: closure_22 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_23, jsxs: closure_24, Fragment: closure_25 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { card: { gap: 12 }, cardTitle: { marginBottom: 0 }, cardTitleIcon: { tintColor: nativeDefault.colors.TEXT_SUBTLE }, body: { flexDirection: "row", alignItems: "center", gap: 16 }, content: { flex: 1 }, imageContainer: { position: "relative" }, imageAspectRatio: { width: 60, maxHeight: 60, aspectRatio: "1 / 1" }, crunchyrollImageAspectRatio: { width: 60, maxHeight: 100, aspectRatio: "2 / 3" }, largeImage: null, smallImageBackground: null, smallImage: null, badges: null, voiceChannelDivider: null, customButtons: null, streamPreview: null, voiceActivityCard: null, voiceSettings: null, voiceSettingsDivider: null, voiceCallContent: null, voiceCallNameIconWrapper: null };
 let size = { borderRadius: nativeDefault.radii.xs, width: "100%", height: "100%" };
 obj2.largeImage = size;
@@ -261,14 +261,14 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                           str = "";
                                           if (!tmp13) {
                                             tmp18 = jsx;
-                                            tmp19 = f62854;
+                                            tmp19 = f62905;
                                             obj1 = { variant: "text-xs/medium", lineClamp: 1, children: null };
                                             items = [, ];
                                             items[0] = tmp2.state;
                                             items[1] = "";
                                             str2 = " ";
                                             obj1.children = items.join(" ");
-                                            return jsx(f62854, obj1);
+                                            return jsx(f62905, obj1);
                                           } else {
                                             num2 = 0;
                                             if (0 === tmp2.party.size[1]) {
@@ -292,7 +292,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                           assets = tmp2.assets;
                                           tmp7 = null;
                                           large_url = undefined;
-                                          tmp6 = f62856;
+                                          tmp6 = f62907;
                                           if (assets != null) {
                                             large_url = assets.large_url;
                                           }
@@ -300,7 +300,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                           obj7.href = large_url;
                                           assets2 = tmp2.assets;
                                           large_text = undefined;
-                                          tmp9 = f62854;
+                                          tmp9 = f62905;
                                           if (assets2 != null) {
                                             large_text = assets2.large_text;
                                           }
@@ -348,14 +348,14 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                           str = "";
                                           if (!tmp13) {
                                             tmp18 = jsx;
-                                            tmp19 = f62854;
+                                            tmp19 = f62905;
                                             obj1 = { variant: "text-xs/medium", lineClamp: 1, children: null };
                                             items = [, ];
                                             items[0] = tmp2.state;
                                             items[1] = "";
                                             str2 = " ";
                                             obj1.children = items.join(" ");
-                                            return jsx(f62854, obj1);
+                                            return jsx(f62905, obj1);
                                           } else {
                                             num2 = 0;
                                             if (0 === tmp2.party.size[1]) {
@@ -379,7 +379,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                           assets = tmp2.assets;
                                           tmp7 = null;
                                           large_url = undefined;
-                                          tmp6 = f62856;
+                                          tmp6 = f62907;
                                           if (assets != null) {
                                             large_url = assets.large_url;
                                           }
@@ -387,7 +387,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                           obj7.href = large_url;
                                           assets2 = tmp2.assets;
                                           large_text = undefined;
-                                          tmp9 = f62854;
+                                          tmp9 = f62905;
                                           if (assets2 != null) {
                                             large_text = assets2.large_text;
                                           }
@@ -434,14 +434,14 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                           str = "";
                                           if (!tmp13) {
                                             tmp18 = jsx;
-                                            tmp19 = f62854;
+                                            tmp19 = f62905;
                                             obj1 = { variant: "text-xs/medium", lineClamp: 1, children: null };
                                             items = [, ];
                                             items[0] = tmp2.state;
                                             items[1] = "";
                                             str2 = " ";
                                             obj1.children = items.join(" ");
-                                            return jsx(f62854, obj1);
+                                            return jsx(f62905, obj1);
                                           } else {
                                             num2 = 0;
                                             if (0 === tmp2.party.size[1]) {
@@ -465,7 +465,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                           assets = tmp2.assets;
                                           tmp7 = null;
                                           large_url = undefined;
-                                          tmp6 = f62856;
+                                          tmp6 = f62907;
                                           if (assets != null) {
                                             large_url = assets.large_url;
                                           }
@@ -473,7 +473,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                           obj7.href = large_url;
                                           assets2 = tmp2.assets;
                                           large_text = undefined;
-                                          tmp9 = f62854;
+                                          tmp9 = f62905;
                                           if (assets2 != null) {
                                             large_text = assets2.large_text;
                                           }
@@ -520,14 +520,14 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             str = "";
                                             if (!tmp13) {
                                               tmp18 = jsx;
-                                              tmp19 = f62854;
+                                              tmp19 = f62905;
                                               obj1 = { variant: "text-xs/medium", lineClamp: 1, children: null };
                                               items = [, ];
                                               items[0] = tmp2.state;
                                               items[1] = "";
                                               str2 = " ";
                                               obj1.children = items.join(" ");
-                                              return jsx(f62854, obj1);
+                                              return jsx(f62905, obj1);
                                             } else {
                                               num2 = 0;
                                               if (0 === tmp2.party.size[1]) {
@@ -551,7 +551,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             assets = tmp2.assets;
                                             tmp7 = null;
                                             large_url = undefined;
-                                            tmp6 = f62856;
+                                            tmp6 = f62907;
                                             if (assets != null) {
                                               large_url = assets.large_url;
                                             }
@@ -559,7 +559,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             obj7.href = large_url;
                                             assets2 = tmp2.assets;
                                             large_text = undefined;
-                                            tmp9 = f62854;
+                                            tmp9 = f62905;
                                             if (assets2 != null) {
                                               large_text = assets2.large_text;
                                             }
@@ -607,14 +607,14 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             str = "";
                                             if (!tmp13) {
                                               tmp18 = jsx;
-                                              tmp19 = f62854;
+                                              tmp19 = f62905;
                                               obj1 = { variant: "text-xs/medium", lineClamp: 1, children: null };
                                               items = [, ];
                                               items[0] = tmp2.state;
                                               items[1] = "";
                                               str2 = " ";
                                               obj1.children = items.join(" ");
-                                              return jsx(f62854, obj1);
+                                              return jsx(f62905, obj1);
                                             } else {
                                               num2 = 0;
                                               if (0 === tmp2.party.size[1]) {
@@ -638,7 +638,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             assets = tmp2.assets;
                                             tmp7 = null;
                                             large_url = undefined;
-                                            tmp6 = f62856;
+                                            tmp6 = f62907;
                                             if (assets != null) {
                                               large_url = assets.large_url;
                                             }
@@ -646,7 +646,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             obj7.href = large_url;
                                             assets2 = tmp2.assets;
                                             large_text = undefined;
-                                            tmp9 = f62854;
+                                            tmp9 = f62905;
                                             if (assets2 != null) {
                                               large_text = assets2.large_text;
                                             }
@@ -693,14 +693,14 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             str = "";
                                             if (!tmp13) {
                                               tmp18 = jsx;
-                                              tmp19 = f62854;
+                                              tmp19 = f62905;
                                               obj1 = { variant: "text-xs/medium", lineClamp: 1, children: null };
                                               items = [, ];
                                               items[0] = tmp2.state;
                                               items[1] = "";
                                               str2 = " ";
                                               obj1.children = items.join(" ");
-                                              return jsx(f62854, obj1);
+                                              return jsx(f62905, obj1);
                                             } else {
                                               num2 = 0;
                                               if (0 === tmp2.party.size[1]) {
@@ -724,7 +724,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             assets = tmp2.assets;
                                             tmp7 = null;
                                             large_url = undefined;
-                                            tmp6 = f62856;
+                                            tmp6 = f62907;
                                             if (assets != null) {
                                               large_url = assets.large_url;
                                             }
@@ -732,7 +732,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             obj7.href = large_url;
                                             assets2 = tmp2.assets;
                                             large_text = undefined;
-                                            tmp9 = f62854;
+                                            tmp9 = f62905;
                                             if (assets2 != null) {
                                               large_text = assets2.large_text;
                                             }
@@ -780,14 +780,14 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             str = "";
                                             if (!tmp13) {
                                               tmp18 = jsx;
-                                              tmp19 = f62854;
+                                              tmp19 = f62905;
                                               obj1 = { variant: "text-xs/medium", lineClamp: 1, children: null };
                                               items = [, ];
                                               items[0] = tmp2.state;
                                               items[1] = "";
                                               str2 = " ";
                                               obj1.children = items.join(" ");
-                                              return jsx(f62854, obj1);
+                                              return jsx(f62905, obj1);
                                             } else {
                                               num2 = 0;
                                               if (0 === tmp2.party.size[1]) {
@@ -811,7 +811,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             assets = tmp2.assets;
                                             tmp7 = null;
                                             large_url = undefined;
-                                            tmp6 = f62856;
+                                            tmp6 = f62907;
                                             if (assets != null) {
                                               large_url = assets.large_url;
                                             }
@@ -819,7 +819,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             obj7.href = large_url;
                                             assets2 = tmp2.assets;
                                             large_text = undefined;
-                                            tmp9 = f62854;
+                                            tmp9 = f62905;
                                             if (assets2 != null) {
                                               large_text = assets2.large_text;
                                             }
@@ -866,14 +866,14 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             str = "";
                                             if (!tmp13) {
                                               tmp18 = jsx;
-                                              tmp19 = f62854;
+                                              tmp19 = f62905;
                                               obj1 = { variant: "text-xs/medium", lineClamp: 1, children: null };
                                               items = [, ];
                                               items[0] = tmp2.state;
                                               items[1] = "";
                                               str2 = " ";
                                               obj1.children = items.join(" ");
-                                              return jsx(f62854, obj1);
+                                              return jsx(f62905, obj1);
                                             } else {
                                               num2 = 0;
                                               if (0 === tmp2.party.size[1]) {
@@ -897,7 +897,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             assets = tmp2.assets;
                                             tmp7 = null;
                                             large_url = undefined;
-                                            tmp6 = f62856;
+                                            tmp6 = f62907;
                                             if (assets != null) {
                                               large_url = assets.large_url;
                                             }
@@ -905,7 +905,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             obj7.href = large_url;
                                             assets2 = tmp2.assets;
                                             large_text = undefined;
-                                            tmp9 = f62854;
+                                            tmp9 = f62905;
                                             if (assets2 != null) {
                                               large_text = assets2.large_text;
                                             }
@@ -953,14 +953,14 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             str = "";
                                             if (!tmp13) {
                                               tmp18 = jsx;
-                                              tmp19 = f62854;
+                                              tmp19 = f62905;
                                               obj1 = { variant: "text-xs/medium", lineClamp: 1, children: null };
                                               items = [, ];
                                               items[0] = tmp2.state;
                                               items[1] = "";
                                               str2 = " ";
                                               obj1.children = items.join(" ");
-                                              return jsx(f62854, obj1);
+                                              return jsx(f62905, obj1);
                                             } else {
                                               num2 = 0;
                                               if (0 === tmp2.party.size[1]) {
@@ -984,7 +984,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             assets = tmp2.assets;
                                             tmp7 = null;
                                             large_url = undefined;
-                                            tmp6 = f62856;
+                                            tmp6 = f62907;
                                             if (assets != null) {
                                               large_url = assets.large_url;
                                             }
@@ -992,7 +992,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             obj7.href = large_url;
                                             assets2 = tmp2.assets;
                                             large_text = undefined;
-                                            tmp9 = f62854;
+                                            tmp9 = f62905;
                                             if (assets2 != null) {
                                               large_text = assets2.large_text;
                                             }
@@ -1039,14 +1039,14 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             str = "";
                                             if (!tmp13) {
                                               tmp18 = jsx;
-                                              tmp19 = f62854;
+                                              tmp19 = f62905;
                                               obj1 = { variant: "text-xs/medium", lineClamp: 1, children: null };
                                               items = [, ];
                                               items[0] = tmp2.state;
                                               items[1] = "";
                                               str2 = " ";
                                               obj1.children = items.join(" ");
-                                              return jsx(f62854, obj1);
+                                              return jsx(f62905, obj1);
                                             } else {
                                               num2 = 0;
                                               if (0 === tmp2.party.size[1]) {
@@ -1070,7 +1070,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             assets = tmp2.assets;
                                             tmp7 = null;
                                             large_url = undefined;
-                                            tmp6 = f62856;
+                                            tmp6 = f62907;
                                             if (assets != null) {
                                               large_url = assets.large_url;
                                             }
@@ -1078,7 +1078,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             obj7.href = large_url;
                                             assets2 = tmp2.assets;
                                             large_text = undefined;
-                                            tmp9 = f62854;
+                                            tmp9 = f62905;
                                             if (assets2 != null) {
                                               large_text = assets2.large_text;
                                             }
@@ -1127,14 +1127,14 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             str = "";
                                             if (!tmp13) {
                                               tmp18 = jsx;
-                                              tmp19 = f62854;
+                                              tmp19 = f62905;
                                               obj1 = { variant: "text-xs/medium", lineClamp: 1, children: null };
                                               items = [, ];
                                               items[0] = tmp2.state;
                                               items[1] = "";
                                               str2 = " ";
                                               obj1.children = items.join(" ");
-                                              return jsx(f62854, obj1);
+                                              return jsx(f62905, obj1);
                                             } else {
                                               num2 = 0;
                                               if (0 === tmp2.party.size[1]) {
@@ -1158,7 +1158,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             assets = tmp2.assets;
                                             tmp7 = null;
                                             large_url = undefined;
-                                            tmp6 = f62856;
+                                            tmp6 = f62907;
                                             if (assets != null) {
                                               large_url = assets.large_url;
                                             }
@@ -1166,7 +1166,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                             obj7.href = large_url;
                                             assets2 = tmp2.assets;
                                             large_text = undefined;
-                                            tmp9 = f62854;
+                                            tmp9 = f62905;
                                             if (assets2 != null) {
                                               large_text = assets2.large_text;
                                             }
@@ -1221,14 +1221,14 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                           str = "";
                                           if (!tmp13) {
                                             tmp18 = jsx;
-                                            tmp19 = f62854;
+                                            tmp19 = f62905;
                                             obj1 = { variant: "text-xs/medium", lineClamp: 1, children: null };
                                             items = [, ];
                                             items[0] = tmp2.state;
                                             items[1] = "";
                                             str2 = " ";
                                             obj1.children = items.join(" ");
-                                            return jsx(f62854, obj1);
+                                            return jsx(f62905, obj1);
                                           } else {
                                             num2 = 0;
                                             if (0 === tmp2.party.size[1]) {
@@ -1252,7 +1252,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                           assets = tmp2.assets;
                                           tmp7 = null;
                                           large_url = undefined;
-                                          tmp6 = f62856;
+                                          tmp6 = f62907;
                                           if (assets != null) {
                                             large_url = assets.large_url;
                                           }
@@ -1260,7 +1260,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                                           obj7.href = large_url;
                                           assets2 = tmp2.assets;
                                           large_text = undefined;
-                                          tmp9 = f62854;
+                                          tmp9 = f62905;
                                           if (assets2 != null) {
                                             large_text = assets2.large_text;
                                           }
@@ -1958,20 +1958,20 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   closure_3 = undefined;
   const tmp = closure_26();
   let obj = dependencyMap;
-  const tmp3 = activity(13310)(activity);
-  const analyticsLocations = activity(7409)(activity(7429).USER_PROFILE_LIVE_ACTIVITY_CARD).analyticsLocations;
+  const tmp3 = activity(13346)(activity);
+  const analyticsLocations = activity(7441)(activity(7461).USER_PROFILE_LIVE_ACTIVITY_CARD).analyticsLocations;
   let id;
-  const tmp4 = activity(7409);
+  const tmp4 = activity(7441);
   if (voiceChannel != null) {
     id = voiceChannel.id;
   }
-  const tmp5Result = activity(13316)({ display: "live", voiceChannelId: id, user, activity, analyticsLocations });
+  const tmp5Result = activity(13352)({ display: "live", voiceChannelId: id, user, activity, analyticsLocations });
   dependencyMap = tmp5Result;
   const application_id = activity.application_id;
-  const tmp5 = activity(13316);
-  const tmp2Result = activity(8945);
+  const tmp5 = activity(13352);
+  const tmp2Result = activity(8977);
   let PlayOnSpotifyButton = user;
-  const tmp2ResultResult = tmp2Result({ location: "User Profile Activity Card", applicationId: application_id, source: user(8944).GameProfileSources.UserProfile, trackEntryPointImpression: true, sourceUserId: user.id });
+  const tmp2ResultResult = tmp2Result({ location: "User Profile Activity Card", applicationId: application_id, source: user(8976).GameProfileSources.UserProfile, trackEntryPointImpression: true, sourceUserId: user.id });
   closure_3 = tmp2ResultResult;
   const items = [tmp2ResultResult];
   const callback = noop.useCallback(() => {
@@ -1979,8 +1979,8 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       tmp();
     }
   }, items);
-  activity(13317)({ userId: user.id, onAction: tmp5Result });
-  const obj2 = { location: "User Profile Activity Card", applicationId: application_id, source: user(8944).GameProfileSources.UserProfile, trackEntryPointImpression: true, sourceUserId: user.id };
+  activity(13353)({ userId: user.id, onAction: tmp5Result });
+  const obj2 = { location: "User Profile Activity Card", applicationId: application_id, source: user(8976).GameProfileSources.UserProfile, trackEntryPointImpression: true, sourceUserId: user.id };
   const obj3 = { userId: user.id, onAction: tmp5Result };
   const items1 = [GuildStore, VoiceStateStore, ChannelStore];
   const stateFromStores = user(504).useStateFromStores(items1, () => {
@@ -2048,10 +2048,10 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       const obj11 = { user, activity, application: stateFromStores1, onAction: tmp5Result };
       const items4 = [closure_23(closure_29, obj11), , , ];
       let tmp33Result5 = null;
-      if (tmp2(13303)(activity)) {
+      if (tmp2(13339)(activity)) {
         ({ start, end } = activity.timestamps);
         const obj12 = { start, end };
-        tmp33Result5 = tmp33(tmp2(13318), obj12);
+        tmp33Result5 = tmp33(tmp2(13354), obj12);
       }
       items4[1] = tmp33Result5;
       let tmp33Result6 = null;
@@ -2059,23 +2059,23 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         tmp33Result6 = null;
         if (null != stateFromStores) {
           const obj13 = { guild: stateFromStores, channel: voiceChannel, onAction: tmp5Result, style: tmp.voiceChannelDivider };
-          tmp33Result6 = tmp33(tmp2(13320), obj13);
+          tmp33Result6 = tmp33(tmp2(13356), obj13);
         }
       }
       items4[2] = tmp33Result6;
       let tmp33Result7 = null;
       if (user.id !== currentUser.id) {
-        if (tmp2(11195)(activity)) {
-          PlayOnSpotifyButton = PlayOnSpotifyButton(13328).PlayOnSpotifyButton;
+        if (tmp2(11231)(activity)) {
+          PlayOnSpotifyButton = PlayOnSpotifyButton(13364).PlayOnSpotifyButton;
           obj = { activity, onAction: tmp5Result };
           tmp33Result7 = tmp33(PlayOnSpotifyButton, obj);
-        } else if (tmp2(7986)(activity)) {
+        } else if (tmp2(8018)(activity)) {
           const obj14 = { user, currentUser, activity, application: stateFromStores1, onAction: tmp5Result };
-          tmp33Result7 = tmp33(PlayOnSpotifyButton(13328).JoinActivityButton, obj14);
+          tmp33Result7 = tmp33(PlayOnSpotifyButton(13364).JoinActivityButton, obj14);
         } else {
-          if (tmp2(11190)(activity)) {
+          if (tmp2(11226)(activity)) {
             let supported_platforms = activity.supported_platforms;
-            const currentActivityGamePlatform = PlayOnSpotifyButton(13331).getCurrentActivityGamePlatform();
+            const currentActivityGamePlatform = PlayOnSpotifyButton(13367).getCurrentActivityGamePlatform();
             if (supported_platforms == null) {
               supported_platforms = [];
             }
@@ -2090,17 +2090,17 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                   if (null != activity.session_id) {
                     if (null != stateFromStores1) {
                       const obj15 = { user, currentUser, activity, application: stateFromStores1, onAction: tmp5Result };
-                      tmp33Result7 = tmp33(PlayOnSpotifyButton(13328).JoinGameActivityButton, obj15);
+                      tmp33Result7 = tmp33(PlayOnSpotifyButton(13364).JoinGameActivityButton, obj15);
                     }
                   }
                 }
               }
             }
-            const PlayOnSpotifyButtonResult1 = PlayOnSpotifyButton(13331);
+            const PlayOnSpotifyButtonResult1 = PlayOnSpotifyButton(13367);
           }
-          if (tmp2(8533)(activity)) {
+          if (tmp2(8565)(activity)) {
             const obj16 = { activity, onAction: tmp5Result };
-            tmp33Result7 = tmp33(PlayOnSpotifyButton(13328).WatchActivityButton, obj16);
+            tmp33Result7 = tmp33(PlayOnSpotifyButton(13364).WatchActivityButton, obj16);
           } else {
             if (null != activity.buttons) {
               if (activity.buttons.length > 0) {
@@ -2111,28 +2111,28 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
               }
             }
             tmp33Result7 = null;
-            if (!tmp2(4799)(activity)) {
-              if (!tmp2(13298)(activity)) {
+            if (!tmp2(4831)(activity)) {
+              if (!tmp2(13334)(activity)) {
                 tmp33Result7 = null;
-                if (tmp2(13299)(activity)) {
+                if (tmp2(13335)(activity)) {
                   const obj18 = { type: constants3.PLAYSTATION, onAction: tmp5Result };
-                  tmp33Result7 = tmp33(PlayOnSpotifyButton(13328).ConnectPlatformButton, obj18);
+                  tmp33Result7 = tmp33(PlayOnSpotifyButton(13364).ConnectPlatformButton, obj18);
                 }
               }
             }
             const obj19 = { type: constants3.XBOX, onAction: tmp5Result };
-            tmp33Result7 = tmp33(PlayOnSpotifyButton(13328).ConnectPlatformButton, obj19);
+            tmp33Result7 = tmp33(PlayOnSpotifyButton(13364).ConnectPlatformButton, obj19);
           }
         }
       }
       items4[3] = tmp33Result7;
       obj9.children = items4;
-      obj9 = closure_24(tmp2(7454), obj9);
+      obj9 = closure_24(tmp2(7486), obj9);
       obj7.children = obj9;
-      obj7 = tmp33(PlayOnSpotifyButton(5341).PressableOpacity, obj7);
+      obj7 = tmp33(PlayOnSpotifyButton(5373).PressableOpacity, obj7);
       obj6.children = obj7;
-      closure_23(PlayOnSpotifyButton(7409).AnalyticsLocationProvider, obj6);
-      const tmp2Result2 = tmp2(7454);
+      closure_23(PlayOnSpotifyButton(7441).AnalyticsLocationProvider, obj6);
+      const tmp2Result2 = tmp2(7486);
     }
   }
   return tmp15;
@@ -2686,8 +2686,8 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   dependencyMap = undefined;
   ({ isInChannel, style } = arg0);
   const tmp = closure_26();
-  const tmp5 = stateFromStores(4911)(channel);
-  const tmp4 = stateFromStores(13321)(channel);
+  const tmp5 = stateFromStores(4943)(channel);
+  const tmp4 = stateFromStores(13357)(channel);
   const items = [GuildStore];
   stateFromStores = channel(504).useStateFromStores(items, () => GuildStore.getGuild(channel.guild_id));
   let obj = channel(504);
@@ -2700,17 +2700,17 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return isPrivateResult;
   });
   let obj2 = channel(504);
-  const tmp9 = stateFromStores(7409);
-  ({ newestAnalyticsLocation: c2, analyticsLocations } = stateFromStores(7409)(stateFromStores(7429).USER_PROFILE_VOICE_ACTIVITY_CARD));
-  const tmp11 = stateFromStores(13316)({ display: "voice", activity: { type: "VOICE" }, voiceChannelId: channel.id, user, analyticsLocations });
+  const tmp9 = stateFromStores(7441);
+  ({ newestAnalyticsLocation: c2, analyticsLocations } = stateFromStores(7441)(stateFromStores(7461).USER_PROFILE_VOICE_ACTIVITY_CARD));
+  const tmp11 = stateFromStores(13352)({ display: "voice", activity: { type: "VOICE" }, voiceChannelId: channel.id, user, analyticsLocations });
   closure_3 = tmp11;
-  stateFromStores(13317)({ userId: user.id, onAction: tmp11 });
+  stateFromStores(13353)({ userId: user.id, onAction: tmp11 });
   const obj5 = { style: null, title: null, titleStyle: null, children: null };
   const items2 = [tmp.card, style];
   obj5.style = items2;
   const obj3 = { display: "voice", activity: { type: "VOICE" }, voiceChannelId: channel.id, user, analyticsLocations };
   const obj4 = { userId: user.id, onAction: tmp11 };
-  const tmp9Result = stateFromStores(7409)(stateFromStores(7429).USER_PROFILE_VOICE_ACTIVITY_CARD);
+  const tmp9Result = stateFromStores(7441)(stateFromStores(7461).USER_PROFILE_VOICE_ACTIVITY_CARD);
   if (!channel.isDM()) {
     if (!channel.isGroupDM()) {
       const intl = tmp6(1119).intl;
@@ -2732,12 +2732,12 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       id = stateFromStores.id;
     }
     obj7.guildId = id;
-    const items3 = [closure_23(tmp2(13335), obj7), ];
+    const items3 = [closure_23(tmp2(13371), obj7), ];
     const obj8 = { style: tmp.voiceCallContent, children: null };
     if (stateFromStores1) {
       const obj9 = { accessibilityRole: "button", accessibilityLabel: null, accessibilityHint: null, onPress: null, children: null };
       const obj10 = { channel };
-      obj9.accessibilityLabel = tmp2(9846)(obj10);
+      obj9.accessibilityLabel = tmp2(9878)(obj10);
       const intl3 = tmp6(1119).intl;
       obj9.accessibilityHint = intl3.string(tmp6(1119).t["9C444m"]);
       obj9.onPress = function onPress() {
@@ -2749,19 +2749,19 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj11 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
       const obj12 = { style: tmp.voiceCallNameIconWrapper, children: null };
       const obj13 = { channel, size: "sm", color: "mobile-text-heading-primary" };
-      obj12.children = tmp18(tmp2(11197), obj13);
+      obj12.children = tmp18(tmp2(11233), obj13);
       const items4 = [tmp18(tmp17, obj12), tmp5];
       obj11.children = items4;
-      obj9.children = tmp13(tmp6(4754).Text, obj11);
-      let tmp13Result = tmp18(tmp6(5341).PressableOpacity, obj9);
+      obj9.children = tmp13(tmp6(4786).Text, obj11);
+      let tmp13Result = tmp18(tmp6(5373).PressableOpacity, obj9);
     } else {
       const obj14 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
       const obj15 = { style: tmp.voiceCallNameIconWrapper, children: null };
       const obj16 = { channel, size: "sm", color: "mobile-text-heading-primary" };
-      obj15.children = tmp18(tmp2(11197), obj16);
+      obj15.children = tmp18(tmp2(11233), obj16);
       const items5 = [tmp18(tmp17, obj15), tmp5];
       obj14.children = items5;
-      tmp13Result = tmp13(tmp6(4754).Text, obj14);
+      tmp13Result = tmp13(tmp6(4786).Text, obj14);
     }
     const items6 = [tmp13Result, ];
     let tmp18Result2 = null;
@@ -2782,8 +2782,8 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const intl6 = tmp6(1119).intl;
       const obj20 = { guildName: stateFromStores.name };
       obj19.children = intl6.format(tmp6(1119).t["hq/Qze"], obj20);
-      obj17.children = tmp18(tmp6(4754).Text, obj19);
-      tmp18Result2 = tmp18(tmp6(5341).PressableOpacity, obj17);
+      obj17.children = tmp18(tmp6(4786).Text, obj19);
+      tmp18Result2 = tmp18(tmp6(5373).PressableOpacity, obj17);
     }
     items6[1] = tmp18Result2;
     obj8.children = items6;
@@ -2791,7 +2791,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj6.children = items3;
     const items7 = [tmp13(closure_9, obj6), ];
     const obj21 = { channel, isInChannel, onAction: tmp11 };
-    items7[1] = closure_23(tmp6(13328).VoiceChannelButtons, obj21);
+    items7[1] = closure_23(tmp6(13364).VoiceChannelButtons, obj21);
     obj5.children = items7;
     return tmp13(tmp14, obj5);
   }

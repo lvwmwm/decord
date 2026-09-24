@@ -1,21 +1,21 @@
-// Module ID: 8864
-// Function ID: 8865
+// Module ID: 8896
+// Function ID: 8897
 // Name: useAgeVerificationMethods
-// Dependencies: [5, 32, 19, 8730, 8688, 558, 568, 504, 8689, 4970, 8717, 5086, 5091, 8865, 8694, 1119, 2]
+// Dependencies: [5, 32, 19, 8762, 8720, 558, 568, 504, 8721, 5002, 8749, 5118, 5123, 8897, 8726, 1119, 2]
 
-// Module 8864 (useAgeVerificationMethods)
+// Module 8896 (useAgeVerificationMethods)
 import util from "util" /* 1119 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5086 */;
-import MetricEvents from "MetricEvents" /* 5091 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8689 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8694 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5118 */;
+import MetricEvents from "MetricEvents" /* 5123 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8721 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8726 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AgeVerificationStore from "AgeVerificationStore" /* 8730 */;
+import AgeVerificationStore from "AgeVerificationStore" /* 8762 */;
 
 require = fn;
-const AgeVerificationConstants = fn(8688);
+const AgeVerificationConstants = fn(8720);
 ({ VERIFICATION_METHOD_TITLE_MAP: closure_7, VerificationMethod: closure_8 } = AgeVerificationConstants);
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -61,8 +61,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               obj2.tags = items;
               MonitoringAgentDefault.increment(obj2);
               if (result) {
-                result = tmp4(8865).isGoogleWalletEnabled("age_verification_methods");
-                const tmp4Result = tmp4(8865);
+                result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
+                const tmp4Result = tmp4(8897);
               }
               asyncGeneratorStep(result);
               tmp4 = require;
@@ -92,8 +92,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               obj2.tags = items;
               MonitoringAgentDefault.increment(obj2);
               if (result) {
-                result = tmp4(8865).isGoogleWalletEnabled("age_verification_methods");
-                const tmp4Result = tmp4(8865);
+                result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
+                const tmp4Result = tmp4(8897);
               }
               asyncGeneratorStep(result);
               tmp4 = require;
@@ -121,8 +121,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               obj2.tags = items;
               MonitoringAgentDefault.increment(obj2);
               if (result) {
-                result = tmp4(8865).isGoogleWalletEnabled("age_verification_methods");
-                const tmp4Result = tmp4(8865);
+                result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
+                const tmp4Result = tmp4(8897);
               }
               asyncGeneratorStep(result);
               tmp4 = require;
@@ -153,8 +153,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               obj2.tags = items;
               MonitoringAgentDefault.increment(obj2);
               if (result) {
-                result = tmp4(8865).isGoogleWalletEnabled("age_verification_methods");
-                const tmp4Result = tmp4(8865);
+                result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
+                const tmp4Result = tmp4(8897);
               }
               asyncGeneratorStep(result);
               tmp4 = require;
@@ -182,8 +182,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               obj2.tags = items;
               MonitoringAgentDefault.increment(obj2);
               if (result) {
-                result = tmp4(8865).isGoogleWalletEnabled("age_verification_methods");
-                const tmp4Result = tmp4(8865);
+                result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
+                const tmp4Result = tmp4(8897);
               }
               asyncGeneratorStep(result);
               tmp4 = require;
@@ -210,8 +210,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               obj2.tags = items;
               MonitoringAgentDefault.increment(obj2);
               if (result) {
-                result = tmp4(8865).isGoogleWalletEnabled("age_verification_methods");
-                const tmp4Result = tmp4(8865);
+                result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
+                const tmp4Result = tmp4(8897);
               }
               asyncGeneratorStep(result);
               tmp4 = require;
@@ -257,8 +257,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    const obj5 = id(8689);
-                    const result = obj5.trackAgeVerificationModalClicked(id, id(8689).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, id(8689).AgeVerificationModalCta.METHOD_SELECT, id);
+                    const obj5 = id(8721);
+                    const result = obj5.trackAgeVerificationModalClicked(id, id(8721).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, id(8721).AgeVerificationModalCta.METHOD_SELECT, id);
                     v1 = 1;
                     c1 = 1;
                     const obj4 = { value: v1(id), done: false };
@@ -310,8 +310,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               obj2.tags = items;
               MonitoringAgentDefault.increment(obj2);
               if (result) {
-                result = tmp4(8865).isGoogleWalletEnabled("age_verification_methods");
-                const tmp4Result = tmp4(8865);
+                result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
+                const tmp4Result = tmp4(8897);
               }
               asyncGeneratorStep(result);
               tmp4 = require;
@@ -338,8 +338,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               obj2.tags = items;
               MonitoringAgentDefault.increment(obj2);
               if (result) {
-                result = tmp4(8865).isGoogleWalletEnabled("age_verification_methods");
-                const tmp4Result = tmp4(8865);
+                result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
+                const tmp4Result = tmp4(8897);
               }
               asyncGeneratorStep(result);
               tmp4 = require;
@@ -364,8 +364,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 obj2.tags = items;
                 MonitoringAgentDefault.increment(obj2);
                 if (result) {
-                  result = tmp4(8865).isGoogleWalletEnabled("age_verification_methods");
-                  const tmp4Result = tmp4(8865);
+                  result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
+                  const tmp4Result = tmp4(8897);
                 }
                 asyncGeneratorStep(result);
                 tmp4 = require;
@@ -392,8 +392,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   obj2.tags = items;
                   MonitoringAgentDefault.increment(obj2);
                   if (result) {
-                    result = tmp4(8865).isGoogleWalletEnabled("age_verification_methods");
-                    const tmp4Result = tmp4(8865);
+                    result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
+                    const tmp4Result = tmp4(8897);
                   }
                   asyncGeneratorStep(result);
                   tmp4 = require;
@@ -418,8 +418,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     obj2.tags = items;
                     MonitoringAgentDefault.increment(obj2);
                     if (result) {
-                      result = tmp4(8865).isGoogleWalletEnabled("age_verification_methods");
-                      const tmp4Result = tmp4(8865);
+                      result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
+                      const tmp4Result = tmp4(8897);
                     }
                     asyncGeneratorStep(result);
                     tmp4 = require;
@@ -451,8 +451,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     obj2.tags = items;
                     MonitoringAgentDefault.increment(obj2);
                     if (result) {
-                      result = tmp4(8865).isGoogleWalletEnabled("age_verification_methods");
-                      const tmp4Result = tmp4(8865);
+                      result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
+                      const tmp4Result = tmp4(8897);
                     }
                     asyncGeneratorStep(result);
                     tmp4 = require;
@@ -479,8 +479,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     obj2.tags = items;
                     MonitoringAgentDefault.increment(obj2);
                     if (result) {
-                      result = tmp4(8865).isGoogleWalletEnabled("age_verification_methods");
-                      const tmp4Result = tmp4(8865);
+                      result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
+                      const tmp4Result = tmp4(8897);
                     }
                     asyncGeneratorStep(result);
                     tmp4 = require;
@@ -519,8 +519,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     obj2.tags = items;
                     MonitoringAgentDefault.increment(obj2);
                     if (result) {
-                      result = tmp4(8865).isGoogleWalletEnabled("age_verification_methods");
-                      const tmp4Result = tmp4(8865);
+                      result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
+                      const tmp4Result = tmp4(8897);
                     }
                     asyncGeneratorStep(result);
                     tmp4 = require;
@@ -573,8 +573,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         obj2.tags = items;
         MonitoringAgentDefault.increment(obj2);
         if (result) {
-          result = tmp4(8865).isGoogleWalletEnabled("age_verification_methods");
-          const tmp4Result = tmp4(8865);
+          result = tmp4(8897).isGoogleWalletEnabled("age_verification_methods");
+          const tmp4Result = tmp4(8897);
         }
         closure_4(result);
         tmp4 = require;
@@ -632,8 +632,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      const obj5 = id(8689);
-                      const result = obj5.trackAgeVerificationModalClicked(id, id(8689).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, id(8689).AgeVerificationModalCta.METHOD_SELECT, id);
+                      const obj5 = id(8721);
+                      const result = obj5.trackAgeVerificationModalClicked(id, id(8721).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, id(8721).AgeVerificationModalCta.METHOD_SELECT, id);
                       v1 = 1;
                       c1 = 1;
                       const obj4 = { value: v1(id), done: false };

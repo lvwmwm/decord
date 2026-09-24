@@ -1,41 +1,41 @@
-// Module ID: 17382
-// Function ID: 17383
+// Module ID: 17392
+// Function ID: 17393
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 2044, 4774, 9650, 502, 1996, 1078, 4779, 21, 4758, 1181, 580, 558, 568, 9655, 504, 9612, 9645, 4965, 9654, 5344, 9657, 8608, 9674, 9678, 9691, 9706, 9635, 9714, 9675, 9653, 12341, 4497, 4759, 5897, 17383, 1616, 2]
+// Dependencies: [32, 19, 17, 2044, 4806, 9682, 502, 1996, 1078, 4811, 21, 4790, 1181, 580, 558, 568, 9687, 504, 9644, 9677, 4997, 9686, 5376, 9689, 8640, 9706, 9710, 9723, 9738, 9667, 9746, 9707, 9685, 12377, 4529, 4791, 5929, 17393, 1616, 2]
 
-// Module 17382 (PictureInPictureGlobal)
+// Module 17392 (PictureInPictureGlobal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native2 from "native" /* 1181 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 4965 */;
-import NavigatorConstants from "NavigatorConstants" /* 5897 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9612 */;
-import transitionToActivityDefault from "transitionToActivity" /* 9635 */;
-import PictureInPictureDefault from "PictureInPicture" /* 9653 */;
-import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 9655 */;
-import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 17383 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 4997 */;
+import NavigatorConstants from "NavigatorConstants" /* 5929 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9644 */;
+import transitionToActivityDefault from "transitionToActivity" /* 9667 */;
+import PictureInPictureDefault from "PictureInPicture" /* 9685 */;
+import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 9687 */;
+import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 17393 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4806 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
 const require = globalThis.__r;
 
-const usePipDimensionsDefault = tmp5(9657);
+const usePipDimensionsDefault = tmp5(9689);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet: metroRequire, TouchableOpacity: closure_7 } = get_ActivityIndicator);
-let closure_10 = fn(9650).useBestActiveChatInputContainerHeight;
+let closure_10 = fn(9682).useBestActiveChatInputContainerHeight;
 const PictureInPicturePositions = fn(1078).PictureInPicturePositions;
-const ParticipantTypes = fn(4779).ParticipantTypes;
+const ParticipantTypes = fn(4811).ParticipantTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
 let c17 = 12;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { flex: 1, marginLeft: 12, marginRight: 12 }, elevationShadow: null, pip: null, background: null };
 const native = fn(1181);
 obj.elevationShadow = native.generateBoxShadowStyle(fn(1181).EIGHT_DP_ELEVATION_SHADOW_PARAMS);
@@ -340,8 +340,8 @@ let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((chan
       }
     }
     const tmpResult8 = tmp(504);
-    const shouldForcePipOrientation = tmp(9654).useShouldForcePipOrientation(tmp29);
-    tmp(5344);
+    const shouldForcePipOrientation = tmp(9686).useShouldForcePipOrientation(tmp29);
+    tmp(5376);
     if (cResult[20] === channel.id) {
       class M {
         constructor() {
@@ -389,7 +389,7 @@ let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((chan
     cResult[21] = shouldForcePipOrientation;
     cResult[22] = obj2;
     tmp34 = obj2;
-    const tmpResult9 = tmp(9654);
+    const tmpResult9 = tmp(9686);
   }
   let tmp19 = stateFromStores1;
   if (null != tmp6) {

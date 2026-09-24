@@ -1,13 +1,13 @@
-// Module ID: 15611
-// Function ID: 15612
+// Module ID: 15621
+// Function ID: 15622
 // Name: DisplayNameStylesGradientPickerSheet
-// Dependencies: [32, 19, 17, 1078, 21, 4758, 580, 558, 568, 11205, 1393, 15607, 4726, 1245, 4725, 14860, 7397, 1119, 5188, 15604, 1096, 5198, 15612, 12, 5341, 2]
+// Dependencies: [32, 19, 17, 1078, 21, 4790, 580, 558, 568, 11241, 1393, 15617, 4758, 1245, 4757, 14898, 7429, 1119, 5220, 15614, 1096, 5230, 15622, 12, 5373, 2]
 
-// Module 15611 (DisplayNameStylesGradientPickerSheet)
+// Module 15621 (DisplayNameStylesGradientPickerSheet)
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import HapticUtils from "HapticUtils" /* 4726 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import HapticUtils from "HapticUtils" /* 4758 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -19,7 +19,7 @@ get_ActivityIndicator = fn(17);
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { body: { paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12, flexGrow: 1, justifyContent: "center", alignItems: "center", gap: nativeDefault.space.PX_16 }, gradientContainer: null, dropperContainer: null, dropper: null, gradient: null, optionContainer: null, swatchWrapper: null, pressable: null, selected: null, option: null };
 let obj3 = { paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12, flexGrow: 1, justifyContent: "center", alignItems: "center", gap: nativeDefault.space.PX_16 };
 obj2.gradientContainer = { flexDirection: "row", justifyContent: "center", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8 };
@@ -81,7 +81,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) 
               onSelect(arg0) {
                           closure_0 = arg0;
                           const result = onSelectColors(displayNameStylesEffectConfig[12]).triggerHapticFeedback(onSelectColors(displayNameStylesEffectConfig[12]).HapticFeedbackTypes.IMPACT_MEDIUM);
-                          closure_1_5((arr) => arr.map(/* F153469 */ function() { ... }));
+                          closure_1_5((arr) => arr.map(/* F153563 */ function() { ... }));
                         },
               actionButtonVariant: "primary"
             };
@@ -105,7 +105,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) 
               onSelect(arg0) {
                           closure_0 = arg0;
                           const result = onSelectColors(displayNameStylesEffectConfig[12]).triggerHapticFeedback(onSelectColors(displayNameStylesEffectConfig[12]).HapticFeedbackTypes.IMPACT_MEDIUM);
-                          closure_1_5((arr) => arr.map(/* F153469 */ function() { ... }));
+                          closure_1_5((arr) => arr.map(/* F153563 */ function() { ... }));
                         },
               actionButtonVariant: "primary"
             };

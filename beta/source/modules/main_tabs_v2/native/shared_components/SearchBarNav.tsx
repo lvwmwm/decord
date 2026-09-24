@@ -1,15 +1,15 @@
-// Module ID: 7620
-// Function ID: 7621
+// Module ID: 7652
+// Function ID: 7653
 // Name: SearchBarNav
-// Dependencies: [109, 19, 17, 21, 4758, 5897, 580, 558, 568, 1119, 1368, 5843, 4754, 5341, 7297, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 5929, 580, 558, 568, 1119, 1368, 5875, 4786, 5373, 7329, 2]
 
-// Module 7620 (SearchBarNav)
+// Module 7652 (SearchBarNav)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import Pressables from "Pressables" /* 5341 */;
-import SearchField from "SearchField" /* 7297 */;
+import Pressables from "Pressables" /* 5373 */;
+import SearchField from "SearchField" /* 7329 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -19,9 +19,9 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
-let obj = { container: { flexDirection: "row", alignItems: "center", height: fn(5897).NAV_BAR_HEIGHT, paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: nativeDefault.colors.BORDER_STRONG }, cancelText: null, cancelIcon: null, flex: null };
-let obj3 = { flexDirection: "row", alignItems: "center", height: fn(5897).NAV_BAR_HEIGHT, paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: nativeDefault.colors.BORDER_STRONG };
+const createStyles = fn(4790);
+let obj = { container: { flexDirection: "row", alignItems: "center", height: fn(5929).NAV_BAR_HEIGHT, paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: nativeDefault.colors.BORDER_STRONG }, cancelText: null, cancelIcon: null, flex: null };
+let obj3 = { flexDirection: "row", alignItems: "center", height: fn(5929).NAV_BAR_HEIGHT, paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: nativeDefault.colors.BORDER_STRONG };
 obj.cancelText = { paddingLeft: nativeDefault.space.PX_16 };
 let obj4 = { paddingLeft: nativeDefault.space.PX_16 };
 obj.cancelIcon = { marginRight: nativeDefault.space.PX_16 };
@@ -131,7 +131,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
         const obj4 = { children: null };
         const obj5 = { size: "md", round: true, ref };
         const merged = Object.assign(tmp5);
-        obj4.children = hasOwnProperty(tmp(7297).SearchField, obj5);
+        obj4.children = hasOwnProperty(tmp(7329).SearchField, obj5);
         const tmp28 = hasOwnProperty(React4, obj4);
         cResult[13] = tmp5;
         cResult[14] = ref;
@@ -139,7 +139,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
         tmp22 = tmp28;
       }
       const obj6 = { accessibilityRole: "button", accessibilityLabel: tmp10, onPress: tmp4, hitSlop: tmp12, children: cResult[7] };
-      const tmp18 = hasOwnProperty(tmp(5341).PressableOpacity, obj6);
+      const tmp18 = hasOwnProperty(tmp(5373).PressableOpacity, obj6);
       cResult[8] = tmp4;
       cResult[9] = cResult[7];
       cResult[10] = tmp18;
@@ -148,12 +148,12 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
   }
   if (tmpResult4.isAndroid()) {
     const obj7 = { style: tmp9.cancelIcon };
-    let tmp14Result = tmp14(tmp(5843).ArrowLargeLeftIcon, obj7);
+    let tmp14Result = tmp14(tmp(5875).ArrowLargeLeftIcon, obj7);
   } else {
     const obj8 = { style: tmp9.cancelText, maxFontSizeMultiplier: 2, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     const intl2 = tmp(1119).intl;
     obj8.children = intl2.string(tmp(1119).t["ETE/oC"]);
-    tmp14Result = tmp14(tmp(4754).Text, obj8);
+    tmp14Result = tmp14(tmp(4786).Text, obj8);
   }
   cResult[5] = tmp9.cancelIcon;
   cResult[6] = tmp9.cancelText;
@@ -168,12 +168,12 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
   obj.hitSlop = { top: 8, right: 8, bottom: 8, left: 8 };
   if (obj2.isAndroid()) {
     const obj3 = { style: tmp2.cancelIcon };
-    let tmp3Result = tmp3(tmp4(5843).ArrowLargeLeftIcon, obj3);
+    let tmp3Result = tmp3(tmp4(5875).ArrowLargeLeftIcon, obj3);
   } else {
     const obj4 = { style: tmp2.cancelText, maxFontSizeMultiplier: 2, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     const intl2 = tmp4(1119).intl;
     obj4.children = intl2.string(tmp4(1119).t["ETE/oC"]);
-    tmp3Result = tmp3(tmp4(4754).Text, obj4);
+    tmp3Result = tmp3(tmp4(4786).Text, obj4);
   }
   obj.children = tmp3Result;
   const tmp3Result2 = hasOwnProperty(Pressables.PressableOpacity, obj);

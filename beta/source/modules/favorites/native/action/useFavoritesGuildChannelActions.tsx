@@ -1,9 +1,9 @@
-// Module ID: 11272
-// Function ID: 11273
+// Module ID: 11308
+// Function ID: 11309
 // Name: useFavoritesGuildChannelActions
-// Dependencies: [502, 2109, 2048, 558, 568, 10606, 2070, 504, 10618, 2]
+// Dependencies: [502, 2109, 2048, 558, 568, 10642, 2070, 504, 10654, 2]
 
-// Module 11272 (useFavoritesGuildChannelActions)
+// Module 11308 (useFavoritesGuildChannelActions)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
@@ -194,6 +194,6 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId, arg1)
   if (tmp7) {
     tmp7 = !isFavoritesGuildSelected;
   }
-  const favoritesBetaTagDismissibleContent = tmp(10618).useFavoritesBetaTagDismissibleContent(tmp7);
+  const favoritesBetaTagDismissibleContent = tmp(10654).useFavoritesBetaTagDismissibleContent(tmp7);
   return { isExperimentEnabled, hasFavoritesAccess: hasAccess, canFavoriteChannel: isFavoritableChannelResult, isChannelInFavorites: stateFromStores, isFavoritesGuild: isFavoritesGuildSelected, channelId: channelId.id, shouldShowBetaTag: favoritesBetaTagDismissibleContent.shouldShowBetaTag, dismissBetaTag: favoritesBetaTagDismissibleContent.dismissBetaTag };
 });

@@ -1,17 +1,17 @@
-// Module ID: 12408
-// Function ID: 12409
+// Module ID: 12444
+// Function ID: 12445
 // Name: ChatInputScrimGradient
-// Dependencies: [19, 17, 21, 558, 568, 4577, 4462, 580, 1096, 5198, 2]
+// Dependencies: [19, 17, 21, 558, 568, 4609, 4494, 580, 1096, 5230, 2]
 
-// Module 12408 (ChatInputScrimGradient)
+// Module 12444 (ChatInputScrimGradient)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
-import useToken from "useToken" /* 4462 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4577 */;
+import useToken from "useToken" /* 4494 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4609 */;
 import noop from "module_19" /* 19 */;
 
-const LinearGradientDefault = tmp6(5198);
+const LinearGradientDefault = tmp6(5230);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
@@ -22,7 +22,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = c.c(23);
   ({ gradientHeight, inline, scrimBase } = arg0);
   const tmp4 = undefined !== inline && inline;
-  const gradientValue = client_themes_ClientThemesUtils.useGradientValue(tmp(4577).GradientPercentage.END);
+  const gradientValue = client_themes_ClientThemesUtils.useGradientValue(tmp(4609).GradientPercentage.END);
   const tmpResult = client_themes_ClientThemesUtils;
   const token = useToken.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWER);
   const tmpResult5 = useToken;

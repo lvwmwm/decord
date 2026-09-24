@@ -1,33 +1,33 @@
-// Module ID: 16633
-// Function ID: 16634
+// Module ID: 16643
+// Function ID: 16644
 // Name: useGuildsBarProps
-// Dependencies: [19, 5496, 4400, 7466, 7467, 14017, 5108, 2109, 2067, 14025, 4580, 5657, 16626, 16623, 21, 16634, 16648, 16649, 16652, 16657, 16683, 16686, 16687, 16688, 16690, 16691, 16692, 16694, 16696, 558, 568, 4462, 580, 1616, 15347, 15356, 15586, 14109, 504, 16698, 16699, 5173, 1482, 16701, 7319, 2]
+// Dependencies: [19, 5528, 4432, 7498, 7499, 14053, 5140, 2109, 2067, 14061, 4612, 5689, 16636, 16633, 21, 16644, 16658, 16659, 16662, 16667, 16693, 16696, 16697, 16698, 16700, 16701, 16702, 16704, 16706, 558, 568, 4494, 580, 1616, 15357, 15366, 15596, 14146, 504, 16708, 16709, 5205, 1482, 16711, 7351, 2]
 
-// Module 16633 (useGuildsBarProps)
+// Module 16643 (useGuildsBarProps)
 import useWindowDimensions from "useWindowDimensions" /* 1482 */;
-import GuildsBarGuildFolderDefault from "GuildsBarGuildFolder" /* 16634 */;
-import GuildsBarPendingGuildFolderDefault from "GuildsBarPendingGuildFolder" /* 16648 */;
-import GuildsBarMessagesDefault from "GuildsBarMessages" /* 16649 */;
-import GuildsBarFavoritesDefault from "GuildsBarFavorites" /* 16652 */;
-import GuildsBarGuildDefault from "GuildsBarGuild" /* 16657 */;
-import GuildsBarDirectMessageDefault from "GuildsBarDirectMessage" /* 16683 */;
-import GuildsBarSeparatorDefault from "GuildsBarSeparator" /* 16686 */;
-import GuildsBarPendingGuildDefault from "GuildsBarPendingGuild" /* 16687 */;
-import GuildsBarGeoRestrictedGuildDefault from "GuildsBarGeoRestrictedGuild" /* 16688 */;
-import GuildsBarFooterWrapperDefault from "GuildsBarFooterWrapper" /* 16690 */;
+import GuildsBarGuildFolderDefault from "GuildsBarGuildFolder" /* 16644 */;
+import GuildsBarPendingGuildFolderDefault from "GuildsBarPendingGuildFolder" /* 16658 */;
+import GuildsBarMessagesDefault from "GuildsBarMessages" /* 16659 */;
+import GuildsBarFavoritesDefault from "GuildsBarFavorites" /* 16662 */;
+import GuildsBarGuildDefault from "GuildsBarGuild" /* 16667 */;
+import GuildsBarDirectMessageDefault from "GuildsBarDirectMessage" /* 16693 */;
+import GuildsBarSeparatorDefault from "GuildsBarSeparator" /* 16696 */;
+import GuildsBarPendingGuildDefault from "GuildsBarPendingGuild" /* 16697 */;
+import GuildsBarGeoRestrictedGuildDefault from "GuildsBarGeoRestrictedGuild" /* 16698 */;
+import GuildsBarFooterWrapperDefault from "GuildsBarFooterWrapper" /* 16700 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
-import LurkingStore from "LurkingStore" /* 4400 */;
-import MessageRequestStore from "MessageRequestStore" /* 7466 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7467 */;
-import GeoRestrictedGuildStore from "GeoRestrictedGuildStore" /* 14017 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5108 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5528 */;
+import LurkingStore from "LurkingStore" /* 4432 */;
+import MessageRequestStore from "MessageRequestStore" /* 7498 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7499 */;
+import GeoRestrictedGuildStore from "GeoRestrictedGuildStore" /* 14053 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5140 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 14025 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
-import SortedGuildStore from "SortedGuildStore" /* 5657 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16626 */;
+import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 14061 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
+import SortedGuildStore from "SortedGuildStore" /* 5689 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16636 */;
 
 const require = globalThis.__r;
 
@@ -449,8 +449,8 @@ function getAnchorIndexFromId(arg0) {
     tmp14 = constants2;
   }
 }
-const GuildsNodeType = fn(5657).GuildsNodeType;
-const GuildsBarConstants = fn(16623);
+const GuildsNodeType = fn(5689).GuildsNodeType;
+const GuildsBarConstants = fn(16633);
 ({ FastListRenderSections: closure_17, useGuildWrapperSize: closure_18 } = GuildsBarConstants);
 const jsx = fn(21).jsx;
 const constants2 = { MESSAGES: "section-messages", FAVORITES: "section-favorites", PENDING_JOIN_REQUESTS: "section-pending-join-requests", LURKING_GUILDS: "section-lurking-guilds", GUEST_GUILDS: "section-guest-guilds", UNREAD_PRIVATE_CHANNELS: "section-private-channels", SEPARATOR: "section-separator", GUILDS: "section-guilds" };
@@ -1161,22 +1161,22 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj = {
           children: items1.map((item) => {
             if ("unavailable-guilds" === item) {
-              return closure_1_19(itemSize(16691), {}, item);
+              return closure_1_19(itemSize(16701), {}, item);
             } else if ("empty-nux" === item) {
-              return closure_1_19(itemSize(16692), {}, item);
+              return closure_1_19(itemSize(16702), {}, item);
             } else if ("create-join-guild" === item) {
-              return closure_1_19(itemSize(16694), {}, item);
+              return closure_1_19(itemSize(16704), {}, item);
             }
           })
         };
         return jsx(GuildsBarFooterWrapperDefault, {
           children: items1.map((item) => {
             if ("unavailable-guilds" === item) {
-              return closure_1_19(itemSize(16691), {}, item);
+              return closure_1_19(itemSize(16701), {}, item);
             } else if ("empty-nux" === item) {
-              return closure_1_19(itemSize(16692), {}, item);
+              return closure_1_19(itemSize(16702), {}, item);
             } else if ("create-join-guild" === item) {
-              return closure_1_19(itemSize(16694), {}, item);
+              return closure_1_19(itemSize(16704), {}, item);
             }
           })
         });

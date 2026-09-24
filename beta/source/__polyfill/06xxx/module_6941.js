@@ -1,26 +1,16 @@
 // Module ID: 6941
 // Function ID: 6942
-// Dependencies: [19, 6926]
-// Exports: useViewRefHandler
+// Dependencies: [19, 17, 6942]
+// Exports: useEnsureGestureHandlerRootView
 
 // Module 6941
+import _mod17 from "module_17" /* 17 */;
 import _mod19 from "module_19" /* 19 */;
-import _modDef6926 from "module_6926" /* 6926 */;
+import _modDef6942 from "module_6942" /* 6942 */;
 
-_mod19.useCallback;
+const use = _mod19.use;
+const Platform = _mod17.Platform;
 
-export const useViewRefHandler = function useViewRefHandler(current, detectorUpdater) {
-  const previousViewTag = current;
-  const items = [current, detectorUpdater];
-  return useCallback((viewRef) => {
-    if (null !== viewRef) {
-      previousViewTag.viewRef = viewRef;
-      if (-1 === previousViewTag.previousViewTag) {
-        tmp.previousViewTag = _modDef6926(tmp.viewRef);
-      }
-      if (!previousViewTag.firstRender) {
-        detectorUpdater(true);
-      }
-    }
-  }, items);
+export const useEnsureGestureHandlerRootView = function useEnsureGestureHandlerRootView() {
+  use(_modDef6942);
 };

@@ -1,13 +1,13 @@
-// Module ID: 11898
-// Function ID: 11899
+// Module ID: 11934
+// Function ID: 11935
 // Name: QuestRewardTile
-// Dependencies: [109, 19, 21, 558, 568, 10575, 10570, 11899, 2]
+// Dependencies: [109, 19, 21, 558, 568, 10611, 10606, 11935, 2]
 
-// Module 11898 (QuestRewardTile)
+// Module 11934 (QuestRewardTile)
 import c from "c" /* 568 */;
-import AssetUtils from "AssetUtils" /* 10570 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 10575 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 11899 */;
+import AssetUtils from "AssetUtils" /* 10606 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 10611 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 11935 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -37,11 +37,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp6 = cResult[3];
   }
   if (cResult[4] !== tmp5) {
-    const questPrimaryReward = tmp(10575).getQuestPrimaryReward(tmp5);
+    const questPrimaryReward = tmp(10611).getQuestPrimaryReward(tmp5);
     cResult[4] = tmp5;
     cResult[5] = questPrimaryReward;
     let tmp10 = questPrimaryReward;
-    const tmpResult = tmp(10575);
+    const tmpResult = tmp(10611);
   } else {
     tmp10 = cResult[5];
   }
@@ -55,8 +55,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = name;
   } else {
     if (cResult[8] !== tmp5) {
-      const tmpResult2 = tmp(10570);
-      const questAsset = tmpResult2.getQuestAsset(tmp5, tmp(10570).QuestAssetType.REWARD, undefined, true);
+      const tmpResult2 = tmp(10606);
+      const questAsset = tmpResult2.getQuestAsset(tmp5, tmp(10606).QuestAssetType.REWARD, undefined, true);
       cResult[8] = tmp5;
       cResult[9] = questAsset;
       let tmp15 = questAsset;

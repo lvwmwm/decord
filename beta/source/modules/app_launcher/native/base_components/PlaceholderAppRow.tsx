@@ -1,19 +1,19 @@
-// Module ID: 12230
-// Function ID: 12231
+// Module ID: 12266
+// Function ID: 12267
 // Name: PlaceholderAppRow
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 12184, 5822, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 12220, 5854, 2]
 
-// Module 12230 (PlaceholderAppRow)
+// Module 12266 (PlaceholderAppRow)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import TableRow from "TableRow" /* 5822 */;
-import usePlaceholderSize from "usePlaceholderSize" /* 12184 */;
+import TableRow from "TableRow" /* 5854 */;
+import usePlaceholderSize from "usePlaceholderSize" /* 12220 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { loadingAppIcon: null, loadingTextPlaceholder: null, loadingTextPlaceholderSmall: null };
 let size = { width: 32, height: 32, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 obj2.loadingAppIcon = size;
@@ -93,7 +93,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj5 = { icon: tmp9, label: tmp15, subLabel: tmp19, subLabelLineClamp: 1, start: tmp4, end: tmp5, onPress: tmp23 };
-      const tmp26 = jsx(tmp(5822).TableRow, { icon: tmp9, label: tmp15, subLabel: tmp19, subLabelLineClamp: 1, start: tmp4, end: tmp5, onPress: tmp23 });
+      const tmp26 = jsx(tmp(5854).TableRow, { icon: tmp9, label: tmp15, subLabel: tmp19, subLabelLineClamp: 1, start: tmp4, end: tmp5, onPress: tmp23 });
       cResult[13] = tmp4;
       cResult[14] = tmp5;
       cResult[15] = tmp9;

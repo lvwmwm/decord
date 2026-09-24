@@ -1,30 +1,30 @@
-// Module ID: 17167
-// Function ID: 17168
+// Module ID: 17177
+// Function ID: 17178
 // Name: GroupDMNitroUpsellBanner
-// Dependencies: [32, 19, 17, 4750, 11713, 21, 580, 4758, 558, 568, 1616, 17168, 4462, 4497, 676, 5187, 5198, 504, 11714, 11711, 11718, 1119, 5188, 8315, 4754, 17169, 2]
+// Dependencies: [32, 19, 17, 4782, 11749, 21, 580, 4790, 558, 568, 1616, 17178, 4494, 4529, 676, 5219, 5230, 504, 11750, 11747, 11754, 1119, 5220, 8347, 4786, 17179, 2]
 
-// Module 17167 (GroupDMNitroUpsellBanner)
+// Module 17177 (GroupDMNitroUpsellBanner)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef676 from "module_676" /* 676 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import spring from "spring" /* 5187 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import _modDef8315 from "module_8315" /* 8315 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11711 */;
-import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 11714 */;
-import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 11718 */;
-import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 17169 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import spring from "spring" /* 5219 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import _modDef8347 from "module_8347" /* 8347 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11747 */;
+import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 11750 */;
+import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 11754 */;
+import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 17179 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const number = fn(11713).MAX_GROUP_DM_NITRO_PARTICIPANTS;
+const number = fn(11749).MAX_GROUP_DM_NITRO_PARTICIPANTS;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const PX_40 = nativeDefault.space.PX_40;
@@ -34,7 +34,7 @@ const PX_24 = nativeDefault.space.PX_24;
 const PX_8 = nativeDefault.space.PX_8;
 const locations = [0, 0.225, 1];
 let closure_17 = { mass: 0.8, stiffness: 400, damping: 32, overshootClamping: true };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { floatingOverlay: { position: "absolute", left: 0, right: 0, bottom: 0 }, floatingContent: { justifyContent: "flex-end" }, floatingBanner: { backgroundColor: "transparent", paddingTop: 0, paddingBottom: nativeDefault.space.PX_16 } };
 let closure_18 = createStyles.createStyles(obj2);
 const __initData = { code: "function GroupDMNitroUpsellBannerTsx1(){const{opacity,translateY}=this.__closure;return{opacity:opacity.get(),transform:[{translateY:translateY.get()}]};}" };
@@ -734,7 +734,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[5] === _location) {
       let tmp13 = cResult[6];
     }
-    const tmp14 = tmp11(11718)(tmp13);
+    const tmp14 = tmp11(11754)(tmp13);
     if (cResult[7] === groupDMNitroAudience) {
       if (cResult[8] === enabled) {
         if (cResult[9] === tmp15) {
@@ -752,11 +752,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             if (cResult[15] !== groupDMNitroAudience) {
               const intl = tmp(1119).intl;
-              const stringResult = intl.string(tmp(11711).getGroupDMNitroCapCTAMessage(groupDMNitroAudience));
+              const stringResult = intl.string(tmp(11747).getGroupDMNitroCapCTAMessage(groupDMNitroAudience));
               cResult[15] = groupDMNitroAudience;
               cResult[16] = stringResult;
               let tmp21 = stringResult;
-              const tmpResult5 = tmp(11711);
+              const tmpResult5 = tmp(11747);
             } else {
               tmp21 = cResult[16];
             }
@@ -774,7 +774,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
                   const intl2 = tmp(1119).intl;
                   obj3.children = intl2.string(tmp(1119).t.KCD0Hp);
-                  const tmp29 = options(tmp(4754).Text, obj3);
+                  const tmp29 = options(tmp(4786).Text, obj3);
                   cResult[21] = tmp29;
                   let tmp27 = tmp29;
                 } else {
@@ -786,7 +786,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   const intl3 = tmp(1119).intl;
                   const obj6 = { number };
                   obj5.children = intl3.formatToPlainString(tmp(1119).t["8o8Zk5"], obj6);
-                  const tmp33 = options(tmp(4754).Text, obj5);
+                  const tmp33 = options(tmp(4786).Text, obj5);
                   cResult[22] = tmp33;
                   let tmp30 = tmp33;
                 } else {
@@ -826,7 +826,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 const obj8 = { showLeadingIcon: false, wrapperStyle: tmp19, trailing: tmp24, children: null };
                 const items1 = [tmp27, tmp30];
                 obj8.children = items1;
-                const tmp36 = v65535(tmp11(17169), obj8);
+                const tmp36 = v65535(tmp11(17179), obj8);
                 cResult[23] = tmp24;
                 cResult[24] = tmp30;
                 cResult[25] = tmp19;
@@ -834,8 +834,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 tmp34 = tmp36;
               }
             }
-            const obj9 = { text: tmp21, size: "sm", variant: "experimental_premium-primary", shiny: tmp23, icon: tmp11(8315), onPress: tmp14 };
-            const tmp26 = options(tmp(5188).Button, obj9);
+            const obj9 = { text: tmp21, size: "sm", variant: "experimental_premium-primary", shiny: tmp23, icon: tmp11(8347), onPress: tmp14 };
+            const tmp26 = options(tmp(5220).Button, obj9);
             cResult[17] = tmp14;
             cResult[18] = tmp21;
             cResult[19] = tmp23;
@@ -855,13 +855,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp19 = tmp20;
       }
     }
-    const tmp17 = tmp(11711).isGroupDMNitroUpsellAudience(groupDMNitroAudience) && memberCount >= recipientLimit && enabled;
+    const tmp17 = tmp(11747).isGroupDMNitroUpsellAudience(groupDMNitroAudience) && memberCount >= recipientLimit && enabled;
     cResult[7] = groupDMNitroAudience;
     cResult[8] = enabled;
     cResult[9] = memberCount >= recipientLimit;
     cResult[10] = tmp17;
     tmp16 = tmp17;
-    const tmpResult6 = tmp(11711);
+    const tmpResult6 = tmp(11747);
   }
   const obj10 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: GroupDMNitroUpsellModel.GroupDMNitroAcquisitionStrategy.MARKETING };
   cResult[4] = groupDMNitroAudience;
@@ -906,7 +906,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp15 = !stateFromStores;
   }
   obj7.shiny = tmp15;
-  obj7.icon = _modDef8315;
+  obj7.icon = _modDef8347;
   obj7.onPress = tmp7Result;
   obj6.trailing = options(components_Button_Button.Button, obj7);
   const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };

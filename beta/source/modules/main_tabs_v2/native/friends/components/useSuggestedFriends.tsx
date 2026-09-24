@@ -1,19 +1,19 @@
-// Module ID: 16385
-// Function ID: 16386
+// Module ID: 16395
+// Function ID: 16396
 // Name: useSuggestedFriends
-// Dependencies: [32, 19, 7903, 12846, 558, 568, 565, 4603, 12, 2]
+// Dependencies: [32, 19, 7935, 12882, 558, 568, 565, 4635, 12, 2]
 
-// Module 16385 (useSuggestedFriends)
+// Module 16395 (useSuggestedFriends)
 import _modDef12 from "module_12" /* 12 */;
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7903 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7935 */;
 
 require = fn;
-const SuggestedFriendSource = fn(12846).SuggestedFriendSource;
+const SuggestedFriendSource = fn(12882).SuggestedFriendSource;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/components/useSuggestedFriends.tsx");
@@ -209,9 +209,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return obj;
       });
       return _modDef12.unionBy(found, mapped, (user) => user.user.id).sort((user, user2) => {
-        const name = added(4603).getName(user.user);
-        const obj = added(4603);
-        return name.localeCompare(added(4603).getName(user2.user));
+        const name = added(4635).getName(user.user);
+        const obj = added(4635);
+        return name.localeCompare(added(4635).getName(user2.user));
       });
     } else {
       return [];

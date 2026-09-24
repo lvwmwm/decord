@@ -1,25 +1,25 @@
-// Module ID: 16646
-// Function ID: 16647
+// Module ID: 16656
+// Function ID: 16657
 // Name: HomeDrawerFolderRow
-// Dependencies: [19, 17, 7877, 2067, 5657, 4939, 4777, 1078, 21, 4758, 558, 568, 504, 10382, 1119, 4754, 16647, 4622, 4619, 2]
+// Dependencies: [19, 17, 7909, 2067, 5689, 4971, 4809, 1078, 21, 4790, 558, 568, 504, 10421, 1119, 4786, 16657, 4654, 4651, 2]
 
-// Module 16646 (HomeDrawerFolderRow)
+// Module 16656 (HomeDrawerFolderRow)
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import BellSlashIcon2 from "BellSlashIcon" /* 10382 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import BellSlashIcon2 from "BellSlashIcon" /* 10421 */;
 import noop from "module_19" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7877 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7909 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import SortedGuildStore from "SortedGuildStore" /* 5657 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
-import VoiceStateStore from "VoiceStateStore" /* 4777 */;
+import SortedGuildStore from "SortedGuildStore" /* 5689 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
+import VoiceStateStore from "VoiceStateStore" /* 4809 */;
 
 require = fn;
 const View = fn(17).View;
 const NOOP = fn(1078).NOOP;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_13 = createStyles.createStyles({ title: { flexDirection: "row", alignItems: "center", gap: 4 }, titleText: { flexShrink: 1 } });
 let ReactCompilerGating = fn(558);
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((folder) => {
@@ -1421,7 +1421,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((folderId) => {
   } else {
     tmp8 = cResult[3];
   }
-  const MobileHomeDrawerExperiment = tmp(4622).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = tmp(4654).MobileHomeDrawerExperiment;
   let tmp10 = null;
   if (null != stateFromStores) {
     tmp10 = null;
@@ -1449,7 +1449,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((folderId) => {
     }
     return guildFolderById;
   });
-  const MobileHomeDrawerExperiment = folderId(4622).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = folderId(4654).MobileHomeDrawerExperiment;
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;

@@ -1,13 +1,13 @@
-// Module ID: 9052
-// Function ID: 9053
+// Module ID: 9084
+// Function ID: 9085
 // Name: HeartIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 9053, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9085, 4493, 2]
 
-// Module 9052 (HeartIcon)
+// Module 9084 (HeartIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod9053 from "module_9053" /* 9053 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9085 from "module_9085" /* 9085 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const HeartIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(9053);
+    const tmpResult = tmp(9085);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const HeartIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9053, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9085, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

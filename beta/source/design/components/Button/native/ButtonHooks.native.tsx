@@ -1,19 +1,19 @@
-// Module ID: 5194
-// Function ID: 5195
+// Module ID: 5226
+// Function ID: 5227
 // Name: ButtonHooks
-// Dependencies: [19, 4758, 558, 568, 4471, 580, 4610, 4462, 4497, 5187, 5191, 5193, 5195, 5190, 4754, 1368, 2]
+// Dependencies: [19, 4790, 558, 568, 4503, 580, 4642, 4494, 4529, 5219, 5223, 5225, 5227, 5222, 4786, 1368, 2]
 
-// Module 5194 (ButtonHooks)
+// Module 5226 (ButtonHooks)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import native from "native" /* 4471 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import shared from "shared" /* 4610 */;
-import spring from "spring" /* 5187 */;
-import Icon from "Icon" /* 5190 */;
-import springPresets from "springPresets" /* 5191 */;
-import useFontScale from "useFontScale" /* 5195 */;
+import useToken from "useToken" /* 4494 */;
+import native from "native" /* 4503 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import shared from "shared" /* 4642 */;
+import spring from "spring" /* 5219 */;
+import Icon from "Icon" /* 5222 */;
+import springPresets from "springPresets" /* 5223 */;
+import useFontScale from "useFontScale" /* 5227 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -136,9 +136,9 @@ function getButtonColorTokens(arg0) {
   }
 }
 let c4 = "rgba(0,0,0,0.001)";
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 const backgroundInactive = createStyles.experimental_createToken(() => "#161CBB");
-createStyles = fn(4758);
+createStyles = fn(4790);
 const backgroundPressed = createStyles.experimental_createToken(() => "#1318A0");
 let ReactCompilerGating = fn(558);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -150,16 +150,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if ("primary" === arg0) {
       const WHITE = nativeDefault.unsafe_rawColors.WHITE;
       if (cResult[0] !== primaryColor) {
-        const obj3 = { base: WHITE, contrastRatio: tmp(4471).WCAGContrastRatios.HighContrastText };
-        const contrastingColor = tmp(4471).getContrastingColor(primaryColor, obj3);
-        const tmpResult = tmp(4471);
-        const darkenColorResult = tmp(4471).darkenColor(contrastingColor, 0.5);
+        const obj3 = { base: WHITE, contrastRatio: tmp(4503).WCAGContrastRatios.HighContrastText };
+        const contrastingColor = tmp(4503).getContrastingColor(primaryColor, obj3);
+        const tmpResult = tmp(4503);
+        const darkenColorResult = tmp(4503).darkenColor(contrastingColor, 0.5);
         cResult[0] = primaryColor;
         cResult[1] = contrastingColor;
         cResult[2] = darkenColorResult;
         let tmp38 = darkenColorResult;
         let tmp37 = contrastingColor;
-        const tmpResult10 = tmp(4471);
+        const tmpResult10 = tmp(4503);
       } else {
         tmp37 = cResult[1];
         tmp38 = cResult[2];
@@ -177,9 +177,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[5] = obj4;
     } else if ("secondary" === arg0) {
       if (cResult[6] !== theme) {
-        const tmpResult11 = tmp(4610);
-        const isThemeLightResult = tmp(4610).isThemeLight(theme);
-        const setColorOpacity2 = tmp(4471).setColorOpacity;
+        const tmpResult11 = tmp(4642);
+        const isThemeLightResult = tmp(4642).isThemeLight(theme);
+        const setColorOpacity2 = tmp(4503).setColorOpacity;
         if (isThemeLightResult) {
           let setColorOpacity2Result = setColorOpacity2("white", 0.72);
         } else {
@@ -187,11 +187,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         cResult[6] = theme;
         cResult[7] = setColorOpacity2Result;
-        const tmpResult12 = tmp(4471);
+        const tmpResult12 = tmp(4503);
       } else if (cResult[8] !== theme) {
-        const tmpResult13 = tmp(4610);
-        const isThemeLightResult1 = tmp(4610).isThemeLight(theme);
-        const setColorOpacity3 = tmp(4471).setColorOpacity;
+        const tmpResult13 = tmp(4642);
+        const isThemeLightResult1 = tmp(4642).isThemeLight(theme);
+        const setColorOpacity3 = tmp(4503).setColorOpacity;
         if (isThemeLightResult1) {
           let setColorOpacity3Result = setColorOpacity3("white", 0.62);
         } else {
@@ -199,7 +199,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         cResult[8] = theme;
         cResult[9] = setColorOpacity3Result;
-        const tmpResult14 = tmp(4471);
+        const tmpResult14 = tmp(4503);
       } else {
         if (cResult[10] === tmp21) {
           if (cResult[11] === tmp26) {
@@ -263,17 +263,17 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp16 = items5;
           }
         }
-        const tmpResult15 = tmp(4610);
-        const isThemeLightResult2 = tmp(4610).isThemeLight(theme);
-        const setColorOpacity = tmp(4471).setColorOpacity;
+        const tmpResult15 = tmp(4642);
+        const isThemeLightResult2 = tmp(4642).isThemeLight(theme);
+        const setColorOpacity = tmp(4503).setColorOpacity;
         if (isThemeLightResult2) {
           let setColorOpacityResult = setColorOpacity(primaryColor, 0.4);
         } else {
           setColorOpacityResult = setColorOpacity("white", 0.1);
         }
-        const tmpResult16 = tmp(4471);
-        const tmpResult17 = tmp(4610);
-        const tmpResult18 = tmp(4471);
+        const tmpResult16 = tmp(4503);
+        const tmpResult17 = tmp(4642);
+        const tmpResult18 = tmp(4503);
         if (isThemeLightResult3) {
           let darkenColorResult1 = tmpResult18.darkenColor(setColorOpacityResult, 0.3);
         } else {
@@ -283,7 +283,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[17] = theme;
         cResult[18] = darkenColorResult1;
         cResult[19] = setColorOpacityResult;
-        isThemeLightResult3 = tmp(4610).isThemeLight(theme);
+        isThemeLightResult3 = tmp(4642).isThemeLight(theme);
       }
     }
   }
@@ -360,7 +360,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_7 = tmp2;
 fn(558);
-createStyles = fn(4758);
+createStyles = fn(4790);
 const styleProperties = createStyles.createStyleProperties(getButtonColorTokens);
 ReactCompilerGating = fn(558);
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -745,33 +745,33 @@ export const useIconSizeStyles = ReactCompilerGating.isReactCompilerEnabled() ? 
   const cResult = c.c(5);
   let BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = arg2;
   if (undefined === arg2) {
-    BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = tmp(5193).BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
+    BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = tmp(5225).BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
   }
   const tmp4 = undefined !== arg1 && arg1;
   const fontScale = useFontScale.useFontScale();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const iconSize = tmp(5190).getIconSize(tmp(5193).MEDIUM_BUTTON_ICON_SIZE);
+    const iconSize = tmp(5222).getIconSize(tmp(5225).MEDIUM_BUTTON_ICON_SIZE);
     cResult[0] = iconSize;
     let first = iconSize;
-    const tmpResult6 = tmp(5190);
+    const tmpResult6 = tmp(5222);
   } else {
     first = cResult[0];
   }
   if ("sm" === size) {
     const _Symbol = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-      const iconSize1 = tmp(5190).getIconSize(tmp(5193).SMALL_BUTTON_ICON_SIZE);
+      const iconSize1 = tmp(5222).getIconSize(tmp(5225).SMALL_BUTTON_ICON_SIZE);
       cResult[1] = iconSize1;
-      const tmpResult7 = tmp(5190);
+      const tmpResult7 = tmp(5222);
     }
   } else {
     if ("lg" === size) {
       const _Symbol2 = Symbol;
       if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-        const iconSize2 = tmp(5190).getIconSize(tmp(5193).LARGE_BUTTON_ICON_SIZE);
+        const iconSize2 = tmp(5222).getIconSize(tmp(5225).LARGE_BUTTON_ICON_SIZE);
         cResult[2] = iconSize2;
         let tmp8 = iconSize2;
-        const tmpResult8 = tmp(5190);
+        const tmpResult8 = tmp(5222);
       } else {
         tmp8 = cResult[2];
       }
@@ -781,8 +781,8 @@ export const useIconSizeStyles = ReactCompilerGating.isReactCompilerEnabled() ? 
     if (tmp4) {
       bound = first;
       if (fontScale > 1) {
-        const tmpResult9 = tmp(5193);
-        const tmp17 = tmp(4754).TextStyleSheet[tmpResult9.getButtonDefaultTextVariant(tmpResult9, size)];
+        const tmpResult9 = tmp(5225);
+        const tmp17 = tmp(4786).TextStyleSheet[tmpResult9.getButtonDefaultTextVariant(tmpResult9, size)];
         const tmp14 = tmp(1368).isAndroid() ? tmp17.fontSize : tmp17.lineHeight;
         bound = first;
         if (null != first) {
@@ -821,21 +821,21 @@ export const useIconSizeStyles = ReactCompilerGating.isReactCompilerEnabled() ? 
   return fontScale.useMemo(() => {
     Icon;
     if ("sm" === closure_0) {
-      let iconSize = tmp(5190).getIconSize(tmp(5193).SMALL_BUTTON_ICON_SIZE);
-      const tmpResult = tmp(5190);
+      let iconSize = tmp(5222).getIconSize(tmp(5225).SMALL_BUTTON_ICON_SIZE);
+      const tmpResult = tmp(5222);
     } else {
       iconSize = tmp4;
       if ("lg" === tmp5) {
-        iconSize = tmp(5190).getIconSize(tmp(5193).LARGE_BUTTON_ICON_SIZE);
-        const tmpResult4 = tmp(5190);
+        iconSize = tmp(5222).getIconSize(tmp(5225).LARGE_BUTTON_ICON_SIZE);
+        const tmpResult4 = tmp(5222);
       }
     }
     let width = iconSize;
     if (flag) {
       width = iconSize;
       if (fontScale > 1) {
-        const tmpResult5 = tmp(5193);
-        const tmp13 = tmp(4754).TextStyleSheet[tmpResult5.getButtonDefaultTextVariant(tmpResult5, tmp5)];
+        const tmpResult5 = tmp(5225);
+        const tmp13 = tmp(4786).TextStyleSheet[tmpResult5.getButtonDefaultTextVariant(tmpResult5, tmp5)];
         const tmp9 = tmp(1368).isAndroid() ? tmp13.fontSize : tmp13.lineHeight;
         width = iconSize;
         if (null != iconSize) {

@@ -1,27 +1,27 @@
-// Module ID: 8901
-// Function ID: 8902
+// Module ID: 8933
+// Function ID: 8934
 // Name: StageBlockedUsersActionSheet
-// Dependencies: [32, 19, 17, 4409, 5640, 5633, 21, 4758, 580, 558, 568, 504, 1119, 1181, 8902, 4754, 4725, 8903, 5188, 7371, 7319, 7397, 2]
+// Dependencies: [32, 19, 17, 4441, 5672, 5665, 21, 4790, 580, 558, 568, 504, 1119, 1181, 8934, 4786, 4757, 8935, 5220, 7403, 7351, 7429, 2]
 
-// Module 8901 (StageBlockedUsersActionSheet)
+// Module 8933 (StageBlockedUsersActionSheet)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5640 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5672 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_8 = fn(5633).STAGE_BLOCKED_USERS_SHEET_KEY;
+let closure_8 = fn(5665).STAGE_BLOCKED_USERS_SHEET_KEY;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { paddingHorizontal: 16 }, header: { padding: 16 }, title: { marginTop: 16, marginBottom: 8, textAlign: "center" }, description: { textAlign: "center", marginBottom: 16 }, buttons: { width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16, paddingVertical: 8 }, userContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "flex-start", marginVertical: 8, width: "100%" }, avatarContainer: { position: "relative", padding: 8, paddingTop: 0, paddingBottom: 4, marginEnd: 12 }, avatar: { opacity: 0.5 }, iconContainer: null, icon: null, flex: null, blocked: null, ignored: null };
 let size = { position: "absolute", top: -4, right: 4, height: 16, width: 16, alignItems: "center", justifyContent: "center", borderRadius: 8, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
 obj2.iconContainer = size;
@@ -149,7 +149,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const obj2 = { style: null, children: null };
             const items2 = [tmp4.iconContainer];
             obj2.style = items2;
-            const obj3 = { style: tmp4.icon, source: user(8902), color: user(580).unsafe_rawColors.WHITE };
+            const obj3 = { style: tmp4.icon, source: user(8934), color: user(580).unsafe_rawColors.WHITE };
             obj2.children = closure_9(tmp(1181).Icon, obj3);
             tmp24 = closure_9(View, obj2);
           }
@@ -206,7 +206,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj6 = { style: null, children: null };
     const items3 = [tmp.iconContainer];
     obj6.style = items3;
-    const obj7 = { style: tmp.icon, source: user(8902), color: user(580).unsafe_rawColors.WHITE };
+    const obj7 = { style: tmp.icon, source: user(8934), color: user(580).unsafe_rawColors.WHITE };
     obj6.children = tmp11(tmp2(1181).Icon, obj7);
     speaker = tmp11(tmp10, obj6);
   }
@@ -223,7 +223,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj10 = { variant: "text-sm/medium", color: "text-default", children: null };
     const items6 = ["#", participant.user.discriminator];
     obj10.children = items6;
-    tmp9Result = tmp9(tmp2(4754).Text, obj10);
+    tmp9Result = tmp9(tmp2(4786).Text, obj10);
   }
   items5[1] = tmp9Result;
   obj8.children = items5;
@@ -271,7 +271,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[1] !== tmp4.title) {
         const obj2 = { style: title2, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: first };
-        const tmp38 = options(tmp(4754).Text, obj2);
+        const tmp38 = options(tmp(4786).Text, obj2);
         cResult[1] = tmp4.title;
         cResult[2] = tmp38;
         let tmp36 = tmp38;
@@ -289,7 +289,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[4] !== tmp4.description) {
         const obj3 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: tmp39 };
-        const tmp43 = options(tmp(4754).Text, obj3);
+        const tmp43 = options(tmp(4786).Text, obj3);
         cResult[4] = tmp4.description;
         cResult[5] = tmp43;
         let tmp41 = tmp43;
@@ -364,14 +364,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp29 = tmp32;
       }
       const obj8 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: tmp24 };
-      const tmp28 = options(tmp(4754).Text, obj8);
+      const tmp28 = options(tmp(4786).Text, obj8);
       cResult[17] = tmp4.description;
       cResult[18] = tmp24;
       cResult[19] = tmp28;
       tmp26 = tmp28;
     }
     const obj9 = { style: title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp19 };
-    const tmp23 = options(tmp(4754).Text, obj9);
+    const tmp23 = options(tmp(4786).Text, obj9);
     cResult[12] = tmp4.title;
     cResult[13] = tmp19;
     cResult[14] = tmp23;
@@ -425,14 +425,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp15 = tmp18;
       }
       const obj13 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: tmp10 };
-      const tmp14 = options(tmp(4754).Text, obj13);
+      const tmp14 = options(tmp(4786).Text, obj13);
       cResult[31] = tmp4.description;
       cResult[32] = tmp10;
       cResult[33] = tmp14;
       tmp12 = tmp14;
     }
     const obj14 = { style: title3, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp5 };
-    const tmp9 = options(tmp(4754).Text, obj14);
+    const tmp9 = options(tmp(4786).Text, obj14);
     cResult[26] = tmp4.title;
     cResult[27] = tmp5;
     cResult[28] = tmp9;
@@ -500,7 +500,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   [r10020, dependencyMap] = onPress(arr4.useState(0), 2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function s() {
-      onAccept(4725).hideActionSheet(closure_1_8);
+      onAccept(4757).hideActionSheet(closure_1_8);
     };
     cResult[0] = fn;
     onPress = fn;
@@ -511,9 +511,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     if (cResult[2] === onAccept) {
       let tmp7 = cResult[3];
     }
-    const stageBlockedUsers = tmp(8903).useStageBlockedUsers(channel.id);
-    const tmpResult = tmp(8903);
-    const stageIgnoredUsers = tmp(8903).useStageIgnoredUsers(channel.id);
+    const stageBlockedUsers = tmp(8935).useStageBlockedUsers(channel.id);
+    const tmpResult = tmp(8935);
+    const stageIgnoredUsers = tmp(8935).useStageIgnoredUsers(channel.id);
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       class E {
@@ -559,7 +559,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
       }
       const obj2 = { text: tmp9, onPress: tmp7 };
-      const tmp12 = closure_9(tmp(5188).Button, obj2);
+      const tmp12 = closure_9(tmp(5220).Button, obj2);
       cResult[6] = tmp7;
       cResult[7] = tmp12;
     } else {
@@ -582,7 +582,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       const intl = tmp(1119).intl;
       obj3.text = intl.string(tmp(1119).t.CZGqeT);
       obj3.onPress = onPress;
-      const tmp14 = closure_9(tmp(5188).Button, obj3);
+      const tmp14 = closure_9(tmp(5220).Button, obj3);
       cResult[8] = tmp14;
       const tmp13 = tmp14;
     } else {
@@ -643,7 +643,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             class Z {
               constructor(arg0, arg1) {
                 obj = { participant: closure_4[arg1], guildId: channel.getGuildId(), channelId: channel.id };
-                return jsx(f47719, obj);
+                return jsx(f47762, obj);
               }
             }
             if (tmp29 === Symbol.for("react.memo_cache_sentinel")) {
@@ -657,7 +657,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               class Z {
                 constructor(arg0, arg1) {
                   obj = { participant: closure_4[arg1], guildId: channel.getGuildId(), channelId: channel.id };
-                  return jsx(f47719, obj);
+                  return jsx(f47762, obj);
                 }
               }
               cResult[22] = stringResult1;
@@ -681,7 +681,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               class Z {
                 constructor(arg0, arg1) {
                   obj = { participant: closure_4[arg1], guildId: channel.getGuildId(), channelId: channel.id };
-                  return jsx(f47719, obj);
+                  return jsx(f47762, obj);
                 }
               }
               cResult[24] = tmp33;
@@ -702,7 +702,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               }
             }
             const obj5 = { inActionSheet: true, contentContainerStyle: tmp4.container, accessibilityLabel: tmp30, sections: tmp32, renderItem: tmp25, itemSize: tmp18 };
-            const tmp37 = closure_9(onAccept(7319), obj5);
+            const tmp37 = closure_9(onAccept(7351), obj5);
             cResult[25] = tmp25;
             cResult[26] = tmp4.container;
             cResult[27] = tmp32;
@@ -711,7 +711,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           class Z {
             constructor(arg0, arg1) {
               obj = { participant: closure_4[arg1], guildId: channel.getGuildId(), channelId: channel.id };
-              return jsx(f47719, obj);
+              return jsx(f47762, obj);
             }
           }
           const obj6 = { blockedUserCount: length, ignoredUserCount: length2 };
@@ -723,7 +723,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         class Z {
           constructor(arg0, arg1) {
             obj = { participant: closure_4[arg1], guildId: channel.getGuildId(), channelId: channel.id };
-            return jsx(f47719, obj);
+            return jsx(f47762, obj);
           }
         }
         cResult[16] = channel;
@@ -750,7 +750,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     cResult[9] = tmp4.buttons;
     cResult[10] = tmp11;
     cResult[11] = tmp17;
-    const tmpResult2 = tmp(8903);
+    const tmpResult2 = tmp(8935);
   }
   class R {
     constructor() {
@@ -770,9 +770,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmp = closure_11();
   const tmp2 = items1(noop.useState(0), 2);
   dependencyMap = tmp2[1];
-  const stageBlockedUsers = channel(8903).useStageBlockedUsers(channel.id);
-  const obj = channel(8903);
-  const stageIgnoredUsers = channel(8903).useStageIgnoredUsers(channel.id);
+  const stageBlockedUsers = channel(8935).useStageBlockedUsers(channel.id);
+  const obj = channel(8935);
+  const stageIgnoredUsers = channel(8935).useStageIgnoredUsers(channel.id);
   const callback = noop.useCallback((nativeEvent) => {
     dependencyMap(nativeEvent.nativeEvent.layout.height);
   }, []);
@@ -784,21 +784,21 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     onAccept(channel);
     ActionSheetActionCreatorsDefault.hideActionSheet(closure_8);
   };
-  const items = [closure_9(channel(5188).Button, obj4), ];
+  const items = [closure_9(channel(5220).Button, obj4), ];
   const obj5 = { variant: "secondary", text: null, onPress: null };
   const intl2 = channel(1119).intl;
   obj5.text = intl2.string(channel(1119).t.CZGqeT);
   obj5.onPress = function handleDismiss() {
-    onAccept(4725).hideActionSheet(closure_1_8);
+    onAccept(4757).hideActionSheet(closure_1_8);
   };
-  items[1] = closure_9(channel(5188).Button, obj5);
+  items[1] = closure_9(channel(5220).Button, obj5);
   obj3.children = items;
   items1 = [];
-  const obj2 = channel(8903);
+  const obj2 = channel(8935);
   HermesBuiltin.arraySpread(stageIgnoredUsers, HermesBuiltin.arraySpread(stageBlockedUsers, 0));
-  const obj6 = { scrollable: true, header: closure_9(closure_13, { blockedUserCount: stageBlockedUsers.length, ignoredUserCount: stageIgnoredUsers.length }), footer: closure_10(channel(7371).SafeAreaPaddingView, obj3), children: null };
+  const obj6 = { scrollable: true, header: closure_9(closure_13, { blockedUserCount: stageBlockedUsers.length, ignoredUserCount: stageIgnoredUsers.length }), footer: closure_10(channel(7403).SafeAreaPaddingView, obj3), children: null };
   const obj7 = { inActionSheet: true, contentContainerStyle: tmp.container, accessibilityLabel: null, sections: null, renderItem: null, itemSize: null };
-  const tmp4 = closure_10(channel(7371).SafeAreaPaddingView, obj3);
+  const tmp4 = closure_10(channel(7403).SafeAreaPaddingView, obj3);
   const intl3 = channel(1119).intl;
   obj7.accessibilityLabel = intl3.string(channel(1119).t["3VoRLH"]);
   const items2 = [items1.length];
@@ -809,7 +809,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   obj7.itemSize = function itemSize() {
     return 48;
   };
-  const items3 = [closure_9(onAccept(7319), obj7), closure_9(View, { style: { height: tmp2[0] } })];
+  const items3 = [closure_9(onAccept(7351), obj7), closure_9(View, { style: { height: tmp2[0] } })];
   obj6.children = items3;
-  return closure_10(channel(7397).BottomSheet, obj6);
+  return closure_10(channel(7429).BottomSheet, obj6);
 });

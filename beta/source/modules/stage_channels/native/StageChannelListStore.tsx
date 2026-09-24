@@ -1,11 +1,11 @@
-// Module ID: 10299
-// Function ID: 10300
+// Module ID: 10338
+// Function ID: 10339
 // Name: StageChannelListStore
-// Dependencies: [32, 19, 1247, 1252, 558, 568, 4383, 2]
+// Dependencies: [32, 19, 1247, 1252, 558, 568, 4415, 2]
 
-// Module 10299 (StageChannelListStore)
+// Module 10338 (StageChannelListStore)
 import c from "c" /* 568 */;
-import _mod4383 from "module_4383" /* 4383 */;
+import _mod4415 from "module_4415" /* 4415 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     first = cResult[0];
   }
-  const tmp5 = _slicedToArray(closure_4(first, _mod4383.shallow), 2);
+  const tmp5 = _slicedToArray(closure_4(first, _mod4415.shallow), 2);
   const first1 = tmp5[0];
   closure_1 = tmp7;
   if (cResult[1] !== tmp5[1]) {
@@ -96,7 +96,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const items = [, ];
     ({ listRef: arr[0], setListRef: arr[1] } = arg0);
     return items;
-  }, _mod4383.shallow), 2);
+  }, _mod4415.shallow), 2);
   const first = tmp[0];
   closure_1 = tmp3;
   let items = [tmp[1]];
@@ -131,9 +131,9 @@ export const useActiveSpeakerPillState = ReactCompilerGating.isReactCompilerEnab
   } else {
     first = cResult[0];
   }
-  return closure_4(first, _mod4383.shallow);
+  return closure_4(first, _mod4415.shallow);
 }) : (() => closure_4((arg0) => {
   const items = [, ];
   ({ showActiveSpeakerPill: arr[0], setShowActiveSpeakerPill: arr[1] } = arg0);
   return items;
-}, _mod4383.shallow));
+}, _mod4415.shallow));

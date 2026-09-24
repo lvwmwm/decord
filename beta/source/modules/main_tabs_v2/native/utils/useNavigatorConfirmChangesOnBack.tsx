@@ -1,10 +1,10 @@
-// Module ID: 11226
-// Function ID: 11227
+// Module ID: 11262
+// Function ID: 11263
 // Name: useNavigatorConfirmChangesOnBack
-// Dependencies: [19, 17, 1078, 558, 568, 11227, 11228, 2]
+// Dependencies: [19, 17, 1078, 558, 568, 11263, 11264, 2]
 
-// Module 11226 (useNavigatorConfirmChangesOnBack)
-import useNavigatorBackHandlerDefault from "useNavigatorBackHandler" /* 11228 */;
+// Module 11262 (useNavigatorConfirmChangesOnBack)
+import useNavigatorBackHandlerDefault from "useNavigatorBackHandler" /* 11264 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

@@ -1,17 +1,17 @@
-// Module ID: 5718
-// Function ID: 5719
+// Module ID: 5750
+// Function ID: 5751
 // Name: IAPEligibility
-// Dependencies: [19, 2067, 1078, 1368, 5719, 558, 568, 565, 2]
+// Dependencies: [19, 2067, 1078, 1368, 5751, 558, 568, 565, 2]
 // Exports: canUseRoleSubscriptionIAP
 
-// Module 5718 (IAPEligibility)
+// Module 5750 (IAPEligibility)
 import PlatformUtils from "PlatformUtils" /* 1368 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
 const require = globalThis.__r;
 
-const getSystemVersion = tmp(5719);
+const getSystemVersion = tmp(5751);
 require = fn;
 let c4 = "13.2";
 let items = [fn(1078).GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE];
@@ -83,7 +83,7 @@ export const useCanUseRoleSubscriptionIAP = ReactCompilerGating.isReactCompilerE
   _require = arg0;
   const cResult = require("c").c(5);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const str = tmp(5719).getSystemVersion();
+    const str = tmp(5751).getSystemVersion();
     let tmp6 = null != str;
     if (tmp6) {
       const parts = str.split(".");
@@ -128,7 +128,7 @@ export const useCanUseRoleSubscriptionIAP = ReactCompilerGating.isReactCompilerE
     }
     cResult[0] = tmp6;
     let first = tmp6;
-    const tmpResult = tmp(5719);
+    const tmpResult = tmp(5751);
   } else {
     first = cResult[0];
   }
@@ -176,7 +176,7 @@ export const useCanUseRoleSubscriptionIAP = ReactCompilerGating.isReactCompilerE
 }) : ((arg0) => {
   _require = arg0;
   const memo = noop.useMemo(() => {
-    const str = closure_0(5719).getSystemVersion();
+    const str = closure_0(5751).getSystemVersion();
     let tmp = null != str;
     if (tmp) {
       const parts = str.split(".");

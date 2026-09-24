@@ -1,19 +1,19 @@
-// Module ID: 16607
-// Function ID: 16608
+// Module ID: 16617
+// Function ID: 16618
 // Name: OneColumnGuildUpsellList
-// Dependencies: [32, 19, 15889, 21, 4758, 9046, 1253, 558, 568, 1489, 504, 7409, 7429, 16608, 8995, 2]
+// Dependencies: [32, 19, 15899, 21, 4790, 9078, 1253, 558, 568, 1489, 504, 7441, 7461, 16618, 9027, 2]
 
-// Module 16607 (OneColumnGuildUpsellList)
-import GameCommunityMultiGuildUpsellCardDefault from "GameCommunityMultiGuildUpsellCard" /* 16608 */;
+// Module 16617 (OneColumnGuildUpsellList)
+import GameCommunityMultiGuildUpsellCardDefault from "GameCommunityMultiGuildUpsellCard" /* 16618 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15889 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15899 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
 const viewabilityConfig = { itemVisiblePercentThreshold: 50, minimumViewTime: 500 };
 let c8 = 0;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ hidden: { opacity: 0 } });
 let ReactCompilerGating = fn(558);
 let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {

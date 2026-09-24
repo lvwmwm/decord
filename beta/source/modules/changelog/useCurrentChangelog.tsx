@@ -1,15 +1,15 @@
-// Module ID: 8355
-// Function ID: 8356
+// Module ID: 8387
+// Function ID: 8388
 // Name: useCurrentChangelog
-// Dependencies: [19, 2113, 4772, 2098, 558, 568, 565, 8356, 2]
+// Dependencies: [19, 2113, 4804, 2098, 558, 568, 565, 8388, 2]
 
-// Module 8355 (useCurrentChangelog)
+// Module 8387 (useCurrentChangelog)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8356 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8388 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
-import ChangelogStore from "ChangelogStore" /* 4772 */;
+import ChangelogStore from "ChangelogStore" /* 4804 */;
 
 require = fn;
 const ChangelogLoadState = fn(2098).ChangelogLoadState;

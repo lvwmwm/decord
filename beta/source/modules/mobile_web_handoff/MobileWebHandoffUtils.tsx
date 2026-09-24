@@ -1,9 +1,9 @@
-// Module ID: 7563
-// Function ID: 7564
+// Module ID: 7595
+// Function ID: 7596
 // Name: MobileWebHandoffUtils
 // Dependencies: [5, 1078, 1259, 1275, 2]
 
-// Module 7563 (MobileWebHandoffUtils)
+// Module 7595 (MobileWebHandoffUtils)
 import v1 from "v1" /* 1259 */;
 import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

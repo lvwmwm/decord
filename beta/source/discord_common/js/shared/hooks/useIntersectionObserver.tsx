@@ -1,12 +1,12 @@
-// Module ID: 7937
-// Function ID: 7938
+// Module ID: 7969
+// Function ID: 7970
 // Name: useIntersectionObserver
-// Dependencies: [19, 558, 568, 7938, 7939, 2]
+// Dependencies: [19, 558, 568, 7970, 7971, 2]
 
-// Module 7937 (useIntersectionObserver)
+// Module 7969 (useIntersectionObserver)
 import c from "c" /* 568 */;
-import useConstRefDefault from "useConstRef" /* 7938 */;
-import InteractionObserverUtils from "InteractionObserverUtils" /* 7939 */;
+import useConstRefDefault from "useConstRef" /* 7970 */;
+import InteractionObserverUtils from "InteractionObserverUtils" /* 7971 */;
 import noop from "module_19" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -105,7 +105,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   if (arg1 == null) {
     tmp4 = closure_7;
   }
-  const tmp3Result = flag(7938)(tmp4);
+  const tmp3Result = flag(7970)(tmp4);
   ref2 = tmp3Result;
   closure_5(null);
   const items = [flag, arg0, tmp3Result];
@@ -190,7 +190,7 @@ export const useIsVisible = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     flag = true;
   }
   const items = [num];
-  return closure_8(num(7938)((isIntersecting) => {
+  return closure_8(num(7970)((isIntersecting) => {
     closure_0(isIntersecting.isIntersecting);
   }).current, closure_4(() => {
     value = map.get(num);

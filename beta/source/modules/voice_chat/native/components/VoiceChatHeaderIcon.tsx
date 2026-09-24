@@ -1,32 +1,32 @@
-// Module ID: 10254
-// Function ID: 10255
+// Module ID: 10293
+// Function ID: 10294
 // Name: VoiceChatHeaderIcon
-// Dependencies: [19, 17, 4773, 1078, 21, 4758, 580, 5897, 558, 568, 504, 12, 10161, 4471, 1181, 5341, 2]
+// Dependencies: [19, 17, 4805, 1078, 21, 4790, 580, 5929, 558, 568, 504, 12, 10200, 4503, 1181, 5373, 2]
 
-// Module 10254 (VoiceChatHeaderIcon)
+// Module 10293 (VoiceChatHeaderIcon)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import native2 from "native" /* 4471 */;
-import Pressables from "Pressables" /* 5341 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 10161 */;
+import native2 from "native" /* 4503 */;
+import Pressables from "Pressables" /* 5373 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 10200 */;
 import noop from "module_19" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 4773 */;
+import ReadStateStore from "ReadStateStore" /* 4805 */;
 
 require = fn;
 const View = fn(17).View;
 const ThemeTypes = fn(1078).ThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { headerButton: null, disabledOpacity: null, chatIconContainer: null, chatIcon: null, badge: null };
 let size = { width: 32, height: 32, borderRadius: nativeDefault.radii.lg, alignSelf: "center", padding: 6, backgroundColor: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
 obj2.headerButton = size;
 obj2.disabledOpacity = { opacity: 0.6 };
-obj2.chatIconContainer = { marginRight: 12, height: fn(5897).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center" };
+obj2.chatIconContainer = { marginRight: 12, height: fn(5929).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center" };
 obj2.chatIcon = { marginHorizontal: 0, width: 32, height: 32 };
-let obj3 = { marginRight: 12, height: fn(5897).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center" };
+let obj3 = { marginRight: 12, height: fn(5929).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center" };
 obj2.badge = { backgroundColor: nativeDefault.colors.ICON_STRONG };
 let closure_8 = createStyles.createStyles(obj2);
 fn(558);
@@ -175,7 +175,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj2 = { disabled, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel, onPress, style: tmp5, children: null };
       const items = [tmp6, children];
       obj2.children = items;
-      const tmp11 = React5(tmp(5341).PressableOpacity, obj2);
+      const tmp11 = React5(tmp(5373).PressableOpacity, obj2);
       cResult[6] = accessibilityLabel;
       cResult[7] = children;
       cResult[8] = disabled;

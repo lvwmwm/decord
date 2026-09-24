@@ -1,15 +1,15 @@
-// Module ID: 11710
-// Function ID: 11711
+// Module ID: 11746
+// Function ID: 11747
 // Name: openGroupDMAddMembers
-// Dependencies: [2045, 1376, 11711, 11712, 11714, 11715, 4457, 4616, 2]
+// Dependencies: [2045, 1376, 11747, 11748, 11750, 11751, 4489, 4648, 2]
 // Exports: default, showGroupDMAddMembersRoadblock
 
-// Module 11710 (openGroupDMAddMembers)
-import ToastUtils from "ToastUtils" /* 4457 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4616 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11711 */;
-import getGroupDMRecipientLimitDefault from "getGroupDMRecipientLimit" /* 11712 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11715 */;
+// Module 11746 (openGroupDMAddMembers)
+import ToastUtils from "ToastUtils" /* 4489 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4648 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11747 */;
+import getGroupDMRecipientLimitDefault from "getGroupDMRecipientLimit" /* 11748 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11751 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -44,7 +44,7 @@ function getGroupDMAddMembersAction(id, CHANNEL_TEXT_AREA) {
       obj.audience = GroupDMNitroUpsellModel.getGroupDMNitroAudience(premiumType, flag);
       const tmp2Result = GroupDMNitroUpsellModel;
       const obj2 = { location: CHANNEL_TEXT_AREA };
-      obj.showUpsell = tmp4(11714).getConfig(obj2).enabled;
+      obj.showUpsell = tmp4(11750).getConfig(obj2).enabled;
       return obj3.getGroupDMAddMembersEntryAction(obj);
     }
   }

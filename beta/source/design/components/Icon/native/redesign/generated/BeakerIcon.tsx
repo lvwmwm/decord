@@ -1,13 +1,13 @@
-// Module ID: 15852
-// Function ID: 15853
+// Module ID: 15862
+// Function ID: 15863
 // Name: BeakerIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 15853, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 15863, 4493, 2]
 
-// Module 15852 (BeakerIcon)
+// Module 15862 (BeakerIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod15853 from "module_15853" /* 15853 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod15863 from "module_15863" /* 15863 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const BeakerIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(15853);
+    const tmpResult = tmp(15863);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const BeakerIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15853, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15863, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

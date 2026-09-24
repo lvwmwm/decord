@@ -1,18 +1,18 @@
-// Module ID: 11301
-// Function ID: 11302
+// Module ID: 11337
+// Function ID: 11338
 // Name: ActionSheetIconHeader
-// Dependencies: [19, 17, 21, 4758, 558, 568, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 4786, 2]
 
-// Module 11301 (ActionSheetIconHeader)
+// Module 11337 (ActionSheetIconHeader)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ container: { paddingVertical: 0, flexDirection: "row", alignItems: "center", gap: 12 }, titles: { justifyContent: "center", flex: 1 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -33,7 +33,7 @@ export const ActionSheetIconHeader = ReactCompilerGating.isReactCompilerEnabled(
   }
   if (cResult[2] !== title) {
     const obj3 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", lineClamp: 2, children: title };
-    const tmp11 = React3(tmp(4754).Text, obj3);
+    const tmp11 = React3(tmp(4786).Text, obj3);
     cResult[2] = title;
     cResult[3] = tmp11;
     let tmp9 = tmp11;
@@ -44,7 +44,7 @@ export const ActionSheetIconHeader = ReactCompilerGating.isReactCompilerEnabled(
     let tmp13 = null;
     if (null != subtitle) {
       const obj4 = { variant: "text-xs/medium", color: "text-default", children: subtitle };
-      tmp13 = React3(tmp(4754).Text, obj4);
+      tmp13 = React3(tmp(4786).Text, obj4);
     }
     cResult[4] = subtitle;
     cResult[5] = tmp13;

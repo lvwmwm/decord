@@ -1,12 +1,12 @@
-// Module ID: 13359
-// Function ID: 13360
+// Module ID: 13395
+// Function ID: 13396
 // Name: GameRelationshipStoreHooks
-// Dependencies: [32, 7899, 1078, 558, 568, 504, 5651, 2]
+// Dependencies: [32, 7931, 1078, 558, 568, 504, 5683, 2]
 // Exports: useGameFriendsForUser, useIncomingGameRelationshipsForUser
 
-// Module 13359 (GameRelationshipStoreHooks)
+// Module 13395 (GameRelationshipStoreHooks)
 import _slicedToArray from "module_32" /* 32 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7899 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7931 */;
 
 const require = globalThis.__r;
 
@@ -31,7 +31,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => 
       let tmp7 = cResult[4];
     }
     const tmpResult = tmp(504);
-    return _slicedToArray(tmpResult.useStateFromStores(first, tmp6, tmp7, tmp(5651).isVersionEqual), 1)[0];
+    return _slicedToArray(tmpResult.useStateFromStores(first, tmp6, tmp7, tmp(5683).isVersionEqual), 1)[0];
   }
   const fn = function u() {
     const items = [GameRelationshipStore.getGameRelationshipsForUserByType(closure_0, closure_1), GameRelationshipStore.getGameRelationshipsVersion()];
@@ -160,7 +160,7 @@ export const useHasGameRelationshipsForUserByType = ReactCompilerGating.isReactC
       let tmp7 = cResult[4];
     }
     const tmpResult = tmp(504);
-    return _slicedToArray(tmpResult.useStateFromStores(first, tmp6, tmp7, tmp(5651).isVersionEqual), 1)[0];
+    return _slicedToArray(tmpResult.useStateFromStores(first, tmp6, tmp7, tmp(5683).isVersionEqual), 1)[0];
   }
   const fn = function u() {
     const gameRelationshipsForUserByType = GameRelationshipStore.getGameRelationshipsForUserByType(closure_0, closure_1);

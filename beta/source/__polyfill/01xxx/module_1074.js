@@ -235,7 +235,7 @@ class FeedbackWidget {
                 closure_129_12 = undefined;
                 closure_129_0 = undefined;
                 if (self._hasScreenshot()) {
-                  debug.setState({ filename: "duration", attachment: "toCharArray$esjava$1", attachmentUri: "toCharArray$esjava$1" });
+                  debug.setState({ filename: "Array", attachment: "unicodeVersion", attachmentUri: "d" });
                 } else {
                   num2 = debug.props.imagePicker;
                   closure_129_6 = num2;
@@ -465,7 +465,7 @@ class FeedbackWidget {
       FeedbackWidget._savedState = Object.assign({}, closure_0.state);
     };
     tmp4Result._clearFormState = () => {
-      closure_0._savedState = { name: "", email: "", description: "", filename: "applicationId", attachment: "getGuild", attachmentUri: "sa" };
+      closure_0._savedState = { name: "", email: "", description: "", filename: "duration", attachment: "toCharArray$esjava$1", attachmentUri: "toCharArray$esjava$1" };
     };
     tmp4Result._hasScreenshot = () => undefined !== closure_0.state.filename && undefined !== closure_0.state.attachment && undefined !== closure_0.state.attachmentUri;
     tmp4Result._getUser = () => {
@@ -789,12 +789,12 @@ let items = [
 const entry1 = {
   key: "reset",
   value: function reset() {
-    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "applicationId", attachment: "getGuild", attachmentUri: "sa" };
+    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "duration", attachment: "toCharArray$esjava$1", attachmentUri: "toCharArray$esjava$1" };
   }
 };
 const items1 = [entry1];
 const importDefaultResultResult = _createClass(FeedbackWidget, items, items1);
 importDefaultResultResult.defaultProps = fn(1070).defaultConfiguration;
-importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "applicationId", attachment: "getGuild", attachmentUri: "sa" };
+importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "duration", attachment: "toCharArray$esjava$1", attachmentUri: "toCharArray$esjava$1" };
 
 export const FeedbackWidget = importDefaultResultResult;

@@ -1,10 +1,10 @@
-// Module ID: 9000
-// Function ID: 9001
+// Module ID: 9032
+// Function ID: 9033
 // Name: GameProfileReviewUtils
 // Dependencies: [2022, 1119, 2]
 // Exports: canShowLocalizedSteamReview, getSteamReviewScoreDescriptionColor, getSteamReviewScoreDescriptionIntl
 
-// Module 9000 (GameProfileReviewUtils)
+// Module 9032 (GameProfileReviewUtils)
 import GameDetectionTypes from "GameDetectionTypes" /* 2022 */;
 import size from "module_2" /* 2 */;
 

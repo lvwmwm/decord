@@ -1,8 +1,8 @@
-// Module ID: 6777
-// Function ID: 6778
+// Module ID: 6809
+// Function ID: 6810
 // Dependencies: [2]
 
-// Module 6777
+// Module 6809
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TabletSpotIllustration-2x.png.js");

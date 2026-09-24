@@ -1,16 +1,16 @@
-// Module ID: 18333
-// Function ID: 18334
+// Module ID: 18343
+// Function ID: 18344
 // Name: LogOutDisclaimer
-// Dependencies: [21, 558, 568, 14459, 4754, 1119, 2780, 6832, 2]
+// Dependencies: [21, 558, 568, 14497, 4786, 1119, 2780, 6864, 2]
 
-// Module 18333 (LogOutDisclaimer)
+// Module 18343 (LogOutDisclaimer)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import _modDef2780 from "module_2780" /* 2780 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6832 */;
-import ModalDisclaimer from "ModalDisclaimer" /* 14459 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6864 */;
+import ModalDisclaimer from "ModalDisclaimer" /* 14497 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,8 +29,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
     };
     obj3.children = intl.format(_modDef2780["0DHxym"], obj4);
-    obj2.children = jsx(tmp(4754).Text, { variant: "text-xs/medium", children: null });
-    const tmp7 = jsx(tmp(14459).ModalDisclaimer, { children: null });
+    obj2.children = jsx(tmp(4786).Text, { variant: "text-xs/medium", children: null });
+    const tmp7 = jsx(tmp(14497).ModalDisclaimer, { children: null });
     cResult[0] = tmp7;
     let first = tmp7;
   } else {

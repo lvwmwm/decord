@@ -1,9 +1,9 @@
-// Module ID: 11093
-// Function ID: 11094
+// Module ID: 11129
+// Function ID: 11130
 // Name: useWishlistApplicationIds
 // Dependencies: [19, 1078, 558, 568, 2]
 
-// Module 11093 (useWishlistApplicationIds)
+// Module 11129 (useWishlistApplicationIds)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

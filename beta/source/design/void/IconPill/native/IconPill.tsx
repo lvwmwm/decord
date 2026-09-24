@@ -1,20 +1,20 @@
-// Module ID: 14365
-// Function ID: 14366
+// Module ID: 14403
+// Function ID: 14404
 // Name: IconPill
-// Dependencies: [19, 17, 1089, 21, 4758, 580, 558, 568, 5190, 8895, 2]
+// Dependencies: [19, 17, 1089, 21, 4790, 580, 558, 568, 5222, 8927, 2]
 
-// Module 14365 (IconPill)
+// Module 14403 (IconPill)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import IconDefault from "Icon" /* 5190 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8895 */;
+import IconDefault from "Icon" /* 5222 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8927 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { pillContainer: { flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.md, height: 20, paddingHorizontal: 8 }, pillIcon: null, pillText: null };
 let obj3 = { flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.md, height: 20, paddingHorizontal: 8 };
 obj2.pillIcon = { tintColor: nativeDefault.colors.TEXT_SUBTLE, marginRight: 4 };

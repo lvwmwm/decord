@@ -1,25 +1,25 @@
-// Module ID: 11403
-// Function ID: 11404
+// Module ID: 11439
+// Function ID: 11440
 // Name: UserProfileCustomStatusActionSheet
-// Dependencies: [19, 17, 1376, 7455, 21, 4758, 580, 558, 568, 504, 11404, 4910, 1119, 8531, 11391, 11405, 2]
+// Dependencies: [19, 17, 1376, 7487, 21, 4790, 580, 558, 568, 504, 11440, 4942, 1119, 8563, 11427, 11441, 2]
 
-// Module 11403 (UserProfileCustomStatusActionSheet)
+// Module 11439 (UserProfileCustomStatusActionSheet)
 import nativeDefault from "native" /* 580 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
-import HeaderAvatarDefault from "HeaderAvatar" /* 8531 */;
-import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 11391 */;
-import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 11404 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11405 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
+import HeaderAvatarDefault from "HeaderAvatar" /* 8563 */;
+import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 11427 */;
+import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 11440 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11441 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = fn;
 const View = fn(17).View;
-const Constants = fn(7455);
+const Constants = fn(7487);
 ({ AVATAR_CONTAINER_SIZE, AVATAR_CUSTOM_STATUS_GAP } = Constants);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { statusPreviewContainer: { flexDirection: "row", columnGap: AVATAR_CUSTOM_STATUS_GAP, marginHorizontal: nativeDefault.space.PX_16 }, avatarContainer: { height: AVATAR_CONTAINER_SIZE, width: AVATAR_CONTAINER_SIZE, alignItems: "center", justifyContent: "center" }, avatarStatus: null, customStatusBubble: null };
 let obj3 = { flexDirection: "row", columnGap: AVATAR_CUSTOM_STATUS_GAP, marginHorizontal: nativeDefault.space.PX_16 };
 obj2.avatarStatus = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
@@ -100,7 +100,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                       return tmp29;
                     }
                     const obj2 = { title: tmp13, children: tmp25 };
-                    const tmp31 = closure_5(tmp10(11405), obj2);
+                    const tmp31 = closure_5(tmp10(11441), obj2);
                     cResult[23] = tmp25;
                     cResult[24] = tmp13;
                     cResult[25] = tmp31;
@@ -120,7 +120,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
             }
           }
           const obj5 = { customStatusActivity: tmp11, hasCustomProfileTheme: false, showFullStatus: true, style: tmp4.customStatusBubble, previewEmoji, previewText };
-          const tmp24 = closure_5(tmp10(11391), obj5);
+          const tmp24 = closure_5(tmp10(11427), obj5);
           cResult[14] = tmp11;
           cResult[15] = previewEmoji;
           cResult[16] = previewText;
@@ -136,7 +136,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         tmp18 = tmp21;
       }
       const obj7 = { user, statusStyle: tmp4.avatarStatus };
-      const tmp17 = closure_5(tmp10(8531), obj7);
+      const tmp17 = closure_5(tmp10(8563), obj7);
       cResult[8] = tmp4.avatarStatus;
       cResult[9] = user;
       cResult[10] = tmp17;

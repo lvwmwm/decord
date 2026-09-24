@@ -1,11 +1,11 @@
-// Module ID: 10049
-// Function ID: 10050
+// Module ID: 10088
+// Function ID: 10089
 // Name: LiveStageNotificationsUtils
-// Dependencies: [4678, 4399, 1089, 558, 568, 504, 2]
+// Dependencies: [4710, 4431, 1089, 558, 568, 504, 2]
 
-// Module 10049 (LiveStageNotificationsUtils)
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4678 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+// Module 10088 (LiveStageNotificationsUtils)
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4710 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 const require = fn;
 const Permissions = fn(1089).Permissions;

@@ -1,29 +1,29 @@
-// Module ID: 17225
-// Function ID: 17226
+// Module ID: 17235
+// Function ID: 17236
 // Name: FriendsNavigator
-// Dependencies: [109, 19, 17, 21, 8162, 4758, 580, 558, 568, 1119, 8118, 8112, 12760, 7722, 7246, 17226, 17232, 17235, 17236, 17237, 17244, 17245, 17246, 17248, 17251, 17252, 4612, 1616, 4471, 2]
+// Dependencies: [109, 19, 17, 21, 8194, 4790, 580, 558, 568, 1119, 8150, 8144, 12796, 7754, 7278, 17236, 17242, 17245, 17246, 17247, 17254, 17255, 17256, 17258, 17261, 17262, 4644, 1616, 4503, 2]
 
-// Module 17225 (FriendsNavigator)
+// Module 17235 (FriendsNavigator)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4612 */;
-import HeaderShared from "HeaderShared" /* 8112 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 8118 */;
-import _modDef12760 from "module_12760" /* 12760 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4644 */;
+import HeaderShared from "HeaderShared" /* 8144 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 8150 */;
+import _modDef12796 from "module_12796" /* 12796 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
-const native = tmp(4471);
+const native = tmp(4503);
 require = fn;
 let closure_3 = ["children"];
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const NativeStackNavigator = fn(8162);
+const NativeStackNavigator = fn(8194);
 let closure_9 = NativeStackNavigator.createNativeStackNavigator();
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj3 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, header: null };
 let obj4 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 obj3.header = { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, shadowColor: "transparent" };
@@ -42,8 +42,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   }
   if (cResult[1] !== onPress) {
     const obj2 = { isModal: true, children: null };
-    const obj3 = { source: _modDef12760, onPress, accessibilityLabel: first };
-    obj2.children = React5(tmp(8112).HeaderIconButton, obj3);
+    const obj3 = { source: _modDef12796, onPress, accessibilityLabel: first };
+    obj2.children = React5(tmp(8144).HeaderIconButton, obj3);
     const tmp10 = React5(PressableNavigatorButtonWrapperDefault, obj2);
     cResult[1] = onPress;
     cResult[2] = tmp10;
@@ -54,7 +54,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   return tmp6;
 }) : ((onPress) => {
   const obj = { isModal: true, children: null };
-  const obj2 = { source: _modDef12760, onPress: onPress.onPress, accessibilityLabel: null };
+  const obj2 = { source: _modDef12796, onPress: onPress.onPress, accessibilityLabel: null };
   const intl = util.intl;
   obj2.accessibilityLabel = intl.string(util.t["3D5yo/"]);
   obj.children = React5(HeaderShared.HeaderIconButton, obj2);
@@ -67,7 +67,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   _require = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function s() {
-      return closure_0(7722).trackAppUIViewed();
+      return closure_0(7754).trackAppUIViewed();
     };
     const items = [];
     cResult[0] = fn;
@@ -101,12 +101,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 obj.onPress = function onPress() {
                   return navigation.navigate("add-friends", { sourcePage: "Friends Screen Header" });
                 };
-                return closure_2_7(navigation(8112).HeaderTextButton, obj);
+                return closure_2_7(navigation(8144).HeaderTextButton, obj);
               };
               return obj;
             },
         getComponent() {
-              return closure_0(17226).default;
+              return closure_0(17236).default;
             }
       };
       const tmp13 = closure_7(closure_9.Screen, obj2);
@@ -123,7 +123,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj4.title = intl.string(tmp(1119).t.jD1qzM);
       obj3.options = obj4;
       obj3.getComponent = function getComponent() {
-        return closure_0(17232).default;
+        return closure_0(17242).default;
       };
       const tmp17 = closure_7(closure_9.Screen, obj3);
       cResult[6] = tmp17;
@@ -139,7 +139,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj6.title = intl2.string(tmp(1119).t["3hF1W4"]);
       obj5.options = obj6;
       obj5.getComponent = function getComponent() {
-        return closure_0(17235).default;
+        return closure_0(17245).default;
       };
       const tmp21 = closure_7(closure_9.Screen, obj5);
       cResult[7] = tmp21;
@@ -155,7 +155,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj8.title = intl3.string(tmp(1119).t.w5uwoI);
       obj7.options = obj8;
       obj7.getComponent = function getComponent() {
-        return closure_0(17236).default;
+        return closure_0(17246).default;
       };
       const tmp25 = closure_7(closure_9.Screen, obj7);
       cResult[8] = tmp25;
@@ -171,7 +171,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj10.title = intl4.string(tmp(1119).t.zIJnA6);
       obj9.options = obj10;
       obj9.getComponent = function getComponent() {
-        return closure_0(17237).default;
+        return closure_0(17247).default;
       };
       const tmp29 = closure_7(closure_9.Screen, obj9);
       cResult[9] = tmp29;
@@ -187,7 +187,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj12.title = intl5.string(tmp(1119).t.QzVsOs);
       obj11.options = obj12;
       obj11.getComponent = function getComponent() {
-        return closure_0(17244).default;
+        return closure_0(17254).default;
       };
       const tmp33 = closure_7(closure_9.Screen, obj11);
       cResult[10] = tmp33;
@@ -252,7 +252,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj14.title = intl6.string(tmp(1119).t["1uAmCw"]);
       obj13.options = obj14;
       obj13.getComponent = function getComponent() {
-        return closure_0(17245).default;
+        return closure_0(17255).default;
       };
       const tmp38 = closure_7(closure_9.Screen, obj13);
       cResult[11] = tmp38;
@@ -268,7 +268,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj16.title = intl7.string(tmp(1119).t.XT4hVl);
       obj15.options = obj16;
       obj15.getComponent = function getComponent() {
-        return closure_0(17246).default;
+        return closure_0(17256).default;
       };
       const tmp42 = closure_7(closure_9.Screen, obj15);
       cResult[12] = tmp42;
@@ -295,7 +295,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               return obj;
             },
         getComponent() {
-              return closure_0(17248).default;
+              return closure_0(17258).default;
             }
       };
       const tmp46 = closure_7(closure_9.Screen, obj17);
@@ -312,7 +312,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj19.title = intl8.string(tmp(1119).t.oHVeHc);
       obj18.options = obj19;
       obj18.getComponent = function getComponent() {
-        return closure_0(17251).default;
+        return closure_0(17261).default;
       };
       const tmp50 = closure_7(closure_9.Screen, obj18);
       cResult[14] = tmp50;
@@ -328,7 +328,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj21.title = intl9.string(tmp(1119).t.tFY5Zb);
       obj20.options = obj21;
       obj20.getComponent = function getComponent() {
-        return closure_0(17252).default;
+        return closure_0(17262).default;
       };
       const tmp54 = closure_7(closure_9.Screen, obj20);
       cResult[15] = tmp54;
@@ -453,7 +453,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp9 = C;
 }) : (() => {
   _require = closure_10();
-  const layoutEffect = noop.useLayoutEffect(() => closure_0(7722).trackAppUIViewed(), []);
+  const layoutEffect = noop.useLayoutEffect(() => closure_0(7754).trackAppUIViewed(), []);
   closure_1 = require("Navigator").useAccessibilityNativeStackOptions();
   const obj2 = {
     screenOptions(arg0) {
@@ -513,12 +513,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           obj.onPress = function onPress() {
             return navigation.navigate("add-friends", { sourcePage: "Friends Screen Header" });
           };
-          return closure_2_7(navigation(8112).HeaderTextButton, obj);
+          return closure_2_7(navigation(8144).HeaderTextButton, obj);
         };
         return obj;
       },
       getComponent() {
-        return closure_0(17226).default;
+        return closure_0(17236).default;
       }
     }),
   ,
@@ -538,7 +538,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj5.title = intl.string(require("util").t.jD1qzM);
   obj4.options = obj5;
   obj4.getComponent = function getComponent() {
-    return closure_0(17232).default;
+    return closure_0(17242).default;
   };
   items[1] = closure_7(closure_9.Screen, obj4);
   const obj6 = { name: "gdm", options: null, getComponent: null };
@@ -547,7 +547,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj7.title = intl2.string(require("util").t["3hF1W4"]);
   obj6.options = obj7;
   obj6.getComponent = function getComponent() {
-    return closure_0(17235).default;
+    return closure_0(17245).default;
   };
   items[2] = closure_7(closure_9.Screen, obj6);
   const obj8 = { name: "add-friend", options: null, getComponent: null };
@@ -556,7 +556,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj9.title = intl3.string(require("util").t.w5uwoI);
   obj8.options = obj9;
   obj8.getComponent = function getComponent() {
-    return closure_0(17236).default;
+    return closure_0(17246).default;
   };
   items[3] = closure_7(closure_9.Screen, obj8);
   const obj10 = { name: "add-friends", options: null, getComponent: null };
@@ -565,7 +565,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj11.title = intl4.string(require("util").t.zIJnA6);
   obj10.options = obj11;
   obj10.getComponent = function getComponent() {
-    return closure_0(17237).default;
+    return closure_0(17247).default;
   };
   items[4] = closure_7(closure_9.Screen, obj10);
   const obj12 = { name: "username-search", options: null, getComponent: null };
@@ -574,7 +574,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj13.title = intl5.string(require("util").t.QzVsOs);
   obj12.options = obj13;
   obj12.getComponent = function getComponent() {
-    return closure_0(17244).default;
+    return closure_0(17254).default;
   };
   items[5] = closure_7(closure_9.Screen, obj12);
   const obj14 = { name: "suggested-friends", options: null, getComponent: null };
@@ -583,7 +583,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj15.title = intl6.string(require("util").t["1uAmCw"]);
   obj14.options = obj15;
   obj14.getComponent = function getComponent() {
-    return closure_0(17245).default;
+    return closure_0(17255).default;
   };
   items[6] = closure_7(closure_9.Screen, obj14);
   const obj16 = { name: "requests-settings", options: null, getComponent: null };
@@ -592,7 +592,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj17.title = intl7.string(require("util").t.XT4hVl);
   obj16.options = obj17;
   obj16.getComponent = function getComponent() {
-    return closure_0(17246).default;
+    return closure_0(17256).default;
   };
   items[7] = closure_7(closure_9.Screen, obj16);
   items[8] = closure_7(closure_9.Screen, {
@@ -612,7 +612,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return obj;
     },
     getComponent() {
-      return closure_0(17248).default;
+      return closure_0(17258).default;
     }
   });
   const obj19 = { name: "spam-requests", options: null, getComponent: null };
@@ -621,7 +621,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj20.title = intl8.string(require("util").t.oHVeHc);
   obj19.options = obj20;
   obj19.getComponent = function getComponent() {
-    return closure_0(17251).default;
+    return closure_0(17261).default;
   };
   items[9] = closure_7(closure_9.Screen, obj19);
   const obj21 = { name: "ignored-user-requests", options: null, getComponent: null };
@@ -630,7 +630,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj22.title = intl9.string(require("util").t.tFY5Zb);
   obj21.options = obj22;
   obj21.getComponent = function getComponent() {
-    return closure_0(17252).default;
+    return closure_0(17262).default;
   };
   items[10] = closure_7(closure_9.Screen, obj21);
   obj2.children = items;

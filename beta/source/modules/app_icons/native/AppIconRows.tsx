@@ -1,17 +1,17 @@
-// Module ID: 15791
-// Function ID: 15792
+// Module ID: 15801
+// Function ID: 15802
 // Name: AppIconRows
-// Dependencies: [32, 12387, 19, 17, 1376, 21, 4758, 558, 568, 9436, 5903, 1119, 15792, 13723, 504, 1973, 2]
+// Dependencies: [32, 12423, 19, 17, 1376, 21, 4790, 558, 568, 9468, 5935, 1119, 15802, 13759, 504, 1973, 2]
 
-// Module 15791 (AppIconRows)
+// Module 15801 (AppIconRows)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1973 */;
-import AppIconTypes from "AppIconTypes" /* 9436 */;
-import AppIconUtils from "AppIconUtils" /* 13723 */;
-import AppIconRowDefault from "AppIconRow" /* 15792 */;
+import AppIconTypes from "AppIconTypes" /* 9468 */;
+import AppIconUtils from "AppIconUtils" /* 13759 */;
+import AppIconRowDefault from "AppIconRow" /* 15802 */;
 import _slicedToArray from "module_32" /* 32 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 12387 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 12423 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -20,7 +20,7 @@ const View = fn(17).View;
 const createElement = fn(19).createElement;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_12 = createStyles.createStyles({ container: { padding: 16 }, bottomUpsellPadding: { paddingBottom: 56 } });
 let ReactCompilerGating = fn(558);
 let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -44,7 +44,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     onLongPress = cResult[0];
   }
-  const TableRowGroup = tmp(5903).TableRowGroup;
+  const TableRowGroup = tmp(5935).TableRowGroup;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1119).intl;
     const stringResult = intl.string(tmp(1119).t.N4YDao);
@@ -123,7 +123,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       obj.onLongPress = onLongPress;
       return createElement(AppIconRowDefault, {});
     });
-    obj.children = closure_9(merged(5903).TableRowGroup, obj2);
+    obj.children = closure_9(merged(5935).TableRowGroup, obj2);
     return closure_9(View, obj);
   }
 });

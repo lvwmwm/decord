@@ -1,10 +1,10 @@
-// Module ID: 8855
-// Function ID: 8856
+// Module ID: 8887
+// Function ID: 8888
 // Name: AgeVerificationExpressiveModalEverywhereExperiment
 // Dependencies: [1438, 558, 568, 2]
 // Exports: isAgeVerificationExpressiveModalEverywhereEnabled
 
-// Module 8855 (AgeVerificationExpressiveModalEverywhereExperiment)
+// Module 8887 (AgeVerificationExpressiveModalEverywhereExperiment)
 import c from "c" /* 568 */;
 import ApexExperiment from "ApexExperiment" /* 1438 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

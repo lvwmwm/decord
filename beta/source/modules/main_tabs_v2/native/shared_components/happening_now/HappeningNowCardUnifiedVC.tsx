@@ -1,18 +1,18 @@
-// Module ID: 16409
-// Function ID: 16410
+// Module ID: 16419
+// Function ID: 16420
 // Name: HappeningNowCardUnifiedVC
-// Dependencies: [19, 2044, 4780, 4409, 21, 558, 568, 16410, 16422, 16423, 16400, 565, 2]
+// Dependencies: [19, 2044, 4812, 4441, 21, 558, 568, 16420, 16432, 16433, 16410, 565, 2]
 
-// Module 16409 (HappeningNowCardUnifiedVC)
+// Module 16419 (HappeningNowCardUnifiedVC)
 import c from "c" /* 568 */;
-import findActivityWithMostParticipantsDefault from "findActivityWithMostParticipants" /* 16400 */;
-import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 16410 */;
-import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 16422 */;
-import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 16423 */;
+import findActivityWithMostParticipantsDefault from "findActivityWithMostParticipants" /* 16410 */;
+import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 16420 */;
+import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 16432 */;
+import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 16433 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4812 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 
 require = fn;
 const jsx = fn(21).jsx;

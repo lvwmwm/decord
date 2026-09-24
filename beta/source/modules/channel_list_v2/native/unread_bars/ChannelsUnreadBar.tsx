@@ -1,28 +1,28 @@
-// Module ID: 16521
-// Function ID: 16522
+// Module ID: 16531
+// Function ID: 16532
 // Name: ChannelsUnreadBar
-// Dependencies: [32, 19, 17, 12213, 1078, 21, 4497, 4758, 580, 1368, 558, 568, 8122, 5195, 11291, 4938, 15356, 5187, 5191, 5310, 16050, 16048, 1119, 4754, 2]
+// Dependencies: [32, 19, 17, 12249, 1078, 21, 4529, 4790, 580, 1368, 558, 568, 8154, 5227, 11327, 4970, 15366, 5219, 5223, 5342, 16060, 16058, 1119, 4786, 2]
 
-// Module 16521 (ChannelsUnreadBar)
+// Module 16531 (ChannelsUnreadBar)
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4497 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4938 */;
-import spring from "spring" /* 5187 */;
-import springPresets from "springPresets" /* 5191 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4529 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4970 */;
+import spring from "spring" /* 5219 */;
+import springPresets from "springPresets" /* 5223 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
 
 require = fn;
-const RedesignChannelListConstants = fn(12213);
+const RedesignChannelListConstants = fn(12249);
 ({ getScaledSearchBarHeight: hasOwnProperty, VIEWABILITY_CONFIG: metroRequire } = RedesignChannelListConstants);
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 let closure_10 = ReanimatedRexport.createAnimatedComponent(fn(17).Pressable);
 let c11 = 12;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_12 = createStyles.createStyles((arg0, arg1) => {
   const obj = { position: "absolute", right: "50%", zIndex: 1, marginVertical, marginHorizontal: 0, paddingRight: 9, paddingLeft: null, paddingVertical: 4, minHeight: 24, flexDirection: "row", justifyContent: "center", alignItems: "center", borderRadius: null, backgroundColor: null, elevation: 4, shadowColor: null, shadowOffset: null, shadowOpacity: 0.08, shadowRadius: 4, borderWidth: 1, borderColor: null };
   let num = 5;

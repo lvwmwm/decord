@@ -1,10 +1,10 @@
-// Module ID: 7989
-// Function ID: 7990
+// Module ID: 8021
+// Function ID: 8022
 // Name: Histogram
-// Dependencies: [7990, 2]
+// Dependencies: [8022, 2]
 
-// Module 7989 (Histogram)
-import TDigest from "TDigest" /* 7990 */;
+// Module 8021 (Histogram)
+import TDigest from "TDigest" /* 8022 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/Histogram.tsx");

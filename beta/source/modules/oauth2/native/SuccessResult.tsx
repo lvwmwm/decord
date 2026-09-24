@@ -1,16 +1,16 @@
-// Module ID: 9322
-// Function ID: 9323
-// Dependencies: [19, 17, 2045, 4399, 2099, 1078, 1487, 21, 4758, 580, 558, 568, 8608, 1119, 4961, 7586, 1245, 504, 4725, 4625, 1614, 9323, 4754, 5188, 7371, 2]
+// Module ID: 9354
+// Function ID: 9355
+// Dependencies: [19, 17, 2045, 4431, 2099, 1078, 1487, 21, 4790, 580, 558, 568, 8640, 1119, 4993, 7618, 1245, 504, 4757, 4657, 1614, 9355, 4786, 5220, 7403, 2]
 
-// Module 9322
+// Module 9354
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import transitionToGuild from "transitionToGuild" /* 7586 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import transitionToGuild from "transitionToGuild" /* 7618 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 const AnalyticsUtilsDefault = tmp(1245);
@@ -22,7 +22,7 @@ const Constants = fn(1078);
 const AppLauncherRouteName = fn(1487).AppLauncherRouteName;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, scrollView: { flex: 1 }, scrollViewContentContainer: null, inner: null, text: null, footer: null, footerLandscape: null, footerPortrait: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.scrollViewContentContainer = { height: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center" };
@@ -42,7 +42,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   guild = guild.guild;
   const application = guild.application;
   const tmp4 = closure_16();
-  guild(8608);
+  guild(8640);
   if (null == application) {
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
@@ -501,7 +501,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               return closure_1_9.getChannelId();
             }
           }
-          tmp53[0] = application(9323);
+          tmp53[0] = application(9355);
           const tmp54 = closure_13(closure_4, tmp53);
           cResult[26] = tmp54;
           const tmp51 = tmp54;
@@ -571,7 +571,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               return closure_1_9.getChannelId();
             }
           }
-          const tmp59 = closure_13(tmp(4754).Text, { style: null, variant: "text-lg/medium", children: null });
+          const tmp59 = closure_13(tmp(4786).Text, { style: null, variant: "text-lg/medium", children: null });
           cResult[28] = tmp4.text;
           cResult[29] = tmp59;
           const obj4 = { style: null, variant: "text-lg/medium", children: null };
@@ -718,7 +718,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               return closure_1_9.getChannelId();
             }
           }
-          tmp61 = closure_13(tmp(4754).Text, { style: null, variant: "text-sm/normal", children: null });
+          tmp61 = closure_13(tmp(4786).Text, { style: null, variant: "text-sm/normal", children: null });
           const obj6 = { style: null, variant: "text-sm/normal", children: null };
         }
         cResult[30] = tmp4.text;

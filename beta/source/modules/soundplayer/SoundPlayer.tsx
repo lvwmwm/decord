@@ -1,34 +1,34 @@
-// Module ID: 17396
-// Function ID: 17397
+// Module ID: 17406
+// Function ID: 17407
 // Name: SoundPlayer
-// Dependencies: [19, 2044, 9311, 4775, 9307, 2049, 4780, 502, 2045, 2067, 1996, 12948, 4781, 2099, 5638, 4777, 4782, 1078, 9312, 21, 558, 568, 504, 10137, 4905, 4810, 4389, 1374, 5276, 2]
+// Dependencies: [19, 2044, 9343, 4807, 9339, 2049, 4812, 502, 2045, 2067, 1996, 12984, 4813, 2099, 5670, 4809, 4814, 1078, 9344, 21, 558, 568, 504, 10176, 4937, 4842, 4421, 1374, 5308, 2]
 
-// Module 17396 (SoundPlayer)
+// Module 17406 (SoundPlayer)
 import c from "c" /* 568 */;
-import SoundUtils from "SoundUtils" /* 10137 */;
+import SoundUtils from "SoundUtils" /* 10176 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
-import FramesStore from "FramesStore" /* 9311 */;
-import GameConsoleStore from "GameConsoleStore" /* 4775 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9307 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
+import FramesStore from "FramesStore" /* 9343 */;
+import GameConsoleStore from "GameConsoleStore" /* 4807 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9339 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4812 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 12948 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 12984 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SpeakingStore from "SpeakingStore" /* 5638 */;
-import VoiceStateStore from "VoiceStateStore" /* 4777 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4782 */;
+import SpeakingStore from "SpeakingStore" /* 5670 */;
+import VoiceStateStore from "VoiceStateStore" /* 4809 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4814 */;
 
 require = fn;
 const NO_ACTIVITIES = fn(2044).NO_ACTIVITIES;
 let closure_8 = fn(2049).SILENT_JOIN_LEAVE_CHANNEL_TYPES;
 const Constants = fn(1078);
 ({ InputModes: closure_20, ApplicationStreamStates: closure_21, ChannelTypes: closure_22, RTCConnectionStates: closure_23 } = Constants);
-const FramesConstants = fn(9312);
+const FramesConstants = fn(9344);
 ({ getChannelIdForSurface: closure_24, isLaunched: closure_25 } = FramesConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_26, Fragment: closure_27, jsxs: closure_28 } = jsxProd);
@@ -850,8 +850,8 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       let result1 = null != tmp13Result;
       if (result1) {
-        result1 = tmp4(5276).isVibegrationsChannelCandidate(ChannelStore.getChannel(tmp13Result), "ActivitySounds");
-        const tmp4Result6 = tmp4(5276);
+        result1 = tmp4(5308).isVibegrationsChannelCandidate(ChannelStore.getChannel(tmp13Result), "ActivitySounds");
+        const tmp4Result6 = tmp4(5308);
       }
       if (!result1) {
         result1 = result;
@@ -1089,8 +1089,8 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     let result1 = null != tmp13Result;
     if (result1) {
-      result1 = tmp4(5276).isVibegrationsChannelCandidate(ChannelStore.getChannel(tmp13Result), "ActivitySounds");
-      const tmp4Result6 = tmp4(5276);
+      result1 = tmp4(5308).isVibegrationsChannelCandidate(ChannelStore.getChannel(tmp13Result), "ActivitySounds");
+      const tmp4Result6 = tmp4(5308);
     }
     if (!result1) {
       result1 = result;

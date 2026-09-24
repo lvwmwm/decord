@@ -1,14 +1,14 @@
-// Module ID: 16599
-// Function ID: 16600
+// Module ID: 16609
+// Function ID: 16610
 // Name: useChannelNoticeRows
-// Dependencies: [32, 19, 12638, 2100, 2067, 1376, 7781, 1078, 2042, 558, 568, 565, 7410, 7412, 16600, 2031, 7632, 4579, 16523, 16601, 2]
+// Dependencies: [32, 19, 12674, 2100, 2067, 1376, 7813, 1078, 2042, 558, 568, 565, 7442, 7444, 16610, 2031, 7664, 4611, 16533, 16611, 2]
 
-// Module 16599 (useChannelNoticeRows)
+// Module 16609 (useChannelNoticeRows)
 import dismissible_content from "dismissible_content" /* 2031 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4579 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4611 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildProgressStore from "GuildProgressStore" /* 12638 */;
+import GuildProgressStore from "GuildProgressStore" /* 12674 */;
 import GuildChannelStore from "GuildChannelStore" /* 2100 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1376 */;
@@ -16,7 +16,7 @@ import UserStore from "UserStore" /* 1376 */;
 const require = globalThis.__r;
 
 require = fn;
-const constants = fn(7781).ChannelListChannelNoticeRow;
+const constants = fn(7813).ChannelListChannelNoticeRow;
 const MFALevels = fn(1078).MFALevels;
 const DismissibleContentConstants = fn(2042);
 ({ ContentDismissActionType: closure_11, DismissibleContentGroupName: closure_12 } = DismissibleContentConstants);
@@ -51,11 +51,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   let obj = guildId(568);
   const tmpResult = guildId(565);
-  const tmp7 = hasAlreadyLinked(7412)(guildId(7410).useApplication(tmpResult.useStateFromStoresArray(first, tmp6)[0]).data);
+  const tmp7 = hasAlreadyLinked(7444)(guildId(7442).useApplication(tmpResult.useStateFromStoresArray(first, tmp6)[0]).data);
   ({ fetched, hasAlreadyLinked } = tmp7);
   ({ connectionApp, canStartAuthorization, startAuthorization } = tmp7);
-  const tmpResult4 = guildId(7410);
-  const defaultAuthorizationNotifiers = guildId(16600).useDefaultAuthorizationNotifiers(startAuthorization, hasAlreadyLinked);
+  const tmpResult4 = guildId(7442);
+  const defaultAuthorizationNotifiers = guildId(16610).useDefaultAuthorizationNotifiers(startAuthorization, hasAlreadyLinked);
   if (fetched) {
     fetched = !hasAlreadyLinked;
   }
@@ -84,7 +84,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     cResult[3] = fetched;
     cResult[4] = items2;
   } else {
-    const tmpResult6 = tmp(7632);
+    const tmpResult6 = tmp(7664);
     const tmp20 = _slicedToArray(tmpResult6.useSelectedSingleUseGuildDismissibleContent(cResult[4], guildId, constants3.CHANNEL_NOTICES, true), 2);
     if (cResult[5] === guildId) {
       if (cResult[6] === hasAlreadyLinked) {
@@ -158,7 +158,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   hasAlreadyLinked = undefined;
   const items = [GuildStore];
   let obj = guildId(565);
-  const tmp3 = hasAlreadyLinked(7412)(guildId(7410).useApplication(obj.useStateFromStoresArray(items, () => {
+  const tmp3 = hasAlreadyLinked(7444)(guildId(7442).useApplication(obj.useStateFromStoresArray(items, () => {
     guild = GuildStore.getGuild(guildId);
     let gameApplicationIds;
     if (guild != null) {
@@ -171,8 +171,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   })[0]).data);
   ({ fetched, hasAlreadyLinked } = tmp3);
   ({ connectionApp, canStartAuthorization, startAuthorization } = tmp3);
-  let obj2 = guildId(7410);
-  const defaultAuthorizationNotifiers = guildId(16600).useDefaultAuthorizationNotifiers(startAuthorization, hasAlreadyLinked);
+  let obj2 = guildId(7442);
+  const defaultAuthorizationNotifiers = guildId(16610).useDefaultAuthorizationNotifiers(startAuthorization, hasAlreadyLinked);
   if (fetched) {
     fetched = !hasAlreadyLinked;
   }
@@ -191,16 +191,16 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   if (fetched) {
     fetched = null != connectionApp.applicationAccountLinkBenefitConfig.reward_image;
   }
-  const obj3 = guildId(16600);
+  const obj3 = guildId(16610);
   if (fetched) {
     const items1 = [tmp(2031).DismissibleContent.MOBILE_ACCOUNT_LINKING_BANNER];
     let items2 = items1;
   } else {
     items2 = [];
   }
-  const tmpResult = guildId(7632);
+  const tmpResult = guildId(7664);
   const items3 = [guildId, hasAlreadyLinked];
-  [tmp10, tmp11] = guildId(7632).useSelectedSingleUseGuildDismissibleContent(items2, guildId, constants3.CHANNEL_NOTICES, true);
+  [tmp10, tmp11] = guildId(7664).useSelectedSingleUseGuildDismissibleContent(items2, guildId, constants3.CHANNEL_NOTICES, true);
   const effect = noop.useEffect(() => {
     if (hasAlreadyLinked) {
       const obj2 = { dismissAction: constants2.INDIRECT_ACTION, guildId, groupName: constants3.CHANNEL_NOTICES };
@@ -258,9 +258,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     }
     const stateFromStores1 = tmp(565).useStateFromStores(tmp11, tmp13, tmp14);
     const tmpResult5 = tmp(565);
-    const guildHasLiveChannelNotice = tmp(16523).useGuildHasLiveChannelNotice(id);
-    const tmpResult6 = tmp(16523);
-    const canShowGameClaimCoachmark = tmp(16601).useCanShowGameClaimCoachmark(id);
+    const guildHasLiveChannelNotice = tmp(16533).useGuildHasLiveChannelNotice(id);
+    const tmpResult6 = tmp(16533);
+    const canShowGameClaimCoachmark = tmp(16611).useCanShowGameClaimCoachmark(id);
     if (cResult[9] !== canShowGameClaimCoachmark) {
       if (canShowGameClaimCoachmark) {
         const items2 = [tmp(2031).DismissibleContent.GAME_CLAIM_COACHMARK];
@@ -271,7 +271,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       cResult[9] = canShowGameClaimCoachmark;
       cResult[10] = items3;
     } else {
-      const tmpResult8 = tmp(7632);
+      const tmpResult8 = tmp(7664);
       const tmp25 = _slicedToArray(tmpResult8.useSelectedSingleUseGuildDismissibleContent(cResult[10], id, constants3.CHANNEL_NOTICES, true), 2);
       if (cResult[11] !== id) {
         const obj2 = { guildId: id };
@@ -352,7 +352,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       tmp32 = items4;
       const tmp31 = closure_13(tmp29);
     }
-    const tmpResult7 = tmp(16601);
+    const tmpResult7 = tmp(16611);
   }
   class S {
     constructor() {

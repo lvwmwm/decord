@@ -1,11 +1,11 @@
-// Module ID: 13379
-// Function ID: 13380
+// Module ID: 13415
+// Function ID: 13416
 // Name: useUserProfileGameFriendApplicationIds
-// Dependencies: [19, 4409, 1376, 558, 568, 504, 13359, 2]
+// Dependencies: [19, 4441, 1376, 558, 568, 504, 13395, 2]
 
-// Module 13379 (useUserProfileGameFriendApplicationIds)
+// Module 13415 (useUserProfileGameFriendApplicationIds)
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = fn;
@@ -46,7 +46,7 @@ export const useUserProfileGameFriendApplicationIds = ReactCompilerGating.isReac
   const obj = userId(568);
   const stateFromStores = userId(504).useStateFromStores(first, tmp7);
   const tmpResult = userId(504);
-  const gameFriendsForUser = userId(13359).useGameFriendsForUser(userId);
+  const gameFriendsForUser = userId(13395).useGameFriendsForUser(userId);
   if (stateFromStores) {
     const tmp9 = closure_5;
   } else if (cResult[3] !== gameFriendsForUser) {

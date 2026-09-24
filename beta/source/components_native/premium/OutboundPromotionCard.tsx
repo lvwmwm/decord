@@ -1,19 +1,19 @@
-// Module ID: 13824
-// Function ID: 13825
+// Module ID: 13860
+// Function ID: 13861
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1078, 21, 4758, 580, 5660, 558, 568, 7396, 1119, 4748, 7397, 4754, 4693, 13693, 13825, 5111, 13826, 1984, 13691, 5188, 4725, 2]
+// Dependencies: [32, 19, 17, 1078, 21, 4790, 580, 5692, 558, 568, 7428, 1119, 4780, 7429, 4786, 4725, 13729, 13861, 5143, 13862, 1984, 13727, 5220, 4757, 2]
 // Exports: default
 
-// Module 13824 (OutboundPromotionCard)
+// Module 13860 (OutboundPromotionCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4748 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5111 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4780 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5143 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -22,9 +22,9 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { card: { flex: 1, flexDirection: "column", paddingHorizontal: fn(1078).USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING, paddingVertical: 12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: 8 }, mainContainer: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, textContainer: { flexDirection: "row", flexShrink: 1, alignItems: "center" }, imageContainer: null, image: null, title: null, subText: null, claimButton: null, moreDetails: null, termsAndConditionsText: null, buttonContainer: null };
-let size = { width: 32, height: 32, marginRight: 8, borderRadius: nativeDefault.radii.xs, alignItems: "center", justifyContent: "center", backgroundColor: fn(5660).DARK_BLACK_500_LIGHT_PRIMARY_100 };
+let size = { width: 32, height: 32, marginRight: 8, borderRadius: nativeDefault.radii.xs, alignItems: "center", justifyContent: "center", backgroundColor: fn(5692).DARK_BLACK_500_LIGHT_PRIMARY_100 };
 obj2.imageContainer = size;
 obj2.image = { width: 28, height: 28, resizeMode: "contain" };
 obj2.title = { lineHeight: 20 };
@@ -43,7 +43,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((termsAndCondit
     const obj2 = { title: null };
     const intl = tmp(1119).intl;
     obj2.title = intl.string(tmp(1119).t.PdKWVT);
-    const tmp7 = React5(tmp(7396).BottomSheetTitleHeader, obj2);
+    const tmp7 = React5(tmp(7428).BottomSheetTitleHeader, obj2);
     cResult[0] = tmp7;
     let first = tmp7;
   } else {

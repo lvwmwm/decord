@@ -1,18 +1,18 @@
-// Module ID: 15405
-// Function ID: 15406
+// Module ID: 15415
+// Function ID: 15416
 // Name: VideoQuestModalReward
-// Dependencies: [19, 21, 4758, 558, 568, 15382, 11607, 11895, 15387, 4754, 1119, 5186, 580, 2]
+// Dependencies: [19, 21, 4790, 558, 568, 15392, 11643, 11931, 15397, 4786, 1119, 5218, 580, 2]
 
-// Module 15405 (VideoQuestModalReward)
+// Module 15415 (VideoQuestModalReward)
 import nativeDefault from "native" /* 580 */;
-import QuestUtils from "QuestUtils" /* 11895 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 15387 */;
+import QuestUtils from "QuestUtils" /* 11931 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 15397 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ questName: { textAlign: "center" } });
 const ReactCompilerGating = fn(558);
 let size = fn(2);
@@ -26,9 +26,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     str = size;
   }
   const obj = quest(568);
-  quest = quest(15382).useVideoQuestModalContext().quest;
-  const tmpResult = quest(15382);
-  const questTaskDetails = quest(11607).useQuestTaskDetails(quest);
+  quest = quest(15392).useVideoQuestModalContext().quest;
+  const tmpResult = quest(15392);
+  const questTaskDetails = quest(11643).useQuestTaskDetails(quest);
   if (cResult[0] !== quest.id) {
     const fn = function s() {
       const result = QuestUtils.openRewardDetailsBottomSheet({ questId: quest.id });
@@ -58,7 +58,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
                   const obj2 = { variant: "heading-sm/medium", color: "text-subtle", children: null };
                   const intl2 = tmp(1119).intl;
                   obj2.children = intl2.string(tmp(1119).t["1Wvve2"]);
-                  tmp15 = closure_4(tmp(4754).Text, obj2);
+                  tmp15 = closure_4(tmp(4786).Text, obj2);
                 }
                 cResult[12] = tmp5;
                 cResult[13] = tmp15;
@@ -82,7 +82,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
                   const obj3 = { justify: "center", align: "center", spacing: nativeDefault.space.PX_24, style, children: null };
                   const items = [tmp9, tmp17];
                   obj3.children = items;
-                  const tmp24 = closure_5(tmp(5186).Stack, obj3);
+                  const tmp24 = closure_5(tmp(5218).Stack, obj3);
                   cResult[18] = style;
                   cResult[19] = tmp9;
                   cResult[20] = tmp17;
@@ -93,7 +93,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
               const obj4 = { align: "center", spacing: nativeDefault.space.PX_4, onLayout: onTextBlockLayout, children: null };
               const items1 = [tmp11, tmp14];
               obj4.children = items1;
-              const tmp20 = closure_5(tmp(5186).Stack, obj4);
+              const tmp20 = closure_5(tmp(5218).Stack, obj4);
               cResult[14] = onTextBlockLayout;
               cResult[15] = tmp11;
               cResult[16] = tmp14;
@@ -107,7 +107,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
             const intl = tmp(1119).intl;
             const obj6 = { questName: quest.config.messages.questName };
             obj5.children = intl.formatToPlainString(tmp(1119).t.EAYZAr, obj6);
-            tmp12 = closure_4(tmp(4754).Text, obj5);
+            tmp12 = closure_4(tmp(4786).Text, obj5);
           }
           cResult[8] = quest.config;
           cResult[9] = tmp8;
@@ -140,14 +140,14 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     str = size;
   }
   ({ withRewardTileAnimation, onTextBlockLayout } = style);
-  quest = quest(15382).useVideoQuestModalContext().quest;
-  const obj = quest(15382);
+  quest = quest(15392).useVideoQuestModalContext().quest;
+  const obj = quest(15392);
   const items = [quest.id];
-  const questTaskDetails = quest(11607).useQuestTaskDetails(quest);
+  const questTaskDetails = quest(11643).useQuestTaskDetails(quest);
   const callback = noop.useCallback(() => {
     const result = QuestUtils.openRewardDetailsBottomSheet({ questId: quest.id });
   }, items);
-  const obj2 = quest(11607);
+  const obj2 = quest(11643);
   const obj3 = { justify: "center", align: "center", spacing: nativeDefault.space.PX_24, style: style.style, children: null };
   const items1 = [closure_4(QuestProgressIndicatorDefault, { hasConfetti: true, quest, size: str, progress: questTaskDetails.percentComplete, onPress: callback, withAnimation: withRewardTileAnimation }), ];
   const obj5 = { align: "center", spacing: nativeDefault.space.PX_4, onLayout: onTextBlockLayout, children: null };
@@ -156,18 +156,18 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     const intl = tmp3(1119).intl;
     const obj7 = { questName: quest.config.messages.questName };
     obj6.children = intl.formatToPlainString(tmp3(1119).t.EAYZAr, obj7);
-    tmp = tmp9(tmp3(4754).Text, obj6);
+    tmp = tmp9(tmp3(4786).Text, obj6);
   }
   const items2 = [tmp, ];
   if (tmp9Result) {
     const obj8 = { variant: "heading-sm/medium", color: "text-subtle", children: null };
     const intl2 = tmp3(1119).intl;
     obj8.children = intl2.string(tmp3(1119).t["1Wvve2"]);
-    tmp9Result = tmp9(tmp3(4754).Text, obj8);
+    tmp9Result = tmp9(tmp3(4786).Text, obj8);
   }
   items2[1] = tmp9Result;
   obj5.children = items2;
-  items1[1] = closure_5(quest(5186).Stack, obj5);
+  items1[1] = closure_5(quest(5218).Stack, obj5);
   obj3.children = items1;
-  return closure_5(quest(5186).Stack, obj3);
+  return closure_5(quest(5218).Stack, obj3);
 }));

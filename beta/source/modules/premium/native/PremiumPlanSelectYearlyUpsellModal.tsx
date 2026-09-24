@@ -1,40 +1,40 @@
-// Module ID: 13819
-// Function ID: 13820
+// Module ID: 13855
+// Function ID: 13856
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [32, 19, 17, 2113, 7484, 13810, 1378, 1089, 21, 4758, 5743, 5660, 558, 568, 7653, 504, 1885, 13820, 1181, 1119, 5188, 5207, 4418, 2]
+// Dependencies: [32, 19, 17, 2113, 7516, 13846, 1378, 1089, 21, 4790, 5775, 5692, 558, 568, 7685, 504, 1885, 13856, 1181, 1119, 5220, 5239, 4450, 2]
 
-// Module 13819 (PremiumPlanSelectYearlyUpsellModal)
-import common_AlertDefault from "common/Alert" /* 5207 */;
-import TextStylesDefault from "TextStyles" /* 5743 */;
-import _modDef13820 from "module_13820" /* 13820 */;
+// Module 13855 (PremiumPlanSelectYearlyUpsellModal)
+import common_AlertDefault from "common/Alert" /* 5239 */;
+import TextStylesDefault from "TextStyles" /* 5775 */;
+import _modDef13856 from "module_13856" /* 13856 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
-import IAPStore from "IAPStore" /* 7484 */;
+import IAPStore from "IAPStore" /* 7516 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const usePremiumPlanSelectStore = fn(13810).usePremiumPlanSelectStore;
+const usePremiumPlanSelectStore = fn(13846).usePremiumPlanSelectStore;
 let closure_10 = fn(1378).PREMIUM_YEARLY_DISCOUNT_PERCENT;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { marginHorizontal: 26 }, image: { alignSelf: "center", marginVertical: 32 }, header: null, description: null, upsellButton: null, continueButton: null, cancelButton: null };
 let obj3 = {};
 const merged = Object.assign(TextStylesDefault(fn(1089).Fonts.DISPLAY_EXTRABOLD, undefined, 24));
 obj3.alignSelf = "center";
 obj3.textAlign = "center";
 obj3.paddingBottom = 8;
-obj3.color = fn(5660).DARK_WHITE_500_LIGHT_BLACK_500;
+obj3.color = fn(5692).DARK_WHITE_500_LIGHT_BLACK_500;
 obj2.header = obj3;
-obj2.description = { alignSelf: "center", textAlign: "center", paddingBottom: 32, color: fn(5660).DARK_WHITE_500_LIGHT_BLACK_500 };
+obj2.description = { alignSelf: "center", textAlign: "center", paddingBottom: 32, color: fn(5692).DARK_WHITE_500_LIGHT_BLACK_500 };
 obj2.upsellButton = { marginBottom: 16 };
 obj2.continueButton = { marginBottom: 4 };
 obj2.cancelButton = { marginTop: 8, marginBottom: 4 };
 let closure_13 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
-let obj4 = { alignSelf: "center", textAlign: "center", paddingBottom: 32, color: fn(5660).DARK_WHITE_500_LIGHT_BLACK_500 };
+let obj4 = { alignSelf: "center", textAlign: "center", paddingBottom: 32, color: fn(5692).DARK_WHITE_500_LIGHT_BLACK_500 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/native/PremiumPlanSelectYearlyUpsellModal.tsx");
 
@@ -230,8 +230,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((continueWithDefa
   [tmp4, c3] = noop.useState(null);
   const obj = noop;
   const tmp3 = _slicedToArray(noop.useState(null), 2);
-  const premiumBundledItemsFromProductId = productId(7653).getPremiumBundledItemsFromProductId(productId);
-  const obj2 = productId(7653);
+  const premiumBundledItemsFromProductId = productId(7685).getPremiumBundledItemsFromProductId(productId);
+  const obj2 = productId(7685);
   let items = [LocaleStore];
   const stateFromStores = productId(504).useStateFromStores(items, () => locale.locale);
   const obj3 = productId(504);
@@ -267,14 +267,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((continueWithDefa
     const obj6 = { style: tmp.container, children: null };
     const obj7 = { style: tmp.image, source: null };
     const tmp5Result = tmp5(1885);
-    obj7.source = _modDef13820;
+    obj7.source = _modDef13856;
     const items2 = [closure_11(closure_5, obj7), , , , , ];
     const obj8 = { style: tmp.header, accessibilityRole: "header", children: null };
     const intl = tmp5(1119).intl;
     const obj9 = { discountPercentage: formatPercentResult, planName: null };
     const tmp19 = common_AlertDefault;
     const tmp20 = closure_12;
-    obj9.planName = tmp5(4418).getPremiumTypeDisplayName(premiumTier);
+    obj9.planName = tmp5(4450).getPremiumTypeDisplayName(premiumTier);
     obj8.children = intl.format(tmp5(1119).t.LQCVfK, obj9);
     items2[1] = closure_11(tmp5(1181).LegacyText, obj8);
     const obj10 = { style: tmp.description, children: null };
@@ -293,7 +293,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((continueWithDefa
     };
     obj13.disabled = tmp11;
     obj13.loading = "upsell" === tmp4 && tmp2;
-    obj12.children = closure_11(tmp5(5188).Button, obj13);
+    obj12.children = closure_11(tmp5(5220).Button, obj13);
     items2[3] = closure_11(closure_6, obj12);
     const obj15 = { style: tmp.continueButton, children: null };
     const obj16 = { variant: "secondary", text: null, onPress: null, disabled: null, loading: null };
@@ -305,14 +305,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((continueWithDefa
     };
     obj16.disabled = tmp11;
     obj16.loading = "default" === tmp4 && tmp2;
-    obj15.children = closure_11(tmp5(5188).Button, obj16);
+    obj15.children = closure_11(tmp5(5220).Button, obj16);
     items2[4] = closure_11(closure_6, obj15);
     const obj17 = { style: tmp.cancelButton, children: null };
     const obj18 = { variant: "tertiary", text: null, onPress: null };
     const intl5 = tmp5(1119).intl;
     obj18.text = intl5.string(tmp5(1119).t.cpT0Cq);
     obj18.onPress = onClose;
-    obj17.children = closure_11(tmp5(5188).Button, obj18);
+    obj17.children = closure_11(tmp5(5220).Button, obj18);
     items2[5] = closure_11(closure_6, obj17);
     obj6.children = items2;
     obj5.children = tmp20(closure_6, obj6);

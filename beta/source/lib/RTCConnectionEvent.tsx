@@ -1,9 +1,9 @@
-// Module ID: 4812
-// Function ID: 4813
+// Module ID: 4844
+// Function ID: 4845
 // Name: RTCConnectionEvent
 // Dependencies: [2]
 
-// Module 4812 (RTCConnectionEvent)
+// Module 4844 (RTCConnectionEvent)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/RTCConnectionEvent.tsx");

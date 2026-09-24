@@ -1,18 +1,18 @@
-// Module ID: 8645
-// Function ID: 8646
+// Module ID: 8677
+// Function ID: 8678
 // Name: MediaModalOverlayHeaderWrapper
-// Dependencies: [19, 17, 21, 4758, 5897, 558, 568, 1616, 2]
+// Dependencies: [19, 17, 21, 4790, 5929, 558, 568, 1616, 2]
 
-// Module 8645 (MediaModalOverlayHeaderWrapper)
+// Module 8677 (MediaModalOverlayHeaderWrapper)
 import c from "c" /* 568 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import NavigatorConstants from "NavigatorConstants" /* 5897 */;
+import NavigatorConstants from "NavigatorConstants" /* 5929 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles((paddingTop, arg1, arg2) => {
   const obj = { bar: { flexDirection: "row", alignItems: "center", height: NavigatorConstants.NAV_BAR_HEIGHT + paddingTop, paddingTop, paddingLeft: arg1 + 6, paddingRight: arg2 + 6 } };
   return obj;

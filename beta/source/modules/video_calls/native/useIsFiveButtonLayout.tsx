@@ -1,9 +1,9 @@
-// Module ID: 9665
-// Function ID: 9666
+// Module ID: 9697
+// Function ID: 9698
 // Name: useIsFiveButtonLayout
-// Dependencies: [2045, 2067, 558, 568, 504, 9640, 9666, 9667, 7515, 2]
+// Dependencies: [2045, 2067, 558, 568, 504, 9672, 9698, 9699, 7547, 2]
 
-// Module 9665 (useIsFiveButtonLayout)
+// Module 9697 (useIsFiveButtonLayout)
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
@@ -57,7 +57,7 @@ export const useIsFiveButtonLayout = ReactCompilerGating.isReactCompilerEnabled(
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  const tmp10 = guild_id(9666);
+  const tmp10 = guild_id(9698);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [GuildStore];
     cResult[3] = items1;
@@ -79,7 +79,7 @@ export const useIsFiveButtonLayout = ReactCompilerGating.isReactCompilerEnabled(
     tmp16 = cResult[5];
     tmp17 = cResult[6];
   }
-  const tmp10Result = guild_id(9666)(guild_id1, id);
+  const tmp10Result = guild_id(9698)(guild_id1, id);
   const stateFromStores1 = require("initialize").useStateFromStores(tmp14, tmp16, tmp17);
   if (stateFromStores1 != null) {
     const afkChannelId = stateFromStores1.afkChannelId;
@@ -103,8 +103,8 @@ export const useIsFiveButtonLayout = ReactCompilerGating.isReactCompilerEnabled(
   if (stateFromStores != null) {
     id1 = stateFromStores.id;
   }
-  const tmp9Result = guild_id(9667);
-  const tmp9ResultResult = guild_id(9667)(id1);
+  const tmp9Result = guild_id(9699);
+  const tmp9ResultResult = guild_id(9699)(id1);
   if (isConnectedToVoiceChannel) {
     isConnectedToVoiceChannel = tmp10Result;
   }
@@ -147,8 +147,8 @@ export const useIsFiveButtonLayout = ReactCompilerGating.isReactCompilerEnabled(
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  const tmp6 = guild_id(9666);
-  const tmp6Result = guild_id(9666)(guild_id1, id);
+  const tmp6 = guild_id(9698);
+  const tmp6Result = guild_id(9698)(guild_id1, id);
   const items1 = [GuildStore];
   const items2 = [guild_id];
   const stateFromStores1 = tmp(504).useStateFromStores(items1, () => GuildStore.getGuild(guild_id), items2);
@@ -167,8 +167,8 @@ export const useIsFiveButtonLayout = ReactCompilerGating.isReactCompilerEnabled(
   if (stateFromStores != null) {
     id1 = stateFromStores.id;
   }
-  const tmp5Result = guild_id(9667);
-  const tmp5ResultResult = guild_id(9667)(id1);
+  const tmp5Result = guild_id(9699);
+  const tmp5ResultResult = guild_id(9699)(id1);
   if (isConnectedToVoiceChannel) {
     isConnectedToVoiceChannel = tmp6Result;
   }

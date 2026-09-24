@@ -1,16 +1,16 @@
-// Module ID: 9051
-// Function ID: 9052
+// Module ID: 9083
+// Function ID: 9084
 // Name: WishlistItemCardBase
-// Dependencies: [19, 17, 21, 580, 4758, 558, 568, 4458, 9052, 4471, 8512, 4462, 9054, 1119, 1374, 9074, 5315, 2]
+// Dependencies: [19, 17, 21, 580, 4790, 558, 568, 4490, 9084, 4503, 8544, 4494, 9086, 1119, 1374, 9106, 5347, 2]
 
-// Module 9051 (WishlistItemCardBase)
+// Module 9083 (WishlistItemCardBase)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
-import useToken from "useToken" /* 4462 */;
-import native from "native" /* 4471 */;
-import useUserProfileColors from "useUserProfileColors" /* 8512 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
+import useToken from "useToken" /* 4494 */;
+import native from "native" /* 4503 */;
+import useUserProfileColors from "useUserProfileColors" /* 8544 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -19,7 +19,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
 const rect = { position: "absolute", top: nativeDefault.space.PX_8, right: nativeDefault.space.PX_8 };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { card: { borderWidth: 1, borderRadius: nativeDefault.radii.lg, borderColor: nativeDefault.colors.BORDER_MUTED, justifyContent: "center", alignItems: "center", overflow: "hidden" }, overlayContainer: null, previewWrap: null, dimmedPreview: null, sourceIcon: null, lockBadge: null };
 let obj4 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -64,7 +64,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((toastText) => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "md" };
-    const tmp9 = closure_5(toastText(9052).HeartIcon, obj2);
+    const tmp9 = closure_5(toastText(9084).HeartIcon, obj2);
     cResult[2] = tmp9;
     let tmp6 = tmp9;
   } else {
@@ -91,7 +91,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((toastText) => {
     accessible: false,
     accessibilityElementsHidden: true,
     importantForAccessibility: "no-hide-descendants",
-    children: closure_5(toastText(9052).HeartIcon, { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "md" })
+    children: closure_5(toastText(9084).HeartIcon, { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "md" })
   };
   return closure_5(closure_3, obj);
 });
@@ -116,8 +116,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
       if (cResult[2] === theme) {
         let tmp6 = cResult[3];
       }
-      const tmpResult3 = tmp(8512);
-      let containerBackground = tmp(4462).useToken(nativeDefault.colors.BG_SURFACE_RAISED);
+      const tmpResult3 = tmp(8544);
+      let containerBackground = tmp(4494).useToken(nativeDefault.colors.BG_SURFACE_RAISED);
       if (null != primaryColor) {
         containerBackground = tmpResult3.useUserProfileColors(tmp6).containerBackground;
       }
@@ -145,7 +145,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
             if (cResult[10] === tmp10) {
               let tmp12 = cResult[11];
             }
-            const tmp13 = source.source === tmp(9054).WishlistItemSource.WISHLIST;
+            const tmp13 = source.source === tmp(9086).WishlistItemSource.WISHLIST;
             if (cResult[12] === accessibilityLabel) {
               if (cResult[13] === tmp13) {
                 if (cResult[14] === overlay) {
@@ -279,7 +279,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
                         if (tmp35) {
                           const obj10 = { style: tmp4.lockBadge, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
                           const obj11 = { color: tmp7(580).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, size: "custom", style: { width: 18, height: 18 } };
-                          obj10.children = hasOwnProperty(tmp(5315).LockIcon, obj11);
+                          obj10.children = hasOwnProperty(tmp(5347).LockIcon, obj11);
                           tmp35 = hasOwnProperty(React4, obj10);
                         }
                         cResult[29] = overlay;
@@ -291,7 +291,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
                       if (tmp31) {
                         const obj12 = { style: tmp4.overlayContainer, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
                         const obj13 = { color: tmp7(580).colors.WHITE, size: "custom", style: { width: 40, height: 40 } };
-                        obj12.children = hasOwnProperty(tmp(9074).CheckmarkLargeBoldIcon, obj13);
+                        obj12.children = hasOwnProperty(tmp(9106).CheckmarkLargeBoldIcon, obj13);
                         tmp31 = hasOwnProperty(React4, obj12);
                       }
                       cResult[26] = overlay;
@@ -352,7 +352,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
         cResult[11] = items3;
         tmp12 = items3;
       }
-      const tmpResult4 = tmp(4462);
+      const tmpResult4 = tmp(4494);
     }
   }
   const obj16 = { theme, primaryColor, secondaryColor };
@@ -398,7 +398,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
       stringResult = intl2.string(tmp2(1119).t.wu4gyV);
     }
   }
-  let tmp14Result4 = source === tmp2(9054).WishlistItemSource.WISHLIST;
+  let tmp14Result4 = source === tmp2(9086).WishlistItemSource.WISHLIST;
   items1[1] = stringResult;
   let tmp10 = null;
   if (tmp14Result4) {
@@ -420,7 +420,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
   if (tmp14Result) {
     obj7 = { style: tmp.overlayContainer, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
     const obj8 = { color: tmp5(580).colors.WHITE, size: "custom", style: { width: 40, height: 40 } };
-    obj7.children = tmp14(tmp2(9074).CheckmarkLargeBoldIcon, obj8);
+    obj7.children = tmp14(tmp2(9106).CheckmarkLargeBoldIcon, obj8);
     tmp14Result = tmp14(tmp15, obj7);
   }
   items3[1] = tmp14Result;
@@ -428,7 +428,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
   if (tmp14Result3) {
     const obj9 = { style: tmp.lockBadge, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
     const obj10 = { color: tmp5(580).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, size: "custom", style: { width: 18, height: 18 } };
-    obj9.children = tmp14(tmp2(5315).LockIcon, obj10);
+    obj9.children = tmp14(tmp2(5347).LockIcon, obj10);
     tmp14Result3 = tmp14(tmp15, obj9);
   }
   items3[2] = tmp14Result3;

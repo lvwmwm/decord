@@ -1,10 +1,10 @@
-// Module ID: 8631
-// Function ID: 8632
+// Module ID: 8663
+// Function ID: 8664
 // Name: useLabFeature
-// Dependencies: [8629, 558, 568, 504, 2]
+// Dependencies: [8661, 558, 568, 504, 2]
 
-// Module 8631 (useLabFeature)
-import LabFeatureStore from "LabFeatureStore" /* 8629 */;
+// Module 8663 (useLabFeature)
+import LabFeatureStore from "LabFeatureStore" /* 8661 */;
 
 const require = globalThis.__r;
 

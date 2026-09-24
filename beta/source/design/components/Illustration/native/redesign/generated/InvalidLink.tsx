@@ -1,13 +1,13 @@
-// Module ID: 11926
-// Function ID: 11927
+// Module ID: 11962
+// Function ID: 11963
 // Name: InvalidLink
-// Dependencies: [19, 17, 21, 8507, 11586, 11927, 11587, 558, 568, 4610, 2]
+// Dependencies: [19, 17, 21, 8539, 11622, 11963, 11623, 558, 568, 4642, 2]
 // Exports: getInvalidLinkSource
 
-// Module 11926 (InvalidLink)
+// Module 11962 (InvalidLink)
 import c from "c" /* 568 */;
-import shared from "shared" /* 4610 */;
-import _mod8507 from "module_8507" /* 8507 */;
+import shared from "shared" /* 4642 */;
+import _mod8539 from "module_8539" /* 8539 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,50 +20,50 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] !== theme) {
     const obj3 = {
       dark() {
-          return require("module_11586");
+          return require("module_11622");
         },
       darker() {
-          return require("module_11927");
+          return require("module_11963");
         },
       light() {
-          return require("module_11587");
+          return require("module_11623");
         }
     };
-    const illustrationSource = _mod8507.getIllustrationSource(theme, obj3);
+    const illustrationSource = _mod8539.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
     let tmp4 = illustrationSource;
-    const tmpResult = _mod8507;
+    const tmpResult = _mod8539;
   } else {
     tmp4 = cResult[1];
   }
   return tmp4;
 }) : (() => {
   const obj = shared;
-  return _mod8507.getIllustrationSource(obj.useThemeContext().theme, {
+  return _mod8539.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_11586");
+      return require("module_11622");
     },
     darker() {
-      return require("module_11927");
+      return require("module_11963");
     },
     light() {
-      return require("module_11587");
+      return require("module_11623");
     }
   });
 });
 let closure_4 = tmp3;
 ReactCompilerGating = fn(558);
 function getInvalidLinkSource(theme) {
-  return _mod8507.getIllustrationSource(theme, {
+  return _mod8539.getIllustrationSource(theme, {
     dark() {
-      return require("module_11586");
+      return require("module_11622");
     },
     darker() {
-      return require("module_11927");
+      return require("module_11963");
     },
     light() {
-      return require("module_11587");
+      return require("module_11623");
     }
   });
 }

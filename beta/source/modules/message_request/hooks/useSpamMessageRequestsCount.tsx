@@ -1,12 +1,12 @@
-// Module ID: 17358
-// Function ID: 17359
+// Module ID: 17368
+// Function ID: 17369
 // Name: useSpamMessageRequestsCount
-// Dependencies: [7467, 558, 568, 504, 2]
+// Dependencies: [7499, 558, 568, 504, 2]
 
-// Module 17358 (useSpamMessageRequestsCount)
+// Module 17368 (useSpamMessageRequestsCount)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7467 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7499 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);

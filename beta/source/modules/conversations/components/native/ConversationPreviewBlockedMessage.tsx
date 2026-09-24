@@ -1,13 +1,13 @@
-// Module ID: 8191
-// Function ID: 8192
+// Module ID: 8223
+// Function ID: 8224
 // Name: ConversationPreviewBlockedMessage
-// Dependencies: [19, 21, 558, 568, 8192, 580, 7209, 1119, 4754, 5186, 2]
+// Dependencies: [19, 21, 558, 568, 8224, 580, 7241, 1119, 4786, 5218, 2]
 
-// Module 8191 (ConversationPreviewBlockedMessage)
+// Module 8223 (ConversationPreviewBlockedMessage)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,9 +22,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
   reason = reason.reason;
   if (cResult[0] !== reason) {
     if ("blocked" === reason) {
-      let EyeSlashIcon = tmp(8192).DenyIcon;
+      let EyeSlashIcon = tmp(8224).DenyIcon;
     } else {
-      EyeSlashIcon = tmp(7209).EyeSlashIcon;
+      EyeSlashIcon = tmp(7241).EyeSlashIcon;
     }
     const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_MUTED };
     const tmp5Result = React3(EyeSlashIcon, obj2);
@@ -43,7 +43,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
   } else {
     if (cResult[4] !== cResult[3]) {
       const obj3 = { variant: "text-md/normal", color: "text-muted", children: tmp9 };
-      const tmp14 = React3(tmp(4754).Text, obj3);
+      const tmp14 = React3(tmp(4786).Text, obj3);
       cResult[4] = tmp9;
       cResult[5] = tmp14;
       let tmp12 = tmp14;
@@ -59,7 +59,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
     const obj4 = { direction: "horizontal", spacing: nativeDefault.space.PX_8, align: "center", children: null };
     const items = [tmp4, tmp12];
     obj4.children = items;
-    const tmp18 = React4(tmp(5186).Stack, obj4);
+    const tmp18 = React4(tmp(5218).Stack, obj4);
     cResult[6] = tmp4;
     cResult[7] = tmp12;
     cResult[8] = tmp18;
@@ -68,9 +68,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((reason) => {
 }) : ((reason) => {
   const obj = { direction: "horizontal", spacing: nativeDefault.space.PX_8, align: "center", children: null };
   if ("blocked" === reason.reason) {
-    let EyeSlashIcon = tmp2(8192).DenyIcon;
+    let EyeSlashIcon = tmp2(8224).DenyIcon;
   } else {
-    EyeSlashIcon = tmp2(7209).EyeSlashIcon;
+    EyeSlashIcon = tmp2(7241).EyeSlashIcon;
   }
   const items = [React3(EyeSlashIcon, { size: "sm", color: nativeDefault.colors.TEXT_MUTED }), ];
   const intl = tmp2(1119).intl;

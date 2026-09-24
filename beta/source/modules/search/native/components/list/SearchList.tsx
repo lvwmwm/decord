@@ -1,31 +1,31 @@
-// Module ID: 17124
-// Function ID: 17125
+// Module ID: 17134
+// Function ID: 17135
 // Name: SearchList
-// Dependencies: [19, 17, 8127, 21, 4758, 17125, 17127, 17128, 17143, 17121, 17145, 17147, 17142, 17129, 17148, 17152, 17153, 17156, 17157, 17158, 17159, 17160, 558, 568, 1616, 17112, 1119, 8995, 2]
+// Dependencies: [19, 17, 8159, 21, 4790, 17135, 17137, 17138, 17153, 17131, 17155, 17157, 17152, 17139, 17158, 17162, 17163, 17166, 17167, 17168, 17169, 17170, 558, 568, 1616, 17122, 1119, 9027, 2]
 
-// Module 17124 (SearchList)
+// Module 17134 (SearchList)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import _mod8995 from "module_8995" /* 8995 */;
-import pages_ErrorScreenDefault from "pages/ErrorScreen" /* 17112 */;
-import MediaGridPlaceholderDefault from "MediaGridPlaceholder" /* 17121 */;
-import DMRowDefault from "DMRow" /* 17125 */;
-import rows_GroupDMRowDefault from "rows/GroupDMRow" /* 17127 */;
-import SearchHistoryRowDefault from "SearchHistoryRow" /* 17128 */;
-import GuildVoiceOrStageChannelRowDefault from "GuildVoiceOrStageChannelRow" /* 17129 */;
-import GuildTextChannelRowDefault from "GuildTextChannelRow" /* 17142 */;
-import MediaGridItemDefault from "MediaGridItem" /* 17143 */;
-import FileOrLinkGridPlaceholderDefault from "FileOrLinkGridPlaceholder" /* 17145 */;
-import MediaGridDefault from "MediaGrid" /* 17147 */;
-import MessageRowDefault from "MessageRow" /* 17148 */;
-import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 17152 */;
-import LinkGridItemDefault from "LinkGridItem" /* 17153 */;
-import FileGridItemDefault from "FileGridItem" /* 17156 */;
-import GuildChannelMemberRowDefault from "GuildChannelMemberRow" /* 17157 */;
-import MemberRowPlaceholderDefault from "MemberRowPlaceholder" /* 17158 */;
-import GenericTextRowDefault from "GenericTextRow" /* 17159 */;
-import SearchListSectionDefault from "SearchListSection" /* 17160 */;
+import _mod9027 from "module_9027" /* 9027 */;
+import pages_ErrorScreenDefault from "pages/ErrorScreen" /* 17122 */;
+import MediaGridPlaceholderDefault from "MediaGridPlaceholder" /* 17131 */;
+import DMRowDefault from "DMRow" /* 17135 */;
+import rows_GroupDMRowDefault from "rows/GroupDMRow" /* 17137 */;
+import SearchHistoryRowDefault from "SearchHistoryRow" /* 17138 */;
+import GuildVoiceOrStageChannelRowDefault from "GuildVoiceOrStageChannelRow" /* 17139 */;
+import GuildTextChannelRowDefault from "GuildTextChannelRow" /* 17152 */;
+import MediaGridItemDefault from "MediaGridItem" /* 17153 */;
+import FileOrLinkGridPlaceholderDefault from "FileOrLinkGridPlaceholder" /* 17155 */;
+import MediaGridDefault from "MediaGrid" /* 17157 */;
+import MessageRowDefault from "MessageRow" /* 17158 */;
+import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 17162 */;
+import LinkGridItemDefault from "LinkGridItem" /* 17163 */;
+import FileGridItemDefault from "FileGridItem" /* 17166 */;
+import GuildChannelMemberRowDefault from "GuildChannelMemberRow" /* 17167 */;
+import MemberRowPlaceholderDefault from "MemberRowPlaceholder" /* 17168 */;
+import GenericTextRowDefault from "GenericTextRow" /* 17169 */;
+import SearchListSectionDefault from "SearchListSection" /* 17170 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -187,11 +187,11 @@ function renderItem(item) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet: hasOwnProperty } = get_ActivityIndicator);
-const SearchConstants = fn(8127);
+const SearchConstants = fn(8159);
 ({ SearchHistoryItemTypes: metroRequire, SearchListItemTypes: closure_7 } = SearchConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles({ container: { flex: 1 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -283,7 +283,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       }
     }
     const obj6 = { ref, overrideProps: tmp14, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", data, renderItem, onEndReachedThreshold: num, onEndReached, scrollsToTop: true, contentContainerStyle: tmp16, keyExtractor, getItemType, ListHeaderComponent, ListFooterComponent, ItemSeparatorComponent, numColumns };
-    const tmp23 = closure_1_8(tmp(8995).AnimatedFlashList, obj6);
+    const tmp23 = closure_1_8(tmp(9027).AnimatedFlashList, obj6);
     cResult[7] = ItemSeparatorComponent;
     cResult[8] = ListFooterComponent;
     cResult[9] = ListHeaderComponent;
@@ -351,7 +351,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   obj4.ListFooterComponent = ListFooterComponent;
   obj4.ItemSeparatorComponent = ItemSeparatorComponent;
   obj4.numColumns = numColumns;
-  items[1] = tmp13(_mod8995.AnimatedFlashList, obj4);
+  items[1] = tmp13(_mod9027.AnimatedFlashList, obj4);
   obj.children = items;
   return tmp6(React4, obj);
 }));

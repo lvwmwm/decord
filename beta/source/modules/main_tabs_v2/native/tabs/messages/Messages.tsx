@@ -1,15 +1,15 @@
-// Module ID: 16360
-// Function ID: 16361
+// Module ID: 16370
+// Function ID: 16371
 // Name: messages/Messages
-// Dependencies: [19, 4750, 5496, 21, 558, 568, 7409, 7429, 4497, 15356, 16361, 16365, 16384, 16386, 16387, 16388, 13725, 16389, 1368, 4617, 4616, 7226, 7722, 9, 15355, 1119, 16366, 16390, 16392, 16438, 16439, 12026, 9093, 580, 16440, 2]
+// Dependencies: [19, 4782, 5528, 21, 558, 568, 7441, 7461, 4529, 15366, 16371, 16375, 16394, 16396, 16397, 16398, 13761, 16399, 1368, 4649, 4648, 7258, 7754, 9, 15365, 1119, 16376, 16400, 16402, 16448, 16449, 12062, 9125, 580, 16450, 2]
 
-// Module 16360 (messages/Messages)
+// Module 16370 (messages/Messages)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7722 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7754 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5528 */;
 
 require = fn;
 const jsxProd = fn(21);
@@ -65,23 +65,23 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       if (null != dataKey) {
         if (!obj7.isAndroid()) {
           if (!AccessibilityStore.useReducedMotion) {
-            const rootNavigationRef = tmp5(4617).getRootNavigationRef();
+            const rootNavigationRef = tmp5(4649).getRootNavigationRef();
             let tmp2 = null != rootNavigationRef && rootNavigationRef.isReady();
             if (tmp2) {
-              const tmp5Result4 = tmp5(4616);
-              const rootNavigationRef1 = tmp5(4617).getRootNavigationRef();
+              const tmp5Result4 = tmp5(4648);
+              const rootNavigationRef1 = tmp5(4649).getRootNavigationRef();
               let currentRoute;
               if (rootNavigationRef1 != null) {
                 currentRoute = rootNavigationRef1.getCurrentRoute();
               }
               tmp2 = null != tmp5Result4.coerceGuildsRoute(currentRoute);
-              const tmp5Result5 = tmp5(4617);
+              const tmp5Result5 = tmp5(4649);
             }
             if (tmp2) {
-              const result = tmp5(7226).DeprecatedLayoutAnimation();
-              const tmp5Result6 = tmp5(7226);
+              const result = tmp5(7258).DeprecatedLayoutAnimation();
+              const tmp5Result6 = tmp5(7258);
             }
-            const tmp5Result = tmp5(4617);
+            const tmp5Result = tmp5(4649);
           }
         }
         obj7 = PlatformUtils;
@@ -247,23 +247,23 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     if (null != dataKey) {
       if (!obj7.isAndroid()) {
         if (!AccessibilityStore.useReducedMotion) {
-          const rootNavigationRef = tmp5(4617).getRootNavigationRef();
+          const rootNavigationRef = tmp5(4649).getRootNavigationRef();
           let tmp2 = null != rootNavigationRef && rootNavigationRef.isReady();
           if (tmp2) {
-            const tmp5Result4 = tmp5(4616);
-            const rootNavigationRef1 = tmp5(4617).getRootNavigationRef();
+            const tmp5Result4 = tmp5(4648);
+            const rootNavigationRef1 = tmp5(4649).getRootNavigationRef();
             let currentRoute;
             if (rootNavigationRef1 != null) {
               currentRoute = rootNavigationRef1.getCurrentRoute();
             }
             tmp2 = null != tmp5Result4.coerceGuildsRoute(currentRoute);
-            const tmp5Result5 = tmp5(4617);
+            const tmp5Result5 = tmp5(4649);
           }
           if (tmp2) {
-            const result = tmp5(7226).DeprecatedLayoutAnimation();
-            const tmp5Result6 = tmp5(7226);
+            const result = tmp5(7258).DeprecatedLayoutAnimation();
+            const tmp5Result6 = tmp5(7258);
           }
-          const tmp5Result = tmp5(4617);
+          const tmp5Result = tmp5(4649);
         }
       }
       obj7 = PlatformUtils;

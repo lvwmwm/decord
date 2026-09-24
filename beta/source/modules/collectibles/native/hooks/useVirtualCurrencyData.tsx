@@ -1,12 +1,12 @@
-// Module ID: 13458
-// Function ID: 13459
+// Module ID: 13494
+// Function ID: 13495
 // Name: useVirtualCurrencyData
-// Dependencies: [19, 558, 568, 7800, 9127, 2]
+// Dependencies: [19, 558, 568, 7832, 9159, 2]
 
-// Module 13458 (useVirtualCurrencyData)
+// Module 13494 (useVirtualCurrencyData)
 import c from "c" /* 568 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7800 */;
-import _mod9127 from "module_9127" /* 9127 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7832 */;
+import _mod9159 from "module_9159" /* 9159 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ export const useVirtualCurrencyData = ReactCompilerGating.isReactCompilerEnabled
     if (cResult[1] === product) {
       let tmp4 = cResult[2];
     }
-    const balance = tmp(9127).useFetchVirtualCurrencyBalance().balance;
+    const balance = tmp(9159).useFetchVirtualCurrencyBalance().balance;
     let tmp7 = null;
     if (null != tmp4) {
       tmp7 = null;
@@ -42,7 +42,7 @@ export const useVirtualCurrencyData = ReactCompilerGating.isReactCompilerEnabled
     cResult[5] = tmp4;
     cResult[6] = obj2;
     tmp8 = obj2;
-    const tmpResult = tmp(9127);
+    const tmpResult = tmp(9159);
   }
   const productOrbPrice = CollectiblesProductUtils.getProductOrbPrice({ product, hasShopDiscount });
   cResult[0] = hasShopDiscount;
@@ -52,7 +52,7 @@ export const useVirtualCurrencyData = ReactCompilerGating.isReactCompilerEnabled
 }) : ((product, hasShopDiscount) => {
   const productOrbPrice = CollectiblesProductUtils.getProductOrbPrice({ product, hasShopDiscount });
   const obj2 = { product, hasShopDiscount };
-  const balance = _mod9127.useFetchVirtualCurrencyBalance().balance;
+  const balance = _mod9159.useFetchVirtualCurrencyBalance().balance;
   const items = [productOrbPrice, balance];
   return {
     price: productOrbPrice,

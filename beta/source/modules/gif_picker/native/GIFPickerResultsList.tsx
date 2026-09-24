@@ -1,11 +1,11 @@
-// Module ID: 10670
-// Function ID: 10671
+// Module ID: 10706
+// Function ID: 10707
 // Name: GIFPickerResultsList
-// Dependencies: [32, 19, 21, 4758, 10661, 558, 568, 10654, 10671, 8995, 10498, 2]
+// Dependencies: [32, 19, 21, 4790, 10697, 558, 568, 10690, 10707, 9027, 10534, 2]
 
-// Module 10670 (GIFPickerResultsList)
+// Module 10706 (GIFPickerResultsList)
 import c from "c" /* 568 */;
-import GIFPickerItemView from "GIFPickerItemView" /* 10671 */;
+import GIFPickerItemView from "GIFPickerItemView" /* 10707 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -13,11 +13,11 @@ const GIFPickerItemViewDefault = GIFPickerItemView;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
-let obj2 = { list: { marginHorizontal: -fn(10661).GIF_PICKER_GUTTER_SPACING / 2 } };
+const createStyles = fn(4790);
+let obj2 = { list: { marginHorizontal: -fn(10697).GIF_PICKER_GUTTER_SPACING / 2 } };
 let closure_6 = createStyles.createStyles(obj2);
 let obj4 = { length: 20 };
-let obj3 = { marginHorizontal: -fn(10661).GIF_PICKER_GUTTER_SPACING / 2 };
+let obj3 = { marginHorizontal: -fn(10697).GIF_PICKER_GUTTER_SPACING / 2 };
 let closure_7 = Array.from(obj4).map(() => {
 
 });
@@ -105,7 +105,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((loading) => {
   } else {
     first = cResult[0];
   }
-  const safeAreaBottomKeyboardAware = onPressGIF(10654)(first).safeAreaBottomKeyboardAware;
+  const safeAreaBottomKeyboardAware = onPressGIF(10690)(first).safeAreaBottomKeyboardAware;
   if (loading.loading) {
     resultItems = closure_7;
   }
@@ -188,7 +188,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((loading) => {
           return src;
         }
       }
-      tmp(8995);
+      tmp(9027);
       class V {
         constructor(arg0) {
           ({ item, index, extraData } = loading);
@@ -234,7 +234,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((loading) => {
           }
         }
       }
-      const isPortalKeyboardInModal = tmp(10498).useIsPortalKeyboardInModal();
+      const isPortalKeyboardInModal = tmp(10534).useIsPortalKeyboardInModal();
       if (cResult[10] !== safeAreaBottomKeyboardAware) {
         class M {
           constructor(arg0, arg1) {
@@ -418,8 +418,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((loading) => {
           }
         }
       }
-      let obj3 = { contentContainerStyle: tmp14, data: resultItems, drawDistance: tmp(10661).GIF_PICKER_ITEM_ESIMTATED_HEIGHT, extraData: tmp9, keyExtractor: tmp7, keyboardDismissMode, keyboardShouldPersistTaps: "always", maintainVisibleContentPosition: tmp16, numColumns: columns, ListFooterComponent, optimizeItemArrangement: true, onViewableItemsChanged, preventNativeModalDismiss: inActionSheet, renderItem: tmp10, style: tmp4.list };
-      const tmp20 = <tmp12 contentContainerStyle={tmp14} data={resultItems} drawDistance={tmp(10661).GIF_PICKER_ITEM_ESIMTATED_HEIGHT} extraData={tmp9} keyExtractor={tmp7} keyboardDismissMode={keyboardDismissMode} keyboardShouldPersistTaps="always" maintainVisibleContentPosition={tmp16} numColumns={columns} ListFooterComponent={ListFooterComponent} optimizeItemArrangement onViewableItemsChanged={onViewableItemsChanged} preventNativeModalDismiss={inActionSheet} renderItem={tmp10} style={tmp4.list} />;
+      let obj3 = { contentContainerStyle: tmp14, data: resultItems, drawDistance: tmp(10697).GIF_PICKER_ITEM_ESIMTATED_HEIGHT, extraData: tmp9, keyExtractor: tmp7, keyboardDismissMode, keyboardShouldPersistTaps: "always", maintainVisibleContentPosition: tmp16, numColumns: columns, ListFooterComponent, optimizeItemArrangement: true, onViewableItemsChanged, preventNativeModalDismiss: inActionSheet, renderItem: tmp10, style: tmp4.list };
+      const tmp20 = <tmp12 contentContainerStyle={tmp14} data={resultItems} drawDistance={tmp(10697).GIF_PICKER_ITEM_ESIMTATED_HEIGHT} extraData={tmp9} keyExtractor={tmp7} keyboardDismissMode={keyboardDismissMode} keyboardShouldPersistTaps="always" maintainVisibleContentPosition={tmp16} numColumns={columns} ListFooterComponent={ListFooterComponent} optimizeItemArrangement onViewableItemsChanged={onViewableItemsChanged} preventNativeModalDismiss={inActionSheet} renderItem={tmp10} style={tmp4.list} />;
       cResult[13] = tmp12;
       cResult[14] = ListFooterComponent;
       cResult[15] = columns;
@@ -432,7 +432,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((loading) => {
       cResult[22] = tmp14;
       cResult[23] = inActionSheet;
       cResult[24] = tmp20;
-      const tmpResult2 = tmp(10498);
+      const tmpResult2 = tmp(10534);
     }
     class V {
       constructor(arg0) {

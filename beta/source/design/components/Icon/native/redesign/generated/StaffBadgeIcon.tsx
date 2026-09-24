@@ -1,13 +1,13 @@
-// Module ID: 15844
-// Function ID: 15845
+// Module ID: 15854
+// Function ID: 15855
 // Name: StaffBadgeIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 15845, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 15855, 4493, 2]
 
-// Module 15844 (StaffBadgeIcon)
+// Module 15854 (StaffBadgeIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod15845 from "module_15845" /* 15845 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod15855 from "module_15855" /* 15855 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const StaffBadgeIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(15845);
+    const tmpResult = tmp(15855);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const StaffBadgeIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15845, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15855, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

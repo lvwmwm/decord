@@ -1,20 +1,20 @@
-// Module ID: 13752
-// Function ID: 13753
+// Module ID: 13788
+// Function ID: 13789
 // Name: PremiumGroupFeaturesTableCard
-// Dependencies: [17, 7676, 21, 4758, 580, 558, 568, 1119, 4754, 13753, 4608, 9493, 5198, 1181, 2]
+// Dependencies: [17, 7708, 21, 4790, 580, 558, 568, 1119, 4786, 13789, 4640, 9525, 5230, 1181, 2]
 
-// Module 13752 (PremiumGroupFeaturesTableCard)
+// Module 13788 (PremiumGroupFeaturesTableCard)
 import _mod17 from "module_17" /* 17 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import ColorUtils from "ColorUtils" /* 4608 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ColorConstants from "ColorConstants" /* 7676 */;
-import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 13753 */;
+import ColorUtils from "ColorUtils" /* 4640 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ColorConstants from "ColorConstants" /* 7708 */;
+import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 13789 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp4.betaText) {
     const obj2 = { variant: "text-xs/bold", style: betaText, children: first };
-    const tmp9 = hasOwnProperty(tmp(4754).Text, obj2);
+    const tmp9 = hasOwnProperty(tmp(4786).Text, obj2);
     cResult[1] = tmp4.betaText;
     cResult[2] = tmp9;
     let tmp7 = tmp9;
@@ -91,11 +91,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const point = { x: 0, y: 0 };
       const point1 = { x: 1, y: 0 };
-      const items = [tmp(4608).hexWithOpacity("#8547C6", 0.15), , ];
-      const tmpResult = tmp(4608);
-      items[1] = tmp(4608).hexWithOpacity("#B845C1", 0.15);
-      const tmpResult3 = tmp(4608);
-      items[2] = tmp(4608).hexWithOpacity("#AB5D8A", 0.15);
+      const items = [tmp(4640).hexWithOpacity("#8547C6", 0.15), , ];
+      const tmpResult = tmp(4640);
+      items[1] = tmp(4640).hexWithOpacity("#B845C1", 0.15);
+      const tmpResult3 = tmp(4640);
+      items[2] = tmp(4640).hexWithOpacity("#AB5D8A", 0.15);
       const items1 = [0, 0.4996, 0.9593];
       cResult[0] = point;
       cResult[1] = point1;
@@ -105,13 +105,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
       tmp7 = point;
       tmp8 = point1;
       tmp9 = items;
-      const tmpResult4 = tmp(4608);
+      const tmpResult4 = tmp(4640);
     } else {
       [tmp7, tmp8, tmp9, tmp10] = cResult;
     }
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp14 = hasOwnProperty(tmp5(9493), { width: 181, height: 16 });
+      const tmp14 = hasOwnProperty(tmp5(9525), { width: 181, height: 16 });
       const tmp16 = hasOwnProperty(closure_8, {});
       cResult[4] = tmp14;
       cResult[5] = tmp16;
@@ -164,7 +164,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
         const obj4 = { start: tmp7, end: tmp8, colors: tmp9, locations: tmp10, style: tmp4.premiumGroupCard, children: null };
         const items3 = [tmp17, tmp21, tmp24];
         obj4.children = items3;
-        const tmp29 = timestampProducer(tmp5(5198), obj4);
+        const tmp29 = timestampProducer(tmp5(5230), obj4);
         cResult[14] = tmp4.premiumGroupCard;
         cResult[15] = tmp17;
         cResult[16] = tmp21;
@@ -173,14 +173,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
         tmp27 = tmp29;
       }
       const obj5 = { variant: "text-sm/normal", style: tmp4.description, children: bodyString };
-      const tmp26 = hasOwnProperty(tmp(4754).Text, obj5);
+      const tmp26 = hasOwnProperty(tmp(4786).Text, obj5);
       cResult[11] = bodyString;
       cResult[12] = tmp4.description;
       cResult[13] = tmp26;
       tmp24 = tmp26;
     }
     const obj6 = { variant: "text-sm/normal", style: tmp4.title, children: subheaderString };
-    const tmp23 = hasOwnProperty(tmp(4754).Text, obj6);
+    const tmp23 = hasOwnProperty(tmp(4786).Text, obj6);
     cResult[8] = tmp4.title;
     cResult[9] = subheaderString;
     cResult[10] = tmp23;
@@ -196,7 +196,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     ({ subheaderString, bodyString } = tmp4);
     const obj = { borderWidth: 2, direction: native.GradientBorder.Direction.HORIZONTAL, colors: Gradients.PREMIUM_TIER_2, borderRadius: tmp2(580).radii.sm, style, children: null };
     const obj2 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, colors: null, locations: null, style: null, children: null };
-    const tmp2Result = tmp2(5198);
+    const tmp2Result = tmp2(5230);
     const items = [ColorUtils.hexWithOpacity("#8547C6", 0.15), , ];
     items[1] = ColorUtils.hexWithOpacity("#B845C1", 0.15);
     items[2] = ColorUtils.hexWithOpacity("#AB5D8A", 0.15);
@@ -204,7 +204,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     obj2.locations = [0, 0.4996, 0.9593];
     obj2.style = tmp.premiumGroupCard;
     const obj6 = { style: tmp.headerContainer, children: null };
-    const items1 = [hasOwnProperty(tmp2(9493), { width: 181, height: 16 }), hasOwnProperty(closure_8, {})];
+    const items1 = [hasOwnProperty(tmp2(9525), { width: 181, height: 16 }), hasOwnProperty(closure_8, {})];
     obj6.children = items1;
     const items2 = [timestampProducer(View, obj6), , ];
     const obj7 = { variant: "text-sm/normal", style: tmp.title, children: subheaderString };

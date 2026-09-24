@@ -1,22 +1,22 @@
-// Module ID: 16181
-// Function ID: 16182
+// Module ID: 16191
+// Function ID: 16192
 // Name: ContentAndSocialScreen
-// Dependencies: [32, 19, 17, 8238, 1078, 21, 4758, 580, 1119, 2112, 16182, 15083, 12827, 558, 568, 16187, 7545, 11594, 15081, 14953, 16188, 4754, 2]
+// Dependencies: [32, 19, 17, 8270, 1078, 21, 4790, 580, 1119, 2112, 16192, 15092, 12863, 558, 568, 16197, 7577, 11630, 15090, 14988, 16198, 4786, 2]
 
-// Module 16181 (ContentAndSocialScreen)
+// Module 16191 (ContentAndSocialScreen)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7545 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12827 */;
-import SettingLayoutDefault from "SettingLayout" /* 14953 */;
-import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 15081 */;
-import TinyBroncoSettingsNoticesLazy from "TinyBroncoSettingsNoticesLazy" /* 15083 */;
-import useUserSafetySettingsSelectedGuildId from "useUserSafetySettingsSelectedGuildId" /* 16187 */;
-import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 16188 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7577 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12863 */;
+import SettingLayoutDefault from "SettingLayout" /* 14988 */;
+import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 15090 */;
+import TinyBroncoSettingsNoticesLazy from "TinyBroncoSettingsNoticesLazy" /* 15092 */;
+import useUserSafetySettingsSelectedGuildId from "useUserSafetySettingsSelectedGuildId" /* 16197 */;
+import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 16198 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -81,7 +81,7 @@ function getSocialPermissions(allServersSelected) {
   let tmp4 = items;
   if (!allServersSelected) {
     const items5 = [];
-    HermesBuiltin.arraySpread(tmp2(16182).GUILD_SPECIFIC_SETTINGS, HermesBuiltin.arraySpread(items, 0));
+    HermesBuiltin.arraySpread(tmp2(16192).GUILD_SPECIFIC_SETTINGS, HermesBuiltin.arraySpread(items, 0));
     tmp4 = items5;
     const arraySpreadResult = HermesBuiltin.arraySpread(items, 0);
   }
@@ -89,7 +89,7 @@ function getSocialPermissions(allServersSelected) {
   let tmp10;
   if (allServersSelected) {
     if (allServersSelected.showMessageRequestsNotice) {
-      tmp10 = options(tmp2(15083).MessageRequestsNotice, {});
+      tmp10 = options(tmp2(15092).MessageRequestsNotice, {});
     }
   }
   obj4.subLabel = tmp10;
@@ -141,11 +141,11 @@ function getSocialPermissions(allServersSelected) {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const MobileUserSettings = fn(8238).MobileUserSettings;
+const MobileUserSettings = fn(8270).MobileUserSettings;
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { loadingIndicator: { marginTop: nativeDefault.space.PX_32 }, emptyContainer: null };
 let obj3 = { marginTop: nativeDefault.space.PX_32 };
 obj2.emptyContainer = { flex: 1, gap: nativeDefault.space.PX_4, marginTop: nativeDefault.space.PX_24, paddingHorizontal: nativeDefault.space.PX_16 };
@@ -165,17 +165,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       if (cResult[4] !== tmp7) {
         const obj5 = { sections: tmp7 };
-        const list = tmp(11594).createList(obj5);
+        const list = tmp(11630).createList(obj5);
         cResult[4] = tmp7;
         cResult[5] = list;
         let tmp8 = list;
-        const tmpResult = tmp(11594);
+        const tmpResult = tmp(11630);
       } else {
         tmp8 = cResult[5];
       }
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj6 = { screen: tmp(15081).SettingsScreen.CONTENT_AND_SOCIAL };
+        const obj6 = { screen: tmp(15090).SettingsScreen.CONTENT_AND_SOCIAL };
         const tmp15 = options(SettingsScreenNoticesDefault, obj6);
         cResult[6] = tmp15;
         let tmp11 = tmp15;
@@ -237,7 +237,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj3.settings = items;
     const intl = tmp(1119).intl;
     const obj4 = { helpdeskArticle: null };
-    const tmpResult = tmp(11594);
+    const tmpResult = tmp(11630);
     obj4.helpdeskArticle = tmp4(2112).getArticleURL(HelpdeskArticles.SLAYER_GAME_FRIENDS);
     obj3.subLabel = intl.format(tmp(1119).t.oZsHTD, obj4);
     const items1 = [obj3, ];
@@ -269,7 +269,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj7 = { variant: "text-md/semibold", color: "text-strong", children: null };
       const intl3 = tmp(1119).intl;
       obj7.children = intl3.string(tmp(1119).t["+0U77d"]);
-      const tmp15 = options(tmp(4754).Text, obj7);
+      const tmp15 = options(tmp(4786).Text, obj7);
       cResult[3] = tmp15;
       let tmp13 = tmp15;
     } else {
@@ -281,7 +281,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const intl4 = tmp(1119).intl;
       const obj9 = { helpdeskArticle: tmp4(2112).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS) };
       obj8.children = intl4.format(tmp(1119).t.V8wClM, obj9);
-      const tmp19 = options(tmp(4754).Text, obj8);
+      const tmp19 = options(tmp(4786).Text, obj8);
       cResult[4] = tmp19;
       let tmp16 = tmp19;
       const tmp4Result2 = tmp4(2112);
@@ -301,7 +301,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const obj11 = { node: first };
-      const tmp12 = options(tmp4(14953), obj11);
+      const tmp12 = options(tmp4(14988), obj11);
       cResult[8] = tmp12;
       let tmp10 = tmp12;
     } else {
@@ -331,7 +331,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const tmp2Result = tmp2(2112);
   } else {
     let obj = { node: tmp5 };
-    tmp7 = options(tmp2(14953), obj);
+    tmp7 = options(tmp2(14988), obj);
   }
   return tmp7;
 });
@@ -387,11 +387,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   const first1 = _slicedToArray(noop.useState(tmp7), 1)[0];
   if (cResult[3] !== first1) {
     const obj2 = { defaultIndex: first1, settings: first };
-    const segmentedControl = route(11594).createSegmentedControl(obj2);
+    const segmentedControl = route(11630).createSegmentedControl(obj2);
     cResult[3] = first1;
     cResult[4] = segmentedControl;
     let tmp10 = segmentedControl;
-    const tmpResult = route(11594);
+    const tmpResult = route(11630);
   } else {
     tmp10 = cResult[4];
   }

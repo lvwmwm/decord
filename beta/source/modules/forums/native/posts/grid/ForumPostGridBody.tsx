@@ -1,19 +1,19 @@
-// Module ID: 12136
-// Function ID: 12137
+// Module ID: 12172
+// Function ID: 12173
 // Name: ForumPostGridBody
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 1181, 12137, 12138, 11532, 4754, 1482, 1374, 12139, 7519, 8146, 12143, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 1181, 12173, 12174, 11568, 4786, 1482, 1374, 12175, 7551, 8178, 12179, 2]
 
-// Module 12136 (ForumPostGridBody)
+// Module 12172 (ForumPostGridBody)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8146 */;
-import _modDef11532 from "module_11532" /* 11532 */;
-import _modDef12137 from "module_12137" /* 12137 */;
-import _modDef12138 from "module_12138" /* 12138 */;
-import ForumPostMedia from "ForumPostMedia" /* 12139 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8178 */;
+import _modDef11568 from "module_11568" /* 11568 */;
+import _modDef12173 from "module_12173" /* 12173 */;
+import _modDef12174 from "module_12174" /* 12174 */;
+import ForumPostMedia from "ForumPostMedia" /* 12175 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -23,7 +23,7 @@ const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 let c8 = 225;
 let c9 = 192;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { gifIcon: null, container: null, wideAspectRatioContainer: null, mediaIconContainer: null, headerLeftContainer: null, footerLeftContainer: null, footerRightContainer: null, extraMediaCountContainer: null, extraMediaCount: null, grid: null, wideAspectRatioGrid: null, column: null, columnSpacer: null, rowSpacer: null, icon: null };
 let size = { height: 20, width: 33, backgroundColor: "black", borderRadius: nativeDefault.radii.xs, resizeMode: "cover" };
 obj2.gifIcon = size;
@@ -50,7 +50,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   const tmp4 = closure_10();
   if (cResult[0] !== tmp4.gifIcon) {
-    const obj2 = { size: tmp(1181).Icon.Sizes.CUSTOM, source: _modDef12137, disableColor: true, style: tmp4.gifIcon };
+    const obj2 = { size: tmp(1181).Icon.Sizes.CUSTOM, source: _modDef12173, disableColor: true, style: tmp4.gifIcon };
     const tmp8 = timestampProducer(tmp(1181).Icon, obj2);
     cResult[0] = tmp4.gifIcon;
     cResult[1] = tmp8;
@@ -61,13 +61,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp5;
 }) : (() => {
   const tmp = closure_10();
-  return timestampProducer(native.Icon, { size: native.Icon.Sizes.CUSTOM, source: _modDef12137, disableColor: true, style: closure_10().gifIcon });
+  return timestampProducer(native.Icon, { size: native.Icon.Sizes.CUSTOM, source: _modDef12173, disableColor: true, style: closure_10().gifIcon });
 });
 ReactCompilerGating = fn(558);
 let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { size: tmp(1181).Icon.Sizes.SMALL_20, source: _modDef12138, disableColor: true };
+    const obj2 = { size: tmp(1181).Icon.Sizes.SMALL_20, source: _modDef12174, disableColor: true };
     const tmp7 = timestampProducer(tmp(1181).Icon, obj2);
     cResult[0] = tmp7;
     let first = tmp7;
@@ -75,13 +75,13 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => timestampProducer(native.Icon, { size: native.Icon.Sizes.SMALL_20, source: _modDef12138, disableColor: true }));
+}) : (() => timestampProducer(native.Icon, { size: native.Icon.Sizes.SMALL_20, source: _modDef12174, disableColor: true }));
 ReactCompilerGating = fn(558);
 let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((extraMediaCount) => {
   const cResult = c.c(9);
   const tmp4 = closure_10();
   if (cResult[0] !== tmp4.icon.color) {
-    const obj2 = { source: _modDef11532, color: tmp4.icon.color, size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16 };
+    const obj2 = { source: _modDef11568, color: tmp4.icon.color, size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16 };
     const tmp8 = timestampProducer(tmp(1181).Icon, obj2);
     cResult[0] = tmp4.icon.color;
     cResult[1] = tmp8;
@@ -120,8 +120,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((extraMediaCoun
 }) : ((extraMediaCount) => {
   const tmp = closure_10();
   const obj = { style: tmp.extraMediaCountContainer, children: null };
-  items = [timestampProducer(native.Icon, { source: _modDef11532, color: tmp.icon.color, size: native.Icon.Sizes.REFRESH_SMALL_16 }), ];
-  const obj2 = { source: _modDef11532, color: tmp.icon.color, size: native.Icon.Sizes.REFRESH_SMALL_16 };
+  items = [timestampProducer(native.Icon, { source: _modDef11568, color: tmp.icon.color, size: native.Icon.Sizes.REFRESH_SMALL_16 }), ];
+  const obj2 = { source: _modDef11568, color: tmp.icon.color, size: native.Icon.Sizes.REFRESH_SMALL_16 };
   items[1] = timestampProducer(Text_Text.Text, { style: tmp.extraMediaCount, lineClamp: 1, variant: "text-xs/normal", color: "text-default", children: "+" + extraMediaCount.extraMediaCount });
   obj.children = items;
   return React5(View, obj);
@@ -337,8 +337,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
   const tmp4 = closure_10();
   let columnSpacer = tmp4;
   let obj = thread(568);
-  let obj2 = thread(7519);
-  [arr, tmp6] = thread(7519).useSomeAppliedTags(thread, 2);
+  let obj2 = thread(7551);
+  [arr, tmp6] = thread(7551).useSomeAppliedTags(thread, 2);
   if (cResult[0] !== media) {
     const substr = media.slice(0, 4);
     cResult[0] = media;
@@ -359,11 +359,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
   columnSpacer = closure_15(tmp8, tmp11);
   let wideAspectRatioGrid = tmp11;
   if (cResult[4] !== media) {
-    const result = tmp(8146).messageContainsGifOrVideo(media);
+    const result = tmp(8178).messageContainsGifOrVideo(media);
     cResult[4] = media;
     cResult[5] = result;
     let tmp13 = result;
-    const tmpResult = tmp(8146);
+    const tmpResult = tmp(8178);
   } else {
     tmp13 = cResult[5];
   }
@@ -480,7 +480,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
               if (tmp7) {
                 const obj9 = { style: tmp4.footerLeftContainer, children: null };
                 const obj10 = { appliedTags: arr, additionalTagsCount: tmp6, hasUnreads };
-                obj9.children = closure_6(tmp(12143).ForumPostAppliedTagPills, obj10);
+                obj9.children = closure_6(tmp(12179).ForumPostAppliedTagPills, obj10);
                 tmp26 = closure_6(View, obj9);
               }
               cResult[22] = tmp6;
@@ -543,14 +543,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
   const media = thread.media;
   const tmp = closure_10();
   dependencyMap = tmp;
-  const tmp4 = _slicedToArray(thread(7519).useSomeAppliedTags(thread, 2), 2);
+  const tmp4 = _slicedToArray(thread(7551).useSomeAppliedTags(thread, 2), 2);
   const first = tmp4[0];
   let tmp12Result = first.length > 0;
   items = [media];
   const memo = noop.useMemo(() => media.slice(0, 4), items);
   const bound = Math.max(0, media.length - 4);
   const isMediaPostResult = thread.isMediaPost();
-  let obj = thread(7519);
+  let obj = thread(7551);
   let tmp2 = thread;
   const items1 = [media];
   const memo1 = noop.useMemo(() => ForumPostMediaUtils.messageContainsGifOrVideo(media), items1);
@@ -591,7 +591,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
   if (tmp12Result) {
     const obj4 = { style: tmp.footerLeftContainer, children: null };
     const obj5 = { appliedTags: first, additionalTagsCount: tmp4[1], hasUnreads: thread.hasUnreads };
-    obj4.children = tmp12(tmp2(12143).ForumPostAppliedTagPills, obj5);
+    obj4.children = tmp12(tmp2(12179).ForumPostAppliedTagPills, obj5);
     tmp12Result = tmp12(tmp11, obj4);
   }
   items4[1] = tmp12Result;

@@ -1,12 +1,12 @@
-// Module ID: 10364
-// Function ID: 10365
+// Module ID: 10403
+// Function ID: 10404
 // Name: useSafetyAlertsSettingOrDefault
-// Dependencies: [1224, 1376, 558, 568, 504, 8920, 10365, 2]
+// Dependencies: [1224, 1376, 558, 568, 504, 8952, 10404, 2]
 
-// Module 10364 (useSafetyAlertsSettingOrDefault)
+// Module 10403 (useSafetyAlertsSettingOrDefault)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import useUserIsTeen from "useUserIsTeen" /* 8920 */;
+import useUserIsTeen from "useUserIsTeen" /* 8952 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
 import UserStore from "UserStore" /* 1376 */;
 

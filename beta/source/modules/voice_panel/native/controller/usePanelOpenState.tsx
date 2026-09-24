@@ -1,19 +1,19 @@
-// Module ID: 17654
-// Function ID: 17655
+// Module ID: 17664
+// Function ID: 17665
 // Name: usePanelOpenState
-// Dependencies: [32, 19, 4966, 12420, 1078, 558, 568, 4497, 1114, 13041, 4585, 4598, 13034, 9568, 2]
+// Dependencies: [32, 19, 4998, 12456, 1078, 558, 568, 4529, 1114, 13077, 4617, 4630, 13070, 9600, 2]
 
-// Module 17654 (usePanelOpenState)
+// Module 17664 (usePanelOpenState)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import VoicePanelStore from "VoicePanelStore" /* 4966 */;
+import VoicePanelStore from "VoicePanelStore" /* 4998 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const VoicePanelModes = fn(12420).VoicePanelModes;
+const VoicePanelModes = fn(12456).VoicePanelModes;
 const Constants = fn(1078);
 ({ ComponentActions: closure_7, Routes: closure_8 } = Constants);
 const __initData = { code: "function usePanelOpenStateTsx1(){const{connected}=this.__closure;return{connected:connected.get()};}" };
@@ -110,9 +110,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
               if (first !== pathname.pathname) {
                 closure_1_6(tmp);
                 const obj2 = { path: null };
-                const RouteParam = closure_0(4598).RouteParam;
-                const obj = closure_0(4585);
-                const RouteParam2 = closure_0(4598).RouteParam;
+                const RouteParam = closure_0(4630).RouteParam;
+                const obj = closure_0(4617);
+                const RouteParam2 = closure_0(4630).RouteParam;
                 obj2.path = closure_2_8.CHANNEL(RouteParam.guildId(), RouteParam2.channelId());
                 const matchPathResult = obj.matchPath(pathname.pathname, obj2);
                 const guildIdResult = RouteParam.guildId();
@@ -122,10 +122,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
                     tmp2 = matchPathResult.params.channelId === closure_0;
                   }
                   if (!tmp2) {
-                    closure_1(9568)();
+                    closure_1(9600)();
                   }
                 }
-                obj3 = closure_0(13034);
+                obj3 = closure_0(13070);
               }
             });
             return () => {
@@ -278,18 +278,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
       ComponentDispatch2.unsubscribe(constants.VOICE_PANEL_CLOSE, componentActionClose);
     };
   }, items);
-  const tmp3 = connected(doCloseChannel.useState(() => closure_1(13041).getHistory().location.pathname), 2);
+  const tmp3 = connected(doCloseChannel.useState(() => closure_1(13077).getHistory().location.pathname), 2);
   const first = tmp3[0];
   closure_6 = tmp3[1];
   const items1 = [arg0, first];
   const effect1 = doCloseChannel.useEffect(() => {
-    closure_0 = closure_1(13041).addRouteChangeListener((pathname) => {
+    closure_0 = closure_1(13077).addRouteChangeListener((pathname) => {
       if (first !== pathname.pathname) {
         closure_1_6(tmp);
         const obj2 = { path: null };
-        const RouteParam = closure_0(4598).RouteParam;
-        const obj = closure_0(4585);
-        const RouteParam2 = closure_0(4598).RouteParam;
+        const RouteParam = closure_0(4630).RouteParam;
+        const obj = closure_0(4617);
+        const RouteParam2 = closure_0(4630).RouteParam;
         obj2.path = closure_2_8.CHANNEL(RouteParam.guildId(), RouteParam2.channelId());
         const matchPathResult = obj.matchPath(pathname.pathname, obj2);
         const guildIdResult = RouteParam.guildId();
@@ -299,10 +299,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
             tmp2 = matchPathResult.params.channelId === closure_0;
           }
           if (!tmp2) {
-            closure_1(9568)();
+            closure_1(9600)();
           }
         }
-        obj3 = closure_0(13034);
+        obj3 = closure_0(13070);
       }
     });
     return () => {

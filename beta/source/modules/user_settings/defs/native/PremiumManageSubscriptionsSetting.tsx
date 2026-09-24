@@ -1,14 +1,14 @@
-// Module ID: 15253
-// Function ID: 15254
+// Module ID: 15263
+// Function ID: 15264
 // Name: PremiumManageSubscriptionsSetting
-// Dependencies: [19, 1078, 558, 568, 7661, 11565, 4418, 13667, 11594, 1119, 15254, 15252, 2]
+// Dependencies: [19, 1078, 558, 568, 7693, 11601, 4450, 13703, 11630, 1119, 15264, 15262, 2]
 
-// Module 15253 (PremiumManageSubscriptionsSetting)
+// Module 15263 (PremiumManageSubscriptionsSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import PremiumUtils from "PremiumUtils" /* 4418 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7661 */;
-import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11565 */;
+import PremiumUtils from "PremiumUtils" /* 4450 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7693 */;
+import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11601 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   return flag;
 }, []));
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(1);
   let hasPremiumSubscriptionToDisplay = PremiumUtils.useHasPremiumSubscriptionToDisplay();
@@ -69,7 +69,7 @@ const route = SettingBuilders.createRoute({
     return intl.string(util.t["z5YcJ+"]);
   },
   parent: null,
-  IconComponent: fn(15254).SubscriptionIcon,
+  IconComponent: fn(15264).SubscriptionIcon,
   usePreNavigationAction: tmp2,
   usePredicate: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(1);

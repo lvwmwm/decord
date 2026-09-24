@@ -1,12 +1,12 @@
-// Module ID: 11108
-// Function ID: 11109
+// Module ID: 11144
+// Function ID: 11145
 // Name: Helpers
-// Dependencies: [1239, 4675, 2]
+// Dependencies: [1239, 4707, 2]
 
-// Module 11108 (Helpers)
+// Module 11144 (Helpers)
 import ApexExperimentStore from "ApexExperimentStore" /* 1239 */;
 
-const CommonTriggerPoints = fn(4675).CommonTriggerPoints;
+const CommonTriggerPoints = fn(4707).CommonTriggerPoints;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/experiments/trigger_points/Helpers.tsx");
 class CommonTriggerPointConfiguration {

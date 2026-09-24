@@ -1,26 +1,26 @@
-// Module ID: 12865
-// Function ID: 12866
+// Module ID: 12901
+// Function ID: 12902
 // Name: InviteDetails
-// Dependencies: [32, 19, 17, 12562, 1390, 1376, 1078, 12866, 21, 4758, 580, 5660, 558, 568, 7982, 1181, 12867, 4603, 1119, 5805, 4754, 1401, 5802, 1245, 504, 5188, 5652, 12869, 9847, 2]
+// Dependencies: [32, 19, 17, 12598, 1390, 1376, 1078, 12902, 21, 4790, 580, 5692, 558, 568, 8014, 1181, 12903, 4635, 1119, 5837, 4786, 1401, 5834, 1245, 504, 5220, 5684, 12905, 9879, 2]
 
-// Module 12865 (InviteDetails)
+// Module 12901 (InviteDetails)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import ButtonGroup from "ButtonGroup" /* 5652 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import GuildBadgeDefault from "GuildBadge" /* 5805 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7982 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 12867 */;
-import InviteRolesListDefault from "InviteRolesList" /* 12869 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import ButtonGroup from "ButtonGroup" /* 5684 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import GuildBadgeDefault from "GuildBadge" /* 5837 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 8014 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 12903 */;
+import InviteRolesListDefault from "InviteRolesList" /* 12905 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import MultiAccountStore from "MultiAccountStore" /* 12562 */;
+import MultiAccountStore from "MultiAccountStore" /* 12598 */;
 import UserRecord from "UserRecord" /* 1390 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -63,10 +63,10 @@ function shouldShowInviter(invite, isGuildMember) {
 let View = fn(17).View;
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_9, InviteStates: c10 } = Constants);
-let closure_11 = fn(12866).INVITE_ROUTING_HUB_GUILD_ID;
+let closure_11 = fn(12902).INVITE_ROUTING_HUB_GUILD_ID;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { avatar: null, avatarContainer: null, inviteJoinContainer: null, inviteJoinText: null, inviterIconWrapper: null, inviterIcon: null, guildNameContainer: null, guildNameText: null, featureIcon: null, memberInfo: null, rolesList: null, dotOnline: null, dotOffline: null, embedDetailsCard: null };
 let size = { height: 64, width: 64, margin: 0, borderRadius: nativeDefault.radii.lg };
 obj2.avatar = size;
@@ -80,14 +80,14 @@ obj2.inviterIcon = size2;
 obj2.guildNameContainer = { flexDirection: "row", alignItems: "center", marginBottom: 8 };
 obj2.guildNameText = { textAlign: "center" };
 let obj3 = { borderRadius: nativeDefault.radii.none, marginRight: 8 };
-obj2.featureIcon = { flexGrow: 0, marginRight: 8, opacity: fn(5660).DARK_1_LIGHT_04 };
+obj2.featureIcon = { flexGrow: 0, marginRight: 8, opacity: fn(5692).DARK_1_LIGHT_04 };
 obj2.memberInfo = { flexDirection: "row", alignItems: "center", marginBottom: 8 };
 obj2.rolesList = { marginTop: 8, marginBottom: 8, alignItems: "center" };
 const size3 = { width: 8, height: 8, borderRadius: nativeDefault.radii.sm, marginRight: 4, backgroundColor: nativeDefault.unsafe_rawColors.GREEN_360 };
 obj2.dotOnline = size3;
 const size4 = { width: 8, height: 8, borderRadius: nativeDefault.radii.sm, marginRight: 4, marginLeft: 16, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_400 };
 obj2.dotOffline = size4;
-let obj4 = { flexGrow: 0, marginRight: 8, opacity: fn(5660).DARK_1_LIGHT_04 };
+let obj4 = { flexGrow: 0, marginRight: 8, opacity: fn(5692).DARK_1_LIGHT_04 };
 obj2.embedDetailsCard = { width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16, borderRadius: nativeDefault.radii.sm, marginTop: 16, marginBottom: 8 };
 let closure_15 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -205,7 +205,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
     }
     cResult[0] = invite;
     cResult[1] = name;
-    tmpResult = tmp(7982);
+    tmpResult = tmp(8014);
   } else {
     if (!tmpResult2.isFriendInvite(invite)) {
       if (null == tmp4) {
@@ -234,7 +234,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
             cResult[13] = tmp25;
           }
           const obj4 = { style: guildNameContainer.guildNameText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp4 };
-          const tmp21 = __initData(tmp(4754).Heading, obj4);
+          const tmp21 = __initData(tmp(4786).Heading, obj4);
           cResult[7] = guildNameContainer.guildNameText;
           cResult[8] = tmp4;
           cResult[9] = tmp21;
@@ -254,7 +254,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
       cResult[2] = invite.inviter;
       cResult[3] = formatToPlainStringResult;
     }
-    tmpResult2 = tmp(7982);
+    tmpResult2 = tmp(8014);
   }
 }) : ((invite) => {
   invite = invite.invite;
@@ -287,7 +287,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
     const obj6 = { guild: invite.guild, style: tmp.featureIcon, disableColor: true };
     const items = [__initData(GuildBadgeDefault, obj6), ];
     const obj7 = { style: tmp.guildNameText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: name };
-    items[1] = __initData(tmp2(4754).Heading, obj7);
+    items[1] = __initData(tmp2(4786).Heading, obj7);
     obj4.children = items;
     tmp9 = __initData2(View, obj4);
   }
@@ -429,7 +429,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRegistration
           tmp14 = tmp22;
         }
       }
-      tmpResult5 = tmp(7982);
+      tmpResult5 = tmp(8014);
     }
     if (cResult[16] === invite) {
       if (cResult[17] === tmp6) {
@@ -460,7 +460,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRegistration
             tmp51 = tmp54;
           }
           const obj12 = { style: tmp4.inviteJoinText, variant: "text-sm/normal", color: "text-default", children: tmp14 };
-          const tmp50 = __initData(tmp(4754).Text, obj12);
+          const tmp50 = __initData(tmp(4786).Text, obj12);
           cResult[21] = tmp14;
           cResult[22] = tmp4.inviteJoinText;
           cResult[23] = tmp50;
@@ -477,7 +477,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRegistration
         obj14.children = __initData(FastImageDefault, obj16);
         tmp44 = __initData(View, obj14);
       }
-      tmpResult6 = tmp(7982);
+      tmpResult6 = tmp(8014);
     }
     cResult[16] = invite;
     cResult[17] = tmp6;
@@ -485,7 +485,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRegistration
     cResult[19] = tmp4.inviterIconWrapper;
     cResult[20] = tmp44;
     tmp42 = tmp44;
-    tmpResult4 = tmp(7982);
+    tmpResult4 = tmp(8014);
   }
 }) : ((invite) => {
   invite = invite.invite;
@@ -511,17 +511,17 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRegistration
   const stringResult = intl.string(invite(1119).t["3rE1P8"]);
   if (obj.isFriendInvite(invite)) {
     const intl7 = tmp3(1119).intl;
-    let obj2 = { username: isGuildMember(4603).getFormattedName(invite.inviter) };
+    let obj2 = { username: isGuildMember(4635).getFormattedName(invite.inviter) };
     let formatResult = intl7.format(tmp3(1119).t.Quj7HX, obj2);
-    const obj11 = isGuildMember(4603);
+    const obj11 = isGuildMember(4635);
   } else {
     if (tmp3Result.isGroupDMInvite(invite)) {
       if (null != invite.channel) {
         if (null != invite.inviter) {
           const intl6 = tmp3(1119).intl;
-          let obj3 = { username: isGuildMember(4603).getFormattedName(invite.inviter) };
+          let obj3 = { username: isGuildMember(4635).getFormattedName(invite.inviter) };
           let formatResult1 = intl6.format(tmp3(1119).t.Lu4h18, obj3);
-          const obj9 = isGuildMember(4603);
+          const obj9 = isGuildMember(4635);
         }
         formatResult = formatResult1;
       }
@@ -531,9 +531,9 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRegistration
       if (tmp3Result3.isStreamInvite(invite)) {
         if (null != invite.target_user) {
           const intl4 = tmp3(1119).intl;
-          const obj4 = { username: isGuildMember(4603).getFormattedName(invite.target_user) };
+          const obj4 = { username: isGuildMember(4635).getFormattedName(invite.target_user) };
           formatResult = intl4.formatToPlainString(tmp3(1119).t.x2L32Q, obj4);
-          const obj7 = isGuildMember(4603);
+          const obj7 = isGuildMember(4635);
         }
       }
       let tmp7 = isGuildMember;
@@ -558,14 +558,14 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRegistration
         formatResult = stringResult;
         if (tmp10) {
           const intl2 = tmp3(1119).intl;
-          const obj6 = { username: isGuildMember(4603).getFormattedName(invite.inviter) };
+          const obj6 = { username: isGuildMember(4635).getFormattedName(invite.inviter) };
           formatResult = intl2.format(tmp3(1119).t.spU2mI, obj6);
-          const obj5 = isGuildMember(4603);
+          const obj5 = isGuildMember(4635);
         }
       }
-      tmp3Result3 = tmp3(7982);
+      tmp3Result3 = tmp3(8014);
     }
-    tmp3Result = tmp3(7982);
+    tmp3Result = tmp3(8014);
   }
   const obj8 = { style: tmp.inviteJoinContainer, children: null };
   let tmp22 = null;
@@ -574,12 +574,12 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRegistration
     if (!tmp3Result4.isFriendInvite(invite)) {
       const obj10 = { style: tmp.inviterIconWrapper, children: null };
       const obj12 = { source: memo, style: tmp.inviterIcon };
-      obj10.children = closure_12(isGuildMember(5802), obj12);
+      obj10.children = closure_12(isGuildMember(5834), obj12);
       tmp22 = closure_12(tmp21, obj10);
     }
-    tmp3Result4 = tmp3(7982);
+    tmp3Result4 = tmp3(8014);
   }
-  const items1 = [tmp22, closure_12(invite(4754).Text, { style: tmp.inviteJoinText, variant: "text-sm/normal", color: "text-default", children: formatResult })];
+  const items1 = [tmp22, closure_12(invite(4786).Text, { style: tmp.inviteJoinText, variant: "text-sm/normal", color: "text-default", children: formatResult })];
   obj8.children = items1;
   return closure_13(View, obj8);
 });
@@ -659,7 +659,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const intl = tmp(1119).intl;
           const obj7 = { membersOnline: tmp11.onlineCount };
           obj6.children = intl.format(tmp(1119).t["LC+S+m"], obj7);
-          items1[1] = __initData(tmp(4754).Text, obj6);
+          items1[1] = __initData(tmp(4786).Text, obj6);
           obj4.children = items1;
           tmp23 = __initData2(state, obj4);
         }
@@ -672,7 +672,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const intl2 = tmp(1119).intl;
           const obj11 = { count: tmp11.memberCount };
           obj10.children = intl2.format(tmp(1119).t.zRl6XR, obj11);
-          items2[1] = __initData(tmp(4754).Text, obj10);
+          items2[1] = __initData(tmp(4786).Text, obj10);
           obj8.children = items2;
           tmp24 = __initData2(state, obj8);
         }
@@ -1151,11 +1151,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
   if (tmp8Result) {
     const obj9 = { style: tmp.embedDetailsCard, children: null };
     const obj10 = { event: guild_scheduled_event };
-    const items3 = [tmp10(tmp4(9847).GuildEventCardHeader, obj10), , ];
+    const items3 = [tmp10(tmp4(9879).GuildEventCardHeader, obj10), , ];
     const obj11 = { event: guild_scheduled_event };
-    items3[1] = tmp10(tmp4(9847).GuildEventCardMetaInfo, obj11);
+    items3[1] = tmp10(tmp4(9879).GuildEventCardMetaInfo, obj11);
     const obj12 = { event: guild_scheduled_event };
-    items3[2] = tmp10(tmp4(9847).GuildEventCardGuildInfo, obj12);
+    items3[2] = tmp10(tmp4(9879).GuildEventCardGuildInfo, obj12);
     obj9.children = items3;
     tmp8Result = tmp8(View, obj9);
   }
@@ -1171,7 +1171,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
   let tmp10Result;
   if (null != userAvatarSource) {
     const obj13 = { source: userAvatarSource, variant: "entity" };
-    tmp10Result = tmp10(tmp4(5188).Button.Icon, obj13);
+    tmp10Result = tmp10(tmp4(5220).Button.Icon, obj13);
   }
   if (null != stateFromStores) {
     const intl = tmp4(1119).intl;
@@ -1207,7 +1207,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
     _undefined(constants.ACCEPT);
     importDefault();
   }
-  const items4 = [closure_12(invite(5188).Button, { icon: tmp10Result, variant: "primary", size: "lg", text: tmp24, accessibilityLabel: stringResult, onPress: handleAcceptInvitePress, loading: tmp3 === constants3.ACCEPT, disabled: tmp3 === constants3.ACCEPT }), ];
+  const items4 = [closure_12(invite(5220).Button, { icon: tmp10Result, variant: "primary", size: "lg", text: tmp24, accessibilityLabel: stringResult, onPress: handleAcceptInvitePress, loading: tmp3 === constants3.ACCEPT, disabled: tmp3 === constants3.ACCEPT }), ];
   const intl4 = tmp4(1119).intl;
   const string = intl4.string;
   const t = tmp4(1119).t;
@@ -1218,7 +1218,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
   }
   const obj16 = { children: null };
   const obj17 = { children: null };
-  items4[1] = closure_12(invite(5188).Button, {
+  items4[1] = closure_12(invite(5220).Button, {
     variant: "secondary",
     size: "lg",
     text: stringResult1,
@@ -1238,7 +1238,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
     disabled: tmp3 === constants3.DECLINE
   });
   obj17.children = items4;
-  items2[6] = closure_13(invite(5652).ButtonGroup, obj17);
+  items2[6] = closure_13(invite(5684).ButtonGroup, obj17);
   obj16.children = items2;
   return closure_13(closure_14, obj16);
 });

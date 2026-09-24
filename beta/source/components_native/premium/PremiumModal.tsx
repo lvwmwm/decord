@@ -1,17 +1,17 @@
-// Module ID: 7656
-// Function ID: 7657
+// Module ID: 7688
+// Function ID: 7689
 // Name: PremiumModal
-// Dependencies: [19, 1078, 21, 1119, 5839, 7657, 13764, 13767, 13809, 13821, 558, 568, 7409, 7246, 2]
+// Dependencies: [19, 1078, 21, 1119, 5871, 7689, 13800, 13803, 13845, 13857, 558, 568, 7441, 7278, 2]
 
-// Module 7656 (PremiumModal)
+// Module 7688 (PremiumModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import Navigator from "Navigator" /* 7246 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7409 */;
-import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7657 */;
-import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 13809 */;
-import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 13821 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import Navigator from "Navigator" /* 7278 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7441 */;
+import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7689 */;
+import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 13845 */;
+import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 13857 */;
 import noop from "module_19" /* 19 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
@@ -34,7 +34,7 @@ function getScreens(arg0) {
   const intl2 = util.intl;
   obj4.title = intl2.string(util.t["8jmdON"]);
   obj4.render = function render() {
-    return planId(onClose(13764), {});
+    return planId(onClose(13800), {});
   };
   obj[UserSettingsSections.PREMIUM_MANAGE_PLAN] = obj4;
   const obj5 = { title: null, headerLeft: null, render: null };
@@ -42,7 +42,7 @@ function getScreens(arg0) {
   obj5.title = intl3.string(util.t["+CbP2v"]);
   obj5.headerLeft = NavigatorHeader.getHeaderCloseButton(onClose);
   obj5.render = function render() {
-    return planId(onClose(13767), {});
+    return planId(onClose(13803), {});
   };
   obj[UserSettingsSections.GUILD_BOOSTING] = obj5;
   const obj7 = { title: null, headerLeft: null, initialParams: null, render: null };
@@ -114,14 +114,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
                                   return tmp10;
                                 }
                                 const obj2 = { value: analyticsLocations, children: tmp7 };
-                                const tmp12 = jsx(tmp(7409).AnalyticsLocationProvider, { value: analyticsLocations, children: tmp7 });
+                                const tmp12 = jsx(tmp(7441).AnalyticsLocationProvider, { value: analyticsLocations, children: tmp7 });
                                 cResult[19] = analyticsLocations;
                                 cResult[20] = tmp7;
                                 cResult[21] = tmp12;
                                 tmp10 = tmp12;
                               }
                               const obj3 = { screens: tmp5, initialRouteName: initialRoute };
-                              const tmp9 = jsx(tmp(7246).Navigator, { screens: tmp5, initialRouteName: initialRoute });
+                              const tmp9 = jsx(tmp(7278).Navigator, { screens: tmp5, initialRouteName: initialRoute });
                               cResult[16] = initialRoute;
                               cResult[17] = tmp5;
                               cResult[18] = tmp9;

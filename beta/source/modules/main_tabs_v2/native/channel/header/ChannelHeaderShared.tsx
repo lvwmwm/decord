@@ -1,35 +1,35 @@
-// Module ID: 13581
-// Function ID: 13582
+// Module ID: 13617
+// Function ID: 13618
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 4409, 1376, 21, 4758, 580, 558, 568, 1368, 5341, 11202, 4754, 1181, 13582, 11216, 4462, 5241, 7223, 13583, 1119, 4911, 2]
+// Dependencies: [32, 19, 17, 4441, 1376, 21, 4790, 580, 558, 568, 1368, 5373, 11238, 4786, 1181, 13618, 11252, 4494, 5273, 7255, 13619, 1119, 4943, 2]
 // Exports: renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 13581 (ChannelHeaderShared)
+// Module 13617 (ChannelHeaderShared)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import useToken from "useToken" /* 4462 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useChannelName from "useChannelName" /* 4911 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5241 */;
-import Pressables from "Pressables" /* 5341 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7223 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11202 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 11216 */;
-import _modDef13582 from "module_13582" /* 13582 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 13583 */;
+import useToken from "useToken" /* 4494 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useChannelName from "useChannelName" /* 4943 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5273 */;
+import Pressables from "Pressables" /* 5373 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7255 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11238 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 11252 */;
+import _modDef13618 from "module_13618" /* 13618 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 13619 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_11 = createStyles.createStyles(() => {
   const obj = { wrapper: { flex: 1, alignItems: "center", flexShrink: 1, flexDirection: "row", paddingEnd: 8 }, channelContent: { flex: 1, flexShrink: 1, justifyContent: "center", marginTop: 4 }, nameWithArrow: { flexDirection: "row", alignItems: "center", flexShrink: 1 }, channelNameContainer: { flexShrink: 1 }, channelName: { flexShrink: 1 }, arrowIcon: { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, flexShrink: 0, flexGrow: 0, marginTop: 2, marginLeft: 2 }, channelIcon: { marginRight: 12, flexShrink: 0 }, channelIconWrapper: { width: 32, height: 32, justifyContent: "center", alignItems: "center" }, guildChannelIcon: null, subTitleContainer: null, parentChannelName: null };
   const obj2 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, flexShrink: 0, flexGrow: 0, marginTop: 2, marginLeft: 2 };
@@ -91,7 +91,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj3 = { onLayout: tmp10, onPress, androidRippleConfig: tmp5, accessibilityRole: "header", accessibilityLabel: headerAccessibilityLabel, hitSlop: undefined, style: wrapper.wrapper, children };
-      const tmp14 = closure_1_8(tmp(5341).PressableOpacity, obj3);
+      const tmp14 = closure_1_8(tmp(5373).PressableOpacity, obj3);
       cResult[7] = tmp5;
       cResult[8] = children;
       cResult[9] = headerAccessibilityLabel;
@@ -205,7 +205,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
               let tmp13 = !tmp4;
               if (!tmp4) {
-                const obj6 = { source: _modDef13582, size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, style: tmp5.arrowIcon };
+                const obj6 = { source: _modDef13618, size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, style: tmp5.arrowIcon };
                 tmp13 = closure_1_8(tmp(1181).Icon, obj6);
               }
               cResult[7] = tmp4;
@@ -225,7 +225,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp9 = closure_1_8(UsernameWithEffectsDefault, obj7);
   } else {
     const obj13 = { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp5.channelName, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2, children: title };
-    tmp9 = closure_1_8(tmp(4754).Text, obj13);
+    tmp9 = closure_1_8(tmp(4786).Text, obj13);
   }
   cResult[0] = accessibleTitle;
   cResult[1] = channelNameContainer;
@@ -262,7 +262,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[1] = tmp8;
   let tmp5Result = !disableArrow;
   if (!disableArrow) {
-    const obj6 = { source: _modDef13582, size: native.Icon.Sizes.REFRESH_SMALL_16, style: tmp.arrowIcon };
+    const obj6 = { source: _modDef13618, size: native.Icon.Sizes.REFRESH_SMALL_16, style: tmp.arrowIcon };
     tmp5Result = tmp5(native.Icon, obj6);
   }
   items[2] = tmp5Result;
@@ -424,7 +424,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp8 = null;
         if (withSeparator) {
           const obj3 = { variant: str2, color: "text-subtle", children: "\u2022" };
-          tmp8 = closure_1_8(tmp(4754).Text, obj3);
+          tmp8 = closure_1_8(tmp(4786).Text, obj3);
         }
         cResult[5] = str2;
         cResult[6] = withSeparator;
@@ -480,21 +480,21 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmp4 = closure_11();
   if (cResult[0] !== channel) {
     const intl = tmp(1119).intl;
-    const obj2 = { channelName: tmp(4911).computeChannelName(channel, UserStore, RelationshipStore) };
+    const obj2 = { channelName: tmp(4943).computeChannelName(channel, UserStore, RelationshipStore) };
     const formatToPlainStringResult = intl.formatToPlainString(tmp(1119).t.BjYvHO, obj2);
     cResult[0] = channel;
     cResult[1] = formatToPlainStringResult;
     let tmp5 = formatToPlainStringResult;
-    const tmpResult = tmp(4911);
+    const tmpResult = tmp(4943);
   } else {
     tmp5 = cResult[1];
   }
   if (cResult[2] !== channel) {
-    const channelName = tmp(4911).computeChannelName(channel, UserStore, RelationshipStore);
+    const channelName = tmp(4943).computeChannelName(channel, UserStore, RelationshipStore);
     cResult[2] = channel;
     cResult[3] = channelName;
     let tmp9 = channelName;
-    const tmpResult2 = tmp(4911);
+    const tmpResult2 = tmp(4943);
   } else {
     tmp9 = cResult[3];
   }

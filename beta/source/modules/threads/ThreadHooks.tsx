@@ -1,24 +1,24 @@
-// Module ID: 7513
-// Function ID: 7514
+// Module ID: 7545
+// Function ID: 7546
 // Name: ThreadHooks
-// Dependencies: [32, 4673, 2049, 502, 2045, 4399, 5725, 1078, 558, 568, 1090, 504, 7514, 11, 12, 7515, 7516, 4968, 2]
+// Dependencies: [32, 4705, 2049, 502, 2045, 4431, 5757, 1078, 558, 568, 1090, 504, 7546, 11, 12, 7547, 7548, 5000, 2]
 // Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, isThreadModerator
 
-// Module 7513 (ThreadHooks)
+// Module 7545 (ThreadHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
-import AgeGateUtils from "AgeGateUtils" /* 4968 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7514 */;
-import useIsRemoteDefault from "useIsRemote" /* 7515 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7516 */;
+import AgeGateUtils from "AgeGateUtils" /* 5000 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7546 */;
+import useIsRemoteDefault from "useIsRemote" /* 7547 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7548 */;
 import _slicedToArray from "module_32" /* 32 */;
-import createExperiment from "createExperiment" /* 4673 */;
+import createExperiment from "createExperiment" /* 4705 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5725 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5757 */;
 
 require = fn;
 function canUnarchiveThread(stateFromStores) {
@@ -1027,8 +1027,8 @@ let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
   const tmpResult = GameInvitesChannelUtils;
   let shouldAgeVerifyForAgeGate = AgeGateUtils.useShouldAgeVerifyForAgeGate();
   if (shouldAgeVerifyForAgeGate) {
-    shouldAgeVerifyForAgeGate = tmp(4968).shouldShowAgeGateForChannelId(guild_id.id);
-    const tmpResult4 = tmp(4968);
+    shouldAgeVerifyForAgeGate = tmp(5000).shouldShowAgeGateForChannelId(guild_id.id);
+    const tmpResult4 = tmp(5000);
   }
   if (cResult[3] === guild_id) {
     if (cResult[4] === enabled) {

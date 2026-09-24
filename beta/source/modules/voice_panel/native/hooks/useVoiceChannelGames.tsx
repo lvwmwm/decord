@@ -1,14 +1,14 @@
-// Module ID: 17585
-// Function ID: 17586
+// Module ID: 17595
+// Function ID: 17596
 // Name: useVoiceChannelGames
-// Dependencies: [19, 502, 4798, 5498, 1376, 558, 568, 9978, 504, 9979, 5329, 2]
+// Dependencies: [19, 502, 4830, 5530, 1376, 558, 568, 10010, 504, 10011, 5361, 2]
 
-// Module 17585 (useVoiceChannelGames)
-import useGameProfileObscured from "useGameProfileObscured" /* 5329 */;
+// Module 17595 (useVoiceChannelGames)
+import useGameProfileObscured from "useGameProfileObscured" /* 5361 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5530 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
       }
       const stateFromStoresArray = tmp2(504).useStateFromStoresArray(first, tmp10, tmp11);
       const tmp2Result = tmp2(504);
-      const getGamesForAppIds = tmp2(9979).useGetGamesForAppIds(stateFromStoresArray);
+      const getGamesForAppIds = tmp2(10011).useGetGamesForAppIds(stateFromStoresArray);
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const items1 = [UserStore];
@@ -60,7 +60,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
         tmp16 = cResult[6];
         tmp17 = cResult[7];
       }
-      const tmp2Result3 = tmp2(9979);
+      const tmp2Result3 = tmp2(10011);
       const stateFromStores = tmp2(504).useStateFromStores(tmp16, tmp17);
       if (cResult[8] === getGamesForAppIds) {
         if (cResult[9] === stateFromStores) {

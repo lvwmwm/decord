@@ -1,13 +1,13 @@
-// Module ID: 8635
-// Function ID: 8636
+// Module ID: 8667
+// Function ID: 8668
 // Name: ICYMIAnalytics
-// Dependencies: [8611, 1078, 8404, 8624, 1245, 2]
+// Dependencies: [8643, 1078, 8436, 8656, 1245, 2]
 
-// Module 8635 (ICYMIAnalytics)
+// Module 8667 (ICYMIAnalytics)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8404 */;
-import ICYMITypes from "ICYMITypes" /* 8624 */;
-import ICYMIStore from "ICYMIStore" /* 8611 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8436 */;
+import ICYMITypes from "ICYMITypes" /* 8656 */;
+import ICYMIStore from "ICYMIStore" /* 8643 */;
 
 require = fn;
 const Constants = fn(1078);
@@ -138,12 +138,12 @@ export const ICYMIAnalytics = {
         let str = str2;
       } else {
         str = "hotwheels_gaming_activity";
-        if (tmp3(8624).ICYMIItemTypes.ACTIVITY !== type) {
+        if (tmp3(8656).ICYMIItemTypes.ACTIVITY !== type) {
           str = "hotwheels_custom_status";
-          if (tmp3(8624).ICYMIItemTypes.CUSTOM_STATUS !== type) {
+          if (tmp3(8656).ICYMIItemTypes.CUSTOM_STATUS !== type) {
             str = "guild_event";
-            if (tmp3(8624).ICYMIItemTypes.GUILD_EVENT !== type) {
-              if (tmp3(8624).ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
+            if (tmp3(8656).ICYMIItemTypes.GUILD_EVENT !== type) {
+              if (tmp3(8656).ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
                 str = "recommended_guilds";
               }
             }
@@ -164,12 +164,12 @@ export const ICYMIAnalytics = {
         let str = str2;
       } else {
         str = "hotwheels_gaming_activity";
-        if (tmp3(8624).ICYMIItemTypes.ACTIVITY !== type) {
+        if (tmp3(8656).ICYMIItemTypes.ACTIVITY !== type) {
           str = "hotwheels_custom_status";
-          if (tmp3(8624).ICYMIItemTypes.CUSTOM_STATUS !== type) {
+          if (tmp3(8656).ICYMIItemTypes.CUSTOM_STATUS !== type) {
             str = "guild_event";
-            if (tmp3(8624).ICYMIItemTypes.GUILD_EVENT !== type) {
-              if (tmp3(8624).ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
+            if (tmp3(8656).ICYMIItemTypes.GUILD_EVENT !== type) {
+              if (tmp3(8656).ICYMIItemTypes.RECOMMENDED_GUILDS === type) {
                 str = "recommended_guilds";
               }
             }

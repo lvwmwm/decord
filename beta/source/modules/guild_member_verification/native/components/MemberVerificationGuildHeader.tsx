@@ -1,24 +1,24 @@
-// Module ID: 5797
-// Function ID: 5798
+// Module ID: 5829
+// Function ID: 5830
 // Name: MemberVerificationGuildHeader
-// Dependencies: [19, 17, 5792, 21, 4758, 580, 1401, 5798, 558, 568, 1616, 4497, 5198, 5799, 5805, 1119, 4754, 2]
+// Dependencies: [19, 17, 5824, 21, 4790, 580, 1401, 5830, 558, 568, 1616, 4529, 5230, 5831, 5837, 1119, 4786, 2]
 
-// Module 5797 (MemberVerificationGuildHeader)
+// Module 5829 (MemberVerificationGuildHeader)
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const MemberVerificationFormConstants = fn(5792);
+const MemberVerificationFormConstants = fn(5824);
 ({ AVATAR_BORDER_WIDTH, AVATAR_SIZE } = MemberVerificationFormConstants);
 const useBannerHeight = MemberVerificationFormConstants.useBannerHeight;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 let c8 = 1.20225424859375;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { header: { flex: 1, flexDirection: "column", justifyContent: "flex-end", alignItems: "center", marginBottom: 12 }, headerContent: { alignItems: "center", marginTop: -48, paddingTop: 20, paddingBottom: 0, paddingHorizontal: 16 }, linearGradient: { position: "absolute", height: 140, top: 0, right: 0, left: 0 }, avatar: null, avatarContainer: null, featureIcon: null, headerTitle: null, headerDescription: null };
 let size = { borderRadius: nativeDefault.radii.lg, borderWidth: 0, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, height: AVATAR_SIZE, width: AVATAR_SIZE, margin: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM };
 obj2.avatar = size;
@@ -49,7 +49,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasManualFormFie
     let obj2 = require("AvatarUtils");
   } else {
     tmp5 = importDefault;
-    guildBannerSource = require("module_5798");
+    guildBannerSource = require("module_5830");
   }
   const tmp8 = useBannerHeight();
   importDefault = tmp8;
@@ -330,7 +330,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasManualFormFie
     let obj = require("AvatarUtils");
   } else {
     tmp3 = top;
-    guildBannerSource = require("module_5798");
+    guildBannerSource = require("module_5830");
     tmp5 = importDefault;
   }
   const tmp8 = useBannerHeight();

@@ -1,11 +1,11 @@
-// Module ID: 9196
-// Function ID: 9197
+// Module ID: 9228
+// Function ID: 9229
 // Name: useGameNameAndCoverImage
-// Dependencies: [558, 568, 7553, 1119, 2]
+// Dependencies: [558, 568, 7585, 1119, 2]
 
-// Module 9196 (useGameNameAndCoverImage)
+// Module 9228 (useGameNameAndCoverImage)
 import c from "c" /* 568 */;
-import useGame from "useGame" /* 7553 */;
+import useGame from "useGame" /* 7585 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

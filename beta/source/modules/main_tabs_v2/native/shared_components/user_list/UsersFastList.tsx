@@ -1,31 +1,31 @@
-// Module ID: 11168
-// Function ID: 11169
+// Module ID: 11204
+// Function ID: 11205
 // Name: UsersFastList
-// Dependencies: [32, 19, 17, 11169, 21, 4758, 580, 558, 568, 11170, 5822, 8121, 4497, 1181, 4754, 5341, 5343, 1616, 7296, 11171, 11172, 11215, 11218, 7302, 2]
+// Dependencies: [32, 19, 17, 11205, 21, 4790, 580, 558, 568, 11206, 5854, 8153, 4529, 1181, 4786, 5373, 5375, 1616, 7328, 11207, 11208, 11251, 11254, 7334, 2]
 
-// Module 11168 (UsersFastList)
+// Module 11204 (UsersFastList)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 8121 */;
-import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 11170 */;
-import UserRowDefault from "UserRow" /* 11172 */;
-import GroupDMRowDefault from "GroupDMRow" /* 11215 */;
-import ChannelRowDefault from "ChannelRow" /* 11218 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 8153 */;
+import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 11206 */;
+import UserRowDefault from "UserRow" /* 11208 */;
+import GroupDMRowDefault from "GroupDMRow" /* 11251 */;
+import ChannelRowDefault from "ChannelRow" /* 11254 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 
-const TableRow = tmp(5822);
+const TableRow = tmp(5854);
 require = fn;
 const View = fn(17).View;
-const UsersFastListConstants = fn(11169);
+const UsersFastListConstants = fn(11205);
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { sectionHeader: { flex: 1, overflow: "hidden", top: -1 * UsersFastListConstants.USERS_LIST_SECTION_BOTTOM_PADDING }, stickyHeader: { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, list: null, emptySection: null, section: null, interactiveSection: null, titlePressable: null, titleRow: null, badgeWrapper: null, badge: null };
 let obj3 = { flex: 1, overflow: "hidden", top: -1 * UsersFastListConstants.USERS_LIST_SECTION_BOTTOM_PADDING };
 let obj4 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
@@ -175,8 +175,8 @@ let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stic
       E.__closure = obj3;
       E.__workletHash = 15448160320615;
       E.__initData = __initData;
-      const derivedValue = tmp(4497).useDerivedValue(E);
-      const tmpResult4 = tmp(4497);
+      const derivedValue = tmp(4529).useDerivedValue(E);
+      const tmpResult4 = tmp(4529);
       class O {
         constructor() {
           backgroundColor = "transparent";
@@ -191,7 +191,7 @@ let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stic
       O.__closure = obj4;
       O.__workletHash = 11315917458152;
       O.__initData = __initData2;
-      const animatedStyle = tmp(4497).useAnimatedStyle(O);
+      const animatedStyle = tmp(4529).useAnimatedStyle(O);
       if (cResult[6] === animatedStyle) {
         if (cResult[7] === tmp4.sectionHeader) {
           let tmp15 = cResult[8];
@@ -209,7 +209,7 @@ let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stic
         M.__closure = obj5;
         M.__workletHash = 13270974904859;
         M.__initData = __initData3;
-        const animatedStyle1 = tmp(4497).useAnimatedStyle(M);
+        const animatedStyle1 = tmp(4529).useAnimatedStyle(M);
         if (null == title) {
           if (null == actionTitle) {
             if (cResult[9] !== tmp4.emptySection) {
@@ -306,8 +306,8 @@ let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stic
                                       return { opacity };
                                     }
                                   }
-                                  obj6.children = React5(tmp39(5343), { absolute: true, tall: true, wide: true, mix: true });
-                                  tmp41 = React5(tmp39(4497).View, obj6);
+                                  obj6.children = React5(tmp39(5375), { absolute: true, tall: true, wide: true, mix: true });
+                                  tmp41 = React5(tmp39(4529).View, obj6);
                                 }
                                 const items = [tmp41, tmp33];
                                 tmp40[1] = items;
@@ -381,8 +381,8 @@ let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stic
                             }
                           }
                           const obj9 = { variant: "text-sm/semibold", color: "text-brand", children: actionTitle };
-                          obj8.children = React5(tmp(4754).Text, obj9);
-                          const tmp31 = React5(tmp(5341).PressableOpacity, obj8);
+                          obj8.children = React5(tmp(4786).Text, obj9);
+                          const tmp31 = React5(tmp(5373).PressableOpacity, obj8);
                         }
                         cResult[27] = action;
                         cResult[28] = actionTitle;
@@ -412,7 +412,7 @@ let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stic
                       }
                       obj10.onPress = onTitlePress;
                       obj10.children = tmp22;
-                      const tmp28 = React5(tmp(5341).PressableOpacity, obj10);
+                      const tmp28 = React5(tmp(5373).PressableOpacity, obj10);
                     }
                     cResult[23] = onTitlePress;
                     cResult[24] = tmp4.titlePressable;
@@ -464,7 +464,7 @@ let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stic
             const obj11 = { maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-md/medium", color: "text-subtle", style: tmp5, children: null };
             const items3 = [title, tmp18];
             obj11.children = items3;
-            const tmp21 = closure_1_8(tmp(4754).Text, obj11);
+            const tmp21 = closure_1_8(tmp(4786).Text, obj11);
             cResult[15] = tmp18;
             cResult[16] = tmp5;
             class O {
@@ -497,14 +497,14 @@ let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stic
         cResult[13] = tmp4.badgeWrapper;
         cResult[14] = null;
         tmp18 = tmp19;
-        const tmpResult6 = tmp(4497);
+        const tmpResult6 = tmp(4529);
       }
       const items4 = [tmp4.sectionHeader, animatedStyle];
       cResult[6] = animatedStyle;
       cResult[7] = tmp4.sectionHeader;
       cResult[8] = items4;
       tmp15 = items4;
-      const tmpResult5 = tmp(4497);
+      const tmpResult5 = tmp(4529);
     }
   }
   const items5 = [tmp4.section, null != onTitlePress && tmp4.interactiveSection, clientThemesOverride];
@@ -618,7 +618,7 @@ let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stic
   let tmp18 = tmp11Result4;
   if (null != onTitlePress) {
     const obj10 = { accessibilityRole: "button", style: tmp.titlePressable, onPress: onTitlePress, children: tmp11Result4 };
-    tmp18 = React5(tmp3(5341).PressableOpacity, obj10);
+    tmp18 = React5(tmp3(5373).PressableOpacity, obj10);
   }
   const obj11 = { style: memo1, children: null };
   const items5 = [tmp18, ];
@@ -626,8 +626,8 @@ let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stic
   if (null != actionTitle) {
     const obj12 = { onPress: action, children: null };
     const obj13 = { variant: "text-sm/semibold", color: "text-brand", children: actionTitle };
-    obj12.children = React5(tmp3(4754).Text, obj13);
-    tmp21 = React5(tmp3(5341).PressableOpacity, obj12);
+    obj12.children = React5(tmp3(4786).Text, obj13);
+    tmp21 = React5(tmp3(5373).PressableOpacity, obj12);
   }
   items5[1] = tmp21;
   obj11.children = items5;
@@ -637,8 +637,8 @@ let closure_19 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stic
     const obj14 = { style: memo2, children: null };
     let tmp26 = !disableThemedGradient;
     if (!disableThemedGradient) {
-      const obj15 = { style: animatedStyle1, children: React5(tmp25(5343), { absolute: true, tall: true, wide: true, mix: true }) };
-      tmp26 = React5(tmp25(4497).View, obj15);
+      const obj15 = { style: animatedStyle1, children: React5(tmp25(5375), { absolute: true, tall: true, wide: true, mix: true }) };
+      tmp26 = React5(tmp25(4529).View, obj15);
     }
     const items6 = [tmp26, tmp11Result5];
     obj14.children = items6;
@@ -689,11 +689,11 @@ export const UsersFastList = noop.forwardRef(ReactCompilerGating.isReactCompiler
               str3 = "placeholder";
               if ("placeholder" === type) {
                 tmp16 = jsx;
-                tmp17 = f56191;
+                tmp17 = f56242;
                 obj6 = {};
                 tmp18 = obj6;
                 merged1 = Object.assign(element.props);
-                return jsx(f56191, obj6);
+                return jsx(f56242, obj6);
               } else {
                 str4 = "gdm";
                 if ("gdm" === type) {
@@ -783,11 +783,11 @@ export const UsersFastList = noop.forwardRef(ReactCompilerGating.isReactCompiler
               str3 = "placeholder";
               if ("placeholder" === type) {
                 tmp16 = jsx;
-                tmp17 = f56191;
+                tmp17 = f56242;
                 obj6 = {};
                 tmp18 = obj6;
                 merged1 = Object.assign(element.props);
-                return jsx(f56191, obj6);
+                return jsx(f56242, obj6);
               } else {
                 str4 = "gdm";
                 if ("gdm" === type) {
@@ -849,11 +849,11 @@ export const UsersFastList = noop.forwardRef(ReactCompilerGating.isReactCompiler
               str3 = "placeholder";
               if ("placeholder" === type) {
                 tmp16 = jsx;
-                tmp17 = f56191;
+                tmp17 = f56242;
                 obj6 = {};
                 tmp18 = obj6;
                 merged1 = Object.assign(element.props);
-                return jsx(f56191, obj6);
+                return jsx(f56242, obj6);
               } else {
                 str4 = "gdm";
                 if ("gdm" === type) {
@@ -914,11 +914,11 @@ export const UsersFastList = noop.forwardRef(ReactCompilerGating.isReactCompiler
                 str3 = "placeholder";
                 if ("placeholder" === type) {
                   tmp16 = jsx;
-                  tmp17 = f56191;
+                  tmp17 = f56242;
                   obj6 = {};
                   tmp18 = obj6;
                   merged1 = Object.assign(element.props);
-                  return jsx(f56191, obj6);
+                  return jsx(f56242, obj6);
                 } else {
                   str4 = "gdm";
                   if ("gdm" === type) {
@@ -980,11 +980,11 @@ export const UsersFastList = noop.forwardRef(ReactCompilerGating.isReactCompiler
                 str3 = "placeholder";
                 if ("placeholder" === type) {
                   tmp16 = jsx;
-                  tmp17 = f56191;
+                  tmp17 = f56242;
                   obj6 = {};
                   tmp18 = obj6;
                   merged1 = Object.assign(element.props);
-                  return jsx(f56191, obj6);
+                  return jsx(f56242, obj6);
                 } else {
                   str4 = "gdm";
                   if ("gdm" === type) {

@@ -1,14 +1,14 @@
-// Module ID: 11159
-// Function ID: 11160
+// Module ID: 11195
+// Function ID: 11196
 // Name: SelectedUserField
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 4603, 7298, 1181, 4754, 6851, 6856, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 4635, 7330, 1181, 4786, 6883, 6888, 2]
 
-// Module 11159 (SelectedUserField)
+// Module 11195 (SelectedUserField)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import InputFieldContainer from "InputFieldContainer" /* 6856 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7298 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import InputFieldContainer from "InputFieldContainer" /* 6888 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7330 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ Pressable: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { marginHorizontal: nativeDefault.space.PX_16 }, content: { flexDirection: "row", overflow: "hidden", alignItems: "center", display: "flex" }, opener: null, openerWithClearButton: null, searchIcon: null, userPill: null, userPillText: null, clearButton: null };
 let obj3 = { marginHorizontal: nativeDefault.space.PX_16 };
 obj2.opener = { flexDirection: "row", alignItems: "center", flex: 1, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: 6 };
@@ -62,7 +62,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       if (cResult[5] !== tmp4.searchIcon) {
         const obj3 = { style: tmp4.searchIcon, size: "xs", color: "interactive-text-default" };
-        const tmp17 = hasOwnProperty(tmp(7298).MagnifyingGlassIcon, obj3);
+        const tmp17 = hasOwnProperty(tmp(7330).MagnifyingGlassIcon, obj3);
         cResult[5] = tmp4.searchIcon;
         cResult[6] = tmp17;
         let tmp15 = tmp17;
@@ -108,7 +108,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         const items = [tmp26, tmp30];
                         obj6.children = items;
                         obj5.children = timestampProducer(React4, obj6);
-                        const tmp39 = hasOwnProperty(tmp(6856).InputFieldContainer, obj5);
+                        const tmp39 = hasOwnProperty(tmp(6888).InputFieldContainer, obj5);
                         cResult[21] = tmp4.content;
                         cResult[22] = tmp26;
                         cResult[23] = tmp30;
@@ -130,7 +130,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       const intl5 = tmp(1119).intl;
                       const obj9 = { text: UserUtilsDefault.getName(selectedUser) };
                       obj7.accessibilityLabel = intl5.formatToPlainString(tmp(1119).t["0Vb9FQ"], obj9);
-                      obj7.children = hasOwnProperty(tmp(6851).CircleXIcon, { size: "xs" });
+                      obj7.children = hasOwnProperty(tmp(6883).CircleXIcon, { size: "xs" });
                       tmp31 = hasOwnProperty(React3, obj7);
                     }
                     cResult[17] = selectedUser;
@@ -161,14 +161,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj13 = { user: selectedUser, guildId: "Array", size: tmp(1181).AvatarSizes.XSMALL_20 };
         const items2 = [hasOwnProperty(tmp(1181).Avatar, obj13), ];
         const obj14 = { variant: "text-md/medium", style: tmp4.userPillText, children: UserUtilsDefault.getName(selectedUser) };
-        items2[1] = hasOwnProperty(tmp(4754).Text, obj14);
+        items2[1] = hasOwnProperty(tmp(4786).Text, obj14);
         obj11.children = items2;
         let tmp20 = timestampProducer(React4, obj11);
       } else {
         const obj15 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp4.userPillText, children: null };
         const intl4 = tmp(1119).intl;
         obj15.children = intl4.string(tmp(1119).t.R0vK0N);
-        tmp20 = hasOwnProperty(tmp(4754).Text, obj15);
+        tmp20 = hasOwnProperty(tmp(4786).Text, obj15);
       }
       cResult[7] = selectedUser;
       cResult[8] = tmp4.userPill;
@@ -212,14 +212,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj7 = { user: selectedUser, guildId: "Array", size: tmp4(1181).AvatarSizes.XSMALL_20 };
     const items2 = [tmp2(tmp4(1181).Avatar, obj7), ];
     const obj8 = { variant: "text-md/medium", style: tmp.userPillText, children: UserUtilsDefault.getName(selectedUser) };
-    items2[1] = tmp2(tmp4(4754).Text, obj8);
+    items2[1] = tmp2(tmp4(4786).Text, obj8);
     obj6.children = items2;
     let tmp2Result1 = tmp6(tmp3, obj6);
   } else {
     const obj9 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.userPillText, children: null };
     const intl4 = tmp4(1119).intl;
     obj9.children = intl4.string(tmp4(1119).t.R0vK0N);
-    tmp2Result1 = tmp2(tmp4(4754).Text, obj9);
+    tmp2Result1 = tmp2(tmp4(4786).Text, obj9);
   }
   items1[1] = tmp2Result1;
   obj3.children = items1;
@@ -238,7 +238,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl5 = tmp4(1119).intl;
     const obj12 = { text: UserUtilsDefault.getName(selectedUser) };
     obj11.accessibilityLabel = intl5.formatToPlainString(tmp4(1119).t["0Vb9FQ"], obj12);
-    obj11.children = tmp2(tmp4(6851).CircleXIcon, { size: "xs" });
+    obj11.children = tmp2(tmp4(6883).CircleXIcon, { size: "xs" });
     tmp2Result = tmp2(tmp7, obj11);
   }
   items3[1] = tmp2Result;

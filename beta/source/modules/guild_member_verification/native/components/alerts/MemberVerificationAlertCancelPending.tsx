@@ -1,11 +1,11 @@
-// Module ID: 5759
-// Function ID: 5760
+// Module ID: 5791
+// Function ID: 5792
 // Name: MemberVerificationAlertCancelPending
-// Dependencies: [109, 19, 21, 558, 568, 5760, 1119, 5188, 5756, 2]
+// Dependencies: [109, 19, 21, 558, 568, 5792, 1119, 5220, 5788, 2]
 
-// Module 5759 (MemberVerificationAlertCancelPending)
-import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 5756 */;
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5760 */;
+// Module 5791 (MemberVerificationAlertCancelPending)
+import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 5788 */;
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5792 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -95,7 +95,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
       if (cResult[18] !== tmp6) {
         const obj2 = { text: tmp25, variant: "secondary", onPress: tmp6 };
-        const tmp29 = closure_6(tmp(5188).Button, obj2);
+        const tmp29 = closure_6(tmp(5220).Button, obj2);
         cResult[18] = tmp6;
         cResult[19] = tmp29;
         let tmp27 = tmp29;
@@ -136,7 +136,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       tmp30 = tmp33;
     }
     const obj5 = { variant: "destructive", text: tmp19, onPress: tmp12 };
-    const tmp24 = closure_6(tmp(5188).Button, obj5);
+    const tmp24 = closure_6(tmp(5220).Button, obj5);
     cResult[14] = tmp12;
     cResult[15] = tmp19;
     cResult[16] = tmp24;
@@ -177,13 +177,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     confirmText = intl3.string(tmp7(1119).t.OzHPde);
   }
   const obj2 = { children: null };
-  const items1 = [closure_6(guildId(5188).Button, { variant: "destructive", text: confirmText, onPress: callback }), ];
+  const items1 = [closure_6(guildId(5220).Button, { variant: "destructive", text: confirmText, onPress: callback }), ];
   const obj3 = { text: null, variant: "secondary", onPress: null };
   const intl4 = tmp7(1119).intl;
   obj3.text = intl4.string(guildId(1119).t.bANR0R);
   obj3.onPress = onClose;
-  items1[1] = closure_6(guildId(5188).Button, obj3);
+  items1[1] = closure_6(guildId(5220).Button, obj3);
   obj2.children = items1;
   obj.buttons = closure_8(closure_7, obj2);
-  return closure_6(onClose(5756), obj);
+  return closure_6(onClose(5788), obj);
 });

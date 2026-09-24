@@ -1,16 +1,16 @@
-// Module ID: 9679
-// Function ID: 9680
+// Module ID: 9711
+// Function ID: 9712
 // Name: useVideoStreamError
-// Dependencies: [502, 9680, 4783, 558, 568, 9681, 504, 2]
+// Dependencies: [502, 9712, 4815, 558, 568, 9713, 504, 2]
 // Exports: default
 
-// Module 9679 (useVideoStreamError)
-import AVError from "AVError" /* 9681 */;
+// Module 9711 (useVideoStreamError)
+import AVError from "AVError" /* 9713 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AVErrorStore from "AVErrorStore" /* 9680 */;
+import AVErrorStore from "AVErrorStore" /* 9712 */;
 
 require = fn;
-const MediaEngineContextTypes = fn(4783).MediaEngineContextTypes;
+const MediaEngineContextTypes = fn(4815).MediaEngineContextTypes;
 let ReactCompilerGating = fn(558);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   _require = arg0;

@@ -1,15 +1,15 @@
-// Module ID: 16960
-// Function ID: 16961
+// Module ID: 16970
+// Function ID: 16971
 // Name: VibegrationsChangelogSheet
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1616, 16959, 7449, 7396, 1119, 3682, 6863, 4754, 4442, 4352, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1616, 16969, 7481, 7428, 1119, 3714, 6895, 4786, 4474, 4384, 2]
 
-// Module 16960 (VibegrationsChangelogSheet)
+// Module 16970 (VibegrationsChangelogSheet)
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import _modDef4352 from "module_4352" /* 4352 */;
-import DateUtils from "DateUtils" /* 4442 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import _modDef4384 from "module_4384" /* 4384 */;
+import DateUtils from "DateUtils" /* 4474 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { entries: { gap: nativeDefault.space.PX_12 }, entry: null };
 let obj3 = { gap: nativeDefault.space.PX_12 };
 obj2.entry = { gap: nativeDefault.space.PX_4 };
@@ -74,19 +74,19 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   let obj = entry(568);
-  const result = entry(16959).allVibegrationsChangelog("mobile");
-  const ActionSheet = tmp(7449).ActionSheet;
+  const result = entry(16969).allVibegrationsChangelog("mobile");
+  const ActionSheet = tmp(7481).ActionSheet;
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { title: null };
     let intl = tmp(1119).intl;
-    obj4.title = intl.string(tmp4(3682).x07mpp);
-    const tmp14 = closure_4(tmp(7396).BottomSheetTitleHeader, obj4);
+    obj4.title = intl.string(tmp4(3714).x07mpp);
+    const tmp14 = closure_4(tmp(7428).BottomSheetTitleHeader, obj4);
     cResult[10] = tmp14;
     let tmp12 = tmp14;
   } else {
     tmp12 = cResult[10];
   }
-  const BottomSheetScrollView = tmp(6863).BottomSheetScrollView;
+  const BottomSheetScrollView = tmp(6895).BottomSheetScrollView;
   const sum = tmp4(580).space.PX_16 + entries;
   if (cResult[11] !== sum) {
     const obj5 = { paddingBottom: sum };
@@ -199,7 +199,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj2 = { scrollable: true, header: null, children: null };
   const obj3 = { title: null };
   let intl = require("util").intl;
-  obj3.title = intl.string(_modDef3682.x07mpp);
+  obj3.title = intl.string(_modDef3714.x07mpp);
   obj2.header = closure_4(require("BottomSheetTitleHeader").BottomSheetTitleHeader, obj3);
   const obj4 = { contentContainerStyle: null, scrollIndicatorInsets: null, children: null };
   let items = [tmp.entries, ];
@@ -209,13 +209,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj4.scrollIndicatorInsets = { bottom };
   obj4.children = result.map((children) => {
     const obj = { style: entry.entry, children: null };
-    const items = [DateUtils.dateFormat(_modDef4352(children.date, "YYYY-MM-DD"), "LL"), ];
+    const items = [DateUtils.dateFormat(_modDef4384(children.date, "YYYY-MM-DD"), "LL"), ];
     const tmp2 = View;
     let combined = null;
     if (obj3.isVibegrationsChangelogEntryExclusive(children)) {
       const intl = tmp3(1119).intl;
       const _HermesInternal = HermesInternal;
-      combined = " \u00B7 " + intl.string(_modDef3682["CLX+p/"]);
+      combined = " \u00B7 " + intl.string(_modDef3714["CLX+p/"]);
     }
     items[1] = combined;
     const items1 = [hasOwnProperty(Text_Text.Text, { variant: "text-xs/bold", color: "text-muted", children: items }), React4(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: children.summary })];

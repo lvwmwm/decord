@@ -1,22 +1,22 @@
-// Module ID: 16102
-// Function ID: 16103
+// Module ID: 16112
+// Function ID: 16113
 // Name: UserSettingsDesignSystemSheets
-// Dependencies: [32, 19, 17, 1078, 21, 4758, 558, 568, 9781, 7444, 7396, 6846, 5186, 7445, 7449, 4725, 5188, 1119, 10613, 6051, 4754, 5824, 2]
+// Dependencies: [32, 19, 17, 1078, 21, 4790, 558, 568, 9813, 7476, 7428, 6878, 5218, 7477, 7481, 4757, 5220, 1119, 10649, 6083, 4786, 5856, 2]
 
-// Module 16102 (UserSettingsDesignSystemSheets)
+// Module 16112 (UserSettingsDesignSystemSheets)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import Card from "Card" /* 5824 */;
-import _modDef6051 from "module_6051" /* 6051 */;
-import TextInput from "TextInput" /* 6846 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import ActionSheetRow from "ActionSheetRow" /* 7445 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
-import PromoSheet from "PromoSheet" /* 10613 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import Card from "Card" /* 5856 */;
+import _modDef6083 from "module_6083" /* 6083 */;
+import TextInput from "TextInput" /* 6878 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import ActionSheetRow from "ActionSheetRow" /* 7477 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
+import PromoSheet from "PromoSheet" /* 10649 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -28,7 +28,7 @@ const ScrollView = fn(17).ScrollView;
 const NOOP = fn(1078).NOOP;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ container: { padding: 16, alignItems: "center" } });
 let ReactCompilerGating = fn(558);
 let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -52,7 +52,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let tmp22 = tmp5;
       if (tmp5) {
         const obj2 = { onPress: NOOP };
-        tmp22 = React5(tmp(7444).ActionSheetCloseButton, obj2);
+        tmp22 = React5(tmp(7476).ActionSheetCloseButton, obj2);
       }
       cResult[3] = tmp5;
       cResult[4] = tmp22;
@@ -65,7 +65,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         if (cResult[7] === tmp21) {
           if (cResult[10] !== first1) {
             const obj3 = { value: first1, onChange: tmp9[1], label: "Title" };
-            const tmp30 = React5(tmp(6846).TextInput, obj3);
+            const tmp30 = React5(tmp(6878).TextInput, obj3);
             cResult[10] = first1;
             cResult[11] = tmp30;
             let tmp28 = tmp30;
@@ -84,7 +84,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           if (cResult[13] !== tmp12) {
             const obj4 = { value: tmp12, onChange: tmp13, label: "Subtitle", maxLength: 100, clearable: true, onClear: tmp32 };
-            const tmp35 = React5(tmp(6846).TextInput, obj4);
+            const tmp35 = React5(tmp(6878).TextInput, obj4);
             cResult[13] = tmp12;
             cResult[14] = tmp35;
             let tmp33 = tmp35;
@@ -97,7 +97,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             if (cResult[18] !== first) {
               const obj5 = { value: first, onValueChange: tmp7[1], label: "Show Leading" };
-              const tmp41 = React5(tmp(7445).ActionSheetSwitchRow, obj5);
+              const tmp41 = React5(tmp(7477).ActionSheetSwitchRow, obj5);
               cResult[18] = first;
               cResult[19] = tmp41;
               let tmp39 = tmp41;
@@ -106,7 +106,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             if (cResult[20] !== tmp5) {
               const obj6 = { value: tmp5, onValueChange: tmp6, label: "Show Trailing" };
-              const tmp44 = React5(tmp(7445).ActionSheetSwitchRow, obj6);
+              const tmp44 = React5(tmp(7477).ActionSheetSwitchRow, obj6);
               cResult[20] = tmp5;
               cResult[21] = tmp44;
               let tmp42 = tmp44;
@@ -149,14 +149,14 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 const obj7 = { spacing: 24, children: null };
                 const items = [tmp36, tmp45, tmp50];
                 obj7.children = items;
-                const tmp55 = closure_1_8(tmp(5186).Stack, obj7);
+                const tmp55 = closure_1_8(tmp(5218).Stack, obj7);
                 cResult[29] = tmp45;
                 cResult[30] = tmp50;
                 cResult[31] = tmp36;
                 cResult[32] = tmp55;
               }
               const obj8 = { value: tmp15, onChange: tmp16, label: "Leading", disabled: !first, clearable: true, onClear: tmp49 };
-              const tmp52 = React5(tmp(6846).TextInput, obj8);
+              const tmp52 = React5(tmp(6878).TextInput, obj8);
               cResult[26] = tmp15;
               cResult[27] = !first;
               cResult[28] = tmp52;
@@ -164,7 +164,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const obj9 = { hasIcons: false, children: null };
             const items1 = [tmp39, tmp42];
             obj9.children = items1;
-            const tmp47 = closure_1_8(tmp(7445).ActionSheetRow.Group, obj9);
+            const tmp47 = closure_1_8(tmp(7477).ActionSheetRow.Group, obj9);
             cResult[22] = tmp39;
             cResult[23] = tmp42;
             cResult[24] = tmp47;
@@ -173,7 +173,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj10 = { children: null };
           const items2 = [tmp28, tmp33];
           obj10.children = items2;
-          const tmp38 = closure_1_8(tmp(5186).Stack, obj10);
+          const tmp38 = closure_1_8(tmp(5218).Stack, obj10);
           cResult[15] = tmp28;
           cResult[16] = tmp33;
           cResult[17] = tmp38;
@@ -182,7 +182,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const obj11 = { title: first1, subtitle: tmp17, leading: tmp18, trailing: tmp21 };
-    const tmp27 = React5(tmp(7396).BottomSheetTitleHeader, obj11);
+    const tmp27 = React5(tmp(7428).BottomSheetTitleHeader, obj11);
     cResult[5] = tmp17;
     cResult[6] = tmp18;
     cResult[7] = tmp21;
@@ -197,7 +197,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const obj12 = { onPress: NOOP, label: tmp15 };
-    tmp19 = React5(tmp(9781).ActionSheetHeaderPressableText, obj12);
+    tmp19 = React5(tmp(9813).ActionSheetHeaderPressableText, obj12);
   }
   cResult[0] = tmp15;
   cResult[1] = first;
@@ -224,13 +224,13 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp14Result = first;
   if (first) {
     const obj2 = { onPress: NOOP, label: tmp12 };
-    tmp14Result = tmp14(tmp15(9781).ActionSheetHeaderPressableText, obj2);
+    tmp14Result = tmp14(tmp15(9813).ActionSheetHeaderPressableText, obj2);
   }
   obj.leading = tmp14Result;
   let tmp14Result2 = tmp2;
   if (tmp2) {
     const obj3 = { onPress: NOOP };
-    tmp14Result2 = tmp14(tmp15(7444).ActionSheetCloseButton, obj3);
+    tmp14Result2 = tmp14(tmp15(7476).ActionSheetCloseButton, obj3);
   }
   const obj4 = { header: React5(BottomSheetTitleHeader.BottomSheetTitleHeader, obj), children: null };
   obj.trailing = tmp14Result2;
@@ -282,7 +282,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     };
     const intl = tmp(1119).intl;
     obj2.text = intl.string(tmp(1119).t.BddRzS);
-    const tmp6 = React5(tmp(5188).Button, obj2);
+    const tmp6 = React5(tmp(5220).Button, obj2);
     cResult[0] = tmp6;
     let first = tmp6;
   } else {
@@ -291,11 +291,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { graphic: null, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: null };
     const obj4 = { type: "image", src: null, aspectRatio: "16/9" };
-    const obj5 = { uri: _modDef6051 };
+    const obj5 = { uri: _modDef6083 };
     obj4.src = obj5;
     obj3.graphic = obj4;
     obj3.actions = first;
-    const tmp10 = React5(tmp(10613).PromoSheet, obj3);
+    const tmp10 = React5(tmp(10649).PromoSheet, obj3);
     cResult[1] = tmp10;
     let tmp7 = tmp10;
   } else {
@@ -315,7 +315,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj2 = { graphic: null, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: null };
   const obj3 = { type: "image", src: null, aspectRatio: "16/9" };
   const tmp = React5(components_Button_Button.Button, obj);
-  obj3.src = { uri: _modDef6051 };
+  obj3.src = { uri: _modDef6083 };
   obj2.graphic = obj3;
   obj2.actions = tmp;
   return React5(PromoSheet.PromoSheet, obj2);
@@ -328,8 +328,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(6);
   const tmp4 = closure_9();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp8 = React5(tmp(4754).Text, { variant: "text-lg/bold", children: "Action Sheet with Title Header" });
-    const tmp9 = React5(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "An action sheet with a centered title and subtitle, with optional leading and Trailing elements." });
+    const tmp8 = React5(tmp(4786).Text, { variant: "text-lg/bold", children: "Action Sheet with Title Header" });
+    const tmp9 = React5(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "An action sheet with a centered title and subtitle, with optional leading and Trailing elements." });
     cResult[0] = tmp8;
     cResult[1] = tmp9;
     tmp5 = tmp8;
@@ -347,10 +347,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         },
       text: "Show Action Sheet"
     };
-    items[2] = React5(tmp(5188).Button, obj4);
+    items[2] = React5(tmp(5220).Button, obj4);
     obj3.children = items;
-    obj2.children = closure_1_8(tmp(5186).Stack, obj3);
-    const tmp13 = React5(tmp(5824).Card, obj2);
+    obj2.children = closure_1_8(tmp(5218).Stack, obj3);
+    const tmp13 = React5(tmp(5856).Card, obj2);
     cResult[2] = tmp13;
     let tmp10 = tmp13;
   } else {
@@ -361,14 +361,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const items1 = [tmp10, ];
     const obj6 = { children: null };
     const obj7 = { children: null };
-    const items2 = [React5(tmp(4754).Text, { variant: "text-lg/bold", children: "Promo Sheet" }), React5(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "A sheet with an illustration, title, description, and actions." }), ];
+    const items2 = [React5(tmp(4786).Text, { variant: "text-lg/bold", children: "Promo Sheet" }), React5(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "A sheet with an illustration, title, description, and actions." }), ];
     const obj8 = { onPress: showDemoPromoSheet, text: "Show Promo Sheet" };
-    items2[2] = React5(tmp(5188).Button, obj8);
+    items2[2] = React5(tmp(5220).Button, obj8);
     obj7.children = items2;
-    obj6.children = closure_1_8(tmp(5186).Stack, obj7);
-    items1[1] = React5(tmp(5824).Card, obj6);
+    obj6.children = closure_1_8(tmp(5218).Stack, obj7);
+    items1[1] = React5(tmp(5856).Card, obj6);
     obj5.children = items1;
-    const tmp18 = closure_1_8(tmp(5186).Stack, obj5);
+    const tmp18 = closure_1_8(tmp(5218).Stack, obj5);
     cResult[3] = tmp18;
     let tmp14 = tmp18;
   } else {

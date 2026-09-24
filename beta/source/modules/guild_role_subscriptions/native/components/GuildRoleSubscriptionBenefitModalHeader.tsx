@@ -1,27 +1,27 @@
-// Module ID: 18219
-// Function ID: 18220
+// Module ID: 18229
+// Function ID: 18230
 // Name: GuildRoleSubscriptionBenefitModalHeader
-// Dependencies: [32, 19, 17, 1078, 21, 4758, 580, 5743, 558, 568, 15486, 1119, 4754, 10017, 1181, 7371, 2]
+// Dependencies: [32, 19, 17, 1078, 21, 4790, 580, 5775, 558, 568, 15496, 1119, 4786, 10056, 1181, 7403, 2]
 
-// Module 18219 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 18229 (GuildRoleSubscriptionBenefitModalHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 10017 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15486 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 10056 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15496 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import TextStyles_mod from "TextStyles" /* 5743 */;
+import TextStyles_mod from "TextStyles" /* 5775 */;
 
 require = fn;
 const View = fn(17).View;
 const Fonts = fn(1078).Fonts;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { headerContainer: { alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, flexDirection: "row", justifyContent: "space-between", paddingBottom: 8, paddingHorizontal: 16 }, headerButtonContainer: { flexDirection: "row", alignSelf: "center", minWidth: 60 }, headerButtonStart: { alignItems: "flex-start" }, headerButtonEnd: { alignItems: "flex-end" }, headerButton: null, disabledButton: null, titleContainer: null, title: null, subtitle: null };
 let TextStyles = TextStyles_mod;
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, 16));
@@ -64,7 +64,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[4] !== tmp4.headerButton) {
       const obj3 = { style: tmp4.headerButton, variant: "text-md/medium", color: "interactive-text-active", children: tmp9 };
-      const tmp13 = timestampProducer(tmp(4754).Text, obj3);
+      const tmp13 = timestampProducer(tmp(4786).Text, obj3);
       cResult[4] = tmp4.headerButton;
       cResult[5] = tmp13;
       let tmp11 = tmp13;
@@ -138,7 +138,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           const obj5 = { top: true, style: tmp6, children: null };
                           const items = [tmp14, tmp24, tmp36];
                           obj5.children = items;
-                          const tmp42 = React5(tmp(7371).SafeAreaPaddingView, obj5);
+                          const tmp42 = React5(tmp(7403).SafeAreaPaddingView, obj5);
                           cResult[34] = tmp4.headerContainer;
                           cResult[35] = tmp36;
                           cResult[36] = tmp14;
@@ -182,7 +182,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp24 = tmp27;
           }
           const obj8 = { style: tmp4.subtitle, variant: "text-xs/medium", color: "text-default", children: first };
-          const tmp23 = timestampProducer(tmp(4754).Text, obj8);
+          const tmp23 = timestampProducer(tmp(4786).Text, obj8);
           cResult[13] = tmp4.subtitle;
           cResult[14] = first;
           cResult[15] = tmp23;

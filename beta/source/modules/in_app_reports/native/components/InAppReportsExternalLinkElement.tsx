@@ -1,15 +1,15 @@
-// Module ID: 13213
-// Function ID: 13214
+// Module ID: 13249
+// Function ID: 13250
 // Name: InAppReportsExternalLinkElement
-// Dependencies: [17, 21, 4758, 558, 568, 7222, 4754, 1119, 4455, 5828, 13214, 8878, 2]
+// Dependencies: [17, 21, 4790, 558, 568, 7254, 4786, 1119, 4487, 5860, 13250, 8910, 2]
 
-// Module 13213 (InAppReportsExternalLinkElement)
+// Module 13249 (InAppReportsExternalLinkElement)
 import _mod17 from "module_17" /* 17 */;
 import c from "c" /* 568 */;
-import LinkingDefault from "Linking" /* 4455 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7222 */;
+import LinkingDefault from "Linking" /* 4487 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7254 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import "ReactCompilerGating";
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,8 +35,8 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
     }
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { IconComponent: tmp(13214).LinkExternalMediumIcon };
-      const tmp9 = closure_4(tmp(5828).TableRowIcon, obj2);
+      const obj2 = { IconComponent: tmp(13250).LinkExternalMediumIcon };
+      const tmp9 = closure_4(tmp(5860).TableRowIcon, obj2);
       cResult[2] = tmp9;
       let tmp7 = tmp9;
     } else {
@@ -51,7 +51,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
       }
     }
     const obj3 = { label: link_text, subLabel: link_description, trailing: tmp7, onPress: tmp5, arrow: false, accessibilityRole: "link" };
-    const tmp12 = closure_4(tmp(8878).RowButton, obj3);
+    const tmp12 = closure_4(tmp(8910).RowButton, obj3);
     cResult[3] = link_description;
     cResult[4] = link_text;
     cResult[5] = tmp5;
@@ -66,12 +66,12 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
   let tmp3 = null;
   if (data.is_localized) {
     const obj = { label: tmp, subLabel: tmp2, trailing: null, onPress: null, arrow: false, accessibilityRole: "link" };
-    const obj2 = { IconComponent: url(13214).LinkExternalMediumIcon };
-    obj.trailing = closure_4(url(5828).TableRowIcon, obj2);
+    const obj2 = { IconComponent: url(13250).LinkExternalMediumIcon };
+    obj.trailing = closure_4(url(5860).TableRowIcon, obj2);
     obj.onPress = function onPress() {
       LinkingDefault.openURL(url);
     };
-    tmp3 = closure_4(url(8878).RowButton, obj);
+    tmp3 = closure_4(url(8910).RowButton, obj);
   }
   return tmp3;
 });
@@ -167,7 +167,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((elements) => {
               const str2 = intl.string(tmp(1119).t.hvVgAZ);
             }
             obj4.children = stringResult;
-            React4(tmp(4754).Text, obj4);
+            React4(tmp(4786).Text, obj4);
           }
         }
       }
@@ -205,7 +205,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((elements) => {
             const str = intl.string(tmp2(1119).t.hvVgAZ);
           }
           obj3.children = stringResult;
-          React4(tmp2(4754).Text, obj3);
+          React4(tmp2(4786).Text, obj3);
         }
         someResult = elements.some((data) => data.data.is_header_hidden);
       }

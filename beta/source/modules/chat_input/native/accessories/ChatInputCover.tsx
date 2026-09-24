@@ -1,9 +1,9 @@
-// Module ID: 12400
-// Function ID: 12401
+// Module ID: 12436
+// Function ID: 12437
 // Name: ChatInputCover
-// Dependencies: [19, 17, 21, 558, 568, 5173, 1614, 2]
+// Dependencies: [19, 17, 21, 558, 568, 5205, 1614, 2]
 
-// Module 12400 (ChatInputCover)
+// Module 12436 (ChatInputCover)
 import KeyboardTypes from "KeyboardTypes" /* 1614 */;
 import noop from "module_19" /* 19 */;
 

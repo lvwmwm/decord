@@ -1,23 +1,23 @@
-// Module ID: 12612
-// Function ID: 12613
+// Module ID: 12648
+// Function ID: 12649
 // Name: ChannelFollowSuccessAlert
-// Dependencies: [19, 17, 21, 12613, 12614, 12615, 12616, 12617, 12618, 1119, 4758, 558, 568, 4693, 4610, 12, 7687, 4754, 5207, 2]
+// Dependencies: [19, 17, 21, 12649, 12650, 12651, 12652, 12653, 12654, 1119, 4790, 558, 568, 4725, 4642, 12, 7719, 4786, 5239, 2]
 
-// Module 12612 (ChannelFollowSuccessAlert)
+// Module 12648 (ChannelFollowSuccessAlert)
 import _modDef12 from "module_12" /* 12 */;
 import util from "util" /* 1119 */;
-import useThemeDefault from "useTheme" /* 4693 */;
+import useThemeDefault from "useTheme" /* 4725 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const common_AlertDefault = tmp5(5207);
+const common_AlertDefault = tmp5(5239);
 require = fn;
 const Image = fn(17).Image;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-let items = [fn(12613), fn(12614), fn(12615)];
-let items1 = [fn(12616), fn(12617), fn(12618)];
+let items = [fn(12649), fn(12650), fn(12651)];
+let items1 = [fn(12652), fn(12653), fn(12654)];
 let items2 = [
   () => {
     const intl = util.intl;
@@ -60,7 +60,7 @@ let items2 = [
     return intl.string(util.t.jgC65t);
   }
 ];
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ text: { marginTop: 16, lineHeight: 20, textAlign: "center" }, header: { textAlign: "center" }, image: { alignSelf: "center", marginTop: -72, marginBottom: 16, width: "100%", resizeMode: "contain" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -188,7 +188,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj3 = { style: tmp4.text, variant: "text-md/medium", color: "text-muted", children: tmp23 };
-        const tmp26 = closure_4(tmp(4754).Text, obj3);
+        const tmp26 = closure_4(tmp(4786).Text, obj3);
         cResult[15] = tmp4.text;
         cResult[16] = tmp26;
       } else {
@@ -221,7 +221,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const tmp5Result = common_AlertDefault;
     }
     const obj6 = { style: tmp4.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp18 };
-    const tmp22 = closure_4(tmp(4754).Text, obj6);
+    const tmp22 = closure_4(tmp(4786).Text, obj6);
     cResult[11] = tmp4.header;
     cResult[12] = tmp18;
     cResult[13] = tmp22;

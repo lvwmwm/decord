@@ -1,11 +1,11 @@
 // Module ID: 4148
 // Function ID: 4149
-// Dependencies: [3849, 3850]
+// Dependencies: [3881, 3882]
 // Exports: default
 
 // Module 4148
-import _typeof_mod from "module_3849" /* 3849 */;
-import requiredArgs_mod from "requiredArgs" /* 3850 */;
+import _typeof_mod from "module_3881" /* 3881 */;
+import requiredArgs_mod from "requiredArgs" /* 3882 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,8 +24,19 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isFriday(arg0) {
+export default function isLeapYear(arg0) {
   requiredArgs.default(1, arguments);
-  return 5 === _typeof.default(arg0).getDay();
+  const fullYear = _typeof.default(arg0).getFullYear();
+  const result = fullYear % 400;
+  let tmp4 = result === 0;
+  if (result !== 0) {
+    const result1 = fullYear % 4;
+    let tmp6 = result1 === 0;
+    if (result1 === 0) {
+      tmp6 = fullYear % 100 !== 0;
+    }
+    tmp4 = tmp6;
+  }
+  return tmp4;
 };
 export default exports.default;

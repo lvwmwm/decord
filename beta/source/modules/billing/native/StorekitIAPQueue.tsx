@@ -1,10 +1,10 @@
-// Module ID: 11367
-// Function ID: 11368
+// Module ID: 11403
+// Function ID: 11404
 // Name: StorekitIAPQueue
-// Dependencies: [5, 17, 4973, 7482, 11348, 2]
+// Dependencies: [5, 17, 5005, 7514, 11384, 2]
 
-// Module 11367 (StorekitIAPQueue)
-import utils_PriceUtils from "utils/PriceUtils" /* 7482 */;
+// Module 11403 (StorekitIAPQueue)
+import utils_PriceUtils from "utils/PriceUtils" /* 7514 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -61,7 +61,7 @@ function productSK2ToIAPProduct(subscription) {
     str2 = "PAYASYOUGO";
   }
 }
-const convertToAlpha2 = fn(4973).convertToAlpha2;
+const convertToAlpha2 = fn(5005).convertToAlpha2;
 const RNIapIosSk2 = fn(17).NativeModules.RNIapIosSk2;
 class StorekitIAPQueueClass {
   constructor() {

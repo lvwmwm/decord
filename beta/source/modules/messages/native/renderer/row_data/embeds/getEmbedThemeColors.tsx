@@ -1,23 +1,23 @@
-// Module ID: 8208
-// Function ID: 8209
+// Module ID: 8240
+// Function ID: 8241
 // Name: getEmbedThemeColors
-// Dependencies: [19, 4758, 4610, 580, 4608, 558, 568, 2]
+// Dependencies: [19, 4790, 4642, 580, 4640, 558, 568, 2]
 // Exports: default
 
-// Module 8208 (getEmbedThemeColors)
+// Module 8240 (getEmbedThemeColors)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ColorUtils from "ColorUtils" /* 4608 */;
-import shared from "shared" /* 4610 */;
+import ColorUtils from "ColorUtils" /* 4640 */;
+import shared from "shared" /* 4642 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 const result = createStyles.experimental_createToken((theme) => {
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   return shared.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_400;
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 const result1 = createStyles.experimental_createToken((theme) => {
   if (obj.isThemeDark(theme.theme)) {
     let PRIMARY_600 = nativeDefault.unsafe_rawColors.PRIMARY_600;
@@ -27,22 +27,22 @@ const result1 = createStyles.experimental_createToken((theme) => {
   }
   return PRIMARY_600;
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 const result2 = createStyles.experimental_createToken((theme) => {
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   return shared.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_400;
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 const result3 = createStyles.experimental_createToken((theme) => {
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   return shared.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_400;
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 const result4 = createStyles.experimental_createToken((theme) => {
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   return shared.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_100;
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 const result5 = createStyles.experimental_createToken((theme) => {
   const isThemeDarkResult = shared.isThemeDark(theme.theme);
   const hexWithOpacity = ColorUtils.hexWithOpacity;
@@ -54,12 +54,12 @@ const result5 = createStyles.experimental_createToken((theme) => {
   }
   return hexWithOpacityResult;
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 const result6 = createStyles.experimental_createToken((theme) => {
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   return shared.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_600 : unsafe_rawColors.PRIMARY_100;
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 const result7 = createStyles.experimental_createToken((theme) => {
   let str = "#666b73";
   if (!obj.isThemeDark(theme.theme)) {
@@ -67,7 +67,7 @@ const result7 = createStyles.experimental_createToken((theme) => {
   }
   return str;
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 const result8 = createStyles.experimental_createToken((theme) => {
   if (obj.isThemeDark(theme.theme)) {
     let PRIMARY_600 = nativeDefault.unsafe_rawColors.PRIMARY_600;
@@ -77,7 +77,7 @@ const result8 = createStyles.experimental_createToken((theme) => {
   }
   return PRIMARY_600;
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let closure_4 = createStyles.createNativeStyleProperties({ acceptBlurpleLabelBackgroundColor: nativeDefault.colors.BACKGROUND_BRAND, acceptLabelGreenBackgroundColor: nativeDefault.colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT, acceptLabelGreenColor: nativeDefault.unsafe_rawColors.WHITE, backgroundColor: nativeDefault.colors.MOBILE_EMBED_BACKGROUND_DEFAULT, bodyTextColor: nativeDefault.colors.TEXT_DEFAULT, clearLabelRedBackgroundColor: nativeDefault.unsafe_rawColors.RED_400, clearLabelRedColor: nativeDefault.unsafe_rawColors.WHITE, headerColor: nativeDefault.colors.TEXT_SUBTLE, subtitleColor: nativeDefault.colors.TEXT_SUBTLE, titleColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, acceptLabelActiveBackgroundColor: result, acceptLabelDisabledBackgroundColor: result1, acceptLabelDisabledBorderColor: result2, acceptLabelDisabledTextColor: result3, acceptLabelDisabledColor: result4, borderColor: result5, resolvingGradientEnd: result6, resolvingGradientStart: result7, thumbnailBackgroundColor: result8, voiceActiveColor: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE, voiceHeaderBackgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, voiceMutedColor: nativeDefault.colors.TEXT_MUTED });
 const ReactCompilerGating = fn(558);
 const obj11 = { acceptBlurpleLabelBackgroundColor: nativeDefault.colors.BACKGROUND_BRAND, acceptLabelGreenBackgroundColor: nativeDefault.colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT, acceptLabelGreenColor: nativeDefault.unsafe_rawColors.WHITE, backgroundColor: nativeDefault.colors.MOBILE_EMBED_BACKGROUND_DEFAULT, bodyTextColor: nativeDefault.colors.TEXT_DEFAULT, clearLabelRedBackgroundColor: nativeDefault.unsafe_rawColors.RED_400, clearLabelRedColor: nativeDefault.unsafe_rawColors.WHITE, headerColor: nativeDefault.colors.TEXT_SUBTLE, subtitleColor: nativeDefault.colors.TEXT_SUBTLE, titleColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, acceptLabelActiveBackgroundColor: result, acceptLabelDisabledBackgroundColor: result1, acceptLabelDisabledBorderColor: result2, acceptLabelDisabledTextColor: result3, acceptLabelDisabledColor: result4, borderColor: result5, resolvingGradientEnd: result6, resolvingGradientStart: result7, thumbnailBackgroundColor: result8, voiceActiveColor: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE, voiceHeaderBackgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, voiceMutedColor: nativeDefault.colors.TEXT_MUTED };

@@ -1,34 +1,34 @@
-// Module ID: 16657
-// Function ID: 16658
+// Module ID: 16667
+// Function ID: 16668
 // Name: GuildsBarGuild
-// Dependencies: [19, 2063, 5108, 7877, 2067, 4580, 5657, 16626, 16623, 1078, 21, 4758, 580, 558, 568, 4462, 16635, 16361, 16364, 16658, 504, 5799, 16669, 16670, 5110, 1119, 1245, 16650, 16679, 16627, 16680, 4497, 5187, 5802, 16682, 2]
+// Dependencies: [19, 2063, 5140, 7909, 2067, 4612, 5689, 16636, 16633, 1078, 21, 4790, 580, 558, 568, 4494, 16645, 16371, 16374, 16668, 504, 5831, 16679, 16680, 5142, 1119, 1245, 16660, 16689, 16637, 16690, 4529, 5219, 5834, 16692, 2]
 
-// Module 16657 (GuildsBarGuild)
+// Module 16667 (GuildsBarGuild)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
-import spring from "spring" /* 5187 */;
-import GuildIcon from "GuildIcon" /* 5799 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 16627 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16650 */;
-import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 16680 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
+import spring from "spring" /* 5219 */;
+import GuildIcon from "GuildIcon" /* 5831 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 16637 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16660 */;
+import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 16690 */;
 import noop from "module_19" /* 19 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5108 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7877 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5140 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7909 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
-import SortedGuildStore from "SortedGuildStore" /* 5657 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
+import SortedGuildStore from "SortedGuildStore" /* 5689 */;
 
 require = fn;
 const GuildRecord = fn(2063);
 ({ getGuildIconSource: closure_4, getGuildIconURL: hasOwnProperty } = GuildRecord);
-const useItemDragState = fn(16626).useItemDragState;
-const TRANSITION_PHYSICS = fn(16623).TRANSITION_PHYSICS;
+const useItemDragState = fn(16636).useItemDragState;
+const TRANSITION_PHYSICS = fn(16633).TRANSITION_PHYSICS;
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsxProd = fn(21);
 ({ Fragment: closure_14, jsxs: closure_15, jsx: closure_16 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { guildIcon: null };
 let size = { width: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE, height: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE };
 obj.guildIcon = size;

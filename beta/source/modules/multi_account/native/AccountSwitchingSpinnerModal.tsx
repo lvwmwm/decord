@@ -1,18 +1,18 @@
-// Module ID: 17836
-// Function ID: 17837
+// Module ID: 17846
+// Function ID: 17847
 // Name: AccountSwitchingSpinnerModal
-// Dependencies: [19, 17, 21, 4758, 558, 568, 1119, 5796, 1098, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 1119, 5828, 1098, 2]
 
-// Module 17836 (AccountSwitchingSpinnerModal)
+// Module 17846 (AccountSwitchingSpinnerModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5796 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5828 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ switchingSpinnerContainer: { flex: 1, alignItems: "center", justifyContent: "center" } });
 const ReactCompilerGating = fn(558);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -21,7 +21,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1119).intl;
     const stringResult = intl.string(tmp(1119).t.n8qMH0);
-    const tmp9 = jsx(tmp(5796).ActivityIndicator, {});
+    const tmp9 = jsx(tmp(5828).ActivityIndicator, {});
     cResult[0] = stringResult;
     cResult[1] = tmp9;
     tmp5 = stringResult;

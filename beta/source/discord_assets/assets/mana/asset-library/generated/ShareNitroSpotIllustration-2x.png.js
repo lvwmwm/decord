@@ -1,8 +1,8 @@
-// Module ID: 6689
-// Function ID: 6690
+// Module ID: 6721
+// Function ID: 6722
 // Dependencies: [2]
 
-// Module 6689
+// Module 6721
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ShareNitroSpotIllustration-2x.png.js");

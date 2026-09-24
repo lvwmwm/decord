@@ -1,20 +1,20 @@
-// Module ID: 13804
-// Function ID: 13805
+// Module ID: 13840
+// Function ID: 13841
 // Name: PremiumSubscriptionPricingUpsell
-// Dependencies: [32, 19, 17, 2113, 1376, 4423, 4424, 7484, 1078, 1378, 21, 4758, 558, 568, 504, 4418, 13670, 577, 7663, 7487, 4754, 1368, 7482, 7481, 1119, 1885, 2]
+// Dependencies: [32, 19, 17, 2113, 1376, 4455, 4456, 7516, 1078, 1378, 21, 4790, 558, 568, 504, 4450, 13706, 577, 7695, 7519, 4786, 1368, 7514, 7513, 1119, 1885, 2]
 
-// Module 13804 (PremiumSubscriptionPricingUpsell)
+// Module 13840 (PremiumSubscriptionPricingUpsell)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 13670 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 13706 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
 import UserStore from "UserStore" /* 1376 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4423 */;
-import SubscriptionStore from "SubscriptionStore" /* 4424 */;
-import IAPStore from "IAPStore" /* 7484 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4455 */;
+import SubscriptionStore from "SubscriptionStore" /* 4456 */;
+import IAPStore from "IAPStore" /* 7516 */;
 
 require = fn;
 const View = fn(17).View;
@@ -23,7 +23,7 @@ const PremiumConstants = fn(1378);
 ({ SubscriptionPlans: closure_12, SubscriptionPlanInfo: map1, PremiumTypes: closure_14, SubscriptionIntervalTypes: closure_15, NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_16, GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: closure_17 } = PremiumConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_18, Fragment: closure_19, jsxs: closure_20 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_21 = createStyles.createStyles({ title: { marginTop: 16 }, pricingSection: { alignItems: "center" }, originalPrice: { textDecorationLine: "line-through" }, cardText: { lineHeight: 20, marginTop: 8, textAlign: "center" } });
 let ReactCompilerGating = fn(558);
 let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -47,7 +47,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = require("c");
   const stateFromStores = require("initialize").useStateFromStores(tmp5, tmp6);
   if (cResult[2] !== stateFromStores) {
-    const hasBoostDiscountResult = stateFromStores2(4418).hasBoostDiscount(stateFromStores);
+    const hasBoostDiscountResult = stateFromStores2(4450).hasBoostDiscount(stateFromStores);
     class T {
       constructor() {
         return closure_1_7.getCurrentUser();
@@ -55,7 +55,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     cResult[2] = stateFromStores;
     cResult[3] = hasBoostDiscountResult;
-    const obj3 = stateFromStores2(4418);
+    const obj3 = stateFromStores2(4450);
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [LocaleStore];
@@ -499,7 +499,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp4.title) {
     const obj3 = { style: title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: first };
-    const tmp10 = collapsedCategories(tmp(4754).Text, obj3);
+    const tmp10 = collapsedCategories(tmp(4786).Text, obj3);
     cResult[1] = tmp4.title;
     cResult[2] = tmp10;
     let tmp8 = tmp10;

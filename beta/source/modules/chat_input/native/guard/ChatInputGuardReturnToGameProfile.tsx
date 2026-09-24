@@ -1,21 +1,21 @@
-// Module ID: 12603
-// Function ID: 12604
+// Module ID: 12639
+// Function ID: 12640
 // Name: ChatInputGuardReturnToGameProfile
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1401, 1119, 9550, 12597, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1401, 1119, 9582, 12633, 2]
 
-// Module 12603 (ChatInputGuardReturnToGameProfile)
+// Module 12639 (ChatInputGuardReturnToGameProfile)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AvatarUtils from "AvatarUtils" /* 1401 */;
-import ArrowSmallLeftIcon from "ArrowSmallLeftIcon" /* 9550 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12597 */;
+import ArrowSmallLeftIcon from "ArrowSmallLeftIcon" /* 9582 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12633 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Image = fn(17).Image;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { icon: null };
 let size = { height: 40, width: 40, resizeMode: "contain", borderRadius: nativeDefault.radii.md };
 obj.icon = size;
@@ -46,7 +46,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((pendin
       const intl2 = tmp(1119).intl;
       const stringResult = intl2.string(tmp(1119).t.DjifDP);
       const obj3 = { color: nativeDefault.colors.WHITE };
-      const tmp17 = jsx(tmp(9550).ArrowSmallLeftIcon, { color: nativeDefault.colors.WHITE });
+      const tmp17 = jsx(tmp(9582).ArrowSmallLeftIcon, { color: nativeDefault.colors.WHITE });
       cResult[5] = stringResult;
       cResult[6] = tmp17;
       let tmp13 = tmp17;

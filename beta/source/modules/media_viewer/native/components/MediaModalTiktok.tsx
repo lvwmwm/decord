@@ -1,13 +1,13 @@
-// Module ID: 8572
-// Function ID: 8573
+// Module ID: 8604
+// Function ID: 8605
 // Name: MediaModalTiktok
-// Dependencies: [32, 109, 19, 21, 8573, 558, 568, 8548, 8537, 8538, 8539, 2]
+// Dependencies: [32, 109, 19, 21, 8605, 558, 568, 8580, 8569, 8570, 8571, 2]
 // Exports: createTiktokVideoControls
 
-// Module 8572 (MediaModalTiktok)
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8537 */;
-import useVideoControls from "useVideoControls" /* 8538 */;
-import MediaModalWebView from "MediaModalWebView" /* 8573 */;
+// Module 8604 (MediaModalTiktok)
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8569 */;
+import useVideoControls from "useVideoControls" /* 8570 */;
+import MediaModalWebView from "MediaModalWebView" /* 8605 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -20,11 +20,11 @@ const jsx = fn(21).jsx;
 let c8 = "https://www.tiktok.com/player/v1/";
 let closure_9 = { controls: 0, enable_music_info: 0, enable_timestamp: 0, utm_source: "discord.gg" };
 let c10 = "\n  window.addEventListener('message', function(event) {\n    if (!event.data[\"x-tiktok-player\"]) {\n      return;\n    }\n    window.ReactNativeWebView.postMessage(JSON.stringify(event.data));\n  }, true);\n";
-let obj = { "-1": fn(8573).PlayerState.UNSTARTED, 0: null, 1: null, 2: null, 3: null };
-obj[0] = fn(8573).PlayerState.ENDED;
-obj[1] = fn(8573).PlayerState.PLAYING;
-obj[2] = fn(8573).PlayerState.PAUSED;
-obj[3] = fn(8573).PlayerState.BUFFERING;
+let obj = { "-1": fn(8605).PlayerState.UNSTARTED, 0: null, 1: null, 2: null, 3: null };
+obj[0] = fn(8605).PlayerState.ENDED;
+obj[1] = fn(8605).PlayerState.PLAYING;
+obj[2] = fn(8605).PlayerState.PAUSED;
+obj[3] = fn(8605).PlayerState.BUFFERING;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/media_viewer/native/components/MediaModalTiktok.tsx");

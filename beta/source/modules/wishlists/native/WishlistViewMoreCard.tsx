@@ -1,14 +1,14 @@
-// Module ID: 11338
-// Function ID: 11339
+// Module ID: 11374
+// Function ID: 11375
 // Name: WishlistViewMoreCard
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 11333, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 11369, 4786, 2]
 
-// Module 11338 (WishlistViewMoreCard)
+// Module 11374 (WishlistViewMoreCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import WishlistItemCardDefault from "WishlistItemCard" /* 11333 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import WishlistItemCardDefault from "WishlistItemCard" /* 11369 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ Pressable: c3, StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles(() => {
   const obj = { moreOverlay: null };
   const obj2 = {};
@@ -63,7 +63,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[8] !== tmp9) {
         const obj4 = { variant: "text-md/semibold", color: "text-overlay-light", children: tmp9 };
-        const tmp13 = timestampProducer(tmp(4754).Text, obj4);
+        const tmp13 = timestampProducer(tmp(4786).Text, obj4);
         cResult[8] = tmp9;
         cResult[9] = tmp13;
         let tmp11 = tmp13;

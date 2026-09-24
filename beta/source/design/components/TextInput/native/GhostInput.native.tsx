@@ -1,19 +1,19 @@
-// Module ID: 14453
-// Function ID: 14454
+// Module ID: 14491
+// Function ID: 14492
 // Name: GhostInput
-// Dependencies: [109, 19, 21, 4758, 4754, 580, 558, 568, 6856, 4480, 6849, 6859, 6847, 6860, 7174, 2]
+// Dependencies: [109, 19, 21, 4790, 4786, 580, 558, 568, 6888, 4512, 6881, 6891, 6879, 6892, 7206, 2]
 
-// Module 14453 (GhostInput)
+// Module 14491 (GhostInput)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4480 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6847 */;
-import useTextField from "useTextField" /* 6849 */;
-import InputFieldContainer from "InputFieldContainer" /* 6856 */;
-import propsForNativeTextInput from "propsForNativeTextInput" /* 6859 */;
-import NativeTextInput from "NativeTextInput" /* 6860 */;
-import Input from "Input" /* 7174 */;
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4512 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6879 */;
+import useTextField from "useTextField" /* 6881 */;
+import InputFieldContainer from "InputFieldContainer" /* 6888 */;
+import propsForNativeTextInput from "propsForNativeTextInput" /* 6891 */;
+import NativeTextInput from "NativeTextInput" /* 6892 */;
+import Input from "Input" /* 7206 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,7 +21,7 @@ require = fn;
 let closure_3 = ["labelId", "accessibilityLabel"];
 let closure_4 = ["labelId", "accessibilityLabel"];
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles(() => {
   let str = arg0;
   if (arg0 === undefined) {
@@ -89,11 +89,11 @@ export const GhostInput = ReactCompilerGating.isReactCompilerEnabled() ? ((size)
       let tmp18 = cResult[8];
     }
     if (cResult[9] !== inputProps) {
-      const result = tmp(6859).propsForNativeTextInput(inputProps);
+      const result = tmp(6891).propsForNativeTextInput(inputProps);
       cResult[9] = inputProps;
       cResult[10] = result;
       let tmp19 = result;
-      const tmpResult7 = tmp(6859);
+      const tmpResult7 = tmp(6891);
     } else {
       tmp19 = cResult[10];
     }
@@ -133,7 +133,7 @@ export const GhostInput = ReactCompilerGating.isReactCompilerEnabled() ? ((size)
                   obj3.labelId = tmp12;
                   obj3.containerStyle = tmp18;
                   obj3.children = tmp25;
-                  const tmp39 = jsx(tmp(7174).Input, {});
+                  const tmp39 = jsx(tmp(7206).Input, {});
                   cResult[24] = tmp12;
                   cResult[25] = size;
                   cResult[26] = tmp18;
@@ -155,7 +155,7 @@ export const GhostInput = ReactCompilerGating.isReactCompilerEnabled() ? ((size)
       obj4.placeholderTextColor = inputStyles.placeholderText.color;
       obj4.spellCheck = false;
       obj4.autoFocus = tmp7;
-      const tmp33 = jsx(tmp(6860).NativeTextInput, {});
+      const tmp33 = jsx(tmp(6892).NativeTextInput, {});
       cResult[16] = tmp7;
       cResult[17] = innerRef;
       cResult[18] = tmp11;
@@ -166,7 +166,7 @@ export const GhostInput = ReactCompilerGating.isReactCompilerEnabled() ? ((size)
       cResult[23] = tmp33;
       tmp25 = tmp33;
     }
-    let requiredFieldA11yName = tmp(6847).getRequiredFieldA11yName(tmp10, required);
+    let requiredFieldA11yName = tmp(6879).getRequiredFieldA11yName(tmp10, required);
     if (requiredFieldA11yName == null) {
       requiredFieldA11yName = tmp10;
     }
@@ -174,7 +174,7 @@ export const GhostInput = ReactCompilerGating.isReactCompilerEnabled() ? ((size)
     cResult[12] = required;
     cResult[13] = requiredFieldA11yName;
     tmp21 = requiredFieldA11yName;
-    const tmpResult8 = tmp(6847);
+    const tmpResult8 = tmp(6879);
   }
   const items1 = [size.containerStyle, prop];
   cResult[6] = size.containerStyle;

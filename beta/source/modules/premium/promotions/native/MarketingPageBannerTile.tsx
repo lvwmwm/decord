@@ -1,13 +1,13 @@
-// Module ID: 13696
-// Function ID: 13697
+// Module ID: 13732
+// Function ID: 13733
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 7409, 13697, 1253, 11036, 9046, 13700, 4754, 4455, 10224, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 7441, 13733, 1253, 11072, 9078, 13736, 4786, 4487, 10263, 2]
 
-// Module 13696 (MarketingPageBannerTile)
+// Module 13732 (MarketingPageBannerTile)
 import nativeDefault from "native" /* 580 */;
-import LinkingDefault from "Linking" /* 4455 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9046 */;
+import LinkingDefault from "Linking" /* 4487 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7441 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9078 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -17,7 +17,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { width: "100%" }, card: { display: "flex", width: "100%", flexDirection: "column", justifyContent: "flex-start", padding: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_SECONDARY_ALT, overflow: "hidden" }, image: null, bodyText: null, ctaButton: null };
 let size = { width: "100%", maxWidth: 317, height: 144, borderRadius: nativeDefault.radii.md, marginBottom: nativeDefault.space.PX_16, padding: nativeDefault.space.PX_8, alignSelf: "center" };
 obj2.image = size;
@@ -60,8 +60,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               if (cResult[8] === promotionId) {
                 let tmp10 = cResult[9];
               }
-              tmp5(9046)(tmp10);
-              const formatStringWithCommonPremiumParams = tmp(13700).useFormatStringWithCommonPremiumParams(bannerFields.body);
+              tmp5(9078)(tmp10);
+              const formatStringWithCommonPremiumParams = tmp(13736).useFormatStringWithCommonPremiumParams(bannerFields.body);
               if (cResult[10] === bannerFields.helpArticle) {
                 if (cResult[11] === bannerFields.helpArticleId) {
                   let tmp13 = cResult[12];
@@ -81,7 +81,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       }
                       if (cResult[22] !== bannerFields.header) {
                         const obj2 = { color: "mobile-text-heading-primary", variant: "text-lg/bold", children: bannerFields.header };
-                        const tmp23 = closure_5(tmp(4754).Text, obj2);
+                        const tmp23 = closure_5(tmp(4786).Text, obj2);
                         cResult[22] = bannerFields.header;
                         cResult[23] = tmp23;
                         let tmp21 = tmp23;
@@ -100,7 +100,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                                     },
                             children: tmp13.linkText
                           };
-                          tmp25 = closure_5(tmp(4754).Text, obj3);
+                          tmp25 = closure_5(tmp(4786).Text, obj3);
                         }
                         cResult[24] = tmp13;
                         cResult[25] = tmp25;
@@ -158,7 +158,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           if (tmp31) {
                             const obj6 = { style: tmp4.ctaButton, children: null };
                             const obj7 = { text: bannerFields.button.copy, onPress: tmp8 };
-                            obj6.children = closure_5(tmp5(10224), obj7);
+                            obj6.children = closure_5(tmp5(10263), obj7);
                             tmp31 = closure_5(closure_4, obj6);
                           }
                           cResult[30] = bannerFields.button;
@@ -171,7 +171,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       const obj8 = { color: "mobile-text-heading-primary", variant: "text-sm/medium", style: tmp4.bodyText, children: null };
                       const items1 = [formatStringWithCommonPremiumParams, " ", tmp24];
                       obj8.children = items1;
-                      const tmp29 = closure_6(tmp(4754).Text, obj8);
+                      const tmp29 = closure_6(tmp(4786).Text, obj8);
                       cResult[26] = formatStringWithCommonPremiumParams;
                       cResult[27] = tmp4.bodyText;
                       cResult[28] = tmp24;
@@ -203,16 +203,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 cResult[15] = items3;
                 tmp15 = items3;
               }
-              const tmpResult = tmp(13700);
-              const helpArticleLinkProps = tmp(13700).getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
+              const tmpResult = tmp(13736);
+              const helpArticleLinkProps = tmp(13736).getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
               cResult[10] = bannerFields.helpArticle;
               cResult[11] = bannerFields.helpArticleId;
               cResult[12] = helpArticleLinkProps;
               tmp13 = helpArticleLinkProps;
-              const tmpResult3 = tmp(13700);
+              const tmpResult3 = tmp(13736);
             }
             const obj11 = { type: tmp(1253).ImpressionTypes.VIEW, name: tmp(1253).ImpressionNames.PREMIUM_MARKETING_COMPONENT, properties: null };
-            const obj12 = { component_type: tmp(11036).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId };
+            const obj12 = { component_type: tmp(11072).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId };
             obj11.properties = obj12;
             cResult[7] = componentId;
             cResult[8] = promotionId;
@@ -256,18 +256,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj2.analyticsPage = analyticsPage;
   obj2.onPaymentSuccess = onPaymentSuccess;
   obj2.onPaymentDismiss = onPaymentDismiss;
-  const obj = helpArticleLinkProps(13697);
+  const obj = helpArticleLinkProps(13733);
   const obj3 = { type: null, name: null, properties: null };
-  const buttonActionHandler = helpArticleLinkProps(13697).getButtonActionHandler(obj2);
+  const buttonActionHandler = helpArticleLinkProps(13733).getButtonActionHandler(obj2);
   obj3.type = helpArticleLinkProps(1253).ImpressionTypes.VIEW;
   obj3.name = helpArticleLinkProps(1253).ImpressionNames.PREMIUM_MARKETING_COMPONENT;
   const tmp2Result = useTrackImpressionDefault;
-  obj3.properties = { component_type: helpArticleLinkProps(11036).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId };
+  obj3.properties = { component_type: helpArticleLinkProps(11072).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId };
   tmp2Result(obj3);
-  const obj4 = { component_type: helpArticleLinkProps(11036).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId };
-  const formatStringWithCommonPremiumParams = helpArticleLinkProps(13700).useFormatStringWithCommonPremiumParams(bannerFields.body);
-  const tmp4Result = helpArticleLinkProps(13700);
-  helpArticleLinkProps = helpArticleLinkProps(13700).getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
+  const obj4 = { component_type: helpArticleLinkProps(11072).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId };
+  const formatStringWithCommonPremiumParams = helpArticleLinkProps(13736).useFormatStringWithCommonPremiumParams(bannerFields.body);
+  const tmp4Result = helpArticleLinkProps(13736);
+  helpArticleLinkProps = helpArticleLinkProps(13736).getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
   const obj5 = { style: null, children: null };
   const items = [tmp.container, style];
   obj5.style = items;
@@ -282,7 +282,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj7.style = tmp.image;
     tmp12Result = tmp12(closure_3, obj7);
   }
-  const items2 = [tmp12Result, closure_5(helpArticleLinkProps(4754).Text, { color: "mobile-text-heading-primary", variant: "text-lg/bold", children: bannerFields.header }), , ];
+  const items2 = [tmp12Result, closure_5(helpArticleLinkProps(4786).Text, { color: "mobile-text-heading-primary", variant: "text-lg/bold", children: bannerFields.header }), , ];
   const obj10 = { color: "mobile-text-heading-primary", variant: "text-sm/medium", style: tmp.bodyText, children: null };
   const items3 = [formatStringWithCommonPremiumParams, " ", ];
   let tmp12Result3 = null != helpArticleLinkProps;
@@ -296,16 +296,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         },
       children: helpArticleLinkProps.linkText
     };
-    tmp12Result3 = tmp12(tmp4(4754).Text, obj11);
+    tmp12Result3 = tmp12(tmp4(4786).Text, obj11);
   }
   items3[2] = tmp12Result3;
   obj10.children = items3;
-  items2[2] = closure_6(helpArticleLinkProps(4754).Text, obj10);
+  items2[2] = closure_6(helpArticleLinkProps(4786).Text, obj10);
   let tmp12Result4 = null != bannerFields.button;
   if (tmp12Result4) {
     const obj12 = { style: tmp.ctaButton, children: null };
     const obj13 = { text: bannerFields.button.copy, onPress: buttonActionHandler };
-    obj12.children = tmp12(tmp2(10224), obj13);
+    obj12.children = tmp12(tmp2(10263), obj13);
     tmp12Result4 = tmp12(tmp13, obj12);
   }
   items2[3] = tmp12Result4;

@@ -1,20 +1,20 @@
-// Module ID: 15855
-// Function ID: 15856
+// Module ID: 15865
+// Function ID: 15866
 // Name: DevToolsLocalMessageCache
-// Dependencies: [17, 2045, 21, 4758, 580, 558, 568, 5822, 5903, 7735, 4754, 5186, 2]
+// Dependencies: [17, 2045, 21, 4790, 580, 558, 568, 5854, 5935, 7767, 4786, 5218, 2]
 
-// Module 15855 (DevToolsLocalMessageCache)
+// Module 15865 (DevToolsLocalMessageCache)
 import _mod17 from "module_17" /* 17 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import TableRow from "TableRow" /* 5822 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import MessageCacheStatsDefault from "MessageCacheStats" /* 7735 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import TableRow from "TableRow" /* 5854 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import MessageCacheStatsDefault from "MessageCacheStats" /* 7767 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -175,16 +175,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: "Local Message Cache Stats", hasIcons: false, children: null };
     const obj3 = { label: "Channels Fetched", subLabel: MessageCacheStatsDefault.channelsFetchStarted.size };
-    const items = [hasOwnProperty(tmp(5822).TableRow, obj3), , , ];
+    const items = [hasOwnProperty(tmp(5854).TableRow, obj3), , , ];
     const obj4 = { label: "Cache Hits", subLabel: MessageCacheStatsDefault.channelsFetchedWithLocalMessages.size };
-    items[1] = hasOwnProperty(tmp(5822).TableRow, obj4);
+    items[1] = hasOwnProperty(tmp(5854).TableRow, obj4);
     const obj5 = { label: "Cache Misses", subLabel: MessageCacheStatsDefault.channelsFetchedNetwork.size - MessageCacheStatsDefault.channelsFetchedWithLocalMessages.size };
-    items[2] = hasOwnProperty(tmp(5822).TableRow, obj5);
+    items[2] = hasOwnProperty(tmp(5854).TableRow, obj5);
     const obj6 = { label: "Incomplete Fetches", subLabel: MessageCacheStatsDefault.channelsFetchStarted.size - MessageCacheStatsDefault.channelsFetchedNetwork.size };
-    items[3] = hasOwnProperty(tmp(5822).TableRow, obj6);
+    items[3] = hasOwnProperty(tmp(5854).TableRow, obj6);
     obj2.children = items;
-    const tmp10 = timestampProducer(tmp(5903).TableRowGroup, obj2);
-    const tmp11 = hasOwnProperty(tmp(4754).Text, { variant: "text-sm/normal", color: "text-muted", children: "Cumulative since app launch. Does not update dynamically." });
+    const tmp10 = timestampProducer(tmp(5935).TableRowGroup, obj2);
+    const tmp11 = hasOwnProperty(tmp(4786).Text, { variant: "text-sm/normal", color: "text-muted", children: "Cumulative since app launch. Does not update dynamically." });
     cResult[0] = tmp10;
     cResult[1] = tmp11;
     tmp5 = tmp10;
@@ -200,9 +200,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const fetchLogs = MessageCacheStatsDefault.fetchLogs;
     const reversed = Array.from(fetchLogs.values()).reverse();
     obj8.children = reversed.map((entry, index) => closure_1_5(closure_1_8, { entry }, index));
-    items1[2] = hasOwnProperty(tmp(5903).TableRowGroup, obj8);
+    items1[2] = hasOwnProperty(tmp(5935).TableRowGroup, obj8);
     obj7.children = items1;
-    const tmp16 = timestampProducer(tmp(5186).Stack, obj7);
+    const tmp16 = timestampProducer(tmp(5218).Stack, obj7);
     cResult[2] = tmp16;
     let tmp12 = tmp16;
     const arr = Array.from(fetchLogs.values());

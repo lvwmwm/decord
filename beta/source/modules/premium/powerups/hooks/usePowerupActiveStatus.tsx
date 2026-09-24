@@ -1,19 +1,19 @@
-// Module ID: 12663
-// Function ID: 12664
+// Module ID: 12699
+// Function ID: 12700
 // Name: usePowerupActiveStatus
-// Dependencies: [2067, 4647, 4648, 1078, 4649, 558, 568, 504, 2]
+// Dependencies: [2067, 4679, 4680, 1078, 4681, 558, 568, 504, 2]
 // Exports: isPowerupActiveStatusActive
 
-// Module 12663 (usePowerupActiveStatus)
+// Module 12699 (usePowerupActiveStatus)
 import c from "c" /* 568 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4647 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4679 */;
 
 require = fn;
-const GuildPowerupsConstants = fn(4648);
+const GuildPowerupsConstants = fn(4680);
 ({ GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS: closure_4, PowerupActiveStatusType: hasOwnProperty, POWERUPS_INCLUDED_IN_LEVEL: metroRequire, BOOSTING_TIER_TO_LEVEL_SKU_ID: closure_7 } = GuildPowerupsConstants);
 const GuildFeatures = fn(1078).GuildFeatures;
-let closure_9 = fn(4649).GAME_SERVER_POWERUP_SKU_ID;
+let closure_9 = fn(4681).GAME_SERVER_POWERUP_SKU_ID;
 let ReactCompilerGating = fn(558);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
   _require = arg0;
@@ -116,7 +116,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
           hasItem = features.has(GuildFeatures.GAME_SERVERS);
         }
       }
-      const obj2 = { type: null, powerup: null, sourceEntitlement: "r", sourcePowerup: "toCharArray$esjava$1" };
+      const obj2 = { type: null, powerup: null, sourceEntitlement: "r", sourcePowerup: "IconComponent" };
       obj2.type = hasItem ? obj2.POWERUP_ACTIVATED : obj2.INACTIVE;
       obj2.powerup = skuId;
       const tmp14 = hasItem ? obj2.POWERUP_ACTIVATED : obj2.INACTIVE;
@@ -165,7 +165,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
           if (tmp9 == null) {
             tmp9 = null;
           }
-          let obj3 = { type: constants.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "toCharArray$esjava$1" };
+          let obj3 = { type: constants.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "IconComponent" };
           if (isActiveFromLevel) {
             const obj4 = { type: tmp10.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
             obj3 = obj4;
@@ -216,7 +216,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
         if (hasItem) {
           let INACTIVE = constants.POWERUP_ACTIVATED;
         }
-        const obj2 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "toCharArray$esjava$1" };
+        const obj2 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "IconComponent" };
       }
       INACTIVE = constants.INACTIVE;
     } else {
@@ -263,7 +263,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
           if (tmp10 == null) {
             tmp10 = null;
           }
-          let obj3 = { type: constants.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "toCharArray$esjava$1" };
+          let obj3 = { type: constants.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "IconComponent" };
           if (isActiveFromLevel) {
             const obj4 = { type: tmp11.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
             obj3 = obj4;

@@ -1,16 +1,16 @@
-// Module ID: 16998
-// Function ID: 16999
+// Module ID: 17008
+// Function ID: 17009
 // Name: useVibegrationsPreviewMenu
-// Dependencies: [19, 13364, 558, 568, 13188, 16999, 4457, 504, 13371, 17000, 1119, 3682, 2]
+// Dependencies: [19, 13400, 558, 568, 13224, 17009, 4489, 504, 13407, 17010, 1119, 3714, 2]
 
-// Module 16998 (useVibegrationsPreviewMenu)
+// Module 17008 (useVibegrationsPreviewMenu)
 import util from "util" /* 1119 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import ToastUtils from "ToastUtils" /* 4457 */;
-import vibegrationsExternalConnections from "vibegrationsExternalConnections" /* 13371 */;
-import vibegrationsProjectMenuItems from "vibegrationsProjectMenuItems" /* 17000 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import ToastUtils from "ToastUtils" /* 4489 */;
+import vibegrationsExternalConnections from "vibegrationsExternalConnections" /* 13407 */;
+import vibegrationsProjectMenuItems from "vibegrationsProjectMenuItems" /* 17010 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 13364 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 13400 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
@@ -180,7 +180,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           connect(found);
         } else {
           const intl = util.intl;
-          ToastUtils.presentError(intl.string(_modDef3682.avu1u4));
+          ToastUtils.presentError(intl.string(_modDef3714.avu1u4));
         }
       }
     } else {

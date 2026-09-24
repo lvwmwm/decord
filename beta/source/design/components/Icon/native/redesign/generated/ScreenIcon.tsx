@@ -1,13 +1,13 @@
-// Module ID: 9159
-// Function ID: 9160
+// Module ID: 9191
+// Function ID: 9192
 // Name: ScreenIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 9160, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9192, 4493, 2]
 
-// Module 9159 (ScreenIcon)
+// Module 9191 (ScreenIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod9160 from "module_9160" /* 9160 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9192 from "module_9192" /* 9192 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const ScreenIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(9160);
+    const tmpResult = tmp(9192);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const ScreenIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9160, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9192, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

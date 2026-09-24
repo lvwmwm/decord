@@ -1,21 +1,21 @@
-// Module ID: 7353
-// Function ID: 7354
+// Module ID: 7385
+// Function ID: 7386
 // Name: GuildOnboardingUtils
-// Dependencies: [2045, 5500, 2100, 2067, 4399, 7348, 1078, 4386, 558, 568, 504, 1389, 5279, 7349, 4404, 1374, 560, 2013, 7354, 2]
+// Dependencies: [2045, 5532, 2100, 2067, 4431, 7380, 1078, 4418, 558, 568, 504, 1389, 5311, 7381, 4436, 1374, 560, 2013, 7386, 2]
 // Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding
 
-// Module 7353 (GuildOnboardingUtils)
+// Module 7385 (GuildOnboardingUtils)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 560 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
 import FlagUtilsAll from "FlagUtils" /* 1389 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4404 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 5279 */;
-import DefaultChannelUtils from "DefaultChannelUtils" /* 7349 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4436 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 5311 */;
+import DefaultChannelUtils from "DefaultChannelUtils" /* 7381 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5532 */;
 import GuildChannelStore from "GuildChannelStore" /* 2100 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 const require = globalThis.__r;
 
@@ -83,10 +83,10 @@ function areStatesEqual(arg0, arg1) {
   return tmp;
 }
 let closure_7 = fn(2100).GUILD_SELECTABLE_CHANNELS_KEY;
-const OnboardingConnectionType = fn(7348).OnboardingConnectionType;
+const OnboardingConnectionType = fn(7380).OnboardingConnectionType;
 const Constants = fn(1078);
 ({ GuildFeatures: closure_11, Permissions: closure_12 } = Constants);
-const GuildMemberFlags = fn(4386).GuildMemberFlags;
+const GuildMemberFlags = fn(4418).GuildMemberFlags;
 let date = new Date(1682488800000);
 fn(558);
 let ReactCompilerGating = fn(558);

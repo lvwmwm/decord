@@ -1,24 +1,24 @@
-// Module ID: 17854
-// Function ID: 17855
+// Module ID: 17864
+// Function ID: 17865
 // Name: TouchableUploadAvatar
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 14134, 1119, 5802, 1181, 12924, 5341, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 14171, 1119, 5834, 1181, 12960, 5373, 2]
 
-// Module 17854 (TouchableUploadAvatar)
+// Module 17864 (TouchableUploadAvatar)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Pressables from "Pressables" /* 5341 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef12924 from "module_12924" /* 12924 */;
-import _modDef14134 from "module_14134" /* 14134 */;
+import Pressables from "Pressables" /* 5373 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef12960 from "module_12960" /* 12960 */;
+import _modDef14171 from "module_14171" /* 14171 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { avatarContainer: { display: "flex", paddingTop: 24 }, defaultLogoStyle: { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, width: 96 }, uploadedAvatarStyle: { width: 200, height: 200, borderRadius: 100, position: "relative" }, avatarWrapper: null, uploadAvatarWrapper: null, uploadAvatarIcon: null };
 let size = { borderColor: nativeDefault.colors.BORDER_MUTED, borderStyle: "dashed", borderWidth: 2, borderRadius: nativeDefault.radii.round, width: 200, height: 200, justifyContent: "center", alignItems: "center", position: "relative", overflow: "visible" };
 obj2.avatarWrapper = size;
@@ -37,7 +37,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ avatarSource, showPendingAvatar, onSelectAvatar } = arg0);
   const tmp5 = closure_6();
   if (!(undefined !== showPendingAvatar && showPendingAvatar)) {
-    let tmp7 = _modDef14134;
+    let tmp7 = _modDef14171;
   } else {
     tmp7 = avatarSource;
   }
@@ -59,7 +59,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp13 = cResult[3];
       }
       if (cResult[4] !== tmp5.uploadAvatarIcon) {
-        const obj2 = { size: tmp(1181).Icon.Sizes.MEDIUM, source: _modDef12924, style: tmp5.uploadAvatarIcon };
+        const obj2 = { size: tmp(1181).Icon.Sizes.MEDIUM, source: _modDef12960, style: tmp5.uploadAvatarIcon };
         const tmp20 = React4(tmp(1181).Icon, obj2);
         cResult[4] = tmp5.uploadAvatarIcon;
         cResult[5] = tmp20;
@@ -94,7 +94,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               tmp32 = tmp35;
             }
             const obj4 = { onPress: onSelectAvatar, accessibilityRole: "button", accessibilityLabel: first, children: tmp25 };
-            const tmp31 = React4(tmp(5341).PressableOpacity, obj4);
+            const tmp31 = React4(tmp(5373).PressableOpacity, obj4);
             cResult[13] = onSelectAvatar;
             cResult[14] = tmp25;
             cResult[15] = tmp31;
@@ -133,7 +133,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmp = closure_6();
   if (!showPendingAvatar) {
-    let tmp3 = _modDef14134;
+    let tmp3 = _modDef14171;
   } else {
     tmp3 = avatarSource;
   }
@@ -149,7 +149,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj4 = { resizeMode: "contain", style: defaultLogoStyle, source: tmp3 };
     const items = [React4(FastImageDefault, obj4), ];
     const obj5 = { style: tmp.uploadAvatarWrapper, children: null };
-    const obj6 = { size: native.Icon.Sizes.MEDIUM, source: _modDef12924, style: tmp.uploadAvatarIcon };
+    const obj6 = { size: native.Icon.Sizes.MEDIUM, source: _modDef12960, style: tmp.uploadAvatarIcon };
     obj5.children = React4(native.Icon, obj6);
     items[1] = React4(View, obj5);
     obj3.children = items;

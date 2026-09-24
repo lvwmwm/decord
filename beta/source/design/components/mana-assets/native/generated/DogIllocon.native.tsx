@@ -1,13 +1,13 @@
-// Module ID: 6166
-// Function ID: 6167
+// Module ID: 6198
+// Function ID: 6199
 // Name: DogIllocon
-// Dependencies: [21, 558, 568, 6167, 5802, 2]
+// Dependencies: [21, 558, 568, 6199, 5834, 2]
 
-// Module 6166 (DogIllocon)
+// Module 6198 (DogIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6167 from "module_6167" /* 6167 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6199 from "module_6199" /* 6199 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const DogIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6167 };
+    const obj2 = { uri: _modDef6199 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const DogIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6167 };
+  const obj2 = { uri: _modDef6199 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

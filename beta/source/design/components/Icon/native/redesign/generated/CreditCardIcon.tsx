@@ -1,13 +1,13 @@
-// Module ID: 12053
-// Function ID: 12054
+// Module ID: 12089
+// Function ID: 12090
 // Name: CreditCardIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 12054, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 12090, 4493, 2]
 
-// Module 12053 (CreditCardIcon)
+// Module 12089 (CreditCardIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod12054 from "module_12054" /* 12054 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod12090 from "module_12090" /* 12090 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const CreditCardIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(12054);
+    const tmpResult = tmp(12090);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const CreditCardIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12054, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12090, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

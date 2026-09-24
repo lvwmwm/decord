@@ -1,13 +1,13 @@
-// Module ID: 16092
-// Function ID: 16093
+// Module ID: 16102
+// Function ID: 16103
 // Name: UserSettingsDesignSystemCoachmark
-// Dependencies: [32, 19, 17, 21, 4758, 558, 568, 16090, 5991, 10452, 5188, 5198, 7446, 5903, 5900, 5901, 7403, 7371, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 558, 568, 16100, 6023, 10491, 5220, 5230, 7478, 5935, 5932, 5933, 7435, 7403, 2]
 
-// Module 16092 (UserSettingsDesignSystemCoachmark)
+// Module 16102 (UserSettingsDesignSystemCoachmark)
 import c from "c" /* 568 */;
-import _modDef5991 from "module_5991" /* 5991 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
-import LayerScope from "LayerScope" /* 7403 */;
+import _modDef6023 from "module_6023" /* 6023 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
+import LayerScope from "LayerScope" /* 7435 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles({ container: { paddingTop: 240, flex: 1, alignItems: "center", justifyContent: "center" }, flex: { flex: 1, padding: 16 } });
 let ReactCompilerGating = fn(558);
 let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -29,9 +29,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp6 = _slicedToArray(noop.useState(false), 2);
   [tmp9, r10029] = noop.useState(false);
   const tmp8 = _slicedToArray(noop.useState(false), 2);
-  const obj3 = visible(16090);
-  [r10035, r10036] = visible(16090).useCanRotate();
-  const tmp10 = _slicedToArray(visible(16090).useCanRotate(), 2);
+  const obj3 = visible(16100);
+  [r10035, r10036] = visible(16100).useCanRotate();
+  const tmp10 = _slicedToArray(visible(16100).useCanRotate(), 2);
   const tmp11 = _slicedToArray(noop.useState(false), 2);
   const first1 = _slicedToArray(noop.useState("primary"), 2)[0];
   const tmp12 = _slicedToArray(noop.useState("primary"), 2);
@@ -70,7 +70,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return closure_1(false);
       }
     }
-    tmp21[0] = _modDef5991;
+    tmp21[0] = _modDef6023;
     cResult[2] = tmp21;
     const tmp20 = tmp21;
   } else {
@@ -186,7 +186,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       buttonVariant: null,
       gradientColor: null
     };
-    const obj2 = { type: "image", src: { uri: _modDef5991 }, aspectRatio: first5 };
+    const obj2 = { type: "image", src: { uri: _modDef6023 }, aspectRatio: first5 };
     obj.graphic = obj2;
     obj.experimental_withBlurBackground = first1;
     let str2;
@@ -278,7 +278,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { children: null };
     const obj3 = { children: React5(closure_11, {}) };
-    obj2.children = React5(tmp(7403).LayerScope, obj3);
+    obj2.children = React5(tmp(7435).LayerScope, obj3);
     const tmp9 = React5(timestampProducer, obj2);
     cResult[0] = tmp9;
     let first = tmp9;
@@ -287,7 +287,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp4.flex) {
     const obj4 = { style: tmp4.flex, bottom: true, children: first };
-    const tmp12 = React5(tmp(7371).SafeAreaPaddingView, obj4);
+    const tmp12 = React5(tmp(7403).SafeAreaPaddingView, obj4);
     cResult[1] = tmp4.flex;
     cResult[2] = tmp12;
     let tmp10 = tmp12;

@@ -1,13 +1,13 @@
-// Module ID: 6712
-// Function ID: 6713
+// Module ID: 6744
+// Function ID: 6745
 // Name: SocialSdkIllocon
-// Dependencies: [21, 558, 568, 6713, 5802, 2]
+// Dependencies: [21, 558, 568, 6745, 5834, 2]
 
-// Module 6712 (SocialSdkIllocon)
+// Module 6744 (SocialSdkIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6713 from "module_6713" /* 6713 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6745 from "module_6745" /* 6745 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const SocialSdkIllocon = ReactCompilerGating.isReactCompilerEnabled() ? (
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6713 };
+    const obj2 = { uri: _modDef6745 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const SocialSdkIllocon = ReactCompilerGating.isReactCompilerEnabled() ? (
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6713 };
+  const obj2 = { uri: _modDef6745 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

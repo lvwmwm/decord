@@ -1,12 +1,12 @@
-// Module ID: 13661
-// Function ID: 13662
+// Module ID: 13697
+// Function ID: 13698
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 1181, 12920, 1119, 4418, 4754, 5188, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 1181, 12956, 1119, 4450, 4786, 5220, 2]
 
-// Module 13661 (SubscriptionAccountHoldNotice)
+// Module 13697 (SubscriptionAccountHoldNotice)
 import nativeDefault from "native" /* 580 */;
-import PremiumUtils from "PremiumUtils" /* 4418 */;
-import _modDef12920 from "module_12920" /* 12920 */;
+import PremiumUtils from "PremiumUtils" /* 4450 */;
+import _modDef12956 from "module_12956" /* 12956 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ get_ActivityIndicator = fn(17);
 const SubscriptionStatusTypes = fn(1078).SubscriptionStatusTypes;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: 8, margin: 8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, textContainer: { flexDirection: "row" }, icon: { marginRight: 4 }, text: { marginBottom: 8, flex: 1 } };
 let closure_8 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -32,7 +32,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((subscription) =>
   } else {
     ({ container, textContainer } = tmp4);
     if (cResult[0] !== tmp4.icon) {
-      const obj2 = { size: tmp(1181).IconSizes.MEDIUM, style: tmp4.icon, source: _modDef12920 };
+      const obj2 = { size: tmp(1181).IconSizes.MEDIUM, style: tmp4.icon, source: _modDef12956 };
       const tmp8 = closure_6(tmp(1181).Icon, obj2);
       cResult[0] = tmp4.icon;
       cResult[1] = tmp8;
@@ -70,7 +70,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((subscription) =>
                               return React3.openURL(PremiumUtils.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
                             }
               };
-              const tmp24 = closure_6(tmp(5188).Button, obj3);
+              const tmp24 = closure_6(tmp(5220).Button, obj3);
               cResult[13] = subscription.paymentGateway;
               cResult[14] = tmp24;
               let tmp22 = tmp24;
@@ -107,20 +107,20 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((subscription) =>
         tmp15 = tmp18;
       }
       const obj6 = { style: tmp9, variant: "text-sm/medium", children: tmp10 };
-      const tmp14 = closure_6(tmp(4754).Text, obj6);
+      const tmp14 = closure_6(tmp(4786).Text, obj6);
       cResult[5] = tmp4.text;
       cResult[6] = tmp10;
       cResult[7] = tmp14;
       tmp12 = tmp14;
     }
     const intl = tmp(1119).intl;
-    const obj7 = { endDate: subscription.currentPeriodEnd, planDescription: tmp(4418).getDisplayName(subscription.planId) };
+    const obj7 = { endDate: subscription.currentPeriodEnd, planDescription: tmp(4450).getDisplayName(subscription.planId) };
     const formatResult = intl.format(tmp(1119).t["7I21Iz"], obj7);
     cResult[2] = subscription.currentPeriodEnd;
     cResult[3] = subscription.planId;
     cResult[4] = formatResult;
     tmp10 = formatResult;
-    const tmpResult = tmp(4418);
+    const tmpResult = tmp(4450);
   }
 }) : ((subscription) => {
   subscription = subscription.subscription;
@@ -129,13 +129,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((subscription) =>
   if (subscription.status === SubscriptionStatusTypes.ACCOUNT_HOLD) {
     const obj = { style: tmp.container, children: null };
     const obj2 = { style: tmp.textContainer, children: null };
-    const obj3 = { size: subscription(1181).IconSizes.MEDIUM, style: tmp.icon, source: _modDef12920 };
+    const obj3 = { size: subscription(1181).IconSizes.MEDIUM, style: tmp.icon, source: _modDef12956 };
     const items = [closure_6(subscription(1181).Icon, obj3), ];
     const obj4 = { style: tmp.text, variant: "text-sm/medium", children: null };
     const intl = subscription(1119).intl;
-    const obj5 = { endDate: subscription.currentPeriodEnd, planDescription: subscription(4418).getDisplayName(subscription.planId) };
+    const obj5 = { endDate: subscription.currentPeriodEnd, planDescription: subscription(4450).getDisplayName(subscription.planId) };
     obj4.children = intl.format(subscription(1119).t["7I21Iz"], obj5);
-    items[1] = closure_6(subscription(4754).Text, obj4);
+    items[1] = closure_6(subscription(4786).Text, obj4);
     obj2.children = items;
     const items1 = [closure_7(closure_4, obj2), ];
     const obj7 = { size: "sm", text: null, onPress: null };
@@ -144,10 +144,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((subscription) =>
     obj7.onPress = function onPress() {
       return React3.openURL(PremiumUtils.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
     };
-    items1[1] = closure_6(subscription(5188).Button, obj7);
+    items1[1] = closure_6(subscription(5220).Button, obj7);
     obj.children = items1;
     tmp2 = closure_7(closure_4, obj);
-    const obj6 = subscription(4418);
+    const obj6 = subscription(4450);
   }
   return tmp2;
 });

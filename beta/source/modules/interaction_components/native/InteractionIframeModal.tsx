@@ -1,15 +1,15 @@
-// Module ID: 17812
-// Function ID: 17813
+// Module ID: 17822
+// Function ID: 17823
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 1353, 21, 4758, 580, 558, 568, 17800, 7224, 8608, 17813, 5183, 4458, 1119, 9725, 9726, 4710, 5341, 4754, 9548, 2]
+// Dependencies: [32, 19, 17, 1353, 21, 4790, 580, 558, 568, 17810, 7256, 8640, 17823, 5215, 4490, 1119, 9757, 9758, 4742, 5373, 4786, 9580, 2]
 
-// Module 17812 (InteractionIframeModal)
+// Module 17822 (InteractionIframeModal)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
-import useBackPressHandlerDefault from "useBackPressHandler" /* 5183 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7224 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 17813 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
+import useBackPressHandlerDefault from "useBackPressHandler" /* 5215 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7256 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 17823 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,7 +21,7 @@ const BotTagTypes = fn(1353).BotTagTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const interaction_iframe_modal = "interaction_iframe_modal";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { wrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, flex: 1 }, header: { flexDirection: "row", padding: 16, justifyContent: "space-between", alignItems: "center" }, headerCenterContainer: { flexDirection: "column", alignItems: "center" }, headerTitleContainer: { flexDirection: "row", marginBottom: 2 }, closeButton: { marginEnd: 8 }, spacerView: { marginStart: 8, width: 32 }, botTag: { marginStart: 4 } };
 let closure_10 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -35,7 +35,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ application, title } = arg0);
   id = application.id;
   const obj = id(568);
-  const iframeModalState = id(17800).useIframeModalState(arg0);
+  const iframeModalState = id(17810).useIframeModalState(arg0);
   ({ queryParams, iframeUrl } = iframeModalState);
   const tmp5 = _slicedToArray(noop.useState(false), 2);
   importDefault = tmp5[1];
@@ -188,8 +188,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const obj10 = { onActivityCrash: tmp14, applicationId: tmp18, channelId: channel_id, guildId: guild_id, activityUrl: iframeUrl, activitySessionId: instance_id, queryParams, onLoadError: tmp16, allowPopups: tmp19, referrerPolicy: "origin", isPipOrGridMode: false, webViewKey: "Set", ignoreSilentHardwareSwitch: "sneezing_face" };
-    const tmp23 = closure_7(tmp7(9726), obj10);
+    const obj10 = { onActivityCrash: tmp14, applicationId: tmp18, channelId: channel_id, guildId: guild_id, activityUrl: iframeUrl, activitySessionId: instance_id, queryParams, onLoadError: tmp16, allowPopups: tmp19, referrerPolicy: "origin", isPipOrGridMode: false, webViewKey: "Set", ignoreSilentHardwareSwitch: "fr-BI" };
+    const tmp23 = closure_7(tmp7(9758), obj10);
     cResult[12] = application.id;
     cResult[13] = iframeUrl;
     cResult[14] = tmp16;
@@ -240,7 +240,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       referrerPolicy: "origin",
       isPipOrGridMode: false,
       webViewKey: "Set",
-      ignoreSilentHardwareSwitch: "sneezing_face"
+      ignoreSilentHardwareSwitch: "fr-BI"
     };
     ({ channel_id: obj2.channelId, guild_id: obj2.guildId } = queryParams);
     obj3.activityUrl = iframeModalState.iframeUrl;

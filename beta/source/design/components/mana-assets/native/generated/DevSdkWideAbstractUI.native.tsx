@@ -1,13 +1,13 @@
-// Module ID: 6138
-// Function ID: 6139
+// Module ID: 6170
+// Function ID: 6171
 // Name: DevSdkWideAbstractUI
-// Dependencies: [21, 558, 568, 6139, 5802, 2]
+// Dependencies: [21, 558, 568, 6171, 5834, 2]
 
-// Module 6138 (DevSdkWideAbstractUI)
+// Module 6170 (DevSdkWideAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6139 from "module_6139" /* 6139 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6171 from "module_6171" /* 6171 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const DevSdkWideAbstractUI = ReactCompilerGating.isReactCompilerEnabled()
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6139 };
+    const obj2 = { uri: _modDef6171 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const DevSdkWideAbstractUI = ReactCompilerGating.isReactCompilerEnabled()
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6139 };
+  const obj2 = { uri: _modDef6171 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

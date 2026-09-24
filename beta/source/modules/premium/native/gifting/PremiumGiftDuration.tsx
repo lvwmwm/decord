@@ -1,15 +1,15 @@
-// Module ID: 11345
-// Function ID: 11346
+// Module ID: 11381
+// Function ID: 11382
 // Name: PremiumGiftDuration
-// Dependencies: [19, 17, 1378, 21, 4758, 580, 558, 568, 10997, 5822, 8878, 11048, 4479, 1119, 4754, 2]
+// Dependencies: [19, 17, 1378, 21, 4790, 580, 558, 568, 11033, 5854, 8910, 11084, 4511, 1119, 4786, 2]
 
-// Module 11345 (PremiumGiftDuration)
+// Module 11381 (PremiumGiftDuration)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4479 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import NativeGiftContext from "NativeGiftContext" /* 10997 */;
-import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 11048 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4511 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import NativeGiftContext from "NativeGiftContext" /* 11033 */;
+import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 11084 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 let items = [, ];
 ({ YEAR: arr[0], MONTH: arr[1] } = SubscriptionIntervalTypes);
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let obj2 = { container: { marginTop: nativeDefault.space.PX_8 }, containerSelected: null, labelContainer: null, labelPromo: null };
 let obj3 = { marginTop: nativeDefault.space.PX_8 };
 obj2.containerSelected = { borderColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.lg, borderWidth: 2 };
@@ -36,9 +36,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const setPlanInterval = nativeGiftContext.setPlanInterval;
   const tmp5 = closure_9();
   if (selected) {
-    let RowButton = tmp(5822).TableRow;
+    let RowButton = tmp(5854).TableRow;
   } else {
-    RowButton = tmp(8878).RowButton;
+    RowButton = tmp(8910).RowButton;
   }
   let combined = null;
   if (planInterval === SubscriptionIntervalTypes.YEAR) {
@@ -77,7 +77,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       if (cResult[7] !== cResult[6]) {
         const obj4 = { variant: "text-md/semibold", children: tmp14 };
-        const tmp19 = timestampProducer(tmp(4754).Text, obj4);
+        const tmp19 = timestampProducer(tmp(4786).Text, obj4);
         cResult[7] = tmp14;
         cResult[8] = tmp19;
         let tmp17 = tmp19;
@@ -198,7 +198,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const intl3 = tmp(1119).intl;
         const obj10 = { discount: combined };
         obj9.children = intl3.formatToPlainString(tmp(1119).t.IAybsG, obj10).toUpperCase();
-        obj8.children = timestampProducer(tmp(4754).Text, obj9);
+        obj8.children = timestampProducer(tmp(4786).Text, obj9);
         tmp21 = timestampProducer(View, obj8);
         const str3 = intl3.formatToPlainString(tmp(1119).t.IAybsG, obj10);
       }
@@ -219,9 +219,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const setPlanInterval = nativeGiftContext.setPlanInterval;
   const tmp4 = closure_9();
   if (selected) {
-    let RowButton = tmp(5822).TableRow;
+    let RowButton = tmp(5854).TableRow;
   } else {
-    RowButton = tmp(8878).RowButton;
+    RowButton = tmp(8910).RowButton;
   }
   let combined = null;
   if (planInterval === SubscriptionIntervalTypes.YEAR) {
@@ -254,7 +254,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl3 = tmp(1119).intl;
     const obj6 = { discount: combined };
     obj5.children = intl3.formatToPlainString(tmp(1119).t.IAybsG, obj6).toUpperCase();
-    obj4.children = tmp11(tmp(4754).Text, obj5);
+    obj4.children = tmp11(tmp(4786).Text, obj5);
     tmp11Result = tmp11(tmp12, obj4);
     const str3 = intl3.formatToPlainString(tmp(1119).t.IAybsG, obj6);
   }
@@ -275,7 +275,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   });
   return timestampProducer(View, obj2);
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj8 = { durationContainer: null, durationTitle: null };
 let obj5 = { marginStart: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round };
 obj8.durationContainer = { marginHorizontal: nativeDefault.space.PX_16 };
@@ -291,7 +291,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = planInterval(568).c(9);
   const tmp4 = closure_11();
   const obj = planInterval(568);
-  planInterval = planInterval(10997).useNativeGiftContext().planInterval;
+  planInterval = planInterval(11033).useNativeGiftContext().planInterval;
   ({ durationContainer, durationTitle } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1119).intl;
@@ -303,7 +303,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp4.durationTitle) {
     const obj3 = { style: durationTitle, variant: "text-sm/semibold", children: first };
-    const tmp9 = closure_6(tmp(4754).Text, obj3);
+    const tmp9 = closure_6(tmp(4786).Text, obj3);
     cResult[1] = tmp4.durationTitle;
     cResult[2] = tmp9;
     let tmp7 = tmp9;
@@ -337,12 +337,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp13 = tmp14;
 }) : (() => {
   const tmp = closure_11();
-  planInterval = planInterval(10997).useNativeGiftContext().planInterval;
+  planInterval = planInterval(11033).useNativeGiftContext().planInterval;
   const obj2 = { style: tmp.durationContainer, children: null };
   const obj3 = { style: tmp.durationTitle, variant: "text-sm/semibold", children: null };
   const intl = planInterval(1119).intl;
   obj3.children = intl.string(planInterval(1119).t["8XT6Nf"]);
-  items = [closure_6(planInterval(4754).Text, obj3), ];
+  items = [closure_6(planInterval(4786).Text, obj3), ];
   items[1] = items.map((planInterval, index) => timestampProducer(closure_10, { selected: planInterval === planInterval, planInterval }, index));
   obj2.children = items;
   return closure_7(View, obj2);

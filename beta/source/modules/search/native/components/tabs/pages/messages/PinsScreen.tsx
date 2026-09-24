@@ -1,16 +1,16 @@
-// Module ID: 17195
-// Function ID: 17196
+// Module ID: 17205
+// Function ID: 17206
 // Name: messages/PinsScreen
-// Dependencies: [19, 11798, 7525, 12487, 8127, 8126, 1078, 21, 504, 17120, 11797, 17116, 12506, 17164, 17124, 17123, 558, 568, 17188, 2]
+// Dependencies: [19, 11834, 7557, 12523, 8159, 8158, 1078, 21, 504, 17130, 11833, 17126, 12542, 17174, 17134, 17133, 558, 568, 17198, 2]
 
-// Module 17195 (messages/PinsScreen)
-import ChannelPinActionCreatorsDefault from "ChannelPinActionCreators" /* 11797 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12506 */;
-import MessagesScreenDefault from "MessagesScreen" /* 17188 */;
+// Module 17205 (messages/PinsScreen)
+import ChannelPinActionCreatorsDefault from "ChannelPinActionCreators" /* 11833 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12542 */;
+import MessagesScreenDefault from "MessagesScreen" /* 17198 */;
 import noop from "module_19" /* 19 */;
-import ChannelPinsStore from "ChannelPinsStore" /* 11798 */;
-import SearchMessageStore from "SearchMessageStore" /* 7525 */;
-import SearchQueryStore from "SearchQueryStore" /* 12487 */;
+import ChannelPinsStore from "ChannelPinsStore" /* 11834 */;
+import SearchMessageStore from "SearchMessageStore" /* 7557 */;
+import SearchQueryStore from "SearchQueryStore" /* 12523 */;
 
 const require = fn;
 function InitialPinsScreen(searchContext) {
@@ -145,10 +145,10 @@ function InitialPinsScreen(searchContext) {
     ItemSeparatorComponent: null
   });
 }
-const FetchState = fn(11798).FetchState;
-const SearchConstants = fn(8127);
+const FetchState = fn(11834).FetchState;
+const SearchConstants = fn(8159);
 ({ MESSAGE_PLACEHOLDER_ITEM_SIZE: closure_8, SearchListItemTypes: closure_9, SEARCH_PINNED_MESSAGES_LINE_CLAMP: c10 } = SearchConstants);
-let closure_11 = fn(8126).SearchResultContentEntityTypes;
+let closure_11 = fn(8158).SearchResultContentEntityTypes;
 const SearchTypes = fn(1078).SearchTypes;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);

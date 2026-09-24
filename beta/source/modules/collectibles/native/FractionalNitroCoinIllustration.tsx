@@ -1,11 +1,11 @@
-// Module ID: 9123
-// Function ID: 9124
+// Module ID: 9155
+// Function ID: 9156
 // Name: FractionalNitroCoinIllustration
-// Dependencies: [19, 1080, 21, 558, 568, 5907, 2]
+// Dependencies: [19, 1080, 21, 558, 568, 5939, 2]
 
-// Module 9123 (FractionalNitroCoinIllustration)
+// Module 9155 (FractionalNitroCoinIllustration)
 import c from "c" /* 568 */;
-import native from "native" /* 5907 */;
+import native from "native" /* 5939 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,9 +24,9 @@ export const FractionalNitroCoinIllustration = ReactCompilerGating.isReactCompil
     str = resizeMode;
   }
   if (skuId.skuId === EXTERNAL_PRODUCT_SKU_IDS.FRACTIONAL_PREMIUM_1_DAY) {
-    let NitroCoinStackSpotIllustration = tmp(5907).NitroCoinSpotIllustration;
+    let NitroCoinStackSpotIllustration = tmp(5939).NitroCoinSpotIllustration;
   } else {
-    NitroCoinStackSpotIllustration = tmp(5907).NitroCoinStackSpotIllustration;
+    NitroCoinStackSpotIllustration = tmp(5939).NitroCoinStackSpotIllustration;
   }
   if (cResult[0] === NitroCoinStackSpotIllustration) {
     if (cResult[1] === height) {

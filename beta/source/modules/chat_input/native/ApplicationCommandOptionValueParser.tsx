@@ -1,22 +1,22 @@
-// Module ID: 12123
-// Function ID: 12124
+// Module ID: 12159
+// Function ID: 12160
 // Name: ApplicationCommandOptionValueParser
-// Dependencies: [32, 19, 5725, 2049, 2100, 2109, 2103, 4409, 1376, 5213, 12, 1374, 4911, 5661, 1982, 7923, 558, 568, 2]
+// Dependencies: [32, 19, 5757, 2049, 2100, 2109, 2103, 4441, 1376, 5245, 12, 1374, 4943, 5693, 1982, 7955, 558, 568, 2]
 // Exports: getRoles, parseOptionValuesForSend
 
-// Module 12123 (ApplicationCommandOptionValueParser)
+// Module 12159 (ApplicationCommandOptionValueParser)
 import _modDef12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
 import Server from "Server" /* 1982 */;
-import useChannelName from "useChannelName" /* 4911 */;
-import MessageParser from "MessageParser" /* 7923 */;
+import useChannelName from "useChannelName" /* 4943 */;
+import MessageParser from "MessageParser" /* 7955 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5725 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5757 */;
 import GuildChannelStore from "GuildChannelStore" /* 2100 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 import GuildRoleStore from "GuildRoleStore" /* 2103 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const MessageParserDefault = MessageParser;
@@ -47,7 +47,7 @@ function getChannels(getGuildId, arr) {
     }
     tmp2 = null == arr || arr.includes(getGuildId.type);
     return guildId(12)(items).map((id) => {
-      const obj = { id: id.id, text: closure_0(4911).computeChannelName(id, UserStore, RelationshipStore) };
+      const obj = { id: id.id, text: closure_0(4943).computeChannelName(id, UserStore, RelationshipStore) };
       return obj;
     });
   } else {
@@ -82,7 +82,7 @@ function getChannels(getGuildId, arr) {
   }
 }
 let closure_6 = fn(2049).isGuildSelectableChannelType;
-const ChannelAutocompleteConstants = fn(5213);
+const ChannelAutocompleteConstants = fn(5245);
 ({ MENTION_SENTINEL: closure_12, CHANNEL_SENTINEL: map1 } = ChannelAutocompleteConstants);
 function matchPrefix(arg0, arg1, arg2) {
 

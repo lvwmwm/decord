@@ -1,11 +1,11 @@
-// Module ID: 16652
-// Function ID: 16653
+// Module ID: 16662
+// Function ID: 16663
 // Name: GuildsBarFavorites
-// Dependencies: [19, 17, 2048, 1078, 2042, 21, 4758, 580, 558, 568, 16635, 10606, 504, 16653, 16638, 10616, 16650, 16475, 1119, 16654, 10515, 16655, 2]
+// Dependencies: [19, 17, 2048, 1078, 2042, 21, 4790, 580, 558, 568, 16645, 10642, 504, 16663, 16648, 10652, 16660, 16485, 1119, 16664, 10551, 16665, 2]
 
-// Module 16652 (GuildsBarFavorites)
+// Module 16662 (GuildsBarFavorites)
 import nativeDefault from "native" /* 580 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16650 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16660 */;
 import noop from "module_19" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
 
@@ -16,7 +16,7 @@ const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 let c10 = "more-options";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { anchor: null };
 let size = { position: "absolute", top: nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN, left: 12, width: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE, height: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE };
 obj.anchor = size;
@@ -28,9 +28,9 @@ const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarFa
 export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = shouldShowPopover(568).c(32);
   const obj = shouldShowPopover(568);
-  const guildsBarAnimatedWrapperStyles = shouldShowPopover(16635).useGuildsBarAnimatedWrapperStyles();
-  const obj2 = shouldShowPopover(16635);
-  const isFavoritesGuildSelected = shouldShowPopover(10606).useIsFavoritesGuildSelected();
+  const guildsBarAnimatedWrapperStyles = shouldShowPopover(16645).useGuildsBarAnimatedWrapperStyles();
+  const obj2 = shouldShowPopover(16645);
+  const isFavoritesGuildSelected = shouldShowPopover(10642).useIsFavoritesGuildSelected();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [FavoriteStore];
     const fn = function _() {
@@ -43,10 +43,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     [tmp6, tmp7] = cResult;
   }
-  const obj3 = shouldShowPopover(10606);
+  const obj3 = shouldShowPopover(10642);
   const stateFromStores = shouldShowPopover(504).useStateFromStores(tmp6, tmp7);
   const tmpResult = shouldShowPopover(504);
-  ({ badge, unread } = markPopoverAsDismissed(16653)(stateFromStores));
+  ({ badge, unread } = markPopoverAsDismissed(16663)(stateFromStores));
   if (cResult[2] !== badge) {
     const obj4 = { mentionCount: badge };
     cResult[2] = badge;
@@ -55,12 +55,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     tmp12 = cResult[3];
   }
-  const tmp11 = markPopoverAsDismissed(16653)(stateFromStores);
-  ({ badge: badge2, cutouts } = markPopoverAsDismissed(16638)(tmp12));
+  const tmp11 = markPopoverAsDismissed(16663)(stateFromStores);
+  ({ badge: badge2, cutouts } = markPopoverAsDismissed(16648)(tmp12));
   noop.useRef(null);
   closure_11();
-  const tmp13 = markPopoverAsDismissed(16638)(tmp12);
-  const favoritesIntroPopover = shouldShowPopover(10616).useFavoritesIntroPopover();
+  const tmp13 = markPopoverAsDismissed(16648)(tmp12);
+  const favoritesIntroPopover = shouldShowPopover(10652).useFavoritesIntroPopover();
   shouldShowPopover = favoritesIntroPopover.shouldShowPopover;
   markPopoverAsDismissed = favoritesIntroPopover.markPopoverAsDismissed;
   if (cResult[4] === markPopoverAsDismissed) {
@@ -120,7 +120,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp22[0] = items1;
       tmp22[1] = function onAccessibilityAction(nativeEvent) {
         if (nativeEvent.nativeEvent.actionName === name) {
-          markPopoverAsDismissed(16475)();
+          markPopoverAsDismissed(16485)();
         }
       };
       cResult[10] = tmp22;
@@ -161,7 +161,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return;
         }
       }
-      const tmp27 = closure_8(tmp(16654).HomeDrawerFavoritesRowExpandedChildren, {});
+      const tmp27 = closure_8(tmp(16664).HomeDrawerFavoritesRowExpandedChildren, {});
       cResult[12] = tmp27;
       const tmp26 = tmp27;
     } else {
@@ -182,7 +182,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       const obj6 = { color: tmp28 };
-      const tmp30 = closure_8(tmp(10515).StarIcon, obj6);
+      const tmp30 = closure_8(tmp(10551).StarIcon, obj6);
       cResult[13] = tmp28;
       cResult[14] = tmp30;
     } else {
@@ -202,7 +202,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const obj7 = { selected: isFavoritesGuildSelected, circle: false, unread, styles: guildsBarAnimatedWrapperStyles, cutouts, overState: "l", config: tmp19, accessibilityActions, onAccessibilityAction, label: tmp24, externalChildren: badge2, expandedChildren: tmp26, children: tmp29 };
-    const tmp33 = closure_8(tmp10(16635), obj7);
+    const tmp33 = closure_8(tmp10(16645), obj7);
     cResult[15] = badge2;
     class R {
       constructor() {
@@ -238,21 +238,21 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = R;
   tmp17 = R;
 }) : (() => {
-  let obj = shouldShowPopover(16635);
-  const guildsBarAnimatedWrapperStyles = shouldShowPopover(16635).useGuildsBarAnimatedWrapperStyles();
-  const isFavoritesGuildSelected = shouldShowPopover(10606).useIsFavoritesGuildSelected();
-  let obj2 = shouldShowPopover(10606);
+  let obj = shouldShowPopover(16645);
+  const guildsBarAnimatedWrapperStyles = shouldShowPopover(16645).useGuildsBarAnimatedWrapperStyles();
+  const isFavoritesGuildSelected = shouldShowPopover(10642).useIsFavoritesGuildSelected();
+  let obj2 = shouldShowPopover(10642);
   let items = [FavoriteStore];
   const stateFromStores = shouldShowPopover(504).useStateFromStores(items, () => favoriteChannels.getFavoriteChannels());
   const obj3 = shouldShowPopover(504);
   const tmp5 = markPopoverAsDismissed;
-  ({ badge, unread } = markPopoverAsDismissed(16653)(stateFromStores));
-  const tmp6 = markPopoverAsDismissed(16653)(stateFromStores);
-  ({ badge: badge2, cutouts } = markPopoverAsDismissed(16638)({ mentionCount: badge }));
+  ({ badge, unread } = markPopoverAsDismissed(16663)(stateFromStores));
+  const tmp6 = markPopoverAsDismissed(16663)(stateFromStores);
+  ({ badge: badge2, cutouts } = markPopoverAsDismissed(16648)({ mentionCount: badge }));
   const ref = noop.useRef(null);
-  const tmp7 = markPopoverAsDismissed(16638)({ mentionCount: badge });
+  const tmp7 = markPopoverAsDismissed(16648)({ mentionCount: badge });
   const tmp9 = closure_11();
-  const favoritesIntroPopover = shouldShowPopover(10616).useFavoritesIntroPopover();
+  const favoritesIntroPopover = shouldShowPopover(10652).useFavoritesIntroPopover();
   shouldShowPopover = favoritesIntroPopover.shouldShowPopover;
   markPopoverAsDismissed = favoritesIntroPopover.markPopoverAsDismissed;
   const items1 = [shouldShowPopover, markPopoverAsDismissed];
@@ -261,7 +261,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (shouldShowPopover) {
         closure_1_1(constants.TAKE_ACTION);
       }
-      markPopoverAsDismissed(16650)(FAVORITES);
+      markPopoverAsDismissed(16660)(FAVORITES);
     },
     onLongPress() {
       markPopoverAsDismissed(dependencyMap[17])();
@@ -282,19 +282,19 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return obj;
   }, []);
   ({ accessibilityActions, onAccessibilityAction } = memo1);
-  const obj5 = { selected: isFavoritesGuildSelected, circle: false, unread, styles: guildsBarAnimatedWrapperStyles, cutouts, overState: "l", config: memo, accessibilityActions, onAccessibilityAction, label: null, externalChildren: "active", expandedChildren: null, children: "md" };
-  const obj4 = shouldShowPopover(10616);
+  const obj5 = { selected: isFavoritesGuildSelected, circle: false, unread, styles: guildsBarAnimatedWrapperStyles, cutouts, overState: "l", config: memo, accessibilityActions, onAccessibilityAction, label: "active", externalChildren: null, expandedChildren: "md", children: true };
+  const obj4 = shouldShowPopover(10652);
   const tmp13 = closure_9;
   let intl = shouldShowPopover(1119).intl;
   obj5.label = intl.string(shouldShowPopover(1119).t.wMWyci);
   obj5.externalChildren = badge2;
-  obj5.expandedChildren = closure_8(shouldShowPopover(16654).HomeDrawerFavoritesRowExpandedChildren, {});
+  obj5.expandedChildren = closure_8(shouldShowPopover(16664).HomeDrawerFavoritesRowExpandedChildren, {});
   const colors = markPopoverAsDismissed(580).colors;
-  obj5.children = closure_8(shouldShowPopover(10515).StarIcon, { color: isFavoritesGuildSelected ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT });
-  const children = [closure_8(markPopoverAsDismissed(16635), obj5), closure_8(View, { ref, style: tmp9.anchor, pointerEvents: "none", collapsable: false }), ];
+  obj5.children = closure_8(shouldShowPopover(10551).StarIcon, { color: isFavoritesGuildSelected ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT });
+  const children = [closure_8(markPopoverAsDismissed(16645), obj5), closure_8(View, { ref, style: tmp9.anchor, pointerEvents: "none", collapsable: false }), ];
   if (shouldShowPopover) {
     const obj8 = { targetRef: ref, markAsDismissed: markPopoverAsDismissed };
-    shouldShowPopover = tmp15(tmp5(16655), obj8);
+    shouldShowPopover = tmp15(tmp5(16665), obj8);
   }
   children[2] = shouldShowPopover;
   return tmp13(View, { children });

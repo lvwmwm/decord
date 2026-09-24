@@ -1,12 +1,12 @@
-// Module ID: 14226
-// Function ID: 14227
+// Module ID: 14263
+// Function ID: 14264
 // Name: GuildBadgeButterfly
-// Dependencies: [109, 19, 21, 558, 568, 14189, 8733, 2]
+// Dependencies: [109, 19, 21, 558, 568, 14226, 8765, 2]
 
-// Module 14226 (GuildBadgeButterfly)
+// Module 14263 (GuildBadgeButterfly)
 import c from "c" /* 568 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14189 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14226 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -62,7 +62,7 @@ export const GuildBadgeButterfly = ReactCompilerGating.isReactCompilerEnabled() 
     ({ primaryColorsTransformed, secondaryColorsTransformed } = tmp12);
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp17 = React4(tmp(8733).Path, { d: "M7 5h1v1h-1z", fill: "white" });
+      const tmp17 = React4(tmp(8765).Path, { d: "M7 5h1v1h-1z", fill: "white" });
       cResult[9] = tmp17;
       let tmp15 = tmp17;
     } else {
@@ -70,7 +70,7 @@ export const GuildBadgeButterfly = ReactCompilerGating.isReactCompilerEnabled() 
     }
     if (cResult[10] !== primaryColorsTransformed[0]) {
       const obj2 = { d: "M6 10h1v1h-1v1h-1v1H2v-1h1v-1H2v1H1v-2h1v-1h4v1ZM14 10h1v2h-1v-1h-1v1h1v1H11v-1h-1v-1h-1v-1h1v-1h4v1ZM6 8H2V5h1v-1h3v4ZM13 5h1v3H10V4h3v1Z", fill: primaryColorsTransformed[0] };
-      const tmp20 = React4(tmp(8733).Path, obj2);
+      const tmp20 = React4(tmp(8765).Path, obj2);
       cResult[10] = primaryColorsTransformed[0];
       cResult[11] = tmp20;
       let tmp18 = tmp20;
@@ -79,7 +79,7 @@ export const GuildBadgeButterfly = ReactCompilerGating.isReactCompilerEnabled() 
     }
     if (cResult[12] !== primaryColorsTransformed[1]) {
       const obj3 = { d: "M5 14H2v-1h3v1ZM14 13v1H11v-1h3ZM2 13H1v-1h1v1ZM6 13h-1v-1h1v1ZM11 13h-1v-1h1v1ZM15 13h-1v-1h1v1ZM3 12H2v-1h1v1ZM7 12h-1v-1h1v1ZM10 12h-1v-1h1v1ZM14 12h-1v-1h1v1ZM2 6H1v-1h1v1ZM15 6h-1v-1h1v1ZM5 4h-2v1H2v-2h3v1ZM14 5h-1v-1h-2v-1h3v2Z", fill: primaryColorsTransformed[1] };
-      const tmp23 = React4(tmp(8733).Path, obj3);
+      const tmp23 = React4(tmp(8765).Path, obj3);
       cResult[12] = primaryColorsTransformed[1];
       cResult[13] = tmp23;
       let tmp21 = tmp23;
@@ -95,7 +95,7 @@ export const GuildBadgeButterfly = ReactCompilerGating.isReactCompilerEnabled() 
     }
     if (cResult[14] !== first) {
       const obj4 = { d: "M4 15H2v-1h2v1ZM14 14v1h-2v-1h2ZM2 14H1v-1h1v1ZM15 14h-1v-1h1v1ZM7 10h-1v-1h1v1ZM10 10h-1v-1h1v1ZM6 9H3v-1h3v1ZM13 9H10v-1h3v1ZM3 2h1v1H2v2H1V1h2v1ZM15 5h-1v-2h-2V2h1V1h2v4Z", fill: first };
-      const tmp29 = React4(tmp(8733).Path, obj4);
+      const tmp29 = React4(tmp(8765).Path, obj4);
       cResult[14] = first;
       cResult[15] = tmp29;
       let tmp27 = tmp29;
@@ -104,9 +104,9 @@ export const GuildBadgeButterfly = ReactCompilerGating.isReactCompilerEnabled() 
     }
     const _Symbol2 = Symbol;
     if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp34 = React4(tmp(8733).Path, { d: "M4 16H2v-1h2v1ZM14 16h-2v-1h2v1ZM2 15H1v-1h1v1ZM5 15h-1v-1h1v1ZM12 15h-1v-1h1v1ZM15 15h-1v-1h1v1ZM1 14H0V10h1v4ZM6 14h-1v-1h1v1Z", fill: "black" });
-      const tmp35 = React4(tmp(8733).Path, { d: "M9 4h1v5h-1v3h1v1h-1v1h-2v-1h-1v-1h1V9h-1V4h1v-1h2v1Zm-2 2h1v-1h-1v1Z", fill: "#000", fillRule: "evenodd" });
-      const tmp36 = React4(tmp(8733).Path, { d: "M11 14h-1v-1h1v1ZM16 14h-1V10h1v4ZM2 10H1v-1h1v1ZM15 10h-1v-1h1v1ZM3 9H2v-1h1v1ZM14 9h-1v-1h1v1ZM1 6h1v2H1v-1H0V1h1v5ZM16 7h-1v1h-1v-2h1V1h1v6ZM6 4h-1v-1h1v1ZM11 4h-1v-1h1v1ZM5 3h-1V2h1v1ZM7 3h-1V1h1v2ZM10 3h-1V1h1v2ZM12 3h-1V2h1v1ZM4 2h-1V1h1v1ZM13 2h-1V1h1v1ZM3 1H1V0h2v1ZM6 1h-1V0h1v1ZM11 1h-1V0h1v1ZM15 1h-2V0h2v1Z", fill: "black" });
+      const tmp34 = React4(tmp(8765).Path, { d: "M4 16H2v-1h2v1ZM14 16h-2v-1h2v1ZM2 15H1v-1h1v1ZM5 15h-1v-1h1v1ZM12 15h-1v-1h1v1ZM15 15h-1v-1h1v1ZM1 14H0V10h1v4ZM6 14h-1v-1h1v1Z", fill: "black" });
+      const tmp35 = React4(tmp(8765).Path, { d: "M9 4h1v5h-1v3h1v1h-1v1h-2v-1h-1v-1h1V9h-1V4h1v-1h2v1Zm-2 2h1v-1h-1v1Z", fill: "#000", fillRule: "evenodd" });
+      const tmp36 = React4(tmp(8765).Path, { d: "M11 14h-1v-1h1v1ZM16 14h-1V10h1v4ZM2 10H1v-1h1v1ZM15 10h-1v-1h1v1ZM3 9H2v-1h1v1ZM14 9h-1v-1h1v1ZM1 6h1v2H1v-1H0V1h1v5ZM16 7h-1v1h-1v-2h1V1h1v6ZM6 4h-1v-1h1v1ZM11 4h-1v-1h1v1ZM5 3h-1V2h1v1ZM7 3h-1V1h1v2ZM10 3h-1V1h1v2ZM12 3h-1V2h1v1ZM4 2h-1V1h1v1ZM13 2h-1V1h1v1ZM3 1H1V0h2v1ZM6 1h-1V0h1v1ZM11 1h-1V0h1v1ZM15 1h-2V0h2v1Z", fill: "black" });
       cResult[16] = tmp35;
       cResult[17] = tmp36;
       cResult[18] = tmp34;
@@ -140,7 +140,7 @@ export const GuildBadgeButterfly = ReactCompilerGating.isReactCompilerEnabled() 
     obj5.fill = "none";
     items = [tmp15, tmp18, tmp21, tmp27, tmp32, tmp30, tmp31];
     obj5.children = items;
-    const tmp42 = hasOwnProperty(tmp(8733).Svg, obj5);
+    const tmp42 = hasOwnProperty(tmp(8765).Svg, obj5);
     cResult[19] = num8;
     cResult[20] = tmp5;
     cResult[21] = tmp18;

@@ -1,13 +1,13 @@
-// Module ID: 14040
-// Function ID: 14041
+// Module ID: 14077
+// Function ID: 14078
 // Name: NUFChannelIllustration
-// Dependencies: [32, 19, 17, 21, 4758, 580, 1119, 14041, 14042, 558, 568, 4497, 4759, 14043, 14044, 14045, 14046, 5300, 4754, 5824, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 1119, 14078, 14079, 558, 568, 4529, 4791, 14080, 14081, 14082, 14083, 5332, 4786, 5856, 2]
 
-// Module 14040 (NUFChannelIllustration)
+// Module 14077 (NUFChannelIllustration)
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import timing from "timing" /* 4759 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import timing from "timing" /* 4791 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { width: "100%", maxWidth: 275, position: "relative", display: "flex", justifyContent: "center", alignItems: "center", marginTop: 24, marginBottom: 24 }, card: { padding: 0, width: "100%" }, cardBackground: null, header: null, content: null, message: null, messageAvatar: null, messageContent: null, starMedium: null, starSmall: null, starGreen: null, starBlue: null, starPink: null, starPurple: null };
 let size = { width: "90%", height: 12, borderTopLeftRadius: nativeDefault.radii.lg, borderTopRightRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 obj2.cardBackground = size;
@@ -67,7 +67,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const obj = { name: null, avatar: null, message: null };
         const intl2 = closure_1_0(1119).intl;
         obj.name = intl2.string(closure_1_0(1119).t["9m/HsX"]);
-        obj.avatar = closure_1_1(14041);
+        obj.avatar = closure_1_1(14078);
         obj.message = intl.string(closure_1_0(1119).t["5alrl0"]);
         items[tmp] = obj;
         return items;
@@ -78,7 +78,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const obj = { name: null, avatar: null, message: null };
         const intl2 = closure_1_0(1119).intl;
         obj.name = intl2.string(closure_1_0(1119).t["AW1kM+"]);
-        obj.avatar = closure_1_1(14042);
+        obj.avatar = closure_1_1(14079);
         obj.message = intl.string(closure_1_0(1119).t["5Oo+vS"]);
         items[tmp] = obj;
         return items;
@@ -135,11 +135,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             return obj;
           }
         }
-        let obj3 = { interpolate: tmp(4497).interpolate, messageListAnimation: sharedValue };
+        let obj3 = { interpolate: tmp(4529).interpolate, messageListAnimation: sharedValue };
         M.__closure = obj3;
         M.__workletHash = 1240710065054;
         M.__initData = __initData;
-        const animatedStyle = tmp(4497).useAnimatedStyle(M);
+        const animatedStyle = tmp(4529).useAnimatedStyle(M);
         if (cResult[14] === tmp4.starBlue) {
           if (cResult[15] === tmp4.starSmall) {
             let tmp21 = cResult[16];
@@ -203,8 +203,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                       return obj;
                     }
                   }
-                  let tmp43 = closure_7(tmp(5300).TextIcon, { size: "sm" });
-                  const tmp45 = closure_7(tmp(5300).TextIcon, { size: "sm" });
+                  let tmp43 = closure_7(tmp(5332).TextIcon, { size: "sm" });
+                  const tmp45 = closure_7(tmp(5332).TextIcon, { size: "sm" });
                 } else {
                   tmp43 = cResult[28];
                 }
@@ -225,7 +225,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   }
                   const items2 = [" ", obj13.string(tmp(1119).t.aLOLry)];
                   obj5.children = items2;
-                  const tmp48 = closure_8(tmp(4754).Text, obj5);
+                  const tmp48 = closure_8(tmp(4786).Text, obj5);
                   cResult[29] = tmp48;
                   let tmp46 = tmp48;
                 } else {
@@ -329,7 +329,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                             tmp66[0] = tmp42;
                             const items5 = [tmp49, tmp61];
                             tmp66[3] = items5;
-                            const tmp67 = closure_8(tmp(5824).Card, tmp66);
+                            const tmp67 = closure_8(tmp(5856).Card, tmp66);
                             cResult[47] = tmp4.card;
                             cResult[48] = tmp49;
                             cResult[49] = tmp61;
@@ -368,7 +368,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                           }
                         }
                         const obj9 = { style: animatedStyle, children: cResult[36] };
-                        const tmp60 = closure_7(messageContent(4497).View, obj9);
+                        const tmp60 = closure_7(messageContent(4529).View, obj9);
                         cResult[41] = animatedStyle;
                         cResult[42] = cResult[36];
                         cResult[43] = tmp60;
@@ -429,7 +429,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   return obj;
                 }
               }
-              const obj10 = { source: messageContent(14046), style: null };
+              const obj10 = { source: messageContent(14083), style: null };
               const items6 = [, ];
               ({ starSmall: arr8[0], starPurple: arr8[1] } = tmp4);
               obj10.style = items6;
@@ -451,7 +451,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 return obj;
               }
             }
-            const obj11 = { source: messageContent(14045), style: null };
+            const obj11 = { source: messageContent(14082), style: null };
             const items7 = [, ];
             ({ starMedium: arr7[0], starGreen: arr7[1] } = tmp4);
             obj11.style = items7;
@@ -473,7 +473,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               return obj;
             }
           }
-          const obj12 = { source: messageContent(14044), style: null };
+          const obj12 = { source: messageContent(14081), style: null };
           const items8 = [, ];
           ({ starMedium: arr6[0], starPink: arr6[1] } = tmp4);
           obj12.style = items8;
@@ -483,7 +483,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           cResult[19] = tmp29;
           tmp26 = tmp29;
         }
-        const obj14 = { source: messageContent(14043), style: null };
+        const obj14 = { source: messageContent(14080), style: null };
         const items9 = [, ];
         ({ starSmall: arr5[0], starBlue: arr5[1] } = tmp4);
         obj14.style = items9;
@@ -492,7 +492,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         cResult[15] = tmp4.starSmall;
         cResult[16] = tmp25;
         tmp21 = tmp25;
-        const tmpResult4 = tmp(4497);
+        const tmpResult4 = tmp(4529);
       }
       const items10 = [sharedValue, messageContent];
       cResult[11] = sharedValue;
@@ -539,7 +539,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj = { name: null, avatar: null, message: null };
       const intl2 = closure_1_0(1119).intl;
       obj.name = intl2.string(closure_1_0(1119).t["9m/HsX"]);
-      obj.avatar = closure_1_1(14041);
+      obj.avatar = closure_1_1(14078);
       obj.message = intl.string(closure_1_0(1119).t["5alrl0"]);
       items[tmp] = obj;
       return items;
@@ -550,7 +550,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj = { name: null, avatar: null, message: null };
       const intl2 = closure_1_0(1119).intl;
       obj.name = intl2.string(closure_1_0(1119).t["AW1kM+"]);
-      obj.avatar = closure_1_1(14042);
+      obj.avatar = closure_1_1(14079);
       obj.message = intl.string(closure_1_0(1119).t["5Oo+vS"]);
       items[tmp] = obj;
       return items;
@@ -586,22 +586,22 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj5 = { style: tmp.container, children: null };
   const obj6 = { source: null, style: null };
   const animatedStyle = obj3.useAnimatedStyle(fn);
-  obj6.source = first(14043);
+  obj6.source = first(14080);
   const items2 = [, ];
   ({ starSmall: arr4[0], starBlue: arr4[1] } = tmp);
   obj6.style = items2;
   const items3 = [closure_7(closure_6, obj6), , , , , ];
-  const obj7 = { source: first(14044), style: null };
+  const obj7 = { source: first(14081), style: null };
   const items4 = [, ];
   ({ starMedium: arr6[0], starPink: arr6[1] } = tmp);
   obj7.style = items4;
   items3[1] = closure_7(closure_6, obj7);
-  const obj8 = { source: first(14045), style: null };
+  const obj8 = { source: first(14082), style: null };
   const items5 = [, ];
   ({ starMedium: arr7[0], starGreen: arr7[1] } = tmp);
   obj8.style = items5;
   items3[2] = closure_7(closure_6, obj8);
-  const obj9 = { source: first(14046), style: null };
+  const obj9 = { source: first(14083), style: null };
   const items6 = [, ];
   ({ starSmall: arr8[0], starPurple: arr8[1] } = tmp);
   obj9.style = items6;
@@ -620,7 +620,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj14 = { style: tmp.content, children: null };
   const obj10 = { style: tmp.cardBackground };
   const obj4 = { interpolate: require("ReanimatedRexport").interpolate, messageListAnimation: sharedValue };
-  obj14.children = closure_7(first(4497).View, {
+  obj14.children = closure_7(first(4529).View, {
     style: animatedStyle,
     children: first.map((children) => {
       const obj = { style: closure_0.message, children: null };

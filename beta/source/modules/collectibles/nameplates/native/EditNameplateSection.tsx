@@ -1,15 +1,15 @@
-// Module ID: 14903
-// Function ID: 14904
+// Module ID: 14941
+// Function ID: 14942
 // Name: EditNameplateSection
-// Dependencies: [19, 17, 1975, 21, 4758, 13477, 558, 568, 14902, 13478, 7429, 1974, 9097, 2]
+// Dependencies: [19, 17, 1975, 21, 4790, 13513, 558, 568, 14940, 13514, 7461, 1974, 9129, 2]
 
-// Module 14903 (EditNameplateSection)
+// Module 14941 (EditNameplateSection)
 import c from "c" /* 568 */;
 import utils from "utils" /* 1974 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import NameplateDefault from "Nameplate" /* 9097 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 13477 */;
-import useNameplateSections from "useNameplateSections" /* 14902 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
+import NameplateDefault from "Nameplate" /* 9129 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 13513 */;
+import useNameplateSections from "useNameplateSections" /* 14940 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,10 +17,10 @@ const View = fn(17).View;
 const isNameplateRecord = fn(1975).isNameplateRecord;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
-let obj = { row: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: fn(13477).GUTTER_SIZE }, rowSpacer: null, nameplate: null };
-let obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: fn(13477).GUTTER_SIZE };
-obj.rowSpacer = { height: fn(13477).GUTTER_SIZE };
+const createStyles = fn(4790);
+let obj = { row: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: fn(13513).GUTTER_SIZE }, rowSpacer: null, nameplate: null };
+let obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: fn(13513).GUTTER_SIZE };
+obj.rowSpacer = { height: fn(13513).GUTTER_SIZE };
 obj.nameplate = { overflow: "hidden" };
 let closure_9 = createStyles.createStyles(obj);
 let ReactCompilerGating = fn(558);
@@ -97,10 +97,10 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((se
   const mapped = substr.map((nameplate, index) => {
     if (nameplate === useNameplateSections.NONE_ITEM) {
       const obj2 = { size, onPress, isSelected, asDefault: null != guildId };
-      return timestampProducer(tmp(13478).EditCollectiblesListItemNone, obj2, "none");
-    } else if (nameplate === tmp(14902).SHOP_ITEM) {
+      return timestampProducer(tmp(13514).EditCollectiblesListItemNone, obj2, "none");
+    } else if (nameplate === tmp(14940).SHOP_ITEM) {
       const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_NAMEPLATE_SHEET };
-      return timestampProducer(tmp(13478).EditCollectiblesListItemShop, obj3, "shop");
+      return timestampProducer(tmp(13514).EditCollectiblesListItemShop, obj3, "shop");
     } else if (isNameplateRecord(nameplate)) {
       const obj4 = { nameplate, isSelected: selectedSkuId === nameplate.skuId, setSelectedNameplate, size };
       return timestampProducer(memoResult1, obj4, nameplate.skuId);
@@ -137,10 +137,10 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((se
   obj2.children = substr.map((nameplate, index) => {
     if (nameplate === useNameplateSections.NONE_ITEM) {
       const obj2 = { size: width, onPress, isSelected: null == closure_1_0, asDefault: null != dependencyMap };
-      return timestampProducer(tmp(13478).EditCollectiblesListItemNone, obj2, "none");
-    } else if (nameplate === tmp(14902).SHOP_ITEM) {
+      return timestampProducer(tmp(13514).EditCollectiblesListItemNone, obj2, "none");
+    } else if (nameplate === tmp(14940).SHOP_ITEM) {
       const obj3 = { size: width, analyticsSource: AnalyticsLocationDefault.EDIT_NAMEPLATE_SHEET };
-      return timestampProducer(tmp(13478).EditCollectiblesListItemShop, obj3, "shop");
+      return timestampProducer(tmp(13514).EditCollectiblesListItemShop, obj3, "shop");
     } else if (isNameplateRecord(nameplate)) {
       const obj4 = { nameplate, isSelected: closure_1_0 === nameplate.skuId, setSelectedNameplate, size: width };
       return timestampProducer(memoResult1, obj4, nameplate.skuId);
@@ -211,7 +211,7 @@ const memoResult1 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((n
         }
       }
       const obj3 = { skuId: nameplate.skuId, isSelected, onPress: tmp7, size, accessibilityLabel: nameplate.label, children: tmp11 };
-      const tmp17 = timestampProducer(tmp(13478).EditCollectiblesListItemProduct, obj3);
+      const tmp17 = timestampProducer(tmp(13514).EditCollectiblesListItemProduct, obj3);
       cResult[11] = isSelected;
       cResult[12] = nameplate.label;
       cResult[13] = nameplate.skuId;
@@ -263,8 +263,8 @@ const memoResult1 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((n
   const obj2 = { nameplate: memo, fullOpacity: true, isSquarePreview: true, style: null };
   const items2 = [closure_9().nameplate, { borderRadius: 6 }];
   obj2.style = items2;
-  obj.children = closure_6(setSelectedNameplate(9097), obj2);
-  return closure_6(nameplate(13478).EditCollectiblesListItemProduct, obj);
+  obj.children = closure_6(setSelectedNameplate(9129), obj2);
+  return closure_6(nameplate(13514).EditCollectiblesListItemProduct, obj);
 }));
 memoResult1.displayName = "EditNameplateItem";
 let size = fn(2);

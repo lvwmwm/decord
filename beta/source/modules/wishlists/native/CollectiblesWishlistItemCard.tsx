@@ -1,20 +1,20 @@
-// Module ID: 11334
-// Function ID: 11335
+// Module ID: 11370
+// Function ID: 11371
 // Name: CollectiblesWishlistItemCard
-// Dependencies: [109, 19, 7793, 11335, 21, 558, 568, 504, 9047, 9050, 9051, 2]
+// Dependencies: [109, 19, 7825, 11371, 21, 558, 568, 504, 9079, 9082, 9083, 2]
 
-// Module 11334 (CollectiblesWishlistItemCard)
-import SKUPreview from "SKUPreview" /* 9050 */;
-import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 9051 */;
+// Module 11370 (CollectiblesWishlistItemCard)
+import SKUPreview from "SKUPreview" /* 9082 */;
+import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 9083 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import SentGiftsStore from "SentGiftsStore" /* 11335 */;
+import SentGiftsStore from "SentGiftsStore" /* 11371 */;
 
 const require = globalThis.__r;
 
 require = fn;
 let closure_3 = ["sku", "isOwned", "source", "wishlistOwnerId", "size"];
-let closure_6 = fn(7793).transformSKUToCollectiblesItem;
+let closure_6 = fn(7825).transformSKUToCollectiblesItem;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 let size = fn(2);
@@ -71,11 +71,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
     }
     const stateFromStores = tmp(504).useStateFromStores(tmp14, tmp16, tmp17);
     if (cResult[12] !== tmp6) {
-      const productNameAndTypeFromSku = tmp(9047).getProductNameAndTypeFromSku(tmp6);
+      const productNameAndTypeFromSku = tmp(9079).getProductNameAndTypeFromSku(tmp6);
       cResult[12] = tmp6;
       cResult[13] = productNameAndTypeFromSku;
       let tmp19 = productNameAndTypeFromSku;
-      const tmpResult2 = tmp(9047);
+      const tmpResult2 = tmp(9079);
     } else {
       tmp19 = cResult[13];
     }
@@ -134,7 +134,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
         cResult[25] = tmp32;
         tmp25 = tmp32;
       }
-      OWNED = tmp(9051).WishlistItemCardOverlay.OWNED;
+      OWNED = tmp(9083).WishlistItemCardOverlay.OWNED;
     }
     const fn = function p() {
       let tmp2 = null;

@@ -1,27 +1,27 @@
-// Module ID: 10506
-// Function ID: 10507
+// Module ID: 10542
+// Function ID: 10543
 // Name: StandardEmojiContent
-// Dependencies: [19, 17, 4580, 21, 4758, 580, 558, 568, 10507, 4417, 5802, 4754, 10508, 4413, 10440, 10509, 1119, 8876, 10511, 5188, 2]
+// Dependencies: [19, 17, 4612, 21, 4790, 580, 558, 568, 10543, 4449, 5834, 4786, 10544, 4445, 10479, 10545, 1119, 8908, 10547, 5220, 2]
 
-// Module 10506 (StandardEmojiContent)
+// Module 10542 (StandardEmojiContent)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4413 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4417 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 10507 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10511 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4445 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4449 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 10543 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10547 */;
 import noop from "module_19" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 
 const require = globalThis.__r;
 
-const Text_Text = tmp(4754);
+const Text_Text = tmp(4786);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { emojiSurrogate: { lineHeight: 48, fontSize: 40, margin: 8 }, ctaContainer: { paddingTop: nativeDefault.space.PX_4 } };
 let closure_9 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -135,20 +135,20 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       tmp13 = cResult[5];
     }
-    const trackOpenPopout = tmp(10508).useTrackOpenPopout(tmp13);
+    const trackOpenPopout = tmp(10544).useTrackOpenPopout(tmp13);
     if (cResult[6] !== emojiNode.surrogate) {
-      const result = isFavoriteEmoji(4413).convertSurrogateToBase(emojiNode.surrogate);
+      const result = isFavoriteEmoji(4445).convertSurrogateToBase(emojiNode.surrogate);
       cResult[6] = emojiNode.surrogate;
       cResult[7] = result;
       let tmp15 = result;
-      const obj6 = isFavoriteEmoji(4413);
+      const obj6 = isFavoriteEmoji(4445);
     } else {
       tmp15 = cResult[7];
     }
     _require = tmp15;
-    const tmpResult = tmp(10508);
-    isFavoriteEmoji = tmp(10440).useIsFavoriteEmoji(tmp10, tmp15);
-    const tmp20 = isFavoriteEmoji(10509)(emojiNode.content);
+    const tmpResult = tmp(10544);
+    isFavoriteEmoji = tmp(10479).useIsFavoriteEmoji(tmp10, tmp15);
+    const tmp20 = isFavoriteEmoji(10545)(emojiNode.content);
     if (cResult[8] !== emojiNode.surrogate) {
       const obj4 = { surrogate: emojiNode.surrogate };
       const tmp24 = closure_6(closure_10, obj4);
@@ -160,7 +160,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[10] !== tmp20) {
       const obj5 = { variant: "text-md/bold", color: "mobile-text-heading-primary", children: tmp20 };
-      const tmp27 = closure_6(tmp(4754).Text, obj5);
+      const tmp27 = closure_6(tmp(4786).Text, obj5);
       cResult[10] = tmp20;
       cResult[11] = tmp27;
       let tmp25 = tmp27;
@@ -172,7 +172,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj7 = { variant: "text-sm/medium", children: null };
       const intl = tmp(1119).intl;
       obj7.children = intl.string(tmp(1119).t.sXdH8c);
-      const tmp30 = closure_6(tmp(4754).Text, obj7);
+      const tmp30 = closure_6(tmp(4786).Text, obj7);
       cResult[12] = tmp30;
       let tmp28 = tmp30;
     } else {
@@ -189,7 +189,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           if (cResult[20] !== tmp6.divider) {
             const obj8 = { style: tmp6.divider };
-            const tmp42 = closure_6(tmp(8876).FormDivider, obj8);
+            const tmp42 = closure_6(tmp(8908).FormDivider, obj8);
             cResult[20] = tmp6.divider;
             cResult[21] = tmp42;
             let tmp40 = tmp42;
@@ -294,7 +294,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
               obj9.variant = str2;
               obj9.onPress = tmp46;
-              const tmp49 = closure_6(tmp(5188).Button, obj9);
+              const tmp49 = closure_6(tmp(5220).Button, obj9);
               cResult[27] = tmp43;
               cResult[28] = str2;
               cResult[29] = tmp46;
@@ -339,7 +339,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[14] = tmp25;
     cResult[15] = tmp34;
     tmp31 = tmp34;
-    const tmpResult2 = tmp(10440);
+    const tmpResult2 = tmp(10479);
   }
   const obj11 = {};
   const merged = Object.assign(tmp4);

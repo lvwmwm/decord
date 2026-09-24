@@ -1,12 +1,12 @@
-// Module ID: 15587
-// Function ID: 15588
+// Module ID: 15597
+// Function ID: 15598
 // Name: AccessibilitySetting
-// Dependencies: [32, 19, 1078, 2042, 21, 2031, 558, 568, 7632, 1181, 1119, 11594, 15588, 15590, 2]
+// Dependencies: [32, 19, 1078, 2042, 21, 2031, 558, 568, 7664, 1181, 1119, 11630, 15598, 15600, 2]
 
-// Module 15587 (AccessibilitySetting)
+// Module 15597 (AccessibilitySetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7632 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7664 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -67,11 +67,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   return tmp5;
 });
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = first(568).c(3);
   let obj = first(568);
-  let tmp2 = _slicedToArray(first(7632).useSelectedDismissibleContent(items), 2);
+  let tmp2 = _slicedToArray(first(7664).useSelectedDismissibleContent(items), 2);
   first = tmp2[0];
   dependencyMap = tmp4;
   if (cResult[0] === tmp2[1]) {
@@ -100,7 +100,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[2] = fn;
   tmp5 = fn;
 }) : (() => {
-  const tmp = _slicedToArray(first(7632).useSelectedDismissibleContent(items), 2);
+  const tmp = _slicedToArray(first(7664).useSelectedDismissibleContent(items), 2);
   first = tmp[0];
   dependencyMap = tmp3;
   items = [tmp[1], first];
@@ -126,12 +126,12 @@ const route = SettingBuilders.createRoute({
     return intl.string(util.t.G0neg7);
   },
   parent: null,
-  IconComponent: fn(15588).AccessibilityIcon,
+  IconComponent: fn(15598).AccessibilityIcon,
   useTrailing: tmp2,
   usePreNavigationAction: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = first(568).c(3);
     let obj = first(568);
-    let tmp2 = _slicedToArray(first(7632).useSelectedDismissibleContent(items), 2);
+    let tmp2 = _slicedToArray(first(7664).useSelectedDismissibleContent(items), 2);
     first = tmp2[0];
     dependencyMap = tmp4;
     if (cResult[0] === tmp2[1]) {
@@ -160,7 +160,7 @@ const route = SettingBuilders.createRoute({
     cResult[2] = fn;
     tmp5 = fn;
   }) : (() => {
-    const tmp = _slicedToArray(first(7632).useSelectedDismissibleContent(items), 2);
+    const tmp = _slicedToArray(first(7664).useSelectedDismissibleContent(items), 2);
     first = tmp[0];
     dependencyMap = tmp3;
     items = [tmp[1], first];

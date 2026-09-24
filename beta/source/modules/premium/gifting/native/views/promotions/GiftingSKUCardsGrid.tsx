@@ -1,26 +1,26 @@
-// Module ID: 11341
-// Function ID: 11342
+// Module ID: 11377
+// Function ID: 11378
 // Name: GiftingSKUCardsGrid
-// Dependencies: [19, 17, 7794, 1975, 21, 4758, 580, 558, 568, 8452, 4479, 11342, 9103, 9089, 9074, 4754, 1119, 5341, 2]
+// Dependencies: [19, 17, 7826, 1975, 21, 4790, 580, 558, 568, 8484, 4511, 11378, 9135, 9121, 9106, 4786, 1119, 5373, 2]
 
-// Module 11341 (GiftingSKUCardsGrid)
+// Module 11377 (GiftingSKUCardsGrid)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4479 */;
-import useCurrentUser from "useCurrentUser" /* 8452 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9089 */;
-import NameplateCardPreviewDefault from "NameplateCardPreview" /* 9103 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11342 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4511 */;
+import useCurrentUser from "useCurrentUser" /* 8484 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9121 */;
+import NameplateCardPreviewDefault from "NameplateCardPreview" /* 9135 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11378 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const isAvatarDecorationRecord = fn(7794).isAvatarDecorationRecord;
+const isAvatarDecorationRecord = fn(7826).isAvatarDecorationRecord;
 const isNameplateRecord = fn(1975).isNameplateRecord;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let c9 = 100;
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let obj = { card: null, overlayContainer: null, selected: null, claimed: null, checkmark: null, checkmarkContainer: null, textContainer: null };
 let size = { height: 178, width: 150, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", borderWidth: 1, borderRadius: nativeDefault.radii.sm, overflow: "hidden", borderColor: nativeDefault.colors.BORDER_SUBTLE, margin: nativeDefault.space.PX_4 };
 obj.card = size;
@@ -94,7 +94,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((rewa
                         }
                         if (cResult[25] !== product.name) {
                           const obj4 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: product.name };
-                          const tmp35 = React5(tmp(4754).Text, obj4);
+                          const tmp35 = React5(tmp(4786).Text, obj4);
                           cResult[25] = product.name;
                           cResult[26] = tmp35;
                           let tmp33 = tmp35;
@@ -116,7 +116,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((rewa
                         } else {
                           if (cResult[29] !== cResult[28]) {
                             const obj5 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: tmp36 };
-                            const tmp42 = React5(tmp(4754).Text, obj5);
+                            const tmp42 = React5(tmp(4786).Text, obj5);
                             cResult[29] = tmp36;
                             cResult[30] = tmp42;
                             let tmp40 = tmp42;
@@ -149,7 +149,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((rewa
                               const obj6 = { style: tmp12, onPress: tmp13, activeOpacity: 0.8, disabled: claimed, accessibilityRole, accessibilityState, children: null };
                               const items = [tmp25, tmp29, tmp43];
                               obj6.children = items;
-                              const tmp49 = closure_1_8(tmp(5341).PressableOpacity, obj6);
+                              const tmp49 = closure_1_8(tmp(5373).PressableOpacity, obj6);
                               cResult[35] = accessibilityRole;
                               cResult[36] = accessibilityState;
                               cResult[37] = claimed;
@@ -178,7 +178,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((rewa
                     if (claimed) {
                       const obj8 = { style: tmp4.checkmarkContainer, children: null };
                       const obj9 = { size: "lg", style: tmp4.checkmark };
-                      obj8.children = React5(tmp(9074).CheckmarkLargeBoldIcon, obj9);
+                      obj8.children = React5(tmp(9106).CheckmarkLargeBoldIcon, obj9);
                       tmp30 = React5(View, obj8);
                     }
                     cResult[21] = claimed;
@@ -311,7 +311,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((rewa
   }
   const obj3 = rewardSkuId(isSelected[11]);
 }));
-createStyles = fn(4758);
+createStyles = fn(4790);
 let closure_12 = createStyles.createStyles({ grid: { flexDirection: "row", flexWrap: "wrap", justifyContent: "center" } });
 ReactCompilerGating = fn(558);
 let obj3 = { borderColor: nativeDefault.colors.BACKGROUND_BRAND };

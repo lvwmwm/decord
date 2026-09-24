@@ -1,30 +1,31 @@
 // Module ID: 7074
 // Function ID: 7075
-// Dependencies: [19, 6864]
-// Exports: useBottomSheetTimingConfigs
+// Dependencies: [19, 6918]
+// Exports: useBoundingClientRect
 
 // Module 7074
 import _mod19 from "module_19" /* 19 */;
-import value2 from "value2" /* 6864 */;
 
-const useMemo = _mod19.useMemo;
+const useLayoutEffect = _mod19.useLayoutEffect;
 
-export const useBottomSheetTimingConfigs = (arg0) => {
-  const easing = arg0;
-  const items = [, , ];
-  ({ duration: arr[0], easing: arr[1], reduceMotion: arr[2] } = arg0);
-  return useMemo(() => {
-    let ANIMATION_EASING = easing.easing;
-    if (!ANIMATION_EASING) {
-      ANIMATION_EASING = value2.ANIMATION_EASING;
-    }
-    const obj = { easing: ANIMATION_EASING, duration: null, reduceMotion: null };
-    let ANIMATION_DURATION = tmp.duration;
-    if (!ANIMATION_DURATION) {
-      ANIMATION_DURATION = value2.ANIMATION_DURATION;
-    }
-    obj.duration = ANIMATION_DURATION;
-    obj.reduceMotion = easing.reduceMotion;
-    return obj;
-  }, items);
+export const useBoundingClientRect = function useBoundingClientRect(arg0, arg1) {
+  closure_0 = arg0;
+  closure_1 = arg1;
+  if (obj.isFabricInstalled()) {
+    useLayoutEffect(() => {
+      if (closure_0) {
+        if (tmp.current) {
+          if (typeof tmp.current.unstable_getBoundingClientRect !== "function") {
+            if (typeof tmp.current.getBoundingClientRect === "function") {
+              const current2 = tmp.current;
+              closure_1(current2.getBoundingClientRect());
+            }
+          } else {
+            const current = tmp.current;
+            closure_1(current.unstable_getBoundingClientRect());
+          }
+        }
+      }
+    });
+  }
 };

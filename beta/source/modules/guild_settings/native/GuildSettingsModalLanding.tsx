@@ -1,36 +1,36 @@
-// Module ID: 17926
-// Function ID: 17927
+// Module ID: 17936
+// Function ID: 17937
 // Name: GuildSettingsModalLanding
-// Dependencies: [19, 2100, 2067, 4399, 1376, 16482, 9834, 1078, 21, 4938, 4758, 558, 568, 1119, 5822, 4712, 4404, 17927, 15221, 9836, 9139, 17929, 4700, 5903, 9035, 12696, 11868, 5309, 9818, 17930, 9545, 5757, 9543, 15860, 10676, 4462, 580, 1488, 504, 9833, 17932, 7504, 7511, 4457, 1401, 17323, 17933, 5186, 8876, 7286, 2]
+// Dependencies: [19, 2100, 2067, 4431, 1376, 16492, 9866, 1078, 21, 4970, 4790, 558, 568, 1119, 5854, 4744, 4436, 17937, 15231, 9868, 9171, 17939, 4732, 5935, 9067, 12732, 11904, 5341, 9850, 17940, 9577, 5789, 9575, 15870, 10712, 4494, 580, 1488, 504, 9865, 17942, 7536, 7543, 4489, 1401, 17333, 17943, 5218, 8908, 7318, 2]
 
-// Module 17926 (GuildSettingsModalLanding)
+// Module 17936 (GuildSettingsModalLanding)
 import util from "util" /* 1119 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4404 */;
-import ToastUtils from "ToastUtils" /* 4457 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4938 */;
-import ClipboardListIcon from "ClipboardListIcon" /* 5757 */;
-import TableRow2 from "TableRow" /* 5822 */;
-import TableRowGroup2 from "TableRowGroup" /* 5903 */;
-import HammerIcon from "HammerIcon" /* 9543 */;
-import RobotIcon from "RobotIcon" /* 9545 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9818 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
-import ModerationIcon from "ModerationIcon" /* 17930 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4436 */;
+import ToastUtils from "ToastUtils" /* 4489 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4970 */;
+import ClipboardListIcon from "ClipboardListIcon" /* 5789 */;
+import TableRow2 from "TableRow" /* 5854 */;
+import TableRowGroup2 from "TableRowGroup" /* 5935 */;
+import HammerIcon from "HammerIcon" /* 9575 */;
+import RobotIcon from "RobotIcon" /* 9577 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9850 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9865 */;
+import ModerationIcon from "ModerationIcon" /* 17940 */;
 import noop from "module_19" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 2100 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 import UserStore from "UserStore" /* 1376 */;
-import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 16482 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9834 */;
+import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 16492 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9866 */;
 
 require = fn;
 const Constants = fn(1078);
 ({ GuildFeatures: closure_11, GuildSettingsSections: closure_12, ChannelTypes: map1, AnalyticEvents: closure_14 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_18 = createStyles.createStyles({ container: { flex: 1 }, containerContent: { paddingTop: 16 } });
 let ReactCompilerGating = fn(558);
 let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
@@ -48,8 +48,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { IconComponent: TableRowGroup(4712).CircleInformationIcon };
-    const tmp7 = closure_15(TableRowGroup(5822).TableRow.Icon, obj2);
+    const obj2 = { IconComponent: TableRowGroup(4744).CircleInformationIcon };
+    const tmp7 = closure_15(TableRowGroup(5854).TableRow.Icon, obj2);
     cResult[1] = tmp7;
     let tmp5 = tmp7;
   } else {
@@ -64,7 +64,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           return pushScreen(constants2.OVERVIEW);
         }
     };
-    const tmp10 = closure_15(TableRowGroup(5822).TableRow, obj3, "overview");
+    const tmp10 = closure_15(TableRowGroup(5854).TableRow, obj3, "overview");
     cResult[2] = pushScreen;
     cResult[3] = tmp10;
     let tmp8 = tmp10;
@@ -95,7 +95,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                       tmp46 = cResult[31];
                     }
                     if (cResult[32] !== arr) {
-                      TableRowGroup = TableRowGroup(5903).TableRowGroup;
+                      TableRowGroup = TableRowGroup(5935).TableRowGroup;
                       const obj4 = { title: tmp46, hasIcons: true, children: arr };
                       tmp = closure_15(TableRowGroup, obj4);
                       cResult[32] = arr;
@@ -130,8 +130,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                 }
                 const _Symbol6 = Symbol;
                 if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
-                  const obj5 = { IconComponent: TableRowGroup(4700).LinkIcon };
-                  const tmp40 = closure_15(TableRowGroup(5822).TableRow.Icon, obj5);
+                  const obj5 = { IconComponent: TableRowGroup(4732).LinkIcon };
+                  const tmp40 = closure_15(TableRowGroup(5854).TableRow.Icon, obj5);
                   cResult[28] = tmp40;
                   let tmp38 = tmp40;
                 } else {
@@ -146,7 +146,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                                       return pushScreen(constants2.VANITY_URL);
                                     }
                   };
-                  const tmp43 = closure_15(TableRowGroup(5822).TableRow, obj6, "vanity");
+                  const tmp43 = closure_15(TableRowGroup(5854).TableRow, obj6, "vanity");
                   cResult[29] = pushScreen;
                   cResult[30] = tmp43;
                   let tmp41 = tmp43;
@@ -155,7 +155,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                 }
                 items.push(tmp41);
               }
-              TableRowGroupResult1 = TableRowGroup(17929);
+              TableRowGroupResult1 = TableRowGroup(17939);
             }
             cResult[4] = canManageChannels;
             cResult[5] = canManageGuild;
@@ -180,8 +180,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             }
             const _Symbol4 = Symbol;
             if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj7 = { IconComponent: TableRowGroup(9139).TagIcon };
-              const tmp32 = closure_15(TableRowGroup(5822).TableRow.Icon, obj7);
+              const obj7 = { IconComponent: TableRowGroup(9171).TagIcon };
+              const tmp32 = closure_15(TableRowGroup(5854).TableRow.Icon, obj7);
               cResult[24] = tmp32;
               let arr6 = tmp32;
             } else {
@@ -196,7 +196,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                               return pushScreen(constants2.TAG);
                             }
               };
-              const tmp35 = closure_15(TableRowGroup(5822).TableRow, obj8, "server-tag");
+              const tmp35 = closure_15(TableRowGroup(5854).TableRow, obj8, "server-tag");
               cResult[25] = pushScreen;
               cResult[26] = tmp35;
               let tmp33 = tmp35;
@@ -205,7 +205,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             }
             arr6 = items.push(tmp33);
           }
-          TableRowGroupResult = TableRowGroup(9836);
+          TableRowGroupResult = TableRowGroup(9868);
         }
       }
     }
@@ -220,8 +220,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
     const _Symbol2 = Symbol;
     if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj9 = { IconComponent: TableRowGroup(15221).PuzzlePieceIcon };
-      const tmp24 = closure_15(TableRowGroup(5822).TableRow.Icon, obj9);
+      const obj9 = { IconComponent: TableRowGroup(15231).PuzzlePieceIcon };
+      const tmp24 = closure_15(TableRowGroup(5854).TableRow.Icon, obj9);
       cResult[20] = tmp24;
       let arr7 = tmp24;
     } else {
@@ -236,7 +236,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               return pushScreen(constants2.INTEGRATIONS);
             }
       };
-      const tmp27 = closure_15(TableRowGroup(5822).TableRow, obj10, "integrations");
+      const tmp27 = closure_15(TableRowGroup(5854).TableRow, obj10, "integrations");
       cResult[21] = pushScreen;
       cResult[22] = tmp27;
       let tmp25 = tmp27;
@@ -254,8 +254,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     tmp13 = cResult[14];
   }
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj11 = { IconComponent: TableRowGroup(17927).ChannelListIcon };
-    const tmp17 = closure_15(TableRowGroup(5822).TableRow.Icon, obj11);
+    const obj11 = { IconComponent: TableRowGroup(17937).ChannelListIcon };
+    const tmp17 = closure_15(TableRowGroup(5854).TableRow.Icon, obj11);
     cResult[15] = tmp17;
     let arr8 = tmp17;
   } else {
@@ -267,7 +267,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
     arr8 = items.push(tmp18);
   }
-  const tmp19 = closure_15(TableRowGroup(5822).TableRow, {
+  const tmp19 = closure_15(TableRowGroup(5854).TableRow, {
     label: tmp13,
     arrow: true,
     icon: arr8,
@@ -287,11 +287,11 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const obj = { label: null, arrow: true, icon: null, onPress: null };
   const intl = guild(1119).intl;
   obj.label = intl.string(guild(1119).t["/dp6yY"]);
-  obj.icon = closure_15(guild(5822).TableRow.Icon, { IconComponent: guild(4712).CircleInformationIcon });
+  obj.icon = closure_15(guild(5854).TableRow.Icon, { IconComponent: guild(4744).CircleInformationIcon });
   obj.onPress = function onPress() {
     return importDefault(constants2.OVERVIEW);
   };
-  const items = [closure_15(guild(5822).TableRow, obj, "overview")];
+  const items = [closure_15(guild(5854).TableRow, obj, "overview")];
   const currentUser = UserStore.getCurrentUser();
   if (!canManageChannels) {
     let canManageACategoryResult = null != currentUser;
@@ -304,13 +304,13 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     const obj4 = { label: null, arrow: true, icon: null, onPress: null };
     const intl2 = tmp2(1119).intl;
     obj4.label = intl2.string(tmp2(1119).t.OGiMXJ);
-    const obj5 = { IconComponent: tmp2(17927).ChannelListIcon };
-    obj4.icon = tmp(tmp2(5822).TableRow.Icon, obj5);
+    const obj5 = { IconComponent: tmp2(17937).ChannelListIcon };
+    obj4.icon = tmp(tmp2(5854).TableRow.Icon, obj5);
     obj4.onPress = function onPress() {
       guild = GuildSettingsModalChannelsStore.initGuild(guild.id);
       importDefault(constants2.CHANNELS);
     };
-    items.push(tmp(tmp2(5822).TableRow, obj4, "channels"));
+    items.push(tmp(tmp2(5854).TableRow, obj4, "channels"));
   }
   if (!canManageGuild) {
     canManageGuild = canManageWebhooks;
@@ -322,39 +322,39 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     const obj6 = { label: null, arrow: true, icon: null, onPress: null };
     const intl3 = tmp2(1119).intl;
     obj6.label = intl3.string(tmp2(1119).t.CIsNZw);
-    const obj7 = { IconComponent: tmp2(15221).PuzzlePieceIcon };
-    obj6.icon = tmp(tmp2(5822).TableRow.Icon, obj7);
+    const obj7 = { IconComponent: tmp2(15231).PuzzlePieceIcon };
+    obj6.icon = tmp(tmp2(5854).TableRow.Icon, obj7);
     obj6.onPress = function onPress() {
       return importDefault(constants2.INTEGRATIONS);
     };
-    items.push(tmp(tmp2(5822).TableRow, obj6, "integrations"));
+    items.push(tmp(tmp2(5854).TableRow, obj6, "integrations"));
   }
-  const obj2 = { IconComponent: guild(4712).CircleInformationIcon };
+  const obj2 = { IconComponent: guild(4744).CircleInformationIcon };
   if (tmp2Result.canUseMobileServerTagSettings(guild.id)) {
     const obj8 = { label: null, arrow: true, icon: null, onPress: null };
     const intl4 = tmp2(1119).intl;
     obj8.label = intl4.string(tmp2(1119).t["2QmKZ2"]);
-    const obj9 = { IconComponent: tmp2(9139).TagIcon };
-    obj8.icon = tmp(tmp2(5822).TableRow.Icon, obj9);
+    const obj9 = { IconComponent: tmp2(9171).TagIcon };
+    obj8.icon = tmp(tmp2(5854).TableRow.Icon, obj9);
     obj8.onPress = function onPress() {
       return importDefault(constants2.TAG);
     };
-    items.push(tmp(tmp2(5822).TableRow, obj8, "server-tag"));
+    items.push(tmp(tmp2(5854).TableRow, obj8, "server-tag"));
   }
   if (isGuildAdmin) {
-    isGuildAdmin = tmp2(17929).canSeeVanityUrlSettings(guild);
-    const tmp2Result2 = tmp2(17929);
+    isGuildAdmin = tmp2(17939).canSeeVanityUrlSettings(guild);
+    const tmp2Result2 = tmp2(17939);
   }
   if (isGuildAdmin) {
     const obj10 = { label: null, arrow: true, icon: null, onPress: null };
     const intl5 = tmp2(1119).intl;
     obj10.label = intl5.string(tmp2(1119).t["5XZKy/"]);
-    const obj11 = { IconComponent: tmp2(4700).LinkIcon };
-    obj10.icon = tmp(tmp2(5822).TableRow.Icon, obj11);
+    const obj11 = { IconComponent: tmp2(4732).LinkIcon };
+    obj10.icon = tmp(tmp2(5854).TableRow.Icon, obj11);
     obj10.onPress = function onPress() {
       return importDefault(constants2.VANITY_URL);
     };
-    items.push(tmp(tmp2(5822).TableRow, obj10, "vanity"));
+    items.push(tmp(tmp2(5854).TableRow, obj10, "vanity"));
   }
   let tmpResult = null;
   if (0 !== items.length) {
@@ -362,7 +362,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     const intl6 = tmp2(1119).intl;
     obj12.title = intl6.string(tmp2(1119).t["3D5yo/"]);
     obj12.children = items;
-    tmpResult = tmp(tmp2(5903).TableRowGroup, obj12);
+    tmpResult = tmp(tmp2(5935).TableRowGroup, obj12);
   }
   return tmpResult;
 });
@@ -390,7 +390,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp32 = cResult[16];
         }
         if (cResult[17] !== arr) {
-          TableRowGroup = TableRowGroup(5903).TableRowGroup;
+          TableRowGroup = TableRowGroup(5935).TableRowGroup;
           const obj2 = { title: tmp32, hasIcons: true, children: arr };
           tmp = closure_15(TableRowGroup, obj2);
           cResult[17] = arr;
@@ -419,8 +419,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const _Symbol6 = Symbol;
       if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj3 = { IconComponent: TableRowGroup(11868).StampIcon };
-        const tmp26 = closure_15(TableRowGroup(5822).TableRow.Icon, obj3);
+        const obj3 = { IconComponent: TableRowGroup(11904).StampIcon };
+        const tmp26 = closure_15(TableRowGroup(5854).TableRow.Icon, obj3);
         cResult[13] = tmp26;
         let tmp24 = tmp26;
       } else {
@@ -435,7 +435,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   return pushScreen(constants2.OFFICIAL_MESSAGES);
                 }
         };
-        const tmp29 = closure_15(TableRowGroup(5822).TableRow, obj4, "official-messages");
+        const tmp29 = closure_15(TableRowGroup(5854).TableRow, obj4, "official-messages");
         cResult[14] = pushScreen;
         cResult[15] = tmp29;
         let tmp27 = tmp29;
@@ -456,8 +456,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol2 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj5 = { IconComponent: TableRowGroup(9035).ReactionIcon };
-      const tmp8 = closure_15(TableRowGroup(5822).TableRow.Icon, obj5);
+      const obj5 = { IconComponent: TableRowGroup(9067).ReactionIcon };
+      const tmp8 = closure_15(TableRowGroup(5854).TableRow.Icon, obj5);
       cResult[5] = tmp8;
       let tmp6 = tmp8;
     } else {
@@ -472,7 +472,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return pushScreen(constants2.EMOJI);
             }
       };
-      const tmp11 = closure_15(TableRowGroup(5822).TableRow, obj6, "emoji");
+      const tmp11 = closure_15(TableRowGroup(5854).TableRow, obj6, "emoji");
       cResult[6] = pushScreen;
       cResult[7] = tmp11;
       let tmp9 = tmp11;
@@ -491,8 +491,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol4 = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj7 = { IconComponent: TableRowGroup(12696).StickerIcon };
-      const tmp17 = closure_15(TableRowGroup(5822).TableRow.Icon, obj7);
+      const obj7 = { IconComponent: TableRowGroup(12732).StickerIcon };
+      const tmp17 = closure_15(TableRowGroup(5854).TableRow.Icon, obj7);
       cResult[9] = tmp17;
       let arr6 = tmp17;
     } else {
@@ -507,7 +507,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return pushScreen(constants2.STICKERS);
             }
       };
-      const tmp20 = closure_15(TableRowGroup(5822).TableRow, obj8, "stickers");
+      const tmp20 = closure_15(TableRowGroup(5854).TableRow, obj8, "stickers");
       cResult[10] = pushScreen;
       cResult[11] = tmp20;
       let tmp18 = tmp20;
@@ -523,32 +523,32 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj = { label: null, arrow: true, icon: null, onPress: null };
     const intl = pushScreen(1119).intl;
     obj.label = intl.string(pushScreen(1119).t.sMOuuS);
-    const obj2 = { IconComponent: pushScreen(9035).ReactionIcon };
-    obj.icon = closure_15(pushScreen(5822).TableRow.Icon, obj2);
+    const obj2 = { IconComponent: pushScreen(9067).ReactionIcon };
+    obj.icon = closure_15(pushScreen(5854).TableRow.Icon, obj2);
     obj.onPress = function onPress() {
       return pushScreen(constants2.EMOJI);
     };
-    items.push(closure_15(pushScreen(5822).TableRow, obj, "emoji"));
+    items.push(closure_15(pushScreen(5854).TableRow, obj, "emoji"));
     const obj3 = { label: null, arrow: true, icon: null, onPress: null };
     const intl2 = pushScreen(1119).intl;
     obj3.label = intl2.string(pushScreen(1119).t.R5nQkS);
-    const obj4 = { IconComponent: pushScreen(12696).StickerIcon };
-    obj3.icon = closure_15(pushScreen(5822).TableRow.Icon, obj4);
+    const obj4 = { IconComponent: pushScreen(12732).StickerIcon };
+    obj3.icon = closure_15(pushScreen(5854).TableRow.Icon, obj4);
     obj3.onPress = function onPress() {
       return pushScreen(constants2.STICKERS);
     };
-    items.push(closure_15(pushScreen(5822).TableRow, obj3, "stickers"));
+    items.push(closure_15(pushScreen(5854).TableRow, obj3, "stickers"));
   }
   if (pushScreen.canConfigureOfficialMessages) {
     const obj5 = { label: null, arrow: true, icon: null, onPress: null };
     const intl3 = pushScreen(1119).intl;
     obj5.label = intl3.string(pushScreen(1119).t.xHEzFh);
-    const obj6 = { IconComponent: pushScreen(11868).StampIcon };
-    obj5.icon = closure_15(pushScreen(5822).TableRow.Icon, obj6);
+    const obj6 = { IconComponent: pushScreen(11904).StampIcon };
+    obj5.icon = closure_15(pushScreen(5854).TableRow.Icon, obj6);
     obj5.onPress = function onPress() {
       return pushScreen(constants2.OFFICIAL_MESSAGES);
     };
-    items.push(closure_15(pushScreen(5822).TableRow, obj5, "official-messages"));
+    items.push(closure_15(pushScreen(5854).TableRow, obj5, "official-messages"));
   }
   let tmp10 = null;
   if (0 !== items.length) {
@@ -556,7 +556,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl4 = pushScreen(1119).intl;
     obj7.title = intl4.string(pushScreen(1119).t.m6lkGy);
     obj7.children = items;
-    tmp10 = closure_15(pushScreen(5903).TableRowGroup, obj7);
+    tmp10 = closure_15(pushScreen(5935).TableRowGroup, obj7);
   }
   return tmp10;
 });
@@ -573,8 +573,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { IconComponent: tmp(5309).GroupIcon };
-    const tmp8 = closure_15(tmp(5822).TableRow.Icon, obj2);
+    const obj2 = { IconComponent: tmp(5341).GroupIcon };
+    const tmp8 = closure_15(tmp(5854).TableRow.Icon, obj2);
     cResult[1] = tmp8;
     let tmp6 = tmp8;
   } else {
@@ -589,7 +589,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return pushScreen(constants2.MEMBERS);
         }
     };
-    const tmp11 = closure_15(tmp(5822).TableRow, obj3, "members");
+    const tmp11 = closure_15(tmp(5854).TableRow, obj3, "members");
     cResult[2] = pushScreen;
     cResult[3] = tmp11;
     let tmp9 = tmp11;
@@ -613,7 +613,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[18] !== tmp12) {
           const obj4 = { title: tmp30, hasIcons: true, children: tmp12 };
-          const tmp34 = closure_15(tmp(5903).TableRowGroup, obj4);
+          const tmp34 = closure_15(tmp(5935).TableRowGroup, obj4);
           cResult[18] = tmp12;
           cResult[19] = tmp34;
           let tmp32 = tmp34;
@@ -645,8 +645,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const _Symbol4 = Symbol;
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj5 = { IconComponent: tmp(4700).LinkIcon };
-        const tmp25 = closure_15(tmp(5822).TableRow.Icon, obj5);
+        const obj5 = { IconComponent: tmp(4732).LinkIcon };
+        const tmp25 = closure_15(tmp(5854).TableRow.Icon, obj5);
         cResult[14] = tmp25;
         let tmp23 = tmp25;
       } else {
@@ -661,7 +661,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   return pushScreen(constants2.INSTANT_INVITES);
                 }
         };
-        const tmp28 = closure_15(tmp(5822).TableRow, obj6, "invites");
+        const tmp28 = closure_15(tmp(5854).TableRow, obj6, "invites");
         cResult[15] = pushScreen;
         cResult[16] = tmp28;
         let tmp26 = tmp28;
@@ -682,8 +682,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol2 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj7 = { IconComponent: tmp(9818).ShieldUserIcon };
-      const tmp17 = closure_15(tmp(5822).TableRow.Icon, obj7);
+      const obj7 = { IconComponent: tmp(9850).ShieldUserIcon };
+      const tmp17 = closure_15(tmp(5854).TableRow.Icon, obj7);
       cResult[10] = tmp17;
       let arr3 = tmp17;
     } else {
@@ -698,7 +698,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return pushScreen(constants2.ROLES);
             }
       };
-      const tmp20 = closure_15(tmp(5822).TableRow, obj8, "roles");
+      const tmp20 = closure_15(tmp(5854).TableRow, obj8, "roles");
       cResult[11] = pushScreen;
       cResult[12] = tmp20;
       let tmp18 = tmp20;
@@ -713,38 +713,38 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = { label: null, arrow: true, icon: null, onPress: null };
   const intl = pushScreen(1119).intl;
   obj.label = intl.string(pushScreen(1119).t["9Oq93m"]);
-  obj.icon = closure_15(pushScreen(5822).TableRow.Icon, { IconComponent: pushScreen(5309).GroupIcon });
+  obj.icon = closure_15(pushScreen(5854).TableRow.Icon, { IconComponent: pushScreen(5341).GroupIcon });
   obj.onPress = function onPress() {
     return pushScreen(constants2.MEMBERS);
   };
-  const items = [closure_15(pushScreen(5822).TableRow, obj, "members")];
+  const items = [closure_15(pushScreen(5854).TableRow, obj, "members")];
   if (canManageRoles) {
     const obj3 = { label: null, arrow: true, icon: null, onPress: null };
     const intl2 = tmp2(1119).intl;
     obj3.label = intl2.string(tmp2(1119).t["LPJmL/"]);
-    const obj4 = { IconComponent: tmp2(9818).ShieldUserIcon };
-    obj3.icon = tmp(tmp2(5822).TableRow.Icon, obj4);
+    const obj4 = { IconComponent: tmp2(9850).ShieldUserIcon };
+    obj3.icon = tmp(tmp2(5854).TableRow.Icon, obj4);
     obj3.onPress = function onPress() {
       return pushScreen(constants2.ROLES);
     };
-    items.push(tmp(tmp2(5822).TableRow, obj3, "roles"));
+    items.push(tmp(tmp2(5854).TableRow, obj3, "roles"));
   }
   if (canManageGuild) {
     const obj5 = { label: null, arrow: true, icon: null, onPress: null };
     const intl3 = tmp2(1119).intl;
     obj5.label = intl3.string(tmp2(1119).t.ngRFjZ);
-    const obj6 = { IconComponent: tmp2(4700).LinkIcon };
-    obj5.icon = tmp(tmp2(5822).TableRow.Icon, obj6);
+    const obj6 = { IconComponent: tmp2(4732).LinkIcon };
+    obj5.icon = tmp(tmp2(5854).TableRow.Icon, obj6);
     obj5.onPress = function onPress() {
       return pushScreen(constants2.INSTANT_INVITES);
     };
-    items.push(tmp(tmp2(5822).TableRow, obj5, "invites"));
+    items.push(tmp(tmp2(5854).TableRow, obj5, "invites"));
   }
   const obj7 = { title: null, hasIcons: true, children: null };
   const intl4 = tmp2(1119).intl;
   obj7.title = intl4.string(pushScreen(1119).t.bMAKMK);
   obj7.children = items;
-  return closure_15(pushScreen(5903).TableRowGroup, obj7);
+  return closure_15(pushScreen(5935).TableRowGroup, obj7);
 });
 ReactCompilerGating = fn(558);
 let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -771,7 +771,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp50 = cResult[25];
           }
           if (cResult[26] !== arr) {
-            TableRowGroup = TableRowGroup(5903).TableRowGroup;
+            TableRowGroup = TableRowGroup(5935).TableRowGroup;
             const obj2 = { title: tmp50, hasIcons: true, children: arr };
             tmp = closure_15(TableRowGroup, obj2);
             cResult[26] = arr;
@@ -804,8 +804,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const _Symbol10 = Symbol;
           if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-            const obj3 = { IconComponent: TableRowGroup(9818).ShieldUserIcon };
-            const tmp44 = closure_15(TableRowGroup(5822).TableRow.Icon, obj3);
+            const obj3 = { IconComponent: TableRowGroup(9850).ShieldUserIcon };
+            const tmp44 = closure_15(TableRowGroup(5854).TableRow.Icon, obj3);
             cResult[22] = tmp44;
             let tmp42 = tmp44;
           } else {
@@ -820,7 +820,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           return pushScreen(constants2.SECURITY);
                         }
             };
-            const tmp47 = closure_15(TableRowGroup(5822).TableRow, obj4, "security");
+            const tmp47 = closure_15(TableRowGroup(5854).TableRow, obj4, "security");
             cResult[23] = pushScreen;
             cResult[24] = tmp47;
             let tmp45 = tmp47;
@@ -841,8 +841,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const _Symbol8 = Symbol;
         if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj5 = { IconComponent: TableRowGroup(9543).HammerIcon };
-          const tmp35 = closure_15(TableRowGroup(5822).TableRow.Icon, obj5);
+          const obj5 = { IconComponent: TableRowGroup(9575).HammerIcon };
+          const tmp35 = closure_15(TableRowGroup(5854).TableRow.Icon, obj5);
           cResult[18] = tmp35;
           let arr7 = tmp35;
         } else {
@@ -857,7 +857,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       return pushScreen(constants2.BANS);
                     }
           };
-          const tmp38 = closure_15(TableRowGroup(5822).TableRow, obj6, "bans");
+          const tmp38 = closure_15(TableRowGroup(5854).TableRow, obj6, "bans");
           cResult[19] = pushScreen;
           cResult[20] = tmp38;
           let tmp36 = tmp38;
@@ -878,8 +878,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const _Symbol6 = Symbol;
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj7 = { IconComponent: TableRowGroup(5757).ClipboardListIcon };
-        const tmp26 = closure_15(TableRowGroup(5822).TableRow.Icon, obj7);
+        const obj7 = { IconComponent: TableRowGroup(5789).ClipboardListIcon };
+        const tmp26 = closure_15(TableRowGroup(5854).TableRow.Icon, obj7);
         cResult[14] = tmp26;
         let arr8 = tmp26;
       } else {
@@ -894,7 +894,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   return pushScreen(constants2.AUDIT_LOG);
                 }
         };
-        const tmp29 = closure_15(TableRowGroup(5822).TableRow, obj8, "auditlogs");
+        const tmp29 = closure_15(TableRowGroup(5854).TableRow, obj8, "auditlogs");
         cResult[15] = pushScreen;
         cResult[16] = tmp29;
         let tmp27 = tmp29;
@@ -915,8 +915,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj9 = { IconComponent: TableRowGroup(17930).ModerationIcon };
-      const tmp8 = closure_15(TableRowGroup(5822).TableRow.Icon, obj9);
+      const obj9 = { IconComponent: TableRowGroup(17940).ModerationIcon };
+      const tmp8 = closure_15(TableRowGroup(5854).TableRow.Icon, obj9);
       cResult[6] = tmp8;
       let tmp6 = tmp8;
     } else {
@@ -931,7 +931,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return pushScreen(constants2.MODERATION);
             }
       };
-      const tmp11 = closure_15(TableRowGroup(5822).TableRow, obj10, "moderation");
+      const tmp11 = closure_15(TableRowGroup(5854).TableRow, obj10, "moderation");
       cResult[7] = pushScreen;
       cResult[8] = tmp11;
       let tmp9 = tmp11;
@@ -950,8 +950,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol4 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj11 = { IconComponent: TableRowGroup(9545).RobotIcon };
-      const tmp17 = closure_15(TableRowGroup(5822).TableRow.Icon, obj11);
+      const obj11 = { IconComponent: TableRowGroup(9577).RobotIcon };
+      const tmp17 = closure_15(TableRowGroup(5854).TableRow.Icon, obj11);
       cResult[10] = tmp17;
       let arr10 = tmp17;
     } else {
@@ -966,7 +966,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return pushScreen(constants2.GUILD_AUTOMOD);
             }
       };
-      const tmp20 = closure_15(TableRowGroup(5822).TableRow, obj12, "automod");
+      const tmp20 = closure_15(TableRowGroup(5854).TableRow, obj12, "automod");
       cResult[11] = pushScreen;
       cResult[12] = tmp20;
       let tmp18 = tmp20;
@@ -1076,7 +1076,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp21 = cResult[14];
           }
           if (cResult[15] !== arr) {
-            TableRowGroup = TableRowGroup(5903).TableRowGroup;
+            TableRowGroup = TableRowGroup(5935).TableRowGroup;
             const obj2 = { title: tmp21, hasIcons: true, children: arr };
             tmp = closure_15(TableRowGroup, obj2);
             cResult[15] = arr;
@@ -1101,8 +1101,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const _Symbol2 = Symbol;
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj3 = { IconComponent: TableRowGroup(10676).AnalyticsIcon };
-          const tmp15 = closure_15(TableRowGroup(5822).TableRow.Icon, obj3);
+          const obj3 = { IconComponent: TableRowGroup(10712).AnalyticsIcon };
+          const tmp15 = closure_15(TableRowGroup(5854).TableRow.Icon, obj3);
           cResult[11] = tmp15;
           let tmp13 = tmp15;
         } else {
@@ -1117,7 +1117,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       return pushScreen(constants2.ANALYTICS);
                     }
           };
-          const tmp18 = closure_15(TableRowGroup(5822).TableRow, obj4, "analytics");
+          const tmp18 = closure_15(TableRowGroup(5854).TableRow, obj4, "analytics");
           cResult[12] = pushScreen;
           cResult[13] = tmp18;
           let tmp16 = tmp18;
@@ -1139,16 +1139,16 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         items.push(cResult[9]);
       }
     }
-    const TableRow = TableRowGroup(5822).TableRow;
+    const TableRow = TableRowGroup(5854).TableRow;
     const obj5 = { label: null, arrow: true, icon: null, onPress: null };
     let TreehouseIcon = TableRowGroup(1119).intl;
     let Icon = TreehouseIcon.string;
     let str = TableRowGroup(1119).t;
     if (tmp3) {
       obj5.label = Icon(str.nRtNqn);
-      Icon = TableRowGroup(5822).TableRow.Icon;
+      Icon = TableRowGroup(5854).TableRow.Icon;
       const obj6 = { IconComponent: null };
-      TreehouseIcon = TableRowGroup(15860).TreehouseIcon;
+      TreehouseIcon = TableRowGroup(15870).TreehouseIcon;
       obj6.IconComponent = TreehouseIcon;
       obj5.icon = tmp6(Icon, obj6);
       obj5.onPress = function onPress() {
@@ -1158,8 +1158,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp6Result = tmp6(TableRow, obj5, "community-overview");
     } else {
       obj5.label = Icon(`community-overview`.ElKTeb);
-      const obj7 = { IconComponent: TableRowGroup(15860).TreehouseIcon };
-      obj5.icon = tmp6(TableRowGroup(5822).TableRow.Icon, obj7);
+      const obj7 = { IconComponent: TableRowGroup(15870).TreehouseIcon };
+      obj5.icon = tmp6(TableRowGroup(5854).TableRow.Icon, obj7);
       obj5.onPress = function onPress() {
         return pushScreen(constants2.COMMUNITY_INTRO, {});
       };
@@ -1183,12 +1183,12 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj2 = { label: null, arrow: true, icon: null, onPress: null };
       const intl2 = pushScreen(1119).intl;
       obj2.label = intl2.string(pushScreen(1119).t["0wWfUG"]);
-      const obj3 = { IconComponent: pushScreen(10676).AnalyticsIcon };
-      obj2.icon = closure_15(pushScreen(5822).TableRow.Icon, obj3);
+      const obj3 = { IconComponent: pushScreen(10712).AnalyticsIcon };
+      obj2.icon = closure_15(pushScreen(5854).TableRow.Icon, obj3);
       obj2.onPress = function onPress() {
         return pushScreen(constants2.ANALYTICS);
       };
-      items.push(closure_15(pushScreen(5822).TableRow, obj2, "analytics"));
+      items.push(closure_15(pushScreen(5854).TableRow, obj2, "analytics"));
     }
     let tmp9 = null;
     if (0 !== items.length) {
@@ -1196,21 +1196,21 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const intl3 = pushScreen(1119).intl;
       obj4.title = intl3.string(pushScreen(1119).t["1g9A/f"]);
       obj4.children = items;
-      tmp9 = closure_15(pushScreen(5903).TableRowGroup, obj4);
+      tmp9 = closure_15(pushScreen(5935).TableRowGroup, obj4);
     }
     return tmp9;
   } else {
     let TreehouseIcon = dependencyMap;
-    const TableRow = pushScreen(5822).TableRow;
+    const TableRow = pushScreen(5854).TableRow;
     const obj = { label: null, arrow: true, icon: null, onPress: null };
     const intl = pushScreen(1119).intl;
     let Icon = intl.string;
     let t = pushScreen(1119).t;
     if (hasItem) {
       obj.label = Icon(t.nRtNqn);
-      Icon = tmp3(5822).TableRow.Icon;
+      Icon = tmp3(5854).TableRow.Icon;
       const obj5 = { IconComponent: null };
-      TreehouseIcon = tmp3(15860).TreehouseIcon;
+      TreehouseIcon = tmp3(15870).TreehouseIcon;
       obj5.IconComponent = TreehouseIcon;
       obj.icon = tmp2(Icon, obj5);
       obj.onPress = function onPress() {
@@ -1219,8 +1219,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp2Result = tmp2(TableRow, obj, "community-overview");
     } else {
       obj.label = Icon(t.ElKTeb);
-      const obj6 = { IconComponent: tmp3(15860).TreehouseIcon };
-      obj.icon = tmp2(tmp3(5822).TableRow.Icon, obj6);
+      const obj6 = { IconComponent: tmp3(15870).TreehouseIcon };
+      obj.icon = tmp2(tmp3(5854).TableRow.Icon, obj6);
       obj.onPress = function onPress() {
         return pushScreen(constants2.COMMUNITY_INTRO, {});
       };
@@ -1235,9 +1235,9 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   guild = guild.guild;
   ({ contentContainerStyle, updateErrors } = guild);
   let obj = guild(568);
-  const token = guild(4462).useToken(updateErrors(580).modules.mobile.TABLE_ROW_PADDING);
+  const token = guild(4494).useToken(updateErrors(580).modules.mobile.TABLE_ROW_PADDING);
   const tmp5 = closure_18();
-  let obj2 = guild(4462);
+  let obj2 = guild(4494);
   const navigation = guild(1488).useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [GuildChannelStore];
@@ -1346,9 +1346,9 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   ({ isGuildAdmin, canManageGuild, canManageRoles, canManageBans, canManageGuildExpressions, canManageChannels, canViewAuditLog, canManageWebhooks, canViewGuildAnalytics } = stateFromStoresObject);
   const obj6 = noop;
   const tmpResult4 = guild(504);
-  guild(17932).useChannelsAllowedToUnlink(guild.id).length > 0;
-  const tmpResult5 = guild(17932);
-  const canManageGuildRoleSubscriptions = guild(7504).useCanManageGuildRoleSubscriptions(guild);
+  guild(17942).useChannelsAllowedToUnlink(guild.id).length > 0;
+  const tmpResult5 = guild(17942);
+  const canManageGuildRoleSubscriptions = guild(7536).useCanManageGuildRoleSubscriptions(guild);
   if (cResult[10] === canManageGuild) {
     class O {
       constructor() {
@@ -1514,9 +1514,9 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
 }) : ((guild) => {
   guild = guild.guild;
   const updateErrors = guild.updateErrors;
-  const token = guild(4462).useToken(updateErrors(580).modules.mobile.TABLE_ROW_PADDING);
+  const token = guild(4494).useToken(updateErrors(580).modules.mobile.TABLE_ROW_PADDING);
   const tmp5 = closure_18();
-  let obj = guild(4462);
+  let obj = guild(4494);
   const navigation = guild(1488).useNavigation();
   let obj2 = guild(1488);
   let items = [GuildChannelStore];
@@ -1561,13 +1561,13 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   ({ canManageGuild, isGuildAdmin, canManageRoles, canManageBans, canManageGuildExpressions, canManageChannels, canViewAuditLog, canManageWebhooks, canViewGuildAnalytics } = stateFromStoresObject);
   const obj4 = guild(504);
   const obj5 = noop;
-  const obj6 = guild(17932);
-  const tmp11 = guild(17932).useChannelsAllowedToUnlink(guild.id).length > 0;
-  const canManageGuildRoleSubscriptions = guild(7504).useCanManageGuildRoleSubscriptions(guild);
+  const obj6 = guild(17942);
+  const tmp11 = guild(17942).useChannelsAllowedToUnlink(guild.id).length > 0;
+  const canManageGuildRoleSubscriptions = guild(7536).useCanManageGuildRoleSubscriptions(guild);
   let result = canManageGuild;
   if (canManageGuild) {
-    result = tmp(7511).isGuildOfficialMessagesEnabled(guild, "GuildSettingsModalLanding");
-    const tmpResult = tmp(7511);
+    result = tmp(7543).isGuildOfficialMessagesEnabled(guild, "GuildSettingsModalLanding");
+    const tmpResult = tmp(7543);
   }
   const items3 = [updateErrors.message];
   const layoutEffect = obj5.useLayoutEffect(() => {
@@ -1580,7 +1580,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   obj8.contentContainerStyle = items4;
   const obj9 = { style: { paddingHorizontal: token }, spacing: updateErrors(580).space.PX_24, children: null };
   const items5 = [
-    closure_15(updateErrors(17323), {
+    closure_15(updateErrors(17333), {
       iconProps: {
         onUpload(icon) {
           GuildSettingsActionCreatorsDefault.updateIcon(guild.id, icon);
@@ -1611,13 +1611,13 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let tmp17Result = canManageGuildRoleSubscriptions;
   if (canManageGuildRoleSubscriptions) {
     const obj11 = { guild, pushScreen: callback };
-    tmp17Result = tmp17(tmp3(17933), obj11);
+    tmp17Result = tmp17(tmp3(17943), obj11);
   }
   const obj12 = { children: null };
   items5[6] = tmp17Result;
   obj9.children = items5;
-  obj8.children = closure_16(guild(5186).Stack, obj9);
-  const items6 = [closure_15(guild(8876).Form, obj8), closure_15(guild(7286).NavScrim, {})];
+  obj8.children = closure_16(guild(5218).Stack, obj9);
+  const items6 = [closure_15(guild(8908).Form, obj8), closure_15(guild(7318).NavScrim, {})];
   obj12.children = items6;
   return closure_16(closure_17, obj12);
 });

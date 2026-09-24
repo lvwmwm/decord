@@ -1,13 +1,13 @@
-// Module ID: 6642
-// Function ID: 6643
+// Module ID: 6674
+// Function ID: 6675
 // Name: SafetyShieldLeft3dIllustration
-// Dependencies: [21, 558, 568, 6643, 5802, 2]
+// Dependencies: [21, 558, 568, 6675, 5834, 2]
 
-// Module 6642 (SafetyShieldLeft3dIllustration)
+// Module 6674 (SafetyShieldLeft3dIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6643 from "module_6643" /* 6643 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6675 from "module_6675" /* 6675 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const SafetyShieldLeft3dIllustration = ReactCompilerGating.isReactCompile
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6643 };
+    const obj2 = { uri: _modDef6675 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const SafetyShieldLeft3dIllustration = ReactCompilerGating.isReactCompile
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6643 };
+  const obj2 = { uri: _modDef6675 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

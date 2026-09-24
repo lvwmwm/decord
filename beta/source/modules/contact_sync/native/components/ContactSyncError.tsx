@@ -1,18 +1,18 @@
-// Module ID: 12841
-// Function ID: 12842
+// Module ID: 12877
+// Function ID: 12878
 // Name: ContactSyncError
-// Dependencies: [19, 21, 4758, 558, 568, 4497, 4759, 4754, 2]
+// Dependencies: [19, 21, 4790, 558, 568, 4529, 4791, 4786, 2]
 
-// Module 12841 (ContactSyncError)
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
+// Module 12877 (ContactSyncError)
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ container: { justifyContent: "center" }, error: { paddingHorizontal: 16, textAlign: "center" } });
 const __initData = { code: "function ContactSyncErrorTsx1(){const{withTiming,hasError,ERROR_HEIGHT}=this.__closure;return{height:withTiming(hasError?ERROR_HEIGHT:0)};}" };
 const __initData2 = { code: "function ContactSyncErrorTsx2(){const{withTiming,hasError,ERROR_HEIGHT}=this.__closure;return{height:withTiming(hasError?ERROR_HEIGHT:0)};}" };
@@ -65,7 +65,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp11 = tmp14;
       }
       const obj4 = { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp4.error, children: error };
-      const tmp10 = jsx(tmp(4754).Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp4.error, children: error });
+      const tmp10 = jsx(tmp(4786).Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp4.error, children: error });
       cResult[4] = error;
       cResult[5] = tmp4.error;
       cResult[6] = tmp10;

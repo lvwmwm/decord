@@ -1,13 +1,13 @@
-// Module ID: 6208
-// Function ID: 6209
+// Module ID: 6240
+// Function ID: 6241
 // Name: ExperimentalCustomUrlAbstractUI
-// Dependencies: [21, 558, 568, 6209, 5802, 2]
+// Dependencies: [21, 558, 568, 6241, 5834, 2]
 
-// Module 6208 (ExperimentalCustomUrlAbstractUI)
+// Module 6240 (ExperimentalCustomUrlAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6209 from "module_6209" /* 6209 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6241 from "module_6241" /* 6241 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const ExperimentalCustomUrlAbstractUI = ReactCompilerGating.isReactCompil
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6209 };
+    const obj2 = { uri: _modDef6241 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const ExperimentalCustomUrlAbstractUI = ReactCompilerGating.isReactCompil
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6209 };
+  const obj2 = { uri: _modDef6241 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

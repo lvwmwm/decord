@@ -1,14 +1,14 @@
-// Module ID: 11702
-// Function ID: 11703
+// Module ID: 11738
+// Function ID: 11739
 // Name: UserProfileSection
-// Dependencies: [109, 19, 17, 21, 4758, 580, 558, 568, 4471, 7431, 4608, 8882, 4754, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 580, 558, 568, 4503, 7463, 4640, 8914, 4786, 2]
 
-// Module 11702 (UserProfileSection)
+// Module 11738 (UserProfileSection)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import native from "native" /* 4471 */;
-import ColorUtils from "ColorUtils" /* 4608 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7431 */;
+import native from "native" /* 4503 */;
+import ColorUtils from "ColorUtils" /* 4640 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7463 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,7 +17,7 @@ let closure_2 = ["title", "headerIcon", "trailingIcon", "showContainer", "childr
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { titleContainer: { flexDirection: "row", marginBottom: 12, justifyContent: "space-between" }, title: { flexDirection: "row" }, section: { marginHorizontal: 12, marginTop: 12, marginBottom: 8 }, contentContainer: { borderWidth: 1, borderRadius: nativeDefault.radii.sm, borderColor: nativeDefault.colors.BORDER_SUBTLE } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -123,7 +123,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 const obj4 = { style: tmp14.titleContainer, children: null };
                 const obj5 = { style: tmp14.title, children: null };
                 const obj6 = { variant: "eyebrow", accessibilityRole: "header", children: tmp9 };
-                const items1 = [hasOwnProperty(tmp(4754).Text, obj6), tmp5];
+                const items1 = [hasOwnProperty(tmp(4786).Text, obj6), tmp5];
                 obj5.children = items1;
                 const items2 = [timestampProducer(View, obj5), tmp10];
                 obj4.children = items2;
@@ -164,7 +164,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[12] = borderColor;
   }
   const tmpResult3 = useProfileThemeValues;
-  borderColor = ColorUtils.hexOpacityToRgba(tmp(8882).DIVIDER_COLORS[theme], contentContainer.dividerOpacity);
+  borderColor = ColorUtils.hexOpacityToRgba(tmp(8914).DIVIDER_COLORS[theme], contentContainer.dividerOpacity);
 }) : ((title) => {
   title = title.title;
   ({ headerIcon, trailingIcon, showContainer, children, style } = title);
@@ -177,8 +177,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const merged1 = Object.assign(tmp2.contentContainer);
   if (null != primaryColor) {
     if (null != profileThemeValues) {
-      let borderColor = tmp3(4608).hexOpacityToRgba(tmp3(8882).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
-      const tmp3Result = tmp3(4608);
+      let borderColor = tmp3(4640).hexOpacityToRgba(tmp3(8914).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+      const tmp3Result = tmp3(4640);
     }
     obj3.borderColor = borderColor;
     const obj4 = { style: null };
@@ -190,7 +190,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj5 = { style: tmp2.titleContainer, children: null };
       const obj6 = { style: tmp2.title, children: null };
       const obj7 = { variant: "eyebrow", accessibilityRole: "header", children: title };
-      const items1 = [hasOwnProperty(tmp3(4754).Text, obj7), headerIcon];
+      const items1 = [hasOwnProperty(tmp3(4786).Text, obj7), headerIcon];
       obj6.children = items1;
       const items2 = [tmp8(tmp9, obj6), trailingIcon];
       obj5.children = items2;

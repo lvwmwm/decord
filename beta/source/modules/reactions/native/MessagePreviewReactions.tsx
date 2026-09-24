@@ -1,16 +1,16 @@
-// Module ID: 10555
-// Function ID: 10556
+// Module ID: 10591
+// Function ID: 10592
 // Name: MessagePreviewReactions
-// Dependencies: [19, 7841, 7845, 8636, 21, 558, 568, 504, 7409, 7429, 10544, 2]
+// Dependencies: [19, 7873, 7877, 8668, 21, 558, 568, 504, 7441, 7461, 10580, 2]
 
-// Module 10555 (MessagePreviewReactions)
+// Module 10591 (MessagePreviewReactions)
 import c from "c" /* 568 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7409 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7441 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
 import noop from "module_19" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7841 */;
-import ConversationsStore from "ConversationsStore" /* 7845 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8636 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7873 */;
+import ConversationsStore from "ConversationsStore" /* 7877 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8668 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
 
@@ -95,7 +95,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             return tmp9;
           }
           const obj2 = { value: analyticsLocations, children: cResult[4] };
-          const tmp11 = jsx(tmp(7409).AnalyticsLocationProvider, { value: analyticsLocations, children: cResult[4] });
+          const tmp11 = jsx(tmp(7441).AnalyticsLocationProvider, { value: analyticsLocations, children: cResult[4] });
           cResult[5] = analyticsLocations;
           cResult[6] = cResult[4];
           cResult[7] = tmp11;
@@ -107,9 +107,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let num = 0;
   if (arr.length > 0) {
     const obj3 = { channelId, messageId, emoji, reactions: arr };
-    let tmp7 = jsx(tmp(10544).MessageReactionsContent, { channelId, messageId, emoji, reactions: arr });
+    let tmp7 = jsx(tmp(10580).MessageReactionsContent, { channelId, messageId, emoji, reactions: arr });
   } else {
-    tmp7 = jsx(tmp(10544).MessageReactionsEmpty, {});
+    tmp7 = jsx(tmp(10580).MessageReactionsEmpty, {});
   }
   cResult[num] = channelId;
   cResult[1] = emoji;
@@ -123,9 +123,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = { value: useAnalyticsLocationsDefault(AnalyticsLocationDefault.MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null };
   if (arr.length > 0) {
     const obj2 = { channelId, messageId, emoji: emoji.emoji, reactions: arr };
-    let tmp3Result = tmp3(tmp4(10544).MessageReactionsContent, obj2);
+    let tmp3Result = tmp3(tmp4(10580).MessageReactionsContent, obj2);
   } else {
-    tmp3Result = tmp3(tmp4(10544).MessageReactionsEmpty, {});
+    tmp3Result = tmp3(tmp4(10580).MessageReactionsEmpty, {});
   }
   obj.children = tmp3Result;
   return jsx(useAnalyticsLocations.AnalyticsLocationProvider, { value: useAnalyticsLocationsDefault(AnalyticsLocationDefault.MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null });

@@ -1,15 +1,15 @@
-// Module ID: 10467
-// Function ID: 10468
+// Module ID: 10506
+// Function ID: 10507
 // Name: trackOnEmojiPickerOpened
-// Dependencies: [19, 5678, 2045, 2099, 1078, 1379, 1222, 558, 568, 10444, 10445, 4938, 4417, 2]
+// Dependencies: [19, 5710, 2045, 2099, 1078, 1379, 1222, 558, 568, 10483, 10484, 4970, 4449, 2]
 
-// Module 10467 (trackOnEmojiPickerOpened)
-import EmojiUtilsDefault from "EmojiUtils" /* 4417 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4938 */;
-import useTopAndNewlyAddedEmojis from "useTopAndNewlyAddedEmojis" /* 10444 */;
-import useEmojiHotrail from "useEmojiHotrail" /* 10445 */;
+// Module 10506 (trackOnEmojiPickerOpened)
+import EmojiUtilsDefault from "EmojiUtils" /* 4449 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4970 */;
+import useTopAndNewlyAddedEmojis from "useTopAndNewlyAddedEmojis" /* 10483 */;
+import useEmojiHotrail from "useEmojiHotrail" /* 10484 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5678 */;
+import EmojiStore from "EmojiStore" /* 5710 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 

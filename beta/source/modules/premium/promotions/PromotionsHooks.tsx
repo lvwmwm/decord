@@ -1,17 +1,17 @@
-// Module ID: 13822
-// Function ID: 13823
+// Module ID: 13858
+// Function ID: 13859
 // Name: PromotionsHooks
-// Dependencies: [19, 1376, 10963, 1378, 558, 568, 504, 13693, 4418, 577, 13691, 2]
+// Dependencies: [19, 1376, 10999, 1378, 558, 568, 504, 13729, 4450, 577, 13727, 2]
 
-// Module 13822 (PromotionsHooks)
+// Module 13858 (PromotionsHooks)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
-import PromotionUtils from "PromotionUtils" /* 13693 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4450 */;
+import PromotionUtils from "PromotionUtils" /* 13729 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
-import PromotionsStore from "PromotionsStore" /* 10963 */;
+import PromotionsStore from "PromotionsStore" /* 10999 */;
 
 const require = globalThis.__r;
 
@@ -105,7 +105,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (tmp) {
       let result1 = PromotionUtils.shouldShowOutboundPromotionOnPlatform(id);
       if (result1) {
-        const result = tmp2(13693).isDedicatedSurfacePromotion(id);
+        const result = tmp2(13729).isDedicatedSurfacePromotion(id);
         let flag = !result;
         if (!result) {
           flag = true;
@@ -116,7 +116,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           obj3 = c1;
         }
         result1 = flag;
-        const tmp2Result = tmp2(13693);
+        const tmp2Result = tmp2(13729);
       }
       tmp = result1;
       tmp2 = require;
@@ -159,7 +159,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (tmp) {
         let result1 = PromotionUtils.shouldShowOutboundPromotionOnPlatform(id);
         if (result1) {
-          const result = tmp2(13693).isDedicatedSurfacePromotion(id);
+          const result = tmp2(13729).isDedicatedSurfacePromotion(id);
           flag = !result;
           if (!result) {
             flag = true;
@@ -170,7 +170,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             obj3 = set;
           }
           result1 = flag;
-          const tmp2Result = tmp2(13693);
+          const tmp2Result = tmp2(13729);
         }
         tmp = result1;
         tmp2 = require;

@@ -1,19 +1,19 @@
-// Module ID: 16423
-// Function ID: 16424
+// Module ID: 16433
+// Function ID: 16434
 // Name: HappeningNowCardVoice
-// Dependencies: [19, 17, 7900, 1376, 4777, 15555, 1078, 21, 4758, 1245, 13179, 1984, 16406, 15556, 5321, 13335, 16416, 558, 568, 8336, 12, 1374, 504, 4910, 1119, 2]
+// Dependencies: [19, 17, 7932, 1376, 4809, 15565, 1078, 21, 4790, 1245, 13215, 1984, 16416, 15566, 5353, 13371, 16426, 558, 568, 8368, 12, 1374, 504, 4942, 1119, 2]
 
-// Module 16423 (HappeningNowCardVoice)
+// Module 16433 (HappeningNowCardVoice)
 import _modDef12 from "module_12" /* 12 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
 import noop from "module_19" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7900 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7932 */;
 import UserStore from "UserStore" /* 1376 */;
-import VoiceStateStore from "VoiceStateStore" /* 4777 */;
+import VoiceStateStore from "VoiceStateStore" /* 4809 */;
 
 require = fn;
 function formatVoiceActivityTitle(arr, guildId) {
@@ -35,11 +35,11 @@ function formatVoiceActivityTitle(arr, guildId) {
   }
 }
 const View = fn(17).View;
-let closure_8 = fn(15555).HappeningNowCardTrackingType;
+let closure_8 = fn(15565).HappeningNowCardTrackingType;
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_12 = createStyles.createStyles({ content: { flexShrink: 1 }, avatars: { marginRight: 12 } });
 const ReactCompilerGating = fn(558);
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {

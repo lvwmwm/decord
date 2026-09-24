@@ -1,18 +1,18 @@
-// Module ID: 16248
-// Function ID: 16249
+// Module ID: 16258
+// Function ID: 16259
 // Name: VEVOOSlider
-// Dependencies: [19, 21, 4758, 1368, 580, 558, 568, 8554, 2]
+// Dependencies: [19, 21, 4790, 1368, 580, 558, 568, 8586, 2]
 
-// Module 16248 (VEVOOSlider)
+// Module 16258 (VEVOOSlider)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import PlatformUtils2 from "PlatformUtils" /* 1368 */;
-import _modDef8554 from "module_8554" /* 8554 */;
+import _modDef8586 from "module_8586" /* 8586 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 const PlatformUtils = fn(1368);
 let num = 0;
 if (PlatformUtils.isAndroid()) {
@@ -71,7 +71,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((initia
       }
     }
     const obj3 = { style: tmp7, disabled, value: current, minimumValue: 0, maximumValue: 1, minimumTrackTintColor: nativeDefault.unsafe_rawColors.BRAND_500, maximumTrackTintColor: nativeDefault.unsafe_rawColors.PRIMARY_400, onValueChange, onResponderGrant: tmp10 };
-    const tmp15 = jsx(_modDef8554, { style: tmp7, disabled, value: current, minimumValue: 0, maximumValue: 1, minimumTrackTintColor: nativeDefault.unsafe_rawColors.BRAND_500, maximumTrackTintColor: nativeDefault.unsafe_rawColors.PRIMARY_400, onValueChange, onResponderGrant: tmp10 });
+    const tmp15 = jsx(_modDef8586, { style: tmp7, disabled, value: current, minimumValue: 0, maximumValue: 1, minimumTrackTintColor: nativeDefault.unsafe_rawColors.BRAND_500, maximumTrackTintColor: nativeDefault.unsafe_rawColors.PRIMARY_400, onValueChange, onResponderGrant: tmp10 });
     cResult[6] = disabled;
     cResult[7] = onValueChange;
     cResult[8] = tmp7;
@@ -101,7 +101,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((initia
   items[1] = { opacity: num };
   const current = initialValue.current;
   obj.value = current;
-  const tmp5 = _modDef8554;
+  const tmp5 = _modDef8586;
   let fn;
   if (obj2.isAndroid()) {
     fn = () => true;

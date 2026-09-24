@@ -1,18 +1,18 @@
-// Module ID: 17076
-// Function ID: 17077
+// Module ID: 17086
+// Function ID: 17087
 // Name: VibegrationsTraceFormat
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 17077, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 17087, 2]
 
-// Module 17076 (VibegrationsTraceFormat)
+// Module 17086 (VibegrationsTraceFormat)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import vibegrations_VibegrationsTraceFormat from "vibegrations/VibegrationsTraceFormat" /* 17077 */;
+import vibegrations_VibegrationsTraceFormat from "vibegrations/VibegrationsTraceFormat" /* 17087 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let obj2 = { model: { color: nativeDefault.colors.TEXT_BRAND }, subagent: null, context: null, tool: null, delegated: null };
 const obj3 = { color: nativeDefault.colors.TEXT_BRAND };
 obj2.subagent = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE };
@@ -23,7 +23,7 @@ obj2.tool = { color: nativeDefault.colors.TEXT_MUTED };
 const obj6 = { color: nativeDefault.colors.TEXT_MUTED };
 obj2.delegated = { color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
 const styles = createStyles.createStyles(obj2);
-createStyles = fn(4758);
+createStyles = fn(4790);
 const obj9 = { model: null, subagent: null, context: null, tool: null, delegated: null };
 const obj7 = { color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
 obj9.model = { backgroundColor: nativeDefault.colors.TEXT_BRAND };
@@ -36,7 +36,7 @@ obj9.tool = { backgroundColor: nativeDefault.colors.TEXT_MUTED };
 const obj13 = { backgroundColor: nativeDefault.colors.TEXT_MUTED };
 obj9.delegated = { backgroundColor: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
 const styles1 = createStyles.createStyles(obj9);
-createStyles = fn(4758);
+createStyles = fn(4790);
 const obj16 = { dot: { width: 8, height: 8, borderRadius: 4 }, started: null, ok: null, error: null };
 const obj14 = { backgroundColor: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
 obj16.started = { backgroundColor: nativeDefault.colors.STATUS_WARNING };

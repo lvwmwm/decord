@@ -1,12 +1,12 @@
-// Module ID: 8002
-// Function ID: 8003
+// Module ID: 8034
+// Function ID: 8035
 // Name: BackgroundTaskManager
-// Dependencies: [5, 17, 1368, 8003, 8005, 2]
+// Dependencies: [5, 17, 1368, 8035, 8037, 2]
 // Exports: backgroundify, endBackgroundTask
 
-// Module 8002 (BackgroundTaskManager)
+// Module 8034 (BackgroundTaskManager)
 import PlatformUtils2 from "PlatformUtils" /* 1368 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8003 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8035 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -17,7 +17,7 @@ function startBackgroundTask(arg0) {
       return promise;
     } else {
       ({ title, content } = arg0);
-      const obj3 = { title, content, priority: tmp(8005).ServiceNotificationPriority.MEDIUM, type: tmp(8005).ServiceNotificationType.FILE_UPLOAD, usesGateway: false };
+      const obj3 = { title, content, priority: tmp(8037).ServiceNotificationPriority.MEDIUM, type: tmp(8037).ServiceNotificationType.FILE_UPLOAD, usesGateway: false };
       return ForegroundServiceManagerDefault.addServiceHandler(obj3);
     }
   } else {

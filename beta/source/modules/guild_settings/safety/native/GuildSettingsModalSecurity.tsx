@@ -1,15 +1,15 @@
-// Module ID: 18040
-// Function ID: 18041
+// Module ID: 18050
+// Function ID: 18051
 // Name: GuildSettingsModalSecurity
-// Dependencies: [19, 17, 2063, 2067, 1376, 9834, 1078, 21, 4758, 580, 558, 568, 504, 9833, 1119, 4754, 5188, 15058, 7286, 2]
+// Dependencies: [19, 17, 2063, 2067, 1376, 9866, 1078, 21, 4790, 580, 558, 568, 504, 9865, 1119, 4786, 5220, 15067, 7318, 2]
 
-// Module 18040 (GuildSettingsModalSecurity)
+// Module 18050 (GuildSettingsModalSecurity)
 import nativeDefault from "native" /* 580 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9865 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1376 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9834 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9866 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
@@ -19,7 +19,7 @@ const Constants = fn(1078);
 ({ GuildFeatures: c10, MFALevels: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { wrapper: { flex: 1, justifyContent: "space-between", paddingTop: 99 }, center: { alignItems: "center", flexDirection: "column", paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING }, label: { textAlign: "center", marginBottom: 8 }, image: { width: 295, height: 142, marginHorizontal: 35 }, infoWrapper: { marginBottom: 40 }, button: { alignSelf: "center", paddingHorizontal: 16, marginTop: 16 } };
 let closure_15 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -173,7 +173,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               return closure_1_9.getProps().mfaLevel;
             }
           }
-          const tmp30 = closure_12(tmp(4754).Text, { style: null, variant: "text-md/medium", color: "mobile-text-heading-primary", children: null });
+          const tmp30 = closure_12(tmp(4786).Text, { style: null, variant: "text-md/medium", color: "mobile-text-heading-primary", children: null });
           cResult[16] = tmp4.label;
           cResult[17] = tmp30;
           let tmp28 = tmp30;
@@ -353,7 +353,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                               return closure_1_9.getProps().mfaLevel;
                             }
                           }
-                          tmp54[0] = stateFromStores(15058);
+                          tmp54[0] = stateFromStores(15067);
                           tmp54[1] = tmp4.image;
                           const tmp55 = closure_12(closure_5, tmp54);
                           cResult[35] = tmp4.image;
@@ -610,7 +610,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             }
           }
           const obj8 = { text: cResult[19], disabled: !tmp18, variant: tmp35, onPress: tmp22, shrink: true };
-          const tmp38 = closure_12(tmp(5188).Button, obj8);
+          const tmp38 = closure_12(tmp(5220).Button, obj8);
           cResult[20] = tmp22;
           cResult[21] = cResult[19];
           cResult[22] = !tmp18;
@@ -771,7 +771,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const obj5 = { style: tmp.label, variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
   const intl = tmp2(1119).intl;
   obj5.children = intl.string(guildId(1119).t.Wi9LEV);
-  const items4 = [closure_12(guildId(4754).Text, obj5), , ];
+  const items4 = [closure_12(guildId(4786).Text, obj5), , ];
   const obj6 = { style: tmp.button, children: null };
   const intl2 = tmp2(1119).intl;
   const string = intl2.string;
@@ -788,7 +788,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   obj7.variant = str;
   obj7.onPress = callback;
-  obj6.children = closure_12(guildId(5188).Button, obj7);
+  obj6.children = closure_12(guildId(5220).Button, obj7);
   items4[1] = closure_12(closure_4, obj6);
   let hasItem;
   if (stateFromStores != null) {
@@ -800,7 +800,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const obj8 = { variant: "text-sm/normal", color: "text-feedback-critical", children: null };
     const intl3 = tmp2(1119).intl;
     obj8.children = intl3.string(tmp2(1119).t["KG1V/E"]);
-    tmp17Result = tmp17(tmp2(4754).Text, obj8);
+    tmp17Result = tmp17(tmp2(4786).Text, obj8);
   }
   const obj9 = { children: null };
   items4[2] = tmp17Result;
@@ -809,17 +809,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const obj10 = { style: tmp.center, children: null };
   let obj2 = guildId(504);
   const tmp15 = closure_14;
-  const items6 = [closure_12(closure_5, { source: stateFromStores(15058), style: tmp.image, resizeMode: "contain" }), ];
+  const items6 = [closure_12(closure_5, { source: stateFromStores(15067), style: tmp.image, resizeMode: "contain" }), ];
   const obj12 = { style: tmp.infoWrapper, children: null };
   const obj13 = { variant: "text-sm/medium", color: "text-muted", children: null };
   const intl4 = tmp2(1119).intl;
   obj13.children = intl4.format(guildId(1119).t["FK0+iX"], {});
-  obj12.children = closure_12(guildId(4754).Text, obj13);
+  obj12.children = closure_12(guildId(4786).Text, obj13);
   items6[1] = closure_12(closure_4, obj12);
   obj10.children = items6;
   items5[1] = closure_13(closure_4, obj10);
   obj3.children = items5;
-  const items7 = [closure_13(closure_4, obj3), closure_12(guildId(7286).NavScrim, {})];
+  const items7 = [closure_13(closure_4, obj3), closure_12(guildId(7318).NavScrim, {})];
   obj9.children = items7;
   return closure_13(tmp15, obj9);
 });

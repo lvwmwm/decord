@@ -1,15 +1,15 @@
-// Module ID: 17597
-// Function ID: 17598
+// Module ID: 17607
+// Function ID: 17608
 // Name: useConsoleConnectingInfo
-// Dependencies: [4775, 4776, 558, 568, 10020, 565, 17598, 10038, 17599, 17600, 2]
+// Dependencies: [4807, 4808, 558, 568, 10059, 565, 17608, 10077, 17609, 17610, 2]
 
-// Module 17597 (useConsoleConnectingInfo)
-import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 10020 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 10038 */;
-import useShouldDisplayCancelConsoleTransferDefault from "useShouldDisplayCancelConsoleTransfer" /* 17598 */;
-import getConsoleColorDefault from "getConsoleColor" /* 17600 */;
-import GameConsoleStore from "GameConsoleStore" /* 4775 */;
-import SessionsStore from "SessionsStore" /* 4776 */;
+// Module 17607 (useConsoleConnectingInfo)
+import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 10059 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 10077 */;
+import useShouldDisplayCancelConsoleTransferDefault from "useShouldDisplayCancelConsoleTransfer" /* 17608 */;
+import getConsoleColorDefault from "getConsoleColor" /* 17610 */;
+import GameConsoleStore from "GameConsoleStore" /* 4807 */;
+import SessionsStore from "SessionsStore" /* 4808 */;
 
 const require = globalThis.__r;
 
@@ -111,7 +111,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     channelId2 = stateFromStores.channelId;
   }
   if (cResult[5] !== str) {
-    const tmp22 = tmp4(10038)(str);
+    const tmp22 = tmp4(10077)(str);
     class S {
       constructor() {
         str = undefined;
@@ -136,7 +136,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp23 = cResult[10];
       }
       if (cResult[11] !== str) {
-        const tmp26 = tmp4(17600)(str);
+        const tmp26 = tmp4(17610)(str);
         class S {
           constructor() {
             str = undefined;
@@ -249,7 +249,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj3.isConnectingOrConnectedToConsole = channelId2 === arg0 || channelId === arg0;
   obj3.icon = getConsoleIconDefault(str);
   const tmp9 = useShouldDisplayCancelConsoleTransferDefault(stateFromStores);
-  obj3.text = tmp5(17599).getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
+  obj3.text = tmp5(17609).getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
   obj3.color = getConsoleColorDefault(str);
   obj3.displayCancel = tmp9;
   return obj3;

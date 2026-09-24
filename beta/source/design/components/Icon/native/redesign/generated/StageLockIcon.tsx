@@ -1,13 +1,13 @@
-// Module ID: 5316
-// Function ID: 5317
+// Module ID: 5348
+// Function ID: 5349
 // Name: StageLockIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 5256, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 5288, 4493, 2]
 
-// Module 5316 (StageLockIcon)
+// Module 5348 (StageLockIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod5256 from "module_5256" /* 5256 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod5288 from "module_5288" /* 5288 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const StageLockIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(5256);
+    const tmpResult = tmp(5288);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const StageLockIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5256, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5288, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

@@ -1,34 +1,34 @@
-// Module ID: 7406
-// Function ID: 7407
+// Module ID: 7438
+// Function ID: 7439
 // Name: GuildOnboardingConnectionPrompt
-// Dependencies: [19, 17, 5791, 7354, 5500, 2067, 7347, 7348, 7344, 1078, 21, 4758, 5897, 580, 558, 568, 1488, 1616, 504, 7353, 1245, 4938, 7346, 4754, 1119, 7371, 7407, 7429, 5188, 2]
+// Dependencies: [19, 17, 5823, 7386, 5532, 2067, 7379, 7380, 7376, 1078, 21, 4790, 5929, 580, 558, 568, 1488, 1616, 504, 7385, 1245, 4970, 7378, 4786, 1119, 7403, 7439, 7461, 5220, 2]
 
-// Module 7406 (GuildOnboardingConnectionPrompt)
+// Module 7438 (GuildOnboardingConnectionPrompt)
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
-import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7346 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7353 */;
-import ConnectionCardDefault from "ConnectionCard" /* 7407 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
+import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7378 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7385 */;
+import ConnectionCardDefault from "ConnectionCard" /* 7439 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
 import noop from "module_19" /* 19 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5791 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7354 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5823 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7386 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5532 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7347 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7379 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const OnboardingConnectionType = fn(7348).OnboardingConnectionType;
-let closure_12 = fn(7344).GuildOnboardingModalStates;
+const OnboardingConnectionType = fn(7380).OnboardingConnectionType;
+let closure_12 = fn(7376).GuildOnboardingModalStates;
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4758);
-let obj2 = { flex: { flex: 1 }, container: { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5897).NAV_BAR_HEIGHT, marginBottom: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, scrollContainer: null, header: null, title: null, description: null, connectionsList: null, footer: null, footerContent: null };
-let obj3 = { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5897).NAV_BAR_HEIGHT, marginBottom: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+const createStyles = fn(4790);
+let obj2 = { flex: { flex: 1 }, container: { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5929).NAV_BAR_HEIGHT, marginBottom: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, scrollContainer: null, header: null, title: null, description: null, connectionsList: null, footer: null, footerContent: null };
+let obj3 = { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5929).NAV_BAR_HEIGHT, marginBottom: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.scrollContainer = { display: "flex", flexGrow: 1, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 let obj4 = { display: "flex", flexGrow: 1, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.header = { marginBottom: nativeDefault.space.PX_24 };

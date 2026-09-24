@@ -1,30 +1,30 @@
-// Module ID: 15325
-// Function ID: 15326
+// Module ID: 15335
+// Function ID: 15336
 // Name: QuestHomeBounties
-// Dependencies: [32, 19, 17, 7943, 2042, 21, 580, 4758, 558, 568, 2031, 7632, 15326, 577, 15328, 11607, 504, 15335, 15341, 2]
+// Dependencies: [32, 19, 17, 7975, 2042, 21, 580, 4790, 558, 568, 2031, 7664, 15336, 577, 15338, 11643, 504, 15345, 15351, 2]
 
-// Module 15325 (QuestHomeBounties)
+// Module 15335 (QuestHomeBounties)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import nativeDefault from "native" /* 580 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 11607 */;
-import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 15326 */;
-import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 15335 */;
-import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 15341 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 11643 */;
+import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 15336 */;
+import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 15345 */;
+import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 15351 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BountyStore from "BountyStore" /* 7943 */;
+import BountyStore from "BountyStore" /* 7975 */;
 
-const usePopularOrbShopProducts = tmp(15328);
+const usePopularOrbShopProducts = tmp(15338);
 require = fn;
 const View = fn(17).View;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const PX_16 = nativeDefault.space.PX_16;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_11 = createStyles.createStyles(() => {
   const obj = { container: { marginBottom: nativeDefault.space.PX_48 } };
   return obj;
@@ -42,7 +42,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[0] = arg0;
     cResult[1] = items1;
   } else {
-    const tmp6 = _slicedToArray(tmp(7632).useSelectedDismissibleContent(cResult[1]), 2);
+    const tmp6 = _slicedToArray(tmp(7664).useSelectedDismissibleContent(cResult[1]), 2);
     first = tmp6[0];
     importDefault = tmp8;
     dependencyMap = noop.useRef(false);
@@ -103,7 +103,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[8] = items3;
     tmp13 = items3;
     tmp12 = S;
-    const tmpResult = tmp(7632);
+    const tmpResult = tmp(7664);
   }
 }) : ((arg0) => {
   if (arg0) {
@@ -112,7 +112,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     items1 = [];
   }
-  const tmp3 = _slicedToArray(first(7632).useSelectedDismissibleContent(items1), 2);
+  const tmp3 = _slicedToArray(first(7664).useSelectedDismissibleContent(items1), 2);
   first = tmp3[0];
   closure_1 = tmp5;
   dependencyMap = noop.useRef(false);

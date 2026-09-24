@@ -1,21 +1,21 @@
-// Module ID: 9110
-// Function ID: 9111
+// Module ID: 9142
+// Function ID: 9143
 // Name: PremiumFeaturesBackground
-// Dependencies: [109, 19, 7676, 1378, 21, 4758, 580, 558, 568, 676, 5198, 1098, 2]
+// Dependencies: [109, 19, 7708, 1378, 21, 4790, 580, 558, 568, 676, 5230, 1098, 2]
 
-// Module 9110 (PremiumFeaturesBackground)
+// Module 9142 (PremiumFeaturesBackground)
 import nativeDefault from "native" /* 580 */;
 import _modDef676 from "module_676" /* 676 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 let closure_3 = ["premiumType", "opacity", "children", "style"];
-const Gradients = fn(7676).Gradients;
+const Gradients = fn(7708).Gradients;
 const PremiumTypes = fn(1378).PremiumTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { cardContainer: { display: "flex", borderRadius: nativeDefault.radii.lg, flexDirection: "column", justifyContent: "space-between", overflow: "hidden" } };
 let closure_8 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

@@ -1,18 +1,18 @@
-// Module ID: 12843
-// Function ID: 12844
+// Module ID: 12879
+// Function ID: 12880
 // Name: SkipHeaderButton
-// Dependencies: [19, 21, 4758, 580, 558, 568, 1119, 8112, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 1119, 8144, 2]
 
-// Module 12843 (SkipHeaderButton)
+// Module 12879 (SkipHeaderButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import HeaderShared from "HeaderShared" /* 8112 */;
+import HeaderShared from "HeaderShared" /* 8144 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { button: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT }, insideNavigatorButton: { paddingRight: 16 } };
 let closure_3 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -56,7 +56,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
     obj2.labelStyle = tmp8;
     obj2.label = tmp5;
     obj2.accessibilityLabel = tmp5;
-    const tmp14 = jsx(tmp(8112).HeaderTextButton, {});
+    const tmp14 = jsx(tmp(8144).HeaderTextButton, {});
     cResult[5] = tmp5;
     cResult[6] = label;
     cResult[7] = tmp8;

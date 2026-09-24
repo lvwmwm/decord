@@ -1,32 +1,32 @@
-// Module ID: 12845
-// Function ID: 12846
+// Module ID: 12881
+// Function ID: 12882
 // Name: ContactSyncSuggestions
-// Dependencies: [32, 19, 17, 1078, 12846, 21, 4758, 580, 5897, 558, 5195, 568, 4754, 4603, 1401, 1181, 1119, 5819, 4462, 4608, 11, 1245, 8876, 8995, 5198, 1098, 5188, 2]
+// Dependencies: [32, 19, 17, 1078, 12882, 21, 4790, 580, 5929, 558, 5227, 568, 4786, 4635, 1401, 1181, 1119, 5851, 4494, 4640, 11, 1245, 8908, 9027, 5230, 1098, 5220, 2]
 
-// Module 12845 (ContactSyncSuggestions)
+// Module 12881 (ContactSyncSuggestions)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import UserUtils from "UserUtils" /* 4603 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useFontScale from "useFontScale" /* 5195 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5819 */;
-import Form from "Form" /* 8876 */;
+import UserUtils from "UserUtils" /* 4635 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useFontScale from "useFontScale" /* 5227 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5851 */;
+import Form from "Form" /* 8908 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const AnalyticEvents = fn(1078).AnalyticEvents;
-const SuggestedFriendSource = fn(12846).SuggestedFriendSource;
+const SuggestedFriendSource = fn(12882).SuggestedFriendSource;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
-let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingTop: fn(5897).NAV_BAR_HEIGHT + 32, justifyContent: "center" }, header: null, title: null, subtitle: null, list: null, divider: null, linearGradient: null, redesignButton: null, sectionHeader: null };
-let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingTop: fn(5897).NAV_BAR_HEIGHT + 32, justifyContent: "center" };
+const createStyles = fn(4790);
+let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingTop: fn(5929).NAV_BAR_HEIGHT + 32, justifyContent: "center" }, header: null, title: null, subtitle: null, list: null, divider: null, linearGradient: null, redesignButton: null, sectionHeader: null };
+let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingTop: fn(5929).NAV_BAR_HEIGHT + 32, justifyContent: "center" };
 obj2.header = { alignItems: "center", paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_24 };
 obj2.title = { marginBottom: 8, textAlign: "center" };
 obj2.subtitle = { lineHeight: 18, textAlign: "center" };
@@ -87,11 +87,11 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     name = first.name;
   }
   if (cResult[0] !== suggestion.suggested_user) {
-    const userTag = tmp(4603).getUserTag(suggestion.suggested_user);
+    const userTag = tmp(4635).getUserTag(suggestion.suggested_user);
     cResult[0] = suggestion.suggested_user;
     cResult[1] = userTag;
     let tmp6 = userTag;
-    const tmpResult = tmp(4603);
+    const tmpResult = tmp(4635);
   } else {
     tmp6 = cResult[1];
   }
@@ -121,7 +121,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[6] !== tmp6) {
     const obj4 = { variant: "text-xs/medium", color: "text-muted", children: tmp6 };
-    const tmp17 = closure_1_8(tmp(4754).Text, obj4);
+    const tmp17 = closure_1_8(tmp(4786).Text, obj4);
     cResult[6] = tmp6;
     cResult[7] = tmp17;
     let tmp15 = tmp17;
@@ -135,7 +135,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const intl = tmp(1119).intl;
       const obj6 = { count: suggestion.mutual_friends_count };
       obj5.children = intl.format(tmp(1119).t.z7y34b, obj6);
-      tmp19 = closure_1_8(tmp(4754).Text, obj5);
+      tmp19 = closure_1_8(tmp(4786).Text, obj5);
     }
     cResult[8] = suggestion.mutual_friends_count;
     cResult[9] = tmp19;
@@ -173,7 +173,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj7 = { start, end, icon: tmp12, checked: selected, label: tmp8, subLabel: tmp21, onPress: tmp23 };
-      const tmp25 = closure_1_8(tmp(5819).TableCheckboxRow, obj7);
+      const tmp25 = closure_1_8(tmp(5851).TableCheckboxRow, obj7);
       cResult[16] = end;
       cResult[17] = selected;
       cResult[18] = tmp8;
@@ -231,7 +231,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl = tmp3(1119).intl;
     const obj6 = { count: suggestion.mutual_friends_count };
     obj5.children = intl.format(tmp3(1119).t.z7y34b, obj6);
-    tmp8Result = tmp8(tmp3(4754).Text, obj5);
+    tmp8Result = tmp8(tmp3(4786).Text, obj5);
   }
   items[1] = tmp8Result;
   obj3.subLabel = v65535(options, { children: items });
@@ -267,22 +267,22 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestion
     cResult[0] = friendSuggestions;
     cResult[1] = reduced;
   } else {
-    const token = tmp(4462).useToken(onSubmit(580).colors.BACKGROUND_BASE_LOW);
+    const token = tmp(4494).useToken(onSubmit(580).colors.BACKGROUND_BASE_LOW);
     if (cResult[3] !== token) {
-      const hexOpacityToRgbaResult = tmp(4608).hexOpacityToRgba(token, 0);
+      const hexOpacityToRgbaResult = tmp(4640).hexOpacityToRgba(token, 0);
       cResult[3] = token;
       cResult[4] = hexOpacityToRgbaResult;
       let tmp11 = hexOpacityToRgbaResult;
-      const tmpResult3 = tmp(4608);
+      const tmpResult3 = tmp(4640);
     } else {
       tmp11 = cResult[4];
     }
     if (cResult[5] !== token) {
-      const hexOpacityToRgbaResult1 = tmp(4608).hexOpacityToRgba(token, 100);
+      const hexOpacityToRgbaResult1 = tmp(4640).hexOpacityToRgba(token, 100);
       cResult[5] = token;
       cResult[6] = hexOpacityToRgbaResult1;
       let tmp13 = hexOpacityToRgbaResult1;
-      const tmpResult4 = tmp(4608);
+      const tmpResult4 = tmp(4640);
     } else {
       tmp13 = cResult[6];
     }
@@ -412,7 +412,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestion
                 items1 = [, ];
                 items1[0] = jsxs(View, obj9);
                 tmp25 = jsx;
-                tmp26 = f61567;
+                tmp26 = f61618;
                 obj12 = { label: null };
                 tmp27 = closure_0;
                 tmp28 = closure_2;
@@ -420,14 +420,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestion
                 tmp29 = closure_0;
                 tmp30 = closure_2;
                 obj12.label = intl3.string(closure_0(closure_2[16]).t["1uAmCw"]);
-                items1[1] = jsx(f61567, obj12);
+                items1[1] = jsx(f61618, obj12);
                 obj1.children = items1;
                 return jsxs(Fragment, obj1);
               } else {
                 friendSuggestion = item.props.friendSuggestion;
                 tmp32 = closure_4;
                 tmp33 = jsx;
-                tmp34 = f61569;
+                tmp34 = f61620;
                 obj13 = { start: null, end: null, suggestion: null, selected: null, onSelect: null };
                 num = 1;
                 obj13.start = 1 === index;
@@ -439,7 +439,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestion
                 obj13.onSelect = closure_5;
                 tmp31 = jsxs;
                 items2 = [, ];
-                items2[0] = jsx(f61569, obj13);
+                items2[0] = jsx(f61620, obj13);
                 tmp5 = null;
                 if (index < friendSuggestions.length) {
                   tmp = jsx;
@@ -519,7 +519,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestion
     cResult[7] = tmp11;
     cResult[8] = tmp13;
     cResult[9] = items1;
-    const tmpResult = tmp(4462);
+    const tmpResult = tmp(4494);
   }
 }) : ((friendSuggestions) => {
   friendSuggestions = friendSuggestions.friendSuggestions;
@@ -532,16 +532,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestion
     acc[suggested_user.suggested_user.id] = true;
     return acc;
   }, {});
-  const token = friendSuggestions(4462).useToken(onSubmit(580).colors.BACKGROUND_BASE_LOW);
-  let obj = friendSuggestions(4462);
-  let items = [friendSuggestions(4608).hexOpacityToRgba(token, 0), ];
-  let obj2 = friendSuggestions(4608);
-  items[1] = friendSuggestions(4608).hexOpacityToRgba(token, 100);
+  const token = friendSuggestions(4494).useToken(onSubmit(580).colors.BACKGROUND_BASE_LOW);
+  let obj = friendSuggestions(4494);
+  let items = [friendSuggestions(4640).hexOpacityToRgba(token, 0), ];
+  let obj2 = friendSuggestions(4640);
+  items[1] = friendSuggestions(4640).hexOpacityToRgba(token, 100);
   const tmp4 = first(noop.useState(reduced), 2);
   first = tmp4[0];
   noop = tmp4[1];
   let items1 = [first];
-  let obj3 = friendSuggestions(4608);
+  let obj3 = friendSuggestions(4640);
   onSelect = noop.useCallback((arg0) => {
     const obj = {};
     const merged = Object.assign(first);
@@ -609,13 +609,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestion
   obj6.contentContainerStyle = { paddingHorizontal: onSubmit(580).space.PX_16, paddingBottom: tmp6 };
   obj6.data = memo;
   obj6.renderItem = callback1;
-  const items5 = [closure_8(friendSuggestions(8995).FlashList, obj6), , ];
+  const items5 = [closure_8(friendSuggestions(9027).FlashList, obj6), , ];
   let obj8 = { style: tmp.linearGradient, start: null, end: null, pointerEvents: "none", colors: null };
   let obj7 = { paddingHorizontal: onSubmit(580).space.PX_16, paddingBottom: tmp6 };
   obj8.start = friendSuggestions(1098).VerticalGradient.START;
   obj8.end = friendSuggestions(1098).VerticalGradient.END;
   obj8.colors = items;
-  items5[1] = closure_8(onSubmit(5198), obj8);
+  items5[1] = closure_8(onSubmit(5230), obj8);
   const obj9 = { style: tmp.redesignButton, children: null };
   const obj10 = { variant: "primary", size: "lg", text: null, onPress: null, disabled: null };
   let intl = friendSuggestions(1119).intl;
@@ -629,7 +629,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((friendSuggestion
     });
   };
   obj10.disabled = !someResult;
-  obj9.children = closure_8(friendSuggestions(5188).Button, obj10);
+  obj9.children = closure_8(friendSuggestions(5220).Button, obj10);
   items5[2] = closure_8(onSelect, obj9);
   obj5.children = items5;
   return closure_10(onSelect, obj5);

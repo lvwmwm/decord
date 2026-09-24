@@ -1,16 +1,16 @@
-// Module ID: 13334
-// Function ID: 13335
+// Module ID: 13370
+// Function ID: 13371
 // Name: VoicePanelStreamPreview
-// Dependencies: [19, 17, 4780, 502, 21, 4497, 5188, 4758, 580, 558, 568, 10316, 4810, 504, 4759, 4754, 1119, 7320, 2]
+// Dependencies: [19, 17, 4812, 502, 21, 4529, 5220, 4790, 580, 558, 568, 10355, 4842, 504, 4791, 4786, 1119, 7352, 2]
 
-// Module 13334 (VoicePanelStreamPreview)
+// Module 13370 (VoicePanelStreamPreview)
 import nativeDefault from "native" /* 580 */;
-import timing from "timing" /* 4759 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4810 */;
+import timing from "timing" /* 4791 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4842 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4812 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 4497 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 4529 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -20,9 +20,9 @@ const jsxProd = fn(21);
 let ReanimatedRexport = ReanimatedRexport_mod;
 let closure_8 = ReanimatedRexport.createAnimatedComponent(Pressable);
 let ReanimatedRexport = ReanimatedRexport_mod;
-let closure_9 = ReanimatedRexport.createAnimatedComponent(fn(5188).Button);
+let closure_9 = ReanimatedRexport.createAnimatedComponent(fn(5220).Button);
 const OPACITY_TIMING = { duration: 200 };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { roundedCard: null, streamPreviewImage: null, ownStreamTextContainer: null, ownStreamText: null };
 let size = { position: "absolute", alignItems: "center", justifyContent: "center", width: "100%", height: "100%", backgroundColor: nativeDefault.colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND };
 obj.roundedCard = size;
@@ -57,7 +57,7 @@ export const VoicePanelStreamPreview = ReactCompilerGating.isReactCompilerEnable
   if (stream != null) {
     ownerId = stream.ownerId;
   }
-  const previewUrl = stream(10316)(guildId, channelId, ownerId).previewUrl;
+  const previewUrl = stream(10355)(guildId, channelId, ownerId).previewUrl;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ApplicationStreamingStore, AuthenticationStore];
     cResult[0] = items;
@@ -86,7 +86,7 @@ export const VoicePanelStreamPreview = ReactCompilerGating.isReactCompilerEnable
     tmp13 = cResult[2];
     tmp14 = cResult[3];
   }
-  const tmp6 = stream(10316);
+  const tmp6 = stream(10355);
   ownStreamTextContainer = mode(504).useStateFromStores(first, tmp13, tmp14);
   const tmpResult = mode(504);
   class M {
@@ -110,8 +110,8 @@ export const VoicePanelStreamPreview = ReactCompilerGating.isReactCompilerEnable
       return obj1;
     }
   }
-  const tmpResult2 = mode(4497);
-  M.__closure = { mode, withTiming: mode(4759).withTiming, OPACITY_TIMING };
+  const tmpResult2 = mode(4529);
+  M.__closure = { mode, withTiming: mode(4791).withTiming, OPACITY_TIMING };
   M.__workletHash = 8648991604611;
   M.__initData = __initData;
   const animatedStyle = tmpResult2.useAnimatedStyle(M);
@@ -164,7 +164,7 @@ export const VoicePanelStreamPreview = ReactCompilerGating.isReactCompilerEnable
                     }
                   }
                   const obj4 = { style: animatedStyle, layout, children: cResult[14] };
-                  const tmp28 = closure_6(tmp5(7320), obj4);
+                  const tmp28 = closure_6(tmp5(7352), obj4);
                   cResult[15] = animatedStyle;
                   cResult[16] = layout;
                   cResult[17] = cResult[14];
@@ -181,7 +181,7 @@ export const VoicePanelStreamPreview = ReactCompilerGating.isReactCompilerEnable
         const obj6 = { variant: "text-sm/semibold", color: "text-overlay-light", style: tmp4.ownStreamText, children: null };
         const intl2 = tmp(1119).intl;
         obj6.children = intl2.string(tmp(1119).t["ro/HN8"]);
-        obj5.children = tmp21(tmp(4754).Text, obj6);
+        obj5.children = tmp21(tmp(4786).Text, obj6);
         let tmp21Result = tmp21(closure_3, obj5);
       } else {
         const obj7 = { layout, disabled, text: null, size: "sm", variant: "primary-overlay", onPress: null };
@@ -205,7 +205,7 @@ export const VoicePanelStreamPreview = ReactCompilerGating.isReactCompilerEnable
     const obj9 = { uri: previewUrl };
     obj8.source = obj9;
     obj8.style = tmp4.streamPreviewImage;
-    tmp18 = closure_6(tmp5(4497).Image, obj8);
+    tmp18 = closure_6(tmp5(4529).Image, obj8);
   }
   cResult[4] = layout;
   cResult[5] = tmp4.streamPreviewImage;
@@ -229,8 +229,8 @@ export const VoicePanelStreamPreview = ReactCompilerGating.isReactCompilerEnable
   if (stream != null) {
     ownerId = stream.ownerId;
   }
-  const previewUrl = stream(10316)(guildId, channelId, ownerId).previewUrl;
-  const tmp4 = stream(10316);
+  const previewUrl = stream(10355)(guildId, channelId, ownerId).previewUrl;
+  const tmp4 = stream(10355);
   const items = [ApplicationStreamingStore, AuthenticationStore];
   const items1 = [stream];
   const stateFromStores = mode(504).useStateFromStores(items, () => {
@@ -256,8 +256,8 @@ export const VoicePanelStreamPreview = ReactCompilerGating.isReactCompilerEnable
     }
     return obj3;
   };
-  let obj2 = mode(4497);
-  fn.__closure = { mode, withTiming: mode(4759).withTiming, OPACITY_TIMING };
+  let obj2 = mode(4529);
+  fn.__closure = { mode, withTiming: mode(4791).withTiming, OPACITY_TIMING };
   fn.__workletHash = 1723503693792;
   fn.__initData = __initData2;
   const obj4 = { layout, onPress, style: tmp.roundedCard, disabled: null, accessible: false, children: null };
@@ -273,11 +273,11 @@ export const VoicePanelStreamPreview = ReactCompilerGating.isReactCompilerEnable
     const obj6 = { uri: previewUrl };
     obj5.source = obj6;
     obj5.style = tmp.streamPreviewImage;
-    tmp14 = closure_6(tmp2(4497).Image, obj5);
+    tmp14 = closure_6(tmp2(4529).Image, obj5);
   }
   const items2 = [tmp14, ];
   const obj7 = { style: animatedStyle, layout, children: null };
-  let obj3 = { mode, withTiming: mode(4759).withTiming, OPACITY_TIMING };
+  let obj3 = { mode, withTiming: mode(4791).withTiming, OPACITY_TIMING };
   const tmp11 = closure_7;
   const tmp12 = closure_8;
   if (stateFromStores) {
@@ -285,7 +285,7 @@ export const VoicePanelStreamPreview = ReactCompilerGating.isReactCompilerEnable
     const obj9 = { variant: "text-sm/semibold", color: "text-overlay-light", style: tmp.ownStreamText, children: null };
     const intl2 = tmp8(1119).intl;
     obj9.children = intl2.string(tmp8(1119).t["ro/HN8"]);
-    obj8.children = tmp16(tmp8(4754).Text, obj9);
+    obj8.children = tmp16(tmp8(4786).Text, obj9);
     let tmp16Result = tmp16(closure_3, obj8);
   } else {
     const obj10 = { layout, disabled, text: null, size: "sm", variant: "primary-overlay", onPress: null };
@@ -295,7 +295,7 @@ export const VoicePanelStreamPreview = ReactCompilerGating.isReactCompilerEnable
     tmp16Result = tmp16(closure_9, obj10);
   }
   obj7.children = tmp16Result;
-  items2[1] = closure_6(stream(7320), obj7);
+  items2[1] = closure_6(stream(7352), obj7);
   obj4.children = items2;
   return tmp11(tmp12, obj4);
 });

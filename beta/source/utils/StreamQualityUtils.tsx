@@ -1,30 +1,30 @@
-// Module ID: 9688
-// Function ID: 9689
+// Module ID: 9720
+// Function ID: 9721
 // Name: StreamQualityUtils
-// Dependencies: [19, 4804, 502, 2067, 4781, 1376, 1078, 4805, 1378, 4783, 1119, 558, 568, 504, 4894, 1245, 2]
+// Dependencies: [19, 4836, 502, 2067, 4813, 1376, 1078, 4837, 1378, 4815, 1119, 558, 568, 504, 4926, 1245, 2]
 // Exports: getFPSText, getMaxQuality, getPremiumRequirement, getResolutionText, isPremiumFPS, isPremiumRequirement, isPremiumResolution, trackStreamSettingsUpdate
 
-// Module 9688 (StreamQualityUtils)
+// Module 9720 (StreamQualityUtils)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 4894 */;
+import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 4926 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4804 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4836 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const AnalyticEvents = fn(1078).AnalyticEvents;
-const StreamSettingsConstants = fn(4805);
+const StreamSettingsConstants = fn(4837);
 ({ ApplicationStreamFPS: c10, ApplicationStreamResolutions: closure_11, ApplicationStreamSettingRequirements: closure_12, getApplicationFramerate: map1, getApplicationResolution: closure_14 } = StreamSettingsConstants);
 let closure_15 = fn(1378).StreamQualitiesToPremiumType;
-const ResolutionTypes = fn(4783).ResolutionTypes;
+const ResolutionTypes = fn(4815).ResolutionTypes;
 const ReactCompilerGating = fn(558);
 function isPremiumRequirement(quality) {
   return null != quality.quality || null != quality.guildPremiumTier;

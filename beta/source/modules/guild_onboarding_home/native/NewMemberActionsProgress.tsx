@@ -1,25 +1,25 @@
-// Module ID: 16549
-// Function ID: 16550
+// Module ID: 16559
+// Function ID: 16560
 // Name: NewMemberActionsProgress
-// Dependencies: [19, 17, 2109, 4945, 4946, 2052, 4386, 21, 4758, 580, 558, 568, 5198, 565, 1389, 5341, 1105, 4754, 1119, 1181, 10176, 2]
+// Dependencies: [19, 17, 2109, 4977, 4978, 2052, 4418, 21, 4790, 580, 558, 568, 5230, 565, 1389, 5373, 1105, 4786, 1119, 1181, 10215, 2]
 // Exports: NewMemberActionsProgress
 
-// Module 16549 (NewMemberActionsProgress)
+// Module 16559 (NewMemberActionsProgress)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4945 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4946 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4977 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4978 */;
 
 require = fn;
 const View = fn(17).View;
 const StaticChannelRoute = fn(2052).StaticChannelRoute;
-const GuildMemberFlags = fn(4386).GuildMemberFlags;
+const GuildMemberFlags = fn(4418).GuildMemberFlags;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: 16 }, horizontal: { flexDirection: "row", alignItems: "center" }, spaceBetween: { justifyContent: "space-between" }, spaceBelow: { marginBottom: 8 }, progressBackground: { borderRadius: nativeDefault.radii.round, height: 8, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL }, progressForeground: null };
 let obj3 = { borderRadius: nativeDefault.radii.round, height: 8, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
 obj2.progressForeground = { backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, borderRadius: nativeDefault.radii.round, height: 8 };

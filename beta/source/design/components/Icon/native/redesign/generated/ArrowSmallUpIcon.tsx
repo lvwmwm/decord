@@ -1,13 +1,13 @@
-// Module ID: 16048
-// Function ID: 16049
+// Module ID: 16058
+// Function ID: 16059
 // Name: ArrowSmallUpIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 16049, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 16059, 4493, 2]
 
-// Module 16048 (ArrowSmallUpIcon)
+// Module 16058 (ArrowSmallUpIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod16049 from "module_16049" /* 16049 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod16059 from "module_16059" /* 16059 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const ArrowSmallUpIcon = ReactCompilerGating.isReactCompilerEnabled() ? (
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(16049);
+    const tmpResult = tmp(16059);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const ArrowSmallUpIcon = ReactCompilerGating.isReactCompilerEnabled() ? (
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16049, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod16059, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

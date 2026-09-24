@@ -1,13 +1,13 @@
-// Module ID: 12678
-// Function ID: 12679
+// Module ID: 12714
+// Function ID: 12715
 // Name: GuildPowerupRollbackSheet
-// Dependencies: [21, 558, 568, 5188, 10613, 2]
+// Dependencies: [21, 558, 568, 5220, 10649, 2]
 
-// Module 12678 (GuildPowerupRollbackSheet)
+// Module 12714 (GuildPowerupRollbackSheet)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import PromoSheet from "PromoSheet" /* 10613 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import PromoSheet from "PromoSheet" /* 10649 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj2 = { title: header, description: body, onDismiss, actions: tmp4 };
-    const tmp9 = jsx(tmp(10613).PromoSheet, { title: header, description: body, onDismiss, actions: tmp4 });
+    const tmp9 = jsx(tmp(10649).PromoSheet, { title: header, description: body, onDismiss, actions: tmp4 });
     cResult[3] = body;
     cResult[4] = header;
     cResult[5] = onDismiss;
@@ -43,7 +43,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp5;
   if (null != ctaText) {
     const obj3 = { variant: "primary", text: ctaText, onPress: onCtaPress };
-    tmp5 = jsx(tmp(5188).Button, { variant: "primary", text: ctaText, onPress: onCtaPress });
+    tmp5 = jsx(tmp(5220).Button, { variant: "primary", text: ctaText, onPress: onCtaPress });
   }
   cResult[0] = ctaText;
   cResult[1] = onCtaPress;

@@ -1,22 +1,22 @@
-// Module ID: 16696
-// Function ID: 16697
+// Module ID: 16706
+// Function ID: 16707
 // Name: GuildsBarUnreadBars
-// Dependencies: [32, 19, 17, 7877, 4580, 5657, 16623, 15354, 21, 4758, 7319, 558, 568, 1616, 15347, 15356, 551, 560, 504, 4497, 16697, 2]
+// Dependencies: [32, 19, 17, 7909, 4612, 5689, 16633, 15364, 21, 4790, 7351, 558, 568, 1616, 15357, 15366, 551, 560, 504, 4529, 16707, 2]
 
-// Module 16696 (GuildsBarUnreadBars)
+// Module 16706 (GuildsBarUnreadBars)
 import initialize from "initialize" /* 504 */;
 import debounceDefault from "debounce" /* 551 */;
 import c from "c" /* 568 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import FastList from "FastList" /* 7319 */;
-import QuestHooks from "QuestHooks" /* 15347 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 15356 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import FastList from "FastList" /* 7351 */;
+import QuestHooks from "QuestHooks" /* 15357 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 15366 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7877 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
-import SortedGuildStore from "SortedGuildStore" /* 5657 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7909 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
+import SortedGuildStore from "SortedGuildStore" /* 5689 */;
 
 require = fn;
 function checkNodeAndIterate(arg0) {
@@ -128,7 +128,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               ({ section, item: item2 } = tmp4);
             }
             let type = tmp4.type;
-            if (tmp41(7319).FastListItemTypes.SECTION === type) {
+            if (tmp41(7351).FastListItemTypes.SECTION === type) {
               let node = guildsTree.getNode(tmp4.recyclerKey);
               let element = node;
               if (null != node) {
@@ -152,7 +152,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               continue;
             } else {
-              if (tmp41(7319).FastListItemTypes.ITEM === type) {
+              if (tmp41(7351).FastListItemTypes.ITEM === type) {
                 let node1 = guildsTree.getNode(tmp4.recyclerKey);
                 let tmp12 = node1;
                 if (null != node1) {
@@ -212,7 +212,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               return tmp37;
             }
-            let obj6 = { beforeItem: null, afterItem: "a" };
+            let obj6 = { beforeItem: null, afterItem: "Array" };
             let obj7 = { section: sum, row: tmp32.item, mention: true };
             obj6.beforeItem = obj7;
             return obj6;
@@ -224,16 +224,16 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
   }
 }
 const View = fn(17).View;
-const GuildsNodeType = fn(5657).GuildsNodeType;
-const GuildsBarConstants = fn(16623);
+const GuildsNodeType = fn(5689).GuildsNodeType;
+const GuildsBarConstants = fn(16633);
 ({ FastListRenderSections: c10, useGuildWrapperSize: closure_11, GUILD_LIST_WIDTH } = GuildsBarConstants);
-const YouBarConstants = fn(15354);
+const YouBarConstants = fn(15364);
 ({ YOU_BAR_HEIGHT: closure_12, YOU_BAR_MARGIN: map1 } = YouBarConstants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_15 = createStyles.createStyles({ wrapper: { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_LIST_WIDTH } });
-let closure_17 = { beforeItem: "Array", afterItem: "Set" };
-let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "a" };
+let closure_17 = { beforeItem: "state", afterItem: "toCharArray$esjava$1" };
+let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "Array" };
 let ReactCompilerGating = fn(558);
 let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(10);
@@ -375,11 +375,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((fastLi
               return;
             }
           }
-          const obj4 = { runOnJS: tmp(4497).runOnJS, debouncedUpdate: tmp10 };
+          const obj4 = { runOnJS: tmp(4529).runOnJS, debouncedUpdate: tmp10 };
           B.__closure = obj4;
           B.__workletHash = 13727289405147;
           B.__initData = __initData2;
-          const animatedReaction = tmp(4497).useAnimatedReaction(C, B);
+          const animatedReaction = tmp(4529).useAnimatedReaction(C, B);
           const tmp19 = closure_20();
           ({ style, paddingStart } = tmp19);
           const paddingEnd = tmp19.paddingEnd;
@@ -448,7 +448,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((fastLi
           cResult[13] = paddingStart;
           cResult[14] = fn3;
           tmp20 = fn3;
-          const tmpResult = tmp(4497);
+          const tmpResult = tmp(4529);
         }
       }
       const tmp11 = top(551)(() => {
@@ -564,8 +564,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((fastLi
       return;
     }
   }
-  let obj = fastList(4497);
-  O.__closure = { runOnJS: fastList(4497).runOnJS, debouncedUpdate: memo };
+  let obj = fastList(4529);
+  O.__closure = { runOnJS: fastList(4529).runOnJS, debouncedUpdate: memo };
   O.__workletHash = 3399641848221;
   O.__initData = __initData4;
   const animatedReaction = obj.useAnimatedReaction(M, O);
@@ -582,6 +582,6 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((fastLi
     obj.orientation = "visible";
     fastList.scrollToLocation(obj);
   }, items2);
-  obj3.children = jsx(top(16697), { beforeItem, afterItem, scrollToLocation: callback, compact: true });
+  obj3.children = jsx(top(16707), { beforeItem, afterItem, scrollToLocation: callback, compact: true });
   return <scrollPosValue style={tmp7.style} collapsable={false} pointerEvents="box-none" testID="guilds-bar-unread-bars">{null}</scrollPosValue>;
 }));

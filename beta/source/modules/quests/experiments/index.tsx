@@ -1,13 +1,13 @@
-// Module ID: 11613
-// Function ID: 11614
+// Module ID: 11649
+// Function ID: 11650
 // Name: apexExperiment
-// Dependencies: [1438, 558, 568, 10577, 10578, 11614, 2]
+// Dependencies: [1438, 558, 568, 10613, 10614, 11650, 2]
 
-// Module 11613 (apexExperiment)
+// Module 11649 (apexExperiment)
 import c from "c" /* 568 */;
-import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 10577 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10578 */;
-import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 11614 */;
+import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 10613 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10614 */;
+import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 11650 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1438 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -79,7 +79,7 @@ export const useQuestOrbsMultiplierMarketing = ReactCompilerGating.isReactCompil
   const questOrbMultiplierEligibility = QuestOrbMultiplierHooks.useQuestOrbMultiplierEligibility();
   const tmp6 = questOrbMultiplierEligibility !== QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.INELIGIBLE && questOrbMultiplierEligibility !== QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.XBOX_GAME_PASS && closure_2.useConfig(tmp4).enabled;
   if (cResult[2] !== tmp6) {
-    const obj3 = { shouldShowBonusOrbsUX: tmp6, multiplier: tmp(11614).QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100 };
+    const obj3 = { shouldShowBonusOrbsUX: tmp6, multiplier: tmp(11650).QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100 };
     cResult[2] = tmp6;
     cResult[3] = obj3;
     let tmp7 = obj3;

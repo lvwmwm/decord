@@ -1,12 +1,12 @@
-// Module ID: 8271
-// Function ID: 8272
+// Module ID: 8303
+// Function ID: 8304
 // Name: GuildDiscoverySystemMessage
-// Dependencies: [2045, 2067, 1119, 8227, 2]
+// Dependencies: [2045, 2067, 1119, 8259, 2]
 // Exports: createGuildDiscoveryDisqualifiedSystemMessage, createGuildDiscoveryGracePeriodFinalWarningSystemMessage, createGuildDiscoveryGracePeriodInitialWarningSystemMessage, createGuildDiscoveryRequalifiedSystemMessage
 
-// Module 8271 (GuildDiscoverySystemMessage)
+// Module 8303 (GuildDiscoverySystemMessage)
 import util from "util" /* 1119 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8227 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8259 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 16903
-// Function ID: 16904
+// Module ID: 16913
+// Function ID: 16914
 // Name: GuildOnboardingHomePage
-// Dependencies: [19, 4674, 4945, 4946, 1078, 21, 558, 568, 4497, 504, 7470, 12432, 1245, 4938, 5739, 16904, 16909, 16913, 16914, 16917, 16920, 7469, 2]
+// Dependencies: [19, 4706, 4977, 4978, 1078, 21, 558, 568, 4529, 504, 7502, 12468, 1245, 4970, 5771, 16914, 16919, 16923, 16924, 16927, 16930, 7501, 2]
 
-// Module 16903 (GuildOnboardingHomePage)
+// Module 16913 (GuildOnboardingHomePage)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12432 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5771 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12468 */;
 import noop from "module_19" /* 19 */;
-import ExperimentStore from "ExperimentStore" /* 4674 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4945 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4946 */;
+import ExperimentStore from "ExperimentStore" /* 4706 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4977 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4978 */;
 
 require = fn;
-const NO_SETTINGS = fn(4945).NO_SETTINGS;
+const NO_SETTINGS = fn(4977).NO_SETTINGS;
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
@@ -24,7 +24,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   guildId = guildId.guildId;
   let obj = guildId(568);
   let tmp = guildId;
-  const sharedValue = guildId(4497).useSharedValue(-999);
+  const sharedValue = guildId(4529).useSharedValue(-999);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildOnboardingHomeSettingsStore];
     cResult[0] = items;
@@ -48,9 +48,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
   }
-  let obj2 = guildId(4497);
+  let obj2 = guildId(4529);
   const stateFromStores = tmp(504).useStateFromStores(first, tmp7);
-  const tmp9 = stateFromStores(7470)(guildId);
+  const tmp9 = stateFromStores(7502)(guildId);
   let tmp10 = !tmp9;
   if (!tmp9) {
     class I {
@@ -141,12 +141,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   guildId = guildId.guildId;
   dependencyMap = undefined;
   let tmp = dependencyMap;
-  const sharedValue = guildId(4497).useSharedValue(-999);
-  let obj = guildId(4497);
+  const sharedValue = guildId(4529).useSharedValue(-999);
+  let obj = guildId(4529);
   const items = [GuildOnboardingHomeSettingsStore];
   const stateFromStores = guildId(504).useStateFromStores(items, () => GuildOnboardingHomeSettingsStore.getSettings(guildId));
   let tmp4 = stateFromStores;
-  const tmp5 = stateFromStores(7470)(guildId);
+  const tmp5 = stateFromStores(7502)(guildId);
   let tmp6 = !tmp5;
   if (!tmp5) {
     let num;
@@ -211,14 +211,14 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   } else {
     let obj3 = { guildId, scrollValue: sharedValue, children: null };
     const obj4 = { guildId, hideDescription: tmp5 };
-    const items3 = [closure_9(tmp4(16904), obj4), ];
+    const items3 = [closure_9(tmp4(16914), obj4), ];
     if (tmp5) {
       let obj5 = { children: null };
       const obj6 = { guildId };
-      const items4 = [tmp12(tmp4(16909), obj6), , ];
+      const items4 = [tmp12(tmp4(16919), obj6), , ];
       const obj7 = { guildId };
-      items4[1] = tmp12(tmp4(16913), obj7);
-      tmp4 = tmp4(16914);
+      items4[1] = tmp12(tmp4(16923), obj7);
+      tmp4 = tmp4(16924);
       const obj8 = { guildId };
       tmp = tmp12(tmp4, obj8);
       items4[2] = tmp;
@@ -226,12 +226,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       let tmp12Result = tmp10(closure_10, obj5);
     } else {
       const obj9 = { guildId };
-      tmp12Result = tmp12(tmp4(16917), obj9);
+      tmp12Result = tmp12(tmp4(16927), obj9);
     }
     items3[1] = tmp12Result;
     obj3.children = items3;
-    closure_11(tmp4(16920), obj3);
-    const tmp4Result = tmp4(16920);
+    closure_11(tmp4(16930), obj3);
+    const tmp4Result = tmp4(16930);
   }
 });
 ReactCompilerGating = fn(558);

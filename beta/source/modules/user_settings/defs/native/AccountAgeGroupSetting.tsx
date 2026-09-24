@@ -1,35 +1,35 @@
-// Module ID: 14979
-// Function ID: 14980
+// Module ID: 15014
+// Function ID: 15015
 // Name: AccountAgeGroupSetting
-// Dependencies: [17, 8238, 1078, 21, 4758, 580, 558, 568, 14980, 14981, 14982, 2031, 5822, 11594, 1119, 14983, 14946, 14984, 2]
+// Dependencies: [17, 8270, 1078, 21, 4790, 580, 558, 568, 15015, 15016, 15023, 2031, 5854, 11630, 1119, 15024, 14984, 15025, 2]
 
-// Module 14979 (AccountAgeGroupSetting)
+// Module 15014 (AccountAgeGroupSetting)
 import _mod17 from "module_17" /* 17 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import Constants from "Constants" /* 1078 */;
 import util from "util" /* 1119 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
-import TableRow from "TableRow" /* 5822 */;
-import SettingsConstants from "SettingsConstants" /* 8238 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14946 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 14980 */;
-import TinyBroncoLazy from "TinyBroncoLazy" /* 14981 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 14982 */;
+import TableRow from "TableRow" /* 5854 */;
+import SettingsConstants from "SettingsConstants" /* 8270 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14984 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 15015 */;
+import TinyBroncoLazy from "TinyBroncoLazy" /* 15016 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 15023 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
-import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 14983 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
+import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 15024 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 const View = _mod17.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-let obj = { trailing: { flexDirection: "row", alignItems: "center", flexShrink: 1 }, badge: { marginLeft: 0, marginRight: nativeDefault.space.PX_4 } };
+let obj = { trailing: { flexDirection: "row", alignItems: "center", flexShrink: 1 }, badge: { marginLeft: 0, backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND, marginRight: nativeDefault.space.PX_4, marginBottom: 0 } };
 let closure_6 = createStyles.createStyles(obj);
-let obj2 = { marginLeft: 0, marginRight: nativeDefault.space.PX_4 };
+let obj2 = { marginLeft: 0, backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND, marginRight: nativeDefault.space.PX_4, marginBottom: 0 };
 let obj3 = {
   useTitle() {
     const intl = util.intl;
@@ -47,7 +47,7 @@ let obj3 = {
       }
       if (cResult[3] !== ageGroupValueLabel) {
         const obj4 = { text: ageGroupValueLabel };
-        const tmp14 = React4(tmp(5822).TableRow.TrailingText, obj4);
+        const tmp14 = React4(tmp(5854).TableRow.TrailingText, obj4);
         cResult[3] = ageGroupValueLabel;
         cResult[4] = tmp14;
         let tmp12 = tmp14;

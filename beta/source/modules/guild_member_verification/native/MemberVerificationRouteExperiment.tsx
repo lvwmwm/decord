@@ -1,10 +1,10 @@
-// Module ID: 5745
-// Function ID: 5746
+// Module ID: 5777
+// Function ID: 5778
 // Name: MemberVerificationRouteExperiment
 // Dependencies: [1439, 558, 568, 2]
 // Exports: getIsMemberVerificationRouteDeprecated
 
-// Module 5745 (MemberVerificationRouteExperiment)
+// Module 5777 (MemberVerificationRouteExperiment)
 import c from "c" /* 568 */;
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1439 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 15477
-// Function ID: 15478
+// Module ID: 15487
+// Function ID: 15488
 // Name: ResubscribedAlert
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 15478, 1181, 4754, 5207, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 15488, 1181, 4786, 5239, 2]
 
-// Module 15477 (ResubscribedAlert)
+// Module 15487 (ResubscribedAlert)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import common_AlertDefault from "common/Alert" /* 5207 */;
-import _modDef15478 from "module_15478" /* 15478 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import common_AlertDefault from "common/Alert" /* 5239 */;
+import _modDef15488 from "module_15488" /* 15488 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL }, body: { alignItems: "center", textAlign: "center" }, centerText: { textAlign: "center" }, headerImage: { width: 87, height: 87 } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -40,7 +40,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   ({ container, body } = tmp4);
   if (cResult[1] !== tmp4.headerImage) {
-    const obj2 = { source: _modDef15478, style: tmp4.headerImage };
+    const obj2 = { source: _modDef15488, style: tmp4.headerImage };
     const tmp11 = hasOwnProperty(React4, obj2);
     cResult[1] = tmp4.headerImage;
     cResult[2] = tmp11;
@@ -65,7 +65,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   if (cResult[5] !== tmp4.centerText) {
     const obj3 = { variant: "text-lg/semibold", color: "mobile-text-heading-primary", style: tmp4.centerText, children: tmp15 };
-    const tmp19 = hasOwnProperty(tmp(4754).Text, obj3);
+    const tmp19 = hasOwnProperty(tmp(4786).Text, obj3);
     cResult[5] = tmp4.centerText;
     cResult[6] = tmp19;
     let tmp17 = tmp19;
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   if (cResult[9] !== tmp4.centerText) {
     const obj4 = { variant: "text-md/normal", color: "mobile-text-heading-primary", style: tmp4.centerText, children: tmp23 };
-    const tmp27 = hasOwnProperty(tmp(4754).Text, obj4);
+    const tmp27 = hasOwnProperty(tmp(4786).Text, obj4);
     cResult[9] = tmp4.centerText;
     cResult[10] = tmp27;
     let tmp25 = tmp27;
@@ -139,7 +139,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   obj.style = tmp.container;
   const obj2 = { style: tmp.body, children: null };
   const tmp2 = common_AlertDefault;
-  const items = [hasOwnProperty(React4, { source: _modDef15478, style: tmp.headerImage }), hasOwnProperty(native.Spacer, { size: 27 }), , , ];
+  const items = [hasOwnProperty(React4, { source: _modDef15488, style: tmp.headerImage }), hasOwnProperty(native.Spacer, { size: 27 }), , , ];
   const obj4 = { variant: "text-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centerText, children: null };
   const intl2 = util.intl;
   obj4.children = intl2.string(util.t.oPV2cy);

@@ -1,19 +1,19 @@
-// Module ID: 17248
-// Function ID: 17249
+// Module ID: 17258
+// Function ID: 17259
 // Name: FriendRequestsScreen
-// Dependencies: [32, 19, 17, 7880, 4409, 1376, 11162, 1078, 11178, 21, 4758, 580, 17249, 1984, 5112, 558, 568, 7881, 565, 2023, 16757, 7882, 11, 7409, 7429, 1245, 13359, 7415, 17250, 1335, 8453, 1119, 1488, 5903, 5822, 4754, 9868, 5343, 9869, 5341, 11294, 5907, 11168, 2]
+// Dependencies: [32, 19, 17, 7912, 4441, 1376, 11198, 1078, 11214, 21, 4790, 580, 17259, 1984, 5144, 558, 568, 7913, 565, 2023, 16767, 7914, 11, 7441, 7461, 1245, 13395, 7447, 17260, 1335, 8485, 1119, 1488, 5935, 5854, 4786, 9900, 5375, 9901, 5373, 11330, 5939, 11204, 2]
 
-// Module 17248 (FriendRequestsScreen)
+// Module 17258 (FriendRequestsScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 580 */;
-import useAlertStore from "useAlertStore" /* 5112 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16757 */;
-import getPendingRelationshipIds from "getPendingRelationshipIds" /* 17250 */;
+import useAlertStore from "useAlertStore" /* 5144 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
+import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16767 */;
+import getPendingRelationshipIds from "getPendingRelationshipIds" /* 17260 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7880 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7912 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -26,14 +26,14 @@ function compareUserItems(user, user2) {
   return compareResult;
 }
 const View = fn(17).View;
-const UserRowModes = fn(11162).UserRowModes;
+const UserRowModes = fn(11198).UserRowModes;
 const Constants = fn(1078);
 ({ AnalyticEvents: c10, AnalyticsSections: closure_11, RelationshipTypes: closure_12 } = Constants);
-let closure_13 = fn(11178).MINIMUM_PENDING_INCOMING_COUNT_FOR_CLEAR_ALL;
+let closure_13 = fn(11214).MINIMUM_PENDING_INCOMING_COUNT_FOR_CLEAR_ALL;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
 let Outgoing = { Incoming: 0, [0]: "Incoming", Outgoing: 1, [1]: "Outgoing" };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1 }, noResultsContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1 }, clearAllContainer: null, clearAll: null, tabs: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1 };
 obj2.clearAllContainer = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16, justifyContent: "flex-end", flexDirection: "row" };
@@ -214,12 +214,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   let tmp = onPress();
   let WumpusCouchSpotIllustration = dependencyMap;
-  const analyticsLocations = first(7409)(first(7429).FRIEND_REQUESTS).analyticsLocations;
+  const analyticsLocations = first(7441)(first(7461).FRIEND_REQUESTS).analyticsLocations;
   navigation();
   const effect = gameRelationshipsByType1.useEffect(() => {
     first(1245).track(outgoing.FRIEND_ADD_VIEWED, { friend_add_type: spam.FRIENDS_REQUESTS_MODAL });
   }, []);
-  const tmp3 = first(7409);
+  const tmp3 = first(7441);
   let items = [spamIds];
   const tmp7 = gameRelationshipsByType(analyticsLocations(565).useStateFromStoresArray(items, () => {
     const items = [spamIds.getMutableRelationships(), spamIds.getVersion()];
@@ -228,9 +228,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   first = tmp7[0];
   dependencyMap = tmp9;
   let obj = analyticsLocations(565);
-  gameRelationshipsByType = analyticsLocations(13359).useGameRelationshipsByType(ignoredUsers.PENDING_INCOMING);
-  let obj2 = analyticsLocations(13359);
-  gameRelationshipsByType1 = analyticsLocations(13359).useGameRelationshipsByType(ignoredUsers.PENDING_OUTGOING);
+  gameRelationshipsByType = analyticsLocations(13395).useGameRelationshipsByType(ignoredUsers.PENDING_INCOMING);
+  let obj2 = analyticsLocations(13395);
+  gameRelationshipsByType1 = analyticsLocations(13395).useGameRelationshipsByType(ignoredUsers.PENDING_OUTGOING);
   let items1 = [gameRelationshipsByType, gameRelationshipsByType1];
   const memo = gameRelationshipsByType1.useMemo(() => {
     const set = new Set();
@@ -242,14 +242,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     });
     return Array.from(set);
   }, items1);
-  first(7415)(memo);
+  first(7447)(memo);
   const items2 = [first, tmp7[1]];
   const memo1 = gameRelationshipsByType1.useMemo(() => getPendingRelationshipIds.getPendingRelationshipIds(first, closure_2), items2);
   const pendingIncomingIds = memo1.pendingIncomingIds;
   const pendingOutgoingIds = memo1.pendingOutgoingIds;
   spamIds = memo1.spamIds;
   const ignoredUserIds = memo1.ignoredUserIds;
-  let obj3 = analyticsLocations(13359);
+  let obj3 = analyticsLocations(13395);
   const items3 = [ignoredUserIds];
   const items4 = [ignoredUserIds, gameRelationshipsByType, gameRelationshipsByType1, pendingIncomingIds, pendingOutgoingIds, spamIds];
   const stateFromStores = analyticsLocations(565).useStateFromStores(items3, () => {
@@ -420,12 +420,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj8.label = intl2.string(analyticsLocations(1119).t.tWqcIF);
   items8[1] = obj8;
   obj6.items = items8;
-  const segmentedControlState = analyticsLocations(9868).useSegmentedControlState(obj6);
+  const segmentedControlState = analyticsLocations(9900).useSegmentedControlState(obj6);
   const obj9 = { value: analyticsLocations, children: null };
-  const items9 = [outgoingData(first(5343), { absolute: true }), ];
+  const items9 = [outgoingData(first(5375), { absolute: true }), ];
   const obj10 = { style: tmp.container, children: null };
-  const tmp6Result = analyticsLocations(9868);
-  const items10 = [outgoingData(pendingIncomingIds, { style: tmp.tabs, children: outgoingData(analyticsLocations(9869).SegmentedControl, { state: segmentedControlState }) }), , ];
+  const tmp6Result = analyticsLocations(9900);
+  const items10 = [outgoingData(pendingIncomingIds, { style: tmp.tabs, children: outgoingData(analyticsLocations(9901).SegmentedControl, { state: segmentedControlState }) }), , ];
   let tmp30Result = null;
   if (tmp26) {
     const obj12 = { style: tmp.clearAllContainer, children: null };
@@ -440,8 +440,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj14 = { variant: "text-sm/semibold", color: "text-brand", children: null };
     const intl3 = tmp6(1119).intl;
     obj14.children = intl3.string(tmp6(1119).t.O8k7O4);
-    obj13.children = tmp30(tmp6(4754).Text, obj14);
-    obj12.children = tmp30(tmp6(5341).PressableOpacity, obj13);
+    obj13.children = tmp30(tmp6(4786).Text, obj14);
+    obj12.children = tmp30(tmp6(5373).PressableOpacity, obj13);
     tmp30Result = tmp30(tmp31, obj12);
   }
   items10[1] = tmp30Result;
@@ -455,20 +455,20 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       stringResult = intl4.string(tmp6(1119).t["yvzX/Z"]);
     }
     const obj16 = { title: stringResult, illustration: null, disableBackgroundOverlay: true };
-    WumpusCouchSpotIllustration = tmp6(5907).WumpusCouchSpotIllustration;
+    WumpusCouchSpotIllustration = tmp6(5939).WumpusCouchSpotIllustration;
     obj16.illustration = WumpusCouchSpotIllustration;
-    obj15.children = tmp30(tmp2(11294), obj16);
+    obj15.children = tmp30(tmp2(11330), obj16);
     tmp30(tmp31, obj15);
-    const tmp2Result = tmp2(11294);
+    const tmp2Result = tmp2(11330);
   } else {
     if (first1 === tmp23.Incoming) {
       outgoingSection = incomingSection;
     }
     const obj17 = { sections: outgoingSection, getItemProps: callback2, getSectionProps: callback1 };
-    items10[2] = tmp30(tmp6(11168).UsersFastList, obj17);
+    items10[2] = tmp30(tmp6(11204).UsersFastList, obj17);
     obj10.children = items10;
     items9[1] = tmp29(tmp31, obj10);
     obj9.children = items9;
-    return tmp29(tmp6(7409).AnalyticsLocationProvider, obj9);
+    return tmp29(tmp6(7441).AnalyticsLocationProvider, obj9);
   }
 });

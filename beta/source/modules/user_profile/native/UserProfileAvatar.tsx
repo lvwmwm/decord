@@ -1,13 +1,13 @@
-// Module ID: 8530
-// Function ID: 8531
+// Module ID: 8562
+// Function ID: 8563
 // Name: UserProfileAvatar
-// Dependencies: [109, 19, 17, 8457, 7455, 21, 558, 568, 8515, 8531, 8464, 8534, 1119, 2]
+// Dependencies: [109, 19, 17, 8489, 7487, 21, 558, 568, 8547, 8563, 8496, 8566, 1119, 2]
 
-// Module 8530 (UserProfileAvatar)
+// Module 8562 (UserProfileAvatar)
 import c from "c" /* 568 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8515 */;
-import HeaderAvatarDefault from "HeaderAvatar" /* 8531 */;
-import openUserProfileAvatarMediaViewerDefault from "openUserProfileAvatarMediaViewer" /* 8534 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8547 */;
+import HeaderAvatarDefault from "HeaderAvatar" /* 8563 */;
+import openUserProfileAvatarMediaViewerDefault from "openUserProfileAvatarMediaViewer" /* 8566 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,8 +17,8 @@ require = fn;
 let closure_3 = ["backgroundColor", "size"];
 let closure_4 = ["animate", "user", "guildId"];
 const View = fn(17).View;
-const TrackUserProfileActions = fn(8457).TrackUserProfileActions;
-const AVATAR_SIZE_VARIANT = fn(7455).AVATAR_SIZE_VARIANT;
+const TrackUserProfileActions = fn(8489).TrackUserProfileActions;
+const AVATAR_SIZE_VARIANT = fn(7487).AVATAR_SIZE_VARIANT;
 const jsxProd = fn(21);
 ({ jsx: c10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
 let ReactCompilerGating = fn(558);

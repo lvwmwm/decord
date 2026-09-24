@@ -1,14 +1,14 @@
-// Module ID: 15586
-// Function ID: 15587
+// Module ID: 15596
+// Function ID: 15597
 // Name: useIsFavoritesGuildVisible
-// Dependencies: [4580, 2048, 2070, 10616, 10606, 558, 568, 504, 2]
+// Dependencies: [4612, 2048, 2070, 10652, 10642, 558, 568, 504, 2]
 // Exports: isFavoritesGuildVisible
 
-// Module 15586 (useIsFavoritesGuildVisible)
+// Module 15596 (useIsFavoritesGuildVisible)
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
-import FavoritesHooks from "FavoritesHooks" /* 10606 */;
-import FavoritesGuildIntroPopover from "FavoritesGuildIntroPopover" /* 10616 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import FavoritesHooks from "FavoritesHooks" /* 10642 */;
+import FavoritesGuildIntroPopover from "FavoritesGuildIntroPopover" /* 10652 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
 
 const require = globalThis.__r;

@@ -1,12 +1,12 @@
-// Module ID: 4668
-// Function ID: 4669
+// Module ID: 4700
+// Function ID: 4701
 // Name: GameServerStore
-// Dependencies: [4669, 4670, 504, 577, 2]
+// Dependencies: [4701, 4702, 504, 577, 2]
 
-// Module 4668 (GameServerStore)
+// Module 4700 (GameServerStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 4670 */;
+import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 4702 */;
 
 function handleGameServerInstanceCreated(arg0) {
   ({ guildId, gameServer } = arg0);

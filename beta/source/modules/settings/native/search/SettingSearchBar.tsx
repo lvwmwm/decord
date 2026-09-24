@@ -1,21 +1,21 @@
-// Module ID: 14966
-// Function ID: 14967
+// Module ID: 15001
+// Function ID: 15002
 // Name: SettingSearchBar
-// Dependencies: [19, 17, 14955, 21, 4758, 580, 558, 568, 1879, 7243, 7297, 2]
+// Dependencies: [19, 17, 14990, 21, 4790, 580, 558, 568, 1879, 7275, 7329, 2]
 
-// Module 14966 (SettingSearchBar)
+// Module 15001 (SettingSearchBar)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1879 */;
-import Tracking from "Tracking" /* 7243 */;
+import Tracking from "Tracking" /* 7275 */;
 import noop from "module_19" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14955 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14990 */;
 
-const SearchField = tmp(7297);
+const SearchField = tmp(7329);
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { marginTop: nativeDefault.modules.mobile.SETTINGS_PADDING_TOP } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

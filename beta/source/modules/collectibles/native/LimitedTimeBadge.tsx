@@ -1,16 +1,16 @@
-// Module ID: 9113
-// Function ID: 9114
+// Module ID: 9145
+// Function ID: 9146
 // Name: LimitedTimeBadge
-// Dependencies: [19, 17, 2113, 1186, 21, 4758, 580, 1119, 558, 568, 4610, 504, 7686, 4754, 2]
+// Dependencies: [19, 17, 2113, 1186, 21, 4790, 580, 1119, 558, 568, 4642, 504, 7718, 4786, 2]
 
-// Module 9113 (LimitedTimeBadge)
+// Module 9145 (LimitedTimeBadge)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import shared from "shared" /* 4610 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useCountdownDefault from "useCountdown" /* 7686 */;
+import shared from "shared" /* 4642 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useCountdownDefault from "useCountdown" /* 7718 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
@@ -51,7 +51,7 @@ function getBadgeString(hasItem, days, hours) {
 }
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { root: { borderRadius: nativeDefault.radii.md, paddingHorizontal: 8, paddingVertical: 2 }, backgroundDarkMode: null, backgroundLightMode: null };
 let obj3 = { borderRadius: nativeDefault.radii.md, paddingHorizontal: 8, paddingVertical: 2 };
 obj2.backgroundDarkMode = { backgroundColor: nativeDefault.colors.WHITE };
@@ -150,7 +150,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj5 = { color: str, variant: "text-xs/bold", accessibilityLabel: tmp19, allowFontScaling: false, children: tmp15 };
-          const tmp23 = jsx(tmp(4754).Text, { color: str, variant: "text-xs/bold", accessibilityLabel: tmp19, allowFontScaling: false, children: tmp15 });
+          const tmp23 = jsx(tmp(4786).Text, { color: str, variant: "text-xs/bold", accessibilityLabel: tmp19, allowFontScaling: false, children: tmp15 });
           cResult[15] = tmp19;
           cResult[16] = str;
           cResult[17] = tmp15;

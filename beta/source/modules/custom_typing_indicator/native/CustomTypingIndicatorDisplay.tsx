@@ -1,23 +1,23 @@
-// Module ID: 12110
-// Function ID: 12111
+// Module ID: 12146
+// Function ID: 12147
 // Name: CustomTypingIndicatorDisplay
-// Dependencies: [19, 21, 4758, 558, 568, 1119, 12103, 12111, 4754, 5186, 5341, 580, 2]
+// Dependencies: [19, 21, 4790, 558, 568, 1119, 12139, 12147, 4786, 5218, 5373, 580, 2]
 
-// Module 12110 (CustomTypingIndicatorDisplay)
+// Module 12146 (CustomTypingIndicatorDisplay)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import CustomTypingIndicatorGlyphDefault from "CustomTypingIndicatorGlyph" /* 12111 */;
+import CustomTypingIndicatorGlyphDefault from "CustomTypingIndicatorGlyph" /* 12147 */;
 import noop from "module_19" /* 19 */;
 
 const util = PressableOpacity(1119);
-const Text_Text = PressableOpacity(4754);
-const Stack_Stack = PressableOpacity(5186);
-const Pressables = PressableOpacity(5341);
-const CustomTypingIndicatorUtils = PressableOpacity(12103);
+const Text_Text = PressableOpacity(4786);
+const Stack_Stack = PressableOpacity(5218);
+const Pressables = PressableOpacity(5373);
+const CustomTypingIndicatorUtils = PressableOpacity(12139);
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles(() => ({ text: { flexShrink: 1 }, pressable: { flex: 1 } }));
 const ReactCompilerGating = fn(558);
 const size = fn(2);

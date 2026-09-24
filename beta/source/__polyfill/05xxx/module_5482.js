@@ -1,78 +1,111 @@
 // Module ID: 5482
 // Function ID: 5483
-// Dependencies: [5432]
+// Dependencies: [5481]
 
 // Module 5482
-import _mod5432 from "module_5432" /* 5432 */;
+import _modDef5481 from "module_5481" /* 5481 */;
 
-require = arg1;
+importDefault = arg2;
 const dependencyMap = arg6;
 
 export default {
-  read(byteLength) {
-    let tmp;
-    if (6 <= byteLength.byteLength) {
-      const stringFromDataView = _mod5432.getStringFromDataView(byteLength, 3, 3);
-      const obj2 = { value: stringFromDataView, description: stringFromDataView };
-      tmp = obj2;
-    }
-    const obj3 = { "GIF Version": tmp, "Image Width": null, "Image Height": null, "Global Color Map": null, "Bits Per Pixel": null, "Color Resolution Depth": null };
-    let tmp5;
-    if (8 <= byteLength.byteLength) {
-      const uint16 = byteLength.getUint16(6, true);
-      const obj4 = { value: uint16, description: null };
+  read(buffer, sum) {
+    const shortAt = _modDef5481.getShortAt(buffer, sum);
+    let tmp6;
+    if (15 <= shortAt) {
+      const byteAt = tmp3(5481).getByteAt(buffer, sum + 14);
+      const obj2 = { value: byteAt, description: null };
       const _HermesInternal = HermesInternal;
-      obj4.description = "" + uint16 + "px";
-      tmp5 = obj4;
+      obj2.description = "" + byteAt + "px";
+      tmp6 = obj2;
+      const tmp3Result = tmp3(5481);
     }
-    obj3["Image Width"] = tmp5;
-    let tmp8;
-    if (10 <= byteLength.byteLength) {
-      const uint161 = byteLength.getUint16(8, true);
-      const obj5 = { value: uint161, description: null };
+    let tmp9;
+    if (16 <= shortAt) {
+      const byteAt1 = tmp3(5481).getByteAt(buffer, sum + 15);
+      const obj3 = { value: byteAt1, description: null };
       const _HermesInternal2 = HermesInternal;
-      obj5.description = "" + uint161 + "px";
-      tmp8 = obj5;
+      obj3.description = "" + byteAt1 + "px";
+      tmp9 = obj3;
+      const tmp3Result7 = tmp3(5481);
     }
-    obj3["Image Height"] = tmp8;
-    let tmp11;
-    if (11 <= byteLength.byteLength) {
-      const tmp12 = (128 & byteLength.getUint8(10)) >>> 7;
-      const obj6 = { value: tmp12, description: null };
-      let str5 = "No";
-      if (1 === tmp12) {
-        str5 = "Yes";
+    let tmp12;
+    if (9 <= shortAt) {
+      const byteAt2 = tmp3(5481).getByteAt(buffer, sum + 7);
+      const tmp3Result8 = tmp3(5481);
+      const byteAt3 = tmp3(5481).getByteAt(buffer, sum + 7 + 1);
+      const obj4 = { value: 256 * byteAt2 + byteAt3, description: `${tmp13}.${tmp14}` };
+      tmp12 = obj4;
+      const tmp3Result9 = tmp3(5481);
+    }
+    const obj5 = { "JFIF Version": tmp12, "Resolution Unit": null, XResolution: null, YResolution: null, "JFIF Thumbnail Width": null, "JFIF Thumbnail Height": null };
+    let tmp15;
+    if (10 <= shortAt) {
+      const byteAt4 = tmp3(5481).getByteAt(buffer, sum + 9);
+      const obj6 = { value: byteAt4, description: null };
+      let str6 = "None";
+      if (0 !== byteAt4) {
+        let str7 = "inches";
+        if (1 !== byteAt4) {
+          let str8 = "Unknown";
+          if (2 === byteAt4) {
+            str8 = "cm";
+          }
+          str7 = str8;
+        }
+        str6 = str7;
       }
-      obj6.description = str5;
-      tmp11 = obj6;
+      obj6.description = str6;
+      tmp15 = obj6;
+      const tmp3Result10 = tmp3(5481);
     }
-    obj3["Global Color Map"] = tmp11;
-    let tmp13;
-    if (11 <= byteLength.byteLength) {
-      const sum = 1 + (7 & byteLength.getUint8(10));
-      const obj7 = { value: sum, description: null };
-      let str6 = "bits";
-      if (1 === sum) {
-        str6 = "bit";
+    obj5["Resolution Unit"] = tmp15;
+    let tmp17;
+    if (12 <= shortAt) {
+      const shortAt1 = tmp3(5481).getShortAt(buffer, sum + 10);
+      const obj7 = { value: shortAt1, description: "" + shortAt1 };
+      tmp17 = obj7;
+      const tmp3Result11 = tmp3(5481);
+    }
+    obj5.XResolution = tmp17;
+    let tmp19;
+    if (14 <= shortAt) {
+      const shortAt2 = tmp3(5481).getShortAt(buffer, sum + 12);
+      const obj8 = { value: shortAt2, description: "" + shortAt2 };
+      tmp19 = obj8;
+      const tmp3Result12 = tmp3(5481);
+    }
+    obj5.YResolution = tmp19;
+    obj5["JFIF Thumbnail Width"] = tmp6;
+    obj5["JFIF Thumbnail Height"] = tmp9;
+    if (undefined !== tmp6) {
+      if (undefined !== tmp9) {
+        const result = 3 * tmp6.value * tmp9.value;
+        let tmp22;
+        if (0 !== result) {
+          if (16 + result <= shortAt) {
+            buffer = buffer.buffer;
+            const obj9 = { value: buffer.slice(sum + 16, sum + 16 + result), description: "<24-bit RGB pixel data>" };
+            tmp22 = obj9;
+          }
+        }
+        if (tmp22) {
+          obj5["JFIF Thumbnail"] = tmp22;
+        }
       }
-      const _HermesInternal3 = HermesInternal;
-      obj7.description = "" + sum + " " + str6;
-      tmp13 = obj7;
     }
-    obj3["Bits Per Pixel"] = tmp13;
-    let tmp16;
-    if (11 <= byteLength.byteLength) {
-      const sum1 = 1 + ((112 & byteLength.getUint8(10)) >>> 4);
-      const obj8 = { value: sum1, description: null };
-      let str9 = "bits";
-      if (1 === sum1) {
-        str9 = "bit";
+    const keys = Object.keys();
+    if (keys !== undefined) {
+      while (keys[16] !== undefined) {
+        if (undefined !== obj5[tmp24]) {
+          continue;
+        } else {
+          delete tmp[tmp2];
+          continue;
+        }
+        continue;
       }
-      const _HermesInternal4 = HermesInternal;
-      obj8.description = "" + sum1 + " " + str9;
-      tmp16 = obj8;
     }
-    obj3["Color Resolution Depth"] = tmp16;
-    return obj3;
+    return obj5;
   }
 };

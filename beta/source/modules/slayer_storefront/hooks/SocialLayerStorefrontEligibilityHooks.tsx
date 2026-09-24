@@ -1,20 +1,20 @@
-// Module ID: 9069
-// Function ID: 9070
+// Module ID: 9101
+// Function ID: 9102
 // Name: SocialLayerStorefrontEligibilityHooks
-// Dependencies: [19, 9070, 2003, 7862, 2067, 4798, 7475, 558, 568, 8617, 504, 9071, 2]
+// Dependencies: [19, 9102, 2003, 7894, 2067, 4830, 7507, 558, 568, 8649, 504, 9103, 2]
 // Exports: useIsCurrentUserPlayingSocialLayerStorefrontGames
 
-// Module 9069 (SocialLayerStorefrontEligibilityHooks)
+// Module 9101 (SocialLayerStorefrontEligibilityHooks)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8617 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8649 */;
 import noop from "module_19" /* 19 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9070 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9102 */;
 import RunningGameStore from "RunningGameStore" /* 2003 */;
-import UserProfileStore from "UserProfileStore" /* 7862 */;
+import UserProfileStore from "UserProfileStore" /* 7894 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7475 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7507 */;
 
 require = fn;
 fn(558);
@@ -145,7 +145,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
   const obj = userIds(568);
   const stateFromStoresArray = userIds(504).useStateFromStoresArray(first, tmp7, tmp8);
   const tmpResult = userIds(504);
-  const slayerStorefrontDevApplicationIdOverride = userIds(9071).useSlayerStorefrontDevApplicationIdOverride();
+  const slayerStorefrontDevApplicationIdOverride = userIds(9103).useSlayerStorefrontDevApplicationIdOverride();
   if (null == slayerStorefrontDevApplicationIdOverride) {
     return stateFromStoresArray;
   } else {

@@ -1,13 +1,13 @@
-// Module ID: 6414
-// Function ID: 6415
+// Module ID: 6446
+// Function ID: 6447
 // Name: GoatIllocon
-// Dependencies: [21, 558, 568, 6415, 5802, 2]
+// Dependencies: [21, 558, 568, 6447, 5834, 2]
 
-// Module 6414 (GoatIllocon)
+// Module 6446 (GoatIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6415 from "module_6415" /* 6415 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6447 from "module_6447" /* 6447 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const GoatIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6415 };
+    const obj2 = { uri: _modDef6447 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const GoatIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6415 };
+  const obj2 = { uri: _modDef6447 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

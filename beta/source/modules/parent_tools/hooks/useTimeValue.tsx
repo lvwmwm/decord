@@ -1,9 +1,9 @@
-// Module ID: 15202
-// Function ID: 15203
+// Module ID: 15212
+// Function ID: 15213
 // Name: useTimeValue
-// Dependencies: [19, 558, 568, 2, 12950]
+// Dependencies: [19, 558, 568, 2, 12986]
 
-// Module 15202 (useTimeValue)
+// Module 15212 (useTimeValue)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
@@ -49,4 +49,4 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((initial) => {
     return tmp2;
   });
 });
-export const timeToMinutes = fn(12950).timeToMinutes;
+export const timeToMinutes = fn(12986).timeToMinutes;

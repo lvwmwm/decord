@@ -1,15 +1,9 @@
 // Module ID: 6884
 // Function ID: 6885
-// Dependencies: []
-// Exports: enableLogging, print
+// Dependencies: [1125]
 
 // Module 6884
-function print() {
+import registerAsset from "module_1125" /* 1125 */;
 
-}
-const frozen = Object.freeze(print);
 
-export { print };
-export const enableLogging = (arg0) => {
-  console.warn("[BottomSheet] could not enable logging on production!");
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "80a1b67e775ddb8de80fde27e63a5302", name: "CircleXIcon-secondary", type: "png" });

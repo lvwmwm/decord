@@ -1,20 +1,20 @@
-// Module ID: 16420
-// Function ID: 16421
+// Module ID: 16430
+// Function ID: 16431
 // Name: typing_indicators/TypingIndicator
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4693, 4610, 1181, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4725, 4642, 1181, 2]
 
-// Module 16420 (typing_indicators/TypingIndicator)
+// Module 16430 (typing_indicators/TypingIndicator)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import shared from "shared" /* 4610 */;
-import useThemeDefault from "useTheme" /* 4693 */;
+import shared from "shared" /* 4642 */;
+import useThemeDefault from "useTheme" /* 4725 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles((arg0) => {
   const obj = { ellipsisWrapper: { zIndex: 10, borderRadius: 17, borderWidth: 2, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, ellipsis: null, ellipsisDot: null };
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
@@ -32,11 +32,11 @@ export const TypingIndicator = ReactCompilerGating.isReactCompilerEnabled() ? ((
   style = style.style;
   const tmp4 = useThemeDefault();
   if (cResult[0] !== tmp4) {
-    const isThemeLightResult = tmp(4610).isThemeLight(tmp4);
+    const isThemeLightResult = tmp(4642).isThemeLight(tmp4);
     cResult[0] = tmp4;
     cResult[1] = isThemeLightResult;
     let tmp5 = isThemeLightResult;
-    const tmpResult = tmp(4610);
+    const tmpResult = tmp(4642);
   } else {
     tmp5 = cResult[1];
   }

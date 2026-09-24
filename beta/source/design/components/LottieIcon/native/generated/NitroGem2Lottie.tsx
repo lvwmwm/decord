@@ -1,12 +1,12 @@
-// Module ID: 14428
-// Function ID: 14429
+// Module ID: 14466
+// Function ID: 14467
 // Name: NitroGem2Lottie
-// Dependencies: [19, 21, 558, 568, 14429, 10204, 2]
+// Dependencies: [19, 21, 558, 568, 14467, 10243, 2]
 
-// Module 14428 (NitroGem2Lottie)
+// Module 14466 (NitroGem2Lottie)
 import c from "c" /* 568 */;
-import LottieIcon from "LottieIcon" /* 10204 */;
-import _mod14429 from "module_14429" /* 14429 */;
+import LottieIcon from "LottieIcon" /* 10243 */;
+import _mod14467 from "module_14467" /* 14467 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("design/components/LottieIcon/native/g
 export const NitroGem2Lottie = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
   const cResult = c.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(14429);
+    const tmpResult = tmp(14467);
     cResult[0] = tmpResult;
     let first = tmpResult;
   } else {
@@ -40,5 +40,5 @@ export const NitroGem2Lottie = noop.forwardRef(ReactCompilerGating.isReactCompil
   tmp6 = tmp8;
 }) : ((arg0, ref) => {
   const merged = Object.assign(arg0);
-  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod14429, animation: "all", ref, layers, markers: items });
+  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod14467, animation: "all", ref, layers, markers: items });
 }));

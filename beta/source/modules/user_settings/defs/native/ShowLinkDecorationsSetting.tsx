@@ -1,15 +1,15 @@
-// Module ID: 15672
-// Function ID: 15673
+// Module ID: 15682
+// Function ID: 15683
 // Name: ShowLinkDecorationsSetting
-// Dependencies: [4750, 8238, 558, 568, 504, 14720, 11594, 1119, 2]
+// Dependencies: [4782, 8270, 558, 568, 504, 14758, 11630, 1119, 2]
 // Exports: onShowLinkDecorationsValueChange
 
-// Module 15672 (ShowLinkDecorationsSetting)
+// Module 15682 (ShowLinkDecorationsSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14720 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14758 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
@@ -35,13 +35,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 function onShowLinkDecorationsValueChange(alwaysShowLinkDecorations) {
   const result = AccessibilityActionCreators.setAlwaysShowLinkDecorations(alwaysShowLinkDecorations);
 }
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.OLZFB8);
   },
-  parent: fn(8238).MobileUserSettings.ACCESSIBILITY,
+  parent: fn(8270).MobileUserSettings.ACCESSIBILITY,
   useValue: tmp2,
   onValueChange: onShowLinkDecorationsValueChange
 });

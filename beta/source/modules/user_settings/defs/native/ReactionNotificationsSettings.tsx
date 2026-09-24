@@ -1,16 +1,16 @@
-// Module ID: 15753
-// Function ID: 15754
+// Module ID: 15763
+// Function ID: 15764
 // Name: ReactionNotificationsSettings
-// Dependencies: [8238, 4411, 2023, 1119, 1190, 11594, 2]
+// Dependencies: [8270, 4443, 2023, 1119, 1190, 11630, 2]
 // Exports: onChange
 
-// Module 15753 (ReactionNotificationsSettings)
+// Module 15763 (ReactionNotificationsSettings)
 import util from "util" /* 1119 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import ReactionUtils from "ReactionUtils" /* 4411 */;
-import SettingsConstants from "SettingsConstants" /* 8238 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
+import ReactionUtils from "ReactionUtils" /* 4443 */;
+import SettingsConstants from "SettingsConstants" /* 8270 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
 import size from "module_2" /* 2 */;
 
 function onChange(arg0) {

@@ -1,14 +1,14 @@
-// Module ID: 9793
-// Function ID: 9794
+// Module ID: 9825
+// Function ID: 9826
 // Name: StageChannelUpsellCardStore
-// Dependencies: [2051, 1247, 510, 1252, 558, 568, 4383, 2]
+// Dependencies: [2051, 1247, 510, 1252, 558, 568, 4415, 2]
 
-// Module 9793 (StageChannelUpsellCardStore)
+// Module 9825 (StageChannelUpsellCardStore)
 import Storage2 from "Storage" /* 510 */;
 import c from "c" /* 568 */;
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2051 */;
-import _mod4383 from "module_4383" /* 4383 */;
+import _mod4415 from "module_4415" /* 4415 */;
 import identity from "module_1247" /* 1247 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -43,9 +43,9 @@ export const useStageChannelUpsellCardStore = ReactCompilerGating.isReactCompile
   } else {
     first = cResult[0];
   }
-  return closure_3(first, _mod4383.shallow);
+  return closure_3(first, _mod4415.shallow);
 }) : (() => closure_3((arg0) => {
   const items = [, ];
   ({ hasSeenUpsellCard: arr[0], markAsSeen: arr[1] } = arg0);
   return items;
-}, _mod4383.shallow));
+}, _mod4415.shallow));

@@ -1,18 +1,18 @@
-// Module ID: 16137
-// Function ID: 16138
+// Module ID: 16147
+// Function ID: 16148
 // Name: FeedProductList
-// Dependencies: [19, 17, 21, 4758, 9042, 558, 568, 16138, 9149, 16139, 2]
+// Dependencies: [19, 17, 21, 4790, 9074, 558, 568, 16148, 9181, 16149, 2]
 
-// Module 16137 (FeedProductList)
+// Module 16147 (FeedProductList)
 import c from "c" /* 568 */;
-import CollectiblesShopCardsGridDefault from "CollectiblesShopCardsGrid" /* 16139 */;
+import CollectiblesShopCardsGridDefault from "CollectiblesShopCardsGrid" /* 16149 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
-let obj2 = { skeletonGrid: { flex: 1, alignItems: "center" }, skeletonRow: { flexDirection: "row", gap: fn(9042).COLLECTIBLES_SHOP_CARD_GAP, paddingBottom: fn(9042).COLLECTIBLES_SHOP_CARD_GAP } };
+const createStyles = fn(4790);
+let obj2 = { skeletonGrid: { flex: 1, alignItems: "center" }, skeletonRow: { flexDirection: "row", gap: fn(9074).COLLECTIBLES_SHOP_CARD_GAP, paddingBottom: fn(9074).COLLECTIBLES_SHOP_CARD_GAP } };
 let closure_5 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
 let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -20,7 +20,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ loadingCardsNum, accessibilityLabel } = arg0);
   const tmp2 = closure_5();
   let obj = num(568);
-  const cardLayout = num(16138).useCardLayout();
+  const cardLayout = num(16148).useCardLayout();
   ({ columns, cardWidth } = cardLayout);
   num = cardWidth;
   const rowWidth = cardLayout.rowWidth;
@@ -72,9 +72,9 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj6.style = items1;
     obj6.children = arr.map((item, index) => {
       const obj = { width: require, style: null };
-      const obj2 = { marginBottom: num(9042).COLLECTIBLES_SHOP_CARD_GAP };
+      const obj2 = { marginBottom: num(9074).COLLECTIBLES_SHOP_CARD_GAP };
       obj.style = obj2;
-      return closure_4(closure_1(9149), obj, "" + num + "-" + index);
+      return closure_4(closure_1(9181), obj, "" + num + "-" + index);
     });
     let _HermesInternal = HermesInternal;
     let arr2 = items.push(<View key={"row-" + num} style={null}>{null}</View>);
@@ -90,7 +90,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const loadingCardsNum = accessibilityLabel.loadingCardsNum;
   num = undefined;
   const tmp = closure_5();
-  const cardLayout = num(16138).useCardLayout();
+  const cardLayout = num(16148).useCardLayout();
   ({ columns, cardWidth: num } = cardLayout);
   const items = [];
   for (let num = 0; num < loadingCardsNum; num = num + columns) {
@@ -106,9 +106,9 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj3.style = items1;
     obj3.children = arr.map((item, index) => {
       const obj = { width: require, style: null };
-      const obj2 = { marginBottom: num(9042).COLLECTIBLES_SHOP_CARD_GAP };
+      const obj2 = { marginBottom: num(9074).COLLECTIBLES_SHOP_CARD_GAP };
       obj.style = obj2;
-      return closure_4(closure_1(9149), obj, "" + num + "-" + index);
+      return closure_4(closure_1(9181), obj, "" + num + "-" + index);
     });
     let _HermesInternal = HermesInternal;
     let arr2 = items.push(<View key={"row-" + num} style={null}>{null}</View>);
@@ -116,7 +116,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <View style={tmp.skeletonGrid} accessibilityRole="list" accessibilityLabel={arg0.accessibilityLabel} accessibilityState={{ busy: true }} accessible>{items}</View>;
 });
 ReactCompilerGating = fn(558);
-let obj3 = { flexDirection: "row", gap: fn(9042).COLLECTIBLES_SHOP_CARD_GAP, paddingBottom: fn(9042).COLLECTIBLES_SHOP_CARD_GAP };
+let obj3 = { flexDirection: "row", gap: fn(9074).COLLECTIBLES_SHOP_CARD_GAP, paddingBottom: fn(9074).COLLECTIBLES_SHOP_CARD_GAP };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/FeedProductList.tsx");
 

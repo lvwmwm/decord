@@ -3,5 +3,3 @@
 // Dependencies: []
 
 // Module 14591
-
-export default (arg0) => null == arg0;

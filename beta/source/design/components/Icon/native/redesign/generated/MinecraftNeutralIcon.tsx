@@ -1,15 +1,15 @@
-// Module ID: 8973
-// Function ID: 8974
+// Module ID: 9005
+// Function ID: 9006
 // Name: MinecraftNeutralIcon
-// Dependencies: [109, 19, 17, 21, 558, 568, 580, 8974, 4461, 8975, 8976, 2]
+// Dependencies: [109, 19, 17, 21, 558, 568, 580, 9006, 4493, 9007, 9008, 2]
 
-// Module 8973 (MinecraftNeutralIcon)
+// Module 9005 (MinecraftNeutralIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod8974 from "module_8974" /* 8974 */;
-import _mod8975 from "module_8975" /* 8975 */;
-import _mod8976 from "module_8976" /* 8976 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9006 from "module_9006" /* 9006 */;
+import _mod9007 from "module_9007" /* 9007 */;
+import _mod9008 from "module_9008" /* 9008 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -57,7 +57,7 @@ export const MinecraftNeutralIcon = ReactCompilerGating.isReactCompilerEnabled()
     str2 = tmp7;
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(8974);
+    const tmpResult = tmp(9006);
     cResult[6] = tmpResult;
     let tmp12 = tmpResult;
   } else {
@@ -70,7 +70,7 @@ export const MinecraftNeutralIcon = ReactCompilerGating.isReactCompilerEnabled()
       }
       const _Symbol = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmpResult3 = tmp(8975);
+        const tmpResult3 = tmp(9007);
         cResult[11] = tmpResult3;
         let tmp17 = tmpResult3;
       } else {
@@ -98,7 +98,7 @@ export const MinecraftNeutralIcon = ReactCompilerGating.isReactCompilerEnabled()
             }
             const _Symbol3 = Symbol;
             if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-              const tmpResult4 = tmp(8976);
+              const tmpResult4 = tmp(9008);
               cResult[19] = tmpResult4;
               let tmp29 = tmpResult4;
             } else {
@@ -145,7 +145,7 @@ export const MinecraftNeutralIcon = ReactCompilerGating.isReactCompilerEnabled()
               }
               const obj5 = { source: tmp29, color: str2, style: cResult[21] };
               const merged = Object.assign(tmp4);
-              const tmp40 = timestampProducer(tmp(4461).BaseIconImage, obj5);
+              const tmp40 = timestampProducer(tmp(4493).BaseIconImage, obj5);
               cResult[23] = tmp4;
               cResult[24] = cResult[21];
               cResult[25] = str2;
@@ -156,7 +156,7 @@ export const MinecraftNeutralIcon = ReactCompilerGating.isReactCompilerEnabled()
         }
         const obj6 = { source: tmp17, color: str, style: cResult[13] };
         const merged1 = Object.assign(tmp4);
-        const tmp28 = timestampProducer(tmp(4461).BaseIconImage, obj6);
+        const tmp28 = timestampProducer(tmp(4493).BaseIconImage, obj6);
         cResult[15] = tmp4;
         cResult[16] = str;
         cResult[17] = cResult[13];
@@ -188,15 +188,15 @@ export const MinecraftNeutralIcon = ReactCompilerGating.isReactCompilerEnabled()
   const merged = Object.assign(secondaryColor, Object.assign({ style: 0, color: 0, secondaryColor: 0, tertiaryColor: 0 }));
   const obj = { children: null };
   const merged1 = Object.assign(merged);
-  const items = [timestampProducer(BaseIconImage.BaseIconImage, { source: _mod8974, color, style }), , ];
-  const obj3 = { source: _mod8975, color: str, style: null };
+  const items = [timestampProducer(BaseIconImage.BaseIconImage, { source: _mod9006, color, style }), , ];
+  const obj3 = { source: _mod9007, color: str, style: null };
   const items1 = [style];
   const items2 = [];
   items2[HermesBuiltin.arraySpread(items1.flat(), 0)] = { position: "absolute", top: 0 };
   obj3.style = items2;
   const merged2 = Object.assign(merged);
   items[1] = timestampProducer(BaseIconImage.BaseIconImage, obj3);
-  const obj4 = { source: _mod8976, color: str2, style: null };
+  const obj4 = { source: _mod9008, color: str2, style: null };
   const items3 = [style];
   const items4 = [];
   items4[HermesBuiltin.arraySpread(items3.flat(), 0)] = { position: "absolute", top: 0 };

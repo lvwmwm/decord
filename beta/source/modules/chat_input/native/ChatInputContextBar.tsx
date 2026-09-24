@@ -1,38 +1,38 @@
-// Module ID: 12570
-// Function ID: 12571
+// Module ID: 12606
+// Function ID: 12607
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 4750, 5107, 1376, 1078, 21, 1181, 4758, 580, 558, 568, 4462, 1119, 4754, 7181, 5341, 504, 4479, 4991, 9974, 8224, 12571, 4577, 4497, 4759, 11791, 1245, 11789, 1105, 4990, 8024, 12357, 8095, 12572, 2]
+// Dependencies: [19, 17, 4782, 5139, 1376, 1078, 21, 1181, 4790, 580, 558, 568, 4494, 1119, 4786, 7213, 5373, 504, 4511, 5023, 10006, 8256, 12607, 4609, 4529, 4791, 11827, 1245, 11825, 1105, 5022, 8056, 12393, 8127, 12608, 2]
 
-// Module 12570 (ChatInputContextBar)
+// Module 12606 (ChatInputContextBar)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import router_utils from "router_utils" /* 1105 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import useToken from "useToken" /* 4462 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8024 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 8095 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 11791 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 12357 */;
+import useToken from "useToken" /* 4494 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8056 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 8127 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 11827 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 12393 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
-import DraftStore from "DraftStore" /* 5107 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import DraftStore from "DraftStore" /* 5139 */;
 import UserStore from "UserStore" /* 1376 */;
 
-const _modDef7181 = tmp5(7181);
+const _modDef7213 = tmp5(7213);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const DraftType = fn(5107).DraftType;
+const DraftType = fn(5139).DraftType;
 const Constants = fn(1078);
 ({ AnalyticEvents: c10, Routes: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
 let obj = { duration: 250, easing: fn(1181).STANDARD_EASING };
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let closure_16 = createStyles.createStyles((arg0) => {
   let MOBILE_FLOATING_ACCESSORY_BACKGROUND = arg0;
   if (arg0 == null) {
@@ -40,7 +40,7 @@ let closure_16 = createStyles.createStyles((arg0) => {
   }
   return { contextBar: { backgroundColor: MOBILE_FLOATING_ACCESSORY_BACKGROUND } };
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let closure_17 = createStyles.createStyles(() => {
   obj = { contextBarRow: { overflow: "hidden", flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_HORIZONTAL, paddingVertical: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_VERTICAL, gap: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_GAP }, floatingReplyTextWrapper: { flexShrink: 1, minWidth: 0 }, floatingContextBar: null, replyMentionButtonActive: null, replyMentionIcon: null, replyMentionIconActive: null, floatingRightActions: null, floatingMentionGroup: null, floatingDivider: null, floatingCloseIcon: null };
   const obj2 = { overflow: "hidden", flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_HORIZONTAL, paddingVertical: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_PADDING_VERTICAL, gap: nativeDefault.modules.mobile.CHAT_INPUT_CONTEXT_BAR_GAP };
@@ -77,7 +77,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelReplyi
   }
   if (cResult[1] !== tmp4.floatingReplyTextWrapper) {
     const obj4 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: floatingReplyTextWrapper, children: first };
-    const tmp12 = __initData(tmp(4754).Text, obj4);
+    const tmp12 = __initData(tmp(4786).Text, obj4);
     cResult[1] = tmp4.floatingReplyTextWrapper;
     cResult[2] = tmp12;
     let tmp10 = tmp12;
@@ -97,7 +97,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelReplyi
     tmp15 = bound;
   }
   if (cResult[4] !== tmp4.floatingCloseIcon) {
-    const obj5 = { source: _modDef7181, size: tmp(1181).Icon.Sizes.CUSTOM, style: tmp4.floatingCloseIcon };
+    const obj5 = { source: _modDef7213, size: tmp(1181).Icon.Sizes.CUSTOM, style: tmp4.floatingCloseIcon };
     const tmp18 = __initData(tmp(1181).Icon, obj5);
     cResult[4] = tmp4.floatingCloseIcon;
     cResult[5] = tmp18;
@@ -166,7 +166,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelReplyi
   obj6.hitSlop = tmp10;
   obj6.onPress = onCancelReplying.onCancelReplying;
   const tmp7 = __initData2;
-  obj6.children = __initData(native.Icon, { source: _modDef7181, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon });
+  obj6.children = __initData(native.Icon, { source: _modDef7213, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon });
   obj5.children = __initData(Pressables.PressableOpacity, obj6);
   items[1] = __initData(component, obj5);
   obj3.children = items;
@@ -991,7 +991,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelEditin
   }
   if (cResult[1] !== tmp4.floatingReplyTextWrapper) {
     const obj4 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: tmp4.floatingReplyTextWrapper, children: first };
-    const tmp12 = __initData(tmp(4754).Text, obj4);
+    const tmp12 = __initData(tmp(4786).Text, obj4);
     cResult[1] = tmp4.floatingReplyTextWrapper;
     cResult[2] = tmp12;
     let tmp10 = tmp12;
@@ -1011,7 +1011,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelEditin
     tmp15 = bound;
   }
   if (cResult[4] !== tmp4.floatingCloseIcon) {
-    const obj5 = { source: _modDef7181, size: tmp(1181).Icon.Sizes.CUSTOM, style: tmp4.floatingCloseIcon };
+    const obj5 = { source: _modDef7213, size: tmp(1181).Icon.Sizes.CUSTOM, style: tmp4.floatingCloseIcon };
     const tmp18 = __initData(tmp(1181).Icon, obj5);
     cResult[4] = tmp4.floatingCloseIcon;
     cResult[5] = tmp18;
@@ -1085,11 +1085,11 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelEditin
   obj4.hitSlop = tmp9;
   obj4.onPress = onCancelEditing.onCancelEditing;
   const tmp8 = __initData(Text_Text.Text, obj3);
-  obj4.children = __initData(native.Icon, { source: _modDef7181, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon });
+  obj4.children = __initData(native.Icon, { source: _modDef7213, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon });
   const obj6 = { style: tmp.contextBarRow, children: null };
   const obj7 = { children: null };
   const items = [tmp8, ];
-  const obj5 = { source: _modDef7181, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
+  const obj5 = { source: _modDef7213, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
   items[1] = __initData(component, { style: tmp.floatingRightActions, children: __initData(Pressables.PressableOpacity, obj4) });
   obj7.children = items;
   obj6.children = __initData2(state, obj7);
@@ -1125,7 +1125,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[3] !== tmp10) {
     const obj5 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: tmp10 };
-    const tmp18 = __initData(tmp(4754).Text, obj5);
+    const tmp18 = __initData(tmp(4786).Text, obj5);
     cResult[3] = tmp10;
     cResult[4] = tmp18;
     let tmp16 = tmp18;
@@ -1151,7 +1151,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp23 = bound;
       }
       if (cResult[10] !== tmp4.floatingCloseIcon) {
-        const obj6 = { source: _modDef7181, size: tmp(1181).Icon.Sizes.CUSTOM, style: tmp4.floatingCloseIcon };
+        const obj6 = { source: _modDef7213, size: tmp(1181).Icon.Sizes.CUSTOM, style: tmp4.floatingCloseIcon };
         const tmp26 = __initData(tmp(1181).Icon, obj6);
         cResult[10] = tmp4.floatingCloseIcon;
         cResult[11] = tmp26;
@@ -1203,7 +1203,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj10 = { accessibilityRole: "button", accessibilityLabel: tmp21, activeOpacity: 0.5, hitSlop: tmp23, onPress: onCancelScheduling, children: tmp24 };
-      const tmp29 = __initData(tmp(5341).PressableOpacity, obj10);
+      const tmp29 = __initData(tmp(5373).PressableOpacity, obj10);
       cResult[12] = onCancelScheduling;
       cResult[13] = tmp23;
       cResult[14] = tmp24;
@@ -1243,11 +1243,11 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj6.hitSlop = tmp9;
   obj6.onPress = onCancelScheduling;
   const tmp8 = __initData(Pressables.PressableOpacity, obj3);
-  obj6.children = __initData(native.Icon, { source: _modDef7181, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon });
+  obj6.children = __initData(native.Icon, { source: _modDef7213, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon });
   const obj8 = { style: tmp.contextBarRow, children: null };
   const obj9 = { children: null };
   const items = [tmp8, ];
-  const obj7 = { source: _modDef7181, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
+  const obj7 = { source: _modDef7213, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
   items[1] = __initData(component, { style: tmp.floatingRightActions, children: __initData(Pressables.PressableOpacity, obj6) });
   obj9.children = items;
   obj8.children = __initData2(state, obj9);
@@ -1262,18 +1262,18 @@ let closure_26 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
   const cResult = backgroundColor(568).c(9);
   children = children.children;
   obj = backgroundColor(568);
-  backgroundColor = closure_16(backgroundColor(4577).useGradientValue(backgroundColor(4577).GradientPercentage.END)).contextBar.backgroundColor;
+  backgroundColor = closure_16(backgroundColor(4609).useGradientValue(backgroundColor(4609).GradientPercentage.END)).contextBar.backgroundColor;
   const tmp3 = closure_17();
-  const obj2 = backgroundColor(4577);
-  const sharedValue = backgroundColor(4497).useSharedValue(0);
-  const obj3 = backgroundColor(4497);
+  const obj2 = backgroundColor(4609);
+  const sharedValue = backgroundColor(4529).useSharedValue(0);
+  const obj3 = backgroundColor(4529);
   let fn = function o() {
     return { backgroundColor, maxHeight: sharedValue.get() };
   };
   fn.__closure = { stylesBackgroundColor: backgroundColor, heightSv: sharedValue };
   fn.__workletHash = 16731072716488;
   fn.__initData = __initData;
-  const animatedStyle = backgroundColor(4497).useAnimatedStyle(fn);
+  const animatedStyle = backgroundColor(4529).useAnimatedStyle(fn);
   dependencyMap = first.useRef(null);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function s() {
@@ -1292,16 +1292,16 @@ let closure_26 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
       constructor() {
         obj = {
           componentDidAppear() {
-                  const result = sharedValue.set(backgroundColor(4759).withTiming(60, obj));
+                  const result = sharedValue.set(backgroundColor(4791).withTiming(60, obj));
                 },
           componentDidEnter() {
-                  const result = sharedValue.set(backgroundColor(4759).withTiming(60, obj));
+                  const result = sharedValue.set(backgroundColor(4791).withTiming(60, obj));
                 },
           componentWillLeave(current) {
                   dependencyMap.current = current;
                   const fn = function n() { ... };
-                  obj = backgroundColor(4759);
-                  fn.__closure = { runOnJS: backgroundColor(4497).runOnJS, handleTransitionFinished };
+                  obj = backgroundColor(4791);
+                  fn.__closure = { runOnJS: backgroundColor(4529).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
                   const result = sharedValue.set(obj.withTiming(0, closure_2_15, "respect-motion-settings", fn));
@@ -1318,16 +1318,16 @@ let closure_26 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
       constructor() {
         obj = {
           componentDidAppear() {
-                  const result = sharedValue.set(backgroundColor(4759).withTiming(60, obj));
+                  const result = sharedValue.set(backgroundColor(4791).withTiming(60, obj));
                 },
           componentDidEnter() {
-                  const result = sharedValue.set(backgroundColor(4759).withTiming(60, obj));
+                  const result = sharedValue.set(backgroundColor(4791).withTiming(60, obj));
                 },
           componentWillLeave(current) {
                   dependencyMap.current = current;
                   const fn = function n() { ... };
-                  obj = backgroundColor(4759);
-                  fn.__closure = { runOnJS: backgroundColor(4497).runOnJS, handleTransitionFinished };
+                  obj = backgroundColor(4791);
+                  fn.__closure = { runOnJS: backgroundColor(4529).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
                   const result = sharedValue.set(obj.withTiming(0, closure_2_15, "respect-motion-settings", fn));
@@ -1343,16 +1343,16 @@ let closure_26 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
       constructor() {
         obj = {
           componentDidAppear() {
-                  const result = sharedValue.set(backgroundColor(4759).withTiming(60, obj));
+                  const result = sharedValue.set(backgroundColor(4791).withTiming(60, obj));
                 },
           componentDidEnter() {
-                  const result = sharedValue.set(backgroundColor(4759).withTiming(60, obj));
+                  const result = sharedValue.set(backgroundColor(4791).withTiming(60, obj));
                 },
           componentWillLeave(current) {
                   dependencyMap.current = current;
                   const fn = function n() { ... };
-                  obj = backgroundColor(4759);
-                  fn.__closure = { runOnJS: backgroundColor(4497).runOnJS, handleTransitionFinished };
+                  obj = backgroundColor(4791);
+                  fn.__closure = { runOnJS: backgroundColor(4529).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
                   const result = sharedValue.set(obj.withTiming(0, closure_2_15, "respect-motion-settings", fn));
@@ -1366,16 +1366,16 @@ let closure_26 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
         constructor() {
           obj = {
             componentDidAppear() {
-                      const result = sharedValue.set(backgroundColor(4759).withTiming(60, obj));
+                      const result = sharedValue.set(backgroundColor(4791).withTiming(60, obj));
                     },
             componentDidEnter() {
-                      const result = sharedValue.set(backgroundColor(4759).withTiming(60, obj));
+                      const result = sharedValue.set(backgroundColor(4791).withTiming(60, obj));
                     },
             componentWillLeave(current) {
                       dependencyMap.current = current;
                       const fn = function n() { ... };
-                      obj = backgroundColor(4759);
-                      fn.__closure = { runOnJS: backgroundColor(4497).runOnJS, handleTransitionFinished };
+                      obj = backgroundColor(4791);
+                      fn.__closure = { runOnJS: backgroundColor(4529).runOnJS, handleTransitionFinished };
                       fn.__workletHash = 10908592279914;
                       fn.__initData = __initData;
                       const result = sharedValue.set(obj.withTiming(0, closure_2_15, "respect-motion-settings", fn));
@@ -1387,7 +1387,7 @@ let closure_26 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
       return tmp10;
     }
     const obj6 = { style: tmp9, children };
-    const tmp13 = closure_12(sharedValue(4497).View, obj6);
+    const tmp13 = closure_12(sharedValue(4529).View, obj6);
     cResult[6] = children;
     cResult[7] = tmp9;
     cResult[8] = tmp13;
@@ -1649,7 +1649,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
       obj = { message_id: id, channel_id: null, guild_id: null, context_action: "reply", reason: null, is_own_message: null };
       ({ id: obj.channel_id, guild_id: obj.guild_id } = tmp10);
       const obj4 = AnalyticsUtilsDefault;
-      obj.reason = tmp8(11789).getContextBarCancelReason("reply", "cancel");
+      obj.reason = tmp8(11825).getContextBarCancelReason("reply", "cancel");
       const currentUser = UserStore.getCurrentUser();
       let id1;
       if (currentUser != null) {
@@ -1661,7 +1661,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
       }
       obj.is_own_message = id1 === id2;
       obj4.track(constants.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
-      const tmp8Result = tmp8(11789);
+      const tmp8Result = tmp8(11825);
     }
   };
   cResult[2] = channel.guild_id;

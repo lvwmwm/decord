@@ -1,24 +1,24 @@
-// Module ID: 13463
-// Function ID: 13464
+// Module ID: 13499
+// Function ID: 13500
 // Name: OrbCheckoutModalComponents
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 7176, 5186, 4754, 11310, 1119, 11312, 13462, 7488, 4693, 13464, 4610, 9114, 5188, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 7208, 5218, 4786, 11346, 1119, 11348, 13498, 7520, 4725, 13500, 4642, 9146, 5220, 2]
 
-// Module 13463 (OrbCheckoutModalComponents)
+// Module 13499 (OrbCheckoutModalComponents)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import shared from "shared" /* 4610 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7176 */;
-import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7488 */;
-import OrbsIcon from "OrbsIcon" /* 9114 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 11310 */;
-import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 11312 */;
-import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 13462 */;
-import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 13464 */;
+import shared from "shared" /* 4642 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7208 */;
+import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7520 */;
+import OrbsIcon from "OrbsIcon" /* 9146 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 11346 */;
+import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 11348 */;
+import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 13498 */;
+import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 13500 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -26,7 +26,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, ActivityIndicator: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { topRowWrapper: { width: "100%", marginBottom: 10 }, rowWrapper: { width: "100%", marginVertical: 10 }, rowDetailsContainer: { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, padding: nativeDefault.space.PX_16 }, orbPaymentSourceDetails: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, sectionTitle: null, spinner: null, disclaimer: null, errorCard: null };
 let obj3 = { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, padding: nativeDefault.space.PX_16 };
 obj2.sectionTitle = { marginBottom: nativeDefault.space.PX_8 };
@@ -44,7 +44,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((error) => {
   error = error.error;
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = timestampProducer(tmp(7176).CircleErrorIcon, { size: "sm", color: "mobile-text-heading-primary" });
+    const tmp7 = timestampProducer(tmp(7208).CircleErrorIcon, { size: "sm", color: "mobile-text-heading-primary" });
     cResult[0] = tmp7;
     let first = tmp7;
   } else {
@@ -54,9 +54,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((error) => {
     const obj2 = { direction: "horizontal", spacing: 8, align: "flex-start", children: null };
     const items = [first, ];
     const obj3 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: error };
-    items[1] = timestampProducer(tmp(4754).Text, obj3);
+    items[1] = timestampProducer(tmp(4786).Text, obj3);
     obj2.children = items;
-    const tmp11 = React5(tmp(5186).Stack, obj2);
+    const tmp11 = React5(tmp(5218).Stack, obj2);
     cResult[1] = error;
     cResult[2] = tmp11;
     let tmp8 = tmp11;
@@ -135,7 +135,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
     }
     if (cResult[9] !== tmp4.sectionTitle) {
       const obj4 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", style: sectionTitle, children: tmp21 };
-      const tmp25 = timestampProducer(tmp(4754).Text, obj4);
+      const tmp25 = timestampProducer(tmp(4786).Text, obj4);
       cResult[9] = tmp4.sectionTitle;
       cResult[10] = tmp25;
       let tmp23 = tmp25;
@@ -200,7 +200,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((orbBalance) => {
   }
   if (cResult[1] !== tmp4.sectionTitle) {
     const obj2 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", style: sectionTitle, children: first };
-    const tmp9 = timestampProducer(tmp(4754).Text, obj2);
+    const tmp9 = timestampProducer(tmp(4786).Text, obj2);
     cResult[1] = tmp4.sectionTitle;
     cResult[2] = tmp9;
     let tmp7 = tmp9;
@@ -216,7 +216,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((orbBalance) => {
       const obj3 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
       const intl2 = tmp(1119).intl;
       obj3.children = intl2.string(tmp(1119).t.y0WGqP);
-      const tmp13 = timestampProducer(tmp(4754).Text, obj3);
+      const tmp13 = timestampProducer(tmp(4786).Text, obj3);
       cResult[6] = tmp13;
       let tmp11 = tmp13;
     } else {
@@ -294,11 +294,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_8();
   const skuId = OrbCheckoutModalContext.useOrbCheckoutModalContext().skuId;
   if (cResult[0] !== skuId) {
-    const orbCheckoutDisclaimerMessage = tmp(7488).getOrbCheckoutDisclaimerMessage(skuId);
+    const orbCheckoutDisclaimerMessage = tmp(7520).getOrbCheckoutDisclaimerMessage(skuId);
     cResult[0] = skuId;
     cResult[1] = orbCheckoutDisclaimerMessage;
     let tmp5 = orbCheckoutDisclaimerMessage;
-    const tmpResult = tmp(7488);
+    const tmpResult = tmp(7520);
   } else {
     tmp5 = cResult[1];
   }
@@ -315,10 +315,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp7 = tmp8;
 }) : (() => {
   const tmp = closure_8();
-  skuId = skuId(13462).useOrbCheckoutModalContext().skuId;
+  skuId = skuId(13498).useOrbCheckoutModalContext().skuId;
   const items = [skuId];
   const memo = noop.useMemo(() => OrbCheckoutUtils.getOrbCheckoutDisclaimerMessage(skuId), items);
-  return closure_6(skuId(4754).Text, { style: tmp.disclaimer, variant: "text-xxs/normal", color: "interactive-text-active", children: memo });
+  return closure_6(skuId(4786).Text, { style: tmp.disclaimer, variant: "text-xxs/normal", color: "interactive-text-active", children: memo });
 });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/virtual_currency/checkout/native/OrbCheckoutModalComponents.tsx");
@@ -366,7 +366,7 @@ export const OrbCheckoutPurchaseButton = ReactCompilerGating.isReactCompilerEnab
   }
   if (cResult[1] !== str2) {
     const obj4 = { size: "md", color: str2 };
-    const tmp12 = timestampProducer(tmp(9114).OrbsIcon, obj4);
+    const tmp12 = timestampProducer(tmp(9146).OrbsIcon, obj4);
     cResult[1] = str2;
     cResult[2] = tmp12;
     let tmp10 = tmp12;

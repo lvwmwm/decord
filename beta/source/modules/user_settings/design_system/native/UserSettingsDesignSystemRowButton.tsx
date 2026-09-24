@@ -1,16 +1,16 @@
-// Module ID: 16068
-// Function ID: 16069
+// Module ID: 16078
+// Function ID: 16079
 // Name: UserSettingsDesignSystemRowButton
-// Dependencies: [19, 17, 21, 558, 568, 8876, 5186, 580, 4754, 8878, 7625, 2]
+// Dependencies: [19, 17, 21, 558, 568, 8908, 5218, 580, 4786, 8910, 7657, 2]
 
-// Module 16068 (UserSettingsDesignSystemRowButton)
+// Module 16078 (UserSettingsDesignSystemRowButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import _modDef7625 from "module_7625" /* 7625 */;
-import Form from "Form" /* 8876 */;
-import RowButton from "RowButton" /* 8878 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import _modDef7657 from "module_7657" /* 7657 */;
+import Form from "Form" /* 8908 */;
+import RowButton from "RowButton" /* 8910 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -29,11 +29,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj3 = { style: null, children: null };
     const obj4 = { padding: nativeDefault.space.PX_16 };
     obj3.style = obj4;
-    const items = [hasOwnProperty(tmp(4754).Text, { variant: "text-sm/normal", children: "Row Button Row Buttons are full-width, high-emphasis buttons that are used as primary CTAs in a page." }), hasOwnProperty(tmp(4754).Text, { variant: "text-sm/normal", children: "Only stack up to 2 Row Buttons in a row to to prevent decision fatigue." })];
+    const items = [hasOwnProperty(tmp(4786).Text, { variant: "text-sm/normal", children: "Row Button Row Buttons are full-width, high-emphasis buttons that are used as primary CTAs in a page." }), hasOwnProperty(tmp(4786).Text, { variant: "text-sm/normal", children: "Only stack up to 2 Row Buttons in a row to to prevent decision fatigue." })];
     obj3.children = items;
-    obj2.description = timestampProducer(tmp(5186).Stack, obj3);
+    obj2.description = timestampProducer(tmp(5218).Stack, obj3);
     obj2.children = hasOwnProperty(React3, {});
-    const tmp9 = hasOwnProperty(tmp(8876).FormSection, obj2);
+    const tmp9 = hasOwnProperty(tmp(8908).FormSection, obj2);
     cResult[0] = tmp9;
     let first = tmp9;
   } else {
@@ -49,13 +49,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = {
       variant: "primary",
-      icon: _modDef7625,
+      icon: _modDef7657,
       label: "Primary Row Button",
       onPress() {
 
         }
     };
-    const tmp14 = hasOwnProperty(tmp(8878).RowButton, obj6);
+    const tmp14 = hasOwnProperty(tmp(8910).RowButton, obj6);
     cResult[2] = tmp14;
     let tmp11 = tmp14;
   } else {
@@ -64,14 +64,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj7 = {
       variant: "primary",
-      icon: _modDef7625,
+      icon: _modDef7657,
       label: "Primary Row Button",
       subLabel: "I am a high emphasis button with a subLabel",
       onPress() {
 
         }
     };
-    const tmp18 = hasOwnProperty(tmp(8878).RowButton, obj7);
+    const tmp18 = hasOwnProperty(tmp(8910).RowButton, obj7);
     cResult[3] = tmp18;
     let tmp15 = tmp18;
   } else {
@@ -80,13 +80,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj8 = {
       variant: "secondary",
-      icon: _modDef7625,
+      icon: _modDef7657,
       label: "Secondary Row Button",
       onPress() {
 
         }
     };
-    const tmp22 = hasOwnProperty(tmp(8878).RowButton, obj8);
+    const tmp22 = hasOwnProperty(tmp(8910).RowButton, obj8);
     cResult[4] = tmp22;
     let tmp19 = tmp22;
   } else {
@@ -94,14 +94,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj9 = {
-      icon: _modDef7625,
+      icon: _modDef7657,
       label: "Secondary Row Button",
       subLabel: "I am a high emphasis button with a subLabel",
       onPress() {
 
         }
     };
-    const tmp26 = hasOwnProperty(tmp(8878).RowButton, obj9);
+    const tmp26 = hasOwnProperty(tmp(8910).RowButton, obj9);
     cResult[5] = tmp26;
     let tmp23 = tmp26;
   } else {
@@ -109,22 +109,22 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj10 = {
-      icon: _modDef7625,
+      icon: _modDef7657,
       label: "Secondary Row Button",
       subLabel: "I am a high-emphasis button with more text. You can fit quite a lot of text in a row button. The text will continue to wrap",
       onPress() {
 
         }
     };
-    const tmp30 = hasOwnProperty(tmp(8878).RowButton, obj10);
+    const tmp30 = hasOwnProperty(tmp(8910).RowButton, obj10);
     cResult[6] = tmp30;
     let tmp27 = tmp30;
   } else {
     tmp27 = cResult[6];
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj11 = { source: _modDef7625 };
-    const tmp34 = hasOwnProperty(tmp(8878).RowButton.Icon, obj11);
+    const obj11 = { source: _modDef7657 };
+    const tmp34 = hasOwnProperty(tmp(8910).RowButton.Icon, obj11);
     cResult[7] = tmp34;
     let tmp31 = tmp34;
   } else {
@@ -139,7 +139,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 
         }
     };
-    const tmp37 = hasOwnProperty(tmp(8878).RowButton, obj12);
+    const tmp37 = hasOwnProperty(tmp(8910).RowButton, obj12);
     cResult[8] = tmp37;
     let tmp35 = tmp37;
   } else {
@@ -152,7 +152,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj15 = { children: null };
     const items2 = [tmp11, tmp15, tmp19, tmp23, tmp27, tmp35, ];
     const obj16 = {
-      icon: _modDef7625,
+      icon: _modDef7657,
       label: "Row Button",
       subLabel: "I am disabled",
       onPress() {
@@ -160,9 +160,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         },
       disabled: true
     };
-    items2[6] = hasOwnProperty(tmp(8878).RowButton, obj16);
+    items2[6] = hasOwnProperty(tmp(8910).RowButton, obj16);
     obj15.children = items2;
-    obj14.children = timestampProducer(tmp(5186).Stack, obj15);
+    obj14.children = timestampProducer(tmp(5218).Stack, obj15);
     items1[1] = hasOwnProperty(React3, obj14);
     obj13.children = items1;
     const tmp44 = timestampProducer(React4, obj13);
@@ -187,7 +187,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items2 = [
     hasOwnProperty(RowButton.RowButton, {
       variant: "primary",
-      icon: _modDef7625,
+      icon: _modDef7657,
       label: "Primary Row Button",
       onPress() {
 
@@ -202,7 +202,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   ];
   const obj7 = {
     variant: "primary",
-    icon: _modDef7625,
+    icon: _modDef7657,
     label: "Primary Row Button",
     onPress() {
 
@@ -210,7 +210,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   };
   items2[1] = hasOwnProperty(RowButton.RowButton, {
     variant: "primary",
-    icon: _modDef7625,
+    icon: _modDef7657,
     label: "Primary Row Button",
     subLabel: "I am a high emphasis button with a subLabel",
     onPress() {
@@ -219,7 +219,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
   const obj8 = {
     variant: "primary",
-    icon: _modDef7625,
+    icon: _modDef7657,
     label: "Primary Row Button",
     subLabel: "I am a high emphasis button with a subLabel",
     onPress() {
@@ -228,7 +228,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   };
   items2[2] = hasOwnProperty(RowButton.RowButton, {
     variant: "secondary",
-    icon: _modDef7625,
+    icon: _modDef7657,
     label: "Secondary Row Button",
     onPress() {
 
@@ -236,14 +236,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
   const obj9 = {
     variant: "secondary",
-    icon: _modDef7625,
+    icon: _modDef7657,
     label: "Secondary Row Button",
     onPress() {
 
     }
   };
   items2[3] = hasOwnProperty(RowButton.RowButton, {
-    icon: _modDef7625,
+    icon: _modDef7657,
     label: "Secondary Row Button",
     subLabel: "I am a high emphasis button with a subLabel",
     onPress() {
@@ -251,7 +251,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   });
   const obj10 = {
-    icon: _modDef7625,
+    icon: _modDef7657,
     label: "Secondary Row Button",
     subLabel: "I am a high emphasis button with a subLabel",
     onPress() {
@@ -259,7 +259,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   };
   items2[4] = hasOwnProperty(RowButton.RowButton, {
-    icon: _modDef7625,
+    icon: _modDef7657,
     label: "Secondary Row Button",
     subLabel: "I am a high-emphasis button with more text. You can fit quite a lot of text in a row button. The text will continue to wrap",
     onPress() {
@@ -268,21 +268,21 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
   const obj12 = { icon: null, label: "Row Button", subLabel: "With a custom RowButton.Icon", onPress: null };
   const obj11 = {
-    icon: _modDef7625,
+    icon: _modDef7657,
     label: "Secondary Row Button",
     subLabel: "I am a high-emphasis button with more text. You can fit quite a lot of text in a row button. The text will continue to wrap",
     onPress() {
 
     }
   };
-  obj12.icon = hasOwnProperty(RowButton.RowButton.Icon, { source: _modDef7625 });
+  obj12.icon = hasOwnProperty(RowButton.RowButton.Icon, { source: _modDef7657 });
   obj12.onPress = function onPress() {
 
   };
   items2[5] = hasOwnProperty(RowButton.RowButton, obj12);
-  const obj13 = { source: _modDef7625 };
+  const obj13 = { source: _modDef7657 };
   items2[6] = hasOwnProperty(RowButton.RowButton, {
-    icon: _modDef7625,
+    icon: _modDef7657,
     label: "Row Button",
     subLabel: "I am disabled",
     onPress() {

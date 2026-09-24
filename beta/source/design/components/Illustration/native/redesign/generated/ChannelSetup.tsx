@@ -1,13 +1,13 @@
-// Module ID: 18109
-// Function ID: 18110
+// Module ID: 18119
+// Function ID: 18120
 // Name: ChannelSetup
-// Dependencies: [19, 17, 21, 8507, 18110, 18111, 18112, 558, 568, 4610, 2]
+// Dependencies: [19, 17, 21, 8539, 18120, 18121, 18122, 558, 568, 4642, 2]
 // Exports: getChannelSetupSource
 
-// Module 18109 (ChannelSetup)
+// Module 18119 (ChannelSetup)
 import c from "c" /* 568 */;
-import shared from "shared" /* 4610 */;
-import _mod8507 from "module_8507" /* 8507 */;
+import shared from "shared" /* 4642 */;
+import _mod8539 from "module_8539" /* 8539 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,50 +20,50 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] !== theme) {
     const obj3 = {
       dark() {
-          return require("module_18110");
+          return require("module_18120");
         },
       darker() {
-          return require("module_18111");
+          return require("module_18121");
         },
       light() {
-          return require("module_18112");
+          return require("module_18122");
         }
     };
-    const illustrationSource = _mod8507.getIllustrationSource(theme, obj3);
+    const illustrationSource = _mod8539.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
     let tmp4 = illustrationSource;
-    const tmpResult = _mod8507;
+    const tmpResult = _mod8539;
   } else {
     tmp4 = cResult[1];
   }
   return tmp4;
 }) : (() => {
   const obj = shared;
-  return _mod8507.getIllustrationSource(obj.useThemeContext().theme, {
+  return _mod8539.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_18110");
+      return require("module_18120");
     },
     darker() {
-      return require("module_18111");
+      return require("module_18121");
     },
     light() {
-      return require("module_18112");
+      return require("module_18122");
     }
   });
 });
 let closure_4 = tmp3;
 ReactCompilerGating = fn(558);
 function getChannelSetupSource(theme) {
-  return _mod8507.getIllustrationSource(theme, {
+  return _mod8539.getIllustrationSource(theme, {
     dark() {
-      return require("module_18110");
+      return require("module_18120");
     },
     darker() {
-      return require("module_18111");
+      return require("module_18121");
     },
     light() {
-      return require("module_18112");
+      return require("module_18122");
     }
   });
 }

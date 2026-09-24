@@ -1,9 +1,9 @@
-// Module ID: 7566
-// Function ID: 7567
+// Module ID: 7598
+// Function ID: 7599
 // Name: BulkBanPubSubExperiment
 // Dependencies: [1438, 558, 568, 2]
 
-// Module 7566 (BulkBanPubSubExperiment)
+// Module 7598 (BulkBanPubSubExperiment)
 import c from "c" /* 568 */;
 import ApexExperiment from "ApexExperiment" /* 1438 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

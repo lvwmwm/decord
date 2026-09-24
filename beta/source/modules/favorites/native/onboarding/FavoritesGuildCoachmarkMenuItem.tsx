@@ -1,16 +1,16 @@
-// Module ID: 16574
-// Function ID: 16575
+// Module ID: 16584
+// Function ID: 16585
 // Name: FavoritesGuildCoachmarkMenuItem
-// Dependencies: [19, 2048, 1078, 2042, 21, 558, 568, 10618, 7403, 504, 1119, 3328, 10452, 2]
+// Dependencies: [19, 2048, 1078, 2042, 21, 558, 568, 10654, 7435, 504, 1119, 3360, 10491, 2]
 
-// Module 16574 (FavoritesGuildCoachmarkMenuItem)
+// Module 16584 (FavoritesGuildCoachmarkMenuItem)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import _modDef3328 from "module_3328" /* 3328 */;
+import _modDef3360 from "module_3360" /* 3360 */;
 import noop from "module_19" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
 
-const LayerScope2 = LayerScope(7403);
+const LayerScope2 = LayerScope(7435);
 require = fn;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
@@ -45,7 +45,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelType) =>
     tmp8 = cResult[3];
   }
   const tmpResult = markPopoverAsDismissed(504);
-  const favoritesMenuItemPopoverDismissibleContent = markPopoverAsDismissed(10618).useFavoritesMenuItemPopoverDismissibleContent(tmp8);
+  const favoritesMenuItemPopoverDismissibleContent = markPopoverAsDismissed(10654).useFavoritesMenuItemPopoverDismissibleContent(tmp8);
   ({ shouldShowPopover, markPopoverAsDismissed } = favoritesMenuItemPopoverDismissibleContent);
   if (cResult[4] !== markPopoverAsDismissed) {
     const fn2 = function b() {
@@ -81,7 +81,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelType) =>
         return;
       }
     }
-    const tmp16 = _modDef3328;
+    const tmp16 = _modDef3360;
     const stringResult = obj4.string(stateFromStores ? tmp16.TWuDTt : tmp16["25YCHl"]);
     cResult[8] = stateFromStores;
     cResult[9] = stringResult;
@@ -100,7 +100,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelType) =>
           return;
         }
       }
-      const stringResult1 = obj5.string(_modDef3328.Ztl9ht);
+      const stringResult1 = obj5.string(_modDef3360.Ztl9ht);
       cResult[10] = stringResult1;
       const tmp19 = stringResult1;
     } else {
@@ -119,7 +119,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelType) =>
           return;
         }
       }
-      const stringResult2 = obj6.string(_modDef3328["+h9aza"]);
+      const stringResult2 = obj6.string(_modDef3360["+h9aza"]);
       cResult[11] = stringResult2;
       const tmp22 = stringResult2;
     } else {
@@ -167,9 +167,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelType) =>
   }, items2);
   const items3 = [shouldShowPopover, stateFromStores, onDismiss, callback1];
   const memo = onDismiss.useMemo(() => {
-    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "T", onButtonPress: null };
+    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "column", onButtonPress: "stretch" };
     const intl = util.intl;
-    const tmp4 = _modDef3328;
+    const tmp4 = _modDef3360;
     if (stateFromStores) {
       let TWuDTt = tmp4.TWuDTt;
       let tmp6 = tmp3;
@@ -179,10 +179,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelType) =>
     }
     obj.title = intl.string(TWuDTt);
     const intl2 = tmp(1119).intl;
-    obj.description = intl2.string(tmp6(3328).Ztl9ht);
+    obj.description = intl2.string(tmp6(3360).Ztl9ht);
     obj.onDismiss = onDismiss;
     const intl3 = tmp(1119).intl;
-    obj.buttonLabel = intl3.string(tmp6(3328)["+h9aza"]);
+    obj.buttonLabel = intl3.string(tmp6(3360)["+h9aza"]);
     obj.onButtonPress = callback1;
     return obj;
   }, items3);

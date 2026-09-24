@@ -1,13 +1,13 @@
-// Module ID: 5329
-// Function ID: 5330
+// Module ID: 5361
+// Function ID: 5362
 // Name: useGameProfileObscured
-// Dependencies: [1376, 5330, 558, 568, 504, 2]
+// Dependencies: [1376, 5362, 558, 568, 504, 2]
 // Exports: isGameProfileObscured
 
-// Module 5329 (useGameProfileObscured)
+// Module 5361 (useGameProfileObscured)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import utils from "utils" /* 5330 */;
+import utils from "utils" /* 5362 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -56,8 +56,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((contentClassific
     result = false === stateFromStores;
   }
   if (result) {
-    result = tmp(5330).isAgeRestrictedContentClassification(contentClassification.contentClassification);
-    const tmpResult2 = tmp(5330);
+    result = tmp(5362).isAgeRestrictedContentClassification(contentClassification.contentClassification);
+    const tmpResult2 = tmp(5362);
   }
   cResult[2] = contentClassification;
   cResult[3] = stateFromStores;

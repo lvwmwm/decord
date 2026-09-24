@@ -1,22 +1,22 @@
-// Module ID: 13602
-// Function ID: 13603
+// Module ID: 13638
+// Function ID: 13639
 // Name: ForLaterIntro
-// Dependencies: [17, 7398, 21, 4758, 580, 558, 568, 8109, 13603, 13604, 1119, 4754, 13605, 11833, 4720, 7456, 2]
+// Dependencies: [17, 7430, 21, 4790, 580, 558, 568, 8141, 13639, 13640, 1119, 4786, 13641, 11869, 4752, 7488, 2]
 
-// Module 13602 (ForLaterIntro)
+// Module 13638 (ForLaterIntro)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ClockIcon from "ClockIcon" /* 4720 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 7398 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7456 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 8109 */;
-import BookmarkIcon from "BookmarkIcon" /* 11833 */;
-import _modDef13605 from "module_13605" /* 13605 */;
+import ClockIcon from "ClockIcon" /* 4752 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 7430 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7488 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 8141 */;
+import BookmarkIcon from "BookmarkIcon" /* 11869 */;
+import _modDef13641 from "module_13641" /* 13641 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import "ReactCompilerGating";
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -55,7 +55,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
   isReminder = isReminder.isReminder;
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef13605 };
+    const obj2 = { uri: _modDef13641 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -74,7 +74,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
     const obj4 = { variant: "text-sm/semibold", color: "text-default", children: null };
     const intl = tmp(1119).intl;
     obj4.children = intl.string(tmp(1119).t.cqpybK);
-    const tmp13 = timestampProducer(tmp(4754).Text, obj4);
+    const tmp13 = timestampProducer(tmp(4786).Text, obj4);
     cResult[3] = tmp13;
     let tmp11 = tmp13;
   } else {
@@ -84,7 +84,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
     const obj5 = { variant: "text-sm/normal", color: "text-default", children: null };
     const intl2 = tmp(1119).intl;
     obj5.children = intl2.string(tmp(1119).t["h+KPxy"]);
-    const tmp16 = timestampProducer(tmp(4754).Text, obj5);
+    const tmp16 = timestampProducer(tmp(4786).Text, obj5);
     cResult[4] = tmp16;
     let tmp14 = tmp16;
   } else {
@@ -94,7 +94,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
     const obj6 = { variant: "text-sm/normal", color: "text-default", children: null };
     const intl3 = tmp(1119).intl;
     obj6.children = intl3.string(tmp(1119).t["63EVpI"]);
-    const tmp19 = timestampProducer(tmp(4754).Text, obj6);
+    const tmp19 = timestampProducer(tmp(4786).Text, obj6);
     cResult[5] = tmp19;
     let tmp17 = tmp19;
   } else {
@@ -104,7 +104,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
     const obj7 = { variant: "text-sm/normal", color: "text-default", children: null };
     const intl4 = tmp(1119).intl;
     obj7.children = intl4.string(tmp(1119).t["KT/TDX"]);
-    const tmp22 = timestampProducer(tmp(4754).Text, obj7);
+    const tmp22 = timestampProducer(tmp(4786).Text, obj7);
     cResult[6] = tmp22;
     let tmp20 = tmp22;
   } else {
@@ -145,7 +145,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
         tmp33 = cResult[15];
       }
       if (cResult[16] !== !isReminder) {
-        const obj10 = { icon: tmp(11833).BookmarkIcon, label: tmp33, highlighted: tmp35 };
+        const obj10 = { icon: tmp(11869).BookmarkIcon, label: tmp33, highlighted: tmp35 };
         const tmp39 = timestampProducer(closure_10, obj10);
         cResult[16] = tmp35;
         cResult[17] = tmp39;
@@ -163,7 +163,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
         tmp40 = cResult[18];
       }
       if (cResult[19] !== isReminder) {
-        const obj11 = { icon: tmp(4720).ClockIcon, label: tmp40, highlighted: isReminder, hasArrow: true };
+        const obj11 = { icon: tmp(4752).ClockIcon, label: tmp40, highlighted: isReminder, hasArrow: true };
         const tmp45 = timestampProducer(closure_10, obj11);
         cResult[19] = isReminder;
         cResult[20] = tmp45;
@@ -223,7 +223,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((isReminder) => 
   const tmp = closure_8();
   const obj = { style: tmp.demo, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
   const obj2 = { style: tmp.messages, children: null };
-  const obj3 = { source: { uri: _modDef13605 }, style: tmp.avatar };
+  const obj3 = { source: { uri: _modDef13641 }, style: tmp.avatar };
   const items = [timestampProducer(React3, obj3), ];
   const obj5 = { style: tmp.messageLines, children: null };
   const obj6 = { variant: "text-sm/semibold", color: "text-default", children: null };
@@ -297,7 +297,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlighted) =
         let tmp16 = null;
         if (tmp4) {
           const obj3 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
-          tmp16 = timestampProducer(tmp(7456).ChevronSmallRightIcon, obj3);
+          tmp16 = timestampProducer(tmp(7488).ChevronSmallRightIcon, obj3);
         }
         cResult[8] = tmp4;
         cResult[9] = tmp16;
@@ -327,7 +327,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlighted) =
       tmp19 = tmp22;
     }
     const obj5 = { variant: "text-sm/medium", color: "text-default", style: tmp5.sheetRowLabel, children: label };
-    const tmp14 = timestampProducer(tmp(4754).Text, obj5);
+    const tmp14 = timestampProducer(tmp(4786).Text, obj5);
     cResult[5] = label;
     cResult[6] = tmp5.sheetRowLabel;
     cResult[7] = tmp14;
@@ -370,7 +370,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
   const tmp4 = closure_8();
   const tmp5 = type.type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER;
   ({ scrollView, pageContainer, container } = tmp4);
-  const tmp6 = importDefault(tmp5 ? 13603 : 13604);
+  const tmp6 = importDefault(tmp5 ? 13639 : 13640);
   if (cResult[0] === tmp4.upsellImage) {
     if (cResult[1] === tmp6) {
       let tmp7 = cResult[2];
@@ -462,7 +462,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
             tmp24 = tmp27;
           }
           const obj7 = { variant: "text-sm/medium", color: "text-default", style: tmp17, includeFontPadding: true, children: cResult[9] };
-          const tmp23 = timestampProducer(tmp(4754).Text, obj7);
+          const tmp23 = timestampProducer(tmp(4786).Text, obj7);
           cResult[10] = tmp4.text;
           cResult[11] = cResult[9];
           cResult[12] = tmp23;
@@ -470,7 +470,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
         }
       }
       const obj8 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp10, children: cResult[4] };
-      const tmp16 = timestampProducer(tmp(4754).Heading, obj8);
+      const tmp16 = timestampProducer(tmp(4786).Heading, obj8);
       cResult[5] = tmp4.text;
       cResult[6] = cResult[4];
       cResult[7] = tmp16;
@@ -487,7 +487,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
   const tmp4 = type.type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER;
   const obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: null };
   const obj2 = { style: tmp.container, children: null };
-  const items = [timestampProducer(React3, { source: importDefault(tmp4 ? 13603 : 13604), style: tmp.upsellImage }), , ];
+  const items = [timestampProducer(React3, { source: importDefault(tmp4 ? 13639 : 13640), style: tmp.upsellImage }), , ];
   const obj4 = { style: tmp.textContainer, children: null };
   const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text, children: null };
   const intl = tmp2(1119).intl;
@@ -499,7 +499,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
   const t2 = tmp2(1119).t;
   const intl3 = tmp2(1119).intl;
   const t3 = tmp2(1119).t;
-  const obj3 = { source: importDefault(tmp4 ? 13603 : 13604), style: tmp.upsellImage };
+  const obj3 = { source: importDefault(tmp4 ? 13639 : 13640), style: tmp.upsellImage };
   const tmp10 = tmp4 ? t2.YI4UjI : t2["5TSj/g"];
   const tmp6 = React4;
   obj6.children = intl2.format(tmp10, { itemName: intl3.string(tmp4 ? t3.mJ3P0N : t3.tpxJto) });

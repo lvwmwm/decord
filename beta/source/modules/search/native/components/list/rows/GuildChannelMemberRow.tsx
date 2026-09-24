@@ -1,11 +1,11 @@
-// Module ID: 17157
-// Function ID: 17158
+// Module ID: 17167
+// Function ID: 17168
 // Name: GuildChannelMemberRow
-// Dependencies: [19, 21, 558, 568, 11172, 2]
+// Dependencies: [19, 21, 558, 568, 11208, 2]
 
-// Module 17157 (GuildChannelMemberRow)
+// Module 17167 (GuildChannelMemberRow)
 import c from "c" /* 568 */;
-import UserRowDefault from "UserRow" /* 11172 */;
+import UserRowDefault from "UserRow" /* 11208 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

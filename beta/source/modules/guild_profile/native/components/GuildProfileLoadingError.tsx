@@ -1,19 +1,19 @@
-// Module ID: 9997
-// Function ID: 9998
+// Module ID: 10029
+// Function ID: 10030
 // Name: GuildProfileLoadingError
-// Dependencies: [19, 17, 21, 558, 568, 9984, 4693, 4462, 580, 5198, 8871, 4754, 1119, 5341, 2]
+// Dependencies: [19, 17, 21, 558, 568, 10016, 4725, 4494, 580, 5230, 8903, 4786, 1119, 5373, 2]
 
-// Module 9997 (GuildProfileLoadingError)
+// Module 10029 (GuildProfileLoadingError)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import useToken from "useToken" /* 4462 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import Pressables from "Pressables" /* 5341 */;
-import WarningIcon from "WarningIcon" /* 8871 */;
-import GuildProfileView from "GuildProfileView" /* 9984 */;
+import useToken from "useToken" /* 4494 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import Pressables from "Pressables" /* 5373 */;
+import WarningIcon from "WarningIcon" /* 8903 */;
+import GuildProfileView from "GuildProfileView" /* 10016 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -41,7 +41,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRetry) => {
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const obj4 = { size: "lg", color: tmp5(580).colors.TEXT_FEEDBACK_WARNING };
-        const tmp19 = React4(tmp(8871).WarningIcon, obj4);
+        const tmp19 = React4(tmp(8903).WarningIcon, obj4);
         cResult[6] = tmp19;
         let tmp17 = tmp19;
       } else {
@@ -69,7 +69,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRetry) => {
             const obj6 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
             const intl = tmp(1119).intl;
             obj6.children = intl.string(tmp(1119).t.DmIUGK);
-            const tmp34 = React4(tmp(4754).Text, obj6);
+            const tmp34 = React4(tmp(4786).Text, obj6);
             cResult[15] = tmp34;
             let tmp32 = tmp34;
           } else {
@@ -80,7 +80,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRetry) => {
             const intl2 = tmp(1119).intl;
             const stringResult = intl2.string(tmp(1119).t.s1fAEw);
             const obj7 = { size: "sm", color: tmp5(580).colors.TEXT_FEEDBACK_WARNING };
-            const tmp39 = React4(tmp(8871).WarningIcon, obj7);
+            const tmp39 = React4(tmp(8903).WarningIcon, obj7);
             cResult[16] = stringResult;
             cResult[17] = tmp39;
             let tmp36 = tmp39;
@@ -94,7 +94,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRetry) => {
             const obj8 = { variant: "text-sm/normal", color: "text-feedback-warning", children: null };
             const intl3 = tmp(1119).intl;
             obj8.children = intl3.string(tmp(1119).t.tmGHjc);
-            const tmp42 = React4(tmp(4754).Text, obj8);
+            const tmp42 = React4(tmp(4786).Text, obj8);
             cResult[18] = tmp42;
             let tmp40 = tmp42;
           } else {
@@ -141,7 +141,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRetry) => {
           const obj11 = { style: styles.error, onPress: onRetry, accessibilityRole: "button", accessibilityLabel: tmp35, children: null };
           const items2 = [tmp36, tmp40];
           obj11.children = items2;
-          const tmp45 = hasOwnProperty(tmp(5341).PressableOpacity, obj11);
+          const tmp45 = hasOwnProperty(tmp(5373).PressableOpacity, obj11);
           cResult[19] = onRetry;
           cResult[20] = styles.error;
           cResult[21] = tmp45;
@@ -161,13 +161,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRetry) => {
       cResult[11] = tmp27;
       tmp24 = tmp27;
     }
-    const obj14 = { style: tmp9, start: tmp(9984).DiagonalGradient.START, end: tmp(9984).DiagonalGradient.END, colors: tmp10 };
-    const tmp15 = React4(tmp5(5198), obj14);
+    const obj14 = { style: tmp9, start: tmp(10016).DiagonalGradient.START, end: tmp(10016).DiagonalGradient.END, colors: tmp10 };
+    const tmp15 = React4(tmp5(5230), obj14);
     cResult[3] = styles.colorBanner;
     cResult[4] = tmp10;
     cResult[5] = tmp15;
     tmp12 = tmp15;
-    const tmp5Result = tmp5(5198);
+    const tmp5Result = tmp5(5230);
   }
   const backgroundForProfile = GuildProfileView.getBackgroundForProfile(tmp6, token);
   cResult[0] = token;

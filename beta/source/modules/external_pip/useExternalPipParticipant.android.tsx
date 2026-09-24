@@ -1,17 +1,17 @@
-// Module ID: 17439
-// Function ID: 17440
+// Module ID: 17449
+// Function ID: 17450
 // Name: useExternalPipParticipant
-// Dependencies: [32, 19, 4774, 502, 1996, 4781, 4779, 558, 568, 504, 2]
+// Dependencies: [32, 19, 4806, 502, 1996, 4813, 4811, 558, 568, 504, 2]
 
-// Module 17439 (useExternalPipParticipant)
+// Module 17449 (useExternalPipParticipant)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4806 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
 
 require = fn;
 function hasOnlySelfParticipant(participants, meId) {
@@ -38,7 +38,7 @@ function hasOnlySelfParticipant(participants, meId) {
     return true;
   }
 }
-const CallConstants = fn(4779);
+const CallConstants = fn(4811);
 ({ isStreamParticipant: closure_8, ParticipantTypes: closure_9 } = CallConstants);
 let ReactCompilerGating = fn(558);
 let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedParticipantStreamId) => {

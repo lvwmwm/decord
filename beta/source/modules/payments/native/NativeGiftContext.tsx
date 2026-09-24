@@ -1,35 +1,35 @@
-// Module ID: 10997
-// Function ID: 10998
+// Module ID: 11033
+// Function ID: 11034
 // Name: NativeGiftContext
-// Dependencies: [5, 32, 19, 8466, 10963, 10998, 1376, 1078, 7485, 1378, 1089, 21, 3, 7672, 558, 568, 7673, 4433, 10999, 1119, 11000, 4418, 7487, 11001, 504, 11030, 11037, 8471, 8458, 5111, 1245, 7429, 11038, 577, 1368, 10961, 2]
+// Dependencies: [5, 32, 19, 8498, 10999, 11034, 1376, 1078, 7517, 1378, 1089, 21, 3, 7704, 558, 568, 7705, 4465, 11035, 1119, 11036, 4450, 7519, 11037, 504, 11066, 11073, 8503, 8490, 5143, 1245, 7461, 11074, 577, 1368, 10997, 2]
 
-// Module 10997 (NativeGiftContext)
+// Module 11033 (NativeGiftContext)
 import LoggerDefault from "Logger" /* 3 */;
 import c from "c" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import BillingUtils from "BillingUtils" /* 4433 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5111 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import ContextUtilsDefault from "ContextUtils" /* 7672 */;
-import BadgeId from "BadgeId" /* 8458 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8471 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10961 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 11038 */;
+import BillingUtils from "BillingUtils" /* 4465 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5143 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
+import ContextUtilsDefault from "ContextUtils" /* 7704 */;
+import BadgeId from "BadgeId" /* 8490 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8503 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10997 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 11074 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8466 */;
-import PromotionsStore from "PromotionsStore" /* 10963 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10998 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8498 */;
+import PromotionsStore from "PromotionsStore" /* 10999 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 11034 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const AnalyticEvents = fn(1078).AnalyticEvents;
-fn(7485).GPlayBillingResult;
+fn(7517).GPlayBillingResult;
 const PremiumConstants = fn(1378);
 ({ PremiumTypes: closure_12, SubscriptionIntervalTypes: map1, SubscriptionPlanInfo: closure_14 } = PremiumConstants);
 let PaymentGateways = fn(1089).PaymentGateways;
@@ -622,7 +622,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
     obj3 = externalGatewayFacet;
     const tmp4 = planId(externalGatewayFacet.useState(0), 2);
   }
-  let obj2 = { orderId: "a", planId: "Array", planSelection: { premiumType, planInterval }, giftInfo: "r" };
+  let obj2 = { orderId: "a", planId: "edit", planSelection: { premiumType, planInterval }, giftInfo: null };
   cResult[0] = planInterval;
   cResult[1] = premiumType;
   cResult[2] = obj2;
@@ -641,8 +641,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
   const setPremiumType = order.setPremiumType;
   const setPlanInterval = order.setPlanInterval;
   const setError = order.setError;
-  let obj = { orderId: "a", planId: "Array", planSelection: { premiumType, planInterval }, giftInfo: "r" };
-  closure_13 = externalGatewayFacet.useRef(obj);
+  closure_13 = externalGatewayFacet.useRef({ orderId: "a", planId: "edit", planSelection: { premiumType, planInterval }, giftInfo: null });
   externalGatewayFacet.useRef(false);
   const tmp = planId(externalGatewayFacet.useState(0), 2);
   closure_15 = tmp[1];

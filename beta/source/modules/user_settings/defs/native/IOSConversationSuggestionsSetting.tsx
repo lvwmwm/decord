@@ -1,14 +1,14 @@
-// Module ID: 15116
-// Function ID: 15117
+// Module ID: 15126
+// Function ID: 15127
 // Name: IOSConversationSuggestionsSetting
-// Dependencies: [19, 17, 8238, 1247, 1252, 558, 568, 4383, 1368, 3, 11594, 1119, 2]
+// Dependencies: [19, 17, 8270, 1247, 1252, 558, 568, 4415, 1368, 3, 11630, 1119, 2]
 
-// Module 15116 (IOSConversationSuggestionsSetting)
+// Module 15126 (IOSConversationSuggestionsSetting)
 import LoggerDefault from "Logger" /* 3 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import _mod4383 from "module_4383" /* 4383 */;
+import _mod4415 from "module_4415" /* 4415 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -26,11 +26,11 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     first = cResult[0];
   }
-  return closure_4(first, _mod4383.shallow);
-}) : (() => closure_4((isEnabled) => isEnabled.isEnabled, _mod4383.shallow));
+  return closure_4(first, _mod4415.shallow);
+}) : (() => closure_4((isEnabled) => isEnabled.isEnabled, _mod4415.shallow));
 fn(17).NativeModules.IntentsHandler;
 ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -66,7 +66,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.J8foZq);
   },
-  parent: fn(8238).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: fn(8270).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {

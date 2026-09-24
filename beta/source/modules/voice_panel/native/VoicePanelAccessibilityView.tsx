@@ -1,18 +1,18 @@
-// Module ID: 17491
-// Function ID: 17492
+// Module ID: 17501
+// Function ID: 17502
 // Name: VoicePanelAccessibilityView
-// Dependencies: [109, 19, 17486, 21, 5170, 558, 568, 17487, 2]
+// Dependencies: [109, 19, 17496, 21, 5202, 558, 568, 17497, 2]
 
-// Module 17491 (VoicePanelAccessibilityView)
+// Module 17501 (VoicePanelAccessibilityView)
 import c from "c" /* 568 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 let closure_2 = ["style", "pointerEvents", "nativeID", "accessibilityViewIsModal", "onAccessibilityEscape"];
-const VoicePanelPIPModes = fn(17486).VoicePanelPIPModes;
+const VoicePanelPIPModes = fn(17496).VoicePanelPIPModes;
 const jsx = fn(21).jsx;
-let closure_6 = noop.memo(fn(5170).AccessibilityViewAnimated);
+let closure_6 = noop.memo(fn(5202).AccessibilityViewAnimated);
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/VoicePanelAccessibilityView.tsx");

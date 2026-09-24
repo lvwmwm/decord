@@ -1,13 +1,13 @@
-// Module ID: 17674
-// Function ID: 17675
+// Module ID: 17684
+// Function ID: 17685
 // Name: SimpleGuild
-// Dependencies: [19, 17, 2063, 7877, 2067, 1078, 21, 4758, 558, 568, 5799, 17675, 504, 17676, 17678, 1119, 16675, 5291, 580, 17677, 2]
+// Dependencies: [19, 17, 2063, 7909, 2067, 1078, 21, 4790, 558, 568, 5831, 17685, 504, 17686, 17688, 1119, 16685, 5323, 580, 17687, 2]
 
-// Module 17674 (SimpleGuild)
+// Module 17684 (SimpleGuild)
 import util from "util" /* 1119 */;
-import useSimpleGuildDefaultColorsDefault from "useSimpleGuildDefaultColors" /* 17675 */;
+import useSimpleGuildDefaultColorsDefault from "useSimpleGuildDefaultColors" /* 17685 */;
 import noop from "module_19" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7877 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7909 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
@@ -15,7 +15,7 @@ const View = fn(17).View;
 const getGuildIconSource = fn(2063).getGuildIconSource;
 const ME = fn(1078).ME;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles({ dmsWrapper: { flex: 1, justifyContent: "center", alignItems: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -26,7 +26,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ guildIconRef, style, guildId } = arg0);
   ({ onPress, onLongPress, onAccessibilityAction, onLayout, backgroundColor, animated, altDefaultBackground, selected, size, iconSize, borderRadius, unread, badge } = arg0);
   if (undefined === iconSize) {
-    iconSize = tmp(5799).GuildIconSizes.LARGE;
+    iconSize = tmp(5831).GuildIconSizes.LARGE;
   }
   const tmp7 = closure_10();
   const obj = guildId(568);
@@ -82,13 +82,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = guildId(504);
   const stateFromStoresObject = guildId(504).useStateFromStoresObject(tmp14, tmp16, tmp17);
   ({ unread: unread2, badge: badge2 } = stateFromStoresObject);
-  const tmpResult5 = guildId(17676);
+  const tmpResult5 = guildId(17686);
   const tmp20 = tmp4 ? tmpResult5.SimpleGuildContainerAnimated : tmpResult5.SimpleGuildContainer;
   if (cResult[7] === size) {
     if (cResult[8] === style) {
       let tmp21 = cResult[9];
     }
-    ({ containerSize, containerSizeStyle, containerStyles } = tmp8(17678)(tmp21));
+    ({ containerSize, containerSizeStyle, containerStyles } = tmp8(17688)(tmp21));
     let tmp23 = str;
     if ("" !== str) {
       if (null != badge2) {
@@ -131,8 +131,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp23 = tmp24;
       }
     }
-    const tmp22 = tmp8(17678)(tmp21);
-    const activityIndicatorState = tmp(16675).useActivityIndicatorState(guildId);
+    const tmp22 = tmp8(17688)(tmp21);
+    const activityIndicatorState = tmp(16685).useActivityIndicatorState(guildId);
     let tmp32 = unread2;
     if (!unread2) {
       tmp32 = tmp6;
@@ -290,8 +290,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   }
                   obj6.clipOuterAmount = num28;
                   obj6.borderStrokeColor = iconStroke.color;
-                  let tmp51Result = tmp51(tmp8(17677), obj6);
-                  const tmp8Result = tmp8(17677);
+                  let tmp51Result = tmp51(tmp8(17687), obj6);
+                  const tmp8Result = tmp8(17687);
                 } else {
                   const obj7 = { guild: stateFromStores, size: iconSize, selected: tmp6, animate: tmp6, TABS_altDefaultBackground: tmp5, style: null };
                   let tmp41 = null;
@@ -299,8 +299,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     tmp41 = containerSizeStyle;
                   }
                   obj7.style = tmp41;
-                  tmp51Result = tmp51(tmp8(5799), obj7);
-                  const tmp8Result2 = tmp8(5799);
+                  tmp51Result = tmp51(tmp8(5831), obj7);
+                  const tmp8Result2 = tmp8(5831);
                 }
                 cResult[23] = activityIndicatorState;
                 cResult[24] = tmp5;
@@ -326,7 +326,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               const obj8 = { style: tmp7.dmsWrapper, children: null };
               let colors = tmp8(580).colors;
               const obj9 = { color: tmp6 ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT };
-              colors = tmp44(tmp(5291).ChatIcon, obj9);
+              colors = tmp44(tmp(5323).ChatIcon, obj9);
               obj8.children = colors;
               <View style={tmp7.dmsWrapper}>{null}</View>;
             }
@@ -349,7 +349,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[21] = tmp32;
     cResult[22] = tmp35Result;
     tmp33 = tmp35Result;
-    const tmpResult6 = tmp(16675);
+    const tmpResult6 = tmp(16685);
   }
   const obj10 = { size, style };
   cResult[7] = size;

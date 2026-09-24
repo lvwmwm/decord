@@ -1,21 +1,21 @@
-// Module ID: 9817
-// Function ID: 9818
+// Module ID: 9849
+// Function ID: 9850
 // Name: ChannelOverwritesItem
-// Dependencies: [109, 19, 17, 1376, 8677, 21, 4758, 5116, 1119, 4771, 4457, 558, 568, 6851, 5341, 9818, 9801, 5822, 4754, 1181, 9819, 9820, 4479, 5820, 2]
+// Dependencies: [109, 19, 17, 1376, 8709, 21, 4790, 5148, 1119, 4803, 4489, 558, 568, 6883, 5373, 9850, 9833, 5854, 4786, 1181, 9851, 9852, 4511, 5852, 2]
 
-// Module 9817 (ChannelOverwritesItem)
+// Module 9849 (ChannelOverwritesItem)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4479 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AlertModal from "AlertModal" /* 5116 */;
-import FormCheckbox from "FormCheckbox" /* 5820 */;
-import TableRow from "TableRow" /* 5822 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9801 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9818 */;
-import _modDef9819 from "module_9819" /* 9819 */;
-import _modDef9820 from "module_9820" /* 9820 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4511 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AlertModal from "AlertModal" /* 5148 */;
+import FormCheckbox from "FormCheckbox" /* 5852 */;
+import TableRow from "TableRow" /* 5854 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9833 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9850 */;
+import _modDef9851 from "module_9851" /* 9851 */;
+import _modDef9852 from "module_9852" /* 9852 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
@@ -24,10 +24,10 @@ require = fn;
 let closure_4 = ["item"];
 let closure_5 = ["checked"];
 const View = fn(17).View;
-const RowType = fn(8677).RowType;
+const RowType = fn(8709).RowType;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_12 = createStyles.createStyles({ nameWrapper: { flexDirection: "row", alignItems: "flex-end", marginRight: 16 }, name: { paddingRight: 4 }, memberName: { flexShrink: 1 }, ownerIcon: { alignSelf: "center" }, roleIcon: { height: 30, width: 30 }, rowRemoveIconDisabled: { opacity: 0.3 } });
 let ReactCompilerGating = fn(558);
 let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
@@ -92,8 +92,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
               }
             }
           }
-          let tmp9 = closure_10(tmp(6851).CircleXIcon, obj2);
-          const tmp11 = closure_10(tmp(6851).CircleXIcon, obj2);
+          let tmp9 = closure_10(tmp(6883).CircleXIcon, obj2);
+          const tmp11 = closure_10(tmp(6883).CircleXIcon, obj2);
         } else {
           tmp9 = cResult[6];
         }
@@ -141,7 +141,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
         obj3.accessibilityLabel = first;
         obj3.onPress = tmp7;
         obj3.children = tmp9;
-        const tmp14 = closure_10(tmp(5341).PressableOpacity, obj3);
+        const tmp14 = closure_10(tmp(5373).PressableOpacity, obj3);
         cResult[7] = item.disabled;
         cResult[8] = tmp7;
         cResult[9] = tmp9;
@@ -226,8 +226,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
       prop = tmp.rowRemoveIconDisabled;
     }
     let obj2 = { style: prop };
-    obj.children = closure_10(item(6851).CircleXIcon, obj2);
-    tmp3Result = tmp3(item(5341).PressableOpacity, obj);
+    obj.children = closure_10(item(6883).CircleXIcon, obj2);
+    tmp3Result = tmp3(item(5373).PressableOpacity, obj);
   }
   return tmp3Result;
 });
@@ -237,7 +237,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ disabled, item, subLabel, channelId, showType, showRemove, start, end, trailing, onPress, accessibilityRole, accessibilityState, accessible } = arg0);
   if (cResult[0] !== item.colorString) {
     const obj2 = { size: "lg", color: item.colorString };
-    const tmp6 = v65535(tmp(9818).ShieldUserIcon, obj2);
+    const tmp6 = v65535(tmp(9850).ShieldUserIcon, obj2);
     cResult[0] = item.colorString;
     cResult[1] = tmp6;
     let tmp4 = tmp6;
@@ -280,7 +280,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
             }
             const obj4 = { icon: tmp4, label: item.name, subLabel: tmp7, start, end, trailing: tmp10, onPress, disabled, accessibilityRole, accessibilityState, accessible };
-            const tmp16 = v65535(tmp(5822).TableRow, obj4);
+            const tmp16 = v65535(tmp(5854).TableRow, obj4);
             cResult[11] = accessibilityRole;
             cResult[12] = accessibilityState;
             cResult[13] = accessible;
@@ -408,7 +408,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                       }
                       const obj3 = { icon: tmp22, label: tmp14, subLabel: item.username, start, end, trailing: tmp25, onPress, disabled, accessibilityRole, accessibilityState, accessible };
-                      const tmp31 = v65535(tmp(5822).TableRow, obj3);
+                      const tmp31 = v65535(tmp(5854).TableRow, obj3);
                       cResult[24] = accessibilityRole;
                       cResult[25] = accessibilityState;
                       cResult[26] = accessible;
@@ -462,7 +462,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       let tmp11 = null;
       if (item.rowType === RowType.OWNER) {
-        const obj6 = { size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, source: _modDef9819, disableColor: true, style: tmp4.ownerIcon };
+        const obj6 = { size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, source: _modDef9851, disableColor: true, style: tmp4.ownerIcon };
         tmp11 = v65535(tmp(1181).Icon, obj6);
       }
       cResult[6] = item.rowType;
@@ -471,7 +471,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp9 = tmp11;
     }
     const obj7 = { style: tmp5, lineClamp: 1, variant: "text-md/semibold", color: "interactive-text-active", children: item.name };
-    const tmp8 = v65535(tmp(4754).Text, obj7);
+    const tmp8 = v65535(tmp(4786).Text, obj7);
     cResult[3] = item.name;
     cResult[4] = tmp5;
     cResult[5] = tmp8;
@@ -495,7 +495,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items1 = [v65535(Text_Text.Text, obj2), ];
   let tmp4Result = null;
   if (item.rowType === RowType.OWNER) {
-    const obj3 = { size: tmp5(1181).Icon.Sizes.REFRESH_SMALL_16, source: _modDef9819, disableColor: true, style: tmp.ownerIcon };
+    const obj3 = { size: tmp5(1181).Icon.Sizes.REFRESH_SMALL_16, source: _modDef9851, disableColor: true, style: tmp.ownerIcon };
     tmp4Result = tmp4(tmp5(1181).Icon, obj3);
   }
   items1[1] = tmp4Result;
@@ -540,13 +540,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
       return tmp7;
     }
     const obj2 = { icon: tmp5, label: item.name };
-    const tmp9 = v65535(tmp(5822).TableRow, obj2);
+    const tmp9 = v65535(tmp(5854).TableRow, obj2);
     cResult[3] = item.name;
     cResult[4] = tmp5;
     cResult[5] = tmp9;
     tmp7 = tmp9;
   }
-  const tmp6 = v65535(native.Icon, { source: _modDef9820, color: item.colorString, size: native.IconSizes.MEDIUM, style: tmp4.roleIcon });
+  const tmp6 = v65535(native.Icon, { source: _modDef9852, color: item.colorString, size: native.IconSizes.MEDIUM, style: tmp4.roleIcon });
   cResult[0] = item.colorString;
   cResult[1] = tmp4.roleIcon;
   cResult[2] = tmp6;
@@ -555,7 +555,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   item = item.item;
   const obj = { icon: null, label: null };
   const tmp = closure_12();
-  obj.icon = v65535(native.Icon, { source: _modDef9820, color: item.colorString, size: native.IconSizes.MEDIUM, style: closure_12().roleIcon });
+  obj.icon = v65535(native.Icon, { source: _modDef9852, color: item.colorString, size: native.IconSizes.MEDIUM, style: closure_12().roleIcon });
   obj.label = item.name;
   return v65535(TableRow.TableRow, obj);
 });
@@ -686,7 +686,7 @@ export const ChannelOverwritesCheckboxItem = ReactCompilerGating.isReactCompiler
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
   if (cResult[5] !== tmp4) {
     const obj3 = { checked: tmp4 };
-    const tmp13 = v65535(tmp(5820).FormCheckbox, obj3);
+    const tmp13 = v65535(tmp(5852).FormCheckbox, obj3);
     cResult[5] = tmp4;
     cResult[6] = tmp13;
     let tmp11 = tmp13;

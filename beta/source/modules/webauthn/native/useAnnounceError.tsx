@@ -1,10 +1,10 @@
-// Module ID: 14939
-// Function ID: 14940
+// Module ID: 14977
+// Function ID: 14978
 // Name: useAnnounceError
-// Dependencies: [19, 558, 568, 4472, 2]
+// Dependencies: [19, 558, 568, 4504, 2]
 
-// Module 14939 (useAnnounceError)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4472 */;
+// Module 14977 (useAnnounceError)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4504 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

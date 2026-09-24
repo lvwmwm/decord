@@ -1,17 +1,17 @@
-// Module ID: 8413
-// Function ID: 8414
+// Module ID: 8445
+// Function ID: 8446
 // Name: ApplicationAssetUtils
-// Dependencies: [32, 5, 8414, 1078, 38, 3, 1275, 577, 1435, 2]
+// Dependencies: [32, 5, 8446, 1078, 38, 3, 1275, 577, 1435, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8413 (ApplicationAssetUtils)
+// Module 8445 (ApplicationAssetUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import HTTPUtils from "HTTPUtils" /* 1275 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1435 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8414 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8446 */;
 
 require = fn;
 function updateAssets() {

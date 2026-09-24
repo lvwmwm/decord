@@ -1,21 +1,21 @@
-// Module ID: 13483
-// Function ID: 13484
+// Module ID: 13519
+// Function ID: 13520
 // Name: AvatarGrid
-// Dependencies: [19, 17, 4750, 4798, 21, 4758, 580, 558, 568, 504, 8521, 1181, 2]
+// Dependencies: [19, 17, 4782, 4830, 21, 4790, 580, 558, 568, 504, 8553, 1181, 2]
 
-// Module 13483 (AvatarGrid)
+// Module 13519 (AvatarGrid)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { avatarRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-around" }, avatarStatusStyle: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, gridContainer: { width: 108, height: 108, justifyContent: "space-around", marginLeft: 28 } };
 let closure_7 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -97,7 +97,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
               }
             }
           }
-          const tmpResult4 = tmp(8521);
+          const tmpResult4 = tmp(8553);
           class E {
             constructor() {
               return closure_1_3.useReducedMotion;
@@ -167,7 +167,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   obj3.size = size;
   if (undefined !== pendingAvatarSrc) {
     const obj4 = { source: null };
-    const tmp2Result = tmp2(8521);
+    const tmp2Result = tmp2(8553);
     obj4.source = tmp2Result.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores1);
     const merged = Object.assign(obj3);
     let obj5 = obj4;

@@ -1,26 +1,26 @@
-// Module ID: 5811
-// Function ID: 5812
+// Module ID: 5843
+// Function ID: 5844
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 5791, 1078, 21, 4758, 4458, 1119, 5812, 558, 568, 5793, 4583, 5813, 504, 5271, 5766, 5814, 7182, 5188, 2]
+// Dependencies: [5, 32, 19, 17, 5823, 1078, 21, 4790, 4490, 1119, 5844, 558, 568, 5825, 4615, 5845, 504, 5303, 5798, 5846, 7214, 5220, 2]
 // Exports: default
 
-// Module 5811 (MemberVerificationForm)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4583 */;
-import useInitialValueDefault from "useInitialValue" /* 5813 */;
+// Module 5843 (MemberVerificationForm)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4615 */;
+import useInitialValueDefault from "useInitialValue" /* 5845 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5791 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5823 */;
 
 const require = globalThis.__r;
 
 require = fn;
 let View = fn(17).View;
-let closure_8 = fn(5791).NO_MEMBER_VERIFICATION_FORM;
+let closure_8 = fn(5823).NO_MEMBER_VERIFICATION_FORM;
 const VerificationLevels = fn(1078).VerificationLevels;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_12 = createStyles.createStyles({ container: { flex: 1, flexDirection: "column", alignItems: "stretch", paddingHorizontal: 16, paddingVertical: 0 }, submitButton: { marginTop: 12, marginBottom: 12 }, error: { alignSelf: "center", paddingVertical: 16, fontSize: 16 } });
 let ReactCompilerGating = fn(558);
 let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
@@ -36,7 +36,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     if (cResult[1] === phone) {
       let tmp6 = cResult[2];
     }
-    return initialVerification(5813)(tmp6);
+    return initialVerification(5845)(tmp6);
   }
   cResult[0] = id.verificationLevel;
   let phone1;
@@ -390,8 +390,8 @@ export default function MemberVerificationForm(guild) {
                   const obj2 = { key: "MEMBER_VERIFICATION_FORM_INCOMPLETE", content: null, icon: null };
                   const intl = closure_1_0(1119).intl;
                   obj2.content = intl.string(closure_1_0(1119).t.StC497);
-                  obj2.icon = closure_1_1(5812);
-                  closure_1_1(4458).open(obj2);
+                  obj2.icon = closure_1_1(5844);
+                  closure_1_1(4490).open(obj2);
                 })();
                 c6 = 3;
                 return { value: "IconComponent", done: null };
@@ -522,7 +522,7 @@ export default function MemberVerificationForm(guild) {
         const tmp8 = userVerificationState[MemberVerificationTypes.UserVerificationFieldPlatforms.EMAIL];
         let tmp9 = !tmp8;
         if (!tmp8) {
-          tmp9 = !userVerificationState[tmp6(undefined, 4583).UserVerificationFieldPlatforms.PHONE];
+          tmp9 = !userVerificationState[tmp6(undefined, 4615).UserVerificationFieldPlatforms.PHONE];
         }
         return tmp9;
       }

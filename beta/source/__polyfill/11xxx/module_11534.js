@@ -1,9 +1,10 @@
 // Module ID: 11534
 // Function ID: 11535
-// Dependencies: [1125]
+// Dependencies: [17]
 
 // Module 11534
-import registerAsset from "module_1125" /* 1125 */;
+import _mod17 from "module_17" /* 17 */;
 
+const TurboModuleRegistry = _mod17.TurboModuleRegistry;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3446a422668528039c87de87a6054a15", name: "KeyboardIcon", type: "png" });
+export const NativeDocumentPicker = TurboModuleRegistry.getEnforcing("RNDocumentPicker");

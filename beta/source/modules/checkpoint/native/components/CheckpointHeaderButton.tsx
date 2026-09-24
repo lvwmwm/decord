@@ -1,15 +1,15 @@
-// Module ID: 15980
-// Function ID: 15981
+// Module ID: 15990
+// Function ID: 15991
 // Name: CheckpointHeaderButton
-// Dependencies: [17, 4983, 21, 4758, 558, 568, 580, 2]
+// Dependencies: [17, 5015, 21, 4790, 558, 568, 580, 2]
 
-// Module 15980 (CheckpointHeaderButton)
+// Module 15990 (CheckpointHeaderButton)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import CheckpointConstants from "CheckpointConstants" /* 4983 */;
-import createStyles from "createStyles" /* 4758 */;
+import CheckpointConstants from "CheckpointConstants" /* 5015 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

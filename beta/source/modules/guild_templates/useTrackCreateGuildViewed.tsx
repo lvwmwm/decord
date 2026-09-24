@@ -1,16 +1,16 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 11959
+// Function ID: 11960
 // Name: useTrackCreateGuildViewed
-// Dependencies: [19, 7570, 1078, 558, 568, 1245, 2]
+// Dependencies: [19, 7602, 1078, 558, 568, 1245, 2]
 
-// Module 11923 (useTrackCreateGuildViewed)
+// Module 11959 (useTrackCreateGuildViewed)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const GuildTemplateStates = fn(7570).GuildTemplateStates;
+const GuildTemplateStates = fn(7602).GuildTemplateStates;
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

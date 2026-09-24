@@ -1,17 +1,17 @@
-// Module ID: 12461
-// Function ID: 12462
+// Module ID: 12497
+// Function ID: 12498
 // Name: GuildDirectoryMoreMenu
-// Dependencies: [109, 19, 21, 558, 568, 12455, 12462, 5111, 1119, 12464, 1181, 8905, 10626, 4715, 8940, 8178, 8180, 580, 8182, 2]
+// Dependencies: [109, 19, 21, 558, 568, 12491, 12498, 5143, 1119, 12500, 1181, 8937, 10662, 4747, 8972, 8210, 8212, 580, 8214, 2]
 
-// Module 12461 (GuildDirectoryMoreMenu)
+// Module 12497 (GuildDirectoryMoreMenu)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5111 */;
-import ReportModals from "ReportModals" /* 8905 */;
-import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 12455 */;
-import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 12462 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12464 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5143 */;
+import ReportModals from "ReportModals" /* 8937 */;
+import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 12491 */;
+import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 12498 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12500 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -165,7 +165,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
         }
       }
       tmp10[0] = PencilIcon;
-      PencilIcon = tmp(10626).PencilIcon;
+      PencilIcon = tmp(10662).PencilIcon;
       tmp10[1] = PencilIcon;
       tmp10[2] = tmp5;
       cResult[14] = tmp5;
@@ -191,7 +191,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
     let obj = { label: null, IconComponent: null, action: null };
     let intl = entry(1119).intl;
     obj.label = intl.string(entry(1119).t.XnuOvN);
-    obj.IconComponent = entry(10626).PencilIcon;
+    obj.IconComponent = entry(10662).PencilIcon;
     obj.action = function handleEdit() {
       GuildDirectoryEditDescriptionModalActionCreatorsDefault.open({ entry });
     };
@@ -201,7 +201,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
     let obj2 = { label: null, IconComponent: null, variant: "destructive", action: null };
     let intl2 = entry(1119).intl;
     obj2.label = intl2.string(entry(1119).t.KUxYWH);
-    obj2.IconComponent = entry(4715).TrashIcon;
+    obj2.IconComponent = entry(4747).TrashIcon;
     obj2.action = function handleRemove() {
       const obj2 = { title: null, body: null, onConfirm: null, confirmColor: null, confirmText: null, cancelText: null, onCancel: null, isDismissable: false };
       const intl = util.intl;
@@ -227,7 +227,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
     const obj3 = { label: null, IconComponent: null, variant: "destructive", action: null };
     let intl3 = entry(1119).intl;
     obj3.label = intl3.string(entry(1119).t.Aen9eh);
-    obj3.IconComponent = entry(8940).FlagIcon;
+    obj3.IconComponent = entry(8972).FlagIcon;
     obj3.action = function handleReport() {
       const result = ReportModals.showReportModalForGuildDirectoryEntry(entry);
     };
@@ -245,11 +245,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
           obj.variant = "secondary";
           const intl = entry(1119).intl;
           obj.accessibilityLabel = intl.string(entry(1119).t.PdRCRg);
-          obj.icon = jsx(entry(8180).MoreHorizontalIcon, { size: "sm", color: nativeDefault.colors.WHITE });
-          return jsx(entry(8178).IconButton, { ref: ref.ref });
+          obj.icon = jsx(entry(8212).MoreHorizontalIcon, { size: "sm", color: nativeDefault.colors.WHITE });
+          return jsx(entry(8210).IconButton, { ref: ref.ref });
         }
     };
-    tmp9 = jsx(entry(8182).ContextMenu, {
+    tmp9 = jsx(entry(8214).ContextMenu, {
       items,
       children(ref) {
           const merged = Object.assign(ref, Object.assign({ ref: 0 }));
@@ -259,8 +259,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
           obj.variant = "secondary";
           const intl = entry(1119).intl;
           obj.accessibilityLabel = intl.string(entry(1119).t.PdRCRg);
-          obj.icon = jsx(entry(8180).MoreHorizontalIcon, { size: "sm", color: nativeDefault.colors.WHITE });
-          return jsx(entry(8178).IconButton, { ref: ref.ref });
+          obj.icon = jsx(entry(8212).MoreHorizontalIcon, { size: "sm", color: nativeDefault.colors.WHITE });
+          return jsx(entry(8210).IconButton, { ref: ref.ref });
         }
     });
   }

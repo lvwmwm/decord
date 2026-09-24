@@ -1,27 +1,27 @@
-// Module ID: 15554
-// Function ID: 15555
+// Module ID: 15564
+// Function ID: 15565
 // Name: SettingsAppearanceActivityCardItem
-// Dependencies: [19, 17, 2113, 15555, 21, 4497, 1181, 4758, 580, 558, 568, 565, 9092, 5802, 4754, 1885, 15556, 15557, 15558, 2]
+// Dependencies: [19, 17, 2113, 15565, 21, 4529, 1181, 4790, 580, 558, 568, 565, 9124, 5834, 4786, 1885, 15566, 15567, 15568, 2]
 
-// Module 15554 (SettingsAppearanceActivityCardItem)
+// Module 15564 (SettingsAppearanceActivityCardItem)
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import ClipViewDefault from "ClipView" /* 9092 */;
+import ClipViewDefault from "ClipView" /* 9124 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, StyleSheet } = get_ActivityIndicator);
-const HappeningNowConstants = fn(15555);
+const HappeningNowConstants = fn(15565);
 ({ HAPPENING_NOW_BADGE_SIZE, HAPPENING_NOW_CONTENT_HEIGHT, HAPPENING_NOW_CARD_HEIGHT, HAPPENING_NOW_CARD_MARGIN_RIGHT, HAPPENING_NOW_CARD_PADDING, HAPPENING_NOW_CARD_PADDING_RIGHT } = HappeningNowConstants);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 let closure_7 = ReanimatedRexport.createAnimatedComponent(fn(1181).Icon);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { card: { borderRadius: nativeDefault.radii.lg, borderWidth: StyleSheet.hairlineWidth, padding: HAPPENING_NOW_CARD_PADDING, paddingRight: HAPPENING_NOW_CARD_PADDING_RIGHT, marginRight: HAPPENING_NOW_CARD_MARGIN_RIGHT, height: HAPPENING_NOW_CARD_HEIGHT, flexDirection: "row", alignItems: "center" }, cardBadgeWrapper: { position: "absolute", top: 0, right: 0 }, cardImage: null, cardBadge: null, cardImageAssetContainer: null, cardImageAssetBackground: null, cardImageAsset: null, shiftedAvatar: null, userCounter: null };
 let obj3 = { borderRadius: nativeDefault.radii.lg, borderWidth: StyleSheet.hairlineWidth, padding: HAPPENING_NOW_CARD_PADDING, paddingRight: HAPPENING_NOW_CARD_PADDING_RIGHT, marginRight: HAPPENING_NOW_CARD_MARGIN_RIGHT, height: HAPPENING_NOW_CARD_HEIGHT, flexDirection: "row", alignItems: "center" };
 obj.cardImage = { height: HAPPENING_NOW_CONTENT_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, marginRight: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.md, position: "relative" };
@@ -322,7 +322,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((kind) => {
       let tmp3Result = tmp6;
       if (!tmp) {
         const obj3 = { cutouts: null, children: null };
-        const point = { shape: tmp4(9092).CutoutShape.Circle, x: tmp4(1181).AVATAR_SIZE_MAP[tmp4(undefined, 1181).AvatarSizes.XSMALL_20] - 4 - 2, y: -2, size: tmp4(1181).AVATAR_SIZE_MAP[tmp4(undefined, 1181).AvatarSizes.XSMALL_20] + 4 };
+        const point = { shape: tmp4(9124).CutoutShape.Circle, x: tmp4(1181).AVATAR_SIZE_MAP[tmp4(undefined, 1181).AvatarSizes.XSMALL_20] - 4 - 2, y: -2, size: tmp4(1181).AVATAR_SIZE_MAP[tmp4(undefined, 1181).AvatarSizes.XSMALL_20] + 4 };
         const items = [point];
         obj3.cutouts = items;
         obj3.children = tmp6;
@@ -369,7 +369,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((kind) => {
       const obj2 = { style: shiftedAvatar, children: null };
       if (index !== diff) {
         const obj3 = { cutouts: null, children: null };
-        const point = { shape: tmp3(9092).CutoutShape.Circle, x: tmp3(1181).AVATAR_SIZE_MAP[tmp3(undefined, 1181).AvatarSizes.XSMALL_20] - 4 - 2, y: -2, size: tmp3(1181).AVATAR_SIZE_MAP[tmp3(undefined, 1181).AvatarSizes.XSMALL_20] + 4 };
+        const point = { shape: tmp3(9124).CutoutShape.Circle, x: tmp3(1181).AVATAR_SIZE_MAP[tmp3(undefined, 1181).AvatarSizes.XSMALL_20] - 4 - 2, y: -2, size: tmp3(1181).AVATAR_SIZE_MAP[tmp3(undefined, 1181).AvatarSizes.XSMALL_20] + 4 };
         const items = [point];
         obj3.cutouts = items;
         obj3.children = tmp5;

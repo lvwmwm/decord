@@ -1,14 +1,14 @@
-// Module ID: 13209
-// Function ID: 13210
+// Module ID: 13245
+// Function ID: 13246
 // Name: InAppReportsDeleteMessageElement
-// Dependencies: [32, 19, 4978, 1078, 21, 558, 568, 504, 4938, 7703, 1119, 4715, 13204, 2]
+// Dependencies: [32, 19, 5010, 1078, 21, 558, 568, 504, 4970, 7735, 1119, 4747, 13240, 2]
 
-// Module 13209 (InAppReportsDeleteMessageElement)
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4938 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7703 */;
+// Module 13245 (InAppReportsDeleteMessageElement)
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4970 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7735 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import MessageStore from "MessageStore" /* 4978 */;
+import MessageStore from "MessageStore" /* 5010 */;
 
 const require = fn;
 const AnalyticEvents = fn(1078).AnalyticEvents;
@@ -87,7 +87,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     }
     const _Symbol2 = Symbol;
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp23 = jsx(tmp(4715).TrashIcon, { color: "text-feedback-critical" });
+      const tmp23 = jsx(tmp(4747).TrashIcon, { color: "text-feedback-critical" });
       cResult[13] = tmp23;
       let tmp21 = tmp23;
     } else {
@@ -100,7 +100,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
       return tmp24;
     }
     const obj3 = { title: tmp15, disabledTitle: tmp16, description: tmp17, disabled: tmp5, variant: "danger", onPress: tmp14, icon: tmp21 };
-    const tmp27 = jsx(reportId(13204), { title: tmp15, disabledTitle: tmp16, description: tmp17, disabled: tmp5, variant: "danger", onPress: tmp14, icon: tmp21 });
+    const tmp27 = jsx(reportId(13240), { title: tmp15, disabledTitle: tmp16, description: tmp17, disabled: tmp5, variant: "danger", onPress: tmp14, icon: tmp21 });
     cResult[14] = tmp14;
     cResult[15] = tmp5;
     cResult[16] = tmp27;
@@ -151,6 +151,6 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   obj2.description = intl3.string(message(1119).t.dK8S0w);
   obj2.disabled = tmp[0];
   obj2.onPress = callback;
-  obj2.icon = jsx(message(4715).TrashIcon, { color: "text-feedback-critical" });
-  return jsx(reportId(13204), { title: null, disabledTitle: null, description: null, disabled: null, variant: "danger", onPress: null, icon: null });
+  obj2.icon = jsx(message(4747).TrashIcon, { color: "text-feedback-critical" });
+  return jsx(reportId(13240), { title: null, disabledTitle: null, description: null, disabled: null, variant: "danger", onPress: null, icon: null });
 });

@@ -1,13 +1,13 @@
-// Module ID: 13770
-// Function ID: 13771
+// Module ID: 13806
+// Function ID: 13807
 // Name: SubscriptionPlaceholderPattern
-// Dependencies: [19, 17, 21, 8507, 13771, 13772, 13773, 558, 568, 4610, 2]
+// Dependencies: [19, 17, 21, 8539, 13807, 13808, 13809, 558, 568, 4642, 2]
 // Exports: getSubscriptionPlaceholderPatternSource
 
-// Module 13770 (SubscriptionPlaceholderPattern)
+// Module 13806 (SubscriptionPlaceholderPattern)
 import c from "c" /* 568 */;
-import shared from "shared" /* 4610 */;
-import _mod8507 from "module_8507" /* 8507 */;
+import shared from "shared" /* 4642 */;
+import _mod8539 from "module_8539" /* 8539 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,50 +20,50 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] !== theme) {
     const obj3 = {
       dark() {
-          return require("module_13771");
+          return require("module_13807");
         },
       darker() {
-          return require("module_13772");
+          return require("module_13808");
         },
       light() {
-          return require("module_13773");
+          return require("module_13809");
         }
     };
-    const illustrationSource = _mod8507.getIllustrationSource(theme, obj3);
+    const illustrationSource = _mod8539.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
     let tmp4 = illustrationSource;
-    const tmpResult = _mod8507;
+    const tmpResult = _mod8539;
   } else {
     tmp4 = cResult[1];
   }
   return tmp4;
 }) : (() => {
   const obj = shared;
-  return _mod8507.getIllustrationSource(obj.useThemeContext().theme, {
+  return _mod8539.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_13771");
+      return require("module_13807");
     },
     darker() {
-      return require("module_13772");
+      return require("module_13808");
     },
     light() {
-      return require("module_13773");
+      return require("module_13809");
     }
   });
 });
 let closure_4 = tmp3;
 ReactCompilerGating = fn(558);
 function getSubscriptionPlaceholderPatternSource(theme) {
-  return _mod8507.getIllustrationSource(theme, {
+  return _mod8539.getIllustrationSource(theme, {
     dark() {
-      return require("module_13771");
+      return require("module_13807");
     },
     darker() {
-      return require("module_13772");
+      return require("module_13808");
     },
     light() {
-      return require("module_13773");
+      return require("module_13809");
     }
   });
 }

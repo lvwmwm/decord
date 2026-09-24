@@ -1,19 +1,19 @@
-// Module ID: 9790
-// Function ID: 9791
+// Module ID: 9822
+// Function ID: 9823
 // Name: EditGuildEventWhere
-// Dependencies: [32, 19, 2045, 4399, 7773, 2051, 1078, 21, 4758, 1119, 9766, 558, 568, 504, 1488, 1879, 9765, 4472, 4352, 9791, 9772, 4754, 5188, 9831, 9832, 9833, 9770, 2]
+// Dependencies: [32, 19, 2045, 4431, 7805, 2051, 1078, 21, 4790, 1119, 9798, 558, 568, 504, 1488, 1879, 9797, 4504, 4384, 9823, 9804, 4786, 5220, 9863, 9864, 9865, 9802, 2]
 
-// Module 9790 (EditGuildEventWhere)
+// Module 9822 (EditGuildEventWhere)
 import util from "util" /* 1119 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1879 */;
-import _modDef4352 from "module_4352" /* 4352 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9765 */;
-import EntityUtils from "EntityUtils" /* 9766 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
+import _modDef4384 from "module_4384" /* 4384 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9797 */;
+import EntityUtils from "EntityUtils" /* 9798 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9865 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 const require = globalThis.__r;
 
@@ -45,14 +45,14 @@ function assertGuildEventWhereIsValid(guildEvent) {
     }
   }
 }
-let closure_8 = fn(7773).isGuildScheduledEventActive;
+let closure_8 = fn(7805).isGuildScheduledEventActive;
 const GuildScheduledEventsConstants = fn(2051);
 ({ AGE_VERIFICATION_STAGE_CHANNEL_TYPES: closure_9, GuildScheduledEventEntityTypes: c10 } = GuildScheduledEventsConstants);
 const Constants = fn(1078);
 ({ Permissions: closure_11, GuildSettingsSections: closure_12 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_16 = createStyles.createStyles({ channelSelection: { marginTop: 16 }, error: { paddingVertical: 8 }, text: { marginTop: 24 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -172,7 +172,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       class Y {
         constructor(arg0) {
           tmp = closure_4(null);
-          obj = { entityType: guild, scheduledEndTime: "a" };
+          obj = { entityType: guild, scheduledEndTime: "Array" };
           if (guild === closure_10.EXTERNAL) {
             tmp2 = closure_1;
             tmp3 = closure_3;
@@ -215,7 +215,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       class Y {
         constructor(arg0) {
           tmp = closure_4(null);
-          obj = { entityType: guild, scheduledEndTime: "a" };
+          obj = { entityType: guild, scheduledEndTime: "Array" };
           if (guild === closure_10.EXTERNAL) {
             tmp2 = closure_1;
             tmp3 = closure_3;
@@ -272,7 +272,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         class Y {
           constructor(arg0) {
             tmp = closure_4(null);
-            obj = { entityType: guild, scheduledEndTime: "a" };
+            obj = { entityType: guild, scheduledEndTime: "Array" };
             if (guild === closure_10.EXTERNAL) {
               tmp2 = closure_1;
               tmp3 = closure_3;
@@ -318,7 +318,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       class Y {
         constructor(arg0) {
           tmp = closure_4(null);
-          obj = { entityType: guild, scheduledEndTime: "a" };
+          obj = { entityType: guild, scheduledEndTime: "Array" };
           if (guild === closure_10.EXTERNAL) {
             tmp2 = closure_1;
             tmp3 = closure_3;
@@ -349,7 +349,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     class Y {
       constructor(arg0) {
         tmp = closure_4(null);
-        obj = { entityType: guild, scheduledEndTime: "a" };
+        obj = { entityType: guild, scheduledEndTime: "Array" };
         if (guild === closure_10.EXTERNAL) {
           tmp2 = closure_1;
           tmp3 = closure_3;
@@ -501,11 +501,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       entityType: guildEvent.entityType,
       onChange(entityType) {
         _undefined(null);
-        const obj = { entityType, scheduledEndTime: "a" };
+        const obj = { entityType, scheduledEndTime: "Array" };
         if (entityType === constants.EXTERNAL) {
-          let obj2 = _modDef4352(guildEvent.scheduledStartTime);
+          let obj2 = _modDef4384(guildEvent.scheduledStartTime);
           if (obj2 == null) {
-            obj2 = tmp2(4352)();
+            obj2 = tmp2(4384)();
           }
           obj.scheduledEndTime = obj2.add(1, "hour").toISOString();
           const addResult = obj2.add(1, "hour");
@@ -524,11 +524,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     entityType: guildEvent.entityType,
     onChange(entityType) {
       _undefined(null);
-      const obj = { entityType, scheduledEndTime: "a" };
+      const obj = { entityType, scheduledEndTime: "Array" };
       if (entityType === constants.EXTERNAL) {
-        let obj2 = _modDef4352(guildEvent.scheduledStartTime);
+        let obj2 = _modDef4384(guildEvent.scheduledStartTime);
         if (obj2 == null) {
-          obj2 = tmp2(4352)();
+          obj2 = tmp2(4384)();
         }
         obj.scheduledEndTime = obj2.add(1, "hour").toISOString();
         const addResult = obj2.add(1, "hour");

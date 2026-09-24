@@ -1,15 +1,15 @@
-// Module ID: 6845
-// Function ID: 6846
+// Module ID: 6877
+// Function ID: 6878
 // Name: FreeFormInputGroup
-// Dependencies: [109, 19, 17, 21, 4758, 558, 568, 1368, 5902, 1181, 6846, 7179, 7180, 7182, 4754, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 558, 568, 1368, 5934, 1181, 6878, 7211, 7212, 7214, 4786, 2]
 
-// Module 6845 (FreeFormInputGroup)
+// Module 6877 (FreeFormInputGroup)
 import c from "c" /* 568 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import RedesignCompat from "RedesignCompat" /* 5902 */;
-import FreeFormLabelDefault from "FreeFormLabel" /* 7179 */;
-import FreeFormTextInputDefault from "FreeFormTextInput" /* 7180 */;
-import FreeFormErrorLabelDefault from "FreeFormErrorLabel" /* 7182 */;
+import RedesignCompat from "RedesignCompat" /* 5934 */;
+import FreeFormLabelDefault from "FreeFormLabel" /* 7211 */;
+import FreeFormTextInputDefault from "FreeFormTextInput" /* 7212 */;
+import FreeFormErrorLabelDefault from "FreeFormErrorLabel" /* 7214 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ let closure_3 = ["style", "label", "error", "value", "hint", "textStyle", "enabl
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ label: { marginBottom: 8 }, input: { flexGrow: 1, marginBottom: 8 }, error: { marginBottom: 8 }, hint: { marginBottom: 8 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -76,7 +76,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
       str = "visible-password";
       const tmpResult = tmp(1368);
     }
-    const context = noop.useContext(tmp(5902).RedesignCompatContext);
+    const context = noop.useContext(tmp(5934).RedesignCompatContext);
     const id = noop.useId();
     if (context) {
       ({ placeholder, onChangeText, clearButtonVisibility } = tmp9);
@@ -106,7 +106,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
         }
       }
       const obj2 = { containerStyle: tmp11, value: tmp14, label: tmp8, errorMessage: tmp5, description: tmp6, placeholder, onChange: onChangeText, clearable: tmp53, keyboardType: str, secureTextEntry: tmp20, autoCapitalize: tmp9.autoCapitalize };
-      const tmp56 = React5(tmp(6846).TextInput, obj2);
+      const tmp56 = React5(tmp(6878).TextInput, obj2);
       cResult[15] = str;
       cResult[16] = tmp20;
       cResult[17] = tmp5;
@@ -184,7 +184,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
                               let tmp47 = null;
                               if (null != tmp6) {
                                 const obj4 = { style: tmp19.hint, variant: "text-xs/medium", color: "text-muted", children: tmp6 };
-                                tmp47 = React5(tmp(4754).Text, obj4);
+                                tmp47 = React5(tmp(4786).Text, obj4);
                               }
                               cResult[47] = tmp6;
                               cResult[48] = tmp19.hint;
@@ -288,7 +288,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
   if (context) {
     ({ placeholder, onChangeText, clearButtonVisibility } = merged);
     const obj3 = { containerStyle: style, value, label, errorMessage: error, description: hint, placeholder, onChange: onChangeText, clearable: clearButtonVisibility !== tmp8(1181).ClearButtonVisibility.WITH_CONTENT, keyboardType: str, secureTextEntry: isAndroidResult, autoCapitalize: merged.autoCapitalize };
-    return React5(tmp8(6846).TextInput, obj3);
+    return React5(tmp8(6878).TextInput, obj3);
   } else {
     const obj4 = { style, children: null };
     let tmp14 = null;
@@ -326,7 +326,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
     let tmp17Result2 = null;
     if (null != hint) {
       const obj8 = { style: tmp2.hint, variant: "text-xs/medium", color: "text-muted", children: hint };
-      tmp17Result2 = tmp17(tmp8(4754).Text, obj8);
+      tmp17Result2 = tmp17(tmp8(4786).Text, obj8);
     }
     items[3] = tmp17Result2;
     obj4.children = items;

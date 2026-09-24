@@ -1,11 +1,11 @@
-// Module ID: 11273
-// Function ID: 11274
+// Module ID: 11309
+// Function ID: 11310
 // Name: useFavoritesGuildCategoryAddAction
-// Dependencies: [19, 1078, 558, 568, 11274, 2070, 1119, 3328, 2]
+// Dependencies: [19, 1078, 558, 568, 11310, 2070, 1119, 3360, 2]
 
-// Module 11273 (useFavoritesGuildCategoryAddAction)
-import _modDef3328 from "module_3328" /* 3328 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 11274 */;
+// Module 11309 (useFavoritesGuildCategoryAddAction)
+import _modDef3360 from "module_3360" /* 3360 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 11310 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       const _Symbol = Symbol;
       if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = tmp(1119).intl;
-        const stringResult = intl.string(_modDef3328["1QJmIL"]);
+        const stringResult = intl.string(_modDef3360["1QJmIL"]);
         cResult[2] = stringResult;
         let tmp7 = stringResult;
       } else {
@@ -63,7 +63,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     if (id.type === ChannelTypes.GUILD_CATEGORY) {
       const obj2 = { label: null, perform: null };
       const intl = require("util").intl;
-      obj2.label = intl.string(_modDef3328["1QJmIL"]);
+      obj2.label = intl.string(_modDef3360["1QJmIL"]);
       obj2.perform = callback;
       tmp4 = obj2;
     }

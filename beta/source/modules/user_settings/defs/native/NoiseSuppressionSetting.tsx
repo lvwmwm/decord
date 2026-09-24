@@ -1,13 +1,13 @@
-// Module ID: 15515
-// Function ID: 15516
+// Module ID: 15525
+// Function ID: 15526
 // Name: NoiseSuppressionSetting
-// Dependencies: [1996, 8238, 558, 568, 504, 10247, 11594, 1119, 2]
+// Dependencies: [1996, 8270, 558, 568, 504, 10286, 11630, 1119, 2]
 
-// Module 15515 (NoiseSuppressionSetting)
+// Module 15525 (NoiseSuppressionSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 10247 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 10286 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
 require = fn;
@@ -32,7 +32,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items = [MediaEngineStore];
   return initialize.useStateFromStores(items, () => noiseSuppression.getNoiseSuppression());
 });
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -57,7 +57,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.t8Qhib);
   },
-  parent: fn(8238).MobileUserSettings.VOICE,
+  parent: fn(8270).MobileUserSettings.VOICE,
   useValue: tmp2,
   onValueChange: function onNoiseSuppressionSettingValueChange(arg0) {
     const NoiseSuppressionOpt = UserSettingsVoiceUtils.NoiseSuppressionOpt;

@@ -1,14 +1,14 @@
-// Module ID: 17693
-// Function ID: 17694
+// Module ID: 17703
+// Function ID: 17704
 // Name: LaunchPadMembers
-// Dependencies: [19, 17, 2045, 2099, 21, 4758, 558, 568, 565, 12328, 17165, 11708, 1119, 4754, 2]
+// Dependencies: [19, 17, 2045, 2099, 21, 4790, 558, 568, 565, 12364, 17175, 11744, 1119, 4786, 2]
 
-// Module 17693 (LaunchPadMembers)
+// Module 17703 (LaunchPadMembers)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
-import GuildChannelUserListDefault from "GuildChannelUserList" /* 11708 */;
-import PrivateChannelUserListDefault from "PrivateChannelUserList" /* 12328 */;
-import ThreadChannelUserListDefault from "ThreadChannelUserList" /* 17165 */;
+import GuildChannelUserListDefault from "GuildChannelUserList" /* 11744 */;
+import PrivateChannelUserListDefault from "PrivateChannelUserList" /* 12364 */;
+import ThreadChannelUserListDefault from "ThreadChannelUserList" /* 17175 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
@@ -16,7 +16,7 @@ import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ wrapper: { minHeight: 16 }, listStyle: { flex: 0 }, emptyWrapper: { padding: 20 }, emptyText: { textAlign: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -47,7 +47,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
         }
       }
-      return { channelId: "unicodeVersion", type: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000199437896466855 };
+      return { channelId: "unicodeVersion", type: null };
     };
     cResult[0] = items;
     cResult[1] = fn;
@@ -152,7 +152,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[23] !== tmp4.emptyText) {
       const obj10 = { style: emptyText, variant: "text-md/semibold", children: tmp10 };
-      const tmp14 = jsx(tmp(4754).Text, { style: emptyText, variant: "text-md/semibold", children: tmp10 });
+      const tmp14 = jsx(tmp(4786).Text, { style: emptyText, variant: "text-md/semibold", children: tmp10 });
       cResult[23] = tmp4.emptyText;
       cResult[24] = tmp14;
       let tmp12 = tmp14;
@@ -195,7 +195,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     }
-    return { channelId: "unicodeVersion", type: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000199437896466855 };
+    return { channelId: "unicodeVersion", type: null };
   });
   if ("private" === stateFromStoresObject.type) {
     let obj2 = { style: tmp.wrapper, children: null };
@@ -221,7 +221,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj18 = { style: tmp.emptyText, variant: "text-md/semibold", children: null };
     const intl = tmp2(1119).intl;
     obj18.children = intl.string(tmp2(1119).t["+7wtJq"]);
-    obj17.children = jsx(tmp2(4754).Text, { style: tmp.emptyText, variant: "text-md/semibold", children: null });
+    obj17.children = jsx(tmp2(4786).Text, { style: tmp.emptyText, variant: "text-md/semibold", children: null });
     tmp8 = <View style={tmp.emptyWrapper}>{null}</View>;
   }
   return tmp8;

@@ -1,9 +1,9 @@
-// Module ID: 13468
-// Function ID: 13469
+// Module ID: 13504
+// Function ID: 13505
 // Name: useHandleClaim
-// Dependencies: [5, 19, 558, 568, 7788, 4725, 11376, 4458, 1119, 2]
+// Dependencies: [5, 19, 558, 568, 7820, 4757, 11412, 4490, 1119, 2]
 
-// Module 13468 (useHandleClaim)
+// Module 13504 (useHandleClaim)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -33,26 +33,26 @@ export const useHandleClaim = ReactCompilerGating.isReactCompilerEnabled() ? ((p
   }
   _require = asyncGeneratorStep(async () => {
     const product = tmp3;
-    await product(7788).claimPremiumCollectiblesProduct(product.skuId);
+    await product(7820).claimPremiumCollectiblesProduct(product.skuId);
     if (1 === tmp7) {
       c3 = 0;
       const obj7 = { key: "collectible shop claim error", content: null };
       const intl = product(1119).intl;
       obj7.content = intl.string(product(1119).t.CKsXk3);
-      stageCollectibleChangeForEditProfile(4458).open(obj7);
+      stageCollectibleChangeForEditProfile(4490).open(obj7);
       c4 = 3;
-      stageCollectibleChangeForEditProfile(4458);
+      stageCollectibleChangeForEditProfile(4490);
     } else if (arg0 === 1) {
       c4 = 3;
       throw arg1;
     } else if (arg0 !== 2) {
-      stageCollectibleChangeForEditProfile(4725).hideAllActionSheets();
-      stageCollectibleChangeForEditProfile(4725);
-      stageCollectibleChangeForEditProfile(11376).open({ product, useCategoryImage: true, stageCollectibleChangeForEditProfile });
-      stageCollectibleChangeForEditProfile(11376);
-      const collectiblesPurchases = product(7788).fetchCollectiblesPurchases();
+      stageCollectibleChangeForEditProfile(4757).hideAllActionSheets();
+      stageCollectibleChangeForEditProfile(4757);
+      stageCollectibleChangeForEditProfile(11412).open({ product, useCategoryImage: true, stageCollectibleChangeForEditProfile });
+      stageCollectibleChangeForEditProfile(11412);
+      const collectiblesPurchases = product(7820).fetchCollectiblesPurchases();
       c3 = 0;
-      product(7788);
+      product(7820);
     }
     return arg1;
   });

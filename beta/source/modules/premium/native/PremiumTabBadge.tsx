@@ -1,38 +1,38 @@
-// Module ID: 15248
-// Function ID: 15249
+// Module ID: 15258
+// Function ID: 15259
 // Name: PremiumTabBadge
-// Dependencies: [32, 19, 17, 4424, 1378, 7676, 21, 4758, 580, 558, 568, 4477, 4610, 4693, 4754, 1253, 11036, 9046, 1181, 15249, 7694, 8324, 4418, 4579, 2031, 504, 7632, 8320, 8319, 13690, 1119, 1368, 5198, 1098, 2]
+// Dependencies: [32, 19, 17, 4456, 1378, 7708, 21, 4790, 580, 558, 568, 4509, 4642, 4725, 4786, 1253, 11072, 9078, 1181, 15259, 7726, 8356, 4450, 4611, 2031, 504, 7664, 8352, 8351, 13726, 1119, 1368, 5230, 1098, 2]
 
-// Module 15248 (PremiumTabBadge)
+// Module 15258 (PremiumTabBadge)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
-import PremiumUtils from "PremiumUtils" /* 4418 */;
-import useBadgeTextVariant from "useBadgeTextVariant" /* 4477 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4579 */;
-import shared from "shared" /* 4610 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7632 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7694 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8324 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9046 */;
-import MarketingComponentType from "MarketingComponentType" /* 11036 */;
+import PremiumUtils from "PremiumUtils" /* 4450 */;
+import useBadgeTextVariant from "useBadgeTextVariant" /* 4509 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4611 */;
+import shared from "shared" /* 4642 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7664 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7726 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8356 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9078 */;
+import MarketingComponentType from "MarketingComponentType" /* 11072 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 4424 */;
+import SubscriptionStore from "SubscriptionStore" /* 4456 */;
 
-const Text_Text = tmp(4754);
-const _modDef15249 = tmp5(15249);
+const Text_Text = tmp(4786);
+const _modDef15259 = tmp5(15259);
 require = fn;
 const View = fn(17).View;
 let closure_6 = fn(1378).PREMIUM_TIER_2_REFERRAL_TRIAL_ID;
-const Gradients = fn(7676).Gradients;
+const Gradients = fn(7708).Gradients;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { tag: { paddingVertical: 4, paddingHorizontal: 8, borderRadius: nativeDefault.radii.round }, badge: null, badgeBackgroundLightTheme: null, badgeBackgroundDarkTheme: null, acked: null, ackedBadge: null, icon: null, uppercase: null, text: null, premiumDiscountBadge: null };
 let obj3 = { paddingVertical: 4, paddingHorizontal: 8, borderRadius: nativeDefault.radii.round };
 obj2.badge = { display: "flex", minWidth: 16, minHeight: 16, paddingHorizontal: 8, justifyContent: "center", alignItems: "center", gap: 4, borderRadius: nativeDefault.radii.round };
@@ -154,7 +154,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     useTrackImpressionDefault(tmp5, tmp8);
     if (acked) {
       if (cResult[5] !== acked2.icon) {
-        const obj4 = { source: tmp9(15249), size: tmp(1181).Icon.Sizes.EXTRA_SMALL, color: acked2.icon.color, style: acked2.icon };
+        const obj4 = { source: tmp9(15259), size: tmp(1181).Icon.Sizes.EXTRA_SMALL, color: acked2.icon.color, style: acked2.icon };
         const tmp17 = closure_1_8(tmp(1181).Icon, obj4);
         cResult[5] = acked2.icon;
         cResult[6] = tmp17;
@@ -187,7 +187,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj6 = { variant: badgeTextVariant, color: "interactive-text-default", style: tmp18, children: ackedBadgeCopy };
-        const tmp21 = closure_1_8(tmp(4754).Text, obj6);
+        const tmp21 = closure_1_8(tmp(4786).Text, obj6);
         cResult[10] = ackedBadgeCopy;
         cResult[11] = badgeTextVariant;
         cResult[12] = tmp18;
@@ -233,14 +233,14 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmp6(obj2, { disableTrack: null == componentId });
   if (acked) {
     const obj5 = { style: tmp4.acked, children: null };
-    const obj6 = { source: _modDef15249, size: tmp(1181).Icon.Sizes.EXTRA_SMALL, color: tmp4.icon.color, style: tmp4.icon };
+    const obj6 = { source: _modDef15259, size: tmp(1181).Icon.Sizes.EXTRA_SMALL, color: tmp4.icon.color, style: tmp4.icon };
     const items = [closure_1_8(tmp(1181).Icon, obj6), ];
     const obj7 = { variant: badgeTextVariant, color: "interactive-text-default", style: null, children: null };
     const items1 = [, ];
     ({ uppercase: arr2[0], text: arr2[1] } = tmp4);
     obj7.style = items1;
     obj7.children = ackedBadgeCopy;
-    items[1] = closure_1_8(tmp(4754).Text, obj7);
+    items[1] = closure_1_8(tmp(4786).Text, obj7);
     obj5.children = items;
     let tmp10 = options(View, obj5);
   } else {
@@ -285,16 +285,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] === trialId === closure_6) {
     if (cResult[3] === tmp9) {
-      tmp(7632);
+      tmp(7664);
       if (cResult[5] === hasTier2Premium) {
         if (cResult[6] === tmp9) {
-          const tmpResult10 = tmp(7632);
-          const isEligibleSenderForReferralProgram = tmp(8320).useIsEligibleSenderForReferralProgram();
-          const tmpResult11 = tmp(8320);
-          const isReferralProgramEntrypointBadgeAcknowledged = tmp(8319).useIsReferralProgramEntrypointBadgeAcknowledged();
-          const tmpResult12 = tmp(8319);
-          const promotionMarketingComponent = tmp(13690).usePromotionMarketingComponent(tmp(11036).MarketingComponentType.PREMIUM_TAB);
-          const tmpResult14 = tmp(7632);
+          const tmpResult10 = tmp(7664);
+          const isEligibleSenderForReferralProgram = tmp(8352).useIsEligibleSenderForReferralProgram();
+          const tmpResult11 = tmp(8352);
+          const isReferralProgramEntrypointBadgeAcknowledged = tmp(8351).useIsReferralProgramEntrypointBadgeAcknowledged();
+          const tmpResult12 = tmp(8351);
+          const promotionMarketingComponent = tmp(13726).usePromotionMarketingComponent(tmp(11072).MarketingComponentType.PREMIUM_TAB);
+          const tmpResult14 = tmp(7664);
           let prop = null;
           const useSelectedSnowflakeBoundDismissibleContent = tmpResult14.useSelectedSnowflakeBoundDismissibleContent;
           if (null != promotionMarketingComponent) {
@@ -418,7 +418,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   tmp99 = tmp104;
                 }
                 const obj10 = { variant: badgeTextVariant, color: "text-overlay-light", style: tmp93, children: tmp94 };
-                const tmp98 = closure_1_8(tmp(4754).Text, obj10);
+                const tmp98 = closure_1_8(tmp(4786).Text, obj10);
                 cResult[23] = badgeTextVariant;
                 cResult[24] = tmp93;
                 cResult[25] = tmp98;
@@ -465,7 +465,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     let tmp66 = cResult[46];
                   }
                   if (cResult[47] !== tmp5.icon) {
-                    const obj12 = { source: _modDef15249, size: tmp(1181).Icon.Sizes.EXTRA_SMALL, color: tmp5.icon.color, style: tmp5.icon };
+                    const obj12 = { source: _modDef15259, size: tmp(1181).Icon.Sizes.EXTRA_SMALL, color: tmp5.icon.color, style: tmp5.icon };
                     const tmp70 = closure_1_8(tmp(1181).Icon, obj12);
                     cResult[47] = tmp5.icon;
                     cResult[48] = tmp70;
@@ -509,7 +509,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                       tmp77 = tmp80;
                     }
                     const obj14 = { variant: badgeTextVariant, color: "interactive-text-default", style: tmp71, children: tmp72 };
-                    const tmp76 = closure_1_8(tmp(4754).Text, obj14);
+                    const tmp76 = closure_1_8(tmp(4786).Text, obj14);
                     cResult[53] = badgeTextVariant;
                     cResult[54] = tmp71;
                     cResult[55] = tmp76;
@@ -568,7 +568,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     tmp61 = tmp65;
                   }
                   const obj16 = { variant: badgeTextVariant, color: "text-overlay-light", style: tmp55, children: tmp56 };
-                  const tmp60 = closure_1_8(tmp(4754).Text, obj16);
+                  const tmp60 = closure_1_8(tmp(4786).Text, obj16);
                   cResult[38] = badgeTextVariant;
                   cResult[39] = tmp55;
                   cResult[40] = tmp60;
@@ -615,7 +615,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   }
                 }
                 const obj18 = { variant: badgeTextVariant, color: "text-overlay-light", style: tmp43, children: tmp31 };
-                const tmp46 = closure_1_8(tmp(4754).Text, obj18);
+                const tmp46 = closure_1_8(tmp(4786).Text, obj18);
                 cResult[65] = tmp31;
                 cResult[66] = badgeTextVariant;
                 cResult[67] = tmp43;
@@ -629,7 +629,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               tmp43 = items7;
             }
           }
-          const tmpResult13 = tmp(13690);
+          const tmpResult13 = tmp(13726);
         }
       }
       if (!tmp9) {
@@ -676,19 +676,19 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let items1 = [tmp(2031).DismissibleContent.REFERRAL_TRIAL_MOBILE_NITRO_HOME_BADGE];
     }
     [tmp14, r10055] = tmp11(items1, undefined, true);
-    tmp(7632);
+    tmp(7664);
     if (!tmp7) {
       if (hasTier2Premium) {
         let items2 = [tmp(2031).DismissibleContent.WHATS_NEW_TENURE_BADGE_REWARD];
       }
       [tmp18, r10067] = tmp12(tmp16(items2, undefined, true), 2);
       const tmp12Result = tmp12(tmp16(items2, undefined, true), 2);
-      const isEligibleSenderForReferralProgram = tmp(8320).useIsEligibleSenderForReferralProgram();
-      const tmpResult11 = tmp(8320);
-      const isReferralProgramEntrypointBadgeAcknowledged = tmp(8319).useIsReferralProgramEntrypointBadgeAcknowledged();
-      const tmpResult12 = tmp(8319);
-      const promotionMarketingComponent = tmp(13690).usePromotionMarketingComponent(tmp(11036).MarketingComponentType.PREMIUM_TAB);
-      const tmpResult14 = tmp(7632);
+      const isEligibleSenderForReferralProgram = tmp(8352).useIsEligibleSenderForReferralProgram();
+      const tmpResult11 = tmp(8352);
+      const isReferralProgramEntrypointBadgeAcknowledged = tmp(8351).useIsReferralProgramEntrypointBadgeAcknowledged();
+      const tmpResult12 = tmp(8351);
+      const promotionMarketingComponent = tmp(13726).usePromotionMarketingComponent(tmp(11072).MarketingComponentType.PREMIUM_TAB);
+      const tmpResult14 = tmp(7664);
       let prop = null;
       if (null != promotionMarketingComponent) {
         prop = null;
@@ -703,7 +703,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (str2 == null) {
         str2 = "";
       }
-      const tmpResult13 = tmp(13690);
+      const tmpResult13 = tmp(13726);
       if (null != promotionMarketingComponent) {
         if ("premiumTab" === promotionMarketingComponent.properties.properties.oneofKind) {
           const obj4 = { acked: tmp27 !== tmp(2031).DismissibleContent.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, badgeCopy: promotionMarketingComponent.properties.properties.premiumTab.badgeLabel, ackedBadgeCopy: promotionMarketingComponent.properties.properties.premiumTab.acknowledgedBadgeLabel, componentId: null, promotionId: null };
@@ -743,7 +743,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         intl = tmp(1119).intl;
         badgeTextVariant = intl.string(tmp(1119).t.y2b7CA);
         obj9.children = badgeTextVariant;
-        obj8.children = closure_1_8(tmp(4754).Text, obj9);
+        obj8.children = closure_1_8(tmp(4786).Text, obj9);
         let tmp47Result = tmp50(tmp52, obj8);
         tmpResult15 = tmp(1368);
       } else if (null != premiumTrialOffer) {
@@ -763,7 +763,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const items4 = [, ];
           ({ premiumDiscountBadge: arr6[0], ackedBadge: arr6[1] } = intl);
           obj11.style = items4;
-          const obj12 = { source: _modDef15249, size: tmp(1181).Icon.Sizes.EXTRA_SMALL, color: intl.icon.color, style: intl.icon };
+          const obj12 = { source: _modDef15259, size: tmp(1181).Icon.Sizes.EXTRA_SMALL, color: intl.icon.color, style: intl.icon };
           const items5 = [closure_1_8(tmp(1181).Icon, obj12), ];
           const obj13 = { variant: badgeTextVariant, color: "interactive-text-default", style: null, children: null };
           const items6 = [, ];
@@ -771,7 +771,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           obj13.style = items6;
           const intl6 = tmp(1119).intl;
           obj13.children = intl6.string(tmp(1119).t["/DTtr6"]);
-          items5[1] = closure_1_8(tmp(4754).Text, obj13);
+          items5[1] = closure_1_8(tmp(4786).Text, obj13);
           obj11.children = items5;
           let tmp41 = options(View, obj11);
         } else {
@@ -782,7 +782,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           obj15.style = items7;
           const intl5 = tmp(1119).intl;
           obj15.children = intl5.string(tmp(1119).t["/DTtr6"]);
-          obj14.children = closure_1_8(tmp(4754).Text, obj15);
+          obj14.children = closure_1_8(tmp(4786).Text, obj15);
           tmp41 = closure_1_8(LinearGradientDefault, obj14);
         }
       } else {
@@ -799,7 +799,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           items8[1] = text1;
           obj17.style = items8;
           obj17.children = stringResult;
-          obj16.children = closure_1_8(tmp(4754).Text, obj17);
+          obj16.children = closure_1_8(tmp(4786).Text, obj17);
           tmp47Result = tmp32(tmp34, obj16);
           tmpResult16 = tmp(1368);
         }

@@ -1,15 +1,15 @@
-// Module ID: 7337
-// Function ID: 7338
+// Module ID: 7369
+// Function ID: 7370
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 17, 1078, 21, 4758, 558, 568, 1119, 4455, 7338, 4754, 5207, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 558, 568, 1119, 4487, 7370, 4786, 5239, 2]
 
-// Module 7337 (MemberVerificationAlertUpdate)
+// Module 7369 (MemberVerificationAlertUpdate)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import LinkingDefault from "Linking" /* 4455 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import common_AlertDefault from "common/Alert" /* 5207 */;
-import _modDef7338 from "module_7338" /* 7338 */;
+import LinkingDefault from "Linking" /* 4487 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import common_AlertDefault from "common/Alert" /* 5239 */;
+import _modDef7370 from "module_7370" /* 7370 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,7 +17,7 @@ const Image = fn(17).Image;
 const DownloadLinks = fn(1078).DownloadLinks;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ headerImage: { marginLeft: "auto", marginRight: "auto", marginTop: 8 }, header: { marginTop: 24, textAlign: "center" }, text: { marginVertical: 8, lineHeight: 18, textAlign: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -44,7 +44,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     [tmp5, tmp6, tmp7] = cResult;
   }
   if (cResult[3] !== tmp4.headerImage) {
-    const obj2 = { source: _modDef7338, style: tmp4.headerImage };
+    const obj2 = { source: _modDef7370, style: tmp4.headerImage };
     const tmp14 = hasOwnProperty(Image, obj2);
     cResult[3] = tmp4.headerImage;
     cResult[4] = tmp14;
@@ -62,7 +62,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   if (cResult[6] !== tmp4.header) {
     const obj3 = { style: tmp4.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp15 };
-    const tmp19 = hasOwnProperty(tmp(4754).Text, obj3);
+    const tmp19 = hasOwnProperty(tmp(4786).Text, obj3);
     cResult[6] = tmp4.header;
     cResult[7] = tmp19;
     let tmp17 = tmp19;
@@ -79,7 +79,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   if (cResult[9] !== tmp4.text) {
     const obj4 = { style: tmp4.text, variant: "text-sm/medium", color: "text-default", children: tmp20 };
-    const tmp24 = hasOwnProperty(tmp(4754).Text, obj4);
+    const tmp24 = hasOwnProperty(tmp(4786).Text, obj4);
     cResult[9] = tmp4.text;
     cResult[10] = tmp24;
     let tmp22 = tmp24;
@@ -124,7 +124,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   };
   obj.onCancel = onClose.onClose;
   const tmp2 = common_AlertDefault;
-  const items = [hasOwnProperty(Image, { source: _modDef7338, style: tmp.headerImage }), , ];
+  const items = [hasOwnProperty(Image, { source: _modDef7370, style: tmp.headerImage }), , ];
   const obj3 = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl3 = util.intl;
   obj3.children = intl3.string(util.t.kkjNHU);

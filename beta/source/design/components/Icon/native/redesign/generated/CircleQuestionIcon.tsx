@@ -1,14 +1,14 @@
-// Module ID: 11490
-// Function ID: 11491
+// Module ID: 11526
+// Function ID: 11527
 // Name: CircleQuestionIcon
-// Dependencies: [109, 19, 17, 21, 558, 568, 580, 11491, 4461, 11492, 2]
+// Dependencies: [109, 19, 17, 21, 558, 568, 580, 11527, 4493, 11528, 2]
 
-// Module 11490 (CircleQuestionIcon)
+// Module 11526 (CircleQuestionIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod11491 from "module_11491" /* 11491 */;
-import _mod11492 from "module_11492" /* 11492 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod11527 from "module_11527" /* 11527 */;
+import _mod11528 from "module_11528" /* 11528 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -49,7 +49,7 @@ export const CircleQuestionIcon = ReactCompilerGating.isReactCompilerEnabled() ?
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(11491);
+    const tmpResult = tmp(11527);
     cResult[5] = tmpResult;
     let tmp11 = tmpResult;
   } else {
@@ -62,7 +62,7 @@ export const CircleQuestionIcon = ReactCompilerGating.isReactCompilerEnabled() ?
       }
       const _Symbol = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmpResult2 = tmp(11492);
+        const tmpResult2 = tmp(11528);
         cResult[10] = tmpResult2;
         let tmp16 = tmpResult2;
       } else {
@@ -106,7 +106,7 @@ export const CircleQuestionIcon = ReactCompilerGating.isReactCompilerEnabled() ?
         }
         const obj4 = { source: tmp16, color: INTERACTIVE_ICON_DEFAULT, style: cResult[12] };
         const merged = Object.assign(tmp4);
-        const tmp27 = timestampProducer(tmp(4461).BaseIconImage, obj4);
+        const tmp27 = timestampProducer(tmp(4493).BaseIconImage, obj4);
         cResult[14] = INTERACTIVE_ICON_DEFAULT;
         cResult[15] = tmp4;
         cResult[16] = cResult[12];
@@ -134,8 +134,8 @@ export const CircleQuestionIcon = ReactCompilerGating.isReactCompilerEnabled() ?
   const merged = Object.assign(color, Object.assign({ style: 0, secondaryColor: 0, color: 0 }));
   const obj = { children: null };
   const merged1 = Object.assign(merged);
-  const items = [timestampProducer(BaseIconImage.BaseIconImage, { source: _mod11491, color: secondaryColor, style }), ];
-  const obj3 = { source: _mod11492, color: INTERACTIVE_ICON_DEFAULT, style: null };
+  const items = [timestampProducer(BaseIconImage.BaseIconImage, { source: _mod11527, color: secondaryColor, style }), ];
+  const obj3 = { source: _mod11528, color: INTERACTIVE_ICON_DEFAULT, style: null };
   const items1 = [style];
   const items2 = [];
   items2[HermesBuiltin.arraySpread(items1.flat(), 0)] = { position: "absolute", top: 0 };

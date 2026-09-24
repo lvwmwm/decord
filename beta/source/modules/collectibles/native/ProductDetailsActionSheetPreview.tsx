@@ -1,14 +1,14 @@
-// Module ID: 13444
-// Function ID: 13445
+// Module ID: 13480
+// Function ID: 13481
 // Name: ProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 1977, 13445, 13447, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 1977, 13481, 13483, 2]
 
-// Module 13444 (ProductDetailsActionSheetPreview)
+// Module 13480 (ProductDetailsActionSheetPreview)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
-import BundleProductDetailsActionSheetPreviewDefault from "BundleProductDetailsActionSheetPreview" /* 13445 */;
-import IndividualProductPreview from "IndividualProductPreview" /* 13447 */;
+import BundleProductDetailsActionSheetPreviewDefault from "BundleProductDetailsActionSheetPreview" /* 13481 */;
+import IndividualProductPreview from "IndividualProductPreview" /* 13483 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ const noop = fn(19);
 ({ useCallback: closure_4, useState: hasOwnProperty } = noop);
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { previewContainer: { flex: 1 }, previewDivider: { borderBottomColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderBottomWidth: 1, paddingBottom: nativeDefault.space.PX_16, flex: 1 } };
 let closure_8 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -75,7 +75,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     const obj4 = { style: tmp3.previewDivider, children: null };
     const obj5 = { product, width: tmp5, handlePreviewPress, onTrackPress };
-    obj4.children = tmp9(tmp(13447).IndividualProductPreview, obj5);
+    obj4.children = tmp9(tmp(13483).IndividualProductPreview, obj5);
     tmp9Result = tmp9(View, obj4);
   }
   cResult[1] = handlePreviewPress;

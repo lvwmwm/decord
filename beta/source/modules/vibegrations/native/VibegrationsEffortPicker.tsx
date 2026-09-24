@@ -1,18 +1,18 @@
-// Module ID: 16948
-// Function ID: 16949
+// Module ID: 16958
+// Function ID: 16959
 // Name: VibegrationsEffortPicker
-// Dependencies: [109, 32, 19, 17, 21, 558, 568, 16944, 1119, 3682, 5900, 16945, 5901, 4754, 5903, 5822, 7446, 5186, 580, 7396, 7449, 2]
+// Dependencies: [109, 32, 19, 17, 21, 558, 568, 16954, 1119, 3714, 5932, 16955, 5933, 4786, 5935, 5854, 7478, 5218, 580, 7428, 7481, 2]
 // Exports: describeVibegrationsEffort
 
-// Module 16948 (VibegrationsEffortPicker)
+// Module 16958 (VibegrationsEffortPicker)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import TableRadioRow from "TableRadioRow" /* 5900 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
-import VibegrationsEffortPresets from "VibegrationsEffortPresets" /* 16944 */;
-import VibegrationsModelLabels from "VibegrationsModelLabels" /* 16945 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import TableRadioRow from "TableRadioRow" /* 5932 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
+import VibegrationsEffortPresets from "VibegrationsEffortPresets" /* 16954 */;
+import VibegrationsModelLabels from "VibegrationsModelLabels" /* 16955 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -327,10 +327,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((settings) => {
     onChange(arg0) {
       const tmp3 = VibegrationsEffortPresets.VIBEGRATIONS_EFFORT_PRESETS[Number(undefined, arg0)];
       if (null != tmp3) {
-        const result = tmp(16944).vibegrationsPresetTier(tmp3);
+        const result = tmp(16954).vibegrationsPresetTier(tmp3);
         const tmp15 = _objectWithoutProperties(result, closure_4);
         const tmp16 = closure_1_3;
-        const tmpResult = tmp(16944);
+        const tmpResult = tmp(16954);
         let tmp7 = tmp15;
         if (true === result.fast) {
           model = result.model;
@@ -348,8 +348,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((settings) => {
             tmp7 = obj;
           }
         }
-        tmp16(tmp(16944).vibegrationsSettingsForTier(tmp7));
-        const tmpResult2 = tmp(16944);
+        tmp16(tmp(16954).vibegrationsSettingsForTier(tmp7));
+        const tmpResult2 = tmp(16954);
       }
     },
     title: null,
@@ -566,8 +566,8 @@ export const VibegrationsEffortPickerSheet = ReactCompilerGating.isReactCompiler
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: null };
     const intl = tmp(1119).intl;
-    obj2.title = intl.string(_modDef3682.GDs9Vq);
-    const tmp10 = options(tmp(7396).BottomSheetTitleHeader, obj2);
+    obj2.title = intl.string(_modDef3714.GDs9Vq);
+    const tmp10 = options(tmp(7428).BottomSheetTitleHeader, obj2);
     cResult[2] = tmp10;
     let tmp7 = tmp10;
   } else {
@@ -602,7 +602,7 @@ export const VibegrationsEffortPickerSheet = ReactCompilerGating.isReactCompiler
   const obj = { header: null, children: null };
   const obj2 = { title: null };
   const intl = util.intl;
-  obj2.title = intl.string(_modDef3682.GDs9Vq);
+  obj2.title = intl.string(_modDef3714.GDs9Vq);
   obj.header = options(BottomSheetTitleHeader.BottomSheetTitleHeader, obj2);
   obj.children = options(View, { children: options(closure_12, { settings: tmp[0], choices: choices.choices, disabled: false, onChange: callback, hideTitle: true }) });
   return options(ActionSheet.ActionSheet, obj);

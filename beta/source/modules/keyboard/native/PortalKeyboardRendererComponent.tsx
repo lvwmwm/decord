@@ -1,14 +1,14 @@
-// Module ID: 16981
-// Function ID: 16982
+// Module ID: 16991
+// Function ID: 16992
 // Name: PortalKeyboardRendererComponent
-// Dependencies: [19, 2045, 21, 558, 568, 7468, 1614, 12165, 9519, 16982, 16988, 2]
+// Dependencies: [19, 2045, 21, 558, 568, 7500, 1614, 12201, 9551, 16992, 16998, 2]
 
-// Module 16981 (PortalKeyboardRendererComponent)
+// Module 16991 (PortalKeyboardRendererComponent)
 import c from "c" /* 568 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7468 */;
-import AppLauncherKeyboardDefault from "AppLauncherKeyboard" /* 12165 */;
-import MediaKeyboardDefault from "MediaKeyboard" /* 16982 */;
-import ExpressionPickerKeyboardDefault from "ExpressionPickerKeyboard" /* 16988 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7500 */;
+import AppLauncherKeyboardDefault from "AppLauncherKeyboard" /* 12201 */;
+import MediaKeyboardDefault from "MediaKeyboard" /* 16992 */;
+import ExpressionPickerKeyboardDefault from "ExpressionPickerKeyboard" /* 16998 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
@@ -31,7 +31,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     FAKE_PLACEHOLDER_PRIVATE_CHANNEL = cResult[1];
   }
   if (channelId === FakePlaceholderPrivateChannel.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
-    FAKE_PLACEHOLDER_PRIVATE_CHANNEL = tmp(7468).FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
+    FAKE_PLACEHOLDER_PRIVATE_CHANNEL = tmp(7500).FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
   }
   if (cResult[2] !== FAKE_PLACEHOLDER_PRIVATE_CHANNEL) {
     let tmp8;
@@ -58,8 +58,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
             }
           }
         }
-        const obj3 = { context: tmp6, chatInputRef, onClose: cleanUp, transitionState: state, entrypoint: tmp(9519).AppLauncherEntrypoint.TEXT };
-        const tmp21 = jsx(AppLauncherKeyboardDefault, { context: tmp6, chatInputRef, onClose: cleanUp, transitionState: state, entrypoint: tmp(9519).AppLauncherEntrypoint.TEXT });
+        const obj3 = { context: tmp6, chatInputRef, onClose: cleanUp, transitionState: state, entrypoint: tmp(9551).AppLauncherEntrypoint.TEXT };
+        const tmp21 = jsx(AppLauncherKeyboardDefault, { context: tmp6, chatInputRef, onClose: cleanUp, transitionState: state, entrypoint: tmp(9551).AppLauncherEntrypoint.TEXT });
         cResult[4] = chatInputRef;
         cResult[5] = cleanUp;
         cResult[6] = tmp6;

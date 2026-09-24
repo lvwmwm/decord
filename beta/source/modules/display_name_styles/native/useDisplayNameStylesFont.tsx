@@ -1,14 +1,14 @@
-// Module ID: 9974
-// Function ID: 9975
+// Module ID: 10006
+// Function ID: 10007
 // Name: useDisplayNameStylesFont
-// Dependencies: [1394, 1396, 558, 568, 4992, 9975, 2]
+// Dependencies: [1394, 1396, 558, 568, 5024, 10007, 2]
 
-// Module 9974 (useDisplayNameStylesFont)
+// Module 10006 (useDisplayNameStylesFont)
 import c from "c" /* 568 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1394 */;
 import DisplayNameFont from "DisplayNameFont" /* 1396 */;
-import useDisplayNameStylesEnabled from "useDisplayNameStylesEnabled" /* 4992 */;
-import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 9975 */;
+import useDisplayNameStylesEnabled from "useDisplayNameStylesEnabled" /* 5024 */;
+import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 10007 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

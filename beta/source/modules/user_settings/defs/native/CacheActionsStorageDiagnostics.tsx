@@ -1,10 +1,10 @@
-// Module ID: 15838
-// Function ID: 15839
+// Module ID: 15848
+// Function ID: 15849
 // Name: CacheActionsStorageDiagnostics
-// Dependencies: [5, 32, 19, 21, 15837, 4458, 4712, 1119, 5186, 4754, 5188, 2]
+// Dependencies: [5, 32, 19, 21, 15847, 4490, 4744, 1119, 5218, 4786, 5220, 2]
 // Exports: default
 
-// Module 15838 (CacheActionsStorageDiagnostics)
+// Module 15848 (CacheActionsStorageDiagnostics)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -65,7 +65,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
             const obj7 = {
               key: "storage-diagnostics-upload",
               icon() {
-                        return closure_1_6(closure_1_0(4712).CircleInformationIcon, {});
+                        return closure_1_6(closure_1_0(4744).CircleInformationIcon, {});
                       },
               content: null
             };
@@ -89,7 +89,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
             const obj9 = {
               key: "storage-diagnostics-upload",
               icon() {
-                        return closure_1_6(closure_1_0(4712).CircleInformationIcon, {});
+                        return closure_1_6(closure_1_0(4744).CircleInformationIcon, {});
                       },
               content: null
             };
@@ -133,7 +133,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
   let obj2 = { variant: "text-sm/normal", color: "text-subtle", children: null };
   let intl = onBusyChange(1119).intl;
   obj2.children = intl.string(onBusyChange(1119).t.Fzi4HX);
-  const items = [closure_6(onBusyChange(4754).Text, obj2), ];
+  const items = [closure_6(onBusyChange(4786).Text, obj2), ];
   let obj3 = { variant: "secondary", text: null, loading: null, disabled: null, onPress: null };
   let intl2 = onBusyChange(1119).intl;
   obj3.text = intl2.string(onBusyChange(1119).t.VSunuT);
@@ -149,7 +149,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
     }
     return applyArgumentsResult;
   };
-  items[1] = closure_6(onBusyChange(5188).Button, obj3);
+  items[1] = closure_6(onBusyChange(5220).Button, obj3);
   obj.children = items;
-  return closure_7(onBusyChange(5186).Stack, obj);
+  return closure_7(onBusyChange(5218).Stack, obj);
 };

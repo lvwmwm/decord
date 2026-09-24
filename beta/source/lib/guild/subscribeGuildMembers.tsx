@@ -1,10 +1,10 @@
-// Module ID: 7555
-// Function ID: 7556
+// Module ID: 7587
+// Function ID: 7588
 // Name: subscribeGuildMembers
-// Dependencies: [109, 19, 21, 12, 7556, 560, 558, 568, 1235, 2]
+// Dependencies: [109, 19, 21, 12, 7588, 560, 558, 568, 1235, 2]
 // Exports: default
 
-// Module 7555 (subscribeGuildMembers)
+// Module 7587 (subscribeGuildMembers)
 import _modDef12 from "module_12" /* 12 */;
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 560 */;
 import c from "c" /* 568 */;
@@ -55,10 +55,10 @@ export default function subscribeGuildMembers(arg0) {
         }
         if (!isEqualResult) {
           if (null != self._subscriptions) {
-            const item = tmp(12).forEach(self._subscriptions, (userIds, guildId) => displayName(7556).unsubscribeMembers(guildId, userIds));
+            const item = tmp(12).forEach(self._subscriptions, (userIds, guildId) => displayName(7588).unsubscribeMembers(guildId, userIds));
             const tmpResult3 = tmp(12);
           }
-          const item1 = tmp(12).forEach(tmp4, (userIds, guildId) => displayName(7556).subscribeMembers(guildId, userIds));
+          const item1 = tmp(12).forEach(tmp4, (userIds, guildId) => displayName(7588).subscribeMembers(guildId, userIds));
           self._subscriptions = tmp4;
           const tmpResult4 = tmp(12);
         }
@@ -128,7 +128,7 @@ export const useSubscribeGuildMembers = ReactCompilerGating.isReactCompilerEnabl
         reason(1235).captureMessage("SubscribeGuildMembers called with more than 50 userIds.", obj2);
         const obj = reason(1235);
       }
-      closure_0(7556).subscribeMembers(guildId, userIds);
+      closure_0(7588).subscribeMembers(guildId, userIds);
     });
     return () => {
       const item = reason(12).forEach(closure_1_0, (userIds, guildId) => closure_1_0(closure_1_2[4]).unsubscribeMembers(guildId, userIds));
@@ -159,7 +159,7 @@ export const useSubscribeGuildMembers = ReactCompilerGating.isReactCompilerEnabl
         reason(1235).captureMessage("SubscribeGuildMembers called with more than 50 userIds.", obj2);
         const obj = reason(1235);
       }
-      closure_0(7556).subscribeMembers(guildId, userIds);
+      closure_0(7588).subscribeMembers(guildId, userIds);
     });
     return () => {
       const item = reason(12).forEach(closure_1_0, (userIds, guildId) => closure_1_0(closure_1_2[4]).unsubscribeMembers(guildId, userIds));

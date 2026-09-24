@@ -1,14 +1,14 @@
-// Module ID: 17685
-// Function ID: 17686
+// Module ID: 17695
+// Function ID: 17696
 // Name: usePressUnderlayColor
-// Dependencies: [17686, 558, 568, 4693, 4462, 580, 4608, 4610, 2]
+// Dependencies: [17696, 558, 568, 4725, 4494, 580, 4640, 4642, 2]
 
-// Module 17685 (usePressUnderlayColor)
+// Module 17695 (usePressUnderlayColor)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import ChannelEmojiConstants from "ChannelEmojiConstants" /* 17686 */;
+import useToken from "useToken" /* 4494 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import ChannelEmojiConstants from "ChannelEmojiConstants" /* 17696 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,13 +35,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   if (null != substr) {
     hexWithOpacityResult = token;
     if (arr !== closure_3) {
-      const tmpResult = tmp(4608);
+      const tmpResult = tmp(4640);
       let num3 = 0.08;
       if (tmpResult2.isThemeDark(tmp4)) {
         num3 = 0.12;
       }
       hexWithOpacityResult = tmpResult.hexWithOpacity(substr, num3);
-      tmpResult2 = tmp(4610);
+      tmpResult2 = tmp(4642);
     }
   }
   cResult[0] = arr;
@@ -60,13 +60,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   if (null != substr) {
     hexWithOpacityResult = token;
     if (arr !== closure_3) {
-      const tmp3Result = tmp3(4608);
+      const tmp3Result = tmp3(4640);
       let num3 = 0.08;
       if (tmp3Result2.isThemeDark(tmp2)) {
         num3 = 0.12;
       }
       hexWithOpacityResult = tmp3Result.hexWithOpacity(substr, num3);
-      tmp3Result2 = tmp3(4610);
+      tmp3Result2 = tmp3(4642);
     }
   }
   return hexWithOpacityResult;

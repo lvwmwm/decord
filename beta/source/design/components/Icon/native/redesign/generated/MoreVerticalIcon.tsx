@@ -1,13 +1,13 @@
-// Module ID: 13263
-// Function ID: 13264
+// Module ID: 13299
+// Function ID: 13300
 // Name: MoreVerticalIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 13264, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 13300, 4493, 2]
 
-// Module 13263 (MoreVerticalIcon)
+// Module 13299 (MoreVerticalIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod13264 from "module_13264" /* 13264 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod13300 from "module_13300" /* 13300 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const MoreVerticalIcon = ReactCompilerGating.isReactCompilerEnabled() ? (
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(13264);
+    const tmpResult = tmp(13300);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const MoreVerticalIcon = ReactCompilerGating.isReactCompilerEnabled() ? (
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod13264, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod13300, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

@@ -1,18 +1,18 @@
-// Module ID: 17470
-// Function ID: 17471
+// Module ID: 17480
+// Function ID: 17481
 // Name: LeaveActivityButton
-// Dependencies: [19, 9313, 21, 558, 568, 1119, 5188, 10151, 9572, 2]
+// Dependencies: [19, 9345, 21, 558, 568, 1119, 5220, 10190, 9604, 2]
 
-// Module 17470 (LeaveActivityButton)
+// Module 17480 (LeaveActivityButton)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9572 */;
-import _modDef10151 from "module_10151" /* 10151 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9604 */;
+import _modDef10190 from "module_10190" /* 10190 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const ActivityPanelModes = fn(9313).ActivityPanelModes;
+const ActivityPanelModes = fn(9345).ActivityPanelModes;
 const jsx = fn(21).jsx;
 let ReactCompilerGating = fn(558);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
@@ -31,8 +31,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     [tmp4, tmp5] = cResult;
   }
   if (cResult[2] !== onPress) {
-    const obj2 = { onPress, icon: _modDef10151, text: tmp4, accessibilityLabel: tmp5, variant: "destructive", size: "sm", maxFontSizeMultiplier: 1 };
-    const tmp11 = jsx(tmp(5188).Button, { onPress, icon: _modDef10151, text: tmp4, accessibilityLabel: tmp5, variant: "destructive", size: "sm", maxFontSizeMultiplier: 1 });
+    const obj2 = { onPress, icon: _modDef10190, text: tmp4, accessibilityLabel: tmp5, variant: "destructive", size: "sm", maxFontSizeMultiplier: 1 };
+    const tmp11 = jsx(tmp(5220).Button, { onPress, icon: _modDef10190, text: tmp4, accessibilityLabel: tmp5, variant: "destructive", size: "sm", maxFontSizeMultiplier: 1 });
     cResult[2] = onPress;
     cResult[3] = tmp11;
     let tmp8 = tmp11;
@@ -41,12 +41,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   }
   return tmp8;
 }) : ((onPress) => {
-  const obj = { onPress: onPress.onPress, icon: _modDef10151, text: null, accessibilityLabel: null, variant: "destructive", size: "sm", maxFontSizeMultiplier: 1 };
+  const obj = { onPress: onPress.onPress, icon: _modDef10190, text: null, accessibilityLabel: null, variant: "destructive", size: "sm", maxFontSizeMultiplier: 1 };
   const intl = util.intl;
   obj.text = intl.string(util.t["Hi1/aQ"]);
   const intl2 = util.intl;
   obj.accessibilityLabel = intl2.string(util.t.k0Aph0);
-  return jsx(components_Button_Button.Button, { onPress: onPress.onPress, icon: _modDef10151, text: null, accessibilityLabel: null, variant: "destructive", size: "sm", maxFontSizeMultiplier: 1 });
+  return jsx(components_Button_Button.Button, { onPress: onPress.onPress, icon: _modDef10190, text: null, accessibilityLabel: null, variant: "destructive", size: "sm", maxFontSizeMultiplier: 1 });
 });
 let closure_5 = tmp2;
 ReactCompilerGating = fn(558);

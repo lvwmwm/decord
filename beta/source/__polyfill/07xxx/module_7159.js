@@ -1,44 +1,21 @@
 // Module ID: 7159
 // Function ID: 7160
-// Dependencies: [7093, 19, 7111]
-// Exports: useRecyclingState
+// Dependencies: []
 
 // Module 7159
-import _mod7111 from "module_7111" /* 7111 */;
-import _slicedToArray from "module_7093" /* 7093 */;
+function _setPrototypeOf(arg0, arg1) {
+  if (Object.setPrototypeOf) {
+    const _Object = Object;
+    exports = setPrototypeOf.bind();
+  } else {
+    exports = (arg0, arg1) => {
+      arg0.__proto__ = arg1;
+      return arg0;
+    };
+  }
+  module.exports = exports;
+  return exports(arg0, arg1);
+}
+let exports = _setPrototypeOf;
 
-require = fn;
-const noop = fn(19);
-({ useCallback: c3, useMemo: closure_4, useRef: hasOwnProperty } = noop);
-
-export const useRecyclingState = function useRecyclingState(arg0, arg1, arg2) {
-  closure_0 = arg0;
-  closure_1 = arg2;
-  let tmp = hasOwnProperty(undefined);
-  [r10015, tmp3] = _mod7111.useLayoutState(0);
-  React4(() => {
-    let tmpResult = closure_0;
-    if (typeof closure_0 === "function") {
-      tmpResult = tmp();
-    }
-    closure_2.current = tmpResult;
-    if (closure_1 != null) {
-      tmp3();
-    }
-  }, arg1);
-  const items = [tmp3];
-  const items1 = [
-    tmp.current,
-    React3((fn, arg1) => {
-      let tmp = fn;
-      if (typeof fn === "function") {
-        tmp = fn(ref.current);
-      }
-      if (tmp !== ref.current) {
-        tmp2.current = tmp;
-        arg1((arg0) => arg0 + 1, arg1);
-      }
-    }, items)
-  ];
-  return items1;
-};
+export default _setPrototypeOf;

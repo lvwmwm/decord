@@ -1,11 +1,11 @@
-// Module ID: 10258
-// Function ID: 10259
+// Module ID: 10297
+// Function ID: 10298
 // Name: VoicePanelRiveMicButton
-// Dependencies: [19, 17, 21, 558, 568, 9925, 10259, 4471, 2]
+// Dependencies: [19, 17, 21, 558, 568, 9957, 10298, 4503, 2]
 
-// Module 10258 (VoicePanelRiveMicButton)
+// Module 10297 (VoicePanelRiveMicButton)
 import c from "c" /* 568 */;
-import native from "native" /* 4471 */;
+import native from "native" /* 4503 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -45,7 +45,7 @@ export const VoicePanelRiveMicButton = ReactCompilerGating.isReactCompilerEnable
         }
         const obj2 = { style: first, children: null };
         const obj3 = { dataBinding: tmp6, defaultViewModelInstance: str, fallback: cResult[6] };
-        obj2.children = jsx(tmp(4471).MicrophoneRive, { dataBinding: tmp6, defaultViewModelInstance: str, fallback: cResult[6] });
+        obj2.children = jsx(tmp(4503).MicrophoneRive, { dataBinding: tmp6, defaultViewModelInstance: str, fallback: cResult[6] });
         const tmp14 = <View style={first}>{null}</View>;
         cResult[7] = tmp6;
         cResult[8] = str;
@@ -55,9 +55,9 @@ export const VoicePanelRiveMicButton = ReactCompilerGating.isReactCompilerEnable
       }
     }
     if (muted) {
-      let MicrophoneIcon = tmp(9925).MicrophoneSlashIcon;
+      let MicrophoneIcon = tmp(9957).MicrophoneSlashIcon;
     } else {
-      MicrophoneIcon = tmp(10259).MicrophoneIcon;
+      MicrophoneIcon = tmp(10298).MicrophoneIcon;
     }
     const obj4 = { color };
     const tmp8Result = <MicrophoneIcon color={color} />;
@@ -80,9 +80,9 @@ export const VoicePanelRiveMicButton = ReactCompilerGating.isReactCompilerEnable
   }
   obj2.defaultViewModelInstance = str;
   if (muted) {
-    let MicrophoneIcon = tmp3(9925).MicrophoneSlashIcon;
+    let MicrophoneIcon = tmp3(9957).MicrophoneSlashIcon;
   } else {
-    MicrophoneIcon = tmp3(10259).MicrophoneIcon;
+    MicrophoneIcon = tmp3(10298).MicrophoneIcon;
   }
   obj2.fallback = <MicrophoneIcon color={color} />;
   obj.children = jsx(native.MicrophoneRive, { dataBinding: { fill: color, on: !muted }, defaultViewModelInstance: null, fallback: null });

@@ -1,15 +1,15 @@
-// Module ID: 11462
-// Function ID: 11463
+// Module ID: 11498
+// Function ID: 11499
 // Name: BioText
-// Dependencies: [19, 17, 1078, 2098, 21, 4758, 558, 568, 4455, 1245, 4754, 9529, 1368, 2097, 1119, 2]
+// Dependencies: [19, 17, 1078, 2098, 21, 4790, 558, 568, 4487, 1245, 4786, 9561, 1368, 2097, 1119, 2]
 
-// Module 11462 (BioText)
+// Module 11498 (BioText)
 import c from "c" /* 568 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import isChangelogUserDefault from "isChangelogUser" /* 2097 */;
-import LinkingDefault from "Linking" /* 4455 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 9529 */;
+import LinkingDefault from "Linking" /* 4487 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 9561 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ const AnalyticEvents = fn(1078).AnalyticEvents;
 const CHANGELOG_URL = fn(2098).CHANGELOG_URL;
 const jsxProd = fn(21);
 ({ jsxs: closure_7, jsx: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles({ text: { alignSelf: "stretch", textAlignVertical: "top", width: "100%", flexGrow: 1, paddingTop: 2, lineHeight: 24 }, span: { alignSelf: "stretch", textAlignVertical: "bottom", width: "100%", flexGrow: 1, display: "flex", paddingBottom: 2 }, link: { alignSelf: "stretch", textAlignVertical: "bottom", width: "100%", flexGrow: 1, bottom: -4, position: "relative" } });
 let ReactCompilerGating = fn(558);
 let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -165,7 +165,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
             }
             const obj4 = { variant: str, color: str3, lineClamp, style: tmp4.span, children: tmp20 };
-            const tmp24 = closure_8(tmp(4754).Text, obj4, "changelog-cta");
+            const tmp24 = closure_8(tmp(4786).Text, obj4, "changelog-cta");
             cResult[11] = lineClamp;
             cResult[12] = tmp4.span;
             cResult[13] = str3;
@@ -179,7 +179,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj5 = { variant: str, color: str4, lineClamp, style: tmp4.text, children: null };
       const items1 = [tmp15, "\n"];
       obj5.children = items1;
-      const tmp19 = closure_7(tmp(4754).Text, obj5, "changelog-bio");
+      const tmp19 = closure_7(tmp(4786).Text, obj5, "changelog-bio");
       cResult[4] = lineClamp;
       cResult[5] = tmp4.text;
       cResult[6] = str4;
@@ -212,7 +212,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj6 = { variant: str, color: str2, lineClamp, style: tmp4.text, children: tmp5 };
-      const tmp13 = closure_8(tmp(4754).Text, obj6);
+      const tmp13 = closure_8(tmp(4786).Text, obj6);
       cResult[20] = lineClamp;
       cResult[21] = tmp4.text;
       cResult[22] = str2;
@@ -224,7 +224,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const obj = lineClamp(568);
   const obj7 = { linkVariant: str, textVariant: str, customEmojiOffsetY: null };
-  const tmpResult = lineClamp(9529);
+  const tmpResult = lineClamp(9561);
   let num;
   if (tmpResult2.isAndroid()) {
     num = 3;

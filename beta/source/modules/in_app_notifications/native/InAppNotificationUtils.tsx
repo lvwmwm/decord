@@ -1,20 +1,20 @@
-// Module ID: 12959
-// Function ID: 12960
+// Module ID: 12995
+// Function ID: 12996
 // Name: InAppNotificationUtils
-// Dependencies: [19, 12960, 1078, 12, 1259, 1369, 1095, 558, 568, 7546, 4938, 2]
+// Dependencies: [19, 12996, 1078, 12, 1259, 1369, 1095, 558, 568, 7578, 4970, 2]
 // Exports: extractMetadataFromNotification, generateInAppNotificationId, getMessagePreviewTextVariant, getNotificationDuration, isReactionMilestoneNotification, trackDismissed
 
-// Module 12959 (InAppNotificationUtils)
+// Module 12995 (InAppNotificationUtils)
 import _mod12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import DurationsDefault from "Durations" /* 1095 */;
 import v1 from "v1" /* 1259 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4938 */;
-import isForwardMessageDefault from "isForwardMessage" /* 7546 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4970 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7578 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const REACTION_MILESTONE_COUNTS = fn(12960).REACTION_MILESTONE_COUNTS;
+const REACTION_MILESTONE_COUNTS = fn(12996).REACTION_MILESTONE_COUNTS;
 const Constants = fn(1078);
 ({ AnalyticEvents: hasOwnProperty, ChannelTypes: metroRequire, InAppNotificationTypes: closure_7, MessageEmbedTypes: closure_8, MessageFlags: closure_9 } = Constants);
 const ReactCompilerGating = fn(558);

@@ -1,9 +1,15 @@
 // Module ID: 7080
 // Function ID: 7081
-// Dependencies: [7081]
+// Dependencies: [17]
 
 // Module 7080
-import _modDef7081 from "module_7081" /* 7081 */;
+import _mod17 from "module_17" /* 17 */;
 
+const StyleSheet = _mod17.StyleSheet;
+const obj = { container: null };
+const obj2 = {};
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+obj2.pointerEvents = "box-none";
+obj.container = obj2;
 
-export default _modDef7081;
+export const styles = StyleSheet.create(obj);

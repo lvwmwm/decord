@@ -1,24 +1,24 @@
-// Module ID: 16381
-// Function ID: 16382
+// Module ID: 16391
+// Function ID: 16392
 // Name: MessagesItemSuggestedFriend
-// Dependencies: [32, 19, 17, 4409, 1078, 21, 4758, 580, 11291, 8453, 1984, 565, 1119, 4603, 16382, 16383, 1245, 5341, 1181, 4754, 5188, 4702, 558, 568, 8995, 16380, 2]
+// Dependencies: [32, 19, 17, 4441, 1078, 21, 4790, 580, 11327, 8485, 1984, 565, 1119, 4635, 16392, 16393, 1245, 5373, 1181, 4786, 5220, 4734, 558, 568, 9027, 16390, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 16381 (MessagesItemSuggestedFriend)
+// Module 16391 (MessagesItemSuggestedFriend)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import _mod8995 from "module_8995" /* 8995 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11291 */;
-import _mod16380 from "module_16380" /* 16380 */;
-import FriendSuggestionUtils from "FriendSuggestionUtils" /* 16382 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16383 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import _mod9027 from "module_9027" /* 9027 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11327 */;
+import _mod16390 from "module_16390" /* 16390 */;
+import FriendSuggestionUtils from "FriendSuggestionUtils" /* 16392 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16393 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 
 require = fn;
 const View = fn(17).View;
@@ -26,7 +26,7 @@ const Constants = fn(1078);
 ({ AnalyticEvents: closure_7, RelationshipTypes: closure_8 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { paddingHorizontal: nativeDefault.space.PX_8 }, pressable: null, textContainer: null, avatar: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_8 };
 obj.pressable = { borderRadius: nativeDefault.radii.md, flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_8 };
@@ -51,7 +51,7 @@ let closure_12 = noop.memo(function MessagesItemSuggestedFriendView(height) {
     return items;
   }, items);
   const callback = noop.useCallback(() => {
-    asyncRequireImpl(8453, dependencyMap.paths).then((result) => result.default({ userId: suggestedFriend.user.id, localUser: suggestedFriend.user, location: "Messages Tab User Profile" }));
+    asyncRequireImpl(8485, dependencyMap.paths).then((result) => result.default({ userId: suggestedFriend.user.id, localUser: suggestedFriend.user, location: "Messages Tab User Profile" }));
   }, items1);
   const items2 = [RelationshipStore];
   if (!addedPressed) {
@@ -165,8 +165,8 @@ const memoResult1 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   } else {
     tmp4 = cResult[1];
   }
-  const tmpResult = _mod8995;
-  [tmp6, tmp7] = _mod8995.useRecyclingState(false, tmp4);
+  const tmpResult = _mod9027;
+  [tmp6, tmp7] = _mod9027.useRecyclingState(false, tmp4);
   if (cResult[2] === tmp6) {
     if (cResult[3] === suggestedFriend) {
       if (cResult[4] === tmp7) {
@@ -188,7 +188,7 @@ const memoResult1 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
 }) : ((suggestedFriend) => {
   const items = [suggestedFriend.suggestedFriend.user.id];
   const obj2 = {};
-  [tmp2, tmp3] = _mod8995.useRecyclingState(false, items);
+  [tmp2, tmp3] = _mod9027.useRecyclingState(false, items);
   const merged = Object.assign(suggestedFriend);
   obj2.addedPressed = tmp2;
   obj2.setAddedPressed = tmp3;
@@ -206,7 +206,7 @@ export const MessagesItemSuggestedFriendFast = memoResult;
 export const MessagesItemSuggestedFriendFlash = memoResult1;
 export const MessagesItemSuggestedFriendLegend = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = c.c(4);
-  [tmp3, tmp4] = _mod16380.useRecyclingState(false);
+  [tmp3, tmp4] = _mod16390.useRecyclingState(false);
   if (cResult[0] === tmp3) {
     if (cResult[1] === arg0) {
       if (cResult[2] === tmp4) {
@@ -227,7 +227,7 @@ export const MessagesItemSuggestedFriendLegend = noop.memo(ReactCompilerGating.i
   tmp5 = tmp7;
 }) : ((arg0) => {
   const obj2 = {};
-  [tmp2, tmp3] = _mod16380.useRecyclingState(false);
+  [tmp2, tmp3] = _mod16390.useRecyclingState(false);
   const merged = Object.assign(arg0);
   obj2.addedPressed = tmp2;
   obj2.setAddedPressed = tmp3;

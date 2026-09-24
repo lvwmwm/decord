@@ -1,12 +1,12 @@
-// Module ID: 18070
-// Function ID: 18071
+// Module ID: 18080
+// Function ID: 18081
 // Name: InRolePromptNotice
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 1389, 18071, 1181, 9708, 1119, 4754, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 1389, 18081, 1181, 9740, 1119, 4786, 2]
 
-// Module 18070 (InRolePromptNotice)
+// Module 18080 (InRolePromptNotice)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import _modDef9708 from "module_9708" /* 9708 */;
+import _modDef9740 from "module_9740" /* 9740 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -14,7 +14,7 @@ const View = fn(17).View;
 const RoleFlags = fn(1078).RoleFlags;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { promptRow: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_4, flexDirection: "row", alignItems: "center" }, promptText: null, icon: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_4, flexDirection: "row", alignItems: "center" };
 obj2.promptText = { marginLeft: nativeDefault.space.PX_4 };
@@ -33,7 +33,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
     const promptRow = tmp4.promptRow;
     if (tmpResult.isRolePowerful(role)) {
       if (cResult[0] !== tmp4.icon) {
-        const obj3 = { style: tmp4.icon, source: _modDef9708, color: nativeDefault.unsafe_rawColors.YELLOW_300 };
+        const obj3 = { style: tmp4.icon, source: _modDef9740, color: nativeDefault.unsafe_rawColors.YELLOW_300 };
         const tmp23 = hasOwnProperty(tmp(1181).Icon, obj3);
         cResult[0] = tmp4.icon;
         cResult[1] = tmp23;
@@ -52,7 +52,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
       }
       if (cResult[3] !== tmp4.promptText) {
         const obj4 = { style: tmp4.promptText, variant: "text-sm/medium", children: tmp25 };
-        const tmp29 = hasOwnProperty(tmp(4754).Text, obj4);
+        const tmp29 = hasOwnProperty(tmp(4786).Text, obj4);
         cResult[3] = tmp4.promptText;
         cResult[4] = tmp29;
         let tmp27 = tmp29;
@@ -78,7 +78,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
       tmp30 = tmp33;
     } else {
       if (cResult[9] !== tmp4.icon) {
-        const obj6 = { style: tmp4.icon, source: _modDef9708 };
+        const obj6 = { style: tmp4.icon, source: _modDef9740 };
         const tmp9 = hasOwnProperty(tmp(1181).Icon, obj6);
         cResult[9] = tmp4.icon;
         cResult[10] = tmp9;
@@ -97,7 +97,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
       }
       if (cResult[12] !== tmp4.promptText) {
         const obj7 = { style: tmp4.promptText, variant: "text-sm/medium", children: tmp11 };
-        const tmp15 = hasOwnProperty(tmp(4754).Text, obj7);
+        const tmp15 = hasOwnProperty(tmp(4786).Text, obj7);
         cResult[12] = tmp4.promptText;
         cResult[13] = tmp15;
         let tmp13 = tmp15;
@@ -122,7 +122,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
       cResult[17] = tmp19;
       tmp16 = tmp19;
     }
-    tmpResult = tmp(18071);
+    tmpResult = tmp(18081);
   } else {
     return null;
   }
@@ -134,30 +134,30 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
     return null;
   } else {
     const obj2 = { style: string.promptRow, children: null };
-    const tmpResult = tmp(18071);
+    const tmpResult = tmp(18081);
     let Icon = tmp(1181).Icon;
     if (isRolePowerfulResult) {
-      const obj3 = { style: string.icon, source: _modDef9708, color: nativeDefault.unsafe_rawColors.YELLOW_300 };
+      const obj3 = { style: string.icon, source: _modDef9740, color: nativeDefault.unsafe_rawColors.YELLOW_300 };
       const items = [tmp6(Icon, obj3), ];
       const obj4 = { style: string.promptText, variant: "text-sm/medium", children: null };
       const intl2 = tmp(1119).intl;
       string = intl2.string;
       stringResult = string(tmp(1119).t.YRbgXz);
       obj4.children = stringResult;
-      Icon = tmp6(tmp(4754).Text, obj4);
+      Icon = tmp6(tmp(4786).Text, obj4);
       items[1] = Icon;
       obj2.children = items;
       let tmp4Result = tmp4(tmp5, obj2);
     } else {
-      const obj5 = { style: string.icon, source: _modDef9708 };
+      const obj5 = { style: string.icon, source: _modDef9740 };
       const items1 = [tmp6(Icon, obj5), ];
       const obj6 = { style: string.promptText, variant: "text-sm/medium", children: null };
       const intl = tmp(1119).intl;
       obj6.children = intl.string(tmp(1119).t.mqeO2v);
-      items1[1] = tmp6(tmp(4754).Text, obj6);
+      items1[1] = tmp6(tmp(4786).Text, obj6);
       obj2.children = items1;
       tmp4Result = tmp4(tmp5, obj2);
     }
-    isRolePowerfulResult = tmp(18071).isRolePowerful(role);
+    isRolePowerfulResult = tmp(18081).isRolePowerful(role);
   }
 });

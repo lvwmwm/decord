@@ -1,18 +1,18 @@
-// Module ID: 12327
-// Function ID: 12328
+// Module ID: 12363
+// Function ID: 12364
 // Name: AppLauncherUserListActionSheet
-// Dependencies: [19, 1487, 21, 4758, 558, 568, 4725, 7768, 1181, 12306, 1119, 12328, 11708, 12307, 5822, 12305, 2]
+// Dependencies: [19, 1487, 21, 4790, 558, 568, 4757, 7800, 1181, 12342, 1119, 12364, 11744, 12343, 5854, 12341, 2]
 
-// Module 12327 (AppLauncherUserListActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import TableRow from "TableRow" /* 5822 */;
+// Module 12363 (AppLauncherUserListActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import TableRow from "TableRow" /* 5854 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const DEFAULT_CONTENT_PADDING = fn(1487).DEFAULT_CONTENT_PADDING;
 const jsx = fn(21).jsx;
 const AppLauncherUserListActionSheet = "AppLauncherUserListActionSheet";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ emptyState: { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingTop: DEFAULT_CONTENT_PADDING, flex: 1 } });
 fn(558);
 const ReactCompilerGating = fn(558);
@@ -46,7 +46,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp7;
     }
   }
-  const tmp8 = jsx(onPressRow(12305).AppLauncherList, { contentContainerStyle: tmp4.emptyState, data: tmp5, renderItem: tmp6, keyboardShouldPersistTaps: "always", keyboardDismissMode: "on-drag" });
+  const tmp8 = jsx(onPressRow(12341).AppLauncherList, { contentContainerStyle: tmp4.emptyState, data: tmp5, renderItem: tmp6, keyboardShouldPersistTaps: "always", keyboardDismissMode: "on-drag" });
   cResult[4] = tmp4.emptyState;
   cResult[5] = tmp5;
   cResult[6] = tmp6;
@@ -65,7 +65,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   };
   const items = [onPressRow.query];
   obj.data = items;
-  return jsx(onPressRow(12305).AppLauncherList, {
+  return jsx(onPressRow(12341).AppLauncherList, {
     contentContainerStyle: closure_6().emptyState,
     data: null,
     renderItem(label) {
@@ -331,7 +331,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onUserPress) => 
       tmp11[1] = guild_id;
       tmp11[3] = tmp5;
       tmp11[6] = tmp4;
-      tmp9Result = tmp9(tmp10(11708), tmp11);
+      tmp9Result = tmp9(tmp10(11744), tmp11);
     }
     cResult[8] = channel;
     cResult[9] = id;

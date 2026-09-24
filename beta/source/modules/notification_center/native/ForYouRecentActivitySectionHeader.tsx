@@ -1,19 +1,19 @@
-// Module ID: 16779
-// Function ID: 16780
+// Module ID: 16789
+// Function ID: 16790
 // Name: ForYouRecentActivitySectionHeader
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 4786, 2]
 
-// Module 16779 (ForYouRecentActivitySectionHeader)
+// Module 16789 (ForYouRecentActivitySectionHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { marginTop: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_24 }, textHeader: null };
 const obj3 = { marginTop: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_24 };
 obj2.textHeader = { marginTop: nativeDefault.space.PX_8 };
@@ -37,7 +37,7 @@ export const ForYouRecentActivitySectionHeader = ReactCompilerGating.isReactComp
   }
   if (cResult[1] !== tmp4.textHeader) {
     const obj2 = { style: textHeader, color: "text-muted", variant: "text-sm/semibold", accessibilityRole: "header", children: first };
-    const tmp9 = jsx(tmp(4754).Text, { style: textHeader, color: "text-muted", variant: "text-sm/semibold", accessibilityRole: "header", children: first });
+    const tmp9 = jsx(tmp(4786).Text, { style: textHeader, color: "text-muted", variant: "text-sm/semibold", accessibilityRole: "header", children: first });
     cResult[1] = tmp4.textHeader;
     cResult[2] = tmp9;
     let tmp7 = tmp9;

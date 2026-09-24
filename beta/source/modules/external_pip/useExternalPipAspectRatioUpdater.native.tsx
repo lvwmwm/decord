@@ -1,10 +1,10 @@
-// Module ID: 17653
-// Function ID: 17654
+// Module ID: 17663
+// Function ID: 17664
 // Name: useExternalPipAspectRatioUpdater
-// Dependencies: [19, 558, 568, 9696, 2]
+// Dependencies: [19, 558, 568, 9728, 2]
 
-// Module 17653 (useExternalPipAspectRatioUpdater)
-import ExternalPipDefault from "ExternalPip" /* 9696 */;
+// Module 17663 (useExternalPipAspectRatioUpdater)
+import ExternalPipDefault from "ExternalPip" /* 9728 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

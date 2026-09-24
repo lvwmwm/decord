@@ -1,19 +1,19 @@
-// Module ID: 17184
-// Function ID: 17185
+// Module ID: 17194
+// Function ID: 17195
 // Name: ThreadListTableRow
-// Dependencies: [19, 17, 2045, 21, 4758, 558, 568, 17185, 5822, 504, 2]
+// Dependencies: [19, 17, 2045, 21, 4790, 558, 568, 17195, 5854, 504, 2]
 
-// Module 17184 (ThreadListTableRow)
+// Module 17194 (ThreadListTableRow)
 import c from "c" /* 568 */;
-import TableRow from "TableRow" /* 5822 */;
-import ThreadBrowserRowSubtext from "ThreadBrowserRowSubtext" /* 17185 */;
+import TableRow from "TableRow" /* 5854 */;
+import ThreadBrowserRowSubtext from "ThreadBrowserRowSubtext" /* 17195 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ subLabel: { maxWidth: "100%", marginTop: 2 } });
 let ReactCompilerGating = fn(558);
 let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
@@ -25,7 +25,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
   if (null == id) {
     if (cResult[3] !== thread) {
       const obj2 = { thread };
-      const tmp9 = jsx(tmp(17185).ThreadSubtext, { thread });
+      const tmp9 = jsx(tmp(17195).ThreadSubtext, { thread });
       cResult[3] = thread;
       cResult[4] = tmp9;
       let tmp7 = tmp9;
@@ -49,7 +49,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
         }
       }
       const obj3 = { label: thread.name, subLabel: tmp10, onPress: undefined, start, end, arrow: true };
-      const tmp16 = jsx(tmp(5822).TableRow, { label: thread.name, subLabel: tmp10, onPress: undefined, start, end, arrow: true });
+      const tmp16 = jsx(tmp(5854).TableRow, { label: thread.name, subLabel: tmp10, onPress: undefined, start, end, arrow: true });
       cResult[8] = end;
       cResult[9] = undefined;
       cResult[10] = start;

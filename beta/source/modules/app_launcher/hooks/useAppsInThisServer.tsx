@@ -1,20 +1,20 @@
-// Module ID: 12262
-// Function ID: 12263
+// Module ID: 12298
+// Function ID: 12299
 // Name: useAppsInThisServer
-// Dependencies: [19, 9402, 1376, 5212, 558, 568, 504, 1982, 9526, 9412, 12261, 9516, 12, 2]
+// Dependencies: [19, 9434, 1376, 5244, 558, 568, 504, 1982, 9558, 9444, 12297, 9548, 12, 2]
 
-// Module 12262 (useAppsInThisServer)
+// Module 12298 (useAppsInThisServer)
 import _modDef12 from "module_12" /* 12 */;
-import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 9516 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9526 */;
+import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 9548 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9558 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const useGuildIndexState = fn(9402).useGuildIndexState;
-const limit = fn(5212).DISCOVERY_COMMANDS_QUERY_LIMIT;
+const useGuildIndexState = fn(9434).useGuildIndexState;
+const limit = fn(5244).DISCOVERY_COMMANDS_QUERY_LIMIT;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/app_launcher/hooks/useAppsInThisServer.tsx");
@@ -156,7 +156,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
           }
         }
       }
-      const sortApplicationsViaFrecency = tmp(12261).useSortApplicationsViaFrecency(tmp28);
+      const sortApplicationsViaFrecency = tmp(12297).useSortApplicationsViaFrecency(tmp28);
       if (cResult[14] === stateFromStores) {
         class I {
           constructor(arg0, arg1) {
@@ -237,7 +237,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
           }
         }
       }
-      const tmpResult2 = tmp(12261);
+      const tmpResult2 = tmp(12297);
       const obj8 = stateFromStores(12);
       const found = stateFromStores(12).compact(sortApplicationsViaFrecency.map(tmp30)).filter(tmp31);
       mapped = found.map(tmp33);

@@ -1,10 +1,10 @@
-// Module ID: 9008
-// Function ID: 9009
+// Module ID: 9040
+// Function ID: 9041
 // Name: GameProfileSummary
-// Dependencies: [32, 19, 17, 21, 4758, 558, 568, 8944, 1119, 4754, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 558, 568, 8976, 1119, 4786, 2]
 
-// Module 9008 (GameProfileSummary)
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8944 */;
+// Module 9040 (GameProfileSummary)
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8976 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -13,7 +13,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, Pressable: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ container: { flexDirection: "column" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

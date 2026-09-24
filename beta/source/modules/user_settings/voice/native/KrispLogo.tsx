@@ -1,16 +1,16 @@
-// Module ID: 10251
-// Function ID: 10252
+// Module ID: 10290
+// Function ID: 10291
 // Name: KrispLogo
-// Dependencies: [19, 17, 1186, 1078, 21, 2112, 1245, 1119, 4455, 558, 568, 504, 4610, 10252, 10253, 4754, 2]
+// Dependencies: [19, 17, 1186, 1078, 21, 2112, 1245, 1119, 4487, 558, 568, 504, 4642, 10291, 10292, 4786, 2]
 
-// Module 10251 (KrispLogo)
+// Module 10290 (KrispLogo)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import LinkingDefault from "Linking" /* 4455 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import LinkingDefault from "Linking" /* 4487 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 
@@ -54,9 +54,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
   const tmpResult = initialize;
   if (tmpResult2.isThemeLight(stateFromStores)) {
-    let tmp8Result = tmp8(10252);
+    let tmp8Result = tmp8(10291);
   } else {
-    tmp8Result = tmp8(10253);
+    tmp8Result = tmp8(10292);
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1119).intl;
@@ -88,7 +88,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj4 = { variant: "text-sm/medium", color: "text-link", children: null };
     const intl3 = tmp(1119).intl;
     obj4.children = intl3.string(tmp(1119).t.hvVgAZ);
-    obj3.children = closure_1_11(tmp(4754).Text, obj4);
+    obj3.children = closure_1_11(tmp(4786).Text, obj4);
     const tmp23 = closure_1_11(hasOwnProperty, obj3);
     cResult[6] = tmp23;
     let tmp19 = tmp23;
@@ -111,9 +111,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items = [ThemeStore];
   const stateFromStores = initialize.useStateFromStores(items, () => theme.theme);
   if (obj2.isThemeLight(stateFromStores)) {
-    let tmp4Result = tmp4(10252);
+    let tmp4Result = tmp4(10291);
   } else {
-    tmp4Result = tmp4(10253);
+    tmp4Result = tmp4(10292);
   }
   const obj3 = { style: closure_13.detailsView, children: null };
   const obj4 = { style: closure_13.logo, source: tmp4Result, accessibilityLabel: null };

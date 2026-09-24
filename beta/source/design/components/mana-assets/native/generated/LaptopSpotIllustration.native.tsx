@@ -1,13 +1,13 @@
-// Module ID: 6454
-// Function ID: 6455
+// Module ID: 6486
+// Function ID: 6487
 // Name: LaptopSpotIllustration
-// Dependencies: [21, 558, 568, 6455, 5802, 2]
+// Dependencies: [21, 558, 568, 6487, 5834, 2]
 
-// Module 6454 (LaptopSpotIllustration)
+// Module 6486 (LaptopSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6455 from "module_6455" /* 6455 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6487 from "module_6487" /* 6487 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const LaptopSpotIllustration = ReactCompilerGating.isReactCompilerEnabled
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6455 };
+    const obj2 = { uri: _modDef6487 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const LaptopSpotIllustration = ReactCompilerGating.isReactCompilerEnabled
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6455 };
+  const obj2 = { uri: _modDef6487 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,10 +1,10 @@
-// Module ID: 14002
-// Function ID: 14003
+// Module ID: 14038
+// Function ID: 14039
 // Name: PremiumRewardsOrbsExperiment
 // Dependencies: [1439, 558, 568, 2]
 // Exports: getPremiumRewardsOrbsExperiment
 
-// Module 14002 (PremiumRewardsOrbsExperiment)
+// Module 14038 (PremiumRewardsOrbsExperiment)
 import c from "c" /* 568 */;
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1439 */;
 

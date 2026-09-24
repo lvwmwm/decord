@@ -1,13 +1,13 @@
-// Module ID: 6366
-// Function ID: 6367
+// Module ID: 6398
+// Function ID: 6399
 // Name: GiftBoxSpotIllustration
-// Dependencies: [21, 558, 568, 6367, 5802, 2]
+// Dependencies: [21, 558, 568, 6399, 5834, 2]
 
-// Module 6366 (GiftBoxSpotIllustration)
+// Module 6398 (GiftBoxSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6367 from "module_6367" /* 6367 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6399 from "module_6399" /* 6399 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const GiftBoxSpotIllustration = ReactCompilerGating.isReactCompilerEnable
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6367 };
+    const obj2 = { uri: _modDef6399 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const GiftBoxSpotIllustration = ReactCompilerGating.isReactCompilerEnable
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6367 };
+  const obj2 = { uri: _modDef6399 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

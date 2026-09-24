@@ -1,13 +1,13 @@
-// Module ID: 15432
-// Function ID: 15433
+// Module ID: 15442
+// Function ID: 15443
 // Name: QuestThemePicker
-// Dependencies: [19, 17, 1187, 1186, 1233, 1089, 21, 4758, 580, 558, 568, 7409, 7429, 4690, 504, 1234, 4462, 2013, 15433, 4754, 15414, 1119, 2]
+// Dependencies: [19, 17, 1187, 1186, 1233, 1089, 21, 4790, 580, 558, 568, 7441, 7461, 4722, 504, 1234, 4494, 2013, 15443, 4786, 15424, 1119, 2]
 
-// Module 15432 (QuestThemePicker)
+// Module 15442 (QuestThemePicker)
 import nativeDefault from "native" /* 580 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1234 */;
 import StringUtils from "StringUtils" /* 2013 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 15433 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 15443 */;
 import noop from "module_19" /* 19 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1187 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
@@ -19,7 +19,7 @@ let closure_8 = fn(1233).LEGACY_STANDARD_BACKGROUND_THEMES;
 const ThemeTypes = fn(1089).ThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { themeSection: { marginBottom: nativeDefault.space.PX_8 }, themeSelector: null, themeOption: null, themeCircle: null, themeCircleSelected: null, themeLabel: null, resetButton: null, resetIcon: null };
 let obj3 = { marginBottom: nativeDefault.space.PX_8 };
 obj2.themeSelector = { flexDirection: "row", gap: nativeDefault.space.PX_12 };

@@ -1,28 +1,28 @@
-// Module ID: 13377
-// Function ID: 13378
+// Module ID: 13413
+// Function ID: 13414
 // Name: UserProfileRecentActivityCard
-// Dependencies: [19, 17, 21, 13304, 8409, 13309, 4758, 580, 558, 568, 8617, 4471, 4610, 8845, 1401, 5802, 2013, 4754, 13295, 7409, 7429, 13316, 13317, 8944, 8945, 5341, 1119, 2]
+// Dependencies: [19, 17, 21, 13340, 8441, 13345, 4790, 580, 558, 568, 8649, 4503, 4642, 8877, 1401, 5834, 2013, 4786, 13331, 7441, 7461, 13352, 13353, 8976, 8977, 5373, 1119, 2]
 
-// Module 13377 (UserProfileRecentActivityCard)
+// Module 13413 (UserProfileRecentActivityCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import StringUtils from "StringUtils" /* 2013 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7409 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import utils from "utils" /* 8409 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8617 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8944 */;
-import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 13295 */;
-import BadgesAll from "Badges" /* 13304 */;
-import TrendingType from "TrendingType" /* 13309 */;
-import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 13316 */;
-import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 13317 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7441 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
+import utils from "utils" /* 8441 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8649 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8976 */;
+import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 13331 */;
+import BadgesAll from "Badges" /* 13340 */;
+import TrendingType from "TrendingType" /* 13345 */;
+import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 13352 */;
+import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 13353 */;
 import noop from "module_19" /* 19 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
 
-const useOpenGameProfileModalDefault = tmp4(8945);
+const useOpenGameProfileModalDefault = tmp4(8977);
 require = fn;
 function getEntryText(entry) {
   if (obj.isGamingLikeEntry(entry)) {
@@ -62,9 +62,9 @@ function getEntryText(entry) {
         }
         return obj6;
       }
-      tmpResult3 = tmp(8617);
+      tmpResult3 = tmp(8649);
     }
-    tmpResult = tmp(8617);
+    tmpResult = tmp(8649);
   }
   obj = ContentInventoryTypes;
 }
@@ -90,8 +90,8 @@ let obj = {
     return true;
   }
 };
-items[1] = { Badge: BadgesAll.NewGameBadge, predicate: fn(8409).isEntryNew };
-let obj2 = { Badge: BadgesAll.NewGameBadge, predicate: fn(8409).isEntryNew };
+items[1] = { Badge: BadgesAll.NewGameBadge, predicate: fn(8441).isEntryNew };
+let obj2 = { Badge: BadgesAll.NewGameBadge, predicate: fn(8441).isEntryNew };
 items[2] = {
   Badge: BadgesAll.StreakBadge,
   predicate(entry) {
@@ -149,7 +149,7 @@ items[5] = {
     return tmp3;
   }
 };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj7 = { body: null, content: null, imageContainer: null, imageAspectRatio: null, posterImageAspectRatio: null, largeImage: null, smallImageBackground: null, smallImage: null, badges: null, badgeCell: null };
 let obj6 = {
   Badge: BadgesAll.MarathonBadge,
@@ -288,9 +288,9 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((post
       if (cResult[1] === tmp4.imageContainer) {
         let tmp25 = cResult[2];
       }
-      const tmpResult = tmp(4610);
+      const tmpResult = tmp(4642);
       const colors = nativeDefault.colors;
-      const tmp28 = tmp(4610).isThemeDark(obj2.useThemeContext().theme) ? colors.WHITE : colors.BLACK;
+      const tmp28 = tmp(4642).isThemeDark(obj2.useThemeContext().theme) ? colors.WHITE : colors.BLACK;
       if (cResult[3] === tmp4.largeImage) {
         if (cResult[4] === tmp28) {
           let tmp29 = cResult[5];
@@ -309,12 +309,12 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((post
         tmp32 = tmp35;
       }
       const obj4 = { size: "custom", style: tmp4.largeImage, color: tmp28 };
-      const tmp31 = timestampProducer(tmp(8845).UnknownGameIcon, obj4);
+      const tmp31 = timestampProducer(tmp(8877).UnknownGameIcon, obj4);
       cResult[3] = tmp4.largeImage;
       cResult[4] = tmp28;
       cResult[5] = tmp31;
       tmp29 = tmp31;
-      const isThemeDarkResult = tmp(4610).isThemeDark(obj2.useThemeContext().theme);
+      const isThemeDarkResult = tmp(4642).isThemeDark(obj2.useThemeContext().theme);
     }
     items = [, ];
     ({ imageContainer: arr3[0], imageAspectRatio: arr3[1] } = tmp4);
@@ -417,13 +417,13 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((post
     obj2.style = items;
     let obj3 = { size: "custom", style: tmp.largeImage, color: null };
     const tmp12 = View;
-    const tmp2Result = tmp2(4610);
+    const tmp2Result = tmp2(4642);
     const colors = nativeDefault.colors;
-    obj3.color = tmp2(4610).isThemeDark(obj.useThemeContext().theme) ? colors.WHITE : colors.BLACK;
-    obj3 = tmp11(tmp2(8845).UnknownGameIcon, obj3);
+    obj3.color = tmp2(4642).isThemeDark(obj.useThemeContext().theme) ? colors.WHITE : colors.BLACK;
+    obj3 = tmp11(tmp2(8877).UnknownGameIcon, obj3);
     obj2.children = obj3;
     timestampProducer(tmp12, obj2);
-    const isThemeDarkResult = tmp2(4610).isThemeDark(obj.useThemeContext().theme);
+    const isThemeDarkResult = tmp2(4642).isThemeDark(obj.useThemeContext().theme);
   } else {
     const items1 = [tmp.imageContainer, ];
     const obj4 = { style: null, children: null };
@@ -445,7 +445,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((post
     if (tmp5Result) {
       const obj6 = { style: tmp.smallImageBackground, children: null };
       const obj7 = { source: null, alt: null, style: null };
-      const tmp6Result = tmp6(5802);
+      const tmp6Result = tmp6(5834);
       obj7.source = tmp2(1401).makeSource(smallImage.src);
       obj7.alt = smallImage.alt;
       obj7.style = tmp.smallImage;
@@ -464,11 +464,11 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
   ({ entry, largeImage, smallImage, title, subtitle, style } = arg0);
   const tmp4 = closure_9();
   if (cResult[0] !== entry) {
-    const isWatchedMediaEntryResult = tmp(8617).isWatchedMediaEntry(entry);
+    const isWatchedMediaEntryResult = tmp(8649).isWatchedMediaEntry(entry);
     cResult[0] = entry;
     cResult[1] = isWatchedMediaEntryResult;
     let tmp5 = isWatchedMediaEntryResult;
-    const tmpResult = tmp(8617);
+    const tmpResult = tmp(8649);
   } else {
     tmp5 = cResult[1];
   }
@@ -482,7 +482,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
         let tmp11 = !isNullOrEmptyResult;
         if (!isNullOrEmptyResult) {
           const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: title };
-          tmp11 = timestampProducer(tmp(4754).Text, obj2);
+          tmp11 = timestampProducer(tmp(4786).Text, obj2);
         }
         cResult[6] = title;
         cResult[7] = tmp11;
@@ -496,7 +496,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
         let tmp15 = !isNullOrEmptyResult1;
         if (!isNullOrEmptyResult1) {
           const obj3 = { variant: "text-xs/medium", lineClamp: 1, children: subtitle };
-          tmp15 = timestampProducer(tmp(4754).Text, obj3);
+          tmp15 = timestampProducer(tmp(4786).Text, obj3);
         }
         cResult[8] = subtitle;
         cResult[9] = tmp15;
@@ -506,7 +506,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
         tmp13 = cResult[9];
       }
       if (cResult[10] !== entry) {
-        let isGamingLikeEntryResult = tmp(8617).isGamingLikeEntry(entry);
+        let isGamingLikeEntryResult = tmp(8649).isGamingLikeEntry(entry);
         if (isGamingLikeEntryResult) {
           const obj4 = { entry };
           isGamingLikeEntryResult = timestampProducer(closure_10, obj4);
@@ -514,7 +514,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
         cResult[10] = entry;
         cResult[11] = isGamingLikeEntryResult;
         let tmp17 = isGamingLikeEntryResult;
-        const tmpResult6 = tmp(8617);
+        const tmpResult6 = tmp(8649);
       } else {
         tmp17 = cResult[11];
       }
@@ -586,14 +586,14 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
   let tmp2Result = !isNullOrEmptyResult;
   if (!isNullOrEmptyResult) {
     const obj7 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: title };
-    tmp2Result = tmp2(tmp5(4754).Text, obj7);
+    tmp2Result = tmp2(tmp5(4786).Text, obj7);
   }
   const items1 = [tmp2Result, , ];
   const isNullOrEmptyResult1 = StringUtils.isNullOrEmpty(subtitle);
   let tmp2Result2 = !isNullOrEmptyResult1;
   if (!isNullOrEmptyResult1) {
     const obj8 = { variant: "text-xs/medium", lineClamp: 1, children: subtitle };
-    tmp2Result2 = tmp2(tmp5(4754).Text, obj8);
+    tmp2Result2 = tmp2(tmp5(4786).Text, obj8);
   }
   items1[1] = tmp2Result2;
   const tmp5Result = StringUtils;
@@ -634,13 +634,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[4] === user) {
         let tmp8 = cResult[5];
       }
-      const tmp9 = tmp6(13316)(tmp8);
+      const tmp9 = tmp6(13352)(tmp8);
       _require = tmp9;
       if (cResult[6] === tmp9) {
         if (cResult[7] === user.id) {
           let tmp10 = cResult[8];
         }
-        tmp6(13317)(tmp10);
+        tmp6(13353)(tmp10);
         let application_id;
         if ("application_id" in entry.extra) {
           application_id = entry.extra.application_id;
@@ -649,7 +649,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (cResult[10] === user.id) {
             let tmp14 = cResult[11];
           }
-          const tmp15 = tmp6(8945)(tmp14);
+          const tmp15 = tmp6(8977)(tmp14);
           importDefault = tmp15;
           if (cResult[12] === tmp9) {
             if (cResult[13] === tmp15) {
@@ -715,7 +715,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                               }
                             }
                             obj3.children = tmp27;
-                            const tmp32 = timestampProducer(tmp(7409).AnalyticsLocationProvider, obj3);
+                            const tmp32 = timestampProducer(tmp(7441).AnalyticsLocationProvider, obj3);
                             cResult[30] = analyticsLocations;
                             cResult[31] = tmp27;
                             cResult[32] = tmp32;
@@ -777,7 +777,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           cResult[14] = T;
           tmp16 = T;
         }
-        const obj5 = { location: "UserProfileRecentActivityCard", applicationId: application_id, source: tmp(8944).GameProfileSources.UserProfile, trackEntryPointImpression: true, sourceUserId: user.id };
+        const obj5 = { location: "UserProfileRecentActivityCard", applicationId: application_id, source: tmp(8976).GameProfileSources.UserProfile, trackEntryPointImpression: true, sourceUserId: user.id };
         cResult[9] = application_id;
         cResult[10] = user.id;
         cResult[11] = obj5;
@@ -845,7 +845,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj6 = { gameName: str };
     obj5.accessibilityLabel = intl.formatToPlainString(tmp(1119).t["9sZWVp"], obj6);
     obj5.children = tmp15;
-    tmp14Result = tmp14(tmp(5341).PressableOpacity, obj5);
+    tmp14Result = tmp14(tmp(5373).PressableOpacity, obj5);
   }
   obj4.children = tmp14Result;
   return timestampProducer(useAnalyticsLocations.AnalyticsLocationProvider, obj4);

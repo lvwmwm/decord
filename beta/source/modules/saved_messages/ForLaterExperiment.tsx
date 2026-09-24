@@ -1,14 +1,14 @@
-// Module ID: 8103
-// Function ID: 8104
+// Module ID: 8135
+// Function ID: 8136
 // Name: ForLaterExperiment
-// Dependencies: [8100, 1438, 38, 558, 568, 8104, 2]
+// Dependencies: [8132, 1438, 38, 558, 568, 8136, 2]
 // Exports: getForLaterLimit, hasForLaterAccess, isForLaterExperimentOn, isForLaterFreemiumExperimentOn, isForLaterLimitUpgradable
 
-// Module 8103 (ForLaterExperiment)
+// Module 8135 (ForLaterExperiment)
 import _modDef38 from "module_38" /* 38 */;
 import c from "c" /* 568 */;
-import hasForLaterPremiumType2 from "hasForLaterPremiumType" /* 8104 */;
-import SavedMessagesConstants from "SavedMessagesConstants" /* 8100 */;
+import hasForLaterPremiumType2 from "hasForLaterPremiumType" /* 8136 */;
+import SavedMessagesConstants from "SavedMessagesConstants" /* 8132 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1438 */;
 import "ReactCompilerGating";
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

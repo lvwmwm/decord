@@ -1,19 +1,19 @@
-// Module ID: 13202
-// Function ID: 13203
+// Module ID: 13238
+// Function ID: 13239
 // Name: InAppReportsRemediationsElement
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 5903, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 5935, 2]
 
-// Module 13202 (InAppReportsRemediationsElement)
+// Module 13238 (InAppReportsRemediationsElement)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_32 } };
 let closure_4 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -35,7 +35,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   }
   if (cResult[1] !== children) {
     const obj2 = { title: first, hasIcons: true, children };
-    const tmp9 = jsx(tmp(5903).TableRowGroup, { title: first, hasIcons: true, children });
+    const tmp9 = jsx(tmp(5935).TableRowGroup, { title: first, hasIcons: true, children });
     cResult[1] = children;
     cResult[2] = tmp9;
     let tmp7 = tmp9;

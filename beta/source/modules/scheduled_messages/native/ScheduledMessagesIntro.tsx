@@ -1,20 +1,20 @@
-// Module ID: 12365
-// Function ID: 12366
+// Module ID: 12401
+// Function ID: 12402
 // Name: ScheduledMessagesIntro
-// Dependencies: [17, 21, 4758, 580, 558, 568, 12366, 1119, 4754, 10936, 12355, 11257, 2]
+// Dependencies: [17, 21, 4790, 580, 558, 568, 12402, 1119, 4786, 10972, 12391, 11293, 2]
 
-// Module 12365 (ScheduledMessagesIntro)
+// Module 12401 (ScheduledMessagesIntro)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AttachmentIcon from "AttachmentIcon" /* 10936 */;
-import PlusLargeIcon from "PlusLargeIcon" /* 11257 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12355 */;
-import _modDef12366 from "module_12366" /* 12366 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AttachmentIcon from "AttachmentIcon" /* 10972 */;
+import PlusLargeIcon from "PlusLargeIcon" /* 11293 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12391 */;
+import _modDef12402 from "module_12402" /* 12402 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import "ReactCompilerGating";
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -118,7 +118,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_8();
   ({ scrollView, pageContainer, container } = tmp4);
   if (cResult[0] !== tmp4.upsellImage) {
-    const obj2 = { source: _modDef12366, style: tmp4.upsellImage };
+    const obj2 = { source: _modDef12402, style: tmp4.upsellImage };
     const tmp9 = timestampProducer(React3, obj2);
     cResult[0] = tmp4.upsellImage;
     cResult[1] = tmp9;
@@ -137,7 +137,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[3] !== tmp4.text) {
     const obj3 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: text, children: tmp10 };
-    const tmp14 = timestampProducer(tmp(4754).Heading, obj3);
+    const tmp14 = timestampProducer(tmp(4786).Heading, obj3);
     cResult[3] = tmp4.text;
     cResult[4] = tmp14;
     let tmp12 = tmp14;
@@ -154,7 +154,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[6] !== tmp4.text) {
     const obj4 = { variant: "text-sm/medium", color: "text-default", style: tmp4.text, includeFontPadding: true, children: tmp15 };
-    const tmp19 = timestampProducer(tmp(4754).Text, obj4);
+    const tmp19 = timestampProducer(tmp(4786).Text, obj4);
     cResult[6] = tmp4.text;
     cResult[7] = tmp19;
     let tmp17 = tmp19;
@@ -168,7 +168,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const _Symbol = Symbol;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj5 = { icon: tmp(10936).AttachmentIcon, label: null, highlighted: false };
+        const obj5 = { icon: tmp(10972).AttachmentIcon, label: null, highlighted: false };
         const intl3 = tmp(1119).intl;
         obj5.label = intl3.string(tmp(1119).t["8Hvr3+"]);
         const tmp25 = timestampProducer(closure_9, obj5);
@@ -188,7 +188,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const _Symbol2 = Symbol;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj7 = { icon: tmp(12355).CalendarPlusIcon, label: null, highlighted: true };
+        const obj7 = { icon: tmp(12391).CalendarPlusIcon, label: null, highlighted: true };
         const intl4 = tmp(1119).intl;
         obj7.label = intl4.string(tmp(1119).t["3+ii4F"]);
         const tmp33 = timestampProducer(closure_9, obj7);
@@ -204,7 +204,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const _Symbol3 = Symbol;
         if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
           const obj8 = { size: "xs", color: nativeDefault.colors.CHAT_INPUT_ACTION_BUTTON_ICON_DEFAULT_TINT };
-          const tmp41 = timestampProducer(tmp(11257).PlusLargeIcon, obj8);
+          const tmp41 = timestampProducer(tmp(11293).PlusLargeIcon, obj8);
           cResult[19] = tmp41;
           let tmp38 = tmp41;
         } else {
@@ -224,7 +224,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const obj10 = { variant: "text-sm/normal", color: "text-muted", children: null };
           const intl5 = tmp(1119).intl;
           obj10.children = intl5.string(tmp(1119).t.fxxYiB);
-          const tmp48 = timestampProducer(tmp(4754).Text, obj10);
+          const tmp48 = timestampProducer(tmp(4786).Text, obj10);
           cResult[22] = tmp48;
           let tmp46 = tmp48;
         } else {
@@ -317,7 +317,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp = closure_8();
   const obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: null };
   const obj2 = { style: tmp.container, children: null };
-  const items = [timestampProducer(React3, { source: _modDef12366, style: tmp.upsellImage }), , ];
+  const items = [timestampProducer(React3, { source: _modDef12402, style: tmp.upsellImage }), , ];
   const obj4 = { style: tmp.textContainer, children: null };
   const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text, children: null };
   const intl = util.intl;
@@ -344,7 +344,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj12 = { style: tmp.chatInput, children: null };
   const obj13 = { style: tmp.plusButton, children: null };
   const obj10 = { style: tmp.menuDivider };
-  const obj3 = { source: _modDef12366, style: tmp.upsellImage };
+  const obj3 = { source: _modDef12402, style: tmp.upsellImage };
   obj13.children = timestampProducer(PlusLargeIcon.PlusLargeIcon, { size: "xs", color: nativeDefault.colors.CHAT_INPUT_ACTION_BUTTON_ICON_DEFAULT_TINT });
   const items4 = [timestampProducer(hasOwnProperty, obj13), ];
   const obj15 = { variant: "text-sm/normal", color: "text-muted", children: null };

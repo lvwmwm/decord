@@ -1,23 +1,23 @@
-// Module ID: 16922
-// Function ID: 16923
+// Module ID: 16932
+// Function ID: 16933
 // Name: GuildSettingsModalMembersWithTabs
-// Dependencies: [109, 32, 19, 17, 2067, 4399, 1376, 21, 4758, 580, 558, 568, 16554, 504, 7509, 1119, 16923, 16924, 16930, 4583, 1488, 8182, 16925, 7621, 9876, 9868, 12778, 12778, 12780, 2]
+// Dependencies: [109, 32, 19, 17, 2067, 4431, 1376, 21, 4790, 580, 558, 568, 16564, 504, 7541, 1119, 16933, 16934, 16940, 4615, 1488, 8214, 16935, 7653, 9908, 9900, 12814, 12814, 12816, 2]
 
-// Module 16922 (GuildSettingsModalMembersWithTabs)
+// Module 16932 (GuildSettingsModalMembersWithTabs)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4583 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7509 */;
-import ContextMenu from "ContextMenu" /* 8182 */;
-import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 16923 */;
-import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 16924 */;
-import showMembersManagementActionSheet from "showMembersManagementActionSheet" /* 16925 */;
-import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 16930 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4615 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7541 */;
+import ContextMenu from "ContextMenu" /* 8214 */;
+import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 16933 */;
+import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 16934 */;
+import showMembersManagementActionSheet from "showMembersManagementActionSheet" /* 16935 */;
+import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 16940 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
@@ -27,7 +27,7 @@ let closure_3 = ["ref"];
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, content: { flex: 1 }, tabContainer: { marginTop: 12, minHeight: 32 } };
 let closure_13 = createStyles.createStyles(obj);
 const ReactCompilerGating = fn(558);
@@ -547,12 +547,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
       items: membersManagementActions,
       children(ref) {
         const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-        const obj = { source: closure_1_1(9876), accessibilityLabel: null, ref: null };
+        const obj = { source: closure_1_1(9908), accessibilityLabel: null, ref: null };
         const intl = guildId(1119).intl;
         obj.accessibilityLabel = intl.string(guildId(1119).t.ogxXGq);
         obj.ref = ref.ref;
         const merged1 = Object.assign(merged);
-        return closure_1_11(guildId(7621).HeaderActionButton, obj);
+        return closure_1_11(guildId(7653).HeaderActionButton, obj);
       }
     });
   }, items5);

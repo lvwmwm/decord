@@ -1,13 +1,13 @@
-// Module ID: 6526
-// Function ID: 6527
+// Module ID: 6558
+// Function ID: 6559
 // Name: NitroRocketSpotIllustration
-// Dependencies: [21, 558, 568, 6527, 5802, 2]
+// Dependencies: [21, 558, 568, 6559, 5834, 2]
 
-// Module 6526 (NitroRocketSpotIllustration)
+// Module 6558 (NitroRocketSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6527 from "module_6527" /* 6527 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6559 from "module_6559" /* 6559 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const NitroRocketSpotIllustration = ReactCompilerGating.isReactCompilerEn
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6527 };
+    const obj2 = { uri: _modDef6559 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const NitroRocketSpotIllustration = ReactCompilerGating.isReactCompilerEn
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6527 };
+  const obj2 = { uri: _modDef6559 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

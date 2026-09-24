@@ -1,13 +1,13 @@
-// Module ID: 16558
-// Function ID: 16559
+// Module ID: 16568
+// Function ID: 16569
 // Name: BoostTier2Icon
-// Dependencies: [109, 19, 21, 558, 568, 580, 16559, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 16569, 4493, 2]
 
-// Module 16558 (BoostTier2Icon)
+// Module 16568 (BoostTier2Icon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod16559 from "module_16559" /* 16559 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod16569 from "module_16569" /* 16569 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const BoostTier2Icon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(16559);
+    const tmpResult = tmp(16569);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const BoostTier2Icon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16559, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod16569, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

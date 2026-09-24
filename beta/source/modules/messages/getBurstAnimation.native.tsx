@@ -1,175 +1,13 @@
-// Module ID: 8032
-// Function ID: 8033
+// Module ID: 8064
+// Function ID: 8065
 // Name: getBurstAnimation
-// Dependencies: [5, 8033, 8034, 8035, 8036, 8037, 8038, 8039, 8040, 8041, 8042, 8043, 8044, 8045, 8046, 8047, 8048, 8049, 8050, 8051, 8052, 8053, 8054, 8055, 8056, 8057, 8058, 8059, 8060, 8061, 8062, 8063, 8064, 8065, 8066, 8067, 8068, 8069, 2]
+// Dependencies: [5, 8065, 8066, 8067, 8068, 8069, 8070, 8071, 8072, 8073, 8074, 8075, 8076, 8077, 8078, 8079, 8080, 8081, 8082, 8083, 8084, 8085, 8086, 8087, 8088, 8089, 8090, 8091, 8092, 8093, 8094, 8095, 8096, 8097, 8098, 8099, 8100, 8101, 2]
 // Exports: getBurstAnimation
 
-// Module 8032 (getBurstAnimation)
+// Module 8064 (getBurstAnimation)
 import asyncGeneratorStepDefault from "asyncGeneratorStep" /* 5 */;
 
 const items = [
-  {
-    load() {
-      return closure_0(8033);
-    }
-  },
-  {
-    load() {
-      return closure_0(8034);
-    }
-  },
-  {
-    load() {
-      return closure_0(8035);
-    }
-  },
-  {
-    load() {
-      return closure_0(8036);
-    }
-  },
-  {
-    load() {
-      return closure_0(8037);
-    }
-  },
-  {
-    load() {
-      return closure_0(8038);
-    }
-  },
-  {
-    load() {
-      return closure_0(8039);
-    }
-  },
-  {
-    load() {
-      return closure_0(8040);
-    }
-  },
-  {
-    load() {
-      return closure_0(8041);
-    }
-  },
-  {
-    load() {
-      return closure_0(8042);
-    }
-  },
-  {
-    load() {
-      return closure_0(8043);
-    }
-  },
-  {
-    load() {
-      return closure_0(8044);
-    }
-  },
-  {
-    load() {
-      return closure_0(8045);
-    }
-  },
-  {
-    load() {
-      return closure_0(8046);
-    }
-  },
-  {
-    load() {
-      return closure_0(8047);
-    }
-  },
-  {
-    load() {
-      return closure_0(8048);
-    }
-  },
-  {
-    load() {
-      return closure_0(8049);
-    }
-  },
-  {
-    load() {
-      return closure_0(8050);
-    }
-  }
-];
-const items1 = [
-  {
-    load() {
-      return closure_0(8051);
-    }
-  },
-  {
-    load() {
-      return closure_0(8052);
-    }
-  },
-  {
-    load() {
-      return closure_0(8053);
-    }
-  },
-  {
-    load() {
-      return closure_0(8054);
-    }
-  },
-  {
-    load() {
-      return closure_0(8055);
-    }
-  },
-  {
-    load() {
-      return closure_0(8056);
-    }
-  },
-  {
-    load() {
-      return closure_0(8057);
-    }
-  },
-  {
-    load() {
-      return closure_0(8058);
-    }
-  },
-  {
-    load() {
-      return closure_0(8059);
-    }
-  },
-  {
-    load() {
-      return closure_0(8060);
-    }
-  },
-  {
-    load() {
-      return closure_0(8061);
-    }
-  },
-  {
-    load() {
-      return closure_0(8062);
-    }
-  },
-  {
-    load() {
-      return closure_0(8063);
-    }
-  },
-  {
-    load() {
-      return closure_0(8064);
-    }
-  },
   {
     load() {
       return closure_0(8065);
@@ -188,6 +26,168 @@ const items1 = [
   {
     load() {
       return closure_0(8068);
+    }
+  },
+  {
+    load() {
+      return closure_0(8069);
+    }
+  },
+  {
+    load() {
+      return closure_0(8070);
+    }
+  },
+  {
+    load() {
+      return closure_0(8071);
+    }
+  },
+  {
+    load() {
+      return closure_0(8072);
+    }
+  },
+  {
+    load() {
+      return closure_0(8073);
+    }
+  },
+  {
+    load() {
+      return closure_0(8074);
+    }
+  },
+  {
+    load() {
+      return closure_0(8075);
+    }
+  },
+  {
+    load() {
+      return closure_0(8076);
+    }
+  },
+  {
+    load() {
+      return closure_0(8077);
+    }
+  },
+  {
+    load() {
+      return closure_0(8078);
+    }
+  },
+  {
+    load() {
+      return closure_0(8079);
+    }
+  },
+  {
+    load() {
+      return closure_0(8080);
+    }
+  },
+  {
+    load() {
+      return closure_0(8081);
+    }
+  },
+  {
+    load() {
+      return closure_0(8082);
+    }
+  }
+];
+const items1 = [
+  {
+    load() {
+      return closure_0(8083);
+    }
+  },
+  {
+    load() {
+      return closure_0(8084);
+    }
+  },
+  {
+    load() {
+      return closure_0(8085);
+    }
+  },
+  {
+    load() {
+      return closure_0(8086);
+    }
+  },
+  {
+    load() {
+      return closure_0(8087);
+    }
+  },
+  {
+    load() {
+      return closure_0(8088);
+    }
+  },
+  {
+    load() {
+      return closure_0(8089);
+    }
+  },
+  {
+    load() {
+      return closure_0(8090);
+    }
+  },
+  {
+    load() {
+      return closure_0(8091);
+    }
+  },
+  {
+    load() {
+      return closure_0(8092);
+    }
+  },
+  {
+    load() {
+      return closure_0(8093);
+    }
+  },
+  {
+    load() {
+      return closure_0(8094);
+    }
+  },
+  {
+    load() {
+      return closure_0(8095);
+    }
+  },
+  {
+    load() {
+      return closure_0(8096);
+    }
+  },
+  {
+    load() {
+      return closure_0(8097);
+    }
+  },
+  {
+    load() {
+      return closure_0(8098);
+    }
+  },
+  {
+    load() {
+      return closure_0(8099);
+    }
+  },
+  {
+    load() {
+      return closure_0(8100);
     }
   }
 ];

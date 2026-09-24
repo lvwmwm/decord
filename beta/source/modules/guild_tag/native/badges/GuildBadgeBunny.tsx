@@ -1,13 +1,13 @@
-// Module ID: 14211
-// Function ID: 14212
+// Module ID: 14248
+// Function ID: 14249
 // Name: GuildBadgeBunny
-// Dependencies: [109, 19, 21, 558, 568, 1259, 14189, 8733, 2]
+// Dependencies: [109, 19, 21, 558, 568, 1259, 14226, 8765, 2]
 
-// Module 14211 (GuildBadgeBunny)
+// Module 14248 (GuildBadgeBunny)
 import c from "c" /* 568 */;
 import v1 from "v1" /* 1259 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14189 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14226 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -61,18 +61,18 @@ export const GuildBadgeBunny = ReactCompilerGating.isReactCompilerEnabled() ? ((
   const combined = "badge-bunny-clip-" + tmp11;
   if (cResult[6] !== tmp4) {
     const obj2 = { primaryBaseColors, primaryTintColor: tmp4, primaryTintLuminances, primaryLuminanceWeights: items };
-    const transformedBadgeColors = tmp(14189).getTransformedBadgeColors(obj2);
+    const transformedBadgeColors = tmp(14226).getTransformedBadgeColors(obj2);
     cResult[6] = tmp4;
     cResult[7] = transformedBadgeColors;
     let tmp14 = transformedBadgeColors;
-    const tmpResult2 = tmp(14189);
+    const tmpResult2 = tmp(14226);
   } else {
     tmp14 = cResult[7];
   }
   const primaryColorsTransformed = tmp14.primaryColorsTransformed;
   if (cResult[8] !== primaryColorsTransformed[1]) {
     const obj3 = { d: "M13 8V6H14V4H15V1H11V3H10V7H11V8H5V7H6V3H5V1H1V4H2V6H3V8H4V9H3V10H2V12H1V14H2V15H14V14H15V12H14V10H13V9H12V8H13Z", fill: primaryColorsTransformed[1] };
-    const tmp21 = hasOwnProperty(tmp(8733).Path, obj3);
+    const tmp21 = hasOwnProperty(tmp(8765).Path, obj3);
     cResult[8] = primaryColorsTransformed[1];
     cResult[9] = tmp21;
     let tmp19 = tmp21;
@@ -80,13 +80,13 @@ export const GuildBadgeBunny = ReactCompilerGating.isReactCompilerEnabled() ? ((
     tmp19 = cResult[9];
   }
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp30 = hasOwnProperty(tmp(8733).Path, { d: "M5 8H4V6H3V4H2V2H4V4H5V8Z", fill: "#FF7FC0" });
-    const tmp31 = hasOwnProperty(tmp(8733).Path, { d: "M12 8H11V4H12V2H14V4H13V6H12V8Z", fill: "#FF7FC0" });
-    const tmp32 = hasOwnProperty(tmp(8733).Path, { fillRule: "evenodd", clipRule: "evenodd", d: "M9 11H10V12H11V13H12V15H4V13H5V12H6V11H7V9H9V11Z", fill: "white" });
-    const tmp33 = hasOwnProperty(tmp(8733).Path, { d: "M9 12V13H7V12H9Z", fill: "#FF1B90" });
-    const tmp34 = hasOwnProperty(tmp(8733).Path, { d: "M14 15V16H2V15H14Z", fill: "black" });
-    const tmp35 = hasOwnProperty(tmp(8733).Path, { d: "M2 15H1V14H2V15Z", fill: "black" });
-    const tmp36 = hasOwnProperty(tmp(8733).Path, { d: "M15 15H14V14H15V15Z", fill: "black" });
+    const tmp30 = hasOwnProperty(tmp(8765).Path, { d: "M5 8H4V6H3V4H2V2H4V4H5V8Z", fill: "#FF7FC0" });
+    const tmp31 = hasOwnProperty(tmp(8765).Path, { d: "M12 8H11V4H12V2H14V4H13V6H12V8Z", fill: "#FF7FC0" });
+    const tmp32 = hasOwnProperty(tmp(8765).Path, { fillRule: "evenodd", clipRule: "evenodd", d: "M9 11H10V12H11V13H12V15H4V13H5V12H6V11H7V9H9V11Z", fill: "white" });
+    const tmp33 = hasOwnProperty(tmp(8765).Path, { d: "M9 12V13H7V12H9Z", fill: "#FF1B90" });
+    const tmp34 = hasOwnProperty(tmp(8765).Path, { d: "M14 15V16H2V15H14Z", fill: "black" });
+    const tmp35 = hasOwnProperty(tmp(8765).Path, { d: "M2 15H1V14H2V15Z", fill: "black" });
+    const tmp36 = hasOwnProperty(tmp(8765).Path, { d: "M15 15H14V14H15V15Z", fill: "black" });
     cResult[10] = tmp34;
     cResult[11] = tmp35;
     cResult[12] = tmp36;
@@ -112,9 +112,9 @@ export const GuildBadgeBunny = ReactCompilerGating.isReactCompilerEnabled() ? ((
   }
   if (cResult[17] !== primaryColorsTransformed[0]) {
     const obj4 = { d: "M2 14H1V13H2V14Z", fill: primaryColorsTransformed[0] };
-    const tmp40 = hasOwnProperty(tmp(8733).Path, obj4);
+    const tmp40 = hasOwnProperty(tmp(8765).Path, obj4);
     const obj5 = { d: "M15 14H14V13H15V14Z", fill: primaryColorsTransformed[0] };
-    const tmp41 = hasOwnProperty(tmp(8733).Path, obj5);
+    const tmp41 = hasOwnProperty(tmp(8765).Path, obj5);
     cResult[17] = primaryColorsTransformed[0];
     cResult[18] = tmp40;
     cResult[19] = tmp41;
@@ -125,27 +125,27 @@ export const GuildBadgeBunny = ReactCompilerGating.isReactCompilerEnabled() ? ((
     tmp38 = cResult[19];
   }
   if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp64 = hasOwnProperty(tmp(8733).Path, { d: "M1 14H0V12H1V14Z", fill: "black" });
-    const tmp65 = hasOwnProperty(tmp(8733).Path, { d: "M16 14H15V12H16V14Z", fill: "black" });
-    const tmp66 = hasOwnProperty(tmp(8733).Path, { d: "M2 12H1V10H2V12Z", fill: "black" });
-    const tmp67 = hasOwnProperty(tmp(8733).Path, { d: "M15 12H14V10H15V12Z", fill: "black" });
-    const tmp68 = hasOwnProperty(tmp(8733).Path, { d: "M3 10H2V9H3V10Z", fill: "black" });
-    const tmp69 = hasOwnProperty(tmp(8733).Path, { d: "M14 10H13V9H14V10Z", fill: "black" });
-    const tmp70 = hasOwnProperty(tmp(8733).Path, { d: "M4 9H3V8H4V9Z", fill: "black" });
-    const tmp71 = hasOwnProperty(tmp(8733).Path, { d: "M13 9H12V8H13V9Z", fill: "black" });
-    const tmp72 = hasOwnProperty(tmp(8733).Path, { d: "M3 8H2V6H3V8Z", fill: "black" });
-    const tmp73 = hasOwnProperty(tmp(8733).Path, { d: "M7 7H9V3H10V7H11V8H5V7H6V3H7V7Z", fill: "black" });
-    const tmp74 = hasOwnProperty(tmp(8733).Path, { d: "M14 8H13V6H14V8Z", fill: "black" });
-    const tmp75 = hasOwnProperty(tmp(8733).Path, { d: "M2 6H1V4H2V6Z", fill: "black" });
-    const tmp76 = hasOwnProperty(tmp(8733).Path, { d: "M15 6H14V4H15V6Z", fill: "black" });
-    const tmp77 = hasOwnProperty(tmp(8733).Path, { d: "M1 4H0V1H1V4Z", fill: "black" });
-    const tmp78 = hasOwnProperty(tmp(8733).Path, { d: "M16 4H15V1H16V4Z", fill: "black" });
-    const tmp79 = hasOwnProperty(tmp(8733).Path, { d: "M6 3H5V1H6V3Z", fill: "black" });
-    const tmp80 = hasOwnProperty(tmp(8733).Path, { d: "M11 3H10V1H11V3Z", fill: "black" });
-    const tmp81 = hasOwnProperty(tmp(8733).Path, { d: "M5 1H1V0H5V1Z", fill: "black" });
-    const tmp82 = hasOwnProperty(tmp(8733).Path, { d: "M15 1H11V0H15V1Z", fill: "black" });
-    const tmp83 = hasOwnProperty(tmp(8733).Path, { d: "M6 12H5V10H6V12Z", fill: "black" });
-    const tmp84 = hasOwnProperty(tmp(8733).Path, { d: "M11 12H10V10H11V12Z", fill: "black" });
+    const tmp64 = hasOwnProperty(tmp(8765).Path, { d: "M1 14H0V12H1V14Z", fill: "black" });
+    const tmp65 = hasOwnProperty(tmp(8765).Path, { d: "M16 14H15V12H16V14Z", fill: "black" });
+    const tmp66 = hasOwnProperty(tmp(8765).Path, { d: "M2 12H1V10H2V12Z", fill: "black" });
+    const tmp67 = hasOwnProperty(tmp(8765).Path, { d: "M15 12H14V10H15V12Z", fill: "black" });
+    const tmp68 = hasOwnProperty(tmp(8765).Path, { d: "M3 10H2V9H3V10Z", fill: "black" });
+    const tmp69 = hasOwnProperty(tmp(8765).Path, { d: "M14 10H13V9H14V10Z", fill: "black" });
+    const tmp70 = hasOwnProperty(tmp(8765).Path, { d: "M4 9H3V8H4V9Z", fill: "black" });
+    const tmp71 = hasOwnProperty(tmp(8765).Path, { d: "M13 9H12V8H13V9Z", fill: "black" });
+    const tmp72 = hasOwnProperty(tmp(8765).Path, { d: "M3 8H2V6H3V8Z", fill: "black" });
+    const tmp73 = hasOwnProperty(tmp(8765).Path, { d: "M7 7H9V3H10V7H11V8H5V7H6V3H7V7Z", fill: "black" });
+    const tmp74 = hasOwnProperty(tmp(8765).Path, { d: "M14 8H13V6H14V8Z", fill: "black" });
+    const tmp75 = hasOwnProperty(tmp(8765).Path, { d: "M2 6H1V4H2V6Z", fill: "black" });
+    const tmp76 = hasOwnProperty(tmp(8765).Path, { d: "M15 6H14V4H15V6Z", fill: "black" });
+    const tmp77 = hasOwnProperty(tmp(8765).Path, { d: "M1 4H0V1H1V4Z", fill: "black" });
+    const tmp78 = hasOwnProperty(tmp(8765).Path, { d: "M16 4H15V1H16V4Z", fill: "black" });
+    const tmp79 = hasOwnProperty(tmp(8765).Path, { d: "M6 3H5V1H6V3Z", fill: "black" });
+    const tmp80 = hasOwnProperty(tmp(8765).Path, { d: "M11 3H10V1H11V3Z", fill: "black" });
+    const tmp81 = hasOwnProperty(tmp(8765).Path, { d: "M5 1H1V0H5V1Z", fill: "black" });
+    const tmp82 = hasOwnProperty(tmp(8765).Path, { d: "M15 1H11V0H15V1Z", fill: "black" });
+    const tmp83 = hasOwnProperty(tmp(8765).Path, { d: "M6 12H5V10H6V12Z", fill: "black" });
+    const tmp84 = hasOwnProperty(tmp(8765).Path, { d: "M11 12H10V10H11V12Z", fill: "black" });
     cResult[20] = tmp64;
     cResult[21] = tmp65;
     cResult[22] = tmp66;
@@ -213,9 +213,9 @@ export const GuildBadgeBunny = ReactCompilerGating.isReactCompilerEnabled() ? ((
   }
   if (cResult[41] !== primaryColorsTransformed[0]) {
     const obj6 = { d: "M14 14H12V15H14V14Z", fill: primaryColorsTransformed[0] };
-    const tmp88 = hasOwnProperty(tmp(8733).Path, obj6);
+    const tmp88 = hasOwnProperty(tmp(8765).Path, obj6);
     const obj7 = { d: "M4 14H2V15H4V14Z", fill: primaryColorsTransformed[0] };
-    const tmp89 = hasOwnProperty(tmp(8733).Path, obj7);
+    const tmp89 = hasOwnProperty(tmp(8765).Path, obj7);
     cResult[41] = primaryColorsTransformed[0];
     cResult[42] = tmp88;
     cResult[43] = tmp89;
@@ -235,9 +235,9 @@ export const GuildBadgeBunny = ReactCompilerGating.isReactCompilerEnabled() ? ((
           const _Symbol = Symbol;
           if (cResult[50] === Symbol.for("react.memo_cache_sentinel")) {
             const obj8 = { children: null };
-            const obj9 = { id: combined, children: hasOwnProperty(tmp(8733).Rect, { width: "16", height: "16", fill: "white" }) };
-            obj8.children = hasOwnProperty(tmp(8733).ClipPath, obj9);
-            const tmp94 = hasOwnProperty(tmp(8733).Defs, obj8);
+            const obj9 = { id: combined, children: hasOwnProperty(tmp(8765).Rect, { width: "16", height: "16", fill: "white" }) };
+            obj8.children = hasOwnProperty(tmp(8765).ClipPath, obj9);
+            const tmp94 = hasOwnProperty(tmp(8765).Defs, obj8);
             cResult[50] = tmp94;
             let tmp92 = tmp94;
           } else {
@@ -261,7 +261,7 @@ export const GuildBadgeBunny = ReactCompilerGating.isReactCompilerEnabled() ? ((
           obj10.fill = "none";
           items = [tmp90, tmp92];
           obj10.children = items;
-          const tmp100 = timestampProducer(tmp(8733).Svg, obj10);
+          const tmp100 = timestampProducer(tmp(8765).Svg, obj10);
           cResult[51] = num7;
           cResult[52] = tmp5;
           cResult[53] = tmp90;

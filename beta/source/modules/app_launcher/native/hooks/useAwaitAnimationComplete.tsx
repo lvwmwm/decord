@@ -1,9 +1,9 @@
-// Module ID: 12309
-// Function ID: 12310
+// Module ID: 12345
+// Function ID: 12346
 // Name: useAwaitAnimationComplete
 // Dependencies: [19, 21, 558, 568, 2]
 
-// Module 12309 (useAwaitAnimationComplete)
+// Module 12345 (useAwaitAnimationComplete)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

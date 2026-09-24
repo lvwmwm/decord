@@ -1,25 +1,25 @@
-// Module ID: 9157
-// Function ID: 9158
+// Module ID: 9189
+// Function ID: 9190
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 8634, 21, 4758, 580, 558, 568, 4455, 8986, 1119, 1982, 4442, 9158, 9165, 4754, 2]
+// Dependencies: [19, 17, 8666, 21, 4790, 580, 558, 568, 4487, 9018, 1119, 1982, 4474, 9190, 9197, 4786, 2]
 
-// Module 9157 (GameProfileDetails)
+// Module 9189 (GameProfileDetails)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import Server from "Server" /* 1982 */;
-import DateUtilsAll from "DateUtils" /* 4442 */;
-import LinkingDefault from "Linking" /* 4455 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import SKUUtils from "SKUUtils" /* 8986 */;
+import DateUtilsAll from "DateUtils" /* 4474 */;
+import LinkingDefault from "Linking" /* 4487 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import SKUUtils from "SKUUtils" /* 9018 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Pressable: metroRequire } = get_ActivityIndicator);
-const IGDB_ATTRIBUTION_LINK = fn(8634).IGDB_ATTRIBUTION_LINK;
+const IGDB_ATTRIBUTION_LINK = fn(8666).IGDB_ATTRIBUTION_LINK;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { gap: nativeDefault.space.PX_8 }, headerText: null, detailsContainer: null, detailsRow: null, detailsRowValue: null, detailsRowBottomBorder: null, platformsContainer: null, linksContainer: null };
 let obj3 = { gap: nativeDefault.space.PX_8 };
 obj2.headerText = { paddingHorizontal: nativeDefault.space.PX_8 };
@@ -115,7 +115,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let joined;
       if (platformsContainer != null) {
         const genres1 = platformsContainer.genres;
-        const mapped = genres1.map(tmp(8986).getGenreText);
+        const mapped = genres1.map(tmp(9018).getGenreText);
         joined = mapped.join(", ");
       }
       let genres2;
@@ -274,11 +274,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             if (cResult[32] !== firstReleaseDate) {
               const _Date = Date;
               const date = new Date(firstReleaseDate);
-              const dateFormatResult = arr(4442).dateFormat(date, "LL");
+              const dateFormatResult = arr(4474).dateFormat(date, "LL");
               cResult[32] = firstReleaseDate;
               cResult[33] = dateFormatResult;
               let tmp43 = dateFormatResult;
-              const obj8 = arr(4442);
+              const obj8 = arr(4474);
             } else {
               tmp43 = cResult[33];
             }
@@ -432,7 +432,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 constructor(arg0) {
                   url = arg0.url;
                   obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-                  return jsx(f48684, obj, url);
+                  return jsx(f48727, obj, url);
                 }
               }
               cResult[48] = trackAction;
@@ -443,7 +443,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 constructor(arg0) {
                   url = arg0.url;
                   obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-                  return jsx(f48684, obj, url);
+                  return jsx(f48727, obj, url);
                 }
               }
             }
@@ -454,7 +454,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 constructor(arg0) {
                   url = arg0.url;
                   obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-                  return jsx(f48684, obj, url);
+                  return jsx(f48727, obj, url);
                 }
               }
               tmp78[0] = tmp71;
@@ -467,7 +467,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 constructor(arg0) {
                   url = arg0.url;
                   obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-                  return jsx(f48684, obj, url);
+                  return jsx(f48727, obj, url);
                 }
               }
             }
@@ -479,7 +479,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             constructor(arg0) {
               url = arg0.url;
               obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-              return jsx(f48684, obj, url);
+              return jsx(f48727, obj, url);
             }
           }
           cResult[1] = platformsContainer;
@@ -492,7 +492,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             constructor(arg0) {
               url = arg0.url;
               obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-              return jsx(f48684, obj, url);
+              return jsx(f48727, obj, url);
             }
           }
           const _Symbol7 = Symbol;
@@ -501,7 +501,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               constructor(arg0) {
                 url = arg0.url;
                 obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-                return jsx(f48684, obj, url);
+                return jsx(f48727, obj, url);
               }
             }
             const stringResult6 = obj14.string(tmp(1119).t["BwQ+9e"]);
@@ -517,7 +517,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               constructor(arg0) {
                 url = arg0.url;
                 obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-                return jsx(f48684, obj, url);
+                return jsx(f48727, obj, url);
               }
             }
             tmp81 = cResult[53];
@@ -527,7 +527,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               constructor(arg0) {
                 url = arg0.url;
                 obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-                return jsx(f48684, obj, url);
+                return jsx(f48727, obj, url);
               }
             }
             tmp86[0] = tmp80;
@@ -540,7 +540,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               constructor(arg0) {
                 url = arg0.url;
                 obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-                return jsx(f48684, obj, url);
+                return jsx(f48727, obj, url);
               }
             }
           }
@@ -553,7 +553,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       constructor(arg0) {
         url = arg0.url;
         obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-        return jsx(f48684, obj, url);
+        return jsx(f48727, obj, url);
       }
     }
     const _Symbol = Symbol;
@@ -562,7 +562,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         constructor(arg0) {
           url = arg0.url;
           obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-          return jsx(f48684, obj, url);
+          return jsx(f48727, obj, url);
         }
       }
       cResult[0] = tmp5;
@@ -572,7 +572,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         constructor(arg0) {
           url = arg0.url;
           obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-          return jsx(f48684, obj, url);
+          return jsx(f48727, obj, url);
         }
       }
     }
@@ -581,7 +581,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         constructor(arg0) {
           url = arg0.url;
           obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-          return jsx(f48684, obj, url);
+          return jsx(f48727, obj, url);
         }
       }
     } else {
@@ -589,7 +589,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         constructor(arg0) {
           url = arg0.url;
           obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-          return jsx(f48684, obj, url);
+          return jsx(f48727, obj, url);
         }
       }
       const _Symbol8 = Symbol;
@@ -599,7 +599,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           constructor(arg0) {
             url = arg0.url;
             obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-            return jsx(f48684, obj, url);
+            return jsx(f48727, obj, url);
           }
         }
         const stringResult7 = obj16.string(tmp(1119).t["7OjmmH"]);
@@ -610,7 +610,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           constructor(arg0) {
             url = arg0.url;
             obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-            return jsx(f48684, obj, url);
+            return jsx(f48727, obj, url);
           }
         }
       }
@@ -619,11 +619,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           constructor(arg0) {
             url = arg0.url;
             obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-            return jsx(f48684, obj, url);
+            return jsx(f48727, obj, url);
           }
         }
         const obj11 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp89 };
-        const tmp92 = closure_8(tmp(4754).Text, obj11);
+        const tmp92 = closure_8(tmp(4786).Text, obj11);
         cResult[57] = tmp4.headerText;
         cResult[58] = tmp92;
       } else {
@@ -631,7 +631,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           constructor(arg0) {
             url = arg0.url;
             obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-            return jsx(f48684, obj, url);
+            return jsx(f48727, obj, url);
           }
         }
       }
@@ -640,7 +640,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           constructor(arg0) {
             url = arg0.url;
             obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
-            return jsx(f48684, obj, url);
+            return jsx(f48727, obj, url);
           }
         }
       }
@@ -750,7 +750,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               if (obj != null) {
                 const websites = obj.websites;
                 if (websites != null) {
-                  const mapped3 = websites.map((item) => trackAction(9165)(item, trackAction(580).colors.ICON_SUBTLE));
+                  const mapped3 = websites.map((item) => trackAction(9197)(item, trackAction(580).colors.ICON_SUBTLE));
                   found = mapped3.filter((item) => null != item);
                 }
               }
@@ -794,7 +794,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 stringResult = intl8.string(util.t["UxAag+"]);
               }
               const obj7 = { label: stringResult, value: null };
-              const obj8 = { style: closure_2.platformsContainer, children: platforms.map((platform) => closure_1_8(game(9158).GameUpdatePlatformIcon, { platform, size: "md", color: trackAction(580).colors.ICON_SUBTLE }, platform)) };
+              const obj8 = { style: closure_2.platformsContainer, children: platforms.map((platform) => closure_1_8(game(9190).GameUpdatePlatformIcon, { platform, size: "md", color: trackAction(580).colors.ICON_SUBTLE }, platform)) };
               obj7.value = closure_2_8(hasOwnProperty, obj8);
               items.push(obj7);
             }

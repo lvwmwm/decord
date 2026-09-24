@@ -1,19 +1,19 @@
-// Module ID: 10131
-// Function ID: 10132
+// Module ID: 10170
+// Function ID: 10171
 // Name: InviteButton
-// Dependencies: [19, 17, 7983, 21, 4758, 558, 568, 1119, 5188, 2]
+// Dependencies: [19, 17, 8015, 21, 4790, 558, 568, 1119, 5220, 2]
 
-// Module 10131 (InviteButton)
+// Module 10170 (InviteButton)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const InviteSendStates = fn(7983).InviteSendStates;
+const InviteSendStates = fn(8015).InviteSendStates;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ buttonWrapper: { minWidth: 66, flexDirection: "row" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -98,7 +98,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       }
     }
     const obj3 = { accessibilityRole: "none", size: "sm", variant: "secondary", text: tmp8, onPress: onPressSend, disabled: flag, grow: true };
-    const tmp22 = jsx(tmp(5188).Button, { accessibilityRole: "none", size: "sm", variant: "secondary", text: tmp8, onPress: onPressSend, disabled: flag, grow: true });
+    const tmp22 = jsx(tmp(5220).Button, { accessibilityRole: "none", size: "sm", variant: "secondary", text: tmp8, onPress: onPressSend, disabled: flag, grow: true });
     cResult[4] = onPressSend;
     cResult[5] = flag;
     cResult[6] = tmp8;

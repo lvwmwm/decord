@@ -1,15 +1,15 @@
-// Module ID: 8118
-// Function ID: 8119
+// Module ID: 8150
+// Function ID: 8151
 // Name: PressableNavigatorButtonWrapper
-// Dependencies: [17, 8113, 21, 4758, 580, 558, 568, 2]
+// Dependencies: [17, 8145, 21, 4790, 580, 558, 568, 2]
 
-// Module 8118 (PressableNavigatorButtonWrapper)
+// Module 8150 (PressableNavigatorButtonWrapper)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import MainTabsV2Constants from "MainTabsV2Constants" /* 8113 */;
-import createStyles from "createStyles" /* 4758 */;
+import MainTabsV2Constants from "MainTabsV2Constants" /* 8145 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 11924
-// Function ID: 11925
+// Module ID: 11960
+// Function ID: 11961
 // Name: AcceptGuildTemplateActionCreators
-// Dependencies: [5496, 2067, 1078, 577, 1275, 7586, 2]
+// Dependencies: [5528, 2067, 1078, 577, 1275, 7618, 2]
 
-// Module 11924 (AcceptGuildTemplateActionCreators)
+// Module 11960 (AcceptGuildTemplateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import transitionToGuild from "transitionToGuild" /* 7586 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
+import transitionToGuild from "transitionToGuild" /* 7618 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5528 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;

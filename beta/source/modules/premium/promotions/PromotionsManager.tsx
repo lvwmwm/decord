@@ -1,14 +1,14 @@
-// Module ID: 17878
-// Function ID: 17879
+// Module ID: 17888
+// Function ID: 17889
 // Name: PromotionsManager
-// Dependencies: [2113, 4424, 10963, 1078, 1089, 7365, 13691, 2]
+// Dependencies: [2113, 4456, 10999, 1078, 1089, 7397, 13727, 2]
 
-// Module 17878 (PromotionsManager)
-import PromotionsActionCreators from "PromotionsActionCreators" /* 13691 */;
+// Module 17888 (PromotionsManager)
+import PromotionsActionCreators from "PromotionsActionCreators" /* 13727 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
-import SubscriptionStore from "SubscriptionStore" /* 4424 */;
-import PromotionsStore from "PromotionsStore" /* 10963 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import SubscriptionStore from "SubscriptionStore" /* 4456 */;
+import PromotionsStore from "PromotionsStore" /* 10999 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
 
 require = fn;
 const EntitlementTypes = fn(1078).EntitlementTypes;

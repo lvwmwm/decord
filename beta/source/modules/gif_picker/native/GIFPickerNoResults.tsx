@@ -1,22 +1,22 @@
-// Module ID: 10669
-// Function ID: 10670
+// Module ID: 10705
+// Function ID: 10706
 // Name: GIFPickerNoResults
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 10654, 10493, 1119, 10497, 6863, 1181, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 10690, 10529, 1119, 10533, 6895, 1181, 2]
 
-// Module 10669 (GIFPickerNoResults)
+// Module 10705 (GIFPickerNoResults)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import SearchEmpty from "SearchEmpty" /* 10493 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 10497 */;
-import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10654 */;
+import SearchEmpty from "SearchEmpty" /* 10529 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 10533 */;
+import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10690 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ScrollView = fn(17).ScrollView;
 fn(1078).GIFPickerResultTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { emptyStateContainer: { padding: 0, flex: 1 }, emptyStateBody: { color: nativeDefault.colors.TEXT_SUBTLE }, emptyStateImage: null };
 let obj3 = { color: nativeDefault.colors.TEXT_SUBTLE };
 obj.emptyStateImage = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
@@ -58,9 +58,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     cResult[3] = categoryType;
     cResult[4] = stringResult;
   } else {
-    const modalDismissGuardRefreshControl = tmp(10497).useModalDismissGuardRefreshControl();
+    const modalDismissGuardRefreshControl = tmp(10533).useModalDismissGuardRefreshControl();
     if (inActionSheet) {
-      let BottomSheetScrollView = tmp(6863).BottomSheetScrollView;
+      let BottomSheetScrollView = tmp(6895).BottomSheetScrollView;
     } else {
       BottomSheetScrollView = ScrollView;
     }
@@ -103,7 +103,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     cResult[9] = tmp4.emptyStateImage;
     cResult[10] = tmp16;
     tmp14 = tmp16;
-    const tmpResult2 = tmp(10497);
+    const tmpResult2 = tmp(10533);
   }
 }) : ((inActionSheet) => {
   inActionSheet = inActionSheet.inActionSheet;
@@ -121,7 +121,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   const modalDismissGuardRefreshControl = useModalDismissGuardRefreshControl.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp4(6863).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp4(6895).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

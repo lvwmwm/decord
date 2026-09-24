@@ -1,13 +1,13 @@
-// Module ID: 12790
-// Function ID: 12791
+// Module ID: 12826
+// Function ID: 12827
 // Name: UserProfileConfirmThreadRemove
-// Dependencies: [19, 21, 558, 568, 4603, 1119, 5116, 5116, 2]
+// Dependencies: [19, 21, 558, 568, 4635, 1119, 5148, 5148, 2]
 
-// Module 12790 (UserProfileConfirmThreadRemove)
+// Module 12826 (UserProfileConfirmThreadRemove)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import AlertModal from "AlertModal" /* 5116 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import AlertModal from "AlertModal" /* 5148 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -41,7 +41,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         }
         if (cResult[6] !== onConfirm) {
           const obj3 = { variant: "destructive", text: tmp11, onPress: onConfirm };
-          const tmp15 = React3(tmp(5116).AlertActionButton, obj3, "remove-user-from-thread");
+          const tmp15 = React3(tmp(5148).AlertActionButton, obj3, "remove-user-from-thread");
           cResult[6] = onConfirm;
           cResult[7] = tmp15;
           let tmp13 = tmp15;
@@ -53,7 +53,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           const obj4 = { variant: "secondary", text: null };
           const intl4 = tmp(1119).intl;
           obj4.text = intl4.string(tmp(1119).t.yNbnce);
-          const tmp18 = React3(tmp(5116).AlertActionButton, obj4, "cancel-remove-user-from-thread");
+          const tmp18 = React3(tmp(5148).AlertActionButton, obj4, "cancel-remove-user-from-thread");
           cResult[8] = tmp18;
           let tmp16 = tmp18;
         } else {
@@ -63,7 +63,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           const obj5 = { children: null };
           const items = [tmp13, tmp16];
           obj5.children = items;
-          const tmp21 = React4(tmp(5116).AlertActions, obj5);
+          const tmp21 = React4(tmp(5148).AlertActions, obj5);
           cResult[9] = tmp13;
           cResult[10] = tmp21;
           let tmp19 = tmp21;
@@ -79,7 +79,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           }
         }
         const obj6 = { title: tmp5, content: cResult[4], actions: tmp19 };
-        const tmp24 = React3(tmp(5116).AlertModal, obj6);
+        const tmp24 = React3(tmp(5148).AlertModal, obj6);
         cResult[11] = tmp5;
         cResult[12] = cResult[4];
         cResult[13] = tmp19;

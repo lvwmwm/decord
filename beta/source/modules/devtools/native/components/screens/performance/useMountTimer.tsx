@@ -1,9 +1,9 @@
-// Module ID: 16034
-// Function ID: 16035
+// Module ID: 16044
+// Function ID: 16045
 // Name: useMountTimer
 // Dependencies: [32, 19, 558, 568, 2]
 
-// Module 16034 (useMountTimer)
+// Module 16044 (useMountTimer)
 import c from "c" /* 568 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

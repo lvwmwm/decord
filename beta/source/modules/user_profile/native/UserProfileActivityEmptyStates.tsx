@@ -1,18 +1,18 @@
-// Module ID: 13376
-// Function ID: 13377
+// Module ID: 13412
+// Function ID: 13413
 // Name: UserProfileActivityEmptyStates
-// Dependencies: [32, 19, 17, 1078, 21, 1119, 4758, 580, 558, 568, 4754, 4910, 12, 4771, 4725, 5188, 7626, 2]
+// Dependencies: [32, 19, 17, 1078, 21, 1119, 4790, 580, 558, 568, 4786, 4942, 12, 4803, 4757, 5220, 7658, 2]
 
-// Module 13376 (UserProfileActivityEmptyStates)
+// Module 13412 (UserProfileActivityEmptyStates)
 import _mod12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4771 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import openUserSettings from "openUserSettings" /* 7626 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4803 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import openUserSettings from "openUserSettings" /* 7658 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -87,7 +87,7 @@ let items = [
     return intl.string(util.t.YolGh4);
   }
 ];
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { alignItems: "center", paddingVertical: nativeDefault.space.PX_32, gap: nativeDefault.space.PX_16 }, text: null, centeredText: null, buttons: null };
 let obj3 = { alignItems: "center", paddingVertical: nativeDefault.space.PX_32, gap: nativeDefault.space.PX_16 };
 obj.text = { gap: nativeDefault.space.PX_8, alignItems: "center" };
@@ -143,7 +143,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp10 = tmp13;
     }
     const obj4 = { variant: "text-sm/normal", style: tmp4.centeredText, children: bodyText };
-    const tmp9 = React5(tmp(4754).Text, obj4);
+    const tmp9 = React5(tmp(4786).Text, obj4);
     cResult[3] = bodyText;
     cResult[4] = tmp4.centeredText;
     cResult[5] = tmp9;
@@ -258,7 +258,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((us
           }
         }
         const obj4 = { size: "sm", variant: "secondary", text: tmp15, onPress: tmp13 };
-        const tmp18 = closure_7(tmp(5188).Button, obj4);
+        const tmp18 = closure_7(tmp(5220).Button, obj4);
         cResult[10] = tmp13;
         cResult[11] = tmp18;
       } else {
@@ -311,7 +311,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((us
     }
   }
   let obj = name(568);
-  name = user(4910).getName(guildId, channelId, user);
+  name = user(4942).getName(guildId, channelId, user);
   const intl = tmp(1119).intl;
   const formatToPlainStringResult = intl.formatToPlainString(name(1119).t.sjSitP, { name });
   cResult[0] = channelId;
@@ -325,9 +325,9 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((us
   let name;
   ({ guildId, channelId } = user);
   const tmp = closure_10();
-  name = name(4910).getName(guildId, channelId, user);
+  name = name(4942).getName(guildId, channelId, user);
   const intl = user(1119).intl;
-  let obj = name(4910);
+  let obj = name(4942);
   items = [user.id];
   let obj2 = {
     heading: intl.formatToPlainString(user(1119).t.sjSitP, { name }),
@@ -350,7 +350,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((us
   const intl2 = user(1119).intl;
   obj4.text = intl2.string(user(1119).t["g33r/P"]);
   obj4.onPress = callback;
-  obj3.children = closure_7(user(5188).Button, obj4);
+  obj3.children = closure_7(user(5220).Button, obj4);
   obj2.children = closure_7(View, obj3);
   return closure_7(closure_11, obj2);
 }));
@@ -389,7 +389,7 @@ export const UserProfileActivityEmptyCurrentUser = noop.memo(ReactCompilerGating
     const intl3 = tmp(1119).intl;
     obj2.text = intl3.string(tmp(1119).t["/Hl24U"]);
     obj2.onPress = first;
-    const tmp12 = React5(tmp(5188).Button, obj2);
+    const tmp12 = React5(tmp(5220).Button, obj2);
     cResult[3] = tmp12;
     let tmp10 = tmp12;
   } else {

@@ -1,10 +1,10 @@
-// Module ID: 11623
-// Function ID: 11624
+// Module ID: 11659
+// Function ID: 11660
 // Name: AppStoreMetadataActionCreators
 // Dependencies: [5, 1078, 1095, 577, 1275, 561, 2]
 // Exports: fetchAppStoreMetadata, getAppStoreMetadataCacheKey
 
-// Module 11623 (AppStoreMetadataActionCreators)
+// Module 11659 (AppStoreMetadataActionCreators)
 import DurationsDefault from "Durations" /* 1095 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import Dispatcher from "Dispatcher" /* 577 */;

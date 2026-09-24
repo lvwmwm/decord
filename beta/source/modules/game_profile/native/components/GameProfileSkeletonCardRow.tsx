@@ -1,9 +1,9 @@
-// Module ID: 9029
-// Function ID: 9030
+// Module ID: 9061
+// Function ID: 9062
 // Name: GameProfileSkeletonCardRow
-// Dependencies: [19, 17, 21, 4758, 558, 568, 580, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 580, 2]
 
-// Module 9029 (GameProfileSkeletonCardRow)
+// Module 9061 (GameProfileSkeletonCardRow)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import noop from "module_19" /* 19 */;
@@ -11,7 +11,7 @@ import noop from "module_19" /* 19 */;
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles((gap) => {
   const obj = { viewport: { overflow: "hidden" }, row: { flexDirection: "row", gap } };
   return obj;

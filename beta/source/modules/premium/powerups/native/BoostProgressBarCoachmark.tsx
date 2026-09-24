@@ -1,20 +1,20 @@
-// Module ID: 16507
-// Function ID: 16508
+// Module ID: 16517
+// Function ID: 16518
 // Name: BoostProgressBarCoachmark
-// Dependencies: [19, 17, 2042, 21, 4758, 558, 568, 9833, 1119, 2518, 4471, 10452, 2]
+// Dependencies: [19, 17, 2042, 21, 4790, 558, 568, 9865, 1119, 2518, 4503, 10491, 2]
 
-// Module 16507 (BoostProgressBarCoachmark)
+// Module 16517 (BoostProgressBarCoachmark)
 import util from "util" /* 1119 */;
 import _modDef2518 from "module_2518" /* 2518 */;
-import native from "native" /* 4471 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
+import native from "native" /* 4503 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9865 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ riveContainer: { width: 120, height: 80, alignSelf: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -143,6 +143,6 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     obj.onButtonPress = callback1;
     return obj;
   }, items2);
-  const coachmark = guild(10452).useCoachmark(guild.targetRef, memo);
+  const coachmark = guild(10491).useCoachmark(guild.targetRef, memo);
   return null;
 });

@@ -1,22 +1,22 @@
-// Module ID: 9028
-// Function ID: 9029
+// Module ID: 9060
+// Function ID: 9061
 // Name: GameProfileAnnouncements
-// Dependencies: [19, 17, 8983, 21, 5208, 1119, 4758, 580, 558, 568, 9010, 7186, 9012, 9029, 9030, 4754, 9033, 4442, 9035, 7409, 9037, 8944, 8950, 9040, 8996, 2]
+// Dependencies: [19, 17, 9015, 21, 5240, 1119, 4790, 580, 558, 568, 9042, 7218, 9044, 9061, 9062, 4786, 9065, 4474, 9067, 7441, 9069, 8976, 8982, 9072, 9028, 2]
 
-// Module 9028 (GameProfileAnnouncements)
+// Module 9060 (GameProfileAnnouncements)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import DateUtils from "DateUtils" /* 4442 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import CustomMarkupAll from "CustomMarkup" /* 5208 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7186 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8944 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8950 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9010 */;
-import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9029 */;
-import AnnouncementMessageUtils from "AnnouncementMessageUtils" /* 9030 */;
-import ImageWithPlaceholder from "ImageWithPlaceholder" /* 9033 */;
-import navigateToGameAnnouncementDefault from "navigateToGameAnnouncement" /* 9040 */;
+import DateUtils from "DateUtils" /* 4474 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import CustomMarkupAll from "CustomMarkup" /* 5240 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7218 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8976 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8982 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9042 */;
+import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9061 */;
+import AnnouncementMessageUtils from "AnnouncementMessageUtils" /* 9062 */;
+import ImageWithPlaceholder from "ImageWithPlaceholder" /* 9065 */;
+import navigateToGameAnnouncementDefault from "navigateToGameAnnouncement" /* 9072 */;
 import noop from "module_19" /* 19 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;
@@ -24,13 +24,13 @@ const GameProfileSkeletonDefault = GameProfileSkeleton;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, View: metroRequire, Pressable: closure_7 } = get_ActivityIndicator);
-const MAX_VISIBLE_ANNOUNCEMENTS = fn(8983).MAX_VISIBLE_ANNOUNCEMENTS;
+const MAX_VISIBLE_ANNOUNCEMENTS = fn(9015).MAX_VISIBLE_ANNOUNCEMENTS;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 let c11 = 120;
 let c12 = 160;
 let closure_13 = null;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { smallCardsScroller: { marginHorizontal: -nativeDefault.space.PX_16, overflow: "visible" }, skeletonCardsScroller: null, smallCardsContainer: null, skeletonCardsContainer: null, card: null, cardBody: null, smallCardMedia: null, mediaImage: null, metadataRow: null, reactionInfo: null, embedContentArea: null, embedAuthorRow: null, embedAuthorIcon: null, embedProviderIcon: null, embedMedia: null, pollAnswers: null, pollAnswerOption: null, pollMoreOptions: null, skeletonCard: null, skeletonCardLarge: null, skeletonAnimationRoot: null, skeletonCardImage: null, skeletonCardBody: null, skeletonCardContent: null, skeletonCardMetadata: null };
 let obj3 = { marginHorizontal: -nativeDefault.space.PX_16, overflow: "visible" };
 obj.skeletonCardsScroller = { marginHorizontal: -nativeDefault.space.PX_16 };
@@ -84,7 +84,7 @@ let closure_16 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     if (cResult[1] === tmp5) {
       let tmp6 = cResult[2];
     }
-    const result = index * tmp(9010).SKELETON_CARD_ANIMATION_DELAY_MS;
+    const result = index * tmp(9042).SKELETON_CARD_ANIMATION_DELAY_MS;
     if (cResult[3] === tmp4.skeletonCardImage) {
       if (cResult[4] === tmp4.smallCardMedia) {
         let tmp8 = cResult[5];
@@ -140,7 +140,7 @@ let closure_16 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
             const obj5 = { animationDelayMs: result, style: tmp4.skeletonAnimationRoot, children: null };
             const items = [tmp8, tmp21];
             obj5.children = items;
-            const tmp27 = v65535(tmp(9010).GameProfileSkeletonContainer, obj5);
+            const tmp27 = v65535(tmp(9042).GameProfileSkeletonContainer, obj5);
             cResult[17] = tmp4.skeletonAnimationRoot;
             cResult[18] = result;
             cResult[19] = tmp8;
@@ -230,7 +230,7 @@ let closure_17 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() =>
   }
   const obj = require("c");
   const tmp = _require;
-  const tmp11 = closure_9(tmp(9012).GameProfileSectionSkeleton, { showViewAllSkeleton: true, skeletonTitleWidth: 200, children: closure_9(GameProfileSkeletonCardRowDefault, { style: skeletonCardsScroller, contentContainerStyle: skeletonCardsContainer, children: tmp7 }) });
+  const tmp11 = closure_9(tmp(9044).GameProfileSectionSkeleton, { showViewAllSkeleton: true, skeletonTitleWidth: 200, children: closure_9(GameProfileSkeletonCardRowDefault, { style: skeletonCardsScroller, contentContainerStyle: skeletonCardsContainer, children: tmp7 }) });
   cResult[2] = tmp4.skeletonCardsContainer;
   cResult[3] = tmp4.skeletonCardsScroller;
   cResult[4] = tmp7;
@@ -289,11 +289,11 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
               if (cResult[46] !== message.timestamp) {
                 const _Date = Date;
                 const date = new Date(message.timestamp);
-                const dateFormatResult = tmp(4442).dateFormat(date, "LL");
+                const dateFormatResult = tmp(4474).dateFormat(date, "LL");
                 cResult[46] = message.timestamp;
                 cResult[47] = dateFormatResult;
                 let tmp77 = dateFormatResult;
-                const tmpResult = tmp(4442);
+                const tmpResult = tmp(4474);
               } else {
                 tmp77 = cResult[47];
               }
@@ -400,7 +400,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
                 if (tmp88Result) {
                   const obj7 = { style: tmp4.reactionInfo, children: null };
                   const obj8 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-                  const items3 = [options(tmp(9035).ReactionIcon, obj8), ];
+                  const items3 = [options(tmp(9067).ReactionIcon, obj8), ];
                   let tmp93 = null != obj16;
                   if (tmp93) {
                     tmp93 = obj16.locale === tmp(1119).intl.currentLocale;
@@ -415,7 +415,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
                   const obj10 = { variant: "text-xs/medium", color: "text-muted", children: null };
                   const format = obj16.format;
                   obj10.children = format.format(message.reactionCount);
-                  items3[1] = options(tmp(4754).Text, obj10);
+                  items3[1] = options(tmp(4786).Text, obj10);
                   obj7.children = items3;
                   tmp88Result = v65535(timestampProducer, obj7);
                 }
@@ -427,7 +427,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
               const obj11 = { variant: "text-xs/medium", color: "text-muted", children: null };
               const items4 = [str4, tmp77];
               obj11.children = items4;
-              const tmp85 = v65535(tmp(4754).Text, obj11);
+              const tmp85 = v65535(tmp(4786).Text, obj11);
               cResult[48] = str4;
               cResult[49] = tmp77;
               cResult[50] = tmp85;
@@ -469,8 +469,8 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   if (cResult[21] !== proxyUrl) {
     let posterUrl = null;
     if (null != proxyUrl) {
-      posterUrl = tmp(9030).getPosterUrl(proxyUrl, c12, c11);
-      const tmpResult2 = tmp(9030);
+      posterUrl = tmp(9062).getPosterUrl(proxyUrl, c12, c11);
+      const tmpResult2 = tmp(9062);
     }
     cResult[21] = proxyUrl;
     cResult[22] = posterUrl;
@@ -536,7 +536,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
               return onPress(message.id);
             }
           }
-          tmp52 = options(tmp(4754).Text, { variant: "text-xs/medium", color: "text-link", lineClamp: 1, children: null });
+          tmp52 = options(tmp(4786).Text, { variant: "text-xs/medium", color: "text-link", lineClamp: 1, children: null });
           const obj15 = { variant: "text-xs/medium", color: "text-link", lineClamp: 1, children: null };
         }
         class L {
@@ -582,7 +582,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
                       tmp69[0] = guildId;
                       tmp69[1] = channelId;
                       obj16.children = parser(message.body, true, tmp69);
-                      tmp67 = options(tmp(4754).Text, obj16);
+                      tmp67 = options(tmp(4786).Text, obj16);
                     }
                     str = "button";
                     tmp34 = tmp67;
@@ -616,7 +616,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
                   }
                 }
                 const obj18 = { uri: tmp26, placeholder: message.media.placeholder, placeholderVersion: message.media.placeholderVersion, style: tmp4.mediaImage };
-                obj17.children = options(tmp(9033).ImageWithPlaceholder, obj18);
+                obj17.children = options(tmp(9065).ImageWithPlaceholder, obj18);
                 tmp64 = options(tmp50, obj17);
               }
               cResult[38] = message.media;
@@ -653,7 +653,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
           }
           const items5 = [tmp58, ];
           const obj21 = { variant: "text-xs/semibold", color: "text-strong", lineClamp: 1, children: embedSource.authorName };
-          items5[1] = options(tmp(4754).Text, obj21);
+          items5[1] = options(tmp(4786).Text, obj21);
           obj19.children = items5;
           tmp57Result = v65535(tmp50, obj19);
         }
@@ -840,7 +840,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     if (tmp15Result2) {
       const obj22 = { style: tmp.reactionInfo, children: null };
       const obj23 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-      const items6 = [tmp13(tmp36(9035).ReactionIcon, obj23), ];
+      const items6 = [tmp13(tmp36(9067).ReactionIcon, obj23), ];
       let tmp47 = null != obj16;
       if (tmp47) {
         tmp47 = obj16.locale === tmp36(1119).intl.currentLocale;
@@ -855,7 +855,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
       const obj25 = { variant: "text-xs/medium", color: "text-muted", children: null };
       const format = obj16.format;
       obj25.children = format.format(message.reactionCount);
-      items6[1] = tmp13(tmp36(4754).Text, obj25);
+      items6[1] = tmp13(tmp36(4786).Text, obj25);
       obj22.children = items6;
       tmp15Result2 = tmp15(tmp16, obj22);
     }
@@ -901,17 +901,17 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
                       if (cResult[31] !== message.timestamp) {
                         const _Date = Date;
                         const date = new Date(message.timestamp);
-                        const dateFormatResult = tmp(4442).dateFormat(date, "LL");
+                        const dateFormatResult = tmp(4474).dateFormat(date, "LL");
                         cResult[31] = message.timestamp;
                         cResult[32] = dateFormatResult;
                         let tmp33 = dateFormatResult;
-                        const tmpResult = tmp(4442);
+                        const tmpResult = tmp(4474);
                       } else {
                         tmp33 = cResult[32];
                       }
                       if (cResult[33] !== tmp33) {
                         const obj3 = { variant: "text-xs/medium", color: "text-muted", children: tmp33 };
-                        const tmp42 = options(tmp(4754).Text, obj3);
+                        const tmp42 = options(tmp(4786).Text, obj3);
                         cResult[33] = tmp33;
                         cResult[34] = tmp42;
                         let tmp40 = tmp42;
@@ -994,7 +994,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
                       if (tmp45Result) {
                         const obj7 = { style: tmp4.reactionInfo, children: null };
                         const obj8 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-                        const items3 = [options(tmp(9035).ReactionIcon, obj8), ];
+                        const items3 = [options(tmp(9067).ReactionIcon, obj8), ];
                         let tmp51 = null != obj16;
                         if (tmp51) {
                           tmp51 = obj16.locale === tmp(1119).intl.currentLocale;
@@ -1009,7 +1009,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
                         const obj10 = { variant: "text-xs/medium", color: "text-muted", children: null };
                         const format = obj16.format;
                         obj10.children = format.format(message.reactionCount);
-                        items3[1] = options(tmp(4754).Text, obj10);
+                        items3[1] = options(tmp(4786).Text, obj10);
                         obj7.children = items3;
                         tmp45Result = v65535(timestampProducer, obj7);
                       }
@@ -1046,8 +1046,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   if (cResult[21] !== proxyUrl) {
     let posterUrl = null;
     if (null != proxyUrl) {
-      posterUrl = tmp(9030).getPosterUrl(proxyUrl, c12, c11);
-      const tmpResult2 = tmp(9030);
+      posterUrl = tmp(9062).getPosterUrl(proxyUrl, c12, c11);
+      const tmpResult2 = tmp(9062);
     }
     cResult[21] = proxyUrl;
     cResult[22] = posterUrl;
@@ -1076,14 +1076,14 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
             const obj11 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 2, children: null };
             const obj12 = { guildId, channelId };
             obj11.children = tmp15(message.title, true, obj12);
-            tmp29 = options(tmp(4754).Text, obj11);
+            tmp29 = options(tmp(4786).Text, obj11);
           }
           let tmp31 = message.body.length > 0;
           if (tmp31) {
             const obj13 = { variant: "text-sm/medium", color: "text-default", lineClamp: 3, children: null };
             const obj14 = { guildId, channelId };
             obj13.children = tmp15(message.body, true, obj14);
-            tmp31 = options(tmp(4754).Text, obj13);
+            tmp31 = options(tmp(4786).Text, obj13);
           }
           cResult[0] = channelId;
           cResult[1] = guildId;
@@ -1123,7 +1123,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     if (tmp25) {
       const obj15 = { style: tmp4.smallCardMedia, children: null };
       obj16 = { uri: tmp18, placeholder: message.media.placeholder, placeholderVersion: message.media.placeholderVersion, style: tmp4.mediaImage };
-      obj15.children = options(tmp(9033).ImageWithPlaceholder, obj16);
+      obj15.children = options(tmp(9065).ImageWithPlaceholder, obj16);
       tmp25 = options(timestampProducer, obj15);
     }
     cResult[26] = message.media;
@@ -1214,7 +1214,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   if (tmp12Result) {
     const obj14 = { style: tmp.reactionInfo, children: null };
     const obj15 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-    const items3 = [tmp28(tmp29(9035).ReactionIcon, obj15), ];
+    const items3 = [tmp28(tmp29(9067).ReactionIcon, obj15), ];
     let tmp35 = null != obj16;
     if (tmp35) {
       tmp35 = obj16.locale === tmp29(1119).intl.currentLocale;
@@ -1228,7 +1228,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     const obj17 = { variant: "text-xs/medium", color: "text-muted", children: null };
     const format = obj16.format;
     obj17.children = format.format(message.reactionCount);
-    items3[1] = tmp28(tmp29(4754).Text, obj17);
+    items3[1] = tmp28(tmp29(4786).Text, obj17);
     obj14.children = items3;
     tmp12Result = tmp12(tmp19, obj14);
   }
@@ -1275,7 +1275,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
                               }
                               if (cResult[38] !== tmp44) {
                                 const obj2 = { variant: "text-xs/medium", color: "text-muted", children: tmp44 };
-                                const tmp53 = closure_9(tmp(4754).Text, obj2);
+                                const tmp53 = closure_9(tmp(4786).Text, obj2);
                                 cResult[38] = tmp44;
                                 cResult[39] = tmp53;
                                 let tmp51 = tmp53;
@@ -1345,13 +1345,13 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
                             const _Date = Date;
                             const date = new Date(message.timestamp);
                             obj6.createdAt = date;
-                            obj6.expiryLabel = tmp(9030).getPollExpiryLabel(poll);
+                            obj6.expiryLabel = tmp(9062).getPollExpiryLabel(poll);
                             const formatResult = intl2.format(tmp(1119).t.t0FTsH, obj6);
                             cResult[35] = message.timestamp;
                             cResult[36] = poll;
                             cResult[37] = formatResult;
                             tmp44 = formatResult;
-                            const tmpResult = tmp(9030);
+                            const tmpResult = tmp(9062);
                           }
                         }
                       }
@@ -1372,7 +1372,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
                       const intl = tmp(1119).intl;
                       const obj9 = { count: tmp8 };
                       obj8.children = intl.format(tmp(1119).t["mv/nIa"], obj9);
-                      tmp38 = closure_9(tmp(4754).Text, obj8);
+                      tmp38 = closure_9(tmp(4786).Text, obj8);
                     }
                     cResult[27] = cResult[11];
                     cResult[28] = tmp4.pollMoreOptions;
@@ -1400,7 +1400,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
       const cardBody = tmp4.cardBody;
       if (cResult[23] !== poll.question.text) {
         const obj10 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: poll.question.text };
-        const tmp23 = closure_9(tmp(4754).Text, obj10);
+        const tmp23 = closure_9(tmp(4786).Text, obj10);
         cResult[23] = poll.question.text;
         cResult[24] = tmp23;
         let tmp21 = tmp23;
@@ -1496,7 +1496,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     };
     const obj3 = { style: tmp.cardBody, children: null };
     const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: poll.question.text };
-    const items = [closure_9(message(4754).Text, obj4), , ];
+    const items = [closure_9(message(4786).Text, obj4), , ];
     const obj5 = { style: tmp.pollAnswers, children: null };
     const items1 = [
       substr.map((poll_media) => {
@@ -1516,7 +1516,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
       const intl = tmp13(1119).intl;
       const obj6 = { count: diff };
       obj.children = intl.format(tmp13(1119).t["mv/nIa"], obj6);
-      tmp9Result = tmp9(tmp13(4754).Text, obj);
+      tmp9Result = tmp9(tmp13(4786).Text, obj);
     }
     items1[1] = tmp9Result;
     obj5.children = items1;
@@ -1528,9 +1528,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     const _Date = Date;
     const date = new Date(message.timestamp);
     obj9.createdAt = date;
-    obj9.expiryLabel = message(9030).getPollExpiryLabel(poll);
+    obj9.expiryLabel = message(9062).getPollExpiryLabel(poll);
     obj8.children = intl2.format(message(1119).t.t0FTsH, obj9);
-    obj7.children = closure_9(message(4754).Text, obj8);
+    obj7.children = closure_9(message(4786).Text, obj8);
     items[2] = closure_9(closure_6, obj7);
     obj3.children = items;
     obj2.children = closure_10(closure_6, obj3);

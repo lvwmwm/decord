@@ -1,17 +1,17 @@
-// Module ID: 12391
-// Function ID: 12392
+// Module ID: 12427
+// Function ID: 12428
 // Name: AppLauncherButtonIcon
-// Dependencies: [109, 19, 17, 21, 558, 568, 4627, 1614, 11257, 5280, 2]
+// Dependencies: [109, 19, 17, 21, 558, 568, 4659, 1614, 11293, 5312, 2]
 
-// Module 12391 (AppLauncherButtonIcon)
+// Module 12427 (AppLauncherButtonIcon)
 import c from "c" /* 568 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 4627 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 4659 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
 const KeyboardTypes = PlusLargeIcon(1614);
-const AppsIcon = PlusLargeIcon(5280);
-const PlusLargeIcon2 = PlusLargeIcon(11257);
+const AppsIcon = PlusLargeIcon(5312);
+const PlusLargeIcon2 = PlusLargeIcon(11293);
 require = fn;
 let closure_3 = ["style"];
 const View = fn(17).View;
@@ -87,11 +87,11 @@ export const AppLauncherButtonIcon = ReactCompilerGating.isReactCompilerEnabled(
     obj3.transform = items1;
     items[1] = obj3;
     obj2.style = items;
-    let tmp4Result = tmp4(tmp6(11257).PlusLargeIcon, obj2);
+    let tmp4Result = tmp4(tmp6(11293).PlusLargeIcon, obj2);
   } else {
     const obj4 = { style };
     const merged2 = Object.assign(merged);
-    tmp4Result = tmp4(tmp6(5280).AppsIcon, obj4);
+    tmp4Result = tmp4(tmp6(5312).AppsIcon, obj4);
   }
   obj.children = tmp4Result;
   return <View style={{ overflow: "hidden" }}>{null}</View>;

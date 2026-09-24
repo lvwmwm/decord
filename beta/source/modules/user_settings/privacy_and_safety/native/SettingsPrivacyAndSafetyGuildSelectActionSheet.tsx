@@ -1,19 +1,19 @@
-// Module ID: 16184
-// Function ID: 16185
+// Module ID: 16194
+// Function ID: 16195
 // Name: SettingsPrivacyAndSafetyGuildSelectActionSheet
-// Dependencies: [32, 19, 2067, 5657, 16183, 21, 4758, 580, 4989, 2059, 1119, 558, 568, 504, 4725, 14956, 5799, 11951, 5661, 2]
+// Dependencies: [32, 19, 2067, 5689, 16193, 21, 4790, 580, 5021, 2059, 1119, 558, 568, 504, 4757, 14991, 5831, 11987, 5693, 2]
 
-// Module 16184 (SettingsPrivacyAndSafetyGuildSelectActionSheet)
+// Module 16194 (SettingsPrivacyAndSafetyGuildSelectActionSheet)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 4989 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5661 */;
-import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 11951 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5021 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5693 */;
+import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 11987 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import SortedGuildStore from "SortedGuildStore" /* 5657 */;
+import SortedGuildStore from "SortedGuildStore" /* 5689 */;
 
 const require = globalThis.__r;
 
@@ -50,10 +50,10 @@ function queryGuilds(query) {
   }
   return reduced;
 }
-const UserSettingsSafetySelectedGuildStore = fn(16183);
+const UserSettingsSafetySelectedGuildStore = fn(16193);
 ({ GUILD_SELECT_ALL_SERVERS_OPTION_ID: closure_7, setSelectedGuildId: closure_8, useUserSafetySettingsSelectedGuildStore: closure_9 } = UserSettingsSafetySelectedGuildStore);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { iconContainer: { marginRight: nativeDefault.space.PX_12 } };
 let closure_11 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -83,7 +83,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (selectedGuildId !== closure_7) {
     if (null != stateFromStores) {
       if (cResult[4] !== stateFromStores) {
-        const obj2 = { type: tmp(4989).SelectOptionType.GUILD, guild: stateFromStores, label: null, value: null };
+        const obj2 = { type: tmp(5021).SelectOptionType.GUILD, guild: stateFromStores, label: null, value: null };
         ({ name: obj3.label, id: obj3.value } = stateFromStores);
         cResult[4] = stateFromStores;
         cResult[5] = obj2;
@@ -95,7 +95,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { type: tmp(4989).SelectOptionType.GUILD, guild: null, label: null, value: null };
+    const obj4 = { type: tmp(5021).SelectOptionType.GUILD, guild: null, label: null, value: null };
     const obj5 = { id: tmp8, name: null };
     const intl = tmp(1119).intl;
     obj5.name = intl.string(tmp(1119).t["32u1Dx"]);
@@ -113,12 +113,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores = selectedGuildId(504).useStateFromStores(items, () => GuildStore.getGuild(selectedGuildId));
   if (selectedGuildId !== value) {
     if (null != stateFromStores) {
-      let obj3 = { type: tmp(4989).SelectOptionType.GUILD, guild: stateFromStores, label: null, value: null };
+      let obj3 = { type: tmp(5021).SelectOptionType.GUILD, guild: stateFromStores, label: null, value: null };
       ({ name: obj2.label, id: obj2.value } = stateFromStores);
     }
     return obj3;
   }
-  const obj4 = { type: selectedGuildId(4989).SelectOptionType.GUILD, guild: null, label: null, value: null };
+  const obj4 = { type: selectedGuildId(5021).SelectOptionType.GUILD, guild: null, label: null, value: null };
   const obj = selectedGuildId(504);
   const obj5 = { id: value, name: null };
   const intl = tmp(1119).intl;

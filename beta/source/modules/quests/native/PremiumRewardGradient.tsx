@@ -1,33 +1,33 @@
-// Module ID: 15420
-// Function ID: 15421
+// Module ID: 15430
+// Function ID: 15431
 // Name: PremiumRewardGradient
-// Dependencies: [19, 17, 21, 4758, 4608, 580, 558, 568, 4462, 4693, 4611, 5198, 5881, 2]
+// Dependencies: [19, 17, 21, 4790, 4640, 580, 558, 568, 4494, 4725, 4643, 5230, 5913, 2]
 
-// Module 15420 (PremiumRewardGradient)
+// Module 15430 (PremiumRewardGradient)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import _modDef5881 from "module_5881" /* 5881 */;
+import useToken from "useToken" /* 4494 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import _modDef5913 from "module_5913" /* 5913 */;
 import noop from "module_19" /* 19 */;
 
-const design_shared = tmp(4611);
+const design_shared = tmp(4643);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ wrapper: { position: "relative", overflow: "hidden" }, fill: { position: "absolute", left: 0, right: 0, bottom: 0, height: "100%" }, glow: { position: "absolute", left: 0, right: 0, bottom: 0, height: "50%" }, glowLight: { opacity: 0.5 } });
 const start = { x: 0, y: 0.5 };
 const end = { x: 1, y: 0.5 };
 const start2 = { x: 0.5, y: 0 };
 const end2 = { x: 0.5, y: 1 };
-fn(4608);
-const ColorUtils = fn(4608);
+fn(4640);
+const ColorUtils = fn(4640);
 const hexOpacityToRgbaResult = ColorUtils.hexOpacityToRgba("#000000", 0);
-createStyles = fn(4758);
+createStyles = fn(4790);
 let closure_13 = createStyles.createStyleProperties({ transparentBlack: hexOpacityToRgbaResult, opaqueBlack: nativeDefault.colors.BLACK, transparentWhite: ColorUtils.hexOpacityToRgba("#FFFFFF", 0), opaqueWhite: nativeDefault.colors.WHITE });
 let ReactCompilerGating = fn(558);
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -110,14 +110,14 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   tmp24 = tmp27;
                 }
                 const obj3 = { style: tmp4.fill, colors: tmp11, start: start2, end: end2, pointerEvents: "none" };
-                const tmp23 = timestampProducer(tmp7(5198), obj3);
+                const tmp23 = timestampProducer(tmp7(5230), obj3);
                 cResult[14] = tmp4.fill;
                 cResult[15] = tmp11;
                 cResult[16] = tmp23;
                 tmp19 = tmp23;
               }
               const obj4 = { style: tmp4.fill, colors: tmp5, start, end, pointerEvents: "none" };
-              const tmp18 = timestampProducer(tmp7(5198), obj4);
+              const tmp18 = timestampProducer(tmp7(5230), obj4);
               cResult[11] = tmp5;
               cResult[12] = tmp4.fill;
               cResult[13] = tmp18;
@@ -209,7 +209,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
         const obj2 = { style: React4.absoluteFill, colors: ["transparent", "black"], start: start2, end: end2 };
-        const tmp18 = timestampProducer(tmp6(5198), obj2);
+        const tmp18 = timestampProducer(tmp6(5230), obj2);
         cResult[8] = tmp18;
         let tmp13 = tmp18;
       } else {
@@ -217,7 +217,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[9] !== tmp5) {
         const obj3 = { style: React4.absoluteFill, colors: tmp5, start, end };
-        const tmp24 = timestampProducer(tmp6(5198), obj3);
+        const tmp24 = timestampProducer(tmp6(5230), obj3);
         cResult[9] = tmp5;
         cResult[10] = tmp24;
         let tmp19 = tmp24;
@@ -247,7 +247,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp28 = tmp31;
       }
       const obj5 = { style: tmp11, maskElement: tmp13, children: tmp19 };
-      const tmp27 = timestampProducer(tmp6(5881), obj5);
+      const tmp27 = timestampProducer(tmp6(5913), obj5);
       cResult[11] = tmp11;
       cResult[12] = tmp19;
       cResult[13] = tmp27;
@@ -282,7 +282,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const obj3 = { style: items1, maskElement: timestampProducer(LinearGradientDefault, { style: React4.absoluteFill, colors: ["transparent", "black"], start: start2, end: end2 }), children: timestampProducer(LinearGradientDefault, { style: React4.absoluteFill, colors: tmp2, start, end }) };
   items1[1] = glowLight;
-  const items2 = [timestampProducer(_modDef5881, obj3), children];
+  const items2 = [timestampProducer(_modDef5913, obj3), children];
   obj2.children = items2;
   return tmp7(tmp8, obj2);
 });

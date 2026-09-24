@@ -1,20 +1,20 @@
-// Module ID: 16706
-// Function ID: 16707
+// Module ID: 16716
+// Function ID: 16717
 // Name: useYouBarCoachmark
-// Dependencies: [32, 19, 4580, 2042, 558, 568, 1119, 2031, 4497, 13389, 14981, 1489, 13967, 4787, 504, 7632, 16707, 10452, 2]
+// Dependencies: [32, 19, 4612, 2042, 558, 568, 1119, 2031, 4529, 13425, 15016, 1489, 14003, 4819, 504, 7664, 16717, 10491, 2]
 
-// Module 16706 (useYouBarCoachmark)
+// Module 16716 (useYouBarCoachmark)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import Link from "Link" /* 1489 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import PrivateProfilesExperiment from "PrivateProfilesExperiment" /* 13389 */;
-import TinyBroncoLazy from "TinyBroncoLazy" /* 14981 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import PrivateProfilesExperiment from "PrivateProfilesExperiment" /* 13425 */;
+import TinyBroncoLazy from "TinyBroncoLazy" /* 15016 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 
 require = fn;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
@@ -143,14 +143,14 @@ export const useYouBarCoachmark = ReactCompilerGating.isReactCompilerEnabled() ?
         return tmp2;
       }
     }
-    const tmpResult4 = tmp(7632);
-    [tmp17, tmp18] = tmp(7632).useSelectedDismissibleContent(tmp12);
+    const tmpResult4 = tmp(7664);
+    [tmp17, tmp18] = tmp(7664).useSelectedDismissibleContent(tmp12);
     if (cResult[6] === tmp18) {
       if (cResult[9] === tmp18) {
         if (cResult[10] === tmp17) {
           let tmp22 = cResult[11];
         }
-        const privateProfileCoachmarkProps = tmp(16707).usePrivateProfileCoachmarkProps(tmp22);
+        const privateProfileCoachmarkProps = tmp(16717).usePrivateProfileCoachmarkProps(tmp22);
         class C {
           constructor() {
             obj = closure_1_0(closure_1_1[12]);
@@ -161,8 +161,8 @@ export const useYouBarCoachmark = ReactCompilerGating.isReactCompilerEnabled() ?
           }
         }
         const coachmark = obj10.useCoachmark(animatedRef, privateProfileCoachmarkProps);
-        const tmpResult5 = tmp(16707);
-        const coachmark1 = tmp(10452).useCoachmark(animatedRef, tmp21);
+        const tmpResult5 = tmp(16717);
+        const coachmark1 = tmp(10491).useCoachmark(animatedRef, tmp21);
         if (cResult[12] === animatedRef) {
           if (cResult[13] === tmp18) {
             if (cResult[14] === tmp17) {
@@ -177,7 +177,7 @@ export const useYouBarCoachmark = ReactCompilerGating.isReactCompilerEnabled() ?
         cResult[14] = tmp17;
         cResult[15] = obj6;
         tmp27 = obj6;
-        const tmpResult6 = tmp(10452);
+        const tmpResult6 = tmp(10491);
       }
       class C {
         constructor() {
@@ -199,7 +199,7 @@ export const useYouBarCoachmark = ReactCompilerGating.isReactCompilerEnabled() ?
     cResult[6] = tmp18;
     cResult[7] = tmp17;
     cResult[8] = obj7;
-    const tmp16 = _slicedToArray(tmp(7632).useSelectedDismissibleContent(tmp12), 2);
+    const tmp16 = _slicedToArray(tmp(7664).useSelectedDismissibleContent(tmp12), 2);
   }
   tmp12 = closure_6;
 }) : ((isQuestRendered) => {

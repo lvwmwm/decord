@@ -1,26 +1,26 @@
-// Module ID: 15142
-// Function ID: 15143
+// Module ID: 15152
+// Function ID: 15153
 // Name: FamilyCenterActivityBanner
-// Dependencies: [19, 17, 21, 4758, 558, 568, 8921, 8922, 15143, 580, 1119, 2486, 12050, 15150, 15151, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 8953, 8954, 15153, 580, 1119, 2486, 12086, 15160, 15161, 4786, 2]
 
-// Module 15142 (FamilyCenterActivityBanner)
+// Module 15152 (FamilyCenterActivityBanner)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import _modDef2486 from "module_2486" /* 2486 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useUserLinks from "useUserLinks" /* 8921 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8922 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 12050 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useUserLinks from "useUserLinks" /* 8953 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8954 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 12086 */;
 import noop from "module_19" /* 19 */;
 
-const FamilyCenterBannerButton = tmp(15143);
+const FamilyCenterBannerButton = tmp(15153);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ container: { width: "100%" } });
 let ReactCompilerGating = fn(558);
 let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -67,7 +67,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   return tmp6;
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj4 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: 16, padding: 24, alignItems: "center", borderRadius: nativeDefault.radii.md, elevation: 2 }, art: null, header: null, description: null };
 let obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: 16, padding: 24, alignItems: "center", borderRadius: nativeDefault.radii.md, elevation: 2 };
 obj4.art = { maxWidth: 243, maxHeight: 119, marginBottom: nativeDefault.space.PX_8 };
@@ -113,7 +113,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = useAgeSpecificText;
   const ageSpecificText1 = useAgeSpecificText.useAgeSpecificText(tmp13, tmp14);
-  const tmp4Result = importDefault(tmp5 ? 15150 : 15151);
+  const tmp4Result = importDefault(tmp5 ? 15160 : 15161);
   if (cResult[4] === tmp6.art) {
     if (cResult[5] === tmp4Result) {
       let tmp19 = cResult[6];
@@ -162,14 +162,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         tmp31 = tmp34;
       }
       const obj4 = { style: tmp6.description, variant: "text-sm/medium", color: "text-muted", children: ageSpecificText1 };
-      const tmp26 = hasOwnProperty(tmp(4754).Text, obj4);
+      const tmp26 = hasOwnProperty(tmp(4786).Text, obj4);
       cResult[10] = ageSpecificText1;
       cResult[11] = tmp6.description;
       cResult[12] = tmp26;
       tmp24 = tmp26;
     }
     const obj5 = { style: tmp6.header, variant: "heading-lg/semibold", children: ageSpecificText };
-    const tmp23 = hasOwnProperty(tmp(4754).Text, obj5);
+    const tmp23 = hasOwnProperty(tmp(4786).Text, obj5);
     cResult[7] = ageSpecificText;
     cResult[8] = tmp6.header;
     cResult[9] = tmp23;
@@ -196,7 +196,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj4 = { style: tmp4.container, children: null };
   const obj5 = { source: null, style: null };
   const ageSpecificText1 = obj3.useAgeSpecificText(intl3.format(_modDef2486.MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" }), intl4.format(_modDef2486.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
-  obj5.source = tmp(tmp3 ? 15150 : 15151);
+  obj5.source = tmp(tmp3 ? 15160 : 15161);
   obj5.style = tmp4.art;
   const items = [hasOwnProperty(React4, obj5), hasOwnProperty(Text_Text.Text, { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText }), hasOwnProperty(Text_Text.Text, { style: tmp4.description, variant: "text-sm/medium", color: "text-muted", children: ageSpecificText1 }), ];
   let tmp13Result = null;

@@ -1,22 +1,22 @@
-// Module ID: 12030
-// Function ID: 12031
+// Module ID: 12066
+// Function ID: 12067
 // Name: AppealIngestionPolicySummary
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 8695, 4608, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 8727, 4640, 1119, 4786, 2]
 
-// Module 12030 (AppealIngestionPolicySummary)
+// Module 12066 (AppealIngestionPolicySummary)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ColorUtils from "ColorUtils" /* 4608 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8695 */;
+import ColorUtils from "ColorUtils" /* 4640 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8727 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { sectionTitle: { marginBottom: 8 }, policy: { marginBottom: 16 }, borderColor: { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY }, userContainer: null };
 let obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj2.userContainer = { marginTop: 8, justifyContent: "flex-start", minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 18 };
@@ -35,20 +35,20 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((classification) 
     description = classification.description;
   }
   if (cResult[0] !== description) {
-    const capitalizeTextResult = tmp(8695).capitalizeText(description);
+    const capitalizeTextResult = tmp(8727).capitalizeText(description);
     cResult[0] = description;
     cResult[1] = capitalizeTextResult;
     let tmp6 = capitalizeTextResult;
-    const tmpResult = tmp(8695);
+    const tmpResult = tmp(8727);
   } else {
     tmp6 = cResult[1];
   }
   if (cResult[2] !== tmp4.borderColor.color) {
-    const hexWithOpacityResult = tmp(4608).hexWithOpacity(tmp4.borderColor.color, 0.08);
+    const hexWithOpacityResult = tmp(4640).hexWithOpacity(tmp4.borderColor.color, 0.08);
     cResult[2] = tmp4.borderColor.color;
     cResult[3] = hexWithOpacityResult;
     let tmp8 = hexWithOpacityResult;
-    const tmpResult2 = tmp(4608);
+    const tmpResult2 = tmp(4640);
   } else {
     tmp8 = cResult[3];
   }
@@ -63,7 +63,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((classification) 
   }
   if (cResult[5] !== tmp4.sectionTitle) {
     const obj2 = { style: sectionTitle, variant: "text-sm/bold", children: tmp10 };
-    const tmp14 = React3(tmp(4754).Text, obj2);
+    const tmp14 = React3(tmp(4786).Text, obj2);
     cResult[5] = tmp4.sectionTitle;
     cResult[6] = tmp14;
     let tmp12 = tmp14;
@@ -84,7 +84,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((classification) 
     }
     if (cResult[12] !== tmp6) {
       const obj4 = { variant: "text-md/semibold", children: tmp6 };
-      const tmp19 = React3(tmp(4754).Text, obj4);
+      const tmp19 = React3(tmp(4786).Text, obj4);
       cResult[12] = tmp6;
       cResult[13] = tmp19;
       let tmp17 = tmp19;

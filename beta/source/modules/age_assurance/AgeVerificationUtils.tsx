@@ -1,32 +1,32 @@
-// Module ID: 4970
-// Function ID: 4971
+// Module ID: 5002
+// Function ID: 5003
 // Name: AgeVerificationUtils
-// Dependencies: [5, 32, 19, 4971, 4972, 502, 4978, 1376, 8730, 8688, 1078, 1103, 8675, 8689, 5643, 558, 1982, 568, 504, 5642, 8713, 12058, 577, 8687, 8680, 8694, 8548, 1119, 3038, 14035, 2]
+// Dependencies: [5, 32, 19, 5003, 5004, 502, 5010, 1376, 8762, 8720, 1078, 1103, 8707, 8721, 5675, 558, 1982, 568, 504, 5674, 8745, 12094, 577, 8719, 8712, 8726, 8580, 1119, 3038, 14071, 2]
 // Exports: ageGateSourceHasLightboxBackdrop, getAgeVerificationGetStartedSubtitle, getAgeVerificationGetStartedTitle, isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithManualReviewCta, isAgeVerificationMessageWithRetryCta, isAgeVerified, isAssignedByDiscord, isFullscreenAgeVerificationEntryPoint, isVerifiedAdult, isVerifiedTeen, maybePerformReactiveCheck, shouldShowTiggerPawtect, useShouldShowTiggerPawtect
 
-// Module 4970 (AgeVerificationUtils)
+// Module 5002 (AgeVerificationUtils)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import util from "util" /* 1119 */;
 import Server from "Server" /* 1982 */;
 import _modDef3038 from "module_3038" /* 3038 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5642 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5643 */;
-import usePreviousDefault from "usePrevious" /* 8548 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8694 */;
-import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 8713 */;
-import FamilyCenterConnectionPrereqExperiment2 from "FamilyCenterConnectionPrereqExperiment" /* 12058 */;
-import ReactiveCheckActionCreators from "ReactiveCheckActionCreators" /* 14035 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5674 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5675 */;
+import usePreviousDefault from "usePrevious" /* 8580 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8726 */;
+import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 8745 */;
+import FamilyCenterConnectionPrereqExperiment2 from "FamilyCenterConnectionPrereqExperiment" /* 12094 */;
+import ReactiveCheckActionCreators from "ReactiveCheckActionCreators" /* 14071 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 4971 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 4972 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 5003 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5004 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MessageStore from "MessageStore" /* 4978 */;
+import MessageStore from "MessageStore" /* 5010 */;
 import UserStore from "UserStore" /* 1376 */;
-import AgeVerificationStore from "AgeVerificationStore" /* 8730 */;
+import AgeVerificationStore from "AgeVerificationStore" /* 8762 */;
 
 const require = globalThis.__r;
 
@@ -207,7 +207,7 @@ function shouldCallReactiveCheck() {
   }
   let tmp7 = !tmp5;
   if (!tmp5) {
-    let isFeatureAgeGatedResult = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(5643).AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(5675).AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
       isFeatureAgeGatedResult = AgeVerificationStore.shouldCallReactiveCheck();
     }
@@ -268,13 +268,13 @@ let closure_27 = async function _maybePerformReactiveCheck(arg0, value) {
     }
   }
 };
-fn(8688).FULLSCREEN_AGE_VERIFICATION_ENTRY_POINTS;
+fn(8720).FULLSCREEN_AGE_VERIFICATION_ENTRY_POINTS;
 const Constants = fn(1078);
 ({ AbortCodes: map1, MessageEmbedTypes: closure_14 } = Constants);
 const AgeGateConstants = fn(1103);
 ({ AgeGateSource, REACTIVE_CHECK_AGE_GATE_SOURCES: closure_15 } = AgeGateConstants);
-const SafetyToastType = fn(8675).SafetyToastType;
-let items = [fn(8689).AgeVerificationModalEntryPoint.STAGE_CHANNEL_AGE_VERIFICATION_PROMPT, fn(8689).AgeVerificationModalEntryPoint.START_STAGE_PROMPT, fn(8689).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND];
+const SafetyToastType = fn(8707).SafetyToastType;
+let items = [fn(8721).AgeVerificationModalEntryPoint.STAGE_CHANNEL_AGE_VERIFICATION_PROMPT, fn(8721).AgeVerificationModalEntryPoint.START_STAGE_PROMPT, fn(8721).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND];
 const set = new Set(items);
 let items1 = [, , , , , ];
 ({ NSFW_SERVER: arr2[0], NSFW_SERVER_INVITE: arr2[1], NSFW_SERVER_INVITE_EMBED: arr2[2], LARGE_GUILD: arr2[3], JOIN_LARGE_GUILD_UNDERAGE: arr2[4], ACCESS_LARGE_GUILD_UNDERAGE: arr2[5] } = AgeGateSource);
@@ -879,7 +879,7 @@ export const useIsAssignedByDiscord = tmp10;
 export const useShowAssignedAgeGroupSettings = tmp11;
 export const AgeVerificationSystemNotificationEmbedKeys = obj7;
 export const AgeVerificationSystemNotificationCtaTypes = obj8;
-export const AgeVerificationSystemNotificationContentType = { VERIFIED_ADULT: "verified_adult", VERIFIED_TEEN: "verified_teen", ERROR: "error", FAE_FAILED: "fae_failed", ID_FAILED: "id_failed", UNDERAGE: "underage" };
+export const AgeVerificationSystemNotificationContentType = { VERIFIED_ADULT: "verified_adult", VERIFIED_TEEN: "verified_teen", ERROR: "error", FAE_FAILED: "fae_failed", ID_FAILED: "id_failed", UNDERAGE: "underage", MANUAL_REVIEW_SUBMITTED: "manual_review_submitted" };
 export const isAgeVerificationMessageWithRetryCta = function isAgeVerificationMessageWithRetryCta(channel_id, id) {
   const message = MessageStore.getMessage(channel_id, id);
   if (null != message) {

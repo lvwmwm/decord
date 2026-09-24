@@ -1,19 +1,19 @@
-// Module ID: 11161
-// Function ID: 11162
+// Module ID: 11197
+// Function ID: 11198
 // Name: UnifiedGiftModalRecipientSelectScreen
-// Dependencies: [19, 17, 11162, 21, 4758, 580, 558, 568, 1488, 11163, 11129, 2]
+// Dependencies: [19, 17, 11198, 21, 4790, 580, 558, 568, 1488, 11199, 11165, 2]
 
-// Module 11161 (UnifiedGiftModalRecipientSelectScreen)
+// Module 11197 (UnifiedGiftModalRecipientSelectScreen)
 import nativeDefault from "native" /* 580 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 11129 */;
-import SearchableUserListDefault from "SearchableUserList" /* 11163 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 11165 */;
+import SearchableUserListDefault from "SearchableUserList" /* 11199 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const UserRowModes = fn(11162).UserRowModes;
+const UserRowModes = fn(11198).UserRowModes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, paddingTop: 16, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -44,7 +44,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((setRecipientUser
     cResult[5] = tmp10;
     tmp7 = tmp10;
   }
-  const tmp6 = jsx(navigation(11163), {
+  const tmp6 = jsx(navigation(11199), {
     onSelectUser(arg0) {
       setRecipientUser(arg0);
       navigation.navigate(UnifiedGiftModalTypes.UnifiedGiftModalScreens.GIFT_DETAIL);

@@ -1,10 +1,10 @@
-// Module ID: 11124
-// Function ID: 11125
+// Module ID: 11160
+// Function ID: 11161
 // Name: UnsupportedFeatureModal
-// Dependencies: [19, 17, 21, 558, 568, 4961, 5839, 7246, 4754, 1119, 2]
+// Dependencies: [19, 17, 21, 558, 568, 4993, 5871, 7278, 4786, 1119, 2]
 
-// Module 11124 (UnsupportedFeatureModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
+// Module 11160 (UnsupportedFeatureModal)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -31,11 +31,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = cResult[1];
   }
   if (cResult[2] !== tmp4) {
-    const headerCloseButton = tmp(5839).getHeaderCloseButton(tmp4);
+    const headerCloseButton = tmp(5871).getHeaderCloseButton(tmp4);
     cResult[2] = tmp4;
     cResult[3] = headerCloseButton;
     let tmp5 = headerCloseButton;
-    const tmpResult = tmp(5839);
+    const tmpResult = tmp(5871);
   } else {
     tmp5 = cResult[3];
   }
@@ -56,13 +56,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj2 = { variant: "text-lg/normal", color: "text-default", children: null };
           const intl = onDismiss(1119).intl;
           obj2.children = intl.string(onDismiss(1119).t.I22zuX);
-          obj.children = jsx(onDismiss(4754).Text, { variant: "text-lg/normal", color: "text-default", children: null });
+          obj.children = jsx(onDismiss(4786).Text, { variant: "text-lg/normal", color: "text-default", children: null });
           return <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 24 }}>{null}</View>;
         }
       }
     }
   };
-  const tmp8 = jsx(onDismiss(7246).Navigator, {
+  const tmp8 = jsx(onDismiss(7278).Navigator, {
     initialRouteName: "Unsupported",
     screens: {
       Unsupported: {
@@ -73,7 +73,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj2 = { variant: "text-lg/normal", color: "text-default", children: null };
           const intl = onDismiss(1119).intl;
           obj2.children = intl.string(onDismiss(1119).t.I22zuX);
-          obj.children = jsx(onDismiss(4754).Text, { variant: "text-lg/normal", color: "text-default", children: null });
+          obj.children = jsx(onDismiss(4786).Text, { variant: "text-lg/normal", color: "text-default", children: null });
           return <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 24 }}>{null}</View>;
         }
       }
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj2 = { Unsupported: null };
   const obj3 = {
     title: onDismiss.title,
-    headerLeft: onDismiss(5839).getHeaderCloseButton(() => {
+    headerLeft: onDismiss(5871).getHeaderCloseButton(() => {
       ModalActionCreatorsDefault.pop();
       if (onDismiss != null) {
         onDismiss();
@@ -100,11 +100,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj2 = { variant: "text-lg/normal", color: "text-default", children: null };
       const intl = onDismiss(1119).intl;
       obj2.children = intl.string(onDismiss(1119).t.I22zuX);
-      obj.children = jsx(onDismiss(4754).Text, { variant: "text-lg/normal", color: "text-default", children: null });
+      obj.children = jsx(onDismiss(4786).Text, { variant: "text-lg/normal", color: "text-default", children: null });
       return <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 24 }}>{null}</View>;
     }
   };
   obj2.Unsupported = obj3;
   obj.screens = obj2;
-  return jsx(onDismiss(7246).Navigator, { initialRouteName: "Unsupported", screens: null });
+  return jsx(onDismiss(7278).Navigator, { initialRouteName: "Unsupported", screens: null });
 });

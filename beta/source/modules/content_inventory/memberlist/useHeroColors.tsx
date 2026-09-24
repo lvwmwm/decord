@@ -1,19 +1,19 @@
-// Module ID: 8407
-// Function ID: 8408
+// Module ID: 8439
+// Function ID: 8440
 // Name: useHeroColors
-// Dependencies: [32, 19, 4750, 1186, 8406, 7799, 8408, 1096, 676, 558, 568, 504, 2]
+// Dependencies: [32, 19, 4782, 1186, 8438, 7831, 8440, 1096, 676, 558, 568, 504, 2]
 // Exports: getHeroColors
 
-// Module 8407 (useHeroColors)
+// Module 8439 (useHeroColors)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import _modDef676 from "module_676" /* 676 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
-import tinycolorDefault from "tinycolor" /* 7799 */;
-import getFallbackHeroColor from "getFallbackHeroColor" /* 8408 */;
+import tinycolorDefault from "tinycolor" /* 7831 */;
+import getFallbackHeroColor from "getFallbackHeroColor" /* 8440 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 
 require = fn;
@@ -56,8 +56,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[5] === stateFromStores1) {
       let tmp12 = cResult[6];
     }
-    const tmpResult8 = tmp(8406);
-    [tmp17, tmp18] = tmp(8406).useAvatarColors(arg0, tmp12);
+    const tmpResult8 = tmp(8438);
+    [tmp17, tmp18] = tmp(8438).useAvatarColors(arg0, tmp12);
     if (cResult[7] === tmp17) {
       if (cResult[8] === tmp18) {
         let tmp19 = cResult[9];
@@ -75,7 +75,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[13] = obj2;
       tmp45 = obj2;
     }
-    const tmp16 = _slicedToArray(tmp(8406).useAvatarColors(arg0, tmp12), 2);
+    const tmp16 = _slicedToArray(tmp(8438).useAvatarColors(arg0, tmp12), 2);
     const hex2intResult = tmp(1096).hex2int(tmp17);
     const tmpResult9 = tmp(1096);
     const hex2intResult1 = tmp(1096).hex2int(tmp18);
@@ -142,9 +142,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items1 = [ThemeStore];
   const stateFromStores1 = first(504).useStateFromStores(items1, () => theme.theme);
   let obj2 = first(504);
-  const fallbackHeroColor = first(8408).getFallbackHeroColor(stateFromStores1, stateFromStores);
-  let obj3 = first(8408);
-  let tmp4 = _slicedToArray(first(8406).useAvatarColors(arg0, fallbackHeroColor), 2);
+  const fallbackHeroColor = first(8440).getFallbackHeroColor(stateFromStores1, stateFromStores);
+  let obj3 = first(8440);
+  let tmp4 = _slicedToArray(first(8438).useAvatarColors(arg0, fallbackHeroColor), 2);
   first = tmp4[0];
   closure_1 = tmp6;
   const items2 = [first, tmp4[1]];
@@ -198,12 +198,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items2);
 });
 export const getHeroColors = function getHeroColors(game_name) {
-  const fallbackHeroColor = num(8408).getFallbackHeroColor(ThemeStore.theme, AccessibilityStore.saturation);
+  const fallbackHeroColor = num(8440).getFallbackHeroColor(ThemeStore.theme, AccessibilityStore.saturation);
   num = 1;
   if (AccessibilityStore.desaturateUserColors) {
     num = tmp.saturation;
   }
-  const useColorStore = tmp2(8406).useColorStore;
+  const useColorStore = tmp2(8438).useColorStore;
   const arr = useColorStore.getState().palette[game_name];
   let mapped;
   if (arr != null) {
@@ -220,7 +220,7 @@ export const getHeroColors = function getHeroColors(game_name) {
     const items = [fallbackHeroColor, fallbackHeroColor];
     mapped = items;
   }
-  let obj = num(8408);
+  let obj = num(8440);
   tmp = AccessibilityStore;
   [tmp7, tmp8] = mapped;
   const tmp6 = _slicedToArray(mapped, 2);

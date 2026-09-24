@@ -1,8 +1,8 @@
-// Module ID: 6719
-// Function ID: 6720
+// Module ID: 6751
+// Function ID: 6752
 // Dependencies: [2]
 
-// Module 6719
+// Module 6751
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SpeakerSpotIllustration-2x.png.js");

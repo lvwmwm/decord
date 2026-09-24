@@ -1,20 +1,20 @@
-// Module ID: 16861
-// Function ID: 16862
+// Module ID: 16871
+// Function ID: 16872
 // Name: ICYMIHeader
-// Dependencies: [19, 17, 21, 16795, 580, 558, 568, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 16805, 580, 558, 568, 1119, 4786, 2]
 
-// Module 16861 (ICYMIHeader)
+// Module 16871 (ICYMIHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createICYMIStyles = fn(16795);
+const createICYMIStyles = fn(16805);
 let closure_7 = createICYMIStyles.createICYMIStyles((margin) => {
   const obj = { text: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: margin.margin }, separator: null };
   const size = { height: 1, width: "100%", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: nativeDefault.space.PX_16 };
@@ -47,7 +47,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[3] !== tmp4.text) {
     const obj3 = { style: tmp4.text, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: tmp9 };
-    const tmp13 = React4(tmp(4754).Text, obj3);
+    const tmp13 = React4(tmp(4786).Text, obj3);
     cResult[3] = tmp4.text;
     cResult[4] = tmp13;
     let tmp11 = tmp13;

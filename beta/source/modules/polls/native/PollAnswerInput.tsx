@@ -1,32 +1,32 @@
-// Module ID: 12371
-// Function ID: 12372
+// Module ID: 12407
+// Function ID: 12408
 // Name: PollAnswerInput
-// Dependencies: [19, 17, 2045, 5107, 8076, 1379, 21, 4758, 580, 558, 568, 12372, 1119, 8008, 1181, 5341, 10436, 9419, 4725, 12373, 1984, 9036, 8876, 4716, 12376, 2]
+// Dependencies: [19, 17, 2045, 5139, 8108, 1379, 21, 4790, 580, 558, 568, 12408, 1119, 8040, 1181, 5373, 10475, 9451, 4757, 12409, 1984, 9068, 8908, 4748, 12412, 2]
 // Exports: default
 
-// Module 12371 (PollAnswerInput)
+// Module 12407 (PollAnswerInput)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import PollsUtils from "PollsUtils" /* 8008 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9419 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10436 */;
-import useRenderPollAnswerImageDefault from "useRenderPollAnswerImage" /* 12372 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import PollsUtils from "PollsUtils" /* 8040 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9451 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10475 */;
+import useRenderPollAnswerImageDefault from "useRenderPollAnswerImage" /* 12408 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Keyboard: closure_4, TouchableOpacity: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const DraftType = fn(5107).DraftType;
-const PollsConstants = fn(8076);
+const DraftType = fn(5139).DraftType;
+const PollsConstants = fn(8108);
 ({ MAX_POLL_ANSWER_LENGTH: closure_9, POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY: c10 } = PollsConstants);
 const EmojiIntention = fn(1379).EmojiIntention;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { defaultContainer: { flexDirection: "row", alignItems: "center" }, defaultImageAndTextContainer: { flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg, flex: 1, overflow: "hidden" }, cannotRemove: { marginRight: 30 }, defaultImageContainer: { width: 60, height: 48, justifyContent: "center", alignItems: "center" }, pollAnswerTextInput: { flex: 1, paddingStart: 0 }, defaultRemoveButtonContainer: null, uploadContainer: null, errorInput: null };
 let obj3 = { flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg, flex: 1, overflow: "hidden" };
 obj2.defaultRemoveButtonContainer = { paddingLeft: 6, height: 48, justifyContent: "center", color: nativeDefault.colors.TEXT_MUTED };
@@ -69,13 +69,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp7 = tmp9;
       }
       const intl2 = tmp(1119).intl;
-      const obj3 = { imageName: tmp(8008).filterOutUUID(str), answerNumber: answerIndex + 1 };
+      const obj3 = { imageName: tmp(8040).filterOutUUID(str), answerNumber: answerIndex + 1 };
       const formatToPlainStringResult1 = intl2.formatToPlainString(tmp(1119).t.vcC7Qn, obj3);
       cResult[3] = answerIndex;
       cResult[4] = str;
       cResult[5] = formatToPlainStringResult1;
       tmp9 = formatToPlainStringResult1;
-      const tmpResult = tmp(8008);
+      const tmpResult = tmp(8040);
     }
   } else {
     if (cResult[0] === answerIndex) {
@@ -131,7 +131,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj5 = { accessibilityRole: "button", accessibilityLabel: tmp7, onPress: openExpressionPicker, onLongPress: tmp17, onLayout: tmp18, style: tmp20, children: cResult[16] };
-          const tmp28 = __initData(tmp(5341).PressableOpacity, obj5);
+          const tmp28 = __initData(tmp(5373).PressableOpacity, obj5);
           cResult[17] = openExpressionPicker;
           cResult[18] = tmp17;
           cResult[19] = tmp7;
@@ -286,7 +286,7 @@ export default function PollAnswerInput(answer) {
       image: answer.image,
       openExpressionPicker,
       openImageInputActionSheet() {
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12373, dependencyMap.paths), v65535, { channelId, index, answer, onSaveAltText: handleSaveAltText, onRemoveAnswerImage, openExpressionPicker });
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12409, dependencyMap.paths), v65535, { channelId, index, answer, onSaveAltText: handleSaveAltText, onRemoveAnswerImage, openExpressionPicker });
       },
       iconSrc: index(channelId[21]),
       containerStyle: tmp.defaultImageContainer,

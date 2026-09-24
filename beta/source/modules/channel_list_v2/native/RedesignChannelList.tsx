@@ -1,31 +1,31 @@
-// Module ID: 16442
-// Function ID: 16443
+// Module ID: 16452
+// Function ID: 16453
 // Name: RedesignChannelList
-// Dependencies: [109, 32, 19, 17, 4750, 7772, 16356, 2067, 2099, 4782, 1078, 21, 558, 568, 1491, 4616, 11472, 16443, 16444, 16471, 16519, 15355, 16361, 16520, 16472, 16522, 7783, 504, 7782, 16523, 16527, 7775, 16528, 11293, 16342, 15356, 16581, 16594, 7319, 12087, 7403, 16440, 16597, 16599, 16603, 16604, 16609, 2070, 16611, 10469, 16619, 12026, 2]
+// Dependencies: [109, 32, 19, 17, 4782, 7804, 16366, 2067, 2099, 4814, 1078, 21, 558, 568, 1491, 4648, 11508, 16453, 16454, 16481, 16529, 15365, 16371, 16530, 16482, 16532, 7815, 504, 7814, 16533, 16537, 7807, 16538, 11329, 16352, 15366, 16591, 16604, 7351, 12123, 7435, 16450, 16607, 16609, 16613, 16614, 16619, 2070, 16621, 10508, 16629, 12062, 2]
 
-// Module 16442 (RedesignChannelList)
+// Module 16452 (RedesignChannelList)
 import c from "c" /* 568 */;
-import ChannelListState from "ChannelListState" /* 7775 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11293 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16361 */;
-import RedesignGuildHeaderDefault from "RedesignGuildHeader" /* 16472 */;
-import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 16519 */;
-import ChannelsUnreadBarsDefault from "ChannelsUnreadBars" /* 16520 */;
-import renderRedesignChannelListItem from "renderRedesignChannelListItem" /* 16528 */;
-import GuildUpsellChannelListDefault from "GuildUpsellChannelList" /* 16604 */;
-import GuildsEmptyDefault from "GuildsEmpty" /* 16609 */;
-import NsfwGateGuildSidebarDefault from "NsfwGateGuildSidebar" /* 16619 */;
+import ChannelListState from "ChannelListState" /* 7807 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11329 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16371 */;
+import RedesignGuildHeaderDefault from "RedesignGuildHeader" /* 16482 */;
+import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 16529 */;
+import ChannelsUnreadBarsDefault from "ChannelsUnreadBars" /* 16530 */;
+import renderRedesignChannelListItem from "renderRedesignChannelListItem" /* 16538 */;
+import GuildUpsellChannelListDefault from "GuildUpsellChannelList" /* 16614 */;
+import GuildsEmptyDefault from "GuildsEmpty" /* 16619 */;
+import NsfwGateGuildSidebarDefault from "NsfwGateGuildSidebar" /* 16629 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
-import ChannelListStore from "ChannelListStore" /* 7772 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 16356 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import ChannelListStore from "ChannelListStore" /* 7804 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 16366 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4782 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4814 */;
 
-const TTIFirstContentfulPaint = tmp(12026);
+const TTIFirstContentfulPaint = tmp(12062);
 require = fn;
 let closure_3 = ["selectedGuildId", "selectedChannelId"];
 const View = fn(17).View;
@@ -50,7 +50,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     c0 = -1;
     navigation = navigation.addListener("tabPress", (arg0) => {
       let timeout = arg0;
-      if (null != obj.coerceGuildsRoute(navigation(11472)())) {
+      if (null != obj.coerceGuildsRoute(navigation(11508)())) {
         if (-1 === timeout) {
           const _clearTimeout2 = clearTimeout;
           clearTimeout(timeout);
@@ -99,7 +99,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     c0 = -1;
     navigation = navigation.addListener("tabPress", (arg0) => {
       let timeout = arg0;
-      if (null != obj.coerceGuildsRoute(navigation(11472)())) {
+      if (null != obj.coerceGuildsRoute(navigation(11508)())) {
         if (-1 === timeout) {
           const _clearTimeout2 = clearTimeout;
           clearTimeout(timeout);
@@ -759,7 +759,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedGuildI
         if (tmpResult6.isFavoritesGuildId(tmp6)) {
           const _Symbol = Symbol;
           if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmpResult7 = tmp(16611);
+            const tmpResult7 = tmp(16621);
             cResult[14] = tmpResult7;
             let tmp30 = tmpResult7;
           } else {
@@ -820,7 +820,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedGuildI
             cResult[27] = tmp24;
             tmp18 = tmp24;
           }
-          tmpResult8 = tmp(10469);
+          tmpResult8 = tmp(10508);
         }
         tmpResult6 = tmp(2070);
       }
@@ -859,7 +859,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedGuildI
           obj4.guild = stateFromStores;
           obj4.selectedChannelId = selectedChannelId;
           obj4.selectedVoiceChannelId = stateFromStores1;
-          return closure_16(tmp2(16611).default, obj4);
+          return closure_16(tmp2(16621).default, obj4);
         } else {
           if (tmp2Result2.shouldNSFWGateGuild(selectedGuildId)) {
             const obj5 = { style: merged.style, guildId: selectedGuildId };

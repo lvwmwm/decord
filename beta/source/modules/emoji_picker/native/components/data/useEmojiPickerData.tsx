@@ -1,21 +1,21 @@
-// Module ID: 10478
-// Function ID: 10479
+// Module ID: 10514
+// Function ID: 10515
 // Name: useEmojiPickerData
-// Dependencies: [19, 5678, 5682, 10439, 558, 504, 10479, 10480, 10481, 10483, 2]
+// Dependencies: [19, 5710, 5714, 10478, 558, 504, 10515, 10516, 10517, 10519, 2]
 // Exports: default
 
-// Module 10478 (useEmojiPickerData)
-import getEmojiPickerDataRowItemNativeSectionDefault from "getEmojiPickerDataRowItemNativeSection" /* 10479 */;
-import getEmojiPickerDataRowPremiumInlineRoadblockDefault from "getEmojiPickerDataRowPremiumInlineRoadblock" /* 10480 */;
-import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 10481 */;
-import getEmojiPickerDataRowItemSlimEmojiDefault from "getEmojiPickerDataRowItemSlimEmoji" /* 10483 */;
+// Module 10514 (useEmojiPickerData)
+import getEmojiPickerDataRowItemNativeSectionDefault from "getEmojiPickerDataRowItemNativeSection" /* 10515 */;
+import getEmojiPickerDataRowPremiumInlineRoadblockDefault from "getEmojiPickerDataRowPremiumInlineRoadblock" /* 10516 */;
+import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 10517 */;
+import getEmojiPickerDataRowItemSlimEmojiDefault from "getEmojiPickerDataRowItemSlimEmoji" /* 10519 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5678 */;
+import EmojiStore from "EmojiStore" /* 5710 */;
 
 require = fn;
-const LoadState = fn(5678).LoadState;
-const EmojiCategoryTypes = fn(5682).EmojiCategoryTypes;
-let closure_7 = fn(10439).EmojiPickerRenderingDataType;
+const LoadState = fn(5710).LoadState;
+const EmojiCategoryTypes = fn(5714).EmojiCategoryTypes;
+let closure_7 = fn(10478).EmojiPickerRenderingDataType;
 const EmojiPickerItemType = { PLACEHOLDER: 0, [0]: "PLACEHOLDER", TITLE: 1, [1]: "TITLE", EMOJI_ROW: 2, [2]: "EMOJI_ROW", EMOJI_ROW_SLIM: 3, [3]: "EMOJI_ROW_SLIM", EMOJI_ROW_NSFW: 4, [4]: "EMOJI_ROW_NSFW", FOOTER_UPSELL: 5, [5]: "FOOTER_UPSELL", PREMIUM_INLINE_ROADBLOCK: 6, [6]: "PREMIUM_INLINE_ROADBLOCK", NATIVE_SECTION: 7, [7]: "NATIVE_SECTION" };
 let ReactCompilerGating = fn(558);
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();

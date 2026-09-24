@@ -1,16 +1,16 @@
-// Module ID: 12253
-// Function ID: 12254
+// Module ID: 12289
+// Function ID: 12290
 // Name: NoPermsState
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4610, 4693, 12254, 12255, 12181, 9519, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4642, 4725, 12290, 12291, 12217, 9551, 1119, 4786, 2]
 
-// Module 12253 (NoPermsState)
+// Module 12289 (NoPermsState)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import shared from "shared" /* 4610 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12181 */;
+import shared from "shared" /* 4642 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12217 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { paddingVertical: 16, paddingHorizontal: 24, gap: 12, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, alignItems: "center", justifyContent: "flex-start", display: "flex", flexDirection: "row" }, textContainer: { flexShrink: 1 }, image: { width: 64, height: 64 } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -29,8 +29,8 @@ const result = size.fileFinishedImporting("modules/app_launcher/native/screens/h
 export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(10);
   const tmp4 = closure_7();
-  const tmp5Result = importDefault(shared.isThemeLight(useThemeDefault()) ? 12254 : 12255);
-  const logAppLauncherEmptyStateView = AppLauncherNativeUtils.useLogAppLauncherEmptyStateView(tmp(9519).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  const tmp5Result = importDefault(shared.isThemeLight(useThemeDefault()) ? 12290 : 12291);
+  const logAppLauncherEmptyStateView = AppLauncherNativeUtils.useLogAppLauncherEmptyStateView(tmp(9551).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   if (cResult[0] === tmp5Result) {
     if (cResult[1] === tmp4.image) {
       let tmp9 = cResult[2];
@@ -46,7 +46,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[4] !== tmp4.textContainer) {
       const obj3 = { style: tmp4.textContainer, variant: "text-sm/medium", color: "text-muted", children: tmp12 };
-      const tmp16 = hasOwnProperty(tmp(4754).Text, obj3);
+      const tmp16 = hasOwnProperty(tmp(4786).Text, obj3);
       cResult[4] = tmp4.textContainer;
       cResult[5] = tmp16;
       let tmp14 = tmp16;
@@ -78,8 +78,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp9 = tmp10;
 }) : (() => {
   const tmp = closure_7();
-  const tmp4Result = importDefault(shared.isThemeLight(useThemeDefault()) ? 12254 : 12255);
-  const logAppLauncherEmptyStateView = AppLauncherNativeUtils.useLogAppLauncherEmptyStateView(tmp2(9519).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  const tmp4Result = importDefault(shared.isThemeLight(useThemeDefault()) ? 12290 : 12291);
+  const logAppLauncherEmptyStateView = AppLauncherNativeUtils.useLogAppLauncherEmptyStateView(tmp2(9551).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   const obj2 = { style: tmp.container, children: null };
   const items = [hasOwnProperty(React4, { style: tmp.image, resizeMode: "contain", source: tmp4Result }), ];
   const obj4 = { style: tmp.textContainer, variant: "text-sm/medium", color: "text-muted", children: null };

@@ -1,13 +1,13 @@
-// Module ID: 6826
-// Function ID: 6827
+// Module ID: 6858
+// Function ID: 6859
 // Name: WumpusMahjongSpotIllustration
-// Dependencies: [21, 558, 568, 6827, 5802, 2]
+// Dependencies: [21, 558, 568, 6859, 5834, 2]
 
-// Module 6826 (WumpusMahjongSpotIllustration)
+// Module 6858 (WumpusMahjongSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6827 from "module_6827" /* 6827 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6859 from "module_6859" /* 6859 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const WumpusMahjongSpotIllustration = ReactCompilerGating.isReactCompiler
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6827 };
+    const obj2 = { uri: _modDef6859 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const WumpusMahjongSpotIllustration = ReactCompilerGating.isReactCompiler
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6827 };
+  const obj2 = { uri: _modDef6859 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

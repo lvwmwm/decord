@@ -1,21 +1,21 @@
-// Module ID: 12187
-// Function ID: 12188
+// Module ID: 12223
+// Function ID: 12224
 // Name: useActivityShelfItem
-// Dependencies: [5, 2044, 2008, 1078, 9312, 558, 568, 9520, 1368, 9735, 12188, 12189, 1982, 9133, 9716, 9715, 7415, 4389, 7409, 9590, 9567, 4771, 11642, 9633, 2]
+// Dependencies: [5, 2044, 2008, 1078, 9344, 558, 568, 9552, 1368, 9767, 12224, 12225, 1982, 9165, 9748, 9747, 7447, 4421, 7441, 9622, 9599, 4803, 11678, 9665, 2]
 // Exports: getStaffReleasePhase
 
-// Module 12187 (useActivityShelfItem)
+// Module 12223 (useActivityShelfItem)
 import c from "c" /* 568 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4389 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7415 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9133 */;
-import getPlatformDefault from "getPlatform" /* 9520 */;
-import canLaunchFrame from "canLaunchFrame" /* 9590 */;
-import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 9715 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 9716 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9735 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12189 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4421 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7447 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9165 */;
+import getPlatformDefault from "getPlatform" /* 9552 */;
+import canLaunchFrame from "canLaunchFrame" /* 9622 */;
+import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 9747 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 9748 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9767 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12225 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 
@@ -38,8 +38,8 @@ function useOnActivityItemSelected(arg0) {
     str = "";
   }
   let tmp = customId({ context, applicationId: str, fetchesApplication });
-  analyticsLocations = context(7409)().analyticsLocations;
-  closure_14 = context(9716)();
+  analyticsLocations = context(7441)().analyticsLocations;
+  closure_14 = context(9748)();
   obj = canLaunchFrame;
   closure_15 = obj.canLaunchFrame(application);
   if (null == application) {
@@ -275,7 +275,7 @@ function useOnActivityItemSelected(arg0) {
 }
 const STAFF_RELEASE_PHASES = fn(2008).STAFF_RELEASE_PHASES;
 const ApplicationFlags = fn(1078).ApplicationFlags;
-const MAIN_SURFACE = fn(9312).MAIN_SURFACE;
+const MAIN_SURFACE = fn(9344).MAIN_SURFACE;
 const ActivityAction = { START: 0, [0]: "START", JOIN: 1, [1]: "JOIN", LEAVE: 2, [2]: "LEAVE" };
 fn(558);
 const ReactCompilerGating = fn(558);
@@ -307,7 +307,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
   if (null == getOrFetchApplication) {
     return START;
   } else {
-    const getEmbeddedActivityLocationChannelId = tmp(4389).getEmbeddedActivityLocationChannelId;
+    const getEmbeddedActivityLocationChannelId = tmp(4421).getEmbeddedActivityLocationChannelId;
     if (tmp8 != null) {
       const _location = tmp8.location;
     }
@@ -327,7 +327,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
     if (null != tmp13) {
       JOIN = tmp5.JOIN;
     }
-    const tmpResult2 = tmp(4389);
+    const tmpResult2 = tmp(4421);
   }
 }) : ((applicationId) => {
   ({ context, fetchesApplication } = applicationId);
@@ -374,7 +374,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
 let closure_9 = tmp3;
 function getStaffReleasePhase(application, arg1) {
   if (!obj.hasApplicationFlag(application, ApplicationFlags.EMBEDDED_RELEASED)) {
-    const tmpResult = tmp(9133);
+    const tmpResult = tmp(9165);
   }
   obj = ApplicationFlagUtils;
   const tmpResult2 = PlatformUtils;
@@ -429,7 +429,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[4] === num3) {
         let tmp10 = cResult[5];
       }
-      const tmp11 = tmp5(9735)(tmp10);
+      const tmp11 = tmp5(9767)(tmp10);
       if (cResult[6] === activity.activity_preview_video_asset_id) {
         if (cResult[7] === application.id) {
           let tmp12 = cResult[8];
@@ -438,7 +438,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if ("channel" === context.type) {
           channel = context.channel;
         }
-        const tmp5ResultResult = tmp5(12189)(channel);
+        const tmp5ResultResult = tmp5(12225)(channel);
         if (cResult[9] === application.id) {
           if (cResult[10] === tmp5ResultResult) {
             if (cResult[14] === application.id) {
@@ -495,21 +495,21 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             }
                             if (tmpResult4.hasApplicationFlag(application, ApplicationFlags.EMBEDDED_RELEASED)) {
                               const tmpResult5 = tmp(1368);
-                              const str2 = activityItem.activity.client_platform_config[tmp5(9520)(undefined, tmpResult5.getOS(tmpResult5))].release_phase;
+                              const str2 = activityItem.activity.client_platform_config[tmp5(9552)(undefined, tmpResult5.getOS(tmpResult5))].release_phase;
                               let replaced;
                               if (STAFF_RELEASE_PHASES.includes(str2)) {
                                 replaced = str2.replace("_", " ").replace(/(^\w|\s\w)/g, (str) => str.toUpperCase());
                                 const str5 = str2.replace("_", " ");
                               }
-                              const tmp5Result2 = tmp5(9520);
+                              const tmp5Result2 = tmp5(9552);
                             } else {
-                              const tmpResult6 = tmp(9133);
+                              const tmpResult6 = tmp(9165);
                             }
                             cResult[26] = activityItem.activity;
                             cResult[27] = application;
                             cResult[28] = tmp28;
                             tmp26 = tmp28;
-                            tmpResult4 = tmp(9133);
+                            tmpResult4 = tmp(9165);
                           }
                         }
                       }
@@ -556,7 +556,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[9] = application.id;
         cResult[10] = tmp5ResultResult;
         cResult[11] = found;
-        const tmp5Result = tmp5(12189);
+        const tmp5Result = tmp5(12225);
       }
       if (null != activity.activity_preview_video_asset_id) {
         class N {
@@ -608,7 +608,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp9 = null;
   const obj2 = { applicationId: application.id, size: num, names: assetNames, format: "webp" };
   if (null != activity.activity_preview_video_asset_id) {
-    tmp9 = tmp(12188)(application.id, activity.activity_preview_video_asset_id);
+    tmp9 = tmp(12224)(application.id, activity.activity_preview_video_asset_id);
   }
   let channel;
   const tmp8 = useEmbeddedActivityBackgroundDefault({ applicationId: application.id, size: num, names: assetNames, format: "webp" });
@@ -624,16 +624,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp14 = useOnActivityItemSelected(obj4);
   if (tmp4Result.hasApplicationFlag(application, ApplicationFlags.EMBEDDED_RELEASED)) {
     const tmp4Result3 = tmp4(1368);
-    const str = activityItem.activity.client_platform_config[tmp(9520)(undefined, tmp4Result3.getOS(tmp4Result3))].release_phase;
+    const str = activityItem.activity.client_platform_config[tmp(9552)(undefined, tmp4Result3.getOS(tmp4Result3))].release_phase;
     let replaced;
     if (STAFF_RELEASE_PHASES.includes(str)) {
       replaced = str.replace("_", " ").replace(/(^\w|\s\w)/g, (str) => str.toUpperCase());
       const str4 = str.replace("_", " ");
     }
     const tmp16 = replaced;
-    const tmpResult2 = tmp(9520);
+    const tmpResult2 = tmp(9552);
   } else {
-    const tmp4Result4 = tmp4(9133);
+    const tmp4Result4 = tmp4(9165);
   }
   const obj5 = { imageBackground: tmp8, videoUrl: tmp9, joinableEmbeddedApp: found, activityAction: tmp13, onActivityItemSelected: tmp14, labelType: null, staffReleasePhase: null };
   if (tmp7) {

@@ -1,12 +1,12 @@
-// Module ID: 15270
-// Function ID: 15271
+// Module ID: 15280
+// Function ID: 15281
 // Name: BountiesModal
-// Dependencies: [19, 21, 558, 568, 15271, 15272, 15321, 11911, 11453, 2]
+// Dependencies: [19, 21, 558, 568, 15281, 15282, 15331, 11947, 11489, 2]
 
-// Module 15270 (BountiesModal)
-import BountiesModalTypes from "BountiesModalTypes" /* 15271 */;
-import BountiesModalContentScrollDefault from "BountiesModalContentScroll" /* 15272 */;
-import BountiesModalContentDefault from "BountiesModalContent" /* 15321 */;
+// Module 15280 (BountiesModal)
+import BountiesModalTypes from "BountiesModalTypes" /* 15281 */;
+import BountiesModalContentScrollDefault from "BountiesModalContentScroll" /* 15282 */;
+import BountiesModalContentDefault from "BountiesModalContent" /* 15331 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

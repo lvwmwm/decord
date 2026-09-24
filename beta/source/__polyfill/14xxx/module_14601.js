@@ -1,15 +1,7 @@
 // Module ID: 14601
 // Function ID: 14602
-// Dependencies: [14580]
+// Dependencies: []
 
 // Module 14601
-import _mod14580 from "module_14580" /* 14580 */;
 
-const tmp = _mod14580.navigator && _mod14580.navigator.userAgent;
-let str = "";
-if (tmp) {
-  const _String = String;
-  str = String(tmp);
-}
-
-export default str;
+export const calendars = ["buddhist", "chinese", "coptic", "dangi", "ethioaa", "ethiopic", "gregory", "hebrew", "indian", "islamic", "islamic-civil", "islamic-rgsa", "islamic-tbla", "islamic-umalqura", "islamicc", "iso8601", "japanese", "persian", "roc"];

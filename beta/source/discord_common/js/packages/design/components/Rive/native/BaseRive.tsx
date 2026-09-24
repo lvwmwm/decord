@@ -1,14 +1,14 @@
-// Module ID: 4491
-// Function ID: 4492
+// Module ID: 4523
+// Function ID: 4524
 // Name: BaseRive
-// Dependencies: [19, 17, 21, 4492, 4481, 4540, 4541, 4542, 558, 568, 2]
+// Dependencies: [19, 17, 21, 4524, 4513, 4572, 4573, 4574, 558, 568, 2]
 // Exports: useArtboardBinding
 
-// Module 4491 (BaseRive)
+// Module 4523 (BaseRive)
 import c from "c" /* 568 */;
-import DataBindByName from "DataBindByName" /* 4492 */;
-import ManaContext from "ManaContext" /* 4540 */;
-import useRivePlayback from "useRivePlayback" /* 4541 */;
+import DataBindByName from "DataBindByName" /* 4524 */;
+import ManaContext from "ManaContext" /* 4572 */;
+import useRivePlayback from "useRivePlayback" /* 4573 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -96,7 +96,7 @@ const forwardRefResult = noop.forwardRef(function BaseRiveInner(renderDataBindin
   let riveFile = DataBindByName.useRiveFile(src, tmp3).riveFile;
   const rive = DataBindByName.useRive();
   const riveViewRef = rive.riveViewRef;
-  const enabled = noop.useContext(tmp(4481).AccessibilityPreferencesContext).reducedMotion.enabled;
+  const enabled = noop.useContext(tmp(4513).AccessibilityPreferencesContext).reducedMotion.enabled;
   const tmpResult = DataBindByName;
   const experiments = ManaContext.useManaContext().experiments;
   let flag;
@@ -131,7 +131,7 @@ const forwardRefResult = noop.forwardRef(function BaseRiveInner(renderDataBindin
   let instance = DataBindByName.useViewModelInstance(tmp11, { artboardName: artboard, instanceName: memo }).instance;
   let None = instance;
   if (instance == null) {
-    None = tmp(4492).DataBindMode.None;
+    None = tmp(4524).DataBindMode.None;
   }
   let reducedMotion;
   if (artboardProperties[artboard] != null) {
@@ -191,14 +191,14 @@ const forwardRefResult = noop.forwardRef(function BaseRiveInner(renderDataBindin
     }
     const merged = Object.assign(obj9);
     if (null != fit) {
-      const obj10 = { fit: tmp(4542).FIT_MAP[fit] };
+      const obj10 = { fit: tmp(4574).FIT_MAP[fit] };
       let obj11 = obj10;
     } else {
       obj11 = {};
     }
     const merged1 = Object.assign(obj11);
     if (null != alignment) {
-      const obj12 = { alignment: tmp(4542).ALIGNMENT_MAP[alignment] };
+      const obj12 = { alignment: tmp(4574).ALIGNMENT_MAP[alignment] };
       let obj13 = obj12;
     } else {
       obj13 = {};
@@ -211,7 +211,7 @@ const forwardRefResult = noop.forwardRef(function BaseRiveInner(renderDataBindin
       obj15 = {};
     }
     const merged3 = Object.assign(obj15);
-    timestampProducer(tmp(4492).RiveView, obj7);
+    timestampProducer(tmp(4524).RiveView, obj7);
   }
 });
 ReactCompilerGating = fn(558);

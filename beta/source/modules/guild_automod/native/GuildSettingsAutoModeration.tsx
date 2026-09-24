@@ -1,27 +1,27 @@
-// Module ID: 17943
-// Function ID: 17944
+// Module ID: 17953
+// Function ID: 17954
 // Name: GuildSettingsAutoModeration
-// Dependencies: [32, 19, 17944, 17946, 1078, 21, 4758, 580, 17948, 1119, 558, 568, 1488, 17951, 17959, 5796, 5903, 4754, 5186, 2112, 8876, 7286, 2]
+// Dependencies: [32, 19, 17954, 17956, 1078, 21, 4790, 580, 17958, 1119, 558, 568, 1488, 17961, 17969, 5828, 5935, 4786, 5218, 2112, 8908, 7318, 2]
 
-// Module 17943 (GuildSettingsAutoModeration)
+// Module 17953 (GuildSettingsAutoModeration)
 import nativeDefault from "native" /* 580 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5796 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17948 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5828 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17958 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const AutomodStore = fn(17944);
+const AutomodStore = fn(17954);
 ({ useAutomodRulesList: closure_4, useSyncAutomodRulesEffect: hasOwnProperty } = AutomodStore);
-let closure_6 = fn(17946).useAutomodEditingRuleState;
+let closure_6 = fn(17956).useAutomodEditingRuleState;
 const Constants = fn(1078);
 ({ GuildSettingsSections: closure_7, HelpdeskArticles: closure_8 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { stack: { marginTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING }, loading: null };
 let obj3 = { marginTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
 obj2.loading = { paddingVertical: nativeDefault.space.PX_24 };
@@ -617,7 +617,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         if (AutomodTriggerConfigs.AutomodTriggerCategory.MEMBERS === tmp) {
           const intl2 = tmp6(1119).intl;
           let stringResult = intl2.string(tmp6(1119).t.sx4E5v);
-        } else if (tmp6(17948).AutomodTriggerCategory.CONTENT === tmp) {
+        } else if (tmp6(17958).AutomodTriggerCategory.CONTENT === tmp) {
           const intl = tmp6(1119).intl;
           stringResult = intl.string(tmp6(1119).t.fphZb0);
         }

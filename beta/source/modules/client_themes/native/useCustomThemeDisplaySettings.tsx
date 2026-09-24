@@ -1,9 +1,9 @@
-// Module ID: 4692
-// Function ID: 4693
+// Module ID: 4724
+// Function ID: 4725
 // Name: useCustomThemeDisplaySettings
 // Dependencies: [32, 1231, 558, 568, 504, 1232, 2]
 
-// Module 4692 (useCustomThemeDisplaySettings)
+// Module 4724 (useCustomThemeDisplaySettings)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import _slicedToArray from "module_32" /* 32 */;

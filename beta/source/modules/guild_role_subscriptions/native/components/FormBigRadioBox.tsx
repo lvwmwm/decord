@@ -1,22 +1,22 @@
-// Module ID: 18189
-// Function ID: 18190
+// Module ID: 18199
+// Function ID: 18200
 // Name: FormBigRadioBox
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4479, 1181, 4754, 10017, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4511, 1181, 4786, 10056, 2]
 
-// Module 18189 (FormBigRadioBox)
+// Module 18199 (FormBigRadioBox)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4479 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 10017 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4511 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 10056 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, alignSelf: "stretch", alignItems: "flex-start", padding: 16 }, containerSelected: null, indicator: null, iconContainer: null, iconContainerSelected: null, title: null, disabled: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, alignSelf: "stretch", alignItems: "flex-start", padding: 16 };
 obj2.containerSelected = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BRAND };
@@ -45,7 +45,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     if (cResult[1] === selected) {
       let tmp6 = cResult[2];
     }
-    const radioA11yNative = tmp(4479).useRadioA11yNative(tmp6);
+    const radioA11yNative = tmp(4511).useRadioA11yNative(tmp6);
     ({ accessibilityRole, accessibilityState } = radioA11yNative);
     let containerSelected = selected;
     if (selected) {
@@ -94,7 +94,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
                   }
                   if (cResult[22] !== description) {
                     const obj3 = { variant: "text-sm/medium", color: "interactive-text-default", children: description };
-                    const tmp25 = React4(tmp(4754).Text, obj3);
+                    const tmp25 = React4(tmp(4786).Text, obj3);
                     cResult[22] = description;
                     cResult[23] = tmp25;
                     let tmp23 = tmp25;
@@ -135,7 +135,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
                   tmp26 = tmp29;
                 }
                 const obj5 = { style: tmp5.title, accessibilityRole: "header", variant: "text-md/semibold", color: "interactive-text-default", children: title };
-                const tmp22 = React4(tmp(4754).Text, obj5);
+                const tmp22 = React4(tmp(4786).Text, obj5);
                 cResult[19] = tmp5.title;
                 cResult[20] = title;
                 cResult[21] = tmp22;
@@ -170,7 +170,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     cResult[6] = disabled2;
     cResult[7] = items2;
     tmp8 = items2;
-    const tmpResult = tmp(4479);
+    const tmpResult = tmp(4511);
   }
   const obj8 = { selected, disabled: tmp4 };
   cResult[0] = tmp4;

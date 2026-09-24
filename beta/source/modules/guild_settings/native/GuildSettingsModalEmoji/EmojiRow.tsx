@@ -1,18 +1,18 @@
-// Module ID: 18003
-// Function ID: 18004
+// Module ID: 18013
+// Function ID: 18014
 // Name: GuildSettingsModalEmoji/EmojiRow
-// Dependencies: [32, 19, 17, 2067, 1376, 21, 4758, 580, 1368, 558, 568, 504, 9755, 10511, 4417, 18004, 5173, 4754, 1181, 4458, 1119, 1401, 4910, 4603, 5341, 18006, 5822, 2]
+// Dependencies: [32, 19, 17, 2067, 1376, 21, 4790, 580, 1368, 558, 568, 504, 9787, 10547, 4449, 18014, 5205, 4786, 1181, 4490, 1119, 1401, 4942, 4635, 5373, 18016, 5854, 2]
 
-// Module 18003 (GuildSettingsModalEmoji/EmojiRow)
+// Module 18013 (GuildSettingsModalEmoji/EmojiRow)
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4417 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10511 */;
-import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 18004 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4449 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10547 */;
+import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 18014 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -23,7 +23,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire, Pressable: closure_7 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { flex: { flex: 1 }, flexCenterRow: { flexDirection: "row", alignItems: "center" }, nameContainer: { paddingVertical: 4, borderRadius: nativeDefault.radii.xs, alignItems: "center", flexDirection: "row" }, activeNameContainer: null, usernameContainer: null, emojiText: null, colon: null, username: null, emojiImage: null, overflowIcon: null };
 let PlatformUtils = fn(1368);
 let num = 4;

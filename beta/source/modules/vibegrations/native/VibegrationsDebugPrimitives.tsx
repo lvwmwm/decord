@@ -1,16 +1,16 @@
-// Module ID: 17074
-// Function ID: 17075
+// Module ID: 17084
+// Function ID: 17085
 // Name: VibegrationsDebugPrimitives
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4754, 1119, 3682, 17071, 5188, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4786, 1119, 3714, 17081, 5220, 2]
 
-// Module 17074 (VibegrationsDebugPrimitives)
+// Module 17084 (VibegrationsDebugPrimitives)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 17071 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 17081 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { toolbar: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_12 }, toolbarStatus: { flex: 1 }, section: null, statRow: null, statRowHead: null, statLabel: null, statValue: null, meterTrack: null, meterFill: null, meterFillCritical: null };
 let obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_12 };
 obj2.section = { gap: nativeDefault.space.PX_8 };
@@ -51,7 +51,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const _Symbol = Symbol;
         if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
           const intl3 = tmp(1119).intl;
-          const stringResult = intl3.string(_modDef3682.aw0IJm);
+          const stringResult = intl3.string(_modDef3714.aw0IJm);
           cResult[6] = stringResult;
           let tmp19 = stringResult;
         } else {
@@ -59,7 +59,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[7] !== onRefresh) {
           const obj2 = { variant: "secondary", size: "sm", text: tmp19, onPress: onRefresh };
-          const tmp24 = hasOwnProperty(tmp(5188).Button, obj2);
+          const tmp24 = hasOwnProperty(tmp(5220).Button, obj2);
           cResult[7] = onRefresh;
           cResult[8] = tmp24;
           let tmp22 = tmp24;
@@ -97,17 +97,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else if ("failed" === fetchState) {
     const obj5 = { variant: "text-xs/normal", color: "text-feedback-critical", children: null };
     const intl2 = tmp(1119).intl;
-    obj5.children = intl2.string(_modDef3682["K+FvtM"]);
-    tmp9 = hasOwnProperty(tmp(4754).Text, obj5);
+    obj5.children = intl2.string(_modDef3714["K+FvtM"]);
+    tmp9 = hasOwnProperty(tmp(4786).Text, obj5);
   } else {
     tmp9 = null;
     if (null != generatedAt) {
       const obj6 = { variant: "text-xs/normal", color: "text-muted", children: null };
       const intl = tmp(1119).intl;
-      const obj7 = { time: tmp(17071).formatObservedAt(generatedAt) };
-      obj6.children = intl.formatToPlainString(_modDef3682["4NpaEk"], obj7);
-      tmp9 = hasOwnProperty(tmp(4754).Text, obj6);
-      const tmpResult = tmp(17071);
+      const obj7 = { time: tmp(17081).formatObservedAt(generatedAt) };
+      obj6.children = intl.formatToPlainString(_modDef3714["4NpaEk"], obj7);
+      tmp9 = hasOwnProperty(tmp(4786).Text, obj6);
+      const tmpResult = tmp(17081);
     }
   }
   cResult[0] = fetchState;
@@ -123,7 +123,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else if ("failed" === fetchState) {
     const obj3 = { variant: "text-xs/normal", color: "text-feedback-critical", children: null };
     const intl2 = util.intl;
-    obj3.children = intl2.string(_modDef3682["K+FvtM"]);
+    obj3.children = intl2.string(_modDef3714["K+FvtM"]);
     tmp4Result = tmp4(Text_Text.Text, obj3);
   } else {
     tmp4Result = null;
@@ -131,7 +131,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj4 = { variant: "text-xs/normal", color: "text-muted", children: null };
       const intl = util.intl;
       const obj6 = { time: VibegrationsDebugFormat.formatObservedAt(generatedAt) };
-      obj4.children = intl.formatToPlainString(_modDef3682["4NpaEk"], obj6);
+      obj4.children = intl.formatToPlainString(_modDef3714["4NpaEk"], obj6);
       tmp4Result = tmp4(Text_Text.Text, obj4);
     }
   }
@@ -139,7 +139,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items = [hasOwnProperty(React4, obj2), ];
   const obj7 = { variant: "secondary", size: "sm", text: null, onPress: null };
   const intl3 = util.intl;
-  obj7.text = intl3.string(_modDef3682.aw0IJm);
+  obj7.text = intl3.string(_modDef3714.aw0IJm);
   obj7.onPress = onRefresh.onRefresh;
   items[1] = hasOwnProperty(components_Button_Button.Button, obj7);
   obj.children = items;
@@ -205,7 +205,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp5 = closure_7();
   if (cResult[0] !== label) {
     const obj2 = { variant: "text-sm/normal", color: "text-muted", children: label };
-    const tmp8 = hasOwnProperty(tmp(4754).Text, obj2);
+    const tmp8 = hasOwnProperty(tmp(4786).Text, obj2);
     cResult[0] = label;
     cResult[1] = tmp8;
     let tmp6 = tmp8;
@@ -234,7 +234,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               let tmp19 = null;
               if (null != hint) {
                 const obj3 = { variant: "text-xs/normal", color: "text-muted", children: hint };
-                tmp19 = hasOwnProperty(tmp(4754).Text, obj3);
+                tmp19 = hasOwnProperty(tmp(4786).Text, obj3);
               }
               cResult[13] = hint;
               cResult[14] = tmp19;
@@ -273,7 +273,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj6 = { variant: "text-sm/medium", color: str, style: tmp5.statValue, children: value };
-    const tmp13 = hasOwnProperty(tmp(4754).Text, obj6);
+    const tmp13 = hasOwnProperty(tmp(4786).Text, obj6);
     cResult[5] = tmp5.statValue;
     cResult[6] = str;
     cResult[7] = value;
@@ -349,7 +349,7 @@ export const DebugMeter = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
       }
       if (cResult[8] !== label) {
         const obj3 = { variant: "text-sm/normal", color: "text-muted", children: label };
-        const tmp15 = hasOwnProperty(tmp(4754).Text, obj3);
+        const tmp15 = hasOwnProperty(tmp(4786).Text, obj3);
         cResult[8] = label;
         cResult[9] = tmp15;
         let tmp13 = tmp15;
@@ -448,7 +448,7 @@ export const DebugMeter = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
           tmp23 = tmp26;
         }
         const obj9 = { variant: "text-sm/medium", color: str3, children: combined };
-        const tmp22 = hasOwnProperty(tmp(4754).Text, obj9);
+        const tmp22 = hasOwnProperty(tmp(4786).Text, obj9);
         cResult[13] = str3;
         cResult[14] = combined;
         cResult[15] = tmp22;

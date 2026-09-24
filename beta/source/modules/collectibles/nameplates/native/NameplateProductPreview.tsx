@@ -1,27 +1,27 @@
-// Module ID: 13449
-// Function ID: 13450
+// Module ID: 13485
+// Function ID: 13486
 // Name: NameplateProductPreview
-// Dependencies: [19, 17, 4750, 21, 4758, 580, 558, 568, 8445, 1974, 1119, 4754, 5198, 8452, 8440, 8532, 504, 4603, 4991, 11202, 11203, 1181, 11214, 5822, 2]
+// Dependencies: [19, 17, 4782, 21, 4790, 580, 558, 568, 8477, 1974, 1119, 4786, 5230, 8484, 8472, 8564, 504, 4635, 5023, 11238, 11239, 1181, 11250, 5854, 2]
 
-// Module 13449 (NameplateProductPreview)
+// Module 13485 (NameplateProductPreview)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import utils from "utils" /* 1974 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import TableRow from "TableRow" /* 5822 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8440 */;
-import useShopProductItems from "useShopProductItems" /* 8445 */;
-import useCurrentUser from "useCurrentUser" /* 8452 */;
-import useAvatarDecorationIfNotExpiredDefault from "useAvatarDecorationIfNotExpired" /* 8532 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import TableRow from "TableRow" /* 5854 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8472 */;
+import useShopProductItems from "useShopProductItems" /* 8477 */;
+import useCurrentUser from "useCurrentUser" /* 8484 */;
+import useAvatarDecorationIfNotExpiredDefault from "useAvatarDecorationIfNotExpired" /* 8564 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { position: "relative", flex: 1, justifyContent: "center", overflow: "hidden" }, memberListContainer: { paddingHorizontal: nativeDefault.space.PX_16 }, memberListTitle: null, memberListGradient: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.memberListTitle = { paddingVertical: nativeDefault.space.PX_8 };
@@ -61,11 +61,11 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const stateFromStores = tmp(504).useStateFromStores(tmp11, tmp12);
     if (cResult[5] !== currentUser) {
-      const name = tmp8(4603).getName(currentUser);
+      const name = tmp8(4635).getName(currentUser);
       cResult[5] = currentUser;
       cResult[6] = name;
       let id = name;
-      const tmp8Result = tmp8(4603);
+      const tmp8Result = tmp8(4635);
     } else {
       id = cResult[6];
     }
@@ -77,7 +77,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       tmp16 = cResult[8];
     }
-    if (null == tmp8(4991)(tmp16)) {
+    if (null == tmp8(5023)(tmp16)) {
       if (cResult[12] === tmp9) {
         if (cResult[13] === tmp22) {
           if (cResult[14] === currentUser) {
@@ -92,7 +92,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj4 = { nameplate: previewNameplate, icon: tmp23, label: id, isPreviewRow: true };
-          const tmp28 = timestampProducer(tmp(11214).UserNameplateRow, obj4);
+          const tmp28 = timestampProducer(tmp(11250).UserNameplateRow, obj4);
           cResult[16] = id;
           cResult[17] = previewNameplate;
           cResult[18] = tmp23;
@@ -110,8 +110,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       if (cResult[9] === id) {
       }
-      tmp8 = tmp8(11202);
-      const obj6 = { userId: currentUser.id, userName: id, effectDisplayType: tmp(11203).EffectDisplayType.STATIC, lineClamp: 1, variant: "text-md/semibold" };
+      tmp8 = tmp8(11238);
+      const obj6 = { userId: currentUser.id, userName: id, effectDisplayType: tmp(11239).EffectDisplayType.STATIC, lineClamp: 1, variant: "text-md/semibold" };
       const tmp20 = timestampProducer(tmp8, obj6);
       cResult[9] = id;
       id = currentUser.id;
@@ -248,7 +248,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
         const obj4 = { maxFontSizeMultiplier: 2, variant: "text-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp4.memberListTitle, children: null };
         const items = [tmp26, " \u2014 3"];
         obj4.children = items;
-        const tmp30 = React5(tmp(4754).Text, obj4);
+        const tmp30 = React5(tmp(4786).Text, obj4);
         cResult[13] = tmp4.memberListTitle;
         cResult[14] = tmp30;
         let tmp28 = tmp30;
@@ -290,7 +290,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
           const obj7 = { maxFontSizeMultiplier: 2, variant: "text-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp4.memberListTitle, children: null };
           const items1 = [tmp43, " \u2014 12"];
           obj7.children = items1;
-          const tmp47 = React5(tmp(4754).Text, obj7);
+          const tmp47 = React5(tmp(4786).Text, obj7);
           cResult[23] = tmp4.memberListTitle;
           cResult[24] = tmp47;
           let tmp45 = tmp47;
@@ -504,7 +504,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
     const intl2 = tmp2(1119).intl;
     const items1 = [intl2.string(tmp2(1119).t["yzW/fZ"]), " \u2014 3"];
     obj8.children = items1;
-    items[1] = React5(tmp2(4754).Text, obj8);
+    items[1] = React5(tmp2(4786).Text, obj8);
     const obj9 = { user: nameplateSampleUsers.phibi, start: true };
     items[2] = timestampProducer(closure_10, obj9);
     const obj10 = { previewNameplate: nameplateData, previewAvatarDecoration: firstAvatarDecoration };
@@ -515,7 +515,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
     const intl3 = tmp2(1119).intl;
     const items2 = [intl3.string(tmp2(1119).t["NG43/6"]), " \u2014 12"];
     obj12.children = items2;
-    items[5] = React5(tmp2(4754).Text, obj12);
+    items[5] = React5(tmp2(4786).Text, obj12);
     const obj13 = { user: nameplateSampleUsers.boom, start: true };
     items[6] = timestampProducer(closure_10, obj13);
     obj6.children = items;

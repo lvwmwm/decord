@@ -1,22 +1,22 @@
-// Module ID: 7478
-// Function ID: 7479
+// Module ID: 7510
+// Function ID: 7511
 // Name: StorefrontUtils
-// Dependencies: [19, 2113, 1376, 7479, 1078, 1378, 12, 7480, 1369, 1389, 558, 568, 504, 7473, 7481, 4418, 7488, 2]
+// Dependencies: [19, 2113, 1376, 7511, 1078, 1378, 12, 7512, 1369, 1389, 558, 568, 504, 7505, 7513, 4450, 7520, 2]
 // Exports: isSlayerSkuAvailableOnThisPlatform, transformPriceSetAssignmentToStorefrontPurchaseType, transformStorefrontPricesServer
 
-// Module 7478 (StorefrontUtils)
+// Module 7510 (StorefrontUtils)
 import _modDef12 from "module_12" /* 12 */;
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7473 */;
-import StorefrontTypes from "StorefrontTypes" /* 7480 */;
-import PriceUtils from "PriceUtils" /* 7481 */;
-import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7488 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4450 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7505 */;
+import StorefrontTypes from "StorefrontTypes" /* 7512 */;
+import PriceUtils from "PriceUtils" /* 7513 */;
+import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7520 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
 import UserStore from "UserStore" /* 1376 */;
-import SKUPricesStore from "SKUPricesStore" /* 7479 */;
+import SKUPricesStore from "SKUPricesStore" /* 7511 */;
 
 require = fn;
 function formatSKUPrice(arg0, stateFromStores) {
@@ -87,14 +87,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
   const stateFromStores = sku(504).useStateFromStores(first, tmp7);
   if (cResult[3] !== priceSetAssignmentPurchaseType) {
     if (null == priceSetAssignmentPurchaseType) {
-      let GIFT = tmp(7480).StorefrontPurchaseType.SELF_PURCHASE;
+      let GIFT = tmp(7512).StorefrontPurchaseType.SELF_PURCHASE;
     } else {
       if (constants2.DEFAULT === priceSetAssignmentPurchaseType) {
-        GIFT = tmp(7480).StorefrontPurchaseType.SELF_PURCHASE;
+        GIFT = tmp(7512).StorefrontPurchaseType.SELF_PURCHASE;
       } else if (tmp11.GIFT !== priceSetAssignmentPurchaseType) {
-        GIFT = tmp(7480).StorefrontPurchaseType.SELF_PURCHASE;
+        GIFT = tmp(7512).StorefrontPurchaseType.SELF_PURCHASE;
       }
-      GIFT = tmp(7480).StorefrontPurchaseType.GIFT;
+      GIFT = tmp(7512).StorefrontPurchaseType.GIFT;
     }
     cResult[3] = priceSetAssignmentPurchaseType;
     cResult[4] = GIFT;
@@ -103,7 +103,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
       if (null != stateFromStores) {
         let tmp15 = stateFromStores[tmp10];
         if (tmp15 == null) {
-          tmp15 = stateFromStores[tmp(undefined, 7480).StorefrontPurchaseType.SELF_PURCHASE];
+          tmp15 = stateFromStores[tmp(undefined, 7512).StorefrontPurchaseType.SELF_PURCHASE];
         }
         if (cResult[8] === isOrbPrice) {
           let userPrice;
@@ -150,7 +150,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
       }
       return tmp14;
     }
-    const obj3 = { userPrice: "r", pricesForPurchaseType: "applicationId", purchaseType: cResult[4], storeHasPrice: null != stateFromStores };
+    const obj3 = { userPrice: "r", pricesForPurchaseType: "filter", purchaseType: cResult[4], storeHasPrice: null != stateFromStores };
     cResult[5] = cResult[4];
     cResult[6] = null != stateFromStores;
     cResult[7] = obj3;
@@ -190,7 +190,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
       if (null != stateFromStores) {
         let tmp12 = tmp11[SELF_PURCHASE];
         if (tmp12 == null) {
-          tmp12 = tmp11[tmp4(undefined, 7480).StorefrontPurchaseType.SELF_PURCHASE];
+          tmp12 = tmp11[tmp4(undefined, 7512).StorefrontPurchaseType.SELF_PURCHASE];
         }
         let found;
         if (tmp12 != null) {
@@ -207,7 +207,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
         return obj;
       }
     }
-    const obj2 = { userPrice: "r", pricesForPurchaseType: "applicationId", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores };
+    const obj2 = { userPrice: "r", pricesForPurchaseType: "filter", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores };
     return obj2;
   }, items1);
 });
@@ -338,9 +338,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
               if (StorefrontTypes.StorefrontPromotionRewardType.DISCOUNT === type) {
                 return true;
               } else {
-                if (tmp2(7480).StorefrontPromotionRewardType.FIXED_PRICE !== type) {
-                  if (tmp2(7480).StorefrontPromotionRewardType.ACTION !== type) {
-                    const BENEFIT = tmp2(7480).StorefrontPromotionRewardType.BENEFIT;
+                if (tmp2(7512).StorefrontPromotionRewardType.FIXED_PRICE !== type) {
+                  if (tmp2(7512).StorefrontPromotionRewardType.ACTION !== type) {
+                    const BENEFIT = tmp2(7512).StorefrontPromotionRewardType.BENEFIT;
                   }
                 }
                 return false;
@@ -377,8 +377,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
           }
         }
         if (sku.productLine === constants5.SOCIAL_LAYER_GAME_ITEM) {
-          const price = tmp(7473).getPrice(sku, DEFAULT);
-          const tmpResult4 = tmp(7473);
+          const price = tmp(7505).getPrice(sku, DEFAULT);
+          const tmpResult4 = tmp(7505);
         } else {
           const getPrice = sku.getPrice;
           if (stateFromStores != null) {
@@ -737,7 +737,7 @@ export const useSKUOrbPrice = ReactCompilerGating.isReactCompilerEnabled() ? ((a
           }
           tmp20 = tmp23;
         }
-        const orbPriceFromPrices = tmp(7488).getOrbPriceFromPrices(sku.prices, tmp14);
+        const orbPriceFromPrices = tmp(7520).getOrbPriceFromPrices(sku.prices, tmp14);
         class S {
           constructor() {
             return closure_1_5.getCurrentUser();
@@ -747,7 +747,7 @@ export const useSKUOrbPrice = ReactCompilerGating.isReactCompilerEnabled() ? ((a
         cResult[8] = sku.prices;
         cResult[9] = orbPriceFromPrices;
         tmp21 = orbPriceFromPrices;
-        const tmpResult2 = tmp(7488);
+        const tmpResult2 = tmp(7520);
       }
     }
     return tmp20;

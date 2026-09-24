@@ -1,24 +1,24 @@
-// Module ID: 10177
-// Function ID: 10178
+// Module ID: 10216
+// Function ID: 10217
 // Name: StageViewWithPrompts
-// Dependencies: [19, 17, 1089, 21, 10178, 4758, 558, 568, 1616, 10179, 8683, 4754, 2]
+// Dependencies: [19, 17, 1089, 21, 10217, 4790, 558, 568, 1616, 10218, 8715, 4786, 2]
 
-// Module 10177 (StageViewWithPrompts)
+// Module 10216 (StageViewWithPrompts)
 import c from "c" /* 568 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import FocusedControls from "FocusedControls" /* 10179 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import FocusedControls from "FocusedControls" /* 10218 */;
 import noop from "module_19" /* 19 */;
 
-const StageSparkleDefault = tmp5(8683);
+const StageSparkleDefault = tmp5(8715);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: c3, View: closure_4 } = get_ActivityIndicator);
 const ThemeTypes = fn(1089).ThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-let closure_8 = fn(10178).CALL_ACTION_BAR_HEIGHT + 8;
-const createStyles = fn(4758);
+let closure_8 = fn(10217).CALL_ACTION_BAR_HEIGHT + 8;
+const createStyles = fn(4790);
 const styles = createStyles.createStyles({ scrollView: { flex: 1 }, container: { paddingHorizontal: 16, alignItems: "center" }, sparkle: { marginTop: 48, marginBottom: 16 }, title: { marginTop: 16, marginBottom: 8, textAlign: "center" }, body: { fontSize: 14, textAlign: "center" }, prompts: { marginTop: 24, display: "flex", flexDirection: "column", width: "100%" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -95,14 +95,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp21 = tmp24;
         }
         const obj5 = { style: tmp4.body, variant: "text-sm/medium", color: "text-overlay-light", children: body };
-        const tmp20 = timestampProducer(tmp(4754).Text, obj5);
+        const tmp20 = timestampProducer(tmp(4786).Text, obj5);
         cResult[11] = body;
         cResult[12] = tmp4.body;
         cResult[13] = tmp20;
         tmp18 = tmp20;
       }
       const obj6 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "text-overlay-light", children: title };
-      const tmp17 = timestampProducer(tmp(4754).Text, obj6);
+      const tmp17 = timestampProducer(tmp(4786).Text, obj6);
       cResult[8] = tmp4.title;
       cResult[9] = title;
       cResult[10] = tmp17;

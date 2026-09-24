@@ -1,15 +1,15 @@
-// Module ID: 12792
-// Function ID: 12793
+// Module ID: 12828
+// Function ID: 12829
 // Name: ApplicationIconAndName
-// Dependencies: [21, 4758, 580, 558, 568, 1181, 4754, 2]
+// Dependencies: [21, 4790, 580, 558, 568, 1181, 4786, 2]
 
-// Module 12792 (ApplicationIconAndName)
+// Module 12828 (ApplicationIconAndName)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,7 +69,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp16 = tmp19;
         }
         const obj4 = { variant: textVariant, children: combined };
-        const tmp15 = React3(tmp(4754).Text, obj4);
+        const tmp15 = React3(tmp(4786).Text, obj4);
         cResult[9] = combined;
         cResult[10] = textVariant;
         cResult[11] = tmp15;

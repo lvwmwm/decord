@@ -1,19 +1,19 @@
-// Module ID: 14386
-// Function ID: 14387
+// Module ID: 14424
+// Function ID: 14425
 // Name: Avatar
-// Dependencies: [19, 17, 1078, 1182, 21, 4758, 580, 13324, 14375, 14376, 9092, 8431, 558, 568, 9091, 14377, 5190, 9709, 9710, 14387, 2]
+// Dependencies: [19, 17, 1078, 1182, 21, 4790, 580, 13360, 14413, 14414, 9124, 8463, 558, 568, 9123, 14415, 5222, 9741, 9742, 14425, 2]
 
-// Module 14386 (Avatar)
+// Module 14424 (Avatar)
 import nativeDefault from "native" /* 580 */;
-import IconDefault from "Icon" /* 5190 */;
-import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8431 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9091 */;
-import _modDef9709 from "module_9709" /* 9709 */;
-import _modDef9710 from "module_9710" /* 9710 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 13324 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 14376 */;
-import Status from "Status" /* 14377 */;
-import SpeakerPulseDefault from "SpeakerPulse" /* 14387 */;
+import IconDefault from "Icon" /* 5222 */;
+import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8463 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9123 */;
+import _modDef9741 from "module_9741" /* 9741 */;
+import _modDef9742 from "module_9742" /* 9742 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 13360 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 14414 */;
+import Status from "Status" /* 14415 */;
+import SpeakerPulseDefault from "SpeakerPulse" /* 14425 */;
 import noop from "module_19" /* 19 */;
 
 const CutoutableAvatarImageDefault = CutoutableAvatarImage;
@@ -22,21 +22,21 @@ const StatusDefault = Status;
 require = fn;
 function getStatusSize(arg0) {
   if (CutoutableAvatarImage.AvatarSizes.XXSMALL !== arg0) {
-    if (tmp(13324).AvatarSizes.XSMALL !== arg0) {
-      if (tmp(13324).AvatarSizes.XSMALL_20 !== arg0) {
-        if (tmp(13324).AvatarSizes.SMALL !== arg0) {
-          if (tmp(13324).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
+    if (tmp(13360).AvatarSizes.XSMALL !== arg0) {
+      if (tmp(13360).AvatarSizes.XSMALL_20 !== arg0) {
+        if (tmp(13360).AvatarSizes.SMALL !== arg0) {
+          if (tmp(13360).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
             return React5.REFRESH_MEDIUM_10;
           } else {
-            if (tmp(13324).AvatarSizes.NORMAL !== arg0) {
-              if (tmp(13324).AvatarSizes.TABS_22 !== arg0) {
-                if (tmp(13324).AvatarSizes.LARGE !== arg0) {
-                  if (tmp(13324).AvatarSizes.LARGE_48 !== arg0) {
-                    if (tmp(13324).AvatarSizes.XLARGE !== arg0) {
-                      if (tmp(13324).AvatarSizes.XLARGE_72 !== arg0) {
-                        if (tmp(13324).AvatarSizes.XXLARGE !== arg0) {
-                          if (tmp(13324).AvatarSizes.PROFILE !== arg0) {
-                            if (tmp(13324).AvatarSizes.YOUBAR_60 !== arg0) {
+            if (tmp(13360).AvatarSizes.NORMAL !== arg0) {
+              if (tmp(13360).AvatarSizes.TABS_22 !== arg0) {
+                if (tmp(13360).AvatarSizes.LARGE !== arg0) {
+                  if (tmp(13360).AvatarSizes.LARGE_48 !== arg0) {
+                    if (tmp(13360).AvatarSizes.XLARGE !== arg0) {
+                      if (tmp(13360).AvatarSizes.XLARGE_72 !== arg0) {
+                        if (tmp(13360).AvatarSizes.XXLARGE !== arg0) {
+                          if (tmp(13360).AvatarSizes.PROFILE !== arg0) {
+                            if (tmp(13360).AvatarSizes.YOUBAR_60 !== arg0) {
                               return null;
                             }
                           }
@@ -69,9 +69,9 @@ function getAvatarStatusCutout(arg0) {
       }
       const result = statusSizeOverride / 4;
       if (tmp2) {
-        const statusTypingDimensions = tmp4(14375).getStatusTypingDimensions(statusSizeOverride);
+        const statusTypingDimensions = tmp4(14413).getStatusTypingDimensions(statusSizeOverride);
         ({ width: width3, height: height3 } = statusTypingDimensions);
-        const tmp4Result = tmp4(14375);
+        const tmp4Result = tmp4(14413);
         if (isMobileOnline == null) {
           isMobileOnline = false;
         }
@@ -81,10 +81,10 @@ function getAvatarStatusCutout(arg0) {
         const sum = height3 + 2 * timestampProducer;
         const obj2 = { nativeCutouts: null };
         const size = { shape: null, x: null, y: null, width: null, height: null, cornerRadius: null };
-        size.shape = tmp4(9092).CutoutShape.RoundedRect;
+        size.shape = tmp4(9124).CutoutShape.RoundedRect;
         const diff = tmp6 - width3 - timestampProducer;
         const tmp15Result = getStatusContainerStyleDefault(statusSizeOverride, isMobileOnline, isVROnline);
-        size.x = diff + tmp4(14375).getAnimatedTypingTranslateX(tmp15Result.width);
+        size.x = diff + tmp4(14413).getAnimatedTypingTranslateX(tmp15Result.width);
         size.y = tmp6 - height3 - timestampProducer;
         size.width = width3 + 2 * timestampProducer;
         size.height = sum;
@@ -93,18 +93,18 @@ function getAvatarStatusCutout(arg0) {
         obj2.nativeCutouts = items;
         return obj2;
       } else if (isVROnline) {
-        const vRStatusContainerRect = tmp4(14375).getVRStatusContainerRect(statusSizeOverride);
+        const vRStatusContainerRect = tmp4(14413).getVRStatusContainerRect(statusSizeOverride);
         ({ width: width2, height: height2 } = vRStatusContainerRect);
         const obj3 = { nativeCutouts: null };
-        const size1 = { shape: tmp4(9092).CutoutShape.RoundedRect, x: tmp6 - width2 + result, y: tmp6 - height2 + result, width: width2, height: height2, cornerRadius: vRStatusContainerRect.cornerRadius };
+        const size1 = { shape: tmp4(9124).CutoutShape.RoundedRect, x: tmp6 - width2 + result, y: tmp6 - height2 + result, width: width2, height: height2, cornerRadius: vRStatusContainerRect.cornerRadius };
         const items1 = [size1];
         obj3.nativeCutouts = items1;
         return obj3;
       } else if (isMobileOnline) {
-        const mobileStatusContainerRect = tmp4(14375).getMobileStatusContainerRect(statusSizeOverride);
+        const mobileStatusContainerRect = tmp4(14413).getMobileStatusContainerRect(statusSizeOverride);
         ({ width, height } = mobileStatusContainerRect);
         const obj4 = { nativeCutouts: null };
-        const size2 = { shape: tmp4(9092).CutoutShape.RoundedRect, x: tmp6 - width + result, y: tmp6 - height + result, width, height, cornerRadius: mobileStatusContainerRect.cornerRadius };
+        const size2 = { shape: tmp4(9124).CutoutShape.RoundedRect, x: tmp6 - width + result, y: tmp6 - height + result, width, height, cornerRadius: mobileStatusContainerRect.cornerRadius };
         const items2 = [size2];
         obj4.nativeCutouts = items2;
         return obj4;
@@ -112,7 +112,7 @@ function getAvatarStatusCutout(arg0) {
         const sum1 = statusSizeOverride / 2 + tmp;
         const diff1 = tmp6 - sum1 - 2 * result;
         const obj = { nativeCutouts: null };
-        const point = { shape: tmp4(9092).CutoutShape.Circle, x: diff1, y: diff1, size: 2 * sum1 };
+        const point = { shape: tmp4(9124).CutoutShape.Circle, x: diff1, y: diff1, size: 2 * sum1 };
         const items3 = [point];
         obj.nativeCutouts = items3;
         return obj;
@@ -126,7 +126,7 @@ const StatusConstants = fn(1182);
 ({ STATUS_PADDING: metroRequire, StatusSizes: closure_7 } = StatusConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles((NORMAL) => {
   const obj = { status: { position: "absolute", right: -3, bottom: -3 }, speaking: null, stageSpeaking: null, voiceStatus: null, decoration: null, container: null };
   const rect = { position: "absolute", right: -2, bottom: -2, backgroundColor: "transparent", borderWidth: 4, borderColor: nativeDefault.colors.STATUS_SPEAKING };
@@ -368,7 +368,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
                                                                   const items = [, ];
                                                                   ({ status: arr2[0], voiceStatus: arr2[1] } = closure_20);
                                                                   obj2.style = items;
-                                                                  const obj3 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: _modDef9709, color: nativeDefault.unsafe_rawColors.WHITE };
+                                                                  const obj3 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: _modDef9741, color: nativeDefault.unsafe_rawColors.WHITE };
                                                                   obj2.children = closure_2_8(IconDefault, obj3);
                                                                   let tmp2 = closure_2_8(View, obj2);
                                                                 } else if (mute) {
@@ -376,7 +376,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
                                                                   const items1 = [, ];
                                                                   ({ status: arr[0], voiceStatus: arr[1] } = closure_20);
                                                                   obj.style = items1;
-                                                                  const obj4 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: _modDef9710, color: nativeDefault.unsafe_rawColors.WHITE };
+                                                                  const obj4 = { size: IconDefault.Sizes.REFRESH_SMALL_16, source: _modDef9742, color: nativeDefault.unsafe_rawColors.WHITE };
                                                                   obj.children = closure_2_8(IconDefault, obj4);
                                                                   tmp2 = closure_2_8(View, obj);
                                                                 }
@@ -725,5 +725,5 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
     }
   }
 }));
-export const AvatarSizes = fn(13324).AvatarSizes;
+export const AvatarSizes = fn(13360).AvatarSizes;
 export { getStatusSize };

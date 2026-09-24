@@ -1,18 +1,18 @@
-// Module ID: 17971
-// Function ID: 17972
+// Module ID: 17981
+// Function ID: 17982
 // Name: KeywordFilterTriggerFields
-// Dependencies: [19, 11993, 1078, 21, 558, 568, 1119, 17965, 2112, 5903, 2]
+// Dependencies: [19, 12029, 1078, 21, 558, 568, 1119, 17975, 2112, 5935, 2]
 
-// Module 17971 (KeywordFilterTriggerFields)
+// Module 17981 (KeywordFilterTriggerFields)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import KeywordsRowDefault from "KeywordsRow" /* 17965 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import KeywordsRowDefault from "KeywordsRow" /* 17975 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const Constants = fn(11993);
+const Constants = fn(12029);
 ({ MAX_KEYWORDS_PER_ALLOWLIST_KEYWORD_FILTER_RULE: c3, MAX_KEYWORDS_PER_KEYWORD_FILTER: closure_4 } = Constants);
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsxProd = fn(21);
@@ -137,7 +137,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
           const obj3 = { hasIcons: false, children: null };
           const items = [tmp11, tmp23, tmp32];
           obj3.children = items;
-          const tmp39 = React5(tmp(5903).TableRowGroup, obj3);
+          const tmp39 = React5(tmp(5935).TableRowGroup, obj3);
           cResult[24] = tmp32;
           cResult[25] = tmp11;
           cResult[26] = tmp23;

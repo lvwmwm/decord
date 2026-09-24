@@ -1,17 +1,17 @@
-// Module ID: 16090
-// Function ID: 16091
+// Module ID: 16100
+// Function ID: 16101
 // Name: UserSettingsDesignSystemTooltip
-// Dependencies: [32, 19, 17, 21, 4758, 558, 568, 8608, 10453, 5188, 7446, 4754, 7403, 7371, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 558, 568, 8640, 10492, 5220, 7478, 4786, 7435, 7403, 2]
 
-// Module 16090 (UserSettingsDesignSystemTooltip)
+// Module 16100 (UserSettingsDesignSystemTooltip)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
-import LayerScope from "LayerScope" /* 7403 */;
-import TableSwitchRow from "TableSwitchRow" /* 7446 */;
-import DeviceOrientation from "DeviceOrientation" /* 8608 */;
-import useTooltip from "useTooltip" /* 10453 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
+import LayerScope from "LayerScope" /* 7435 */;
+import TableSwitchRow from "TableSwitchRow" /* 7478 */;
+import DeviceOrientation from "DeviceOrientation" /* 8640 */;
+import useTooltip from "useTooltip" /* 10492 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -19,7 +19,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ container: { padding: 16, flex: 1, alignItems: "center", justifyContent: "center" }, flex: { flex: 1 } });
 let ReactCompilerGating = fn(558);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -112,7 +112,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (cResult[2] === str2) {
       let tmp14 = cResult[3];
     }
-    const tooltip = tmp(10453).useTooltip(ref, tmp14);
+    const tooltip = tmp(10492).useTooltip(ref, tmp14);
     if (cResult[4] !== visible) {
       class N {
         constructor() {
@@ -159,7 +159,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               }
             }
             const obj3 = { label: "Enable Bottom Position", value: first1, onValueChange: tmp10[1] };
-            const tmp28 = hasOwnProperty(tmp(7446).TableSwitchRow, obj3);
+            const tmp28 = hasOwnProperty(tmp(7478).TableSwitchRow, obj3);
             cResult[15] = first1;
             cResult[16] = tmp28;
           } else {
@@ -207,7 +207,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           cResult[21] = tmp35;
         }
         const obj5 = { label: "Unlock Orientation", value: tmp8, onValueChange: tmp9 };
-        const tmp26 = hasOwnProperty(tmp(7446).TableSwitchRow, obj5);
+        const tmp26 = hasOwnProperty(tmp(7478).TableSwitchRow, obj5);
         cResult[12] = tmp8;
         cResult[13] = tmp9;
         cResult[14] = tmp26;
@@ -219,11 +219,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       cResult[11] = tmp23;
     }
     const obj7 = { ref, onPress: tmp16, variant: "primary", text: str, size: "md" };
-    const tmp19 = hasOwnProperty(tmp(5188).Button, obj7);
+    const tmp19 = hasOwnProperty(tmp(5220).Button, obj7);
     cResult[6] = tmp16;
     cResult[7] = str;
     cResult[8] = tmp19;
-    const tmpResult = tmp(10453);
+    const tmpResult = tmp(10492);
   }
   const obj8 = { label: "NEW", position: str2, visible, onPress: first2 };
   cResult[1] = visible;
@@ -287,9 +287,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-sm/normal", style: first, children: null };
-    const items = ["Note: If your tooltip is not displaying or it is not in the right position/zIndex, consider adding or moving an existing", hasOwnProperty(tmp(4754).Text, { variant: "text-sm/bold", children: " <LayerScope/>" }), " on the surface you expect to see the tooltip."];
+    const items = ["Note: If your tooltip is not displaying or it is not in the right position/zIndex, consider adding or moving an existing", hasOwnProperty(tmp(4786).Text, { variant: "text-sm/bold", children: " <LayerScope/>" }), " on the surface you expect to see the tooltip."];
     obj3.children = items;
-    const tmp8 = React5(tmp(4754).Text, obj3);
+    const tmp8 = React5(tmp(4786).Text, obj3);
     cResult[1] = tmp8;
     let tmp5 = tmp8;
   } else {
@@ -312,7 +312,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { children: hasOwnProperty(closure_10, {}) };
-    const tmp8 = hasOwnProperty(tmp(7403).LayerScope, obj2);
+    const tmp8 = hasOwnProperty(tmp(7435).LayerScope, obj2);
     cResult[0] = tmp8;
     let first = tmp8;
   } else {
@@ -320,7 +320,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp4.flex) {
     const obj3 = { style: tmp4.flex, bottom: true, children: first };
-    const tmp11 = hasOwnProperty(tmp(7371).SafeAreaPaddingView, obj3);
+    const tmp11 = hasOwnProperty(tmp(7403).SafeAreaPaddingView, obj3);
     cResult[1] = tmp4.flex;
     cResult[2] = tmp11;
     let tmp9 = tmp11;

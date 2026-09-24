@@ -1,12 +1,12 @@
-// Module ID: 14214
-// Function ID: 14215
+// Module ID: 14251
+// Function ID: 14252
 // Name: GuildBadgeGoat
-// Dependencies: [109, 19, 21, 558, 568, 14189, 8733, 2]
+// Dependencies: [109, 19, 21, 558, 568, 14226, 8765, 2]
 
-// Module 14214 (GuildBadgeGoat)
+// Module 14251 (GuildBadgeGoat)
 import c from "c" /* 568 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14189 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14226 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -51,22 +51,22 @@ export const GuildBadgeGoat = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   if (cResult[5] !== tmp4) {
     const obj2 = { primaryBaseColors, primaryTintColor: tmp4, primaryTintLuminances, primaryLuminanceWeights: items };
-    const transformedBadgeColors = tmp(14189).getTransformedBadgeColors(obj2);
+    const transformedBadgeColors = tmp(14226).getTransformedBadgeColors(obj2);
     cResult[5] = tmp4;
     cResult[6] = transformedBadgeColors;
     let tmp11 = transformedBadgeColors;
-    const tmpResult = tmp(14189);
+    const tmpResult = tmp(14226);
   } else {
     tmp11 = cResult[6];
   }
   const primaryColorsTransformed = tmp11.primaryColorsTransformed;
   if (cResult[7] !== primaryColorsTransformed[1]) {
     const obj3 = { d: "M15 6H13V8H15V6Z", fill: primaryColorsTransformed[1] };
-    const tmp20 = React4(tmp(8733).Path, obj3);
+    const tmp20 = React4(tmp(8765).Path, obj3);
     const obj4 = { d: "M2.99998 6H0.999985V8H2.99998V6Z", fill: primaryColorsTransformed[1] };
-    const tmp21 = React4(tmp(8733).Path, obj4);
+    const tmp21 = React4(tmp(8765).Path, obj4);
     const obj5 = { d: "M9.99998 14H5.99998V5H6.99998V4H8.99998V5H9.99998V14Z", fill: primaryColorsTransformed[1] };
-    const tmp22 = React4(tmp(8733).Path, obj5);
+    const tmp22 = React4(tmp(8765).Path, obj5);
     cResult[7] = primaryColorsTransformed[1];
     cResult[8] = tmp20;
     cResult[9] = tmp21;
@@ -81,17 +81,17 @@ export const GuildBadgeGoat = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   if (cResult[11] !== primaryColorsTransformed[0]) {
     const obj6 = { d: "M10 6V7H9V10H11V11H12V6H10Z", fill: primaryColorsTransformed[0] };
-    const tmp30 = React4(tmp(8733).Path, obj6);
+    const tmp30 = React4(tmp(8765).Path, obj6);
     const obj7 = { d: "M6 6V7H7V10H5V11H4V6H6Z", fill: primaryColorsTransformed[0] };
-    const tmp31 = React4(tmp(8733).Path, obj7);
+    const tmp31 = React4(tmp(8765).Path, obj7);
     const obj8 = { d: "M9.99998 12H5.99998V13H9.99998V12Z", fill: primaryColorsTransformed[0] };
-    const tmp32 = React4(tmp(8733).Path, obj8);
+    const tmp32 = React4(tmp(8765).Path, obj8);
     const obj9 = { d: "M15 7H13V8H15V7Z", fill: primaryColorsTransformed[0] };
-    const tmp33 = React4(tmp(8733).Path, obj9);
+    const tmp33 = React4(tmp(8765).Path, obj9);
     const obj10 = { d: "M2.99998 7H0.999985V8H2.99998V7Z", fill: primaryColorsTransformed[0] };
-    const tmp34 = React4(tmp(8733).Path, obj10);
+    const tmp34 = React4(tmp(8765).Path, obj10);
     const obj11 = { d: "M8.99998 14H6.99998V15H8.99998V14Z", fill: primaryColorsTransformed[0] };
-    const tmp35 = React4(tmp(8733).Path, obj11);
+    const tmp35 = React4(tmp(8765).Path, obj11);
     cResult[11] = primaryColorsTransformed[0];
     cResult[12] = tmp33;
     cResult[13] = tmp34;
@@ -114,31 +114,31 @@ export const GuildBadgeGoat = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp28 = cResult[17];
   }
   if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp62 = React4(tmp(8733).Path, { d: "M9.99998 4H8.99998V5H9.99998V4Z", fill: "#D1CDD5" });
-    const tmp63 = React4(tmp(8733).Path, { d: "M6.99998 4H5.99998V5H6.99998V4Z", fill: "#D1CDD5" });
-    const tmp64 = React4(tmp(8733).Path, { d: "M11 5H9.99998V6H11V5Z", fill: "#D1CDD5" });
-    const tmp65 = React4(tmp(8733).Path, { d: "M5.99998 5H4.99998V6H5.99998V5Z", fill: "#D1CDD5" });
-    const tmp66 = React4(tmp(8733).Path, { d: "M5.99998 5H3.99998V3H2.99998V2H1.99998V1H4.99998V2H5.99998V5Z", fill: "white" });
-    const tmp67 = React4(tmp(8733).Path, { d: "M9.99998 5H12V3H13V2H14V1H11V2H9.99998V5Z", fill: "white" });
-    const tmp68 = React4(tmp(8733).Path, { d: "M12 2H11V3H12V2Z", fill: "#D1CDD5" });
-    const tmp69 = React4(tmp(8733).Path, { d: "M4.99998 2H3.99998V3H4.99998V2Z", fill: "#D1CDD5" });
-    const tmp70 = React4(tmp(8733).Path, { d: "M4.99998 0H1.99998V1H4.99998V0Z", fill: "black" });
-    const tmp71 = React4(tmp(8733).Path, { d: "M14 0H11V1H14V0Z", fill: "black" });
-    const tmp72 = React4(tmp(8733).Path, { d: "M5.99998 9V7H4.99999V9H5.99998Z", fill: "black" });
-    const tmp73 = React4(tmp(8733).Path, { d: "M11 9V7H9.99999V9H11Z", fill: "black" });
-    const tmp74 = React4(tmp(8733).Path, { d: "M8.99998 12H6.99998V13H8.99998V12Z", fill: "black" });
-    const tmp75 = React4(tmp(8733).Path, { d: "M8.99998 10H6.99998V11H8.99998V10Z", fill: "black" });
-    const tmp76 = React4(tmp(8733).Path, { d: "M13 5V3H12V5H11V6H12V11H13V9H15V8H13V6H15V8H16V5H13Z", fill: "black" });
-    const tmp77 = React4(tmp(8733).Path, { d: "M5 5H4V3H3V5H0V8H1V6H3V8H1V9H3V11H4V6H5V5Z", fill: "black" });
-    const tmp78 = React4(tmp(8733).Path, { d: "M11 11V10H10V14H11V12H12V11H11Z", fill: "black" });
-    const tmp79 = React4(tmp(8733).Path, { d: "M9.99998 14H8.99998V15H9.99998V14Z", fill: "black" });
-    const tmp80 = React4(tmp(8733).Path, { d: "M7 15V14H6V15H5V16H9V15H7Z", fill: "black" });
-    const tmp81 = React4(tmp(8733).Path, { d: "M5 10V11H4V12H5V14H6V10H5Z", fill: "black" });
-    const tmp82 = React4(tmp(8733).Path, { d: "M2 2V1H1V3H3V2H2Z", fill: "black" });
-    const tmp83 = React4(tmp(8733).Path, { d: "M5.99998 1H4.99998V2H5.99998V1Z", fill: "black" });
-    const tmp84 = React4(tmp(8733).Path, { d: "M9 2V3H7V2H6V4H10V2H9Z", fill: "black" });
-    const tmp85 = React4(tmp(8733).Path, { d: "M11 1H9.99998V2H11V1Z", fill: "black" });
-    const tmp86 = React4(tmp(8733).Path, { d: "M14 1V2H13V3H15V1H14Z", fill: "black" });
+    const tmp62 = React4(tmp(8765).Path, { d: "M9.99998 4H8.99998V5H9.99998V4Z", fill: "#D1CDD5" });
+    const tmp63 = React4(tmp(8765).Path, { d: "M6.99998 4H5.99998V5H6.99998V4Z", fill: "#D1CDD5" });
+    const tmp64 = React4(tmp(8765).Path, { d: "M11 5H9.99998V6H11V5Z", fill: "#D1CDD5" });
+    const tmp65 = React4(tmp(8765).Path, { d: "M5.99998 5H4.99998V6H5.99998V5Z", fill: "#D1CDD5" });
+    const tmp66 = React4(tmp(8765).Path, { d: "M5.99998 5H3.99998V3H2.99998V2H1.99998V1H4.99998V2H5.99998V5Z", fill: "white" });
+    const tmp67 = React4(tmp(8765).Path, { d: "M9.99998 5H12V3H13V2H14V1H11V2H9.99998V5Z", fill: "white" });
+    const tmp68 = React4(tmp(8765).Path, { d: "M12 2H11V3H12V2Z", fill: "#D1CDD5" });
+    const tmp69 = React4(tmp(8765).Path, { d: "M4.99998 2H3.99998V3H4.99998V2Z", fill: "#D1CDD5" });
+    const tmp70 = React4(tmp(8765).Path, { d: "M4.99998 0H1.99998V1H4.99998V0Z", fill: "black" });
+    const tmp71 = React4(tmp(8765).Path, { d: "M14 0H11V1H14V0Z", fill: "black" });
+    const tmp72 = React4(tmp(8765).Path, { d: "M5.99998 9V7H4.99999V9H5.99998Z", fill: "black" });
+    const tmp73 = React4(tmp(8765).Path, { d: "M11 9V7H9.99999V9H11Z", fill: "black" });
+    const tmp74 = React4(tmp(8765).Path, { d: "M8.99998 12H6.99998V13H8.99998V12Z", fill: "black" });
+    const tmp75 = React4(tmp(8765).Path, { d: "M8.99998 10H6.99998V11H8.99998V10Z", fill: "black" });
+    const tmp76 = React4(tmp(8765).Path, { d: "M13 5V3H12V5H11V6H12V11H13V9H15V8H13V6H15V8H16V5H13Z", fill: "black" });
+    const tmp77 = React4(tmp(8765).Path, { d: "M5 5H4V3H3V5H0V8H1V6H3V8H1V9H3V11H4V6H5V5Z", fill: "black" });
+    const tmp78 = React4(tmp(8765).Path, { d: "M11 11V10H10V14H11V12H12V11H11Z", fill: "black" });
+    const tmp79 = React4(tmp(8765).Path, { d: "M9.99998 14H8.99998V15H9.99998V14Z", fill: "black" });
+    const tmp80 = React4(tmp(8765).Path, { d: "M7 15V14H6V15H5V16H9V15H7Z", fill: "black" });
+    const tmp81 = React4(tmp(8765).Path, { d: "M5 10V11H4V12H5V14H6V10H5Z", fill: "black" });
+    const tmp82 = React4(tmp(8765).Path, { d: "M2 2V1H1V3H3V2H2Z", fill: "black" });
+    const tmp83 = React4(tmp(8765).Path, { d: "M5.99998 1H4.99998V2H5.99998V1Z", fill: "black" });
+    const tmp84 = React4(tmp(8765).Path, { d: "M9 2V3H7V2H6V4H10V2H9Z", fill: "black" });
+    const tmp85 = React4(tmp(8765).Path, { d: "M11 1H9.99998V2H11V1Z", fill: "black" });
+    const tmp86 = React4(tmp(8765).Path, { d: "M14 1V2H13V3H15V1H14Z", fill: "black" });
     cResult[18] = tmp62;
     cResult[19] = tmp63;
     cResult[20] = tmp64;

@@ -1,20 +1,20 @@
-// Module ID: 8146
-// Function ID: 8147
+// Module ID: 8178
+// Function ID: 8179
 // Name: ForumPostMediaUtils
-// Dependencies: [19, 7550, 2045, 4978, 1376, 1078, 4908, 2023, 1389, 1370, 1374, 558, 568, 4982, 1982, 4988, 11, 2]
+// Dependencies: [19, 7582, 2045, 5010, 1376, 1078, 4940, 2023, 1389, 1370, 1374, 558, 568, 5014, 1982, 5020, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal
 
-// Module 8146 (ForumPostMediaUtils)
+// Module 8178 (ForumPostMediaUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import c from "c" /* 568 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
 import FlagUtils from "FlagUtils" /* 1389 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4908 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 4940 */;
 import noop from "module_19" /* 19 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7550 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7582 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import MessageStore from "MessageStore" /* 4978 */;
+import MessageStore from "MessageStore" /* 5010 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
@@ -368,10 +368,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((components) => {
       if (null != components) {
         if (cResult[2] !== components) {
           const _Array = Array;
-          let tmpResult = tmp(4982);
-          const flattenComponentsResult = tmp(4982).flattenComponents(components);
-          const arr = Array.from(tmp(4982).flattenComponents(components).values());
-          found = Array.from(tmp(4982).flattenComponents(components).values()).flatMap((type) => {
+          let tmpResult = tmp(5014);
+          const flattenComponentsResult = tmp(5014).flattenComponents(components);
+          const arr = Array.from(tmp(5014).flattenComponents(components).values());
+          found = Array.from(tmp(5014).flattenComponents(components).values()).flatMap((type) => {
             type = type.type;
             if (require("Server").ComponentType.THUMBNAIL === type) {
               ({ media, spoiler } = type);
@@ -448,7 +448,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((components) => {
           }).filter(tmp(1374).isNotNullish);
           cResult[2] = components;
           cResult[3] = found;
-          const flatMapResult = Array.from(tmp(4982).flattenComponents(components).values()).flatMap((type) => {
+          const flatMapResult = Array.from(tmp(5014).flattenComponents(components).values()).flatMap((type) => {
             type = type.type;
             if (require("Server").ComponentType.THUMBNAIL === type) {
               ({ media, spoiler } = type);
@@ -545,10 +545,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((components) => {
     if (tmp3) {
       if (null != components) {
         const _Array = Array;
-        let tmpResult = tmp(4982);
-        const flattenComponentsResult = tmp(4982).flattenComponents(components);
-        const arr = Array.from(tmp(4982).flattenComponents(components).values());
-        let found = Array.from(tmp(4982).flattenComponents(components).values()).flatMap((type) => {
+        let tmpResult = tmp(5014);
+        const flattenComponentsResult = tmp(5014).flattenComponents(components);
+        const arr = Array.from(tmp(5014).flattenComponents(components).values());
+        let found = Array.from(tmp(5014).flattenComponents(components).values()).flatMap((type) => {
           type = type.type;
           if (require("Server").ComponentType.THUMBNAIL === type) {
             ({ media, spoiler } = type);
@@ -623,7 +623,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((components) => {
             return null;
           }
         }).filter(tmp(1374).isNotNullish);
-        const flatMapResult = Array.from(tmp(4982).flattenComponents(components).values()).flatMap((type) => {
+        const flatMapResult = Array.from(tmp(5014).flattenComponents(components).values()).flatMap((type) => {
           type = type.type;
           if (require("Server").ComponentType.THUMBNAIL === type) {
             ({ media, spoiler } = type);

@@ -1,20 +1,20 @@
-// Module ID: 17517
-// Function ID: 17518
+// Module ID: 17527
+// Function ID: 17528
 // Name: SoundboardHooks
-// Dependencies: [5, 19, 4750, 1186, 17509, 7398, 558, 568, 1482, 504, 4610, 2028, 7582, 2]
+// Dependencies: [5, 19, 4782, 1186, 17519, 7430, 558, 568, 1482, 504, 4642, 2028, 7614, 2]
 
-// Module 17517 (SoundboardHooks)
+// Module 17527 (SoundboardHooks)
 import c from "c" /* 568 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 
 require = fn;
-const SoundboardStyleConstants = fn(17509);
+const SoundboardStyleConstants = fn(17519);
 ({ SOUNDS_PER_ROW: closure_7, SOUND_ROW_PADDING: closure_8 } = SoundboardStyleConstants);
-const ACTION_SHEET_MAX_WIDTH = fn(7398).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(7430).ACTION_SHEET_MAX_WIDTH;
 fn(558);
 const ReactCompilerGating = fn(558);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -97,7 +97,7 @@ export const useMaybeFetchSoundboardSounds = ReactCompilerGating.isReactCompiler
                 const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
                 c1 = 1;
                 c0 = 1;
-                const obj5 = { value: v3(7582).maybeFetchSoundboardSounds(), done: false };
+                const obj5 = { value: v3(7614).maybeFetchSoundboardSounds(), done: false };
                 return obj5;
               }
             } else if (arg0 === 1) {
@@ -184,7 +184,7 @@ export const useMaybeFetchSoundboardSounds = ReactCompilerGating.isReactCompiler
               const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
               c1 = 1;
               c0 = 1;
-              const obj5 = { value: shouldFetch(7582).maybeFetchSoundboardSounds(), done: false };
+              const obj5 = { value: shouldFetch(7614).maybeFetchSoundboardSounds(), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {

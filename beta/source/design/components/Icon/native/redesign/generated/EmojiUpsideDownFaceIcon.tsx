@@ -1,13 +1,13 @@
-// Module ID: 15657
-// Function ID: 15658
+// Module ID: 15667
+// Function ID: 15668
 // Name: EmojiUpsideDownFaceIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 15658, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 15668, 4493, 2]
 
-// Module 15657 (EmojiUpsideDownFaceIcon)
+// Module 15667 (EmojiUpsideDownFaceIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod15658 from "module_15658" /* 15658 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod15668 from "module_15668" /* 15668 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const EmojiUpsideDownFaceIcon = ReactCompilerGating.isReactCompilerEnable
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(15658);
+    const tmpResult = tmp(15668);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const EmojiUpsideDownFaceIcon = ReactCompilerGating.isReactCompilerEnable
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15658, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15668, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

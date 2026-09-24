@@ -1,10 +1,10 @@
-// Module ID: 13300
-// Function ID: 13301
+// Module ID: 13336
+// Function ID: 13337
 // Name: UserProfileActivityCardBadges
-// Dependencies: [19, 17, 1078, 21, 13301, 558, 568, 2]
+// Dependencies: [19, 17, 1078, 21, 13337, 558, 568, 2]
 
-// Module 13300 (UserProfileActivityCardBadges)
-import UserProfileActivityBadges from "UserProfileActivityBadges" /* 13301 */;
+// Module 13336 (UserProfileActivityCardBadges)
+import UserProfileActivityBadges from "UserProfileActivityBadges" /* 13337 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

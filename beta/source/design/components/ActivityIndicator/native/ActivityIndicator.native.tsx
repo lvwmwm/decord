@@ -1,9 +1,9 @@
-// Module ID: 5796
-// Function ID: 5797
+// Module ID: 5828
+// Function ID: 5829
 // Name: ActivityIndicator/ActivityIndicator
-// Dependencies: [109, 17, 21, 558, 568, 4462, 580, 2]
+// Dependencies: [109, 17, 21, 558, 568, 4494, 580, 2]
 
-// Module 5796 (ActivityIndicator/ActivityIndicator)
+// Module 5828 (ActivityIndicator/ActivityIndicator)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

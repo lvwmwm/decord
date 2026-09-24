@@ -1,16 +1,16 @@
-// Module ID: 13445
-// Function ID: 13446
+// Module ID: 13481
+// Function ID: 13482
 // Name: BundleProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 1080, 21, 4758, 580, 558, 568, 13446, 6891, 1119, 7801, 13447, 4754, 2]
+// Dependencies: [32, 19, 17, 1080, 21, 4790, 580, 558, 568, 13482, 6923, 1119, 7833, 13483, 4786, 2]
 
-// Module 13445 (BundleProductDetailsActionSheetPreview)
+// Module 13481 (BundleProductDetailsActionSheetPreview)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7801 */;
-import IndividualProductPreview from "IndividualProductPreview" /* 13447 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6923 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7833 */;
+import IndividualProductPreview from "IndividualProductPreview" /* 13483 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -21,7 +21,7 @@ get_ActivityIndicator = fn(17);
 const ShopCtaEnum = fn(1080).ShopCtaEnum;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { previewContainer: { paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 }, bundleThumbnail: null, selectedRing: null, bundleThumbnailRow: null, bundleContainer: null, bundleInfoContainer: null };
 let size = { width: 56, height: 56, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, overflow: "hidden" };
 obj2.bundleThumbnail = size;
@@ -338,11 +338,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       name = tmp11.skuId;
     }
     if (cResult[4] !== tmp11.type) {
-      const collectibleTypeLabel = tmp(7801).getCollectibleTypeLabel(tmp11.type);
+      const collectibleTypeLabel = tmp(7833).getCollectibleTypeLabel(tmp11.type);
       cResult[4] = tmp11.type;
       cResult[5] = collectibleTypeLabel;
       let tmp19 = collectibleTypeLabel;
-      const tmpResult = tmp(7801);
+      const tmpResult = tmp(7833);
     } else {
       tmp19 = cResult[5];
     }
@@ -368,7 +368,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               ({ bundleContainer, bundleInfoContainer } = tmp4);
               if (cResult[17] !== product.name) {
                 const obj2 = { variant: "heading-xl/bold", children: product.name };
-                const tmp29 = __initData(tmp(4754).Text, obj2);
+                const tmp29 = __initData(tmp(4786).Text, obj2);
                 cResult[17] = product.name;
                 cResult[18] = tmp29;
                 let tmp27 = tmp29;
@@ -387,7 +387,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
               if (cResult[21] !== tmp30) {
                 const obj5 = { variant: "text-sm/medium", color: "text-default", children: tmp30 };
-                const tmp34 = __initData(tmp(4754).Text, obj5);
+                const tmp34 = __initData(tmp(4786).Text, obj5);
                 cResult[21] = tmp30;
                 cResult[22] = tmp34;
                 let tmp32 = tmp34;
@@ -411,7 +411,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             const obj6 = { variant: "text-sm/medium", color: "text-muted", children: null };
                             const _HermesInternal = HermesInternal;
                             obj6.children = " - " + tmp19;
-                            tmp44 = __initData(tmp(4754).Text, obj6);
+                            tmp44 = __initData(tmp(4786).Text, obj6);
                           }
                           cResult[32] = tmp19;
                           cResult[33] = tmp44;
@@ -476,7 +476,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         const obj10 = { variant: "text-sm/medium", color: "text-default", children: null };
                         const items5 = [name, tmp43];
                         obj10.children = items5;
-                        const tmp49 = __initData2(tmp(4754).Text, obj10);
+                        const tmp49 = __initData2(tmp(4786).Text, obj10);
                         cResult[34] = name;
                         cResult[35] = tmp43;
                         cResult[36] = tmp49;
@@ -507,7 +507,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj13 = { product: tmp22, width, handlePreviewPress, onTrackPress };
-        const tmp26 = __initData(tmp(13447).IndividualProductPreview, obj13);
+        const tmp26 = __initData(tmp(13483).IndividualProductPreview, obj13);
         cResult[12] = tmp22;
         cResult[13] = handlePreviewPress;
         cResult[14] = onTrackPress;

@@ -1,18 +1,18 @@
-// Module ID: 10665
-// Function ID: 10666
+// Module ID: 10701
+// Function ID: 10702
 // Name: GIFPickerSearchSuggestions
-// Dependencies: [19, 17, 10657, 21, 4758, 580, 558, 568, 504, 1119, 4754, 5188, 2]
+// Dependencies: [19, 17, 10693, 21, 4790, 580, 558, 568, 504, 1119, 4786, 5220, 2]
 
-// Module 10665 (GIFPickerSearchSuggestions)
+// Module 10701 (GIFPickerSearchSuggestions)
 import nativeDefault from "native" /* 580 */;
 import noop from "module_19" /* 19 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 10657 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 10693 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { suggestionsContainer: { justifyContent: "center", flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_8 }, footerSuggestionsContainer: null, footerSuggestionsTitle: null };
 let obj3 = { justifyContent: "center", flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_8 };
 obj.footerSuggestionsContainer = { justifyContent: "flex-start", paddingVertical: nativeDefault.space.PX_16 };
@@ -57,7 +57,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onClic
     }
     if (cResult[3] !== tmp4.footerSuggestionsTitle) {
       const obj2 = { style: footerSuggestionsTitle, variant: "text-md/medium", color: "text-default", children: tmp8 };
-      const tmp12 = closure_5(tmp(4754).Text, obj2);
+      const tmp12 = closure_5(tmp(4786).Text, obj2);
       cResult[3] = tmp4.footerSuggestionsTitle;
       cResult[4] = tmp12;
       let tmp10 = tmp12;
@@ -148,12 +148,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onClic
     const obj3 = { style: tmp.footerSuggestionsTitle, variant: "text-md/medium", color: "text-default", children: null };
     const intl = tmp2(1119).intl;
     obj3.children = intl.string(tmp2(1119).t["3JGJo2"]);
-    const items1 = [closure_5(tmp2(4754).Text, obj3), ];
+    const items1 = [closure_5(tmp2(4786).Text, obj3), ];
     const obj4 = {
       style: tmp.suggestionsContainer,
       children: stateFromStoresArray.map((text) => {
           closure_0 = text;
-          return closure_1_5(onClickSuggestion(5188).Button, {
+          return closure_1_5(onClickSuggestion(5220).Button, {
             size: "sm",
             variant: "secondary",
             hitSlop: nativeDefault.space.PX_8,

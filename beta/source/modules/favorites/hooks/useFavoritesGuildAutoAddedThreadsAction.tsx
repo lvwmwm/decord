@@ -1,10 +1,10 @@
-// Module ID: 16479
-// Function ID: 16480
+// Module ID: 16489
+// Function ID: 16490
 // Name: useFavoritesGuildAutoAddedThreadsAction
-// Dependencies: [19, 1376, 2048, 558, 568, 10606, 504, 10605, 1119, 3328, 2]
+// Dependencies: [19, 1376, 2048, 558, 568, 10642, 504, 10641, 1119, 3360, 2]
 
-// Module 16479 (useFavoritesGuildAutoAddedThreadsAction)
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10605 */;
+// Module 16489 (useFavoritesGuildAutoAddedThreadsAction)
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10641 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
@@ -17,7 +17,7 @@ let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGui
 export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = hasAccess(568).c(13);
   let obj = hasAccess(568);
-  hasAccess = hasAccess(10606).useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
+  hasAccess = hasAccess(10642).useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
     const fn = function n() {
@@ -38,7 +38,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     [tmp4, tmp5] = cResult;
   }
-  const obj2 = hasAccess(10606);
+  const obj2 = hasAccess(10642);
   if (hasAccess) {
     hasAccess = tmpResult.useStateFromStores(tmp4, tmp5);
   }
@@ -94,8 +94,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = fn2;
   tmp11 = fn2;
 }) : (() => {
-  hasAccess = hasAccess(10606).useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
-  let obj = hasAccess(10606);
+  hasAccess = hasAccess(10642).useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
+  let obj = hasAccess(10642);
   const items = [UserStore];
   if (hasAccess) {
     hasAccess = obj2.useStateFromStores(items, () => {
@@ -121,9 +121,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }, items2);
   const intl = tmp(1119).intl;
-  obj3.label = intl.string(stateFromStores(3328).DIyQIF);
+  obj3.label = intl.string(stateFromStores(3360).DIyQIF);
   const intl2 = tmp(1119).intl;
-  obj3.subLabel = intl2.string(stateFromStores(3328).g2vHYJ);
+  obj3.subLabel = intl2.string(stateFromStores(3360).g2vHYJ);
   obj3.toggle = callback;
   return obj3;
 });

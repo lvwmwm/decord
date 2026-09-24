@@ -1,22 +1,22 @@
-// Module ID: 15823
-// Function ID: 15824
+// Module ID: 15833
+// Function ID: 15834
 // Name: CopyClientInfoSetting
-// Dependencies: [11557, 21, 1367, 4725, 11918, 7436, 4457, 558, 568, 7396, 1119, 7445, 7449, 4704, 4737, 11594, 5757, 2023, 2]
+// Dependencies: [11593, 21, 1367, 4757, 11954, 7468, 4489, 558, 568, 7428, 1119, 7477, 7481, 4736, 4769, 11630, 5789, 2023, 2]
 // Exports: getClientInfoString
 
-// Module 15823 (CopyClientInfoSetting)
+// Module 15833 (CopyClientInfoSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import ToastUtils from "ToastUtils" /* 4457 */;
-import CopyIcon from "CopyIcon" /* 4704 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import DeviceUtils from "DeviceUtils" /* 4737 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import ClipboardUtils from "ClipboardUtils" /* 7436 */;
-import ActionSheetRow from "ActionSheetRow" /* 7445 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11918 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11557 */;
+import ToastUtils from "ToastUtils" /* 4489 */;
+import CopyIcon from "CopyIcon" /* 4736 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import DeviceUtils from "DeviceUtils" /* 4769 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import ClipboardUtils from "ClipboardUtils" /* 7468 */;
+import ActionSheetRow from "ActionSheetRow" /* 7477 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11954 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11593 */;
 import ClientInfoUtils from "ClientInfoUtils" /* 1367 */;
 
 require = fn;
@@ -79,7 +79,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let obj2 = { title: null };
     const intl = tmp(1119).intl;
     obj2.title = intl.string(tmp(1119).t.Na2lF9);
-    const tmp6 = React4(tmp(7396).BottomSheetTitleHeader, obj2);
+    const tmp6 = React4(tmp(7428).BottomSheetTitleHeader, obj2);
     cResult[0] = tmp6;
     let first = tmp6;
   } else {
@@ -106,7 +106,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const result = ToastUtils.presentCopiedToClipboard();
         }
     };
-    const tmp14 = React4(tmp(7445).ActionSheetRow, obj3);
+    const tmp14 = React4(tmp(7477).ActionSheetRow, obj3);
     cResult[3] = tmp14;
     let tmp12 = tmp14;
   } else {
@@ -133,7 +133,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const result = ToastUtils.presentCopiedToClipboard();
         }
     };
-    const tmp22 = React4(tmp(7445).ActionSheetRow, obj4);
+    const tmp22 = React4(tmp(7477).ActionSheetRow, obj4);
     cResult[6] = tmp22;
     let tmp20 = tmp22;
   } else {
@@ -160,7 +160,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const result = ToastUtils.presentCopiedToClipboard();
         }
     };
-    const tmp30 = React4(tmp(7445).ActionSheetRow, obj5);
+    const tmp30 = React4(tmp(7477).ActionSheetRow, obj5);
     cResult[9] = tmp30;
     let tmp28 = tmp30;
   } else {
@@ -187,7 +187,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const result = ToastUtils.presentCopiedToClipboard();
         }
     };
-    const tmp38 = React4(tmp(7445).ActionSheetRow, obj6);
+    const tmp38 = React4(tmp(7477).ActionSheetRow, obj6);
     cResult[12] = tmp38;
     let tmp36 = tmp38;
   } else {
@@ -216,9 +216,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const result = ToastUtils.presentCopiedToClipboard();
         }
     };
-    items[4] = React4(tmp(7445).ActionSheetRow, obj8);
+    items[4] = React4(tmp(7477).ActionSheetRow, obj8);
     obj7.children = items;
-    const tmp47 = hasOwnProperty(tmp(7445).ActionSheetRow.Group, obj7);
+    const tmp47 = hasOwnProperty(tmp(7477).ActionSheetRow.Group, obj7);
     cResult[15] = tmp47;
     let tmp44 = tmp47;
   } else {
@@ -228,7 +228,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj9 = { header: first, startExpanded: true, children: null };
     const items1 = [tmp44, ];
     const obj10 = { hasIcons: true, children: null };
-    const obj11 = { icon: React4(tmp(4704).CopyIcon, {}), label: null, onPress: null };
+    const obj11 = { icon: React4(tmp(4736).CopyIcon, {}), label: null, onPress: null };
     const intl7 = tmp(1119).intl;
     obj11.label = intl7.string(tmp(1119).t["7dqZ6H"]);
     obj11.onPress = function onPress() {
@@ -240,10 +240,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       ClipboardUtils.copy(combined);
       const result = ToastUtils.presentCopiedToClipboard();
     };
-    obj10.children = React4(tmp(7445).ActionSheetRow, obj11);
-    items1[1] = React4(tmp(7445).ActionSheetRow.Group, obj10);
+    obj10.children = React4(tmp(7477).ActionSheetRow, obj11);
+    items1[1] = React4(tmp(7477).ActionSheetRow.Group, obj10);
     obj9.children = items1;
-    const tmp51 = hasOwnProperty(tmp(7449).ActionSheet, obj9);
+    const tmp51 = hasOwnProperty(tmp(7481).ActionSheet, obj9);
     cResult[16] = tmp51;
     let tmp48 = tmp51;
   } else {
@@ -332,14 +332,14 @@ function getClientInfoString(ReleaseChannel) {
   }
   return str;
 }
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.Na2lF9);
   },
   parent: null,
-  IconComponent: fn(5757).ClipboardListIcon,
+  IconComponent: fn(5789).ClipboardListIcon,
   onPress: function handleClientInfoPress() {
     ActionSheetActionCreatorsDefault.openLazy(Promise.resolve({ default: closure_8 }), "ClientClientInfoActionSheet");
   },

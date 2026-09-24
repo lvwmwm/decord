@@ -1,12 +1,12 @@
-// Module ID: 7515
-// Function ID: 7516
+// Module ID: 7547
+// Function ID: 7548
 // Name: useIsRemote
-// Dependencies: [4775, 558, 568, 504, 2]
+// Dependencies: [4807, 558, 568, 504, 2]
 
-// Module 7515 (useIsRemote)
+// Module 7547 (useIsRemote)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import GameConsoleStore from "GameConsoleStore" /* 4775 */;
+import GameConsoleStore from "GameConsoleStore" /* 4807 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);

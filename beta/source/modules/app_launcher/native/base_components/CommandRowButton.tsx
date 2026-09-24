@@ -1,19 +1,19 @@
-// Module ID: 12245
-// Function ID: 12246
+// Module ID: 12281
+// Function ID: 12282
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 12158, 9401, 12123, 7770, 558, 568, 5829, 5188, 1119, 4702, 2]
+// Dependencies: [5, 32, 19, 21, 12194, 9433, 12159, 7802, 558, 568, 5861, 5220, 1119, 4734, 2]
 // Exports: useCommandRowSend
 
-// Module 12245 (CommandRowButton)
+// Module 12281 (CommandRowButton)
 import c from "c" /* 568 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const util = TableRowArrow(1119);
-const SendMessageIcon = TableRowArrow(4702);
-const components_Button_Button = TableRowArrow(5188);
-const TableRowArrow2 = TableRowArrow(5829);
+const SendMessageIcon = TableRowArrow(4734);
+const components_Button_Button = TableRowArrow(5220);
+const TableRowArrow2 = TableRowArrow(5861);
 require = fn;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
@@ -51,15 +51,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp2Result;
 }) : ((hasOptions) => {
   if (hasOptions.hasOptions) {
-    let tmp3Result = tmp3(tmp4(5829).TableRowArrow, {});
+    let tmp3Result = tmp3(tmp4(5861).TableRowArrow, {});
   } else {
     const obj = { size: "sm", text: null, onPress: null, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: null };
     const intl = tmp4(1119).intl;
     obj.text = intl.string(tmp4(1119).t.TXNS7S);
     obj.onPress = tmp2;
-    obj.icon = tmp3(tmp4(4702).SendMessageIcon, { size: "sm" });
+    obj.icon = tmp3(tmp4(4734).SendMessageIcon, { size: "sm" });
     obj.disabled = tmp;
-    tmp3Result = tmp3(tmp4(5188).Button, obj);
+    tmp3Result = tmp3(tmp4(5220).Button, obj);
   }
   return tmp3Result;
 });
@@ -111,11 +111,11 @@ export const useCommandRowSend = function useCommandRowSend(command) {
             }
             c3 = 1;
             const obj6 = { command, optionValues: null, context: null, sectionName: null, commandOrigin: null };
-            const obj2 = tmp3(9401);
-            obj6.optionValues = tmp3(12123).parseOptionValuesForSend(commandContext.channel, command, {});
+            const obj2 = tmp3(9433);
+            obj6.optionValues = tmp3(12159).parseOptionValuesForSend(commandContext.channel, command, {});
             obj6.context = commandContext;
             obj6.sectionName = sectionName;
-            obj6.commandOrigin = tmp3(7770).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW;
+            obj6.commandOrigin = tmp3(7802).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW;
             dependencyMap = 2;
             c4 = 1;
             const obj7 = { value: obj2.executeAppLauncherCommand(obj6), done: false };

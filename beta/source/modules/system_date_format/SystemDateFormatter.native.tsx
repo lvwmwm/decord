@@ -1,12 +1,12 @@
-// Module ID: 4445
-// Function ID: 4446
+// Module ID: 4477
+// Function ID: 4478
 // Name: SystemDateFormatter
-// Dependencies: [17, 1368, 4446, 2]
+// Dependencies: [17, 1368, 4478, 2]
 // Exports: supportsSystemDateFormatter
 
-// Module 4445 (SystemDateFormatter)
+// Module 4477 (SystemDateFormatter)
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import NativeDateFormatUtilsModuleDefault from "NativeDateFormatUtilsModule" /* 4446 */;
+import NativeDateFormatUtilsModuleDefault from "NativeDateFormatUtilsModule" /* 4478 */;
 import size from "module_2" /* 2 */;
 
 if (null != global.__DiscordCreateDateFormatter) {

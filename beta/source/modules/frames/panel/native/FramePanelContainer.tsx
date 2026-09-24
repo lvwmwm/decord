@@ -1,18 +1,18 @@
-// Module ID: 17473
-// Function ID: 17474
+// Module ID: 17483
+// Function ID: 17484
 // Name: FramePanelContainer
-// Dependencies: [19, 9311, 9312, 21, 558, 568, 504, 17474, 17476, 2]
+// Dependencies: [19, 9343, 9344, 21, 558, 568, 504, 17484, 17486, 2]
 
-// Module 17473 (FramePanelContainer)
+// Module 17483 (FramePanelContainer)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import FramePanelControllerDefault from "FramePanelController" /* 17474 */;
-import FramePanelUIDefault from "FramePanelUI" /* 17476 */;
+import FramePanelControllerDefault from "FramePanelController" /* 17484 */;
+import FramePanelUIDefault from "FramePanelUI" /* 17486 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9311 */;
+import FramesStore from "FramesStore" /* 9343 */;
 
 require = fn;
-const isLaunched = fn(9312).isLaunched;
+const isLaunched = fn(9344).isLaunched;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

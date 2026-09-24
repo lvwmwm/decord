@@ -1,32 +1,32 @@
-// Module ID: 16410
-// Function ID: 16411
+// Module ID: 16420
+// Function ID: 16421
 // Name: HappeningNowCardActivity
-// Dependencies: [19, 17, 2050, 1376, 15555, 1078, 1089, 21, 16411, 16412, 4758, 580, 7409, 504, 7415, 1245, 13179, 1984, 8453, 16406, 4910, 16413, 15556, 16407, 1181, 16416, 11195, 16417, 10146, 13298, 8977, 5317, 9346, 1119, 558, 568, 4608, 1368, 10313, 5802, 16408, 16419, 10316, 8413, 16421, 8522, 2]
+// Dependencies: [19, 17, 2050, 1376, 15565, 1078, 1089, 21, 16421, 16422, 4790, 580, 7441, 504, 7447, 1245, 13215, 1984, 8485, 16416, 4942, 16423, 15566, 16417, 1181, 16426, 11231, 16427, 10185, 13334, 9009, 5349, 9378, 1119, 558, 568, 4640, 1368, 10352, 5834, 16418, 16429, 10355, 8445, 16431, 8554, 2]
 
-// Module 16410 (HappeningNowCardActivity)
+// Module 16420 (HappeningNowCardActivity)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ColorUtils from "ColorUtils" /* 4608 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8413 */;
-import VideoBackground from "VideoBackground" /* 8522 */;
-import StreamPreviewDefault from "StreamPreview" /* 10313 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10316 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 11195 */;
-import isOnXboxDefault from "isOnXbox" /* 13298 */;
-import useLiveStageData from "useLiveStageData" /* 16408 */;
-import _modDef16411 from "module_16411" /* 16411 */;
-import _modDef16412 from "module_16412" /* 16412 */;
-import HappeningNowAvatarStack from "HappeningNowAvatarStack" /* 16419 */;
+import ColorUtils from "ColorUtils" /* 4640 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8445 */;
+import VideoBackground from "VideoBackground" /* 8554 */;
+import StreamPreviewDefault from "StreamPreview" /* 10352 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10355 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 11231 */;
+import isOnXboxDefault from "isOnXbox" /* 13334 */;
+import useLiveStageData from "useLiveStageData" /* 16418 */;
+import _modDef16421 from "module_16421" /* 16421 */;
+import _modDef16422 from "module_16422" /* 16422 */;
+import HappeningNowAvatarStack from "HappeningNowAvatarStack" /* 16429 */;
 import noop from "module_19" /* 19 */;
 import StageInstanceStore from "StageInstanceStore" /* 2050 */;
 import UserStore from "UserStore" /* 1376 */;
 
-const _modDef16421 = tmp4(16421);
+const _modDef16431 = tmp4(16431);
 require = fn;
 function getActivityA11yLabel(activity) {
   if (isListeningOnSpotifyDefault(activity)) {
@@ -58,16 +58,16 @@ function getActivityA11yLabel(activity) {
 }
 get_ActivityIndicator = fn(17);
 ({ PixelRatio, View: closure_4 } = get_ActivityIndicator);
-const HappeningNowConstants = fn(15555);
+const HappeningNowConstants = fn(15565);
 ({ HAPPENING_NOW_CONTENT_HEIGHT, HappeningNowCardTrackingType: closure_7, STATUS_CUTOUT_SMALL: closure_8, HAPPENING_NOW_STAGE_PREVIEW_HEIGHT } = HappeningNowConstants);
 const Constants = fn(1078);
 ({ ActivityTypes: closure_9, AnalyticEvents: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
 const pixelSizeForLayoutSize = PixelRatio.getPixelSizeForLayoutSize(HAPPENING_NOW_CONTENT_HEIGHT);
-let items = [_modDef16411, _modDef16412];
+let items = [_modDef16421, _modDef16422];
 let c16 = 0.32;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { content: { flexShrink: 1, gap: 2 }, avatarStackContainer: { backgroundColor: nativeDefault.colors.STAGE_CARD_PILL_BG, padding: 2, borderRadius: nativeDefault.radii.xl, position: "absolute", alignSelf: "center", bottom: 0 }, cardAvatar: { marginBottom: 2 }, cardImage: { height: HAPPENING_NOW_CONTENT_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, marginRight: 12, position: "relative" }, cardImageStream: { height: HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, position: "relative" }, cardImageAsset: null, cardImageAssetContainer: null, cardImageAssetBackground: null, cardImageStreamPreview: null, cardImageStreamLive: null, stageStreamLiveText: null, stagePreviewWrapper: null };
 let obj3 = { backgroundColor: nativeDefault.colors.STAGE_CARD_PILL_BG, padding: 2, borderRadius: nativeDefault.radii.xl, position: "absolute", alignSelf: "center", bottom: 0 };
 obj.cardImageAsset = { flex: 1, width: "100%", borderRadius: nativeDefault.radii.sm - 1 };
@@ -104,11 +104,11 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             if (cResult[10] !== tmp8) {
               if (tmpResult.isAndroid()) {
                 const obj2 = { boxShadow: null };
-                const obj3 = { offsetX: 0, offsetY: 0, blurRadius: 5, color: tmp(4608).hexWithOpacity(tmp8, c16) };
+                const obj3 = { offsetX: 0, offsetY: 0, blurRadius: 5, color: tmp(4640).hexWithOpacity(tmp8, c16) };
                 items = [obj3];
                 obj2.boxShadow = items;
                 let obj4 = obj2;
-                const tmpResult4 = tmp(4608);
+                const tmpResult4 = tmp(4640);
               } else {
                 obj4 = { shadowColor: tmp8 };
               }
@@ -243,9 +243,9 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const tmp7 = closure_21(tmp5);
-        const rgbToHexResult = tmp(4608).rgbToHex(r, g, b);
-        const tmpResult5 = tmp(4608);
-        const hexWithOpacityResult = tmp(4608).hexWithOpacity(rgbToHexResult, 0.2);
+        const rgbToHexResult = tmp(4640).rgbToHex(r, g, b);
+        const tmpResult5 = tmp(4640);
+        const hexWithOpacityResult = tmp(4640).hexWithOpacity(rgbToHexResult, 0.2);
         cResult[5] = b;
         cResult[6] = g;
         cResult[7] = r;
@@ -253,7 +253,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[9] = hexWithOpacityResult;
         tmp9 = hexWithOpacityResult;
         tmp8 = rgbToHexResult;
-        const tmpResult6 = tmp(4608);
+        const tmpResult6 = tmp(4640);
       }
     }
   }
@@ -345,7 +345,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj4 = { users: tmp7, guildId: stage.guild_id, userCount: sum, isStage: true, avatarSize: tmp(1181).AvatarSizes.SIZE_16 };
-    const tmp11 = closure_1_11(tmp(16419).HappeningNowAvatarStack, obj4);
+    const tmp11 = closure_1_11(tmp(16429).HappeningNowAvatarStack, obj4);
     cResult[3] = stage.guild_id;
     cResult[4] = tmp7;
     cResult[5] = sum;
@@ -417,11 +417,11 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[0] === application_id) {
       }
       items = [closure_14, closure_14];
-      const assetImage = tmp(8413).getAssetImage(application_id, large_image1, items);
+      const assetImage = tmp(8445).getAssetImage(application_id, large_image1, items);
       cResult[0] = application_id;
       cResult[1] = large_image1;
       cResult[2] = assetImage;
-      const tmpResult = tmp(8413);
+      const tmpResult = tmp(8445);
     }
   }
   if (tmp6 != tmp11) {
@@ -447,24 +447,24 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (cResult[5] === application_id1) {
         }
         const items1 = [closure_14, closure_14];
-        const assetImage1 = tmp(8413).getAssetImage(application_id1, small_image1, items1);
+        const assetImage1 = tmp(8445).getAssetImage(application_id1, small_image1, items1);
         cResult[5] = application_id1;
         cResult[6] = small_image1;
         cResult[7] = assetImage1;
-        const tmpResult4 = tmp(8413);
+        const tmpResult4 = tmp(8445);
       }
     }
     if (tmp6 != tmp23) {
       if (cResult[11] !== tmp23) {
-        const memoizedImageSourceResult = tmp(8522).memoizedImageSource(tmp23);
+        const memoizedImageSourceResult = tmp(8554).memoizedImageSource(tmp23);
         cResult[11] = tmp23;
         cResult[12] = memoizedImageSourceResult;
         let tmp38 = memoizedImageSourceResult;
-        const tmpResult5 = tmp(8522);
+        const tmpResult5 = tmp(8554);
       } else {
         tmp38 = cResult[12];
       }
-      const dominantRGBFromImage = tmp(8522).useDominantRGBFromImage(tmp23, tmp38);
+      const dominantRGBFromImage = tmp(8554).useDominantRGBFromImage(tmp23, tmp38);
       if (cResult[13] === dominantRGBFromImage) {
         if (cResult[14] === tmp38) {
           let tmp42 = cResult[15];
@@ -476,7 +476,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[14] = tmp38;
       cResult[15] = obj2;
       tmp42 = obj2;
-      const tmpResult6 = tmp(8522);
+      const tmpResult6 = tmp(8554);
     } else {
       let type;
       if (activity != tmp6) {
@@ -492,7 +492,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const substr = userId.slice(-1);
         let tmp4Result = items[substr.charCodeAt(substr, 0) % items.length];
       } else {
-        tmp4Result = _modDef16421;
+        tmp4Result = _modDef16431;
       }
       tmp6 = activity == tmp6;
       let type2;
@@ -598,7 +598,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       userId = substr.charCodeAt(0);
       let tmpResult = items[userId % items.length];
     } else {
-      tmpResult = _modDef16421;
+      tmpResult = _modDef16431;
     }
   }
 });
@@ -683,11 +683,11 @@ export default noop.memo((userId) => {
     obj2.destination_channel_id = channelId;
     AnalyticsUtilsDefault.track(constants3.ACTIVITY_CARD_CLICKED, obj2);
     if (null != stream) {
-      asyncRequireImpl(13179, tmp6.paths).then((result) => result.default(channelId.channelId, true));
-      const promise2 = asyncRequireImpl(13179, tmp6.paths);
+      asyncRequireImpl(13215, tmp6.paths).then((result) => result.default(channelId.channelId, true));
+      const promise2 = asyncRequireImpl(13215, tmp6.paths);
     } else {
-      asyncRequireImpl(8453, tmp6.paths).then((result) => result.default({ userId, localUser, sourceAnalyticsLocations }));
-      const promise = asyncRequireImpl(8453, tmp6.paths);
+      asyncRequireImpl(8485, tmp6.paths).then((result) => result.default({ userId, localUser, sourceAnalyticsLocations }));
+      const promise = asyncRequireImpl(8485, tmp6.paths);
     }
   }, items2);
   if (null == stateFromStores) {

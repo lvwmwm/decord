@@ -1,20 +1,20 @@
-// Module ID: 13783
-// Function ID: 13784
+// Module ID: 13819
+// Function ID: 13820
 // Name: PremiumGroupEducationActionSheet
-// Dependencies: [17, 4432, 21, 4758, 580, 558, 568, 7176, 4754, 1119, 3166, 7397, 2]
+// Dependencies: [17, 4464, 21, 4790, 580, 558, 568, 7208, 4786, 1119, 3198, 7429, 2]
 
-// Module 13783 (PremiumGroupEducationActionSheet)
+// Module 13819 (PremiumGroupEducationActionSheet)
 import _mod17 from "module_17" /* 17 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import _modDef3166 from "module_3166" /* 3166 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 4432 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7176 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
+import _modDef3198 from "module_3198" /* 3198 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 4464 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7208 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
   const tmp4 = closure_7();
   if (cResult[0] !== tmp4.warningIcon) {
     const obj2 = { size: "lg", style: tmp4.warningIcon };
-    const tmp7 = hasOwnProperty(tmp(7176).CircleErrorIcon, obj2);
+    const tmp7 = hasOwnProperty(tmp(7208).CircleErrorIcon, obj2);
     cResult[0] = tmp4.warningIcon;
     cResult[1] = tmp7;
     let tmp5 = tmp7;
@@ -41,7 +41,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
   }
   if (cResult[2] !== aboutText) {
     const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", children: aboutText };
-    const tmp10 = hasOwnProperty(tmp(4754).Text, obj3);
+    const tmp10 = hasOwnProperty(tmp(4786).Text, obj3);
     cResult[2] = aboutText;
     cResult[3] = tmp10;
     let tmp8 = tmp10;
@@ -61,7 +61,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
           const intl = tmp(1119).intl;
           const obj4 = { helpCenterLink: HELP_CENTER_LINK };
-          const formatResult = intl.format(_modDef3166.ah1Ecm, obj4);
+          const formatResult = intl.format(_modDef3198.ah1Ecm, obj4);
           cResult[11] = formatResult;
           let tmp18 = formatResult;
         } else {
@@ -69,7 +69,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
         }
         if (cResult[12] !== tmp4.helpdeskText) {
           const obj5 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp4.helpdeskText, children: tmp18 };
-          const tmp24 = hasOwnProperty(tmp(4754).Text, obj5);
+          const tmp24 = hasOwnProperty(tmp(4786).Text, obj5);
           cResult[12] = tmp4.helpdeskText;
           cResult[13] = tmp24;
           let tmp22 = tmp24;
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
         const items = [tmp13, tmp22];
         obj7.children = items;
         obj6.children = timestampProducer(View, obj7);
-        const tmp29 = hasOwnProperty(tmp(7397).BottomSheet, obj6);
+        const tmp29 = hasOwnProperty(tmp(7429).BottomSheet, obj6);
         cResult[14] = tmp4.container;
         cResult[15] = tmp13;
         cResult[16] = tmp22;
@@ -122,7 +122,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
   const items1 = [timestampProducer(View, obj3), ];
   const obj6 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: null };
   const intl = util.intl;
-  obj6.children = intl.format(_modDef3166.ah1Ecm, { helpCenterLink: HELP_CENTER_LINK });
+  obj6.children = intl.format(_modDef3198.ah1Ecm, { helpCenterLink: HELP_CENTER_LINK });
   items1[1] = hasOwnProperty(Text_Text.Text, obj6);
   obj2.children = items1;
   obj.children = timestampProducer(View, obj2);

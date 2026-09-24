@@ -1,17 +1,17 @@
-// Module ID: 11990
-// Function ID: 11991
+// Module ID: 12026
+// Function ID: 12027
 // Name: MemberRolesList
-// Dependencies: [19, 17, 2103, 21, 4758, 558, 568, 504, 11253, 2]
+// Dependencies: [19, 17, 2103, 21, 4790, 558, 568, 504, 11289, 2]
 
-// Module 11990 (MemberRolesList)
-import RolePillDefault from "RolePill" /* 11253 */;
+// Module 12026 (MemberRolesList)
+import RolePillDefault from "RolePill" /* 11289 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2103 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ wrapper: { flexDirection: "row", flexWrap: "wrap", justifyContent: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

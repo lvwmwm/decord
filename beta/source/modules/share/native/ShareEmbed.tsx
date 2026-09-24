@@ -1,13 +1,13 @@
-// Module ID: 14176
-// Function ID: 14177
+// Module ID: 14213
+// Function ID: 14214
 // Name: ShareEmbed
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 5796, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 5828, 4786, 2]
 
-// Module 14176 (ShareEmbed)
+// Module 14213 (ShareEmbed)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5796 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5828 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flexDirection: "row", height: 80, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderColor: nativeDefault.colors.BORDER_STRONG, borderWidth: 1, borderRadius: nativeDefault.radii.sm, overflow: "hidden" }, containerRevamp: { borderWidth: 0 }, thumbnail: { width: 80 }, contentContainer: { flex: 1, flexDirection: "column", justifyContent: "center", paddingLeft: 12, paddingRight: 24 }, authorView: { flexDirection: "row", alignItems: "center", marginBottom: 3 }, authorThumbnail: null, loadingSpinner: null };
 let size = { height: 16, width: 16, borderRadius: nativeDefault.radii.sm, marginRight: 4 };
 obj2.authorThumbnail = size;
@@ -66,7 +66,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp30 = null;
         if (null != title) {
           const obj3 = { style: { marginVertical: 1 }, variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, ellipsizeMode: "tail", children: title };
-          tmp30 = hasOwnProperty(tmp(4754).Text, obj3);
+          tmp30 = hasOwnProperty(tmp(4786).Text, obj3);
         }
         cResult[13] = title;
         cResult[14] = tmp30;
@@ -90,7 +90,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp38 = null;
           if (null != url2) {
             const obj4 = { style: { marginVertical: 1 }, variant: "text-xs/medium", color: "text-link", lineClamp: 1, ellipsizeMode: "tail", children: url2 };
-            tmp38 = hasOwnProperty(tmp(4754).Text, obj4);
+            tmp38 = hasOwnProperty(tmp(4786).Text, obj4);
           }
           cResult[18] = url2;
           cResult[19] = tmp38;
@@ -168,7 +168,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp34 = null;
         if (null != description) {
           const obj9 = { style: { marginVertical: 1 }, variant: "text-xs/medium", color: "text-default", lineClamp: 1, ellipsizeMode: "tail", children: description };
-          tmp34 = hasOwnProperty(tmp(4754).Text, obj9);
+          tmp34 = hasOwnProperty(tmp(4786).Text, obj9);
         }
       }
       cResult[15] = description;
@@ -186,7 +186,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[7] !== author.name) {
           const obj10 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", ellipsizeMode: "tail", lineClamp: 1, children: author.name };
-          const tmp22 = hasOwnProperty(tmp(4754).Text, obj10);
+          const tmp22 = hasOwnProperty(tmp(4786).Text, obj10);
           cResult[7] = author.name;
           cResult[8] = tmp22;
           let tmp20 = tmp22;
@@ -220,7 +220,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   } else if (cResult[2] !== tmp4.loadingSpinner) {
     const obj14 = { style: tmp4.loadingSpinner };
-    const tmp12 = hasOwnProperty(tmp(5796).ActivityIndicator, obj14);
+    const tmp12 = hasOwnProperty(tmp(5828).ActivityIndicator, obj14);
     cResult[2] = tmp4.loadingSpinner;
     cResult[3] = tmp12;
   }

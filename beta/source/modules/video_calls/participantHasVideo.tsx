@@ -1,10 +1,10 @@
-// Module ID: 9705
-// Function ID: 9706
+// Module ID: 9737
+// Function ID: 9738
 // Name: participantHasVideo
-// Dependencies: [502, 1996, 4779, 4783, 558, 568, 504, 2]
+// Dependencies: [502, 1996, 4811, 4815, 558, 568, 504, 2]
 // Exports: default
 
-// Module 9705 (participantHasVideo)
+// Module 9737 (participantHasVideo)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
@@ -57,9 +57,9 @@ function canRenderParticipantVideo(participant, MediaEngineStore) {
   }
   return tmp;
 }
-const CallConstants = fn(4779);
+const CallConstants = fn(4811);
 ({ ParticipantTypes: closure_4, isStreamParticipant: hasOwnProperty, isUserParticipant: metroRequire } = CallConstants);
-const Features = fn(4783).Features;
+const Features = fn(4815).Features;
 const ReactCompilerGating = fn(558);
 function participantHasVideo(type) {
   let streamId = type;

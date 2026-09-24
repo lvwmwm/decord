@@ -1,17 +1,17 @@
-// Module ID: 15323
-// Function ID: 15324
+// Module ID: 15333
+// Function ID: 15334
 // Name: QuestHomeEmptyState
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 1119, 4462, 4619, 1368, 4754, 15324, 5198, 7371, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 1119, 4494, 4651, 1368, 4786, 15334, 5230, 7403, 2]
 
-// Module 15323 (QuestHomeEmptyState)
+// Module 15333 (QuestHomeEmptyState)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import useToken from "useToken" /* 4462 */;
-import useChatLayoutDefault from "useChatLayout" /* 4619 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
+import useToken from "useToken" /* 4494 */;
+import useChatLayoutDefault from "useChatLayout" /* 4651 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 const VerticalGradient = fn(1078).VerticalGradient;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1 }, emptyStateContainer: { justifyContent: "center", alignItems: "center", flex: 1 }, emptyStateContentContainer: { top: -55, paddingHorizontal: nativeDefault.space.PX_32 }, emptyStateContentTitle: { textAlign: "center" }, emptyStateContentDescription: { textAlign: "center", marginTop: 4 }, emptyImage: { flex: 1, width: "100%", aspectRatio: 1.6375545851528384, minWidth: "100%", position: "absolute", bottom: 0, zIndex: -1 }, gradient: { height: 22, width: "100%", position: "absolute", bottom: 0 }, actionWrapper: { marginTop: 16, alignSelf: "center" } };
 let closure_9 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -106,7 +106,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             return tmp42;
                           }
                           const obj2 = { bottom: tmp11, style: tmp8.container, children: tmp38 };
-                          const tmp44 = timestampProducer(tmp(7371).SafeAreaPaddingView, obj2);
+                          const tmp44 = timestampProducer(tmp(7403).SafeAreaPaddingView, obj2);
                           cResult[31] = tmp8.container;
                           cResult[32] = tmp38;
                           cResult[33] = tmp44;
@@ -135,13 +135,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               let tmp28 = null;
               if (!isChatLockedOpen) {
                 const obj5 = { children: null };
-                const obj6 = { style: tmp8.emptyImage, source: tmp9(15324), resizeMode: "cover" };
+                const obj6 = { style: tmp8.emptyImage, source: tmp9(15334), resizeMode: "cover" };
                 const items1 = [timestampProducer(React4, obj6), ];
                 const obj7 = { style: tmp8.gradient, end: null, start: null, colors: null };
                 ({ END: obj10.end, START: obj10.start } = VerticalGradient);
                 const items2 = ["rgba(0, 0, 0, 0)", token];
                 obj7.colors = items2;
-                items1[1] = timestampProducer(tmp9(5198), obj7);
+                items1[1] = timestampProducer(tmp9(5230), obj7);
                 obj5.children = items1;
                 tmp28 = React5(closure_1_8, obj5);
               }
@@ -176,7 +176,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp18 = tmp20;
     }
     const obj11 = { variant: "text-md/normal", color: "text-default", style: tmp8.emptyStateContentDescription, children: tmp6 };
-    const tmp17 = timestampProducer(tmp(4754).Text, obj11);
+    const tmp17 = timestampProducer(tmp(4786).Text, obj11);
     cResult[8] = tmp8.emptyStateContentDescription;
     cResult[9] = tmp6;
     cResult[10] = tmp17;
@@ -218,13 +218,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp11Result = null;
   if (!useChatLayoutDefault().isChatLockedOpen) {
     const obj10 = { children: null };
-    const obj11 = { style: tmp5.emptyImage, source: tmp7(15324), resizeMode: "cover" };
+    const obj11 = { style: tmp5.emptyImage, source: tmp7(15334), resizeMode: "cover" };
     const items2 = [tmp9(React4, obj11), ];
     const obj22 = { style: tmp5.gradient, end: null, start: null, colors: null };
     ({ END: obj12.end, START: obj12.start } = VerticalGradient);
     const items3 = ["rgba(0, 0, 0, 0)", token];
     obj22.colors = items3;
-    items2[1] = tmp9(tmp7(5198), obj22);
+    items2[1] = tmp9(tmp7(5230), obj22);
     obj10.children = items2;
     tmp11Result = tmp11(closure_1_8, obj10);
   }

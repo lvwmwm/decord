@@ -1,13 +1,13 @@
-// Module ID: 7367
-// Function ID: 7368
+// Module ID: 7399
+// Function ID: 7400
 // Name: GuildMemberActionCreators
-// Dependencies: [2102, 1078, 5771, 577, 1275, 2]
+// Dependencies: [2102, 1078, 5803, 577, 1275, 2]
 // Exports: updateGuildSelfMember
 
-// Module 7367 (GuildMemberActionCreators)
+// Module 7399 (GuildMemberActionCreators)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import HTTPUtils from "HTTPUtils" /* 1275 */;
-import ImpersonateActionCreators from "ImpersonateActionCreators" /* 5771 */;
+import ImpersonateActionCreators from "ImpersonateActionCreators" /* 5803 */;
 import ImpersonateStore from "ImpersonateStore" /* 2102 */;
 
 require = fn;

@@ -1,16 +1,16 @@
-// Module ID: 7317
-// Function ID: 7318
+// Module ID: 7349
+// Function ID: 7350
 // Name: PortalToNativeView
-// Dependencies: [19, 17, 21, 4758, 558, 568, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 2]
 
-// Module 7317 (PortalToNativeView)
+// Module 7349 (PortalToNativeView)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
 let closure_3 = fn(17).requireNativeComponent("PortalToNativeView");
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ portal: { position: "absolute", opacity: 0, height: 0, right: 0, left: 0, top: 0 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

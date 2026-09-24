@@ -1,13 +1,13 @@
-// Module ID: 15927
-// Function ID: 15928
+// Module ID: 15937
+// Function ID: 15938
 // Name: ClipboardCheckIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 15928, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 15938, 4493, 2]
 
-// Module 15927 (ClipboardCheckIcon)
+// Module 15937 (ClipboardCheckIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod15928 from "module_15928" /* 15928 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod15938 from "module_15938" /* 15938 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const ClipboardCheckIcon = ReactCompilerGating.isReactCompilerEnabled() ?
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(15928);
+    const tmpResult = tmp(15938);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const ClipboardCheckIcon = ReactCompilerGating.isReactCompilerEnabled() ?
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15928, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15938, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

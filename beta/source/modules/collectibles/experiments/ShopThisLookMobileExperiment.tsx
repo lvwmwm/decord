@@ -1,9 +1,9 @@
-// Module ID: 8488
-// Function ID: 8489
+// Module ID: 8520
+// Function ID: 8521
 // Name: ShopThisLookMobileExperiment
 // Dependencies: [1438, 558, 568, 2]
 
-// Module 8488 (ShopThisLookMobileExperiment)
+// Module 8520 (ShopThisLookMobileExperiment)
 import c from "c" /* 568 */;
 import ApexExperiment from "ApexExperiment" /* 1438 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

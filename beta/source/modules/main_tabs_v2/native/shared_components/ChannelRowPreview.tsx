@@ -1,36 +1,36 @@
-// Module ID: 12972
-// Function ID: 12973
+// Module ID: 13008
+// Function ID: 13009
 // Name: ChannelRowPreview
-// Dependencies: [109, 19, 17, 4409, 21, 558, 568, 5307, 11733, 10146, 10936, 4700, 12696, 8129, 8131, 5195, 12211, 12958, 12214, 11291, 4754, 4693, 4758, 580, 4462, 8400, 8199, 2023, 8195, 8928, 504, 2]
+// Dependencies: [109, 19, 17, 4441, 21, 558, 568, 5339, 11769, 10185, 10972, 4732, 12732, 8161, 8163, 5227, 12247, 12994, 12250, 11327, 4786, 4725, 4790, 580, 4494, 8432, 8231, 2023, 8227, 8960, 504, 2]
 
-// Module 12972 (ChannelRowPreview)
+// Module 13008 (ChannelRowPreview)
 import c from "c" /* 568 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import useToken from "useToken" /* 4462 */;
-import LinkIcon from "LinkIcon" /* 4700 */;
-import createStyles from "createStyles" /* 4758 */;
-import useFontScale from "useFontScale" /* 5195 */;
-import ImageIcon from "ImageIcon" /* 5307 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 8129 */;
-import PhoneHangUpIcon from "PhoneHangUpIcon" /* 8131 */;
-import RowGeneratorDefault from "RowGenerator" /* 8195 */;
-import RowGeneratorStyleSheet from "RowGeneratorStyleSheet" /* 8199 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8400 */;
-import MusicIcon from "MusicIcon" /* 10146 */;
-import AttachmentIcon from "AttachmentIcon" /* 10936 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11291 */;
-import VideoIcon from "VideoIcon" /* 11733 */;
-import ChannelListLayout from "ChannelListLayout" /* 12214 */;
-import StickerIcon from "StickerIcon" /* 12696 */;
-import useFormattedMessagePreview from "useFormattedMessagePreview" /* 12958 */;
+import useToken from "useToken" /* 4494 */;
+import LinkIcon from "LinkIcon" /* 4732 */;
+import createStyles from "createStyles" /* 4790 */;
+import useFontScale from "useFontScale" /* 5227 */;
+import ImageIcon from "ImageIcon" /* 5339 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 8161 */;
+import PhoneHangUpIcon from "PhoneHangUpIcon" /* 8163 */;
+import RowGeneratorDefault from "RowGenerator" /* 8227 */;
+import RowGeneratorStyleSheet from "RowGeneratorStyleSheet" /* 8231 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8432 */;
+import MusicIcon from "MusicIcon" /* 10185 */;
+import AttachmentIcon from "AttachmentIcon" /* 10972 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11327 */;
+import VideoIcon from "VideoIcon" /* 11769 */;
+import ChannelListLayout from "ChannelListLayout" /* 12250 */;
+import StickerIcon from "StickerIcon" /* 12732 */;
+import useFormattedMessagePreview from "useFormattedMessagePreview" /* 12994 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 
 const require = globalThis.__r;
 
-const Text_Text = tmp(4754);
-const MessagePreviewMarkup = tmp(12211);
+const Text_Text = tmp(4786);
+const MessagePreviewMarkup = tmp(12247);
 require = fn;
 let closure_3 = ["icon"];
 const View = fn(17).View;
@@ -55,7 +55,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     if (cResult[3] !== tmp5) {
       const obj2 = {};
       const merged = Object.assign(tmp5);
-      const tmp56 = closure_1_8(tmp(5307).ImageIcon, obj2);
+      const tmp56 = closure_1_8(tmp(5339).ImageIcon, obj2);
       cResult[3] = tmp5;
       cResult[4] = tmp56;
       let tmp51 = tmp56;
@@ -67,7 +67,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     if (cResult[5] !== tmp5) {
       const obj3 = {};
       const merged1 = Object.assign(tmp5);
-      const tmp50 = closure_1_8(tmp(11733).VideoIcon, obj3);
+      const tmp50 = closure_1_8(tmp(11769).VideoIcon, obj3);
       cResult[5] = tmp5;
       cResult[6] = tmp50;
       let tmp45 = tmp50;
@@ -79,7 +79,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     if (cResult[7] !== tmp5) {
       const obj4 = {};
       const merged2 = Object.assign(tmp5);
-      const tmp44 = closure_1_8(tmp(10146).MusicIcon, obj4);
+      const tmp44 = closure_1_8(tmp(10185).MusicIcon, obj4);
       cResult[7] = tmp5;
       cResult[8] = tmp44;
       let tmp39 = tmp44;
@@ -91,7 +91,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     if (cResult[9] !== tmp5) {
       const obj5 = {};
       const merged3 = Object.assign(tmp5);
-      const tmp38 = closure_1_8(tmp(10936).AttachmentIcon, obj5);
+      const tmp38 = closure_1_8(tmp(10972).AttachmentIcon, obj5);
       cResult[9] = tmp5;
       cResult[10] = tmp38;
       let tmp33 = tmp38;
@@ -103,7 +103,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     if (cResult[11] !== tmp5) {
       const obj6 = {};
       const merged4 = Object.assign(tmp5);
-      const tmp32 = closure_1_8(tmp(4700).LinkIcon, obj6);
+      const tmp32 = closure_1_8(tmp(4732).LinkIcon, obj6);
       cResult[11] = tmp5;
       cResult[12] = tmp32;
       let tmp27 = tmp32;
@@ -115,7 +115,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     if (cResult[13] !== tmp5) {
       const obj7 = {};
       const merged5 = Object.assign(tmp5);
-      const tmp26 = closure_1_8(tmp(12696).StickerIcon, obj7);
+      const tmp26 = closure_1_8(tmp(12732).StickerIcon, obj7);
       cResult[13] = tmp5;
       cResult[14] = tmp26;
       let tmp21 = tmp26;
@@ -127,7 +127,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     if (cResult[15] !== tmp5) {
       const obj8 = {};
       const merged6 = Object.assign(tmp5);
-      const tmp20 = closure_1_8(tmp(8129).PhoneCallIcon, obj8);
+      const tmp20 = closure_1_8(tmp(8161).PhoneCallIcon, obj8);
       cResult[15] = tmp5;
       cResult[16] = tmp20;
       let tmp15 = tmp20;
@@ -139,7 +139,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     if (cResult[17] !== tmp5) {
       const obj9 = {};
       const merged7 = Object.assign(tmp5);
-      const tmp14 = closure_1_8(tmp(8131).PhoneHangUpIcon, obj9);
+      const tmp14 = closure_1_8(tmp(8163).PhoneHangUpIcon, obj9);
       cResult[17] = tmp5;
       cResult[18] = tmp14;
       let tmp9 = tmp14;
@@ -350,7 +350,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj7 = { lineClamp: num, variant, maxFontSizeMultiplier: 1.75, color, style: tmp17, children: null };
       const items1 = [combined, text];
       obj7.children = items1;
-      const tmp21 = options(tmp(4754).Text, obj7);
+      const tmp21 = options(tmp(4786).Text, obj7);
       cResult[14] = num;
       cResult[15] = color;
       cResult[16] = text;
@@ -594,7 +594,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((textColor) => {
     gifAutoPlay = false;
   }
   ({ textColor, gradientStyles, gradientColors } = arg0);
-  const tmp = gifAutoPlay(4693)();
+  const tmp = gifAutoPlay(4725)();
   let obj = createStyles;
   dependencyMap = obj.createNativeStyleProperties({ seeMoreLabelColor: gifAutoPlay(580).colors.TEXT_DEFAULT })(tmp);
   const obj2 = { seeMoreLabelColor: gifAutoPlay(580).colors.TEXT_DEFAULT };
@@ -611,7 +611,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((textColor) => {
     obj.setOptions({ renderEmbeds: setting, inlineEmbedMedia: setting1, inlineAttachmentMedia: setting2, renderReactions: false, animateEmoji: false, gifAutoPlay, renderReplies: false, renderCodedLinks: false, renderGiftCode: false, renderActivityInviteEmbed: false, renderThreadEmbeds: false, renderForumPostActions: false, ignoreMentioned: true, enableSwipeActions: false, renderExecutedCommands: false, useAlternateEmbedColors: true });
     return obj;
   }, items);
-  return closure_8(gifAutoPlay(8928), {
+  return closure_8(gifAutoPlay(8960), {
     pointerEvents: "none",
     horizontalOffset: 0,
     modifyRow(message) {

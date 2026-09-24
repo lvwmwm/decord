@@ -1,28 +1,28 @@
-// Module ID: 10956
-// Function ID: 10957
+// Module ID: 10992
+// Function ID: 10993
 // Name: MediaKeyboardEmptyState
-// Dependencies: [19, 17, 4967, 21, 4758, 580, 558, 568, 4754, 5188, 7624, 1119, 10957, 10951, 10958, 2]
+// Dependencies: [19, 17, 4999, 21, 4790, 580, 558, 568, 4786, 5220, 7656, 1119, 10993, 10987, 10994, 2]
 // Exports: getMediaEmptyStateComponentOrNull
 
-// Module 10956 (MediaKeyboardEmptyState)
+// Module 10992 (MediaKeyboardEmptyState)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import SettingsIcon from "SettingsIcon" /* 7624 */;
-import CameraIcon from "CameraIcon" /* 10951 */;
-import _modDef10957 from "module_10957" /* 10957 */;
-import _modDef10958 from "module_10958" /* 10958 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import SettingsIcon from "SettingsIcon" /* 7656 */;
+import CameraIcon from "CameraIcon" /* 10987 */;
+import _modDef10993 from "module_10993" /* 10993 */;
+import _modDef10994 from "module_10994" /* 10994 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
-const NativePermissionStatus = fn(4967).NativePermissionStatus;
+const NativePermissionStatus = fn(4999).NativePermissionStatus;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { marginHorizontal: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_32, justifyContent: "center", alignItems: "center" }, label: null };
 let obj3 = { marginHorizontal: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_32, justifyContent: "center", alignItems: "center" };
 obj2.label = { textAlign: "center", marginVertical: nativeDefault.space.PX_16 };
@@ -73,7 +73,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj4 = { icon: actionIcon, size: "sm", text: actionLabel, onPress: actionPress };
-    const tmp13 = timestampProducer(tmp(5188).Button, obj4);
+    const tmp13 = timestampProducer(tmp(5220).Button, obj4);
     cResult[5] = actionIcon;
     cResult[6] = actionLabel;
     cResult[7] = actionPress;
@@ -111,7 +111,7 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
           const intl3 = util.intl;
           obj2.actionLabel = intl3.string(util.t.JuXTi6);
           obj2.actionPress = tmp2;
-          obj2.imageSource = _modDef10957;
+          obj2.imageSource = _modDef10993;
           const intl4 = util.intl;
           obj2.label = intl4.string(util.t["5g7NcN"]);
           return timestampProducer(closure_9, obj2);
@@ -120,7 +120,7 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
           const intl = util.intl;
           obj.actionLabel = intl.string(util.t.tpoWUd);
           obj.actionPress = tmp;
-          obj.imageSource = _modDef10958;
+          obj.imageSource = _modDef10994;
           const intl2 = util.intl;
           obj.label = intl2.string(util.t.YOvRBZ);
           return timestampProducer(closure_9, obj);
@@ -132,7 +132,7 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
   const intl5 = util.intl;
   obj3.actionLabel = intl5.string(util.t["457oeG"]);
   obj3.actionPress = photosEmpty.onPressPrivacySettings;
-  obj3.imageSource = _modDef10957;
+  obj3.imageSource = _modDef10993;
   const intl6 = util.intl;
   obj3.label = intl6.string(util.t["8p9jGu"]);
   return timestampProducer(closure_9, obj3);

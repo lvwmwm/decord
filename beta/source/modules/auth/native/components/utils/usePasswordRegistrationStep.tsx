@@ -1,10 +1,10 @@
-// Module ID: 16303
-// Function ID: 16304
+// Module ID: 16313
+// Function ID: 16314
 // Name: usePasswordRegistrationStep
-// Dependencies: [5, 32, 19, 16280, 558, 568, 7198, 16304, 1119, 16291, 2]
+// Dependencies: [5, 32, 19, 16290, 558, 568, 7230, 16314, 1119, 16301, 2]
 
-// Module 16303 (usePasswordRegistrationStep)
-import getErrorDefault from "getError" /* 7198 */;
+// Module 16313 (usePasswordRegistrationStep)
+import getErrorDefault from "getError" /* 7230 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -12,7 +12,7 @@ import noop from "module_19" /* 19 */;
 const require = globalThis.__r;
 
 const require = fn;
-const useRegistrationUIStore = fn(16280).useRegistrationUIStore;
+const useRegistrationUIStore = fn(16290).useRegistrationUIStore;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/components/utils/usePasswordRegistrationStep.tsx");
@@ -130,7 +130,7 @@ export const usePasswordRegistrationStep = ReactCompilerGating.isReactCompilerEn
                   c3 = 1;
                   c1 = 2;
                   c4 = 1;
-                  const obj7 = { value: tmp3(16291).scorePassword(arr), done: false };
+                  const obj7 = { value: tmp3(16301).scorePassword(arr), done: false };
                   return obj7;
                 }
               }

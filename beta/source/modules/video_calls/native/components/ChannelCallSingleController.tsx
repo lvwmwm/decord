@@ -1,18 +1,18 @@
-// Module ID: 10276
-// Function ID: 10277
+// Module ID: 10315
+// Function ID: 10316
 // Name: ChannelCallSingleController
-// Dependencies: [19, 4780, 502, 1078, 4779, 21, 558, 568, 1245, 4938, 504, 10277, 10279, 10280, 2]
+// Dependencies: [19, 4812, 502, 1078, 4811, 21, 558, 568, 1245, 4970, 504, 10316, 10318, 10319, 2]
 
-// Module 10276 (ChannelCallSingleController)
+// Module 10315 (ChannelCallSingleController)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4812 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
 const AnalyticEvents = fn(1078).AnalyticEvents;
-const ParticipantTypes = fn(4779).ParticipantTypes;
+const ParticipantTypes = fn(4811).ParticipantTypes;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -102,7 +102,7 @@ export const ChannelCallSingleController = ReactCompilerGating.isReactCompilerEn
         }
       }
       let tmp17 = channel;
-      tmp17 = tmp17(tmp15 ? 10277 : 10279);
+      tmp17 = tmp17(tmp15 ? 10316 : 10318);
       let obj2 = { participant: selectedParticipant, channel };
       const tmp16Result = <tmp17 participant={selectedParticipant} channel={channel} />;
       cResult[7] = channel;
@@ -135,13 +135,13 @@ export const ChannelCallSingleController = ReactCompilerGating.isReactCompilerEn
       return null;
     } else {
       let tmp18 = channel;
-      tmp18 = tmp18(selectedParticipant.user.id === tmp15 ? 10277 : 10279);
+      tmp18 = tmp18(selectedParticipant.user.id === tmp15 ? 10316 : 10318);
       let obj2 = { participant: selectedParticipant, channel };
       <tmp18 participant={selectedParticipant} channel={channel} />;
     }
   } else if (tmp5.USER === type) {
     let obj = { participant: selectedParticipant, channel };
-    return jsx(channel(10280), { participant: selectedParticipant, channel });
+    return jsx(channel(10319), { participant: selectedParticipant, channel });
   } else if (tmp5.HIDDEN_STREAM === type) {
     return null;
   } else if (tmp5.ACTIVITY === type) {

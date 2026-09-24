@@ -446,7 +446,7 @@ export const instrumentAnthropicAiClient = function instrumentAnthropicAiClient(
                                               }
                                               let obj2 = str(_function[4]);
                                             }
-                                            return str(_function[9]).handleCallbackErrors(() => { ... }, () => { ... }, /* F148420 */ function() { ... }, () => { ... });
+                                            return str(_function[9]).handleCallbackErrors(() => { ... }, () => { ... }, /* F148511 */ function() { ... }, () => { ... });
                                           });
                                         }
                                       }
@@ -701,7 +701,7 @@ export const instrumentAnthropicAiClient = function instrumentAnthropicAiClient(
                                                       obj4.attributes = obj;
                                                       if (BooleanResult) {
                                                         if (!tmp12) {
-                                                          closure_0 = _self(/* F152582 */ function() { ... });
+                                                          closure_0 = _self(/* F152675 */ function() { ... });
                                                           let startSpanManualResult = tmp2(startSpanManual[7]).startSpanManual(obj4, () => { ... });
                                                           const tmp2Result8 = tmp2(startSpanManual[7]);
                                                         }

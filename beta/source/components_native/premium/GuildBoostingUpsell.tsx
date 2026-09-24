@@ -1,38 +1,38 @@
-// Module ID: 13790
-// Function ID: 13791
+// Module ID: 13826
+// Function ID: 13827
 // Name: GuildBoostingUpsell
-// Dependencies: [19, 17, 5657, 1378, 21, 4758, 580, 13769, 1119, 9487, 13791, 13792, 13794, 9818, 13795, 9035, 13796, 12696, 13797, 12693, 13798, 9483, 13799, 10515, 558, 568, 504, 13670, 13800, 4693, 13638, 4610, 13647, 13648, 4754, 9501, 13804, 13805, 13806, 2]
+// Dependencies: [19, 17, 5689, 1378, 21, 4790, 580, 13805, 1119, 9519, 13827, 13828, 13830, 9850, 13831, 9067, 13832, 12732, 13833, 12729, 13834, 9515, 13835, 10551, 558, 568, 504, 13706, 13836, 4725, 13674, 4642, 13683, 13684, 4786, 9533, 13840, 13841, 13842, 2]
 
-// Module 13790 (GuildBoostingUpsell)
+// Module 13826 (GuildBoostingUpsell)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import shared from "shared" /* 4610 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ReactionIcon from "ReactionIcon" /* 9035 */;
-import UploadIcon from "UploadIcon" /* 9483 */;
-import BoostGemIcon from "BoostGemIcon" /* 9487 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 9501 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9818 */;
-import StarIcon from "StarIcon" /* 10515 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 12693 */;
-import StickerIcon from "StickerIcon" /* 12696 */;
-import _modDef13638 from "module_13638" /* 13638 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 13670 */;
-import _modDef13769 from "module_13769" /* 13769 */;
-import _modDef13791 from "module_13791" /* 13791 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 13792 */;
-import _modDef13794 from "module_13794" /* 13794 */;
-import _modDef13795 from "module_13795" /* 13795 */;
-import _modDef13796 from "module_13796" /* 13796 */;
-import _modDef13797 from "module_13797" /* 13797 */;
-import _modDef13798 from "module_13798" /* 13798 */;
-import _modDef13799 from "module_13799" /* 13799 */;
-import GuildSubscriptionNoGuilds from "GuildSubscriptionNoGuilds" /* 13800 */;
+import shared from "shared" /* 4642 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ReactionIcon from "ReactionIcon" /* 9067 */;
+import UploadIcon from "UploadIcon" /* 9515 */;
+import BoostGemIcon from "BoostGemIcon" /* 9519 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 9533 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9850 */;
+import StarIcon from "StarIcon" /* 10551 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 12729 */;
+import StickerIcon from "StickerIcon" /* 12732 */;
+import _modDef13674 from "module_13674" /* 13674 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 13706 */;
+import _modDef13805 from "module_13805" /* 13805 */;
+import _modDef13827 from "module_13827" /* 13827 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 13828 */;
+import _modDef13830 from "module_13830" /* 13830 */;
+import _modDef13831 from "module_13831" /* 13831 */;
+import _modDef13832 from "module_13832" /* 13832 */;
+import _modDef13833 from "module_13833" /* 13833 */;
+import _modDef13834 from "module_13834" /* 13834 */;
+import _modDef13835 from "module_13835" /* 13835 */;
+import GuildSubscriptionNoGuilds from "GuildSubscriptionNoGuilds" /* 13836 */;
 import noop from "module_19" /* 19 */;
-import SortedGuildStore from "SortedGuildStore" /* 5657 */;
+import SortedGuildStore from "SortedGuildStore" /* 5689 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -40,7 +40,7 @@ get_ActivityIndicator = fn(17);
 const FractionalPremiumStates = fn(1378).FractionalPremiumStates;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { root: { paddingHorizontal: 16, paddingVertical: 32 }, title: { marginTop: 16 }, features: { marginTop: 16 }, cardText: { lineHeight: 20, marginTop: 8, textAlign: "center" }, guildList: { marginTop: 16 }, logoPremiumGuild: { resizeMode: "contain", width: "100%", height: 34, maxWidth: 320, marginTop: 16 }, imgPremiumGuild: { width: 95, height: 65 }, imgNoGuilds: { width: 178, height: 112, marginTop: 32 }, header: { alignItems: "center" }, upsell: { marginTop: 32, paddingTop: 16, borderTopWidth: 2 * StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.BORDER_SUBTLE }, subscriptionUpsell: { marginTop: 32 } };
 let closure_9 = createStyles.createStyles(obj2);
 class FEATURES_PREMIUM_GUILD_USER {
@@ -72,30 +72,30 @@ class FEATURES_PREMIUM_GUILD_USER {
   }
 }
 function FEATURES_PREMIUM_GUILD() {
-  const obj = { icon: _modDef13795, label: null, IconComponent: null, color: null };
+  const obj = { icon: _modDef13831, label: null, IconComponent: null, color: null };
   const intl = util.intl;
   obj.label = intl.string(util.t.Ts7BVI);
   obj.IconComponent = ReactionIcon.ReactionIcon;
   obj.color = nativeDefault.unsafe_rawColors.PREMIUM_PERK_YELLOW;
   const items = [obj, , , , ];
-  const obj2 = { icon: _modDef13796, label: null, IconComponent: null, color: null };
+  const obj2 = { icon: _modDef13832, label: null, IconComponent: null, color: null };
   const intl2 = util.intl;
   obj2.label = intl2.string(util.t.QcJbt6);
   obj2.IconComponent = StickerIcon.StickerIcon;
   obj2.color = nativeDefault.unsafe_rawColors.PREMIUM_PERK_PURPLE;
   items[1] = obj2;
-  const obj3 = { icon: _modDef13797, label: null, color: "#4173da", IconComponent: null };
+  const obj3 = { icon: _modDef13833, label: null, color: "#4173da", IconComponent: null };
   const intl3 = util.intl;
   obj3.label = intl3.string(util.t.rFNkf5);
   obj3.IconComponent = HeadphonesIcon.HeadphonesIcon;
   items[2] = obj3;
-  const obj4 = { icon: _modDef13798, label: null, IconComponent: null, color: null };
+  const obj4 = { icon: _modDef13834, label: null, IconComponent: null, color: null };
   const intl4 = util.intl;
   obj4.label = intl4.string(util.t["BpjjS/"]);
   obj4.IconComponent = UploadIcon.UploadIcon;
   obj4.color = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK;
   items[3] = obj4;
-  const obj5 = { icon: _modDef13799, label: null, IconComponent: null, color: null };
+  const obj5 = { icon: _modDef13835, label: null, IconComponent: null, color: null };
   const intl5 = util.intl;
   obj5.label = intl5.string(util.t["9g5Lgb"]);
   obj5.IconComponent = StarIcon.StarIcon;
@@ -139,7 +139,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
   }
   ({ root, header } = tmp4);
   if (cResult[2] !== tmp4.imgPremiumGuild) {
-    const obj2 = { style: tmp4.imgPremiumGuild, source: tmp11(13638) };
+    const obj2 = { style: tmp4.imgPremiumGuild, source: tmp11(13674) };
     const tmp18 = React5(React4, obj2);
     cResult[2] = tmp4.imgPremiumGuild;
     cResult[3] = tmp18;
@@ -150,9 +150,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
   const tmp12 = useThemeDefault();
   const tmp13 = FractionalPremiumStates;
   if (tmpResult6.isThemeDark(tmp12)) {
-    let tmp11Result = tmp11(13647);
+    let tmp11Result = tmp11(13683);
   } else {
-    tmp11Result = tmp11(13648);
+    tmp11Result = tmp11(13684);
   }
   if (cResult[4] === tmp4.logoPremiumGuild) {
     if (cResult[5] === tmp11Result) {
@@ -169,7 +169,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
     }
     if (cResult[8] !== tmp4.title) {
       const obj3 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp22 };
-      const tmp26 = React5(tmp(4754).Text, obj3);
+      const tmp26 = React5(tmp(4786).Text, obj3);
       cResult[8] = tmp4.title;
       cResult[9] = tmp26;
       let tmp24 = tmp26;
@@ -187,7 +187,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
     }
     if (cResult[11] !== tmp4.cardText) {
       const obj4 = { style: tmp4.cardText, variant: "text-md/medium", children: tmp27 };
-      const tmp31 = React5(tmp(4754).Text, obj4);
+      const tmp31 = React5(tmp(4786).Text, obj4);
       cResult[11] = tmp4.cardText;
       cResult[12] = tmp31;
       let tmp29 = tmp31;
@@ -212,7 +212,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
             }
             if (cResult[20] !== tmp4.title) {
               const obj5 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp36 };
-              const tmp40 = React5(tmp(4754).Text, obj5);
+              const tmp40 = React5(tmp(4786).Text, obj5);
               cResult[20] = tmp4.title;
               cResult[21] = tmp40;
               let tmp38 = tmp40;
@@ -229,7 +229,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
             }
             if (cResult[23] !== tmp4.features) {
               const obj6 = { style: tmp4.features, features: tmp41 };
-              const tmp46 = React5(tmp11(9501), obj6);
+              const tmp46 = React5(tmp11(9533), obj6);
               cResult[23] = tmp4.features;
               cResult[24] = tmp46;
               let tmp44 = tmp46;
@@ -247,7 +247,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
             }
             if (cResult[26] !== tmp4.title) {
               const obj7 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp47 };
-              const tmp51 = React5(tmp(4754).Text, obj7);
+              const tmp51 = React5(tmp(4786).Text, obj7);
               cResult[26] = tmp4.title;
               cResult[27] = tmp51;
               let tmp49 = tmp51;
@@ -264,7 +264,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
             }
             if (cResult[29] !== tmp4.features) {
               const obj8 = { style: tmp4.features, features: tmp52 };
-              const tmp57 = React5(tmp11(9501), obj8);
+              const tmp57 = React5(tmp11(9533), obj8);
               cResult[29] = tmp4.features;
               cResult[30] = tmp57;
               let tmp55 = tmp57;
@@ -341,7 +341,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
                         let tmp70 = null;
                         if (subscriptionPlansLoaded) {
                           const obj11 = { onLearnMorePremium, style: tmp4.subscriptionUpsell };
-                          tmp70 = React5(tmp11(13806), obj11);
+                          tmp70 = React5(tmp11(13842), obj11);
                         }
                         cResult[41] = subscriptionPlansLoaded;
                         cResult[42] = onLearnMorePremium;
@@ -368,15 +368,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
                   const obj13 = { style: tmp4.cardText, variant: "text-md/medium", children: null };
                   const intl7 = tmp(1119).intl;
                   obj13.children = intl7.string(tmp(1119).t.WRzob8);
-                  const items3 = [tmp65(tmp(4754).Text, obj13), , ];
+                  const items3 = [tmp65(tmp(4786).Text, obj13), , ];
                   const obj14 = { style: null, variant: "text-md/bold", children: null };
                   const items4 = [tmp4.cardText];
                   obj14.style = items4;
                   const intl8 = tmp(1119).intl;
                   obj14.children = intl8.string(tmp(1119).t.j4bXcm);
-                  items3[1] = tmp65(tmp(4754).Text, obj14);
+                  items3[1] = tmp65(tmp(4786).Text, obj14);
                   const obj15 = { style: tmp4.guildList };
-                  items3[2] = tmp65(tmp11(13805), obj15);
+                  items3[2] = tmp65(tmp11(13841), obj15);
                   obj12.children = items3;
                   let tmp67 = obj12;
                 } else {
@@ -387,11 +387,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
                   obj17.style = items6;
                   const intl5 = tmp(1119).intl;
                   obj17.children = intl5.string(tmp(1119).t.FHm4bZ);
-                  items5[1] = tmp65(tmp(4754).Text, obj17);
+                  items5[1] = tmp65(tmp(4786).Text, obj17);
                   const obj18 = { style: tmp4.cardText, variant: "text-md/medium", children: null };
                   const intl6 = tmp(1119).intl;
                   obj18.children = intl6.string(tmp(1119).t.PSLiiu);
-                  items5[2] = tmp65(tmp(4754).Text, obj18);
+                  items5[2] = tmp65(tmp(4786).Text, obj18);
                   obj12.children = items5;
                   tmp67 = obj12;
                 }
@@ -402,7 +402,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
             if (subscriptionPlansLoaded) {
               tmp59 = null;
               if (fractionalState === tmp13.NONE) {
-                tmp59 = React5(tmp11(13804), {});
+                tmp59 = React5(tmp11(13840), {});
               }
             }
             cResult[31] = fractionalState;
@@ -448,13 +448,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
   const obj5 = { style: tmp.header, children: null };
   const tmp8 = useThemeDefault();
   const tmp9 = FractionalPremiumStates;
-  const items1 = [React5(React4, { style: tmp.imgPremiumGuild, source: _modDef13638 }), , , ];
+  const items1 = [React5(React4, { style: tmp.imgPremiumGuild, source: _modDef13674 }), , , ];
   const obj7 = { style: tmp.logoPremiumGuild, source: null };
-  const obj6 = { style: tmp.imgPremiumGuild, source: _modDef13638 };
+  const obj6 = { style: tmp.imgPremiumGuild, source: _modDef13674 };
   if (tmp2Result.isThemeDark(tmp8)) {
-    let tmp7Result = tmp7(13647);
+    let tmp7Result = tmp7(13683);
   } else {
-    tmp7Result = tmp7(13648);
+    tmp7Result = tmp7(13684);
   }
   obj7.source = tmp7Result;
   items1[1] = React5(React4, obj7);
@@ -489,7 +489,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
   if (subscriptionPlansLoaded) {
     tmp13Result = null;
     if (fractionalState === tmp9.NONE) {
-      tmp13Result = tmp13(tmp7(13804), {});
+      tmp13Result = tmp13(tmp7(13840), {});
     }
   }
   const items3 = [tmp13Result, , ];
@@ -498,7 +498,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
     let tmp13Result2 = null;
     if (subscriptionPlansLoaded) {
       const obj15 = { onLearnMorePremium, style: tmp.subscriptionUpsell };
-      tmp13Result2 = tmp13(tmp7(13806), obj15);
+      tmp13Result2 = tmp13(tmp7(13842), obj15);
     }
     items3[2] = tmp13Result2;
     obj14.children = items3;
@@ -511,15 +511,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
       const obj17 = { style: tmp.cardText, variant: "text-md/medium", children: null };
       const intl7 = tmp2(1119).intl;
       obj17.children = intl7.string(tmp2(1119).t.WRzob8);
-      const items4 = [tmp13(tmp2(4754).Text, obj17), , ];
+      const items4 = [tmp13(tmp2(4786).Text, obj17), , ];
       const obj18 = { style: null, variant: "text-md/bold", children: null };
       const items5 = [tmp.cardText];
       obj18.style = items5;
       const intl8 = tmp2(1119).intl;
       obj18.children = intl8.string(tmp2(1119).t.j4bXcm);
-      items4[1] = tmp13(tmp2(4754).Text, obj18);
+      items4[1] = tmp13(tmp2(4786).Text, obj18);
       const obj19 = { style: tmp.guildList };
-      items4[2] = tmp13(tmp7(13805), obj19);
+      items4[2] = tmp13(tmp7(13841), obj19);
       obj16.children = items4;
       let tmp19 = obj16;
     } else {
@@ -530,11 +530,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlot
       obj21.style = items7;
       const intl5 = tmp2(1119).intl;
       obj21.children = intl5.string(tmp2(1119).t.FHm4bZ);
-      items6[1] = tmp13(tmp2(4754).Text, obj21);
+      items6[1] = tmp13(tmp2(4786).Text, obj21);
       const obj22 = { style: tmp.cardText, variant: "text-md/medium", children: null };
       const intl6 = tmp2(1119).intl;
       obj22.children = intl6.string(tmp2(1119).t.PSLiiu);
-      items6[2] = tmp13(tmp2(4754).Text, obj22);
+      items6[2] = tmp13(tmp2(4786).Text, obj22);
       obj16.children = items6;
       tmp19 = obj16;
     }

@@ -1,18 +1,18 @@
-// Module ID: 17371
-// Function ID: 17372
+// Module ID: 17381
+// Function ID: 17382
 // Name: RestrictedMessagePreviewList
-// Dependencies: [19, 17, 4978, 21, 4758, 17372, 580, 558, 568, 5301, 4754, 1119, 4712, 4442, 7409, 504, 8453, 8195, 17373, 8928, 5341, 17374, 2]
+// Dependencies: [19, 17, 5010, 21, 4790, 17382, 580, 558, 568, 5333, 4786, 1119, 4744, 4474, 7441, 504, 8485, 8227, 17383, 8960, 5373, 17384, 2]
 
-// Module 17371 (RestrictedMessagePreviewList)
+// Module 17381 (RestrictedMessagePreviewList)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import DateUtils from "DateUtils" /* 4442 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 5301 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import RestrictedBlockedMessageGroupDefault from "RestrictedBlockedMessageGroup" /* 17374 */;
+import DateUtils from "DateUtils" /* 4474 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 5333 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
+import RestrictedBlockedMessageGroupDefault from "RestrictedBlockedMessageGroup" /* 17384 */;
 import noop from "module_19" /* 19 */;
-import MessageStore from "MessageStore" /* 4978 */;
+import MessageStore from "MessageStore" /* 5010 */;
 
 const require = globalThis.__r;
 
@@ -57,11 +57,11 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
 let closure_9 = { renderEmbeds: false, renderReactions: false, inlineEmbedMedia: false, inlineAttachmentMedia: false, animateEmoji: false, gifAutoPlay: false, timestampHourCycle: 0, renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderComponents: false, renderThreadEmbeds: false, renderReplies: false, renderCommunicationDisabled: false, renderAttachments: false, renderExecutedCommands: false, renderPolls: false, renderSharedClientTheme: false, renderForumPostActions: false, ignoreMentioned: false, ignoreEmbedDescriptionCache: false, forceHideSimpleEmbedContent: false, enableSwipeActions: false, useAlternateEmbedColors: false, restrictedPreview: true };
-const createStyles = fn(4758);
-let obj2 = { container: { flexDirection: "column" }, hiddenMedia: { marginLeft: fn(17372).RESTRICTED_CONTENT_INSET }, messageRow: { position: "relative" }, avatarHitbox: null, dateDivider: null, dividerLine: null, mediaPlaceholderCard: null, mediaHiddenRow: null };
-let size = { position: "absolute", top: 0, left: 0, width: fn(17372).RESTRICTED_CONTENT_INSET, height: fn(17372).RESTRICTED_AVATAR_SIZE };
+const createStyles = fn(4790);
+let obj2 = { container: { flexDirection: "column" }, hiddenMedia: { marginLeft: fn(17382).RESTRICTED_CONTENT_INSET }, messageRow: { position: "relative" }, avatarHitbox: null, dateDivider: null, dividerLine: null, mediaPlaceholderCard: null, mediaHiddenRow: null };
+let size = { position: "absolute", top: 0, left: 0, width: fn(17382).RESTRICTED_CONTENT_INSET, height: fn(17382).RESTRICTED_AVATAR_SIZE };
 obj2.avatarHitbox = size;
-let obj3 = { marginLeft: fn(17372).RESTRICTED_CONTENT_INSET };
+let obj3 = { marginLeft: fn(17382).RESTRICTED_CONTENT_INSET };
 obj2.dateDivider = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_12 };
 let obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_12 };
 obj2.dividerLine = { flex: 1, height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
@@ -80,7 +80,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
     if (cResult[1] === tmp4.mediaPlaceholderCard) {
       const _Symbol = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp11 = closure_6(tmp(4712).CircleInformationIcon, { size: "sm", color: "text-muted" });
+        const tmp11 = closure_6(tmp(4744).CircleInformationIcon, { size: "sm", color: "text-muted" });
         cResult[5] = tmp11;
         let tmp9 = tmp11;
       } else {
@@ -91,7 +91,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
         let obj2 = { variant: "text-sm/normal", color: "text-muted", children: null };
         let intl = tmp(1119).intl;
         obj2.children = intl.string(tmp(1119).t["VGf+K3"]);
-        const tmp14 = closure_6(tmp(4754).Text, obj2);
+        const tmp14 = closure_6(tmp(4786).Text, obj2);
         cResult[6] = tmp14;
         let tmp12 = tmp14;
       } else {

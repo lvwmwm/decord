@@ -1,9 +1,9 @@
-// Module ID: 5278
-// Function ID: 5279
+// Module ID: 5310
+// Function ID: 5311
 // Name: VibegrationsGuildExperiment
 // Dependencies: [2067, 1078, 1438, 558, 568, 504, 2]
 
-// Module 5278 (VibegrationsGuildExperiment)
+// Module 5310 (VibegrationsGuildExperiment)
 import c from "c" /* 568 */;
 import GuildStore from "GuildStore" /* 2067 */;
 

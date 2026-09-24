@@ -1,13 +1,13 @@
-// Module ID: 14049
-// Function ID: 14050
+// Module ID: 14086
+// Function ID: 14087
 // Name: NUFTemplate
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4754, 5188, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4786, 5220, 2]
 
-// Module 14049 (NUFTemplate)
+// Module 14086 (NUFTemplate)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c2, Image: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: 16, alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, title: { textAlign: "center", marginBottom: 8 }, description: { textAlign: "center", lineHeight: 18, marginBottom: 24 }, image: { marginBottom: 24 } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -68,7 +68,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp17 = tmp20;
         }
         const obj3 = { text: CTALabel, size: "md", onPress: onCTAPress, grow: true };
-        const tmp16 = React4(tmp(5188).Button, obj3);
+        const tmp16 = React4(tmp(5220).Button, obj3);
         cResult[9] = CTALabel;
         cResult[10] = onCTAPress;
         cResult[11] = tmp16;
@@ -82,7 +82,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp10 = tmp13;
     }
     const obj5 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: description };
-    const tmp9 = React4(tmp(4754).Text, obj5);
+    const tmp9 = React4(tmp(4786).Text, obj5);
     cResult[3] = description;
     cResult[4] = tmp4.description;
     cResult[5] = tmp9;

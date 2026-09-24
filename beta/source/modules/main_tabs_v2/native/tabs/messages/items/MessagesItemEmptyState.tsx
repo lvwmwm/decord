@@ -1,16 +1,16 @@
-// Module ID: 16432
-// Function ID: 16433
+// Module ID: 16442
+// Function ID: 16443
 // Name: MessagesItemEmptyState
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4617, 16391, 1119, 4754, 5188, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4649, 16401, 1119, 4786, 5220, 2]
 
-// Module 16432 (MessagesItemEmptyState)
+// Module 16442 (MessagesItemEmptyState)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import RootNavigationRef from "RootNavigationRef" /* 4617 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import _modDef16391 from "module_16391" /* 16391 */;
+import RootNavigationRef from "RootNavigationRef" /* 4649 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import _modDef16401 from "module_16401" /* 16401 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { padding: nativeDefault.space.PX_16, flex: 1, height: 325 }, containerImage: null, image: null, body: null, title: null };
 let obj3 = { padding: nativeDefault.space.PX_16, flex: 1, height: 325 };
 obj.containerImage = { marginBottom: nativeDefault.space.PX_16, flexShrink: 1, flexGrow: 1 };
@@ -52,7 +52,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] !== tmp4.image) {
-    let obj2 = { resizeMode: "contain", source: _modDef16391, style: tmp4.image };
+    let obj2 = { resizeMode: "contain", source: _modDef16401, style: tmp4.image };
     const tmp10 = timestampProducer(React4, obj2);
     cResult[1] = tmp4.image;
     cResult[2] = tmp10;
@@ -75,7 +75,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[7] !== tmp4.title) {
       const obj3 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp4.title, maxFontSizeMultiplier: 2, children: tmp13 };
-      const tmp17 = timestampProducer(tmp(4754).Heading, obj3);
+      const tmp17 = timestampProducer(tmp(4786).Heading, obj3);
       cResult[7] = tmp4.title;
       cResult[8] = tmp17;
       let tmp15 = tmp17;
@@ -93,7 +93,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[10] !== tmp4.body) {
       const obj4 = { color: "text-default", variant: "text-md/medium", style: tmp4.body, maxFontSizeMultiplier: 2, children: tmp18 };
-      const tmp22 = timestampProducer(tmp(4754).Text, obj4);
+      const tmp22 = timestampProducer(tmp(4786).Text, obj4);
       cResult[10] = tmp4.body;
       cResult[11] = tmp22;
       let tmp20 = tmp22;
@@ -106,7 +106,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const intl3 = tmp(1119).intl;
       obj5.text = intl3.string(tmp(1119).t.zIJnA6);
       obj5.onPress = first;
-      const tmp25 = timestampProducer(tmp(5188).Button, obj5);
+      const tmp25 = timestampProducer(tmp(5220).Button, obj5);
       cResult[12] = tmp25;
       let tmp23 = tmp25;
     } else {
@@ -153,7 +153,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
   }, []);
-  obj3.source = _modDef16391;
+  obj3.source = _modDef16401;
   obj3.style = tmp.image;
   obj2.children = timestampProducer(React4, obj3);
   const items = [timestampProducer(hasOwnProperty, obj2), , , ];

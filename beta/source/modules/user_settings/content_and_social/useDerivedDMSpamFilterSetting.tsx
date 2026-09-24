@@ -1,15 +1,15 @@
-// Module ID: 15106
-// Function ID: 15107
+// Module ID: 15116
+// Function ID: 15117
 // Name: useDerivedDMSpamFilterSetting
-// Dependencies: [1376, 2025, 558, 568, 2023, 504, 5642, 7543, 1190, 2]
+// Dependencies: [1376, 2025, 558, 568, 2023, 504, 5674, 7575, 1190, 2]
 
-// Module 15106 (useDerivedDMSpamFilterSetting)
+// Module 15116 (useDerivedDMSpamFilterSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5642 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7543 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5674 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7575 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -39,7 +39,7 @@ export const useDerivedDmSpamFilterSettingValue = ReactCompilerGating.isReactCom
   }
   const stateFromStores = initialize.useStateFromStores(tmp5, tmp6);
   const tmpResult = initialize;
-  const isSettingTeenByDefault = RegionalFeatureConfigUtils.useIsSettingTeenByDefault(tmp(7543).SettingsDefaultFeature.SPAM_FILTERS);
+  const isSettingTeenByDefault = RegionalFeatureConfigUtils.useIsSettingTeenByDefault(tmp(7575).SettingsDefaultFeature.SPAM_FILTERS);
   if (setting !== preloaded_user_settings.DmSpamFilterV2.DEFAULT_UNSET) {
     return setting;
   } else {

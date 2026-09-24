@@ -1,30 +1,30 @@
-// Module ID: 16899
-// Function ID: 16900
+// Module ID: 16909
+// Function ID: 16910
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 7222, 1616, 15486, 16894, 4754, 1181, 16900, 1119, 15496, 6863, 7397, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 7254, 1616, 15496, 16904, 4786, 1181, 16910, 1119, 15506, 6895, 7429, 2]
 
-// Module 16899 (GuildRoleSubscriptionPurchaseCard)
+// Module 16909 (GuildRoleSubscriptionPurchaseCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import BottomSheetModal from "BottomSheetModal" /* 6863 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7222 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15486 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 15496 */;
-import Elements from "Elements" /* 16894 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import BottomSheetModal from "BottomSheetModal" /* 6895 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7254 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15496 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 15506 */;
+import Elements from "Elements" /* 16904 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const SubscribeButtonDefault = tmp6(16900);
+const SubscribeButtonDefault = tmp6(16910);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, flex: 1 }, header: { padding: 16, paddingBottom: 24 }, content: null, headerText: null, headerDot: null, seperator: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, flex: 1 };
 obj2.content = { padding: 16, paddingTop: 24, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
@@ -49,7 +49,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const formattedSubscriptionPlan = Elements.useFormattedSubscriptionPlan(listingId);
   if (cResult[0] !== first1) {
     const obj6 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first1 };
-    const tmp12 = timestampProducer(tmp(4754).Text, obj6);
+    const tmp12 = timestampProducer(tmp(4786).Text, obj6);
     cResult[0] = first1;
     cResult[1] = tmp12;
     let tmp10 = tmp12;
@@ -67,7 +67,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[4] !== formattedSubscriptionPlan) {
     const obj8 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: formattedSubscriptionPlan };
-    const tmp19 = timestampProducer(tmp(4754).Text, obj8);
+    const tmp19 = timestampProducer(tmp(4786).Text, obj8);
     cResult[4] = formattedSubscriptionPlan;
     cResult[5] = tmp19;
     let tmp17 = tmp19;
@@ -90,7 +90,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[12] !== first) {
           const obj9 = { variant: "text-sm/normal", color: "text-default", lineClamp: 2, children: first };
-          const tmp28 = timestampProducer(tmp(16894).TruncatedText, obj9);
+          const tmp28 = timestampProducer(tmp(16904).TruncatedText, obj9);
           cResult[12] = first;
           cResult[13] = tmp28;
           let tmp26 = tmp28;
@@ -165,7 +165,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
               if (cResult[30] !== tmp46) {
                 const obj14 = { variant: "text-sm/bold", color: "text-default", style: tmp46, children: tmp47 };
-                const tmp51 = timestampProducer(tmp(4754).Text, obj14);
+                const tmp51 = timestampProducer(tmp(4786).Text, obj14);
                 cResult[30] = tmp46;
                 cResult[31] = tmp51;
                 let tmp49 = tmp51;
@@ -205,7 +205,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       const items1 = [tmp35, tmp39, tmp58];
                       obj16.children = items1;
                       obj15.children = React5(View, obj16);
-                      const tmp65 = timestampProducer(tmp(7397).BottomSheet, obj15);
+                      const tmp65 = timestampProducer(tmp(7429).BottomSheet, obj15);
                       cResult[41] = tmp5.container;
                       cResult[42] = tmp35;
                       cResult[43] = tmp39;
@@ -218,7 +218,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 const obj17 = { scrollsToTop: false, style: tmp5.content, contentContainerStyle: tmp44, children: null };
                 const items2 = [tmp49, tmp52, tmp55];
                 obj17.children = items2;
-                const tmp60 = React5(tmp(6863).BottomSheetScrollView, obj17);
+                const tmp60 = React5(tmp(6895).BottomSheetScrollView, obj17);
                 cResult[36] = tmp5.content;
                 cResult[37] = tmp44;
                 cResult[38] = tmp49;
@@ -227,7 +227,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 tmp58 = tmp60;
               }
               const obj18 = { listingId, guildId };
-              const tmp57 = timestampProducer(tmp(15496).Content, obj18);
+              const tmp57 = timestampProducer(tmp(15506).Content, obj18);
               cResult[33] = guildId;
               cResult[34] = listingId;
               cResult[35] = tmp57;

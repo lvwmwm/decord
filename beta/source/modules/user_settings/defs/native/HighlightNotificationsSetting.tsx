@@ -1,9 +1,9 @@
-// Module ID: 15785
-// Function ID: 15786
+// Module ID: 15795
+// Function ID: 15796
 // Name: HighlightNotificationsSetting
-// Dependencies: [2067, 8238, 1078, 558, 568, 504, 11594, 1119, 15786, 2]
+// Dependencies: [2067, 8270, 1078, 558, 568, 504, 11630, 1119, 15796, 2]
 
-// Module 15785 (HighlightNotificationsSetting)
+// Module 15795 (HighlightNotificationsSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
@@ -30,13 +30,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items = [GuildStore];
   return initialize.useStateFromStores(items, () => guildCount.getGuildCount() > 0);
 });
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.o8Bypv);
   },
-  parent: fn(8238).MobileUserSettings.NOTIFICATIONS,
+  parent: fn(8270).MobileUserSettings.NOTIFICATIONS,
   useDescription() {
     const intl = util.intl;
     return intl.string(util.t["Vw/Xn8"]);

@@ -1,17 +1,17 @@
-// Module ID: 11308
-// Function ID: 11309
+// Module ID: 11344
+// Function ID: 11345
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 7789, 1078, 1089, 21, 558, 568, 9477, 1368, 4431, 11309, 11307, 11310, 11313, 11128, 11121, 11103, 11037, 8471, 8458, 504, 7429, 7409, 2013, 7788, 1119, 11124, 2]
+// Dependencies: [19, 7821, 1078, 1089, 21, 558, 568, 9509, 1368, 4463, 11345, 11343, 11346, 11349, 11164, 11157, 11139, 11073, 8503, 8490, 504, 7461, 7441, 2013, 7820, 1119, 11160, 2]
 
-// Module 11308 (CollectiblesShopGiftModal)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7788 */;
-import BadgeId from "BadgeId" /* 8458 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8471 */;
-import openGiftModal from "openGiftModal" /* 11307 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 11310 */;
-import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 11313 */;
+// Module 11344 (CollectiblesShopGiftModal)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7820 */;
+import BadgeId from "BadgeId" /* 8490 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8503 */;
+import openGiftModal from "openGiftModal" /* 11343 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 11346 */;
+import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 11349 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7789 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7821 */;
 
 require = fn;
 const application_id = fn(1078).COLLECTIBLES_APPLICATION_ID;

@@ -1,18 +1,18 @@
-// Module ID: 16219
-// Function ID: 16220
+// Module ID: 16229
+// Function ID: 16230
 // Name: ParentalControlsUseDataForQuestsSetting
-// Dependencies: [7784, 8238, 558, 568, 15092, 1119, 2486, 11594, 2]
+// Dependencies: [7816, 8270, 558, 568, 15095, 1119, 2486, 11630, 2]
 
-// Module 16219 (ParentalControlsUseDataForQuestsSetting)
+// Module 16229 (ParentalControlsUseDataForQuestsSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import _modDef2486 from "module_2486" /* 2486 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15092 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7784 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15095 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7816 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -34,7 +34,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(_modDef2486.ZhaNu8);
   },
-  parent: fn(8238).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  parent: fn(8270).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(1);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {

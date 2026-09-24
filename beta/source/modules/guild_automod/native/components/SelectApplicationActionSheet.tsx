@@ -1,25 +1,25 @@
-// Module ID: 17970
-// Function ID: 17971
+// Module ID: 17980
+// Function ID: 17981
 // Name: SelectApplicationActionSheet
-// Dependencies: [19, 21, 4758, 580, 558, 568, 1119, 4725, 7396, 5900, 5802, 1401, 7449, 5901, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 1119, 4757, 7428, 5932, 5834, 1401, 7481, 5933, 2]
 
-// Module 17970 (SelectApplicationActionSheet)
+// Module 17980 (SelectApplicationActionSheet)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import TableRadioRow from "TableRadioRow" /* 5900 */;
-import TableRadioGroup from "TableRadioGroup" /* 5901 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import TableRadioRow from "TableRadioRow" /* 5932 */;
+import TableRadioGroup from "TableRadioGroup" /* 5933 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { icon: null };
 let size = { width: 32, height: 32, borderRadius: nativeDefault.radii.md };
 obj2.icon = size;
@@ -72,7 +72,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     let obj2 = { title: first };
-    const tmp9 = jsx(tmp(7396).BottomSheetTitleHeader, { title: first });
+    const tmp9 = jsx(tmp(7428).BottomSheetTitleHeader, { title: first });
     cResult[3] = tmp9;
   } else {
     class S {

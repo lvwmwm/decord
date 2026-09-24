@@ -1,14 +1,14 @@
-// Module ID: 13994
-// Function ID: 13995
+// Module ID: 14030
+// Function ID: 14031
 // Name: NoticeStore
-// Dependencies: [7697, 1378, 1078, 510, 4352, 504, 577, 2]
+// Dependencies: [7729, 1378, 1078, 510, 4384, 504, 577, 2]
 
-// Module 13994 (NoticeStore)
+// Module 14030 (NoticeStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import _modDef4352 from "module_4352" /* 4352 */;
-import UserOfferStore from "UserOfferStore" /* 7697 */;
+import _modDef4384 from "module_4384" /* 4384 */;
+import UserOfferStore from "UserOfferStore" /* 7729 */;
 
 require = fn;
 function clearDismissUntil(arg0) {
@@ -24,10 +24,10 @@ function isNoticeDismissed(PREMIUM_TIER_0_TRIAL_ENDING) {
       value = Storage.get(`${tmp10[PREMIUM_TIER_0_TRIAL_ENDING]}-untilAtLeast`);
       let tmp4 = null;
       if (null != value) {
-        tmp4 = _modDef4352(value);
+        tmp4 = _modDef4384(value);
       }
       if (null != tmp4) {
-        return tmp4.isAfter(_modDef4352());
+        return tmp4.isAfter(_modDef4384());
       }
     }
     let tmp6 = null != tmp11;

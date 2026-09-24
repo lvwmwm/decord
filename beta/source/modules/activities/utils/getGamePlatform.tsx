@@ -1,11 +1,11 @@
-// Module ID: 17221
-// Function ID: 17222
+// Module ID: 17231
+// Function ID: 17232
 // Name: getGamePlatform
-// Dependencies: [1078, 13298, 2]
+// Dependencies: [1078, 13334, 2]
 // Exports: default
 
-// Module 17221 (getGamePlatform)
-import isOnXboxDefault from "isOnXbox" /* 13298 */;
+// Module 17231 (getGamePlatform)
+import isOnXboxDefault from "isOnXbox" /* 13334 */;
 import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 

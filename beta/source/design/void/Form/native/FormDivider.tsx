@@ -1,21 +1,21 @@
-// Module ID: 8882
-// Function ID: 8883
+// Module ID: 8914
+// Function ID: 8915
 // Name: FormDivider
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 4471, 7431, 4608, 5902, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 4503, 7463, 4640, 5934, 2]
 
-// Module 8882 (FormDivider)
+// Module 8914 (FormDivider)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import native from "native" /* 4471 */;
-import RedesignCompat from "RedesignCompat" /* 5902 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7431 */;
+import native from "native" /* 4503 */;
+import RedesignCompat from "RedesignCompat" /* 5934 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7463 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet: hasOwnProperty, Platform } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles(() => {
   const obj = { divider: {}, dividerOuter: { marginLeft: 0, height: hasOwnProperty.hairlineWidth, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: -1 * hasOwnProperty.hairlineWidth }, dividerHasIcon: { marginLeft: 56 } };
   return obj;
@@ -51,12 +51,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             cResult[4] = obj2;
           }
         }
-        const hexOpacityToRgbaResult = tmp(4608).hexOpacityToRgba(obj2[theme], profileThemeValues.dividerOpacity);
+        const hexOpacityToRgbaResult = tmp(4640).hexOpacityToRgba(obj2[theme], profileThemeValues.dividerOpacity);
         cResult[0] = profileThemeValues.dividerOpacity;
         cResult[1] = obj2[theme];
         cResult[2] = hexOpacityToRgbaResult;
         tmp11 = hexOpacityToRgbaResult;
-        const tmpResult4 = tmp(4608);
+        const tmpResult4 = tmp(4640);
       }
     }
   }
@@ -104,9 +104,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const profileThemeValues = obj2.useProfileThemeValues(theme);
   let tmp7 = null;
   if (tmp6) {
-    const obj3 = { backgroundColor: tmp2(4608).hexOpacityToRgba(obj2[theme], profileThemeValues.dividerOpacity) };
+    const obj3 = { backgroundColor: tmp2(4640).hexOpacityToRgba(obj2[theme], profileThemeValues.dividerOpacity) };
     tmp7 = obj3;
-    const tmp2Result = tmp2(4608);
+    const tmp2Result = tmp2(4640);
   }
   let tmp10Result = null;
   if (!noop.useContext(RedesignCompat.RedesignCompatContext)) {

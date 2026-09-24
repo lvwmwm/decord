@@ -1,16 +1,16 @@
-// Module ID: 8121
-// Function ID: 8122
+// Module ID: 8153
+// Function ID: 8154
 // Name: ClientThemesOverrides
-// Dependencies: [19, 4758, 558, 568, 4577, 8122, 2]
+// Dependencies: [19, 4790, 558, 568, 4609, 8154, 2]
 
-// Module 8121 (ClientThemesOverrides)
+// Module 8153 (ClientThemesOverrides)
 import c from "c" /* 568 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4577 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8122 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4609 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8154 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ none: { backgroundColor: "transparent" } });
 fn(558);
 let ReactCompilerGating = fn(558);

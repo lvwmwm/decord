@@ -1,16 +1,16 @@
-// Module ID: 8476
-// Function ID: 8477
+// Module ID: 8508
+// Function ID: 8509
 // Name: useFramePreviewOverrideFrame
-// Dependencies: [19, 7796, 8477, 558, 568, 1977, 2]
+// Dependencies: [19, 7828, 8509, 558, 568, 1977, 2]
 
-// Module 8476 (useFramePreviewOverrideFrame)
+// Module 8508 (useFramePreviewOverrideFrame)
 import c from "c" /* 568 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
 import noop from "module_19" /* 19 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7796 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7828 */;
 
 require = fn;
-let closure_4 = fn(8477).useFramePreviewOverrideStore;
+let closure_4 = fn(8509).useFramePreviewOverrideStore;
 let c5 = "frame-preview-override";
 const ReactCompilerGating = fn(558);
 const size = fn(2);

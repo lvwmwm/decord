@@ -1,15 +1,15 @@
-// Module ID: 14410
-// Function ID: 14411
+// Module ID: 14448
+// Function ID: 14449
 // Name: AIShimmer
-// Dependencies: [32, 109, 19, 17, 21, 4758, 558, 568, 14411, 4471, 4754, 14412, 4497, 14413, 14414, 14408, 2]
+// Dependencies: [32, 109, 19, 17, 21, 4790, 558, 568, 14449, 4503, 4786, 14450, 4529, 14451, 14452, 14446, 2]
 
-// Module 14410 (AIShimmer)
+// Module 14448 (AIShimmer)
 import c from "c" /* 568 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AIShimmerTypes from "AIShimmerTypes" /* 14411 */;
-import waveTransition2 from "waveTransition" /* 14412 */;
-import createWaveTransition from "createWaveTransition" /* 14413 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AIShimmerTypes from "AIShimmerTypes" /* 14449 */;
+import waveTransition2 from "waveTransition" /* 14450 */;
+import createWaveTransition from "createWaveTransition" /* 14451 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -23,7 +23,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
 let c12 = 30;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_13 = createStyles.createStyles((height, height2) => {
   const obj = { container: { alignSelf: "flex-start", height }, sizer: { opacity: 0 }, layer: { position: "absolute", top: 0, left: 0, height }, glyphLayer: null, window: { position: "absolute", top: 0, left: 0, height, overflow: "hidden" } };
   const rect = { position: "absolute", top: (height - height2) / 2, left: 0, height: height2 };
@@ -360,20 +360,20 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
               const tmp21 = closure_45(tmp16);
               if (cResult[14] !== pass.slotA) {
-                const shiftedLineForResult = tmp(14412).shiftedLineFor(pass.slotA);
+                const shiftedLineForResult = tmp(14450).shiftedLineFor(pass.slotA);
                 cResult[14] = pass.slotA;
                 cResult[15] = shiftedLineForResult;
                 let tmp22 = shiftedLineForResult;
-                const tmpResult = tmp(14412);
+                const tmpResult = tmp(14450);
               } else {
                 tmp22 = cResult[15];
               }
               if (cResult[16] !== pass.slotB) {
-                const shiftedLineForResult1 = tmp(14412).shiftedLineFor(pass.slotB);
+                const shiftedLineForResult1 = tmp(14450).shiftedLineFor(pass.slotB);
                 cResult[16] = pass.slotB;
                 cResult[17] = shiftedLineForResult1;
                 let tmp24 = shiftedLineForResult1;
-                const tmpResult2 = tmp(14412);
+                const tmpResult2 = tmp(14450);
               } else {
                 tmp24 = cResult[17];
               }
@@ -808,7 +808,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                 }
                               }
                               const obj11 = { variant, color, lineClamp: 1, ellipsizeMode: "clip", children: shiftedText };
-                              const tmp27 = options(tmp(4754).Text, obj11);
+                              const tmp27 = options(tmp(4786).Text, obj11);
                               cResult[40] = color;
                               cResult[41] = shiftedText;
                               cResult[42] = variant;
@@ -855,7 +855,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj14 = { variant, color, lineClamp: 1, ellipsizeMode: "clip", children: text };
-          const tmp10 = options(tmp(4754).Text, obj14);
+          const tmp10 = options(tmp(4786).Text, obj14);
           cResult[12] = color;
           cResult[13] = text;
           cResult[14] = variant;
@@ -1424,14 +1424,14 @@ export const AIShimmer = noop.memo(ReactCompilerGating.isReactCompilerEnabled() 
     str = tmp5;
   }
   if (undefined === AI_TEXT_EFFECT_DEFAULT_DELAY) {
-    AI_TEXT_EFFECT_DEFAULT_DELAY = tmp(14411).AI_TEXT_EFFECT_DEFAULT_DELAY;
+    AI_TEXT_EFFECT_DEFAULT_DELAY = tmp(14449).AI_TEXT_EFFECT_DEFAULT_DELAY;
   }
   let num7 = 0;
   if (undefined !== tmp6) {
     num7 = tmp6;
   }
   if (undefined === AI_TEXT_EFFECT_DEFAULT_DURATION) {
-    AI_TEXT_EFFECT_DEFAULT_DURATION = tmp(14411).AI_TEXT_EFFECT_DEFAULT_DURATION;
+    AI_TEXT_EFFECT_DEFAULT_DURATION = tmp(14449).AI_TEXT_EFFECT_DEFAULT_DURATION;
   }
   if (cResult[6] === AI_TEXT_EFFECT_DEFAULT_DELAY) {
     if (cResult[7] === AI_TEXT_EFFECT_DEFAULT_DURATION) {

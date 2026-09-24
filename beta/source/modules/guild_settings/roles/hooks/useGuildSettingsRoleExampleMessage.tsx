@@ -1,14 +1,14 @@
-// Module ID: 18069
-// Function ID: 18070
+// Module ID: 18079
+// Function ID: 18080
 // Name: useGuildSettingsRoleExampleMessage
-// Dependencies: [19, 1390, 1078, 558, 568, 4980, 7999, 1119, 8455, 13605, 2]
+// Dependencies: [19, 1390, 1078, 558, 568, 5012, 8031, 1119, 8487, 13641, 2]
 
-// Module 18069 (useGuildSettingsRoleExampleMessage)
+// Module 18079 (useGuildSettingsRoleExampleMessage)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 4980 */;
-import createMessageDefault from "createMessage" /* 7999 */;
-import UserActionCreatorsAll from "UserActionCreators" /* 8455 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5012 */;
+import createMessageDefault from "createMessage" /* 8031 */;
+import UserActionCreatorsAll from "UserActionCreators" /* 8487 */;
 import noop from "module_19" /* 19 */;
 import UserRecord from "UserRecord" /* 1390 */;
 
@@ -28,17 +28,17 @@ export const useGuildSettingsRoleExampleMessage = ReactCompilerGating.isReactCom
     const merged = Object.assign(createMessageDefault(obj3));
     obj2.state = MessageStates.SENT;
     obj2.id = "31337";
-    const messageRecord = tmp(4980).createMessageRecord(obj2);
+    const messageRecord = tmp(5012).createMessageRecord(obj2);
     const obj4 = { id: "313337", username: null, discriminator: "0000", bot: false };
     const intl = tmp(1119).intl;
     obj4.username = intl.string(tmp(1119).t.cqpybK);
     const tmp14 = new UserRecord(obj4);
     messageRecord.author = tmp14;
-    const tmpResult = tmp(4980);
+    const tmpResult = tmp(5012);
     const insertStaticUserResult = UserActionCreatorsAll.insertStaticUser(tmp14);
     if (null != insertStaticUserResult) {
       messageRecord.author = insertStaticUserResult;
-      messageRecord.author.getAvatarURL = () => require("module_13605");
+      messageRecord.author.getAvatarURL = () => require("module_13641");
     }
     cResult[0] = content;
     cResult[1] = messageRecord;

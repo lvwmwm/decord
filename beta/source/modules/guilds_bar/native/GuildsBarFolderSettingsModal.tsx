@@ -1,18 +1,18 @@
-// Module ID: 16630
-// Function ID: 16631
+// Module ID: 16640
+// Function ID: 16641
 // Name: GuildsBarFolderSettingsModal
-// Dependencies: [32, 19, 17, 5657, 16631, 21, 4758, 9470, 7224, 4725, 16632, 1984, 580, 5186, 6846, 1119, 5903, 5822, 1096, 14862, 5839, 558, 568, 504, 16629, 7246, 2]
+// Dependencies: [32, 19, 17, 5689, 16641, 21, 4790, 9502, 7256, 4757, 16642, 1984, 580, 5218, 6878, 1119, 5935, 5854, 1096, 14900, 5871, 558, 568, 504, 16639, 7278, 2]
 
-// Module 16630 (GuildsBarFolderSettingsModal)
+// Module 16640 (GuildsBarFolderSettingsModal)
 import util from "util" /* 1119 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 9470 */;
-import GuildsBarFolderSettingsModalActionCreators from "GuildsBarFolderSettingsModalActionCreators" /* 16629 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import UserSettingsActionCreators from "UserSettingsActionCreators" /* 9502 */;
+import GuildsBarFolderSettingsModalActionCreators from "GuildsBarFolderSettingsModalActionCreators" /* 16639 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SortedGuildStore from "SortedGuildStore" /* 5657 */;
+import SortedGuildStore from "SortedGuildStore" /* 5689 */;
 
 require = fn;
 function GuildFolderSettingsScene(color) {
@@ -30,10 +30,10 @@ function GuildFolderSettingsScene(color) {
     if (color == null) {
       tmp3 = defaultColor;
     }
-    obj.openLazy(asyncRequireImpl(16632, dependencyMap.paths), "RoleColorPicker", { color: tmp3, defaultColor, onSelect: onColorChange });
+    obj.openLazy(asyncRequireImpl(16642, dependencyMap.paths), "RoleColorPicker", { color: tmp3, defaultColor, onSelect: onColorChange });
   }, items);
   obj2.padding = onColorChange(580).space.PX_16;
-  obj2.paddingBottom = 38 + onColorChange(7224)().insets.bottom;
+  obj2.paddingBottom = 38 + onColorChange(7256)().insets.bottom;
   obj.contentContainerStyle = obj2;
   const obj3 = { spacing: onColorChange(580).space.PX_16, children: null };
   const obj4 = { label: null, placeholder: null, value: null, onChange: null, maxLength: 32, autoFocus: true, clearable: true };
@@ -43,7 +43,7 @@ function GuildFolderSettingsScene(color) {
   obj4.placeholder = intl2.string(color(1119).t.xV9hVh);
   obj4.value = name;
   obj4.onChange = onNameChange;
-  const items1 = [closure_10(color(6846).TextInput, obj4), ];
+  const items1 = [closure_10(color(6878).TextInput, obj4), ];
   const obj5 = { label: null, subLabel: null, onPress: null, arrow: true, trailing: null };
   const intl3 = color(1119).intl;
   obj5.label = intl3.string(color(1119).t.xpurRF);
@@ -61,20 +61,20 @@ function GuildFolderSettingsScene(color) {
     tmp11 = closure_8;
   }
   const obj6 = { hasIcons: false, children: null };
-  obj5.trailing = closure_10(onColorChange(14862), { color: tmp11, style: tmp.colorBlock });
-  obj6.children = closure_10(color(5822).TableRow, obj5);
-  items1[1] = closure_10(color(5903).TableRowGroup, obj6);
+  obj5.trailing = closure_10(onColorChange(14900), { color: tmp11, style: tmp.colorBlock });
+  obj6.children = closure_10(color(5854).TableRow, obj5);
+  items1[1] = closure_10(color(5935).TableRowGroup, obj6);
   obj3.children = items1;
-  obj.children = closure_11(color(5186).Stack, obj3);
+  obj.children = closure_11(color(5218).Stack, obj3);
   return closure_10(closure_6, obj);
 }
 get_ActivityIndicator = fn(17);
 ({ Keyboard: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const GuildsBarConstants = fn(16631);
+const GuildsBarConstants = fn(16641);
 ({ DEFAULT_FOLDER_COLOR: closure_8, normalizeFolderColor: closure_9 } = GuildsBarConstants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_12 = createStyles.createStyles({ scrollView: { flex: 1 }, colorBlock: { marginHorizontal: 0, marginVertical: 0, minWidth: 24, height: 24, borderRadius: 3 } });
 let c14 = "Folder Settings";
 const ReactCompilerGating = fn(558);
@@ -137,7 +137,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((folderId) => {
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
         const fn2 = function w() {
-          const result = folderId(16629).hideGuildsBarFolderModal();
+          const result = folderId(16639).hideGuildsBarFolderModal();
         };
         cResult[8] = fn2;
         let tmp15 = fn2;
@@ -197,7 +197,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((folderId) => {
       };
       const intl = tmp(1119).intl;
       obj3.title = intl.string(tmp(1119).t.Dx7im5);
-      obj3.headerLeft = tmp(5839).getHeaderCloseButton(tmp15);
+      obj3.headerLeft = tmp(5871).getHeaderCloseButton(tmp15);
       if (tmp13) {
         class P {
           constructor(arg0) {
@@ -242,7 +242,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((folderId) => {
       cResult[13] = first1;
       cResult[14] = tmp13;
       cResult[15] = obj4;
-      const tmpResult2 = tmp(5839);
+      const tmpResult2 = tmp(5871);
     }
   }
   class S {
@@ -354,13 +354,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((folderId) => {
     obj2.headerLeft = NavigatorHeader.getHeaderCloseButton(callback1);
     if (closure_5) {
       const intl2 = tmp3(1119).intl;
-      let fn = tmp3(5839).getHeaderTextButton(intl2.string(tmp3(1119).t["R3BPH+"]), callback);
-      const tmp3Result = tmp3(5839);
+      let fn = tmp3(5871).getHeaderTextButton(intl2.string(tmp3(1119).t["R3BPH+"]), callback);
+      const tmp3Result = tmp3(5871);
     } else {
       fn = () => null;
     }
     obj2.headerRight = fn;
     return { [c14]: obj2 };
   }, items3);
-  return closure_10(folderId(7246).Navigator, { screens: memo, initialRouteName });
+  return closure_10(folderId(7278).Navigator, { screens: memo, initialRouteName });
 });

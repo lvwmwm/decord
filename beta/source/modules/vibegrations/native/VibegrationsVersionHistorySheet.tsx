@@ -1,21 +1,21 @@
-// Module ID: 16995
-// Function ID: 16996
+// Module ID: 17005
+// Function ID: 17006
 // Name: VibegrationsVersionHistorySheet
-// Dependencies: [32, 19, 17, 13364, 21, 4758, 580, 7882, 558, 568, 1616, 5116, 1119, 3682, 4725, 4754, 5822, 5903, 7396, 7449, 6863, 2]
+// Dependencies: [32, 19, 17, 13400, 21, 4790, 580, 7914, 558, 568, 1616, 5148, 1119, 3714, 4757, 4786, 5854, 5935, 7428, 7481, 6895, 2]
 
-// Module 16995 (VibegrationsVersionHistorySheet)
+// Module 17005 (VibegrationsVersionHistorySheet)
 import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const fetchSourceHistory = fn(13364).fetchSourceHistory;
+const fetchSourceHistory = fn(13400).fetchSourceHistory;
 const jsx = fn(21).jsx;
 const VibegrationsVersionHistorySheet = "VibegrationsVersionHistorySheet";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { state: { alignItems: "center", padding: nativeDefault.space.PX_24 } };
 let closure_10 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -73,16 +73,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       closure_0 = arg0;
       const obj2 = { key: "VibegrationsVersionHistoryRestore", title: null, content: null, confirmText: null, onConfirm: null };
       const intl = projectId(1119).intl;
-      obj2.title = intl.string(onRestore(3682).qOUOPE);
+      obj2.title = intl.string(onRestore(3714).qOUOPE);
       const intl2 = projectId(1119).intl;
-      obj2.content = intl2.string(onRestore(3682).k2JBj5);
+      obj2.content = intl2.string(onRestore(3714).k2JBj5);
       const intl3 = projectId(1119).intl;
-      obj2.confirmText = intl3.string(onRestore(3682)["+sRK16"]);
+      obj2.confirmText = intl3.string(onRestore(3714)["+sRK16"]);
       obj2.onConfirm = function onConfirm() {
         ActionSheetActionCreatorsDefault.hideActionSheet(VibegrationsVersionHistorySheet);
         onRestore(closure_0);
       };
-      projectId(5116).showConfirmModal(obj2);
+      projectId(5148).showConfirmModal(obj2);
     };
     cResult[4] = onRestore;
     cResult[5] = fn2;
@@ -113,8 +113,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
         const obj5 = { variant: "text-md/normal", color: "text-muted", children: null };
         let intl2 = tmp(1119).intl;
-        obj5.children = intl2.string(tmp4(3682)["mSJn+K"]);
-        const tmp27 = jsx(tmp(4754).Text, { variant: "text-md/normal", color: "text-muted", children: null });
+        obj5.children = intl2.string(tmp4(3714)["mSJn+K"]);
+        const tmp27 = jsx(tmp(4786).Text, { variant: "text-md/normal", color: "text-muted", children: null });
         cResult[9] = tmp27;
         let tmp25 = tmp27;
       } else {
@@ -135,8 +135,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
         const obj7 = { variant: "text-md/normal", color: "text-muted", children: null };
         let intl = tmp(1119).intl;
-        obj7.children = intl.string(tmp4(3682).TOmYPT);
-        const tmp20 = jsx(tmp(4754).Text, { variant: "text-md/normal", color: "text-muted", children: null });
+        obj7.children = intl.string(tmp4(3714).TOmYPT);
+        const tmp20 = jsx(tmp(4786).Text, { variant: "text-md/normal", color: "text-muted", children: null });
         cResult[12] = tmp20;
         let tmp18 = tmp20;
       } else {
@@ -157,7 +157,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         if (cResult[16] === tmp10) {
           if (cResult[20] !== cResult[17]) {
             const obj9 = { hasIcons: false, children: tmp11 };
-            const tmp17 = jsx(tmp(5903).TableRowGroup, { hasIcons: false, children: tmp11 });
+            const tmp17 = jsx(tmp(5935).TableRowGroup, { hasIcons: false, children: tmp11 });
             cResult[20] = tmp11;
             cResult[21] = tmp17;
             tmp15 = tmp17;
@@ -252,8 +252,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       }
       const obj10 = { title: null };
       let intl3 = tmp(1119).intl;
-      obj10.title = intl3.string(tmp4(3682).jAWwzi);
-      const tmp42 = jsx(tmp(7396).BottomSheetTitleHeader, { title: null });
+      obj10.title = intl3.string(tmp4(3714).jAWwzi);
+      const tmp42 = jsx(tmp(7428).BottomSheetTitleHeader, { title: null });
       cResult[22] = tmp42;
       const tmp41 = tmp42;
     } else {
@@ -361,8 +361,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     }
     const obj11 = { scrollable: true, header: tmp41, children: null };
     const obj12 = { contentContainerStyle: tmp43, children: tmp15 };
-    obj11.children = jsx(tmp(6863).BottomSheetScrollView, { contentContainerStyle: tmp43, children: tmp15 });
-    const tmp47 = jsx(tmp(7449).ActionSheet, { scrollable: true, header: tmp41, children: null });
+    obj11.children = jsx(tmp(6895).BottomSheetScrollView, { contentContainerStyle: tmp43, children: tmp15 });
+    const tmp47 = jsx(tmp(7481).ActionSheet, { scrollable: true, header: tmp41, children: null });
     cResult[25] = tmp15;
     cResult[26] = tmp43;
     cResult[27] = tmp47;
@@ -416,16 +416,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     const obj3 = { style: tmp.state, accessibilityRole: "alert", children: null };
     const obj4 = { variant: "text-md/normal", color: "text-muted", children: null };
     let intl2 = projectId(1119).intl;
-    obj4.children = intl2.string(tmp2(3682)["mSJn+K"]);
-    obj3.children = jsx(projectId(4754).Text, { variant: "text-md/normal", color: "text-muted", children: null });
+    obj4.children = intl2.string(tmp2(3714)["mSJn+K"]);
+    obj3.children = jsx(projectId(4786).Text, { variant: "text-md/normal", color: "text-muted", children: null });
     tmp9 = <closure_6 style={tmp.state} accessibilityRole="alert">{null}</closure_6>;
     tmp7 = jsx;
   } else if (0 === tmp5.entries.length) {
     const obj5 = { style: tmp.state, children: null };
     const obj6 = { variant: "text-md/normal", color: "text-muted", children: null };
     let intl = projectId(1119).intl;
-    obj6.children = intl.string(tmp2(3682).TOmYPT);
-    obj5.children = jsx(projectId(4754).Text, { variant: "text-md/normal", color: "text-muted", children: null });
+    obj6.children = intl.string(tmp2(3714).TOmYPT);
+    obj5.children = jsx(projectId(4786).Text, { variant: "text-md/normal", color: "text-muted", children: null });
     tmp9 = <closure_6 style={tmp.state}>{null}</closure_6>;
     tmp7 = jsx;
   } else {
@@ -447,15 +447,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       };
       return jsx(projectId(_undefined[16]).TableRow, { label: subject.subject.replace(/^Build: /, ""), subLabel: null, arrow: true, onPress: null }, subject.sha);
     });
-    tmp9 = jsx(projectId(5903).TableRowGroup, { hasIcons: false, children: null });
+    tmp9 = jsx(projectId(5935).TableRowGroup, { hasIcons: false, children: null });
   }
   const obj7 = { scrollable: true, header: null, children: null };
   const obj8 = { title: null };
   let intl3 = projectId(1119).intl;
-  obj8.title = intl3.string(onRestore(3682).jAWwzi);
-  obj7.header = tmp7(projectId(7396).BottomSheetTitleHeader, obj8);
+  obj8.title = intl3.string(onRestore(3714).jAWwzi);
+  obj7.header = tmp7(projectId(7428).BottomSheetTitleHeader, obj8);
   const tmp4 = _slicedToArray(noop.useState({ status: "loading" }), 2);
-  obj7.children = tmp7(projectId(6863).BottomSheetScrollView, { contentContainerStyle: { paddingBottom: onRestore(1616)().bottom }, children: tmp9 });
-  return tmp7(projectId(7449).ActionSheet, obj7);
+  obj7.children = tmp7(projectId(6895).BottomSheetScrollView, { contentContainerStyle: { paddingBottom: onRestore(1616)().bottom }, children: tmp9 });
+  return tmp7(projectId(7481).ActionSheet, obj7);
 });
 export const VIBEGRATIONS_VERSION_HISTORY_SHEET_KEY = "VibegrationsVersionHistorySheet";

@@ -1,12 +1,12 @@
-// Module ID: 14229
-// Function ID: 14230
+// Module ID: 14266
+// Function ID: 14267
 // Name: GuildBadgeSpider
-// Dependencies: [109, 19, 21, 558, 568, 14189, 8733, 2]
+// Dependencies: [109, 19, 21, 558, 568, 14226, 8765, 2]
 
-// Module 14229 (GuildBadgeSpider)
+// Module 14266 (GuildBadgeSpider)
 import c from "c" /* 568 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14189 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14226 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -62,7 +62,7 @@ export const GuildBadgeSpider = ReactCompilerGating.isReactCompilerEnabled() ? (
     ({ primaryColorsTransformed, secondaryColorsTransformed } = tmp12);
     if (cResult[9] !== primaryColorsTransformed[1]) {
       const obj2 = { d: "M7 11h-1v-1h1v1ZM10 11h-1v-1h1v1ZM9 10h-2v-1h2v1ZM10 5h-1v1h-2v-1h-1v-2h4v2Z", fill: primaryColorsTransformed[1] };
-      const tmp16 = React4(tmp(8733).Path, obj2);
+      const tmp16 = React4(tmp(8765).Path, obj2);
       cResult[9] = primaryColorsTransformed[1];
       cResult[10] = tmp16;
       let tmp14 = tmp16;
@@ -78,7 +78,7 @@ export const GuildBadgeSpider = ReactCompilerGating.isReactCompilerEnabled() ? (
     }
     if (cResult[11] !== str) {
       const obj3 = { d: "M9 12h-2v-2h2v2ZM6 6h1v1h2v-1h1v-1h1v3h-1v1h-1v-1h-2v1h-1v-1h-1V5h1v1Z", fill: str };
-      const tmp20 = React4(tmp(8733).Path, obj3);
+      const tmp20 = React4(tmp(8765).Path, obj3);
       cResult[11] = str;
       cResult[12] = tmp20;
       let tmp18 = tmp20;
@@ -87,7 +87,7 @@ export const GuildBadgeSpider = ReactCompilerGating.isReactCompilerEnabled() ? (
     }
     if (cResult[13] !== primaryColorsTransformed[0]) {
       const obj4 = { d: "M9 13v1h-2v-1h2ZM7 12h-1v-1h1v1ZM10 12h-1v-1h1v1ZM9 7h-2v-1h2v1ZM7 6h-1v-1h1v1ZM10 6h-1v-1h1v1ZM6 5h-1v-1h1v1ZM11 5h-1v-1h1v1Z", fill: primaryColorsTransformed[0] };
-      const tmp23 = React4(tmp(8733).Path, obj4);
+      const tmp23 = React4(tmp(8765).Path, obj4);
       cResult[13] = primaryColorsTransformed[0];
       cResult[14] = tmp23;
       let tmp21 = tmp23;
@@ -96,9 +96,9 @@ export const GuildBadgeSpider = ReactCompilerGating.isReactCompilerEnabled() ? (
     }
     const _Symbol = Symbol;
     if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp29 = React4(tmp(8733).Path, { d: "M7 14h-1v-1h1v1ZM10 14h-1v-1h1v1Z", fill: "#35ED7E" });
-      const tmp30 = React4(tmp(8733).Path, { d: "M3 7h1V4h1v4h1v1h1v1h-1v2h4v-2h-1v-1h1v-1h1V4h1v3h1V3h1v1h1v3h-1v1h-1v1h-1v1h-1v1h1v-1h2v-1h2v1h-1v1h-1v1h-2v1h2v1h1v1h1v1h-2v-1h-2v-1h-2v-1H6v1h-2v1H2v1H0v-1h1v-1h1v-1h2v-1H2v-1H1v-1H0v-1h2v1h2v-1h-1v-1H2v-1H1V4h1v-1h1v4Zm1 4h1v-1h-1v1Z", fill: "black", fillRule: "evenodd" });
-      const tmp31 = React4(tmp(8733).Path, { d: "M10 16h-1v-1h-2v1h-1v-2h4v2ZM9 9h-2v-1h2v1ZM6 4h-1v-1h1v1ZM11 4h-1v-1h1v1ZM4 3h-1V2h1v1ZM9 2h1v1H6V2h2V0h1v2ZM13 3h-1V2h1v1Z", fill: "black" });
+      const tmp29 = React4(tmp(8765).Path, { d: "M7 14h-1v-1h1v1ZM10 14h-1v-1h1v1Z", fill: "#35ED7E" });
+      const tmp30 = React4(tmp(8765).Path, { d: "M3 7h1V4h1v4h1v1h1v1h-1v2h4v-2h-1v-1h1v-1h1V4h1v3h1V3h1v1h1v3h-1v1h-1v1h-1v1h-1v1h1v-1h2v-1h2v1h-1v1h-1v1h-2v1h2v1h1v1h1v1h-2v-1h-2v-1h-2v-1H6v1h-2v1H2v1H0v-1h1v-1h1v-1h2v-1H2v-1H1v-1H0v-1h2v1h2v-1h-1v-1H2v-1H1V4h1v-1h1v4Zm1 4h1v-1h-1v1Z", fill: "black", fillRule: "evenodd" });
+      const tmp31 = React4(tmp(8765).Path, { d: "M10 16h-1v-1h-2v1h-1v-2h4v2ZM9 9h-2v-1h2v1ZM6 4h-1v-1h1v1ZM11 4h-1v-1h1v1ZM4 3h-1V2h1v1ZM9 2h1v1H6V2h2V0h1v2ZM13 3h-1V2h1v1Z", fill: "black" });
       cResult[15] = tmp31;
       cResult[16] = tmp29;
       cResult[17] = tmp30;
@@ -132,7 +132,7 @@ export const GuildBadgeSpider = ReactCompilerGating.isReactCompilerEnabled() ? (
     obj5.fill = "none";
     items = [tmp14, tmp18, tmp21, tmp26, tmp27, tmp25];
     obj5.children = items;
-    const tmp37 = hasOwnProperty(tmp(8733).Svg, obj5);
+    const tmp37 = hasOwnProperty(tmp(8765).Svg, obj5);
     cResult[18] = num8;
     cResult[19] = tmp5;
     cResult[20] = tmp14;

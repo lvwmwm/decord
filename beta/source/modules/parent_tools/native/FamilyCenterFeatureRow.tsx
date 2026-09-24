@@ -1,31 +1,31 @@
-// Module ID: 15152
-// Function ID: 15153
+// Module ID: 15162
+// Function ID: 15163
 // Name: FamilyCenterFeatureRow
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 2486, 12050, 15153, 15154, 12524, 7211, 10096, 15149, 4754, 5186, 5903, 5822, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 2486, 12086, 15163, 15164, 12560, 7243, 10135, 15159, 4786, 5218, 5935, 5854, 2]
 
-// Module 15152 (FamilyCenterFeatureRow)
+// Module 15162 (FamilyCenterFeatureRow)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import _modDef2486 from "module_2486" /* 2486 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import TableRow from "TableRow" /* 5822 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import EyeIcon from "EyeIcon" /* 7211 */;
-import _modDef10096 from "module_10096" /* 10096 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 12050 */;
-import _modDef12524 from "module_12524" /* 12524 */;
-import QrCodeIcon from "QrCodeIcon" /* 15149 */;
-import _modDef15153 from "module_15153" /* 15153 */;
-import ChatCheckIcon from "ChatCheckIcon" /* 15154 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import TableRow from "TableRow" /* 5854 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import EyeIcon from "EyeIcon" /* 7243 */;
+import _modDef10135 from "module_10135" /* 10135 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 12086 */;
+import _modDef12560 from "module_12560" /* 12560 */;
+import QrCodeIcon from "QrCodeIcon" /* 15159 */;
+import _modDef15163 from "module_15163" /* 15163 */;
+import ChatCheckIcon from "ChatCheckIcon" /* 15164 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { tableGroup: { marginTop: 20, marginBottom: nativeDefault.space.PX_24 } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -88,7 +88,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp23 = cResult[6];
   }
   if (cResult[7] !== ageSpecificText) {
-    const obj2 = { icon: _modDef15153, IconComponent: tmp(15154).ChatCheckIcon, header: tmp23, description: ageSpecificText };
+    const obj2 = { icon: _modDef15163, IconComponent: tmp(15164).ChatCheckIcon, header: tmp23, description: ageSpecificText };
     cResult[7] = ageSpecificText;
     cResult[8] = obj2;
     let tmp26 = obj2;
@@ -104,7 +104,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp28 = cResult[9];
   }
   if (cResult[10] !== ageSpecificText1) {
-    const obj3 = { icon: _modDef12524, IconComponent: tmp(7211).EyeIcon, header: tmp28, description: ageSpecificText1 };
+    const obj3 = { icon: _modDef12560, IconComponent: tmp(7243).EyeIcon, header: tmp28, description: ageSpecificText1 };
     cResult[10] = ageSpecificText1;
     cResult[11] = obj3;
     let tmp31 = obj3;
@@ -120,7 +120,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp33 = cResult[12];
   }
   if (cResult[13] !== ageSpecificText2) {
-    const obj4 = { icon: _modDef10096, IconComponent: tmp(15149).QrCodeIcon, header: tmp33, description: ageSpecificText2 };
+    const obj4 = { icon: _modDef10135, IconComponent: tmp(15159).QrCodeIcon, header: tmp33, description: ageSpecificText2 };
     cResult[13] = ageSpecificText2;
     cResult[14] = obj4;
     let tmp36 = obj4;
@@ -137,7 +137,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const obj5 = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-muted", children: null };
         const intl10 = tmp(1119).intl;
         obj5.children = intl10.string(_modDef2486["6JkHSg"]);
-        const tmp41 = React4(tmp(4754).Text, obj5);
+        const tmp41 = React4(tmp(4786).Text, obj5);
         cResult[19] = tmp41;
         let tmp38 = tmp41;
       } else {
@@ -154,9 +154,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   return closure_1_4(TableRow.TableRow, { label: header, subLabel: description, icon: closure_1_4(TableRow.TableRow.Icon, { source: icon, IconComponent }) }, header);
                 })
         };
-        items[1] = React4(tmp(5903).TableRowGroup, obj7);
+        items[1] = React4(tmp(5935).TableRowGroup, obj7);
         obj6.children = items;
-        const tmp45 = hasOwnProperty(tmp(5186).Stack, obj6);
+        const tmp45 = hasOwnProperty(tmp(5218).Stack, obj6);
         cResult[20] = arr;
         cResult[21] = tmp45;
         let tmp42 = tmp45;
@@ -200,18 +200,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const intl6 = util.intl;
   const obj4 = { icon: null, IconComponent: null, header: null, description: null };
   const ageSpecificText2 = obj3.useAgeSpecificText(intl5.string(_modDef2486["+pi4Yt"]), intl6.string(_modDef2486["1xPTwE"]));
-  obj4.icon = _modDef15153;
+  obj4.icon = _modDef15163;
   obj4.IconComponent = ChatCheckIcon.ChatCheckIcon;
   const intl7 = util.intl;
   obj4.header = intl7.string(_modDef2486["001l3m"]);
   obj4.description = ageSpecificText;
   const items = [obj4, , ];
-  const obj5 = { icon: _modDef12524, IconComponent: EyeIcon.EyeIcon, header: null, description: null };
+  const obj5 = { icon: _modDef12560, IconComponent: EyeIcon.EyeIcon, header: null, description: null };
   const intl8 = util.intl;
   obj5.header = intl8.string(_modDef2486.yipAeP);
   obj5.description = ageSpecificText1;
   items[1] = obj5;
-  const obj6 = { icon: _modDef10096, IconComponent: QrCodeIcon.QrCodeIcon, header: null, description: null };
+  const obj6 = { icon: _modDef10135, IconComponent: QrCodeIcon.QrCodeIcon, header: null, description: null };
   const intl9 = util.intl;
   obj6.header = intl9.string(_modDef2486.hhOuMe);
   obj6.description = ageSpecificText2;

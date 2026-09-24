@@ -1,16 +1,16 @@
-// Module ID: 12057
-// Function ID: 12058
+// Module ID: 12093
+// Function ID: 12094
 // Name: ModalFooter
-// Dependencies: [19, 17, 21, 4758, 558, 568, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 2]
 
-// Module 12057 (ModalFooter)
+// Module 12093 (ModalFooter)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ footer: { flexDirection: "column", paddingVertical: 16, paddingHorizontal: 24 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

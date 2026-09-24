@@ -1,13 +1,13 @@
-// Module ID: 6048
-// Function ID: 6049
+// Module ID: 6080
+// Function ID: 6081
 // Name: BrushIllocon
-// Dependencies: [21, 558, 568, 6049, 5802, 2]
+// Dependencies: [21, 558, 568, 6081, 5834, 2]
 
-// Module 6048 (BrushIllocon)
+// Module 6080 (BrushIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6049 from "module_6049" /* 6049 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6081 from "module_6081" /* 6081 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const BrushIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6049 };
+    const obj2 = { uri: _modDef6081 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const BrushIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6049 };
+  const obj2 = { uri: _modDef6081 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

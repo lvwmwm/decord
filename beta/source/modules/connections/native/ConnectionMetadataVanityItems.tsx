@@ -1,29 +1,29 @@
-// Module ID: 11695
-// Function ID: 11696
+// Module ID: 11731
+// Function ID: 11732
 // Name: ConnectionMetadataVanityItems
-// Dependencies: [19, 17, 5627, 21, 4758, 580, 1119, 11696, 11697, 558, 568, 12, 1885, 4754, 1181, 5626, 2]
+// Dependencies: [19, 17, 5659, 21, 4790, 580, 1119, 11732, 11733, 558, 568, 12, 1885, 4786, 1181, 5658, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 11695 (ConnectionMetadataVanityItems)
+// Module 11731 (ConnectionMetadataVanityItems)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import NumberUtils from "NumberUtils" /* 1885 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 5626 */;
-import _modDef11696 from "module_11696" /* 11696 */;
-import _modDef11697 from "module_11697" /* 11697 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 5658 */;
+import _modDef11732 from "module_11732" /* 11732 */;
+import _modDef11733 from "module_11733" /* 11733 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const Constants = fn(5627);
+const Constants = fn(5659);
 ({ MetadataFields: closure_4, MetadataItemTypes: hasOwnProperty } = Constants);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { connectedAccountVanityMetadata: { marginTop: 4, paddingRight: 8 }, connectedAccountVanityMetadataItem: { flexDirection: "row", alignItems: "center" }, connectedAccountVanityMetadataItemIcon: { height: 18, width: 18, marginRight: 8 }, connectedAccountVanityMetadataTag: { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, paddingHorizontal: 8, paddingVertical: 1, marginRight: 8 }, paypalVerifiedTag: null, paypalVerifiedTagText: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, paddingHorizontal: 8, paddingVertical: 1, marginRight: 8 };
 obj2.paypalVerifiedTag = { backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND };
@@ -113,7 +113,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return tmp13;
         }
         const obj4 = { variant: "text-xs/normal", color: "text-muted", style: tmp12, children: tmp7 };
-        const tmp15 = timestampProducer(tmp(4754).Text, obj4);
+        const tmp15 = timestampProducer(tmp(4786).Text, obj4);
         cResult[9] = tmp12;
         cResult[10] = tmp7;
         cResult[11] = tmp15;
@@ -195,7 +195,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp12 = tmp15;
           }
           const obj3 = { variant: "text-xs/normal", color: "text-muted", style, children: label };
-          const tmp11 = timestampProducer(tmp(4754).Text, obj3);
+          const tmp11 = timestampProducer(tmp(4786).Text, obj3);
           cResult[8] = label;
           cResult[9] = style;
           cResult[10] = tmp11;
@@ -305,7 +305,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return tmp8;
         }
         const obj2 = { variant: "text-xs/normal", color: "text-muted", style: tmp5, children: tmp6 };
-        const tmp10 = timestampProducer(tmp(4754).Text, obj2);
+        const tmp10 = timestampProducer(tmp(4786).Text, obj2);
         cResult[7] = tmp5;
         cResult[8] = tmp6;
         cResult[9] = tmp10;
@@ -313,14 +313,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const intl = tmp(1119).intl;
-    const obj3 = { value: tmp(5626).getCreatedAtDate(date, locale), name: label };
+    const obj3 = { value: tmp(5658).getCreatedAtDate(date, locale), name: label };
     const formatResult = intl.format(tmp(1119).t.HLoinF, obj3);
     cResult[3] = date;
     cResult[4] = label;
     cResult[5] = locale;
     cResult[6] = formatResult;
     tmp6 = formatResult;
-    const tmpResult = tmp(5626);
+    const tmpResult = tmp(5658);
   }
   const items = [tmp4.connectedAccountVanityMetadata, style];
   cResult[0] = style;
@@ -438,7 +438,7 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
     const intl = util.intl;
     const obj3 = { count: NumberResult1 };
     obj2.label = intl.format(util.t.Y88M5x, obj3);
-    obj2.imageSrc = _modDef11696;
+    obj2.imageSrc = _modDef11732;
     const intl2 = util.intl;
     obj2.imageAlt = intl2.string(util.t.HKUEZo);
     items.push(timestampProducer(closure_11, obj2, tmp2.STEAM_ITEM_COUNT_DOTA2));
@@ -448,7 +448,7 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
     const intl3 = util.intl;
     const obj5 = { count: NumberResult2 };
     obj4.label = intl3.format(util.t.Y88M5x, obj5);
-    obj4.imageSrc = _modDef11697;
+    obj4.imageSrc = _modDef11733;
     const intl4 = util.intl;
     obj4.imageAlt = intl4.string(util.t.C8p1Sh);
     items.push(timestampProducer(closure_11, obj4, tmp2.STEAM_ITEM_COUNT_TF2));

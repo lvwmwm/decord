@@ -1,13 +1,13 @@
-// Module ID: 6180
-// Function ID: 6181
+// Module ID: 6212
+// Function ID: 6213
 // Name: EmojiCatStarsExample
-// Dependencies: [21, 558, 568, 6181, 5802, 2]
+// Dependencies: [21, 558, 568, 6213, 5834, 2]
 
-// Module 6180 (EmojiCatStarsExample)
+// Module 6212 (EmojiCatStarsExample)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6181 from "module_6181" /* 6181 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6213 from "module_6213" /* 6213 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const EmojiCatStarsExample = ReactCompilerGating.isReactCompilerEnabled()
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6181 };
+    const obj2 = { uri: _modDef6213 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const EmojiCatStarsExample = ReactCompilerGating.isReactCompilerEnabled()
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6181 };
+  const obj2 = { uri: _modDef6213 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

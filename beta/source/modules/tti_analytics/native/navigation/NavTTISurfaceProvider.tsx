@@ -1,17 +1,17 @@
-// Module ID: 17096
-// Function ID: 17097
+// Module ID: 17106
+// Function ID: 17107
 // Name: NavTTISurfaceProvider
-// Dependencies: [109, 19, 17, 4757, 21, 558, 568, 16884, 16878, 16885, 16873, 16881, 504, 16879, 2]
+// Dependencies: [109, 19, 17, 4789, 21, 558, 568, 16894, 16888, 16895, 16883, 16891, 504, 16889, 2]
 
-// Module 17096 (NavTTISurfaceProvider)
+// Module 17106 (NavTTISurfaceProvider)
 import c from "c" /* 568 */;
-import useComponentRenderSpan from "useComponentRenderSpan" /* 16878 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 16881 */;
-import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 16884 */;
-import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 16885 */;
+import useComponentRenderSpan from "useComponentRenderSpan" /* 16888 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 16891 */;
+import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 16894 */;
+import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 16895 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4757 */;
+import DevSettingsStore from "DevSettingsStore" /* 4789 */;
 
 const require = globalThis.__r;
 
@@ -131,9 +131,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[5] === tmp9) {
         let tmp10 = cResult[6];
       }
-      const navigationTTIRegionHierarchy = tmp(16884).useNavigationTTIRegionHierarchy(tmp10);
-      const tmpResult = tmp(16884);
-      const navigationTTIRegionMeasurement = tmp(16878).useNavigationTTIRegionMeasurement("exclude", navigationTTIRegionHierarchy.regionId);
+      const navigationTTIRegionHierarchy = tmp(16894).useNavigationTTIRegionHierarchy(tmp10);
+      const tmpResult = tmp(16894);
+      const navigationTTIRegionMeasurement = tmp(16888).useNavigationTTIRegionMeasurement("exclude", navigationTTIRegionHierarchy.regionId);
       if (cResult[7] === tmp4) {
         if (cResult[8] === navigationTTIRegionHierarchy.contextValue) {
           let tmp13 = cResult[9];
@@ -177,7 +177,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const obj3 = { name, regionId: navigationTTIRegionHierarchy.regionId, tracking: "exclude", descendantTracking, includedDescendants: null, excludedDescendants: null, hierarchyDepth: null, violation: null };
         ({ includedDescendants: obj6.includedDescendants, excludedDescendants: obj6.excludedDescendants, depth: obj6.hierarchyDepth, violation: obj6.violation } = navigationTTIRegionHierarchy);
-        const tmp18 = closure_1_11(tmp(16885).NavigationTTIRegionDebugOverlay, obj3);
+        const tmp18 = closure_1_11(tmp(16895).NavigationTTIRegionDebugOverlay, obj3);
         cResult[10] = descendantTracking;
         cResult[11] = navigationTTIRegionHierarchy.depth;
         cResult[12] = navigationTTIRegionHierarchy.excludedDescendants;
@@ -189,12 +189,12 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp16 = tmp18;
       }
       const obj4 = { value: navigationTTIRegionHierarchy.contextValue, children: tmp4 };
-      const tmp15 = closure_1_11(tmp(16884).NavigationTTIRegionHierarchyContext.Provider, obj4);
+      const tmp15 = closure_1_11(tmp(16894).NavigationTTIRegionHierarchyContext.Provider, obj4);
       cResult[7] = tmp4;
       cResult[8] = navigationTTIRegionHierarchy.contextValue;
       cResult[9] = tmp15;
       tmp13 = tmp15;
-      const tmpResult2 = tmp(16878);
+      const tmpResult2 = tmp(16888);
     }
   }
   const obj5 = { name, tracking: "exclude", descendantTracking, hasChildren: tmp9 };
@@ -246,7 +246,7 @@ export const NavTTISurfaceProvider = ReactCompilerGating.isReactCompilerEnabled(
           tmp5 = closure_1;
           fn = obj.subscribe(closure_0, closure_1, definition);
         } else {
-          fn = /* F145250 */ function() { ... };
+          fn = /* F145341 */ function() { ... };
         }
         return fn;
       }
@@ -270,10 +270,10 @@ export const NavTTISurfaceProvider = ReactCompilerGating.isReactCompilerEnabled(
     tmp10 = cResult[7];
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const result = tmp(16873).isNavigationTTIEnabled();
+    const result = tmp(16883).isNavigationTTIEnabled();
     cResult[8] = result;
     let tmp14 = result;
-    const tmpResult = tmp(16873);
+    const tmpResult = tmp(16883);
   } else {
     tmp14 = cResult[8];
   }
@@ -381,7 +381,7 @@ export const NavTTISurfaceProvider = ReactCompilerGating.isReactCompilerEnabled(
                       }
                       tmp35[0] = tmp21;
                       tmp35[1] = cResult[27];
-                      const tmp36 = closure_11(tmp(16879).NavTTISurfaceContext.Provider, tmp35);
+                      const tmp36 = closure_11(tmp(16889).NavTTISurfaceContext.Provider, tmp35);
                       cResult[28] = cResult[27];
                       cResult[29] = tmp21;
                       cResult[30] = tmp36;
@@ -453,7 +453,7 @@ export const NavTTISurfaceProvider = ReactCompilerGating.isReactCompilerEnabled(
                     tmp5 = closure_1;
                     fn = obj.subscribe(closure_0, closure_1, definition);
                   } else {
-                    fn = /* F145250 */ function() { ... };
+                    fn = /* F145341 */ function() { ... };
                   }
                   return fn;
                 }
@@ -479,7 +479,7 @@ export const NavTTISurfaceProvider = ReactCompilerGating.isReactCompilerEnabled(
             tmp5 = closure_1;
             fn = obj.subscribe(closure_0, closure_1, definition);
           } else {
-            fn = /* F145250 */ function() { ... };
+            fn = /* F145341 */ function() { ... };
           }
           return fn;
         }
@@ -517,7 +517,7 @@ export const NavTTISurfaceProvider = ReactCompilerGating.isReactCompilerEnabled(
         tmp5 = closure_1;
         fn = obj.subscribe(closure_0, closure_1, definition);
       } else {
-        fn = /* F145250 */ function() { ... };
+        fn = /* F145341 */ function() { ... };
       }
       return fn;
     }

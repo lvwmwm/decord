@@ -1,17 +1,17 @@
-// Module ID: 16249
-// Function ID: 16250
+// Module ID: 16259
+// Function ID: 16260
 // Name: VEVOOPropTintColor
-// Dependencies: [32, 19, 17, 5177, 21, 4758, 580, 558, 568, 16246, 4608, 7447, 8876, 16248, 14860, 1096, 2]
+// Dependencies: [32, 19, 17, 5209, 21, 4790, 580, 558, 568, 16256, 4640, 7479, 8908, 16258, 14898, 1096, 2]
 
-// Module 16249 (VEVOOPropTintColor)
+// Module 16259 (VEVOOPropTintColor)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
-import ColorUtils from "ColorUtils" /* 4608 */;
-import FormSwitch from "FormSwitch" /* 7447 */;
-import Form from "Form" /* 8876 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14860 */;
-import VEVOO from "VEVOO" /* 16246 */;
+import ColorUtils from "ColorUtils" /* 4640 */;
+import FormSwitch from "FormSwitch" /* 7479 */;
+import Form from "Form" /* 8908 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14898 */;
+import VEVOO from "VEVOO" /* 16256 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -19,11 +19,11 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const VEVOOStore = fn(5177);
+const VEVOOStore = fn(5209);
 ({ getVisualEffectViewOverrides: metroRequire, setVisualEffectViewOverides: closure_7 } = VEVOOStore);
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { tintColor: null };
 let size = { width: nativeDefault.space.PX_32, height: nativeDefault.space.PX_32, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_700, borderRadius: nativeDefault.radii.sm };
 obj.tintColor = size;
@@ -210,7 +210,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                       tmp55[4] = tmp48;
                       tmp55[5] = tmp51;
                       tmp55[6] = tmp52;
-                      const tmp56 = closure_8(tmp(8876).FormRow, tmp55);
+                      const tmp56 = closure_8(tmp(8908).FormRow, tmp55);
                       cResult[37] = visualEffectViewOverrideSharedStyles.enabledSwitchStyle;
                       cResult[38] = visualEffectViewOverrideSharedStyles.zeroHeight;
                       cResult[39] = tmp48;
@@ -254,7 +254,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             tmp46[1] = tmp34;
             tmp46[2] = combined;
             tmp46[3] = tmp40;
-            const tmp47 = closure_8(tmp(8876).FormRow, tmp46);
+            const tmp47 = closure_8(tmp(8908).FormRow, tmp46);
             cResult[26] = visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal;
             cResult[27] = combined;
             cResult[28] = tmp40;
@@ -263,7 +263,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             tmp44 = tmp47;
           }
           const obj6 = { disabled: !tmp8, initialValue: ref, onValueChange: tmp39 };
-          const tmp43 = closure_8(first1(16248), obj6);
+          const tmp43 = closure_8(first1(16258), obj6);
           cResult[23] = !tmp8;
           cResult[24] = tmp39;
           cResult[25] = tmp43;
@@ -271,7 +271,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
         tmp32[0] = visualEffectViewOverrideSharedStyles.zeroPadding;
         tmp32[2] = tmp27;
-        const tmp33 = closure_8(tmp(8876).FormRow, tmp32);
+        const tmp33 = closure_8(tmp(8908).FormRow, tmp32);
         cResult[16] = visualEffectViewOverrideSharedStyles.zeroPadding;
         cResult[17] = tmp27;
         cResult[18] = tmp33;
@@ -288,7 +288,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     tmp24[0] = tmp8;
     tmp24[1] = tmp21;
-    const tmp25 = closure_8(tmp(7447).FormSwitch, tmp24);
+    const tmp25 = closure_8(tmp(7479).FormSwitch, tmp24);
     cResult[8] = tmp21;
     cResult[9] = tmp8;
     cResult[10] = tmp25;
@@ -409,7 +409,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const ref = noop.useRef(first1);
   const tmp14 = closure_10;
   const tmp15 = closure_9;
-  obj7.subLabel = closure_8(backgroundColor(16248), {
+  obj7.subLabel = closure_8(backgroundColor(16258), {
     disabled: !tmp7,
     initialValue: noop.useRef(first1),
     onValueChange(arg0) {

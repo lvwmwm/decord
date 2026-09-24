@@ -1,12 +1,12 @@
-// Module ID: 15334
-// Function ID: 15335
+// Module ID: 15344
+// Function ID: 15345
 // Name: usePurchasedProductsSort
-// Dependencies: [32, 19, 7804, 1977, 7800, 558, 568, 565, 2]
+// Dependencies: [32, 19, 7836, 1977, 7832, 558, 568, 565, 2]
 
-// Module 15334 (usePurchasedProductsSort)
+// Module 15344 (usePurchasedProductsSort)
 import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
 import _slicedToArray from "module_32" /* 32 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7804 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7836 */;
 
 const require = globalThis.__r;
 
@@ -71,7 +71,7 @@ export const usePurchasedProductsSort = ReactCompilerGating.isReactCompilerEnabl
         } else {
           PARTIAL_OWNED_BUNDLE = obj.includes(type2.skuId) ? tmp4.PURCHASED : tmp4.NOT_PURCHASED;
         }
-        tmpResult = tmp(7800);
+        tmpResult = tmp(7832);
       }
       if (tmpResult2.getIsVariantProduct(type)) {
         const variants = type.variants;

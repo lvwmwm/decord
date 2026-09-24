@@ -1,16 +1,16 @@
-// Module ID: 13386
-// Function ID: 13387
+// Module ID: 13422
+// Function ID: 13423
 // Name: UserProfilePrivateInfoBanner
-// Dependencies: [17, 21, 4758, 580, 558, 568, 1119, 4754, 2]
+// Dependencies: [17, 21, 4790, 580, 558, 568, 1119, 4786, 2]
 
-// Module 13386 (UserProfilePrivateInfoBanner)
+// Module 13422 (UserProfilePrivateInfoBanner)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import createStyles from "createStyles" /* 4758 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[7] !== tmp9) {
       const obj4 = { variant: "text-sm/normal", children: tmp9 };
-      const tmp13 = jsx(tmp(4754).Text, { variant: "text-sm/normal", children: tmp9 });
+      const tmp13 = jsx(tmp(4786).Text, { variant: "text-sm/normal", children: tmp9 });
       cResult[7] = tmp9;
       cResult[8] = tmp13;
       let tmp11 = tmp13;

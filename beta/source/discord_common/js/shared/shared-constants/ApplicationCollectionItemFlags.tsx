@@ -1,9 +1,9 @@
-// Module ID: 12265
-// Function ID: 12266
+// Module ID: 12301
+// Function ID: 12302
 // Name: ApplicationCollectionItemFlags
 // Dependencies: [2]
 
-// Module 12265 (ApplicationCollectionItemFlags)
+// Module 12301 (ApplicationCollectionItemFlags)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationCollectionItemFlags.tsx");

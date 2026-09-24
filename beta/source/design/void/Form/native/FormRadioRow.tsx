@@ -1,15 +1,15 @@
-// Module ID: 8891
-// Function ID: 8892
+// Module ID: 8923
+// Function ID: 8924
 // Name: FormRadioRow
-// Dependencies: [109, 19, 21, 558, 568, 5902, 4479, 5900, 7391, 7385, 2]
+// Dependencies: [109, 19, 21, 558, 568, 5934, 4511, 5932, 7423, 7417, 2]
 
-// Module 8891 (FormRadioRow)
+// Module 8923 (FormRadioRow)
 import c from "c" /* 568 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4479 */;
-import TableRadioRow from "TableRadioRow" /* 5900 */;
-import RedesignCompat from "RedesignCompat" /* 5902 */;
-import FormRowDefault from "FormRow" /* 7385 */;
-import Form_FormRadioDefault from "Form/FormRadio" /* 7391 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4511 */;
+import TableRadioRow from "TableRadioRow" /* 5932 */;
+import RedesignCompat from "RedesignCompat" /* 5934 */;
+import FormRowDefault from "FormRow" /* 7417 */;
+import Form_FormRadioDefault from "Form/FormRadio" /* 7423 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -53,7 +53,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (undefined !== tmp9) {
     str = tmp9;
   }
-  const context = noop.useContext(tmp(5902).RedesignCompatContext);
+  const context = noop.useContext(tmp(5934).RedesignCompatContext);
   if (cResult[8] !== tmp7) {
     const obj2 = { selected: tmp7 };
     cResult[8] = tmp7;
@@ -79,7 +79,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const obj3 = { icon: tmp4, value: tmp10, legacyCompat_selected: tmp7, legacyCompat_onPress: tmp5 };
     const merged = Object.assign(tmp6);
-    const tmp38 = jsx(tmp(5900).TableRadioRow, { icon: tmp4, value: tmp10, legacyCompat_selected: tmp7, legacyCompat_onPress: tmp5 });
+    const tmp38 = jsx(tmp(5932).TableRadioRow, { icon: tmp4, value: tmp10, legacyCompat_selected: tmp7, legacyCompat_onPress: tmp5 });
     cResult[10] = tmp5;
     cResult[11] = tmp6;
     cResult[12] = tmp7;
@@ -178,13 +178,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp8Result3 = null;
     if ("right" === align) {
       const obj4 = { selected };
-      tmp8Result3 = tmp8(tmp9(7391), obj4);
+      tmp8Result3 = tmp8(tmp9(7423), obj4);
     }
     obj3.trailing = tmp8Result3;
     let tmp8Result4 = leading;
     if ("left" === align) {
       const obj5 = { selected };
-      tmp8Result4 = tmp8(tmp9(7391), obj5);
+      tmp8Result4 = tmp8(tmp9(7423), obj5);
     }
     obj3.leading = tmp8Result4;
     tmp8Result = tmp8(FormRowDefault, obj3);

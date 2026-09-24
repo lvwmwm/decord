@@ -1,16 +1,16 @@
-// Module ID: 14985
-// Function ID: 14986
+// Module ID: 15026
+// Function ID: 15027
 // Name: TinyBroncoAgeGroupHeader
-// Dependencies: [32, 19, 17, 14947, 2042, 21, 4758, 580, 2031, 14980, 14986, 8687, 558, 568, 14981, 7632, 4712, 1119, 4754, 5846, 5341, 15018, 5188, 2]
+// Dependencies: [32, 19, 17, 10038, 2042, 21, 4790, 580, 2031, 15015, 3070, 8719, 558, 568, 15016, 7664, 4744, 1119, 4786, 5878, 5373, 15027, 5220, 2]
 
-// Module 14985 (TinyBroncoAgeGroupHeader)
+// Module 15026 (TinyBroncoAgeGroupHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8687 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 14980 */;
-import _modDef14986 from "module_14986" /* 14986 */;
+import _modDef3070 from "module_3070" /* 3070 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8719 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 15015 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -19,11 +19,11 @@ function handleOpenBlog() {
   AgeVerificationActionCreatorsDefault.openUrl(TINY_BRONCO_BLOG_URL);
 }
 const View = fn(17).View;
-const TINY_BRONCO_BLOG_URL = fn(14947).TINY_BRONCO_BLOG_URL;
+const TINY_BRONCO_BLOG_URL = fn(10038).TINY_BRONCO_BLOG_URL;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { header: { gap: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_24 }, notice: null, noticeIcon: null, noticeBody: null, noticeDismiss: null, description: null };
 let obj3 = { gap: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_24 };
 obj2.notice = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.TEXT_LINK, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
@@ -36,9 +36,9 @@ let closure_10 = createStyles.createStyles(obj2);
 let items = [fn(2031).DismissibleContent.TINY_BRONCO_NOTICE];
 let closure_12 = [];
 let obj6 = {};
-obj6[fn(14980).AgeGroupState.ADULT] = _modDef14986["8TWztV"];
-obj6[fn(14980).AgeGroupState.TEEN] = _modDef14986.qSkhZH;
-obj6[fn(14980).AgeGroupState.UNVERIFIED] = _modDef14986.vGxRDB;
+obj6[fn(15015).AgeGroupState.ADULT] = _modDef3070["8TWztV"];
+obj6[fn(15015).AgeGroupState.TEEN] = _modDef3070.qSkhZH;
+obj6[fn(15015).AgeGroupState.UNVERIFIED] = _modDef3070.vGxRDB;
 let ReactCompilerGating = fn(558);
 let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageGroup) => {
   const cResult = require("c").c(20);
@@ -63,7 +63,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageGroup) => {
     if (null != tmp6[0]) {
       const _Symbol3 = Symbol;
       if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp12 = closure_8(tmp(4712).CircleInformationIcon, { size: "xs", color: "text-link" });
+        const tmp12 = closure_8(tmp(4744).CircleInformationIcon, { size: "xs", color: "text-link" });
         cResult[2] = tmp12;
         let tmp10 = tmp12;
       } else {
@@ -103,7 +103,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageGroup) => {
         }
         const _Symbol2 = Symbol;
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp28 = closure_8(tmp(5846).XSmallIcon, { size: "sm", color: "icon-strong" });
+          const tmp28 = closure_8(tmp(5878).XSmallIcon, { size: "sm", color: "icon-strong" });
           cResult[11] = tmp28;
           let tmp26 = tmp28;
         } else {
@@ -135,14 +135,14 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageGroup) => {
           tmp32 = tmp35;
         }
         const obj7 = { style: tmp4.noticeDismiss, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: tmp24, hitSlop: 12, onPress: tmp8, children: tmp26 };
-        const tmp31 = closure_8(tmp(5341).PressableOpacity, obj7);
+        const tmp31 = closure_8(tmp(5373).PressableOpacity, obj7);
         cResult[12] = tmp8;
         cResult[13] = tmp4.noticeDismiss;
         cResult[14] = tmp31;
         tmp29 = tmp31;
       }
       obj8 = { style: tmp4.noticeBody, variant: "text-sm/normal", color: "text-default", children: tmp17 };
-      const tmp23 = closure_8(tmp(4754).Text, obj8);
+      const tmp23 = closure_8(tmp(4786).Text, obj8);
       cResult[7] = tmp4.noticeBody;
       cResult[8] = tmp17;
       cResult[9] = tmp23;
@@ -163,19 +163,19 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageGroup) => {
     tmp8 = null;
     if (null != tmp5[0]) {
       const obj3 = { style: tmp.notice, children: null };
-      const obj4 = { style: tmp.noticeIcon, children: closure_8(tmp2(4712).CircleInformationIcon, { size: "xs", color: "text-link" }) };
+      const obj4 = { style: tmp.noticeIcon, children: closure_8(tmp2(4744).CircleInformationIcon, { size: "xs", color: "text-link" }) };
       items = [closure_8(View, obj4), , ];
       const obj5 = { style: tmp.noticeBody, variant: "text-sm/normal", color: "text-default", children: null };
       const intl = tmp2(1119).intl;
       obj6 = { handleOnBlogHook: handleOpenBlog };
       obj5.children = intl.format(obj6[arg0.ageGroup], obj6);
-      items[1] = closure_8(tmp2(4754).Text, obj5);
+      items[1] = closure_8(tmp2(4786).Text, obj5);
       const obj7 = { style: tmp.noticeDismiss, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: null, hitSlop: 12, onPress: null, children: null };
       const intl2 = tmp2(1119).intl;
       obj7.accessibilityLabel = intl2.string(tmp2(1119).t.WAI6xu);
       obj7.onPress = tmp7;
-      obj7.children = closure_8(tmp2(5846).XSmallIcon, { size: "sm", color: "icon-strong" });
-      items[2] = closure_8(tmp2(5341).PressableOpacity, obj7);
+      obj7.children = closure_8(tmp2(5878).XSmallIcon, { size: "sm", color: "icon-strong" });
+      items[2] = closure_8(tmp2(5373).PressableOpacity, obj7);
       obj3.children = items;
       tmp8 = closure_9(View, obj3);
     }
@@ -183,9 +183,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageGroup) => {
   return tmp8;
 });
 let obj8 = {};
-obj8[fn(14980).AgeGroupState.ADULT] = _modDef14986.t5QjmQ;
-obj8[fn(14980).AgeGroupState.TEEN] = _modDef14986["41MDhK"];
-obj8[fn(14980).AgeGroupState.UNVERIFIED] = _modDef14986.m95jW8;
+obj8[fn(15015).AgeGroupState.ADULT] = _modDef3070.t5QjmQ;
+obj8[fn(15015).AgeGroupState.TEEN] = _modDef3070["41MDhK"];
+obj8[fn(15015).AgeGroupState.UNVERIFIED] = _modDef3070.m95jW8;
 ReactCompilerGating = fn(558);
 let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageGroup) => {
   const cResult = c.c(3);
@@ -195,37 +195,37 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageGroup) => {
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "text-sm/normal", color: "text-default", children: null };
       const intl3 = tmp(1119).intl;
-      const obj3 = { handleOnAgeGatedContentHook: tmp(14980).handleOpenAgeGatedContentArticle };
-      obj2.children = intl3.format(_modDef14986.gi4ulu, obj3);
-      const tmp18 = closure_1_8(tmp(4754).Text, obj2);
+      const obj3 = { handleOnAgeGatedContentHook: tmp(15015).handleOpenAgeGatedContentArticle };
+      obj2.children = intl3.format(_modDef3070.gi4ulu, obj3);
+      const tmp18 = closure_1_8(tmp(4786).Text, obj2);
       cResult[0] = tmp18;
       let first = tmp18;
     } else {
       first = cResult[0];
     }
     return first;
-  } else if (tmp(14980).AgeGroupState.TEEN === ageGroup) {
+  } else if (tmp(15015).AgeGroupState.TEEN === ageGroup) {
     const _Symbol2 = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { variant: "text-sm/normal", color: "text-default", children: null };
       const intl2 = tmp(1119).intl;
-      const obj5 = { handleOnAgeGatedContentHook: tmp(14980).handleOpenAgeGatedContentArticle, handleOnConfirmAgeHook: tmp(14980).handleShowAgeVerification };
-      obj4.children = intl2.format(_modDef14986["221iML"], obj5);
-      const tmp13 = closure_1_8(tmp(4754).Text, obj4);
+      const obj5 = { handleOnAgeGatedContentHook: tmp(15015).handleOpenAgeGatedContentArticle, handleOnConfirmAgeHook: tmp(15015).handleShowAgeVerification };
+      obj4.children = intl2.format(_modDef3070["221iML"], obj5);
+      const tmp13 = closure_1_8(tmp(4786).Text, obj4);
       cResult[1] = tmp13;
       let tmp10 = tmp13;
     } else {
       tmp10 = cResult[1];
     }
     return tmp10;
-  } else if (tmp(14980).AgeGroupState.UNVERIFIED === ageGroup) {
+  } else if (tmp(15015).AgeGroupState.UNVERIFIED === ageGroup) {
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       obj6 = { variant: "text-sm/normal", color: "text-default", children: null };
       const intl = tmp(1119).intl;
-      const obj7 = { handleOnAgeGatedContentHook: tmp(15018).handleOpenUnconfirmedAgeGroupSupportArticle, handleOnConfirmAgeHook: tmp(14980).handleShowAgeVerification };
-      obj6.children = intl.format(_modDef14986["W0/7DD"], obj7);
-      const tmp8 = closure_1_8(tmp(4754).Text, obj6);
+      const obj7 = { handleOnAgeGatedContentHook: tmp(15027).handleOpenUnconfirmedAgeGroupSupportArticle, handleOnConfirmAgeHook: tmp(15015).handleShowAgeVerification };
+      obj6.children = intl.format(_modDef3070["W0/7DD"], obj7);
+      const tmp8 = closure_1_8(tmp(4786).Text, obj6);
       cResult[2] = tmp8;
       let tmp5 = tmp8;
     } else {
@@ -238,21 +238,21 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageGroup) => {
   if (useAgeGroupPresentation.AgeGroupState.ADULT === ageGroup) {
     const obj2 = { variant: "text-sm/normal", color: "text-default", children: null };
     const intl3 = tmp(1119).intl;
-    const obj3 = { handleOnAgeGatedContentHook: tmp(14980).handleOpenAgeGatedContentArticle };
-    obj2.children = intl3.format(_modDef14986.gi4ulu, obj3);
-    return closure_1_8(tmp(4754).Text, obj2);
-  } else if (tmp(14980).AgeGroupState.TEEN === ageGroup) {
+    const obj3 = { handleOnAgeGatedContentHook: tmp(15015).handleOpenAgeGatedContentArticle };
+    obj2.children = intl3.format(_modDef3070.gi4ulu, obj3);
+    return closure_1_8(tmp(4786).Text, obj2);
+  } else if (tmp(15015).AgeGroupState.TEEN === ageGroup) {
     const obj4 = { variant: "text-sm/normal", color: "text-default", children: null };
     const intl2 = tmp(1119).intl;
-    const obj5 = { handleOnAgeGatedContentHook: tmp(14980).handleOpenAgeGatedContentArticle, handleOnConfirmAgeHook: tmp(14980).handleShowAgeVerification };
-    obj4.children = intl2.format(_modDef14986["221iML"], obj5);
-    return closure_1_8(tmp(4754).Text, obj4);
-  } else if (tmp(14980).AgeGroupState.UNVERIFIED === ageGroup) {
+    const obj5 = { handleOnAgeGatedContentHook: tmp(15015).handleOpenAgeGatedContentArticle, handleOnConfirmAgeHook: tmp(15015).handleShowAgeVerification };
+    obj4.children = intl2.format(_modDef3070["221iML"], obj5);
+    return closure_1_8(tmp(4786).Text, obj4);
+  } else if (tmp(15015).AgeGroupState.UNVERIFIED === ageGroup) {
     const obj = { variant: "text-sm/normal", color: "text-default", children: null };
     const intl = tmp(1119).intl;
-    obj6 = { handleOnAgeGatedContentHook: tmp(15018).handleOpenUnconfirmedAgeGroupSupportArticle, handleOnConfirmAgeHook: tmp(14980).handleShowAgeVerification };
-    obj.children = intl.format(_modDef14986["W0/7DD"], obj6);
-    return closure_1_8(tmp(4754).Text, obj);
+    obj6 = { handleOnAgeGatedContentHook: tmp(15027).handleOpenUnconfirmedAgeGroupSupportArticle, handleOnConfirmAgeHook: tmp(15015).handleShowAgeVerification };
+    obj.children = intl.format(_modDef3070["W0/7DD"], obj6);
+    return closure_1_8(tmp(4786).Text, obj);
   }
 });
 ReactCompilerGating = fn(558);
@@ -261,28 +261,28 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageGroup) => {
   ageGroup = ageGroup.ageGroup;
   if (useAgeGroupPresentation.AgeGroupState.ADULT === ageGroup) {
     return null;
-  } else if (tmp(14980).AgeGroupState.TEEN === ageGroup) {
+  } else if (tmp(15015).AgeGroupState.TEEN === ageGroup) {
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { grow: true, variant: "secondary", size: "md", text: null, onPress: null };
       const intl2 = tmp(1119).intl;
-      obj2.text = intl2.string(_modDef14986["+7NlgO"]);
-      obj2.onPress = tmp(14980).handleOpenAgeGatedContentArticle;
-      const tmp13 = closure_1_8(tmp(5188).Button, obj2);
+      obj2.text = intl2.string(_modDef3070["+7NlgO"]);
+      obj2.onPress = tmp(15015).handleOpenAgeGatedContentArticle;
+      const tmp13 = closure_1_8(tmp(5220).Button, obj2);
       cResult[0] = tmp13;
       let first = tmp13;
     } else {
       first = cResult[0];
     }
     return first;
-  } else if (tmp(14980).AgeGroupState.UNVERIFIED === ageGroup) {
+  } else if (tmp(15015).AgeGroupState.UNVERIFIED === ageGroup) {
     const _Symbol = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { grow: true, variant: "secondary", size: "md", text: null, onPress: null };
       const intl = tmp(1119).intl;
-      obj3.text = intl.string(_modDef14986["cI+bc/"]);
-      obj3.onPress = tmp(14980).handleShowAgeVerification;
-      const tmp8 = closure_1_8(tmp(5188).Button, obj3);
+      obj3.text = intl.string(_modDef3070["cI+bc/"]);
+      obj3.onPress = tmp(15015).handleShowAgeVerification;
+      const tmp8 = closure_1_8(tmp(5220).Button, obj3);
       cResult[1] = tmp8;
       let tmp5 = tmp8;
     } else {
@@ -294,18 +294,18 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((ageGroup) => {
   ageGroup = ageGroup.ageGroup;
   if (useAgeGroupPresentation.AgeGroupState.ADULT === ageGroup) {
     return null;
-  } else if (tmp(14980).AgeGroupState.TEEN === ageGroup) {
+  } else if (tmp(15015).AgeGroupState.TEEN === ageGroup) {
     const obj2 = { grow: true, variant: "secondary", size: "md", text: null, onPress: null };
     const intl2 = tmp(1119).intl;
-    obj2.text = intl2.string(_modDef14986["+7NlgO"]);
-    obj2.onPress = tmp(14980).handleOpenAgeGatedContentArticle;
-    return closure_1_8(tmp(5188).Button, obj2);
-  } else if (tmp(14980).AgeGroupState.UNVERIFIED === ageGroup) {
+    obj2.text = intl2.string(_modDef3070["+7NlgO"]);
+    obj2.onPress = tmp(15015).handleOpenAgeGatedContentArticle;
+    return closure_1_8(tmp(5220).Button, obj2);
+  } else if (tmp(15015).AgeGroupState.UNVERIFIED === ageGroup) {
     const obj = { grow: true, variant: "secondary", size: "md", text: null, onPress: null };
     const intl = tmp(1119).intl;
-    obj.text = intl.string(_modDef14986["cI+bc/"]);
-    obj.onPress = tmp(14980).handleShowAgeVerification;
-    return closure_1_8(tmp(5188).Button, obj);
+    obj.text = intl.string(_modDef3070["cI+bc/"]);
+    obj.onPress = tmp(15015).handleShowAgeVerification;
+    return closure_1_8(tmp(5220).Button, obj);
   }
 });
 ReactCompilerGating = fn(558);
@@ -337,7 +337,7 @@ export const TinyBroncoAgeGroupHeader = ReactCompilerGating.isReactCompilerEnabl
   }
   if (cResult[4] !== tmp10) {
     const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp10 };
-    const tmp15 = closure_1_8(tmp(4754).Heading, obj4);
+    const tmp15 = closure_1_8(tmp(4786).Heading, obj4);
     cResult[4] = tmp10;
     cResult[5] = tmp15;
     let tmp13 = tmp15;

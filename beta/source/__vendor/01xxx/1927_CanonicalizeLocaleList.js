@@ -768,8 +768,8 @@ class GetFormatNumber {
           if (undefined !== tmp["[[boundFormat]]"]) {
             return tmp["[[boundFormat]]"];
           } else {
-            tmp13 = f25636;
-            call2 = f25636.call;
+            tmp13 = f25646;
+            call2 = f25646.call;
             fn = function(arg0) {
               return FormatNumber(this, Number(arg0));
             };
@@ -799,8 +799,8 @@ class GetFormatNumber {
         tmp6 = closure_16;
         result = self.__getInternalProperties(closure_16);
       } else {
-        tmp4 = f25635;
-        result = f25635(null);
+        tmp4 = f25645;
+        result = f25645(null);
       }
       tmp7 = result;
     }
@@ -1612,8 +1612,8 @@ class GetFormatDateTime {
           if (undefined !== tmp["[[boundFormat]]"]) {
             return tmp["[[boundFormat]]"];
           } else {
-            tmp13 = f25636;
-            call2 = f25636.call;
+            tmp13 = f25646;
+            call2 = f25646.call;
             fn = function() {
               if (0 === arguments.length) {
                 const _Date = Date;
@@ -1649,8 +1649,8 @@ class GetFormatDateTime {
         tmp6 = closure_16;
         result = self.__getInternalProperties(closure_16);
       } else {
-        tmp4 = f25635;
-        result = f25635(null);
+        tmp4 = f25645;
+        result = f25645(null);
       }
       tmp7 = result;
     }
@@ -1835,10 +1835,10 @@ class Record {
         if (!tmp9) {
           continue;
         } else {
-          tmp5 = f25633;
+          tmp5 = f25643;
           obj = { value: null, enumerable: true, writable: true, configurable: true };
           obj.value = arg0[key10005];
-          tmp6 = f25633(tmp, key10005, obj);
+          tmp6 = f25643(tmp, key10005, obj);
           continue;
         }
         continue;
@@ -1858,7 +1858,7 @@ class Record {
 }
 class List {
   constructor() {
-    tmp = f25633(this, "length", { writable: true, value: 0 });
+    tmp = f25643(this, "length", { writable: true, value: 0 });
     if (!arguments.length) {
       return;
     } else {

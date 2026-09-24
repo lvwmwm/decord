@@ -1,10 +1,10 @@
 // Module ID: 8817
 // Function ID: 8818
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8748, 8818, 8757]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8818, 8803, 8804]
 
 // Module 8817
 import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
-import _modDef8757 from "module_8757" /* 8757 */;
+import _modDef8804 from "module_8804" /* 8804 */;
 import _modDef8818 from "module_8818" /* 8818 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
@@ -12,7 +12,7 @@ import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 import noop from "module_19" /* 19 */;
 
-const Path = fn;
+const FeOffset = fn;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -34,12 +34,12 @@ function _isNativeReflectConstruct() {
 }
 _possibleConstructorReturnDefault;
 const jsx = fn(21).jsx;
-class Path {
+class FeOffset {
   constructor() {
     self = this;
-    tmp = closure_3(this, Path);
+    tmp = closure_3(this, FeOffset);
     tmp2 = hasOwnProperty;
-    obj = hasOwnProperty(Path);
+    obj = hasOwnProperty(FeOffset);
     tmp3 = closure_4;
     if (closure_7()) {
       tmp7 = globalThis;
@@ -54,31 +54,32 @@ class Path {
     return tmp3(self, constructResult);
   }
 }
-_inherits(Path, _modDef8757);
+_inherits(FeOffset, _modDef8804);
 const entry = {
   key: "render",
   value: function render() {
     const self = this;
-    const props = this.props;
-    const obj = {};
-    const merged = Object.assign(Path(8748).extract(this, props));
-    obj.d = props.d;
-    const obj2 = Path(8748);
-    const obj3 = {
+    const merged = Object.assign(this.props);
+    const obj = {
       ref(arg0) {
         return self.refMethod(arg0);
       }
     };
-    const merged1 = Object.assign(obj);
-    return jsx(_modDef8818, {
-      ref(arg0) {
-        return self.refMethod(arg0);
-      }
-    });
+    const merged1 = Object.assign(FeOffset(8803).extractFilter(this.props));
+    const obj2 = FeOffset(8803);
+    const merged2 = Object.assign(FeOffset(8803).extractIn(this.props));
+    return <tmp ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
   }
 };
 const items = [entry];
-const importDefaultResultResult = _createClass(Path, items);
-importDefaultResultResult.displayName = "Path";
+const importDefaultResultResult = _createClass(FeOffset, items);
+importDefaultResultResult.displayName = "FeOffset";
+let obj = {};
+let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+obj.dx = 0;
+obj.dy = 0;
+importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

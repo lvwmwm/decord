@@ -1,22 +1,22 @@
-// Module ID: 12148
-// Function ID: 12149
+// Module ID: 12184
+// Function ID: 12185
 // Name: ForumPostMessageCount
-// Dependencies: [19, 17, 21, 4758, 580, 1368, 558, 568, 8134, 1119, 5291, 4754, 11545, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 1368, 558, 568, 8166, 1119, 5323, 4786, 11581, 2]
 
-// Module 12148 (ForumPostMessageCount)
+// Module 12184 (ForumPostMessageCount)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ChatIcon from "ChatIcon" /* 5291 */;
-import ForumHooks from "ForumHooks" /* 8134 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 11545 */;
+import ChatIcon from "ChatIcon" /* 5323 */;
+import ForumHooks from "ForumHooks" /* 8166 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 11581 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { tintColor: nativeDefault.colors.ICON_MUTED, marginEnd: 4, marginTop: null };
 let PlatformUtils = fn(1368);
 let num = 0;
@@ -112,7 +112,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
                 const obj6 = { count: unreadCount };
                 const items1 = ["(", intl2.format(tmp(1119).t.z3PEth, obj6), ")"];
                 obj5.children = items1;
-                tmp20 = hasOwnProperty(tmp(4754).Text, obj5);
+                tmp20 = hasOwnProperty(tmp(4786).Text, obj5);
               }
               cResult[13] = tmp4.messageUnreadCount;
               cResult[14] = unreadCount;
@@ -124,7 +124,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
       }
       if (isMaxMessageCount) {
         const obj7 = { variant: "text-sm/semibold", color: str, children: messageCountText };
-        let tmp14Result = tmp14(tmp(4754).Text, obj7);
+        let tmp14Result = tmp14(tmp(4786).Text, obj7);
       } else {
         const obj8 = { count: messageCount, textVariant: "text-sm/semibold", textColor: str, animate: false };
         tmp14Result = tmp14(AnimatedCounterDefault, obj8);
@@ -136,7 +136,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
       cResult[12] = tmp14Result;
     }
     const obj9 = { size: "xs", style: tmp9, color: str2 };
-    const tmp12 = React4(tmp(5291).ChatIcon, obj9);
+    const tmp12 = React4(tmp(5323).ChatIcon, obj9);
     cResult[5] = tmp9;
     cResult[6] = str2;
     cResult[7] = tmp12;
@@ -172,7 +172,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
   const items1 = [React4(ChatIcon.ChatIcon, obj3), , ];
   if (isMaxMessageCount) {
     const obj4 = { variant: "text-sm/semibold", color: str, children: messageCountText };
-    let tmp7Result = tmp7(tmp2(4754).Text, obj4);
+    let tmp7Result = tmp7(tmp2(4786).Text, obj4);
   } else {
     const obj5 = { count: messageCount, textVariant: "text-sm/semibold", textColor: str, animate: false };
     tmp7Result = tmp7(AnimatedCounterDefault, obj5);
@@ -185,7 +185,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
     const obj7 = { count: unreadCount };
     const items2 = ["(", intl2.format(tmp2(1119).t.z3PEth, obj7), ")"];
     obj6.children = items2;
-    tmp5Result = tmp5(tmp2(4754).Text, obj6);
+    tmp5Result = tmp5(tmp2(4786).Text, obj6);
   }
   items1[2] = tmp5Result;
   obj2.children = items1;

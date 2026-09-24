@@ -1,23 +1,23 @@
-// Module ID: 15100
-// Function ID: 15101
+// Module ID: 15110
+// Function ID: 15111
 // Name: GoreMediaFiltersGuildsSetting
-// Dependencies: [8238, 558, 8920, 15091, 568, 15087, 7847, 7545, 15088, 1119, 1190, 11594, 2]
+// Dependencies: [8270, 558, 8952, 15094, 568, 15102, 7879, 7577, 15103, 1119, 1190, 11630, 2]
 
-// Module 15100 (GoreMediaFiltersGuildsSetting)
+// Module 15110 (GoreMediaFiltersGuildsSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7545 */;
-import SettingsConstants from "SettingsConstants" /* 8238 */;
-import useUserIsTeen from "useUserIsTeen" /* 8920 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15087 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15088 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7577 */;
+import SettingsConstants from "SettingsConstants" /* 8270 */;
+import useUserIsTeen from "useUserIsTeen" /* 8952 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15102 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15103 */;
 import "ReactCompilerGating";
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
 import size from "module_2" /* 2 */;
 
-const ExplicitMediaRedactionUtils = tmp(7847);
+const ExplicitMediaRedactionUtils = tmp(7879);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let userIsTeen = useUserIsTeen.useUserIsTeen();
   if (!userIsTeen) {

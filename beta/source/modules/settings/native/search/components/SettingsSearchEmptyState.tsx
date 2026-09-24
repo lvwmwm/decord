@@ -1,22 +1,22 @@
-// Module ID: 14965
-// Function ID: 14966
+// Module ID: 15000
+// Function ID: 15001
 // Name: SettingsSearchEmptyState
-// Dependencies: [19, 17, 21, 4758, 558, 568, 4472, 1119, 9826, 4754, 5186, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 4504, 1119, 9858, 4786, 5218, 2]
 
-// Module 14965 (SettingsSearchEmptyState)
+// Module 15000 (SettingsSearchEmptyState)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4472 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import NoResultsAlt from "NoResultsAlt" /* 9826 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4504 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import NoResultsAlt from "NoResultsAlt" /* 9858 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ container: { paddingTop: 24, justifyContent: "center", alignItems: "center" }, textContainer: { marginTop: 24 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -41,7 +41,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = noop.useEffect(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp10 = React4(tmp(9826).NoResultsAlt, { resizeMode: "contain" });
+    const tmp10 = React4(tmp(9858).NoResultsAlt, { resizeMode: "contain" });
     cResult[2] = tmp10;
     let tmp8 = tmp10;
   } else {
@@ -51,7 +51,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     let intl = tmp(1119).intl;
     obj2.children = intl.string(tmp(1119).t.zihbmv);
-    const tmp13 = React4(tmp(4754).Text, obj2);
+    const tmp13 = React4(tmp(4786).Text, obj2);
     cResult[3] = tmp13;
     let tmp11 = tmp13;
   } else {
@@ -61,7 +61,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
     const intl2 = tmp(1119).intl;
     obj3.children = intl2.string(tmp(1119).t.XclvsB);
-    const tmp16 = React4(tmp(4754).Text, obj3);
+    const tmp16 = React4(tmp(4786).Text, obj3);
     cResult[4] = tmp16;
     let tmp14 = tmp16;
   } else {
@@ -71,7 +71,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj4 = { style: tmp4.textContainer, align: "center", justify: "center", children: null };
     const items1 = [tmp11, tmp14];
     obj4.children = items1;
-    const tmp19 = hasOwnProperty(tmp(5186).Stack, obj4);
+    const tmp19 = hasOwnProperty(tmp(5218).Stack, obj4);
     cResult[5] = tmp4.textContainer;
     cResult[6] = tmp19;
     let tmp17 = tmp19;

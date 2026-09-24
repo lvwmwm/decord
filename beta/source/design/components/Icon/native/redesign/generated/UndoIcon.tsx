@@ -1,13 +1,13 @@
-// Module ID: 15365
-// Function ID: 15366
+// Module ID: 15375
+// Function ID: 15376
 // Name: UndoIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 15366, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 15376, 4493, 2]
 
-// Module 15365 (UndoIcon)
+// Module 15375 (UndoIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod15366 from "module_15366" /* 15366 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod15376 from "module_15376" /* 15376 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const UndoIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(15366);
+    const tmpResult = tmp(15376);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const UndoIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15366, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15376, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

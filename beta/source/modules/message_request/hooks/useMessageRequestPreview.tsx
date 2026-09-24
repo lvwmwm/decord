@@ -1,15 +1,15 @@
-// Module ID: 12758
-// Function ID: 12759
+// Module ID: 12794
+// Function ID: 12795
 // Name: useMessageRequestPreview
-// Dependencies: [5, 4978, 4773, 12759, 1078, 558, 568, 504, 12, 1275, 577, 2]
+// Dependencies: [5, 5010, 4805, 12795, 1078, 558, 568, 504, 12, 1275, 577, 2]
 
-// Module 12758 (useMessageRequestPreview)
+// Module 12794 (useMessageRequestPreview)
 import _modDef12 from "module_12" /* 12 */;
 import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import MessageStore from "MessageStore" /* 4978 */;
-import ReadStateStore from "ReadStateStore" /* 4773 */;
-import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 12759 */;
+import MessageStore from "MessageStore" /* 5010 */;
+import ReadStateStore from "ReadStateStore" /* 4805 */;
+import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 12795 */;
 
 require = fn;
 function loadMessageRequestData() {

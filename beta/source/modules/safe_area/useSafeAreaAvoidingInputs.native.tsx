@@ -1,12 +1,12 @@
-// Module ID: 11400
-// Function ID: 11401
+// Module ID: 11436
+// Function ID: 11437
 // Name: useSafeAreaAvoidingInputs
-// Dependencies: [5, 19, 1482, 580, 11401, 558, 568, 7225, 2]
+// Dependencies: [5, 19, 1482, 580, 11437, 558, 568, 7257, 2]
 
-// Module 11400 (useSafeAreaAvoidingInputs)
+// Module 11436 (useSafeAreaAvoidingInputs)
 import nativeDefault from "native" /* 580 */;
 import useWindowDimensions from "useWindowDimensions" /* 1482 */;
-import useKeyboardDuration from "useKeyboardDuration" /* 7225 */;
+import useKeyboardDuration from "useKeyboardDuration" /* 7257 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -407,7 +407,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((insets) => {
               if (null != current2) {
                 dependencyMap = 1;
                 c3 = 1;
-                const obj4 = { value: tmp3(11401).measureViewRefInWindow(found.ref), done: false };
+                const obj4 = { value: tmp3(11437).measureViewRefInWindow(found.ref), done: false };
                 return obj4;
               }
             }
@@ -424,7 +424,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((insets) => {
             closure_128_2 = value;
             dependencyMap = 2;
             c3 = 1;
-            const obj6 = { value: tmp3(11401).measureViewRefInView(closure_128_1.ref, closure_128_0), done: false };
+            const obj6 = { value: tmp3(11437).measureViewRefInView(closure_128_1.ref, closure_128_0), done: false };
             return obj6;
           }
         } else {
@@ -442,7 +442,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((insets) => {
                 if (null != closure_128_3) {
                   dependencyMap = 3;
                   c3 = 1;
-                  const obj9 = { value: tmp3(11401).measureViewInWindow(closure_128_0), done: false };
+                  const obj9 = { value: tmp3(11437).measureViewInWindow(closure_128_0), done: false };
                   return obj9;
                 }
               }

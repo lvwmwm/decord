@@ -1,23 +1,23 @@
-// Module ID: 9018
-// Function ID: 9019
+// Module ID: 9050
+// Function ID: 9051
 // Name: GuildBadgeV2
-// Dependencies: [109, 19, 21, 4758, 558, 568, 1181, 4610, 9019, 9021, 9020, 2]
+// Dependencies: [109, 19, 21, 4790, 558, 568, 1181, 4642, 9051, 9053, 9052, 2]
 // Exports: hasGuildBadge
 
-// Module 9018 (GuildBadgeV2)
+// Module 9050 (GuildBadgeV2)
 import c from "c" /* 568 */;
-import BadgeCategory from "BadgeCategory" /* 9020 */;
-import GuildTraits from "GuildTraits" /* 9021 */;
+import BadgeCategory from "BadgeCategory" /* 9052 */;
+import GuildTraits from "GuildTraits" /* 9053 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
 const native = Icon(1181);
-const shared = Icon(4610);
-const GuildBadgeImageSource = Icon(9019);
+const shared = Icon(4642);
+const GuildBadgeImageSource = Icon(9051);
 require = fn;
 let closure_2 = ["guild", "size"];
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ icon: { marginRight: 8 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -92,7 +92,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (null == guild) {
     return null;
   } else {
-    const guildBadgeImageSource = tmp5(9019).getGuildBadgeImageSource(guild, tmp8);
+    const guildBadgeImageSource = tmp5(9051).getGuildBadgeImageSource(guild, tmp8);
     let tmp10 = null;
     if (null != guildBadgeImageSource) {
       const obj = { size, source: guildBadgeImageSource, style: tmp4.icon, disableColor: true };

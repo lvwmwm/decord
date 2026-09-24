@@ -1,13 +1,13 @@
-// Module ID: 12691
-// Function ID: 12692
+// Module ID: 12727
+// Function ID: 12728
 // Name: SoundboardIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 12692, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 12728, 4493, 2]
 
-// Module 12691 (SoundboardIcon)
+// Module 12727 (SoundboardIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod12692 from "module_12692" /* 12692 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod12728 from "module_12728" /* 12728 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const SoundboardIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(12692);
+    const tmpResult = tmp(12728);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const SoundboardIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12692, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12728, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

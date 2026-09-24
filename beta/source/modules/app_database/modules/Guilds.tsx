@@ -1,9 +1,9 @@
-// Module ID: 7891
-// Function ID: 7892
+// Module ID: 7923
+// Function ID: 7924
 // Name: Guilds
 // Dependencies: [5, 2063, 502, 2109, 2103, 2067, 3, 2074, 2107, 2105, 2059, 2]
 
-// Module 7891 (Guilds)
+// Module 7923 (Guilds)
 import LoggerDefault from "Logger" /* 3 */;
 import GuildRecordUtilsAll from "GuildRecordUtils" /* 2059 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;

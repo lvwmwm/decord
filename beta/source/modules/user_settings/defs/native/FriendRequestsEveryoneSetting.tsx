@@ -1,14 +1,14 @@
-// Module ID: 15243
-// Function ID: 15244
+// Module ID: 15253
+// Function ID: 15254
 // Name: FriendRequestsEveryoneSetting
-// Dependencies: [19, 8238, 1078, 558, 568, 2023, 7241, 15091, 11594, 1119, 2]
+// Dependencies: [19, 8270, 1078, 558, 568, 2023, 7273, 15094, 11630, 1119, 2]
 
-// Module 15243 (FriendRequestsEveryoneSetting)
+// Module 15253 (FriendRequestsEveryoneSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7241 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15091 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7273 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15094 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,7 +17,7 @@ const Constants = fn(1078);
 fn(558);
 let ReactCompilerGating = fn(558);
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   const FriendSourceFlagsSetting = UserSettings.FriendSourceFlagsSetting;
@@ -43,7 +43,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.mGr3CX);
   },
-  parent: fn(8238).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: fn(8270).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     const FriendSourceFlagsSetting = UserSettings.FriendSourceFlagsSetting;

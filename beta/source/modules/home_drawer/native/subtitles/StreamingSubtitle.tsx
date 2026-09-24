@@ -1,13 +1,13 @@
-// Module ID: 16663
-// Function ID: 16664
+// Module ID: 16673
+// Function ID: 16674
 // Name: StreamingSubtitle
-// Dependencies: [19, 21, 558, 568, 1119, 4910, 4754, 2]
+// Dependencies: [19, 21, 558, 568, 1119, 4942, 4786, 2]
 
-// Module 16663 (StreamingSubtitle)
+// Module 16673 (StreamingSubtitle)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -25,7 +25,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[3] !== tmp4) {
       const obj2 = { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 };
-      const tmp8 = jsx(tmp(4754).Text, { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 });
+      const tmp8 = jsx(tmp(4786).Text, { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 });
       cResult[3] = tmp4;
       cResult[4] = tmp8;
       let tmp6 = tmp8;

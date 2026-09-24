@@ -1,19 +1,19 @@
-// Module ID: 12718
-// Function ID: 12719
+// Module ID: 12754
+// Function ID: 12755
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 4648, 21, 4758, 580, 558, 568, 7223, 12719, 9487, 4754, 2]
+// Dependencies: [17, 4680, 21, 4790, 580, 558, 568, 7255, 12755, 9519, 4786, 2]
 
-// Module 12718 (GuildPowerupsBoostInfo)
+// Module 12754 (GuildPowerupsBoostInfo)
 import _mod17 from "module_17" /* 17 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4648 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7223 */;
-import BoostGemIcon from "BoostGemIcon" /* 9487 */;
-import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 12719 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4680 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7255 */;
+import BoostGemIcon from "BoostGemIcon" /* 9519 */;
+import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 12755 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[3] !== TEXT_MUTED) {
       const obj3 = { size: "sm", color: TEXT_MUTED };
-      const tmp15 = hasOwnProperty(tmp(9487).BoostGemIcon, obj3);
+      const tmp15 = hasOwnProperty(tmp(9519).BoostGemIcon, obj3);
       cResult[3] = TEXT_MUTED;
       cResult[4] = tmp15;
       let tmp13 = tmp15;
@@ -98,7 +98,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               tmp26 = tmp29;
             }
             const obj5 = { variant: str5, color: "text-subtle", importantForAccessibility: "no-hide-descendants", children: tmp6 };
-            const tmp25 = hasOwnProperty(tmp(4754).Text, obj5);
+            const tmp25 = hasOwnProperty(tmp(4786).Text, obj5);
             cResult[13] = tmp6;
             cResult[14] = str5;
             cResult[15] = tmp25;
@@ -117,7 +117,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj7 = { variant: str3, color: str4, importantForAccessibility: "no-hide-descendants", children: count };
-    const tmp18 = hasOwnProperty(tmp(4754).Text, obj7);
+    const tmp18 = hasOwnProperty(tmp(4786).Text, obj7);
     cResult[5] = count;
     cResult[6] = str3;
     cResult[7] = str4;

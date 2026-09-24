@@ -1,35 +1,35 @@
-// Module ID: 15205
-// Function ID: 15206
+// Module ID: 15215
+// Function ID: 15216
 // Name: UserSettingsAuthedApps
-// Dependencies: [19, 17, 7354, 1078, 21, 580, 4758, 558, 568, 9331, 9166, 9541, 4712, 1616, 504, 1488, 7417, 1489, 4754, 1119, 5903, 1401, 5822, 12186, 7236, 7241, 2]
+// Dependencies: [19, 17, 7386, 1078, 21, 580, 4790, 558, 568, 9363, 9198, 9573, 4744, 1616, 504, 1488, 7449, 1489, 4786, 1119, 5935, 1401, 5854, 12222, 7268, 7273, 2]
 
-// Module 15205 (UserSettingsAuthedApps)
+// Module 15215 (UserSettingsAuthedApps)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7236 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7241 */;
-import applications from "applications" /* 9331 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7268 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7273 */;
+import applications from "applications" /* 9363 */;
 import noop from "module_19" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7354 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7386 */;
 
 const require = globalThis.__r;
 
-const CircleInformationIcon = GlobeEarthIcon(4712);
-const GlobeEarthIcon2 = GlobeEarthIcon(9166);
-const EmbedIcon = GlobeEarthIcon(9541);
+const CircleInformationIcon = GlobeEarthIcon(4744);
+const GlobeEarthIcon2 = GlobeEarthIcon(9198);
+const EmbedIcon = GlobeEarthIcon(9573);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ActivityIndicator: hasOwnProperty, FlatList: metroRequire } = get_ActivityIndicator);
-const FetchState = fn(7354).FetchState;
+const FetchState = fn(7386).FetchState;
 const Constants = fn(1078);
 ({ AnalyticsPages: closure_9, UserSettingsSections: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
 const PX_24 = nativeDefault.space.PX_24;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { spinner: { padding: 16 }, emptyText: { marginTop: 24 }, emptyContainer: { padding: 16 }, container: { paddingHorizontal: 16, paddingTop: nativeDefault.space.PX_24 }, headerDescription: { marginTop: 12 }, appListHeader: { marginTop: 24 } };
 let closure_15 = createStyles.createStyles(obj2);
 fn(558);
@@ -78,13 +78,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return noop.useMemo(() => {
     if (applications.ApplicationDisclosureType.IP_LOCATION === disclosure) {
       const obj2 = { style, size: "xs" };
-      return closure_2_11(tmp2(9166).GlobeEarthIcon, obj2);
-    } else if (tmp2(9331).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === tmp) {
+      return closure_2_11(tmp2(9198).GlobeEarthIcon, obj2);
+    } else if (tmp2(9363).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === tmp) {
       const obj3 = { style, size: "xs" };
-      return closure_2_11(tmp2(9541).EmbedIcon, obj3);
+      return closure_2_11(tmp2(9573).EmbedIcon, obj3);
     } else {
       const obj = { style, size: "xs" };
-      return closure_2_11(tmp2(4712).CircleInformationIcon, obj);
+      return closure_2_11(tmp2(4744).CircleInformationIcon, obj);
     }
     tmp = disclosure;
   }, items);

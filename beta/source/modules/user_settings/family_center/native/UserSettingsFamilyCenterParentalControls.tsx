@@ -1,13 +1,13 @@
-// Module ID: 15196
-// Function ID: 15197
+// Module ID: 15206
+// Function ID: 15207
 // Name: UserSettingsFamilyCenterParentalControls
-// Dependencies: [32, 19, 17, 1078, 7785, 21, 4758, 580, 558, 568, 1488, 7409, 7429, 7240, 15160, 15178, 1119, 2486, 8112, 15197, 15198, 7786, 9868, 15199, 7371, 9869, 12780, 2]
+// Dependencies: [32, 19, 17, 1078, 7817, 21, 4790, 580, 558, 568, 1488, 7441, 7461, 7272, 15170, 15188, 1119, 2486, 8144, 15207, 15208, 7818, 9900, 15209, 7403, 9901, 12816, 2]
 
-// Module 15196 (UserSettingsFamilyCenterParentalControls)
+// Module 15206 (UserSettingsFamilyCenterParentalControls)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import _modDef2486 from "module_2486" /* 2486 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7786 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7818 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,10 +17,10 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const UserSettingsSections = fn(1078).UserSettingsSections;
-const FamilyCenterSubPages = fn(7785).FamilyCenterSubPages;
+const FamilyCenterSubPages = fn(7817).FamilyCenterSubPages;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { display: "flex", flex: 1 }, segmentedControlContainer: { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 }, content: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.content = { paddingBottom: nativeDefault.space.PX_16 };
@@ -118,7 +118,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   }
                   return;
                 }
-                setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Set" });
+                setOptionsResult1 = closure_0.setOptions({ title: "state", headerRight: "toCharArray$esjava$1" });
                 return;
               }
             }
@@ -156,7 +156,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Set" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "state", headerRight: "toCharArray$esjava$1" });
                   return;
                 }
               }
@@ -198,7 +198,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Set" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "state", headerRight: "toCharArray$esjava$1" });
                   return;
                 }
               }
@@ -245,7 +245,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Set" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "state", headerRight: "toCharArray$esjava$1" });
                   return;
                 }
               }
@@ -297,7 +297,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Set" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "state", headerRight: "toCharArray$esjava$1" });
                   return;
                 }
               }
@@ -351,7 +351,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Set" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "state", headerRight: "toCharArray$esjava$1" });
                   return;
                 }
               }
@@ -395,7 +395,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             return;
           }
-          setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "Set" });
+          setOptionsResult1 = closure_0.setOptions({ title: "state", headerRight: "toCharArray$esjava$1" });
           return;
         }
       }
@@ -508,7 +508,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         stackNavigation.setOptions(obj);
       }
     }
-    stackNavigation.setOptions({ title: "Array", headerRight: "Set" });
+    stackNavigation.setOptions({ title: "state", headerRight: "toCharArray$esjava$1" });
   }, items1);
   const obj4 = { label: null, id: null, page: null };
   let intl = tmp2(tmp3[16]).intl;

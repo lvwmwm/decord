@@ -1,13 +1,13 @@
-// Module ID: 17605
-// Function ID: 17606
+// Module ID: 17615
+// Function ID: 17616
 // Name: VoicePanelVisualEffectView
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4462, 9182, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4494, 9214, 2]
 
-// Module 17605 (VoicePanelVisualEffectView)
+// Module 17615 (VoicePanelVisualEffectView)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import native from "native" /* 9182 */;
+import useToken from "useToken" /* 4494 */;
+import native from "native" /* 9214 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ get_ActivityIndicator = fn(17);
 ({ StyleSheet, View: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { wrapper: null, border: null };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj.wrapper = {};

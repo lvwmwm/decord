@@ -1,14 +1,14 @@
-// Module ID: 17719
-// Function ID: 17720
+// Module ID: 17729
+// Function ID: 17730
 // Name: useIsInRestrictedHours
-// Dependencies: [1376, 7784, 558, 568, 504, 17720, 2]
+// Dependencies: [1376, 7816, 558, 568, 504, 17730, 2]
 
-// Module 17719 (useIsInRestrictedHours)
+// Module 17729 (useIsInRestrictedHours)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import RestrictedHoursManager from "RestrictedHoursManager" /* 17720 */;
+import RestrictedHoursManager from "RestrictedHoursManager" /* 17730 */;
 import UserStore from "UserStore" /* 1376 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7784 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7816 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);

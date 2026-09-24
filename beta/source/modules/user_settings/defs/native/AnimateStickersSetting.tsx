@@ -1,9 +1,9 @@
-// Module ID: 15681
-// Function ID: 15682
+// Module ID: 15691
+// Function ID: 15692
 // Name: AnimateStickersSetting
-// Dependencies: [19, 8238, 2026, 2023, 558, 568, 1119, 11594, 2]
+// Dependencies: [19, 8270, 2026, 2023, 558, 568, 1119, 11630, 2]
 
-// Module 15681 (AnimateStickersSetting)
+// Module 15691 (AnimateStickersSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import UserSettings from "UserSettings" /* 2023 */;
@@ -12,7 +12,7 @@ import noop from "module_19" /* 19 */;
 require = fn;
 const StickerAnimationSettings = fn(2026).StickerAnimationSettings;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -60,7 +60,7 @@ const radio = SettingBuilders.createRadio({
     const intl = util.intl;
     return intl.string(util.t.R5nQkS);
   },
-  parent: fn(8238).MobileUserSettings.ACCESSIBILITY,
+  parent: fn(8270).MobileUserSettings.ACCESSIBILITY,
   useValue: fn(2023).AnimateStickers.useSetting,
   onValueChange: function onAnimateStickerSettingValueChange(arg0) {
     const AnimateStickers = UserSettings.AnimateStickers;

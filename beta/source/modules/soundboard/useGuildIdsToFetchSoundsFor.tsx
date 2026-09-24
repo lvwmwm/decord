@@ -1,15 +1,15 @@
-// Module ID: 7584
-// Function ID: 7585
+// Module ID: 7616
+// Function ID: 7617
 // Name: useGuildIdsToFetchSoundsFor
-// Dependencies: [19, 2067, 5226, 558, 568, 565, 2]
+// Dependencies: [19, 2067, 5258, 558, 568, 565, 2]
 // Exports: getGuildIdsToFetchSoundsFor
 
-// Module 7584 (useGuildIdsToFetchSoundsFor)
+// Module 7616 (useGuildIdsToFetchSoundsFor)
 import _mod19 from "module_19" /* 19 */;
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import SoundboardStore from "SoundboardStore" /* 5226 */;
+import SoundboardStore from "SoundboardStore" /* 5258 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

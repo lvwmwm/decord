@@ -1,22 +1,22 @@
-// Module ID: 9104
-// Function ID: 9105
+// Module ID: 9136
+// Function ID: 9137
 // Name: SlayerStorefrontItemCard
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 7473, 9105, 7799, 5802, 5198, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 7505, 9137, 7831, 5834, 5230, 2]
 
-// Module 9104 (SlayerStorefrontItemCard)
+// Module 9136 (SlayerStorefrontItemCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7473 */;
-import tinycolorDefault from "tinycolor" /* 7799 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7505 */;
+import tinycolorDefault from "tinycolor" /* 7831 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ImageBackground: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { cardContainer: { borderRadius: nativeDefault.radii.md, overflow: "hidden", shadowColor: "#000", shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 8, elevation: 8 }, cardImageBackground: { width: "100%", height: "100%", alignItems: "center", justifyContent: "center" }, cardImage: { width: "100%", height: "100%", resizeMode: "cover" } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -65,7 +65,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       } else {
         tmp8 = cResult[9];
       }
-      const dominantColorFromImage = tmp(9105).useDominantColorFromImage(tmp8);
+      const dominantColorFromImage = tmp(9137).useDominantColorFromImage(tmp8);
       if (null != dominantColorFromImage) {
         if (cResult[11] !== dominantColorFromImage) {
           const obj6 = tinycolorDefault(dominantColorFromImage);
@@ -173,15 +173,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         return tmp22;
       }
-      const tmpResult = tmp(9105);
+      const tmpResult = tmp(9137);
     }
     const obj12 = { size: bound };
-    const cardBackgroundImageURL = tmp(7473).getCardBackgroundImageURL(sku, obj12);
+    const cardBackgroundImageURL = tmp(7505).getCardBackgroundImageURL(sku, obj12);
     cResult[5] = bound;
     cResult[6] = sku;
     cResult[7] = cardBackgroundImageURL;
     str2 = cardBackgroundImageURL;
-    const tmpResult3 = tmp(7473);
+    const tmpResult3 = tmp(7505);
   }
   const cardImageURL = SlayerStorefrontUtils.getCardImageURL(sku, { size: bound });
   cResult[2] = bound;

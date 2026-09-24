@@ -1,21 +1,21 @@
-// Module ID: 16126
-// Function ID: 16127
+// Module ID: 16136
+// Function ID: 16137
 // Name: CollectiblesShopFeaturedPage
-// Dependencies: [19, 17, 1080, 21, 4758, 558, 568, 1181, 8506, 1119, 16127, 2]
+// Dependencies: [19, 17, 1080, 21, 4790, 558, 568, 1181, 8538, 1119, 16137, 2]
 
-// Module 16126 (CollectiblesShopFeaturedPage)
+// Module 16136 (CollectiblesShopFeaturedPage)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import generated_NoResults from "generated/NoResults" /* 8506 */;
-import ShopBlockItemDefault from "ShopBlockItem" /* 16127 */;
+import generated_NoResults from "generated/NoResults" /* 8538 */;
+import ShopBlockItemDefault from "ShopBlockItem" /* 16137 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const constants = fn(1080).CollectiblesMobileShopScreen;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ container: { flex: 1, justifyContent: "center", alignItems: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -47,10 +47,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((shopBlock) => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { style: first, Illustration: tmp(8506).NoResults, body: null };
+    const obj4 = { style: first, Illustration: tmp(8538).NoResults, body: null };
     const intl = tmp(1119).intl;
     obj4.body = intl.string(tmp(1119).t.eAn6z2);
-    const tmp12 = jsx(tmp(1181).EmptyState, { style: first, Illustration: tmp(8506).NoResults, body: null });
+    const tmp12 = jsx(tmp(1181).EmptyState, { style: first, Illustration: tmp(8538).NoResults, body: null });
     cResult[1] = tmp12;
     let tmp10 = tmp12;
   } else {

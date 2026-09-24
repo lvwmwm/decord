@@ -1,13 +1,13 @@
-// Module ID: 6346
-// Function ID: 6347
+// Module ID: 6378
+// Function ID: 6379
 // Name: GemLevel1SpotIllustration
-// Dependencies: [21, 558, 568, 6347, 5802, 2]
+// Dependencies: [21, 558, 568, 6379, 5834, 2]
 
-// Module 6346 (GemLevel1SpotIllustration)
+// Module 6378 (GemLevel1SpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6347 from "module_6347" /* 6347 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6379 from "module_6379" /* 6379 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const GemLevel1SpotIllustration = ReactCompilerGating.isReactCompilerEnab
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6347 };
+    const obj2 = { uri: _modDef6379 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const GemLevel1SpotIllustration = ReactCompilerGating.isReactCompilerEnab
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6347 };
+  const obj2 = { uri: _modDef6379 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

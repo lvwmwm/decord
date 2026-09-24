@@ -1,11 +1,11 @@
-// Module ID: 16115
-// Function ID: 16116
+// Module ID: 16125
+// Function ID: 16126
 // Name: useShopOrientationLock
-// Dependencies: [19, 558, 568, 11911, 2]
+// Dependencies: [19, 558, 568, 11947, 2]
 
-// Module 16115 (useShopOrientationLock)
+// Module 16125 (useShopOrientationLock)
 import c from "c" /* 568 */;
-import applyOrientationLock from "applyOrientationLock" /* 11911 */;
+import applyOrientationLock from "applyOrientationLock" /* 11947 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

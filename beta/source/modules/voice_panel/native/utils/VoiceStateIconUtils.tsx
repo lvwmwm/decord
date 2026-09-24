@@ -1,12 +1,12 @@
-// Module ID: 9918
-// Function ID: 9919
+// Module ID: 9950
+// Function ID: 9951
 // Name: VoiceStateIconUtils
-// Dependencies: [1996, 4777, 560, 558, 568, 504, 2]
+// Dependencies: [1996, 4809, 560, 558, 568, 504, 2]
 
-// Module 9918 (VoiceStateIconUtils)
+// Module 9950 (VoiceStateIconUtils)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 560 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
-import VoiceStateStore from "VoiceStateStore" /* 4777 */;
+import VoiceStateStore from "VoiceStateStore" /* 4809 */;
 
 const require = fn;
 function isStableVoiceStateEqual(arg0, arg1) {

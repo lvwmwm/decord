@@ -1,11 +1,11 @@
-// Module ID: 4452
-// Function ID: 4453
+// Module ID: 4484
+// Function ID: 4485
 // Name: LinkingModule
-// Dependencies: [17, 1368, 4453, 2]
+// Dependencies: [17, 1368, 4485, 2]
 
-// Module 4452 (LinkingModule)
+// Module 4484 (LinkingModule)
 import _mod17 from "module_17" /* 17 */;
-import NativeLinkingModuleDefault from "NativeLinkingModule" /* 4453 */;
+import NativeLinkingModuleDefault from "NativeLinkingModule" /* 4485 */;
 import size from "module_2" /* 2 */;
 
 const NativeModules = _mod17.NativeModules;

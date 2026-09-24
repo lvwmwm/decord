@@ -1,17 +1,17 @@
-// Module ID: 15161
-// Function ID: 15162
+// Module ID: 15171
+// Function ID: 15172
 // Name: useFamilyCenterActivities
-// Dependencies: [7784, 7785, 558, 568, 565, 7839, 7481, 2]
+// Dependencies: [7816, 7817, 558, 568, 565, 7871, 7513, 2]
 
-// Module 15161 (useFamilyCenterActivities)
+// Module 15171 (useFamilyCenterActivities)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
-import PriceUtils from "PriceUtils" /* 7481 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7839 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7784 */;
+import PriceUtils from "PriceUtils" /* 7513 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7871 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7816 */;
 
 require = fn;
-const TeenActionDisplayType = fn(7785).TeenActionDisplayType;
+const TeenActionDisplayType = fn(7817).TeenActionDisplayType;
 fn(558);
 let ReactCompilerGating = fn(558);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -108,11 +108,11 @@ export const useFormattedTotalForDisplayType = ReactCompilerGating.isReactCompil
   }
   if (arg0 === TeenActionDisplayType.TOTAL_VOICE_MINUTES) {
     if (cResult[0] !== num) {
-      const formatTotalTimeResult = tmp(7839).formatTotalTime(num);
+      const formatTotalTimeResult = tmp(7871).formatTotalTime(num);
       cResult[0] = num;
       cResult[1] = formatTotalTimeResult;
       let tmp19 = formatTotalTimeResult;
-      const tmpResult = tmp(7839);
+      const tmpResult = tmp(7871);
     } else {
       tmp19 = cResult[1];
     }
@@ -128,8 +128,8 @@ export const useFormattedTotalForDisplayType = ReactCompilerGating.isReactCompil
         if (null != totalSpendAmount) {
           result = num;
           if (null != totalSpendCurrency) {
-            result = tmp(7481).shortenAndFormatPrice(totalSpendAmount, totalSpendCurrency);
-            const tmpResult3 = tmp(7481);
+            result = tmp(7513).shortenAndFormatPrice(totalSpendAmount, totalSpendCurrency);
+            const tmpResult3 = tmp(7513);
           }
         }
         cResult[2] = num;
@@ -150,8 +150,8 @@ export const useFormattedTotalForDisplayType = ReactCompilerGating.isReactCompil
         let forResult1 = Symbol.for("react.early_return_sentinel");
         const totalGiftValue = FamilyCenterStore.getTotalGiftValue();
         if (null != totalGiftValue) {
-          forResult1 = tmp(7481).shortenAndFormatPrice(totalGiftValue.amount, totalGiftValue.currency);
-          const tmpResult4 = tmp(7481);
+          forResult1 = tmp(7513).shortenAndFormatPrice(totalGiftValue.amount, totalGiftValue.currency);
+          const tmpResult4 = tmp(7513);
         }
         cResult[4] = forResult1;
         let tmp14 = forResult1;

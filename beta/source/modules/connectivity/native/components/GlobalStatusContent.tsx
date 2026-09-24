@@ -1,29 +1,29 @@
-// Module ID: 10187
-// Function ID: 10188
+// Module ID: 10226
+// Function ID: 10227
 // Name: GlobalStatusContent
-// Dependencies: [19, 17, 2045, 2067, 4781, 4776, 10182, 1078, 21, 4758, 580, 558, 568, 10020, 504, 9668, 10180, 4693, 4610, 5344, 4616, 9642, 1368, 1616, 9646, 10188, 2]
+// Dependencies: [19, 17, 2045, 2067, 4813, 4808, 10221, 1078, 21, 4790, 580, 558, 568, 10059, 504, 9700, 10219, 4725, 4642, 5376, 4648, 9674, 1368, 1616, 9678, 10227, 2]
 
-// Module 10187 (GlobalStatusContent)
+// Module 10226 (GlobalStatusContent)
 import nativeDefault from "native" /* 580 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 9668 */;
-import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 10020 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10180 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 9700 */;
+import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 10059 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10219 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
-import SessionsStore from "SessionsStore" /* 4776 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
+import SessionsStore from "SessionsStore" /* 4808 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 const View = fn(17).View;
-const RTC_PANEL_HEIGHT = fn(10182).RTC_PANEL_HEIGHT;
+const RTC_PANEL_HEIGHT = fn(10221).RTC_PANEL_HEIGHT;
 const RTCConnectionStates = fn(1078).RTCConnectionStates;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { bgNeutral: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, bg: null, container: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 obj2.bg = { backgroundColor: nativeDefault.unsafe_rawColors.GREEN_360 };
@@ -122,11 +122,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp5Result = useCanSpeakInChannelDefault;
   const tmp23 = useThemeDefault();
   if (cResult[6] !== tmp23) {
-    const isThemeDarkResult = tmp(4610).isThemeDark(tmp23);
+    const isThemeDarkResult = tmp(4642).isThemeDark(tmp23);
     cResult[6] = tmp23;
     cResult[7] = isThemeDarkResult;
     let tmp24 = isThemeDarkResult;
-    const tmpResult5 = tmp(4610);
+    const tmpResult5 = tmp(4642);
   } else {
     tmp24 = cResult[7];
   }
@@ -144,12 +144,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               }
               tmp22 = tmp5ResultResult;
             }
-            const isScreenLandscape = tmp(5344).useIsScreenLandscape();
+            const isScreenLandscape = tmp(5376).useIsScreenLandscape();
             if (cResult[15] !== isScreenLandscape) {
               let isModalOpenResult = isScreenLandscape;
               if (isScreenLandscape) {
-                isModalOpenResult = tmp(4616).isModalOpen(tmp5(9642));
-                const tmpResult7 = tmp(4616);
+                isModalOpenResult = tmp(4648).isModalOpen(tmp5(9674));
+                const tmpResult7 = tmp(4648);
               }
               if (isModalOpenResult) {
                 isModalOpenResult = tmp(1368).isAndroid();
@@ -179,7 +179,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   if (cResult[24] !== tmp28) {
                     let tmp36 = tmp28;
                     if (tmp28) {
-                      tmp36 = closure_10(tmp5(9646), { hidden: true });
+                      tmp36 = closure_10(tmp5(9678), { hidden: true });
                     }
                     cResult[24] = tmp28;
                     cResult[25] = tmp36;
@@ -213,8 +213,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   if (tmp15) {
                     const obj3 = {};
                     const merged = Object.assign(tmp26);
-                    tmp39 = closure_10(tmp5(10188), obj3);
-                    const tmp5Result2 = tmp5(10188);
+                    tmp39 = closure_10(tmp5(10227), obj3);
+                    const tmp5Result2 = tmp5(10227);
                   }
                   cResult[26] = tmp15;
                   cResult[27] = tmp26;
@@ -234,7 +234,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             cResult[18] = num11;
             cResult[19] = obj4;
             tmp33 = obj4;
-            const tmpResult6 = tmp(5344);
+            const tmpResult6 = tmp(5376);
           }
         }
       }
@@ -321,8 +321,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const isThemeDarkResult = require("shared").isThemeDark(useThemeDefault());
   let isScreenLandscape = require("useIsScreenLandscape").useIsScreenLandscape();
   if (isScreenLandscape) {
-    isScreenLandscape = tmp5(4616).isModalOpen(tmp2(9642));
-    const tmp5Result5 = tmp5(4616);
+    isScreenLandscape = tmp5(4648).isModalOpen(tmp2(9674));
+    const tmp5Result5 = tmp5(4648);
   }
   if (isScreenLandscape) {
     isScreenLandscape = tmp5(1368).isAndroid();
@@ -336,13 +336,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items2 = [tmp14 ? tmp.bg : tmp.bgNeutral, tmp.container, { minHeight: RTC_PANEL_HEIGHT + num, paddingTop: num }];
   obj2.style = items2;
   if (isScreenLandscape) {
-    isScreenLandscape = closure_10(tmp2(9646), { hidden: true });
+    isScreenLandscape = closure_10(tmp2(9678), { hidden: true });
   }
   const items3 = [isScreenLandscape, ];
   let tmp19 = null;
   if (isGuildStageVoiceResult) {
     const obj4 = { channel, guild, hasRTCConnectivity: tmp12, isDarkTheme: isThemeDarkResult, rtcConnectionState, remotePlatform };
-    tmp19 = closure_10(tmp2(10188), obj4);
+    tmp19 = closure_10(tmp2(10227), obj4);
   }
   items3[1] = tmp19;
   obj2.children = items3;

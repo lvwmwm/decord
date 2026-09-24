@@ -1,23 +1,23 @@
-// Module ID: 10327
-// Function ID: 10328
+// Module ID: 10366
+// Function ID: 10367
 // Name: ModeratorStartStageHeader
-// Dependencies: [19, 17, 21, 4758, 5897, 558, 568, 10287, 10281, 2]
+// Dependencies: [19, 17, 21, 4790, 5929, 558, 568, 10326, 10320, 2]
 
-// Module 10327 (ModeratorStartStageHeader)
+// Module 10366 (ModeratorStartStageHeader)
 import c from "c" /* 568 */;
-import StageActionHeader from "StageActionHeader" /* 10281 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 10287 */;
+import StageActionHeader from "StageActionHeader" /* 10320 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 10326 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
-let obj = { header: { height: fn(5897).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: 8, marginTop: 4, overflow: "visible" } };
+const createStyles = fn(4790);
+let obj = { header: { height: fn(5929).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: 8, marginTop: 4, overflow: "visible" } };
 let closure_6 = createStyles.createStyles(obj);
 const ReactCompilerGating = fn(558);
-let obj3 = { height: fn(5897).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: 8, marginTop: 4, overflow: "visible" };
+let obj3 = { height: fn(5929).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: 8, marginTop: 4, overflow: "visible" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/ModeratorStartStageHeader.tsx");
 
@@ -32,9 +32,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
   }
   if (cResult[0] !== channel) {
     const obj2 = { channel };
-    const tmp10 = React4(tmp(10281).HideStageChannelCallIcon, obj2);
+    const tmp10 = React4(tmp(10320).HideStageChannelCallIcon, obj2);
     const obj3 = { channel };
-    const tmp11 = React4(tmp(10281).StageChannelCallHeader, obj3);
+    const tmp11 = React4(tmp(10320).StageChannelCallHeader, obj3);
     cResult[0] = channel;
     cResult[1] = tmp10;
     cResult[2] = tmp11;
@@ -50,7 +50,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
     }
     if (cResult[6] !== channel.id) {
       const obj4 = { channelId: channel.id };
-      const tmp17 = React4(tmp(10281).StageInviteButton, obj4);
+      const tmp17 = React4(tmp(10320).StageInviteButton, obj4);
       cResult[6] = channel.id;
       cResult[7] = tmp17;
       let tmp15 = tmp17;
@@ -84,7 +84,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
   let tmp13 = speaker;
   if (speaker) {
     const obj6 = { channelId: channel.id };
-    tmp13 = React4(tmp(10281).MusicMuteButton, obj6);
+    tmp13 = React4(tmp(10320).MusicMuteButton, obj6);
   }
   cResult[3] = channel.id;
   cResult[4] = speaker;
@@ -101,7 +101,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
   const items = [React4(StageActionHeader.HideStageChannelCallIcon, { channel }), React4(StageActionHeader.StageChannelCallHeader, { channel }), , ];
   if (speaker) {
     const obj2 = { channelId: channel.id };
-    speaker = tmp7(tmp8(10281).MusicMuteButton, obj2);
+    speaker = tmp7(tmp8(10320).MusicMuteButton, obj2);
   }
   items[2] = speaker;
   items[3] = React4(StageActionHeader.StageInviteButton, { channelId: channel.id });

@@ -1,12 +1,12 @@
-// Module ID: 8084
-// Function ID: 8085
+// Module ID: 8116
+// Function ID: 8117
 // Name: uploadMessageAttachments
-// Dependencies: [5, 8085, 8086, 4980, 577, 2]
+// Dependencies: [5, 8117, 8118, 5012, 577, 2]
 // Exports: uploadMessageAttachments
 
-// Module 8084 (uploadMessageAttachments)
+// Module 8116 (uploadMessageAttachments)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UploadStore from "UploadStore" /* 8085 */;
+import UploadStore from "UploadStore" /* 8117 */;
 
 const require = fn;
 let closure_6 = async function _uploadMessageAttachments(arg0, value) {

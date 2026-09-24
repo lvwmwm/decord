@@ -1,9 +1,9 @@
-// Module ID: 5814
-// Function ID: 5815
+// Module ID: 5846
+// Function ID: 5847
 // Name: MemberVerificationFormRenderer
-// Dependencies: [19, 17, 21, 4758, 558, 568, 4583, 5815, 5834, 7330, 7331, 7335, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 4615, 5847, 5866, 7362, 7363, 7367, 2]
 
-// Module 5814 (MemberVerificationFormRenderer)
+// Module 5846 (MemberVerificationFormRenderer)
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -12,7 +12,7 @@ const require = fn;
 get_ActivityIndicator = fn(17);
 ({ Keyboard: c3, View: closure_4 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ container: { flex: 1, flexDirection: "column", alignItems: "stretch", paddingHorizontal: 0 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

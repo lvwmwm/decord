@@ -1,17 +1,17 @@
-// Module ID: 12538
-// Function ID: 12539
+// Module ID: 12574
+// Function ID: 12575
 // Name: TimestampSearchHeader
-// Dependencies: [19, 17, 21, 558, 11291, 4758, 580, 568, 4720, 4754, 1119, 8876, 2]
+// Dependencies: [19, 17, 21, 558, 11327, 4790, 580, 568, 4752, 4786, 1119, 8908, 2]
 // Exports: useTimestampSearchHeaderHeight
 
-// Module 12538 (TimestampSearchHeader)
+// Module 12574 (TimestampSearchHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ClockIcon from "ClockIcon" /* 4720 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Form from "Form" /* 8876 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11291 */;
+import ClockIcon from "ClockIcon" /* 4752 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Form from "Form" /* 8908 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11327 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,7 +23,7 @@ let c6 = "text-sm/semibold";
 let c7 = "text-sm/medium";
 let ReactCompilerGating = fn(558);
 ReactCompilerGating.isReactCompilerEnabled();
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND }, headerRow: { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: 12 }, icon: { marginRight: 12 }, description: { paddingHorizontal: 16, paddingBottom: 12 }, divider: null };
 let obj4 = { backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
 obj.divider = { marginLeft: 0, backgroundColor: nativeDefault.colors.MOBILE_COMMAND_BAR_DIVIDER };
@@ -42,7 +42,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_8();
   if (cResult[0] !== tmp4.icon) {
     const obj2 = { size: "sm", style: tmp4.icon };
-    const tmp7 = React4(tmp(4720).ClockIcon, obj2);
+    const tmp7 = React4(tmp(4752).ClockIcon, obj2);
     cResult[0] = tmp4.icon;
     cResult[1] = tmp7;
     let tmp5 = tmp7;
@@ -51,7 +51,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant, color: "mobile-text-heading-primary", children: "@time" };
-    const tmp11 = React4(tmp(4754).Text, obj3);
+    const tmp11 = React4(tmp(4786).Text, obj3);
     cResult[2] = tmp11;
     let tmp8 = tmp11;
   } else {
@@ -72,7 +72,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[7] !== tmp4.description) {
       const obj4 = { style: tmp4.description, variant: variant2, color: "text-muted", children: tmp14 };
-      const tmp19 = React4(tmp(4754).Text, obj4);
+      const tmp19 = React4(tmp(4786).Text, obj4);
       cResult[7] = tmp4.description;
       cResult[8] = tmp19;
       let tmp16 = tmp19;
@@ -85,7 +85,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       if (cResult[12] !== tmp4.divider) {
         const obj5 = { style: tmp4.divider };
-        const tmp26 = React4(tmp(8876).FormDivider, obj5);
+        const tmp26 = React4(tmp(8908).FormDivider, obj5);
         cResult[12] = tmp4.divider;
         cResult[13] = tmp26;
         let tmp24 = tmp26;

@@ -1,13 +1,13 @@
-// Module ID: 17256
-// Function ID: 17257
+// Module ID: 17266
+// Function ID: 17267
 // Name: YouSettingsCoachmark
-// Dependencies: [109, 558, 568, 17257, 10452, 2]
+// Dependencies: [109, 558, 568, 17267, 10491, 2]
 // Exports: default
 
-// Module 17256 (YouSettingsCoachmark)
+// Module 17266 (YouSettingsCoachmark)
 import c from "c" /* 568 */;
-import useCoachmark from "useCoachmark" /* 10452 */;
-import useReferralProgramCoachmark from "useReferralProgramCoachmark" /* 17257 */;
+import useCoachmark from "useCoachmark" /* 10491 */;
+import useReferralProgramCoachmark from "useReferralProgramCoachmark" /* 17267 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 
 require = fn;
@@ -35,7 +35,7 @@ export default function YouSettingsCoachmark(buttonRef) {
       tmp9 = cResult[1];
       tmp10 = cResult[2];
     }
-    obj3 = obj3(10452);
+    obj3 = obj3(10491);
     coachmark = obj3.useCoachmark(tmp9, tmp10);
   } else {
     const merged = Object.assign(buttonRef, Object.assign({ buttonRef: 0 }));

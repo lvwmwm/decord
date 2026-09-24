@@ -1,23 +1,23 @@
-// Module ID: 16082
-// Function ID: 16083
+// Module ID: 16092
+// Function ID: 16093
 // Name: UserSettingsDesignSystemContextMenu
-// Dependencies: [109, 19, 17, 21, 12924, 7341, 8229, 10424, 4721, 16083, 16084, 11684, 4758, 580, 12, 558, 568, 5188, 8182, 4754, 5824, 2]
+// Dependencies: [109, 19, 17, 21, 12960, 7373, 8261, 10463, 4753, 16093, 16094, 11720, 4790, 580, 12, 558, 568, 5220, 8214, 4786, 5856, 2]
 
-// Module 16082 (UserSettingsDesignSystemContextMenu)
+// Module 16092 (UserSettingsDesignSystemContextMenu)
 import _mod12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import _modDef4721 from "module_4721" /* 4721 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import Card from "Card" /* 5824 */;
-import _modDef7341 from "module_7341" /* 7341 */;
-import _modDef8229 from "module_8229" /* 8229 */;
-import _modDef10424 from "module_10424" /* 10424 */;
-import _modDef11684 from "module_11684" /* 11684 */;
-import _modDef12924 from "module_12924" /* 12924 */;
-import _modDef16083 from "module_16083" /* 16083 */;
-import _modDef16084 from "module_16084" /* 16084 */;
+import _modDef4753 from "module_4753" /* 4753 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import Card from "Card" /* 5856 */;
+import _modDef7373 from "module_7373" /* 7373 */;
+import _modDef8261 from "module_8261" /* 8261 */;
+import _modDef10463 from "module_10463" /* 10463 */;
+import _modDef11720 from "module_11720" /* 11720 */;
+import _modDef12960 from "module_12960" /* 12960 */;
+import _modDef16093 from "module_16093" /* 16093 */;
+import _modDef16094 from "module_16094" /* 16094 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -27,9 +27,9 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let items = [_modDef12924, _modDef7341, _modDef8229, _modDef10424, _modDef4721, _modDef16083, _modDef16084, _modDef11684];
+let items = [_modDef12960, _modDef7373, _modDef8261, _modDef10463, _modDef4753, _modDef16093, _modDef16094, _modDef11720];
 let closure_10 = ["Launch Probe!", "Activate Laser", "Teleport Widget", "Engage Hyperdrive", "Deploy Robots", "Initiate Time Warp", "Beam Up Snacks", "Hack Database", "Trigger Cosmic Boom", "Unleash Space Vortex", "Activate Cloaking Device"];
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flexDirection: "column", gap: 12, padding: 16 }, card: { gap: 12 }, divider: { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginVertical: 12 } };
 let closure_11 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -70,7 +70,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
       closure_2 = _mod12.shuffle(items);
       const obj3 = { length: closure_1 };
       return Array.from({ length: closure_1 }).map((item, index) => {
-        const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: "toCharArray$esjava$1", action: "ty" };
+        const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: "toCharArray$esjava$1", action: "isReactCompilerEnabled" };
         let str = "default";
         if (index === closure_0 - 1) {
           str = "destructive";
@@ -95,7 +95,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
       let obj3 = { length: num2 };
       const tmpResult2 = tmp(12);
       const mapped1 = Array.from(obj3).map((item, index) => {
-        const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: "toCharArray$esjava$1", action: "ty" };
+        const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: "toCharArray$esjava$1", action: "isReactCompilerEnabled" };
         let str = "default";
         if (index === closure_0 - 1) {
           str = "destructive";
@@ -156,7 +156,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
       }
     }
     const obj5 = { triggerOnLongPress: tmp4, items: tmp5, align, title: "Sample title", children: tmp16 };
-    const tmp19 = closure_7(tmp(8182).ContextMenu, obj5);
+    const tmp19 = closure_7(tmp(8214).ContextMenu, obj5);
     cResult[11] = align;
     cResult[12] = tmp5;
     cResult[13] = tmp16;
@@ -194,7 +194,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
         const obj2 = text(num[14]);
         const obj3 = { length };
         return Array.from({ length }).map((item, index) => {
-          const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: "toCharArray$esjava$1", action: "ty" };
+          const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: "toCharArray$esjava$1", action: "isReactCompilerEnabled" };
           let str = "default";
           if (index === closure_0 - 1) {
             str = "destructive";
@@ -214,7 +214,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
       const _Array2 = Array;
       const obj4 = { length: num };
       mapped = Array.from(obj4).map((item, index) => {
-        const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: "toCharArray$esjava$1", action: "ty" };
+        const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: "toCharArray$esjava$1", action: "isReactCompilerEnabled" };
         let str = "default";
         if (index === closure_0 - 1) {
           str = "destructive";
@@ -254,8 +254,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(59);
   const tmp4 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp9 = React5(tmp(4754).Text, { variant: "text-lg/bold", children: "Basic Example" });
-    const tmp10 = React5(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "You press the button to open the menu and then select an action, or tap and pan down in a single gesture." });
+    const tmp9 = React5(tmp(4786).Text, { variant: "text-lg/bold", children: "Basic Example" });
+    const tmp10 = React5(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "You press the button to open the menu and then select an action, or tap and pan down in a single gesture." });
     const tmp12 = React5(closure_12, { label: "Open Menu" });
     cResult[0] = tmp9;
     cResult[1] = tmp10;
@@ -270,7 +270,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { style: tmp4.card, children: null };
     items = [tmp5, tmp6, tmp7];
     obj2.children = items;
-    const tmp15 = closure_1_8(tmp(5824).Card, obj2);
+    const tmp15 = closure_1_8(tmp(5856).Card, obj2);
     cResult[3] = tmp4.card;
     cResult[4] = tmp15;
     let tmp13 = tmp15;
@@ -278,8 +278,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp13 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp20 = React5(tmp(4754).Text, { variant: "text-lg/bold", children: "Long Press" });
-    const tmp21 = React5(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "You can also have the menu open on long press instead." });
+    const tmp20 = React5(tmp(4786).Text, { variant: "text-lg/bold", children: "Long Press" });
+    const tmp21 = React5(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "You can also have the menu open on long press instead." });
     const tmp23 = React5(closure_12, { triggerOnLongPress: true, label: "Long Press to Open" });
     cResult[5] = tmp20;
     cResult[6] = tmp21;
@@ -296,7 +296,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj3 = { style: tmp4.card, children: null };
     const items1 = [tmp16, tmp17, tmp18];
     obj3.children = items1;
-    const tmp26 = closure_1_8(tmp(5824).Card, obj3);
+    const tmp26 = closure_1_8(tmp(5856).Card, obj3);
     cResult[8] = tmp4.card;
     cResult[9] = tmp26;
     let tmp24 = tmp26;
@@ -304,8 +304,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp24 = cResult[9];
   }
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp31 = React5(tmp(4754).Text, { variant: "text-lg/bold", children: "Sections" });
-    const tmp32 = React5(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "You can pass an array of arrays of items to create sections in the menu." });
+    const tmp31 = React5(tmp(4786).Text, { variant: "text-lg/bold", children: "Sections" });
+    const tmp32 = React5(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "You can pass an array of arrays of items to create sections in the menu." });
     const tmp34 = React5(closure_12, { label: "Open Sectioned Menu", sections: 3, count: 2 });
     cResult[10] = tmp34;
     cResult[11] = tmp31;
@@ -322,7 +322,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj4 = { style: tmp4.card, children: null };
     const items2 = [tmp28, tmp29, tmp27];
     obj4.children = items2;
-    const tmp37 = closure_1_8(tmp(5824).Card, obj4);
+    const tmp37 = closure_1_8(tmp(5856).Card, obj4);
     cResult[13] = tmp4.card;
     cResult[14] = tmp37;
     let tmp35 = tmp37;
@@ -330,8 +330,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp35 = cResult[14];
   }
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp42 = React5(tmp(4754).Text, { variant: "text-lg/bold", children: "Automatic Alignment" });
-    const tmp43 = React5(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "The menu will automatically align itself so that it doesn't overflow offscreen horizontally." });
+    const tmp42 = React5(tmp(4786).Text, { variant: "text-lg/bold", children: "Automatic Alignment" });
+    const tmp43 = React5(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "The menu will automatically align itself so that it doesn't overflow offscreen horizontally." });
     const tmp45 = React5(closure_12, { alignButton: "flex-end", label: "Open Right-Aligned Menu" });
     cResult[15] = tmp42;
     cResult[16] = tmp43;
@@ -354,7 +354,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp46 = cResult[19];
   }
   if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp53 = React5(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "It will also position itself vertically, so that it doesn't overflow offscreen vertically." });
+    const tmp53 = React5(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "It will also position itself vertically, so that it doesn't overflow offscreen vertically." });
     const tmp55 = React5(closure_12, { count: 8, label: "Open Tall Menu" });
     cResult[20] = tmp53;
     cResult[21] = tmp55;
@@ -370,9 +370,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const _Symbol = Symbol;
     if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp62 = React5(tmp(4754).Text, { variant: "text-lg/bold", children: "Intentional Alignment" });
-      const tmp63 = React5(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "Menus can take an align prop to intentionally align the menu, instead of using the automatic menu positioning." });
-      const tmp64 = React5(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "The align prop can be set to above, below, left, or right of the menu trigger. How the menu positions relative to the start or end of the trigger is then automatically determined based on the available space." });
+      const tmp62 = React5(tmp(4786).Text, { variant: "text-lg/bold", children: "Intentional Alignment" });
+      const tmp63 = React5(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "Menus can take an align prop to intentionally align the menu, instead of using the automatic menu positioning." });
+      const tmp64 = React5(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "The align prop can be set to above, below, left, or right of the menu trigger. How the menu positions relative to the start or end of the trigger is then automatically determined based on the available space." });
       cResult[25] = tmp62;
       cResult[26] = tmp63;
       cResult[27] = tmp64;
@@ -461,8 +461,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             const _Symbol6 = Symbol;
             if (cResult[46] === Symbol.for("react.memo_cache_sentinel")) {
-              const tmp104 = React5(tmp(4754).Text, { variant: "text-lg/bold", children: "Overflow Scrolling" });
-              const tmp105 = React5(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "Menus should not typically have enough items to require scrolling, but with font scaling and smaller devices its possible. In this case, the menu will allow the user to scroll." });
+              const tmp104 = React5(tmp(4786).Text, { variant: "text-lg/bold", children: "Overflow Scrolling" });
+              const tmp105 = React5(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "Menus should not typically have enough items to require scrolling, but with font scaling and smaller devices its possible. In this case, the menu will allow the user to scroll." });
               const tmp107 = React5(closure_12, { count: 30, label: "Open Really Tall Menu" });
               cResult[46] = tmp104;
               cResult[47] = tmp105;
@@ -479,7 +479,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const obj10 = { style: tmp4.card, children: null };
               const items3 = [tmp100, tmp101, tmp102];
               obj10.children = items3;
-              const tmp110 = closure_1_8(tmp(5824).Card, obj10);
+              const tmp110 = closure_1_8(tmp(5856).Card, obj10);
               cResult[49] = tmp4.card;
               cResult[50] = tmp110;
               let tmp108 = tmp110;
@@ -524,7 +524,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj13 = { style: tmp4.card, children: null };
     const items5 = [tmp58, tmp59, tmp60, tmp65, tmp69, tmp73, tmp77, tmp81, tmp85, tmp89, tmp93];
     obj13.children = items5;
-    const tmp99 = closure_1_8(tmp(5824).Card, obj13);
+    const tmp99 = closure_1_8(tmp(5856).Card, obj13);
     cResult[40] = tmp4.card;
     cResult[41] = tmp65;
     cResult[42] = tmp73;

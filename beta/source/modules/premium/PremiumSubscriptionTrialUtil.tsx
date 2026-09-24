@@ -1,15 +1,15 @@
-// Module ID: 8323
-// Function ID: 8324
+// Module ID: 8355
+// Function ID: 8356
 // Name: PremiumSubscriptionTrialUtil
-// Dependencies: [1376, 4424, 7697, 1378, 558, 568, 504, 2]
+// Dependencies: [1376, 4456, 7729, 1378, 558, 568, 504, 2]
 // Exports: getPremiumTrialOffer, hasActiveTrial, isEligibleTrialSub
 
-// Module 8323 (PremiumSubscriptionTrialUtil)
+// Module 8355 (PremiumSubscriptionTrialUtil)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import UserStore from "UserStore" /* 1376 */;
-import SubscriptionStore from "SubscriptionStore" /* 4424 */;
-import UserOfferStore from "UserOfferStore" /* 7697 */;
+import SubscriptionStore from "SubscriptionStore" /* 4456 */;
+import UserOfferStore from "UserOfferStore" /* 7729 */;
 
 require = fn;
 const PremiumConstants = fn(1378);

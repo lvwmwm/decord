@@ -1,12 +1,12 @@
-// Module ID: 16600
-// Function ID: 16601
+// Module ID: 16610
+// Function ID: 16611
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: [19, 1983, 1078, 558, 568, 504, 4722, 8548, 4458, 1119, 3198, 2]
+// Dependencies: [19, 1983, 1078, 558, 568, 504, 4754, 8580, 4490, 1119, 3230, 2]
 
-// Module 16600 (useDefaultAuthorizationNotifiers)
+// Module 16610 (useDefaultAuthorizationNotifiers)
 import util from "util" /* 1119 */;
-import _modDef3198 from "module_3198" /* 3198 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
+import _modDef3230 from "module_3230" /* 3230 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
 import noop from "module_19" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1983 */;
 
@@ -86,7 +86,7 @@ export const useDefaultAuthorizationNotifiers = ReactCompilerGating.isReactCompi
         return closure_0(arg0);
       }
     }
-    const previousWhen = tmp(8548).usePreviousWhen(obj3);
+    const previousWhen = tmp(8580).usePreviousWhen(obj3);
     if (cResult[9] === tmp12) {
       class A {
         constructor(arg0) {
@@ -104,7 +104,7 @@ export const useDefaultAuthorizationNotifiers = ReactCompilerGating.isReactCompi
               if (closure_2) {
                 const obj2 = { content: null, key: "account-linked-toast" };
                 const intl = util.intl;
-                obj2.content = intl.string(_modDef3198.uG6teD);
+                obj2.content = intl.string(_modDef3230.uG6teD);
                 ToastActionCreatorsDefault.open(obj2);
               }
             }
@@ -119,7 +119,7 @@ export const useDefaultAuthorizationNotifiers = ReactCompilerGating.isReactCompi
     cResult[12] = previousWhen;
     cResult[13] = fn2;
     cResult[14] = items1;
-    const tmpResult4 = tmp(8548);
+    const tmpResult4 = tmp(8580);
   }
   obj3 = { value, shouldUpdate: stateFromStores };
   cResult[6] = stateFromStores;
@@ -167,7 +167,7 @@ export const useDefaultAuthorizationNotifiers = ReactCompilerGating.isReactCompi
             if (flag) {
               const obj2 = { content: null, key: "account-linked-toast" };
               const intl = util.intl;
-              obj2.content = intl.string(_modDef3198.uG6teD);
+              obj2.content = intl.string(_modDef3230.uG6teD);
               ToastActionCreatorsDefault.open(obj2);
             }
           }

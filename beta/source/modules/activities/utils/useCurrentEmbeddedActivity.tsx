@@ -1,9 +1,9 @@
-// Module ID: 9716
-// Function ID: 9717
+// Module ID: 9748
+// Function ID: 9749
 // Name: useCurrentEmbeddedActivity
 // Dependencies: [2044, 558, 568, 504, 2]
 
-// Module 9716 (useCurrentEmbeddedActivity)
+// Module 9748 (useCurrentEmbeddedActivity)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;

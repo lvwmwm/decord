@@ -1,14 +1,14 @@
-// Module ID: 12252
-// Function ID: 12253
+// Module ID: 12288
+// Function ID: 12289
 // Name: HomeEmptyState
-// Dependencies: [19, 21, 558, 568, 8733, 2]
+// Dependencies: [19, 21, 558, 568, 8765, 2]
 
-// Module 12252 (HomeEmptyState)
+// Module 12288 (HomeEmptyState)
 import c from "c" /* 568 */;
-import inlineStylesDefault from "inlineStyles" /* 8733 */;
+import inlineStylesDefault from "inlineStyles" /* 8765 */;
 import noop from "module_19" /* 19 */;
 
-const inlineStyles = tmp(8733);
+const inlineStyles = tmp(8765);
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);

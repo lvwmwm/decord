@@ -1,21 +1,21 @@
-// Module ID: 7509
-// Function ID: 7510
+// Module ID: 7541
+// Function ID: 7542
 // Name: MemberSafetyPermissionsUtils
-// Dependencies: [32, 2063, 2067, 4399, 1376, 4403, 1078, 1090, 4404, 558, 568, 504, 2]
+// Dependencies: [32, 2063, 2067, 4431, 1376, 4435, 1078, 1090, 4436, 558, 568, 504, 2]
 // Exports: canAccessMemberSafetyPage, canBulkBanUser, canPruneGuildMembers, getContextForPermission, hasBulkBanningPermissions
 
-// Module 7509 (MemberSafetyPermissionsUtils)
+// Module 7541 (MemberSafetyPermissionsUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
 import _slicedToArray from "module_32" /* 32 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 const isGuildOwner = fn(2063).isGuildOwner;
-let closure_8 = fn(4403).MemberSafetyPagePermissions;
+let closure_8 = fn(4435).MemberSafetyPagePermissions;
 const Constants = fn(1078);
 ({ GuildFeatures: closure_9, Permissions: c10 } = Constants);
 let ReactCompilerGating = fn(558);

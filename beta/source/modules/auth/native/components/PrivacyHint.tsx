@@ -1,25 +1,25 @@
-// Module ID: 16318
-// Function ID: 16319
+// Module ID: 16328
+// Function ID: 16329
 // Name: PrivacyHint
-// Dependencies: [19, 17, 6833, 16280, 1078, 21, 4758, 558, 568, 1119, 4754, 4479, 5820, 8876, 16319, 2]
+// Dependencies: [19, 17, 6865, 16290, 1078, 21, 4790, 558, 568, 1119, 4786, 4511, 5852, 8908, 16329, 2]
 
-// Module 16318 (PrivacyHint)
+// Module 16328 (PrivacyHint)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4479 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 16319 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4511 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 16329 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, Pressable: closure_4 } = get_ActivityIndicator);
-const usePromoEmailConsentStore = fn(6833).usePromoEmailConsentStore;
-const useRegistrationUIStore = fn(16280).useRegistrationUIStore;
+const usePromoEmailConsentStore = fn(6865).usePromoEmailConsentStore;
+const useRegistrationUIStore = fn(16290).useRegistrationUIStore;
 const MarketingURLs = fn(1078).MarketingURLs;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles({ multiItem: { flexDirection: "column", gap: 16 }, checkbox: { flexDirection: "row", alignItems: "flex-start", gap: 8 }, radio: { flexDirection: "row", alignItems: "center", gap: 8 }, checkboxLabel: { flex: 1 } });
 let ReactCompilerGating = fn(558);
 let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
@@ -37,7 +37,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   }
   if (cResult[1] !== style) {
     const obj5 = { style, variant: "text-xs/medium", color: "text-muted", children: first };
-    const tmp9 = closure_1_8(tmp(4754).Text, obj5);
+    const tmp9 = closure_1_8(tmp(4786).Text, obj5);
     cResult[1] = style;
     cResult[2] = tmp9;
     let tmp7 = tmp9;
@@ -97,7 +97,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[8] !== tmp5.checkboxLabel) {
         const obj4 = { variant: "text-xs/medium", color: "text-muted", style: tmp5.checkboxLabel, children: tmp15 };
-        const tmp20 = closure_1_8(tmp(4754).Text, obj4);
+        const tmp20 = closure_1_8(tmp(4786).Text, obj4);
         cResult[8] = tmp5.checkboxLabel;
         cResult[9] = tmp20;
         let tmp18 = tmp20;
@@ -134,10 +134,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (undefined !== asCheckbox && asCheckbox) {
     const obj6 = { checked: consent };
-    let tmp13Result = tmp13(tmp(5820).FormCheckbox, obj6);
+    let tmp13Result = tmp13(tmp(5852).FormCheckbox, obj6);
   } else {
     const obj8 = { selected: consent };
-    tmp13Result = tmp13(tmp(8876).FormRow.Radio, obj8);
+    tmp13Result = tmp13(tmp(8908).FormRow.Radio, obj8);
   }
   cResult[4] = undefined !== asCheckbox && asCheckbox;
   cResult[5] = consent;
@@ -156,11 +156,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj2.hitSlop = { top: 11, bottom: 11, left: 11 };
   if (asCheckbox) {
     const obj3 = { checked: consent };
-    let tmp7Result = tmp7(tmp2(5820).FormCheckbox, obj3);
+    let tmp7Result = tmp7(tmp2(5852).FormCheckbox, obj3);
     let tmp9 = tmp7;
   } else {
     const obj4 = { selected: consent };
-    tmp7Result = tmp7(tmp2(8876).FormRow.Radio, obj4);
+    tmp7Result = tmp7(tmp2(8908).FormRow.Radio, obj4);
     tmp9 = tmp7;
   }
   const items = [tmp7Result, ];

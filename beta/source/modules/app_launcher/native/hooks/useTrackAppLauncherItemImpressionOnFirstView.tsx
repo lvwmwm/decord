@@ -1,11 +1,11 @@
-// Module ID: 12241
-// Function ID: 12242
+// Module ID: 12277
+// Function ID: 12278
 // Name: useTrackAppLauncherItemImpressionOnFirstView
-// Dependencies: [19, 558, 568, 11469, 1489, 9046, 1253, 2]
+// Dependencies: [19, 558, 568, 11505, 1489, 9078, 1253, 2]
 
-// Module 12241 (useTrackAppLauncherItemImpressionOnFirstView)
+// Module 12277 (useTrackAppLauncherItemImpressionOnFirstView)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
-import useTrackImpression from "useTrackImpression" /* 9046 */;
+import useTrackImpression from "useTrackImpression" /* 9078 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,7 +17,7 @@ export const useTrackAppLauncherItemImpressionOnFirstView = ReactCompilerGating.
   const cResult = entrypoint(568).c(6);
   let obj = entrypoint(568);
   const tmp = entrypoint;
-  entrypoint = entrypoint(11469).useAppLauncherContext().entrypoint;
+  entrypoint = entrypoint(11505).useAppLauncherContext().entrypoint;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const _Set = Set;
     const set = new Set();
@@ -37,7 +37,7 @@ export const useTrackAppLauncherItemImpressionOnFirstView = ReactCompilerGating.
   } else {
     tmp9 = cResult[1];
   }
-  let obj2 = entrypoint(11469);
+  let obj2 = entrypoint(11505);
   const focusEffect = tmp(1489).useFocusEffect(tmp9);
   if (cResult[2] !== entrypoint) {
     const fn2 = function p(itemKey) {
@@ -69,8 +69,8 @@ export const useTrackAppLauncherItemImpressionOnFirstView = ReactCompilerGating.
   }
   return tmp12;
 }) : (() => {
-  entrypoint = entrypoint(11469).useAppLauncherContext().entrypoint;
-  let obj = entrypoint(11469);
+  entrypoint = entrypoint(11505).useAppLauncherContext().entrypoint;
+  let obj = entrypoint(11505);
   dependencyMap = noop.useRef(new Set());
   const set = new Set();
   const focusEffect = entrypoint(1489).useFocusEffect(noop.useCallback(() => {

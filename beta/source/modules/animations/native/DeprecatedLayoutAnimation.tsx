@@ -1,13 +1,13 @@
-// Module ID: 7226
-// Function ID: 7227
+// Module ID: 7258
+// Function ID: 7259
 // Name: DeprecatedLayoutAnimation
-// Dependencies: [17, 4750, 1368, 2]
+// Dependencies: [17, 4782, 1368, 2]
 // Exports: DeprecatedLayoutAnimation, DeprecatedLayoutAnimationKeyboard
 
-// Module 7226 (DeprecatedLayoutAnimation)
+// Module 7258 (DeprecatedLayoutAnimation)
 import PlatformUtils from "PlatformUtils" /* 1368 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import size from "module_2" /* 2 */;
 
 ({ Keyboard: c2, LayoutAnimation } = get_ActivityIndicator);

@@ -1,14 +1,14 @@
-// Module ID: 15282
-// Function ID: 15283
+// Module ID: 15292
+// Function ID: 15293
 // Name: useBountyAppStoreOverlayPlayback
-// Dependencies: [19, 15283, 15285, 558, 568, 15286, 2]
+// Dependencies: [19, 15293, 15295, 558, 568, 15296, 2]
 // Exports: getBountyVideoEndMode
 
-// Module 15282 (useBountyAppStoreOverlayPlayback)
+// Module 15292 (useBountyAppStoreOverlayPlayback)
 import c from "c" /* 568 */;
-import useBountyVideoEndAppStoreOverlay from "useBountyVideoEndAppStoreOverlay" /* 15283 */;
-import useBountiesModalTiming from "useBountiesModalTiming" /* 15285 */;
-import useBountyPauseAppStoreSheet from "useBountyPauseAppStoreSheet" /* 15286 */;
+import useBountyVideoEndAppStoreOverlay from "useBountyVideoEndAppStoreOverlay" /* 15293 */;
+import useBountiesModalTiming from "useBountiesModalTiming" /* 15295 */;
+import useBountyPauseAppStoreSheet from "useBountyPauseAppStoreSheet" /* 15296 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -34,9 +34,9 @@ export const useBountyAppStoreOverlayPlayback = ReactCompilerGating.isReactCompi
           if (cResult[4] === sourceQuestContent) {
             let tmp4 = cResult[5];
           }
-          const onVideoEndForAppStore = tmp(15283).useBountyVideoEndAppStoreOverlay(tmp4).onVideoEndForAppStore;
-          const tmpResult = tmp(15283);
-          const bountyVideoEndAppStoreContext = tmp(15283).useBountyVideoEndAppStoreContext();
+          const onVideoEndForAppStore = tmp(15293).useBountyVideoEndAppStoreOverlay(tmp4).onVideoEndForAppStore;
+          const tmpResult = tmp(15293);
+          const bountyVideoEndAppStoreContext = tmp(15293).useBountyVideoEndAppStoreContext();
           let flag;
           if (bountyVideoEndAppStoreContext != null) {
             flag = bountyVideoEndAppStoreContext.isVideoEndAppStoreOverlayVisible;
@@ -50,7 +50,7 @@ export const useBountyAppStoreOverlayPlayback = ReactCompilerGating.isReactCompi
                 if (cResult[9] === sourceQuestContent) {
                   let tmp7 = cResult[10];
                 }
-                const handleVideoPausedForAppStore = tmp(15286).useBountyPauseAppStoreSheet(tmp7).handleVideoPausedForAppStore;
+                const handleVideoPausedForAppStore = tmp(15296).useBountyPauseAppStoreSheet(tmp7).handleVideoPausedForAppStore;
                 if (cResult[11] === handleVideoPaused) {
                   if (cResult[12] === handleVideoPausedForAppStore) {
                     if (cResult[13] === onPaused) {
@@ -130,9 +130,9 @@ export const useBountyAppStoreOverlayPlayback = ReactCompilerGating.isReactCompi
                       cResult[21] = tmp9;
                       cResult[22] = tmp10;
                       cResult[23] = flag;
-                      cResult[24] = endMode === tmp(15285).BountyVideoEndMode.APP_STORE_LOOP;
+                      cResult[24] = endMode === tmp(15295).BountyVideoEndMode.APP_STORE_LOOP;
                       cResult[25] = tmp13;
-                      const tmp11 = endMode === tmp(15285).BountyVideoEndMode.APP_STORE_LOOP;
+                      const tmp11 = endMode === tmp(15295).BountyVideoEndMode.APP_STORE_LOOP;
                     }
                     class R {
                       constructor() {
@@ -170,7 +170,7 @@ export const useBountyAppStoreOverlayPlayback = ReactCompilerGating.isReactCompi
                 cResult[13] = onPaused;
                 cResult[14] = O;
                 tmp8 = O;
-                const tmpResult4 = tmp(15286);
+                const tmpResult4 = tmp(15296);
               }
             }
           }
@@ -181,7 +181,7 @@ export const useBountyAppStoreOverlayPlayback = ReactCompilerGating.isReactCompi
           cResult[9] = sourceQuestContent;
           cResult[10] = obj2;
           tmp7 = obj2;
-          const tmpResult3 = tmp(15283);
+          const tmpResult3 = tmp(15293);
         }
       }
     }

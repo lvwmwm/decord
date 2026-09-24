@@ -1,0 +1,9 @@
+// Module ID: 12936
+// Function ID: 12937
+// Dependencies: [1125]
+
+// Module 12936
+import registerAsset from "module_1125" /* 1125 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/empty_channel", width: 48, height: 48, scales: [2, 3], hash: "8d7c88bf2a3c70b7581717d42e9c4ec1", name: "send_message_32px", type: "png" });

@@ -1,15 +1,15 @@
-// Module ID: 9552
-// Function ID: 9553
+// Module ID: 9584
+// Function ID: 9585
 // Name: OAuth2AuthorizeContent
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 1482, 1616, 8980, 7287, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 1482, 1616, 9012, 7319, 2]
 
-// Module 9552 (OAuth2AuthorizeContent)
+// Module 9584 (OAuth2AuthorizeContent)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7287 */;
-import ObscuredSurfaceDefault from "ObscuredSurface" /* 8980 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7319 */;
+import ObscuredSurfaceDefault from "ObscuredSurface" /* 9012 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { fill: { flex: 1 }, scrollView: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16 }, scrollViewContentLandscape: { flexDirection: "row", alignItems: "center", width: "100%", flexGrow: 1, gap: 16 }, scrollViewContentPortrait: { flexDirection: "column", width: "100%", flexGrow: 1, gap: 16 }, header: { paddingTop: 24 }, bodyContainer: { flexDirection: "column", gap: 16, padding: 16 }, bodyContainerBackground: null, footerPortrait: null, separator: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16 };
 obj2.bodyContainerBackground = { marginHorizontal: 16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.lg };
@@ -173,7 +173,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onScroll) => {
                                             const obj4 = { style: tmp19, children: null };
                                             const items1 = [tmp50, tmp54];
                                             obj4.children = items1;
-                                            const tmp60 = options(tmp5(7287), obj4);
+                                            const tmp60 = options(tmp5(7319), obj4);
                                             cResult[53] = tmp50;
                                             cResult[54] = tmp54;
                                             cResult[55] = tmp19;
@@ -213,7 +213,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onScroll) => {
                               const obj7 = { obscured, children: null };
                               const items2 = [tmp28, tmp43];
                               obj7.children = items2;
-                              const tmp49 = options(tmp5(8980), obj7);
+                              const tmp49 = options(tmp5(9012), obj7);
                               cResult[40] = obscured;
                               cResult[41] = tmp28;
                               cResult[42] = tmp43;

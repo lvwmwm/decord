@@ -1,20 +1,20 @@
-// Module ID: 16649
-// Function ID: 16650
+// Module ID: 16659
+// Function ID: 16660
 // Name: GuildsBarMessages
-// Dependencies: [19, 4580, 1078, 21, 16650, 558, 568, 16635, 504, 16638, 580, 1119, 16651, 5291, 2]
+// Dependencies: [19, 4612, 1078, 21, 16660, 558, 568, 16645, 504, 16648, 580, 1119, 16661, 5323, 2]
 
-// Module 16649 (GuildsBarMessages)
+// Module 16659 (GuildsBarMessages)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ChatIcon from "ChatIcon" /* 5291 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 16635 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 16638 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16650 */;
-import HomeDrawerDirectMessagesRowDefault from "HomeDrawerDirectMessagesRow" /* 16651 */;
+import ChatIcon from "ChatIcon" /* 5323 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 16645 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 16648 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16660 */;
+import HomeDrawerDirectMessagesRowDefault from "HomeDrawerDirectMessagesRow" /* 16661 */;
 import noop from "module_19" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 
 const GuildsBarAnimatedItemWrapperDefault = GuildsBarAnimatedItemWrapper;
 
@@ -71,7 +71,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp13 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp17 = jsx(tmp10(16651), {});
+    const tmp17 = jsx(tmp10(16661), {});
     cResult[4] = tmp17;
     let tmp15 = tmp17;
   } else {
@@ -79,7 +79,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[5] !== tmp12) {
     const obj4 = { color: tmp12 };
-    const tmp20 = jsx(tmp(5291).ChatIcon, { color: tmp12 });
+    const tmp20 = jsx(tmp(5323).ChatIcon, { color: tmp12 });
     cResult[5] = tmp12;
     cResult[6] = tmp20;
     let tmp18 = tmp20;
@@ -120,7 +120,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
   ({ badge, cutouts } = useGuildsBarBottomRightBadgeDefault({ mentionCount: 0 }));
   const colors = nativeDefault.colors;
-  const obj3 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, cutouts, config, overState: "y", label: 108.41, externalChildren: 53.649, expandedChildren: 0, children: 0.31 };
+  const obj3 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, cutouts, config, overState: "y", label: "GUILD_SETTINGS_MODAL_MEMBERS_STOP_EDITING", externalChildren: "GUILD_SETTINGS_MODAL_MEMBERS_ROLES_SAVE", expandedChildren: "GUILD_SETTINGS_MODAL_MEMBERS_CHANGE_NICKNAME", children: "text-lg/bold" };
   const tmp6 = useGuildsBarBottomRightBadgeDefault({ mentionCount: 0 });
   const tmp7 = stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT;
   const intl = tmp(1119).intl;
@@ -128,5 +128,5 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj3.externalChildren = badge;
   obj3.expandedChildren = jsx(HomeDrawerDirectMessagesRowDefault, {});
   obj3.children = jsx(ChatIcon.ChatIcon, { color: tmp7 });
-  return jsx(GuildsBarAnimatedItemWrapperDefault, { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, cutouts, config, overState: "y", label: 108.41, externalChildren: 53.649, expandedChildren: 0, children: 0.31 });
+  return jsx(GuildsBarAnimatedItemWrapperDefault, { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, cutouts, config, overState: "y", label: "GUILD_SETTINGS_MODAL_MEMBERS_STOP_EDITING", externalChildren: "GUILD_SETTINGS_MODAL_MEMBERS_ROLES_SAVE", expandedChildren: "GUILD_SETTINGS_MODAL_MEMBERS_CHANGE_NICKNAME", children: "text-lg/bold" });
 }));

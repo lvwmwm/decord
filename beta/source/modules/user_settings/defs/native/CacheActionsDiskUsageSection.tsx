@@ -1,18 +1,18 @@
-// Module ID: 15836
-// Function ID: 15837
+// Module ID: 15846
+// Function ID: 15847
 // Name: CacheActionsDiskUsageSection
-// Dependencies: [5, 32, 19, 21, 4758, 15837, 4472, 1119, 558, 568, 4754, 4655, 5186, 580, 5824, 15838, 2]
+// Dependencies: [5, 32, 19, 21, 4790, 15847, 4504, 1119, 558, 568, 4786, 4687, 5218, 580, 5856, 15848, 2]
 // Exports: useDiskUsageMeasurement
 
-// Module 15836 (CacheActionsDiskUsageSection)
+// Module 15846 (CacheActionsDiskUsageSection)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import Card from "Card" /* 5824 */;
-import DiskUsageManagerDefault from "DiskUsageManager" /* 15837 */;
-import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 15838 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import Card from "Card" /* 5856 */;
+import DiskUsageManagerDefault from "DiskUsageManager" /* 15847 */;
+import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 15848 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -20,7 +20,7 @@ import noop from "module_19" /* 19 */;
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ label: { flex: 1 }, value: { flexShrink: 1 } });
 let ReactCompilerGating = fn(558);
 let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SizeRow(arg0) {
@@ -33,8 +33,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SizeRow
     }
     if (cResult[3] !== bytes) {
       if (null != bytes) {
-        let formatKbSizeResult = tmp(4655).formatKbSize(bytes);
-        const tmpResult = tmp(4655);
+        let formatKbSizeResult = tmp(4687).formatKbSize(bytes);
+        const tmpResult = tmp(4687);
       } else {
         const intl = tmp(1119).intl;
         formatKbSizeResult = intl.string(tmp(1119).t.Yrz9rv);
@@ -55,14 +55,14 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SizeRow
         const obj2 = { direction: "horizontal", justify: "space-between", spacing: nativeDefault.space.PX_16, children: null };
         const items = [tmp4, tmp10];
         obj2.children = items;
-        const tmp16 = React5(tmp(5186).Stack, obj2);
+        const tmp16 = React5(tmp(5218).Stack, obj2);
         cResult[8] = tmp4;
         cResult[9] = tmp10;
         cResult[10] = tmp16;
         tmp13 = tmp16;
       }
       const obj3 = { variant: "text-sm/semibold", tabularNumbers: true, style: iter.value, children: cResult[4] };
-      const tmp12 = timestampProducer(tmp(4754).Text, obj3);
+      const tmp12 = timestampProducer(tmp(4786).Text, obj3);
       cResult[5] = iter.value;
       cResult[6] = cResult[4];
       cResult[7] = tmp12;
@@ -81,8 +81,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SizeRow
   const items = [timestampProducer(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", style: iter.label, children: bytes.label }), ];
   const obj3 = { variant: "text-sm/semibold", tabularNumbers: true, style: iter.value, children: null };
   if (null != bytes) {
-    let formatKbSizeResult = tmp2(4655).formatKbSize(bytes);
-    const tmp2Result = tmp2(4655);
+    let formatKbSizeResult = tmp2(4687).formatKbSize(bytes);
+    const tmp2Result = tmp2(4687);
   } else {
     const intl = tmp2(1119).intl;
     formatKbSizeResult = intl.string(tmp2(1119).t.Yrz9rv);
@@ -165,7 +165,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
     const obj5 = { variant: "heading-sm/semibold", children: null };
     const intl15 = tmp(1119).intl;
     obj5.children = intl15.string(tmp(1119).t.CoudPr);
-    const tmp19 = closure_6(tmp(4754).Heading, obj5);
+    const tmp19 = closure_6(tmp(4786).Heading, obj5);
     cResult[7] = tmp19;
     let tmp17 = tmp19;
   } else {
@@ -212,7 +212,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
           const obj6 = { spacing: nativeDefault.space.PX_16, children: null };
           const items = [tmp7, tmp13, tmp27];
           obj6.children = items;
-          const tmp33 = closure_7(tmp(5186).Stack, obj6);
+          const tmp33 = closure_7(tmp(5218).Stack, obj6);
           cResult[18] = tmp7;
           cResult[19] = tmp13;
           cResult[20] = tmp27;
@@ -222,7 +222,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
         const obj8 = { children: null };
         const items1 = [tmp17, tmp20, tmp24];
         obj8.children = items1;
-        const tmp29 = closure_7(tmp(5186).Stack, obj8);
+        const tmp29 = closure_7(tmp(5218).Stack, obj8);
         cResult[15] = tmp20;
         cResult[16] = tmp24;
         cResult[17] = tmp29;
@@ -242,7 +242,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
       const intl16 = tmp(1119).intl;
       ({ errorCount: obj7.errors, unmeasuredRootCount: obj7.unavailable } = report);
       obj9.children = intl16.formatToPlainString(tmp(1119).t.kt7tAT, { errors: null, unavailable: null });
-      tmp25 = closure_6(tmp(4754).Text, obj9);
+      tmp25 = closure_6(tmp(4786).Text, obj9);
       const obj17 = { errors: null, unavailable: null };
     }
     cResult[11] = report.complete;
@@ -292,7 +292,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
   const obj5 = { variant: "heading-sm/semibold", children: null };
   const intl15 = obj(1119).intl;
   obj5.children = intl15.string(obj(1119).t.CoudPr);
-  const items1 = [closure_6(obj(4754).Heading, obj5), , ];
+  const items1 = [closure_6(obj(4786).Heading, obj5), , ];
   const roots = report.roots;
   items1[1] = roots.map((bytes) => {
     const root = bytes.root;
@@ -315,13 +315,13 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
     const intl16 = tmp(1119).intl;
     ({ errorCount: obj7.errors, unmeasuredRootCount: obj7.unavailable } = report);
     obj6.children = intl16.formatToPlainString(tmp(1119).t.kt7tAT, { errors: null, unavailable: null });
-    tmp4Result = closure_6(tmp(4754).Text, obj6);
+    tmp4Result = closure_6(tmp(4786).Text, obj6);
     const obj13 = { errors: null, unavailable: null };
   }
   items1[2] = tmp4Result;
-  items[2] = closure_7(obj(5186).Stack, { children: items1 });
+  items[2] = closure_7(obj(5218).Stack, { children: items1 });
   obj2.children = items;
-  return closure_7(obj(5186).Stack, obj2);
+  return closure_7(obj(5218).Stack, obj2);
 });
 ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -334,7 +334,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function CacheAct
     const obj2 = { variant: "heading-md/semibold", children: null };
     const intl = tmp(1119).intl;
     obj2.children = intl.string(tmp(1119).t.m8BOpo);
-    const tmp6 = timestampProducer(tmp(4754).Heading, obj2);
+    const tmp6 = timestampProducer(tmp(4786).Heading, obj2);
     cResult[0] = tmp6;
     let first = tmp6;
   } else {
@@ -346,7 +346,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function CacheAct
       const obj3 = { variant: "text-sm/normal", children: null };
       const intl2 = tmp(1119).intl;
       obj3.children = intl2.string(tmp(1119).t.Ynmbie);
-      tmp8 = timestampProducer(tmp(4754).Text, obj3);
+      tmp8 = timestampProducer(tmp(4786).Text, obj3);
     }
     cResult[1] = state.status;
     cResult[2] = tmp8;
@@ -360,7 +360,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function CacheAct
       const obj4 = { variant: "text-sm/normal", color: "text-feedback-critical", children: null };
       const intl3 = tmp(1119).intl;
       obj4.children = intl3.string(tmp(1119).t["hj/3qI"]);
-      tmp11 = timestampProducer(tmp(4754).Text, obj4);
+      tmp11 = timestampProducer(tmp(4786).Text, obj4);
     }
     cResult[3] = state.status;
     cResult[4] = tmp11;
@@ -391,7 +391,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function CacheAct
             const obj6 = { children: null };
             const items = [first, tmp17, tmp20];
             obj6.children = items;
-            const tmp28 = React5(tmp(5186).Stack, obj6);
+            const tmp28 = React5(tmp(5218).Stack, obj6);
             cResult[16] = tmp17;
             cResult[17] = tmp20;
             cResult[18] = tmp28;
@@ -414,7 +414,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function CacheAct
       const obj8 = { children: null };
       const items1 = [tmp7, tmp10, tmp13];
       obj8.children = items1;
-      const tmp19 = React5(tmp(5824).Card, obj8);
+      const tmp19 = React5(tmp(5856).Card, obj8);
       cResult[9] = tmp7;
       cResult[10] = tmp10;
       cResult[11] = tmp13;
@@ -444,7 +444,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function CacheAct
     const obj2 = { variant: "text-sm/normal", children: null };
     const intl2 = tmp2(1119).intl;
     obj2.children = intl2.string(tmp2(1119).t.Ynmbie);
-    tmp4Result = tmp4(tmp2(4754).Text, obj2);
+    tmp4Result = tmp4(tmp2(4786).Text, obj2);
   }
   const items1 = [tmp4Result, , ];
   let tmp4Result4 = "error" === state.status;
@@ -452,7 +452,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (function CacheAct
     const obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", children: null };
     const intl3 = tmp2(1119).intl;
     obj3.children = intl3.string(tmp2(1119).t["hj/3qI"]);
-    tmp4Result4 = tmp4(tmp2(4754).Text, obj3);
+    tmp4Result4 = tmp4(tmp2(4786).Text, obj3);
   }
   items1[1] = tmp4Result4;
   let tmp4Result5 = "success" === state.status;

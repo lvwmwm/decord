@@ -1,9 +1,9 @@
-// Module ID: 16505
-// Function ID: 16506
+// Module ID: 16515
+// Function ID: 16516
 // Name: guild_themes/useGuildThemeNuxTrigger
-// Dependencies: [32, 19, 2042, 558, 568, 4643, 2031, 7632, 2]
+// Dependencies: [32, 19, 2042, 558, 568, 4675, 2031, 7664, 2]
 
-// Module 16505 (guild_themes/useGuildThemeNuxTrigger)
+// Module 16515 (guild_themes/useGuildThemeNuxTrigger)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

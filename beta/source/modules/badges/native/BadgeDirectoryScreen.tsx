@@ -1,12 +1,12 @@
-// Module ID: 11449
-// Function ID: 11450
+// Module ID: 11485
+// Function ID: 11486
 // Name: BadgeDirectoryScreen
-// Dependencies: [19, 1376, 21, 558, 568, 504, 1119, 5839, 11448, 11450, 11453, 2]
+// Dependencies: [19, 1376, 21, 558, 568, 504, 1119, 5871, 11484, 11486, 11489, 2]
 
-// Module 11449 (BadgeDirectoryScreen)
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11448 */;
-import BadgeDirectoryViewDefault from "BadgeDirectoryView" /* 11450 */;
+// Module 11485 (BadgeDirectoryScreen)
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11484 */;
+import BadgeDirectoryViewDefault from "BadgeDirectoryView" /* 11486 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -71,10 +71,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((targetUserId) =>
     if (cResult[6] === stateFromStores1) {
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const headerCloseButton = tmp(5839).getHeaderCloseButton(tmp(11448).closeBadgeDirectoryScreen);
+        const headerCloseButton = tmp(5871).getHeaderCloseButton(tmp(11484).closeBadgeDirectoryScreen);
         cResult[8] = headerCloseButton;
         let tmp16 = headerCloseButton;
-        const tmpResult4 = tmp(5839);
+        const tmpResult4 = tmp(5871);
       } else {
         tmp16 = cResult[8];
       }
@@ -84,7 +84,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((targetUserId) =>
         }
         if (cResult[12] !== tmp18) {
           const obj2 = { screens: tmp18, initialRouteName };
-          const tmp23 = jsx(tmp(11453).Modal, { screens: tmp18, initialRouteName });
+          const tmp23 = jsx(tmp(11489).Modal, { screens: tmp18, initialRouteName });
           cResult[12] = tmp18;
           cResult[13] = tmp23;
           let tmp20 = tmp23;
@@ -165,7 +165,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((targetUserId) =>
         return obj;
       }, items2);
       const obj4 = { screens: memo, initialRouteName };
-      return jsx(tmp(11453).Modal, { screens: memo, initialRouteName });
+      return jsx(tmp(11489).Modal, { screens: memo, initialRouteName });
     }
   }
   const intl = tmp(1119).intl;

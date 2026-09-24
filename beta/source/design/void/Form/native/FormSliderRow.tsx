@@ -1,24 +1,24 @@
-// Module ID: 8893
-// Function ID: 8894
+// Module ID: 8925
+// Function ID: 8926
 // Name: FormSliderRow
-// Dependencies: [109, 19, 17, 21, 4758, 558, 568, 5902, 4754, 8554, 5824, 7385, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 558, 568, 5934, 4786, 8586, 5856, 7417, 2]
 
-// Module 8893 (FormSliderRow)
+// Module 8925 (FormSliderRow)
 import c from "c" /* 568 */;
-import FormRowDefault from "FormRow" /* 7385 */;
-import _modDef8554 from "module_8554" /* 8554 */;
+import FormRowDefault from "FormRow" /* 7417 */;
+import _modDef8586 from "module_8586" /* 8586 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
-const Text_Text = Card(4754);
-const Card2 = Card(5824);
-const RedesignCompat = Card(5902);
+const Text_Text = Card(4786);
+const Card2 = Card(5856);
+const RedesignCompat = Card(5934);
 require = fn;
 let closure_3 = ["label", "trailing"];
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles({ labels: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, slider: { marginStart: -4, marginTop: 8 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -78,7 +78,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj4 = {};
         const merged = Object.assign(tmp4);
         obj4.style = tmp10.slider;
-        const tmp41 = React5(_modDef8554, obj4);
+        const tmp41 = React5(_modDef8586, obj4);
         cResult[10] = tmp4;
         cResult[11] = tmp10.slider;
         cResult[12] = tmp41;
@@ -102,7 +102,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[19] !== tmp4) {
         const obj6 = {};
         const merged1 = Object.assign(tmp4);
-        const tmp22 = React5(_modDef8554, obj6);
+        const tmp22 = React5(_modDef8586, obj6);
         cResult[19] = tmp4;
         cResult[20] = tmp22;
         let tmp15 = tmp22;
@@ -140,22 +140,22 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj2 = { children: null };
     const obj3 = { style: tmp5.labels, children: null };
     const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: label };
-    const items = [React5(tmp2(4754).Text, obj4), trailing];
+    const items = [React5(tmp2(4786).Text, obj4), trailing];
     obj3.children = items;
     const items1 = [tmp6(View, obj3), ];
     const obj5 = {};
     const merged1 = Object.assign(merged);
     obj5.style = tmp5.slider;
-    items1[1] = React5(_modDef8554, obj5);
+    items1[1] = React5(_modDef8586, obj5);
     obj2.children = items1;
-    let tmp6Result = tmp6(tmp2(5824).Card, obj2);
+    let tmp6Result = tmp6(tmp2(5856).Card, obj2);
   } else {
     const obj = { children: null };
     const obj6 = { label, trailing };
     const items2 = [React5(FormRowDefault, obj6), ];
     const obj7 = {};
     const merged2 = Object.assign(merged);
-    items2[1] = React5(_modDef8554, obj7);
+    items2[1] = React5(_modDef8586, obj7);
     obj.children = items2;
     tmp6Result = tmp6(options, obj);
   }

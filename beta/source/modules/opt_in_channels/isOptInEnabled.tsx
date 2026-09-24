@@ -1,13 +1,13 @@
-// Module ID: 7782
-// Function ID: 7783
+// Module ID: 7814
+// Function ID: 7815
 // Name: isOptInEnabled
-// Dependencies: [2067, 4399, 4939, 1376, 1078, 558, 568, 504, 2]
+// Dependencies: [2067, 4431, 4971, 1376, 1078, 558, 568, 504, 2]
 // Exports: isOptInEnabledForGuild
 
-// Module 7782 (isOptInEnabled)
+// Module 7814 (isOptInEnabled)
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;

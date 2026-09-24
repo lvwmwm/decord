@@ -1,16 +1,16 @@
-// Module ID: 11337
-// Function ID: 11338
+// Module ID: 11373
+// Function ID: 11374
 // Name: SocialLayerStorefrontWishlistItemCard
-// Dependencies: [109, 19, 4985, 11335, 21, 4758, 580, 558, 568, 504, 9104, 5802, 9051, 2]
+// Dependencies: [109, 19, 5017, 11371, 21, 4790, 580, 558, 568, 504, 9136, 5834, 9083, 2]
 
-// Module 11337 (SocialLayerStorefrontWishlistItemCard)
+// Module 11373 (SocialLayerStorefrontWishlistItemCard)
 import nativeDefault from "native" /* 580 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9104 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9136 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 4985 */;
-import SentGiftsStore from "SentGiftsStore" /* 11335 */;
+import ApplicationStore from "ApplicationStore" /* 5017 */;
+import SentGiftsStore from "SentGiftsStore" /* 11371 */;
 
 const require = globalThis.__r;
 
@@ -18,7 +18,7 @@ const require = fn;
 let closure_3 = ["sku", "isOwned", "source", "wishlistOwnerId", "size"];
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { applicationIcon: null, nestedCard: null };
 let size = { position: "absolute", top: nativeDefault.space.PX_8, left: nativeDefault.space.PX_8, width: 24, height: 24, borderRadius: nativeDefault.radii.sm, zIndex: 1 };
 obj2.applicationIcon = size;

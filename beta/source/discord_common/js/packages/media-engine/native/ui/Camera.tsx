@@ -1,11 +1,11 @@
-// Module ID: 4821
-// Function ID: 4822
+// Module ID: 4853
+// Function ID: 4854
 // Name: Camera
-// Dependencies: [19, 21, 558, 568, 4817, 2]
+// Dependencies: [19, 21, 558, 568, 4849, 2]
 
-// Module 4821 (Camera)
+// Module 4853 (Camera)
 import c from "c" /* 568 */;
-import VideoDefault from "Video" /* 4817 */;
+import VideoDefault from "Video" /* 4849 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,14 +1,14 @@
-// Module ID: 13709
-// Function ID: 13710
+// Module ID: 13745
+// Function ID: 13746
 // Name: useReferralIncentiveEligibility
-// Dependencies: [4424, 558, 568, 8320, 13708, 504, 2]
+// Dependencies: [4456, 558, 568, 8352, 13744, 504, 2]
 
-// Module 13709 (useReferralIncentiveEligibility)
+// Module 13745 (useReferralIncentiveEligibility)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8320 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13708 */;
-import SubscriptionStore from "SubscriptionStore" /* 4424 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8352 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13744 */;
+import SubscriptionStore from "SubscriptionStore" /* 4456 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
@@ -43,10 +43,10 @@ export const useReferralIncentiveEligibility = ReactCompilerGating.isReactCompil
   let tmp13 = true === isEligibleSenderForReferralProgram;
   let tmp14 = tmp13;
   if (tmp13) {
-    tmp14 = referralRewardType === tmp(13708).ReferralRewardType.ORBS;
+    tmp14 = referralRewardType === tmp(13744).ReferralRewardType.ORBS;
   }
   if (tmp13) {
-    tmp13 = referralRewardType === tmp(13708).ReferralRewardType.DISCOUNT;
+    tmp13 = referralRewardType === tmp(13744).ReferralRewardType.DISCOUNT;
   }
   if (tmp13) {
     tmp13 = tmp11;
@@ -84,10 +84,10 @@ export const useReferralIncentiveEligibility = ReactCompilerGating.isReactCompil
   let tmp8 = true === isEligibleSenderForReferralProgram;
   let isEligibleForIncentive = tmp8;
   if (tmp8) {
-    isEligibleForIncentive = referralRewardType === tmp(13708).ReferralRewardType.ORBS;
+    isEligibleForIncentive = referralRewardType === tmp(13744).ReferralRewardType.ORBS;
   }
   if (tmp8) {
-    tmp8 = referralRewardType === tmp(13708).ReferralRewardType.DISCOUNT;
+    tmp8 = referralRewardType === tmp(13744).ReferralRewardType.DISCOUNT;
   }
   if (tmp8) {
     tmp8 = tmp6;

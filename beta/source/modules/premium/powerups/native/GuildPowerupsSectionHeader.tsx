@@ -1,16 +1,16 @@
-// Module ID: 12717
-// Function ID: 12718
+// Module ID: 12753
+// Function ID: 12754
 // Name: GuildPowerupsSectionHeader
-// Dependencies: [17, 21, 4758, 580, 558, 568, 7223, 4754, 2]
+// Dependencies: [17, 21, 4790, 580, 558, 568, 7255, 4786, 2]
 
-// Module 12717 (GuildPowerupsSectionHeader)
+// Module 12753 (GuildPowerupsSectionHeader)
 import _mod17 from "module_17" /* 17 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7223 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7255 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const manaTypeConsolidationExperiment = ManaTypeConsolidationExperiment.useManaTypeConsolidationExperiment("GuildPowerupsSectionHeader");
   if (cResult[0] !== title) {
     const obj3 = { variant: "heading-lg/semibold", accessibilityRole: "header", children: title };
-    const tmp8 = React3(tmp(4754).Text, obj3);
+    const tmp8 = React3(tmp(4786).Text, obj3);
     cResult[0] = title;
     cResult[1] = tmp8;
     let tmp6 = tmp8;

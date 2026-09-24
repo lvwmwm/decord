@@ -1,9 +1,9 @@
-// Module ID: 12223
-// Function ID: 12224
+// Module ID: 12259
+// Function ID: 12260
 // Name: useFormattedTimestamp
-// Dependencies: [32, 19, 1095, 558, 568, 7687, 4352, 5236, 2]
+// Dependencies: [32, 19, 1095, 558, 568, 7719, 4384, 5268, 2]
 
-// Module 12223 (useFormattedTimestamp)
+// Module 12259 (useFormattedTimestamp)
 import DurationsDefault from "Durations" /* 1095 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -41,7 +41,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const effect = noop.useEffect(tmp4, tmp5);
       if ("R" === parsed.format) {
         if (cResult[5] !== parsed.parsed) {
-          const TIMESTAMP_FORMATS = R(5236).TIMESTAMP_FORMATS;
+          const TIMESTAMP_FORMATS = R(5268).TIMESTAMP_FORMATS;
           R = TIMESTAMP_FORMATS.R;
           RResult = R(parsed.parsed);
           parsed = parsed.parsed;

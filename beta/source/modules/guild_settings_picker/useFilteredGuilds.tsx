@@ -1,13 +1,13 @@
-// Module ID: 14166
-// Function ID: 14167
+// Module ID: 14203
+// Function ID: 14204
 // Name: useFilteredGuilds
-// Dependencies: [19, 2067, 5657, 1376, 558, 568, 504, 38, 2]
+// Dependencies: [19, 2067, 5689, 1376, 558, 568, 504, 38, 2]
 
-// Module 14166 (useFilteredGuilds)
+// Module 14203 (useFilteredGuilds)
 import _modDef38 from "module_38" /* 38 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import SortedGuildStore from "SortedGuildStore" /* 5657 */;
+import SortedGuildStore from "SortedGuildStore" /* 5689 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = fn;

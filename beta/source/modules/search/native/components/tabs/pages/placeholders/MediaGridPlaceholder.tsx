@@ -1,29 +1,29 @@
-// Module ID: 17121
-// Function ID: 17122
+// Module ID: 17131
+// Function ID: 17132
 // Name: MediaGridPlaceholder
-// Dependencies: [19, 17, 8127, 21, 4758, 580, 558, 568, 17120, 17122, 4497, 12, 1119, 4754, 12486, 17123, 2]
+// Dependencies: [19, 17, 8159, 21, 4790, 580, 558, 568, 17130, 17132, 4529, 12, 1119, 4786, 12522, 17133, 2]
 
-// Module 17121 (MediaGridPlaceholder)
+// Module 17131 (MediaGridPlaceholder)
 import _mod12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12486 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 17120 */;
-import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 17122 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12522 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 17130 */;
+import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 17132 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const SearchConstants = fn(8127);
+const SearchConstants = fn(8159);
 ({ MEDIA_NUM_COLUMNS: hasOwnProperty, MEDIA_ITEM_GAP_WIDTH: metroRequire, SEARCH_LIST_SECTION_TOP_PADDING, SEARCH_LIST_HORIZONTAL_PADDING } = SearchConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { zIndex: 1, position: "absolute", width: "100%" }, recentsContainer: { position: "relative", paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, row: { flexDirection: "row" }, section: { flex: 1, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", textTransform: "none", paddingTop: SEARCH_LIST_SECTION_TOP_PADDING, paddingBottom: 8 }, sectionItem: { borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BORDER_SUBTLE }, sectionText: { opacity: 0 } };
 let closure_9 = createStyles.createStyles(obj2);
 fn(558);
@@ -105,7 +105,7 @@ export const RecentsMediaGridPlaceholder = ReactCompilerGating.isReactCompilerEn
   }
   const obj = size(568);
   tmp4 = closure_5;
-  const placeholderAnimatedStyle = size(17120).usePlaceholderAnimatedStyle(visible);
+  const placeholderAnimatedStyle = size(17130).usePlaceholderAnimatedStyle(visible);
   if (cResult[4] === placeholderAnimatedStyle) {
     if (cResult[5] === row.container) {
       if (cResult[6] === row.recentsContainer) {
@@ -123,7 +123,7 @@ export const RecentsMediaGridPlaceholder = ReactCompilerGating.isReactCompilerEn
       }
       if (cResult[9] !== row.sectionText) {
         const obj2 = { style: sectionText, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: tmp12 };
-        const tmp16 = closure_7(tmp(4754).Text, obj2);
+        const tmp16 = closure_7(tmp(4786).Text, obj2);
         cResult[9] = row.sectionText;
         cResult[10] = tmp16;
         let tmp14 = tmp16;
@@ -146,7 +146,7 @@ export const RecentsMediaGridPlaceholder = ReactCompilerGating.isReactCompilerEn
         }
         if (cResult[15] !== row.sectionText) {
           const obj3 = { variant: "text-sm/semibold", color: "text-brand", style: sectionText2, children: tmp21 };
-          const tmp25 = closure_7(tmp(4754).Text, obj3);
+          const tmp25 = closure_7(tmp(4786).Text, obj3);
           cResult[15] = row.sectionText;
           cResult[16] = tmp25;
           let tmp23 = tmp25;
@@ -195,7 +195,7 @@ export const RecentsMediaGridPlaceholder = ReactCompilerGating.isReactCompilerEn
                       const obj4 = { style: tmp10, pointerEvents: "none", children: null };
                       const items = [tmp30, cResult[28]];
                       obj4.children = items;
-                      const tmp39 = closure_8(row(4497).View, obj4);
+                      const tmp39 = closure_8(row(4529).View, obj4);
                       cResult[34] = tmp30;
                       cResult[35] = cResult[28];
                       cResult[36] = tmp10;
@@ -351,5 +351,5 @@ export const RecentsMediaGridPlaceholder = ReactCompilerGating.isReactCompilerEn
     })
   ];
   obj2.children = items4;
-  return closure_8(numRows(4497).View, obj2);
+  return closure_8(numRows(4529).View, obj2);
 });

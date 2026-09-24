@@ -1,13 +1,13 @@
-// Module ID: 13030
-// Function ID: 13031
+// Module ID: 13066
+// Function ID: 13067
 // Name: MessageRequestNotification
-// Dependencies: [19, 21, 558, 568, 1119, 12961, 4617, 1181, 12970, 13000, 2]
+// Dependencies: [19, 21, 558, 568, 1119, 12997, 4649, 1181, 13006, 13036, 2]
 
-// Module 13030 (MessageRequestNotification)
+// Module 13066 (MessageRequestNotification)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import RootNavigationRef from "RootNavigationRef" /* 4617 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12961 */;
+import RootNavigationRef from "RootNavigationRef" /* 4649 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12997 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -60,7 +60,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((notification) =>
       const obj4 = { text: null };
       const intl2 = tmp(1119).intl;
       obj4.text = intl2.string(tmp(1119).t["Bx4/Lf"]);
-      const tmp14 = jsx(tmp(12970).SystemMessageText, { text: null });
+      const tmp14 = jsx(tmp(13006).SystemMessageText, { text: null });
       cResult[8] = tmp14;
       let tmp12 = tmp14;
     } else {
@@ -75,7 +75,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((notification) =>
       }
     }
     const obj5 = { icon: tmp9, header: tmp6, children: tmp12, onPress: tmp8, notification };
-    const tmp17 = jsx(tmp(13000).NotificationPressable, { icon: tmp9, header: tmp6, children: tmp12, onPress: tmp8, notification });
+    const tmp17 = jsx(tmp(13036).NotificationPressable, { icon: tmp9, header: tmp6, children: tmp12, onPress: tmp8, notification });
     cResult[9] = tmp6;
     cResult[10] = notification;
     cResult[11] = tmp9;
@@ -100,9 +100,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((notification) =>
     return obj;
   }, items);
   const callback = noop.useCallback(() => {
-    numMutualGuilds(12961).clearNotification();
-    const obj = numMutualGuilds(12961);
-    const rootNavigationRef = author(4617).getRootNavigationRef();
+    numMutualGuilds(12997).clearNotification();
+    const obj = numMutualGuilds(12997);
+    const rootNavigationRef = author(4649).getRootNavigationRef();
     if (rootNavigationRef != null) {
       rootNavigationRef.navigate("message-requests");
     }
@@ -111,8 +111,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((notification) =>
   const obj3 = { text: null };
   let intl = author(1119).intl;
   obj3.text = intl.string(author(1119).t["Bx4/Lf"]);
-  obj.children = jsx(author(12970).SystemMessageText, { text: null });
+  obj.children = jsx(author(13006).SystemMessageText, { text: null });
   obj.onPress = callback;
   obj.notification = notification;
-  return jsx(author(13000).NotificationPressable, { icon: jsx(author(1181).Avatar, { user: author, size: author(1181).AvatarSizes.NORMAL, guildId: "Array" }), header: memo, children: null, onPress: null, notification: null });
+  return jsx(author(13036).NotificationPressable, { icon: jsx(author(1181).Avatar, { user: author, size: author(1181).AvatarSizes.NORMAL, guildId: "Array" }), header: memo, children: null, onPress: null, notification: null });
 });

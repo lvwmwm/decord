@@ -1,15 +1,15 @@
-// Module ID: 10280
-// Function ID: 10281
+// Module ID: 10319
+// Function ID: 10320
 // Name: SingleVideoCall
-// Dependencies: [19, 9636, 21, 558, 568, 1616, 7409, 4959, 8453, 9706, 1181, 9691, 2]
+// Dependencies: [19, 9668, 21, 558, 568, 1616, 7441, 4991, 8485, 9738, 1181, 9723, 2]
 
-// Module 10280 (SingleVideoCall)
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4959 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
+// Module 10319 (SingleVideoCall)
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4991 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const ChannelCallStore = fn(9636);
+const ChannelCallStore = fn(9668);
 ({ resetFocus: closure_4, toggleFocus: hasOwnProperty } = ChannelCallStore);
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
@@ -22,7 +22,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = channel(568);
   const tmp4 = analyticsLocations;
   ({ bottom, right } = analyticsLocations(1616)());
-  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)().analyticsLocations;
   if (cResult[0] !== channel.id) {
     const fn = function n() {
       React4();
@@ -52,15 +52,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
       }
-      const obj2 = { gestureEnabled: true, participant, avatarSize: tmp(1181).AvatarSizes.PROFILE, resizeMode: tmp(9691).ResizeMode.AUTO, statusStyle: tmp8, onSingleTap, onDoubleTap: tmp6, onLongPress: tmp7 };
-      const tmp13 = jsx(tmp4(9706), { gestureEnabled: true, participant, avatarSize: tmp(1181).AvatarSizes.PROFILE, resizeMode: tmp(9691).ResizeMode.AUTO, statusStyle: tmp8, onSingleTap, onDoubleTap: tmp6, onLongPress: tmp7 });
+      const obj2 = { gestureEnabled: true, participant, avatarSize: tmp(1181).AvatarSizes.PROFILE, resizeMode: tmp(9723).ResizeMode.AUTO, statusStyle: tmp8, onSingleTap, onDoubleTap: tmp6, onLongPress: tmp7 };
+      const tmp13 = jsx(tmp4(9738), { gestureEnabled: true, participant, avatarSize: tmp(1181).AvatarSizes.PROFILE, resizeMode: tmp(9723).ResizeMode.AUTO, statusStyle: tmp8, onSingleTap, onDoubleTap: tmp6, onLongPress: tmp7 });
       cResult[8] = tmp6;
       cResult[9] = tmp7;
       cResult[10] = participant;
       cResult[11] = tmp8;
       cResult[12] = tmp13;
       tmp9 = tmp13;
-      const tmp4Result = tmp4(9706);
+      const tmp4Result = tmp4(9738);
     }
     const obj3 = { marginRight: right, marginBottom: bottom };
     cResult[5] = bottom;

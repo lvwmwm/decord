@@ -1,19 +1,19 @@
-// Module ID: 9185
-// Function ID: 9186
+// Module ID: 9217
+// Function ID: 9218
 // Name: Button/HeaderButton
-// Dependencies: [19, 21, 5193, 4754, 4758, 558, 568, 5189, 2]
+// Dependencies: [19, 21, 5225, 4786, 4790, 558, 568, 5221, 2]
 
-// Module 9185 (Button/HeaderButton)
+// Module 9217 (Button/HeaderButton)
 import c from "c" /* 568 */;
-import BaseTextButton from "BaseTextButton" /* 5189 */;
+import BaseTextButton from "BaseTextButton" /* 5221 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
 let c3 = "heading-md/bold";
-const diff = fn(5193).SMALL_BUTTON_HEIGHT - 2 * fn(5193).BUTTON_BORDER_WIDTH;
-const diff1 = diff - fn(4754).TextStyleSheet["heading-md/bold"].lineHeight;
-const createStyles = fn(4758);
+const diff = fn(5225).SMALL_BUTTON_HEIGHT - 2 * fn(5225).BUTTON_BORDER_WIDTH;
+const diff1 = diff - fn(4786).TextStyleSheet["heading-md/bold"].lineHeight;
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ pill: { paddingVertical: diff1 / 2 } });
 const ReactCompilerGating = fn(558);
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -45,7 +45,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj.variant = "secondary-overlay";
   return jsx(BaseTextButton.BaseTextButton, { accessibilityRole: "header" });
 });
-tmp5.Icon = fn(5189).BaseTextButton.Icon;
+tmp5.Icon = fn(5221).BaseTextButton.Icon;
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/experimental/Button/native/HeaderButton.native.tsx");
 

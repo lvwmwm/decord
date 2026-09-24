@@ -1,13 +1,13 @@
-// Module ID: 16262
-// Function ID: 16263
+// Module ID: 16272
+// Function ID: 16273
 // Name: AccessibilityPreferencesContextProvider
-// Dependencies: [19, 4750, 21, 558, 568, 504, 4481, 2]
+// Dependencies: [19, 4782, 21, 558, 568, 504, 4513, 2]
 
-// Module 16262 (AccessibilityPreferencesContextProvider)
+// Module 16272 (AccessibilityPreferencesContextProvider)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const jsx = fn(21).jsx;
@@ -133,7 +133,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
             }
             tmp33[0] = tmp30;
             tmp33[1] = children;
-            const tmp34 = jsx(tmp(4481).AccessibilityPreferencesContext.Provider, tmp33);
+            const tmp34 = jsx(tmp(4513).AccessibilityPreferencesContext.Provider, tmp33);
             cResult[19] = tmp30;
             cResult[20] = children;
             cResult[21] = tmp34;

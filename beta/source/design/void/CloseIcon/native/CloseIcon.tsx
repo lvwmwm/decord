@@ -1,11 +1,11 @@
-// Module ID: 14361
-// Function ID: 14362
+// Module ID: 14399
+// Function ID: 14400
 // Name: CloseIcon
-// Dependencies: [109, 19, 21, 558, 568, 8733, 2]
+// Dependencies: [109, 19, 21, 558, 568, 8765, 2]
 
-// Module 14361 (CloseIcon)
+// Module 14399 (CloseIcon)
 import c from "c" /* 568 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -50,7 +50,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[5] !== str) {
     const obj2 = { fill: str, d: "M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z" };
-    const tmp13 = jsx(tmp(8733).Path, { fill: str, d: "M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z" });
+    const tmp13 = jsx(tmp(8765).Path, { fill: str, d: "M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z" });
     cResult[5] = str;
     cResult[6] = tmp13;
     let tmp11 = tmp13;

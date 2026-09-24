@@ -6,4 +6,4 @@
 import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/riot_credit_campaign", scales: [1], hash: "728f19a8cabe4372feb59e6102414e85", name: "RiotCreditCampaign.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/voice_channel_apps", scales: [1], hash: "3f0bebcb3d9b49b71bd5a1c0cee8f16f", name: "VoiceChannelApps.compiled.messages", type: "jsona" });

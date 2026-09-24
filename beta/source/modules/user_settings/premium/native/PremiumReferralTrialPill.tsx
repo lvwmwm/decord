@@ -1,16 +1,16 @@
-// Module ID: 13668
-// Function ID: 13669
+// Module ID: 13704
+// Function ID: 13705
 // Name: PremiumReferralTrialPill
-// Dependencies: [17, 21, 4758, 580, 558, 568, 1119, 4754, 2]
+// Dependencies: [17, 21, 4790, 580, 558, 568, 1119, 4786, 2]
 
-// Module 13668 (PremiumReferralTrialPill)
+// Module 13704 (PremiumReferralTrialPill)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import createStyles from "createStyles" /* 4758 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ export const PremiumReferralTrialPill = ReactCompilerGating.isReactCompilerEnabl
   }
   if (cResult[1] !== tmp4.text) {
     const obj2 = { variant: "text-xs/bold", style: text, children: first };
-    const tmp10 = jsx(tmp(4754).Text, { variant: "text-xs/bold", style: text, children: first });
+    const tmp10 = jsx(tmp(4786).Text, { variant: "text-xs/bold", style: text, children: first });
     cResult[1] = tmp4.text;
     cResult[2] = tmp10;
     let tmp8 = tmp10;

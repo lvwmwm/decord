@@ -1,19 +1,19 @@
-// Module ID: 17862
-// Function ID: 17863
+// Module ID: 17872
+// Function ID: 17873
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1616, 5897, 1119, 4754, 5802, 12899, 12827, 5188, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1616, 5929, 1119, 4786, 5834, 12935, 12863, 5220, 2]
 
-// Module 17862 (RedesignDiscoverabilityLanding)
+// Module 17872 (RedesignDiscoverabilityLanding)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import NavigatorConstants from "NavigatorConstants" /* 5897 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12827 */;
-import _modDef12899 from "module_12899" /* 12899 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import NavigatorConstants from "NavigatorConstants" /* 5929 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12863 */;
+import _modDef12935 from "module_12935" /* 12935 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -21,7 +21,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, ScrollView: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, topContainer: null, growContainer: null, image: null, title: null, subtitle: null, info: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.topContainer = { paddingTop: nativeDefault.space.PX_16 };
@@ -45,7 +45,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   onNext = onNext.onNext;
   const sum = useSafeAreaInsetsDefault().bottom + 16;
   if (cResult[0] !== sum) {
-    const obj2 = { flexGrow: 2, paddingTop: tmp(5897).NAV_BAR_HEIGHT + 32, paddingBottom: sum, paddingHorizontal: tmp5(580).space.PX_16 };
+    const obj2 = { flexGrow: 2, paddingTop: tmp(5929).NAV_BAR_HEIGHT + 32, paddingBottom: sum, paddingHorizontal: tmp5(580).space.PX_16 };
     cResult[0] = sum;
     cResult[1] = obj2;
     let tmp7 = obj2;
@@ -71,7 +71,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   }
   if (cResult[5] !== tmp4.title) {
     const obj4 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp12 };
-    const tmp16 = hasOwnProperty(tmp(4754).Text, obj4);
+    const tmp16 = hasOwnProperty(tmp(4786).Text, obj4);
     cResult[5] = tmp4.title;
     cResult[6] = tmp16;
     let tmp14 = tmp16;
@@ -88,7 +88,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   }
   if (cResult[8] !== tmp4.subtitle) {
     const obj5 = { variant: "text-sm/medium", color: "text-default", style: tmp4.subtitle, children: tmp17 };
-    const tmp21 = hasOwnProperty(tmp(4754).Text, obj5);
+    const tmp21 = hasOwnProperty(tmp(4786).Text, obj5);
     cResult[8] = tmp4.subtitle;
     cResult[9] = tmp21;
     let tmp19 = tmp21;
@@ -96,12 +96,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
     tmp19 = cResult[9];
   }
   if (cResult[10] !== tmp4.image) {
-    const obj6 = { resizeMode: "contain", style: tmp4.image, source: tmp5(12899) };
-    const tmp25 = hasOwnProperty(tmp5(5802), obj6);
+    const obj6 = { resizeMode: "contain", style: tmp4.image, source: tmp5(12935) };
+    const tmp25 = hasOwnProperty(tmp5(5834), obj6);
     cResult[10] = tmp4.image;
     cResult[11] = tmp25;
     let tmp22 = tmp25;
-    const tmp5Result = tmp5(5802);
+    const tmp5Result = tmp5(5834);
   } else {
     tmp22 = cResult[11];
   }
@@ -130,7 +130,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
     const obj8 = { style: tmp4.info, variant: "text-sm/medium", color: "text-default", children: null };
     const items = [tmp26, " ", tmp28];
     obj8.children = items;
-    const tmp32 = timestampProducer(tmp(4754).Text, obj8);
+    const tmp32 = timestampProducer(tmp(4786).Text, obj8);
     cResult[14] = tmp4.info;
     cResult[15] = tmp32;
     let tmp30 = tmp32;
@@ -156,7 +156,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   }
   if (cResult[19] !== onNext) {
     const obj10 = { variant: "primary", size: "lg", text: tmp37, onPress: onNext };
-    const tmp41 = hasOwnProperty(tmp(5188).Button, obj10);
+    const tmp41 = hasOwnProperty(tmp(5220).Button, obj10);
     cResult[19] = onNext;
     cResult[20] = tmp41;
     let tmp39 = tmp41;
@@ -213,7 +213,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   const obj6 = { resizeMode: "contain", style: tmp.image, source: null };
   const obj2 = { flexGrow: 2, paddingTop: NavigatorConstants.NAV_BAR_HEIGHT + 32, paddingBottom: useSafeAreaInsetsDefault().bottom + 16, paddingHorizontal: nativeDefault.space.PX_16 };
   const obj3 = { style: tmp.topContainer };
-  obj6.source = _modDef12899;
+  obj6.source = _modDef12935;
   items[3] = hasOwnProperty(FastImageDefault, obj6);
   const obj7 = { style: tmp.info, variant: "text-sm/medium", color: "text-default", children: null };
   const intl3 = util.intl;

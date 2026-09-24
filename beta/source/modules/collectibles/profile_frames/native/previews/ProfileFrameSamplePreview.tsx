@@ -1,18 +1,18 @@
-// Module ID: 9101
-// Function ID: 9102
+// Module ID: 9133
+// Function ID: 9134
 // Name: ProfileFrameSamplePreview
-// Dependencies: [19, 17, 9077, 7455, 21, 4758, 580, 558, 568, 8498, 4462, 8495, 8481, 5881, 9102, 5802, 2]
+// Dependencies: [19, 17, 9109, 7487, 21, 4790, 580, 558, 568, 8530, 4494, 8527, 8513, 5913, 9134, 5834, 2]
 
-// Module 9101 (ProfileFrameSamplePreview)
+// Module 9133 (ProfileFrameSamplePreview)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef5881 from "module_5881" /* 5881 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8481 */;
-import ProfileFrameDefault from "ProfileFrame" /* 8495 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 8498 */;
-import _modDef9102 from "module_9102" /* 9102 */;
+import useToken from "useToken" /* 4494 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef5913 from "module_5913" /* 5913 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8513 */;
+import ProfileFrameDefault from "ProfileFrame" /* 8527 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 8530 */;
+import _modDef9134 from "module_9134" /* 9134 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -21,11 +21,11 @@ function filterLayer(responsive) {
 }
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
-const UserProfileThemeTypes = fn(7455).UserProfileThemeTypes;
+const UserProfileThemeTypes = fn(7487).UserProfileThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
-let obj2 = { profileFrameContainer: { flex: 1 }, profileContainer: { flex: 1, overflow: "hidden", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_NORMAL, borderRadius: nativeDefault.radii.xs }, sampleProfile: { width: "100%", aspectRatio: fn(9077).SAMPLE_PROFILE_ASPECT_RATIO } };
+const createStyles = fn(4790);
+let obj2 = { profileFrameContainer: { flex: 1 }, profileContainer: { flex: 1, overflow: "hidden", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_NORMAL, borderRadius: nativeDefault.radii.xs }, sampleProfile: { width: "100%", aspectRatio: fn(9109).SAMPLE_PROFILE_ASPECT_RATIO } };
 let closure_9 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
 let obj3 = { flex: 1, overflow: "hidden", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_NORMAL, borderRadius: nativeDefault.radii.xs };
@@ -44,7 +44,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((previewWidth) =>
     }
     ({ overflowTop, overflowBottom, overflowHorizontal } = tmp6);
     const diff = previewHeight - overflowTop - overflowBottom;
-    const token = tmp(4462).useToken(profileBackgroundColor);
+    const token = tmp(4494).useToken(profileBackgroundColor);
     if (cResult[3] === previewHeight) {
       if (cResult[4] === profileFrame) {
         if (cResult[5] === result) {
@@ -168,7 +168,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((previewWidth) =>
                                                                 }
                                                                 const _Symbol = Symbol;
                                                                 if (cResult[69] === Symbol.for("react.memo_cache_sentinel")) {
-                                                                  const obj5 = { uri: tmp17(9102) };
+                                                                  const obj5 = { uri: tmp17(9134) };
                                                                   cResult[69] = obj5;
                                                                   let tmp83 = obj5;
                                                                 } else {
@@ -176,7 +176,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((previewWidth) =>
                                                                 }
                                                                 if (cResult[70] !== tmp4.sampleProfile) {
                                                                   const obj6 = { source: tmp83, style: tmp4.sampleProfile, resizeMode: "cover" };
-                                                                  const tmp86 = timestampProducer(tmp17(5802), obj6);
+                                                                  const tmp86 = timestampProducer(tmp17(5834), obj6);
                                                                   cResult[70] = tmp4.sampleProfile;
                                                                   cResult[71] = tmp86;
                                                                   let tmp84 = tmp86;
@@ -214,14 +214,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((previewWidth) =>
                                                                       tmp97 = tmp100;
                                                                     }
                                                                   }
-                                                                  const obj8 = { frame: profileFrame, filterLayer, profileThemeType: UserProfileThemeTypes.PREVIEW, frameOrder: tmp(8481).ProfileFrameLayerOrder.FRONT, containerWidth: result, containerHeight: diff };
-                                                                  const tmp96 = timestampProducer(tmp17(8495), obj8);
+                                                                  const obj8 = { frame: profileFrame, filterLayer, profileThemeType: UserProfileThemeTypes.PREVIEW, frameOrder: tmp(8513).ProfileFrameLayerOrder.FRONT, containerWidth: result, containerHeight: diff };
+                                                                  const tmp96 = timestampProducer(tmp17(8527), obj8);
                                                                   cResult[75] = profileFrame;
                                                                   cResult[76] = diff;
                                                                   cResult[77] = result;
                                                                   cResult[78] = tmp96;
                                                                   tmp91 = tmp96;
-                                                                  const tmp17Result = tmp17(8495);
+                                                                  const tmp17Result = tmp17(8527);
                                                                 }
                                                                 const obj9 = { style: tmp81, children: tmp84 };
                                                                 const tmp90 = timestampProducer(React4, obj9);
@@ -254,7 +254,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((previewWidth) =>
                                                     }
                                                   }
                                                   const obj11 = { style: tmp22, maskElement: tmp63, children: tmp69 };
-                                                  const tmp75 = timestampProducer(tmp17(5881), obj11);
+                                                  const tmp75 = timestampProducer(tmp17(5913), obj11);
                                                   cResult[52] = tmp63;
                                                   cResult[53] = tmp69;
                                                   cResult[54] = tmp22;
@@ -367,8 +367,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((previewWidth) =>
       }
     }
     const obj21 = { frame: profileFrame, filterLayer, profileThemeType: UserProfileThemeTypes.PREVIEW, frameOrder: null, containerWidth: null, containerHeight: null };
-    const tmpResult = tmp(4462);
-    obj21.frameOrder = tmp(8481).ProfileFrameLayerOrder.BACK;
+    const tmpResult = tmp(4494);
+    obj21.frameOrder = tmp(8513).ProfileFrameLayerOrder.BACK;
     obj21.containerWidth = result;
     obj21.containerHeight = previewHeight;
     const tmp16 = timestampProducer(ProfileFrameDefault, obj21);
@@ -431,9 +431,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((previewWidth) =>
   const obj7 = { style: { position: "absolute", top: overflowTop, bottom: overflowBottom, left: 0, width: overflowHorizontal, backgroundColor: "black" } };
   const obj8 = { style: { position: "absolute", top: overflowTop, bottom: overflowBottom, right: 0, width: overflowHorizontal, backgroundColor: "black" } };
   const obj9 = { style: { position: "absolute", top: overflowTop - xs, left: overflowHorizontal - xs, width: 2 * xs, height: 2 * xs, borderRadius: xs, backgroundColor: "black" } };
-  tmp13 = _modDef5881;
+  tmp13 = _modDef5913;
   const tmp14 = React5;
-  obj18.uri = _modDef9102;
+  obj18.uri = _modDef9134;
   obj17.source = obj18;
   obj17.style = tmp.sampleProfile;
   obj16.children = timestampProducer(FastImageDefault, obj17);

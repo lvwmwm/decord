@@ -1,13 +1,13 @@
-// Module ID: 10400
-// Function ID: 10401
+// Module ID: 10439
+// Function ID: 10440
 // Name: useInappropriateConversationSafetyToolsWarningForChannel
-// Dependencies: [558, 568, 10363, 10364, 10361, 2]
+// Dependencies: [558, 568, 10402, 10403, 10400, 2]
 
-// Module 10400 (useInappropriateConversationSafetyToolsWarningForChannel)
+// Module 10439 (useInappropriateConversationSafetyToolsWarningForChannel)
 import c from "c" /* 568 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10361 */;
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10363 */;
-import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 10364 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10400 */;
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 10402 */;
+import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 10403 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

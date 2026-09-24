@@ -1,9 +1,9 @@
-// Module ID: 16203
-// Function ID: 16204
+// Module ID: 16213
+// Function ID: 16214
 // Name: InGameDMsSetting
-// Dependencies: [19, 8238, 558, 2023, 1190, 568, 1119, 11594, 2]
+// Dependencies: [19, 8270, 558, 2023, 1190, 568, 1119, 11630, 2]
 
-// Module 16203 (InGameDMsSetting)
+// Module 16213 (InGameDMsSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   return SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL;
 });
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -81,7 +81,7 @@ const radio = SettingBuilders.createRadio({
     const intl = util.intl;
     return intl.string(util.t["ms+Tme"]);
   },
-  parent: fn(8238).MobileUserSettings.CONNECTED_GAMES,
+  parent: fn(8270).MobileUserSettings.CONNECTED_GAMES,
   useOptions: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(3);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {

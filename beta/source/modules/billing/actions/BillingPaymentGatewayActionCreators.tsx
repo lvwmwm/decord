@@ -1,19 +1,19 @@
-// Module ID: 5093
-// Function ID: 5094
+// Module ID: 5125
+// Function ID: 5126
 // Name: BillingPaymentGatewayActionCreators
-// Dependencies: [5, 1078, 1089, 3, 1275, 1119, 5082, 5094, 577, 38, 5095, 5096, 4440, 4659, 2]
+// Dependencies: [5, 1078, 1089, 3, 1275, 1119, 5114, 5126, 577, 38, 5127, 5128, 4472, 4691, 2]
 // Exports: confirmCardPaymentSource, confirmEPS, confirmPaymentElementSource, confirmPrzelewy24, createAdyenPaymentSourceToken, createAdyenPrepaidPaymentSource, createAdyenVaultablePaymentSource, createBraintreePaymentSource, createCardToken, createExpressCheckoutPaymentMethod, createPaymentSourceToken, createStripePaymentSource, paymentIntentSucceeded, submitElementsAndCreateStripePaymentMethod
 
-// Module 5093 (BillingPaymentGatewayActionCreators)
+// Module 5125 (BillingPaymentGatewayActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import util from "util" /* 1119 */;
 import HTTPUtils from "HTTPUtils" /* 1275 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5082 */;
-import _mod5094 from "module_5094" /* 5094 */;
-import StripeActionCreators from "StripeActionCreators" /* 5095 */;
-import StripeUtilsAll from "StripeUtils" /* 5096 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5114 */;
+import _mod5126 from "module_5126" /* 5126 */;
+import StripeActionCreators from "StripeActionCreators" /* 5127 */;
+import StripeUtilsAll from "StripeUtils" /* 5128 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -64,7 +64,7 @@ let closure_14 = async function _createCardToken(arg0, value) {
           let error;
           if (null != _require) {
             if (null != obj11) {
-              const element = obj11.getElement(_mod5094.CardNumberElement);
+              const element = obj11.getElement(_mod5126.CardNumberElement);
               if (null == element) {
                 throw BillingSharedActionCreators.dispatchConfirmationError("Unable to load card elements from Stripe");
               } else {
@@ -538,7 +538,7 @@ let closure_26 = async function _confirmPaymentElementSource() {
                       if (closure_136_11 == null) {
                         setupIntent = undefined;
                       }
-                      const obj8 = { setupIntent, error: "a" };
+                      const obj8 = { setupIntent, error: "Array" };
                       closure_136_10 = obj8;
                       if ((function shouldRecreateSetupIntentForPaymentElement(error) {
                         let tmp = null != error;
@@ -567,7 +567,7 @@ let closure_26 = async function _confirmPaymentElementSource() {
                       setupIntent2 = closure_137_17(closure_136_10.setupIntent, closure_136_10.error, (type) => {
                         const intl = dependencyMap(1119).intl;
                         const stringResult = intl.string(dependencyMap(1119).t.khEaRI);
-                        return dependencyMap(5082).dispatchConfirmationError(type, true, stringResult, { tags: { source: "payment_elements" } });
+                        return dependencyMap(5114).dispatchConfirmationError(type, true, stringResult, { tags: { source: "payment_elements" } });
                       }).setupIntent;
                       closure_136_4.current = setupIntent2;
                       payment_method = setupIntent2.payment_method;

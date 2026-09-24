@@ -1,23 +1,23 @@
-// Module ID: 10546
-// Function ID: 10547
+// Module ID: 10582
+// Function ID: 10583
 // Name: SlideoutButton
-// Dependencies: [19, 17, 1078, 21, 4758, 4608, 580, 558, 568, 1181, 5341, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 4640, 580, 558, 568, 1181, 5373, 2]
 
-// Module 10546 (SlideoutButton)
+// Module 10582 (SlideoutButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import Pressables from "Pressables" /* 5341 */;
+import Pressables from "Pressables" /* 5373 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { button: { alignSelf: "flex-end", justifyContent: "center", alignItems: "center" }, buttonText: null };
 let obj3 = { color: null, fontSize: 12, fontFamily: null, marginTop: 2, marginHorizontal: 2, textAlign: "center" };
-const ColorUtils = fn(4608);
+const ColorUtils = fn(4640);
 obj3.color = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.WHITE, 0.6);
 obj3.fontFamily = fn(1078).Fonts.PRIMARY_SEMIBOLD;
 obj2.buttonText = obj3;
@@ -72,7 +72,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return tmp20;
             }
             const obj3 = { accessibilityRole: "button", onPress, children: tmp16 };
-            const tmp22 = React4(tmp(5341).PressableOpacity, obj3);
+            const tmp22 = React4(tmp(5373).PressableOpacity, obj3);
             cResult[17] = onPress;
             cResult[18] = tmp16;
             cResult[19] = tmp22;

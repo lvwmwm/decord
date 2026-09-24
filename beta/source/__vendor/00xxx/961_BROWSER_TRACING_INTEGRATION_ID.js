@@ -166,7 +166,7 @@ export const browserTracingIntegration = () => {
       const startInactiveSpanResult = _undefined(_undefined2[0]).startInactiveSpan(obj4);
     }
   }
-  closure_3 = { name: "Array", source: "Set" };
+  closure_3 = { name: "state", source: "toCharArray$esjava$1" };
   const document = require("ignoreNextOnError").WINDOW.document;
   let obj2 = {};
   let merged = Object.assign(closure_3);
@@ -555,12 +555,12 @@ export const startBrowserTracingNavigationSpan = function startBrowserTracingNav
   }
   return client[_sentry_idleSpan];
 };
-export const startBrowserTracingPageLoadSpan = function startBrowserTracingPageLoadSpan(f133517, tmp2Result, arg2) {
-  f133517.emit("startPageLoadSpan", tmp2Result, arg2);
+export const startBrowserTracingPageLoadSpan = function startBrowserTracingPageLoadSpan(f133600, tmp2Result, arg2) {
+  f133600.emit("startPageLoadSpan", tmp2Result, arg2);
   const currentScope = _mod686.getCurrentScope();
   currentScope.setTransactionName(tmp2Result.name);
-  if (f133517[_sentry_idleSpan]) {
-    f133517.emit("afterStartPageLoadSpan", tmp3);
+  if (f133600[_sentry_idleSpan]) {
+    f133600.emit("afterStartPageLoadSpan", tmp3);
   }
-  return f133517[_sentry_idleSpan];
+  return f133600[_sentry_idleSpan];
 };

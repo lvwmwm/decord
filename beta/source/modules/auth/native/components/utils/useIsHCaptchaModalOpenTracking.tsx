@@ -1,15 +1,15 @@
-// Module ID: 16329
-// Function ID: 16330
+// Module ID: 16339
+// Function ID: 16340
 // Name: useIsHCaptchaModalOpenTracking
-// Dependencies: [19, 16280, 16281, 558, 568, 16277, 4617, 4616, 2]
+// Dependencies: [19, 16290, 16291, 558, 568, 16287, 4649, 4648, 2]
 
-// Module 16329 (useIsHCaptchaModalOpenTracking)
-import RootNavigationRef from "RootNavigationRef" /* 4617 */;
+// Module 16339 (useIsHCaptchaModalOpenTracking)
+import RootNavigationRef from "RootNavigationRef" /* 4649 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_3 = fn(16280).doesRegistrationHaveIdentityType;
-const RegistrationConstants = fn(16281);
+let closure_3 = fn(16290).doesRegistrationHaveIdentityType;
+const RegistrationConstants = fn(16291);
 ({ RegisterTransitionSteps: closure_4, RegistrationTransitionActionTypes: hasOwnProperty } = RegistrationConstants);
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -17,7 +17,7 @@ const result = size.fileFinishedImporting("modules/auth/native/components/utils/
 
 export const useIsHCaptchaModalOpenTracking = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = context(568).c(3);
-  context = noop.useContext(context(16277).TrackRegistrationContext);
+  context = noop.useContext(context(16287).TrackRegistrationContext);
   if (cResult[0] !== context) {
     const fn = function o() {
       const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
@@ -50,7 +50,7 @@ export const useIsHCaptchaModalOpenTracking = ReactCompilerGating.isReactCompile
   }
   const layoutEffect = noop.useLayoutEffect(tmp3, tmp4);
 }) : (() => {
-  context = noop.useContext(context(16277).TrackRegistrationContext);
+  context = noop.useContext(context(16287).TrackRegistrationContext);
   const items = [context];
   const layoutEffect = noop.useLayoutEffect(() => {
     const rootNavigationRef = RootNavigationRef.getRootNavigationRef();

@@ -1,13 +1,13 @@
-// Module ID: 4706
-// Function ID: 4707
+// Module ID: 4738
+// Function ID: 4739
 // Name: DownloadIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 4707, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 4739, 4493, 2]
 
-// Module 4706 (DownloadIcon)
+// Module 4738 (DownloadIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod4707 from "module_4707" /* 4707 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod4739 from "module_4739" /* 4739 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const DownloadIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(4707);
+    const tmpResult = tmp(4739);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const DownloadIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod4707, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod4739, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

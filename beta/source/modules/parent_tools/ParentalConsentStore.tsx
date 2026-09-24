@@ -1,9 +1,9 @@
-// Module ID: 16292
-// Function ID: 16293
+// Module ID: 16302
+// Function ID: 16303
 // Name: ParentalConsentStore
 // Dependencies: [504, 577, 2]
 
-// Module 16292 (ParentalConsentStore)
+// Module 16302 (ParentalConsentStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 

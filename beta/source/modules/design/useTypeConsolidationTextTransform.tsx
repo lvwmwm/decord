@@ -1,12 +1,12 @@
-// Module ID: 7222
-// Function ID: 7223
+// Module ID: 7254
+// Function ID: 7255
 // Name: useTypeConsolidationTextTransform
-// Dependencies: [558, 7223, 568, 2]
+// Dependencies: [558, 7255, 568, 2]
 // Exports: useTypeConsolidationTextTransform
 
-// Module 7222 (useTypeConsolidationTextTransform)
+// Module 7254 (useTypeConsolidationTextTransform)
 import c from "c" /* 568 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7223 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7255 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ export const useTypeConsolidationEyebrow = ReactCompilerGating.isReactCompilerEn
     const obj3 = { variant: "experimental/body-sm/medium", style };
     let obj4 = obj3;
   } else {
-    obj4 = { variant, style: "a" };
+    obj4 = { variant, style: "Array" };
   }
   cResult[0] = variant;
   cResult[1] = manaTypeConsolidationExperiment;
@@ -46,7 +46,7 @@ export const useTypeConsolidationEyebrow = ReactCompilerGating.isReactCompilerEn
     const obj2 = { variant: "experimental/body-sm/medium", style };
     let obj3 = obj2;
   } else {
-    obj3 = { variant, style: "a" };
+    obj3 = { variant, style: "Array" };
   }
   return obj3;
 });

@@ -1,24 +1,24 @@
-// Module ID: 15460
-// Function ID: 15461
+// Module ID: 15470
+// Function ID: 15471
 // Name: QuestDockBountyBody
-// Dependencies: [19, 5663, 21, 558, 568, 15438, 15358, 15348, 15355, 11610, 1119, 11637, 7965, 7971, 7981, 5670, 7969, 5666, 15269, 15271, 11620, 15456, 10582, 15461, 8178, 13215, 2]
+// Dependencies: [19, 5695, 21, 558, 568, 15448, 15368, 15358, 15365, 11646, 1119, 11673, 7997, 8003, 8013, 5702, 8001, 5698, 15279, 15281, 11656, 15466, 10618, 15471, 8210, 13251, 2]
 
-// Module 15460 (QuestDockBountyBody)
+// Module 15470 (QuestDockBountyBody)
 import util from "util" /* 1119 */;
-import QuestTypes from "QuestTypes" /* 5666 */;
-import AdCreativeType from "AdCreativeType" /* 5670 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7965 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7969 */;
-import captureAdUserAction from "captureAdUserAction" /* 7971 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7981 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 11620 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 11637 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15269 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 15271 */;
+import QuestTypes from "QuestTypes" /* 5698 */;
+import AdCreativeType from "AdCreativeType" /* 5702 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7997 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8001 */;
+import captureAdUserAction from "captureAdUserAction" /* 8003 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 8013 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 11656 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 11673 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15279 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 15281 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const QuestDockMode = fn(5663).QuestDockMode;
+const QuestDockMode = fn(5695).QuestDockMode;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

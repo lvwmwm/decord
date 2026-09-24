@@ -1,14 +1,14 @@
-// Module ID: 10183
-// Function ID: 10184
+// Module ID: 10222
+// Function ID: 10223
 // Name: VoicePanelUtils
-// Dependencies: [2045, 4781, 4966, 558, 568, 565, 2]
+// Dependencies: [2045, 4813, 4998, 558, 568, 565, 2]
 
-// Module 10183 (VoicePanelUtils)
+// Module 10222 (VoicePanelUtils)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
-import VoicePanelStore from "VoicePanelStore" /* 4966 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
+import VoicePanelStore from "VoicePanelStore" /* 4998 */;
 
 require = fn;
 fn(558);

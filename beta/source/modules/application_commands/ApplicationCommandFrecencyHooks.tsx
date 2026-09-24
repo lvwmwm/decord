@@ -1,18 +1,18 @@
-// Module ID: 9411
-// Function ID: 9412
+// Module ID: 9443
+// Function ID: 9444
 // Name: ApplicationCommandFrecencyHooks
-// Dependencies: [19, 9404, 1088, 558, 568, 2028, 504, 2]
+// Dependencies: [19, 9436, 1088, 558, 568, 2028, 504, 2]
 
-// Module 9411 (ApplicationCommandFrecencyHooks)
+// Module 9443 (ApplicationCommandFrecencyHooks)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
-import ApplicationCommandFrecencyStore_mod from "ApplicationCommandFrecencyStore" /* 9404 */;
+import ApplicationCommandFrecencyStore_mod from "ApplicationCommandFrecencyStore" /* 9436 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let ApplicationCommandFrecencyStore = fn(9404);
+let ApplicationCommandFrecencyStore = fn(9436);
 ({ getFilteredTopCommands: c3, getTopRealCommands: closure_4 } = ApplicationCommandFrecencyStore);
 let ApplicationCommandFrecencyStore = ApplicationCommandFrecencyStore_mod;
 const UserSettingsTypes = fn(1088).UserSettingsTypes;

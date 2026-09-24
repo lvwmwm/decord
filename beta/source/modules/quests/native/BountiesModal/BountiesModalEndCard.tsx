@@ -1,17 +1,17 @@
-// Module ID: 15322
-// Function ID: 15323
+// Module ID: 15332
+// Function ID: 15333
 // Name: BountiesModalEndCard
-// Dependencies: [17, 21, 4758, 558, 568, 4497, 4759, 4762, 5198, 15292, 2]
+// Dependencies: [17, 21, 4790, 558, 568, 4529, 4791, 4794, 5230, 15302, 2]
 
-// Module 15322 (BountiesModalEndCard)
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
-import timingPresets from "timingPresets" /* 4762 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 15292 */;
+// Module 15332 (BountiesModalEndCard)
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
+import timingPresets from "timingPresets" /* 4794 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 15302 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,8 +44,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((sourceQuestConte
     }
     return { opacity: timing.withTiming(num, timingPresets.timingStandard) };
   };
-  const obj2 = visible(4497);
-  fn.__closure = { withTiming: visible(4759).withTiming, visible, timingStandard: visible(4762).timingStandard };
+  const obj2 = visible(4529);
+  fn.__closure = { withTiming: visible(4791).withTiming, visible, timingStandard: visible(4794).timingStandard };
   fn.__workletHash = 15062259404736;
   fn.__initData = __initData;
   const animatedStyle = obj2.useAnimatedStyle(fn);
@@ -86,7 +86,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((sourceQuestConte
   visible = visible.visible;
   ({ bounty, sourceQuestContent } = visible);
   let tmp = closure_7();
-  visible(4497);
+  visible(4529);
   const fn = function b() {
     let num = 0;
     if (visible) {
@@ -94,7 +94,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((sourceQuestConte
     }
     return { opacity: timing.withTiming(num, timingPresets.timingStandard) };
   };
-  fn.__closure = { withTiming: visible(4759).withTiming, visible, timingStandard: visible(4762).timingStandard };
+  fn.__closure = { withTiming: visible(4791).withTiming, visible, timingStandard: visible(4794).timingStandard };
   fn.__workletHash = 8770295520643;
   fn.__initData = __initData2;
   if (visible) {

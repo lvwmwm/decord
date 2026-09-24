@@ -1,21 +1,21 @@
-// Module ID: 14008
-// Function ID: 14009
+// Module ID: 14044
+// Function ID: 14045
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 2045, 1376, 14009, 1078, 21, 4758, 580, 4754, 4910, 1119, 558, 568, 504, 1374, 1181, 11954, 11216, 4717, 4712, 1245, 4725, 14010, 4771, 7449, 10375, 5903, 5822, 5188, 2]
+// Dependencies: [19, 17, 2045, 1376, 14045, 1078, 21, 4790, 580, 4786, 4942, 1119, 558, 568, 504, 1374, 1181, 11990, 11252, 4749, 4744, 1245, 4757, 14046, 4803, 7481, 10414, 5935, 5854, 5220, 2]
 
-// Module 14008 (BlockedUserInGdmActionSheet)
+// Module 14044 (BlockedUserInGdmActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4712 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4717 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4771 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
-import TableRow from "TableRow" /* 5822 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 14010 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4744 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4749 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4803 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
+import TableRow from "TableRow" /* 5854 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 14046 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1376 */;
@@ -138,12 +138,12 @@ function getBlockedUserInGDMTableRows(arg0) {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const SharedSpaceWarningConstants = fn(14009);
+const SharedSpaceWarningConstants = fn(14045);
 ({ BlockWarningEngagements: closure_8, GdmWarningMedium: closure_9 } = SharedSpaceWarningConstants);
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_11, Fragment: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, textAlign: "center" }, headerImage: { alignSelf: "center", width: 73, height: 86 }, title: { textAlign: "center", alignSelf: "center" }, description: { textAlign: "center", alignSelf: "center" }, tableGroup: null, buttons: null, icon: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, textAlign: "center" };
 obj2.tableGroup = { paddingVertical: nativeDefault.space.PX_24 };
@@ -209,7 +209,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
       obj2.size = REFRESH_MEDIUM_32;
       let tmp17 = closure_11(tmp(1181).Avatar, obj2);
     } else {
-      tmp17 = closure_11(tmp(11954).UserIcon, {});
+      tmp17 = closure_11(tmp(11990).UserIcon, {});
     }
     cResult[8] = guildId;
     cResult[9] = tmp12;
@@ -218,7 +218,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
   } else {
     if (cResult[12] !== tmp7) {
       const obj3 = { users: tmp7, size: tmp(1181).AvatarSizes.REFRESH_MEDIUM_32 };
-      const tmp11 = closure_11(tmp(11216).FacepileGroupDMAvatar, obj3);
+      const tmp11 = closure_11(tmp(11252).FacepileGroupDMAvatar, obj3);
       cResult[12] = tmp7;
       cResult[13] = tmp11;
       let tmp9 = tmp11;
@@ -244,11 +244,11 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
       obj3.size = REFRESH_MEDIUM_32;
       let tmp6 = closure_11(tmp(1181).Avatar, obj3);
     } else {
-      tmp6 = closure_11(tmp(11954).UserIcon, {});
+      tmp6 = closure_11(tmp(11990).UserIcon, {});
     }
   } else {
     const obj4 = { users: found, size: tmp(1181).AvatarSizes.REFRESH_MEDIUM_32 };
-    return closure_11(tmp(11216).FacepileGroupDMAvatar, obj4);
+    return closure_11(tmp(11252).FacepileGroupDMAvatar, obj4);
   }
 });
 ReactCompilerGating = fn(558);

@@ -1,17 +1,17 @@
-// Module ID: 9009
-// Function ID: 9010
+// Module ID: 9041
+// Function ID: 9042
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 4985, 1376, 21, 4758, 580, 558, 568, 7186, 9010, 9012, 7412, 504, 8944, 1119, 5802, 1181, 4754, 9013, 5188, 2]
+// Dependencies: [19, 17, 5017, 1376, 21, 4790, 580, 558, 568, 7218, 9042, 9044, 7444, 504, 8976, 1119, 5834, 1181, 4786, 9045, 5220, 2]
 
-// Module 9009 (GameProfileLinkAccount)
+// Module 9041 (GameProfileLinkAccount)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7186 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8944 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9010 */;
-import GameProfileSection from "GameProfileSection" /* 9012 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7218 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8976 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9042 */;
+import GameProfileSection from "GameProfileSection" /* 9044 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 4985 */;
+import ApplicationStore from "ApplicationStore" /* 5017 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;
@@ -21,7 +21,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let c9 = 48;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { card: { borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 }, cardImagesContainer: null, ellipseGroup: null, ellipse: null, cardImageApplication: null, userAvatar: null, cardContent: null, cardText: null, skeletonCardImage: null, skeletonUserAvatar: null, skeletonEllipse: null, skeletonCardContent: null, skeletonAnimationRoot: null, skeletonCardImagesContainerSmall: null, skeletonCardContentHeading: null, skeletonCardContentBody: null, skeletonCardContentBodySecondary: null };
 let obj3 = { borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
 obj.cardImagesContainer = { flexDirection: "row", gap: nativeDefault.space.PX_8, alignItems: "center", alignSelf: "center" };
@@ -70,7 +70,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() =>
     }
     if (cResult[3] !== tmp4.skeletonCardImage) {
       const obj2 = { style: tmp4.skeletonCardImage };
-      const tmp10 = React5(tmp5(9010), obj2);
+      const tmp10 = React5(tmp5(9042), obj2);
       cResult[3] = tmp4.skeletonCardImage;
       cResult[4] = tmp10;
       let tmp8 = tmp10;
@@ -79,11 +79,11 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() =>
     }
     if (cResult[5] !== tmp4.skeletonEllipse) {
       const obj3 = { style: tmp4.skeletonEllipse };
-      const tmp15 = React5(tmp5(9010), obj3);
+      const tmp15 = React5(tmp5(9042), obj3);
       const obj4 = { style: tmp4.skeletonEllipse };
-      const tmp16 = React5(tmp5(9010), obj4);
+      const tmp16 = React5(tmp5(9042), obj4);
       const obj5 = { style: tmp4.skeletonEllipse };
-      const tmp17 = React5(tmp5(9010), obj5);
+      const tmp17 = React5(tmp5(9042), obj5);
       cResult[5] = tmp4.skeletonEllipse;
       cResult[6] = tmp15;
       cResult[7] = tmp16;
@@ -104,7 +104,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() =>
           }
           if (cResult[14] !== tmp4.skeletonUserAvatar) {
             const obj6 = { style: tmp4.skeletonUserAvatar };
-            const tmp24 = React5(tmp5(9010), obj6);
+            const tmp24 = React5(tmp5(9042), obj6);
             cResult[14] = tmp4.skeletonUserAvatar;
             cResult[15] = tmp24;
             let tmp22 = tmp24;
@@ -119,7 +119,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() =>
                 }
                 if (cResult[21] !== tmp4.skeletonCardContentHeading) {
                   const obj7 = { style: tmp4.skeletonCardContentHeading };
-                  const tmp31 = React5(tmp5(9010), obj7);
+                  const tmp31 = React5(tmp5(9042), obj7);
                   cResult[21] = tmp4.skeletonCardContentHeading;
                   cResult[22] = tmp31;
                   let tmp29 = tmp31;
@@ -128,7 +128,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() =>
                 }
                 if (cResult[23] !== tmp4.skeletonCardContentBody) {
                   const obj8 = { style: tmp4.skeletonCardContentBody };
-                  const tmp34 = React5(tmp5(9010), obj8);
+                  const tmp34 = React5(tmp5(9042), obj8);
                   cResult[23] = tmp4.skeletonCardContentBody;
                   cResult[24] = tmp34;
                   let tmp32 = tmp34;
@@ -147,7 +147,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() =>
                         }
                         const _Symbol = Symbol;
                         if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
-                          const tmp45 = React5(tmp(9010).GameProfileSkeletonButton, {});
+                          const tmp45 = React5(tmp(9042).GameProfileSkeletonButton, {});
                           cResult[33] = tmp45;
                           let tmp43 = tmp45;
                         } else {
@@ -167,7 +167,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() =>
                             const obj9 = { showViewAllSkeleton: false, skeletonTitleWidth: 90, children: null };
                             const obj10 = { style: tmp4.card, children: tmp46 };
                             obj9.children = React5(View, obj10);
-                            const tmp52 = React5(tmp(9012).GameProfileSectionSkeleton, obj9);
+                            const tmp52 = React5(tmp(9044).GameProfileSectionSkeleton, obj9);
                             cResult[38] = tmp4.card;
                             cResult[39] = tmp46;
                             cResult[40] = tmp52;
@@ -177,7 +177,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() =>
                         const obj11 = { style: tmp4.skeletonAnimationRoot, children: null };
                         const items = [tmp25, tmp38, tmp43];
                         obj11.children = items;
-                        const tmp48 = closure_1_8(tmp(9010).GameProfileSkeletonContainer, obj11);
+                        const tmp48 = closure_1_8(tmp(9042).GameProfileSkeletonContainer, obj11);
                         cResult[34] = tmp4.skeletonAnimationRoot;
                         cResult[35] = tmp38;
                         cResult[36] = tmp25;
@@ -200,7 +200,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() =>
                 let tmp36 = !tmp6;
                 if (!tmp6) {
                   const obj13 = { style: tmp4.skeletonCardContentBodySecondary };
-                  tmp36 = React5(tmp5(9010), obj13);
+                  tmp36 = React5(tmp5(9042), obj13);
                 }
                 cResult[25] = tmp6;
                 cResult[26] = tmp4.skeletonCardContentBodySecondary;
@@ -263,7 +263,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() =>
   let tmp5Result = !tmp4;
   if (!tmp4) {
     const obj13 = { style: tmp.skeletonCardContentBodySecondary };
-    tmp5Result = tmp5(tmp2(9010), obj13);
+    tmp5Result = tmp5(tmp2(9042), obj13);
   }
   const obj14 = { showViewAllSkeleton: false, skeletonTitleWidth: 90, children: null };
   items4[2] = tmp5Result;

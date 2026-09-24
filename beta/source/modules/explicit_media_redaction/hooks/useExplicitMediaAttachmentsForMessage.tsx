@@ -1,12 +1,12 @@
-// Module ID: 11801
-// Function ID: 11802
+// Module ID: 11837
+// Function ID: 11838
 // Name: useExplicitMediaAttachmentsForMessage
-// Dependencies: [4978, 558, 568, 565, 11802, 7536, 7541, 2]
+// Dependencies: [5010, 558, 568, 565, 11838, 7568, 7573, 2]
 
-// Module 11801 (useExplicitMediaAttachmentsForMessage)
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7536 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7541 */;
-import MessageStore from "MessageStore" /* 4978 */;
+// Module 11837 (useExplicitMediaAttachmentsForMessage)
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7568 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7573 */;
+import MessageStore from "MessageStore" /* 5010 */;
 
 const require = globalThis.__r;
 
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
     }
     const stateFromStores = tmp(565).useStateFromStores(first, tmp6);
     const tmpResult = tmp(565);
-    const enabledHarmTypesBitmaskForMessage = tmp(11802).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
+    const enabledHarmTypesBitmaskForMessage = tmp(11838).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
     if (null == stateFromStores) {
       const _Symbol = Symbol;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
@@ -83,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
       cResult[6] = arg2;
       cResult[7] = tmp11;
     }
-    const tmpResult2 = tmp(11802);
+    const tmpResult2 = tmp(11838);
   }
   const fn = function u() {
     return MessageStore.getMessage(closure_0, closure_1);
@@ -139,7 +139,7 @@ export const useRedactableMediaEmbedsForMessage = ReactCompilerGating.isReactCom
     }
     const stateFromStores = tmp(565).useStateFromStores(first, tmp6);
     const tmpResult = tmp(565);
-    const enabledHarmTypesBitmaskForMessage = tmp(11802).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
+    const enabledHarmTypesBitmaskForMessage = tmp(11838).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
     if (null == stateFromStores) {
       const _Symbol = Symbol;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
@@ -191,7 +191,7 @@ export const useRedactableMediaEmbedsForMessage = ReactCompilerGating.isReactCom
       cResult[6] = enabledHarmTypesBitmaskForMessage;
       cResult[7] = tmp11;
     }
-    const tmpResult2 = tmp(11802);
+    const tmpResult2 = tmp(11838);
   }
   const fn = function u() {
     return MessageStore.getMessage(closure_0, closure_1);

@@ -1,13 +1,13 @@
-// Module ID: 16822
-// Function ID: 16823
+// Module ID: 16832
+// Function ID: 16833
 // Name: MedalIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 16823, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 16833, 4493, 2]
 
-// Module 16822 (MedalIcon)
+// Module 16832 (MedalIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod16823 from "module_16823" /* 16823 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod16833 from "module_16833" /* 16833 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const MedalIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(16823);
+    const tmpResult = tmp(16833);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const MedalIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16823, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod16833, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

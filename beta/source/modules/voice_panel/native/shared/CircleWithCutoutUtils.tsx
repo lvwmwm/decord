@@ -1,12 +1,12 @@
-// Module ID: 9664
-// Function ID: 9665
+// Module ID: 9696
+// Function ID: 9697
 // Name: CircleWithCutoutUtils
-// Dependencies: [19, 21, 558, 568, 8733, 2]
+// Dependencies: [19, 21, 558, 568, 8765, 2]
 // Exports: getBadgeLeft, getBadgeTop, getCutoutCenterX, getCutoutCenterY
 
-// Module 9664 (CircleWithCutoutUtils)
+// Module 9696 (CircleWithCutoutUtils)
 import c from "c" /* 568 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -39,7 +39,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[6] !== result) {
         const size = { width: result, height: result, fill: "white" };
-        const tmp14 = React3(tmp(8733).Rect, size);
+        const tmp14 = React3(tmp(8765).Rect, size);
         cResult[6] = result;
         cResult[7] = tmp14;
         let tmp12 = tmp14;
@@ -84,7 +84,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
             }
             const obj2 = { cx: circleRadius, cy: circleRadius, r: circleRadius, fill: circleFillColor, mask: str };
-            const tmp24 = React3(tmp(8733).Circle, obj2);
+            const tmp24 = React3(tmp(8765).Circle, obj2);
             cResult[15] = circleFillColor;
             cResult[16] = circleRadius;
             cResult[17] = str;
@@ -95,8 +95,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj4 = { id: "mask", children: null };
           const items1 = [tmp12, tmp15];
           obj4.children = items1;
-          obj3.children = React4(tmp(8733).Mask, obj4);
-          const tmp21 = React3(tmp(8733).Defs, obj3);
+          obj3.children = React4(tmp(8765).Mask, obj4);
+          const tmp21 = React3(tmp(8765).Defs, obj3);
           cResult[12] = tmp12;
           cResult[13] = tmp15;
           cResult[14] = tmp21;
@@ -104,7 +104,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj5 = { cx: tmp6, cy: tmp8, r: cutoutRadius, fill: "black" };
-      const tmp17 = React3(tmp(8733).Circle, obj5);
+      const tmp17 = React3(tmp(8765).Circle, obj5);
       cResult[8] = tmp6;
       cResult[9] = tmp8;
       cResult[10] = cutoutRadius;

@@ -1,23 +1,23 @@
-// Module ID: 12802
-// Function ID: 12803
+// Module ID: 12838
+// Function ID: 12839
 // Name: ChatPlaceholder
-// Dependencies: [19, 17, 9650, 21, 4758, 580, 558, 568, 1616, 7224, 1482, 12803, 12804, 12805, 4497, 2]
+// Dependencies: [19, 17, 9682, 21, 4790, 580, 558, 568, 1616, 7256, 1482, 12839, 12840, 12841, 4529, 2]
 
-// Module 12802 (ChatPlaceholder)
+// Module 12838 (ChatPlaceholder)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7224 */;
-import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 12803 */;
-import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 12804 */;
-import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 12805 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7256 */;
+import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 12839 */;
+import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 12840 */;
+import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 12841 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_4 = fn(9650).useChatInputContainerHeight;
+let closure_4 = fn(9682).useChatInputContainerHeight;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { placeholder: null };
 let obj3 = {};
 const merged = Object.assign(fn(17).StyleSheet.absoluteFillObject);
@@ -153,7 +153,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((screen
                   return tmp24;
                 }
                 const obj4 = { style: tmp23, pointerEvents: "none", children: tmp12 };
-                const tmp26 = jsx(tmp14(4497).View, { style: tmp23, pointerEvents: "none", children: tmp12 });
+                const tmp26 = jsx(tmp14(4529).View, { style: tmp23, pointerEvents: "none", children: tmp12 });
                 cResult[15] = tmp12;
                 cResult[16] = tmp23;
                 cResult[17] = tmp26;

@@ -1,13 +1,13 @@
-// Module ID: 17611
-// Function ID: 17612
+// Module ID: 17621
+// Function ID: 17622
 // Name: VoicePanelNoJoinPermissionsAlert
-// Dependencies: [19, 21, 558, 568, 5116, 17612, 1119, 5116, 2]
+// Dependencies: [19, 21, 558, 568, 5148, 17622, 1119, 5148, 2]
 
-// Module 17611 (VoicePanelNoJoinPermissionsAlert)
+// Module 17621 (VoicePanelNoJoinPermissionsAlert)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AlertModal from "AlertModal" /* 5116 */;
-import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17612 */;
+import AlertModal from "AlertModal" /* 5148 */;
+import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17622 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -45,8 +45,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[4] !== dismissModalCallback) {
     const obj3 = { header: tmp5, title: tmp6, content: tmp7, actions: null };
     const obj4 = { variant: "secondary", text: tmp13, onPress: dismissModalCallback };
-    obj3.actions = jsx(tmp(5116).AlertActionButton, { variant: "secondary", text: tmp13, onPress: dismissModalCallback });
-    const tmp17 = jsx(tmp(5116).AlertModal, { header: tmp5, title: tmp6, content: tmp7, actions: null });
+    obj3.actions = jsx(tmp(5148).AlertActionButton, { variant: "secondary", text: tmp13, onPress: dismissModalCallback });
+    const tmp17 = jsx(tmp(5148).AlertModal, { header: tmp5, title: tmp6, content: tmp7, actions: null });
     cResult[4] = dismissModalCallback;
     cResult[5] = tmp17;
     let tmp15 = tmp17;

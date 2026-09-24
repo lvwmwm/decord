@@ -1,23 +1,23 @@
-// Module ID: 17979
-// Function ID: 17980
+// Module ID: 17989
+// Function ID: 17990
 // Name: GuildSettingsModalAuditLog
-// Dependencies: [32, 19, 17, 2045, 2067, 2099, 1376, 17980, 1078, 21, 4758, 580, 1488, 504, 17982, 4603, 1119, 7441, 17984, 17994, 7621, 17985, 5796, 5822, 4754, 5829, 1181, 17995, 7286, 2]
+// Dependencies: [32, 19, 17, 2045, 2067, 2099, 1376, 17990, 1078, 21, 4790, 580, 1488, 504, 17992, 4635, 1119, 7473, 17994, 18004, 7653, 17995, 5828, 5854, 4786, 5861, 1181, 18005, 7318, 2]
 // Exports: default
 
-// Module 17979 (GuildSettingsModalAuditLog)
+// Module 17989 (GuildSettingsModalAuditLog)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import showSimpleActionSheet from "showSimpleActionSheet" /* 7441 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 17982 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 17985 */;
-import AuditLogDefault from "AuditLog" /* 17994 */;
+import showSimpleActionSheet from "showSimpleActionSheet" /* 7473 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 17992 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 17995 */;
+import AuditLogDefault from "AuditLog" /* 18004 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import UserStore from "UserStore" /* 1376 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17980 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17990 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -26,7 +26,7 @@ const Constants = fn(1078);
 ({ GuildSettingsSections: map1, AuditLogFilterTypes: closure_14 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { listView: { marginVertical: 12 }, spinner: { marginTop: 40 }, filterTextWrapper: { borderRadius: nativeDefault.radii.md, paddingVertical: 6, paddingHorizontal: 8, backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT }, filtersWrapper: null, firstAuditRow: null, lastAuditRow: null, filterTrailing: null };
 let obj3 = { borderRadius: nativeDefault.radii.md, paddingVertical: 6, paddingHorizontal: 8, backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT };
 obj2.filtersWrapper = { paddingTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_8 };

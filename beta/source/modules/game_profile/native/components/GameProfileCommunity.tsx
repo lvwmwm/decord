@@ -1,16 +1,16 @@
-// Module ID: 9015
-// Function ID: 9016
+// Module ID: 9047
+// Function ID: 9048
 // Name: GameProfileCommunity
-// Dependencies: [19, 17, 21, 580, 4758, 558, 568, 7186, 9010, 9012, 8984, 8944, 7586, 9016, 2059, 1119, 5799, 4754, 9018, 1181, 5188, 2]
+// Dependencies: [19, 17, 21, 580, 4790, 558, 568, 7218, 9042, 9044, 9016, 8976, 7618, 9048, 2059, 1119, 5831, 4786, 9050, 1181, 5220, 2]
 
-// Module 9015 (GameProfileCommunity)
+// Module 9047 (GameProfileCommunity)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7186 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8944 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9010 */;
-import GameProfileSection from "GameProfileSection" /* 9012 */;
-import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 9016 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7218 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8976 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9042 */;
+import GameProfileSection from "GameProfileSection" /* 9044 */;
+import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 9048 */;
 import noop from "module_19" /* 19 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;
@@ -20,7 +20,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const sum = nativeDefault.space.PX_48 + nativeDefault.space.PX_8;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { card: { borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, guildContent: null, guildHeaderRow: null, guildIcon: null, guildIconImage: null, guildIconLoading: null, guildInfo: null, guildNameDescriptionContainer: null, guildNameRow: null, memberCountsContainer: null, memberCountContainer: null, onlineEllipse: null, membersEllipse: null, skeletonGuildIcon: null, skeletonGuildInfo: null, skeletonGuildInfoSmall: null, skeletonGuildInfoLarge: null, skeletonGuildName: null, skeletonGuildDescription: null, skeletonMemberCounts: null };
 let obj3 = { borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj.guildContent = { flexDirection: "column", padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
@@ -67,7 +67,7 @@ let closure_8 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => 
   const result = 2 * GameProfileSkeleton.SKELETON_CARD_ANIMATION_DELAY_MS;
   if (cResult[0] !== tmp4.skeletonGuildIcon) {
     const obj2 = { style: tmp4.skeletonGuildIcon };
-    const tmp10 = hasOwnProperty(tmp5(9010), obj2);
+    const tmp10 = hasOwnProperty(tmp5(9042), obj2);
     cResult[0] = tmp4.skeletonGuildIcon;
     cResult[1] = tmp10;
     let tmp8 = tmp10;
@@ -81,7 +81,7 @@ let closure_8 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => 
     }
     if (cResult[5] !== tmp4.skeletonGuildName) {
       const obj3 = { style: tmp4.skeletonGuildName };
-      const tmp15 = hasOwnProperty(tmp5(9010), obj3);
+      const tmp15 = hasOwnProperty(tmp5(9042), obj3);
       cResult[5] = tmp4.skeletonGuildName;
       cResult[6] = tmp15;
       let tmp13 = tmp15;
@@ -90,7 +90,7 @@ let closure_8 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => 
     }
     if (cResult[7] !== tmp4.skeletonGuildDescription) {
       const obj4 = { style: tmp4.skeletonGuildDescription };
-      const tmp18 = hasOwnProperty(tmp5(9010), obj4);
+      const tmp18 = hasOwnProperty(tmp5(9042), obj4);
       cResult[7] = tmp4.skeletonGuildDescription;
       cResult[8] = tmp18;
       let tmp16 = tmp18;
@@ -99,7 +99,7 @@ let closure_8 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => 
     }
     if (cResult[9] !== tmp4.skeletonMemberCounts) {
       const obj5 = { style: tmp4.skeletonMemberCounts };
-      const tmp21 = hasOwnProperty(tmp5(9010), obj5);
+      const tmp21 = hasOwnProperty(tmp5(9042), obj5);
       cResult[9] = tmp4.skeletonMemberCounts;
       cResult[10] = tmp21;
       let tmp19 = tmp21;
@@ -119,7 +119,7 @@ let closure_8 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => 
               }
               const _Symbol = Symbol;
               if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-                const tmp33 = hasOwnProperty(tmp(9010).GameProfileSkeletonButton, {});
+                const tmp33 = hasOwnProperty(tmp(9042).GameProfileSkeletonButton, {});
                 cResult[20] = tmp33;
                 let tmp31 = tmp33;
               } else {
@@ -138,7 +138,7 @@ let closure_8 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => 
                 const obj6 = { animationDelayMs: result, showViewAllSkeleton: false, skeletonTitleWidth: 80, children: null };
                 const obj7 = { style: tmp4.card, children: tmp34 };
                 obj6.children = hasOwnProperty(View, obj7);
-                const tmp40 = hasOwnProperty(tmp(9012).GameProfileSectionSkeleton, obj6);
+                const tmp40 = hasOwnProperty(tmp(9044).GameProfileSectionSkeleton, obj6);
                 cResult[24] = tmp4.card;
                 cResult[25] = tmp34;
                 cResult[26] = tmp40;
@@ -147,7 +147,7 @@ let closure_8 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => 
               const obj8 = { animationDelayMs: result, style: tmp4.guildContent, children: null };
               const items = [tmp26, tmp31];
               obj8.children = items;
-              const tmp36 = timestampProducer(tmp(9010).GameProfileSkeletonContainer, obj8);
+              const tmp36 = timestampProducer(tmp(9042).GameProfileSkeletonContainer, obj8);
               cResult[21] = tmp4.guildContent;
               cResult[22] = tmp26;
               cResult[23] = tmp36;

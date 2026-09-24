@@ -1,38 +1,38 @@
-// Module ID: 11098
-// Function ID: 11099
+// Module ID: 11134
+// Function ID: 11135
 // Name: SocialLayerStorefrontProductDetailsModal
-// Dependencies: [32, 19, 17, 5729, 7475, 11099, 1078, 21, 676, 580, 4758, 5897, 11100, 558, 568, 8583, 5802, 4754, 1119, 11101, 1181, 2013, 4999, 1616, 5344, 9478, 504, 7415, 7412, 7473, 7429, 1245, 11096, 5203, 11097, 1368, 4431, 11102, 9477, 11103, 11112, 7478, 9104, 11116, 3552, 5188, 8178, 8346, 11119, 5846, 5848, 5198, 11121, 2]
+// Dependencies: [32, 19, 17, 5761, 7507, 11135, 1078, 21, 676, 580, 4790, 5929, 11136, 558, 568, 8615, 5834, 4786, 1119, 11137, 1181, 2013, 5031, 1616, 5376, 9510, 504, 7447, 7444, 7505, 7461, 1245, 11132, 5235, 11133, 1368, 4463, 11138, 9509, 11139, 11148, 7510, 9136, 11152, 3584, 5220, 8210, 8378, 11155, 5878, 5880, 5230, 11157, 2]
 
-// Module 11098 (SocialLayerStorefrontProductDetailsModal)
+// Module 11134 (SocialLayerStorefrontProductDetailsModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
 import StringUtils from "StringUtils" /* 2013 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import StoreUtils from "StoreUtils" /* 4999 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import XSmallIcon from "XSmallIcon" /* 5846 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7473 */;
-import common_Video from "common/Video" /* 8583 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11096 */;
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 11097 */;
-import carouselMediaItems from "carouselMediaItems" /* 11100 */;
-import StorefrontNativeUtils from "StorefrontNativeUtils" /* 11101 */;
-import redirectToSlayerStorefrontWebDefault from "redirectToSlayerStorefrontWeb" /* 11102 */;
-import NativePaymentContext from "NativePaymentContext" /* 11121 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import StoreUtils from "StoreUtils" /* 5031 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import XSmallIcon from "XSmallIcon" /* 5878 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7505 */;
+import common_Video from "common/Video" /* 8615 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11132 */;
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 11133 */;
+import carouselMediaItems from "carouselMediaItems" /* 11136 */;
+import StorefrontNativeUtils from "StorefrontNativeUtils" /* 11137 */;
+import redirectToSlayerStorefrontWebDefault from "redirectToSlayerStorefrontWeb" /* 11138 */;
+import NativePaymentContext from "NativePaymentContext" /* 11157 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SKUStore from "SKUStore" /* 5729 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7475 */;
+import SKUStore from "SKUStore" /* 5761 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7507 */;
 import n_mod from "module_676" /* 676 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, StyleSheet: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const SlayerShopPDPCTAType = fn(11099).SlayerShopPDPCTAType;
+const SlayerShopPDPCTAType = fn(11135).SlayerShopPDPCTAType;
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_11, PaymentGateways: closure_12, PriceSetAssignmentPurchaseTypes: map1 } = Constants);
 const jsxProd = fn(21);
@@ -44,12 +44,12 @@ let n = n_mod;
 const alphaResult = n(nativeDefault.unsafe_rawColors.BRAND_500).alpha(0.25);
 const importDefaultResult1Result = n(nativeDefault.unsafe_rawColors.BRAND_500);
 let closure_17 = n(nativeDefault.unsafe_rawColors.BRAND_500).alpha(0).hex();
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { flex: 1 }, header: null, headerTitle: null, closeButtonIcon: null, scrollContent: null, scrollContainer: null, columnsLandscape: null, heroColumnLandscape: null, heroColumnContentLandscape: null, bundleGroupLandscape: null, detailsScrollLandscape: null, detailsContentLandscape: null, detailsGroupLandscape: null, section: null, bundleThumbnailRow: null, thumbnail: null, thumbnailSelected: null, thumbnailInner: null, thumbnailInnerSelected: null, thumbnailImage: null, labelRow: null, labelIcon: null, priceRow: null, footer: null, footerButtonRow: null, buyButton: null, availabilityCopy: null, legalCopy: null, hero: null, heroLandscape: null, priceSection: null, heroImage: null, exclusiveBadgeContainer: null };
 const alphaResult1 = n(nativeDefault.unsafe_rawColors.BRAND_500).alpha(0);
-obj.header = { height: fn(5897).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
+obj.header = { height: fn(5929).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
 obj.headerTitle = { flexShrink: 1 };
-let obj2 = { height: fn(5897).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
+let obj2 = { height: fn(5929).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
 obj.closeButtonIcon = { tintColor: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
 let obj3 = { tintColor: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
 obj.scrollContent = { alignItems: "stretch", gap: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16 };
@@ -93,9 +93,9 @@ obj.availabilityCopy = { textAlign: "center" };
 let obj18 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 obj.legalCopy = { display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_4 };
 let obj19 = { display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_4 };
-obj.hero = { marginHorizontal: nativeDefault.space.PX_16, height: fn(11100).MOBILE_HERO_HEIGHT_PX, borderRadius: nativeDefault.radii.md, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-obj.heroLandscape = { flex: 1, minHeight: 140, height: "round" };
-let obj20 = { marginHorizontal: nativeDefault.space.PX_16, height: fn(11100).MOBILE_HERO_HEIGHT_PX, borderRadius: nativeDefault.radii.md, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+obj.hero = { marginHorizontal: nativeDefault.space.PX_16, height: fn(11136).MOBILE_HERO_HEIGHT_PX, borderRadius: nativeDefault.radii.md, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+obj.heroLandscape = { flex: 1, minHeight: 140, height: "bm" };
+let obj20 = { marginHorizontal: nativeDefault.space.PX_16, height: fn(11136).MOBILE_HERO_HEIGHT_PX, borderRadius: nativeDefault.radii.md, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj.priceSection = { width: "100%", gap: nativeDefault.space.PX_8 };
 obj.heroImage = { width: "100%", height: "100%" };
 let obj21 = { width: "100%", gap: nativeDefault.space.PX_8 };
@@ -275,7 +275,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { variant: "text-sm/medium", color: "text-muted", children: null };
     const intl = tmp(1119).intl;
     obj2.children = intl.string(tmp(1119).t.V91tvy);
-    const tmp6 = state(tmp(4754).Text, obj2);
+    const tmp6 = state(tmp(4786).Text, obj2);
     cResult[0] = tmp6;
     let first = tmp6;
   } else {
@@ -315,7 +315,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
     }
     if (cResult[3] !== userPrice) {
       const obj3 = { variant: "text-md/bold", color: "mobile-text-heading-primary", children: userPrice };
-      const tmp13 = state(tmp(4754).Text, obj3);
+      const tmp13 = state(tmp(4786).Text, obj3);
       cResult[3] = userPrice;
       cResult[4] = tmp13;
       let tmp11 = tmp13;
@@ -793,7 +793,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
   } else {
     if (cResult[0] !== sku.name) {
       const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: sku.name };
-      const tmp6 = state(tmp(4754).Heading, obj3);
+      const tmp6 = state(tmp(4786).Heading, obj3);
       cResult[0] = sku.name;
       cResult[1] = tmp6;
       let tmp4 = tmp6;
@@ -805,7 +805,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
       let tmp9 = !isNullOrEmptyResult;
       if (!isNullOrEmptyResult) {
         const obj4 = { variant: "text-md/medium", color: "text-muted", children: sku.description };
-        tmp9 = state(tmp(4754).Text, obj4);
+        tmp9 = state(tmp(4786).Text, obj4);
       }
       cResult[2] = sku.description;
       cResult[3] = tmp9;
@@ -835,12 +835,12 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
   if (!obj.isNullOrEmpty(sku.name)) {
     const obj2 = { style: tmp.section, children: null };
     const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: sku.name };
-    const items = [state(tmp2(4754).Heading, obj3), ];
+    const items = [state(tmp2(4786).Heading, obj3), ];
     const isNullOrEmptyResult = tmp2(2013).isNullOrEmpty(sku.description);
     let tmp7Result = !isNullOrEmptyResult;
     if (!isNullOrEmptyResult) {
       const obj4 = { variant: "text-md/medium", color: "text-muted", children: sku.description };
-      tmp7Result = tmp7(tmp2(4754).Text, obj4);
+      tmp7Result = tmp7(tmp2(4786).Text, obj4);
     }
     items[1] = tmp7Result;
     obj2.children = items;
@@ -941,7 +941,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp26 = !isNullOrEmptyResult;
     if (!isNullOrEmptyResult) {
       const obj3 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: trimmed };
-      tmp26 = state(tmp(4754).Heading, obj3);
+      tmp26 = state(tmp(4786).Heading, obj3);
     }
     const tmpResult9 = tmp(2013);
     const isNullOrEmptyResult1 = tmp(2013).isNullOrEmpty(trimmed1);
@@ -958,7 +958,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const items1 = [tmp31, ];
       const obj7 = { variant: "text-sm/medium", color: "text-muted", children: trimmed1 };
-      items1[1] = state(tmp(4754).Text, obj7);
+      items1[1] = state(tmp(4786).Text, obj7);
       obj4.children = items1;
       tmp30Result = closure_1_15(tmp24, obj4);
     }
@@ -967,7 +967,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp36 = !isNullOrEmptyResult2;
     if (!isNullOrEmptyResult2) {
       const obj8 = { variant: "text-md/medium", color: "text-default", children: trimmed2 };
-      tmp36 = state(tmp(4754).Text, obj8);
+      tmp36 = state(tmp(4786).Text, obj8);
     }
     tmp19 = forResult;
     section = tmp4.section;
@@ -975,8 +975,8 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let assetURL = null;
   if (null != selectedItem.labelIconAssetId) {
-    assetURL = tmp(4999).getAssetURL(applicationId, selectedItem.labelIconAssetId);
-    const tmpResult12 = tmp(4999);
+    assetURL = tmp(5031).getAssetURL(applicationId, selectedItem.labelIconAssetId);
+    const tmpResult12 = tmp(5031);
   }
   cResult[0] = applicationId;
   cResult[1] = selectedItem.labelIconAssetId;
@@ -1014,7 +1014,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp14 = !isNullOrEmptyResult;
   if (!isNullOrEmptyResult) {
     const obj4 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: trimmed };
-    tmp14 = state(tmp8(4754).Heading, obj4);
+    tmp14 = state(tmp8(4786).Heading, obj4);
   }
   const items = [tmp14, , ];
   const tmp8Result6 = StringUtils;
@@ -1032,7 +1032,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const items1 = [tmp18, ];
     const obj8 = { variant: "text-sm/medium", color: "text-muted", children: trimmed1 };
-    items1[1] = state(tmp8(4754).Text, obj8);
+    items1[1] = state(tmp8(4786).Text, obj8);
     obj5.children = items1;
     tmp11Result = tmp11(tmp12, obj5);
   }
@@ -1042,7 +1042,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp23 = !isNullOrEmptyResult2;
   if (!isNullOrEmptyResult2) {
     const obj9 = { variant: "text-md/medium", color: "text-default", children: trimmed2 };
-    tmp23 = state(tmp8(4754).Text, obj9);
+    tmp23 = state(tmp8(4786).Text, obj9);
   }
   items[2] = tmp23;
   obj3.children = items;
@@ -1314,10 +1314,10 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   const tmp = closure_18();
   dependencyMap = tmp;
   const rect = analyticsLocations(1616)();
-  const isScreenLandscape = skuId(5344).useIsScreenLandscape();
-  let obj = skuId(5344);
-  const mobileStoreFront = analyticsLocations(9478).useMobileStoreFront();
-  let obj2 = analyticsLocations(9478);
+  const isScreenLandscape = skuId(5376).useIsScreenLandscape();
+  let obj = skuId(5376);
+  const mobileStoreFront = analyticsLocations(9510).useMobileStoreFront();
+  let obj2 = analyticsLocations(9510);
   let items = [trackPDPClick];
   const stateFromStores = skuId(504).useStateFromStores(items, () => SKUStore.get(skuId));
   let obj3 = skuId(504);
@@ -1328,13 +1328,13 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   if (stateFromStores != null) {
     applicationId1 = stateFromStores.applicationId;
   }
-  const getOrFetchApplication = skuId(7415).useGetOrFetchApplication(applicationId1);
+  const getOrFetchApplication = skuId(7447).useGetOrFetchApplication(applicationId1);
   let tmp12 = getOrFetchApplication;
-  const obj5 = skuId(7415);
+  const obj5 = skuId(7447);
   if (getOrFetchApplication == null) {
     tmp12 = null;
   }
-  const tmp2Result = analyticsLocations(7412);
+  const tmp2Result = analyticsLocations(7444);
   const items2 = [skuAssets];
   stateFromStores2 = skuId(504).useStateFromStores(items2, () => skuAssets.getSkuAssets());
   const items3 = [stateFromStores];
@@ -1350,7 +1350,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     const items1 = [...items, AnalyticsLocationDefault.SLAYER_STOREFRONT_NATIVE_PDP];
     return items1;
   }, items4);
-  analyticsLocations(5203)(() => {
+  analyticsLocations(5235)(() => {
     const obj2 = { location_stack: memo1, type: SocialLayerStorefrontNativeActionCreators.SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY, sku_id: skuId, application_id: null };
     applicationId = undefined;
     if (stateFromStores != null) {
@@ -1553,7 +1553,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
       const tmp4Result = redirectToSlayerStorefrontWebDefault(obj2);
     }
   }, items9);
-  const OTPACOMOrderExperiment = tmp4(9477).OTPACOMOrderExperiment;
+  const OTPACOMOrderExperiment = tmp4(9509).OTPACOMOrderExperiment;
   let enabled = OTPACOMOrderExperiment.useConfig({ location: "SocialLayerStorefrontProductDetailsModal" }).enabled;
   const tmp15Result6 = mobileStoreFront(stateFromStores.useState(0), 2);
   if (tmp4Result6.isIOS()) {
@@ -1572,7 +1572,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     obj6.orderRequired = enabled;
     const items10 = [skuId];
     obj6.skuIds = items10;
-    obj6.onOrderRetryCancellation = tmp4(11096).closeSocialLayerStorefrontProductDetailsModal;
+    obj6.onOrderRetryCancellation = tmp4(11132).closeSocialLayerStorefrontProductDetailsModal;
     const obj8 = { is_gift: false, location_stack: memo1, payment_type: "sku", sku_id: skuId, sku_type: null, sku_product_line: null, application_id: null };
     let type;
     if (stateFromStores != null) {
@@ -1591,19 +1591,19 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     obj8.application_id = applicationId4;
     obj6.checkoutAnalyticsFields = obj8;
     const obj9 = { attempt: tmp32, skuId, sku: stateFromStores, analyticsLocations: memo1, onPurchaseComplete: callback2, onPurchaseError: callback1 };
-    obj6.children = closure_14(tmp4(11112).HeadlessSlayerStorefrontPurchaseRunner, obj9);
-    tmp43Result = tmp43(tmp2(11103), obj6, skuId);
-    const tmp2Result2 = tmp2(11103);
+    obj6.children = closure_14(tmp4(11148).HeadlessSlayerStorefrontPurchaseRunner, obj9);
+    tmp43Result = tmp43(tmp2(11139), obj6, skuId);
+    const tmp2Result2 = tmp2(11139);
   }
   const items11 = [skuId, memo1, trackPDPClick];
   if (null == stateFromStores) {
     return null;
   } else {
-    let result = tmp4(7478).isSlayerSkuAvailableOnThisPlatform(stateFromStores);
+    let result = tmp4(7510).isSlayerSkuAvailableOnThisPlatform(stateFromStores);
     const intl4 = tmp4(1119).intl;
     const stringResult = intl4.string(tmp4(1119).t.boqtTA);
-    const tmp4Result7 = tmp4(7478);
-    let result1 = tmp4(4431).isSocialLayerStorefrontGiftingSupported();
+    const tmp4Result7 = tmp4(7510);
+    let result1 = tmp4(4463).isSocialLayerStorefrontGiftingSupported();
     if (null != tmp25) {
       const obj10 = { mediaItem: tmp25, landscape: isScreenLandscape };
       let tmp49 = closure_14(closure_19, obj10);
@@ -1611,12 +1611,12 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
       tmp49 = null;
       if (null != memo) {
         const obj11 = { sku: stateFromStores };
-        tmp49 = closure_14(tmp2(9104), obj11);
+        tmp49 = closure_14(tmp2(9136), obj11);
       }
     }
     let tmp53 = null;
     if (stateFromStores.exclusive) {
-      const obj12 = { style: tmp.exclusiveBadgeContainer, children: closure_14(tmp4(11116).ExclusiveBadge, {}) };
+      const obj12 = { style: tmp.exclusiveBadgeContainer, children: closure_14(tmp4(11152).ExclusiveBadge, {}) };
       tmp53 = closure_14(memo1, obj12);
     }
     let tmp56 = null;
@@ -1648,8 +1648,8 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     if (!result) {
       const obj18 = { variant: "text-xs/normal", color: "text-muted", style: tmp.availabilityCopy, includeFontPadding: true, children: null };
       const intl = tmp4(1119).intl;
-      obj18.children = intl.string(tmp2(3552).gndWN7);
-      tmp65Result = tmp65(tmp4(4754).Text, obj18);
+      obj18.children = intl.string(tmp2(3584).gndWN7);
+      tmp65Result = tmp65(tmp4(4786).Text, obj18);
     }
     items13[1] = tmp65Result;
     const obj19 = { style: tmp.footerButtonRow, children: null };
@@ -1661,14 +1661,14 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     }
     obj21.disabled = tmp68;
     obj21.onPress = callback3;
-    obj20.children = closure_14(tmp4(5188).Button, obj21);
+    obj20.children = closure_14(tmp4(5220).Button, obj21);
     const items14 = [closure_14(memo1, obj20), ];
     if (result1) {
-      const obj22 = { icon: tmp2(8346), variant: "primary", size: "lg", disabled: tmp28, accessibilityLabel: null, onPress: null };
+      const obj22 = { icon: tmp2(8378), variant: "primary", size: "lg", disabled: tmp28, accessibilityLabel: null, onPress: null };
       const intl2 = tmp4(1119).intl;
       obj22.accessibilityLabel = intl2.string(tmp4(1119).t.QAZA5f);
       obj22.onPress = tmp48;
-      result1 = tmp65(tmp4(8178).IconButton, obj22);
+      result1 = tmp65(tmp4(8210).IconButton, obj22);
     }
     items14[1] = result1;
     obj19.children = items14;
@@ -1676,16 +1676,16 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     if (result) {
       const obj23 = { style: tmp.legalCopy, children: null };
       const obj24 = { shouldAppendDisclaimer: false === tmp2Result(tmp12).hasAlreadyLinked };
-      const mobileFinePrintMessageForApplication = tmp4(11119).getMobileFinePrintMessageForApplication(getOrFetchApplication, stringResult, obj24);
+      const mobileFinePrintMessageForApplication = tmp4(11155).getMobileFinePrintMessageForApplication(getOrFetchApplication, stringResult, obj24);
       obj23.children = mobileFinePrintMessageForApplication.map((children, index) => closure_1_14(skuId(closeButtonIcon[17]).Text, { variant: "text-xs/normal", color: "text-muted", includeFontPadding: true, children }, index));
       result = tmp65(tmp64, obj23);
-      const tmp4Result9 = tmp4(11119);
+      const tmp4Result9 = tmp4(11155);
     }
     items13[3] = result;
     obj15.children = items13;
     const tmp63Result = closure_15(memo1, obj15);
     const items15 = [tmp.container, ];
-    const tmp4Result8 = tmp4(4431);
+    const tmp4Result8 = tmp4(4463);
     let num3 = 0;
     if (!tmp4Result10.isIOS()) {
       num3 = rect.top;
@@ -1697,7 +1697,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     const items16 = [tmp43Result, , , ];
     const obj27 = { style: tmp.header, children: null };
     const obj28 = {
-      onPress: tmp4(11096).closeSocialLayerStorefrontProductDetailsModal,
+      onPress: tmp4(11132).closeSocialLayerStorefrontProductDetailsModal,
       backImage() {
           return state(XSmallIcon.XSmallIcon, { size: "md", style: closeButtonIcon.closeButtonIcon });
         },
@@ -1706,14 +1706,14 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     };
     const intl3 = tmp4(1119).intl;
     obj28.accessibilityLabel = intl3.string(tmp4(1119).t.cpT0Cq);
-    const items17 = [closure_14(tmp4(5848).HeaderBackButton, obj28), ];
+    const items17 = [closure_14(tmp4(5880).HeaderBackButton, obj28), ];
     const obj29 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.headerTitle, children: null };
     let name;
     if (getOrFetchApplication != null) {
       name = getOrFetchApplication.name;
     }
     obj29.children = name;
-    items17[1] = closure_14(tmp4(4754).Heading, obj29);
+    items17[1] = closure_14(tmp4(4786).Heading, obj29);
     obj27.children = items17;
     items16[1] = closure_15(memo1, obj27);
     const obj30 = { style: tmp.scrollContainer, children: null };
@@ -1722,7 +1722,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
       const obj31 = { style: stateFromStores2.absoluteFill, colors: null, pointerEvents: "none" };
       const items18 = [closure_16, closure_17];
       obj31.colors = items18;
-      exclusive = tmp65(tmp2(5198), obj31);
+      exclusive = tmp65(tmp2(5230), obj31);
     }
     const items19 = [exclusive, ];
     if (isScreenLandscape) {

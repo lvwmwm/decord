@@ -1,9 +1,9 @@
-// Module ID: 4468
-// Function ID: 4469
+// Module ID: 4500
+// Function ID: 4501
 // Name: useFocus
 // Dependencies: [32, 19, 558, 568, 2]
 
-// Module 4468 (useFocus)
+// Module 4500 (useFocus)
 import c from "c" /* 568 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

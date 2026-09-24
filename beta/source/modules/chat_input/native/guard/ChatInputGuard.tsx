@@ -1,26 +1,26 @@
-// Module ID: 12597
-// Function ID: 12598
+// Module ID: 12633
+// Function ID: 12634
 // Name: ChatInputGuard
-// Dependencies: [19, 17, 9650, 21, 4758, 580, 674, 558, 568, 8122, 12408, 12407, 5343, 1368, 12414, 8178, 11240, 11235, 4754, 5822, 5188, 5652, 9182, 2]
+// Dependencies: [19, 17, 9682, 21, 4790, 580, 674, 558, 568, 8154, 12444, 12443, 5375, 1368, 12450, 8210, 11276, 11271, 4786, 5854, 5220, 5684, 9214, 2]
 
-// Module 12597 (ChatInputGuard)
+// Module 12633 (ChatInputGuard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import Radius from "Radius" /* 674 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import ButtonGroup from "ButtonGroup" /* 5652 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8122 */;
-import getChatInputPositionStyleDefault from "getChatInputPositionStyle" /* 12407 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import ButtonGroup from "ButtonGroup" /* 5684 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8154 */;
+import getChatInputPositionStyleDefault from "getChatInputPositionStyle" /* 12443 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-let closure_6 = fn(9650).updateChatInputContainerHeight;
+let closure_6 = fn(9682).updateChatInputContainerHeight;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles((arg0) => {
   const obj = { container: { paddingHorizontal: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_8 }, content: null, underlay: null, wrapper: null, floating: null, text: null, subtext: null, spacing: null };
   let lg;
@@ -57,7 +57,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenIndex) => {
   ({ channelId, onJumpToPresent, children } = screenIndex);
   const tmp5 = useIsUsingClientThemeDefault();
   const obj = screenIndex(568);
-  const chatInputFloatingOverlayStyle = screenIndex(12408).useChatInputFloatingOverlayStyle();
+  const chatInputFloatingOverlayStyle = screenIndex(12444).useChatInputFloatingOverlayStyle();
   const tmp7 = closure_9(tmp5);
   if (cResult[0] !== screenIndex) {
     const fn = function n(nativeEvent) {
@@ -70,7 +70,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenIndex) => {
     tmp8 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp10 = tmp4(12407)({ isCreatingThread: false });
+    const tmp10 = tmp4(12443)({ isCreatingThread: false });
     cResult[2] = tmp10;
     let tmp9 = tmp10;
   } else {
@@ -85,7 +85,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenIndex) => {
     tmp11 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp14 = closure_7(tmp(12408).ChatInputScrimGradient, {});
+    const tmp14 = closure_7(tmp(12444).ChatInputScrimGradient, {});
     cResult[5] = tmp14;
     let tmp12 = tmp14;
   } else {
@@ -98,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenIndex) => {
     if (cResult[9] !== tmp5) {
       let tmp20 = null;
       if (tmp5) {
-        tmp20 = closure_7(tmp4(5343), { absolute: true, wide: true, tall: true, mix: true });
+        tmp20 = closure_7(tmp4(5375), { absolute: true, wide: true, tall: true, mix: true });
       }
       cResult[9] = tmp5;
       cResult[10] = tmp20;
@@ -159,7 +159,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenIndex) => {
           tmp28 = null;
           if (null != channelId) {
             const obj5 = { channelId, screenIndex, onJumpToPresent };
-            tmp28 = closure_7(tmp4(12414), obj5);
+            tmp28 = closure_7(tmp4(12450), obj5);
           }
         }
         cResult[15] = channelId;
@@ -194,7 +194,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenIndex) => {
   const channelId = screenIndex.channelId;
   ({ onJumpToPresent, children } = screenIndex);
   const tmp3 = useIsUsingClientThemeDefault();
-  const chatInputFloatingOverlayStyle = screenIndex(12408).useChatInputFloatingOverlayStyle();
+  const chatInputFloatingOverlayStyle = screenIndex(12444).useChatInputFloatingOverlayStyle();
   const tmp6 = closure_9(tmp3);
   const items = [screenIndex];
   const obj2 = { style: null, onLayout: null, collapsable: false, children: null };
@@ -204,7 +204,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenIndex) => {
   const items1 = [getChatInputPositionStyleDefault({ isCreatingThread: false }), chatInputFloatingOverlayStyle];
   obj2.style = items1;
   obj2.onLayout = callback;
-  const items2 = [closure_7(screenIndex(12408).ChatInputScrimGradient, {}), ];
+  const items2 = [closure_7(screenIndex(12444).ChatInputScrimGradient, {}), ];
   const obj3 = { style: tmp6.container, children: null };
   let tmp10Result = null;
   if (!tmp3) {
@@ -215,18 +215,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenIndex) => {
   const obj5 = { style: tmp6.content, children: null };
   let tmp10Result3 = null;
   if (tmp3) {
-    tmp10Result3 = tmp10(tmp(5343), { absolute: true, wide: true, tall: true, mix: true });
+    tmp10Result3 = tmp10(tmp(5375), { absolute: true, wide: true, tall: true, mix: true });
   }
   const items4 = [tmp10Result3, children];
   obj5.children = items4;
   items3[1] = closure_8(closure_5, obj5);
-  const obj = screenIndex(12408);
+  const obj = screenIndex(12444);
   let tmp10Result4 = null;
   if (tmp4Result.isIOS()) {
     tmp10Result4 = null;
     if (null != channelId) {
       const obj6 = { channelId, screenIndex, onJumpToPresent };
-      tmp10Result4 = tmp10(tmp(12414), obj6);
+      tmp10Result4 = tmp10(tmp(12450), obj6);
     }
   }
   items3[2] = tmp10Result4;
@@ -251,7 +251,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
               if (cResult[5] === tmp5.text) {
                 if (cResult[7] !== message) {
                   const obj2 = { variant: "text-sm/semibold", children: message };
-                  const tmp38 = React5(tmp(4754).Text, obj2);
+                  const tmp38 = React5(tmp(4786).Text, obj2);
                   cResult[7] = message;
                   cResult[8] = tmp38;
                   let tmp36 = tmp38;
@@ -282,7 +282,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
                   }
                 }
                 const obj4 = { arrow: false, accessibilityRole: "button", onPress: actionOnPress, icon, start: true, end: true, trailing: cResult[6], label: tmp36, subLabel: subtext };
-                const tmp41 = React5(tmp(5822).TableRow, obj4);
+                const tmp41 = React5(tmp(5854).TableRow, obj4);
                 cResult[9] = actionOnPress;
                 cResult[10] = icon;
                 cResult[11] = subtext;
@@ -304,7 +304,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
         ({ text: arr4[0], spacing: arr4[1] } = tmp5);
         obj5.style = items;
         obj5.deadline = text;
-        tmp33Result2 = React5(tmp4(11235), obj5);
+        tmp33Result2 = React5(tmp4(11271), obj5);
       }
       cResult[0] = actionIcon;
       cResult[1] = actionLabel;
@@ -318,11 +318,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
     let tmp33Result = actionIcon;
     if (actionIcon == null) {
       const obj7 = { color: tmp4(580).colors.WHITE };
-      tmp33Result = tmp33(tmp(11240).ArrowSmallRightIcon, obj7);
+      tmp33Result = tmp33(tmp(11276).ArrowSmallRightIcon, obj7);
     }
     obj6.icon = tmp33Result;
     obj6.onPress = actionOnPress;
-    tmp33Result2 = tmp33(tmp(8178).IconButton, obj6);
+    tmp33Result2 = tmp33(tmp(8210).IconButton, obj6);
   } else {
     ({ message: message2, subtext: subtext2, buttonPrimaryText, buttonPrimaryOnPress, buttonPrimaryDisabled, buttonPrimaryLoading, buttonPrimaryVariant, buttonSecondaryText, buttonSecondaryOnPress, buttonSecondaryDisabled, buttonSecondaryLoading, countdown } = type);
     if (cResult[18] === buttonPrimaryDisabled) {
@@ -384,7 +384,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
                           ({ text: arr2[0], spacing: arr2[1] } = tmp5);
                           obj9.style = items2;
                           obj9.deadline = countdown;
-                          tmp23 = React5(tmp4(11235), obj9);
+                          tmp23 = React5(tmp4(11271), obj9);
                         }
                         cResult[36] = countdown;
                         cResult[37] = tmp5.spacing;
@@ -402,13 +402,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
                     const obj10 = { children: null };
                     const items3 = [tmp6, ];
                     const obj11 = { disabled: buttonSecondaryDisabled, loading: buttonSecondaryLoading, text: buttonSecondaryText, onPress: buttonSecondaryOnPress, variant: "secondary", size: "sm" };
-                    items3[1] = tmp17(tmp(5188).Button, obj11);
+                    items3[1] = tmp17(tmp(5220).Button, obj11);
                     obj10.children = items3;
-                    tmp19 = closure_1_8(tmp(9182).TwinButtons, obj10);
+                    tmp19 = closure_1_8(tmp(9214).TwinButtons, obj10);
                   }
                 }
                 const obj12 = { children: tmp19 };
-                const tmp17Result = React5(tmp(5652).ButtonGroup, obj12);
+                const tmp17Result = React5(tmp(5684).ButtonGroup, obj12);
                 cResult[30] = tmp6;
                 cResult[31] = buttonSecondaryDisabled;
                 cResult[32] = buttonSecondaryLoading;
@@ -424,7 +424,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
                   tmp14 = null;
                   if (subtext2.length > 0) {
                     const obj13 = { style: tmp5.subtext, variant: "text-xs/medium", color: "text-muted", children: subtext2 };
-                    tmp14 = React5(tmp(4754).Text, obj13);
+                    tmp14 = React5(tmp(4786).Text, obj13);
                   }
                 }
               }
@@ -434,7 +434,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
               tmp12 = tmp14;
             }
             const obj14 = { style: tmp5.text, variant: "text-sm/semibold", children: message2 };
-            const tmp11 = React5(tmp(4754).Text, obj14);
+            const tmp11 = React5(tmp(4786).Text, obj14);
             cResult[24] = message2;
             cResult[25] = tmp5.text;
             cResult[26] = tmp11;
@@ -444,7 +444,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
       }
     }
     const obj15 = { disabled: buttonPrimaryDisabled, loading: buttonPrimaryLoading, text: buttonPrimaryText, onPress: buttonPrimaryOnPress, size: "sm", variant: buttonPrimaryVariant };
-    const tmp8 = React5(tmp(5188).Button, obj15);
+    const tmp8 = React5(tmp(5220).Button, obj15);
     cResult[18] = buttonPrimaryDisabled;
     cResult[19] = buttonPrimaryLoading;
     cResult[20] = buttonPrimaryOnPress;
@@ -465,15 +465,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
         const obj4 = { accessibilityLabel: actionLabel, icon: null, size: "sm", onPress: null };
         if (actionIcon == null) {
           const obj5 = { color: tmp(580).colors.WHITE };
-          actionIcon = tmp7(tmp9(11240).ArrowSmallRightIcon, obj5);
+          actionIcon = tmp7(tmp9(11276).ArrowSmallRightIcon, obj5);
         }
         obj4.icon = actionIcon;
         obj4.onPress = actionOnPress;
-        let tmp7Result = tmp7(tmp9(8178).IconButton, obj4);
+        let tmp7Result = tmp7(tmp9(8210).IconButton, obj4);
       }
       obj3.trailing = tmp7Result;
       const obj6 = { variant: "text-sm/semibold", children: message };
-      obj3.label = tmp7(tmp9(4754).Text, obj6);
+      obj3.label = tmp7(tmp9(4786).Text, obj6);
       obj3.subLabel = subtext;
       obj2.children = tmp7(tmp10, obj3);
       return tmp7(tmp8, obj2);
@@ -485,7 +485,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
       ({ text: arr3[0], spacing: arr3[1] } = tmp3);
       obj7.style = items;
       obj7.deadline = countdown;
-      tmp7Result = tmp7(tmp(11235), obj7);
+      tmp7Result = tmp7(tmp(11271), obj7);
     }
     tmp8 = hasOwnProperty;
   } else {
@@ -503,7 +503,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
         tmp13Result = null;
         if (subtext2.length > 0) {
           const obj = { style: tmp3.subtext, variant: "text-xs/medium", color: "text-muted", children: subtext2 };
-          tmp13Result = tmp13(tmp14(4754).Text, obj);
+          tmp13Result = tmp13(tmp14(4786).Text, obj);
         }
       }
     }
@@ -515,9 +515,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
         const obj11 = { children: null };
         const items2 = [tmp15, ];
         const obj12 = { disabled: buttonSecondaryDisabled, loading: buttonSecondaryLoading, text: buttonSecondaryText, onPress: buttonSecondaryOnPress, variant: "secondary", size: "sm" };
-        items2[1] = tmp13(tmp14(5188).Button, obj12);
+        items2[1] = tmp13(tmp14(5220).Button, obj12);
         obj11.children = items2;
-        tmp16Result = tmp16(tmp14(9182).TwinButtons, obj11);
+        tmp16Result = tmp16(tmp14(9214).TwinButtons, obj11);
       }
     }
     const obj13 = { children: tmp16Result };
@@ -529,7 +529,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
       ({ text: arr2[0], spacing: arr2[1] } = tmp3);
       obj14.style = items3;
       obj14.deadline = countdown2;
-      tmp13Result2 = tmp13(tmp(11235), obj14);
+      tmp13Result2 = tmp13(tmp(11271), obj14);
     }
     items1[3] = tmp13Result2;
     obj9.children = items1;

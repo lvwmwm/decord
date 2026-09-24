@@ -1,23 +1,23 @@
-// Module ID: 15182
-// Function ID: 15183
+// Module ID: 15192
+// Function ID: 15193
 // Name: FamilyCenterAcceptedLinks
-// Dependencies: [19, 17, 7785, 21, 4758, 580, 558, 568, 8922, 8921, 12050, 1119, 2486, 4754, 15183, 15185, 5341, 4961, 15188, 1984, 1181, 15190, 2]
+// Dependencies: [19, 17, 7817, 21, 4790, 580, 558, 568, 8954, 8953, 12086, 1119, 2486, 4786, 15193, 15195, 5373, 4993, 15198, 1984, 1181, 15200, 2]
 
-// Module 15182 (FamilyCenterAcceptedLinks)
+// Module 15192 (FamilyCenterAcceptedLinks)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
 import _modDef2486 from "module_2486" /* 2486 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import useUserLinks from "useUserLinks" /* 8921 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8922 */;
-import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 15185 */;
-import _modDef15190 from "module_15190" /* 15190 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import useUserLinks from "useUserLinks" /* 8953 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8954 */;
+import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 15195 */;
+import _modDef15200 from "module_15200" /* 15200 */;
 import noop from "module_19" /* 19 */;
 
 const util = intl(1119);
-const Text_Text = intl(4754);
-const useAgeSpecificText2 = intl(12050);
+const Text_Text = intl(4786);
+const useAgeSpecificText2 = intl(12086);
 require = fn;
 function FamilyCenterAcceptedLinkRow(otherUser) {
   const str = otherUser.otherUser;
@@ -33,27 +33,27 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
     const obj3 = { name: str1 };
     obj.accessibilityLabel = intl.formatToPlainString(_modDef2486.T7DUoU, obj3);
     obj.onPress = function onPress() {
-      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(15188, dependencyMap.paths), { otherUser: str });
+      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(15198, dependencyMap.paths), { otherUser: str });
     };
     obj.style = tmp.actionButton;
-    const obj4 = { size: str(1181).Icon.Sizes.SMALL, disableColor: true, source: _modDef15190 };
+    const obj4 = { size: str(1181).Icon.Sizes.SMALL, disableColor: true, source: _modDef15200 };
     obj.children = closure_6(str(1181).Icon, obj4);
-    obj2.actions = closure_6(str(5341).PressableOpacity, obj);
+    obj2.actions = closure_6(str(5373).PressableOpacity, obj);
     tmp4Result = tmp4(FamilyCenterLinkRowDefault, obj2);
   }
   return tmp4Result;
 }
 const View = fn(17).View;
-const FamilyCenterConstants = fn(7785);
+const FamilyCenterConstants = fn(7817);
 ({ MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: closure_4, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: hasOwnProperty } = FamilyCenterConstants);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let obj2 = { container: { marginTop: 24 }, content: { display: "flex", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.md }, empty: { padding: 20, alignSelf: "center" }, header: { marginBottom: 10 } };
 let closure_8 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
 let obj3 = { display: "flex", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.md };
-createStyles = fn(4758);
+createStyles = fn(4790);
 let obj6 = { actionButton: null };
 let size = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
 obj6.actionButton = size;
@@ -118,9 +118,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         intl = util.intl;
         stringResult = intl.string(tmp4(2486).C4ScLD);
         obj6.text = stringResult;
-        obj5.children = timestampProducer(tmp4(15183), obj6);
+        obj5.children = timestampProducer(tmp4(15193), obj6);
         let mapped = timestampProducer(View, obj5);
-        const tmp4Result = tmp4(15183);
+        const tmp4Result = tmp4(15193);
       } else {
         mapped = activeLinkUsers.map((otherUser) => closure_1_6(FamilyCenterAcceptedLinkRow, { otherUser }, "accepted-" + otherUser.id));
       }
@@ -167,9 +167,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj7 = { text: null };
     const intl3 = tmp5(1119).intl;
     obj7.text = intl3.string(tmp2(2486).C4ScLD);
-    obj6.children = tmp10(tmp2(15183), obj7);
+    obj6.children = tmp10(tmp2(15193), obj7);
     let mapped = tmp10(tmp9, obj6);
-    const tmp2Result = tmp2(15183);
+    const tmp2Result = tmp2(15193);
   } else {
     mapped = activeLinkUsers.map((otherUser) => closure_1_6(FamilyCenterAcceptedLinkRow, { otherUser }, "accepted-" + otherUser.id));
   }

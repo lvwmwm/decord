@@ -1,9 +1,9 @@
-// Module ID: 9103
-// Function ID: 9104
+// Module ID: 9135
+// Function ID: 9136
 // Name: NameplateCardPreview
-// Dependencies: [17, 21, 4758, 580, 558, 568, 38, 1977, 1974, 9096, 1181, 2]
+// Dependencies: [17, 21, 4790, 580, 558, 568, 38, 1977, 1974, 9128, 1181, 2]
 
-// Module 9103 (NameplateCardPreview)
+// Module 9135 (NameplateCardPreview)
 import _mod17 from "module_17" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import c from "c" /* 568 */;
@@ -11,9 +11,9 @@ import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import utils from "utils" /* 1974 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
-import NameplateDummyUserPreview from "NameplateDummyUserPreview" /* 9096 */;
+import NameplateDummyUserPreview from "NameplateDummyUserPreview" /* 9128 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj2 = { width: 34, avatarSize: tmp(1181).AvatarSizes.XSMALL, hideAvatar: true, style: null };
     const items = [{ opacity: 0.6 }];
     obj2.style = items;
-    const tmp12 = React4(tmp(9096).NameplateDummyUserPreview, obj2);
+    const tmp12 = React4(tmp(9128).NameplateDummyUserPreview, obj2);
     cResult[2] = tmp12;
     let tmp10 = tmp12;
   } else {
@@ -58,7 +58,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { width: 44, avatarSize: tmp(1181).AvatarSizes.XSMALL, hideAvatar: true, style: null };
     const items1 = [{ opacity: 0.6 }];
     obj3.style = items1;
-    const tmp15 = React4(tmp(9096).NameplateDummyUserPreview, obj3);
+    const tmp15 = React4(tmp(9128).NameplateDummyUserPreview, obj3);
     cResult[3] = tmp15;
     let tmp13 = tmp15;
   } else {
@@ -78,7 +78,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj4 = { width: 44, avatarSize: tmp(1181).AvatarSizes.XSMALL, hideAvatar: true, style: null };
           const items2 = [{ opacity: 0.6 }];
           obj4.style = items2;
-          const tmp24 = React4(tmp(9096).NameplateDummyUserPreview, obj4);
+          const tmp24 = React4(tmp(9128).NameplateDummyUserPreview, obj4);
           cResult[11] = tmp24;
           let tmp22 = tmp24;
         } else {
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj5 = { width: 34, avatarSize: tmp(1181).AvatarSizes.XSMALL, hideAvatar: true, style: null };
           const items3 = [{ opacity: 0.6 }];
           obj5.style = items3;
-          const tmp27 = React4(tmp(9096).NameplateDummyUserPreview, obj5);
+          const tmp27 = React4(tmp(9128).NameplateDummyUserPreview, obj5);
           cResult[12] = tmp27;
           let tmp25 = tmp27;
         } else {

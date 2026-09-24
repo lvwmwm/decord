@@ -1,9 +1,9 @@
-// Module ID: 5204
-// Function ID: 5205
+// Module ID: 5236
+// Function ID: 5237
 // Name: hooks/useMountEffect
 // Dependencies: [19, 558, 568, 2]
 
-// Module 5204 (hooks/useMountEffect)
+// Module 5236 (hooks/useMountEffect)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

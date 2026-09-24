@@ -1,32 +1,32 @@
-// Module ID: 7369
-// Function ID: 7370
+// Module ID: 7401
+// Function ID: 7402
 // Name: GuildOnboardingPrompts
-// Dependencies: [32, 5, 19, 17, 4750, 5791, 2045, 2067, 2099, 7347, 7348, 7344, 1078, 21, 1105, 4758, 5897, 580, 1479, 4608, 558, 568, 5802, 5198, 1098, 504, 1616, 1488, 4497, 7352, 7353, 1401, 1883, 1245, 4938, 4759, 5839, 7370, 1374, 7371, 5749, 1119, 4754, 2]
+// Dependencies: [32, 5, 19, 17, 4782, 5823, 2045, 2067, 2099, 7379, 7380, 7376, 1078, 21, 1105, 4790, 5929, 580, 1479, 4640, 558, 568, 5834, 5230, 1098, 504, 1616, 1488, 4529, 7384, 7385, 1401, 1883, 1245, 4970, 4791, 5871, 7402, 1374, 7403, 5781, 1119, 4786, 2]
 
-// Module 7369 (GuildOnboardingPrompts)
+// Module 7401 (GuildOnboardingPrompts)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ConstantsIOS from "ConstantsIOS" /* 1098 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import ColorUtils from "ColorUtils" /* 4608 */;
-import timing from "timing" /* 4759 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7352 */;
-import GuildOnboardingPrompt from "GuildOnboardingPrompt" /* 7370 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import ColorUtils from "ColorUtils" /* 4640 */;
+import timing from "timing" /* 4791 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7384 */;
+import GuildOnboardingPrompt from "GuildOnboardingPrompt" /* 7402 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5791 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5823 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7347 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7379 */;
 
 require = fn;
 function getBackgroundGradientColor() {
@@ -51,15 +51,15 @@ let closure_24 = async function _getBackgroundGradientColor() {
 };
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const OnboardingPromptType = fn(7348).OnboardingPromptType;
-const constants = fn(7344).GuildOnboardingModalStates;
+const OnboardingPromptType = fn(7380).OnboardingPromptType;
+const constants = fn(7376).GuildOnboardingModalStates;
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_16, MarketingURLs: closure_17, Routes: closure_18 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_19, Fragment: closure_20, jsxs: closure_21 } = jsxProd);
-const createStyles = fn(4758);
-let obj2 = { flex: { flex: 1 }, container: { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5897).NAV_BAR_HEIGHT, marginBottom: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, subtitle: null, onboardingTitle: null, onboardingPolicy: null, onboardingPolicyText: null, landingOverlay: null, artWrapper: null, landingBody: null, backgroundImage: null, backgroundColorGradient: null, darkColorGradient: null };
-let obj3 = { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5897).NAV_BAR_HEIGHT, marginBottom: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+const createStyles = fn(4790);
+let obj2 = { flex: { flex: 1 }, container: { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5929).NAV_BAR_HEIGHT, marginBottom: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, subtitle: null, onboardingTitle: null, onboardingPolicy: null, onboardingPolicyText: null, landingOverlay: null, artWrapper: null, landingBody: null, backgroundImage: null, backgroundColorGradient: null, darkColorGradient: null };
+let obj3 = { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5929).NAV_BAR_HEIGHT, marginBottom: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.subtitle = { marginBottom: nativeDefault.space.PX_16, opacity: 0.8 };
 obj2.onboardingTitle = { textAlign: "center" };
 let obj4 = { marginBottom: nativeDefault.space.PX_16, opacity: 0.8 };
@@ -99,11 +99,11 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp7 = cResult[6];
     }
     if (cResult[7] !== color) {
-      const hexWithOpacityResult = tmp(4608).hexWithOpacity(color, 0.16);
+      const hexWithOpacityResult = tmp(4640).hexWithOpacity(color, 0.16);
       cResult[7] = color;
       cResult[8] = hexWithOpacityResult;
       let tmp9 = hexWithOpacityResult;
-      const tmpResult = tmp(4608);
+      const tmpResult = tmp(4640);
     } else {
       tmp9 = cResult[8];
     }
@@ -3860,7 +3860,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const obj5 = { translateY: null };
     const withTimingResult = timing.withTiming(num, obj3);
     const obj6 = { duration: 300, easing: null };
-    const Easing2 = tmp(4497).Easing;
+    const Easing2 = tmp(4529).Easing;
     obj6.easing = Easing2.out(ReanimatedRexport.Easing.ease);
     obj5.translateY = timing.withTiming(num2, obj6);
     const items = [obj5];
@@ -3895,7 +3895,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const withDelayResult = obj2.withDelay(200, timing.withTiming(num, obj4));
     const tmpResult = ReanimatedRexport;
     const obj7 = { duration: 300, easing: null };
-    const Easing2 = tmp(4497).Easing;
+    const Easing2 = tmp(4529).Easing;
     obj7.easing = Easing2.out(ReanimatedRexport.Easing.ease);
     obj6.translateY = tmpResult.withDelay(200, timing.withTiming(num2, obj7));
     const items = [obj6];
@@ -3965,7 +3965,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const withDelayResult = obj2.withDelay(600, timing.withTiming(num, obj4));
     const tmpResult = ReanimatedRexport;
     const obj7 = { duration: 300, easing: null };
-    const Easing2 = tmp(4497).Easing;
+    const Easing2 = tmp(4529).Easing;
     obj7.easing = Easing2.out(ReanimatedRexport.Easing.ease);
     obj6.translateY = tmpResult.withDelay(600, timing.withTiming(num2, obj7));
     const items = [obj6];
@@ -4082,11 +4082,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             if (currentPromptIdx < prompts.length - 1) {
               const obj4 = {};
               const tmp2Result = tmp2(1245);
-              const merged1 = Object.assign(tmp5(4938).collectGuildAnalyticsMetadata(tmp6));
+              const merged1 = Object.assign(tmp5(4970).collectGuildAnalyticsMetadata(tmp6));
               obj4.step = tmp9 + 1;
               obj4.required = arr[tmp9 + 1].required;
               tmp2Result.track(tmp4.GUILD_ONBOARDING_STEP_VIEWED, obj4);
-              const tmp5Result = tmp5(4938);
+              const tmp5Result = tmp5(4970);
             }
             if (currentPromptIdx + 1 < prompts.length) {
               const obj5 = { currentPrompt: tmp9 + 1 };
@@ -4095,7 +4095,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               if (tmp5Result2.showRulesInOnboarding(stateFromStores2, stateFromStores)) {
                 navigation.push(stateFromStoresArray.RULES);
               }
-              tmp5Result2 = tmp5(7353);
+              tmp5Result2 = tmp5(7385);
             }
             tmp6 = guildId;
           }

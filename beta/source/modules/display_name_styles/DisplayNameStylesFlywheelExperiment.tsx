@@ -1,9 +1,9 @@
-// Module ID: 9975
-// Function ID: 9976
+// Module ID: 10007
+// Function ID: 10008
 // Name: DisplayNameStylesFlywheelExperiment
 // Dependencies: [1438, 558, 568, 2]
 
-// Module 9975 (DisplayNameStylesFlywheelExperiment)
+// Module 10007 (DisplayNameStylesFlywheelExperiment)
 import c from "c" /* 568 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1438 */;
 import "ReactCompilerGating";

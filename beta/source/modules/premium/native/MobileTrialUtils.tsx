@@ -1,14 +1,14 @@
-// Module ID: 7693
-// Function ID: 7694
+// Module ID: 7725
+// Function ID: 7726
 // Name: MobileTrialUtils
-// Dependencies: [1378, 558, 7694, 4579, 2031, 568, 13610, 4418, 1119, 2]
+// Dependencies: [1378, 558, 7726, 4611, 2031, 568, 13646, 4450, 1119, 2]
 
-// Module 7693 (MobileTrialUtils)
+// Module 7725 (MobileTrialUtils)
 import c from "c" /* 568 */;
 import PremiumConstants from "PremiumConstants" /* 1378 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4579 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7694 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4611 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7726 */;
 import "ReactCompilerGating";
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -91,7 +91,7 @@ export const useNitroTrialCtaOverride = ReactCompilerGating.isReactCompilerEnabl
         return tmp6;
       }
       ({ interval: obj4.intervalType, intervalCount: obj4.intervalCount } = subscriptionTrial);
-      const result = tmp(4418).formatIntervalDuration({ intervalType: null, intervalCount: null });
+      const result = tmp(4450).formatIntervalDuration({ intervalType: null, intervalCount: null });
       const intl = tmp(1119).intl;
       const obj6 = { duration: result };
       const formatToPlainStringResult = intl.formatToPlainString(tmp(1119).t["6xpY54"], obj6);
@@ -100,11 +100,11 @@ export const useNitroTrialCtaOverride = ReactCompilerGating.isReactCompilerEnabl
       cResult[2] = formatToPlainStringResult;
       tmp6 = formatToPlainStringResult;
       const obj5 = { intervalType: null, intervalCount: null };
-      const tmpResult2 = tmp(4418);
+      const tmpResult2 = tmp(4450);
     } else {
       return null;
     }
-    tmpResult = tmp(13610);
+    tmpResult = tmp(13646);
   }
 }) : ((location) => {
   const premiumTrialOffer = usePremiumTrialOffer.usePremiumTrialOffer();
@@ -118,13 +118,13 @@ export const useNitroTrialCtaOverride = ReactCompilerGating.isReactCompilerEnabl
     const obj2 = { location };
     if (tmpResult.isAndroidTwoWeekTrialsTrialCTAEnabled(obj2)) {
       ({ interval: obj3.intervalType, intervalCount: obj3.intervalCount } = subscriptionTrial);
-      const result = tmp(4418).formatIntervalDuration({ intervalType: null, intervalCount: null });
+      const result = tmp(4450).formatIntervalDuration({ intervalType: null, intervalCount: null });
       const intl = tmp(1119).intl;
       const obj5 = { duration: result };
       return intl.formatToPlainString(tmp(1119).t["6xpY54"], obj5);
     } else {
       return null;
     }
-    tmpResult = tmp(13610);
+    tmpResult = tmp(13646);
   }
 });

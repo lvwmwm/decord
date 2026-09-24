@@ -1,12 +1,12 @@
-// Module ID: 5827
-// Function ID: 5828
+// Module ID: 5859
+// Function ID: 5860
 // Name: useIOSPressEffects
-// Dependencies: [19, 558, 568, 1482, 4497, 1368, 5187, 2]
+// Dependencies: [19, 558, 568, 1482, 4529, 1368, 5219, 2]
 
-// Module 5827 (useIOSPressEffects)
+// Module 5859 (useIOSPressEffects)
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import spring from "spring" /* 5187 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import spring from "spring" /* 5219 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -89,10 +89,10 @@ export const useIOSPressEffects = ReactCompilerGating.isReactCompilerEnabled() ?
           const obj5 = { scale: withSpringResult };
           const items1 = [obj5];
           obj4.transform = items1;
-          const tmpResult = tmp(5187);
-          obj4.opacity = tmpResult.withSpring(tmp(4497).interpolate(sharedValue1.get(), [0, 1], [1, 0.5]), obj);
+          const tmpResult = tmp(5219);
+          obj4.opacity = tmpResult.withSpring(tmp(4529).interpolate(sharedValue1.get(), [0, 1], [1, 0.5]), obj);
           let obj6 = obj4;
-          const tmpResult2 = tmp(4497);
+          const tmpResult2 = tmp(4529);
         } else {
           obj6 = { transform: null };
           const obj7 = { scale: withSpringResult };

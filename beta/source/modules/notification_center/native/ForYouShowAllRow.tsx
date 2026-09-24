@@ -1,32 +1,32 @@
-// Module ID: 16788
-// Function ID: 16789
+// Module ID: 16798
+// Function ID: 16799
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 1078, 12846, 21, 4758, 12214, 580, 1368, 558, 568, 1488, 1245, 1181, 5195, 14460, 1119, 4754, 7390, 16784, 5341, 16783, 2]
+// Dependencies: [19, 17, 1078, 12882, 21, 4790, 12250, 580, 1368, 558, 568, 1488, 1245, 1181, 5227, 14498, 1119, 4786, 7422, 16794, 5373, 16793, 2]
 
-// Module 16788 (ForYouShowAllRow)
+// Module 16798 (ForYouShowAllRow)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useFontScale from "useFontScale" /* 5195 */;
-import Pressables from "Pressables" /* 5341 */;
-import _modDef7390 from "module_7390" /* 7390 */;
-import ChannelListLayout from "ChannelListLayout" /* 12214 */;
-import AvatarDuoPile from "AvatarDuoPile" /* 14460 */;
-import ChannelPressableWrapper from "ChannelPressableWrapper" /* 16783 */;
-import ChannelWrapper from "ChannelWrapper" /* 16784 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useFontScale from "useFontScale" /* 5227 */;
+import Pressables from "Pressables" /* 5373 */;
+import _modDef7422 from "module_7422" /* 7422 */;
+import ChannelListLayout from "ChannelListLayout" /* 12250 */;
+import AvatarDuoPile from "AvatarDuoPile" /* 14498 */;
+import ChannelPressableWrapper from "ChannelPressableWrapper" /* 16793 */;
+import ChannelWrapper from "ChannelWrapper" /* 16794 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const AnalyticEvents = fn(1078).AnalyticEvents;
-const Sections = fn(12846).Sections;
+const Sections = fn(12882).Sections;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles((layout) => {
   const layoutStyles = ChannelListLayout.getLayoutStyles(layout);
   const sizeStyle = ChannelListLayout.makeSizeStyle(layoutStyles.icon.wrapper.size);
@@ -59,11 +59,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const messagesTabLayout = ChannelListLayout.useMessagesTabLayout(tmp4);
   const tmp6 = closure_10(messagesTabLayout);
   if (cResult[0] !== messagesTabLayout) {
-    const layoutStyles = tmp(12214).getLayoutStyles(messagesTabLayout);
+    const layoutStyles = tmp(12250).getLayoutStyles(messagesTabLayout);
     cResult[0] = messagesTabLayout;
     cResult[1] = layoutStyles;
     let tmp7 = layoutStyles;
-    const tmpResult6 = tmp(12214);
+    const tmpResult6 = tmp(12250);
   } else {
     tmp7 = cResult[1];
   }
@@ -81,9 +81,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[5] === tmp10) {
       let tmp11 = cResult[6];
     }
-    const tmpResult8 = tmp(12214);
+    const tmpResult8 = tmp(12250);
     const AvatarSizes = tmp(1181).AvatarSizes;
-    const tmp13 = tmp(12214).isLayoutCompact(messagesTabLayout) ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL;
+    const tmp13 = tmp(12250).isLayoutCompact(messagesTabLayout) ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL;
     if (cResult[7] === children) {
       if (cResult[8] === tmp13) {
         let tmp14 = cResult[9];
@@ -141,18 +141,18 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                   }
                                 }
                                 const obj4 = { layout: messagesTabLayout, panelVariant: tmp4 };
-                                const result = tmp(16783).renderChannelPressableWrapper(tmp40, obj4);
+                                const result = tmp(16793).renderChannelPressableWrapper(tmp40, obj4);
                                 cResult[39] = messagesTabLayout;
                                 cResult[40] = tmp4;
                                 cResult[41] = tmp40;
                                 cResult[42] = result;
                                 tmp43 = result;
-                                const tmpResult9 = tmp(16783);
+                                const tmpResult9 = tmp(16793);
                               }
                             }
                           }
                           const obj5 = { accessibilityRole: "button", underlayColor: tmp6.rowActive.backgroundColor, onPress, style: tmp11, children: tmp38 };
-                          const tmp42 = React5(tmp(5341).PressableHighlight, obj5);
+                          const tmp42 = React5(tmp(5373).PressableHighlight, obj5);
                           cResult[34] = onPress;
                           cResult[35] = tmp6.rowActive.backgroundColor;
                           cResult[36] = tmp38;
@@ -163,14 +163,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       }
                     }
                     const obj6 = { layout: messagesTabLayout, fontScale, panelVariant: tmp4 };
-                    const renderChannelWrapperResult = tmp(16784).renderChannelWrapper(tmp34, obj6);
+                    const renderChannelWrapperResult = tmp(16794).renderChannelWrapper(tmp34, obj6);
                     cResult[29] = fontScale;
                     cResult[30] = messagesTabLayout;
                     cResult[31] = tmp4;
                     cResult[32] = tmp34;
                     cResult[33] = renderChannelWrapperResult;
                     tmp38 = renderChannelWrapperResult;
-                    const tmpResult10 = tmp(16784);
+                    const tmpResult10 = tmp(16794);
                   }
                 }
                 const obj7 = { children: null };
@@ -183,7 +183,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 cResult[28] = tmp37;
                 tmp34 = tmp37;
               }
-              const obj8 = { style: tmp6.icon, color: tmp6.iconColor.color, source: _modDef7390, size: tmp(1181).IconSizes.CUSTOM };
+              const obj8 = { style: tmp6.icon, color: tmp6.iconColor.color, source: _modDef7422, size: tmp(1181).IconSizes.CUSTOM };
               const tmp33 = React5(tmp(1181).Icon, obj8);
               cResult[22] = tmp6.icon;
               cResult[23] = tmp6.iconColor.color;
@@ -199,7 +199,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj10 = { lineClamp: 1, variant: tmp7.channelName.text.variant, color: "text-brand", style: tmp6.nameText, children: tmp21 };
-        const tmp25 = React5(tmp(4754).Text, obj10);
+        const tmp25 = React5(tmp(4786).Text, obj10);
         cResult[15] = tmp7.channelName.text.variant;
         cResult[16] = tmp6.nameText;
         cResult[17] = tmp21;
@@ -214,12 +214,12 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp17 = tmp20;
     }
     const obj12 = { size: tmp13, "aria-label": "", children };
-    const tmp16 = React5(tmp(14460).AvatarDuoPile, obj12);
+    const tmp16 = React5(tmp(14498).AvatarDuoPile, obj12);
     cResult[7] = children;
     cResult[8] = tmp13;
     cResult[9] = tmp16;
     tmp14 = tmp16;
-    const isLayoutCompactResult = tmp(12214).isLayoutCompact(messagesTabLayout);
+    const isLayoutCompactResult = tmp(12250).isLayoutCompact(messagesTabLayout);
   }
   const items1 = [tmp6.pressable, tmp10];
   cResult[4] = tmp6.pressable;
@@ -256,7 +256,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj11.children = React5(Text_Text.Text, obj12);
   items1[1] = React5(View, obj11);
   const obj10 = { size: ChannelListLayout.isLayoutCompact(layout) ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL, "aria-label": "", children };
-  items1[2] = React5(native.Icon, { style: tmp4.icon, color: tmp4.iconColor.color, source: _modDef7390, size: native.IconSizes.CUSTOM });
+  items1[2] = React5(native.Icon, { style: tmp4.icon, color: tmp4.iconColor.color, source: _modDef7422, size: native.IconSizes.CUSTOM });
   obj9.children = items1;
   obj5.children = obj6.renderChannelWrapper(tmp8(tmp9, obj9), { layout, fontScale, panelVariant });
   return obj4.renderChannelPressableWrapper(React5(Pressables.PressableHighlight, obj5), { layout, panelVariant });
@@ -302,7 +302,7 @@ export const ForYouSuggestedFriendShowAllRow = ReactCompilerGating.isReactCompil
       class C {
         constructor(arg0) {
           tmp = jsx;
-          obj = { user: suggestedFriends.user, guildId: "Array", size: -1 };
+          obj = { user: suggestedFriends.user, guildId: "Array", size: true };
           obj2 = closure_0(closure_2[6]);
           isLayoutCompactResult = obj2.isLayoutCompact(closure_2);
           AvatarSizes = closure_0(closure_2[13]).AvatarSizes;
@@ -317,7 +317,7 @@ export const ForYouSuggestedFriendShowAllRow = ReactCompilerGating.isReactCompil
       class C {
         constructor(arg0) {
           tmp = jsx;
-          obj = { user: suggestedFriends.user, guildId: "Array", size: -1 };
+          obj = { user: suggestedFriends.user, guildId: "Array", size: true };
           obj2 = closure_0(closure_2[6]);
           isLayoutCompactResult = obj2.isLayoutCompact(closure_2);
           AvatarSizes = closure_0(closure_2[13]).AvatarSizes;
@@ -361,7 +361,7 @@ export const ForYouSuggestedFriendShowAllRow = ReactCompilerGating.isReactCompil
     children: noop.useMemo(() => {
       const substr = suggestedFriends.slice(2, 4);
       return substr.map((user) => {
-        const obj = { user: user.user, guildId: "Array", size: -1 };
+        const obj = { user: user.user, guildId: "Array", size: true };
         const obj2 = suggestedFriends(messagesTabLayout[6]);
         const tmp = closure_2_7;
         const AvatarSizes = suggestedFriends(messagesTabLayout[13]).AvatarSizes;

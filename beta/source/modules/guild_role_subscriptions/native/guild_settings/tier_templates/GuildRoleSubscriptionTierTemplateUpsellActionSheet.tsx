@@ -1,20 +1,20 @@
-// Module ID: 16589
-// Function ID: 16590
+// Module ID: 16599
+// Function ID: 16600
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
-// Dependencies: [32, 19, 17, 4750, 1078, 2042, 21, 4758, 580, 558, 568, 9833, 5344, 565, 1119, 8583, 4754, 5188, 4725, 7397, 2]
+// Dependencies: [32, 19, 17, 4782, 1078, 2042, 21, 4790, 580, 558, 568, 9865, 5376, 565, 1119, 8615, 4786, 5220, 4757, 7429, 2]
 
-// Module 16589 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 16599 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5344 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5376 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9865 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const View = fn(17).View;
@@ -25,7 +25,7 @@ const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 let c12 = 1.7289156626506024;
 const src = { videoURI: "https://cdn.discordapp.com/assets/server-subscription-tier-template/upsell.mov" };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: 16, paddingTop: 24, justifyContent: "center" }, videoContainer: null, info: null, title: null, subtitle: null, footer: null, button: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: 16, paddingTop: 24, justifyContent: "center" };
 obj2.videoContainer = { borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
@@ -49,7 +49,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     [tmp8, dependencyMap] = isScreenLandscape(noop.useState(0), 2);
     const obj2 = noop;
     const tmp7 = isScreenLandscape(noop.useState(0), 2);
-    isScreenLandscape = tmp(5344).useIsScreenLandscape();
+    isScreenLandscape = tmp(5376).useIsScreenLandscape();
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const items = [AccessibilityStore];
@@ -66,7 +66,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       tmp11 = cResult[3];
       tmp12 = cResult[4];
     }
-    const tmpResult = tmp(5344);
+    const tmpResult = tmp(5376);
     const stateFromStores = tmp(565).useStateFromStores(tmp11, tmp12);
     if (cResult[5] !== isScreenLandscape) {
       class P {
@@ -200,7 +200,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     const obj3 = { accessibilityRole: "image", accessibilityLabel: tmp21, children: null };
     const size = { style: tmp4.videoContainer, src, width: tmp8, height: result, muted: true, paused: stateFromStores, ariaHidden: true };
-    obj3.children = closure_10(markAsDismissed(8583), size);
+    obj3.children = closure_10(markAsDismissed(8615), size);
     const tmp30 = closure_10(View, obj3);
     cResult[13] = tmp4.videoContainer;
     cResult[14] = result;
@@ -245,7 +245,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const intl = util.intl;
   obj5.accessibilityLabel = intl.string(util.t.gCgirr);
   const size = { style: tmp.videoContainer, src, width: tmp3, height: tmp3 / c12, muted: true, paused: stateFromStores, ariaHidden: true };
-  obj5.children = closure_10(markAsDismissed(8583), size);
+  obj5.children = closure_10(markAsDismissed(8615), size);
   const items2 = [closure_10(View, obj5), , ];
   const obj6 = { style: tmp.info, children: null };
   const obj7 = { variant: "heading-lg/semibold", style: tmp.title, color: "mobile-text-heading-primary", children: null };

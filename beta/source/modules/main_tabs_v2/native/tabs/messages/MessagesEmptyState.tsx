@@ -1,25 +1,25 @@
-// Module ID: 16390
-// Function ID: 16391
+// Module ID: 16400
+// Function ID: 16401
 // Name: MessagesEmptyState
-// Dependencies: [32, 19, 17, 21, 4758, 558, 568, 1482, 1488, 1253, 9046, 5344, 15356, 16391, 1119, 4754, 5188, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 558, 568, 1482, 1488, 1253, 9078, 5376, 15366, 16401, 1119, 4786, 5220, 2]
 
-// Module 16390 (MessagesEmptyState)
+// Module 16400 (MessagesEmptyState)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
 import useNavigation from "useNavigation" /* 1488 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5344 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9046 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 15356 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5376 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9078 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 15366 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const _modDef16391 = tmp2(16391);
+const _modDef16401 = tmp2(16401);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
@@ -27,7 +27,7 @@ const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 let c10 = 622;
 let c11 = 350;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_12 = createStyles.createStyles({ container: { flex: 1, justifyContent: "center" }, scrollViewContentContainer: { flexGrow: 2 }, innerContainer: { alignItems: "center", justifyContent: "center" }, imageContainer: { alignItems: "center", marginBottom: 24 }, textWrapper: { paddingHorizontal: 48 }, body: { marginBottom: 24, textAlign: "center" }, title: { textAlign: "center", fontSize: 18, marginBottom: 8 }, buttonWrapper: { paddingHorizontal: 16, paddingBottom: 16 } });
 const ReactCompilerGating = fn(558);
 let size = fn(2);
@@ -173,7 +173,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               }
             }
             const obj2 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: title, children: tmp32 };
-            const tmp35 = closure_1_8(tmp(4754).Heading, obj2);
+            const tmp35 = closure_1_8(tmp(4786).Heading, obj2);
             cResult[17] = tmp4.title;
             cResult[18] = tmp35;
           } else {
@@ -211,7 +211,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               }
             }
             const obj3 = { color: "text-default", variant: "text-md/medium", style: tmp4.body, children: tmp36 };
-            const tmp39 = closure_1_8(tmp(4754).Text, obj3);
+            const tmp39 = closure_1_8(tmp(4786).Text, obj3);
             cResult[20] = tmp4.body;
             cResult[21] = tmp39;
           } else {
@@ -245,7 +245,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         cResult[14] = tmp24;
         cResult[15] = tmp31;
       }
-      const obj6 = { resizeMode: "contain", source: tmp5(16391), style: null };
+      const obj6 = { resizeMode: "contain", source: tmp5(16401), style: null };
       const size = { height: result1, width: bound };
       obj6.style = size;
       const tmp27 = closure_1_8(timestampProducer, obj6);
@@ -306,7 +306,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj5 = { style: tmp.container, onLayout: callback, children: null };
   const obj6 = { style: tmp.innerContainer, children: null };
   const obj7 = { style: tmp.imageContainer, children: null };
-  const obj8 = { resizeMode: "contain", source: _modDef16391, style: null };
+  const obj8 = { resizeMode: "contain", source: _modDef16401, style: null };
   if (result < c10) {
     let result1 = c11 * (result / tmp22);
   } else {

@@ -1,15 +1,15 @@
-// Module ID: 17860
-// Function ID: 17861
+// Module ID: 17870
+// Function ID: 17871
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8434, 1078, 21, 4758, 580, 558, 568, 1616, 504, 14858, 17845, 8443, 8522, 5356, 8438, 8440, 1119, 4754, 17854, 17842, 5188, 2]
+// Dependencies: [5, 32, 19, 17, 8466, 1078, 21, 4790, 580, 558, 568, 1616, 504, 14896, 17855, 8475, 8554, 5388, 8470, 8472, 1119, 4786, 17864, 17852, 5220, 2]
 
-// Module 17860 (RedesignAddAvatarModal)
+// Module 17870 (RedesignAddAvatarModal)
 import nativeDefault from "native" /* 580 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 17842 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 17852 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8434 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8466 */;
 
 const require = globalThis.__r;
 
@@ -19,7 +19,7 @@ get_ActivityIndicator = fn(17);
 const UPLOAD_MEDIUM_SIZE = fn(1078).UPLOAD_MEDIUM_SIZE;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, contentContainer: { flexGrow: 2, alignItems: "center" }, growContainer: null, headerContainer: null, buttonContainer: null, title: null, subtitle: null, errorContainer: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.growContainer = { flexGrow: 2, minHeight: nativeDefault.space.PX_24 };
@@ -537,7 +537,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
             const obj7 = { size };
             dependencyMap = 1;
             c3 = 1;
-            const obj9 = { value: tmp2(5356).openImagePicker(obj7), done: false };
+            const obj9 = { value: tmp2(5388).openImagePicker(obj7), done: false };
             return obj9;
           }
         } else if (arg0 === 1) {
@@ -553,23 +553,23 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
             pendingImage = undefined;
             if (null != base64) {
               const obj11 = { imageUri: base64, description: null };
-              const obj = tmp2(14858);
-              obj11.description = tmp2(8443).generateAvatarDescription();
+              const obj = tmp2(14896);
+              obj11.description = tmp2(8475).generateAvatarDescription();
               pendingImage = obj.createPendingImage(obj11);
-              const obj3 = tmp2(8443);
+              const obj3 = tmp2(8475);
             }
             closure_128_1 = pendingImage;
             const obj12 = { avatar: closure_128_1 };
-            tmp2(8438).setPendingChanges(obj12);
-            const obj4 = tmp2(8438);
+            tmp2(8470).setPendingChanges(obj12);
+            const obj4 = tmp2(8470);
             let str = "set";
             if (null == closure_128_1) {
               str = "remove";
             }
-            const result = tmp2(8440).announcePendingAvatarChange(str);
+            const result = tmp2(8472).announcePendingAvatarChange(str);
             closure_129_3(undefined);
             c3 = 3;
-            const obj6 = tmp2(8440);
+            const obj6 = tmp2(8472);
           }
           closure_129_1(true);
         }

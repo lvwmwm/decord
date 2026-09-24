@@ -1,13 +1,13 @@
-// Module ID: 12115
-// Function ID: 12116
+// Module ID: 12151
+// Function ID: 12152
 // Name: RefreshChatInputCoachmark
-// Dependencies: [109, 32, 19, 2042, 558, 568, 2031, 7632, 1119, 4471, 10452, 2]
+// Dependencies: [109, 32, 19, 2042, 558, 568, 2031, 7664, 1119, 4503, 10491, 2]
 
-// Module 12115 (RefreshChatInputCoachmark)
+// Module 12151 (RefreshChatInputCoachmark)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import native from "native" /* 4471 */;
-import useCoachmark from "useCoachmark" /* 10452 */;
+import native from "native" /* 4503 */;
+import useCoachmark from "useCoachmark" /* 10491 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     cResult[0] = disabled;
     cResult[1] = items;
   } else {
-    const tmp6 = _slicedToArray(tmp(7632).useSelectedDismissibleContent(cResult[1]), 2);
+    const tmp6 = _slicedToArray(tmp(7664).useSelectedDismissibleContent(cResult[1]), 2);
     _require = tmp7;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
           return;
         }
       }
-      tmp15[1] = tmp(4471).OmnibuttonCoachmarkRive;
+      tmp15[1] = tmp(4503).OmnibuttonCoachmarkRive;
       cResult[6] = tmp15;
       const tmp14 = tmp15;
     } else {
@@ -103,7 +103,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     cResult[7] = tmp16;
     cResult[8] = tmp13;
     cResult[9] = obj2;
-    const tmpResult = tmp(7632);
+    const tmpResult = tmp(7664);
   }
 }) : ((disabled) => {
   _require = undefined;

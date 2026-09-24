@@ -1,14 +1,14 @@
-// Module ID: 15621
-// Function ID: 15622
+// Module ID: 15631
+// Function ID: 15632
 // Name: CustomTypingIndicatorAnimationPickerSheet
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 4754, 5824, 1384, 1119, 3684, 7449, 12111, 5186, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 4786, 5856, 1384, 1119, 3716, 7481, 12147, 5218, 2]
 
-// Module 15621 (CustomTypingIndicatorAnimationPickerSheet)
+// Module 15631 (CustomTypingIndicatorAnimationPickerSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import Card from "Card" /* 5824 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import Card from "Card" /* 5856 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { content: { paddingHorizontal: nativeDefault.space.PX_16 }, previewRow: null, optionCard: null, optionCardSelected: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.previewRow = { alignSelf: "center", paddingVertical: nativeDefault.space.PX_24 };
@@ -51,7 +51,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[5] !== label) {
       const obj3 = { variant: "text-md/medium", color: "text-default", children: label };
-      const tmp9 = timestampProducer(tmp(4754).Text, obj3);
+      const tmp9 = timestampProducer(tmp(4786).Text, obj3);
       cResult[5] = label;
       cResult[6] = tmp9;
       let tmp7 = tmp9;
@@ -71,7 +71,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj4 = { style: tmp5, onPress, border: str, accessibilityRole: "togglebutton", accessibilityState: tmp6, children: tmp7 };
-    const tmp12 = timestampProducer(tmp(5824).Card, obj4);
+    const tmp12 = timestampProducer(tmp(5856).Card, obj4);
     cResult[7] = onPress;
     cResult[8] = tmp5;
     cResult[9] = str;
@@ -171,21 +171,21 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((initialAnimation
   const items1 = [obj4, , , ];
   const obj5 = { value: map(1384).TypingIndicatorAnimation.PULSE, label: null };
   const intl2 = map(1119).intl;
-  obj5.label = intl2.string(content(3684)["gyL/ce"]);
+  obj5.label = intl2.string(content(3716)["gyL/ce"]);
   items1[1] = obj5;
   const obj6 = { value: map(1384).TypingIndicatorAnimation.RING, label: null };
   const intl3 = map(1119).intl;
-  obj6.label = intl3.string(content(3684).EgekTm);
+  obj6.label = intl3.string(content(3716).EgekTm);
   items1[2] = obj6;
   const obj7 = { value: map(1384).TypingIndicatorAnimation.WAVE, label: null };
   const intl4 = map(1119).intl;
-  obj7.label = intl4.string(content(3684)["8t5EiI"]);
+  obj7.label = intl4.string(content(3716)["8t5EiI"]);
   items1[3] = obj7;
-  const ActionSheet = map(7449).ActionSheet;
+  const ActionSheet = map(7481).ActionSheet;
   const content2 = previewRow.content;
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
     const intl5 = map(1119).intl;
-    const stringResult = intl5.string(tmp10(3684)["q+qHax"]);
+    const stringResult = intl5.string(tmp10(3716)["q+qHax"]);
     cResult[12] = stringResult;
     let tmp11 = stringResult;
   } else {
@@ -199,7 +199,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((initialAnimation
       if (cResult[17] === tmp13) {
         let tmp16 = cResult[18];
       }
-      Stack = map(5186).Stack;
+      Stack = map(5218).Stack;
       const items2 = [items1.slice(0, num), items1.slice(num, 4)];
       map = items2.map;
       const mapped = map((arr, arg1) => timestampProducer(Stack_Stack.Stack, {
@@ -243,7 +243,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((initialAnimation
   const obj = onChange(568);
   obj10.typingSuggestion = map(1384).TypingSuggestion.UNSPECIFIED;
   obj9.config = obj10;
-  const tmp15 = closure_6(content(12111), obj9);
+  const tmp15 = closure_6(content(12147), obj9);
   cResult[13] = emojis;
   cResult[14] = content;
   cResult[15] = tmp15;
@@ -261,24 +261,24 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((initialAnimation
   const items = [obj, , , ];
   const obj2 = { value: onChange(1384).TypingIndicatorAnimation.PULSE, label: null };
   const intl2 = onChange(1119).intl;
-  obj2.label = intl2.string(animation(3684)["gyL/ce"]);
+  obj2.label = intl2.string(animation(3716)["gyL/ce"]);
   items[1] = obj2;
   const obj3 = { value: onChange(1384).TypingIndicatorAnimation.RING, label: null };
   const intl3 = onChange(1119).intl;
-  obj3.label = intl3.string(animation(3684).EgekTm);
+  obj3.label = intl3.string(animation(3716).EgekTm);
   items[2] = obj3;
   const obj4 = { value: onChange(1384).TypingIndicatorAnimation.WAVE, label: null };
   const intl4 = onChange(1119).intl;
-  obj4.label = intl4.string(animation(3684)["8t5EiI"]);
+  obj4.label = intl4.string(animation(3716)["8t5EiI"]);
   items[3] = obj4;
   const obj5 = { contentStyles: tmp.content, dismissAccessibilityLabel: null, children: null };
   const intl5 = onChange(1119).intl;
-  obj5.dismissAccessibilityLabel = intl5.string(animation(3684)["q+qHax"]);
+  obj5.dismissAccessibilityLabel = intl5.string(animation(3716)["q+qHax"]);
   const obj6 = { style: tmp.previewRow, children: null };
   const obj7 = { config: null, size: 54 };
   const obj8 = { emojis, animation, typingSuggestion: onChange(1384).TypingSuggestion.UNSPECIFIED };
   obj7.config = obj8;
-  obj6.children = closure_6(animation(12111), obj7);
+  obj6.children = closure_6(animation(12147), obj7);
   const items1 = [closure_6(View, obj6), ];
   const obj9 = { spacing: 8, children: null };
   const items2 = [items.slice(0, 2), items.slice(2, 4)];
@@ -295,7 +295,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((initialAnimation
       }
     }, label.label))
   }, index));
-  items1[1] = closure_6(onChange(5186).Stack, obj9);
+  items1[1] = closure_6(onChange(5218).Stack, obj9);
   obj5.children = items1;
-  return closure_7(onChange(7449).ActionSheet, obj5);
+  return closure_7(onChange(7481).ActionSheet, obj5);
 });

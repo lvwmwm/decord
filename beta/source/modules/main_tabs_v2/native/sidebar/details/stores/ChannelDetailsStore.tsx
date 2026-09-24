@@ -1,10 +1,10 @@
-// Module ID: 8125
-// Function ID: 8126
+// Module ID: 8157
+// Function ID: 8158
 // Name: ChannelDetailsStore
 // Dependencies: [562, 1252, 558, 568, 2]
 // Exports: deleteChannelDetailsSearchState, deleteChannelStates, getIsChannelDetailsSearchActive, setIsChannelDetailsSearchActive
 
-// Module 8125 (ChannelDetailsStore)
+// Module 8157 (ChannelDetailsStore)
 import c from "c" /* 568 */;
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
 import module_562 from "module_562" /* 562 */;

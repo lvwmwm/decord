@@ -1,29 +1,29 @@
-// Module ID: 16738
-// Function ID: 16739
+// Module ID: 16748
+// Function ID: 16749
 // Name: YouBarFloatingShade
-// Dependencies: [19, 17, 4578, 15354, 16623, 21, 4758, 558, 568, 504, 4462, 580, 15356, 1482, 4619, 16359, 4577, 1096, 5198, 2]
+// Dependencies: [19, 17, 4610, 15364, 16633, 21, 4790, 558, 568, 504, 4494, 580, 15366, 1482, 4651, 16369, 4609, 1096, 5230, 2]
 
-// Module 16738 (YouBarFloatingShade)
+// Module 16748 (YouBarFloatingShade)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import useToken from "useToken" /* 4462 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4577 */;
-import useChatLayoutDefault from "useChatLayout" /* 4619 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 15356 */;
+import useToken from "useToken" /* 4494 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4609 */;
+import useChatLayoutDefault from "useChatLayout" /* 4651 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 15366 */;
 import noop from "module_19" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4578 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4610 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_5 = fn(15354).YOU_BAR_GRADIENT_EXTRA_HEIGHT;
-const GUILD_LIST_WIDTH = fn(16623).GUILD_LIST_WIDTH;
+let closure_5 = fn(15364).YOU_BAR_GRADIENT_EXTRA_HEIGHT;
+const GUILD_LIST_WIDTH = fn(16633).GUILD_LIST_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles({ container: { position: "absolute", bottom: 0, left: 0, right: 0 } });
 let ReactCompilerGating = fn(558);
 let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -69,7 +69,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (useChatLayoutDefault().isChatBesideChannelList) {
     width = tmp8 + GUILD_LIST_WIDTH;
   }
-  const gradientValue = client_themes_ClientThemesUtils.useGradientValue(tmp(4577).GradientPercentage.END);
+  const gradientValue = client_themes_ClientThemesUtils.useGradientValue(tmp(4609).GradientPercentage.END);
   const tmpResult = client_themes_ClientThemesUtils;
   const token = useToken.useToken(tmp7(580).colors.BACKGROUND_BASE_LOWER);
   let tmp12 = closure_11();
@@ -196,7 +196,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               tmp31 = size;
             }
             const obj6 = { style: tmp21, colors: tmp22, start: tmp26, end: tmp24, locations: tmp25, pointerEvents: "none" };
-            const tmp29 = React5(tmp7(5198), obj6);
+            const tmp29 = React5(tmp7(5230), obj6);
             cResult[22] = tmp21;
             cResult[23] = tmp22;
             cResult[24] = tmp29;
@@ -238,7 +238,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (useChatLayoutDefault().isChatBesideChannelList) {
     width = tmp7 + GUILD_LIST_WIDTH;
   }
-  const gradientValue = client_themes_ClientThemesUtils.useGradientValue(tmp2(4577).GradientPercentage.END);
+  const gradientValue = client_themes_ClientThemesUtils.useGradientValue(tmp2(4609).GradientPercentage.END);
   const tmp2Result = client_themes_ClientThemesUtils;
   const token = useToken.useToken(tmp6(580).colors.BACKGROUND_BASE_LOWER);
   let tmp11 = closure_11();

@@ -1,16 +1,16 @@
-// Module ID: 17030
-// Function ID: 17031
+// Module ID: 17040
+// Function ID: 17041
 // Name: VibegrationsMessageActionSheet
-// Dependencies: [19, 21, 8453, 4725, 558, 568, 7436, 4458, 1119, 4704, 7445, 11954, 7449, 2]
+// Dependencies: [19, 21, 8485, 4757, 558, 568, 7468, 4490, 1119, 4736, 7477, 11990, 7481, 2]
 // Exports: openMessageAuthorProfile, showVibegrationsMessageActions
 
-// Module 17030 (VibegrationsMessageActionSheet)
+// Module 17040 (VibegrationsMessageActionSheet)
 import util from "util" /* 1119 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
-import CopyIcon from "CopyIcon" /* 4704 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
-import ClipboardUtils from "ClipboardUtils" /* 7436 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
+import CopyIcon from "CopyIcon" /* 4736 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4757 */;
+import ClipboardUtils from "ClipboardUtils" /* 7468 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
 import noop from "module_19" /* 19 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
@@ -114,8 +114,8 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
       const obj3 = { hasIcons: true, children: null };
       const items = [tmp6, tmp8];
       obj3.children = items;
-      obj2.children = closure_5(tmp(7445).ActionSheetRow.Group, obj3);
-      const tmp13 = closure_4(tmp(7449).ActionSheet, obj2);
+      obj2.children = closure_5(tmp(7477).ActionSheetRow.Group, obj3);
+      const tmp13 = closure_4(tmp(7481).ActionSheet, obj2);
       cResult[10] = tmp6;
       cResult[11] = tmp8;
       cResult[12] = tmp13;
@@ -138,10 +138,10 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
       let obj4 = { label: null, icon: null, onPress: null };
       let intl = tmp(1119).intl;
       obj4.label = intl.string(tmp(1119).t.iXAna6);
-      const obj5 = { IconComponent: tmp(11954).UserIcon };
-      obj4.icon = closure_4(tmp(7445).ActionSheetRow.Icon, obj5);
+      const obj5 = { IconComponent: tmp(11990).UserIcon };
+      obj4.icon = closure_4(tmp(7477).ActionSheetRow.Icon, obj5);
       obj4.onPress = tmp5;
-      tmp9 = closure_4(tmp(7445).ActionSheetRow, obj4);
+      tmp9 = closure_4(tmp(7477).ActionSheetRow, obj4);
     }
     cResult[7] = tmp5;
     cResult[8] = userId;
@@ -164,10 +164,10 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
     const obj6 = { label: null, icon: null, onPress: null };
     const intl2 = tmp(1119).intl;
     obj6.label = intl2.string(tmp(1119).t.JrGD7E);
-    const obj7 = { IconComponent: tmp(4704).CopyIcon };
-    obj6.icon = closure_4(tmp(7445).ActionSheetRow.Icon, obj7);
+    const obj7 = { IconComponent: tmp(4736).CopyIcon };
+    obj6.icon = closure_4(tmp(7477).ActionSheetRow.Icon, obj7);
     obj6.onPress = tmp4;
-    tmp7 = closure_4(tmp(7445).ActionSheetRow, obj6);
+    tmp7 = closure_4(tmp(7477).ActionSheetRow, obj6);
   }
   cResult[4] = content;
   cResult[5] = tmp4;
@@ -197,10 +197,10 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
     let obj2 = { label: null, icon: null, onPress: null };
     const intl2 = tmp4(1119).intl;
     obj2.label = intl2.string(tmp4(1119).t.JrGD7E);
-    const obj3 = { IconComponent: tmp4(4704).CopyIcon };
-    obj2.icon = tmp3(tmp4(7445).ActionSheetRow.Icon, obj3);
+    const obj3 = { IconComponent: tmp4(4736).CopyIcon };
+    obj2.icon = tmp3(tmp4(7477).ActionSheetRow.Icon, obj3);
     obj2.onPress = callback;
-    tmp3Result = tmp3(tmp4(7445).ActionSheetRow, obj2);
+    tmp3Result = tmp3(tmp4(7477).ActionSheetRow, obj2);
   }
   const items2 = [tmp3Result, ];
   let tmp3Result2 = null;
@@ -208,13 +208,13 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
     let obj = { label: null, icon: null, onPress: null };
     let intl = tmp4(1119).intl;
     obj.label = intl.string(tmp4(1119).t.iXAna6);
-    let obj4 = { IconComponent: tmp4(11954).UserIcon };
-    obj.icon = tmp3(tmp4(7445).ActionSheetRow.Icon, obj4);
+    let obj4 = { IconComponent: tmp4(11990).UserIcon };
+    obj.icon = tmp3(tmp4(7477).ActionSheetRow.Icon, obj4);
     obj.onPress = callback1;
-    tmp3Result2 = tmp3(tmp4(7445).ActionSheetRow, obj);
+    tmp3Result2 = tmp3(tmp4(7477).ActionSheetRow, obj);
   }
   items2[1] = tmp3Result2;
-  return closure_4(content(7449).ActionSheet, { children: closure_5(content(7445).ActionSheetRow.Group, { hasIcons: true, children: items2 }) });
+  return closure_4(content(7481).ActionSheet, { children: closure_5(content(7477).ActionSheetRow.Group, { hasIcons: true, children: items2 }) });
 });
 function openMessageAuthorProfile(id) {
   showUserProfileActionSheetDefault({ userId: id });

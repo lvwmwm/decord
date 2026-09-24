@@ -1,27 +1,27 @@
-// Module ID: 16640
-// Function ID: 16641
+// Module ID: 16650
+// Function ID: 16651
 // Name: GuildsBarGuildJoinRequestBadge
-// Dependencies: [19, 17, 21, 4758, 580, 5660, 4583, 16641, 16642, 16643, 12437, 558, 568, 5802, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 5692, 4615, 16651, 16652, 16653, 12473, 558, 568, 5834, 2]
 
-// Module 16640 (GuildsBarGuildJoinRequestBadge)
+// Module 16650 (GuildsBarGuildJoinRequestBadge)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4583 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef12437 from "module_12437" /* 12437 */;
-import _modDef16641 from "module_16641" /* 16641 */;
-import _modDef16642 from "module_16642" /* 16642 */;
-import _modDef16643 from "module_16643" /* 16643 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4615 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef12473 from "module_12473" /* 12473 */;
+import _modDef16651 from "module_16651" /* 16651 */;
+import _modDef16652 from "module_16652" /* 16652 */;
+import _modDef16653 from "module_16653" /* 16653 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { badgeImageContainer: null, badgeImage: null };
 let size = { position: "absolute", bottom: -3, right: -3, height: 22, width: 22, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 3, borderRadius: 11, justifyContent: "center", alignItems: "center", overflow: "hidden" };
 obj2.badgeImageContainer = size;
-const size1 = { height: 16, width: 16, opacity: fn(5660).DARK_1_LIGHT_08 };
+const size1 = { height: 16, width: 16, opacity: fn(5692).DARK_1_LIGHT_08 };
 obj2.badgeImage = size1;
 let closure_5 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -33,18 +33,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ style, joinRequestState } = arg0);
   const tmp4 = closure_5();
   if (cResult[0] !== joinRequestState) {
-    if (tmp(4583).GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
-      let tmp6 = _modDef16641;
+    if (tmp(4615).GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
+      let tmp6 = _modDef16651;
     } else {
-      if (tmp(4583).GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
-        tmp6 = _modDef16642;
-      } else if (tmp(4583).GuildJoinRequestApplicationStatuses.STARTED !== joinRequestState) {
+      if (tmp(4615).GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
+        tmp6 = _modDef16652;
+      } else if (tmp(4615).GuildJoinRequestApplicationStatuses.STARTED !== joinRequestState) {
         tmp6 = null;
-        if (tmp(4583).GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
-          tmp6 = _modDef12437;
+        if (tmp(4615).GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
+          tmp6 = _modDef12473;
         }
       }
-      tmp6 = _modDef16643;
+      tmp6 = _modDef16653;
     }
     cResult[0] = joinRequestState;
     cResult[1] = tmp6;
@@ -84,15 +84,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   joinRequestState = joinRequestState.joinRequestState;
   const tmp = closure_5();
   if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
-    let tmp4 = _modDef16641;
-  } else if (tmp2(4583).GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
-    tmp4 = _modDef16642;
-  } else if (tmp2(4583).GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
-    tmp4 = _modDef16643;
+    let tmp4 = _modDef16651;
+  } else if (tmp2(4615).GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
+    tmp4 = _modDef16652;
+  } else if (tmp2(4615).GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
+    tmp4 = _modDef16653;
   } else {
     tmp4 = null;
-    if (tmp2(4583).GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
-      tmp4 = _modDef12437;
+    if (tmp2(4615).GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
+      tmp4 = _modDef12473;
     }
   }
   let tmp9 = null;

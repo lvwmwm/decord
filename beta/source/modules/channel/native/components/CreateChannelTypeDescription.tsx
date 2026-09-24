@@ -1,16 +1,16 @@
-// Module ID: 9812
-// Function ID: 9813
+// Module ID: 9844
+// Function ID: 9845
 // Name: CreateChannelTypeDescription
-// Dependencies: [19, 17, 9813, 1078, 21, 558, 568, 9814, 5770, 4754, 1119, 2]
+// Dependencies: [19, 17, 9845, 1078, 21, 558, 568, 9846, 5802, 4786, 1119, 2]
 
-// Module 9812 (CreateChannelTypeDescription)
+// Module 9844 (CreateChannelTypeDescription)
 import c from "c" /* 568 */;
-import useGuildProfile from "useGuildProfile" /* 9814 */;
+import useGuildProfile from "useGuildProfile" /* 9846 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const GuildProfileFetchStatus = fn(9813).GuildProfileFetchStatus;
+const GuildProfileFetchStatus = fn(9845).GuildProfileFetchStatus;
 const ChannelTypes = fn(1078).ChannelTypes;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
@@ -25,7 +25,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ guildProfile, fetchGuildProfile } = guildProfile1);
   let hasItem = null != guildProfile;
   if (hasItem) {
-    const VISIBLE = tmp(5770).GuildProfileVisibilitySets.VISIBLE;
+    const VISIBLE = tmp(5802).GuildProfileVisibilitySets.VISIBLE;
     hasItem = VISIBLE.has(guildProfile.visibility);
   }
   let tmp7 = !tmp6;
@@ -60,7 +60,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const intl = tmp(1119).intl;
         stringResult = intl.string(tmp(1119).t["2Ab4Id"]);
         obj4.children = stringResult;
-        obj3.children = jsx(tmp(4754).Text, { variant: "text-sm/normal", color: "text-subtle", children: null });
+        obj3.children = jsx(tmp(4786).Text, { variant: "text-sm/normal", color: "text-subtle", children: null });
         const tmp18 = <View>{null}</View>;
         cResult[5] = tmp18;
       }
@@ -78,7 +78,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ guildProfile, fetchGuildProfile } = guildProfile1);
   let hasItem = null != guildProfile;
   if (hasItem) {
-    const VISIBLE = tmp(5770).GuildProfileVisibilitySets.VISIBLE;
+    const VISIBLE = tmp(5802).GuildProfileVisibilitySets.VISIBLE;
     hasItem = VISIBLE.has(guildProfile.visibility);
   }
   let tmp6 = !tmp5;
@@ -98,7 +98,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { variant: "text-sm/normal", color: "text-subtle", children: null };
     const intl = tmp(1119).intl;
     obj3.children = intl.string(tmp(1119).t["2Ab4Id"]);
-    obj2.children = jsx(tmp(4754).Text, { variant: "text-sm/normal", color: "text-subtle", children: null });
+    obj2.children = jsx(tmp(4786).Text, { variant: "text-sm/normal", color: "text-subtle", children: null });
     tmp9 = <View>{null}</View>;
   }
   return tmp9;

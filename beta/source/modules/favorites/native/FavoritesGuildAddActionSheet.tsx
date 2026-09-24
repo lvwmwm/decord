@@ -1,13 +1,13 @@
-// Module ID: 16491
-// Function ID: 16492
+// Module ID: 16501
+// Function ID: 16502
 // Name: FavoritesGuildAddActionSheet
-// Dependencies: [19, 21, 4725, 16492, 558, 568, 10606, 10609, 11274, 7396, 1119, 3328, 7445, 12904, 16493, 7449, 2]
+// Dependencies: [19, 21, 4757, 16502, 558, 568, 10642, 10645, 11310, 7428, 1119, 3360, 7477, 12940, 16503, 7481, 2]
 // Exports: openFavoritesGuildAddActionSheet
 
-// Module 16491 (FavoritesGuildAddActionSheet)
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 11274 */;
-import FavoritesGuildAddCategoryActionSheet from "FavoritesGuildAddCategoryActionSheet" /* 16492 */;
+// Module 16501 (FavoritesGuildAddActionSheet)
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4757 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 11310 */;
+import FavoritesGuildAddCategoryActionSheet from "FavoritesGuildAddCategoryActionSheet" /* 16502 */;
 import noop from "module_19" /* 19 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
@@ -103,7 +103,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     ActionSheetActionCreatorsDefault.hideActionSheet(FavoritesGuildAddActionSheet);
     if (shouldShowUpsell) {
       if (isAtLimit) {
-        tmp(10609)(favoriteLimit);
+        tmp(10645)(favoriteLimit);
       }
     }
     openFavoritesGuildAddChannelModalDefault({ source: "favorites_header_add_button_context_menu" });
@@ -123,7 +123,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     ActionSheetActionCreatorsDefault.hideActionSheet(FavoritesGuildAddActionSheet);
     if (shouldShowUpsell) {
       if (isAtLimit) {
-        tmp(10609)(favoriteLimit);
+        tmp(10645)(favoriteLimit);
       }
     }
     openFavoritesGuildAddChannelModalDefault({ source: "favorites_header_add_button_context_menu" });

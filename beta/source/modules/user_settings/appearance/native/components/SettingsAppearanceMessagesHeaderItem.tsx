@@ -1,19 +1,19 @@
-// Module ID: 15552
-// Function ID: 15553
+// Module ID: 15562
+// Function ID: 15563
 // Name: SettingsAppearanceMessagesHeaderItem
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 4786, 2]
 
-// Module 15552 (SettingsAppearanceMessagesHeaderItem)
+// Module 15562 (SettingsAppearanceMessagesHeaderItem)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { messagesHeaderContainer: { flexDirection: "row", gap: nativeDefault.space.PX_12, alignItems: "center", marginHorizontal: nativeDefault.space.PX_24 } };
 let closure_4 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -35,7 +35,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((animatedStyles) 
   }
   if (cResult[1] !== animatedStyles.textNormal) {
     const obj2 = { animated: true, style: animatedStyles.textNormal, variant: "text-lg/bold", children: first };
-    const tmp9 = jsx(tmp(4754).Text, { animated: true, style: animatedStyles.textNormal, variant: "text-lg/bold", children: first });
+    const tmp9 = jsx(tmp(4786).Text, { animated: true, style: animatedStyles.textNormal, variant: "text-lg/bold", children: first });
     cResult[1] = animatedStyles.textNormal;
     cResult[2] = tmp9;
     let tmp7 = tmp9;

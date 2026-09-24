@@ -1,11 +1,11 @@
-// Module ID: 8489
-// Function ID: 8490
+// Module ID: 8521
+// Function ID: 8522
 // Name: useMaybeFetchEquippedCollectibleProducts
-// Dependencies: [19, 1376, 558, 568, 504, 8460, 8490, 8491, 8492, 2]
+// Dependencies: [19, 1376, 558, 568, 504, 8492, 8522, 8523, 8524, 2]
 
-// Module 8489 (useMaybeFetchEquippedCollectibleProducts)
-import useDisplayProfileDefault from "useDisplayProfile" /* 8460 */;
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8492 */;
+// Module 8521 (useMaybeFetchEquippedCollectibleProducts)
+import useDisplayProfileDefault from "useDisplayProfile" /* 8492 */;
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8524 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -46,7 +46,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, guildId) => {
     if (cResult[5] === stateFromStores) {
       let tmp11 = cResult[6];
     }
-    const nameplate = tmp(8491).useNameplate(tmp11);
+    const nameplate = tmp(8523).useNameplate(tmp11);
     let skuId;
     if (avatarDecoration != null) {
       skuId = avatarDecoration.skuId;
@@ -87,7 +87,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, guildId) => {
     cResult[10] = skuId3;
     cResult[11] = found;
     tmp18 = found;
-    const tmpResult4 = tmp(8491);
+    const tmpResult4 = tmp(8523);
   }
   const obj2 = { user: stateFromStores, guildId };
   cResult[4] = guildId;

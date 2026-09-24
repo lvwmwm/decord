@@ -1,10 +1,10 @@
-// Module ID: 12674
-// Function ID: 12675
+// Module ID: 12710
+// Function ID: 12711
 // Name: useShowGuildPowerupRollbackSheet
-// Dependencies: [32, 19, 2042, 558, 568, 12675, 7632, 12677, 4725, 2]
+// Dependencies: [32, 19, 2042, 558, 568, 12711, 7664, 12713, 4757, 2]
 
-// Module 12674 (useShowGuildPowerupRollbackSheet)
-import openGuildPowerupRollbackSheetDefault from "openGuildPowerupRollbackSheet" /* 12677 */;
+// Module 12710 (useShowGuildPowerupRollbackSheet)
+import openGuildPowerupRollbackSheetDefault from "openGuildPowerupRollbackSheet" /* 12713 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,13 +18,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
   const cResult = modalConfig(568).c(9);
   let obj = modalConfig(568);
   const tmp = modalConfig;
-  ({ shouldShow, modalConfig } = first(12675)(arg0, arg1));
+  ({ shouldShow, modalConfig } = first(12711)(arg0, arg1));
   if (cResult[0] === modalConfig) {
     if (cResult[1] === shouldShow) {
       if (cResult[2] === tmp4) {
         let tmp6 = cResult[3];
       }
-      const tmp11 = _slicedToArray(tmp(7632).useSelectedDismissibleContent(tmp6), 2);
+      const tmp11 = _slicedToArray(tmp(7664).useSelectedDismissibleContent(tmp6), 2);
       first = tmp11[0];
       dependencyMap = tmp13;
       _slicedToArray = noop.useRef(false);
@@ -55,7 +55,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
           if (null != modalConfig.primaryButtonText) {
             fn = () => {
               dependencyMap(constants.TAKE_ACTION);
-              first(4725).hideActionSheet(modalConfig(12677).GUILD_POWERUP_ROLLBACK_SHEET_KEY);
+              first(4757).hideActionSheet(modalConfig(12713).GUILD_POWERUP_ROLLBACK_SHEET_KEY);
             };
           }
           obj.onCtaPress = fn;
@@ -74,7 +74,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
       tmp15 = items;
       tmp14 = fn;
       obj3 = noop;
-      const tmpResult = tmp(7632);
+      const tmpResult = tmp(7664);
     }
   }
   let tmp7 = shouldShow;
@@ -102,7 +102,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
   let first;
   dependencyMap = undefined;
   _slicedToArray = undefined;
-  ({ shouldShow, modalConfig } = first(12675)(arg0, arg1));
+  ({ shouldShow, modalConfig } = first(12711)(arg0, arg1));
   if (shouldShow) {
     shouldShow = null != modalConfig;
   }
@@ -113,8 +113,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
   if (shouldShow) {
     items.push(modalConfig.dismissibleContent);
   }
-  const tmp2 = first(12675)(arg0, arg1);
-  const tmp5 = _slicedToArray(modalConfig(7632).useSelectedDismissibleContent(items), 2);
+  const tmp2 = first(12711)(arg0, arg1);
+  const tmp5 = _slicedToArray(modalConfig(7664).useSelectedDismissibleContent(items), 2);
   first = tmp5[0];
   dependencyMap = tmp7;
   _slicedToArray = noop.useRef(false);
@@ -137,7 +137,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
       if (null != modalConfig.primaryButtonText) {
         fn = () => {
           dependencyMap(constants.TAKE_ACTION);
-          first(4725).hideActionSheet(modalConfig(12677).GUILD_POWERUP_ROLLBACK_SHEET_KEY);
+          first(4757).hideActionSheet(modalConfig(12713).GUILD_POWERUP_ROLLBACK_SHEET_KEY);
         };
       }
       obj.onCtaPress = fn;

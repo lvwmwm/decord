@@ -1,18 +1,18 @@
-// Module ID: 16502
-// Function ID: 16503
+// Module ID: 16512
+// Function ID: 16513
 // Name: GuildThemeNuxPreviewGraphic
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 16503, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 16513, 2]
 
-// Module 16502 (GuildThemeNuxPreviewGraphic)
+// Module 16512 (GuildThemeNuxPreviewGraphic)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import GuildThemePreviewArtDefault from "GuildThemePreviewArt" /* 16503 */;
+import GuildThemePreviewArtDefault from "GuildThemePreviewArt" /* 16513 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { width: "100%", aspectRatio: 1.7777777777777777, alignItems: "center", justifyContent: "center", marginBottom: nativeDefault.space.PX_24 } };
 let closure_5 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

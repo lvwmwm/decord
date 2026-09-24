@@ -1,11 +1,11 @@
-// Module ID: 12471
-// Function ID: 12472
+// Module ID: 12507
+// Function ID: 12508
 // Name: GuildDirectoryTemplates
-// Dependencies: [19, 17, 12453, 12458, 21, 4758, 558, 568, 1181, 12472, 12480, 1488, 1616, 1119, 4754, 5903, 7179, 12457, 2]
+// Dependencies: [19, 17, 12489, 12494, 21, 4790, 558, 568, 1181, 12508, 12516, 1488, 1616, 1119, 4786, 5935, 7211, 12493, 2]
 
-// Module 12471 (GuildDirectoryTemplates)
+// Module 12507 (GuildDirectoryTemplates)
 import native from "native" /* 1181 */;
-import GuildDirectoryTemplatesIcons from "GuildDirectoryTemplatesIcons" /* 12472 */;
+import GuildDirectoryTemplatesIcons from "GuildDirectoryTemplatesIcons" /* 12508 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -13,12 +13,12 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const GuildDirectoryConstants = fn(12453);
+const GuildDirectoryConstants = fn(12489);
 ({ getHubGuildTemplatesMap: metroRequire, HubGuildTemplateId: closure_7 } = GuildDirectoryConstants);
-const GuildDirectoryCreate = fn(12458).GuildDirectoryCreate;
+const GuildDirectoryCreate = fn(12494).GuildDirectoryCreate;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_11 = createStyles.createStyles({ label: { marginTop: 16, marginLeft: 16, marginBottom: 8 }, title: { marginBottom: 8, textAlign: "center" }, description: { textAlign: "center" }, header: { alignItems: "center", justifyContent: "center", padding: 16 }, templateGroup: { marginHorizontal: 16 } });
 let ReactCompilerGating = fn(558);
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildTemplate) => {
@@ -48,7 +48,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildTemplate) => {
       }
     }
     const obj2 = { Icon: tmp3, message: guildTemplate.label, onPress: tmp4 };
-    const tmp8 = closure_9(onGuildTemplatePress(12480), obj2);
+    const tmp8 = closure_9(onGuildTemplatePress(12516), obj2);
     cResult[5] = guildTemplate.label;
     cResult[6] = tmp3;
     cResult[7] = tmp4;
@@ -65,7 +65,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildTemplate) => {
 }) : ((guildTemplate) => {
   guildTemplate = guildTemplate.guildTemplate;
   const onGuildTemplatePress = guildTemplate.onGuildTemplatePress;
-  return closure_9(onGuildTemplatePress(12480), {
+  return closure_9(onGuildTemplatePress(12516), {
     Icon() {
       return options(native.Icon, { source: GuildDirectoryTemplatesIcons.GUILD_TEMPLATE_ICONS[guildTemplate.id], disableColor: true, style: { width: 48, height: 48 } });
     },

@@ -1,15 +1,15 @@
-// Module ID: 12782
-// Function ID: 12783
+// Module ID: 12818
+// Function ID: 12819
 // Name: GuildIconPile
-// Dependencies: [19, 21, 558, 568, 5799, 12783, 11304, 11303, 9092, 2]
+// Dependencies: [19, 21, 558, 568, 5831, 12819, 11340, 11339, 9124, 2]
 
-// Module 12782 (GuildIconPile)
+// Module 12818 (GuildIconPile)
 import c from "c" /* 568 */;
-import GuildIcon from "GuildIcon" /* 5799 */;
-import ClipView from "ClipView" /* 9092 */;
-import Pile from "Pile" /* 11303 */;
-import PileOverflow from "PileOverflow" /* 11304 */;
-import ListUtils from "ListUtils" /* 12783 */;
+import GuildIcon from "GuildIcon" /* 5831 */;
+import ClipView from "ClipView" /* 9124 */;
+import Pile from "Pile" /* 11339 */;
+import PileOverflow from "PileOverflow" /* 11340 */;
+import ListUtils from "ListUtils" /* 12819 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -50,10 +50,10 @@ export const GuildIconPile = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
             }
           }
         }
-        const obj2 = { "aria-label": tmp6, shape: tmp(9092).CutoutShape.RoundedRect, size: tmp5, gap: num3, depthX: 0.25, children: null };
+        const obj2 = { "aria-label": tmp6, shape: tmp(9124).CutoutShape.RoundedRect, size: tmp5, gap: num3, depthX: 0.25, children: null };
         const items = [children, tmp8];
         obj2.children = items;
-        const tmp14 = React4(tmp(11303).Pile, obj2);
+        const tmp14 = React4(tmp(11339).Pile, obj2);
         cResult[7] = children;
         cResult[8] = tmp5;
         cResult[9] = tmp6;
@@ -66,7 +66,7 @@ export const GuildIconPile = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     let tmp10 = null != totalCount && countResult < totalCount;
     if (tmp10) {
       const obj3 = { size: tmp5, borderRadius: tmp5 / 3, value: totalCount - countResult };
-      tmp10 = React3(tmp(11304).PileOverflow, obj3);
+      tmp10 = React3(tmp(11340).PileOverflow, obj3);
     }
     cResult[3] = countResult;
     cResult[4] = tmp5;

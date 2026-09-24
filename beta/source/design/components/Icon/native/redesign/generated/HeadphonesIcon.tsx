@@ -1,13 +1,13 @@
-// Module ID: 12693
-// Function ID: 12694
+// Module ID: 12729
+// Function ID: 12730
 // Name: HeadphonesIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 12694, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 12730, 4493, 2]
 
-// Module 12693 (HeadphonesIcon)
+// Module 12729 (HeadphonesIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod12694 from "module_12694" /* 12694 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod12730 from "module_12730" /* 12730 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const HeadphonesIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(12694);
+    const tmpResult = tmp(12730);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const HeadphonesIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12694, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12730, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

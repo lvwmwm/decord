@@ -1,47 +1,47 @@
-// Module ID: 11316
-// Function ID: 11317
+// Module ID: 11352
+// Function ID: 11353
 // Name: PremiumGiftBackgroundSelectTile
-// Dependencies: [19, 17, 1378, 11317, 21, 11318, 11319, 11320, 11321, 11322, 11323, 11324, 11325, 11326, 4758, 580, 558, 568, 1119, 2550, 5802, 2]
+// Dependencies: [19, 17, 1378, 11353, 21, 11354, 11355, 11356, 11357, 11358, 11359, 11360, 11361, 11362, 4790, 580, 558, 568, 1119, 2550, 5834, 2]
 
-// Module 11316 (PremiumGiftBackgroundSelectTile)
+// Module 11352 (PremiumGiftBackgroundSelectTile)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import _modDef2550 from "module_2550" /* 2550 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef11318 from "module_11318" /* 11318 */;
-import _modDef11319 from "module_11319" /* 11319 */;
-import _modDef11320 from "module_11320" /* 11320 */;
-import _modDef11321 from "module_11321" /* 11321 */;
-import _modDef11322 from "module_11322" /* 11322 */;
-import _modDef11323 from "module_11323" /* 11323 */;
-import _modDef11324 from "module_11324" /* 11324 */;
-import _modDef11325 from "module_11325" /* 11325 */;
-import _modDef11326 from "module_11326" /* 11326 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef11354 from "module_11354" /* 11354 */;
+import _modDef11355 from "module_11355" /* 11355 */;
+import _modDef11356 from "module_11356" /* 11356 */;
+import _modDef11357 from "module_11357" /* 11357 */;
+import _modDef11358 from "module_11358" /* 11358 */;
+import _modDef11359 from "module_11359" /* 11359 */;
+import _modDef11360 from "module_11360" /* 11360 */;
+import _modDef11361 from "module_11361" /* 11361 */;
+import _modDef11362 from "module_11362" /* 11362 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, Pressable: closure_4 } = get_ActivityIndicator);
 const PremiumGiftStyles = fn(1378).PremiumGiftStyles;
-const GIFT_STYLE_DESCRIPTIONS = fn(11317).GIFT_STYLE_DESCRIPTIONS;
+const GIFT_STYLE_DESCRIPTIONS = fn(11353).GIFT_STYLE_DESCRIPTIONS;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const GIFT_STYLE_IMG = { [STANDARD_BOX]: _modDef11318, [CAKE]: _modDef11319, [CHEST]: _modDef11320, [COFFEE]: _modDef11321 };
+const GIFT_STYLE_IMG = { [STANDARD_BOX]: _modDef11354, [CAKE]: _modDef11355, [CHEST]: _modDef11356, [COFFEE]: _modDef11357 };
 ({ STANDARD_BOX, CAKE, CHEST, COFFEE } = PremiumGiftStyles);
-GIFT_STYLE_IMG[PremiumGiftStyles.NITROWEEN_STANDARD] = { uri: _modDef11322 };
+GIFT_STYLE_IMG[PremiumGiftStyles.NITROWEEN_STANDARD] = { uri: _modDef11358 };
 GIFT_STYLE_IMG[PremiumGiftStyles.SNOWGLOBE] = null;
 GIFT_STYLE_IMG[PremiumGiftStyles.BOX] = null;
 GIFT_STYLE_IMG[PremiumGiftStyles.CUP] = null;
-let obj2 = { uri: _modDef11322 };
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CAKE] = { uri: _modDef11323 };
-let obj3 = { uri: _modDef11323 };
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CHEST] = { uri: _modDef11324 };
-let obj4 = { uri: _modDef11324 };
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_COFFEE] = { uri: _modDef11325 };
-let obj5 = { uri: _modDef11325 };
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: _modDef11326 };
-const createStyles = fn(4758);
+let obj2 = { uri: _modDef11358 };
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CAKE] = { uri: _modDef11359 };
+let obj3 = { uri: _modDef11359 };
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CHEST] = { uri: _modDef11360 };
+let obj4 = { uri: _modDef11360 };
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_COFFEE] = { uri: _modDef11361 };
+let obj5 = { uri: _modDef11361 };
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: _modDef11362 };
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles((arg0) => {
   const size = { width: 78, height: 44, justifyContent: "center", marginEnd: nativeDefault.space.PX_8, marginStart: null };
   let num = 0;
@@ -56,7 +56,7 @@ let closure_9 = createStyles.createStyles((arg0) => {
   return obj;
 });
 const ReactCompilerGating = fn(558);
-const obj6 = { uri: _modDef11326 };
+const obj6 = { uri: _modDef11362 };
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/native/gifting/PremiumGiftBackgroundSelectTile.tsx");
 

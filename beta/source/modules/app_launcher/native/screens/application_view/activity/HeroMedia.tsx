@@ -1,21 +1,21 @@
-// Module ID: 12224
-// Function ID: 12225
+// Module ID: 12260
+// Function ID: 12261
 // Name: HeroMedia
-// Dependencies: [19, 4750, 1487, 21, 4758, 558, 568, 11470, 9735, 504, 7415, 12188, 1119, 8583, 2]
+// Dependencies: [19, 4782, 1487, 21, 4790, 558, 568, 11506, 9767, 504, 7447, 12224, 1119, 8615, 2]
 
-// Module 12224 (HeroMedia)
+// Module 12260 (HeroMedia)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7415 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9735 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7447 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9767 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
-const getPreviewVideoAssetUrlDefault = tmp2(12188);
+const getPreviewVideoAssetUrlDefault = tmp2(12224);
 require = fn;
 const DEFAULT_CONTENT_PADDING = fn(1487).DEFAULT_CONTENT_PADDING;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ mediaBackground: { backgroundColor: "black" } });
 let ReactCompilerGating = fn(558);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -114,7 +114,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const stateFromStores = tmp(504).useStateFromStores(tmp12, tmp13, tmp14);
       const tmpResult = tmp(504);
-      const getOrFetchApplication = tmp(7415).useGetOrFetchApplication(applicationId);
+      const getOrFetchApplication = tmp(7447).useGetOrFetchApplication(applicationId);
       let prop;
       if (getOrFetchApplication != null) {
         prop = getOrFetchApplication.embeddedActivityConfig;
@@ -214,7 +214,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       tmp37[7] = tmp27;
                       tmp37[8] = tmp34;
                       tmp37[9] = tmp4.mediaBackground;
-                      const tmp38 = jsx(tmp10(8583), tmp37);
+                      const tmp38 = jsx(tmp10(8615), tmp37);
                       cResult[27] = tmp11.url;
                       cResult[28] = size.height;
                       cResult[29] = size.width;
@@ -292,13 +292,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       let tmp22 = null;
       if (null != prop1) {
-        tmp22 = tmp10(12188)(applicationId, prop.activity_preview_video_asset_id);
+        tmp22 = tmp10(12224)(applicationId, prop.activity_preview_video_asset_id);
       }
       cResult[10] = applicationId;
       cResult[11] = prop;
       cResult[12] = tmp22;
       tmp20 = tmp22;
-      const tmpResult2 = tmp(7415);
+      const tmpResult2 = tmp(7447);
     }
     const obj8 = { applicationId, size: size.width, names: tmp8 };
     cResult[4] = applicationId;

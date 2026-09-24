@@ -1,22 +1,22 @@
-// Module ID: 10328
-// Function ID: 10329
+// Module ID: 10367
+// Function ID: 10368
 // Name: ActiveSpeakerTooltip
-// Dependencies: [32, 19, 17, 4774, 10299, 1078, 21, 4758, 580, 558, 568, 504, 5651, 10308, 1119, 4754, 5341, 2]
+// Dependencies: [32, 19, 17, 4806, 10338, 1078, 21, 4790, 580, 558, 568, 504, 5683, 10347, 1119, 4786, 5373, 2]
 
-// Module 10328 (ActiveSpeakerTooltip)
+// Module 10367 (ActiveSpeakerTooltip)
 import nativeDefault from "native" /* 580 */;
-import UserSummaryItemDefault from "UserSummaryItem" /* 10308 */;
+import UserSummaryItemDefault from "UserSummaryItem" /* 10347 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4806 */;
 
 const require = fn;
 const View = fn(17).View;
-const StageChannelListStore = fn(10299);
+const StageChannelListStore = fn(10338);
 ({ useActiveSpeakerPillScrollHandler: metroRequire, useActiveSpeakerPillState: closure_7 } = StageChannelListStore);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { width: "100%", flexDirection: "column", alignItems: "center", justifyContent: "center" }, participantItemContainer: { padding: 10, flexDirection: "row", alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.round }, participantAvatarContainer: { alignItems: "center", justifyContent: "center" }, participantAvatarText: null, participantNameplateContainer: null, participantNameplateSpeakingText: null };
 let obj3 = { padding: 10, flexDirection: "row", alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.round };
 obj.participantAvatarText = { fontSize: 12, fontFamily: fn(1078).Fonts.PRIMARY_SEMIBOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, lineHeight: 18 };
@@ -57,7 +57,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
     tmp8 = cResult[3];
   }
   const obj = channel(568);
-  const first1 = _slicedToArray(channel(504).useStateFromStores(first, tmp7, tmp8, tmp(5651).isVersionEqual), 1)[0];
+  const first1 = _slicedToArray(channel(504).useStateFromStores(first, tmp7, tmp8, tmp(5683).isVersionEqual), 1)[0];
   const tmp9 = _slicedToArray(closure_6(), 2)[1];
   if (0 !== first1.length) {
     if (_slicedToArray(closure_7(), 1)[0]) {
@@ -113,7 +113,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
                         }
                       }
                       const obj3 = { accessibilityRole: "button", style: container, onPress: tmp9, children: tmp29 };
-                      const tmp35 = closure_8(tmp(5341).PressableOpacity, obj3);
+                      const tmp35 = closure_8(tmp(5373).PressableOpacity, obj3);
                       cResult[26] = tmp9;
                       cResult[27] = tmp4.container;
                       cResult[28] = tmp29;
@@ -139,7 +139,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
                 tmp25 = tmp28;
               }
               const obj6 = { style: participantNameplateSpeakingText, variant: "text-xs/medium", color: "text-default", children: tmp20 };
-              const tmp24 = closure_8(tmp(4754).Text, obj6);
+              const tmp24 = closure_8(tmp(4786).Text, obj6);
               cResult[16] = tmp4.participantNameplateSpeakingText;
               cResult[17] = tmp20;
               cResult[18] = tmp24;
@@ -174,7 +174,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
     const speakingParticipants = ChannelRTCStore.getSpeakingParticipants(channel.id);
     const items = [speakingParticipants.map((user) => user.user), ChannelRTCStore.getParticipantsVersion(channel.id)];
     return items;
-  }, items1, channel(5651).isVersionEqual), 1)[0];
+  }, items1, channel(5683).isVersionEqual), 1)[0];
   let tmp5 = null;
   if (0 !== first.length) {
     tmp5 = null;
@@ -190,11 +190,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
       const intl = tmp2(1119).intl;
       const obj8 = { count: first.length };
       obj7.children = intl.format(tmp2(1119).t["+dia6l"], obj8);
-      obj6.children = closure_8(tmp2(4754).Text, obj7);
+      obj6.children = closure_8(tmp2(4786).Text, obj7);
       items2[1] = closure_8(View, obj6);
       obj3.children = items2;
       obj2.children = closure_9(View, obj3);
-      tmp5 = closure_8(tmp2(5341).PressableOpacity, obj2);
+      tmp5 = closure_8(tmp2(5373).PressableOpacity, obj2);
     }
   }
   return tmp5;

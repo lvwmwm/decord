@@ -1,18 +1,18 @@
-// Module ID: 18248
-// Function ID: 18249
+// Module ID: 18258
+// Function ID: 18259
 // Name: GuildRoleSubscriptionTierTemplateBasicInfo
-// Dependencies: [19, 17, 1378, 1089, 21, 4758, 580, 558, 568, 5802, 1181, 4754, 1119, 7481, 15490, 5189, 2]
+// Dependencies: [19, 17, 1378, 1089, 21, 4790, 580, 558, 568, 5834, 1181, 4786, 1119, 7513, 15500, 5221, 2]
 
-// Module 18248 (GuildRoleSubscriptionTierTemplateBasicInfo)
+// Module 18258 (GuildRoleSubscriptionTierTemplateBasicInfo)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import BaseTextButton from "BaseTextButton" /* 5189 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import PriceUtils from "PriceUtils" /* 7481 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15490 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import BaseTextButton from "BaseTextButton" /* 5221 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import PriceUtils from "PriceUtils" /* 7513 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15500 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -21,7 +21,7 @@ const SubscriptionIntervalTypes = fn(1378).SubscriptionIntervalTypes;
 const CurrencyCodes = fn(1089).CurrencyCodes;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { paddingBottom: 24 }, header: { flexDirection: "row" }, image: null, templateCTAButton: null };
 let size = { width: 48, height: 48, borderRadius: nativeDefault.radii.sm };
 obj2.image = size;
@@ -79,7 +79,7 @@ export const GuildRoleSubscriptionTierTemplateBasicInfo = ReactCompilerGating.is
     }
     if (cResult[8] !== name) {
       const obj5 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: tmp13, children: name };
-      const tmp16 = timestampProducer(tmp(4754).Text, obj5);
+      const tmp16 = timestampProducer(tmp(4786).Text, obj5);
       cResult[8] = name;
       cResult[9] = tmp16;
       let tmp14 = tmp16;
@@ -96,15 +96,15 @@ export const GuildRoleSubscriptionTierTemplateBasicInfo = ReactCompilerGating.is
     }
     if (cResult[11] !== price_tier) {
       const intl = tmp(1119).intl;
-      const obj6 = { price: tmp(7481).formatPrice(price_tier, CurrencyCodes.USD), interval: null };
-      const tmpResult = tmp(7481);
+      const obj6 = { price: tmp(7513).formatPrice(price_tier, CurrencyCodes.USD), interval: null };
+      const tmpResult = tmp(7513);
       const obj7 = { interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 };
-      obj6.interval = tmp(15490).formatPlanInterval(obj7);
+      obj6.interval = tmp(15500).formatPlanInterval(obj7);
       const formatResult = intl.format(tmp(1119).t.CgmBaG, obj6);
       cResult[11] = price_tier;
       cResult[12] = formatResult;
       let tmp20 = formatResult;
-      const tmpResult2 = tmp(15490);
+      const tmpResult2 = tmp(15500);
     } else {
       tmp20 = cResult[12];
     }
@@ -166,7 +166,7 @@ export const GuildRoleSubscriptionTierTemplateBasicInfo = ReactCompilerGating.is
                       tmp47 = tmp50;
                     }
                     const obj9 = { text: tmp41, pillStyle: tmp4.templateCTAButton, onPress: tmp43, grow: true };
-                    const tmp46 = timestampProducer(tmp(5189).BaseTextButton, obj9);
+                    const tmp46 = timestampProducer(tmp(5221).BaseTextButton, obj9);
                     cResult[32] = tmp4.templateCTAButton;
                     cResult[33] = tmp43;
                     cResult[34] = tmp46;
@@ -186,7 +186,7 @@ export const GuildRoleSubscriptionTierTemplateBasicInfo = ReactCompilerGating.is
             const obj10 = { variant: "text-sm/normal", style: descriptionTextStyle };
             const merged = Object.assign(descriptionTextProps);
             obj10.children = description;
-            const tmp40 = timestampProducer(tmp(4754).Text, obj10);
+            const tmp40 = timestampProducer(tmp(4786).Text, obj10);
             cResult[23] = description;
             cResult[24] = descriptionTextProps;
             cResult[25] = descriptionTextStyle;
@@ -214,7 +214,7 @@ export const GuildRoleSubscriptionTierTemplateBasicInfo = ReactCompilerGating.is
       tmp27 = tmp30;
     }
     const obj13 = { variant: "heading-md/medium", style: subscriptionPlanTextStyle, children: tmp20 };
-    const tmp26 = timestampProducer(tmp(4754).Text, obj13);
+    const tmp26 = timestampProducer(tmp(4786).Text, obj13);
     cResult[13] = subscriptionPlanTextStyle;
     cResult[14] = tmp20;
     cResult[15] = tmp26;

@@ -1,13 +1,13 @@
-// Module ID: 10474
-// Function ID: 10475
+// Module ID: 10510
+// Function ID: 10511
 // Name: RoleSubscriptionEmojiUpsellAlert
-// Dependencies: [19, 2067, 2052, 21, 9426, 1119, 558, 568, 1482, 504, 5739, 10475, 9434, 5207, 2]
+// Dependencies: [19, 2067, 2052, 21, 9458, 1119, 558, 568, 1482, 504, 5771, 10511, 9466, 5239, 2]
 
-// Module 10474 (RoleSubscriptionEmojiUpsellAlert)
+// Module 10510 (RoleSubscriptionEmojiUpsellAlert)
 import util from "util" /* 1119 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
-import _modDef9426 from "module_9426" /* 9426 */;
-import CreatorRevenueButton from "CreatorRevenueButton" /* 10475 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5771 */;
+import _modDef9458 from "module_9458" /* 9458 */;
+import CreatorRevenueButton from "CreatorRevenueButton" /* 10511 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
@@ -54,7 +54,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     name = stateFromStores.name;
   }
   if (cResult[3] !== name) {
-    const obj2 = { image: tmp4(9426), title: null, description: null };
+    const obj2 = { image: tmp4(9458), title: null, description: null };
     let intl = tmp(1119).intl;
     obj2.title = intl.string(tmp(1119).t.cBjkcx);
     const intl2 = tmp(1119).intl;
@@ -106,7 +106,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         }
       }
       const obj4 = { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 };
-      const tmp21 = jsx(tmp4(5207), { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 });
+      const tmp21 = jsx(tmp4(5239), { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 });
       cResult[14] = onClose;
       cResult[15] = tmp15;
       cResult[16] = tmp16;
@@ -114,7 +114,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       tmp19 = tmp21;
     }
     const obj5 = { alertWidth: diff, upsellItem: tmp11 };
-    const tmp18 = jsx(tmp(9434).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
+    const tmp18 = jsx(tmp(9466).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
     cResult[11] = diff;
     cResult[12] = tmp11;
     cResult[13] = tmp18;
@@ -163,7 +163,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     if (stateFromStores != null) {
       name = stateFromStores.name;
     }
-    const obj = { image: _modDef9426, title: null, description: null };
+    const obj = { image: _modDef9458, title: null, description: null };
     const intl = util.intl;
     obj.title = intl.string(util.t.cBjkcx);
     const intl2 = util.intl;

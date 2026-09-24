@@ -1,14 +1,14 @@
-// Module ID: 8356
-// Function ID: 8357
+// Module ID: 8388
+// Function ID: 8389
 // Name: ChangeLogActionCreators
-// Dependencies: [5, 4772, 1078, 2098, 577, 2023, 1275, 2]
+// Dependencies: [5, 4804, 1078, 2098, 577, 2023, 1275, 2]
 
-// Module 8356 (ChangeLogActionCreators)
+// Module 8388 (ChangeLogActionCreators)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import HTTPUtils from "HTTPUtils" /* 1275 */;
 import UserSettings from "UserSettings" /* 2023 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 4772 */;
+import ChangelogStore from "ChangelogStore" /* 4804 */;
 
 require = fn;
 function cacheBustParam() {

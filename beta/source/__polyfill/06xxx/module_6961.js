@@ -1,131 +1,98 @@
 // Module ID: 6961
 // Function ID: 6962
-// Dependencies: [6896]
-// Exports: checkMappingForChangeProperties, flattenAndFilterEvent, getChangeEventCalculator, isEventForHandlerWithTag, isNativeAnimatedEvent, isStateChangeEvent, isTouchEvent, maybeExtractNativeEvent, shouldHandleTouchEvents
+// Dependencies: [41, 42, 93, 95, 98, 19, 6962, 6928, 6950, 6948]
 
 // Module 6961
-import tagMessage from "tagMessage" /* 6896 */;
+import _modDef6950 from "module_6950" /* 6950 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import noop from "module_19" /* 19 */;
+import PlatformConstants from "module_6962" /* 6962 */;
 
-require = arg1;
-const dependencyMap = arg6;
-function isNativeEvent(arg0) {
-  return "nativeEvent" in arg0;
-}
-isNativeEvent.__closure = {};
-isNativeEvent.__workletHash = 15502708650016;
-isNativeEvent.__initData = { code: "function isNativeEvent_Pnpm_eventUtilsTs1(event){return'nativeEvent'in event;}" };
-function maybeExtractNativeEvent(nativeEvent) {
-  if (typeof isNativeEvent === "function") {
-    if ("nativeEvent" in nativeEvent) {
-      nativeEvent = nativeEvent.nativeEvent;
+const ForceTouchFallback = fn;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
     }
-    return nativeEvent;
-  } else {
-    throw new TypeError("Trying to call a non-function");
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
-maybeExtractNativeEvent.__closure = { isNativeEvent };
-maybeExtractNativeEvent.__workletHash = 9418753326359;
-maybeExtractNativeEvent.__initData = { code: "function maybeExtractNativeEvent_Pnpm_eventUtilsTs2(event){const{isNativeEvent}=this.__closure;return isNativeEvent(event)?event.nativeEvent:event;}" };
-function flattenAndFilterEvent(handlerTag) {
-  const merged = Object.assign(handlerTag.handlerData);
-  return { handlerTag: handlerTag.handlerTag };
-}
-flattenAndFilterEvent.__closure = {};
-flattenAndFilterEvent.__workletHash = 12741778497058;
-flattenAndFilterEvent.__initData = { code: "function flattenAndFilterEvent_Pnpm_eventUtilsTs3(event){return{handlerTag:event.handlerTag,...event.handlerData};}" };
-function isEventForHandlerWithTag(arg0, handlerTag) {
-  return handlerTag.handlerTag === arg0;
-}
-isEventForHandlerWithTag.__closure = {};
-isEventForHandlerWithTag.__workletHash = 11134871115176;
-isEventForHandlerWithTag.__initData = { code: "function isEventForHandlerWithTag_Pnpm_eventUtilsTs4(handlerTag,event){return event.handlerTag===handlerTag;}" };
-function isNativeAnimatedEvent(onUpdate) {
-  let tmp = onUpdate;
-  if (tmp) {
-    tmp = "_argMapping" in onUpdate;
-  }
-  return tmp;
-}
-isNativeAnimatedEvent.__closure = {};
-isNativeAnimatedEvent.__workletHash = 3439774750008;
-isNativeAnimatedEvent.__initData = { code: "function isNativeAnimatedEvent_Pnpm_eventUtilsTs5(callback){return!!callback&&'_argMapping'in callback;}" };
-const __initData = { code: "function pnpm_eventUtilsTs7(current,previous){const{diffCalculator}=this.__closure;const currentEventData=current.handlerData;const previousEventData=previous?previous.handlerData:null;const changePayload=diffCalculator(currentEventData,previousEventData);current.handlerData={...currentEventData,...changePayload};return current;}" };
-function getChangeEventCalculator(diffCalculator) {
-  const fn = function t(handlerData, handlerData2) {
-    handlerData = handlerData.handlerData;
-    let handlerData1 = null;
-    if (handlerData2) {
-      handlerData1 = handlerData2.handlerData;
+class ForceTouchFallback {
+  constructor() {
+    self = this;
+    tmp = c2(this, ForceTouchFallback);
+    tmp2 = closure_4;
+    obj = closure_4(ForceTouchFallback);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-    const merged = Object.assign(handlerData);
-    const merged1 = Object.assign(diffCalculator(handlerData, handlerData1));
-    handlerData.handlerData = {};
-    return handlerData;
-  };
-  fn.__closure = { diffCalculator };
-  fn.__workletHash = 10887773943786;
-  fn.__initData = __initData;
-  return fn;
-}
-getChangeEventCalculator.__closure = {};
-getChangeEventCalculator.__workletHash = 1165584403675;
-getChangeEventCalculator.__initData = { code: "function getChangeEventCalculator_Pnpm_eventUtilsTs6(diffCalculator){return function(current,previous){'worklet';const currentEventData=current.handlerData;const previousEventData=previous?previous.handlerData:null;const changePayload=diffCalculator(currentEventData,previousEventData);current.handlerData={...currentEventData,...changePayload};return current;};}" };
-function isTouchEvent(arg0) {
-  return "allTouches" in arg0;
-}
-isTouchEvent.__closure = {};
-isTouchEvent.__workletHash = 14798108877298;
-isTouchEvent.__initData = { code: "function isTouchEvent_Pnpm_eventUtilsTs8(event){return'allTouches'in event;}" };
-function isStateChangeEvent(oldState) {
-  let tmp = "oldState" in oldState;
-  if (tmp) {
-    tmp = undefined !== oldState.oldState;
+    return tmp3(self, constructResult);
   }
-  return tmp;
 }
-isStateChangeEvent.__closure = {};
-isStateChangeEvent.__workletHash = 7295971713196;
-isStateChangeEvent.__initData = { code: "function isStateChangeEvent_Pnpm_eventUtilsTs9(event){return'oldState'in event&&event.oldState!==undefined;}" };
-
-export { maybeExtractNativeEvent };
-export { flattenAndFilterEvent };
-export { isEventForHandlerWithTag };
-export { isNativeAnimatedEvent };
-export const checkMappingForChangeProperties = function checkMappingForChangeProperties(arg0) {
-  const iter = arg0._argMapping[Symbol.iterator]();
-  const nextResult = iter.next();
-  while (iter !== undefined) {
-    let tmp2 = nextResult;
-    if (nextResult) {
-      if ("nativeEvent" in tmp2) {
-        if ("handlerData" in tmp2.nativeEvent) {
-          for (const key10023 in tmp2.nativeEvent.handlerData) {
-            let tmp15 = key10023;
-            if (!key10023.startsWith("change")) {
-              continue;
-            } else {
-              let tmp6 = globalThis;
-              let _Error = Error;
-              let obj = tagMessage;
-              let _HermesInternal = HermesInternal;
-              let str = " is not available when using Animated.Event.";
-              let str2 = "";
-              let tmp10 = new.target;
-              let tmp11 = new.target;
-              let error = new Error(obj.tagMessage("" + tmp15 + " is not available when using Animated.Event."));
-              throw error;
-            }
-          }
-        }
-      }
-    }
-    continue;
+_inherits(ForceTouchFallback, noop.Component);
+const entry = {
+  key: "componentDidMount",
+  value: function componentDidMount() {
+    console.warn(ForceTouchFallback(6928).tagMessage("ForceTouchGestureHandler is not available on this platform. Please use ForceTouchGestureHandler.forceTouchAvailable to conditionally render other components that would provide a fallback behavior specific to your usecase"));
   }
 };
-export const shouldHandleTouchEvents = function shouldHandleTouchEvents(onTouchesDown) {
-  return onTouchesDown.onTouchesDown || onTouchesDown.onTouchesMove || onTouchesDown.onTouchesUp || onTouchesDown.onTouchesCancel;
-};
-export { getChangeEventCalculator };
-export { isTouchEvent };
-export { isStateChangeEvent };
+const items = [
+  entry,
+  {
+    key: "render",
+    value: function render() {
+      return this.props.children;
+    }
+  }
+];
+let importDefaultResultResult = _createClass(ForceTouchFallback, items);
+importDefaultResultResult.forceTouchAvailable = false;
+let forceTouchAvailable;
+if (PlatformConstants != null) {
+  forceTouchAvailable = PlatformConstants.forceTouchAvailable;
+}
+const items1 = ["minForce", "maxForce", "feedbackOnActivation"];
+if (forceTouchAvailable) {
+  let obj = { name: "ForceTouchGestureHandler", allowedProps: null, config: null };
+  const items2 = [];
+  HermesBuiltin.arraySpread(items1, HermesBuiltin.arraySpread(fn(6948).baseGestureHandlerProps, 0));
+  obj.allowedProps = items2;
+  obj.config = {};
+  importDefaultResultResult = _modDef6950(obj);
+  const importDefaultResult4 = _modDef6950;
+}
+let flag;
+if (PlatformConstants != null) {
+  flag = PlatformConstants.forceTouchAvailable;
+}
+if (!flag) {
+  flag = false;
+}
+importDefaultResultResult.forceTouchAvailable = flag;
+
+export const forceTouchGestureHandlerProps = items1;
+export const forceTouchHandlerName = "ForceTouchGestureHandler";
+export const ForceTouchGestureHandler = importDefaultResultResult;

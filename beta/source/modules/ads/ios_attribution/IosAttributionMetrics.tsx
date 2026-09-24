@@ -1,14 +1,14 @@
-// Module ID: 11616
-// Function ID: 11617
+// Module ID: 11652
+// Function ID: 11653
 // Name: IosAttributionMetrics
-// Dependencies: [1078, 5086, 5091, 1245, 2]
+// Dependencies: [1078, 5118, 5123, 1245, 2]
 // Exports: trackIosAttributionClick, trackIosAttributionImpression
 
-// Module 11616 (IosAttributionMetrics)
+// Module 11652 (IosAttributionMetrics)
 import Constants from "Constants" /* 1078 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5086 */;
-import MetricEvents from "MetricEvents" /* 5091 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5118 */;
+import MetricEvents from "MetricEvents" /* 5123 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

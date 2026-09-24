@@ -1,17 +1,17 @@
-// Module ID: 11483
-// Function ID: 11484
+// Module ID: 11519
+// Function ID: 11520
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 558, 568, 4497, 4481, 5187, 11484, 4754, 2]
+// Dependencies: [32, 19, 21, 558, 568, 4529, 4513, 5219, 11520, 4786, 2]
 
-// Module 11483 (BalanceCounter)
+// Module 11519 (BalanceCounter)
 import c from "c" /* 568 */;
-import AccessibilityPreferencesContext from "AccessibilityPreferencesContext" /* 4481 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import spring from "spring" /* 5187 */;
+import AccessibilityPreferencesContext from "AccessibilityPreferencesContext" /* 4513 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import spring from "spring" /* 5219 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop_mod from "module_19" /* 19 */;
 
-const Text_Text = tmp(4754);
+const Text_Text = tmp(4786);
 require = fn;
 let noop = fn(19);
 ({ useState: closure_4, useEffect: hasOwnProperty, useRef: metroRequire, useCallback: closure_7 } = noop);
@@ -251,7 +251,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((value) => {
     obj4.style = items1;
     const obj6 = { variant: "text-sm/semibold", style, maxFontSizeMultiplier: 2, children: obj2.toFixed(0) };
     obj4.children = jsx(Text_Text.Text, { variant: "text-sm/semibold", style, maxFontSizeMultiplier: 2, children: obj2.toFixed(0) });
-    tmp14 = jsx(onValueChange(4497).View, { style: null, children: null });
+    tmp14 = jsx(onValueChange(4529).View, { style: null, children: null });
   }
   return tmp14;
 });

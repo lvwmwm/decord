@@ -1,14 +1,14 @@
-// Module ID: 13573
-// Function ID: 13574
+// Module ID: 13609
+// Function ID: 13610
 // Name: VoicePanelVideoGuardErrorAlert
-// Dependencies: [19, 21, 558, 568, 5116, 1119, 4754, 13571, 5116, 2]
+// Dependencies: [19, 21, 558, 568, 5148, 1119, 4786, 13607, 5148, 2]
 
-// Module 13573 (VoicePanelVideoGuardErrorAlert)
+// Module 13609 (VoicePanelVideoGuardErrorAlert)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AlertModal from "AlertModal" /* 5116 */;
-import VideoGuardExperiment from "VideoGuardExperiment" /* 13571 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AlertModal from "AlertModal" /* 5148 */;
+import VideoGuardExperiment from "VideoGuardExperiment" /* 13607 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -32,9 +32,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-sm/normal", color: "text-subtle", children: null };
     const intl2 = tmp(1119).intl;
-    const obj4 = { helpdeskArticle: tmp(13571).VIDEO_GUARD_BLOG_POST_URL };
+    const obj4 = { helpdeskArticle: tmp(13607).VIDEO_GUARD_BLOG_POST_URL };
     obj3.children = intl2.format(tmp(1119).t.BPDKoA, obj4);
-    const tmp9 = jsx(tmp(4754).Text, { variant: "text-sm/normal", color: "text-subtle", children: null });
+    const tmp9 = jsx(tmp(4786).Text, { variant: "text-sm/normal", color: "text-subtle", children: null });
     cResult[1] = tmp9;
     let tmp7 = tmp9;
   } else {
@@ -50,7 +50,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
   }
   if (cResult[3] !== dismissModalCallback) {
     const obj5 = { variant: "secondary", text: tmp10, onPress: dismissModalCallback };
-    const tmp14 = jsx(tmp(5116).AlertActionButton, { variant: "secondary", text: tmp10, onPress: dismissModalCallback });
+    const tmp14 = jsx(tmp(5148).AlertActionButton, { variant: "secondary", text: tmp10, onPress: dismissModalCallback });
     cResult[3] = dismissModalCallback;
     cResult[4] = tmp14;
     let tmp12 = tmp14;

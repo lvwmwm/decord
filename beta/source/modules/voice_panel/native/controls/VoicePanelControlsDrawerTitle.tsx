@@ -1,24 +1,24 @@
-// Module ID: 12428
-// Function ID: 12429
+// Module ID: 12464
+// Function ID: 12465
 // Name: VoicePanelControlsDrawerTitle
-// Dependencies: [19, 17, 12418, 21, 4758, 580, 558, 568, 4497, 12429, 4754, 7320, 5804, 2]
+// Dependencies: [19, 17, 12454, 21, 4790, 580, 558, 568, 4529, 12465, 4786, 7352, 5836, 2]
 
-// Module 12428 (VoicePanelControlsDrawerTitle)
+// Module 12464 (VoicePanelControlsDrawerTitle)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import NativeViewDefault from "NativeView" /* 5804 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7320 */;
-import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 12429 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import NativeViewDefault from "NativeView" /* 5836 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7352 */;
+import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 12465 */;
 import noop from "module_19" /* 19 */;
 
-const Text_Text = tmp2(4754);
+const Text_Text = tmp2(4786);
 require = fn;
 const StyleSheet = fn(17).StyleSheet;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
-let obj = { titleWrapper: { position: "absolute", top: 0, left: 0, right: 0, justifyContent: "center", alignItems: "center", padding: 16, height: fn(12418).CONTROLS_DRAWER_HEADER_SIZE }, titlePill: { borderRadius: nativeDefault.radii.round, paddingHorizontal: 12, paddingTop: 1, paddingBottom: 2 }, titlePillBG: null };
+const createStyles = fn(4790);
+let obj = { titleWrapper: { position: "absolute", top: 0, left: 0, right: 0, justifyContent: "center", alignItems: "center", padding: 16, height: fn(12454).CONTROLS_DRAWER_HEADER_SIZE }, titlePill: { borderRadius: nativeDefault.radii.round, paddingHorizontal: 12, paddingTop: 1, paddingBottom: 2 }, titlePillBG: null };
 let obj3 = { borderRadius: nativeDefault.radii.round, paddingHorizontal: 12, paddingTop: 1, paddingBottom: 2 };
 obj.titlePillBG = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_6 = createStyles.createStyles(obj);
@@ -71,7 +71,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         }
         if (cResult[9] !== title) {
           const obj2 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
-          const tmp18 = React4(tmp(4754).Text, obj2);
+          const tmp18 = React4(tmp(4786).Text, obj2);
           cResult[9] = title;
           cResult[10] = tmp18;
           let tmp16 = tmp18;

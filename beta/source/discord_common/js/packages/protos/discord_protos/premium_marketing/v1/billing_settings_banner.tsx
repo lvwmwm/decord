@@ -1,14 +1,14 @@
-// Module ID: 10988
-// Function ID: 10989
+// Module ID: 11024
+// Function ID: 11025
 // Name: billing_settings_banner
-// Dependencies: [32, 1191, 10978, 10970, 10968, 10969, 2]
+// Dependencies: [32, 1191, 11014, 11006, 11004, 11005, 2]
 
-// Module 10988 (billing_settings_banner)
+// Module 11024 (billing_settings_banner)
 import _mod1191 from "module_1191" /* 1191 */;
-import localized_string from "localized_string" /* 10968 */;
-import help_article from "help_article" /* 10969 */;
-import cta_button from "cta_button" /* 10970 */;
-import theme_aware_asset from "theme_aware_asset" /* 10978 */;
+import localized_string from "localized_string" /* 11004 */;
+import help_article from "help_article" /* 11005 */;
+import cta_button from "cta_button" /* 11006 */;
+import theme_aware_asset from "theme_aware_asset" /* 11014 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

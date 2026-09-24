@@ -1,16 +1,16 @@
-// Module ID: 9106
-// Function ID: 9107
+// Module ID: 9138
+// Function ID: 9139
 // Name: useTrackShopCardClick
-// Dependencies: [19, 9107, 1078, 558, 568, 9045, 8452, 7801, 7800, 1245, 2]
+// Dependencies: [19, 9139, 1078, 558, 568, 9077, 8484, 7833, 7832, 1245, 2]
 
-// Module 9106 (useTrackShopCardClick)
+// Module 9138 (useTrackShopCardClick)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7800 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7801 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7832 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7833 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const useSelectedVariantIndex = fn(9107).useSelectedVariantIndex;
+const useSelectedVariantIndex = fn(9139).useSelectedVariantIndex;
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

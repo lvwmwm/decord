@@ -1,22 +1,22 @@
-// Module ID: 15186
-// Function ID: 15187
+// Module ID: 15196
+// Function ID: 15197
 // Name: FamilyCenterRequestorDetails
-// Dependencies: [19, 17, 21, 4758, 1181, 580, 558, 568, 8921, 15159, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 1181, 580, 558, 568, 8953, 15169, 4786, 2]
 
-// Module 15186 (FamilyCenterRequestorDetails)
+// Module 15196 (FamilyCenterRequestorDetails)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useUserLinks from "useUserLinks" /* 8921 */;
-import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 15159 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useUserLinks from "useUserLinks" /* 8953 */;
+import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 15169 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { display: "flex", flexDirection: "row", flexGrow: 1, flexShrink: 1 }, avatar: { borderRadius: fn(1181).AVATAR_SIZE_MAP[fn(undefined, 1181).AvatarSizes.NORMAL] / 2, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, detailsContainer: null };
 let obj3 = { borderRadius: fn(1181).AVATAR_SIZE_MAP[fn(undefined, 1181).AvatarSizes.NORMAL] / 2, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj2.detailsContainer = { paddingLeft: nativeDefault.space.PX_12, paddingRight: nativeDefault.space.PX_4, flexGrow: 1, flexShrink: 1 };
@@ -46,7 +46,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((otherUser) => {
     }
     if (cResult[5] !== linkTimestampText) {
       const obj4 = { variant: "text-xs/semibold", color: "text-muted", children: linkTimestampText };
-      const tmp14 = React4(tmp(4754).Text, obj4);
+      const tmp14 = React4(tmp(4786).Text, obj4);
       cResult[5] = linkTimestampText;
       cResult[6] = tmp14;
       let tmp12 = tmp14;

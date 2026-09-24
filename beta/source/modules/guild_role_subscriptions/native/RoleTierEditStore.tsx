@@ -1,14 +1,14 @@
-// Module ID: 18192
-// Function ID: 18193
+// Module ID: 18202
+// Function ID: 18203
 // Name: RoleTierEditStore
-// Dependencies: [32, 5, 1252, 1247, 7500, 558, 568, 4383, 5203, 15471, 2]
+// Dependencies: [32, 5, 1252, 1247, 7532, 558, 568, 4415, 5235, 15481, 2]
 // Exports: resetImperatively
 
-// Module 18192 (RoleTierEditStore)
+// Module 18202 (RoleTierEditStore)
 import c from "c" /* 568 */;
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
-import _mod4383 from "module_4383" /* 4383 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15471 */;
+import _mod4415 from "module_4415" /* 4415 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15481 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -48,7 +48,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0) => {
     return (async () => {
       closure_1 = tmp3;
       priceTiers(1252).batchUpdates(() => priceTiers({ priceTierState: constants.LOADING }));
-      await closure_2_2(7500).getPriceTiers(priceTiers);
+      await closure_2_2(7532).getPriceTiers(priceTiers);
       if (1 === tmp7) {
         c2 = 0;
         priceTiers(1252).batchUpdates(() => priceTiers({ priceTierState: constants.ERROR }));
@@ -107,7 +107,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   } else {
     first = cResult[0];
   }
-  const tmp5 = _slicedToArray(withEqualityFn(first, require("module_4383").shallow), 3);
+  const tmp5 = _slicedToArray(withEqualityFn(first, require("module_4415").shallow), 3);
   const first1 = tmp5[0];
   closure_2 = tmp7;
   dependencyMap = tmp8;
@@ -121,7 +121,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         if (cResult[6] === tmp9) {
           let tmp10 = cResult[7];
         }
-        first1(5203)(tmp10);
+        first1(5235)(tmp10);
         class G {
           constructor() {
             tmp = closure_4(closure_0);
@@ -167,11 +167,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const items = [, , ];
     ({ priceTiers: arr[0], priceTierState: arr[1], loadPriceTiers: arr[2] } = arg0);
     return items;
-  }, require("module_4383").shallow), 3);
+  }, require("module_4415").shallow), 3);
   const tiers = tmp[0];
   closure_2 = tmp3;
   dependencyMap = tmp[2];
-  tiers(5203)(() => {
+  tiers(5235)(() => {
     let tmp2 = null == first;
     if (tmp2) {
       tmp2 = closure_2 !== obj.LOADING;
@@ -285,12 +285,12 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     first = cResult[0];
   }
-  return withEqualityFn(first, _mod4383.shallow);
+  return withEqualityFn(first, _mod4415.shallow);
 }) : (() => withEqualityFn((arg0) => {
   const items = [, ];
   ({ groupCover: arr[0], setGroupCover: arr[1] } = arg0);
   return items;
-}, _mod4383.shallow));
+}, _mod4415.shallow));
 ReactCompilerGating = fn(558);
 const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(1);
@@ -305,12 +305,12 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     first = cResult[0];
   }
-  return withEqualityFn(first, _mod4383.shallow);
+  return withEqualityFn(first, _mod4415.shallow);
 }) : (() => withEqualityFn((arg0) => {
   const items = [, ];
   ({ groupDescription: arr[0], setGroupDescription: arr[1] } = arg0);
   return items;
-}, _mod4383.shallow));
+}, _mod4415.shallow));
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/RoleTierEditStore.tsx");
 
@@ -338,9 +338,9 @@ export const useGroupIsFullGateState = ReactCompilerGating.isReactCompilerEnable
   } else {
     first = cResult[0];
   }
-  return withEqualityFn(first, _mod4383.shallow);
+  return withEqualityFn(first, _mod4415.shallow);
 }) : (() => withEqualityFn((arg0) => {
   const items = [, ];
   ({ groupIsFullGate: arr[0], setGroupIsFullGate: arr[1] } = arg0);
   return items;
-}, _mod4383.shallow));
+}, _mod4415.shallow));

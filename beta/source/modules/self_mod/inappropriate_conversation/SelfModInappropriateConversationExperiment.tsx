@@ -1,10 +1,10 @@
-// Module ID: 10363
-// Function ID: 10364
+// Module ID: 10402
+// Function ID: 10403
 // Name: SelfModInappropriateConversationExperiment
 // Dependencies: [1439, 558, 568, 2]
 // Exports: isEligibleForInappropriateConversationWarning
 
-// Module 10363 (SelfModInappropriateConversationExperiment)
+// Module 10402 (SelfModInappropriateConversationExperiment)
 import c from "c" /* 568 */;
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1439 */;
 

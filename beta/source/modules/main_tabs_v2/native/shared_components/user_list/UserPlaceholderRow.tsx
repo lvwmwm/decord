@@ -1,15 +1,15 @@
-// Module ID: 10064
-// Function ID: 10065
+// Module ID: 10103
+// Function ID: 10104
 // Name: UserPlaceholderRow
-// Dependencies: [19, 17, 4750, 21, 4758, 580, 558, 568, 4497, 504, 4759, 4762, 2]
+// Dependencies: [19, 17, 4782, 21, 4790, 580, 558, 568, 4529, 504, 4791, 4794, 2]
 
-// Module 10064 (UserPlaceholderRow)
+// Module 10103 (UserPlaceholderRow)
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
-import timingPresets from "timingPresets" /* 4762 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
+import timingPresets from "timingPresets" /* 4794 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 
@@ -17,7 +17,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles((height) => {
   const obj = { row: { paddingHorizontal: nativeDefault.space.PX_16, flexDirection: "row", alignItems: "center", height }, rowInner: null, rowHeaderWrapper: null, placeholderAvatar: null, placeholderText: null };
   const obj2 = { paddingHorizontal: nativeDefault.space.PX_16, flexDirection: "row", alignItems: "center", height };
@@ -44,7 +44,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   const tmp6 = closure_8(height);
   let obj = sharedValue(568);
-  sharedValue = sharedValue(4497).useSharedValue(1);
+  sharedValue = sharedValue(4529).useSharedValue(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
     const fn = function w() {
@@ -57,7 +57,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   } else {
     [tmp8, tmp9] = cResult;
   }
-  const tmpResult = sharedValue(4497);
+  const tmpResult = sharedValue(4529);
   if (tmp4) {
     tmp4 = !tmpResult3.useStateFromStores(tmp8, tmp9);
   }
@@ -78,7 +78,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     I.__closure = obj2;
     I.__workletHash = 10137317865125;
     I.__initData = __initData;
-    const animatedStyle = tmp(4497).useAnimatedStyle(I);
+    const animatedStyle = tmp(4529).useAnimatedStyle(I);
     if (cResult[6] === animatedStyle) {
       if (cResult[7] === tmp6.row) {
         let tmp17 = cResult[8];
@@ -216,7 +216,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     cResult[7] = tmp6.row;
     cResult[8] = items3;
     tmp17 = items3;
-    const tmpResult4 = tmp(4497);
+    const tmpResult4 = tmp(4529);
   }
   const fn2 = function b() {
     if (closure_1) {
@@ -249,8 +249,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   let sharedValue;
   flag = undefined;
   const tmp3 = closure_8(height);
-  sharedValue = sharedValue(4497).useSharedValue(1);
-  let obj = sharedValue(4497);
+  sharedValue = sharedValue(4529).useSharedValue(1);
+  let obj = sharedValue(4529);
   const tmp4 = sharedValue;
   const items = [AccessibilityStore];
   if (flag) {
@@ -279,7 +279,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   S.__closure = { opacity: sharedValue };
   S.__workletHash = 4335136835878;
   S.__initData = __initData2;
-  const animatedStyle = tmp4(4497).useAnimatedStyle(S);
+  const animatedStyle = tmp4(4529).useAnimatedStyle(S);
   let obj3 = { style: null, collapsable: false, children: null };
   const items2 = [tmp3.row, animatedStyle];
   obj3.style = items2;
@@ -297,5 +297,5 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   obj5.children = closure_6(View, obj6);
   items3[1] = closure_6(View, obj5);
   obj3.children = items3;
-  return closure_7(flag(4497).View, obj3);
+  return closure_7(flag(4529).View, obj3);
 }));

@@ -1,12 +1,12 @@
-// Module ID: 16935
-// Function ID: 16936
+// Module ID: 16945
+// Function ID: 16946
 // Name: useOtherGuildJoinRequestsForUser
-// Dependencies: [19, 5761, 558, 568, 504, 5760, 2]
+// Dependencies: [19, 5793, 558, 568, 504, 5792, 2]
 
-// Module 16935 (useOtherGuildJoinRequestsForUser)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5760 */;
+// Module 16945 (useOtherGuildJoinRequestsForUser)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5792 */;
 import noop from "module_19" /* 19 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5761 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5793 */;
 
 const require = fn;
 const ReactCompilerGating = fn(558);

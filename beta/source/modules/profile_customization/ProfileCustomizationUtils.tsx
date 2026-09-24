@@ -1,17 +1,17 @@
-// Module ID: 8440
-// Function ID: 8441
+// Module ID: 8472
+// Function ID: 8473
 // Name: ProfileCustomizationUtils
-// Dependencies: [19, 8434, 7862, 2109, 558, 568, 504, 4610, 1119, 2]
+// Dependencies: [19, 8466, 7894, 2109, 558, 568, 504, 4642, 1119, 2]
 // Exports: announcePendingAvatarChange, getProfilePreviewValue, resolveCollectiblesOverride, showRemoveAvatar, showRemoveBanner
 
-// Module 8440 (ProfileCustomizationUtils)
+// Module 8472 (ProfileCustomizationUtils)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import shared from "shared" /* 4610 */;
+import shared from "shared" /* 4642 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8434 */;
-import UserProfileStore from "UserProfileStore" /* 7862 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8466 */;
+import UserProfileStore from "UserProfileStore" /* 7894 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 
 const require = globalThis.__r;

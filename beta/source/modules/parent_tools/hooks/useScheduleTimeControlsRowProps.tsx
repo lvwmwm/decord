@@ -1,14 +1,14 @@
-// Module ID: 15177
-// Function ID: 15178
+// Module ID: 15187
+// Function ID: 15188
 // Name: useScheduleTimeControlsRowProps
-// Dependencies: [21, 558, 568, 4754, 1119, 2486, 2]
+// Dependencies: [21, 558, 568, 4786, 1119, 2486, 2]
 
-// Module 15177 (useScheduleTimeControlsRowProps)
+// Module 15187 (useScheduleTimeControlsRowProps)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import _modDef2486 from "module_2486" /* 2486 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,11 +20,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   if (0 === arr.length) {
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { subLabel: null, trailing: "a" };
+      const obj2 = { subLabel: null, trailing: "Array" };
       const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
       const intl3 = tmp(1119).intl;
       obj3.children = intl3.string(_modDef2486.fOBIZH);
-      obj2.subLabel = jsx(tmp(4754).Text, { variant: "text-xs/medium", color: "text-muted", children: null });
+      obj2.subLabel = jsx(tmp(4786).Text, { variant: "text-xs/medium", color: "text-muted", children: null });
       cResult[0] = obj2;
       let first = obj2;
     } else {
@@ -71,7 +71,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
     } else {
       if (cResult[8] !== cResult[7]) {
         const obj5 = { variant: "text-sm/medium", color: "text-muted", children: tmp12 };
-        const tmp19 = jsx(tmp(4754).Text, { variant: "text-sm/medium", color: "text-muted", children: tmp12 });
+        const tmp19 = jsx(tmp(4786).Text, { variant: "text-sm/medium", color: "text-muted", children: tmp12 });
         cResult[8] = tmp12;
         cResult[9] = tmp19;
         let tmp17 = tmp19;
@@ -93,7 +93,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   }
 }) : ((arr) => {
   if (0 === arr.length) {
-    const obj2 = { subLabel: null, trailing: "a" };
+    const obj2 = { subLabel: null, trailing: "Array" };
     const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
     const intl = util.intl;
     obj3.children = intl.string(_modDef2486.fOBIZH);

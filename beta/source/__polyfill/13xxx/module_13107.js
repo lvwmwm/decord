@@ -1,28 +1,22 @@
 // Module ID: 13107
 // Function ID: 13108
-// Dependencies: [13063, 13093]
-// Exports: createClientReportEnvelope
+// Dependencies: [13091]
+// Exports: _getSpanForScope, _setSpanForScope
 
 // Module 13107
-import _mod13063 from "module_13063" /* 13063 */;
-import _mod13093 from "module_13093" /* 13093 */;
+import _mod13091 from "module_13091" /* 13091 */;
 
 require = arg1;
 const dependencyMap = arg6;
+const _sentrySpan = "_sentrySpan";
 
-export const createClientReportEnvelope = function createClientReportEnvelope(discarded_events, dsn, arg2) {
-  let result = arg2;
-  const items = [{ type: "client_report" }, ];
-  if (!arg2) {
-    result = _mod13063.dateTimestampInSeconds();
-  }
-  items[1] = { timestamp: result, discarded_events };
-  if (dsn) {
-    const obj3 = { dsn };
-    let obj4 = obj3;
+export const _getSpanForScope = function _getSpanForScope(arg0) {
+  return arg0[_sentrySpan];
+};
+export const _setSpanForScope = function _setSpanForScope(arg0, arg1) {
+  if (arg1) {
+    const result = _mod13091.addNonEnumerableProperty(arg0, _sentrySpan, arg1);
   } else {
-    obj4 = {};
+    delete tmp2[tmp];
   }
-  const items1 = [items];
-  return _mod13093.createEnvelope(obj4, items1);
 };

@@ -1,18 +1,18 @@
-// Module ID: 14968
-// Function ID: 14969
+// Module ID: 15003
+// Function ID: 15004
 // Name: AccountUsernameSetting
-// Dependencies: [19, 1376, 8238, 1078, 21, 558, 568, 4603, 504, 12002, 4754, 11594, 1119, 14969, 2]
+// Dependencies: [19, 1376, 8270, 1078, 21, 558, 568, 4635, 504, 12038, 4786, 11630, 1119, 15004, 2]
 
-// Module 14968 (AccountUsernameSetting)
+// Module 15003 (AccountUsernameSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 12002 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 12038 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
-const Text_Text = Text(4754);
+const Text_Text = Text(4786);
 require = fn;
 const jsx = fn(21).jsx;
 fn(558);
@@ -36,7 +36,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items = [UserStore];
   return initialize.useStateFromStores(items, () => UserUtilsDefault.getUserTag(currentUser.getCurrentUser(), { decoration: "never" }));
 });
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let Text = require;
   let tmp = dependencyMap;
@@ -79,7 +79,7 @@ const route = SettingBuilders.createRoute({
     const intl = util.intl;
     return intl.string(util.t.IEpCBQ);
   },
-  parent: fn(8238).MobileUserSettings.ACCOUNT,
+  parent: fn(8270).MobileUserSettings.ACCOUNT,
   useTrailing: tmp3,
   useDescription: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let Text = require;

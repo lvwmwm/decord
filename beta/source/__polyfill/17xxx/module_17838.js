@@ -1,9 +1,27 @@
 // Module ID: 17838
 // Function ID: 17839
-// Dependencies: [1125]
+// Dependencies: []
 
 // Module 17838
-import registerAsset from "module_1125" /* 1125 */;
 
+export default (promise, arg1) => {
+  let fn = arg1;
+  if (!arg1) {
+    fn = () => {
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [1, 2, 3], hash: "633af95b6b643ea3b8457ce65540e36c", name: "ic_switch_accounts", type: "png" });
+    };
+  }
+  return promise.then((result) => {
+    closure_0 = result;
+    return new Promise((fn) => {
+      fn(closure_0());
+    }).then(() => closure_0);
+  }, (arg0) => {
+    closure_0 = arg0;
+    return new Promise((fn) => {
+      fn(closure_0());
+    }).then(() => {
+      throw closure_0;
+    });
+  });
+};

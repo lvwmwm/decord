@@ -1,12 +1,12 @@
-// Module ID: 17340
-// Function ID: 17341
+// Module ID: 17350
+// Function ID: 17351
 // Name: ContextMenuCommandNavigator
-// Dependencies: [109, 19, 17, 21, 8162, 4758, 580, 558, 568, 7722, 7246, 1616, 8112, 1119, 17341, 17343, 2]
+// Dependencies: [109, 19, 17, 21, 8194, 4790, 580, 558, 568, 7754, 7278, 1616, 8144, 1119, 17351, 17353, 2]
 
-// Module 17340 (ContextMenuCommandNavigator)
+// Module 17350 (ContextMenuCommandNavigator)
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import HeaderShared from "HeaderShared" /* 8112 */;
+import HeaderShared from "HeaderShared" /* 8144 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,9 +17,9 @@ let closure_3 = ["children"];
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const NativeStackNavigator = fn(8162);
+const NativeStackNavigator = fn(8194);
 let closure_9 = NativeStackNavigator.createNativeStackNavigator();
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj3 = { container: { flex: 1 }, content: { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND } };
 let closure_10 = createStyles.createStyles(obj3);
 const ReactCompilerGating = fn(558);
@@ -33,7 +33,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   _require = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function l() {
-      return closure_0(7722).trackAppUIViewed();
+      return closure_0(7754).trackAppUIViewed();
     };
     const items = [];
     cResult[0] = fn;
@@ -68,7 +68,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           obj3.title = intl.string(tmp(1119).t.PHjkRE);
           obj2.options = obj3;
           obj2.getComponent = function getComponent() {
-            return closure_0(17341).default;
+            return closure_0(17351).default;
           };
           const tmp16 = closure_7(closure_9.Screen, obj2);
           cResult[11] = tmp16;
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                       return { title };
                     },
             getComponent() {
-                      return closure_0(17343).default;
+                      return closure_0(17353).default;
                     }
           };
           const tmp20 = closure_7(closure_9.Screen, obj4);
@@ -162,7 +162,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const tmp = closure_10();
   _require = tmp;
-  const layoutEffect = noop.useLayoutEffect(() => closure_0(7722).trackAppUIViewed(), []);
+  const layoutEffect = noop.useLayoutEffect(() => closure_0(7754).trackAppUIViewed(), []);
   importDefault = require("Navigator").useAccessibilityNativeStackOptions();
   const rect = useSafeAreaInsetsDefault();
   let obj2 = { style: null, children: null };
@@ -200,7 +200,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj5.title = intl.string(require("util").t.PHjkRE);
   obj4.options = obj5;
   obj4.getComponent = function getComponent() {
-    return closure_0(17341).default;
+    return closure_0(17351).default;
   };
   const items1 = [
     closure_7(Screen, obj4),
@@ -215,7 +215,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return { title };
       },
       getComponent() {
-        return closure_0(17343).default;
+        return closure_0(17353).default;
       }
     })
   ];

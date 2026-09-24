@@ -1,12 +1,12 @@
-// Module ID: 11199
-// Function ID: 11200
+// Module ID: 11235
+// Function ID: 11236
 // Name: ActionButton
-// Dependencies: [19, 17, 21, 558, 568, 5194, 8178, 2]
+// Dependencies: [19, 17, 21, 558, 568, 5226, 8210, 2]
 
-// Module 11199 (ActionButton)
+// Module 11235 (ActionButton)
 import c from "c" /* 568 */;
-import ButtonHooks from "ButtonHooks" /* 5194 */;
-import IconButton from "IconButton" /* 8178 */;
+import ButtonHooks from "ButtonHooks" /* 5226 */;
+import IconButton from "IconButton" /* 8210 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -52,7 +52,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((IconComponent) =
     const obj4 = { icon: tmp4, onPress: null, accessibilityLabel: null, variant: null, size: "sm" };
     ({ onPress: obj3.onPress, accessibilityLabel: obj3.accessibilityLabel } = IconComponent);
     obj4.variant = str;
-    const tmp8 = jsx(tmp(8178).IconButton, { icon: tmp4, onPress: null, accessibilityLabel: null, variant: null, size: "sm" });
+    const tmp8 = jsx(tmp(8210).IconButton, { icon: tmp4, onPress: null, accessibilityLabel: null, variant: null, size: "sm" });
     cResult[3] = IconComponent.accessibilityLabel;
     cResult[4] = IconComponent.onPress;
     cResult[5] = tmp4;

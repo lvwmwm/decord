@@ -1,11 +1,11 @@
-// Module ID: 13205
-// Function ID: 13206
+// Module ID: 13241
+// Function ID: 13242
 // Name: InAppReportsShareWithParentElement
-// Dependencies: [32, 19, 21, 558, 568, 7786, 4457, 1119, 8680, 13206, 13204, 2]
+// Dependencies: [32, 19, 21, 558, 568, 7818, 4489, 1119, 8712, 13242, 13240, 2]
 
-// Module 13205 (InAppReportsShareWithParentElement)
-import FamilyCenterActionCreators from "FamilyCenterActionCreators" /* 7786 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 13204 */;
+// Module 13241 (InAppReportsShareWithParentElement)
+import FamilyCenterActionCreators from "FamilyCenterActionCreators" /* 7818 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 13240 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -67,7 +67,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((parents) => {
                       }
                       const _Symbol = Symbol;
                       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-                        const tmp52 = jsx(tmp(13206).ShareIcon, {});
+                        const tmp52 = jsx(tmp(13242).ShareIcon, {});
                         const intl3 = tmp(1119).intl;
                         const stringResult = intl3.string(tmp(1119).t["5l/hlt"]);
                         cResult[15] = tmp52;
@@ -185,7 +185,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((parents) => {
         username1 = tmp4.username;
       }
       obj2.parent3 = username1;
-      parents(4457).showSafetySuccess("IAR_SHARE_WITH_PARENT_SUCCESS", intl.formatToPlainString(parents(1119).t.wr4IT5, obj2));
+      parents(4489).showSafetySuccess("IAR_SHARE_WITH_PARENT_SUCCESS", intl.formatToPlainString(parents(1119).t.wr4IT5, obj2));
       closure_1_1(true);
     }).catch(() => {
       closure_1_1(dependencyMap[8]).showFailedToast();
@@ -230,7 +230,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((parents) => {
     }
     obj3.parent3 = username3;
     obj.disabledTitle = intl.formatToPlainString(parents(1119).t.BlAMme, obj3);
-    obj.icon = jsx(parents(13206).ShareIcon, {});
+    obj.icon = jsx(parents(13242).ShareIcon, {});
     const intl2 = tmp15(1119).intl;
     obj.description = intl2.string(parents(1119).t["5l/hlt"]);
     obj.disabled = tmp[0];

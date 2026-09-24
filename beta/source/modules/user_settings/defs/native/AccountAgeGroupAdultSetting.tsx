@@ -1,16 +1,16 @@
-// Module ID: 15019
-// Function ID: 15020
+// Module ID: 15028
+// Function ID: 15029
 // Name: AccountAgeGroupAdultSetting
-// Dependencies: [8238, 558, 4970, 5642, 14946, 11594, 1119, 2]
+// Dependencies: [8270, 558, 5002, 5674, 14984, 11630, 1119, 2]
 
-// Module 15019 (AccountAgeGroupAdultSetting)
+// Module 15028 (AccountAgeGroupAdultSetting)
 import util from "util" /* 1119 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 4970 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5642 */;
-import SettingsConstants from "SettingsConstants" /* 8238 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14946 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5002 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5674 */;
+import SettingsConstants from "SettingsConstants" /* 8270 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14984 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
 import size from "module_2" /* 2 */;
 
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {

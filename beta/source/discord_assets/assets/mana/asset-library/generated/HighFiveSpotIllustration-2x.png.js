@@ -1,8 +1,8 @@
-// Module ID: 6441
-// Function ID: 6442
+// Module ID: 6473
+// Function ID: 6474
 // Dependencies: [2]
 
-// Module 6441
+// Module 6473
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HighFiveSpotIllustration-2x.png.js");

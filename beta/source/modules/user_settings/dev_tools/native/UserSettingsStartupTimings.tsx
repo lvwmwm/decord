@@ -1,23 +1,23 @@
-// Module ID: 15833
-// Function ID: 15834
+// Module ID: 15843
+// Function ID: 15844
 // Name: UserSettingsStartupTimings
-// Dependencies: [5, 32, 19, 17, 1350, 1078, 21, 4758, 580, 558, 568, 4754, 4623, 1616, 13017, 504, 9, 7722, 8637, 5186, 5903, 5819, 1351, 5822, 13206, 8995, 2]
+// Dependencies: [5, 32, 19, 17, 1350, 1078, 21, 4790, 580, 558, 568, 4786, 4655, 1616, 13053, 504, 9, 7754, 8669, 5218, 5935, 5851, 1351, 5854, 13242, 9027, 2]
 
-// Module 15833 (UserSettingsStartupTimings)
+// Module 15843 (UserSettingsStartupTimings)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5819 */;
-import TableRow from "TableRow" /* 5822 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 13017 */;
-import ShareIcon from "ShareIcon" /* 13206 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5851 */;
+import TableRow from "TableRow" /* 5854 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 13053 */;
+import ShareIcon from "ShareIcon" /* 13242 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1350 */;
-import NativeTTIManagerModule from "NativeTTIManagerModule" /* 4623 */;
+import NativeTTIManagerModule from "NativeTTIManagerModule" /* 4655 */;
 
 const require = globalThis.__r;
 
@@ -25,7 +25,7 @@ require = fn;
 let View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { wrap: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, code: { fontFamily: fn(1078).Fonts.CODE_BOLD }, border: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj2.border = { height: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginBottom: 8 };
@@ -96,14 +96,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       closure_10 = Math.ceil(tmp5(9).renderLatestMessages.importTime);
       const _Symbol2 = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const lastTrackedAppUiViewed2Properties = tmp(7722).getLastTrackedAppUiViewed2Properties();
+        const lastTrackedAppUiViewed2Properties = tmp(7754).getLastTrackedAppUiViewed2Properties();
         class G {
           constructor() {
             return closure_7.alertStartupMetrics;
           }
         }
         let tmp20 = lastTrackedAppUiViewed2Properties;
-        const tmpResult2 = tmp(7722);
+        const tmpResult2 = tmp(7754);
       } else {
         tmp20 = cResult[6];
       }
@@ -146,7 +146,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   closure_128_1 = undefined;
                   dependencyMap = 1;
                   c3 = 1;
-                  const obj5 = { value: tmp5(4623).getAppFirstVisibleTimestamp(), done: false };
+                  const obj5 = { value: tmp5(4655).getAppFirstVisibleTimestamp(), done: false };
                   return obj5;
                 }
               } else if (arg0 === 1) {
@@ -158,9 +158,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 return obj6;
               } else {
                 closure_128_0 = value;
-                closure_128_1 = tmp5(13017)(closure_128_0);
+                closure_128_1 = tmp5(13053)(closure_128_0);
                 const obj7 = { message: closure_128_1 };
-                tmp2(8637).showShareActionSheet(obj7, "Startup Timing");
+                tmp2(8669).showShareActionSheet(obj7, "Startup Timing");
                 c3 = 3;
                 return { value: "IconComponent", done: null };
               }
@@ -198,7 +198,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             obj = { color: "text-brand", children: null };
             result = arg0 / 1000;
             obj.children = "" + result + "s (" + Math.round(arg0 / c12 * 100) + "%)";
-            return jsx(f70909, obj);
+            return jsx(f70949, obj);
           }
         }
         cResult[8] = V;
@@ -213,7 +213,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             obj = { color: "text-brand", children: null };
             result = arg0 / 1000;
             obj.children = "" + result + "s (" + Math.round(arg0 / c12 * 100) + "%)";
-            return jsx(f70909, obj);
+            return jsx(f70949, obj);
           }
         }
       }
@@ -224,7 +224,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             obj = { color: "text-brand", children: null };
             result = arg0 / 1000;
             obj.children = "" + result + "s (" + Math.round(arg0 / c12 * 100) + "%)";
-            return jsx(f70909, obj);
+            return jsx(f70949, obj);
           }
         }
         cResult[9] = tmp27;
@@ -239,7 +239,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             obj = { color: "text-brand", children: null };
             result = arg0 / 1000;
             obj.children = "" + result + "s (" + Math.round(arg0 / c12 * 100) + "%)";
-            return jsx(f70909, obj);
+            return jsx(f70949, obj);
           }
         }
       }
@@ -250,7 +250,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             obj = { color: "text-brand", children: null };
             result = arg0 / 1000;
             obj.children = "" + result + "s (" + Math.round(arg0 / c12 * 100) + "%)";
-            return jsx(f70909, obj);
+            return jsx(f70949, obj);
           }
         }
         tmp30[0] = sum;
@@ -266,7 +266,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             obj = { color: "text-brand", children: null };
             result = arg0 / 1000;
             obj.children = "" + result + "s (" + Math.round(arg0 / c12 * 100) + "%)";
-            return jsx(f70909, obj);
+            return jsx(f70949, obj);
           }
         }
       }
@@ -276,7 +276,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             obj = { color: "text-brand", children: null };
             result = arg0 / 1000;
             obj.children = "" + result + "s (" + Math.round(arg0 / c12 * 100) + "%)";
-            return jsx(f70909, obj);
+            return jsx(f70949, obj);
           }
         }
       }
@@ -299,39 +299,39 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           obj1.children = jsx(closure_0(closure_2[21]).TableCheckboxRow, obj25);
           items = [, , , , ];
           items[0] = jsx(closure_0(closure_2[20]).TableRowGroup, obj1);
-          tmp6 = f70909;
+          tmp6 = f70949;
           obj26 = { children: null };
           items1 = ["Native: "];
           items1[1] = closure_14(closure_6);
           obj26.children = items1;
           items2 = [, , , , , , , ];
-          items2[0] = jsxs(f70909, obj26);
+          items2[0] = jsxs(f70949, obj26);
           obj27 = { children: null };
           items3 = ["JS Imports: "];
           items3[1] = closure_14(closure_10);
           obj27.children = items3;
-          items2[1] = jsxs(f70909, obj27);
+          items2[1] = jsxs(f70949, obj27);
           obj28 = { children: null };
           items4 = ["Mini Cache: "];
           items4[1] = closure_14(closure_7);
           obj28.children = items4;
-          items2[2] = jsxs(f70909, obj28);
+          items2[2] = jsxs(f70949, obj28);
           obj29 = { children: null };
           items5 = ["Lazy Cache: "];
           items5[1] = closure_14(closure_8);
           obj29.children = items5;
-          items2[3] = jsxs(f70909, obj29);
+          items2[3] = jsxs(f70949, obj29);
           obj30 = { children: null };
           items6 = ["Ready: "];
           items6[1] = closure_14(closure_9);
           obj30.children = items6;
-          items2[4] = jsxs(f70909, obj30);
+          items2[4] = jsxs(f70949, obj30);
           obj31 = { children: null };
           tmp7 = closure_15;
           items7 = ["TTI (first contentful paint): "];
           items7[1] = closure_15(c12);
           obj31.children = items7;
-          items2[5] = jsxs(f70909, obj31);
+          items2[5] = jsxs(f70949, obj31);
           tmp8 = closure_11;
           prop = undefined;
           if (closure_11 != null) {
@@ -416,7 +416,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   let obj = require("c");
-  const parts = checked(13017)(useResult, !checked, first1).split("\n");
+  const parts = checked(13053)(useResult, !checked, first1).split("\n");
   cResult[0] = useResult;
   cResult[1] = checked;
   cResult[2] = first1;
@@ -479,7 +479,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             closure_128_1 = undefined;
             dependencyMap = 1;
             c3 = 1;
-            const obj5 = { value: tmp5(4623).getAppFirstVisibleTimestamp(), done: false };
+            const obj5 = { value: tmp5(4655).getAppFirstVisibleTimestamp(), done: false };
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -491,9 +491,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return obj6;
         } else {
           closure_128_0 = value;
-          closure_128_1 = tmp5(13017)(closure_128_0);
+          closure_128_1 = tmp5(13053)(closure_128_0);
           const obj7 = { message: closure_128_1 };
-          tmp2(8637).showShareActionSheet(obj7, "Startup Timing");
+          tmp2(8669).showShareActionSheet(obj7, "Startup Timing");
           c3 = 3;
           return { value: "IconComponent", done: null };
         }
@@ -643,6 +643,6 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj5.renderItem = function renderItem(children) {
     return closure_8(lastTrackedAppUiViewed2Properties, { children: children.item });
   };
-  obj4.children = closure_8(tmp10(8995).FlashList, obj5);
+  obj4.children = closure_8(tmp10(9027).FlashList, obj5);
   return closure_8(checked, obj4);
 });

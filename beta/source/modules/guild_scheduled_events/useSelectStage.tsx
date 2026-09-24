@@ -1,9 +1,9 @@
-// Module ID: 9854
-// Function ID: 9855
+// Module ID: 9886
+// Function ID: 9887
 // Name: useSelectStage
-// Dependencies: [5, 32, 19, 2045, 2099, 558, 568, 504, 8669, 2]
+// Dependencies: [5, 32, 19, 2045, 2099, 558, 568, 504, 8701, 2]
 
-// Module 9854 (useSelectStage)
+// Module 9886 (useSelectStage)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

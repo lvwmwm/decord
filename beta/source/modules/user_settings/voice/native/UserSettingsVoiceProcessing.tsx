@@ -1,30 +1,30 @@
-// Module ID: 10246
-// Function ID: 10247
+// Module ID: 10285
+// Function ID: 10286
 // Name: UserSettingsVoiceProcessing
-// Dependencies: [19, 17, 1996, 21, 4758, 580, 558, 568, 504, 10247, 10248, 9889, 1119, 5900, 5901, 4754, 10251, 10233, 7446, 2]
+// Dependencies: [19, 17, 1996, 21, 4790, 580, 558, 568, 504, 10286, 10287, 9921, 1119, 5932, 5933, 4786, 10290, 10272, 7478, 2]
 
-// Module 10246 (UserSettingsVoiceProcessing)
+// Module 10285 (UserSettingsVoiceProcessing)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9889 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 10247 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 10248 */;
-import KrispLogoDefault from "KrispLogo" /* 10251 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9921 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 10286 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 10287 */;
+import KrispLogoDefault from "KrispLogo" /* 10290 */;
 import noop from "module_19" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
 const util = EUNgko(1119);
-const Text_Text = EUNgko(4754);
-const TableRadioRow = EUNgko(5900);
-const TableRadioGroup = EUNgko(5901);
-const TableSwitchRow = EUNgko(7446);
-const UserSettingsVoice = EUNgko(10233);
+const Text_Text = EUNgko(4786);
+const TableRadioRow = EUNgko(5932);
+const TableRadioGroup = EUNgko(5933);
+const TableSwitchRow = EUNgko(7478);
+const UserSettingsVoice = EUNgko(10272);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { optionsParentContainer: { marginTop: 12 }, optionsDescriptionContainer: { paddingTop: nativeDefault.space.PX_4, gap: nativeDefault.space.PX_4 }, krisp: { marginStart: -20 } };
 let closure_8 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -78,8 +78,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp22 = cResult[4];
     }
     if (cResult[5] !== noiseCancellationDeferredToSystem) {
-      const obj2 = { value: tmp(10247).NoiseSuppressionOpt.KRISP, label: tmp22, disabled: noiseCancellationDeferredToSystem };
-      const tmp26 = hasOwnProperty(tmp(5900).TableRadioRow, obj2);
+      const obj2 = { value: tmp(10286).NoiseSuppressionOpt.KRISP, label: tmp22, disabled: noiseCancellationDeferredToSystem };
+      const tmp26 = hasOwnProperty(tmp(5932).TableRadioRow, obj2);
       cResult[5] = noiseCancellationDeferredToSystem;
       cResult[6] = tmp26;
       let tmp24 = tmp26;
@@ -96,8 +96,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp27 = cResult[7];
     }
     if (cResult[8] !== noiseCancellationDeferredToSystem) {
-      const obj3 = { disabled: noiseCancellationDeferredToSystem, value: tmp(10247).NoiseSuppressionOpt.STANDARD, label: tmp27 };
-      const tmp31 = hasOwnProperty(tmp(5900).TableRadioRow, obj3);
+      const obj3 = { disabled: noiseCancellationDeferredToSystem, value: tmp(10286).NoiseSuppressionOpt.STANDARD, label: tmp27 };
+      const tmp31 = hasOwnProperty(tmp(5932).TableRadioRow, obj3);
       cResult[8] = noiseCancellationDeferredToSystem;
       cResult[9] = tmp31;
       let tmp29 = tmp31;
@@ -114,8 +114,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp32 = cResult[10];
     }
     if (cResult[11] !== noiseCancellationDeferredToSystem) {
-      const obj4 = { disabled: noiseCancellationDeferredToSystem, value: tmp(10247).NoiseSuppressionOpt.NONE, label: tmp32 };
-      const tmp36 = hasOwnProperty(tmp(5900).TableRadioRow, obj4);
+      const obj4 = { disabled: noiseCancellationDeferredToSystem, value: tmp(10286).NoiseSuppressionOpt.NONE, label: tmp32 };
+      const tmp36 = hasOwnProperty(tmp(5932).TableRadioRow, obj4);
       cResult[11] = noiseCancellationDeferredToSystem;
       cResult[12] = tmp36;
       let tmp34 = tmp36;
@@ -146,7 +146,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           } else {
             if (cResult[20] !== cResult[19]) {
               const obj6 = { variant: "text-xs/medium", color: "text-muted", children: tmp40 };
-              const tmp45 = hasOwnProperty(tmp(4754).Text, obj6);
+              const tmp45 = hasOwnProperty(tmp(4786).Text, obj6);
               cResult[20] = tmp40;
               cResult[21] = tmp45;
               let tmp43 = tmp45;
@@ -210,7 +210,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj10 = { value: selectedNoiseSuppressionOption, onChange: tmp11, title: tmp20, hasIcons: false, children: null };
     const items3 = [tmp24, tmp29, tmp34];
     obj10.children = items3;
-    const tmp39 = timestampProducer(tmp(5901).TableRadioGroup, obj10);
+    const tmp39 = timestampProducer(tmp(5933).TableRadioGroup, obj10);
     cResult[13] = selectedNoiseSuppressionOption;
     cResult[14] = tmp34;
     cResult[15] = tmp24;
@@ -252,7 +252,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     }
-    const tmp17 = selectedNoiseSuppressionOption === tmp(10247).NoiseSuppressionOpt.STANDARD;
+    const tmp17 = selectedNoiseSuppressionOption === tmp(10286).NoiseSuppressionOpt.STANDARD;
     if (cResult[36] !== tmp17) {
       class K {
         constructor(arg0) {
@@ -263,8 +263,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const obj11 = { hasIcons: false, children: null };
       const obj12 = { label: tmp12, subLabel: tmp13, value: tmp17, onValueChange: tmp16 };
-      obj11.children = hasOwnProperty(tmp(7446).TableSwitchRow, obj12);
-      const tmp19 = hasOwnProperty(tmp(10233).UserSettingsTableRowGroup, obj11);
+      obj11.children = hasOwnProperty(tmp(7478).TableSwitchRow, obj12);
+      const tmp19 = hasOwnProperty(tmp(10272).UserSettingsTableRowGroup, obj11);
       cResult[36] = tmp17;
       cResult[37] = tmp19;
       const tmp18 = tmp19;
@@ -403,9 +403,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[4] !== echoCancellation) {
     const obj2 = { title: tmp8, hasIcons: false, children: null };
-    const obj3 = { label: tmp10, value: echoCancellation, onValueChange: tmp(10247).handleEchoCancellationChange };
-    obj2.children = closure_5(tmp(7446).TableSwitchRow, obj3);
-    const tmp14 = closure_5(tmp(10233).UserSettingsTableRowGroup, obj2);
+    const obj3 = { label: tmp10, value: echoCancellation, onValueChange: tmp(10286).handleEchoCancellationChange };
+    obj2.children = closure_5(tmp(7478).TableSwitchRow, obj3);
+    const tmp14 = closure_5(tmp(10272).UserSettingsTableRowGroup, obj2);
     cResult[4] = echoCancellation;
     cResult[5] = tmp14;
     let tmp12 = tmp14;
@@ -433,8 +433,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp20 = cResult[8];
   }
   if (cResult[9] !== automaticGainControl) {
-    const obj4 = { label: tmp19, subLabel: tmp20, value: automaticGainControl, onValueChange: tmp(10247).handleAutomaticGainControlChange };
-    const tmp25 = closure_5(tmp(7446).TableSwitchRow, obj4);
+    const obj4 = { label: tmp19, subLabel: tmp20, value: automaticGainControl, onValueChange: tmp(10286).handleAutomaticGainControlChange };
+    const tmp25 = closure_5(tmp(7478).TableSwitchRow, obj4);
     cResult[9] = automaticGainControl;
     cResult[10] = tmp25;
     let tmp23 = tmp25;
@@ -468,7 +468,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj6 = { hasIcons: false, children: null };
       const items2 = [tmp23, tmp26];
       obj6.children = items2;
-      const tmp31 = closure_6(tmp(10233).UserSettingsTableRowGroup, obj6);
+      const tmp31 = closure_6(tmp(10272).UserSettingsTableRowGroup, obj6);
       cResult[15] = tmp23;
       cResult[16] = tmp26;
       cResult[17] = tmp31;
@@ -486,7 +486,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj7.onValueChange = function onValueChange(vadUseKrisp) {
       return AudioActionCreatorsDefault.setMode(inputMode, { vadUseKrisp });
     };
-    tmp27 = closure_5(tmp(7446).TableSwitchRow, obj7);
+    tmp27 = closure_5(tmp(7478).TableSwitchRow, obj7);
   }
   cResult[11] = advancedVoiceActivitySupported;
   cResult[12] = inputMode;
@@ -526,7 +526,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj5.onValueChange = function onValueChange(vadUseKrisp) {
       return AudioActionCreatorsDefault.setMode(_require, { vadUseKrisp });
     };
-    advancedVoiceActivitySupported = closure_5(tmp(7446).TableSwitchRow, obj5);
+    advancedVoiceActivitySupported = closure_5(tmp(7478).TableSwitchRow, obj5);
   }
   const obj6 = { children: null };
   items2[1] = advancedVoiceActivitySupported;

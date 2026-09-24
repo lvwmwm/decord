@@ -1,20 +1,20 @@
-// Module ID: 14071
-// Function ID: 14072
+// Module ID: 14108
+// Function ID: 14109
 // Name: ProvisionalAccountNoCallAllowed
-// Dependencies: [19, 1078, 21, 4758, 558, 568, 7176, 1119, 2112, 5116, 5116, 2]
+// Dependencies: [19, 1078, 21, 4790, 558, 568, 7208, 1119, 2112, 5148, 5148, 2]
 
-// Module 14071 (ProvisionalAccountNoCallAllowed)
+// Module 14108 (ProvisionalAccountNoCallAllowed)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import AlertModal from "AlertModal" /* 5116 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7176 */;
+import AlertModal from "AlertModal" /* 5148 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7208 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ header: { alignSelf: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -25,7 +25,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_5();
   if (cResult[0] !== tmp4.header) {
     const obj2 = { size: "lg", style: tmp4.header };
-    const tmp7 = jsx(tmp(7176).CircleErrorIcon, { size: "lg", style: tmp4.header });
+    const tmp7 = jsx(tmp(7208).CircleErrorIcon, { size: "lg", style: tmp4.header });
     cResult[0] = tmp4.header;
     cResult[1] = tmp7;
     let tmp5 = tmp7;
@@ -51,8 +51,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj6 = { variant: "secondary", text: null };
     const intl3 = tmp(1119).intl;
     obj6.text = intl3.string(tmp(1119).t["NX+WJN"]);
-    obj5.children = jsx(tmp(5116).AlertActionButton, { variant: "secondary", text: null }, "got-it");
-    const tmp16 = jsx(tmp(5116).AlertActions, { children: null });
+    obj5.children = jsx(tmp(5148).AlertActionButton, { variant: "secondary", text: null }, "got-it");
+    const tmp16 = jsx(tmp(5148).AlertActions, { children: null });
     cResult[4] = tmp16;
     let tmp14 = tmp16;
   } else {
@@ -60,7 +60,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[5] !== tmp5) {
     const obj7 = { header: tmp5, title: tmp8, content: tmp9, actions: tmp14 };
-    const tmp19 = jsx(tmp(5116).AlertModal, { header: tmp5, title: tmp8, content: tmp9, actions: tmp14 });
+    const tmp19 = jsx(tmp(5148).AlertModal, { header: tmp5, title: tmp8, content: tmp9, actions: tmp14 });
     cResult[5] = tmp5;
     cResult[6] = tmp19;
     let tmp17 = tmp19;

@@ -1,13 +1,13 @@
-// Module ID: 6160
-// Function ID: 6161
+// Module ID: 6192
+// Function ID: 6193
 // Name: DisplayNameLockeAbstractUI
-// Dependencies: [21, 558, 568, 6161, 5802, 2]
+// Dependencies: [21, 558, 568, 6193, 5834, 2]
 
-// Module 6160 (DisplayNameLockeAbstractUI)
+// Module 6192 (DisplayNameLockeAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6161 from "module_6161" /* 6161 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6193 from "module_6193" /* 6193 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const DisplayNameLockeAbstractUI = ReactCompilerGating.isReactCompilerEna
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6161 };
+    const obj2 = { uri: _modDef6193 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const DisplayNameLockeAbstractUI = ReactCompilerGating.isReactCompilerEna
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6161 };
+  const obj2 = { uri: _modDef6193 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,13 +1,13 @@
-// Module ID: 5986
-// Function ID: 5987
+// Module ID: 6018
+// Function ID: 6019
 // Name: AutoClipsConsentAbstractUI
-// Dependencies: [21, 558, 568, 5987, 5802, 2]
+// Dependencies: [21, 558, 568, 6019, 5834, 2]
 
-// Module 5986 (AutoClipsConsentAbstractUI)
+// Module 6018 (AutoClipsConsentAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef5987 from "module_5987" /* 5987 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6019 from "module_6019" /* 6019 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const AutoClipsConsentAbstractUI = ReactCompilerGating.isReactCompilerEna
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef5987 };
+    const obj2 = { uri: _modDef6019 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const AutoClipsConsentAbstractUI = ReactCompilerGating.isReactCompilerEna
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5987 };
+  const obj2 = { uri: _modDef6019 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

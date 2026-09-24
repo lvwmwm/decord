@@ -1,13 +1,13 @@
-// Module ID: 12967
-// Function ID: 12968
+// Module ID: 13003
+// Function ID: 13004
 // Name: InAppMessageSoundsStore
-// Dependencies: [510, 1247, 558, 568, 4383, 2]
+// Dependencies: [510, 1247, 558, 568, 4415, 2]
 // Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled
 
-// Module 12967 (InAppMessageSoundsStore)
+// Module 13003 (InAppMessageSoundsStore)
 import Storage2 from "Storage" /* 510 */;
 import c from "c" /* 568 */;
-import _mod4383 from "module_4383" /* 4383 */;
+import _mod4415 from "module_4415" /* 4415 */;
 import identity from "module_1247" /* 1247 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -42,5 +42,5 @@ export const useInAppMessageSoundsEnabled = ReactCompilerGating.isReactCompilerE
   } else {
     first = cResult[0];
   }
-  return closure_3(first, _mod4383.shallow);
-}) : (() => closure_3((isEnabled) => isEnabled.isEnabled, _mod4383.shallow));
+  return closure_3(first, _mod4415.shallow);
+}) : (() => closure_3((isEnabled) => isEnabled.isEnabled, _mod4415.shallow));

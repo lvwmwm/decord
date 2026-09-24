@@ -1,46 +1,110 @@
 // Module ID: 4313
 // Function ID: 4314
-// Dependencies: [4314, 4316, 4317, 4315, 4318]
+// Dependencies: [4252, 4314, 3882, 3885]
+// Exports: default
 
 // Module 4313
-import localeToNumber_mod from "localeToNumber" /* 4314 */;
-import module_4316 from "module_4316" /* 4316 */;
-import module_4317 from "module_4317" /* 4317 */;
-import localeToNumber_mod from "module_4315" /* 4315 */;
-import date from "module_4318" /* 4318 */;
+import subDays_mod from "subDays" /* 4252 */;
+import subMonths_mod from "subMonths" /* 4314 */;
+import requiredArgs_mod from "requiredArgs" /* 3882 */;
+import module_3885_mod from "module_3885" /* 3885 */;
 
-let localeToNumber = localeToNumber_mod;
-if (!localeToNumber) {
-  const obj = { default: localeToNumber };
+function _typeof(arg0) {
+  if (typeof Symbol === "function") {
+    let _Symbol = Symbol;
+    if (typeof Symbol.iterator === "symbol") {
+      _typeof = function _typeof(arg0) {
+        return typeof arg0;
+      };
+    }
+    return _typeof(arg0);
+  }
+  _typeof = function _typeof(arg0) {
+    if (arg0) {
+      const _Symbol = Symbol;
+      if (typeof Symbol === "function") {
+        const _Symbol3 = Symbol;
+        if (arg0.constructor === Symbol) {
+          const _Symbol2 = Symbol;
+          let str = "symbol";
+        }
+        return str;
+      }
+    }
+    str = typeof arg0;
+  };
+}
+let subDays = subDays_mod;
+if (!subDays) {
+  const obj = { default: subDays };
   let tmp3 = obj;
 } else {
-  tmp3 = localeToNumber;
+  tmp3 = subDays;
 }
-if (!module_4316) {
-  const obj2 = { default: module_4316 };
+subDays = tmp3;
+let subMonths = subMonths_mod;
+if (!subMonths) {
+  const obj2 = { default: subMonths };
   let tmp5 = obj2;
 } else {
-  tmp5 = module_4316;
+  tmp5 = subMonths;
 }
-if (!module_4317) {
-  const obj3 = { default: module_4317 };
+subMonths = tmp5;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj3 = { default: requiredArgs };
   let tmp7 = obj3;
 } else {
-  tmp7 = module_4317;
+  tmp7 = requiredArgs;
 }
-let localeToNumber = localeToNumber_mod;
-if (!localeToNumber) {
-  const obj4 = { default: localeToNumber };
+requiredArgs = tmp7;
+let module_3885 = module_3885_mod;
+if (!module_3885) {
+  const obj4 = { default: module_3885 };
   let tmp9 = obj4;
 } else {
-  tmp9 = localeToNumber;
+  tmp9 = module_3885;
 }
-if (!date) {
-  const obj5 = { default: date };
-  let tmp11 = obj5;
-} else {
-  tmp11 = date;
-}
+module_3885 = tmp9;
 
-export default { code: "hi", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 0, firstWeekContainsDate: 4 } };
+export default function sub(arg0, years) {
+  requiredArgs.default(2, arguments);
+  if (years) {
+    if ("object" === _typeof(years)) {
+      let num = 0;
+      if (years.years) {
+        num = module_3885.default(years.years);
+      }
+      let num2 = 0;
+      if (years.months) {
+        num2 = module_3885.default(years.months);
+      }
+      let num3 = 0;
+      if (years.weeks) {
+        num3 = module_3885.default(years.weeks);
+      }
+      let num4 = 0;
+      if (years.days) {
+        num4 = module_3885.default(years.days);
+      }
+      let num5 = 0;
+      if (years.hours) {
+        num5 = module_3885.default(years.hours);
+      }
+      let num6 = 0;
+      if (years.minutes) {
+        num6 = module_3885.default(years.minutes);
+      }
+      let num7 = 0;
+      if (years.seconds) {
+        num7 = module_3885.default(years.seconds);
+      }
+      const _Date = Date;
+      const sum = num7 + 60 * (num6 + 60 * num5);
+      const date = new Date(subDays.default(subMonths.default(arg0, num2 + 12 * num), num4 + 7 * num3).getTime() - 1000 * sum);
+      return date;
+    }
+  }
+  return new Date(NaN);
+};
 export default exports.default;

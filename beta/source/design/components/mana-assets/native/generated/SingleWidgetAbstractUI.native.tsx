@@ -1,13 +1,13 @@
-// Module ID: 6698
-// Function ID: 6699
+// Module ID: 6730
+// Function ID: 6731
 // Name: SingleWidgetAbstractUI
-// Dependencies: [21, 558, 568, 6699, 5802, 2]
+// Dependencies: [21, 558, 568, 6731, 5834, 2]
 
-// Module 6698 (SingleWidgetAbstractUI)
+// Module 6730 (SingleWidgetAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6699 from "module_6699" /* 6699 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6731 from "module_6731" /* 6731 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const SingleWidgetAbstractUI = ReactCompilerGating.isReactCompilerEnabled
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6699 };
+    const obj2 = { uri: _modDef6731 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const SingleWidgetAbstractUI = ReactCompilerGating.isReactCompilerEnabled
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6699 };
+  const obj2 = { uri: _modDef6731 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

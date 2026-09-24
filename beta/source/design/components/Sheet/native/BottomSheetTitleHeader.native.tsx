@@ -1,15 +1,15 @@
-// Module ID: 7396
-// Function ID: 7397
+// Module ID: 7428
+// Function ID: 7429
 // Name: BottomSheetTitleHeader
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 1482, 4462, 4754, 5840, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 1482, 4494, 4786, 5872, 2]
 
-// Module 7396 (BottomSheetTitleHeader)
+// Module 7428 (BottomSheetTitleHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import useToken from "useToken" /* 4462 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 5840 */;
+import useToken from "useToken" /* 4494 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 5872 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,7 +17,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let closure_8 = createStyles.createStyles(() => {
   const obj = { container: { paddingHorizontal: nativeDefault.modules.mobile.SHEET_HEADER_PADDING_HORIZONTAL, flexDirection: "row", gap: 4, position: "relative" }, titles: { flexGrow: 1, flexShrink: 1, gap: 2 }, subtitle: { textAlign: "center" }, title: { textAlign: "center" } };
   return obj;
@@ -92,7 +92,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj.children = React5(View, obj2);
   return timestampProducer(View, obj);
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let closure_10 = createStyles.createStyles(() => ({ container: { flexDirection: "column" }, accessories: { flexDirection: "row", justifyContent: "space-between" }, item: { flexShrink: 0 } }));
 ReactCompilerGating = fn(558);
 let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -227,7 +227,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj.children = items2;
   return React5(View, obj);
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let closure_12 = createStyles.createStyles(() => {
   const obj = { accessory: { position: "absolute", top: 0, bottom: 0, flexShrink: 0, flexDirection: "row", flexGrow: 1 }, leading: { left: nativeDefault.space.PX_16, justifyContent: "flex-start" }, trailing: null };
   const obj2 = { left: nativeDefault.space.PX_16, justifyContent: "flex-start" };

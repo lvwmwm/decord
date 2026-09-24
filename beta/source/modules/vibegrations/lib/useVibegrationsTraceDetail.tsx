@@ -1,9 +1,9 @@
-// Module ID: 17083
-// Function ID: 17084
+// Module ID: 17093
+// Function ID: 17094
 // Name: useVibegrationsTraceDetail
-// Dependencies: [32, 19, 558, 568, 17079, 2]
+// Dependencies: [32, 19, 558, 568, 17089, 2]
 
-// Module 17083 (useVibegrationsTraceDetail)
+// Module 17093 (useVibegrationsTraceDetail)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -32,11 +32,11 @@ export const useVibegrationsTraceDetail = ReactCompilerGating.isReactCompilerEna
       return null;
     } else {
       if (cResult[4] !== arg1) {
-        const cachedTraceDetailResult = tmp(17079).cachedTraceDetail(arg1);
+        const cachedTraceDetailResult = tmp(17089).cachedTraceDetail(arg1);
         cResult[4] = arg1;
         cResult[5] = cachedTraceDetailResult;
         let tmp9 = cachedTraceDetailResult;
-        const tmpResult = tmp(17079);
+        const tmpResult = tmp(17089);
       } else {
         tmp9 = cResult[5];
       }

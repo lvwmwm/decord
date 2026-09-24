@@ -1,31 +1,31 @@
-// Module ID: 11517
-// Function ID: 11518
+// Module ID: 11553
+// Function ID: 11554
 // Name: AttachmentPreview
-// Dependencies: [19, 17, 21, 4758, 580, 11518, 11519, 11520, 11521, 11522, 11523, 11524, 11525, 11526, 11527, 11528, 11529, 11530, 11531, 558, 568, 5352, 4754, 1368, 5802, 1181, 8992, 8583, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 11554, 11555, 11556, 11557, 11558, 11559, 11560, 11561, 11562, 11563, 11564, 11565, 11566, 11567, 558, 568, 5384, 4786, 1368, 5834, 1181, 9024, 8615, 2]
 // Exports: default
 
-// Module 11517 (AttachmentPreview)
+// Module 11553 (AttachmentPreview)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import FileUtils from "FileUtils" /* 5352 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef11518 from "module_11518" /* 11518 */;
-import _modDef11519 from "module_11519" /* 11519 */;
-import _modDef11520 from "module_11520" /* 11520 */;
-import _modDef11521 from "module_11521" /* 11521 */;
-import _modDef11522 from "module_11522" /* 11522 */;
-import _modDef11523 from "module_11523" /* 11523 */;
-import _modDef11524 from "module_11524" /* 11524 */;
-import _modDef11525 from "module_11525" /* 11525 */;
-import _modDef11526 from "module_11526" /* 11526 */;
-import _modDef11527 from "module_11527" /* 11527 */;
-import _modDef11528 from "module_11528" /* 11528 */;
-import _modDef11529 from "module_11529" /* 11529 */;
-import _modDef11530 from "module_11530" /* 11530 */;
-import _modDef11531 from "module_11531" /* 11531 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import FileUtils from "FileUtils" /* 5384 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef11554 from "module_11554" /* 11554 */;
+import _modDef11555 from "module_11555" /* 11555 */;
+import _modDef11556 from "module_11556" /* 11556 */;
+import _modDef11557 from "module_11557" /* 11557 */;
+import _modDef11558 from "module_11558" /* 11558 */;
+import _modDef11559 from "module_11559" /* 11559 */;
+import _modDef11560 from "module_11560" /* 11560 */;
+import _modDef11561 from "module_11561" /* 11561 */;
+import _modDef11562 from "module_11562" /* 11562 */;
+import _modDef11563 from "module_11563" /* 11563 */;
+import _modDef11564 from "module_11564" /* 11564 */;
+import _modDef11565 from "module_11565" /* 11565 */;
+import _modDef11566 from "module_11566" /* 11566 */;
+import _modDef11567 from "module_11567" /* 11567 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -33,10 +33,10 @@ get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { fileInfoAttachmentPreviewFile: { flexDirection: "row", alignItems: "center", overflow: "hidden", borderRadius: nativeDefault.radii.sm, height: 75, padding: 12, flex: 1, gap: nativeDefault.space.PX_8 }, attachmentFileIcon: { height: 32, width: 24 }, attachmentFileName: { paddingRight: 4, paddingLeft: 4, maxWidth: 136 }, videoIcon: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, alignItems: "center", justifyContent: "center" } };
 let closure_8 = createStyles.createStyles(obj);
-let obj4 = { archive: _modDef11518, acrobat: _modDef11519, ae: _modDef11520, ai: _modDef11521, audio: _modDef11522, code: _modDef11523, document: _modDef11524, image: _modDef11525, photoshop: _modDef11526, sketch: _modDef11527, spreadsheet: _modDef11528, unknown: _modDef11529, video: _modDef11530, webcode: _modDef11531 };
+let obj4 = { archive: _modDef11554, acrobat: _modDef11555, ae: _modDef11556, ai: _modDef11557, audio: _modDef11558, code: _modDef11559, document: _modDef11560, image: _modDef11561, photoshop: _modDef11562, sketch: _modDef11563, spreadsheet: _modDef11564, unknown: _modDef11565, video: _modDef11566, webcode: _modDef11567 };
 let ReactCompilerGating = fn(558);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileName) => {
   const cResult = c.c(3);
@@ -48,7 +48,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileName) => {
   }
   let tmp4 = obj4[obj2.classifyFileName(obj2, str)];
   if (tmp4 == null) {
-    tmp4 = _modDef11529;
+    tmp4 = _modDef11565;
   }
   if (cResult[0] === tmp4) {
     if (cResult[1] === tmp3.attachmentFileIcon) {
@@ -75,7 +75,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileName) => {
       }
       let tmp2 = obj4[obj.classifyFileName(obj, str)];
       if (tmp2 == null) {
-        tmp2 = _modDef11529;
+        tmp2 = _modDef11565;
       }
       return tmp2;
     }, items)
@@ -150,9 +150,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileName) => {
   }
   if (tmp12) {
     const obj5 = { style: tmp4.attachmentFileName, ellipsizeMode: "middle", lineClamp: 1, variant: "text-xs/medium", color: "mobile-text-heading-primary", children: fileName };
-    tmp12 = timestampProducer(tmp(4754).Text, obj5);
+    tmp12 = timestampProducer(tmp(4786).Text, obj5);
   }
-  const Text = tmp(4754).Text;
+  const Text = tmp(4786).Text;
   const attachmentFileName = tmp4.attachmentFileName;
   let str5 = "UNKNOWN";
   if (null != match) {
@@ -512,7 +512,7 @@ export default function AttachmentPreview(height) {
           obj5.style = size1;
           const obj6 = { uri };
           obj5.source = obj6;
-          obj4.children = timestampProducer(tmp7(8583).VideoComponent, obj5);
+          obj4.children = timestampProducer(tmp7(8615).VideoComponent, obj5);
           tmp9 = timestampProducer(hasOwnProperty, obj4);
         }
         tmp7Result = tmp7(1368);
@@ -530,7 +530,7 @@ export default function AttachmentPreview(height) {
       const obj8 = { style: null, children: null };
       videoIcon = videoIcon.videoIcon;
       obj8.style = videoIcon;
-      CirclePlayIcon = CirclePlayIcon(8992).CirclePlayIcon;
+      CirclePlayIcon = CirclePlayIcon(9024).CirclePlayIcon;
       tmp6 = timestampProducer(CirclePlayIcon, { size: "md", color: "white", secondaryColor: "black" });
       obj8.children = tmp6;
       items[1] = timestampProducer(hasOwnProperty, obj8);

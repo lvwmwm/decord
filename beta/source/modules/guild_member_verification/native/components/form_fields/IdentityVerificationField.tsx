@@ -1,20 +1,20 @@
-// Module ID: 5835
-// Function ID: 5836
+// Module ID: 5867
+// Function ID: 5868
 // Name: IdentityVerificationField
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4754, 1119, 4708, 5188, 4583, 5836, 4961, 7289, 1984, 7292, 7328, 7201, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4786, 1119, 4740, 5220, 4615, 5868, 4993, 7321, 1984, 7324, 7360, 7233, 2]
 
-// Module 5835 (IdentityVerificationField)
+// Module 5867 (IdentityVerificationField)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4583 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4615 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 const util = CheckmarkLargeIcon(1119);
-const CheckmarkLargeIcon2 = CheckmarkLargeIcon(4708);
-const Text_Text = CheckmarkLargeIcon(4754);
-const components_Button_Button = CheckmarkLargeIcon(5188);
+const CheckmarkLargeIcon2 = CheckmarkLargeIcon(4740);
+const Text_Text = CheckmarkLargeIcon(4786);
+const components_Button_Button = CheckmarkLargeIcon(5220);
 require = fn;
 function getLabel(arg0, arg1) {
   if (MemberVerificationTypes.UserVerificationFieldPlatforms.EMAIL === arg0) {
@@ -27,7 +27,7 @@ function getLabel(arg0, arg1) {
       string2Result = string2(t2.c6EUJI);
     }
     return string2Result;
-  } else if (tmp(4583).UserVerificationFieldPlatforms.PHONE === arg0) {
+  } else if (tmp(4615).UserVerificationFieldPlatforms.PHONE === arg0) {
     const intl2 = tmp(1119).intl;
     const string = intl2.string;
     const t = tmp(1119).t;
@@ -45,7 +45,7 @@ function getLabel(arg0, arg1) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: 8, marginTop: 8, borderRadius: nativeDefault.radii.sm, height: 48, flexDirection: "row", alignItems: "center", justifyContent: "space-between", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, icon: { marginLeft: 4, marginRight: 8 }, label: { flex: 1, marginLeft: 4, lineHeight: 20 }, verifiedContainer: { paddingVertical: 7, paddingHorizontal: 4, flexDirection: "row", alignItems: "center" }, ctaButton: { flexGrow: 0, alignSelf: "center", paddingHorizontal: 16 } };
 let closure_6 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -157,7 +157,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj4 = { style: tmp.verifiedContainer, accessible: true, accessibilityLabel: null, children: null };
     const intl2 = tmp7(1119).intl;
     obj4.accessibilityLabel = intl2.string(tmp7(1119).t.g62IJl);
-    obj4.children = tmp6(tmp7(4708).CheckmarkLargeIcon, { color: "status-positive" });
+    obj4.children = tmp6(tmp7(4740).CheckmarkLargeIcon, { color: "status-positive" });
     let obj5 = obj4;
   } else {
     obj5 = { style: tmp.ctaButton, children: null };
@@ -165,7 +165,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl = tmp7(1119).intl;
     obj6.text = intl.string(tmp7(1119).t["13ofGu"]);
     obj6.onPress = onPress;
-    obj5.children = tmp6(tmp7(5188).Button, obj6);
+    obj5.children = tmp6(tmp7(5220).Button, obj6);
   }
   items[2] = React4(View, obj5);
   obj.children = items;
@@ -184,22 +184,22 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp4 = cResult[2];
     }
     if (cResult[3] !== platform) {
-      if (tmp(4583).UserVerificationFieldPlatforms.EMAIL === platform) {
-        let MobilePhoneIcon = tmp(7328).EnvelopeIcon;
+      if (tmp(4615).UserVerificationFieldPlatforms.EMAIL === platform) {
+        let MobilePhoneIcon = tmp(7360).EnvelopeIcon;
         cResult[3] = platform;
         cResult[4] = MobilePhoneIcon;
-      } else if (tmp(4583).UserVerificationFieldPlatforms.PHONE !== platform) {
-        MobilePhoneIcon = tmp(7328).EnvelopeIcon;
+      } else if (tmp(4615).UserVerificationFieldPlatforms.PHONE !== platform) {
+        MobilePhoneIcon = tmp(7360).EnvelopeIcon;
       }
-      MobilePhoneIcon = tmp(7201).MobilePhoneIcon;
+      MobilePhoneIcon = tmp(7233).MobilePhoneIcon;
     } else if (cResult[5] !== platform) {
-      if (tmp(4583).UserVerificationFieldPlatforms.EMAIL === platform) {
+      if (tmp(4615).UserVerificationFieldPlatforms.EMAIL === platform) {
         let fn = () => {
           require("EmailVerificationModalActionCreators").open();
         };
         cResult[5] = platform;
         cResult[6] = fn;
-      } else if (tmp(4583).UserVerificationFieldPlatforms.PHONE !== platform) {
+      } else if (tmp(4615).UserVerificationFieldPlatforms.PHONE !== platform) {
         fn = () => {
 
         };
@@ -240,18 +240,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ platform, passesVerification } = arg0);
   const label = getLabel(platform, passesVerification);
   if (MemberVerificationTypes.UserVerificationFieldPlatforms.EMAIL === platform) {
-    let icon = tmp2(7328).EnvelopeIcon;
-  } else if (tmp2(4583).UserVerificationFieldPlatforms.PHONE === platform) {
-    icon = tmp2(7201).MobilePhoneIcon;
+    let icon = tmp2(7360).EnvelopeIcon;
+  } else if (tmp2(4615).UserVerificationFieldPlatforms.PHONE === platform) {
+    icon = tmp2(7233).MobilePhoneIcon;
   } else {
-    icon = tmp2(7328).EnvelopeIcon;
+    icon = tmp2(7360).EnvelopeIcon;
   }
   if (MemberVerificationTypes.UserVerificationFieldPlatforms.EMAIL === platform) {
     let onPress = () => {
       require("EmailVerificationModalActionCreators").open();
     };
   } else {
-    onPress = tmp2(4583).UserVerificationFieldPlatforms.PHONE === platform ? (() => {
+    onPress = tmp2(4615).UserVerificationFieldPlatforms.PHONE === platform ? (() => {
       const obj2 = { reason: null };
       const obj = require("ModalActionCreators");
       obj2.reason = require("PhoneActionCreators").ChangePhoneReason.GUILD_PHONE_REQUIRED;

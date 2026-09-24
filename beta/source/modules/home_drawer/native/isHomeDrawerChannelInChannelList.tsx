@@ -1,12 +1,12 @@
-// Module ID: 16660
-// Function ID: 16661
+// Module ID: 16670
+// Function ID: 16671
 // Name: isHomeDrawerChannelInChannelList
-// Dependencies: [4939, 558, 568, 7782, 504, 2]
+// Dependencies: [4971, 558, 568, 7814, 504, 2]
 
-// Module 16660 (isHomeDrawerChannelInChannelList)
+// Module 16670 (isHomeDrawerChannelInChannelList)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);

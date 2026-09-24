@@ -1,9 +1,9 @@
 // Module ID: 5881
 // Function ID: 5882
-// Dependencies: [5882]
+// Dependencies: [1125]
 
 // Module 5881
-import _modDef5882 from "module_5882" /* 5882 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default _modDef5882;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../node_modules/.pnpm/@react-navigation+elements@2.9.34_ogrwmflqwrxbxbb3hpokpwnsgq/node_modules/@react-navigation/elements/lib/module/assets", width: 24, height: 24, scales: [1, 2, 3, 4], hash: "dbc3af23c3cbbe45d326afc1d31c2e92", name: "back-icon", type: "png" });

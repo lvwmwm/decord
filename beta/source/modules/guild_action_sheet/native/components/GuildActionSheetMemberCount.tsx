@@ -1,20 +1,20 @@
-// Module ID: 13583
-// Function ID: 13584
+// Module ID: 13619
+// Function ID: 13620
 // Name: GuildActionSheetMemberCount
-// Dependencies: [19, 17, 21, 4758, 580, 1369, 558, 568, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 1369, 558, 568, 1119, 4786, 2]
 
-// Module 13583 (GuildActionSheetMemberCount)
+// Module 13619 (GuildActionSheetMemberCount)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { wrapper: { flexDirection: "row", alignItems: "center" }, dot: null, dotContainer: null, onlineDot: null, offlineDot: null, refreshText: null };
 let size = { width: 8, height: 8, borderRadius: nativeDefault.radii.sm };
 obj.dot = size;
@@ -109,7 +109,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
                 }
               }
               const obj4 = { variant: textVariant, color, lineClamp: 1, style: tmp12.refreshText, children: tmp4 };
-              const tmp27 = React3(tmp(4754).Text, obj4);
+              const tmp27 = React3(tmp(4786).Text, obj4);
               cResult[16] = tmp12.refreshText;
               cResult[17] = textVariant;
               cResult[18] = color;

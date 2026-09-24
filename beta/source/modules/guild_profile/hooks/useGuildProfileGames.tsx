@@ -1,9 +1,9 @@
-// Module ID: 9994
-// Function ID: 9995
+// Module ID: 10026
+// Function ID: 10027
 // Name: useGuildProfileGames
-// Dependencies: [19, 2005, 2004, 502, 558, 568, 504, 7553, 1374, 2]
+// Dependencies: [19, 2005, 2004, 502, 558, 568, 504, 7585, 1374, 2]
 
-// Module 9994 (useGuildProfileGames)
+// Module 10026 (useGuildProfileGames)
 import c from "c" /* 568 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
 import noop from "module_19" /* 19 */;
@@ -76,7 +76,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((games) => {
   const tmp7 = null != games && !require("initialize").useStateFromStores(tmp4, tmp5);
   if (cResult[2] === games.gameApplicationIds) {
     if (cResult[3] === tmp7) {
-      const games1 = tmp(7553).useGames(cResult[4]);
+      const games1 = tmp(7585).useGames(cResult[4]);
       const tmp11 = closure_6(games);
       dependencyMap = tmp11;
       const _Symbol = Symbol;
@@ -108,7 +108,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((games) => {
       cResult[7] = games.gameApplicationIds;
       cResult[8] = fn2;
       tmp14 = fn2;
-      const tmpResult3 = tmp(7553);
+      const tmpResult3 = tmp(7585);
     }
   }
   cResult[2] = games.gameApplicationIds;

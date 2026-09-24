@@ -1,14 +1,14 @@
-// Module ID: 15250
-// Function ID: 15251
+// Module ID: 15260
+// Function ID: 15261
 // Name: PremiumSettingScreen
-// Dependencies: [19, 21, 558, 568, 7240, 1488, 7236, 7657, 2]
+// Dependencies: [19, 21, 558, 568, 7272, 1488, 7268, 7689, 2]
 
-// Module 15250 (PremiumSettingScreen)
+// Module 15260 (PremiumSettingScreen)
 import c from "c" /* 568 */;
 import useNavigation from "useNavigation" /* 1488 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7236 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7240 */;
-import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7657 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7268 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7272 */;
+import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7689 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

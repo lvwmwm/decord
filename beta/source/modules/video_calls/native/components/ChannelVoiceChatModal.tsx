@@ -1,14 +1,14 @@
-// Module ID: 11269
-// Function ID: 11270
+// Module ID: 11305
+// Function ID: 11306
 // Name: ChannelVoiceChatModal
-// Dependencies: [19, 21, 558, 568, 4911, 4959, 5317, 4642, 10330, 11229, 2]
+// Dependencies: [19, 21, 558, 568, 4943, 4991, 5349, 4674, 10369, 11265, 2]
 
-// Module 11269 (ChannelVoiceChatModal)
-import GuildThemeGuildIdOverrideContextDefault from "GuildThemeGuildIdOverrideContext" /* 4642 */;
-import useChannelNameDefault from "useChannelName" /* 4911 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4959 */;
-import ChannelVoiceChatDefault from "ChannelVoiceChat" /* 10330 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11229 */;
+// Module 11305 (ChannelVoiceChatModal)
+import GuildThemeGuildIdOverrideContextDefault from "GuildThemeGuildIdOverrideContext" /* 4674 */;
+import useChannelNameDefault from "useChannelName" /* 4943 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4991 */;
+import ChannelVoiceChatDefault from "ChannelVoiceChat" /* 10369 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11265 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -44,7 +44,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     str = "";
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = jsx(channel(5317).StageIcon, { size: "sm" });
+    const tmp11 = jsx(channel(5349).StageIcon, { size: "sm" });
     cResult[3] = tmp11;
     let tmp9 = tmp11;
   } else {
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (tmp2 == null) {
     str = "";
   }
-  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={jsx(channel(5317).StageIcon, { size: "sm" })} render={function render() {
+  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={jsx(channel(5349).StageIcon, { size: "sm" })} render={function render() {
     let guild_id = channel.guild_id;
     if (guild_id == null) {
       guild_id = null;

@@ -1,15 +1,15 @@
-// Module ID: 15259
-// Function ID: 15260
+// Module ID: 15269
+// Function ID: 15270
 // Name: PremiumGiftingSetting
-// Dependencies: [19, 1078, 21, 558, 568, 7661, 11565, 13822, 1181, 11594, 1119, 11330, 4431, 13821, 2]
+// Dependencies: [19, 1078, 21, 558, 568, 7693, 11601, 13858, 1181, 11630, 1119, 11366, 4463, 13857, 2]
 
-// Module 15259 (PremiumGiftingSetting)
+// Module 15269 (PremiumGiftingSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 4431 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7661 */;
-import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11565 */;
-import PromotionsHooks from "PromotionsHooks" /* 13822 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 4463 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7693 */;
+import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11601 */;
+import PromotionsHooks from "PromotionsHooks" /* 13858 */;
 import noop from "module_19" /* 19 */;
 
 const native = tmp(1181);
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   return flag;
 }, []));
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   const unseenOutboundPromotions = PromotionsHooks.useUnseenOutboundPromotions();
@@ -68,7 +68,7 @@ const route = SettingBuilders.createRoute({
     return intl.string(util.t["jcSP+g"]);
   },
   parent: null,
-  IconComponent: fn(11330).GiftIcon,
+  IconComponent: fn(11366).GiftIcon,
   usePredicate() {
     return BillingPlatformUtils.isPremiumGiftingSupported();
   },

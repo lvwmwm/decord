@@ -1,13 +1,13 @@
-// Module ID: 6432
-// Function ID: 6433
+// Module ID: 6464
+// Function ID: 6465
 // Name: HeartIllocon
-// Dependencies: [21, 558, 568, 6433, 5802, 2]
+// Dependencies: [21, 558, 568, 6465, 5834, 2]
 
-// Module 6432 (HeartIllocon)
+// Module 6464 (HeartIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6433 from "module_6433" /* 6433 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6465 from "module_6465" /* 6465 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const HeartIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6433 };
+    const obj2 = { uri: _modDef6465 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const HeartIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6433 };
+  const obj2 = { uri: _modDef6465 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

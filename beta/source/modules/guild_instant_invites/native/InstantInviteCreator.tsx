@@ -1,21 +1,21 @@
-// Module ID: 11247
-// Function ID: 11248
+// Module ID: 11283
+// Function ID: 11284
 // Name: InstantInviteCreator
-// Dependencies: [19, 17, 21, 4758, 558, 568, 1181, 11248, 5186, 580, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 1181, 11284, 5218, 580, 2]
 
-// Module 11247 (InstantInviteCreator)
+// Module 11283 (InstantInviteCreator)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import noop from "module_19" /* 19 */;
 
 const native = Stack(1181);
-const Stack_Stack = Stack(5186);
-const DetailedGuildIdentityUserRow = Stack(11248);
+const Stack_Stack = Stack(5218);
+const DetailedGuildIdentityUserRow = Stack(11284);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ identity: { flex: 1 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

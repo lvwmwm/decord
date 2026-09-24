@@ -1,10 +1,10 @@
-// Module ID: 9702
-// Function ID: 9703
+// Module ID: 9734
+// Function ID: 9735
 // Name: ZoomLayout
-// Dependencies: [19, 17, 21, 558, 568, 9703, 2]
+// Dependencies: [19, 17, 21, 558, 568, 9735, 2]
 
-// Module 9702 (ZoomLayout)
-import ZoomLayoutNativeComponentDefault from "ZoomLayoutNativeComponent" /* 9703 */;
+// Module 9734 (ZoomLayout)
+import ZoomLayoutNativeComponentDefault from "ZoomLayoutNativeComponent" /* 9735 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -31,7 +31,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
             value = PixelRatio.get();
             const result = x * value;
             const result1 = y * value;
-            const Commands = ref(9703).Commands;
+            const Commands = ref(9735).Commands;
             Commands.zoomTo(tmp2.current, result / num - result, result1 / num - result1, num, tmp);
           }
         },
@@ -42,7 +42,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
           }
           const animated = obj.animated;
           if (null != ref.current) {
-            const Commands = ref(9703).Commands;
+            const Commands = ref(9735).Commands;
             Commands.unzoom(tmp2.current, tmp);
           }
         }
@@ -83,7 +83,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
         value = PixelRatio.get();
         const result = x * value;
         const result1 = y * value;
-        const Commands = ref(9703).Commands;
+        const Commands = ref(9735).Commands;
         Commands.zoomTo(tmp.current, result / num - result, result1 / num - result1, num, flag);
       }
     },
@@ -97,7 +97,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
         flag = true;
       }
       if (null != ref.current) {
-        const Commands = ref(9703).Commands;
+        const Commands = ref(9735).Commands;
         Commands.unzoom(tmp.current, flag);
       }
     }

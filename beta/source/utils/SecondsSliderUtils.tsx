@@ -1,12 +1,12 @@
-// Module ID: 17285
-// Function ID: 17286
+// Module ID: 17295
+// Function ID: 17296
 // Name: SecondsSliderUtils
-// Dependencies: [1119, 4352, 2]
+// Dependencies: [1119, 4384, 2]
 // Exports: getSecondsSliderLabel
 
-// Module 17285 (SecondsSliderUtils)
+// Module 17295 (SecondsSliderUtils)
 import util from "util" /* 1119 */;
-import _modDef4352 from "module_4352" /* 4352 */;
+import _modDef4384 from "module_4384" /* 4384 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/SecondsSliderUtils.tsx");
@@ -21,7 +21,7 @@ export const getSecondsSliderLabel = function getSecondsSliderLabel(rateLimitPer
     intl = util.intl;
     stringResult = intl.string(util.t.Yl1D84);
   }
-  const time = _modDef4352.duration(rateLimitPerUser, "seconds");
+  const time = _modDef4384.duration(rateLimitPerUser, "seconds");
   if (time.days() > 0) {
     const intl6 = util.intl;
     const t = { days: time.days() };

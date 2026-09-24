@@ -1,14 +1,14 @@
-// Module ID: 17882
-// Function ID: 17883
+// Module ID: 17892
+// Function ID: 17893
 // Name: RelationshipManager
-// Dependencies: [1078, 4610, 1119, 17883, 7365, 2]
+// Dependencies: [1078, 4642, 1119, 17893, 7397, 2]
 
-// Module 17882 (RelationshipManager)
+// Module 17892 (RelationshipManager)
 import Constants from "Constants" /* 1078 */;
 import util from "util" /* 1119 */;
-import shared from "shared" /* 4610 */;
-import RelationshipUtilsAll from "RelationshipUtils" /* 17883 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import shared from "shared" /* 4642 */;
+import RelationshipUtilsAll from "RelationshipUtils" /* 17893 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
 import size from "module_2" /* 2 */;
 
 function handleRelationshipAdd(relationship) {

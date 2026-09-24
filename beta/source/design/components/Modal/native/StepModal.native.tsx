@@ -1,14 +1,14 @@
-// Module ID: 14457
-// Function ID: 14458
+// Module ID: 14495
+// Function ID: 14496
 // Name: StepModal
-// Dependencies: [32, 109, 19, 17, 21, 4758, 5897, 558, 568, 1616, 11453, 14458, 2]
+// Dependencies: [32, 109, 19, 17, 21, 4790, 5929, 558, 568, 1616, 11489, 14496, 2]
 
-// Module 14457 (StepModal)
+// Module 14495 (StepModal)
 import c from "c" /* 568 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import NavigatorConstants from "NavigatorConstants" /* 5897 */;
-import Modal from "Modal" /* 11453 */;
-import ModalStepIndicator from "ModalStepIndicator" /* 14458 */;
+import NavigatorConstants from "NavigatorConstants" /* 5929 */;
+import Modal from "Modal" /* 11489 */;
+import ModalStepIndicator from "ModalStepIndicator" /* 14496 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -18,9 +18,9 @@ let closure_3 = ["steps", "onWillFocus"];
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { height: "100%" }, stepContainer: null };
-const rect = { flexDirection: "column", alignItems: "center", justifyContent: "center", top: 0, left: 0, right: 0, height: fn(5897).NAV_BAR_HEIGHT };
+const rect = { flexDirection: "column", alignItems: "center", justifyContent: "center", top: 0, left: 0, right: 0, height: fn(5929).NAV_BAR_HEIGHT };
 obj2.stepContainer = rect;
 let closure_10 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -52,7 +52,7 @@ export const StepModal = ReactCompilerGating.isReactCompilerEnabled() ? ((steps)
     if (cResult[5] === arr) {
       let tmp13 = cResult[6];
     }
-    const sum = tmp(5897).NAV_BAR_HEIGHT + tmp10.top;
+    const sum = tmp(5929).NAV_BAR_HEIGHT + tmp10.top;
     if (cResult[7] !== sum) {
       const obj2 = { height: sum };
       cResult[7] = sum;
@@ -119,7 +119,7 @@ export const StepModal = ReactCompilerGating.isReactCompilerEnabled() ? ((steps)
             tmp28 = tmp31;
           }
           const obj6 = { currentStep: tmp12, totalSteps: num16 };
-          const tmp27 = closure_1_8(tmp(14458).ModalStepIndicator, obj6);
+          const tmp27 = closure_1_8(tmp(14496).ModalStepIndicator, obj6);
           cResult[18] = tmp12;
           cResult[19] = num16;
           cResult[20] = tmp27;
@@ -137,7 +137,7 @@ export const StepModal = ReactCompilerGating.isReactCompilerEnabled() ? ((steps)
     obj7.onWillFocus = tmp13;
     obj7.headerStyle = tmp15;
     obj7.hideTitle = true;
-    const tmp21 = closure_1_8(tmp(11453).Modal, obj7);
+    const tmp21 = closure_1_8(tmp(11489).Modal, obj7);
     cResult[9] = tmp13;
     cResult[10] = tmp5;
     cResult[11] = tmp15;

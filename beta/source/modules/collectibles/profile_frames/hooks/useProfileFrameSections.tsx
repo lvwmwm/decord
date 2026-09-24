@@ -1,14 +1,14 @@
-// Module ID: 14897
-// Function ID: 14898
+// Module ID: 14935
+// Function ID: 14936
 // Name: useProfileFrameSections
-// Dependencies: [32, 19, 7789, 7804, 558, 568, 565, 7801, 1119, 2]
+// Dependencies: [32, 19, 7821, 7836, 558, 568, 565, 7833, 1119, 2]
 
-// Module 14897 (useProfileFrameSections)
+// Module 14935 (useProfileFrameSections)
 import util from "util" /* 1119 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7801 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7833 */;
 import _slicedToArray from "module_32" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7789 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7804 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7821 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7836 */;
 
 require = fn;
 const useMemo = fn(19).useMemo;
@@ -172,7 +172,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   const tmp11 = _slicedToArray(stateFromStores(565).useStateFromStoresArray(tmp8, tmp9), 2);
-  const profileFrames = stateFromStores(7801).getProfileFrames(stateFromStores, tmp12);
+  const profileFrames = stateFromStores(7833).getProfileFrames(stateFromStores, tmp12);
   if (cResult[11] === tmp13) {
     if (cResult[12] === stateFromStores) {
       let tmp18 = cResult[13];

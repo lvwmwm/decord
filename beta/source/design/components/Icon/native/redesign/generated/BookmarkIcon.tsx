@@ -1,13 +1,13 @@
-// Module ID: 11833
-// Function ID: 11834
+// Module ID: 11869
+// Function ID: 11870
 // Name: BookmarkIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 11834, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 11870, 4493, 2]
 
-// Module 11833 (BookmarkIcon)
+// Module 11869 (BookmarkIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod11834 from "module_11834" /* 11834 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod11870 from "module_11870" /* 11870 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const BookmarkIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(11834);
+    const tmpResult = tmp(11870);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const BookmarkIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11834, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11870, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

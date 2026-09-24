@@ -1,20 +1,20 @@
-// Module ID: 16791
-// Function ID: 16792
+// Module ID: 16801
+// Function ID: 16802
 // Name: ForYouEmptyState
-// Dependencies: [19, 17, 21, 4758, 558, 568, 5907, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 5939, 1119, 4786, 2]
 
-// Module 16791 (ForYouEmptyState)
+// Module 16801 (ForYouEmptyState)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import native from "native" /* 5907 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import native from "native" /* 5939 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ image: { marginBottom: 16 }, container: { paddingHorizontal: 48, alignItems: "center", justifyContent: "center" }, headerText: { fontSize: 18, marginTop: 16, marginBottom: 8 }, text: { textAlign: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -38,7 +38,7 @@ export const ForYouEmptyState = ReactCompilerGating.isReactCompilerEnabled() ? (
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp10 = React3(tmp(5907).MailboxSpotIllustration, { scale: 0.75 });
+      const tmp10 = React3(tmp(5939).MailboxSpotIllustration, { scale: 0.75 });
       cResult[5] = tmp10;
       let tmp8 = tmp10;
     } else {
@@ -68,7 +68,7 @@ export const ForYouEmptyState = ReactCompilerGating.isReactCompilerEnabled() ? (
       }
       if (cResult[12] !== tmp15) {
         const obj4 = { accessibilityRole: "header", color: "mobile-text-heading-primary", variant: "heading-md/bold", style: tmp15, children: tmp16 };
-        const tmp20 = React3(tmp(4754).Text, obj4);
+        const tmp20 = React3(tmp(4786).Text, obj4);
         cResult[12] = tmp15;
         cResult[13] = tmp20;
         let tmp18 = tmp20;
@@ -86,7 +86,7 @@ export const ForYouEmptyState = ReactCompilerGating.isReactCompilerEnabled() ? (
       }
       if (cResult[15] !== tmp4.text) {
         const obj5 = { color: "text-default", variant: "text-md/medium", style: tmp4.text, children: tmp21 };
-        const tmp25 = React3(tmp(4754).Text, obj5);
+        const tmp25 = React3(tmp(4786).Text, obj5);
         cResult[15] = tmp4.text;
         cResult[16] = tmp25;
         let tmp23 = tmp25;

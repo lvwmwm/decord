@@ -1,13 +1,13 @@
-// Module ID: 9114
-// Function ID: 9115
+// Module ID: 9146
+// Function ID: 9147
 // Name: OrbsIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 9115, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 9147, 4493, 2]
 
-// Module 9114 (OrbsIcon)
+// Module 9146 (OrbsIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod9115 from "module_9115" /* 9115 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod9147 from "module_9147" /* 9147 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const OrbsIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(9115);
+    const tmpResult = tmp(9147);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const OrbsIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9115, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9147, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

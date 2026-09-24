@@ -1,16 +1,16 @@
-// Module ID: 15482
-// Function ID: 15483
+// Module ID: 15492
+// Function ID: 15493
 // Name: useManageSubscriptionCardData
-// Dependencies: [32, 19, 2067, 4393, 1078, 4352, 7481, 1119, 558, 568, 15473, 504, 15471, 2]
+// Dependencies: [32, 19, 2067, 4425, 1078, 4384, 7513, 1119, 558, 568, 15483, 504, 15481, 2]
 
-// Module 15482 (useManageSubscriptionCardData)
+// Module 15492 (useManageSubscriptionCardData)
 import util from "util" /* 1119 */;
-import _modDef4352 from "module_4352" /* 4352 */;
-import PriceUtils from "PriceUtils" /* 7481 */;
+import _modDef4384 from "module_4384" /* 4384 */;
+import PriceUtils from "PriceUtils" /* 7513 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4393 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4425 */;
 
 const require = globalThis.__r;
 
@@ -18,12 +18,12 @@ require = fn;
 function computeSubscriptionInfo(subscription) {
   subscription = subscription.subscription;
   let str = "";
-  const obj = _modDef4352(subscription.currentPeriodEnd);
+  const obj = _modDef4384(subscription.currentPeriodEnd);
   if (null != subscription.price) {
     str = PriceUtils.formatPrice(subscription.price, subscription.currency);
   }
-  const formatResult = _modDef4352(subscription.currentPeriodEnd).format("M/D/YY");
-  const obj4 = { memberSince: _modDef4352(subscription.createdAt).format("M/D/YY"), nextRenewalDate: formatResult, nextRenewalLabel: null, subscriptionPrice: null, isCancelled: null, isPastDue: null, isTrial: null };
+  const formatResult = _modDef4384(subscription.currentPeriodEnd).format("M/D/YY");
+  const obj4 = { memberSince: _modDef4384(subscription.createdAt).format("M/D/YY"), nextRenewalDate: formatResult, nextRenewalLabel: null, subscriptionPrice: null, isCancelled: null, isPastDue: null, isTrial: null };
   const intl = util.intl;
   const string = intl.string;
   const t = util.t;

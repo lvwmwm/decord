@@ -1,12 +1,12 @@
-// Module ID: 14887
-// Function ID: 14888
+// Module ID: 14925
+// Function ID: 14926
 // Name: UserProfileUpsellCard
-// Dependencies: [19, 17, 7455, 7676, 21, 4758, 580, 558, 568, 8938, 4754, 5198, 1098, 1181, 2]
+// Dependencies: [19, 17, 7487, 7708, 21, 4790, 580, 558, 568, 8970, 4786, 5230, 1098, 1181, 2]
 
-// Module 14887 (UserProfileUpsellCard)
+// Module 14925 (UserProfileUpsellCard)
 import nativeDefault from "native" /* 580 */;
 import ConstantsIOS from "ConstantsIOS" /* 1098 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -14,14 +14,14 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, ScrollView: closure_4 } = get_ActivityIndicator);
-const Gradients = fn(7676).Gradients;
+const Gradients = fn(7708).Gradients;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { upsellButton: { marginTop: 8, flexShrink: 0, borderRadius: nativeDefault.radii.round, gap: 4 }, titleContainer: { flexDirection: "row", alignItems: "center", gap: 4, marginBottom: 4 }, linearGradient: { width: "100%", height: "100%", position: "absolute", overflow: "hidden" }, outer: null, scroll: null, inner: null };
 let obj3 = { marginTop: 8, flexShrink: 0, borderRadius: nativeDefault.radii.round, gap: 4 };
-obj2.outer = { marginHorizontal: fn(7455).PROFILE_SIDE_PADDING - 1 };
-let obj4 = { marginHorizontal: fn(7455).PROFILE_SIDE_PADDING - 1 };
+obj2.outer = { marginHorizontal: fn(7487).PROFILE_SIDE_PADDING - 1 };
+let obj4 = { marginHorizontal: fn(7487).PROFILE_SIDE_PADDING - 1 };
 obj2.scroll = { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj2.inner = { paddingVertical: 12, paddingHorizontal: 14 };
 let closure_8 = createStyles.createStyles(obj2);
@@ -106,9 +106,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const obj3 = { style: tmp4.titleContainer, children: null };
           const obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-          const items1 = [closure_6(tmp(8938).NitroWheelIcon, obj4), ];
+          const items1 = [closure_6(tmp(8970).NitroWheelIcon, obj4), ];
           const obj5 = { variant: "heading-sm/bold", children: headerText };
-          items1[1] = closure_6(tmp(4754).Text, obj5);
+          items1[1] = closure_6(tmp(4786).Text, obj5);
           obj3.children = items1;
           tmp9 = closure_7(closure_3, obj3);
         }
@@ -147,9 +147,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (null != headerText) {
     const obj3 = { style: tmp.titleContainer, children: null };
     const obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-    const items3 = [tmp2(tmp3(8938).NitroWheelIcon, obj4), ];
+    const items3 = [tmp2(tmp3(8970).NitroWheelIcon, obj4), ];
     const obj5 = { variant: "heading-sm/bold", children: headerText };
-    items3[1] = tmp2(tmp3(4754).Text, obj5);
+    items3[1] = tmp2(tmp3(4786).Text, obj5);
     obj3.children = items3;
     tmp6Result = tmp6(closure_3, obj3);
   }

@@ -1,54 +1,54 @@
-// Module ID: 16938
-// Function ID: 16939
+// Module ID: 16948
+// Function ID: 16949
 // Name: VibegrationsStandaloneScreen
-// Dependencies: [32, 5, 19, 17, 4985, 2109, 2067, 4399, 16939, 16941, 13364, 9307, 1078, 2052, 9312, 21, 4758, 580, 1105, 558, 568, 7410, 1119, 3682, 7882, 1401, 16942, 8180, 5822, 1616, 1488, 504, 5276, 4725, 16943, 16950, 16952, 16957, 7442, 11257, 16959, 16960, 4754, 5188, 9308, 16961, 4442, 4352, 5903, 7224, 16963, 16965, 9314, 16967, 9310, 13182, 16966, 1482, 9868, 16968, 16989, 16990, 4458, 16991, 16993, 16994, 15365, 4457, 16995, 2023, 16996, 16969, 13186, 16998, 9483, 15828, 7624, 16041, 5839, 17001, 8182, 17002, 9869, 17023, 5278, 17066, 7246, 2]
+// Dependencies: [32, 5, 19, 17, 5017, 2109, 2067, 4431, 16949, 16951, 13400, 9339, 1078, 2052, 9344, 21, 4790, 580, 1105, 558, 568, 7442, 1119, 3714, 7914, 1401, 16952, 8212, 5854, 1616, 1488, 504, 5308, 4757, 16953, 16960, 16962, 16967, 7474, 11293, 16969, 16970, 4786, 5220, 9340, 16971, 4474, 4384, 5935, 7256, 16973, 16975, 9346, 16977, 9342, 13218, 16976, 1482, 9900, 16978, 16999, 17000, 4490, 17001, 17003, 17004, 15375, 4489, 17005, 2023, 17006, 16979, 13222, 17008, 9515, 15838, 7656, 16051, 5871, 17011, 8214, 17012, 9901, 17033, 5310, 17076, 7278, 2]
 
-// Module 16938 (VibegrationsStandaloneScreen)
+// Module 16948 (VibegrationsStandaloneScreen)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import _modDef4352 from "module_4352" /* 4352 */;
-import DateUtils from "DateUtils" /* 4442 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 5276 */;
-import TableRow from "TableRow" /* 5822 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 7410 */;
-import SettingsIcon from "SettingsIcon" /* 7624 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 8180 */;
-import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9308 */;
-import UploadIcon from "UploadIcon" /* 9483 */;
-import restartVibegrationsAppFramesDefault from "restartVibegrationsAppFrames" /* 13186 */;
-import UndoIcon from "UndoIcon" /* 15365 */;
-import WrenchIcon from "WrenchIcon" /* 15828 */;
-import BugIcon from "BugIcon" /* 16041 */;
-import VibegrationsHeaderIconButtonDefault from "VibegrationsHeaderIconButton" /* 16942 */;
-import VibegrationsCreateSheet from "VibegrationsCreateSheet" /* 16943 */;
-import VibegrationsRemixSheet from "VibegrationsRemixSheet" /* 16950 */;
-import vibegrationsProjectActions from "vibegrationsProjectActions" /* 16952 */;
-import VibegrationsProjectSettingsSheet from "VibegrationsProjectSettingsSheet" /* 16957 */;
-import VibegrationsPublishBlockedSheetDefault from "VibegrationsPublishBlockedSheet" /* 16989 */;
-import vibegrationsPublishBlockedReason from "vibegrationsPublishBlockedReason" /* 16990 */;
-import VibegrationsPublishNotesSheetDefault from "VibegrationsPublishNotesSheet" /* 16991 */;
-import VibegrationsSettingsSheet from "VibegrationsSettingsSheet" /* 16993 */;
-import VibegrationsConnectToolSheet from "VibegrationsConnectToolSheet" /* 16994 */;
-import VibegrationsVersionHistorySheet from "VibegrationsVersionHistorySheet" /* 16995 */;
-import VibegrationsRestorePointsSheet from "VibegrationsRestorePointsSheet" /* 16996 */;
-import VibegrationsDebugSceneDefault from "VibegrationsDebugScene" /* 17066 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import _modDef4384 from "module_4384" /* 4384 */;
+import DateUtils from "DateUtils" /* 4474 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 5308 */;
+import TableRow from "TableRow" /* 5854 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 7442 */;
+import SettingsIcon from "SettingsIcon" /* 7656 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 8212 */;
+import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9340 */;
+import UploadIcon from "UploadIcon" /* 9515 */;
+import restartVibegrationsAppFramesDefault from "restartVibegrationsAppFrames" /* 13222 */;
+import UndoIcon from "UndoIcon" /* 15375 */;
+import WrenchIcon from "WrenchIcon" /* 15838 */;
+import BugIcon from "BugIcon" /* 16051 */;
+import VibegrationsHeaderIconButtonDefault from "VibegrationsHeaderIconButton" /* 16952 */;
+import VibegrationsCreateSheet from "VibegrationsCreateSheet" /* 16953 */;
+import VibegrationsRemixSheet from "VibegrationsRemixSheet" /* 16960 */;
+import vibegrationsProjectActions from "vibegrationsProjectActions" /* 16962 */;
+import VibegrationsProjectSettingsSheet from "VibegrationsProjectSettingsSheet" /* 16967 */;
+import VibegrationsPublishBlockedSheetDefault from "VibegrationsPublishBlockedSheet" /* 16999 */;
+import vibegrationsPublishBlockedReason from "vibegrationsPublishBlockedReason" /* 17000 */;
+import VibegrationsPublishNotesSheetDefault from "VibegrationsPublishNotesSheet" /* 17001 */;
+import VibegrationsSettingsSheet from "VibegrationsSettingsSheet" /* 17003 */;
+import VibegrationsConnectToolSheet from "VibegrationsConnectToolSheet" /* 17004 */;
+import VibegrationsVersionHistorySheet from "VibegrationsVersionHistorySheet" /* 17005 */;
+import VibegrationsRestorePointsSheet from "VibegrationsRestorePointsSheet" /* 17006 */;
+import VibegrationsDebugSceneDefault from "VibegrationsDebugScene" /* 17076 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 4985 */;
+import ApplicationStore from "ApplicationStore" /* 5017 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
-import VibegrationsBuilderRouteStore from "VibegrationsBuilderRouteStore" /* 16941 */;
-import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13364 */;
-import VibegrationsProjectStore_mod from "VibegrationsProjectStore" /* 9307 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
+import VibegrationsBuilderRouteStore from "VibegrationsBuilderRouteStore" /* 16951 */;
+import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13400 */;
+import VibegrationsProjectStore_mod from "VibegrationsProjectStore" /* 9339 */;
 
 const VibegrationsCreateSheetDefault = VibegrationsCreateSheet;
 const VibegrationsRemixSheetDefault = VibegrationsRemixSheet;
@@ -64,7 +64,7 @@ function remixedOpener(arg0, arg1) {
   closure_1 = arg1;
   return (arg0, arg1) => {
     if (arg1 === closure_0) {
-      f144908(arg0);
+      f144999(arg0);
     } else {
       guildId(navigation[18]).transitionTo(callback3.CHANNEL(arg1, projectGuildId.VIBEGRATIONS, arg0));
       const obj = guildId(navigation[18]);
@@ -73,22 +73,22 @@ function remixedOpener(arg0, arg1) {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: metroRequire, Image: closure_7, Keyboard: closure_8, ScrollView: closure_9, View: c10 } = get_ActivityIndicator);
-const vibegrationsDesignFeedbackStore = fn(16939);
+const vibegrationsDesignFeedbackStore = fn(16949);
 ({ enterVibegrationsDesignFeedback: closure_15, exitVibegrationsDesignFeedback: closure_16, useVibegrationsDesignFeedback: closure_17 } = vibegrationsDesignFeedbackStore);
-let VibegrationsConnectionStore = fn(13364);
+let VibegrationsConnectionStore = fn(13400);
 ({ closeConnection: closure_19, draftPatchNotes: closure_20, publishProject: closure_21, restoreSourceHistoryEntry: closure_22 } = VibegrationsConnectionStore);
 let VibegrationsConnectionStore = VibegrationsConnectionStore_mod;
-let VibegrationsProjectStore = fn(9307);
+let VibegrationsProjectStore = fn(9339);
 ({ canPublishProject: closure_24, isProjectOwner: closure_25 } = VibegrationsProjectStore);
 let VibegrationsProjectStore = VibegrationsProjectStore_mod;
 const Constants = fn(1078);
 ({ Permissions: closure_27, Routes: closure_28 } = Constants);
 const StaticChannelRoute = fn(2052).StaticChannelRoute;
-const FramesConstants = fn(9312);
+const FramesConstants = fn(9344);
 ({ isLaunched: closure_30, MAIN_SURFACE: items } = FramesConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_32, jsxs: closure_33, Fragment: closure_34 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_35 = createStyles.createStyles((paddingBottom) => {
   const obj = { content: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingBottom }, contentBare: null, centered: null, listContent: null, section: null, sectionHeading: null, changelog: null, changelogEntries: null, changelogItem: null, appIcon: null, listError: null, headerActions: null, segments: null, panes: null, pane: null, paneHidden: null, paneBackstage: null };
   const obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingBottom };
@@ -140,9 +140,9 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj2 = { time: null };
       const _Date = Date;
       const date = new Date(project.updated_at);
-      obj2.time = tmp(7882).getRelativeTimestamp(date.getTime());
-      formatToPlainStringResult = intl.formatToPlainString(_modDef3682.oMDaqr, obj2);
-      const tmpResult2 = tmp(7882);
+      obj2.time = tmp(7914).getRelativeTimestamp(date.getTime());
+      formatToPlainStringResult = intl.formatToPlainString(_modDef3714.oMDaqr, obj2);
+      const tmpResult2 = tmp(7914);
     }
     cResult[0] = project.updated_at;
     cResult[1] = formatToPlainStringResult;
@@ -172,7 +172,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp22 = cResult[8];
       }
       if (cResult[9] !== onMore) {
-        const obj3 = { IconComponent: tmp(8180).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: tmp22 };
+        const obj3 = { IconComponent: tmp(8212).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: tmp22 };
         const tmp28 = __initData5(VibegrationsHeaderIconButtonDefault, obj3);
         cResult[9] = onMore;
         cResult[10] = tmp28;
@@ -193,7 +193,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj4 = { label: project.name, subLabel: tmp5, icon: tmp17, trailing: tmp24, onPress };
-      const tmp31 = __initData5(tmp(5822).TableRow, obj4);
+      const tmp31 = __initData5(tmp(5854).TableRow, obj4);
       cResult[11] = tmp5;
       cResult[12] = onPress;
       cResult[13] = project.name;
@@ -240,9 +240,9 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj2 = { time: null };
     const _Date = Date;
     const date = new Date(project.updated_at);
-    obj2.time = tmp2(7882).getRelativeTimestamp(date.getTime());
-    formatToPlainStringResult = intl.formatToPlainString(_modDef3682.oMDaqr, obj2);
-    const tmp2Result = tmp2(7882);
+    obj2.time = tmp2(7914).getRelativeTimestamp(date.getTime());
+    formatToPlainStringResult = intl.formatToPlainString(_modDef3714.oMDaqr, obj2);
+    const tmp2Result = tmp2(7914);
   }
   const obj3 = { label: project.name, subLabel: formatToPlainStringResult, icon: null, trailing: null, onPress: null };
   const tmp11 = React5;
@@ -543,7 +543,7 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     closure_1 = callback;
     return (arg0, arg1) => {
       if (arg1 === closure_0) {
-        f144908(arg0);
+        f144999(arg0);
       } else {
         guildId(navigation[18]).transitionTo(callback3.CHANNEL(arg1, projectGuildId.VIBEGRATIONS, arg0));
         const obj = guildId(navigation[18]);
@@ -657,13 +657,13 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         style: tmp3.changelogEntries,
         children: result.map((children) => {
               const obj = { style: closure_1.changelogItem, children: null };
-              const items = [DateUtils.dateFormat(_modDef4352(children.date, "YYYY-MM-DD"), "LL"), ];
+              const items = [DateUtils.dateFormat(_modDef4384(children.date, "YYYY-MM-DD"), "LL"), ];
               const tmp2 = v65535;
               let combined = null;
               if (obj3.isVibegrationsChangelogEntryExclusive(children)) {
                 const intl = tmp3(1119).intl;
                 const _HermesInternal = HermesInternal;
-                combined = " \u00B7 " + intl.string(_modDef3682["CLX+p/"]);
+                combined = " \u00B7 " + intl.string(_modDef3714["CLX+p/"]);
               }
               items[1] = combined;
               const items1 = [__initData6(Text_Text.Text, { variant: "text-xs/bold", color: "text-muted", children: items }), __initData5(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: children.summary })];
@@ -1348,9 +1348,9 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         obj7.application = application;
         obj7.guildId = closure_131_15;
         obj7.onClose = function onClose() {
-          const result = c0(16967).repairVibegrationsGuildHints(closure_1_4, closure_1_15);
-          const obj = c0(16967);
-          result.finally(() => application(9308).getProject(closure_1_1)).catch(() => {
+          const result = c0(16977).repairVibegrationsGuildHints(closure_1_4, closure_1_15);
+          const obj = c0(16977);
+          result.finally(() => application(9340).getProject(closure_1_1)).catch(() => {
 
           });
         };
@@ -1436,7 +1436,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const memo = obj11.useMemo(() => {
     let obj = { id: "chat", label: null, page: null };
     const intl = util.intl;
-    obj.label = intl.string(_modDef3682.kWtsyP);
+    obj.label = intl.string(_modDef3714.kWtsyP);
     const items = [
       obj,
       ...modes.map((id) => {
@@ -1547,7 +1547,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               obj6.publish = nextPromise;
               obj6.initialDraft = promise5;
               obj3.content = tmp22(VibegrationsPublishNotesSheetDefault, obj6);
-              obj3.key = tmp20(16991).VIBEGRATIONS_PUBLISH_NOTES_SHEET_KEY;
+              obj3.key = tmp20(17001).VIBEGRATIONS_PUBLISH_NOTES_SHEET_KEY;
               obj2.showActionSheet(obj3);
             } else {
               const nextPromise1 = guild(tmp).then((ok) => {
@@ -1573,22 +1573,22 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               nextPromise1.then(() => {
                 const obj2 = { key: "VIBEGRATIONS_PUBLISH_SUCCESS", content: null };
                 const intl = guildId(1119).intl;
-                obj2.content = intl.string(projectId(3682).wA0o0L);
-                projectId(4458).open(obj2);
+                obj2.content = intl.string(projectId(3714).wA0o0L);
+                projectId(4490).open(obj2);
               }).catch((error) => {
                 if (error instanceof Error) {
                   let message = error.message;
                 } else {
                   const intl = guildId(1119).intl;
-                  message = intl.string(projectId(3682).fNP6Cd);
+                  message = intl.string(projectId(3714).fNP6Cd);
                 }
-                projectId(4458).open({ key: "VIBEGRATIONS_PUBLISH_FAILED", content: message });
+                projectId(4490).open({ key: "VIBEGRATIONS_PUBLISH_FAILED", content: message });
               });
               const nextPromise2 = nextPromise1.then(() => {
                 const obj2 = { key: "VIBEGRATIONS_PUBLISH_SUCCESS", content: null };
                 const intl = guildId(1119).intl;
-                obj2.content = intl.string(projectId(3682).wA0o0L);
-                projectId(4458).open(obj2);
+                obj2.content = intl.string(projectId(3714).wA0o0L);
+                projectId(4490).open(obj2);
               });
             }
           }
@@ -1619,10 +1619,10 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const items20 = [guildId, navigation];
   memo1 = obj11.useMemo(() => {
     closure_0 = guildId;
-    const f144908 = (projectId) => navigation.push(callback8.CHAT, { projectId });
+    const f144999 = (projectId) => navigation.push(callback8.CHAT, { projectId });
     return (arg0, arg1) => {
       if (arg1 === closure_0) {
-        f144908(arg0);
+        f144999(arg0);
       } else {
         guildId(navigation[18]).transitionTo(callback3.CHANNEL(arg1, projectGuildId.VIBEGRATIONS, arg0));
         const obj = guildId(navigation[18]);
@@ -1650,31 +1650,31 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       tmp.current = true;
       let obj2 = { key: "VIBEGRATIONS_VERSION_RESTORING", content: null, IconComponent: null };
       let intl = util.intl;
-      obj2.content = intl.string(_modDef3682.pGFXZ0);
+      obj2.content = intl.string(_modDef3714.pGFXZ0);
       obj2.IconComponent = UndoIcon.UndoIcon;
       ToastActionCreatorsDefault.open(obj2);
       const promise = closure_2_22(projectId, sha.sha);
       closure_2_22(projectId, sha.sha).then(() => {
         const obj2 = { key: "VIBEGRATIONS_VERSION_RESTORED", content: null, IconComponent: null };
         const intl = guildId(1119).intl;
-        obj2.content = intl.string(projectId(3682).u8g2Od);
-        obj2.IconComponent = guildId(15365).UndoIcon;
-        projectId(4458).open(obj2);
+        obj2.content = intl.string(projectId(3714).u8g2Od);
+        obj2.IconComponent = guildId(15375).UndoIcon;
+        projectId(4490).open(obj2);
       }, () => {
         const intl = guildId(1119).intl;
-        guildId(4457).presentError(intl.string(projectId(3682).q6iZ84));
+        guildId(4489).presentError(intl.string(projectId(3714).q6iZ84));
       }).finally(() => {
         ref.current = false;
       });
       const nextPromise = closure_2_22(projectId, sha.sha).then(() => {
         const obj2 = { key: "VIBEGRATIONS_VERSION_RESTORED", content: null, IconComponent: null };
         const intl = guildId(1119).intl;
-        obj2.content = intl.string(projectId(3682).u8g2Od);
-        obj2.IconComponent = guildId(15365).UndoIcon;
-        projectId(4458).open(obj2);
+        obj2.content = intl.string(projectId(3714).u8g2Od);
+        obj2.IconComponent = guildId(15375).UndoIcon;
+        projectId(4490).open(obj2);
       }, () => {
         const intl = guildId(1119).intl;
-        guildId(4457).presentError(intl.string(projectId(3682).q6iZ84));
+        guildId(4489).presentError(intl.string(projectId(3714).q6iZ84));
       });
     }
   }, items23);
@@ -1740,7 +1740,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     if (canPublish) {
       const obj = { label: null, IconComponent: null, action: null };
       const intl = util.intl;
-      obj.label = intl.string(_modDef3682["5gU57O"]);
+      obj.label = intl.string(_modDef3714["5gU57O"]);
       obj.IconComponent = UploadIcon.UploadIcon;
       obj.action = callback3;
       items.push(obj);
@@ -1748,7 +1748,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     if (stateFromStores3) {
       const obj2 = { label: null, IconComponent: null, action: null };
       const intl2 = util.intl;
-      obj2.label = intl2.string(_modDef3682.gTMvzD);
+      obj2.label = intl2.string(_modDef3714.gTMvzD);
       obj2.IconComponent = WrenchIcon.WrenchIcon;
       obj2.action = callback5;
       items.push(obj2);
@@ -1756,7 +1756,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     if (isOwner) {
       const obj3 = { label: null, IconComponent: null, action: null };
       const intl3 = util.intl;
-      obj3.label = intl3.string(_modDef3682["xhcY+n"]);
+      obj3.label = intl3.string(_modDef3714["xhcY+n"]);
       obj3.IconComponent = SettingsIcon.SettingsIcon;
       obj3.action = callback4;
       items.push(obj3);
@@ -1764,7 +1764,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     if (setting) {
       const obj4 = { label: null, IconComponent: null, action: null };
       const intl4 = util.intl;
-      obj4.label = intl4.string(_modDef3682.KampIf);
+      obj4.label = intl4.string(_modDef3714.KampIf);
       obj4.IconComponent = BugIcon.BugIcon;
       obj4.action = callback10;
       items.push(obj4);
@@ -1816,12 +1816,12 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                   align: "below",
                   children(arg0) {
                         ({ ref, onPress, accessibilityActions, onAccessibilityAction } = arg0);
-                        const obj = { ref, IconComponent: title(8180).MoreHorizontalIcon, onPress, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null };
+                        const obj = { ref, IconComponent: title(8212).MoreHorizontalIcon, onPress, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null };
                         const intl = title(1119).intl;
                         obj.accessibilityLabel = intl.string(title(1119).t["UKOtz+"]);
                         obj.accessibilityActions = accessibilityActions;
                         obj.onAccessibilityAction = onAccessibilityAction;
-                        return closure_1_32(closure_1_1(16942), obj);
+                        return closure_1_32(closure_1_1(16952), obj);
                       }
                 };
                 items[1] = callback5(guildId(navigation[80]).ContextMenu, obj2);

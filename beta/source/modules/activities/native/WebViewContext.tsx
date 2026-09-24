@@ -1,9 +1,9 @@
-// Module ID: 9727
-// Function ID: 9728
+// Module ID: 9759
+// Function ID: 9760
 // Name: WebViewContext
-// Dependencies: [32, 19, 17, 21, 4758, 558, 568, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 558, 568, 2]
 
-// Module 9727 (WebViewContext)
+// Module 9759 (WebViewContext)
 import c from "c" /* 568 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -15,7 +15,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const context = noop.createContext(0);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ placeholderWebView: { width: 2, height: 2, position: "absolute", opacity: 0 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

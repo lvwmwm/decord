@@ -1,15 +1,15 @@
-// Module ID: 16866
-// Function ID: 16867
+// Module ID: 16876
+// Function ID: 16877
 // Name: useNotificationPermissionPrompt
-// Dependencies: [19, 2038, 5496, 2039, 12558, 558, 568, 504, 2041, 12567, 16867, 16869, 2]
+// Dependencies: [19, 2038, 5528, 2039, 12594, 558, 568, 504, 2041, 12603, 16877, 16879, 2]
 
-// Module 16866 (useNotificationPermissionPrompt)
-import NotificationUtilsDefault from "NotificationUtils" /* 12567 */;
+// Module 16876 (useNotificationPermissionPrompt)
+import NotificationUtilsDefault from "NotificationUtils" /* 12603 */;
 import noop from "module_19" /* 19 */;
 import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2038 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5528 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2039 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12558 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12594 */;
 
 const require = fn;
 const ReactCompilerGating = fn(558);
@@ -53,9 +53,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let tmp14 = cResult[7];
     }
     const effect = noop.useEffect(tmp13, tmp14);
-    const guildOpenNudge = tmp(16867).useGuildOpenNudge();
-    const tmpResult5 = tmp(16867);
-    const postCallDisconnectNudge = tmp(16869).usePostCallDisconnectNudge();
+    const guildOpenNudge = tmp(16877).useGuildOpenNudge();
+    const tmpResult5 = tmp(16877);
+    const postCallDisconnectNudge = tmp(16879).usePostCallDisconnectNudge();
   }
   class N {
     constructor() {
@@ -95,16 +95,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (stateFromStores) {
       if (!stateFromStores1) {
         if (tmp5) {
-          const permission = tmp3(12567).requestPermission();
-          tmp3(12567).shouldRequestNotification = false;
-          const tmp3Result = tmp3(12567);
+          const permission = tmp3(12603).requestPermission();
+          tmp3(12603).shouldRequestNotification = false;
+          const tmp3Result = tmp3(12603);
         }
         tmp5 = NotificationUtilsDefault.shouldRequestNotification && !PushNotificationPermissionStore.promptSeen;
       }
     }
   }, items2);
   const obj2 = stateFromStores(504);
-  const guildOpenNudge = stateFromStores(16867).useGuildOpenNudge();
-  const obj3 = stateFromStores(16867);
-  const postCallDisconnectNudge = stateFromStores(16869).usePostCallDisconnectNudge();
+  const guildOpenNudge = stateFromStores(16877).useGuildOpenNudge();
+  const obj3 = stateFromStores(16877);
+  const postCallDisconnectNudge = stateFromStores(16879).usePostCallDisconnectNudge();
 });

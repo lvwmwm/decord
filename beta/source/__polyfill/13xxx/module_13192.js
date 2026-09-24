@@ -1,0 +1,39 @@
+// Module ID: 13192
+// Function ID: 13193
+// Dependencies: [13112, 13091]
+// Exports: captureFeedback
+
+// Module 13192
+import _mod13091 from "module_13091" /* 13091 */;
+import _mod13112 from "module_13112" /* 13112 */;
+
+require = arg1;
+const dependencyMap = arg6;
+
+export const captureFeedback = function captureFeedback(arg0) {
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
+  }
+  let currentScope = arg2;
+  if (arg2 === undefined) {
+    currentScope = _mod13112.getCurrentScope();
+  }
+  const obj2 = { contexts: null, type: "feedback", level: "info", tags: null };
+  const obj4 = { feedback: _mod13091.dropUndefinedKeys({ contact_email: email, name, message, url, source, associated_event_id: associatedEventId }) };
+  ({ message, name, email, url, source, associatedEventId, tags } = arg0);
+  obj2.contexts = obj4;
+  obj2.tags = tags;
+  let client = currentScope;
+  if (currentScope) {
+    client = currentScope.getClient();
+  }
+  if (!client) {
+    client = _mod13112.getClient();
+    const tmp3Result = _mod13112;
+  }
+  if (client) {
+    client.emit("beforeSendFeedback", obj2, obj);
+  }
+  return currentScope.captureEvent(obj2, obj);
+};

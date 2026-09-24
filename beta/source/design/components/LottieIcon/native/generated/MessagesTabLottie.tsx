@@ -1,12 +1,12 @@
-// Module ID: 14416
-// Function ID: 14417
+// Module ID: 14454
+// Function ID: 14455
 // Name: MessagesTabLottie
-// Dependencies: [19, 21, 558, 568, 14417, 10204, 2]
+// Dependencies: [19, 21, 558, 568, 14455, 10243, 2]
 
-// Module 14416 (MessagesTabLottie)
+// Module 14454 (MessagesTabLottie)
 import c from "c" /* 568 */;
-import LottieIcon from "LottieIcon" /* 10204 */;
-import _mod14417 from "module_14417" /* 14417 */;
+import LottieIcon from "LottieIcon" /* 10243 */;
+import _mod14455 from "module_14455" /* 14455 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("design/components/LottieIcon/native/g
 export const MessagesTabLottie = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
   const cResult = c.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(14417);
+    const tmpResult = tmp(14455);
     cResult[0] = tmpResult;
     let first = tmpResult;
   } else {
@@ -40,5 +40,5 @@ export const MessagesTabLottie = noop.forwardRef(ReactCompilerGating.isReactComp
   tmp6 = tmp8;
 }) : ((arg0, ref) => {
   const merged = Object.assign(arg0);
-  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod14417, animation: "all", ref, layers, markers: items });
+  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod14455, animation: "all", ref, layers, markers: items });
 }));

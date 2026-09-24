@@ -1,22 +1,22 @@
-// Module ID: 15131
-// Function ID: 15132
+// Module ID: 15141
+// Function ID: 15142
 // Name: FamilyCenterSetting
-// Dependencies: [19, 1078, 21, 558, 568, 15132, 15133, 8871, 580, 1119, 2486, 11594, 5309, 15136, 2]
+// Dependencies: [19, 1078, 21, 558, 568, 15142, 15143, 8903, 580, 1119, 2486, 11630, 5341, 15146, 2]
 
-// Module 15131 (FamilyCenterSetting)
+// Module 15141 (FamilyCenterSetting)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef2486 from "module_2486" /* 2486 */;
-import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 15132 */;
-import useParentalConsentWarning from "useParentalConsentWarning" /* 15133 */;
+import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 15142 */;
+import useParentalConsentWarning from "useParentalConsentWarning" /* 15143 */;
 import noop from "module_19" /* 19 */;
 
 const util = intl(1119);
-const WarningIcon = intl(8871);
+const WarningIcon = intl(8903);
 require = fn;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let intl = require;
   let stringResult = dependencyMap;
@@ -71,7 +71,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const obj3 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null };
         const intl = tmp(1119).intl;
         obj3.accessibilityLabel = intl.string(_modDef2486.wucWfE);
-        tmp6 = jsx(tmp(8871).WarningIcon, { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null });
+        tmp6 = jsx(tmp(8903).WarningIcon, { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null });
       }
     }
   }
@@ -83,7 +83,7 @@ const route = SettingBuilders.createRoute({
     return intl.string(_modDef2486.RZqaJn);
   },
   parent: null,
-  IconComponent: fn(5309).GroupIcon,
+  IconComponent: fn(5341).GroupIcon,
   useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let intl = require;
     let stringResult = dependencyMap;
@@ -138,7 +138,7 @@ const route = SettingBuilders.createRoute({
           const obj3 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null };
           const intl = tmp(1119).intl;
           obj3.accessibilityLabel = intl.string(_modDef2486.wucWfE);
-          tmp6 = jsx(tmp(8871).WarningIcon, { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null });
+          tmp6 = jsx(tmp(8903).WarningIcon, { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING, accessible: true, accessibilityLabel: null });
         }
       }
     }

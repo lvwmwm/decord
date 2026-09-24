@@ -1,24 +1,24 @@
-// Module ID: 11948
-// Function ID: 11949
+// Module ID: 11984
+// Function ID: 11985
 // Name: ConnectionsRoleMessageBadgeActionSheet
-// Dependencies: [32, 19, 17, 1390, 502, 2109, 2103, 2067, 11949, 5627, 1078, 21, 4758, 580, 558, 568, 1119, 5626, 4708, 4754, 4693, 12, 4462, 5502, 11686, 9548, 1181, 1401, 4610, 38, 7409, 7429, 504, 1245, 4938, 5739, 8453, 4725, 11689, 7450, 5188, 7397, 2]
+// Dependencies: [32, 19, 17, 1390, 502, 2109, 2103, 2067, 11985, 5659, 1078, 21, 4790, 580, 558, 568, 1119, 5658, 4740, 4786, 4725, 12, 4494, 5534, 11722, 9580, 1181, 1401, 4642, 38, 7441, 7461, 504, 1245, 4970, 5771, 8485, 4757, 11725, 7482, 5220, 7429, 2]
 
-// Module 11948 (ConnectionsRoleMessageBadgeActionSheet)
+// Module 11984 (ConnectionsRoleMessageBadgeActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4708 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
-import PlatformsDefault from "Platforms" /* 5502 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 5626 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11689 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4740 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
+import PlatformsDefault from "Platforms" /* 5534 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 5658 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5771 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11725 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserRecord from "UserRecord" /* 1390 */;
@@ -26,17 +26,17 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 import GuildRoleStore from "GuildRoleStore" /* 2103 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 11949 */;
+import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 11985 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const OperatorTypes = fn(5627).OperatorTypes;
+const OperatorTypes = fn(5659).OperatorTypes;
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_14, EMPTY_STRING_SNOWFLAKE_ID: closure_15 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_16, jsxs: closure_17, Fragment: closure_18 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flexDirection: "column", alignItems: "center", padding: 16 }, header: { width: "100%", flexDirection: "row", alignItems: "center", paddingBottom: 16, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: nativeDefault.space.PX_24 }, verifiedContainer: { marginRight: 8, height: 24, width: 24 }, headerTextContainer: { flexShrink: 1, flexDirection: "column" }, verifiedCheck: { position: "absolute", left: 0, top: 0 }, loadingSpinner: { marginVertical: 40 }, popoutCheck: { flexDirection: "row", alignItems: "center", marginTop: 8, marginLeft: 32, paddingRight: 20 }, popoutCheckIcon: null, popoutChecksGroup: null, popoutChecksGroupBottomMargin: null, popoutCheckGroupName: null, popoutCheckGroupPlatformIcon: null, button: null, botTag: null };
 let obj3 = { width: "100%", flexDirection: "row", alignItems: "center", paddingBottom: 16, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: nativeDefault.space.PX_24 };
 obj2.popoutCheckIcon = { marginRight: 8, tintColor: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE };
@@ -98,21 +98,21 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj4 = { connectionType, connectionMetadataField, operator, value };
-    const connectionsCheckText = tmp(5626).getConnectionsCheckText(obj4);
+    const connectionsCheckText = tmp(5658).getConnectionsCheckText(obj4);
     cResult[6] = connectionMetadataField;
     cResult[7] = connectionType;
     cResult[8] = operator;
     cResult[9] = value;
     cResult[10] = connectionsCheckText;
     tmp4 = connectionsCheckText;
-    const tmpResult = tmp(5626);
+    const tmpResult = tmp(5658);
   }
   if (null == tmp4) {
     return null;
   } else {
     if (cResult[11] !== popoutCheck.popoutCheckIcon) {
       const obj5 = { size: "sm", style: popoutCheck.popoutCheckIcon };
-      const tmp16 = value2(tmp(4708).CheckmarkLargeIcon, obj5);
+      const tmp16 = value2(tmp(4740).CheckmarkLargeIcon, obj5);
       cResult[11] = popoutCheck.popoutCheckIcon;
       cResult[12] = tmp16;
       let tmp14 = tmp16;
@@ -121,7 +121,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[13] !== tmp4) {
       const obj6 = { variant: "text-xs/medium", color: "mobile-text-heading-primary", children: tmp4 };
-      const tmp19 = value2(tmp(4754).Text, obj6);
+      const tmp19 = value2(tmp(4786).Text, obj6);
       cResult[13] = tmp4;
       cResult[14] = tmp19;
       let tmp17 = tmp19;
@@ -199,7 +199,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   _slicedToArray = groupByResult;
   const keys = Object.keys(groupByResult);
   closure_4 = keys.length - 1;
-  const roleColor = guildId(4462).useToken(nativeDefault.unsafe_rawColors.GREEN_330);
+  const roleColor = guildId(4494).useToken(nativeDefault.unsafe_rawColors.GREEN_330);
   const mapped = keys.map((item, index) => {
     const found = arr.filter((operator) => null != operator.operator);
     const found1 = arr.find((application) => null != application.application);
@@ -226,10 +226,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     if (officialApplicationIds.includes(str)) {
       const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-      let tmp12 = value2(tmp2(11686), obj2);
+      let tmp12 = value2(tmp2(11722), obj2);
     } else if (null != tmp7) {
       const obj3 = { style: closure_1.botTag, verified: false };
-      tmp12 = value2(tmp2(9548), obj3);
+      tmp12 = value2(tmp2(9580), obj3);
     }
     const items = [closure_1.popoutChecksGroup, ];
     let prop = null;
@@ -259,7 +259,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         name = name1;
       }
       const obj7 = { variant: "text-sm/medium", color: "interactive-text-active", children: name };
-      items1[2] = value2(tmp11(4754).Text, obj7);
+      items1[2] = value2(tmp11(4786).Text, obj7);
       items1[3] = tmp12;
       obj5.children = items1;
       const items2 = [
@@ -279,10 +279,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       const tmp11Result = tmp11(1401);
       const tmp23 = value2;
       const icon = value.icon;
-      obj8.source = tmp11Result.makeSource(tmp11(4610).isThemeDark(dependencyMap) ? icon.darkPNG : icon.lightPNG);
+      obj8.source = tmp11Result.makeSource(tmp11(4642).isThemeDark(dependencyMap) ? icon.darkPNG : icon.lightPNG);
       obj8.size = tmp11(1181).Icon.Sizes.MEDIUM;
       tmp23(tmp11(1181).Icon, obj8);
-      const tmp11Result2 = tmp11(4610);
+      const tmp11Result2 = tmp11(4642);
     }
   });
   if (cResult[0] !== mapped) {
@@ -310,8 +310,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   c3 = groupByResult;
   const keys = Object.keys(groupByResult);
   closure_4 = keys.length - 1;
-  const roleColor = guildId(4462).useToken(nativeDefault.unsafe_rawColors.GREEN_330);
-  let obj2 = guildId(4462);
+  const roleColor = guildId(4494).useToken(nativeDefault.unsafe_rawColors.GREEN_330);
+  let obj2 = guildId(4494);
   return closure_16(closure_18, {
     children: keys.map((item, index) => {
       const found = arr.filter((operator) => null != operator.operator);
@@ -339,10 +339,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
       if (officialApplicationIds.includes(str)) {
         const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-        let tmp12 = value2(tmp2(11686), obj2);
+        let tmp12 = value2(tmp2(11722), obj2);
       } else if (null != tmp7) {
         const obj3 = { style: closure_1.botTag, verified: false };
-        tmp12 = value2(tmp2(9548), obj3);
+        tmp12 = value2(tmp2(9580), obj3);
       }
       const items = [closure_1.popoutChecksGroup, ];
       let prop = null;
@@ -372,7 +372,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           name = name1;
         }
         const obj7 = { variant: "text-sm/medium", color: "interactive-text-active", children: name };
-        items1[2] = value2(tmp11(4754).Text, obj7);
+        items1[2] = value2(tmp11(4786).Text, obj7);
         items1[3] = tmp12;
         obj5.children = items1;
         const items2 = [
@@ -392,10 +392,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         const tmp11Result = tmp11(1401);
         const tmp23 = value2;
         const icon = value.icon;
-        obj8.source = tmp11Result.makeSource(tmp11(4610).isThemeDark(dependencyMap) ? icon.darkPNG : icon.lightPNG);
+        obj8.source = tmp11Result.makeSource(tmp11(4642).isThemeDark(dependencyMap) ? icon.darkPNG : icon.lightPNG);
         obj8.size = tmp11(1181).Icon.Sizes.MEDIUM;
         tmp23(tmp11(1181).Icon, obj8);
-        const tmp11Result2 = tmp11(4610);
+        const tmp11Result2 = tmp11(4642);
       }
     })
   });

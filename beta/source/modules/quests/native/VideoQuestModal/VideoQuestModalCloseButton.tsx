@@ -1,15 +1,15 @@
-// Module ID: 15404
-// Function ID: 15405
+// Module ID: 15414
+// Function ID: 15415
 // Name: VideoQuestModalCloseButton
-// Dependencies: [21, 558, 568, 580, 1119, 5846, 5341, 2]
+// Dependencies: [21, 558, 568, 580, 1119, 5878, 5373, 2]
 
-// Module 15404 (VideoQuestModalCloseButton)
+// Module 15414 (VideoQuestModalCloseButton)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Pressables from "Pressables" /* 5341 */;
-import XSmallIcon from "XSmallIcon" /* 5846 */;
+import Pressables from "Pressables" /* 5373 */;
+import XSmallIcon from "XSmallIcon" /* 5878 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[4] !== iconColor) {
     const obj3 = { color: iconColor };
-    const tmp11 = jsx(tmp(5846).XSmallIcon, { color: iconColor });
+    const tmp11 = jsx(tmp(5878).XSmallIcon, { color: iconColor });
     cResult[4] = iconColor;
     cResult[5] = tmp11;
     let tmp9 = tmp11;

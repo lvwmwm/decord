@@ -1,13 +1,13 @@
-// Module ID: 17987
-// Function ID: 17988
+// Module ID: 17997
+// Function ID: 17998
 // Name: ListBulletsIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 17988, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 17998, 4493, 2]
 
-// Module 17987 (ListBulletsIcon)
+// Module 17997 (ListBulletsIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod17988 from "module_17988" /* 17988 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod17998 from "module_17998" /* 17998 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const ListBulletsIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(17988);
+    const tmpResult = tmp(17998);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const ListBulletsIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod17988, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod17998, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

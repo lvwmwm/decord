@@ -1,19 +1,19 @@
-// Module ID: 16370
-// Function ID: 16371
+// Module ID: 16380
+// Function ID: 16381
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 4798, 4773, 4409, 2099, 4939, 1376, 1078, 21, 4758, 580, 558, 568, 504, 16371, 8491, 1368, 4771, 4769, 11219, 9846, 9097, 16372, 8128, 8533, 16373, 9093, 16374, 5341, 2]
+// Dependencies: [19, 17, 4830, 4805, 4441, 2099, 4971, 1376, 1078, 21, 4790, 580, 558, 568, 504, 16381, 8523, 1368, 4803, 4801, 11255, 9878, 9129, 16382, 8160, 8565, 16383, 9125, 16384, 5373, 2]
 
-// Module 16370 (MessagesItemChannelBase)
+// Module 16380 (MessagesItemChannelBase)
 import nativeDefault from "native" /* 580 */;
-import transitionToChannel from "transitionToChannel" /* 4769 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4771 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11219 */;
+import transitionToChannel from "transitionToChannel" /* 4801 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4803 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11255 */;
 import noop from "module_19" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
-import ReadStateStore from "ReadStateStore" /* 4773 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
+import ReadStateStore from "ReadStateStore" /* 4805 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -21,7 +21,7 @@ const View = fn(17).View;
 const ActivityTypes = fn(1078).ActivityTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_14 = createStyles.createStyles(() => {
   const obj = { pressable: { marginBottom: 1, borderRadius: nativeDefault.radii.md, marginHorizontal: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_4, flexDirection: "row", alignItems: "center", flex: 1 }, nameplate: null, rowActive: null, selectedBorder: null, rowSelected: null };
   const obj2 = { marginBottom: 1, borderRadius: nativeDefault.radii.md, marginHorizontal: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_4, flexDirection: "row", alignItems: "center", flex: 1 };
@@ -100,7 +100,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
             obj1.activities = activities;
             obj4 = obj1;
           } else {
-            obj4 = { status: "Array", activities: "Set" };
+            obj4 = { status: "state", activities: "toCharArray$esjava$1" };
           }
           return obj4;
         }
@@ -123,7 +123,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
             obj1.activities = activities;
             obj4 = obj1;
           } else {
-            obj4 = { status: "Array", activities: "Set" };
+            obj4 = { status: "state", activities: "toCharArray$esjava$1" };
           }
           return obj4;
         }
@@ -147,7 +147,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
             obj1.activities = activities;
             obj4 = obj1;
           } else {
-            obj4 = { status: "Array", activities: "Set" };
+            obj4 = { status: "state", activities: "toCharArray$esjava$1" };
           }
           return obj4;
         }
@@ -170,7 +170,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
             obj1.activities = activities;
             obj4 = obj1;
           } else {
-            obj4 = { status: "Array", activities: "Set" };
+            obj4 = { status: "state", activities: "toCharArray$esjava$1" };
           }
           return obj4;
         }
@@ -218,7 +218,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
     const stateFromStoresObject1 = tmp(504).useStateFromStoresObject(tmp16, tmp17);
     ({ mentionCount, hasUnreadMessages } = stateFromStoresObject1);
     const tmpResult9 = tmp(504);
-    ({ isIncomingCall, isOngoingCall } = setIsPressed(16371)(channel.id));
+    ({ isIncomingCall, isOngoingCall } = setIsPressed(16381)(channel.id));
     const _Symbol3 = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
       class B {
@@ -276,7 +276,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
         }
       }
     }
-    const tmp20 = setIsPressed(16371)(channel.id);
+    const tmp20 = setIsPressed(16381)(channel.id);
     const stateFromStoresObject2 = tmp(504).useStateFromStoresObject(tmp21, tmp22);
     ({ resolvedUnreadSetting, muted, favorite } = stateFromStoresObject2);
     const _Symbol4 = Symbol;
@@ -474,7 +474,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
       }
     }
     const tmpResult12 = tmp(504);
-    const nameplate = tmp(8491).useNameplate(tmp31);
+    const nameplate = tmp(8523).useNameplate(tmp31);
     let tmp35 = null != nameplate;
     if (tmp35) {
       class Z {
@@ -517,7 +517,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
       }
       tmp35 = tmp36;
     }
-    const tmpResult13 = tmp(8491);
+    const tmpResult13 = tmp(8523);
     if (tmpResult14.isIOS()) {
       class Z {
         constructor() {
@@ -649,7 +649,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
       const obj2 = { status: PresenceStore.getStatus(obj.getRecipientId()), activities };
       let obj3 = obj2;
     } else {
-      obj3 = { status: "Array", activities: "Set" };
+      obj3 = { status: "state", activities: "toCharArray$esjava$1" };
     }
     return obj3;
   });

@@ -1,19 +1,19 @@
-// Module ID: 7285
-// Function ID: 7286
+// Module ID: 7317
+// Function ID: 7318
 // Name: SceneLoadingIndicator
-// Dependencies: [19, 17, 21, 4758, 558, 568, 5796, 7286, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 5828, 7318, 2]
 
-// Module 7285 (SceneLoadingIndicator)
+// Module 7317 (SceneLoadingIndicator)
 import c from "c" /* 568 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5796 */;
-import NavScrim from "NavScrim" /* 7286 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5828 */;
+import NavScrim from "NavScrim" /* 7318 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ loadingContainer: { flex: 1, paddingTop: 40 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -23,8 +23,8 @@ export const SceneLoadingIndicator = ReactCompilerGating.isReactCompilerEnabled(
   const cResult = c.c(4);
   const tmp4 = closure_5();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp8 = React3(tmp(5796).ActivityIndicator, {});
-    const tmp9 = React3(tmp(7286).NavScrim, {});
+    const tmp8 = React3(tmp(5828).ActivityIndicator, {});
+    const tmp9 = React3(tmp(7318).NavScrim, {});
     cResult[0] = tmp8;
     cResult[1] = tmp9;
     tmp5 = tmp8;

@@ -1,9 +1,9 @@
-// Module ID: 12671
-// Function ID: 12672
+// Module ID: 12707
+// Function ID: 12708
 // Name: NewGamesCoachmarkExperiment
 // Dependencies: [1438, 558, 568, 2]
 
-// Module 12671 (NewGamesCoachmarkExperiment)
+// Module 12707 (NewGamesCoachmarkExperiment)
 import c from "c" /* 568 */;
 import ApexExperiment from "ApexExperiment" /* 1438 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

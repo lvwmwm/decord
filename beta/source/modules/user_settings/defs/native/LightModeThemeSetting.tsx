@@ -1,19 +1,19 @@
-// Module ID: 15564
-// Function ID: 15565
+// Module ID: 15574
+// Function ID: 15575
 // Name: LightModeThemeSetting
-// Dependencies: [1186, 1189, 8238, 1078, 558, 568, 504, 11594, 1119, 15565, 15566, 2]
+// Dependencies: [1186, 1189, 8270, 1078, 558, 568, 504, 11630, 1119, 15575, 15576, 2]
 
-// Module 15564 (LightModeThemeSetting)
+// Module 15574 (LightModeThemeSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import useSyncedModeThemeName from "useSyncedModeThemeName" /* 15565 */;
+import useSyncedModeThemeName from "useSyncedModeThemeName" /* 15575 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 
 require = fn;
 const SystemTheme = fn(1189).SystemTheme;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -38,7 +38,7 @@ const route = SettingBuilders.createRoute({
     const intl = util.intl;
     return intl.string(util.t.NoFvjZ);
   },
-  parent: fn(8238).MobileUserSettings.APPEARANCE,
+  parent: fn(8270).MobileUserSettings.APPEARANCE,
   usePredicate: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {

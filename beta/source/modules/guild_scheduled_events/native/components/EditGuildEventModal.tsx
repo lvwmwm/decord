@@ -1,19 +1,19 @@
-// Module ID: 9788
-// Function ID: 9789
+// Module ID: 9820
+// Function ID: 9821
 // Name: EditGuildEventModal
-// Dependencies: [5, 32, 19, 17, 2051, 21, 4758, 580, 558, 568, 1616, 9765, 1879, 9764, 9768, 4472, 1119, 9766, 9789, 9769, 9790, 9842, 9843, 7246, 2]
+// Dependencies: [5, 32, 19, 17, 2051, 21, 4790, 580, 558, 568, 1616, 9797, 1879, 9796, 9800, 4504, 1119, 9798, 9821, 9801, 9822, 9874, 9875, 7278, 2]
 
-// Module 9788 (EditGuildEventModal)
+// Module 9820 (EditGuildEventModal)
 import nativeDefault from "native" /* 580 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1879 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9764 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9765 */;
-import EntityUtils from "EntityUtils" /* 9766 */;
-import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 9769 */;
-import useGetEventChannelsByType from "useGetEventChannelsByType" /* 9789 */;
-import EditGuildEventWhereDefault from "EditGuildEventWhere" /* 9790 */;
-import EditGuildEventDetailsDefault from "EditGuildEventDetails" /* 9842 */;
-import EditGuildEventPreviewDefault from "EditGuildEventPreview" /* 9843 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9796 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9797 */;
+import EntityUtils from "EntityUtils" /* 9798 */;
+import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 9801 */;
+import useGetEventChannelsByType from "useGetEventChannelsByType" /* 9821 */;
+import EditGuildEventWhereDefault from "EditGuildEventWhere" /* 9822 */;
+import EditGuildEventDetailsDefault from "EditGuildEventDetails" /* 9874 */;
+import EditGuildEventPreviewDefault from "EditGuildEventPreview" /* 9875 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -24,7 +24,7 @@ require = fn;
 const View = fn(17).View;
 let closure_8 = fn(2051).GuildScheduledEventEntityTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, cardStyle: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj.cardStyle = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
@@ -213,7 +213,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild)
           return { value: "IconComponent", done: null };
         } else {
           if (!closure_128_5) {
-            const AccessibilityAnnouncer = tmp4(4472).AccessibilityAnnouncer;
+            const AccessibilityAnnouncer = tmp4(4504).AccessibilityAnnouncer;
             const intl = tmp4(1119).intl;
             AccessibilityAnnouncer.announce(intl.string(tmp4(1119).t["5HzXO5"]));
             closure_128_1();
@@ -223,7 +223,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild)
               id = closure_128_2.id;
             }
           }
-          const AccessibilityAnnouncer2 = tmp4(4472).AccessibilityAnnouncer;
+          const AccessibilityAnnouncer2 = tmp4(4504).AccessibilityAnnouncer;
           const intl2 = tmp4(1119).intl;
           AccessibilityAnnouncer2.announce(intl2.string(tmp4(1119).t["F9On+q"]));
         }

@@ -1,13 +1,13 @@
-// Module ID: 6458
-// Function ID: 6459
+// Module ID: 6490
+// Function ID: 6491
 // Name: LeafIllocon
-// Dependencies: [21, 558, 568, 6459, 5802, 2]
+// Dependencies: [21, 558, 568, 6491, 5834, 2]
 
-// Module 6458 (LeafIllocon)
+// Module 6490 (LeafIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6459 from "module_6459" /* 6459 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6491 from "module_6491" /* 6491 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const LeafIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6459 };
+    const obj2 = { uri: _modDef6491 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const LeafIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6459 };
+  const obj2 = { uri: _modDef6491 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

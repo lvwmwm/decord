@@ -1,18 +1,18 @@
-// Module ID: 15728
-// Function ID: 15729
+// Module ID: 15738
+// Function ID: 15739
 // Name: SaveCameraUploadsToDeviceSetting
-// Dependencies: [1188, 8238, 558, 568, 504, 9470, 11594, 1119, 2]
+// Dependencies: [1188, 8270, 558, 568, 504, 9502, 11630, 1119, 2]
 
-// Module 15728 (SaveCameraUploadsToDeviceSetting)
+// Module 15738 (SaveCameraUploadsToDeviceSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9470 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9502 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1188 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -37,7 +37,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t["99tBAC"]);
   },
-  parent: fn(8238).MobileUserSettings.CHAT,
+  parent: fn(8270).MobileUserSettings.CHAT,
   useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {

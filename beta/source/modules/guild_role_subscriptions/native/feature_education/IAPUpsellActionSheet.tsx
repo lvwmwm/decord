@@ -1,9 +1,9 @@
-// Module ID: 16584
-// Function ID: 16585
+// Module ID: 16594
+// Function ID: 16595
 // Name: IAPUpsellActionSheet
-// Dependencies: [19, 1078, 2052, 2042, 21, 558, 568, 1105, 1119, 16585, 16586, 2]
+// Dependencies: [19, 1078, 2052, 2042, 21, 558, 568, 1105, 1119, 16595, 16596, 2]
 
-// Module 16584 (IAPUpsellActionSheet)
+// Module 16594 (IAPUpsellActionSheet)
 import router_utils from "router_utils" /* 1105 */;
 import util from "util" /* 1119 */;
 import noop from "module_19" /* 19 */;
@@ -50,13 +50,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
       return tmp12;
     }
-    const obj2 = { imageSource: markAsDismissed(16586), header: tmp6, body: tmp7, cta: tmp8, onCTAPress: tmp4, markAsDismissed };
-    const tmp16 = jsx(markAsDismissed(16585), { imageSource: markAsDismissed(16586), header: tmp6, body: tmp7, cta: tmp8, onCTAPress: tmp4, markAsDismissed });
+    const obj2 = { imageSource: markAsDismissed(16596), header: tmp6, body: tmp7, cta: tmp8, onCTAPress: tmp4, markAsDismissed };
+    const tmp16 = jsx(markAsDismissed(16595), { imageSource: markAsDismissed(16596), header: tmp6, body: tmp7, cta: tmp8, onCTAPress: tmp4, markAsDismissed });
     cResult[6] = tmp4;
     cResult[7] = markAsDismissed;
     cResult[8] = tmp16;
     tmp12 = tmp16;
-    const tmp15 = markAsDismissed(16585);
+    const tmp15 = markAsDismissed(16595);
   }
   const fn = function l() {
     router_utils.transitionTo(Routes.CHANNEL(guildId, StaticChannelRoute.ROLE_SUBSCRIPTIONS));
@@ -68,7 +68,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   tmp4 = fn;
 }) : ((arg0) => {
   ({ guildId: require, markAsDismissed } = arg0);
-  const obj = { imageSource: markAsDismissed(16586), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null };
+  const obj = { imageSource: markAsDismissed(16596), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null };
   const intl = util.intl;
   obj.header = intl.string(util.t.rBw4cE);
   const intl2 = util.intl;
@@ -80,5 +80,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     markAsDismissed(ContentDismissActionType.UNKNOWN);
   };
   obj.markAsDismissed = markAsDismissed;
-  return jsx(markAsDismissed(16585), { imageSource: markAsDismissed(16586), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null });
+  return jsx(markAsDismissed(16595), { imageSource: markAsDismissed(16596), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null });
 });

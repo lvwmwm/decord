@@ -1,22 +1,22 @@
-// Module ID: 17150
-// Function ID: 17151
+// Module ID: 17160
+// Function ID: 17161
 // Name: PollBadge
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1181, 17151, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1181, 17161, 1119, 4786, 2]
 
-// Module 17150 (PollBadge)
+// Module 17160 (PollBadge)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import _modDef17151 from "module_17151" /* 17151 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import _modDef17161 from "module_17161" /* 17161 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { borderRadius: nativeDefault.radii.round, paddingHorizontal: 8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, color: nativeDefault.colors.TEXT_MUTED, flexDirection: "row", alignItems: "center" }, text: { marginLeft: 4, textTransform: "uppercase" } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -34,7 +34,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { size: tmp(1181).IconSizes.EXTRA_SMALL_10, source: _modDef17151 };
+      const obj2 = { size: tmp(1181).IconSizes.EXTRA_SMALL_10, source: _modDef17161 };
       const tmp10 = React4(tmp(1181).Icon, obj2);
       cResult[3] = tmp10;
       let tmp7 = tmp10;
@@ -52,7 +52,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     }
     if (cResult[5] !== tmp4.text) {
       const obj3 = { style: tmp4.text, variant: "text-xs/semibold", children: tmp11 };
-      const tmp15 = React4(tmp(4754).Text, obj3);
+      const tmp15 = React4(tmp(4786).Text, obj3);
       cResult[5] = tmp4.text;
       cResult[6] = tmp15;
       let tmp13 = tmp15;
@@ -84,7 +84,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   const obj = { style: null, children: null };
   const items = [tmp.container, style.style];
   obj.style = items;
-  const items1 = [React4(native.Icon, { size: native.IconSizes.EXTRA_SMALL_10, source: _modDef17151 }), ];
+  const items1 = [React4(native.Icon, { size: native.IconSizes.EXTRA_SMALL_10, source: _modDef17161 }), ];
   const obj3 = { style: tmp.text, variant: "text-xs/semibold", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t.RgIi2B);

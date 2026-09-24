@@ -1,34 +1,34 @@
-// Module ID: 9124
-// Function ID: 9125
+// Module ID: 9156
+// Function ID: 9157
 // Name: CollectiblesShopCardCardDetailsV2
-// Dependencies: [19, 17, 7484, 1078, 21, 4758, 580, 558, 568, 9043, 7800, 9125, 7801, 9127, 9138, 1119, 4754, 9114, 1368, 9139, 8938, 8452, 4418, 4462, 4608, 9141, 504, 9142, 5198, 2]
+// Dependencies: [19, 17, 7516, 1078, 21, 4790, 580, 558, 568, 9075, 7832, 9157, 7833, 9159, 9170, 1119, 4786, 9146, 1368, 9171, 8970, 8484, 4450, 4494, 4640, 9173, 504, 9174, 5230, 2]
 
-// Module 9124 (CollectiblesShopCardCardDetailsV2)
+// Module 9156 (CollectiblesShopCardCardDetailsV2)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
-import useToken from "useToken" /* 4462 */;
-import ColorUtils from "ColorUtils" /* 4608 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7800 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7801 */;
-import useCurrentUser from "useCurrentUser" /* 8452 */;
-import useDefaultVariantIndex from "useDefaultVariantIndex" /* 9043 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9125 */;
-import getProductName from "getProductName" /* 9141 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4450 */;
+import useToken from "useToken" /* 4494 */;
+import ColorUtils from "ColorUtils" /* 4640 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7832 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7833 */;
+import useCurrentUser from "useCurrentUser" /* 8484 */;
+import useDefaultVariantIndex from "useDefaultVariantIndex" /* 9075 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9157 */;
+import getProductName from "getProductName" /* 9173 */;
 import noop from "module_19" /* 19 */;
-import IAPStore from "IAPStore" /* 7484 */;
+import IAPStore from "IAPStore" /* 7516 */;
 
-const LinearGradientDefault = tmp11(5198);
-const CollectiblesShopCardVariantsDefault = tmp4(9142);
+const LinearGradientDefault = tmp11(5230);
+const CollectiblesShopCardVariantsDefault = tmp4(9174);
 require = fn;
 const View = fn(17).View;
 const Constants = fn(1078);
 ({ CurrencyCodes: metroRequire, VerticalGradient: closure_7 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { regularMetadataContainer: null, assetName: null, priceVariantsContainer: null, priceDescription: null, text: null, discountPercentage: null, wheelIcon: null, androidTextPadding: null };
 let size = { position: "absolute", height: "45%", width: "100%", padding: 10, flex: 1, bottom: 0, overflow: "hidden", borderBottomLeftRadius: nativeDefault.radii.sm, borderBottomRightRadius: nativeDefault.radii.sm, display: "flex", flexDirection: "column", justifyContent: "flex-end" };
 obj.regularMetadataContainer = size;
@@ -65,7 +65,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
               let tmp13 = cResult[13];
             }
             const discountPercentage2 = tmp13.discountPercentage;
-            const balance = tmp(9127).useFetchVirtualCurrencyBalance().balance;
+            const balance = tmp(9159).useFetchVirtualCurrencyBalance().balance;
             let tmp17 = null;
             if (null != tmp9) {
               tmp17 = null;
@@ -77,7 +77,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
               if (null == tmp6) {
                 const _Symbol6 = Symbol;
                 if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-                  const tmp114 = closure_1_8(tmp(9138).CollectiblesShopPricePlaceholder, {});
+                  const tmp114 = closure_1_8(tmp(9170).CollectiblesShopPricePlaceholder, {});
                   cResult[14] = tmp114;
                   let tmp112 = tmp114;
                 } else {
@@ -99,7 +99,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
               }
               if (cResult[16] !== styles.text) {
                 const obj3 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: text5, children: tmp102 };
-                const tmp106 = closure_1_8(tmp(4754).Text, obj3);
+                const tmp106 = closure_1_8(tmp(4786).Text, obj3);
                 cResult[16] = styles.text;
                 cResult[17] = tmp106;
                 let tmp104 = tmp106;
@@ -131,7 +131,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
               }
               if (cResult[22] !== styles.text) {
                 const obj5 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: text4, children: tmp92 };
-                const tmp96 = closure_1_8(tmp(4754).Text, obj5);
+                const tmp96 = closure_1_8(tmp(4786).Text, obj5);
                 cResult[22] = styles.text;
                 cResult[23] = tmp96;
                 let tmp94 = tmp96;
@@ -163,7 +163,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
               }
               if (cResult[28] !== styles.text) {
                 const obj7 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: text3, children: tmp82 };
-                const tmp86 = closure_1_8(tmp(4754).Text, obj7);
+                const tmp86 = closure_1_8(tmp(4786).Text, obj7);
                 cResult[28] = styles.text;
                 cResult[29] = tmp86;
                 let tmp84 = tmp86;
@@ -195,7 +195,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
               }
               if (cResult[34] !== styles.text) {
                 const obj9 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: text2, children: tmp72 };
-                const tmp76 = closure_1_8(tmp(4754).Text, obj9);
+                const tmp76 = closure_1_8(tmp(4786).Text, obj9);
                 cResult[34] = styles.text;
                 cResult[35] = tmp76;
                 let tmp74 = tmp76;
@@ -227,7 +227,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
               }
               if (cResult[40] !== styles.text) {
                 const obj11 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: text, children: tmp62 };
-                const tmp66 = closure_1_8(tmp(4754).Text, obj11);
+                const tmp66 = closure_1_8(tmp(4786).Text, obj11);
                 cResult[40] = styles.text;
                 cResult[41] = tmp66;
                 let tmp64 = tmp66;
@@ -267,7 +267,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
                     }
                     if (cResult[50] !== styles.wheelIcon) {
                       const obj14 = { size: "xxs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-                      const tmp43 = closure_1_8(tmp(9114).OrbsIcon, obj14);
+                      const tmp43 = closure_1_8(tmp(9146).OrbsIcon, obj14);
                       cResult[50] = styles.wheelIcon;
                       cResult[51] = tmp43;
                       let tmp41 = tmp43;
@@ -331,7 +331,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
                               }
                             }
                           }
-                          let tmp54Result = discountPercentage2 >= tmp(7801).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+                          let tmp54Result = discountPercentage2 >= tmp(7833).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
                           if (tmp54Result) {
                             const items1 = [, , ];
                             ({ discountPercentage: arr6[0], text: arr6[1] } = styles);
@@ -344,7 +344,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
                             obj17.style = items1;
                             const _HermesInternal2 = HermesInternal;
                             obj17.children = "-" + discountPercentage2 + "%";
-                            tmp54Result = closure_1_8(tmp(4754).Text, obj17);
+                            tmp54Result = closure_1_8(tmp(4786).Text, obj17);
                             tmpResult11 = tmp(1368);
                           }
                           cResult[63] = styles.androidTextPadding;
@@ -356,7 +356,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
                         }
                       }
                       const obj18 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityLabel: tmp44, style: tmp48, children: tmp9.amount };
-                      const tmp51 = closure_1_8(tmp(4754).Text, obj18);
+                      const tmp51 = closure_1_8(tmp(4786).Text, obj18);
                       cResult[59] = tmp44;
                       cResult[60] = tmp48;
                       cResult[61] = tmp9.amount;
@@ -427,7 +427,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
                           }
                         }
                       }
-                      let tmp32Result = discountPercentage >= tmp(7801).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+                      let tmp32Result = discountPercentage >= tmp(7833).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
                       if (tmp32Result) {
                         const items5 = [, , ];
                         ({ discountPercentage: arr2[0], text: arr2[1] } = styles);
@@ -440,7 +440,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
                         obj20.style = items5;
                         const _HermesInternal = HermesInternal;
                         obj20.children = "-" + discountPercentage + "%";
-                        tmp32Result = closure_1_8(tmp(4754).Text, obj20);
+                        tmp32Result = closure_1_8(tmp(4786).Text, obj20);
                         tmpResult13 = tmp(1368);
                       }
                       cResult[85] = discountPercentage;
@@ -451,7 +451,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
                       tmp30 = tmp32Result;
                     }
                     const obj21 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp26, children: tmp6 };
-                    const tmp29 = closure_1_8(tmp(4754).Text, obj21);
+                    const tmp29 = closure_1_8(tmp(4786).Text, obj21);
                     cResult[82] = tmp6;
                     cResult[83] = tmp26;
                     cResult[84] = tmp29;
@@ -470,37 +470,37 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
                 cResult[75] = styles.wheelIcon;
                 cResult[76] = hasShopDiscount;
                 tmp18 = hasShopDiscount;
-              } else if (discountSource === tmp(7801).ShopDiscountSource.THIRDPARTY) {
+              } else if (discountSource === tmp(7833).ShopDiscountSource.THIRDPARTY) {
                 const obj22 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-                let tmp21 = closure_1_8(tmp(9139).TagIcon, obj22);
+                let tmp21 = closure_1_8(tmp(9171).TagIcon, obj22);
               } else {
                 const obj23 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-                tmp21 = closure_1_8(tmp(8938).NitroWheelIcon, obj23);
+                tmp21 = closure_1_8(tmp(8970).NitroWheelIcon, obj23);
               }
             }
-            const tmpResult = tmp(9127);
+            const tmpResult = tmp(9159);
           }
-          const productDiscount = tmp(7801).getProductDiscount(tmp5, hasShopDiscount, constants.DISCORD_ORB);
+          const productDiscount = tmp(7833).getProductDiscount(tmp5, hasShopDiscount, constants.DISCORD_ORB);
           cResult[11] = hasShopDiscount;
           cResult[12] = tmp5;
           cResult[13] = productDiscount;
           tmp13 = productDiscount;
-          const tmpResult14 = tmp(7801);
+          const tmpResult14 = tmp(7833);
         }
-        const productDiscount1 = tmp(7801).getProductDiscount(tmp5, hasShopDiscount);
+        const productDiscount1 = tmp(7833).getProductDiscount(tmp5, hasShopDiscount);
         cResult[8] = hasShopDiscount;
         cResult[9] = tmp5;
         cResult[10] = productDiscount1;
         tmp11 = productDiscount1;
-        const tmpResult15 = tmp(7801);
+        const tmpResult15 = tmp(7833);
       }
       const obj24 = { product: tmp5, hasShopDiscount };
-      const productOrbPrice = tmp(7800).getProductOrbPrice(obj24);
+      const productOrbPrice = tmp(7832).getProductOrbPrice(obj24);
       cResult[5] = hasShopDiscount;
       cResult[6] = tmp5;
       cResult[7] = productOrbPrice;
       tmp9 = productOrbPrice;
-      const tmpResult16 = tmp(7800);
+      const tmpResult16 = tmp(7832);
     }
   }
   const selectedProduct = CollectiblesProductUtils.getSelectedProduct(product, defaultVariantIndex);
@@ -696,41 +696,41 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     tmp6 = cResult[1];
   }
   if (cResult[2] !== currentUser) {
-    const shopDiscountSource = tmp(7801).getShopDiscountSource(currentUser);
+    const shopDiscountSource = tmp(7833).getShopDiscountSource(currentUser);
     cResult[2] = currentUser;
     cResult[3] = shopDiscountSource;
     let tmp9 = shopDiscountSource;
-    const tmpResult = tmp(7801);
+    const tmpResult = tmp(7833);
   } else {
     tmp9 = cResult[3];
   }
   const token = useToken.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   if (cResult[4] !== token) {
-    const tmpResult9 = tmp(4608);
-    const hexToRgbaStringResult = tmpResult9.hexToRgbaString(tmp(4608).hexWithOpacity(token, 0.9));
+    const tmpResult9 = tmp(4640);
+    const hexToRgbaStringResult = tmpResult9.hexToRgbaString(tmp(4640).hexWithOpacity(token, 0.9));
     cResult[4] = token;
     cResult[5] = hexToRgbaStringResult;
     let tmp13 = hexToRgbaStringResult;
-    const tmpResult10 = tmp(4608);
+    const tmpResult10 = tmp(4640);
   } else {
     tmp13 = cResult[5];
   }
   if (cResult[6] !== token) {
-    const tmpResult11 = tmp(4608);
-    const hexToRgbaStringResult1 = tmpResult11.hexToRgbaString(tmp(4608).hexWithOpacity(token, 0));
+    const tmpResult11 = tmp(4640);
+    const hexToRgbaStringResult1 = tmpResult11.hexToRgbaString(tmp(4640).hexWithOpacity(token, 0));
     cResult[6] = token;
     cResult[7] = hexToRgbaStringResult1;
     let tmp15 = hexToRgbaStringResult1;
-    const tmpResult12 = tmp(4608);
+    const tmpResult12 = tmp(4640);
   } else {
     tmp15 = cResult[7];
   }
   if (cResult[8] !== product) {
-    const cardProductName = tmp(9141).getCardProductName(product);
+    const cardProductName = tmp(9173).getCardProductName(product);
     cResult[8] = product;
     cResult[9] = cardProductName;
     let tmp17 = cardProductName;
-    const tmpResult13 = tmp(9141);
+    const tmpResult13 = tmp(9173);
   } else {
     tmp17 = cResult[9];
   }
@@ -843,7 +843,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         tmp30 = tmp31;
       }
       const obj4 = { style: tmp4.assetName, variant: "heading-sm/bold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: tmp17 };
-      const tmp29 = closure_1_8(tmp(4754).Text, obj4);
+      const tmp29 = closure_1_8(tmp(4786).Text, obj4);
       cResult[19] = tmp17;
       cResult[20] = tmp4.assetName;
       cResult[21] = tmp29;

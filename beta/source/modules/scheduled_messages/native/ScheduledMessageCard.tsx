@@ -1,17 +1,17 @@
-// Module ID: 12360
-// Function ID: 12361
+// Module ID: 12396
+// Function ID: 12397
 // Name: ScheduledMessageCard
-// Dependencies: [19, 17, 2045, 1078, 21, 4758, 580, 558, 568, 504, 1105, 4961, 12361, 5796, 12362, 10936, 4754, 1119, 5824, 8093, 12363, 12364, 12355, 2]
+// Dependencies: [19, 17, 2045, 1078, 21, 4790, 580, 558, 568, 504, 1105, 4993, 12397, 5828, 12398, 10972, 4786, 1119, 5856, 8125, 12399, 12400, 12391, 2]
 
-// Module 12360 (ScheduledMessageCard)
+// Module 12396 (ScheduledMessageCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import router_utils from "router_utils" /* 1105 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 8093 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12355 */;
-import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 12363 */;
-import ForLaterCardStatusHeader from "ForLaterCardStatusHeader" /* 12364 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 8125 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12391 */;
+import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 12399 */;
+import ForLaterCardStatusHeader from "ForLaterCardStatusHeader" /* 12400 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
@@ -20,7 +20,7 @@ const View = fn(17).View;
 const Routes = fn(1078).Routes;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { card: { gap: 16, marginBottom: 16 }, cardDivider: { marginHorizontal: -16, height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED }, attachmentCount: { flexDirection: "row", alignItems: "center", gap: 4 }, pendingRemoval: { alignItems: "center", paddingVertical: 16 } };
 let closure_9 = createStyles.createStyles(obj);
 fn(558);
@@ -30,11 +30,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = c.c(13);
   ({ scheduledMessage, isPendingRemoval } = arg0);
   if (cResult[0] !== scheduledMessage.state) {
-    const messageForState = tmp(8093).getMessageForState(scheduledMessage.state);
+    const messageForState = tmp(8125).getMessageForState(scheduledMessage.state);
     cResult[0] = scheduledMessage.state;
     cResult[1] = messageForState;
     let tmp4 = messageForState;
-    const tmpResult = tmp(8093);
+    const tmpResult = tmp(8125);
   } else {
     tmp4 = cResult[1];
   }
@@ -56,8 +56,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             return tmp16;
           }
         }
-        const obj2 = { IconComponent: tmp(12355).CalendarPlusIcon, label: tmp6, isCritical: isError, lineClamp: 2, actions: tmp12 };
-        const tmp18 = React5(tmp(12364).ForLaterCardStatusHeader, obj2);
+        const obj2 = { IconComponent: tmp(12391).CalendarPlusIcon, label: tmp6, isCritical: isError, lineClamp: 2, actions: tmp12 };
+        const tmp18 = React5(tmp(12400).ForLaterCardStatusHeader, obj2);
         cResult[9] = isError;
         cResult[10] = tmp6;
         cResult[11] = tmp12;
@@ -234,7 +234,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
           }
         }
         let obj2 = { channel: stateFromStores, actions: null };
-        const tmp15 = closure_7(tmp(12361).ForLaterCardHeader, obj2);
+        const tmp15 = closure_7(tmp(12397).ForLaterCardHeader, obj2);
         cResult[8] = stateFromStores;
         cResult[9] = tmp15;
       } else {
@@ -329,7 +329,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
             return;
           }
         }
-        const obj4 = { style: tmp4.pendingRemoval, children: tmp19(tmp(5796).ActivityIndicator, { size: "small" }) };
+        const obj4 = { style: tmp4.pendingRemoval, children: tmp19(tmp(5828).ActivityIndicator, { size: "small" }) };
         let tmp19Result = tmp19(View, obj4);
       } else {
         class R {
@@ -369,17 +369,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
           }
           const obj5 = { style: tmp4.attachmentCount, children: null };
           const obj6 = { size: "xxs", color: stateFromStores(580).colors.TEXT_MUTED };
-          const items1 = [tmp19(tmp(10936).AttachmentIcon, obj6), ];
+          const items1 = [tmp19(tmp(10972).AttachmentIcon, obj6), ];
           const obj7 = { variant: "text-sm/normal", color: "text-muted", children: null };
           const intl = tmp(1119).intl;
           const obj8 = { count: tmp26 };
           obj7.children = intl.format(tmp(1119).t.ZJ1tPW, obj8);
-          items1[1] = tmp19(tmp(4754).Text, obj7);
+          items1[1] = tmp19(tmp(4786).Text, obj7);
           obj5.children = items1;
           tmp21 = closure_8(View, obj5);
         }
         tmp20[3] = tmp21;
-        tmp19Result = tmp19(tmp(12362).ForLaterMessageRow, tmp20);
+        tmp19Result = tmp19(tmp(12398).ForLaterMessageRow, tmp20);
       }
       cResult[12] = tmp26;
       cResult[13] = isPendingRemoval;
@@ -408,11 +408,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
     const obj3 = { scheduledMessage, isPendingRemoval };
     const items1 = [closure_7(closure_10, obj3), , , ];
     const obj4 = { channel: stateFromStores, actions: null };
-    items1[1] = closure_7(tmp2(12361).ForLaterCardHeader, obj4);
+    items1[1] = closure_7(tmp2(12397).ForLaterCardHeader, obj4);
     const obj5 = { style: tmp.cardDivider };
     items1[2] = closure_7(View, obj5);
     if (isPendingRemoval) {
-      const obj6 = { style: tmp.pendingRemoval, children: tmp10(tmp2(5796).ActivityIndicator, { size: "small" }) };
+      const obj6 = { style: tmp.pendingRemoval, children: tmp10(tmp2(5828).ActivityIndicator, { size: "small" }) };
       let tmp10Result = tmp10(tmp12, obj6);
     } else {
       const obj7 = { message: scheduledMessage.record, lineClamp: 10, maxHeight: 400, footer: null };
@@ -420,21 +420,21 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage) 
       if (length > 0) {
         const obj8 = { style: tmp.attachmentCount, children: null };
         const obj9 = { size: "xxs", color: stateFromStores(580).colors.TEXT_MUTED };
-        const items2 = [tmp10(tmp2(10936).AttachmentIcon, obj9), ];
+        const items2 = [tmp10(tmp2(10972).AttachmentIcon, obj9), ];
         const obj10 = { variant: "text-sm/normal", color: "text-muted", children: null };
         const intl = tmp2(1119).intl;
         const obj11 = { count: length };
         obj10.children = intl.format(tmp2(1119).t.ZJ1tPW, obj11);
-        items2[1] = tmp10(tmp2(4754).Text, obj10);
+        items2[1] = tmp10(tmp2(4786).Text, obj10);
         obj8.children = items2;
         tmp9Result = tmp9(tmp12, obj8);
       }
       obj7.footer = tmp9Result;
-      tmp10Result = tmp10(tmp2(12362).ForLaterMessageRow, obj7);
+      tmp10Result = tmp10(tmp2(12398).ForLaterMessageRow, obj7);
     }
     items1[3] = tmp10Result;
     obj2.children = items1;
-    return closure_8(tmp2(5824).Card, obj2);
+    return closure_8(tmp2(5856).Card, obj2);
   }
   const obj = scheduledMessage(504);
 });
@@ -571,7 +571,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((schedu
           }
         }
         let obj2 = { channel: stateFromStores, actions: null };
-        const tmp15 = closure_7(tmp(12361).ForLaterCardHeader, obj2);
+        const tmp15 = closure_7(tmp(12397).ForLaterCardHeader, obj2);
         cResult[8] = stateFromStores;
         cResult[9] = tmp15;
       } else {
@@ -666,7 +666,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((schedu
             return;
           }
         }
-        const obj4 = { style: tmp4.pendingRemoval, children: tmp19(tmp(5796).ActivityIndicator, { size: "small" }) };
+        const obj4 = { style: tmp4.pendingRemoval, children: tmp19(tmp(5828).ActivityIndicator, { size: "small" }) };
         let tmp19Result = tmp19(View, obj4);
       } else {
         class R {
@@ -706,17 +706,17 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((schedu
           }
           const obj5 = { style: tmp4.attachmentCount, children: null };
           const obj6 = { size: "xxs", color: stateFromStores(580).colors.TEXT_MUTED };
-          const items1 = [tmp19(tmp(10936).AttachmentIcon, obj6), ];
+          const items1 = [tmp19(tmp(10972).AttachmentIcon, obj6), ];
           const obj7 = { variant: "text-sm/normal", color: "text-muted", children: null };
           const intl = tmp(1119).intl;
           const obj8 = { count: tmp26 };
           obj7.children = intl.format(tmp(1119).t.ZJ1tPW, obj8);
-          items1[1] = tmp19(tmp(4754).Text, obj7);
+          items1[1] = tmp19(tmp(4786).Text, obj7);
           obj5.children = items1;
           tmp21 = closure_8(View, obj5);
         }
         tmp20[3] = tmp21;
-        tmp19Result = tmp19(tmp(12362).ForLaterMessageRow, tmp20);
+        tmp19Result = tmp19(tmp(12398).ForLaterMessageRow, tmp20);
       }
       cResult[12] = tmp26;
       cResult[13] = isPendingRemoval;
@@ -745,11 +745,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((schedu
     const obj3 = { scheduledMessage, isPendingRemoval };
     const items1 = [closure_7(closure_10, obj3), , , ];
     const obj4 = { channel: stateFromStores, actions: null };
-    items1[1] = closure_7(tmp2(12361).ForLaterCardHeader, obj4);
+    items1[1] = closure_7(tmp2(12397).ForLaterCardHeader, obj4);
     const obj5 = { style: tmp.cardDivider };
     items1[2] = closure_7(View, obj5);
     if (isPendingRemoval) {
-      const obj6 = { style: tmp.pendingRemoval, children: tmp10(tmp2(5796).ActivityIndicator, { size: "small" }) };
+      const obj6 = { style: tmp.pendingRemoval, children: tmp10(tmp2(5828).ActivityIndicator, { size: "small" }) };
       let tmp10Result = tmp10(tmp12, obj6);
     } else {
       const obj7 = { message: scheduledMessage.record, lineClamp: 10, maxHeight: 400, footer: null };
@@ -757,21 +757,21 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((schedu
       if (length > 0) {
         const obj8 = { style: tmp.attachmentCount, children: null };
         const obj9 = { size: "xxs", color: stateFromStores(580).colors.TEXT_MUTED };
-        const items2 = [tmp10(tmp2(10936).AttachmentIcon, obj9), ];
+        const items2 = [tmp10(tmp2(10972).AttachmentIcon, obj9), ];
         const obj10 = { variant: "text-sm/normal", color: "text-muted", children: null };
         const intl = tmp2(1119).intl;
         const obj11 = { count: length };
         obj10.children = intl.format(tmp2(1119).t.ZJ1tPW, obj11);
-        items2[1] = tmp10(tmp2(4754).Text, obj10);
+        items2[1] = tmp10(tmp2(4786).Text, obj10);
         obj8.children = items2;
         tmp9Result = tmp9(tmp12, obj8);
       }
       obj7.footer = tmp9Result;
-      tmp10Result = tmp10(tmp2(12362).ForLaterMessageRow, obj7);
+      tmp10Result = tmp10(tmp2(12398).ForLaterMessageRow, obj7);
     }
     items1[3] = tmp10Result;
     obj2.children = items1;
-    return closure_8(tmp2(5824).Card, obj2);
+    return closure_8(tmp2(5856).Card, obj2);
   }
   const obj = scheduledMessage(504);
 }));

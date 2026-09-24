@@ -1,11 +1,11 @@
-// Module ID: 11297
-// Function ID: 11298
+// Module ID: 11333
+// Function ID: 11334
 // Name: ModalActionButton
-// Dependencies: [109, 19, 17, 21, 4758, 558, 568, 5188, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 558, 568, 5220, 2]
 
-// Module 11297 (ModalActionButton)
+// Module 11333 (ModalActionButton)
 import c from "c" /* 568 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -14,7 +14,7 @@ let closure_2 = ["variant"];
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ spacer: { marginTop: 12 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

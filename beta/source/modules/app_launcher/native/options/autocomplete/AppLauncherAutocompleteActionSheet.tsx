@@ -1,23 +1,23 @@
-// Module ID: 12311
-// Function ID: 12312
+// Module ID: 12347
+// Function ID: 12348
 // Name: AppLauncherAutocompleteActionSheet
-// Dependencies: [32, 19, 17, 8026, 2067, 1078, 5212, 21, 12, 9521, 4758, 580, 558, 568, 565, 4725, 1119, 12305, 12307, 38, 5822, 4754, 4943, 1181, 12306, 2]
+// Dependencies: [32, 19, 17, 8058, 2067, 1078, 5244, 21, 12, 9553, 4790, 580, 558, 568, 565, 4757, 1119, 12341, 12343, 38, 5854, 4786, 4975, 1181, 12342, 2]
 
-// Module 12311 (AppLauncherAutocompleteActionSheet)
+// Module 12347 (AppLauncherAutocompleteActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import _mod4943 from "module_4943" /* 4943 */;
-import TableRow from "TableRow" /* 5822 */;
-import executeCommandDefault from "executeCommand" /* 9521 */;
-import _modDef12306 from "module_12306" /* 12306 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import _mod4975 from "module_4975" /* 4975 */;
+import TableRow from "TableRow" /* 5854 */;
+import executeCommandDefault from "executeCommand" /* 9553 */;
+import _modDef12342 from "module_12342" /* 12342 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8026 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8058 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import apply from "module_12" /* 12 */;
 
@@ -26,8 +26,8 @@ const View = fn(17).View;
 fn(1078).AutoCompleteResultTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const executeCommand = apply.debounce(executeCommandDefault, fn(5212).AUTOCOMPLETE_OPTION_DEBOUNCE_TIME, { leading: true, trailing: true });
-const createStyles = fn(4758);
+const executeCommand = apply.debounce(executeCommandDefault, fn(5244).AUTOCOMPLETE_OPTION_DEBOUNCE_TIME, { leading: true, trailing: true });
+const createStyles = fn(4790);
 let obj = { commandChoiceLoadingContainer: { flex: 1, justifyContent: "center" }, commandChoiceLoadingItem: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, height: 16, borderRadius: nativeDefault.radii.lg, alignSelf: "flex-start" }, emptyState: { backgroundColor: "transparent" } };
 let closure_12 = createStyles.createStyles(obj);
 fn(558);
@@ -220,7 +220,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((choices) => {
   _modDef38(tmp4, "Invalid autocomplete result type");
   closure_3 = closure_12();
   noop = noop.useMemo(() => 100 * Math.random() + 50, []);
-  const match = _mod4943.match(item);
+  const match = _mod4975.match(item);
   let obj = { type: AutoCompleteResultTypes.CHOICE };
   let obj2 = { type: AutoCompleteResultTypes.LABEL };
   const withResult = match.with({ type: AutoCompleteResultTypes.CHOICE }, (children) => {
@@ -322,7 +322,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] !== tmp4.emptyState) {
-    const obj2 = { style: tmp4.emptyState, lightSource: _modDef12306, darkSource: _modDef12306, title: first };
+    const obj2 = { style: tmp4.emptyState, lightSource: _modDef12342, darkSource: _modDef12342, title: first };
     const tmp10 = options(tmp(1181).EmptyState, obj2);
     cResult[1] = tmp4.emptyState;
     cResult[2] = tmp10;
@@ -332,7 +332,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   return tmp7;
 }) : (() => {
-  const obj = { style: closure_12().emptyState, lightSource: _modDef12306, darkSource: _modDef12306, title: null };
+  const obj = { style: closure_12().emptyState, lightSource: _modDef12342, darkSource: _modDef12342, title: null };
   const intl = util.intl;
   obj.title = intl.string(util.t.rTAbPn);
   return options(native.EmptyState, obj);

@@ -1,11 +1,11 @@
-// Module ID: 13197
-// Function ID: 13198
+// Module ID: 13233
+// Function ID: 13234
 // Name: InAppReportsChannelPreview
-// Dependencies: [19, 17, 2067, 21, 4758, 580, 558, 568, 504, 4608, 1119, 4754, 5799, 2]
+// Dependencies: [19, 17, 2067, 21, 4790, 580, 558, 568, 504, 4640, 1119, 4786, 5831, 2]
 
-// Module 13197 (InAppReportsChannelPreview)
+// Module 13233 (InAppReportsChannelPreview)
 import nativeDefault from "native" /* 580 */;
-import GuildIconDefault from "GuildIcon" /* 5799 */;
+import GuildIconDefault from "GuildIcon" /* 5831 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
@@ -13,7 +13,7 @@ const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, borderColor: { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY }, title: { lineHeight: 16, marginBottom: 8 }, itemContainer: null, guildInfo: null, guildName: null, topic: null };
 let obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj2.itemContainer = { minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 8 };
@@ -52,11 +52,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((stageInstance) =
   if (null != stateFromStores) {
     if (null != stageInstance) {
       if (cResult[3] !== tmp4.borderColor.color) {
-        const hexWithOpacityResult = tmp(4608).hexWithOpacity(tmp4.borderColor.color, 0.08);
+        const hexWithOpacityResult = tmp(4640).hexWithOpacity(tmp4.borderColor.color, 0.08);
         cResult[3] = tmp4.borderColor.color;
         cResult[4] = hexWithOpacityResult;
         let tmp9 = hexWithOpacityResult;
-        const tmpResult2 = tmp(4608);
+        const tmpResult2 = tmp(4640);
       } else {
         tmp9 = cResult[4];
       }
@@ -72,7 +72,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((stageInstance) =
       }
       if (cResult[6] !== tmp4.title) {
         const obj2 = { style: title, accessibilityRole: "header", variant: "text-xs/bold", children: tmp11 };
-        const tmp15 = closure_5(tmp(4754).Text, obj2);
+        const tmp15 = closure_5(tmp(4786).Text, obj2);
         cResult[6] = tmp4.title;
         cResult[7] = tmp15;
         let tmp13 = tmp15;
@@ -92,7 +92,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((stageInstance) =
           let tmp17 = cResult[12];
         }
         if (cResult[13] !== stateFromStores) {
-          const obj4 = { guild: stateFromStores, size: tmp(5799).GuildIconSizes.XXSMALL, selected: false };
+          const obj4 = { guild: stateFromStores, size: tmp(5831).GuildIconSizes.XXSMALL, selected: false };
           const tmp22 = closure_5(GuildIconDefault, obj4);
           cResult[13] = stateFromStores;
           cResult[14] = tmp22;
@@ -148,7 +148,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((stageInstance) =
                 tmp33 = tmp36;
               }
               const obj7 = { style: tmp4.topic, variant: "text-md/bold", color: "mobile-text-heading-primary", children: stageInstance.topic };
-              const tmp32 = closure_5(tmp(4754).Text, obj7);
+              const tmp32 = closure_5(tmp(4786).Text, obj7);
               cResult[22] = stageInstance.topic;
               cResult[23] = tmp4.topic;
               cResult[24] = tmp32;
@@ -166,7 +166,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((stageInstance) =
           tmp26 = tmp29;
         }
         const obj9 = { style: tmp4.guildName, variant: "text-sm/medium", color: "text-default", children: stateFromStores.name };
-        const tmp25 = closure_5(tmp(4754).Text, obj9);
+        const tmp25 = closure_5(tmp(4786).Text, obj9);
         cResult[15] = stateFromStores.name;
         cResult[16] = tmp4.guildName;
         cResult[17] = tmp25;
@@ -188,27 +188,27 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((stageInstance) =
   if (null != stateFromStores) {
     if (null != stageInstance) {
       const obj2 = { style: tmp.container, children: null };
-      const tmp2Result = tmp2(4608);
+      const tmp2Result = tmp2(4640);
       const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: null };
       const intl = tmp2(1119).intl;
       obj3.children = intl.string(tmp2(1119).t.InbJ8x);
-      const items1 = [closure_5(tmp2(4754).Text, obj3), ];
+      const items1 = [closure_5(tmp2(4786).Text, obj3), ];
       const obj4 = { style: null, children: null };
       const items2 = [tmp.itemContainer, ];
-      const obj5 = { borderColor: tmp2(4608).hexWithOpacity(tmp.borderColor.color, 0.08) };
+      const obj5 = { borderColor: tmp2(4640).hexWithOpacity(tmp.borderColor.color, 0.08) };
       items2[1] = obj5;
       obj4.style = items2;
       const obj6 = { style: tmp.guildInfo, children: null };
       const obj7 = { guild: stateFromStores, size: null, selected: false };
-      const hexWithOpacityResult = tmp2(4608).hexWithOpacity(tmp.borderColor.color, 0.08);
-      obj7.size = tmp2(5799).GuildIconSizes.XXSMALL;
+      const hexWithOpacityResult = tmp2(4640).hexWithOpacity(tmp.borderColor.color, 0.08);
+      obj7.size = tmp2(5831).GuildIconSizes.XXSMALL;
       const items3 = [closure_5(GuildIconDefault, obj7), ];
       const obj8 = { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: stateFromStores.name };
-      items3[1] = closure_5(tmp2(4754).Text, obj8);
+      items3[1] = closure_5(tmp2(4786).Text, obj8);
       obj6.children = items3;
       const items4 = [closure_6(View, obj6), ];
       const obj9 = { style: tmp.topic, variant: "text-md/bold", color: "mobile-text-heading-primary", children: stageInstance.topic };
-      items4[1] = closure_5(tmp2(4754).Text, obj9);
+      items4[1] = closure_5(tmp2(4786).Text, obj9);
       obj4.children = items4;
       items1[1] = closure_6(View, obj4);
       obj2.children = items1;

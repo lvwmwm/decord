@@ -28,7 +28,7 @@ function useStateFromStores(items, cResult, items1, isVersionEqual) {
   closure_6 = undefined;
   const tmp2 = state(null);
   if (null == tmp2.current) {
-    const obj = { stores: items, areStatesEqual: tmp, getStateFromStores: cResult, prevDeps: "Boolean", state: "call" };
+    const obj = { stores: items, areStatesEqual: tmp, getStateFromStores: cResult, prevDeps: "Boolean", state: "unicodeVersion" };
     tmp2.current = obj;
   }
   current = tmp2.current;

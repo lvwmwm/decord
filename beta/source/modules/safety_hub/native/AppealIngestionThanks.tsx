@@ -1,19 +1,19 @@
-// Module ID: 12038
-// Function ID: 12039
+// Module ID: 12074
+// Function ID: 12075
 // Name: AppealIngestionThanks
-// Dependencies: [19, 17, 21, 4758, 558, 568, 1181, 7371, 12017, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 1181, 7403, 12053, 2]
 
-// Module 12038 (AppealIngestionThanks)
+// Module 12074 (AppealIngestionThanks)
 import c from "c" /* 568 */;
 import native from "native" /* 1181 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
-import AppealIngestionModal from "AppealIngestionModal" /* 12017 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
+import AppealIngestionModal from "AppealIngestionModal" /* 12053 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ container: { flex: 1, alignItems: "center", justifyContent: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -31,7 +31,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp4.container) {
     const obj2 = { bottom: true, style: tmp4.container, children: first };
-    const tmp10 = jsx(tmp(7371).SafeAreaPaddingView, { bottom: true, style: tmp4.container, children: first });
+    const tmp10 = jsx(tmp(7403).SafeAreaPaddingView, { bottom: true, style: tmp4.container, children: first });
     cResult[1] = tmp4.container;
     cResult[2] = tmp10;
     let tmp8 = tmp10;

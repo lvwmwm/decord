@@ -1,13 +1,13 @@
-// Module ID: 13275
-// Function ID: 13276
+// Module ID: 13311
+// Function ID: 13312
 // Name: MediaModalSpoilerOverlay
-// Dependencies: [32, 19, 17, 21, 4758, 580, 1368, 558, 568, 4462, 13260, 5176, 5301, 4754, 1119, 4497, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 1368, 558, 568, 4494, 13296, 5208, 5333, 4786, 1119, 4529, 2]
 
-// Module 13275 (MediaModalSpoilerOverlay)
+// Module 13311 (MediaModalSpoilerOverlay)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13260 */;
+import useToken from "useToken" /* 4494 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13296 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { spoilerOverlayContainer: { justifyContent: "center", alignContent: "center", flex: 1 }, obscureContentContainer: { gap: nativeDefault.space.PX_4, justifyContent: "center", alignItems: "center", alignSelf: "center" }, spoilerOverlayBackground: null };
 let obj4 = { paddingHorizontal: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.lg, height: nativeDefault.space.PX_32, backgroundColor: null, flexGrow: 0, justifyContent: "center", alignItems: "center", alignSelf: "center" };
 let PlatformUtils = fn(1368);
@@ -69,7 +69,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((index)
                 const obj4 = { style: tmp10, children: null };
                 const items = [tmp12, tmp24];
                 obj4.children = items;
-                const tmp30 = React5(tmp5(4497).View, obj4);
+                const tmp30 = React5(tmp5(4529).View, obj4);
                 cResult[13] = tmp10;
                 cResult[14] = tmp12;
                 cResult[15] = tmp24;
@@ -87,11 +87,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((index)
         }
         if (spoilerOverlayBackground.obscure) {
           const obj6 = { style: tmp4.obscureContentContainer, children: null };
-          const items1 = [timestampProducer(tmp(5301).ImageWarningIcon, { size: "lg", color: "white" }), ];
+          const items1 = [timestampProducer(tmp(5333).ImageWarningIcon, { size: "lg", color: "white" }), ];
           const obj7 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: null };
           const intl2 = tmp(1119).intl;
           obj7.children = intl2.string(tmp(1119).t.SpxcUR);
-          items1[1] = timestampProducer(tmp(4754).Text, obj7);
+          items1[1] = timestampProducer(tmp(4786).Text, obj7);
           obj6.children = items1;
           let tmp19 = React5(hasOwnProperty, obj6);
         } else {
@@ -99,7 +99,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((index)
           const obj9 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: null };
           const intl = tmp(1119).intl;
           obj9.children = intl.string(tmp(1119).t["F+x38C"]).toUpperCase();
-          obj8.children = timestampProducer(tmp(4754).Text, obj9);
+          obj8.children = timestampProducer(tmp(4786).Text, obj9);
           tmp19 = timestampProducer(hasOwnProperty, obj8);
           const str2 = intl.string(tmp(1119).t["F+x38C"]);
         }
@@ -109,7 +109,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((index)
         cResult[9] = tmp19;
       }
       const obj10 = { blurTheme: str, android_fallbackColor: token, style: React4.absoluteFill };
-      const tmp15 = timestampProducer(tmp5(5176), obj10);
+      const tmp15 = timestampProducer(tmp5(5208), obj10);
       cResult[3] = token;
       cResult[4] = str;
       cResult[5] = tmp15;
@@ -142,17 +142,17 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((index)
       const tmpResult = tmp(1368);
     }
     const obj4 = { blurTheme: str, android_fallbackColor: token, style: React4.absoluteFill };
-    const items1 = [timestampProducer(tmp3(5176), obj4), ];
+    const items1 = [timestampProducer(tmp3(5208), obj4), ];
     let obj5 = { style: items2.spoilerOverlayContainer, children: null };
     const obj6 = { style: null, children: null };
     if (source.obscure) {
       obj6.style = items2.obscureContentContainer;
-      items2 = [tmp9(tmp(5301).ImageWarningIcon, { size: "lg", color: "white" }), ];
+      items2 = [tmp9(tmp(5333).ImageWarningIcon, { size: "lg", color: "white" }), ];
       const obj7 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: null };
       const intl2 = tmp(1119).intl;
       stringResult = intl2.string(tmp(1119).t.SpxcUR);
       obj7.children = stringResult;
-      items2[1] = tmp9(tmp(4754).Text, obj7);
+      items2[1] = tmp9(tmp(4786).Text, obj7);
       obj6.children = items2;
       let tmp9Result = tmp7(tmp11, obj6);
     } else {
@@ -160,7 +160,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((index)
       const obj8 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: null };
       const intl = tmp(1119).intl;
       obj8.children = intl.string(tmp(1119).t["F+x38C"]).toUpperCase();
-      obj6.children = tmp9(tmp(4754).Text, obj8);
+      obj6.children = tmp9(tmp(4786).Text, obj8);
       tmp9Result = tmp9(tmp11, obj6);
       const str2 = intl.string(tmp(1119).t["F+x38C"]);
     }
@@ -168,7 +168,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((index)
     obj5 = tmp9(tmp11, obj5);
     items1[1] = obj5;
     obj3.children = items1;
-    React5(tmp3(4497).View, obj3);
-    const tmp3Result = tmp3(5176);
+    React5(tmp3(4529).View, obj3);
+    const tmp3Result = tmp3(5208);
   }
 }));

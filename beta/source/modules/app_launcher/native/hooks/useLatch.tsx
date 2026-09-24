@@ -1,9 +1,9 @@
-// Module ID: 12299
-// Function ID: 12300
+// Module ID: 12335
+// Function ID: 12336
 // Name: useLatch
 // Dependencies: [19, 558, 568, 2]
 
-// Module 12299 (useLatch)
+// Module 12335 (useLatch)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

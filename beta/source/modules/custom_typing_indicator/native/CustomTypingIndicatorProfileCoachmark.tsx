@@ -1,18 +1,18 @@
-// Module ID: 17260
-// Function ID: 17261
+// Module ID: 17270
+// Function ID: 17271
 // Name: CustomTypingIndicatorProfileCoachmark
-// Dependencies: [19, 17, 1078, 2042, 21, 4758, 580, 558, 568, 1119, 3684, 7626, 10452, 12104, 12105, 12102, 1384, 2]
+// Dependencies: [19, 17, 1078, 2042, 21, 4790, 580, 558, 568, 1119, 3716, 7658, 10491, 12140, 12141, 12138, 1384, 2]
 
-// Module 17260 (CustomTypingIndicatorProfileCoachmark)
+// Module 17270 (CustomTypingIndicatorProfileCoachmark)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import user from "user" /* 1384 */;
-import _modDef3684 from "module_3684" /* 3684 */;
-import openUserSettings from "openUserSettings" /* 7626 */;
-import CustomTypingIndicatorDynamicAssetDefault from "CustomTypingIndicatorDynamicAsset" /* 12102 */;
-import _modDef12104 from "module_12104" /* 12104 */;
-import _modDef12105 from "module_12105" /* 12105 */;
+import _modDef3716 from "module_3716" /* 3716 */;
+import openUserSettings from "openUserSettings" /* 7658 */;
+import CustomTypingIndicatorDynamicAssetDefault from "CustomTypingIndicatorDynamicAsset" /* 12138 */;
+import _modDef12140 from "module_12140" /* 12140 */;
+import _modDef12141 from "module_12141" /* 12141 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ const View = fn(17).View;
 const UserSettingsSections = fn(1078).UserSettingsSections;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { coachmarkImageContainer: { alignItems: "center", justifyContent: "center", paddingTop: nativeDefault.space.PX_10 }, typingText: { maxWidth: 100 } };
 let closure_8 = createStyles.createStyles(obj2);
 fn(558);
@@ -30,7 +30,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(6);
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [_modDef12104, _modDef12105, _modDef12104];
+    const items = [_modDef12140, _modDef12141, _modDef12140];
     cResult[0] = items;
     let first = items;
   } else {
@@ -60,7 +60,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp = closure_8();
   const obj = { style: tmp.coachmarkImageContainer, children: null };
   const obj2 = { name: "Locke", suggestion: user.TypingSuggestion.YAPPING, emojiSize: 16, spacing: 8, emojiGap: 4, textVariant: "text-xs/medium", textColor: "text-subtle", textStyle: tmp.typingText, emojiSource: null };
-  const items = [_modDef12104, _modDef12105, _modDef12104];
+  const items = [_modDef12140, _modDef12141, _modDef12140];
   obj2.emojiSource = items;
   obj.children = jsx(CustomTypingIndicatorDynamicAssetDefault, { name: "Locke", suggestion: user.TypingSuggestion.YAPPING, emojiSize: 16, spacing: 8, emojiGap: 4, textVariant: "text-xs/medium", textColor: "text-subtle", textStyle: tmp.typingText, emojiSource: null });
   return <View style={tmp.coachmarkImageContainer}>{null}</View>;
@@ -78,7 +78,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((position) => {
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1119).intl;
-    const stringResult = intl.string(_modDef3684.Eq5jIA);
+    const stringResult = intl.string(_modDef3716.Eq5jIA);
     cResult[0] = stringResult;
     let first = stringResult;
   } else {
@@ -86,7 +86,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((position) => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const intl2 = tmp(1119).intl;
-    const stringResult1 = intl2.string(_modDef3684.lSBp2M);
+    const stringResult1 = intl2.string(_modDef3716.lSBp2M);
     cResult[1] = stringResult1;
     let tmp7 = stringResult1;
   } else {
@@ -127,7 +127,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((position) => {
       }
     }
     const intl3 = tmp(1119).intl;
-    const stringResult2 = intl3.string(_modDef3684["6NP6ic"]);
+    const stringResult2 = intl3.string(_modDef3716["6NP6ic"]);
     cResult[4] = tmp14;
     cResult[5] = stringResult2;
     let tmp13 = stringResult2;
@@ -207,7 +207,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((position) => {
       return closure_1_7(closure_1_9, {});
     };
     const intl = util.intl;
-    obj.buttonLabel = intl.string(_modDef3684["6NP6ic"]);
+    obj.buttonLabel = intl.string(_modDef3716["6NP6ic"]);
     obj.onButtonPress = function onButtonPress() {
       visible(str[11]).openUserSettings({ screen: callback.TYPING_INDICATOR, params: { source: "profile_coachmark" } }, () => {
         closure_1_1(constants.TAKE_ACTION);

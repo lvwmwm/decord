@@ -1,13 +1,13 @@
-// Module ID: 7504
-// Function ID: 7505
+// Module ID: 7536
+// Function ID: 7537
 // Name: GuildRoleSubscriptionSettingUtils
-// Dependencies: [2063, 4399, 1376, 1078, 558, 568, 504, 7505, 7497, 2]
+// Dependencies: [2063, 4431, 1376, 1078, 558, 568, 504, 7537, 7529, 2]
 // Exports: canManageGuildRoleSubscriptions, canSeeGuildRoleSubscriptionSettings, canSeeGuildRoleSubscriptionSettingsContent, getGuildRoleSubscriptionSettingsVisibility, useCanSeeGuildRoleSubscriptionSettings
 
-// Module 7504 (GuildRoleSubscriptionSettingUtils)
+// Module 7536 (GuildRoleSubscriptionSettingUtils)
 import GuildRecord from "GuildRecord" /* 2063 */;
-import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 7505 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 7537 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 import UserStore from "UserStore" /* 1376 */;
 import Constants from "Constants" /* 1078 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

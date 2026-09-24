@@ -1,12 +1,12 @@
-// Module ID: 14196
-// Function ID: 14197
+// Module ID: 14233
+// Function ID: 14234
 // Name: GuildBadgeLeaf
-// Dependencies: [109, 19, 21, 558, 568, 14189, 8733, 2]
+// Dependencies: [109, 19, 21, 558, 568, 14226, 8765, 2]
 
-// Module 14196 (GuildBadgeLeaf)
+// Module 14233 (GuildBadgeLeaf)
 import c from "c" /* 568 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14189 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14226 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -51,18 +51,18 @@ export const GuildBadgeLeaf = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   if (cResult[5] !== tmp4) {
     const obj2 = { primaryBaseColors, primaryTintColor: tmp4, primaryTintLuminances, primaryLuminanceWeights: items };
-    const transformedBadgeColors = tmp(14189).getTransformedBadgeColors(obj2);
+    const transformedBadgeColors = tmp(14226).getTransformedBadgeColors(obj2);
     cResult[5] = tmp4;
     cResult[6] = transformedBadgeColors;
     let tmp11 = transformedBadgeColors;
-    const tmpResult = tmp(14189);
+    const tmpResult = tmp(14226);
   } else {
     tmp11 = cResult[6];
   }
   const primaryColorsTransformed = tmp11.primaryColorsTransformed;
   if (cResult[7] !== primaryColorsTransformed[2]) {
     const obj3 = { d: "M15 2V1H9v1H3v5H1v5h12V7h2V2Z", fill: primaryColorsTransformed[2] };
-    const tmp18 = React4(tmp(8733).Path, obj3);
+    const tmp18 = React4(tmp(8765).Path, obj3);
     cResult[7] = primaryColorsTransformed[2];
     cResult[8] = tmp18;
     let tmp16 = tmp18;
@@ -71,7 +71,7 @@ export const GuildBadgeLeaf = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   if (cResult[9] !== primaryColorsTransformed[1]) {
     const obj4 = { d: "M11 13v-1H5v1h6Z", fill: primaryColorsTransformed[1] };
-    const tmp21 = React4(tmp(8733).Path, obj4);
+    const tmp21 = React4(tmp(8765).Path, obj4);
     cResult[9] = primaryColorsTransformed[1];
     cResult[10] = tmp21;
     let tmp19 = tmp21;
@@ -79,7 +79,7 @@ export const GuildBadgeLeaf = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp19 = cResult[10];
   }
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp24 = React4(tmp(8733).Path, { d: "M15 2V1H9v1h6ZM9 3V2H5v1h4Z", fill: "#fff" });
+    const tmp24 = React4(tmp(8765).Path, { d: "M15 2V1H9v1h6ZM9 3V2H5v1h4Z", fill: "#fff" });
     cResult[11] = tmp24;
     let tmp22 = tmp24;
   } else {
@@ -87,7 +87,7 @@ export const GuildBadgeLeaf = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   if (cResult[12] !== primaryColorsTransformed[1]) {
     const obj5 = { d: "M3 11v1h2v-1H3ZM13 10h-1v2h1v-2ZM15 5h-1v2h1V5ZM14 7h-1v3h1V7Z", fill: primaryColorsTransformed[1] };
-    const tmp27 = React4(tmp(8733).Path, obj5);
+    const tmp27 = React4(tmp(8765).Path, obj5);
     cResult[12] = primaryColorsTransformed[1];
     cResult[13] = tmp27;
     let tmp25 = tmp27;
@@ -95,7 +95,7 @@ export const GuildBadgeLeaf = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp25 = cResult[13];
   }
   if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp30 = React4(tmp(8733).Path, { d: "M16 1h-1v6h1V1Z", fill: "#000" });
+    const tmp30 = React4(tmp(8765).Path, { d: "M16 1h-1v6h1V1Z", fill: "#000" });
     cResult[14] = tmp30;
     let tmp28 = tmp30;
   } else {
@@ -103,7 +103,7 @@ export const GuildBadgeLeaf = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   if (cResult[15] !== primaryColorsTransformed[0]) {
     const obj6 = { d: "M3 9H2v6h1V9Z", fill: primaryColorsTransformed[0] };
-    const tmp33 = React4(tmp(8733).Path, obj6);
+    const tmp33 = React4(tmp(8765).Path, obj6);
     cResult[15] = primaryColorsTransformed[0];
     cResult[16] = tmp33;
     let tmp31 = tmp33;
@@ -111,8 +111,8 @@ export const GuildBadgeLeaf = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp31 = cResult[16];
   }
   if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp37 = React4(tmp(8733).Path, { d: "M15 0H9v1h6V0ZM11 13H5v1h6v-1ZM9 1H5v1h4V1ZM5 2H3v1h2V2ZM3 3H2v2h1V3ZM1 7H0v5h1v3h1v-3H1V7h1V5H1v2ZM13 12h-2v1h2v-1ZM14 10h-1v2h1v-2h1V7h-1v3ZM4 13h1v-1H3v3h1v-2ZM3 15H2v1h1v-1Z", fill: "#000" });
-    const tmp38 = React4(tmp(8733).Path, { d: "M2 7h1V5H2v2ZM1 9h1V7H1v2ZM5 3H3v2h1V4h1V3Z", fill: "#fff" });
+    const tmp37 = React4(tmp(8765).Path, { d: "M15 0H9v1h6V0ZM11 13H5v1h6v-1ZM9 1H5v1h4V1ZM5 2H3v1h2V2ZM3 3H2v2h1V3ZM1 7H0v5h1v3h1v-3H1V7h1V5H1v2ZM13 12h-2v1h2v-1ZM14 10h-1v2h1v-2h1V7h-1v3ZM4 13h1v-1H3v3h1v-2ZM3 15H2v1h1v-1Z", fill: "#000" });
+    const tmp38 = React4(tmp(8765).Path, { d: "M2 7h1V5H2v2ZM1 9h1V7H1v2ZM5 3H3v2h1V4h1V3Z", fill: "#fff" });
     cResult[17] = tmp37;
     cResult[18] = tmp38;
     let tmp35 = tmp38;
@@ -123,7 +123,7 @@ export const GuildBadgeLeaf = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   if (cResult[19] !== primaryColorsTransformed[0]) {
     const obj7 = { d: "M4 8h2V7H4v1ZM6 7h2V6H6v1ZM8 6h2V5H8v1ZM10 5h1V4h-1v1ZM11 4h1V3h-1v1Z", fill: primaryColorsTransformed[0] };
-    const tmp41 = React4(tmp(8733).Path, obj7);
+    const tmp41 = React4(tmp(8765).Path, obj7);
     cResult[19] = primaryColorsTransformed[0];
     cResult[20] = tmp41;
     let tmp39 = tmp41;
@@ -131,7 +131,7 @@ export const GuildBadgeLeaf = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp39 = cResult[20];
   }
   if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp44 = React4(tmp(8733).Path, { d: "M5 4v1h1V4H5Z", fill: "#fff" });
+    const tmp44 = React4(tmp(8765).Path, { d: "M5 4v1h1V4H5Z", fill: "#fff" });
     cResult[21] = tmp44;
     let tmp42 = tmp44;
   } else {
@@ -139,7 +139,7 @@ export const GuildBadgeLeaf = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   if (cResult[22] !== primaryColorsTransformed[0]) {
     const obj8 = { d: "M3 8v1h1V8H3Z", fill: primaryColorsTransformed[0] };
-    const tmp47 = React4(tmp(8733).Path, obj8);
+    const tmp47 = React4(tmp(8765).Path, obj8);
     cResult[22] = primaryColorsTransformed[0];
     cResult[23] = tmp47;
     let tmp45 = tmp47;

@@ -1,22 +1,22 @@
-// Module ID: 16247
-// Function ID: 16248
+// Module ID: 16257
+// Function ID: 16258
 // Name: VEVOOPropBlurAmount
-// Dependencies: [32, 19, 5177, 21, 4758, 558, 568, 7447, 16248, 8876, 2]
+// Dependencies: [32, 19, 5209, 21, 4790, 558, 568, 7479, 16258, 8908, 2]
 
-// Module 16247 (VEVOOPropBlurAmount)
+// Module 16257 (VEVOOPropBlurAmount)
 import c from "c" /* 568 */;
-import FormSwitch from "FormSwitch" /* 7447 */;
-import Form from "Form" /* 8876 */;
+import FormSwitch from "FormSwitch" /* 7479 */;
+import Form from "Form" /* 8908 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const VEVOOStore = fn(5177);
+const VEVOOStore = fn(5209);
 ({ getVisualEffectViewOverrides: hasOwnProperty, setVisualEffectViewOverides: metroRequire } = VEVOOStore);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ enabledSwitchStyle: { alignSelf: "flex-start" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -105,7 +105,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       const obj3 = { label: combined, leadingStyle: tmp4.enabledSwitchStyle, leading: tmp18, subLabel: tmp22, disabled: !tmp7 };
-      const tmp29 = jsx(tmp(8876).FormRow, { label: combined, leadingStyle: tmp4.enabledSwitchStyle, leading: tmp18, subLabel: tmp22, disabled: !tmp7 });
+      const tmp29 = jsx(tmp(8908).FormRow, { label: combined, leadingStyle: tmp4.enabledSwitchStyle, leading: tmp18, subLabel: tmp22, disabled: !tmp7 });
       cResult[12] = tmp4.enabledSwitchStyle;
       cResult[13] = combined;
       cResult[14] = tmp18;
@@ -115,7 +115,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp27 = tmp29;
     }
     const obj4 = { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 };
-    const tmp25 = jsx(first1(16248), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 });
+    const tmp25 = jsx(first1(16258), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 });
     cResult[9] = !tmp7;
     cResult[10] = !tmp7;
     cResult[11] = tmp25;
@@ -178,7 +178,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   };
   const ref = noop.useRef(first);
-  obj.subLabel = jsx(first(16248), { disabled: !tmp3, disabledOpacity: !tmp3, initialValue: noop.useRef(first), onValueChange });
+  obj.subLabel = jsx(first(16258), { disabled: !tmp3, disabledOpacity: !tmp3, initialValue: noop.useRef(first), onValueChange });
   return jsx(Form.FormRow, {
     label: "Blur Amount " + str,
     leadingStyle: tmp.enabledSwitchStyle,

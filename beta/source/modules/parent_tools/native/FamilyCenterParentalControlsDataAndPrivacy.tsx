@@ -1,19 +1,19 @@
-// Module ID: 15198
-// Function ID: 15199
+// Module ID: 15208
+// Function ID: 15209
 // Name: FamilyCenterParentalControlsDataAndPrivacy
-// Dependencies: [19, 1078, 8238, 21, 558, 568, 1119, 2486, 2112, 11594, 14953, 2]
+// Dependencies: [19, 1078, 8270, 21, 558, 568, 1119, 2486, 2112, 11630, 14988, 2]
 
-// Module 15198 (FamilyCenterParentalControlsDataAndPrivacy)
+// Module 15208 (FamilyCenterParentalControlsDataAndPrivacy)
 import c from "c" /* 568 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
 import _modDef2486 from "module_2486" /* 2486 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
-import SettingLayoutDefault from "SettingLayout" /* 14953 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
+import SettingLayoutDefault from "SettingLayout" /* 14988 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
-const MobileUserSettings = fn(8238).MobileUserSettings;
+const MobileUserSettings = fn(8270).MobileUserSettings;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -60,10 +60,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj14 = { sections: first };
-    const list = tmp(11594).createList(obj14);
+    const list = tmp(11630).createList(obj14);
     cResult[1] = list;
     let tmp8 = list;
-    const tmpResult = tmp(11594);
+    const tmpResult = tmp(11630);
   } else {
     tmp8 = cResult[1];
   }

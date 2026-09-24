@@ -1,19 +1,19 @@
-// Module ID: 15457
-// Function ID: 15458
+// Module ID: 15467
+// Function ID: 15468
 // Name: QuestDockUnenrolledBackground
-// Dependencies: [19, 15351, 21, 558, 568, 15358, 15347, 4462, 580, 15458, 2]
+// Dependencies: [19, 15361, 21, 558, 568, 15368, 15357, 4494, 580, 15468, 2]
 
-// Module 15457 (QuestDockUnenrolledBackground)
+// Module 15467 (QuestDockUnenrolledBackground)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import QuestHooks from "QuestHooks" /* 15347 */;
-import QuestDockCreativeContext from "QuestDockCreativeContext" /* 15358 */;
-import QuestDockVideoBackgroundDefault from "QuestDockVideoBackground" /* 15458 */;
+import useToken from "useToken" /* 4494 */;
+import QuestHooks from "QuestHooks" /* 15357 */;
+import QuestDockCreativeContext from "QuestDockCreativeContext" /* 15368 */;
+import QuestDockVideoBackgroundDefault from "QuestDockVideoBackground" /* 15468 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const expandedHeight = fn(15351).QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT;
+const expandedHeight = fn(15361).QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

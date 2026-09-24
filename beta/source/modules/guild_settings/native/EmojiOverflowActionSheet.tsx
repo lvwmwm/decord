@@ -1,10 +1,10 @@
-// Module ID: 18005
-// Function ID: 18006
+// Module ID: 18015
+// Function ID: 18016
 // Name: EmojiOverflowActionSheet
-// Dependencies: [5, 19, 17, 21, 4758, 558, 568, 1401, 4754, 4715, 1119, 5822, 10511, 10626, 4659, 4457, 5846, 5903, 7449, 2]
+// Dependencies: [5, 19, 17, 21, 4790, 558, 568, 1401, 4786, 4747, 1119, 5854, 10547, 10662, 4691, 4489, 5878, 5935, 7481, 2]
 
-// Module 18005 (EmojiOverflowActionSheet)
-import EmojiActionCreators from "EmojiActionCreators" /* 10511 */;
+// Module 18015 (EmojiOverflowActionSheet)
+import EmojiActionCreators from "EmojiActionCreators" /* 10547 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -15,7 +15,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ header: { paddingHorizontal: 8, flexDirection: "row", alignItems: "center", gap: 16 }, emojiImage: { width: 30, height: 30, resizeMode: "contain" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

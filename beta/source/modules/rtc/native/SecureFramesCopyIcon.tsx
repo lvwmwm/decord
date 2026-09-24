@@ -1,11 +1,11 @@
-// Module ID: 9966
-// Function ID: 9967
+// Module ID: 9998
+// Function ID: 9999
 // Name: SecureFramesCopyIcon
-// Dependencies: [19, 21, 558, 568, 4457, 7436, 4704, 1119, 8178, 2]
+// Dependencies: [19, 21, 558, 568, 4489, 7468, 4736, 1119, 8210, 2]
 
-// Module 9966 (SecureFramesCopyIcon)
-import ToastUtils from "ToastUtils" /* 4457 */;
-import ClipboardUtils from "ClipboardUtils" /* 7436 */;
+// Module 9998 (SecureFramesCopyIcon)
+import ToastUtils from "ToastUtils" /* 4489 */;
+import ClipboardUtils from "ClipboardUtils" /* 7468 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -40,7 +40,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((chunks) => {
     tmp6 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp9 = jsx(tmp(4704).CopyIcon, { size: "sm" });
+    const tmp9 = jsx(tmp(4736).CopyIcon, { size: "sm" });
     cResult[4] = tmp9;
     let tmp7 = tmp9;
   } else {
@@ -56,7 +56,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((chunks) => {
   }
   if (cResult[6] !== tmp6) {
     const obj2 = { icon: tmp7, variant: "secondary", onPress: tmp6, accessibilityLabel: tmp10, size: "sm" };
-    const tmp14 = jsx(tmp(8178).IconButton, { icon: tmp7, variant: "secondary", onPress: tmp6, accessibilityLabel: tmp10, size: "sm" });
+    const tmp14 = jsx(tmp(8210).IconButton, { icon: tmp7, variant: "secondary", onPress: tmp6, accessibilityLabel: tmp10, size: "sm" });
     cResult[6] = tmp6;
     cResult[7] = tmp14;
     let tmp12 = tmp14;

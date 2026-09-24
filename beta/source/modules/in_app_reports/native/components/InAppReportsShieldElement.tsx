@@ -1,17 +1,17 @@
-// Module ID: 8924
-// Function ID: 8925
+// Module ID: 8956
+// Function ID: 8957
 // Name: InAppReportsShieldElement
-// Dependencies: [19, 17, 21, 4758, 558, 568, 5907, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 5939, 2]
 
-// Module 8924 (InAppReportsShieldElement)
+// Module 8956 (InAppReportsShieldElement)
 import c from "c" /* 568 */;
-import native from "native" /* 5907 */;
+import native from "native" /* 5939 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ container: { flex: 0, alignSelf: "center", marginBottom: 16 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

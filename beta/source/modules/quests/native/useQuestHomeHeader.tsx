@@ -1,18 +1,18 @@
-// Module ID: 15264
-// Function ID: 15265
+// Module ID: 15274
+// Function ID: 15275
 // Name: useQuestHomeHeader
-// Dependencies: [19, 17, 5663, 1078, 1080, 21, 4758, 580, 558, 568, 15261, 1119, 4754, 9128, 4725, 11486, 1984, 1245, 7429, 7788, 11475, 15265, 8179, 15266, 1488, 13241, 2]
+// Dependencies: [19, 17, 5695, 1078, 1080, 21, 4790, 580, 558, 568, 15271, 1119, 4786, 9160, 4757, 11522, 1984, 1245, 7461, 7820, 11511, 15275, 8211, 15276, 1488, 13277, 2]
 
-// Module 15264 (useQuestHomeHeader)
+// Module 15274 (useQuestHomeHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import QuestsIcon from "QuestsIcon" /* 15261 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
+import QuestsIcon from "QuestsIcon" /* 15271 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,12 +22,12 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   let balance;
   const tmp2 = closure_10();
   const tmp3 = balance;
-  balance = balance(9128).useFetchVirtualCurrencyBalance().balance;
+  balance = balance(9160).useFetchVirtualCurrencyBalance().balance;
   [][0] = balance;
   let obj2 = { style: tmp2.headerRightContainer, children: null };
   if (isVirtualCurrencyEnabled) {
     let obj3 = { balance, onPress: tmp5 };
-    isVirtualCurrencyEnabled = closure_8(tmp3(11475).BalanceWidgetPillButton, obj3);
+    isVirtualCurrencyEnabled = closure_8(tmp3(11511).BalanceWidgetPillButton, obj3);
   }
   let items = [isVirtualCurrencyEnabled, ];
   const merged1 = Object.assign(merged);
@@ -58,7 +58,7 @@ function FiltersButton(setSelectedSortMethod) {
   }
   const items = [setSelectedSortMethod, setSelectedFilters, selectedFilters, selectedSortMethod];
   const callback = selectedSortMethod.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15265, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", { onSortMethodChange: setSelectedSortMethod, onFiltersChange: setSelectedFilters, initialSortMethod: selectedSortMethod, initialFilters: selectedFilters });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15275, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", { onSortMethodChange: setSelectedSortMethod, onFiltersChange: setSelectedFilters, initialSortMethod: selectedSortMethod, initialFilters: selectedFilters });
   }, items);
   const obj = { icon: closure_8(setSelectedSortMethod(tmp3[23]).FiltersHorizontalIcon, { size: "sm", color: INTERACTIVE_TEXT_DEFAULT }), size: "sm", variant: str, onPress: callback, accessibilityLabel: null, scaleAmountInPx: 4 };
   const intl = setSelectedSortMethod(tmp3[11]).intl;
@@ -66,12 +66,12 @@ function FiltersButton(setSelectedSortMethod) {
   return closure_8(setSelectedSortMethod(tmp3[22]).BaseIconButton, obj);
 }
 const View = fn(17).View;
-const QuestHomeSortMethods = fn(5663).QuestHomeSortMethods;
+const QuestHomeSortMethods = fn(5695).QuestHomeSortMethods;
 const AnalyticEvents = fn(1078).AnalyticEvents;
 let closure_7 = fn(1080).CollectiblesMobileShopScreen;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { headerTitleContainer: { width: "100%", flexDirection: "row", alignItems: "center", marginTop: nativeDefault.space.PX_8, paddingLeft: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 }, headerTitle: { flexShrink: 1 }, headerRightContainer: null };
 let obj3 = { width: "100%", flexDirection: "row", alignItems: "center", marginTop: nativeDefault.space.PX_8, paddingLeft: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 obj2.headerRightContainer = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_8 };
@@ -81,7 +81,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(7);
   const tmp4 = closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = closure_1_8(tmp(15261).QuestsIcon, { size: "md", color: "icon-strong" });
+    const tmp7 = closure_1_8(tmp(15271).QuestsIcon, { size: "md", color: "icon-strong" });
     cResult[0] = tmp7;
     let first = tmp7;
   } else {
@@ -97,7 +97,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] !== tmp4.headerTitle) {
     const obj2 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp4.headerTitle, children: tmp8 };
-    const tmp12 = closure_1_8(tmp(4754).Heading, obj2);
+    const tmp12 = closure_1_8(tmp(4786).Heading, obj2);
     cResult[2] = tmp4.headerTitle;
     cResult[3] = tmp12;
     let tmp10 = tmp12;

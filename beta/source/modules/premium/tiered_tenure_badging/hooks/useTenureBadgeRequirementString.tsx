@@ -1,18 +1,18 @@
-// Module ID: 11438
-// Function ID: 11439
+// Module ID: 11474
+// Function ID: 11475
 // Name: useTenureBadgeRequirementString
-// Dependencies: [1378, 558, 568, 11439, 7875, 1119, 2]
+// Dependencies: [1378, 558, 568, 11475, 7907, 1119, 2]
 // Exports: getTenureBadgeRequirementString
 
-// Module 11438 (useTenureBadgeRequirementString)
+// Module 11474 (useTenureBadgeRequirementString)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import PremiumConstants from "PremiumConstants" /* 1378 */;
-import useTenureBadging from "useTenureBadging" /* 11439 */;
+import useTenureBadging from "useTenureBadging" /* 11475 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const TieredTenureBadgeUtils = erUSmA(7875);
+const TieredTenureBadgeUtils = erUSmA(7907);
 const TieredTenureBadge = PremiumConstants.TieredTenureBadge;
 function getTenureBadgeRequirementString(badge, tenureReqNumMonths) {
   if (TieredTenureBadge.PREMIUM_TENURE_1_MONTH !== badge) {
@@ -83,7 +83,7 @@ export const useTenureBadgeRequirementString = ReactCompilerGating.isReactCompil
   if (null == tieredTenureBadge) {
     return null;
   } else {
-    const tieredTenureBadgeData = tmp(7875).getTieredTenureBadgeData(tieredTenureBadge);
+    const tieredTenureBadgeData = tmp(7907).getTieredTenureBadgeData(tieredTenureBadge);
     ({ id, tenureReqNumMonths } = tieredTenureBadgeData);
     if (TieredTenureBadge.PREMIUM_TENURE_1_MONTH !== id) {
       if (tmp6.PREMIUM_TENURE_3_MONTH !== id) {
@@ -107,7 +107,7 @@ export const useTenureBadgeRequirementString = ReactCompilerGating.isReactCompil
     const intl2 = tmp(1119).intl;
     const obj3 = { months: tenureReqNumMonths };
     formatToPlainStringResult = intl2.formatToPlainString(tmp(1119).t.erUSmA, obj3);
-    const tmpResult = tmp(7875);
+    const tmpResult = tmp(7907);
   }
 });
 export { getTenureBadgeRequirementString };

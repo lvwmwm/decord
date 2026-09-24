@@ -1,22 +1,22 @@
-// Module ID: 16789
-// Function ID: 16790
+// Module ID: 16799
+// Function ID: 16800
 // Name: ForYouUnreadClearedState
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1181, 10950, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1181, 10986, 1119, 4786, 2]
 
-// Module 16789 (ForYouUnreadClearedState)
+// Module 16799 (ForYouUnreadClearedState)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import _modDef10950 from "module_10950" /* 10950 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import _modDef10986 from "module_10986" /* 10986 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { marginBottom: 4, marginHorizontal: 24, alignItems: "center", flexDirection: "row" }, imageContainer: null, icon: null, headerText: null };
 let size = { width: 48, height: 48, backgroundColor: nativeDefault.unsafe_rawColors.GREEN_400, opacity: 0.16, borderRadius: nativeDefault.radii.xl, marginRight: 16, justifyContent: "center", alignItems: "center" };
 obj2.imageContainer = size;
@@ -41,7 +41,7 @@ export const ForYouUnreadClearedState = ReactCompilerGating.isReactCompilerEnabl
     tmp5 = cResult[1];
   }
   if (cResult[2] !== tmp4.icon) {
-    const obj3 = { source: _modDef10950, style: tmp4.icon, color: tmp4.icon.color };
+    const obj3 = { source: _modDef10986, style: tmp4.icon, color: tmp4.icon.color };
     const tmp12 = React4(tmp(1181).Icon, obj3);
     cResult[2] = tmp4.icon;
     cResult[3] = tmp12;
@@ -59,7 +59,7 @@ export const ForYouUnreadClearedState = ReactCompilerGating.isReactCompilerEnabl
   }
   if (cResult[5] !== tmp4.headerText) {
     const obj4 = { color: "mobile-text-heading-primary", variant: "text-md/semibold", style: tmp4.headerText, children: tmp13 };
-    const tmp17 = React4(tmp(4754).Text, obj4);
+    const tmp17 = React4(tmp(4786).Text, obj4);
     cResult[5] = tmp4.headerText;
     cResult[6] = tmp17;
     let tmp15 = tmp17;
@@ -70,7 +70,7 @@ export const ForYouUnreadClearedState = ReactCompilerGating.isReactCompilerEnabl
     const obj5 = { color: "text-default", variant: "text-md/medium", children: null };
     const intl2 = tmp(1119).intl;
     obj5.children = intl2.string(tmp(1119).t.jXFsai);
-    const tmp20 = React4(tmp(4754).Text, obj5);
+    const tmp20 = React4(tmp(4786).Text, obj5);
     cResult[7] = tmp20;
     let tmp18 = tmp20;
   } else {
@@ -110,7 +110,7 @@ export const ForYouUnreadClearedState = ReactCompilerGating.isReactCompilerEnabl
 }) : (() => {
   const tmp = closure_6();
   const obj = { style: tmp.container, children: null };
-  const items = [React4(View, { style: tmp.imageContainer }), React4(native.Icon, { source: _modDef10950, style: tmp.icon, color: tmp.icon.color }), ];
+  const items = [React4(View, { style: tmp.imageContainer }), React4(native.Icon, { source: _modDef10986, style: tmp.icon, color: tmp.icon.color }), ];
   const obj4 = { children: null };
   const obj5 = { color: "mobile-text-heading-primary", variant: "text-md/semibold", style: tmp.headerText, children: null };
   const intl = util.intl;

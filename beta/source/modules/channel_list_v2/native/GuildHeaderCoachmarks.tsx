@@ -1,18 +1,18 @@
-// Module ID: 16495
-// Function ID: 16496
+// Module ID: 16505
+// Function ID: 16506
 // Name: GuildHeaderCoachmarks
-// Dependencies: [32, 19, 4399, 1078, 2042, 21, 558, 568, 504, 16496, 16497, 16499, 12676, 16506, 12667, 12668, 2031, 7632, 12664, 16507, 16508, 16510, 2]
+// Dependencies: [32, 19, 4431, 1078, 2042, 21, 558, 568, 504, 16506, 16507, 16509, 12712, 16516, 12703, 12704, 2031, 7664, 12700, 16517, 16518, 16520, 2]
 
-// Module 16495 (GuildHeaderCoachmarks)
+// Module 16505 (GuildHeaderCoachmarks)
 import dismissible_content from "dismissible_content" /* 2031 */;
-import useBoostToUnlockFeaturedPowerupDefault from "useBoostToUnlockFeaturedPowerup" /* 12667 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12676 */;
-import useShouldShowGuildThemeMemberCoachmarkDefault from "useShouldShowGuildThemeMemberCoachmark" /* 16497 */;
-import useGuildThemeNuxTriggerDefault from "useGuildThemeNuxTrigger" /* 16499 */;
-import useIsCurrentUserEligibleForPowerupUpsellsDefault from "useIsCurrentUserEligibleForPowerupUpsells" /* 16506 */;
+import useBoostToUnlockFeaturedPowerupDefault from "useBoostToUnlockFeaturedPowerup" /* 12703 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12712 */;
+import useShouldShowGuildThemeMemberCoachmarkDefault from "useShouldShowGuildThemeMemberCoachmark" /* 16507 */;
+import useGuildThemeNuxTriggerDefault from "useGuildThemeNuxTrigger" /* 16509 */;
+import useIsCurrentUserEligibleForPowerupUpsellsDefault from "useIsCurrentUserEligibleForPowerupUpsells" /* 16516 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 require = fn;
 const Permissions = fn(1078).Permissions;
@@ -55,7 +55,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = guild(568);
   const stateFromStores = guild(504).useStateFromStores(first, tmp6, tmp7);
   const tmpResult = guild(504);
-  const mobileBoostProgressBarEnabled = guild(16496).useMobileBoostProgressBarEnabled("GuildHeaderCoachmarks");
+  const mobileBoostProgressBarEnabled = guild(16506).useMobileBoostProgressBarEnabled("GuildHeaderCoachmarks");
   const tmp10 = useShouldShowGuildThemeMemberCoachmarkDefault(guild.id);
   useGuildThemeNuxTriggerDefault(guild.id);
   useHasAllocateBoostPermissionDefault(guild.id);

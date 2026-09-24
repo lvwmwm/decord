@@ -1,22 +1,22 @@
-// Module ID: 7621
-// Function ID: 7622
+// Module ID: 7653
+// Function ID: 7654
 // Name: HeaderActionButton
-// Dependencies: [19, 1185, 21, 4758, 580, 558, 568, 4754, 5193, 5190, 5341, 2]
+// Dependencies: [19, 1185, 21, 4790, 580, 558, 568, 4786, 5225, 5222, 5373, 2]
 
-// Module 7621 (HeaderActionButton)
+// Module 7653 (HeaderActionButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import IconDefault from "Icon" /* 5190 */;
-import ButtonConstants from "ButtonConstants" /* 5193 */;
-import Pressables from "Pressables" /* 5341 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import IconDefault from "Icon" /* 5222 */;
+import ButtonConstants from "ButtonConstants" /* 5225 */;
+import Pressables from "Pressables" /* 5373 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ANDROID_FOREGROUND_RIPPLE = fn(1185).ANDROID_FOREGROUND_RIPPLE;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { button: { alignSelf: "stretch", alignItems: "center", justifyContent: "center", flexDirection: "row" }, text: { color: nativeDefault.colors.TEXT_BRAND, textTransform: "capitalize" }, buttonFont: { fontSize: 16, maxWidth: 80 }, buttonDisabled: { opacity: 0.6 } };
 let closure_6 = createStyles.createStyles(obj);
 const ReactCompilerGating = fn(558);
@@ -36,8 +36,8 @@ export const HeaderActionButton = noop.forwardRef(ReactCompilerGating.isReactCom
         }
         if (cResult[4] === tmp13) {
         }
-        const obj2 = { style: tmp13, variant: "text-md/semibold", lineClamp: 1, maxFontSizeMultiplier: tmp(5193).BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER, children: text };
-        const tmp16 = React4(tmp(4754).Text, obj2);
+        const obj2 = { style: tmp13, variant: "text-md/semibold", lineClamp: 1, maxFontSizeMultiplier: tmp(5225).BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER, children: text };
+        const tmp16 = React4(tmp(4786).Text, obj2);
         cResult[4] = tmp13;
         cResult[5] = text;
         cResult[6] = tmp16;
@@ -123,7 +123,7 @@ export const HeaderActionButton = noop.forwardRef(ReactCompilerGating.isReactCom
         const obj5 = { ref, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, accessibilityRole: "button", onPress, activeOpacity: 0.6, androidRippleConfig: tmp18, style: tmp19, hitSlop, disabled, children: null };
         const items1 = [tmp9, icon];
         obj5.children = items1;
-        const tmp23 = hasOwnProperty(tmp(5341).PressableOpacity, obj5);
+        const tmp23 = hasOwnProperty(tmp(5373).PressableOpacity, obj5);
         cResult[18] = accessibilityActions;
         cResult[19] = accessibilityHint;
         cResult[20] = tmp9;

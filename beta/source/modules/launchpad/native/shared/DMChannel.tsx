@@ -1,26 +1,26 @@
-// Module ID: 17689
-// Function ID: 17690
+// Module ID: 17699
+// Function ID: 17700
 // Name: shared/DMChannel
-// Dependencies: [19, 4940, 21, 558, 568, 4769, 11219, 4758, 580, 17137, 16685, 15578, 11, 5195, 17683, 5341, 17681, 12972, 8128, 17136, 4911, 2]
+// Dependencies: [19, 4972, 21, 558, 568, 4801, 11255, 4790, 580, 17147, 16695, 15588, 11, 5227, 17693, 5373, 17691, 13008, 8160, 17146, 4943, 2]
 
-// Module 17689 (shared/DMChannel)
+// Module 17699 (shared/DMChannel)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import transitionToChannel from "transitionToChannel" /* 4769 */;
-import useChannelNameDefault from "useChannelName" /* 4911 */;
-import useFontScale from "useFontScale" /* 5195 */;
-import Pressables from "Pressables" /* 5341 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11219 */;
-import useMessagePreviewsDefault from "useMessagePreviews" /* 15578 */;
-import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 16685 */;
-import renderChannelItemDefault from "renderChannelItem" /* 17136 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17137 */;
-import UnreadBadgeDefault from "UnreadBadge" /* 17681 */;
-import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 17683 */;
+import transitionToChannel from "transitionToChannel" /* 4801 */;
+import useChannelNameDefault from "useChannelName" /* 4943 */;
+import useFontScale from "useFontScale" /* 5227 */;
+import Pressables from "Pressables" /* 5373 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11255 */;
+import useMessagePreviewsDefault from "useMessagePreviews" /* 15588 */;
+import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 16695 */;
+import renderChannelItemDefault from "renderChannelItem" /* 17146 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17147 */;
+import UnreadBadgeDefault from "UnreadBadge" /* 17691 */;
+import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 17693 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const UnreadSetting = fn(4940).UnreadSetting;
+const UnreadSetting = fn(4972).UnreadSetting;
 const jsx = fn(21).jsx;
 let ReactCompilerGating = fn(558);
 let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, navigationReplace) => {
@@ -70,7 +70,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, navigationR
   obj.onLongPress = noop.useCallback(() => openChannelLongPressActionSheet.openChannelLongPressActionSheet(user.id), items1);
   return obj;
 });
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { pressable: { flex: 1 }, pressableUnderlayColor: { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE } };
 let closure_7 = createStyles.createStyles(obj);
 ReactCompilerGating = fn(558);
@@ -115,7 +115,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   const tmpResult = useChannelUnreadBadgeState;
   const fontScale = useFontScale.useFontScale();
   const tmp12Result3 = renderChannelPressableWrapperDefault;
-  const PressableHighlight = tmp(5341).PressableHighlight;
+  const PressableHighlight = tmp(5373).PressableHighlight;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { borderRadius: first.container.borderRadius };
     cResult[3] = obj3;
@@ -142,8 +142,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
           if (cResult[12] === str) {
             let tmp22 = cResult[13];
           }
-          const obj4 = { channel, unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted: tmp4, mentionCount, unreadBadge: tmp20, subtitle: tmp22, latestMessageTimestamp: extractTimestampResult, channelName: tmp12(4911)(channel), fontScale };
-          const tmp12Result2Result = tmp12(17136)(obj4);
+          const obj4 = { channel, unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted: tmp4, mentionCount, unreadBadge: tmp20, subtitle: tmp22, latestMessageTimestamp: extractTimestampResult, channelName: tmp12(4943)(channel), fontScale };
+          const tmp12Result2Result = tmp12(17146)(obj4);
           if (cResult[14] === PressableHighlight) {
             if (cResult[15] === tmp6.pressableUnderlayColor.backgroundColor) {
               if (cResult[16] === tmp12Result2Result) {
@@ -177,14 +177,14 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
           cResult[18] = tmp19;
           cResult[19] = tmp33;
           tmp28 = tmp33;
-          const tmp12Result4 = tmp12(17136);
+          const tmp12Result4 = tmp12(17146);
         }
       }
     }
     let tmp23 = null != tmp13;
     if (tmp23) {
-      const obj6 = { channel, message: tmp13, color: str, muted: tmp4, layout: tmp(8128).ChannelListLayoutTypes.COMPACT };
-      tmp23 = jsx(tmp(12972).ChannelRowPreview, { channel, message: tmp13, color: str, muted: tmp4, layout: tmp(8128).ChannelListLayoutTypes.COMPACT });
+      const obj6 = { channel, message: tmp13, color: str, muted: tmp4, layout: tmp(8160).ChannelListLayoutTypes.COMPACT };
+      tmp23 = jsx(tmp(13008).ChannelRowPreview, { channel, message: tmp13, color: str, muted: tmp4, layout: tmp(8160).ChannelListLayoutTypes.COMPACT });
     }
     cResult[9] = channel;
     cResult[10] = tmp13;
@@ -235,8 +235,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   obj3.unreadBadge = jsx(UnreadBadgeDefault, { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted });
   let tmp11Result = null != tmp7;
   if (tmp11Result) {
-    const obj5 = { channel, message: tmp7, color: str, muted, layout: tmp5(8128).ChannelListLayoutTypes.COMPACT };
-    tmp11Result = tmp11(tmp5(12972).ChannelRowPreview, obj5);
+    const obj5 = { channel, message: tmp7, color: str, muted, layout: tmp5(8160).ChannelListLayoutTypes.COMPACT };
+    tmp11Result = tmp11(tmp5(13008).ChannelRowPreview, obj5);
   }
   obj3.subtitle = tmp11Result;
   obj3.latestMessageTimestamp = extractTimestampResult;

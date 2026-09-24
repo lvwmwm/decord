@@ -1,16 +1,16 @@
-// Module ID: 8518
-// Function ID: 8519
+// Module ID: 8550
+// Function ID: 8551
 // Name: UserProfileOverscrollBanner
-// Dependencies: [109, 19, 17, 21, 4497, 8519, 558, 568, 8520, 1368, 2]
+// Dependencies: [109, 19, 17, 21, 4529, 8551, 558, 568, 8552, 1368, 2]
 
-// Module 8518 (UserProfileOverscrollBanner)
+// Module 8550 (UserProfileOverscrollBanner)
 import c from "c" /* 568 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8519 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 8520 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8551 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 8552 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
 
 require = fn;
 let closure_3 = ["bannerAnimatedStyle", "bannerImageAnimatedStyle", "blurAnimatedProps", "showBlur", "privateBanner"];

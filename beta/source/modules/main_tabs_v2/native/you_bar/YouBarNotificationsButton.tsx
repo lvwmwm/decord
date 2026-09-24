@@ -1,30 +1,30 @@
-// Module ID: 16736
-// Function ID: 16737
+// Module ID: 16746
+// Function ID: 16747
 // Name: YouBarNotificationsButton
-// Dependencies: [19, 17, 11782, 15354, 21, 4758, 580, 558, 568, 16737, 4497, 5187, 8103, 504, 4726, 8108, 8109, 1119, 9852, 16735, 1181, 4617, 8178, 2]
+// Dependencies: [19, 17, 11818, 15364, 21, 4790, 580, 558, 568, 16747, 4529, 5219, 8135, 504, 4758, 8140, 8141, 1119, 9884, 16745, 1181, 4649, 8210, 2]
 
-// Module 16736 (YouBarNotificationsButton)
+// Module 16746 (YouBarNotificationsButton)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import HapticUtils from "HapticUtils" /* 4726 */;
-import spring from "spring" /* 5187 */;
-import ForLaterExperiment from "ForLaterExperiment" /* 8103 */;
-import showForLaterModal from "showForLaterModal" /* 8108 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 8109 */;
-import BellIcon from "BellIcon" /* 9852 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import HapticUtils from "HapticUtils" /* 4758 */;
+import spring from "spring" /* 5219 */;
+import ForLaterExperiment from "ForLaterExperiment" /* 8135 */;
+import showForLaterModal from "showForLaterModal" /* 8140 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 8141 */;
+import BellIcon from "BellIcon" /* 9884 */;
 import noop from "module_19" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11782 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11818 */;
 
 require = fn;
 const View = fn(17).View;
-const YouBarConstants = fn(15354);
+const YouBarConstants = fn(15364);
 ({ YOU_BAR_SPRING_CONFIG: metroRequire, YOU_BAR_BUTTON_HIT_SLOP: closure_7, YOU_BAR_BUTTON_ICON_SIZE } = YouBarConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { icon: { width: YOU_BAR_BUTTON_ICON_SIZE, height: YOU_BAR_BUTTON_ICON_SIZE }, iconContainer: { display: "flex", flexDirection: "row", alignItems: "center" }, overdueReminderDot: { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION } };
 let closure_10 = createStyles.createStyles(obj);
 const __initData = { code: "function YouBarNotificationsButtonTsx1(){const{withSpring,badgeCount,YOU_BAR_SPRING_CONFIG,tokens}=this.__closure;return{transform:[{scaleX:withSpring(badgeCount>0?1:0,YOU_BAR_SPRING_CONFIG)}],marginLeft:withSpring(badgeCount>0?tokens.space.PX_4:0,YOU_BAR_SPRING_CONFIG),opacity:withSpring(badgeCount>0?1:0,YOU_BAR_SPRING_CONFIG)};}" };
@@ -37,7 +37,7 @@ let result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/You
 export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((hasNameplate) => {
   const cResult = c.c(39);
   const tmp4 = closure_10();
-  value = isForLaterExperimentOn(16737)().value;
+  value = isForLaterExperimentOn(16747)().value;
   const require = value;
   const fn = function s() {
     let num = 0;

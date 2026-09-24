@@ -1,12 +1,12 @@
-// Module ID: 5184
-// Function ID: 5185
+// Module ID: 5216
+// Function ID: 5217
 // Name: KeyCommands
-// Dependencies: [19, 5185, 558, 568, 2]
+// Dependencies: [19, 5217, 558, 568, 2]
 // Exports: subscribeKeyCommand
 
-// Module 5184 (KeyCommands)
+// Module 5216 (KeyCommands)
 import noop from "module_19" /* 19 */;
-import NativeKeyCommandsModule_mod from "NativeKeyCommandsModule" /* 5185 */;
+import NativeKeyCommandsModule_mod from "NativeKeyCommandsModule" /* 5217 */;
 
 const require = globalThis.__r;
 

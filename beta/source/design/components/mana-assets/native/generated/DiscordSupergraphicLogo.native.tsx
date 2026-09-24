@@ -1,15 +1,15 @@
-// Module ID: 6150
-// Function ID: 6151
+// Module ID: 6182
+// Function ID: 6183
 // Name: DiscordSupergraphicLogo
-// Dependencies: [17, 21, 558, 568, 580, 4462, 6151, 2]
+// Dependencies: [17, 21, 558, 568, 580, 4494, 6183, 2]
 
-// Module 6150 (DiscordSupergraphicLogo)
+// Module 6182 (DiscordSupergraphicLogo)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import _modDef6151 from "module_6151" /* 6151 */;
+import useToken from "useToken" /* 4494 */;
+import _modDef6183 from "module_6183" /* 6183 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ export const DiscordSupergraphicLogo = ReactCompilerGating.isReactCompilerEnable
     }
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { uri: _modDef6151 };
+      const obj4 = { uri: _modDef6183 };
       cResult[4] = obj4;
       let tmp12 = obj4;
     } else {
@@ -130,7 +130,7 @@ export const DiscordSupergraphicLogo = ReactCompilerGating.isReactCompilerEnable
     tmp5 = null != ICON_STRONG && typeof ICON_STRONG === "string";
   }
   const obj4 = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj4.source = { uri: _modDef6151 };
+  obj4.source = { uri: _modDef6183 };
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size, tmp6];
   obj4.style = items;

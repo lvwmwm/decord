@@ -1,21 +1,21 @@
-// Module ID: 16898
-// Function ID: 16899
+// Module ID: 16908
+// Function ID: 16909
 // Name: GuildRoleSubscriptionPurchasePreviewCard
-// Dependencies: [32, 19, 17, 2045, 21, 4758, 580, 558, 568, 7222, 4754, 4725, 16899, 1984, 10525, 15499, 1181, 504, 4911, 1119, 5241, 15486, 16894, 5802, 16900, 2]
+// Dependencies: [32, 19, 17, 2045, 21, 4790, 580, 558, 568, 7254, 4786, 4757, 16909, 1984, 10561, 15509, 1181, 504, 4943, 1119, 5273, 15496, 16904, 5834, 16910, 2]
 
-// Module 16898 (GuildRoleSubscriptionPurchasePreviewCard)
+// Module 16908 (GuildRoleSubscriptionPurchasePreviewCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useChannelNameDefault from "useChannelName" /* 4911 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7222 */;
-import LayoutUtils from "LayoutUtils" /* 10525 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15486 */;
-import EmojiIconDefault from "EmojiIcon" /* 15499 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useChannelNameDefault from "useChannelName" /* 4943 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7254 */;
+import LayoutUtils from "LayoutUtils" /* 10561 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15496 */;
+import EmojiIconDefault from "EmojiIcon" /* 15509 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -25,7 +25,7 @@ get_ActivityIndicator = fn(17);
 ({ TouchableOpacity: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: 16, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL }, header: { flexDirection: "row" }, image: null, separator: null, contentContainer: null, contentHeader: null, emojiGallery: null, emojiTruncatedContainer: null, showAllButton: null, showAllButtonUnderline: null };
 let size = { width: 48, height: 48, borderRadius: nativeDefault.radii.xl };
 obj2.image = size;
@@ -70,7 +70,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj3 = { variant: typeConsolidationEyebrow.variant, color: "text-muted", style: tmp6, children: null };
         const items = [tmp7, " ", title];
         obj3.children = items;
-        const tmp12 = options(tmp(4754).Text, obj3);
+        const tmp12 = options(tmp(4786).Text, obj3);
         cResult[7] = typeConsolidationEyebrow.variant;
         cResult[8] = tmp6;
         cResult[9] = tmp7;
@@ -80,7 +80,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj4 = { variant: typeConsolidationEyebrow.variant, color: "text-default", style: tmp4.contentHeader, children: count };
-    const tmp9 = closure_1_8(tmp(4754).Text, obj4);
+    const tmp9 = closure_1_8(tmp(4786).Text, obj4);
     cResult[3] = count;
     cResult[4] = typeConsolidationEyebrow.variant;
     cResult[5] = tmp4.contentHeader;
@@ -165,7 +165,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const substr = emojiIds.slice(0, maxEmojis);
   let emojiTruncatedContainer = emojiIds.length - maxEmojis;
-  const GappedList = Text(10525).GappedList;
+  const GappedList = Text(10561).GappedList;
   if (cResult[10] !== guildId) {
     class I {
       constructor(arg0) {
@@ -200,7 +200,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj4 = { style: tmp2.emojiTruncatedContainer, children: null };
-    Text = Text(4754).Text;
+    Text = Text(4786).Text;
     const obj5 = { variant: "text-sm/bold", color: "text-default", children: null };
     const items = ["+", emojiTruncatedContainer];
     obj5.children = items;
@@ -240,7 +240,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp5 = title;
     if (typeof title === "string") {
       const obj2 = { variant: "text-md/semibold", color: "text-default", children: title };
-      tmp5 = closure_1_8(tmp(4754).Text, obj2);
+      tmp5 = closure_1_8(tmp(4786).Text, obj2);
     }
     cResult[0] = title;
     cResult[1] = tmp5;
@@ -254,7 +254,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj3 = { children: null };
       const items = [closure_1_8(tmp(1181).Spacer, { size: 2 }), ];
       const obj4 = { variant: "text-sm/medium", color: "interactive-text-default", children: description };
-      items[1] = closure_1_8(tmp(4754).Text, obj4);
+      items[1] = closure_1_8(tmp(4786).Text, obj4);
       obj3.children = items;
       tmp8 = options(v65535, obj3);
     }
@@ -358,11 +358,11 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
       items2 = cResult[5];
     }
     if (cResult[6] !== stateFromStores) {
-      const channelIcon = tmp(5241).getChannelIcon(stateFromStores);
+      const channelIcon = tmp(5273).getChannelIcon(stateFromStores);
       cResult[6] = stateFromStores;
       cResult[7] = channelIcon;
       let tmp12 = channelIcon;
-      const tmpResult2 = tmp(5241);
+      const tmpResult2 = tmp(5273);
     } else {
       tmp12 = cResult[7];
     }
@@ -385,7 +385,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
     }
     if (cResult[11] !== tmp9) {
       const obj5 = { variant: "text-md/semibold", color: "text-default", children: tmp9 };
-      const tmp22 = closure_8(tmp(4754).Text, obj5);
+      const tmp22 = closure_8(tmp(4786).Text, obj5);
       cResult[11] = tmp9;
       cResult[12] = tmp22;
       let tmp20 = tmp22;
@@ -412,13 +412,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   let title = intl.string(channelId(1119).t.bz1PZX);
   if (null != stateFromStores) {
     const obj2 = { style: { flexDirection: "row", alignItems: "center" }, children: null };
-    const obj3 = { size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, source: tmp(5241).getChannelIcon(stateFromStores) };
+    const obj3 = { size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, source: tmp(5273).getChannelIcon(stateFromStores) };
     const items2 = [closure_8(tmp(1181).Icon, obj3), closure_8(tmp(1181).Spacer, { size: 4 }), ];
     const obj4 = { variant: "text-md/semibold", color: "text-default", children: tmp4 };
-    items2[2] = closure_8(tmp(4754).Text, obj4);
+    items2[2] = closure_8(tmp(4786).Text, obj4);
     obj2.children = items2;
     title = closure_9(closure_6, obj2);
-    const tmpResult = tmp(5241);
+    const tmpResult = tmp(5273);
   }
   return closure_8(closure_15, { title, description: description.description });
 });
@@ -431,7 +431,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     const obj2 = { variant: "text-sm/semibold", color: "interactive-text-hover", style: { marginTop: -1 }, children: null };
     const intl = tmp(1119).intl;
     obj2.children = intl.string(tmp(1119).t["hub6t/"]);
-    const tmp8 = closure_1_8(tmp(4754).Text, obj2);
+    const tmp8 = closure_1_8(tmp(4786).Text, obj2);
     const tmp9 = closure_1_8(tmp(1181).Spacer, { size: 3 });
     cResult[0] = tmp8;
     cResult[1] = tmp9;
@@ -495,7 +495,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
   const first1 = _slicedToArray(GuildRoleSubscriptionListingEditStateUtilsAll.useTierEmojiIds(listingId, guildId), 1)[0];
   const first2 = _slicedToArray(GuildRoleSubscriptionListingEditStateUtilsAll.useChannelBenefits(listingId), 1)[0];
   const first3 = _slicedToArray(GuildRoleSubscriptionListingEditStateUtilsAll.useIntangibleBenefits(listingId), 1)[0];
-  const formattedSubscriptionPlan = listingId(16894).useFormattedSubscriptionPlan(listingId);
+  const formattedSubscriptionPlan = listingId(16904).useFormattedSubscriptionPlan(listingId);
   const first4 = first2[0];
   const first5 = first3[0];
   const size = first1.size;
@@ -528,7 +528,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
       }
       if (cResult[9] !== first) {
         const obj9 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first };
-        const tmp24 = closure_8(tmp(4754).Text, obj9);
+        const tmp24 = closure_8(tmp(4786).Text, obj9);
         cResult[9] = first;
         cResult[10] = tmp24;
         let tmp22 = tmp24;
@@ -545,7 +545,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
       }
       if (cResult[12] !== formattedSubscriptionPlan) {
         const obj10 = { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan };
-        const tmp30 = closure_8(tmp(4754).Text, obj10);
+        const tmp30 = closure_8(tmp(4786).Text, obj10);
         cResult[12] = formattedSubscriptionPlan;
         cResult[13] = tmp30;
         let tmp28 = tmp30;
@@ -571,7 +571,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
             }
             if (cResult[22] !== listingId) {
               const obj11 = { listingId };
-              const tmp45 = closure_8(guildId(16900), obj11);
+              const tmp45 = closure_8(guildId(16910), obj11);
               cResult[22] = listingId;
               cResult[23] = tmp45;
               let tmp42 = tmp45;
@@ -684,7 +684,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
               const obj28 = { children: null };
               items4[2] = tmp48Result5;
               obj14.children = items4;
-              obj13.children = closure_9(tmp(10525).GappedList, obj14);
+              obj13.children = closure_9(tmp(10561).GappedList, obj14);
               items1[1] = closure_8(closure_6, obj13);
               const obj29 = { onPress: tmp11 };
               items1[2] = closure_8(closure_17, obj29);
@@ -725,7 +725,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
       tmp31 = tmp34;
     }
     const obj54 = { source: tmp13, style: tmp4.image };
-    const tmp17 = closure_8(guildId(5802), obj54);
+    const tmp17 = closure_8(guildId(5834), obj54);
     cResult[5] = tmp4.image;
     cResult[6] = tmp13;
     cResult[7] = tmp17;
@@ -733,7 +733,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
   }
   const fn = function l() {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequireImpl(16899, dependencyMap.paths), "PurchaseCard:" + listingId, { listingId, guildId });
+    obj.openLazy(asyncRequireImpl(16909, dependencyMap.paths), "PurchaseCard:" + listingId, { listingId, guildId });
   };
   cResult[0] = guildId;
   cResult[1] = listingId;
@@ -753,19 +753,19 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
   const size = first.size;
   const obj7 = { style: tmp.container, children: null };
   const obj8 = { style: tmp.header, children: null };
-  const formattedSubscriptionPlan = listingId(16894).useFormattedSubscriptionPlan(listingId);
-  const obj6 = listingId(16894);
+  const formattedSubscriptionPlan = listingId(16904).useFormattedSubscriptionPlan(listingId);
+  const obj6 = listingId(16904);
   const tmp11 = guildId;
   if (str == null) {
     str = "";
   }
-  const items = [closure_8(guildId(5802), { source: { uri: str }, style: tmp.image }), closure_8(listingId(1181).Spacer, { size: 16 }), ];
+  const items = [closure_8(guildId(5834), { source: { uri: str }, style: tmp.image }), closure_8(listingId(1181).Spacer, { size: 16 }), ];
   const obj10 = { children: null };
-  const items1 = [closure_8(listingId(4754).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: _slicedToArray(obj2.useName(listingId), 1)[0] }), closure_8(listingId(1181).Spacer, { size: 4 }), closure_8(listingId(4754).Text, { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan })];
+  const items1 = [closure_8(listingId(4786).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: _slicedToArray(obj2.useName(listingId), 1)[0] }), closure_8(listingId(1181).Spacer, { size: 4 }), closure_8(listingId(4786).Text, { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan })];
   obj10.children = items1;
   items[2] = closure_9(closure_6, obj10);
   obj8.children = items;
-  const items2 = [closure_9(closure_6, obj8), closure_8(listingId(1181).Spacer, { size: 16 }), closure_8(tmp11(16900), { listingId }), ];
+  const items2 = [closure_9(closure_6, obj8), closure_8(listingId(1181).Spacer, { size: 16 }), closure_8(tmp11(16910), { listingId }), ];
   let tmp8Result6 = length > 0 || size > 0 || length2 > 0;
   if (tmp8Result6) {
     const items3 = [tmp10(tmp4(1181).Spacer, { size: 24 }), , ];
@@ -831,12 +831,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
     const obj44 = { children: null };
     items6[2] = tmp8Result5;
     obj12.children = items6;
-    obj11.children = tmp8(tmp4(10525).GappedList, obj12);
+    obj11.children = tmp8(tmp4(10561).GappedList, obj12);
     items3[1] = tmp10(tmp9, obj11);
     const obj45 = {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
-          obj.openLazy(asyncRequireImpl(16899, dependencyMap.paths), "PurchaseCard:" + listingId, { listingId, guildId });
+          obj.openLazy(asyncRequireImpl(16909, dependencyMap.paths), "PurchaseCard:" + listingId, { listingId, guildId });
         }
     };
     items3[2] = tmp10(closure_17, obj45);

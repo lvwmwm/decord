@@ -1,18 +1,18 @@
-// Module ID: 10044
-// Function ID: 10045
+// Module ID: 10083
+// Function ID: 10084
 // Name: StartEventModal
-// Dependencies: [5, 32, 19, 17, 2045, 2067, 2051, 9761, 21, 4758, 580, 4961, 558, 568, 1119, 1181, 7336, 5341, 4754, 10043, 504, 9755, 10045, 8686, 10048, 5188, 7371, 2]
+// Dependencies: [5, 32, 19, 17, 2045, 2067, 2051, 9793, 21, 4790, 580, 4993, 558, 568, 1119, 1181, 7368, 5373, 4786, 10082, 504, 9787, 10084, 8718, 10087, 5220, 7403, 2]
 
-// Module 10044 (StartEventModal)
+// Module 10083 (StartEventModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import Pressables from "Pressables" /* 5341 */;
-import _modDef7336 from "module_7336" /* 7336 */;
-import GuildEventCardDefault from "GuildEventCard" /* 10043 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import Pressables from "Pressables" /* 5373 */;
+import _modDef7368 from "module_7368" /* 7368 */;
+import GuildEventCardDefault from "GuildEventCard" /* 10082 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -25,10 +25,10 @@ require = fn;
 const View = fn(17).View;
 const GuildScheduledEventsConstants = fn(2051);
 ({ AGE_VERIFICATION_STAGE_CHANNEL_TYPES: closure_9, GuildScheduledEventEntityTypes: c10 } = GuildScheduledEventsConstants);
-const START_EVENT_MODAL_KEY = fn(9761).START_EVENT_MODAL_KEY;
+const START_EVENT_MODAL_KEY = fn(9793).START_EVENT_MODAL_KEY;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { mainContainer: { flex: 1, padding: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, container: { flex: 1, flexDirection: "column", justifyContent: "space-between", alignContent: "center" }, headerContainer: null, footerContainer: null, header: null, headerTitle: null, buttonContainer: null, previewCard: null, headerPrivacyLevel: null };
 let obj3 = { flex: 1, padding: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.headerContainer = { display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_24 };
@@ -65,7 +65,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     tmp6 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { source: _modDef7336 };
+    const obj2 = { source: _modDef7368 };
     const tmp10 = __initData(tmp(1181).Icon, obj2);
     cResult[3] = tmp10;
     let tmp7 = tmp10;
@@ -75,7 +75,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   if (cResult[4] !== tmp6) {
     const obj3 = { children: null };
     const obj4 = { accessibilityRole: "button", accessibilityLabel: first, onPress: tmp6, children: tmp7 };
-    obj3.children = __initData(tmp(5341).PressableOpacity, obj4);
+    obj3.children = __initData(tmp(5373).PressableOpacity, obj4);
     const tmp14 = __initData(View, obj3);
     cResult[4] = tmp6;
     cResult[5] = tmp14;
@@ -93,7 +93,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   obj2.onPress = function onPress() {
     return onClose();
   };
-  obj2.children = __initData(native.Icon, { source: _modDef7336 });
+  obj2.children = __initData(native.Icon, { source: _modDef7368 });
   obj.children = __initData(Pressables.PressableOpacity, obj2);
   return __initData(View, obj);
 });
@@ -113,7 +113,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
   }
   if (cResult[1] !== tmp4.headerPrivacyLevel) {
     const obj2 = { style: headerPrivacyLevel, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: first };
-    const tmp9 = __initData(tmp(4754).Text, obj2);
+    const tmp9 = __initData(tmp(4786).Text, obj2);
     cResult[1] = tmp4.headerPrivacyLevel;
     cResult[2] = tmp9;
     let tmp7 = tmp9;

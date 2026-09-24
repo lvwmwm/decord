@@ -1,18 +1,18 @@
-// Module ID: 15508
-// Function ID: 15509
+// Module ID: 15518
+// Function ID: 15519
 // Name: AutoVoiceSensitivitySetting
-// Dependencies: [1996, 8238, 558, 568, 504, 9889, 11594, 1119, 2]
+// Dependencies: [1996, 8270, 558, 568, 504, 9921, 11630, 1119, 2]
 
-// Module 15508 (AutoVoiceSensitivitySetting)
+// Module 15518 (AutoVoiceSensitivitySetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9889 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9921 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -37,7 +37,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.Z4oaN0);
   },
-  parent: fn(8238).MobileUserSettings.VOICE,
+  parent: fn(8270).MobileUserSettings.VOICE,
   useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {

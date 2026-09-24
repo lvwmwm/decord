@@ -1,19 +1,19 @@
-// Module ID: 15948
-// Function ID: 15949
+// Module ID: 15958
+// Function ID: 15959
 // Name: BackupScreen
-// Dependencies: [5, 32, 19, 21, 15946, 4754, 1119, 558, 568, 7185, 15947, 15941, 15942, 2]
+// Dependencies: [5, 32, 19, 21, 15956, 4786, 1119, 558, 568, 7217, 15957, 15951, 15952, 2]
 
-// Module 15948 (BackupScreen)
-import Text_Text from "Text/Text" /* 4754 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7185 */;
-import MFA from "MFA" /* 15946 */;
+// Module 15958 (BackupScreen)
+import Text_Text from "Text/Text" /* 4786 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7217 */;
+import MFA from "MFA" /* 15956 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const ClipboardCopyInputDefault = tmp4(15947);
+const ClipboardCopyInputDefault = tmp4(15957);
 require = fn;
 function removeDashes(str) {
   return str.replace(/-/g, "");

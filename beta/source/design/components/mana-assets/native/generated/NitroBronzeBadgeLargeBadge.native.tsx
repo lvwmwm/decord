@@ -1,13 +1,13 @@
-// Module ID: 6492
-// Function ID: 6493
+// Module ID: 6524
+// Function ID: 6525
 // Name: NitroBronzeBadgeLargeBadge
-// Dependencies: [21, 558, 568, 6493, 5802, 2]
+// Dependencies: [21, 558, 568, 6525, 5834, 2]
 
-// Module 6492 (NitroBronzeBadgeLargeBadge)
+// Module 6524 (NitroBronzeBadgeLargeBadge)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6493 from "module_6493" /* 6493 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6525 from "module_6525" /* 6525 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const NitroBronzeBadgeLargeBadge = ReactCompilerGating.isReactCompilerEna
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6493 };
+    const obj2 = { uri: _modDef6525 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const NitroBronzeBadgeLargeBadge = ReactCompilerGating.isReactCompilerEna
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6493 };
+  const obj2 = { uri: _modDef6525 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

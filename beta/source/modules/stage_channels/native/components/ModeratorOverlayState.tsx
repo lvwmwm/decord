@@ -1,11 +1,11 @@
-// Module ID: 9744
-// Function ID: 9745
+// Module ID: 9776
+// Function ID: 9777
 // Name: ModeratorOverlayState
-// Dependencies: [1247, 1252, 558, 568, 4383, 2]
+// Dependencies: [1247, 1252, 558, 568, 4415, 2]
 
-// Module 9744 (ModeratorOverlayState)
+// Module 9776 (ModeratorOverlayState)
 import c from "c" /* 568 */;
-import _mod4383 from "module_4383" /* 4383 */;
+import _mod4415 from "module_4415" /* 4415 */;
 import identity from "module_1247" /* 1247 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ export const useModeratorOverlayChannelState = ReactCompilerGating.isReactCompil
   } else {
     first = cResult[0];
   }
-  const obj2 = closure_2(first, _mod4383.shallow);
+  const obj2 = closure_2(first, _mod4415.shallow);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function o(dismissOverlay) {
       return dismissOverlay.dismissOverlay;
@@ -47,7 +47,7 @@ export const useModeratorOverlayChannelState = ReactCompilerGating.isReactCompil
   } else {
     tmp6 = cResult[1];
   }
-  const tmp5Result = closure_2(tmp6, _mod4383.shallow);
+  const tmp5Result = closure_2(tmp6, _mod4415.shallow);
   closure_1 = tmp5Result;
   if (cResult[2] === arg0) {
     if (cResult[5] === arg0) {
@@ -80,7 +80,7 @@ export const useModeratorOverlayChannelState = ReactCompilerGating.isReactCompil
   cResult[4] = hasItem;
 }) : ((arg0) => {
   closure_0 = arg0;
-  closure_1 = closure_2((dismissOverlay) => dismissOverlay.dismissOverlay, _mod4383.shallow);
-  const items = [!closure_2((overlayDismissedChannelIds) => overlayDismissedChannelIds.overlayDismissedChannelIds, _mod4383.shallow).has(arg0), () => closure_1(closure_0)];
+  closure_1 = closure_2((dismissOverlay) => dismissOverlay.dismissOverlay, _mod4415.shallow);
+  const items = [!closure_2((overlayDismissedChannelIds) => overlayDismissedChannelIds.overlayDismissedChannelIds, _mod4415.shallow).has(arg0), () => closure_1(closure_0)];
   return items;
 });

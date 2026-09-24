@@ -1,16 +1,16 @@
-// Module ID: 12575
-// Function ID: 12576
+// Module ID: 12611
+// Function ID: 12612
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 4750, 1078, 21, 1181, 558, 568, 4497, 5187, 4471, 4759, 504, 12540, 12576, 12577, 9425, 2]
+// Dependencies: [32, 19, 4782, 1078, 21, 1181, 558, 568, 4529, 5219, 4503, 4791, 504, 12576, 12612, 12613, 9457, 2]
 // Exports: getEmojiEntranceKey, sortEmojisForDisplay
 
-// Module 12575 (EmojiSuggestionBarUtils)
-import native from "native" /* 4471 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import spring from "spring" /* 5187 */;
+// Module 12611 (EmojiSuggestionBarUtils)
+import native from "native" /* 4503 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import spring from "spring" /* 5219 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const UpsellTypes = fn(1078).UpsellTypes;
@@ -135,14 +135,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cleanUp, arg2,
       if (closure_3 != null) {
         tmp11(0);
       }
-      const tmpResult = tmp(4759);
+      const tmpResult = tmp(4791);
       const fn = function n(arg0) {
         if (arg0) {
           closure_0(dependencyMap[8]).runOnJS(cleanUp)();
           obj = closure_0(dependencyMap[8]);
         }
       };
-      const __closure = { runOnJS: tmp(4497).runOnJS, cleanUp };
+      const __closure = { runOnJS: tmp(4529).runOnJS, cleanUp };
       fn.__closure = __closure;
       fn.__workletHash = 12392976434275;
       fn.__initData = __initData;
@@ -151,8 +151,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cleanUp, arg2,
       if (closure_3 != null) {
         tmp3(dependencyMap);
       }
-      const result1 = sharedValue.set(tmp(4759).withTiming(dependencyMap, __closure));
-      const tmpResult2 = tmp(4759);
+      const result1 = sharedValue.set(tmp(4791).withTiming(dependencyMap, __closure));
+      const tmpResult2 = tmp(4791);
     }
   };
   const items = [arg0, sharedValue, cleanUp, arg2, arg3];
@@ -176,14 +176,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cleanUp, arg2,
       if (closure_3 != null) {
         tmp11(0);
       }
-      const tmpResult = tmp(4759);
+      const tmpResult = tmp(4791);
       const fn = function n(arg0) {
         if (arg0) {
           closure_0(dependencyMap[8]).runOnJS(cleanUp)();
           obj = closure_0(dependencyMap[8]);
         }
       };
-      const __closure = { runOnJS: tmp(4497).runOnJS, cleanUp };
+      const __closure = { runOnJS: tmp(4529).runOnJS, cleanUp };
       fn.__closure = __closure;
       fn.__workletHash = 11444984222980;
       fn.__initData = __initData;
@@ -192,8 +192,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cleanUp, arg2,
       if (closure_3 != null) {
         tmp3(dependencyMap);
       }
-      const result1 = sharedValue.set(tmp(4759).withTiming(dependencyMap, __closure));
-      const tmpResult2 = tmp(4759);
+      const result1 = sharedValue.set(tmp(4791).withTiming(dependencyMap, __closure));
+      const tmpResult2 = tmp(4791);
     }
   }, items);
   return sharedValue;

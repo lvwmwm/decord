@@ -1,24 +1,24 @@
-// Module ID: 9076
-// Function ID: 9077
+// Module ID: 9108
+// Function ID: 9109
 // Name: BundleSampleV2
-// Dependencies: [19, 17, 9077, 21, 558, 568, 5802, 4758, 580, 38, 1977, 1974, 9078, 9089, 9096, 1181, 2]
+// Dependencies: [19, 17, 9109, 21, 558, 568, 5834, 4790, 580, 38, 1977, 1974, 9110, 9121, 9128, 1181, 2]
 
-// Module 9076 (BundleSampleV2)
+// Module 9108 (BundleSampleV2)
 import _modDef38 from "module_38" /* 38 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import utils from "utils" /* 1974 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9078 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9089 */;
-import NameplateDummyUserPreview from "NameplateDummyUserPreview" /* 9096 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9110 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9121 */;
+import NameplateDummyUserPreview from "NameplateDummyUserPreview" /* 9128 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ PixelRatio: c3, StyleSheet, View: closure_4 } = get_ActivityIndicator);
-const BUNDLE_PREVIEW_CONFIG = fn(9077).BUNDLE_PREVIEW_CONFIG;
+const BUNDLE_PREVIEW_CONFIG = fn(9109).BUNDLE_PREVIEW_CONFIG;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 let ReactCompilerGating = fn(558);
@@ -240,7 +240,7 @@ obj2.fgClip = obj6;
 const merged4 = Object.assign(StyleSheet.absoluteFillObject);
 obj2.fgImage = {};
 const styles = StyleSheet.create(obj2);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles((arg0) => {
   const obj = { bundle: null, pfx: null, avatar: null, avatarWithNameplate: null, nameplate: null };
   const size = { width: tmp.bundleWidth, height: tmp.bundleHeight, borderRadius: nativeDefault.radii.xs };
@@ -330,7 +330,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 }
                 obj4.avatarSize = XSMALL_20;
                 obj4.nameplate = undefined;
-                obj4 = tmp26(tmp(9096).NameplateDummyUserPreview, obj4);
+                obj4 = tmp26(tmp(9128).NameplateDummyUserPreview, obj4);
                 obj3.children = obj4;
                 timestampProducer(React4, obj3);
               }

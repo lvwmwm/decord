@@ -1,19 +1,19 @@
-// Module ID: 15159
-// Function ID: 15160
+// Module ID: 15169
+// Function ID: 15170
 // Name: FamilyCenterUsernameHeader
-// Dependencies: [19, 17, 21, 4758, 558, 568, 4603, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 4635, 4786, 2]
 
-// Module 15159 (FamilyCenterUsernameHeader)
+// Module 15169 (FamilyCenterUsernameHeader)
 import c from "c" /* 568 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ container: { justifyContent: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -36,7 +36,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   const combined = " (@" + tmp7 + ")";
   if (cResult[2] !== combined) {
     const obj3 = { variant: "text-md/medium", color: "text-muted", lineClamp: 1, children: combined };
-    const tmp12 = React4(tmp(4754).Text, obj3);
+    const tmp12 = React4(tmp(4786).Text, obj3);
     cResult[2] = combined;
     cResult[3] = tmp12;
     let tmp10 = tmp12;

@@ -1,16 +1,16 @@
-// Module ID: 17594
-// Function ID: 17595
+// Module ID: 17604
+// Function ID: 17605
 // Name: useDrawerToggle
-// Dependencies: [19, 12418, 558, 568, 12419, 4497, 8543, 17595, 1119, 2]
+// Dependencies: [19, 12454, 558, 568, 12455, 4529, 8575, 17605, 1119, 2]
 
-// Module 17594 (useDrawerToggle)
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 17595 */;
+// Module 17604 (useDrawerToggle)
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 17605 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const VoicePanelControlsModes = fn(12418).VoicePanelControlsModes;
+const VoicePanelControlsModes = fn(12454).VoicePanelControlsModes;
 const __initData = { code: "function useDrawerToggleTsx1(){const{controlsSpecs,VoicePanelControlsModes}=this.__closure;return controlsSpecs.get().mode===VoicePanelControlsModes.DRAWER;}" };
 const __initData2 = { code: "function useDrawerToggleTsx2(){const{controlsSpecs,VoicePanelControlsModes}=this.__closure;return controlsSpecs.get().mode===VoicePanelControlsModes.DRAWER;}" };
 const ReactCompilerGating = fn(558);

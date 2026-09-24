@@ -1,12 +1,12 @@
-// Module ID: 10180
-// Function ID: 10181
+// Module ID: 10219
+// Function ID: 10220
 // Name: useIsInvitedToSpeak
-// Dependencies: [502, 2099, 558, 568, 504, 4905, 2]
+// Dependencies: [502, 2099, 558, 568, 504, 4937, 2]
 
-// Module 10180 (useIsInvitedToSpeak)
+// Module 10219 (useIsInvitedToSpeak)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4905 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4937 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 

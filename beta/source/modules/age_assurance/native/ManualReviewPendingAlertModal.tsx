@@ -1,13 +1,13 @@
-// Module ID: 8868
-// Function ID: 8869
+// Module ID: 8900
+// Function ID: 8901
 // Name: ManualReviewPendingAlertModal
-// Dependencies: [19, 21, 558, 568, 1119, 3070, 5116, 5116, 2]
+// Dependencies: [19, 21, 558, 568, 1119, 3102, 5148, 5148, 2]
 
-// Module 8868 (ManualReviewPendingAlertModal)
+// Module 8900 (ManualReviewPendingAlertModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import _modDef3070 from "module_3070" /* 3070 */;
-import AlertModal from "AlertModal" /* 5116 */;
+import _modDef3102 from "module_3102" /* 3102 */;
+import AlertModal from "AlertModal" /* 5148 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,9 +20,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1119).intl;
-    const stringResult = intl.string(_modDef3070.CNm4w6);
+    const stringResult = intl.string(_modDef3102.CNm4w6);
     const intl2 = tmp(1119).intl;
-    const stringResult1 = intl2.string(_modDef3070["14Fje3"]);
+    const stringResult1 = intl2.string(_modDef3102["14Fje3"]);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
     tmp4 = stringResult;
@@ -36,9 +36,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj4 = { text: null };
     const intl3 = tmp(1119).intl;
     obj4.text = intl3.string(tmp(1119).t["NX+WJN"]);
-    obj3.children = jsx(tmp(5116).AlertActionButton, { text: null }, "got-it");
-    obj2.actions = jsx(tmp(5116).AlertActions, { children: null });
-    const tmp11 = jsx(tmp(5116).AlertModal, { title: tmp4, content: tmp5, actions: null });
+    obj3.children = jsx(tmp(5148).AlertActionButton, { text: null }, "got-it");
+    obj2.actions = jsx(tmp(5148).AlertActions, { children: null });
+    const tmp11 = jsx(tmp(5148).AlertModal, { title: tmp4, content: tmp5, actions: null });
     cResult[2] = tmp11;
     let tmp9 = tmp11;
   } else {
@@ -48,9 +48,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const obj = { title: null, content: null, actions: null };
   const intl = util.intl;
-  obj.title = intl.string(_modDef3070.CNm4w6);
+  obj.title = intl.string(_modDef3102.CNm4w6);
   const intl2 = util.intl;
-  obj.content = intl2.string(_modDef3070["14Fje3"]);
+  obj.content = intl2.string(_modDef3102["14Fje3"]);
   const obj2 = { children: null };
   const obj3 = { text: null };
   const intl3 = util.intl;

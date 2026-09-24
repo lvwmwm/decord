@@ -1,12 +1,12 @@
-// Module ID: 11812
-// Function ID: 11813
+// Module ID: 11848
+// Function ID: 11849
 // Name: ForwardStaffToNonStaffWarningModal
-// Dependencies: [21, 558, 568, 1119, 5116, 2]
+// Dependencies: [21, 558, 568, 1119, 5148, 2]
 
-// Module 11812 (ForwardStaffToNonStaffWarningModal)
+// Module 11848 (ForwardStaffToNonStaffWarningModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AlertModal from "AlertModal" /* 5116 */;
+import AlertModal from "AlertModal" /* 5148 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[3] !== onConfirm) {
     const obj2 = { text: tmp8, onPress: onConfirm };
-    const tmp12 = React2(tmp(5116).AlertActionButton, obj2, "confirm");
+    const tmp12 = React2(tmp(5148).AlertActionButton, obj2, "confirm");
     cResult[3] = onConfirm;
     cResult[4] = tmp12;
     let tmp10 = tmp12;
@@ -56,7 +56,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[6] !== onBack) {
     const obj3 = { variant: "secondary", text: tmp13, onPress: onBack };
-    const tmp17 = React2(tmp(5116).AlertActionButton, obj3, "back");
+    const tmp17 = React2(tmp(5148).AlertActionButton, obj3, "back");
     cResult[6] = onBack;
     cResult[7] = tmp17;
     let tmp15 = tmp17;

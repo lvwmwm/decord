@@ -1,13 +1,13 @@
-// Module ID: 10624
-// Function ID: 10625
+// Module ID: 10660
+// Function ID: 10661
 // Name: LockUnlockedIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 10625, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 10661, 4493, 2]
 
-// Module 10624 (LockUnlockedIcon)
+// Module 10660 (LockUnlockedIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod10625 from "module_10625" /* 10625 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod10661 from "module_10661" /* 10661 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const LockUnlockedIcon = ReactCompilerGating.isReactCompilerEnabled() ? (
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(10625);
+    const tmpResult = tmp(10661);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const LockUnlockedIcon = ReactCompilerGating.isReactCompilerEnabled() ? (
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10625, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10661, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

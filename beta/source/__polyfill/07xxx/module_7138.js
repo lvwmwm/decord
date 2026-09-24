@@ -1,47 +1,32 @@
 // Module ID: 7138
 // Function ID: 7139
-// Dependencies: [7093, 19]
-// Exports: useUnmountAwareAnimationFrame, useUnmountAwareTimeout
+// Dependencies: []
 
 // Module 7138
-import _slicedToArray from "module_7093" /* 7093 */;
+function _typeof(arg0) {
+  if (typeof Symbol === "function") {
+    let _Symbol = Symbol;
+    if (typeof Symbol.iterator === "symbol") {
+      exports = (arg0) => typeof arg0;
+    }
+    tmp.exports = exports;
+    return exports(arg0);
+  }
+  exports = (arg0) => {
+    if (arg0) {
+      const _Symbol = Symbol;
+      if (typeof Symbol === "function") {
+        const _Symbol3 = Symbol;
+        if (arg0.constructor === Symbol) {
+          const _Symbol2 = Symbol;
+          let str = "symbol";
+        }
+        return str;
+      }
+    }
+    str = typeof arg0;
+  };
+}
+let exports = _typeof;
 
-const noop = fn(19);
-({ useCallback: c2, useEffect: c3, useState: closure_4 } = noop);
-
-export const useUnmountAwareTimeout = function useUnmountAwareTimeout() {
-  const first = _slicedToArray(closure_4(() => new Set()), 1)[0];
-  const items = [first];
-  closure_3(() => () => {
-    const item = set.forEach((item) => closure_1_0.clearTimeout(item));
-    set.clear();
-  }, items);
-  const obj = { setTimeout: null };
-  const items1 = [first];
-  obj.setTimeout = closure_2((arg0, arg1) => {
-    const timerId = first.setTimeout(() => {
-      first.delete(timerId);
-      closure_0();
-    }, arg1);
-    arg0.add(timerId);
-  }, items1);
-  return obj;
-};
-export const useUnmountAwareAnimationFrame = function useUnmountAwareAnimationFrame() {
-  const first = _slicedToArray(closure_4(() => new Set()), 1)[0];
-  const items = [first];
-  closure_3(() => () => {
-    const item = set.forEach((item) => cancelAnimationFrame(item));
-    set.clear();
-  }, items);
-  const obj = { requestAnimationFrame: null };
-  const items1 = [first];
-  obj.requestAnimationFrame = closure_2((arg0) => {
-    const animationFrame = first.requestAnimationFrame((arg0) => {
-      first.delete(animationFrame);
-      closure_0(arg0);
-    });
-    arg0.add(animationFrame);
-  }, items1);
-  return obj;
-};
+export default _typeof;

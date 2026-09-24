@@ -1,23 +1,23 @@
-// Module ID: 16232
-// Function ID: 16233
+// Module ID: 16242
+// Function ID: 16243
 // Name: RedesignSettingsNotificationScreen
-// Dependencies: [19, 15745, 8238, 21, 16233, 1119, 2812, 558, 568, 15746, 11594, 15748, 16234, 5203, 14953, 2]
+// Dependencies: [19, 15755, 8270, 21, 16243, 1119, 2812, 558, 568, 15756, 11630, 15758, 16244, 5235, 14988, 2]
 
-// Module 16232 (RedesignSettingsNotificationScreen)
+// Module 16242 (RedesignSettingsNotificationScreen)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import _modDef2812 from "module_2812" /* 2812 */;
-import useMountEffectDefault from "useMountEffect" /* 5203 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
-import SettingLayoutDefault from "SettingLayout" /* 14953 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15746 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15748 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 16233 */;
+import useMountEffectDefault from "useMountEffect" /* 5235 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
+import SettingLayoutDefault from "SettingLayout" /* 14988 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15756 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15758 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 16243 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_4 = fn(15745).initializeAndroidNotificationSettingsStore;
-const MobileUserSettings = fn(8238).MobileUserSettings;
+let closure_4 = fn(15755).initializeAndroidNotificationSettingsStore;
+const MobileUserSettings = fn(8270).MobileUserSettings;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -35,8 +35,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const inHoldout = ContextualOptInNudgeHoldoutExperimentDefault.useConfig(first).inHoldout;
   if (cResult[1] !== !inHoldout) {
     const obj4 = { sections: null, ListHeaderComponent: null };
-    const tmpResult = tmp(11594);
-    const items = [tmp(16233).buildOverviewCategoriesSection(), ];
+    const tmpResult = tmp(11630);
+    const items = [tmp(16243).buildOverviewCategoriesSection(), ];
     const obj5 = { label: null, settings: null };
     const intl = tmp(1119).intl;
     obj5.label = intl.string(tmp5(2812).nvBHcD);
@@ -47,14 +47,14 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj4.sections = items;
     let tmp5Result;
     if (!inHoldout) {
-      tmp5Result = tmp5(15748);
+      tmp5Result = tmp5(15758);
     }
     obj4.ListHeaderComponent = tmp5Result;
     const list = tmpResult.createList(obj4);
     cResult[1] = tmp6;
     cResult[2] = list;
     let tmp7 = list;
-    const tmpResult2 = tmp(16233);
+    const tmpResult2 = tmp(16243);
   } else {
     tmp7 = cResult[2];
   }
@@ -90,7 +90,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const obj6 = { node: tmp7 };
-    const tmp14 = jsx(tmp5(14953), { node: tmp7 });
+    const tmp14 = jsx(tmp5(14988), { node: tmp7 });
     cResult[4] = tmp7;
     cResult[5] = tmp14;
     const tmp13 = tmp14;

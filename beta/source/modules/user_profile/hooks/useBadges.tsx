@@ -1,13 +1,13 @@
-// Module ID: 8516
-// Function ID: 8517
+// Module ID: 8548
+// Function ID: 8549
 // Name: useBadges
-// Dependencies: [4604, 1376, 558, 568, 2023, 565, 1119, 2]
+// Dependencies: [4636, 1376, 558, 568, 2023, 565, 1119, 2]
 
-// Module 8516 (useBadges)
+// Module 8548 (useBadges)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import StreamerModeStore from "StreamerModeStore" /* 4604 */;
+import StreamerModeStore from "StreamerModeStore" /* 4636 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;

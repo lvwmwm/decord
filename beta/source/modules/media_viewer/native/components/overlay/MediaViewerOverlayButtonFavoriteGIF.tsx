@@ -1,14 +1,14 @@
-// Module ID: 13262
-// Function ID: 13263
+// Module ID: 13298
+// Function ID: 13299
 // Name: MediaViewerOverlayButtonFavoriteGIF
-// Dependencies: [19, 21, 558, 568, 10658, 10662, 4458, 1119, 10673, 10660, 1225, 8541, 10515, 580, 10517, 8644, 2]
+// Dependencies: [19, 21, 558, 568, 10694, 10698, 4490, 1119, 10709, 10696, 1225, 8573, 10551, 580, 10553, 8676, 2]
 
-// Module 13262 (MediaViewerOverlayButtonFavoriteGIF)
+// Module 13298 (MediaViewerOverlayButtonFavoriteGIF)
 import util from "util" /* 1119 */;
 import frecency_user_settings from "frecency_user_settings" /* 1225 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10658 */;
-import GifIcon from "GifIcon" /* 10673 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10694 */;
+import GifIcon from "GifIcon" /* 10709 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -96,8 +96,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((source
   }
   const fn = function c() {
     if (isFavoriteGIF) {
-      tmp(10658).removeFavoriteGIF(uri);
-      const tmpResult = tmp(10658);
+      tmp(10694).removeFavoriteGIF(uri);
+      const tmpResult = tmp(10694);
       const obj = { key: "REMOVED_FROM_FAVORITES", content: null, IconComponent: null };
       const intl2 = util.intl;
       obj.content = intl2.string(util.t.in1rga);
@@ -105,9 +105,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((source
       ToastActionCreatorsDefault.open(obj);
     } else {
       ({ embedProviderName: obj2.providerName, thumbnail: obj2.thumbnail } = source);
-      const gIFThumbnailForFavorite = tmp(10660).getGIFThumbnailForFavorite({ providerName: null, thumbnail: null });
+      const gIFThumbnailForFavorite = tmp(10696).getGIFThumbnailForFavorite({ providerName: null, thumbnail: null });
       const obj6 = { providerName: null, thumbnail: null };
-      const tmpResult2 = tmp(10660);
+      const tmpResult2 = tmp(10696);
       const size = { url: uri, src: source.uri, gifSrc: gIFThumbnailForFavorite, width: null, height: null, format: null };
       ({ width: obj4.width, height: obj4.height } = source);
       const GIFType = frecency_user_settings.GIFType;
@@ -146,8 +146,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((source
   items[7] = uri;
   const callback = noop.useCallback(() => {
     if (isFavoriteGIF) {
-      tmp(10658).removeFavoriteGIF(uri);
-      const tmpResult = tmp(10658);
+      tmp(10694).removeFavoriteGIF(uri);
+      const tmpResult = tmp(10694);
       const obj = { key: "REMOVED_FROM_FAVORITES", content: null, IconComponent: null };
       const intl2 = util.intl;
       obj.content = intl2.string(util.t.in1rga);
@@ -155,9 +155,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((source
       ToastActionCreatorsDefault.open(obj);
     } else {
       ({ embedProviderName: obj2.providerName, thumbnail: obj2.thumbnail } = source);
-      const gIFThumbnailForFavorite = tmp(10660).getGIFThumbnailForFavorite({ providerName: null, thumbnail: null });
+      const gIFThumbnailForFavorite = tmp(10696).getGIFThumbnailForFavorite({ providerName: null, thumbnail: null });
       const obj6 = { providerName: null, thumbnail: null };
-      const tmpResult2 = tmp(10660);
+      const tmpResult2 = tmp(10696);
       const size = { url: uri, src: source.uri, gifSrc: gIFThumbnailForFavorite, width: null, height: null, format: null };
       ({ width: obj4.width, height: obj4.height } = source);
       const GIFType = frecency_user_settings.GIFType;

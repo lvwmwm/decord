@@ -1,11 +1,11 @@
-// Module ID: 11857
-// Function ID: 11858
+// Module ID: 11893
+// Function ID: 11894
 // Name: useEmojisForReactionRow
-// Dependencies: [19, 1379, 558, 568, 10440, 1482, 4417, 2]
+// Dependencies: [19, 1379, 558, 568, 10479, 1482, 4449, 2]
 
-// Module 11857 (useEmojisForReactionRow)
+// Module 11893 (useEmojisForReactionRow)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4417 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4449 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

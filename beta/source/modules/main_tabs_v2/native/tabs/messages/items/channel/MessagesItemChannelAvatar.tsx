@@ -1,22 +1,22 @@
-// Module ID: 16373
-// Function ID: 16374
+// Module ID: 16383
+// Function ID: 16384
 // Name: MessagesItemChannelAvatar
-// Dependencies: [19, 4750, 502, 4798, 12095, 1376, 12213, 21, 4758, 580, 558, 568, 1181, 504, 11216, 2]
+// Dependencies: [19, 4782, 502, 4830, 12131, 1376, 12249, 21, 4790, 580, 558, 568, 1181, 504, 11252, 2]
 
-// Module 16373 (MessagesItemChannelAvatar)
+// Module 16383 (MessagesItemChannelAvatar)
 import nativeDefault from "native" /* 580 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 11216 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 11252 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
-import TypingStore from "TypingStore" /* 12095 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
+import TypingStore from "TypingStore" /* 12131 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = fn;
-const MUTED_OPACITY_CONTENT = fn(12213).MUTED_OPACITY_CONTENT;
+const MUTED_OPACITY_CONTENT = fn(12249).MUTED_OPACITY_CONTENT;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles((arg0) => {
   const avatar = { borderRadius: nativeDefault.radii.round, marginRight: nativeDefault.modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_MARGIN_END, width: nativeDefault.modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_SIZE, height: nativeDefault.modules.mobile.MESSAGES_ITEM_CHANNEL_AVATAR_SIZE, opacity: null };
   let num = 1;
@@ -399,7 +399,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
             return isMobileOnlineResult;
           }
         }
-        const obj3 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: true, streaming: true, style: false, size: true, animate: true, typing: "unicodeVersion", autoStatusCutout: 17074753 };
+        const obj3 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: true, streaming: true, style: false, size: true, animate: true, typing: "unicodeVersion", autoStatusCutout: 17071937 };
         if (!stateFromStores2.isSystemUser()) {
           class H {
             constructor() {
@@ -544,7 +544,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
   } else {
     tmp11Result = null;
     if (null != stateFromStores2) {
-      const obj7 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: true, streaming: true, style: false, size: true, animate: true, typing: "unicodeVersion", autoStatusCutout: 17074753 };
+      const obj7 = { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: true, streaming: true, style: false, size: true, animate: true, typing: "unicodeVersion", autoStatusCutout: 17071937 };
       let tmp12 = null;
       if (!stateFromStores2.isSystemUser()) {
         tmp12 = status;
@@ -555,7 +555,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
       obj7.size = REFRESH_MEDIUM_32;
       obj7.animate = stateFromStores1;
       obj7.typing = stateFromStores;
-      tmp11Result = jsx(tmp3(1181).Avatar, { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: true, streaming: true, style: false, size: true, animate: true, typing: "unicodeVersion", autoStatusCutout: 17074753 });
+      tmp11Result = jsx(tmp3(1181).Avatar, { user: stateFromStores2, avatarDecoration: stateFromStores2.avatarDecoration, guildId: "e", isMobileOnline: stateFromStores3, isVROnline: stateFromStores4, status: true, streaming: true, style: false, size: true, animate: true, typing: "unicodeVersion", autoStatusCutout: 17071937 });
     }
   }
   return tmp11Result;

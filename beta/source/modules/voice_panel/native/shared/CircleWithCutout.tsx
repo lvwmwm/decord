@@ -1,12 +1,12 @@
-// Module ID: 17617
-// Function ID: 17618
+// Module ID: 17627
+// Function ID: 17628
 // Name: CircleWithCutout
-// Dependencies: [19, 17, 21, 558, 568, 9664, 8733, 2]
+// Dependencies: [19, 17, 21, 558, 568, 9696, 8765, 2]
 
-// Module 17617 (CircleWithCutout)
+// Module 17627 (CircleWithCutout)
 import c from "c" /* 568 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
-import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 9664 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
+import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 9696 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -68,7 +68,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       }
       if (cResult[8] !== result3) {
         const size = { width: result3, height: result3, fill: "white" };
-        const tmp17 = React3(tmp(8733).Rect, size);
+        const tmp17 = React3(tmp(8765).Rect, size);
         cResult[8] = result3;
         cResult[9] = tmp17;
         let tmp15 = tmp17;
@@ -116,7 +116,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
               }
             }
             const obj4 = { cx: result, cy: result, r: result, fill, mask: str };
-            const tmp27 = React3(tmp(8733).Circle, obj4);
+            const tmp27 = React3(tmp(8765).Circle, obj4);
             cResult[17] = result;
             cResult[18] = fill;
             cResult[19] = str;
@@ -127,8 +127,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
           const obj6 = { id: "mask", children: null };
           const items2 = [tmp15, tmp18];
           obj6.children = items2;
-          obj5.children = React4(tmp(8733).Mask, obj6);
-          const tmp24 = React3(tmp(8733).Defs, obj5);
+          obj5.children = React4(tmp(8765).Mask, obj6);
+          const tmp24 = React3(tmp(8765).Defs, obj5);
           cResult[14] = tmp15;
           cResult[15] = tmp18;
           cResult[16] = tmp24;
@@ -136,19 +136,19 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         }
       }
       const obj7 = { cx: diff, cy: tmp11, r: result1, fill: "black" };
-      const tmp20 = React3(tmp(8733).Circle, obj7);
+      const tmp20 = React3(tmp(8765).Circle, obj7);
       cResult[10] = diff;
       cResult[11] = tmp11;
       cResult[12] = result1;
       cResult[13] = tmp20;
       tmp18 = tmp20;
     }
-    const cutoutCenterY = tmp(9664).getCutoutCenterY(result, cutoutPositionInDegrees);
+    const cutoutCenterY = tmp(9696).getCutoutCenterY(result, cutoutPositionInDegrees);
     cResult[3] = result;
     cResult[4] = cutoutPositionInDegrees;
     cResult[5] = cutoutCenterY;
     tmp11 = cutoutCenterY;
-    const tmpResult = tmp(9664);
+    const tmpResult = tmp(9696);
   }
   const cutoutCenterX = CircleWithCutoutUtils.getCutoutCenterX(result, cutoutPositionInDegrees);
   cResult[0] = result;
@@ -208,5 +208,5 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   size.children = items2;
   return tmp10(inlineStylesDefault, size);
 }));
-export const getBadgeLeft = fn(9664).getBadgeLeft;
-export const getBadgeTop = fn(9664).getBadgeTop;
+export const getBadgeLeft = fn(9696).getBadgeLeft;
+export const getBadgeTop = fn(9696).getBadgeTop;

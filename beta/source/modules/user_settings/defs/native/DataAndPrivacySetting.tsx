@@ -1,18 +1,18 @@
-// Module ID: 16178
-// Function ID: 16179
+// Module ID: 16188
+// Function ID: 16189
 // Name: DataAndPrivacySetting
-// Dependencies: [19, 1078, 558, 568, 15122, 15125, 11594, 1119, 10006, 16179, 2]
+// Dependencies: [19, 1078, 558, 568, 15132, 15135, 11630, 1119, 10045, 16189, 2]
 
-// Module 16178 (DataAndPrivacySetting)
+// Module 16188 (DataAndPrivacySetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 15122 */;
-import RequestYourDataSetting from "RequestYourDataSetting" /* 15125 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 15132 */;
+import RequestYourDataSetting from "RequestYourDataSetting" /* 15135 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -38,7 +38,7 @@ const route = SettingBuilders.createRoute({
     return intl.string(util.t.OAuOHD);
   },
   parent: null,
-  IconComponent: fn(10006).ShieldLockIcon,
+  IconComponent: fn(10045).ShieldLockIcon,
   screen: {
     route: fn(1078).UserSettingsSections.DATA_AND_PRIVACY,
     getComponent() {

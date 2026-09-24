@@ -1,113 +1,93 @@
 // Module ID: 5480
 // Function ID: 5481
-// Dependencies: [5449, 5439, 5432]
+// Dependencies: [5481]
 
 // Module 5480
-import _mod5432 from "module_5432" /* 5432 */;
-import PNG_CHUNK_TYPE_SIZE from "PNG_CHUNK_TYPE_SIZE" /* 5439 */;
-import _modDef5449 from "module_5449" /* 5449 */;
+import _modDef5481 from "module_5481" /* 5481 */;
 
-require = arg1;
 importDefault = arg2;
 const dependencyMap = arg6;
 
 export default {
-  read(byteLength, arg1) {
-    const obj = {};
-    for (let num = 0; num < arg1.length; num = num + 1) {
-      let tmp = importDefault;
-      let obj2 = _modDef5449;
-      let tmp3 = require;
-      let longAt = obj2.getLongAt(byteLength, arg1[num] + PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_LENGTH_OFFSET);
-      let obj3 = _mod5432;
-      let sum = arg1[num] + PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_TYPE_OFFSET;
-      let stringFromDataView = obj3.getStringFromDataView(byteLength, sum, PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_TYPE_SIZE);
-      if (stringFromDataView === PNG_CHUNK_TYPE_SIZE.TYPE_PHYS) {
-        let tmp22 = arg1[num];
-        let tmp23 = 4 <= longAt && tmp22 + tmp3(5439).PNG_CHUNK_DATA_OFFSET + 4 <= byteLength.byteLength;
-        let tmp24;
-        if (tmp23) {
-          let tmpResult = tmp(5449);
-          let longAt1 = tmpResult.getLongAt(byteLength, tmp22 + tmp3(5439).PNG_CHUNK_DATA_OFFSET);
-          let obj4 = { value: longAt1, description: "" + longAt1 };
-          tmp24 = obj4;
-        }
-        obj["Pixels Per Unit X"] = tmp24;
-        let tmp26 = arg1[num];
-        let tmp27 = 8 <= longAt && tmp26 + tmp3(5439).PNG_CHUNK_DATA_OFFSET + 4 + 4 <= byteLength.byteLength;
-        let tmp28;
-        if (tmp27) {
-          let tmpResult9 = tmp(5449);
-          let longAt2 = tmpResult9.getLongAt(byteLength, tmp26 + tmp3(5439).PNG_CHUNK_DATA_OFFSET + 4);
-          let obj5 = { value: longAt2, description: "" + longAt2 };
-          tmp28 = obj5;
-        }
-        obj["Pixels Per Unit Y"] = tmp28;
-        let tmp30 = arg1[num];
-        let tmp31 = 9 <= longAt && tmp30 + tmp3(5439).PNG_CHUNK_DATA_OFFSET + 8 + 1 <= byteLength.byteLength;
-        let tmp32;
-        if (tmp31) {
-          let tmpResult10 = tmp(5449);
-          let byteAt = tmpResult10.getByteAt(byteLength, tmp30 + tmp3(5439).PNG_CHUNK_DATA_OFFSET + 8);
-          let obj6 = { value: byteAt, description: null };
-          let str7 = "Unknown";
-          if (1 === byteAt) {
-            str7 = "meters";
-          }
-          obj6.description = str7;
-          tmp32 = obj6;
-        }
-        obj["Pixel Units"] = tmp32;
-      } else if (stringFromDataView === tmp3(5439).TYPE_TIME) {
-        let tmp34 = arg1[num];
-        let tmp8 = 7 <= longAt && tmp34 + tmp3(5439).PNG_CHUNK_DATA_OFFSET + 7 <= byteLength.byteLength;
-        let tmp9;
-        if (tmp8) {
-          let tmpResult11 = tmp(5449);
-          let shortAt = tmpResult11.getShortAt(byteLength, tmp34 + tmp3(5439).PNG_CHUNK_DATA_OFFSET);
-          let tmpResult12 = tmp(5449);
-          let byteAt1 = tmpResult12.getByteAt(byteLength, tmp34 + tmp3(5439).PNG_CHUNK_DATA_OFFSET + 2);
-          let tmpResult13 = tmp(5449);
-          let byteAt2 = tmpResult13.getByteAt(byteLength, tmp34 + tmp3(5439).PNG_CHUNK_DATA_OFFSET + 3);
-          let tmpResult14 = tmp(5449);
-          let byteAt3 = tmpResult14.getByteAt(byteLength, tmp34 + tmp3(5439).PNG_CHUNK_DATA_OFFSET + 4);
-          let tmpResult15 = tmp(5449);
-          let byteAt4 = tmpResult15.getByteAt(byteLength, tmp34 + tmp3(5439).PNG_CHUNK_DATA_OFFSET + 5);
-          let tmpResult16 = tmp(5449);
-          let byteAt5 = tmpResult16.getByteAt(byteLength, tmp34 + tmp3(5439).PNG_CHUNK_DATA_OFFSET + 6);
-          let obj7 = { value: null, description: null };
-          let items = [shortAt, byteAt1, byteAt2, byteAt3, byteAt4, byteAt5];
-          obj7.value = items;
-          let repeat = "0".repeat;
-          let _HermesInternal = HermesInternal;
-          let combined = "" + "0".repeat(4 - "" + shortAt.length) + shortAt;
-          let repeat2 = "0".repeat;
-          let _HermesInternal2 = HermesInternal;
-          let repeat3 = "0".repeat;
-          let combined1 = "" + "0".repeat(2 - "" + byteAt1.length) + byteAt1;
-          let _HermesInternal3 = HermesInternal;
-          let repeat4 = "0".repeat;
-          let combined2 = "" + "0".repeat(2 - "" + byteAt2.length) + byteAt2;
-          let _HermesInternal4 = HermesInternal;
-          let repeat5 = "0".repeat;
-          let combined3 = "" + "0".repeat(2 - "" + byteAt3.length) + byteAt3;
-          let _HermesInternal5 = HermesInternal;
-          let repeat6 = "0".repeat;
-          let combined4 = "" + "0".repeat(2 - "" + byteAt4.length) + byteAt4;
-          let _HermesInternal6 = HermesInternal;
-          let _HermesInternal7 = HermesInternal;
-          let str = "";
-          let str2 = "-";
-          let str3 = "-";
-          let str4 = " ";
-          let str5 = ":";
-          let str6 = ":";
-          obj7.description = "" + combined + "-" + combined1 + "-" + combined2 + " " + combined3 + ":" + combined4 + ":" + "" + "0".repeat(2 - "" + byteAt5.length) + byteAt5;
-          tmp9 = obj7;
-        }
-        obj["Modify Date"] = tmp9;
-      }
+  read(dataView, sum) {
+    const shortAt = _modDef5481.getShortAt(dataView, sum);
+    let tmp4;
+    if (8 <= shortAt) {
+      const byteAt = tmp(5481).getByteAt(dataView, sum + 7);
+      const obj2 = { value: byteAt, description: "" + byteAt };
+      tmp4 = obj2;
+      const tmpResult = tmp(5481);
     }
-    return obj;
+    let tmp6;
+    if (3 <= shortAt) {
+      const byteAt1 = tmp(5481).getByteAt(dataView, sum + 2);
+      const obj3 = { value: byteAt1, description: "" + byteAt1 };
+      tmp6 = obj3;
+      const tmpResult4 = tmp(5481);
+    }
+    const obj4 = { "Bits Per Sample": tmp6, "Image Height": null, "Image Width": null, "Color Components": null, Subsampling: null };
+    let tmp8;
+    if (5 <= shortAt) {
+      const shortAt1 = tmp(5481).getShortAt(dataView, sum + 3);
+      const obj5 = { value: shortAt1, description: null };
+      const _HermesInternal = HermesInternal;
+      obj5.description = "" + shortAt1 + "px";
+      tmp8 = obj5;
+      const tmpResult5 = tmp(5481);
+    }
+    obj4["Image Height"] = tmp8;
+    let tmp11;
+    if (7 <= shortAt) {
+      const shortAt2 = tmp(5481).getShortAt(dataView, sum + 5);
+      const obj6 = { value: shortAt2, description: null };
+      const _HermesInternal2 = HermesInternal;
+      obj6.description = "" + shortAt2 + "px";
+      tmp11 = obj6;
+      const tmpResult6 = tmp(5481);
+    }
+    obj4["Image Width"] = tmp11;
+    obj4["Color Components"] = tmp4;
+    let tmp14 = tmp4;
+    if (tmp4) {
+      value = tmp4.value;
+      let tmp15;
+      if (8 + 3 * value <= shortAt) {
+        const items = [];
+        for (let num6 = 0; num6 < value; num6 = num6 + 1) {
+          sum = sum + 8 + 3 * num6;
+          let obj11 = _modDef5481;
+          let items1 = [obj11.getByteAt(dataView, sum), , ];
+          let obj12 = _modDef5481;
+          items1[1] = obj12.getByteAt(dataView, sum + 1);
+          let obj13 = _modDef5481;
+          items1[2] = obj13.getByteAt(dataView, sum + 2);
+          let arr = items.push(items1);
+        }
+        const obj7 = { value: items, description: null };
+        let str6 = "";
+        if (items.length > 1) {
+          closure_0 = { 1: "Y", 2: "Cb", 3: "Cr", 4: "I", 5: "Q" };
+          const mapped = items.map((item) => closure_0[item[0]]);
+          let str7 = "";
+          const joined = mapped.join("");
+          if (0 !== items.length) {
+            str7 = "";
+            if (undefined !== items[0][1]) {
+              const obj8 = { 17: "4:4:4 (1 1)", 18: "4:4:0 (1 2)", 20: "4:4:1 (1 4)", 33: "4:2:2 (2 1)", 34: "4:2:0 (2 2)", 36: "4:2:1 (2 4)", 65: "4:1:1 (4 1)", 66: "4:1:0 (4 2)" };
+              str7 = "";
+              if (undefined !== obj8[items[0][1]]) {
+                str7 = obj8[items[0][1]];
+              }
+            }
+          }
+          str6 = joined + str7;
+        }
+        obj7.description = str6;
+        tmp15 = obj7;
+      }
+      tmp14 = tmp15;
+    }
+    obj4.Subsampling = tmp14;
+    return obj4;
   }
 };

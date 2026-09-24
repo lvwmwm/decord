@@ -1,12 +1,12 @@
-// Module ID: 16093
-// Function ID: 16094
+// Module ID: 16103
+// Function ID: 16104
 // Name: DesignSystemStackSetting
-// Dependencies: [8238, 1078, 11594, 16094, 2]
+// Dependencies: [8270, 1078, 11630, 16104, 2]
 
-// Module 16093 (DesignSystemStackSetting)
+// Module 16103 (DesignSystemStackSetting)
 import Constants from "Constants" /* 1078 */;
-import SettingsConstants from "SettingsConstants" /* 8238 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
+import SettingsConstants from "SettingsConstants" /* 8270 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

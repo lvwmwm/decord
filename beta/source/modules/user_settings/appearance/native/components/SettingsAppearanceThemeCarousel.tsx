@@ -1,19 +1,19 @@
-// Module ID: 15532
-// Function ID: 15533
+// Module ID: 15542
+// Function ID: 15543
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [19, 17, 15533, 1078, 21, 4497, 1181, 4758, 580, 558, 568, 5173, 12, 4726, 1234, 1119, 15534, 4759, 4762, 9472, 4754, 1613, 11056, 15537, 2]
+// Dependencies: [19, 17, 15543, 1078, 21, 4529, 1181, 4790, 580, 558, 568, 5205, 12, 4758, 1234, 1119, 15544, 4791, 4794, 9504, 4786, 1613, 11092, 15547, 2]
 
-// Module 15532 (SettingsAppearanceThemeCarousel)
+// Module 15542 (SettingsAppearanceThemeCarousel)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1234 */;
-import HapticUtils from "HapticUtils" /* 4726 */;
-import timing from "timing" /* 4759 */;
-import timingPresets from "timingPresets" /* 4762 */;
+import HapticUtils from "HapticUtils" /* 4758 */;
+import timing from "timing" /* 4791 */;
+import timingPresets from "timingPresets" /* 4794 */;
 import noop from "module_19" /* 19 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15533 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15543 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -22,7 +22,7 @@ const ThemeTypes = fn(1078).ThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
 let closure_11 = ReanimatedRexport.createAnimatedComponent(fn(1181).Icon);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { gap: nativeDefault.space.PX_24, alignItems: "center" }, textCentered: { textAlign: "center" }, labelGroup: null, titleContainer: null, floatingNuxContainer: null, floatingNux: null, arrowLeft: null, uppercase: null, selectionBorder: null, a11yThemeList: null, a11yThemeListScroll: null };
 let obj3 = { gap: nativeDefault.space.PX_24, alignItems: "center" };
 obj.labelGroup = { gap: nativeDefault.space.PX_4, alignItems: "center" };

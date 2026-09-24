@@ -1,19 +1,19 @@
-// Module ID: 17261
-// Function ID: 17262
+// Module ID: 17271
+// Function ID: 17272
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 1376, 2042, 1378, 21, 4758, 1369, 580, 558, 13822, 7696, 4579, 2031, 568, 504, 8460, 8501, 8512, 4610, 676, 4418, 17262, 11608, 17263, 17264, 11895, 5666, 17265, 15261, 1119, 17266, 17268, 8938, 7624, 5198, 2]
+// Dependencies: [19, 17, 1376, 2042, 1378, 21, 4790, 1369, 580, 558, 13858, 7728, 4611, 2031, 568, 504, 8492, 8533, 8544, 4642, 676, 4450, 17272, 11644, 17273, 17274, 11931, 5698, 17275, 15271, 1119, 17276, 17278, 8970, 7656, 5230, 2]
 
-// Module 17261 (YouBannerDecorations)
+// Module 17271 (YouBannerDecorations)
 import nativeDefault from "native" /* 580 */;
 import _modDef676 from "module_676" /* 676 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1369 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4579 */;
-import QuestTypes from "QuestTypes" /* 5666 */;
-import useTrialOffer from "useTrialOffer" /* 7696 */;
-import QuestUtils from "QuestUtils" /* 11895 */;
-import PromotionsHooks from "PromotionsHooks" /* 13822 */;
-import you_tracking_Tracking from "you/tracking/Tracking" /* 17264 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4611 */;
+import QuestTypes from "QuestTypes" /* 5698 */;
+import useTrialOffer from "useTrialOffer" /* 7728 */;
+import QuestUtils from "QuestUtils" /* 11931 */;
+import PromotionsHooks from "PromotionsHooks" /* 13858 */;
+import you_tracking_Tracking from "you/tracking/Tracking" /* 17274 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -24,7 +24,7 @@ const ContentDismissActionType = fn(2042).ContentDismissActionType;
 let closure_9 = fn(1378).PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID;
 const jsxProd = fn(21);
 ({ jsx: c10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_13 = createStyles.createStyles((arg0, arg1, color, borderColor) => {
   const obj = { containerFloatingWrap: null, containerFloatingGradient: null, containerFloating: null, buttonsFloating: null, loading: null };
   const obj2 = {};
@@ -117,18 +117,18 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  const tmp9Result = navigateToPremium(8460)(id);
+  const tmp9Result = navigateToPremium(8492)(id);
   if (cResult[2] === tmp9Result) {
     if (cResult[3] === stateFromStores) {
       let tmp12 = cResult[4];
     }
-    ({ theme, primaryColor, secondaryColor } = tmp8(8501)(tmp12));
+    ({ theme, primaryColor, secondaryColor } = tmp8(8533)(tmp12));
     if (cResult[5] === primaryColor) {
       if (cResult[6] === secondaryColor) {
         if (cResult[7] === theme) {
           let tmp14 = cResult[8];
         }
-        const userProfileColors = tmp(8512).useUserProfileColors(tmp14);
+        const userProfileColors = tmp(8544).useUserProfileColors(tmp14);
         ({ containerBackground, containerBorderColor, gradientSecondaryBackground } = userProfileColors);
         if (cResult[9] === containerBackground) {
           if (cResult[10] === primaryColor) {
@@ -141,26 +141,26 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
                   let tmp18 = cResult[16];
                 }
                 const tmp28 = closure_13(num, tmp18, gradientSecondaryBackground, containerBorderColor);
-                const hasPremiumSubscriptionToDisplay = tmp(4418).useHasPremiumSubscriptionToDisplay();
+                const hasPremiumSubscriptionToDisplay = tmp(4450).useHasPremiumSubscriptionToDisplay();
                 const tmp31 = closure_14();
                 dependencyMap = tmp31;
-                const tmp32 = tmp8(17262)();
+                const tmp32 = tmp8(17272)();
                 const showBadge = tmp32.showBadge;
                 const dismissBadge = tmp32.dismissBadge;
                 const _Symbol = Symbol;
                 if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-                  const isEligibleForQuests = tmp(11608).getIsEligibleForQuests();
+                  const isEligibleForQuests = tmp(11644).getIsEligibleForQuests();
                   cResult[17] = isEligibleForQuests;
                   let tmp33 = isEligibleForQuests;
-                  const tmpResult9 = tmp(11608);
+                  const tmpResult9 = tmp(11644);
                 } else {
                   tmp33 = cResult[17];
                 }
-                const tmpResult8 = tmp(4418);
-                const mobileReferralSubscriberProfileEntrypointButtonConfig = tmp(17263).useMobileReferralSubscriberProfileEntrypointButtonConfig("YouBannerDecorations");
+                const tmpResult8 = tmp(4450);
+                const mobileReferralSubscriberProfileEntrypointButtonConfig = tmp(17273).useMobileReferralSubscriberProfileEntrypointButtonConfig("YouBannerDecorations");
                 ({ enabled, showReferralNotificationDot } = mobileReferralSubscriberProfileEntrypointButtonConfig);
-                const tmpResult10 = tmp(17263);
-                const tmp37 = null != tmp(7696).useTrialOffer(closure_9);
+                const tmpResult10 = tmp(17273);
+                const tmp37 = null != tmp(7728).useTrialOffer(closure_9);
                 closure_5 = tmp37;
                 if (cResult[18] === tmp37) {
                   if (cResult[19] === tmp31) {
@@ -299,12 +299,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
                                                     const obj4 = { style: tmp28.containerFloatingGradient };
                                                     const merged = Object.assign(tmp82);
                                                     obj4.pointerEvents = "none";
-                                                    const tmp89 = closure_10(tmp8(5198), obj4);
+                                                    const tmp89 = closure_10(tmp8(5230), obj4);
                                                     cResult[66] = tmp82;
                                                     cResult[67] = tmp28.containerFloatingGradient;
                                                     cResult[68] = tmp89;
                                                     tmp83 = tmp89;
-                                                    const tmp8Result = tmp8(5198);
+                                                    const tmp8Result = tmp8(5230);
                                                   }
                                                   const obj5 = { start: tmp76, end: tmp77, colors: null };
                                                   const items2 = [tmp78, tmp80];
@@ -352,14 +352,14 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
                                       tmp61 = found;
                                     }
                                   }
-                                  const obj11 = { ref: settingsButtonRef, IconComponent: tmp(7624).SettingsIcon, accessibilityLabel: tmp55, onPress: tmp38, showRedDot: tmp31 };
-                                  const tmp60 = closure_10(tmp8(17265), obj11, "settings");
+                                  const obj11 = { ref: settingsButtonRef, IconComponent: tmp(7656).SettingsIcon, accessibilityLabel: tmp55, onPress: tmp38, showRedDot: tmp31 };
+                                  const tmp60 = closure_10(tmp8(17275), obj11, "settings");
                                   cResult[39] = tmp31;
                                   cResult[40] = tmp38;
                                   cResult[41] = settingsButtonRef;
                                   cResult[42] = tmp60;
                                   tmp57 = tmp60;
-                                  const tmp8Result5 = tmp8(17265);
+                                  const tmp8Result5 = tmp8(17275);
                                 }
                               }
                             }
@@ -368,18 +368,18 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
                             let tmp52 = null;
                             if (enabled) {
                               const obj12 = { onPress: tmp39, showReferralNotificationDot };
-                              tmp52 = closure_10(tmp8(17268), obj12, "nitro-subscriber");
+                              tmp52 = closure_10(tmp8(17278), obj12, "nitro-subscriber");
                             }
                             let tmp51 = tmp52;
                           } else {
-                            const obj13 = { IconComponent: tmp(8938).NitroWheelIcon, accessibilityLabel: null, label: null, onPress: null };
+                            const obj13 = { IconComponent: tmp(8970).NitroWheelIcon, accessibilityLabel: null, label: null, onPress: null };
                             const intl2 = tmp(1119).intl;
                             obj13.accessibilityLabel = intl2.string(tmp(1119).t.Ipxkog);
                             const intl3 = tmp(1119).intl;
                             obj13.label = intl3.string(tmp(1119).t.Ipxkog);
                             obj13.onPress = tmp39;
-                            tmp51 = closure_10(tmp8(17265), obj13, "nitro");
-                            const tmp8Result6 = tmp8(17265);
+                            tmp51 = closure_10(tmp8(17275), obj13, "nitro");
+                            const tmp8Result6 = tmp8(17275);
                           }
                           cResult[33] = hasPremiumSubscriptionToDisplay;
                           cResult[34] = enabled;
@@ -388,7 +388,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
                           cResult[37] = tmp51;
                         }
                         const obj14 = { shopButtonRef, navigateToShop };
-                        const tmp47 = closure_10(tmp8(17266), obj14, "shop");
+                        const tmp47 = closure_10(tmp8(17276), obj14, "shop");
                         cResult[30] = navigateToShop;
                         cResult[31] = shopButtonRef;
                         cResult[32] = tmp47;
@@ -396,13 +396,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
                       }
                       let tmp42 = null;
                       if (tmp33) {
-                        const obj15 = { IconComponent: tmp(15261).QuestsIcon, accessibilityLabel: null, onPress: null, showRedDot: null };
+                        const obj15 = { IconComponent: tmp(15271).QuestsIcon, accessibilityLabel: null, onPress: null, showRedDot: null };
                         const intl = tmp(1119).intl;
                         obj15.accessibilityLabel = intl.string(tmp(1119).t.JALI2K);
                         obj15.onPress = tmp40;
                         obj15.showRedDot = showBadge;
-                        tmp42 = closure_10(tmp8(17265), obj15, "quests");
-                        const tmp8Result7 = tmp8(17265);
+                        tmp42 = closure_10(tmp8(17275), obj15, "quests");
+                        const tmp8Result7 = tmp8(17275);
                       }
                       cResult[27] = tmp40;
                       cResult[28] = showBadge;
@@ -447,7 +447,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
                 cResult[20] = navigateToSettings;
                 cResult[21] = J;
                 tmp38 = J;
-                const tmpResult11 = tmp(7696);
+                const tmpResult11 = tmp(7728);
               }
               let hexResult3 = null;
               if (null != tmp16) {
@@ -465,7 +465,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
             }
           }
         }
-        const tmpResult7 = tmp(8512);
+        const tmpResult7 = tmp(8544);
         if (!tmpResult12.isThemeLight(theme)) {
           let tmp17 = containerBackground;
         } else {
@@ -480,7 +480,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
         cResult[12] = theme;
         cResult[13] = tmp17;
         tmp16 = tmp17;
-        tmpResult12 = tmp(4610);
+        tmpResult12 = tmp(4642);
       }
     }
     const obj16 = { theme, primaryColor, secondaryColor };
@@ -489,7 +489,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
     cResult[7] = theme;
     cResult[8] = obj16;
     tmp14 = obj16;
-    const tmp13 = tmp8(8501)(tmp12);
+    const tmp13 = tmp8(8533)(tmp12);
   }
   const obj17 = { user: stateFromStores, displayProfile: tmp9Result };
   cResult[2] = tmp9Result;
@@ -569,12 +569,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
     navigateToSettings();
     let tmp5 = closure_7;
     if (closure_7) {
-      tmp5 = !tmp(4579).UNSAFE_isDismissibleContentDismissed(tmp(2031).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
-      const tmpResult = tmp(4579);
+      tmp5 = !tmp(4611).UNSAFE_isDismissibleContentDismissed(tmp(2031).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      const tmpResult = tmp(4611);
     }
     if (tmp5) {
-      const result1 = tmp(4579).UNSAFE_markDismissibleContentAsDismissed(tmp(2031).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
-      const tmpResult2 = tmp(4579);
+      const result1 = tmp(4611).UNSAFE_markDismissibleContentAsDismissed(tmp(2031).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      const tmpResult2 = tmp(4611);
     }
   }, items2);
   const callback1 = containerBackground.useCallback(() => {

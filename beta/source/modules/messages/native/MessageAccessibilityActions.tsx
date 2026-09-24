@@ -1,13 +1,13 @@
-// Module ID: 8230
-// Function ID: 8231
+// Module ID: 8262
+// Function ID: 8263
 // Name: MessageAccessibilityActions
-// Dependencies: [2023, 8231, 1119, 8234, 8239, 2]
+// Dependencies: [2023, 8263, 1119, 8266, 8271, 2]
 // Exports: createMessageAccessibilityActions, getMessageAccessibilityActionFromLabel
 
-// Module 8230 (MessageAccessibilityActions)
+// Module 8262 (MessageAccessibilityActions)
 import util from "util" /* 1119 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 8234 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 8266 */;
 import size from "module_2" /* 2 */;
 
 const MessageAccessibilityAction = { VIEW_PROFILE: "view_profile", ADD_REACTION: "add_reaction", ADD_QUICK_REACTION: "add_quick_reaction", REPLY: "reply", MESSAGE_ACTIONS_MENU: "message_actions_menu", EDIT_GDM: "edit_gdm", OPEN_PINS: "open_pins", JUMP_TO_MESSAGE: "jump_to_message" };
@@ -39,13 +39,13 @@ export const getMessageAccessibilityActionFromLabel = function getMessageAccessi
   let formatToPlainStringResult = null;
   if (true !== disableDoubleTap) {
     if (null != setting) {
-      const result = tmp(8231).disambiguatedEmojiFromSettingsValue(setting);
+      const result = tmp(8263).disambiguatedEmojiFromSettingsValue(setting);
       if (null != result) {
         const intl9 = tmp(1119).intl;
         const obj2 = { emojiName: result.name };
         formatToPlainStringResult = intl9.formatToPlainString(tmp(1119).t.eQIttH, obj2);
       }
-      const tmpResult = tmp(8231);
+      const tmpResult = tmp(8263);
     }
     const intl8 = tmp(1119).intl;
     formatToPlainStringResult = intl8.formatToPlainString(tmp(1119).t.eQIttH, { emojiName: "heart" });
@@ -79,13 +79,13 @@ export const createMessageAccessibilityActions = function createMessageAccessibi
       let formatToPlainStringResult = null;
       if (true !== disableDoubleTap) {
         if (null != setting) {
-          const result = tmp10(8231).disambiguatedEmojiFromSettingsValue(setting);
+          const result = tmp10(8263).disambiguatedEmojiFromSettingsValue(setting);
           if (null != result) {
             const intl3 = tmp10(1119).intl;
             const obj3 = { emojiName: result.name };
             formatToPlainStringResult = intl3.formatToPlainString(tmp10(1119).t.eQIttH, obj3);
           }
-          const tmp10Result = tmp10(8231);
+          const tmp10Result = tmp10(8263);
         }
         const intl2 = tmp10(1119).intl;
         formatToPlainStringResult = intl2.formatToPlainString(tmp10(1119).t.eQIttH, { emojiName: "heart" });

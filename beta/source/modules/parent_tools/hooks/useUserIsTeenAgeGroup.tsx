@@ -1,12 +1,12 @@
-// Module ID: 15178
-// Function ID: 15179
+// Module ID: 15188
+// Function ID: 15189
 // Name: useUserIsTeenAgeGroup
-// Dependencies: [7784, 558, 568, 504, 2]
+// Dependencies: [7816, 558, 568, 504, 2]
 
-// Module 15178 (useUserIsTeenAgeGroup)
+// Module 15188 (useUserIsTeenAgeGroup)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7784 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7816 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);

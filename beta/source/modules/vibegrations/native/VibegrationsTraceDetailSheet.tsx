@@ -1,24 +1,24 @@
-// Module ID: 17081
-// Function ID: 17082
+// Module ID: 17091
+// Function ID: 17092
 // Name: VibegrationsTraceDetailSheet
-// Dependencies: [19, 17, 9307, 21, 4758, 580, 558, 568, 4754, 1119, 3682, 17077, 17076, 1616, 504, 17078, 17082, 17083, 17080, 7449, 7396, 6863, 2]
+// Dependencies: [19, 17, 9339, 21, 4790, 580, 558, 568, 4786, 1119, 3714, 17087, 17086, 1616, 504, 17088, 17092, 17093, 17090, 7481, 7428, 6895, 2]
 
-// Module 17081 (VibegrationsTraceDetailSheet)
+// Module 17091 (VibegrationsTraceDetailSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import vibegrations_VibegrationsTraceFormat from "vibegrations/VibegrationsTraceFormat" /* 17077 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import vibegrations_VibegrationsTraceFormat from "vibegrations/VibegrationsTraceFormat" /* 17087 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9307 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9339 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { content: { gap: nativeDefault.space.PX_16 }, head: null, headTitle: null, section: null, row: null, rich: null };
 let obj3 = { gap: nativeDefault.space.PX_16 };
 obj2.head = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
@@ -37,7 +37,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp5 = closure_8();
   if (cResult[0] !== label) {
     const obj2 = { variant: "text-xs/medium", color: "text-muted", children: label };
-    const tmp8 = hasOwnProperty(tmp(4754).Text, obj2);
+    const tmp8 = hasOwnProperty(tmp(4786).Text, obj2);
     cResult[0] = label;
     cResult[1] = tmp8;
     let tmp6 = tmp8;
@@ -154,11 +154,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((field) => {
           omitted = "content";
         }
         if (cResult[6] !== omitted) {
-          const omissionLabelResult = tmp(17077).omissionLabel(omitted);
+          const omissionLabelResult = tmp(17087).omissionLabel(omitted);
           cResult[6] = omitted;
           cResult[7] = omissionLabelResult;
           let tmp9 = omissionLabelResult;
-          const tmpResult = tmp(17077);
+          const tmpResult = tmp(17087);
         } else {
           tmp9 = cResult[7];
         }
@@ -191,13 +191,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((field) => {
     if (null != iter.chars) {
       const intl2 = tmp(1119).intl;
       const obj4 = { count: iter.chars };
-      let formatToPlainStringResult = intl2.formatToPlainString(_modDef3682.DdXP0P, obj4);
+      let formatToPlainStringResult = intl2.formatToPlainString(_modDef3714.DdXP0P, obj4);
     } else {
       formatToPlainStringResult = null;
       if (null != iter.items) {
         const intl = tmp(1119).intl;
         const obj6 = { count: iter.items };
-        formatToPlainStringResult = intl.formatToPlainString(_modDef3682.OB8Qvn, obj6);
+        formatToPlainStringResult = intl.formatToPlainString(_modDef3714.OB8Qvn, obj6);
       }
     }
     cResult[3] = iter.chars;
@@ -212,13 +212,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((field) => {
     if (null != iter.chars) {
       const intl2 = util.intl;
       const obj3 = { count: iter.chars };
-      let formatToPlainStringResult = intl2.formatToPlainString(_modDef3682.DdXP0P, obj3);
+      let formatToPlainStringResult = intl2.formatToPlainString(_modDef3714.DdXP0P, obj3);
     } else {
       formatToPlainStringResult = null;
       if (null != iter.items) {
         const intl = util.intl;
         const obj = { count: iter.items };
-        formatToPlainStringResult = intl.formatToPlainString(_modDef3682.OB8Qvn, obj);
+        formatToPlainStringResult = intl.formatToPlainString(_modDef3714.OB8Qvn, obj);
       }
     }
     const obj5 = { label: iter.key, value: null, muted: true };
@@ -245,8 +245,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "text-xs/semibold", color: "text-feedback-warning", children: null };
       let intl = tmp(1119).intl;
-      obj2.children = intl.string(_modDef3682.fy9PRy);
-      const tmp8 = closure_5(tmp(4754).Text, obj2);
+      obj2.children = intl.string(_modDef3714.fy9PRy);
+      const tmp8 = closure_5(tmp(4786).Text, obj2);
       cResult[0] = tmp8;
       let first = tmp8;
     } else {
@@ -286,7 +286,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (true === children.scrubbed) {
           const obj5 = { variant: "text-xs/normal", color: "text-feedback-warning", children: null };
           const intl2 = util.intl;
-          obj5.children = intl2.string(_modDef3682.PkIUHD);
+          obj5.children = intl2.string(_modDef3714.PkIUHD);
           tmp4Result3 = tmp4(Text_Text.Text, obj5);
         }
         items[2] = tmp4Result3;
@@ -297,11 +297,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         } else {
           if (null == children.chars) {
             intl = util.intl;
-            let stringResult = intl.string(_modDef3682["1kBG9Z"]);
+            let stringResult = intl.string(_modDef3714["1kBG9Z"]);
           } else {
             const intl3 = util.intl;
             const obj6 = { count: children.chars };
-            stringResult = intl3.formatToPlainString(_modDef3682.VGSwo4, obj6);
+            stringResult = intl3.formatToPlainString(_modDef3714.VGSwo4, obj6);
           }
           obj7 = { variant: "text-xs/normal", color: "text-subtle", children: stringResult };
           tmp4(Text_Text.Text, obj7);
@@ -326,7 +326,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let obj = { children: null };
     const obj2 = { variant: "text-xs/semibold", color: "text-feedback-warning", children: null };
     let intl = require("util").intl;
-    obj2.children = intl.string(_modDef3682.fy9PRy);
+    obj2.children = intl.string(_modDef3714.fy9PRy);
     let items = [
       closure_5(require("Text/Text").Text, obj2),
       entries.map((children) => {
@@ -346,7 +346,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (true === children.scrubbed) {
             const obj5 = { variant: "text-xs/normal", color: "text-feedback-warning", children: null };
             const intl2 = util.intl;
-            obj5.children = intl2.string(_modDef3682.PkIUHD);
+            obj5.children = intl2.string(_modDef3714.PkIUHD);
             tmp4Result3 = tmp4(Text_Text.Text, obj5);
           }
           items[2] = tmp4Result3;
@@ -357,11 +357,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           } else {
             if (null == children.chars) {
               intl = util.intl;
-              let stringResult = intl.string(_modDef3682["1kBG9Z"]);
+              let stringResult = intl.string(_modDef3714["1kBG9Z"]);
             } else {
               const intl3 = util.intl;
               const obj6 = { count: children.chars };
-              stringResult = intl3.formatToPlainString(_modDef3682.VGSwo4, obj6);
+              stringResult = intl3.formatToPlainString(_modDef3714.VGSwo4, obj6);
             }
             obj7 = { variant: "text-xs/normal", color: "text-subtle", children: stringResult };
             tmp4(Text_Text.Text, obj7);
@@ -385,7 +385,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   ({ entryId, initialEntry } = projectId);
   const tmp4 = closure_8();
   let obj = projectId(568);
-  const traceCategoryTextStyles = projectId(17076).useTraceCategoryTextStyles();
+  const traceCategoryTextStyles = projectId(17086).useTraceCategoryTextStyles();
   const bottom = useSafeAreaInsetsDefault().bottom;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [VibegrationsProjectStore];
@@ -408,10 +408,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     tmp9 = cResult[2];
     tmp10 = cResult[3];
   }
-  const obj2 = projectId(17076);
+  const obj2 = projectId(17086);
   const stateFromStoresArray = tmp(504).useStateFromStoresArray(first, tmp9, tmp10);
   const tmpResult = tmp(504);
-  let findTraceEntryResult = tmp(17078).findTraceEntry(stateFromStoresArray, entryId);
+  let findTraceEntryResult = tmp(17088).findTraceEntry(stateFromStoresArray, entryId);
   if (findTraceEntryResult == null) {
     findTraceEntryResult = initialEntry;
   }
@@ -421,31 +421,31 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     if (parentId == null) {
       parentId = null;
     }
-    findTraceEntryResult1 = tmp(17078).findTraceEntry(stateFromStoresArray, parentId);
-    const tmpResult16 = tmp(17078);
+    findTraceEntryResult1 = tmp(17088).findTraceEntry(stateFromStoresArray, parentId);
+    const tmpResult16 = tmp(17088);
   }
-  const tmpResult15 = tmp(17078);
-  const length = tmp(17078).traceChildren(stateFromStoresArray, findTraceEntryResult.id).length;
-  const tmpResult17 = tmp(17078);
-  const traceDetailSectionsResult = tmp(17082).traceDetailSections(findTraceEntryResult, { childCount: length, hasParent: null != findTraceEntryResult1 });
+  const tmpResult15 = tmp(17088);
+  const length = tmp(17088).traceChildren(stateFromStoresArray, findTraceEntryResult.id).length;
+  const tmpResult17 = tmp(17088);
+  const traceDetailSectionsResult = tmp(17092).traceDetailSections(findTraceEntryResult, { childCount: length, hasParent: null != findTraceEntryResult1 });
   const obj3 = { childCount: length, hasParent: null != findTraceEntryResult1 };
-  const tmpResult18 = tmp(17082);
+  const tmpResult18 = tmp(17092);
   let detailId;
   if ("tool" === findTraceEntryResult.kind) {
     detailId = findTraceEntryResult.detailId;
   }
-  const vibegrationsTraceDetail = tmp(17083).useVibegrationsTraceDetail(projectId, detailId);
+  const vibegrationsTraceDetail = tmp(17093).useVibegrationsTraceDetail(projectId, detailId);
   const tmp17 = "model" === findTraceEntryResult.kind ? findTraceEntryResult.model : findTraceEntryResult.tool;
-  const tmpResult19 = tmp(17083);
-  const formatClockTimeResult = tmp(17080).formatClockTime(findTraceEntryResult.startedAt, "millis");
-  const tmpResult20 = tmp(17080);
-  const traceCategoryResult = tmp(17078).traceCategory(findTraceEntryResult);
+  const tmpResult19 = tmp(17093);
+  const formatClockTimeResult = tmp(17090).formatClockTime(findTraceEntryResult.startedAt, "millis");
+  const tmpResult20 = tmp(17090);
+  const traceCategoryResult = tmp(17088).traceCategory(findTraceEntryResult);
   if (cResult[4] !== vibegrationsTraceDetail) {
-    const traceRichStatusLabelResult = tmp(17077).traceRichStatusLabel(vibegrationsTraceDetail);
+    const traceRichStatusLabelResult = tmp(17087).traceRichStatusLabel(vibegrationsTraceDetail);
     cResult[4] = vibegrationsTraceDetail;
     cResult[5] = traceRichStatusLabelResult;
     let tmp20 = traceRichStatusLabelResult;
-    const tmpResult22 = tmp(17077);
+    const tmpResult22 = tmp(17087);
   } else {
     tmp20 = cResult[5];
   }
@@ -457,32 +457,32 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   } else {
     tmp22 = cResult[7];
   }
-  const obj5 = { scrollable: true, header: closure_5(tmp(7396).BottomSheetTitleHeader, { title: tmp17 }), children: null };
+  const obj5 = { scrollable: true, header: closure_5(tmp(7428).BottomSheetTitleHeader, { title: tmp17 }), children: null };
   const obj6 = { contentContainerStyle: tmp22, children: null };
   const obj7 = { style: tmp4.content, children: null };
   const obj8 = { style: tmp4.head, children: null };
-  const items2 = [closure_5(tmp(17076).TraceStatusDot, { status: findTraceEntryResult.status }), , ];
+  const items2 = [closure_5(tmp(17086).TraceStatusDot, { status: findTraceEntryResult.status }), , ];
   const obj10 = { variant: "text-xs/semibold", style: traceCategoryTextStyles[traceCategoryResult], children: null };
   const obj9 = { status: findTraceEntryResult.status };
-  const tmpResult21 = tmp(17078);
-  obj10.children = tmp(17077).categoryLabel(traceCategoryResult);
-  items2[1] = closure_5(tmp(4754).Text, obj10);
+  const tmpResult21 = tmp(17088);
+  obj10.children = tmp(17087).categoryLabel(traceCategoryResult);
+  items2[1] = closure_5(tmp(4786).Text, obj10);
   const obj11 = { variant: "text-xs/normal", color: "text-muted", style: tmp4.headTitle, children: null };
   if (null == findTraceEntryResult.durationMs) {
     let intl = tmp(1119).intl;
-    let stringResult = intl.string(tmp6(3682).HpKDyl);
+    let stringResult = intl.string(tmp6(3714).HpKDyl);
   } else {
-    stringResult = tmp(17077).formatDuration(findTraceEntryResult.durationMs);
-    const tmpResult24 = tmp(17077);
+    stringResult = tmp(17087).formatDuration(findTraceEntryResult.durationMs);
+    const tmpResult24 = tmp(17087);
   }
   obj11.children = stringResult;
-  items2[2] = closure_5(tmp(4754).Text, obj11);
+  items2[2] = closure_5(tmp(4786).Text, obj11);
   obj8.children = items2;
   const items3 = [closure_6(View, obj8), , , , , , ];
   let tmp23Result = null;
   if (null != findTraceEntryResult.error) {
     const obj12 = { variant: "text-xs/normal", color: "text-feedback-critical", selectable: true, children: findTraceEntryResult.error };
-    tmp23Result = tmp23(tmp(4754).Text, obj12);
+    tmp23Result = tmp23(tmp(4786).Text, obj12);
   }
   items3[1] = tmp23Result;
   let tmp24Result = null;
@@ -491,7 +491,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     if ("tool" === findTraceEntryResult.kind) {
       const obj13 = { title: null, children: null };
       const intl25 = tmp(1119).intl;
-      obj13.title = intl25.string(tmp6(3682).jXY3mm);
+      obj13.title = intl25.string(tmp6(3714).jXY3mm);
       let fields = findTraceEntryResult.fields;
       if (fields == null) {
         fields = [];
@@ -513,7 +513,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       let tmp23Result19 = null;
       if (null != tmp20) {
         const obj15 = { variant: "text-xs/normal", color: "text-subtle", children: tmp20 };
-        tmp23Result19 = tmp23(tmp(4754).Text, obj15);
+        tmp23Result19 = tmp23(tmp(4786).Text, obj15);
       }
       items4[2] = tmp23Result19;
       obj13.children = items4;
@@ -527,23 +527,23 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     if ("tool" === findTraceEntryResult.kind) {
       const obj16 = { title: null, children: null };
       const intl26 = tmp(1119).intl;
-      obj16.title = intl26.string(tmp6(3682).KXrf5F);
+      obj16.title = intl26.string(tmp6(3714).KXrf5F);
       const obj17 = { label: null, value: null };
       const intl27 = tmp(1119).intl;
-      obj17.label = intl27.string(tmp6(3682)["2Aii2k"]);
+      obj17.label = intl27.string(tmp6(3714)["2Aii2k"]);
       const intl28 = tmp(1119).intl;
       let num9 = findTraceEntryResult.resultChars;
       if (num9 == null) {
         num9 = 0;
       }
       const obj18 = { count: num9 };
-      obj17.value = intl28.formatToPlainString(tmp6(3682).DdXP0P, obj18);
+      obj17.value = intl28.formatToPlainString(tmp6(3714).DdXP0P, obj18);
       const items5 = [tmp23(closure_9, obj17), , , ];
       let tmp23Result20 = null;
       if (null != findTraceEntryResult.resultAdded) {
         const obj19 = { label: null, value: null };
         const intl2 = tmp(1119).intl;
-        obj19.label = intl2.string(tmp6(3682).hpGFzS);
+        obj19.label = intl2.string(tmp6(3714).hpGFzS);
         ({ resultRemoved, resultAdded } = findTraceEntryResult);
         if (resultRemoved == null) {
           resultRemoved = 0;
@@ -557,9 +557,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       if (true === findTraceEntryResult.resultTruncated) {
         const obj20 = { label: null, value: null, muted: true };
         const intl3 = tmp(1119).intl;
-        obj20.label = intl3.string(tmp6(3682)["UV2R1/"]);
+        obj20.label = intl3.string(tmp6(3714)["UV2R1/"]);
         const intl4 = tmp(1119).intl;
-        obj20.value = intl4.string(tmp6(3682)["1kBG9Z"]);
+        obj20.value = intl4.string(tmp6(3714)["1kBG9Z"]);
         tmp23Result21 = tmp23(tmp69, obj20);
       }
       items5[2] = tmp23Result21;
@@ -587,59 +587,59 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     if ("model" === findTraceEntryResult.kind) {
       const obj22 = { title: null, children: null };
       const intl29 = tmp(1119).intl;
-      obj22.title = intl29.string(tmp6(3682)["W+4BVk"]);
+      obj22.title = intl29.string(tmp6(3714)["W+4BVk"]);
       let tmp23Result23 = null;
       if (null != findTraceEntryResult.promptTokens) {
         const obj23 = { label: null, value: null };
         const intl5 = tmp(1119).intl;
-        obj23.label = intl5.string(tmp6(3682).Ran4BY);
+        obj23.label = intl5.string(tmp6(3714).Ran4BY);
         const intl6 = tmp(1119).intl;
-        const obj24 = { tokens: tmp(17077).formatTokens(findTraceEntryResult.promptTokens) };
-        obj23.value = intl6.formatToPlainString(tmp6(3682)["PYO+Jv"], obj24);
+        const obj24 = { tokens: tmp(17087).formatTokens(findTraceEntryResult.promptTokens) };
+        obj23.value = intl6.formatToPlainString(tmp6(3714)["PYO+Jv"], obj24);
         tmp23Result23 = tmp23(closure_9, obj23);
-        const tmpResult25 = tmp(17077);
+        const tmpResult25 = tmp(17087);
       }
       const items6 = [tmp23Result23, , , , , , ];
       let tmp23Result24 = null;
       if (null != findTraceEntryResult.systemTokens) {
         const obj25 = { label: null, value: null };
         const intl7 = tmp(1119).intl;
-        obj25.label = intl7.string(tmp6(3682).vPIcyv);
+        obj25.label = intl7.string(tmp6(3714).vPIcyv);
         const intl8 = tmp(1119).intl;
-        const obj26 = { system: tmp(17077).formatTokens(findTraceEntryResult.systemTokens), tools: null, toolCount: null, messages: null, messageCount: null };
+        const obj26 = { system: tmp(17087).formatTokens(findTraceEntryResult.systemTokens), tools: null, toolCount: null, messages: null, messageCount: null };
         const tmp43 = closure_9;
-        const tmpResult26 = tmp(17077);
+        const tmpResult26 = tmp(17087);
         let num10 = findTraceEntryResult.toolsTokens;
         if (num10 == null) {
           num10 = 0;
         }
-        obj26.tools = tmp(17077).formatTokens(num10);
+        obj26.tools = tmp(17087).formatTokens(num10);
         let num11 = findTraceEntryResult.tools;
         if (num11 == null) {
           num11 = 0;
         }
         obj26.toolCount = num11;
-        const tmpResult27 = tmp(17077);
+        const tmpResult27 = tmp(17087);
         let num12 = findTraceEntryResult.messagesTokens;
         if (num12 == null) {
           num12 = 0;
         }
-        obj26.messages = tmp(17077).formatTokens(num12);
+        obj26.messages = tmp(17087).formatTokens(num12);
         let num13 = findTraceEntryResult.messages;
         if (num13 == null) {
           num13 = 0;
         }
         obj26.messageCount = num13;
-        obj25.value = intl8.formatToPlainString(tmp6(3682).Qy2iTq, obj26);
+        obj25.value = intl8.formatToPlainString(tmp6(3714).Qy2iTq, obj26);
         tmp23Result24 = tmp23(tmp43, obj25);
-        const tmpResult28 = tmp(17077);
+        const tmpResult28 = tmp(17087);
       }
       items6[1] = tmp23Result24;
       let tmp23Result25 = null;
       if (null != findTraceEntryResult.inputTokens) {
         const obj27 = { label: null, value: null };
         const intl9 = tmp(1119).intl;
-        obj27.label = intl9.string(tmp6(3682)["/703Yk"]);
+        obj27.label = intl9.string(tmp6(3714)["/703Yk"]);
         const _String = String;
         obj27.value = String(findTraceEntryResult.inputTokens);
         tmp23Result25 = tmp23(closure_9, obj27);
@@ -649,7 +649,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       if (null != findTraceEntryResult.outputTokens) {
         const obj28 = { label: null, value: null };
         const intl10 = tmp(1119).intl;
-        obj28.label = intl10.string(tmp6(3682)["6+W0dJ"]);
+        obj28.label = intl10.string(tmp6(3714)["6+W0dJ"]);
         const _String2 = String;
         obj28.value = String(findTraceEntryResult.outputTokens);
         tmp23Result26 = tmp23(closure_9, obj28);
@@ -659,7 +659,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       if (null != findTraceEntryResult.cacheReadTokens) {
         const obj29 = { label: null, value: null };
         const intl11 = tmp(1119).intl;
-        obj29.label = intl11.string(tmp6(3682).VyAl6j);
+        obj29.label = intl11.string(tmp6(3714).VyAl6j);
         const intl12 = tmp(1119).intl;
         const obj30 = { read: null, write: null };
         ({ cacheReadTokens: obj42.read, cacheWriteTokens } = findTraceEntryResult);
@@ -667,7 +667,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           cacheWriteTokens = 0;
         }
         obj30.write = cacheWriteTokens;
-        obj29.value = intl12.formatToPlainString(tmp6(3682).lkMc23, obj30);
+        obj29.value = intl12.formatToPlainString(tmp6(3714).lkMc23, obj30);
         tmp23Result27 = tmp23(closure_9, obj29);
       }
       items6[4] = tmp23Result27;
@@ -675,7 +675,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       if (null != findTraceEntryResult.costUsd) {
         const obj31 = { label: null, value: null };
         const intl13 = tmp(1119).intl;
-        obj31.label = intl13.string(tmp6(3682).l9YFEQ);
+        obj31.label = intl13.string(tmp6(3714).l9YFEQ);
         const costUsd = findTraceEntryResult.costUsd;
         const _HermesInternal2 = HermesInternal;
         obj31.value = "$" + costUsd.toFixed(4);
@@ -684,8 +684,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       items6[5] = tmp23Result28;
       const obj32 = { variant: "text-xs/normal", color: "text-subtle", children: null };
       const intl14 = tmp(1119).intl;
-      obj32.children = intl14.string(tmp6(3682).F9jaUF);
-      items6[6] = tmp23(tmp(4754).Text, obj32);
+      obj32.children = intl14.string(tmp6(3714).F9jaUF);
+      items6[6] = tmp23(tmp(4786).Text, obj32);
       obj22.children = items6;
       tmp24Result6 = tmp24(closure_10, obj22);
     }
@@ -694,8 +694,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   if (traceDetailSectionsResult.includes("arguments")) {
     const obj33 = { variant: "text-xs/normal", color: "text-subtle", children: null };
     const intl15 = tmp(1119).intl;
-    obj33.children = intl15.string(tmp6(3682)["ppv+97"]);
-    let tmp23Result29 = tmp23(tmp(4754).Text, obj33);
+    obj33.children = intl15.string(tmp6(3714)["ppv+97"]);
+    let tmp23Result29 = tmp23(tmp(4786).Text, obj33);
   } else {
     tmp23Result29 = null;
   }
@@ -704,17 +704,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   if (traceDetailSectionsResult.includes("diagnostics")) {
     const obj34 = { title: null, children: null };
     const intl16 = tmp(1119).intl;
-    obj34.title = intl16.string(tmp6(3682).T7SFyZ);
+    obj34.title = intl16.string(tmp6(3714).T7SFyZ);
     if (null == findTraceEntryResult1) {
       const items7 = [null, , , , , , ];
       let tmp23Result30 = null;
       if (length > 0) {
         const obj35 = { label: null, value: null };
         const intl18 = tmp(1119).intl;
-        obj35.label = intl18.string(tmp6(3682).fI6mzD);
+        obj35.label = intl18.string(tmp6(3714).fI6mzD);
         const intl19 = tmp(1119).intl;
         const obj36 = { count: length };
-        obj35.value = intl19.formatToPlainString(tmp6(3682).hO8FYp, obj36);
+        obj35.value = intl19.formatToPlainString(tmp6(3714).hO8FYp, obj36);
         tmp23Result30 = tmp23(closure_9, obj35);
       }
       items7[1] = tmp23Result30;
@@ -722,21 +722,21 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       if (null != findTraceEntryResult.turnId) {
         const obj37 = { label: null, value: null };
         const intl20 = tmp(1119).intl;
-        obj37.label = intl20.string(tmp6(3682).I7cJP0);
+        obj37.label = intl20.string(tmp6(3714).I7cJP0);
         obj37.value = findTraceEntryResult.turnId;
         tmp23Result31 = tmp23(closure_9, obj37);
       }
       items7[2] = tmp23Result31;
       const obj38 = { label: null, value: null };
       const intl21 = tmp(1119).intl;
-      obj38.label = intl21.string(tmp6(3682)["XVTP/S"]);
+      obj38.label = intl21.string(tmp6(3714)["XVTP/S"]);
       obj38.value = findTraceEntryResult.id;
       items7[3] = tmp23(closure_9, obj38);
       let tmp23Result32 = null;
       if (null != formatClockTimeResult) {
         const obj39 = { label: null, value: null };
         const intl22 = tmp(1119).intl;
-        obj39.label = intl22.string(tmp6(3682).rD7bm0);
+        obj39.label = intl22.string(tmp6(3714).rD7bm0);
         obj39.value = formatClockTimeResult;
         tmp23Result32 = tmp23(tmp62, obj39);
       }
@@ -747,7 +747,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         if (null != findTraceEntryResult.stopReason) {
           const obj40 = { label: null, value: null };
           const intl23 = tmp(1119).intl;
-          obj40.label = intl23.string(tmp6(3682).rxmzYT);
+          obj40.label = intl23.string(tmp6(3714).rxmzYT);
           obj40.value = findTraceEntryResult.stopReason;
           tmp23Result33 = tmp23(tmp62, obj40);
         }
@@ -762,13 +762,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
             const obj41 = { children: null };
             const obj43 = { variant: "text-xs/semibold", color: "text-muted", children: null };
             const intl24 = tmp(1119).intl;
-            obj43.children = intl24.string(tmp6(3682)["6oILKx"]);
-            const items8 = [tmp23(tmp(4754).Text, obj43), ];
+            obj43.children = intl24.string(tmp6(3714)["6oILKx"]);
+            const items8 = [tmp23(tmp(4786).Text, obj43), ];
             const schema = findTraceEntryResult.schema;
             items8[1] = schema.map((label) => {
               const obj = { label: label.name, value: null };
               const intl = projectId(1119).intl;
-              const tmp3 = _modDef3682;
+              const tmp3 = _modDef3714;
               obj.value = intl.formatToPlainString(label.required ? tmp3["6QoPmP"] : tmp3["/L6GFe"], { type: label.type });
               return closure_1_5(closure_1_9, obj, label.name);
             });
@@ -783,7 +783,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     } else {
       const obj44 = { label: null, value: null };
       const intl17 = tmp(1119).intl;
-      obj44.label = intl17.string(tmp6(3682).NnBqcd);
+      obj44.label = intl17.string(tmp6(3714).NnBqcd);
       obj44.value = "model" === findTraceEntryResult1.kind ? findTraceEntryResult1.model : findTraceEntryResult1.tool;
       tmp23(closure_9, obj44);
     }
@@ -792,20 +792,20 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   items3[6] = tmp24Result8;
   obj7.children = items3;
   obj6.children = closure_6(View, obj7);
-  obj5.children = closure_5(tmp(6863).BottomSheetScrollView, obj6);
-  return closure_5(tmp(7449).ActionSheet, obj5);
+  obj5.children = closure_5(tmp(6895).BottomSheetScrollView, obj6);
+  return closure_5(tmp(7481).ActionSheet, obj5);
 }) : ((projectId) => {
   projectId = projectId.projectId;
   ({ entryId, initialEntry } = projectId);
   const tmp = closure_8();
   const tmp2 = projectId;
-  const traceCategoryTextStyles = projectId(17076).useTraceCategoryTextStyles();
-  let obj = projectId(17076);
+  const traceCategoryTextStyles = projectId(17086).useTraceCategoryTextStyles();
+  let obj = projectId(17086);
   const items = [VibegrationsProjectStore];
   const items1 = [projectId];
   const stateFromStoresArray = projectId(504).useStateFromStoresArray(items, () => VibegrationsProjectStore.getTrace(projectId), items1);
   const obj2 = projectId(504);
-  let findTraceEntryResult = projectId(17078).findTraceEntry(stateFromStoresArray, entryId);
+  let findTraceEntryResult = projectId(17088).findTraceEntry(stateFromStoresArray, entryId);
   if (findTraceEntryResult == null) {
     findTraceEntryResult = initialEntry;
   }
@@ -815,53 +815,53 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     if (parentId == null) {
       parentId = null;
     }
-    findTraceEntryResult1 = tmp2(17078).findTraceEntry(stateFromStoresArray, parentId);
-    const tmp2Result = tmp2(17078);
+    findTraceEntryResult1 = tmp2(17088).findTraceEntry(stateFromStoresArray, parentId);
+    const tmp2Result = tmp2(17088);
   }
-  const obj3 = projectId(17078);
-  const length = tmp2(17078).traceChildren(stateFromStoresArray, findTraceEntryResult.id).length;
-  const tmp2Result13 = tmp2(17078);
-  const traceDetailSectionsResult = tmp2(17082).traceDetailSections(findTraceEntryResult, { childCount: length, hasParent: null != findTraceEntryResult1 });
+  const obj3 = projectId(17088);
+  const length = tmp2(17088).traceChildren(stateFromStoresArray, findTraceEntryResult.id).length;
+  const tmp2Result13 = tmp2(17088);
+  const traceDetailSectionsResult = tmp2(17092).traceDetailSections(findTraceEntryResult, { childCount: length, hasParent: null != findTraceEntryResult1 });
   const obj4 = { childCount: length, hasParent: null != findTraceEntryResult1 };
-  const tmp2Result14 = tmp2(17082);
+  const tmp2Result14 = tmp2(17092);
   let detailId;
   if ("tool" === findTraceEntryResult.kind) {
     detailId = findTraceEntryResult.detailId;
   }
-  const vibegrationsTraceDetail = tmp2(17083).useVibegrationsTraceDetail(projectId, detailId);
+  const vibegrationsTraceDetail = tmp2(17093).useVibegrationsTraceDetail(projectId, detailId);
   const tmp12 = "model" === findTraceEntryResult.kind ? findTraceEntryResult.model : findTraceEntryResult.tool;
-  const tmp2Result15 = tmp2(17083);
-  const formatClockTimeResult = tmp2(17080).formatClockTime(findTraceEntryResult.startedAt, "millis");
-  const tmp2Result16 = tmp2(17080);
-  const traceCategoryResult = tmp2(17078).traceCategory(findTraceEntryResult);
-  const tmp2Result17 = tmp2(17078);
-  const traceRichStatusLabelResult = tmp2(17077).traceRichStatusLabel(vibegrationsTraceDetail);
-  const obj5 = { scrollable: true, header: closure_5(tmp2(7396).BottomSheetTitleHeader, { title: tmp12 }), children: null };
+  const tmp2Result15 = tmp2(17093);
+  const formatClockTimeResult = tmp2(17090).formatClockTime(findTraceEntryResult.startedAt, "millis");
+  const tmp2Result16 = tmp2(17090);
+  const traceCategoryResult = tmp2(17088).traceCategory(findTraceEntryResult);
+  const tmp2Result17 = tmp2(17088);
+  const traceRichStatusLabelResult = tmp2(17087).traceRichStatusLabel(vibegrationsTraceDetail);
+  const obj5 = { scrollable: true, header: closure_5(tmp2(7428).BottomSheetTitleHeader, { title: tmp12 }), children: null };
   const obj6 = { contentContainerStyle: { paddingBottom: useSafeAreaInsetsDefault().bottom }, children: null };
   const obj7 = { style: tmp.content, children: null };
   const obj8 = { style: tmp.head, children: null };
-  const items2 = [closure_5(tmp2(17076).TraceStatusDot, { status: findTraceEntryResult.status }), , ];
+  const items2 = [closure_5(tmp2(17086).TraceStatusDot, { status: findTraceEntryResult.status }), , ];
   const obj10 = { variant: "text-xs/semibold", style: traceCategoryTextStyles[traceCategoryResult], children: null };
   const obj9 = { status: findTraceEntryResult.status };
-  const tmp2Result18 = tmp2(17077);
-  obj10.children = tmp2(17077).categoryLabel(traceCategoryResult);
-  items2[1] = closure_5(tmp2(4754).Text, obj10);
+  const tmp2Result18 = tmp2(17087);
+  obj10.children = tmp2(17087).categoryLabel(traceCategoryResult);
+  items2[1] = closure_5(tmp2(4786).Text, obj10);
   const obj11 = { variant: "text-xs/normal", color: "text-muted", style: tmp.headTitle, children: null };
   if (null == findTraceEntryResult.durationMs) {
     let intl = tmp2(1119).intl;
-    let stringResult = intl.string(tmp5(3682).HpKDyl);
+    let stringResult = intl.string(tmp5(3714).HpKDyl);
   } else {
-    stringResult = tmp2(17077).formatDuration(findTraceEntryResult.durationMs);
-    const tmp2Result20 = tmp2(17077);
+    stringResult = tmp2(17087).formatDuration(findTraceEntryResult.durationMs);
+    const tmp2Result20 = tmp2(17087);
   }
   obj11.children = stringResult;
-  items2[2] = closure_5(tmp2(4754).Text, obj11);
+  items2[2] = closure_5(tmp2(4786).Text, obj11);
   obj8.children = items2;
   const items3 = [closure_6(View, obj8), , , , , , ];
   let tmp16Result = null;
   if (null != findTraceEntryResult.error) {
     const obj12 = { variant: "text-xs/normal", color: "text-feedback-critical", selectable: true, children: findTraceEntryResult.error };
-    tmp16Result = tmp16(tmp2(4754).Text, obj12);
+    tmp16Result = tmp16(tmp2(4786).Text, obj12);
   }
   items3[1] = tmp16Result;
   let tmp17Result = null;
@@ -870,7 +870,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     if ("tool" === findTraceEntryResult.kind) {
       const obj13 = { title: null, children: null };
       const intl25 = tmp2(1119).intl;
-      obj13.title = intl25.string(tmp5(3682).jXY3mm);
+      obj13.title = intl25.string(tmp5(3714).jXY3mm);
       let fields = findTraceEntryResult.fields;
       if (fields == null) {
         fields = [];
@@ -892,7 +892,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       let tmp16Result19 = null;
       if (null != traceRichStatusLabelResult) {
         const obj15 = { variant: "text-xs/normal", color: "text-subtle", children: traceRichStatusLabelResult };
-        tmp16Result19 = tmp16(tmp2(4754).Text, obj15);
+        tmp16Result19 = tmp16(tmp2(4786).Text, obj15);
       }
       items4[2] = tmp16Result19;
       obj13.children = items4;
@@ -906,23 +906,23 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     if ("tool" === findTraceEntryResult.kind) {
       const obj16 = { title: null, children: null };
       const intl26 = tmp2(1119).intl;
-      obj16.title = intl26.string(tmp5(3682).KXrf5F);
+      obj16.title = intl26.string(tmp5(3714).KXrf5F);
       const obj17 = { label: null, value: null };
       const intl27 = tmp2(1119).intl;
-      obj17.label = intl27.string(tmp5(3682)["2Aii2k"]);
+      obj17.label = intl27.string(tmp5(3714)["2Aii2k"]);
       const intl28 = tmp2(1119).intl;
       let num = findTraceEntryResult.resultChars;
       if (num == null) {
         num = 0;
       }
       const obj18 = { count: num };
-      obj17.value = intl28.formatToPlainString(tmp5(3682).DdXP0P, obj18);
+      obj17.value = intl28.formatToPlainString(tmp5(3714).DdXP0P, obj18);
       const items5 = [tmp16(closure_9, obj17), , , ];
       let tmp16Result20 = null;
       if (null != findTraceEntryResult.resultAdded) {
         const obj19 = { label: null, value: null };
         const intl2 = tmp2(1119).intl;
-        obj19.label = intl2.string(tmp5(3682).hpGFzS);
+        obj19.label = intl2.string(tmp5(3714).hpGFzS);
         ({ resultRemoved, resultAdded } = findTraceEntryResult);
         if (resultRemoved == null) {
           resultRemoved = 0;
@@ -936,9 +936,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       if (true === findTraceEntryResult.resultTruncated) {
         const obj20 = { label: null, value: null, muted: true };
         const intl3 = tmp2(1119).intl;
-        obj20.label = intl3.string(tmp5(3682)["UV2R1/"]);
+        obj20.label = intl3.string(tmp5(3714)["UV2R1/"]);
         const intl4 = tmp2(1119).intl;
-        obj20.value = intl4.string(tmp5(3682)["1kBG9Z"]);
+        obj20.value = intl4.string(tmp5(3714)["1kBG9Z"]);
         tmp16Result21 = tmp16(tmp66, obj20);
       }
       items5[2] = tmp16Result21;
@@ -966,59 +966,59 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     if ("model" === findTraceEntryResult.kind) {
       const obj22 = { title: null, children: null };
       const intl29 = tmp2(1119).intl;
-      obj22.title = intl29.string(tmp5(3682)["W+4BVk"]);
+      obj22.title = intl29.string(tmp5(3714)["W+4BVk"]);
       let tmp16Result23 = null;
       if (null != findTraceEntryResult.promptTokens) {
         const obj23 = { label: null, value: null };
         const intl5 = tmp2(1119).intl;
-        obj23.label = intl5.string(tmp5(3682).Ran4BY);
+        obj23.label = intl5.string(tmp5(3714).Ran4BY);
         const intl6 = tmp2(1119).intl;
-        const obj24 = { tokens: tmp2(17077).formatTokens(findTraceEntryResult.promptTokens) };
-        obj23.value = intl6.formatToPlainString(tmp5(3682)["PYO+Jv"], obj24);
+        const obj24 = { tokens: tmp2(17087).formatTokens(findTraceEntryResult.promptTokens) };
+        obj23.value = intl6.formatToPlainString(tmp5(3714)["PYO+Jv"], obj24);
         tmp16Result23 = tmp16(closure_9, obj23);
-        const tmp2Result21 = tmp2(17077);
+        const tmp2Result21 = tmp2(17087);
       }
       const items6 = [tmp16Result23, , , , , , ];
       let tmp16Result24 = null;
       if (null != findTraceEntryResult.systemTokens) {
         const obj25 = { label: null, value: null };
         const intl7 = tmp2(1119).intl;
-        obj25.label = intl7.string(tmp5(3682).vPIcyv);
+        obj25.label = intl7.string(tmp5(3714).vPIcyv);
         const intl8 = tmp2(1119).intl;
-        const obj26 = { system: tmp2(17077).formatTokens(findTraceEntryResult.systemTokens), tools: null, toolCount: null, messages: null, messageCount: null };
-        const tmp2Result22 = tmp2(17077);
+        const obj26 = { system: tmp2(17087).formatTokens(findTraceEntryResult.systemTokens), tools: null, toolCount: null, messages: null, messageCount: null };
+        const tmp2Result22 = tmp2(17087);
         const tmp37 = closure_9;
         let num2 = findTraceEntryResult.toolsTokens;
         if (num2 == null) {
           num2 = 0;
         }
-        obj26.tools = tmp2(17077).formatTokens(num2);
+        obj26.tools = tmp2(17087).formatTokens(num2);
         let num3 = findTraceEntryResult.tools;
         if (num3 == null) {
           num3 = 0;
         }
         obj26.toolCount = num3;
-        const tmp2Result23 = tmp2(17077);
+        const tmp2Result23 = tmp2(17087);
         let num4 = findTraceEntryResult.messagesTokens;
         if (num4 == null) {
           num4 = 0;
         }
-        obj26.messages = tmp2(17077).formatTokens(num4);
+        obj26.messages = tmp2(17087).formatTokens(num4);
         let num5 = findTraceEntryResult.messages;
         if (num5 == null) {
           num5 = 0;
         }
         obj26.messageCount = num5;
-        obj25.value = intl8.formatToPlainString(tmp5(3682).Qy2iTq, obj26);
+        obj25.value = intl8.formatToPlainString(tmp5(3714).Qy2iTq, obj26);
         tmp16Result24 = tmp16(tmp37, obj25);
-        const tmp2Result24 = tmp2(17077);
+        const tmp2Result24 = tmp2(17087);
       }
       items6[1] = tmp16Result24;
       let tmp16Result25 = null;
       if (null != findTraceEntryResult.inputTokens) {
         const obj27 = { label: null, value: null };
         const intl9 = tmp2(1119).intl;
-        obj27.label = intl9.string(tmp5(3682)["/703Yk"]);
+        obj27.label = intl9.string(tmp5(3714)["/703Yk"]);
         const _String = String;
         obj27.value = String(findTraceEntryResult.inputTokens);
         tmp16Result25 = tmp16(closure_9, obj27);
@@ -1028,7 +1028,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       if (null != findTraceEntryResult.outputTokens) {
         const obj28 = { label: null, value: null };
         const intl10 = tmp2(1119).intl;
-        obj28.label = intl10.string(tmp5(3682)["6+W0dJ"]);
+        obj28.label = intl10.string(tmp5(3714)["6+W0dJ"]);
         const _String2 = String;
         obj28.value = String(findTraceEntryResult.outputTokens);
         tmp16Result26 = tmp16(closure_9, obj28);
@@ -1038,7 +1038,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       if (null != findTraceEntryResult.cacheReadTokens) {
         const obj29 = { label: null, value: null };
         const intl11 = tmp2(1119).intl;
-        obj29.label = intl11.string(tmp5(3682).VyAl6j);
+        obj29.label = intl11.string(tmp5(3714).VyAl6j);
         const intl12 = tmp2(1119).intl;
         const obj30 = { read: null, write: null };
         ({ cacheReadTokens: obj40.read, cacheWriteTokens } = findTraceEntryResult);
@@ -1046,7 +1046,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           cacheWriteTokens = 0;
         }
         obj30.write = cacheWriteTokens;
-        obj29.value = intl12.formatToPlainString(tmp5(3682).lkMc23, obj30);
+        obj29.value = intl12.formatToPlainString(tmp5(3714).lkMc23, obj30);
         tmp16Result27 = tmp16(closure_9, obj29);
       }
       items6[4] = tmp16Result27;
@@ -1054,7 +1054,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       if (null != findTraceEntryResult.costUsd) {
         const obj31 = { label: null, value: null };
         const intl13 = tmp2(1119).intl;
-        obj31.label = intl13.string(tmp5(3682).l9YFEQ);
+        obj31.label = intl13.string(tmp5(3714).l9YFEQ);
         const costUsd = findTraceEntryResult.costUsd;
         const _HermesInternal2 = HermesInternal;
         obj31.value = "$" + costUsd.toFixed(4);
@@ -1063,8 +1063,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       items6[5] = tmp16Result28;
       const obj32 = { variant: "text-xs/normal", color: "text-subtle", children: null };
       const intl14 = tmp2(1119).intl;
-      obj32.children = intl14.string(tmp5(3682).F9jaUF);
-      items6[6] = tmp16(tmp2(4754).Text, obj32);
+      obj32.children = intl14.string(tmp5(3714).F9jaUF);
+      items6[6] = tmp16(tmp2(4786).Text, obj32);
       obj22.children = items6;
       tmp17Result6 = tmp17(closure_10, obj22);
     }
@@ -1073,8 +1073,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   if (traceDetailSectionsResult.includes("arguments")) {
     const obj33 = { variant: "text-xs/normal", color: "text-subtle", children: null };
     const intl15 = tmp2(1119).intl;
-    obj33.children = intl15.string(tmp5(3682)["ppv+97"]);
-    let tmp16Result29 = tmp16(tmp2(4754).Text, obj33);
+    obj33.children = intl15.string(tmp5(3714)["ppv+97"]);
+    let tmp16Result29 = tmp16(tmp2(4786).Text, obj33);
   } else {
     tmp16Result29 = null;
   }
@@ -1083,17 +1083,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   if (traceDetailSectionsResult.includes("diagnostics")) {
     const obj34 = { title: null, children: null };
     const intl16 = tmp2(1119).intl;
-    obj34.title = intl16.string(tmp5(3682).T7SFyZ);
+    obj34.title = intl16.string(tmp5(3714).T7SFyZ);
     if (null == findTraceEntryResult1) {
       const items7 = [null, , , , , , ];
       let tmp16Result30 = null;
       if (length > 0) {
         const obj35 = { label: null, value: null };
         const intl18 = tmp2(1119).intl;
-        obj35.label = intl18.string(tmp5(3682).fI6mzD);
+        obj35.label = intl18.string(tmp5(3714).fI6mzD);
         const intl19 = tmp2(1119).intl;
         const obj36 = { count: length };
-        obj35.value = intl19.formatToPlainString(tmp5(3682).hO8FYp, obj36);
+        obj35.value = intl19.formatToPlainString(tmp5(3714).hO8FYp, obj36);
         tmp16Result30 = tmp16(closure_9, obj35);
       }
       items7[1] = tmp16Result30;
@@ -1101,21 +1101,21 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       if (null != findTraceEntryResult.turnId) {
         const obj37 = { label: null, value: null };
         const intl20 = tmp2(1119).intl;
-        obj37.label = intl20.string(tmp5(3682).I7cJP0);
+        obj37.label = intl20.string(tmp5(3714).I7cJP0);
         obj37.value = findTraceEntryResult.turnId;
         tmp16Result31 = tmp16(closure_9, obj37);
       }
       items7[2] = tmp16Result31;
       const obj38 = { label: null, value: null };
       const intl21 = tmp2(1119).intl;
-      obj38.label = intl21.string(tmp5(3682)["XVTP/S"]);
+      obj38.label = intl21.string(tmp5(3714)["XVTP/S"]);
       obj38.value = findTraceEntryResult.id;
       items7[3] = tmp16(closure_9, obj38);
       let tmp16Result32 = null;
       if (null != formatClockTimeResult) {
         const obj39 = { label: null, value: null };
         const intl22 = tmp2(1119).intl;
-        obj39.label = intl22.string(tmp5(3682).rD7bm0);
+        obj39.label = intl22.string(tmp5(3714).rD7bm0);
         obj39.value = formatClockTimeResult;
         tmp16Result32 = tmp16(tmp59, obj39);
       }
@@ -1126,7 +1126,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         if (null != findTraceEntryResult.stopReason) {
           const obj41 = { label: null, value: null };
           const intl23 = tmp2(1119).intl;
-          obj41.label = intl23.string(tmp5(3682).rxmzYT);
+          obj41.label = intl23.string(tmp5(3714).rxmzYT);
           obj41.value = findTraceEntryResult.stopReason;
           tmp16Result33 = tmp16(tmp59, obj41);
         }
@@ -1141,13 +1141,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
             const obj42 = { children: null };
             const obj43 = { variant: "text-xs/semibold", color: "text-muted", children: null };
             const intl24 = tmp2(1119).intl;
-            obj43.children = intl24.string(tmp5(3682)["6oILKx"]);
-            const items8 = [tmp16(tmp2(4754).Text, obj43), ];
+            obj43.children = intl24.string(tmp5(3714)["6oILKx"]);
+            const items8 = [tmp16(tmp2(4786).Text, obj43), ];
             const schema = findTraceEntryResult.schema;
             items8[1] = schema.map((label) => {
               const obj = { label: label.name, value: null };
               const intl = projectId(1119).intl;
-              const tmp3 = _modDef3682;
+              const tmp3 = _modDef3714;
               obj.value = intl.formatToPlainString(label.required ? tmp3["6QoPmP"] : tmp3["/L6GFe"], { type: label.type });
               return closure_1_5(closure_1_9, obj, label.name);
             });
@@ -1162,7 +1162,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     } else {
       const obj44 = { label: null, value: null };
       const intl17 = tmp2(1119).intl;
-      obj44.label = intl17.string(tmp5(3682).NnBqcd);
+      obj44.label = intl17.string(tmp5(3714).NnBqcd);
       obj44.value = "model" === findTraceEntryResult1.kind ? findTraceEntryResult1.model : findTraceEntryResult1.tool;
       tmp16(closure_9, obj44);
     }
@@ -1171,7 +1171,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   items3[6] = tmp17Result8;
   obj7.children = items3;
   obj6.children = closure_6(View, obj7);
-  obj5.children = closure_5(tmp2(6863).BottomSheetScrollView, obj6);
-  return closure_5(tmp2(7449).ActionSheet, obj5);
+  obj5.children = closure_5(tmp2(6895).BottomSheetScrollView, obj6);
+  return closure_5(tmp2(7481).ActionSheet, obj5);
 });
 export const VIBEGRATIONS_TRACE_DETAIL_SHEET_KEY = "VibegrationsTraceDetailSheet";

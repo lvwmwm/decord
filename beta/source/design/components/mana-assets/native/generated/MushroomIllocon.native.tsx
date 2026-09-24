@@ -1,13 +1,13 @@
-// Module ID: 6488
-// Function ID: 6489
+// Module ID: 6520
+// Function ID: 6521
 // Name: MushroomIllocon
-// Dependencies: [21, 558, 568, 6489, 5802, 2]
+// Dependencies: [21, 558, 568, 6521, 5834, 2]
 
-// Module 6488 (MushroomIllocon)
+// Module 6520 (MushroomIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6489 from "module_6489" /* 6489 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6521 from "module_6521" /* 6521 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const MushroomIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6489 };
+    const obj2 = { uri: _modDef6521 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const MushroomIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6489 };
+  const obj2 = { uri: _modDef6521 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

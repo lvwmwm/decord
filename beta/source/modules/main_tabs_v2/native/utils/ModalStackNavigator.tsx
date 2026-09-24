@@ -1,19 +1,19 @@
-// Module ID: 11229
-// Function ID: 11230
+// Module ID: 11265
+// Function ID: 11266
 // Name: ModalStackNavigator
-// Dependencies: [109, 19, 21, 8162, 558, 568, 7246, 8112, 11230, 1368, 2]
+// Dependencies: [109, 19, 21, 8194, 558, 568, 7278, 8144, 11266, 1368, 2]
 
-// Module 11229 (ModalStackNavigator)
-import Navigator from "Navigator" /* 7246 */;
-import HeaderShared from "HeaderShared" /* 8112 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 11230 */;
+// Module 11265 (ModalStackNavigator)
+import Navigator from "Navigator" /* 7278 */;
+import HeaderShared from "HeaderShared" /* 8144 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 11266 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 let closure_3 = ["children"];
 const jsx = fn(21).jsx;
-const NativeStackNavigator = fn(8162);
+const NativeStackNavigator = fn(8194);
 let closure_6 = NativeStackNavigator.createNativeStackNavigator();
 const ReactCompilerGating = fn(558);
 const size = fn(2);

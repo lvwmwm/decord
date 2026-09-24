@@ -1,11 +1,11 @@
 // Module ID: 4149
 // Function ID: 4150
-// Dependencies: [3849, 3850]
+// Dependencies: [3881, 3882]
 // Exports: default
 
 // Module 4149
-import _typeof_mod from "module_3849" /* 3849 */;
-import requiredArgs_mod from "requiredArgs" /* 3850 */;
+import _typeof_mod from "module_3881" /* 3881 */;
+import requiredArgs_mod from "requiredArgs" /* 3882 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,9 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isFuture(arg0) {
+export default function getDecade(arg0) {
   requiredArgs.default(1, arguments);
-  const time = _typeof.default(arg0).getTime();
-  return time > Date.now();
+  return 10 * Math.floor(_typeof.default(arg0).getFullYear() / 10);
 };
 export default exports.default;

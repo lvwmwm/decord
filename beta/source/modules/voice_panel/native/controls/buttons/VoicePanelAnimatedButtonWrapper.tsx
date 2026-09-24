@@ -1,22 +1,22 @@
-// Module ID: 17609
-// Function ID: 17610
+// Module ID: 17619
+// Function ID: 17620
 // Name: VoicePanelAnimatedButtonWrapper
-// Dependencies: [19, 17, 12420, 21, 4758, 580, 4497, 558, 568, 17489, 1368, 5187, 4759, 2]
+// Dependencies: [19, 17, 12456, 21, 4790, 580, 4529, 558, 568, 17499, 1368, 5219, 4791, 2]
 
-// Module 17609 (VoicePanelAnimatedButtonWrapper)
+// Module 17619 (VoicePanelAnimatedButtonWrapper)
 import nativeDefault from "native" /* 580 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import timing from "timing" /* 4759 */;
-import spring from "spring" /* 5187 */;
+import timing from "timing" /* 4791 */;
+import spring from "spring" /* 5219 */;
 import noop from "module_19" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const MODE_CHANGE_PHYSICS = fn(12420).MODE_CHANGE_PHYSICS;
+const MODE_CHANGE_PHYSICS = fn(12456).MODE_CHANGE_PHYSICS;
 let jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { pressableWrapper: { justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.modules.button.BORDER_RADIUS_LG } };
 let closure_6 = createStyles.createStyles(obj2);
 let closure_7 = ReanimatedRexport.createAnimatedComponent(fn(17).Pressable);
@@ -344,7 +344,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         obj.animations = obj3;
         return obj;
       };
-      let obj2 = { offsetFromCenter: sharedValue, withSpring: tmp(5187).withSpring, MODE_CHANGE_PHYSICS, withTiming: tmp(4759).withTiming };
+      let obj2 = { offsetFromCenter: sharedValue, withSpring: tmp(5219).withSpring, MODE_CHANGE_PHYSICS, withTiming: tmp(4791).withTiming };
       fn.__closure = obj2;
       fn.__workletHash = 6215568626677;
       fn.__initData = __initData;
@@ -372,7 +372,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         obj.animations = obj3;
         return obj;
       };
-      let obj2 = { withSpring: tmp(5187).withSpring, offsetFromCenter: sharedValue, MODE_CHANGE_PHYSICS, withTiming: tmp(4759).withTiming };
+      let obj2 = { withSpring: tmp(5219).withSpring, offsetFromCenter: sharedValue, MODE_CHANGE_PHYSICS, withTiming: tmp(4791).withTiming };
       fn.__closure = obj2;
       fn.__workletHash = 7809254653734;
       fn.__initData = __initData2;

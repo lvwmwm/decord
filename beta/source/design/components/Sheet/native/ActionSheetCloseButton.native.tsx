@@ -1,14 +1,14 @@
-// Module ID: 7444
-// Function ID: 7445
+// Module ID: 7476
+// Function ID: 7477
 // Name: ActionSheetCloseButton
-// Dependencies: [19, 21, 558, 568, 1119, 580, 5846, 5341, 2]
+// Dependencies: [19, 21, 558, 568, 1119, 580, 5878, 5373, 2]
 
-// Module 7444 (ActionSheetCloseButton)
+// Module 7476 (ActionSheetCloseButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Pressables from "Pressables" /* 5341 */;
-import XSmallIcon from "XSmallIcon" /* 5846 */;
+import Pressables from "Pressables" /* 5373 */;
+import XSmallIcon from "XSmallIcon" /* 5878 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -37,7 +37,7 @@ export const ActionSheetCloseButton = ReactCompilerGating.isReactCompilerEnabled
   }
   if (cResult[1] !== ICON_STRONG) {
     const obj2 = { color: ICON_STRONG };
-    const tmp10 = jsx(tmp(5846).XSmallIcon, { color: ICON_STRONG });
+    const tmp10 = jsx(tmp(5878).XSmallIcon, { color: ICON_STRONG });
     cResult[1] = ICON_STRONG;
     cResult[2] = tmp10;
     let tmp8 = tmp10;

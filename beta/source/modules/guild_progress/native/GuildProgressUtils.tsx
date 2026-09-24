@@ -1,25 +1,25 @@
-// Module ID: 12637
-// Function ID: 12638
+// Module ID: 12673
+// Function ID: 12674
 // Name: GuildProgressUtils
-// Dependencies: [2100, 2067, 4399, 12638, 12632, 1078, 4725, 12639, 1984, 12640, 558, 568, 504, 12635, 1119, 11, 2]
+// Dependencies: [2100, 2067, 4431, 12674, 12668, 1078, 4757, 12675, 1984, 12676, 558, 568, 504, 12671, 1119, 11, 2]
 // Exports: createGuildProgress, hideActionSheet, openActionSheet
 
-// Module 12637 (GuildProgressUtils)
+// Module 12673 (GuildProgressUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import c from "c" /* 568 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12640 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12676 */;
 import GuildChannelStore from "GuildChannelStore" /* 2100 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
-import GuildProgressStore from "GuildProgressStore" /* 12638 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
+import GuildProgressStore from "GuildProgressStore" /* 12674 */;
 
 const require = globalThis.__r;
 
 const util = zhHW5c(1119);
 require = fn;
-const Steps = fn(12632).Steps;
+const Steps = fn(12668).Steps;
 const Constants = fn(1078);
 ({ WELCOME_OLD_GUILD_AGE_THRESHOLD: closure_8, Permissions: closure_9 } = Constants);
 let ReactCompilerGating = fn(558);
@@ -78,7 +78,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     cResult[6] = stateFromStores1;
     cResult[7] = items3;
   } else {
-    let channelsMessaged = tmp(12635).useChannelsMessaged(cResult[7]);
+    let channelsMessaged = tmp(12671).useChannelsMessaged(cResult[7]);
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const items4 = [GuildProgressStore];
@@ -105,7 +105,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     } else {
       tmp19 = cResult[10];
     }
-    const tmpResult11 = tmp(12635);
+    const tmpResult11 = tmp(12671);
     if (!channelsMessaged) {
       channelsMessaged = tmpResult12.useStateFromStores(tmp17, tmp19);
     }
@@ -456,7 +456,7 @@ export const MIN_PROGRESS_PERCENT = 3;
 export const PROGRESS_BACKGROUND_COLOR = "rgba(78, 93, 148, 0.3)";
 export const openActionSheet = function openActionSheet(guild) {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequireImpl(12639, dependencyMap.paths), "guild-progress-" + guild.id, { guild });
+  obj.openLazy(asyncRequireImpl(12675, dependencyMap.paths), "guild-progress-" + guild.id, { guild });
 };
 export const hideActionSheet = function hideActionSheet(arg0) {
   ActionSheetActionCreatorsDefault.hideActionSheet("guild-progress-" + arg0);

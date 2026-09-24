@@ -1,9 +1,9 @@
-// Module ID: 13385
-// Function ID: 13386
+// Module ID: 13421
+// Function ID: 13422
 // Name: useWishlistViewerCoachmark
-// Dependencies: [32, 19, 558, 568, 2031, 7632, 2]
+// Dependencies: [32, 19, 558, 568, 2031, 7664, 2]
 
-// Module 13385 (useWishlistViewerCoachmark)
+// Module 13421 (useWishlistViewerCoachmark)
 import c from "c" /* 568 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -19,8 +19,8 @@ export const useWishlistViewerCoachmark = ReactCompilerGating.isReactCompilerEna
   ({ isCurrentUser, shouldShowWishlistTab } = arg0);
   if (cResult[0] === isCurrentUser) {
     if (cResult[1] === shouldShowWishlistTab) {
-      const tmpResult = tmp(7632);
-      [tmp7, tmp8] = tmp(7632).useSelectedDismissibleContent(cResult[2]);
+      const tmpResult = tmp(7664);
+      [tmp7, tmp8] = tmp(7664).useSelectedDismissibleContent(cResult[2]);
       const tmp9 = tmp7 === tmp(2031).DismissibleContent.WISHLIST_MOBILE_VIEWER_COACHMARK;
       if (cResult[3] === tmp9) {
         if (cResult[4] === tmp8) {
@@ -33,7 +33,7 @@ export const useWishlistViewerCoachmark = ReactCompilerGating.isReactCompilerEna
       cResult[4] = tmp8;
       cResult[5] = obj2;
       tmp10 = obj2;
-      const tmp6 = _slicedToArray(tmp(7632).useSelectedDismissibleContent(cResult[2]), 2);
+      const tmp6 = _slicedToArray(tmp(7664).useSelectedDismissibleContent(cResult[2]), 2);
     }
   }
   if (!isCurrentUser) {

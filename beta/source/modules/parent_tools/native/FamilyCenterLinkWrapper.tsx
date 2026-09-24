@@ -1,16 +1,16 @@
-// Module ID: 15187
-// Function ID: 15188
+// Module ID: 15197
+// Function ID: 15198
 // Name: FamilyCenterLinkWrapper
-// Dependencies: [19, 21, 4758, 580, 558, 568, 7409, 8453, 5341, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 7441, 8485, 5373, 2]
 
-// Module 15187 (FamilyCenterLinkWrapper)
+// Module 15197 (FamilyCenterLinkWrapper)
 import nativeDefault from "native" /* 580 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { display: "flex", flexDirection: "row", alignItems: "center", paddingTop: 14, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12 } };
 let closure_4 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -23,7 +23,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   userId = userId.userId;
   const children = userId.children;
   const tmp4 = closure_4();
-  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)().analyticsLocations;
   if (undefined === userId) {
     return null;
   } else {
@@ -40,7 +40,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         }
       }
       const obj2 = { style: tmp4.container, onPress: tmp5, children };
-      const tmp8 = jsx(userId(5341).PressableOpacity, { style: tmp4.container, onPress: tmp5, children });
+      const tmp8 = jsx(userId(5373).PressableOpacity, { style: tmp4.container, onPress: tmp5, children });
       cResult[3] = children;
       cResult[4] = tmp5;
       cResult[5] = tmp4.container;
@@ -58,7 +58,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
 }) : ((userId) => {
   userId = userId.userId;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)().analyticsLocations;
   let tmp3 = null;
   if (undefined !== userId) {
     const obj = {
@@ -68,7 +68,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         },
       children: userId.children
     };
-    tmp3 = jsx(userId(5341).PressableOpacity, {
+    tmp3 = jsx(userId(5373).PressableOpacity, {
       style: tmp.container,
       onPress() {
           showUserProfileActionSheetDefault({ userId, disableCalls: true, disableMessage: true, sourceAnalyticsLocations: analyticsLocations });

@@ -1,27 +1,27 @@
-// Module ID: 17203
-// Function ID: 17204
+// Module ID: 17213
+// Function ID: 17214
 // Name: AutocompleteScreen
-// Dependencies: [32, 19, 2045, 4409, 1376, 12490, 12487, 8127, 1078, 21, 558, 568, 504, 17120, 12486, 12509, 12506, 4603, 4911, 12488, 17204, 12494, 12489, 17162, 17112, 1119, 17124, 2]
+// Dependencies: [32, 19, 2045, 4441, 1376, 12526, 12523, 8159, 1078, 21, 558, 568, 504, 17130, 12522, 12545, 12542, 4635, 4943, 12524, 17214, 12530, 12525, 17172, 17122, 1119, 17134, 2]
 
-// Module 17203 (AutocompleteScreen)
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import useChannelName from "useChannelName" /* 4911 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12486 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12506 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12509 */;
-import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 17204 */;
+// Module 17213 (AutocompleteScreen)
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import useChannelName from "useChannelName" /* 4943 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12522 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12542 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12545 */;
+import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 17214 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
-import SearchAutocompleteStore from "SearchAutocompleteStore" /* 12490 */;
-import SearchQueryStore from "SearchQueryStore" /* 12487 */;
+import SearchAutocompleteStore from "SearchAutocompleteStore" /* 12526 */;
+import SearchQueryStore from "SearchQueryStore" /* 12523 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const SearchConstants = fn(8127);
+const SearchConstants = fn(8159);
 ({ SearchListItemTypes: c10, SearchQueryTagTypes: closure_11, USER_ESTIMATED_ITEM_SIZE: closure_12 } = SearchConstants);
 const Constants = fn(1078);
 ({ SearchPopoutModes: map1, SearchTokenTypes: closure_14 } = Constants);
@@ -91,7 +91,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((search
     tmp16 = cResult[8];
   }
   const tmpResult5 = searchContext(504);
-  const fullscreenPlaceholderCount = searchContext(17120).useFullscreenPlaceholderCount(tmp16);
+  const fullscreenPlaceholderCount = searchContext(17130).useFullscreenPlaceholderCount(tmp16);
   if (cResult[9] !== searchContext) {
     class P {
       constructor() {
@@ -675,10 +675,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((search
               return;
             }
           }
-          const set = new Set(tmp(17204).getSearchQueryUserIds(searchContext));
+          const set = new Set(tmp(17214).getSearchQueryUserIds(searchContext));
           const _Set = Set;
-          const tmpResult7 = tmp(17204);
-          set1 = new Set(tmp(17204).getSearchQueryChannelIds(searchContext));
+          const tmpResult7 = tmp(17214);
+          set1 = new Set(tmp(17214).getSearchQueryChannelIds(searchContext));
           maybeAddUserItem = function maybeAddUserItem(arg0, arg1) {
 
           };
@@ -708,7 +708,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((search
                       set.add(id);
                       items5.push(toSearchListUserItemResult);
                     }
-                    const result = tmp(17204).toSearchListChannelItem(channel, closure_5);
+                    const result = tmp(17214).toSearchListChannelItem(channel, closure_5);
                     if (channel != null) {
                       const id2 = channel.id;
                     }
@@ -727,23 +727,23 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((search
                       }
                       if (tmp23) {
                         const element = { type: constants.GENERIC, props: null };
-                        const obj2 = { text, icon: tmp(17204).getSearchFilterHasIcon(text), onPress };
+                        const obj2 = { text, icon: tmp(17214).getSearchFilterHasIcon(text), onPress };
                         element.props = obj2;
                         items5.push(element);
-                        const tmpResult3 = tmp(17204);
+                        const tmpResult3 = tmp(17214);
                       }
                       if (tmp28) {
                         const element1 = { type: constants.GENERIC, props: null };
-                        const obj3 = { text, icon: tmp(17204).getSearchFilterAuthorTypeIcon(text), onPress };
+                        const obj3 = { text, icon: tmp(17214).getSearchFilterAuthorTypeIcon(text), onPress };
                         element1.props = obj3;
                         items5.push(element1);
-                        const tmpResult4 = tmp(17204);
+                        const tmpResult4 = tmp(17214);
                       }
                     } else {
                       throw new TypeError("Trying to call a non-function");
                     }
                     tmp14 = maybeAddChannelItem;
-                    const tmpResult = tmp(17204);
+                    const tmpResult = tmp(17214);
                   } else {
                     throw new TypeError("Trying to call a non-function");
                   }
@@ -884,7 +884,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((search
               }
             }
           }
-          const tmpResult8 = tmp(17204);
+          const tmpResult8 = tmp(17214);
         }
         cResult[26] = stateFromStores;
         cResult[27] = tmp22;
@@ -1169,17 +1169,17 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((search
               }
               if (tmp22) {
                 const element = { type: constants.GENERIC, props: null };
-                const obj2 = { text, icon: tmp(17204).getSearchFilterHasIcon(text), onPress: callback1 };
+                const obj2 = { text, icon: tmp(17214).getSearchFilterHasIcon(text), onPress: callback1 };
                 element.props = obj2;
                 items.push(element);
-                const tmpResult3 = tmp(17204);
+                const tmpResult3 = tmp(17214);
               }
               if (tmp27) {
                 const element1 = { type: constants.GENERIC, props: null };
-                const obj3 = { text, icon: tmp(17204).getSearchFilterAuthorTypeIcon(text), onPress: callback1 };
+                const obj3 = { text, icon: tmp(17214).getSearchFilterAuthorTypeIcon(text), onPress: callback1 };
                 element1.props = obj3;
                 items.push(element1);
-                const tmpResult4 = tmp(17204);
+                const tmpResult4 = tmp(17214);
               }
             });
           }

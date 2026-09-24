@@ -1,13 +1,13 @@
-// Module ID: 5932
-// Function ID: 5933
+// Module ID: 5964
+// Function ID: 5965
 // Name: AccountAgeTier6LargeBadge
-// Dependencies: [21, 558, 568, 5933, 5802, 2]
+// Dependencies: [21, 558, 568, 5965, 5834, 2]
 
-// Module 5932 (AccountAgeTier6LargeBadge)
+// Module 5964 (AccountAgeTier6LargeBadge)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef5933 from "module_5933" /* 5933 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef5965 from "module_5965" /* 5965 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const AccountAgeTier6LargeBadge = ReactCompilerGating.isReactCompilerEnab
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef5933 };
+    const obj2 = { uri: _modDef5965 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const AccountAgeTier6LargeBadge = ReactCompilerGating.isReactCompilerEnab
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5933 };
+  const obj2 = { uri: _modDef5965 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

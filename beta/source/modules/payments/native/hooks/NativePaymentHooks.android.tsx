@@ -1,16 +1,16 @@
-// Module ID: 9478
-// Function ID: 9479
+// Module ID: 9510
+// Function ID: 9511
 // Name: NativePaymentHooks
-// Dependencies: [5, 32, 19, 7484, 3, 558, 568, 504, 12, 9479, 4433, 2]
+// Dependencies: [5, 32, 19, 7516, 3, 558, 568, 504, 12, 9511, 4465, 2]
 // Exports: useMobileStoreFront, useNativeIAPPayments
 
-// Module 9478 (NativePaymentHooks)
+// Module 9510 (NativePaymentHooks)
 import LoggerDefault from "Logger" /* 3 */;
 import c from "c" /* 568 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import IAPStore from "IAPStore" /* 7484 */;
+import IAPStore from "IAPStore" /* 7516 */;
 
 require = fn;
 function notSupported() {
@@ -114,7 +114,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
                       ref = 1;
                       v2 = 2;
                       c5 = 1;
-                      const obj7 = { value: tmp5(9479).loadInAppSkus(differenceResult), done: false };
+                      const obj7 = { value: tmp5(9511).loadInAppSkus(differenceResult), done: false };
                       return obj7;
                     }
                   }
@@ -130,8 +130,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
               closure_128_1 = closure_2;
               logger.error("Unable to fetch product IDs from google play store: ", closure_128_1);
               v2("Unable to fetch");
-              const result = tmp5(4433).captureBillingException(closure_128_1);
-              const obj3 = tmp5(4433);
+              const result = tmp5(4465).captureBillingException(closure_128_1);
+              const obj3 = tmp5(4465);
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;
@@ -227,7 +227,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
                       ref = 1;
                       v2 = 2;
                       c5 = 1;
-                      const obj7 = { value: closure_2_0(9479).loadInAppSkus(differenceResult), done: false };
+                      const obj7 = { value: closure_2_0(9511).loadInAppSkus(differenceResult), done: false };
                       return obj7;
                     }
                   }
@@ -243,8 +243,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
               closure_128_1 = closure_2;
               logger.error("Unable to fetch product IDs from google play store: ", closure_128_1);
               v2("Unable to fetch");
-              const result = closure_2_0(4433).captureBillingException(closure_128_1);
-              const obj3 = closure_2_0(4433);
+              const result = closure_2_0(4465).captureBillingException(closure_128_1);
+              const obj3 = closure_2_0(4465);
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;

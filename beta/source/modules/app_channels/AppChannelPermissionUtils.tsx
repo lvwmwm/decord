@@ -1,15 +1,15 @@
-// Module ID: 11730
-// Function ID: 11731
+// Module ID: 11766
+// Function ID: 11767
 // Name: AppChannelPermissionUtils
-// Dependencies: [4985, 1078, 558, 568, 11731, 1090, 4406, 2]
+// Dependencies: [5017, 1078, 558, 568, 11767, 1090, 4438, 2]
 // Exports: getAppChannelBotUserId, getAppChannelBotUserIdFromApplication, isAppChannelFloorPermission
 
-// Module 11730 (AppChannelPermissionUtils)
+// Module 11766 (AppChannelPermissionUtils)
 import c from "c" /* 568 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
-import AppChannelPermissions from "AppChannelPermissions" /* 4406 */;
-import useAppChannelApplication from "useAppChannelApplication" /* 11731 */;
-import ApplicationStore from "ApplicationStore" /* 4985 */;
+import AppChannelPermissions from "AppChannelPermissions" /* 4438 */;
+import useAppChannelApplication from "useAppChannelApplication" /* 11767 */;
+import ApplicationStore from "ApplicationStore" /* 5017 */;
 
 require = fn;
 const ChannelTypes = fn(1078).ChannelTypes;

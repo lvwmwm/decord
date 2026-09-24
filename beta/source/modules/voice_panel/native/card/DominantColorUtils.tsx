@@ -1,10 +1,10 @@
-// Module ID: 9105
-// Function ID: 9106
+// Module ID: 9137
+// Function ID: 9138
 // Name: DominantColorUtils
-// Dependencies: [32, 19, 17, 1442, 558, 568, 4608, 580, 560, 2]
+// Dependencies: [32, 19, 17, 1442, 558, 568, 4640, 580, 560, 2]
 // Exports: getCachedSourceFromURI
 
-// Module 9105 (DominantColorUtils)
+// Module 9137 (DominantColorUtils)
 import nativeDefault from "native" /* 580 */;
 import privDefault from "priv" /* 1442 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -42,8 +42,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       hexToRgbResult = closure_7.get(arg0);
     }
     if (hexToRgbResult == null) {
-      hexToRgbResult = tmp(4608).hexToRgb(nativeDefault.unsafe_rawColors.PRIMARY_800);
-      const tmpResult = tmp(4608);
+      hexToRgbResult = tmp(4640).hexToRgb(nativeDefault.unsafe_rawColors.PRIMARY_800);
+      const tmpResult = tmp(4640);
     }
     cResult[2] = arg0;
     cResult[3] = hexToRgbResult;

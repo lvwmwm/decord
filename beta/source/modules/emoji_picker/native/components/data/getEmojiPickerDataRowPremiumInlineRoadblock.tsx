@@ -1,11 +1,11 @@
-// Module ID: 10480
-// Function ID: 10481
+// Module ID: 10516
+// Function ID: 10517
 // Name: getEmojiPickerDataRowPremiumInlineRoadblock
-// Dependencies: [10478, 2]
+// Dependencies: [10514, 2]
 // Exports: default
 
-// Module 10480 (getEmojiPickerDataRowPremiumInlineRoadblock)
-import useEmojiPickerData from "useEmojiPickerData" /* 10478 */;
+// Module 10516 (getEmojiPickerDataRowPremiumInlineRoadblock)
+import useEmojiPickerData from "useEmojiPickerData" /* 10514 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/emoji_picker/native/components/data/getEmojiPickerDataRowPremiumInlineRoadblock.tsx");

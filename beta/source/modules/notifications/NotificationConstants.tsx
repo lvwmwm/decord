@@ -1,9 +1,9 @@
-// Module ID: 4412
-// Function ID: 4413
+// Module ID: 4444
+// Function ID: 4445
 // Name: NotificationConstants
 // Dependencies: [2]
 
-// Module 4412 (NotificationConstants)
+// Module 4444 (NotificationConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/notifications/NotificationConstants.tsx");

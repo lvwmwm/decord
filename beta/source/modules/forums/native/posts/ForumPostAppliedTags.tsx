@@ -1,18 +1,18 @@
-// Module ID: 12143
-// Function ID: 12144
+// Module ID: 12179
+// Function ID: 12180
 // Name: ForumPostAppliedTags
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 10923, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 10959, 2]
 
-// Module 12143 (ForumPostAppliedTags)
+// Module 12179 (ForumPostAppliedTags)
 import nativeDefault from "native" /* 580 */;
-import AppliedForumTag from "AppliedForumTag" /* 10923 */;
+import AppliedForumTag from "AppliedForumTag" /* 10959 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4, Fragment: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { pillTagsContainer: { display: "flex", flexDirection: "row", alignItems: "center" }, tag: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, tagsContainer: { display: "flex", flexDirection: "row", alignItems: "center" }, dot: null };
 let size = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: 4, width: 4, borderRadius: 10, marginHorizontal: 8 };
 obj2.dot = size;
@@ -70,7 +70,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             obj3.tag = obj4;
             obj3.containerStyle = tmp4.tag;
             obj3.hasUnreads = hasUnreads;
-            tmp11 = closure_3(hasUnreads(10923).AppliedForumTagPill, obj3);
+            tmp11 = closure_3(hasUnreads(10959).AppliedForumTagPill, obj3);
           }
           cResult[10] = num;
           cResult[11] = hasUnreads;
@@ -125,7 +125,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj2.tag = obj3;
     obj2.containerStyle = tmp.tag;
     obj2.hasUnreads = hasUnreads;
-    tmp4 = closure_3(hasUnreads(10923).AppliedForumTagPill, obj2);
+    tmp4 = closure_3(hasUnreads(10959).AppliedForumTagPill, obj2);
   }
   items1[1] = tmp4;
   obj.children = items1;

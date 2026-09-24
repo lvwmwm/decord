@@ -1,20 +1,20 @@
-// Module ID: 16977
-// Function ID: 16978
+// Module ID: 16987
+// Function ID: 16988
 // Name: useInlineFrameOAuthNavigation
-// Dependencies: [5, 19, 9311, 9312, 1078, 9318, 4961, 9324, 1984, 1114, 2]
+// Dependencies: [5, 19, 9343, 9344, 1078, 9350, 4993, 9356, 1984, 1114, 2]
 // Exports: default
 
-// Module 16977 (useInlineFrameOAuthNavigation)
+// Module 16987 (useInlineFrameOAuthNavigation)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9311 */;
+import FramesStore from "FramesStore" /* 9343 */;
 
 require = fn;
-const isLaunched = fn(9312).isLaunched;
+const isLaunched = fn(9344).isLaunched;
 const ComponentActions = fn(1078).ComponentActions;
-let closure_8 = fn(9318).OAUTH2_AUTHORIZE_MODAL_KEY;
+let closure_8 = fn(9350).OAUTH2_AUTHORIZE_MODAL_KEY;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/frames/native/useInlineFrameOAuthNavigation.tsx");
 

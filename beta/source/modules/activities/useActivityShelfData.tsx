@@ -1,13 +1,13 @@
-// Module ID: 12170
-// Function ID: 12171
+// Module ID: 12206
+// Function ID: 12207
 // Name: useActivityShelfData
-// Dependencies: [19, 1376, 9134, 2044, 558, 568, 504, 7415, 1374, 9520, 1368, 9516, 2]
+// Dependencies: [19, 1376, 9166, 2044, 558, 568, 504, 7447, 1374, 9552, 1368, 9548, 2]
 
-// Module 12170 (useActivityShelfData)
+// Module 12206 (useActivityShelfData)
 import GlobalUtils from "GlobalUtils" /* 1374 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
-import TestModeStore from "TestModeStore" /* 9134 */;
+import TestModeStore from "TestModeStore" /* 9166 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 
 const require = globalThis.__r;
@@ -135,7 +135,7 @@ export const useActivityShelfData = ReactCompilerGating.isReactCompilerEnabled()
               if (supported_platforms == null) {
                 supported_platforms = [];
               }
-              const tmp = stateFromStores(9520);
+              const tmp = stateFromStores(9552);
               return supported_platforms.includes(tmp(closure_1_0(1368).getOS()));
             });
             found1 = found.filter((activity) => {
@@ -280,7 +280,7 @@ export const useActivityShelfData = ReactCompilerGating.isReactCompilerEnabled()
       if (supported_platforms == null) {
         supported_platforms = [];
       }
-      const tmp = stateFromStores(9520);
+      const tmp = stateFromStores(9552);
       return supported_platforms.includes(tmp(closure_1_0(1368).getOS()));
     });
     const found1 = found.filter((activity) => {

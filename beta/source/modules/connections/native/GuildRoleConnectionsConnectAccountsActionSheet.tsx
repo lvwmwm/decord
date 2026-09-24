@@ -1,9 +1,9 @@
-// Module ID: 11682
-// Function ID: 11683
+// Module ID: 11718
+// Function ID: 11719
 // Name: GuildRoleConnectionsConnectAccountsActionSheet
-// Dependencies: [5, 32, 19, 17, 7354, 2113, 1390, 502, 2045, 5500, 2109, 4399, 5627, 1078, 21, 4758, 580, 558, 568, 4693, 5502, 1401, 4610, 1181, 5241, 4911, 4754, 1119, 5626, 11683, 7412, 9548, 11684, 11685, 12, 4462, 11686, 38, 4458, 10424, 5203, 5625, 8876, 504, 5628, 5739, 1245, 4938, 4725, 7626, 11689, 9339, 577, 4961, 9324, 1984, 9316, 11693, 7397, 11694, 7450, 5188, 2]
+// Dependencies: [5, 32, 19, 17, 7386, 2113, 1390, 502, 2045, 5532, 2109, 4431, 5659, 1078, 21, 4790, 580, 558, 568, 4725, 5534, 1401, 4642, 1181, 5273, 4943, 4786, 1119, 5658, 11719, 7444, 9580, 11720, 11721, 12, 4494, 11722, 38, 4490, 10463, 5235, 5657, 8908, 504, 5660, 5771, 1245, 4970, 4757, 7658, 11725, 9371, 577, 4993, 9356, 1984, 9348, 11729, 7429, 11730, 7482, 5220, 2]
 
-// Module 11682 (GuildRoleConnectionsConnectAccountsActionSheet)
+// Module 11718 (GuildRoleConnectionsConnectAccountsActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import c from "c" /* 568 */;
@@ -12,47 +12,47 @@ import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import AvatarUtils from "AvatarUtils" /* 1401 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
-import shared from "shared" /* 4610 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useChannelNameDefault from "useChannelName" /* 4911 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import useMountEffectDefault from "useMountEffect" /* 5203 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5241 */;
-import PlatformsDefault from "Platforms" /* 5502 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5625 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 5626 */;
-import getConnectionsRolesDefault from "getConnectionsRoles" /* 5628 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
-import openUserSettings from "openUserSettings" /* 7626 */;
-import _modDef10424 from "module_10424" /* 10424 */;
-import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11693 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
+import shared from "shared" /* 4642 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useChannelNameDefault from "useChannelName" /* 4943 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import useMountEffectDefault from "useMountEffect" /* 5235 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5273 */;
+import PlatformsDefault from "Platforms" /* 5534 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5657 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 5658 */;
+import getConnectionsRolesDefault from "getConnectionsRoles" /* 5660 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5771 */;
+import openUserSettings from "openUserSettings" /* 7658 */;
+import _modDef10463 from "module_10463" /* 10463 */;
+import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11729 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7354 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7386 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
 import UserRecord from "UserRecord" /* 1390 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5532 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 const native = tmp5(1181);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: metroRequire, Pressable: closure_7, View: closure_8 } = get_ActivityIndicator);
-let Constants = fn(5627);
+let Constants = fn(5659);
 ({ MetadataFields: closure_17, OperatorTypes: closure_18, GUILD_ROLE_CONNECTION_APPLICATION_CONNECTION_TYPE: closure_19, GUILD_ROLE_CONNECTION_APPLICATION_IDENTITY_CONNECTION_TYPE: closure_20 } = Constants);
 Constants = fn(1078);
 ({ PlatformTypes: closure_21, UserSettingsSections: closure_22, AnalyticEvents: closure_23, MarketingURLs: closure_24, FRIEND_SYNC_PLATFORM_TYPES: closure_25, ACTIVITY_PLATFORM_TYPES: closure_26, Permissions: closure_27, EMPTY_STRING_SNOWFLAKE_ID: closure_28 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_29, jsxs: closure_30, Fragment: items } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: 12 }, connectionsChecksGroups: { marginTop: 16, flexDirection: "column" }, connectionsChecksGroup: { flexDirection: "row", borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 2, borderRadius: nativeDefault.radii.md, paddingHorizontal: 16, paddingVertical: 20, marginBottom: 16, width: "100%", alignItems: "center", position: "relative" }, connectionsChecksGroupPassed: null, connectionsChecksGroupPlatformDisabled: null, connectionsChecksGroupRequirementsNotMet: null, connectionsChecksGroupTextContainer: null, connectionsChecksGroupTextNameContainer: null, connectionsChecksGroupTextNameInfoIcon: null, connectionsChecksGroupCheckmark: null, connectionsChecksGroupCaret: null, connectionsCheck: null, platformIcon: null, channelName: null, channelNameIcon: null, channelNameText: null, header: null, content: null, footerText: null, accountConnectedContainer: null, accountConnectedPreview: null, accountConnectedPreviewConnectedUserAccount: null, accountConnectedPrivacy: null, accountConnectedPrivacyOptionsContainer: null, roleGranted: null, roleGrantedName: null, verifiedIcon: null, channelsGranted: null, manageConnectionsButton: null, loading: null, appIcon: null, botTag: null };
 let obj3 = { flexDirection: "row", borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 2, borderRadius: nativeDefault.radii.md, paddingHorizontal: 16, paddingVertical: 20, marginBottom: 16, width: "100%", alignItems: "center", position: "relative" };
 obj2.connectionsChecksGroupPassed = { borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
@@ -140,11 +140,11 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ channel, style } = arg0);
   const tmp4 = closure_32();
   if (cResult[0] !== channel) {
-    const channelIcon = tmp(5241).getChannelIcon(channel);
+    const channelIcon = tmp(5273).getChannelIcon(channel);
     cResult[0] = channel;
     cResult[1] = channelIcon;
     let tmp5 = channelIcon;
-    const tmpResult = tmp(5241);
+    const tmpResult = tmp(5273);
   } else {
     tmp5 = cResult[1];
   }
@@ -180,7 +180,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp15 = tmp18;
       }
       const obj3 = { variant: "heading-lg/semibold", color: "text-default", style: tmp4.channelNameText, lineClamp: 1, children: tmp7 };
-      const tmp14 = closure_1_29(tmp(4754).Text, obj3);
+      const tmp14 = closure_1_29(tmp(4786).Text, obj3);
       cResult[8] = tmp7;
       cResult[9] = tmp4.channelNameText;
       cResult[10] = tmp14;
@@ -294,7 +294,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? ((result) => {
         }
       }
       const obj4 = { connectionType, connectionMetadataField, operator, operatorText: v0BlpbA, value };
-      const connectionsCheckText = tmp(5626).getConnectionsCheckText(obj4);
+      const connectionsCheckText = tmp(5658).getConnectionsCheckText(obj4);
       cResult[6] = connectionMetadataField;
       cResult[7] = connectionType;
       cResult[8] = operator;
@@ -302,7 +302,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? ((result) => {
       cResult[10] = value;
       cResult[11] = connectionsCheckText;
       tmp9 = connectionsCheckText;
-      const tmpResult = tmp(5626);
+      const tmpResult = tmp(5658);
     }
     if (null == tmp9) {
       return null;
@@ -320,7 +320,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? ((result) => {
         }
       }
       const obj5 = { variant: "text-xs/normal", color: str, style: tmp4.connectionsCheck, children: tmp9 };
-      const tmp21 = closure_1_29(tmp(4754).Text, obj5);
+      const tmp21 = closure_1_29(tmp(4786).Text, obj5);
       cResult[12] = tmp9;
       cResult[13] = tmp4.connectionsCheck;
       cResult[14] = str;
@@ -1972,7 +1972,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPlatformConn
     }
   }, items3);
   let tmp3 = _slicedToArray(noop.useState(0), 2);
-  roleColor = eligibilityStatesGroups(4462).useToken(nativeDefault.unsafe_rawColors.GREEN_330);
+  roleColor = eligibilityStatesGroups(4494).useToken(nativeDefault.unsafe_rawColors.GREEN_330);
   let obj3 = { children: null };
   const keys = Object.keys(memo1);
   const sorted = keys.sort((arg0, arg1) => {
@@ -2027,7 +2027,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPlatformConn
     if (null != bot) {
       tmp11 = new closure_11(application.bot);
     }
-    const officialApplicationIds = eligibilityStatesGroups(5626).officialApplicationIds;
+    const officialApplicationIds = eligibilityStatesGroups(5658).officialApplicationIds;
     let str;
     if (application != null) {
       str = application.id;
@@ -2051,24 +2051,24 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPlatformConn
       tmp20 = tmp19 <= c8;
     }
     if (tmp3) {
-      const obj3 = { source: tmp5(11684), style: closure_5.connectionsChecksGroupCheckmark };
+      const obj3 = { source: tmp5(11720), style: closure_5.connectionsChecksGroupCheckmark };
       let tmp22Result = tmp22(tmp15(1181).Icon, obj3);
       let tmp24 = tmp22;
     } else if (tmp20) {
       const obj4 = { variant: "text-sm/semibold", color: "text-brand", children: null };
       const intl2 = tmp15(1119).intl;
       obj4.children = intl2.string(tmp15(1119).t["5911Lb"]);
-      tmp22Result = tmp22(tmp15(4754).Text, obj4);
+      tmp22Result = tmp22(tmp15(4786).Text, obj4);
       tmp24 = tmp22;
     } else if (tmp8) {
-      const obj5 = { source: tmp5(11685), style: closure_5.connectionsChecksGroupCaret };
+      const obj5 = { source: tmp5(11721), style: closure_5.connectionsChecksGroupCaret };
       tmp22Result = tmp22(tmp15(1181).Icon, obj5);
       tmp24 = tmp22;
     } else {
       const obj6 = { variant: "text-md/medium", color: "text-muted", children: null };
       const intl = tmp15(1119).intl;
       obj6.children = intl.string(tmp15(1119).t.cEts68);
-      tmp22Result = tmp22(tmp15(4754).Text, obj6);
+      tmp22Result = tmp22(tmp15(4786).Text, obj6);
       tmp24 = tmp22;
     }
     let type1;
@@ -2084,11 +2084,11 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPlatformConn
     }
     if (hasItem) {
       const obj7 = { style: closure_5.botTag, guildId, roleColor, size: 16 };
-      let tmp24Result = tmp24(tmp5(11686), obj7);
+      let tmp24Result = tmp24(tmp5(11722), obj7);
     } else if (null != tmp11) {
       const obj8 = { style: closure_5.botTag, verified: tmp11.isVerifiedBot() };
-      tmp24Result = tmp24(tmp5(9548), obj8);
-      const tmp5Result = tmp5(9548);
+      tmp24Result = tmp24(tmp5(9580), obj8);
+      const tmp5Result = tmp5(9580);
     }
     const items = [closure_5.connectionsChecksGroup, , ];
     let prop = null;
@@ -2143,7 +2143,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPlatformConn
         const obj11 = { variant: "text-xs/normal", color: "text-overlay-light", children: null };
         const intl4 = tmp15(1119).intl;
         obj11.children = intl4.string(tmp15(1119).t.UB3hKo);
-        obj10.children = tmp24(tmp15(4754).Text, obj11);
+        obj10.children = tmp24(tmp15(4786).Text, obj11);
         tmp24Result5 = tmp24(c8, obj10);
       }
     }
@@ -2173,18 +2173,18 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPlatformConn
       }
       name = name1;
     }
-    const items2 = [tmp24(eligibilityStatesGroups(4754).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: name }), tmp24Result, ];
+    const items2 = [tmp24(eligibilityStatesGroups(4786).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: name }), tmp24Result, ];
     let tmp24Result8 = null;
     if (null != tmp28) {
       const obj16 = {
         onPress() {
             _modDef38(null != stringResult, "tooltip is null");
             const obj = ToastActionCreatorsDefault;
-            obj.open({ key: "CONNECTIONS_STEAM_TOOLTIP", icon: _modDef10424, content: stringResult });
+            obj.open({ key: "CONNECTIONS_STEAM_TOOLTIP", icon: _modDef10463, content: stringResult });
           },
         children: null
       };
-      const obj17 = { source: tmp5(10424), size: tmp15(1181).Icon.Sizes.SMALL_20, style: tmp38.connectionsChecksGroupTextNameInfoIcon };
+      const obj17 = { source: tmp5(10463), size: tmp15(1181).Icon.Sizes.SMALL_20, style: tmp38.connectionsChecksGroupTextNameInfoIcon };
       obj16.children = tmp24(tmp15(1181).Icon, obj17);
       tmp24Result8 = tmp24(tmp37, obj16);
     }
@@ -2500,7 +2500,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
       _undefined(enabled);
       ConnectedAccountsActionCreatorsDefault.setFriendSync(account.type, account.id, enabled);
     };
-    tmp12 = closure_29(account(8876).FormSwitchRow, obj2);
+    tmp12 = closure_29(account(8908).FormSwitchRow, obj2);
   }
   let tmp15;
   if (set2.has(account.type)) {
@@ -2513,7 +2513,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
       closure_4(show_activity);
       ConnectedAccountsActionCreatorsDefault.setShowActivity(account.type, account.id, show_activity);
     };
-    tmp15 = closure_29(account(8876).FormSwitchRow, obj3);
+    tmp15 = closure_29(account(8908).FormSwitchRow, obj3);
   }
   let tmp18;
   if (true === value.hasMetadata) {
@@ -2532,7 +2532,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
       }
       const result = ConnectedAccountsActionCreatorsDefault.setMetadataVisibility(type, id, num);
     };
-    tmp18 = closure_29(account(8876).FormSwitchRow, obj5);
+    tmp18 = closure_29(account(8908).FormSwitchRow, obj5);
   }
   const obj6 = { style: tmp.accountConnectedPrivacyOptionsContainer, children: null };
   const obj7 = { label: null, value: null, onValueChange: null };
@@ -2549,7 +2549,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((account) => {
     }
     ConnectedAccountsActionCreatorsDefault.setVisibility(type, id, num);
   };
-  const items = [closure_29(account(8876).FormSwitchRow, obj7), tmp18, tmp15, tmp12];
+  const items = [closure_29(account(8908).FormSwitchRow, obj7), tmp18, tmp15, tmp12];
   obj6.children = items;
   return closure_30(closure_8, obj6);
 });
@@ -2875,11 +2875,11 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
                   prop = tmp2.role_connections_verification_url;
                 }
                 const resolved = Promise.resolve({ default: closure_1_40 });
-                const obj = closure_1(4725);
+                const obj = closure_1(4757);
                 const obj2 = { default: closure_1_40 };
                 const obj4 = { role, guildId, initialAttemptedPlatformType: platformType, initialAttemptedApplicationId: null, overrideUrl: null, onCloseModal: null };
                 let tmp7 = null;
-                const guildRoleConnectionsConnectAccountsActionSheetKey = platformType(11689).makeGuildRoleConnectionsConnectAccountsActionSheetKey(role.id);
+                const guildRoleConnectionsConnectAccountsActionSheetKey = platformType(11725).makeGuildRoleConnectionsConnectAccountsActionSheetKey(role.id);
                 if (null != platformType) {
                   tmp7 = id;
                 }
@@ -2971,7 +2971,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
           obj60.onPlatformConnected = handlePlatformConnected;
           obj60.onPlatformIdentityAuthorize = handlePlatformIdentityAuthorize;
           platformType = undefined;
-          tmp57 = f57698;
+          tmp57 = f57749;
           if (tmp26 != null) {
             platformType = tmp26.platformType;
           }
@@ -3079,12 +3079,12 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
           obj74.children = intl4.string(tmp17(tmp18[27]).t.jndPhX);
           items14 = [, ];
           items14[0] = tmp36(tmp17(tmp18[26]).Text, obj74);
-          tmp49 = f57700;
+          tmp49 = f57751;
           obj75 = { account: null, setShowPreviewInvisibleIcon: null, setShowPreviewMetadata: null };
           obj75.account = found1;
           obj75.setShowPreviewInvisibleIcon = tmp16;
           obj75.setShowPreviewMetadata = tmp13;
-          items14[1] = tmp36(f57700, obj75);
+          items14[1] = tmp36(f57751, obj75);
           obj73.children = items14;
           items13[1] = tmp37(tmp38, obj73);
           obj69.children = items13;

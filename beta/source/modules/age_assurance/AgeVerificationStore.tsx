@@ -1,15 +1,20 @@
-// Module ID: 8730
-// Function ID: 8731
+// Module ID: 8762
+// Function ID: 8763
 // Name: AgeVerificationStore
 // Dependencies: [1376, 510, 504, 577, 2]
 
-// Module 8730 (AgeVerificationStore)
+// Module 8762 (AgeVerificationStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
+function invalidateAgeVerificationMethodsV2() {
+  c5 = null;
+  c6 = null;
+  c7 = null;
+}
 let c3 = 86400000;
 let methods = null;
 let c5 = null;
@@ -106,11 +111,8 @@ const ageVerificationStore = new AgeVerificationStore(DispatcherDefault, {
   AGE_VERIFICATION_METHODS_V2_LOAD_SUCCESS: function handleAgeVerificationMethodsV2LoadSuccess(arg0) {
     ({ methods: c5, footerMessage: c6, outageBannerMessage: c7 } = arg0);
   },
-  INITIATE_AGE_VERIFICATION: function invalidateAgeVerificationMethodsV2() {
-    c5 = null;
-    c6 = null;
-    c7 = null;
-  },
+  AGE_VERIFICATION_METHODS_V2_INVALIDATE: invalidateAgeVerificationMethodsV2,
+  INITIATE_AGE_VERIFICATION: invalidateAgeVerificationMethodsV2,
   CONNECTION_OPEN: function handleConnectionOpen() {
     const currentUser = UserStore.getCurrentUser();
     let id;

@@ -1,13 +1,13 @@
-// Module ID: 6568
-// Function ID: 6569
+// Module ID: 6600
+// Function ID: 6601
 // Name: Orb3dIllustration
-// Dependencies: [21, 558, 568, 6569, 5802, 2]
+// Dependencies: [21, 558, 568, 6601, 5834, 2]
 
-// Module 6568 (Orb3dIllustration)
+// Module 6600 (Orb3dIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6569 from "module_6569" /* 6569 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6601 from "module_6601" /* 6601 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const Orb3dIllustration = ReactCompilerGating.isReactCompilerEnabled() ? 
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6569 };
+    const obj2 = { uri: _modDef6601 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const Orb3dIllustration = ReactCompilerGating.isReactCompilerEnabled() ? 
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6569 };
+  const obj2 = { uri: _modDef6601 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

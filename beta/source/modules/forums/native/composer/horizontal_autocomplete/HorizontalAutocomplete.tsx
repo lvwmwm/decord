@@ -1,29 +1,29 @@
-// Module ID: 10920
-// Function ID: 10921
+// Module ID: 10956
+// Function ID: 10957
 // Name: HorizontalAutocomplete
-// Dependencies: [19, 17, 4750, 2103, 2067, 4409, 1376, 1078, 21, 4758, 5743, 580, 558, 568, 4497, 4759, 5203, 504, 1181, 4603, 4754, 7434, 7452, 8398, 5241, 4911, 5802, 2]
+// Dependencies: [19, 17, 4782, 2103, 2067, 4441, 1376, 1078, 21, 4790, 5775, 580, 558, 568, 4529, 4791, 5235, 504, 1181, 4635, 4786, 7466, 7484, 8430, 5273, 4943, 5834, 2]
 
-// Module 10920 (HorizontalAutocomplete)
+// Module 10956 (HorizontalAutocomplete)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import timing from "timing" /* 4759 */;
-import useMountEffectDefault from "useMountEffect" /* 5203 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import RoleIconDefault from "RoleIcon" /* 7452 */;
-import _modDef8398 from "module_8398" /* 8398 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import timing from "timing" /* 4791 */;
+import useMountEffectDefault from "useMountEffect" /* 5235 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import RoleIconDefault from "RoleIcon" /* 7484 */;
+import _modDef8430 from "module_8430" /* 8430 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import GuildRoleStore from "GuildRoleStore" /* 2103 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
-import TextStyles from "TextStyles" /* 5743 */;
+import TextStyles from "TextStyles" /* 5775 */;
 
-const ReanimatedRexportDefault = tmp7(4497);
+const ReanimatedRexportDefault = tmp7(4529);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ TouchableOpacity: c3, View: closure_4, StyleSheet } = get_ActivityIndicator);
@@ -31,7 +31,7 @@ const Constants = fn(1078);
 ({ ChannelTypes: c10, Fonts } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { emoji: { width: 32, height: 32 }, emojiImage: { resizeMode: "contain" }, emojiText: { lineHeight: 32, fontSize: 27, textAlign: "center" }, emojiName: { marginLeft: 8 }, nickname: null, status: null, horizontalAutocompleteOption: null, roleIcon: null, channelName: null };
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_SEMIBOLD, nativeDefault.colors.TEXT_DEFAULT, 14));
 obj2.nickname = {};
@@ -51,7 +51,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp4 = closure_13();
   const obj = sharedValue(568);
   const tmp = sharedValue;
-  sharedValue = sharedValue(4497).useSharedValue(0);
+  sharedValue = sharedValue(4529).useSharedValue(0);
   if (cResult[0] !== sharedValue) {
     const fn = function n() {
       const result = sharedValue.set(timing.withTiming(1));
@@ -63,14 +63,14 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp6 = cResult[1];
   }
   useMountEffectDefault(tmp6);
-  const obj2 = sharedValue(4497);
+  const obj2 = sharedValue(4529);
   const fn2 = function y() {
     return { opacity: sharedValue.get() };
   };
   fn2.__closure = { opacity: sharedValue };
   fn2.__workletHash = 14159604656069;
   fn2.__initData = __initData;
-  const animatedStyle = tmp(4497).useAnimatedStyle(fn2);
+  const animatedStyle = tmp(4529).useAnimatedStyle(fn2);
   if (cResult[2] === animatedStyle) {
     if (cResult[3] === tmp4.horizontalAutocompleteOption) {
       let tmp10 = cResult[4];
@@ -108,11 +108,11 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let sharedValue;
   ({ children, onPress } = arg0);
   const tmp = closure_13();
-  sharedValue = sharedValue(4497).useSharedValue(0);
+  sharedValue = sharedValue(4529).useSharedValue(0);
   useMountEffectDefault(() => {
     const result = sharedValue.set(timing.withTiming(1));
   });
-  const obj = sharedValue(4497);
+  const obj = sharedValue(4529);
   const fn = function c() {
     return { opacity: sharedValue.get() };
   };
@@ -120,7 +120,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   fn.__workletHash = 9120427353030;
   fn.__initData = __initData2;
   const obj3 = { onPress, children: null };
-  const animatedStyle = sharedValue(4497).useAnimatedStyle(fn);
+  const animatedStyle = sharedValue(4529).useAnimatedStyle(fn);
   const obj4 = { style: null, children };
   const items = [tmp.horizontalAutocompleteOption, animatedStyle];
   obj4.style = items;
@@ -189,7 +189,7 @@ let obj8 = {
                   const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
                   const items2 = ["@", tmp20];
                   obj3.children = items2;
-                  const tmp25 = __initData(tmp(4754).Text, obj3);
+                  const tmp25 = __initData(tmp(4786).Text, obj3);
                   cResult[19] = tmp20;
                   cResult[20] = tmp25;
                   let tmp23 = tmp25;
@@ -228,7 +228,7 @@ let obj8 = {
                 tmp26 = tmp29;
               }
               const obj8 = { style: tmp12, variant: "text-sm/semibold", children: tmp13 };
-              const tmp19 = closure_1_11(tmp(4754).Text, obj8);
+              const tmp19 = closure_1_11(tmp(4786).Text, obj8);
               cResult[14] = tmp12;
               cResult[15] = tmp13;
               cResult[16] = tmp19;
@@ -311,8 +311,8 @@ obj8.Role = ReactCompilerGating.isReactCompilerEnabled() ? ((colorString) => {
     if (cResult[4] !== stateFromStores) {
       let roleIconData = null;
       if (null != stateFromStores) {
-        roleIconData = tmp(7434).getRoleIconData(stateFromStores, 30);
-        const tmpResult2 = tmp(7434);
+        roleIconData = tmp(7466).getRoleIconData(stateFromStores, 30);
+        const tmpResult2 = tmp(7466);
       }
       cResult[4] = stateFromStores;
       cResult[5] = roleIconData;
@@ -384,7 +384,7 @@ obj8.Role = ReactCompilerGating.isReactCompilerEnabled() ? ((colorString) => {
       const obj6 = { style: tmp4.roleIcon, children: null };
       const obj7 = { name, src: null, unicodeEmoji: null, size: 24 };
       ({ customIconSrc: obj5.src, unicodeEmoji: obj5.unicodeEmoji } = tmp9);
-      obj6.children = closure_11(id(7452), obj7);
+      obj6.children = closure_11(id(7484), obj7);
       tmp12 = closure_11(closure_4, obj6);
     }
     cResult[6] = tmp9;
@@ -408,8 +408,8 @@ obj8.Role = ReactCompilerGating.isReactCompilerEnabled() ? ((colorString) => {
   const stateFromStores = initialize.useStateFromStores(items, () => GuildRoleStore.getRole(require, importDefault));
   let roleIconData = null;
   if (null != stateFromStores) {
-    roleIconData = tmp2(7434).getRoleIconData(stateFromStores, 30);
-    const tmp2Result = tmp2(7434);
+    roleIconData = tmp2(7466).getRoleIconData(stateFromStores, 30);
+    const tmp2Result = tmp2(7466);
   }
   const obj2 = { onPress: onPress.onPress, children: null };
   let tmp8 = null;
@@ -476,11 +476,11 @@ obj8.Channel = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         tmp13 = cResult[8];
       }
       if (cResult[9] !== channel) {
-        const channelName = tmp(4911).computeChannelName(channel, UserStore, RelationshipStore);
+        const channelName = tmp(4943).computeChannelName(channel, UserStore, RelationshipStore);
         cResult[9] = channel;
         cResult[10] = channelName;
         let tmp16 = channelName;
-        const tmpResult3 = tmp(4911);
+        const tmpResult3 = tmp(4943);
       } else {
         tmp16 = cResult[10];
       }
@@ -507,7 +507,7 @@ obj8.Channel = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         tmp23 = tmp26;
       }
       const obj4 = { style: tmp4.channelName, variant: "text-sm/semibold", children: tmp16 };
-      const tmp22 = closure_11(tmp(4754).Text, obj4);
+      const tmp22 = closure_11(tmp(4786).Text, obj4);
       cResult[11] = tmp16;
       cResult[12] = tmp4.channelName;
       cResult[13] = tmp22;
@@ -515,10 +515,10 @@ obj8.Channel = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
   }
   if (channel.type === constants.GUILD_CATEGORY) {
-    let channelIconWithGuild = _modDef8398;
+    let channelIconWithGuild = _modDef8430;
   } else {
-    channelIconWithGuild = tmp(5241).getChannelIconWithGuild(channel, stateFromStores);
-    const tmpResult4 = tmp(5241);
+    channelIconWithGuild = tmp(5273).getChannelIconWithGuild(channel, stateFromStores);
+    const tmpResult4 = tmp(5273);
   }
   cResult[4] = channel;
   cResult[5] = stateFromStores;
@@ -528,17 +528,17 @@ obj8.Channel = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   channel(504);
   [][0] = channel;
   if (channel.type === constants.GUILD_CATEGORY) {
-    let channelIconWithGuild = _modDef8398;
+    let channelIconWithGuild = _modDef8430;
   } else {
-    channelIconWithGuild = tmp2(5241).getChannelIconWithGuild(channel, tmp5);
-    const tmp2Result = tmp2(5241);
+    channelIconWithGuild = tmp2(5273).getChannelIconWithGuild(channel, tmp5);
+    const tmp2Result = tmp2(5273);
   }
   const tmp = closure_13();
   const tmp8 = closure_11(channel(1181).Icon, { source: channelIconWithGuild });
   const obj = { onPress: channel.onPress, children: null };
   const items = [tmp8, ];
-  const channelName = channel(4911).computeChannelName(channel, UserStore, RelationshipStore);
-  items[1] = closure_11(channel(4754).Text, { style: tmp.channelName, variant: "text-sm/semibold", children: channelName });
+  const channelName = channel(4943).computeChannelName(channel, UserStore, RelationshipStore);
+  items[1] = closure_11(channel(4786).Text, { style: tmp.channelName, variant: "text-sm/semibold", children: channelName });
   obj.children = items;
   return closure_12(closure_16, obj);
 });
@@ -617,7 +617,7 @@ obj8.Emoji = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
           tmp25 = tmp28;
         }
         const obj6 = { style: tmp4.emojiName, variant: "text-sm/semibold", children: combined };
-        const tmp24 = closure_1_11(tmp(4754).Text, obj6);
+        const tmp24 = closure_1_11(tmp(4786).Text, obj6);
         cResult[16] = tmp4.emojiName;
         cResult[17] = combined;
         cResult[18] = tmp24;

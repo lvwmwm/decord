@@ -1,9 +1,9 @@
-// Module ID: 7304
-// Function ID: 7305
+// Module ID: 7336
+// Function ID: 7337
 // Name: useFastestListComputedStyles
 // Dependencies: [19, 17, 558, 568, 2]
 
-// Module 7304 (useFastestListComputedStyles)
+// Module 7336 (useFastestListComputedStyles)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

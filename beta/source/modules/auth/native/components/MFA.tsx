@@ -1,11 +1,11 @@
-// Module ID: 16310
-// Function ID: 16311
+// Module ID: 16320
+// Function ID: 16321
 // Name: components/MFA
-// Dependencies: [19, 502, 21, 12, 558, 568, 1488, 7185, 504, 6832, 1369, 580, 15937, 2]
+// Dependencies: [19, 502, 21, 12, 558, 568, 1488, 7217, 504, 6864, 1369, 580, 15947, 2]
 
-// Module 16310 (components/MFA)
+// Module 16320 (components/MFA)
 import _modDef12 from "module_12" /* 12 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6832 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6864 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -36,7 +36,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = isMultiAccount(568);
   const navigation = isMultiAccount(1488).useNavigation();
   if (inContainer) {
-    inContainer = navigation(7185)();
+    inContainer = navigation(7217)();
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AuthenticationStore];
@@ -183,7 +183,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[18] = undefined;
   cResult[19] = undefined;
   cResult[20] = tmp16;
-  cResult[21] = jsx(isMultiAccount(15937).MFAModal, { mfaChallenge: stateFromStores, finish: tmp12, handleOnClose: tmp13, ignoreKeyboard: inContainer, containerStyle: undefined, headerStatusBarHeight: undefined, headerLeftContainerStyle: tmp16, headerRightContainerStyle: tmp20 });
+  cResult[21] = jsx(isMultiAccount(15947).MFAModal, { mfaChallenge: stateFromStores, finish: tmp12, handleOnClose: tmp13, ignoreKeyboard: inContainer, containerStyle: undefined, headerStatusBarHeight: undefined, headerLeftContainerStyle: tmp16, headerRightContainerStyle: tmp20 });
 }) : (() => {
   let obj = arg0;
   if (arg0 === undefined) {
@@ -192,7 +192,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ inContainer, isMultiAccount } = obj);
   const navigation = isMultiAccount(1488).useNavigation();
   if (inContainer) {
-    inContainer = navigation(7185)();
+    inContainer = navigation(7217)();
   }
   const obj2 = isMultiAccount(1488);
   const items = [AuthenticationStore];
@@ -225,7 +225,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp13 = obj4;
     }
     obj3.headerRightContainerStyle = tmp13;
-    return jsx(tmp(15937).MFAModal, obj3);
+    return jsx(tmp(15947).MFAModal, obj3);
   } else {
     const tmpResult2 = tmp(1369);
     tmp4(580).space;

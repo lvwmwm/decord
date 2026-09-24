@@ -1,13 +1,13 @@
-// Module ID: 6634
-// Function ID: 6635
+// Module ID: 6666
+// Function ID: 6667
 // Name: SafetyBookletSpotIllustration
-// Dependencies: [21, 558, 568, 6635, 5802, 2]
+// Dependencies: [21, 558, 568, 6667, 5834, 2]
 
-// Module 6634 (SafetyBookletSpotIllustration)
+// Module 6666 (SafetyBookletSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6635 from "module_6635" /* 6635 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6667 from "module_6667" /* 6667 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const SafetyBookletSpotIllustration = ReactCompilerGating.isReactCompiler
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6635 };
+    const obj2 = { uri: _modDef6667 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const SafetyBookletSpotIllustration = ReactCompilerGating.isReactCompiler
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6635 };
+  const obj2 = { uri: _modDef6667 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

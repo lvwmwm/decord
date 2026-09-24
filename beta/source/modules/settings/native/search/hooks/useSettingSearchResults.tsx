@@ -1,16 +1,16 @@
-// Module ID: 14962
-// Function ID: 14963
+// Module ID: 14997
+// Function ID: 14998
 // Name: useSettingSearchResults
-// Dependencies: [32, 19, 14955, 14849, 14958, 14850, 558, 568, 14963, 14957, 551, 2]
+// Dependencies: [32, 19, 14990, 14887, 14993, 14888, 558, 568, 14998, 14992, 551, 2]
 
-// Module 14962 (useSettingSearchResults)
+// Module 14997 (useSettingSearchResults)
 import debounceDefault from "debounce" /* 551 */;
-import SettingTreeManagerDefault from "SettingTreeManager" /* 14958 */;
-import UserSettingSearchManagerDefault from "UserSettingSearchManager" /* 14963 */;
+import SettingTreeManagerDefault from "SettingTreeManager" /* 14993 */;
+import UserSettingSearchManagerDefault from "UserSettingSearchManager" /* 14998 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14955 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 14849 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14990 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 14887 */;
 
 const require = fn;
 let closure_7 = [];
@@ -22,10 +22,10 @@ export const useSettingSearchResults = ReactCompilerGating.isReactCompilerEnable
   const cResult = first(568).c(8);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp6 = UserSettingSearchManagerDefault;
-    const tmp62 = new tmp6(tmp(14957).getSettingSearchableTitles());
+    const tmp62 = new tmp6(tmp(14992).getSettingSearchableTitles());
     cResult[0] = tmp62;
     first = tmp62;
-    const tmpResult = tmp(14957);
+    const tmpResult = tmp(14992);
   } else {
     first = cResult[0];
   }
@@ -45,7 +45,7 @@ export const useSettingSearchResults = ReactCompilerGating.isReactCompilerEnable
         const isBlockedResult = SettingTreeManagerDefault.isBlocked(setting, closure_0);
         let tmp3 = !isBlockedResult;
         if (!isBlockedResult) {
-          tmp3 = !first(14850).SETTING_RENDERER_CONFIG[setting].unsearchable;
+          tmp3 = !first(14888).SETTING_RENDERER_CONFIG[setting].unsearchable;
         }
         return tmp3;
       });
@@ -112,9 +112,9 @@ export const useSettingSearchResults = ReactCompilerGating.isReactCompilerEnable
   tmp23 = obj2;
 }) : (() => {
   const memo = memo1.useMemo(() => {
-    const tmp = closure_1(14963);
-    const obj = memo(14957);
-    return new tmp(memo(14957).getSettingSearchableTitles());
+    const tmp = closure_1(14998);
+    const obj = memo(14992);
+    return new tmp(memo(14992).getSettingSearchableTitles());
   }, []);
   const settings = _slicedToArray(memo1.useState(closure_7), 2);
   closure_1 = settings[1];
@@ -128,10 +128,10 @@ export const useSettingSearchResults = ReactCompilerGating.isReactCompilerEnable
     scoredSearchResults = scoredSearchResults.getScoredSearchResults(arg0);
     const found = scoredSearchResults.filter((setting) => {
       setting = setting.setting;
-      const isBlockedResult = closure_2_1(14958).isBlocked(setting, closure_0);
+      const isBlockedResult = closure_2_1(14993).isBlocked(setting, closure_0);
       let tmp3 = !isBlockedResult;
       if (!isBlockedResult) {
-        tmp3 = !scoredSearchResults(14850).SETTING_RENDERER_CONFIG[setting].unsearchable;
+        tmp3 = !scoredSearchResults(14888).SETTING_RENDERER_CONFIG[setting].unsearchable;
       }
       return tmp3;
     });

@@ -1,26 +1,26 @@
-// Module ID: 13259
-// Function ID: 13260
+// Module ID: 13295
+// Function ID: 13296
 // Name: MediaViewerThumbnails
-// Dependencies: [32, 19, 17, 8568, 21, 558, 568, 13260, 4462, 580, 5176, 1368, 4497, 4758, 5802, 8541, 4498, 7319, 2]
+// Dependencies: [32, 19, 17, 8600, 21, 558, 568, 13296, 4494, 580, 5208, 1368, 4529, 4790, 5834, 8573, 4530, 7351, 2]
 // Exports: default
 
-// Module 13259 (MediaViewerThumbnails)
+// Module 13295 (MediaViewerThumbnails)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4498 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13260 */;
+import useToken from "useToken" /* 4494 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4530 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13296 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const PlatformUtils = tmp(1368);
-const ReanimatedRexportDefault = View(4497);
-const VisualEffectViewDefault = View(5176);
+const ReanimatedRexportDefault = View(4529);
+const VisualEffectViewDefault = View(5208);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
-const Constants = fn(8568);
+const Constants = fn(8600);
 ({ THUMBNAIL_WIDTH_MARGIN: closure_7, THUMBNAIL_MARGIN, THUMBNAIL_HEIGHT } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
@@ -83,14 +83,14 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const items = [timestampProducer.absoluteFill, tmp5];
       obj2.style = items;
       const tmp11 = timestampProducer;
-      const tmp7Result = tmp7(5176);
+      const tmp7Result = tmp7(5208);
       let str = "light";
       if (tmpResult.isAndroid()) {
         str = "dark";
       }
       const obj3 = { blurTheme: str, style: tmp11.absoluteFill, android_fallbackColor: tmp8 };
       obj2.children = closure_1_8(tmp7Result, obj3);
-      tmp10Result = tmp10(tmp7(4497).View, obj2);
+      tmp10Result = tmp10(tmp7(4529).View, obj2);
       tmpResult = PlatformUtils;
     } else {
       tmp10Result = null;
@@ -98,7 +98,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   return tmp10Result;
 });
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_11 = createStyles.createStyles({ containerPortrait: { height: 60 }, thumbnailButtonPortrait: { overflow: "hidden", marginHorizontal: THUMBNAIL_MARGIN, borderRadius: 2 }, thumbnailImagePortrait: { height: THUMBNAIL_HEIGHT, width: "100%" } });
 let closure_12 = noop.memo((onSelect) => {
   ({ source, index } = onSelect);

@@ -1,42 +1,47 @@
 // Module ID: 5451
 // Function ID: 5452
-// Dependencies: [5437, 5452, 5453, 5432]
+// Dependencies: [5452]
 
 // Module 5451
-import _modDef5437 from "module_5437" /* 5437 */;
-import get0thIfdOffset from "get0thIfdOffset" /* 5452 */;
-import IFD_TYPE_0TH from "IFD_TYPE_0TH" /* 5453 */;
+import _mod5452 from "module_5452" /* 5452 */;
 
-require = arg1;
-importDefault = arg2;
-const dependencyMap = arg6;
-let c3 = "Exif IFD Pointer";
-let c4 = "GPS Info IFD Pointer";
-let c5 = "Interoperability IFD Pointer";
-
-export default {
-  read(getUint16, c5, arg2) {
-    const byteOrder = _modDef5437.getByteOrder(getUint16, c5);
-    const obj2 = get0thIfdOffset;
-    const ifd = obj2.readIfd(getUint16, IFD_TYPE_0TH.IFD_TYPE_0TH, c5, get0thIfdOffset.get0thIfdOffset(getUint16, c5, byteOrder), byteOrder, arg2);
-    let objectAssignResult = ifd;
-    if (undefined !== ifd[c3]) {
-      const tmp3Result6 = tmp3(5452);
-      objectAssignResult = tmp3(5432).objectAssign(ifd, tmp3Result6.readIfd(getUint16, tmp3(5453).IFD_TYPE_EXIF, c5, c5 + ifd[tmp5].value, byteOrder, arg2));
-      const tmp3Result = tmp3(5432);
-    }
-    let objectAssignResult3 = objectAssignResult;
-    if (undefined !== objectAssignResult[c4]) {
-      const tmp3Result8 = tmp3(5452);
-      objectAssignResult3 = tmp3(5432).objectAssign(objectAssignResult, tmp3Result8.readIfd(getUint16, tmp3(5453).IFD_TYPE_GPS, c5, c5 + objectAssignResult[tmp12].value, byteOrder, arg2));
-      const tmp3Result7 = tmp3(5432);
-    }
-    let objectAssignResult4 = objectAssignResult3;
-    if (undefined !== objectAssignResult3[c5]) {
-      const tmp3Result10 = tmp3(5452);
-      objectAssignResult4 = tmp3(5432).objectAssign(objectAssignResult3, tmp3Result10.readIfd(getUint16, tmp3(5453).IFD_TYPE_INTEROPERABILITY, c5, c5 + objectAssignResult3[tmp19].value, byteOrder, arg2));
-      const tmp3Result9 = tmp3(5432);
-    }
-    return { tags: objectAssignResult4, byteOrder };
+const self = this;
+let self2 = this;
+if (this) {
+  self2 = self.__createBinding;
+}
+if (self2) {
+  let fn = self;
+  if (self) {
+    fn = self.__exportStar;
   }
-};
+  if (!fn) {
+    fn = (obj, exports) => {
+      for (const key10007 in arg0) {
+        let tmp6 = "default" === key10007;
+        if (tmp6) {
+          if (tmp6) {
+            continue;
+          } else {
+            let tmp4 = self2(arg1, arg0, key10007);
+            continue;
+          }
+          continue;
+        } else {
+          let _Object = Object;
+          hasOwnProperty = Object.prototype.hasOwnProperty;
+          let call = hasOwnProperty.call;
+          if (typeof call === "unknown") {
+            let hasOwnPropertyResult = hasOwnProperty(key10007);
+          } else {
+            hasOwnPropertyResult = call(arg1, key10007);
+          }
+        }
+      }
+    };
+  }
+  const _Object2 = Object;
+  fn(_mod5452, exports);
+} else {
+  let _Object = Object;
+}

@@ -1,9 +1,9 @@
-// Module ID: 14371
-// Function ID: 14372
+// Module ID: 14409
+// Function ID: 14410
 // Name: ThumbnailImage
-// Dependencies: [19, 17, 21, 1368, 14372, 558, 568, 2]
+// Dependencies: [19, 17, 21, 1368, 14410, 558, 568, 2]
 
-// Module 14371 (ThumbnailImage)
+// Module 14409 (ThumbnailImage)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
@@ -12,7 +12,7 @@ let _default = fn(17).Image;
 const jsx = fn(21).jsx;
 const PlatformUtils = fn(1368);
 if (PlatformUtils.isAndroid()) {
-  _default = fn(14372).default;
+  _default = fn(14410).default;
 }
 const ReactCompilerGating = fn(558);
 const size = fn(2);

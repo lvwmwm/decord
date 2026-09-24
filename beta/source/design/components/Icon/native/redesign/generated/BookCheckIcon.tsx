@@ -1,13 +1,13 @@
-// Module ID: 5295
-// Function ID: 5296
+// Module ID: 5327
+// Function ID: 5328
 // Name: BookCheckIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 5283, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 5315, 4493, 2]
 
-// Module 5295 (BookCheckIcon)
+// Module 5327 (BookCheckIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod5283 from "module_5283" /* 5283 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod5315 from "module_5315" /* 5315 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const BookCheckIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(5283);
+    const tmpResult = tmp(5315);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const BookCheckIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5283, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5315, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

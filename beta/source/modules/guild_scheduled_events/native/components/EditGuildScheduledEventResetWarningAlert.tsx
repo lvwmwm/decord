@@ -1,12 +1,12 @@
-// Module ID: 9863
-// Function ID: 9864
+// Module ID: 9895
+// Function ID: 9896
 // Name: EditGuildScheduledEventResetWarningAlert
-// Dependencies: [19, 21, 558, 568, 1119, 5207, 2]
+// Dependencies: [19, 21, 558, 568, 1119, 5239, 2]
 
-// Module 9863 (EditGuildScheduledEventResetWarningAlert)
+// Module 9895 (EditGuildScheduledEventResetWarningAlert)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import common_AlertDefault from "common/Alert" /* 5207 */;
+import common_AlertDefault from "common/Alert" /* 5239 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

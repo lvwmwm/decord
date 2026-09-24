@@ -1,9 +1,9 @@
-// Module ID: 12008
-// Function ID: 12009
+// Module ID: 12044
+// Function ID: 12045
 // Name: useUserIsConsideredAdult
 // Dependencies: [1376, 558, 568, 504, 2]
 
-// Module 12008 (useUserIsConsideredAdult)
+// Module 12044 (useUserIsConsideredAdult)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import UserStore from "UserStore" /* 1376 */;

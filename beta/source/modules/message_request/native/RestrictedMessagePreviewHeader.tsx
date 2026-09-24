@@ -1,24 +1,24 @@
-// Module ID: 17369
-// Function ID: 17370
+// Module ID: 17379
+// Function ID: 17380
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: [19, 17, 12592, 21, 4758, 580, 7409, 4603, 8453, 7436, 4457, 4725, 12765, 1984, 8465, 7586, 4961, 5341, 1119, 1181, 4754, 17352, 5799, 17370, 2]
+// Dependencies: [19, 17, 12628, 21, 4790, 580, 7441, 4635, 8485, 7468, 4489, 4757, 12801, 1984, 8497, 7618, 4993, 5373, 1119, 1181, 4786, 17362, 5831, 17380, 2]
 // Exports: default
 
-// Module 17369 (RestrictedMessagePreviewHeader)
+// Module 17379 (RestrictedMessagePreviewHeader)
 import nativeDefault from "native" /* 580 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ToastUtils from "ToastUtils" /* 4457 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import ClipboardUtils from "ClipboardUtils" /* 7436 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
+import ToastUtils from "ToastUtils" /* 4489 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import ClipboardUtils from "ClipboardUtils" /* 7468 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_5 = fn(12592).MOBILE_MESSAGE_REQUESTS_MODAL_KEY;
+let closure_5 = fn(12628).MOBILE_MESSAGE_REQUESTS_MODAL_KEY;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { alignItems: "flex-start", gap: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_12 }, avatar: null };
 let obj3 = { alignItems: "flex-start", gap: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_12 };
 obj2.avatar = { marginBottom: nativeDefault.space.PX_4 };
@@ -47,16 +47,16 @@ export default function RestrictedMessagePreviewHeader(channel) {
   }, items1);
   let obj3 = { style: tmp.container, children: null };
   const callback2 = userTag.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12765, dependencyMap.paths), "MutualGuildsActionSheet", {
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12801, dependencyMap.paths), "MutualGuildsActionSheet", {
       user,
       onPressMutualGuild(arg0) {
-        const result = channel(8465).trackUserProfileAction({ action: "PRESS_MUTUAL_GUILD" });
-        const obj = channel(8465);
-        channel(7586).transitionToGuild(arg0);
-        const obj2 = channel(7586);
-        user(4725).hideActionSheet();
-        const obj3 = user(4725);
-        user(4961).popWithKey(closure_1_5);
+        const result = channel(8497).trackUserProfileAction({ action: "PRESS_MUTUAL_GUILD" });
+        const obj = channel(8497);
+        channel(7618).transitionToGuild(arg0);
+        const obj2 = channel(7618);
+        user(4757).hideActionSheet();
+        const obj3 = user(4757);
+        user(4993).popWithKey(closure_1_5);
       }
     });
   }, items2);

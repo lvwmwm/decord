@@ -1,29 +1,29 @@
-// Module ID: 17641
-// Function ID: 17642
+// Module ID: 17651
+// Function ID: 17652
 // Name: StreamReportProblemActionSheet
-// Dependencies: [19, 4798, 1078, 21, 4758, 580, 558, 568, 7985, 1245, 5203, 17010, 4725, 4457, 17642, 7445, 7396, 1119, 7449, 6863, 2]
+// Dependencies: [19, 4830, 1078, 21, 4790, 580, 558, 568, 8017, 1245, 5235, 17020, 4757, 4489, 17652, 7477, 7428, 1119, 7481, 6895, 2]
 
-// Module 17641 (StreamReportProblemActionSheet)
+// Module 17651 (StreamReportProblemActionSheet)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import ToastUtils from "ToastUtils" /* 4457 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import useMountEffectDefault from "useMountEffect" /* 5203 */;
-import BottomSheetModal from "BottomSheetModal" /* 6863 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import ActionSheetRow from "ActionSheetRow" /* 7445 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7985 */;
-import trackStreamProblemDefault from "trackStreamProblem" /* 17010 */;
-import getStreamIssueReportOptionsDefault from "getStreamIssueReportOptions" /* 17642 */;
+import ToastUtils from "ToastUtils" /* 4489 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import useMountEffectDefault from "useMountEffect" /* 5235 */;
+import BottomSheetModal from "BottomSheetModal" /* 6895 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import ActionSheetRow from "ActionSheetRow" /* 7477 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8017 */;
+import trackStreamProblemDefault from "trackStreamProblem" /* 17020 */;
+import getStreamIssueReportOptionsDefault from "getStreamIssueReportOptions" /* 17652 */;
 import noop from "module_19" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
 
 require = fn;
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -63,7 +63,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((stream) => {
   } else {
     tmp5 = cResult[1];
   }
-  analyticsData(5203)(tmp5);
+  analyticsData(5235)(tmp5);
   if (cResult[2] === analyticsData) {
     if (cResult[3] === stream) {
       let tmp8 = cResult[4];
@@ -73,7 +73,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((stream) => {
       let obj2 = { title: null };
       const intl = tmp(1119).intl;
       obj2.title = intl.string(tmp(1119).t.XuqqwI);
-      const tmp13 = jsx(tmp(7396).BottomSheetTitleHeader, { title: null });
+      const tmp13 = jsx(tmp(7428).BottomSheetTitleHeader, { title: null });
       cResult[5] = tmp13;
       let tmp11 = tmp13;
     } else {
@@ -81,7 +81,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((stream) => {
     }
     if (cResult[6] !== tmp8) {
       let obj3 = { hasIcons: false, children: tmp8 };
-      const tmp16 = jsx(tmp(7445).ActionSheetRow.Group, { hasIcons: false, children: tmp8 });
+      const tmp16 = jsx(tmp(7477).ActionSheetRow.Group, { hasIcons: false, children: tmp8 });
       cResult[6] = tmp8;
       cResult[7] = tmp16;
       let tmp14 = tmp16;
@@ -96,15 +96,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((stream) => {
     }
     const obj4 = { scrollable: true, header: tmp11, children: null };
     const obj5 = { style: tmp4.container, children: tmp14 };
-    obj4.children = jsx(tmp(6863).BottomSheetScrollView, { style: tmp4.container, children: tmp14 });
-    const tmp19 = jsx(tmp(7449).ActionSheet, { scrollable: true, header: tmp11, children: null });
+    obj4.children = jsx(tmp(6895).BottomSheetScrollView, { style: tmp4.container, children: tmp14 });
+    const tmp19 = jsx(tmp(7481).ActionSheet, { scrollable: true, header: tmp11, children: null });
     cResult[8] = tmp4.container;
     cResult[9] = tmp14;
     cResult[10] = tmp19;
     tmp17 = tmp19;
   }
   let obj = stream(568);
-  const mapped = analyticsData(17642)({ isStreamer: false, isEndStream: false }).map((label, index) => {
+  const mapped = analyticsData(17652)({ isStreamer: false, isEndStream: false }).map((label, index) => {
     stream = label.value;
     return jsx(stream(dependencyMap[15]).ActionSheetRow, {
       label: label.label,

@@ -1,19 +1,19 @@
-// Module ID: 12133
-// Function ID: 12134
+// Module ID: 12169
+// Function ID: 12170
 // Name: ForumPostPinIcon
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1181, 12134, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1181, 12170, 2]
 
-// Module 12133 (ForumPostPinIcon)
+// Module 12169 (ForumPostPinIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import _modDef12134 from "module_12134" /* 12134 */;
+import _modDef12170 from "module_12170" /* 12170 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { pin: null, pinIcon: null };
 let size = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, width: 23, height: 23, marginEnd: 4, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj2.pin = size;
@@ -33,8 +33,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((containerStyle) 
       let tmp5 = cResult[2];
     }
     if (cResult[3] !== tmp4.pinIcon) {
-      const obj2 = { source: _modDef12134, style: tmp4.pinIcon };
-      const tmp9 = jsx(native.Icon, { source: _modDef12134, style: tmp4.pinIcon });
+      const obj2 = { source: _modDef12170, style: tmp4.pinIcon };
+      const tmp9 = jsx(native.Icon, { source: _modDef12170, style: tmp4.pinIcon });
       cResult[3] = tmp4.pinIcon;
       cResult[4] = tmp9;
       let tmp6 = tmp9;
@@ -61,8 +61,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((containerStyle) 
   tmp5 = items;
 }) : ((containerStyle) => {
   const tmp = closure_5();
-  const obj = { style: null, children: jsx(native.Icon, { source: _modDef12134, style: tmp.pinIcon }) };
+  const obj = { style: null, children: jsx(native.Icon, { source: _modDef12170, style: tmp.pinIcon }) };
   const items = [tmp.pin, containerStyle.containerStyle];
   obj.style = items;
-  return <View style={null}>{jsx(native.Icon, { source: _modDef12134, style: tmp.pinIcon })}</View>;
+  return <View style={null}>{jsx(native.Icon, { source: _modDef12170, style: tmp.pinIcon })}</View>;
 });

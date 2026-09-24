@@ -1,21 +1,21 @@
-// Module ID: 11158
-// Function ID: 11159
+// Module ID: 11194
+// Function ID: 11195
 // Name: LockedRecipientField
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1181, 4603, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1181, 4635, 4786, 2]
 
-// Module 11158 (LockedRecipientField)
+// Module 11194 (LockedRecipientField)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flexDirection: "row", alignItems: "center", marginLeft: nativeDefault.space.PX_16 }, avatar: null };
 let obj3 = { flexDirection: "row", alignItems: "center", marginLeft: nativeDefault.space.PX_16 };
 obj2.avatar = { marginEnd: nativeDefault.space.PX_8 };
@@ -43,7 +43,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     }
     if (cResult[5] !== tmp8) {
       const obj2 = { variant: "text-md/semibold", children: tmp8 };
-      const tmp13 = React4(tmp(4754).Text, obj2);
+      const tmp13 = React4(tmp(4786).Text, obj2);
       cResult[5] = tmp8;
       cResult[6] = tmp13;
       let tmp11 = tmp13;

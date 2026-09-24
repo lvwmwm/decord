@@ -1,9 +1,9 @@
-// Module ID: 7206
-// Function ID: 7207
+// Module ID: 7238
+// Function ID: 7239
 // Name: hooks/useStableCallback
 // Dependencies: [19, 558, 568, 2]
 
-// Module 7206 (hooks/useStableCallback)
+// Module 7238 (hooks/useStableCallback)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 17208
-// Function ID: 17209
+// Module ID: 17218
+// Function ID: 17219
 // Name: ChannelDetailsMoreButton
-// Dependencies: [19, 21, 558, 568, 11219, 1119, 8118, 8112, 9876, 2]
+// Dependencies: [19, 21, 558, 568, 11255, 1119, 8150, 8144, 9908, 2]
 
-// Module 17208 (ChannelDetailsMoreButton)
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 8118 */;
-import _modDef9876 from "module_9876" /* 9876 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11219 */;
+// Module 17218 (ChannelDetailsMoreButton)
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 8150 */;
+import _modDef9908 from "module_9908" /* 9908 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11255 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -53,9 +53,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     if (cResult[3] !== tmp3) {
       let obj2 = { children: null };
-      HeaderIconButton = HeaderIconButton(8112).HeaderIconButton;
+      HeaderIconButton = HeaderIconButton(8144).HeaderIconButton;
       const obj3 = { accessibilityLabel: tmp6, source: null, onPress: null };
-      tmp = _modDef9876;
+      tmp = _modDef9908;
       obj3.source = tmp;
       obj3.onPress = tmp3;
       obj2.children = <HeaderIconButton accessibilityLabel={tmp6} source={null} onPress={null} />;
@@ -75,9 +75,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       let obj2 = { accessibilityLabel: null, source: null, onPress: null };
       const intl = channel(1119).intl;
       obj2.accessibilityLabel = intl.string(channel(1119).t["UKOtz+"]);
-      obj2.source = _modDef9876;
+      obj2.source = _modDef9908;
       obj2.onPress = tmp;
-      obj.children = jsx(channel(8112).HeaderIconButton, { accessibilityLabel: null, source: null, onPress: null });
+      obj.children = jsx(channel(8144).HeaderIconButton, { accessibilityLabel: null, source: null, onPress: null });
       tmp2 = jsx(PressableNavigatorButtonWrapperDefault, { children: null });
     } else {
       tmp2 = null;

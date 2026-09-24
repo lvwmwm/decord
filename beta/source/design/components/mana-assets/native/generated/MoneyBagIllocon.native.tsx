@@ -1,13 +1,13 @@
-// Module ID: 6484
-// Function ID: 6485
+// Module ID: 6516
+// Function ID: 6517
 // Name: MoneyBagIllocon
-// Dependencies: [21, 558, 568, 6485, 5802, 2]
+// Dependencies: [21, 558, 568, 6517, 5834, 2]
 
-// Module 6484 (MoneyBagIllocon)
+// Module 6516 (MoneyBagIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6485 from "module_6485" /* 6485 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6517 from "module_6517" /* 6517 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const MoneyBagIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6485 };
+    const obj2 = { uri: _modDef6517 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const MoneyBagIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6485 };
+  const obj2 = { uri: _modDef6517 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

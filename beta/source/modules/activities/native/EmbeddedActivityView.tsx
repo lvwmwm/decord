@@ -1,15 +1,15 @@
-// Module ID: 9718
-// Function ID: 9719
+// Module ID: 9750
+// Function ID: 9751
 // Name: EmbeddedActivityView
-// Dependencies: [109, 32, 19, 17, 2044, 2008, 1353, 21, 4758, 558, 568, 9717, 1482, 577, 9719, 9720, 9722, 9715, 504, 9724, 9572, 9725, 9726, 2]
+// Dependencies: [109, 32, 19, 17, 2044, 2008, 1353, 21, 4790, 558, 568, 9749, 1482, 577, 9751, 9752, 9754, 9747, 504, 9756, 9604, 9757, 9758, 2]
 
-// Module 9718 (EmbeddedActivityView)
+// Module 9750 (EmbeddedActivityView)
 import c from "c" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9572 */;
-import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 9719 */;
-import DiscordEnvironment from "DiscordEnvironment" /* 9720 */;
-import WakeLockDefault from "WakeLock" /* 9722 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9604 */;
+import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 9751 */;
+import DiscordEnvironment from "DiscordEnvironment" /* 9752 */;
+import WakeLockDefault from "WakeLock" /* 9754 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -77,7 +77,7 @@ const Constants = fn(2008);
 fn(1353).OBEY_SILENT_HARDWARE_SWITCH_APP_IDS;
 const jsxProd = fn(21);
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_16 = createStyles.createStyles({ loadingContainer: { flex: 1, justifyContent: "center" } });
 const EmbeddedActivities = "EmbeddedActivities";
 let ReactCompilerGating = fn(558);
@@ -343,7 +343,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   } else {
     first = cResult[0];
   }
-  const tmp8 = first(9715)();
+  const tmp8 = first(9747)();
   dependencyMap = tmp8;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [EmbeddedActivitiesStore];
@@ -443,7 +443,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
       }
     }
   }
-  tmp7(9724)(tmp19);
+  tmp7(9756)(tmp19);
   if (cResult[8] !== layoutMode) {
     class M {
       constructor() {
@@ -711,13 +711,13 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   cResult[13] = tmp8;
   cResult[14] = stateFromStores;
   cResult[15] = null == first;
-  cResult[16] = { orientationLockState: stateFromStores, showLoadingIndicator: null == first, setShowLoadingStateForLockingOrientation: tmp15, application: tmp8, setOrientationLockState: layoutMode(9717).setOrientationLockState };
+  cResult[16] = { orientationLockState: stateFromStores, showLoadingIndicator: null == first, setShowLoadingStateForLockingOrientation: tmp15, application: tmp8, setOrientationLockState: layoutMode(9749).setOrientationLockState };
 }) : ((portraitSafeAreasConfig) => {
   ({ channel, layoutMode } = portraitSafeAreasConfig);
   let landscapeSafeAreasConfig = portraitSafeAreasConfig.portraitSafeAreasConfig;
   let setIsResetting;
   const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
-  const tmp4 = currentEmbeddedActivity(9715)();
+  const tmp4 = currentEmbeddedActivity(9747)();
   dependencyMap = tmp4;
   const items = [EmbeddedActivitiesStore];
   const items1 = [tmp4];
@@ -732,7 +732,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   const tmp2 = currentEmbeddedActivity;
   [tmp8, tmp9] = noop.useState(true);
   const tmp7 = _slicedToArray(noop.useState(true), 2);
-  currentEmbeddedActivity(9724)({ connectedEmbeddedActivity: currentEmbeddedActivity });
+  currentEmbeddedActivity(9756)({ connectedEmbeddedActivity: currentEmbeddedActivity });
   const items2 = [layoutMode, currentEmbeddedActivity];
   const layoutEffect = noop.useLayoutEffect(() => {
     if (null != currentEmbeddedActivity) {
@@ -775,8 +775,8 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     tmp14 = null == tmp4;
   }
   const tmp10 = useQueryParams({ currentEmbeddedActivity, channel });
-  let obj2 = { orientationLockState: stateFromStores, showLoadingIndicator: tmp14, setShowLoadingStateForLockingOrientation: tmp9, application: tmp4, setOrientationLockState: layoutMode(9717).setOrientationLockState };
-  setIsResetting = closure_18({ orientationLockState: stateFromStores, showLoadingIndicator: tmp14, setShowLoadingStateForLockingOrientation: tmp9, application: tmp4, setOrientationLockState: layoutMode(9717).setOrientationLockState }).setIsResetting;
+  let obj2 = { orientationLockState: stateFromStores, showLoadingIndicator: tmp14, setShowLoadingStateForLockingOrientation: tmp9, application: tmp4, setOrientationLockState: layoutMode(9749).setOrientationLockState };
+  setIsResetting = closure_18({ orientationLockState: stateFromStores, showLoadingIndicator: tmp14, setShowLoadingStateForLockingOrientation: tmp9, application: tmp4, setOrientationLockState: layoutMode(9749).setOrientationLockState }).setIsResetting;
   let tmp20Result = null;
   if (null != currentEmbeddedActivity) {
     tmp20Result = null;
@@ -822,10 +822,10 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
       obj4.queryParams = tmp10;
       obj4.onLoadError = callback;
       const tmp21 = closure_21;
-      const tmp2Result = tmp2(9726);
-      obj4.allowPopups = tmp5(9725).allowPopups(tmp4);
+      const tmp2Result = tmp2(9758);
+      obj4.allowPopups = tmp5(9757).allowPopups(tmp4);
       obj4.isPipOrGridMode = layoutMode === constants.PIP || layoutMode === constants.GRID;
-      obj4.webViewKey = tmp5(9572).EMBEDDED_ACTIVITY_WEB_VIEW_KEY;
+      obj4.webViewKey = tmp5(9604).EMBEDDED_ACTIVITY_WEB_VIEW_KEY;
       if (tmp18) {
         landscapeSafeAreasConfig = portraitSafeAreasConfig.landscapeSafeAreasConfig;
       }
@@ -833,7 +833,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
       obj4.ignoreSilentHardwareSwitch = !set.has(id);
       obj3.children = closure_13(tmp2Result, obj4);
       tmp20Result = tmp20(tmp21, obj3);
-      const tmp5Result = tmp5(9725);
+      const tmp5Result = tmp5(9757);
     }
   }
   return tmp20Result;

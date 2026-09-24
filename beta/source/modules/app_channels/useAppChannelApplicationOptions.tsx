@@ -1,12 +1,12 @@
-// Module ID: 9806
-// Function ID: 9807
+// Module ID: 9838
+// Function ID: 9839
 // Name: useAppChannelApplicationOptions
-// Dependencies: [19, 9312, 558, 568, 9807, 7410, 2]
+// Dependencies: [19, 9344, 558, 568, 9839, 7442, 2]
 
-// Module 9806 (useAppChannelApplicationOptions)
+// Module 9838 (useAppChannelApplicationOptions)
 import c from "c" /* 568 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 7410 */;
-import useGuildEmbeddedApplications from "useGuildEmbeddedApplications" /* 9807 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 7442 */;
+import useGuildEmbeddedApplications from "useGuildEmbeddedApplications" /* 9839 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,7 +23,7 @@ function compareOptions(status, status2) {
   }
   return localeCompareResult;
 }
-const EmbeddedSurfaceType = fn(9312).EmbeddedSurfaceType;
+const EmbeddedSurfaceType = fn(9344).EmbeddedSurfaceType;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_channels/useAppChannelApplicationOptions.tsx");

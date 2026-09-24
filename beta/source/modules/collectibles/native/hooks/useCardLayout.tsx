@@ -1,12 +1,12 @@
-// Module ID: 16138
-// Function ID: 16139
+// Module ID: 16148
+// Function ID: 16149
 // Name: useCardLayout
-// Dependencies: [9042, 558, 568, 1482, 2]
+// Dependencies: [9074, 558, 568, 1482, 2]
 
-// Module 16138 (useCardLayout)
+// Module 16148 (useCardLayout)
 import c from "c" /* 568 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9042 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9074 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,14 +34,14 @@ export const useCardLayout = ReactCompilerGating.isReactCompilerEnabled() ? (() 
     if (width >= 768) {
       num2 = 4;
     }
-    const result = tmp(9042).COLLECTIBLES_SHOP_CARD_WIDTH * num;
+    const result = tmp(9074).COLLECTIBLES_SHOP_CARD_WIDTH * num;
     const diff = num - 1;
-    const diff1 = width - (result + tmp(9042).COLLECTIBLES_SHOP_CARD_GAP * diff);
-    if (diff1 < 2 * tmp(9042).COLLECTIBLES_SHOP_CARD_GAP) {
+    const diff1 = width - (result + tmp(9074).COLLECTIBLES_SHOP_CARD_GAP * diff);
+    if (diff1 < 2 * tmp(9074).COLLECTIBLES_SHOP_CARD_GAP) {
       const _Math = Math;
       let bound = Math.max(4, diff1);
     } else {
-      bound = 2 * tmp(9042).COLLECTIBLES_SHOP_CARD_GAP;
+      bound = 2 * tmp(9074).COLLECTIBLES_SHOP_CARD_GAP;
     }
     if (cResult[2] === num) {
       if (cResult[3] === bound) {
@@ -52,7 +52,7 @@ export const useCardLayout = ReactCompilerGating.isReactCompilerEnabled() ? (() 
         let tmp13 = tmp9;
         let tmp14 = num;
         let tmp16 = tmp;
-        if (tmp9 > tmp(9042).COLLECTIBLES_SHOP_CARD_MAX_WIDTH) {
+        if (tmp9 > tmp(9074).COLLECTIBLES_SHOP_CARD_MAX_WIDTH) {
           let tmp21 = num;
           tmp12 = tmp;
           tmp13 = tmp9;
@@ -79,15 +79,15 @@ export const useCardLayout = ReactCompilerGating.isReactCompilerEnabled() ? (() 
         }
         const _Math2 = Math;
         const _Math3 = Math;
-        const bound1 = Math.max(tmp13, tmp16(9042).COLLECTIBLES_SHOP_CARD_WIDTH);
-        const bound2 = Math.min(bound1, tmp16(9042).COLLECTIBLES_SHOP_CARD_MAX_WIDTH);
+        const bound1 = Math.max(tmp13, tmp16(9074).COLLECTIBLES_SHOP_CARD_WIDTH);
+        const bound2 = Math.min(bound1, tmp16(9074).COLLECTIBLES_SHOP_CARD_MAX_WIDTH);
         const result2 = bound2 * tmp14;
         const diff2 = tmp14 - 1;
-        if (result2 + (bound + tmp12(9042).COLLECTIBLES_SHOP_CARD_GAP * diff2) > width) {
+        if (result2 + (bound + tmp12(9074).COLLECTIBLES_SHOP_CARD_GAP * diff2) > width) {
           if (1 < tmp14) {
             const _Symbol = Symbol;
             if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj3 = { columns: 1, cardWidth: "Array", rowWidth: "unicodeVersion" };
+              const obj3 = { columns: 1, cardWidth: "Array", rowWidth: "apply" };
               cResult[6] = obj3;
               let tmp30 = obj3;
             } else {
@@ -97,7 +97,7 @@ export const useCardLayout = ReactCompilerGating.isReactCompilerEnabled() ? (() 
           }
         }
         const result3 = bound2 * tmp14;
-        const sum1 = result3 + tmp16(9042).COLLECTIBLES_SHOP_CARD_GAP * diff2;
+        const sum1 = result3 + tmp16(9074).COLLECTIBLES_SHOP_CARD_GAP * diff2;
         if (cResult[7] === bound2) {
           if (cResult[8] === tmp14) {
             if (cResult[9] === sum1) {
@@ -114,7 +114,7 @@ export const useCardLayout = ReactCompilerGating.isReactCompilerEnabled() ? (() 
         tmp29 = obj4;
       }
     }
-    const result4 = (width - (bound + tmp(9042).COLLECTIBLES_SHOP_CARD_GAP * diff)) / num;
+    const result4 = (width - (bound + tmp(9074).COLLECTIBLES_SHOP_CARD_GAP * diff)) / num;
     cResult[2] = num;
     cResult[3] = bound;
     cResult[4] = width;
@@ -142,9 +142,9 @@ export const useCardLayout = ReactCompilerGating.isReactCompilerEnabled() ? (() 
       const _Math = Math;
       let bound = Math.max(4, diff1);
     } else {
-      bound = 2 * tmp2(9042).COLLECTIBLES_SHOP_CARD_GAP;
+      bound = 2 * tmp2(9074).COLLECTIBLES_SHOP_CARD_GAP;
     }
-    const result1 = (width - (bound + tmp2(9042).COLLECTIBLES_SHOP_CARD_GAP * diff)) / num;
+    const result1 = (width - (bound + tmp2(9074).COLLECTIBLES_SHOP_CARD_GAP * diff)) / num;
     let tmp10 = tmp2;
     let tmp11 = result1;
     let tmp12 = num;
@@ -176,18 +176,18 @@ export const useCardLayout = ReactCompilerGating.isReactCompilerEnabled() ? (() 
     }
     const _Math2 = Math;
     const _Math3 = Math;
-    const bound1 = Math.max(tmp11, tmp14(9042).COLLECTIBLES_SHOP_CARD_WIDTH);
-    const bound2 = Math.min(bound1, tmp14(9042).COLLECTIBLES_SHOP_CARD_MAX_WIDTH);
+    const bound1 = Math.max(tmp11, tmp14(9074).COLLECTIBLES_SHOP_CARD_WIDTH);
+    const bound2 = Math.min(bound1, tmp14(9074).COLLECTIBLES_SHOP_CARD_MAX_WIDTH);
     const result3 = bound2 * tmp12;
     const diff2 = tmp12 - 1;
-    if (result3 + (bound + tmp10(9042).COLLECTIBLES_SHOP_CARD_GAP * diff2) > width) {
+    if (result3 + (bound + tmp10(9074).COLLECTIBLES_SHOP_CARD_GAP * diff2) > width) {
       if (1 < tmp12) {
-        let obj = { columns: 1, cardWidth: "Array", rowWidth: "unicodeVersion" };
+        let obj = { columns: 1, cardWidth: "Array", rowWidth: "apply" };
       }
       return obj;
     }
     obj = { columns: tmp12, cardWidth: bound2, rowWidth: null };
     const result4 = bound2 * tmp12;
-    obj.rowWidth = result4 + tmp14(9042).COLLECTIBLES_SHOP_CARD_GAP * diff2;
+    obj.rowWidth = result4 + tmp14(9074).COLLECTIBLES_SHOP_CARD_GAP * diff2;
   }
 });

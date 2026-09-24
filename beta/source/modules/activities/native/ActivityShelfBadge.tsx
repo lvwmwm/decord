@@ -1,9 +1,9 @@
-// Module ID: 12226
-// Function ID: 12227
+// Module ID: 12262
+// Function ID: 12263
 // Name: ActivityShelfBadge
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 1181, 558, 568, 1982, 1119, 4754, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 1181, 558, 568, 1982, 1119, 4786, 2]
 
-// Module 12226 (ActivityShelfBadge)
+// Module 12262 (ActivityShelfBadge)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import Server from "Server" /* 1982 */;
@@ -12,7 +12,7 @@ import noop from "module_19" /* 19 */;
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { badge: null, newBadge: null, updatedBadge: null, elevationShadow: null, badgeText: null };
 const rect = { position: "absolute", top: 4, right: 4, display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND };
 obj2.badge = rect;
@@ -52,7 +52,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[5] !== tmp4.badgeText) {
           const obj2 = { variant: "text-xs/semibold", style: tmp4.badgeText, color: "text-overlay-light", children: tmp18 };
-          const tmp22 = jsx(tmp(4754).Text, { variant: "text-xs/semibold", style: tmp4.badgeText, color: "text-overlay-light", children: tmp18 });
+          const tmp22 = jsx(tmp(4786).Text, { variant: "text-xs/semibold", style: tmp4.badgeText, color: "text-overlay-light", children: tmp18 });
           cResult[5] = tmp4.badgeText;
           cResult[6] = tmp22;
           let tmp20 = tmp22;
@@ -97,7 +97,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[15] !== tmp4.badgeText) {
           const obj4 = { variant: "text-xs/semibold", style: tmp4.badgeText, color: "text-overlay-light", children: tmp7 };
-          const tmp11 = jsx(tmp(4754).Text, { variant: "text-xs/semibold", style: tmp4.badgeText, color: "text-overlay-light", children: tmp7 });
+          const tmp11 = jsx(tmp(4786).Text, { variant: "text-xs/semibold", style: tmp4.badgeText, color: "text-overlay-light", children: tmp7 });
           cResult[15] = tmp4.badgeText;
           cResult[16] = tmp11;
           let tmp9 = tmp11;
@@ -142,7 +142,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj2 = { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: null };
     const intl = tmp2(1119).intl;
     obj2.children = intl.string(tmp2(1119).t.y2b7CA);
-    obj.children = jsx(tmp2(4754).Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: null });
+    obj.children = jsx(tmp2(4786).Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: null });
     let tmp6 = <View style={null}>{null}</View>;
   } else {
     tmp6 = null;
@@ -154,7 +154,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj4 = { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: null };
       const intl2 = tmp2(1119).intl;
       obj4.children = intl2.string(tmp2(1119).t["/qdhkk"]);
-      obj3.children = jsx(tmp2(4754).Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: null });
+      obj3.children = jsx(tmp2(4786).Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: null });
       tmp6 = <View style={null}>{null}</View>;
     }
   }

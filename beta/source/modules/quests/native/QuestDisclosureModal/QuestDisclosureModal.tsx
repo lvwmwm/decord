@@ -1,17 +1,17 @@
-// Module ID: 15370
-// Function ID: 15371
+// Module ID: 15380
+// Function ID: 15381
 // Name: QuestDisclosureModal
-// Dependencies: [21, 558, 568, 15369, 7621, 7238, 1119, 5839, 15371, 7246, 2]
+// Dependencies: [21, 558, 568, 15379, 7653, 7270, 1119, 5871, 15381, 7278, 2]
 
-// Module 15370 (QuestDisclosureModal)
+// Module 15380 (QuestDisclosureModal)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import _modDef7238 from "module_7238" /* 7238 */;
-import Navigator from "Navigator" /* 7246 */;
-import HeaderActionButton from "HeaderActionButton" /* 7621 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 15369 */;
-import QuestDisclosureModalInnerDefault from "QuestDisclosureModalInner" /* 15371 */;
+import _modDef7270 from "module_7270" /* 7270 */;
+import Navigator from "Navigator" /* 7278 */;
+import HeaderActionButton from "HeaderActionButton" /* 7653 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 15379 */;
+import QuestDisclosureModalInnerDefault from "QuestDisclosureModalInner" /* 15381 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,10 +30,10 @@ const headerLeft = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { source: _modDef7238, onPress: first, accessibilityLabel: null };
+    const obj2 = { source: _modDef7270, onPress: first, accessibilityLabel: null };
     const intl = tmp(1119).intl;
     obj2.accessibilityLabel = intl.string(tmp(1119).t.cpT0Cq);
-    const tmp8 = jsx(tmp(7621).HeaderActionButton, { source: _modDef7238, onPress: first, accessibilityLabel: null });
+    const tmp8 = jsx(tmp(7653).HeaderActionButton, { source: _modDef7270, onPress: first, accessibilityLabel: null });
     cResult[1] = tmp8;
     let tmp5 = tmp8;
   } else {
@@ -42,7 +42,7 @@ const headerLeft = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp5;
 }) : (() => {
   const obj = {
-    source: _modDef7238,
+    source: _modDef7270,
     onPress() {
       return QuestDisclosureModalActionCreatorsDefault.hideModal();
     },
@@ -51,7 +51,7 @@ const headerLeft = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const intl = util.intl;
   obj.accessibilityLabel = intl.string(util.t.cpT0Cq);
   return jsx(HeaderActionButton.HeaderActionButton, {
-    source: _modDef7238,
+    source: _modDef7270,
     onPress() {
       return QuestDisclosureModalActionCreatorsDefault.hideModal();
     },

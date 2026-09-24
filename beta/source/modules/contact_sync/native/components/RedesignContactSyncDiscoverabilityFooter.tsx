@@ -1,16 +1,16 @@
-// Module ID: 12833
-// Function ID: 12834
+// Module ID: 12869
+// Function ID: 12870
 // Name: RedesignContactSyncDiscoverabilityFooter
-// Dependencies: [1078, 21, 558, 568, 1119, 2112, 5903, 7446, 2]
+// Dependencies: [1078, 21, 558, 568, 1119, 2112, 5935, 7478, 2]
 
-// Module 12833 (RedesignContactSyncDiscoverabilityFooter)
+// Module 12869 (RedesignContactSyncDiscoverabilityFooter)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import Constants from "Constants" /* 1078 */;
 import util from "util" /* 1119 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import TableSwitchRow from "TableSwitchRow" /* 7446 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import TableSwitchRow from "TableSwitchRow" /* 7478 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

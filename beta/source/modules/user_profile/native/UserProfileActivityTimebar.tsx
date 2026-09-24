@@ -1,13 +1,13 @@
-// Module ID: 13318
-// Function ID: 13319
+// Module ID: 13354
+// Function ID: 13355
 // Name: UserProfileActivityTimebar
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 13319, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 13355, 4786, 2]
 
-// Module 13318 (UserProfileActivityTimebar)
+// Module 13354 (UserProfileActivityTimebar)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useActivityTimer from "useActivityTimer" /* 13319 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useActivityTimer from "useActivityTimer" /* 13355 */;
 import noop from "module_19" /* 19 */;
 
 const useActivityTimerDefault = useActivityTimer;
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { bar: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.xs, height: 4, marginBottom: 4 }, progress: null, textRow: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.xs, height: 4, marginBottom: 4 };
 obj2.progress = { backgroundColor: nativeDefault.colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND, borderRadius: nativeDefault.radii.xs, height: "100%", minWidth: 4 };
@@ -55,17 +55,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp14 = cResult[10];
         }
         if (cResult[11] !== elapsed) {
-          const formatTimeResult = tmp(13319).formatTime(elapsed);
+          const formatTimeResult = tmp(13355).formatTime(elapsed);
           cResult[11] = elapsed;
           cResult[12] = formatTimeResult;
           let tmp18 = formatTimeResult;
-          const tmpResult = tmp(13319);
+          const tmpResult = tmp(13355);
         } else {
           tmp18 = cResult[12];
         }
         if (cResult[13] !== tmp18) {
           const obj3 = { variant: "text-xs/normal", tabularNumbers: true, color: "text-subtle", children: tmp18 };
-          const tmp22 = React4(tmp(4754).Text, obj3);
+          const tmp22 = React4(tmp(4786).Text, obj3);
           cResult[13] = tmp18;
           cResult[14] = tmp22;
           let tmp20 = tmp22;
@@ -73,17 +73,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp20 = cResult[14];
         }
         if (cResult[15] !== duration) {
-          const formatTimeResult1 = tmp(13319).formatTime(duration);
+          const formatTimeResult1 = tmp(13355).formatTime(duration);
           cResult[15] = duration;
           cResult[16] = formatTimeResult1;
           let tmp23 = formatTimeResult1;
-          const tmpResult2 = tmp(13319);
+          const tmpResult2 = tmp(13355);
         } else {
           tmp23 = cResult[16];
         }
         if (cResult[17] !== tmp23) {
           const obj4 = { variant: "text-xs/normal", tabularNumbers: true, color: "text-subtle", children: tmp23 };
-          const tmp27 = React4(tmp(4754).Text, obj4);
+          const tmp27 = React4(tmp(4786).Text, obj4);
           cResult[17] = tmp23;
           cResult[18] = tmp27;
           let tmp25 = tmp27;

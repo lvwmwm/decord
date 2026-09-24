@@ -1,12 +1,12 @@
-// Module ID: 16320
-// Function ID: 16321
+// Module ID: 16330
+// Function ID: 16331
 // Name: AgeGateUnderage
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 7185, 1488, 5839, 5845, 1119, 7216, 7219, 5907, 7215, 2112, 4754, 5188, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 7217, 1488, 5871, 5877, 1119, 7248, 7251, 5939, 7247, 2112, 4786, 5220, 2]
 
-// Module 16320 (AgeGateUnderage)
+// Module 16330 (AgeGateUnderage)
 import nativeDefault from "native" /* 580 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7185 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7217 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -14,7 +14,7 @@ const View = fn(17).View;
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles((arg0) => {
   let num = 0;
   if (arg0) {
@@ -56,7 +56,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         } else {
           tmp15 = cResult[7];
         }
-        tmp(5845).useNavigatorBackPressHandler(tmp15);
+        tmp(5877).useNavigatorBackPressHandler(tmp15);
         if (cResult[8] !== tmp4) {
           const intl = tmp(1119).intl;
           const string = intl.string;
@@ -73,7 +73,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
           if (cResult[10] !== tmp8) {
             let tmp22 = null;
             if (!tmp8) {
-              tmp22 = closure_6(tmp7(7216), {});
+              tmp22 = closure_6(tmp7(7248), {});
             }
             cResult[10] = tmp8;
             cResult[11] = tmp22;
@@ -83,8 +83,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
           }
           const _Symbol = Symbol;
           if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp28 = closure_6(tmp7(7219), {});
-            const tmp29 = closure_6(tmp(5907).ShieldSpotIllustration, {});
+            const tmp28 = closure_6(tmp7(7251), {});
+            const tmp29 = closure_6(tmp(5939).ShieldSpotIllustration, {});
             cResult[12] = tmp29;
             cResult[13] = tmp28;
             let tmp26 = tmp28;
@@ -141,12 +141,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
                     const obj4 = { style: tmp9.body, variant: "text-md/medium", color: "interactive-text-default", children: null };
                     const intl4 = tmp(1119).intl;
                     obj4.children = intl4.format(tmp(1119).t["3axQdB"], { days: 30 });
-                    const items1 = [closure_6(tmp(4754).Text, obj4), ];
+                    const items1 = [closure_6(tmp(4786).Text, obj4), ];
                     const obj5 = { style: tmp9.buttonWrapper, children: null };
                     const obj6 = { onPress: onClose, text: null, grow: true };
                     const intl5 = tmp(1119).intl;
                     obj6.text = intl5.string(tmp(1119).t.JhDw5o);
-                    obj5.children = closure_6(tmp(5188).Button, obj6);
+                    obj5.children = closure_6(tmp(5220).Button, obj6);
                     items1[1] = closure_6(View, obj5);
                     obj3.children = items1;
                     tmp43 = closure_8(closure_7, obj3);
@@ -159,7 +159,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
                   tmp42 = tmp43;
                 }
                 const obj7 = { style: tmp9.body, variant: "text-md/medium", color: "interactive-text-default", children: cResult[19] };
-                const tmp41 = closure_6(tmp(4754).Text, obj7);
+                const tmp41 = closure_6(tmp(4786).Text, obj7);
                 cResult[20] = tmp9.body;
                 cResult[21] = cResult[19];
                 cResult[22] = tmp41;
@@ -184,13 +184,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
             cResult[19] = stringResult1;
           }
           const obj9 = { style: tmp9.header, children: cResult[9] };
-          const tmp32 = closure_6(tmp7(7215), obj9);
+          const tmp32 = closure_6(tmp7(7247), obj9);
           cResult[14] = cResult[9];
           cResult[15] = tmp9.header;
           cResult[16] = tmp32;
           tmp30 = tmp32;
         }
-        const tmpResult2 = tmp(5845);
+        const tmpResult2 = tmp(5877);
       }
     }
   }

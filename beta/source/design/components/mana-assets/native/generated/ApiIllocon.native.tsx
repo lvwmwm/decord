@@ -1,13 +1,13 @@
-// Module ID: 5980
-// Function ID: 5981
+// Module ID: 6012
+// Function ID: 6013
 // Name: ApiIllocon
-// Dependencies: [21, 558, 568, 5981, 5802, 2]
+// Dependencies: [21, 558, 568, 6013, 5834, 2]
 
-// Module 5980 (ApiIllocon)
+// Module 6012 (ApiIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef5981 from "module_5981" /* 5981 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6013 from "module_6013" /* 6013 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const ApiIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef5981 };
+    const obj2 = { uri: _modDef6013 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const ApiIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5981 };
+  const obj2 = { uri: _modDef6013 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

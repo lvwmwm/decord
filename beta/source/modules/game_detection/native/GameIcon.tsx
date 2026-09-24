@@ -1,15 +1,15 @@
-// Module ID: 7419
-// Function ID: 7420
+// Module ID: 7451
+// Function ID: 7452
 // Name: GameIcon
-// Dependencies: [19, 17, 1378, 21, 4758, 580, 7420, 7421, 7422, 558, 568, 7423, 2]
+// Dependencies: [19, 17, 1378, 21, 4790, 580, 7452, 7453, 7454, 558, 568, 7455, 2]
 
-// Module 7419 (GameIcon)
+// Module 7451 (GameIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import _modDef7420 from "module_7420" /* 7420 */;
-import _modDef7421 from "module_7421" /* 7421 */;
-import _modDef7422 from "module_7422" /* 7422 */;
-import _modDef7423 from "module_7423" /* 7423 */;
+import _modDef7452 from "module_7452" /* 7452 */;
+import _modDef7453 from "module_7453" /* 7453 */;
+import _modDef7454 from "module_7454" /* 7454 */;
+import _modDef7455 from "module_7455" /* 7455 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -19,7 +19,7 @@ const PremiumSubscriptionSKUs = fn(1378).PremiumSubscriptionSKUs;
 const jsx = fn(21).jsx;
 const GameIconSizes = { SIZE_24: "size_24", SMALL: "small", NORMAL: "normal", LARGE: "large" };
 let obj2 = { [GameIconSizes.SIZE_24]: 24, [GameIconSizes.SMALL]: 32, [GameIconSizes.NORMAL]: 48, [GameIconSizes.LARGE]: 80 };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj4 = { gameIcon: { justifyContent: "center", alignItems: "center" }, size24: null, small: null, normal: null, large: null, placeholder: null, entityWrapper: null };
 let size = { width: obj2.size_24, height: obj2.size_24, borderRadius: nativeDefault.radii.sm };
 obj4.size24 = size;
@@ -122,7 +122,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           if (null == tmp17) {
-            tmp17 = _modDef7423;
+            tmp17 = _modDef7455;
             items1.push(tmp4.placeholder);
           }
           cResult[5] = game;
@@ -138,17 +138,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp8 = items1;
         } else {
           if (PremiumSubscriptionSKUs.TIER_0 === skuId) {
-            let tmp11 = _modDef7420;
+            let tmp11 = _modDef7452;
             cResult[14] = skuId;
             cResult[15] = tmp11;
           } else if (tmp10.TIER_1 !== skuId) {
             if (tmp10.TIER_2 === skuId) {
-              tmp11 = _modDef7422;
+              tmp11 = _modDef7454;
             } else {
               tmp11 = null;
             }
           }
-          tmp11 = _modDef7421;
+          tmp11 = _modDef7453;
         }
       }
     }
@@ -180,7 +180,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     if (null == tmp12) {
-      tmp12 = _modDef7423;
+      tmp12 = _modDef7455;
       items.push(tmp2.placeholder);
     }
     const obj3 = { style: null, children: null };

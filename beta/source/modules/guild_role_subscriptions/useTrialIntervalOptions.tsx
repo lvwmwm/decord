@@ -1,15 +1,15 @@
-// Module ID: 15491
-// Function ID: 15492
+// Module ID: 15501
+// Function ID: 15502
 // Name: useTrialIntervalOptions
-// Dependencies: [19, 15464, 1378, 558, 568, 1119, 15490, 2]
+// Dependencies: [19, 15474, 1378, 558, 568, 1119, 15500, 2]
 
-// Module 15491 (useTrialIntervalOptions)
+// Module 15501 (useTrialIntervalOptions)
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const TIER_TRIAL_INTERVALS = fn(15464).TIER_TRIAL_INTERVALS;
+const TIER_TRIAL_INTERVALS = fn(15474).TIER_TRIAL_INTERVALS;
 const SubscriptionIntervalTypes = fn(1378).SubscriptionIntervalTypes;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -26,9 +26,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (value.interval === constants.DAY) {
           if (7 === value.interval_count) {
             const intl = closure_0(1119).intl;
-            const obj3 = { defaultLimit: closure_0(15490).formatPlanIntervalDuration(value) };
+            const obj3 = { defaultLimit: closure_0(15500).formatPlanIntervalDuration(value) };
             let formatToPlainStringResult = intl.formatToPlainString(closure_0(1119).t.XfSsr1, obj3);
-            const obj4 = closure_0(15490);
+            const obj4 = closure_0(15500);
           }
           obj.label = formatToPlainStringResult;
           let tmp5 = value.interval === tmp.DAY;
@@ -38,7 +38,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           obj.isDefault = tmp5;
           return obj;
         }
-        formatToPlainStringResult = closure_0(15490).formatPlanIntervalDuration(value);
+        formatToPlainStringResult = closure_0(15500).formatPlanIntervalDuration(value);
       };
       cResult[3] = fn;
       let tmp5 = fn;
@@ -93,9 +93,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (value.interval === constants.DAY) {
         if (7 === value.interval_count) {
           const intl = closure_1_0(1119).intl;
-          const obj3 = { defaultLimit: closure_1_0(15490).formatPlanIntervalDuration(value) };
+          const obj3 = { defaultLimit: closure_1_0(15500).formatPlanIntervalDuration(value) };
           let formatToPlainStringResult = intl.formatToPlainString(closure_1_0(1119).t.XfSsr1, obj3);
-          const obj4 = closure_1_0(15490);
+          const obj4 = closure_1_0(15500);
         }
         obj.label = formatToPlainStringResult;
         let tmp5 = value.interval === tmp.DAY;
@@ -105,7 +105,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         obj.isDefault = tmp5;
         return obj;
       }
-      formatToPlainStringResult = closure_1_0(15490).formatPlanIntervalDuration(value);
+      formatToPlainStringResult = closure_1_0(15500).formatPlanIntervalDuration(value);
     });
     let selectedOption = closure_0;
     if (null != closure_0) {

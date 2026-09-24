@@ -1,9 +1,9 @@
-// Module ID: 9726
-// Function ID: 9727
+// Module ID: 9758
+// Function ID: 9759
 // Name: EmbeddedActivityWebView
-// Dependencies: [109, 5, 32, 19, 17, 9132, 2008, 1078, 4663, 21, 4758, 3, 1368, 558, 568, 9727, 1259, 8574, 9728, 9729, 1367, 9731, 9732, 1245, 1114, 565, 5110, 1119, 9314, 1275, 9733, 1370, 9560, 9573, 8548, 4959, 9572, 2]
+// Dependencies: [109, 5, 32, 19, 17, 9164, 2008, 1078, 4695, 21, 4790, 3, 1368, 558, 568, 9759, 1259, 8606, 9760, 9761, 1367, 9763, 9764, 1245, 1114, 565, 5142, 1119, 9346, 1275, 9765, 1370, 9592, 9605, 8580, 4991, 9604, 2]
 
-// Module 9726 (EmbeddedActivityWebView)
+// Module 9758 (EmbeddedActivityWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import c from "c" /* 568 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
@@ -11,18 +11,18 @@ import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import v1 from "v1" /* 1259 */;
 import URLUtilsDefault from "URLUtils" /* 1370 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4959 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
-import usePreviousDefault from "usePrevious" /* 8548 */;
-import WebView from "WebView" /* 8574 */;
-import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 9560 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9572 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 9573 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4991 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
+import usePreviousDefault from "usePrevious" /* 8580 */;
+import WebView from "WebView" /* 8606 */;
+import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 9592 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9604 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 9605 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9132 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9164 */;
 
 const require = globalThis.__r;
 
@@ -53,9 +53,9 @@ let Constants = fn(2008);
 ({ ActivityPlatform: closure_11, DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY: closure_12 } = Constants);
 Constants = fn(1078);
 ({ ComponentActions: map1, AnalyticEvents: closure_14 } = Constants);
-const TransportTypes = fn(4663).TransportTypes;
+const TransportTypes = fn(4695).TransportTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_17 = createStyles.createStyles({ webView: { backgroundColor: "transparent" } });
 let logger = new LoggerDefault("EmbeddedActivityWebView");
 const PlatformUtils = fn(1368);

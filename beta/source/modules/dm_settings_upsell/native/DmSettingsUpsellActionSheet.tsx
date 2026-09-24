@@ -1,16 +1,16 @@
-// Module ID: 17769
-// Function ID: 17770
+// Module ID: 17779
+// Function ID: 17780
 // Name: DmSettingsUpsellActionSheet
-// Dependencies: [19, 17, 2067, 21, 4758, 580, 558, 568, 504, 17766, 17770, 4725, 14179, 7241, 2023, 4458, 9617, 1119, 10375, 4754, 5799, 5188, 7449, 2]
+// Dependencies: [19, 17, 2067, 21, 4790, 580, 558, 568, 504, 17776, 17780, 4757, 14216, 7273, 2023, 4490, 9649, 1119, 10414, 4786, 5831, 5220, 7481, 2]
 
-// Module 17769 (DmSettingsUpsellActionSheet)
+// Module 17779 (DmSettingsUpsellActionSheet)
 import nativeDefault from "native" /* 580 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7241 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 14179 */;
-import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 17766 */;
-import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 17770 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7273 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 14216 */;
+import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 17776 */;
+import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 17780 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
@@ -19,7 +19,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { paddingVertical: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 }, headerImage: { alignSelf: "center", width: 73, height: 86 }, title: { textAlign: "center", alignSelf: "center", width: 250 }, body: { textAlign: "center" }, guildContainer: null, guildInfo: null, footer: null };
 let obj3 = { paddingVertical: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 };
 obj2.guildContainer = { paddingVertical: nativeDefault.space.PX_16 };
@@ -124,10 +124,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
             updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
             nextPromise = updateSettingResult.then(() => {
-              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
               const intl = guildId(1119).intl;
               obj2.content = intl.string(guildId(1119).t.rlYD1W);
-              stateFromStores(4458).open(obj2);
+              stateFromStores(4490).open(obj2);
             });
             obj3 = closure_1(closure_2[11]);
             hideActionSheetResult = obj3.hideActionSheet();
@@ -162,10 +162,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
             updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
             nextPromise = updateSettingResult.then(() => {
-              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
               const intl = guildId(1119).intl;
               obj2.content = intl.string(guildId(1119).t.rlYD1W);
-              stateFromStores(4458).open(obj2);
+              stateFromStores(4490).open(obj2);
             });
             obj3 = closure_1(closure_2[11]);
             hideActionSheetResult = obj3.hideActionSheet();
@@ -200,10 +200,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
             updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
             nextPromise = updateSettingResult.then(() => {
-              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
               const intl = guildId(1119).intl;
               obj2.content = intl.string(guildId(1119).t.rlYD1W);
-              stateFromStores(4458).open(obj2);
+              stateFromStores(4490).open(obj2);
             });
             obj3 = closure_1(closure_2[11]);
             hideActionSheetResult = obj3.hideActionSheet();
@@ -228,7 +228,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             return;
           }
         }
-        tmp16[0] = stateFromStores(10375);
+        tmp16[0] = stateFromStores(10414);
         tmp16[1] = tmp4.headerImage;
         const tmp18 = closure_7(closure_5, tmp16);
         cResult[13] = tmp4.headerImage;
@@ -242,10 +242,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
             updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
             nextPromise = updateSettingResult.then(() => {
-              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
               const intl = guildId(1119).intl;
               obj2.content = intl.string(guildId(1119).t.rlYD1W);
-              stateFromStores(4458).open(obj2);
+              stateFromStores(4490).open(obj2);
             });
             obj3 = closure_1(closure_2[11]);
             hideActionSheetResult = obj3.hideActionSheet();
@@ -266,10 +266,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
             updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
             nextPromise = updateSettingResult.then(() => {
-              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
               const intl = guildId(1119).intl;
               obj2.content = intl.string(guildId(1119).t.rlYD1W);
-              stateFromStores(4458).open(obj2);
+              stateFromStores(4490).open(obj2);
             });
             obj3 = closure_1(closure_2[11]);
             hideActionSheetResult = obj3.hideActionSheet();
@@ -306,10 +306,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
             updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
             nextPromise = updateSettingResult.then(() => {
-              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
               const intl = guildId(1119).intl;
               obj2.content = intl.string(guildId(1119).t.rlYD1W);
-              stateFromStores(4458).open(obj2);
+              stateFromStores(4490).open(obj2);
             });
             obj3 = closure_1(closure_2[11]);
             hideActionSheetResult = obj3.hideActionSheet();
@@ -328,10 +328,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
             updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
             nextPromise = updateSettingResult.then(() => {
-              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
               const intl = guildId(1119).intl;
               obj2.content = intl.string(guildId(1119).t.rlYD1W);
-              stateFromStores(4458).open(obj2);
+              stateFromStores(4490).open(obj2);
             });
             obj3 = closure_1(closure_2[11]);
             hideActionSheetResult = obj3.hideActionSheet();
@@ -358,7 +358,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
         }
         obj2.children = tmp19;
-        const tmp23 = closure_7(tmp(4754).Text, obj2);
+        const tmp23 = closure_7(tmp(4786).Text, obj2);
         cResult[16] = tmp4.title;
         cResult[17] = tmp23;
       } else {
@@ -370,10 +370,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
             updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
             nextPromise = updateSettingResult.then(() => {
-              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
               const intl = guildId(1119).intl;
               obj2.content = intl.string(guildId(1119).t.rlYD1W);
-              stateFromStores(4458).open(obj2);
+              stateFromStores(4490).open(obj2);
             });
             obj3 = closure_1(closure_2[11]);
             hideActionSheetResult = obj3.hideActionSheet();
@@ -392,10 +392,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
             updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
             nextPromise = updateSettingResult.then(() => {
-              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
               const intl = guildId(1119).intl;
               obj2.content = intl.string(guildId(1119).t.rlYD1W);
-              stateFromStores(4458).open(obj2);
+              stateFromStores(4490).open(obj2);
             });
             obj3 = closure_1(closure_2[11]);
             hideActionSheetResult = obj3.hideActionSheet();
@@ -433,10 +433,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
             updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
             nextPromise = updateSettingResult.then(() => {
-              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
               const intl = guildId(1119).intl;
               obj2.content = intl.string(guildId(1119).t.rlYD1W);
-              stateFromStores(4458).open(obj2);
+              stateFromStores(4490).open(obj2);
             });
             obj3 = closure_1(closure_2[11]);
             hideActionSheetResult = obj3.hideActionSheet();
@@ -455,10 +455,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
             updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
             nextPromise = updateSettingResult.then(() => {
-              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+              const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
               const intl = guildId(1119).intl;
               obj2.content = intl.string(guildId(1119).t.rlYD1W);
-              stateFromStores(4458).open(obj2);
+              stateFromStores(4490).open(obj2);
             });
             obj3 = closure_1(closure_2[11]);
             hideActionSheetResult = obj3.hideActionSheet();
@@ -493,10 +493,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
               updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
               nextPromise = updateSettingResult.then(() => {
-                const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+                const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
                 const intl = guildId(1119).intl;
                 obj2.content = intl.string(guildId(1119).t.rlYD1W);
-                stateFromStores(4458).open(obj2);
+                stateFromStores(4490).open(obj2);
               });
               obj3 = closure_1(closure_2[11]);
               hideActionSheetResult = obj3.hideActionSheet();
@@ -535,10 +535,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
               updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
               nextPromise = updateSettingResult.then(() => {
-                const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+                const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
                 const intl = guildId(1119).intl;
                 obj2.content = intl.string(guildId(1119).t.rlYD1W);
-                stateFromStores(4458).open(obj2);
+                stateFromStores(4490).open(obj2);
               });
               obj3 = closure_1(closure_2[11]);
               hideActionSheetResult = obj3.hideActionSheet();
@@ -557,10 +557,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
               updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
               nextPromise = updateSettingResult.then(() => {
-                const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+                const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
                 const intl = guildId(1119).intl;
                 obj2.content = intl.string(guildId(1119).t.rlYD1W);
-                stateFromStores(4458).open(obj2);
+                stateFromStores(4490).open(obj2);
               });
               obj3 = closure_1(closure_2[11]);
               hideActionSheetResult = obj3.hideActionSheet();
@@ -586,11 +586,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             }
           }
           tmp37[0] = stateFromStores;
-          tmp37[1] = tmp(5799).GuildIconSizes.SMALL_32;
-          const tmp38 = closure_7(stateFromStores(5799), tmp37);
+          tmp37[1] = tmp(5831).GuildIconSizes.SMALL_32;
+          const tmp38 = closure_7(stateFromStores(5831), tmp37);
           cResult[24] = stateFromStores;
           cResult[25] = tmp38;
-          const tmp36 = stateFromStores(5799);
+          const tmp36 = stateFromStores(5831);
         } else {
           class E {
             constructor() {
@@ -600,10 +600,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
               updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
               nextPromise = updateSettingResult.then(() => {
-                const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+                const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
                 const intl = guildId(1119).intl;
                 obj2.content = intl.string(guildId(1119).t.rlYD1W);
-                stateFromStores(4458).open(obj2);
+                stateFromStores(4490).open(obj2);
               });
               obj3 = closure_1(closure_2[11]);
               hideActionSheetResult = obj3.hideActionSheet();
@@ -622,10 +622,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
               updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
               nextPromise = updateSettingResult.then(() => {
-                const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+                const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
                 const intl = guildId(1119).intl;
                 obj2.content = intl.string(guildId(1119).t.rlYD1W);
-                stateFromStores(4458).open(obj2);
+                stateFromStores(4490).open(obj2);
               });
               obj3 = closure_1(closure_2[11]);
               hideActionSheetResult = obj3.hideActionSheet();
@@ -650,7 +650,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               return;
             }
           }
-          const tmp40 = closure_7(tmp(4754).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null });
+          const tmp40 = closure_7(tmp(4786).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null });
           cResult[26] = stateFromStores.name;
           cResult[27] = tmp40;
           const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
@@ -663,10 +663,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
               updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
               nextPromise = updateSettingResult.then(() => {
-                const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+                const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
                 const intl = guildId(1119).intl;
                 obj2.content = intl.string(guildId(1119).t.rlYD1W);
-                stateFromStores(4458).open(obj2);
+                stateFromStores(4490).open(obj2);
               });
               obj3 = closure_1(closure_2[11]);
               hideActionSheetResult = obj3.hideActionSheet();
@@ -685,10 +685,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               RestrictedGuildIds = closure_0(closure_2[14]).RestrictedGuildIds;
               updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
               nextPromise = updateSettingResult.then(() => {
-                const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+                const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
                 const intl = guildId(1119).intl;
                 obj2.content = intl.string(guildId(1119).t.rlYD1W);
-                stateFromStores(4458).open(obj2);
+                stateFromStores(4490).open(obj2);
               });
               obj3 = closure_1(closure_2[11]);
               hideActionSheetResult = obj3.hideActionSheet();
@@ -708,7 +708,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         cResult[31] = tmp44;
       }
       const obj7 = { variant: "text-md/normal", color: "text-default", style: tmp4.body, children: tmp24 };
-      const tmp29 = closure_7(tmp(4754).Text, obj7);
+      const tmp29 = closure_7(tmp(4786).Text, obj7);
       cResult[20] = tmp4.body;
       cResult[21] = tmp24;
       cResult[22] = tmp29;
@@ -747,27 +747,27 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   if (null != stateFromStores) {
     let obj2 = { startExpanded: true, children: null };
     let obj3 = { style: tmp.container, children: null };
-    const obj4 = { source: stateFromStores(10375), style: tmp.headerImage };
+    const obj4 = { source: stateFromStores(10414), style: tmp.headerImage };
     const items2 = [closure_7(closure_5, obj4), , , , , , ];
     const obj5 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.title, children: null };
     let intl = tmp2(1119).intl;
     obj5.children = intl.string(tmp2(1119).t.w2BvnL);
-    items2[1] = closure_7(tmp2(4754).Text, obj5);
+    items2[1] = closure_7(tmp2(4786).Text, obj5);
     const obj6 = { variant: "text-md/normal", color: "text-default", style: tmp.body, children: null };
     const intl2 = tmp2(1119).intl;
     const obj7 = { guild_name: stateFromStores.name };
     obj6.children = intl2.format(tmp2(1119).t.Depjkv, obj7);
-    items2[2] = closure_7(tmp2(4754).Text, obj6);
+    items2[2] = closure_7(tmp2(4786).Text, obj6);
     const obj8 = { style: tmp.guildContainer, children: null };
     const obj9 = { variant: "eyebrow", color: "text-default", children: null };
     const intl3 = tmp2(1119).intl;
     obj9.children = intl3.string(tmp2(1119).t.KPB2iw);
-    const items3 = [closure_7(tmp2(4754).Text, obj9), ];
+    const items3 = [closure_7(tmp2(4786).Text, obj9), ];
     const obj10 = { style: tmp.guildInfo, children: null };
-    const obj11 = { guild: stateFromStores, size: tmp2(5799).GuildIconSizes.SMALL_32 };
-    const items4 = [closure_7(stateFromStores(5799), obj11), ];
+    const obj11 = { guild: stateFromStores, size: tmp2(5831).GuildIconSizes.SMALL_32 };
+    const items4 = [closure_7(stateFromStores(5831), obj11), ];
     const obj12 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores.name };
-    items4[1] = closure_7(tmp2(4754).Text, obj12);
+    items4[1] = closure_7(tmp2(4786).Text, obj12);
     obj10.children = items4;
     items3[1] = closure_8(closure_4, obj10);
     obj8.children = items3;
@@ -779,10 +779,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           sanitizedRestrictedGuilds.add(guildId);
           const RestrictedGuildIds = UserSettings.RestrictedGuildIds;
           RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds)).then(() => {
-            const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9617), content: null };
+            const obj2 = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(9649), content: null };
             const intl = guildId(1119).intl;
             obj2.content = intl.string(guildId(1119).t.rlYD1W);
-            stateFromStores(4458).open(obj2);
+            stateFromStores(4490).open(obj2);
           });
           const updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
           ActionSheetActionCreatorsDefault.hideActionSheet();
@@ -792,7 +792,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     };
     const intl4 = tmp2(1119).intl;
     obj13.text = intl4.string(tmp2(1119).t.TD7iUx);
-    items2[4] = closure_7(tmp2(5188).Button, obj13);
+    items2[4] = closure_7(tmp2(5220).Button, obj13);
     const obj14 = {
       size: "lg",
       variant: "secondary",
@@ -804,7 +804,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     };
     const intl5 = tmp2(1119).intl;
     obj14.text = intl5.string(tmp2(1119).t.PsWbcp);
-    items2[5] = closure_7(tmp2(5188).Button, obj14);
+    items2[5] = closure_7(tmp2(5220).Button, obj14);
     const obj15 = { variant: "text-xs/normal", style: tmp.footer, children: null };
     const intl6 = tmp2(1119).intl;
     const obj16 = {
@@ -817,11 +817,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         }
     };
     obj15.children = intl6.format(tmp2(1119).t.IzZxXW, obj16);
-    items2[6] = closure_7(tmp2(4754).Text, obj15);
+    items2[6] = closure_7(tmp2(4786).Text, obj15);
     obj3.children = items2;
     obj2.children = closure_8(closure_4, obj3);
-    tmp6 = closure_7(tmp2(7449).ActionSheet, obj2);
-    const tmp12 = stateFromStores(5799);
+    tmp6 = closure_7(tmp2(7481).ActionSheet, obj2);
+    const tmp12 = stateFromStores(5831);
   }
   return tmp6;
 });

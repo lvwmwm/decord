@@ -1,17 +1,17 @@
-// Module ID: 10643
-// Function ID: 10644
+// Module ID: 10679
+// Function ID: 10680
 // Name: ForumComposerHeader
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4911, 1119, 5846, 5341, 5308, 4754, 5295, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4943, 1119, 5878, 5373, 5340, 4786, 5327, 2]
 
-// Module 10643 (ForumComposerHeader)
+// Module 10679 (ForumComposerHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useChannelNameDefault from "useChannelName" /* 4911 */;
-import ForumIcon from "ForumIcon" /* 5308 */;
-import Pressables from "Pressables" /* 5341 */;
-import XSmallIcon from "XSmallIcon" /* 5846 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useChannelNameDefault from "useChannelName" /* 4943 */;
+import ForumIcon from "ForumIcon" /* 5340 */;
+import Pressables from "Pressables" /* 5373 */;
+import XSmallIcon from "XSmallIcon" /* 5878 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles((height) => {
   const obj = { headerBar: { height, flexDirection: "row", alignItems: "center" }, headerBarContent: { flexDirection: "row", alignItems: "center", flex: 1 }, headerBarText: { marginHorizontal: nativeDefault.space.PX_16 }, headerBarSeparator: null, button: null };
   const obj4 = {};
@@ -65,7 +65,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onGuidelinesPres
     tmp8 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = hasOwnProperty(tmp(5846).XSmallIcon, {});
+    const tmp11 = hasOwnProperty(tmp(5878).XSmallIcon, {});
     cResult[3] = tmp11;
     let tmp9 = tmp11;
   } else {
@@ -78,7 +78,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onGuidelinesPres
       }
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp16 = hasOwnProperty(tmp(5308).ForumIcon, { size: "sm" });
+        const tmp16 = hasOwnProperty(tmp(5340).ForumIcon, { size: "sm" });
         cResult[8] = tmp16;
         let tmp14 = tmp16;
       } else {
@@ -98,7 +98,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onGuidelinesPres
       }
       if (cResult[11] !== tmp17) {
         const obj2 = { lineClamp: 1, ellipsizeMode: "tail", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp17 };
-        const tmp21 = hasOwnProperty(tmp(4754).Text, obj2);
+        const tmp21 = hasOwnProperty(tmp(4786).Text, obj2);
         cResult[11] = tmp17;
         cResult[12] = tmp21;
         let tmp19 = tmp21;
@@ -107,7 +107,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onGuidelinesPres
       }
       if (cResult[13] !== tmp5) {
         const obj3 = { variant: "text-xs/medium", color: "text-default", children: tmp5 };
-        const tmp24 = hasOwnProperty(tmp(4754).Text, obj3);
+        const tmp24 = hasOwnProperty(tmp(4786).Text, obj3);
         cResult[13] = tmp5;
         cResult[14] = tmp24;
         let tmp22 = tmp24;
@@ -177,8 +177,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onGuidelinesPres
               obj6.accessibilityLabel = intl3.string(tmp(1119).t.yR6HwZ);
               obj6.style = tmp4.button;
               obj6.onPress = onGuidelinesPress;
-              obj6.children = hasOwnProperty(tmp(5295).BookCheckIcon, {});
-              tmp37 = hasOwnProperty(tmp(5341).PressableOpacity, obj6);
+              obj6.children = hasOwnProperty(tmp(5327).BookCheckIcon, {});
+              tmp37 = hasOwnProperty(tmp(5373).PressableOpacity, obj6);
             }
             let length2;
             if (channel != null) {
@@ -254,8 +254,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onGuidelinesPres
     obj5.accessibilityLabel = intl3.string(tmp7(1119).t.yR6HwZ);
     obj5.style = tmp.button;
     obj5.onPress = onGuidelinesPress;
-    obj5.children = tmp6(tmp7(5295).BookCheckIcon, {});
-    tmp6Result = tmp6(tmp7(5341).PressableOpacity, obj5);
+    obj5.children = tmp6(tmp7(5327).BookCheckIcon, {});
+    tmp6Result = tmp6(tmp7(5373).PressableOpacity, obj5);
   }
   items[2] = tmp6Result;
   items[3] = hasOwnProperty(React4, { style: tmp.headerBarSeparator });

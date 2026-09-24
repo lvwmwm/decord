@@ -1,23 +1,23 @@
-// Module ID: 11512
-// Function ID: 11513
+// Module ID: 11548
+// Function ID: 11549
 // Name: AddImageDescriptionModal
-// Dependencies: [32, 19, 17, 5107, 5106, 21, 4758, 580, 558, 568, 504, 1482, 1488, 7224, 11400, 8112, 1119, 9419, 11511, 7332, 11229, 2]
+// Dependencies: [32, 19, 17, 5139, 5138, 21, 4790, 580, 558, 568, 504, 1482, 1488, 7256, 11436, 8144, 1119, 9451, 11547, 7364, 11265, 2]
 
-// Module 11512 (AddImageDescriptionModal)
+// Module 11548 (AddImageDescriptionModal)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11229 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11265 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5106 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5138 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const DraftType = fn(5107).DraftType;
+const DraftType = fn(5139).DraftType;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { contentContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, imageContainer: null, image: null, placeholderText: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.imageContainer = { alignItems: "center", borderRadius: nativeDefault.radii.sm };
@@ -139,9 +139,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
             const obj2 = {};
             const merged = Object.assign(dependencyMap);
             obj2.description = ref.current;
-            id(9419).update(closure_1_0, closure_1_1, ChannelMessage.ChannelMessage, obj2);
-            const obj = id(9419);
-            id(11511).close();
+            id(9451).update(closure_1_0, closure_1_1, ChannelMessage.ChannelMessage, obj2);
+            const obj = id(9451);
+            id(11547).close();
           });
           let merged = Object.assign(arg0);
           return renderHeaderTextButton({});
@@ -223,9 +223,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
           const obj2 = {};
           const merged = Object.assign(dependencyMap);
           obj2.description = ref.current;
-          id(9419).update(closure_1_0, closure_1_1, ChannelMessage.ChannelMessage, obj2);
-          const obj = id(9419);
-          id(11511).close();
+          id(9451).update(closure_1_0, closure_1_1, ChannelMessage.ChannelMessage, obj2);
+          const obj = id(9451);
+          id(11547).close();
         });
         let merged = Object.assign(arg0);
         return renderHeaderTextButton({});

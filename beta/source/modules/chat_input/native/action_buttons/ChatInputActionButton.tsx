@@ -1,19 +1,19 @@
-// Module ID: 12385
-// Function ID: 12386
+// Module ID: 12421
+// Function ID: 12422
 // Name: ChatInputActionButton
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4462, 5341, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4494, 5373, 2]
 
-// Module 12385 (ChatInputActionButton)
+// Module 12421 (ChatInputActionButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
+import useToken from "useToken" /* 4494 */;
 import noop from "module_19" /* 19 */;
 
-const Pressables = tmp(5341);
+const Pressables = tmp(5373);
 require = fn;
 const StyleSheet = fn(17).StyleSheet;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles((height, marginHorizontal) => {
   const obj = { actionButton: null, actionButtonIcon: null, actionButtonIconActive: null, actionButtonIconDisabled: null };
   const size = { borderRadius: nativeDefault.radii.sm, height, width: height, marginHorizontal, flexShrink: 0, flexDirection: "row", alignItems: "center", justifyContent: "center" };
@@ -117,7 +117,7 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
                   }
                 }
                 const obj2 = { ref, style: tmp14, hitSlop: tmp15, disabled, accessible, accessibilityRole: "button", accessibilityState: tmp16, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, onPress, children: tmp21 };
-                const tmp27 = jsx(tmp(5341).PressableOpacity, { ref, style: tmp14, hitSlop: tmp15, disabled, accessible, accessibilityRole: "button", accessibilityState: tmp16, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, onPress, children: tmp21 });
+                const tmp27 = jsx(tmp(5373).PressableOpacity, { ref, style: tmp14, hitSlop: tmp15, disabled, accessible, accessibilityRole: "button", accessibilityState: tmp16, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, onPress, children: tmp21 });
                 cResult[15] = accessibilityActions;
                 cResult[16] = accessibilityHint;
                 cResult[17] = accessibilityLabel;

@@ -1,13 +1,13 @@
-// Module ID: 12749
-// Function ID: 12750
+// Module ID: 12785
+// Function ID: 12786
 // Name: BoostGemSlashIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 12750, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 12786, 4493, 2]
 
-// Module 12749 (BoostGemSlashIcon)
+// Module 12785 (BoostGemSlashIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod12750 from "module_12750" /* 12750 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod12786 from "module_12786" /* 12786 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const BoostGemSlashIcon = ReactCompilerGating.isReactCompilerEnabled() ? 
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(12750);
+    const tmpResult = tmp(12786);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const BoostGemSlashIcon = ReactCompilerGating.isReactCompilerEnabled() ? 
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12750, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12786, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

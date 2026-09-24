@@ -1,17 +1,17 @@
-// Module ID: 15468
-// Function ID: 15469
+// Module ID: 15478
+// Function ID: 15479
 // Name: UserSettingsGuildRoleSubscriptions
-// Dependencies: [19, 17, 21, 4758, 558, 568, 4754, 1119, 1181, 15469, 15470, 15471, 15474, 15475, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 4786, 1119, 1181, 15479, 15480, 15481, 15484, 15485, 2]
 
-// Module 15468 (UserSettingsGuildRoleSubscriptions)
+// Module 15478 (UserSettingsGuildRoleSubscriptions)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useRestorePurchasesDefault from "useRestorePurchases" /* 15469 */;
-import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 15470 */;
-import LoadingIndicatorDefault from "LoadingIndicator" /* 15474 */;
-import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 15475 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useRestorePurchasesDefault from "useRestorePurchases" /* 15479 */;
+import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 15480 */;
+import LoadingIndicatorDefault from "LoadingIndicator" /* 15484 */;
+import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 15485 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -27,7 +27,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 let c7 = "role-subscriptions";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ container: { flex: 1 }, list: { flex: 1 }, listContentContainer: { paddingHorizontal: 16 }, sectionHeader: { paddingVertical: 24 }, sectionSubtitle: { marginTop: 4 } });
 let ReactCompilerGating = fn(558);
 let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -37,7 +37,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { variant: "eyebrow", color: "text-default", children: null };
     const intl = tmp(1119).intl;
     obj2.children = intl.string(tmp(1119).t["KzCF/6"]);
-    const tmp7 = hasOwnProperty(tmp(4754).Text, obj2);
+    const tmp7 = hasOwnProperty(tmp(4786).Text, obj2);
     cResult[0] = tmp7;
     let first = tmp7;
   } else {
@@ -53,7 +53,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] !== tmp4.sectionSubtitle) {
     const obj3 = { style: tmp4.sectionSubtitle, variant: "text-sm/medium", color: "text-default", children: tmp8 };
-    const tmp12 = hasOwnProperty(tmp(4754).Text, obj3);
+    const tmp12 = hasOwnProperty(tmp(4786).Text, obj3);
     cResult[2] = tmp4.sectionSubtitle;
     cResult[3] = tmp12;
     let tmp10 = tmp12;
@@ -126,7 +126,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (tmpResult.useFetchListingsForSubscriptions(tmp9).loading) {
     const _Symbol3 = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp22 = hasOwnProperty(tmp6(15474), {});
+      const tmp22 = hasOwnProperty(tmp6(15484), {});
       cResult[2] = tmp22;
       let tmp20 = tmp22;
     } else {

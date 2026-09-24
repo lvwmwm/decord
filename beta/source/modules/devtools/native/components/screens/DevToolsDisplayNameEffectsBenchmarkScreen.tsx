@@ -1,25 +1,25 @@
-// Module ID: 16030
-// Function ID: 16031
+// Module ID: 16040
+// Function ID: 16041
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1376, 1394, 21, 1395, 11209, 1119, 11205, 2876, 4758, 580, 558, 568, 4754, 5188, 5186, 11202, 11203, 504, 16031, 9539, 5822, 5903, 4993, 2]
+// Dependencies: [32, 19, 17, 1376, 1394, 21, 1395, 11245, 1119, 11241, 2876, 4790, 580, 558, 568, 4786, 5220, 5218, 11238, 11239, 504, 16041, 9571, 5854, 5935, 5025, 2]
 
-// Module 16030 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 16040 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import _modDef2876 from "module_2876" /* 2876 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11202 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 11205 */;
-import _mod11209 from "module_11209" /* 11209 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11238 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 11241 */;
+import _mod11245 from "module_11245" /* 11245 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
 
-const types = tmp(11203);
+const types = tmp(11239);
 require = fn;
 function effectName(arg0) {
   const intl = util.intl;
@@ -36,7 +36,7 @@ const jsxProd = fn(21);
 let items = [...fn(1394).EFFECT_ORDER, fn(1395).DisplayNameEffect.GUMMY];
 let closure_12 = [10, 50, 100, 200];
 let items1 = [{ key: "short", label: "Short", name: "Pixel7" }, { key: "medium", label: "Medium", name: "NebulaWanderer" }, { key: "long", label: "Long", name: "GalacticOverlord2049" }];
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { wrap: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 }, container: null, batchRow: null, optionButtons: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.container = { paddingVertical: nativeDefault.space.PX_16 };
@@ -52,7 +52,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
   const tmp4 = closure_14();
   if (cResult[0] !== caption) {
     const obj2 = { variant: "text-sm/semibold", color: "text-subtle", children: caption };
-    const tmp7 = closure_8(tmp(4754).Text, obj2);
+    const tmp7 = closure_8(tmp(4786).Text, obj2);
     cResult[0] = caption;
     cResult[1] = tmp7;
     let tmp5 = tmp7;
@@ -75,14 +75,14 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
           const obj3 = { spacing: 8, children: null };
           items = [tmp5, tmp13];
           obj3.children = items;
-          const tmp18 = closure_9(tmp(5186).Stack, obj3);
+          const tmp18 = closure_9(tmp(5218).Stack, obj3);
           cResult[12] = tmp5;
           cResult[13] = tmp13;
           cResult[14] = tmp18;
           tmp16 = tmp18;
         }
         const obj4 = { direction: "horizontal", spacing: 8, style: tmp8, children: cResult[5] };
-        const tmp15 = closure_8(tmp(5186).Stack, obj4);
+        const tmp15 = closure_8(tmp(5218).Stack, obj4);
         cResult[9] = tmp4.optionButtons;
         cResult[10] = cResult[5];
         cResult[11] = tmp15;
@@ -404,7 +404,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, items1);
   const memo = first1.useMemo(() => items1.find((key) => key.key === first2).name, items2);
   const items3 = [memo];
-  const memo1 = first1.useMemo(() => _mod11209.splitGraphemes(memo).length, items3);
+  const memo1 = first1.useMemo(() => _mod11245.splitGraphemes(memo).length, items3);
   const items4 = [first];
   const memo2 = first1.useMemo(() => items.filter((item) => set.has(item)), items4);
   const items5 = [memo2];
@@ -531,7 +531,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const StringResult = String(arg1);
         const tmp = closure_2_8;
         const tmp2 = closure_16;
-        const splitGraphemesResult = _mod11209.splitGraphemes(run.params.name);
+        const splitGraphemesResult = _mod11245.splitGraphemes(run.params.name);
         let sum = padStartResult;
         if (splitGraphemesResult.length > length) {
           const substr = splitGraphemesResult.slice(0, splitGraphemesResult.length - length);

@@ -1,25 +1,25 @@
-// Module ID: 15313
-// Function ID: 15314
+// Module ID: 15323
+// Function ID: 15324
 // Name: BountiesScrollRecapFooter
-// Dependencies: [19, 17, 4750, 21, 4758, 580, 1368, 558, 568, 7222, 1119, 4754, 9114, 504, 4471, 2]
+// Dependencies: [19, 17, 4782, 21, 4790, 580, 1368, 558, 568, 7254, 1119, 4786, 9146, 504, 4503, 2]
 
-// Module 15313 (BountiesScrollRecapFooter)
+// Module 15323 (BountiesScrollRecapFooter)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import native from "native" /* 4471 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7222 */;
-import OrbsIcon from "OrbsIcon" /* 9114 */;
+import native from "native" /* 4503 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7254 */;
+import OrbsIcon from "OrbsIcon" /* 9146 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles(() => {
   const obj = { container: { flex: 1, alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_4 }, headerLabel: { textTransform: "uppercase" }, orbRow: null, rive: null, orbAmount: null };
   const obj2 = { flex: 1, alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_4 };
@@ -59,7 +59,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((orbAmount) => {
       }
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp15 = hasOwnProperty(tmp(9114).OrbsIcon, { size: "sm", color: "icon-strong", accessible: false });
+        const tmp15 = hasOwnProperty(tmp(9146).OrbsIcon, { size: "sm", color: "icon-strong", accessible: false });
         cResult[7] = tmp15;
         let tmp13 = tmp15;
       } else {
@@ -106,14 +106,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((orbAmount) => {
         tmp20 = tmp23;
       }
       const obj5 = { variant: "display-sm", color: "text-strong", accessible: false, style: tmp4.orbAmount, children: combined1 };
-      const tmp19 = hasOwnProperty(tmp(4754).Text, obj5);
+      const tmp19 = hasOwnProperty(tmp(4786).Text, obj5);
       cResult[8] = tmp4.orbAmount;
       cResult[9] = combined1;
       cResult[10] = tmp19;
       tmp17 = tmp19;
     }
     const obj6 = { variant: typeConsolidationEyebrow.variant, color: "text-brand", style: tmp9, accessible: false, children: first };
-    const tmp12 = hasOwnProperty(tmp(4754).Text, obj6);
+    const tmp12 = hasOwnProperty(tmp(4786).Text, obj6);
     cResult[4] = typeConsolidationEyebrow.variant;
     cResult[5] = tmp9;
     cResult[6] = tmp12;
@@ -168,7 +168,7 @@ export const BountiesScrollRecapFooterGradient = ReactCompilerGating.isReactComp
   }
   if (cResult[2] !== str) {
     const obj2 = { stateMachine: "State Machine 1", fit: "fill", alignment: "bottom-center", withReducedMotion: str };
-    const tmp10 = hasOwnProperty(tmp(4471).BountiesScrollGradientRive, obj2);
+    const tmp10 = hasOwnProperty(tmp(4503).BountiesScrollGradientRive, obj2);
     cResult[2] = str;
     cResult[3] = tmp10;
     let tmp8 = tmp10;

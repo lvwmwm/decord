@@ -1,28 +1,28 @@
-// Module ID: 15419
-// Function ID: 15420
+// Module ID: 15429
+// Function ID: 15430
 // Name: QuestBottomSheetConsoleConnect
-// Dependencies: [109, 19, 17, 1078, 21, 580, 4758, 11607, 11902, 11610, 11620, 4725, 7626, 15376, 1984, 7970, 7971, 7981, 5670, 7969, 5666, 9339, 558, 568, 5822, 1119, 5831, 5903, 9161, 8977, 5824, 2]
+// Dependencies: [109, 19, 17, 1078, 21, 580, 4790, 11643, 11938, 11646, 11656, 4757, 7658, 15386, 1984, 8002, 8003, 8013, 5702, 8001, 5698, 9371, 558, 568, 5854, 1119, 5863, 5935, 9193, 9009, 5856, 2]
 // Exports: default
 
-// Module 15419 (QuestBottomSheetConsoleConnect)
+// Module 15429 (QuestBottomSheetConsoleConnect)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import QuestTypes from "QuestTypes" /* 5666 */;
-import AdCreativeType from "AdCreativeType" /* 5670 */;
-import TableRow from "TableRow" /* 5822 */;
-import TableRowGroup from "TableRowGroup" /* 5903 */;
-import openUserSettings from "openUserSettings" /* 7626 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7969 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7970 */;
-import captureAdUserAction from "captureAdUserAction" /* 7971 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7981 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 8977 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9161 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9339 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 11620 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import QuestTypes from "QuestTypes" /* 5698 */;
+import AdCreativeType from "AdCreativeType" /* 5702 */;
+import TableRow from "TableRow" /* 5854 */;
+import TableRowGroup from "TableRowGroup" /* 5935 */;
+import openUserSettings from "openUserSettings" /* 7658 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8001 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 8002 */;
+import captureAdUserAction from "captureAdUserAction" /* 8003 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 8013 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 9009 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9193 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9371 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 11656 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -35,7 +35,7 @@ const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs, Fragment } = jsxProd);
 const PLATFORM_XBOX = nativeDefault.unsafe_rawColors.PLATFORM_XBOX;
 const PLATFORM_PLAYSTATION = nativeDefault.unsafe_rawColors.PLATFORM_PLAYSTATION;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { platformButtonsContainer: { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_16, justifyContent: "space-between" }, platformButton: { flex: 1, display: "flex", justifyContent: "center", alignItems: "center" } };
 const styles = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -48,7 +48,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[1] === onConsoleSelect) {
       if (cResult[5] !== cResult[2]) {
         const obj2 = { hasIcons: true, children: tmp4 };
-        const tmp9 = closure_8(onConsoleSelect(5903).TableRowGroup, obj2);
+        const tmp9 = closure_8(onConsoleSelect(5935).TableRowGroup, obj2);
         cResult[5] = tmp4;
         cResult[6] = tmp9;
         let tmp7 = tmp9;
@@ -106,7 +106,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   if (constants.PLAYSTATION === type) {
     const _Symbol2 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp28 = closure_1_8(tmp(9161).PlaystationNeutralIcon, {});
+      const tmp28 = closure_1_8(tmp(9193).PlaystationNeutralIcon, {});
       const intl3 = tmp(1119).intl;
       const stringResult = intl3.string(tmp(1119).t.JafL6p);
       cResult[3] = tmp28;
@@ -140,7 +140,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
         return tmp34;
       }
       const obj2 = { arrow: true, icon: tmp25, label: tmp26, subLabel: tmp30, onPress: tmp33 };
-      const tmp36 = closure_1_8(tmp(5822).TableRow, obj2);
+      const tmp36 = closure_1_8(tmp(5854).TableRow, obj2);
       cResult[10] = tmp30;
       cResult[11] = tmp33;
       cResult[12] = tmp36;
@@ -156,7 +156,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   } else if (tmp9.XBOX === type) {
     const _Symbol = Symbol;
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp15 = closure_1_8(tmp(8977).XboxNeutralIcon, {});
+      const tmp15 = closure_1_8(tmp(9009).XboxNeutralIcon, {});
       const intl = tmp(1119).intl;
       const stringResult2 = intl.string(tmp(1119).t.Nfvo72);
       cResult[13] = tmp15;
@@ -202,7 +202,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
           return closure_1(closure_0);
         }
       }
-      const tmp23 = closure_1_8(tmp(5822).TableRow, obj3);
+      const tmp23 = closure_1_8(tmp(5854).TableRow, obj3);
       cResult[20] = tmp17;
       cResult[21] = tmp20;
       cResult[22] = tmp23;
@@ -265,15 +265,15 @@ export default function QuestBottomSheetConsoleConnect(quest) {
   quest = quest.quest;
   ({ step: importDefault, sourceQuestContent: dependencyMap } = quest);
   function openQuestBottomSheet() {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15376, dependencyMap.paths), "QuestBottomSheet", { questId: quest.id, initialStep, sourceQuestContent });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15386, dependencyMap.paths), "QuestBottomSheet", { questId: quest.id, initialStep, sourceQuestContent });
   }
-  const xboxAndPlaystationAccounts = quest(11607).useConnectedAccounts().xboxAndPlaystationAccounts;
-  let obj = quest(11607);
-  closure_4 = quest(11902).useTrackQuestContentClickedWithImpression();
-  let obj2 = quest(11902);
-  noop = quest(11610).useQuestImpressionId();
+  const xboxAndPlaystationAccounts = quest(11643).useConnectedAccounts().xboxAndPlaystationAccounts;
+  let obj = quest(11643);
+  closure_4 = quest(11938).useTrackQuestContentClickedWithImpression();
+  let obj2 = quest(11938);
+  noop = quest(11646).useQuestImpressionId();
   const items = [quest, xboxAndPlaystationAccounts];
-  let obj3 = quest(11610);
+  let obj3 = quest(11646);
   return closure_8(closure_9, {
     consoles: noop.useMemo(() => QuestPlatformUtils.supportedConsoles(quest).map((type) => {
       closure_0 = type;

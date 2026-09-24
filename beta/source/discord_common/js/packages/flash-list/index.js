@@ -1,16 +1,16 @@
-// Module ID: 8995
-// Function ID: 8996
-// Dependencies: [109, 19, 17, 21, 1368, 558, 568, 7088, 4497, 7087, 6863, 2]
+// Module ID: 9027
+// Function ID: 9028
+// Dependencies: [109, 19, 17, 21, 1368, 558, 568, 7120, 4529, 7119, 6895, 2]
 
-// Module 8995
+// Module 9027
 import c from "c" /* 568 */;
 import PlatformUtils2 from "PlatformUtils" /* 1368 */;
-import BottomSheetModal from "BottomSheetModal" /* 6863 */;
-import _modDef7087 from "module_7087" /* 7087 */;
-import _mod7088 from "module_7088" /* 7088 */;
+import BottomSheetModal from "BottomSheetModal" /* 6895 */;
+import _modDef7119 from "module_7119" /* 7119 */;
+import _mod7120 from "module_7120" /* 7120 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop_mod from "module_19" /* 19 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 4497 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 4529 */;
 
 require = fn;
 let closure_3 = ["preventNativeModalDismiss"];
@@ -72,7 +72,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
 });
 fn(558);
 let ReanimatedRexport = ReanimatedRexport_mod;
-let closure_13 = ReanimatedRexport.createAnimatedComponent(fn(7088).FlashList);
+let closure_13 = ReanimatedRexport.createAnimatedComponent(fn(7120).FlashList);
 ReactCompilerGating = fn(558);
 const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
   const maintainVisibleContentPosition = c;
@@ -84,7 +84,7 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
     return tmp4;
   }
   const merged = Object.assign(arg0);
-  const tmp6 = jsx(_mod7088.FlashList, { maintainVisibleContentPosition, ref });
+  const tmp6 = jsx(_mod7120.FlashList, { maintainVisibleContentPosition, ref });
   cResult[0] = arg0;
   cResult[1] = ref;
   cResult[2] = tmp6;
@@ -92,7 +92,7 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
 }) : ((arg0, ref) => {
   maintainVisibleContentPosition = { maintainVisibleContentPosition, ref };
   const merged = Object.assign(arg0);
-  return jsx(_mod7088.FlashList, { maintainVisibleContentPosition, ref });
+  return jsx(_mod7120.FlashList, { maintainVisibleContentPosition, ref });
 }));
 ReactCompilerGating = fn(558);
 const forwardRefResult1 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
@@ -116,7 +116,7 @@ const forwardRefResult1 = noop.forwardRef(ReactCompilerGating.isReactCompilerEna
   return <closure_13 maintainVisibleContentPosition={maintainVisibleContentPosition} ref={arg1} />;
 }));
 let ReanimatedRexport = ReanimatedRexport_mod;
-let closure_14 = ReanimatedRexport.createAnimatedComponent(fn(7088).FlashList);
+let closure_14 = ReanimatedRexport.createAnimatedComponent(fn(7120).FlashList);
 ReactCompilerGating = fn(558);
 const forwardRefResult2 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((preventNativeModalDismiss, ref) => {
   const maintainVisibleContentPosition = c;
@@ -137,7 +137,7 @@ const forwardRefResult2 = noop.forwardRef(ReactCompilerGating.isReactCompilerEna
     return tmp8;
   }
   const merged = Object.assign(tmp4);
-  const tmp10 = jsx(_mod7088.FlashList, { ref, maintainVisibleContentPosition, masonry: true });
+  const tmp10 = jsx(_mod7120.FlashList, { ref, maintainVisibleContentPosition, masonry: true });
   cResult[2] = tmp4;
   cResult[3] = ref;
   cResult[4] = tmp10;
@@ -146,7 +146,7 @@ const forwardRefResult2 = noop.forwardRef(ReactCompilerGating.isReactCompilerEna
   const merged = Object.assign(arg0, Object.assign({ preventNativeModalDismiss: 0 }));
   maintainVisibleContentPosition = { ref, maintainVisibleContentPosition, masonry: true };
   const merged1 = Object.assign(merged);
-  return jsx(_mod7088.FlashList, { ref, maintainVisibleContentPosition, masonry: true });
+  return jsx(_mod7120.FlashList, { ref, maintainVisibleContentPosition, masonry: true });
 }));
 ReactCompilerGating = fn(558);
 const forwardRefResult3 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
@@ -179,7 +179,7 @@ const forwardRefResult3 = noop.forwardRef(ReactCompilerGating.isReactCompilerEna
   const obj2 = { ref, maintainVisibleContentPosition };
   const merged = Object.assign(tmp4);
   obj2.refreshControl = tmp9;
-  const tmp13 = jsx(_modDef7087, { ref, maintainVisibleContentPosition });
+  const tmp13 = jsx(_modDef7119, { ref, maintainVisibleContentPosition });
   cResult[4] = tmp9;
   cResult[5] = tmp4;
   cResult[6] = ref;
@@ -192,12 +192,12 @@ const forwardRefResult3 = noop.forwardRef(ReactCompilerGating.isReactCompilerEna
   const tmp2 = closure_12(preventNativeModalDismiss, refreshControl);
   const merged1 = Object.assign(merged);
   maintainVisibleContentPosition.refreshControl = tmp2;
-  return jsx(_modDef7087, { ref, maintainVisibleContentPosition });
+  return jsx(_modDef7119, { ref, maintainVisibleContentPosition });
 }));
 const size = fn(2);
 const result = size.fileFinishedImporting("../discord_common/js/packages/flash-list/index.js");
-for (const key10093 in require("module_7088")) {
-  arg5[key10093] = require("module_7088")[key10093];
+for (const key10093 in require("module_7120")) {
+  arg5[key10093] = require("module_7120")[key10093];
   continue;
 }
 

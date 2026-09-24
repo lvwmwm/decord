@@ -1,12 +1,12 @@
-// Module ID: 5729
-// Function ID: 5730
+// Module ID: 5761
+// Function ID: 5762
 // Name: SKUStore
-// Dependencies: [5730, 2113, 504, 577, 2]
+// Dependencies: [5762, 2113, 504, 577, 2]
 
-// Module 5729 (SKUStore)
+// Module 5761 (SKUStore)
 import initializeAll from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import SKURecord from "SKURecord" /* 5730 */;
+import SKURecord from "SKURecord" /* 5762 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
 
 function addSku(sku) {

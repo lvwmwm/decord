@@ -1,19 +1,19 @@
-// Module ID: 5837
-// Function ID: 5838
+// Module ID: 5869
+// Function ID: 5870
 // Name: EmailVerificationModal
-// Dependencies: [32, 19, 1376, 5838, 1078, 21, 5836, 1253, 5839, 5898, 5906, 6830, 6840, 6843, 7228, 7239, 7245, 558, 568, 504, 5813, 1119, 7246, 2]
+// Dependencies: [32, 19, 1376, 5870, 1078, 21, 5868, 1253, 5871, 5930, 5938, 6862, 6872, 6875, 7260, 7271, 7277, 558, 568, 504, 5845, 1119, 7278, 2]
 
-// Module 5837 (EmailVerificationModal)
+// Module 5869 (EmailVerificationModal)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
-import useInitialValueDefault from "useInitialValue" /* 5813 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5836 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import ChangeEmailCollectReasonsDefault from "ChangeEmailCollectReasons" /* 5898 */;
-import ChangeEmailWarningDefault from "ChangeEmailWarning" /* 5906 */;
-import ConfirmEmailChangeCodeDefault from "ConfirmEmailChangeCode" /* 6843 */;
-import EnterEmailDefault from "EnterEmail" /* 7228 */;
+import useInitialValueDefault from "useInitialValue" /* 5845 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5868 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import ChangeEmailCollectReasonsDefault from "ChangeEmailCollectReasons" /* 5930 */;
+import ChangeEmailWarningDefault from "ChangeEmailWarning" /* 5938 */;
+import ConfirmEmailChangeCodeDefault from "ConfirmEmailChangeCode" /* 6875 */;
+import EnterEmailDefault from "EnterEmail" /* 7260 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
@@ -107,7 +107,7 @@ function getScreens(initiallyVerified) {
   obj2[VerificationModalScenes.CHANGE_EMAIL_COMPLETE] = obj25;
   return obj2;
 }
-const resetChangeEmailStore = fn(5838).resetChangeEmailStore;
+const resetChangeEmailStore = fn(5870).resetChangeEmailStore;
 const VerificationModalScenes = fn(1078).VerificationModalScenes;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
@@ -180,7 +180,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) =
             return tmp23;
           }
           const obj2 = { screens: tmp13, initialRouteName: RESEND_EMAIL, headerBackTitle: tmp21 };
-          const tmp25 = jsx(tmp(7246).Navigator, { screens: tmp13, initialRouteName: RESEND_EMAIL, headerBackTitle: tmp21 });
+          const tmp25 = jsx(tmp(7278).Navigator, { screens: tmp13, initialRouteName: RESEND_EMAIL, headerBackTitle: tmp21 });
           cResult[7] = RESEND_EMAIL;
           cResult[8] = tmp13;
           cResult[9] = tmp25;

@@ -1,24 +1,24 @@
-// Module ID: 10672
-// Function ID: 10673
+// Module ID: 10708
+// Function ID: 10709
 // Name: GIFPickerItemActionSheet
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 10658, 10662, 1482, 4725, 4458, 1119, 10673, 7436, 4457, 5188, 5802, 5652, 7397, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 10694, 10698, 1482, 4757, 4490, 1119, 10709, 7468, 4489, 5220, 5834, 5684, 7429, 2]
 
-// Module 10672 (GIFPickerItemActionSheet)
+// Module 10708 (GIFPickerItemActionSheet)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ToastUtils from "ToastUtils" /* 4457 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import ClipboardUtils from "ClipboardUtils" /* 7436 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10658 */;
-import GifIcon from "GifIcon" /* 10673 */;
+import ToastUtils from "ToastUtils" /* 4489 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import ClipboardUtils from "ClipboardUtils" /* 7468 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10694 */;
+import GifIcon from "GifIcon" /* 10709 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { contentWrapper: { paddingHorizontal: nativeDefault.space.PX_16 }, gifContainer: { flexDirection: "column", alignItems: "center" }, gifImage: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.gifImage = { borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
@@ -33,17 +33,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   item = item.item;
   const tmp4 = closure_7();
   if (cResult[0] !== item.url) {
-    const gifUrlKeyResult = tmp(10658).gifUrlKey(item.url);
+    const gifUrlKeyResult = tmp(10694).gifUrlKey(item.url);
     cResult[0] = item.url;
     cResult[1] = gifUrlKeyResult;
     let tmp5 = gifUrlKeyResult;
-    const tmpResult = tmp(10658);
+    const tmpResult = tmp(10694);
   } else {
     tmp5 = cResult[1];
   }
   let obj = item(568);
-  const isFavoriteGIF = item(10662).useIsFavoriteGIF(tmp5);
-  const tmpResult2 = item(10662);
+  const isFavoriteGIF = item(10698).useIsFavoriteGIF(tmp5);
+  const tmpResult2 = item(10698);
   ({ width, height } = isFavoriteGIF(1482)());
   const bound = Math.min((width - 2 * isFavoriteGIF(580).space.PX_16) / item.width, 0.5 * height / item.height);
   const result = item.width * bound;
@@ -55,7 +55,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const fn = function w() {
-        isFavoriteGIF(4725).hideActionSheet();
+        isFavoriteGIF(4757).hideActionSheet();
       };
       cResult[5] = fn;
       let tmp13 = fn;
@@ -354,7 +354,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
                     }
                   }
                   obj4.children = closure_5(View, obj5);
-                  const tmp41 = closure_5(tmp(7397).BottomSheet, obj4);
+                  const tmp41 = closure_5(tmp(7429).BottomSheet, obj4);
                   cResult[34] = tmp4.contentWrapper;
                   cResult[35] = tmp34;
                   cResult[36] = tmp41;
@@ -482,7 +482,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
             const obj6 = { children: null };
             const items1 = [tmp25, tmp29];
             obj6.children = items1;
-            const tmp33 = closure_6(tmp(5652).ButtonGroup, obj6);
+            const tmp33 = closure_6(tmp(5684).ButtonGroup, obj6);
             cResult[27] = tmp25;
             cResult[28] = tmp29;
             cResult[29] = tmp33;

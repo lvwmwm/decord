@@ -1,15 +1,15 @@
-// Module ID: 9092
-// Function ID: 9093
+// Module ID: 9124
+// Function ID: 9125
 // Name: ClipView
-// Dependencies: [109, 19, 17, 21, 558, 568, 9093, 9095, 4497, 2]
+// Dependencies: [109, 19, 17, 21, 558, 568, 9125, 9127, 4529, 2]
 
-// Module 9092 (ClipView)
+// Module 9124 (ClipView)
 import c from "c" /* 568 */;
-import CutoutBackgroundContext from "CutoutBackgroundContext" /* 9093 */;
-import ClipViewNativeComponentDefault from "ClipViewNativeComponent" /* 9095 */;
+import CutoutBackgroundContext from "CutoutBackgroundContext" /* 9125 */;
+import ClipViewNativeComponentDefault from "ClipViewNativeComponent" /* 9127 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
 
 require = fn;
 let closure_3 = ["children", "cutouts", "style"];

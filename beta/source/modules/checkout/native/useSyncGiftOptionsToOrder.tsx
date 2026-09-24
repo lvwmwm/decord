@@ -1,18 +1,18 @@
-// Module ID: 11127
-// Function ID: 11128
+// Module ID: 11163
+// Function ID: 11164
 // Name: useSyncGiftOptionsToOrder
-// Dependencies: [32, 19, 7668, 3, 558, 568, 7673, 4433, 2]
+// Dependencies: [32, 19, 7700, 3, 558, 568, 7705, 4465, 2]
 
-// Module 11127 (useSyncGiftOptionsToOrder)
+// Module 11163 (useSyncGiftOptionsToOrder)
 import LoggerDefault from "Logger" /* 3 */;
-import BillingUtils from "BillingUtils" /* 4433 */;
+import BillingUtils from "BillingUtils" /* 4465 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-fn(7668).useNativeCheckoutStoreOrNull;
+fn(7700).useNativeCheckoutStoreOrNull;
 const ReactCompilerGating = fn(558);
 let tmp2 = new LoggerDefault("useSyncGiftOptionsToOrder");
 const size = fn(2);

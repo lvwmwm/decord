@@ -1,23 +1,23 @@
-// Module ID: 10671
-// Function ID: 10672
+// Module ID: 10707
+// Function ID: 10708
 // Name: GIFPickerItemView
-// Dependencies: [19, 17, 21, 4758, 10661, 580, 558, 568, 1879, 4725, 10672, 1984, 1119, 5341, 5802, 2]
+// Dependencies: [19, 17, 21, 4790, 10697, 580, 558, 568, 1879, 4757, 10708, 1984, 1119, 5373, 5834, 2]
 // Exports: default
 
-// Module 10671 (GIFPickerItemView)
+// Module 10707 (GIFPickerItemView)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1879 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10661 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10697 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles((height) => {
   const obj = { container: null, gifImage: null, gifImageSelected: null };
   const size = { paddingBottom: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING, paddingHorizontal: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING / 2, borderRadius: nativeDefault.radii.xs, width: "100%", height, flex: 1 };
@@ -45,7 +45,7 @@ export default function GIFPickerItemView(onPressGIF) {
   }, items);
   const items2 = [index, item.src];
   const callback1 = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10672, dependencyMap.paths), "GIFPickerItemActionSheet", { item }, "stack");
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10708, dependencyMap.paths), "GIFPickerItemActionSheet", { item }, "stack");
     const obj2 = { item };
     const result = KeyboardManagerUtils.dismissGlobalKeyboard();
   }, items1);

@@ -1,18 +1,18 @@
-// Module ID: 9366
-// Function ID: 9367
+// Module ID: 9398
+// Function ID: 9399
 // Name: XboxLinkError
-// Dependencies: [19, 9342, 21, 558, 568, 1488, 9367, 1119, 9368, 2]
+// Dependencies: [19, 9374, 21, 558, 568, 1488, 9399, 1119, 9400, 2]
 
-// Module 9366 (XboxLinkError)
+// Module 9398 (XboxLinkError)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import useNavigation from "useNavigation" /* 1488 */;
-import useConnectRetry from "useConnectRetry" /* 9367 */;
-import TwoWayLinkError from "TwoWayLinkError" /* 9368 */;
+import useConnectRetry from "useConnectRetry" /* 9399 */;
+import TwoWayLinkError from "TwoWayLinkError" /* 9400 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const XboxLinkModalScenes = fn(9342).XboxLinkModalScenes;
+const XboxLinkModalScenes = fn(9374).XboxLinkModalScenes;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

@@ -1,19 +1,19 @@
-// Module ID: 16064
-// Function ID: 16065
+// Module ID: 16074
+// Function ID: 16075
 // Name: UserSettingsDesignSystemLegacyButton
-// Dependencies: [32, 19, 17, 21, 1181, 558, 568, 4754, 5188, 4758, 580, 5186, 8876, 2]
+// Dependencies: [32, 19, 17, 21, 1181, 558, 568, 4786, 5220, 4790, 580, 5218, 8908, 2]
 
-// Module 16064 (UserSettingsDesignSystemLegacyButton)
+// Module 16074 (UserSettingsDesignSystemLegacyButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import Form from "Form" /* 8876 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import Form from "Form" /* 8908 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const native = Button(1181);
-const Text_Text = Button(4754);
-const components_Button_Button = Button(5188);
+const Text_Text = Button(4786);
+const components_Button_Button = Button(5220);
 require = fn;
 function getUniqueComparisons() {
   set = new Set();
@@ -379,7 +379,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   const items4 = [hasOwnProperty(React4, obj4), ];
   if (null != redesignVariant) {
     const obj6 = { style: tmp.comparisonSide, children: null };
-    const items5 = [tmp9(tmp4(4754).Text, { variant: "text-xxs/medium", color: "text-muted", children: "mana" }), ];
+    const items5 = [tmp9(tmp4(4786).Text, { variant: "text-xxs/medium", color: "text-muted", children: "mana" }), ];
     const obj7 = {
       variant: redesignVariant,
       size: "md",
@@ -388,11 +388,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
 
         }
     };
-    items5[1] = tmp9(tmp4(5188).Button, obj7);
+    items5[1] = tmp9(tmp4(5220).Button, obj7);
     obj6.children = items5;
     let tmp9Result = tmp7(tmp8, obj6);
   } else {
-    const obj8 = { style: tmp.comparisonSide, children: tmp9(tmp4(4754).Text, { variant: "text-xs/medium", color: "text-muted", children: "no mapping" }) };
+    const obj8 = { style: tmp.comparisonSide, children: tmp9(tmp4(4786).Text, { variant: "text-xs/medium", color: "text-muted", children: "no mapping" }) };
     tmp9Result = tmp9(tmp8, obj8);
   }
   items4[1] = tmp9Result;
@@ -503,7 +503,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((combo) => {
     const obj7 = { variant: "text-xs/medium", color: str2, children: null };
     const items1 = [combined, " (", combo.count, ")"];
     obj7.children = items1;
-    const tmp12 = hasOwnProperty(tmp(4754).Text, obj7);
+    const tmp12 = hasOwnProperty(tmp(4786).Text, obj7);
     cResult[5] = combo.count;
     cResult[6] = combined;
     cResult[7] = str2;
@@ -556,7 +556,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((combo) => {
   obj.children = items2;
   return hasOwnProperty(React4, obj);
 });
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 const obj45 = { comboRow: null, darkText: null, darkBg: null, comparisonRow: null, comparisonButtons: null, comparisonSide: null, container: null, header: null };
 const obj41 = { look: fn(1181).ButtonLooks.OUTLINED, color: fn(1181).ButtonColors.WHITE, size: fn(1181).ButtonSizes.SMALL, shrink: false, count: 1 };
 obj45.comboRow = { gap: 4, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_4 };

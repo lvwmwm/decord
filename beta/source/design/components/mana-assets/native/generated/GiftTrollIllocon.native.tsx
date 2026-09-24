@@ -1,13 +1,13 @@
-// Module ID: 6388
-// Function ID: 6389
+// Module ID: 6420
+// Function ID: 6421
 // Name: GiftTrollIllocon
-// Dependencies: [21, 558, 568, 6389, 5802, 2]
+// Dependencies: [21, 558, 568, 6421, 5834, 2]
 
-// Module 6388 (GiftTrollIllocon)
+// Module 6420 (GiftTrollIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6389 from "module_6389" /* 6389 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6421 from "module_6421" /* 6421 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const GiftTrollIllocon = ReactCompilerGating.isReactCompilerEnabled() ? (
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6389 };
+    const obj2 = { uri: _modDef6421 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const GiftTrollIllocon = ReactCompilerGating.isReactCompilerEnabled() ? (
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6389 };
+  const obj2 = { uri: _modDef6421 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

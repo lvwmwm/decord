@@ -1,11 +1,11 @@
-// Module ID: 4907
-// Function ID: 4908
+// Module ID: 4939
+// Function ID: 4940
 // Name: MediaPostThumbnailUtils
-// Dependencies: [4908, 2]
+// Dependencies: [4940, 2]
 // Exports: getBackgroundImageUrl, getEmbedPreviewImageUrl, getThumbnailImage
 
-// Module 4907 (MediaPostThumbnailUtils)
-import MediaFormatTesters from "MediaFormatTesters" /* 4908 */;
+// Module 4939 (MediaPostThumbnailUtils)
+import MediaFormatTesters from "MediaFormatTesters" /* 4940 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_channel/MediaPostThumbnailUtils.tsx");

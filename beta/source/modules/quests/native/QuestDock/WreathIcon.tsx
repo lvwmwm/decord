@@ -1,13 +1,13 @@
-// Module ID: 15360
-// Function ID: 15361
+// Module ID: 15370
+// Function ID: 15371
 // Name: WreathIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 15361, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 15371, 4493, 2]
 
-// Module 15360 (WreathIcon)
+// Module 15370 (WreathIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod15361 from "module_15361" /* 15361 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod15371 from "module_15371" /* 15371 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     INTERACTIVE_TEXT_DEFAULT = nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(15361);
+    const tmpResult = tmp(15371);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15361, color: INTERACTIVE_TEXT_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15371, color: INTERACTIVE_TEXT_DEFAULT, style: color.style });
 });

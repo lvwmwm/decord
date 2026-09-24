@@ -1,22 +1,22 @@
-// Module ID: 16576
-// Function ID: 16577
+// Module ID: 16586
+// Function ID: 16587
 // Name: RTCConnectionDesyncHooks
-// Dependencies: [32, 19, 4774, 4778, 502, 2045, 2109, 14027, 4781, 1376, 4777, 12, 558, 568, 504, 1374, 9612, 2]
+// Dependencies: [32, 19, 4806, 4810, 502, 2045, 2109, 14063, 4813, 1376, 4809, 12, 558, 568, 504, 1374, 9644, 2]
 
-// Module 16576 (RTCConnectionDesyncHooks)
+// Module 16586 (RTCConnectionDesyncHooks)
 import _mod12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 4778 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4806 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 4810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import RTCConnectionDesyncStore from "RTCConnectionDesyncStore" /* 14027 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import RTCConnectionDesyncStore from "RTCConnectionDesyncStore" /* 14063 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
 import UserStore from "UserStore" /* 1376 */;
-import VoiceStateStore from "VoiceStateStore" /* 4777 */;
+import VoiceStateStore from "VoiceStateStore" /* 4809 */;
 
 const require = globalThis.__r;
 

@@ -1,13 +1,13 @@
-// Module ID: 10216
-// Function ID: 10217
+// Module ID: 10255
+// Function ID: 10256
 // Name: ImageSparkleIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 10217, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 10256, 4493, 2]
 
-// Module 10216 (ImageSparkleIcon)
+// Module 10255 (ImageSparkleIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod10217 from "module_10217" /* 10217 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod10256 from "module_10256" /* 10256 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const ImageSparkleIcon = ReactCompilerGating.isReactCompilerEnabled() ? (
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(10217);
+    const tmpResult = tmp(10256);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const ImageSparkleIcon = ReactCompilerGating.isReactCompilerEnabled() ? (
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10217, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10256, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

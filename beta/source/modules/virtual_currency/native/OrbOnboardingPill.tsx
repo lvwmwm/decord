@@ -1,14 +1,14 @@
-// Module ID: 15999
-// Function ID: 16000
+// Module ID: 16009
+// Function ID: 16010
 // Name: OrbOnboardingPill
-// Dependencies: [19, 17, 21, 558, 568, 9114, 4754, 1119, 4758, 580, 2]
+// Dependencies: [19, 17, 21, 558, 568, 9146, 4786, 1119, 4790, 580, 2]
 
-// Module 15999 (OrbOnboardingPill)
+// Module 16009 (OrbOnboardingPill)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import OrbsIcon from "OrbsIcon" /* 9114 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import OrbsIcon from "OrbsIcon" /* 9146 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(4);
   const tmp4 = closure_5();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = React3(tmp(9114).OrbsIcon, { size: "sm" });
+    const tmp7 = React3(tmp(9146).OrbsIcon, { size: "sm" });
     cResult[0] = tmp7;
     let first = tmp7;
   } else {
@@ -30,7 +30,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { variant: "text-sm/semibold", color: "redesign-button-tertiary-text", children: null };
     const intl = tmp(1119).intl;
     obj2.children = intl.string(tmp(1119).t["9JpRfC"]);
-    const tmp10 = React3(tmp(4754).Text, obj2);
+    const tmp10 = React3(tmp(4786).Text, obj2);
     cResult[1] = tmp10;
     let tmp8 = tmp10;
   } else {
@@ -59,7 +59,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return React4(View, obj);
 });
 tmp4.displayName = "OrbOnboardingPill";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj3 = { container: { height: 36, borderRadius: nativeDefault.radii.round, justifyContent: "center", alignItems: "center", flexDirection: "row", paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, flexShrink: 0, gap: 4 } };
 let closure_5 = createStyles.createStyles(obj3);
 const size = fn(2);

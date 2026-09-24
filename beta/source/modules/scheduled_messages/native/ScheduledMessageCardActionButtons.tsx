@@ -1,18 +1,18 @@
-// Module ID: 12363
-// Function ID: 12364
+// Module ID: 12399
+// Function ID: 12400
 // Name: ScheduledMessageCardActionButtons
-// Dependencies: [109, 21, 558, 568, 1119, 4702, 12357, 10626, 4720, 6851, 8178, 8181, 8182, 2]
+// Dependencies: [109, 21, 558, 568, 1119, 4734, 12393, 10662, 4752, 6883, 8210, 8213, 8214, 2]
 
-// Module 12363 (ScheduledMessageCardActionButtons)
+// Module 12399 (ScheduledMessageCardActionButtons)
 import util from "util" /* 1119 */;
-import SendMessageIcon from "SendMessageIcon" /* 4702 */;
-import ClockIcon from "ClockIcon" /* 4720 */;
-import CircleXIcon from "CircleXIcon" /* 6851 */;
-import IconButton from "IconButton" /* 8178 */;
-import _modDef8181 from "module_8181" /* 8181 */;
-import ContextMenu from "ContextMenu" /* 8182 */;
-import PencilIcon from "PencilIcon" /* 10626 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 12357 */;
+import SendMessageIcon from "SendMessageIcon" /* 4734 */;
+import ClockIcon from "ClockIcon" /* 4752 */;
+import CircleXIcon from "CircleXIcon" /* 6883 */;
+import IconButton from "IconButton" /* 8210 */;
+import _modDef8213 from "module_8213" /* 8213 */;
+import ContextMenu from "ContextMenu" /* 8214 */;
+import PencilIcon from "PencilIcon" /* 10662 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 12393 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 
 require = fn;
@@ -37,7 +37,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage
   if (cResult[1] !== scheduledMessage) {
     const obj2 = {
       label: first,
-      IconComponent: tmp(4702).SendMessageIcon,
+      IconComponent: tmp(4734).SendMessageIcon,
       action() {
           return ScheduledMessagesUtils.sendScheduledMessageNow(scheduledMessage.scheduledMessageId);
         }
@@ -59,7 +59,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage
   if (cResult[4] !== scheduledMessage) {
     const obj3 = {
       label: tmp7,
-      IconComponent: tmp(10626).PencilIcon,
+      IconComponent: tmp(10662).PencilIcon,
       action() {
           return ScheduledMessagesUtils.openScheduledMessageEditContentModal(scheduledMessage);
         }
@@ -81,7 +81,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage
   if (cResult[7] !== scheduledMessage) {
     const obj4 = {
       label: tmp10,
-      IconComponent: tmp(4720).ClockIcon,
+      IconComponent: tmp(4752).ClockIcon,
       action() {
           return ScheduledMessagesUtils.openRescheduleMessageActionSheet(scheduledMessage.scheduledMessageId, scheduledMessage.sendAtTimestamp, scheduledMessage.createArgs.channelId);
         }
@@ -103,7 +103,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage
   if (cResult[10] !== scheduledMessage) {
     const obj5 = {
       label: tmp13,
-      IconComponent: tmp(6851).CircleXIcon,
+      IconComponent: tmp(6883).CircleXIcon,
       action() {
           return ScheduledMessagesUtils.cancelScheduledMessage(scheduledMessage.scheduledMessageId);
         },
@@ -130,7 +130,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage
             obj.accessibilityLabel = intl.string(util.t.sHmiIC);
             obj.size = "sm";
             obj.disabled = isPendingRemoval;
-            obj.icon = _modDef8181;
+            obj.icon = _modDef8213;
             return jsx(IconButton.IconButton, { ref: ref.ref });
           };
           cResult[17] = isPendingRemoval;
@@ -146,7 +146,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage
           return tmp18;
         }
         const obj6 = { items: tmp16, keyboardShouldPersistTaps: "handled", triggerOnTap: true, children: tmp17 };
-        const tmp20 = jsx(tmp(8182).ContextMenu, { items: tmp16, keyboardShouldPersistTaps: "handled", triggerOnTap: true, children: tmp17 });
+        const tmp20 = jsx(tmp(8214).ContextMenu, { items: tmp16, keyboardShouldPersistTaps: "handled", triggerOnTap: true, children: tmp17 });
         cResult[19] = tmp16;
         cResult[20] = tmp17;
         cResult[21] = tmp20;
@@ -208,7 +208,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((scheduledMessage
       obj.accessibilityLabel = intl.string(util.t.sHmiIC);
       obj.size = "sm";
       obj.disabled = disabled;
-      obj.icon = _modDef8181;
+      obj.icon = _modDef8213;
       return jsx(IconButton.IconButton, { ref: ref.ref });
     }
   });

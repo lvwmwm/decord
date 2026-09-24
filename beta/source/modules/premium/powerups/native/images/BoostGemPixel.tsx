@@ -1,14 +1,14 @@
-// Module ID: 13818
-// Function ID: 13819
+// Module ID: 13854
+// Function ID: 13855
 // Name: BoostGemPixel
-// Dependencies: [19, 21, 558, 568, 8733, 2]
+// Dependencies: [19, 21, 558, 568, 8765, 2]
 
-// Module 13818 (BoostGemPixel)
+// Module 13854 (BoostGemPixel)
 import c from "c" /* 568 */;
-import inlineStylesDefault from "inlineStyles" /* 8733 */;
+import inlineStylesDefault from "inlineStyles" /* 8765 */;
 import noop from "module_19" /* 19 */;
 
-const inlineStyles = tmp(8733);
+const inlineStyles = tmp(8765);
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);

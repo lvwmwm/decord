@@ -1,10 +1,10 @@
-// Module ID: 9305
-// Function ID: 9306
+// Module ID: 9337
+// Function ID: 9338
 // Name: ApplicationAssetV2Utils
 // Dependencies: [1275, 1435, 2]
 // Exports: getApplicationAssetUrl
 
-// Module 9305 (ApplicationAssetV2Utils)
+// Module 9337 (ApplicationAssetV2Utils)
 import HTTPUtils from "HTTPUtils" /* 1275 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1435 */;
 import size from "module_2" /* 2 */;

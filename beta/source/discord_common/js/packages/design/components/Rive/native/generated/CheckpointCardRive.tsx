@@ -1,12 +1,12 @@
-// Module ID: 4553
-// Function ID: 4554
+// Module ID: 4585
+// Function ID: 4586
 // Name: CheckpointCardRive
-// Dependencies: [109, 19, 21, 558, 4491, 568, 4554, 4544, 2]
+// Dependencies: [109, 19, 21, 558, 4523, 568, 4586, 4576, 2]
 
-// Module 4553 (CheckpointCardRive)
+// Module 4585 (CheckpointCardRive)
 import c from "c" /* 568 */;
-import BaseRive from "BaseRive" /* 4491 */;
-import RiveErrorBoundary from "RiveErrorBoundary" /* 4544 */;
+import BaseRive from "BaseRive" /* 4523 */;
+import RiveErrorBoundary from "RiveErrorBoundary" /* 4576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -2483,7 +2483,7 @@ let closure_11 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
           }
         }
       }
-      const obj2 = { ref, src: require("module_4554"), artboard: str, artboardProperties, artboardViewModelInstances, defaultViewModelInstance: null, stateMachine: null, renderDataBinding: null };
+      const obj2 = { ref, src: require("module_4586"), artboard: str, artboardProperties, artboardViewModelInstances, defaultViewModelInstance: null, stateMachine: null, renderDataBinding: null };
       class V {
         constructor(arg0) {
           tmp = closure_10[closure_2];
@@ -2506,7 +2506,7 @@ let closure_11 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
       obj2.stateMachine = tmp7;
       obj2.renderDataBinding = tmp13;
       let merged = Object.assign(tmp6);
-      const tmp23 = jsx(require("BaseRive").BaseRive, { ref, src: require("module_4554"), artboard: str, artboardProperties, artboardViewModelInstances, defaultViewModelInstance: null, stateMachine: null, renderDataBinding: null });
+      const tmp23 = jsx(require("BaseRive").BaseRive, { ref, src: require("module_4586"), artboard: str, artboardProperties, artboardViewModelInstances, defaultViewModelInstance: null, stateMachine: null, renderDataBinding: null });
       cResult[11] = str;
       cResult[12] = str2;
       cResult[13] = ref;

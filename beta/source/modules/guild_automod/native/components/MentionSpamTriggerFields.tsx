@@ -1,19 +1,19 @@
-// Module ID: 17962
-// Function ID: 17963
+// Module ID: 17972
+// Function ID: 17973
 // Name: MentionSpamTriggerFields
-// Dependencies: [32, 19, 17, 11993, 21, 4758, 558, 568, 12964, 1119, 4754, 6848, 5822, 5819, 5903, 2]
+// Dependencies: [32, 19, 17, 12029, 21, 4790, 558, 568, 13000, 1119, 4786, 6880, 5854, 5851, 5935, 2]
 
-// Module 17962 (MentionSpamTriggerFields)
+// Module 17972 (MentionSpamTriggerFields)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
-const Constants = fn(11993);
+const Constants = fn(12029);
 ({ MAX_MENTION_SPAM_LIMIT: hasOwnProperty, MIN_MENTION_SPAM_LIMIT: metroRequire } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ limitField: { width: 52 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

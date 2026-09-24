@@ -1,15 +1,15 @@
-// Module ID: 15832
-// Function ID: 15833
+// Module ID: 15842
+// Function ID: 15843
 // Name: ShareLogsButton
-// Dependencies: [19, 21, 558, 568, 5341, 1119, 8637, 7, 13206, 2]
+// Dependencies: [19, 21, 558, 568, 5373, 1119, 8669, 7, 13242, 2]
 
-// Module 15832 (ShareLogsButton)
+// Module 15842 (ShareLogsButton)
 import LogAggregator from "LogAggregator" /* 7 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Pressables from "Pressables" /* 5341 */;
-import showShareActionSheet from "showShareActionSheet" /* 8637 */;
-import ShareIcon from "ShareIcon" /* 13206 */;
+import Pressables from "Pressables" /* 5373 */;
+import showShareActionSheet from "showShareActionSheet" /* 8669 */;
+import ShareIcon from "ShareIcon" /* 13242 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -30,8 +30,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj2.message = LogAggregator.stringify();
       return obj.showShareActionSheet(obj2, "Debug Logs");
     };
-    obj2.children = jsx(tmp(13206).ShareIcon, {});
-    const tmp6 = jsx(tmp(5341).PressableOpacity, { accessibilityLabel: null, onPress: null, children: null });
+    obj2.children = jsx(tmp(13242).ShareIcon, {});
+    const tmp6 = jsx(tmp(5373).PressableOpacity, { accessibilityLabel: null, onPress: null, children: null });
     cResult[0] = tmp6;
     let first = tmp6;
   } else {

@@ -1,14 +1,14 @@
-// Module ID: 10020
-// Function ID: 10021
+// Module ID: 10059
+// Function ID: 10060
 // Name: useVoiceStateForRemoteSession
-// Dependencies: [502, 4777, 4775, 558, 568, 504, 2]
+// Dependencies: [502, 4809, 4807, 558, 568, 504, 2]
 
-// Module 10020 (useVoiceStateForRemoteSession)
+// Module 10059 (useVoiceStateForRemoteSession)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoiceStateStore from "VoiceStateStore" /* 4777 */;
-import GameConsoleStore from "GameConsoleStore" /* 4775 */;
+import VoiceStateStore from "VoiceStateStore" /* 4809 */;
+import GameConsoleStore from "GameConsoleStore" /* 4807 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);

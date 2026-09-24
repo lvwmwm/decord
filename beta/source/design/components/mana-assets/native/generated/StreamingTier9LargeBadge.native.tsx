@@ -1,13 +1,13 @@
-// Module ID: 6764
-// Function ID: 6765
+// Module ID: 6796
+// Function ID: 6797
 // Name: StreamingTier9LargeBadge
-// Dependencies: [21, 558, 568, 6765, 5802, 2]
+// Dependencies: [21, 558, 568, 6797, 5834, 2]
 
-// Module 6764 (StreamingTier9LargeBadge)
+// Module 6796 (StreamingTier9LargeBadge)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6765 from "module_6765" /* 6765 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6797 from "module_6797" /* 6797 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const StreamingTier9LargeBadge = ReactCompilerGating.isReactCompilerEnabl
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6765 };
+    const obj2 = { uri: _modDef6797 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const StreamingTier9LargeBadge = ReactCompilerGating.isReactCompilerEnabl
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6765 };
+  const obj2 = { uri: _modDef6797 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

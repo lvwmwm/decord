@@ -1,20 +1,20 @@
-// Module ID: 17415
-// Function ID: 17416
+// Module ID: 17425
+// Function ID: 17426
 // Name: CollectiblesMobileAnnouncementActionSheet
-// Dependencies: [19, 17, 1080, 7398, 2042, 21, 4758, 580, 558, 568, 1482, 6863, 1616, 4497, 17416, 4754, 7788, 7429, 17417, 1119, 5907, 5188, 7397, 2]
+// Dependencies: [19, 17, 1080, 7430, 2042, 21, 4790, 580, 558, 568, 1482, 6895, 1616, 4529, 17426, 4786, 7820, 7461, 17427, 1119, 5939, 5220, 7429, 2]
 
-// Module 17415 (CollectiblesMobileAnnouncementActionSheet)
+// Module 17425 (CollectiblesMobileAnnouncementActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import BottomSheetModal from "BottomSheetModal" /* 6863 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7788 */;
-import _modDef17416 from "module_17416" /* 17416 */;
-import _modDef17417 from "module_17417" /* 17417 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import BottomSheetModal from "BottomSheetModal" /* 6895 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7820 */;
+import _modDef17426 from "module_17426" /* 17426 */;
+import _modDef17427 from "module_17427" /* 17427 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
@@ -23,12 +23,12 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, StyleSheet, View: hasOwnProperty } = get_ActivityIndicator);
 const constants = fn(1080).CollectiblesMobileShopScreen;
-const ACTION_SHEET_MAX_WIDTH = fn(7398).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(7430).ACTION_SHEET_MAX_WIDTH;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 let c11 = 32;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { mascotContainer: null, mascotLayer: null, mascotImage: null, framePreviewImage: null, container: null, headerText: null, featureRow: null, featureText: null, featureRows: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -94,7 +94,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             const _Symbol = Symbol;
             if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj4 = { uri: tmp4(17416) };
+              const obj4 = { uri: tmp4(17426) };
               cResult[13] = obj4;
               let tmp15 = obj4;
             } else {
@@ -120,7 +120,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 return tmp24;
               }
               const obj6 = { style: tmp10, children: tmp20 };
-              const tmp26 = options(tmp4(4497).View, obj6);
+              const tmp26 = options(tmp4(4529).View, obj6);
               cResult[19] = tmp10;
               cResult[20] = tmp20;
               cResult[21] = tmp26;
@@ -181,7 +181,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   items1[1] = rect;
   obj4.style = items1;
   const obj5 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-  obj5.source = { uri: _modDef17416 };
+  obj5.source = { uri: _modDef17426 };
   obj5.style = tmp.mascotImage;
   obj4.children = options(React4, obj5);
   obj3.children = options(hasOwnProperty, obj4);
@@ -342,7 +342,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
         return;
       }
     }
-    tmp17[0] = _modDef17417;
+    tmp17[0] = _modDef17427;
     cResult[10] = tmp17;
     const tmp16 = tmp17;
   } else {
@@ -404,7 +404,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
       }
     }
     const obj5 = { variant: "heading-xl/bold", color: "text-strong", accessibilityRole: "header", style: tmp4.headerText, children: tmp22 };
-    const tmp25 = closure_9(tmp(4754).Text, obj5);
+    const tmp25 = closure_9(tmp(4786).Text, obj5);
     cResult[14] = tmp4.headerText;
     cResult[15] = tmp25;
   } else {
@@ -426,7 +426,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
     }
     const obj6 = { icon: null, text: null };
     const obj7 = { size };
-    obj6.icon = closure_9(tmp(5907).PaintIllocon, obj7);
+    obj6.icon = closure_9(tmp(5939).PaintIllocon, obj7);
     const intl = tmp(1119).intl;
     obj6.text = intl.string(tmp(1119).t["6ZWB0C"]);
     const tmp29 = closure_9(closure_16, obj6);
@@ -451,7 +451,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
     }
     const obj8 = { icon: null, text: null };
     const obj9 = { size };
-    obj8.icon = closure_9(tmp(5907).HeartIllocon, obj9);
+    obj8.icon = closure_9(tmp(5939).HeartIllocon, obj9);
     const intl2 = tmp(1119).intl;
     obj8.text = intl2.string(tmp(1119).t.MkVbBY);
     const tmp33 = closure_9(closure_16, obj8);
@@ -476,7 +476,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
     }
     const obj10 = { icon: null, text: null };
     const obj11 = { size };
-    obj10.icon = closure_9(tmp(5907).ShopIllocon, obj11);
+    obj10.icon = closure_9(tmp(5939).ShopIllocon, obj11);
     const intl3 = tmp(1119).intl;
     obj10.text = intl3.string(tmp(1119).t["/4bQuG"]);
     const tmp37 = closure_9(closure_16, obj10);
@@ -543,7 +543,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
       }
     }
     const obj14 = { size: "lg", text: tmp41, onPress: tmp11 };
-    const tmp44 = closure_9(tmp(5188).Button, obj14);
+    const tmp44 = closure_9(tmp(5220).Button, obj14);
     cResult[22] = tmp11;
     cResult[23] = tmp44;
   } else {
@@ -603,22 +603,22 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
   const memo = noop.useMemo(() => closure_1_9(closure_1_15, {}), []);
   let obj = { onDismiss: callback1, backdropChildren: memo, children: null };
   const obj2 = { style: tmp.container, children: null };
-  const obj3 = { source: { uri: _modDef17417 }, style: tmp.framePreviewImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
+  const obj3 = { source: { uri: _modDef17427 }, style: tmp.framePreviewImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
   const items3 = [closure_9(closure_4, obj3), , , ];
   const obj5 = { variant: "heading-xl/bold", color: "text-strong", accessibilityRole: "header", style: tmp.headerText, children: null };
   const intl = markAsDismissed(1119).intl;
   obj5.children = intl.string(markAsDismissed(1119).t.vRCvqo);
-  items3[1] = closure_9(markAsDismissed(4754).Text, obj5);
+  items3[1] = closure_9(markAsDismissed(4786).Text, obj5);
   const obj6 = { style: tmp.featureRows, children: null };
-  const obj7 = { icon: closure_9(markAsDismissed(5907).PaintIllocon, { size }), text: null };
+  const obj7 = { icon: closure_9(markAsDismissed(5939).PaintIllocon, { size }), text: null };
   const intl2 = markAsDismissed(1119).intl;
   obj7.text = intl2.string(markAsDismissed(1119).t["6ZWB0C"]);
   const items4 = [closure_9(closure_16, obj7), , ];
-  const obj9 = { icon: closure_9(markAsDismissed(5907).HeartIllocon, { size }), text: null };
+  const obj9 = { icon: closure_9(markAsDismissed(5939).HeartIllocon, { size }), text: null };
   const intl3 = markAsDismissed(1119).intl;
   obj9.text = intl3.string(markAsDismissed(1119).t.MkVbBY);
   items4[1] = closure_9(closure_16, obj9);
-  const obj11 = { icon: closure_9(markAsDismissed(5907).ShopIllocon, { size }), text: null };
+  const obj11 = { icon: closure_9(markAsDismissed(5939).ShopIllocon, { size }), text: null };
   const intl4 = markAsDismissed(1119).intl;
   obj11.text = intl4.string(markAsDismissed(1119).t["/4bQuG"]);
   items4[2] = closure_9(closure_16, obj11);
@@ -628,8 +628,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
   const intl5 = markAsDismissed(1119).intl;
   obj13.text = intl5.string(markAsDismissed(1119).t.S9hXPI);
   obj13.onPress = callback;
-  items3[3] = closure_9(markAsDismissed(5188).Button, obj13);
+  items3[3] = closure_9(markAsDismissed(5220).Button, obj13);
   obj2.children = items3;
   obj.children = closure_10(closure_5, obj2);
-  return closure_9(markAsDismissed(7397).BottomSheet, obj);
+  return closure_9(markAsDismissed(7429).BottomSheet, obj);
 });

@@ -1,11 +1,11 @@
-// Module ID: 10329
-// Function ID: 10330
+// Module ID: 10368
+// Function ID: 10369
 // Name: ThemeContextProvider/RootThemeContextProvider
-// Dependencies: [19, 1089, 21, 558, 568, 4471, 2]
+// Dependencies: [19, 1089, 21, 558, 568, 4503, 2]
 
-// Module 10329 (ThemeContextProvider/RootThemeContextProvider)
+// Module 10368 (ThemeContextProvider/RootThemeContextProvider)
 import c from "c" /* 568 */;
-import native from "native" /* 4471 */;
+import native from "native" /* 4503 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         return tmp12;
                       }
                       const obj2 = { value: tmp10, children };
-                      const tmp14 = jsx(tmp(4471).ThemeContext.Provider, { value: tmp10, children });
+                      const tmp14 = jsx(tmp(4503).ThemeContext.Provider, { value: tmp10, children });
                       cResult[12] = children;
                       cResult[13] = tmp10;
                       cResult[14] = tmp14;
@@ -155,11 +155,11 @@ export const DisableCustomTheme = ReactCompilerGating.isReactCompilerEnabled() ?
     obj3.primaryColor = null;
     obj3.secondaryColor = null;
     obj3.gradient = null;
-    const themedContext = tmp(4471).createThemedContext(obj3);
+    const themedContext = tmp(4503).createThemedContext(obj3);
     cResult[0] = themeContext;
     cResult[1] = themedContext;
     let tmp5 = themedContext;
-    const tmpResult = tmp(4471);
+    const tmpResult = tmp(4503);
   } else {
     tmp5 = cResult[1];
   }
@@ -175,7 +175,7 @@ export const DisableCustomTheme = ReactCompilerGating.isReactCompilerEnabled() ?
   cResult[4] = tmp12;
   tmp11 = tmp12;
 }) : ((children) => {
-  themeContext = themeContext(4471).useThemeContext();
+  themeContext = themeContext(4503).useThemeContext();
   const items = [themeContext];
   const memo = noop.useMemo(() => {
     const obj2 = {};
@@ -185,5 +185,5 @@ export const DisableCustomTheme = ReactCompilerGating.isReactCompilerEnabled() ?
     obj2.gradient = null;
     return native.createThemedContext(obj2);
   }, items);
-  return jsx(themeContext(4471).ThemeContext.Provider, { value: memo, children: children.children });
+  return jsx(themeContext(4503).ThemeContext.Provider, { value: memo, children: children.children });
 });

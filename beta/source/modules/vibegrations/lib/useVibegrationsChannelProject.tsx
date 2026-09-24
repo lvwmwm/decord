@@ -1,18 +1,18 @@
-// Module ID: 11300
-// Function ID: 11301
+// Module ID: 11336
+// Function ID: 11337
 // Name: useVibegrationsChannelProject
-// Dependencies: [19, 2109, 2067, 4399, 9307, 1078, 558, 568, 5276, 504, 9308, 11, 5277, 2]
+// Dependencies: [19, 2109, 2067, 4431, 9339, 1078, 558, 568, 5308, 504, 9340, 11, 5309, 2]
 
-// Module 11300 (useVibegrationsChannelProject)
-import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9308 */;
+// Module 11336 (useVibegrationsChannelProject)
+import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9340 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9307 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9339 */;
 
 require = fn;
-const isProjectOwner = fn(9307).isProjectOwner;
+const isProjectOwner = fn(9339).isProjectOwner;
 const Permissions = fn(1078).Permissions;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

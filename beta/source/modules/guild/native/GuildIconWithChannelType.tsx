@@ -1,16 +1,16 @@
-// Module ID: 11302
-// Function ID: 11303
+// Module ID: 11338
+// Function ID: 11339
 // Name: GuildIconWithChannelType
-// Dependencies: [109, 19, 17, 21, 5799, 4758, 580, 558, 568, 5241, 1181, 11303, 9092, 2]
+// Dependencies: [109, 19, 17, 21, 5831, 4790, 580, 558, 568, 5273, 1181, 11339, 9124, 2]
 
-// Module 11302 (GuildIconWithChannelType)
+// Module 11338 (GuildIconWithChannelType)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5241 */;
-import GuildIcon from "GuildIcon" /* 5799 */;
-import ClipView from "ClipView" /* 9092 */;
-import Pile from "Pile" /* 11303 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5273 */;
+import GuildIcon from "GuildIcon" /* 5831 */;
+import ClipView from "ClipView" /* 9124 */;
+import Pile from "Pile" /* 11339 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -23,10 +23,10 @@ const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let obj = { SMALL_32: "SMALL_32" };
 let obj2 = {};
-obj2[obj.SMALL_32] = { pileSize: 32, guildIconSize: fn(5799).GuildIconSizes.XSMALL, typeIconSize: 12, typeIconPadding: 4, gap: 3 };
-const createStyles = fn(4758);
+obj2[obj.SMALL_32] = { pileSize: 32, guildIconSize: fn(5831).GuildIconSizes.XSMALL, typeIconSize: 12, typeIconPadding: 4, gap: 3 };
+const createStyles = fn(4790);
 let obj5 = { typeIconWrapper: null };
-let obj3 = { pileSize: 32, guildIconSize: fn(5799).GuildIconSizes.XSMALL, typeIconSize: 12, typeIconPadding: 4, gap: 3 };
+let obj3 = { pileSize: 32, guildIconSize: fn(5831).GuildIconSizes.XSMALL, typeIconSize: 12, typeIconPadding: 4, gap: 3 };
 obj5.typeIconWrapper = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: nativeDefault.radii.round, width: 20 };
 let closure_10 = createStyles.createStyles(obj5);
 const ReactCompilerGating = fn(558);
@@ -77,11 +77,11 @@ export const GuildIconWithChannelType = ReactCompilerGating.isReactCompilerEnabl
         tmp18 = cResult[12];
       }
       if (cResult[13] !== tmp5) {
-        const channelIcon = tmp(5241).getChannelIcon(tmp5);
+        const channelIcon = tmp(5273).getChannelIcon(tmp5);
         cResult[13] = tmp5;
         cResult[14] = channelIcon;
         let tmp19 = channelIcon;
-        const tmpResult = tmp(5241);
+        const tmpResult = tmp(5273);
       } else {
         tmp19 = cResult[14];
       }
@@ -123,10 +123,10 @@ export const GuildIconWithChannelType = ReactCompilerGating.isReactCompilerEnabl
                   }
                 }
               }
-              obj2 = { "aria-label": tmp4, shape: tmp(9092).CutoutShape.Circle, size: tmp16, gap, depthX: sum1, depthY: sum1, children: null };
+              obj2 = { "aria-label": tmp4, shape: tmp(9124).CutoutShape.Circle, size: tmp16, gap, depthX: sum1, depthY: sum1, children: null };
               const items1 = [tmp21, tmp34];
               obj2.children = items1;
-              const tmp40 = closure_1_8(tmp(11303).Pile, obj2);
+              const tmp40 = closure_1_8(tmp(11339).Pile, obj2);
               cResult[29] = tmp4;
               cResult[30] = gap;
               cResult[31] = tmp16;

@@ -1,24 +1,24 @@
-// Module ID: 18246
-// Function ID: 18247
+// Module ID: 18256
+// Function ID: 18257
 // Name: GuildRoleSubscriptionTierTemplatePreviewCard
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 7222, 4754, 4725, 18247, 1984, 18251, 1181, 18250, 1119, 7405, 1488, 15486, 18252, 1245, 4938, 15492, 18248, 10525, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 7254, 4786, 4757, 18257, 1984, 18261, 1181, 18260, 1119, 7437, 1488, 15496, 18262, 1245, 4970, 15502, 18258, 10561, 2]
 
-// Module 18246 (GuildRoleSubscriptionTierTemplatePreviewCard)
+// Module 18256 (GuildRoleSubscriptionTierTemplatePreviewCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7222 */;
-import _modDef7405 from "module_7405" /* 7405 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 18250 */;
-import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 18252 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7254 */;
+import _modDef7437 from "module_7437" /* 7437 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 18260 */;
+import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 18262 */;
 import noop from "module_19" /* 19 */;
 
-const AppAnalyticsUtils = tmp(4938);
+const AppAnalyticsUtils = tmp(4970);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ TouchableOpacity: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
@@ -26,7 +26,7 @@ const Constants = fn(1078);
 ({ AnalyticEvents: closure_7, GuildSettingsSections: closure_8 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: 16, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, width: 319 }, subscriptionPlanTextStyle: null, descriptionPlanTextStyle: null, separator: null, contentContainer: null, contentHeader: null, viewEntireTemplateFooter: null, viewEntireTemplateFooterUnderline: null };
 let obj3 = { padding: 16, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, width: 319 };
 obj2.subscriptionPlanTextStyle = { color: nativeDefault.colors.TEXT_SUBTLE };
@@ -70,7 +70,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj3 = { variant: typeConsolidationEyebrow.variant, color: "text-muted", style: tmp6, children: null };
         const items = [tmp7, " ", title];
         obj3.children = items;
-        const tmp12 = v65535(tmp(4754).Text, obj3);
+        const tmp12 = v65535(tmp(4786).Text, obj3);
         cResult[7] = typeConsolidationEyebrow.variant;
         cResult[8] = tmp6;
         cResult[9] = tmp7;
@@ -80,7 +80,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj4 = { variant: typeConsolidationEyebrow.variant, color: "text-default", style: tmp4.contentHeader, children: count };
-    const tmp9 = options(tmp(4754).Text, obj4);
+    const tmp9 = options(tmp(4786).Text, obj4);
     cResult[3] = count;
     cResult[4] = typeConsolidationEyebrow.variant;
     cResult[5] = tmp4.contentHeader;
@@ -126,7 +126,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp5 = title;
     if (typeof title === "string") {
       const obj2 = { variant: "text-md/semibold", color: "text-default", children: title };
-      tmp5 = options(tmp(4754).Text, obj2);
+      tmp5 = options(tmp(4786).Text, obj2);
     }
     cResult[0] = title;
     cResult[1] = tmp5;
@@ -143,7 +143,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[3] !== description) {
     const obj3 = { variant: "text-sm/medium", color: "interactive-text-default", children: description };
-    const tmp11 = options(tmp(4754).Text, obj3);
+    const tmp11 = options(tmp(4786).Text, obj3);
     cResult[3] = description;
     cResult[4] = tmp11;
     let tmp9 = tmp11;
@@ -181,11 +181,11 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const cResult = c.c(14);
   ({ description, type, name } = channel.channel);
   if (cResult[0] !== type) {
-    const privateChannelIconComponent = tmp(18250).getPrivateChannelIconComponent(type);
+    const privateChannelIconComponent = tmp(18260).getPrivateChannelIconComponent(type);
     cResult[0] = type;
     cResult[1] = privateChannelIconComponent;
     let tmp4 = privateChannelIconComponent;
-    const tmpResult = tmp(18250);
+    const tmpResult = tmp(18260);
   } else {
     tmp4 = cResult[1];
   }
@@ -213,7 +213,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   if (cResult[6] !== name) {
     const obj3 = { variant: "text-md/semibold", color: "text-default", children: name };
-    const tmp15 = options(tmp(4754).Text, obj3);
+    const tmp15 = options(tmp(4786).Text, obj3);
     cResult[6] = name;
     cResult[7] = tmp15;
     let tmp13 = tmp15;
@@ -260,7 +260,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { variant: "text-sm/semibold", color: "interactive-text-hover", style: { marginTop: -1 }, children: null };
     const intl = tmp(1119).intl;
     obj2.children = intl.string(tmp(1119).t.kejaOD);
-    const tmp8 = options(tmp(4754).Text, obj2);
+    const tmp8 = options(tmp(4786).Text, obj2);
     const tmp9 = options(tmp(1181).Spacer, { size: 3 });
     cResult[0] = tmp8;
     cResult[1] = tmp9;
@@ -284,7 +284,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { children: null };
-    const obj6 = { size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, source: _modDef7405, style: null };
+    const obj6 = { size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, source: _modDef7437, style: null };
     const obj7 = { transform: null };
     const items1 = [{ rotate: "180deg" }];
     obj7.transform = items1;
@@ -321,7 +321,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj2.children = items;
   const items1 = [v65535(newPricesToPick, obj2), ];
   const obj5 = { children: null };
-  const obj6 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: _modDef7405, style: null };
+  const obj6 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: _modDef7437, style: null };
   const obj7 = { transform: null };
   const items2 = [{ rotate: "180deg" }];
   obj7.transform = items2;
@@ -576,7 +576,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
                                 }
                               }
                               function handleViewEntireTemplate() {
-                                ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(18247, dependencyMap.paths), "TierTemplateCard", { template, guildId, handleSelectTemplateInPreview });
+                                ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(18257, dependencyMap.paths), "TierTemplateCard", { template, guildId, handleSelectTemplateInPreview });
                               }
                               if (cResult[46] === handleViewEntireTemplate) {
                                 class W {
@@ -927,7 +927,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
   callback1 = obj3.useCallback((selectedTemplate, arg1) => {
     if (closure_7) {
       const obj2 = { selectedTemplate, handleCreateFromTemplate: tmp, newPricesToPick: suggestedUnusedPrices };
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(18251, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(18261, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
     } else {
       tmp(selectedTemplate, arg1);
     }
@@ -937,7 +937,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
   const obj7 = {
     style: tmp.contentContainer,
     onPress() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(18247, dependencyMap.paths), "TierTemplateCard", { template, guildId, handleSelectTemplateInPreview: callback1 });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(18257, dependencyMap.paths), "TierTemplateCard", { template, guildId, handleSelectTemplateInPreview: callback1 });
     },
     children: null
   };

@@ -1,25 +1,42 @@
 // Module ID: 13125
 // Function ID: 13126
-// Dependencies: [13126, 13109, 13105]
+// Dependencies: [13113, 13085]
+// Exports: parseSampleRate
 
 // Module 13125
-import eventFromMessage from "eventFromMessage" /* 13109 */;
-import _mod13126 from "module_13126" /* 13126 */;
-import setupIntegration from "module_13105" /* 13105 */;
+import _mod13085 from "module_13085" /* 13085 */;
+import _mod13113 from "module_13113" /* 13113 */;
 
+require = arg1;
+const dependencyMap = arg6;
 
-export const linkedErrorsIntegration = setupIntegration.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  closure_0 = obj.limit || 5;
-  closure_1 = obj.key || "cause";
-  return {
-    name: "LinkedErrors",
-    preprocessEvent(arg0, arg1, getOptions) {
-      options = getOptions.getOptions();
-      const result = _mod13126.applyAggregateErrorsToEvent(eventFromMessage.exceptionFromError, options.stackParser, options.maxValueLength, closure_1, closure_0, arg0, arg1);
+export const parseSampleRate = function parseSampleRate(flag) {
+  if (typeof flag === "boolean") {
+    const _Number = Number;
+    return Number(flag);
+  } else {
+    let parsed = flag;
+    if (typeof flag === "string") {
+      const _parseFloat = parseFloat;
+      parsed = parseFloat(flag);
     }
-  };
-});
+    if (typeof parsed === "number") {
+      const _isNaN = isNaN;
+      if (!isNaN(parsed)) {
+        if (parsed >= 0) {
+          if (parsed <= 1) {
+            return parsed;
+          }
+        }
+      }
+    }
+    if (_mod13113.DEBUG_BUILD) {
+      const logger = _mod13085.logger;
+      const _JSON = JSON;
+      const json = JSON.stringify(flag);
+      const _JSON2 = JSON;
+      const _HermesInternal = HermesInternal;
+      logger.warn("[Tracing] Given sample rate is invalid. Sample rate must be a boolean or a number between 0 and 1. Got " + json + " of type " + JSON.stringify(typeof flag) + ".");
+    }
+  }
+};

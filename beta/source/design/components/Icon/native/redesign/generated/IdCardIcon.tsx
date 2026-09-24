@@ -1,13 +1,13 @@
-// Module ID: 8722
-// Function ID: 8723
+// Module ID: 8754
+// Function ID: 8755
 // Name: IdCardIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 8723, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 8755, 4493, 2]
 
-// Module 8722 (IdCardIcon)
+// Module 8754 (IdCardIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod8723 from "module_8723" /* 8723 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod8755 from "module_8755" /* 8755 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const IdCardIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(8723);
+    const tmpResult = tmp(8755);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const IdCardIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8723, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8755, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

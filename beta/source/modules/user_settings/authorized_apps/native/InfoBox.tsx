@@ -1,21 +1,21 @@
-// Module ID: 10034
-// Function ID: 10035
+// Module ID: 10073
+// Function ID: 10074
 // Name: InfoBox
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4712, 7176, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4744, 7208, 4786, 2]
 
-// Module 10034 (InfoBox)
+// Module 10073 (InfoBox)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4712 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7176 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4744 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7208 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { infoBox: { borderRadius: nativeDefault.radii.xs, padding: 8, borderStyle: "solid", borderWidth: 1, borderColor: nativeDefault.colors.TEXT_LINK, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, flexDirection: "row", alignItems: "center", gap: 8 }, infoBoxWarning: null, infoText: null };
 let obj3 = { borderRadius: nativeDefault.radii.xs, padding: 8, borderStyle: "solid", borderWidth: 1, borderColor: nativeDefault.colors.TEXT_LINK, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, flexDirection: "row", alignItems: "center", gap: 8 };
 obj2.infoBoxWarning = { borderColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING };
@@ -64,7 +64,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp18 = tmp20;
           }
           const obj3 = { style: tmp5.infoText, variant: "text-sm/semibold", children };
-          const tmp17 = React4(tmp(4754).Text, obj3);
+          const tmp17 = React4(tmp(4786).Text, obj3);
           cResult[9] = children;
           cResult[10] = tmp5.infoText;
           cResult[11] = tmp17;
@@ -79,7 +79,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ infoBox: arr3[0], infoBoxWarning: arr3[1] } = tmp5);
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { color: nativeDefault.colors.TEXT_LINK };
-    const tmp10 = React4(tmp(4712).CircleInformationIcon, obj4);
+    const tmp10 = React4(tmp(4744).CircleInformationIcon, obj4);
     cResult[7] = tmp10;
     let CircleErrorIcon = tmp10;
   } else {
@@ -88,7 +88,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     obj5 = {};
     obj5[items3.INFO] = CircleErrorIcon;
-    CircleErrorIcon = tmp(7176).CircleErrorIcon;
+    CircleErrorIcon = tmp(7208).CircleErrorIcon;
     const obj6 = { color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
     obj5[items3.WARNING] = React4(CircleErrorIcon, obj6);
     cResult[8] = obj5;

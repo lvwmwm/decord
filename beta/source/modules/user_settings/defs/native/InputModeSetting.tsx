@@ -1,18 +1,18 @@
-// Module ID: 15507
-// Function ID: 15508
+// Module ID: 15517
+// Function ID: 15518
 // Name: InputModeSetting
-// Dependencies: [1996, 8238, 4783, 558, 568, 504, 1119, 11594, 10237, 2]
+// Dependencies: [1996, 8270, 4815, 558, 568, 504, 1119, 11630, 10276, 2]
 
-// Module 15507 (InputModeSetting)
+// Module 15517 (InputModeSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
 require = fn;
-const InputModes = fn(4783).InputModes;
+const InputModes = fn(4815).InputModes;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let Q8gkVL = dependencyMap;
   const cResult = c.c(4);
@@ -59,7 +59,7 @@ const pressable = SettingBuilders.createPressable({
     const intl = util.intl;
     return intl.string(util.t["pS+K2L"]);
   },
-  parent: fn(8238).MobileUserSettings.VOICE,
+  parent: fn(8270).MobileUserSettings.VOICE,
   useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let Q8gkVL = dependencyMap;
     const cResult = c.c(4);
@@ -101,7 +101,7 @@ const pressable = SettingBuilders.createPressable({
     }
     return stringResult;
   }),
-  onPress: fn(10237).handleInputModePress,
+  onPress: fn(10276).handleInputModePress,
   useSearchTerms() {
     const intl = util.intl;
     const items = [intl.string(util.t.nuFtHH)];

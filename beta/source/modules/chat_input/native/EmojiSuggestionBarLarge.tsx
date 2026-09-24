@@ -1,19 +1,19 @@
-// Module ID: 12574
-// Function ID: 12575
+// Module ID: 12610
+// Function ID: 12611
 // Name: EmojiSuggestionBarLarge
-// Dependencies: [32, 19, 17, 10439, 21, 4758, 580, 558, 568, 12575, 4497, 10485, 10504, 4471, 2]
+// Dependencies: [32, 19, 17, 10478, 21, 4790, 580, 558, 568, 12611, 4529, 10521, 10540, 4503, 2]
 
-// Module 12574 (EmojiSuggestionBarLarge)
+// Module 12610 (EmojiSuggestionBarLarge)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import EmojiPickerListRow from "EmojiPickerListRow" /* 10485 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 12575 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import EmojiPickerListRow from "EmojiPickerListRow" /* 10521 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 12611 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const native = tmp(4471);
-const ReanimatedRexportDefault = tmp4(4497);
+const native = tmp(4503);
+const ReanimatedRexportDefault = tmp4(4529);
 require = fn;
 function renderEmojiSuggestionBarLargeItem(arg0, arg1, transitionState, cleanUp) {
   const obj = {};
@@ -23,9 +23,9 @@ function renderEmojiSuggestionBarLargeItem(arg0, arg1, transitionState, cleanUp)
   return <closure_11 key={arg0} />;
 }
 let View = fn(17).View;
-const IMAGE_SIZE = fn(10439).IMAGE_SIZE;
+const IMAGE_SIZE = fn(10478).IMAGE_SIZE;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles((arg0) => {
   const obj = { containerLargeWrapper: { overflow: "hidden" }, containerLarge: null, emptySlot: null };
   let str = "space-between";
@@ -104,7 +104,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (locked) {
           let openEmojiActionSheet = dependencyMap;
         } else {
-          openEmojiActionSheet = tmp8(10504).openEmojiActionSheet;
+          openEmojiActionSheet = tmp8(10540).openEmojiActionSheet;
         }
         obj3.onLongPressEmoji = openEmojiActionSheet;
         obj3.animateEmoji = !reducedMotion;
@@ -192,7 +192,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (locked) {
         let openEmojiActionSheet = dependencyMap;
       } else {
-        openEmojiActionSheet = tmp8(10504).openEmojiActionSheet;
+        openEmojiActionSheet = tmp8(10540).openEmojiActionSheet;
       }
       obj3.onLongPressEmoji = openEmojiActionSheet;
       obj3.animateEmoji = !reducedMotion;

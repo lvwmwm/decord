@@ -1,10 +1,10 @@
-// Module ID: 17912
-// Function ID: 17913
+// Module ID: 17922
+// Function ID: 17923
 // Name: VoiceProcessingErrorManager
-// Dependencies: [7365, 4457, 2]
+// Dependencies: [7397, 4489, 2]
 
-// Module 17912 (VoiceProcessingErrorManager)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+// Module 17922 (VoiceProcessingErrorManager)
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
 
 let require = fn;
 const prototype = function VoiceProcessingErrorManager() {
@@ -19,10 +19,10 @@ const prototype = function VoiceProcessingErrorManager() {
     }
   };
   applyArgumentsResult.handleNoiseCancellationError = function handleNoiseCancellationError() {
-    const result = applyArgumentsResult(4457).presentNoiseCancellationError();
+    const result = applyArgumentsResult(4489).presentNoiseCancellationError();
   };
   applyArgumentsResult.handleVoiceActivityDetectionError = function handleVoiceActivityDetectionError() {
-    const result = applyArgumentsResult(4457).presentVoiceActivityDetectionError();
+    const result = applyArgumentsResult(4489).presentVoiceActivityDetectionError();
   };
   return applyArgumentsResult;
 }.prototype;

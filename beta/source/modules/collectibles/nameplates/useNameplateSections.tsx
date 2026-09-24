@@ -1,14 +1,14 @@
-// Module ID: 14902
-// Function ID: 14903
+// Module ID: 14940
+// Function ID: 14941
 // Name: useNameplateSections
-// Dependencies: [32, 19, 7789, 7804, 558, 568, 565, 7801, 1119, 2]
+// Dependencies: [32, 19, 7821, 7836, 558, 568, 565, 7833, 1119, 2]
 
-// Module 14902 (useNameplateSections)
+// Module 14940 (useNameplateSections)
 import util from "util" /* 1119 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7801 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7833 */;
 import _slicedToArray from "module_32" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7789 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7804 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7821 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7836 */;
 
 require = fn;
 const useMemo = fn(19).useMemo;
@@ -130,7 +130,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   const tmp11 = _slicedToArray(stateFromStores(565).useStateFromStoresArray(tmp8, tmp9), 2);
-  let nameplates = stateFromStores(7801).getNameplates(stateFromStores, tmp12);
+  let nameplates = stateFromStores(7833).getNameplates(stateFromStores, tmp12);
   if (cResult[10] === tmp13) {
     if (cResult[11] === stateFromStores) {
       let tmp17 = cResult[12];

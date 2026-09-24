@@ -1,13 +1,13 @@
-// Module ID: 6010
-// Function ID: 6011
+// Module ID: 6042
+// Function ID: 6043
 // Name: AvatarNellyExample
-// Dependencies: [21, 558, 568, 6011, 5802, 2]
+// Dependencies: [21, 558, 568, 6043, 5834, 2]
 
-// Module 6010 (AvatarNellyExample)
+// Module 6042 (AvatarNellyExample)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6011 from "module_6011" /* 6011 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6043 from "module_6043" /* 6043 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const AvatarNellyExample = ReactCompilerGating.isReactCompilerEnabled() ?
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6011 };
+    const obj2 = { uri: _modDef6043 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const AvatarNellyExample = ReactCompilerGating.isReactCompilerEnabled() ?
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6011 };
+  const obj2 = { uri: _modDef6043 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

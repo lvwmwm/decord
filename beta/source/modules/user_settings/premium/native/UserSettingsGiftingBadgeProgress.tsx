@@ -1,29 +1,29 @@
-// Module ID: 13838
-// Function ID: 13839
+// Module ID: 13874
+// Function ID: 13875
 // Name: UserSettingsGiftingBadgeProgress
-// Dependencies: [32, 19, 17, 8466, 21, 4758, 580, 558, 568, 11041, 7409, 7429, 8458, 504, 4754, 1119, 2582, 11046, 11330, 5188, 10959, 13839, 11408, 2]
+// Dependencies: [32, 19, 17, 8498, 21, 4790, 580, 558, 568, 11077, 7441, 7461, 8490, 504, 4786, 1119, 2582, 11082, 11366, 5220, 10995, 13875, 11444, 2]
 
-// Module 13838 (UserSettingsGiftingBadgeProgress)
+// Module 13874 (UserSettingsGiftingBadgeProgress)
 import nativeDefault from "native" /* 580 */;
 import _modDef2582 from "module_2582" /* 2582 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10959 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 11041 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11046 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7441 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10995 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 11077 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11082 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8466 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8498 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Pressable: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-let closure_8 = fn(8466).getSingleRequirementThreshold;
+let closure_8 = fn(8498).getSingleRequirementThreshold;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
 const UserSettingsGiftingBadgeProgress = "UserSettingsGiftingBadgeProgress";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_13 = createStyles.createStyles(() => {
   const obj = { wrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 }, progressContainer: null, progressRow: null, progressTitleText: null, progressBarContainer: null, progressBarTrack: null, progressBarFill: null, progressLabels: null, divider: null, dropdownRow: null, badgesRow: null, badgeItem: null, badgeItemActive: null, badgeCopy: null, footerText: null, introContent: null, introGrid: null, introGridItem: null };
   const obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
@@ -230,8 +230,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocat
   analyticsLocation = analyticsLocation.analyticsLocation;
   const tmp = closure_13();
   importDefault = tmp;
-  dependencyMap = analyticsLocation(11041).useIsGiftingBadgeComplexArtEnabled(UserSettingsGiftingBadgeProgress);
-  let obj = analyticsLocation(11041);
+  dependencyMap = analyticsLocation(11077).useIsGiftingBadgeComplexArtEnabled(UserSettingsGiftingBadgeProgress);
+  let obj = analyticsLocation(11077);
   const analyticsLocations = useAnalyticsLocationsDefault(AnalyticsLocationDefault.USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
   let items = [BadgeDirectoryStore];
   const stateFromStores = analyticsLocation(504).useStateFromStores(items, () => {
@@ -249,7 +249,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocat
     let obj5 = { variant: "text-xs/normal", color: "text-muted", children: null };
     let intl = tmp2(1119).intl;
     obj5.children = intl.string(tmp4(2582)["4Yp0mI"]);
-    obj4.children = closure_9(tmp2(4754).Text, obj5);
+    obj4.children = closure_9(tmp2(4786).Text, obj5);
     let items1 = [closure_9(closure_6, obj4), , ];
     const obj6 = {
       style: tmp.introGrid,
@@ -281,13 +281,13 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocat
     items1[1] = closure_9(closure_6, obj6);
     const obj7 = { variant: "primary", icon: null, text: null, onPress: null, grow: true };
     const obj8 = { size: "sm", color: tmp4(580).unsafe_rawColors.WHITE };
-    obj7.icon = closure_9(tmp2(11330).GiftIcon, obj8);
+    obj7.icon = closure_9(tmp2(11366).GiftIcon, obj8);
     const intl2 = tmp2(1119).intl;
     obj7.text = intl2.string(tmp4(2582).DZnomS);
     obj7.onPress = function onPress() {
       utils_openGiftModal.openGiftModal({ analyticsLocation, analyticsLocations });
     };
-    items1[2] = closure_9(tmp2(5188).Button, obj7);
+    items1[2] = closure_9(tmp2(5220).Button, obj7);
     obj3.children = items1;
     tmp6 = closure_10(closure_6, obj3);
   }
@@ -309,7 +309,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [BadgeDirectoryStore];
     const fn = function b() {
-      singleRequirementProgress = singleRequirementProgress.getSingleRequirementProgress(analyticsLocation(8458).BadgeId.GIFTING);
+      singleRequirementProgress = singleRequirementProgress.getSingleRequirementProgress(analyticsLocation(8490).BadgeId.GIFTING);
       let num;
       if (singleRequirementProgress != null) {
         num = singleRequirementProgress.current;
@@ -317,8 +317,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
       if (num == null) {
         num = 0;
       }
-      const obj2 = { badgeProgress: num, currentTier: singleRequirementProgress.getCurrentTier(analyticsLocation(8458).BadgeId.GIFTING), nextTier: singleRequirementProgress.getNextTier(analyticsLocation(8458).BadgeId.GIFTING), giftsRemaining: singleRequirementProgress.getRemainingToNextTier(analyticsLocation(8458).BadgeId.GIFTING), tiers: null };
-      const badgeById = obj.getBadgeById(tmp(8458).BadgeId.GIFTING);
+      const obj2 = { badgeProgress: num, currentTier: singleRequirementProgress.getCurrentTier(analyticsLocation(8490).BadgeId.GIFTING), nextTier: singleRequirementProgress.getNextTier(analyticsLocation(8490).BadgeId.GIFTING), giftsRemaining: singleRequirementProgress.getRemainingToNextTier(analyticsLocation(8490).BadgeId.GIFTING), tiers: null };
+      const badgeById = obj.getBadgeById(tmp(8490).BadgeId.GIFTING);
       let tiers;
       if (badgeById != null) {
         tiers = badgeById.tiers;
@@ -340,7 +340,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
   ({ badgeProgress, currentTier } = stateFromStoresObject);
   ({ nextTier, giftsRemaining, tiers } = stateFromStoresObject);
   const tmpResult = analyticsLocation(504);
-  const isGiftingBadgeComplexArtEnabled = analyticsLocation(11041).useIsGiftingBadgeComplexArtEnabled(UserSettingsGiftingBadgeProgress);
+  const isGiftingBadgeComplexArtEnabled = analyticsLocation(11077).useIsGiftingBadgeComplexArtEnabled(UserSettingsGiftingBadgeProgress);
   if (0 === badgeProgress) {
     if (cResult[2] !== analyticsLocation) {
       let obj2 = { analyticsLocation };
@@ -388,7 +388,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
                                                   const _Symbol = Symbol;
                                                   if (cResult[87] === Symbol.for("react.memo_cache_sentinel")) {
                                                     let obj3 = { size: "sm", color: tmp7(580).unsafe_rawColors.WHITE };
-                                                    const tmp49 = closure_9(tmp(11330).GiftIcon, obj3);
+                                                    const tmp49 = closure_9(tmp(11366).GiftIcon, obj3);
                                                     let intl = tmp(1119).intl;
                                                     const stringResult = intl.string(tmp7(2582).DZnomS);
                                                     cResult[87] = tmp49;
@@ -432,7 +432,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
                                                       let obj5 = { variant: "text-sm/medium", color: "text-strong", children: null };
                                                       const intl2 = tmp(1119).intl;
                                                       obj5.children = intl2.string(tmp7(2582).WZ4cXA);
-                                                      const tmp60 = closure_9(tmp(4754).Text, obj5);
+                                                      const tmp60 = closure_9(tmp(4786).Text, obj5);
                                                       cResult[95] = tmp60;
                                                       const tmp59 = tmp60;
                                                     } else {
@@ -537,7 +537,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
                                                           const obj9 = { style: tmp4.footerText, variant: "text-xs/normal", color: "text-muted", children: null };
                                                           const intl3 = tmp(1119).intl;
                                                           obj9.children = intl3.string(tmp7(2582)["4Yp0mI"]);
-                                                          items1[1] = closure_9(tmp(4754).Text, obj9);
+                                                          items1[1] = closure_9(tmp(4786).Text, obj9);
                                                           obj7.children = items1;
                                                           tmp73 = closure_10(closure_11, obj7);
                                                         }
@@ -577,7 +577,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
                                                                                                     },
                                                     grow: true
                                                   };
-                                                  const tmp53 = closure_9(tmp(5188).Button, obj11);
+                                                  const tmp53 = closure_9(tmp(5220).Button, obj11);
                                                   cResult[89] = analyticsLocation;
                                                   cResult[90] = analyticsLocations;
                                                   cResult[91] = tmp53;
@@ -661,12 +661,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
         }
       }
     }
-    const giftingBadgeProgressPercent = tmp(11041).getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
+    const giftingBadgeProgressPercent = tmp(11077).getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
     cResult[33] = badgeProgress;
     cResult[34] = currentTier;
     cResult[35] = nextTier;
     cResult[36] = giftingBadgeProgressPercent;
-    const tmpResult4 = tmp(11041);
+    const tmpResult4 = tmp(11077);
   }
 }) : ((analyticsLocation) => {
   analyticsLocation = analyticsLocation.analyticsLocation;
@@ -703,18 +703,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
   ({ badgeProgress, currentTier } = stateFromStoresObject);
   ({ nextTier, tiers, giftsRemaining } = stateFromStoresObject);
   let obj = analyticsLocation(504);
-  const isGiftingBadgeComplexArtEnabled = analyticsLocation(11041).useIsGiftingBadgeComplexArtEnabled(UserSettingsGiftingBadgeProgress);
+  const isGiftingBadgeComplexArtEnabled = analyticsLocation(11077).useIsGiftingBadgeComplexArtEnabled(UserSettingsGiftingBadgeProgress);
   if (0 === badgeProgress) {
     let obj3 = { analyticsLocation };
     return closure_9(closure_14, obj3);
   } else {
     let tmp19 = closure_8(currentTier);
     const tmp25 = closure_8(nextTier);
-    const giftingBadgeProgressPercent = tmp7(11041).getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
-    const tmp7Result = tmp7(11041);
-    let giftingBadgeTierIconUrl = tmp7(11041).getGiftingBadgeTierIconUrl(currentTier, isGiftingBadgeComplexArtEnabled);
-    const tmp7Result3 = tmp7(11041);
-    const giftingBadgeTierIconUrl1 = tmp7(11041).getGiftingBadgeTierIconUrl(nextTier, isGiftingBadgeComplexArtEnabled);
+    const giftingBadgeProgressPercent = tmp7(11077).getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
+    const tmp7Result = tmp7(11077);
+    let giftingBadgeTierIconUrl = tmp7(11077).getGiftingBadgeTierIconUrl(currentTier, isGiftingBadgeComplexArtEnabled);
+    const tmp7Result3 = tmp7(11077);
+    const giftingBadgeTierIconUrl1 = tmp7(11077).getGiftingBadgeTierIconUrl(nextTier, isGiftingBadgeComplexArtEnabled);
     if (null != nextTier) {
       const intl2 = tmp7(1119).intl;
       let obj4 = { count: giftsRemaining, nextTier: null };
@@ -745,15 +745,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
     let tmp13 = null != giftingBadgeTierIconUrl;
     if (tmp13) {
       const obj9 = { icon: giftingBadgeTierIconUrl, size: 36, style: { margin: 4 } };
-      tmp13 = closure_9(tmp4(11046), obj9);
+      tmp13 = closure_9(tmp4(11082), obj9);
     }
     let items1 = [tmp13, , ];
     const obj10 = { style: tmp.progressTitleText, variant: "text-md/medium", color: "text-strong", children: formatToPlainStringResult };
-    items1[1] = closure_9(tmp7(4754).Text, obj10);
+    items1[1] = closure_9(tmp7(4786).Text, obj10);
     let tmp15Result = null != giftingBadgeTierIconUrl1;
     if (tmp15Result) {
       const obj11 = { icon: giftingBadgeTierIconUrl1, size: 36, style: { margin: 4 } };
-      tmp15Result = tmp15(tmp4(11046), obj11);
+      tmp15Result = tmp15(tmp4(11082), obj11);
     }
     items1[2] = tmp15Result;
     obj8.children = items1;
@@ -782,7 +782,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
     const obj18 = { variant: "text-xs/normal", color: "text-subtle", children: null };
     obj17.count = tmp19;
     obj18.children = intl3.format(tmp4(2582).iIpfQe, obj17);
-    obj16.children = closure_9(tmp7(4754).Text, obj18);
+    obj16.children = closure_9(tmp7(4786).Text, obj18);
     items4[1] = closure_9(closure_6, obj16);
     obj12.children = items4;
     items2[1] = closure_10(closure_6, obj12);
@@ -790,13 +790,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
     const items5 = [closure_10(closure_6, obj7), , , , ];
     const obj19 = { variant: "primary", icon: null, text: null, onPress: null, grow: true };
     const obj20 = { size: "sm", color: tmp4(580).unsafe_rawColors.WHITE };
-    obj19.icon = closure_9(tmp7(11330).GiftIcon, obj20);
+    obj19.icon = closure_9(tmp7(11366).GiftIcon, obj20);
     const intl4 = tmp7(1119).intl;
     obj19.text = intl4.string(tmp4(2582).DZnomS);
     obj19.onPress = function onPress() {
       utils_openGiftModal.openGiftModal({ analyticsLocation, analyticsLocations });
     };
-    items5[1] = closure_9(tmp7(5188).Button, obj19);
+    items5[1] = closure_9(tmp7(5220).Button, obj19);
     const obj21 = { style: tmp.divider };
     items5[2] = closure_9(closure_6, obj21);
     const obj22 = {
@@ -809,11 +809,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
     const obj23 = { variant: "text-sm/medium", color: "text-strong", children: null };
     const intl5 = tmp7(1119).intl;
     obj23.children = intl5.string(tmp4(2582).WZ4cXA);
-    const items6 = [closure_9(tmp7(4754).Text, obj23), ];
+    const items6 = [closure_9(tmp7(4786).Text, obj23), ];
     if (tmp11Result) {
-      let ChevronSmallDownIcon = tmp7(13839).ChevronSmallUpIcon;
+      let ChevronSmallDownIcon = tmp7(13875).ChevronSmallUpIcon;
     } else {
-      ChevronSmallDownIcon = tmp7(11408).ChevronSmallDownIcon;
+      ChevronSmallDownIcon = tmp7(11444).ChevronSmallDownIcon;
     }
     const obj24 = { color: tmp4(580).colors.INTERACTIVE_ICON_DEFAULT };
     items6[1] = closure_9(ChevronSmallDownIcon, obj24);
@@ -859,7 +859,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
       const obj27 = { style: tmp.footerText, variant: "text-xs/normal", color: "text-muted", children: null };
       const intl6 = tmp7(1119).intl;
       obj27.children = intl6.string(tmp4(2582)["4Yp0mI"]);
-      items7[1] = tmp15(tmp7(4754).Text, obj27);
+      items7[1] = tmp15(tmp7(4786).Text, obj27);
       obj25.children = items7;
       tmp11Result = tmp11(closure_11, obj25);
     }
@@ -867,5 +867,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocatio
     obj6.children = items5;
     return closure_10(closure_6, obj6);
   }
-  let obj2 = analyticsLocation(11041);
+  let obj2 = analyticsLocation(11077);
 });

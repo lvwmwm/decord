@@ -1,16 +1,16 @@
-// Module ID: 14853
-// Function ID: 14854
+// Module ID: 14891
+// Function ID: 14892
 // Name: UserSettingsEditUserProfile
-// Dependencies: [19, 1376, 21, 558, 568, 7409, 7429, 504, 8461, 14854, 2]
+// Dependencies: [19, 1376, 21, 558, 568, 7441, 7461, 504, 8493, 14892, 2]
 
-// Module 14853 (UserSettingsEditUserProfile)
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8461 */;
+// Module 14891 (UserSettingsEditUserProfile)
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7441 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8493 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
-const UserProfileEditFormDefault = tmp3(14854);
+const UserProfileEditFormDefault = tmp3(14892);
 const require = fn;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
@@ -131,7 +131,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
       }
-      AnalyticsLocationProvider = AnalyticsLocationProvider(7409).AnalyticsLocationProvider;
+      AnalyticsLocationProvider = AnalyticsLocationProvider(7441).AnalyticsLocationProvider;
       const obj2 = { value: analyticsLocations, children: tmp12 };
       tmp = <AnalyticsLocationProvider value={analyticsLocations}>{tmp12}</AnalyticsLocationProvider>;
       cResult[8] = analyticsLocations;
@@ -163,7 +163,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { currentUser: stateFromStores };
     const merged = Object.assign(arg0);
     obj2.children = jsx(UserProfileEditFormDefault, { currentUser: stateFromStores });
-    tmp7 = jsx(tmp4(7409).AnalyticsLocationProvider, { value: tmp3(AnalyticsLocationDefault.USER_SETTINGS_USER_PROFILE).analyticsLocations, children: null });
+    tmp7 = jsx(tmp4(7441).AnalyticsLocationProvider, { value: tmp3(AnalyticsLocationDefault.USER_SETTINGS_USER_PROFILE).analyticsLocations, children: null });
     const tmpResult = UserProfileEditFormDefault;
   }
   return tmp7;

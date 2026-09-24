@@ -1,13 +1,13 @@
-// Module ID: 14003
-// Function ID: 14004
+// Module ID: 14039
+// Function ID: 14040
 // Name: useHasXboxMonthlyOrbsPerk
-// Dependencies: [1376, 1378, 4418, 1382, 1384, 558, 568, 504, 2]
+// Dependencies: [1376, 1378, 4450, 1382, 1384, 558, 568, 504, 2]
 // Exports: hasCrepeMonthlyOrbsPerk
 
-// Module 14003 (useHasXboxMonthlyOrbsPerk)
+// Module 14039 (useHasXboxMonthlyOrbsPerk)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import PremiumUtils from "PremiumUtils" /* 4418 */;
+import PremiumUtils from "PremiumUtils" /* 4450 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const PremiumUtilsDefault = PremiumUtils;
@@ -69,7 +69,7 @@ export const useHasXboxMonthlyOrbsPerk = ReactCompilerGating.isReactCompilerEnab
         flag = hasItem;
         const tmpResult4 = tmp(1382);
       }
-      tmpResult3 = tmp(4418);
+      tmpResult3 = tmp(4450);
     }
     cResult[2] = stateFromStores;
     cResult[3] = flag;
@@ -98,7 +98,7 @@ export const useHasXboxMonthlyOrbsPerk = ReactCompilerGating.isReactCompilerEnab
       flag = hasItem;
       const tmpResult2 = tmp(1382);
     }
-    tmpResult = tmp(4418);
+    tmpResult = tmp(4450);
   }
   return flag;
 });

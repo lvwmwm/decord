@@ -1,11 +1,11 @@
-// Module ID: 14828
-// Function ID: 14829
+// Module ID: 14866
+// Function ID: 14867
 // Name: GameRelationshipManager
-// Dependencies: [7899, 1078, 1986, 577, 7410, 2]
+// Dependencies: [7931, 1078, 1986, 577, 7442, 2]
 
-// Module 14828 (GameRelationshipManager)
+// Module 14866 (GameRelationshipManager)
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7899 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7931 */;
 import LifecycleManager from "LifecycleManager" /* 1986 */;
 
 const RelationshipTypes = fn(1078).RelationshipTypes;

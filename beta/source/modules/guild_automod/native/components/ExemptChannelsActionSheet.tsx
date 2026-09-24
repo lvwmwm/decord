@@ -1,16 +1,16 @@
-// Module ID: 17978
-// Function ID: 17979
+// Module ID: 17988
+// Function ID: 17989
 // Name: ExemptChannelsActionSheet
-// Dependencies: [19, 7358, 2067, 4409, 1376, 21, 558, 568, 504, 4911, 7359, 5241, 5822, 1119, 17977, 2]
+// Dependencies: [19, 7390, 2067, 4441, 1376, 21, 558, 568, 504, 4943, 7391, 5273, 5854, 1119, 17987, 2]
 
-// Module 17978 (ExemptChannelsActionSheet)
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5241 */;
-import TableRow from "TableRow" /* 5822 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7359 */;
+// Module 17988 (ExemptChannelsActionSheet)
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5273 */;
+import TableRow from "TableRow" /* 5854 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7391 */;
 import noop from "module_19" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7358 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7390 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -193,7 +193,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
   }
-  const tmp16 = jsx(stateFromStores(17977), { title: tmp11, searchPlaceholder: tmp12, listId: "automod-exempt-channels", items: tmp9, initialSelected: exemptChannels, getId: getChannelOptionId, getSearchText: getChannelOptionName, renderLabel: getChannelOptionName, renderIcon: tmp10, onSave });
+  const tmp16 = jsx(stateFromStores(17987), { title: tmp11, searchPlaceholder: tmp12, listId: "automod-exempt-channels", items: tmp9, initialSelected: exemptChannels, getId: getChannelOptionId, getSearchText: getChannelOptionName, renderLabel: getChannelOptionName, renderIcon: tmp10, onSave });
   cResult[8] = exemptChannels;
   cResult[9] = onSave;
   cResult[10] = tmp9;
@@ -230,5 +230,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   obj2.renderLabel = getChannelOptionName;
   obj2.renderIcon = callback;
   obj2.onSave = onSave;
-  return jsx(stateFromStores(17977), { title: null, searchPlaceholder: null, listId: "automod-exempt-channels", items: null, initialSelected: null, getId: null, getSearchText: null, renderLabel: null, renderIcon: null, onSave: null });
+  return jsx(stateFromStores(17987), { title: null, searchPlaceholder: null, listId: "automod-exempt-channels", items: null, initialSelected: null, getId: null, getSearchText: null, renderLabel: null, renderIcon: null, onSave: null });
 });

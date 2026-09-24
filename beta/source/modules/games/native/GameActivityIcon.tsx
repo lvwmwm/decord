@@ -1,21 +1,21 @@
-// Module ID: 10018
-// Function ID: 10019
+// Module ID: 10057
+// Function ID: 10058
 // Name: GameActivityIcon
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4471, 4610, 8845, 5802, 1401, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4503, 4642, 8877, 5834, 1401, 2]
 
-// Module 10018 (GameActivityIcon)
+// Module 10057 (GameActivityIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import FastImageDefault from "FastImage" /* 5802 */;
+import FastImageDefault from "FastImage" /* 5834 */;
 import noop from "module_19" /* 19 */;
 
 const AvatarUtils = UnknownGameIcon(1401);
-const shared = UnknownGameIcon(4610);
-const UnknownGameIcon2 = UnknownGameIcon(8845);
+const shared = UnknownGameIcon(4642);
+const UnknownGameIcon2 = UnknownGameIcon(8877);
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { icon: { borderRadius: nativeDefault.radii.xs } };
 let closure_6 = createStyles.createStyles(obj);
 const ReactCompilerGating = fn(558);
@@ -127,11 +127,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((style)
       const obj2 = { size: "custom", style: null, color: null };
       const items1 = [tmp.icon, size1];
       obj2.style = items1;
-      const tmp2Result = tmp2(4610);
+      const tmp2Result = tmp2(4642);
       const colors = nativeDefault.colors;
-      obj2.color = tmp2(4610).isThemeDark(obj.useThemeContext().theme) ? colors.WHITE : colors.BLACK;
-      jsx(tmp2(8845).UnknownGameIcon, { size: "custom", style: null, color: null });
-      const isThemeDarkResult = tmp2(4610).isThemeDark(obj.useThemeContext().theme);
+      obj2.color = tmp2(4642).isThemeDark(obj.useThemeContext().theme) ? colors.WHITE : colors.BLACK;
+      jsx(tmp2(8877).UnknownGameIcon, { size: "custom", style: null, color: null });
+      const isThemeDarkResult = tmp2(4642).isThemeDark(obj.useThemeContext().theme);
     }
   } else {
     const obj3 = { source: null, style: null };

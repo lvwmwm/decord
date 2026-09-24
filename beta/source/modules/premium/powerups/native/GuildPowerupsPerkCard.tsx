@@ -1,18 +1,18 @@
-// Module ID: 12736
-// Function ID: 12737
+// Module ID: 12772
+// Function ID: 12773
 // Name: GuildPowerupsPerkCard
-// Dependencies: [109, 19, 17, 21, 4758, 580, 558, 568, 4693, 4610, 7223, 12686, 5198, 4754, 12687, 1181, 1119, 12732, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 580, 558, 568, 4725, 4642, 7255, 12722, 5230, 4786, 12723, 1181, 1119, 12768, 2]
 
-// Module 12736 (GuildPowerupsPerkCard)
+// Module 12772 (GuildPowerupsPerkCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import shared from "shared" /* 4610 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7223 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 12687 */;
-import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 12732 */;
+import shared from "shared" /* 4642 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7255 */;
+import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 12723 */;
+import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 12768 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,7 +21,7 @@ let closure_3 = ["title", "description", "imageUrl", "isImageAnimated", "riveCom
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { marginHorizontal: nativeDefault.space.PX_16 }, card: { padding: 0, overflow: "hidden" }, contentContainer: null, imageContainer: null, gradient: null, headerContainer: null, badge: null };
 let obj3 = { marginHorizontal: nativeDefault.space.PX_16 };
 obj2.contentContainer = { gap: nativeDefault.space.PX_16, padding: nativeDefault.space.PX_16 };
@@ -76,11 +76,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp18 = closure_8();
   const tmp20 = useThemeDefault();
   if (cResult[11] !== tmp20) {
-    const isThemeDarkResult = tmp(4610).isThemeDark(tmp20);
+    const isThemeDarkResult = tmp(4642).isThemeDark(tmp20);
     cResult[11] = tmp20;
     cResult[12] = isThemeDarkResult;
     let tmp21 = isThemeDarkResult;
-    const tmpResult = tmp(4610);
+    const tmpResult = tmp(4642);
   } else {
     tmp21 = cResult[12];
   }
@@ -172,7 +172,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                     const obj2 = { containerStyle: tmp27, style: tmp18.card, status: tmp10, onPress: tmp8, children: null };
                                     const items = [tmp36, tmp56, tmp60, tmp63];
                                     obj2.children = items;
-                                    const tmp68 = React5(tmp19(12732), obj2);
+                                    const tmp68 = React5(tmp19(12768), obj2);
                                     cResult[53] = tmp8;
                                     cResult[54] = tmp10;
                                     cResult[55] = tmp18.card;
@@ -225,7 +225,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           const obj6 = {};
                           const merged = Object.assign(tmp6);
                           obj6.status = tmp10;
-                          const tmp55 = timestampProducer(tmp(12687).GuildPowerupsCardFooter, obj6);
+                          const tmp55 = timestampProducer(tmp(12723).GuildPowerupsCardFooter, obj6);
                           cResult[40] = tmp6;
                           cResult[41] = tmp10;
                           cResult[42] = tmp55;
@@ -243,7 +243,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       tmp46 = tmp49;
                     }
                     const obj8 = { variant: str4, children: tmp5 };
-                    const tmp45 = timestampProducer(tmp(4754).Text, obj8);
+                    const tmp45 = timestampProducer(tmp(4786).Text, obj8);
                     cResult[33] = tmp5;
                     cResult[34] = str4;
                     cResult[35] = tmp45;
@@ -251,7 +251,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   }
                 }
                 const obj9 = { color: str2, variant: str3, children: tmp13 };
-                const tmp42 = timestampProducer(tmp(4754).Text, obj9);
+                const tmp42 = timestampProducer(tmp(4786).Text, obj9);
                 cResult[29] = str2;
                 cResult[30] = str3;
                 cResult[31] = tmp13;
@@ -270,7 +270,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp36 = tmp39;
           }
           const obj11 = { colors: tmp24, style: tmp18.gradient };
-          const tmp35 = timestampProducer(tmp19(5198), obj11);
+          const tmp35 = timestampProducer(tmp19(5230), obj11);
           cResult[22] = tmp24;
           cResult[23] = tmp18.gradient;
           cResult[24] = tmp35;
@@ -284,8 +284,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           str = "";
         }
         const obj12 = { imageUrl: str, isAnimated: tmp17 };
-        tmp31Result = timestampProducer(tmp19(12686), obj12);
-        const tmp19Result = tmp19(12686);
+        tmp31Result = timestampProducer(tmp19(12722), obj12);
+        const tmp19Result = tmp19(12722);
       }
       cResult[18] = tmp7;
       cResult[19] = tmp17;
@@ -322,8 +322,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       imageUrl = "";
     }
     const obj5 = { imageUrl, isAnimated: isImageAnimated };
-    riveComponent = timestampProducer(tmp3(12686), obj5);
-    const tmp3Result2 = tmp3(12686);
+    riveComponent = timestampProducer(tmp3(12722), obj5);
+    const tmp3Result2 = tmp3(12722);
   }
   const items1 = [riveComponent, timestampProducer(LinearGradientDefault, { colors: tmp9, style: tmp2.gradient })];
   obj4.children = items1;

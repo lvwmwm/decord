@@ -1,14 +1,14 @@
-// Module ID: 4687
-// Function ID: 4688
+// Module ID: 4719
+// Function ID: 4720
 // Name: ServerThemeExperiment
-// Dependencies: [1078, 4672, 4688, 558, 568, 2]
+// Dependencies: [1078, 4704, 4720, 558, 568, 2]
 // Exports: getServerThemeEnabled, getServerThemeRollbackEnabled, resolveServerThemeConfig
 
-// Module 4687 (ServerThemeExperiment)
+// Module 4719 (ServerThemeExperiment)
 import c from "c" /* 568 */;
 import Constants from "Constants" /* 1078 */;
-import ServerThemeApexShadowExperiment2 from "ServerThemeApexShadowExperiment" /* 4688 */;
-import createExperiment from "module_4672" /* 4672 */;
+import ServerThemeApexShadowExperiment2 from "ServerThemeApexShadowExperiment" /* 4720 */;
+import createExperiment from "module_4704" /* 4704 */;
 import "ReactCompilerGating";
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

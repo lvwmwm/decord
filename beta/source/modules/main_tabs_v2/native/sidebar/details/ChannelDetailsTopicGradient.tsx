@@ -1,13 +1,13 @@
-// Module ID: 17212
-// Function ID: 17213
+// Module ID: 17222
+// Function ID: 17223
 // Name: ChannelDetailsTopicGradient
-// Dependencies: [19, 558, 568, 4462, 580, 676, 2]
+// Dependencies: [19, 558, 568, 4494, 580, 676, 2]
 
-// Module 17212 (ChannelDetailsTopicGradient)
+// Module 17222 (ChannelDetailsTopicGradient)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef676 from "module_676" /* 676 */;
-import useToken from "useToken" /* 4462 */;
+import useToken from "useToken" /* 4494 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -40,7 +40,7 @@ export const useChannelTopicGradientBackground = ReactCompilerGating.isReactComp
   cResult[4] = items;
   tmp7 = items;
 }) : (() => {
-  token = token(4462).useToken(nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
+  token = token(4494).useToken(nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
   let items = [token];
   return noop.useMemo(() => {
     const obj = _modDef676(token);

@@ -1,11 +1,11 @@
-// Module ID: 16338
-// Function ID: 16339
+// Module ID: 16348
+// Function ID: 16349
 // Name: PanelsNavigationUtils
-// Dependencies: [4617, 4616, 1493, 1259, 2]
+// Dependencies: [4649, 4648, 1493, 1259, 2]
 // Exports: convertLandscapeToPortraitScreens, convertPortraitToLandscapeScreens
 
-// Module 16338 (PanelsNavigationUtils)
-import RootNavigationRef from "RootNavigationRef" /* 4617 */;
+// Module 16348 (PanelsNavigationUtils)
+import RootNavigationRef from "RootNavigationRef" /* 4649 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/PanelsNavigationUtils.tsx");
@@ -15,13 +15,13 @@ export const convertPortraitToLandscapeScreens = function convertPortraitToLands
   if (null != store) {
     const state1 = store.getState();
     if (null != state1) {
-      const coerceMainRouteResult = tmp(4616).coerceMainRoute(state1.routes[0]);
+      const coerceMainRouteResult = tmp(4648).coerceMainRoute(state1.routes[0]);
       if (null != coerceMainRouteResult) {
         const state2 = coerceMainRouteResult.state;
         if (null != state2) {
           if (0 !== state2.index) {
             if (null != tmpResult4.coerceChannelRoute(state2.routes[1])) {
-              const coerceTabsRouteResult = tmp(4616).coerceTabsRoute(state2.routes[0]);
+              const coerceTabsRouteResult = tmp(4648).coerceTabsRoute(state2.routes[0]);
               if (null != coerceTabsRouteResult) {
                 const state3 = coerceTabsRouteResult.state;
                 let tmp4;
@@ -55,15 +55,15 @@ export const convertPortraitToLandscapeScreens = function convertPortraitToLands
                   obj4.index = items1.length - 1;
                   store.dispatch(CommonActions.reset(obj4));
                 }
-                tmpResult6 = tmp(4616);
+                tmpResult6 = tmp(4648);
               }
-              const tmpResult5 = tmp(4616);
+              const tmpResult5 = tmp(4648);
             }
-            tmpResult4 = tmp(4616);
+            tmpResult4 = tmp(4648);
           }
         }
       }
-      const tmpResult = tmp(4616);
+      const tmpResult = tmp(4648);
     }
   }
 };
@@ -72,16 +72,16 @@ export const convertLandscapeToPortraitScreens = function convertLandscapeToPort
   if (null != store) {
     const state1 = store.getState();
     if (null != state1) {
-      const coerceMainRouteResult = tmp(4616).coerceMainRoute(state1.routes[0]);
+      const coerceMainRouteResult = tmp(4648).coerceMainRoute(state1.routes[0]);
       if (null != coerceMainRouteResult) {
         const state2 = coerceMainRouteResult.state;
         if (null != state2) {
           if (0 === state1.index) {
             if (0 !== state2.index) {
-              const tmpResult5 = tmp(4616);
+              const tmpResult5 = tmp(4648);
             }
           }
-          const coerceTabsRouteResult = tmp(4616).coerceTabsRoute(state2.routes[0]);
+          const coerceTabsRouteResult = tmp(4648).coerceTabsRoute(state2.routes[0]);
           if (null != coerceTabsRouteResult) {
             const state3 = coerceTabsRouteResult.state;
             let tmp5;
@@ -93,7 +93,7 @@ export const convertLandscapeToPortraitScreens = function convertLandscapeToPort
               }
               tmp5 = state3.routes[index];
             }
-            const coerceGuildsRouteResult = tmp(4616).coerceGuildsRoute(tmp5);
+            const coerceGuildsRouteResult = tmp(4648).coerceGuildsRoute(tmp5);
             if (null != coerceGuildsRouteResult) {
               const obj2 = {};
               const merged = Object.assign(state2);
@@ -141,12 +141,12 @@ export const convertLandscapeToPortraitScreens = function convertLandscapeToPort
               obj6.index = items1.length - 1;
               store.dispatch(CommonActions.reset(obj6));
             }
-            const tmpResult7 = tmp(4616);
+            const tmpResult7 = tmp(4648);
           }
-          const tmpResult6 = tmp(4616);
+          const tmpResult6 = tmp(4648);
         }
       }
-      const tmpResult = tmp(4616);
+      const tmpResult = tmp(4648);
     }
   }
 };

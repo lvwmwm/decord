@@ -1,17 +1,17 @@
-// Module ID: 16500
-// Function ID: 16501
+// Module ID: 16510
+// Function ID: 16511
 // Name: GuildThemeNuxActionSheet
-// Dependencies: [5, 32, 19, 17, 4580, 4646, 2042, 21, 3, 4758, 580, 558, 568, 16501, 4689, 504, 4725, 1119, 16502, 4754, 5900, 5901, 1181, 5188, 7397, 2]
+// Dependencies: [5, 32, 19, 17, 4612, 4678, 2042, 21, 3, 4790, 580, 558, 568, 16511, 4721, 504, 4757, 1119, 16512, 4786, 5932, 5933, 1181, 5220, 7429, 2]
 
-// Module 16500 (GuildThemeNuxActionSheet)
+// Module 16510 (GuildThemeNuxActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
-import GuildThemeRuntimeStore from "GuildThemeRuntimeStore" /* 4646 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
+import GuildThemeRuntimeStore from "GuildThemeRuntimeStore" /* 4678 */;
 
 const require = globalThis.__r;
 
@@ -22,7 +22,7 @@ const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const GuildThemeNuxActionSheet = "GuildThemeNuxActionSheet";
 let closure_13 = new LoggerDefault("GuildThemeNuxActionSheet");
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: null, title: null, description: null, options: null, warning: null, footer: null };
 const tmp3 = new LoggerDefault("GuildThemeNuxActionSheet");
 obj2.container = { padding: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8, paddingBottom: 0 };
@@ -195,7 +195,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                 v0 = 1;
                 v2 = 2;
                 c5 = 1;
-                const obj5 = { value: closure_0(16501).saveGuildThemeNuxPreference(tmp48, closure_1_6), done: false };
+                const obj5 = { value: closure_0(16511).saveGuildThemeNuxPreference(tmp48, closure_1_6), done: false };
                 return obj5;
               } else {
                 c5 = 3;
@@ -218,8 +218,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             v0 = 0;
             c5.current = true;
             tmp3(constants.TAKE_ACTION);
-            markAsDismissed(4725).hideActionSheet(GuildThemeNuxActionSheet);
-            const obj = markAsDismissed(4725);
+            markAsDismissed(4757).hideActionSheet(GuildThemeNuxActionSheet);
+            const obj = markAsDismissed(4757);
           }
           v0 = 0;
           c5 = 3;
@@ -281,13 +281,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let stateFromStores;
   let callback1;
   const tmp = closure_14();
-  [tmp5, c2] = noop.useState(guildId(16501).getInitialGuildThemeNuxSelection);
-  const tmp4 = _slicedToArray(noop.useState(guildId(16501).getInitialGuildThemeNuxSelection), 2);
+  [tmp5, c2] = noop.useState(guildId(16511).getInitialGuildThemeNuxSelection);
+  const tmp4 = _slicedToArray(noop.useState(guildId(16511).getInitialGuildThemeNuxSelection), 2);
   [tmp7, c3] = noop.useState(null);
   const tmp6 = _slicedToArray(noop.useState(null), 2);
   [tmp9, c4] = noop.useState(false);
   noop = noop.useRef(false);
-  const tmp10 = tmp5 === guildId(4689).GuildThemeSourcePreference.PERSONAL;
+  const tmp10 = tmp5 === guildId(4721).GuildThemeSourcePreference.PERSONAL;
   closure_6 = tmp10;
   const tmp8 = _slicedToArray(noop.useState(false), 2);
   const items = [stateFromStores];
@@ -417,29 +417,29 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   obj3.dismissAccessibilityLabel = intl2.string(guildId(1119).t.cpT0Cq);
   obj3.onDismiss = callback3;
   obj3.contentStyles = tmp.container;
-  const items7 = [closure_10(markAsDismissed(16502), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
+  const items7 = [closure_10(markAsDismissed(16512), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
   const obj4 = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: null };
   const intl3 = tmp2(1119).intl;
   obj4.children = intl3.string(guildId(1119).t.Q9zFy9);
-  items7[1] = closure_10(guildId(4754).Text, obj4);
+  items7[1] = closure_10(guildId(4786).Text, obj4);
   let obj5 = { variant: "text-md/normal", color: "text-default", style: tmp.description, children: null };
   const intl4 = tmp2(1119).intl;
   obj5.children = intl4.string(guildId(1119).t.XLpBLj);
-  items7[2] = closure_10(guildId(4754).Text, obj5);
+  items7[2] = closure_10(guildId(4786).Text, obj5);
   let obj6 = { style: tmp.options, children: null };
   let obj7 = { hasIcons: false, value: tmp5, onChange: callback, children: null };
   const obj8 = { label: null, value: null };
   const intl5 = tmp2(1119).intl;
   obj8.label = intl5.string(guildId(1119).t.aN3RNQ);
-  obj8.value = guildId(4689).GuildThemeSourcePreference.GUILD;
-  const items8 = [closure_10(guildId(5900).TableRadioRow, obj8), ];
+  obj8.value = guildId(4721).GuildThemeSourcePreference.GUILD;
+  const items8 = [closure_10(guildId(5932).TableRadioRow, obj8), ];
   const obj9 = { label: null, value: null };
   const intl6 = tmp2(1119).intl;
   obj9.label = intl6.string(guildId(1119).t.js8y7t);
-  obj9.value = guildId(4689).GuildThemeSourcePreference.PERSONAL;
-  items8[1] = closure_10(guildId(5900).TableRadioRow, obj9);
+  obj9.value = guildId(4721).GuildThemeSourcePreference.PERSONAL;
+  items8[1] = closure_10(guildId(5932).TableRadioRow, obj9);
   obj7.children = items8;
-  obj6.children = closure_11(guildId(5901).TableRadioGroup, obj7);
+  obj6.children = closure_11(guildId(5933).TableRadioGroup, obj7);
   items7[3] = closure_10(closure_6, obj6);
   let tmp20Result = null;
   if (tmp10) {
@@ -469,9 +469,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   obj15.loading = tmp9;
   obj15.disabled = tmp9;
   obj15.onPress = callback2;
-  obj14.children = closure_10(guildId(5188).Button, obj15);
+  obj14.children = closure_10(guildId(5220).Button, obj15);
   items7[6] = closure_10(closure_6, obj14);
   obj3.children = items7;
-  return closure_11(guildId(7397).BottomSheet, obj3);
+  return closure_11(guildId(7429).BottomSheet, obj3);
 });
 export const GUILD_THEME_NUX_ACTION_SHEET_KEY = "GuildThemeNuxActionSheet";

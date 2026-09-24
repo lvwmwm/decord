@@ -1,11 +1,11 @@
-// Module ID: 8996
-// Function ID: 8997
+// Module ID: 9028
+// Function ID: 9029
 // Name: GameProfileHorizontalScrollView
-// Dependencies: [19, 17, 21, 558, 568, 6891, 2]
+// Dependencies: [19, 17, 21, 558, 568, 6923, 2]
 
-// Module 8996 (GameProfileHorizontalScrollView)
+// Module 9028 (GameProfileHorizontalScrollView)
 import c from "c" /* 568 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6923 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -36,7 +36,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
       return tmp9;
     }
     const obj3 = { gesture: nativeGesture, children: tmp6 };
-    const tmp11 = jsx(tmp(6891).GestureDetector, { gesture: nativeGesture, children: tmp6 });
+    const tmp11 = jsx(tmp(6923).GestureDetector, { gesture: nativeGesture, children: tmp6 });
     cResult[4] = nativeGesture;
     cResult[5] = tmp6;
     cResult[6] = tmp11;

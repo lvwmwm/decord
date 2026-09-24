@@ -1,12 +1,12 @@
-// Module ID: 10519
-// Function ID: 10520
+// Module ID: 10555
+// Function ID: 10556
 // Name: EmojiOptionsActionSheet
-// Dependencies: [19, 21, 558, 568, 7436, 4457, 4725, 4700, 1119, 7449, 5903, 5822, 2]
+// Dependencies: [19, 21, 558, 568, 7468, 4489, 4757, 4732, 1119, 7481, 5935, 5854, 2]
 
-// Module 10519 (EmojiOptionsActionSheet)
-import ToastUtils from "ToastUtils" /* 4457 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import ClipboardUtils from "ClipboardUtils" /* 7436 */;
+// Module 10555 (EmojiOptionsActionSheet)
+import ToastUtils from "ToastUtils" /* 4489 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import ClipboardUtils from "ClipboardUtils" /* 7468 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -31,7 +31,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((emojiSrc) => {
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp8 = jsx(tmp(4700).LinkIcon, {});
+    const tmp8 = jsx(tmp(4732).LinkIcon, {});
     const intl = tmp(1119).intl;
     const stringResult = intl.string(tmp(1119).t.cIoudn);
     cResult[2] = tmp8;
@@ -46,9 +46,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((emojiSrc) => {
     let obj2 = { children: null };
     const obj3 = { hasIcons: true, children: null };
     const obj4 = { icon: tmp5, label: tmp6, onPress: tmp4 };
-    obj3.children = jsx(tmp(5822).TableRow, { icon: tmp5, label: tmp6, onPress: tmp4 });
-    obj2.children = jsx(tmp(5903).TableRowGroup, { hasIcons: true, children: null });
-    const tmp12 = jsx(tmp(7449).ActionSheet, { children: null });
+    obj3.children = jsx(tmp(5854).TableRow, { icon: tmp5, label: tmp6, onPress: tmp4 });
+    obj2.children = jsx(tmp(5935).TableRowGroup, { hasIcons: true, children: null });
+    const tmp12 = jsx(tmp(7481).ActionSheet, { children: null });
     cResult[4] = tmp4;
     cResult[5] = tmp12;
     let tmp10 = tmp12;
@@ -66,11 +66,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((emojiSrc) => {
   }, items);
   let obj = { children: null };
   let obj2 = { hasIcons: true, children: null };
-  const obj3 = { icon: jsx(emojiSrc(4700).LinkIcon, {}), label: null, onPress: null };
+  const obj3 = { icon: jsx(emojiSrc(4732).LinkIcon, {}), label: null, onPress: null };
   const intl = emojiSrc(1119).intl;
   obj3.label = intl.string(emojiSrc(1119).t.cIoudn);
   obj3.onPress = callback;
-  obj2.children = jsx(emojiSrc(5822).TableRow, { icon: jsx(emojiSrc(4700).LinkIcon, {}), label: null, onPress: null });
-  obj.children = jsx(emojiSrc(5903).TableRowGroup, { hasIcons: true, children: null });
-  return jsx(emojiSrc(7449).ActionSheet, { children: null });
+  obj2.children = jsx(emojiSrc(5854).TableRow, { icon: jsx(emojiSrc(4732).LinkIcon, {}), label: null, onPress: null });
+  obj.children = jsx(emojiSrc(5935).TableRowGroup, { hasIcons: true, children: null });
+  return jsx(emojiSrc(7481).ActionSheet, { children: null });
 });

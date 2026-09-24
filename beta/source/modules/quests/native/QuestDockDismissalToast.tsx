@@ -1,21 +1,21 @@
-// Module ID: 15362
-// Function ID: 15363
+// Module ID: 15372
+// Function ID: 15373
 // Name: QuestDockDismissalToast
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 12434, 4754, 4458, 12920, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 12470, 4786, 4490, 12956, 2]
 // Exports: displayQuestDismissalToast
 
-// Module 15362 (QuestDockDismissalToast)
+// Module 15372 (QuestDockDismissalToast)
 import nativeDefault from "native" /* 580 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
-import _modDef12434 from "module_12434" /* 12434 */;
-import _modDef12920 from "module_12920" /* 12920 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
+import _modDef12470 from "module_12470" /* 12470 */;
+import _modDef12956 from "module_12956" /* 12956 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles(() => {
   const obj = { toastArrowForwardIconContainer: { height: 6, width: 16 }, toastArrowForwardIcon: null };
   const size = { opacity: 0.35, position: "absolute", top: "50%", left: 0, height: 16, width: 16, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, transform: null };
@@ -33,8 +33,8 @@ const content = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const intl = tmp(1119).intl;
     const obj2 = {
       arrowHook() {
-          const obj = { style: closure_0.toastArrowForwardIconContainer, children: <React3 resizeMode="contain" source={_modDef12434} style={closure_0.toastArrowForwardIcon} /> };
-          return <React4 style={closure_0.toastArrowForwardIconContainer}><React3 resizeMode="contain" source={_modDef12434} style={closure_0.toastArrowForwardIcon} /></React4>;
+          const obj = { style: closure_0.toastArrowForwardIconContainer, children: <React3 resizeMode="contain" source={_modDef12470} style={closure_0.toastArrowForwardIcon} /> };
+          return <React4 style={closure_0.toastArrowForwardIconContainer}><React3 resizeMode="contain" source={_modDef12470} style={closure_0.toastArrowForwardIcon} /></React4>;
         }
     };
     const formatResult = intl.format(tmp(1119).t.dYE1px, obj2);
@@ -46,7 +46,7 @@ const content = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] !== tmp5) {
     const obj3 = { color: "mobile-text-heading-primary", variant: "text-sm/semibold", children: tmp5 };
-    const tmp9 = jsx(tmp(4754).Text, { color: "mobile-text-heading-primary", variant: "text-sm/semibold", children: tmp5 });
+    const tmp9 = jsx(tmp(4786).Text, { color: "mobile-text-heading-primary", variant: "text-sm/semibold", children: tmp5 });
     cResult[2] = tmp5;
     cResult[3] = tmp9;
     let tmp7 = tmp9;
@@ -60,8 +60,8 @@ const content = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const intl = require("util").intl;
   obj.children = intl.format(require("util").t.dYE1px, {
     arrowHook() {
-      const obj = { style: closure_0.toastArrowForwardIconContainer, children: <React3 resizeMode="contain" source={_modDef12434} style={closure_0.toastArrowForwardIcon} /> };
-      return <React4 style={closure_0.toastArrowForwardIconContainer}><React3 resizeMode="contain" source={_modDef12434} style={closure_0.toastArrowForwardIcon} /></React4>;
+      const obj = { style: closure_0.toastArrowForwardIconContainer, children: <React3 resizeMode="contain" source={_modDef12470} style={closure_0.toastArrowForwardIcon} /> };
+      return <React4 style={closure_0.toastArrowForwardIconContainer}><React3 resizeMode="contain" source={_modDef12470} style={closure_0.toastArrowForwardIcon} /></React4>;
     }
   });
   return jsx(require("Text/Text").Text, { color: "mobile-text-heading-primary", variant: "text-sm/semibold", children: null });
@@ -71,5 +71,5 @@ const result = size.fileFinishedImporting("modules/quests/native/QuestDockDismis
 
 export const displayQuestDismissalToast = function displayQuestDismissalToast() {
   const obj = ToastActionCreatorsDefault;
-  obj.open({ key: "QUEST_BAR_DISMISS_TOAST", content, icon: _modDef12920, position: "bottom" });
+  obj.open({ key: "QUEST_BAR_DISMISS_TOAST", content, icon: _modDef12956, position: "bottom" });
 };

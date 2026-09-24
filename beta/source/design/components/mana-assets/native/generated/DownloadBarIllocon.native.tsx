@@ -1,13 +1,13 @@
-// Module ID: 6174
-// Function ID: 6175
+// Module ID: 6206
+// Function ID: 6207
 // Name: DownloadBarIllocon
-// Dependencies: [21, 558, 568, 6175, 5802, 2]
+// Dependencies: [21, 558, 568, 6207, 5834, 2]
 
-// Module 6174 (DownloadBarIllocon)
+// Module 6206 (DownloadBarIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6175 from "module_6175" /* 6175 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6207 from "module_6207" /* 6207 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const DownloadBarIllocon = ReactCompilerGating.isReactCompilerEnabled() ?
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6175 };
+    const obj2 = { uri: _modDef6207 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const DownloadBarIllocon = ReactCompilerGating.isReactCompilerEnabled() ?
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6175 };
+  const obj2 = { uri: _modDef6207 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

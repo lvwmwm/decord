@@ -1,14 +1,14 @@
-// Module ID: 12233
-// Function ID: 12234
+// Module ID: 12269
+// Function ID: 12270
 // Name: RecommendationAppRow
-// Dependencies: [19, 21, 558, 568, 1401, 12210, 2]
+// Dependencies: [19, 21, 558, 568, 1401, 12246, 2]
 
-// Module 12233 (RecommendationAppRow)
+// Module 12269 (RecommendationAppRow)
 import c from "c" /* 568 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
 import noop from "module_19" /* 19 */;
 
-const AppLauncherHomeScreen = tmp(12210);
+const AppLauncherHomeScreen = tmp(12246);
 require = fn;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);

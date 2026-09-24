@@ -1,20 +1,20 @@
-// Module ID: 17094
-// Function ID: 17095
+// Module ID: 17104
+// Function ID: 17105
 // Name: ThreadParentMessage
-// Dependencies: [19, 7840, 4978, 21, 8195, 558, 568, 504, 1105, 8928, 5341, 2]
+// Dependencies: [19, 7872, 5010, 21, 8227, 558, 568, 504, 1105, 8960, 5373, 2]
 
-// Module 17094 (ThreadParentMessage)
+// Module 17104 (ThreadParentMessage)
 import initialize from "initialize" /* 504 */;
 import router_utils from "router_utils" /* 1105 */;
-import Pressables from "Pressables" /* 5341 */;
-import RowGeneratorDefault from "RowGenerator" /* 8195 */;
-import ChatItemDefault from "ChatItem" /* 8928 */;
+import Pressables from "Pressables" /* 5373 */;
+import RowGeneratorDefault from "RowGenerator" /* 8227 */;
+import ChatItemDefault from "ChatItem" /* 8960 */;
 import noop from "module_19" /* 19 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7840 */;
-import MessageStore from "MessageStore" /* 4978 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7872 */;
+import MessageStore from "MessageStore" /* 5010 */;
 
 require = fn;
-const ReferencedMessageState = fn(7840).ReferencedMessageState;
+const ReferencedMessageState = fn(7872).ReferencedMessageState;
 const jsx = fn(21).jsx;
 let rowGenerator = new RowGeneratorDefault();
 rowGenerator.setOptions({ renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderEmbeds: true, ignoreMentioned: true, inlineAttachmentMedia: true, inlineEmbedMedia: true, renderReactions: false, renderReplies: true, renderThreadEmbeds: false });
@@ -162,7 +162,7 @@ export const ThreadCreationStarterMessage = ReactCompilerGating.isReactCompilerE
       }
       if (cResult[5] !== stateFromStores) {
         const obj3 = { rowGenerator, message: stateFromStores, style: tmp9, pointerEvents: "none" };
-        tmp2 = jsx(channelId(8928), { rowGenerator, message: stateFromStores, style: tmp9, pointerEvents: "none" });
+        tmp2 = jsx(channelId(8960), { rowGenerator, message: stateFromStores, style: tmp9, pointerEvents: "none" });
         cResult[5] = stateFromStores;
         cResult[6] = tmp2;
       }

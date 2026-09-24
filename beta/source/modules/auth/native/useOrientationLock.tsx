@@ -1,11 +1,11 @@
-// Module ID: 16335
-// Function ID: 16336
+// Module ID: 16345
+// Function ID: 16346
 // Name: useOrientationLock
-// Dependencies: [19, 4737, 1613, 558, 568, 7185, 8608, 2]
+// Dependencies: [19, 4769, 1613, 558, 568, 7217, 8640, 2]
 
-// Module 16335 (useOrientationLock)
-import DeviceUtils from "DeviceUtils" /* 4737 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7185 */;
+// Module 16345 (useOrientationLock)
+import DeviceUtils from "DeviceUtils" /* 4769 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7217 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -32,8 +32,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       closure_0 = tmp4;
       if (tmp4) {
-        tmp(8608).lockOrientation("PORTRAIT", false);
-        const tmpResult2 = tmp(8608);
+        tmp(8640).lockOrientation("PORTRAIT", false);
+        const tmpResult2 = tmp(8640);
       }
       return () => {
         if (closure_0) {
@@ -69,8 +69,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     closure_0 = tmp4;
     if (tmp4) {
-      tmp(8608).lockOrientation("PORTRAIT", false);
-      const tmpResult2 = tmp(8608);
+      tmp(8640).lockOrientation("PORTRAIT", false);
+      const tmpResult2 = tmp(8640);
     }
     return () => {
       if (closure_0) {

@@ -1,10 +1,10 @@
-// Module ID: 11252
-// Function ID: 11253
+// Module ID: 11288
+// Function ID: 11289
 // Name: InviteRolesDisplay
-// Dependencies: [19, 17, 2103, 21, 4758, 558, 568, 504, 1119, 4754, 11253, 2]
+// Dependencies: [19, 17, 2103, 21, 4790, 558, 568, 504, 1119, 4786, 11289, 2]
 
-// Module 11252 (InviteRolesDisplay)
-import RolePillDefault from "RolePill" /* 11253 */;
+// Module 11288 (InviteRolesDisplay)
+import RolePillDefault from "RolePill" /* 11289 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2103 */;
 
@@ -12,7 +12,7 @@ const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ container: { marginTop: 8 }, label: { marginBottom: 4 }, rolesRow: { flexDirection: "row", flexWrap: "wrap" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -51,7 +51,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((roleIds) => {
       }
       if (cResult[6] !== tmp4.label) {
         const obj2 = { variant: "text-xs/semibold", color: "text-muted", style: label, children: tmp9 };
-        const tmp13 = closure_5(tmp(4754).Text, obj2);
+        const tmp13 = closure_5(tmp(4786).Text, obj2);
         cResult[6] = tmp4.label;
         cResult[7] = tmp13;
         let tmp11 = tmp13;
@@ -134,7 +134,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((roleIds) => {
     const obj3 = { variant: "text-xs/semibold", color: "text-muted", style: tmp.label, children: null };
     const intl = tmp2(1119).intl;
     obj3.children = intl.string(tmp2(1119).t.stcSfI);
-    const items2 = [closure_5(tmp2(4754).Text, obj3), ];
+    const items2 = [closure_5(tmp2(4786).Text, obj3), ];
     const obj4 = { style: tmp.rolesRow, children: stateFromStoresArray.map((role) => hasOwnProperty(RolePillDefault, { role, guildId }, role.id)) };
     items2[1] = closure_5(View, obj4);
     obj2.children = items2;

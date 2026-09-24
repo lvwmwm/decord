@@ -1,15 +1,15 @@
-// Module ID: 9150
-// Function ID: 9151
+// Module ID: 9182
+// Function ID: 9183
 // Name: useGameProfileShopCollection
-// Dependencies: [19, 8952, 558, 568, 504, 9038, 9151, 2]
+// Dependencies: [19, 8984, 558, 568, 504, 9070, 9183, 2]
 // Exports: useGameProfileShopCollection
 
-// Module 9150 (useGameProfileShopCollection)
+// Module 9182 (useGameProfileShopCollection)
 import c from "c" /* 568 */;
-import GameProfileHttpUtils from "GameProfileHttpUtils" /* 9038 */;
-import useCollectiblesShopProducts from "useCollectiblesShopProducts" /* 9151 */;
+import GameProfileHttpUtils from "GameProfileHttpUtils" /* 9070 */;
+import useCollectiblesShopProducts from "useCollectiblesShopProducts" /* 9183 */;
 import noop from "module_19" /* 19 */;
-import GameProfileStore from "GameProfileStore" /* 8952 */;
+import GameProfileStore from "GameProfileStore" /* 8984 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

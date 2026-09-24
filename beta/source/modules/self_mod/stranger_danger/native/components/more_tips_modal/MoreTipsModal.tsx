@@ -1,31 +1,31 @@
-// Module ID: 10376
-// Function ID: 10377
+// Module ID: 10415
+// Function ID: 10416
 // Name: MoreTipsModal
-// Dependencies: [19, 17, 10357, 1078, 21, 4758, 580, 558, 568, 10377, 1119, 4754, 10378, 7621, 4961, 7238, 1181, 1616, 565, 10369, 5086, 5091, 7246, 2]
+// Dependencies: [19, 17, 10396, 1078, 21, 4790, 580, 558, 568, 10416, 1119, 4786, 10417, 7653, 4993, 7270, 1181, 1616, 565, 10408, 5118, 5123, 7278, 2]
 
-// Module 10376 (MoreTipsModal)
+// Module 10415 (MoreTipsModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5086 */;
-import _modDef7238 from "module_7238" /* 7238 */;
-import HeaderActionButton from "HeaderActionButton" /* 7621 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10369 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 10377 */;
-import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 10378 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5118 */;
+import _modDef7270 from "module_7270" /* 7270 */;
+import HeaderActionButton from "HeaderActionButton" /* 7653 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10408 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 10416 */;
+import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 10417 */;
 import noop from "module_19" /* 19 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10357 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10396 */;
 
-const MetricEvents = tmp(5091);
+const MetricEvents = tmp(5123);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { scroll: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, contentContainer: null, tipsContainer: null, learnMore: null, header: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.contentContainer = { marginHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
@@ -64,7 +64,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           if (cResult[11] !== tmp4.header) {
             const obj2 = { variant: "eyebrow", color: "text-default", style: tmp4.header, children: tmp18 };
-            const tmp22 = closure_1_8(tmp(4754).Text, obj2);
+            const tmp22 = closure_1_8(tmp(4786).Text, obj2);
             cResult[11] = tmp4.header;
             cResult[12] = tmp22;
             let tmp20 = tmp22;
@@ -386,7 +386,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
             onPress() {
               return warningId(senderId[14]).popWithKey(channelId);
             },
-            source: _modDef7238,
+            source: _modDef7270,
             iconSize: native.IconSizes.MEDIUM,
             accessibilityLabel: null
           };

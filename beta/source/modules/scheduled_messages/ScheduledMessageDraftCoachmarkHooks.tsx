@@ -1,15 +1,15 @@
-// Module ID: 12116
-// Function ID: 12117
+// Module ID: 12152
+// Function ID: 12153
 // Name: ScheduledMessageDraftCoachmarkHooks
-// Dependencies: [32, 19, 5496, 5107, 2042, 2031, 558, 568, 4579, 504, 2033, 2]
+// Dependencies: [32, 19, 5528, 5139, 2042, 2031, 558, 568, 4611, 504, 2033, 2]
 
-// Module 12116 (ScheduledMessageDraftCoachmarkHooks)
+// Module 12152 (ScheduledMessageDraftCoachmarkHooks)
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2033 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4579 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4611 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
-import DraftStore from "DraftStore" /* 5107 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5528 */;
+import DraftStore from "DraftStore" /* 5139 */;
 
 require = fn;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
@@ -23,7 +23,7 @@ export const useScheduledMessageDraftCoachmarkState = ReactCompilerGating.isReac
   channel = channel.channel;
   ({ draftText, isEligible } = channel);
   let obj = channel(568);
-  let result = channel(4579).useIsDismissibleContentDismissed_UNSAFE(closure_7);
+  let result = channel(4611).useIsDismissibleContentDismissed_UNSAFE(closure_7);
   dependencyMap = result;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [DraftStore];
@@ -48,7 +48,7 @@ export const useScheduledMessageDraftCoachmarkState = ReactCompilerGating.isReac
       }
     }
   }
-  let obj2 = channel(4579);
+  let obj2 = channel(4611);
   const stateFromStores = channel(504).useStateFromStores(first, tmp7);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class C {
@@ -118,9 +118,9 @@ export const useScheduledMessageDraftCoachmarkState = ReactCompilerGating.isReac
   let first;
   let connected;
   let isCoachmarkVisible;
-  let result = channel(4579).useIsDismissibleContentDismissed_UNSAFE(closure_7);
+  let result = channel(4611).useIsDismissibleContentDismissed_UNSAFE(closure_7);
   dependencyMap = result;
-  let obj = channel(4579);
+  let obj = channel(4611);
   const items = [isCoachmarkVisible];
   const stateFromStores = channel(504).useStateFromStores(items, () => null != DraftStore.getScheduledMessage(channel.id));
   let obj2 = channel(504);

@@ -1,17 +1,17 @@
-// Module ID: 10949
-// Function ID: 10950
+// Module ID: 10985
+// Function ID: 10986
 // Name: Caption
-// Dependencies: [17, 1078, 21, 4758, 580, 4608, 558, 568, 1181, 2]
+// Dependencies: [17, 1078, 21, 4790, 580, 4640, 558, 568, 1181, 2]
 
-// Module 10949 (Caption)
+// Module 10985 (Caption)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import Constants from "Constants" /* 1078 */;
 import native from "native" /* 1181 */;
-import createStyles from "createStyles" /* 4758 */;
-import ColorUtils from "ColorUtils" /* 4608 */;
+import createStyles from "createStyles" /* 4790 */;
+import ColorUtils from "ColorUtils" /* 4640 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

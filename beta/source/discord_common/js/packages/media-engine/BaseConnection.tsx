@@ -1,19 +1,19 @@
-// Module ID: 4825
-// Function ID: 4826
+// Module ID: 4857
+// Function ID: 4858
 // Name: BaseConnection
-// Dependencies: [5, 4783, 4816, 4826, 4828, 4829, 4830, 4859, 2]
+// Dependencies: [5, 4815, 4848, 4858, 4860, 4861, 4862, 4891, 2]
 
-// Module 4825 (BaseConnection)
-import VideoQualityManager from "VideoQualityManager" /* 4826 */;
-import ConnectionEventFramerateReducer from "ConnectionEventFramerateReducer" /* 4828 */;
-import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 4829 */;
-import cloneDeepDefault from "cloneDeep" /* 4830 */;
-import flatRestDefault from "flatRest" /* 4859 */;
+// Module 4857 (BaseConnection)
+import VideoQualityManager from "VideoQualityManager" /* 4858 */;
+import ConnectionEventFramerateReducer from "ConnectionEventFramerateReducer" /* 4860 */;
+import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 4861 */;
+import cloneDeepDefault from "cloneDeep" /* 4862 */;
+import flatRestDefault from "flatRest" /* 4891 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 4816 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 4848 */;
 
 require = fn;
-const Constants = fn(4783);
+const Constants = fn(4815);
 ({ ConnectionStates: closure_4, DEFAULT_VOICE_BITRATE: hasOwnProperty, MediaTypes: metroRequire, ResolutionTypes: closure_7, MediaEngineContextTypes: closure_8, VIDEO_QUALITY_FRAMERATE: closure_9, SIMULCAST_HQ_QUALITY: c10 } = Constants);
 let closure_11 = 0;
 class BaseConnection extends tmp3 {
@@ -387,4 +387,4 @@ let size = fn(2);
 let result = size.fileFinishedImporting("../discord_common/js/packages/media-engine/BaseConnection.tsx");
 
 export default BaseConnection;
-export const BaseConnectionEvent = fn(4829).BaseConnectionEvent;
+export const BaseConnectionEvent = fn(4861).BaseConnectionEvent;

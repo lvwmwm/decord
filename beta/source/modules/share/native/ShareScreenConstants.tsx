@@ -1,9 +1,9 @@
-// Module ID: 14123
-// Function ID: 14124
+// Module ID: 14160
+// Function ID: 14161
 // Name: ShareScreenConstants
 // Dependencies: [2]
 
-// Module 14123 (ShareScreenConstants)
+// Module 14160 (ShareScreenConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/share/native/ShareScreenConstants.tsx");

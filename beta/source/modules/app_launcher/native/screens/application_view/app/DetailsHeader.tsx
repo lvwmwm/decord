@@ -1,15 +1,15 @@
-// Module ID: 9400
-// Function ID: 9401
+// Module ID: 9432
+// Function ID: 9433
 // Name: DetailsHeader
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 4497, 9401, 9529, 5344, 8548, 4759, 4762, 5801, 4754, 1119, 5881, 5198, 1098, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 4529, 9433, 9561, 5376, 8580, 4791, 4794, 5833, 4786, 1119, 5913, 5230, 1098, 2]
 
-// Module 9400 (DetailsHeader)
+// Module 9432 (DetailsHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
-import timingPresets from "timingPresets" /* 4762 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 9529 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
+import timingPresets from "timingPresets" /* 4794 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 9561 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -19,7 +19,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
 let colors = ["black", "transparent"];
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { animatedViewContainer: { overflow: "hidden" }, container: { position: "relative", width: "100%" }, measuringContainer: { width: "100%", position: "absolute" }, descriptionContainer: { marginTop: 8 }, viewMoreCTA: { position: "absolute", right: 0, bottom: 0, pointerEvents: "none" }, maskFill: { flex: 1, backgroundColor: "black" }, maskLastLine: { flexDirection: "row" }, maskFade: { width: 32 }, collapseDescriptionCTA: { marginTop: 4 }, nameContainer: { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_4, overflow: "hidden" }, nameText: { flexShrink: 1 }, partnerLabelWrapper: null };
 let obj3 = { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_4, overflow: "hidden" };
 obj.partnerLabelWrapper = { justifyContent: "center", paddingVertical: 2, paddingHorizontal: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE, borderRadius: nativeDefault.radii.lg };
@@ -73,10 +73,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   ({ application, viewContainerStyle, mainContainerStyle, hideName } = arg0);
   ref();
   if (cResult[0] !== application) {
-    const isPartnerApplicationResult = tmp(9401).isPartnerApplication(application);
+    const isPartnerApplicationResult = tmp(9433).isPartnerApplication(application);
     cResult[0] = application;
     cResult[1] = isPartnerApplicationResult;
-    const tmpResult = tmp(9401);
+    const tmpResult = tmp(9433);
   }
   ref = noop.useRef(null);
   const tmp9 = first1(noop.useState(false), 2);
@@ -89,13 +89,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   let obj = ref(568);
   ({ containerStyle, containerHeight } = closure_15());
   if (cResult[2] !== application) {
-    const sectionName = tmp(9401).getSectionName(application);
+    const sectionName = tmp(9433).getSectionName(application);
     cResult[2] = application;
     cResult[3] = sectionName;
-    const tmpResult4 = tmp(9401);
+    const tmpResult4 = tmp(9433);
   }
   if (cResult[4] !== application) {
-    const str = tmp(9401).getSectionDescription(application);
+    const str = tmp(9433).getSectionDescription(application);
     let tmp18 = null != str;
     if (tmp18) {
       tmp18 = str.trim().length > 0;
@@ -104,7 +104,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     cResult[5] = str;
     cResult[6] = tmp18;
     let tmp16 = str;
-    const tmpResult5 = tmp(9401);
+    const tmpResult5 = tmp(9433);
   } else {
     tmp16 = cResult[5];
   }
@@ -122,8 +122,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   const first3 = tmp8Result6[0];
   closure_15 = tmp8Result6[1];
   if (null == tmp16) {
-    const isScreenLandscape = tmp(5344).useIsScreenLandscape();
-    const tmp29 = first(8548)(isScreenLandscape);
+    const isScreenLandscape = tmp(5376).useIsScreenLandscape();
+    const tmp29 = first(8580)(isScreenLandscape);
     closure_17 = tmp29;
     if (cResult[9] === isScreenLandscape) {
       if (cResult[10] === tmp29) {
@@ -362,7 +362,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     cResult[12] = items;
     tmp31 = items;
     tmp30 = he;
-    const tmpResult6 = tmp(5344);
+    const tmpResult6 = tmp(5376);
   } else {
     class Se {
       constructor(arg0) {
@@ -403,7 +403,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   let isScreenLandscape;
   closure_18 = undefined;
   let tmp = ref();
-  let obj = ref(9401);
+  let obj = ref(9433);
   ref = noop.useRef(null);
   const tmp7 = first1(noop.useState(false), 2);
   const first = tmp7[0];
@@ -412,12 +412,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   first1 = tmp9[0];
   noop = tmp9[1];
   closure_5 = noop.useRef(true);
-  const isPartnerApplicationResult = ref(9401).isPartnerApplication(application);
+  const isPartnerApplicationResult = ref(9433).isPartnerApplication(application);
   ({ containerHeight: c6, containerStyle } = first2());
   const tmp11 = first2();
-  const sectionName = ref(9401).getSectionName(application);
-  let obj3 = ref(9401);
-  const str = ref(9401).getSectionDescription(application);
+  const sectionName = ref(9433).getSectionName(application);
+  let obj3 = ref(9433);
+  const str = ref(9433).getSectionDescription(application);
   let tmp27Result5 = null != str;
   if (tmp27Result5) {
     tmp27Result5 = str.trim().length > 0;
@@ -430,7 +430,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   colors = tmp6Result4[1];
   ref = obj2.useRef(0);
   noop.useRef(0);
-  const obj4 = ref(9401);
+  const obj4 = ref(9433);
   [tmp17, c14] = first1(noop.useState(false), 2);
   const tmp6Result6 = first1(noop.useState(false), 2);
   first2 = tmp6Result6[0];
@@ -444,8 +444,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     return result;
   }, items);
   const tmp6Result5 = first1(noop.useState(false), 2);
-  isScreenLandscape = ref(5344).useIsScreenLandscape();
-  const tmp23 = first(8548)(isScreenLandscape);
+  isScreenLandscape = ref(5376).useIsScreenLandscape();
+  const tmp23 = first(8580)(isScreenLandscape);
   closure_18 = tmp23;
   const items1 = [isScreenLandscape, tmp23];
   const effect = obj2.useEffect(() => {
@@ -456,7 +456,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     }
   }, items1);
   let tmp26 = first;
-  const tmp2Result = ref(5344);
+  const tmp2Result = ref(5376);
   if (first) {
     tmp26 = !first1;
   }
@@ -483,7 +483,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   let tmp29Result = !hideName;
   if (!hideName) {
     const obj8 = { style: tmp.nameText, variant: "heading-lg/bold", color: "text-default", lineClamp: 1, children: sectionName };
-    tmp29Result = tmp29(tmp2(4754).Heading, obj8);
+    tmp29Result = tmp29(tmp2(4786).Heading, obj8);
   }
   const items4 = [tmp29Result, ];
   let tmp29Result5 = null;
@@ -492,7 +492,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     const obj10 = { variant: "text-xs/medium", color: "text-default", children: null };
     const intl = tmp2(1119).intl;
     obj10.children = intl.string(tmp2(1119).t.LO4f0P);
-    obj9.children = tmp29(tmp2(4754).Text, obj10);
+    obj9.children = tmp29(tmp2(4786).Text, obj10);
     tmp29Result5 = tmp29(tmp30, obj9);
   }
   items4[1] = tmp29Result5;
@@ -547,7 +547,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       const obj16 = { style: tmp.maskFill };
       const items8 = [tmp29(tmp30, obj16), , ];
       const obj17 = { start: tmp2(1098).HorizontalGradient.START, end: tmp2(1098).HorizontalGradient.END, colors, style: tmp.maskFade };
-      items8[1] = tmp29(tmp22(5198), obj17);
+      items8[1] = tmp29(tmp22(5230), obj17);
       if (num2 == null) {
         num2 = 0;
       }
@@ -559,7 +559,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       items6[1] = tmp27(tmp30, obj14);
       obj13.children = items6;
       let tmp29Result6 = tmp27(tmp30, obj13);
-      const tmp22Result2 = tmp22(5198);
+      const tmp22Result2 = tmp22(5230);
     } else {
       const items9 = [absoluteFill, tmp.maskFill];
       obj12.style = items9;
@@ -567,8 +567,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     }
     const obj20 = { maskElement: tmp29Result6, children: null };
     const obj21 = { variant: "text-sm/medium", color: "text-default", lineClamp: num4, children: memo };
-    obj20.children = tmp29(tmp2(4754).Text, obj21);
-    const items10 = [tmp29(tmp22(5881), obj20), , ];
+    obj20.children = tmp29(tmp2(4786).Text, obj21);
+    const items10 = [tmp29(tmp22(5913), obj20), , ];
     let tmp29Result7 = null;
     if (tmp26) {
       const obj22 = { style: tmp.viewMoreCTA, children: null };
@@ -585,7 +585,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       const intl2 = tmp2(1119).intl;
       const items11 = ["\u2026 ", intl2.string(tmp2(1119).t["OBCR+p"])];
       obj23.children = items11;
-      obj22.children = tmp27(tmp2(4754).Text, obj23);
+      obj22.children = tmp27(tmp2(4786).Text, obj23);
       tmp29Result7 = tmp29(tmp30, obj22);
     }
     items10[1] = tmp29Result7;
@@ -596,18 +596,18 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         const obj24 = { variant: "text-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA, children: null };
         const intl3 = tmp2(1119).intl;
         obj24.children = intl3.string(tmp2(1119).t.D5xGUK);
-        tmp29Result8 = tmp29(tmp2(4754).Text, obj24);
+        tmp29Result8 = tmp29(tmp2(4786).Text, obj24);
       }
     }
     items10[2] = tmp29Result8;
     obj11.children = items10;
     tmp27Result4 = tmp27(c6, obj11);
-    const tmp22Result = tmp22(5881);
+    const tmp22Result = tmp22(5913);
   }
   items5[1] = tmp27Result4;
   obj6.children = items5;
   obj5.children = closure_9(closure_5, obj6);
-  const children = [num2(first(4497).View, obj5), ];
+  const children = [num2(first(4529).View, obj5), ];
   let tmp27Result6 = !first2;
   if (!first2) {
     const obj25 = { style: null, onLayout: null, children: null };
@@ -626,7 +626,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     let tmp29Result9 = !hideName;
     if (!hideName) {
       const obj26 = { variant: "heading-lg/bold", color: "text-default", children: sectionName };
-      tmp29Result9 = tmp29(tmp2(4754).Heading, obj26);
+      tmp29Result9 = tmp29(tmp2(4786).Heading, obj26);
     }
     const items14 = [tmp29Result9, ];
     if (tmp27Result5) {
@@ -653,11 +653,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
             },
         children: memo
       };
-      const items15 = [tmp29(tmp2(4754).Text, obj28), ];
+      const items15 = [tmp29(tmp2(4786).Text, obj28), ];
       const obj29 = { variant: "text-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA, children: null };
       const intl4 = tmp2(1119).intl;
       obj29.children = intl4.string(tmp2(1119).t.D5xGUK);
-      items15[1] = tmp29(tmp2(4754).Text, obj29);
+      items15[1] = tmp29(tmp2(4786).Text, obj29);
       obj27.children = items15;
       tmp27Result5 = tmp27(tmp30, obj27);
     }

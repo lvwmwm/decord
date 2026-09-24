@@ -1,13 +1,13 @@
-// Module ID: 5202
-// Function ID: 5203
+// Module ID: 5234
+// Function ID: 5235
 // Name: ButtonEllipsis
-// Dependencies: [19, 21, 4497, 4758, 580, 4759, 558, 568, 5194, 5203, 2]
+// Dependencies: [19, 21, 4529, 4790, 580, 4791, 558, 568, 5226, 5235, 2]
 
-// Module 5202 (ButtonEllipsis)
+// Module 5234 (ButtonEllipsis)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
@@ -16,9 +16,9 @@ require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
 const ELLIPSIS_APPEAR_TIMING = { duration: 500, easing: null };
-const Easing = fn(4497).Easing;
-ELLIPSIS_APPEAR_TIMING.easing = Easing.inOut(fn(4497).Easing.quad);
-const createStyles = fn(4758);
+const Easing = fn(4529).Easing;
+ELLIPSIS_APPEAR_TIMING.easing = Easing.inOut(fn(4529).Easing.quad);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles((arg0, arg1, backgroundColor) => {
   if ("lg" === arg0) {
     let num = 4;
@@ -51,7 +51,7 @@ function withEllipsisAnimation(arg0, value) {
   const obj2 = ReanimatedRexport;
   return obj.withDelay(result, obj2.withRepeat(timing.withTiming(value, obj, "animate-always"), -1, true));
 }
-withEllipsisAnimation.__closure = { ELLIPSIS_APPEAR_DURATION: 500, withDelay: fn(4497).withDelay, withRepeat: fn(4497).withRepeat, withTiming: fn(4759).withTiming, ELLIPSIS_APPEAR_TIMING };
+withEllipsisAnimation.__closure = { ELLIPSIS_APPEAR_DURATION: 500, withDelay: fn(4529).withDelay, withRepeat: fn(4529).withRepeat, withTiming: fn(4791).withTiming, ELLIPSIS_APPEAR_TIMING };
 withEllipsisAnimation.__workletHash = 2181731162311;
 withEllipsisAnimation.__initData = { code: "function withEllipsisAnimation_ButtonEllipsisNativeTsx1(offset,value){const{ELLIPSIS_APPEAR_DURATION,withDelay,withRepeat,withTiming,ELLIPSIS_APPEAR_TIMING}=this.__closure;const animationTimeMs=ELLIPSIS_APPEAR_DURATION;const animationStaggerTimeMs=animationTimeMs/3;return withDelay(offset*animationStaggerTimeMs,withRepeat(withTiming(value,ELLIPSIS_APPEAR_TIMING,'animate-always'),-1,true));}" };
 const __initData = { code: "function ButtonEllipsisNativeTsx2(){const{opacity,scale}=this.__closure;return{opacity:opacity.get(),transform:[{scale:scale.get()}]};}" };
@@ -114,9 +114,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((offset) => {
       tmp2(obj.withDelay(result, obj2.withRepeat(timing.withTiming(1, obj, "animate-always"), -1, true)));
       if (typeof tmp3 === "function") {
         const result1 = 166.66666666666666 * tmp4;
-        const tmp5Result = tmp5(4497);
-        const tmp5Result3 = tmp5(4497);
-        tmp11(tmp5Result.withDelay(result1, tmp5Result3.withRepeat(tmp5(4759).withTiming(1, tmp8, "animate-always"), -1, true)));
+        const tmp5Result = tmp5(4529);
+        const tmp5Result3 = tmp5(4529);
+        tmp11(tmp5Result.withDelay(result1, tmp5Result3.withRepeat(tmp5(4791).withTiming(1, tmp8, "animate-always"), -1, true)));
         return () => {
           offset(sharedValue1[2]).cancelAnimation(sharedValue);
           const obj = offset(sharedValue1[2]);
@@ -153,9 +153,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((offset) => {
       tmp2(obj.withDelay(result, obj2.withRepeat(timing.withTiming(1, obj, "animate-always"), -1, true)));
       if (typeof tmp3 === "function") {
         const result1 = 166.66666666666666 * tmp4;
-        const tmp5Result = tmp5(4497);
-        const tmp5Result3 = tmp5(4497);
-        tmp11(tmp5Result.withDelay(result1, tmp5Result3.withRepeat(tmp5(4759).withTiming(1, tmp8, "animate-always"), -1, true)));
+        const tmp5Result = tmp5(4529);
+        const tmp5Result3 = tmp5(4529);
+        tmp11(tmp5Result.withDelay(result1, tmp5Result3.withRepeat(tmp5(4791).withTiming(1, tmp8, "animate-always"), -1, true)));
         return () => {
           offset(sharedValue1[2]).cancelAnimation(sharedValue);
           const obj = offset(sharedValue1[2]);
@@ -186,7 +186,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((offset) => {
   return closure_3(sharedValue(sharedValue1[2]).View, obj6);
 });
 ReactCompilerGating = fn(558);
-let obj3 = { ELLIPSIS_APPEAR_DURATION: 500, withDelay: fn(4497).withDelay, withRepeat: fn(4497).withRepeat, withTiming: fn(4759).withTiming, ELLIPSIS_APPEAR_TIMING };
+let obj3 = { ELLIPSIS_APPEAR_DURATION: 500, withDelay: fn(4529).withDelay, withRepeat: fn(4529).withRepeat, withTiming: fn(4791).withTiming, ELLIPSIS_APPEAR_TIMING };
 const size = fn(2);
 let result = size.fileFinishedImporting("design/components/Button/native/ButtonEllipsis.native.tsx");
 

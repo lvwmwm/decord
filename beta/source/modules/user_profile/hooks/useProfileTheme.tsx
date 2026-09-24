@@ -1,19 +1,19 @@
-// Module ID: 8501
-// Function ID: 8502
+// Module ID: 8533
+// Function ID: 8534
 // Name: useProfileTheme
-// Dependencies: [32, 4750, 8502, 1078, 558, 568, 4693, 504, 579, 8406, 1096, 8503, 4610, 2]
+// Dependencies: [32, 4782, 8534, 1078, 558, 568, 4725, 504, 579, 8438, 1096, 8535, 4642, 2]
 
-// Module 8501 (useProfileTheme)
+// Module 8533 (useProfileTheme)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import shims from "shims" /* 579 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import useAvatarColor from "useAvatarColor" /* 8406 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import useAvatarColor from "useAvatarColor" /* 8438 */;
 import _slicedToArray from "module_32" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
-const useEffectiveThemeOverride = fn(8502).useEffectiveThemeOverride;
+const useEffectiveThemeOverride = fn(8534).useEffectiveThemeOverride;
 const ThemeTypes = fn(1078).ThemeTypes;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -55,8 +55,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isPreview) => {
       } else {
         tmp16 = cResult[6];
       }
-      const tmpResult9 = tmp(8406);
-      [tmp20, tmp21] = tmp(8406).useAvatarColors(tmp11, tmp16, false);
+      const tmpResult9 = tmp(8438);
+      [tmp20, tmp21] = tmp(8438).useAvatarColors(tmp11, tmp16, false);
       if (null != tmp5) {
         return tmp5;
       } else {
@@ -91,8 +91,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isPreview) => {
                     if (tmp26 !== ThemeTypes.ASH) {
                       let isThemeLightResult = tmp26 === tmp32.ASH;
                       if (isThemeLightResult) {
-                        isThemeLightResult = tmp(4610).isThemeLight(tmp4);
-                        const tmpResult10 = tmp(4610);
+                        isThemeLightResult = tmp(4642).isThemeLight(tmp4);
+                        const tmpResult10 = tmp(4642);
                       }
                       let DARK = tmp26;
                       if (isThemeLightResult) {
@@ -100,7 +100,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isPreview) => {
                       }
                     } else {
                       DARK = tmp4;
-                      const tmpResult11 = tmp(4610);
+                      const tmpResult11 = tmp(4642);
                     }
                     if (cResult[19] === tmp24) {
                       if (cResult[20] === tmp25) {
@@ -146,12 +146,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isPreview) => {
         if (!stateFromStores) {
           tmp30 = tmp4;
           if (!forceUserTheme) {
-            let profileTheme = tmp(8503).getProfileTheme(first);
+            let profileTheme = tmp(8535).getProfileTheme(first);
             if (profileTheme == null) {
               profileTheme = tmp4;
             }
             tmp30 = profileTheme;
-            const tmpResult14 = tmp(8503);
+            const tmpResult14 = tmp(8535);
           }
         }
         cResult[9] = tmp4;
@@ -168,7 +168,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isPreview) => {
         tmp25 = hex2intResult;
         tmp24 = first;
       }
-      const tmp19 = _slicedToArray(tmp(8406).useAvatarColors(tmp11, tmp16, false), 2);
+      const tmp19 = _slicedToArray(tmp(8438).useAvatarColors(tmp11, tmp16, false), 2);
     }
   }
   let tmp12 = pendingAvatarSrc;
@@ -250,19 +250,19 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isPreview) => {
     if (!stateFromStores) {
       tmp16 = tmp2;
       if (!forceUserTheme) {
-        let profileTheme = tmp4(8503).getProfileTheme(first);
+        let profileTheme = tmp4(8535).getProfileTheme(first);
         if (profileTheme == null) {
           profileTheme = tmp2;
         }
         tmp16 = profileTheme;
-        const tmp4Result10 = tmp4(8503);
+        const tmp4Result10 = tmp4(8535);
       }
     }
     if (tmp16 !== ThemeTypes.ASH) {
       let isThemeLightResult = tmp16 === tmp18.ASH;
       if (isThemeLightResult) {
-        isThemeLightResult = tmp4(4610).isThemeLight(tmp2);
-        const tmp4Result11 = tmp4(4610);
+        isThemeLightResult = tmp4(4642).isThemeLight(tmp2);
+        const tmp4Result11 = tmp4(4642);
       }
       let DARK = tmp16;
       if (isThemeLightResult) {
@@ -270,7 +270,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((isPreview) => {
       }
     } else {
       DARK = tmp2;
-      const tmp4Result12 = tmp4(4610);
+      const tmp4Result12 = tmp4(4642);
     }
     const obj3 = { theme: DARK, primaryColor: first, secondaryColor: hex2intResult };
     return obj3;

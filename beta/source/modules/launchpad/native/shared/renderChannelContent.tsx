@@ -1,27 +1,27 @@
-// Module ID: 17140
-// Function ID: 17141
+// Module ID: 17150
+// Function ID: 17151
 // Name: renderChannelContent
-// Dependencies: [19, 17, 12213, 4940, 21, 4758, 1368, 558, 568, 17137, 5279, 17141, 4754, 5315, 8871, 16469, 2]
+// Dependencies: [19, 17, 12249, 4972, 21, 4790, 1368, 558, 568, 17147, 5311, 17151, 4786, 5347, 8903, 16479, 2]
 // Exports: default
 
-// Module 17140 (renderChannelContent)
+// Module 17150 (renderChannelContent)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 5279 */;
-import LockIcon from "LockIcon" /* 5315 */;
-import WarningIcon from "WarningIcon" /* 8871 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16469 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17137 */;
-import ChannelTitleDefault from "ChannelTitle" /* 17141 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 5311 */;
+import LockIcon from "LockIcon" /* 5347 */;
+import WarningIcon from "WarningIcon" /* 8903 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16479 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17147 */;
+import ChannelTitleDefault from "ChannelTitle" /* 17151 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const SUBTITLE_OPACITY_NORMAL = fn(12213).SUBTITLE_OPACITY_NORMAL;
-const UnreadSetting = fn(4940).UnreadSetting;
+const SUBTITLE_OPACITY_NORMAL = fn(12249).SUBTITLE_OPACITY_NORMAL;
+const UnreadSetting = fn(4972).UnreadSetting;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let PlatformUtils = fn(1368);
 let num = -1;
 if (PlatformUtils.isIOS()) {
@@ -122,7 +122,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 let tmp31 = null;
                 if (null != channelCategoryName) {
                   const obj4 = { variant: "text-xs/bold", color: "text-muted", style: { marginRight: 4 }, children: channelCategoryName };
-                  tmp31 = React5(tmp(4754).Text, obj4);
+                  tmp31 = React5(tmp(4786).Text, obj4);
                 }
                 cResult[21] = channelCategoryName;
                 cResult[22] = tmp31;
@@ -270,7 +270,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                           const obj13 = { marginLeft: "auto", opacity: num49 };
                                           obj12.style = obj13;
                                           obj12.children = lastMessageTimestampString;
-                                          tmp59Result = React5(tmp(4754).Text, obj12);
+                                          tmp59Result = React5(tmp(4786).Text, obj12);
                                         }
                                         cResult[44] = lastMessageTimestampString;
                                         cResult[45] = muted;
@@ -350,13 +350,13 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 let tmp37 = tmp8;
                 if (tmp8) {
                   const obj21 = { size: "xxs", color: "icon-muted", style: tmp4.channelTraitIcon };
-                  tmp37 = React5(tmp(5315).LockIcon, obj21);
+                  tmp37 = React5(tmp(5347).LockIcon, obj21);
                 }
                 const items7 = [tmp37, , ];
                 let tmp39 = tmp12;
                 if (tmp12) {
                   const obj22 = { size: "xxs", color: "icon-muted", style: tmp4.channelTraitIcon };
-                  tmp39 = React5(tmp(8871).WarningIcon, obj22);
+                  tmp39 = React5(tmp(8903).WarningIcon, obj22);
                 }
                 items7[1] = tmp39;
                 let tmp41 = isSubscriptionGated;
@@ -416,7 +416,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp9Result5 = null != channel;
   if (tmp9Result5) {
     if (!locked) {
-      locked = tmp2(5279)(channel);
+      locked = tmp2(5311)(channel);
     }
     tmp9Result5 = locked;
   }
@@ -486,7 +486,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj12 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = tmp9(tmp2(16469), obj12);
+      isSubscriptionGated = tmp9(tmp2(16479), obj12);
     }
     items3[2] = isSubscriptionGated;
     obj8.children = items3;

@@ -1,15 +1,15 @@
-// Module ID: 17378
-// Function ID: 17379
+// Module ID: 17388
+// Function ID: 17389
 // Name: useAutoSettingsSearchSessionAnalytics
-// Dependencies: [19, 1983, 14955, 558, 568, 1098, 504, 8548, 7242, 5203, 2]
+// Dependencies: [19, 1983, 14990, 558, 568, 1098, 504, 8580, 7274, 5235, 2]
 
-// Module 17378 (useAutoSettingsSearchSessionAnalytics)
-import useMountEffectDefault from "useMountEffect" /* 5203 */;
-import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 7242 */;
-import usePreviousDefault from "usePrevious" /* 8548 */;
+// Module 17388 (useAutoSettingsSearchSessionAnalytics)
+import useMountEffectDefault from "useMountEffect" /* 5235 */;
+import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 7274 */;
+import usePreviousDefault from "usePrevious" /* 8580 */;
 import noop from "module_19" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1983 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14955 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14990 */;
 
 const require = fn;
 const ReactCompilerGating = fn(558);

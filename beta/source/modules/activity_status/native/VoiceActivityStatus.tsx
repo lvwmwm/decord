@@ -1,20 +1,20 @@
-// Module ID: 11196
-// Function ID: 11197
+// Module ID: 11232
+// Function ID: 11233
 // Name: VoiceActivityStatus
-// Dependencies: [19, 21, 4758, 1119, 558, 568, 11197, 11189, 2]
+// Dependencies: [19, 21, 4790, 1119, 558, 568, 11233, 11225, 2]
 // Exports: getVoiceActivityStatusText
 
-// Module 11196 (VoiceActivityStatus)
+// Module 11232 (VoiceActivityStatus)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 11189 */;
-import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 11197 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 11225 */;
+import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 11233 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ icon: { flexShrink: 0 } });
 const ReactCompilerGating = fn(558);
 function getVoiceActivityStatusText(voiceChannel) {

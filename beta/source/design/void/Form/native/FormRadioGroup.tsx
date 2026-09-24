@@ -1,13 +1,13 @@
-// Module ID: 8892
-// Function ID: 8893
+// Module ID: 8924
+// Function ID: 8925
 // Name: FormRadioGroup
-// Dependencies: [109, 19, 17, 21, 558, 568, 5902, 5901, 8885, 2]
+// Dependencies: [109, 19, 17, 21, 558, 568, 5934, 5933, 8917, 2]
 
-// Module 8892 (FormRadioGroup)
+// Module 8924 (FormRadioGroup)
 import c from "c" /* 568 */;
-import TableRadioGroup from "TableRadioGroup" /* 5901 */;
-import RedesignCompat from "RedesignCompat" /* 5902 */;
-import FormSectionDefault from "FormSection" /* 8885 */;
+import TableRadioGroup from "TableRadioGroup" /* 5933 */;
+import RedesignCompat from "RedesignCompat" /* 5934 */;
+import FormSectionDefault from "FormSection" /* 8917 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -95,7 +95,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const obj5 = { children: null };
     const obj6 = { defaultValue: tmp11, hasIcons: tmp6, title: tmp10, accessibilityLabel: tmp4, children: tmp5 };
-    obj5.children = React5(tmp(5901).TableRadioGroup, obj6);
+    obj5.children = React5(tmp(5933).TableRadioGroup, obj6);
     const tmp27 = React5(View, obj5);
     cResult[10] = tmp4;
     cResult[11] = tmp5;

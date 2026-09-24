@@ -1,16 +1,16 @@
-// Module ID: 16702
-// Function ID: 16703
+// Module ID: 16712
+// Function ID: 16713
 // Name: GuildsBarDragPreview
-// Dependencies: [19, 5657, 16626, 16623, 21, 4758, 558, 568, 16361, 4497, 5187, 4471, 7320, 4462, 580, 16634, 16657, 4383, 2]
+// Dependencies: [19, 5689, 16636, 16633, 21, 4790, 558, 568, 16371, 4529, 5219, 4503, 7352, 4494, 580, 16644, 16667, 4415, 2]
 
-// Module 16702 (GuildsBarDragPreview)
+// Module 16712 (GuildsBarDragPreview)
 import c from "c" /* 568 */;
-import _mod4383 from "module_4383" /* 4383 */;
-import native from "native" /* 4471 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import spring from "spring" /* 5187 */;
+import _mod4415 from "module_4415" /* 4415 */;
+import native from "native" /* 4503 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import spring from "spring" /* 5219 */;
 import noop from "module_19" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16626 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16636 */;
 
 require = fn;
 function getItemPreviewKey(id) {
@@ -19,12 +19,12 @@ function getItemPreviewKey(id) {
 function renderAnimatedItemPreview(arg0, node, transitionState, cleanUp) {
   return <closure_26 key={arg0} node={arg1} transitionState={arg2} cleanUp={arg3} />;
 }
-const GuildsNodeType = fn(5657).GuildsNodeType;
-const GUILD_ITEM_INSET_LEFT = fn(16623).GUILD_ITEM_INSET_LEFT;
+const GuildsNodeType = fn(5689).GuildsNodeType;
+const GUILD_ITEM_INSET_LEFT = fn(16633).GUILD_ITEM_INSET_LEFT;
 const jsx = fn(21).jsx;
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let closure_8 = createStyles.createStyles({ dragPreview: { position: "absolute", left: 0 }, animatedPreviewStyle: { position: "absolute" }, dragPreviewHome: { right: 0 } });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let closure_9 = createStyles.createStyles((arg0) => {
   const obj = { animatedPreviewStyleHome: null };
   const rect = { left: 0, right: 0, transformOrigin: null };
@@ -156,7 +156,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((dragRegion) =>
   if ("convert-after" === overState) {
     if (null != overNode) {
       if (cResult[0] !== overNode) {
-        const element = { type: listInsets.FOLDER, id: -1, parentId: "Set", name: "Array", color: "code", expanded: -7549817156932487000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002052782951976569 };
+        const element = { type: listInsets.FOLDER, id: -1, parentId: "Set", name: "Array", color: "code", expanded: "<string:1767022789>", children: "<string:1173121772>" };
         const items = [overNode];
         element.children = items;
         cResult[0] = overNode;
@@ -311,7 +311,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((dragRegion) =>
   const memo = gestureState.useMemo(() => {
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "Set", name: "Array", color: "code", expanded: -7549817156932487000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002052782951976569 };
+        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "Set", name: "Array", color: "code", expanded: "<string:1767022789>", children: "<string:1173121772>" };
         const items = [tmp2];
         element.children = items;
         return element;
@@ -673,7 +673,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         if (null != dragSpecs) {
           if (null != overSpecs) {
             state = overSpecs.state;
-            const obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "short", scrollPosition: "2-digit", dragRegion: "MO", windowSize: "TU", dropComplete: "WE", listInsets: "TH" };
+            const obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "GO_BACK", scrollPosition: null, dragRegion: null, windowSize: "OPEN_DRAWER", dropComplete: "CLOSE_DRAWER", listInsets: "TOGGLE_DRAWER" };
             ({ node: obj.draggedNode, itemSize: obj.draggedHeight } = dragSpecs);
             obj.overState = state;
             let node;
@@ -698,7 +698,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     first = cResult[0];
   }
-  const tmp5 = GuildsBarDnDStore(first, _mod4383.shallow);
+  const tmp5 = GuildsBarDnDStore(first, _mod4415.shallow);
   if (cResult[1] !== tmp5) {
     let tmp7 = null;
     if (null != tmp5) {
@@ -738,7 +738,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (null != dragSpecs) {
         if (null != overSpecs) {
           state = overSpecs.state;
-          const obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "short", scrollPosition: "2-digit", dragRegion: "MO", windowSize: "TU", dropComplete: "WE", listInsets: "TH" };
+          const obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "GO_BACK", scrollPosition: null, dragRegion: null, windowSize: "OPEN_DRAWER", dropComplete: "CLOSE_DRAWER", listInsets: "TOGGLE_DRAWER" };
           ({ node: obj.draggedNode, itemSize: obj.draggedHeight } = dragSpecs);
           obj.overState = state;
           let node;
@@ -757,7 +757,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       return null;
     }
-  }, _mod4383.shallow);
+  }, _mod4415.shallow);
   let tmp2 = null;
   if (null != tmp) {
     let obj = {};

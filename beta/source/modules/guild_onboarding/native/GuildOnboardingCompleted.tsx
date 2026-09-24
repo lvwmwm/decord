@@ -1,20 +1,20 @@
-// Module ID: 7430
-// Function ID: 7431
+// Module ID: 7462
+// Function ID: 7463
 // Name: GuildOnboardingCompleted
-// Dependencies: [19, 17, 4750, 2103, 2067, 1376, 7347, 21, 4758, 580, 558, 568, 1488, 504, 7374, 4471, 7431, 1401, 1883, 1374, 5173, 4497, 4759, 5802, 1119, 4754, 1181, 7432, 5799, 4352, 7457, 5188, 7371, 2]
+// Dependencies: [19, 17, 4782, 2103, 2067, 1376, 7379, 21, 4790, 580, 558, 568, 1488, 504, 7406, 4503, 7463, 1401, 1883, 1374, 5205, 4529, 4791, 5834, 1119, 4786, 1181, 7464, 5831, 4384, 7489, 5220, 7403, 2]
 
-// Module 7430 (GuildOnboardingCompleted)
+// Module 7462 (GuildOnboardingCompleted)
 import nativeDefault from "native" /* 580 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
-import UserProfileRolesCard from "UserProfileRolesCard" /* 7432 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
+import UserProfileRolesCard from "UserProfileRolesCard" /* 7464 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import GuildRoleStore from "GuildRoleStore" /* 2103 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserStore from "UserStore" /* 1376 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7347 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7379 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -22,7 +22,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 let c12 = 400;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { screen: { flex: 1, position: "relative" }, container: { backgroundColor: "rgba(0, 0, 0, 0.5)", paddingHorizontal: 24, display: "flex", justifyContent: "center", flexGrow: 1 }, containerWithoutSplash: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, backgroundImage: { position: "absolute", width: "100%", height: "100%" }, title: {}, subtitle: { marginTop: 16 }, card: null, username: null, rolesHeader: null, roles: null, role: null, roleOverflow: null, animation: null, wave: null, animationText: null, getStartedButton: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 obj2.card = { marginTop: 24, padding: 16, paddingBottom: 32, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
@@ -359,7 +359,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       num = tmp4;
     }
     const obj14 = { duration: num, easing: null };
-    const Easing3 = tmp(4497).Easing;
+    const Easing3 = tmp(4529).Easing;
     obj14.easing = Easing3.out(ReanimatedRexport.Easing.ease);
     const obj15 = { opacity: withSequenceResult, transform: null };
     const obj16 = { rotate: null };

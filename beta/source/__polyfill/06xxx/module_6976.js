@@ -1,23 +1,51 @@
 // Module ID: 6976
 // Function ID: 6977
-// Dependencies: [19, 6977]
-// Exports: useGestureEventHandler
+// Dependencies: [19, 6954, 6957]
+// Exports: useMountReactions
 
 // Module 6976
 import _mod19 from "module_19" /* 19 */;
+import transformIntoHandlerTags from "transformIntoHandlerTags" /* 6954 */;
+import MountRegistry2 from "MountRegistry" /* 6957 */;
 
-let useMemo = _mod19.useMemo;
+function shouldUpdateDetector(arg0, handlerTag) {
+  if (undefined === arg0) {
+    return false;
+  } else {
+    const result = transformIntoHandlerTags.transformIntoHandlerTags(arg0);
+    for (const item10012 of result) {
+      if (item10012 === arg1.handlerTag) {
+        obj2.return();
+        let flag = true;
+        return true;
+      }
+    }
+    return false;
+  }
+}
+const useEffect = _mod19.useEffect;
 
-export const useGestureEventHandler = function useGestureEventHandler(handlerTag, memoizedGestureCallbacks, disableReanimated) {
-  closure_0 = handlerTag;
-  closure_1 = memoizedGestureCallbacks;
-  useMemo = disableReanimated;
-  const tmp = useMemo(() => ({ lastUpdateEvent: "emoji" }), []);
-  closure_3 = tmp;
-  const items = [handlerTag, memoizedGestureCallbacks, , , , ];
-  ({ changeEventCalculator: arr[2], dispatchesAnimatedEvents: arr[3], fillInDefaultValues: arr[4] } = disableReanimated);
-  items[5] = tmp;
-  return useMemo(() => (arg0) => {
-    closure_0(closure_1[1]).eventHandler(handlerTag, arg0, memoizedGestureCallbacks, disableReanimated.changeEventCalculator, closure_1_3, disableReanimated.dispatchesAnimatedEvents, disableReanimated.fillInDefaultValues);
+export const useMountReactions = function useMountReactions(detectorUpdater, current2) {
+  closure_0 = detectorUpdater;
+  closure_1 = current2;
+  const items = [detectorUpdater, current2];
+  useEffect(() => {
+    const MountRegistry = MountRegistry2.MountRegistry;
+    return MountRegistry.addMountListener((arg0) => {
+      if (current2.isMounted) {
+        const attachedGestures = current2.attachedGestures;
+        const iter = attachedGestures[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let requireToFail = nextResult.config.requireToFail;
+          let simultaneousWith = nextResult.config.simultaneousWith;
+          let tmp5 = shouldUpdateDetector;
+          if (!shouldUpdateDetector(nextResult.config.blocksHandlers, arg0)) {
+          }
+          let tmp9 = detectorUpdater();
+          iter.return();
+        }
+      }
+    });
   }, items);
 };

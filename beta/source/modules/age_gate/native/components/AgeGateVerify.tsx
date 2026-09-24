@@ -1,24 +1,24 @@
-// Module ID: 17733
-// Function ID: 17734
+// Module ID: 17743
+// Function ID: 17744
 // Name: AgeGateVerify
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4968, 8687, 8689, 4754, 5188, 7371, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 5000, 8719, 8721, 4786, 5220, 7403, 2]
 
-// Module 17733 (AgeGateVerify)
+// Module 17743 (AgeGateVerify)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AgeGateUtils from "AgeGateUtils" /* 4968 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8687 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8689 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AgeGateUtils from "AgeGateUtils" /* 5000 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7403 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8719 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8721 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: nativeDefault.space.PX_16, flex: 1, alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_16 }, header: { textAlign: "center" }, body: { textAlign: "center" }, buttonWrapper: { width: "100%" } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -66,7 +66,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
         const obj3 = { top: true, style: tmp4.container, children: null };
         const items = [tmp7, tmp9, tmp12];
         obj3.children = items;
-        const tmp19 = hasOwnProperty(tmp(7371).SafeAreaPaddingView, obj3);
+        const tmp19 = hasOwnProperty(tmp(7403).SafeAreaPaddingView, obj3);
         cResult[10] = tmp4.container;
         cResult[11] = tmp7;
         cResult[12] = tmp9;
@@ -78,7 +78,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
       if (tmp14) {
         const obj4 = { style: tmp4.buttonWrapper, children: null };
         const obj5 = { text: verifyAgreementButtonText, onPress: first, grow: true };
-        obj4.children = React4(tmp(5188).Button, obj5);
+        obj4.children = React4(tmp(5220).Button, obj5);
         tmp14 = React4(View, obj4);
       }
       cResult[7] = tmp4.buttonWrapper;
@@ -87,7 +87,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
       tmp12 = tmp14;
     }
     const obj6 = { style: tmp4.body, variant: "text-md/medium", color: "interactive-text-default", children: verifyGateDescription };
-    const tmp11 = React4(tmp(4754).Text, obj6);
+    const tmp11 = React4(tmp(4786).Text, obj6);
     cResult[4] = tmp4.body;
     cResult[5] = verifyGateDescription;
     cResult[6] = tmp11;

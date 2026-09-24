@@ -1,14 +1,14 @@
 // Module ID: 1231
 // Function ID: 1232
 // Name: CustomThemeMobileStore
-// Dependencies: [1187, 1186, 1188, 1224, 1088, 1232, 4606, 1190, 577, 504, 2]
+// Dependencies: [1187, 1186, 1188, 1224, 1088, 1232, 4638, 1190, 577, 504, 2]
 
 // Module 1231 (CustomThemeMobileStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1232 */;
-import isPerModeThemingActive from "isPerModeThemingActive" /* 4606 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 4638 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1187 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1188 */;
@@ -99,7 +99,7 @@ prototype["getState"] = function getState() {
     const obj2 = { theme, customTheme: prop };
     let obj = obj2;
   } else {
-    obj = { theme: "Array", customTheme: "Set" };
+    obj = { theme: "state", customTheme: "toCharArray$esjava$1" };
   }
   return obj;
 };

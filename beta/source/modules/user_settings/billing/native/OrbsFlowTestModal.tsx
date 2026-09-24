@@ -1,21 +1,21 @@
-// Module ID: 15997
-// Function ID: 15998
+// Module ID: 16007
+// Function ID: 16008
 // Name: OrbsFlowTestModal
-// Dependencies: [32, 109, 19, 17, 21, 8162, 558, 568, 7246, 8112, 11230, 4758, 580, 4754, 15998, 5186, 4725, 11486, 1984, 1119, 6846, 5188, 11476, 11485, 7224, 16000, 7403, 2]
+// Dependencies: [32, 109, 19, 17, 21, 8194, 558, 568, 7278, 8144, 11266, 4790, 580, 4786, 16008, 5218, 4757, 11522, 1984, 1119, 6878, 5220, 11512, 11521, 7256, 16010, 7435, 2]
 
-// Module 15997 (OrbsFlowTestModal)
+// Module 16007 (OrbsFlowTestModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7224 */;
-import LayerScope from "LayerScope" /* 7403 */;
-import HeaderShared from "HeaderShared" /* 8112 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 11230 */;
-import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 15998 */;
-import OrbCheckoutMenuDefault from "OrbCheckoutMenu" /* 16000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7256 */;
+import LayerScope from "LayerScope" /* 7435 */;
+import HeaderShared from "HeaderShared" /* 8144 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 11266 */;
+import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 16008 */;
+import OrbCheckoutMenuDefault from "OrbCheckoutMenu" /* 16010 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -73,15 +73,15 @@ get_ActivityIndicator = fn(17);
 ({ ScrollView: closure_7, View: closure_8 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const NativeStackNavigator = fn(8162);
+const NativeStackNavigator = fn(8194);
 let closure_11 = NativeStackNavigator.createNativeStackNavigator();
 let ReactCompilerGating = fn(558);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { wrap: null, container: null, title: null, balancePillContainer: null };
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = accessibilityNativeStackOptions(568).c(5);
   let obj = accessibilityNativeStackOptions(568);
-  accessibilityNativeStackOptions = accessibilityNativeStackOptions(7246).useAccessibilityNativeStackOptions();
+  accessibilityNativeStackOptions = accessibilityNativeStackOptions(7278).useAccessibilityNativeStackOptions();
   if (cResult[0] !== accessibilityNativeStackOptions) {
     const fn = function n(navigation) {
       const obj = {
@@ -166,7 +166,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_12();
   if (cResult[0] !== tmp4.title) {
     const obj2 = { variant: "text-lg/semibold", style: tmp4.title, children: "Balance Widget Menu" };
-    const tmp7 = options(tmp(4754).Text, obj2);
+    const tmp7 = options(tmp(4786).Text, obj2);
     cResult[0] = tmp4.title;
     cResult[1] = tmp7;
     let tmp5 = tmp7;

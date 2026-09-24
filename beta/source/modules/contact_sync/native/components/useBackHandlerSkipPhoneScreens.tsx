@@ -1,13 +1,13 @@
-// Module ID: 12842
-// Function ID: 12843
+// Module ID: 12878
+// Function ID: 12879
 // Name: useBackHandlerSkipPhoneScreens
-// Dependencies: [17, 12825, 558, 568, 5845, 2]
+// Dependencies: [17, 12861, 558, 568, 5877, 2]
 
-// Module 12842 (useBackHandlerSkipPhoneScreens)
+// Module 12878 (useBackHandlerSkipPhoneScreens)
 import _mod17 from "module_17" /* 17 */;
 import c from "c" /* 568 */;
-import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 5845 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12825 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 5877 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12861 */;
 import "ReactCompilerGating";
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

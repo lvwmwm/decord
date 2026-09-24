@@ -1,27 +1,27 @@
-// Module ID: 11045
-// Function ID: 11046
+// Module ID: 11081
+// Function ID: 11082
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 4750, 8466, 1078, 21, 4758, 580, 558, 568, 1616, 8458, 504, 1245, 1119, 2582, 4754, 11046, 7397, 2]
+// Dependencies: [19, 17, 4782, 8498, 1078, 21, 4790, 580, 558, 568, 1616, 8490, 504, 1245, 1119, 2582, 4786, 11082, 7429, 2]
 
-// Module 11045 (GiftingBadgeInfoActionSheet)
+// Module 11081 (GiftingBadgeInfoActionSheet)
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import _modDef2582 from "module_2582" /* 2582 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11046 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11082 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8466 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8498 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-let closure_7 = fn(8466).getSingleRequirementThreshold;
+let closure_7 = fn(8498).getSingleRequirementThreshold;
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { alignItems: "center", paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 }, headerContainer: null, title: null, description: null, tierCards: null, tierCard: null, iconWrapper: null };
 let obj3 = { alignItems: "center", paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.headerContainer = { paddingHorizontal: nativeDefault.space.PX_8 };
@@ -48,7 +48,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [BadgeDirectoryStore];
     const fn = function x() {
-      return badgeById.getBadgeById(closure_0(8458).BadgeId.GIFTING);
+      return badgeById.getBadgeById(closure_0(8490).BadgeId.GIFTING);
     };
     cResult[0] = items;
     cResult[1] = fn;
@@ -181,7 +181,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return closure_1_5.useReducedMotion;
         }
       }
-      const tmp24 = closure_9(tmp(4754).Text, obj2);
+      const tmp24 = closure_9(tmp(4786).Text, obj2);
       cResult[12] = tmp4.title;
       cResult[13] = tmp24;
     } else {
@@ -232,7 +232,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return closure_1_5.useReducedMotion;
         }
       }
-      const tmp28 = closure_9(tmp(4754).Text, obj3);
+      const tmp28 = closure_9(tmp(4786).Text, obj3);
       cResult[15] = tmp4.description;
       cResult[16] = tmp28;
     } else {
@@ -270,7 +270,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp = closure_11();
   _require = tmp;
   let items = [BadgeDirectoryStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => badgeById.getBadgeById(closure_0(8458).BadgeId.GIFTING));
+  const stateFromStores = require("initialize").useStateFromStores(items, () => badgeById.getBadgeById(closure_0(8490).BadgeId.GIFTING));
   let obj = require("initialize");
   const items1 = [AccessibilityStore];
   importDefault = require("initialize").useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
@@ -330,7 +330,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const intl = tmp12(1119).intl;
           const obj6 = { count: tmp3 };
           obj5.children = intl.formatToPlainString(_modDef2582.qvx9E4, obj6);
-          tmp11Result = options(tmp12(4754).Text, obj5);
+          tmp11Result = options(tmp12(4786).Text, obj5);
         }
         items[2] = tmp11Result;
         obj.children = items;

@@ -1,14 +1,14 @@
-// Module ID: 13836
-// Function ID: 13837
+// Module ID: 13872
+// Function ID: 13873
 // Name: renderPremiumButtonText
-// Dependencies: [19, 17, 1378, 21, 4758, 4608, 580, 558, 568, 4418, 1119, 1181, 2]
+// Dependencies: [19, 17, 1378, 21, 4790, 4640, 580, 558, 568, 4450, 1119, 1181, 2]
 // Exports: default
 
-// Module 13836 (renderPremiumButtonText)
+// Module 13872 (renderPremiumButtonText)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4450 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,10 +17,10 @@ const PremiumConstants = fn(1378);
 ({ PREMIUM_YEARLY_DISCOUNT_PERCENT: closure_4, PRICE_PLACEHOLDER: hasOwnProperty, SubscriptionIntervalTypes: metroRequire } = PremiumConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { discount: null, premiumText: null };
 let obj3 = { borderWidth: 1, borderColor: null, borderRadius: 2, marginLeft: 4, paddingHorizontal: 2 };
-const ColorUtils = fn(4608);
+const ColorUtils = fn(4640);
 obj3.borderColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.WHITE, 0.3);
 obj2.discount = obj3;
 obj2.premiumText = { flexDirection: "row" };
@@ -35,11 +35,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGift) => {
   const text = isGift.text;
   const tmp4 = closure_9();
   if (cResult[0] !== basePlanId) {
-    const interval = isGift(4418).getInterval(basePlanId);
+    const interval = isGift(4450).getInterval(basePlanId);
     cResult[0] = basePlanId;
     cResult[1] = interval;
     let tmp5 = interval;
-    let obj2 = isGift(4418);
+    let obj2 = isGift(4450);
   } else {
     tmp5 = cResult[1];
   }

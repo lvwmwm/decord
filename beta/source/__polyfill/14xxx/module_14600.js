@@ -1,50 +1,33 @@
 // Module ID: 14600
 // Function ID: 14601
-// Dependencies: [14580, 14601]
+// Dependencies: [14521, 14601]
+// Exports: getSupportedCalendars
 
 // Module 14600
-import _mod14580 from "module_14580" /* 14580 */;
-import _mod14601 from "module_14601" /* 14601 */;
+const require = globalThis.__r;
 
-let tmp = _mod14580.process && _mod14580.process.versions;
-if (!tmp) {
-  tmp = _mod14580.Deno && _mod14580.Deno.version;
-  const tmp2 = _mod14580.Deno && _mod14580.Deno.version;
-}
-let str = tmp;
-if (tmp) {
-  str = tmp.v8;
-}
-let tmp3;
-if (str) {
-  const parts = str.split(".");
-  if (parts[0] <= 0) {
-    let num3 = +parts[0] + parts[1];
-  } else {
-    num3 = 1;
-  }
-  tmp3 = num3;
-  let tmp4 = parts;
-}
-let _module = !tmp3;
-if (!tmp3) {
-  _module = _mod14601;
-}
-if (_module) {
-  const match = _mod14601.match(/Edge\/(\d+)/);
-  let tmp8 = !match;
-  if (match) {
-    tmp8 = match[1] >= 74;
-  }
-  _module = tmp8;
-  tmp4 = match;
-}
-if (_module) {
-  _module = _mod14601.match(/Chrome\/(\d+)/);
-  tmp4 = _module;
-}
-if (_module) {
-  tmp3 = +tmp4[1];
-}
+const require = arg1;
+const dependencyMap = arg6;
 
-export default tmp3;
+export const getSupportedCalendars = function getSupportedCalendars(locale) {
+  _require = locale;
+  const calendars = require("module_14601").calendars;
+  return calendars.filter((item) => (function isSupportedCalendar(item, arg1) {
+    let str = arg1;
+    if (undefined === arg1) {
+      str = "en";
+    }
+    try {
+      const concat = "".concat;
+      const combined = "".concat(str, "-u-ca-");
+      const memoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat(combined.concat(item));
+      if ("gregory" === item) {
+        if ("gregory" === memoizedDateTimeFormat.resolvedOptions().calendar) {
+          return false;
+        }
+      }
+      return true;
+    } catch (err) {
+    }
+  })(item, closure_0));
+};

@@ -1,12 +1,12 @@
-// Module ID: 7498
-// Function ID: 7499
+// Module ID: 7530
+// Function ID: 7531
 // Name: useUnmountAbortSignal
-// Dependencies: [558, 568, 5813, 5203, 2]
+// Dependencies: [558, 568, 5845, 5235, 2]
 
-// Module 7498 (useUnmountAbortSignal)
+// Module 7530 (useUnmountAbortSignal)
 import c from "c" /* 568 */;
-import useMountEffect from "useMountEffect" /* 5203 */;
-import useInitialValueDefault from "useInitialValue" /* 5813 */;
+import useMountEffect from "useMountEffect" /* 5235 */;
+import useInitialValueDefault from "useInitialValue" /* 5845 */;
 import "ReactCompilerGating";
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

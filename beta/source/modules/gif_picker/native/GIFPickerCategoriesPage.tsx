@@ -1,21 +1,21 @@
-// Module ID: 10674
-// Function ID: 10675
+// Module ID: 10710
+// Function ID: 10711
 // Name: GIFPickerCategoriesPage
-// Dependencies: [19, 17, 10657, 21, 4758, 10661, 580, 558, 568, 10654, 504, 10658, 10675, 10498, 7309, 7227, 1119, 7302, 2]
+// Dependencies: [19, 17, 10693, 21, 4790, 10697, 580, 558, 568, 10690, 504, 10694, 10711, 10534, 7341, 7259, 1119, 7334, 2]
 
-// Module 10674 (GIFPickerCategoriesPage)
+// Module 10710 (GIFPickerCategoriesPage)
 import nativeDefault from "native" /* 580 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7309 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10658 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10661 */;
-import GIFPickerCategoryViewDefault from "GIFPickerCategoryView" /* 10675 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7341 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10694 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10697 */;
+import GIFPickerCategoryViewDefault from "GIFPickerCategoryView" /* 10711 */;
 import noop from "module_19" /* 19 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 10657 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 10693 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles((height) => {
   const obj = { item: { height, flexDirection: "row", gap: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING, paddingBottom: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING }, placeholder: null };
   const obj2 = { height, flexDirection: "row", gap: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING, paddingBottom: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING };
@@ -33,9 +33,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((column
   columns = columns.columns;
   ({ favoritesCategory, inActionSheet, onSelectCategory } = columns);
   if (columns > 2) {
-    let GIF_PICKER_ITEM_ESIMTATED_HEIGHT = tmp(10661).GIF_PICKER_ITEM_ESIMTATED_HEIGHT;
+    let GIF_PICKER_ITEM_ESIMTATED_HEIGHT = tmp(10697).GIF_PICKER_ITEM_ESIMTATED_HEIGHT;
   } else {
-    GIF_PICKER_ITEM_ESIMTATED_HEIGHT = tmp(10661).GIF_PICKER_ITEM_ESIMTATED_HEIGHT / 2;
+    GIF_PICKER_ITEM_ESIMTATED_HEIGHT = tmp(10697).GIF_PICKER_ITEM_ESIMTATED_HEIGHT / 2;
   }
   let tmp4 = closure_7(GIF_PICKER_ITEM_ESIMTATED_HEIGHT);
   dependencyMap = tmp4;
@@ -46,7 +46,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((column
   } else {
     first = cResult[0];
   }
-  const safeAreaBottomKeyboardAware = onSelectCategory(10654)(first).safeAreaBottomKeyboardAware;
+  const safeAreaBottomKeyboardAware = onSelectCategory(10690)(first).safeAreaBottomKeyboardAware;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [GIFPickerViewStore];
     class S {
@@ -163,7 +163,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((column
                 if (cResult[21] === tmp4.placeholder) {
                   let tmp24 = cResult[22];
                 }
-                const isPortalKeyboardInModal = tmp10(10498).useIsPortalKeyboardInModal();
+                const isPortalKeyboardInModal = tmp10(10534).useIsPortalKeyboardInModal();
                 class S {
                   constructor() {
                     obj = { trendingCategories: closure_1_5.getTrendingCategories() };
@@ -251,7 +251,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((column
                         }
                       }
                       const obj3 = { estimatedListSize: tmp29, inActionSheet, preventNativeModalDismiss: isPortalKeyboardInModal, insetEnd: safeAreaBottomKeyboardAware, itemSize: GIF_PICKER_ITEM_ESIMTATED_HEIGHT, sections: tmp19, placeholderConfig: tmp27, renderItem: tmp24, accessibilityLabel: tmp30 };
-                      const tmp34 = jsx(onSelectCategory(7302), { estimatedListSize: tmp29, inActionSheet, preventNativeModalDismiss: isPortalKeyboardInModal, insetEnd: safeAreaBottomKeyboardAware, itemSize: GIF_PICKER_ITEM_ESIMTATED_HEIGHT, sections: tmp19, placeholderConfig: tmp27, renderItem: tmp24, accessibilityLabel: tmp30 });
+                      const tmp34 = jsx(onSelectCategory(7334), { estimatedListSize: tmp29, inActionSheet, preventNativeModalDismiss: isPortalKeyboardInModal, insetEnd: safeAreaBottomKeyboardAware, itemSize: GIF_PICKER_ITEM_ESIMTATED_HEIGHT, sections: tmp19, placeholderConfig: tmp27, renderItem: tmp24, accessibilityLabel: tmp30 });
                       cResult[30] = GIF_PICKER_ITEM_ESIMTATED_HEIGHT;
                       cResult[31] = inActionSheet;
                       cResult[32] = isPortalKeyboardInModal;
@@ -265,7 +265,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((column
                   }
                 }
                 const obj4 = { sectionItem: null };
-                const obj5 = { type: tmp10(7309).FastestListPropsPlaceholderType.SHAPE, shape: "rect", shapeCount: null, spaceGap: null, borderRadius: null, colorHex: null, height: null, verticalAlignment: "top" };
+                const obj5 = { type: tmp10(7341).FastestListPropsPlaceholderType.SHAPE, shape: "rect", shapeCount: null, spaceGap: null, borderRadius: null, colorHex: null, height: null, verticalAlignment: "top" };
                 class K {
                   constructor(arg0, arg1) {
                     items = [];
@@ -302,7 +302,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((column
                     return jsx(View, obj4);
                   }
                 }
-                obj5.spaceGap = tmp10(10661).GIF_PICKER_GUTTER_SPACING;
+                obj5.spaceGap = tmp10(10697).GIF_PICKER_GUTTER_SPACING;
                 obj5.borderRadius = tmp4.placeholder.borderRadius;
                 obj5.colorHex = tmp4.placeholder.backgroundColor;
                 obj5.height = tmp26;
@@ -313,7 +313,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((column
                 cResult[26] = tmp26;
                 cResult[27] = obj4;
                 tmp27 = obj4;
-                const tmp10Result = tmp10(10498);
+                const tmp10Result = tmp10(10534);
               }
             }
           }
@@ -383,13 +383,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((column
       }
     }
     let num3 = 0;
-    if (0 < Math.max(arr2.length, tmp(10661).DEFAULT_CATEGORY_ROWS)) {
+    if (0 < Math.max(arr2.length, tmp(10697).DEFAULT_CATEGORY_ROWS)) {
       do {
         let arr = items3.push(arr2.slice(num3, num3 + columns));
         num3 = num3 + columns;
         let _Math = Math;
         tmp = columns;
-        bound = Math.max(arr2.length, columns(10661).DEFAULT_CATEGORY_ROWS);
+        bound = Math.max(arr2.length, columns(10697).DEFAULT_CATEGORY_ROWS);
       } while (num3 < bound);
     }
     cResult[6] = arr2;

@@ -1,19 +1,19 @@
-// Module ID: 12568
-// Function ID: 12569
+// Module ID: 12604
+// Function ID: 12605
 // Name: RegionalTeenUtils
-// Dependencies: [19, 4972, 4975, 558, 568, 504, 10397, 8920, 2]
+// Dependencies: [19, 5004, 5007, 558, 568, 504, 10436, 8952, 2]
 // Exports: useIsTeenInStrictCountry
 
-// Module 12568 (RegionalTeenUtils)
+// Module 12604 (RegionalTeenUtils)
 import c from "c" /* 568 */;
-import useUserIsTeen from "useUserIsTeen" /* 8920 */;
-import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10397 */;
+import useUserIsTeen from "useUserIsTeen" /* 8952 */;
+import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10436 */;
 import noop from "module_19" /* 19 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 4972 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5004 */;
 
 require = fn;
 let items = ["GB", "AU"];
-HermesBuiltin.arraySpread(fn(4975).CountryCodesSets.EU_COUNTRIES, 2);
+HermesBuiltin.arraySpread(fn(5007).CountryCodesSets.EU_COUNTRIES, 2);
 const set = new Set(items);
 let ReactCompilerGating = fn(558);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {

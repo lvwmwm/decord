@@ -1,20 +1,20 @@
-// Module ID: 11899
-// Function ID: 11900
+// Module ID: 11935
+// Function ID: 11936
 // Name: QuestDockRewardTile
-// Dependencies: [32, 19, 17, 4750, 21, 4758, 580, 558, 568, 1368, 504, 10570, 8583, 5802, 2]
+// Dependencies: [32, 19, 17, 4782, 21, 4790, 580, 558, 568, 1368, 504, 10606, 8615, 5834, 2]
 
-// Module 11899 (QuestDockRewardTile)
+// Module 11935 (QuestDockRewardTile)
 import nativeDefault from "native" /* 580 */;
-import AssetUtils from "AssetUtils" /* 10570 */;
+import AssetUtils from "AssetUtils" /* 10606 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ AppState: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles(() => {
   const obj = { container: { borderRadius: nativeDefault.radii.sm, display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden" }, video: { overflow: "hidden", height: "100%", width: "100%" }, image: { height: "100%", width: "100%" } };
   return obj;
@@ -112,7 +112,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     }
   }
   const tmp11 = _slicedToArray(noop.useState("active" === closure_5.currentState), 2);
-  const scaledImageUrl = isAnimatedAsset(10570).getScaledImageUrl({ assetUrl, width, height });
+  const scaledImageUrl = isAnimatedAsset(10606).getScaledImageUrl({ assetUrl, width, height });
   cResult[7] = assetUrl;
   cResult[8] = height;
   cResult[9] = width;

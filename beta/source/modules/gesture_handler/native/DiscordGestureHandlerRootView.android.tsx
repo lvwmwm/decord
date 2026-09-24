@@ -1,14 +1,14 @@
-// Module ID: 14838
-// Function ID: 14839
+// Module ID: 14876
+// Function ID: 14877
 // Name: DiscordGestureHandlerRootView
-// Dependencies: [19, 17, 21, 558, 568, 14839, 6891, 2]
+// Dependencies: [19, 17, 21, 558, 568, 14877, 6923, 2]
 
-// Module 14838 (DiscordGestureHandlerRootView)
+// Module 14876 (DiscordGestureHandlerRootView)
 import c from "c" /* 568 */;
-import DiscordGestureHandlerRootViewNativeComponentDefault from "DiscordGestureHandlerRootViewNativeComponent" /* 14839 */;
+import DiscordGestureHandlerRootViewNativeComponentDefault from "DiscordGestureHandlerRootViewNativeComponent" /* 14877 */;
 import noop from "module_19" /* 19 */;
 
-const LegacyBaseButton = tmp(6891);
+const LegacyBaseButton = tmp(6923);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet, TurboModuleRegistry } = get_ActivityIndicator);

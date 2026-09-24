@@ -1,24 +1,24 @@
-// Module ID: 17237
-// Function ID: 17238
+// Module ID: 17247
+// Function ID: 17248
 // Name: AddFriendsScreen
-// Dependencies: [32, 5, 19, 17, 7899, 4409, 1376, 12846, 1078, 12825, 21, 4758, 580, 12823, 8654, 4457, 1119, 8006, 558, 568, 12827, 1368, 7409, 7429, 7296, 17238, 1245, 5203, 8453, 12, 4603, 565, 16385, 7415, 5822, 4459, 5310, 17239, 17240, 17242, 5343, 10090, 5796, 11168, 17243, 2]
+// Dependencies: [32, 5, 19, 17, 7931, 4441, 1376, 12882, 1078, 12861, 21, 4790, 580, 12859, 8686, 4489, 1119, 8038, 558, 568, 12863, 1368, 7441, 7461, 7328, 17248, 1245, 5235, 8485, 12, 4635, 565, 16395, 7447, 5854, 4491, 5342, 17249, 17250, 17252, 5375, 10129, 5828, 11204, 17253, 2]
 
-// Module 17237 (AddFriendsScreen)
+// Module 17247 (AddFriendsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8654 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12823 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12827 */;
-import IncomingRequestRow from "IncomingRequestRow" /* 17240 */;
-import ContactSuggestionRow from "ContactSuggestionRow" /* 17242 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8485 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8686 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12859 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12863 */;
+import IncomingRequestRow from "IncomingRequestRow" /* 17250 */;
+import ContactSuggestionRow from "ContactSuggestionRow" /* 17252 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7899 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7931 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -61,14 +61,14 @@ function areHydratedGameFriendRequestRowStatesEqual(arr, arg1) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const Sections = fn(12846).Sections;
+const Sections = fn(12882).Sections;
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_12, AnalyticsSections: map1, InstantInviteSources: closure_14, RelationshipTypes: closure_15 } = Constants);
-let ContactPermissions = fn(12825).ContactPermissions;
+let ContactPermissions = fn(12861).ContactPermissions;
 const jsxProd = fn(21);
 ({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
 let closure_19 = { FIND_FRIENDS: 0, [0]: "FIND_FRIENDS", INCOMING_FRIEND_REQUESTS: 1, [1]: "INCOMING_FRIEND_REQUESTS", INCOMING_GAME_FRIEND_REQUESTS: 2, [2]: "INCOMING_GAME_FRIEND_REQUESTS", CONTACT_SUGGESTIONS: 3, [3]: "CONTACT_SUGGESTIONS" };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1 }, inviteAppsContainerNonSticky: { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingVertical: nativeDefault.space.PX_16 }, inviteAppsContentContainer: { paddingTop: 0, paddingBottom: 0, minWidth: "100%" }, emptyContainer: null, emptyActionContainer: null, loading: null };
 let obj3 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingVertical: nativeDefault.space.PX_16 };
 obj2.emptyContainer = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
@@ -83,11 +83,11 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = require("c");
   const contactSyncAccount = require("ContactSyncUtils").useContactSyncAccount();
   if (cResult[0] !== contactSyncAccount) {
-    const isContactSyncEnabledResult = tmp(12827).isContactSyncEnabled(contactSyncAccount);
+    const isContactSyncEnabledResult = tmp(12863).isContactSyncEnabled(contactSyncAccount);
     cResult[0] = contactSyncAccount;
     cResult[1] = isContactSyncEnabledResult;
     let tmp5 = isContactSyncEnabledResult;
-    let tmpResult = tmp(12827);
+    let tmpResult = tmp(12863);
   } else {
     tmp5 = cResult[1];
   }
@@ -1110,9 +1110,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
       });
       let obj = sourcePage(analyticsLocations[29]);
       return sourcePage(analyticsLocations[29]).unionBy(items1, items, (user) => user.user.id).sort((user, user2) => {
-        const name = items1(4603).getName(user.user);
-        const obj = items1(4603);
-        return name.localeCompare(items1(4603).getName(user2.user));
+        const name = items1(4635).getName(user.user);
+        const obj = items1(4635);
+        return name.localeCompare(items1(4635).getName(user2.user));
       });
     }
     const items8 = [first4, first3];
@@ -1151,9 +1151,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
       }
     });
     return _modDef12.unionBy(items1, items, (id) => id.id).sort((arg0, arg1) => {
-      const name = sourcePage(4603).getName(arg0);
-      const obj = sourcePage(4603);
-      return name.localeCompare(sourcePage(4603).getName(arg1));
+      const name = sourcePage(4635).getName(arg0);
+      const obj = sourcePage(4635);
+      return name.localeCompare(sourcePage(4635).getName(arg1));
     });
   };
   cResult[13] = first2;
@@ -1267,9 +1267,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
       }
     });
     return _modDef12.unionBy(items1, items, (id) => id.id).sort((arg0, arg1) => {
-      const name = sourcePage(4603).getName(arg0);
-      const obj = sourcePage(4603);
-      return name.localeCompare(sourcePage(4603).getName(arg1));
+      const name = sourcePage(4635).getName(arg0);
+      const obj = sourcePage(4635);
+      return name.localeCompare(sourcePage(4635).getName(arg1));
     });
   });
   let obj5 = navigation(analyticsLocations[31]);
@@ -1304,9 +1304,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
     });
     let obj = sourcePage(analyticsLocations[29]);
     return sourcePage(analyticsLocations[29]).unionBy(items1, items, (user) => user.user.id).sort((user, user2) => {
-      const name = items1(4603).getName(user.user);
-      const obj = items1(4603);
-      return name.localeCompare(items1(4603).getName(user2.user));
+      const name = items1(4635).getName(user.user);
+      const obj = items1(4635);
+      return name.localeCompare(items1(4635).getName(user2.user));
     });
   }, items4, memo1);
   let obj6 = navigation(analyticsLocations[31]);

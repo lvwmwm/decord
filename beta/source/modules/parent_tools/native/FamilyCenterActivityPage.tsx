@@ -1,26 +1,26 @@
-// Module ID: 15139
-// Function ID: 15140
+// Module ID: 15149
+// Function ID: 15150
 // Name: FamilyCenterActivityPage
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 8921, 15140, 15142, 15152, 12049, 15156, 7371, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 8953, 15150, 15152, 15162, 12085, 15166, 7403, 2]
 
-// Module 15139 (FamilyCenterActivityPage)
+// Module 15149 (FamilyCenterActivityPage)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useUserLinks from "useUserLinks" /* 8921 */;
-import FamilyCenterDataConfirmationDefault from "FamilyCenterDataConfirmation" /* 12049 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 15140 */;
-import FamilyCenterActivityBannerDefault from "FamilyCenterActivityBanner" /* 15142 */;
-import FamilyCenterFeatureRowDefault from "FamilyCenterFeatureRow" /* 15152 */;
-import FamilyCenterActivityCardDefault from "FamilyCenterActivityCard" /* 15156 */;
+import useUserLinks from "useUserLinks" /* 8953 */;
+import FamilyCenterDataConfirmationDefault from "FamilyCenterDataConfirmation" /* 12085 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 15150 */;
+import FamilyCenterActivityBannerDefault from "FamilyCenterActivityBanner" /* 15152 */;
+import FamilyCenterFeatureRowDefault from "FamilyCenterFeatureRow" /* 15162 */;
+import FamilyCenterActivityCardDefault from "FamilyCenterActivityCard" /* 15166 */;
 import noop from "module_19" /* 19 */;
 
-const common_SafeAreaView = tmp(7371);
+const common_SafeAreaView = tmp(7403);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, ScrollView: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { scrollView: { flex: 1 }, dataConfirmation: { marginTop: nativeDefault.space.PX_8 }, container: null };
 let obj3 = { marginTop: nativeDefault.space.PX_8 };
 obj2.container = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
@@ -94,13 +94,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items = [hasOwnProperty(FamilyCenterParentalConsentNoticeDefault, {}), ];
   if (0 === activeLinkUserIds.length) {
     const obj4 = { children: null };
-    const items1 = [tmp3(tmp7(15142), {}), tmp3(tmp7(15152), {}), ];
-    const obj5 = { style: tmp.dataConfirmation, children: tmp3(tmp7(12049), {}) };
+    const items1 = [tmp3(tmp7(15152), {}), tmp3(tmp7(15162), {}), ];
+    const obj5 = { style: tmp.dataConfirmation, children: tmp3(tmp7(12085), {}) };
     items1[2] = tmp3(tmp6, obj5);
     obj4.children = items1;
     let tmp3Result = tmp5(timestampProducer, obj4);
   } else {
-    tmp3Result = tmp3(tmp7(15156), {});
+    tmp3Result = tmp3(tmp7(15166), {});
   }
   const tmp4 = React4;
   items[1] = tmp3Result;

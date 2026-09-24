@@ -1,23 +1,23 @@
-// Module ID: 10354
-// Function ID: 10355
+// Module ID: 10393
+// Function ID: 10394
 // Name: ChatViewStickyHeader
-// Dependencies: [32, 19, 10355, 21, 558, 568, 10356, 10362, 10366, 10367, 10384, 10390, 10417, 10422, 11549, 11552, 2]
+// Dependencies: [32, 19, 10394, 21, 558, 568, 10395, 10401, 10405, 10406, 10423, 10429, 10456, 10461, 11585, 11588, 2]
 
-// Module 10354 (ChatViewStickyHeader)
+// Module 10393 (ChatViewStickyHeader)
 import c from "c" /* 568 */;
-import useStrangerDangerWarning from "useStrangerDangerWarning" /* 10356 */;
-import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10362 */;
-import useLikelyAtoWarning from "useLikelyAtoWarning" /* 10366 */;
-import LikelyAtoWarningBannerDefault from "LikelyAtoWarningBanner" /* 10367 */;
-import StrangerDangerWarningBannerDefault from "StrangerDangerWarningBanner" /* 10384 */;
-import InappropriateConversationWarningBannerDefault from "InappropriateConversationWarningBanner" /* 10390 */;
-import useUnreadSettingNoticeDefault from "useUnreadSettingNotice" /* 10417 */;
-import ChatBannerDefault from "ChatBanner" /* 11552 */;
+import useStrangerDangerWarning from "useStrangerDangerWarning" /* 10395 */;
+import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10401 */;
+import useLikelyAtoWarning from "useLikelyAtoWarning" /* 10405 */;
+import LikelyAtoWarningBannerDefault from "LikelyAtoWarningBanner" /* 10406 */;
+import StrangerDangerWarningBannerDefault from "StrangerDangerWarningBanner" /* 10423 */;
+import InappropriateConversationWarningBannerDefault from "InappropriateConversationWarningBanner" /* 10429 */;
+import useUnreadSettingNoticeDefault from "useUnreadSettingNotice" /* 10456 */;
+import ChatBannerDefault from "ChatBanner" /* 11588 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const LOCATION_CONTEXT_MOBILE = fn(10355).LOCATION_CONTEXT_MOBILE;
+const LOCATION_CONTEXT_MOBILE = fn(10394).LOCATION_CONTEXT_MOBILE;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
 let ReactCompilerGating = fn(558);
@@ -163,7 +163,7 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
           tmp22 = tmp25;
         }
         const obj5 = { channel, handleScrollToNewMessages: scrollToNewMessages };
-        const tmp21 = timestampProducer(tmp5(11552), obj5);
+        const tmp21 = timestampProducer(tmp5(11588), obj5);
         cResult[11] = channel;
         cResult[12] = scrollToNewMessages;
         cResult[13] = tmp21;
@@ -173,7 +173,7 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
     let tmp17 = null;
     if (showUnreadsNotice) {
       const obj6 = { channel, clearUnreadsNotice };
-      tmp17 = timestampProducer(tmp5(11549), obj6);
+      tmp17 = timestampProducer(tmp5(11585), obj6);
     }
     cResult[7] = channel;
     cResult[8] = clearUnreadsNotice;
@@ -186,7 +186,7 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
     tmp10 = null;
     if (tmp4) {
       const obj7 = { channel };
-      tmp10 = timestampProducer(tmp5(10422), obj7);
+      tmp10 = timestampProducer(tmp5(10461), obj7);
     }
   }
   cResult[2] = channel;
@@ -210,7 +210,7 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
     tmp8 = null;
     if (tmp[0]) {
       const obj = { channel };
-      tmp8 = timestampProducer(tmp2(10422), obj);
+      tmp8 = timestampProducer(tmp2(10461), obj);
     }
   }
   const items = [tmp8, , , ];
@@ -223,7 +223,7 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   let tmp13 = null;
   if (showUnreadsNotice) {
     const obj3 = { channel, clearUnreadsNotice };
-    tmp13 = timestampProducer(tmp2(11549), obj3);
+    tmp13 = timestampProducer(tmp2(11585), obj3);
   }
   const obj4 = { children: null };
   items[2] = tmp13;

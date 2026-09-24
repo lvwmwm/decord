@@ -1,18 +1,18 @@
-// Module ID: 15103
-// Function ID: 15104
+// Module ID: 15113
+// Function ID: 15114
 // Name: DirectMessageSpamFilterSetting
-// Dependencies: [19, 8238, 558, 568, 15104, 2023, 11594, 1119, 15106, 2]
+// Dependencies: [19, 8270, 558, 568, 15114, 2023, 11630, 1119, 15116, 2]
 
-// Module 15103 (DirectMessageSpamFilterSetting)
+// Module 15113 (DirectMessageSpamFilterSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import ModerationUtils from "ModerationUtils" /* 15104 */;
+import ModerationUtils from "ModerationUtils" /* 15114 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -34,7 +34,7 @@ const radio = SettingBuilders.createRadio({
     const intl = util.intl;
     return intl.string(util.t.tiCXaH);
   },
-  parent: fn(8238).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: fn(8270).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useOptions: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(1);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -51,7 +51,7 @@ const radio = SettingBuilders.createRadio({
     const dmSpamOptions = ModerationUtils.generateDmSpamOptions();
     return dmSpamOptions.map((value) => ({ value: value.value, label: value.name, subLabel: value.desc }));
   }, [])),
-  useValue: fn(15106).useDerivedDmSpamFilterSettingValue,
+  useValue: fn(15116).useDerivedDmSpamFilterSettingValue,
   onValueChange: function onDmSpamFilterSettingValueChange(arg0) {
     const DmSpamFilterV2 = UserSettings.DmSpamFilterV2;
     DmSpamFilterV2.updateSetting(Number(arg0));

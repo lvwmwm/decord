@@ -1,9 +1,9 @@
-// Module ID: 18173
-// Function ID: 18174
+// Module ID: 18183
+// Function ID: 18184
 // Name: useOnboardingMonetizationEnableFlow
-// Dependencies: [19, 2063, 1376, 1078, 558, 568, 7505, 565, 18174, 18175, 18176, 7497, 1119, 2112, 18177, 2]
+// Dependencies: [19, 2063, 1376, 1078, 558, 568, 7537, 565, 18184, 18185, 18186, 7529, 1119, 2112, 18187, 2]
 
-// Module 18173 (useOnboardingMonetizationEnableFlow)
+// Module 18183 (useOnboardingMonetizationEnableFlow)
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -110,9 +110,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
       }
     }
   }
-  const tmp20 = refresh(18174);
-  ({ error, loading, createEnableRequest, submittedRequest } = refresh(18174)(undefined));
-  const tmp20Result = refresh(18174)(undefined);
+  const tmp20 = refresh(18184);
+  ({ error, loading, createEnableRequest, submittedRequest } = refresh(18184)(undefined));
+  const tmp20Result = refresh(18184)(undefined);
   if (features != null) {
     class T {
       constructor() {
@@ -125,11 +125,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
       }
     }
   }
-  const tmp19ResultResult = refresh(18175)(undefined);
+  const tmp19ResultResult = refresh(18185)(undefined);
   ({ loading: loading2, error: error2, refresh } = tmp19ResultResult);
   const eligibility = tmp19ResultResult.eligibility;
-  const tmp19Result = refresh(18175);
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(18176)(eligibility));
+  const tmp19Result = refresh(18185);
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(18186)(eligibility));
   if (features != null) {
     class T {
       constructor() {
@@ -219,7 +219,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
       }
     }
   }
-  const tmp24 = refresh(18176)(eligibility);
+  const tmp24 = refresh(18186)(eligibility);
   if (features != null) {
     class T {
       constructor() {
@@ -488,18 +488,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
   if (features != null) {
     id = features.id;
   }
-  const tmp10 = refresh(18174);
-  ({ submittedRequest, error, loading, createEnableRequest } = refresh(18174)(id));
+  const tmp10 = refresh(18184);
+  ({ submittedRequest, error, loading, createEnableRequest } = refresh(18184)(id));
   let id1;
-  const tmp10Result = refresh(18174)(id);
+  const tmp10Result = refresh(18184)(id);
   if (features != null) {
     id1 = features.id;
   }
-  const tmp9ResultResult = refresh(18175)(id1);
+  const tmp9ResultResult = refresh(18185)(id1);
   refresh = tmp9ResultResult.refresh;
   ({ eligibility, loading: loading2, error: error2 } = tmp9ResultResult);
-  const tmp9Result = refresh(18175);
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(18176)(eligibility));
+  const tmp9Result = refresh(18185);
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(18186)(eligibility));
   let hasItem2;
   if (features != null) {
     const features3 = features.features;
@@ -514,7 +514,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
     }
     tmp19 = true === hasItem3;
   }
-  const tmp16 = refresh(18176)(eligibility);
+  const tmp16 = refresh(18186)(eligibility);
   let id2;
   if (features != null) {
     id2 = features.id;

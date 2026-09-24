@@ -1,21 +1,21 @@
-// Module ID: 16686
-// Function ID: 16687
+// Module ID: 16696
+// Function ID: 16697
 // Name: GuildsBarSeparator
-// Dependencies: [19, 21, 4758, 580, 558, 568, 16361, 4497, 7320, 4462, 5804, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 16371, 4529, 7352, 4494, 5836, 2]
 
-// Module 16686 (GuildsBarSeparator)
+// Module 16696 (GuildsBarSeparator)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7320 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16361 */;
+import useToken from "useToken" /* 4494 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7352 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16371 */;
 import noop from "module_19" /* 19 */;
 
-const NativeViewDefault = tmp3(5804);
+const NativeViewDefault = tmp3(5836);
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles((width) => {
   const obj = { separator: null };
   const size = { height: 1, width, marginTop: nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN, marginBottom: nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN, marginLeft: 12, marginRight: 12, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, transformOrigin: "0% 50%" };

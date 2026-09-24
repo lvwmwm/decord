@@ -1,32 +1,32 @@
-// Module ID: 11858
-// Function ID: 11859
+// Module ID: 11894
+// Function ID: 11895
 // Name: EmojiReactionRowButton
-// Dependencies: [19, 17, 1379, 21, 4758, 580, 558, 568, 4610, 1119, 9035, 5341, 7377, 1401, 4416, 2]
+// Dependencies: [19, 17, 1379, 21, 4790, 580, 558, 568, 4642, 1119, 9067, 5373, 7409, 1401, 4448, 2]
 // Exports: getEmojiKey
 
-// Module 11858 (EmojiReactionRowButton)
+// Module 11894 (EmojiReactionRowButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import EmojiTypes from "EmojiTypes" /* 4416 */;
-import shared from "shared" /* 4610 */;
-import Pressables from "Pressables" /* 5341 */;
-import EmojiDefault from "Emoji" /* 7377 */;
-import ReactionIcon from "ReactionIcon" /* 9035 */;
+import EmojiTypes from "EmojiTypes" /* 4448 */;
+import shared from "shared" /* 4642 */;
+import Pressables from "Pressables" /* 5373 */;
+import EmojiDefault from "Emoji" /* 7409 */;
+import ReactionIcon from "ReactionIcon" /* 9067 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Platform = fn(17).Platform;
 const EMOJI_URL_BASE_SIZE = fn(1379).EMOJI_URL_BASE_SIZE;
 const jsx = fn(21).jsx;
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let closure_6 = createStyles.createStyles((width) => {
   const obj = { emojiContainer: null };
   const size = { width, height: width, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.MOBILE_EMOJI_BUTTON_BACKGROUND, borderRadius: nativeDefault.modules.button.BORDER_RADIUS, overflow: "hidden" };
   obj.emojiContainer = size;
   return obj;
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let closure_7 = createStyles.createStyles((width, fontSize, lineHeight) => {
   const obj = { emojiImage: { width, height: width }, emojiText: null };
   const size = { lineHeight, fontSize, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, textAlign: "center", width: lineHeight, height: lineHeight };
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiContainerSize
         }
       }
       const obj4 = { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: first, hitSlop: 4, onPress, style: tmp9, children: tmp11 };
-      const tmp16 = jsx(tmp(5341).PressableOpacity, { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: first, hitSlop: 4, onPress, style: tmp9, children: tmp11 });
+      const tmp16 = jsx(tmp(5373).PressableOpacity, { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: first, hitSlop: 4, onPress, style: tmp9, children: tmp11 });
       cResult[7] = onPress;
       cResult[8] = tmp9;
       cResult[9] = tmp11;
@@ -78,7 +78,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiContainerSize
       tmp14 = tmp16;
     }
     const obj5 = { color: tmp6, size: iconSize };
-    const tmp13 = jsx(tmp(9035).ReactionIcon, { color: tmp6, size: iconSize });
+    const tmp13 = jsx(tmp(9067).ReactionIcon, { color: tmp6, size: iconSize });
     cResult[4] = tmp6;
     cResult[5] = iconSize;
     cResult[6] = tmp13;
@@ -170,7 +170,7 @@ export const EmojiReactionRowButton = ReactCompilerGating.isReactCompilerEnabled
         }
       }
       const obj6 = { androidRippleConfig: first, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: tmp8, disabled: tmp12, hitSlop: 4, onPress, style: tmp13, children: tmp14 };
-      const tmp23 = jsx(tmp(5341).PressableOpacity, { androidRippleConfig: first, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: tmp8, disabled: tmp12, hitSlop: 4, onPress, style: tmp13, children: tmp14 });
+      const tmp23 = jsx(tmp(5373).PressableOpacity, { androidRippleConfig: first, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: tmp8, disabled: tmp12, hitSlop: 4, onPress, style: tmp13, children: tmp14 });
       cResult[9] = onPress;
       cResult[10] = tmp8;
       cResult[11] = tmp12;

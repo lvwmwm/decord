@@ -1,9 +1,9 @@
-// Module ID: 10184
-// Function ID: 10185
+// Module ID: 10223
+// Function ID: 10224
 // Name: useMyCurrentStageChannel
 // Dependencies: [2045, 2099, 558, 568, 504, 2]
 
-// Module 10184 (useMyCurrentStageChannel)
+// Module 10223 (useMyCurrentStageChannel)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

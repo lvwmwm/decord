@@ -1,13 +1,13 @@
-// Module ID: 18013
-// Function ID: 18014
+// Module ID: 18023
+// Function ID: 18024
 // Name: BoostGemOutlineIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 18014, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 18024, 4493, 2]
 
-// Module 18013 (BoostGemOutlineIcon)
+// Module 18023 (BoostGemOutlineIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod18014 from "module_18014" /* 18014 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod18024 from "module_18024" /* 18024 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const BoostGemOutlineIcon = ReactCompilerGating.isReactCompilerEnabled() 
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(18014);
+    const tmpResult = tmp(18024);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const BoostGemOutlineIcon = ReactCompilerGating.isReactCompilerEnabled() 
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod18014, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod18024, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

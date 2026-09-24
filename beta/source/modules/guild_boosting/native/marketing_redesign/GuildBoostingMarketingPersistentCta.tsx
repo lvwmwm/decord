@@ -1,13 +1,13 @@
-// Module ID: 7645
-// Function ID: 7646
+// Module ID: 7677
+// Function ID: 7678
 // Name: GuildBoostingMarketingPersistentCta
-// Dependencies: [19, 17, 4750, 1078, 21, 4758, 580, 558, 568, 565, 4497, 5187, 5799, 4754, 7646, 5198, 2]
+// Dependencies: [19, 17, 4782, 1078, 21, 4790, 580, 558, 568, 565, 4529, 5219, 5831, 4786, 7678, 5230, 2]
 
-// Module 7645 (GuildBoostingMarketingPersistentCta)
+// Module 7677 (GuildBoostingMarketingPersistentCta)
 import nativeDefault from "native" /* 580 */;
-import spring from "spring" /* 5187 */;
+import spring from "spring" /* 5219 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const View = fn(17).View;
@@ -16,7 +16,7 @@ const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 let c8 = 120;
 const SPRING_CONFIG = { stiffness: 70, damping: 10 };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { wrapper: { display: "flex", alignItems: "center", position: "absolute", width: "100%", zIndex: 1, bottom: -76 }, innerWraper: null, guildInfoContainer: null, guildIcon: null, guildIconText: null, guildName: null, buttonContainer: null, button: null, border: null };
 let size = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, display: "flex", flexDirection: "row", alignItems: "center", position: "relative", height: 76, width: 343, borderRadius: 76, paddingLeft: 13, paddingVertical: 13, paddingRight: 27 };
 obj2.innerWraper = size;
@@ -75,8 +75,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((premiumGroupRole
     obj2.opacity = spring.withSpring(num3, closure_9);
     return obj2;
   };
-  const tmpResult2 = isVisible(4497);
-  fn2.__closure = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET, withSpring: isVisible(5187).withSpring, isVisible, SPRING_CONFIG };
+  const tmpResult2 = isVisible(4529);
+  fn2.__closure = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET, withSpring: isVisible(5219).withSpring, isVisible, SPRING_CONFIG };
   fn2.__workletHash = 14370895185277;
   fn2.__initData = __initData;
   const animatedStyle = tmpResult2.useAnimatedStyle(fn2);
@@ -141,14 +141,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((premiumGroupRole
                                 return tmp44;
                               }
                               const obj3 = { style: tmp10, children: tmp40 };
-                              const tmp47 = closure_6(stateFromStores(4497).View, obj3);
+                              const tmp47 = closure_6(stateFromStores(4529).View, obj3);
                               cResult[35] = tmp40;
                               cResult[36] = tmp10;
                               cResult[37] = tmp47;
                               tmp44 = tmp47;
                             }
                             const obj4 = { angle: 45, angleCenter: tmp11, colors: tmp12, locations: tmp13, style: tmp4.border, useAngle: true, children: tmp36 };
-                            const tmp43 = closure_6(stateFromStores(5198), obj4);
+                            const tmp43 = closure_6(stateFromStores(5230), obj4);
                             cResult[32] = tmp4.border;
                             cResult[33] = tmp36;
                             cResult[34] = tmp43;
@@ -176,7 +176,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((premiumGroupRole
                 }
               }
               const obj8 = { guild, previousGuildSubscriptionSlot, useShortenedCTA: true, styles: tmp4.button, analyticsSection: AnalyticsSections.PREMIUM_GUILD_USER_MODAL_FLOATING_CTA_BAR, fractionalPremiumState, premiumGroupRole };
-              const tmp31 = closure_6(stateFromStores(7646), obj8);
+              const tmp31 = closure_6(stateFromStores(7678), obj8);
               cResult[19] = fractionalPremiumState;
               cResult[20] = guild;
               cResult[21] = premiumGroupRole;
@@ -197,7 +197,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((premiumGroupRole
           tmp23 = tmp26;
         }
         const obj10 = { style: tmp4.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name };
-        const tmp22 = closure_6(tmp(4754).Text, obj10);
+        const tmp22 = closure_6(tmp(4786).Text, obj10);
         cResult[12] = guild.name;
         cResult[13] = tmp4.guildName;
         cResult[14] = tmp22;
@@ -207,14 +207,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((premiumGroupRole
     const obj11 = { style: null, textStyle: null, guild: null, size: null };
     ({ guildIcon: obj6.style, guildIconText: obj6.textStyle } = tmp4);
     obj11.guild = guild;
-    obj11.size = tmp(5799).GuildIconSizes.LARGE;
-    const tmp19 = closure_6(stateFromStores(5799), obj11);
+    obj11.size = tmp(5831).GuildIconSizes.LARGE;
+    const tmp19 = closure_6(stateFromStores(5831), obj11);
     cResult[8] = guild;
     cResult[9] = tmp4.guildIcon;
     cResult[10] = tmp4.guildIconText;
     cResult[11] = tmp19;
     tmp15 = tmp19;
-    const tmp18 = stateFromStores(5799);
+    const tmp18 = stateFromStores(5831);
   }
   const items5 = [tmp4.wrapper, animatedStyle];
   cResult[2] = animatedStyle;
@@ -247,8 +247,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((premiumGroupRole
     obj2.opacity = spring.withSpring(num3, closure_9);
     return obj2;
   };
-  let obj2 = isVisible(4497);
-  fn.__closure = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET, withSpring: isVisible(5187).withSpring, isVisible, SPRING_CONFIG };
+  let obj2 = isVisible(4529);
+  fn.__closure = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET, withSpring: isVisible(5219).withSpring, isVisible, SPRING_CONFIG };
   fn.__workletHash = 10455540747486;
   fn.__initData = __initData2;
   const animatedStyle = obj2.useAnimatedStyle(fn);
@@ -256,7 +256,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((premiumGroupRole
   const items1 = [tmp.wrapper, animatedStyle];
   obj4.style = items1;
   const obj5 = { angle: 45, angleCenter: { x: 0.5, y: 0.5 }, colors: null, locations: null, style: null, useAngle: true, children: null };
-  const obj3 = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET, withSpring: isVisible(5187).withSpring, isVisible, SPRING_CONFIG };
+  const obj3 = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET, withSpring: isVisible(5219).withSpring, isVisible, SPRING_CONFIG };
   const items2 = [stateFromStores(580).unsafe_rawColors.GUILD_BOOSTING_BLUE, stateFromStores(580).unsafe_rawColors.GUILD_BOOSTING_PURPLE];
   obj5.colors = items2;
   obj5.locations = [0, 1];
@@ -264,16 +264,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((premiumGroupRole
   const obj6 = { style: tmp.innerWraper, children: null };
   const obj7 = { style: tmp.guildInfoContainer, children: null };
   const obj8 = { style: tmp.guildIcon, textStyle: tmp.guildIconText, guild, size: null };
-  const tmp4 = stateFromStores(5198);
-  obj8.size = isVisible(5799).GuildIconSizes.LARGE;
-  const items3 = [closure_6(stateFromStores(5799), obj8), closure_6(isVisible(4754).Text, { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name })];
+  const tmp4 = stateFromStores(5230);
+  obj8.size = isVisible(5831).GuildIconSizes.LARGE;
+  const items3 = [closure_6(stateFromStores(5831), obj8), closure_6(isVisible(4786).Text, { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name })];
   obj7.children = items3;
   const items4 = [closure_7(View, obj7), ];
-  const obj10 = { style: tmp.buttonContainer, children: closure_6(stateFromStores(7646), { guild, previousGuildSubscriptionSlot, useShortenedCTA: true, styles: tmp.button, analyticsSection: AnalyticsSections.PREMIUM_GUILD_USER_MODAL_FLOATING_CTA_BAR, fractionalPremiumState, premiumGroupRole }) };
+  const obj10 = { style: tmp.buttonContainer, children: closure_6(stateFromStores(7678), { guild, previousGuildSubscriptionSlot, useShortenedCTA: true, styles: tmp.button, analyticsSection: AnalyticsSections.PREMIUM_GUILD_USER_MODAL_FLOATING_CTA_BAR, fractionalPremiumState, premiumGroupRole }) };
   items4[1] = closure_6(View, obj10);
   obj6.children = items4;
   obj5.children = closure_7(View, obj6);
   obj4.children = closure_6(tmp4, obj5);
-  return closure_6(stateFromStores(4497).View, obj4);
+  return closure_6(stateFromStores(4529).View, obj4);
 });
 export const VISIBILITY_OFFSET = 120;

@@ -1,21 +1,21 @@
-// Module ID: 14129
-// Function ID: 14130
+// Module ID: 14166
+// Function ID: 14167
 // Name: ContactSyncUpsellCTA
-// Dependencies: [19, 12826, 1078, 21, 4758, 580, 558, 568, 1245, 12823, 7441, 1119, 8876, 14130, 2]
+// Dependencies: [19, 12862, 1078, 21, 4790, 580, 558, 568, 1245, 12859, 7473, 1119, 8908, 14167, 2]
 
-// Module 14129 (ContactSyncUpsellCTA)
+// Module 14166 (ContactSyncUpsellCTA)
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12823 */;
-import _modDef14130 from "module_14130" /* 14130 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12859 */;
+import _modDef14167 from "module_14167" /* 14167 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const dismissUpsellCTA = fn(12826).dismissUpsellCTA;
+const dismissUpsellCTA = fn(12862).dismissUpsellCTA;
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_4, AnalyticsSections: hasOwnProperty } = Constants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { padding: 12, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
 let closure_7 = createStyles.createStyles(obj);
 const ReactCompilerGating = fn(558);
@@ -171,8 +171,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       }
       return tmp12;
     }
-    let obj3 = { onPress: tmp5, onLongPress: tmp6, style: tmp7, iconSource: _modDef14130, title: tmp8, subtitle: tmp9 };
-    const tmp15 = jsx(tmp(8876).FormCTA, { onPress: tmp5, onLongPress: tmp6, style: tmp7, iconSource: _modDef14130, title: tmp8, subtitle: tmp9 });
+    let obj3 = { onPress: tmp5, onLongPress: tmp6, style: tmp7, iconSource: _modDef14167, title: tmp8, subtitle: tmp9 };
+    const tmp15 = jsx(tmp(8908).FormCTA, { onPress: tmp5, onLongPress: tmp6, style: tmp7, iconSource: _modDef14167, title: tmp8, subtitle: tmp9 });
     cResult[8] = tmp5;
     cResult[9] = tmp7;
     cResult[10] = tmp15;
@@ -209,10 +209,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       };
       const items = [obj3];
       obj2.options = items;
-      const result = location(7441).showSimpleActionSheet(obj2);
+      const result = location(7473).showSimpleActionSheet(obj2);
     },
     style: null,
-    iconSource: _modDef14130,
+    iconSource: _modDef14167,
     title: null,
     subtitle: null
   };
@@ -222,7 +222,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   obj.title = intl.string(location(1119).t.T6Rfd9);
   const intl2 = location(1119).intl;
   obj.subtitle = intl2.string(location(1119).t.c6KIpg);
-  return jsx(location(8876).FormCTA, {
+  return jsx(location(8908).FormCTA, {
     onPress() {
       const obj2 = { type: constants2.CONTACT_SYNC_MODAL, location: null };
       let str = location;
@@ -247,10 +247,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       };
       const items = [obj3];
       obj2.options = items;
-      const result = location(7441).showSimpleActionSheet(obj2);
+      const result = location(7473).showSimpleActionSheet(obj2);
     },
     style: null,
-    iconSource: _modDef14130,
+    iconSource: _modDef14167,
     title: null,
     subtitle: null
   });

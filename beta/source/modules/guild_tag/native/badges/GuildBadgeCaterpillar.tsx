@@ -1,12 +1,12 @@
-// Module ID: 14228
-// Function ID: 14229
+// Module ID: 14265
+// Function ID: 14266
 // Name: GuildBadgeCaterpillar
-// Dependencies: [109, 19, 21, 558, 568, 14189, 8733, 2]
+// Dependencies: [109, 19, 21, 558, 568, 14226, 8765, 2]
 
-// Module 14228 (GuildBadgeCaterpillar)
+// Module 14265 (GuildBadgeCaterpillar)
 import c from "c" /* 568 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14189 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14226 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -62,7 +62,7 @@ export const GuildBadgeCaterpillar = ReactCompilerGating.isReactCompilerEnabled(
     ({ primaryColorsTransformed, secondaryColorsTransformed } = tmp12);
     if (cResult[9] !== primaryColorsTransformed[1]) {
       const obj2 = { d: "M3 14H2v-1h1v1ZM2 13H1v-1h1v1ZM5 13h-2v-1H2v-1h3v2ZM12 10h2v1h-1v2h-2v-1h-1v-2h1v-1h1v1ZM15 12h-1v-1h1v1ZM7 5h-1v-1h-1v3h2v1h-1v2h-1v-1h-1V3h1V2h1V1h1v4ZM11 5h1v1h-1v1h-1V4h1v1ZM10 4h-1v-1h1v1Z", fill: primaryColorsTransformed[1] };
-      const tmp16 = React4(tmp(8733).Path, obj2);
+      const tmp16 = React4(tmp(8765).Path, obj2);
       cResult[9] = primaryColorsTransformed[1];
       cResult[10] = tmp16;
       let tmp14 = tmp16;
@@ -71,7 +71,7 @@ export const GuildBadgeCaterpillar = ReactCompilerGating.isReactCompilerEnabled(
     }
     const _Symbol = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp20 = React4(tmp(8733).Path, { d: "M15 11h-1v-1h1v1ZM14 10h-2v-1h2v1ZM12 5h-1v-1h1v1ZM11 4h-1v-1h1v1ZM10 3h-1V2h1v1ZM9 2h-2V1h2v1Z", fill: "white" });
+      const tmp20 = React4(tmp(8765).Path, { d: "M15 11h-1v-1h1v1ZM14 10h-2v-1h2v1ZM12 5h-1v-1h1v1ZM11 4h-1v-1h1v1ZM10 3h-1V2h1v1ZM9 2h-2V1h2v1Z", fill: "white" });
       cResult[11] = tmp20;
       let tmp18 = tmp20;
     } else {
@@ -79,7 +79,7 @@ export const GuildBadgeCaterpillar = ReactCompilerGating.isReactCompilerEnabled(
     }
     if (cResult[12] !== primaryColorsTransformed[0]) {
       const obj3 = { d: "M4 14h-1v-1h1v1ZM3 13H2v-1h1v1ZM5 10h1v2h-1v-1h-1v-2h1v1ZM12 9h-1v1h-1V7h1v-1h1v3ZM6 5h1v2h-2V4h1v1ZM9 4h-2V2h2v2Z", fill: primaryColorsTransformed[0] };
-      const tmp23 = React4(tmp(8733).Path, obj3);
+      const tmp23 = React4(tmp(8765).Path, obj3);
       cResult[12] = primaryColorsTransformed[0];
       cResult[13] = tmp23;
       let tmp21 = tmp23;
@@ -95,7 +95,7 @@ export const GuildBadgeCaterpillar = ReactCompilerGating.isReactCompilerEnabled(
     }
     if (cResult[14] !== first) {
       const obj4 = { d: "M10 12h1v1h3v-1h1v2h-1v1H11v-1h-1v-1h-1V5h-1v5h-1v3h-1v1h-1v1H2v-1h2v-1h1v-1h1V8h1V4h3v8ZM2 14H1v-1h1v1Z", fill: first };
-      const tmp29 = React4(tmp(8733).Path, obj4);
+      const tmp29 = React4(tmp(8765).Path, obj4);
       cResult[14] = first;
       cResult[15] = tmp29;
       let tmp27 = tmp29;
@@ -104,7 +104,7 @@ export const GuildBadgeCaterpillar = ReactCompilerGating.isReactCompilerEnabled(
     }
     const _Symbol2 = Symbol;
     if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp32 = React4(tmp(8733).Path, { d: "M5 16H2v-1h3v1ZM14 15v1H11v-1h3ZM2 15H1v-1h1v1ZM6 15h-1v-1h1v1ZM11 15h-1v-1h1v1ZM15 15h-1v-1h1v1ZM1 14H0v-2h1v2ZM7 14h-1v-1h1v1ZM10 14h-1v-1h1v1ZM16 14h-1V10h1v4ZM9 13h-2V10h1V5h1v8ZM14 13h-1v-2h1v2ZM2 12H1v-1h1v1ZM4 11H2v-1h1V3h1v8ZM15 10h-1v-1h1v1ZM13 8h1v1h-2V4h1v4ZM16 9h-1v-2h1v2ZM15 7h-1v-1h1v1ZM12 4h-1v-1h1v1ZM5 3h-1V2h1v1ZM11 3h-1V2h1v1ZM6 2h-1V1h1v1ZM10 2h-1V1h1v1ZM9 1H6V0h3v1Z", fill: "black" });
+      const tmp32 = React4(tmp(8765).Path, { d: "M5 16H2v-1h3v1ZM14 15v1H11v-1h3ZM2 15H1v-1h1v1ZM6 15h-1v-1h1v1ZM11 15h-1v-1h1v1ZM15 15h-1v-1h1v1ZM1 14H0v-2h1v2ZM7 14h-1v-1h1v1ZM10 14h-1v-1h1v1ZM16 14h-1V10h1v4ZM9 13h-2V10h1V5h1v8ZM14 13h-1v-2h1v2ZM2 12H1v-1h1v1ZM4 11H2v-1h1V3h1v8ZM15 10h-1v-1h1v1ZM13 8h1v1h-2V4h1v4ZM16 9h-1v-2h1v2ZM15 7h-1v-1h1v1ZM12 4h-1v-1h1v1ZM5 3h-1V2h1v1ZM11 3h-1V2h1v1ZM6 2h-1V1h1v1ZM10 2h-1V1h1v1ZM9 1H6V0h3v1Z", fill: "black" });
       cResult[16] = tmp32;
       let tmp30 = tmp32;
     } else {
@@ -132,7 +132,7 @@ export const GuildBadgeCaterpillar = ReactCompilerGating.isReactCompilerEnabled(
     obj5.fill = "none";
     items = [tmp14, tmp18, tmp21, tmp27, tmp30];
     obj5.children = items;
-    const tmp38 = hasOwnProperty(tmp(8733).Svg, obj5);
+    const tmp38 = hasOwnProperty(tmp(8765).Svg, obj5);
     cResult[17] = num8;
     cResult[18] = tmp5;
     cResult[19] = tmp14;

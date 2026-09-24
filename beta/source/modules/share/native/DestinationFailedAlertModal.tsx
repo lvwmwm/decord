@@ -1,22 +1,22 @@
-// Module ID: 11829
-// Function ID: 11830
+// Module ID: 11865
+// Function ID: 11866
 // Name: DestinationFailedAlertModal
-// Dependencies: [19, 17, 2045, 2067, 4798, 4409, 1376, 1089, 21, 4758, 580, 558, 568, 4911, 11216, 1181, 4754, 504, 4603, 11302, 5116, 5116, 1119, 2]
+// Dependencies: [19, 17, 2045, 2067, 4830, 4441, 1376, 1089, 21, 4790, 580, 558, 568, 4943, 11252, 1181, 4786, 504, 4635, 11338, 5148, 5148, 1119, 2]
 
-// Module 11829 (DestinationFailedAlertModal)
+// Module 11865 (DestinationFailedAlertModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useChannelNameDefault from "useChannelName" /* 4911 */;
-import AlertModal from "AlertModal" /* 5116 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 11216 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useChannelNameDefault from "useChannelName" /* 4943 */;
+import AlertModal from "AlertModal" /* 5148 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 11252 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
@@ -24,7 +24,7 @@ const View = fn(17).View;
 const StatusTypes = fn(1089).StatusTypes;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { borderWidth: 1, borderColor: nativeDefault.colors.BORDER_STRONG, borderRadius: nativeDefault.radii.lg, paddingVertical: nativeDefault.space.PX_8 }, row: null, label: null };
 let obj3 = { borderWidth: 1, borderColor: nativeDefault.colors.BORDER_STRONG, borderRadius: nativeDefault.radii.lg, paddingVertical: nativeDefault.space.PX_8 };
 obj2.row = { display: "flex", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, height: 40, marginHorizontal: nativeDefault.space.PX_16 };
@@ -154,7 +154,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       }
     }
     tmp16[0] = tmp4.row;
-    const obj2 = { user, guildId: "Boolean", status: true, isMobileOnline: "done", isVROnline: true, size: null, avatarDecoration: "eyebrow", autoStatusCutout: 1.5 };
+    const obj2 = { user, guildId: "Boolean", status: true, isMobileOnline: "done", isVROnline: true, size: null, avatarDecoration: "text-sm/medium", autoStatusCutout: null };
     if (StatusTypes.OFFLINE !== status) {
       class A {
         constructor() {
@@ -181,7 +181,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       name = UserUtilsDefault.getName(user);
     }
     obj3.children = name;
-    items2[1] = closure_10(tmp(4754).Text, obj3);
+    items2[1] = closure_10(tmp(4786).Text, obj3);
     tmp16[1] = items2;
     tmp14Result = closure_11(View, tmp16);
   }
@@ -204,7 +204,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   let tmp9Result = null;
   if (null != user) {
     const obj3 = { style: tmp.row, children: null };
-    const obj4 = { user, guildId: "Boolean", status: true, isMobileOnline: "done", isVROnline: true, size: null, avatarDecoration: "eyebrow", autoStatusCutout: 1.5 };
+    const obj4 = { user, guildId: "Boolean", status: true, isMobileOnline: "done", isVROnline: true, size: null, avatarDecoration: "text-sm/medium", autoStatusCutout: null };
     let tmp13 = null;
     if (StatusTypes.OFFLINE !== status) {
       tmp13 = status;
@@ -220,7 +220,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       stateFromStores = UserUtilsDefault.getName(user);
     }
     obj5.children = stateFromStores;
-    items2[1] = closure_10(tmp2(4754).Text, obj5);
+    items2[1] = closure_10(tmp2(4786).Text, obj5);
     obj3.children = items2;
     tmp9Result = closure_11(View, obj3);
   }
@@ -290,14 +290,14 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       tmp17 = tmp20;
     }
     const obj3 = { style: tmp4.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp11 };
-    const tmp16 = closure_10(tmp(4754).Text, obj3);
+    const tmp16 = closure_10(tmp(4786).Text, obj3);
     cResult[6] = tmp11;
     cResult[7] = tmp4.label;
     cResult[8] = tmp16;
     tmp14 = tmp16;
   }
   const tmpResult = channel(504);
-  const tmp13 = closure_10(channel(11302).GuildIconWithChannelType, { "aria-label": "", guild: stateFromStores, channel, size: channel(11302).GuildIconWithChannelTypeSizes.SMALL_32 });
+  const tmp13 = closure_10(channel(11338).GuildIconWithChannelType, { "aria-label": "", guild: stateFromStores, channel, size: channel(11338).GuildIconWithChannelTypeSizes.SMALL_32 });
   cResult[3] = channel;
   cResult[4] = stateFromStores;
   cResult[5] = tmp13;
@@ -316,7 +316,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const obj2 = { style: tmp.row, children: null };
   const obj = channel(504);
   const tmp3 = useChannelNameDefault(channel);
-  const items1 = [closure_10(channel(11302).GuildIconWithChannelType, { "aria-label": "", guild: stateFromStores, channel, size: channel(11302).GuildIconWithChannelTypeSizes.SMALL_32 }), closure_10(channel(4754).Text, { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp3 })];
+  const items1 = [closure_10(channel(11338).GuildIconWithChannelType, { "aria-label": "", guild: stateFromStores, channel, size: channel(11338).GuildIconWithChannelTypeSizes.SMALL_32 }), closure_10(channel(4786).Text, { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp3 })];
   obj2.children = items1;
   return closure_11(View, obj2);
 });
@@ -452,21 +452,21 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj3 = { variant: "primary", onPress: onRetry, text: null };
           const intl2 = tmp(1119).intl;
           obj3.text = intl2.string(tmp(1119).t["5911Lb"]);
-          const items = [tmp16(tmp(5116).AlertActionButton, obj3, "confirm"), ];
+          const items = [tmp16(tmp(5148).AlertActionButton, obj3, "confirm"), ];
           const obj4 = { variant: "secondary", text: null };
           const intl3 = tmp(1119).intl;
           obj4.text = intl3.string(tmp(1119).t.WAI6xu);
-          items[1] = tmp16(tmp(5116).AlertActionButton, obj4, "cancel");
+          items[1] = tmp16(tmp(5148).AlertActionButton, obj4, "cancel");
           obj2.children = items;
           let tmp16Result = closure_1_11(__initData, obj2);
         } else {
           const obj5 = { variant: "primary", text: null };
           const intl = tmp(1119).intl;
           obj5.text = intl.string(tmp(1119).t.BddRzS);
-          tmp16Result = tmp16(tmp(5116).AlertActionButton, obj5, "confirm");
+          tmp16Result = tmp16(tmp(5148).AlertActionButton, obj5, "confirm");
         }
         const obj6 = { children: tmp16Result };
-        const tmp16Result2 = v65535(tmp(5116).AlertActions, obj6);
+        const tmp16Result2 = v65535(tmp(5148).AlertActions, obj6);
         cResult[6] = onRetry;
         cResult[7] = tmp16Result2;
       } else {
@@ -481,7 +481,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj7 = { title, content, extraContent: tmp11, actions: cResult[7] };
-        const tmp25 = v65535(tmp(5116).AlertModal, obj7);
+        const tmp25 = v65535(tmp(5148).AlertModal, obj7);
         cResult[8] = content;
         cResult[9] = tmp11;
         cResult[10] = cResult[7];
@@ -508,18 +508,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj4 = { variant: "primary", onPress: onRetry, text: null };
     const intl2 = tmp3(1119).intl;
     obj4.text = intl2.string(tmp3(1119).t["5911Lb"]);
-    const items = [tmp2(tmp3(5116).AlertActionButton, obj4, "confirm"), ];
+    const items = [tmp2(tmp3(5148).AlertActionButton, obj4, "confirm"), ];
     const obj5 = { variant: "secondary", text: null };
     const intl3 = tmp3(1119).intl;
     obj5.text = intl3.string(tmp3(1119).t.WAI6xu);
-    items[1] = tmp2(tmp3(5116).AlertActionButton, obj5, "cancel");
+    items[1] = tmp2(tmp3(5148).AlertActionButton, obj5, "cancel");
     obj3.children = items;
     let tmp2Result = closure_1_11(__initData, obj3);
   } else {
     const obj6 = { variant: "primary", text: null };
     const intl = tmp3(1119).intl;
     obj6.text = intl.string(tmp3(1119).t.BddRzS);
-    tmp2Result = tmp2(tmp3(5116).AlertActionButton, obj6, "confirm");
+    tmp2Result = tmp2(tmp3(5148).AlertActionButton, obj6, "confirm");
   }
   obj.actions = v65535(AlertModal.AlertActions, { children: tmp2Result });
   return v65535(AlertModal.AlertModal, obj);

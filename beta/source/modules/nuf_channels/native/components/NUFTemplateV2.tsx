@@ -1,19 +1,19 @@
-// Module ID: 14047
-// Function ID: 14048
+// Module ID: 14084
+// Function ID: 14085
 // Name: NUFTemplateV2
-// Dependencies: [19, 17, 21, 4758, 558, 568, 4754, 5188, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 4786, 5220, 2]
 
-// Module 14047 (NUFTemplateV2)
+// Module 14084 (NUFTemplateV2)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ container: { padding: 16, alignItems: "center" }, title: { textAlign: "center", marginBottom: 8 }, description: { textAlign: "center", marginBottom: 46, paddingLeft: 18, paddingRight: 18 }, illustration: { alignSelf: "stretch", alignItems: "center", marginBottom: 32 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -64,21 +64,21 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp16 = tmp19;
         }
         const obj3 = { text: CTALabel, onPress: onCTAPress, grow: true };
-        const tmp15 = React3(tmp(5188).Button, obj3);
+        const tmp15 = React3(tmp(5220).Button, obj3);
         cResult[9] = CTALabel;
         cResult[10] = onCTAPress;
         cResult[11] = tmp15;
         tmp13 = tmp15;
       }
       const obj4 = { style: tmp4.description, variant: "text-md/medium", children: description };
-      const tmp12 = React3(tmp(4754).Text, obj4);
+      const tmp12 = React3(tmp(4786).Text, obj4);
       cResult[6] = description;
       cResult[7] = tmp4.description;
       cResult[8] = tmp12;
       tmp10 = tmp12;
     }
     const obj5 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-xl/bold", children: title };
-    const tmp9 = React3(tmp(4754).Text, obj5);
+    const tmp9 = React3(tmp(4786).Text, obj5);
     cResult[3] = tmp4.title;
     cResult[4] = title;
     cResult[5] = tmp9;

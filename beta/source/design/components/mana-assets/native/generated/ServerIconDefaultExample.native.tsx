@@ -1,13 +1,13 @@
-// Module ID: 6664
-// Function ID: 6665
+// Module ID: 6696
+// Function ID: 6697
 // Name: ServerIconDefaultExample
-// Dependencies: [21, 558, 568, 6665, 5802, 2]
+// Dependencies: [21, 558, 568, 6697, 5834, 2]
 
-// Module 6664 (ServerIconDefaultExample)
+// Module 6696 (ServerIconDefaultExample)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6665 from "module_6665" /* 6665 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6697 from "module_6697" /* 6697 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const ServerIconDefaultExample = ReactCompilerGating.isReactCompilerEnabl
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6665 };
+    const obj2 = { uri: _modDef6697 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const ServerIconDefaultExample = ReactCompilerGating.isReactCompilerEnabl
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6665 };
+  const obj2 = { uri: _modDef6697 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

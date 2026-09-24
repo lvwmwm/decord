@@ -1,19 +1,19 @@
-// Module ID: 12167
-// Function ID: 12168
+// Module ID: 12203
+// Function ID: 12204
 // Name: useAppLauncherOnboardingContent
-// Dependencies: [32, 9403, 2045, 2042, 558, 568, 4579, 2031, 504, 12168, 12173, 7632, 2]
+// Dependencies: [32, 9435, 2045, 2042, 558, 568, 4611, 2031, 504, 12204, 12209, 7664, 2]
 
-// Module 12167 (useAppLauncherOnboardingContent)
+// Module 12203 (useAppLauncherOnboardingContent)
 import c from "c" /* 568 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4579 */;
-import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 12173 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4611 */;
+import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 12209 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9403 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9435 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 const initialize = tmp(504);
-const useActivityApplications = tmp(12168);
+const useActivityApplications = tmp(12204);
 require = fn;
 const constants = fn(2042).DismissibleContentGroupName;
 let ReactCompilerGating = fn(558);
@@ -146,8 +146,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     }
   }
   const tmpResult = channelId(504);
-  const tmpResult2 = channelId(7632);
-  [tmp15, tmp16] = channelId(7632).useSelectedDismissibleContent(items1, constants.APP_LAUNCHER_ONBOARDING);
+  const tmpResult2 = channelId(7664);
+  [tmp15, tmp16] = channelId(7664).useSelectedDismissibleContent(items1, constants.APP_LAUNCHER_ONBOARDING);
   if (cResult[7] === tmp16) {
     if (cResult[8] === tmp15) {
       let tmp17 = cResult[9];
@@ -178,6 +178,6 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     }
   }
   obj2 = { channel: channelId(504).useStateFromStores(items1, () => ChannelStore.getChannel(channelId)) };
-  const tmp7 = _slicedToArray(channelId(7632).useSelectedDismissibleContent(items, constants.APP_LAUNCHER_ONBOARDING), 2);
+  const tmp7 = _slicedToArray(channelId(7664).useSelectedDismissibleContent(items, constants.APP_LAUNCHER_ONBOARDING), 2);
   return { visibleContent: tmp7[0], markAsDismissed: tmp7[1] };
 });

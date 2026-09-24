@@ -1,21 +1,21 @@
-// Module ID: 15562
-// Function ID: 15563
+// Module ID: 15572
+// Function ID: 15573
 // Name: SettingsAppearanceChannelListPreviewNitroUpsell
-// Dependencies: [19, 17, 4750, 1078, 21, 4497, 5198, 5187, 5191, 4758, 580, 558, 568, 7409, 7429, 9502, 9474, 1119, 1181, 5188, 504, 10223, 2]
+// Dependencies: [19, 17, 4782, 1078, 21, 4529, 5230, 5219, 5223, 4790, 580, 558, 568, 7441, 7461, 9534, 9506, 1119, 1181, 5220, 504, 10262, 2]
 
-// Module 15562 (SettingsAppearanceChannelListPreviewNitroUpsell)
+// Module 15572 (SettingsAppearanceChannelListPreviewNitroUpsell)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import spring from "spring" /* 5187 */;
-import springPresets from "springPresets" /* 5191 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9474 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9502 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10223 */;
+import spring from "spring" /* 5219 */;
+import springPresets from "springPresets" /* 5223 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9506 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9534 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10262 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -31,7 +31,7 @@ function animationEntering(value) {
   const obj = { opacity: spring.withSpring(value, springPresets.springStandard) };
   return obj;
 }
-animationEntering.__closure = { withSpring: fn(5187).withSpring, springStandard: fn(5191).springStandard };
+animationEntering.__closure = { withSpring: fn(5219).withSpring, springStandard: fn(5223).springStandard };
 animationEntering.__workletHash = 2168112734281;
 animationEntering.__initData = { code: "function animationEntering_SettingsAppearanceChannelListPreviewNitroUpsellTsx1(visible){const{withSpring,springStandard}=this.__closure;return{opacity:withSpring(visible,springStandard)};}" };
 const __initData = { code: "function SettingsAppearanceChannelListPreviewNitroUpsellTsx3(finished){const{cleanUp}=this.__closure;var _cleanUp;(_cleanUp=cleanUp)===null||_cleanUp===void 0||_cleanUp(finished);}" };
@@ -49,11 +49,11 @@ function animationExiting(value, cleanUp) {
   obj.opacity = spring.withSpring(value, springPresets.springStandard, "respect-motion-settings", fn);
   return obj;
 }
-let obj = { withSpring: fn(5187).withSpring, springStandard: fn(5191).springStandard };
-animationExiting.__closure = { withSpring: fn(5187).withSpring, springStandard: fn(5191).springStandard };
+let obj = { withSpring: fn(5219).withSpring, springStandard: fn(5223).springStandard };
+animationExiting.__closure = { withSpring: fn(5219).withSpring, springStandard: fn(5223).springStandard };
 animationExiting.__workletHash = 12271101023923;
 animationExiting.__initData = { code: "function animationExiting_SettingsAppearanceChannelListPreviewNitroUpsellTsx2(visible,cleanUp){const{withSpring,springStandard}=this.__closure;return{opacity:withSpring(visible,springStandard,'respect-motion-settings',function(finished){cleanUp===null||cleanUp===void 0||cleanUp(finished);})};}" };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj3 = { nitroUpsell: null, nitroWheelIcon: null };
 let obj4 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -86,13 +86,13 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
     obj.opacity = spring.withSpring(num, springPresets.springStandard);
     return obj;
   };
-  const obj2 = theme(4497);
-  fn.__closure = { theme, ThemeTypes, StyleSheet, withSpring: theme(5187).withSpring, springStandard: theme(5191).springStandard };
+  const obj2 = theme(4529);
+  fn.__closure = { theme, ThemeTypes, StyleSheet, withSpring: theme(5219).withSpring, springStandard: theme(5223).springStandard };
   fn.__workletHash = 16911565077998;
   fn.__initData = __initData2;
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  const obj3 = { theme, ThemeTypes, StyleSheet, withSpring: theme(5187).withSpring, springStandard: theme(5191).springStandard };
-  analyticsLocations = analyticsLocations(7409)(analyticsLocations(7429).CLIENT_THEMES_EDITOR).analyticsLocations;
+  const obj3 = { theme, ThemeTypes, StyleSheet, withSpring: theme(5219).withSpring, springStandard: theme(5223).springStandard };
+  analyticsLocations = analyticsLocations(7441)(analyticsLocations(7461).CLIENT_THEMES_EDITOR).analyticsLocations;
   if (cResult[0] !== analyticsLocations) {
     const fn2 = function l() {
       const obj = { premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING, analyticsLocation: { page: constants.USER_SETTINGS, section: constants2.SETTINGS_CLIENT_THEMES }, analyticsLocations };
@@ -152,7 +152,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
     cResult[13] = tmp23;
     tmp20 = tmp23;
   }
-  const tmp19 = closure_10(theme(5188).Button, { text: tmp13, icon: tmp15, variant: "active", onPress: tmp7, size: "md" });
+  const tmp19 = closure_10(theme(5220).Button, { text: tmp13, icon: tmp15, variant: "active", onPress: tmp7, size: "md" });
   cResult[7] = tmp7;
   cResult[8] = tmp15;
   cResult[9] = tmp19;
@@ -171,13 +171,13 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
     obj.opacity = spring.withSpring(num, springPresets.springStandard);
     return obj;
   };
-  let obj = theme(4497);
-  fn.__closure = { theme, ThemeTypes, StyleSheet, withSpring: theme(5187).withSpring, springStandard: theme(5191).springStandard };
+  let obj = theme(4529);
+  fn.__closure = { theme, ThemeTypes, StyleSheet, withSpring: theme(5219).withSpring, springStandard: theme(5223).springStandard };
   fn.__workletHash = 14565202241551;
   fn.__initData = __initData3;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj2 = { theme, ThemeTypes, StyleSheet, withSpring: theme(5187).withSpring, springStandard: theme(5191).springStandard };
-  analyticsLocations = analyticsLocations(7409)(analyticsLocations(7429).CLIENT_THEMES_EDITOR).analyticsLocations;
+  const obj2 = { theme, ThemeTypes, StyleSheet, withSpring: theme(5219).withSpring, springStandard: theme(5223).springStandard };
+  analyticsLocations = analyticsLocations(7441)(analyticsLocations(7461).CLIENT_THEMES_EDITOR).analyticsLocations;
   const items = [analyticsLocations];
   const obj3 = { style: tmp.nitroUpsell, children: null };
   const callback = noop.useCallback(() => {
@@ -190,12 +190,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
   obj5.text = intl.string(theme(1119).t.pj0XBN);
   obj5.icon = closure_10(theme(1181).NitroWheel, { style: tmp.nitroWheelIcon });
   obj5.onPress = callback;
-  items1[1] = closure_10(theme(5188).Button, obj5);
+  items1[1] = closure_10(theme(5220).Button, obj5);
   obj3.children = items1;
   return closure_11(View, obj3);
 });
 ReactCompilerGating = fn(558);
-let obj2 = { withSpring: fn(5187).withSpring, springStandard: fn(5191).springStandard };
+let obj2 = { withSpring: fn(5219).withSpring, springStandard: fn(5223).springStandard };
 size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceChannelListPreviewNitroUpsell.tsx");
 

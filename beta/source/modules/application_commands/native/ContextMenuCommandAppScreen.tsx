@@ -1,15 +1,15 @@
-// Module ID: 17343
-// Function ID: 17344
+// Module ID: 17353
+// Function ID: 17354
 // Name: ContextMenuCommandAppScreen
-// Dependencies: [19, 21, 4758, 580, 558, 568, 7224, 7296, 17342, 7302, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 7256, 7328, 17352, 7334, 2]
 
-// Module 17343 (ContextMenuCommandAppScreen)
+// Module 17353 (ContextMenuCommandAppScreen)
 import nativeDefault from "native" /* 580 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { list: { marginHorizontal: nativeDefault.space.PX_16 } };
 let closure_5 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

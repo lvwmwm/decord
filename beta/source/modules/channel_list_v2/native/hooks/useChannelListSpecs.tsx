@@ -1,20 +1,20 @@
-// Module ID: 16471
-// Function ID: 16472
+// Module ID: 16481
+// Function ID: 16482
 // Name: useChannelListSpecs
-// Dependencies: [19, 12213, 558, 568, 16472, 1482, 16359, 5195, 1616, 11293, 2]
+// Dependencies: [19, 12249, 558, 568, 16482, 1482, 16369, 5227, 1616, 11329, 2]
 
-// Module 16471 (useChannelListSpecs)
+// Module 16481 (useChannelListSpecs)
 import c from "c" /* 568 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11293 */;
-import useChannelListWidthDefault from "useChannelListWidth" /* 16359 */;
-import RedesignGuildHeader from "RedesignGuildHeader" /* 16472 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11329 */;
+import useChannelListWidthDefault from "useChannelListWidth" /* 16369 */;
+import RedesignGuildHeader from "RedesignGuildHeader" /* 16482 */;
 import noop from "module_19" /* 19 */;
 
-const useFontScale = tmp(5195);
+const useFontScale = tmp(5227);
 require = fn;
-const RedesignChannelListConstants = fn(12213);
+const RedesignChannelListConstants = fn(12249);
 ({ STICKY_BANNER_ASPECT_RATIO: closure_4, BANNER_MAX_HEIGHT_PERCENTAGE: hasOwnProperty } = RedesignChannelListConstants);
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -40,7 +40,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((banner) => {
   }
   const diff = height - useSafeAreaInsetsDefault().top;
   if (cResult[1] !== num2) {
-    const tmp14 = tmp6(11293)(num2);
+    const tmp14 = tmp6(11329)(num2);
     cResult[1] = num2;
     cResult[2] = tmp14;
     let tmp13 = tmp14;
@@ -48,7 +48,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((banner) => {
     tmp13 = cResult[2];
   }
   if (cResult[3] !== tmp7) {
-    const tmp16 = tmp6(11293)(tmp7);
+    const tmp16 = tmp6(11329)(tmp7);
     cResult[3] = tmp7;
     cResult[4] = tmp16;
     let tmp15 = tmp16;
@@ -56,7 +56,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((banner) => {
     tmp15 = cResult[4];
   }
   if (cResult[5] !== redesignGuildHeaderHeight) {
-    const tmp18 = tmp6(11293)(redesignGuildHeaderHeight);
+    const tmp18 = tmp6(11329)(redesignGuildHeaderHeight);
     cResult[5] = redesignGuildHeaderHeight;
     cResult[6] = tmp18;
     let tmp17 = tmp18;
@@ -65,7 +65,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((banner) => {
   }
   const sum = num2 + redesignGuildHeaderHeight;
   if (cResult[7] !== sum) {
-    const tmp21 = tmp6(11293)(sum);
+    const tmp21 = tmp6(11329)(sum);
     cResult[7] = sum;
     cResult[8] = tmp21;
     let tmp20 = tmp21;
@@ -73,14 +73,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((banner) => {
     tmp20 = cResult[8];
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp23 = tmp6(11293)(24);
+    const tmp23 = tmp6(11329)(24);
     cResult[9] = tmp23;
     let tmp22 = tmp23;
   } else {
     tmp22 = cResult[9];
   }
   if (cResult[10] !== diff) {
-    const tmp25 = tmp6(11293)(diff);
+    const tmp25 = tmp6(11329)(diff);
     cResult[10] = diff;
     cResult[11] = tmp25;
     let tmp24 = tmp25;
@@ -111,12 +111,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((banner) => {
   cResult[18] = obj4;
   tmp26 = obj4;
 }) : ((banner) => {
-  redesignGuildHeaderHeight = redesignGuildHeaderHeight(16472).useRedesignGuildHeaderHeight(banner);
+  redesignGuildHeaderHeight = redesignGuildHeaderHeight(16482).useRedesignGuildHeaderHeight(banner);
   height = height(1482)({ ignoreKeyboard: true }).height;
-  const tmp2 = height(16359)();
+  const tmp2 = height(16369)();
   dependencyMap = tmp2;
-  const obj = redesignGuildHeaderHeight(16472);
-  const fontScale = redesignGuildHeaderHeight(5195).useFontScale();
+  const obj = redesignGuildHeaderHeight(16482);
+  const fontScale = redesignGuildHeaderHeight(5227).useFontScale();
   closure_4 = tmp4;
   const top = height(1616)().top;
   const items = [null != banner.banner, tmp2, height, redesignGuildHeaderHeight, top, fontScale];

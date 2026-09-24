@@ -1,10 +1,10 @@
-// Module ID: 13473
-// Function ID: 13474
+// Module ID: 13509
+// Function ID: 13510
 // Name: useHandleBuyNow
-// Dependencies: [5, 32, 19, 1078, 3, 11314, 7788, 4725, 11376, 1613, 7560, 4433, 4458, 1119, 2]
+// Dependencies: [5, 32, 19, 1078, 3, 11350, 7820, 4757, 11412, 1613, 7592, 4465, 4490, 1119, 2]
 // Exports: default, useHandleBuyNow
 
-// Module 13473 (useHandleBuyNow)
+// Module 13509 (useHandleBuyNow)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -46,7 +46,7 @@ function useHandleBuyNow(product) {
           } else {
             v1 = 1;
             dependencyMap = 1;
-            const obj6 = { value: tmp4(7788).fetchCollectiblesPurchases(), done: false };
+            const obj6 = { value: tmp4(7820).fetchCollectiblesPurchases(), done: false };
             return obj6;
           }
         } else if (arg0 === 1) {
@@ -58,10 +58,10 @@ function useHandleBuyNow(product) {
           return obj7;
         } else {
           closure_128_5(false);
-          v1(4725).hideAllActionSheets();
-          const obj = v1(4725);
+          v1(4757).hideAllActionSheets();
+          const obj = v1(4757);
           const obj8 = { product: closure_128_0, useCategoryImage: true, stageCollectibleChangeForEditProfile: closure_128_3 };
-          v1(11376).open(obj8);
+          v1(11412).open(obj8);
           dependencyMap = 3;
           return { value: "IconComponent", done: null };
         }

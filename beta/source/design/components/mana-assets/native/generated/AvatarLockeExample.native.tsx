@@ -1,13 +1,13 @@
-// Module ID: 6002
-// Function ID: 6003
+// Module ID: 6034
+// Function ID: 6035
 // Name: AvatarLockeExample
-// Dependencies: [21, 558, 568, 6003, 5802, 2]
+// Dependencies: [21, 558, 568, 6035, 5834, 2]
 
-// Module 6002 (AvatarLockeExample)
+// Module 6034 (AvatarLockeExample)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6003 from "module_6003" /* 6003 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6035 from "module_6035" /* 6035 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const AvatarLockeExample = ReactCompilerGating.isReactCompilerEnabled() ?
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6003 };
+    const obj2 = { uri: _modDef6035 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const AvatarLockeExample = ReactCompilerGating.isReactCompilerEnabled() ?
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6003 };
+  const obj2 = { uri: _modDef6035 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

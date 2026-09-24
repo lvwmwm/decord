@@ -1,9 +1,9 @@
-// Module ID: 9200
-// Function ID: 9201
+// Module ID: 9232
+// Function ID: 9233
 // Name: ApplicationWidgetLayoutName
 // Dependencies: [2]
 
-// Module 9200 (ApplicationWidgetLayoutName)
+// Module 9232 (ApplicationWidgetLayoutName)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationWidgetLayoutName.tsx");

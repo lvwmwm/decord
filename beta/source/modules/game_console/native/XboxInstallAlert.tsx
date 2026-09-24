@@ -1,23 +1,23 @@
-// Module ID: 10037
-// Function ID: 10038
+// Module ID: 10076
+// Function ID: 10077
 // Name: XboxInstallAlert
-// Dependencies: [19, 9356, 21, 4758, 580, 558, 568, 1119, 1181, 9363, 1368, 4455, 5207, 2]
+// Dependencies: [19, 9388, 21, 4790, 580, 558, 568, 1119, 1181, 9395, 1368, 4487, 5239, 2]
 
-// Module 10037 (XboxInstallAlert)
+// Module 10076 (XboxInstallAlert)
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import LinkingDefault from "Linking" /* 4455 */;
-import common_AlertDefault from "common/Alert" /* 5207 */;
-import _modDef9363 from "module_9363" /* 9363 */;
+import LinkingDefault from "Linking" /* 4487 */;
+import common_AlertDefault from "common/Alert" /* 5239 */;
+import _modDef9395 from "module_9395" /* 9395 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const GameConsoleConstants = fn(9356);
+const GameConsoleConstants = fn(9388);
 ({ XBOX_ANDROID_APP_LINK: c3, XBOX_IOS_APP_LINK: closure_4 } = GameConsoleConstants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { externalLinkIcon: null };
 let size = { tintColor: nativeDefault.colors.WHITE, width: 20, height: 20, marginLeft: 8 };
 obj2.externalLinkIcon = size;
@@ -52,7 +52,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[4] !== tmp4.externalLinkIcon) {
     const fn = function _() {
-      return jsx(native.Icon, { source: _modDef9363, style: closure_0.externalLinkIcon });
+      return jsx(native.Icon, { source: _modDef9395, style: closure_0.externalLinkIcon });
     };
     cResult[4] = tmp4.externalLinkIcon;
     cResult[5] = fn;
@@ -111,7 +111,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj.cancelText = intl4.string(require("util").t.kYaBOg);
   obj.fillCancelText = true;
   obj.renderConfirmRightIcon = function renderConfirmRightIcon() {
-    return jsx(native.Icon, { source: _modDef9363, style: closure_0.externalLinkIcon });
+    return jsx(native.Icon, { source: _modDef9395, style: closure_0.externalLinkIcon });
   };
   obj.onConfirm = function onConfirm() {
     const obj = closure_0(1368);

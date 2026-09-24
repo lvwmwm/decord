@@ -1,19 +1,19 @@
-// Module ID: 15567
-// Function ID: 15568
+// Module ID: 15577
+// Function ID: 15578
 // Name: DarkModeThemeSetting
-// Dependencies: [1186, 1189, 8238, 1078, 558, 568, 504, 11594, 1119, 15565, 15568, 2]
+// Dependencies: [1186, 1189, 8270, 1078, 558, 568, 504, 11630, 1119, 15575, 15578, 2]
 
-// Module 15567 (DarkModeThemeSetting)
+// Module 15577 (DarkModeThemeSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import useSyncedModeThemeName from "useSyncedModeThemeName" /* 15565 */;
+import useSyncedModeThemeName from "useSyncedModeThemeName" /* 15575 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 
 require = fn;
 const SystemTheme = fn(1189).SystemTheme;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -38,7 +38,7 @@ const route = SettingBuilders.createRoute({
     const intl = util.intl;
     return intl.string(util.t["EgvHH/"]);
   },
-  parent: fn(8238).MobileUserSettings.APPEARANCE,
+  parent: fn(8270).MobileUserSettings.APPEARANCE,
   usePredicate: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {

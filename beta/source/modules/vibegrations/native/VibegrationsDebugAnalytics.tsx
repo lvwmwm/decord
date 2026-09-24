@@ -1,15 +1,15 @@
-// Module ID: 17085
-// Function ID: 17086
+// Module ID: 17095
+// Function ID: 17096
 // Name: VibegrationsDebugAnalytics
-// Dependencies: [19, 21, 558, 568, 1119, 3682, 17072, 17074, 17071, 2]
+// Dependencies: [19, 21, 558, 568, 1119, 3714, 17082, 17084, 17081, 2]
 
-// Module 17085 (VibegrationsDebugAnalytics)
+// Module 17095 (VibegrationsDebugAnalytics)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 17071 */;
-import VibegrationsDebugLabels from "VibegrationsDebugLabels" /* 17072 */;
-import VibegrationsDebugPrimitives from "VibegrationsDebugPrimitives" /* 17074 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 17081 */;
+import VibegrationsDebugLabels from "VibegrationsDebugLabels" /* 17082 */;
+import VibegrationsDebugPrimitives from "VibegrationsDebugPrimitives" /* 17084 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -26,9 +26,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
     const _Symbol5 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const intl5 = tmp(1119).intl;
-      const stringResult = intl5.string(_modDef3682.H6PMwW);
+      const stringResult = intl5.string(_modDef3714.H6PMwW);
       const intl6 = tmp(1119).intl;
-      const stringResult1 = intl6.string(_modDef3682.TLOZ8J);
+      const stringResult1 = intl6.string(_modDef3714.TLOZ8J);
       cResult[0] = stringResult;
       cResult[1] = stringResult1;
       tmp43 = stringResult;
@@ -37,17 +37,17 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
       [tmp43, tmp44] = cResult;
     }
     if (cResult[2] !== analytics) {
-      const result = tmp(17072).analyticsUnavailableReason(analytics);
+      const result = tmp(17082).analyticsUnavailableReason(analytics);
       cResult[2] = analytics;
       cResult[3] = result;
       let tmp48 = result;
-      const tmpResult = tmp(17072);
+      const tmpResult = tmp(17082);
     } else {
       tmp48 = cResult[3];
     }
     if (cResult[4] !== tmp48) {
       const obj2 = { label: tmp43, value: tmp44, hint: tmp48 };
-      const tmp52 = React3(tmp(17074).DebugStatRow, obj2);
+      const tmp52 = React3(tmp(17084).DebugStatRow, obj2);
       cResult[4] = tmp48;
       cResult[5] = tmp52;
       let tmp50 = tmp52;
@@ -66,7 +66,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
       const _Symbol6 = Symbol;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = tmp(1119).intl;
-        const stringResult2 = intl.string(_modDef3682.H6PMwW);
+        const stringResult2 = intl.string(_modDef3714.H6PMwW);
         cResult[12] = stringResult2;
         let tmp13 = stringResult2;
       } else {
@@ -76,8 +76,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
       if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { label: tmp13, value: "\u2014", hint: null };
         const intl2 = tmp(1119).intl;
-        obj3.hint = intl2.string(_modDef3682.uAzxdh);
-        const tmp19 = React3(tmp(17074).DebugStatRow, obj3);
+        obj3.hint = intl2.string(_modDef3714.uAzxdh);
+        const tmp19 = React3(tmp(17084).DebugStatRow, obj3);
         cResult[13] = tmp19;
         let tmp16 = tmp19;
       } else {
@@ -91,18 +91,18 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
       cResult[11] = tmp16;
     }
     const forResult = Symbol.for("react.early_return_sentinel");
-    const tmpResult3 = tmp(17072);
+    const tmpResult3 = tmp(17082);
     const _Symbol3 = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
       const intl3 = tmp(1119).intl;
-      const stringResult3 = intl3.string(_modDef3682.awAqRi);
+      const stringResult3 = intl3.string(_modDef3714.awAqRi);
       cResult[14] = stringResult3;
     }
-    const analyticsMemoryValueResult = tmp(17072).analyticsMemoryValue(found);
+    const analyticsMemoryValueResult = tmp(17082).analyticsMemoryValue(found);
     found = found.cpu_ms;
-    tmp(17071).formatMs(found);
-    const DebugStatRow = tmp(17074).DebugStatRow;
-    const tmpResult4 = tmp(17071);
+    tmp(17081).formatMs(found);
+    const DebugStatRow = tmp(17084).DebugStatRow;
+    const tmpResult4 = tmp(17081);
   } else {
     const _Symbol4 = Symbol;
     if (cResult[11] !== Symbol.for("react.early_return_sentinel")) {
@@ -118,9 +118,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
             if (null != tmp5) {
               const obj4 = { label: null, value: null };
               const intl4 = tmp(1119).intl;
-              obj4.label = intl4.string(_modDef3682.WdGviA);
+              obj4.label = intl4.string(_modDef3714.WdGviA);
               obj4.value = tmp5;
-              tmp34 = React3(tmp(17074).DebugStatRow, obj4);
+              tmp34 = React3(tmp(17084).DebugStatRow, obj4);
             }
             cResult[19] = tmp5;
             cResult[20] = tmp34;
@@ -153,9 +153,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
   if ("ok" !== analytics.status) {
     const obj2 = { label: null, value: null, hint: null };
     const intl4 = util.intl;
-    obj2.label = intl4.string(_modDef3682.H6PMwW);
+    obj2.label = intl4.string(_modDef3714.H6PMwW);
     const intl5 = util.intl;
-    obj2.value = intl5.string(_modDef3682.TLOZ8J);
+    obj2.value = intl5.string(_modDef3714.TLOZ8J);
     obj2.hint = VibegrationsDebugLabels.analyticsUnavailableReason(analytics);
     return React3(VibegrationsDebugPrimitives.DebugStatRow, obj2);
   } else {
@@ -167,15 +167,15 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
     if (null == found) {
       const obj3 = { label: null, value: "\u2014", hint: null };
       const intl2 = util.intl;
-      obj3.label = intl2.string(_modDef3682.H6PMwW);
+      obj3.label = intl2.string(_modDef3714.H6PMwW);
       const intl3 = util.intl;
-      obj3.hint = intl3.string(_modDef3682.uAzxdh);
+      obj3.hint = intl3.string(_modDef3714.uAzxdh);
       return React3(VibegrationsDebugPrimitives.DebugStatRow, obj3);
     } else {
       const analyticsMemoryValueResult = VibegrationsDebugLabels.analyticsMemoryValue(found);
       const obj4 = { label: null, value: null };
       const intl6 = util.intl;
-      obj4.label = intl6.string(_modDef3682.awAqRi);
+      obj4.label = intl6.string(_modDef3714.awAqRi);
       const tmp15 = hasOwnProperty;
       const tmp16 = React4;
       const tmp17 = React3;
@@ -186,9 +186,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
       if (null != analyticsMemoryValueResult) {
         const obj = { label: null, value: null };
         const intl = tmp12(1119).intl;
-        obj.label = intl.string(tmp18(3682).WdGviA);
+        obj.label = intl.string(tmp18(3714).WdGviA);
         obj.value = analyticsMemoryValueResult;
-        tmp17Result = tmp17(tmp12(17074).DebugStatRow, obj);
+        tmp17Result = tmp17(tmp12(17084).DebugStatRow, obj);
       }
       const obj7 = { children: null };
       items[1] = tmp17Result;
@@ -206,7 +206,7 @@ export const VibegrationsDebugWorkerAnalyticsSection = ReactCompilerGating.isRea
   analytics = analytics.analytics;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let intl = tmp(1119).intl;
-    const stringResult = intl.string(_modDef3682.Pgvj3h);
+    const stringResult = intl.string(_modDef3714.Pgvj3h);
     cResult[0] = stringResult;
     let first = stringResult;
   } else {
@@ -214,19 +214,19 @@ export const VibegrationsDebugWorkerAnalyticsSection = ReactCompilerGating.isRea
   }
   if ("ok" !== analytics.status) {
     if (cResult[1] !== analytics) {
-      const result = tmp(17072).analyticsUnavailableReason(analytics);
+      const result = tmp(17082).analyticsUnavailableReason(analytics);
       cResult[1] = analytics;
       cResult[2] = result;
       let tmp22 = result;
-      const tmpResult = tmp(17072);
+      const tmpResult = tmp(17082);
     } else {
       tmp22 = cResult[2];
     }
     if (cResult[3] !== tmp22) {
       let obj2 = { title: first, children: null };
       let obj3 = { children: tmp22 };
-      obj2.children = React3(tmp(17074).DebugNote, obj3);
-      const tmp26 = React3(tmp(17074).DebugSection, obj2);
+      obj2.children = React3(tmp(17084).DebugNote, obj3);
+      const tmp26 = React3(tmp(17084).DebugSection, obj2);
       cResult[3] = tmp22;
       cResult[4] = tmp26;
       let tmp24 = tmp26;
@@ -292,7 +292,7 @@ export const VibegrationsDebugWorkerAnalyticsSection = ReactCompilerGating.isRea
     }
     const mapped = objects.map(tmp10);
     const found = mapped.filter(tmp11);
-    const DebugSection = tmp(17074).DebugSection;
+    const DebugSection = tmp(17084).DebugSection;
     if (0 === found.length) {
       class S {
         constructor(arg0) {
@@ -304,8 +304,8 @@ export const VibegrationsDebugWorkerAnalyticsSection = ReactCompilerGating.isRea
       }
       const obj4 = { children: null };
       const intl2 = tmp(1119).intl;
-      obj4.children = intl2.string(_modDef3682.uAzxdh);
-      const tmp14 = React3(tmp(17074).DebugNote, obj4);
+      obj4.children = intl2.string(_modDef3714.uAzxdh);
+      const tmp14 = React3(tmp(17084).DebugNote, obj4);
     } else {
       class S {
         constructor(arg0) {
@@ -349,12 +349,12 @@ export const VibegrationsDebugWorkerAnalyticsSection = ReactCompilerGating.isRea
 }) : ((analytics) => {
   analytics = analytics.analytics;
   let intl = util.intl;
-  const stringResult = intl.string(_modDef3682.Pgvj3h);
+  const stringResult = intl.string(_modDef3714.Pgvj3h);
   if ("ok" !== analytics.status) {
     let obj2 = { title: stringResult, children: null };
-    let obj3 = { children: tmp(17072).analyticsUnavailableReason(analytics) };
-    obj2.children = React3(tmp(17074).DebugNote, obj3);
-    return React3(tmp(17074).DebugSection, obj2);
+    let obj3 = { children: tmp(17082).analyticsUnavailableReason(analytics) };
+    obj2.children = React3(tmp(17084).DebugNote, obj3);
+    return React3(tmp(17084).DebugSection, obj2);
   } else {
     let items = analytics.objects;
     if (items == null) {
@@ -369,15 +369,15 @@ export const VibegrationsDebugWorkerAnalyticsSection = ReactCompilerGating.isRea
     if (0 === found.length) {
       const obj4 = { children: null };
       const intl2 = tmp(1119).intl;
-      obj4.children = intl2.string(_modDef3682.uAzxdh);
-      let mapped1 = tmp5(tmp(17074).DebugNote, obj4);
+      obj4.children = intl2.string(_modDef3714.uAzxdh);
+      let mapped1 = tmp5(tmp(17084).DebugNote, obj4);
     } else {
       mapped1 = found.map((label) => {
         const object = label.object;
         const obj = { label: label.label, value: null, hint: null };
         const intl = require("util").intl;
         const obj2 = { cpu: require("VibegrationsDebugFormat").formatMs(object.cpu_ms) };
-        obj.value = intl.formatToPlainString(_modDef3682.AnRynJ, obj2);
+        obj.value = intl.formatToPlainString(_modDef3714.AnRynJ, obj2);
         const obj3 = require("VibegrationsDebugFormat");
         const tmp = closure_1_3;
         const analyticsMemoryValueResult = require("VibegrationsDebugLabels").analyticsMemoryValue(object);
@@ -386,6 +386,6 @@ export const VibegrationsDebugWorkerAnalyticsSection = ReactCompilerGating.isRea
       });
     }
     obj.children = mapped1;
-    return React3(tmp(17074).DebugSection, obj);
+    return React3(tmp(17084).DebugSection, obj);
   }
 });

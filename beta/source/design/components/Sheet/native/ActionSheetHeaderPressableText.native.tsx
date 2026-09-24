@@ -1,14 +1,14 @@
-// Module ID: 9781
-// Function ID: 9782
+// Module ID: 9813
+// Function ID: 9814
 // Name: ActionSheetHeaderPressableText
-// Dependencies: [21, 4758, 558, 568, 4754, 5341, 2]
+// Dependencies: [21, 4790, 558, 568, 4786, 5373, 2]
 
-// Module 9781 (ActionSheetHeaderPressableText)
+// Module 9813 (ActionSheetHeaderPressableText)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Pressables from "Pressables" /* 5341 */;
-import createStyles from "createStyles" /* 4758 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Pressables from "Pressables" /* 5373 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ export const ActionSheetHeaderPressableText = ReactCompilerGating.isReactCompile
   }
   if (cResult[0] !== label) {
     const obj2 = { variant: "text-md/medium", color: "text-brand", children: label };
-    const tmp8 = jsx(tmp(4754).Text, { variant: "text-md/medium", color: "text-brand", children: label });
+    const tmp8 = jsx(tmp(4786).Text, { variant: "text-md/medium", color: "text-brand", children: label });
     cResult[0] = label;
     cResult[1] = tmp8;
     let tmp6 = tmp8;

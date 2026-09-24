@@ -1,15 +1,15 @@
-// Module ID: 17234
-// Function ID: 17235
+// Module ID: 17244
+// Function ID: 17245
 // Name: GroupDMRecipientLimitTitle
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 1368, 558, 568, 11711, 4462, 1119, 4754, 8938, 12330, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 1368, 558, 568, 11747, 4494, 1119, 4786, 8970, 12366, 2]
 
-// Module 17234 (GroupDMRecipientLimitTitle)
+// Module 17244 (GroupDMRecipientLimitTitle)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import useToken from "useToken" /* 4462 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11711 */;
+import useToken from "useToken" /* 4494 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11747 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 const MAX_GROUP_DM_PARTICIPANTS = fn(1078).MAX_GROUP_DM_PARTICIPANTS;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { title: { textAlign: "center", fontSize: 18 }, subtitleRow: { alignSelf: "center", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, subtitle: { textAlign: "center" }, nitroWheelIcon: null };
 const PlatformUtils = fn(1368);
 let tmp5;
@@ -104,7 +104,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                               }
                               return tmp40;
                             }
-                            const obj6 = { accessible: true, accessibilityRole: "button", accessibilityLabel: combined, hitSlop: tmp39, onPress: tmp6(12330), children: tmp29 };
+                            const obj6 = { accessible: true, accessibilityRole: "button", accessibilityLabel: combined, hitSlop: tmp39, onPress: tmp6(12366), children: tmp29 };
                             const tmp43 = timestampProducer(React3, obj6);
                             cResult[25] = tmp29;
                             cResult[26] = combined;
@@ -145,7 +145,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   }
                 }
                 const obj10 = { lineClamp: 1, variant: "text-xs/medium", color: str2, style: tmp4.subtitle, maxFontSizeMultiplier: 2, children: tmp13 };
-                const tmp24 = timestampProducer(tmp(4754).Text, obj10);
+                const tmp24 = timestampProducer(tmp(4786).Text, obj10);
                 cResult[13] = tmp4.subtitle;
                 cResult[14] = str2;
                 cResult[15] = tmp13;
@@ -162,7 +162,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp21 = token1;
           }
           const obj11 = { size: "xxs", color: tmp21, style: tmp4.nitroWheelIcon, accessible: false };
-          tmp20Result = timestampProducer(tmp(8938).NitroWheelIcon, obj11);
+          tmp20Result = timestampProducer(tmp(8970).NitroWheelIcon, obj11);
         }
         cResult[7] = tmp10;
         cResult[8] = tmp12;
@@ -174,7 +174,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj12 = { lineClamp: 1, variant: token, color: "mobile-text-heading-primary", style: tmp4.title, maxFontSizeMultiplier: 2, children: title };
-    const tmp17 = timestampProducer(tmp(4754).Text, obj12);
+    const tmp17 = timestampProducer(tmp(4786).Text, obj12);
     cResult[3] = tmp4.title;
     cResult[4] = title;
     cResult[5] = token;
@@ -220,7 +220,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       token2 = token1;
     }
     const obj7 = { size: "xxs", color: token2, style: tmp.nitroWheelIcon, accessible: false };
-    tmp15Result = tmp15(tmp2(8938).NitroWheelIcon, obj7);
+    tmp15Result = tmp15(tmp2(8970).NitroWheelIcon, obj7);
   }
   const obj8 = { children: null };
   const items1 = [tmp15Result, timestampProducer(Text_Text.Text, { lineClamp: 1, variant: "text-xs/medium", color: str2, style: tmp.subtitle, maxFontSizeMultiplier: 2, children: formatToPlainStringResult })];
@@ -234,7 +234,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj10.accessibilityLabel = "" + title + ", " + formatToPlainStringResult;
     const rect = { top: tmp5(580).space.PX_8, bottom: tmp5(580).space.PX_8, left: tmp5(580).space.PX_16, right: tmp5(580).space.PX_16 };
     obj10.hitSlop = rect;
-    obj10.onPress = tmp5(12330);
+    obj10.onPress = tmp5(12366);
     obj10.children = tmp13Result;
     let tmp15Result2 = tmp15(React3, obj10);
   } else {

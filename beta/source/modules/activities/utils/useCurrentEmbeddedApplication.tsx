@@ -1,12 +1,12 @@
-// Module ID: 9715
-// Function ID: 9716
+// Module ID: 9747
+// Function ID: 9748
 // Name: useCurrentEmbeddedApplication
-// Dependencies: [32, 558, 568, 9716, 7415, 2]
+// Dependencies: [32, 558, 568, 9748, 7447, 2]
 
-// Module 9715 (useCurrentEmbeddedApplication)
+// Module 9747 (useCurrentEmbeddedApplication)
 import c from "c" /* 568 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7415 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 9716 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7447 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 9748 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

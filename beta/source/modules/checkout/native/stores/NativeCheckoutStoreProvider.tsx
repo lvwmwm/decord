@@ -1,13 +1,13 @@
-// Module ID: 11103
-// Function ID: 11104
+// Module ID: 11139
+// Function ID: 11140
 // Name: NativeCheckoutStoreProvider
-// Dependencies: [5, 32, 19, 17, 7668, 1078, 4740, 21, 4758, 558, 568, 5813, 11104, 577, 7673, 7674, 5796, 1259, 1235, 11107, 1245, 5203, 11111, 2]
+// Dependencies: [5, 32, 19, 17, 7700, 1078, 4772, 21, 4790, 558, 568, 5845, 11140, 577, 7705, 7706, 5828, 1259, 1235, 11143, 1245, 5235, 11147, 2]
 
-// Module 11103 (NativeCheckoutStoreProvider)
+// Module 11139 (NativeCheckoutStoreProvider)
 import SentryUtilsDefault from "SentryUtils" /* 1235 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import v12 from "v1" /* 1259 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 11107 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 11143 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -16,12 +16,12 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const NativeCheckoutStore = fn(7668);
+const NativeCheckoutStore = fn(7700);
 ({ createNativeStore: closure_7, NativeCheckoutStoreContext: closure_8, NativeCheckoutStoreContextOrNull: closure_9 } = NativeCheckoutStore);
 const AnalyticEvents = fn(1078).AnalyticEvents;
-let ItemPurchaseType = fn(4740).ItemPurchaseType;
+let ItemPurchaseType = fn(4772).ItemPurchaseType;
 let jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_13 = createStyles.createStyles({ loadingSpinnerContainer: { display: "flex", alignItems: "center", justifyContent: "center", height: "100%" } });
 fn(558);
 const ReactCompilerGating = fn(558);
@@ -407,7 +407,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkoutInitPa
 }) : ((children) => {
   ({ checkoutInitParameters: require, order } = children);
   ({ paymentGateway: dependencyMap, orderRequired: asyncGeneratorStep, onOrderRetryCancellation: _slicedToArray, initialSubscriptionFacet: noop, checkoutAnalyticsFields: View, analyticsInitialStep: closure_7 } = children);
-  const contextMetadata = order(5813)(() => {
+  const contextMetadata = order(5845)(() => {
     let id;
     if (order != null) {
       id = order.id;
@@ -420,7 +420,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkoutInitPa
     const obj3 = { message: "Checkout session ID: " + id };
     return { loadId: id, startTime: Date.now() };
   });
-  redux = order(5813)(() => {
+  redux = order(5845)(() => {
     const obj = {};
     const merged = Object.assign(View);
     obj.load_id = contextMetadata.loadId;
@@ -428,7 +428,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkoutInitPa
     return obj;
   });
   value = _slicedToArray(noop.useState(() => React5({ order, checkoutInitParameters, contextMetadata, analyticsFields, paymentGateway: dependencyMap, orderRequired, onOrderRetryCancellation, initialSubscriptionFacet })), 1)[0];
-  order(5203)(() => {
+  order(5235)(() => {
     if (null != View) {
       const result = PaymentFlowStartedTriggerPoint.trackPaymentFlowStartedAnalyticsAndCTP(closure_9);
       const obj3 = {};
@@ -472,8 +472,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkoutInitPa
       const obj2 = { checkoutSucceeded: tmp2, order: null };
       ({ id: obj3.id, status: obj3.status } = orderRecord);
       obj2.order = { id: null, status: null };
-      checkoutInitParameters(11111).discardDraftOrder(obj2);
-      const obj = checkoutInitParameters(11111);
+      checkoutInitParameters(11147).discardDraftOrder(obj2);
+      const obj = checkoutInitParameters(11147);
       const obj5 = { id: null, status: null };
     }
   }, items1);

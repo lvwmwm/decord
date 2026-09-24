@@ -1,11 +1,11 @@
-// Module ID: 17045
-// Function ID: 17046
+// Module ID: 17055
+// Function ID: 17056
 // Name: VibegrationsClarificationCard
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 17046, 4754, 1119, 3682, 5824, 5188, 6846, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 17056, 4786, 1119, 3714, 5856, 5220, 6878, 2]
 
-// Module 17045 (VibegrationsClarificationCard)
+// Module 17055 (VibegrationsClarificationCard)
 import nativeDefault from "native" /* 580 */;
-import VibegrationsClarification from "VibegrationsClarification" /* 17046 */;
+import VibegrationsClarification from "VibegrationsClarification" /* 17056 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -13,7 +13,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { card: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 }, optionHeader: null, footer: null, customField: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 obj2.optionHeader = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
@@ -184,11 +184,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((clarification) =
       closure_4(obj);
       const result = VibegrationsClarification.nextClarificationStep(clarification, obj, bound);
       if (null == result) {
-        const result1 = tmp13(17046).formatClarificationAnswers(tmp15, obj);
+        const result1 = tmp13(17056).formatClarificationAnswers(tmp15, obj);
         if ("" !== result1) {
           tmp(result1);
         }
-        const tmp13Result = tmp13(17046);
+        const tmp13Result = tmp13(17056);
       } else {
         closure_6(result);
       }
@@ -235,10 +235,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((clarification) =
     let obj3 = { variant: "text-xs/semibold", color: "text-muted", children: null };
     let intl = clarification(1119).intl;
     const obj4 = { index: bound + 1, total: length };
-    obj3.children = intl.formatToPlainString(onSubmit(3682)["7bypa+"], obj4);
-    tmp14 = closure_6(clarification(4754).Text, obj3);
+    obj3.children = intl.formatToPlainString(onSubmit(3714)["7bypa+"], obj4);
+    tmp14 = closure_6(clarification(4786).Text, obj3);
   }
-  const items4 = [tmp14, closure_6(clarification(4754).Text, { variant: "text-md/semibold", color: "text-default", children: clarification.questions[bound].question }), , ];
+  const items4 = [tmp14, closure_6(clarification(4786).Text, { variant: "text-md/semibold", color: "text-default", children: clarification.questions[bound].question }), , ];
   options = tmp8.options;
   items4[2] = options.map((answer) => {
     closure_0 = answer;
@@ -287,17 +287,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((clarification) =
     if (!tmp6) {
       const obj7 = { variant: "secondary", size: "sm", text: null, onPress: null };
       let intl2 = tmp20(1119).intl;
-      obj7.text = intl2.string(onSubmit(3682).yKdgqw);
+      obj7.text = intl2.string(onSubmit(3714).yKdgqw);
       obj7.onPress = callback1;
-      tmp19Result = tmp19(tmp20(5188).Button, obj7);
+      tmp19Result = tmp19(tmp20(5220).Button, obj7);
     }
   }
   const items5 = [tmp19Result, ];
   const obj8 = { size: "md", containerStyle: tmp.customField, placeholder: null, accessibilityLabel: null, value: null, onChange: null, onSubmitEditing: null, returnKeyType: "send" };
   const intl3 = tmp20(1119).intl;
-  obj8.placeholder = intl3.string(onSubmit(3682).qifsdL);
+  obj8.placeholder = intl3.string(onSubmit(3714).qifsdL);
   const intl4 = tmp20(1119).intl;
-  obj8.accessibilityLabel = intl4.formatToPlainString(onSubmit(3682).XHESTL, { question: clarification.questions[bound].question });
+  obj8.accessibilityLabel = intl4.formatToPlainString(onSubmit(3714).XHESTL, { question: clarification.questions[bound].question });
   obj8.value = str;
   obj8.onChange = function onChange(arg0) {
     closure_0 = arg0;
@@ -309,7 +309,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((clarification) =
     });
   };
   obj8.onSubmitEditing = callback2;
-  items5[1] = closure_6(clarification(6846).TextInput, obj8);
+  items5[1] = closure_6(clarification(6878).TextInput, obj8);
   obj6.children = items5;
   items4[3] = closure_7(closure_5, obj6);
   obj2.children = items4;

@@ -1,20 +1,20 @@
-// Module ID: 10647
-// Function ID: 10648
+// Module ID: 10683
+// Function ID: 10684
 // Name: RoleLabel
-// Dependencies: [19, 17, 4750, 21, 4758, 558, 568, 504, 1181, 8876, 2]
+// Dependencies: [19, 17, 4782, 21, 4790, 558, 568, 504, 1181, 8908, 2]
 
-// Module 10647 (RoleLabel)
+// Module 10683 (RoleLabel)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import Form from "Form" /* 8876 */;
+import Form from "Form" /* 8908 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ container: { display: "flex", flexDirection: "row" }, roleDot: { marginRight: 4 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -78,7 +78,7 @@ export const RoleLabel = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
             tmp21 = tmp24;
           }
           const obj4 = { style: tmp9, text: name };
-          const tmp20 = React4(tmp(8876).FormLabel, obj4);
+          const tmp20 = React4(tmp(8908).FormLabel, obj4);
           cResult[10] = tmp9;
           cResult[11] = name;
           cResult[12] = tmp20;

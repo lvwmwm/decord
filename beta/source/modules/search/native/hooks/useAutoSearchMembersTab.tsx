@@ -1,18 +1,18 @@
-// Module ID: 17200
-// Function ID: 17201
+// Module ID: 17210
+// Function ID: 17211
 // Name: useAutoSearchMembersTab
-// Dependencies: [19, 12487, 12501, 1078, 558, 568, 12, 12488, 12509, 12486, 2]
+// Dependencies: [19, 12523, 12537, 1078, 558, 568, 12, 12524, 12545, 12522, 2]
 
-// Module 17200 (useAutoSearchMembersTab)
+// Module 17210 (useAutoSearchMembersTab)
 import _mod12 from "module_12" /* 12 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12486 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12522 */;
 import noop from "module_19" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 12487 */;
+import SearchQueryStore from "SearchQueryStore" /* 12523 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_5 = fn(12501).SEARCH_TEXT_INPUT_DEBOUNCE_TIME;
+let closure_5 = fn(12537).SEARCH_TEXT_INPUT_DEBOUNCE_TIME;
 const SearchTypes = fn(1078).SearchTypes;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -31,7 +31,7 @@ export const useAutoSearchMembersTab = ReactCompilerGating.isReactCompilerEnable
     if (cResult[4] !== arg0) {
       const fn2 = function h() {
         return () => {
-          const result = closure_1(12509).cleanupGuildMemberTab(closure_1_0);
+          const result = closure_1(12545).cleanupGuildMemberTab(closure_1_0);
         };
       };
       const items = [arg0];
@@ -50,7 +50,7 @@ export const useAutoSearchMembersTab = ReactCompilerGating.isReactCompilerEnable
     if (!closure_1) {
       const debounceResult = _mod12.debounce((searchQueryString) => {
         if (!autocompleteVisible.isAutocompleteVisible(closure_1_0)) {
-          const guildIdFromSearchContext = closure_0(12488).getGuildIdFromSearchContext(tmp);
+          const guildIdFromSearchContext = closure_0(12524).getGuildIdFromSearchContext(tmp);
           if (null != guildIdFromSearchContext) {
             const channelIds = autocompleteVisible.getChannelIds(tmp);
             let tmp8 = null;
@@ -68,10 +68,10 @@ export const useAutoSearchMembersTab = ReactCompilerGating.isReactCompilerEnable
               tmp12 = tmp8;
             }
             obj4.threadId = tmp12;
-            closure_1(12509).searchGuildMemberTab(obj4);
-            const obj3 = closure_1(12509);
+            closure_1(12545).searchGuildMemberTab(obj4);
+            const obj3 = closure_1(12545);
           }
-          const obj2 = closure_0(12488);
+          const obj2 = closure_0(12524);
         }
       }, closure_5);
       return SearchPlatformUtilsDefault.subscribeTextInputValue(closure_0, debounceResult);
@@ -92,7 +92,7 @@ export const useAutoSearchMembersTab = ReactCompilerGating.isReactCompilerEnable
     if (!closure_1) {
       const debounceResult = _mod12.debounce((searchQueryString) => {
         if (!autocompleteVisible.isAutocompleteVisible(closure_1_0)) {
-          const guildIdFromSearchContext = closure_0(12488).getGuildIdFromSearchContext(tmp);
+          const guildIdFromSearchContext = closure_0(12524).getGuildIdFromSearchContext(tmp);
           if (null != guildIdFromSearchContext) {
             const channelIds = autocompleteVisible.getChannelIds(tmp);
             let tmp8 = null;
@@ -110,10 +110,10 @@ export const useAutoSearchMembersTab = ReactCompilerGating.isReactCompilerEnable
               tmp12 = tmp8;
             }
             obj4.threadId = tmp12;
-            closure_1(12509).searchGuildMemberTab(obj4);
-            const obj3 = closure_1(12509);
+            closure_1(12545).searchGuildMemberTab(obj4);
+            const obj3 = closure_1(12545);
           }
-          const obj2 = closure_0(12488);
+          const obj2 = closure_0(12524);
         }
       }, closure_5);
       return SearchPlatformUtilsDefault.subscribeTextInputValue(closure_0, debounceResult);
@@ -121,6 +121,6 @@ export const useAutoSearchMembersTab = ReactCompilerGating.isReactCompilerEnable
   }, items);
   const items1 = [arg0];
   const effect1 = noop.useEffect(() => () => {
-    const result = closure_1(12509).cleanupGuildMemberTab(closure_1_0);
+    const result = closure_1(12545).cleanupGuildMemberTab(closure_1_0);
   }, items1);
 });

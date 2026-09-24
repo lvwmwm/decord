@@ -1,23 +1,23 @@
-// Module ID: 17084
-// Function ID: 17085
+// Module ID: 17094
+// Function ID: 17095
 // Name: VibegrationsDebugWorkerTab
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 17074, 1119, 3682, 17072, 17071, 17085, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 17084, 1119, 3714, 17082, 17081, 17095, 2]
 
-// Module 17084 (VibegrationsDebugWorkerTab)
+// Module 17094 (VibegrationsDebugWorkerTab)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 17071 */;
-import VibegrationsDebugLabels from "VibegrationsDebugLabels" /* 17072 */;
-import VibegrationsDebugPrimitives from "VibegrationsDebugPrimitives" /* 17074 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 17081 */;
+import VibegrationsDebugLabels from "VibegrationsDebugLabels" /* 17082 */;
+import VibegrationsDebugPrimitives from "VibegrationsDebugPrimitives" /* 17084 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { tab: { gap: nativeDefault.space.PX_24 } };
 let closure_8 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -34,8 +34,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (arr.length <= 0) {
           const obj2 = { children: null };
           const intl = tmp(1119).intl;
-          obj2.children = intl.string(_modDef3682.W4hcKL);
-          tmp19 = hasOwnProperty(tmp(17074).DebugNote, obj2);
+          obj2.children = intl.string(_modDef3714.W4hcKL);
+          tmp19 = hasOwnProperty(tmp(17084).DebugNote, obj2);
         }
         cResult[14] = arr;
         cResult[15] = tmp19;
@@ -50,7 +50,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp22;
       }
       const obj3 = { title, children: tmp18 };
-      const tmp24 = hasOwnProperty(tmp(17074).DebugSection, obj3);
+      const tmp24 = hasOwnProperty(tmp(17084).DebugSection, obj3);
       cResult[16] = tmp18;
       cResult[17] = title;
       cResult[18] = tmp24;
@@ -124,8 +124,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (items.length <= 0) {
     const obj4 = { children: null };
     const intl = tmp8(1119).intl;
-    obj4.children = intl.string(_modDef3682.W4hcKL);
-    items = tmp7(tmp8(17074).DebugNote, obj4);
+    obj4.children = intl.string(_modDef3714.W4hcKL);
+    items = tmp7(tmp8(17084).DebugNote, obj4);
   }
   obj3.children = items;
   return hasOwnProperty(VibegrationsDebugPrimitives.DebugSection, obj3);
@@ -137,21 +137,21 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (bot.ever_started) {
     if (cResult[5] !== env) {
       const intl2 = tmp(1119).intl;
-      const obj2 = { env: tmp(17072).debugEnvLabel(env) };
-      const formatToPlainStringResult = intl2.formatToPlainString(_modDef3682.f8ix3w, obj2);
+      const obj2 = { env: tmp(17082).debugEnvLabel(env) };
+      const formatToPlainStringResult = intl2.formatToPlainString(_modDef3714.f8ix3w, obj2);
       cResult[5] = env;
       cResult[6] = formatToPlainStringResult;
       let tmp13 = formatToPlainStringResult;
-      const tmpResult = tmp(17072);
+      const tmpResult = tmp(17082);
     } else {
       tmp13 = cResult[6];
     }
     if (cResult[7] !== bot.connected) {
-      const debugYesNoResult = tmp(17072).debugYesNo(bot.connected);
+      const debugYesNoResult = tmp(17082).debugYesNo(bot.connected);
       cResult[7] = bot.connected;
       cResult[8] = debugYesNoResult;
       let tmp16 = debugYesNoResult;
-      const tmpResult9 = tmp(17072);
+      const tmpResult9 = tmp(17082);
     } else {
       tmp16 = cResult[8];
     }
@@ -178,18 +178,18 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const _Symbol2 = Symbol;
           if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
             const intl3 = tmp(1119).intl;
-            const stringResult = intl3.string(_modDef3682["0AB7l3"]);
+            const stringResult = intl3.string(_modDef3714["0AB7l3"]);
             cResult[14] = stringResult;
             let tmp26 = stringResult;
           } else {
             tmp26 = cResult[14];
           }
           if (cResult[15] !== bot.events_received) {
-            const formatCountResult = tmp(17071).formatCount(bot.events_received);
+            const formatCountResult = tmp(17081).formatCount(bot.events_received);
             cResult[15] = bot.events_received;
             cResult[16] = formatCountResult;
             let tmp29 = formatCountResult;
-            const tmpResult10 = tmp(17071);
+            const tmpResult10 = tmp(17081);
           } else {
             tmp29 = cResult[16];
           }
@@ -204,24 +204,24 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               const _Symbol3 = Symbol;
               if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
                 const intl4 = tmp(1119).intl;
-                const stringResult1 = intl4.string(_modDef3682.ElaQ0A);
+                const stringResult1 = intl4.string(_modDef3714.ElaQ0A);
                 cResult[23] = stringResult1;
                 let tmp36 = stringResult1;
               } else {
                 tmp36 = cResult[23];
               }
               if (cResult[24] !== bot.guild_count) {
-                const formatCountResult1 = tmp(17071).formatCount(bot.guild_count);
+                const formatCountResult1 = tmp(17081).formatCount(bot.guild_count);
                 cResult[24] = bot.guild_count;
                 cResult[25] = formatCountResult1;
                 let tmp39 = formatCountResult1;
-                const tmpResult11 = tmp(17071);
+                const tmpResult11 = tmp(17081);
               } else {
                 tmp39 = cResult[25];
               }
               if (cResult[26] !== tmp39) {
                 const obj3 = { label: tmp36, value: tmp39 };
-                const tmp43 = hasOwnProperty(tmp(17074).DebugStatRow, obj3);
+                const tmp43 = hasOwnProperty(tmp(17084).DebugStatRow, obj3);
                 cResult[26] = tmp39;
                 cResult[27] = tmp43;
                 let tmp41 = tmp43;
@@ -231,18 +231,18 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               const _Symbol4 = Symbol;
               if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
                 const intl5 = tmp(1119).intl;
-                const stringResult2 = intl5.string(_modDef3682.SJtBTN);
+                const stringResult2 = intl5.string(_modDef3714.SJtBTN);
                 cResult[28] = stringResult2;
                 let tmp44 = stringResult2;
               } else {
                 tmp44 = cResult[28];
               }
               if (cResult[29] !== bot.reconnects) {
-                const formatCountResult2 = tmp(17071).formatCount(bot.reconnects);
+                const formatCountResult2 = tmp(17081).formatCount(bot.reconnects);
                 cResult[29] = bot.reconnects;
                 cResult[30] = formatCountResult2;
                 let tmp47 = formatCountResult2;
-                const tmpResult12 = tmp(17071);
+                const tmpResult12 = tmp(17081);
               } else {
                 tmp47 = cResult[30];
               }
@@ -259,10 +259,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     if (bot.dispatch_errors > 0) {
                       const obj4 = { label: null, value: null, critical: true };
                       const intl7 = tmp(1119).intl;
-                      obj4.label = intl7.string(_modDef3682.N4l504);
-                      obj4.value = tmp(17071).formatCount(bot.dispatch_errors);
-                      tmp56 = hasOwnProperty(tmp(17074).DebugStatRow, obj4);
-                      const tmpResult13 = tmp(17071);
+                      obj4.label = intl7.string(_modDef3714.N4l504);
+                      obj4.value = tmp(17081).formatCount(bot.dispatch_errors);
+                      tmp56 = hasOwnProperty(tmp(17084).DebugStatRow, obj4);
+                      const tmpResult13 = tmp(17081);
                     }
                     cResult[37] = bot.dispatch_errors;
                     cResult[38] = tmp56;
@@ -295,7 +295,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   tmp59 = tmp62;
                 }
                 const obj6 = { label: tmp44, value: tmp47, hint: tmp49 };
-                const tmp54 = hasOwnProperty(tmp(17074).DebugStatRow, obj6);
+                const tmp54 = hasOwnProperty(tmp(17084).DebugStatRow, obj6);
                 cResult[34] = tmp47;
                 cResult[35] = tmp49;
                 cResult[36] = tmp54;
@@ -305,9 +305,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               if (null != bot.last_close_code) {
                 if (null != bot.last_close_at) {
                   const intl6 = tmp(1119).intl;
-                  const obj7 = { code: bot.last_close_code, time: tmp(17071).formatObservedAt(bot.last_close_at) };
-                  formatToPlainStringResult1 = intl6.formatToPlainString(_modDef3682.bSzLue, obj7);
-                  const tmpResult14 = tmp(17071);
+                  const obj7 = { code: bot.last_close_code, time: tmp(17081).formatObservedAt(bot.last_close_at) };
+                  formatToPlainStringResult1 = intl6.formatToPlainString(_modDef3714.bSzLue, obj7);
+                  const tmpResult14 = tmp(17081);
                 }
               }
               cResult[31] = bot.last_close_at;
@@ -316,7 +316,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               tmp49 = formatToPlainStringResult1;
             }
             const obj8 = { label: tmp26, value: tmp29, hint: tmp31 };
-            const tmp35 = hasOwnProperty(tmp(17074).DebugStatRow, obj8);
+            const tmp35 = hasOwnProperty(tmp(17084).DebugStatRow, obj8);
             cResult[20] = tmp29;
             cResult[21] = tmp31;
             cResult[22] = tmp35;
@@ -326,8 +326,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (null != bot.last_event_type) {
             if (null != bot.last_event_at) {
               const _HermesInternal = HermesInternal;
-              combined = "" + bot.last_event_type + " \u00B7 " + tmp(17071).formatObservedAt(bot.last_event_at);
-              const tmpResult15 = tmp(17071);
+              combined = "" + bot.last_event_type + " \u00B7 " + tmp(17081).formatObservedAt(bot.last_event_at);
+              const tmpResult15 = tmp(17081);
             }
           }
           cResult[17] = bot.last_event_at;
@@ -338,7 +338,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj9 = { label: tmp13, value: tmp16, critical: tmp18, hint: fatal_reason };
-    const tmp24 = hasOwnProperty(tmp(17074).DebugStatRow, obj9);
+    const tmp24 = hasOwnProperty(tmp(17084).DebugStatRow, obj9);
     cResult[9] = tmp13;
     cResult[10] = tmp16;
     cResult[11] = tmp18;
@@ -347,18 +347,18 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp22 = tmp24;
   } else {
     if (cResult[0] !== env) {
-      const debugEnvLabelResult = tmp(17072).debugEnvLabel(env);
+      const debugEnvLabelResult = tmp(17082).debugEnvLabel(env);
       cResult[0] = env;
       cResult[1] = debugEnvLabelResult;
       let tmp4 = debugEnvLabelResult;
-      const tmpResult16 = tmp(17072);
+      const tmpResult16 = tmp(17082);
     } else {
       tmp4 = cResult[1];
     }
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1119).intl;
-      const stringResult3 = intl.string(_modDef3682.C6xjtD);
+      const stringResult3 = intl.string(_modDef3714.C6xjtD);
       cResult[2] = stringResult3;
       let tmp7 = stringResult3;
     } else {
@@ -366,7 +366,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[3] !== tmp4) {
       const obj10 = { label: tmp4, value: tmp7 };
-      const tmp12 = hasOwnProperty(tmp(17074).DebugStatRow, obj10);
+      const tmp12 = hasOwnProperty(tmp(17084).DebugStatRow, obj10);
       cResult[3] = tmp4;
       cResult[4] = tmp12;
       let tmp10 = tmp12;
@@ -381,7 +381,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { label: null, value: null, critical: null, hint: null };
     const intl2 = util.intl;
     const obj4 = { env: VibegrationsDebugLabels.debugEnvLabel(env) };
-    obj3.label = intl2.formatToPlainString(_modDef3682.f8ix3w, obj4);
+    obj3.label = intl2.formatToPlainString(_modDef3714.f8ix3w, obj4);
     const tmp6 = React5;
     const tmp7 = timestampProducer;
     obj3.value = VibegrationsDebugLabels.debugYesNo(bot.connected);
@@ -404,36 +404,36 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items = [hasOwnProperty(VibegrationsDebugPrimitives.DebugStatRow, obj3), , , , ];
     const obj7 = { label: null, value: null, hint: null };
     const intl3 = tmp9(1119).intl;
-    obj7.label = intl3.string(_modDef3682["0AB7l3"]);
+    obj7.label = intl3.string(_modDef3714["0AB7l3"]);
     obj7.value = VibegrationsDebugFormat.formatCount(bot.events_received);
     let combined;
     if (null != bot.last_event_type) {
       if (null != bot.last_event_at) {
         const _HermesInternal = HermesInternal;
-        combined = "" + bot.last_event_type + " \u00B7 " + tmp9(17071).formatObservedAt(bot.last_event_at);
-        const tmp9Result6 = tmp9(17071);
+        combined = "" + bot.last_event_type + " \u00B7 " + tmp9(17081).formatObservedAt(bot.last_event_at);
+        const tmp9Result6 = tmp9(17081);
       }
     }
     obj7.hint = combined;
     items[1] = hasOwnProperty(VibegrationsDebugPrimitives.DebugStatRow, obj7);
     const obj8 = { label: null, value: null };
     const intl4 = tmp9(1119).intl;
-    obj8.label = intl4.string(_modDef3682.ElaQ0A);
+    obj8.label = intl4.string(_modDef3714.ElaQ0A);
     const tmp9Result = VibegrationsDebugFormat;
     obj8.value = VibegrationsDebugFormat.formatCount(bot.guild_count);
     items[2] = hasOwnProperty(VibegrationsDebugPrimitives.DebugStatRow, obj8);
     const obj9 = { label: null, value: null, hint: null };
     const intl5 = tmp9(1119).intl;
-    obj9.label = intl5.string(_modDef3682.SJtBTN);
+    obj9.label = intl5.string(_modDef3714.SJtBTN);
     const tmp9Result7 = VibegrationsDebugFormat;
     obj9.value = VibegrationsDebugFormat.formatCount(bot.reconnects);
     let formatToPlainStringResult;
     if (null != bot.last_close_code) {
       if (null != bot.last_close_at) {
         const intl6 = tmp9(1119).intl;
-        const obj10 = { code: bot.last_close_code, time: tmp9(17071).formatObservedAt(bot.last_close_at) };
-        formatToPlainStringResult = intl6.formatToPlainString(tmp11(3682).bSzLue, obj10);
-        const tmp9Result9 = tmp9(17071);
+        const obj10 = { code: bot.last_close_code, time: tmp9(17081).formatObservedAt(bot.last_close_at) };
+        formatToPlainStringResult = intl6.formatToPlainString(tmp11(3714).bSzLue, obj10);
+        const tmp9Result9 = tmp9(17081);
       }
     }
     obj9.hint = formatToPlainStringResult;
@@ -442,10 +442,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (bot.dispatch_errors > 0) {
       const obj11 = { label: null, value: null, critical: true };
       const intl7 = tmp9(1119).intl;
-      obj11.label = intl7.string(tmp11(3682).N4l504);
-      obj11.value = tmp9(17071).formatCount(bot.dispatch_errors);
-      tmp8Result = tmp8(tmp9(17074).DebugStatRow, obj11);
-      const tmp9Result10 = tmp9(17071);
+      obj11.label = intl7.string(tmp11(3714).N4l504);
+      obj11.value = tmp9(17081).formatCount(bot.dispatch_errors);
+      tmp8Result = tmp8(tmp9(17084).DebugStatRow, obj11);
+      const tmp9Result10 = tmp9(17081);
     }
     const obj12 = { children: null };
     items[4] = tmp8Result;
@@ -455,7 +455,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     const obj = { label: VibegrationsDebugLabels.debugEnvLabel(env), value: null };
     const intl = util.intl;
-    obj.value = intl.string(_modDef3682.C6xjtD);
+    obj.value = intl.string(_modDef3714.C6xjtD);
     tmp6Result = hasOwnProperty(VibegrationsDebugPrimitives.DebugStatRow, obj);
   }
   return tmp6Result;
@@ -466,11 +466,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ env, metrics: since } = arg0);
   const sum = since.status_4xx + since.status_5xx;
   if (cResult[0] !== env) {
-    const debugEnvLabelResult = tmp(17072).debugEnvLabel(env);
+    const debugEnvLabelResult = tmp(17082).debugEnvLabel(env);
     cResult[0] = env;
     cResult[1] = debugEnvLabelResult;
     let tmp5 = debugEnvLabelResult;
-    const tmpResult = tmp(17072);
+    const tmpResult = tmp(17082);
   } else {
     tmp5 = cResult[1];
   }
@@ -492,7 +492,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj2 = { label: tmp5, value: tmp7, critical: tmp9 > 0, hint: cResult[8] };
-          const tmp19 = hasOwnProperty(tmp(17074).DebugStatRow, obj2);
+          const tmp19 = hasOwnProperty(tmp(17084).DebugStatRow, obj2);
           cResult[9] = tmp5;
           cResult[10] = tmp7;
           cResult[11] = tmp9 > 0;
@@ -509,14 +509,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           str = "network";
         }
         obj3.status = str;
-        obj3.time = tmp(17071).formatObservedAt(since.last_failure.at);
-        let formatToPlainStringResult = intl3.formatToPlainString(_modDef3682["0ayoy+"], obj3);
-        const tmpResult5 = tmp(17071);
+        obj3.time = tmp(17081).formatObservedAt(since.last_failure.at);
+        let formatToPlainStringResult = intl3.formatToPlainString(_modDef3714["0ayoy+"], obj3);
+        const tmpResult5 = tmp(17081);
       } else {
         const intl2 = tmp(1119).intl;
-        const obj4 = { time: tmp(17071).formatObservedAt(since.since) };
-        formatToPlainStringResult = intl2.formatToPlainString(_modDef3682["1PdrB1"], obj4);
-        const tmpResult6 = tmp(17071);
+        const obj4 = { time: tmp(17081).formatObservedAt(since.since) };
+        formatToPlainStringResult = intl2.formatToPlainString(_modDef3714["1PdrB1"], obj4);
+        const tmpResult6 = tmp(17081);
       }
       ({ last_failure: tmp3[6], since } = since);
       cResult[7] = since;
@@ -528,7 +528,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj5.requests = VibegrationsDebugFormat.formatCount(since.requests);
   const tmpResult7 = VibegrationsDebugFormat;
   obj5.failures = VibegrationsDebugFormat.formatCount(sum + since.errors);
-  const formatToPlainStringResult1 = intl.formatToPlainString(_modDef3682.Yur5Zm, obj5);
+  const formatToPlainStringResult1 = intl.formatToPlainString(_modDef3714.Yur5Zm, obj5);
   cResult[2] = sum;
   cResult[3] = since.errors;
   cResult[4] = since.requests;
@@ -543,7 +543,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp2 = hasOwnProperty;
   obj3.requests = VibegrationsDebugFormat.formatCount(metrics.requests);
   obj3.failures = VibegrationsDebugFormat.formatCount(sum + metrics.errors);
-  obj.value = intl.formatToPlainString(_modDef3682.Yur5Zm, obj3);
+  obj.value = intl.formatToPlainString(_modDef3714.Yur5Zm, obj3);
   obj.critical = metrics.errors + metrics.status_5xx > 0;
   if (null != metrics.last_failure) {
     const intl3 = tmp3(1119).intl;
@@ -553,14 +553,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       str = "network";
     }
     obj6.status = str;
-    obj6.time = tmp3(17071).formatObservedAt(metrics.last_failure.at);
-    let formatToPlainStringResult = intl3.formatToPlainString(tmp5(3682)["0ayoy+"], obj6);
-    const tmp3Result = tmp3(17071);
+    obj6.time = tmp3(17081).formatObservedAt(metrics.last_failure.at);
+    let formatToPlainStringResult = intl3.formatToPlainString(tmp5(3714)["0ayoy+"], obj6);
+    const tmp3Result = tmp3(17081);
   } else {
     const intl2 = tmp3(1119).intl;
-    const obj7 = { time: tmp3(17071).formatObservedAt(metrics.since) };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp5(3682)["1PdrB1"], obj7);
-    const tmp3Result2 = tmp3(17071);
+    const obj7 = { time: tmp3(17081).formatObservedAt(metrics.since) };
+    formatToPlainStringResult = intl2.formatToPlainString(tmp5(3714)["1PdrB1"], obj7);
+    const tmp3Result2 = tmp3(17081);
   }
   obj.hint = formatToPlainStringResult;
   return tmp2(VibegrationsDebugPrimitives.DebugStatRow, obj);
@@ -572,21 +572,21 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((env) => {
   let schedules = env.runtime;
   if (cResult[0] !== env) {
     let intl = tmp(1119).intl;
-    const obj2 = { env: tmp(17072).debugEnvLabel(env) };
-    let formatToPlainStringResult = intl.formatToPlainString(_modDef3682.BVORfc, obj2);
+    const obj2 = { env: tmp(17082).debugEnvLabel(env) };
+    let formatToPlainStringResult = intl.formatToPlainString(_modDef3714.BVORfc, obj2);
     cResult[0] = env;
     cResult[1] = formatToPlainStringResult;
     let tmp4 = formatToPlainStringResult;
-    const tmpResult = tmp(17072);
+    const tmpResult = tmp(17082);
   } else {
     tmp4 = cResult[1];
   }
   if (cResult[2] !== schedules.connections) {
-    const formatCountResult = tmp(17071).formatCount(schedules.connections);
+    const formatCountResult = tmp(17081).formatCount(schedules.connections);
     cResult[2] = schedules.connections;
     cResult[3] = formatCountResult;
     let tmp7 = formatCountResult;
-    const tmpResult2 = tmp(17071);
+    const tmpResult2 = tmp(17081);
   } else {
     tmp7 = cResult[3];
   }
@@ -616,7 +616,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((env) => {
       const fn = function _(id) {
         const obj = { label: null, value: null, hint: null };
         const intl = util.intl;
-        obj.label = intl.formatToPlainString(_modDef3682.NQxkhU, { id: id.id });
+        obj.label = intl.formatToPlainString(_modDef3714.NQxkhU, { id: id.id });
         obj.value = id.trigger;
         if (null != id.pending_state) {
           const intl3 = tmp2(1119).intl;
@@ -626,12 +626,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((env) => {
             pending_attempt = 1;
           }
           obj3.attempt = pending_attempt;
-          let formatToPlainStringResult = intl3.formatToPlainString(tmp4(3682).P8lBrO, obj3);
+          let formatToPlainStringResult = intl3.formatToPlainString(tmp4(3714).P8lBrO, obj3);
         } else if (null != id.next_run_at) {
           const intl2 = tmp2(1119).intl;
-          const obj4 = { time: tmp2(17071).formatObservedAt(id.next_run_at) };
-          formatToPlainStringResult = intl2.formatToPlainString(tmp4(3682)["7ecbr3"], obj4);
-          const tmp2Result = tmp2(17071);
+          const obj4 = { time: tmp2(17081).formatObservedAt(id.next_run_at) };
+          formatToPlainStringResult = intl2.formatToPlainString(tmp4(3714)["7ecbr3"], obj4);
+          const tmp2Result = tmp2(17081);
         }
         obj.hint = formatToPlainStringResult;
         return hasOwnProperty(VibegrationsDebugPrimitives.DebugStatRow, obj, "" + env + "-" + id.id);
@@ -649,7 +649,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((env) => {
     cResult[8] = schedules;
     cResult[9] = mapped;
   }
-  const tmp10 = closure_5(env(17074).DebugStatRow, { label: tmp4, value: tmp7 });
+  const tmp10 = closure_5(env(17084).DebugStatRow, { label: tmp4, value: tmp7 });
   cResult[4] = tmp4;
   cResult[5] = tmp7;
   cResult[6] = tmp10;
@@ -660,16 +660,16 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((env) => {
   let obj = { children: null };
   const obj2 = { label: null, value: null };
   let intl = env(1119).intl;
-  let obj3 = { env: env(17072).debugEnvLabel(env) };
-  obj2.label = intl.formatToPlainString(_modDef3682.BVORfc, obj3);
-  let obj4 = env(17072);
-  obj2.value = env(17071).formatCount(runtime.connections);
-  const items = [closure_5(env(17074).DebugStatRow, obj2), ];
+  let obj3 = { env: env(17082).debugEnvLabel(env) };
+  obj2.label = intl.formatToPlainString(_modDef3714.BVORfc, obj3);
+  let obj4 = env(17082);
+  obj2.value = env(17081).formatCount(runtime.connections);
+  const items = [closure_5(env(17084).DebugStatRow, obj2), ];
   const schedules = runtime.schedules;
   items[1] = schedules.map((id) => {
     const obj = { label: null, value: null, hint: null };
     const intl = util.intl;
-    obj.label = intl.formatToPlainString(_modDef3682.NQxkhU, { id: id.id });
+    obj.label = intl.formatToPlainString(_modDef3714.NQxkhU, { id: id.id });
     obj.value = id.trigger;
     if (null != id.pending_state) {
       const intl3 = tmp2(1119).intl;
@@ -679,12 +679,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((env) => {
         pending_attempt = 1;
       }
       obj3.attempt = pending_attempt;
-      let formatToPlainStringResult = intl3.formatToPlainString(tmp4(3682).P8lBrO, obj3);
+      let formatToPlainStringResult = intl3.formatToPlainString(tmp4(3714).P8lBrO, obj3);
     } else if (null != id.next_run_at) {
       const intl2 = tmp2(1119).intl;
-      const obj4 = { time: tmp2(17071).formatObservedAt(id.next_run_at) };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp4(3682)["7ecbr3"], obj4);
-      const tmp2Result = tmp2(17071);
+      const obj4 = { time: tmp2(17081).formatObservedAt(id.next_run_at) };
+      formatToPlainStringResult = intl2.formatToPlainString(tmp4(3714)["7ecbr3"], obj4);
+      const tmp2Result = tmp2(17081);
     }
     obj.hint = formatToPlainStringResult;
     return hasOwnProperty(VibegrationsDebugPrimitives.DebugStatRow, obj, "" + env + "-" + id.id);
@@ -697,11 +697,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = c.c(10);
   ({ env, metrics } = arg0);
   if (cResult[0] !== env) {
-    const debugEnvLabelResult = tmp(17072).debugEnvLabel(env);
+    const debugEnvLabelResult = tmp(17082).debugEnvLabel(env);
     cResult[0] = env;
     cResult[1] = debugEnvLabelResult;
     let tmp4 = debugEnvLabelResult;
-    const tmpResult = tmp(17072);
+    const tmpResult = tmp(17082);
   } else {
     tmp4 = cResult[1];
   }
@@ -720,7 +720,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj2 = { label: tmp4, value: tmp6, critical: metrics.errors > 0, hint: metrics.last_model };
-    const tmp11 = hasOwnProperty(tmp(17074).DebugStatRow, obj2);
+    const tmp11 = hasOwnProperty(tmp(17084).DebugStatRow, obj2);
     cResult[5] = metrics.last_model;
     cResult[6] = tmp4;
     cResult[7] = tmp6;
@@ -733,7 +733,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj3.calls = VibegrationsDebugFormat.formatCount(metrics.calls);
   const tmpResult3 = VibegrationsDebugFormat;
   obj3.errors = VibegrationsDebugFormat.formatCount(metrics.errors);
-  const formatToPlainStringResult = intl.formatToPlainString(_modDef3682.voXL2a, obj3);
+  const formatToPlainStringResult = intl.formatToPlainString(_modDef3714.voXL2a, obj3);
   cResult[2] = metrics.calls;
   cResult[3] = metrics.errors;
   cResult[4] = formatToPlainStringResult;
@@ -745,7 +745,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj3 = { calls: null, errors: null };
   obj3.calls = VibegrationsDebugFormat.formatCount(metrics.calls);
   obj3.errors = VibegrationsDebugFormat.formatCount(metrics.errors);
-  obj.value = intl.formatToPlainString(_modDef3682.voXL2a, obj3);
+  obj.value = intl.formatToPlainString(_modDef3714.voXL2a, obj3);
   obj.critical = metrics.errors > 0;
   obj.hint = metrics.last_model;
   return hasOwnProperty(VibegrationsDebugPrimitives.DebugStatRow, obj);
@@ -759,29 +759,29 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const _Symbol3 = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = tmp(1119).intl;
-        const stringResult = intl.string(_modDef3682.KOnL3g);
+        const stringResult = intl.string(_modDef3714.KOnL3g);
         cResult[3] = stringResult;
         let tmp4 = stringResult;
       } else {
         tmp4 = cResult[3];
       }
       if (cResult[4] !== metrics.requests) {
-        const formatCountResult = tmp(17071).formatCount(metrics.requests);
+        const formatCountResult = tmp(17081).formatCount(metrics.requests);
         cResult[4] = metrics.requests;
         cResult[5] = formatCountResult;
         let tmp7 = formatCountResult;
-        const tmpResult = tmp(17071);
+        const tmpResult = tmp(17081);
       } else {
         tmp7 = cResult[5];
       }
       if (cResult[6] !== metrics.since) {
         const intl2 = tmp(1119).intl;
-        const obj2 = { time: tmp(17071).formatObservedAt(metrics.since) };
-        const formatToPlainStringResult = intl2.formatToPlainString(_modDef3682["1PdrB1"], obj2);
+        const obj2 = { time: tmp(17081).formatObservedAt(metrics.since) };
+        const formatToPlainStringResult = intl2.formatToPlainString(_modDef3714["1PdrB1"], obj2);
         cResult[6] = metrics.since;
         cResult[7] = formatToPlainStringResult;
         let tmp9 = formatToPlainStringResult;
-        const tmpResult10 = tmp(17071);
+        const tmpResult10 = tmp(17081);
       } else {
         tmp9 = cResult[7];
       }
@@ -792,18 +792,18 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const _Symbol = Symbol;
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
           const intl3 = tmp(1119).intl;
-          const stringResult1 = intl3.string(_modDef3682.CjPhyY);
+          const stringResult1 = intl3.string(_modDef3714.CjPhyY);
           cResult[11] = stringResult1;
           let tmp15 = stringResult1;
         } else {
           tmp15 = cResult[11];
         }
         if (cResult[12] !== metrics.errors) {
-          const formatCountResult1 = tmp(17071).formatCount(metrics.errors);
+          const formatCountResult1 = tmp(17081).formatCount(metrics.errors);
           cResult[12] = metrics.errors;
           cResult[13] = formatCountResult1;
           let tmp18 = formatCountResult1;
-          const tmpResult11 = tmp(17071);
+          const tmpResult11 = tmp(17081);
         } else {
           tmp18 = cResult[13];
         }
@@ -826,10 +826,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           if (metrics.exceeded_cpu > 0) {
                             const obj3 = { label: null, value: null, critical: true };
                             const intl11 = tmp(1119).intl;
-                            obj3.label = intl11.string(_modDef3682.vM2krr);
-                            obj3.value = tmp(17071).formatCount(metrics.exceeded_cpu);
-                            tmp38 = hasOwnProperty(tmp(17074).DebugStatRow, obj3);
-                            const tmpResult12 = tmp(17071);
+                            obj3.label = intl11.string(_modDef3714.vM2krr);
+                            obj3.value = tmp(17081).formatCount(metrics.exceeded_cpu);
+                            tmp38 = hasOwnProperty(tmp(17084).DebugStatRow, obj3);
+                            const tmpResult12 = tmp(17081);
                           }
                           cResult[27] = metrics.exceeded_cpu;
                           cResult[28] = tmp38;
@@ -840,18 +840,18 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         const _Symbol2 = Symbol;
                         if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
                           const intl12 = tmp(1119).intl;
-                          const stringResult2 = intl12.string(_modDef3682.g1O88C);
+                          const stringResult2 = intl12.string(_modDef3714.g1O88C);
                           cResult[29] = stringResult2;
                           let tmp41 = stringResult2;
                         } else {
                           tmp41 = cResult[29];
                         }
                         if (cResult[30] !== metrics.exceeded_memory) {
-                          const formatCountResult2 = tmp(17071).formatCount(metrics.exceeded_memory);
+                          const formatCountResult2 = tmp(17081).formatCount(metrics.exceeded_memory);
                           cResult[30] = metrics.exceeded_memory;
                           cResult[31] = formatCountResult2;
                           let tmp44 = formatCountResult2;
-                          const tmpResult13 = tmp(17071);
+                          const tmpResult13 = tmp(17081);
                         } else {
                           tmp44 = cResult[31];
                         }
@@ -860,7 +860,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           const obj4 = { limit: null };
                           const _HermesInternal = HermesInternal;
                           obj4.limit = "" + limits.memory_mb + " MB";
-                          const formatToPlainStringResult1 = intl13.formatToPlainString(_modDef3682["5iALNP"], obj4);
+                          const formatToPlainStringResult1 = intl13.formatToPlainString(_modDef3714["5iALNP"], obj4);
                           cResult[32] = limits.memory_mb;
                           cResult[33] = formatToPlainStringResult1;
                           let tmp47 = formatToPlainStringResult1;
@@ -877,10 +877,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                               if (null != metrics.build) {
                                 const obj5 = { label: null, value: null };
                                 const intl14 = tmp(1119).intl;
-                                obj5.label = intl14.string(_modDef3682.JUZs7g);
-                                obj5.value = tmp(17071).shortBuildLabel(metrics.build);
-                                tmp54 = hasOwnProperty(tmp(17074).DebugStatRow, obj5);
-                                const tmpResult14 = tmp(17071);
+                                obj5.label = intl14.string(_modDef3714.JUZs7g);
+                                obj5.value = tmp(17081).shortBuildLabel(metrics.build);
+                                tmp54 = hasOwnProperty(tmp(17084).DebugStatRow, obj5);
+                                const tmpResult14 = tmp(17081);
                               }
                               cResult[38] = metrics.build;
                               cResult[39] = tmp54;
@@ -909,7 +909,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             const obj6 = { title, children: null };
                             const items = [tmp12, tmp21, tmp24, tmp33, tmp37, tmp50, tmp53];
                             obj6.children = items;
-                            const tmp59 = React5(tmp(17074).DebugSection, obj6);
+                            const tmp59 = React5(tmp(17084).DebugSection, obj6);
                             cResult[40] = tmp33;
                             cResult[41] = tmp37;
                             cResult[42] = tmp50;
@@ -923,7 +923,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           }
                         }
                         const obj7 = { label: tmp41, value: tmp44, critical: metrics.exceeded_memory > 0, hint: tmp47 };
-                        const tmp52 = hasOwnProperty(tmp(17074).DebugStatRow, obj7);
+                        const tmp52 = hasOwnProperty(tmp(17084).DebugStatRow, obj7);
                         cResult[34] = tmp44;
                         cResult[35] = metrics.exceeded_memory > 0;
                         cResult[36] = tmp47;
@@ -936,10 +936,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         if (metrics.wall_ms_total > 0) {
                           const obj8 = { label: null, value: null };
                           const intl10 = tmp(1119).intl;
-                          obj8.label = intl10.string(_modDef3682.ueEMPa);
-                          obj8.value = tmp(17071).formatMs(metrics.wall_ms_total);
-                          tmp34 = hasOwnProperty(tmp(17074).DebugStatRow, obj8);
-                          const tmpResult15 = tmp(17071);
+                          obj8.label = intl10.string(_modDef3714.ueEMPa);
+                          obj8.value = tmp(17081).formatMs(metrics.wall_ms_total);
+                          tmp34 = hasOwnProperty(tmp(17084).DebugStatRow, obj8);
+                          const tmpResult15 = tmp(17081);
                         }
                       }
                       cResult[24] = tmp67;
@@ -956,35 +956,35 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const obj9 = { children: null };
             const obj10 = { label: null, used: null, max: null, formatValue: null };
             const intl7 = tmp(1119).intl;
-            obj10.label = intl7.string(_modDef3682["V/nNbs"]);
+            obj10.label = intl7.string(_modDef3714["V/nNbs"]);
             obj10.used = metrics.cpu_ms_max;
             obj10.max = limits.cpu_ms_per_request;
-            obj10.formatValue = tmp(17071).formatMs;
-            const items1 = [hasOwnProperty(tmp(17074).DebugMeter, obj10), ];
+            obj10.formatValue = tmp(17081).formatMs;
+            const items1 = [hasOwnProperty(tmp(17084).DebugMeter, obj10), ];
             const obj11 = { label: null, value: null, hint: null };
             const intl8 = tmp(1119).intl;
-            obj11.label = intl8.string(_modDef3682["+rYPHD"]);
-            obj11.value = tmp(17071).formatMs(metrics.cpu_ms_total / metrics.requests);
+            obj11.label = intl8.string(_modDef3714["+rYPHD"]);
+            obj11.value = tmp(17081).formatMs(metrics.cpu_ms_total / metrics.requests);
             const intl9 = tmp(1119).intl;
             const obj12 = { total: null, wall: null };
-            const tmpResult16 = tmp(17071);
-            obj12.total = tmp(17071).formatMs(metrics.cpu_ms_total);
-            const tmpResult17 = tmp(17071);
-            obj12.wall = tmp(17071).formatMs(metrics.wall_ms_total);
-            obj11.hint = intl9.formatToPlainString(_modDef3682["+LxC7W"], obj12);
-            items1[1] = hasOwnProperty(tmp(17074).DebugStatRow, obj11);
+            const tmpResult16 = tmp(17081);
+            obj12.total = tmp(17081).formatMs(metrics.cpu_ms_total);
+            const tmpResult17 = tmp(17081);
+            obj12.wall = tmp(17081).formatMs(metrics.wall_ms_total);
+            obj11.hint = intl9.formatToPlainString(_modDef3714["+LxC7W"], obj12);
+            items1[1] = hasOwnProperty(tmp(17084).DebugStatRow, obj11);
             obj9.children = items1;
             let tmp27 = React5(timestampProducer, obj9);
-            const tmpResult18 = tmp(17071);
+            const tmpResult18 = tmp(17081);
           } else {
             const obj13 = { label: null, value: null, hint: null };
             const intl4 = tmp(1119).intl;
-            obj13.label = intl4.string(_modDef3682["V/nNbs"]);
+            obj13.label = intl4.string(_modDef3714["V/nNbs"]);
             const intl5 = tmp(1119).intl;
-            obj13.value = intl5.string(_modDef3682.YKWIxp);
+            obj13.value = intl5.string(_modDef3714.YKWIxp);
             const intl6 = tmp(1119).intl;
-            obj13.hint = intl6.string(_modDef3682["8GAiDk"]);
-            tmp27 = hasOwnProperty(tmp(17074).DebugStatRow, obj13);
+            obj13.hint = intl6.string(_modDef3714["8GAiDk"]);
+            tmp27 = hasOwnProperty(tmp(17084).DebugStatRow, obj13);
           }
           cResult[17] = tmp67;
           cResult[18] = limits.cpu_ms_per_request;
@@ -995,14 +995,14 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           cResult[23] = tmp27;
         }
         const obj14 = { label: tmp15, value: tmp18, critical: metrics.errors > 0 };
-        const tmp23 = hasOwnProperty(tmp(17074).DebugStatRow, obj14);
+        const tmp23 = hasOwnProperty(tmp(17084).DebugStatRow, obj14);
         cResult[14] = tmp18;
         cResult[15] = metrics.errors > 0;
         cResult[16] = tmp23;
         tmp21 = tmp23;
       }
       const obj15 = { label: tmp4, value: tmp7, hint: tmp9 };
-      const tmp14 = hasOwnProperty(tmp(17074).DebugStatRow, obj15);
+      const tmp14 = hasOwnProperty(tmp(17084).DebugStatRow, obj15);
       cResult[8] = tmp7;
       cResult[9] = tmp9;
       cResult[10] = tmp14;
@@ -1012,8 +1012,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj16 = { children: null };
     const intl15 = tmp(1119).intl;
-    obj16.children = intl15.string(_modDef3682["v/fbnv"]);
-    const tmp63 = hasOwnProperty(tmp(17074).DebugNote, obj16);
+    obj16.children = intl15.string(_modDef3714["v/fbnv"]);
+    const tmp63 = hasOwnProperty(tmp(17084).DebugNote, obj16);
     cResult[0] = tmp63;
     let first = tmp63;
   } else {
@@ -1021,7 +1021,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] !== title) {
     const obj17 = { title, children: first };
-    const tmp66 = hasOwnProperty(tmp(17074).DebugSection, obj17);
+    const tmp66 = hasOwnProperty(tmp(17084).DebugSection, obj17);
     cResult[1] = title;
     cResult[2] = tmp66;
     let tmp64 = tmp66;
@@ -1036,16 +1036,16 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj2 = { title, children: null };
       const obj3 = { label: null, value: null, hint: null };
       const intl13 = util.intl;
-      obj3.label = intl13.string(_modDef3682.KOnL3g);
+      obj3.label = intl13.string(_modDef3714.KOnL3g);
       obj3.value = VibegrationsDebugFormat.formatCount(metrics.requests);
       const intl14 = util.intl;
       const obj4 = { time: null };
       obj4.time = VibegrationsDebugFormat.formatObservedAt(metrics.since);
-      obj3.hint = intl14.formatToPlainString(_modDef3682["1PdrB1"], obj4);
+      obj3.hint = intl14.formatToPlainString(_modDef3714["1PdrB1"], obj4);
       const items = [hasOwnProperty(VibegrationsDebugPrimitives.DebugStatRow, obj3), , , , , , ];
       const obj5 = { label: null, value: null, critical: null };
       const intl15 = util.intl;
-      obj5.label = intl15.string(_modDef3682.CjPhyY);
+      obj5.label = intl15.string(_modDef3714.CjPhyY);
       obj5.value = VibegrationsDebugFormat.formatCount(metrics.errors);
       obj5.critical = metrics.errors > 0;
       items[1] = hasOwnProperty(VibegrationsDebugPrimitives.DebugStatRow, obj5);
@@ -1053,35 +1053,35 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj6 = { children: null };
         const obj7 = { label: null, used: null, max: null, formatValue: null };
         const intl4 = tmp9(1119).intl;
-        obj7.label = intl4.string(tmp12(3682)["V/nNbs"]);
+        obj7.label = intl4.string(tmp12(3714)["V/nNbs"]);
         obj7.used = metrics.cpu_ms_max;
         obj7.max = limits.cpu_ms_per_request;
-        obj7.formatValue = tmp9(17071).formatMs;
-        const items1 = [tmp11(tmp9(17074).DebugMeter, obj7), ];
+        obj7.formatValue = tmp9(17081).formatMs;
+        const items1 = [tmp11(tmp9(17084).DebugMeter, obj7), ];
         const obj8 = { label: null, value: null, hint: null };
         const intl5 = tmp9(1119).intl;
-        obj8.label = intl5.string(tmp12(3682)["+rYPHD"]);
-        obj8.value = tmp9(17071).formatMs(metrics.cpu_ms_total / metrics.requests);
+        obj8.label = intl5.string(tmp12(3714)["+rYPHD"]);
+        obj8.value = tmp9(17081).formatMs(metrics.cpu_ms_total / metrics.requests);
         const intl6 = tmp9(1119).intl;
         const obj9 = { total: null, wall: null };
-        const tmp9Result = tmp9(17071);
-        obj9.total = tmp9(17071).formatMs(metrics.cpu_ms_total);
-        const tmp9Result7 = tmp9(17071);
-        obj9.wall = tmp9(17071).formatMs(metrics.wall_ms_total);
-        obj8.hint = intl6.formatToPlainString(tmp12(3682)["+LxC7W"], obj9);
-        items1[1] = tmp11(tmp9(17074).DebugStatRow, obj8);
+        const tmp9Result = tmp9(17081);
+        obj9.total = tmp9(17081).formatMs(metrics.cpu_ms_total);
+        const tmp9Result7 = tmp9(17081);
+        obj9.wall = tmp9(17081).formatMs(metrics.wall_ms_total);
+        obj8.hint = intl6.formatToPlainString(tmp12(3714)["+LxC7W"], obj9);
+        items1[1] = tmp11(tmp9(17084).DebugStatRow, obj8);
         obj6.children = items1;
         let tmp = tmp8(timestampProducer, obj6);
-        const tmp9Result8 = tmp9(17071);
+        const tmp9Result8 = tmp9(17081);
       } else {
         const obj = { label: null, value: null, hint: null };
         const intl = tmp9(1119).intl;
-        obj.label = intl.string(tmp12(3682)["V/nNbs"]);
+        obj.label = intl.string(tmp12(3714)["V/nNbs"]);
         const intl2 = tmp9(1119).intl;
-        obj.value = intl2.string(tmp12(3682).YKWIxp);
+        obj.value = intl2.string(tmp12(3714).YKWIxp);
         const intl3 = tmp9(1119).intl;
-        obj.hint = intl3.string(tmp12(3682)["8GAiDk"]);
-        tmp = tmp11(tmp9(17074).DebugStatRow, obj);
+        obj.hint = intl3.string(tmp12(3714)["8GAiDk"]);
+        tmp = tmp11(tmp9(17084).DebugStatRow, obj);
       }
       items[2] = tmp;
       let tmp11Result = null;
@@ -1090,10 +1090,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (metrics.wall_ms_total > 0) {
           const obj10 = { label: null, value: null };
           const intl7 = tmp9(1119).intl;
-          obj10.label = intl7.string(tmp12(3682).ueEMPa);
-          obj10.value = tmp9(17071).formatMs(metrics.wall_ms_total);
-          tmp11Result = tmp11(tmp9(17074).DebugStatRow, obj10);
-          const tmp9Result9 = tmp9(17071);
+          obj10.label = intl7.string(tmp12(3714).ueEMPa);
+          obj10.value = tmp9(17081).formatMs(metrics.wall_ms_total);
+          tmp11Result = tmp11(tmp9(17084).DebugStatRow, obj10);
+          const tmp9Result9 = tmp9(17081);
         }
       }
       items[3] = tmp11Result;
@@ -1101,31 +1101,31 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (metrics.exceeded_cpu > 0) {
         const obj11 = { label: null, value: null, critical: true };
         const intl8 = tmp9(1119).intl;
-        obj11.label = intl8.string(tmp12(3682).vM2krr);
-        obj11.value = tmp9(17071).formatCount(metrics.exceeded_cpu);
-        tmp11Result3 = tmp11(tmp9(17074).DebugStatRow, obj11);
-        const tmp9Result10 = tmp9(17071);
+        obj11.label = intl8.string(tmp12(3714).vM2krr);
+        obj11.value = tmp9(17081).formatCount(metrics.exceeded_cpu);
+        tmp11Result3 = tmp11(tmp9(17084).DebugStatRow, obj11);
+        const tmp9Result10 = tmp9(17081);
       }
       items[4] = tmp11Result3;
       const obj12 = { label: null, value: null, critical: null, hint: null };
       const intl9 = tmp9(1119).intl;
-      obj12.label = intl9.string(_modDef3682.g1O88C);
+      obj12.label = intl9.string(_modDef3714.g1O88C);
       obj12.value = VibegrationsDebugFormat.formatCount(metrics.exceeded_memory);
       obj12.critical = metrics.exceeded_memory > 0;
       const intl10 = tmp9(1119).intl;
       const obj13 = { limit: null };
       const _HermesInternal = HermesInternal;
       obj13.limit = "" + limits.memory_mb + " MB";
-      obj12.hint = intl10.formatToPlainString(_modDef3682["5iALNP"], obj13);
+      obj12.hint = intl10.formatToPlainString(_modDef3714["5iALNP"], obj13);
       items[5] = hasOwnProperty(VibegrationsDebugPrimitives.DebugStatRow, obj12);
       let tmp11Result4 = null;
       if (null != metrics.build) {
         const obj14 = { label: null, value: null };
         const intl11 = tmp9(1119).intl;
-        obj14.label = intl11.string(tmp12(3682).JUZs7g);
-        obj14.value = tmp9(17071).shortBuildLabel(metrics.build);
-        tmp11Result4 = tmp11(tmp9(17074).DebugStatRow, obj14);
-        const tmp9Result12 = tmp9(17071);
+        obj14.label = intl11.string(tmp12(3714).JUZs7g);
+        obj14.value = tmp9(17081).shortBuildLabel(metrics.build);
+        tmp11Result4 = tmp11(tmp9(17084).DebugStatRow, obj14);
+        const tmp9Result12 = tmp9(17081);
       }
       items[6] = tmp11Result4;
       obj2.children = items;
@@ -1135,7 +1135,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj15 = { title, children: null };
   const obj16 = { children: null };
   const intl12 = util.intl;
-  obj16.children = intl12.string(_modDef3682["v/fbnv"]);
+  obj16.children = intl12.string(_modDef3714["v/fbnv"]);
   obj15.children = hasOwnProperty(VibegrationsDebugPrimitives.DebugNote, obj16);
   return hasOwnProperty(VibegrationsDebugPrimitives.DebugSection, obj15);
 });
@@ -1159,29 +1159,29 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
   if (shared_data) {
     let obj2 = { key: "shared", label: null, metrics: null };
     let intl = DebugSection(1119).intl;
-    obj2.label = intl.string(_modDef3682.Vrh0rD);
+    obj2.label = intl.string(_modDef3714.Vrh0rD);
     obj2.metrics = stable;
     let items = [obj2];
     let items1 = items;
   } else {
-    let obj3 = { key: "preview", label: DebugSection(17072).debugEnvLabel("preview"), metrics: preview };
+    let obj3 = { key: "preview", label: DebugSection(17082).debugEnvLabel("preview"), metrics: preview };
     items1 = [obj3, ];
     let obj4 = { key: "stable", label: null, metrics: null };
-    const DebugSectionResult = DebugSection(17072);
-    obj4.label = DebugSection(17072).debugEnvLabel("stable");
+    const DebugSectionResult = DebugSection(17082);
+    obj4.label = DebugSection(17082).debugEnvLabel("stable");
     obj4.metrics = stable;
     items1[1] = obj4;
-    const DebugSectionResult1 = DebugSection(17072);
+    const DebugSectionResult1 = DebugSection(17082);
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     let intl2 = DebugSection(1119).intl;
-    const stringResult = intl2.string(_modDef3682.i91625);
+    const stringResult = intl2.string(_modDef3714.i91625);
     cResult[5] = stringResult;
     let tmp4 = stringResult;
   } else {
     tmp4 = cResult[5];
   }
-  DebugSection = DebugSection(17074).DebugSection;
+  DebugSection = DebugSection(17084).DebugSection;
   let obj = limits(568);
   tmp = closure_5(DebugSection, {
     title: tmp4,
@@ -1194,10 +1194,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
         const obj4 = { label: null, value: null, hint: null };
         const intl2 = util.intl;
         const obj5 = { env: label };
-        obj4.label = intl2.formatToPlainString(_modDef3682["9TpIQg"], obj5);
+        obj4.label = intl2.formatToPlainString(_modDef3714["9TpIQg"], obj5);
         obj4.value = VibegrationsDebugFormat.formatBytes(metrics.r2_bytes);
         const intl3 = util.intl;
-        const tmp32 = _modDef3682;
+        const tmp32 = _modDef3714;
         const obj = { count: null };
         const tmp = metrics.r2_truncated ? tmp32.o45MMA : tmp32.S7o3vV;
         const tmp18 = React5;
@@ -1211,7 +1211,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
           const obj6 = { label: null, used: null, max: null, formatValue: null };
           const intl = util.intl;
           const obj7 = { env: label };
-          obj6.label = intl.formatToPlainString(tmp25(3682)["0OIswI"], obj7);
+          obj6.label = intl.formatToPlainString(tmp25(3714)["0OIswI"], obj7);
           obj6.used = metrics.db_bytes;
           obj6.max = limits.db_bytes;
           obj6.formatValue = VibegrationsDebugFormat.formatBytes;
@@ -1238,25 +1238,25 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
   if (storage.shared_data) {
     let obj3 = { key: "shared", label: null, metrics: null };
     let intl = limits(1119).intl;
-    obj3.label = intl.string(_modDef3682.Vrh0rD);
+    obj3.label = intl.string(_modDef3714.Vrh0rD);
     obj3.metrics = stable;
     let items = [obj3];
     let tmp4 = limits;
     let items1 = items;
   } else {
-    let obj = { key: "preview", label: limits(17072).debugEnvLabel("preview"), metrics: tmp };
+    let obj = { key: "preview", label: limits(17082).debugEnvLabel("preview"), metrics: tmp };
     items1 = [obj, ];
     let obj5 = { key: "stable", label: null, metrics: null };
-    let obj2 = limits(17072);
-    obj5.label = limits(17072).debugEnvLabel("stable");
+    let obj2 = limits(17082);
+    obj5.label = limits(17082).debugEnvLabel("stable");
     obj5.metrics = stable;
     items1[1] = obj5;
     tmp4 = limits;
-    let obj4 = limits(17072);
+    let obj4 = limits(17082);
   }
   let obj6 = { title: null, children: null };
   let intl2 = tmp4(1119).intl;
-  obj6.title = intl2.string(_modDef3682.i91625);
+  obj6.title = intl2.string(_modDef3714.i91625);
   obj6.children = items1.map((item) => {
     ({ key, label, metrics } = item);
     if (null == metrics) {
@@ -1266,10 +1266,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
       const obj4 = { label: null, value: null, hint: null };
       const intl2 = util.intl;
       const obj5 = { env: label };
-      obj4.label = intl2.formatToPlainString(_modDef3682["9TpIQg"], obj5);
+      obj4.label = intl2.formatToPlainString(_modDef3714["9TpIQg"], obj5);
       obj4.value = VibegrationsDebugFormat.formatBytes(metrics.r2_bytes);
       const intl3 = util.intl;
-      const tmp32 = _modDef3682;
+      const tmp32 = _modDef3714;
       const obj = { count: null };
       const tmp = metrics.r2_truncated ? tmp32.o45MMA : tmp32.S7o3vV;
       const tmp18 = React5;
@@ -1283,7 +1283,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
         const obj6 = { label: null, used: null, max: null, formatValue: null };
         const intl = util.intl;
         const obj7 = { env: label };
-        obj6.label = intl.formatToPlainString(tmp25(3682)["0OIswI"], obj7);
+        obj6.label = intl.formatToPlainString(tmp25(3714)["0OIswI"], obj7);
         obj6.used = metrics.db_bytes;
         obj6.max = limits.db_bytes;
         obj6.formatValue = VibegrationsDebugFormat.formatBytes;
@@ -1296,7 +1296,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
     }
     return tmp18Result;
   });
-  return closure_5(tmp4(17074).DebugSection, obj6);
+  return closure_5(tmp4(17084).DebugSection, obj6);
 });
 ReactCompilerGating = fn(558);
 let obj3 = { gap: nativeDefault.space.PX_24 };
@@ -1324,13 +1324,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (null != status) {
           const obj2 = { title: null, metrics: null, limits: null };
           const intl = tmp(1119).intl;
-          obj2.title = intl.string(_modDef3682["+dpDma"]);
+          obj2.title = intl.string(_modDef3714["+dpDma"]);
           obj2.metrics = status.worker.preview;
           obj2.limits = status.worker.limits;
           const items = [hasOwnProperty(closure_14, obj2), , , , , , , , ];
           const obj3 = { title: null, metrics: null, limits: null };
           const intl2 = tmp(1119).intl;
-          obj3.title = intl2.string(_modDef3682.NQHyed);
+          obj3.title = intl2.string(_modDef3714.NQHyed);
           obj3.metrics = status.worker.stable;
           obj3.limits = status.worker.limits;
           items[1] = hasOwnProperty(closure_14, obj3);
@@ -1340,7 +1340,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (null != status.bot) {
             const obj5 = { title: null, preview: null, stable: null, renderEnv: null };
             const intl3 = tmp(1119).intl;
-            obj5.title = intl3.string(tmp14(3682).rx1pBg);
+            obj5.title = intl3.string(tmp14(3714).rx1pBg);
             obj5.preview = status.bot.preview;
             obj5.stable = status.bot.stable;
             obj5.renderEnv = function renderEnv(env, bot) {
@@ -1353,7 +1353,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (null != status.outbound) {
             const obj6 = { title: null, preview: null, stable: null, renderEnv: null };
             const intl4 = tmp(1119).intl;
-            obj6.title = intl4.string(tmp14(3682)["t2+yv/"]);
+            obj6.title = intl4.string(tmp14(3714)["t2+yv/"]);
             obj6.preview = status.outbound.preview;
             obj6.stable = status.outbound.stable;
             obj6.renderEnv = function renderEnv(env, metrics) {
@@ -1366,7 +1366,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (null != status.runtime) {
             const obj7 = { title: null, preview: null, stable: null, renderEnv: null };
             const intl5 = tmp(1119).intl;
-            obj7.title = intl5.string(tmp14(3682).QifItp);
+            obj7.title = intl5.string(tmp14(3714).QifItp);
             obj7.preview = status.runtime.preview;
             obj7.stable = status.runtime.stable;
             obj7.renderEnv = function renderEnv(env, runtime) {
@@ -1379,7 +1379,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (null != status.ai) {
             const obj8 = { title: null, preview: null, stable: null, renderEnv: null };
             const intl6 = tmp(1119).intl;
-            obj8.title = intl6.string(tmp14(3682).SWKshl);
+            obj8.title = intl6.string(tmp14(3714).SWKshl);
             obj8.preview = status.ai.preview;
             obj8.stable = status.ai.stable;
             obj8.renderEnv = function renderEnv(env, metrics) {
@@ -1391,37 +1391,37 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp12Result8 = null;
           if (null != status.analytics) {
             const obj9 = { analytics: status.analytics };
-            tmp12Result8 = tmp12(tmp(17085).VibegrationsDebugWorkerAnalyticsSection, obj9);
+            tmp12Result8 = tmp12(tmp(17095).VibegrationsDebugWorkerAnalyticsSection, obj9);
           }
           items[7] = tmp12Result8;
           const obj10 = { title: null, children: null };
           const intl7 = tmp(1119).intl;
-          obj10.title = intl7.string(_modDef3682["HHe+8E"]);
-          const obj11 = { label: tmp(17072).debugEnvLabel("preview"), value: null };
+          obj10.title = intl7.string(_modDef3714["HHe+8E"]);
+          const obj11 = { label: tmp(17082).debugEnvLabel("preview"), value: null };
           let str2 = "\u2014";
           let str3 = "\u2014";
           if (null != status.deployments.preview_build) {
-            str3 = tmp(17071).shortBuildLabel(status.deployments.preview_build);
-            const tmpResult4 = tmp(17071);
+            str3 = tmp(17081).shortBuildLabel(status.deployments.preview_build);
+            const tmpResult4 = tmp(17081);
           }
           obj11.value = str3;
-          const items1 = [hasOwnProperty(tmp(17074).DebugStatRow, obj11), ];
+          const items1 = [hasOwnProperty(tmp(17084).DebugStatRow, obj11), ];
           const obj12 = { label: null, value: null };
           const tmp11 = timestampProducer;
-          const tmpResult = tmp(17072);
-          obj12.label = tmp(17072).debugEnvLabel("stable");
+          const tmpResult = tmp(17082);
+          obj12.label = tmp(17082).debugEnvLabel("stable");
           if (null != status.deployments.stable_build) {
-            str2 = tmp(17071).shortBuildLabel(status.deployments.stable_build);
-            const tmpResult6 = tmp(17071);
+            str2 = tmp(17081).shortBuildLabel(status.deployments.stable_build);
+            const tmpResult6 = tmp(17081);
           }
           const obj13 = { children: null };
           obj12.value = str2;
-          items1[1] = hasOwnProperty(tmp(17074).DebugStatRow, obj12);
+          items1[1] = hasOwnProperty(tmp(17084).DebugStatRow, obj12);
           obj10.children = items1;
-          items[8] = React5(tmp(17074).DebugSection, obj10);
+          items[8] = React5(tmp(17084).DebugSection, obj10);
           obj13.children = items;
           tmp10Result = tmp10(tmp11, obj13);
-          const tmpResult5 = tmp(17072);
+          const tmpResult5 = tmp(17082);
         }
         cResult[4] = status;
         cResult[5] = tmp10Result;
@@ -1470,13 +1470,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (null != status) {
     const obj2 = { title: null, metrics: null, limits: null };
     const intl = tmp4(1119).intl;
-    obj2.title = intl.string(_modDef3682["+dpDma"]);
+    obj2.title = intl.string(_modDef3714["+dpDma"]);
     obj2.metrics = status.worker.preview;
     obj2.limits = status.worker.limits;
     const items1 = [tmp3(closure_14, obj2), , , , , , , , ];
     const obj3 = { title: null, metrics: null, limits: null };
     const intl2 = tmp4(1119).intl;
-    obj3.title = intl2.string(_modDef3682.NQHyed);
+    obj3.title = intl2.string(_modDef3714.NQHyed);
     obj3.metrics = status.worker.stable;
     obj3.limits = status.worker.limits;
     items1[1] = tmp3(closure_14, obj3);
@@ -1486,7 +1486,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (null != status.bot) {
       const obj5 = { title: null, preview: null, stable: null, renderEnv: null };
       const intl3 = tmp4(1119).intl;
-      obj5.title = intl3.string(tmp10(3682).rx1pBg);
+      obj5.title = intl3.string(tmp10(3714).rx1pBg);
       obj5.preview = status.bot.preview;
       obj5.stable = status.bot.stable;
       obj5.renderEnv = function renderEnv(env, bot) {
@@ -1499,7 +1499,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (null != status.outbound) {
       const obj6 = { title: null, preview: null, stable: null, renderEnv: null };
       const intl4 = tmp4(1119).intl;
-      obj6.title = intl4.string(tmp10(3682)["t2+yv/"]);
+      obj6.title = intl4.string(tmp10(3714)["t2+yv/"]);
       obj6.preview = status.outbound.preview;
       obj6.stable = status.outbound.stable;
       obj6.renderEnv = function renderEnv(env, metrics) {
@@ -1512,7 +1512,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (null != status.runtime) {
       const obj7 = { title: null, preview: null, stable: null, renderEnv: null };
       const intl5 = tmp4(1119).intl;
-      obj7.title = intl5.string(tmp10(3682).QifItp);
+      obj7.title = intl5.string(tmp10(3714).QifItp);
       obj7.preview = status.runtime.preview;
       obj7.stable = status.runtime.stable;
       obj7.renderEnv = function renderEnv(env, runtime) {
@@ -1525,7 +1525,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (null != status.ai) {
       const obj8 = { title: null, preview: null, stable: null, renderEnv: null };
       const intl6 = tmp4(1119).intl;
-      obj8.title = intl6.string(tmp10(3682).SWKshl);
+      obj8.title = intl6.string(tmp10(3714).SWKshl);
       obj8.preview = status.ai.preview;
       obj8.stable = status.ai.stable;
       obj8.renderEnv = function renderEnv(env, metrics) {
@@ -1537,37 +1537,37 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp3Result8 = null;
     if (null != status.analytics) {
       const obj9 = { analytics: status.analytics };
-      tmp3Result8 = tmp3(tmp4(17085).VibegrationsDebugWorkerAnalyticsSection, obj9);
+      tmp3Result8 = tmp3(tmp4(17095).VibegrationsDebugWorkerAnalyticsSection, obj9);
     }
     items1[7] = tmp3Result8;
     const obj10 = { title: null, children: null };
     const intl7 = tmp4(1119).intl;
-    obj10.title = intl7.string(_modDef3682["HHe+8E"]);
-    const obj11 = { label: tmp4(17072).debugEnvLabel("preview"), value: null };
+    obj10.title = intl7.string(_modDef3714["HHe+8E"]);
+    const obj11 = { label: tmp4(17082).debugEnvLabel("preview"), value: null };
     let str2 = "\u2014";
     let str3 = "\u2014";
     if (null != status.deployments.preview_build) {
-      str3 = tmp4(17071).shortBuildLabel(status.deployments.preview_build);
-      const tmp4Result4 = tmp4(17071);
+      str3 = tmp4(17081).shortBuildLabel(status.deployments.preview_build);
+      const tmp4Result4 = tmp4(17081);
     }
     obj11.value = str3;
-    const items2 = [tmp3(tmp4(17074).DebugStatRow, obj11), ];
+    const items2 = [tmp3(tmp4(17084).DebugStatRow, obj11), ];
     const obj12 = { label: null, value: null };
-    const tmp4Result = tmp4(17072);
+    const tmp4Result = tmp4(17082);
     const tmp8 = timestampProducer;
-    obj12.label = tmp4(17072).debugEnvLabel("stable");
+    obj12.label = tmp4(17082).debugEnvLabel("stable");
     if (null != status.deployments.stable_build) {
-      str2 = tmp4(17071).shortBuildLabel(status.deployments.stable_build);
-      const tmp4Result6 = tmp4(17071);
+      str2 = tmp4(17081).shortBuildLabel(status.deployments.stable_build);
+      const tmp4Result6 = tmp4(17081);
     }
     const obj13 = { children: null };
     obj12.value = str2;
-    items2[1] = tmp3(tmp4(17074).DebugStatRow, obj12);
+    items2[1] = tmp3(tmp4(17084).DebugStatRow, obj12);
     obj10.children = items2;
-    items1[8] = tmp(tmp4(17074).DebugSection, obj10);
+    items1[8] = tmp(tmp4(17084).DebugSection, obj10);
     obj13.children = items1;
     tmpResult = tmp(tmp8, obj13);
-    const tmp4Result5 = tmp4(17072);
+    const tmp4Result5 = tmp4(17082);
   }
   items[1] = tmpResult;
   obj.children = items;

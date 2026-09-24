@@ -1,13 +1,13 @@
-// Module ID: 16654
-// Function ID: 16655
+// Module ID: 16664
+// Function ID: 16665
 // Name: HomeDrawerFavoritesRow
-// Dependencies: [19, 21, 558, 568, 16647, 4754, 1119, 2]
+// Dependencies: [19, 21, 558, 568, 16657, 4786, 1119, 2]
 
-// Module 16654 (HomeDrawerFavoritesRow)
+// Module 16664 (HomeDrawerFavoritesRow)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 16647 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 16657 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,8 +23,8 @@ export const HomeDrawerFavoritesRowExpandedChildren = ReactCompilerGating.isReac
     const obj3 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null };
     const intl = tmp(1119).intl;
     obj3.children = intl.string(tmp(1119).t.wMWyci);
-    obj2.title = jsx(tmp(4754).Text, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null });
-    const tmp6 = jsx(tmp(16647).HomeDrawerSharedItem, { title: null, subtitle: null });
+    obj2.title = jsx(tmp(4786).Text, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null });
+    const tmp6 = jsx(tmp(16657).HomeDrawerSharedItem, { title: null, subtitle: null });
     cResult[0] = tmp6;
     let first = tmp6;
   } else {

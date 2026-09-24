@@ -1,13 +1,13 @@
-// Module ID: 6710
-// Function ID: 6711
+// Module ID: 6742
+// Function ID: 6743
 // Name: SocialMediaSpotIllustration
-// Dependencies: [21, 558, 568, 6711, 5802, 2]
+// Dependencies: [21, 558, 568, 6743, 5834, 2]
 
-// Module 6710 (SocialMediaSpotIllustration)
+// Module 6742 (SocialMediaSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6711 from "module_6711" /* 6711 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6743 from "module_6743" /* 6743 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const SocialMediaSpotIllustration = ReactCompilerGating.isReactCompilerEn
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6711 };
+    const obj2 = { uri: _modDef6743 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const SocialMediaSpotIllustration = ReactCompilerGating.isReactCompilerEn
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6711 };
+  const obj2 = { uri: _modDef6743 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

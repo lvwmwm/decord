@@ -1,23 +1,23 @@
-// Module ID: 17342
-// Function ID: 17343
+// Module ID: 17352
+// Function ID: 17353
 // Name: ContextMenuCommandItem
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 12, 5822, 1119, 12377, 5802, 1982, 4702, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 12, 5854, 1119, 12413, 5834, 1982, 4734, 2]
 
-// Module 17342 (ContextMenuCommandItem)
+// Module 17352 (ContextMenuCommandItem)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import Server from "Server" /* 1982 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import TableRow from "TableRow" /* 5822 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 12377 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import TableRow from "TableRow" /* 5854 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 12413 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { commandIcon: null, loadingIcon: null, loadingName: null };
 let size = { width: 32, height: 32, borderRadius: nativeDefault.radii.lg };
 obj2.commandIcon = size;
@@ -129,7 +129,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj2 = { label: first, icon: tmp7, start, end };
-    const tmp11 = jsx(tmp(5822).TableRow, { label: first, icon: tmp7, start, end });
+    const tmp11 = jsx(tmp(5854).TableRow, { label: first, icon: tmp7, start, end });
     cResult[4] = end;
     cResult[5] = start;
     cResult[6] = tmp7;
@@ -165,11 +165,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ section, onPress, start, end } = arg0);
   const tmp4 = closure_6();
   if (cResult[0] !== section) {
-    const applicationCommandsIconSource = tmp(12377).getApplicationCommandsIconSource(section);
+    const applicationCommandsIconSource = tmp(12413).getApplicationCommandsIconSource(section);
     cResult[0] = section;
     cResult[1] = applicationCommandsIconSource;
     let tmp5 = applicationCommandsIconSource;
-    const tmpResult = tmp(12377);
+    const tmpResult = tmp(12413);
   } else {
     tmp5 = cResult[1];
   }
@@ -190,7 +190,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj2 = { onPress, label: section.name, icon: tmp7, start, end, arrow: true };
-    const tmp13 = jsx(tmp(5822).TableRow, { onPress, label: section.name, icon: tmp7, start, end, arrow: true });
+    const tmp13 = jsx(tmp(5854).TableRow, { onPress, label: section.name, icon: tmp7, start, end, arrow: true });
     cResult[5] = end;
     cResult[6] = onPress;
     cResult[7] = section.name;
@@ -235,11 +235,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (Server.ApplicationCommandType.MESSAGE !== type) {
     if (tmp(1982).ApplicationCommandType.USER !== type) {
       if (cResult[3] !== section) {
-        const applicationCommandsIconSource = tmp(12377).getApplicationCommandsIconSource(section);
+        const applicationCommandsIconSource = tmp(12413).getApplicationCommandsIconSource(section);
         cResult[3] = section;
         cResult[4] = applicationCommandsIconSource;
         let tmp12 = applicationCommandsIconSource;
-        const tmpResult = tmp(12377);
+        const tmpResult = tmp(12413);
       } else {
         tmp12 = cResult[4];
       }
@@ -249,7 +249,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const _Symbol = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp22 = jsx(tmp(4702).SendMessageIcon, {});
+          const tmp22 = jsx(tmp(4734).SendMessageIcon, {});
           cResult[8] = tmp22;
           let tmp20 = tmp22;
         } else {
@@ -270,7 +270,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj2 = { accessibilityLabel: undefined, onPress, label: item.displayName, icon: tmp14, trailing: tmp20, start, end };
-        const tmp25 = jsx(tmp(5822).TableRow, { accessibilityLabel: undefined, onPress, label: item.displayName, icon: tmp14, trailing: tmp20, start, end });
+        const tmp25 = jsx(tmp(5854).TableRow, { accessibilityLabel: undefined, onPress, label: item.displayName, icon: tmp14, trailing: tmp20, start, end });
         cResult[9] = undefined;
         cResult[10] = end;
         cResult[11] = item.displayName;
@@ -331,18 +331,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
   const tmp = closure_6();
   const tmp5 = item;
-  const applicationCommandsIconSource = item(12377).getApplicationCommandsIconSource(section);
+  const applicationCommandsIconSource = item(12413).getApplicationCommandsIconSource(section);
   const obj2 = { accessibilityLabel: memo, onPress, label: item.displayName, icon: null, trailing: null, start: null, end: null };
   let tmp8Result = null != applicationCommandsIconSource;
   if (tmp8Result) {
     const obj3 = { style: tmp.commandIcon, source: applicationCommandsIconSource };
-    tmp8Result = tmp8(section(5802), obj3);
+    tmp8Result = tmp8(section(5834), obj3);
   }
   obj2.icon = tmp8Result;
-  obj2.trailing = jsx(tmp5(4702).SendMessageIcon, {});
+  obj2.trailing = jsx(tmp5(4734).SendMessageIcon, {});
   obj2.start = start;
   obj2.end = end;
-  return jsx(item(5822).TableRow, { accessibilityLabel: memo, onPress, label: item.displayName, icon: null, trailing: null, start: null, end: null });
+  return jsx(item(5854).TableRow, { accessibilityLabel: memo, onPress, label: item.displayName, icon: null, trailing: null, start: null, end: null });
 });
 export const ContextMenuCommandLoadingItem = tmp2;
 export const ContextMenuCommandEmptyItem = tmp3;

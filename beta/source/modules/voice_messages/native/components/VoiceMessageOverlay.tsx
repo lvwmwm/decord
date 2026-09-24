@@ -1,22 +1,22 @@
-// Module ID: 12809
-// Function ID: 12810
+// Module ID: 12845
+// Function ID: 12846
 // Name: VoiceMessageOverlay
-// Dependencies: [32, 19, 17, 4750, 2045, 12090, 12091, 1078, 12092, 21, 4497, 1181, 4754, 12, 8733, 4758, 580, 5660, 558, 568, 504, 4462, 5801, 1119, 4759, 5289, 10625, 12810, 7224, 12556, 5173, 5182, 1114, 12004, 9722, 12408, 12403, 8178, 4716, 4702, 10259, 12385, 12811, 2]
+// Dependencies: [32, 19, 17, 4782, 2045, 12126, 12127, 1078, 12128, 21, 4529, 1181, 4786, 12, 8765, 4790, 580, 5692, 558, 568, 504, 4494, 5833, 1119, 4791, 5321, 10661, 12846, 7256, 12592, 5205, 5214, 1114, 12040, 9754, 12444, 12439, 8210, 4748, 4734, 10298, 12421, 12847, 2]
 
-// Module 12809 (VoiceMessageOverlay)
+// Module 12845 (VoiceMessageOverlay)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
 import util from "util" /* 1119 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5182 */;
-import LegacyTokens from "LegacyTokens" /* 5660 */;
-import useRefValueDefault from "useRefValue" /* 5801 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5214 */;
+import LegacyTokens from "LegacyTokens" /* 5692 */;
+import useRefValueDefault from "useRefValue" /* 5833 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import apply from "module_12" /* 12 */;
 
@@ -25,10 +25,10 @@ const ReanimatedRexport_mod = ReanimatedRexport2;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, AppState: metroRequire } = get_ActivityIndicator);
-const useVoiceMessagesUIStore = fn(12090).useVoiceMessagesUIStore;
-const VoiceMessageAnimationState = fn(12091).VoiceMessageAnimationState;
+const useVoiceMessagesUIStore = fn(12126).useVoiceMessagesUIStore;
+const VoiceMessageAnimationState = fn(12127).VoiceMessageAnimationState;
 const ComponentActionsKeyed = fn(1078).ComponentActionsKeyed;
-const CHAT_INPUT_HEIGHT = fn(12092).CHAT_INPUT_HEIGHT;
+const CHAT_INPUT_HEIGHT = fn(12128).CHAT_INPUT_HEIGHT;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
 const VoiceMessageOverlay = "VoiceMessageOverlay";
@@ -38,11 +38,11 @@ let c19 = 500;
 let ReanimatedRexport = ReanimatedRexport_mod;
 let closure_20 = ReanimatedRexport.createAnimatedComponent(fn(1181).Icon);
 let ReanimatedRexport = ReanimatedRexport_mod;
-let closure_21 = ReanimatedRexport.createAnimatedComponent(fn(4754).Text);
+let closure_21 = ReanimatedRexport.createAnimatedComponent(fn(4786).Text);
 let closure_22 = apply.memoize(() => ReanimatedRexport.createAnimatedComponent(inlineStyles.Ellipse));
 let c23 = 68;
 let c24 = 56;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_25 = createStyles.createStyles(() => {
   const obj = { innerContainer: { flexDirection: "row", alignItems: "flex-end", paddingTop: 8, paddingHorizontal: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_HORIZONTAL, paddingBottom: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_BOTTOM }, contentContainer: { position: "absolute", bottom: 0, width: "100%", alignItems: "center", overflow: "hidden" }, contentContainerFloating: { justifyContent: "flex-end", overflow: "visible" }, floatingSendButton: null, floatingSendButtonActive: null, floatingSendButtonIconActive: null, voiceChatContainer: null, lockContainer: null, lockParentContainer: null, chevon: null };
   const size = { width: nativeDefault.modules.mobile.CHAT_INPUT_SEND_BUTTON_WIDTH, height: nativeDefault.modules.mobile.CHAT_INPUT_SEND_BUTTON_HEIGHT };
@@ -998,9 +998,9 @@ let closure_63 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
       const result = recordingAnimation.set(timing.withTiming(1, obj2));
       const _performance = performance;
       if (performance.now() - ref.current < c19) {
-        const obj3 = { easing: tmp2(4497).Easing.quad, duration };
-        const result1 = initialAnimation.set(tmp2(4759).withTiming(1, obj3));
-        const tmp2Result = tmp2(4759);
+        const obj3 = { easing: tmp2(4529).Easing.quad, duration };
+        const result1 = initialAnimation.set(tmp2(4791).withTiming(1, obj3));
+        const tmp2Result = tmp2(4791);
       }
     }
   }, items2);

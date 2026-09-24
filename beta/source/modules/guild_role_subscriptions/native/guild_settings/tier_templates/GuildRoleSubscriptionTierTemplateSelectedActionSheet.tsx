@@ -1,9 +1,9 @@
-// Module ID: 18240
-// Function ID: 18241
+// Module ID: 18250
+// Function ID: 18251
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
-// Dependencies: [19, 17, 2042, 21, 4758, 580, 558, 568, 1616, 4754, 1119, 1181, 5189, 6863, 7397, 2]
+// Dependencies: [19, 17, 2042, 21, 4790, 580, 558, 568, 1616, 4786, 1119, 1181, 5221, 6895, 7429, 2]
 
-// Module 18240 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 18250 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import noop from "module_19" /* 19 */;
@@ -13,7 +13,7 @@ const View = fn(17).View;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 24 }, button: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 24 };
 obj2.button = { borderRadius: nativeDefault.radii.xs };
@@ -50,7 +50,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
     const obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
     const intl = tmp(1119).intl;
     obj3.children = intl.string(tmp(1119).t.Y0PTc0);
-    const tmp10 = closure_5(tmp(4754).Text, obj3);
+    const tmp10 = closure_5(tmp(4786).Text, obj3);
     const tmp11 = closure_5(tmp(1181).Spacer, { size: 12 });
     cResult[4] = tmp10;
     cResult[5] = tmp11;
@@ -64,7 +64,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
     const obj4 = { variant: "text-sm/normal", color: "text-default", children: null };
     const intl2 = tmp(1119).intl;
     obj4.children = intl2.string(tmp(1119).t["YSI/1/"]);
-    const tmp15 = closure_5(tmp(4754).Text, obj4);
+    const tmp15 = closure_5(tmp(4786).Text, obj4);
     const tmp16 = closure_5(tmp(1181).Spacer, { size: 48 });
     cResult[6] = tmp15;
     cResult[7] = tmp16;
@@ -124,7 +124,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
           return tmp29;
         }
         const obj5 = { backdropOpacity: 0.8, onDismiss: tmp5, children: tmp25 };
-        const tmp31 = closure_5(tmp(7397).BottomSheet, obj5);
+        const tmp31 = closure_5(tmp(7429).BottomSheet, obj5);
         cResult[20] = tmp5;
         cResult[21] = tmp25;
         cResult[22] = tmp31;
@@ -139,12 +139,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
     const obj7 = { contentContainerStyle: tmp6, children: null };
     const items = [tmp7, tmp8, tmp12, tmp13, tmp20];
     obj7.children = items;
-    const tmp24 = closure_6(tmp(6863).BottomSheetScrollView, obj7);
+    const tmp24 = closure_6(tmp(6895).BottomSheetScrollView, obj7);
     cResult[14] = tmp20;
     cResult[15] = tmp6;
     cResult[16] = tmp24;
   }
-  const tmp21 = closure_5(markAsDismissed(5189).BaseTextButton, { text: tmp17, pillStyle: tmp4.button, onPress: tmp19, grow: true });
+  const tmp21 = closure_5(markAsDismissed(5221).BaseTextButton, { text: tmp17, pillStyle: tmp4.button, onPress: tmp19, grow: true });
   cResult[11] = tmp4.button;
   cResult[12] = tmp19;
   cResult[13] = tmp21;
@@ -163,11 +163,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
   const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = markAsDismissed(1119).intl;
   obj4.children = intl.string(markAsDismissed(1119).t.Y0PTc0);
-  const items = [closure_5(markAsDismissed(4754).Text, obj4), closure_5(markAsDismissed(1181).Spacer, { size: 12 }), , , ];
+  const items = [closure_5(markAsDismissed(4786).Text, obj4), closure_5(markAsDismissed(1181).Spacer, { size: 12 }), , , ];
   const obj5 = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = markAsDismissed(1119).intl;
   obj5.children = intl2.string(markAsDismissed(1119).t["YSI/1/"]);
-  items[2] = closure_5(markAsDismissed(4754).Text, obj5);
+  items[2] = closure_5(markAsDismissed(4786).Text, obj5);
   items[3] = closure_5(markAsDismissed(1181).Spacer, { size: 48 });
   const obj6 = { text: null, pillStyle: null, onPress: null, grow: true };
   const intl3 = markAsDismissed(1119).intl;
@@ -176,9 +176,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
   obj6.onPress = function onPress() {
     return markAsDismissed(ContentDismissActionType.UNKNOWN);
   };
-  items[4] = closure_5(markAsDismissed(5189).BaseTextButton, obj6);
+  items[4] = closure_5(markAsDismissed(5221).BaseTextButton, obj6);
   obj3.children = items;
-  obj2.children = closure_6(markAsDismissed(6863).BottomSheetScrollView, obj3);
+  obj2.children = closure_6(markAsDismissed(6895).BottomSheetScrollView, obj3);
   obj.children = closure_5(View, obj2);
-  return closure_5(markAsDismissed(7397).BottomSheet, obj);
+  return closure_5(markAsDismissed(7429).BottomSheet, obj);
 });

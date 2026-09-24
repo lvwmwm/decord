@@ -1,12 +1,12 @@
-// Module ID: 9823
-// Function ID: 9824
+// Module ID: 9855
+// Function ID: 9856
 // Name: TextInput/TextInput
-// Dependencies: [109, 19, 17, 1078, 21, 4758, 580, 558, 568, 4610, 1368, 4608, 2]
+// Dependencies: [109, 19, 17, 1078, 21, 4790, 580, 558, 568, 4642, 1368, 4640, 2]
 
-// Module 9823 (TextInput/TextInput)
+// Module 9855 (TextInput/TextInput)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import shared from "shared" /* 4610 */;
+import shared from "shared" /* 4642 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ const TextInput = fn(17).TextInput;
 const Constants = fn(1078);
 ({ KeyboardThemes: metroRequire, Fonts } = Constants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { input: { fontSize: 16, alignSelf: "center", fontFamily: Fonts.PRIMARY_MEDIUM, color: nativeDefault.colors.TEXT_DEFAULT }, placeholderTextColor: null };
 let obj3 = { fontSize: 16, alignSelf: "center", fontFamily: Fonts.PRIMARY_MEDIUM, color: nativeDefault.colors.TEXT_DEFAULT };
 obj.placeholderTextColor = { color: nativeDefault.colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
@@ -46,12 +46,12 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
     if (cResult[4] === tmp9.input) {
       let tmp12 = cResult[5];
     }
-    const tmp14 = tmp(4610).isThemeDark(theme) ? timestampProducer.DARK : timestampProducer.LIGHT;
+    const tmp14 = tmp(4642).isThemeDark(theme) ? timestampProducer.DARK : timestampProducer.LIGHT;
     if (cResult[6] !== tmp11) {
       let hexWithOpacityResult = tmp11;
       if (tmpResult7.isAndroid()) {
-        hexWithOpacityResult = tmp(4608).hexWithOpacity(tmp11, 0.5);
-        const tmpResult8 = tmp(4608);
+        hexWithOpacityResult = tmp(4640).hexWithOpacity(tmp11, 0.5);
+        const tmpResult8 = tmp(4640);
       }
       cResult[6] = tmp11;
       cResult[7] = hexWithOpacityResult;
@@ -85,7 +85,7 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
     cResult[13] = tmp15;
     cResult[14] = tmp24;
     tmp18 = tmp24;
-    const tmpResult6 = tmp(4610);
+    const tmpResult6 = tmp(4642);
   }
   const items = [tmp9.input, tmp5];
   cResult[3] = tmp5;
@@ -109,8 +109,8 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   const tmp3Result = shared;
   let hexWithOpacityResult = tmp6;
   if (tmp3Result3.isAndroid()) {
-    hexWithOpacityResult = tmp3(4608).hexWithOpacity(tmp6, 0.5);
-    const tmp3Result4 = tmp3(4608);
+    hexWithOpacityResult = tmp3(4640).hexWithOpacity(tmp6, 0.5);
+    const tmp3Result4 = tmp3(4640);
   }
   obj3.selectionColor = hexWithOpacityResult;
   const merged1 = Object.assign(merged);

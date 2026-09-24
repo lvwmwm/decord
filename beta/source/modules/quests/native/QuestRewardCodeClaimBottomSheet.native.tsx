@@ -1,28 +1,28 @@
-// Module ID: 11900
-// Function ID: 11901
+// Module ID: 11936
+// Function ID: 11937
 // Name: QuestRewardCodeClaimBottomSheet
-// Dependencies: [19, 17, 7944, 5663, 21, 4758, 580, 558, 568, 1616, 504, 11901, 4458, 1119, 5812, 4725, 10575, 7436, 4704, 11903, 7397, 7396, 4754, 4748, 5822, 5903, 5188, 11906, 2]
+// Dependencies: [19, 17, 7976, 5695, 21, 4790, 580, 558, 568, 1616, 504, 11937, 4490, 1119, 5844, 4757, 10611, 7468, 4736, 11939, 7429, 7428, 4786, 4780, 5854, 5935, 5220, 11942, 2]
 
-// Module 11900 (QuestRewardCodeClaimBottomSheet)
+// Module 11936 (QuestRewardCodeClaimBottomSheet)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import _modDef5812 from "module_5812" /* 5812 */;
-import ClipboardUtils from "ClipboardUtils" /* 7436 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 10575 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import _modDef5844 from "module_5844" /* 5844 */;
+import ClipboardUtils from "ClipboardUtils" /* 7468 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 10611 */;
 import noop from "module_19" /* 19 */;
-import QuestStore from "QuestStore" /* 7944 */;
+import QuestStore from "QuestStore" /* 7976 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const REWARD_CODE_PLACEHOLDER = fn(5663).REWARD_CODE_PLACEHOLDER;
+const REWARD_CODE_PLACEHOLDER = fn(5695).REWARD_CODE_PLACEHOLDER;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles((paddingBottom) => {
   const obj = { wrapper: { display: "flex", paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_24 }, footer: { paddingBottom }, claimingIndicator: { position: "absolute", left: "50%", top: "50%", marginLeft: -12, marginTop: -12 }, codeCopyWrapperLoading: { opacity: 0.5 }, redemptionInstructions: { marginBottom: 24 } };
   return obj;
@@ -69,7 +69,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
                 const obj2 = { key: "CLAIM_QUEST_REWARD_ERROR", content: null, icon: null };
                 const intl = util.intl;
                 obj2.content = intl.string(util.t.CKsXk3);
-                obj2.icon = _modDef5812;
+                obj2.icon = _modDef5844;
                 ToastActionCreatorsDefault.open(obj2);
                 ActionSheetActionCreatorsDefault.hideActionSheet();
               }
@@ -151,7 +151,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
                                     obj2.icon = function icon() {
                                       return closure_1_8(closure_1_0(dependencyMap[18]).CopyIcon, {});
                                     };
-                                    return rewardCode(4458).open(obj2);
+                                    return rewardCode(4490).open(obj2);
                                   });
                                 }
                               };
@@ -511,7 +511,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
       const obj2 = { key: "CLAIM_QUEST_REWARD_ERROR", content: null, icon: null };
       const intl = util.intl;
       obj2.content = intl.string(util.t.CKsXk3);
-      obj2.icon = _modDef5812;
+      obj2.icon = _modDef5844;
       ToastActionCreatorsDefault.open(obj2);
       ActionSheetActionCreatorsDefault.hideActionSheet();
     }
@@ -577,7 +577,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
         obj2.icon = function icon() {
           return closure_1_8(closure_1_0(dependencyMap[18]).CopyIcon, {});
         };
-        return rewardCode(4458).open(obj2);
+        return rewardCode(4490).open(obj2);
       });
     }
   }, items4);

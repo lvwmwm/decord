@@ -1,20 +1,20 @@
-// Module ID: 12314
-// Function ID: 12315
+// Module ID: 12350
+// Function ID: 12351
 // Name: ChatInputExpressionButton
-// Dependencies: [19, 21, 4758, 580, 558, 568, 4462, 1119, 11534, 9036, 1181, 5341, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 4494, 1119, 11570, 9068, 1181, 5373, 2]
 
-// Module 12314 (ChatInputExpressionButton)
+// Module 12350 (ChatInputExpressionButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import useToken from "useToken" /* 4462 */;
-import Pressables from "Pressables" /* 5341 */;
+import useToken from "useToken" /* 4494 */;
+import Pressables from "Pressables" /* 5373 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles((height) => {
   const obj = { expressionButton: null, expressionButtonIconTint: null };
   const size = { borderRadius: nativeDefault.radii.sm, height, width: height, alignItems: "center", justifyContent: "center" };
@@ -71,7 +71,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     } else {
       tmp17 = cResult[7];
     }
-    const tmp5Result = tmp5(showKeyboardIcon ? 11534 : 9036);
+    const tmp5Result = tmp5(showKeyboardIcon ? 11570 : 9068);
     if (cResult[8] === tmp9.expressionButtonIconTint) {
       if (cResult[9] === token1) {
         if (cResult[10] === tmp5Result) {
@@ -90,7 +90,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
           }
         }
         const obj3 = { ref: tmp12, style: tmp13, hitSlop: tmp14, accessibilityRole: "button", accessibilityLabel: tmp15, accessibilityState: tmp17, onPress: tmp11, children: tmp19 };
-        const tmp24 = jsx(tmp(5341).PressableOpacity, { ref: tmp12, style: tmp13, hitSlop: tmp14, accessibilityRole: "button", accessibilityLabel: tmp15, accessibilityState: tmp17, onPress: tmp11, children: tmp19 });
+        const tmp24 = jsx(tmp(5373).PressableOpacity, { ref: tmp12, style: tmp13, hitSlop: tmp14, accessibilityRole: "button", accessibilityLabel: tmp15, accessibilityState: tmp17, onPress: tmp11, children: tmp19 });
         cResult[12] = tmp11;
         cResult[13] = tmp19;
         cResult[14] = tmp13;
@@ -146,6 +146,6 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   obj4.accessibilityState = { expanded: flag };
   obj4.onPress = callback;
   const ref = noop.useRef(null);
-  obj4.children = jsx(native.Icon, { size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 11534 : 9036) });
+  obj4.children = jsx(native.Icon, { size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 11570 : 9068) });
   return jsx(Pressables.PressableOpacity, { ref: noop.useRef(null), style: null, hitSlop: null, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, onPress: null, children: null });
 }));

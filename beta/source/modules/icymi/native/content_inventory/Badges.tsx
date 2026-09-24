@@ -1,18 +1,18 @@
-// Module ID: 13304
-// Function ID: 13305
+// Module ID: 13340
+// Function ID: 13341
 // Name: Badges
-// Dependencies: [19, 17, 2113, 21, 580, 4758, 558, 568, 13302, 8409, 4754, 504, 9346, 11725, 13305, 1119, 13307, 13309, 9992, 11860, 1095, 8989, 2]
+// Dependencies: [19, 17, 2113, 21, 580, 4790, 558, 568, 13338, 8441, 4786, 504, 9378, 11761, 13341, 1119, 13343, 13345, 10024, 11896, 1095, 9021, 2]
 
-// Module 13304 (Badges)
+// Module 13340 (Badges)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import DurationsDefault from "Durations" /* 1095 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import utils from "utils" /* 8409 */;
-import GameControllerIcon from "GameControllerIcon" /* 9346 */;
-import TimerIcon2 from "TimerIcon" /* 11725 */;
-import useTimestampTickedNow from "useTimestampTickedNow" /* 13302 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import utils from "utils" /* 8441 */;
+import GameControllerIcon from "GameControllerIcon" /* 9378 */;
+import TimerIcon2 from "TimerIcon" /* 11761 */;
+import useTimestampTickedNow from "useTimestampTickedNow" /* 13338 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
 
@@ -23,7 +23,7 @@ const jsxProd = fn(21);
 let obj = { overlay: { text: "content-inventory-overlay-text-secondary", icon: nativeDefault.colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY }, "user-profile": null };
 let obj2 = { text: "content-inventory-overlay-text-secondary", icon: nativeDefault.colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY };
 obj["user-profile"] = { text: "text-subtle", icon: nativeDefault.colors.TEXT_SUBTLE };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles((arg0) => {
   obj = { icon: { width: 16, height: 16 }, badgeContainer: null };
   let tmp = null;
@@ -38,12 +38,12 @@ let closure_10 = createStyles.createStyles((arg0) => {
 const redux = noop.createContext("overlay");
 let ReactCompilerGating = fn(558);
 ReactCompilerGating.isReactCompilerEnabled();
-const f62907 = () => {
+const f62958 = () => {
 
 };
 ReactCompilerGating = fn(558);
 ReactCompilerGating.isReactCompilerEnabled();
-const f62908 = () => {
+const f62959 = () => {
 
 };
 fn(558);
@@ -64,7 +64,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp6;
     }
     const obj3 = { style, variant: "text-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children: tmp4 };
-    const tmp8 = timestampProducer(tmp(4754).Text, obj3);
+    const tmp8 = timestampProducer(tmp(4786).Text, obj3);
     cResult[3] = style;
     cResult[4] = tmp4;
     cResult[5] = tmp8;
@@ -77,21 +77,21 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmp4 = result;
 }) : ((style) => {
   const entry = style.entry;
-  const now = entry(13302).useTimestampTickedNow().now;
+  const now = entry(13338).useTimestampTickedNow().now;
   const items = [entry, now];
   const children = noop.useMemo(() => utils.formatActiveTimestamp(entry, now), items);
-  return closure_6(entry(4754).Text, { style: style.style, variant: "text-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children });
+  return closure_6(entry(4786).Text, { style: style.style, variant: "text-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children });
 });
 let closure_14 = tmp6;
 ReactCompilerGating = fn(558);
 let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   const cResult = c.c(10);
   entry = entry.entry;
-  if (typeof f62908 === "function") {
-    if (typeof f62907 === "function") {
+  if (typeof f62959 === "function") {
+    if (typeof f62958 === "function") {
       const tmp8 = tmp4[noop.useContext(noop, closure_11)];
       const _Symbol = Symbol;
-      const tmpResult = tmp(8409);
+      const tmpResult = tmp(8441);
       if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
         const items = [LocaleStore];
         const fn = function l() {
@@ -104,7 +104,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
       } else {
         [tmp11, tmp12] = cResult;
       }
-      const isEntryActiveResult = tmp(8409).isEntryActive(entry);
+      const isEntryActiveResult = tmp(8441).isEntryActive(entry);
       const stateFromStores = tmp(504).useStateFromStores(tmp11, tmp12);
       if (isEntryActiveResult) {
         if (cResult[2] !== entry) {
@@ -129,18 +129,18 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
             return tmp18;
           }
           const obj3 = { variant: "text-sm/medium", color: tmp15, children: tmp16 };
-          const tmp20 = timestampProducer(tmp(4754).Text, obj3);
+          const tmp20 = timestampProducer(tmp(4786).Text, obj3);
           cResult[7] = tmp8.text;
           cResult[8] = tmp16;
           cResult[9] = tmp20;
           tmp18 = tmp20;
         }
-        const formatEndedTimestampResult = tmp(8409).formatEndedTimestamp(entry, stateFromStores);
+        const formatEndedTimestampResult = tmp(8441).formatEndedTimestamp(entry, stateFromStores);
         cResult[4] = entry;
         cResult[5] = stateFromStores;
         cResult[6] = formatEndedTimestampResult;
         tmp16 = formatEndedTimestampResult;
-        const tmpResult4 = tmp(8409);
+        const tmpResult4 = tmp(8441);
       }
       const tmpResult3 = tmp(504);
     } else {
@@ -151,17 +151,17 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   }
 }) : ((entry) => {
   entry = entry.entry;
-  if (typeof f62908 === "function") {
-    if (typeof f62907 === "function") {
+  if (typeof f62959 === "function") {
+    if (typeof f62958 === "function") {
       initialize;
       const items = [LocaleStore];
       if (isEntryActiveResult) {
         const obj2 = { entry };
         let tmp11Result = tmp11(closure_14, obj2);
       } else {
-        const obj3 = { variant: "text-sm/medium", color: tmp[noop.useContext(noop, closure_11)].text, children: tmp5(8409).formatEndedTimestamp(entry, tmp10) };
-        tmp11Result = tmp11(tmp5(4754).Text, obj3);
-        const tmp5Result = tmp5(8409);
+        const obj3 = { variant: "text-sm/medium", color: tmp[noop.useContext(noop, closure_11)].text, children: tmp5(8441).formatEndedTimestamp(entry, tmp10) };
+        tmp11Result = tmp11(tmp5(4786).Text, obj3);
+        const tmp5Result = tmp5(8441);
       }
       return tmp11Result;
     } else {
@@ -175,9 +175,9 @@ ReactCompilerGating = fn(558);
 let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = c.c(13);
   ({ Icon, iconColor, text, accessibilityLabel } = arg0);
-  if (typeof f62907 === "function") {
+  if (typeof f62958 === "function") {
     const tmp4Result = tmp4(noop.useContext(closure_11));
-    if (typeof f62908 === "function") {
+    if (typeof f62959 === "function") {
       if (typeof tmp5 === "function") {
         const tmp10 = tmp9[obj2.useContext(obj2, tmp6)];
         if (cResult[0] === Icon) {
@@ -240,9 +240,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 }) : ((accessibilityLabel) => {
   accessibilityLabel = accessibilityLabel.accessibilityLabel;
-  if (typeof f62907 === "function") {
+  if (typeof f62958 === "function") {
     const tmp4Result = tmp4(noop.useContext(closure_11));
-    if (typeof f62908 === "function") {
+    if (typeof f62959 === "function") {
       if (typeof tmp5 === "function") {
         const obj2 = { style: tmp4Result.badgeContainer, accessible: null != accessibilityLabel, accessibilityLabel, children: null };
         const obj3 = { style: tmp4Result.icon, color: tmp2 };
@@ -296,9 +296,9 @@ ReactCompilerGating = fn(558);
 let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   const cResult = c.c(9);
   entry = entry.entry;
-  if (typeof f62907 === "function") {
+  if (typeof f62958 === "function") {
     const tmp4Result = tmp4(noop.useContext(closure_11));
-    if (typeof f62908 === "function") {
+    if (typeof f62959 === "function") {
       if (typeof tmp5 === "function") {
         if (tmpResult.isEntryActive(entry)) {
           let icon = nativeDefault.colors.STATUS_POSITIVE;
@@ -337,12 +337,12 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
           tmp18 = tmp21;
         }
         const obj5 = { style: tmp4Result.icon, color: icon };
-        const tmp13 = timestampProducer(tmp(9346).GameControllerIcon, obj5);
+        const tmp13 = timestampProducer(tmp(9378).GameControllerIcon, obj5);
         cResult[0] = icon;
         cResult[1] = tmp4Result.icon;
         cResult[2] = tmp13;
         tmp11 = tmp13;
-        tmpResult = tmp(8409);
+        tmpResult = tmp(8441);
       } else {
         throw new TypeError("Trying to call a non-function");
       }
@@ -355,9 +355,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   }
 }) : ((entry) => {
   entry = entry.entry;
-  if (typeof f62907 === "function") {
+  if (typeof f62958 === "function") {
     const tmpResult = tmp(noop.useContext(closure_11));
-    if (typeof f62908 === "function") {
+    if (typeof f62959 === "function") {
       if (typeof tmp2 === "function") {
         if (obj2.isEntryActive(entry)) {
           let icon = nativeDefault.colors.STATUS_POSITIVE;
@@ -387,8 +387,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   let TimerIcon = dependencyMap;
   const cResult = c.c(6);
   entry = entry.entry;
-  if (typeof f62908 === "function") {
-    if (typeof f62907 === "function") {
+  if (typeof f62959 === "function") {
+    if (typeof f62958 === "function") {
       if (tmpResult.isEntryMarathon(entry)) {
         if (tmpResult3.isEntryActive(entry)) {
           let icon = nativeDefault.colors.STATUS_POSITIVE;
@@ -396,11 +396,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
           icon = tmp3[noop.useContext(noop, closure_11)].icon;
         }
         if (cResult[0] !== entry) {
-          const marathonDescription = tmp(8409).getMarathonDescription(entry);
+          const marathonDescription = tmp(8441).getMarathonDescription(entry);
           cResult[0] = entry;
           cResult[1] = marathonDescription;
           let tmp9 = marathonDescription;
-          const tmpResult4 = tmp(8409);
+          const tmpResult4 = tmp(8441);
         } else {
           tmp9 = cResult[1];
         }
@@ -413,7 +413,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
             }
           }
           const obj2 = { Icon: null, iconColor: null, text: null, accessibilityLabel: null };
-          TimerIcon = tmp(11725).TimerIcon;
+          TimerIcon = tmp(11761).TimerIcon;
           obj2.Icon = TimerIcon;
           obj2.iconColor = icon;
           obj2.text = text;
@@ -424,11 +424,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
           cResult[4] = text;
           cResult[5] = tmp15;
         }
-        tmpResult3 = tmp(8409);
+        tmpResult3 = tmp(8441);
       } else {
         return null;
       }
-      tmpResult = tmp(8409);
+      tmpResult = tmp(8441);
     } else {
       throw new TypeError("Trying to call a non-function");
     }
@@ -437,20 +437,20 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   }
 }) : ((entry) => {
   entry = entry.entry;
-  if (typeof f62908 === "function") {
-    if (typeof f62907 === "function") {
+  if (typeof f62959 === "function") {
+    if (typeof f62958 === "function") {
       if (obj.isEntryMarathon(entry)) {
         if (tmp5Result.isEntryActive(entry)) {
           let icon = nativeDefault.colors.STATUS_POSITIVE;
         } else {
           icon = tmp[noop.useContext(noop, closure_11)].icon;
         }
-        tmp5Result = tmp5(8409);
-        const marathonDescription = tmp5(8409).getMarathonDescription(entry);
+        tmp5Result = tmp5(8441);
+        const marathonDescription = tmp5(8441).getMarathonDescription(entry);
         const text = marathonDescription.text;
         let tmp11 = null;
         if (null != text) {
-          const obj2 = { Icon: tmp5(11725).TimerIcon, iconColor: icon, text, accessibilityLabel: tmp10 };
+          const obj2 = { Icon: tmp5(11761).TimerIcon, iconColor: icon, text, accessibilityLabel: tmp10 };
           tmp11 = timestampProducer(closure_16, obj2);
         }
         return tmp11;
@@ -474,7 +474,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   } else {
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { Icon: tmp(13305).NewUserIcon, text: null, iconColor: null };
+      const obj3 = { Icon: tmp(13341).NewUserIcon, text: null, iconColor: null };
       const intl = tmp(1119).intl;
       obj3.text = intl.string(tmp(1119).t.keY6mW);
       STATUS_POSITIVE = nativeDefault.colors.STATUS_POSITIVE;
@@ -489,7 +489,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
 }) : ((entry) => {
   let tmp3 = null;
   if (obj.isEntryNew(entry.entry)) {
-    const obj2 = { Icon: tmp(13305).NewUserIcon, text: null, iconColor: null };
+    const obj2 = { Icon: tmp(13341).NewUserIcon, text: null, iconColor: null };
     const intl = tmp(1119).intl;
     obj2.text = intl.string(tmp(1119).t.keY6mW);
     obj2.iconColor = nativeDefault.colors.STATUS_POSITIVE;
@@ -501,8 +501,8 @@ ReactCompilerGating = fn(558);
 let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   const cResult = c.c(14);
   entry = entry.entry;
-  if (typeof f62908 === "function") {
-    if (typeof f62907 === "function") {
+  if (typeof f62959 === "function") {
+    if (typeof f62958 === "function") {
       const tmp8 = tmp4[noop.useContext(noop, closure_11)];
       if (cResult[0] === tmp8) {
         if (cResult[1] === entry) {
@@ -537,7 +537,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
       }
       const _Symbol = Symbol;
       const forResult = Symbol.for("react.early_return_sentinel");
-      const streakCount = tmp(8409).getStreakCount(entry);
+      const streakCount = tmp(8441).getStreakCount(entry);
       let tmp19 = null;
       let formatToPlainStringResult1;
       let icon;
@@ -548,7 +548,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
         tmp19 = null;
         if (streakCount >= 2) {
           tmp24 = closure_16;
-          FlashIcon = tmp(13307).FlashIcon;
+          FlashIcon = tmp(13343).FlashIcon;
           const intl = tmp(1119).intl;
           const obj3 = { days: streakCount };
           formatToPlainStringResult = intl.formatToPlainString(tmp(1119).t["Klie/P"], obj3);
@@ -573,7 +573,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
       tmp11 = formatToPlainStringResult;
       tmp10 = FlashIcon;
       tmp9 = tmp24;
-      const tmpResult = tmp(8409);
+      const tmpResult = tmp(8441);
     } else {
       throw new TypeError("Trying to call a non-function");
     }
@@ -581,14 +581,14 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
     throw new TypeError("Trying to call a non-function");
   }
 }) : ((arg0) => {
-  if (typeof f62908 === "function") {
-    if (typeof f62907 === "function") {
+  if (typeof f62959 === "function") {
+    if (typeof f62958 === "function") {
       const streakCount = utils.getStreakCount(tmp);
       let tmp10 = null;
       if (null != streakCount) {
         tmp10 = null;
         if (streakCount >= 2) {
-          const obj2 = { Icon: tmp6(13307).FlashIcon, text: null, iconColor: null, accessibilityLabel: null };
+          const obj2 = { Icon: tmp6(13343).FlashIcon, text: null, iconColor: null, accessibilityLabel: null };
           const intl = tmp6(1119).intl;
           const obj3 = { days: streakCount };
           obj2.text = intl.formatToPlainString(tmp6(1119).t["Klie/P"], obj3);
@@ -611,14 +611,14 @@ ReactCompilerGating = fn(558);
 let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let FireIcon = dependencyMap;
   const cResult = c.c(3);
-  if (typeof f62908 === "function") {
-    if (typeof f62907 === "function") {
+  if (typeof f62959 === "function") {
+    if (typeof f62958 === "function") {
       let icon = tmp4[noop.useContext(noop, closure_11)];
-      const trendingType = tmp(8409).getTrendingType(tmp3);
+      const trendingType = tmp(8441).getTrendingType(tmp3);
       let tmp10 = null;
       if (null != trendingType) {
         tmp10 = null;
-        if (trendingType !== tmp(13309).TrendingType.TRENDING_TYPE_UNSPECIFIED) {
+        if (trendingType !== tmp(13345).TrendingType.TRENDING_TYPE_UNSPECIFIED) {
           const _Symbol = Symbol;
           if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
             const intl = tmp(1119).intl;
@@ -630,7 +630,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           if (cResult[1] !== icon.icon) {
             const obj2 = { Icon: null, text: null, iconColor: null };
-            FireIcon = tmp(9992).FireIcon;
+            FireIcon = tmp(10024).FireIcon;
             obj2.Icon = FireIcon;
             obj2.text = icon2;
             icon2 = icon.icon;
@@ -650,14 +650,14 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     throw new TypeError("Trying to call a non-function");
   }
 }) : ((arg0) => {
-  if (typeof f62908 === "function") {
-    if (typeof f62907 === "function") {
+  if (typeof f62959 === "function") {
+    if (typeof f62958 === "function") {
       const trendingType = utils.getTrendingType(tmp);
       let tmp10 = null;
       if (null != trendingType) {
         tmp10 = null;
-        if (trendingType !== tmp6(13309).TrendingType.TRENDING_TYPE_UNSPECIFIED) {
-          const obj2 = { Icon: tmp6(9992).FireIcon, text: null, iconColor: null };
+        if (trendingType !== tmp6(13345).TrendingType.TRENDING_TYPE_UNSPECIFIED) {
+          const obj2 = { Icon: tmp6(10024).FireIcon, text: null, iconColor: null };
           const intl = tmp6(1119).intl;
           obj2.text = intl.string(tmp6(1119).t.TsWCdW);
           obj2.iconColor = tmp2[noop.useContext(noop, closure_11)].icon;
@@ -676,8 +676,8 @@ ReactCompilerGating = fn(558);
 let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let RetryIcon = dependencyMap;
   const cResult = c.c(3);
-  if (typeof f62908 === "function") {
-    if (typeof f62907 === "function") {
+  if (typeof f62959 === "function") {
+    if (typeof f62958 === "function") {
       let icon = tmp4[noop.useContext(noop, closure_11)];
       if (null == tmpResult.getResurrectedEntryLastPlayTime(tmp3)) {
         return null;
@@ -693,7 +693,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[1] !== icon.icon) {
           const obj2 = { Icon: null, text: null, iconColor: null };
-          RetryIcon = tmp(11860).RetryIcon;
+          RetryIcon = tmp(11896).RetryIcon;
           obj2.Icon = RetryIcon;
           obj2.text = icon2;
           icon2 = icon.icon;
@@ -704,7 +704,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           cResult[2] = tmp14;
         }
       }
-      tmpResult = tmp(8409);
+      tmpResult = tmp(8441);
     } else {
       throw new TypeError("Trying to call a non-function");
     }
@@ -712,11 +712,11 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     throw new TypeError("Trying to call a non-function");
   }
 }) : ((arg0) => {
-  if (typeof f62908 === "function") {
-    if (typeof f62907 === "function") {
+  if (typeof f62959 === "function") {
+    if (typeof f62958 === "function") {
       let tmp8 = null;
       if (null != obj.getResurrectedEntryLastPlayTime(tmp)) {
-        const obj2 = { Icon: tmp6(11860).RetryIcon, text: null, iconColor: null };
+        const obj2 = { Icon: tmp6(11896).RetryIcon, text: null, iconColor: null };
         const intl = tmp6(1119).intl;
         obj2.text = intl.string(tmp6(1119).t.adnLsB);
         obj2.iconColor = tmp2[noop.useContext(noop, closure_11)].icon;
@@ -733,10 +733,10 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 ReactCompilerGating = fn(558);
 let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = c.c(8);
-  if (typeof f62908 === "function") {
-    if (typeof f62907 === "function") {
+  if (typeof f62959 === "function") {
+    if (typeof f62958 === "function") {
       const tmp9 = tmp5[noop.useContext(noop, closure_11)];
-      const entryDuration = tmp(8409).getEntryDuration(tmp4);
+      const entryDuration = tmp(8441).getEntryDuration(tmp4);
       if (null == entryDuration) {
         return null;
       } else {
@@ -778,14 +778,14 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           return tmp21;
         }
-        const obj4 = { Icon: tmp(8989).TrophyIcon, text: tmp17, iconColor: tmp9.icon };
+        const obj4 = { Icon: tmp(9021).TrophyIcon, text: tmp17, iconColor: tmp9.icon };
         const tmp24 = timestampProducer(closure_16, obj4);
         cResult[5] = tmp9.icon;
         cResult[6] = tmp17;
         cResult[7] = tmp24;
         tmp21 = tmp24;
       }
-      const tmpResult = tmp(8409);
+      const tmpResult = tmp(8441);
     } else {
       throw new TypeError("Trying to call a non-function");
     }
@@ -793,13 +793,13 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     throw new TypeError("Trying to call a non-function");
   }
 }) : ((arg0) => {
-  if (typeof f62908 === "function") {
-    if (typeof f62907 === "function") {
+  if (typeof f62959 === "function") {
+    if (typeof f62958 === "function") {
       const entryDuration = utils.getEntryDuration(tmp);
       if (null == entryDuration) {
         return null;
       } else {
-        const obj2 = { Icon: tmp6(8989).TrophyIcon, text: null, iconColor: null };
+        const obj2 = { Icon: tmp6(9021).TrophyIcon, text: null, iconColor: null };
         const obj3 = { children: null };
         const intl = tmp6(1119).intl;
         const items = [intl.string(tmp6(1119).t["/50eHi"]), ": ", ];
@@ -835,7 +835,7 @@ export const TopGameBadge = tmp13;
 export const CustomStatusTimestampBadge = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   const cResult = c.c(8);
   entry = entry.entry;
-  if (typeof f62907 === "function") {
+  if (typeof f62958 === "function") {
     const tmp4Result = tmp4(noop.useContext(closure_11));
     if (cResult[0] !== tmp4Result.icon) {
       const obj2 = { style: tmp4Result.icon, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
@@ -876,7 +876,7 @@ export const CustomStatusTimestampBadge = ReactCompilerGating.isReactCompilerEna
     throw new TypeError("Trying to call a non-function");
   }
 }) : ((arg0) => {
-  if (typeof f62907 === "function") {
+  if (typeof f62958 === "function") {
     const tmp2Result = tmp2(noop.useContext(closure_11));
     obj = { style: tmp2Result.badgeContainer, children: null };
     const obj2 = { style: tmp2Result.icon, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };

@@ -1,19 +1,19 @@
-// Module ID: 5839
-// Function ID: 5840
+// Module ID: 5871
+// Function ID: 5872
 // Name: NavigatorHeader
-// Dependencies: [5, 109, 19, 17, 1078, 21, 4758, 580, 4754, 558, 568, 5840, 5843, 1489, 5845, 1119, 5846, 5848, 1368, 1616, 5897, 2]
+// Dependencies: [5, 109, 19, 17, 1078, 21, 4790, 580, 4786, 558, 568, 5872, 5875, 1489, 5877, 1119, 5878, 5880, 1368, 1616, 5929, 2]
 // Exports: getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 5839 (NavigatorHeader)
+// Module 5871 (NavigatorHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 5840 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5843 */;
-import XSmallIcon from "XSmallIcon" /* 5846 */;
-import _mod5848 from "module_5848" /* 5848 */;
-import NavigatorConstants from "NavigatorConstants" /* 5897 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 5872 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5875 */;
+import XSmallIcon from "XSmallIcon" /* 5878 */;
+import _mod5880 from "module_5880" /* 5880 */;
+import NavigatorConstants from "NavigatorConstants" /* 5929 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -26,10 +26,10 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_8, ActivityIndicator: closure_9 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { fauxHeaderWrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, overflow: "hidden" }, headerTitle: null, headerBackTitleStyle: null, navigatorHeaderTitleContainer: null, navigatorHeaderContainer: null, navigatorHeaderSubtitle: null, headerButtonIcon: null, submittingIndicator: null };
 let obj4 = {};
-let merged = Object.assign(fn(4754).TextStyleSheet["redesign/heading-18/bold"]);
+let merged = Object.assign(fn(4786).TextStyleSheet["redesign/heading-18/bold"]);
 obj4.color = nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY;
 obj2.headerTitle = obj4;
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
@@ -98,7 +98,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     } else {
       tmp12 = cResult[7];
     }
-    tmp(5845).useNavigatorBackPressHandler(tmp12);
+    tmp(5877).useNavigatorBackPressHandler(tmp12);
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1119).intl;
@@ -136,13 +136,13 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     obj2.displayMode = "minimal";
     obj2.backImage = tmp17;
     obj2.accessibilityLabel = tmp15;
-    const tmp23 = closure_10(tmp(5848).HeaderBackButton, obj2);
+    const tmp23 = closure_10(tmp(5880).HeaderBackButton, obj2);
     cResult[11] = tmp11;
     cResult[12] = tmp5;
     cResult[13] = tmp17;
     cResult[14] = tmp23;
     tmp18 = tmp23;
-    const tmpResult2 = tmp(5845);
+    const tmpResult2 = tmp(5877);
   }
   let fn = tmp4;
   if (tmp4 == null) {
@@ -184,7 +184,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     return v65535(XSmallIcon.XSmallIcon, obj);
   };
   obj2.accessibilityLabel = stringResult;
-  return closure_10(require("module_5848").HeaderBackButton, obj2);
+  return closure_10(require("module_5880").HeaderBackButton, obj2);
 });
 ReactCompilerGating = fn(558);
 let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
@@ -236,7 +236,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   obj2.onPress = tmp4;
   obj2.displayMode = "minimal";
   obj2.backImage = tmp11;
-  const tmp14 = closure_10(require("module_5848").HeaderBackButton, obj2);
+  const tmp14 = closure_10(require("module_5880").HeaderBackButton, obj2);
   cResult[6] = tmp4;
   cResult[7] = tmp5;
   cResult[8] = tmp14;
@@ -244,7 +244,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
 }) : ((onPress) => {
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.assign({ onPress: 0 }));
-  onPress(5845).useNavigatorBackPressHandler(() => {
+  onPress(5877).useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       tmp();
     }
@@ -257,7 +257,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   obj2.backImage = function backImage() {
     return closure_1_10(closure_1_13, {});
   };
-  return closure_10(onPress(5848).HeaderBackButton, obj2);
+  return closure_10(onPress(5880).HeaderBackButton, obj2);
 });
 ReactCompilerGating = fn(558);
 let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderTextButton(arg0) {
@@ -329,7 +329,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     obj3.labelStyle = tmp14;
     obj3.backImage = tmp16;
     obj3.accessibilityLabel = undefined;
-    const tmp23 = v65535(tmp(5848).HeaderBackButton, obj3);
+    const tmp23 = v65535(tmp(5880).HeaderBackButton, obj3);
     cResult[10] = tmp14;
     cResult[11] = tmp4;
     cResult[12] = undefined;
@@ -362,7 +362,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     tmp5 = text;
   }
   obj2.accessibilityLabel = tmp5;
-  return v65535(_mod5848.HeaderBackButton, obj2);
+  return v65535(_mod5880.HeaderBackButton, obj2);
 });
 ReactCompilerGating = fn(558);
 let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -372,7 +372,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp5 = HeaderDebugOverlayDefault("js-stack");
   if (cResult[0] !== title) {
     const obj2 = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: title };
-    const tmp8 = v65535(tmp(4754).Text, obj2);
+    const tmp8 = v65535(tmp(4786).Text, obj2);
     cResult[0] = title;
     cResult[1] = tmp8;
     let tmp6 = tmp8;
@@ -415,7 +415,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (tmp13) {
         const obj4 = { lineClamp: 1, style: tmp4.navigatorHeaderSubtitle, variant: "text-xs/medium", color: "text-muted", children: subtitle };
-        tmp13 = v65535(tmp(4754).Text, obj4);
+        tmp13 = v65535(tmp(4786).Text, obj4);
       }
       cResult[6] = tmp4.navigatorHeaderSubtitle;
       cResult[7] = subtitle;

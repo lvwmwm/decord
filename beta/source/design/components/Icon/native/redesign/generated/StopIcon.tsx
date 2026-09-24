@@ -1,13 +1,13 @@
-// Module ID: 16257
-// Function ID: 16258
+// Module ID: 16267
+// Function ID: 16268
 // Name: StopIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 16258, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 16268, 4493, 2]
 
-// Module 16257 (StopIcon)
+// Module 16267 (StopIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod16258 from "module_16258" /* 16258 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod16268 from "module_16268" /* 16268 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const StopIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(16258);
+    const tmpResult = tmp(16268);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const StopIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16258, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod16268, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

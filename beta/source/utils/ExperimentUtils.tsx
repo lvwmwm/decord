@@ -1,13 +1,13 @@
-// Module ID: 8140
-// Function ID: 8141
+// Module ID: 8172
+// Function ID: 8173
 // Name: ExperimentUtils
-// Dependencies: [32, 4674, 4675, 4679, 12, 2]
+// Dependencies: [32, 4706, 4707, 4711, 12, 2]
 
-// Module 8140 (ExperimentUtils)
+// Module 8172 (ExperimentUtils)
 import _modDef12 from "module_12" /* 12 */;
-import ExperimentManager from "ExperimentManager" /* 4679 */;
+import ExperimentManager from "ExperimentManager" /* 4711 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 4674 */;
+import ExperimentStore from "ExperimentStore" /* 4706 */;
 
 require = fn;
 function getFirstEligibleUserExperiment(arg0) {
@@ -24,7 +24,7 @@ function getFirstEligibleUserExperiment(arg0) {
   }
   return null;
 }
-const ExperimentConstants = fn(4675);
+const ExperimentConstants = fn(4707);
 ({ ExperimentTypes: hasOwnProperty, ExperimentBuckets: metroRequire } = ExperimentConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("utils/ExperimentUtils.tsx");

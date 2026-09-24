@@ -1,13 +1,13 @@
-// Module ID: 6068
-// Function ID: 6069
+// Module ID: 6100
+// Function ID: 6101
 // Name: CaterpillarIllocon
-// Dependencies: [21, 558, 568, 6069, 5802, 2]
+// Dependencies: [21, 558, 568, 6101, 5834, 2]
 
-// Module 6068 (CaterpillarIllocon)
+// Module 6100 (CaterpillarIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6069 from "module_6069" /* 6069 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6101 from "module_6101" /* 6101 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const CaterpillarIllocon = ReactCompilerGating.isReactCompilerEnabled() ?
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6069 };
+    const obj2 = { uri: _modDef6101 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const CaterpillarIllocon = ReactCompilerGating.isReactCompilerEnabled() ?
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6069 };
+  const obj2 = { uri: _modDef6101 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

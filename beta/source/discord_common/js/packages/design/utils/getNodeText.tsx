@@ -1,9 +1,9 @@
-// Module ID: 4466
-// Function ID: 4467
+// Module ID: 4498
+// Function ID: 4499
 // Name: utils/getNodeText
 // Dependencies: [19, 2]
 
-// Module 4466 (utils/getNodeText)
+// Module 4498 (utils/getNodeText)
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

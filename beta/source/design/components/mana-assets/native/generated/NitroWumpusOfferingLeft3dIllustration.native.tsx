@@ -1,13 +1,13 @@
-// Module ID: 6560
-// Function ID: 6561
+// Module ID: 6592
+// Function ID: 6593
 // Name: NitroWumpusOfferingLeft3dIllustration
-// Dependencies: [21, 558, 568, 6561, 5802, 2]
+// Dependencies: [21, 558, 568, 6593, 5834, 2]
 
-// Module 6560 (NitroWumpusOfferingLeft3dIllustration)
+// Module 6592 (NitroWumpusOfferingLeft3dIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6561 from "module_6561" /* 6561 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6593 from "module_6593" /* 6593 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const NitroWumpusOfferingLeft3dIllustration = ReactCompilerGating.isReact
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6561 };
+    const obj2 = { uri: _modDef6593 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const NitroWumpusOfferingLeft3dIllustration = ReactCompilerGating.isReact
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6561 };
+  const obj2 = { uri: _modDef6593 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

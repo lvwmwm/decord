@@ -1,19 +1,19 @@
-// Module ID: 13805
-// Function ID: 13806
+// Module ID: 13841
+// Function ID: 13842
 // Name: GuildBoostingGuildList
-// Dependencies: [19, 17, 2067, 5657, 1078, 21, 4758, 580, 558, 568, 4693, 7586, 7236, 504, 4667, 5799, 4754, 10705, 1119, 13774, 10017, 2]
+// Dependencies: [19, 17, 2067, 5689, 1078, 21, 4790, 580, 558, 568, 4725, 7618, 7268, 504, 4699, 5831, 4786, 10741, 1119, 13810, 10056, 2]
 
-// Module 13805 (GuildBoostingGuildList)
+// Module 13841 (GuildBoostingGuildList)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 4667 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7236 */;
-import transitionToGuild from "transitionToGuild" /* 7586 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 4699 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7268 */;
+import transitionToGuild from "transitionToGuild" /* 7618 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import SortedGuildStore from "SortedGuildStore" /* 5657 */;
+import SortedGuildStore from "SortedGuildStore" /* 5689 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -21,7 +21,7 @@ get_ActivityIndicator = fn(17);
 let closure_7 = fn(1078).NUMBER_OF_GUILDS_TO_RECOMMEND_BOOSTING;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { guildCard: { padding: 12, paddingLeft: 16, borderRadius: nativeDefault.radii.xs, marginBottom: 8, minHeight: 96, flexDirection: "row", justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, guildIcon: { marginRight: 16 }, guildCardDescription: { flex: 1 }, subscriptionInfo: { flexDirection: "row", alignItems: "center" }, premiumGuildImage: { width: 18, height: 12, marginLeft: -5 } };
 let closure_10 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -84,12 +84,12 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         return closure_5.getGuild(guildId);
       }
     }
-    const obj2 = { guild: stateFromStores, size: tmp(5799).GuildIconSizes.LARGE, style: tmp4.guildIcon, selected: false };
-    const tmp16 = closure_8(tmp5(5799), obj2);
+    const obj2 = { guild: stateFromStores, size: tmp(5831).GuildIconSizes.LARGE, style: tmp4.guildIcon, selected: false };
+    const tmp16 = closure_8(tmp5(5831), obj2);
     cResult[5] = stateFromStores;
     cResult[6] = tmp4.guildIcon;
     cResult[7] = tmp16;
-    const tmp5Result2 = tmp5(5799);
+    const tmp5Result2 = tmp5(5831);
   }
 }) : ((guildId) => {
   guildId = guildId.guildId;
@@ -114,30 +114,30 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       children: null
     };
     const obj3 = { guild: stateFromStores, size: null, style: null, selected: false };
-    const tmp2Result = tmp2(10017);
-    obj3.size = tmp5(5799).GuildIconSizes.LARGE;
+    const tmp2Result = tmp2(10056);
+    obj3.size = tmp5(5831).GuildIconSizes.LARGE;
     obj3.style = tmp.guildIcon;
-    const items1 = [closure_8(tmp2(5799), obj3), , ];
+    const items1 = [closure_8(tmp2(5831), obj3), , ];
     const obj4 = { style: tmp.guildCardDescription, children: null };
     const obj5 = { variant: "text-md/bold", children: stateFromStores.name };
-    const items2 = [closure_8(tmp5(4754).Text, obj5), ];
+    const items2 = [closure_8(tmp5(4786).Text, obj5), ];
     const obj6 = { style: tmp.subscriptionInfo, children: null };
-    const obj7 = { source: tmp2(10705), style: tmp.premiumGuildImage, resizeMode: "contain", resizeMethod: "resize" };
+    const obj7 = { source: tmp2(10741), style: tmp.premiumGuildImage, resizeMode: "contain", resizeMethod: "resize" };
     const items3 = [closure_8(closure_4, obj7), ];
     const obj8 = { variant: "text-xs/medium", children: null };
     const intl = tmp5(1119).intl;
     const obj9 = { subscriberCount: tmp8 };
     obj8.children = intl.format(tmp5(1119).t.If4iTS, obj9);
-    items3[1] = closure_8(tmp5(4754).Text, obj8);
+    items3[1] = closure_8(tmp5(4786).Text, obj8);
     obj6.children = items3;
     items2[1] = closure_9(closure_3, obj6);
     obj4.children = items2;
     items1[1] = closure_9(closure_3, obj4);
     const obj10 = { guild: stateFromStores, theme: tmp4 };
-    items1[2] = closure_8(tmp2(13774), obj10);
+    items1[2] = closure_8(tmp2(13810), obj10);
     obj2.children = items1;
     tmp9 = closure_9(tmp2Result, obj2);
-    const tmp2Result2 = tmp2(5799);
+    const tmp2Result2 = tmp2(5831);
   }
   return tmp9;
 });

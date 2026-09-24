@@ -1,19 +1,19 @@
-// Module ID: 12181
-// Function ID: 12182
+// Module ID: 12217
+// Function ID: 12218
 // Name: AppLauncherNativeUtils
-// Dependencies: [19, 2045, 1376, 1487, 1078, 5212, 4938, 7770, 12182, 7768, 1982, 8025, 1972, 9401, 1401, 558, 568, 11469, 9687, 12187, 7415, 9572, 4726, 2]
+// Dependencies: [19, 2045, 1376, 1487, 1078, 5244, 4970, 7802, 12218, 7800, 1982, 8057, 1972, 9433, 1401, 558, 568, 11505, 9719, 12223, 7447, 9604, 4758, 2]
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected
 
-// Module 12181 (AppLauncherNativeUtils)
+// Module 12217 (AppLauncherNativeUtils)
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
 import _modDef1972 from "module_1972" /* 1972 */;
 import Server from "Server" /* 1982 */;
-import HapticUtils from "HapticUtils" /* 4726 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7768 */;
-import ApplicationCommandActionCreatorsAll from "ApplicationCommandActionCreators" /* 8025 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9401 */;
-import FrecencySection from "FrecencySection" /* 12182 */;
+import HapticUtils from "HapticUtils" /* 4758 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4970 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7800 */;
+import ApplicationCommandActionCreatorsAll from "ApplicationCommandActionCreators" /* 8057 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9433 */;
+import FrecencySection from "FrecencySection" /* 12218 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1376 */;
@@ -24,7 +24,7 @@ require = fn;
 const AppLauncherNativeConstants = fn(1487);
 ({ APP_LAUNCHER_BUILT_IN_SECTION_ICON: closure_7, AppLauncherRouteName: closure_8 } = AppLauncherNativeConstants);
 const AnalyticEvents = fn(1078).AnalyticEvents;
-const BuiltInSectionId = fn(5212).BuiltInSectionId;
+const BuiltInSectionId = fn(5244).BuiltInSectionId;
 fn(558);
 const ReactCompilerGating = fn(558);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
@@ -84,9 +84,9 @@ export const handleApplicationSelected = function handleApplicationSelected(entr
   entrypoint = entrypoint.entrypoint;
   const obj2 = { location: _location, section: null, application_id: null, section_name: null, query: null, search_results_position: null, source: null };
   if (application.id === BuiltInSectionId.BUILT_IN) {
-    let APP = tmp(7770).ApplicationCommandTriggerSections.BUILT_IN;
+    let APP = tmp(7802).ApplicationCommandTriggerSections.BUILT_IN;
   } else {
-    APP = tmp(7770).ApplicationCommandTriggerSections.APP;
+    APP = tmp(7802).ApplicationCommandTriggerSections.APP;
   }
   obj2.section = APP;
   let id = application.id;

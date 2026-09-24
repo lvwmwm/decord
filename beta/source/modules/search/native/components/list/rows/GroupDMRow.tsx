@@ -1,15 +1,15 @@
-// Module ID: 17127
-// Function ID: 17128
+// Module ID: 17137
+// Function ID: 17138
 // Name: rows/GroupDMRow
-// Dependencies: [19, 21, 558, 568, 4911, 11216, 1181, 11217, 4754, 17126, 2]
+// Dependencies: [19, 21, 558, 568, 4943, 11252, 1181, 11253, 4786, 17136, 2]
 
-// Module 17127 (rows/GroupDMRow)
+// Module 17137 (rows/GroupDMRow)
 import c from "c" /* 568 */;
 import native from "native" /* 1181 */;
-import useChannelNameDefault from "useChannelName" /* 4911 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 11216 */;
-import useRecipientsLabel from "useRecipientsLabel" /* 11217 */;
-import SearchListRow from "SearchListRow" /* 17126 */;
+import useChannelNameDefault from "useChannelName" /* 4943 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 11252 */;
+import useRecipientsLabel from "useRecipientsLabel" /* 11253 */;
+import SearchListRow from "SearchListRow" /* 17136 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -38,12 +38,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     } else {
       tmp7 = cResult[4];
     }
-    const recipientsLabel = tmp(11217).useRecipientsLabel(channel);
+    const recipientsLabel = tmp(11253).useRecipientsLabel(channel);
     if (cResult[5] !== recipientsLabel) {
       let tmp14;
       if (null != recipientsLabel) {
         const obj3 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
-        tmp14 = jsx(tmp(4754).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel });
+        tmp14 = jsx(tmp(4786).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel });
       }
       cResult[5] = recipientsLabel;
       cResult[6] = tmp14;
@@ -78,7 +78,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
     const obj4 = { label: str, icon: tmp7, onPress: tmp6, accessibilityLabel: str2, subLabel: tmp12, trailing, accessibilityActions, onAccessibilityAction };
-    const tmp19 = jsx(tmp(17126).SearchListRow, { label: str, icon: tmp7, onPress: tmp6, accessibilityLabel: str2, subLabel: tmp12, trailing, accessibilityActions, onAccessibilityAction });
+    const tmp19 = jsx(tmp(17136).SearchListRow, { label: str, icon: tmp7, onPress: tmp6, accessibilityLabel: str2, subLabel: tmp12, trailing, accessibilityActions, onAccessibilityAction });
     cResult[7] = accessibilityActions;
     cResult[8] = tmp6;
     cResult[9] = tmp7;
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     cResult[14] = trailing;
     cResult[15] = tmp19;
     tmp17 = tmp19;
-    const tmpResult = tmp(11217);
+    const tmpResult = tmp(11253);
   }
   const fn = function n() {
     onPress(channel.id);
@@ -113,7 +113,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let tmp3Result;
   if (null != recipientsLabel) {
     const obj3 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
-    tmp3Result = tmp3(tmp5(4754).Text, obj3);
+    tmp3Result = tmp3(tmp5(4786).Text, obj3);
   }
   let str2 = str;
   if (str == null) {

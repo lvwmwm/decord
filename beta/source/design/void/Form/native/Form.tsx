@@ -1,18 +1,18 @@
-// Module ID: 7386
-// Function ID: 7387
+// Module ID: 7418
+// Function ID: 7419
 // Name: Form/Form
-// Dependencies: [19, 17, 21, 4758, 558, 568, 7224, 5902, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 7256, 5934, 2]
 
-// Module 7386 (Form/Form)
+// Module 7418 (Form/Form)
 import c from "c" /* 568 */;
-import RedesignCompat from "RedesignCompat" /* 5902 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7224 */;
+import RedesignCompat from "RedesignCompat" /* 5934 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7256 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ScrollView = fn(17).ScrollView;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ form: { flex: 1 }, redesign: { paddingTop: 16 } });
 let context = noop.createContext({ isForm: false });
 const ReactCompilerGating = fn(558);

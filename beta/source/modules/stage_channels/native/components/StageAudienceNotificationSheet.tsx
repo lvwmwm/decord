@@ -1,20 +1,20 @@
-// Module ID: 8873
-// Function ID: 8874
+// Module ID: 8905
+// Function ID: 8906
 // Name: StageAudienceNotificationSheet
-// Dependencies: [19, 17, 2050, 5633, 2051, 21, 4758, 580, 4725, 558, 568, 1181, 504, 5802, 8874, 1119, 4754, 8875, 8876, 8897, 8898, 8899, 5188, 8900, 2]
+// Dependencies: [19, 17, 2050, 5665, 2051, 21, 4790, 580, 4757, 558, 568, 1181, 504, 5834, 8906, 1119, 4786, 8907, 8908, 8929, 8930, 8931, 5220, 8932, 2]
 
-// Module 8873 (StageAudienceNotificationSheet)
+// Module 8905 (StageAudienceNotificationSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef8874 from "module_8874" /* 8874 */;
-import _modDef8875 from "module_8875" /* 8875 */;
-import _modDef8897 from "module_8897" /* 8897 */;
-import _modDef8898 from "module_8898" /* 8898 */;
-import _modDef8899 from "module_8899" /* 8899 */;
-import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 8900 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef8906 from "module_8906" /* 8906 */;
+import _modDef8907 from "module_8907" /* 8907 */;
+import _modDef8929 from "module_8929" /* 8929 */;
+import _modDef8930 from "module_8930" /* 8930 */;
+import _modDef8931 from "module_8931" /* 8931 */;
+import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 8932 */;
 import noop from "module_19" /* 19 */;
 import StageInstanceStore from "StageInstanceStore" /* 2050 */;
 
@@ -23,11 +23,11 @@ function handleDismiss() {
   ActionSheetActionCreatorsDefault.hideActionSheet(closure_5);
 }
 const View = fn(17).View;
-let closure_5 = fn(5633).STAGE_AUDIENCE_NOTICE_SHEET_KEY;
+let closure_5 = fn(5665).STAGE_AUDIENCE_NOTICE_SHEET_KEY;
 const constants = fn(2051).GuildScheduledEventPrivacyLevel;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: 16 }, header: { alignItems: "center", paddingVertical: 16 }, headerImage: {}, headerTitle: { marginTop: 16, marginBottom: 8 }, headerBulletIconContainer: null, headerBulletIconComponent: null, headerBulletList: null, headerBullet: null, startButton: null };
 let size = { alignItems: "center", justifyContent: "center", height: 40, width: 40, borderRadius: 20, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 obj2.headerBulletIconContainer = size;
@@ -102,7 +102,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   }
   ({ container, header } = tmp4);
   if (cResult[3] !== tmp4.headerImage) {
-    const obj2 = { source: _modDef8874, style: tmp4.headerImage };
+    const obj2 = { source: _modDef8906, style: tmp4.headerImage };
     const tmp14 = closure_7(FastImageDefault, obj2);
     cResult[3] = tmp4.headerImage;
     cResult[4] = tmp14;
@@ -120,7 +120,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   }
   if (cResult[6] !== tmp4.headerTitle) {
     const obj3 = { style: tmp4.headerTitle, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp15 };
-    const tmp19 = closure_7(tmp(4754).Text, obj3);
+    const tmp19 = closure_7(tmp(4786).Text, obj3);
     cResult[6] = tmp4.headerTitle;
     cResult[7] = tmp19;
     let tmp17 = tmp19;
@@ -128,7 +128,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     tmp17 = cResult[7];
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { source: _modDef8875 };
+    const obj4 = { source: _modDef8907 };
     const tmp24 = closure_7(closure_11, obj4);
     cResult[8] = tmp24;
     let tmp20 = tmp24;
@@ -146,8 +146,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   if (cResult[10] !== tmp4.headerBullet) {
     const obj5 = { leading: tmp20, label: null };
     const obj6 = { style: tmp4.headerBullet, variant: "text-md/medium", color: "text-default", children: tmp25 };
-    obj5.label = closure_7(tmp(4754).Text, obj6);
-    const tmp29 = closure_7(tmp(8876).FormRow, obj5);
+    obj5.label = closure_7(tmp(4786).Text, obj6);
+    const tmp29 = closure_7(tmp(8908).FormRow, obj5);
     cResult[10] = tmp4.headerBullet;
     cResult[11] = tmp29;
     let tmp27 = tmp29;
@@ -155,7 +155,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     tmp27 = cResult[11];
   }
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj7 = { source: _modDef8897 };
+    const obj7 = { source: _modDef8929 };
     const tmp34 = closure_7(closure_11, obj7);
     cResult[12] = tmp34;
     let tmp30 = tmp34;
@@ -173,8 +173,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   if (cResult[14] !== tmp4.headerBullet) {
     const obj8 = { leading: tmp30, label: null };
     const obj9 = { style: tmp4.headerBullet, variant: "text-md/medium", color: "text-default", children: tmp35 };
-    obj8.label = closure_7(tmp(4754).Text, obj9);
-    const tmp39 = closure_7(tmp(8876).FormRow, obj8);
+    obj8.label = closure_7(tmp(4786).Text, obj9);
+    const tmp39 = closure_7(tmp(8908).FormRow, obj8);
     cResult[14] = tmp4.headerBullet;
     cResult[15] = tmp39;
     let tmp37 = tmp39;
@@ -182,7 +182,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     tmp37 = cResult[15];
   }
   if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj10 = { source: _modDef8898 };
+    const obj10 = { source: _modDef8930 };
     const tmp44 = closure_7(closure_11, obj10);
     cResult[16] = tmp44;
     let tmp40 = tmp44;
@@ -200,8 +200,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   if (cResult[18] !== tmp4.headerBullet) {
     const obj11 = { leading: tmp40, label: null };
     const obj12 = { style: tmp4.headerBullet, variant: "text-md/medium", color: "text-default", children: tmp45 };
-    obj11.label = closure_7(tmp(4754).Text, obj12);
-    const tmp49 = closure_7(tmp(8876).FormRow, obj11);
+    obj11.label = closure_7(tmp(4786).Text, obj12);
+    const tmp49 = closure_7(tmp(8908).FormRow, obj11);
     cResult[18] = tmp4.headerBullet;
     cResult[19] = tmp49;
     let tmp47 = tmp49;
@@ -231,7 +231,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
                     const intl6 = tmp(1119).intl;
                     obj13.text = intl6.string(tmp(1119).t.obLqZ8);
                     obj13.onPress = handleDismiss;
-                    const tmp67 = closure_7(tmp(5188).Button, obj13);
+                    const tmp67 = closure_7(tmp(5220).Button, obj13);
                     cResult[34] = tmp67;
                     let tmp64 = tmp67;
                   } else {
@@ -297,13 +297,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let tmp52 = null;
   if (privacy_level === constants.PUBLIC) {
     const obj19 = { leading: null, label: null };
-    const obj20 = { source: _modDef8899 };
+    const obj20 = { source: _modDef8931 };
     obj19.leading = closure_7(closure_11, obj20);
     const obj21 = { style: tmp4.headerBullet, variant: "text-md/medium", color: "text-default", children: null };
     const intl5 = tmp(1119).intl;
     obj21.children = intl5.string(tmp(1119).t.nDsbJg);
-    obj19.label = closure_7(tmp(4754).Text, obj21);
-    tmp52 = closure_7(tmp(8876).FormRow, obj19);
+    obj19.label = closure_7(tmp(4786).Text, obj21);
+    tmp52 = closure_7(tmp(8908).FormRow, obj19);
   }
   cResult[20] = privacy_level === constants.PUBLIC;
   cResult[21] = tmp4.headerBullet;
@@ -323,48 +323,48 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const obj = channelId(504);
   const obj4 = { source: null, style: null };
   const tmp8 = ScrollHandlingActionSheetDefault;
-  obj4.source = _modDef8874;
+  obj4.source = _modDef8906;
   obj4.style = tmp.headerImage;
   const items1 = [closure_7(FastImageDefault, obj4), , ];
   const obj5 = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = tmp2(1119).intl;
   obj5.children = intl.string(channelId(1119).t.UVuXCs);
-  items1[1] = closure_7(channelId(4754).Text, obj5);
+  items1[1] = closure_7(channelId(4786).Text, obj5);
   const obj6 = { style: tmp.headerBulletList, children: null };
   const obj7 = { leading: null, label: null };
-  obj7.leading = closure_7(closure_11, { source: _modDef8875 });
+  obj7.leading = closure_7(closure_11, { source: _modDef8907 });
   const obj9 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default", children: null };
   const intl2 = tmp2(1119).intl;
   obj9.children = intl2.string(channelId(1119).t.sBDfo6);
-  obj7.label = closure_7(channelId(4754).Text, obj9);
-  const items2 = [closure_7(channelId(8876).FormRow, obj7), , , ];
+  obj7.label = closure_7(channelId(4786).Text, obj9);
+  const items2 = [closure_7(channelId(8908).FormRow, obj7), , , ];
   const obj10 = { leading: null, label: null };
-  const obj8 = { source: _modDef8875 };
+  const obj8 = { source: _modDef8907 };
   const tmp12 = closure_11;
-  obj10.leading = closure_7(closure_11, { source: _modDef8897 });
+  obj10.leading = closure_7(closure_11, { source: _modDef8929 });
   const obj12 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default", children: null };
   const intl3 = tmp2(1119).intl;
   obj12.children = intl3.string(channelId(1119).t.x58YtH);
-  obj10.label = closure_7(channelId(4754).Text, obj12);
-  items2[1] = closure_7(channelId(8876).FormRow, obj10);
+  obj10.label = closure_7(channelId(4786).Text, obj12);
+  items2[1] = closure_7(channelId(8908).FormRow, obj10);
   const obj13 = { leading: null, label: null };
-  const obj11 = { source: _modDef8897 };
-  obj13.leading = closure_7(closure_11, { source: _modDef8898 });
+  const obj11 = { source: _modDef8929 };
+  obj13.leading = closure_7(closure_11, { source: _modDef8930 });
   const obj15 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default", children: null };
   const intl4 = tmp2(1119).intl;
   obj15.children = intl4.string(channelId(1119).t.XtVqla);
-  obj13.label = closure_7(channelId(4754).Text, obj15);
-  items2[2] = closure_7(channelId(8876).FormRow, obj13);
+  obj13.label = closure_7(channelId(4786).Text, obj15);
+  items2[2] = closure_7(channelId(8908).FormRow, obj13);
   let tmp6Result = null;
   if (privacy_level === constants.PUBLIC) {
     const obj16 = { leading: null, label: null };
-    const obj17 = { source: _modDef8899 };
+    const obj17 = { source: _modDef8931 };
     obj16.leading = tmp6(tmp12, obj17);
     const obj18 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default", children: null };
     const intl6 = tmp2(1119).intl;
     obj18.children = intl6.string(tmp2(1119).t.nDsbJg);
-    obj16.label = tmp6(tmp2(4754).Text, obj18);
-    tmp6Result = tmp6(tmp2(8876).FormRow, obj16);
+    obj16.label = tmp6(tmp2(4786).Text, obj18);
+    tmp6Result = tmp6(tmp2(8908).FormRow, obj16);
   }
   const obj19 = { children: null };
   items2[3] = tmp6Result;
@@ -377,7 +377,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const intl5 = tmp2(1119).intl;
   obj21.text = intl5.string(channelId(1119).t.obLqZ8);
   obj21.onPress = handleDismiss;
-  obj20.children = closure_7(channelId(5188).Button, obj21);
+  obj20.children = closure_7(channelId(5220).Button, obj21);
   items3[1] = closure_7(View, obj20);
   obj2.children = items3;
   obj19.children = closure_8(View, obj2);

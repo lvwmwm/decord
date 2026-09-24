@@ -1,16 +1,16 @@
-// Module ID: 12380
-// Function ID: 12381
+// Module ID: 12416
+// Function ID: 12417
 // Name: ChatInputImageCarousel
-// Dependencies: [19, 8027, 5107, 5106, 9650, 21, 558, 568, 504, 10927, 2]
+// Dependencies: [19, 8059, 5139, 5138, 9682, 21, 558, 568, 504, 10963, 2]
 
-// Module 12380 (ChatInputImageCarousel)
+// Module 12416 (ChatInputImageCarousel)
 import noop from "module_19" /* 19 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8027 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5106 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8059 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5138 */;
 
 const require = fn;
-const DraftType = fn(5107).DraftType;
-let closure_6 = fn(9650).useChatShowingAutoComplete;
+const DraftType = fn(5139).DraftType;
+let closure_6 = fn(9682).useChatShowingAutoComplete;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -45,7 +45,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((canUpl
       let tmp12 = null;
       if (null != stateFromStores) {
         const obj2 = { attachments: stateFromStores, channelId };
-        tmp12 = jsx(channelId(10927), { attachments: stateFromStores, channelId });
+        tmp12 = jsx(channelId(10963), { attachments: stateFromStores, channelId });
       }
       cResult[6] = stateFromStores;
       cResult[7] = channelId;
@@ -102,7 +102,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((canUpl
   let tmp4 = null;
   if (null != stateFromStores) {
     const obj2 = { attachments: stateFromStores, channelId };
-    tmp4 = jsx(channelId(10927), { attachments: stateFromStores, channelId });
+    tmp4 = jsx(channelId(10963), { attachments: stateFromStores, channelId });
   }
   return tmp4;
 }));

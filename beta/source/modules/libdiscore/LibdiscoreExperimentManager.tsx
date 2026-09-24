@@ -1,15 +1,15 @@
-// Module ID: 18319
-// Function ID: 18320
+// Module ID: 18329
+// Function ID: 18330
 // Name: LibdiscoreExperimentManager
-// Dependencies: [1239, 1354, 2071, 560, 1438, 7365, 2]
+// Dependencies: [1239, 1354, 2071, 560, 1438, 7397, 2]
 
-// Module 18319 (LibdiscoreExperimentManager)
+// Module 18329 (LibdiscoreExperimentManager)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 560 */;
 import js_shim_shim from "js_shim/shim" /* 1354 */;
 import ApexExperiment from "ApexExperiment" /* 1438 */;
 import libdiscoreExperiments from "libdiscoreExperiments" /* 2071 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1239 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
 
 require = fn;
 function experimentStoreUpdateHandler() {

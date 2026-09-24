@@ -1,18 +1,18 @@
-// Module ID: 16457
-// Function ID: 16458
+// Module ID: 16467
+// Function ID: 16468
 // Name: VoiceUsers
-// Dependencies: [19, 17, 2109, 21, 4758, 580, 12214, 558, 568, 8122, 504, 16458, 11291, 1119, 12693, 4754, 9976, 7555, 16462, 16465, 2]
+// Dependencies: [19, 17, 2109, 21, 4790, 580, 12250, 558, 568, 8154, 504, 16468, 11327, 1119, 12729, 4786, 10008, 7587, 16472, 16475, 2]
 // Exports: getAudienceItemHeight
 
-// Module 16457 (VoiceUsers)
+// Module 16467 (VoiceUsers)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8122 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11291 */;
-import ChannelListLayout from "ChannelListLayout" /* 12214 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 12693 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8154 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11327 */;
+import ChannelListLayout from "ChannelListLayout" /* 12250 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 12729 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 
@@ -23,7 +23,7 @@ const jsxProd = fn(21);
 let closure_8 = {};
 let closure_9 = [];
 let c10 = "text-sm/medium";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_11 = createStyles.createStyles((arg0) => {
   const colors = nativeDefault.colors;
   if (arg0) {
@@ -120,7 +120,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((coll
     obj4.sessionId = voiceState2.sessionId;
     obj4.channel = channel;
     obj4.isGuest = isGuest;
-    const tmp15 = closure_6(tmp4(16458), obj4, user.id);
+    const tmp15 = closure_6(tmp4(16468), obj4, user.id);
     cResult[5] = channel;
     cResult[6] = collapsed;
     cResult[7] = isGuest;
@@ -154,7 +154,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((coll
   const channel = voiceState.channel;
   const collapsed = voiceState.collapsed;
   const tmp = channel;
-  const tmp3 = closure_11(channel(8122)());
+  const tmp3 = closure_11(channel(8154)());
   const items = [GuildMemberStore];
   const items1 = [channel.guild_id, user.id];
   const stateFromStoresObject = user(504).useStateFromStoresObject(items, () => ({ storeMember: GuildMemberStore.getMember(channel.guild_id, user.id), isGuest: GuildMemberStore.isGuestOrLurker(channel.guild_id, user.id) }), items1);
@@ -179,7 +179,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((coll
   obj5.sessionId = voiceState2.sessionId;
   obj5.channel = channel;
   obj5.isGuest = isGuest;
-  obj2.children = closure_6(tmp(16458), obj5, user.id);
+  obj2.children = closure_6(tmp(16468), obj5, user.id);
   return closure_6(tmp6, obj2);
 }));
 ReactCompilerGating = fn(558);
@@ -194,7 +194,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp7 = collapsed ? tmp4.listenersCollapsed : tmp4.listeners;
     if (cResult[3] !== tmp4.headphonesIcon) {
       const obj2 = { color: "redesign-channel-name-muted-text", size: "custom", style: tmp4.headphonesIcon };
-      const tmp10 = timestampProducer(tmp(12693).HeadphonesIcon, obj2);
+      const tmp10 = timestampProducer(tmp(12729).HeadphonesIcon, obj2);
       cResult[3] = tmp4.headphonesIcon;
       cResult[4] = tmp10;
       let tmp8 = tmp10;
@@ -228,7 +228,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp19 = tmp22;
       }
       const obj4 = { style: tmp4.listenersText, variant, color: "redesign-channel-name-muted-text", children: tmp5 };
-      const tmp18 = timestampProducer(tmp(4754).Text, obj4);
+      const tmp18 = timestampProducer(tmp(4786).Text, obj4);
       cResult[8] = tmp4.listenersText;
       cResult[9] = tmp5;
       cResult[10] = tmp18;
@@ -277,15 +277,15 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed) => {
   const channel = collapsed.channel;
   ({ voiceStates, audienceCount } = collapsed);
   let tmp4 = channel;
-  const tmp5 = channel(9976)("channel_list");
+  const tmp5 = channel(10008)("channel_list");
   const guild_id = channel.guild_id;
   if (cResult[0] === tmp5) {
     if (cResult[1] === guild_id) {
       if (cResult[2] === voiceStates) {
-        const arr2 = tmp4(16462)(cResult[3]);
+        const arr2 = tmp4(16472)(cResult[3]);
         if (cResult[4] === guild_id) {
           if (cResult[5] === arr2) {
-            const subscribeGuildMembers = tmp(7555).useSubscribeGuildMembers(cResult[6], "voice_channel_games");
+            const subscribeGuildMembers = tmp(7587).useSubscribeGuildMembers(cResult[6], "voice_channel_games");
             if (cResult[7] === channel) {
               if (cResult[8] === collapsed) {
                 let tmp13 = cResult[9];
@@ -305,7 +305,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed) => {
                       if (cResult[17] === tmp16) {
                       }
                     }
-                    tmp4 = tmp4(16465);
+                    tmp4 = tmp4(16475);
                     const obj2 = { collapsed, children: null };
                     const items = [tmp16, tmp18];
                     obj2.children = items;
@@ -339,7 +339,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed) => {
             cResult[8] = collapsed;
             cResult[9] = fn;
             tmp13 = fn;
-            const tmpResult = tmp(7555);
+            const tmpResult = tmp(7587);
           }
         }
         if (null == guild_id) {
@@ -361,7 +361,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed) => {
     cResult[2] = voiceStates;
     cResult[3] = mapped1;
   }
-  const substr = voiceStates.slice(0, tmp(7555).MAX_GUILD_MEMBER_SUBSCRIPTIONS);
+  const substr = voiceStates.slice(0, tmp(7587).MAX_GUILD_MEMBER_SUBSCRIPTIONS);
   mapped1 = substr.map((user) => user.user.id);
 }) : ((collapsed) => {
   collapsed = collapsed.collapsed;

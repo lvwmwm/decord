@@ -1,19 +1,19 @@
-// Module ID: 6856
-// Function ID: 6857
+// Module ID: 6888
+// Function ID: 6889
 // Name: InputFieldContainer
-// Dependencies: [19, 17, 21, 580, 558, 568, 4462, 4758, 6857, 4754, 4497, 5187, 2]
+// Dependencies: [19, 17, 21, 580, 558, 568, 4494, 4790, 6889, 4786, 4529, 5219, 2]
 
-// Module 6856 (InputFieldContainer)
+// Module 6888 (InputFieldContainer)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import spring from "spring" /* 5187 */;
-import InputTypes from "InputTypes" /* 6857 */;
+import useToken from "useToken" /* 4494 */;
+import spring from "spring" /* 5219 */;
+import InputTypes from "InputTypes" /* 6889 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const Text_Text = tmp(4754);
+const Text_Text = tmp(4786);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Platform, StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
@@ -40,8 +40,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     INPUT_FIELD_RADIUS_MD = nativeDefault.modules.mobile.INPUT_FIELD_RADIUS_MD;
   } else {
-    let token = tmp(4462).useToken(cResult[1]);
-    const tmpResult = tmp(4462);
+    let token = tmp(4494).useToken(cResult[1]);
+    const tmpResult = tmp(4494);
     if (tmp4) {
       token = tmpResult4.useToken(nativeDefault.modules.mobile.INPUT_FIELD_ROUND_RADIUS);
     }
@@ -57,11 +57,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       INPUT_FIELD_TEXT_STYLE_MD = tmp12(580).modules.mobile.INPUT_FIELD_TEXT_STYLE_MD;
     } else {
-      const token1 = tmp(4462).useToken(cResult[3]);
-      const tmpResult5 = tmp(4462);
-      return closure_9(str, tmp5, tmp6, token, token1, tmp(4462).useToken(tmp12(580).modules.mobile.INPUT_FIELD_PADDING_VERTICAL_SM_IOS));
+      const token1 = tmp(4494).useToken(cResult[3]);
+      const tmpResult5 = tmp(4494);
+      return closure_9(str, tmp5, tmp6, token, token1, tmp(4494).useToken(tmp12(580).modules.mobile.INPUT_FIELD_PADDING_VERTICAL_SM_IOS));
     }
-    tmpResult4 = tmp(4462);
+    tmpResult4 = tmp(4494);
   }
 }) : ((size) => {
   let str = size.size;
@@ -104,7 +104,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_9(str, flag2, flag3, token, token1, useToken.useToken(nativeDefault.modules.mobile.INPUT_FIELD_PADDING_VERTICAL_SM_IOS));
 });
 let closure_8 = tmp5;
-let createStyles = fn(4758);
+let createStyles = fn(4790);
 let closure_9 = createStyles.createStyles(() => {
   let str = arg0;
   if (arg0 === undefined) {
@@ -188,7 +188,7 @@ let closure_9 = createStyles.createStyles(() => {
   obj9.splitBorder = obj15;
   return obj9;
 });
-createStyles = fn(4758);
+createStyles = fn(4790);
 let closure_10 = createStyles.createStyleProperties({ error: nativeDefault.colors.INPUT_BORDER_ERROR_DEFAULT, default: "transparent", focused: nativeDefault.colors.INPUT_BORDER_ACTIVE });
 const __initData = { code: "function InputFieldContainerNativeTsx1(){const{status,ringColors,isFocused,withSpring,RING_SPRING_CONFIG}=this.__closure;let borderWidth=0;let borderColor=\"transparent\";if(status!==\"default\"){borderWidth=2;borderColor=ringColors.error;}else{if(isFocused){borderWidth=1;borderColor=ringColors.focused;}}return{borderWidth:withSpring(borderWidth,RING_SPRING_CONFIG),borderColor:withSpring(borderColor,RING_SPRING_CONFIG),left:-borderWidth,right:-borderWidth,top:-borderWidth,bottom:-borderWidth};}" };
 const __initData2 = { code: "function InputFieldContainerNativeTsx2(){const{status,ringColors,isFocused,withSpring,RING_SPRING_CONFIG}=this.__closure;let borderWidth=0;let borderColor='transparent';if(status!=='default'){borderWidth=2;borderColor=ringColors.error;}else if(isFocused){borderWidth=1;borderColor=ringColors.focused;}return{borderWidth:withSpring(borderWidth,RING_SPRING_CONFIG),borderColor:withSpring(borderColor,RING_SPRING_CONFIG),left:-borderWidth,right:-borderWidth,top:-borderWidth,bottom:-borderWidth};}" };

@@ -1,16 +1,16 @@
-// Module ID: 17562
-// Function ID: 17563
+// Module ID: 17572
+// Function ID: 17573
 // Name: UserVideoFailed
-// Dependencies: [109, 17, 1078, 21, 4758, 580, 558, 568, 9681, 9698, 4813, 9889, 1119, 4754, 5188, 2]
+// Dependencies: [109, 17, 1078, 21, 4790, 580, 558, 568, 9713, 9730, 4845, 9921, 1119, 4786, 5220, 2]
 
-// Module 17562 (UserVideoFailed)
+// Module 17572 (UserVideoFailed)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4813 */;
-import AVError from "AVError" /* 9681 */;
-import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 9698 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9889 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4845 */;
+import AVError from "AVError" /* 9713 */;
+import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 9730 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9921 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ const View = fn(17).View;
 const VideoToggleState = fn(1078).VideoToggleState;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_700, padding: 8 }, text: { textAlign: "center" }, button: { marginTop: 16, alignSelf: "center" } };
 let closure_9 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -119,7 +119,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
                           const intl2 = tmp(1119).intl;
                           obj5.text = intl2.string(tmp(1119).t["hxmQ/e"]);
                           obj5.onPress = tmp13;
-                          tmp42 = closure_7(tmp(5188).Button, obj5);
+                          tmp42 = closure_7(tmp(5220).Button, obj5);
                         }
                         cResult[38] = tmp13;
                         cResult[39] = tmp6;
@@ -223,7 +223,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         }
       }
       const obj7 = { variant: "text-md/semibold", color: "text-strong", style: formatToPlainString, children: ejOT95 };
-      const tmp28 = closure_7(tmp(4754).Text, obj7);
+      const tmp28 = closure_7(tmp(4786).Text, obj7);
       cResult[29] = tmp10.text;
       cResult[30] = tmp28;
     } else {
@@ -238,7 +238,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         }
       }
     }
-    const Text = tmp(4754).Text;
+    const Text = tmp(4786).Text;
     const text = tmp10.text;
     const intl = tmp(1119).intl;
     formatToPlainString = intl.formatToPlainString;
@@ -299,7 +299,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         AudioActionCreatorsDefault.setDisableLocalVideo(closure_1_0, constants.MANUAL_ENABLED, require("BaseConnectionEvent").MediaEngineContextTypes.DEFAULT, false);
       }, 1000);
     };
-    tmp8Result = tmp8(tmp3(5188).Button, obj6);
+    tmp8Result = tmp8(tmp3(5220).Button, obj6);
   }
   obj5.children = tmp8Result;
   items1[2] = closure_7(View, obj5);

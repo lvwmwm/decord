@@ -1,21 +1,21 @@
-// Module ID: 15168
-// Function ID: 15169
+// Module ID: 15178
+// Function ID: 15179
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 8447, 15169, 7481, 15170, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 8479, 15179, 7513, 15180, 4786, 2]
 
-// Module 15168 (FamilyCenterActivityPurchaseRow)
+// Module 15178 (FamilyCenterActivityPurchaseRow)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8447 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 15169 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8479 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 15179 */;
 import noop from "module_19" /* 19 */;
 
-const FamilyCenterActivityItemPreviewDefault = tmp5(15170);
+const FamilyCenterActivityItemPreviewDefault = tmp5(15180);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { display: "flex", flexDirection: "row", alignItems: "center", borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1, paddingVertical: 12 }, textContainer: { display: "flex", flexDirection: "column", flexShrink: 1 } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -67,7 +67,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
               if (cResult[11] !== combined) {
                 const obj2 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: combined };
-                const tmp19 = React4(tmp(4754).Text, obj2);
+                const tmp19 = React4(tmp(4786).Text, obj2);
                 cResult[11] = combined;
                 cResult[12] = tmp19;
                 let tmp17 = tmp19;
@@ -76,7 +76,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
               if (cResult[13] !== tmp10) {
                 const obj3 = { variant: "text-xs/medium", color: "text-muted", children: tmp10 };
-                const tmp22 = React4(tmp(4754).Text, obj3);
+                const tmp22 = React4(tmp(4786).Text, obj3);
                 cResult[13] = tmp10;
                 cResult[14] = tmp22;
                 let tmp20 = tmp22;
@@ -128,12 +128,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[10] = tmp16;
         tmp14 = tmp16;
       }
-      const formatPriceResult = tmp(7481).formatPrice(total, currency);
+      const formatPriceResult = tmp(7513).formatPrice(total, currency);
       cResult[3] = currency;
       cResult[4] = total;
       cResult[5] = formatPriceResult;
       tmp10 = formatPriceResult;
-      const tmpResult = tmp(7481);
+      const tmpResult = tmp(7513);
     }
   }
   const purchaseDisplayInfo = FamilyCenterActivityPurchaseRowUtils.getPurchaseDisplayInfo(tmp7, subscriptionPlanId);
@@ -163,14 +163,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return null;
   } else {
     let combined = displayName;
-    const tmp5Result = tmp5(7481);
+    const tmp5Result = tmp5(7513);
     if (null != typeName) {
       const _HermesInternal = HermesInternal;
       combined = "" + displayName + " \u2022 " + typeName;
     }
     const obj2 = { style: tmp.container, children: null };
     const obj3 = { displayName, product: null, isSubscription: null, subscriptionPlanId: null };
-    const formatPriceResult = tmp5(7481).formatPrice(total, currency);
+    const formatPriceResult = tmp5(7513).formatPrice(total, currency);
     if (product == null) {
       product = null;
     }
@@ -180,9 +180,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items = [React4(FamilyCenterActivityItemPreviewDefault, obj3), ];
     const obj4 = { style: tmp.textContainer, children: null };
     const obj5 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: combined };
-    const items1 = [React4(tmp5(4754).Text, obj5), ];
+    const items1 = [React4(tmp5(4786).Text, obj5), ];
     const obj6 = { variant: "text-xs/medium", color: "text-muted", children: formatPriceResult };
-    items1[1] = React4(tmp5(4754).Text, obj6);
+    items1[1] = React4(tmp5(4786).Text, obj6);
     obj4.children = items1;
     items[1] = hasOwnProperty(View, obj4);
     obj2.children = items;

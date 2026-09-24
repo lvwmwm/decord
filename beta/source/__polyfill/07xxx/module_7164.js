@@ -1,66 +1,246 @@
 // Module ID: 7164
 // Function ID: 7165
-// Dependencies: [19, 17, 21, 6868, 7165, 6864]
+// Dependencies: [7134, 7135, 7153, 7155, 7156, 7158, 7160]
 
 // Module 7164
-import _mod17 from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
-import value2 from "value2" /* 6864 */;
-import _mod7165 from "module_7165" /* 7165 */;
-import noop_mod from "module_19" /* 19 */;
+import _classCallCheck_mod from "module_7134" /* 7134 */;
+import _createClass from "module_7135" /* 7135 */;
+import _possibleConstructorReturn from "module_7153" /* 7153 */;
+import _getPrototypeOf from "module_7155" /* 7155 */;
+import _get from "module_7156" /* 7156 */;
+import _inherits from "module_7158" /* 7158 */;
 
-let noop = noop_mod;
-({ useEffect: c2, useCallback: c3, useMemo: closure_4 } = noop);
-let noop = noop_mod;
-const View = _mod17.View;
-const jsx = jsxProd.jsx;
-const memoResult = noop.memo(function BottomSheetViewComponent(focusHook) {
-  focusHook = focusHook.focusHook;
-  if (focusHook === undefined) {
-    focusHook = animatedScrollableType;
-  }
-  let flag = focusHook.enableFooterMarginAdjustment;
-  if (flag === undefined) {
-    flag = false;
-  }
-  const onLayout = focusHook.onLayout;
-  ({ style, children } = focusHook);
-  const merged = Object.assign(focusHook, Object.assign({ focusHook: 0, enableFooterMarginAdjustment: 0, onLayout: 0, style: 0, children: 0 }));
-  let animatedScrollableContentOffsetY;
-  const bottomSheetInternal = onLayout(animatedScrollableContentOffsetY[3]).useBottomSheetInternal();
-  animatedScrollableContentOffsetY = bottomSheetInternal.animatedScrollableContentOffsetY;
-  animatedScrollableType = bottomSheetInternal.animatedScrollableType;
-  const enableDynamicSizing = bottomSheetInternal.enableDynamicSizing;
-  const animatedContentHeight = bottomSheetInternal.animatedContentHeight;
-  const obj = onLayout(animatedScrollableContentOffsetY[3]);
-  const bottomSheetContentContainerStyle = onLayout(animatedScrollableContentOffsetY[3]).useBottomSheetContentContainerStyle(flag, style);
-  let items = [bottomSheetContentContainerStyle];
-  const items1 = [animatedScrollableContentOffsetY, animatedScrollableType];
-  const obj2 = onLayout(animatedScrollableContentOffsetY[3]);
-  const items2 = [onLayout, animatedContentHeight, enableDynamicSizing];
-  const tmp4 = animatedContentHeight(() => {
-    const items = [bottomSheetContentContainerStyle, _mod7165.styles.container];
-    return items;
-  }, items);
-  const tmp5 = enableDynamicSizing(() => {
-    animatedScrollableContentOffsetY.value = 0;
-    animatedScrollableType.value = value2.SCROLLABLE_TYPE.VIEW;
-  }, items1);
-  focusHook(tmp5);
-  const obj3 = {};
-  const merged1 = Object.assign(merged);
-  obj3.onLayout = enableDynamicSizing((nativeEvent) => {
-    if (enableDynamicSizing) {
-      const result = animatedContentHeight.set(nativeEvent.nativeEvent.layout.height);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
     }
-    if (onLayout) {
-      tmp3(nativeEvent);
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+let _classCallCheck = _classCallCheck_mod;
+class RVLinearLayoutManagerImpl {
+  constructor(arg0, arg1) {
+    self = this;
+    tmp = closure_0(this, RVLinearLayoutManagerImpl);
+    items = [, ];
+    items[0] = global;
+    items[1] = fn;
+    tmp2 = c2;
+    obj = c2(RVLinearLayoutManagerImpl);
+    tmp3 = closure_1;
+    if (closure_4()) {
+      tmp5 = globalThis;
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
     }
-  }, items2);
-  obj3.style = tmp4;
-  obj3.children = children;
-  return <bottomSheetContentContainerStyle />;
-});
-memoResult.displayName = "BottomSheetView";
+    tmp3Result = tmp3(self, constructResult);
+    tmp3Result.hasSize = false;
+    tmp3Result.tallestItemHeight = 0;
+    windowSize = global.windowSize;
+    tmp3Result.boundedSize = tmp3Result.horizontal ? windowSize.height : windowSize.width;
+    tmp3Result.hasSize = tmp3Result.boundedSize > 0;
+    return tmp3Result;
+  }
+}
+_classCallCheck = RVLinearLayoutManagerImpl;
+_inherits(RVLinearLayoutManagerImpl, fn(7160).RVLayoutManager);
+const entry = {
+  key: "updateLayoutParams",
+  value: function updateLayoutParams(windowSize) {
+    const self = this;
+    let fn = _get(_getPrototypeOf(_classCallCheck.prototype), "updateLayoutParams", this);
+    if (typeof fn === "function") {
+      fn = (items) => fn.apply(self, items);
+    }
+    const items = [windowSize];
+    !fn(items);
+    windowSize = windowSize.windowSize;
+    self.boundedSize = self.horizontal ? windowSize.height : windowSize.width;
+    if (!tmp2) {
+      if (self.layouts.length > 0) {
+        self.recomputeLayouts(0, self.layouts.length - 1);
+        self.requiresRepaint = true;
+      }
+    }
+  }
+};
+let items = [
+  entry,
+  {
+    key: "processLayoutInfo",
+    value: function processLayoutInfo(arg0, arg1) {
+      const self = this;
+      const iter = arg0[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let dimensions = nextResult.dimensions;
+        let tmp2 = self.layouts[nextResult.index];
+        let tmp3 = tmp2;
+        if (self.horizontal) {
+          let boundedSize = dimensions.width;
+        } else {
+          boundedSize = self.boundedSize;
+        }
+        tmp2.width = boundedSize;
+        tmp3.isHeightMeasured = true;
+        tmp3.isWidthMeasured = true;
+        tmp3.height = dimensions.height;
+        continue;
+      }
+      if (tmp7) {
+        const result = self.normalizeLayoutHeights(arg0);
+      }
+    }
+  },
+  {
+    key: "estimateLayout",
+    value: function estimateLayout(arg0) {
+      const self = this;
+      if (this.horizontal) {
+        let boundedSize = self.getEstimatedWidth(arg0);
+      } else {
+        boundedSize = self.boundedSize;
+      }
+      this.layouts[arg0].width = boundedSize;
+      this.layouts[arg0].height = self.getEstimatedHeight(arg0);
+      this.layouts[arg0].isWidthMeasured = !self.horizontal;
+      this.layouts[arg0].enforcedWidth = !self.horizontal;
+    }
+  },
+  {
+    key: "getLayoutSize",
+    value: function getLayoutSize() {
+      const self = this;
+      if (0 === this.layouts.length) {
+        return { width: 0, height: 0 };
+      } else {
+        const size = self.layouts[self.layouts.length - 1];
+        if (self.horizontal) {
+          let boundedSize = size.x + size.width;
+        } else {
+          boundedSize = self.boundedSize;
+        }
+        const size1 = { width: boundedSize, height: null };
+        if (self.horizontal) {
+          const tallestItem = self.tallestItem;
+          let height;
+          if (tallestItem != null) {
+            height = tallestItem.height;
+          }
+          if (height == null) {
+            height = self.boundedSize;
+          }
+          let sum = height;
+        } else {
+          sum = size.y + size.height;
+        }
+        size1.height = sum;
+        return size1;
+      }
+    }
+  },
+  {
+    key: "normalizeLayoutHeights",
+    value: function normalizeLayoutHeights(arg0) {
+      const self = this;
+      let tmp;
+      const iter = arg0[Symbol.iterator]();
+      while (iter !== undefined) {
+        let tmp2 = self.layouts[iter.next().index];
+        let num = tmp2.minHeight;
+        let tmp3 = tmp2;
+        if (num == null) {
+          num = 0;
+        }
+        let tmp4 = tmp2.height > num;
+        if (tmp4) {
+          let num2;
+          if (tmp != null) {
+            num2 = tmp.height;
+          }
+          if (num2 == null) {
+            num2 = 0;
+          }
+          tmp4 = tmp3.height > num2;
+        }
+        if (tmp4) {
+          tmp = tmp2;
+        }
+        continue;
+      }
+      if (tmp) {
+        if (tmp.height !== self.tallestItemHeight) {
+          let num3 = tmp.height;
+          if (tmp.height < self.tallestItemHeight) {
+            self.requiresRepaint = true;
+            num3 = 0;
+          }
+          const layouts = self.layouts;
+          for (const item10035 of layouts) {
+            let tmp10 = item10035;
+            if (num3 > 0) {
+              tmp10.height = tmp.height;
+            }
+            tmp10.minHeight = num3;
+            continue;
+          }
+          tmp.minHeight = 0;
+          self.tallestItem = tmp;
+          self.tallestItemHeight = tmp.height;
+        }
+      }
+    }
+  },
+  {
+    key: "recomputeLayouts",
+    value: function recomputeLayouts(arg0, arg1) {
+      const self = this;
+      let sum = arg0;
+      if (arg0 <= arg1) {
+        do {
+          let layout = self.getLayout(sum);
+          if (0 === sum) {
+            layout.x = 0;
+            layout.y = 0;
+          } else {
+            let size = self.getLayout(sum - 1);
+            let num = 0;
+            if (self.horizontal) {
+              num = size.x + size.width;
+            }
+            layout.x = num;
+            let num2 = 0;
+            if (!self.horizontal) {
+              num2 = size.y + size.height;
+            }
+            layout.y = num2;
+          }
+          if (self.horizontal) {
+            if (self.hasSize) {
+              layout.minHeight = self.boundedSize;
+            }
+          } else {
+            layout.width = self.boundedSize;
+          }
+          sum = sum + 1;
+        } while (sum <= arg1);
+      }
+    }
+  }
+];
 
-export default memoResult;
+export const RVLinearLayoutManagerImpl = _createClass(RVLinearLayoutManagerImpl, items);

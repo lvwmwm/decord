@@ -1,20 +1,20 @@
-// Module ID: 17601
-// Function ID: 17602
+// Module ID: 17611
+// Function ID: 17612
 // Name: VoicePanelFloatingCTAContainer
-// Dependencies: [32, 109, 19, 2045, 12420, 12423, 1089, 21, 12329, 580, 4758, 558, 568, 5186, 8878, 4471, 12419, 17505, 7633, 565, 17502, 17602, 4497, 12427, 11293, 5187, 10921, 7320, 2]
+// Dependencies: [32, 109, 19, 2045, 12456, 12459, 1089, 21, 12365, 580, 4790, 558, 568, 5218, 8910, 4503, 12455, 17515, 7665, 565, 17512, 17612, 4529, 12463, 11329, 5219, 10957, 7352, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 17601 (VoicePanelFloatingCTAContainer)
+// Module 17611 (VoicePanelFloatingCTAContainer)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import native from "native" /* 4471 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import spring from "spring" /* 5187 */;
-import RowButton from "RowButton" /* 8878 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11293 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12329 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12427 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17502 */;
+import native from "native" /* 4503 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import spring from "spring" /* 5219 */;
+import RowButton from "RowButton" /* 8910 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11329 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12365 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12463 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17512 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -22,11 +22,11 @@ import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 let closure_3 = ["trailing"];
-const UI_SHOW_HIDE_PHYSICS = fn(12420).UI_SHOW_HIDE_PHYSICS;
-const CALL_TILE_GUTTER = fn(12423).CALL_TILE_GUTTER;
+const UI_SHOW_HIDE_PHYSICS = fn(12456).UI_SHOW_HIDE_PHYSICS;
+const CALL_TILE_GUTTER = fn(12459).CALL_TILE_GUTTER;
 const ThemeTypes = fn(1089).ThemeTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: null };
 const rect = { zIndex: 1, position: "absolute", bottom: 0, left: "50%", overflow: "hidden", alignItems: "center", borderRadius: nativeDefault.radii.lg };
 obj2.container = rect;

@@ -1,13 +1,13 @@
-// Module ID: 8940
-// Function ID: 8941
+// Module ID: 8972
+// Function ID: 8973
 // Name: FlagIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 8941, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 8973, 4493, 2]
 
-// Module 8940 (FlagIcon)
+// Module 8972 (FlagIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod8941 from "module_8941" /* 8941 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod8973 from "module_8973" /* 8973 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const FlagIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(8941);
+    const tmpResult = tmp(8973);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const FlagIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8941, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8973, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

@@ -1,15 +1,15 @@
-// Module ID: 4777
-// Function ID: 4778
+// Module ID: 4809
+// Function ID: 4810
 // Name: VoiceStateStore
-// Dependencies: [32, 4778, 1078, 4779, 12, 504, 1613, 577, 2]
+// Dependencies: [32, 4810, 1078, 4811, 12, 504, 1613, 577, 2]
 
-// Module 4777 (VoiceStateStore)
+// Module 4809 (VoiceStateStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1613 */;
 import _slicedToArray from "module_32" /* 32 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 4778 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 4810 */;
 
 require = fn;
 function updateVoiceState(arg0, arg1, fn) {
@@ -151,7 +151,7 @@ function handleGuildCreateOrDelete(guild) {
   delete tmp2[tmp];
 }
 const ME = fn(1078).ME;
-const VoicePlatforms = fn(4779).VoicePlatforms;
+const VoicePlatforms = fn(4811).VoicePlatforms;
 let c9 = 0;
 let closure_10 = 0;
 const dependencyMap = {};

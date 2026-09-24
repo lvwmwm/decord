@@ -1,9 +1,9 @@
-// Module ID: 10641
-// Function ID: 10642
+// Module ID: 10677
+// Function ID: 10678
 // Name: useBackspaceHandler
 // Dependencies: [19, 558, 568, 2]
 
-// Module 10641 (useBackspaceHandler)
+// Module 10677 (useBackspaceHandler)
 import noop from "module_19" /* 19 */;
 
 const require = fn;

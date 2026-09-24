@@ -1,11 +1,11 @@
-// Module ID: 10982
-// Function ID: 10983
+// Module ID: 11018
+// Function ID: 11019
 // Name: gift_reminder_nagbar
-// Dependencies: [32, 1191, 10968, 2]
+// Dependencies: [32, 1191, 11004, 2]
 
-// Module 10982 (gift_reminder_nagbar)
+// Module 11018 (gift_reminder_nagbar)
 import _mod1191 from "module_1191" /* 1191 */;
-import localized_string from "localized_string" /* 10968 */;
+import localized_string from "localized_string" /* 11004 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

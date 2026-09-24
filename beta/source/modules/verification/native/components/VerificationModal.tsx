@@ -1,29 +1,29 @@
-// Module ID: 17916
-// Function ID: 17917
+// Module ID: 17926
+// Function ID: 17927
 // Name: VerificationModal
-// Dependencies: [5, 19, 17, 17917, 2039, 1376, 1078, 21, 4758, 558, 568, 1119, 5188, 1489, 1181, 17918, 1253, 5839, 7621, 9876, 7441, 6832, 17922, 6830, 6843, 6840, 7228, 7291, 7292, 6831, 17923, 7325, 7239, 504, 4725, 4625, 7246, 2]
+// Dependencies: [5, 19, 17, 17927, 2039, 1376, 1078, 21, 4790, 558, 568, 1119, 5220, 1489, 1181, 17928, 1253, 5871, 7653, 9908, 7473, 6864, 17932, 6862, 6875, 6872, 7260, 7323, 7324, 6863, 17933, 7357, 7271, 504, 4757, 4657, 7278, 2]
 
-// Module 17916 (VerificationModal)
+// Module 17926 (VerificationModal)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
 import Link from "Link" /* 1489 */;
-import ChatInputUtils from "ChatInputUtils" /* 4625 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import ResendEmailDefault from "ResendEmail" /* 6830 */;
-import ConfirmEmailChangeStartDefault from "ConfirmEmailChangeStart" /* 6840 */;
-import ConfirmEmailChangeCodeDefault from "ConfirmEmailChangeCode" /* 6843 */;
-import EnterEmailDefault from "EnterEmail" /* 7228 */;
-import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 7239 */;
-import VerifyPhoneDefault from "VerifyPhone" /* 7325 */;
-import HeaderActionButton from "HeaderActionButton" /* 7621 */;
-import _modDef9876 from "module_9876" /* 9876 */;
-import OverviewDefault from "Overview" /* 17922 */;
+import ChatInputUtils from "ChatInputUtils" /* 4657 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import ResendEmailDefault from "ResendEmail" /* 6862 */;
+import ConfirmEmailChangeStartDefault from "ConfirmEmailChangeStart" /* 6872 */;
+import ConfirmEmailChangeCodeDefault from "ConfirmEmailChangeCode" /* 6875 */;
+import EnterEmailDefault from "EnterEmail" /* 7260 */;
+import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 7271 */;
+import VerifyPhoneDefault from "VerifyPhone" /* 7357 */;
+import HeaderActionButton from "HeaderActionButton" /* 7653 */;
+import _modDef9908 from "module_9908" /* 9908 */;
+import OverviewDefault from "Overview" /* 17932 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import PhoneVerificationStore from "PhoneVerificationStore" /* 17917 */;
+import PhoneVerificationStore from "PhoneVerificationStore" /* 17927 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2039 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -53,7 +53,7 @@ function getScreens() {
   let obj9 = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.OVERVIEW };
   obj8.headerTitle = NavigatorHeader.getHeaderNoTitle();
   obj8.headerRight = function headerRight() {
-    const obj = { source: _modDef9876, accessibilityLabel: null, onPress: null };
+    const obj = { source: _modDef9908, accessibilityLabel: null, onPress: null };
     let intl = util.intl;
     obj.accessibilityLabel = intl.string(util.t.PdRCRg);
     obj.onPress = function onPress() {
@@ -66,9 +66,9 @@ function getScreens() {
       };
       const items = [obj3];
       obj2.options = items;
-      const result = closure_1_0(7441).showSimpleActionSheet(obj2);
+      const result = closure_1_0(7473).showSimpleActionSheet(obj2);
     };
-    return jsx(HeaderActionButton.HeaderActionButton, { source: _modDef9876, accessibilityLabel: null, onPress: null });
+    return jsx(HeaderActionButton.HeaderActionButton, { source: _modDef9908, accessibilityLabel: null, onPress: null });
   };
   obj8.render = function render() {
     return jsx(OverviewDefault, {});
@@ -122,7 +122,7 @@ function getScreens() {
     closure_0 = arg1;
     let obj = {};
     const merged = Object.assign(arg0);
-    obj.reason = closure_0(7292).ChangePhoneReason.USER_ACTION_REQUIRED;
+    obj.reason = closure_0(7324).ChangePhoneReason.USER_ACTION_REQUIRED;
     obj.onComplete = function onComplete(phone) {
       return closure_0.push(constants.VERIFY_PHONE, {
         phone,
@@ -156,20 +156,20 @@ function getScreens() {
                   } else {
                     c4 = 1;
                     currentUser = currentUser.getCurrentUser();
-                    const result = v3(6831).isPhoneReverification(currentUser, closure_2_7.getAction());
-                    const obj10 = v3(7292);
+                    const result = v3(6863).isPhoneReverification(currentUser, closure_2_7.getAction());
+                    const obj10 = v3(7324);
                     if (result) {
                       c2 = 3;
                       c1 = 1;
-                      const obj4 = { value: obj10.reverifyPhone(closure_0, tmp19, closure_0(7292).ChangePhoneReason.USER_ACTION_REQUIRED), done: false };
+                      const obj4 = { value: obj10.reverifyPhone(closure_0, tmp19, closure_0(7324).ChangePhoneReason.USER_ACTION_REQUIRED), done: false };
                       return obj4;
                     } else {
                       c2 = 2;
                       c1 = 1;
-                      const obj5 = { value: obj10.addPhone(closure_0, tmp19, closure_0(7292).ChangePhoneReason.USER_ACTION_REQUIRED), done: false };
+                      const obj5 = { value: obj10.addPhone(closure_0, tmp19, closure_0(7324).ChangePhoneReason.USER_ACTION_REQUIRED), done: false };
                       return obj5;
                     }
-                    const obj9 = v3(6831);
+                    const obj9 = v3(6863);
                   }
                 } else if (1 === tmp6) {
                   c4 = 0;
@@ -287,7 +287,7 @@ function getScreens() {
         }
       });
     };
-    return closure_11(closure_1(7291), obj);
+    return closure_11(closure_1(7323), obj);
   };
   obj[constants.ADD_PHONE] = obj26;
   const obj29 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
@@ -322,7 +322,7 @@ const View = fn(17).View;
 const Constants = fn(1078);
 ({ UserRequiredActions: closure_9, VerificationModalScenes: c10 } = Constants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_12 = createStyles.createStyles({ button: { position: "absolute", right: 32, bottom: 32, left: 32 } });
 let ReactCompilerGating = fn(558);
 let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
@@ -367,7 +367,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) =>
           navigation.dispatch(StackActions.push(ENTER_EMAIL));
         }
     };
-    const tmp13 = jsx(tmp(5188).Button, {
+    const tmp13 = jsx(tmp(5220).Button, {
       text: tmp9,
       onPress() {
           const currentUser = UserStore.getCurrentUser();
@@ -397,14 +397,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) =>
     return tmp14;
   }
   const obj = navigation(568);
-  const tmp15 = jsx(navigation(1181).EmptyState, { Illustration: navigation(17918).VerifyPhone, title: tmp5, body: tmp6, children: <View style={tmp4.button}>{tmp11}</View> });
+  const tmp15 = jsx(navigation(1181).EmptyState, { Illustration: navigation(17928).VerifyPhone, title: tmp5, body: tmp6, children: <View style={tmp4.button}>{tmp11}</View> });
   cResult[5] = tmp4.button;
   cResult[6] = tmp11;
   cResult[7] = tmp15;
   tmp14 = tmp15;
 }) : ((navigation) => {
   navigation = navigation.navigation;
-  const obj = { Illustration: navigation(17918).VerifyPhone, title: null, body: null, children: null };
+  const obj = { Illustration: navigation(17928).VerifyPhone, title: null, body: null, children: null };
   const intl = navigation(1119).intl;
   obj.title = intl.string(navigation(1119).t.KLnLIP);
   const intl2 = navigation(1119).intl;
@@ -427,9 +427,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) =>
     const StackActions = Link.StackActions;
     navigation.dispatch(StackActions.push(ENTER_EMAIL));
   };
-  obj2.children = jsx(navigation(5188).Button, { text: null, onPress: null });
+  obj2.children = jsx(navigation(5220).Button, { text: null, onPress: null });
   obj.children = <View style={closure_12().button}>{null}</View>;
-  return jsx(navigation(1181).EmptyState, { Illustration: navigation(17918).VerifyPhone, title: null, body: null, children: null });
+  return jsx(navigation(1181).EmptyState, { Illustration: navigation(17928).VerifyPhone, title: null, body: null, children: null });
 });
 ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -509,7 +509,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[10] !== tmp10) {
     const obj4 = { screens: tmp17, initialRouteStack: tmp10, headerBackTitle: tmp20 };
-    const tmp24 = jsx(tmp(7246).Navigator, { screens: tmp17, initialRouteStack: tmp10, headerBackTitle: tmp20 });
+    const tmp24 = jsx(tmp(7278).Navigator, { screens: tmp17, initialRouteStack: tmp10, headerBackTitle: tmp20 });
     cResult[10] = tmp10;
     cResult[11] = tmp24;
     let tmp22 = tmp24;
@@ -531,10 +531,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, items1);
   const effect = noop.useEffect(() => {
     ActionSheetActionCreatorsDefault.hideActionSheet();
-    stateFromStores(4625).dismissKeyboard();
+    stateFromStores(4657).dismissKeyboard();
   }, []);
   let obj2 = { screens: noop.useMemo(() => getScreens(), []), initialRouteStack: memo, headerBackTitle: null };
   const intl = stateFromStores(1119).intl;
   obj2.headerBackTitle = intl.string(stateFromStores(1119).t["13/7kX"]);
-  return jsx(stateFromStores(7246).Navigator, { screens: noop.useMemo(() => getScreens(), []), initialRouteStack: memo, headerBackTitle: null });
+  return jsx(stateFromStores(7278).Navigator, { screens: noop.useMemo(() => getScreens(), []), initialRouteStack: memo, headerBackTitle: null });
 });

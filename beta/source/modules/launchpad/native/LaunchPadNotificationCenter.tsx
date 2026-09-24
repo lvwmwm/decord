@@ -1,16 +1,16 @@
-// Module ID: 17694
-// Function ID: 17695
+// Module ID: 17704
+// Function ID: 17705
 // Name: LaunchPadNotificationCenter
-// Dependencies: [19, 21, 4758, 558, 568, 16744, 2]
+// Dependencies: [19, 21, 4790, 558, 568, 16754, 2]
 
-// Module 17694 (LaunchPadNotificationCenter)
+// Module 17704 (LaunchPadNotificationCenter)
 import c from "c" /* 568 */;
-import notifications_NotificationsDefault from "notifications/Notifications" /* 16744 */;
+import notifications_NotificationsDefault from "notifications/Notifications" /* 16754 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ wrapper: { height: "100%" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

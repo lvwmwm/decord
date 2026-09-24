@@ -1,12 +1,12 @@
-// Module ID: 12141
-// Function ID: 12142
+// Module ID: 12177
+// Function ID: 12178
 // Name: MediaPostGridThumbnail
-// Dependencies: [19, 17, 21, 558, 568, 12139, 5802, 1368, 2]
+// Dependencies: [19, 17, 21, 558, 568, 12175, 5834, 1368, 2]
 
-// Module 12141 (MediaPostGridThumbnail)
+// Module 12177 (MediaPostGridThumbnail)
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import ForumPostMedia from "ForumPostMedia" /* 12139 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import ForumPostMedia from "ForumPostMedia" /* 12175 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -42,7 +42,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[7] = tmp23;
     }
     const obj3 = { shouldSpoiler, blurTheme };
-    const tmp19 = hasOwnProperty(tmp(12139).ForumPostMediaSpoiler, obj3);
+    const tmp19 = hasOwnProperty(tmp(12175).ForumPostMediaSpoiler, obj3);
     cResult[0] = blurTheme;
     cResult[1] = shouldSpoiler;
     cResult[2] = tmp19;
@@ -86,7 +86,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp13 = tmp16;
       }
       const obj6 = { shouldSpoiler, blurTheme };
-      const tmp12 = hasOwnProperty(tmp(12139).ForumPostMediaSpoiler, obj6);
+      const tmp12 = hasOwnProperty(tmp(12175).ForumPostMediaSpoiler, obj6);
       cResult[12] = blurTheme;
       cResult[13] = shouldSpoiler;
       cResult[14] = tmp12;
@@ -147,7 +147,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           cResult[9] = tmp31;
         }
         const obj3 = { shouldSpoiler, blurTheme };
-        const tmp27 = hasOwnProperty(tmp(12139).ForumPostMediaSpoiler, obj3);
+        const tmp27 = hasOwnProperty(tmp(12175).ForumPostMediaSpoiler, obj3);
         cResult[4] = blurTheme;
         cResult[5] = shouldSpoiler;
         cResult[6] = tmp27;
@@ -207,7 +207,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp17 = tmp20;
         }
         const obj7 = { shouldSpoiler, blurTheme };
-        const tmp16 = hasOwnProperty(tmp(12139).ForumPostMediaSpoiler, obj7);
+        const tmp16 = hasOwnProperty(tmp(12175).ForumPostMediaSpoiler, obj7);
         cResult[17] = blurTheme;
         cResult[18] = shouldSpoiler;
         cResult[19] = tmp16;

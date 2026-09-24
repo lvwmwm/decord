@@ -1,17 +1,17 @@
-// Module ID: 16188
-// Function ID: 16189
+// Module ID: 16198
+// Function ID: 16199
 // Name: useAuthorizedSlayerApplications
-// Dependencies: [19, 7354, 558, 568, 504, 11652, 7417, 2]
+// Dependencies: [19, 7386, 558, 568, 504, 11688, 7449, 2]
 
-// Module 16188 (useAuthorizedSlayerApplications)
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7417 */;
+// Module 16198 (useAuthorizedSlayerApplications)
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7449 */;
 import noop from "module_19" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7354 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7386 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const FetchState = fn(7354).FetchState;
+const FetchState = fn(7386).FetchState;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/authorized_apps/useAuthorizedSlayerApplications.tsx");

@@ -1,20 +1,20 @@
-// Module ID: 12017
-// Function ID: 12018
+// Module ID: 12053
+// Function ID: 12054
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 8707, 8696, 1078, 21, 4758, 580, 558, 568, 4754, 504, 12011, 1488, 8697, 12016, 12012, 8695, 7371, 1119, 5188, 5839, 12018, 1253, 12032, 12034, 12036, 12038, 12039, 5813, 7246, 2]
+// Dependencies: [5, 32, 19, 17, 8739, 8728, 1078, 21, 4790, 580, 558, 568, 4786, 504, 12047, 1488, 8729, 12052, 12048, 8727, 7403, 1119, 5220, 5871, 12054, 1253, 12068, 12070, 12072, 12074, 12075, 5845, 7278, 2]
 
-// Module 12017 (AppealIngestionModal)
+// Module 12053 (AppealIngestionModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12016 */;
-import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 12018 */;
-import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 12032 */;
-import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 12034 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12052 */;
+import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 12054 */;
+import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 12068 */;
+import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 12070 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8707 */;
+import SafetyHubStore from "SafetyHubStore" /* 8739 */;
 
 const require = globalThis.__r;
 
@@ -99,12 +99,12 @@ function getScreens(isDsaEligible, isSpam, isCoppa, isDeveloperClassification) {
   return obj;
 }
 let View = fn(17).View;
-const SafetyHubConstants = fn(8696);
+const SafetyHubConstants = fn(8728);
 ({ APPEAL_INGESTION_IMPRESSION_PROPERTIES: closure_9, AppealIngestionSections: c10 } = SafetyHubConstants);
 const EMPTY_STRING_SNOWFLAKE_ID = fn(1078).EMPTY_STRING_SNOWFLAKE_ID;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, headerContainer: { alignSelf: "stretch", marginTop: 16, marginBottom: 8, paddingHorizontal: 16 }, header: { marginBottom: 8, textAlign: "center" }, subheader: { lineHeight: 20, marginBottom: 8, textAlign: "center" }, separator: null, footerContainer: null, footerText: null, footerButton: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.separator = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginVertical: 24 };
@@ -150,7 +150,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp10 = null;
       if (subHeaderText.length > 0) {
         const obj3 = { style: tmp4.subheader, variant: "text-md/medium", color: "text-default", children: subHeaderText };
-        tmp10 = __initData(tmp(4754).Text, obj3);
+        tmp10 = __initData(tmp(4786).Text, obj3);
       }
     }
     cResult[3] = tmp4.subheader;
@@ -164,7 +164,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (tmp6) {
     const obj4 = { style: tmp4.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: headerText };
-    tmp6 = __initData(tmp(4754).Text, obj4);
+    tmp6 = __initData(tmp(4786).Text, obj4);
   }
   cResult[0] = headerText;
   cResult[1] = tmp4.header;
@@ -574,7 +574,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               v2("");
               v2 = 2;
               c5 = 1;
-              const obj6 = { value: tmp27(12012).requestReview(tmp35, safetyHubAppealSignal, stateFromStores1), done: false };
+              const obj6 = { value: tmp27(12048).requestReview(tmp35, safetyHubAppealSignal, stateFromStores1), done: false };
               return obj6;
             }
           }
@@ -587,8 +587,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             if (body != null) {
               code = body.code;
             }
-            closure_129_4(safetyHubAppealSignal(8695).getRequestReviewErrorFromCode(code));
-            const obj2 = safetyHubAppealSignal(8695);
+            closure_129_4(safetyHubAppealSignal(8727).getRequestReviewErrorFromCode(code));
+            const obj2 = safetyHubAppealSignal(8727);
           } else if (arg0 === 1) {
             c5 = 3;
             throw value;

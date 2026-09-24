@@ -1,26 +1,26 @@
-// Module ID: 14967
-// Function ID: 14968
+// Module ID: 15002
+// Function ID: 15003
 // Name: SettingSegmentedControlRenderer
-// Dependencies: [32, 19, 17, 14955, 11595, 21, 4758, 580, 558, 568, 14958, 14850, 38, 14957, 9868, 9869, 12780, 2]
+// Dependencies: [32, 19, 17, 14990, 11631, 21, 4790, 580, 558, 568, 14993, 14888, 38, 14992, 9900, 9901, 12816, 2]
 
-// Module 14967 (SettingSegmentedControlRenderer)
+// Module 15002 (SettingSegmentedControlRenderer)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 580 */;
-import SettingsRendererConfig from "SettingsRendererConfig" /* 14850 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 14957 */;
-import SettingTreeManagerDefault from "SettingTreeManager" /* 14958 */;
+import SettingsRendererConfig from "SettingsRendererConfig" /* 14888 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 14992 */;
+import SettingTreeManagerDefault from "SettingTreeManager" /* 14993 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14955 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14990 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const NodeType = fn(11595).NodeType;
+const NodeType = fn(11631).NodeType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { controlContainer: { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 }, pageContainer: { flex: 1 } };
 let closure_11 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -204,13 +204,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
   const memo = noop.useMemo(() => {
     const items = [];
     const item = settings.forEach((id) => {
-      const tmp = items(14850).SETTING_RENDERER_CONFIG[id];
+      const tmp = items(14888).SETTING_RENDERER_CONFIG[id];
       settings(38)(tmp.type === constants.ROUTE, "Invalid setting type for segmented control: " + id);
       const screen = tmp.screen;
       const obj = { label: null, id: null, page: null };
       const component = screen.getComponent();
       const tmp2 = settings(38);
-      obj.label = items(14957).getSettingTitle(id);
+      obj.label = items(14992).getSettingTitle(id);
       obj.id = id;
       obj.page = closure_2_8(component, {});
       items.push(obj);

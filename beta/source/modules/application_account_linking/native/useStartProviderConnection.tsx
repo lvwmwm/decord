@@ -1,10 +1,10 @@
-// Module ID: 7427
-// Function ID: 7428
+// Module ID: 7459
+// Function ID: 7460
 // Name: useStartProviderConnection
-// Dependencies: [5, 19, 558, 568, 7428, 4455, 2]
+// Dependencies: [5, 19, 558, 568, 7460, 4487, 2]
 
-// Module 7427 (useStartProviderConnection)
-import LinkingDefault from "Linking" /* 4455 */;
+// Module 7459 (useStartProviderConnection)
+import LinkingDefault from "Linking" /* 4487 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 

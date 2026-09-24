@@ -1,9 +1,9 @@
-// Module ID: 17259
-// Function ID: 17260
+// Module ID: 17269
+// Function ID: 17270
 // Name: ShopCoachmark
-// Dependencies: [19, 2042, 21, 4758, 558, 568, 1181, 1119, 580, 10452, 2]
+// Dependencies: [19, 2042, 21, 4790, 558, 568, 1181, 1119, 580, 10491, 2]
 
-// Module 17259 (ShopCoachmark)
+// Module 17269 (ShopCoachmark)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -13,7 +13,7 @@ import noop from "module_19" /* 19 */;
 require = fn;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ image: { marginTop: 12 } });
 let ReactCompilerGating = fn(558);
 let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {

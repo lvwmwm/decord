@@ -1,22 +1,22 @@
-// Module ID: 9191
-// Function ID: 9192
+// Module ID: 9223
+// Function ID: 9224
 // Name: ActionSheetDragHandle
-// Dependencies: [19, 17, 9183, 21, 4758, 580, 558, 568, 1119, 4497, 2]
+// Dependencies: [19, 17, 9215, 21, 4790, 580, 558, 568, 1119, 4529, 2]
 
-// Module 9191 (ActionSheetDragHandle)
+// Module 9223 (ActionSheetDragHandle)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ TouchableWithoutFeedback: c3, View: closure_4 } = get_ActivityIndicator);
-const ActionSheetDragHandleConstants = fn(9183);
+const ActionSheetDragHandleConstants = fn(9215);
 ({ DRAG_HANDLE_BAR_HEIGHT, DRAG_HANDLE_PADDING, DRAG_HANDLE_HEIGHT } = ActionSheetDragHandleConstants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { height: DRAG_HANDLE_HEIGHT }, containerOverlay: { position: "absolute", top: 0, left: 0, right: 0 }, handle: { alignItems: "center", paddingVertical: DRAG_HANDLE_PADDING }, bar: null };
 let size = { backgroundColor: nativeDefault.colors.ICON_MUTED, borderRadius: nativeDefault.radii.xs, height: DRAG_HANDLE_BAR_HEIGHT, width: 31 };
 obj.bar = size;

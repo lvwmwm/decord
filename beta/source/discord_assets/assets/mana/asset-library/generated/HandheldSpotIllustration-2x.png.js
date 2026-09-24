@@ -1,8 +1,8 @@
-// Module ID: 6421
-// Function ID: 6422
+// Module ID: 6453
+// Function ID: 6454
 // Dependencies: [2]
 
-// Module 6421
+// Module 6453
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HandheldSpotIllustration-2x.png.js");

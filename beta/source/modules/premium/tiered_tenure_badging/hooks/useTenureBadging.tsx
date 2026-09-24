@@ -1,18 +1,18 @@
-// Module ID: 11439
-// Function ID: 11440
+// Module ID: 11475
+// Function ID: 11476
 // Name: useTenureBadging
-// Dependencies: [7862, 1376, 4424, 1378, 558, 568, 504, 11440, 1973, 7875, 11441, 2]
+// Dependencies: [7894, 1376, 4456, 1378, 558, 568, 504, 11476, 1973, 7907, 11477, 2]
 
-// Module 11439 (useTenureBadging)
+// Module 11475 (useTenureBadging)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1973 */;
-import useTieredTenureBadgeForUser from "useTieredTenureBadgeForUser" /* 11440 */;
-import UserProfileStore from "UserProfileStore" /* 7862 */;
+import useTieredTenureBadgeForUser from "useTieredTenureBadgeForUser" /* 11476 */;
+import UserProfileStore from "UserProfileStore" /* 7894 */;
 import UserStore from "UserStore" /* 1376 */;
-import SubscriptionStore from "SubscriptionStore" /* 4424 */;
+import SubscriptionStore from "SubscriptionStore" /* 4456 */;
 
-const TieredTenureBadgeUtils = tmp(7875);
+const TieredTenureBadgeUtils = tmp(7907);
 require = fn;
 const PremiumConstants = fn(1378);
 ({ PremiumTypes: hasOwnProperty, TENURE_BADGES: metroRequire } = PremiumConstants);
@@ -296,14 +296,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       premiumSince = stateFromStores1.premiumSince;
     }
     if (cResult[4] !== premiumSince) {
-      const earnedTenureBadge = tmp(7875).getEarnedTenureBadge(premiumSince);
+      const earnedTenureBadge = tmp(7907).getEarnedTenureBadge(premiumSince);
       class S {
         constructor() {
           return closure_1_4.getPremiumTypeSubscription();
         }
       }
       cResult[5] = earnedTenureBadge;
-      const tmpResult6 = tmp(7875);
+      const tmpResult6 = tmp(7907);
     }
     class S {
       constructor() {
@@ -404,24 +404,24 @@ export const useTieredTenureBadgeData = ReactCompilerGating.isReactCompilerEnabl
       if (cResult[5] !== tmp11) {
         const _Symbol = Symbol;
         let forResult = Symbol.for("react.early_return_sentinel");
-        const earnedTenureBadge = tmp(7875).getEarnedTenureBadge(tmp11);
+        const earnedTenureBadge = tmp(7907).getEarnedTenureBadge(tmp11);
         let result1 = null != earnedTenureBadge;
         if (result1) {
-          result1 = tmp(11441).shouldShowWithheldTenureBadge("useTieredTenureBadgeData");
-          const tmpResult5 = tmp(11441);
+          result1 = tmp(11477).shouldShowWithheldTenureBadge("useTieredTenureBadgeData");
+          const tmpResult5 = tmp(11477);
         }
         if (result1) {
           const obj3 = {};
           const merged1 = Object.assign(dependencyMap[earnedTenureBadge]);
-          obj3.earnedOnDate = tmp(7875).getEarnedOnDate(earnedTenureBadge, tmp11);
+          obj3.earnedOnDate = tmp(7907).getEarnedOnDate(earnedTenureBadge, tmp11);
           obj3.status = obj.WITHHELD;
           forResult = obj3;
-          const tmpResult6 = tmp(7875);
+          const tmpResult6 = tmp(7907);
         }
         cResult[5] = tmp11;
         cResult[6] = forResult;
         let tmp13 = forResult;
-        const tmpResult4 = tmp(7875);
+        const tmpResult4 = tmp(7907);
       } else {
         tmp13 = cResult[6];
       }
@@ -467,18 +467,18 @@ export const useTieredTenureBadgeData = ReactCompilerGating.isReactCompilerEnabl
       result = stateFromStores.hasPaidTier2Subscription();
     }
     if (!result) {
-      const earnedTenureBadge = tmp(7875).getEarnedTenureBadge(tmp7);
+      const earnedTenureBadge = tmp(7907).getEarnedTenureBadge(tmp7);
       if (null != earnedTenureBadge) {
         if (tmpResult3.shouldShowWithheldTenureBadge("useTieredTenureBadgeData")) {
           const obj3 = {};
           const merged1 = Object.assign(dependencyMap[earnedTenureBadge]);
-          obj3.earnedOnDate = tmp(7875).getEarnedOnDate(earnedTenureBadge, tmp7);
+          obj3.earnedOnDate = tmp(7907).getEarnedOnDate(earnedTenureBadge, tmp7);
           obj3.status = obj.WITHHELD;
           return obj3;
         }
-        tmpResult3 = tmp(11441);
+        tmpResult3 = tmp(11477);
       }
-      const tmpResult = tmp(7875);
+      const tmpResult = tmp(7907);
     }
     const obj4 = {};
     const _Object = Object;

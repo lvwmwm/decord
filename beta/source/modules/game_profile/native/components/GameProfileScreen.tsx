@@ -1,22 +1,22 @@
-// Module ID: 8951
-// Function ID: 8952
+// Module ID: 8983
+// Function ID: 8984
 // Name: GameProfileScreen
-// Dependencies: [32, 19, 17, 8952, 21, 4758, 580, 558, 568, 1119, 5188, 8444, 8953, 4455, 8944, 7553, 5329, 4497, 8956, 4759, 8957, 8962, 4725, 8979, 6863, 8980, 8982, 9181, 7401, 7397, 2]
+// Dependencies: [32, 19, 17, 8984, 21, 4790, 580, 558, 568, 1119, 5220, 8476, 8985, 4487, 8976, 7585, 5361, 4529, 8988, 4791, 8989, 8994, 4757, 9011, 6895, 9012, 9014, 9213, 7433, 7429, 2]
 
-// Module 8951 (GameProfileScreen)
+// Module 8983 (GameProfileScreen)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
-import timing from "timing" /* 4759 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8944 */;
-import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 8962 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8979 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4757 */;
+import timing from "timing" /* 4791 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8976 */;
+import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 8994 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 9011 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GameProfileStore from "GameProfileStore" /* 8952 */;
+import GameProfileStore from "GameProfileStore" /* 8984 */;
 
 const GameProfileStoreLinksActionSheetDefault = GameProfileStoreLinksActionSheet;
 
@@ -26,7 +26,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 let c10 = 56;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { loadingContainer: { flex: 1, justifyContent: "center", alignItems: "center", minHeight: 300, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, scrollView: null, stickyHeader: null };
 let obj3 = { flex: 1, justifyContent: "center", alignItems: "center", minHeight: 300, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 obj2.scrollView = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
@@ -54,7 +54,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   }
   if (cResult[2] !== onPress) {
     const obj2 = { variant: "primary", size: "sm", text: first, onPress, accessibilityLabel: tmp6 };
-    const tmp10 = closure_1_8(tmp(5188).Button, obj2);
+    const tmp10 = closure_1_8(tmp(5220).Button, obj2);
     cResult[2] = onPress;
     cResult[3] = tmp10;
     let tmp8 = tmp10;

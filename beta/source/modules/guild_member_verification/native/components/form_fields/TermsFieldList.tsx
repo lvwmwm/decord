@@ -1,22 +1,22 @@
-// Module ID: 5816
-// Function ID: 5817
+// Module ID: 5848
+// Function ID: 5849
 // Name: TermsFieldList
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 4754, 4748, 5817, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 4786, 4780, 5849, 2]
 
-// Module 5816 (TermsFieldList)
+// Module 5848 (TermsFieldList)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4748 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import TableRowDivider from "TableRowDivider" /* 5817 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4780 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import TableRowDivider from "TableRowDivider" /* 5849 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { termsContainer: { padding: 16, flexDirection: "column", justifyContent: "space-between", backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT }, firstItem: null, lastItem: null, termsRow: null, termsRowContent: null, termsRowNumber: null, title: null };
 let obj3 = { padding: 16, flexDirection: "column", justifyContent: "space-between", backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT };
 obj2.firstItem = { borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm };
@@ -70,7 +70,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp21 = tmp24;
           }
           const obj4 = { style: tmp14, variant: "text-md/medium", children: tmp15 };
-          const tmp20 = hasOwnProperty(tmp(4754).Text, obj4);
+          const tmp20 = hasOwnProperty(tmp(4786).Text, obj4);
           cResult[10] = tmp4.termsRowContent;
           cResult[11] = tmp15;
           cResult[12] = tmp20;
@@ -85,7 +85,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj6 = { style: tmp6, variant: "text-sm/medium", color: "text-muted", accessibilityLabel: tmp7, children: combined };
-    const tmp13 = hasOwnProperty(tmp(4754).Text, obj6);
+    const tmp13 = hasOwnProperty(tmp(4786).Text, obj6);
     cResult[3] = tmp4.termsRowNumber;
     cResult[4] = tmp7;
     cResult[5] = combined;
@@ -230,7 +230,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((rules) => {
   const intl = rules(1119).intl;
   obj2.children = intl.string(rules(1119).t.prJqwT);
   let items = [
-    closure_5(rules(4754).Text, obj2),
+    closure_5(rules(4786).Text, obj2),
     closure_5(View, {
       accessibilityRole: "list",
       children: rules.map((rule, index) => {

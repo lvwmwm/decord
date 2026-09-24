@@ -1,21 +1,21 @@
-// Module ID: 13735
-// Function ID: 13736
+// Module ID: 13771
+// Function ID: 13772
 // Name: premium/Header
-// Dependencies: [19, 17, 21, 4758, 558, 568, 4693, 1119, 4610, 13736, 13737, 5802, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 4725, 1119, 4642, 13772, 13773, 5834, 4786, 2]
 
-// Module 13735 (premium/Header)
+// Module 13771 (premium/Header)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import FastImageDefault from "FastImage" /* 5802 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import FastImageDefault from "FastImage" /* 5834 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ container: { flexDirection: "column", alignItems: "center" }, headerText: { marginTop: 16, marginBottom: 24 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -39,13 +39,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
       tmp9 = cResult[3];
     }
     if (tmpResult.isThemeDark(tmp6)) {
-      let tmp5Result = tmp5(13736);
+      let tmp5Result = tmp5(13772);
     } else {
-      tmp5Result = tmp5(13737);
+      tmp5Result = tmp5(13773);
     }
     if (cResult[4] !== tmp5Result) {
       const obj2 = { accessible: true, accessibilityLabel: tmp9, accessibilityRole: "header", source: tmp5Result };
-      const tmp14 = React4(tmp5(5802), obj2);
+      const tmp14 = React4(tmp5(5834), obj2);
       cResult[4] = tmp5Result;
       cResult[5] = tmp14;
       let tmp12 = tmp14;
@@ -63,7 +63,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     }
     if (cResult[7] !== tmp4.headerText) {
       const obj3 = { style: tmp4.headerText, variant: "text-md/medium", color: "mobile-text-heading-primary", children: tmp15 };
-      const tmp19 = React4(tmp(4754).Text, obj3);
+      const tmp19 = React4(tmp(4786).Text, obj3);
       cResult[7] = tmp4.headerText;
       cResult[8] = tmp19;
       let tmp17 = tmp19;
@@ -87,7 +87,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     cResult[11] = tmp17;
     cResult[12] = tmp23;
     tmp20 = tmp23;
-    tmpResult = tmp(4610);
+    tmpResult = tmp(4642);
   }
   const items1 = [tmp4.container, style];
   cResult[0] = style;
@@ -107,9 +107,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   obj2.accessibilityLabel = intl.string(util.t.lpNrPu);
   const tmp8 = FastImageDefault;
   if (obj3.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(13736);
+    let tmp2Result = tmp2(13772);
   } else {
-    tmp2Result = tmp2(13737);
+    tmp2Result = tmp2(13773);
   }
   obj2.source = tmp2Result;
   const items1 = [React4(tmp8, obj2), ];

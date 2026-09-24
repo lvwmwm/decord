@@ -1,16 +1,16 @@
-// Module ID: 12111
-// Function ID: 12112
+// Module ID: 12147
+// Function ID: 12148
 // Name: CustomTypingIndicatorGlyph
-// Dependencies: [19, 17, 21, 4758, 558, 568, 1397, 1181, 580, 12112, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 1397, 1181, 580, 12148, 2]
 
-// Module 12111 (CustomTypingIndicatorGlyph)
-import CustomTypingIndicatorAnimatedEmojiDefault from "CustomTypingIndicatorAnimatedEmoji" /* 12112 */;
+// Module 12147 (CustomTypingIndicatorGlyph)
+import CustomTypingIndicatorAnimatedEmojiDefault from "CustomTypingIndicatorAnimatedEmoji" /* 12148 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ emojiRow: { flexDirection: "row", alignItems: "center" } });
 const ReactCompilerGating = fn(558);
 let size = fn(2);

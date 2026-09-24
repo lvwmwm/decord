@@ -1,14 +1,14 @@
-// Module ID: 16613
-// Function ID: 16614
+// Module ID: 16623
+// Function ID: 16624
 // Name: FavoritesGuildSuggestionsLoader
-// Dependencies: [19, 16541, 21, 558, 568, 16614, 2]
+// Dependencies: [19, 16551, 21, 558, 568, 16624, 2]
 
-// Module 16613 (FavoritesGuildSuggestionsLoader)
-import useFavoritesGuildSuggestionCandidatesDefault from "useFavoritesGuildSuggestionCandidates" /* 16614 */;
+// Module 16623 (FavoritesGuildSuggestionsLoader)
+import useFavoritesGuildSuggestionCandidatesDefault from "useFavoritesGuildSuggestionCandidates" /* 16624 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const FavoritesGuildSuggestionsStore = fn(16541);
+const FavoritesGuildSuggestionsStore = fn(16551);
 ({ NO_SUGGESTIONS: closure_4, setFavoritesGuildSuggestions: hasOwnProperty, useFavoritesGuildSuggestionsVisibility: metroRequire } = FavoritesGuildSuggestionsStore);
 const jsx = fn(21).jsx;
 let ReactCompilerGating = fn(558);

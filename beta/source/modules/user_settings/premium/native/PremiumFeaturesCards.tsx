@@ -1,17 +1,17 @@
-// Module ID: 9474
-// Function ID: 9475
+// Module ID: 9506
+// Function ID: 9507
 // Name: PremiumFeaturesCards
-// Dependencies: [19, 17, 1378, 21, 4758, 558, 568, 9475, 2]
+// Dependencies: [19, 17, 1378, 21, 4790, 558, 568, 9507, 2]
 
-// Module 9474 (PremiumFeaturesCards)
-import PremiumFeaturesCardDefault from "PremiumFeaturesCard" /* 9475 */;
+// Module 9506 (PremiumFeaturesCards)
+import PremiumFeaturesCardDefault from "PremiumFeaturesCard" /* 9507 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
 const PremiumTypes = fn(1378).PremiumTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ container: { width: "100%", gap: 12 } });
 let obj2 = { TIER_0_LEADING: 0, [0]: "TIER_0_LEADING", TIER_2_LEADING: 1, [1]: "TIER_2_LEADING" };
 const ReactCompilerGating = fn(558);

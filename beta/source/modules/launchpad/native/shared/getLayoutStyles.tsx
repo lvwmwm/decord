@@ -1,14 +1,14 @@
-// Module ID: 17137
-// Function ID: 17138
+// Module ID: 17147
+// Function ID: 17148
 // Name: getLayoutStyles
-// Dependencies: [580, 1181, 5799, 7419, 2]
+// Dependencies: [580, 1181, 5831, 7451, 2]
 // Exports: default
 
-// Module 17137 (getLayoutStyles)
+// Module 17147 (getLayoutStyles)
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import GuildIcon from "GuildIcon" /* 5799 */;
-import GameIcon from "GameIcon" /* 7419 */;
+import GuildIcon from "GuildIcon" /* 5831 */;
+import GameIcon from "GameIcon" /* 7451 */;
 import size from "module_2" /* 2 */;
 
 const obj = { layout: { margin: { marginLeft: 8, marginRight: 8, marginVertical: 0 } }, container: { borderRadius: nativeDefault.radii.md, padding: { paddingVertical: 4, paddingLeft: 8, paddingRight: 8 } }, voiceUsers: { height: 36, margin: { marginLeft: 60 } }, voiceOrStageSummaryRow: null, channelName: null, messagePreview: null, timestamp: null, inviteRow: null, icon: null, unreadBadge: null, mentionBadge: null, category: null, typing: null, activeThreadCount: null, joinVoiceButton: null, threadSpine: null, happeningNow: null, separator: null, searchButton: null };

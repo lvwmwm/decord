@@ -1,11 +1,11 @@
-// Module ID: 12793
-// Function ID: 12794
+// Module ID: 12829
+// Function ID: 12830
 // Name: useProvisionalAccountExplanationText
-// Dependencies: [19, 1078, 558, 568, 12794, 1119, 2112, 2]
+// Dependencies: [19, 1078, 558, 568, 12830, 1119, 2112, 2]
 
-// Module 12793 (useProvisionalAccountExplanationText)
+// Module 12829 (useProvisionalAccountExplanationText)
 import c from "c" /* 568 */;
-import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 12794 */;
+import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 12830 */;
 import noop from "module_19" /* 19 */;
 
 const util = rSUACb(1119);

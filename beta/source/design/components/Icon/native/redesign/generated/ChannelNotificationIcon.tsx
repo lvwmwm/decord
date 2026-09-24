@@ -1,13 +1,13 @@
-// Module ID: 11265
-// Function ID: 11266
+// Module ID: 11301
+// Function ID: 11302
 // Name: ChannelNotificationIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 11266, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 11302, 4493, 2]
 
-// Module 11265 (ChannelNotificationIcon)
+// Module 11301 (ChannelNotificationIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod11266 from "module_11266" /* 11266 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod11302 from "module_11302" /* 11302 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const ChannelNotificationIcon = ReactCompilerGating.isReactCompilerEnable
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(11266);
+    const tmpResult = tmp(11302);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const ChannelNotificationIcon = ReactCompilerGating.isReactCompilerEnable
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11266, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11302, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

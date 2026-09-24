@@ -1,13 +1,13 @@
-// Module ID: 5984
-// Function ID: 5985
+// Module ID: 6016
+// Function ID: 6017
 // Name: AppsButtonSpotIllustration
-// Dependencies: [21, 558, 568, 5985, 5802, 2]
+// Dependencies: [21, 558, 568, 6017, 5834, 2]
 
-// Module 5984 (AppsButtonSpotIllustration)
+// Module 6016 (AppsButtonSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef5985 from "module_5985" /* 5985 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6017 from "module_6017" /* 6017 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const AppsButtonSpotIllustration = ReactCompilerGating.isReactCompilerEna
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef5985 };
+    const obj2 = { uri: _modDef6017 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const AppsButtonSpotIllustration = ReactCompilerGating.isReactCompilerEna
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5985 };
+  const obj2 = { uri: _modDef6017 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

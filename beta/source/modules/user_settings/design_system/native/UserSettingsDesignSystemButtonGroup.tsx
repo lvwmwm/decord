@@ -1,16 +1,16 @@
-// Module ID: 16066
-// Function ID: 16067
+// Module ID: 16076
+// Function ID: 16077
 // Name: UserSettingsDesignSystemButtonGroup
-// Dependencies: [19, 17, 21, 4758, 558, 568, 4754, 5188, 5186, 5652, 8178, 7625, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 4786, 5220, 5218, 5684, 8210, 7657, 2]
 
-// Module 16066 (UserSettingsDesignSystemButtonGroup)
+// Module 16076 (UserSettingsDesignSystemButtonGroup)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import ButtonGroup from "ButtonGroup" /* 5652 */;
-import _modDef7625 from "module_7625" /* 7625 */;
-import IconButton from "IconButton" /* 8178 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import ButtonGroup from "ButtonGroup" /* 5684 */;
+import _modDef7657 from "module_7657" /* 7657 */;
+import IconButton from "IconButton" /* 8210 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, ScrollView: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles({ container: { padding: 16, paddingBottom: 64 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -28,8 +28,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(15);
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp8 = hasOwnProperty(tmp(4754).Text, { variant: "text-lg/bold", children: "Text Button Example" });
-    const tmp9 = hasOwnProperty(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "By default, stacks buttons vertically. This is best for buttons with text." });
+    const tmp8 = hasOwnProperty(tmp(4786).Text, { variant: "text-lg/bold", children: "Text Button Example" });
+    const tmp9 = hasOwnProperty(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "By default, stacks buttons vertically. This is best for buttons with text." });
     cResult[0] = tmp8;
     cResult[1] = tmp9;
     tmp5 = tmp8;
@@ -45,7 +45,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 
         }
     };
-    const tmp12 = hasOwnProperty(tmp(5188).Button, obj2);
+    const tmp12 = hasOwnProperty(tmp(5220).Button, obj2);
     cResult[2] = tmp12;
     let tmp10 = tmp12;
   } else {
@@ -64,11 +64,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 
         }
     };
-    items1[1] = hasOwnProperty(tmp(5188).Button, obj6);
+    items1[1] = hasOwnProperty(tmp(5220).Button, obj6);
     obj5.children = items1;
-    items[2] = timestampProducer(tmp(5652).ButtonGroup, obj5);
+    items[2] = timestampProducer(tmp(5684).ButtonGroup, obj5);
     obj4.children = items;
-    obj3.children = timestampProducer(tmp(5186).Stack, obj4);
+    obj3.children = timestampProducer(tmp(5218).Stack, obj4);
     const tmp17 = hasOwnProperty(React3, obj3);
     cResult[3] = tmp17;
     let tmp13 = tmp17;
@@ -76,8 +76,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp13 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp21 = hasOwnProperty(tmp(4754).Text, { variant: "text-lg/bold", children: "IconButton Example" });
-    const tmp22 = hasOwnProperty(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "For IconButtons, a horizontal layout is recommended" });
+    const tmp21 = hasOwnProperty(tmp(4786).Text, { variant: "text-lg/bold", children: "IconButton Example" });
+    const tmp22 = hasOwnProperty(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "For IconButtons, a horizontal layout is recommended" });
     cResult[4] = tmp21;
     cResult[5] = tmp22;
     let tmp19 = tmp22;
@@ -90,12 +90,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj7 = {
       accessibilityLabel: "Settings",
       variant: "secondary",
-      icon: _modDef7625,
+      icon: _modDef7657,
       onPress() {
 
         }
     };
-    const tmp26 = hasOwnProperty(tmp(8178).IconButton, obj7);
+    const tmp26 = hasOwnProperty(tmp(8210).IconButton, obj7);
     cResult[6] = tmp26;
     let tmp23 = tmp26;
   } else {
@@ -110,16 +110,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj11 = {
       accessibilityLabel: "Settings",
       variant: "secondary",
-      icon: _modDef7625,
+      icon: _modDef7657,
       onPress() {
 
         }
     };
-    items3[1] = hasOwnProperty(tmp(8178).IconButton, obj11);
+    items3[1] = hasOwnProperty(tmp(8210).IconButton, obj11);
     obj10.children = items3;
-    items2[2] = timestampProducer(tmp(5652).ButtonGroup, obj10);
+    items2[2] = timestampProducer(tmp(5684).ButtonGroup, obj10);
     obj9.children = items2;
-    obj8.children = timestampProducer(tmp(5186).Stack, obj9);
+    obj8.children = timestampProducer(tmp(5218).Stack, obj9);
     const tmp32 = hasOwnProperty(React3, obj8);
     cResult[7] = tmp32;
     let tmp27 = tmp32;
@@ -127,9 +127,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp27 = cResult[7];
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp37 = hasOwnProperty(tmp(4754).Text, { variant: "text-lg/bold", children: "Mixed Buttons Example" });
-    const tmp38 = hasOwnProperty(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "A single text button can be used in a ButtonGroup with smaller IconButtons, using the horizontal layout." });
-    const tmp39 = hasOwnProperty(tmp(4754).Text, { variant: "text-md/medium", color: "text-subtle", children: "The Button with text must have the grow prop." });
+    const tmp37 = hasOwnProperty(tmp(4786).Text, { variant: "text-lg/bold", children: "Mixed Buttons Example" });
+    const tmp38 = hasOwnProperty(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "A single text button can be used in a ButtonGroup with smaller IconButtons, using the horizontal layout." });
+    const tmp39 = hasOwnProperty(tmp(4786).Text, { variant: "text-md/medium", color: "text-subtle", children: "The Button with text must have the grow prop." });
     cResult[8] = tmp39;
     cResult[9] = tmp37;
     cResult[10] = tmp38;
@@ -150,7 +150,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 
         }
     };
-    const tmp42 = hasOwnProperty(tmp(5188).Button, obj12);
+    const tmp42 = hasOwnProperty(tmp(5220).Button, obj12);
     cResult[11] = tmp42;
     let tmp40 = tmp42;
   } else {
@@ -167,21 +167,21 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj17 = {
       accessibilityLabel: "Cancel",
       variant: "secondary",
-      icon: _modDef7625,
+      icon: _modDef7657,
       onPress() {
 
         }
     };
-    items6[1] = hasOwnProperty(tmp(8178).IconButton, obj17);
+    items6[1] = hasOwnProperty(tmp(8210).IconButton, obj17);
     obj16.children = items6;
-    items5[3] = timestampProducer(tmp(5652).ButtonGroup, obj16);
-    items5[4] = hasOwnProperty(tmp(4754).Text, { variant: "text-sm/medium", color: "text-feedback-critical", children: "More than one text button should not be put in a horizontal group." });
-    items5[5] = hasOwnProperty(tmp(4754).Text, { variant: "text-sm/medium", color: "text-subtle", children: "This does not flex well with internationalization and enlarged font size settings. Use TwinButtons instead when there are specifically two text Buttons." });
+    items5[3] = timestampProducer(tmp(5684).ButtonGroup, obj16);
+    items5[4] = hasOwnProperty(tmp(4786).Text, { variant: "text-sm/medium", color: "text-feedback-critical", children: "More than one text button should not be put in a horizontal group." });
+    items5[5] = hasOwnProperty(tmp(4786).Text, { variant: "text-sm/medium", color: "text-subtle", children: "This does not flex well with internationalization and enlarged font size settings. Use TwinButtons instead when there are specifically two text Buttons." });
     obj15.children = items5;
-    obj14.children = timestampProducer(tmp(5186).Stack, obj15);
+    obj14.children = timestampProducer(tmp(5218).Stack, obj15);
     items4[2] = hasOwnProperty(React3, obj14);
     obj13.children = items4;
-    const tmp48 = timestampProducer(tmp(5186).Stack, obj13);
+    const tmp48 = timestampProducer(tmp(5218).Stack, obj13);
     cResult[12] = tmp48;
     let tmp43 = tmp48;
   } else {
@@ -236,7 +236,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     hasOwnProperty(IconButton.IconButton, {
       accessibilityLabel: "Settings",
       variant: "secondary",
-      icon: _modDef7625,
+      icon: _modDef7657,
       onPress() {
 
       }
@@ -246,7 +246,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj12 = {
     accessibilityLabel: "Settings",
     variant: "secondary",
-    icon: _modDef7625,
+    icon: _modDef7657,
     onPress() {
 
     }
@@ -268,7 +268,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   items4[1] = hasOwnProperty(IconButton.IconButton, {
     accessibilityLabel: "Settings",
     variant: "secondary",
-    icon: _modDef7625,
+    icon: _modDef7657,
     onPress() {
 
     }
@@ -296,7 +296,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj13 = {
     accessibilityLabel: "Settings",
     variant: "secondary",
-    icon: _modDef7625,
+    icon: _modDef7657,
     onPress() {
 
     }
@@ -312,7 +312,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   items6[1] = hasOwnProperty(IconButton.IconButton, {
     accessibilityLabel: "Cancel",
     variant: "secondary",
-    icon: _modDef7625,
+    icon: _modDef7657,
     onPress() {
 
     }

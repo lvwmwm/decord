@@ -1,18 +1,18 @@
-// Module ID: 12880
-// Function ID: 12881
+// Module ID: 12916
+// Function ID: 12917
 // Name: HubEmailConnectionContent
-// Dependencies: [5, 32, 19, 17, 2045, 12866, 1078, 21, 4758, 580, 1488, 7224, 12881, 4659, 1119, 12876, 5907, 4754, 4725, 12882, 1984, 6845, 1181, 5188, 2]
+// Dependencies: [5, 32, 19, 17, 2045, 12902, 1078, 21, 4790, 580, 1488, 7256, 12917, 4691, 1119, 12912, 5939, 4786, 4757, 12918, 1984, 6877, 1181, 5220, 2]
 // Exports: default
 
-// Module 12880 (HubEmailConnectionContent)
+// Module 12916 (HubEmailConnectionContent)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import useNavigation from "useNavigation" /* 1488 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import native2 from "native" /* 5907 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12876 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import native2 from "native" /* 5939 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12912 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -23,12 +23,12 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const HubConstants = fn(12866);
+const HubConstants = fn(12902);
 ({ HubEmailConnectionSteps: closure_9, INVITE_ROUTING_HUB_GUILD_ID: c10 } = HubConstants);
 const MarketingURLs = fn(1078).MarketingURLs;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { paddingHorizontal: 16 }, header: { marginTop: 16, marginBottom: 16, alignSelf: "center" }, scrollViewContainer: { flexGrow: 2 }, title: { textAlign: "center", marginBottom: 8 }, description: { textAlign: "center", marginBottom: 24 }, input: { marginBottom: 32 }, textInput: { borderRadius: nativeDefault.radii.lg }, growSpacing: null, buttonContainer: null };
 let obj3 = { borderRadius: nativeDefault.radii.lg };
 obj2.growSpacing = { flexGrow: 2, minHeight: nativeDefault.space.PX_24 };
@@ -216,10 +216,10 @@ export default function HubEmailConnectionContent(arg0) {
   const obj4 = { ref, contentContainerStyle: null, children: null };
   const items = [tmp.scrollViewContainer, ];
   const tmp7 = _slicedToArray(noop.useState(null), 2);
-  items[1] = { paddingBottom: invite(7224)().insets.bottom + invite(580).space.PX_16 };
+  items[1] = { paddingBottom: invite(7256)().insets.bottom + invite(580).space.PX_16 };
   obj4.contentContainerStyle = items;
   let obj6 = { style: tmp.container, children: null };
-  let obj5 = { paddingBottom: invite(7224)().insets.bottom + invite(580).space.PX_16 };
+  let obj5 = { paddingBottom: invite(7256)().insets.bottom + invite(580).space.PX_16 };
   const tmp16 = closure_7;
   const items1 = [closure_12(ref, { style: tmp.header, children: closure_12(native2.InkQuillSpotIllustration, { scale: 0.75 }) }), closure_12(Text_Text.Text, { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: formatToPlainStringResult }), , ];
   let obj9 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
@@ -270,7 +270,7 @@ export default function HubEmailConnectionContent(arg0) {
       }
     }, 100);
   };
-  items1[3] = closure_12(invite(6845), obj11);
+  items1[3] = closure_12(invite(6877), obj11);
   obj6.children = items1;
   const items2 = [closure_13(ref, obj6), closure_12(ref, { style: tmp.growSpacing }), ];
   const obj15 = { style: tmp.buttonContainer, children: null };

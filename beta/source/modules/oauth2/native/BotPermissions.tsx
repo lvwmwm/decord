@@ -1,15 +1,15 @@
-// Module ID: 9538
-// Function ID: 9539
+// Module ID: 9570
+// Function ID: 9571
 // Name: BotPermissions
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 4404, 1090, 9337, 9539, 5186, 5846, 4754, 1119, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 4436, 1090, 9369, 9571, 5218, 5878, 4786, 1119, 2]
 
-// Module 9538 (BotPermissions)
+// Module 9570 (BotPermissions)
 import nativeDefault from "native" /* 580 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import Stack_Stack from "Stack/Stack" /* 5186 */;
-import XSmallIcon from "XSmallIcon" /* 5846 */;
-import permissions from "permissions" /* 9337 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import Stack_Stack from "Stack/Stack" /* 5218 */;
+import XSmallIcon from "XSmallIcon" /* 5878 */;
+import permissions from "permissions" /* 9369 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -19,7 +19,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { disabledPermissionIcon: null };
 let size = { width: 24, height: 24, flexGrow: 0, flexShrink: 0, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
 obj2.disabledPermissionIcon = size;

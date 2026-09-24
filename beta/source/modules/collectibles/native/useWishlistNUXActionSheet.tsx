@@ -1,14 +1,14 @@
-// Module ID: 9048
-// Function ID: 9049
+// Module ID: 9080
+// Function ID: 9081
 // Name: useWishlistNUXActionSheet
-// Dependencies: [19, 7862, 502, 2042, 558, 568, 504, 4579, 2031, 2033, 4725, 9049, 1984, 2]
+// Dependencies: [19, 7894, 502, 2042, 558, 568, 504, 4611, 2031, 2033, 4757, 9081, 1984, 2]
 // Exports: default
 
-// Module 9048 (useWishlistNUXActionSheet)
+// Module 9080 (useWishlistNUXActionSheet)
 import dismissible_content from "dismissible_content" /* 2031 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4579 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4611 */;
 import noop from "module_19" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7862 */;
+import UserProfileStore from "UserProfileStore" /* 7894 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 const require = globalThis.__r;

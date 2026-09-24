@@ -1,15 +1,15 @@
-// Module ID: 7363
-// Function ID: 7364
+// Module ID: 7395
+// Function ID: 7396
 // Name: UserGuildSettingsManager
-// Dependencies: [5, 7364, 2045, 1078, 1095, 1275, 7365, 2]
+// Dependencies: [5, 7396, 2045, 1078, 1095, 1275, 7397, 2]
 
-// Module 7363 (UserGuildSettingsManager)
+// Module 7395 (UserGuildSettingsManager)
 import DurationsDefault from "Durations" /* 1095 */;
 import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7364 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7396 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7397 */;
 
 require = fn;
 function handleConnectionOpen() {

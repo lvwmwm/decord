@@ -1,19 +1,19 @@
-// Module ID: 13324
-// Function ID: 13325
+// Module ID: 13360
+// Function ID: 13361
 // Name: CutoutableAvatarImage
-// Dependencies: [19, 17, 13325, 21, 3, 1401, 13326, 558, 568, 13327, 5802, 9092, 4497, 5187, 1259, 8733, 560, 2]
+// Dependencies: [19, 17, 13361, 21, 3, 1401, 13362, 558, 568, 13363, 5834, 9124, 4529, 5219, 1259, 8765, 560, 2]
 
-// Module 13324 (CutoutableAvatarImage)
+// Module 13360 (CutoutableAvatarImage)
 import LoggerDefault from "Logger" /* 3 */;
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 560 */;
 import c from "c" /* 568 */;
 import v1 from "v1" /* 1259 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import inlineStylesDefault from "inlineStyles" /* 8733 */;
-import ClipView from "ClipView" /* 9092 */;
-import getChannelIcon from "getChannelIcon" /* 13326 */;
-import getReactNativeSVGImageSourceDefault from "getReactNativeSVGImageSource" /* 13327 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import inlineStylesDefault from "inlineStyles" /* 8765 */;
+import ClipView from "ClipView" /* 9124 */;
+import getChannelIcon from "getChannelIcon" /* 13362 */;
+import getReactNativeSVGImageSourceDefault from "getReactNativeSVGImageSource" /* 13363 */;
 import noop from "module_19" /* 19 */;
 
 const ClipViewDefault = ClipView;
@@ -94,7 +94,7 @@ function CutoutAvatarImage(arg0) {
         size1.mask = "url(#" + first + ")";
         const obj4 = { style: tmp49, source: tmp50, usesSmallCache: true };
         size1.children = React5(FastImageDefault, obj4);
-        const tmp56 = React5(Circle2(8733).ForeignObject, size1);
+        const tmp56 = React5(Circle2(8765).ForeignObject, size1);
         cResult[7] = tmp49;
         cResult[8] = tmp50;
         cResult[9] = tmp56;
@@ -112,7 +112,7 @@ function CutoutAvatarImage(arg0) {
       const size3 = { x: "0", y: "0", height: "100%", width: "100%", href: tmp43, mask: null };
       const _HermesInternal5 = HermesInternal;
       size3.mask = "url(#" + first + ")";
-      const tmp48 = React5(Circle2(8733).Image, size3);
+      const tmp48 = React5(Circle2(8765).Image, size3);
       cResult[12] = tmp43;
       cResult[13] = tmp48;
       let tmp46 = tmp48;
@@ -172,7 +172,7 @@ function CutoutAvatarImage(arg0) {
                     cResult[30] = null;
                     tmp70 = null;
                   } else if (CIRCULAR2 === tmp35.CIRCULAR) {
-                    Circle2 = Circle2(8733).Circle;
+                    Circle2 = Circle2(8765).Circle;
                     obj6 = { cx: result, cy: result, r: result, fill: "none", mask: "url(#" + first + ")", stroke: cutout2.border.color, strokeWidth: null };
                     width = cutout2.border.width;
                     obj6.strokeWidth = width;
@@ -183,7 +183,7 @@ function CutoutAvatarImage(arg0) {
                     size5.mask = "url(#" + first + ")";
                     size5.stroke = cutout2.border.color;
                     size5.strokeWidth = cutout2.border.width;
-                    tmp73 = React5(Circle2(8733).Rect, size5);
+                    tmp73 = React5(Circle2(8765).Rect, size5);
                   }
                 }
               }
@@ -191,8 +191,8 @@ function CutoutAvatarImage(arg0) {
               const size6 = { width: size2, height: size2, id: first, children: null };
               const items1 = [tmp58, tmp63];
               size6.children = items1;
-              obj7.children = closure_1_8(Circle2(8733).Mask, size6);
-              const tmp69 = React5(Circle2(8733).Defs, obj7);
+              obj7.children = closure_1_8(Circle2(8765).Mask, size6);
+              const tmp69 = React5(Circle2(8765).Defs, obj7);
               cResult[22] = size2;
               cResult[23] = tmp58;
               cResult[24] = tmp63;
@@ -201,7 +201,7 @@ function CutoutAvatarImage(arg0) {
             }
           }
           const obj8 = { cx: diff, cy: diff1, r: radius2, fill: "black" };
-          const tmp65 = React5(Circle2(8733).Circle, obj8);
+          const tmp65 = React5(Circle2(8765).Circle, obj8);
           cResult[18] = radius2;
           cResult[19] = diff;
           cResult[20] = diff1;
@@ -212,10 +212,10 @@ function CutoutAvatarImage(arg0) {
     }
     if (CIRCULAR2 === obj6.CIRCULAR) {
       const obj9 = { cx: result, cy: result, r: result, fill: "white" };
-      let tmp60 = React5(Circle2(8733).Circle, obj9);
+      let tmp60 = React5(Circle2(8765).Circle, obj9);
     } else {
       const size7 = { x: 0, y: 0, height: size2, width: size2, fill: "white" };
-      tmp60 = React5(Circle2(8733).Rect, size7);
+      tmp60 = React5(Circle2(8765).Rect, size7);
     }
     cResult[14] = CIRCULAR2;
     cResult[15] = result;
@@ -263,7 +263,7 @@ function CutoutAvatarImage(arg0) {
         obj10.style = obj11;
         obj10.source = getReactNativeSVGImageSourceDefault(source);
         size8.children = React5(FastImageDefault, obj10);
-        let tmp13 = React5(Circle(8733).ForeignObject, size8);
+        let tmp13 = React5(Circle(8765).ForeignObject, size8);
         let tmp14 = importDefault;
         let tmp15 = React5;
       }
@@ -271,18 +271,18 @@ function CutoutAvatarImage(arg0) {
       const size9 = { width: size, height: size, id: v4Result1, children: null };
       if (CIRCULAR === tmp5.CIRCULAR) {
         const obj13 = { cx: result1, cy: result1, r: result1, fill: "white" };
-        let tmp15Result = tmp15(Circle(8733).Circle, obj13);
+        let tmp15Result = tmp15(Circle(8765).Circle, obj13);
       } else {
         const size10 = { x: 0, y: 0, height: size, width: size, fill: "white" };
-        tmp15Result = tmp15(Circle(8733).Rect, size10);
+        tmp15Result = tmp15(Circle(8765).Rect, size10);
       }
       const obj14 = { children: null };
       const items2 = [tmp15Result, ];
       const obj16 = { cx: diff2, cy: diff3, r: radius, fill: "black" };
-      items2[1] = tmp15(Circle(8733).Circle, obj16);
+      items2[1] = tmp15(Circle(8765).Circle, obj16);
       size9.children = items2;
-      obj14.children = closure_1_8(Circle(8733).Mask, size9);
-      const items3 = [tmp15(Circle(8733).Defs, obj14), tmp13, ];
+      obj14.children = closure_1_8(Circle(8765).Mask, size9);
+      const items3 = [tmp15(Circle(8765).Defs, obj14), tmp13, ];
       if (null == cutout.border) {
         const size11 = { height: "100%", width: "100%", children: null };
         items3[2] = null;
@@ -290,7 +290,7 @@ function CutoutAvatarImage(arg0) {
         obj12.children = tmp21(tmp14Result, size11);
         return tmp15(tmp20, obj12);
       } else if (CIRCULAR === tmp5.CIRCULAR) {
-        Circle = Circle(8733).Circle;
+        Circle = Circle(8765).Circle;
         obj = { cx: result1, cy: result1, r: result1, fill: "none", mask: null, stroke: null, strokeWidth: null };
         const _HermesInternal4 = HermesInternal;
         obj.mask = "url(#" + v4Result1 + ")";
@@ -304,22 +304,22 @@ function CutoutAvatarImage(arg0) {
         size12.mask = "url(#" + v4Result1 + ")";
         size12.stroke = cutout.border.color;
         size12.strokeWidth = cutout.border.width;
-        tmp15Result2 = tmp15(Circle(8733).Rect, size12);
+        tmp15Result2 = tmp15(Circle(8765).Rect, size12);
       }
-      tmp14Result = tmp14(8733);
+      tmp14Result = tmp14(8765);
       tmp20 = hasOwnProperty;
     }
     const size13 = { x: "0", y: "0", height: "100%", width: "100%", href: getReactNativeSVGImageSourceDefault(source), mask: null };
     const _HermesInternal = HermesInternal;
     size13.mask = "url(#" + v4Result1 + ")";
-    tmp13 = React5(Circle(8733).Image, size13);
+    tmp13 = React5(Circle(8765).Image, size13);
     tmp14 = importDefault;
     tmp15 = React5;
   }
 }
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const CHANNEL_SPRING_CONFIG = fn(13325).CHANNEL_SPRING_CONFIG;
+const CHANNEL_SPRING_CONFIG = fn(13361).CHANNEL_SPRING_CONFIG;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const logger = new LoggerDefault("UIKit - AvatarImage");
@@ -406,28 +406,28 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((cutout) => {
   const cResult = cutout(568).c(11);
   cutout = cutout.cutout;
   ({ source, style, imageStyle } = cutout);
-  obj2 = cutout(4497);
+  obj2 = cutout(4529);
   const fn = function i() {
     const size = cutout;
     if (cutout.shape === ClipView.CutoutShape.RoundedRect) {
-      const size1 = { shape: tmp(9092).CutoutShape.RoundedRect, x: tmp(5187).withSpring(size.x, CHANNEL_SPRING_CONFIG), y: null, width: null, height: null, cornerRadius: null };
-      const tmpResult = tmp(5187);
-      size1.y = tmp(5187).withSpring(size.y, CHANNEL_SPRING_CONFIG);
-      const tmpResult8 = tmp(5187);
-      size1.width = tmp(5187).withSpring(size.width, CHANNEL_SPRING_CONFIG);
-      const tmpResult9 = tmp(5187);
-      size1.height = tmp(5187).withSpring(size.height, CHANNEL_SPRING_CONFIG);
-      const tmpResult10 = tmp(5187);
-      size1.cornerRadius = tmp(5187).withSpring(size.cornerRadius, CHANNEL_SPRING_CONFIG);
+      const size1 = { shape: tmp(9124).CutoutShape.RoundedRect, x: tmp(5219).withSpring(size.x, CHANNEL_SPRING_CONFIG), y: null, width: null, height: null, cornerRadius: null };
+      const tmpResult = tmp(5219);
+      size1.y = tmp(5219).withSpring(size.y, CHANNEL_SPRING_CONFIG);
+      const tmpResult8 = tmp(5219);
+      size1.width = tmp(5219).withSpring(size.width, CHANNEL_SPRING_CONFIG);
+      const tmpResult9 = tmp(5219);
+      size1.height = tmp(5219).withSpring(size.height, CHANNEL_SPRING_CONFIG);
+      const tmpResult10 = tmp(5219);
+      size1.cornerRadius = tmp(5219).withSpring(size.cornerRadius, CHANNEL_SPRING_CONFIG);
       let point = size1;
-      const tmpResult11 = tmp(5187);
+      const tmpResult11 = tmp(5219);
     } else {
-      point = { shape: tmp(9092).CutoutShape.Circle, x: tmp(5187).withSpring(size.x, CHANNEL_SPRING_CONFIG), y: null, size: null };
-      const tmpResult12 = tmp(5187);
-      point.y = tmp(5187).withSpring(size.y, CHANNEL_SPRING_CONFIG);
-      const tmpResult13 = tmp(5187);
-      point.size = tmp(5187).withSpring(size.size, CHANNEL_SPRING_CONFIG);
-      const tmpResult14 = tmp(5187);
+      point = { shape: tmp(9124).CutoutShape.Circle, x: tmp(5219).withSpring(size.x, CHANNEL_SPRING_CONFIG), y: null, size: null };
+      const tmpResult12 = tmp(5219);
+      point.y = tmp(5219).withSpring(size.y, CHANNEL_SPRING_CONFIG);
+      const tmpResult13 = tmp(5219);
+      point.size = tmp(5219).withSpring(size.size, CHANNEL_SPRING_CONFIG);
+      const tmpResult14 = tmp(5219);
     }
     const obj = { cutouts: null };
     const items = [point];
@@ -436,7 +436,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((cutout) => {
   };
   let obj = cutout(568);
   const tmp = cutout;
-  fn.__closure = { cutout, CutoutShape: cutout(9092).CutoutShape, withSpring: cutout(5187).withSpring, CHANNEL_SPRING_CONFIG };
+  fn.__closure = { cutout, CutoutShape: cutout(9124).CutoutShape, withSpring: cutout(5219).withSpring, CHANNEL_SPRING_CONFIG };
   fn.__workletHash = 12529564164821;
   fn.__initData = __initData;
   const animatedProps = obj2.useAnimatedProps(fn);
@@ -469,7 +469,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((cutout) => {
       }
     }
     const obj4 = { style, animatedProps, children: tmp10 };
-    const tmp14 = closure_7(tmp(9092).ClipViewAnimated, obj4);
+    const tmp14 = closure_7(tmp(9124).ClipViewAnimated, obj4);
     cResult[7] = animatedProps;
     cResult[8] = style;
     cResult[9] = tmp10;
@@ -487,42 +487,42 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((cutout) => {
   const fn = function n() {
     const size = cutout;
     if (cutout.shape === ClipView.CutoutShape.RoundedRect) {
-      const size1 = { shape: tmp(9092).CutoutShape.RoundedRect, x: tmp(5187).withSpring(size.x, CHANNEL_SPRING_CONFIG), y: null, width: null, height: null, cornerRadius: null };
-      const tmpResult = tmp(5187);
-      size1.y = tmp(5187).withSpring(size.y, CHANNEL_SPRING_CONFIG);
-      const tmpResult8 = tmp(5187);
-      size1.width = tmp(5187).withSpring(size.width, CHANNEL_SPRING_CONFIG);
-      const tmpResult9 = tmp(5187);
-      size1.height = tmp(5187).withSpring(size.height, CHANNEL_SPRING_CONFIG);
-      const tmpResult10 = tmp(5187);
-      size1.cornerRadius = tmp(5187).withSpring(size.cornerRadius, CHANNEL_SPRING_CONFIG);
+      const size1 = { shape: tmp(9124).CutoutShape.RoundedRect, x: tmp(5219).withSpring(size.x, CHANNEL_SPRING_CONFIG), y: null, width: null, height: null, cornerRadius: null };
+      const tmpResult = tmp(5219);
+      size1.y = tmp(5219).withSpring(size.y, CHANNEL_SPRING_CONFIG);
+      const tmpResult8 = tmp(5219);
+      size1.width = tmp(5219).withSpring(size.width, CHANNEL_SPRING_CONFIG);
+      const tmpResult9 = tmp(5219);
+      size1.height = tmp(5219).withSpring(size.height, CHANNEL_SPRING_CONFIG);
+      const tmpResult10 = tmp(5219);
+      size1.cornerRadius = tmp(5219).withSpring(size.cornerRadius, CHANNEL_SPRING_CONFIG);
       let point = size1;
-      const tmpResult11 = tmp(5187);
+      const tmpResult11 = tmp(5219);
     } else {
-      point = { shape: tmp(9092).CutoutShape.Circle, x: tmp(5187).withSpring(size.x, CHANNEL_SPRING_CONFIG), y: null, size: null };
-      const tmpResult12 = tmp(5187);
-      point.y = tmp(5187).withSpring(size.y, CHANNEL_SPRING_CONFIG);
-      const tmpResult13 = tmp(5187);
-      point.size = tmp(5187).withSpring(size.size, CHANNEL_SPRING_CONFIG);
-      const tmpResult14 = tmp(5187);
+      point = { shape: tmp(9124).CutoutShape.Circle, x: tmp(5219).withSpring(size.x, CHANNEL_SPRING_CONFIG), y: null, size: null };
+      const tmpResult12 = tmp(5219);
+      point.y = tmp(5219).withSpring(size.y, CHANNEL_SPRING_CONFIG);
+      const tmpResult13 = tmp(5219);
+      point.size = tmp(5219).withSpring(size.size, CHANNEL_SPRING_CONFIG);
+      const tmpResult14 = tmp(5219);
     }
     const obj = { cutouts: null };
     const items = [point];
     obj.cutouts = items;
     return obj;
   };
-  obj2 = { cutout, CutoutShape: cutout(9092).CutoutShape, withSpring: cutout(5187).withSpring, CHANNEL_SPRING_CONFIG };
+  obj2 = { cutout, CutoutShape: cutout(9124).CutoutShape, withSpring: cutout(5219).withSpring, CHANNEL_SPRING_CONFIG };
   fn.__closure = obj2;
   fn.__workletHash = 6509713032566;
   fn.__initData = __initData2;
-  const animatedProps = cutout(4497).useAnimatedProps(fn);
-  let obj = cutout(4497);
+  const animatedProps = cutout(4529).useAnimatedProps(fn);
+  let obj = cutout(4529);
   const obj3 = { style, animatedProps, children: null };
   const obj4 = { style: null, source: getReactNativeSVGImageSourceDefault(source), usesSmallCache: true };
   let items = [obj2.image, imageStyle];
   obj4.style = items;
   obj3.children = closure_7(FastImageDefault, obj4);
-  return closure_7(cutout(9092).ClipViewAnimated, obj3);
+  return closure_7(cutout(9124).ClipViewAnimated, obj3);
 });
 ReactCompilerGating = fn(558);
 let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((animate) => {

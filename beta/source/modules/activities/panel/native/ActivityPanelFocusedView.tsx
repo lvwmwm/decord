@@ -1,21 +1,21 @@
-// Module ID: 17457
-// Function ID: 17458
+// Module ID: 17467
+// Function ID: 17468
 // Name: ActivityPanelFocusedView
-// Dependencies: [19, 17, 4750, 2045, 2044, 2008, 9313, 17452, 1078, 12420, 21, 4758, 580, 558, 568, 1616, 504, 1482, 17447, 17168, 4497, 4471, 4759, 5187, 5170, 4389, 17449, 17458, 9589, 9718, 2]
+// Dependencies: [19, 17, 4782, 2045, 2044, 2008, 9345, 17462, 1078, 12456, 21, 4790, 580, 558, 568, 1616, 504, 1482, 17457, 17178, 4529, 4503, 4791, 5219, 5202, 4421, 17459, 17468, 9621, 9750, 2]
 
-// Module 17457 (ActivityPanelFocusedView)
+// Module 17467 (ActivityPanelFocusedView)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import native from "native" /* 4471 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import spring from "spring" /* 5187 */;
-import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 9718 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17449 */;
-import ActivityPanelHeaderDefault from "ActivityPanelHeader" /* 17458 */;
+import native from "native" /* 4503 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import spring from "spring" /* 5219 */;
+import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 9750 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17459 */;
+import ActivityPanelHeaderDefault from "ActivityPanelHeader" /* 17468 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 
@@ -23,16 +23,16 @@ const require = globalThis.__r;
 
 require = fn;
 const ActivityLayoutMode = fn(2008).ActivityLayoutMode;
-const ActivityPanelConstants = fn(9313);
+const ActivityPanelConstants = fn(9345);
 ({ ACTIVITY_LAYOUT_PHYSICS_GESTURE: closure_8, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: closure_9, ActivityPanelModes: c10 } = ActivityPanelConstants);
-const ActivityPanelNativeConstants = fn(17452);
+const ActivityPanelNativeConstants = fn(17462);
 ({ DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG: closure_11, DEFAULT_PORTRAIT_LETTERBOX_CONFIG: closure_12, DEFAULT_LANDSCAPE_PILLERBOX_CONFIG: map1 } = ActivityPanelNativeConstants);
 const ThemeTypes = fn(1078).ThemeTypes;
-const IS_IOS = fn(12420).IS_IOS;
+const IS_IOS = fn(12456).IS_IOS;
 const jsxProd = fn(21);
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
 const REDUCED_MOTION_TIMING = { duration: 300 };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { wrapper: { position: "absolute", flexDirection: "row", alignItems: "center", justifyContent: "center", overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, shade: null };
 let obj4 = {};
 const merged = Object.assign(fn(17).StyleSheet.absoluteFillObject);
@@ -195,7 +195,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((transitionCleanUp) =
       }
       let num6 = 1;
       if (stateFromStores) {
-        const tmp9Result = tmp9(4759);
+        const tmp9Result = tmp9(4791);
         let str2 = "animate-always";
         if (obj.get()) {
           str2 = "animate-always";
@@ -221,7 +221,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((transitionCleanUp) =
         size.borderTopEndRadius = num;
         return size;
       } else {
-        const tmp9Result2 = tmp9(5187);
+        const tmp9Result2 = tmp9(5219);
         if (!wrapperOffset.get().gestureActive) {
           let tmp21 = ACTIVITY_LAYOUT_PHYSICS_DEFAULT;
           tmp9Result2.withSpring(height, tmp21, "animate-always", transitionComplete);
@@ -439,7 +439,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((transitionCleanUp) =
     }
     let num6 = 1;
     if (stateFromStores) {
-      const tmp9Result = tmp9(4759);
+      const tmp9Result = tmp9(4791);
       let str2 = "animate-always";
       if (obj.get()) {
         str2 = "animate-always";
@@ -465,7 +465,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((transitionCleanUp) =
       size.borderTopEndRadius = num;
       return size;
     } else {
-      const tmp9Result2 = tmp9(5187);
+      const tmp9Result2 = tmp9(5219);
       if (!wrapperOffset.get().gestureActive) {
         let tmp21 = ACTIVITY_LAYOUT_PHYSICS_DEFAULT;
         tmp9Result2.withSpring(height, tmp21, "animate-always", transitionComplete);

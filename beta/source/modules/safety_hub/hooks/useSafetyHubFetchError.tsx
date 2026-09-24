@@ -1,12 +1,12 @@
-// Module ID: 15029
-// Function ID: 15030
+// Module ID: 15038
+// Function ID: 15039
 // Name: useSafetyHubFetchError
-// Dependencies: [8707, 558, 568, 504, 2]
+// Dependencies: [8739, 558, 568, 504, 2]
 
-// Module 15029 (useSafetyHubFetchError)
+// Module 15038 (useSafetyHubFetchError)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import SafetyHubStore from "SafetyHubStore" /* 8707 */;
+import SafetyHubStore from "SafetyHubStore" /* 8739 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);

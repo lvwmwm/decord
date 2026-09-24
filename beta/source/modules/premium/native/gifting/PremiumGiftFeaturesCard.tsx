@@ -1,33 +1,33 @@
-// Module ID: 11047
-// Function ID: 11048
+// Module ID: 11083
+// Function ID: 11084
 // Name: PremiumGiftFeaturesCard
-// Dependencies: [109, 19, 17, 10963, 1378, 1089, 21, 580, 4758, 5743, 558, 568, 11036, 504, 9482, 11048, 11049, 9496, 9494, 1119, 4754, 9501, 5188, 9110, 11050, 11051, 11052, 4720, 2013, 2550, 11053, 4471, 5198, 2]
+// Dependencies: [109, 19, 17, 10999, 1378, 1089, 21, 580, 4790, 5775, 558, 568, 11072, 504, 9514, 11084, 11085, 9528, 9526, 1119, 4786, 9533, 5220, 9142, 11086, 11087, 11088, 4752, 2013, 2550, 11089, 4503, 5230, 2]
 
-// Module 11047 (PremiumGiftFeaturesCard)
+// Module 11083 (PremiumGiftFeaturesCard)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import StringUtils from "StringUtils" /* 2013 */;
 import _modDef2550 from "module_2550" /* 2550 */;
-import native from "native" /* 4471 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import TextStylesDefault from "TextStyles" /* 5743 */;
-import usePremiumFeaturesDefault from "usePremiumFeatures" /* 9482 */;
-import PremiumFeaturesLogoDefault from "PremiumFeaturesLogo" /* 9494 */;
-import PremiumFeaturesWumpusDefault from "PremiumFeaturesWumpus" /* 9496 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 9501 */;
-import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 11048 */;
-import useShouldShowGiftingPromotionDecoDefault from "useShouldShowGiftingPromotionDeco" /* 11049 */;
-import MarketingComponentHooks from "MarketingComponentHooks" /* 11050 */;
-import SlayerStorefrontTimeUtils from "SlayerStorefrontTimeUtils" /* 11051 */;
-import PremiumGiftCountdownBadgeDefault from "PremiumGiftCountdownBadge" /* 11052 */;
-import PremiumGiftPromotionDetailsDefault from "PremiumGiftPromotionDetails" /* 11053 */;
+import native from "native" /* 4503 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import LinearGradientDefault from "LinearGradient" /* 5230 */;
+import TextStylesDefault from "TextStyles" /* 5775 */;
+import usePremiumFeaturesDefault from "usePremiumFeatures" /* 9514 */;
+import PremiumFeaturesLogoDefault from "PremiumFeaturesLogo" /* 9526 */;
+import PremiumFeaturesWumpusDefault from "PremiumFeaturesWumpus" /* 9528 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 9533 */;
+import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 11084 */;
+import useShouldShowGiftingPromotionDecoDefault from "useShouldShowGiftingPromotionDeco" /* 11085 */;
+import MarketingComponentHooks from "MarketingComponentHooks" /* 11086 */;
+import SlayerStorefrontTimeUtils from "SlayerStorefrontTimeUtils" /* 11087 */;
+import PremiumGiftCountdownBadgeDefault from "PremiumGiftCountdownBadge" /* 11088 */;
+import PremiumGiftPromotionDetailsDefault from "PremiumGiftPromotionDetails" /* 11089 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 10963 */;
+import PromotionsStore from "PromotionsStore" /* 10999 */;
 
 const require = globalThis.__r;
 
@@ -65,7 +65,7 @@ const obj13 = { marginTop: nativeDefault.space.PX_24 };
 obj12.compact = { marginTop: nativeDefault.space.PX_12 };
 const obj14 = { marginTop: nativeDefault.space.PX_12 };
 obj12.smallCompact = { marginTop: nativeDefault.space.PX_8 };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_17 = createStyles.createStyles(() => {
   obj = { card: null, logo: null, pricing: null, featureTitle: null, features: null, button: null, featureIcon: null, featureText: null, promotionDetailsContainer: null, countdownBadge: null };
   const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
@@ -169,7 +169,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLargeSize) =
               }
               if (cResult[17] !== onPress) {
                 const obj3 = { variant: "primary-overlay", text: tmp27, onPress };
-                const tmp31 = closure_1_11(tmp(5188).Button, obj3);
+                const tmp31 = closure_1_11(tmp(5220).Button, obj3);
                 cResult[17] = onPress;
                 cResult[18] = tmp31;
                 let tmp29 = tmp31;
@@ -189,7 +189,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLargeSize) =
               const items2 = [tmp23, tmp29];
               obj5.children = items2;
               obj4.children = __initData(LinearGradientDefault, obj5);
-              const tmp37 = closure_1_11(tmp(4471).ThemeContextProvider, obj4);
+              const tmp37 = closure_1_11(tmp(4503).ThemeContextProvider, obj4);
               cResult[19] = tmp4.promotionDetailsContainer;
               cResult[20] = tmp29;
               cResult[21] = tmp23;
@@ -214,7 +214,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLargeSize) =
   if (tmp14) {
     const obj7 = { text: tickingFormattedLimitedOfferTimeLeft, icon: null, style: null };
     obj8 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
-    obj7.icon = closure_1_11(tmp(4720).ClockIcon, obj8);
+    obj7.icon = closure_1_11(tmp(4752).ClockIcon, obj8);
     obj7.style = tmp4.countdownBadge;
     tmp14 = closure_1_11(PremiumGiftCountdownBadgeDefault, obj7);
   }
@@ -243,10 +243,10 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLargeSize) =
   if (tmp8Result) {
     const obj7 = { text: tickingFormattedLimitedOfferTimeLeft, icon: null, style: null };
     obj8 = { size: "xxs", color: tmp10(580).colors.ICON_OVERLAY_LIGHT };
-    obj7.icon = tmp8(tmp2(4720).ClockIcon, obj8);
+    obj7.icon = tmp8(tmp2(4752).ClockIcon, obj8);
     obj7.style = tmp.countdownBadge;
-    tmp8Result = tmp8(tmp10(11052), obj7);
-    const tmp10Result = tmp10(11052);
+    tmp8Result = tmp8(tmp10(11088), obj7);
+    const tmp10Result = tmp10(11088);
   }
   obj6.topContent = tmp8Result;
   const tmp12 = PremiumGiftPromotionDetailsDefault;

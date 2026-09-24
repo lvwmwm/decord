@@ -1,10 +1,10 @@
-// Module ID: 8154
-// Function ID: 8155
+// Module ID: 8186
+// Function ID: 8187
 // Name: ConversationExperiments
 // Dependencies: [2067, 1078, 1438, 558, 568, 504, 2]
 // Exports: isConversationDebugUXEnabled, isTopicalNavEnabled
 
-// Module 8154 (ConversationExperiments)
+// Module 8186 (ConversationExperiments)
 import c from "c" /* 568 */;
 import GuildStore from "GuildStore" /* 2067 */;
 

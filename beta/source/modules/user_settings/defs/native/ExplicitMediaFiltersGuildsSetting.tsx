@@ -1,23 +1,23 @@
-// Module ID: 15097
-// Function ID: 15098
+// Module ID: 15107
+// Function ID: 15108
 // Name: ExplicitMediaFiltersGuildsSetting
-// Dependencies: [8238, 558, 8920, 15091, 568, 15087, 7847, 7542, 1119, 15088, 1190, 11594, 2]
+// Dependencies: [8270, 558, 8952, 15094, 568, 15102, 7879, 7574, 1119, 15103, 1190, 11630, 2]
 
-// Module 15097 (ExplicitMediaFiltersGuildsSetting)
+// Module 15107 (ExplicitMediaFiltersGuildsSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7542 */;
-import SettingsConstants from "SettingsConstants" /* 8238 */;
-import useUserIsTeen from "useUserIsTeen" /* 8920 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15087 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15088 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7574 */;
+import SettingsConstants from "SettingsConstants" /* 8270 */;
+import useUserIsTeen from "useUserIsTeen" /* 8952 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15102 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15103 */;
 import "ReactCompilerGating";
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11594 */;
+import SettingBuilders from "SettingBuilders" /* 11630 */;
 import size from "module_2" /* 2 */;
 
-const ExplicitMediaRedactionUtils = tmp(7847);
+const ExplicitMediaRedactionUtils = tmp(7879);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let userIsTeen = useUserIsTeen.useUserIsTeen();

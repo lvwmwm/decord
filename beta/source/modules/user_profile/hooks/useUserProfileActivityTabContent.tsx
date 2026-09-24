@@ -1,18 +1,18 @@
-// Module ID: 13373
-// Function ID: 13374
+// Module ID: 13409
+// Function ID: 13410
 // Name: useUserProfileActivityTabContent
-// Dependencies: [19, 9070, 4798, 5498, 4777, 7862, 1078, 3, 558, 568, 13374, 13336, 13338, 8617, 504, 2]
+// Dependencies: [19, 9102, 4830, 5530, 4809, 7894, 1078, 3, 558, 568, 13410, 13372, 13374, 8649, 504, 2]
 
-// Module 13373 (useUserProfileActivityTabContent)
+// Module 13409 (useUserProfileActivityTabContent)
 import LoggerDefault from "Logger" /* 3 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8617 */;
-import maybeFetchContentInventoryOutboxDefault from "maybeFetchContentInventoryOutbox" /* 13374 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8649 */;
+import maybeFetchContentInventoryOutboxDefault from "maybeFetchContentInventoryOutbox" /* 13410 */;
 import noop from "module_19" /* 19 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9070 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
-import VoiceStateStore from "VoiceStateStore" /* 4777 */;
-import UserProfileStore from "UserProfileStore" /* 7862 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9102 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5530 */;
+import VoiceStateStore from "VoiceStateStore" /* 4809 */;
+import UserProfileStore from "UserProfileStore" /* 7894 */;
 
 require = fn;
 const StatusTypes = fn(1078).StatusTypes;

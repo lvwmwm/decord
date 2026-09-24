@@ -1,12 +1,12 @@
-// Module ID: 12785
-// Function ID: 12786
+// Module ID: 12821
+// Function ID: 12822
 // Name: UserProfileConfirmCancelFriendRequest
-// Dependencies: [19, 21, 558, 568, 1119, 5116, 5116, 2]
+// Dependencies: [19, 21, 558, 568, 1119, 5148, 5148, 2]
 
-// Module 12785 (UserProfileConfirmCancelFriendRequest)
+// Module 12821 (UserProfileConfirmCancelFriendRequest)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import AlertModal from "AlertModal" /* 5116 */;
+import AlertModal from "AlertModal" /* 5148 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -47,7 +47,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[4] !== onConfirm) {
     const obj3 = { variant: "destructive", text: tmp8, onPress: onConfirm };
-    const tmp12 = React2(tmp(5116).AlertActionButton, obj3, "cancel-friend-request");
+    const tmp12 = React2(tmp(5148).AlertActionButton, obj3, "cancel-friend-request");
     cResult[4] = onConfirm;
     cResult[5] = tmp12;
     let tmp10 = tmp12;
@@ -58,7 +58,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj4 = { variant: "secondary", text: null };
     const intl4 = tmp(1119).intl;
     obj4.text = intl4.string(tmp(1119).t["eN6+rI"]);
-    const tmp15 = React2(tmp(5116).AlertActionButton, obj4, "nevermind");
+    const tmp15 = React2(tmp(5148).AlertActionButton, obj4, "nevermind");
     cResult[6] = tmp15;
     let tmp13 = tmp15;
   } else {
@@ -68,7 +68,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj5 = { children: null };
     const items = [tmp10, tmp13];
     obj5.children = items;
-    const tmp18 = React3(tmp(5116).AlertActions, obj5);
+    const tmp18 = React3(tmp(5148).AlertActions, obj5);
     cResult[7] = tmp10;
     cResult[8] = tmp18;
     let tmp16 = tmp18;

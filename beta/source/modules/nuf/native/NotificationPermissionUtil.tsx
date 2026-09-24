@@ -1,16 +1,16 @@
-// Module ID: 12560
-// Function ID: 12561
+// Module ID: 12596
+// Function ID: 12597
 // Name: NotificationPermissionUtil
-// Dependencies: [32, 5, 19, 17, 12558, 12559, 1078, 4967, 9556, 1245, 12561, 12567, 558, 568, 12568, 504, 2]
+// Dependencies: [32, 5, 19, 17, 12594, 12595, 1078, 4999, 9588, 1245, 12597, 12603, 558, 568, 12604, 504, 2]
 // Exports: enableProvisionalPushNotification, requestPushNotificationPermission
 
-// Module 12560 (NotificationPermissionUtil)
+// Module 12596 (NotificationPermissionUtil)
 import c from "c" /* 568 */;
-import RegionalTeenUtils from "RegionalTeenUtils" /* 12568 */;
+import RegionalTeenUtils from "RegionalTeenUtils" /* 12604 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12558 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12594 */;
 
 const initialize = tmp(504);
 require = fn;
@@ -153,9 +153,9 @@ let closure_12 = async function _enableProvisionalPushNotification(arg0, value) 
   }
 };
 const NativeModules = fn(17).NativeModules;
-const EventActionType = fn(12559).EventActionType;
+const EventActionType = fn(12595).EventActionType;
 const AnalyticEvents = fn(1078).AnalyticEvents;
-let closure_10 = fn(4967).NotificationAuthorizationStatus;
+let closure_10 = fn(4999).NotificationAuthorizationStatus;
 fn(558);
 let ReactCompilerGating = fn(558);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSeePushNotificationNudge() {

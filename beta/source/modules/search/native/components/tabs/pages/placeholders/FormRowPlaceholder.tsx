@@ -1,21 +1,21 @@
-// Module ID: 17152
-// Function ID: 17153
+// Module ID: 17162
+// Function ID: 17163
 // Name: FormRowPlaceholder
-// Dependencies: [19, 17, 8127, 21, 4758, 580, 558, 568, 17120, 4497, 2]
+// Dependencies: [19, 17, 8159, 21, 4790, 580, 558, 568, 17130, 4529, 2]
 
-// Module 17152 (FormRowPlaceholder)
+// Module 17162 (FormRowPlaceholder)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 17120 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 17130 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
-let obj2 = { itemContainer: { flexDirection: "row", paddingHorizontal: 16, overflow: "hidden", height: 64, paddingVertical: fn(8127).SEARCH_ROW_TAP_STATE_PADDING, alignItems: "center" }, avatar: null, innerContainer: null, upperText: null, lowerText: null };
+const createStyles = fn(4790);
+let obj2 = { itemContainer: { flexDirection: "row", paddingHorizontal: 16, overflow: "hidden", height: 64, paddingVertical: fn(8159).SEARCH_ROW_TAP_STATE_PADDING, alignItems: "center" }, avatar: null, innerContainer: null, upperText: null, lowerText: null };
 let size = { height: 48, width: 48, borderRadius: nativeDefault.radii.xl, marginRight: 16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 obj2.avatar = size;
 obj2.innerContainer = { justifyContent: "center", flex: 1 };

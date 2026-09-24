@@ -1,16 +1,16 @@
-// Module ID: 15465
-// Function ID: 15466
+// Module ID: 15475
+// Function ID: 15476
 // Name: useUserRoleSubscriptionRelationship
-// Dependencies: [5679, 15464, 558, 568, 504, 2]
+// Dependencies: [5711, 15474, 558, 568, 504, 2]
 // Exports: getUserRoleSubscriptionRelationship
 
-// Module 15465 (useUserRoleSubscriptionRelationship)
+// Module 15475 (useUserRoleSubscriptionRelationship)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5679 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5711 */;
 
 require = fn;
-const constants = fn(15464).UserGuildRoleSubscriptionRelationship;
+const constants = fn(15474).UserGuildRoleSubscriptionRelationship;
 const ReactCompilerGating = fn(558);
 function getUserRoleSubscriptionRelationship() {
   let tmp = arg0;

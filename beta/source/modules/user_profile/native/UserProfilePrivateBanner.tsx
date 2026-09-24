@@ -1,26 +1,26 @@
-// Module ID: 13422
-// Function ID: 13423
+// Module ID: 13458
+// Function ID: 13459
 // Name: UserProfilePrivateBanner
-// Dependencies: [19, 17, 7455, 21, 4758, 580, 558, 568, 1096, 5315, 4754, 1119, 2]
+// Dependencies: [19, 17, 7487, 21, 4790, 580, 558, 568, 1096, 5347, 4786, 1119, 2]
 
-// Module 13422 (UserProfilePrivateBanner)
+// Module 13458 (UserProfilePrivateBanner)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import LockIcon from "LockIcon" /* 5315 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import LockIcon from "LockIcon" /* 5347 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
-let obj2 = { banner: { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, paddingTop: 18, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, position: "relative", zIndex: fn(7455).PROFILE_TOP_LAYER_Z_INDEX } };
+const createStyles = fn(4790);
+let obj2 = { banner: { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, paddingTop: 18, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, position: "relative", zIndex: fn(7487).PROFILE_TOP_LAYER_Z_INDEX } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
-let obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, paddingTop: 18, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, position: "relative", zIndex: fn(7455).PROFILE_TOP_LAYER_Z_INDEX };
+let obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 6, paddingTop: 18, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, position: "relative", zIndex: fn(7487).PROFILE_TOP_LAYER_Z_INDEX };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfilePrivateBanner.tsx");
 
@@ -48,7 +48,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((primaryColor) =>
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { size: "xs", color: nativeDefault.colors.TEXT_DEFAULT };
-      const tmp13 = React4(tmp(5315).LockIcon, obj3);
+      const tmp13 = React4(tmp(5347).LockIcon, obj3);
       cResult[5] = tmp13;
       let tmp10 = tmp13;
     } else {
@@ -59,7 +59,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((primaryColor) =>
       const obj4 = { variant: "text-sm/medium", color: "text-default", children: null };
       const intl = tmp(1119).intl;
       obj4.children = intl.string(tmp(1119).t.KPnd2O);
-      const tmp16 = React4(tmp(4754).Text, obj4);
+      const tmp16 = React4(tmp(4786).Text, obj4);
       cResult[6] = tmp16;
       let tmp14 = tmp16;
     } else {

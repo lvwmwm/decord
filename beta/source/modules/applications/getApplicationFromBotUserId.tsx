@@ -1,10 +1,10 @@
-// Module ID: 12764
-// Function ID: 12765
+// Module ID: 12800
+// Function ID: 12801
 // Name: getApplicationFromBotUserId
-// Dependencies: [7862, 1078, 558, 568, 504, 2]
+// Dependencies: [7894, 1078, 558, 568, 504, 2]
 
-// Module 12764 (getApplicationFromBotUserId)
-import UserProfileStore from "UserProfileStore" /* 7862 */;
+// Module 12800 (getApplicationFromBotUserId)
+import UserProfileStore from "UserProfileStore" /* 7894 */;
 
 const require = globalThis.__r;
 

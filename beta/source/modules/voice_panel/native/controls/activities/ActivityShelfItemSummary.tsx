@@ -1,29 +1,29 @@
-// Module ID: 17569
-// Function ID: 17570
+// Module ID: 17579
+// Function ID: 17580
 // Name: ActivityShelfItemSummary
-// Dependencies: [32, 19, 17, 21, 4758, 580, 4608, 558, 568, 17570, 10308, 1181, 5196, 4754, 5202, 4497, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 4640, 558, 568, 17580, 10347, 1181, 5228, 4786, 5234, 4529, 2]
 
-// Module 17569 (ActivityShelfItemSummary)
+// Module 17579 (ActivityShelfItemSummary)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ButtonPill from "ButtonPill" /* 5196 */;
-import UserSummaryItemDefault from "UserSummaryItem" /* 10308 */;
-import useActivityUsersDefault from "useActivityUsers" /* 17570 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ButtonPill from "ButtonPill" /* 5228 */;
+import UserSummaryItemDefault from "UserSummaryItem" /* 10347 */;
+import useActivityUsersDefault from "useActivityUsers" /* 17580 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const ButtonEllipsis = tmp2(5202);
+const ButtonEllipsis = tmp2(5234);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { ongoingActivityContainer: { position: "absolute", width: "100%", height: "100%", backgroundColor: "rgba(0,0,0,0.4)", alignItems: "center", justifyContent: "center" }, overlayActivityName: null, overlayActivityNameText: null, loadingTextColor: null, ellipsis: null };
 let obj3 = { paddingHorizontal: 12, paddingVertical: 4, borderRadius: nativeDefault.radii.round, backgroundColor: null, marginBottom: 8 };
-const ColorUtils = fn(4608);
+const ColorUtils = fn(4640);
 obj3.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.64);
 obj2.overlayActivityName = obj3;
 obj2.overlayActivityNameText = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
@@ -87,7 +87,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[6] !== tmp4) {
         let tmp12 = tmp4;
         if (tmp4) {
-          tmp12 = hasOwnProperty(tmp(5202).Ellipsis, { variant: "active", size: "md" });
+          tmp12 = hasOwnProperty(tmp(5234).Ellipsis, { variant: "active", size: "md" });
         }
         cResult[6] = tmp4;
         cResult[7] = tmp12;

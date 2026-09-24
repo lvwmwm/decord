@@ -1,28 +1,28 @@
-// Module ID: 14926
-// Function ID: 14927
+// Module ID: 14964
+// Function ID: 14965
 // Name: PasskeyUpsellView
-// Dependencies: [32, 19, 17, 14922, 1078, 2042, 21, 4758, 580, 558, 568, 1488, 1119, 14927, 7190, 14928, 5839, 2112, 7371, 14931, 4754, 1368, 5188, 2]
+// Dependencies: [32, 19, 17, 14960, 1078, 2042, 21, 4790, 580, 558, 568, 1488, 1119, 14965, 7222, 14966, 5871, 2112, 7403, 14969, 4786, 1368, 5220, 2]
 
-// Module 14926 (PasskeyUpsellView)
+// Module 14964 (PasskeyUpsellView)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7190 */;
-import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 14927 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7222 */;
+import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 14965 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const _modDef14931 = tmp12(14931);
+const _modDef14969 = tmp12(14969);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const WebAuthnScreens = fn(14922).WebAuthnScreens;
+const WebAuthnScreens = fn(14960).WebAuthnScreens;
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, flexDirection: "column", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, scrollViewContainer: null, headerContainer: null, headerImage: null, headerText: null, circleIcon: null, listContainer: null, row: null, text: null, buttonContainer: null };
 let obj3 = { flex: 1, flexDirection: "column", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.scrollViewContainer = { flexGrow: 1, justifyContent: "space-between", paddingHorizontal: nativeDefault.space.PX_16 };
@@ -135,7 +135,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmp6 = onRegisterSuccess(noop.useState(false), 2);
   const articleURL = HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.SETTING_UP_TWO_FACTOR);
-  const SafeAreaPaddingView = tmp(7371).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp(7403).SafeAreaPaddingView;
   ({ scrollViewContainer, headerContainer } = tmp5);
   if (cResult[29] !== tmp5.headerImage) {
     class E {
@@ -147,7 +147,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return;
       }
     }
-    const obj5 = { source: _modDef14931, style: tmp5.headerImage };
+    const obj5 = { source: _modDef14969, style: tmp5.headerImage };
     const tmp16 = closure_11(closure_6, obj5);
     cResult[29] = tmp5.headerImage;
     cResult[30] = tmp16;
@@ -197,7 +197,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const obj7 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp5.headerText, children: tmp17 };
-    const tmp20 = closure_11(tmp(4754).Text, obj7);
+    const tmp20 = closure_11(tmp(4786).Text, obj7);
     cResult[32] = tmp5.headerText;
     cResult[33] = tmp20;
   } else {
@@ -306,13 +306,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj3 = { bottom: true, style: tmp4.container, children: null };
   const obj4 = { contentContainerStyle: tmp4.scrollViewContainer, children: null };
   const obj5 = { style: tmp4.headerContainer, children: null };
-  const items1 = [closure_11(closure_6, { source: _modDef14931, style: tmp4.headerImage }), , ];
+  const items1 = [closure_11(closure_6, { source: _modDef14969, style: tmp4.headerImage }), , ];
   const obj7 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp4.headerText, children: null };
   let intl = navigation(1119).intl;
   obj7.children = intl.string(navigation(1119).t.CjleBl);
-  items1[1] = closure_11(navigation(4754).Text, obj7);
+  items1[1] = closure_11(navigation(4786).Text, obj7);
   const obj8 = { variant: "heading-md/normal", color: "text-default", style: tmp4.headerText, children: null };
-  const obj6 = { source: _modDef14931, style: tmp4.headerImage };
+  const obj6 = { source: _modDef14969, style: tmp4.headerImage };
   const tmp12 = closure_7;
   const obj9 = navigation(1368);
   const intl2 = navigation(1119).intl;
@@ -324,7 +324,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     stringResult = string(t.d6uxJy);
   }
   obj8.children = stringResult;
-  items1[2] = closure_11(navigation(4754).Text, obj8);
+  items1[2] = closure_11(navigation(4786).Text, obj8);
   obj5.children = items1;
   const items2 = [closure_12(closure_5, obj5), , ];
   const obj10 = { style: tmp4.listContainer, children: null };
@@ -333,7 +333,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj13 = { variant: "heading-md/normal", color: "text-default", style: tmp4.text, children: null };
   const intl3 = tmp(1119).intl;
   obj13.children = intl3.string(navigation(1119).t.HtqVkj);
-  items3[1] = closure_11(navigation(4754).Text, obj13);
+  items3[1] = closure_11(navigation(4786).Text, obj13);
   obj11.children = items3;
   const items4 = [closure_12(closure_5, obj11), ];
   const obj14 = { style: tmp4.row, children: null };
@@ -352,7 +352,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     string2Result = string2(t2.uYfqlo);
   }
   obj16.children = string2Result;
-  items5[1] = closure_11(navigation(4754).Text, obj16);
+  items5[1] = closure_11(navigation(4786).Text, obj16);
   obj14.children = items5;
   items4[1] = closure_12(closure_5, obj14);
   obj10.children = items4;
@@ -361,7 +361,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj18 = { variant: "text-sm/semibold", color: "text-brand", children: null };
   const intl5 = tmp(1119).intl;
   obj18.children = intl5.format(navigation(1119).t.OeGXVv, { learnMoreLink: articleURL });
-  const items6 = [closure_11(navigation(4754).Text, obj18), , ];
+  const items6 = [closure_11(navigation(4786).Text, obj18), , ];
   const intl6 = tmp(1119).intl;
   const string3 = intl6.string;
   const t3 = tmp(1119).t;
@@ -370,7 +370,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     string3Result = string3(t3.NIFmCJ);
   }
-  items6[1] = closure_11(navigation(5188).Button, {
+  items6[1] = closure_11(navigation(5220).Button, {
     text: string3Result,
     onPress() {
       PasskeyUpsellManagerDefault.markDismissed(ContentDismissActionType.TAKE_ACTION);
@@ -389,10 +389,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     string4Result = string4(t4["7J6/nG"]);
   }
-  items6[2] = closure_11(navigation(5188).Button, { text: string4Result, onPress: onCancel, size: "lg", variant: "secondary", grow: true });
+  items6[2] = closure_11(navigation(5220).Button, { text: string4Result, onPress: onCancel, size: "lg", variant: "secondary", grow: true });
   obj17.children = items6;
   items2[2] = closure_12(closure_5, obj17);
   obj4.children = items2;
   obj3.children = closure_12(tmp12, obj4);
-  return closure_11(navigation(7371).SafeAreaPaddingView, obj3);
+  return closure_11(navigation(7403).SafeAreaPaddingView, obj3);
 });

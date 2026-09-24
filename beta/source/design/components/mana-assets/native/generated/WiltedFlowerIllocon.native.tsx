@@ -1,13 +1,13 @@
-// Module ID: 6812
-// Function ID: 6813
+// Module ID: 6844
+// Function ID: 6845
 // Name: WiltedFlowerIllocon
-// Dependencies: [21, 558, 568, 6813, 5802, 2]
+// Dependencies: [21, 558, 568, 6845, 5834, 2]
 
-// Module 6812 (WiltedFlowerIllocon)
+// Module 6844 (WiltedFlowerIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6813 from "module_6813" /* 6813 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6845 from "module_6845" /* 6845 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const WiltedFlowerIllocon = ReactCompilerGating.isReactCompilerEnabled() 
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6813 };
+    const obj2 = { uri: _modDef6845 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const WiltedFlowerIllocon = ReactCompilerGating.isReactCompilerEnabled() 
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6813 };
+  const obj2 = { uri: _modDef6845 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

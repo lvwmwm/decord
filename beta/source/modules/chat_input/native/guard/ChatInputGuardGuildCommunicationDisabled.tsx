@@ -1,14 +1,14 @@
-// Module ID: 12624
-// Function ID: 12625
+// Module ID: 12660
+// Function ID: 12661
 // Name: ChatInputGuardGuildCommunicationDisabled
-// Dependencies: [19, 2111, 21, 558, 568, 12625, 11984, 1119, 12597, 2]
+// Dependencies: [19, 2111, 21, 558, 568, 12661, 12020, 1119, 12633, 2]
 
-// Module 12624 (ChatInputGuardGuildCommunicationDisabled)
+// Module 12660 (ChatInputGuardGuildCommunicationDisabled)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import ClockWarningIcon from "ClockWarningIcon" /* 11984 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12597 */;
-import useCommunicationDisabledCountdownCleanup from "useCommunicationDisabledCountdownCleanup" /* 12625 */;
+import ClockWarningIcon from "ClockWarningIcon" /* 12020 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12633 */;
+import useCommunicationDisabledCountdownCleanup from "useCommunicationDisabledCountdownCleanup" /* 12661 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -36,7 +36,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildM
   } else {
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp21 = jsx(tmp(11984).ClockWarningIcon, {});
+      const tmp21 = jsx(tmp(12020).ClockWarningIcon, {});
       const intl = tmp(1119).intl;
       const stringResult = intl.string(tmp(1119).t.VSpdzK);
       const intl2 = tmp(1119).intl;

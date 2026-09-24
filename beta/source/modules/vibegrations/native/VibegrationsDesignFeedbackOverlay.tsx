@@ -1,12 +1,12 @@
-// Module ID: 16978
-// Function ID: 16979
+// Module ID: 16988
+// Function ID: 16989
 // Name: VibegrationsDesignFeedbackOverlay
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 4725, 16979, 9310, 1119, 3682, 4754, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 4757, 16989, 9342, 1119, 3714, 4786, 2]
 
-// Module 16978 (VibegrationsDesignFeedbackOverlay)
+// Module 16988 (VibegrationsDesignFeedbackOverlay)
 import nativeDefault from "native" /* 580 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
-import VibegrationsDesignRemarkSheet from "VibegrationsDesignRemarkSheet" /* 16979 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4757 */;
+import VibegrationsDesignRemarkSheet from "VibegrationsDesignRemarkSheet" /* 16989 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 let c10 = 24;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { surface: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }, highlight: { position: "absolute", borderWidth: 2, borderColor: nativeDefault.colors.TEXT_BRAND, borderRadius: nativeDefault.radii.xs }, marker: null, pending: null, hint: null, hintText: null };
 let size = { position: "absolute", width: 24, height: 24, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.TEXT_BRAND, borderWidth: 2, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 obj2.marker = size;
@@ -73,8 +73,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         return () => {
           closure_1_9.current = false;
           if (ref.current) {
-            first(4725).hideActionSheet(projectId(16979).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
-            const obj = first(4725);
+            first(4757).hideActionSheet(projectId(16989).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
+            const obj = first(4757);
           }
         };
       }
@@ -91,8 +91,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         return () => {
           closure_1_9.current = false;
           if (ref.current) {
-            first(4725).hideActionSheet(projectId(16979).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
-            const obj = first(4725);
+            first(4757).hideActionSheet(projectId(16989).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
+            const obj = first(4757);
           }
         };
       }
@@ -107,8 +107,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         return () => {
           closure_1_9.current = false;
           if (ref.current) {
-            first(4725).hideActionSheet(projectId(16979).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
-            const obj = first(4725);
+            first(4757).hideActionSheet(projectId(16989).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
+            const obj = first(4757);
           }
         };
       }
@@ -126,8 +126,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         return () => {
           closure_1_9.current = false;
           if (ref.current) {
-            first(4725).hideActionSheet(projectId(16979).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
-            const obj = first(4725);
+            first(4757).hideActionSheet(projectId(16989).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
+            const obj = first(4757);
           }
         };
       }
@@ -277,8 +277,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     return () => {
       closure_1_9.current = false;
       if (ref.current) {
-        size(4725).hideActionSheet(projectId(16979).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
-        const obj = size(4725);
+        size(4757).hideActionSheet(projectId(16989).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
+        const obj = size(4757);
       }
     };
   }, []);
@@ -322,7 +322,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         point.y = Math.round(nativeEvent.nativeEvent.locationY);
         closure_4(point);
         closure_8(false);
-        const result = projectId(9310).inspectVibegrationsPreviewPoint(point, point);
+        const result = projectId(9342).inspectVibegrationsPreviewPoint(point, point);
         result.then((status) => {
           if (ref.current) {
             closure_4(null);
@@ -349,12 +349,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
             closure_8(true);
           }
         });
-        const obj2 = projectId(9310);
+        const obj2 = projectId(9342);
       }
     }
   }, items3);
   const intl = projectId(1119).intl;
-  const tmp18 = size(3682);
+  const tmp18 = size(3714);
   if (first2) {
     let sSnnY4 = tmp18.sSnnY4;
     let tmp20 = tmp17;
@@ -371,7 +371,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   }
   let obj = { style: tmp.surface, onLayout: callback, onPress: callback2, accessibilityRole: "button", accessibilityLabel: null, testID: "vibegrations-design-surface", children: null };
   const intl2 = tmp15(1119).intl;
-  obj.accessibilityLabel = intl2.string(tmp20(3682)["84RzOi"]);
+  obj.accessibilityLabel = intl2.string(tmp20(3714)["84RzOi"]);
   let obj2 = { style: tmp.surface, pointerEvents: "none", children: null };
   let tmp23Result = null;
   if (null != first1) {
@@ -393,7 +393,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     items5[1] = null;
     const obj5 = { style: tmp.hint, accessibilityLiveRegion: "polite", children: null };
     const obj6 = { variant: "text-sm/medium", color: "text-default", style: tmp.hintText, children: stringResult };
-    obj5.children = tmp23(tmp15(4754).Text, obj6);
+    obj5.children = tmp23(tmp15(4786).Text, obj6);
     items5[2] = tmp23(tmp26, obj5);
     obj2.children = items5;
     obj.children = closure_9(tmp26, obj2);

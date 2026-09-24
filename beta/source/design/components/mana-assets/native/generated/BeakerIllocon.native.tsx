@@ -1,13 +1,13 @@
-// Module ID: 6028
-// Function ID: 6029
+// Module ID: 6060
+// Function ID: 6061
 // Name: BeakerIllocon
-// Dependencies: [21, 558, 568, 6029, 5802, 2]
+// Dependencies: [21, 558, 568, 6061, 5834, 2]
 
-// Module 6028 (BeakerIllocon)
+// Module 6060 (BeakerIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6029 from "module_6029" /* 6029 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6061 from "module_6061" /* 6061 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const BeakerIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6029 };
+    const obj2 = { uri: _modDef6061 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const BeakerIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6029 };
+  const obj2 = { uri: _modDef6061 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

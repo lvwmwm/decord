@@ -1,12 +1,12 @@
-// Module ID: 5828
-// Function ID: 5829
+// Module ID: 5860
+// Function ID: 5861
 // Name: TableRowIcon
-// Dependencies: [109, 19, 17, 21, 4758, 580, 5190, 558, 568, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 580, 5222, 558, 568, 2]
 
-// Module 5828 (TableRowIcon)
+// Module 5860 (TableRowIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Icon from "Icon" /* 5190 */;
+import Icon from "Icon" /* 5222 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,7 +17,7 @@ let closure_3 = ["color"];
 let closure_4 = ["color"];
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: null, default: null, statusOnline: null, statusIdle: null, statusDND: null, statusOffline: null, xbox: null, playstation: null, danger: null, secondary: null, translucent: null };
 let size = { width: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, height: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.lg };
 obj2.container = size;
@@ -70,9 +70,9 @@ export const TableRowIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
       }
       if (cResult[6] !== str) {
         if ("default" === str) {
-          let REFRESH_SMALL_16 = tmp(5190).IconSizes.MEDIUM;
+          let REFRESH_SMALL_16 = tmp(5222).IconSizes.MEDIUM;
         } else {
-          REFRESH_SMALL_16 = tmp(5190).IconSizes.REFRESH_SMALL_16;
+          REFRESH_SMALL_16 = tmp(5222).IconSizes.REFRESH_SMALL_16;
         }
         cResult[6] = str;
         cResult[7] = REFRESH_SMALL_16;

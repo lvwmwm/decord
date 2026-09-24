@@ -1,9 +1,9 @@
-// Module ID: 14882
-// Function ID: 14883
+// Module ID: 14920
+// Function ID: 14921
 // Name: GummyStripes
-// Dependencies: [19, 17, 21, 4758, 558, 568, 1096, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 1096, 2]
 
-// Module 14882 (GummyStripes)
+// Module 14920 (GummyStripes)
 import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
 import noop from "module_19" /* 19 */;
 
@@ -13,7 +13,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, Fragment: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ stripe: { flex: 1 }, stripeOverlap: { marginLeft: -1 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

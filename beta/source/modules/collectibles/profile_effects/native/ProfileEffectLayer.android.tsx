@@ -1,12 +1,12 @@
-// Module ID: 9086
-// Function ID: 9087
+// Module ID: 9118
+// Function ID: 9119
 // Name: ProfileEffectLayer
-// Dependencies: [19, 17, 21, 558, 568, 9087, 9083, 2]
+// Dependencies: [19, 17, 21, 558, 568, 9119, 9115, 2]
 
-// Module 9086 (ProfileEffectLayer)
+// Module 9118 (ProfileEffectLayer)
 import c from "c" /* 568 */;
-import ProfileEffectUtils from "ProfileEffectUtils" /* 9083 */;
-import APNGPlayer from "APNGPlayer" /* 9087 */;
+import ProfileEffectUtils from "ProfileEffectUtils" /* 9115 */;
+import APNGPlayer from "APNGPlayer" /* 9119 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -55,7 +55,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((paused
               }
             }
             const obj4 = { ref, url: tmp9, autoplay: false, style: tmp12, ariaLabel: accessibilityLabel, onLoad };
-            const tmp16 = jsx(tmp(9087).APNGPlayer, { ref, url: tmp9, autoplay: false, style: tmp12, ariaLabel: accessibilityLabel, onLoad });
+            const tmp16 = jsx(tmp(9119).APNGPlayer, { ref, url: tmp9, autoplay: false, style: tmp12, ariaLabel: accessibilityLabel, onLoad });
             cResult[12] = accessibilityLabel;
             cResult[13] = layerConfig.src;
             cResult[14] = onLoad;
@@ -73,12 +73,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((paused
         cResult[11] = items;
         tmp12 = items;
       }
-      const result = tmp(9083).calculateProfileEffectHeight(layerConfig, width);
+      const result = tmp(9115).calculateProfileEffectHeight(layerConfig, width);
       cResult[5] = layerConfig;
       cResult[6] = width;
       cResult[7] = result;
       tmp10 = result;
-      const tmpResult = tmp(9083);
+      const tmpResult = tmp(9115);
     }
   }
   const fn = function u() {

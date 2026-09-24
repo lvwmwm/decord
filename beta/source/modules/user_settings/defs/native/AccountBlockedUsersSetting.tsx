@@ -1,17 +1,17 @@
-// Module ID: 15066
-// Function ID: 15067
+// Module ID: 15075
+// Function ID: 15076
 // Name: AccountBlockedUsersSetting
-// Dependencies: [4409, 8238, 1078, 558, 568, 504, 1119, 11594, 8192, 15067, 2]
+// Dependencies: [4441, 8270, 1078, 558, 568, 504, 1119, 11630, 8224, 15076, 2]
 
-// Module 15066 (AccountBlockedUsersSetting)
+// Module 15075 (AccountBlockedUsersSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -81,8 +81,8 @@ const route = SettingBuilders.createRoute({
     const intl = util.intl;
     return intl.format(util.t["r91W/h"], { numberOfBlockedUsers });
   }),
-  IconComponent: fn(8192).DenyIcon,
-  parent: fn(8238).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  IconComponent: fn(8224).DenyIcon,
+  parent: fn(8270).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   screen: {
     route: fn(1078).UserSettingsSections.BLOCKED_USERS_V2,
     getComponent() {

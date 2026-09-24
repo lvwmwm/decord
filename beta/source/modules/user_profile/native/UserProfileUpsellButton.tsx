@@ -1,11 +1,11 @@
-// Module ID: 14859
-// Function ID: 14860
+// Module ID: 14897
+// Function ID: 14898
 // Name: UserProfileUpsellButton
-// Dependencies: [19, 1078, 1378, 21, 4758, 558, 568, 7409, 7693, 1245, 9425, 1119, 8938, 5188, 2]
+// Dependencies: [19, 1078, 1378, 21, 4790, 558, 568, 7441, 7725, 1245, 9457, 1119, 8970, 5220, 2]
 
-// Module 14859 (UserProfileUpsellButton)
+// Module 14897 (UserProfileUpsellButton)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9425 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9457 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -13,7 +13,7 @@ const Constants = fn(1078);
 ({ AnalyticsPages: closure_4, UpsellTypes: hasOwnProperty, AnalyticsSections: metroRequire, AnalyticEvents: closure_7 } = Constants);
 const PremiumUpsellTypes = fn(1378).PremiumUpsellTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_10 = createStyles.createStyles({ nitroWheel: { marginRight: 2 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -24,9 +24,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsObject)
   analyticsObject = analyticsObject.analyticsObject;
   const label = analyticsObject.label;
   const tmp4 = closure_10();
-  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)().analyticsLocations;
   const obj = analyticsObject(568);
-  const nitroTrialCtaOverride = analyticsObject(7693).useNitroTrialCtaOverride("user_profile_upsell_button");
+  const nitroTrialCtaOverride = analyticsObject(7725).useNitroTrialCtaOverride("user_profile_upsell_button");
   if (cResult[0] === analyticsLocations) {
     if (cResult[1] === analyticsObject) {
       let tmp6 = cResult[2];
@@ -43,7 +43,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsObject)
         }
         if (cResult[10] !== tmp4.nitroWheel) {
           const obj3 = { color: "white", size: "sm", style: tmp4.nitroWheel };
-          const tmp16 = jsx(tmp(8938).NitroWheelIcon, { color: "white", size: "sm", style: tmp4.nitroWheel });
+          const tmp16 = jsx(tmp(8970).NitroWheelIcon, { color: "white", size: "sm", style: tmp4.nitroWheel });
           class T {
             constructor() {
               obj = closure_1(closure_2[10]);
@@ -85,7 +85,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsObject)
         tmp19[0] = tmp10;
         tmp19[2] = tmp11;
         tmp19[3] = tmp14;
-        const tmp20 = jsx(tmp(5188).Button, tmp19);
+        const tmp20 = jsx(tmp(5220).Button, tmp19);
         cResult[12] = tmp10;
         cResult[13] = tmp11;
         cResult[14] = tmp14;
@@ -151,9 +151,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsObject)
 }) : ((analyticsObject) => {
   analyticsObject = analyticsObject.analyticsObject;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7441)().analyticsLocations;
   const tmp = closure_10();
-  let label = analyticsObject(7693).useNitroTrialCtaOverride("user_profile_upsell_button");
+  let label = analyticsObject(7725).useNitroTrialCtaOverride("user_profile_upsell_button");
   const items = [analyticsLocations, analyticsObject];
   const effect = noop.useEffect(() => {
     const obj2 = { type: PremiumUpsellTypes.CUSTOM_PROFILE_SETTINGS_BANNER_BUTTON, location: { page: constants.USER_SETTINGS, section: constants3.USER_PROFILE, object: analyticsObject }, location_stack: analyticsLocations };
@@ -176,8 +176,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsObject)
     label = intl.string(tmp3(1119).t.pj0XBN);
   }
   obj2.text = label;
-  obj2.icon = jsx(analyticsObject(8938).NitroWheelIcon, { color: "white", size: "sm", style: tmp.nitroWheel });
-  return jsx(analyticsObject(5188).Button, {
+  obj2.icon = jsx(analyticsObject(8970).NitroWheelIcon, { color: "white", size: "sm", style: tmp.nitroWheel });
+  return jsx(analyticsObject(5220).Button, {
     onPress() {
       const obj2 = { initialUpsellKey: constants2.CUSTOM_PROFILES, analyticsLocation: { page: constants.USER_SETTINGS, section: constants3.USER_PROFILE, object: analyticsObject }, analyticsLocations, analyticsProperties: { type: PremiumUpsellTypes.CUSTOM_PROFILE_UPSELL } };
       const result = PremiumUpsellUtilsDefault.handleShowUpsellAlert(obj2);

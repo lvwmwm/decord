@@ -1,25 +1,25 @@
-// Module ID: 11941
-// Function ID: 11942
+// Module ID: 11977
+// Function ID: 11978
 // Name: DevToolsExperimentsScreen
-// Dependencies: [32, 19, 17, 4674, 502, 2067, 4675, 21, 4758, 580, 558, 568, 11604, 11605, 7224, 7296, 11942, 12, 1181, 8506, 7297, 7302, 8141, 4679, 4725, 4754, 5822, 1258, 11939, 5903, 8139, 7436, 4458, 4717, 7396, 7397, 2]
+// Dependencies: [32, 19, 17, 4706, 502, 2067, 4707, 21, 4790, 580, 558, 568, 11640, 11641, 7256, 7328, 11978, 12, 1181, 8538, 7329, 7334, 8173, 4711, 4757, 4786, 5854, 1258, 11975, 5935, 8171, 7468, 4490, 4749, 7428, 7429, 2]
 
-// Module 11941 (DevToolsExperimentsScreen)
+// Module 11977 (DevToolsExperimentsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import FingerprintUtils from "FingerprintUtils" /* 1258 */;
-import ExperimentManager from "ExperimentManager" /* 4679 */;
-import TableRow2 from "TableRow" /* 5822 */;
-import TableRowGroup2 from "TableRowGroup" /* 5903 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import ClipboardUtils from "ClipboardUtils" /* 7436 */;
-import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8141 */;
-import useExperimentAssignments from "useExperimentAssignments" /* 11939 */;
+import ExperimentManager from "ExperimentManager" /* 4711 */;
+import TableRow2 from "TableRow" /* 5854 */;
+import TableRowGroup2 from "TableRowGroup" /* 5935 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import ClipboardUtils from "ClipboardUtils" /* 7468 */;
+import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8173 */;
+import useExperimentAssignments from "useExperimentAssignments" /* 11975 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ExperimentStore from "ExperimentStore" /* 4674 */;
+import ExperimentStore from "ExperimentStore" /* 4706 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
@@ -27,11 +27,11 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const ExperimentConstants = fn(4675);
+const ExperimentConstants = fn(4707);
 ({ ExperimentBuckets: closure_9, ExperimentTypes: c10 } = ExperimentConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, listContainer: null, searchBar: null, debugContainer: null, copyExperimentLink: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj.listContainer = { paddingHorizontal: nativeDefault.space.PX_12 };
@@ -511,8 +511,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const obj6 = { title: "Server Descriptor", hasIcons: false, children: null };
       const obj7 = { label: tmp35 };
-      obj6.children = closure_1_11(tmp(5822).TableRow, obj7);
-      const tmp38 = closure_1_11(tmp(5903).TableRowGroup, obj6);
+      obj6.children = closure_1_11(tmp(5854).TableRow, obj7);
+      const tmp38 = closure_1_11(tmp(5935).TableRowGroup, obj6);
       cResult[29] = tmp35;
       cResult[30] = tmp38;
     } else {
@@ -583,8 +583,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const obj8 = { title: "Override Descriptor", hasIcons: false, children: null };
       const obj9 = { label: tmp41 };
-      obj8.children = closure_1_11(tmp(5822).TableRow, obj9);
-      const tmp44 = closure_1_11(tmp(5903).TableRowGroup, obj8);
+      obj8.children = closure_1_11(tmp(5854).TableRow, obj9);
+      const tmp44 = closure_1_11(tmp(5935).TableRowGroup, obj8);
       cResult[34] = tmp41;
       cResult[35] = tmp44;
     } else {
@@ -616,8 +616,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const TableRowGroup = tmp(5903).TableRowGroup;
-    const TableRow = tmp(5822).TableRow;
+    const TableRowGroup = tmp(5935).TableRowGroup;
+    const TableRow = tmp(5854).TableRow;
     let str5 = "None";
     if (0 !== mapped.length) {
       class V {
@@ -1111,7 +1111,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return str.toLowerCase();
             }
           }
-          TableRow = TableRow(5822).TableRow;
+          TableRow = TableRow(5854).TableRow;
           obj13 = { label: "none" };
           let tmp58 = closure_11(TableRow, obj13);
         } else {
@@ -1209,11 +1209,11 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp17 = closure_12;
   const tmp18 = View;
   obj6.subLabel = str;
-  const items1 = [closure_11(obj3(5903).TableRowGroup, { title: "Overview", hasIcons: false, children: closure_11(obj3(5822).TableRow, obj6) }), closure_11(obj3(1181).Spacer, { size: 16 }), , , , , , , ];
+  const items1 = [closure_11(obj3(5935).TableRowGroup, { title: "Overview", hasIcons: false, children: closure_11(obj3(5854).TableRow, obj6) }), closure_11(obj3(1181).Spacer, { size: 16 }), , , , , , , ];
   const obj8 = { title: "Guild Assignments", hasIcons: false, children: null };
-  const obj7 = { title: "Overview", hasIcons: false, children: closure_11(obj3(5822).TableRow, obj6) };
-  obj8.children = closure_11(obj3(5822).TableRow, { label: items.join("\n") });
-  items1[2] = closure_11(obj3(5903).TableRowGroup, obj8);
+  const obj7 = { title: "Overview", hasIcons: false, children: closure_11(obj3(5854).TableRow, obj6) };
+  obj8.children = closure_11(obj3(5854).TableRow, { label: items.join("\n") });
+  items1[2] = closure_11(obj3(5935).TableRowGroup, obj8);
   items1[3] = closure_11(obj3(1181).Spacer, { size: 16 });
   let str2 = "None";
   let str3 = "None";
@@ -1222,21 +1222,21 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     str3 = JSON.stringify(loadedGuildExperiment, undefined, 2);
   }
   const obj9 = { label: items.join("\n") };
-  items1[4] = closure_11(obj3(5903).TableRowGroup, { title: "Server Descriptor", hasIcons: false, children: closure_11(obj3(5822).TableRow, { label: str3 }) });
+  items1[4] = closure_11(obj3(5935).TableRowGroup, { title: "Server Descriptor", hasIcons: false, children: closure_11(obj3(5854).TableRow, { label: str3 }) });
   items1[5] = closure_11(obj3(1181).Spacer, { size: 16 });
   if (null != override) {
     const _JSON2 = JSON;
     str2 = JSON.stringify(override, undefined, 2);
   }
-  const obj10 = { title: "Server Descriptor", hasIcons: false, children: closure_11(obj3(5822).TableRow, { label: str3 }) };
-  items1[6] = closure_11(obj3(5903).TableRowGroup, { title: "Override Descriptor", hasIcons: false, children: closure_11(obj3(5822).TableRow, { label: str2 }) });
+  const obj10 = { title: "Server Descriptor", hasIcons: false, children: closure_11(obj3(5854).TableRow, { label: str3 }) };
+  items1[6] = closure_11(obj3(5935).TableRowGroup, { title: "Override Descriptor", hasIcons: false, children: closure_11(obj3(5854).TableRow, { label: str2 }) });
   items1[7] = closure_11(obj3(1181).Spacer, { size: 16 });
   if (0 === mapped.length) {
-    let mapped3 = tmp19(tmp20(5822).TableRow, { label: "none" });
+    let mapped3 = tmp19(tmp20(5854).TableRow, { label: "none" });
   } else {
     mapped3 = mapped.map((label) => closure_1_11(obj3(dependencyMap[26]).TableRow, { label, labelLineClamp: 1 }, label));
   }
-  items1[8] = closure_11(obj3(5903).TableRowGroup, { title: "Recent Exposures", hasIcons: false, children: mapped3 });
+  items1[8] = closure_11(obj3(5935).TableRowGroup, { title: "Recent Exposures", hasIcons: false, children: mapped3 });
   obj5.children = items1;
   return tmp17(tmp18, obj5);
 });
@@ -1246,11 +1246,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ experiment, override, id, options, onCopyLink } = arg0);
   const tmp4 = closure_13();
   if (cResult[0] !== id) {
-    const uRLForExperiment = tmp(8139).getURLForExperiment(id);
+    const uRLForExperiment = tmp(8171).getURLForExperiment(id);
     cResult[0] = id;
     cResult[1] = uRLForExperiment;
     let tmp5 = uRLForExperiment;
-    const tmpResult = tmp(8139);
+    const tmpResult = tmp(8171);
   } else {
     tmp5 = cResult[1];
   }
@@ -1321,7 +1321,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj3 = { title: "Experiment Assignments", hasIcons: false, children: tmp11 };
-        const tmp16 = closure_11(tmp(5903).TableRowGroup, obj3);
+        const tmp16 = closure_11(tmp(5935).TableRowGroup, obj3);
         cResult[9] = tmp11;
         cResult[10] = tmp16;
       } else {
@@ -1416,8 +1416,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const obj7 = { title: "Share", hasIcons: false, children: null };
       const obj8 = { label: "Copy Link", subLabel: tmp5, onPress: tmp7 };
-      obj7.children = closure_11(tmp(5822).TableRow, obj8);
-      const tmp19 = closure_11(tmp(5903).TableRowGroup, obj7);
+      obj7.children = closure_11(tmp(5854).TableRow, obj8);
+      const tmp19 = closure_11(tmp(5935).TableRowGroup, obj7);
       cResult[11] = tmp5;
       cResult[12] = tmp7;
       cResult[13] = tmp19;
@@ -1425,8 +1425,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const fn = function x() {
     ClipboardUtils.copy(closure_1, () => {
-      const obj = closure_1(4458);
-      obj.open({ key: "experiment-link-copied", content: "Copied experiment link", IconComponent: onCopyLink(4717).CircleCheckIcon, iconColor: "status-positive" });
+      const obj = closure_1(4490);
+      obj.open({ key: "experiment-link-copied", content: "Copied experiment link", IconComponent: onCopyLink(4749).CircleCheckIcon, iconColor: "status-positive" });
       if (closure_1_0 != null) {
         closure_1_0();
       }
@@ -1439,14 +1439,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 }) : ((arg0) => {
   ({ experiment, override, id, options, onCopyLink } = arg0);
   const tmp = closure_13();
-  const uRLForExperiment = onCopyLink(8139).getURLForExperiment(id);
+  const uRLForExperiment = onCopyLink(8171).getURLForExperiment(id);
   const items = [uRLForExperiment, onCopyLink];
   const obj2 = { style: null, children: null };
   const obj3 = { paddingHorizontal: null };
   const callback = noop.useCallback(() => {
     ClipboardUtils.copy(uRLForExperiment, () => {
-      const obj = uRLForExperiment(4458);
-      obj.open({ key: "experiment-link-copied", content: "Copied experiment link", IconComponent: onCopyLink(4717).CircleCheckIcon, iconColor: "status-positive" });
+      const obj = uRLForExperiment(4490);
+      obj.open({ key: "experiment-link-copied", content: "Copied experiment link", IconComponent: onCopyLink(4749).CircleCheckIcon, iconColor: "status-positive" });
       if (closure_1_0 != null) {
         closure_1_0();
       }
@@ -1454,11 +1454,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
   obj3.paddingHorizontal = uRLForExperiment(580).space.PX_12;
   obj2.style = obj3;
-  let obj = onCopyLink(8139);
+  let obj = onCopyLink(8171);
   const tmp4 = closure_12;
   const tmp5 = View;
   const items1 = [
-    closure_11(onCopyLink(5903).TableRowGroup, {
+    closure_11(onCopyLink(5935).TableRowGroup, {
       title: "Experiment Assignments",
       hasIcons: false,
       children: options.map((item, index) => {
@@ -1467,7 +1467,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (isDestructive) {
           variant = "danger";
         }
-        return closure_1_11(onCopyLink(5822).TableRow, { variant, label, onPress }, index);
+        return closure_1_11(onCopyLink(5854).TableRow, { variant, label, onPress }, index);
       })
     }),
   ,
@@ -1483,10 +1483,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (isDestructive) {
         variant = "danger";
       }
-      return closure_1_11(onCopyLink(5822).TableRow, { variant, label, onPress }, index);
+      return closure_1_11(onCopyLink(5854).TableRow, { variant, label, onPress }, index);
     })
   };
-  obj5.children = closure_11(onCopyLink(5903).TableRowGroup, { title: "Share", hasIcons: false, children: closure_11(onCopyLink(5822).TableRow, { label: "Copy Link", subLabel: uRLForExperiment, onPress: callback }) });
+  obj5.children = closure_11(onCopyLink(5935).TableRowGroup, { title: "Share", hasIcons: false, children: closure_11(onCopyLink(5854).TableRow, { label: "Copy Link", subLabel: uRLForExperiment, onPress: callback }) });
   items1[1] = closure_11(View, obj5);
   if ("guild" === experiment.kind) {
     const obj7 = { id, override };
@@ -1522,7 +1522,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return tmp10;
             }
             const obj2 = { header: tmp4, children: tmp6 };
-            const tmp12 = closure_1_11(tmp(7397).BottomSheet, obj2);
+            const tmp12 = closure_1_11(tmp(7429).BottomSheet, obj2);
             cResult[9] = tmp4;
             cResult[10] = tmp6;
             cResult[11] = tmp12;
@@ -1583,8 +1583,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       } else {
         tmp20 = cResult[6];
       }
-      const insets = arr(7224)(tmp20).insets;
-      const tmp22 = arr(7296)();
+      const insets = arr(7256)(tmp20).insets;
+      const tmp22 = arr(7328)();
       if (cResult[7] === tmp10) {
         if (cResult[8] === tmp13) {
           if (cResult[9] === tmp6) {
@@ -1613,7 +1613,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const _Symbol3 = Symbol;
               if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
                 const EmptyState = tmp(1181).EmptyState;
-                { Illustration: null, title: "No Experiments", body: "No experiments are currently running." }.Illustration = tmp(8506).NoResults;
+                { Illustration: null, title: "No Experiments", body: "No experiments are currently running." }.Illustration = tmp(8538).NoResults;
                 class A {
                   constructor(arg0, arg1) {
                     tmp = closure_1[arg1];
@@ -1632,7 +1632,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const _Symbol2 = Symbol;
               if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
                 const obj6 = { size: "md", onChange: tmp7 };
-                const tmp28 = closure_11(tmp(7297).SearchField, obj6);
+                const tmp28 = closure_11(tmp(7329).SearchField, obj6);
                 class A {
                   constructor(arg0, arg1) {
                     tmp = closure_1[arg1];
@@ -1702,7 +1702,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 }
               }
               const obj8 = { style: tmp4.listContainer, sections: tmp24, estimatedListSize: "windowSize", itemSize: tmp22, insetEnd: sum, renderItem: tmp25 };
-              const tmp37 = closure_11(tmp21(7302), obj8);
+              const tmp37 = closure_11(tmp21(7334), obj8);
               cResult[20] = tmp22;
               cResult[21] = tmp25;
               cResult[22] = tmp24;
@@ -1726,15 +1726,15 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           tmp25 = A;
         }
       }
-      const tmpResult = tmp(11942);
-      const tmpResult3 = tmp(11942);
-      const bestMatches = tmpResult.getBestMatches(tmpResult3.sortEntries(tmp(11942).getEntries(tmp10), tmp13), tmp6);
+      const tmpResult = tmp(11978);
+      const tmpResult3 = tmp(11978);
+      const bestMatches = tmpResult.getBestMatches(tmpResult3.sortEntries(tmp(11978).getEntries(tmp10), tmp13), tmp6);
       cResult[7] = tmp10;
       cResult[8] = tmp13;
       cResult[9] = tmp6;
       cResult[10] = bestMatches;
       arr = bestMatches;
-      const tmpResult4 = tmp(11942);
+      const tmpResult4 = tmp(11978);
     }
     const obj9 = {};
     const merged = Object.assign(overridesInfo);

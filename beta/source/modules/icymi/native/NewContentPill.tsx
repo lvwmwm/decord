@@ -1,20 +1,20 @@
-// Module ID: 16864
-// Function ID: 16865
+// Module ID: 16874
+// Function ID: 16875
 // Name: NewContentPill
-// Dependencies: [32, 19, 17, 2067, 8611, 21, 4758, 580, 558, 568, 9092, 5799, 504, 4693, 8624, 8626, 4497, 5187, 1491, 16048, 4754, 1119, 5341, 4610, 2]
+// Dependencies: [32, 19, 17, 2067, 8643, 21, 4790, 580, 558, 568, 9124, 5831, 504, 4725, 8656, 8658, 4529, 5219, 1491, 16058, 4786, 1119, 5373, 4642, 2]
 
-// Module 16864 (NewContentPill)
+// Module 16874 (NewContentPill)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import spring from "spring" /* 5187 */;
-import GuildIcon from "GuildIcon" /* 5799 */;
-import ICYMITypes from "ICYMITypes" /* 8624 */;
-import ICYMIUtils from "ICYMIUtils" /* 8626 */;
-import ClipView from "ClipView" /* 9092 */;
+import spring from "spring" /* 5219 */;
+import GuildIcon from "GuildIcon" /* 5831 */;
+import ICYMITypes from "ICYMITypes" /* 8656 */;
+import ICYMIUtils from "ICYMIUtils" /* 8658 */;
+import ClipView from "ClipView" /* 9124 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import ICYMIStore from "ICYMIStore" /* 8611 */;
+import ICYMIStore from "ICYMIStore" /* 8643 */;
 
 const GuildIconDefault = GuildIcon;
 const ClipViewDefault = ClipView;
@@ -24,7 +24,7 @@ get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { alignSelf: "center", alignItems: "center", flexDirection: "row", paddingRight: 12, paddingLeft: 8, paddingVertical: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, guildIconBG: null, refreshMorePillContainer: null };
 let obj3 = { alignSelf: "center", alignItems: "center", flexDirection: "row", paddingRight: 12, paddingLeft: 8, paddingVertical: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj2.guildIconBG = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
@@ -44,7 +44,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const size1 = { shape: tmp(9092).CutoutShape.RoundedRect, x: 18, y: -4, width: 32, height: 32, cornerRadius: nativeDefault.radii.md };
+    const size1 = { shape: tmp(9124).CutoutShape.RoundedRect, x: 18, y: -4, width: 32, height: 32, cornerRadius: nativeDefault.radii.md };
     const items = [size1];
     cResult[1] = items;
     let tmp6 = items;

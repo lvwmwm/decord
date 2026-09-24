@@ -1,20 +1,20 @@
-// Module ID: 7246
-// Function ID: 7247
+// Module ID: 7278
+// Function ID: 7279
 // Name: Navigator
-// Dependencies: [109, 32, 19, 17, 21, 4758, 580, 558, 568, 7247, 5839, 4462, 7248, 1616, 1119, 12, 7281, 1489, 4693, 7288, 1236, 5848, 2]
+// Dependencies: [109, 32, 19, 17, 21, 4790, 580, 558, 568, 7279, 5871, 4494, 7280, 1616, 1119, 12, 7313, 1489, 4725, 7320, 1236, 5880, 2]
 // Exports: useNavigatorScreens
 
-// Module 7246 (Navigator)
+// Module 7278 (Navigator)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import SentryInitUtils from "SentryInitUtils" /* 1236 */;
 import Link from "Link" /* 1489 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import NavigatorHeader from "NavigatorHeader" /* 5839 */;
-import _mod5848 from "module_5848" /* 5848 */;
-import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 7247 */;
-import NavigatorScreen from "NavigatorScreen" /* 7281 */;
-import useNavigationTheme from "useNavigationTheme" /* 7288 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import NavigatorHeader from "NavigatorHeader" /* 5871 */;
+import _mod5880 from "module_5880" /* 5880 */;
+import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 7279 */;
+import NavigatorScreen from "NavigatorScreen" /* 7313 */;
+import useNavigationTheme from "useNavigationTheme" /* 7320 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -25,7 +25,7 @@ let closure_4 = ["useContainer", "containerStyle"];
 get_ActivityIndicator = fn(17);
 ({ StyleSheet, View: closure_8 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: null, navbar: null, headerLeftContainerStyle: null, headerRightContainerStyle: null };
 let obj3 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -680,13 +680,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((screens) => {
           return obj;
         };
       } else {
-        fn2 = tmp3(7248).CardStyleInterpolators.forHorizontalIOS;
+        fn2 = tmp3(7280).CardStyleInterpolators.forHorizontalIOS;
       }
       obj.cardStyleInterpolator = fn2;
       if (disableHeaderAnimation) {
-        let fn3 = tmp3(7248).HeaderStyleInterpolators.forNoAnimation;
+        let fn3 = tmp3(7280).HeaderStyleInterpolators.forNoAnimation;
       } else if (tmp2) {
-        fn3 = tmp3(7248).HeaderStyleInterpolators.forFade;
+        fn3 = tmp3(7280).HeaderStyleInterpolators.forFade;
       } else {
         fn3 = (arg0) => {
           ({ current, next, layouts, direction } = arg0);
@@ -901,7 +901,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { value: "Array", children: 0 };
     const obj4 = { ref: tmp13, theme: navigationTheme1, initialState: tmp6, onReady: tmp19, onStateChange: tmp8, children: tmp21 };
     obj3.children = jsx(tmp(1489).NavigationContainer, { ref: tmp13, theme: navigationTheme1, initialState: tmp6, onReady: tmp19, onStateChange: tmp8, children: tmp21 });
-    obj2.children = jsx(tmp(5848).HeaderBackContext.Provider, { value: "Array", children: 0 });
+    obj2.children = jsx(tmp(5880).HeaderBackContext.Provider, { value: "Array", children: 0 });
     const tmp26 = jsx(tmp(1489).NavigationIndependentTree, { children: null });
     cResult[14] = tmp8;
     cResult[15] = navigationTheme1;
@@ -927,7 +927,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp2;
   }), 1)[0];
-  const tmp4 = navigationContainerRef(4693)();
+  const tmp4 = navigationContainerRef(4725)();
   let navigationTheme1 = useNavigationTheme.useNavigationTheme(tmp4);
   const obj3 = { ref: navigationContainerRef, theme: null, initialState: null, onReady: null, onStateChange: null, children: null };
   if (null != navigationTheme) {
@@ -952,7 +952,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const merged1 = Object.assign(merged);
   obj3.children = <closure_11 initialRouteName={initialRouteName} />;
   obj5.children = jsx(Link.NavigationContainer, { ref: navigationContainerRef, theme: null, initialState: null, onReady: null, onStateChange: null, children: null });
-  obj4.children = jsx(_mod5848.HeaderBackContext.Provider, { value: "Array", children: 0 });
+  obj4.children = jsx(_mod5880.HeaderBackContext.Provider, { value: "Array", children: 0 });
   return jsx(Link.NavigationIndependentTree, { children: null });
 });
 ReactCompilerGating = fn(558);

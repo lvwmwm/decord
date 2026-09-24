@@ -1,25 +1,25 @@
-// Module ID: 9972
-// Function ID: 9973
+// Module ID: 10004
+// Function ID: 10005
 // Name: useCanRing
-// Dependencies: [502, 5497, 2045, 2109, 5632, 4399, 4798, 4409, 4777, 1078, 558, 568, 504, 9973, 5635, 5221, 2]
+// Dependencies: [502, 5529, 2045, 2109, 5664, 4431, 4830, 4441, 4809, 1078, 558, 568, 504, 10005, 5667, 5253, 2]
 // Exports: canRingUsersInChannel
 
-// Module 9972 (useCanRing)
-import useChannelRoleSubscriptionStatusDefault from "useChannelRoleSubscriptionStatus" /* 5221 */;
-import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5635 */;
+// Module 10004 (useCanRing)
+import useChannelRoleSubscriptionStatusDefault from "useChannelRoleSubscriptionStatus" /* 5253 */;
+import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5667 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5497 */;
+import CallStore from "CallStore" /* 5529 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5632 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
-import PresenceStore from "PresenceStore" /* 4798 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
-import VoiceStateStore from "VoiceStateStore" /* 4777 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5664 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
+import PresenceStore from "PresenceStore" /* 4830 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
+import VoiceStateStore from "VoiceStateStore" /* 4809 */;
 
 const require = globalThis.__r;
 
-const GuildVoiceRingingExperimentDefault = tmp4(9973);
+const GuildVoiceRingingExperimentDefault = tmp4(10005);
 const require = fn;
 const Constants = fn(1078);
 ({ ChannelTypes: closure_12, ChannelTypesSets: map1, StatusTypes: closure_14 } = Constants);
@@ -174,7 +174,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
           return tmp2;
         }
       }
-      const enabled = tmp11(9973).useExperiment(tmp15).enabled;
+      const enabled = tmp11(10005).useExperiment(tmp15).enabled;
       if (arg2 != null) {
         class S {
           constructor() {

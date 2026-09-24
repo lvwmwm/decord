@@ -1,18 +1,18 @@
-// Module ID: 11189
-// Function ID: 11190
+// Module ID: 11225
+// Function ID: 11226
 // Name: ActivityStatusText
-// Dependencies: [109, 19, 21, 4758, 558, 568, 4754, 2]
+// Dependencies: [109, 19, 21, 4790, 558, 568, 4786, 2]
 
-// Module 11189 (ActivityStatusText)
+// Module 11225 (ActivityStatusText)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 let closure_2 = ["children", "style", "variant"];
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ text: { flexShrink: 1 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

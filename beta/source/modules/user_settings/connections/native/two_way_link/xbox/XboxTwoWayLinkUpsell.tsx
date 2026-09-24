@@ -1,24 +1,24 @@
-// Module ID: 15232
-// Function ID: 15233
+// Module ID: 15242
+// Function ID: 15243
 // Name: XboxTwoWayLinkUpsell
-// Dependencies: [19, 1078, 21, 4758, 558, 568, 2112, 15233, 1119, 5802, 15234, 9340, 2031, 2]
+// Dependencies: [19, 1078, 21, 4790, 558, 568, 2112, 15243, 1119, 5834, 15244, 9372, 2031, 2]
 
-// Module 15232 (XboxTwoWayLinkUpsell)
+// Module 15242 (XboxTwoWayLinkUpsell)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9340 */;
-import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 15233 */;
-import _modDef15234 from "module_15234" /* 15234 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9372 */;
+import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 15243 */;
+import _modDef15244 from "module_15244" /* 15244 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Constants = fn(1078);
 ({ HelpdeskArticles: c3, AnalyticsLocations: closure_4 } = Constants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ upsellImage: { alignSelf: "center", width: 84, marginLeft: 16 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -29,7 +29,7 @@ export const XboxTwoWayLinkUpsell = ReactCompilerGating.isReactCompilerEnabled()
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const articleURL = HelpdeskUtilsDefault.getArticleURL(constants.XBOX_CONNECTION);
-    const OneWayToTwoWayLinkUpsell = tmp(15233).OneWayToTwoWayLinkUpsell;
+    const OneWayToTwoWayLinkUpsell = tmp(15243).OneWayToTwoWayLinkUpsell;
     const intl = tmp(1119).intl;
     const stringResult = intl.string(tmp(1119).t["2okkZV"]);
     const intl2 = tmp(1119).intl;
@@ -44,8 +44,8 @@ export const XboxTwoWayLinkUpsell = ReactCompilerGating.isReactCompilerEnabled()
     [tmp5, tmp6, tmp7] = cResult;
   }
   if (cResult[3] !== tmp4.upsellImage) {
-    const obj4 = { style: tmp4.upsellImage, source: _modDef15234, resizeMode: "contain" };
-    const tmp17 = jsx(FastImageDefault, { style: tmp4.upsellImage, source: _modDef15234, resizeMode: "contain" });
+    const obj4 = { style: tmp4.upsellImage, source: _modDef15244, resizeMode: "contain" };
+    const tmp17 = jsx(FastImageDefault, { style: tmp4.upsellImage, source: _modDef15244, resizeMode: "contain" });
     cResult[3] = tmp4.upsellImage;
     cResult[4] = tmp17;
     let tmp13 = tmp17;
@@ -107,7 +107,7 @@ export const XboxTwoWayLinkUpsell = ReactCompilerGating.isReactCompilerEnabled()
   const intl2 = util.intl;
   obj2.body = intl2.format(util.t.OnERSS, { help_article: articleURL });
   const obj3 = { style: tmp.upsellImage, source: null, resizeMode: "contain" };
-  obj3.source = _modDef15234;
+  obj3.source = _modDef15244;
   obj2.img = jsx(FastImageDefault, { style: tmp.upsellImage, source: null, resizeMode: "contain" });
   obj2.newIndicatorDismissibleContent = dismissible_content.DismissibleContent.XBOX_ONE_WAY_RECONNECT;
   obj2.onPress = function onPress() {

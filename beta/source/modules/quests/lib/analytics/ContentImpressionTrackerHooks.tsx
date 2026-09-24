@@ -1,16 +1,16 @@
-// Module ID: 11610
-// Function ID: 11611
+// Module ID: 11646
+// Function ID: 11647
 // Name: ContentImpressionTrackerHooks
-// Dependencies: [19, 7944, 558, 568, 5670, 504, 7969, 8548, 11611, 2]
+// Dependencies: [19, 7976, 558, 568, 5702, 504, 8001, 8580, 11647, 2]
 // Exports: useQuestImpressionId
 
-// Module 11610 (ContentImpressionTrackerHooks)
+// Module 11646 (ContentImpressionTrackerHooks)
 import c from "c" /* 568 */;
-import AdCreativeType from "AdCreativeType" /* 5670 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7969 */;
-import ContentImpressionTracker from "ContentImpressionTracker" /* 11611 */;
+import AdCreativeType from "AdCreativeType" /* 5702 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8001 */;
+import ContentImpressionTracker from "ContentImpressionTracker" /* 11647 */;
 import noop from "module_19" /* 19 */;
-import QuestStore from "QuestStore" /* 7944 */;
+import QuestStore from "QuestStore" /* 7976 */;
 
 require = fn;
 let ReactCompilerGating = fn(558);
@@ -99,7 +99,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((questOrQuests) => {
   }
   const tmp4Result = closure_5(questOrQuests, adContentId);
   if ("questOrQuests" in questOrQuests) {
-    let adCreativeType = tmp(5670).AdCreativeType.QUEST;
+    let adCreativeType = tmp(5702).AdCreativeType.QUEST;
   } else {
     adCreativeType = questOrQuests.adCreativeType;
   }
@@ -107,7 +107,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((questOrQuests) => {
     if (cResult[1] === questOrQuests.questContent) {
       let tmp8 = cResult[2];
     }
-    if (adCreativeType === tmp(5670).AdCreativeType.QUEST) {
+    if (adCreativeType === tmp(5702).AdCreativeType.QUEST) {
       if (cResult[3] === adCreativeType) {
         if (cResult[4] === tmp8) {
         }
@@ -202,9 +202,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((adContentIds) => {
     }
     const stateFromStores = obj(504).useStateFromStores(first, tmp5, tmp6);
     if (null == stateFromStores) {
-      return null !== adCreativeType(8548)(null);
+      return null !== adCreativeType(8580)(null);
     } else if (cResult[5] !== stateFromStores) {
-      obj = obj(7969);
+      obj = obj(8001);
       const questStatus = obj.getQuestStatus(stateFromStores);
       cResult[5] = stateFromStores;
       cResult[6] = questStatus;

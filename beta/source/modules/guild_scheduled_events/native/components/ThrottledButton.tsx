@@ -1,11 +1,11 @@
-// Module ID: 9853
-// Function ID: 9854
+// Module ID: 9885
+// Function ID: 9886
 // Name: ThrottledButton
-// Dependencies: [109, 19, 21, 558, 568, 5188, 2]
+// Dependencies: [109, 19, 21, 558, 568, 5220, 2]
 
-// Module 9853 (ThrottledButton)
+// Module 9885 (ThrottledButton)
 import c from "c" /* 568 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

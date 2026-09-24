@@ -1,18 +1,18 @@
-// Module ID: 18073
-// Function ID: 18074
+// Module ID: 18083
+// Function ID: 18084
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 1245, 4725, 4457, 5110, 1119, 7396, 18051, 7449, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 1245, 4757, 4489, 5142, 1119, 7428, 18061, 7481, 2]
 
-// Module 18073 (RolePermissionTemplatesActionSheet)
+// Module 18083 (RolePermissionTemplatesActionSheet)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
-import ToastUtils from "ToastUtils" /* 4457 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
-import GuildSettingsRoleTemplateDefault from "GuildSettingsRoleTemplate" /* 18051 */;
+import ToastUtils from "ToastUtils" /* 4489 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5142 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
+import GuildSettingsRoleTemplateDefault from "GuildSettingsRoleTemplate" /* 18061 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -22,7 +22,7 @@ const View = fn(17).View;
 const Constants = fn(1078);
 ({ AnalyticEvents: hasOwnProperty, AnalyticsSections: metroRequire } = Constants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { templateContainer: { paddingVertical: 16, flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER } };
 let closure_8 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -114,7 +114,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((permissionsEdite
       let obj2 = { title: null };
       let intl = tmp(1119).intl;
       obj2.title = intl.string(tmp(1119).t.KgCkoQ);
-      const tmp11 = jsx(tmp(7396).BottomSheetTitleHeader, { title: null });
+      const tmp11 = jsx(tmp(7428).BottomSheetTitleHeader, { title: null });
       cResult[7] = tmp11;
       const tmp10 = tmp11;
     } else {
@@ -156,14 +156,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((permissionsEdite
       const obj3 = { header: tmp10, startExpanded: true, children: null };
       const obj4 = { style: tmp4.templateContainer, children: tmp12 };
       obj3.children = <View style={tmp4.templateContainer}>{tmp12}</View>;
-      const tmp20 = jsx(tmp(7449).ActionSheet, { header: tmp10, startExpanded: true, children: null });
+      const tmp20 = jsx(tmp(7481).ActionSheet, { header: tmp10, startExpanded: true, children: null });
       cResult[11] = tmp4.templateContainer;
       cResult[12] = tmp12;
       cResult[13] = tmp20;
       tmp17 = tmp20;
     }
     const obj5 = { onSelect: tmp9, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId };
-    const tmp16 = jsx(onPermissionsChanged(18051), { onSelect: tmp9, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId });
+    const tmp16 = jsx(onPermissionsChanged(18061), { onSelect: tmp9, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId });
     cResult[8] = guildId;
     cResult[9] = tmp9;
     cResult[10] = tmp16;
@@ -225,12 +225,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((permissionsEdite
           obj4.confirmText = intl4.string(require("util").t.p89ACt);
           obj4.onConfirm = function onConfirm() {
             importDefault(closure_0);
-            closure_1_1(4725).hideActionSheet();
-            const obj = closure_1_1(4725);
-            const result = closure_0(4457).roleTemplateAppliedToast();
+            closure_1_1(4757).hideActionSheet();
+            const obj = closure_1_1(4757);
+            const result = closure_0(4489).roleTemplateAppliedToast();
           };
           obj4.onCancel = function onCancel() {
-            closure_1_1(4725).hideActionSheet();
+            closure_1_1(4757).hideActionSheet();
           };
           AlertActionCreatorsDefault.show(obj4);
         } else {
@@ -259,12 +259,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((permissionsEdite
         obj4.confirmText = intl4.string(require("util").t.p89ACt);
         obj4.onConfirm = function onConfirm() {
           importDefault(closure_0);
-          closure_1_1(4725).hideActionSheet();
-          const obj = closure_1_1(4725);
-          const result = closure_0(4457).roleTemplateAppliedToast();
+          closure_1_1(4757).hideActionSheet();
+          const obj = closure_1_1(4757);
+          const result = closure_0(4489).roleTemplateAppliedToast();
         };
         obj4.onCancel = function onCancel() {
-          closure_1_1(4725).hideActionSheet();
+          closure_1_1(4757).hideActionSheet();
         };
         AlertActionCreatorsDefault.show(obj4);
       } else {

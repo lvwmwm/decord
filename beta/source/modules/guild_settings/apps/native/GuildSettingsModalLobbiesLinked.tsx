@@ -1,11 +1,11 @@
-// Module ID: 18039
-// Function ID: 18040
+// Module ID: 18049
+// Function ID: 18050
 // Name: GuildSettingsModalLobbiesLinked
-// Dependencies: [19, 4409, 1376, 1078, 21, 558, 568, 1488, 7415, 5822, 4911, 5241, 5903, 4462, 580, 17932, 12, 5186, 8876, 7286, 2]
+// Dependencies: [19, 4441, 1376, 1078, 21, 558, 568, 1488, 7447, 5854, 4943, 5273, 5935, 4494, 580, 17942, 12, 5218, 8908, 7318, 2]
 
-// Module 18039 (GuildSettingsModalLobbiesLinked)
+// Module 18049 (GuildSettingsModalLobbiesLinked)
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
@@ -96,7 +96,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channels) => {
   dependencyMap = channels(1488).useNavigation();
   let obj = channels(1488);
   const tmp = channels;
-  const getOrFetchApplication = channels(7415).useGetOrFetchApplication(channels.applicationId);
+  const getOrFetchApplication = channels(7447).useGetOrFetchApplication(channels.applicationId);
   let tmp5Result = null;
   if (0 !== channels.length) {
     let name;
@@ -108,11 +108,11 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channels) => {
       hasIcons: true,
       children: channels.map((id) => {
           const channel = id;
-          let obj = { label: channels(4911).computeChannelName(id, UserStore, RelationshipStore), icon: null, arrow: true, onPress: null };
+          let obj = { label: channels(4943).computeChannelName(id, UserStore, RelationshipStore), icon: null, arrow: true, onPress: null };
           const obj3 = { IconComponent: null };
-          const obj2 = channels(4911);
-          obj3.IconComponent = channels(5241).getChannelIconComponent(id);
-          obj.icon = closure_1_6(channels(5822).TableRow.Icon, obj3);
+          const obj2 = channels(4943);
+          obj3.IconComponent = channels(5273).getChannelIconComponent(id);
+          obj.icon = closure_1_6(channels(5854).TableRow.Icon, obj3);
           obj.onPress = function onPress() {
             const obj = { channel, numScreensToPop: null };
             let num = 1;
@@ -125,10 +125,10 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channels) => {
             obj.numScreensToPop = num;
             closure_2.push(GuildSettingsSections.EDIT_LINKED_LOBBY, obj);
           };
-          return closure_1_6(channels(5822).TableRow, obj, id.id);
+          return closure_1_6(channels(5854).TableRow, obj, id.id);
         })
     };
-    tmp5Result = closure_6(tmp(5903).TableRowGroup, obj3);
+    tmp5Result = closure_6(tmp(5935).TableRowGroup, obj3);
   }
   return tmp5Result;
 });
@@ -212,7 +212,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const _Symbol3 = Symbol;
           if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp28 = closure_6(tmp(7286).NavScrim, {});
+            const tmp28 = closure_6(tmp(7318).NavScrim, {});
             cResult[19] = tmp28;
             let tmp26 = tmp28;
           } else {
@@ -232,14 +232,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return tmp29;
         }
         const obj7 = { contentContainerStyle: tmp16, children: tmp20 };
-        const tmp25 = closure_6(tmp(8876).Form, obj7);
+        const tmp25 = closure_6(tmp(8908).Form, obj7);
         cResult[16] = tmp16;
         cResult[17] = tmp20;
         cResult[18] = tmp25;
         tmp23 = tmp25;
       }
       const obj8 = { style: tmp17, spacing: tmp4(580).space.PX_24, children: tmp18 };
-      const tmp22 = closure_6(tmp(5186).Stack, obj8);
+      const tmp22 = closure_6(tmp(5218).Stack, obj8);
       cResult[13] = tmp17;
       cResult[14] = tmp18;
       cResult[15] = tmp22;

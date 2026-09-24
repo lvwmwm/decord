@@ -1,13 +1,13 @@
-// Module ID: 11635
-// Function ID: 11636
+// Module ID: 11671
+// Function ID: 11672
 // Name: AppStoreOverlayAboutSection
-// Dependencies: [32, 19, 17, 21, 580, 4758, 558, 568, 1119, 4754, 2]
+// Dependencies: [32, 19, 17, 21, 580, 4790, 558, 568, 1119, 4786, 2]
 
-// Module 11635 (AppStoreOverlayAboutSection)
+// Module 11671 (AppStoreOverlayAboutSection)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,7 +17,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const rect = { top: nativeDefault.space.PX_12, bottom: nativeDefault.space.PX_12, left: nativeDefault.space.PX_12, right: nativeDefault.space.PX_12 };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { aboutSection: { borderRadius: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.CARD_SECONDARY_BACKGROUND_DEFAULT, padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 } };
 let closure_9 = createStyles.createStyles(obj);
 const ReactCompilerGating = fn(558);
@@ -88,7 +88,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((description) => 
       const obj3 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
       const intl = tmp(1119).intl;
       obj3.children = intl.string(tmp(1119).t.CI0vSJ);
-      const tmp14 = timestampProducer(tmp(4754).Text, obj3);
+      const tmp14 = timestampProducer(tmp(4786).Text, obj3);
       cResult[5] = tmp14;
     } else {
       class X {
@@ -122,7 +122,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((description) => 
       }
     }
     const obj4 = { variant: "text-sm/medium", color: "text-default", lineClamp: tmp15, onTextLayout: tmp9, children: description };
-    const tmp18 = timestampProducer(tmp(4754).Text, obj4);
+    const tmp18 = timestampProducer(tmp(4786).Text, obj4);
     cResult[6] = description;
     cResult[7] = tmp9;
     cResult[8] = tmp15;
@@ -159,7 +159,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((description) => 
     obj3.accessibilityState = obj4;
     obj3.onPress = callback1;
     const obj5 = { variant: "text-sm/medium", color: "text-link", children: stringResult };
-    obj3.children = tmp13(tmp8(4754).Text, obj5);
+    obj3.children = tmp13(tmp8(4786).Text, obj5);
     tmp13Result = tmp13(React4, obj3);
   }
   items1[2] = tmp13Result;

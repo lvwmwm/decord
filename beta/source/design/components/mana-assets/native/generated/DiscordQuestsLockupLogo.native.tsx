@@ -1,15 +1,15 @@
-// Module ID: 6146
-// Function ID: 6147
+// Module ID: 6178
+// Function ID: 6179
 // Name: DiscordQuestsLockupLogo
-// Dependencies: [17, 21, 558, 568, 580, 4462, 6147, 2]
+// Dependencies: [17, 21, 558, 568, 580, 4494, 6179, 2]
 
-// Module 6146 (DiscordQuestsLockupLogo)
+// Module 6178 (DiscordQuestsLockupLogo)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import _modDef6147 from "module_6147" /* 6147 */;
+import useToken from "useToken" /* 4494 */;
+import _modDef6179 from "module_6179" /* 6179 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ export const DiscordQuestsLockupLogo = ReactCompilerGating.isReactCompilerEnable
     }
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { uri: _modDef6147 };
+      const obj4 = { uri: _modDef6179 };
       cResult[4] = obj4;
       let tmp12 = obj4;
     } else {
@@ -130,7 +130,7 @@ export const DiscordQuestsLockupLogo = ReactCompilerGating.isReactCompilerEnable
     tmp5 = null != ICON_STRONG && typeof ICON_STRONG === "string";
   }
   const obj4 = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj4.source = { uri: _modDef6147 };
+  obj4.source = { uri: _modDef6179 };
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size, tmp6];
   obj4.style = items;

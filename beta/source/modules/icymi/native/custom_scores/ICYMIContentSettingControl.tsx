@@ -1,29 +1,29 @@
-// Module ID: 16802
-// Function ID: 16803
+// Module ID: 16812
+// Function ID: 16813
 // Name: ICYMIContentSettingControl
-// Dependencies: [32, 19, 17, 4939, 8611, 21, 4758, 580, 8626, 558, 568, 1119, 1181, 16803, 16804, 16805, 9868, 9869, 504, 16806, 4754, 7446, 4911, 2]
+// Dependencies: [32, 19, 17, 4971, 8643, 21, 4790, 580, 8658, 558, 568, 1119, 1181, 16813, 16814, 16815, 9900, 9901, 504, 16816, 4786, 7478, 4943, 2]
 
-// Module 16802 (ICYMIContentSettingControl)
+// Module 16812 (ICYMIContentSettingControl)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import ICYMIUtils from "ICYMIUtils" /* 8626 */;
-import SegmentedControlState from "SegmentedControlState" /* 9868 */;
-import SegmentedControl from "SegmentedControl" /* 9869 */;
-import _modDef16803 from "module_16803" /* 16803 */;
-import _modDef16804 from "module_16804" /* 16804 */;
-import _modDef16805 from "module_16805" /* 16805 */;
-import NativeICYMIActionCreatorsDefault from "NativeICYMIActionCreators" /* 16806 */;
+import ICYMIUtils from "ICYMIUtils" /* 8658 */;
+import SegmentedControlState from "SegmentedControlState" /* 9900 */;
+import SegmentedControl from "SegmentedControl" /* 9901 */;
+import _modDef16813 from "module_16813" /* 16813 */;
+import _modDef16814 from "module_16814" /* 16814 */;
+import _modDef16815 from "module_16815" /* 16815 */;
+import NativeICYMIActionCreatorsDefault from "NativeICYMIActionCreators" /* 16816 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
-import ICYMIStore from "ICYMIStore" /* 8611 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4971 */;
+import ICYMIStore from "ICYMIStore" /* 8643 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { customScoreWrapper: { marginVertical: nativeDefault.space.PX_16 }, warningText: null, icon: null, iconSelected: null, muted: null };
 let obj3 = { marginVertical: nativeDefault.space.PX_16 };
 obj2.warningText = { marginTop: nativeDefault.space.PX_8, marginHorizontal: nativeDefault.space.PX_12 };
@@ -50,7 +50,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
     first = cResult[0];
   }
   let iconSelected = null;
-  if (tmp6 === onValueUpdated(8626).ICYMICustomScore.LESS) {
+  if (tmp6 === onValueUpdated(8658).ICYMICustomScore.LESS) {
     iconSelected = tmp4.iconSelected;
   }
   if (cResult[1] === tmp4.icon) {
@@ -67,7 +67,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
       tmp11 = cResult[4];
     }
     let iconSelected1 = null;
-    if (tmp6 === tmp(8626).ICYMICustomScore.DEFAULT) {
+    if (tmp6 === tmp(8658).ICYMICustomScore.DEFAULT) {
       iconSelected1 = tmp4.iconSelected;
     }
     if (cResult[5] === tmp4.icon) {
@@ -84,7 +84,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
         tmp17 = cResult[8];
       }
       let iconSelected2 = null;
-      if (tmp6 === tmp(8626).ICYMICustomScore.MORE) {
+      if (tmp6 === tmp(8658).ICYMICustomScore.MORE) {
         iconSelected2 = tmp4.iconSelected;
       }
       if (cResult[9] === tmp4.icon) {
@@ -156,7 +156,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
                   return;
                 }
               }
-              if (tmp(8626).ICYMICustomScore.LESS !== tmp6) {
+              if (tmp(8658).ICYMICustomScore.LESS !== tmp6) {
                 class V {
                   constructor(arg0) {
                     tmp = closure_0;
@@ -175,7 +175,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
                     return;
                   }
                 }
-                if (tmp(8626).ICYMICustomScore.MORE === tmp6) {
+                if (tmp(8658).ICYMICustomScore.MORE === tmp6) {
                   class V {
                     constructor(arg0) {
                       tmp = closure_0;
@@ -253,7 +253,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
         tmp23 = items;
       }
       const obj3 = { label: tmp17, id: "1", icon: null, page: null };
-      const obj4 = { source: _modDef16805, style: null };
+      const obj4 = { source: _modDef16815, style: null };
       const items1 = [tmp4.icon, iconSelected2];
       obj4.style = items1;
       obj3.icon = closure_8(tmp(1181).Icon, obj4);
@@ -263,7 +263,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
       tmp20 = obj3;
     }
     const obj5 = { label: tmp11, id: "0", icon: null, page: null };
-    const obj6 = { source: _modDef16804, style: null };
+    const obj6 = { source: _modDef16814, style: null };
     const items2 = [tmp4.icon, iconSelected1];
     obj6.style = items2;
     obj5.icon = closure_8(tmp(1181).Icon, obj6);
@@ -273,7 +273,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
     tmp14 = obj5;
   }
   const obj7 = { label: first, id: "-1", icon: null, page: null };
-  const obj8 = { source: _modDef16803, style: null };
+  const obj8 = { source: _modDef16813, style: null };
   const items3 = [tmp4.icon, iconSelected];
   obj8.style = items3;
   obj7.icon = closure_8(onValueUpdated(1181).Icon, obj8);
@@ -289,7 +289,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
   const obj = { label: null, id: "-1", icon: null, page: null };
   const intl = util.intl;
   obj.label = intl.string(util.t.rdt65I);
-  const obj2 = { source: _modDef16803, style: null };
+  const obj2 = { source: _modDef16813, style: null };
   const items = [tmp.icon, ];
   let iconSelected = null;
   if (tmp3 === ICYMIUtils.ICYMICustomScore.LESS) {
@@ -302,7 +302,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
   const obj3 = { label: null, id: "0", icon: null, page: null };
   const intl2 = tmp4(1119).intl;
   obj3.label = intl2.string(util.t.SnrG00);
-  const obj4 = { source: _modDef16804, style: null };
+  const obj4 = { source: _modDef16814, style: null };
   const items2 = [tmp.icon, ];
   let iconSelected1 = null;
   if (tmp3 === ICYMIUtils.ICYMICustomScore.DEFAULT) {
@@ -315,7 +315,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
   const obj5 = { label: null, id: "1", icon: null, page: null };
   const intl3 = tmp4(1119).intl;
   obj5.label = intl3.string(util.t.Rxe3jF);
-  const obj6 = { source: _modDef16805, style: null };
+  const obj6 = { source: _modDef16815, style: null };
   const items3 = [tmp.icon, ];
   let iconSelected2 = null;
   if (tmp3 === ICYMIUtils.ICYMICustomScore.MORE) {
@@ -331,9 +331,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
     onSetActiveIndex(arg0) {
       let MORE = ICYMIUtils.ICYMICustomScore.DEFAULT;
       if (0 === arg0) {
-        MORE = tmp(8626).ICYMICustomScore.LESS;
+        MORE = tmp(8658).ICYMICustomScore.LESS;
       } else if (2 === arg0) {
-        MORE = tmp(8626).ICYMICustomScore.MORE;
+        MORE = tmp(8658).ICYMICustomScore.MORE;
       }
       _undefined(MORE);
       _require(MORE);
@@ -344,7 +344,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
   let num = 0;
   if (ICYMIUtils.ICYMICustomScore.LESS !== tmp3) {
     num = 1;
-    if (tmp4(8626).ICYMICustomScore.MORE === tmp3) {
+    if (tmp4(8658).ICYMICustomScore.MORE === tmp3) {
       num = 2;
     }
   }
@@ -390,11 +390,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let obj = id(568);
   const stateFromStores = id(504).useStateFromStores(first, tmp6);
   if (cResult[3] !== stateFromStores) {
-    const numberToCustomScoreResult = tmp(8626).numberToCustomScore(stateFromStores);
+    const numberToCustomScoreResult = tmp(8658).numberToCustomScore(stateFromStores);
     cResult[3] = stateFromStores;
     cResult[4] = numberToCustomScoreResult;
     let tmp8 = numberToCustomScoreResult;
-    const tmpResult2 = tmp(8626);
+    const tmpResult2 = tmp(8658);
   } else {
     tmp8 = cResult[4];
   }
@@ -429,7 +429,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       let obj2 = { variant: "text-sm/semibold", color: "text-default", children: null };
       const intl = tmp(1119).intl;
       obj2.children = intl.string(tmp(1119).t.Clq6km);
-      const tmp16 = closure_8(tmp(4754).Text, obj2);
+      const tmp16 = closure_8(tmp(4786).Text, obj2);
       cResult[10] = tmp16;
       let tmp14 = tmp16;
     } else {
@@ -447,14 +447,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
     if (cResult[13] !== tmp17) {
       const obj4 = { variant: "text-xs/normal", color: "text-default", children: tmp17 };
-      const tmp21 = closure_8(tmp(4754).Text, obj4);
+      const tmp21 = closure_8(tmp(4786).Text, obj4);
       cResult[13] = tmp17;
       cResult[14] = tmp21;
       let tmp19 = tmp21;
     } else {
       tmp19 = cResult[14];
     }
-    const tmp22 = tmp8 === tmp(8626).ICYMICustomScore.MUTED;
+    const tmp22 = tmp8 === tmp(8658).ICYMICustomScore.MUTED;
     if (cResult[15] === tmp8) {
       if (cResult[16] === tmp22) {
         if (cResult[17] === tmp11) {
@@ -493,7 +493,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               }
               if (cResult[28] !== tmp13.warningText) {
                 const obj5 = { variant: "text-xs/normal", color: "text-muted", style: tmp13.warningText, children: tmp38 };
-                const tmp42 = closure_8(tmp(4754).Text, obj5);
+                const tmp42 = closure_8(tmp(4786).Text, obj5);
                 cResult[28] = tmp13.warningText;
                 cResult[29] = tmp42;
                 let tmp40 = tmp42;
@@ -545,7 +545,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             tmp34 = tmp37;
           }
           const obj8 = { value: !tmp22, onValueChange: tmp10, label: tmp28, start: true, end: true };
-          const tmp33 = closure_8(tmp(7446).TableSwitchRow, obj8);
+          const tmp33 = closure_8(tmp(7478).TableSwitchRow, obj8);
           cResult[21] = tmp10;
           cResult[22] = !tmp22;
           cResult[23] = tmp33;
@@ -594,9 +594,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const items = [ICYMIStore];
   const stateFromStores = id(504).useStateFromStores(items, () => ICYMIStore.getCustomGuildScore(id));
   let obj = id(504);
-  const numberToCustomScoreResult = id(8626).numberToCustomScore(stateFromStores);
+  const numberToCustomScoreResult = id(8658).numberToCustomScore(stateFromStores);
   c1 = numberToCustomScoreResult;
-  const tmp5 = numberToCustomScoreResult === id(8626).ICYMICustomScore.MUTED;
+  const tmp5 = numberToCustomScoreResult === id(8658).ICYMICustomScore.MUTED;
   const items1 = [id];
   const items2 = [numberToCustomScoreResult, id];
   const callback = noop.useCallback((arg0) => {
@@ -624,11 +624,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let obj3 = { variant: "text-sm/semibold", color: "text-default", children: null };
   const intl = id(1119).intl;
   obj3.children = intl.string(id(1119).t.Clq6km);
-  const items3 = [closure_8(id(4754).Text, obj3), , , , ];
+  const items3 = [closure_8(id(4786).Text, obj3), , , , ];
   const obj4 = { variant: "text-xs/normal", color: "text-default", children: null };
   const intl2 = id(1119).intl;
   obj4.children = intl2.format(id(1119).t["0DhU2P"], { guildName: guild.name });
-  items3[1] = closure_8(id(4754).Text, obj4);
+  items3[1] = closure_8(id(4786).Text, obj4);
   let tmp11Result = null;
   if (!tmp5) {
     const obj6 = { style: tmp8.customScoreWrapper, children: null };
@@ -646,12 +646,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const obj10 = { value: !tmp5, onValueChange: callback, label: null, start: true, end: true };
   const intl3 = tmp(1119).intl;
   obj10.label = intl3.string(id(1119).t.oujX73);
-  obj9.children = closure_8(id(7446).TableSwitchRow, obj10);
+  obj9.children = closure_8(id(7478).TableSwitchRow, obj10);
   items3[3] = closure_8(View, obj9);
   const obj11 = { variant: "text-xs/normal", color: "text-muted", style: tmp8.warningText, children: null };
   const intl4 = tmp(1119).intl;
   obj11.children = intl4.string(id(1119).t.vRVs07);
-  items3[4] = closure_8(id(4754).Text, obj11);
+  items3[4] = closure_8(id(4786).Text, obj11);
   obj8.children = items3;
   return closure_9(View, obj8);
 });

@@ -1,20 +1,20 @@
-// Module ID: 15978
-// Function ID: 15979
+// Module ID: 15988
+// Function ID: 15989
 // Name: CheckpointApngPlayer
-// Dependencies: [17, 4750, 21, 4758, 558, 568, 504, 1369, 5802, 9087, 2]
+// Dependencies: [17, 4782, 21, 4790, 558, 568, 504, 1369, 5834, 9119, 2]
 
-// Module 15978 (CheckpointApngPlayer)
+// Module 15988 (CheckpointApngPlayer)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
-import createStyles from "createStyles" /* 4758 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const APNGPlayer = tmp2(9087);
+const APNGPlayer = tmp2(9119);
 const View = _mod17.View;
 const jsx = jsxProd.jsx;
 let closure_6 = createStyles.createStyles({ container: { alignItems: "center", justifyContent: "center" } });
@@ -66,7 +66,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp9Result = tmp9(FastImageDefault, obj);
   } else {
     const obj5 = { url: uri, autoplay: !stateFromStores, style };
-    tmp9Result = tmp9(tmp(9087).APNGPlayer, obj5);
+    tmp9Result = tmp9(tmp(9119).APNGPlayer, obj5);
   }
   cResult[2] = stateFromStores;
   cResult[3] = style;

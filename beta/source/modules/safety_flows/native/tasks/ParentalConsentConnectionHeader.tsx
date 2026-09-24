@@ -1,16 +1,16 @@
-// Module ID: 18340
-// Function ID: 18341
+// Module ID: 18350
+// Function ID: 18351
 // Name: ParentalConsentConnectionHeader
-// Dependencies: [19, 17, 1376, 21, 4758, 5897, 580, 558, 568, 1616, 504, 6832, 1119, 2780, 4754, 2]
+// Dependencies: [19, 17, 1376, 21, 4790, 5929, 580, 558, 568, 1616, 504, 6864, 1119, 2780, 4786, 2]
 
-// Module 18340 (ParentalConsentConnectionHeader)
+// Module 18350 (ParentalConsentConnectionHeader)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6832 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6864 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -19,9 +19,9 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
-let obj2 = { row: { height: fn(5897).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_16 }, logOut: null };
-let obj3 = { height: fn(5897).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_16 };
+const createStyles = fn(4790);
+let obj2 = { row: { height: fn(5929).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_16 }, logOut: null };
+let obj3 = { height: fn(5929).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.logOut = { position: "absolute", left: nativeDefault.space.PX_16 };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -76,7 +76,7 @@ export const ParentalConsentConnectionNavbar = ReactCompilerGating.isReactCompil
   }
   if (cResult[6] !== tmp4.logOut) {
     const obj3 = { accessibilityRole: "button", variant: "text-md/medium", color: "text-link", style: logOut, onPress: tmp11, children: tmp12 };
-    const tmp16 = hasOwnProperty(tmp(4754).Text, obj3);
+    const tmp16 = hasOwnProperty(tmp(4786).Text, obj3);
     cResult[6] = tmp4.logOut;
     cResult[7] = tmp16;
     let tmp14 = tmp16;
@@ -87,7 +87,7 @@ export const ParentalConsentConnectionNavbar = ReactCompilerGating.isReactCompil
     let tmp19 = null != stateFromStores;
     if (tmp19) {
       const obj4 = { accessibilityRole: "header", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores };
-      tmp19 = hasOwnProperty(tmp(4754).Text, obj4);
+      tmp19 = hasOwnProperty(tmp(4786).Text, obj4);
     }
     cResult[8] = stateFromStores;
     cResult[9] = tmp19;

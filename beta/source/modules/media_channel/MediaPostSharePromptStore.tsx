@@ -1,13 +1,13 @@
-// Module ID: 8205
-// Function ID: 8206
+// Module ID: 8237
+// Function ID: 8238
 // Name: MediaPostSharePromptStore
-// Dependencies: [2101, 502, 2045, 8206, 11, 504, 577, 2]
+// Dependencies: [2101, 502, 2045, 8238, 11, 504, 577, 2]
 
-// Module 8205 (MediaPostSharePromptStore)
+// Module 8237 (MediaPostSharePromptStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
-import useIsFirstMessageInMediaPost from "useIsFirstMessageInMediaPost" /* 8206 */;
+import useIsFirstMessageInMediaPost from "useIsFirstMessageInMediaPost" /* 8238 */;
 import GatedChannelStore from "GatedChannelStore" /* 2101 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

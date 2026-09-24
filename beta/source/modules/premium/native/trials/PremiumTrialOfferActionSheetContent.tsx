@@ -1,22 +1,22 @@
-// Module ID: 15991
-// Function ID: 15992
+// Module ID: 16001
+// Function ID: 16002
 // Name: PremiumTrialOfferActionSheetContent
-// Dependencies: [19, 17, 1378, 21, 4758, 580, 558, 568, 11954, 1119, 9531, 5294, 5348, 4418, 5907, 4754, 15992, 8938, 5188, 2]
+// Dependencies: [19, 17, 1378, 21, 4790, 580, 558, 568, 11990, 1119, 9563, 5326, 5380, 4450, 5939, 4786, 16002, 8970, 5220, 2]
 
-// Module 15991 (PremiumTrialOfferActionSheetContent)
+// Module 16001 (PremiumTrialOfferActionSheetContent)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import PremiumUtils from "PremiumUtils" /* 4418 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import FolderIcon from "FolderIcon" /* 5294 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5348 */;
-import native from "native" /* 5907 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8938 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 9531 */;
-import UserIcon from "UserIcon" /* 11954 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 15992 */;
+import PremiumUtils from "PremiumUtils" /* 4450 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import FolderIcon from "FolderIcon" /* 5326 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5380 */;
+import native from "native" /* 5939 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8970 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 9563 */;
+import UserIcon from "UserIcon" /* 11990 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 16002 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,7 +24,7 @@ const View = fn(17).View;
 const PremiumTypes = fn(1378).PremiumTypes;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { contentContainer: { paddingHorizontal: 36, paddingTop: 18, paddingBottom: 36, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "flex-start", display: "flex", flexDirection: "column", gap: 0 }, buttonContainer: { marginVertical: 6, width: "100%", height: 48 }, title: { width: "100%", textAlign: "center" }, heroIllustrationContainer: { alignItems: "center", justifyContent: "center", height: 188, width: "100%" } };
 let closure_7 = createStyles.createStyles(obj);
 const ReactCompilerGating = fn(558);
@@ -41,7 +41,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     subscriptionTrial = trialOffer.subscriptionTrial;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { IconComponent: tmp(11954).UserIcon, label: null, description: null };
+    const obj2 = { IconComponent: tmp(11990).UserIcon, label: null, description: null };
     const intl = tmp(1119).intl;
     obj2.label = intl.string(tmp(1119).t.kpMomJ);
     const intl2 = tmp(1119).intl;
@@ -52,7 +52,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { IconComponent: tmp(9531).ChatSmileIcon, label: null, description: null };
+    const obj3 = { IconComponent: tmp(9563).ChatSmileIcon, label: null, description: null };
     const intl3 = tmp(1119).intl;
     obj3.label = intl3.string(tmp(1119).t["R2IV/Q"]);
     const intl4 = tmp(1119).intl;
@@ -64,7 +64,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [first, tmp7, ];
-    const obj4 = { IconComponent: tmp(5294).FolderIcon, label: null, description: null };
+    const obj4 = { IconComponent: tmp(5326).FolderIcon, label: null, description: null };
     const intl5 = tmp(1119).intl;
     obj4.label = intl5.string(tmp(1119).t["u/NJKc"]);
     const obj5 = { legacyCopy: null, rolloutCopy: null };
@@ -72,19 +72,19 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     obj5.legacyCopy = intl6.string(tmp(1119).t.i1UuMk);
     const intl7 = tmp(1119).intl;
     const obj6 = { maxFileSize: null };
-    const tmpResult = tmp(5348);
-    obj6.maxFileSize = tmp(4418).getMaxFileSizeForPremiumType(PremiumTypes.TIER_2, { useSpace: false });
+    const tmpResult = tmp(5380);
+    obj6.maxFileSize = tmp(4450).getMaxFileSizeForPremiumType(PremiumTypes.TIER_2, { useSpace: false });
     obj5.rolloutCopy = intl7.formatToPlainString(tmp(1119).t.PvqncD, obj6);
     obj4.description = tmpResult.getNitroFileUploadRolloutCopy(obj5);
     items[2] = obj4;
     cResult[2] = items;
     let tmp8 = items;
-    const tmpResult3 = tmp(4418);
+    const tmpResult3 = tmp(4450);
   } else {
     tmp8 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp12 = hasOwnProperty(tmp(5907).NitroWumpusFlightRight3dIllustration, { width: 180, height: 180 });
+    const tmp12 = hasOwnProperty(tmp(5939).NitroWumpusFlightRight3dIllustration, { width: 180, height: 180 });
     cResult[3] = tmp12;
     let tmp10 = tmp12;
   } else {
@@ -133,7 +133,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       const _Symbol2 = Symbol;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
         const obj10 = { size: "md", color: nativeDefault.unsafe_rawColors.WHITE };
-        const tmp37 = hasOwnProperty(tmp(8938).NitroWheelIcon, obj10);
+        const tmp37 = hasOwnProperty(tmp(8970).NitroWheelIcon, obj10);
         cResult[15] = tmp37;
         let tmp34 = tmp37;
       } else {
@@ -176,14 +176,14 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         tmp41 = tmp44;
       }
       const obj13 = { size: "lg", text: tmp32, onPress: onConfirm, grow: true, icon: tmp34 };
-      const tmp40 = hasOwnProperty(tmp(5188).Button, obj13);
+      const tmp40 = hasOwnProperty(tmp(5220).Button, obj13);
       cResult[16] = onConfirm;
       cResult[17] = tmp32;
       cResult[18] = tmp40;
       tmp38 = tmp40;
     }
     const obj14 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp17, children: tmp19 };
-    const tmp27 = hasOwnProperty(tmp(4754).Text, obj14);
+    const tmp27 = hasOwnProperty(tmp(4786).Text, obj14);
     cResult[9] = tmp4.title;
     cResult[10] = tmp19;
     cResult[11] = tmp27;
@@ -200,8 +200,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     if (subscriptionTrial != null) {
       skuId2 = subscriptionTrial.skuId;
     }
-    displayNameFromSku = tmp(4418).getDisplayNameFromSku(skuId2);
-    const tmpResult4 = tmp(4418);
+    displayNameFromSku = tmp(4450).getDisplayNameFromSku(skuId2);
+    const tmpResult4 = tmp(4450);
   }
   const formatToPlainStringResult1 = intl8.formatToPlainString(util.t.q8eMc0, { displayName: displayNameFromSku, duration: intervalDuration });
   cResult[6] = intervalDuration;
@@ -258,8 +258,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     if (subscriptionTrial != null) {
       skuId1 = subscriptionTrial.skuId;
     }
-    displayNameFromSku = tmp3(4418).getDisplayNameFromSku(skuId1);
-    const tmp3Result = tmp3(4418);
+    displayNameFromSku = tmp3(4450).getDisplayNameFromSku(skuId1);
+    const tmp3Result = tmp3(4450);
   }
   obj10.children = intl8.formatToPlainString(util.t.q8eMc0, { displayName: displayNameFromSku, duration: intervalDuration });
   items1[1] = hasOwnProperty(Text_Text.Text, obj10);

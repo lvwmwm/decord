@@ -1,20 +1,20 @@
-// Module ID: 13782
-// Function ID: 13783
+// Module ID: 13818
+// Function ID: 13819
 // Name: BoostingUnavailablePill
-// Dependencies: [17, 4432, 21, 4758, 580, 4725, 13783, 1984, 1119, 3166, 558, 568, 4754, 2]
+// Dependencies: [17, 4464, 21, 4790, 580, 4757, 13819, 1984, 1119, 3198, 558, 568, 4786, 2]
 
-// Module 13782 (BoostingUnavailablePill)
+// Module 13818 (BoostingUnavailablePill)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import _modDef3166 from "module_3166" /* 3166 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 4432 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import _modDef3198 from "module_3198" /* 3198 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 4464 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,8 +22,8 @@ function handlePress() {
   const obj2 = { aboutText: null };
   const obj = ActionSheetActionCreatorsDefault;
   const intl = util.intl;
-  const tmp = asyncRequireImpl(13783, dependencyMap.paths);
-  obj2.aboutText = intl.formatToPlainString(_modDef3166["5xN/C1"], { premiumGroupProductName: closure_5() });
+  const tmp = asyncRequireImpl(13819, dependencyMap.paths);
+  obj2.aboutText = intl.formatToPlainString(_modDef3198["5xN/C1"], { premiumGroupProductName: closure_5() });
   obj.openLazy(tmp, "PremiumGroupEducationActionSheet", obj2);
 }
 ({ TouchableOpacity: c3, View: closure_4 } = get_ActivityIndicator);
@@ -54,7 +54,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     }
     if (cResult[4] !== tmp4.pgUnavailableText) {
       const obj2 = { variant: "text-md/normal", color: "interactive-text-active", style: pgUnavailableText, children: tmp7 };
-      const tmp11 = jsx(tmp(4754).Text, { variant: "text-md/normal", color: "interactive-text-active", style: pgUnavailableText, children: tmp7 });
+      const tmp11 = jsx(tmp(4786).Text, { variant: "text-md/normal", color: "interactive-text-active", style: pgUnavailableText, children: tmp7 });
       cResult[4] = tmp4.pgUnavailableText;
       cResult[5] = tmp11;
       let tmp9 = tmp11;

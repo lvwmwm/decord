@@ -1,15 +1,15 @@
-// Module ID: 13323
-// Function ID: 13324
+// Module ID: 13359
+// Function ID: 13360
 // Name: AvatarPile
-// Dependencies: [19, 21, 558, 568, 13324, 12783, 11304, 11303, 9092, 2]
+// Dependencies: [19, 21, 558, 568, 13360, 12819, 11340, 11339, 9124, 2]
 
-// Module 13323 (AvatarPile)
+// Module 13359 (AvatarPile)
 import c from "c" /* 568 */;
-import ClipView from "ClipView" /* 9092 */;
-import Pile from "Pile" /* 11303 */;
-import PileOverflow from "PileOverflow" /* 11304 */;
-import ListUtils from "ListUtils" /* 12783 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 13324 */;
+import ClipView from "ClipView" /* 9124 */;
+import Pile from "Pile" /* 11339 */;
+import PileOverflow from "PileOverflow" /* 11340 */;
+import ListUtils from "ListUtils" /* 12819 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 13360 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -50,10 +50,10 @@ export const AvatarPile = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
             }
           }
         }
-        const obj2 = { "aria-label": tmp6, shape: tmp(9092).CutoutShape.Circle, size: tmp5, gap: num3, depthX: 0.4, children: null };
+        const obj2 = { "aria-label": tmp6, shape: tmp(9124).CutoutShape.Circle, size: tmp5, gap: num3, depthX: 0.4, children: null };
         const items = [children, tmp8];
         obj2.children = items;
-        const tmp14 = React4(tmp(11303).Pile, obj2);
+        const tmp14 = React4(tmp(11339).Pile, obj2);
         cResult[7] = tmp5;
         cResult[8] = children;
         cResult[9] = tmp6;
@@ -66,7 +66,7 @@ export const AvatarPile = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     let tmp10 = null != totalCount && countResult < totalCount;
     if (tmp10) {
       const obj3 = { size: tmp5, borderRadius: tmp5 / 2, value: totalCount - countResult };
-      tmp10 = React3(tmp(11304).PileOverflow, obj3);
+      tmp10 = React3(tmp(11340).PileOverflow, obj3);
     }
     cResult[3] = tmp5;
     cResult[4] = countResult;

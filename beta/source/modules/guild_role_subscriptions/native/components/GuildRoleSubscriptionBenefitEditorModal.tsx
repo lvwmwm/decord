@@ -1,35 +1,35 @@
-// Module ID: 18216
-// Function ID: 18217
+// Module ID: 18226
+// Function ID: 18227
 // Name: GuildRoleSubscriptionBenefitEditorModal
-// Dependencies: [5, 32, 19, 17, 4409, 1376, 18215, 15464, 1078, 21, 4758, 580, 5743, 558, 568, 14169, 4715, 1119, 1181, 5341, 1616, 18217, 4911, 8876, 18219, 10051, 18220, 2]
+// Dependencies: [5, 32, 19, 17, 4441, 1376, 18225, 15474, 1078, 21, 4790, 580, 5775, 558, 568, 14206, 4747, 1119, 1181, 5373, 1616, 18227, 4943, 8908, 18229, 10090, 18230, 2]
 
-// Module 18216 (GuildRoleSubscriptionBenefitEditorModal)
+// Module 18226 (GuildRoleSubscriptionBenefitEditorModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import TrashIcon from "TrashIcon" /* 4715 */;
-import useChannelName from "useChannelName" /* 4911 */;
-import Pressables from "Pressables" /* 5341 */;
-import FormStylesDefault from "FormStyles" /* 14169 */;
+import TrashIcon from "TrashIcon" /* 4747 */;
+import useChannelName from "useChannelName" /* 4943 */;
+import Pressables from "Pressables" /* 5373 */;
+import FormStylesDefault from "FormStyles" /* 14206 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import UserStore from "UserStore" /* 1376 */;
-import GuildRoleSubscriptionBenefitEditorModalStateStore from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 18215 */;
-import TextStyles from "TextStyles" /* 5743 */;
+import GuildRoleSubscriptionBenefitEditorModalStateStore from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 18225 */;
+import TextStyles from "TextStyles" /* 5775 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const GuildRoleSubscriptionsConstants = fn(15464);
+const GuildRoleSubscriptionsConstants = fn(15474);
 ({ GuildRoleSubscriptionBenefitTypes: c10, MAX_SUBSCRIPTION_BENEFIT_DESCRIPTION_LENGTH: closure_11, MAX_SUBSCRIPTION_BENEFIT_NAME_LENGTH: closure_12 } = GuildRoleSubscriptionsConstants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, display: "flex", flexDirection: "column", justifyContent: "space-between", height: "100%" }, scrollContainer: { flexGrow: 1 }, deleteButton: { flexDirection: "row", marginTop: 16, alignItems: "center", justifyContent: "center" }, deleteIcon: { width: 20, height: 20 }, deleteLabel: null };
 let obj4 = {};
 const merged = Object.assign(TextStyles(fn(1078).Fonts.PRIMARY_SEMIBOLD, nativeDefault.unsafe_rawColors.RED_400, 16));
@@ -49,7 +49,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDelete) => {
     }
     if (cResult[3] !== tmp4.deleteIcon) {
       const obj2 = { style: tmp4.deleteIcon, color: nativeDefault.unsafe_rawColors.RED_400, size: "custom" };
-      const tmp10 = __initData2(tmp(4715).TrashIcon, obj2);
+      const tmp10 = __initData2(tmp(4747).TrashIcon, obj2);
       cResult[3] = tmp4.deleteIcon;
       cResult[4] = tmp10;
       let tmp8 = tmp10;
@@ -87,7 +87,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDelete) => {
     const obj4 = { style: tmp7, accessibilityRole: "button", onPress: onDelete, children: null };
     const items = [tmp8, tmp14];
     obj4.children = items;
-    const tmp19 = state(tmp(5341).PressableOpacity, obj4);
+    const tmp19 = state(tmp(5373).PressableOpacity, obj4);
     cResult[8] = onDelete;
     cResult[9] = tmp7;
     cResult[10] = tmp8;
@@ -209,7 +209,7 @@ export default noop.forwardRef((benefitType) => {
     return arg1;
   };
   const tmp = closure_15();
-  const tmp4 = value(14169)();
+  const tmp4 = value(14206)();
   [value] = GuildRoleSubscriptionBenefitEditorModalStateStore.useNameState();
   dependencyMap = tmp6;
   [first1, _slicedToArray] = GuildRoleSubscriptionBenefitEditorModalStateStore.useEmojiIdState();
@@ -268,7 +268,7 @@ export default noop.forwardRef((benefitType) => {
               closure_2(useChannelName.computeChannelName(id, UserStore, RelationshipStore));
             }
       };
-      let tmp25 = closure_13(tmp2(18217), obj);
+      let tmp25 = closure_13(tmp2(18227), obj);
       let tmp26 = closure_13;
     } else {
       let obj2 = { style: tmp4.textInput, showTopContainer: false, multiline: false, maxLength: maxLength2, value, placeholder: null, onChange: null, autoFocus: true, clearButtonVisibility: null };
@@ -276,7 +276,7 @@ export default noop.forwardRef((benefitType) => {
       obj2.placeholder = intl9.string(tmp20(1119).t["kV54/Y"]);
       obj2.onChange = tmp6;
       obj2.clearButtonVisibility = tmp20(1181).ClearButtonVisibility.WITH_CONTENT;
-      tmp25 = closure_13(tmp20(8876).FormInput, obj2);
+      tmp25 = closure_13(tmp20(8908).FormInput, obj2);
       tmp26 = closure_13;
     }
     let obj3 = { style: tmp.container, children: null };
@@ -296,18 +296,18 @@ export default noop.forwardRef((benefitType) => {
         },
       listingId: benefitType.listingId
     };
-    const items = [tmp26(tmp2(18219), obj4), ];
+    const items = [tmp26(tmp2(18229), obj4), ];
     let obj5 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: null, children: null };
     const items1 = [tmp.scrollContainer, ];
     const obj6 = { paddingBottom: value(1616)().bottom + 32 + 16 };
     items1[1] = obj6;
     obj5.contentContainerStyle = items1;
     const obj7 = { style: tmp4.header, children: stringResult1 };
-    const items2 = [tmp26(tmp2(10051), obj7), tmp25, , , , , ];
+    const items2 = [tmp26(tmp2(10090), obj7), tmp25, , , , , ];
     const obj8 = { style: tmp4.header, children: null };
     const intl7 = tmp20(1119).intl;
     obj8.children = intl7.string(tmp20(1119).t.sMOuuS);
-    items2[2] = tmp26(tmp2(10051), obj8);
+    items2[2] = tmp26(tmp2(10090), obj8);
     const obj9 = { emoji: null, guildId: null, onChange: null };
     const obj10 = { emojiId: first1, emojiName: first2 };
     obj9.emoji = obj10;
@@ -316,16 +316,16 @@ export default noop.forwardRef((benefitType) => {
       closure_4(emojiId.emojiId);
       closure_6(emojiId.emojiName);
     };
-    items2[3] = tmp26(tmp2(18220), obj9);
+    items2[3] = tmp26(tmp2(18230), obj9);
     const obj11 = { style: tmp4.header, children: null };
     const tmp28 = first2;
     const tmp29 = closure_6;
-    const tmp2Result = tmp2(10051);
+    const tmp2Result = tmp2(10090);
     const intl8 = tmp20(1119).intl;
     obj11.children = intl8.string(tmp20(1119).t["74JctW"]);
-    items2[4] = tmp26(tmp2(10051), obj11);
+    items2[4] = tmp26(tmp2(10090), obj11);
     const obj12 = { style: tmp4.textInput, showTopContainer: false, multiline: true, maxLength, numberOfLines: 3, value: first3, onChange: tmp9[1], placeholder: stringResult2 };
-    items2[5] = tmp26(tmp20(8876).FormInput, obj12);
+    items2[5] = tmp26(tmp20(8908).FormInput, obj12);
     let tmp26Result = null;
     if (null != benefitType.onDelete) {
       const obj13 = {

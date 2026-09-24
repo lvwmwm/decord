@@ -1,21 +1,21 @@
-// Module ID: 10492
-// Function ID: 10493
+// Module ID: 10528
+// Function ID: 10529
 // Name: EmojiPickerListComponentEmpty
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 10493, 10497, 6863, 1119, 1181, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 10529, 10533, 6895, 1119, 1181, 2]
 
-// Module 10492 (EmojiPickerListComponentEmpty)
+// Module 10528 (EmojiPickerListComponentEmpty)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import SearchEmpty from "SearchEmpty" /* 10493 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 10497 */;
+import SearchEmpty from "SearchEmpty" /* 10529 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 10533 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ScrollView = fn(17).ScrollView;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { emptyStateContainer: { padding: 0, flex: 1 }, emptyStateBody: { color: nativeDefault.colors.TEXT_SUBTLE }, emptyStateImage: null };
 let obj3 = { color: nativeDefault.colors.TEXT_SUBTLE };
 obj.emptyStateImage = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
@@ -33,11 +33,11 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     if (cResult[1] === insetTop) {
       let tmp5 = cResult[2];
     }
-    const searchEmptySource = tmp(10493).useSearchEmptySource();
-    const tmpResult = tmp(10493);
-    const modalDismissGuardRefreshControl = tmp(10497).useModalDismissGuardRefreshControl();
+    const searchEmptySource = tmp(10529).useSearchEmptySource();
+    const tmpResult = tmp(10529);
+    const modalDismissGuardRefreshControl = tmp(10533).useModalDismissGuardRefreshControl();
     if (inActionSheet) {
-      let BottomSheetScrollView = tmp(6863).BottomSheetScrollView;
+      let BottomSheetScrollView = tmp(6895).BottomSheetScrollView;
     } else {
       BottomSheetScrollView = ScrollView;
     }
@@ -86,7 +86,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     cResult[7] = tmp4.emptyStateImage;
     cResult[8] = tmp14;
     tmp12 = tmp14;
-    const tmpResult2 = tmp(10497);
+    const tmpResult2 = tmp(10533);
   }
   const obj4 = { marginBottom: insetBottom, marginTop: insetTop, flex: 1 };
   cResult[0] = insetBottom;
@@ -102,7 +102,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   const searchEmptySource = SearchEmpty.useSearchEmptySource();
   const modalDismissGuardRefreshControl = useModalDismissGuardRefreshControl.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp3(6863).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp3(6895).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

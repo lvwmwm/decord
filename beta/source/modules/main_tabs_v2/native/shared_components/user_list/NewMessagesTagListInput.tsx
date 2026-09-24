@@ -1,14 +1,14 @@
-// Module ID: 12515
-// Function ID: 12516
+// Module ID: 12551
+// Function ID: 12552
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1376, 21, 4758, 580, 1368, 558, 568, 1374, 11165, 5341, 1119, 12516, 11458, 4754, 4472, 9821, 2]
+// Dependencies: [19, 17, 1376, 21, 4790, 580, 1368, 558, 568, 1374, 11201, 5373, 1119, 12552, 11494, 4786, 4504, 9853, 2]
 
-// Module 12515 (NewMessagesTagListInput)
+// Module 12551 (NewMessagesTagListInput)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4472 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 11165 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4504 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 11201 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { searchBarContainer: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, header: null, showSearchButton: null };
 let obj4 = { marginLeft: nativeDefault.space.PX_12, marginBottom: null };
 const PlatformUtils = fn(1368);
@@ -47,7 +47,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     }
     const mapped = items.map(UserStore.getUser);
     const found = mapped.filter(tmp(1374).isNotNullish);
-    const mapped1 = found.map(tags(11165));
+    const mapped1 = found.map(tags(11201));
     cResult[0] = selectedUserIds;
     cResult[1] = mapped1;
     tags = mapped1;
@@ -73,7 +73,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
           if (cResult[9] !== tmp4.header) {
             const obj2 = { style: tmp4.header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp16 };
             cResult[9] = tmp4.header;
-            cResult[10] = jsx(tmp(4754).Text, { style: tmp4.header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp16 });
+            cResult[10] = jsx(tmp(4786).Text, { style: tmp4.header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp16 });
             class F {
               constructor(arg0) {
                 tmp = closure_1[arg0];
@@ -92,7 +92,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
                 return;
               }
             }
-            const tmp20 = jsx(tmp(4754).Text, { style: tmp4.header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp16 });
+            const tmp20 = jsx(tmp(4786).Text, { style: tmp4.header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp16 });
           }
           if (cResult[11] === onSelectUser) {
             if (cResult[12] === tags) {
@@ -179,7 +179,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
             obj4.placeholder = tmp22;
             obj4.tags = tags;
             obj4.ref = tagListInputRef;
-            const tmp27 = jsx(tags(9821), { autoFocus, focusOnAdd: true, footer: null, icon: null, onChangeText: null, onFocus: null, onRemove: null, placeholder: null, tags: null, ref: null });
+            const tmp27 = jsx(tags(9853), { autoFocus, focusOnAdd: true, footer: null, icon: null, onChangeText: null, onFocus: null, onRemove: null, placeholder: null, tags: null, ref: null });
             cResult[15] = autoFocus;
             cResult[16] = onChangeText;
             cResult[17] = onFocus;
@@ -249,12 +249,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         }
       }
       if (forceSearchResults) {
-        let CirclePlusIcon = tmp(12516).ChevronLargeRightIcon;
+        let CirclePlusIcon = tmp(12552).ChevronLargeRightIcon;
       } else {
-        CirclePlusIcon = tmp(11458).CirclePlusIcon;
+        CirclePlusIcon = tmp(11494).CirclePlusIcon;
       }
       obj5.children = <CirclePlusIcon size="xs" />;
-      jsx(tmp(5341).PressableOpacity, { accessibilityRole: "button", accessibilityLabel: stringResult2, onPress: onForceSearchResults, style: null, children: null });
+      jsx(tmp(5373).PressableOpacity, { accessibilityRole: "button", accessibilityLabel: stringResult2, onPress: onForceSearchResults, style: null, children: null });
     }
   }
   cResult[2] = forceSearchResults;

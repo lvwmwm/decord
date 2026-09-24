@@ -1,13 +1,13 @@
-// Module ID: 6074
-// Function ID: 6075
+// Module ID: 6106
+// Function ID: 6107
 // Name: ChatEmojisSpotIllustration
-// Dependencies: [21, 558, 568, 6075, 5802, 2]
+// Dependencies: [21, 558, 568, 6107, 5834, 2]
 
-// Module 6074 (ChatEmojisSpotIllustration)
+// Module 6106 (ChatEmojisSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6075 from "module_6075" /* 6075 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6107 from "module_6107" /* 6107 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const ChatEmojisSpotIllustration = ReactCompilerGating.isReactCompilerEna
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6075 };
+    const obj2 = { uri: _modDef6107 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const ChatEmojisSpotIllustration = ReactCompilerGating.isReactCompilerEna
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6075 };
+  const obj2 = { uri: _modDef6107 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

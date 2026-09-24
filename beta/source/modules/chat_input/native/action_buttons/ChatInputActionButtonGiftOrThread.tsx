@@ -1,16 +1,16 @@
-// Module ID: 12392
-// Function ID: 12393
+// Module ID: 12428
+// Function ID: 12429
 // Name: ChatInputActionButtonGiftOrThread
-// Dependencies: [19, 17, 12092, 21, 4758, 12393, 12385, 1119, 12383, 12395, 558, 568, 4462, 580, 4471, 2]
+// Dependencies: [19, 17, 12128, 21, 4790, 12429, 12421, 1119, 12419, 12431, 558, 568, 4494, 580, 4503, 2]
 
-// Module 12392 (ChatInputActionButtonGiftOrThread)
+// Module 12428 (ChatInputActionButtonGiftOrThread)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12393 */;
+import useToken from "useToken" /* 4494 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12429 */;
 import noop from "module_19" /* 19 */;
 
-const native = tmp(4471);
+const native = tmp(4503);
 require = fn;
 function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, cleanup) {
   ({ accessible, onPress } = styleButton);
@@ -22,16 +22,16 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
     const intl = onPress(1119).intl;
     obj2.accessibilityLabel = intl.string(onPress(1119).t["4WNcpu"]);
     obj2.disabled = !canStartThreads;
-    obj2.IconComponent = onPress(12383).ThreadPlusIcon;
+    obj2.IconComponent = onPress(12419).ThreadPlusIcon;
     obj2.onPress = function onPress(arg0) {
       return onPress(arg0, ChatInputActionType.THREAD);
     };
     obj2.style = styleButton;
-    let tmpResult = tmp(tmp2(12385), obj2);
-    const tmp2Result = tmp2(12385);
+    let tmpResult = tmp(tmp2(12421), obj2);
+    const tmp2Result = tmp2(12421);
   } else {
     const obj3 = { accessible, channel, onPress, style: styleButtonWrapper, styleButton };
-    tmpResult = tmp(tmp2(12395), obj3);
+    tmpResult = tmp(tmp2(12431), obj3);
   }
   obj.children = tmpResult;
   return jsx(ChatInputActionButtonTransitionItemDefault, { cleanup, state, children: null }, arg0);
@@ -44,9 +44,9 @@ function getChatInputActionButtonGiftAndThreadKey(shouldShowThread) {
   return str;
 }
 const View = fn(17).View;
-const ChatInputActionType = fn(12092).ChatInputActionType;
+const ChatInputActionType = fn(12128).ChatInputActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_7 = createStyles.createStyles((height, arg1) => {
   const obj = { container: null };
   const size = { width: height + 2 * arg1, height };

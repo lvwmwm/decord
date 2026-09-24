@@ -1,16 +1,16 @@
-// Module ID: 8161
-// Function ID: 8162
+// Module ID: 8193
+// Function ID: 8194
 // Name: ConversationNavigator
-// Dependencies: [19, 21, 8162, 558, 568, 7246, 8172, 580, 8187, 8189, 13557, 4617, 2]
+// Dependencies: [19, 21, 8194, 558, 568, 7278, 8204, 580, 8219, 8221, 13593, 4649, 2]
 // Exports: openConversationNavigator
 
-// Module 8161 (ConversationNavigator)
+// Module 8193 (ConversationNavigator)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import RootNavigationRef from "RootNavigationRef" /* 4617 */;
-import Navigator from "Navigator" /* 7246 */;
-import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 8172 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 8189 */;
+import RootNavigationRef from "RootNavigationRef" /* 4649 */;
+import Navigator from "Navigator" /* 7278 */;
+import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 8204 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 8221 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const NativeStackNavigator = fn(8162);
+const NativeStackNavigator = fn(8194);
 let closure_5 = NativeStackNavigator.createNativeStackNavigator();
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -50,7 +50,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
       tmp8 = cResult[4];
     }
     if (cResult[5] !== tmp5) {
-      const obj3 = { initialParams: tmp5, name: tmp(8189).ConversationNavigatorScreens.LIST, options: tmp7, getComponent: tmp8 };
+      const obj3 = { initialParams: tmp5, name: tmp(8221).ConversationNavigatorScreens.LIST, options: tmp7, getComponent: tmp8 };
       const tmp12 = React3(closure_5.Screen, obj3);
       cResult[5] = tmp5;
       cResult[6] = tmp12;
@@ -61,7 +61,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
     const _Symbol2 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = {
-        name: tmp(8189).ConversationNavigatorScreens.FOCUS,
+        name: tmp(8221).ConversationNavigatorScreens.FOCUS,
         options(arg0) {
               ({ route, navigation } = arg0);
               return ConversationNavigatorHeader.conversationNavigatorFocusHeaderOptions(route, navigation, nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);

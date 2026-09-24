@@ -1,15 +1,15 @@
-// Module ID: 11050
-// Function ID: 11051
+// Module ID: 11086
+// Function ID: 11087
 // Name: MarketingComponentHooks
-// Dependencies: [4750, 558, 568, 4693, 504, 4469, 2]
+// Dependencies: [4782, 558, 568, 4725, 504, 4501, 2]
 
-// Module 11050 (MarketingComponentHooks)
+// Module 11086 (MarketingComponentHooks)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
-const themes = tmp3(4469);
+const themes = tmp3(4501);
 require = fn;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -34,7 +34,7 @@ export const useThemeAndReducedMotionAwareAssetUrl = ReactCompilerGating.isReact
   if (null == lightStaticUrl) {
     return null;
   } else {
-    const tmpResult2 = tmp(4469);
+    const tmpResult2 = tmp(4501);
   }
 }) : ((lightStaticUrl, arg1) => {
   const tmp2 = useThemeDefault();

@@ -1,10 +1,10 @@
-// Module ID: 16999
-// Function ID: 17000
+// Module ID: 17009
+// Function ID: 17010
 // Name: useVibegrationsConnectActions
-// Dependencies: [5, 32, 19, 13364, 558, 568, 13371, 8646, 1119, 3682, 2]
+// Dependencies: [5, 32, 19, 13400, 558, 568, 13407, 8678, 1119, 3714, 2]
 
-// Module 16999 (useVibegrationsConnectActions)
-import vibegrationsExternalConnections from "vibegrationsExternalConnections" /* 13371 */;
+// Module 17009 (useVibegrationsConnectActions)
+import vibegrationsExternalConnections from "vibegrationsExternalConnections" /* 13407 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -12,7 +12,7 @@ import noop from "module_19" /* 19 */;
 const require = globalThis.__r;
 
 require = fn;
-let closure_6 = fn(13364).requestExternalAuthorizeUrl;
+let closure_6 = fn(13400).requestExternalAuthorizeUrl;
 const set = new Set();
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -53,7 +53,7 @@ export const useVibegrationsConnectActions = ReactCompilerGating.isReactCompiler
   }
   const fn2 = function z(type) {
     if (null != type) {
-      const result = type(13371).beginExternalAuthorization(ref.current, type.type);
+      const result = type(13407).beginExternalAuthorization(ref.current, type.type);
       if (null != result) {
         tmp7.current = result;
         dependencyMap(result);
@@ -100,19 +100,19 @@ export const useVibegrationsConnectActions = ReactCompilerGating.isReactCompiler
                 first(tmp2.type);
                 if ("url" === closure_128_0.type) {
                   const obj7 = { href: closure_128_0.url, trusted: false };
-                  tmp2(8646).handleClick(obj7);
+                  tmp2(8678).handleClick(obj7);
                   c3 = 3;
-                  const obj = tmp2(8646);
+                  const obj = tmp2(8678);
                 }
                 if ("setup" === obj3.externalAuthErrorCopy(closure_128_0.error)) {
                   const intl2 = tmp2(1119).intl;
-                  let stringResult = intl2.string(tmp5(3682).avu1u4);
+                  let stringResult = intl2.string(tmp5(3714).avu1u4);
                 } else {
                   const intl = tmp2(1119).intl;
-                  stringResult = intl.string(tmp5(3682)["5fwOcF"]);
+                  stringResult = intl.string(tmp5(3714)["5fwOcF"]);
                 }
                 closure_2_1(stringResult);
-                obj3 = tmp2(13371);
+                obj3 = tmp2(13407);
               }
             } catch (tmp33) {
               c3 = tmp;
@@ -141,7 +141,7 @@ export const useVibegrationsConnectActions = ReactCompilerGating.isReactCompiler
           return applyArgumentsResult;
         })();
       }
-      let obj = type(13371);
+      let obj = type(13407);
       tmp7 = ref;
     }
   };
@@ -208,19 +208,19 @@ export const useVibegrationsConnectActions = ReactCompilerGating.isReactCompiler
               callback(closure_129_0.type);
               if ("url" === closure_128_0.type) {
                 const obj7 = { href: closure_128_0.url, trusted: false };
-                type(8646).handleClick(obj7);
+                type(8678).handleClick(obj7);
                 c3 = 3;
-                const obj = type(8646);
+                const obj = type(8678);
               }
               if ("setup" === obj3.externalAuthErrorCopy(closure_128_0.error)) {
                 const intl2 = type(1119).intl;
-                let stringResult = intl2.string(closure_2_1(3682).avu1u4);
+                let stringResult = intl2.string(closure_2_1(3714).avu1u4);
               } else {
                 const intl = type(1119).intl;
-                stringResult = intl.string(closure_2_1(3682)["5fwOcF"]);
+                stringResult = intl.string(closure_2_1(3714)["5fwOcF"]);
               }
               closure_1(stringResult);
-              obj3 = type(13371);
+              obj3 = type(13407);
             }
           } catch (tmp33) {
             c3 = tmp;
@@ -229,7 +229,7 @@ export const useVibegrationsConnectActions = ReactCompilerGating.isReactCompiler
         }
       };
       if (null != type) {
-        const result = type(13371).beginExternalAuthorization(ref.current, type.type);
+        const result = type(13407).beginExternalAuthorization(ref.current, type.type);
         if (null != result) {
           tmp3.current = result;
           dependencyMap(result);
@@ -254,7 +254,7 @@ export const useVibegrationsConnectActions = ReactCompilerGating.isReactCompiler
             return applyArgumentsResult;
           })();
         }
-        let obj = type(13371);
+        let obj = type(13407);
         tmp3 = ref;
       }
     }, items)

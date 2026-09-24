@@ -1,8 +1,8 @@
-// Module ID: 6781
-// Function ID: 6782
+// Module ID: 6813
+// Function ID: 6814
 // Dependencies: [2]
 
-// Module 6781
+// Module 6813
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TentSpotIllustration-2x.png.js");

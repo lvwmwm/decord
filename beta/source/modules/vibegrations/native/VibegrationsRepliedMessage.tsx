@@ -1,16 +1,16 @@
-// Module ID: 17026
-// Function ID: 17027
+// Module ID: 17036
+// Function ID: 17037
 // Name: VibegrationsRepliedMessage
-// Dependencies: [19, 17, 21, 17024, 4758, 580, 558, 568, 17027, 4603, 16940, 1119, 3682, 1181, 4754, 17031, 2]
+// Dependencies: [19, 17, 21, 17034, 4790, 580, 558, 568, 17037, 4635, 16950, 1119, 3714, 1181, 4786, 17041, 2]
 
-// Module 17026 (VibegrationsRepliedMessage)
+// Module 17036 (VibegrationsRepliedMessage)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import _modDef3682 from "module_3682" /* 3682 */;
-import UserUtils from "UserUtils" /* 4603 */;
-import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16940 */;
-import VibegrationsMessageAuthor from "VibegrationsMessageAuthor" /* 17027 */;
-import VibegrationsSelectedMentionDefault from "VibegrationsSelectedMention" /* 17031 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import UserUtils from "UserUtils" /* 4635 */;
+import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16950 */;
+import VibegrationsMessageAuthor from "VibegrationsMessageAuthor" /* 17037 */;
+import VibegrationsSelectedMentionDefault from "VibegrationsSelectedMention" /* 17041 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,10 +18,10 @@ get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const diff = fn(17024).MESSAGE_EDGE_INSET + fn(17024).MESSAGE_AVATAR_SIZE / 2 - 1;
-const diff1 = fn(17024).MESSAGE_CONTENT_INSET - 4 - diff;
-const createStyles = fn(4758);
-let obj2 = { root: { marginLeft: diff - fn(17024).MESSAGE_CONTENT_INSET, paddingLeft: diff1 + 4, height: 20, flexDirection: "row", alignItems: "flex-start" }, spine: null, avatar: null, name: null, content: null };
+const diff = fn(17034).MESSAGE_EDGE_INSET + fn(17034).MESSAGE_AVATAR_SIZE / 2 - 1;
+const diff1 = fn(17034).MESSAGE_CONTENT_INSET - 4 - diff;
+const createStyles = fn(4790);
+let obj2 = { root: { marginLeft: diff - fn(17034).MESSAGE_CONTENT_INSET, paddingLeft: diff1 + 4, height: 20, flexDirection: "row", alignItems: "flex-start" }, spine: null, avatar: null, name: null, content: null };
 const rect = { position: "absolute", left: 0, top: 9, bottom: 0, width: diff1, borderTopWidth: 2, borderLeftWidth: 2, borderColor: nativeDefault.colors.SPINE_DEFAULT, borderTopLeftRadius: Math.round(0.25 * diff1) };
 obj2.spine = rect;
 obj2.avatar = { marginRight: 4 };
@@ -29,7 +29,7 @@ obj2.name = { flexShrink: 0, marginRight: 4, maxWidth: "40%" };
 obj2.content = { flex: 1 };
 let closure_8 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
-let obj3 = { marginLeft: diff - fn(17024).MESSAGE_CONTENT_INSET, paddingLeft: diff1 + 4, height: 20, flexDirection: "row", alignItems: "flex-start" };
+let obj3 = { marginLeft: diff - fn(17034).MESSAGE_CONTENT_INSET, paddingLeft: diff1 + 4, height: 20, flexDirection: "row", alignItems: "flex-start" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsRepliedMessage.tsx");
 
@@ -43,11 +43,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     str = "";
   }
   if (cResult[0] !== replied.content) {
-    const result = tmp(16940).parseVibegrationsDesignRemark(replied.content);
+    const result = tmp(16950).parseVibegrationsDesignRemark(replied.content);
     cResult[0] = replied.content;
     cResult[1] = result;
     let tmp6 = result;
-    const tmpResult = tmp(16940);
+    const tmpResult = tmp(16950);
   } else {
     tmp6 = cResult[1];
   }
@@ -157,7 +157,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               const obj7 = { variant: "text-xs/medium", color: "interactive-text-default", style: tmp4.content, lineClamp: 1, children: null };
               const items1 = [tmp29, str4, tmp10];
               obj7.children = items1;
-              const tmp35 = React5(tmp(4754).Text, obj7);
+              const tmp35 = React5(tmp(4786).Text, obj7);
               cResult[24] = tmp10;
               cResult[25] = tmp4.content;
               cResult[26] = tmp29;
@@ -166,7 +166,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               tmp33 = tmp35;
             }
             const obj8 = { variant: "text-xs/semibold", color: "text-default", style: tmp4.name, lineClamp: 1, children: str };
-            const tmp28 = timestampProducer(tmp(4754).Text, obj8);
+            const tmp28 = timestampProducer(tmp(4786).Text, obj8);
             cResult[19] = str;
             cResult[20] = tmp4.name;
             cResult[21] = tmp28;
@@ -177,7 +177,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (null != messageAuthorUser) {
           const obj9 = { style: tmp4.avatar, children: null };
           const obj10 = { userId: replied.userId, size: tmp(1181).AvatarSizes.SIZE_16 };
-          obj9.children = timestampProducer(tmp(17027).VibegrationsUserAvatar, obj10);
+          obj9.children = timestampProducer(tmp(17037).VibegrationsUserAvatar, obj10);
           tmp23 = timestampProducer(hasOwnProperty, obj9);
         }
         cResult[15] = replied.userId;
@@ -191,7 +191,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const trimmed = body.replace(/\s+/g, " ").trim();
   const root = tmp4.root;
   const intl = tmp(1119).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(_modDef3682.loFt7s, { name: str, content: trimmed });
+  const formatToPlainStringResult = intl.formatToPlainString(_modDef3714.loFt7s, { name: str, content: trimmed });
   cResult[2] = str;
   cResult[3] = onJump;
   cResult[4] = tmp4.root;
@@ -214,9 +214,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   replied = replied.replied;
   const onJump = replied.onJump;
   const tmp = closure_8();
-  const messageAuthorUser = replied(17027).useMessageAuthorUser(replied.userId);
-  const obj = replied(17027);
-  let str = replied(4603).useName(messageAuthorUser);
+  const messageAuthorUser = replied(17037).useMessageAuthorUser(replied.userId);
+  const obj = replied(17037);
+  let str = replied(4635).useName(messageAuthorUser);
   if (str == null) {
     str = "";
   }
@@ -229,21 +229,21 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (body == null) {
     body = replied.content;
   }
-  const obj2 = replied(4603);
+  const obj2 = replied(4635);
   const trimmed = body.replace(/\s+/g, " ").trim();
   const obj3 = { style: tmp.root, onPress: onJump, disabled: null == onJump, accessibilityRole: "button", accessibilityLabel: null, children: null };
   const intl = tmp2(1119).intl;
-  obj3.accessibilityLabel = intl.formatToPlainString(_modDef3682.loFt7s, { name: str, content: trimmed });
+  obj3.accessibilityLabel = intl.formatToPlainString(_modDef3714.loFt7s, { name: str, content: trimmed });
   const items1 = [closure_6(closure_5, { style: tmp.spine }), , , ];
   let tmp11Result = null;
   if (null != messageAuthorUser) {
     const obj5 = { style: tmp.avatar, children: null };
     const obj6 = { userId: replied.userId, size: tmp2(1181).AvatarSizes.SIZE_16 };
-    obj5.children = tmp11(tmp2(17027).VibegrationsUserAvatar, obj6);
+    obj5.children = tmp11(tmp2(17037).VibegrationsUserAvatar, obj6);
     tmp11Result = tmp11(closure_5, obj5);
   }
   items1[1] = tmp11Result;
-  items1[2] = closure_6(replied(4754).Text, { variant: "text-xs/semibold", color: "text-default", style: tmp.name, lineClamp: 1, children: str });
+  items1[2] = closure_6(replied(4786).Text, { variant: "text-xs/semibold", color: "text-default", style: tmp.name, lineClamp: 1, children: str });
   const obj8 = { variant: "text-xs/medium", color: "interactive-text-default", style: tmp.content, lineClamp: 1, children: null };
   let tmp11Result2 = null;
   if (null != memo) {
@@ -261,7 +261,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items2[1] = str3;
   items2[2] = trimmed;
   obj8.children = items2;
-  items1[3] = closure_7(replied(4754).Text, obj8);
+  items1[3] = closure_7(replied(4786).Text, obj8);
   obj3.children = items1;
   return closure_7(closure_4, obj3);
 });

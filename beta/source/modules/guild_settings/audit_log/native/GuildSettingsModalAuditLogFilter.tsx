@@ -1,24 +1,24 @@
-// Module ID: 17984
-// Function ID: 17985
+// Module ID: 17994
+// Function ID: 17995
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1376, 17980, 1078, 21, 4758, 580, 1119, 4603, 17982, 558, 568, 4479, 5904, 11248, 1616, 1488, 5736, 17985, 1181, 10283, 17986, 5900, 7297, 8506, 8995, 7286, 2]
+// Dependencies: [32, 19, 17, 1376, 17990, 1078, 21, 4790, 580, 1119, 4635, 17992, 558, 568, 4511, 5936, 11284, 1616, 1488, 5768, 17995, 1181, 10322, 17996, 5932, 7329, 8538, 9027, 7318, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData
 
-// Module 17984 (GuildSettingsModalAuditLogFilter)
+// Module 17994 (GuildSettingsModalAuditLogFilter)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4479 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5736 */;
-import FormRadio from "FormRadio" /* 5904 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11248 */;
-import AuditLogUtils from "AuditLogUtils" /* 17982 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 17985 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4511 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5768 */;
+import FormRadio from "FormRadio" /* 5936 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11284 */;
+import AuditLogUtils from "AuditLogUtils" /* 17992 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 17995 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17980 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17990 */;
 
 const require = globalThis.__r;
 
@@ -27,7 +27,7 @@ const View = fn(17).View;
 const AuditLogFilterTypes = fn(1078).AuditLogFilterTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { searchBar: { paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_16 }, allUsersIconContainer: { height: 30, width: 30, alignItems: "center" } };
 let closure_12 = createStyles.createStyles(obj);
 let ReactCompilerGating = fn(558);
@@ -46,7 +46,7 @@ let closure_13 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   if (cResult[2] !== selected) {
     const obj3 = { selected };
-    const tmp8 = options(tmp(5904).FormRadio, obj3);
+    const tmp8 = options(tmp(5936).FormRadio, obj3);
     cResult[2] = selected;
     cResult[3] = tmp8;
     let tmp6 = tmp8;
@@ -302,7 +302,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                               return tmp4(filterType(tmp6[24]).TableRadioRow, obj8);
                             }
                           }
-                          const tmp26 = closure_9(tmp(7297).SearchField, obj5);
+                          const tmp26 = closure_9(tmp(7329).SearchField, obj5);
                           cResult[25] = tmp20;
                           cResult[26] = tmp26;
                           let tmp24 = tmp26;

@@ -1,12 +1,12 @@
-// Module ID: 9958
-// Function ID: 9959
+// Module ID: 9990
+// Function ID: 9991
 // Name: SecureFramesDeeplinkExperiment
-// Dependencies: [4673, 558, 568, 2]
+// Dependencies: [4705, 558, 568, 2]
 // Exports: getSecureFramesDeeplinkExperiment
 
-// Module 9958 (SecureFramesDeeplinkExperiment)
+// Module 9990 (SecureFramesDeeplinkExperiment)
 import c from "c" /* 568 */;
-import createExperimentDefault from "createExperiment" /* 4673 */;
+import createExperimentDefault from "createExperiment" /* 4705 */;
 
 require = fn;
 const obj = { kind: "user", id: "2024-09_secure_frames_deeplink", label: "Secure Frames Deeplinks", defaultConfig: { enabled: false }, treatments: null };

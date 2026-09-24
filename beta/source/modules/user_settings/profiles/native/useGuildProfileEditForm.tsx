@@ -1,16 +1,16 @@
-// Module ID: 14911
-// Function ID: 14912
+// Module ID: 14949
+// Function ID: 14950
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 8434, 7862, 2067, 5657, 1376, 1078, 558, 568, 504, 12002, 2040, 577, 10004, 14912, 11385, 7234, 14870, 8441, 4659, 1119, 2]
+// Dependencies: [109, 5, 19, 8466, 7894, 2067, 5689, 1376, 1078, 558, 568, 504, 12038, 2040, 577, 10036, 14950, 11421, 7266, 14908, 8473, 4691, 1119, 2]
 
-// Module 14911 (useGuildProfileEditForm)
+// Module 14949 (useGuildProfileEditForm)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8434 */;
-import UserProfileStore from "UserProfileStore" /* 7862 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8466 */;
+import UserProfileStore from "UserProfileStore" /* 7894 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import SortedGuildStore from "SortedGuildStore" /* 5657 */;
+import SortedGuildStore from "SortedGuildStore" /* 5689 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 const require = fn;
 let closure_3 = ["bannerOriginalMd5"];
 let closure_4 = ["bannerOriginalMd5"];
-const IGNORE_GUILD_IDS = fn(8434).IGNORE_GUILD_IDS;
+const IGNORE_GUILD_IDS = fn(8466).IGNORE_GUILD_IDS;
 let FormStates = fn(1078).FormStates;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -513,7 +513,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const merged1 = Object.assign(stateFromStoresObject.errors);
   memo = selectedGuild.useMemo(() => {
     const delayedCall = new stateFromStores(pendingNickname[13]).DelayedCall(200, () => {
-      pendingAvatar(577).wait(stateFromStores(10004).resetAllPending);
+      pendingAvatar(577).wait(stateFromStores(10036).resetAllPending);
     });
     return delayedCall;
   }, []);

@@ -1,12 +1,12 @@
-// Module ID: 10005
-// Function ID: 10006
+// Module ID: 10044
+// Function ID: 10045
 // Name: useGetJoinRequestGuild
-// Dependencies: [19, 4581, 558, 568, 504, 5760, 2]
+// Dependencies: [19, 4613, 558, 568, 504, 5792, 2]
 
-// Module 10005 (useGetJoinRequestGuild)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5760 */;
+// Module 10044 (useGetJoinRequestGuild)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5792 */;
 import noop from "module_19" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4581 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4613 */;
 
 const require = globalThis.__r;
 

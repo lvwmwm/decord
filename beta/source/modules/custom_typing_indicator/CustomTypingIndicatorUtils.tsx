@@ -1,18 +1,18 @@
-// Module ID: 12103
-// Function ID: 12104
+// Module ID: 12139
+// Function ID: 12140
 // Name: CustomTypingIndicatorUtils
-// Dependencies: [5678, 8434, 2045, 5657, 1376, 1078, 1379, 1384, 3684, 4413, 4417, 1397, 1090, 4404, 558, 568, 504, 2]
+// Dependencies: [5710, 8466, 2045, 5689, 1376, 1078, 1379, 1384, 3716, 4445, 4449, 1397, 1090, 4436, 558, 568, 504, 2]
 // Exports: getCustomTypingIndicatorSuggestionMessage, getCustomTypingIndicatorSuggestionPresets, getCustomTypingIndicatorSuggestionWithNameMessage, getRandomCustomTypingIndicatorAnimation, getRandomCustomTypingIndicatorSuggestion, getSurpriseMeEmojiPool, getViewableCustomTypingIndicatorConfig, pickRandomCustomTypingIndicatorEmojis
 
-// Module 12103 (CustomTypingIndicatorUtils)
+// Module 12139 (CustomTypingIndicatorUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
 import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1397 */;
-import _modDef3684 from "module_3684" /* 3684 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4413 */;
-import EmojiStore from "EmojiStore" /* 5678 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8434 */;
+import _modDef3716 from "module_3716" /* 3716 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4445 */;
+import EmojiStore from "EmojiStore" /* 5710 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8466 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import SortedGuildStore from "SortedGuildStore" /* 5657 */;
+import SortedGuildStore from "SortedGuildStore" /* 5689 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
@@ -21,23 +21,23 @@ require = fn;
 const Permissions = fn(1078).Permissions;
 const EmojiIntention = fn(1379).EmojiIntention;
 let obj = {};
-obj[fn(1384).TypingSuggestion.UNSPECIFIED] = _modDef3684["6Cdy4a"];
-obj[fn(1384).TypingSuggestion.YAPPING] = _modDef3684.E5VRaj;
-obj[fn(1384).TypingSuggestion.VENTING] = _modDef3684.xmxdPC;
-obj[fn(1384).TypingSuggestion.OVERSHARING] = _modDef3684["qGaH/9"];
-obj[fn(1384).TypingSuggestion.BARKING] = _modDef3684.M282uk;
-obj[fn(1384).TypingSuggestion.BABBLING] = _modDef3684.myNZDT;
-obj[fn(1384).TypingSuggestion.DAYDREAMING] = _modDef3684.F7RLTP;
-obj[fn(1384).TypingSuggestion.MEOWING] = _modDef3684.EfxyQI;
+obj[fn(1384).TypingSuggestion.UNSPECIFIED] = _modDef3716["6Cdy4a"];
+obj[fn(1384).TypingSuggestion.YAPPING] = _modDef3716.E5VRaj;
+obj[fn(1384).TypingSuggestion.VENTING] = _modDef3716.xmxdPC;
+obj[fn(1384).TypingSuggestion.OVERSHARING] = _modDef3716["qGaH/9"];
+obj[fn(1384).TypingSuggestion.BARKING] = _modDef3716.M282uk;
+obj[fn(1384).TypingSuggestion.BABBLING] = _modDef3716.myNZDT;
+obj[fn(1384).TypingSuggestion.DAYDREAMING] = _modDef3716.F7RLTP;
+obj[fn(1384).TypingSuggestion.MEOWING] = _modDef3716.EfxyQI;
 let obj2 = {};
-obj2[fn(1384).TypingSuggestion.UNSPECIFIED] = _modDef3684.kh4K4F;
-obj2[fn(1384).TypingSuggestion.YAPPING] = _modDef3684.m9AeqG;
-obj2[fn(1384).TypingSuggestion.VENTING] = _modDef3684["SZ0/Qu"];
-obj2[fn(1384).TypingSuggestion.OVERSHARING] = _modDef3684.N8cWE8;
-obj2[fn(1384).TypingSuggestion.BARKING] = _modDef3684.L5aWEN;
-obj2[fn(1384).TypingSuggestion.BABBLING] = _modDef3684.AoBaEw;
-obj2[fn(1384).TypingSuggestion.DAYDREAMING] = _modDef3684["3hOLod"];
-obj2[fn(1384).TypingSuggestion.MEOWING] = _modDef3684["0Z9/o9"];
+obj2[fn(1384).TypingSuggestion.UNSPECIFIED] = _modDef3716.kh4K4F;
+obj2[fn(1384).TypingSuggestion.YAPPING] = _modDef3716.m9AeqG;
+obj2[fn(1384).TypingSuggestion.VENTING] = _modDef3716["SZ0/Qu"];
+obj2[fn(1384).TypingSuggestion.OVERSHARING] = _modDef3716.N8cWE8;
+obj2[fn(1384).TypingSuggestion.BARKING] = _modDef3716.L5aWEN;
+obj2[fn(1384).TypingSuggestion.BABBLING] = _modDef3716.AoBaEw;
+obj2[fn(1384).TypingSuggestion.DAYDREAMING] = _modDef3716["3hOLod"];
+obj2[fn(1384).TypingSuggestion.MEOWING] = _modDef3716["0Z9/o9"];
 let items = [fn(1384).TypingSuggestion.UNSPECIFIED, fn(1384).TypingSuggestion.YAPPING, fn(1384).TypingSuggestion.VENTING, fn(1384).TypingSuggestion.OVERSHARING, fn(1384).TypingSuggestion.BARKING, fn(1384).TypingSuggestion.BABBLING, fn(1384).TypingSuggestion.DAYDREAMING, fn(1384).TypingSuggestion.MEOWING];
 let items1 = [fn(1384).TypingIndicatorAnimation.PULSE, fn(1384).TypingIndicatorAnimation.RING, fn(1384).TypingIndicatorAnimation.WAVE];
 const ReactCompilerGating = fn(558);

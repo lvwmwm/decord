@@ -1,33 +1,33 @@
-// Module ID: 10331
-// Function ID: 10332
+// Module ID: 10370
+// Function ID: 10371
 // Name: ChatView
-// Dependencies: [19, 17, 5496, 2049, 2045, 4978, 1078, 21, 4758, 580, 558, 568, 4625, 504, 1119, 4968, 7573, 10332, 5813, 10333, 7722, 7558, 10335, 7357, 10340, 10354, 11556, 12088, 12631, 1368, 12801, 12802, 12414, 12806, 12809, 9, 10469, 12812, 1181, 12814, 12816, 12817, 12911, 12925, 5343, 12087, 2]
+// Dependencies: [19, 17, 5528, 2049, 2045, 5010, 1078, 21, 4790, 580, 558, 568, 4657, 504, 1119, 5000, 7605, 10371, 5845, 10372, 7754, 7590, 10374, 7389, 10379, 10393, 11592, 12124, 12667, 1368, 12837, 12838, 12450, 12842, 12845, 9, 10508, 12848, 1181, 12850, 12852, 12853, 12947, 12961, 5375, 12123, 2]
 
-// Module 10331 (ChatView)
+// Module 10370 (ChatView)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import ChatInputUtils from "ChatInputUtils" /* 4625 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7558 */;
-import SummaryActionCreators from "SummaryActionCreators" /* 10335 */;
-import ChatViewWrapperDefault from "ChatViewWrapper" /* 10340 */;
-import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 10354 */;
-import MessagesDefault from "Messages" /* 11556 */;
-import ChatInputDefault from "ChatInput" /* 12088 */;
-import ChatBeginningRowDefault from "ChatBeginningRow" /* 12631 */;
-import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 12806 */;
-import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 12809 */;
+import ChatInputUtils from "ChatInputUtils" /* 4657 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7590 */;
+import SummaryActionCreators from "SummaryActionCreators" /* 10374 */;
+import ChatViewWrapperDefault from "ChatViewWrapper" /* 10379 */;
+import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 10393 */;
+import MessagesDefault from "Messages" /* 11592 */;
+import ChatInputDefault from "ChatInput" /* 12124 */;
+import ChatBeginningRowDefault from "ChatBeginningRow" /* 12667 */;
+import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 12842 */;
+import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 12845 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5528 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import MessageStore from "MessageStore" /* 4978 */;
+import MessageStore from "MessageStore" /* 5010 */;
 
 require = fn;
 const createChannelRecord = fn(2049).createChannelRecord;
 const ChannelTypes = fn(1078).ChannelTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { empty: { flex: 1, borderTopWidth: fn(17).StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.BORDER_SUBTLE }, messages: { flex: 1, overflow: "hidden" }, chat: null };
 let obj3 = { flex: 1, borderTopWidth: fn(17).StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
 obj.chat = { backgroundColor: nativeDefault.colors.CHANNEL_BACKGROUND_DEFAULT, justifyContent: "flex-start", overflow: "hidden", flex: 1 };
@@ -685,20 +685,20 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((chatIn
       let tmp7Result = null;
       if (!obj6.isAndroid()) {
         const obj7 = { channelId: tmp8.id, messagesRef: tmp11 };
-        tmp7Result = tmp7(tmp3(12801), obj7);
+        tmp7Result = tmp7(tmp3(12837), obj7);
       }
       items1[1] = tmp7Result;
       let tmp7Result3 = null;
       if (c15) {
         const obj8 = { screenIndex: tmp10 };
-        tmp7Result3 = tmp7(tmp3(12802), obj8);
+        tmp7Result3 = tmp7(tmp3(12838), obj8);
       }
       items1[2] = tmp7Result3;
       obj6 = PlatformUtils;
       let tmp7Result4 = null;
       if (tmp14Result.isAndroid()) {
         const obj9 = { channelId: tmp6, screenIndex: tmp10, onJumpToPresent: tmp12 };
-        tmp7Result4 = tmp7(tmp3(12414), obj9);
+        tmp7Result4 = tmp7(tmp3(12450), obj9);
       }
       const obj10 = { children: null };
       items1[3] = tmp7Result4;

@@ -1,11 +1,11 @@
-// Module ID: 12227
-// Function ID: 12228
+// Module ID: 12263
+// Function ID: 12264
 // Name: useViewableAppLauncherHomeItems
-// Dependencies: [19, 9518, 558, 568, 4497, 12228, 9046, 1253, 2]
+// Dependencies: [19, 9550, 558, 568, 4529, 12264, 9078, 1253, 2]
 
-// Module 12227 (useViewableAppLauncherHomeItems)
+// Module 12263 (useViewableAppLauncherHomeItems)
 import noop from "module_19" /* 19 */;
-import AppLauncherStore from "AppLauncherStore" /* 9518 */;
+import AppLauncherStore from "AppLauncherStore" /* 9550 */;
 
 const require = fn;
 const ReactCompilerGating = fn(558);

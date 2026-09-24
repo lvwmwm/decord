@@ -1,26 +1,26 @@
-// Module ID: 16801
-// Function ID: 16802
+// Module ID: 16811
+// Function ID: 16812
 // Name: ItemDetailsActionSheet
-// Dependencies: [19, 17, 2045, 2067, 8611, 21, 4758, 580, 558, 568, 504, 4911, 5841, 5799, 1181, 8626, 11301, 16802, 5903, 5822, 7449, 2]
+// Dependencies: [19, 17, 2045, 2067, 8643, 21, 4790, 580, 558, 568, 504, 4943, 5873, 5831, 1181, 8658, 11337, 16812, 5935, 5854, 7481, 2]
 
-// Module 16801 (ItemDetailsActionSheet)
+// Module 16811 (ItemDetailsActionSheet)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 580 */;
-import useChannelNameDefault from "useChannelName" /* 4911 */;
-import useDesignToggleDefault from "useDesignToggle" /* 5841 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
-import ActionSheetIconHeader from "ActionSheetIconHeader" /* 11301 */;
+import useChannelNameDefault from "useChannelName" /* 4943 */;
+import useDesignToggleDefault from "useDesignToggle" /* 5873 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
+import ActionSheetIconHeader from "ActionSheetIconHeader" /* 11337 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import ICYMIStore from "ICYMIStore" /* 8611 */;
+import ICYMIStore from "ICYMIStore" /* 8643 */;
 
-const GuildIconDefault = tmp5(5799);
+const GuildIconDefault = tmp5(5831);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { divider: { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE } };
 let closure_10 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -232,7 +232,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     return dehydratedItem;
   });
   if (null != stateFromStores1) {
-    const obj4 = { guild: stateFromStores1, size: tmp(5799).GuildIconSizes.LARGE };
+    const obj4 = { guild: stateFromStores1, size: tmp(5831).GuildIconSizes.LARGE };
     let tmp9 = closure_7(GuildIconDefault, obj4);
     const tmp5Result = GuildIconDefault;
   } else if (null != stateFromStores) {
@@ -245,8 +245,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     result = null != stateFromStores1;
   }
   if (result) {
-    result = tmp(8626).isChannelCustomScoreEligible(stateFromStores);
-    const tmpResult = tmp(8626);
+    result = tmp(8658).isChannelCustomScoreEligible(stateFromStores);
+    const tmpResult = tmp(8658);
   }
   const obj6 = { icon: tmp9, title: tmp6, subtitle: null };
   let str;
@@ -261,7 +261,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let tmp16Result = result;
   if (result) {
     const obj8 = { channel: stateFromStores, guild: stateFromStores1 };
-    tmp16Result = tmp16(tmp(16802).ChannelScoreSettings, obj8);
+    tmp16Result = tmp16(tmp(16812).ChannelScoreSettings, obj8);
   }
   const items3 = [tmp16Result, , ];
   let tmp15Result = null != stateFromStores2 && null != stateFromStores1;
@@ -273,7 +273,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const obj10 = { children: null };
     const items4 = [result, ];
     const obj11 = { guild: stateFromStores1 };
-    items4[1] = tmp16(tmp(16802).GuildScoreSettings, obj11);
+    items4[1] = tmp16(tmp(16812).GuildScoreSettings, obj11);
     obj10.children = items4;
     tmp15Result = tmp15(closure_8, obj10);
   }
@@ -286,8 +286,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       const obj13 = { label: `Total Score: ${tmp7.score}`, subLabel: null };
       const _JSON = JSON;
       obj13.subLabel = JSON.stringify(stateFromStores2.score_components);
-      obj12.children = tmp16(tmp(5822).TableRow, obj13);
-      tmp16Result2 = tmp16(tmp(5903).TableRowGroup, obj12);
+      obj12.children = tmp16(tmp(5854).TableRow, obj13);
+      tmp16Result2 = tmp16(tmp(5935).TableRowGroup, obj12);
     }
   }
   items3[2] = tmp16Result2;

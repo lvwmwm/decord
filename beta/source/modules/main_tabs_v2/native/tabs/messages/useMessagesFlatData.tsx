@@ -1,11 +1,11 @@
-// Module ID: 16393
-// Function ID: 16394
+// Module ID: 16403
+// Function ID: 16404
 // Name: useMessagesFlatData
-// Dependencies: [19, 558, 568, 16384, 16394, 16432, 16433, 2]
+// Dependencies: [19, 558, 568, 16394, 16404, 16442, 16443, 2]
 
-// Module 16393 (useMessagesFlatData)
+// Module 16403 (useMessagesFlatData)
 import c from "c" /* 568 */;
-import useMessagesData from "useMessagesData" /* 16384 */;
+import useMessagesData from "useMessagesData" /* 16394 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -30,20 +30,20 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, listItemHe
     }
   }
   if (cResult[6] !== renderHeader) {
-    if (renderHeader === tmp(16384).MessagesDataHeader.HappeningNow) {
-      let num = tmp(16394).getMessagesItemHappeningNowHeight();
-      const tmpResult = tmp(16394);
+    if (renderHeader === tmp(16394).MessagesDataHeader.HappeningNow) {
+      let num = tmp(16404).getMessagesItemHappeningNowHeight();
+      const tmpResult = tmp(16404);
     } else {
       num = 0;
-      if (renderHeader === tmp(16384).MessagesDataHeader.EmptyState) {
-        num = tmp(16432).MESSAGES_ITEM_EMPTY_STATE_HEIGHT;
+      if (renderHeader === tmp(16394).MessagesDataHeader.EmptyState) {
+        num = tmp(16442).MESSAGES_ITEM_EMPTY_STATE_HEIGHT;
       }
     }
     cResult[6] = renderHeader;
     cResult[7] = num;
   } else {
     const items = [];
-    const tmp7 = sections[tmp(undefined, 16384).MessagesDataSections.FavoriteChannels];
+    const tmp7 = sections[tmp(undefined, 16394).MessagesDataSections.FavoriteChannels];
     let num6 = 0;
     let sum = tmp5;
     let tmp9 = tmp5;
@@ -70,7 +70,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, listItemHe
       } while (num7 < tmp13);
     }
     if (sections[useMessagesData.MessagesDataSections.Separator] <= 0) {
-      const tmp24 = sections[tmp17(undefined, 16384).MessagesDataSections.SuggestedFriends];
+      const tmp24 = sections[tmp17(undefined, 16394).MessagesDataSections.SuggestedFriends];
       let tmp25;
       let tmp26;
       if (tmp24 > 0) {
@@ -119,7 +119,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, listItemHe
         tmp21 = cResult[8];
       }
       items.push(tmp21);
-      const sum2 = tmp15 + tmp17(16433).MESSAGES_ITEM_SEPERATOR_HEIGHT;
+      const sum2 = tmp15 + tmp17(16443).MESSAGES_ITEM_SEPERATOR_HEIGHT;
     }
   }
 }) : ((channels, listItemHeight) => {
@@ -132,12 +132,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, listItemHe
   const items = [channels, channelFavorites, renderHeader, sections, listItemHeight];
   return channelFavorites.useMemo(() => {
     if (renderHeader === useMessagesData.MessagesDataHeader.HappeningNow) {
-      let listHeaderHeight = tmp2(16394).getMessagesItemHappeningNowHeight();
-      const tmp2Result = tmp2(16394);
+      let listHeaderHeight = tmp2(16404).getMessagesItemHappeningNowHeight();
+      const tmp2Result = tmp2(16404);
     } else {
       listHeaderHeight = 0;
-      if (renderHeader === tmp2(16384).MessagesDataHeader.EmptyState) {
-        listHeaderHeight = tmp2(16432).MESSAGES_ITEM_EMPTY_STATE_HEIGHT;
+      if (renderHeader === tmp2(16394).MessagesDataHeader.EmptyState) {
+        listHeaderHeight = tmp2(16442).MESSAGES_ITEM_EMPTY_STATE_HEIGHT;
       }
     }
     const listData = [];
@@ -174,7 +174,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, listItemHe
     let sum2 = tmp12;
     if (sections[useMessagesData.MessagesDataSections.Separator] > 0) {
       listData.push({ kind: "separator" });
-      sum2 = tmp12 + tmp17(16433).MESSAGES_ITEM_SEPERATOR_HEIGHT;
+      sum2 = tmp12 + tmp17(16443).MESSAGES_ITEM_SEPERATOR_HEIGHT;
     }
     const tmp21 = sections[useMessagesData.MessagesDataSections.SuggestedFriends];
     let friendsHeaderOffset;

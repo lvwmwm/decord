@@ -1,14 +1,14 @@
-// Module ID: 17368
-// Function ID: 17369
+// Module ID: 17378
+// Function ID: 17379
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 2045, 4978, 1376, 21, 4758, 580, 558, 568, 1616, 504, 17369, 17371, 12588, 2]
+// Dependencies: [32, 19, 17, 2045, 5010, 1376, 21, 4790, 580, 558, 568, 1616, 504, 17379, 17381, 12624, 2]
 
-// Module 17368 (RestrictedMessageRequestPreview)
+// Module 17378 (RestrictedMessageRequestPreview)
 import nativeDefault from "native" /* 580 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import MessageStore from "MessageStore" /* 4978 */;
+import MessageStore from "MessageStore" /* 5010 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const require = fn;
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, scroll: { flex: 1 }, hidden: { opacity: 0 }, scrollContent: null, footer: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.scrollContent = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8 };
@@ -290,9 +290,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         }
       };
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      const items8 = [closure_10(tmp2(17369), obj6), ];
+      const items8 = [closure_10(tmp2(17379), obj6), ];
       const obj7 = { channelId };
-      items8[1] = closure_10(tmp2(17371), obj7);
+      items8[1] = closure_10(tmp2(17381), obj7);
       obj5.children = items8;
       const items9 = [closure_11(closure_5, obj5), ];
       const obj8 = { style: null, children: null };
@@ -301,7 +301,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       items10[1] = obj9;
       obj8.style = items10;
       const obj10 = { channel: stateFromStores };
-      obj8.children = closure_10(tmp2(12588), obj10);
+      obj8.children = closure_10(tmp2(12624), obj10);
       items9[1] = closure_10(first1, obj8);
       obj4.children = items9;
       tmp13Result = tmp13(tmp14, obj4);

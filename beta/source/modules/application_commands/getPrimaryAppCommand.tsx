@@ -1,19 +1,19 @@
-// Module ID: 9597
-// Function ID: 9598
+// Module ID: 9629
+// Function ID: 9630
 // Name: getPrimaryAppCommand
-// Dependencies: [5, 19, 2045, 9402, 1982, 9410, 558, 568, 9406, 9316, 2]
+// Dependencies: [5, 19, 2045, 9434, 1982, 9442, 558, 568, 9438, 9348, 2]
 // Exports: default, isPrimaryAppCommandUsableInAppDM
 
-// Module 9597 (getPrimaryAppCommand)
+// Module 9629 (getPrimaryAppCommand)
 import c from "c" /* 568 */;
 import Server from "Server" /* 1982 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9316 */;
-import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9406 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9410 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9348 */;
+import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9438 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9442 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9402 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9434 */;
 
 require = fn;
 let closure_10 = async function _getPrimaryAppCommand(arg0, value) {
@@ -96,7 +96,7 @@ function queryForPrimaryAppCommand(context, id) {
   obj.commandTypes = items;
   return ApplicationCommandIndexStore.query(context, obj, { placeholderCount: 1, scoreMethod: ApplicationCommandQueryTypes.ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true }).commands[0];
 }
-let ApplicationCommandIndexStore = fn(9402);
+let ApplicationCommandIndexStore = fn(9434);
 ({ getOrFetchApplicationCommandIndexForTarget: hasOwnProperty, useQueryState: metroRequire } = ApplicationCommandIndexStore);
 let ApplicationCommandIndexStore = ApplicationCommandIndexStore_mod;
 let c8 = "no primary app command for application";
@@ -232,7 +232,7 @@ export const useIsPrimaryAppCommandUsableInAppDM = ReactCompilerGating.isReactCo
         let hasItem = null != tmp3.integration_types;
         if (hasItem) {
           const integration_types = tmp3.integration_types;
-          hasItem = integration_types.includes(tmp(9316).ApplicationIntegrationType.USER_INSTALL);
+          hasItem = integration_types.includes(tmp(9348).ApplicationIntegrationType.USER_INSTALL);
         }
         let hasItem1 = null != tmp3.contexts;
         if (hasItem1) {

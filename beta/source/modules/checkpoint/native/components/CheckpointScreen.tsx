@@ -1,21 +1,21 @@
-// Module ID: 15967
-// Function ID: 15968
+// Module ID: 15977
+// Function ID: 15978
 // Name: CheckpointScreen
-// Dependencies: [19, 17, 4983, 21, 580, 4758, 558, 568, 7224, 2]
+// Dependencies: [19, 17, 5015, 21, 580, 4790, 558, 568, 7256, 2]
 
-// Module 15967 (CheckpointScreen)
+// Module 15977 (CheckpointScreen)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7224 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7256 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const CHECKPOINT_NAV_HEIGHT = fn(4983).CHECKPOINT_NAV_HEIGHT;
+const CHECKPOINT_NAV_HEIGHT = fn(5015).CHECKPOINT_NAV_HEIGHT;
 const jsx = fn(21).jsx;
 const PX_24 = nativeDefault.space.PX_24;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_9 = createStyles.createStyles({ container: { height: "100%", width: "100%" }, scroll: { width: "100%" }, scrollContent: { flexGrow: 1 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

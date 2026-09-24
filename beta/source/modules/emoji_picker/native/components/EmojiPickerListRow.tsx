@@ -1,18 +1,18 @@
-// Module ID: 10485
-// Function ID: 10486
+// Module ID: 10521
+// Function ID: 10522
 // Name: EmojiPickerListRow
-// Dependencies: [109, 19, 17, 1186, 10439, 1222, 21, 4758, 580, 1368, 676, 1401, 558, 568, 5315, 5802, 4610, 7378, 7379, 1181, 5341, 10486, 2]
+// Dependencies: [109, 19, 17, 1186, 10478, 1222, 21, 4790, 580, 1368, 676, 1401, 558, 568, 5347, 5834, 4642, 7410, 7411, 1181, 5373, 10522, 2]
 
-// Module 10485 (EmojiPickerListRow)
+// Module 10521 (EmojiPickerListRow)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef676 from "module_676" /* 676 */;
 import PlatformUtils2 from "PlatformUtils" /* 1368 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import LockIcon from "LockIcon" /* 5315 */;
-import Pressables from "Pressables" /* 5341 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import EmojiPickerListRowViewDefault from "EmojiPickerListRowView" /* 10486 */;
+import LockIcon from "LockIcon" /* 5347 */;
+import Pressables from "Pressables" /* 5373 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import EmojiPickerListRowViewDefault from "EmojiPickerListRowView" /* 10522 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
@@ -21,12 +21,12 @@ require = fn;
 let closure_3 = ["nativeRow"];
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
-const EmojiPickerListConstants = fn(10439);
+const EmojiPickerListConstants = fn(10478);
 const IMAGE_SIZE = EmojiPickerListConstants.IMAGE_SIZE;
 const PADDING_VERTICAL = fn(1222).PADDING_VERTICAL;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { image: { height: IMAGE_SIZE, width: IMAGE_SIZE }, surrogatesFrame: { height: IMAGE_SIZE, width: IMAGE_SIZE, alignItems: "center", justifyContent: "center" }, disabledOverlay: { borderRadius: nativeDefault.radii.sm, overflow: "hidden" }, surrogates: null, row: null, lockContainer: null, lock: null };
 const PlatformUtils = fn(1368);
 let num = 28;
@@ -137,7 +137,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
                         const obj3 = { accessibilityRole: "button", accessibilityLabel: emoji.name, style: tmp8, onPress: tmp9, onLongPress: tmp10, children: null };
                         const items = [cResult[18], tmp22];
                         obj3.children = items;
-                        const tmp28 = v65535(tmp(5341).PressableOpacity, obj3);
+                        const tmp28 = v65535(tmp(5373).PressableOpacity, obj3);
                         cResult[21] = emoji.name;
                         cResult[22] = tmp8;
                         cResult[23] = tmp9;
@@ -177,15 +177,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
               const tmp15 = options;
               const tmp17 = FastImageDefault;
               if (tmpResult.isThemeDark(ThemeStore.theme)) {
-                let tmp16Result = tmp16(7378);
+                let tmp16Result = tmp16(7410);
               } else {
-                tmp16Result = tmp16(7379);
+                tmp16Result = tmp16(7411);
               }
               obj5.placeholder = tmp16Result;
               const obj6 = { uri: image };
               obj5.source = obj6;
               tmp15(tmp17, obj5);
-              tmpResult = tmp(4610);
+              tmpResult = tmp(4642);
             }
             class P {
               constructor() {
@@ -285,16 +285,16 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
     const obj4 = { resizeMode: "contain", style: tmp.image, placeholder: null, source: null, usesSmallCache: true };
     const tmp15 = FastImageDefault;
     if (tmp7Result.isThemeDark(ThemeStore.theme)) {
-      tmp8 = 7378;
+      tmp8 = 7410;
       let tmp14Result = tmp14(tmp8);
     } else {
-      tmp14Result = tmp14(7379);
+      tmp14Result = tmp14(7411);
     }
     obj4.placeholder = tmp14Result;
     const obj5 = { uri: emojiURL };
     obj4.source = obj5;
     options(tmp15, obj4);
-    tmp7Result = tmp7(4610);
+    tmp7Result = tmp7(4642);
   } else {
     const obj6 = { allowFontScaling: false, style: tmp.surrogates, children: emoji.surrogates };
     const tmp10 = options(tmp7(1181).LegacyText, obj6);

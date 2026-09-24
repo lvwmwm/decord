@@ -1,22 +1,22 @@
-// Module ID: 17095
-// Function ID: 17096
+// Module ID: 17105
+// Function ID: 17106
 // Name: SwipeForMemberListWrapper
-// Dependencies: [32, 19, 17, 8125, 8113, 1078, 21, 3, 4758, 580, 558, 568, 4938, 16725, 4619, 4497, 5203, 4693, 7284, 4625, 11647, 1114, 16340, 8543, 16351, 13041, 4617, 4616, 5183, 1489, 16875, 16344, 16349, 16346, 16870, 17096, 17097, 5343, 7403, 17098, 6891, 2]
+// Dependencies: [32, 19, 17, 8157, 8145, 1078, 21, 3, 4790, 580, 558, 568, 4970, 16735, 4651, 4529, 5235, 4725, 7316, 4657, 11683, 1114, 16350, 8575, 16361, 13077, 4649, 4648, 5215, 1489, 16885, 16354, 16359, 16356, 16880, 17106, 17107, 5375, 7435, 17108, 6923, 2]
 
-// Module 17095 (SwipeForMemberListWrapper)
+// Module 17105 (SwipeForMemberListWrapper)
 import LoggerDefault from "Logger" /* 3 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4616 */;
-import RootNavigationRef from "RootNavigationRef" /* 4617 */;
-import useChatLayout from "useChatLayout" /* 4619 */;
-import ChatInputUtils from "ChatInputUtils" /* 4625 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4938 */;
-import useMountEffect from "useMountEffect" /* 5203 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 16351 */;
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16725 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4648 */;
+import RootNavigationRef from "RootNavigationRef" /* 4649 */;
+import useChatLayout from "useChatLayout" /* 4651 */;
+import ChatInputUtils from "ChatInputUtils" /* 4657 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4970 */;
+import useMountEffect from "useMountEffect" /* 5235 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 16361 */;
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16735 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -27,9 +27,9 @@ require = fn;
 get_ActivityIndicator = fn(17);
 let StyleSheet = get_ActivityIndicator.StyleSheet;
 const View = get_ActivityIndicator.View;
-const ChannelDetailsStore = fn(8125);
+const ChannelDetailsStore = fn(8157);
 ({ getIsChannelDetailsSearchActive: closure_7, setIsChannelDetailsSearchActive: closure_8 } = ChannelDetailsStore);
-const ONYX_BORDER_WIDTH = fn(8113).ONYX_BORDER_WIDTH;
+const ONYX_BORDER_WIDTH = fn(8145).ONYX_BORDER_WIDTH;
 const Constants = fn(1078);
 ({ AnalyticEvents: c10, ComponentActions: closure_11, ThemeTypes: closure_12 } = Constants);
 const jsxProd = fn(21);
@@ -37,7 +37,7 @@ const jsxProd = fn(21);
 let closure_15 = new LoggerDefault("SwipeForMemberListWrapper");
 let c16 = 150;
 let context = noop.createContext(undefined);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { memberListPreview: null, content: null, memberListContainer: null, onyxBorder: null, onyxRightOverflow: null };
 let tmp6 = new LoggerDefault("SwipeForMemberListWrapper");
 obj.memberListPreview = { flex: 1, justifyContent: "center", alignItems: "flex-start", overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
@@ -201,8 +201,8 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((simultaneousWi
         S.__closure = obj3;
         S.__workletHash = 6486402074354;
         S.__initData = __initData2;
-        const animatedReaction = tmp(4497).useAnimatedReaction(T, S);
-        const tmpResult = tmp(4497);
+        const animatedReaction = tmp(4529).useAnimatedReaction(T, S);
+        const tmpResult = tmp(4529);
         class P {
           constructor() {
             tmp = !isChatLockedOpen;
@@ -241,10 +241,10 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((simultaneousWi
         I.__closure = obj5;
         I.__workletHash = 10319768602360;
         I.__initData = __initData4;
-        const animatedReaction1 = tmp(4497).useAnimatedReaction(P, I);
+        const animatedReaction1 = tmp(4529).useAnimatedReaction(P, I);
         if (cResult[7] === disallowGesture) {
           if (cResult[8] === disallowGesture3) {
-            tmp(5203);
+            tmp(5235);
             class T {
               constructor() {
                 return closure_0.get() > 0;
@@ -268,7 +268,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((simultaneousWi
         cResult[8] = disallowGesture3;
         cResult[9] = disallowGesture2;
         cResult[10] = N;
-        const tmpResult3 = tmp(4497);
+        const tmpResult3 = tmp(4529);
       }
     }
     let result1 = simultaneousWithExternalGesture.simultaneousWithExternalGesture(gesture, gesture2);
@@ -686,8 +686,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       const tmp23Result = useChatLayout;
       let coerceChannelRouteResult = NavigationRouteUtils.coerceChannelRoute(currentRoute);
       if (tmp3) {
-        coerceChannelRouteResult = tmp23(4616).coerceGuildsRoute(currentRoute);
-        const tmp23Result4 = tmp23(4616);
+        coerceChannelRouteResult = tmp23(4648).coerceGuildsRoute(currentRoute);
+        const tmp23Result4 = tmp23(4648);
       }
       const obj3 = { route: coerceChannelRouteResult, channelId, currentRoute, isChatLockedOpen, routeParams: null };
       let params1;

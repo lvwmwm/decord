@@ -1,16 +1,16 @@
-// Module ID: 10475
-// Function ID: 10476
+// Module ID: 10511
+// Function ID: 10512
 // Name: CreatorRevenueButton
-// Dependencies: [19, 21, 4758, 558, 568, 10476, 2]
+// Dependencies: [19, 21, 4790, 558, 568, 10512, 2]
 
-// Module 10475 (CreatorRevenueButton)
+// Module 10511 (CreatorRevenueButton)
 import c from "c" /* 568 */;
-import ShinyButtonDefault from "ShinyButton" /* 10476 */;
+import ShinyButtonDefault from "ShinyButton" /* 10512 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_4 = createStyles.createStyles({ container: { borderRadius: 3 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

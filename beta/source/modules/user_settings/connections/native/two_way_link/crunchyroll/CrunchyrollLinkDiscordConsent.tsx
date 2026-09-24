@@ -1,15 +1,15 @@
-// Module ID: 9389
-// Function ID: 9390
+// Module ID: 9421
+// Function ID: 9422
 // Name: CrunchyrollLinkDiscordConsent
-// Dependencies: [19, 9384, 1078, 8614, 21, 558, 568, 1488, 9357, 2]
+// Dependencies: [19, 9416, 1078, 8646, 21, 558, 568, 1488, 9389, 2]
 
-// Module 9389 (CrunchyrollLinkDiscordConsent)
+// Module 9421 (CrunchyrollLinkDiscordConsent)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const constants = fn(9384).CrunchyrollLinkModalScenes;
+const constants = fn(9416).CrunchyrollLinkModalScenes;
 const PlatformTypes = fn(1078).PlatformTypes;
-const CrunchyrollConnectionConstants = fn(8614);
+const CrunchyrollConnectionConstants = fn(8646);
 ({ CRUNCHYROLL_CLIENT_ID: hasOwnProperty, CRUNCHYROLL_CLIENT_SCOPES: metroRequire } = CrunchyrollConnectionConstants);
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
@@ -63,7 +63,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = callbackState;
   cResult[6] = tmp6;
   cResult[7] = tmp5;
-  cResult[8] = jsx(tmp(9357).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId, scopes, onNext: tmp5, onError: tmp6 });
+  cResult[8] = jsx(tmp(9389).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId, scopes, onNext: tmp5, onError: tmp6 });
 }) : ((arg0) => {
   let navigation;
   ({ callbackCode, callbackState } = arg0);
@@ -76,5 +76,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const callback1 = noop.useCallback(() => {
     navigation.push(constants.ERROR);
   }, items1);
-  return jsx(navigation(9357).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId, scopes, onNext: callback, onError: callback1 });
+  return jsx(navigation(9389).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId, scopes, onNext: callback, onError: callback1 });
 });

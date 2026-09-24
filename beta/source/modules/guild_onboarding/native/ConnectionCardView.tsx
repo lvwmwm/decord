@@ -1,12 +1,12 @@
-// Module ID: 7424
-// Function ID: 7425
+// Module ID: 7456
+// Function ID: 7457
 // Name: ConnectionCardView
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4754, 1119, 4717, 5188, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4786, 1119, 4749, 5220, 2]
 
-// Module 7424 (ConnectionCardView)
+// Module 7456 (ConnectionCardView)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -14,7 +14,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c2, ActivityIndicator: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { card: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, padding: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, leftContent: null, icon: null, textContent: null, connectedStatus: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, padding: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
 obj2.leftContent = { flexDirection: "row", alignItems: "center", flex: 1, marginRight: nativeDefault.space.PX_12 };
@@ -39,7 +39,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[3] !== displayName) {
       const obj2 = { variant: "text-md/medium", color: "text-strong", children: displayName };
-      const tmp9 = React4(tmp(4754).Text, obj2);
+      const tmp9 = React4(tmp(4786).Text, obj2);
       cResult[3] = displayName;
       cResult[4] = tmp9;
       let tmp7 = tmp9;
@@ -53,7 +53,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (tmp12) {
         const obj3 = { variant: "text-sm/normal", color: "text-subtle", children: description };
-        tmp12 = React4(tmp(4754).Text, obj3);
+        tmp12 = React4(tmp(4786).Text, obj3);
       }
       cResult[5] = description;
       cResult[6] = tmp12;
@@ -105,7 +105,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               const obj6 = { variant: "text-sm/medium", color: "text-feedback-positive", children: null };
               const intl2 = tmp(1119).intl;
               obj6.children = intl2.string(tmp(1119).t["LV+CXH"]);
-              const items1 = [React4(tmp(4754).Text, obj6), React4(tmp(4717).CircleCheckIcon, { size: "sm", color: "status-positive" })];
+              const items1 = [React4(tmp(4786).Text, obj6), React4(tmp(4749).CircleCheckIcon, { size: "sm", color: "status-positive" })];
               obj5.children = items1;
               tmp24 = hasOwnProperty(React2, obj5);
             } else {
@@ -113,7 +113,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               const intl = tmp(1119).intl;
               obj7.text = intl.string(tmp(1119).t.S0W8Z5);
               obj7.disabled = !canConnect;
-              tmp24 = React4(tmp(5188).Button, obj7);
+              tmp24 = React4(tmp(5220).Button, obj7);
             }
             cResult[15] = canConnect;
             cResult[16] = isConnected;
@@ -165,7 +165,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (tmp4Result) {
     const obj5 = { variant: "text-sm/normal", color: "text-subtle", children: description };
-    tmp4Result = tmp4(tmp5(4754).Text, obj5);
+    tmp4Result = tmp4(tmp5(4786).Text, obj5);
   }
   items1[1] = tmp4Result;
   obj4.children = items1;
@@ -179,7 +179,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj7 = { variant: "text-sm/medium", color: "text-feedback-positive", children: null };
     const intl2 = tmp5(1119).intl;
     obj7.children = intl2.string(tmp5(1119).t["LV+CXH"]);
-    const items3 = [tmp4(tmp5(4754).Text, obj7), tmp4(tmp5(4717).CircleCheckIcon, { size: "sm", color: "status-positive" })];
+    const items3 = [tmp4(tmp5(4786).Text, obj7), tmp4(tmp5(4749).CircleCheckIcon, { size: "sm", color: "status-positive" })];
     obj6.children = items3;
     tmp4Result2 = tmp2(tmp3, obj6);
   } else {
@@ -187,7 +187,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl = tmp5(1119).intl;
     obj8.text = intl.string(tmp5(1119).t.S0W8Z5);
     obj8.disabled = !canConnect;
-    tmp4Result2 = tmp4(tmp5(5188).Button, obj8);
+    tmp4Result2 = tmp4(tmp5(5220).Button, obj8);
   }
   items2[1] = tmp4Result2;
   obj.children = items2;

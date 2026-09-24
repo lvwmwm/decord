@@ -1,20 +1,20 @@
-// Module ID: 11819
-// Function ID: 11820
+// Module ID: 11855
+// Function ID: 11856
 // Name: ForwardPreview
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4693, 8400, 8195, 8928, 11820, 1982, 11821, 11822, 12, 1119, 11824, 8992, 5307, 10936, 1481, 5802, 9092, 4754, 3004, 8417, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4725, 8432, 8227, 8960, 11856, 1982, 11857, 11858, 12, 1119, 11860, 9024, 5339, 10972, 1481, 5834, 9124, 4786, 3004, 8449, 2]
 
-// Module 11819 (ForwardPreview)
+// Module 11855 (ForwardPreview)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1481 */;
 import _modDef3004 from "module_3004" /* 3004 */;
-import useThemeDefault from "useTheme" /* 4693 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8400 */;
-import ChatItemDefault from "ChatItem" /* 8928 */;
-import ClipViewDefault from "ClipView" /* 9092 */;
-import ForwardPreviewUtils from "ForwardPreviewUtils" /* 11820 */;
-import MosaicMediaType from "MosaicMediaType" /* 11822 */;
+import useThemeDefault from "useTheme" /* 4725 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8432 */;
+import ChatItemDefault from "ChatItem" /* 8960 */;
+import ClipViewDefault from "ClipView" /* 9124 */;
+import ForwardPreviewUtils from "ForwardPreviewUtils" /* 11856 */;
+import MosaicMediaType from "MosaicMediaType" /* 11858 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,7 +22,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 let c7 = 56;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { forwardPreview: { flexDirection: "row", gap: nativeDefault.space.PX_12, alignItems: "center" }, quote: null, contentWrapper: null, attachmentPreview: null, attachmentPreviewVideo: null, videoThumbnail: null, playIcon: null, attachmentPreviewOverflow: null, overflowCount: null, attachmentRow: null, largeIcon: null };
 let size = { width: 4, height: "100%", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: 2 };
 obj2.quote = size;
@@ -60,7 +60,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj3 = new tmp4(8195)();
+        const obj3 = new tmp4(8227)();
         obj3.setOptions({ renderEmbeds: false, renderReactions: false, inlineEmbedMedia: false, inlineAttachmentMedia: false, animateEmoji: true, gifAutoPlay: false, timestampHourCycle: 0, renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderComponents: false, renderThreadEmbeds: false, renderReplies: false, renderCommunicationDisabled: false, renderAttachments: false, renderExecutedCommands: false, renderPolls: false, renderSharedClientTheme: false, renderForumPostActions: false, ignoreMentioned: false, ignoreEmbedDescriptionCache: false, forceHideSimpleEmbedContent: false, enableSwipeActions: false, useAlternateEmbedColors: false });
         cResult[6] = obj3;
         let tmp10 = obj3;
@@ -78,7 +78,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return tmp17;
         }
         const obj2 = { pointerEvents: "none", horizontalOffset: 0, modifyRow: tmp8, message: tmp15, rowGenerator: tmp10 };
-        const tmp19 = closure_5(tmp4(8928), obj2);
+        const tmp19 = closure_5(tmp4(8960), obj2);
         cResult[10] = tmp8;
         cResult[11] = tmp15;
         cResult[12] = tmp19;
@@ -106,7 +106,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8 = fn;
   }
   const obj = attachmentCount(568);
-  const tmp7 = attachmentCount(4758).createNativeStyleProperties({ seeMoreLabelColor: TEXT_SUBTLE })(tmp5);
+  const tmp7 = attachmentCount(4790).createNativeStyleProperties({ seeMoreLabelColor: TEXT_SUBTLE })(tmp5);
   cResult[0] = TEXT_SUBTLE;
   cResult[1] = tmp5;
   cResult[2] = tmp7;
@@ -120,7 +120,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     TEXT_SUBTLE = tmp(580).colors.TEXT_SUBTLE;
   }
   const tmp3 = useThemeDefault();
-  const tmp4 = attachmentCount(4758).createNativeStyleProperties({ seeMoreLabelColor: TEXT_SUBTLE })(tmp3);
+  const tmp4 = attachmentCount(4790).createNativeStyleProperties({ seeMoreLabelColor: TEXT_SUBTLE })(tmp3);
   importDefault = tmp4;
   const items = [tmp4.seeMoreLabelColor, attachmentCount];
   const callback = noop.useCallback((message) => {
@@ -138,7 +138,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return obj;
   }, []);
   const obj2 = { pointerEvents: "none", horizontalOffset: 0, modifyRow: callback, message: null, rowGenerator: null };
-  let obj = attachmentCount(4758);
+  let obj = attachmentCount(4790);
   const obj3 = { messageSnapshots: [], content: content.contentMessage.content };
   obj2.message = message.merge(obj3);
   obj2.rowGenerator = memo;
@@ -158,7 +158,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
       if (cResult[2] === message) {
         let tmp5 = cResult[3];
       }
-      const forwardPreviewContent = tmp(11820).useForwardPreviewContent(tmp5);
+      const forwardPreviewContent = tmp(11856).useForwardPreviewContent(tmp5);
       ({ attachments, embeds, hasContent, contentMessage } = forwardPreviewContent);
       let checkpointData = null;
       if (contentMessage.components.length > 0) {
@@ -173,7 +173,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
         if (num2 == null) {
           num2 = 0;
         }
-        tmp9 = tmp(11821).CHECKPOINT_PERSONA_COLORS[num2];
+        tmp9 = tmp(11857).CHECKPOINT_PERSONA_COLORS[num2];
       }
       if (tmp9 != null) {
         const primaryColor = tmp9.primaryColor;
@@ -210,7 +210,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
                     }
                     if (cResult[22] !== tmp4.playIcon) {
                       const obj3 = { style: tmp4.playIcon, size: "md", color: "white" };
-                      const tmp68 = hasOwnProperty(tmp(8992).CirclePlayIcon, obj3);
+                      const tmp68 = hasOwnProperty(tmp(9024).CirclePlayIcon, obj3);
                       cResult[22] = tmp4.playIcon;
                       cResult[23] = tmp68;
                       let tmp66 = tmp68;
@@ -357,7 +357,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
             const intl4 = tmp(1119).intl;
             const obj10 = { image_count: num4, video_count: num5 };
             let formatToPlainStringResult = intl4.formatToPlainString(tmp(1119).t.Lr0Top, obj10);
-            let AttachmentIcon = tmp(11824).ImagesIcon;
+            let AttachmentIcon = tmp(11860).ImagesIcon;
           }
           cResult[4] = length;
           cResult[5] = attachments;
@@ -367,9 +367,9 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
           const intl2 = tmp(1119).intl;
           const obj11 = { count: num4 };
           if (1 === num4) {
-            let ImagesIcon = tmp(5307).ImageIcon;
+            let ImagesIcon = tmp(5339).ImageIcon;
           } else {
-            ImagesIcon = tmp(11824).ImagesIcon;
+            ImagesIcon = tmp(11860).ImagesIcon;
           }
           AttachmentIcon = ImagesIcon;
           formatToPlainStringResult = intl2.formatToPlainString(tmp(1119).t.h4pFfU, obj11);
@@ -379,7 +379,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
           const intl3 = tmp(1119).intl;
           const obj12 = { count: num5 };
           formatToPlainStringResult = intl3.formatToPlainString(tmp(1119).t.SJ6pPX, obj12);
-          AttachmentIcon = tmp(8992).CirclePlayIcon;
+          AttachmentIcon = tmp(9024).CirclePlayIcon;
         } else if (num4 <= 0) {
           if (cResult[10] !== length) {
             const intl = tmp(1119).intl;
@@ -391,7 +391,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
           } else {
             formatToPlainStringResult = cResult[11];
           }
-          AttachmentIcon = tmp(10936).AttachmentIcon;
+          AttachmentIcon = tmp(10972).AttachmentIcon;
         }
         const tmpResult3 = tmp(12);
       } else {
@@ -405,7 +405,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
         if (null != tmp10) {
           const _Symbol3 = Symbol;
           if (cResult[42] === Symbol.for("react.memo_cache_sentinel")) {
-            const size3 = { shape: tmp(9092).CutoutShape.RoundedRect, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
+            const size3 = { shape: tmp(9124).CutoutShape.RoundedRect, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
             cResult[42] = size3;
             let tmp77 = size3;
           } else {
@@ -449,7 +449,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
           const obj18 = { style: tmp4.overflowCount, variant: "text-xs/semibold", color: "text-default", children: null };
           const items4 = ["+", diff];
           obj18.children = items4;
-          const tmp86 = timestampProducer(tmp(4754).Text, obj18);
+          const tmp86 = timestampProducer(tmp(4786).Text, obj18);
           cResult[46] = tmp4.overflowCount;
           cResult[47] = diff;
           cResult[48] = tmp86;
@@ -471,7 +471,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
           const obj20 = { variant: "text-md/medium", children: null };
           const intl5 = tmp(1119).intl;
           obj20.children = intl5.string(_modDef3004.goiR2u);
-          tmp97 = hasOwnProperty(tmp(4754).Text, obj20);
+          tmp97 = hasOwnProperty(tmp(4786).Text, obj20);
         }
         cResult[55] = checkpointData;
         cResult[56] = tmp97;
@@ -543,11 +543,11 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
                               if (num77 == null) {
                                 num77 = 0;
                               }
-                              const obj24 = { uri: tmp(8417).getCardAssetUrl(num77) };
+                              const obj24 = { uri: tmp(8449).getCardAssetUrl(num77) };
                               size4.source = obj24;
                               obj22.children = hasOwnProperty(tmp121, size4);
                               tmp118Result = tmp118(tmp119, obj22);
-                              const tmpResult4 = tmp(8417);
+                              const tmpResult4 = tmp(8449);
                             }
                             cResult[74] = checkpointData;
                             cResult[75] = primaryColor;
@@ -597,7 +597,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
                   str4 = "text-sm/medium";
                 }
                 const obj28 = { variant: str4, color: "text-muted", children: tmp12 };
-                tmp111Result = hasOwnProperty(tmp(4754).Text, obj28);
+                tmp111Result = hasOwnProperty(tmp(4786).Text, obj28);
               }
               items7[1] = tmp111Result;
               obj26.children = items7;
@@ -625,7 +625,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
       cResult[60] = message;
       cResult[61] = tmp101;
       tmp100 = tmp101;
-      const tmpResult = tmp(11820);
+      const tmpResult = tmp(11856);
     }
   }
   const obj30 = { message, channel, forwardOptions };
@@ -653,7 +653,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     if (num == null) {
       num = 0;
     }
-    tmp6 = tmp2(11821).CHECKPOINT_PERSONA_COLORS[num];
+    tmp6 = tmp2(11857).CHECKPOINT_PERSONA_COLORS[num];
   }
   if (tmp6 != null) {
     const primaryColor = tmp6.primaryColor;
@@ -673,7 +673,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
         const intl4 = tmp2(1119).intl;
         const obj2 = { image_count: num2, video_count: num3 };
         let formatToPlainStringResult = intl4.formatToPlainString(tmp2(1119).t.Lr0Top, obj2);
-        let AttachmentIcon = tmp2(11824).ImagesIcon;
+        let AttachmentIcon = tmp2(11860).ImagesIcon;
       }
       if (num3 > 0) {
         if (length === num3) {
@@ -690,7 +690,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
           size.height = v56;
           const items1 = [hasOwnProperty(FastImageDefault, size), ];
           const obj5 = { style: tmp.playIcon, size: "md", color: "white" };
-          items1[1] = hasOwnProperty(tmp2(8992).CirclePlayIcon, obj5);
+          items1[1] = hasOwnProperty(tmp2(9024).CirclePlayIcon, obj5);
           obj3.children = items1;
           let tmp7 = timestampProducer(View, obj3);
           let tmp8 = AttachmentIcon;
@@ -742,14 +742,14 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
       const intl3 = tmp2(1119).intl;
       const obj11 = { count: num3 };
       formatToPlainStringResult = intl3.formatToPlainString(tmp2(1119).t.SJ6pPX, obj11);
-      AttachmentIcon = tmp2(8992).CirclePlayIcon;
+      AttachmentIcon = tmp2(9024).CirclePlayIcon;
     } else if (num2 > 0) {
       const intl2 = tmp2(1119).intl;
       const obj12 = { count: num2 };
       if (1 === num2) {
-        let ImagesIcon = tmp2(5307).ImageIcon;
+        let ImagesIcon = tmp2(5339).ImageIcon;
       } else {
-        ImagesIcon = tmp2(11824).ImagesIcon;
+        ImagesIcon = tmp2(11860).ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
       formatToPlainStringResult = intl2.formatToPlainString(tmp2(1119).t.h4pFfU, obj12);
@@ -758,7 +758,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
       const intl = tmp2(1119).intl;
       const obj13 = { count: length };
       formatToPlainStringResult = intl.formatToPlainString(tmp2(1119).t["89ihS8"], obj13);
-      AttachmentIcon = tmp2(10936).AttachmentIcon;
+      AttachmentIcon = tmp2(10972).AttachmentIcon;
     }
     const tmp2Result = tmp2(12);
   } else {
@@ -770,7 +770,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   if (attachments.length > 1) {
     tmp33 = tmp7;
     if (null != tmp7) {
-      const size3 = { shape: tmp2(9092).CutoutShape.RoundedRect, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
+      const size3 = { shape: tmp2(9124).CutoutShape.RoundedRect, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
       const obj15 = { style: tmp.attachmentPreviewOverflow, children: null };
       const obj16 = { cutouts: null, children: null };
       const items2 = [size3];
@@ -780,7 +780,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
       const obj17 = { style: tmp.overflowCount, variant: "text-xs/semibold", color: "text-default", children: null };
       const items4 = ["+", length - 1];
       obj17.children = items4;
-      items3[1] = timestampProducer(tmp2(4754).Text, obj17);
+      items3[1] = timestampProducer(tmp2(4786).Text, obj17);
       obj15.children = items3;
       tmp33 = timestampProducer(View, obj15);
     }
@@ -793,7 +793,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     const obj22 = { variant: "text-md/medium", children: null };
     const intl5 = tmp2(1119).intl;
     obj22.children = intl5.string(_modDef3004.goiR2u);
-    tmp36Result = tmp36(tmp2(4754).Text, obj22);
+    tmp36Result = tmp36(tmp2(4786).Text, obj22);
   }
   const items6 = [tmp36Result, , ];
   let tmp36Result5 = hasContent;
@@ -827,7 +827,7 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
         str3 = "text-sm/medium";
       }
       const obj26 = { variant: str3, color: "text-muted", children: tmp9 };
-      tmp36Result7 = tmp36(tmp2(4754).Text, obj26);
+      tmp36Result7 = tmp36(tmp2(4786).Text, obj26);
     }
     items7[1] = tmp36Result7;
     obj24.children = items7;
@@ -850,11 +850,11 @@ export const ForwardPreview = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     if (num5 == null) {
       num5 = 0;
     }
-    const obj29 = { uri: tmp2(8417).getCardAssetUrl(num5) };
+    const obj29 = { uri: tmp2(8449).getCardAssetUrl(num5) };
     size4.source = obj29;
     obj27.children = tmp36(tmp46, size4);
     tmp36Result8 = tmp36(tmp35, obj27);
-    const tmp2Result2 = tmp2(8417);
+    const tmp2Result2 = tmp2(8449);
   }
   items5[3] = tmp36Result8;
   obj19.children = items5;

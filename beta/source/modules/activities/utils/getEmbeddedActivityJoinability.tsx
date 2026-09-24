@@ -1,16 +1,16 @@
-// Module ID: 9632
-// Function ID: 9633
+// Module ID: 9664
+// Function ID: 9665
 // Name: getEmbeddedActivityJoinability
-// Dependencies: [2045, 2067, 4399, 1376, 4777, 1078, 9630, 4903, 558, 568, 9608, 504, 2]
+// Dependencies: [2045, 2067, 4431, 1376, 4809, 1078, 9662, 4935, 558, 568, 9640, 504, 2]
 
-// Module 9632 (getEmbeddedActivityJoinability)
-import ChannelUtils from "ChannelUtils" /* 4903 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 9630 */;
+// Module 9664 (getEmbeddedActivityJoinability)
+import ChannelUtils from "ChannelUtils" /* 4935 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 9662 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 import UserStore from "UserStore" /* 1376 */;
-import VoiceStateStore from "VoiceStateStore" /* 4777 */;
+import VoiceStateStore from "VoiceStateStore" /* 4809 */;
 
 require = fn;
 function getEmbeddedActivityJoinability(arg0) {

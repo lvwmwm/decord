@@ -1,13 +1,13 @@
-// Module ID: 8362
-// Function ID: 8363
+// Module ID: 8394
+// Function ID: 8395
 // Name: FacebookNeutralIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 8363, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 8395, 4493, 2]
 
-// Module 8362 (FacebookNeutralIcon)
+// Module 8394 (FacebookNeutralIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod8363 from "module_8363" /* 8363 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod8395 from "module_8395" /* 8395 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const FacebookNeutralIcon = ReactCompilerGating.isReactCompilerEnabled() 
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(8363);
+    const tmpResult = tmp(8395);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const FacebookNeutralIcon = ReactCompilerGating.isReactCompilerEnabled() 
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8363, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8395, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

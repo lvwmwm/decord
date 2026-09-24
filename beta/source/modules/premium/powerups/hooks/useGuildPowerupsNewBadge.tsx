@@ -1,19 +1,19 @@
-// Module ID: 12673
-// Function ID: 12674
+// Module ID: 12709
+// Function ID: 12710
 // Name: useGuildPowerupsNewBadge
-// Dependencies: [32, 19, 4647, 4648, 2042, 2031, 558, 568, 504, 12666, 7632, 2033, 2]
+// Dependencies: [32, 19, 4679, 4680, 2042, 2031, 558, 568, 504, 12702, 7664, 2033, 2]
 
-// Module 12673 (useGuildPowerupsNewBadge)
+// Module 12709 (useGuildPowerupsNewBadge)
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2033 */;
-import useGuildPowerupNewPerkMarketingVersionDefault from "useGuildPowerupNewPerkMarketingVersion" /* 12666 */;
+import useGuildPowerupNewPerkMarketingVersionDefault from "useGuildPowerupNewPerkMarketingVersion" /* 12702 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4647 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4679 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const constants = fn(4648).GuildPowerupNewPerkMarketingVersion;
+const constants = fn(4680).GuildPowerupNewPerkMarketingVersion;
 const ContentDismissActionType = fn(2042).ContentDismissActionType;
 let closure_8 = fn(2031).DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_BADGE;
 let ReactCompilerGating = fn(558);

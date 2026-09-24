@@ -1,9 +1,9 @@
-// Module ID: 7395
-// Function ID: 7396
+// Module ID: 7427
+// Function ID: 7428
 // Name: FormIcon
-// Dependencies: [109, 19, 21, 4758, 558, 568, 1181, 2]
+// Dependencies: [109, 19, 21, 4790, 558, 568, 1181, 2]
 
-// Module 7395 (FormIcon)
+// Module 7427 (FormIcon)
 import c from "c" /* 568 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -12,7 +12,7 @@ const native = ThemedIcon(1181);
 require = fn;
 let closure_2 = ["style", "color", "themedColor"];
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ icon: { opacity: 0.6 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);

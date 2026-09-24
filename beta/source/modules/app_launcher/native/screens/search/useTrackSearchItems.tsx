@@ -1,9 +1,9 @@
-// Module ID: 12246
-// Function ID: 12247
+// Module ID: 12282
+// Function ID: 12283
 // Name: useTrackSearchItems
-// Dependencies: [19, 558, 568, 11469, 9046, 1253, 7770, 2]
+// Dependencies: [19, 558, 568, 11505, 9078, 1253, 7802, 2]
 
-// Module 12246 (useTrackSearchItems)
+// Module 12282 (useTrackSearchItems)
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -62,10 +62,10 @@ export const useTrackSearchItems = ReactCompilerGating.isReactCompilerEnabled() 
             ({ applicationId, commandId } = dependencyMap(isViewable.item));
             const tmp5 = dependencyMap(isViewable.item);
             const obj2 = { type: closure_0(1253).ImpressionTypes.VIEW, name: closure_0(1253).ImpressionNames.APP_LAUNCHER_SEARCH_RESULTS_ITEM, properties: null };
-            const obj3 = { location: closure_0(7770).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME_SEARCH, application_id: applicationId, command_id: commandId, search_results_position: isViewable.index, query, source };
+            const obj3 = { location: closure_0(7802).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME_SEARCH, application_id: applicationId, command_id: commandId, search_results_position: isViewable.index, query, source };
             obj2.properties = obj3;
-            closure_0(9046).trackImpression(obj2, false);
-            const obj = closure_0(9046);
+            closure_0(9078).trackImpression(obj2, false);
+            const obj = closure_0(9078);
           }
         }
       }
@@ -101,10 +101,10 @@ export const useTrackSearchItems = ReactCompilerGating.isReactCompilerEnabled() 
             ({ applicationId, commandId } = dependencyMap(isViewable.item));
             const tmp5 = dependencyMap(isViewable.item);
             const obj2 = { type: closure_0(1253).ImpressionTypes.VIEW, name: closure_0(1253).ImpressionNames.APP_LAUNCHER_SEARCH_RESULTS_ITEM, properties: null };
-            const obj3 = { location: closure_0(7770).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME_SEARCH, application_id: applicationId, command_id: commandId, search_results_position: isViewable.index, query, source };
+            const obj3 = { location: closure_0(7802).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME_SEARCH, application_id: applicationId, command_id: commandId, search_results_position: isViewable.index, query, source };
             obj2.properties = obj3;
-            closure_0(9046).trackImpression(obj2, false);
-            const obj = closure_0(9046);
+            closure_0(9078).trackImpression(obj2, false);
+            const obj = closure_0(9078);
           }
         }
       }

@@ -1,9 +1,9 @@
-// Module ID: 9045
-// Function ID: 9046
+// Module ID: 9077
+// Function ID: 9078
 // Name: CollectiblesAnalyticsContext
 // Dependencies: [19, 21, 558, 568, 2]
 
-// Module 9045 (CollectiblesAnalyticsContext)
+// Module 9077 (CollectiblesAnalyticsContext)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 13247
-// Function ID: 13248
+// Module ID: 13283
+// Function ID: 13284
 // Name: SharedStateUtils
-// Dependencies: [32, 19, 558, 568, 8649, 2]
+// Dependencies: [32, 19, 558, 568, 8681, 2]
 
-// Module 13247 (SharedStateUtils)
+// Module 13283 (SharedStateUtils)
 import c from "c" /* 568 */;
-import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8649 */;
+import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8681 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -14,20 +14,20 @@ let ReactCompilerGating = fn(558);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
   const cResult = c.c(15);
   if (cResult[0] !== url) {
-    const protocol1 = tmp(8649).getProtocol(url);
+    const protocol1 = tmp(8681).getProtocol(url);
     cResult[0] = url;
     cResult[1] = protocol1;
     let tmp4 = protocol1;
-    const tmpResult = tmp(8649);
+    const tmpResult = tmp(8681);
   } else {
     tmp4 = cResult[1];
   }
   if (cResult[2] !== url) {
-    const hostname1 = tmp(8649).getHostname(url);
+    const hostname1 = tmp(8681).getHostname(url);
     cResult[2] = url;
     cResult[3] = hostname1;
     let tmp6 = hostname1;
-    const tmpResult2 = tmp(8649);
+    const tmpResult2 = tmp(8681);
   } else {
     tmp6 = cResult[3];
   }

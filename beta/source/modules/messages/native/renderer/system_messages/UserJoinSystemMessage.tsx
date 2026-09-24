@@ -1,14 +1,14 @@
-// Module ID: 8248
-// Function ID: 8249
+// Module ID: 8280
+// Function ID: 8281
 // Name: UserJoinSystemMessage
-// Dependencies: [2045, 2067, 1078, 8223, 8249, 8260, 8261, 8264, 1119, 8225, 8227, 2]
+// Dependencies: [2045, 2067, 1078, 8255, 8281, 8292, 8293, 8296, 1119, 8257, 8259, 2]
 // Exports: createUserJoinSystemMessage
 
-// Module 8248 (UserJoinSystemMessage)
+// Module 8280 (UserJoinSystemMessage)
 import util from "util" /* 1119 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8223 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8225 */;
-import SystemMessageUtilsDefault from "SystemMessageUtils" /* 8249 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8255 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8257 */;
+import SystemMessageUtilsDefault from "SystemMessageUtils" /* 8281 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
@@ -34,11 +34,11 @@ export const createUserJoinSystemMessage = function createUserJoinSystemMessage(
       if (tmp10) {
         tmp10 = !(guild.systemChannelFlags & SystemChannelFlags.SUPPRESS_JOIN_NOTIFICATION_REPLIES);
       }
-      const tmpResult = tmp(8260);
+      const tmpResult = tmp(8292);
       if (tmpResult.computeIsStickerReplyEnabled(guildId, channel, message, tmp10)) {
-        const tmpResult3 = tmp(8261);
-        transformStickerResult = tmpResult3.transformSticker(tmp(8264).pickWelcomeSticker(message.id));
-        const tmpResult4 = tmp(8264);
+        const tmpResult3 = tmp(8293);
+        transformStickerResult = tmpResult3.transformSticker(tmp(8296).pickWelcomeSticker(message.id));
+        const tmpResult4 = tmp(8296);
       }
     }
   }
@@ -48,6 +48,6 @@ export const createUserJoinSystemMessage = function createUserJoinSystemMessage(
   obj2.sticker = transformStickerResult;
   const intl2 = tmp(1119).intl;
   obj2.stickerLabel = intl2.string(util.t["7Tj6HT"]);
-  const merged = Object.assign(tmp4(8227)(roleStyle));
+  const merged = Object.assign(tmp4(8259)(roleStyle));
   return obj2;
 };

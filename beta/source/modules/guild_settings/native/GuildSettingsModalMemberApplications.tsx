@@ -1,18 +1,18 @@
-// Module ID: 16930
-// Function ID: 16931
+// Module ID: 16940
+// Function ID: 16941
 // Name: GuildSettingsModalMemberApplications
-// Dependencies: [19, 17, 5761, 21, 4758, 580, 558, 568, 4603, 4754, 16931, 1401, 1181, 5822, 1616, 4583, 16936, 16937, 504, 1119, 8995, 8506, 7286, 2]
+// Dependencies: [19, 17, 5793, 21, 4790, 580, 558, 568, 4635, 4786, 16941, 1401, 1181, 5854, 1616, 4615, 16946, 16947, 504, 1119, 9027, 8538, 7318, 2]
 
-// Module 16930 (GuildSettingsModalMemberApplications)
+// Module 16940 (GuildSettingsModalMemberApplications)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4583 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16931 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4615 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16941 */;
 import noop from "module_19" /* 19 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5761 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5793 */;
 
 const require = globalThis.__r;
 
@@ -21,7 +21,7 @@ get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { containerInner: { paddingHorizontal: nativeDefault.space.PX_12, flex: 1, marginTop: 16 }, spinnerContainer: { padding: 32 }, footerSpinner: { paddingVertical: 16 }, spinner: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_12, flex: 1, marginTop: 16 };
 obj.spinner = { color: nativeDefault.colors.TEXT_BRAND };
@@ -44,7 +44,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((us
   }
   if (cResult[2] !== username) {
     const obj3 = { variant: "text-md/semibold", children: username };
-    const tmp9 = React5(tmp(4754).Text, obj3);
+    const tmp9 = React5(tmp(4786).Text, obj3);
     cResult[2] = username;
     cResult[3] = tmp9;
     let tmp7 = tmp9;
@@ -73,7 +73,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((us
   let tmp11 = null != tmp4;
   if (tmp11) {
     const obj5 = { variant: "text-xs/medium", children: user.username };
-    tmp11 = React5(tmp(4754).Text, obj5);
+    tmp11 = React5(tmp(4786).Text, obj5);
   }
   cResult[4] = tmp4;
   cResult[5] = user;
@@ -159,7 +159,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
         }
       }
       const obj5 = { arrow: true, icon: tmp8, label: tmp11, onPress: tmp4, start, end };
-      const tmp17 = closure_7(tmp(5822).TableRow, obj5);
+      const tmp17 = closure_7(tmp(5854).TableRow, obj5);
       cResult[8] = end;
       cResult[9] = tmp4;
       cResult[10] = start;
@@ -192,7 +192,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((join
       obj2.onPress = tmp;
       obj2.start = start;
       obj2.end = end;
-      return closure_7(joinRequest(5822).TableRow, obj2);
+      return closure_7(joinRequest(5854).TableRow, obj2);
     }
   }
 }));

@@ -1,13 +1,13 @@
-// Module ID: 17001
-// Function ID: 17002
+// Module ID: 17011
+// Function ID: 17012
 // Name: VibegrationsSelectModeIcon
-// Dependencies: [19, 21, 558, 568, 580, 4462, 8733, 2]
+// Dependencies: [19, 21, 558, 568, 580, 4494, 8765, 2]
 
-// Module 17001 (VibegrationsSelectModeIcon)
+// Module 17011 (VibegrationsSelectModeIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
+import useToken from "useToken" /* 4494 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -27,9 +27,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
   const token = useToken.useToken(INTERACTIVE_ICON_DEFAULT);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { children: null };
-    const obj3 = { id, children: React3(tmp(8733).Rect, { width: 24, height: 24, rx: 8 }) };
-    obj2.children = React3(tmp(8733).ClipPath, obj3);
-    const tmp9 = React3(tmp(8733).Defs, obj2);
+    const obj3 = { id, children: React3(tmp(8765).Rect, { width: 24, height: 24, rx: 8 }) };
+    obj2.children = React3(tmp(8765).ClipPath, obj3);
+    const tmp9 = React3(tmp(8765).Defs, obj2);
     cResult[0] = tmp9;
     let first = tmp9;
   } else {
@@ -42,8 +42,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
     const _HermesInternal = HermesInternal;
     obj4.clipPath = "url(#" + id + ")";
     const obj5 = { d, fill: token };
-    obj4.children = React3(tmp(8733).Path, obj5);
-    items[1] = React3(tmp(8733).G, obj4);
+    obj4.children = React3(tmp(8765).Path, obj5);
+    items[1] = React3(tmp(8765).G, obj4);
     size.children = items;
     const tmp17 = React4(inlineStylesDefault, size);
     cResult[1] = token;

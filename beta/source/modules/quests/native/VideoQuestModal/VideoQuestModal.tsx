@@ -1,26 +1,26 @@
-// Module ID: 15381
-// Function ID: 15382
+// Module ID: 15391
+// Function ID: 15392
 // Name: VideoQuestModal
-// Dependencies: [32, 19, 17, 15351, 1078, 21, 4758, 580, 558, 568, 15382, 11911, 7959, 15352, 8543, 4497, 5187, 1616, 7320, 15383, 15386, 15413, 7371, 11895, 11607, 11906, 5666, 11453, 2]
+// Dependencies: [32, 19, 17, 15361, 1078, 21, 4790, 580, 558, 568, 15392, 11947, 7991, 15362, 8575, 4529, 5219, 1616, 7352, 15393, 15396, 15423, 7403, 11931, 11643, 11942, 5698, 11489, 2]
 
-// Module 15381 (VideoQuestModal)
+// Module 15391 (VideoQuestModal)
 import nativeDefault from "native" /* 580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import spring from "spring" /* 5187 */;
-import QuestTypes from "QuestTypes" /* 5666 */;
-import AnalyticsActions from "AnalyticsActions" /* 7959 */;
-import QuestUtils from "QuestUtils" /* 11895 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 11906 */;
-import applyOrientationLock2 from "applyOrientationLock" /* 11911 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 15352 */;
-import VideoQuestModalContextDefault from "VideoQuestModalContext" /* 15382 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import spring from "spring" /* 5219 */;
+import QuestTypes from "QuestTypes" /* 5698 */;
+import AnalyticsActions from "AnalyticsActions" /* 7991 */;
+import QuestUtils from "QuestUtils" /* 11931 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 11942 */;
+import applyOrientationLock2 from "applyOrientationLock" /* 11947 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 15362 */;
+import VideoQuestModalContextDefault from "VideoQuestModalContext" /* 15392 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
-let closure_6 = fn(15351).QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT;
+let closure_6 = fn(15361).QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT;
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
@@ -28,7 +28,7 @@ let c10 = -100;
 let c11 = 0.5625;
 let top = { mass: 1.9, damping: 18, stiffness: 80, overshootClamping: true };
 const VideoQuestModalSteps = { WATCH_VIDEO: 0, [0]: "WATCH_VIDEO", POST_WATCH_VIDEO: 1, [1]: "POST_WATCH_VIDEO" };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { root: { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM }, pillarboxed: { alignSelf: "center" }, wrapper: { flexDirection: "column", flexGrow: 1, flexShrink: 1, zIndex: 1 }, contentWrapper: { flex: 1 }, contentBackground: null, modalContentWrapper: null, backgroundWrapper: null };
 let obj5 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);

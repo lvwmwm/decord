@@ -1,9 +1,9 @@
-// Module ID: 10352
-// Function ID: 10353
+// Module ID: 10391
+// Function ID: 10392
 // Name: StickyWrapper
 // Dependencies: [19, 17, 21, 558, 568, 1369, 2]
 
-// Module 10352 (StickyWrapper)
+// Module 10391 (StickyWrapper)
 import c from "c" /* 568 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1369 */;
 import noop from "module_19" /* 19 */;

@@ -1,16 +1,16 @@
-// Module ID: 16656
-// Function ID: 16657
+// Module ID: 16666
+// Function ID: 16667
 // Name: FavoritesGuildCoachmarkGraphic
-// Dependencies: [17, 21, 4758, 580, 558, 568, 5907, 1181, 2]
+// Dependencies: [17, 21, 4790, 580, 558, 568, 5939, 1181, 2]
 
-// Module 16656 (FavoritesGuildCoachmarkGraphic)
+// Module 16666 (FavoritesGuildCoachmarkGraphic)
 import _mod17 from "module_17" /* 17 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import native2 from "native" /* 5907 */;
+import native2 from "native" /* 5939 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(6);
   const tmp4 = closure_5();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = React3(tmp(5907).FavoritesSpotIllustration, { width: 160, height: 90 });
+    const tmp7 = React3(tmp(5939).FavoritesSpotIllustration, { width: 160, height: 90 });
     cResult[0] = tmp7;
     let first = tmp7;
   } else {

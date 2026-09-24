@@ -1,17 +1,14 @@
 // Module ID: 7097
 // Function ID: 7098
-// Dependencies: []
+// Dependencies: [17, 6896]
 
 // Module 7097
+import _mod17 from "module_17" /* 17 */;
+import value2 from "value2" /* 6896 */;
 
-export default function _arrayLikeToArray(arg0, arg1) {
-  let length = arg1;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-};
+const StyleSheet = _mod17.StyleSheet;
+const obj = { container: { padding: 10, cursor: "grab" }, indicator: null };
+const size = { alignSelf: "center", width: 7.5 * value2.WINDOW_WIDTH / 100, height: 4, borderRadius: 4, backgroundColor: "rgba(0, 0, 0, 0.75)" };
+obj.indicator = size;
+
+export const styles = StyleSheet.create(obj);

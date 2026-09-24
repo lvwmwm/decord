@@ -1,13 +1,13 @@
-// Module ID: 8262
-// Function ID: 8263
+// Module ID: 8294
+// Function ID: 8295
 // Name: NativeLottieView
-// Dependencies: [19, 17, 21, 1368, 8263, 113, 558, 568, 2]
+// Dependencies: [19, 17, 21, 1368, 8295, 113, 558, 568, 2]
 
-// Module 8262 (NativeLottieView)
+// Module 8294 (NativeLottieView)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import codegenNativeCommandsDefault from "codegenNativeCommands" /* 113 */;
-import LottieNodeNativeComponentDefault from "LottieNodeNativeComponent" /* 8263 */;
+import LottieNodeNativeComponentDefault from "LottieNodeNativeComponent" /* 8295 */;
 import noop_mod from "module_19" /* 19 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

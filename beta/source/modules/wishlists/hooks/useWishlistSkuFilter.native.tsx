@@ -1,13 +1,13 @@
-// Module ID: 11094
-// Function ID: 11095
+// Module ID: 11130
+// Function ID: 11131
 // Name: useWishlistSkuFilter
-// Dependencies: [19, 7474, 1078, 558, 568, 9073, 7478, 2]
+// Dependencies: [19, 7506, 1078, 558, 568, 9105, 7510, 2]
 
-// Module 11094 (useWishlistSkuFilter)
+// Module 11130 (useWishlistSkuFilter)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-let closure_3 = fn(7474).WishlistRecommendationReason;
+let closure_3 = fn(7506).WishlistRecommendationReason;
 const SKUProductLines = fn(1078).SKUProductLines;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

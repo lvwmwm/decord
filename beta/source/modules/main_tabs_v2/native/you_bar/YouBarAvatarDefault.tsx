@@ -1,27 +1,27 @@
-// Module ID: 16729
-// Function ID: 16730
+// Module ID: 16739
+// Function ID: 16740
 // Name: YouBarAvatarDefault
-// Dependencies: [19, 17, 15354, 1078, 21, 4758, 580, 558, 568, 4462, 1181, 9092, 9035, 2]
+// Dependencies: [19, 17, 15364, 1078, 21, 4790, 580, 558, 568, 4494, 1181, 9124, 9067, 2]
 
-// Module 16729 (YouBarAvatarDefault)
+// Module 16739 (YouBarAvatarDefault)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import useToken from "useToken" /* 4462 */;
-import ReactionIcon from "ReactionIcon" /* 9035 */;
-import ClipView from "ClipView" /* 9092 */;
+import useToken from "useToken" /* 4494 */;
+import ReactionIcon from "ReactionIcon" /* 9067 */;
+import ClipView from "ClipView" /* 9124 */;
 import noop from "module_19" /* 19 */;
 
 const ClipViewDefault = ClipView;
 
 require = fn;
 const View = fn(17).View;
-const YouBarConstants = fn(15354);
+const YouBarConstants = fn(15364);
 ({ YOU_BAR_AVATAR_LARGE_SIZE: closure_4, YOU_BAR_AVATAR_PLACEHOLDER_SIZE: hasOwnProperty, YOU_BAR_STATUS_INSET: metroRequire, YOU_BAR_HEIGHT: closure_7, YOU_BAR_LARGE_STATUS_SIZE: closure_8, YOU_BAR_PADDING: closure_9, YOU_BAR_STATUS_OFFSET: c10 } = YouBarConstants);
 const StatusTypes = fn(1078).StatusTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { placeholderAvatar: { borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, justifyContent: "center", alignItems: "center" }, placeholderAvatarBackground: null, avatarShadow: null };
 let rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: nativeDefault.radii.round };
 obj.placeholderAvatarBackground = rect;
@@ -51,7 +51,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const result1 = first / 4;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const diff1 = diff - result1 * 2;
-    const point = { shape: tmp(9092).CutoutShape.Circle, x: diff1, y: diff1, size: 2 * sum };
+    const point = { shape: tmp(9124).CutoutShape.Circle, x: diff1, y: diff1, size: 2 * sum };
     cResult[1] = point;
     let tmp16 = point;
   } else {
@@ -97,7 +97,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj4 = { size: "custom", style: null, color: "background-mod-strong" };
       const size2 = { width: tmp11, height: tmp11 };
       obj4.style = size2;
-      const tmp28 = __initData(tmp(9035).ReactionIcon, obj4);
+      const tmp28 = __initData(tmp(9067).ReactionIcon, obj4);
       cResult[11] = tmp28;
       let tmp26 = tmp28;
     } else {
@@ -159,7 +159,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const result = num / 2;
   const sum = result + tmp2(1181).STATUS_PADDING;
   const diff = tmp7 - sum - num / 4 * 2;
-  const point = { shape: tmp2(9092).CutoutShape.Circle, x: diff, y: diff, size: 2 * sum };
+  const point = { shape: tmp2(9124).CutoutShape.Circle, x: diff, y: diff, size: 2 * sum };
   const obj3 = { style: null, children: null };
   size = { height: tmp2(1181).AVATAR_SIZE_MAP[tmp6], width: tmp2(1181).AVATAR_SIZE_MAP[tmp6], position: "relative" };
   obj3.style = size;
@@ -193,7 +193,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const result1 = size / 4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const diff1 = diff - result1 * 2;
-    const point = { shape: tmp(9092).CutoutShape.Circle, x: diff1 + v65535, y: diff1 + v65535, size: 2 * sum };
+    const point = { shape: tmp(9124).CutoutShape.Circle, x: diff1 + v65535, y: diff1 + v65535, size: 2 * sum };
     cResult[0] = point;
     let first = point;
   } else {
@@ -255,7 +255,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj4 = { size: "custom", style: null, color: "background-mod-strong" };
       const size3 = { width: tmp(1181).AVATAR_SIZE_MAP[hasOwnProperty], height: tmp(1181).AVATAR_SIZE_MAP[hasOwnProperty] };
       obj4.style = size3;
-      const tmp34 = __initData(tmp(9035).ReactionIcon, obj4);
+      const tmp34 = __initData(tmp(9067).ReactionIcon, obj4);
       cResult[13] = tmp34;
       let tmp31 = tmp34;
     } else {

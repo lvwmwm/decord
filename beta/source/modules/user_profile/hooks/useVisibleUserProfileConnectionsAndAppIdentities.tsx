@@ -1,13 +1,13 @@
-// Module ID: 13394
-// Function ID: 13395
+// Module ID: 13430
+// Function ID: 13431
 // Name: useVisibleUserProfileConnectionsAndAppIdentities
-// Dependencies: [19, 558, 568, 13395, 13396, 7415, 1374, 5502, 2]
+// Dependencies: [19, 558, 568, 13431, 13432, 7447, 1374, 5534, 2]
 
-// Module 13394 (useVisibleUserProfileConnectionsAndAppIdentities)
-import PlatformsDefault from "Platforms" /* 5502 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7415 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 13395 */;
-import useUserProfileConnectionsDefault from "useUserProfileConnections" /* 13396 */;
+// Module 13430 (useVisibleUserProfileConnectionsAndAppIdentities)
+import PlatformsDefault from "Platforms" /* 5534 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7447 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 13431 */;
+import useUserProfileConnectionsDefault from "useUserProfileConnections" /* 13432 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

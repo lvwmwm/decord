@@ -1,13 +1,13 @@
-// Module ID: 9960
-// Function ID: 9961
+// Module ID: 9992
+// Function ID: 9993
 // Name: useIsSecureFramesKeyInconsistent
-// Dependencies: [19, 4781, 4797, 558, 568, 9948, 504, 2]
+// Dependencies: [19, 4813, 4829, 558, 568, 9980, 504, 2]
 
-// Module 9960 (useIsSecureFramesKeyInconsistent)
-import SecureFramesUtils from "SecureFramesUtils" /* 9948 */;
+// Module 9992 (useIsSecureFramesKeyInconsistent)
+import SecureFramesUtils from "SecureFramesUtils" /* 9980 */;
 import noop from "module_19" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4797 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4813 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4829 */;
 
 require = fn;
 let ReactCompilerGating = fn(558);

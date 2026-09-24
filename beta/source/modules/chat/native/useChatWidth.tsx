@@ -1,14 +1,14 @@
-// Module ID: 11647
-// Function ID: 11648
+// Module ID: 11683
+// Function ID: 11684
 // Name: useChatWidth
-// Dependencies: [19, 4619, 4621, 11648, 558, 11649, 2]
+// Dependencies: [19, 4651, 4653, 11684, 558, 11685, 2]
 // Exports: getChatWidth
 
-// Module 11647 (useChatWidth)
-import useChatLayout from "useChatLayout" /* 4619 */;
-import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4621 */;
-import useDrawerWidth from "useDrawerWidth" /* 11648 */;
-import ChatViewWidthContextDefault from "ChatViewWidthContext" /* 11649 */;
+// Module 11683 (useChatWidth)
+import useChatLayout from "useChatLayout" /* 4651 */;
+import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4653 */;
+import useDrawerWidth from "useDrawerWidth" /* 11684 */;
+import ChatViewWidthContextDefault from "ChatViewWidthContext" /* 11685 */;
 import noop from "module_19" /* 19 */;
 
 const useChatLayoutDefault = useChatLayout;

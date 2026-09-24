@@ -1,20 +1,20 @@
-// Module ID: 12886
-// Function ID: 12887
+// Module ID: 12922
+// Function ID: 12923
 // Name: HubEmailConnectionGuildSelect
-// Dependencies: [5, 32, 19, 17, 12866, 21, 4758, 580, 558, 568, 2059, 5799, 8876, 1119, 4754, 1616, 5188, 1181, 1488, 7621, 7298, 12881, 4659, 12876, 2]
+// Dependencies: [5, 32, 19, 17, 12902, 21, 4790, 580, 558, 568, 2059, 5831, 8908, 1119, 4786, 1616, 5220, 1181, 1488, 7653, 7330, 12917, 4691, 12912, 2]
 // Exports: default
 
-// Module 12886 (HubEmailConnectionGuildSelect)
+// Module 12922 (HubEmailConnectionGuildSelect)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import GuildIconDefault from "GuildIcon" /* 5799 */;
-import Form from "Form" /* 8876 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import GuildIconDefault from "GuildIcon" /* 5831 */;
+import Form from "Form" /* 8908 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -22,10 +22,10 @@ import noop from "module_19" /* 19 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, FlatList: closure_7 } = get_ActivityIndicator);
-const HubEmailConnectionSteps = fn(12866).HubEmailConnectionSteps;
+const HubEmailConnectionSteps = fn(12902).HubEmailConnectionSteps;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { rowContainer: { marginHorizontal: 16, borderRadius: nativeDefault.radii.sm, padding: 12, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL }, guildIcon: null, separator: null, header: null, title: null, footerSafeAreaContainer: null, footerContainer: null, error: null };
 let obj3 = { marginHorizontal: 16, borderRadius: nativeDefault.radii.sm, padding: 12, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
 obj2.guildIcon = { borderRadius: nativeDefault.radii.sm };
@@ -61,7 +61,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp15 = options(tmp(8876).FormRow.Arrow, {});
+      const tmp15 = options(tmp(8908).FormRow.Arrow, {});
       cResult[5] = tmp15;
       let tmp13 = tmp15;
     } else {
@@ -80,7 +80,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj3 = { onPress: signup, disabled: loading, DEPRECATED_style: tmp4.rowContainer, label: guildInfo.name, leading: tmp10, trailing: tmp13 };
-    const tmp18 = options(tmp(8876).FormRow, obj3);
+    const tmp18 = options(tmp(8908).FormRow, obj3);
     cResult[6] = guildInfo.name;
     cResult[7] = loading;
     cResult[8] = signup;
@@ -125,7 +125,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp4.title) {
     const obj2 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: first };
-    const tmp9 = options(tmp(4754).Text, obj2);
+    const tmp9 = options(tmp(4786).Text, obj2);
     cResult[1] = tmp4.title;
     cResult[2] = tmp9;
     let tmp7 = tmp9;
@@ -232,7 +232,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp13 = tmp16Result;
     }
     const obj6 = { variant: "secondary", loading, disabled: loading, grow: true, text: tmp8, onPress: onFooterButtonPressed };
-    const tmp12 = options(tmp(5188).Button, obj6);
+    const tmp12 = options(tmp(5220).Button, obj6);
     cResult[6] = loading;
     cResult[7] = onFooterButtonPressed;
     cResult[8] = tmp12;
@@ -349,7 +349,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
                   c3 = 2;
                   c4 = 3;
                   v3 = 1;
-                  const obj5 = { value: email(12881).sendVerificationEmail(email, true, id), done: false };
+                  const obj5 = { value: email(12917).sendVerificationEmail(email, true, id), done: false };
                   return obj5;
                 }
               } else if (1 === tmp8) {
@@ -360,7 +360,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
                 if (2 === tmp8) {
                   c3 = 1;
                   closure_128_0 = closure_2;
-                  const aPIError = new id(4659).APIError(closure_128_0);
+                  const aPIError = new id(4691).APIError(closure_128_0);
                   v3(aPIError);
                   c3 = 0;
                   closure_1_7(false);

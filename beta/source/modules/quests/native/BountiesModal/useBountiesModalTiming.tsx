@@ -1,14 +1,14 @@
-// Module ID: 15285
-// Function ID: 15286
+// Module ID: 15295
+// Function ID: 15296
 // Name: useBountiesModalTiming
-// Dependencies: [32, 19, 5663, 558, 568, 2]
+// Dependencies: [32, 19, 5695, 558, 568, 2]
 
-// Module 15285 (useBountiesModalTiming)
+// Module 15295 (useBountiesModalTiming)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-let closure_4 = fn(5663).BOUNTY_CTA_TIMER_MILLISECONDS;
+let closure_4 = fn(5695).BOUNTY_CTA_TIMER_MILLISECONDS;
 const BountyVideoEndMode = { END_CARD: "END_CARD", END_CARD_WITH_CTA: "END_CARD_WITH_CTA", LOOP: "LOOP", APP_STORE_LOOP: "APP_STORE_LOOP" };
 const ReactCompilerGating = fn(558);
 const size = fn(2);

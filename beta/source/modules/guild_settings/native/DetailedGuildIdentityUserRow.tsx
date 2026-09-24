@@ -1,24 +1,24 @@
-// Module ID: 11248
-// Function ID: 11249
+// Module ID: 11284
+// Function ID: 11285
 // Name: DetailedGuildIdentityUserRow
-// Dependencies: [19, 17, 1376, 21, 4758, 580, 558, 568, 4910, 4603, 9879, 1181, 504, 8876, 5822, 2]
+// Dependencies: [19, 17, 1376, 21, 4790, 580, 558, 568, 4942, 4635, 9911, 1181, 504, 8908, 5854, 2]
 
-// Module 11248 (DetailedGuildIdentityUserRow)
+// Module 11284 (DetailedGuildIdentityUserRow)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
-import DiscordTagDefault from "DiscordTag" /* 9879 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4942 */;
+import DiscordTagDefault from "DiscordTag" /* 9911 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
-const UserUtilsDefault = tmp6(4603);
+const UserUtilsDefault = tmp6(4635);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { mainIdentity: { flexDirection: "row", alignItems: "center" }, primaryAvatar: { marginRight: nativeDefault.space.PX_4 }, mainTag: null };
 let obj3 = { marginRight: nativeDefault.space.PX_4 };
 obj.mainTag = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, fontSize: 12 };
@@ -123,8 +123,8 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   const tmp = closure_7();
   let nickname = NicknameUtilsDefault.getNickname(guildId, undefined, user);
   if (nickname == null) {
-    nickname = tmp2(4603).getGlobalName(user);
-    const tmp2Result = tmp2(4603);
+    nickname = tmp2(4635).getGlobalName(user);
+    const tmp2Result = tmp2(4635);
   }
   const hasAvatarForGuildResult = user.hasAvatarForGuild(guildId);
   const obj2 = { style: { height: height.contentHeight }, children: null };
@@ -138,7 +138,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     }
     const items1 = [tmp8Result, ];
     const obj5 = { user, usernameStyle: tmp.mainTag, hideBotTag: true };
-    items1[1] = tmp8(tmp2(9879), obj5);
+    items1[1] = tmp8(tmp2(9911), obj5);
     obj3.children = items1;
     let tmp6Result = tmp6(tmp7, obj3);
   } else {
@@ -216,7 +216,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
                 }
               }
               const obj2 = { accessibilityLabel, arrow, disabled, end, icon: tmp7, label: tmp10, onPress, start, subLabel, trailing, accessibilityRole, accessibilityState };
-              const tmp16 = closure_5(FormRow(5822).TableRow, obj2);
+              const tmp16 = closure_5(FormRow(5854).TableRow, obj2);
               cResult[29] = accessibilityLabel;
               cResult[30] = accessibilityRole;
               cResult[31] = accessibilityState;
@@ -278,7 +278,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
                 }
               }
             }
-            FormRow = FormRow(8876).FormRow;
+            FormRow = FormRow(8908).FormRow;
             const obj5 = { accessibilityLabel, disabled, leading: tmp17, label: tmp20, onPress, subLabel, trailing, accessibilityRole, accessibilityState };
             tmp = closure_5(FormRow, obj5);
             cResult[11] = accessibilityLabel;
@@ -342,7 +342,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     obj2.trailing = trailing;
     obj2.accessibilityRole = accessibilityRole;
     obj2.accessibilityState = accessibilityState;
-    let tmp2Result = tmp2(tmp(8876).FormRow, obj2);
+    let tmp2Result = tmp2(tmp(8908).FormRow, obj2);
   } else {
     const obj4 = { accessibilityLabel, arrow: arrow.arrow, disabled, end, icon: null, label: null, onPress: null, start: null, subLabel: null, trailing: null, accessibilityRole: null, accessibilityState: null };
     let tmp2Result2 = leading;
@@ -359,7 +359,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     obj4.trailing = trailing;
     obj4.accessibilityRole = accessibilityRole;
     obj4.accessibilityState = accessibilityState;
-    tmp2Result = tmp2(tmp(5822).TableRow, obj4);
+    tmp2Result = tmp2(tmp(5854).TableRow, obj4);
   }
 }));
 export const DetailedGuildIdentityUser = memoResult;

@@ -1,17 +1,17 @@
-// Module ID: 16446
-// Function ID: 16447
+// Module ID: 16456
+// Function ID: 16457
 // Name: useFavoritesGuildCategoryFullNotice
-// Dependencies: [2048, 2058, 1078, 558, 568, 504, 10606, 2070, 1119, 3328, 2]
+// Dependencies: [2048, 2058, 1078, 558, 568, 504, 10642, 2070, 1119, 3360, 2]
 
-// Module 16446 (useFavoritesGuildCategoryFullNotice)
+// Module 16456 (useFavoritesGuildCategoryFullNotice)
 import c from "c" /* 568 */;
-import _modDef3328 from "module_3328" /* 3328 */;
+import _modDef3360 from "module_3360" /* 3360 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
 
 const initialize = intl(504);
 const util = intl(1119);
 const FavoritesUtils = intl(2070);
-const FavoritesHooks = intl(10606);
+const FavoritesHooks = intl(10642);
 require = fn;
 let closure_4 = fn(2058).FAVORITES_AUTO_ADDED_THREADS_CATEGORY_NAME;
 const ChannelTypes = fn(1078).ChannelTypes;
@@ -54,9 +54,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((getGuildId, str)
               if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
                 const obj2 = { label: null, tooltip: null };
                 const intl2 = util.intl;
-                obj2.label = intl2.string(_modDef3328.WsUrMD);
+                obj2.label = intl2.string(_modDef3360.WsUrMD);
                 intl = util.intl;
-                stringResult = intl.string(_modDef3328.dW9Kov);
+                stringResult = intl.string(_modDef3360.dW9Kov);
                 obj2.tooltip = stringResult;
                 cResult[2] = obj2;
               }
@@ -88,9 +88,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((getGuildId, str)
             if (formatted === closure_4.toLowerCase()) {
               const obj2 = { label: null, tooltip: null };
               const intl = tmp(1119).intl;
-              obj2.label = intl.string(_modDef3328.WsUrMD);
+              obj2.label = intl.string(_modDef3360.WsUrMD);
               const intl2 = tmp(1119).intl;
-              obj2.tooltip = intl2.string(_modDef3328.dW9Kov);
+              obj2.tooltip = intl2.string(_modDef3360.dW9Kov);
               tmp6 = obj2;
             }
             str = str.trim();

@@ -1,13 +1,13 @@
-// Module ID: 15218
-// Function ID: 15219
+// Module ID: 15228
+// Function ID: 15229
 // Name: VrHeadsetIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 15219, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 15229, 4493, 2]
 
-// Module 15218 (VrHeadsetIcon)
+// Module 15228 (VrHeadsetIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod15219 from "module_15219" /* 15219 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod15229 from "module_15229" /* 15229 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const VrHeadsetIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(15219);
+    const tmpResult = tmp(15229);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const VrHeadsetIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((ar
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15219, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15229, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

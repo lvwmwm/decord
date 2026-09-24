@@ -1,38 +1,38 @@
-// Module ID: 10927
-// Function ID: 10928
+// Module ID: 10963
+// Function ID: 10964
 // Name: ImageCarousel
-// Dependencies: [19, 17, 5107, 5106, 10928, 21, 4758, 580, 558, 568, 4497, 4759, 1181, 5187, 38, 5346, 504, 10929, 11517, 11532, 8519, 4754, 1119, 8550, 7211, 5341, 7181, 1482, 9419, 10931, 2]
+// Dependencies: [19, 17, 5139, 5138, 10964, 21, 4790, 580, 558, 568, 4529, 4791, 1181, 5219, 38, 5378, 504, 10965, 11553, 11568, 8551, 4786, 1119, 8582, 7243, 5373, 7213, 1482, 9451, 10967, 2]
 
-// Module 10927 (ImageCarousel)
+// Module 10963 (ImageCarousel)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import useWindowDimensions from "useWindowDimensions" /* 1482 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import timing from "timing" /* 4759 */;
-import spring from "spring" /* 5187 */;
-import Upload from "Upload" /* 5346 */;
-import EyeIcon from "EyeIcon" /* 7211 */;
-import PlayIcon from "PlayIcon" /* 8550 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9419 */;
-import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10929 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10931 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 11517 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4529 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import timing from "timing" /* 4791 */;
+import spring from "spring" /* 5219 */;
+import Upload from "Upload" /* 5378 */;
+import EyeIcon from "EyeIcon" /* 7243 */;
+import PlayIcon from "PlayIcon" /* 8582 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9451 */;
+import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10965 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10967 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 11553 */;
 import noop from "module_19" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5106 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5138 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const DraftType = fn(5107).DraftType;
-const ImageCarouselConstants = fn(10928);
+const DraftType = fn(5139).DraftType;
+const ImageCarouselConstants = fn(10964);
 const IMAGE_CAROUSEL_EXPERIMENT_TILE_MARGIN = ImageCarouselConstants.IMAGE_CAROUSEL_EXPERIMENT_TILE_MARGIN;
 const IMAGE_CAROUSEL_TILE_CLOSE_BUTTON_PADDING = ImageCarouselConstants.IMAGE_CAROUSEL_TILE_CLOSE_BUTTON_PADDING;
 let closure_10 = ImageCarouselConstants.IMAGE_CAROUSEL_TILE_HEIGHT;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { width: "100%" }, pressableContainer: { marginHorizontal: 4 }, tileContainer: { position: "relative", minWidth: 60, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden", borderRadius: nativeDefault.radii.md - 1 }, decorationsContainer: null, highlightedTileContainer: null, closeButton: null, scrollview: null, closeContainer: null, closeButtonIcon: null, altTagText: null, iconContainer: null, spoilerOverlay: null, footerRightContainer: null };
 let obj4 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -66,7 +66,7 @@ let ReactCompilerGating = fn(558);
 let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = sharedValue(568).c(5);
   let obj = sharedValue(568);
-  sharedValue = sharedValue(4497).useSharedValue(0);
+  sharedValue = sharedValue(4529).useSharedValue(0);
   if (cResult[0] !== sharedValue) {
     const fn = function o() {
       const result = sharedValue.set(1);
@@ -94,11 +94,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       obj.transform = items;
       return obj;
     };
-    let obj3 = { withTiming: tmp(4759).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: tmp(1181).STANDARD_EASING, withSpring: tmp(5187).withSpring };
+    let obj3 = { withTiming: tmp(4791).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: tmp(1181).STANDARD_EASING, withSpring: tmp(5219).withSpring };
     fn2.__closure = obj3;
     fn2.__workletHash = 14689938623095;
     fn2.__initData = __initData;
-    return tmp(4497).useAnimatedStyle(fn2);
+    return tmp(4529).useAnimatedStyle(fn2);
   }
   let items = [sharedValue, arg0];
   cResult[2] = sharedValue;
@@ -106,12 +106,12 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = items;
   tmp6 = items;
 }) : ((arg0) => {
-  sharedValue = sharedValue(4497).useSharedValue(0);
+  sharedValue = sharedValue(4529).useSharedValue(0);
   let items = [sharedValue, arg0];
   const effect = noop.useEffect(() => {
     const result = sharedValue.set(1);
   }, items);
-  let obj = sharedValue(4497);
+  let obj = sharedValue(4529);
   const fn = function o() {
     const obj = { opacity: null, transform: null };
     const obj3 = { duration: 300, easing: null };
@@ -124,8 +124,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj.transform = items;
     return obj;
   };
-  let obj2 = sharedValue(4497);
-  fn.__closure = { withTiming: sharedValue(4759).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: sharedValue(1181).STANDARD_EASING, withSpring: sharedValue(5187).withSpring };
+  let obj2 = sharedValue(4529);
+  fn.__closure = { withTiming: sharedValue(4791).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: sharedValue(1181).STANDARD_EASING, withSpring: sharedValue(5219).withSpring };
   fn.__workletHash = 1893609222612;
   fn.__initData = __initData2;
   return obj2.useAnimatedStyle(fn);
@@ -603,7 +603,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEdit) => {
     let tmp6Result = null;
     if (isThumbnail) {
       const obj2 = { style: tmp5.footerRightContainer, children: null };
-      const obj3 = { source: tmp3(11532), size: native.Icon.Sizes.SMALL_14 };
+      const obj3 = { source: tmp3(11568), size: native.Icon.Sizes.SMALL_14 };
       obj2.children = tmp6(native.Icon, obj3);
       tmp6Result = tmp6(closure_2_4, obj2);
     }
@@ -612,7 +612,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEdit) => {
     let tmp6Result5 = null;
     if (stateFromStores) {
       const obj5 = { style: tmp5.spoilerOverlay };
-      tmp6Result5 = tmp6(tmp3(8519), obj5);
+      tmp6Result5 = tmp6(tmp3(8551), obj5);
     }
     const items2 = [tmp6Result5, , ];
     let tmp6Result6 = null;

@@ -1,16 +1,16 @@
-// Module ID: 17025
-// Function ID: 17026
+// Module ID: 17035
+// Function ID: 17036
 // Name: VibegrationsConjureShimmer
-// Dependencies: [32, 19, 17, 4750, 21, 4758, 558, 568, 504, 4497, 4759, 676, 5881, 5198, 2]
+// Dependencies: [32, 19, 17, 4782, 21, 4790, 558, 568, 504, 4529, 4791, 676, 5913, 5230, 2]
 // Exports: shouldSweep
 
-// Module 17025 (VibegrationsConjureShimmer)
+// Module 17035 (VibegrationsConjureShimmer)
 import _modDef676 from "module_676" /* 676 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 const require = globalThis.__r;
 
@@ -22,7 +22,7 @@ const jsxProd = fn(21);
 const locations = [0, 0.4, 0.5, 0.6, 1];
 const start = { x: 0, y: 0.5 };
 const end = { x: 1, y: 0.5 };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_13 = createStyles.createStyles({ root: { position: "relative" }, band: { position: "absolute", top: 0, bottom: 0 }, fill: { flex: 1 } });
 let closure_14 = { code: "function VibegrationsConjureShimmerTsx1(){const{bandWidth,progress,width}=this.__closure;return{transform:[{translateX:-bandWidth+progress.get()*(bandWidth+width)}]};}" };
 const __initData = { code: "function VibegrationsConjureShimmerTsx2(){const{bandWidth,progress,width}=this.__closure;return{transform:[{translateX:-bandWidth+progress.get()*(bandWidth+width)}]};}" };
@@ -317,7 +317,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   dependencyMap = tmp5[1];
   let obj = tint(504);
   const tmp2 = tint;
-  sharedValue = tint(4497).useSharedValue(0);
+  sharedValue = tint(4529).useSharedValue(0);
   if (live) {
     live = !stateFromStores;
   }
@@ -351,7 +351,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items[4] = cssResult;
     return items;
   }, items2);
-  let obj3 = tint(4497);
+  let obj3 = tint(4529);
   let fn = function j() {
     const obj = { transform: null };
     const items = [{ translateX: -c5 + sharedValue.get() * (c5 + first) }];
@@ -361,7 +361,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   fn.__closure = { bandWidth: result, progress: sharedValue, width };
   fn.__workletHash = 12946755285226;
   fn.__initData = __initData;
-  const animatedStyle = tmp2(4497).useAnimatedStyle(fn);
+  const animatedStyle = tmp2(4529).useAnimatedStyle(fn);
   let obj4 = {
     style: tmp.root,
     onLayout: live.useCallback((nativeEvent) => {
@@ -390,11 +390,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items4[2] = animatedStyle;
     obj8.style = items4;
     const obj10 = { style: tmp.fill, start, end, colors: memo, locations };
-    obj8.children = closure_8(width(5198), obj10);
-    obj6.children = closure_8(width(4497).View, obj8);
-    obj5.children = closure_8(width(5881), obj6);
+    obj8.children = closure_8(width(5230), obj10);
+    obj6.children = closure_8(width(4529).View, obj8);
+    obj5.children = closure_8(width(5913), obj6);
     tmp14 = closure_8(tmp13, obj5);
-    const tmp18 = width(5881);
+    const tmp18 = width(5913);
   }
   items3[1] = tmp14;
   obj4.children = items3;

@@ -1,24 +1,24 @@
-// Module ID: 13564
-// Function ID: 13565
+// Module ID: 13600
+// Function ID: 13601
 // Name: IconActionButton
-// Dependencies: [377, 19, 21, 4758, 580, 1368, 558, 568, 1181, 5195, 4754, 5341, 8117, 2]
+// Dependencies: [377, 19, 21, 4790, 580, 1368, 558, 568, 1181, 5227, 4786, 5373, 8149, 2]
 
-// Module 13564 (IconActionButton)
+// Module 13600 (IconActionButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import useFontScale from "useFontScale" /* 5195 */;
-import Pressables from "Pressables" /* 5341 */;
-import BadgeDefault from "Badge" /* 8117 */;
+import useFontScale from "useFontScale" /* 5227 */;
+import Pressables from "Pressables" /* 5373 */;
+import BadgeDefault from "Badge" /* 8149 */;
 import _readOnlyError from "_readOnlyError" /* 377 */;
 import noop from "module_19" /* 19 */;
 
-const Badge = tmp(8117);
+const Badge = tmp(8149);
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles(() => {
   const obj = { actionIconButtonPressable: { minWidth: 32, minHeight: 32, borderRadius: 20, marginEnd: 12, display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "row", paddingRight: 12, paddingLeft: 12 }, withoutMargin: { marginEnd: 0 }, filled: {}, outlined: null, roundButton: null, actionIcon: null, actionText: null, unreadBadgeLeft: null, unreadBadgeRight: null, unreadBadgeMask: null, countStyle: null };
   const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
@@ -223,7 +223,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((noMargin) => {
                         const obj2 = { hitSlop, onPress, onLongPress, disabled, accessibilityRole: "button", accessibilityLabel, style: tmp11, children: null };
                         const items = [tmp12, tmp16, tmp19, tmp22];
                         obj2.children = items;
-                        const tmp28 = hasOwnProperty(tmp(5341).PressableOpacity, obj2);
+                        const tmp28 = hasOwnProperty(tmp(5373).PressableOpacity, obj2);
                         cResult[21] = accessibilityLabel;
                         cResult[22] = disabled;
                         cResult[23] = hitSlop;
@@ -262,7 +262,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((noMargin) => {
               let tmp17 = tmp7;
               if (tmp7) {
                 const obj5 = { variant: "text-sm/bold", color: buttonTextColor, style: tmp4.actionText, children: buttonText };
-                tmp17 = React4(tmp(4754).Text, obj5);
+                tmp17 = React4(tmp(4786).Text, obj5);
               }
               cResult[10] = buttonText;
               cResult[11] = buttonTextColor;
@@ -329,7 +329,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((noMargin) => {
   const items1 = [React4(closure_7, { IconComponent, color, source }), , , ];
   if (tmp10Result) {
     const obj2 = { variant: "text-sm/bold", color: buttonTextColor, style: tmp.actionText, children: buttonText };
-    tmp10Result = tmp10(tmp2(4754).Text, obj2);
+    tmp10Result = tmp10(tmp2(4786).Text, obj2);
   }
   items1[1] = tmp10Result;
   let tmp10Result2 = null;

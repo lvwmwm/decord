@@ -1,21 +1,21 @@
-// Module ID: 11327
-// Function ID: 11328
+// Module ID: 11363
+// Function ID: 11364
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1616, 4961, 7788, 7429, 1119, 5846, 4754, 2582, 11328, 8698, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1616, 4993, 7820, 7461, 1119, 5878, 4786, 2582, 11364, 8730, 2]
 
-// Module 11327 (CollectiblesShopGiftBadgePostPurchaseModal)
+// Module 11363 (CollectiblesShopGiftBadgePostPurchaseModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import _modDef2582 from "module_2582" /* 2582 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
-import XSmallIcon from "XSmallIcon" /* 5846 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7788 */;
-import ModalScreen from "ModalScreen" /* 8698 */;
-import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 11328 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4993 */;
+import XSmallIcon from "XSmallIcon" /* 5878 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7461 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7820 */;
+import ModalScreen from "ModalScreen" /* 8730 */;
+import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 11364 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,7 +23,7 @@ get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_8 = createStyles.createStyles((paddingTop) => {
   const obj = { header: null, closeButton: null, closeIcon: null };
   const rect = { position: "absolute", top: 0, left: 0, right: 0, height: paddingTop + 56, paddingTop, zIndex: 1, flexDirection: "row", alignItems: "center", justifyContent: "center" };
@@ -73,7 +73,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((giftBadgeProgres
   }
   if (cResult[3] !== tmp5.closeIcon) {
     let obj2 = { size: "md", style: tmp5.closeIcon };
-    const tmp12 = timestampProducer(tmp(5846).XSmallIcon, obj2);
+    const tmp12 = timestampProducer(tmp(5878).XSmallIcon, obj2);
     cResult[3] = tmp5.closeIcon;
     cResult[4] = tmp12;
     let tmp10 = tmp12;
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((giftBadgeProgres
       const obj3 = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: null };
       const intl2 = tmp(1119).intl;
       obj3.children = intl2.string(tmp4(2582).roVAey);
-      const tmp17 = timestampProducer(tmp(4754).Text, obj3);
+      const tmp17 = timestampProducer(tmp(4786).Text, obj3);
       cResult[8] = tmp17;
       let tmp15 = tmp17;
     } else {
@@ -101,7 +101,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((giftBadgeProgres
       }
       if (cResult[12] !== giftBadgeProgress) {
         const obj4 = { currentProgress: giftBadgeProgress, onSendGift: tmp7 };
-        const tmp24 = timestampProducer(tmp4(11328), obj4);
+        const tmp24 = timestampProducer(tmp4(11364), obj4);
         cResult[12] = giftBadgeProgress;
         cResult[13] = tmp24;
         let tmp22 = tmp24;
@@ -117,7 +117,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((giftBadgeProgres
       const obj5 = { children: null };
       let items = [tmp18, tmp22];
       obj5.children = items;
-      const tmp27 = React5(tmp(8698).ModalScreen, obj5);
+      const tmp27 = React5(tmp(8730).ModalScreen, obj5);
       cResult[14] = tmp18;
       cResult[15] = tmp22;
       cResult[16] = tmp27;

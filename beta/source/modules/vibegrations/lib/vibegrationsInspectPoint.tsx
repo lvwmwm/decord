@@ -1,11 +1,11 @@
-// Module ID: 13181
-// Function ID: 13182
+// Module ID: 13217
+// Function ID: 13218
 // Name: vibegrationsInspectPoint
-// Dependencies: [9557, 2]
+// Dependencies: [9589, 2]
 // Exports: inspectPreviewPointRequest, inspectResultFromResponse
 
-// Module 13181 (vibegrationsInspectPoint)
-import vibegrationsPreviewCall from "vibegrationsPreviewCall" /* 9557 */;
+// Module 13217 (vibegrationsInspectPoint)
+import vibegrationsPreviewCall from "vibegrationsPreviewCall" /* 9589 */;
 import size from "module_2" /* 2 */;
 
 function targetFromPreviewElement(element) {

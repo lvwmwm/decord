@@ -1,13 +1,13 @@
-// Module ID: 12728
-// Function ID: 12729
+// Module ID: 12764
+// Function ID: 12765
 // Name: GuildPowerupsLevelsSection
-// Dependencies: [19, 17, 21, 580, 1369, 4758, 558, 568, 12717, 1119, 2518, 12729, 12733, 2]
+// Dependencies: [19, 17, 21, 580, 1369, 4790, 558, 568, 12753, 1119, 2518, 12765, 12769, 2]
 
-// Module 12728 (GuildPowerupsLevelsSection)
+// Module 12764 (GuildPowerupsLevelsSection)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 12729 */;
-import MarketingCardsScroller from "MarketingCardsScroller" /* 12733 */;
+import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 12765 */;
+import MarketingCardsScroller from "MarketingCardsScroller" /* 12769 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -22,7 +22,7 @@ let num = 325;
 if (PlatformUtils.isIOS()) {
   num = 300;
 }
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 const obj3 = { cardContainer: { width: 250, marginEnd: PX_16, flex: 1 }, scroller: { height: num, paddingBottom: nativeDefault.space.PX_8 }, scrollerContent: null };
 const obj4 = { height: num, paddingBottom: nativeDefault.space.PX_8 };
 obj3.scrollerContent = { paddingHorizontal: nativeDefault.space.PX_16 };
@@ -155,8 +155,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   obj2.title = intl.string(listings(2518)["TXY/b0"]);
   const intl2 = util.intl;
   obj2.description = intl2.string(listings(2518).aJv4PB);
-  const items1 = [closure_5(listings(12717), obj2), ];
-  const tmp3 = listings(12717);
+  const items1 = [closure_5(listings(12753), obj2), ];
+  const tmp3 = listings(12753);
   items1[1] = closure_5(MarketingCardsScroller.MarketingCardsScroller, {
     cardMarginRight: PX_16,
     cardWidth: 250,

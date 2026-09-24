@@ -1,18 +1,18 @@
-// Module ID: 18338
-// Function ID: 18339
+// Module ID: 18348
+// Function ID: 18349
 // Name: UpdateAppScreen
-// Dependencies: [17, 21, 4758, 580, 558, 568, 4754, 1119, 2780, 5188, 2]
+// Dependencies: [17, 21, 4790, 580, 558, 568, 4786, 1119, 2780, 5220, 2]
 
-// Module 18338 (UpdateAppScreen)
+// Module 18348 (UpdateAppScreen)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import _modDef2780 from "module_2780" /* 2780 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4758 */;
+import createStyles from "createStyles" /* 4790 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { variant: "heading-lg/semibold", children: null };
     const intl = tmp(1119).intl;
     obj2.children = intl.string(_modDef2780.yxqMCD);
-    const tmp9 = hasOwnProperty(tmp(4754).Text, obj2);
+    const tmp9 = hasOwnProperty(tmp(4786).Text, obj2);
     cResult[1] = tmp9;
     let tmp6 = tmp9;
   } else {
@@ -52,7 +52,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj3 = { variant: "text-md/normal", color: "text-muted", children: null };
     const intl2 = tmp(1119).intl;
     obj3.children = intl2.string(_modDef2780.VBZJJg);
-    const tmp13 = hasOwnProperty(tmp(4754).Text, obj3);
+    const tmp13 = hasOwnProperty(tmp(4786).Text, obj3);
     cResult[2] = tmp13;
     let tmp10 = tmp13;
   } else {
@@ -62,7 +62,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj4 = { onPress: first, text: null, variant: "primary", size: "md" };
     const intl3 = tmp(1119).intl;
     obj4.text = intl3.string(_modDef2780.o4D6fm);
-    const tmp17 = hasOwnProperty(tmp(5188).Button, obj4);
+    const tmp17 = hasOwnProperty(tmp(5220).Button, obj4);
     cResult[3] = tmp17;
     let tmp14 = tmp17;
   } else {

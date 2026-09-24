@@ -1,9 +1,9 @@
-// Module ID: 15736
-// Function ID: 15737
+// Module ID: 15746
+// Function ID: 15747
 // Name: TimestampHourCycleSetting
-// Dependencies: [19, 8238, 2023, 558, 568, 1119, 1190, 11594, 4445, 2]
+// Dependencies: [19, 8270, 2023, 558, 568, 1119, 1190, 11630, 4477, 2]
 
-// Module 15736 (TimestampHourCycleSetting)
+// Module 15746 (TimestampHourCycleSetting)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
@@ -12,7 +12,7 @@ import noop from "module_19" /* 19 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -60,7 +60,7 @@ const radio = SettingBuilders.createRadio({
     const intl = util.intl;
     return intl.string(util.t.dyamEI);
   },
-  parent: fn(8238).MobileUserSettings.APPEARANCE,
+  parent: fn(8270).MobileUserSettings.APPEARANCE,
   useValue: fn(2023).TimestampHourCycle.useSetting,
   onValueChange: function onTimestampHourCycleChange(arg0) {
     const TimestampHourCycle = UserSettings.TimestampHourCycle;
@@ -108,7 +108,7 @@ const radio = SettingBuilders.createRadio({
     items[2] = obj3;
     return items;
   }, [])),
-  usePredicate: fn(4445).supportsSystemDateFormatter
+  usePredicate: fn(4477).supportsSystemDateFormatter
 });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/TimestampHourCycleSetting.tsx");

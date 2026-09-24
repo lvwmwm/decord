@@ -1,17 +1,17 @@
-// Module ID: 10426
-// Function ID: 10427
+// Module ID: 10465
+// Function ID: 10466
 // Name: SuperReactionUpsellActionSheet
-// Dependencies: [19, 17, 1376, 1078, 21, 2031, 10427, 10428, 10429, 10430, 10431, 10432, 10433, 4758, 580, 558, 568, 7409, 504, 4418, 9502, 9474, 12, 10434, 8042, 1119, 8031, 1181, 4725, 10435, 2]
+// Dependencies: [19, 17, 1376, 1078, 21, 2031, 10466, 10467, 10468, 10469, 10470, 10471, 10472, 4790, 580, 558, 568, 7441, 504, 4450, 9534, 9506, 12, 10473, 8074, 1119, 8063, 1181, 4757, 10474, 2]
 
-// Module 10426 (SuperReactionUpsellActionSheet)
+// Module 10465 (SuperReactionUpsellActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import _mod8042 from "module_8042" /* 8042 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9474 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9502 */;
-import SuperReactionLocalImageAnimationDefault from "SuperReactionLocalImageAnimation" /* 10434 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import _mod8074 from "module_8074" /* 8074 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9506 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9534 */;
+import SuperReactionLocalImageAnimationDefault from "SuperReactionLocalImageAnimation" /* 10473 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -23,8 +23,8 @@ get_ActivityIndicator = fn(17);
 const AnalyticsPages = fn(1078).AnalyticsPages;
 const jsx = fn(21).jsx;
 const dismissibleContent = fn(2031).DismissibleContent.SUPER_REACTIONS_COACHMARK_MOBILE;
-let items = [fn(10427), fn(10428), fn(10429), fn(10430), fn(10428), fn(10431), fn(10432), fn(10433)];
-const createStyles = fn(4758);
+let items = [fn(10466), fn(10467), fn(10468), fn(10469), fn(10467), fn(10470), fn(10471), fn(10472)];
+const createStyles = fn(4790);
 let obj2 = { fill: null, nitroIcon: null, description: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);

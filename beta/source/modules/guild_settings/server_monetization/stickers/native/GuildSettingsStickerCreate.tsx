@@ -1,20 +1,20 @@
-// Module ID: 18018
-// Function ID: 18019
+// Module ID: 18028
+// Function ID: 18029
 // Name: GuildSettingsStickerCreate
-// Dependencies: [5, 32, 19, 17, 5678, 5721, 1078, 1379, 2026, 21, 4758, 580, 7224, 11400, 5813, 4413, 5356, 18019, 10680, 5105, 4754, 1119, 4655, 2112, 5188, 5186, 5341, 10694, 18020, 10436, 7377, 1401, 9035, 6846, 7332, 2]
+// Dependencies: [5, 32, 19, 17, 5710, 5753, 1078, 1379, 2026, 21, 4790, 580, 7256, 11436, 5845, 4445, 5388, 18029, 10716, 5137, 4786, 1119, 4687, 2112, 5220, 5218, 5373, 10730, 18030, 10475, 7409, 1401, 9067, 6878, 7364, 2]
 
-// Module 18018 (GuildSettingsStickerCreate)
+// Module 18028 (GuildSettingsStickerCreate)
 import nativeDefault from "native" /* 580 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4413 */;
-import useInitialValueDefault from "useInitialValue" /* 5813 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7224 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10436 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11400 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4445 */;
+import useInitialValueDefault from "useInitialValue" /* 5845 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7256 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10475 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11436 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5678 */;
-import StickersStore from "StickersStore" /* 5721 */;
+import EmojiStore from "EmojiStore" /* 5710 */;
+import StickersStore from "StickersStore" /* 5753 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -26,7 +26,7 @@ const EmojiConstants = fn(1379);
 const MAX_STICKER_FILE_SIZE = fn(2026).MAX_STICKER_FILE_SIZE;
 const jsxProd = fn(21);
 ({ jsx: closure_15, Fragment: closure_16, jsxs: closure_17 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, title: null, description: null, help: null, stack: null, emojiPreview: null, stickerPreviewLabel: null, stickerPreview: null, stickerPreviewImage: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj.title = { marginTop: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_8 };
@@ -425,21 +425,21 @@ export default noop.forwardRef((stickerId, ref) => {
     let obj6 = { variant: "heading-md/semibold", style: tmp.title, children: null };
     const intl = stickerId(1119).intl;
     obj6.children = intl.string(stickerId(1119).t["9N2OWD"]);
-    const items2 = [onPressEmoji(stickerId(4754).Text, obj6), , , ];
+    const items2 = [onPressEmoji(stickerId(4786).Text, obj6), , , ];
     let obj7 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description, children: null };
     const intl2 = stickerId(1119).intl;
-    let obj8 = { fileSize: stickerId(4655).formatKbSize(first1, { useKibibytes: true }) };
+    let obj8 = { fileSize: stickerId(4687).formatKbSize(first1, { useKibibytes: true }) };
     obj7.children = intl2.format(stickerId(1119).t.hxLviw, obj8);
-    items2[1] = onPressEmoji(stickerId(4754).Text, obj7);
+    items2[1] = onPressEmoji(stickerId(4786).Text, obj7);
     let obj10 = { variant: "text-sm/medium", color: "text-muted", style: tmp.help, children: null };
     const intl3 = stickerId(1119).intl;
     let obj11 = { articleUrl: null };
-    let obj9 = stickerId(4655);
+    let obj9 = stickerId(4687);
     const tmp26 = closure_16;
     const tmp27 = onPressEmoji;
     obj11.articleUrl = tmp14(2112).getArticleURL(uri.STICKERS_UPLOAD);
     obj10.children = intl3.format(stickerId(1119).t.UBj0aX, obj11);
-    items2[2] = onPressEmoji(stickerId(4754).Text, obj10);
+    items2[2] = onPressEmoji(stickerId(4786).Text, obj10);
     const obj12 = { text: null, onPress: null, variant: null };
     const intl4 = stickerId(1119).intl;
     obj12.text = intl4.string(stickerId(1119).t.O1REe1);
@@ -450,7 +450,7 @@ export default noop.forwardRef((stickerId, ref) => {
     }
     let obj13 = { children: null };
     obj12.variant = str;
-    items2[3] = tmp27(stickerId(5188).Button, obj12);
+    items2[3] = tmp27(stickerId(5220).Button, obj12);
     obj13.children = items2;
     tmp23Result = tmp23(tmp26, obj13);
     const tmp14Result = tmp14(2112);
@@ -460,14 +460,14 @@ export default noop.forwardRef((stickerId, ref) => {
   const obj15 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.stickerPreviewLabel, children: null };
   const intl5 = stickerId(1119).intl;
   obj15.children = intl5.string(stickerId(1119).t.gjdiKE);
-  const items4 = [onPressEmoji(stickerId(4754).Text, obj15), , , , , , ];
+  const items4 = [onPressEmoji(stickerId(4786).Text, obj15), , , , , , ];
   const obj16 = { style: tmp.stickerPreview, disabled: null != tmp16Result, onPress: handleImagePicker, accessibilityRole: "button", accessibilityLabel: null, children: null };
   const intl6 = stickerId(1119).intl;
   obj16.accessibilityLabel = intl6.string(stickerId(1119).t.O1REe1);
   if (null != tmp16Result) {
     const obj17 = { sticker: tmp16Result, size: tmp14(580).space.PX_96, animated: true };
-    let tmp32Result = tmp32(tmp14(10694), obj17);
-    const tmp14Result4 = tmp14(10694);
+    let tmp32Result = tmp32(tmp14(10730), obj17);
+    const tmp14Result4 = tmp14(10730);
   } else if (null != uri) {
     const obj18 = { source: null, style: null, resizeMode: "contain" };
     const obj19 = { uri };
@@ -475,14 +475,14 @@ export default noop.forwardRef((stickerId, ref) => {
     obj18.style = tmp.stickerPreviewImage;
     tmp32Result = tmp32(c6, obj18);
   } else {
-    tmp32Result = tmp32(tmp31(18020).StickerPlusIcon, { size: "lg" });
+    tmp32Result = tmp32(tmp31(18030).StickerPlusIcon, { size: "lg" });
   }
   obj16.children = tmp32Result;
-  items4[1] = onPressEmoji(stickerId(5341).PressableHighlight, obj16);
+  items4[1] = onPressEmoji(stickerId(5373).PressableHighlight, obj16);
   const obj20 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.stickerPreviewLabel, children: null };
   const intl7 = tmp31(1119).intl;
   obj20.children = intl7.string(stickerId(1119).t["3BQmiC"]);
-  items4[2] = onPressEmoji(stickerId(4754).Text, obj20);
+  items4[2] = onPressEmoji(stickerId(4786).Text, obj20);
   const obj21 = {
     style: tmp.emojiPreview,
     onPress() {
@@ -501,10 +501,10 @@ export default noop.forwardRef((stickerId, ref) => {
       const tmp14Result6 = tmp14(1401);
     }
     obj22.src = emojiURL;
-    let tmp32Result2 = tmp32(tmp14(7377), obj22);
-    const tmp14Result5 = tmp14(7377);
+    let tmp32Result2 = tmp32(tmp14(7409), obj22);
+    const tmp14Result5 = tmp14(7409);
   } else {
-    tmp32Result2 = tmp32(tmp31(9035).ReactionIcon, { size: "md", color: "text-subtle" });
+    tmp32Result2 = tmp32(tmp31(9067).ReactionIcon, { size: "md", color: "text-subtle" });
   }
   const items5 = [tmp32Result2, ];
   if (null != first1) {
@@ -514,9 +514,9 @@ export default noop.forwardRef((stickerId, ref) => {
     const intl8 = tmp31(1119).intl;
     combined = intl8.string(tmp31(1119).t.QTK0TJ);
   }
-  items5[1] = onPressEmoji(stickerId(4754).Text, { variant: "text-md/semibold", color: "input-placeholder-text-default", children: combined });
+  items5[1] = onPressEmoji(stickerId(4786).Text, { variant: "text-md/semibold", color: "input-placeholder-text-default", children: combined });
   obj21.children = items5;
-  items4[3] = closure_17(stickerId(5341).PressableHighlight, obj21);
+  items4[3] = closure_17(stickerId(5373).PressableHighlight, obj21);
   const obj24 = { ref: ref1, label: null, placeholder: null, onChange: null, onFocus: null, onSubmitEditing: null, disabled: false, clearable: true, returnKeyType: "next", submitBehavior: "submit" };
   const intl9 = tmp31(1119).intl;
   obj24.label = intl9.string(stickerId(1119).t["0VRh6n"]);
@@ -534,7 +534,7 @@ export default noop.forwardRef((stickerId, ref) => {
       current2.scrollToEnd({ animated: true });
     }
   };
-  items4[4] = onPressEmoji(stickerId(6846).TextInput, obj24);
+  items4[4] = onPressEmoji(stickerId(6878).TextInput, obj24);
   const obj26 = { ref: ref2, maxLength: 100, label: null, placeholder: null, onChange: null, onFocus: null };
   const intl11 = tmp31(1119).intl;
   obj26.label = intl11.string(stickerId(1119).t.uGccej);
@@ -542,7 +542,7 @@ export default noop.forwardRef((stickerId, ref) => {
   obj26.placeholder = intl12.string(stickerId(1119).t.zwR0fa);
   obj26.onChange = tmp8;
   obj26.onFocus = onFocus;
-  items4[5] = onPressEmoji(stickerId(7332).TextArea, obj26);
+  items4[5] = onPressEmoji(stickerId(7364).TextArea, obj26);
   const obj27 = {
     onPress: function handleSave() {
       const self = this;
@@ -567,9 +567,9 @@ export default noop.forwardRef((stickerId, ref) => {
   }
   obj27.variant = str3;
   obj27.disabled = !hasUnsavedChanges(false);
-  items4[6] = onPressEmoji(stickerId(5188).Button, obj27);
+  items4[6] = onPressEmoji(stickerId(5220).Button, obj27);
   obj14.children = items4;
-  items3[1] = closure_17(stickerId(5186).Stack, obj14);
+  items3[1] = closure_17(stickerId(5218).Stack, obj14);
   obj4.children = items3;
   return closure_17(c7, obj4);
 });

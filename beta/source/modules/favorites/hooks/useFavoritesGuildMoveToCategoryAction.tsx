@@ -1,10 +1,10 @@
-// Module ID: 11298
-// Function ID: 11299
+// Module ID: 11334
+// Function ID: 11335
 // Name: useFavoritesGuildMoveToCategoryAction
-// Dependencies: [19, 558, 568, 10606, 11299, 10605, 1119, 2]
+// Dependencies: [19, 558, 568, 10642, 11335, 10641, 1119, 2]
 
-// Module 11298 (useFavoritesGuildMoveToCategoryAction)
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10605 */;
+// Module 11334 (useFavoritesGuildMoveToCategoryAction)
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10641 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,10 +15,10 @@ let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGui
 export default ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   const cResult = favorite(568).c(15);
   let obj = favorite(568);
-  const isFavoritesGuildSelected = favorite(10606).useIsFavoritesGuildSelected();
-  const obj2 = favorite(10606);
-  favorite = favorite(10606).useFavorite(id.id);
-  const arr = id(11299)();
+  const isFavoritesGuildSelected = favorite(10642).useIsFavoritesGuildSelected();
+  const obj2 = favorite(10642);
+  favorite = favorite(10642).useFavorite(id.id);
+  const arr = id(11335)();
   id = undefined;
   if (favorite != null) {
     id = favorite.id;
@@ -164,10 +164,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   }
   return null;
 }) : ((id) => {
-  const isFavoritesGuildSelected = favorite(10606).useIsFavoritesGuildSelected();
-  let obj = favorite(10606);
-  favorite = favorite(10606).useFavorite(id.id);
-  const obj2 = favorite(10606);
+  const isFavoritesGuildSelected = favorite(10642).useIsFavoritesGuildSelected();
+  let obj = favorite(10642);
+  favorite = favorite(10642).useFavorite(id.id);
+  const obj2 = favorite(10642);
   id = undefined;
   if (favorite != null) {
     id = favorite.id;

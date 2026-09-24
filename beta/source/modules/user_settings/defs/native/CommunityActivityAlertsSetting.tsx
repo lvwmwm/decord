@@ -1,17 +1,17 @@
-// Module ID: 15783
-// Function ID: 15784
+// Module ID: 15793
+// Function ID: 15794
 // Name: CommunityActivityAlertsSetting
-// Dependencies: [11663, 8238, 1078, 558, 568, 504, 1119, 11594, 15784, 2]
+// Dependencies: [11699, 8270, 1078, 558, 568, 504, 1119, 11630, 15794, 2]
 
-// Module 15783 (CommunityActivityAlertsSetting)
+// Module 15793 (CommunityActivityAlertsSetting)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11663 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11699 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -36,7 +36,7 @@ const route = SettingBuilders.createRoute({
     const intl = util.intl;
     return intl.string(util.t.D9yVAH);
   },
-  parent: fn(8238).MobileUserSettings.NOTIFICATIONS,
+  parent: fn(8270).MobileUserSettings.NOTIFICATIONS,
   useDescription: function useCommunityActivityAlertsSettingDescription() {
     const intl = util.intl;
     return intl.string(util.t["0PhAOH"]);

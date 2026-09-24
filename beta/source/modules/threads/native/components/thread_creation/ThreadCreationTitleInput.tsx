@@ -1,11 +1,11 @@
-// Module ID: 17092
-// Function ID: 17093
+// Module ID: 17102
+// Function ID: 17103
 // Name: ThreadCreationTitleInput
-// Dependencies: [19, 2045, 1078, 21, 558, 568, 17093, 8024, 7518, 1486, 1614, 504, 9417, 1119, 5801, 6846, 2]
+// Dependencies: [19, 2045, 1078, 21, 558, 568, 17103, 8056, 7550, 1486, 1614, 504, 9449, 1119, 5833, 6878, 2]
 
-// Module 17092 (ThreadCreationTitleInput)
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7518 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8024 */;
+// Module 17102 (ThreadCreationTitleInput)
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7550 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8056 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
@@ -131,8 +131,8 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
         }
         let str2 = "";
         if (null != stateFromStores) {
-          str2 = tmp(9417).getDefaultThreadName(stateFromStores, threadSettingsDraft.parentMessageId);
-          const tmpResult = tmp(9417);
+          str2 = tmp(9449).getDefaultThreadName(stateFromStores, threadSettingsDraft.parentMessageId);
+          const tmpResult = tmp(9449);
         }
         cResult[18] = stateFromStores;
         cResult[19] = threadSettingsDraft.parentMessageId;
@@ -192,17 +192,17 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   }
   let obj = chatInputRef(568);
   let obj2 = { content: threadSettingsDraft.name };
-  const tmpResult2 = chatInputRef(17093);
+  const tmpResult2 = chatInputRef(17103);
   cResult[0] = threadNameError;
   cResult[1] = threadSettingsDraft.name;
-  cResult[2] = chatInputRef(17093).renderError(threadNameError, { content: threadSettingsDraft.name });
+  cResult[2] = chatInputRef(17103).renderError(threadNameError, { content: threadSettingsDraft.name });
 }) : ((chatInputRef, ref) => {
   chatInputRef = chatInputRef.chatInputRef;
   const threadSettingsDraft = chatInputRef.threadSettingsDraft;
   const optional = chatInputRef.optional;
   ref = undefined;
   dependencyMap = ref;
-  let obj = chatInputRef(17093);
+  let obj = chatInputRef(17103);
   let obj2 = { content: threadSettingsDraft.name };
   ref = ref.useRef(threadSettingsDraft.name);
   const items = [threadSettingsDraft.parentChannelId];
@@ -220,8 +220,8 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
         const tmp4 = sanitizeThreadNameDefault(tmp.name, true);
         if (tmp4 !== tmp.name) {
           const obj = { name: tmp4 };
-          tmp2(8024).changeThreadSettings(tmp.parentChannelId, obj);
-          const tmp2Result = tmp2(8024);
+          tmp2(8056).changeThreadSettings(tmp.parentChannelId, obj);
+          const tmp2Result = tmp2(8056);
         }
         tmp2 = importDefault;
       }
@@ -253,13 +253,13 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
       }
     }
   }, items3);
-  const renderErrorResult = chatInputRef(17093).renderError(chatInputRef.threadNameError, { content: threadSettingsDraft.name });
+  const renderErrorResult = chatInputRef(17103).renderError(chatInputRef.threadNameError, { content: threadSettingsDraft.name });
   const items4 = [ChannelStore];
   const stateFromStores = chatInputRef(504).useStateFromStores(items4, () => ChannelStore.getChannel(threadSettingsDraft.parentChannelId));
   let str = "";
   if (null != stateFromStores) {
-    str = tmp(9417).getDefaultThreadName(stateFromStores, threadSettingsDraft.parentMessageId);
-    const tmpResult = tmp(9417);
+    str = tmp(9449).getDefaultThreadName(stateFromStores, threadSettingsDraft.parentMessageId);
+    const tmpResult = tmp(9449);
   }
   const intl = tmp(1119).intl;
   const string = intl.string;
@@ -269,7 +269,7 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   } else {
     stringResult = string(t.j3XWjD);
   }
-  const obj4 = { defaultValue: threadSettingsDraft(5801)(ref), errorMessage: renderErrorResult, label: stringResult, accessibilityHint: null, required: null, clearable: true, autoFocus: true, maxLength: null, onSubmitEditing: null, onFocus: null, onBlur: null, onChange: null, placeholder: null, ref: null, returnKeyType: "next", textContentType: "none" };
+  const obj4 = { defaultValue: threadSettingsDraft(5833)(ref), errorMessage: renderErrorResult, label: stringResult, accessibilityHint: null, required: null, clearable: true, autoFocus: true, maxLength: null, onSubmitEditing: null, onFocus: null, onBlur: null, onChange: null, placeholder: null, ref: null, returnKeyType: "next", textContentType: "none" };
   let stringResult1;
   if (!optional) {
     const intl2 = tmp(1119).intl;
@@ -288,5 +288,5 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   }
   obj4.placeholder = str;
   obj4.ref = ref;
-  return jsx(chatInputRef(6846).TextInput, { defaultValue: threadSettingsDraft(5801)(ref), errorMessage: renderErrorResult, label: stringResult, accessibilityHint: null, required: null, clearable: true, autoFocus: true, maxLength: null, onSubmitEditing: null, onFocus: null, onBlur: null, onChange: null, placeholder: null, ref: null, returnKeyType: "next", textContentType: "none" });
+  return jsx(chatInputRef(6878).TextInput, { defaultValue: threadSettingsDraft(5833)(ref), errorMessage: renderErrorResult, label: stringResult, accessibilityHint: null, required: null, clearable: true, autoFocus: true, maxLength: null, onSubmitEditing: null, onFocus: null, onBlur: null, onChange: null, placeholder: null, ref: null, returnKeyType: "next", textContentType: "none" });
 })));

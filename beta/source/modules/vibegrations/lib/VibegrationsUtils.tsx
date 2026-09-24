@@ -1,17 +1,17 @@
-// Module ID: 5276
-// Function ID: 5277
+// Module ID: 5308
+// Function ID: 5309
 // Name: VibegrationsUtils
-// Dependencies: [2100, 2067, 4399, 4580, 1078, 5277, 5278, 558, 568, 504, 2]
+// Dependencies: [2100, 2067, 4431, 4612, 1078, 5309, 5310, 558, 568, 504, 2]
 // Exports: canAccessVibegrations, canStartVibegrationsProject, eligibleVibegrationsGuilds, findVibegrationChannelId, getVibegrationsProjectAccessSettings, isVibegrationsChannelCandidate, isVibegrationsGuildEligible, isVibegrationsProjectInGuild, resolveVibegrationsWorkspaceGuildId, vibegrationsSettingChannels, vibegrationsSettingsGuildId, vibegrationsTopicForApp
 
-// Module 5276 (VibegrationsUtils)
+// Module 5308 (VibegrationsUtils)
 import c from "c" /* 568 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5277 */;
-import VibegrationsGuildExperiment from "VibegrationsGuildExperiment" /* 5278 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5309 */;
+import VibegrationsGuildExperiment from "VibegrationsGuildExperiment" /* 5310 */;
 import GuildChannelStore_mod from "GuildChannelStore" /* 2100 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 import Constants from "Constants" /* 1078 */;
 import "ReactCompilerGating";
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -332,7 +332,7 @@ export const useIsVibegrationsChannelCandidate = ReactCompilerGating.isReactComp
     if (cResult[4] === guild_id2) {
       let tmp11 = cResult[5];
     }
-    const isVibegrationsGuildEnabled = tmp(5278).useIsVibegrationsGuildEnabled(tmp11);
+    const isVibegrationsGuildEnabled = tmp(5310).useIsVibegrationsGuildEnabled(tmp11);
     if (cResult[6] === guild_id) {
       if (cResult[7] === stateFromStores) {
         if (cResult[8] === isVibegrationsGuildEnabled) {
@@ -377,7 +377,7 @@ export const useIsVibegrationsChannelCandidate = ReactCompilerGating.isReactComp
     cResult[8] = isVibegrationsGuildEnabled;
     cResult[9] = tmp14;
     tmp13 = tmp14;
-    const tmpResult2 = tmp(5278);
+    const tmpResult2 = tmp(5310);
   }
   const obj2 = { guildId: guild_id2, location };
   cResult[3] = location;

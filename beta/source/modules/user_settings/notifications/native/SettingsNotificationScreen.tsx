@@ -1,21 +1,21 @@
-// Module ID: 15744
-// Function ID: 15745
+// Module ID: 15754
+// Function ID: 15755
 // Name: SettingsNotificationScreen
-// Dependencies: [19, 17, 15745, 8238, 21, 4758, 580, 558, 568, 7223, 12560, 15746, 15747, 4754, 1119, 5824, 7176, 11594, 15748, 15749, 14953, 2]
+// Dependencies: [19, 17, 15755, 8270, 21, 4790, 580, 558, 568, 7255, 12596, 15756, 15757, 4786, 1119, 5856, 7208, 11630, 15758, 15759, 14988, 2]
 
-// Module 15744 (SettingsNotificationScreen)
+// Module 15754 (SettingsNotificationScreen)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7223 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12560 */;
-import SettingLayoutDefault from "SettingLayout" /* 14953 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15746 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15747 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15748 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7255 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12596 */;
+import SettingLayoutDefault from "SettingLayout" /* 14988 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15756 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15757 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15758 */;
 import noop from "module_19" /* 19 */;
 
-const SettingBuilders = tmp(11594);
+const SettingBuilders = tmp(11630);
 require = fn;
 function getNotificationSettings() {
   const obj = { label: null, settings: null };
@@ -113,11 +113,11 @@ function getNotificationSettings() {
   return items1;
 }
 const View = fn(17).View;
-let closure_5 = fn(15745).initializeAndroidNotificationSettingsStore;
-const MobileUserSettings = fn(8238).MobileUserSettings;
+let closure_5 = fn(15755).initializeAndroidNotificationSettingsStore;
+const MobileUserSettings = fn(8270).MobileUserSettings;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { card: { marginBottom: 8, borderColor: nativeDefault.unsafe_rawColors.YELLOW_300, borderWidth: 1, borderRadius: nativeDefault.radii.lg }, cardContent: { flexDirection: "row", alignItems: "center", gap: 8 }, text: { flex: 1 } };
 let closure_10 = createStyles.createStyles(obj);
 let ReactCompilerGating = fn(558);
@@ -135,10 +135,10 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmp9 = !ContextualOptInNudgeHoldoutExperimentDefault.useConfig(first).inHoldout;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const result = tmp(15747).hasAndroidNotificationChannels();
+    const result = tmp(15757).hasAndroidNotificationChannels();
     cResult[1] = result;
     let tmp13Result = result;
-    const tmpResult = tmp(15747);
+    const tmpResult = tmp(15757);
   } else {
     tmp13Result = cResult[1];
   }
@@ -151,7 +151,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj6 = { variant: str, color: "text-muted", children: null };
       const intl = tmp(1119).intl;
       obj6.children = intl.string(tmp(1119).t["/TZX1J"]);
-      tmp13Result = React5(tmp(4754).Text, obj6);
+      tmp13Result = React5(tmp(4786).Text, obj6);
     }
     cResult[2] = manaTypeConsolidationExperiment;
     cResult[3] = tmp13Result;
@@ -189,16 +189,16 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj9 = { border: "none", shadow: "none", children: null };
     const obj10 = { style: tmp4.cardContent, children: null };
     const obj11 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-    const items1 = [React5(tmp(7176).CircleErrorIcon, obj11), ];
+    const items1 = [React5(tmp(7208).CircleErrorIcon, obj11), ];
     const obj12 = { style: tmp4.text, children: null };
     const obj13 = { color: "text-default", variant: "text-sm/medium", children: null };
     const intl2 = tmp(1119).intl;
     obj13.children = intl2.string(tmp(1119).t.TAuasM);
-    obj12.children = React5(tmp(4754).Text, obj13);
+    obj12.children = React5(tmp(4786).Text, obj13);
     items1[1] = React5(View, obj12);
     obj10.children = items1;
     obj9.children = closure_1_8(View, obj10);
-    obj8.children = React5(tmp(5824).Card, obj9);
+    obj8.children = React5(tmp(5856).Card, obj9);
     tmp15 = React5(View, obj8);
   }
   cResult[4] = tmp9;
@@ -220,7 +220,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj5 = { variant: str, color: "text-muted", children: null };
     const intl = tmp2(1119).intl;
     obj5.children = intl.string(tmp2(1119).t["/TZX1J"]);
-    result = React5(tmp2(4754).Text, obj5);
+    result = React5(tmp2(4786).Text, obj5);
   }
   const children = [result, ];
   if (showReactivationPrompt) {
@@ -231,16 +231,16 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj7 = { border: "none", shadow: "none", children: null };
     const obj8 = { style: tmp.cardContent, children: null };
     const obj9 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-    const items1 = [React5(tmp2(7176).CircleErrorIcon, obj9), ];
+    const items1 = [React5(tmp2(7208).CircleErrorIcon, obj9), ];
     const obj10 = { style: tmp.text, children: null };
     const obj11 = { color: "text-default", variant: "text-sm/medium", children: null };
     const intl2 = tmp2(1119).intl;
     obj11.children = intl2.string(tmp2(1119).t.TAuasM);
-    obj10.children = React5(tmp2(4754).Text, obj11);
+    obj10.children = React5(tmp2(4786).Text, obj11);
     items1[1] = React5(View, obj10);
     obj8.children = items1;
     obj7.children = tmp8(View, obj8);
-    obj6.children = React5(tmp2(5824).Card, obj7);
+    obj6.children = React5(tmp2(5856).Card, obj7);
     showReactivationPrompt = React5(View, obj6);
   }
   children[1] = showReactivationPrompt;
@@ -265,7 +265,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj4 = { sections: getNotificationSettings(), ListHeaderComponent: null };
     let tmp5Result;
     if (!inHoldout) {
-      tmp5Result = tmp5(15748);
+      tmp5Result = tmp5(15758);
     }
     obj4.ListHeaderComponent = tmp5Result;
     const list = SettingBuilders.createList(obj4);
@@ -331,7 +331,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const obj5 = { node: tmp7 };
-    const tmp18 = React5(tmp5(14953), obj5);
+    const tmp18 = React5(tmp5(14988), obj5);
     cResult[7] = tmp7;
     cResult[8] = tmp18;
     const tmp17 = tmp18;

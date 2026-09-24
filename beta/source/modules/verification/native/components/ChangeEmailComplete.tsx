@@ -1,16 +1,16 @@
-// Module ID: 7245
-// Function ID: 7246
+// Module ID: 7277
+// Function ID: 7278
 // Name: ChangeEmailComplete
-// Dependencies: [19, 17, 5838, 21, 4758, 580, 5836, 558, 568, 6842, 1119, 4754, 5188, 2]
+// Dependencies: [19, 17, 5870, 21, 4790, 580, 5868, 558, 568, 6874, 1119, 4786, 5220, 2]
 
-// Module 7245 (ChangeEmailComplete)
+// Module 7277 (ChangeEmailComplete)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5836 */;
-import _modDef6842 from "module_6842" /* 6842 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5868 */;
+import _modDef6874 from "module_6874" /* 6874 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,10 +20,10 @@ function handlePress() {
 }
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const resetChangeEmailStore = fn(5838).resetChangeEmailStore;
+const resetChangeEmailStore = fn(5870).resetChangeEmailStore;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { contentContainer: { flexGrow: 2, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16, gap: 20, alignItems: "center" }, image: { height: 190, width: 220, resizeMode: "contain" }, title: { textAlign: "center" }, body: { textAlign: "center" }, bodyInner: { gap: 2 }, tooltip: null };
 let obj3 = { flexGrow: 2, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16, gap: 20, alignItems: "center" };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
@@ -39,7 +39,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((email) => {
   email = email.email;
   const tmp4 = closure_9();
   if (cResult[0] !== tmp4.image) {
-    const obj2 = { style: tmp4.image, source: _modDef6842 };
+    const obj2 = { style: tmp4.image, source: _modDef6874 };
     const tmp9 = React5(React4, obj2);
     cResult[0] = tmp4.image;
     cResult[1] = tmp9;
@@ -58,7 +58,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((email) => {
   }
   if (cResult[3] !== tmp4.title) {
     const obj3 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp10 };
-    const tmp14 = React5(tmp(4754).Text, obj3);
+    const tmp14 = React5(tmp(4786).Text, obj3);
     cResult[3] = tmp4.title;
     cResult[4] = tmp14;
     let tmp12 = tmp14;
@@ -95,7 +95,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((email) => {
         }
         if (cResult[15] !== tmp4.tooltip) {
           const obj5 = { style: tmp4.tooltip, variant: "text-sm/normal", children: tmp23 };
-          const tmp27 = React5(tmp(4754).Text, obj5);
+          const tmp27 = React5(tmp(4786).Text, obj5);
           cResult[15] = tmp4.tooltip;
           cResult[16] = tmp27;
           let tmp25 = tmp27;
@@ -108,7 +108,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((email) => {
           const intl4 = tmp(1119).intl;
           obj6.text = intl4.string(tmp(1119).t.BddRzS);
           obj6.onPress = handlePress;
-          const tmp31 = React5(tmp(5188).Button, obj6);
+          const tmp31 = React5(tmp(5220).Button, obj6);
           cResult[17] = tmp31;
           let tmp28 = tmp31;
         } else {
@@ -154,7 +154,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((email) => {
 }) : ((email) => {
   const tmp = closure_9();
   const obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer, children: null };
-  const items = [React5(React4, { style: tmp.image, source: _modDef6842 }), , , ];
+  const items = [React5(React4, { style: tmp.image, source: _modDef6874 }), , , ];
   const obj3 = { style: tmp.bodyInner, children: null };
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;

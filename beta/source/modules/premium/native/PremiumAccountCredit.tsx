@@ -1,16 +1,16 @@
-// Module ID: 13664
-// Function ID: 13665
+// Module ID: 13700
+// Function ID: 13701
 // Name: PremiumAccountCredit
-// Dependencies: [19, 17, 7638, 1078, 21, 4758, 580, 7419, 558, 568, 4418, 1119, 3166, 9487, 4754, 504, 12, 2]
+// Dependencies: [19, 17, 7670, 1078, 21, 4790, 580, 7451, 558, 568, 4450, 1119, 3198, 9519, 4786, 504, 12, 2]
 
-// Module 13664 (PremiumAccountCredit)
+// Module 13700 (PremiumAccountCredit)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import PremiumUtils from "PremiumUtils" /* 4418 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import PremiumUtils from "PremiumUtils" /* 4450 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
-import EntitlementStore from "EntitlementStore" /* 7638 */;
+import EntitlementStore from "EntitlementStore" /* 7670 */;
 
 const PremiumUtilsDefault = PremiumUtils;
 
@@ -19,9 +19,9 @@ let View = fn(17).View;
 const SubscriptionStatusTypes = fn(1078).SubscriptionStatusTypes;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { title: { marginBottom: 12 }, creditList: { borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, creditItem: { flexDirection: "row", alignItems: "center", padding: 16 }, boostIcon: null, textContainer: null, headerText: null, subText: null, timeText: null, divider: null, creditDescription: null };
-let size = { width: fn(7419).GameIconImageSize[fn(undefined, 7419).GameIconSizes.SMALL], height: fn(7419).GameIconImageSize[fn(undefined, 7419).GameIconSizes.SMALL], alignItems: "center", justifyContent: "center" };
+let size = { width: fn(7451).GameIconImageSize[fn(undefined, 7451).GameIconSizes.SMALL], height: fn(7451).GameIconImageSize[fn(undefined, 7451).GameIconSizes.SMALL], alignItems: "center", justifyContent: "center" };
 obj2.boostIcon = size;
 obj2.textContainer = { marginLeft: 16, marginRight: 16, flexDirection: "column", flex: 1 };
 obj2.headerText = { lineHeight: 20 };
@@ -37,7 +37,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ planId, months, currentSubscription, shouldAddDivider, unconsumedFractionalPremiumUnits, hasPremiumGroup } = arg0);
   const tmp4 = closure_8();
   if (cResult[0] !== planId) {
-    const tmpResult = tmp(4418);
+    const tmpResult = tmp(4450);
     const result = tmpResult.castPremiumSubscriptionAsSkuId(PremiumUtilsDefault.getSkuIdForPlan(planId));
     cResult[0] = planId;
     cResult[1] = result;
@@ -46,11 +46,11 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     str = cResult[1];
   }
   if (cResult[2] !== planId) {
-    const result1 = tmp(4418).isPremiumGuildSubscriptionPlan(planId);
+    const result1 = tmp(4450).isPremiumGuildSubscriptionPlan(planId);
     cResult[2] = planId;
     cResult[3] = result1;
     let tmp7 = result1;
-    const tmpResult3 = tmp(4418);
+    const tmpResult3 = tmp(4450);
   } else {
     tmp7 = cResult[3];
   }
@@ -123,7 +123,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                               tmp75 = tmp77;
                                             }
                                             const obj6 = { style: tmp4.timeText, variant: "text-md/medium", color: "text-default", children: tmp70 };
-                                            const tmp74 = timestampProducer(tmp(4754).Text, obj6);
+                                            const tmp74 = timestampProducer(tmp(4786).Text, obj6);
                                             cResult[58] = tmp4.timeText;
                                             cResult[59] = tmp70;
                                             cResult[60] = tmp74;
@@ -146,7 +146,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                   let tmp65 = !tmp13;
                                   if (!tmp13) {
                                     const obj8 = { style: tmp4.subText, variant: "text-xs/medium", color: "text-default", children: tmp12 };
-                                    tmp65 = timestampProducer(tmp(4754).Text, obj8);
+                                    tmp65 = timestampProducer(tmp(4786).Text, obj8);
                                   }
                                   cResult[47] = tmp12;
                                   cResult[48] = tmp13;
@@ -190,7 +190,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
       const intl4 = tmp(1119).intl;
-      const stringResult = intl4.string(intl(3166)["5asczk"]);
+      const stringResult = intl4.string(intl(3198)["5asczk"]);
       cResult[28] = stringResult;
     }
   } else {
@@ -211,7 +211,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const _Date2 = Date;
             let date = new Date(currentSubscription.pauseEndsAt);
           }
-          let num5 = tmp(4418).extendDateWithUnconsumedFractionalPremium(date, unconsumedFractionalPremiumUnits);
+          let num5 = tmp(4450).extendDateWithUnconsumedFractionalPremium(date, unconsumedFractionalPremiumUnits);
           const intl3 = tmp(1119).intl;
           if (num5 == null) {
             num5 = 0;
@@ -224,7 +224,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           cResult[32] = unconsumedFractionalPremiumUnits;
           cResult[33] = formatToPlainStringResult;
           tmp25 = formatToPlainStringResult;
-          const tmpResult4 = tmp(4418);
+          const tmpResult4 = tmp(4450);
         }
         const _Date = Date;
         date = new Date(currentSubscription.currentPeriodEnd);
@@ -246,7 +246,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (cResult[38] === str) {
             if (cResult[39] === tmp4.boostIcon) {
               const textContainer = tmp4.textContainer;
-              const Text = tmp(4754).Text;
+              const Text = tmp(4786).Text;
               const headerText = tmp4.headerText;
               intl = tmp(1119).intl;
               const obj11 = { planName: displayName };
@@ -282,12 +282,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (tmp7) {
           const obj12 = { style: tmp4.boostIcon, children: null };
           const obj13 = { size: "md", color: intl(580).unsafe_rawColors.GUILD_BOOSTING_PINK };
-          obj12.children = tmp46(tmp(9487).BoostGemIcon, obj13);
+          obj12.children = tmp46(tmp(9519).BoostGemIcon, obj13);
           let tmp46Result = tmp46(tmp42, obj12);
         } else {
-          const obj14 = { size: tmp(7419).GameIconSizes.SMALL, skuId: str };
-          tmp46Result = tmp46(intl(7419), obj14);
-          const intlResult = intl(7419);
+          const obj14 = { size: tmp(7451).GameIconSizes.SMALL, skuId: str };
+          tmp46Result = tmp46(intl(7451), obj14);
+          const intlResult = intl(7451);
         }
         cResult[37] = tmp7;
         cResult[38] = str;
@@ -319,7 +319,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (hasPremiumGroup) {
     const intl3 = tmp2(1119).intl;
-    let stringResult = intl3.string(tmp4(3166)["5asczk"]);
+    let stringResult = intl3.string(tmp4(3198)["5asczk"]);
   } else {
     if (null != currentSubscription) {
       if (currentSubscription.planId === planId) {
@@ -328,14 +328,14 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const _Date2 = Date;
             let date = new Date(currentSubscription.pauseEndsAt);
           }
-          let num = tmp2(4418).extendDateWithUnconsumedFractionalPremium(date, unconsumedFractionalPremiumUnits);
+          let num = tmp2(4450).extendDateWithUnconsumedFractionalPremium(date, unconsumedFractionalPremiumUnits);
           const intl2 = tmp2(1119).intl;
           if (num == null) {
             num = 0;
           }
           const obj5 = { date: num };
           stringResult = intl2.formatToPlainString(tmp2(1119).t["5CNRRA"], obj5);
-          const tmp2Result = tmp2(4418);
+          const tmp2Result = tmp2(4450);
         }
         const _Date = Date;
         date = new Date(currentSubscription.currentPeriodEnd);
@@ -360,14 +360,14 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (result1) {
     const obj8 = { style: tmp.boostIcon, children: null };
     const obj9 = { size: "md", color: tmp4(580).unsafe_rawColors.GUILD_BOOSTING_PINK };
-    obj8.children = tmp24(tmp2(9487).BoostGemIcon, obj9);
+    obj8.children = tmp24(tmp2(9519).BoostGemIcon, obj9);
     let tmp24Result = tmp24(tmp22, obj8);
     let tmp27 = tmp24;
   } else {
-    const obj10 = { size: tmp2(7419).GameIconSizes.SMALL, skuId: result };
-    tmp24Result = tmp24(tmp4(7419), obj10);
+    const obj10 = { size: tmp2(7451).GameIconSizes.SMALL, skuId: result };
+    tmp24Result = tmp24(tmp4(7451), obj10);
     tmp27 = tmp24;
-    const tmp4Result = tmp4(7419);
+    const tmp4Result = tmp4(7451);
   }
   const items1 = [tmp24Result, , ];
   const obj11 = { style: tmp.textContainer, children: null };
@@ -378,7 +378,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp27Result = !tmp18;
   if (!tmp18) {
     const obj13 = { style: tmp.subText, variant: "text-xs/medium", color: "text-default", children: stringResult };
-    tmp27Result = tmp27(tmp2(4754).Text, obj13);
+    tmp27Result = tmp27(tmp2(4786).Text, obj13);
   }
   items2[1] = tmp27Result;
   obj11.children = items2;
@@ -591,7 +591,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((currentSubscript
       const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: null };
       const intl = tmp2(1119).intl;
       obj3.children = intl.string(tmp2(1119).t.YugZY0);
-      const items1 = [closure_6(tmp2(4754).Text, obj3), , , ];
+      const items1 = [closure_6(tmp2(4786).Text, obj3), , , ];
       const obj4 = { style: null, children: null };
       const items2 = [tmp.creditList, creditListContainerStyle];
       obj4.style = items2;
@@ -605,7 +605,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((currentSubscript
       const obj5 = { style: tmp.creditDescription, variant: "text-sm/medium", children: null };
       const intl2 = tmp2(1119).intl;
       obj5.children = intl2.string(tmp2(1119).t.Z5b2Gf);
-      items1[2] = closure_6(tmp2(4754).Text, obj5);
+      items1[2] = closure_6(tmp2(4786).Text, obj5);
       let tmp9Result = null;
       if (null != currentSubscription) {
         tmp9Result = null;
@@ -613,7 +613,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((currentSubscript
           const obj6 = { style: tmp.creditDescription, variant: "text-sm/medium", children: null };
           const intl3 = tmp2(1119).intl;
           obj6.children = intl3.string(tmp2(1119).t.azRP0E);
-          tmp9Result = closure_6(tmp2(4754).Text, obj6);
+          tmp9Result = closure_6(tmp2(4786).Text, obj6);
         }
       }
       items1[3] = tmp9Result;

@@ -82,8 +82,8 @@ fn = function n(userConfig, callback) {
       initialVelocity: 0,
       current: "emoji",
       lastTimestamp: null,
-      startTimestamp: "film",
-      reduceMotion: "filmklapper"
+      startTimestamp: "UUID",
+      reduceMotion: "m"
     };
     let num = obj.velocity;
     if (num == null) {

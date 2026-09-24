@@ -1,13 +1,13 @@
-// Module ID: 5982
-// Function ID: 5983
+// Module ID: 6014
+// Function ID: 6015
 // Name: AppleIllocon
-// Dependencies: [21, 558, 568, 5983, 5802, 2]
+// Dependencies: [21, 558, 568, 6015, 5834, 2]
 
-// Module 5982 (AppleIllocon)
+// Module 6014 (AppleIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef5983 from "module_5983" /* 5983 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6015 from "module_6015" /* 6015 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const AppleIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef5983 };
+    const obj2 = { uri: _modDef6015 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const AppleIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5983 };
+  const obj2 = { uri: _modDef6015 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

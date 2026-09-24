@@ -1,28 +1,28 @@
-// Module ID: 10300
-// Function ID: 10301
+// Module ID: 10339
+// Function ID: 10340
 // Name: SpeakerTile
-// Dependencies: [19, 17, 4774, 4779, 21, 4758, 580, 4608, 10301, 558, 568, 1482, 5344, 504, 8669, 10302, 5341, 1119, 8522, 1181, 10304, 10306, 7210, 4754, 2]
+// Dependencies: [19, 17, 4806, 4811, 21, 4790, 580, 4640, 10340, 558, 568, 1482, 5376, 504, 8701, 10341, 5373, 1119, 8554, 1181, 10343, 10345, 7242, 4786, 2]
 // Exports: getSizeStyle, getTileWidthStyle
 
-// Module 10300 (SpeakerTile)
+// Module 10339 (SpeakerTile)
 import nativeDefault from "native" /* 580 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8669 */;
-import StageTileTypes from "StageTileTypes" /* 10301 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8701 */;
+import StageTileTypes from "StageTileTypes" /* 10340 */;
 import noop from "module_19" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4806 */;
 
 require = fn;
 const View = fn(17).View;
-const ParticipantTypes = fn(4779).ParticipantTypes;
+const ParticipantTypes = fn(4811).ParticipantTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let obj = { FULL: 212, [212]: "FULL", HALF: 112, [112]: "HALF", THIRD: 112, [112]: "THIRD" };
 const result = obj.FULL * 1.7777777777777777;
 const result1 = obj.HALF * 1.7777777777777777;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { marginHorizontal: 4, marginVertical: 4, alignItems: "center", flex: 1 }, full: { height: obj.FULL }, half: { height: obj.HALF }, third: { height: obj.THIRD }, avatarContainer: { flex: 1, width: "100%", alignItems: "center", justifyContent: "center", overflow: "hidden", borderRadius: nativeDefault.radii.sm }, imageBackground: { flex: 1, justifyContent: "center", alignItems: "center", alignSelf: "stretch" }, nameplateContainer: null, nameplateText: null, restricted: null, blocked: null };
 let obj5 = { position: "absolute", flexDirection: "row", alignItems: "center", justifyContent: "center", bottom: 4, marginHorizontal: 4, paddingVertical: 4, paddingHorizontal: 8, backgroundColor: null, borderRadius: 6 };
-const ColorUtils = fn(4608);
+const ColorUtils = fn(4640);
 obj5.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.3);
 obj2.nameplateContainer = obj5;
 let obj4 = { flex: 1, width: "100%", alignItems: "center", justifyContent: "center", overflow: "hidden", borderRadius: nativeDefault.radii.sm };

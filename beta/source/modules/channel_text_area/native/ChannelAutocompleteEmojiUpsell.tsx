@@ -1,12 +1,12 @@
-// Module ID: 12536
-// Function ID: 12537
+// Module ID: 12572
+// Function ID: 12573
 // Name: ChannelAutocompleteEmojiUpsell
-// Dependencies: [19, 17, 1379, 21, 4758, 580, 558, 568, 5802, 1401, 1119, 4754, 2]
+// Dependencies: [19, 17, 1379, 21, 4790, 580, 558, 568, 5834, 1401, 1119, 4786, 2]
 
-// Module 12536 (ChannelAutocompleteEmojiUpsell)
+// Module 12572 (ChannelAutocompleteEmojiUpsell)
 import nativeDefault from "native" /* 580 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
-import FastImageDefault from "FastImage" /* 5802 */;
+import FastImageDefault from "FastImage" /* 5834 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -16,7 +16,7 @@ const View = fn(17).View;
 const EMOJI_URL_BASE_SIZE = fn(1379).EMOJI_URL_BASE_SIZE;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { upsell: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, title: { lineHeight: 16, flex: 1 }, emojis: { height: 28 }, emojiWrapper: null, emoji: null };
 let size = { position: "absolute", width: 28, height: 28, padding: 2, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 2, borderRadius: 14, borderColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, alignItems: "center", justifyContent: "center" };
 obj2.emojiWrapper = size;
@@ -99,7 +99,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((results) => {
           tmp18 = items1;
         }
         const obj6 = { style: title, accessibilityRole: "header", variant: "text-sm/medium", children: tmp11 };
-        const tmp15 = closure_5(tmp(4754).Text, obj6);
+        const tmp15 = closure_5(tmp(4786).Text, obj6);
         cResult[10] = tmp4.title;
         cResult[11] = tmp11;
         cResult[12] = tmp15;

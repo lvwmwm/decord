@@ -1,13 +1,13 @@
-// Module ID: 11408
-// Function ID: 11409
+// Module ID: 11444
+// Function ID: 11445
 // Name: ChevronSmallDownIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 11409, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 11445, 4493, 2]
 
-// Module 11408 (ChevronSmallDownIcon)
+// Module 11444 (ChevronSmallDownIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod11409 from "module_11409" /* 11409 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod11445 from "module_11445" /* 11445 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const ChevronSmallDownIcon = ReactCompilerGating.isReactCompilerEnabled()
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(11409);
+    const tmpResult = tmp(11445);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const ChevronSmallDownIcon = ReactCompilerGating.isReactCompilerEnabled()
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11409, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11445, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

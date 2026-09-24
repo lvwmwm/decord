@@ -1,16 +1,16 @@
-// Module ID: 12348
-// Function ID: 12349
+// Module ID: 12384
+// Function ID: 12385
 // Name: useCreatePollFormData
-// Dependencies: [5, 32, 19, 8076, 558, 568, 8008, 12349, 11840, 12350, 12351, 12352, 1119, 11846, 2]
+// Dependencies: [5, 32, 19, 8108, 558, 568, 8040, 12385, 11876, 12386, 12387, 12388, 1119, 11882, 2]
 
-// Module 12348 (useCreatePollFormData)
+// Module 12384 (useCreatePollFormData)
 import util from "util" /* 1119 */;
-import PollsUtils from "PollsUtils" /* 8008 */;
-import PollsActionCreatorsDefault from "PollsActionCreators" /* 11840 */;
-import useRequestDefault from "useRequest" /* 12349 */;
-import PollUploadAttachmentActionCreatorsAll from "PollUploadAttachmentActionCreators" /* 12350 */;
-import PollAttachmentUtils from "PollAttachmentUtils" /* 12351 */;
-import PollTypes from "PollTypes" /* 12352 */;
+import PollsUtils from "PollsUtils" /* 8040 */;
+import PollsActionCreatorsDefault from "PollsActionCreators" /* 11876 */;
+import useRequestDefault from "useRequest" /* 12385 */;
+import PollUploadAttachmentActionCreatorsAll from "PollUploadAttachmentActionCreators" /* 12386 */;
+import PollAttachmentUtils from "PollAttachmentUtils" /* 12387 */;
+import PollTypes from "PollTypes" /* 12388 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -22,7 +22,7 @@ function createPollCreationImageForMedia(mediaURL, status) {
   const obj = { mediaAttachmentState: { status, mediaURL }, emoji: "Array", stickerId: "toCharArray$esjava$1" };
   return obj;
 }
-const PollsConstants = fn(8076);
+const PollsConstants = fn(8108);
 ({ MAX_NUMBER_OF_ANSWERS_PER_POLL: closure_7, MIN_NUMBER_OF_ANSWERS_PER_POLL: closure_8, PollDurations: closure_9 } = PollsConstants);
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -435,7 +435,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2, 
       let intl = util.intl;
       obj.question = intl.string(util.t.gPX3oI);
     }
-    if (first.filter((item) => c0(8008).isAnswerFilled(item)).length < closure_2_8) {
+    if (first.filter((item) => c0(8040).isAnswerFilled(item)).length < closure_2_8) {
       c0 = false;
       let _HermesInternal = HermesInternal;
       let combined = "answer-" + arr[0].localCreationAnswerId;
@@ -443,7 +443,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2, 
       obj[combined] = intl2.string(util.t.fYvzEX);
     }
     const item = arr.forEach((localCreationAnswerId) => {
-      obj = closure_0(8008);
+      obj = closure_0(8040);
       if (obj.isIncompleteAnswer(localCreationAnswerId)) {
         c0 = false;
         const _HermesInternal = HermesInternal;

@@ -1,12 +1,12 @@
-// Module ID: 10662
-// Function ID: 10663
+// Module ID: 10698
+// Function ID: 10699
 // Name: FavoriteGIFHooks
-// Dependencies: [19, 558, 10663, 568, 12, 2]
+// Dependencies: [19, 558, 10699, 568, 12, 2]
 
-// Module 10662 (FavoriteGIFHooks)
+// Module 10698 (FavoriteGIFHooks)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
-import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 10663 */;
+import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 10699 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

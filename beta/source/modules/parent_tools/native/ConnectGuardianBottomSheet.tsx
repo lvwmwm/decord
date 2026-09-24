@@ -1,29 +1,29 @@
-// Module ID: 15146
-// Function ID: 15147
+// Module ID: 15156
+// Function ID: 15157
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 7784, 7785, 21, 4758, 580, 558, 568, 565, 4725, 15147, 1119, 2486, 4754, 15148, 5188, 7397, 2]
+// Dependencies: [19, 17, 7816, 7817, 21, 4790, 580, 558, 568, 565, 4757, 15157, 1119, 2486, 4786, 15158, 5220, 7429, 2]
 
-// Module 15146 (ConnectGuardianBottomSheet)
+// Module 15156 (ConnectGuardianBottomSheet)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef2486 from "module_2486" /* 2486 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import components_Button_Button from "components/Button/Button" /* 5188 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 15147 */;
-import ConnectGuardianCard from "ConnectGuardianCard" /* 15148 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import components_Button_Button from "components/Button/Button" /* 5220 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 15157 */;
+import ConnectGuardianCard from "ConnectGuardianCard" /* 15158 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7784 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7816 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_6 = fn(7785).CONNECT_GUARDIAN_BOTTOM_SHEET_KEY;
+let closure_6 = fn(7817).CONNECT_GUARDIAN_BOTTOM_SHEET_KEY;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let c9 = "https://support.discord.com/hc/articles/14155060633623";
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_24, paddingVertical: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 }, info: null, centered: null, cardContainer: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_24, paddingVertical: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
 obj2.info = { alignItems: "center", gap: nativeDefault.space.PX_8 };
@@ -215,7 +215,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj5 = { style: tmp4.centered, variant: "text-md/medium", color: "text-default", children: tmp21 };
-    const tmp24 = React5(tmp(4754).Text, obj5);
+    const tmp24 = React5(tmp(4786).Text, obj5);
     cResult[12] = tmp4.centered;
     cResult[13] = tmp21;
     cResult[14] = tmp24;

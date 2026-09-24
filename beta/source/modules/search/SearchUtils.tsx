@@ -1,33 +1,33 @@
-// Module ID: 12488
-// Function ID: 12489
+// Module ID: 12524
+// Function ID: 12525
 // Name: SearchUtils
-// Dependencies: [32, 2045, 6834, 2100, 4969, 2067, 4409, 2099, 1376, 8127, 1078, 4352, 1119, 12489, 11, 12494, 12, 12495, 4911, 4603, 2]
+// Dependencies: [32, 2045, 6866, 2100, 5001, 2067, 4441, 2099, 1376, 8159, 1078, 4384, 1119, 12525, 11, 12530, 12, 12531, 4943, 4635, 2]
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchAnalyticsIds, getSearchContextId, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, isGuildLikeSearchContext, queryHasFilter, quoteChannelName, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker, tokenizeQuery
 
-// Module 12488 (SearchUtils)
+// Module 12524 (SearchUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import util from "util" /* 1119 */;
-import _modDef4352 from "module_4352" /* 4352 */;
-import UserUtilsDefault from "UserUtils" /* 4603 */;
-import useChannelName from "useChannelName" /* 4911 */;
-import SearchTokens from "SearchTokens" /* 12489 */;
-import QueryTokenizerDefault from "QueryTokenizer" /* 12494 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 12495 */;
+import _modDef4384 from "module_4384" /* 4384 */;
+import UserUtilsDefault from "UserUtils" /* 4635 */;
+import useChannelName from "useChannelName" /* 4943 */;
+import SearchTokens from "SearchTokens" /* 12525 */;
+import QueryTokenizerDefault from "QueryTokenizer" /* 12530 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 12531 */;
 import _slicedToArray from "module_32" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import ConsentStore from "ConsentStore" /* 6834 */;
+import ConsentStore from "ConsentStore" /* 6866 */;
 import GuildChannelStore from "GuildChannelStore" /* 2100 */;
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 4969 */;
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 5001 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import RelationshipStore from "RelationshipStore" /* 4409 */;
+import RelationshipStore from "RelationshipStore" /* 4441 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import UserStore from "UserStore" /* 1376 */;
 
 const SearchTokensDefault = SearchTokens;
 
 require = fn;
-const SearchTabs = fn(8127).SearchTabs;
+const SearchTabs = fn(8159).SearchTabs;
 const Constants = fn(1078);
 ({ SearchTypes: closure_12, SearchTokenTypes } = Constants);
 ({ SearchPopoutModes: closure_14, IS_SEARCH_ANSWER_TOKEN: closure_15, IS_SEARCH_FILTER_TOKEN: closure_16, SearchModes: closure_17, ME, Consents: closure_18, GuildFeatures: closure_19 } = Constants);
@@ -92,7 +92,7 @@ export const getSearchTabFetchId = function getSearchTabFetchId(searchContext, t
   return "" + channelId + "-" + tab + "-" + searchResultsQuery;
 };
 export const getChannelActiveAgoTimestamp = function getChannelActiveAgoTimestamp(cResult) {
-  const diffResult = _modDef4352().diff(_modDef4352(cResult), "s");
+  const diffResult = _modDef4384().diff(_modDef4384(cResult), "s");
   if (diffResult > c21) {
     const _Math5 = Math;
     const rounded = Math.round(diffResult / tmp3);
@@ -130,7 +130,7 @@ export const getChannelActiveAgoTimestamp = function getChannelActiveAgoTimestam
     const intl = util.intl;
     return intl.string(util.t["5Ldpkc"]);
   }
-  const obj = _modDef4352();
+  const obj = _modDef4384();
 };
 export const getIndexingErrorText = function getIndexingErrorText(searchContext) {
   const type = searchContext.type;
@@ -483,7 +483,7 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
       }
     }
     let tmp4;
-    if (currentToken.type === tmp3(12494).NON_TOKEN_TYPE) {
+    if (currentToken.type === tmp3(12530).NON_TOKEN_TYPE) {
       tmp4 = currentToken;
     }
     obj7 = { type: constants2.FILTER_ALL, filter: null, token: tmp4 };

@@ -1,9 +1,9 @@
-// Module ID: 13216
-// Function ID: 13217
+// Module ID: 13252
+// Function ID: 13253
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 1089, 21, 4758, 580, 558, 568, 1119, 2618, 4754, 5188, 1181, 2]
+// Dependencies: [19, 17, 1089, 21, 4790, 580, 558, 568, 1119, 2618, 4786, 5220, 1181, 2]
 
-// Module 13216 (InAppReportsBottomButton)
+// Module 13252 (InAppReportsBottomButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -14,7 +14,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 0, alignSelf: "stretch", paddingBottom: 12 }, paddingHorizontal: { paddingHorizontal: 16 }, divider: { height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: 16 }, descriptionText: { lineHeight: 16, textAlign: "center", marginBottom: 12 }, errorText: null };
 let obj3 = { height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: 16 };
 obj2.errorText = { color: nativeDefault.unsafe_rawColors.RED_400, fontSize: 12, lineHeight: 16, fontFamily: fn(1089).Fonts.PRIMARY_SEMIBOLD, textAlign: "center", marginTop: 12 };
@@ -203,7 +203,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
               }
             }
             const obj6 = { disabled, onPress: tmp33, text: first, variant: str3 };
-            const tmp35 = React4(tmp(5188).Button, obj6);
+            const tmp35 = React4(tmp(5220).Button, obj6);
             cResult[16] = first;
             cResult[17] = str3;
             cResult[18] = disabled;
@@ -230,7 +230,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
             }
           }
           obj7.children = tmp7;
-          tmp31 = React4(tmp(4754).Text, obj7);
+          tmp31 = React4(tmp(4786).Text, obj7);
         }
         cResult[10] = tmp7;
         cResult[11] = tmp4.descriptionText;
@@ -284,7 +284,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
       let tmp14Result = null;
       if (null != tmp3) {
         const obj4 = { style: tmp.descriptionText, variant: "text-xs/medium", color: "text-default", children: tmp3 };
-        tmp14Result = tmp14(tmp17(4754).Text, obj4);
+        tmp14Result = tmp14(tmp17(4786).Text, obj4);
       }
       const items1 = [tmp14Result, , ];
       const obj5 = {
@@ -295,7 +295,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((button) => {
         text: stringResult2,
         variant: str2
       };
-      items1[1] = React4(tmp17(5188).Button, obj5);
+      items1[1] = React4(tmp17(5220).Button, obj5);
       let tmp14Result2 = null;
       if (hasError) {
         const obj6 = { style: tmp.errorText, children: string2Result };

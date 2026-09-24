@@ -1,13 +1,13 @@
-// Module ID: 8517
-// Function ID: 8518
+// Module ID: 8549
+// Function ID: 8550
 // Name: useUserProfileOverscrollStyles
-// Dependencies: [32, 19, 4750, 558, 568, 1482, 504, 4497, 2]
+// Dependencies: [32, 19, 4782, 558, 568, 1482, 504, 4529, 2]
 
-// Module 8517 (useUserProfileOverscrollStyles)
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
+// Module 8549 (useUserProfileOverscrollStyles)
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
 
 require = fn;
 let c6 = 1.5;

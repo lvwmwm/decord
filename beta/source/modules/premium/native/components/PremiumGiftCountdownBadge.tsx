@@ -1,19 +1,19 @@
-// Module ID: 11052
-// Function ID: 11053
+// Module ID: 11088
+// Function ID: 11089
 // Name: PremiumGiftCountdownBadge
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 4786, 2]
 
-// Module 11052 (PremiumGiftCountdownBadge)
+// Module 11088 (PremiumGiftCountdownBadge)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles(() => {
   const obj = { badge: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.round, paddingHorizontal: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND } };
   return obj;

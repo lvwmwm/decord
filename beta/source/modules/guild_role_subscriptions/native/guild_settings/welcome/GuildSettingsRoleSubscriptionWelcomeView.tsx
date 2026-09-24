@@ -1,22 +1,22 @@
-// Module ID: 18144
-// Function ID: 18145
+// Module ID: 18154
+// Function ID: 18155
 // Name: GuildSettingsRoleSubscriptionWelcomeView
-// Dependencies: [32, 19, 17, 15464, 1078, 18145, 21, 4758, 580, 558, 568, 12369, 1119, 18146, 4754, 18147, 1488, 4725, 18149, 1984, 18149, 8876, 5188, 1181, 5189, 9708, 18157, 18161, 18170, 18173, 18178, 18179, 1489, 1253, 9046, 5897, 18143, 4457, 5802, 18180, 7371, 2]
+// Dependencies: [32, 19, 17, 15474, 1078, 18155, 21, 4790, 580, 558, 568, 12405, 1119, 18156, 4786, 18157, 1488, 4757, 18159, 1984, 18159, 8908, 5220, 1181, 5221, 9740, 18167, 18171, 18180, 18183, 18188, 18189, 1489, 1253, 9078, 5929, 18153, 4489, 5834, 18190, 7403, 2]
 
-// Module 18144 (GuildSettingsRoleSubscriptionWelcomeView)
+// Module 18154 (GuildSettingsRoleSubscriptionWelcomeView)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import NavigatorConstants from "NavigatorConstants" /* 5897 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12369 */;
-import WarningNoticeDefault from "WarningNotice" /* 18146 */;
-import EligibilityActionSheet from "EligibilityActionSheet" /* 18149 */;
-import HowItWorksSectionDefault from "HowItWorksSection" /* 18157 */;
-import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 18161 */;
-import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 18170 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import NavigatorConstants from "NavigatorConstants" /* 5929 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12405 */;
+import WarningNoticeDefault from "WarningNotice" /* 18156 */;
+import EligibilityActionSheet from "EligibilityActionSheet" /* 18159 */;
+import HowItWorksSectionDefault from "HowItWorksSection" /* 18167 */;
+import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 18171 */;
+import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 18180 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -41,7 +41,7 @@ function StartEarningButton(isTermsAccepted) {
   const callback = noop.useCallback(() => submitAcceptTermsRequest(), items);
   const callback1 = noop.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
-    return obj.openLazy(asyncRequireImpl(18149, dependencyMap.paths), EligibilityActionSheet.ELIGIBILITY_ACTION_SHEET_KEY, {
+    return obj.openLazy(asyncRequireImpl(18159, dependencyMap.paths), EligibilityActionSheet.ELIGIBILITY_ACTION_SHEET_KEY, {
       eligibility,
       onRequireModeratorMFAClick() {
         navigation.push(constants.SECURITY);
@@ -116,12 +116,12 @@ function StartEarningButton(isTermsAccepted) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const creatorPortalUrl = fn(15464).CREATOR_REVENUE_PORTAL_URL;
+const creatorPortalUrl = fn(15474).CREATOR_REVENUE_PORTAL_URL;
 const GuildSettingsSections = fn(1078).GuildSettingsSections;
-const constants = fn(18145).CreatorMonetizationOnboardingMarketingSection;
+const constants = fn(18155).CreatorMonetizationOnboardingMarketingSection;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { flex: 1 }, contentContainer: { flex: 1, padding: 24 }, heroImage: { resizeMode: "cover", width: "100%" }, subtitle: { marginTop: 8 }, tos: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.sm, marginTop: 10 }, startEarningButton: { marginTop: 12 }, startEarningButtonContainer: { marginTop: 14 }, startEarningFabContainer: { marginHorizontal: 24 }, divider: null, sectionTitle: null, sectionFooter: null, statusNoticeContainer: null };
 let size = { width: "100%", height: 0.8, marginTop: 36, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 obj2.divider = size;
@@ -318,7 +318,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp13 = null != footer;
     if (tmp13) {
       const obj4 = { style: tmp4.sectionFooter, variant: "text-sm/normal", color: "text-default", children: footer };
-      tmp13 = closure_1_11(tmp(4754).Text, obj4);
+      tmp13 = closure_1_11(tmp(4786).Text, obj4);
     }
     cResult[5] = footer;
     cResult[6] = tmp4.sectionFooter;

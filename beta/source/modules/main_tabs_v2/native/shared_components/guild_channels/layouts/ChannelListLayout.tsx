@@ -1,12 +1,12 @@
-// Module ID: 12214
-// Function ID: 12215
+// Module ID: 12250
+// Function ID: 12251
 // Name: ChannelListLayout
-// Dependencies: [8128, 12215, 12217, 12218, 558, 2023, 2]
+// Dependencies: [8160, 12251, 12253, 12254, 558, 2023, 2]
 // Exports: getScaledChannelRowHeight, isLayoutCompact, isLayoutCozy, makeSizeStyle
 
-// Module 12214 (ChannelListLayout)
+// Module 12250 (ChannelListLayout)
 import UserSettings from "UserSettings" /* 2023 */;
-import ChannelListLayoutTypes2 from "ChannelListLayoutTypes" /* 8128 */;
+import ChannelListLayoutTypes2 from "ChannelListLayoutTypes" /* 8160 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,17 +16,17 @@ function getLayoutStyles(layout, launchpad) {
     flag = false;
   }
   if (ChannelListLayoutTypes2.ChannelListLayoutTypes.COZY_DRAWER === layout) {
-    return tmp(12215).CHANNEL_LIST_STYLES_COZY_DRAWER;
-  } else if (tmp(8128).ChannelListLayoutTypes.COZY_DRAWER_SMOL === layout) {
-    return tmp(12215).CHANNEL_LIST_STYLES_COZY_DRAWER_SMOL;
-  } else if (tmp(8128).ChannelListLayoutTypes.COMPACT === layout) {
-    const tmpResult = tmp(12217);
+    return tmp(12251).CHANNEL_LIST_STYLES_COZY_DRAWER;
+  } else if (tmp(8160).ChannelListLayoutTypes.COZY_DRAWER_SMOL === layout) {
+    return tmp(12251).CHANNEL_LIST_STYLES_COZY_DRAWER_SMOL;
+  } else if (tmp(8160).ChannelListLayoutTypes.COMPACT === layout) {
+    const tmpResult = tmp(12253);
     return flag ? tmpResult.CHANNEL_LIST_STYLES_COMPACT_LAUNCHPAD : tmpResult.CHANNEL_LIST_STYLES_COMPACT;
   } else {
-    if (tmp(8128).ChannelListLayoutTypes.MINIMAL !== layout) {
-      const COZY = tmp(8128).ChannelListLayoutTypes.COZY;
+    if (tmp(8160).ChannelListLayoutTypes.MINIMAL !== layout) {
+      const COZY = tmp(8160).ChannelListLayoutTypes.COZY;
     }
-    const tmpResult2 = tmp(12218);
+    const tmpResult2 = tmp(12254);
     return flag ? tmpResult2.CHANNEL_LIST_STYLES_COZY_LAUNCHPAD : tmpResult2.CHANNEL_LIST_STYLES_COZY;
   }
 }
@@ -51,9 +51,9 @@ export const useMessagesTabLayout = ReactCompilerGating.isReactCompilerEnabled()
   if (arg0) {
     let COZY = ChannelListLayoutTypes.COZY_DRAWER_SMOL;
   } else if (setting === ChannelListLayoutTypes.COMPACT) {
-    COZY = tmp(8128).ChannelListLayoutTypes.COMPACT;
+    COZY = tmp(8160).ChannelListLayoutTypes.COMPACT;
   } else {
-    COZY = tmp(8128).ChannelListLayoutTypes.COZY;
+    COZY = tmp(8160).ChannelListLayoutTypes.COZY;
   }
   return COZY;
 }) : ((arg0) => {
@@ -63,9 +63,9 @@ export const useMessagesTabLayout = ReactCompilerGating.isReactCompilerEnabled()
   if (arg0) {
     let COZY = ChannelListLayoutTypes.COZY_DRAWER_SMOL;
   } else if (setting === ChannelListLayoutTypes.COMPACT) {
-    COZY = tmp(8128).ChannelListLayoutTypes.COMPACT;
+    COZY = tmp(8160).ChannelListLayoutTypes.COMPACT;
   } else {
-    COZY = tmp(8128).ChannelListLayoutTypes.COZY;
+    COZY = tmp(8160).ChannelListLayoutTypes.COZY;
   }
   return COZY;
 });

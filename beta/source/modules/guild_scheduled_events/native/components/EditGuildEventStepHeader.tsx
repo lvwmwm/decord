@@ -1,18 +1,18 @@
-// Module ID: 9831
-// Function ID: 9832
+// Module ID: 9863
+// Function ID: 9864
 // Name: EditGuildEventStepHeader
-// Dependencies: [19, 17, 21, 4758, 558, 568, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 4786, 2]
 
-// Module 9831 (EditGuildEventStepHeader)
+// Module 9863 (EditGuildEventStepHeader)
 import c from "c" /* 568 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_5 = createStyles.createStyles({ header: { alignItems: "center", paddingBottom: 24 }, headerTitle: { marginTop: 8, marginBottom: 8 }, headerSubtitle: { textAlign: "center" } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -53,7 +53,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp9 = null;
       if ("" !== subtitle) {
         const obj3 = { style: tmp4.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: subtitle };
-        tmp9 = React3(tmp(4754).Text, obj3);
+        tmp9 = React3(tmp(4786).Text, obj3);
       }
     }
     cResult[3] = tmp4.headerSubtitle;

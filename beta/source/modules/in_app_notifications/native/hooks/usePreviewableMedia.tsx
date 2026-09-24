@@ -1,20 +1,20 @@
-// Module ID: 12973
-// Function ID: 12974
+// Module ID: 13009
+// Function ID: 13010
 // Name: usePreviewableMedia
-// Dependencies: [19, 17, 1078, 21, 4758, 558, 568, 4462, 580, 8733, 8992, 12974, 4908, 12316, 7546, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 558, 568, 4494, 580, 8765, 9024, 13010, 4940, 12352, 7578, 2]
 
-// Module 12973 (usePreviewableMedia)
+// Module 13009 (usePreviewableMedia)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import useToken from "useToken" /* 4462 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4908 */;
-import isForwardMessageDefault from "isForwardMessage" /* 7546 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
-import CirclePlayIcon from "CirclePlayIcon" /* 8992 */;
-import WaveformIcon from "WaveformIcon" /* 12974 */;
+import useToken from "useToken" /* 4494 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 4940 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7578 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
+import CirclePlayIcon from "CirclePlayIcon" /* 9024 */;
+import WaveformIcon from "WaveformIcon" /* 13010 */;
 import noop from "module_19" /* 19 */;
 
-const inlineStylesDefault = tmp5(8733);
+const inlineStylesDefault = tmp5(8765);
 require = fn;
 function getBasePreviewableMedia(arg0) {
   let obj;
@@ -58,7 +58,7 @@ function getBasePreviewableMedia(arg0) {
           obj3.parentType = str7;
           let arr8 = items.push(obj3);
         } else {
-          let tmp8Result = tmp8(4908);
+          let tmp8Result = tmp8(4940);
           if (tmp8Result.isVideoFile(tmp7)) {
             let obj4 = { id: null, type: null, media: null, parentType: null };
             let _HermesInternal3 = HermesInternal;
@@ -72,7 +72,7 @@ function getBasePreviewableMedia(arg0) {
             obj4.parentType = str6;
             let arr9 = items.push(obj4);
           } else {
-            let tmp8Result2 = tmp8(4908);
+            let tmp8Result2 = tmp8(4940);
             let push = items.push;
             let obj5 = { id: null, type: null, media: null, icon: null, parentType: null };
             let id = tmp6.id;
@@ -82,7 +82,7 @@ function getBasePreviewableMedia(arg0) {
               obj5.id = "" + id + "-" + tmp13.AUDIO;
               obj5.type = tmp13.AUDIO;
               obj5.media = tmp6;
-              obj5.icon = React5(tmp8(8992).CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
+              obj5.icon = React5(tmp8(9024).CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
               let str5 = null;
               if (isForward) {
                 str5 = "forward";
@@ -96,7 +96,7 @@ function getBasePreviewableMedia(arg0) {
               obj5.media = tmp6;
               let obj6 = { size: "lg", color: null };
               obj6.color = nativeDefault.colors.ICON_SUBTLE;
-              obj5.icon = React5(tmp8(12316).FileIcon, obj6);
+              obj5.icon = React5(tmp8(12352).FileIcon, obj6);
               let str4 = null;
               if (isForward) {
                 str4 = "forward";
@@ -152,7 +152,7 @@ const Constants = fn(1078);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
 const PreviewableMediaTypes = { IMAGE: "image", VIDEO: "video", AUDIO: "audio", FILE: "file", STICKER: "sticker", GIF: "gif", VOICE_MESSAGE: "voice_message" };
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj3 = { voiceMessageIconOverlay: null };
 let obj4 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -174,8 +174,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp15 = React5(tmp(8992).CirclePlayIcon, { size: "md", color: "background-brand", secondaryColor: "white" });
-      const tmp16 = React5(tmp(12974).WaveformIcon, { size: "md", color: "background-brand" });
+      const tmp15 = React5(tmp(9024).CirclePlayIcon, { size: "md", color: "background-brand", secondaryColor: "white" });
+      const tmp16 = React5(tmp(13010).WaveformIcon, { size: "md", color: "background-brand" });
       cResult[3] = tmp15;
       cResult[4] = tmp16;
       let tmp13 = tmp16;

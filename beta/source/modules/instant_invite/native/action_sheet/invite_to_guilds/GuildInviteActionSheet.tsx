@@ -1,21 +1,21 @@
-// Module ID: 13426
-// Function ID: 13427
+// Module ID: 13462
+// Function ID: 13463
 // Name: GuildInviteActionSheet
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 1119, 1181, 13427, 13428, 13424, 13429, 4754, 7224, 11405, 7396, 7297, 10057, 7397, 2]
+// Dependencies: [32, 19, 17, 21, 4790, 580, 558, 568, 1119, 1181, 13463, 13464, 13460, 13465, 4786, 7256, 11441, 7428, 7329, 10096, 7429, 2]
 
-// Module 13426 (GuildInviteActionSheet)
+// Module 13462 (GuildInviteActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import SearchField from "SearchField" /* 7297 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10057 */;
-import _modDef13427 from "module_13427" /* 13427 */;
-import _modDef13428 from "module_13428" /* 13428 */;
-import GuildInviteRowDefault from "GuildInviteRow" /* 13429 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import SearchField from "SearchField" /* 7329 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7428 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7429 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10096 */;
+import _modDef13463 from "module_13463" /* 13463 */;
+import _modDef13464 from "module_13464" /* 13464 */;
+import GuildInviteRowDefault from "GuildInviteRow" /* 13465 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -23,7 +23,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { content: { paddingHorizontal: nativeDefault.space.PX_16 }, searchbarWrapper: null, sectionTitle: null, emptyStateContainer: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.searchbarWrapper = { rowGap: 8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
@@ -48,7 +48,7 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
     [tmp5, tmp6] = cResult;
   }
   if (cResult[2] !== tmp4.emptyStateContainer) {
-    const obj2 = { containerStyle: tmp4.emptyStateContainer, title: tmp5, body: tmp6, darkSource: _modDef13427, lightSource: _modDef13428 };
+    const obj2 = { containerStyle: tmp4.emptyStateContainer, title: tmp5, body: tmp6, darkSource: _modDef13463, lightSource: _modDef13464 };
     const tmp12 = timestampProducer(tmp(1181).ThemedEmptyState, obj2);
     cResult[2] = tmp4.emptyStateContainer;
     cResult[3] = tmp12;
@@ -63,8 +63,8 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
   obj.title = intl.string(util.t["2bfiLk"]);
   const intl2 = util.intl;
   obj.body = intl2.string(util.t.V6nAfF);
-  obj.darkSource = _modDef13427;
-  obj.lightSource = _modDef13428;
+  obj.darkSource = _modDef13463;
+  obj.lightSource = _modDef13464;
   return timestampProducer(native.ThemedEmptyState, obj);
 });
 ReactCompilerGating = fn(558);
@@ -76,8 +76,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((recipientId) =
   dependencyMap = tmp4;
   let obj = recipientId(568);
   let num = 2;
-  const obj2 = recipientId(13424);
-  [arr, arr2] = recipientId(13424).useServerInviteRows(recipientId, recipientId.query);
+  const obj2 = recipientId(13460);
+  [arr, arr2] = recipientId(13460).useServerInviteRows(recipientId, recipientId.query);
   if (cResult[0] === (0 === arr.length && 0 === arr2.length)) {
     if (cResult[1] === arr) {
       if (cResult[2] === arr2) {
@@ -173,7 +173,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((recipientId) =
               }
             }
           }
-          const sum = source(7224)().insets.bottom + source(580).space.PX_16;
+          const sum = source(7256)().insets.bottom + source(580).space.PX_16;
           if (cResult[9] === 0) {
             class E {
               constructor(arg0) {
@@ -244,7 +244,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((recipientId) =
                 }
               }
               const obj3 = { renderItem: tmp10, contentContainerStyle: tmp15, sections: tmp7, renderSectionHeader: tmp16, stickySectionHeadersEnabled: true, keyExtractor: tmp19, ListEmptyComponent };
-              const tmp23 = closure_6(tmp(11405).UserProfileStackedActionSheetSectionList, obj3);
+              const tmp23 = closure_6(tmp(11441).UserProfileStackedActionSheetSectionList, obj3);
               cResult[16] = tmp10;
               cResult[17] = tmp7;
               cResult[18] = tmp15;
@@ -319,8 +319,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((recipientId) =
   const source = recipientId.source;
   _slicedToArray = undefined;
   dependencyMap = closure_8();
-  let obj = recipientId(13424);
-  [arr, arr2] = recipientId(13424).useServerInviteRows(recipientId, recipientId.query);
+  let obj = recipientId(13460);
+  [arr, arr2] = recipientId(13460).useServerInviteRows(recipientId, recipientId.query);
   if (0 === arr.length) {
     if (0 === arr2.length) {
       let items = [];
@@ -346,7 +346,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((recipientId) =
     if (tmp5) {
       num = 24;
     }
-    const obj3 = { paddingTop: num, paddingBottom: source(7224)().insets.bottom + source(580).space.PX_16 };
+    const obj3 = { paddingTop: num, paddingBottom: source(7256)().insets.bottom + source(580).space.PX_16 };
     obj2.contentContainerStyle = obj3;
     obj2.sections = items;
     obj2.renderSectionHeader = function renderSectionHeader(section) {
@@ -366,7 +366,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((recipientId) =
       return guild.guild.id;
     };
     obj2.ListEmptyComponent = ListEmptyComponent;
-    return closure_6(tmp(11405).UserProfileStackedActionSheetSectionList, obj2);
+    return closure_6(tmp(11441).UserProfileStackedActionSheetSectionList, obj2);
   }
   const obj4 = { title: null, data: null };
   const intl = tmp(1119).intl;
@@ -402,7 +402,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj2 = { title: null };
     const intl = tmp(1119).intl;
     obj2.title = intl.string(tmp(1119).t.HvoZQD);
-    const tmp10 = timestampProducer(tmp(7396).BottomSheetTitleHeader, obj2);
+    const tmp10 = timestampProducer(tmp(7428).BottomSheetTitleHeader, obj2);
     cResult[1] = tmp10;
     let tmp8 = tmp10;
   } else {
@@ -412,7 +412,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { onChange: first, placeholder: null };
     const intl2 = tmp(1119).intl;
     obj3.placeholder = intl2.string(tmp(1119).t.uohsSv);
-    const tmp13 = timestampProducer(tmp(7297).SearchField, obj3);
+    const tmp13 = timestampProducer(tmp(7329).SearchField, obj3);
     cResult[2] = tmp13;
     let tmp11 = tmp13;
   } else {
@@ -423,7 +423,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl3 = tmp(1119).intl;
     const obj5 = { xDays: InstantInviteUtilsDefault.INVITE_OPTIONS_7_DAYS.label };
     obj4.children = intl3.format(tmp(1119).t["4UyUHh"], obj5);
-    const tmp17 = timestampProducer(tmp(4754).Text, obj4);
+    const tmp17 = timestampProducer(tmp(4786).Text, obj4);
     cResult[3] = tmp17;
     let tmp14 = tmp17;
   } else {
@@ -456,7 +456,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj7 = { scrollable: true, startExpanded: true, header: tmp8, contentStyles: tmp4.content, children: null };
       const items1 = [tmp18, tmp22];
       obj7.children = items1;
-      const tmp26 = React5(tmp(7397).BottomSheet, obj7);
+      const tmp26 = React5(tmp(7429).BottomSheet, obj7);
       cResult[10] = tmp4.content;
       cResult[11] = tmp18;
       cResult[12] = tmp22;

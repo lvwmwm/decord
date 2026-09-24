@@ -1,16 +1,16 @@
-// Module ID: 8096
-// Function ID: 8097
+// Module ID: 8128
+// Function ID: 8129
 // Name: ScheduledMessageNotifications
-// Dependencies: [1078, 4458, 1119, 4720, 6851, 8093, 8097, 7429, 5110, 4961, 12358, 1984, 2]
+// Dependencies: [1078, 4490, 1119, 4752, 6883, 8125, 8129, 7461, 5142, 4993, 12394, 1984, 2]
 // Exports: handleScheduleMessageError, showScheduleMessageDeleteFailureToast, showScheduleMessageDeleteSuccessToast, showScheduleMessageFailureToast, showScheduleMessageSentNowFailureToast, showScheduleMessageSentNowSuccessToast, showScheduleMessageSuccessToast, showScheduledMessageEditFailureToast, showScheduledMessageEditSuccessToast
 
-// Module 8096 (ScheduledMessageNotifications)
+// Module 8128 (ScheduledMessageNotifications)
 import Constants from "Constants" /* 1078 */;
 import util from "util" /* 1119 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
-import ClockIcon from "ClockIcon" /* 4720 */;
-import CircleXIcon from "CircleXIcon" /* 6851 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 8093 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4490 */;
+import ClockIcon from "ClockIcon" /* 4752 */;
+import CircleXIcon from "CircleXIcon" /* 6883 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 8125 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,9 +44,9 @@ export const handleScheduleMessageError = function handleScheduleMessageError(bo
   if (code === AbortCodes.TOO_MANY_SCHEDULED_MESSAGES) {
     const scheduledMessagesLimit = ScheduledMessageUtils.getScheduledMessagesLimit("ScheduledMessagesCreateRoadblock");
     if (scheduledMessagesLimit.isUpgradable) {
-      const items = [tmp11(7429).SCHEDULED_MESSAGES_ROADBLOCK];
-      tmp11(8097)(items);
-      const tmp11Result = tmp11(8097);
+      const items = [tmp11(7461).SCHEDULED_MESSAGES_ROADBLOCK];
+      tmp11(8129)(items);
+      const tmp11Result = tmp11(8129);
     } else {
       const obj2 = { title: null, body: null, confirmText: null, cancelText: null, onCancel: null, isDismissable: false };
       const intl2 = tmp7(1119).intl;
@@ -61,8 +61,8 @@ export const handleScheduleMessageError = function handleScheduleMessageError(bo
       obj2.onCancel = function onCancel() {
         return require("ModalActionCreators").pushLazy(require("asyncRequireImpl")(paths[10], paths.paths), {}, "scheduled-messages-modal", { presentation: "modal" });
       };
-      tmp11(5110).show(obj2);
-      const tmp11Result2 = tmp11(5110);
+      tmp11(5142).show(obj2);
+      const tmp11Result2 = tmp11(5142);
     }
   } else {
     const body2 = body.body;

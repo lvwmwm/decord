@@ -1,19 +1,19 @@
-// Module ID: 5834
-// Function ID: 5835
+// Module ID: 5866
+// Function ID: 5867
 // Name: UserVerification
-// Dependencies: [19, 21, 4758, 558, 568, 4583, 5835, 1119, 4754, 2]
+// Dependencies: [19, 21, 4790, 558, 568, 4615, 5867, 1119, 4786, 2]
 
-// Module 5834 (UserVerification)
+// Module 5866 (UserVerification)
 import c from "c" /* 568 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4583 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 5835 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4615 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 5867 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ emailPhoneNote: { marginTop: 8, marginBottom: 12 } });
 const ReactCompilerGating = fn(558);
 const size = fn(2);
@@ -31,9 +31,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[1] === verification) {
         let tmp5 = cResult[2];
       }
-      const tmp10 = verification[tmp(undefined, 4583).UserVerificationFieldPlatforms.EMAIL];
+      const tmp10 = verification[tmp(undefined, 4615).UserVerificationFieldPlatforms.EMAIL];
       if (cResult[3] !== tmp10) {
-        const obj2 = { passesVerification: tmp10, platform: tmp(4583).UserVerificationFieldPlatforms.EMAIL };
+        const obj2 = { passesVerification: tmp10, platform: tmp(4615).UserVerificationFieldPlatforms.EMAIL };
         const tmp15 = React3(IdentityVerificationFieldDefault, obj2);
         cResult[3] = tmp10;
         cResult[4] = tmp15;
@@ -42,7 +42,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp11 = cResult[4];
       }
       if (cResult[5] !== platform) {
-        if (platform === tmp(4583).UserVerificationFieldPlatforms.PHONE) {
+        if (platform === tmp(4615).UserVerificationFieldPlatforms.PHONE) {
           const intl2 = tmp(1119).intl;
           let stringResult = intl2.string(tmp(1119).t["jMh+TY"]);
         } else {
@@ -75,16 +75,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp22 = tmp25;
         }
         const obj4 = { style: tmp4.emailPhoneNote, variant: "heading-deprecated-12/medium", color: "text-default", children: cResult[6] };
-        const tmp21 = React3(tmp(4754).Text, obj4);
+        const tmp21 = React3(tmp(4786).Text, obj4);
         cResult[7] = tmp4.emailPhoneNote;
         cResult[8] = cResult[6];
         cResult[9] = tmp21;
         tmp19 = tmp21;
       }
     }
-    let tmp6 = platform === tmp(4583).UserVerificationFieldPlatforms.PHONE;
+    let tmp6 = platform === tmp(4615).UserVerificationFieldPlatforms.PHONE;
     if (tmp6) {
-      const obj5 = { passesVerification: verification[tmp(undefined, 4583).UserVerificationFieldPlatforms.PHONE], platform: tmp(4583).UserVerificationFieldPlatforms.PHONE };
+      const obj5 = { passesVerification: verification[tmp(undefined, 4615).UserVerificationFieldPlatforms.PHONE], platform: tmp(4615).UserVerificationFieldPlatforms.PHONE };
       tmp6 = React3(IdentityVerificationFieldDefault, obj5);
     }
     cResult[0] = platform;
@@ -100,7 +100,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const platform = field.platform;
     let tmp5 = platform === MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE;
     if (tmp5) {
-      const obj = { passesVerification: verification[tmp12(undefined, 4583).UserVerificationFieldPlatforms.PHONE], platform: tmp12(4583).UserVerificationFieldPlatforms.PHONE };
+      const obj = { passesVerification: verification[tmp12(undefined, 4615).UserVerificationFieldPlatforms.PHONE], platform: tmp12(4615).UserVerificationFieldPlatforms.PHONE };
       tmp5 = React3(IdentityVerificationFieldDefault, obj);
     }
     const items = [tmp5, , ];

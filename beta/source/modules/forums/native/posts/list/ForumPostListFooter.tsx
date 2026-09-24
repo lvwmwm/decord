@@ -1,25 +1,25 @@
-// Module ID: 12155
-// Function ID: 12156
+// Module ID: 12191
+// Function ID: 12192
 // Name: ForumPostListFooter
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 12096, 7516, 12148, 12156, 12149, 10597, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 12132, 7548, 12184, 12192, 12185, 10633, 2]
 
-// Module 12155 (ForumPostListFooter)
+// Module 12191 (ForumPostListFooter)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7516 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 12096 */;
-import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 12148 */;
-import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 12149 */;
-import GameInviteVoiceCountDefault from "GameInviteVoiceCount" /* 12156 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7548 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 12132 */;
+import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 12184 */;
+import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 12185 */;
+import GameInviteVoiceCountDefault from "GameInviteVoiceCount" /* 12192 */;
 import noop from "module_19" /* 19 */;
 
-const ForumPostReactions = tmp(10597);
+const ForumPostReactions = tmp(10633);
 require = fn;
 const View = fn(17).View;
 const AnalyticsObjects = fn(1078).AnalyticsObjects;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { footer: { display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "flex-start" }, dot: null };
 let size = { height: 4, width: 4, borderRadius: 2, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginHorizontal: 8 };
 obj2.dot = size;
@@ -136,7 +136,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items = [hasOwnProperty(ForumPostMessageCountDefault, { thread, hasUnreads }), , , ];
   if (isGameInvitesPost) {
     const obj4 = { channel: thread };
-    isGameInvitesPost = tmp8(tmp9(12156), obj4);
+    isGameInvitesPost = tmp8(tmp9(12192), obj4);
   }
   items[1] = isGameInvitesPost;
   if (tmp6Result) {
@@ -144,7 +144,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj6 = { style: tmp.dot };
     const items1 = [tmp8(tmp7, obj6), ];
     const obj7 = { thread, typingUserIds, hasUnreads };
-    items1[1] = tmp8(tmp9(12149), obj7);
+    items1[1] = tmp8(tmp9(12185), obj7);
     obj5.children = items1;
     tmp6Result = tmp6(timestampProducer, obj5);
   }

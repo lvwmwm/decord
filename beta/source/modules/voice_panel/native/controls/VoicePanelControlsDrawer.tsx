@@ -1,21 +1,21 @@
-// Module ID: 17632
-// Function ID: 17633
+// Module ID: 17642
+// Function ID: 17643
 // Name: VoicePanelControlsDrawer
-// Dependencies: [32, 19, 17, 12420, 21, 4758, 580, 558, 568, 5801, 5141, 12417, 12419, 4497, 12427, 5187, 9660, 17633, 17643, 2]
+// Dependencies: [32, 19, 17, 12456, 21, 4790, 580, 558, 568, 5833, 5173, 12453, 12455, 4529, 12463, 5219, 9692, 17643, 17653, 2]
 
-// Module 17632 (VoicePanelControlsDrawer)
+// Module 17642 (VoicePanelControlsDrawer)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import spring from "spring" /* 5187 */;
-import useRefValueDefault from "useRefValue" /* 5801 */;
-import VoicePanelChatViewDefault from "VoicePanelChatView" /* 12417 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12427 */;
-import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 17633 */;
-import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 17643 */;
+import spring from "spring" /* 5219 */;
+import useRefValueDefault from "useRefValue" /* 5833 */;
+import VoicePanelChatViewDefault from "VoicePanelChatView" /* 12453 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12463 */;
+import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 17643 */;
+import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 17653 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const Suspender = tmp(5141);
+const Suspender = tmp(5173);
 require = fn;
 function renderChat(shown) {
   const obj = { collapsable: false, style: absoluteFill.absoluteFill, children: options(VoicePanelChatViewDefault, { shown }) };
@@ -23,12 +23,12 @@ function renderChat(shown) {
 }
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const VoicePanelConstants = fn(12420);
+const VoicePanelConstants = fn(12456);
 ({ MODE_CHANGE_PHYSICS: closure_7, VoicePanelModes: closure_8 } = VoicePanelConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 let c11 = 200;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { drawer: { flex: 1, zIndex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER } };
 let closure_12 = createStyles.createStyles(obj);
 let ReactCompilerGating = fn(558);
@@ -253,12 +253,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gestur
       if (!tmp8) {
         if (tmp7 === VoicePanelModes.PANEL) {
           if (tmp6) {
-            tmp(4497).runOnJS(closure_6)(false);
-            const tmpResult = tmp(4497);
+            tmp(4529).runOnJS(closure_6)(false);
+            const tmpResult = tmp(4529);
           }
         }
-        tmp(4497).runOnJS(closure_6)(true);
-        const tmpResult2 = tmp(4497);
+        tmp(4529).runOnJS(closure_6)(true);
+        const tmpResult2 = tmp(4529);
       }
       const tmp5 = _slicedToArray(arg0, 2);
       tmp8 = null != arg1 && tmp6 === arg1[0] && tmp7 === arg1[1];
@@ -455,12 +455,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gestur
       if (!tmp8) {
         if (tmp7 === VoicePanelModes.PANEL) {
           if (tmp6) {
-            tmp(4497).runOnJS(c6)(false);
-            const tmpResult = tmp(4497);
+            tmp(4529).runOnJS(c6)(false);
+            const tmpResult = tmp(4529);
           }
         }
-        tmp(4497).runOnJS(c6)(true);
-        const tmpResult2 = tmp(4497);
+        tmp(4529).runOnJS(c6)(true);
+        const tmpResult2 = tmp(4529);
       }
       const tmp5 = _slicedToArray(arg0, 2);
       tmp8 = null != arg1 && tmp6 === arg1[0] && tmp7 === arg1[1];

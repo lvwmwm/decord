@@ -1,23 +1,23 @@
-// Module ID: 12251
-// Function ID: 12252
+// Module ID: 12287
+// Function ID: 12288
 // Name: home/EmptyState
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 12181, 9519, 12252, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 12217, 9551, 12288, 1119, 4786, 2]
 
-// Module 12251 (home/EmptyState)
+// Module 12287 (home/EmptyState)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 9519 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12181 */;
-import HomeEmptyStateDefault from "HomeEmptyState" /* 12252 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 9551 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12217 */;
+import HomeEmptyStateDefault from "HomeEmptyState" /* 12288 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { padding: 16, gap: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.lg, alignItems: "center", justifyContent: "center" }, textContainer: { textAlign: "center" } };
 let closure_6 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -46,7 +46,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] !== tmp4.textContainer) {
     const obj3 = { style: tmp4.textContainer, variant: "text-md/semibold", color: "text-default", children: tmp10 };
-    const tmp14 = React4(tmp(4754).Text, obj3);
+    const tmp14 = React4(tmp(4786).Text, obj3);
     cResult[2] = tmp4.textContainer;
     cResult[3] = tmp14;
     let tmp12 = tmp14;

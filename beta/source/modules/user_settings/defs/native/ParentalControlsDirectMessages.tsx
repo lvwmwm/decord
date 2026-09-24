@@ -1,18 +1,18 @@
-// Module ID: 16208
-// Function ID: 16209
+// Module ID: 16218
+// Function ID: 16219
 // Name: ParentalControlsDirectMessages
-// Dependencies: [7784, 8238, 558, 15091, 15092, 11594, 1119, 2]
+// Dependencies: [7816, 8270, 558, 15094, 15095, 11630, 1119, 2]
 
-// Module 16208 (ParentalControlsDirectMessages)
+// Module 16218 (ParentalControlsDirectMessages)
 import util from "util" /* 1119 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15091 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15092 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7784 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15094 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15095 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7816 */;
 
 require = fn;
 let ReactCompilerGating = fn(558);
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const SettingBuilders = fn(11594);
+const SettingBuilders = fn(11630);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
@@ -22,7 +22,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.wbYDfT);
   },
-  parent: fn(8238).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  parent: fn(8270).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: () => !useParentalControlSettings.useDefaultGuildsRestricted(),
   onValueChange: function onAllowDirectMessagesFromServerMembersValueChange(arg0) {
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();

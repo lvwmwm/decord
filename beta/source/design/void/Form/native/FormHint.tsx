@@ -1,18 +1,18 @@
-// Module ID: 8883
-// Function ID: 8884
+// Module ID: 8915
+// Function ID: 8916
 // Name: FormHint
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 5902, 4754, 1181, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 5934, 4786, 1181, 2]
 
-// Module 8883 (FormHint)
+// Module 8915 (FormHint)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import RedesignCompat from "RedesignCompat" /* 5902 */;
+import RedesignCompat from "RedesignCompat" /* 5934 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Platform = fn(17).Platform;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { formHintText: { fontSize: 14, marginBottom: 0, color: nativeDefault.colors.TEXT_MUTED }, redesignHorizontalPadding: { paddingHorizontal: 12 }, horizonatalPadding: { paddingHorizontal: 16 } };
 let closure_4 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
@@ -40,7 +40,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp11;
       }
       const obj2 = { variant: "text-sm/medium", color: "text-muted", style: tmp10, children };
-      const tmp13 = jsx(tmp(4754).Text, { variant: "text-sm/medium", color: "text-muted", style: tmp10, children });
+      const tmp13 = jsx(tmp(4786).Text, { variant: "text-sm/medium", color: "text-muted", style: tmp10, children });
       cResult[3] = children;
       cResult[4] = tmp10;
       cResult[5] = tmp13;
@@ -98,7 +98,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items = [redesignHorizontalPadding, style];
     obj2.style = items;
     obj2.children = children;
-    let tmp4Result = tmp4(tmp2(4754).Text, obj2);
+    let tmp4Result = tmp4(tmp2(4786).Text, obj2);
   } else {
     const items1 = [tmp.formHintText, , ];
     let horizonatalPadding = !flag;

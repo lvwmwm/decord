@@ -1,25 +1,25 @@
-// Module ID: 15471
-// Function ID: 15472
+// Module ID: 15481
+// Function ID: 15482
 // Name: GuildRoleSubscriptionsHooks
-// Dependencies: [5, 32, 19, 5496, 4393, 558, 568, 504, 7499, 5801, 15472, 15473, 12349, 1374, 2]
+// Dependencies: [5, 32, 19, 5528, 4425, 558, 568, 504, 7531, 5833, 15482, 15483, 12385, 1374, 2]
 // Exports: useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchSubscriptionsSettings, usePublishSubscriptionListing, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 15471 (GuildRoleSubscriptionsHooks)
+// Module 15481 (GuildRoleSubscriptionsHooks)
 import c from "c" /* 568 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7499 */;
-import useRequestDefault from "useRequest" /* 12349 */;
-import subscriptionUtils from "subscriptionUtils" /* 15473 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7531 */;
+import useRequestDefault from "useRequest" /* 12385 */;
+import subscriptionUtils from "subscriptionUtils" /* 15483 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4393 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5528 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4425 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const FetchState = fn(4393).FetchState;
+const FetchState = fn(4425).FetchState;
 let closure_10 = [];
 let ReactCompilerGating = fn(558);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {

@@ -1,16 +1,16 @@
-// Module ID: 7407
-// Function ID: 7408
+// Module ID: 7439
+// Function ID: 7440
 // Name: ConnectionCard
-// Dependencies: [19, 7348, 21, 558, 568, 7408, 7425, 2]
+// Dependencies: [19, 7380, 21, 558, 568, 7440, 7457, 2]
 
-// Module 7407 (ConnectionCard)
+// Module 7439 (ConnectionCard)
 import c from "c" /* 568 */;
-import ApplicationConnectionCardDefault from "ApplicationConnectionCard" /* 7408 */;
-import ProviderConnectionCardDefault from "ProviderConnectionCard" /* 7425 */;
+import ApplicationConnectionCardDefault from "ApplicationConnectionCard" /* 7440 */;
+import ProviderConnectionCardDefault from "ProviderConnectionCard" /* 7457 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const OnboardingConnectionType = fn(7348).OnboardingConnectionType;
+const OnboardingConnectionType = fn(7380).OnboardingConnectionType;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);
 const size = fn(2);

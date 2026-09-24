@@ -1,11 +1,11 @@
-// Module ID: 14959
-// Function ID: 14960
+// Module ID: 14994
+// Function ID: 14995
 // Name: useHighlightSettingItem
-// Dependencies: [14955, 558, 568, 2]
+// Dependencies: [14990, 558, 568, 2]
 
-// Module 14959 (useHighlightSettingItem)
+// Module 14994 (useHighlightSettingItem)
 import c from "c" /* 568 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14955 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14990 */;
 
 require = fn;
 const ReactCompilerGating = fn(558);

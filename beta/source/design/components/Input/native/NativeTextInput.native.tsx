@@ -1,13 +1,13 @@
-// Module ID: 6860
-// Function ID: 6861
+// Module ID: 6892
+// Function ID: 6893
 // Name: NativeTextInput
-// Dependencies: [19, 17, 1484, 1078, 21, 558, 568, 6861, 5203, 5173, 6862, 4471, 4464, 2]
+// Dependencies: [19, 17, 1484, 1078, 21, 558, 568, 6893, 5235, 5205, 6894, 4503, 4496, 2]
 
-// Module 6860 (NativeTextInput)
+// Module 6892 (NativeTextInput)
 import c from "c" /* 568 */;
-import native from "native" /* 4471 */;
-import useMountEffect from "useMountEffect" /* 5203 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6862 */;
+import native from "native" /* 4503 */;
+import useMountEffect from "useMountEffect" /* 5235 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6894 */;
 import noop from "module_19" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1484 */;
 
@@ -82,7 +82,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((value, arg1) =
         const mountLayoutEffect = useMountEffect.useMountLayoutEffect(tmp8);
         const _Symbol = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj2 = { value: "Array", defaultValue: "Set" };
+          const obj2 = { value: "state", defaultValue: "toCharArray$esjava$1" };
           cResult[8] = obj2;
           let tmp11 = obj2;
         } else {
@@ -145,7 +145,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((value, arg1) =
       current.setNativeProps(obj);
     }
   });
-  return { value: "Array", defaultValue: "Set" };
+  return { value: "state", defaultValue: "toCharArray$esjava$1" };
 });
 ReactCompilerGating = fn(558);
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -268,9 +268,9 @@ export const NativeTextInput = noop.forwardRef((keyboardAppearance, ref2) => {
   native;
   if (null != keyboardAppearance.keyboardAppearance) {
     const obj = {};
-    const merged = Object.assign(tmp6(4464).mergeProps(keyboardAppearance, tmp4, tmp5));
-    const tmp6Result = tmp6(4464);
-    obj.ref = tmp6(4464).mergeRefs(ref, ref2);
+    const merged = Object.assign(tmp6(4496).mergeProps(keyboardAppearance, tmp4, tmp5));
+    const tmp6Result = tmp6(4496);
+    obj.ref = tmp6(4496).mergeRefs(ref, ref2);
     const tmp15 = v65535(hasOwnProperty, obj);
     let panGestureWrapperResult = tmp15;
     if (!keyboardAppearance.multiline) {
@@ -278,7 +278,7 @@ export const NativeTextInput = noop.forwardRef((keyboardAppearance, ref2) => {
     }
     return panGestureWrapperResult;
   } else {
-    keyboardAppearance.keyboardAppearance = tmp6(4464).isThemeDark(tmp8) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
-    const tmp6Result4 = tmp6(4464);
+    keyboardAppearance.keyboardAppearance = tmp6(4496).isThemeDark(tmp8) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
+    const tmp6Result4 = tmp6(4496);
   }
 });

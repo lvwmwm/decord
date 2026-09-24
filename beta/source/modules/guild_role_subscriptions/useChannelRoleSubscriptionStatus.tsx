@@ -1,12 +1,12 @@
-// Module ID: 5221
-// Function ID: 5222
+// Module ID: 5253
+// Function ID: 5254
 // Name: useChannelRoleSubscriptionStatus
-// Dependencies: [2101, 2045, 4399, 1078, 558, 568, 504, 2]
+// Dependencies: [2101, 2045, 4431, 1078, 558, 568, 504, 2]
 
-// Module 5221 (useChannelRoleSubscriptionStatus)
+// Module 5253 (useChannelRoleSubscriptionStatus)
 import GatedChannelStore from "GatedChannelStore" /* 2101 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
-import PermissionStore from "PermissionStore" /* 4399 */;
+import PermissionStore from "PermissionStore" /* 4431 */;
 
 const require = globalThis.__r;
 

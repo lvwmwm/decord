@@ -1,23 +1,23 @@
-// Module ID: 17210
-// Function ID: 17211
+// Module ID: 17220
+// Function ID: 17221
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 7415, 1119, 2112, 4754, 2]
+// Dependencies: [19, 17, 1078, 21, 4790, 580, 558, 568, 7447, 1119, 2112, 4786, 2]
 
-// Module 17210 (ChannelDetailsLinkedLobby)
+// Module 17220 (ChannelDetailsLinkedLobby)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7415 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7447 */;
 import noop from "module_19" /* 19 */;
 
 const util = BPDKoA(1119);
-const Text_Text = BPDKoA(4754);
+const Text_Text = BPDKoA(4786);
 require = fn;
 const View = fn(17).View;
 const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ Fragment: hasOwnProperty, jsxs: metroRequire, jsx: closure_7 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { alignItems: "center" }, divider: null };
 let size = { height: 1, width: 48, marginTop: 12, backgroundColor: nativeDefault.colors.BORDER_STRONG };
 obj2.divider = size;
@@ -96,7 +96,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const items1 = [cResult[4], "  \u2022  ", tmp12];
         obj9.children = items1;
         obj8.children = timestampProducer(hasOwnProperty, obj9);
-        const tmp20 = React5(tmp(4754).Text, obj8);
+        const tmp20 = React5(tmp(4786).Text, obj8);
         cResult[6] = cResult[4];
         cResult[7] = tmp12;
         cResult[8] = tmp20;

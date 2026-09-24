@@ -1,20 +1,20 @@
-// Module ID: 14951
-// Function ID: 14952
+// Module ID: 14986
+// Function ID: 14987
 // Name: SafetySettingsNotice
-// Dependencies: [19, 17, 8675, 21, 4758, 580, 558, 568, 14952, 4712, 1119, 4754, 2]
+// Dependencies: [19, 17, 8707, 21, 4790, 580, 558, 568, 14987, 4744, 1119, 4786, 2]
 
-// Module 14951 (SafetySettingsNotice)
+// Module 14986 (SafetySettingsNotice)
 import nativeDefault from "native" /* 580 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 14952 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 14987 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_4 = fn(8675).SafetySettingsNoticeAction;
+let closure_4 = fn(8707).SafetySettingsNoticeAction;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { blockedIgnoredRedirect: { display: "flex", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.xs, borderColor: nativeDefault.colors.TEXT_LINK, borderWidth: 1, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO } };
 let closure_7 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

@@ -1,10 +1,10 @@
-// Module ID: 12188
-// Function ID: 12189
+// Module ID: 12224
+// Function ID: 12225
 // Name: getPreviewVideoAssetUrl
 // Dependencies: [1078, 2]
 // Exports: default
 
-// Module 12188 (getPreviewVideoAssetUrl)
+// Module 12224 (getPreviewVideoAssetUrl)
 import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 

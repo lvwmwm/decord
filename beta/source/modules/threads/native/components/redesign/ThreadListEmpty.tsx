@@ -1,22 +1,22 @@
-// Module ID: 17186
-// Function ID: 17187
+// Module ID: 17196
+// Function ID: 17197
 // Name: ThreadListEmpty
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1181, 12384, 1119, 4754, 5188, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1181, 12420, 1119, 4786, 5220, 2]
 
-// Module 17186 (ThreadListEmpty)
+// Module 17196 (ThreadListEmpty)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import _modDef12384 from "module_12384" /* 12384 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import _modDef12420 from "module_12420" /* 12420 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { container: { flex: 1, justifyContent: "center", alignItems: "center" }, iconWrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: nativeDefault.radii.round, padding: 12 }, title: { textAlign: "center", marginTop: 16, marginHorizontal: 16 }, subtext: { textAlign: "center", marginTop: 4, marginHorizontal: 16, marginBottom: 16 } };
 let closure_6 = createStyles.createStyles(obj);
 const ReactCompilerGating = fn(558);
@@ -29,7 +29,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onCrea
   onCreateThreadPress = onCreateThreadPress.onCreateThreadPress;
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { source: _modDef12384, size: tmp(1181).Icon.Sizes.MEDIUM };
+    const obj2 = { source: _modDef12420, size: tmp(1181).Icon.Sizes.MEDIUM };
     const tmp8 = React4(tmp(1181).Icon, obj2);
     cResult[0] = tmp8;
     let first = tmp8;
@@ -55,7 +55,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onCrea
   }
   if (cResult[4] !== tmp4.title) {
     const obj4 = { style: tmp4.title, accessibilityRole: "header", maxFontSizeMultiplier: 2, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp13 };
-    const tmp17 = React4(tmp(4754).Text, obj4);
+    const tmp17 = React4(tmp(4786).Text, obj4);
     cResult[4] = tmp4.title;
     cResult[5] = tmp17;
     let tmp15 = tmp17;
@@ -72,7 +72,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onCrea
   }
   if (cResult[7] !== tmp4.subtext) {
     const obj5 = { style: tmp4.subtext, maxFontSizeMultiplier: 2, variant: "text-sm/medium", color: "text-default", children: tmp18 };
-    const tmp22 = React4(tmp(4754).Text, obj5);
+    const tmp22 = React4(tmp(4786).Text, obj5);
     cResult[7] = tmp4.subtext;
     cResult[8] = tmp22;
     let tmp20 = tmp22;
@@ -85,7 +85,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onCrea
       const obj6 = { onPress: onCreateThreadPress, text: null };
       const intl3 = tmp(1119).intl;
       obj6.text = intl3.string(tmp(1119).t.rBIGBL);
-      tmp25 = React4(tmp(5188).Button, obj6);
+      tmp25 = React4(tmp(5220).Button, obj6);
     }
     cResult[9] = onCreateThreadPress;
     cResult[10] = tmp25;
@@ -120,7 +120,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onCrea
   onCreateThreadPress = onCreateThreadPress.onCreateThreadPress;
   const tmp = closure_6();
   const obj = { style: tmp.container, children: null };
-  const obj2 = { style: tmp.iconWrapper, children: React4(native.Icon, { source: _modDef12384, size: native.Icon.Sizes.MEDIUM }) };
+  const obj2 = { style: tmp.iconWrapper, children: React4(native.Icon, { source: _modDef12420, size: native.Icon.Sizes.MEDIUM }) };
   const items = [React4(View, obj2), , , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", maxFontSizeMultiplier: 2, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;
@@ -135,7 +135,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onCrea
     const obj6 = { onPress: onCreateThreadPress, text: null };
     const intl3 = tmp5(1119).intl;
     obj6.text = intl3.string(tmp5(1119).t.rBIGBL);
-    tmp4Result = React4(tmp5(5188).Button, obj6);
+    tmp4Result = React4(tmp5(5220).Button, obj6);
   }
   items[3] = tmp4Result;
   obj.children = items;

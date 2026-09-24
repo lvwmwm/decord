@@ -1,20 +1,20 @@
-// Module ID: 10464
-// Function ID: 10465
+// Module ID: 10503
+// Function ID: 10504
 // Name: EmojiPickerList
-// Dependencies: [19, 10439, 1078, 1379, 1222, 1378, 21, 558, 568, 7409, 7429, 10465, 10444, 10443, 10466, 10467, 10468, 10220, 8101, 9425, 4726, 4727, 4417, 4625, 10473, 4458, 1119, 10440, 10478, 2023, 10484, 10481, 10485, 10488, 10482, 10491, 10492, 10499, 10501, 8105, 10503, 2]
+// Dependencies: [19, 10478, 1078, 1379, 1222, 1378, 21, 558, 568, 7441, 7461, 10504, 10483, 10482, 10505, 10506, 10507, 10259, 8133, 9457, 4758, 4759, 4449, 4657, 10509, 4490, 1119, 10479, 10514, 2023, 10520, 10517, 10521, 10524, 10518, 10527, 10528, 10535, 10537, 8137, 10539, 2]
 
-// Module 10464 (EmojiPickerList)
-import EmojiUtilsDefault from "EmojiUtils" /* 4417 */;
-import HapticUtils from "HapticUtils" /* 4726 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4727 */;
-import EmojiPickerUtils from "EmojiPickerUtils" /* 10440 */;
-import TopEmojisActionCreators from "TopEmojisActionCreators" /* 10443 */;
-import useEmojiPickerData from "useEmojiPickerData" /* 10478 */;
-import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 10481 */;
+// Module 10503 (EmojiPickerList)
+import EmojiUtilsDefault from "EmojiUtils" /* 4449 */;
+import HapticUtils from "HapticUtils" /* 4758 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4759 */;
+import EmojiPickerUtils from "EmojiPickerUtils" /* 10479 */;
+import TopEmojisActionCreators from "TopEmojisActionCreators" /* 10482 */;
+import useEmojiPickerData from "useEmojiPickerData" /* 10514 */;
+import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 10517 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const IMAGE_SIZE = fn(10439).IMAGE_SIZE;
+const IMAGE_SIZE = fn(10478).IMAGE_SIZE;
 const Constants = fn(1078);
 ({ AnalyticsObjects: hasOwnProperty, AnalyticsPages: metroRequire, AnalyticsSections: closure_7, UpsellTypes: closure_8 } = Constants);
 const EmojiConstants = fn(1379);
@@ -282,9 +282,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
                                         const type = item.type;
                                         ({ target, index } = item);
                                         if (useEmojiPickerData.EmojiPickerItemType.NATIVE_SECTION !== type) {
-                                          if (tmp(10478).EmojiPickerItemType.PLACEHOLDER !== type) {
-                                            if (tmp(10478).EmojiPickerItemType.EMOJI_ROW_SLIM !== type) {
-                                              if (tmp(10478).EmojiPickerItemType.TITLE === type) {
+                                          if (tmp(10514).EmojiPickerItemType.PLACEHOLDER !== type) {
+                                            if (tmp(10514).EmojiPickerItemType.EMOJI_ROW_SLIM !== type) {
+                                              if (tmp(10514).EmojiPickerItemType.TITLE === type) {
                                                 if ("StickyHeader" === target) {
                                                   const current = emojiPickerListRef.current;
                                                   if (current != null) {
@@ -292,29 +292,29 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
                                                   }
                                                 }
                                                 const obj2 = { label: item.title, isSectionNitroLocked: item.isSectionNitroLocked, useTier0UpsellContent };
-                                                return __initData2(tmp(10484).Section, obj2);
-                                              } else if (tmp(10478).EmojiPickerItemType.PREMIUM_INLINE_ROADBLOCK === type) {
+                                                return __initData2(tmp(10520).Section, obj2);
+                                              } else if (tmp(10514).EmojiPickerItemType.PREMIUM_INLINE_ROADBLOCK === type) {
                                                 const obj3 = { position: item.position, useTier0UpsellContent };
                                                 return __initData2(PremiumUpsellSectionDividerDefault, obj3);
                                               } else {
-                                                if (tmp(10478).EmojiPickerItemType.EMOJI_ROW === type) {
+                                                if (tmp(10514).EmojiPickerItemType.EMOJI_ROW === type) {
                                                   ({ emojis, emojisDisabled, footer, row, isSectionNitroLocked } = item);
                                                   const obj4 = { emojis, emojisDisabled, category: footer, rowSize: rounded, containerWidth, onPressEmoji, onLongPressEmoji, animateEmoji: setting, row, isSectionNitroLocked };
-                                                  let tmp27Result = __initData2(tmp(10485).EmojiPickerListRow, obj4);
-                                                } else if (tmp(10478).EmojiPickerItemType.EMOJI_ROW_NSFW === type) {
-                                                  tmp27Result = __initData2(tmp(10484).NSFWRow, {});
-                                                } else if (tmp(10478).EmojiPickerItemType.FOOTER_UPSELL === type) {
+                                                  let tmp27Result = __initData2(tmp(10521).EmojiPickerListRow, obj4);
+                                                } else if (tmp(10514).EmojiPickerItemType.EMOJI_ROW_NSFW === type) {
+                                                  tmp27Result = __initData2(tmp(10520).NSFWRow, {});
+                                                } else if (tmp(10514).EmojiPickerItemType.FOOTER_UPSELL === type) {
                                                   let guild_id;
                                                   if (channel != null) {
                                                     guild_id = channel.guild_id;
                                                   }
                                                   const obj = { guildId: guild_id, analyticsLocations, useTier0UpsellContent };
-                                                  tmp27Result = __initData2(tmp(10488).PremiumSearchUpsell, obj);
+                                                  tmp27Result = __initData2(tmp(10524).PremiumSearchUpsell, obj);
                                                 }
                                                 let tmp16 = true === item.isSectionNitroLocked;
                                                 if (tmp16) {
                                                   const obj5 = { useTier0UpsellContent };
-                                                  tmp16 = __initData2(tmp(10482).PremiumUpsellGradientBackground, obj5);
+                                                  tmp16 = __initData2(tmp(10518).PremiumUpsellGradientBackground, obj5);
                                                 }
                                                 const obj6 = { children: null };
                                                 const items = [tmp16, tmp27Result];
@@ -365,13 +365,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
                           onPressEmoji(emoji);
                         }
                       } else if (constants4.ROLE_SUBSCRIPTION_LOCKED === emojiUnavailableReason) {
-                        tmp2(4625).dismissKeyboard();
+                        tmp2(4657).dismissKeyboard();
                         if (null != emoji.guildId) {
                           const obj4 = { guildId: emoji.guildId };
-                          const result1 = tmp4(10473).handleShowEmojiUpsellAlert(obj4);
-                          const tmp4Result = tmp4(10473);
+                          const result1 = tmp4(10509).handleShowEmojiUpsellAlert(obj4);
+                          const tmp4Result = tmp4(10509);
                         }
-                        const tmp2Result = tmp2(4625);
+                        const tmp2Result = tmp2(4657);
                       } else if (tmp40.PREMIUM_LOCKED === emojiUnavailableReason) {
                         const obj5 = { initialUpsellKey: emoji.animated ? constants.ANIMATED_EMOJI : constants.GLOBAL_EMOJI, analyticsLocation: null, analyticsLocations: null, analyticsProperties: null };
                         let guild_id;
@@ -403,14 +403,14 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
                         obj7.is_external = tmp20;
                         obj7.has_search_query = tmp;
                         obj5.analyticsProperties = obj7;
-                        const result2 = tmp4(9425).handleShowUpsellAlert(obj5);
-                        const tmp4Result3 = tmp4(9425);
+                        const result2 = tmp4(9457).handleShowUpsellAlert(obj5);
+                        const tmp4Result3 = tmp4(9457);
                       } else {
                         const obj8 = { key: "EMOJI_PICKER_LIST_PRESS_DISABLED", content: null };
                         const intl = tmp2(1119).intl;
                         obj8.content = intl.string(tmp2(1119).t.VsE5yG);
-                        tmp4(4458).open(obj8);
-                        const tmp4Result4 = tmp4(4458);
+                        tmp4(4490).open(obj8);
+                        const tmp4Result4 = tmp4(4490);
                       }
                       const tmp2Result2 = EmojiPickerUtils;
                       if (str.length > 0) {
@@ -583,13 +583,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
         onPressEmoji(emoji);
       }
     } else if (constants4.ROLE_SUBSCRIPTION_LOCKED === emojiUnavailableReason) {
-      tmp2(4625).dismissKeyboard();
+      tmp2(4657).dismissKeyboard();
       if (null != emoji.guildId) {
         const obj4 = { guildId: emoji.guildId };
-        const result1 = tmp4(10473).handleShowEmojiUpsellAlert(obj4);
-        const tmp4Result = tmp4(10473);
+        const result1 = tmp4(10509).handleShowEmojiUpsellAlert(obj4);
+        const tmp4Result = tmp4(10509);
       }
-      const tmp2Result = tmp2(4625);
+      const tmp2Result = tmp2(4657);
     } else if (tmp40.PREMIUM_LOCKED === emojiUnavailableReason) {
       const obj5 = { initialUpsellKey: emoji.animated ? constants.ANIMATED_EMOJI : constants.GLOBAL_EMOJI, analyticsLocation: null, analyticsLocations: null, analyticsProperties: null };
       let guild_id;
@@ -621,14 +621,14 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
       obj7.is_external = tmp20;
       obj7.has_search_query = tmp;
       obj5.analyticsProperties = obj7;
-      const result2 = tmp4(9425).handleShowUpsellAlert(obj5);
-      const tmp4Result3 = tmp4(9425);
+      const result2 = tmp4(9457).handleShowUpsellAlert(obj5);
+      const tmp4Result3 = tmp4(9457);
     } else {
       const obj8 = { key: "EMOJI_PICKER_LIST_PRESS_DISABLED", content: null };
       const intl = tmp2(1119).intl;
       obj8.content = intl.string(tmp2(1119).t.VsE5yG);
-      tmp4(4458).open(obj8);
-      const tmp4Result4 = tmp4(4458);
+      tmp4(4490).open(obj8);
+      const tmp4Result4 = tmp4(4490);
     }
     const tmp2Result2 = EmojiPickerUtils;
     if (str.length > 0) {
@@ -680,9 +680,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
     const type = item.type;
     ({ target, index } = item);
     if (useEmojiPickerData.EmojiPickerItemType.NATIVE_SECTION !== type) {
-      if (tmp(10478).EmojiPickerItemType.PLACEHOLDER !== type) {
-        if (tmp(10478).EmojiPickerItemType.EMOJI_ROW_SLIM !== type) {
-          if (tmp(10478).EmojiPickerItemType.TITLE === type) {
+      if (tmp(10514).EmojiPickerItemType.PLACEHOLDER !== type) {
+        if (tmp(10514).EmojiPickerItemType.EMOJI_ROW_SLIM !== type) {
+          if (tmp(10514).EmojiPickerItemType.TITLE === type) {
             if ("StickyHeader" === target) {
               const current = emojiPickerListRef.current;
               if (current != null) {
@@ -690,29 +690,29 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
               }
             }
             const obj2 = { label: item.title, isSectionNitroLocked: item.isSectionNitroLocked, useTier0UpsellContent };
-            return __initData2(tmp(10484).Section, obj2);
-          } else if (tmp(10478).EmojiPickerItemType.PREMIUM_INLINE_ROADBLOCK === type) {
+            return __initData2(tmp(10520).Section, obj2);
+          } else if (tmp(10514).EmojiPickerItemType.PREMIUM_INLINE_ROADBLOCK === type) {
             const obj3 = { position: item.position, useTier0UpsellContent };
             return __initData2(PremiumUpsellSectionDividerDefault, obj3);
           } else {
-            if (tmp(10478).EmojiPickerItemType.EMOJI_ROW === type) {
+            if (tmp(10514).EmojiPickerItemType.EMOJI_ROW === type) {
               ({ emojis, emojisDisabled, footer, row, isSectionNitroLocked } = item);
               const obj4 = { emojis, emojisDisabled, category: footer, rowSize: rounded, containerWidth, onPressEmoji, onLongPressEmoji: callback1, animateEmoji: setting, row, isSectionNitroLocked };
-              let tmp27Result = __initData2(tmp(10485).EmojiPickerListRow, obj4);
-            } else if (tmp(10478).EmojiPickerItemType.EMOJI_ROW_NSFW === type) {
-              tmp27Result = __initData2(tmp(10484).NSFWRow, {});
-            } else if (tmp(10478).EmojiPickerItemType.FOOTER_UPSELL === type) {
+              let tmp27Result = __initData2(tmp(10521).EmojiPickerListRow, obj4);
+            } else if (tmp(10514).EmojiPickerItemType.EMOJI_ROW_NSFW === type) {
+              tmp27Result = __initData2(tmp(10520).NSFWRow, {});
+            } else if (tmp(10514).EmojiPickerItemType.FOOTER_UPSELL === type) {
               let guild_id;
               if (channel != null) {
                 guild_id = channel.guild_id;
               }
               const obj = { guildId: guild_id, analyticsLocations, useTier0UpsellContent };
-              tmp27Result = __initData2(tmp(10488).PremiumSearchUpsell, obj);
+              tmp27Result = __initData2(tmp(10524).PremiumSearchUpsell, obj);
             }
             let tmp16 = true === item.isSectionNitroLocked;
             if (tmp16) {
               const obj5 = { useTier0UpsellContent };
-              tmp16 = __initData2(tmp(10482).PremiumUpsellGradientBackground, obj5);
+              tmp16 = __initData2(tmp(10518).PremiumUpsellGradientBackground, obj5);
             }
             const obj6 = { children: null };
             const items = [tmp16, tmp27Result];

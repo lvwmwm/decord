@@ -1,14 +1,14 @@
-// Module ID: 11935
-// Function ID: 11936
+// Module ID: 11971
+// Function ID: 11972
 // Name: ExperimentEmbedPlatformUtils
-// Dependencies: [4725, 11936, 1984, 11604, 11605, 8139, 4679, 2]
+// Dependencies: [4757, 11972, 1984, 11640, 11641, 8171, 4711, 2]
 // Exports: handleCodedLinkExperimentEmbedTap
 
-// Module 11935 (ExperimentEmbedPlatformUtils)
+// Module 11971 (ExperimentEmbedPlatformUtils)
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11604 */;
-import useApexExperiments from "useApexExperiments" /* 11605 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 11640 */;
+import useApexExperiments from "useApexExperiments" /* 11641 */;
 import size from "module_2" /* 2 */;
 
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
@@ -35,21 +35,21 @@ export const handleCodedLinkExperimentEmbedTap = function handleCodedLinkExperim
         if (tmp6 == null) {
           tmp6 = null;
         }
-        const experimentBuckets = tmp(8139).getExperimentBuckets(tmp5);
+        const experimentBuckets = tmp(8171).getExperimentBuckets(tmp5);
         const iter = experimentBuckets.find((value) => value.value === closure_0);
         if (null != iter) {
           if (null != tmp6) {
             if (tmp6.variantId === iter.value) {
-              tmp(4679).overrideBucket(tmp5.system, experimentFromEmbedURL, null);
-              const tmpResult3 = tmp(4679);
+              tmp(4711).overrideBucket(tmp5.system, experimentFromEmbedURL, null);
+              const tmpResult3 = tmp(4711);
             }
           }
-          tmp(4679).overrideBucket(tmp5.system, experimentFromEmbedURL, iter.value);
-          const tmpResult4 = tmp(4679);
+          tmp(4711).overrideBucket(tmp5.system, experimentFromEmbedURL, iter.value);
+          const tmpResult4 = tmp(4711);
         }
-        const tmpResult = tmp(8139);
+        const tmpResult = tmp(8171);
       }
     }
   }
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11936, dependencyMap.paths), "ExperimentOverrideSheet", { id: experimentFromEmbedURL });
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11972, dependencyMap.paths), "ExperimentOverrideSheet", { id: experimentFromEmbedURL });
 };

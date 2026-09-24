@@ -1,21 +1,21 @@
-// Module ID: 17388
-// Function ID: 17389
+// Module ID: 17398
+// Function ID: 17399
 // Name: Alerts
-// Dependencies: [19, 17, 4750, 14023, 14679, 4949, 11665, 21, 17389, 17390, 17394, 17395, 4758, 580, 4471, 5111, 5169, 7287, 558, 568, 560, 504, 5183, 12572, 1181, 2]
+// Dependencies: [19, 17, 4782, 14059, 14717, 4981, 11701, 21, 17399, 17400, 17404, 17405, 4790, 580, 4503, 5143, 5201, 7319, 558, 568, 560, 504, 5215, 12608, 1181, 2]
 
-// Module 17388 (Alerts)
+// Module 17398 (Alerts)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 560 */;
 import nativeDefault from "native" /* 580 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5111 */;
-import Dialog from "Dialog" /* 5169 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7287 */;
-import ModalRegistryDefault from "ModalRegistry" /* 17389 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5143 */;
+import Dialog from "Dialog" /* 5201 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7319 */;
+import ModalRegistryDefault from "ModalRegistry" /* 17399 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4750 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 14023 */;
-import PermissionVADStore from "PermissionVADStore" /* 14679 */;
-import SurveyStore from "SurveyStore" /* 4949 */;
-import AlertStore from "AlertStore" /* 11665 */;
+import AccessibilityStore from "AccessibilityStore" /* 4782 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 14059 */;
+import PermissionVADStore from "PermissionVADStore" /* 14717 */;
+import SurveyStore from "SurveyStore" /* 4981 */;
+import AlertStore from "AlertStore" /* 11701 */;
 
 const require = globalThis.__r;
 
@@ -65,7 +65,7 @@ let items3 = [SurveyStore];
 obj3.stores = items3;
 items1[2] = obj3;
 const stores = new ModalRegistryDefault(items1);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj4 = { alertWrapper: null, alertContentWrapper: null };
 let obj6 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -150,8 +150,8 @@ AlertWrapper.prototype["render"] = function render() {
   obj2.children = state(KeyboardAwareViewDefault, obj3);
   return __initData2(Dialog.Dialog, obj2);
 };
-AlertWrapper.contextType = fn(4471).ThemeContext;
-let closure_18 = Object.freeze({ renderAlert: "duration", renderKey: "toCharArray$esjava$1", props: "toCharArray$esjava$1" });
+AlertWrapper.contextType = fn(4503).ThemeContext;
+let closure_18 = Object.freeze({ renderAlert: "Array", renderKey: "unicodeVersion", props: "d" });
 const ReactCompilerGating = fn(558);
 const tmp7 = new ModalRegistryDefault(items1);
 const size = fn(2);
@@ -187,7 +187,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             return <openModal.component />;
           };
         } else {
-          return { renderAlert: "duration", renderKey: "toCharArray$esjava$1", props: "toCharArray$esjava$1" };
+          return { renderAlert: "Array", renderKey: "unicodeVersion", props: "d" };
         }
       }
     };
@@ -345,7 +345,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return <openModal.component />;
         };
       } else {
-        return { renderAlert: "duration", renderKey: "toCharArray$esjava$1", props: "toCharArray$esjava$1" };
+        return { renderAlert: "Array", renderKey: "unicodeVersion", props: "d" };
       }
     }
   });

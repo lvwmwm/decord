@@ -1,20 +1,20 @@
-// Module ID: 9306
-// Function ID: 9307
+// Module ID: 9338
+// Function ID: 9339
 // Name: useIsOwnedVibegrationsApplication
-// Dependencies: [19, 2067, 9307, 561, 558, 568, 5276, 504, 9308, 2]
+// Dependencies: [19, 2067, 9339, 561, 558, 568, 5308, 504, 9340, 2]
 
-// Module 9306 (useIsOwnedVibegrationsApplication)
+// Module 9338 (useIsOwnedVibegrationsApplication)
 import BackoffDefault from "Backoff" /* 561 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 5276 */;
-import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9308 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 5308 */;
+import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9340 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9307 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9339 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const isProjectOwner = fn(9307).isProjectOwner;
+const isProjectOwner = fn(9339).isProjectOwner;
 const useIsOwnedVibegrationsApplication = "useIsOwnedVibegrationsApplication";
 let closure_7 = new BackoffDefault(30000, 300000);
 const ReactCompilerGating = fn(558);

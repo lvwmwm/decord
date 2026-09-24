@@ -1,13 +1,13 @@
-// Module ID: 6450
-// Function ID: 6451
+// Module ID: 6482
+// Function ID: 6483
 // Name: KeyRingSpotIllustration
-// Dependencies: [21, 558, 568, 6451, 5802, 2]
+// Dependencies: [21, 558, 568, 6483, 5834, 2]
 
-// Module 6450 (KeyRingSpotIllustration)
+// Module 6482 (KeyRingSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6451 from "module_6451" /* 6451 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6483 from "module_6483" /* 6483 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const KeyRingSpotIllustration = ReactCompilerGating.isReactCompilerEnable
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6451 };
+    const obj2 = { uri: _modDef6483 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const KeyRingSpotIllustration = ReactCompilerGating.isReactCompilerEnable
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6451 };
+  const obj2 = { uri: _modDef6483 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

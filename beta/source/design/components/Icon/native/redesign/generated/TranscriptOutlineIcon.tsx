@@ -1,13 +1,13 @@
-// Module ID: 15301
-// Function ID: 15302
+// Module ID: 15311
+// Function ID: 15312
 // Name: TranscriptOutlineIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 15302, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 15312, 4493, 2]
 
-// Module 15301 (TranscriptOutlineIcon)
+// Module 15311 (TranscriptOutlineIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod15302 from "module_15302" /* 15302 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod15312 from "module_15312" /* 15312 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const TranscriptOutlineIcon = ReactCompilerGating.isReactCompilerEnabled(
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(15302);
+    const tmpResult = tmp(15312);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const TranscriptOutlineIcon = ReactCompilerGating.isReactCompilerEnabled(
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15302, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15312, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

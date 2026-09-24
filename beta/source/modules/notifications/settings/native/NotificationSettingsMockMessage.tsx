@@ -1,12 +1,12 @@
-// Module ID: 12989
-// Function ID: 12990
+// Module ID: 13025
+// Function ID: 13026
 // Name: NotificationSettingsMockMessage
-// Dependencies: [19, 17, 1376, 1078, 21, 4758, 580, 558, 568, 504, 4603, 4497, 4759, 4762, 4754, 1119, 1181, 12990, 2]
+// Dependencies: [19, 17, 1376, 1078, 21, 4790, 580, 558, 568, 504, 4635, 4529, 4791, 4794, 4786, 1119, 1181, 13026, 2]
 
-// Module 12989 (NotificationSettingsMockMessage)
+// Module 13025 (NotificationSettingsMockMessage)
 import nativeDefault from "native" /* 580 */;
-import timing from "timing" /* 4759 */;
-import timingPresets from "timingPresets" /* 4762 */;
+import timing from "timing" /* 4791 */;
+import timingPresets from "timingPresets" /* 4794 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -17,7 +17,7 @@ const View = fn(17).View;
 const UserNotificationSettings = fn(1078).UserNotificationSettings;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { card: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden", borderRadius: 10, padding: 16 }, cardContent: { display: "flex", flexDirection: "row" }, cardMessage: { marginLeft: 12, maxWidth: 240 }, overlay: null };
 const rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 obj2.overlay = rect;
@@ -47,14 +47,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((notificationSett
   let obj = require("c");
   const stateFromStores = require("initialize").useStateFromStores(tmp5, tmp6);
   if (cResult[2] !== stateFromStores) {
-    let str = sharedValue(4603).getName(stateFromStores);
+    let str = sharedValue(4635).getName(stateFromStores);
     if (str == null) {
       str = "Roka";
     }
     cResult[2] = stateFromStores;
     cResult[3] = str;
     let tmp9 = str;
-    const obj3 = sharedValue(4603);
+    const obj3 = sharedValue(4635);
   } else {
     tmp9 = cResult[3];
   }
@@ -86,7 +86,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((notificationSett
       const obj4 = { variant: "text-sm/normal", color: "text-link", children: null };
       const items1 = ["@", tmp9, " "];
       obj4.children = items1;
-      const tmp22 = closure_8(tmp(4754).Text, obj4);
+      const tmp22 = closure_8(tmp(4786).Text, obj4);
       cResult[5] = tmp9;
       cResult[6] = tmp22;
       let tmp20 = tmp22;
@@ -107,7 +107,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((notificationSett
       const obj6 = { variant: "text-sm/medium", color: "text-default", children: null };
       const items2 = [tmp20, tmp23];
       obj6.children = items2;
-      obj5.children = closure_8(tmp(4754).Text, obj6);
+      obj5.children = closure_8(tmp(4786).Text, obj6);
       const tmp29 = closure_7(View, obj5);
       cResult[8] = tmp20;
       cResult[9] = tmp29;
@@ -128,7 +128,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((notificationSett
         }
       }
       obj7.children = tmp18(tmp(1119).t.WYyzI5);
-      const tmp19 = closure_7(tmp(4754).Text, obj7);
+      const tmp19 = closure_7(tmp(4786).Text, obj7);
       cResult[4] = tmp19;
       let tmp16 = tmp19;
     } else {
@@ -166,7 +166,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((notificationSett
             return;
           }
         }
-        obj9.source = sharedValue(12990);
+        obj9.source = sharedValue(13026);
         obj9.size = tmp(1181).AvatarSizes.LARGE_48;
         obj8.children = closure_7(tmp(1181).Avatar, obj9);
         const tmp39 = closure_7(View, obj8);
@@ -190,7 +190,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((notificationSett
           }
         }
         obj10.children = tmp42(tmp(1119).t.qSq0tD);
-        const tmp43 = closure_7(tmp(4754).Text, obj10);
+        const tmp43 = closure_7(tmp(4786).Text, obj10);
         cResult[15] = tmp43;
         let tmp40 = tmp43;
       } else {
@@ -250,7 +250,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((notificationSett
           }
           const items4 = [animatedStyle, tmp4.overlay];
           tmp56[0] = items4;
-          const tmp57 = closure_7(sharedValue(4497).View, tmp56);
+          const tmp57 = closure_7(sharedValue(4529).View, tmp56);
           cResult[22] = tmp4.overlay;
           cResult[23] = animatedStyle;
           cResult[24] = tmp57;
@@ -309,12 +309,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((notificationSett
   const items = [UserStore];
   const stateFromStores = require("initialize").useStateFromStores(items, () => currentUser.getCurrentUser());
   let obj = require("initialize");
-  let str = sharedValue(4603).getName(stateFromStores);
+  let str = sharedValue(4635).getName(stateFromStores);
   if (str == null) {
     str = "Roka";
   }
   _require = tmp7;
-  const obj2 = sharedValue(4603);
+  const obj2 = sharedValue(4635);
   const tmp6 = UserNotificationSettings;
   let num = 0;
   if (notificationSetting.notificationSetting === UserNotificationSettings.NO_MESSAGES) {
@@ -337,7 +337,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((notificationSett
     const obj4 = { variant: "text-sm/medium", color: "text-default", children: null };
     const intl = tmp2(1119).intl;
     obj4.children = intl.string(tmp2(1119).t.WYyzI5);
-    let tmp11 = closure_7(tmp2(4754).Text, obj4);
+    let tmp11 = closure_7(tmp2(4786).Text, obj4);
     let tmp12 = closure_7;
   } else {
     const obj5 = { children: null };
@@ -345,11 +345,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((notificationSett
     const obj7 = { variant: "text-sm/normal", color: "text-link", children: null };
     const items1 = ["@", str, " "];
     obj7.children = items1;
-    const items2 = [closure_8(tmp2(4754).Text, obj7), ];
+    const items2 = [closure_8(tmp2(4786).Text, obj7), ];
     const intl3 = tmp2(1119).intl;
     items2[1] = intl3.string(tmp2(1119).t.WYyzI5);
     obj6.children = items2;
-    obj5.children = closure_8(tmp2(4754).Text, obj6);
+    obj5.children = closure_8(tmp2(4786).Text, obj6);
     tmp11 = closure_7(View, obj5);
     tmp12 = closure_7;
   }
@@ -365,7 +365,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((notificationSett
   const obj9 = { style: tmp.cardContent, children: null };
   const obj10 = { children: null };
   const obj3 = { withTiming: require("timing").withTiming, opacity: sharedValue, timingStandard: require("timingPresets").timingStandard };
-  obj10.children = tmp12(require("native").Avatar, { source: sharedValue(12990), size: require("native").AvatarSizes.LARGE_48 });
+  obj10.children = tmp12(require("native").Avatar, { source: sharedValue(13026), size: require("native").AvatarSizes.LARGE_48 });
   const items4 = [tmp12(View, obj10), ];
   const obj12 = { style: tmp.cardMessage, children: null };
   const obj13 = { variant: "text-sm/semibold", children: null };
@@ -379,7 +379,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((notificationSett
   const obj14 = { style: null };
   const items7 = [animatedStyle, tmp.overlay];
   obj14.style = items7;
-  items6[1] = tmp12(sharedValue(4497).View, obj14);
+  items6[1] = tmp12(sharedValue(4529).View, obj14);
   obj8.children = items6;
   return closure_8(View, obj8);
 });

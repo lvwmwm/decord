@@ -1,13 +1,13 @@
-// Module ID: 4743
-// Function ID: 4744
+// Module ID: 4775
+// Function ID: 4776
 // Name: InviteCodeUtils
-// Dependencies: [32, 11, 1476, 4744, 2]
+// Dependencies: [32, 11, 1476, 4776, 2]
 // Exports: generateInviteKeyFromUrlParams, getInviteInstanceId, getInviteKeySearchSuffix, parseExtraDataFromInviteKey, parseInviteCodeFromInviteKey
 
-// Module 4743 (InviteCodeUtils)
+// Module 4775 (InviteCodeUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef1476 from "module_1476" /* 1476 */;
-import QueryStringUtils from "QueryStringUtils" /* 4744 */;
+import QueryStringUtils from "QueryStringUtils" /* 4776 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -65,8 +65,8 @@ export const generateInviteKeyFromUrlParams = function generateInviteKeyFromUrlP
       const obj4 = { baseCode: match2, guildScheduledEventId: firstQueryStringValue, targetChannelId: tmp12, targetMessageId: null };
       let tmp10Result;
       if (null != tmp12) {
-        tmp10Result = tmp10(tmp6(4744).getFirstQueryStringValue(parsed[message]));
-        const tmp6Result = tmp6(4744);
+        tmp10Result = tmp10(tmp6(4776).getFirstQueryStringValue(parsed[message]));
+        const tmp6Result = tmp6(4776);
       }
       obj4.targetMessageId = tmp10Result;
       return generateInviteKeyFromExtraData(obj4);
@@ -96,7 +96,7 @@ export const parseExtraDataFromInviteKey = function parseExtraDataFromInviteKey(
     const obj = { baseCode: tmp2, guildScheduledEventId: firstQueryStringValue, targetChannelId: tmp4, targetMessageId: null };
     let tmp5;
     if (null != tmp4) {
-      const firstQueryStringValue2 = tmp12(4744).getFirstQueryStringValue(parsed[message]);
+      const firstQueryStringValue2 = tmp12(4776).getFirstQueryStringValue(parsed[message]);
       let tmp8;
       if (typeof firstQueryStringValue2 === "string") {
         if (tmp9Result2.isProbablyAValidSnowflake(firstQueryStringValue2)) {
@@ -105,7 +105,7 @@ export const parseExtraDataFromInviteKey = function parseExtraDataFromInviteKey(
         tmp9Result2 = tmp9(11);
       }
       tmp5 = tmp8;
-      const tmp12Result = tmp12(4744);
+      const tmp12Result = tmp12(4776);
     }
     obj.targetMessageId = tmp5;
     return obj;

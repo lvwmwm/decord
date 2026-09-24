@@ -1,13 +1,13 @@
-// Module ID: 6216
-// Function ID: 6217
+// Module ID: 6248
+// Function ID: 6249
 // Name: ExperimentalGiftEnvelopeIllocon
-// Dependencies: [21, 558, 568, 6217, 5802, 2]
+// Dependencies: [21, 558, 568, 6249, 5834, 2]
 
-// Module 6216 (ExperimentalGiftEnvelopeIllocon)
+// Module 6248 (ExperimentalGiftEnvelopeIllocon)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6217 from "module_6217" /* 6217 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6249 from "module_6249" /* 6249 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ export const ExperimentalGiftEnvelopeIllocon = ReactCompilerGating.isReactCompil
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6217 };
+    const obj2 = { uri: _modDef6249 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -61,7 +61,7 @@ export const ExperimentalGiftEnvelopeIllocon = ReactCompilerGating.isReactCompil
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6217 };
+  const obj2 = { uri: _modDef6249 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

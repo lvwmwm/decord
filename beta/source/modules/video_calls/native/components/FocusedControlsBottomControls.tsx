@@ -1,28 +1,28 @@
-// Module ID: 10189
-// Function ID: 10190
+// Module ID: 10228
+// Function ID: 10229
 // Name: FocusedControlsBottomControls
-// Dependencies: [32, 19, 17, 9636, 9637, 1078, 21, 1368, 4758, 580, 5743, 1181, 558, 568, 1616, 4497, 10190, 1098, 1119, 7401, 4759, 6891, 10192, 1482, 9663, 1114, 4471, 4610, 5176, 10193, 2]
+// Dependencies: [32, 19, 17, 9668, 9669, 1078, 21, 1368, 4790, 580, 5775, 1181, 558, 568, 1616, 4529, 10229, 1098, 1119, 7433, 4791, 6923, 10231, 1482, 9695, 1114, 4503, 4642, 5208, 10232, 2]
 
-// Module 10189 (FocusedControlsBottomControls)
+// Module 10228 (FocusedControlsBottomControls)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import timing from "timing" /* 4759 */;
-import CallPTTButtonDefault from "CallPTTButton" /* 10193 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import timing from "timing" /* 4791 */;
+import CallPTTButtonDefault from "CallPTTButton" /* 10232 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5743 */;
+import TextStyles from "TextStyles" /* 5775 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 
-const CallPTTButton = tmp(10193);
+const CallPTTButton = tmp(10232);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, TouchableWithoutFeedback: metroRequire, ScrollView: closure_7, StyleSheet } = get_ActivityIndicator);
-const ChannelCallStore = fn(9636);
+const ChannelCallStore = fn(9668);
 ({ clearFocusTimer: closure_8, resetFocusTimer: closure_9 } = ChannelCallStore);
-const ChannelCallConstants = fn(9637);
+const ChannelCallConstants = fn(9669);
 ({ BOX_MODE_THRESHOLD_WIDTH: c10, BOX_MODE_ACTIONSHEET_HEIGHT: closure_11 } = ChannelCallConstants);
 const Constants = fn(1078);
 ({ ComponentActions: closure_12, Fonts } = Constants);
@@ -36,7 +36,7 @@ function EXTENDED_CONTROLS_OFFSET_Y(arg0) {
 function EXTENDED_CONTROLS_LANDSCAPE_OFFSET_Y(arg0) {
 
 }
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { bottomDrawerContainer: null, visualEffectView: null, visualEffectViewBackground: null, expandedControlsContainer: null, aboveActionBarContainer: null, aboveActionBarChildrenContainer: null, ptbButton: null, tooltipStyle: null, containerStyle: null, labelStyle: null };
 const rect = { position: "absolute", left: 0, right: 0, bottom: 0, borderRadius: nativeDefault.radii.sm };
 obj2.bottomDrawerContainer = rect;
@@ -255,15 +255,15 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   positionY = positionY.positionY;
   const tmp4 = closure_19();
   const obj = positionY(568);
-  const canShowTooltip = positionY(10190).useCanShowTooltip(positionY(1098).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
-  const obj2 = positionY(10190);
+  const canShowTooltip = positionY(10229).useCanShowTooltip(positionY(1098).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
+  const obj2 = positionY(10229);
   const fn = function o() {
     return { opacity: 1 - Math.min(-1 * positionY.get() / c16, 1) };
   };
   fn.__closure = { positionY, EXPANDED_DRAWER_SHOW_POSITION };
   fn.__workletHash = 15386908151356;
   fn.__initData = __initData3;
-  const animatedStyle = positionY(4497).useAnimatedStyle(fn);
+  const animatedStyle = positionY(4529).useAnimatedStyle(fn);
   if (canShowTooltip) {
     const _Symbol = Symbol;
     ({ tooltipStyle, containerStyle, labelStyle } = tmp4);
@@ -307,8 +307,8 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
 }) : ((positionY) => {
   positionY = positionY.positionY;
   const tmp = closure_19();
-  const canShowTooltip = positionY(10190).useCanShowTooltip(positionY(1098).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
-  positionY(4497);
+  const canShowTooltip = positionY(10229).useCanShowTooltip(positionY(1098).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
+  positionY(4529);
   const fn = function o() {
     return { opacity: 1 - Math.min(-1 * positionY.get() / c16, 1) };
   };
@@ -344,7 +344,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   fn.__closure = { offsetY, EXPANDED_DRAWER_SHOW_POSITION, positionY };
   fn.__workletHash = 16821998405506;
   fn.__initData = __initData5;
-  const animatedStyle = positionY(4497).useAnimatedStyle(fn);
+  const animatedStyle = positionY(4529).useAnimatedStyle(fn);
   if (cResult[0] !== isExpanded) {
     const obj4 = { expanded: isExpanded };
     cResult[0] = isExpanded;
@@ -363,7 +363,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
     tmp7 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp13 = closure_13(tmp(7401).ActionSheetHeaderBar, {});
+    const tmp13 = closure_13(tmp(7433).ActionSheetHeaderBar, {});
     cResult[4] = tmp13;
     let tmp11 = tmp13;
   } else {
@@ -413,7 +413,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
     const items1 = [tmp4.aboveActionBarChildrenContainer, animatedStyle];
     obj8.style = items1;
     obj8.children = aboveActionBar;
-    tmp15 = closure_13(offsetY(4497).View, obj8);
+    tmp15 = closure_13(offsetY(4529).View, obj8);
   }
   cResult[5] = aboveActionBar;
   cResult[6] = animatedStyle;
@@ -434,15 +434,15 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((positionY) => 
   fn.__initData = __initData6;
   const obj3 = { accessible: true, onPress: onPressHeader, accessibilityRole: "button", accessibilityLabel: "Group DM", accessibilityHint: "Press to start a new conversation", accessibilityState: { expanded: isExpanded }, children: null };
   const obj4 = { style: tmp.aboveActionBarContainer, children: null };
-  const animatedStyle = positionY(4497).useAnimatedStyle(fn);
-  const items = [closure_13(closure_27, { positionY }), closure_13(positionY(7401).ActionSheetHeaderBar, {}), ];
+  const animatedStyle = positionY(4529).useAnimatedStyle(fn);
+  const items = [closure_13(closure_27, { positionY }), closure_13(positionY(7433).ActionSheetHeaderBar, {}), ];
   let tmp4Result = null != aboveActionBar;
   if (tmp4Result) {
     obj5 = { style: null, children: null };
     const items1 = [tmp.aboveActionBarChildrenContainer, animatedStyle];
     obj5.style = items1;
     obj5.children = aboveActionBar;
-    tmp4Result = tmp4(offsetY(4497).View, obj5);
+    tmp4Result = tmp4(offsetY(4529).View, obj5);
   }
   items[2] = tmp4Result;
   obj4.children = items;

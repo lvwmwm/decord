@@ -1,9 +1,9 @@
-// Module ID: 9976
-// Function ID: 9977
+// Module ID: 10008
+// Function ID: 10009
 // Name: VoiceChannelGamesExperiment
 // Dependencies: [1439, 558, 568, 2]
 
-// Module 9976 (VoiceChannelGamesExperiment)
+// Module 10008 (VoiceChannelGamesExperiment)
 import c from "c" /* 568 */;
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1439 */;
 

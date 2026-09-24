@@ -1,13 +1,13 @@
-// Module ID: 15160
-// Function ID: 15161
+// Module ID: 15170
+// Function ID: 15171
 // Name: useSelectedTeenUser
-// Dependencies: [1376, 7787, 7784, 558, 568, 8922, 565, 2]
+// Dependencies: [1376, 7819, 7816, 558, 568, 8954, 565, 2]
 
-// Module 15160 (useSelectedTeenUser)
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8922 */;
+// Module 15170 (useSelectedTeenUser)
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8954 */;
 import UserStore from "UserStore" /* 1376 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7787 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7784 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7819 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7816 */;
 
 const require = fn;
 fn(558);

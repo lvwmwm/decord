@@ -1,9 +1,49 @@
 // Module ID: 5507
 // Function ID: 5508
-// Dependencies: [1125]
+// Dependencies: [5484, 5485, 5464]
 
 // Module 5507
-import registerAsset from "module_1125" /* 1125 */;
+import _mod5464 from "module_5464" /* 5464 */;
+import get0thIfdOffset from "get0thIfdOffset" /* 5484 */;
+import IFD_TYPE_0TH from "IFD_TYPE_0TH" /* 5485 */;
 
+require = arg1;
+const dependencyMap = arg6;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "344ee148b183cbe058428a0b2e53672e", name: "img_account_sync_youtube_light_and_dark", type: "png" });
+export default {
+  read(byteLength, sum, arg2, byteOrder, arg4) {
+    const ifd = get0thIfdOffset.readIfd(byteLength, IFD_TYPE_0TH.IFD_TYPE_CANON, sum, sum + arg2, byteOrder, arg4);
+    let tmp6 = ifd;
+    if (ifd.ShotInfo) {
+      value = ifd.ShotInfo.value;
+      const obj2 = {};
+      if (undefined !== value[27]) {
+        const obj3 = { value: value[27], description: null };
+        let str = "None";
+        if (0 !== value[27]) {
+          let str2 = "Rotate 90 CW";
+          if (1 !== tmp7) {
+            let str3 = "Rotate 180";
+            if (2 !== tmp7) {
+              let str4 = "Unknown";
+              if (3 === tmp7) {
+                str4 = "Rotate 270 CW";
+              }
+              str3 = str4;
+            }
+            str2 = str3;
+          }
+          str = str2;
+        }
+        obj3.description = str;
+        obj2.AutoRotate = obj3;
+      }
+      const tmp3Result = _mod5464;
+      delete tmp[tmp2];
+      tmp6 = _mod5464.objectAssign({}, ifd, obj2);
+      const objectAssignResult = _mod5464.objectAssign({}, ifd, obj2);
+    }
+    return tmp6;
+  },
+  SHOT_INFO_AUTO_ROTATE: 27
+};

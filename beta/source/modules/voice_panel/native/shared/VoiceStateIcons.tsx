@@ -1,16 +1,16 @@
-// Module ID: 9917
-// Function ID: 9918
+// Module ID: 9949
+// Function ID: 9950
 // Name: VoiceStateIcons
-// Dependencies: [109, 19, 17, 21, 4758, 580, 558, 568, 9918, 9919, 9921, 9923, 9925, 1374, 1181, 8733, 9927, 9928, 2]
+// Dependencies: [109, 19, 17, 21, 4790, 580, 558, 568, 9950, 9951, 9953, 9955, 9957, 1374, 1181, 8765, 9959, 9960, 2]
 
-// Module 9917 (VoiceStateIcons)
+// Module 9949 (VoiceStateIcons)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import inlineStyles from "inlineStyles" /* 8733 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9918 */;
-import _modDef9927 from "module_9927" /* 9927 */;
-import _modDef9928 from "module_9928" /* 9928 */;
+import inlineStyles from "inlineStyles" /* 8765 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9950 */;
+import _modDef9959 from "module_9959" /* 9959 */;
+import _modDef9960 from "module_9960" /* 9960 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -22,7 +22,7 @@ let closure_4 = ["state"];
 const StyleSheet = fn(17).StyleSheet;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj = { redTint: { tintColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL }, defaultTint: null, noTint: null };
 let obj3 = { tintColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
 obj.defaultTint = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
@@ -82,9 +82,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[11] !== tintColor) {
       const obj2 = { d: "M8.48485 19H13C15.2091 19 17 17.2091 17 15L19.563 17.0504C20.5451 17.8361 22 17.1368 22 15.8791V8.12094C22 7.35968 21.467 6.80301 20.8285 6.65636L8.48485 19Z", fill: tintColor };
-      const tmp20 = React5(tmp(8733).Path, obj2);
+      const tmp20 = React5(tmp(8765).Path, obj2);
       const obj3 = { d: "M14.9873 5.52783C14.4019 5.192 13.7233 5 13 5H6C3.79086 5 2 6.79086 2 9V15C2 15.9811 2.35325 16.8798 2.93949 17.5757L14.9873 5.52783Z", fill: tintColor };
-      const tmp21 = React5(tmp(8733).Path, obj3);
+      const tmp21 = React5(tmp(8765).Path, obj3);
       cResult[11] = tintColor;
       cResult[12] = tmp20;
       cResult[13] = tmp21;
@@ -96,7 +96,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[14] !== tmp9.redTint.tintColor) {
       const obj4 = { d: "M21.2785 2.70712C20.888 2.31659 20.2549 2.31659 19.8643 2.70711L2.70711 19.8643C2.31658 20.2549 2.31658 20.888 2.70711 21.2785L2.72146 21.2929C3.11199 21.6834 3.74515 21.6834 4.13567 21.2929L21.2929 4.13568C21.6834 3.74515 21.6834 3.11199 21.2929 2.72147L21.2785 2.70712Z", fill: tmp9.redTint.tintColor };
-      const tmp24 = React5(tmp(8733).Path, obj4);
+      const tmp24 = React5(tmp(8765).Path, obj4);
       cResult[14] = tmp9.redTint.tintColor;
       cResult[15] = tmp24;
       let tmp22 = tmp24;
@@ -179,17 +179,17 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     const obj2 = { style: null, size: "xs" };
     const items = [style, redTint];
     obj2.style = items;
-    const tmp23 = React5(tmp(9919).HeadphonesDenyIcon, obj2);
+    const tmp23 = React5(tmp(9951).HeadphonesDenyIcon, obj2);
     cResult[0] = style;
     cResult[1] = redTint;
     cResult[2] = tmp23;
     tmp21 = tmp23;
-  } else if (tmp(9918).MuteDeafenIconState.DEAFENED === state) {
+  } else if (tmp(9950).MuteDeafenIconState.DEAFENED === state) {
     if (cResult[3] !== style) {
       const obj3 = { style: null, size: "xs" };
       const items1 = [style];
       obj3.style = items1;
-      const tmp19 = React5(tmp(9921).HeadphonesSlashIcon, obj3);
+      const tmp19 = React5(tmp(9953).HeadphonesSlashIcon, obj3);
       cResult[3] = style;
       cResult[4] = tmp19;
       let tmp17 = tmp19;
@@ -197,7 +197,7 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
       tmp17 = cResult[4];
     }
     return tmp17;
-  } else if (tmp(9918).MuteDeafenIconState.MUTED_SERVER === state) {
+  } else if (tmp(9950).MuteDeafenIconState.MUTED_SERVER === state) {
     let redTint1 = null;
     if (!tmp4) {
       redTint1 = tmp5.redTint;
@@ -211,17 +211,17 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     const obj4 = { style: null, size: "xs" };
     const items2 = [style, redTint1];
     obj4.style = items2;
-    const tmp16 = React5(tmp(9923).MicrophoneDenyIcon, obj4);
+    const tmp16 = React5(tmp(9955).MicrophoneDenyIcon, obj4);
     cResult[5] = style;
     cResult[6] = redTint1;
     cResult[7] = tmp16;
     tmp14 = tmp16;
-  } else if (tmp(9918).MuteDeafenIconState.MUTED_LOCAL === state) {
+  } else if (tmp(9950).MuteDeafenIconState.MUTED_LOCAL === state) {
     if (cResult[8] !== style) {
       const obj5 = { style: null, size: "xs" };
       const items3 = [style];
       obj5.style = items3;
-      const tmp12 = React5(tmp(9923).MicrophoneDenyIcon, obj5);
+      const tmp12 = React5(tmp(9955).MicrophoneDenyIcon, obj5);
       cResult[8] = style;
       cResult[9] = tmp12;
       let tmp10 = tmp12;
@@ -229,12 +229,12 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
       tmp10 = cResult[9];
     }
     return tmp10;
-  } else if (tmp(9918).MuteDeafenIconState.MUTED === state) {
+  } else if (tmp(9950).MuteDeafenIconState.MUTED === state) {
     if (cResult[10] !== style) {
       const obj6 = { style: null, size: "xs" };
       const items4 = [style];
       obj6.style = items4;
-      const tmp9 = React5(tmp(9925).MicrophoneSlashIcon, obj6);
+      const tmp9 = React5(tmp(9957).MicrophoneSlashIcon, obj6);
       cResult[10] = style;
       cResult[11] = tmp9;
       let tmp7 = tmp9;
@@ -260,13 +260,13 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     const obj = { style: null, size: "xs" };
     items[1] = redTint;
     obj.style = items;
-    return React5(tmp2(9919).HeadphonesDenyIcon, obj);
-  } else if (tmp2(9918).MuteDeafenIconState.DEAFENED === state) {
+    return React5(tmp2(9951).HeadphonesDenyIcon, obj);
+  } else if (tmp2(9950).MuteDeafenIconState.DEAFENED === state) {
     const obj2 = { style: null, size: "xs" };
     const items1 = [style];
     obj2.style = items1;
-    return React5(tmp2(9921).HeadphonesSlashIcon, obj2);
-  } else if (tmp2(9918).MuteDeafenIconState.MUTED_SERVER === state) {
+    return React5(tmp2(9953).HeadphonesSlashIcon, obj2);
+  } else if (tmp2(9950).MuteDeafenIconState.MUTED_SERVER === state) {
     const items2 = [style, ];
     let redTint1 = null;
     if (!alwaysWhite) {
@@ -275,17 +275,17 @@ const memoResult = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((ar
     const obj3 = { style: null, size: "xs" };
     items2[1] = redTint1;
     obj3.style = items2;
-    return React5(tmp2(9923).MicrophoneDenyIcon, obj3);
-  } else if (tmp2(9918).MuteDeafenIconState.MUTED_LOCAL === state) {
+    return React5(tmp2(9955).MicrophoneDenyIcon, obj3);
+  } else if (tmp2(9950).MuteDeafenIconState.MUTED_LOCAL === state) {
     const obj4 = { style: null, size: "xs" };
     const items3 = [style];
     obj4.style = items3;
-    return React5(tmp2(9923).MicrophoneDenyIcon, obj4);
-  } else if (tmp2(9918).MuteDeafenIconState.MUTED === state) {
+    return React5(tmp2(9955).MicrophoneDenyIcon, obj4);
+  } else if (tmp2(9950).MuteDeafenIconState.MUTED === state) {
     const obj5 = { style: null, size: "xs" };
     const items4 = [style];
     obj5.style = items4;
-    return React5(tmp2(9925).MicrophoneSlashIcon, obj5);
+    return React5(tmp2(9957).MicrophoneSlashIcon, obj5);
   } else {
     tmp2(1374).assertNever(state);
   }
@@ -322,7 +322,7 @@ export const VideoIcon = noop.memo(ReactCompilerGating.isReactCompilerEnabled() 
       }
       const obj2 = {};
       const merged = Object.assign(tmp4);
-      obj2.source = _modDef9927;
+      obj2.source = _modDef9959;
       obj2.style = tmp25;
       const tmp32 = React5(tmp(1181).Icon, obj2);
       cResult[6] = tmp4;
@@ -335,7 +335,7 @@ export const VideoIcon = noop.memo(ReactCompilerGating.isReactCompilerEnabled() 
     cResult[4] = tmp9.noTint;
     cResult[5] = items;
     tmp25 = items;
-  } else if (tmp(9918).VideoIconState.VIDEO_DISABLED_LOCAL === tmp5) {
+  } else if (tmp(9950).VideoIconState.VIDEO_DISABLED_LOCAL === tmp5) {
     if (cResult[9] !== tmp4) {
       const obj3 = {};
       const merged1 = Object.assign(tmp4);
@@ -347,11 +347,11 @@ export const VideoIcon = noop.memo(ReactCompilerGating.isReactCompilerEnabled() 
       tmp18 = cResult[10];
     }
     return tmp18;
-  } else if (tmp(9918).VideoIconState.VIDEO_ACTIVE === tmp5) {
+  } else if (tmp(9950).VideoIconState.VIDEO_ACTIVE === tmp5) {
     if (cResult[11] !== tmp4) {
       const obj4 = {};
       const merged2 = Object.assign(tmp4);
-      obj4.source = _modDef9928;
+      obj4.source = _modDef9960;
       const tmp17 = React5(tmp(1181).Icon, obj4);
       cResult[11] = tmp4;
       cResult[12] = tmp17;
@@ -369,18 +369,18 @@ export const VideoIcon = noop.memo(ReactCompilerGating.isReactCompilerEnabled() 
   if (VoiceStateIconUtils.VideoIconState.VIDEO_DISABLED_LOCAL_AUTO === state) {
     const obj = {};
     const merged1 = Object.assign(merged);
-    obj.source = _modDef9927;
+    obj.source = _modDef9959;
     const items = [merged.style, tmp2.noTint];
     obj.style = items;
     return React5(tmp3(1181).Icon, obj);
-  } else if (tmp3(9918).VideoIconState.VIDEO_DISABLED_LOCAL === state) {
+  } else if (tmp3(9950).VideoIconState.VIDEO_DISABLED_LOCAL === state) {
     const obj2 = {};
     const merged2 = Object.assign(merged);
     return React5(closure_10, obj2);
-  } else if (tmp3(9918).VideoIconState.VIDEO_ACTIVE === state) {
+  } else if (tmp3(9950).VideoIconState.VIDEO_ACTIVE === state) {
     const obj3 = {};
     const merged3 = Object.assign(merged);
-    obj3.source = _modDef9928;
+    obj3.source = _modDef9960;
     return React5(tmp3(1181).Icon, obj3);
   } else {
     tmp3(1374).assertNever(state);

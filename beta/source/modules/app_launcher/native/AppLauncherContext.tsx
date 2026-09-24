@@ -1,13 +1,13 @@
-// Module ID: 11469
-// Function ID: 11470
+// Module ID: 11505
+// Function ID: 11506
 // Name: AppLauncherContext
-// Dependencies: [19, 558, 568, 4497, 9519, 11470, 2]
+// Dependencies: [19, 558, 568, 4529, 9551, 11506, 2]
 
-// Module 11469 (AppLauncherContext)
+// Module 11505 (AppLauncherContext)
 import c from "c" /* 568 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 9519 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11470 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4529 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 9551 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11506 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

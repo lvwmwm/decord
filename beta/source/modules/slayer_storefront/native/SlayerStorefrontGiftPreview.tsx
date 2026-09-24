@@ -1,15 +1,15 @@
-// Module ID: 11577
-// Function ID: 11578
+// Module ID: 11613
+// Function ID: 11614
 // Name: SlayerStorefrontGiftPreview
-// Dependencies: [19, 17, 21, 4758, 558, 568, 9104, 1119, 4754, 3552, 10034, 2]
+// Dependencies: [19, 17, 21, 4790, 558, 568, 9136, 1119, 4786, 3584, 10073, 2]
 
-// Module 11577 (SlayerStorefrontGiftPreview)
+// Module 11613 (SlayerStorefrontGiftPreview)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import _modDef3552 from "module_3552" /* 3552 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9104 */;
-import InfoBox from "InfoBox" /* 10034 */;
+import _modDef3584 from "module_3584" /* 3584 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9136 */;
+import InfoBox from "InfoBox" /* 10073 */;
 import noop from "module_19" /* 19 */;
 
 const InfoBoxDefault = InfoBox;
@@ -18,7 +18,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let closure_6 = createStyles.createStyles({ container: { alignItems: "center", justifyContent: "center", gap: 16, marginTop: 20 }, text: { textAlign: "center", paddingHorizontal: 32 }, warningBox: { marginHorizontal: 16 } });
 fn(558);
 const ReactCompilerGating = fn(558);
@@ -43,7 +43,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           name1 = application.name;
         }
         const obj2 = { applicationName: name1 };
-        const formatToPlainStringResult = intl3.formatToPlainString(_modDef3552.BMMo2K, obj2);
+        const formatToPlainStringResult = intl3.formatToPlainString(_modDef3584.BMMo2K, obj2);
         let name2;
         if (application != null) {
           name2 = application.name;
@@ -60,7 +60,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         return tmp31;
       }
-      const obj3 = { look: tmp(10034).InfoBoxLooks.WARNING, style: warningBox, children: tmp26 };
+      const obj3 = { look: tmp(10073).InfoBoxLooks.WARNING, style: warningBox, children: tmp26 };
       const tmp35 = React4(InfoBoxDefault, obj3);
       cResult[2] = tmp4.warningBox;
       cResult[3] = tmp26;
@@ -81,7 +81,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           return tmp19;
         }
-        const obj4 = { look: tmp(10034).InfoBoxLooks.WARNING, style: warningBox, children: tmp15 };
+        const obj4 = { look: tmp(10073).InfoBoxLooks.WARNING, style: warningBox, children: tmp15 };
         const tmp23 = React4(InfoBoxDefault, obj4);
         cResult[12] = tmp4.warningBox;
         cResult[13] = tmp15;
@@ -120,7 +120,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         return tmp8;
       }
-      const obj6 = { look: tmp(10034).InfoBoxLooks.WARNING, style: warningBox, children: tmp6 };
+      const obj6 = { look: tmp(10073).InfoBoxLooks.WARNING, style: warningBox, children: tmp6 };
       const tmp12 = React4(InfoBoxDefault, obj6);
       cResult[6] = tmp4.warningBox;
       cResult[7] = tmp6;
@@ -140,7 +140,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj = { look: InfoBox.InfoBoxLooks.WARNING, style: tmp.warningBox, children: null };
     const intl = util.intl;
     if (mobileAccountLinkingDisabled) {
-      BMMo2K = name(3552).BMMo2K;
+      BMMo2K = name(3584).BMMo2K;
       tmp2 = application == tmp2;
       name = undefined;
       if (!tmp2) {
@@ -240,7 +240,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp18 = tmp21;
         }
         const obj5 = { variant: "heading-md/normal", color: "mobile-text-heading-primary", style: tmp5.text, children: tmp11 };
-        const tmp17 = React4(tmp(4754).Text, obj5);
+        const tmp17 = React4(tmp(4786).Text, obj5);
         cResult[6] = tmp5.text;
         cResult[7] = tmp11;
         cResult[8] = tmp17;

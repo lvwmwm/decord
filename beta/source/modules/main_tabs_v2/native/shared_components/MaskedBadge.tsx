@@ -1,18 +1,18 @@
-// Module ID: 8116
-// Function ID: 8117
+// Module ID: 8148
+// Function ID: 8149
 // Name: MaskedBadge
-// Dependencies: [19, 21, 4758, 580, 558, 568, 1181, 8117, 2]
+// Dependencies: [19, 21, 4790, 580, 558, 568, 1181, 8149, 2]
 
-// Module 8116 (MaskedBadge)
+// Module 8148 (MaskedBadge)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
-import BadgeDefault from "Badge" /* 8117 */;
+import BadgeDefault from "Badge" /* 8149 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { maskStyle: { position: "relative", right: "IconComponent" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_400 } };
 let closure_5 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);

@@ -1,13 +1,13 @@
-// Module ID: 6556
-// Function ID: 6557
+// Module ID: 6588
+// Function ID: 6589
 // Name: NitroWumpusGreenSpotIllustration
-// Dependencies: [21, 558, 568, 6557, 5802, 2]
+// Dependencies: [21, 558, 568, 6589, 5834, 2]
 
-// Module 6556 (NitroWumpusGreenSpotIllustration)
+// Module 6588 (NitroWumpusGreenSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
-import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef6557 from "module_6557" /* 6557 */;
+import FastImageDefault from "FastImage" /* 5834 */;
+import _modDef6589 from "module_6589" /* 6589 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const NitroWumpusGreenSpotIllustration = ReactCompilerGating.isReactCompi
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef6557 };
+    const obj2 = { uri: _modDef6589 };
     cResult[0] = obj2;
     let first = obj2;
   } else {
@@ -81,7 +81,7 @@ export const NitroWumpusGreenSpotIllustration = ReactCompilerGating.isReactCompi
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6557 };
+  const obj2 = { uri: _modDef6589 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

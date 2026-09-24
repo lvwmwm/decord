@@ -1,12 +1,12 @@
-// Module ID: 14761
-// Function ID: 14762
+// Module ID: 14799
+// Function ID: 14800
 // Name: definitions
-// Dependencies: [14762, 8615, 14763, 2]
+// Dependencies: [14800, 8647, 14801, 2]
 
-// Module 14761 (definitions)
-import OAuth2Scopes from "OAuth2Scopes" /* 8615 */;
-import helpers from "helpers" /* 14762 */;
-import contextMenuIcons from "contextMenuIcons" /* 14763 */;
+// Module 14799 (definitions)
+import OAuth2Scopes from "OAuth2Scopes" /* 8647 */;
+import helpers from "helpers" /* 14800 */;
+import contextMenuIcons from "contextMenuIcons" /* 14801 */;
 import size from "module_2" /* 2 */;
 
 function VoiceCapabilities(boolean) {
@@ -861,7 +861,7 @@ export const RPCCommandSchemas = {
       obj.content = string.string().min(0).max(1024);
       return obj;
     },
-    response: "a"
+    response: "Array"
   },
   [helpers.RPCCommand.GET_USER]: {
     request(string) {

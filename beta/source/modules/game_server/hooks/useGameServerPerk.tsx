@@ -1,21 +1,21 @@
-// Module ID: 12741
-// Function ID: 12742
+// Module ID: 12777
+// Function ID: 12778
 // Name: useGameServerPerk
-// Dependencies: [19, 4668, 4649, 4648, 558, 568, 4671, 504, 12742, 1119, 2940, 12743, 2]
+// Dependencies: [19, 4700, 4681, 4680, 558, 568, 4703, 504, 12778, 1119, 2940, 12779, 2]
 
-// Module 12741 (useGameServerPerk)
+// Module 12777 (useGameServerPerk)
 import util from "util" /* 1119 */;
 import _modDef2940 from "module_2940" /* 2940 */;
-import useGameServerFeaturedGameNamesDefault from "useGameServerFeaturedGameNames" /* 12742 */;
-import _modDef12743 from "module_12743" /* 12743 */;
+import useGameServerFeaturedGameNamesDefault from "useGameServerFeaturedGameNames" /* 12778 */;
+import _modDef12779 from "module_12779" /* 12779 */;
 import noop from "module_19" /* 19 */;
-import GameServerStore from "GameServerStore" /* 4668 */;
+import GameServerStore from "GameServerStore" /* 4700 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const skuId = fn(4649).GAME_SERVER_POWERUP_SKU_ID;
-const GuildPowerupType = fn(4648).GuildPowerupType;
+const skuId = fn(4681).GAME_SERVER_POWERUP_SKU_ID;
+const GuildPowerupType = fn(4680).GuildPowerupType;
 const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_server/hooks/useGameServerPerk.tsx");
@@ -74,8 +74,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[8] === stateFromStores) {
         }
-        const obj3 = { skuId, title: tmp12, description: tmp14, cost: stateFromStores, dependencies: tmp16, type: GuildPowerupType.PERK, animatedImageUrl: tmp9(12743), staticImageUrl: null };
-        tmp9Result = tmp9(12743);
+        const obj3 = { skuId, title: tmp12, description: tmp14, cost: stateFromStores, dependencies: tmp16, type: GuildPowerupType.PERK, animatedImageUrl: tmp9(12779), staticImageUrl: null };
+        tmp9Result = tmp9(12779);
         obj3.staticImageUrl = tmp9Result;
         cResult[8] = stateFromStores;
         cResult[9] = tmp14;
@@ -115,8 +115,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         obj.cost = tmp2;
         obj.dependencies = [];
         obj.type = GuildPowerupType.PERK;
-        obj.animatedImageUrl = _modDef12743;
-        obj.staticImageUrl = _modDef12743;
+        obj.animatedImageUrl = _modDef12779;
+        obj.staticImageUrl = _modDef12779;
         tmp = obj;
       }
     }

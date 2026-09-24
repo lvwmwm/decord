@@ -1,19 +1,19 @@
-// Module ID: 16781
-// Function ID: 16782
+// Module ID: 16791
+// Function ID: 16792
 // Name: ForYouSuggestedFriendsSectionHeader
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4790, 580, 558, 568, 1119, 4786, 2]
 
-// Module 16781 (ForYouSuggestedFriendsSectionHeader)
+// Module 16791 (ForYouSuggestedFriendsSectionHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Text_Text from "Text/Text" /* 4754 */;
+import Text_Text from "Text/Text" /* 4786 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { container: { borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: 12, marginBottom: 8, paddingHorizontal: 24, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, noDivider: { borderTopWidth: 0, marginTop: 0 }, text: null };
 let obj3 = { borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: 12, marginBottom: 8, paddingHorizontal: 24, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
 obj2.text = { marginTop: nativeDefault.space.PX_16 };
@@ -46,7 +46,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((showDivider) => 
     }
     if (cResult[4] !== tmp4.text) {
       const obj2 = { style: tmp4.text, color: "text-muted", variant: "text-sm/semibold", children: tmp7 };
-      const tmp11 = jsx(tmp(4754).Text, { style: tmp4.text, color: "text-muted", variant: "text-sm/semibold", children: tmp7 });
+      const tmp11 = jsx(tmp(4786).Text, { style: tmp4.text, color: "text-muted", variant: "text-sm/semibold", children: tmp7 });
       cResult[4] = tmp4.text;
       cResult[5] = tmp11;
       let tmp9 = tmp11;

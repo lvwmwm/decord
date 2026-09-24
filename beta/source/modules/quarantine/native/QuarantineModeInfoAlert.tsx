@@ -1,22 +1,22 @@
-// Module ID: 5742
-// Function ID: 5743
+// Module ID: 5774
+// Function ID: 5775
 // Name: QuarantineModeInfoAlert
-// Dependencies: [19, 1078, 21, 4758, 5743, 580, 558, 568, 1119, 1181, 4754, 5207, 2]
+// Dependencies: [19, 1078, 21, 4790, 5775, 580, 558, 568, 1119, 1181, 4786, 5239, 2]
 
-// Module 5742 (QuarantineModeInfoAlert)
+// Module 5774 (QuarantineModeInfoAlert)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import common_AlertDefault from "common/Alert" /* 5207 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import common_AlertDefault from "common/Alert" /* 5239 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5743 */;
+import TextStyles from "TextStyles" /* 5775 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { header: null, text: null };
 let obj3 = {};
 const merged = Object.assign(TextStyles(fn(1078).Fonts.PRIMARY_BOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
@@ -60,7 +60,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   if (cResult[4] !== tmp4.text) {
     const obj3 = { style: tmp4.text, variant: "text-md/medium", children: tmp10 };
-    const tmp14 = React3(tmp(4754).Text, obj3);
+    const tmp14 = React3(tmp(4786).Text, obj3);
     cResult[4] = tmp4.text;
     cResult[5] = tmp14;
     let tmp12 = tmp14;

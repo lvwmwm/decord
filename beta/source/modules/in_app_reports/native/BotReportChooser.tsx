@@ -1,20 +1,20 @@
-// Module ID: 13287
-// Function ID: 13288
+// Module ID: 13323
+// Function ID: 13324
 // Name: BotReportChooser
-// Dependencies: [19, 4985, 21, 558, 568, 4754, 1119, 7449, 7445, 4725, 8905, 504, 7410, 2]
+// Dependencies: [19, 5017, 21, 558, 568, 4786, 1119, 7481, 7477, 4757, 8937, 504, 7442, 2]
 
-// Module 13287 (BotReportChooser)
+// Module 13323 (BotReportChooser)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import Text_Text from "Text/Text" /* 4754 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 7410 */;
-import ActionSheetRow from "ActionSheetRow" /* 7445 */;
-import ActionSheet from "ActionSheet" /* 7449 */;
-import ReportModals from "ReportModals" /* 8905 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4757 */;
+import Text_Text from "Text/Text" /* 4786 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 7442 */;
+import ActionSheetRow from "ActionSheetRow" /* 7477 */;
+import ActionSheet from "ActionSheet" /* 7481 */;
+import ReportModals from "ReportModals" /* 8937 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 4985 */;
+import ApplicationStore from "ApplicationStore" /* 5017 */;
 
 require = fn;
 const jsxProd = fn(21);
@@ -220,7 +220,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { style: first, variant: "redesign/heading-18/bold", children: null };
     const intl = tmp(1119).intl;
     obj3.children = intl.string(tmp(1119).t.Bd10bR);
-    const tmp7 = React4(tmp(4754).Text, obj3);
+    const tmp7 = React4(tmp(4786).Text, obj3);
     cResult[1] = tmp7;
     let tmp5 = tmp7;
   } else {
@@ -236,8 +236,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const merged1 = Object.assign(arg0);
     items[1] = React4(closure_8, obj7);
     obj5.children = items;
-    obj4.children = hasOwnProperty(tmp(7445).ActionSheetRow.Group, obj5);
-    const tmp19 = React4(tmp(7449).ActionSheet, obj4);
+    obj4.children = hasOwnProperty(tmp(7477).ActionSheetRow.Group, obj5);
+    const tmp19 = React4(tmp(7481).ActionSheet, obj4);
     cResult[2] = arg0;
     cResult[3] = tmp19;
     let tmp8 = tmp19;

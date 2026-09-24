@@ -1,13 +1,13 @@
-// Module ID: 10951
-// Function ID: 10952
+// Module ID: 10987
+// Function ID: 10988
 // Name: CameraIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 10952, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 10988, 4493, 2]
 
-// Module 10951 (CameraIcon)
+// Module 10987 (CameraIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
-import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod10952 from "module_10952" /* 10952 */;
+import BaseIconImage from "BaseIconImage" /* 4493 */;
+import _mod10988 from "module_10988" /* 10988 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const CameraIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(10952);
+    const tmpResult = tmp(10988);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const CameraIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10952, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10988, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

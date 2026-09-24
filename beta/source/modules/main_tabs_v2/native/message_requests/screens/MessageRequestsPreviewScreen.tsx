@@ -1,15 +1,15 @@
-// Module ID: 17367
-// Function ID: 17368
+// Module ID: 17377
+// Function ID: 17378
 // Name: MessageRequestsPreviewScreen
-// Dependencies: [19, 4773, 1078, 21, 558, 568, 12589, 10196, 17368, 10331, 12945, 2]
+// Dependencies: [19, 4805, 1078, 21, 558, 568, 12625, 10235, 17378, 10370, 12981, 2]
 
-// Module 17367 (MessageRequestsPreviewScreen)
-import MessageManagerDefault from "MessageManager" /* 10196 */;
+// Module 17377 (MessageRequestsPreviewScreen)
+import MessageManagerDefault from "MessageManager" /* 10235 */;
 import noop from "module_19" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 4773 */;
+import ReadStateStore from "ReadStateStore" /* 4805 */;
 
-const ChatViewDefault = tmp11(10331);
-const RestrictedMessageRequestPreviewDefault = tmp11(17368);
+const ChatViewDefault = tmp11(10370);
+const RestrictedMessageRequestPreviewDefault = tmp11(17378);
 const require = fn;
 const ME = fn(1078).ME;
 const jsx = fn(21).jsx;
@@ -24,7 +24,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   const obj2 = noop;
   const tmp = channelId;
   const ref = noop.useRef(null);
-  const isMessageRequestRestrictedViewer = channelId(12589).useIsMessageRequestRestrictedViewer("MessageRequestsPreviewScreen");
+  const isMessageRequestRestrictedViewer = channelId(12625).useIsMessageRequestRestrictedViewer("MessageRequestsPreviewScreen");
   if (cResult[0] !== channelId) {
     const fn = function l() {
       const obj = MessageManagerDefault;
@@ -50,7 +50,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
         return tmp14;
       }
       const obj4 = { guildId: ME, channelId, children: cResult[5] };
-      const tmp17 = jsx(tmp(12945).ChannelContainer, { guildId: ME, channelId, children: cResult[5] });
+      const tmp17 = jsx(tmp(12981).ChannelContainer, { guildId: ME, channelId, children: cResult[5] });
       cResult[6] = channelId;
       cResult[7] = cResult[5];
       cResult[8] = tmp17;
@@ -73,7 +73,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   const channelId = route.route.params.channelId;
   const ref = noop.useRef(null);
   const items = [channelId];
-  const isMessageRequestRestrictedViewer = channelId(12589).useIsMessageRequestRestrictedViewer("MessageRequestsPreviewScreen");
+  const isMessageRequestRestrictedViewer = channelId(12625).useIsMessageRequestRestrictedViewer("MessageRequestsPreviewScreen");
   const effect = noop.useEffect(() => {
     const obj = MessageManagerDefault;
     const messages = obj.fetchMessages({ channelId, messageId: ReadStateStore.lastMessageId(channelId) });
@@ -81,11 +81,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   const obj2 = { guildId: ME, channelId, children: null };
   if (isMessageRequestRestrictedViewer) {
     const obj3 = { channelId };
-    let tmp5Result = tmp5(tmp7(17368), obj3);
+    let tmp5Result = tmp5(tmp7(17378), obj3);
   } else {
     const obj4 = { guildId: tmp6, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, screenIndex: "message-request" };
-    tmp5Result = tmp5(tmp7(10331), obj4);
+    tmp5Result = tmp5(tmp7(10370), obj4);
   }
   obj2.children = tmp5Result;
-  return jsx(channelId(12945).ChannelContainer, { guildId: ME, channelId, children: null });
+  return jsx(channelId(12981).ChannelContainer, { guildId: ME, channelId, children: null });
 });

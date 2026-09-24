@@ -1,24 +1,24 @@
-// Module ID: 10606
-// Function ID: 10607
+// Module ID: 10642
+// Function ID: 10643
 // Name: FavoritesHooks
-// Dependencies: [4580, 1376, 2048, 2058, 1378, 10607, 558, 568, 10608, 504, 1973, 11, 1190, 2070, 2]
+// Dependencies: [4612, 1376, 2048, 2058, 1378, 10643, 558, 568, 10644, 504, 1973, 11, 1190, 2070, 2]
 // Exports: getFavoritesAccess, getFavoritesCategories
 
-// Module 10606 (FavoritesHooks)
+// Module 10642 (FavoritesHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
 import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 1973 */;
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
-import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10608 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10644 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4612 */;
 import UserStore from "UserStore" /* 1376 */;
 import FavoriteStore from "FavoriteStore" /* 2048 */;
 
 const require = globalThis.__r;
 
-const FavoritesLimits = tmp(10607);
+const FavoritesLimits = tmp(10643);
 require = fn;
 const MAX_FAVORITE_CHANNELS = fn(2058).MAX_FAVORITE_CHANNELS;
 const PremiumTypes = fn(1378).PremiumTypes;
@@ -89,7 +89,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp10 = obj3;
   } else if (isPremiumExactlyResult) {
   } else if (isFreemium) {
-    const num5 = tmp(10607).FREE_FAVORITE_LIMIT;
+    const num5 = tmp(10643).FREE_FAVORITE_LIMIT;
   }
 }) : (() => {
   let str = arg0;

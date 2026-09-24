@@ -1,14 +1,14 @@
-// Module ID: 17939
-// Function ID: 17940
+// Module ID: 17949
+// Function ID: 17950
 // Name: AssetChooser
-// Dependencies: [5, 19, 17, 1078, 21, 4758, 580, 4471, 5356, 5341, 1119, 17940, 17941, 1181, 2]
+// Dependencies: [5, 19, 17, 1078, 21, 4790, 580, 4503, 5388, 5373, 1119, 17950, 17951, 1181, 2]
 
-// Module 17939 (AssetChooser)
+// Module 17949 (AssetChooser)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
-import Pressables from "Pressables" /* 5341 */;
-import _modDef17940 from "module_17940" /* 17940 */;
-import _modDef17941 from "module_17941" /* 17941 */;
+import Pressables from "Pressables" /* 5373 */;
+import _modDef17950 from "module_17950" /* 17950 */;
+import _modDef17951 from "module_17951" /* 17951 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 const UPLOAD_MEDIUM_SIZE = fn(1078).UPLOAD_MEDIUM_SIZE;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4758);
+const createStyles = fn(4790);
 let obj2 = { assetWrapper: { width: "100%", alignItems: "center" }, asset: null, uploadIconWrapper: null, uploadIcon: null, remove: null };
 let size = { width: "100%", height: 192, borderRadius: nativeDefault.radii.xs, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.asset = size;
@@ -132,13 +132,13 @@ prototype["render"] = function render() {
   obj.disabled = disabled;
   let tmp9 = source;
   if (null == source) {
-    tmp9 = _modDef17940;
+    tmp9 = _modDef17950;
   }
   const obj2 = { source: tmp9, style: tmp.asset, children: null };
   let tmp5Result = null;
   if (!disabled) {
     const obj3 = { style: tmp.uploadIconWrapper, children: null };
-    const obj4 = { style: tmp.uploadIcon, source: _modDef17941 };
+    const obj4 = { style: tmp.uploadIcon, source: _modDef17951 };
     obj3.children = tmp5(hasOwnProperty, obj4);
     tmp5Result = tmp5(React4, obj3);
   }
@@ -160,7 +160,7 @@ prototype["render"] = function render() {
   children[1] = tmp5Result2;
   return closure_1_11(v65535, { children });
 };
-AssetChooser.contextType = fn(4471).ThemeContext;
+AssetChooser.contextType = fn(4503).ThemeContext;
 size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_settings/native/AssetChooser.tsx");
 

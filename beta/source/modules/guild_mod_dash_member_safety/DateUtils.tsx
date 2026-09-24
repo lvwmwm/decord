@@ -1,12 +1,12 @@
-// Module ID: 7745
-// Function ID: 7746
+// Module ID: 7777
+// Function ID: 7778
 // Name: guild_mod_dash_member_safety/DateUtils
-// Dependencies: [1119, 7746, 2]
+// Dependencies: [1119, 7778, 2]
 // Exports: formatDateRelativeTime, getJoinedAtTimestamp, getMembersTableTimestampFormatter
 
-// Module 7745 (guild_mod_dash_member_safety/DateUtils)
+// Module 7777 (guild_mod_dash_member_safety/DateUtils)
 import util from "util" /* 1119 */;
-import getTimestampStringDefault from "getTimestampString" /* 7746 */;
+import getTimestampStringDefault from "getTimestampString" /* 7778 */;
 import size from "module_2" /* 2 */;
 
 function getJoinedAtDateFormatter() {
