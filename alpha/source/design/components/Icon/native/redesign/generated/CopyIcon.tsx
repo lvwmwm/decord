@@ -1,12 +1,12 @@
 // Module ID: 4775
 // Function ID: 4776
 // Name: CopyIcon
-// Dependencies: [19, 21, 576, 4525, 4776, 2]
+// Dependencies: [19, 21, 576, 4527, 4776, 2]
 // Exports: CopyIcon
 
 // Module 4775 (CopyIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
 import _mod4776 from "module_4776" /* 4776 */;
 import noop from "module_19" /* 19 */;
 

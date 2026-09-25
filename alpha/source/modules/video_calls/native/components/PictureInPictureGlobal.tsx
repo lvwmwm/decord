@@ -1,20 +1,20 @@
-// Module ID: 17482
-// Function ID: 17483
+// Module ID: 16699
+// Function ID: 16700
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 2043, 4845, 9737, 502, 1992, 1074, 4850, 21, 4829, 1177, 576, 9742, 504, 9699, 9732, 5036, 9741, 5430, 9744, 8682, 9762, 9766, 9774, 9794, 9802, 9722, 9763, 9740, 10436, 4561, 4830, 5987, 17483, 1612, 2]
+// Dependencies: [32, 19, 17, 2043, 4845, 8835, 502, 1992, 1074, 4850, 21, 4829, 1177, 576, 8840, 504, 8797, 8830, 5036, 8839, 5431, 8842, 7772, 8860, 8864, 8872, 8892, 8900, 8820, 8861, 8838, 9538, 4563, 4830, 5989, 16700, 1612, 2]
 // Exports: default
 
-// Module 17482 (PictureInPictureGlobal)
+// Module 16699 (PictureInPictureGlobal)
 import nativeDefault from "native" /* 576 */;
 import native2 from "native" /* 1177 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import timing from "timing" /* 4830 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5036 */;
-import NavigatorConstants from "NavigatorConstants" /* 5987 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9699 */;
-import transitionToActivityDefault from "transitionToActivity" /* 9722 */;
-import PictureInPictureDefault from "PictureInPicture" /* 9740 */;
-import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 17483 */;
+import NavigatorConstants from "NavigatorConstants" /* 5989 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 8797 */;
+import transitionToActivityDefault from "transitionToActivity" /* 8820 */;
+import PictureInPictureDefault from "PictureInPicture" /* 8838 */;
+import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 16700 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
@@ -27,7 +27,7 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet: metroRequire, TouchableOpacity: closure_7 } = get_ActivityIndicator);
-let closure_10 = fn(9737).useBestActiveChatInputContainerHeight;
+let closure_10 = fn(8835).useBestActiveChatInputContainerHeight;
 const PictureInPicturePositions = fn(1074).PictureInPicturePositions;
 const ParticipantTypes = fn(4850).ParticipantTypes;
 const jsxProd = fn(21);

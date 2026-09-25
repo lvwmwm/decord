@@ -1,11 +1,11 @@
-// Module ID: 4750
-// Function ID: 4751
+// Module ID: 4752
+// Function ID: 4753
 // Name: validateTriggerPoint
-// Dependencies: [4744, 2]
+// Dependencies: [4746, 2]
 // Exports: validateAllExperiments, validateOneExperiment
 
-// Module 4750 (validateTriggerPoint)
-import ExperimentStore from "ExperimentStore" /* 4744 */;
+// Module 4752 (validateTriggerPoint)
+import ExperimentStore from "ExperimentStore" /* 4746 */;
 
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/experiments/trigger_points/validateTriggerPoint.tsx");

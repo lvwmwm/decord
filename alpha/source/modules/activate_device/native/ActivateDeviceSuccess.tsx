@@ -1,17 +1,17 @@
-// Module ID: 14251
-// Function ID: 14252
+// Module ID: 13412
+// Function ID: 13413
 // Name: ActivateDeviceSuccess
-// Dependencies: [19, 17, 21, 4829, 1115, 9411, 5892, 1397, 14250, 4825, 5273, 2]
+// Dependencies: [19, 17, 21, 4829, 1115, 8509, 5894, 1397, 13411, 4825, 5274, 2]
 // Exports: ActivateDeviceSuccess
 
-// Module 14251 (ActivateDeviceSuccess)
+// Module 13412 (ActivateDeviceSuccess)
 import util from "util" /* 1115 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import FastImageDefault from "FastImage" /* 5892 */;
-import scopes2 from "scopes" /* 9411 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 14250 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import FastImageDefault from "FastImage" /* 5894 */;
+import scopes2 from "scopes" /* 8509 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 13411 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

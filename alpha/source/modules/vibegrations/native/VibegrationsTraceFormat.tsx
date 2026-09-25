@@ -1,12 +1,12 @@
-// Module ID: 17168
-// Function ID: 17169
+// Module ID: 16383
+// Function ID: 16384
 // Name: VibegrationsTraceFormat
-// Dependencies: [19, 17, 21, 4829, 576, 17169, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 16384, 2]
 // Exports: TraceStatusDot
 
-// Module 17168 (VibegrationsTraceFormat)
+// Module 16383 (VibegrationsTraceFormat)
 import nativeDefault from "native" /* 576 */;
-import vibegrations_VibegrationsTraceFormat from "vibegrations/VibegrationsTraceFormat" /* 17169 */;
+import vibegrations_VibegrationsTraceFormat from "vibegrations/VibegrationsTraceFormat" /* 16384 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

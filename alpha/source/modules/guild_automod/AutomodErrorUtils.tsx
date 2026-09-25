@@ -1,10 +1,10 @@
-// Module ID: 8287
-// Function ID: 8288
+// Module ID: 7376
+// Function ID: 7377
 // Name: AutomodErrorUtils
-// Dependencies: [2044, 1074, 1115, 8163, 2]
+// Dependencies: [2044, 1074, 1115, 7248, 2]
 // Exports: getAutomodErrorMessage
 
-// Module 8287 (AutomodErrorUtils)
+// Module 7376 (AutomodErrorUtils)
 import util from "util" /* 1115 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 

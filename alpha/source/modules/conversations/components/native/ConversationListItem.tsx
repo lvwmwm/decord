@@ -1,17 +1,17 @@
-// Module ID: 8274
-// Function ID: 8275
+// Module ID: 7363
+// Function ID: 7364
 // Name: ConversationListItem
-// Dependencies: [19, 17, 7928, 7925, 1074, 21, 4829, 576, 1484, 504, 8239, 8257, 8241, 5912, 4825, 1115, 5969, 5285, 8275, 8276, 8279, 2]
+// Dependencies: [19, 17, 7013, 7010, 1074, 21, 4829, 576, 1484, 504, 7328, 7346, 7330, 5914, 4825, 1115, 5971, 5286, 7364, 7365, 7368, 2]
 
-// Module 8274 (ConversationListItem)
+// Module 7363 (ConversationListItem)
 import nativeDefault from "native" /* 576 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 8239 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 8241 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 8257 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 8276 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 8279 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 7328 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7330 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 7346 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 7365 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 7368 */;
 import noop from "module_19" /* 19 */;
-import ConversationsStore from "ConversationsStore" /* 7928 */;
+import ConversationsStore from "ConversationsStore" /* 7013 */;
 
 require = fn;
 function ConversationListItemBase(conversation) {
@@ -92,7 +92,7 @@ function ConversationListItemBase(conversation) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-let closure_6 = fn(7925).MOBILE_PREVIEW_MESSAGE_COUNT;
+let closure_6 = fn(7010).MOBILE_PREVIEW_MESSAGE_COUNT;
 const VerticalGradient = fn(1074).VerticalGradient;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);

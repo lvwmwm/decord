@@ -1,10 +1,10 @@
-// Module ID: 8237
-// Function ID: 8238
+// Module ID: 7326
+// Function ID: 7327
 // Name: ConversationExperiments
 // Dependencies: [2066, 1074, 1434, 504, 2]
 // Exports: isConversationDebugUXEnabled, isTopicalNavEnabled, useIsConversationDebugUXEnabled, useIsConversationTopicHeaderEnabled
 
-// Module 8237 (ConversationExperiments)
+// Module 7326 (ConversationExperiments)
 import GuildStore from "GuildStore" /* 2066 */;
 
 const require = globalThis.__r;

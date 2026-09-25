@@ -1,11 +1,11 @@
-// Module ID: 13300
-// Function ID: 13301
+// Module ID: 12450
+// Function ID: 12451
 // Name: InAppReportsUpsellsTableRow
-// Dependencies: [19, 21, 5910, 2]
+// Dependencies: [19, 21, 5912, 2]
 // Exports: default
 
-// Module 13300 (InAppReportsUpsellsTableRow)
-import TableRow from "TableRow" /* 5910 */;
+// Module 12450 (InAppReportsUpsellsTableRow)
+import TableRow from "TableRow" /* 5912 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

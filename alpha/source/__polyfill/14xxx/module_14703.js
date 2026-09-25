@@ -1,17 +1,9 @@
 // Module ID: 14703
 // Function ID: 14704
-// Dependencies: [14698, 14704]
+// Dependencies: [1121]
 
 // Module 14703
-import _mod14698 from "module_14698" /* 14698 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-const _mod14704 = tmp(14704);
 
-export default (arg0) => {
-  if (_mod14698(arg0)) {
-    return arg0;
-  } else {
-    const tmp6 = new TypeError(_mod14704(arg0) + " is not a function");
-    throw tmp6;
-  }
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/quests/native/images", width: 48, height: 45, scales: [1, 2, 3], hash: "fb99def53a2e7c887031d561bd6a6700", name: "wreath_light", type: "png" });

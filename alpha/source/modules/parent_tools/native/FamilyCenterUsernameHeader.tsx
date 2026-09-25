@@ -1,11 +1,11 @@
-// Module ID: 15238
-// Function ID: 15239
+// Module ID: 14404
+// Function ID: 14405
 // Name: FamilyCenterUsernameHeader
-// Dependencies: [19, 17, 21, 4829, 4673, 4825, 2]
+// Dependencies: [19, 17, 21, 4829, 4675, 4825, 2]
 // Exports: default
 
-// Module 15238 (FamilyCenterUsernameHeader)
-import UserUtilsDefault from "UserUtils" /* 4673 */;
+// Module 14404 (FamilyCenterUsernameHeader)
+import UserUtilsDefault from "UserUtils" /* 4675 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import noop from "module_19" /* 19 */;
 

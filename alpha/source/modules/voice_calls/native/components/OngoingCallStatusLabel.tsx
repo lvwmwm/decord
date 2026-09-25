@@ -1,13 +1,13 @@
-// Module ID: 14163
-// Function ID: 14164
+// Module ID: 13324
+// Function ID: 13325
 // Name: OngoingCallStatusLabel
-// Dependencies: [19, 502, 5583, 4848, 21, 504, 1115, 14162, 1177, 2]
+// Dependencies: [19, 502, 5585, 4848, 21, 504, 1115, 13323, 1177, 2]
 // Exports: default
 
-// Module 14163 (OngoingCallStatusLabel)
+// Module 13324 (OngoingCallStatusLabel)
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5583 */;
+import CallStore from "CallStore" /* 5585 */;
 import VoiceStateStore from "VoiceStateStore" /* 4848 */;
 
 const require = fn;

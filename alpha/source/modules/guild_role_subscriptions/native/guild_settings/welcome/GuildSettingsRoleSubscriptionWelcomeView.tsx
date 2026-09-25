@@ -1,22 +1,22 @@
-// Module ID: 18244
-// Function ID: 18245
+// Module ID: 17475
+// Function ID: 17476
 // Name: GuildSettingsRoleSubscriptionWelcomeView
-// Dependencies: [32, 19, 17, 15554, 1074, 18245, 21, 4829, 576, 12565, 1115, 18246, 4825, 18247, 1484, 4796, 18249, 1980, 18249, 8951, 5273, 1177, 5274, 9796, 18257, 18261, 18270, 18273, 18278, 18279, 1485, 9128, 1249, 5987, 18243, 4522, 7456, 5892, 18280, 2]
+// Dependencies: [32, 19, 17, 14724, 1074, 17476, 21, 4829, 576, 11691, 1115, 17477, 4825, 17478, 1484, 4796, 17480, 1980, 17480, 8045, 5274, 1177, 5275, 8894, 17488, 17492, 17501, 17504, 17509, 17510, 1485, 8222, 1249, 5989, 17474, 4524, 6539, 5894, 17511, 2]
 // Exports: default
 
-// Module 18244 (GuildSettingsRoleSubscriptionWelcomeView)
+// Module 17475 (GuildSettingsRoleSubscriptionWelcomeView)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import NavigatorConstants from "NavigatorConstants" /* 5987 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12565 */;
-import WarningNoticeDefault from "WarningNotice" /* 18246 */;
-import EligibilityActionSheet from "EligibilityActionSheet" /* 18249 */;
-import HowItWorksSectionDefault from "HowItWorksSection" /* 18257 */;
-import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 18261 */;
-import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 18270 */;
+import NavigatorConstants from "NavigatorConstants" /* 5989 */;
+import ErrorBlockDefault from "ErrorBlock" /* 11691 */;
+import WarningNoticeDefault from "WarningNotice" /* 17477 */;
+import EligibilityActionSheet from "EligibilityActionSheet" /* 17480 */;
+import HowItWorksSectionDefault from "HowItWorksSection" /* 17488 */;
+import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 17492 */;
+import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 17501 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -105,7 +105,7 @@ function StartEarningButton(isTermsAccepted) {
   const callback = noop.useCallback(() => submitAcceptTermsRequest(), items);
   const callback1 = noop.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
-    return obj.openLazy(asyncRequireImpl(18249, dependencyMap.paths), EligibilityActionSheet.ELIGIBILITY_ACTION_SHEET_KEY, {
+    return obj.openLazy(asyncRequireImpl(17480, dependencyMap.paths), EligibilityActionSheet.ELIGIBILITY_ACTION_SHEET_KEY, {
       eligibility,
       onRequireModeratorMFAClick() {
         navigation.push(constants.SECURITY);
@@ -239,9 +239,9 @@ class MarketingSections {
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const React6 = fn(15554).CREATOR_REVENUE_PORTAL_URL;
+const React6 = fn(14724).CREATOR_REVENUE_PORTAL_URL;
 const GuildSettingsSections = fn(1074).GuildSettingsSections;
-const constants = fn(18245).CreatorMonetizationOnboardingMarketingSection;
+const constants = fn(17476).CreatorMonetizationOnboardingMarketingSection;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
 const createStyles = fn(4829);

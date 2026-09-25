@@ -1,16 +1,16 @@
-// Module ID: 16497
-// Function ID: 16498
+// Module ID: 15677
+// Function ID: 15678
 // Name: HappeningNowCardLiveStage
-// Dependencies: [19, 17, 15645, 1074, 21, 4829, 576, 1241, 13275, 1980, 16498, 16499, 16500, 15646, 5403, 1177, 16509, 4982, 1115, 4981, 2]
+// Dependencies: [19, 17, 14815, 1074, 21, 4829, 576, 1241, 12425, 1980, 15678, 15679, 15680, 14816, 5404, 1177, 15689, 4982, 1115, 4981, 2]
 
-// Module 16497 (HappeningNowCardLiveStage)
+// Module 15677 (HappeningNowCardLiveStage)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4981 */;
-import HappeningNowCard from "HappeningNowCard" /* 15646 */;
-import useLiveStageData from "useLiveStageData" /* 16498 */;
+import HappeningNowCard from "HappeningNowCard" /* 14816 */;
+import useLiveStageData from "useLiveStageData" /* 15678 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -179,7 +179,7 @@ function getUsersSubtitle(arg0) {
   }
 }
 const View = fn(17).View;
-const HappeningNowConstants = fn(15645);
+const HappeningNowConstants = fn(14815);
 ({ HappeningNowCardTrackingType: hasOwnProperty, HAPPENING_NOW_CONTENT_HEIGHT, HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, HAPPENING_NOW_STAGE_PREVIEW_WIDTH } = HappeningNowConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
@@ -209,7 +209,7 @@ export default noop.memo((arg0) => {
   const callback = noop.useCallback(() => {
     AnalyticsUtilsDefault.track(AnalyticEvents.ACTIVITY_CARD_CLICKED, { order: index, guild_id, type: constants.GUILD_LIVE_STAGE_CARD, destination_channel_id: channel_id });
     const obj2 = { order: index, guild_id, type: constants.GUILD_LIVE_STAGE_CARD, destination_channel_id: channel_id };
-    asyncRequireImpl(13275, dependencyMap.paths).then((result) => {
+    asyncRequireImpl(12425, dependencyMap.paths).then((result) => {
       result.default(channel_id, true);
     });
   }, items);

@@ -1,13 +1,13 @@
-// Module ID: 8968
-// Function ID: 8969
+// Module ID: 8062
+// Function ID: 8063
 // Name: FormSliderRow
-// Dependencies: [19, 17, 21, 4829, 5991, 5912, 4825, 8628, 7470, 2]
+// Dependencies: [19, 17, 21, 4829, 5993, 5914, 4825, 7718, 6553, 2]
 // Exports: default
 
-// Module 8968 (FormSliderRow)
-import RedesignCompat from "RedesignCompat" /* 5991 */;
-import FormRowDefault from "FormRow" /* 7470 */;
-import _modDef8628 from "module_8628" /* 8628 */;
+// Module 8062 (FormSliderRow)
+import RedesignCompat from "RedesignCompat" /* 5993 */;
+import FormRowDefault from "FormRow" /* 6553 */;
+import _modDef7718 from "module_7718" /* 7718 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -34,16 +34,16 @@ export default function FormSliderRow(arg0) {
     const obj5 = {};
     const merged1 = Object.assign(merged);
     obj5.style = tmp5.slider;
-    items1[1] = hasOwnProperty(_modDef8628, obj5);
+    items1[1] = hasOwnProperty(_modDef7718, obj5);
     obj2.children = items1;
-    let tmp6Result = tmp6(tmp2(5912).Card, obj2);
+    let tmp6Result = tmp6(tmp2(5914).Card, obj2);
   } else {
     const obj = { children: null };
     const obj6 = { label, trailing };
     const items2 = [hasOwnProperty(FormRowDefault, obj6), ];
     const obj7 = {};
     const merged2 = Object.assign(merged);
-    items2[1] = hasOwnProperty(_modDef8628, obj7);
+    items2[1] = hasOwnProperty(_modDef7718, obj7);
     obj.children = items2;
     tmp6Result = tmp6(React5, obj);
   }

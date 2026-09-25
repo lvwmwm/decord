@@ -1,19 +1,19 @@
-// Module ID: 14228
-// Function ID: 14229
+// Module ID: 13389
+// Function ID: 13390
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 502, 1372, 1074, 1229, 21, 4829, 576, 1612, 1478, 1365, 1241, 5032, 4686, 1101, 5197, 5201, 6940, 1115, 5201, 6922, 5429, 4647, 14229, 4825, 7273, 2]
+// Dependencies: [5, 19, 17, 502, 1372, 1074, 1229, 21, 4829, 576, 1612, 1478, 1365, 1241, 5032, 4688, 1101, 5198, 5202, 6023, 1115, 5202, 6005, 5430, 4649, 13390, 4825, 6356, 2]
 // Exports: default
 
-// Module 14228 (OneTimeLoginModal)
+// Module 13389 (OneTimeLoginModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import useAlertStore from "useAlertStore" /* 5197 */;
-import AlertModal from "AlertModal" /* 5201 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5429 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6940 */;
+import useAlertStore from "useAlertStore" /* 5198 */;
+import AlertModal from "AlertModal" /* 5202 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5430 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6023 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -167,12 +167,12 @@ export default function OneTimeLoginModal(token) {
   }, items5);
   let obj = { style: memo, children: null };
   let obj2 = { absolute: true, wide: true, tall: true, gradientOverride: closure_12[5], mix: true, angleOverride: 0, mixAmount: null };
-  const obj3 = { dark: token(4647).OverlayOpacity.LEVEL_1 };
+  const obj3 = { dark: token(4649).OverlayOpacity.LEVEL_1 };
   obj2.mixAmount = obj3;
   const items6 = [closure_13(ThemedGradientDefault, obj2), ];
   let obj4 = { style: tmp.container, children: null };
   let obj5 = { style: tmp.centerContent, children: null };
-  const items7 = [closure_13(callback3, { source: token(14229), style: tmp.logo }), ];
+  const items7 = [closure_13(callback3, { source: token(13390), style: tmp.logo }), ];
   const obj7 = { style: tmp.loadingContainer, children: null };
   const items8 = [closure_13(callback2, {}), ];
   const obj8 = { variant: "text-lg/semibold", children: null };
@@ -193,7 +193,7 @@ export default function OneTimeLoginModal(token) {
   obj11.text = intl3.string(token(1115).t.FIEwfG);
   obj11.onPress = onPress;
   obj11.textStyle = tmp.link;
-  items10[1] = closure_13(token(7273).LinkButton, obj11);
+  items10[1] = closure_13(token(6356).LinkButton, obj11);
   obj9.children = items10;
   items9[1] = closure_14(callback1, obj9);
   obj4.children = items9;

@@ -1,22 +1,22 @@
-// Module ID: 16144
-// Function ID: 16145
+// Module ID: 15321
+// Function ID: 15322
 // Name: DevToolsContent
-// Dependencies: [32, 19, 17, 11774, 4744, 1235, 21, 4829, 576, 504, 12131, 16145, 4825, 5427, 4797, 16146, 16148, 1484, 1612, 5992, 5910, 4523, 14953, 2]
+// Dependencies: [32, 19, 17, 10956, 4746, 1235, 21, 4829, 576, 504, 11253, 15322, 4825, 5428, 4797, 15323, 15325, 1484, 1612, 5994, 5912, 4525, 14115, 2]
 
-// Module 16144 (DevToolsContent)
+// Module 15321 (DevToolsContent)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import HapticUtils from "HapticUtils" /* 4797 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import Pressables from "Pressables" /* 5427 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14953 */;
-import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 16145 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 16146 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 16148 */;
+import Pressables from "Pressables" /* 5428 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14115 */;
+import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 15322 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 15323 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 15325 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11774 */;
-import ExperimentStore from "ExperimentStore" /* 4744 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10956 */;
+import ExperimentStore from "ExperimentStore" /* 4746 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
 
 const require = globalThis.__r;

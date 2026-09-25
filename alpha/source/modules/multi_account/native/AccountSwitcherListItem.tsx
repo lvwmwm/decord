@@ -1,16 +1,16 @@
-// Module ID: 16369
-// Function ID: 16370
+// Module ID: 15549
+// Function ID: 15550
 // Name: AccountSwitcherListItem
-// Dependencies: [19, 17, 1386, 4674, 1372, 12762, 21, 4829, 504, 4788, 576, 4783, 4825, 1115, 5427, 4543, 1177, 4673, 2]
+// Dependencies: [19, 17, 1386, 4676, 1372, 11888, 21, 4829, 504, 4788, 576, 4783, 4825, 1115, 5428, 4545, 1177, 4675, 2]
 // Exports: default
 
-// Module 16369 (AccountSwitcherListItem)
+// Module 15549 (AccountSwitcherListItem)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import UserUtilsDefault from "UserUtils" /* 4673 */;
+import UserUtilsDefault from "UserUtils" /* 4675 */;
 import noop from "module_19" /* 19 */;
 import UserRecord from "UserRecord" /* 1386 */;
-import StreamerModeStore from "StreamerModeStore" /* 4674 */;
+import StreamerModeStore from "StreamerModeStore" /* 4676 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -49,7 +49,7 @@ class AccountStatusIcon {
 }
 get_ActivityIndicator = fn(17);
 ({ Pressable: c3, View: closure_4 } = get_ActivityIndicator);
-const MultiAccountTokenStatus = fn(12762).MultiAccountTokenStatus;
+const MultiAccountTokenStatus = fn(11888).MultiAccountTokenStatus;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4829);
@@ -84,10 +84,10 @@ export default function AccountSwitcherListItem(arg0) {
     if (null == onPressUser) {
       let PressableOpacity = React3;
     } else {
-      PressableOpacity = tmp2(5427).PressableOpacity;
+      PressableOpacity = tmp2(5428).PressableOpacity;
     }
     const obj5 = { selected: tmp7 };
-    const radioA11yNative = tmp2(4543).useRadioA11yNative(obj5);
+    const radioA11yNative = tmp2(4545).useRadioA11yNative(obj5);
     const obj6 = { accessibilityRole: null, accessibilityState: null, accessibilityHint: null, style: null, delayLongPress: null, onPress: null };
     ({ accessibilityRole: obj7.accessibilityRole, accessibilityState: obj7.accessibilityState } = radioA11yNative);
     let stringResult;
@@ -102,12 +102,12 @@ export default function AccountSwitcherListItem(arg0) {
     const merged = Object.assign(sortHandlers);
     const items2 = [leading, , ];
     const obj8 = { style: tmp.accountInfo, children: null };
-    const obj9 = { user: obj3, guildId: "Array" };
+    const obj9 = { user: obj3, guildId: "a" };
     const items3 = [React7(tmp2(1177).Avatar, obj9), ];
     const obj10 = { style: tmp.accountListTag, children: null };
     const obj11 = { style: tmp.tagContainer, children: null };
     const obj12 = { variant: "text-md/semibold", color: "text-default", style: tmp.username, lineClamp: 1, children: null };
-    const tmp2Result = tmp2(4543);
+    const tmp2Result = tmp2(4545);
     let str = "always";
     if (stateFromStores) {
       str = "never";

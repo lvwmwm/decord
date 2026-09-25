@@ -1,10 +1,10 @@
-// Module ID: 17169
-// Function ID: 17170
+// Module ID: 16384
+// Function ID: 16385
 // Name: vibegrations/VibegrationsTraceFormat
 // Dependencies: [1115, 3714, 2]
 // Exports: categoryLabel, formatDuration, formatTokens, omissionLabel, statusLabel, traceRichStatusLabel
 
-// Module 17169 (vibegrations/VibegrationsTraceFormat)
+// Module 16384 (vibegrations/VibegrationsTraceFormat)
 import util from "util" /* 1115 */;
 import _modDef3714 from "module_3714" /* 3714 */;
 import size from "module_2" /* 2 */;

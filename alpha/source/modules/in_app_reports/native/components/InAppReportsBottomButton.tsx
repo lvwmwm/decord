@@ -1,10 +1,10 @@
-// Module ID: 13312
-// Function ID: 13313
+// Module ID: 12462
+// Function ID: 12463
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 1085, 21, 4829, 576, 1115, 2618, 4825, 5273, 1177, 2]
+// Dependencies: [19, 17, 1085, 21, 4829, 576, 1115, 2618, 4825, 5274, 1177, 2]
 // Exports: default
 
-// Module 13312 (InAppReportsBottomButton)
+// Module 12462 (InAppReportsBottomButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef2618 from "module_2618" /* 2618 */;
@@ -78,7 +78,7 @@ export default function InAppReportsBottomButton(button) {
         text: stringResult2,
         variant: str2
       };
-      items1[1] = React4(tmp17(5273).Button, obj5);
+      items1[1] = React4(tmp17(5274).Button, obj5);
       let tmp14Result2 = null;
       if (hasError) {
         const obj6 = { style: tmp.errorText, children: string2Result };

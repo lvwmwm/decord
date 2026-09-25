@@ -1,13 +1,13 @@
-// Module ID: 17224
-// Function ID: 17225
+// Module ID: 16439
+// Function ID: 16440
 // Name: guild_channels/ChannelSubtitle
-// Dependencies: [19, 21, 10467, 4825, 16652, 10462, 2]
+// Dependencies: [19, 21, 9569, 4825, 15832, 9564, 2]
 // Exports: renderChannelSubtitle
 
-// Module 17224 (guild_channels/ChannelSubtitle)
+// Module 16439 (guild_channels/ChannelSubtitle)
 import Text_Text from "Text/Text" /* 4825 */;
-import ChannelListLayout from "ChannelListLayout" /* 10467 */;
-import getChannelSubtitleData from "getChannelSubtitleData" /* 16652 */;
+import ChannelListLayout from "ChannelListLayout" /* 9569 */;
+import getChannelSubtitleData from "getChannelSubtitleData" /* 15832 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -29,7 +29,7 @@ function ChannelSubtitle(arg0) {
     obj3.guildId = guildId;
     obj3.layout = layout;
     obj3.disableAnimatedEmoji = !("voice" === channelSubtitleData.type && connected);
-    obj2.children = tmp(10462).renderMessagePreviewMarkup(obj3);
+    obj2.children = tmp(9564).renderMessagePreviewMarkup(obj3);
     return jsx(tmp(4825).Text, {});
   }
 }

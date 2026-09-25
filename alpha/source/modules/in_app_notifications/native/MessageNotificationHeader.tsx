@@ -1,10 +1,10 @@
-// Module ID: 10519
-// Function ID: 10520
+// Module ID: 9621
+// Function ID: 9622
 // Name: MessageNotificationHeader
-// Dependencies: [19, 17, 4821, 4474, 1372, 21, 4829, 576, 4825, 4982, 1095, 5377, 5379, 5327, 504, 2]
+// Dependencies: [19, 17, 4821, 4476, 1372, 21, 4829, 576, 4825, 4982, 1095, 5378, 5380, 5328, 504, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 10519 (MessageNotificationHeader)
+// Module 9621 (MessageNotificationHeader)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import ChannelTypes from "ChannelTypes" /* 1095 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 4825 */;
 import useChannelName from "useChannelName" /* 4982 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -41,13 +41,13 @@ function LocationText(channel) {
       return element;
     } else {
       if (tmp.type !== tmp3(1095).ChannelTypes.PUBLIC_THREAD) {
-        const simpleChannelIconComponent = tmp3(5327).getSimpleChannelIconComponent(tmp);
-        const tmp3Result = tmp3(5327);
+        const simpleChannelIconComponent = tmp3(5328).getSimpleChannelIconComponent(tmp);
+        const tmp3Result = tmp3(5328);
       }
       if (null == tmp2) {
-        const ThreadIcon = tmp3(5379).ThreadIcon;
+        const ThreadIcon = tmp3(5380).ThreadIcon;
       }
-      tmp3Result2 = tmp3(5377);
+      tmp3Result2 = tmp3(5378);
       const ChatIcon = tmp3Result2.ChatIcon;
     }
   }, items);

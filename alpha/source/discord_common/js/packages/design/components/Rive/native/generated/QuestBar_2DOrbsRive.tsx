@@ -1,11 +1,11 @@
-// Module ID: 4639
-// Function ID: 4640
+// Module ID: 4641
+// Function ID: 4642
 // Name: QuestBar_2DOrbsRive
-// Dependencies: [109, 19, 21, 4555, 4640, 4610, 2]
+// Dependencies: [109, 19, 21, 4557, 4642, 4612, 2]
 
-// Module 4639 (QuestBar_2DOrbsRive)
-import BaseRive from "BaseRive" /* 4555 */;
-import RiveErrorBoundary from "RiveErrorBoundary" /* 4610 */;
+// Module 4641 (QuestBar_2DOrbsRive)
+import BaseRive from "BaseRive" /* 4557 */;
+import RiveErrorBoundary from "RiveErrorBoundary" /* 4612 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

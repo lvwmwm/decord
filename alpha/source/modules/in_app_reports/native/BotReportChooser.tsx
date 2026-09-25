@@ -1,18 +1,18 @@
-// Module ID: 13380
-// Function ID: 13381
+// Module ID: 12530
+// Function ID: 12531
 // Name: BotReportChooser
-// Dependencies: [19, 5056, 21, 7530, 4825, 1115, 7532, 4796, 8987, 504, 7496, 2]
+// Dependencies: [19, 5056, 21, 6613, 4825, 1115, 6615, 4796, 8081, 504, 6579, 2]
 // Exports: default
 
-// Module 13380 (BotReportChooser)
+// Module 12530 (BotReportChooser)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 7496 */;
-import ActionSheet from "ActionSheet" /* 7530 */;
-import ActionSheetRow from "ActionSheetRow" /* 7532 */;
-import ReportModals from "ReportModals" /* 8987 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6579 */;
+import ActionSheet from "ActionSheet" /* 6613 */;
+import ActionSheetRow from "ActionSheetRow" /* 6615 */;
+import ReportModals from "ReportModals" /* 8081 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5056 */;
 

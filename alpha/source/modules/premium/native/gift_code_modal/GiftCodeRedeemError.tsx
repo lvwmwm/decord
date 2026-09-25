@@ -1,17 +1,17 @@
-// Module ID: 11802
-// Function ID: 11803
+// Module ID: 10984
+// Function ID: 10985
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 4829, 576, 1485, 7456, 11803, 11804, 4825, 1115, 5273, 5032, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 1485, 6539, 10985, 10986, 4825, 1115, 5274, 5032, 2]
 // Exports: default
 
-// Module 11802 (GiftCodeRedeemError)
+// Module 10984 (GiftCodeRedeemError)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Link from "Link" /* 1485 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7456 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6539 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -31,9 +31,9 @@ export default function GiftCodeRedeemError(children) {
   const obj2 = { bottom: true, style: tmp.container, children: null };
   const obj3 = { contentContainerStyle: tmp.body, alwaysBounceVertical: false, children: null };
   if (theme.dark) {
-    let tmp9Result = tmp9(11803);
+    let tmp9Result = tmp9(10985);
   } else {
-    tmp9Result = tmp9(11804);
+    tmp9Result = tmp9(10986);
   }
   const items = [timestampProducer(React3, { source: tmp9Result }), , ];
   const obj4 = { variant: "heading-xl/bold", style: tmp.header, children: null };

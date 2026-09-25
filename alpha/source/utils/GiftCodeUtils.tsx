@@ -1,19 +1,19 @@
-// Module ID: 5081
-// Function ID: 5082
+// Module ID: 5082
+// Function ID: 5083
 // Name: GiftCodeUtils
-// Dependencies: [5, 32, 5082, 1372, 1074, 1374, 4816, 5083, 5084, 1241, 4506, 5186, 1115, 5014, 1370, 504, 4483, 2]
+// Dependencies: [5, 32, 5083, 1372, 1074, 1374, 4816, 5084, 5085, 1241, 4508, 5187, 1115, 5014, 1370, 504, 4485, 2]
 // Exports: cleanCode, findGiftCodes, firstLibraryApplicationForGiftCode, getBodyText, getButtonText, getErrorMessage, getGiftCodeURL, getGiftExperience, getHeaderText, getStep, getSubscriptionGiftStartHeaderText, getSubscriptionGiftSuccessText, isGiftCodeEmbed, makeComboId, parseComboId, processGiftCodeInput, resolveGiftCode, shouldShowCustomGiftExperience, trackGiftCodeCopy, trackStep, useGetGiftCode
 
-// Module 5081 (GiftCodeUtils)
+// Module 5082 (GiftCodeUtils)
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import PremiumUtils from "PremiumUtils" /* 4483 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5083 */;
-import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 5186 */;
+import PremiumUtils from "PremiumUtils" /* 4485 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5084 */;
+import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 5187 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
-import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 5082 */;
+import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 5083 */;
 import UserStore from "UserStore" /* 1372 */;
 import RegexUtils from "RegexUtils" /* 4816 */;
 

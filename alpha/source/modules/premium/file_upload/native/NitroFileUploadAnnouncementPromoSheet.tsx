@@ -1,10 +1,10 @@
-// Module ID: 17518
-// Function ID: 17519
+// Module ID: 16740
+// Function ID: 16741
 // Name: NitroFileUploadAnnouncementPromoSheet
-// Dependencies: [19, 17, 2041, 21, 4829, 576, 5290, 10578, 5997, 1115, 2586, 5273, 2]
+// Dependencies: [19, 17, 2041, 21, 4829, 576, 5291, 9680, 16741, 1115, 2586, 5274, 2]
 // Exports: default
 
-// Module 17518 (NitroFileUploadAnnouncementPromoSheet)
+// Module 16740 (NitroFileUploadAnnouncementPromoSheet)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 12347
-// Function ID: 12348
+// Module ID: 11473
+// Function ID: 11474
 // Name: ForumPostUsername
-// Dependencies: [19, 17, 4821, 12343, 21, 4829, 8216, 2054, 11864, 12348, 504, 8309, 1177, 4825, 2]
+// Dependencies: [19, 17, 4821, 11469, 21, 4829, 7305, 2054, 11007, 11474, 504, 7398, 1177, 4825, 2]
 // Exports: ForumPostAuthor, ForumPostMessageAuthor
 
-// Module 12347 (ForumPostUsername)
+// Module 11473 (ForumPostUsername)
 import initialize from "initialize" /* 504 */;
 import ForumLayout from "ForumLayout" /* 2054 */;
-import ForumHooks from "ForumHooks" /* 8216 */;
-import useChatWidthDefault from "useChatWidth" /* 11864 */;
+import ForumHooks from "ForumHooks" /* 7305 */;
+import useChatWidthDefault from "useChatWidth" /* 11007 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 
@@ -21,7 +21,7 @@ function ForumPostUsername(arg0) {
   if (useForumChannelStore(thread.parent_id).layoutType === ForumLayout.ForumLayout.GRID) {
     num = 72;
   }
-  const diff = useChatWidthDefault() - tmp2(12348).GRID_HORIZONTAL_PADDING - num;
+  const diff = useChatWidthDefault() - tmp2(11474).GRID_HORIZONTAL_PADDING - num;
   const tmp4 = useChatWidthDefault();
   const items = [AccessibilityStore];
   const stateFromStores = initialize.useStateFromStores(items, () => roleStyle.roleStyle);
@@ -29,8 +29,8 @@ function ForumPostUsername(arg0) {
     if (null != authorColor) {
       const obj = { color: authorColor };
     }
-    const processColorStringsArray = tmp2(8309).useProcessColorStringsArray(authorColors);
-    const tmp2Result4 = tmp2(8309);
+    const processColorStringsArray = tmp2(7398).useProcessColorStringsArray(authorColors);
+    const tmp2Result4 = tmp2(7398);
     const useIsRoleStyleAndRoleColorsEligibleForERC = tmp2Result4.useIsRoleStyleAndRoleColorsEligibleForERC;
     const guild_id = thread.guild_id;
     let tmp19Result = null;
@@ -67,7 +67,7 @@ function ForumPostUsername(arg0) {
   }
 }
 const View = fn(17).View;
-const useForumChannelStore = fn(12343).useForumChannelStore;
+const useForumChannelStore = fn(11469).useForumChannelStore;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const createStyles = fn(4829);

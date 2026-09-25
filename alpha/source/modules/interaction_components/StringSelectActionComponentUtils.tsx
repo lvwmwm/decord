@@ -1,12 +1,12 @@
-// Module ID: 8478
-// Function ID: 8479
+// Module ID: 7568
+// Function ID: 7569
 // Name: StringSelectActionComponentUtils
-// Dependencies: [8472, 1978, 2]
+// Dependencies: [7562, 1978, 2]
 // Exports: getInitialStringSelectOptions
 
-// Module 8478 (StringSelectActionComponentUtils)
+// Module 7568 (StringSelectActionComponentUtils)
 import Server from "Server" /* 1978 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8472 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 7562 */;
 
 require = fn;
 const size = fn(2);

@@ -1,14 +1,14 @@
-// Module ID: 14550
-// Function ID: 14551
+// Module ID: 13711
+// Function ID: 13712
 // Name: ModalStepIndicator
-// Dependencies: [19, 17, 21, 4829, 576, 4561, 4526, 5272, 1115, 2124, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4563, 4528, 5273, 1115, 2124, 2]
 // Exports: ModalStepIndicator
 
-// Module 14550 (ModalStepIndicator)
+// Module 13711 (ModalStepIndicator)
 import util from "util" /* 1115 */;
 import _modDef2124 from "module_2124" /* 2124 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
-import spring from "spring" /* 5272 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
+import spring from "spring" /* 5273 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

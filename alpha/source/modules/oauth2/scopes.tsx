@@ -1,12 +1,12 @@
-// Module ID: 9411
-// Function ID: 9412
+// Module ID: 8509
+// Function ID: 8510
 // Name: scopes
-// Dependencies: [1115, 8689, 2]
+// Dependencies: [1115, 7779, 2]
 // Exports: getScopeNames, getSecurityMessage, isSocialLayerUmbrellaScope
 
-// Module 9411 (scopes)
+// Module 8509 (scopes)
 import util from "util" /* 1115 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8689 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 7779 */;
 import size from "module_2" /* 2 */;
 
 let items = [
@@ -277,9 +277,9 @@ export const isSocialLayerUmbrellaScope = function isSocialLayerUmbrellaScope(it
 };
 export const getSecurityMessage = function getSecurityMessage(scopes) {
   if (!scopes.includes(OAuth2Scopes.OAuth2Scopes.DM_CHANNELS_MESSAGES_WRITE)) {
-    if (!scopes.includes(tmp(8689).OAuth2Scopes.SDK_SOCIAL_LAYER)) {
-      if (!scopes.includes(tmp(8689).OAuth2Scopes.MESSAGES_READ)) {
-        if (!scopes.includes(tmp(8689).OAuth2Scopes.DM_CHANNELS_MESSAGES_READ)) {
+    if (!scopes.includes(tmp(7779).OAuth2Scopes.SDK_SOCIAL_LAYER)) {
+      if (!scopes.includes(tmp(7779).OAuth2Scopes.MESSAGES_READ)) {
+        if (!scopes.includes(tmp(7779).OAuth2Scopes.DM_CHANNELS_MESSAGES_READ)) {
           const intl = tmp(1115).intl;
           let formatResult = intl.format(tmp(1115).t["TeL+Ct"], {});
         }

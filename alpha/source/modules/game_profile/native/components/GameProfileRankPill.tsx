@@ -1,14 +1,14 @@
-// Module ID: 9070
-// Function ID: 9071
+// Module ID: 8164
+// Function ID: 8165
 // Name: GameProfileRankPill
-// Dependencies: [19, 17, 21, 4829, 576, 9071, 4825, 1115, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 8165, 4825, 1115, 2]
 // Exports: default
 
-// Module 9070 (GameProfileRankPill)
+// Module 8164 (GameProfileRankPill)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import TrophyIcon from "TrophyIcon" /* 9071 */;
+import TrophyIcon from "TrophyIcon" /* 8165 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

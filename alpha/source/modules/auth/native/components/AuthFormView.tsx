@@ -1,13 +1,13 @@
-// Module ID: 7303
-// Function ID: 7304
+// Module ID: 6386
+// Function ID: 6387
 // Name: AuthFormView
-// Dependencies: [19, 17, 21, 4829, 576, 7275, 7304, 7305, 7306, 7309, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 6358, 6387, 6388, 6389, 6392, 2]
 // Exports: default
 
-// Module 7303 (AuthFormView)
+// Module 6386 (AuthFormView)
 import nativeDefault from "native" /* 576 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7275 */;
-import WideAuthScrollContext from "WideAuthScrollContext" /* 7304 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6358 */;
+import WideAuthScrollContext from "WideAuthScrollContext" /* 6387 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -75,7 +75,7 @@ export default function AuthFormView(arg0) {
     let tmp15 = null;
     if (null != headerText) {
       const obj3 = { children: headerText };
-      tmp15 = timestampProducer(tmp(7305), obj3);
+      tmp15 = timestampProducer(tmp(6388), obj3);
     }
     const items1 = [tmp15, , ];
     let tmp17 = null;
@@ -93,7 +93,7 @@ export default function AuthFormView(arg0) {
     ({ container: arr[0], flex: arr[1] } = tmp4);
     obj.style = items2;
     const obj5 = { backgroundImageSource, backgroundImageCover };
-    const items3 = [timestampProducer(tmp(7306), obj5), timestampProducer(tmp(7309), {}), ];
+    const items3 = [timestampProducer(tmp(6389), obj5), timestampProducer(tmp(6392), {}), ];
     const obj6 = { contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, style: tmp4.flex, contentContainerStyle: null, children: null };
     const items4 = [, , ];
     ({ content: arr3[0], flex: arr3[1] } = tmp4);
@@ -102,7 +102,7 @@ export default function AuthFormView(arg0) {
     let tmp7Result = null;
     if (null != headerText) {
       const obj7 = { children: headerText };
-      tmp7Result = tmp7(tmp(7305), obj7);
+      tmp7Result = tmp7(tmp(6388), obj7);
     }
     const items5 = [tmp7Result, , ];
     let tmp7Result2 = null;

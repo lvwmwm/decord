@@ -1,10 +1,10 @@
-// Module ID: 17625
-// Function ID: 17626
+// Module ID: 16849
+// Function ID: 16850
 // Name: soundboard/SoundboardActionCreators
-// Dependencies: [1074, 4796, 17626, 1980, 1110, 2]
+// Dependencies: [1074, 4796, 16850, 1980, 1110, 2]
 // Exports: openSoundboardSoundPickerActionSheet, showSoundboardSoundPickerActionSheet
 
-// Module 17625 (soundboard/SoundboardActionCreators)
+// Module 16849 (soundboard/SoundboardActionCreators)
 import Constants from "Constants" /* 1074 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
@@ -16,12 +16,12 @@ const result = size.fileFinishedImporting("modules/soundboard/native/SoundboardA
 
 export const openSoundboardSoundPickerActionSheet = function openSoundboardSoundPickerActionSheet(arg0) {
   ({ channel, analyticsSource, initialScrollLocation } = arg0);
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17626, dependencyMap.paths), "SoundboardSoundPickerActionSheet", { channel, analyticsSource, initialScrollLocation });
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16850, dependencyMap.paths), "SoundboardSoundPickerActionSheet", { channel, analyticsSource, initialScrollLocation });
 };
 export const showSoundboardSoundPickerActionSheet = function showSoundboardSoundPickerActionSheet(arg0) {
   ({ channel, analyticsSource } = arg0);
   const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
   ComponentDispatch.dispatch(ComponentActions.TOGGLE_CALL_CONTROL_DRAWER);
   ({ channel: channel2, analyticsSource: analyticsSource2, initialScrollLocation } = { channel, analyticsSource });
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17626, dependencyMap.paths), "SoundboardSoundPickerActionSheet", { channel: channel2, analyticsSource: analyticsSource2, initialScrollLocation });
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16850, dependencyMap.paths), "SoundboardSoundPickerActionSheet", { channel: channel2, analyticsSource: analyticsSource2, initialScrollLocation });
 };

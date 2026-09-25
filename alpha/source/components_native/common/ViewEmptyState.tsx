@@ -1,14 +1,14 @@
-// Module ID: 7386
-// Function ID: 7387
+// Module ID: 6469
+// Function ID: 6470
 // Name: ViewEmptyState
-// Dependencies: [19, 17, 1074, 21, 4829, 5829, 576, 1177, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 5831, 576, 1177, 2]
 // Exports: default
 
-// Module 7386 (ViewEmptyState)
+// Module 6469 (ViewEmptyState)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5829 */;
+import TextStyles from "TextStyles" /* 5831 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);

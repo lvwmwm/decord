@@ -1,10 +1,10 @@
-// Module ID: 9716
-// Function ID: 9717
+// Module ID: 8814
+// Function ID: 8815
 // Name: getApplicationIdsForGame
 // Dependencies: [5056, 2000, 504, 2]
 // Exports: default, useApplicationIdsForGame
 
-// Module 9716 (getApplicationIdsForGame)
+// Module 8814 (getApplicationIdsForGame)
 import ApplicationStore from "ApplicationStore" /* 5056 */;
 import GameStore from "GameStore" /* 2000 */;
 

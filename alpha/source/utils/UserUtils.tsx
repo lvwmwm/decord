@@ -1,13 +1,13 @@
-// Module ID: 4673
-// Function ID: 4674
+// Module ID: 4675
+// Function ID: 4676
 // Name: UserUtils
-// Dependencies: [4674, 1372, 1074, 504, 1115, 2]
+// Dependencies: [4676, 1372, 1074, 504, 1115, 2]
 // Exports: accountAgeInRange, ageEligibleForPremiumUpsell, getFormattedName, getGlobalName, getName, getUserIsStaff, getUserTag, humanizeStatus, isNewUser, useDirectMessageRecipient, useName, useUserTag
 
-// Module 4673 (UserUtils)
+// Module 4675 (UserUtils)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import StreamerModeStore from "StreamerModeStore" /* 4674 */;
+import StreamerModeStore from "StreamerModeStore" /* 4676 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

@@ -1,11 +1,11 @@
 // Module ID: 4273
 // Function ID: 4274
-// Dependencies: [4265, 3914]
+// Dependencies: [4265, 3916]
 // Exports: default
 
 // Module 4273
 import module_4265_mod from "module_4265" /* 4265 */;
-import requiredArgs_mod from "requiredArgs" /* 3914 */;
+import requiredArgs_mod from "requiredArgs" /* 3916 */;
 
 let module_4265 = module_4265_mod;
 if (!module_4265) {
@@ -24,7 +24,7 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isThisQuarter(arg0) {
+export default function isThisMinute(arg0) {
   requiredArgs.default(1, arguments);
   return module_4265.default(Date.now(), arg0);
 };

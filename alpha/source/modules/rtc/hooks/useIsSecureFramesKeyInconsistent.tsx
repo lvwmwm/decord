@@ -1,11 +1,11 @@
-// Module ID: 10066
-// Function ID: 10067
+// Module ID: 9164
+// Function ID: 9165
 // Name: useIsSecureFramesKeyInconsistent
-// Dependencies: [19, 4852, 4868, 504, 10054, 2]
+// Dependencies: [19, 4852, 4868, 504, 9152, 2]
 // Exports: useAlertIfSecureFramesKeyInconsistent, useIsSecureFramesKeyInconsistent
 
-// Module 10066 (useIsSecureFramesKeyInconsistent)
-import SecureFramesUtils from "SecureFramesUtils" /* 10054 */;
+// Module 9164 (useIsSecureFramesKeyInconsistent)
+import SecureFramesUtils from "SecureFramesUtils" /* 9152 */;
 import noop from "module_19" /* 19 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4852 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4868 */;

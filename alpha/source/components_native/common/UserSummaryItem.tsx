@@ -1,10 +1,10 @@
-// Module ID: 10401
-// Function ID: 10402
+// Module ID: 9503
+// Function ID: 9504
 // Name: UserSummaryItem
 // Dependencies: [19, 17, 2107, 21, 4829, 576, 1177, 504, 1397, 4981, 1115, 4825, 2]
 // Exports: default
 
-// Module 10401 (UserSummaryItem)
+// Module 9503 (UserSummaryItem)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2107 */;

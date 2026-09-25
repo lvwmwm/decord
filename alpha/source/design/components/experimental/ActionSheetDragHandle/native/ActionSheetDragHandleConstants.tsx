@@ -1,9 +1,9 @@
-// Module ID: 9265
-// Function ID: 9266
+// Module ID: 8363
+// Function ID: 8364
 // Name: ActionSheetDragHandleConstants
 // Dependencies: [576, 2]
 
-// Module 9265 (ActionSheetDragHandleConstants)
+// Module 8363 (ActionSheetDragHandleConstants)
 import nativeDefault from "native" /* 576 */;
 
 const PX_4 = nativeDefault.space.PX_4;

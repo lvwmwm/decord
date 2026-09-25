@@ -1,11 +1,11 @@
-// Module ID: 9657
-// Function ID: 9658
+// Module ID: 8755
+// Function ID: 8756
 // Name: leaveCurrentEmbeddedActivity
-// Dependencies: [2043, 9658, 2]
+// Dependencies: [2043, 8756, 2]
 // Exports: leaveCurrentEmbeddedActivity
 
-// Module 9657 (leaveCurrentEmbeddedActivity)
-import getEmbeddedActivitiesManagerDefault from "getEmbeddedActivitiesManager" /* 9658 */;
+// Module 8755 (leaveCurrentEmbeddedActivity)
+import getEmbeddedActivitiesManagerDefault from "getEmbeddedActivitiesManager" /* 8756 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
 
 const size = fn(2);

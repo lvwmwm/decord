@@ -1,13 +1,13 @@
-// Module ID: 11948
-// Function ID: 11949
+// Module ID: 11091
+// Function ID: 11092
 // Name: AppChannelPermissionUtils
-// Dependencies: [5056, 1074, 11949, 1086, 4471, 2]
+// Dependencies: [5056, 1074, 11092, 1086, 4473, 2]
 // Exports: getAppChannelBotUserId, getAppChannelBotUserIdFromApplication, isAppChannelFloorPermission, useAppChannelBotUserId
 
-// Module 11948 (AppChannelPermissionUtils)
+// Module 11091 (AppChannelPermissionUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import AppChannelPermissions from "AppChannelPermissions" /* 4471 */;
-import useAppChannelApplication from "useAppChannelApplication" /* 11949 */;
+import AppChannelPermissions from "AppChannelPermissions" /* 4473 */;
+import useAppChannelApplication from "useAppChannelApplication" /* 11092 */;
 import ApplicationStore from "ApplicationStore" /* 5056 */;
 
 require = fn;

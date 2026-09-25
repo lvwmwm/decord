@@ -1,12 +1,12 @@
-// Module ID: 11839
-// Function ID: 11840
+// Module ID: 10708
+// Function ID: 10709
 // Name: AppStoreOverlayContent
-// Dependencies: [5, 4520, 4514, 1115, 11840, 2]
+// Dependencies: [5, 4522, 4516, 1115, 10709, 2]
 // Exports: getAppStoreOverlayContent, getIosAppStoreReviewsUrl, openAppStoreReviews
 
-// Module 11839 (AppStoreOverlayContent)
-import openURL from "openURL" /* 4514 */;
-import LinkingDefault from "Linking" /* 4520 */;
+// Module 10708 (AppStoreOverlayContent)
+import openURL from "openURL" /* 4516 */;
+import LinkingDefault from "Linking" /* 4522 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

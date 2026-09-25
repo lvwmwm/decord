@@ -1,16 +1,16 @@
-// Module ID: 18323
-// Function ID: 18324
+// Module ID: 17554
+// Function ID: 17555
 // Name: GuildRoleSubscriptionBenefitPreview
-// Dependencies: [19, 17, 15554, 21, 4829, 15589, 1177, 10288, 4825, 4478, 15582, 4982, 5327, 1115, 2]
+// Dependencies: [19, 17, 14724, 21, 4829, 14759, 1177, 9385, 4825, 4480, 14752, 4982, 5328, 1115, 2]
 // Exports: GuildRoleSubscriptionBenefitPreview
 
-// Module 18323 (GuildRoleSubscriptionBenefitPreview)
+// Module 17554 (GuildRoleSubscriptionBenefitPreview)
 import native from "native" /* 1177 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4478 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4480 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import _modDef10288 from "module_10288" /* 10288 */;
-import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 15582 */;
-import EmojiIconDefault from "EmojiIcon" /* 15589 */;
+import _modDef9385 from "module_9385" /* 9385 */;
+import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 14752 */;
+import EmojiIconDefault from "EmojiIcon" /* 14759 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -29,7 +29,7 @@ function BaseBenefitRow(isInteractive) {
   items[1] = hasOwnProperty(View, obj3);
   let tmp4Result = true === flag;
   if (tmp4Result) {
-    const obj4 = { source: _modDef10288 };
+    const obj4 = { source: _modDef9385 };
     tmp4Result = hasOwnProperty(native.Icon, obj4);
   }
   items[2] = tmp4Result;
@@ -64,8 +64,8 @@ function ChannelBenefitRow(benefit) {
   const channelWithTemplateFallback = GuildRoleSubscriptionTierTemplatesUtils.useChannelWithTemplateFallback(benefit.ref_id);
   let channelIcon = null;
   if (null != channelWithTemplateFallback) {
-    channelIcon = tmp2(5327).getChannelIcon(channelWithTemplateFallback);
-    const tmp2Result = tmp2(5327);
+    channelIcon = tmp2(5328).getChannelIcon(channelWithTemplateFallback);
+    const tmp2Result = tmp2(5328);
   }
   if (null == channelWithTemplateFallback) {
     const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
@@ -101,7 +101,7 @@ function EmojiBenefitRow(benefit) {
   return timestampProducer(BaseBenefitRow, obj);
 }
 const View = fn(17).View;
-const constants = fn(15554).GuildRoleSubscriptionBenefitTypes;
+const constants = fn(14724).GuildRoleSubscriptionBenefitTypes;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const createStyles = fn(4829);

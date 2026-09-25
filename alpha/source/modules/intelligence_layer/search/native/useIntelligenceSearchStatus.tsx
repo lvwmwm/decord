@@ -1,18 +1,18 @@
-// Module ID: 17204
-// Function ID: 17205
+// Module ID: 16419
+// Function ID: 16420
 // Name: useIntelligenceSearchStatus
-// Dependencies: [12682, 12706, 8209, 12709, 12683, 12718, 504, 12708, 2]
+// Dependencies: [11808, 11832, 7298, 11835, 11809, 11844, 504, 11834, 2]
 // Exports: useIntelligenceSearchStatus
 
-// Module 17204 (useIntelligenceSearchStatus)
-import SearchUtils from "SearchUtils" /* 12683 */;
-import SearchQueryStore from "SearchQueryStore" /* 12682 */;
-import IntelligenceSearchStore from "IntelligenceSearchStore" /* 12706 */;
+// Module 16419 (useIntelligenceSearchStatus)
+import SearchUtils from "SearchUtils" /* 11809 */;
+import SearchQueryStore from "SearchQueryStore" /* 11808 */;
+import IntelligenceSearchStore from "IntelligenceSearchStore" /* 11832 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const SearchTabs = fn(8209).SearchTabs;
+const SearchTabs = fn(7298).SearchTabs;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/useIntelligenceSearchStatus.tsx");
 
@@ -35,13 +35,13 @@ export const useIntelligenceSearchStatus = function useIntelligenceSearchStatus(
       if (isNlpSearchEnabled) {
         let NOT_QUALIFIED2 = IntelligenceSearchStore.getStatus(tmp5, searchTabFetchId);
         if (NOT_QUALIFIED2 == null) {
-          NOT_QUALIFIED2 = tmp2(12708).IntelligenceSearchStatus.NOT_QUALIFIED;
+          NOT_QUALIFIED2 = tmp2(11834).IntelligenceSearchStatus.NOT_QUALIFIED;
         }
         let NOT_QUALIFIED = NOT_QUALIFIED2;
       }
       const obj2 = { status: NOT_QUALIFIED, guildId: tmp5, requestKey: searchTabFetchId };
       return obj2;
     }
-    NOT_QUALIFIED = tmp2(12708).IntelligenceSearchStatus.NOT_QUALIFIED;
+    NOT_QUALIFIED = tmp2(11834).IntelligenceSearchStatus.NOT_QUALIFIED;
   }, items1);
 };

@@ -1,20 +1,20 @@
-// Module ID: 14266
-// Function ID: 14267
+// Module ID: 13427
+// Function ID: 13428
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 2048, 2044, 4464, 1074, 12022, 11210, 21, 4829, 576, 1364, 1115, 14267, 11335, 14268, 14269, 1241, 10290, 4840, 8712, 9504, 12044, 1980, 5197, 14270, 14271, 5936, 8194, 1609, 5929, 11338, 14272, 2]
+// Dependencies: [5, 32, 19, 17, 2048, 2044, 4466, 1074, 11165, 10308, 21, 4829, 576, 1364, 1115, 13428, 10433, 13429, 13430, 1241, 9387, 4840, 7802, 8602, 11189, 1980, 5198, 13431, 13432, 5938, 7283, 1609, 5931, 10436, 13433, 2]
 // Exports: default
 
-// Module 14266 (ShareScreen)
+// Module 13427 (ShareScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import HeaderShared from "HeaderShared" /* 8194 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 14270 */;
-import ShareEmbedDefault from "ShareEmbed" /* 14271 */;
+import HeaderShared from "HeaderShared" /* 7283 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 13431 */;
+import ShareEmbedDefault from "ShareEmbed" /* 13432 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
 
 require = fn;
 function getAttachmentsRestriction(type) {
@@ -36,8 +36,8 @@ const ChannelRecord = fn(2048);
 ({ ChannelRecordBase: closure_7, isGuildChannelType: closure_8 } = ChannelRecord);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_11, Permissions: closure_12, MAX_UPLOAD_COUNT: map1 } = Constants);
-const MAX_DESTINATION_COUNT = fn(12022).MAX_DESTINATION_COUNT;
-const UserRowModes = fn(11210).UserRowModes;
+const MAX_DESTINATION_COUNT = fn(11165).MAX_DESTINATION_COUNT;
+const UserRowModes = fn(10308).UserRowModes;
 const jsxProd = fn(21);
 ({ jsx: closure_16, Fragment: closure_17, jsxs: closure_18 } = jsxProd);
 const createStyles = fn(4829);

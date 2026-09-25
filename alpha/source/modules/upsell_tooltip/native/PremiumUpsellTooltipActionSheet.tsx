@@ -1,17 +1,17 @@
-// Module ID: 11498
-// Function ID: 11499
+// Module ID: 10596
+// Function ID: 10597
 // Name: PremiumUpsellTooltipActionSheet
-// Dependencies: [19, 17, 2041, 21, 4829, 576, 4649, 7483, 1177, 4825, 5273, 4796, 2]
+// Dependencies: [19, 17, 2041, 21, 4829, 576, 4651, 6566, 1177, 4825, 5274, 4796, 2]
 // Exports: default
 
-// Module 11498 (PremiumUpsellTooltipActionSheet)
+// Module 10596 (PremiumUpsellTooltipActionSheet)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4649 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4651 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7483 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6566 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -118,7 +118,7 @@ export default function PremiumUpsellTooltipActionSheet(arg0) {
         },
       size: "lg"
     };
-    tmp2Result2 = tmp2(tmp3(5273).Button, obj10);
+    tmp2Result2 = tmp2(tmp3(5274).Button, obj10);
   }
   items4[1] = tmp2Result2;
   obj8.children = items4;

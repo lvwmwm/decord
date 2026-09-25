@@ -1,15 +1,15 @@
-// Module ID: 12009
-// Function ID: 12010
+// Module ID: 11152
+// Function ID: 11153
 // Name: useChannelFollowerStats
-// Dependencies: [32, 19, 12010, 1091, 504, 11681, 2]
+// Dependencies: [32, 19, 11153, 1091, 504, 10861, 2]
 // Exports: default
 
-// Module 12009 (useChannelFollowerStats)
+// Module 11152 (useChannelFollowerStats)
 import DurationsDefault from "Durations" /* 1091 */;
-import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 11681 */;
+import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 10861 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelFollowerStatsStore from "ChannelFollowerStatsStore" /* 12010 */;
+import ChannelFollowerStatsStore from "ChannelFollowerStatsStore" /* 11153 */;
 
 const require = globalThis.__r;
 

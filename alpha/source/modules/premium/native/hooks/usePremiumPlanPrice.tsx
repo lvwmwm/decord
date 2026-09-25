@@ -1,15 +1,15 @@
-// Module ID: 9559
-// Function ID: 9560
+// Module ID: 8657
+// Function ID: 8658
 // Name: usePremiumPlanPrice
-// Dependencies: [19, 4488, 4489, 7570, 1085, 504, 9560, 9561, 9564, 7573, 1364, 5903, 559, 7587, 7567, 2]
+// Dependencies: [19, 4490, 4491, 6653, 1085, 504, 8658, 8659, 8662, 6656, 1364, 5905, 559, 6670, 6650, 2]
 // Exports: default
 
-// Module 9559 (usePremiumPlanPrice)
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7587 */;
+// Module 8657 (usePremiumPlanPrice)
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6670 */;
 import noop from "module_19" /* 19 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4488 */;
-import SubscriptionStore from "SubscriptionStore" /* 4489 */;
-import IAPStore from "IAPStore" /* 7570 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4490 */;
+import SubscriptionStore from "SubscriptionStore" /* 4491 */;
+import IAPStore from "IAPStore" /* 6653 */;
 
 const require = globalThis.__r;
 

@@ -1,19 +1,19 @@
-// Module ID: 15353
-// Function ID: 15354
+// Module ID: 14519
+// Function ID: 14520
 // Name: BountiesScrollPromptFooter
-// Dependencies: [19, 17, 4821, 5749, 21, 4829, 576, 4830, 4833, 504, 1612, 4561, 4535, 15354, 15355, 10316, 2]
+// Dependencies: [19, 17, 4821, 5751, 21, 4829, 576, 4830, 4833, 504, 1612, 4563, 4537, 14520, 14521, 9413, 2]
 // Exports: default
 
-// Module 15353 (BountiesScrollPromptFooter)
+// Module 14519 (BountiesScrollPromptFooter)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4563 */;
 import timing from "timing" /* 4830 */;
 import timingPresets from "timingPresets" /* 4833 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10316 */;
-import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 15354 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 15355 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9413 */;
+import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 14520 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 14521 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 
@@ -48,7 +48,7 @@ function BountiesScrollPromptFooterContent(zIndex) {
   if (stateFromStores) {
     str = "halt";
   }
-  obj3.children = closure_7(zIndex(4535).BountiesScrollGradientRive, { stateMachine: "State Machine 1", fit: "fill", alignment: "bottom-center", withReducedMotion: str });
+  obj3.children = closure_7(zIndex(4537).BountiesScrollGradientRive, { stateMachine: "State Machine 1", fit: "fill", alignment: "bottom-center", withReducedMotion: str });
   const items5 = [closure_7(ReanimatedRexportDefault.View, obj3), ];
   const obj4 = { style: null, onLayout: onContentLayout, children };
   const items6 = [tmp.content, memo1, opacityStyle];
@@ -58,7 +58,7 @@ function BountiesScrollPromptFooterContent(zIndex) {
   return closure_8(ReanimatedRexportDefault.View, obj2);
 }
 const StyleSheet = fn(17).StyleSheet;
-const QuestsExperimentLocations = fn(5749).QuestsExperimentLocations;
+const QuestsExperimentLocations = fn(5751).QuestsExperimentLocations;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4829);

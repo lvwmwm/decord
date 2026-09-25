@@ -1,17 +1,17 @@
-// Module ID: 12848
-// Function ID: 12849
+// Module ID: 11977
+// Function ID: 11978
 // Name: guildTheme
-// Dependencies: [4717, 4718, 504, 4721, 12849, 4757, 2]
+// Dependencies: [4719, 4720, 504, 4723, 11978, 4757, 2]
 // Exports: shouldShowGuildThemeRollback, useShouldShowGuildThemeRollback
 
-// Module 12848 (guildTheme)
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12849 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4717 */;
+// Module 11977 (guildTheme)
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 11978 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4719 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const PowerupActiveStatusType = fn(4718).PowerupActiveStatusType;
+const PowerupActiveStatusType = fn(4720).PowerupActiveStatusType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/utils/guildTheme.tsx");
 
@@ -34,7 +34,7 @@ export const useShouldShowGuildThemeRollback = function useShouldShowGuildThemeR
   const stateFromStores = require("initialize").useStateFromStores(items, () => GuildPowerupsStore.getStateForGuild(closure_0));
   let tmp4;
   if (stateFromStores != null) {
-    tmp4 = stateFromStores.allPowerups[tmp(undefined, 4721).GUILD_POWERUP_GUILD_THEME_SKU_ID];
+    tmp4 = stateFromStores.allPowerups[tmp(undefined, 4723).GUILD_POWERUP_GUILD_THEME_SKU_ID];
   }
   const obj = require("initialize");
   const tmp5 = usePowerupActiveStatusDefault(guildId, tmp4);

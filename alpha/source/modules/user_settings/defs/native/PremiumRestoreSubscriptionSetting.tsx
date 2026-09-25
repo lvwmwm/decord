@@ -1,26 +1,26 @@
-// Module ID: 15592
-// Function ID: 15593
+// Module ID: 14762
+// Function ID: 14763
 // Name: PremiumRestoreSubscriptionSetting
-// Dependencies: [1372, 21, 7749, 5196, 1115, 15593, 1980, 504, 1364, 11811, 9020, 2]
+// Dependencies: [1372, 21, 6834, 5197, 1115, 14763, 1980, 504, 1364, 10993, 8114, 2]
 
-// Module 15592 (PremiumRestoreSubscriptionSetting)
+// Module 14762 (PremiumRestoreSubscriptionSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5196 */;
-import BillingActionCreatorsDefault from "BillingActionCreators" /* 7749 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5197 */;
+import BillingActionCreatorsDefault from "BillingActionCreators" /* 6834 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const SettingBuilders = fn(11811);
+const SettingBuilders = fn(10993);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.s9h22P);
   },
   parent: null,
-  IconComponent: fn(9020).NitroWheelIcon,
+  IconComponent: fn(8114).NitroWheelIcon,
   onPress: function handleNitroRestoreSettingPress() {
     const result = BillingActionCreatorsDefault.restoreAndApplyPurchases(true);
     result.then((result) => {

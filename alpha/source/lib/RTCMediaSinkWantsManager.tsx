@@ -1,16 +1,16 @@
-// Module ID: 14172
-// Function ID: 14173
+// Module ID: 13333
+// Function ID: 13334
 // Name: RTCMediaSinkWantsManager
-// Dependencies: [32, 502, 1074, 4854, 1091, 5164, 1364, 4887, 4898, 2039, 9779, 11, 12, 558, 4884, 2]
+// Dependencies: [32, 502, 1074, 4854, 1091, 5165, 1364, 4887, 4898, 2039, 8877, 11, 12, 558, 4884, 2]
 
-// Module 14172 (RTCMediaSinkWantsManager)
+// Module 13333 (RTCMediaSinkWantsManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4884 */;
-import WindowVisibilityVideoManager2 from "WindowVisibilityVideoManager" /* 9779 */;
+import WindowVisibilityVideoManager2 from "WindowVisibilityVideoManager" /* 8877 */;
 import _slicedToArray from "module_32" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import TypedEventEmitter from "TypedEventEmitter" /* 4887 */;
@@ -33,7 +33,7 @@ let c7 = 100;
 const DEFAULT_WANTS_DISABLED = { any: 0 };
 let closure_9 = 30 * DurationsDefault.Millis.SECOND;
 let closure_10 = 120 * DurationsDefault.Millis.SECOND;
-const BrowserUtils = fn(5164);
+const BrowserUtils = fn(5165);
 let closure_11 = -1 !== BrowserUtils.getFirefoxVersion();
 let obj3 = { UserSSRCUpdate: "user-ssrc-update", Update: "update" };
 class RTCMediaSinkWantsManager extends tmp2 {
@@ -577,7 +577,7 @@ prototype["reset"] = function reset() {
     obj3 = { any };
   }
   self.latestWants = obj3;
-  const WindowVisibilityVideoManager = tmp3(9779).WindowVisibilityVideoManager;
+  const WindowVisibilityVideoManager = tmp3(8877).WindowVisibilityVideoManager;
   WindowVisibilityVideoManager.off(WindowVisibilityVideoManager2.WindowVisibilityEvent.IncomingVideoEnabledChanged, self.incomingVideoEnabledChanged);
 };
 prototype["setSelectedParticipant"] = function setSelectedParticipant(selectedParticipantId) {

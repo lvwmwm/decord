@@ -1,23 +1,23 @@
-// Module ID: 11370
-// Function ID: 11371
+// Module ID: 10468
+// Function ID: 10469
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8540, 7754, 1074, 1374, 21, 4829, 576, 7314, 11088, 504, 8532, 11092, 7495, 11361, 1241, 11371, 573, 5032, 5196, 11372, 1980, 1364, 11106, 4825, 1115, 5273, 2]
+// Dependencies: [5, 32, 19, 17, 7630, 6839, 1074, 1374, 21, 4829, 576, 6397, 10192, 504, 7622, 10196, 6578, 10459, 1241, 10469, 573, 5032, 5197, 10470, 1980, 1364, 10209, 4825, 1115, 5274, 2]
 // Exports: default
 
-// Module 11370 (CollectiblesShopGiftPurchaseSection)
+// Module 10468 (CollectiblesShopGiftPurchaseSection)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5196 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5197 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8540 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7630 */;
 
 let require = fn;
 const View = fn(17).View;
-const useNativeCheckoutStore = fn(7754).useNativeCheckoutStore;
+const useNativeCheckoutStore = fn(6839).useNativeCheckoutStore;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, MarketingURLs: c10 } = Constants);
 const PremiumConstants = fn(1374);

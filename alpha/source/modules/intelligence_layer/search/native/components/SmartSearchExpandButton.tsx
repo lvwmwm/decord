@@ -1,12 +1,12 @@
-// Module ID: 17266
-// Function ID: 17267
+// Module ID: 16481
+// Function ID: 16482
 // Name: SmartSearchExpandButton
-// Dependencies: [19, 17, 21, 576, 4829, 17265, 13938, 11506, 1115, 3876, 2]
+// Dependencies: [19, 17, 21, 576, 4829, 16480, 13097, 10604, 1115, 3876, 2]
 
-// Module 17266 (SmartSearchExpandButton)
+// Module 16481 (SmartSearchExpandButton)
 import nativeDefault from "native" /* 576 */;
 import _modDef3876 from "module_3876" /* 3876 */;
-import useSearchHostSurface from "useSearchHostSurface" /* 17265 */;
+import useSearchHostSurface from "useSearchHostSurface" /* 16480 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -32,9 +32,9 @@ export default noop.memo((isExpanded) => {
   isExpanded = isExpanded.isExpanded;
   const tmp3 = closure_9(useSearchHostSurface.useSearchHostSurfaceColor());
   if (isExpanded) {
-    let ChevronSmallDownIcon = tmp(13938).ChevronSmallUpIcon;
+    let ChevronSmallDownIcon = tmp(13097).ChevronSmallUpIcon;
   } else {
-    ChevronSmallDownIcon = tmp(11506).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp(10604).ChevronSmallDownIcon;
   }
   const obj2 = { style: tmp3.block, hitSlop: rect, children: null };
   const obj3 = { style: tmp3.pill, hitSlop: rect, accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };

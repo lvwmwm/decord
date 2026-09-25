@@ -1,12 +1,12 @@
-// Module ID: 17727
-// Function ID: 17728
+// Module ID: 16951
+// Function ID: 16952
 // Name: GameTagChiplet
-// Dependencies: [19, 17, 21, 4829, 9026, 9037, 10097, 2]
+// Dependencies: [19, 17, 21, 4829, 8120, 8131, 9194, 2]
 
-// Module 17727 (GameTagChiplet)
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9026 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9037 */;
-import GuildTag from "GuildTag" /* 10097 */;
+// Module 16951 (GameTagChiplet)
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8120 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8131 */;
+import GuildTag from "GuildTag" /* 9194 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

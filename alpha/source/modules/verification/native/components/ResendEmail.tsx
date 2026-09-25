@@ -1,14 +1,14 @@
-// Module ID: 6920
-// Function ID: 6921
+// Module ID: 6001
+// Function ID: 6002
 // Name: ResendEmail
-// Dependencies: [32, 19, 17, 2036, 1372, 1074, 21, 4829, 1484, 504, 38, 6921, 5926, 5997, 4825, 1115, 5273, 6922, 4523, 2]
+// Dependencies: [32, 19, 17, 2036, 1372, 1074, 21, 4829, 1484, 504, 38, 6002, 5928, 6003, 4825, 1115, 5274, 6005, 4525, 2]
 // Exports: default
 
-// Module 6920 (ResendEmail)
+// Module 6001 (ResendEmail)
 import util from "util" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4523 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5926 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6922 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4525 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5928 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2036 */;
@@ -39,9 +39,9 @@ export default function ResendEmail() {
   const items1 = [UserRequiredActionStore];
   const stateFromStores1 = navigation(504).useStateFromStores(items1, () => action.getAction());
   let obj3 = navigation(504);
-  const result = verified(6921).isEmailReverification(stateFromStores1);
+  const result = verified(6002).isEmailReverification(stateFromStores1);
   let tmp16Result = !result;
-  const obj4 = verified(6921);
+  const obj4 = verified(6002);
   [tmp10, dependencyMap] = noop.useState(false);
   _slicedToArray = noop.useRef(verified);
   const items2 = [verified];
@@ -62,7 +62,7 @@ export default function ResendEmail() {
   const callback = noop.useCallback(() => {
     navigation.push(VerificationModalScenes.ENTER_EMAIL);
   }, items3);
-  const items4 = [closure_9(navigation(5997).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
+  const items4 = [closure_9(navigation(6003).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
   const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   let intl = navigation(1115).intl;
   obj6.children = intl.string(navigation(1115).t.fUtddV);
@@ -89,7 +89,7 @@ export default function ResendEmail() {
     obj3.content = intl.string(util.t["84yeoz"]);
     ToastActionCreatorsDefault.open(obj3);
   };
-  obj9.children = closure_9(navigation(5273).Button, obj10);
+  obj9.children = closure_9(navigation(5274).Button, obj10);
   items4[3] = closure_9(View, obj9);
   if (!result) {
     const obj11 = { style: tmp.change, children: null };
@@ -97,7 +97,7 @@ export default function ResendEmail() {
     const intl4 = tmp2(1115).intl;
     obj12.text = intl4.string(tmp2(1115).t.Vm8akB);
     obj12.onPress = callback;
-    obj11.children = tmp16(tmp2(5273).Button, obj12);
+    obj11.children = tmp16(tmp2(5274).Button, obj12);
     tmp16Result = tmp16(tmp15, obj11);
   }
   items4[4] = tmp16Result;

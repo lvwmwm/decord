@@ -1,10 +1,10 @@
-// Module ID: 16939
-// Function ID: 16940
+// Module ID: 16127
+// Function ID: 16128
 // Name: SeparatorDot
 // Dependencies: [19, 17, 21, 4829, 576, 2]
 // Exports: default
 
-// Module 16939 (SeparatorDot)
+// Module 16127 (SeparatorDot)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 10753
-// Function ID: 10754
+// Module ID: 9857
+// Function ID: 9858
 // Name: getStickerDiscoverableGuild
-// Dependencies: [1074, 1271, 7671, 2]
+// Dependencies: [1074, 1271, 6754, 2]
 // Exports: default
 
-// Module 10753 (getStickerDiscoverableGuild)
+// Module 9857 (getStickerDiscoverableGuild)
 import Constants from "Constants" /* 1074 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7671 */;
+import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 6754 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

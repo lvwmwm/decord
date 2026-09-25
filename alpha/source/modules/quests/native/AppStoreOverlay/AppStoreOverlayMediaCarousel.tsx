@@ -1,14 +1,14 @@
-// Module ID: 11847
-// Function ID: 11848
+// Module ID: 10716
+// Function ID: 10717
 // Name: AppStoreOverlayMediaCarousel
-// Dependencies: [32, 19, 17, 4821, 1085, 21, 576, 4829, 11848, 11849, 1115, 5892, 504, 8657, 9074, 8041, 8051, 6985, 2]
+// Dependencies: [32, 19, 17, 4821, 1085, 21, 576, 4829, 10717, 10718, 1115, 5894, 504, 7747, 8168, 7126, 7136, 6068, 2]
 // Exports: default
 
-// Module 11847 (AppStoreOverlayMediaCarousel)
+// Module 10716 (AppStoreOverlayMediaCarousel)
 import nativeDefault from "native" /* 576 */;
-import AnalyticsActions from "AnalyticsActions" /* 8041 */;
-import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 11848 */;
-import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 11849 */;
+import AnalyticsActions from "AnalyticsActions" /* 7126 */;
+import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 10717 */;
+import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 10718 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
@@ -267,10 +267,10 @@ export default function AppStoreOverlayMediaCarousel(media) {
             let HorizontalScrollingDirection = dependencyMap;
             obj.carouselType = AnalyticsActions.AppStoreOverlayCarouselTypes.MEDIA;
             if (num5 > current) {
-              HorizontalScrollingDirection = tmp12(8051).HorizontalScrollingDirection;
+              HorizontalScrollingDirection = tmp12(7136).HorizontalScrollingDirection;
               let LEFT = HorizontalScrollingDirection.RIGHT;
             } else {
-              LEFT = tmp12(8051).HorizontalScrollingDirection.LEFT;
+              LEFT = tmp12(7136).HorizontalScrollingDirection.LEFT;
             }
             obj.scrollingDirection = LEFT;
             obj.carouselPosition = num5;

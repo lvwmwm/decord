@@ -1,10 +1,10 @@
-// Module ID: 12976
-// Function ID: 12977
+// Module ID: 12107
+// Function ID: 12108
 // Name: ApplicationIconAndName
 // Dependencies: [21, 4829, 576, 1177, 4825, 2]
 // Exports: default
 
-// Module 12976 (ApplicationIconAndName)
+// Module 12107 (ApplicationIconAndName)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4825 */;

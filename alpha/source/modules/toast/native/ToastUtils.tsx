@@ -1,16 +1,16 @@
-// Module ID: 4522
-// Function ID: 4523
+// Module ID: 4524
+// Function ID: 4525
 // Name: ToastUtils
-// Dependencies: [1074, 4523, 1115, 4524, 4765, 4767, 4769, 4771, 4773, 4775, 4777, 4779, 1397, 4781, 4783, 4786, 1255, 4788, 4791, 2]
+// Dependencies: [1074, 4525, 1115, 4526, 4765, 4767, 4769, 4771, 4773, 4775, 4777, 4779, 1397, 4781, 4783, 4786, 1255, 4788, 4791, 2]
 // Exports: communityAdminOnly, communityRequirementSatisfied, memberOrRoleAddedToast, memberOrRoleRemovedToast, presentAddedFriendToast, presentCommandCopied, presentCopiedToClipboard, presentEmoji, presentError, presentFailedToast, presentFeedbackSent, presentFriendRequestAcceptedToast, presentFriendRequestIgnoredToast, presentGameFriendRequestAcceptedToast, presentGameFriendRequestIgnoredToast, presentGifSaved, presentGuildMemberBio, presentGuildMemberPronouns, presentGuildRoleSubscriptionTrialTierMonthCost, presentIdCopied, presentImageSaved, presentInviteSent, presentLinkCopied, presentMessageCopied, presentMessageIdCopied, presentNoiseCancellation, presentNoiseCancellationError, presentPostIdCopied, presentTimestamp, presentUserPronouns, presentUsernameCopied, presentVideoSaved, presentVoiceActivityDetectionError, roleCreateFailedToast, roleCreatedToast, roleIdCopied, roleTemplateAppliedToast, showMaxGroupMembers, showSafetySuccess, showTransferOwnershipSuccess, showVerificationSent, showVoiceRecordingFailed, transferOwnershipProtected, unverifiedVoiceGate
 
-// Module 4522 (ToastUtils)
+// Module 4524 (ToastUtils)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import v1 from "v1" /* 1255 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4523 */;
-import FriendsIcon from "FriendsIcon" /* 4524 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4525 */;
+import FriendsIcon from "FriendsIcon" /* 4526 */;
 import UserPlatformIcon from "UserPlatformIcon" /* 4767 */;
 import UserMinusIcon from "UserMinusIcon" /* 4769 */;
 import LinkIcon from "LinkIcon" /* 4771 */;

@@ -1,9 +1,9 @@
-// Module ID: 14918
-// Function ID: 14919
+// Module ID: 14080
+// Function ID: 14081
 // Name: NativeAudioPlayerModule
 // Dependencies: [17, 2]
 
-// Module 14918 (NativeAudioPlayerModule)
+// Module 14080 (NativeAudioPlayerModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

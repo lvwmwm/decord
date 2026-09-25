@@ -1,19 +1,19 @@
-// Module ID: 17072
-// Function ID: 17073
+// Module ID: 16263
+// Function ID: 16264
 // Name: VibegrationsDesignRemarkSheet
-// Dependencies: [32, 19, 17, 13457, 21, 4829, 576, 4796, 17024, 7530, 7482, 7418, 1115, 3714, 5273, 2]
+// Dependencies: [32, 19, 17, 12607, 21, 4829, 576, 4796, 16214, 6613, 6565, 6501, 1115, 3714, 5274, 2]
 // Exports: default
 
-// Module 17072 (VibegrationsDesignRemarkSheet)
+// Module 16263 (VibegrationsDesignRemarkSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 17024 */;
+import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16214 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const sendUserMessage = fn(13457).sendUserMessage;
+const sendUserMessage = fn(12607).sendUserMessage;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const VibegrationsDesignRemarkSheet = "VibegrationsDesignRemarkSheet";

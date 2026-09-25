@@ -1,9 +1,9 @@
-// Module ID: 8200
-// Function ID: 8201
+// Module ID: 7289
+// Function ID: 7290
 // Name: Badge
 // Dependencies: [19, 17, 21, 4829, 576, 2]
 
-// Module 8200 (Badge)
+// Module 7289 (Badge)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 

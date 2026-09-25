@@ -1,7 +1,7 @@
 // Module ID: 4974
 // Function ID: 4975
 // Name: ChannelUtils
-// Dependencies: [2048, 2044, 4462, 4464, 2098, 4853, 1074, 1374, 4469, 1086, 1978, 4975, 4976, 1115, 4673, 4977, 11, 2, 4984]
+// Dependencies: [2048, 2044, 4464, 4466, 2098, 4853, 1074, 1374, 4471, 1086, 1978, 4975, 4976, 1115, 4675, 4977, 11, 2, 4984]
 // Exports: channelTypeString, computeSummarizedVoiceStates, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getChannelPermalink, getChannelThreadPermalink, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild
 
 // Module 4974 (ChannelUtils)
@@ -10,15 +10,15 @@ import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import util from "util" /* 1115 */;
 import PremiumConstants from "PremiumConstants" /* 1374 */;
 import Server from "Server" /* 1978 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4469 */;
-import UserUtilsDefault from "UserUtils" /* 4673 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4471 */;
+import UserUtilsDefault from "UserUtils" /* 4675 */;
 import ChannelListUtils from "ChannelListUtils" /* 4975 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4976 */;
 import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 4984 */;
 import ChannelRecord from "ChannelRecord" /* 2048 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildChannelStore from "GuildChannelStore" /* 4462 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
+import GuildChannelStore from "GuildChannelStore" /* 4464 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4853 */;
 import Constants from "Constants" /* 1074 */;

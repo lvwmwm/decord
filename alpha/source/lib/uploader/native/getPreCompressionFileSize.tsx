@@ -1,11 +1,11 @@
-// Module ID: 8170
-// Function ID: 8171
+// Module ID: 7255
+// Function ID: 7256
 // Name: getPreCompressionFileSize
-// Dependencies: [5, 5442, 2]
+// Dependencies: [5, 5443, 2]
 // Exports: getPreCompressionFileSize
 
-// Module 8170 (getPreCompressionFileSize)
-import utils_UploadUtils from "utils/UploadUtils" /* 5442 */;
+// Module 7255 (getPreCompressionFileSize)
+import utils_UploadUtils from "utils/UploadUtils" /* 5443 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

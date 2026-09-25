@@ -1,12 +1,12 @@
 // Module ID: 4769
 // Function ID: 4770
 // Name: UserMinusIcon
-// Dependencies: [19, 21, 576, 4525, 4770, 2]
+// Dependencies: [19, 21, 576, 4527, 4770, 2]
 // Exports: UserMinusIcon
 
 // Module 4769 (UserMinusIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
 import _mod4770 from "module_4770" /* 4770 */;
 import noop from "module_19" /* 19 */;
 

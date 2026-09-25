@@ -1,13 +1,13 @@
-// Module ID: 8392
-// Function ID: 8393
+// Module ID: 7481
+// Function ID: 7482
 // Name: ChannelLinkedToLobbySystemMessage
-// Dependencies: [5056, 1074, 8301, 8308, 8310, 2110, 1115, 8312, 2]
+// Dependencies: [5056, 1074, 7390, 7397, 7399, 2110, 1115, 7401, 2]
 // Exports: createChannelLinkedToLobbySystemMessage
 
-// Module 8392 (ChannelLinkedToLobbySystemMessage)
+// Module 7481 (ChannelLinkedToLobbySystemMessage)
 import util from "util" /* 1115 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8301 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8308 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 7390 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7397 */;
 import ApplicationStore from "ApplicationStore" /* 5056 */;
 
 require = fn;
@@ -30,7 +30,7 @@ export const createChannelLinkedToLobbySystemMessage = function createChannelLin
     const messageAuthorWithProcessedColor = useAuthorWithProcessedColor.getMessageAuthorWithProcessedColor(message);
     const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: null, applicationName: null, applicationNameOnClick: null, urlOnClick: null };
     const obj3 = { message, author: messageAuthorWithProcessedColor, roleStyle };
-    obj2.usernameOnClick = tmp(8310)(obj3);
+    obj2.usernameOnClick = tmp(7399)(obj3);
     obj2.applicationName = application.name;
     const obj4 = { linkColor: tmp3.defaultUsernameColor, medium: true };
     obj2.applicationNameOnClick = obj4;
@@ -41,7 +41,7 @@ export const createChannelLinkedToLobbySystemMessage = function createChannelLin
     const obj6 = { content: null };
     const intl = util.intl;
     obj6.content = intl.formatToParts(util.t.gZfhOw, obj2);
-    const merged = Object.assign(tmp(8312)(message));
+    const merged = Object.assign(tmp(7401)(message));
     return obj6;
   }
 };

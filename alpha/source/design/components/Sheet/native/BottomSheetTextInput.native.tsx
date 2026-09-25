@@ -1,13 +1,13 @@
-// Module ID: 9928
-// Function ID: 9929
+// Module ID: 9026
+// Function ID: 9027
 // Name: BottomSheetTextInput
-// Dependencies: [19, 21, 6956, 6954, 9929, 2]
+// Dependencies: [19, 21, 6039, 6037, 9027, 2]
 // Exports: BottomSheetTextInput
 
-// Module 9928 (BottomSheetTextInput)
-import NativeTextInput from "NativeTextInput" /* 6954 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6956 */;
-import TextInput_TextInputDefault from "TextInput/TextInput" /* 9929 */;
+// Module 9026 (BottomSheetTextInput)
+import NativeTextInput from "NativeTextInput" /* 6037 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6039 */;
+import TextInput_TextInputDefault from "TextInput/TextInput" /* 9027 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,13 +1,13 @@
-// Module ID: 8199
-// Function ID: 8200
+// Module ID: 7288
+// Function ID: 7289
 // Name: MaskedBadge
-// Dependencies: [19, 21, 4829, 576, 1177, 8200, 2]
+// Dependencies: [19, 21, 4829, 576, 1177, 7289, 2]
 // Exports: default
 
-// Module 8199 (MaskedBadge)
+// Module 7288 (MaskedBadge)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import BadgeDefault from "Badge" /* 8200 */;
+import BadgeDefault from "Badge" /* 7289 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

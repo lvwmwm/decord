@@ -1,12 +1,12 @@
-// Module ID: 16752
-// Function ID: 16753
+// Module ID: 15936
+// Function ID: 15937
 // Name: TypingSubtitle
-// Dependencies: [19, 17, 21, 16751, 5327, 5386, 4825, 2]
+// Dependencies: [19, 17, 21, 15935, 5328, 5387, 4825, 2]
 // Exports: default
 
-// Module 16752 (TypingSubtitle)
+// Module 15936 (TypingSubtitle)
 import Text_Text from "Text/Text" /* 4825 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 16751 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 15935 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,11 +22,11 @@ export default function TypingSubtitle(arg0) {
   const subtitleStyles = useSubtitleStyles.useSubtitleStyles();
   let channelIconComponentWithGuild;
   if (null != channel) {
-    channelIconComponentWithGuild = tmp(5327).getChannelIconComponentWithGuild(channel, guild);
-    const tmpResult = tmp(5327);
+    channelIconComponentWithGuild = tmp(5328).getChannelIconComponentWithGuild(channel, guild);
+    const tmpResult = tmp(5328);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(5386).TextIcon;
+    channelIconComponentWithGuild = tmp(5387).TextIcon;
   }
   const obj2 = { style: subtitleStyles.subtitleRow, children: null };
   let tmp7 = null;

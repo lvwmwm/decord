@@ -1,14 +1,14 @@
-// Module ID: 16120
-// Function ID: 16121
+// Module ID: 15295
+// Function ID: 15296
 // Name: ShopSkipCategoriesFilter
-// Dependencies: [19, 17, 7872, 21, 4829, 576, 504, 5271, 4825, 7871, 2]
+// Dependencies: [19, 17, 6957, 21, 4829, 576, 504, 5272, 4825, 6956, 2]
 // Exports: ShopSkipCategoriesFilter
 
-// Module 16120 (ShopSkipCategoriesFilter)
+// Module 15295 (ShopSkipCategoriesFilter)
 import nativeDefault from "native" /* 576 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7871 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6956 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7872 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6957 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -89,6 +89,6 @@ export const ShopSkipCategoriesFilter = function ShopSkipCategoriesFilter() {
   obj4.children = items3;
   items1[1] = closure_6(closure_2, obj4);
   obj7.children = items1;
-  obj2.children = closure_6(stateFromStores(5271).Stack, obj7);
+  obj2.children = closure_6(stateFromStores(5272).Stack, obj7);
   return closure_5(closure_2, obj2);
 };

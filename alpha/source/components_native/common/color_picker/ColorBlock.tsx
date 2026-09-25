@@ -1,12 +1,12 @@
-// Module ID: 14968
-// Function ID: 14969
+// Module ID: 14130
+// Function ID: 14131
 // Name: ColorBlock
-// Dependencies: [19, 17, 21, 4829, 576, 1092, 5427, 4678, 1177, 11902, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 1092, 5428, 4680, 1177, 11045, 2]
 
-// Module 14968 (ColorBlock)
+// Module 14130 (ColorBlock)
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import _modDef11902 from "module_11902" /* 11902 */;
+import _modDef11045 from "module_11045" /* 11045 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -31,7 +31,7 @@ export default noop.memo((color) => {
   const v = utils_ColorUtils.int2hsv(color).v;
   if (null != onSelect) {
     const obj2 = { accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, onPress: null, style: null, children: null };
-    const tmp2Result = tmp2(4678);
+    const tmp2Result = tmp2(4680);
     obj2.accessibilityLabel = tmp2Result.hexToColorName(tmp2(1092).int2hex(color), true);
     const obj3 = { selected };
     obj2.accessibilityState = obj3;
@@ -46,9 +46,9 @@ export default noop.memo((color) => {
     obj2.style = items;
     if (!selected) {
       obj2.children = null;
-      let tmp10Result1 = tmp6(tmp2(5427).PressableOpacity, obj2);
+      let tmp10Result1 = tmp6(tmp2(5428).PressableOpacity, obj2);
     } else {
-      const obj5 = { source: _modDef11902, color: null };
+      const obj5 = { source: _modDef11045, color: null };
       if (v < 0.5) {
         unsafe_rawColors = tmp8(576).unsafe_rawColors;
         let BLACK2 = unsafe_rawColors.WHITE;
@@ -69,7 +69,7 @@ export default noop.memo((color) => {
       obj6.children = null;
       tmp10Result1 = tmp10(tmp11, obj6);
     } else {
-      const obj8 = { source: _modDef11902, color: null };
+      const obj8 = { source: _modDef11045, color: null };
       if (v < 0.5) {
         let BLACK = tmp3(576).unsafe_rawColors.WHITE;
       } else {

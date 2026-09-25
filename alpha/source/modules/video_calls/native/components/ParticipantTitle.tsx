@@ -1,13 +1,13 @@
-// Module ID: 10413
-// Function ID: 10414
+// Module ID: 9515
+// Function ID: 9516
 // Name: ParticipantTitle
-// Dependencies: [19, 21, 4829, 576, 1177, 10395, 2]
+// Dependencies: [19, 21, 4829, 576, 1177, 9497, 2]
 // Exports: default
 
-// Module 10413 (ParticipantTitle)
+// Module 9515 (ParticipantTitle)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import getParticipantTitleDefault from "getParticipantTitle" /* 10395 */;
+import getParticipantTitleDefault from "getParticipantTitle" /* 9497 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

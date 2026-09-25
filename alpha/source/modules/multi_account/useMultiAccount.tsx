@@ -1,18 +1,18 @@
-// Module ID: 16368
-// Function ID: 16369
+// Module ID: 15548
+// Function ID: 15549
 // Name: useMultiAccount
-// Dependencies: [19, 1372, 12762, 504, 573, 12766, 2]
+// Dependencies: [19, 1372, 11888, 504, 573, 11892, 2]
 // Exports: useMultiAccountUsers
 
-// Module 16368 (useMultiAccount)
+// Module 15548 (useMultiAccount)
 import initialize from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import MultiAccountStore from "MultiAccountStore" /* 12762 */;
+import MultiAccountStore from "MultiAccountStore" /* 11888 */;
 
 require = fn;
-const MultiAccountTokenStatus = fn(12762).MultiAccountTokenStatus;
+const MultiAccountTokenStatus = fn(11888).MultiAccountTokenStatus;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/multi_account/useMultiAccount.tsx");
 

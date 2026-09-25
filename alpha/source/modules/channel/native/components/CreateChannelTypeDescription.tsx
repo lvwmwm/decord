@@ -1,16 +1,16 @@
-// Module ID: 9918
-// Function ID: 9919
+// Module ID: 9016
+// Function ID: 9017
 // Name: CreateChannelTypeDescription
-// Dependencies: [19, 17, 9919, 1074, 21, 9920, 5856, 4825, 1115, 2]
+// Dependencies: [19, 17, 9017, 1074, 21, 9018, 5858, 4825, 1115, 2]
 // Exports: default
 
-// Module 9918 (CreateChannelTypeDescription)
-import useGuildProfile from "useGuildProfile" /* 9920 */;
+// Module 9016 (CreateChannelTypeDescription)
+import useGuildProfile from "useGuildProfile" /* 9018 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const GuildProfileFetchStatus = fn(9919).GuildProfileFetchStatus;
+const GuildProfileFetchStatus = fn(9017).GuildProfileFetchStatus;
 const ChannelTypes = fn(1074).ChannelTypes;
 const jsx = fn(21).jsx;
 const size = fn(2);
@@ -23,7 +23,7 @@ export default function CreateChannelTypeDescription(guildId) {
   ({ guildProfile, fetchGuildProfile } = guildProfile1);
   let hasItem = null != guildProfile;
   if (hasItem) {
-    const VISIBLE = tmp(5856).GuildProfileVisibilitySets.VISIBLE;
+    const VISIBLE = tmp(5858).GuildProfileVisibilitySets.VISIBLE;
     hasItem = VISIBLE.has(guildProfile.visibility);
   }
   let tmp6 = !tmp5;

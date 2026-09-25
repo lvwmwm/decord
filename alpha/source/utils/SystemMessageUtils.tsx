@@ -1,27 +1,27 @@
-// Module ID: 8334
-// Function ID: 8335
+// Module ID: 7423
+// Function ID: 7424
 // Name: SystemMessageUtils
-// Dependencies: [32, 4475, 502, 2044, 2066, 4474, 1372, 1074, 1115, 11, 8335, 8339, 4981, 4982, 8340, 8342, 5075, 5051, 8343, 8344, 7846, 2]
+// Dependencies: [32, 4477, 502, 2044, 2066, 4476, 1372, 1074, 1115, 11, 7424, 7428, 4981, 4982, 7429, 7431, 5076, 5051, 7432, 7433, 6931, 2]
 
-// Module 8334 (SystemMessageUtils)
+// Module 7423 (SystemMessageUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import util from "util" /* 1115 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4981 */;
 import useChannelName from "useChannelName" /* 4982 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5051 */;
-import useMessageAuthor from "useMessageAuthor" /* 5075 */;
-import MarkupParser from "MarkupParser" /* 8335 */;
-import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 8339 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8340 */;
-import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 8342 */;
-import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 8343 */;
-import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 8344 */;
+import useMessageAuthor from "useMessageAuthor" /* 5076 */;
+import MarkupParser from "MarkupParser" /* 7424 */;
+import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 7428 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 7429 */;
+import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 7431 */;
+import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 7432 */;
+import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 7433 */;
 import _slicedToArray from "module_32" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4475 */;
+import MessageRecord from "MessageRecord" /* 4477 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -217,18 +217,18 @@ export default {
                       if (AutomodNotificationEmbedTypeKeys.AutomodNotificationEmbedTypeKeys.ACTIVITY_ALERTS_ENABLED === value) {
                         const intl5 = tmp34(1115).intl;
                         const obj33 = { guildName: guild.name };
-                        astToStringResult6 = tmp34(8335).astToString(intl5.formatToParts(tmp34(1115).t.wt3ZUM, obj33));
-                        const tmp34Result = tmp34(8335);
-                      } else if (tmp34(8339).AutomodNotificationEmbedTypeKeys.INTERACTION_BLOCKED === value) {
+                        astToStringResult6 = tmp34(7424).astToString(intl5.formatToParts(tmp34(1115).t.wt3ZUM, obj33));
+                        const tmp34Result = tmp34(7424);
+                      } else if (tmp34(7428).AutomodNotificationEmbedTypeKeys.INTERACTION_BLOCKED === value) {
                         const intl4 = tmp34(1115).intl;
                         const obj36 = { guildName: guild.name };
-                        astToStringResult6 = tmp34(8335).astToString(intl4.formatToParts(tmp34(1115).t.AkqI0g, obj36));
-                        const tmp34Result3 = tmp34(8335);
+                        astToStringResult6 = tmp34(7424).astToString(intl4.formatToParts(tmp34(1115).t.AkqI0g, obj36));
+                        const tmp34Result3 = tmp34(7424);
                       } else {
                         const intl3 = tmp34(1115).intl;
                         const obj37 = { guildName: guild.name };
-                        astToStringResult6 = tmp34(8335).astToString(intl3.formatToParts(tmp34(1115).t["a+lJKl"], obj37));
-                        const tmp34Result4 = tmp34(8335);
+                        astToStringResult6 = tmp34(7424).astToString(intl3.formatToParts(tmp34(1115).t["a+lJKl"], obj37));
+                        const tmp34Result4 = tmp34(7424);
                       }
                     }
                   }

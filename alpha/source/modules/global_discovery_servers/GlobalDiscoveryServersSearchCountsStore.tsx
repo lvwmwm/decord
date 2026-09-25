@@ -1,12 +1,12 @@
-// Module ID: 14070
-// Function ID: 14071
+// Module ID: 13231
+// Function ID: 13232
 // Name: GlobalDiscoveryServersSearchCountsStore
-// Dependencies: [4729, 504, 573, 2]
+// Dependencies: [4731, 504, 573, 2]
 
-// Module 14070 (GlobalDiscoveryServersSearchCountsStore)
+// Module 13231 (GlobalDiscoveryServersSearchCountsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4729 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4731 */;
 
 require = fn;
 const map = new Map();

@@ -1,22 +1,22 @@
-// Module ID: 18043
-// Function ID: 18044
+// Module ID: 17271
+// Function ID: 17272
 // Name: GuildSettingsAutoModeration
-// Dependencies: [32, 19, 18044, 18046, 1074, 21, 4829, 576, 18048, 1115, 1484, 18051, 18059, 8951, 5271, 4825, 2110, 5882, 5992, 7373, 2]
+// Dependencies: [32, 19, 17272, 17274, 1074, 21, 4829, 576, 17276, 1115, 1484, 17279, 17287, 8045, 5272, 4825, 2110, 5884, 5994, 6456, 2]
 // Exports: default
 
-// Module 18043 (GuildSettingsAutoModeration)
+// Module 17271 (GuildSettingsAutoModeration)
 import nativeDefault from "native" /* 576 */;
-import TableRowGroup from "TableRowGroup" /* 5992 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 18048 */;
+import TableRowGroup from "TableRowGroup" /* 5994 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17276 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const AutomodStore = fn(18044);
+const AutomodStore = fn(17272);
 ({ useAutomodRulesList: closure_4, useSyncAutomodRulesEffect: hasOwnProperty } = AutomodStore);
-let closure_6 = fn(18046).useAutomodEditingRuleState;
+let closure_6 = fn(17274).useAutomodEditingRuleState;
 const Constants = fn(1074);
 ({ GuildSettingsSections: closure_7, HelpdeskArticles: closure_8 } = Constants);
 const jsxProd = fn(21);
@@ -140,7 +140,7 @@ export default function GuildSettingsAutoModeration(contentContainerStyle) {
         if (AutomodTriggerConfigs.AutomodTriggerCategory.MEMBERS === tmp) {
           const intl2 = tmp6(1115).intl;
           let stringResult = intl2.string(tmp6(1115).t.sx4E5v);
-        } else if (tmp6(18048).AutomodTriggerCategory.CONTENT === tmp) {
+        } else if (tmp6(17276).AutomodTriggerCategory.CONTENT === tmp) {
           const intl = tmp6(1115).intl;
           stringResult = intl.string(tmp6(1115).t.fphZb0);
         }

@@ -1,10 +1,10 @@
-// Module ID: 13659
-// Function ID: 13660
+// Module ID: 12813
+// Function ID: 12814
 // Name: useAckVibegrationsAppChannelChat
 // Dependencies: [19, 5049, 4844, 1979, 1074, 504, 573, 2]
 // Exports: default
 
-// Module 13659 (useAckVibegrationsAppChannelChat)
+// Module 12813 (useAckVibegrationsAppChannelChat)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import noop from "module_19" /* 19 */;
 import MessageStore from "MessageStore" /* 5049 */;

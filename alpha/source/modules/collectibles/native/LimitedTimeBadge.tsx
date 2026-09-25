@@ -1,14 +1,14 @@
-// Module ID: 9195
-// Function ID: 9196
+// Module ID: 8289
+// Function ID: 8290
 // Name: LimitedTimeBadge
-// Dependencies: [19, 17, 2111, 1182, 21, 4829, 576, 1115, 504, 4680, 7769, 4825, 2]
+// Dependencies: [19, 17, 2111, 1182, 21, 4829, 576, 1115, 504, 4682, 6854, 4825, 2]
 // Exports: default
 
-// Module 9195 (LimitedTimeBadge)
+// Module 8289 (LimitedTimeBadge)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import shared from "shared" /* 4680 */;
-import useCountdownDefault from "useCountdown" /* 7769 */;
+import shared from "shared" /* 4682 */;
+import useCountdownDefault from "useCountdown" /* 6854 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2111 */;
 import ThemeStore from "ThemeStore" /* 1182 */;

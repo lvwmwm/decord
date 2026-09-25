@@ -1,16 +1,9 @@
 // Module ID: 14702
 // Function ID: 14703
-// Dependencies: [14683, 14703]
+// Dependencies: [1121]
 
 // Module 14702
-import _mod14683 from "module_14683" /* 14683 */;
-import _mod14703 from "module_14703" /* 14703 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default (arg0, arg1) => {
-  let tmp4;
-  if (!_mod14683(arg0[arg1])) {
-    tmp4 = _mod14703(tmp);
-  }
-  return tmp4;
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/quests/native/images", width: 48, height: 45, scales: [1, 2, 3], hash: "c5d12ec01d5a82b43884ceb5bc673c98", name: "wreath_dark", type: "png" });

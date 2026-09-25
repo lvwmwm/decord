@@ -1,15 +1,15 @@
-// Module ID: 13359
-// Function ID: 13360
+// Module ID: 12509
+// Function ID: 12510
 // Name: MediaModalOverlayFooterAction
-// Dependencies: [19, 17, 21, 4829, 576, 7456, 1364, 5261, 13352, 5273, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 6539, 1364, 5262, 12502, 5274, 2]
 // Exports: MediaModalOverlayFooterAction
 
-// Module 13359 (MediaModalOverlayFooterAction)
+// Module 12509 (MediaModalOverlayFooterAction)
 import nativeDefault from "native" /* 576 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5261 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7456 */;
-import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 13352 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5262 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6539 */;
+import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 12502 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

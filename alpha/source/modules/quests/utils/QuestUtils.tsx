@@ -1,21 +1,21 @@
-// Module ID: 8045
-// Function ID: 8046
+// Module ID: 7130
+// Function ID: 7131
 // Name: utils/QuestUtils
-// Dependencies: [32, 4846, 2066, 4464, 4848, 8046, 5749, 8047, 8048, 8049, 8050, 8051, 2]
+// Dependencies: [32, 4846, 2066, 4466, 4848, 7131, 5751, 7132, 7133, 7134, 7135, 7136, 2]
 // Exports: canLaunchActivity, filterQuestsForSocialEntrypoints, getQuestType, isPlayAnyActivityQuest, isQuestFeaturedByHero, isShareableQuest, isStreamingAndCanWatch, setQuestHomeUtmContext, shouldShowBountiesGivenFilters
 
-// Module 8045 (utils/QuestUtils)
-import QuestTaskUtils from "QuestTaskUtils" /* 8047 */;
-import QuestSharePolicy from "QuestSharePolicy" /* 8048 */;
-import StreamPermissionUtils from "StreamPermissionUtils" /* 8049 */;
-import QuestType2 from "QuestType" /* 8050 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8051 */;
+// Module 7130 (utils/QuestUtils)
+import QuestTaskUtils from "QuestTaskUtils" /* 7132 */;
+import QuestSharePolicy from "QuestSharePolicy" /* 7133 */;
+import StreamPermissionUtils from "StreamPermissionUtils" /* 7134 */;
+import QuestType2 from "QuestType" /* 7135 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7136 */;
 import _slicedToArray from "module_32" /* 32 */;
 import GameConsoleStore from "GameConsoleStore" /* 4846 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
 import VoiceStateStore from "VoiceStateStore" /* 4848 */;
-import QuestUtmStore from "QuestUtmStore" /* 8046 */;
+import QuestUtmStore from "QuestUtmStore" /* 7131 */;
 
 require = fn;
 function isSponsoredPlayQuest(quest) {
@@ -33,7 +33,7 @@ function isSponsoredPlayQuest(quest) {
 function hasVariant(nextResult, NON_GAMING_PLAY_QUEST) {
   return new Set(nextResult.config.features).has(NON_GAMING_PLAY_QUEST);
 }
-const QuestConstants = fn(5749);
+const QuestConstants = fn(5751);
 ({ DISCORD_APPLICATION_ID: closure_8, QuestVariants: closure_9, RewardFilterTypes: c10 } = QuestConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/utils/QuestUtils.tsx");

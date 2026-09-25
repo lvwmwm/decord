@@ -1,15 +1,15 @@
-// Module ID: 5726
-// Function ID: 5727
+// Module ID: 5728
+// Function ID: 5729
 // Name: StageChannelRoleStore
-// Dependencies: [2044, 2107, 2101, 2066, 1372, 4848, 4976, 4469, 2052, 12, 504, 5727, 573, 2]
+// Dependencies: [2044, 2107, 2101, 2066, 1372, 4848, 4976, 4471, 2052, 12, 504, 5729, 573, 2]
 
-// Module 5726 (StageChannelRoleStore)
+// Module 5728 (StageChannelRoleStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4469 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4471 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4976 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5727 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5729 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildMemberStore from "GuildMemberStore" /* 2107 */;
 import GuildRoleStore from "GuildRoleStore" /* 2101 */;

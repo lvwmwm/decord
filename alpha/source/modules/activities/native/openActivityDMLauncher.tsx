@@ -1,10 +1,10 @@
-// Module ID: 14347
-// Function ID: 14348
+// Module ID: 13508
+// Function ID: 13509
 // Name: openActivityDMLauncher
-// Dependencies: [5, 1483, 7496, 4842, 13328, 11859, 7515, 7853, 4695, 1610, 2]
+// Dependencies: [5, 1483, 6579, 4842, 12478, 10728, 6598, 6938, 4697, 1610, 2]
 // Exports: default
 
-// Module 14347 (openActivityDMLauncher)
+// Module 13508 (openActivityDMLauncher)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;

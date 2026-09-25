@@ -1,13 +1,13 @@
-// Module ID: 14162
-// Function ID: 14163
+// Module ID: 13323
+// Function ID: 13324
 // Name: CallStateHooks
-// Dependencies: [4845, 502, 5583, 4852, 1074, 4850, 504, 9853, 2]
+// Dependencies: [4845, 502, 5585, 4852, 1074, 4850, 504, 8951, 2]
 // Exports: default
 
-// Module 14162 (CallStateHooks)
+// Module 13323 (CallStateHooks)
 import ChannelRTCStore from "ChannelRTCStore" /* 4845 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5583 */;
+import CallStore from "CallStore" /* 5585 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4852 */;
 
 const require = globalThis.__r;
@@ -64,7 +64,7 @@ export default function _default() {
     }
     return tmp;
   });
-  const tmp3 = id(9853)();
+  const tmp3 = id(8951)();
   dependencyMap = tmp3;
   obj2 = require("initialize");
   const items2 = [RTCConnectionStore];

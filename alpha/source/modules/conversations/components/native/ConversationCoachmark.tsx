@@ -1,10 +1,10 @@
-// Module ID: 13663
-// Function ID: 13664
+// Module ID: 12817
+// Function ID: 12818
 // Name: ConversationCoachmark
-// Dependencies: [32, 19, 17, 2041, 21, 2028, 4829, 576, 4825, 1115, 7718, 11480, 2]
+// Dependencies: [32, 19, 17, 2041, 21, 2028, 4829, 576, 4825, 1115, 6801, 10578, 2]
 // Exports: ConversationCoachmark
 
-// Module 13663 (ConversationCoachmark)
+// Module 12817 (ConversationCoachmark)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
@@ -38,7 +38,7 @@ export const ConversationCoachmark = function ConversationCoachmark(arg0) {
   ({ children, isLast } = arg0);
   const ref = noop.useRef(null);
   const tmp = closure_9();
-  const tmp3 = _slicedToArray(first(7718).useSelectedDismissibleContent(items), 2);
+  const tmp3 = _slicedToArray(first(6801).useSelectedDismissibleContent(items), 2);
   first = tmp3[0];
   dependencyMap = tmp5;
   items = [tmp3[1], first];
@@ -57,8 +57,8 @@ export const ConversationCoachmark = function ConversationCoachmark(arg0) {
     };
     return obj;
   }, items);
-  let obj = first(7718);
-  const coachmark = first(11480).useCoachmark(ref, memo);
+  let obj = first(6801);
+  const coachmark = first(10578).useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   let coachmarkWrapper;
   const callback = noop.useCallback(() => {
@@ -68,7 +68,7 @@ export const ConversationCoachmark = function ConversationCoachmark(arg0) {
     coachmarkWrapper = tmp.coachmarkWrapper;
   }
   const obj3 = { style: coachmarkWrapper, children: null };
-  const obj2 = first(11480);
+  const obj2 = first(10578);
   obj3.children = <View ref={ref}>{children(callback)}</View>;
   return <View style={coachmarkWrapper}>{null}</View>;
 };

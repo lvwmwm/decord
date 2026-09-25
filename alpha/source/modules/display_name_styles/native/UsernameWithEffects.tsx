@@ -1,13 +1,13 @@
-// Module ID: 11248
-// Function ID: 11249
+// Module ID: 10346
+// Function ID: 10347
 // Name: UsernameWithEffects
-// Dependencies: [19, 17, 1390, 21, 1391, 4829, 576, 1365, 11249, 5076, 10081, 1389, 5077, 10080, 4526, 11250, 4825, 4835, 4529, 11253, 1370, 2]
+// Dependencies: [19, 17, 1390, 21, 1391, 4829, 576, 1365, 10347, 5077, 9178, 1389, 5078, 9177, 4528, 10348, 4825, 4835, 4531, 10351, 1370, 2]
 
-// Module 11248 (UsernameWithEffects)
+// Module 10346 (UsernameWithEffects)
 import nativeDefault from "native" /* 576 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1391 */;
-import getNodeText from "getNodeText" /* 4529 */;
+import getNodeText from "getNodeText" /* 4531 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -105,7 +105,7 @@ export default noop.memo((userName) => {
   let STATIC = userName.effectDisplayType;
   ({ userId, guildId } = userName);
   if (STATIC === undefined) {
-    STATIC = userName(11249).EffectDisplayType.STATIC;
+    STATIC = userName(10347).EffectDisplayType.STATIC;
   }
   ({ defaultColor, containerStyle, ignoreDisabledStylesSetting, pendingDisplayNameStyles } = userName);
   if (ignoreDisabledStylesSetting === undefined) {
@@ -113,17 +113,17 @@ export default noop.memo((userName) => {
   }
   const merged = Object.assign(userName, Object.assign({ userId: 0, guildId: 0, userName: 0, effectDisplayType: 0, pendingDisplayNameStyles: 0, defaultColor: 0, containerStyle: 0, ignoreDisabledStylesSetting: 0 }));
   let num2;
-  const tmp6 = num2(5076)({ userId, guildId, pendingDisplayNameStyles, ignoreDisabledStylesSetting });
-  const isDisplayNameStylesFlywheelViewersEnabled = userName(10081).useIsDisplayNameStylesFlywheelViewersEnabled("UsernameWithEffects");
-  const obj = userName(10081);
+  const tmp6 = num2(5077)({ userId, guildId, pendingDisplayNameStyles, ignoreDisabledStylesSetting });
+  const isDisplayNameStylesFlywheelViewersEnabled = userName(9178).useIsDisplayNameStylesFlywheelViewersEnabled("UsernameWithEffects");
+  const obj = userName(9178);
   const result = userName(1389).applyFlywheelViewingFallback(tmp6, isDisplayNameStylesFlywheelViewersEnabled);
   const obj2 = userName(1389);
-  const displayNameStylesEnabled = userName(5077).useDisplayNameStylesEnabled({ location: "UsernameWithEffects" });
-  const obj3 = userName(5077);
-  const displayNameStylesFont = userName(10080).useDisplayNameStylesFont({ displayNameStyles: result, ignoreDisabledStylesSetting });
+  const displayNameStylesEnabled = userName(5078).useDisplayNameStylesEnabled({ location: "UsernameWithEffects" });
+  const obj3 = userName(5078);
+  const displayNameStylesFont = userName(9177).useDisplayNameStylesFont({ displayNameStyles: result, ignoreDisabledStylesSetting });
   let tmp12;
   if (null != displayNameStylesFont) {
-    const obj5 = { fontFamily: displayNameStylesFont, lineHeight: "Array" };
+    const obj5 = { fontFamily: displayNameStylesFont, lineHeight: "a" };
     tmp12 = obj5;
   }
   let num = merged.lineClamp;
@@ -139,12 +139,12 @@ export default noop.memo((userName) => {
     }
     tmp13 = tmp14;
   }
-  const obj4 = userName(10080);
-  const token = userName(4526).useToken(tmp4(576).colors.BACKGROUND_BASE_LOW);
-  const tmp7Result = userName(4526);
-  const token1 = userName(4526).useToken(tmp4(576).colors.WHITE);
-  const tmp7Result7 = userName(4526);
-  const displayNameStylesAccessibleColors = userName(11250).useDisplayNameStylesAccessibleColors({ displayNameStyles: result, backgroundColor: token });
+  const obj4 = userName(9177);
+  const token = userName(4528).useToken(tmp4(576).colors.BACKGROUND_BASE_LOW);
+  const tmp7Result = userName(4528);
+  const token1 = userName(4528).useToken(tmp4(576).colors.WHITE);
+  const tmp7Result7 = userName(4528);
+  const displayNameStylesAccessibleColors = userName(10348).useDisplayNameStylesAccessibleColors({ displayNameStyles: result, backgroundColor: token });
   let first;
   if (displayNameStylesAccessibleColors.length > 0) {
     first = displayNameStylesAccessibleColors[0];
@@ -217,16 +217,16 @@ export default noop.memo((userName) => {
   const tmp28Result = closure_12(str, num2);
   if (displayNameStylesEnabled) {
     if (null != tmp6) {
-      if (STATIC !== tmp7(11249).EffectDisplayType.PLAIN) {
+      if (STATIC !== tmp7(10347).EffectDisplayType.PLAIN) {
         if (null != colorVariants) {
           const items1 = [merged.style, tmp13];
           if (tmp7Result11.doesEffectImpactLayout(effectId)) {
             const layoutImpact = tmp28Result.layoutImpact;
           }
           if (effectId === tmp7(1391).DisplayNameEffect.GUMMY) {
-            const tmp4Result = tmp4(11253);
+            const tmp4Result = tmp4(10351);
             const tmp66 = closure_9;
-            let str3 = tmp7(4529).getNodeText(userName);
+            let str3 = tmp7(4531).getNodeText(userName);
             if (str3 == null) {
               str3 = "";
             }

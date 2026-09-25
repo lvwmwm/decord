@@ -1,17 +1,17 @@
-// Module ID: 9760
-// Function ID: 9761
+// Module ID: 8858
+// Function ID: 8859
 // Name: PictureInPictureVideo
-// Dependencies: [32, 19, 17, 2043, 4845, 502, 1992, 2098, 5724, 9738, 9723, 4850, 21, 4829, 1177, 576, 9761, 12, 9732, 9762, 504, 5030, 9763, 9766, 9774, 9793, 9794, 9802, 9722, 9825, 4526, 8491, 9796, 9745, 9741, 9744, 1478, 1364, 8682, 2]
+// Dependencies: [32, 19, 17, 2043, 4845, 502, 1992, 2098, 5726, 8836, 8821, 4850, 21, 4829, 1177, 576, 8859, 12, 8830, 8860, 504, 5030, 8861, 8864, 8872, 8891, 8892, 8900, 8820, 8923, 4528, 7581, 8894, 8843, 8839, 8842, 1478, 1364, 7772, 2]
 
-// Module 9760 (PictureInPictureVideo)
+// Module 8858 (PictureInPictureVideo)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5030 */;
-import transitionToActivityDefault from "transitionToActivity" /* 9722 */;
-import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 9741 */;
-import usePipDimensionsDefault from "usePipDimensions" /* 9744 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 9745 */;
+import transitionToActivityDefault from "transitionToActivity" /* 8820 */;
+import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 8839 */;
+import usePipDimensionsDefault from "usePipDimensions" /* 8842 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 8843 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
@@ -19,8 +19,8 @@ import ChannelRTCStore from "ChannelRTCStore" /* 4845 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import SpeakingStore from "SpeakingStore" /* 5724 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 9738 */;
+import SpeakingStore from "SpeakingStore" /* 5726 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 8836 */;
 
 require = fn;
 function areParticipantsEqual(arg0, arg1) {
@@ -30,7 +30,7 @@ function areParticipantsEqual(arg0, arg1) {
 }
 get_ActivityIndicator = fn(17);
 ({ TouchableOpacity: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const ChannelCallStore = fn(9723);
+const ChannelCallStore = fn(8821);
 ({ togglePipFocus: map1, useIsVoiceChatFocused: closure_14 } = ChannelCallStore);
 const ParticipantTypes = fn(4850).ParticipantTypes;
 const jsxProd = fn(21);

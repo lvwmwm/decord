@@ -1,10 +1,10 @@
-// Module ID: 10472
-// Function ID: 10473
+// Module ID: 9574
+// Function ID: 9575
 // Name: HighlightText
-// Dependencies: [19, 1074, 21, 4829, 4678, 576, 1177, 2]
+// Dependencies: [19, 1074, 21, 4829, 4680, 576, 1177, 2]
 // Exports: default
 
-// Module 10472 (HighlightText)
+// Module 9574 (HighlightText)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;
@@ -14,7 +14,7 @@ const jsx = fn(21).jsx;
 const createStyles = fn(4829);
 const obj2 = { text: null };
 const obj3 = { fontFamily: fn(1074).Fonts.PRIMARY_BOLD, backgroundColor: null, color: null };
-const ColorUtils = fn(4678);
+const ColorUtils = fn(4680);
 obj3.backgroundColor = ColorUtils.hexOpacityToRgba(nativeDefault.unsafe_rawColors.YELLOW_300, 0.3);
 obj3.color = nativeDefault.colors.TEXT_STRONG;
 obj2.text = obj3;

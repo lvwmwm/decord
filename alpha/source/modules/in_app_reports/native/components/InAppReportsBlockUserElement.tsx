@@ -1,17 +1,17 @@
-// Module ID: 13303
-// Function ID: 13304
+// Module ID: 12453
+// Function ID: 12454
 // Name: InAppReportsBlockUserElement
-// Dependencies: [19, 2044, 4474, 1074, 21, 504, 4981, 5009, 10087, 8754, 13300, 1115, 8277, 2]
+// Dependencies: [19, 2044, 4476, 1074, 21, 504, 4981, 5009, 9184, 7844, 12450, 1115, 7366, 2]
 // Exports: default
 
-// Module 13303 (InAppReportsBlockUserElement)
+// Module 12453 (InAppReportsBlockUserElement)
 import NicknameUtilsDefault from "NicknameUtils" /* 4981 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5009 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8754 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10087 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7844 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9184 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 
 const require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;

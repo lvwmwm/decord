@@ -1,21 +1,21 @@
-// Module ID: 16118
-// Function ID: 16119
+// Module ID: 15293
+// Function ID: 15294
 // Name: DevToolsShopScreen
-// Dependencies: [19, 17, 4828, 21, 4829, 576, 7314, 504, 15976, 2028, 5271, 5992, 5910, 7534, 16091, 7533, 2]
+// Dependencies: [19, 17, 4828, 21, 4829, 576, 6397, 504, 15146, 2028, 5272, 5994, 5912, 6617, 15266, 6616, 2]
 // Exports: default
 
-// Module 16118 (DevToolsShopScreen)
+// Module 15293 (DevToolsShopScreen)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import dismissible_content from "dismissible_content" /* 2028 */;
-import Stack_Stack from "Stack/Stack" /* 5271 */;
-import TableRow from "TableRow" /* 5910 */;
-import TableRowGroup from "TableRowGroup" /* 5992 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7314 */;
-import TableSwitchRow from "TableSwitchRow" /* 7533 */;
-import FormSwitch from "FormSwitch" /* 7534 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15976 */;
-import DevSettingsActions from "DevSettingsActions" /* 16091 */;
+import Stack_Stack from "Stack/Stack" /* 5272 */;
+import TableRow from "TableRow" /* 5912 */;
+import TableRowGroup from "TableRowGroup" /* 5994 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6397 */;
+import TableSwitchRow from "TableSwitchRow" /* 6616 */;
+import FormSwitch from "FormSwitch" /* 6617 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15146 */;
+import DevSettingsActions from "DevSettingsActions" /* 15266 */;
 import noop from "module_19" /* 19 */;
 import DevSettingsStore from "DevSettingsStore" /* 4828 */;
 

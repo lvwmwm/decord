@@ -1,27 +1,27 @@
-// Module ID: 11868
-// Function ID: 11869
+// Module ID: 11011
+// Function ID: 11012
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [32, 19, 5056, 5815, 1074, 8065, 8293, 1115, 11869, 7564, 7559, 3584, 9561, 4817, 11148, 1365, 504, 1370, 7501, 2]
+// Dependencies: [32, 19, 5056, 5817, 1074, 7150, 7382, 1115, 11012, 6647, 6642, 3584, 8659, 4817, 10251, 1365, 504, 1370, 6584, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedData
 
-// Module 11868 (createSocialLayerStorefrontProductDetailsEmbed)
+// Module 11011 (createSocialLayerStorefrontProductDetailsEmbed)
 import util from "util" /* 1115 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7559 */;
-import StorefrontUtils from "StorefrontUtils" /* 7564 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8293 */;
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 11148 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6642 */;
+import StorefrontUtils from "StorefrontUtils" /* 6647 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7382 */;
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10251 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5056 */;
-import SKUStore from "SKUStore" /* 5815 */;
+import SKUStore from "SKUStore" /* 5817 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const PaymentGateways = fn(1074).PaymentGateways;
-const InviteTypes = fn(8065).InviteTypes;
+const InviteTypes = fn(7150).InviteTypes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/slayer_storefront/native/createSocialLayerStorefrontProductDetailsEmbed.tsx");
 
@@ -55,7 +55,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
       return null;
     } else {
       if (null != application) {
-        if (tmp(11869)(application)) {
+        if (tmp(11012)(application)) {
           if ("guild" !== guildOrApplication.type) {
             const result1 = StorefrontUtils.isSlayerSkuAvailableOnThisPlatform(value);
             const str4 = SlayerStorefrontUtils.getCardImageURL(value);

@@ -1,27 +1,27 @@
-// Module ID: 10979
-// Function ID: 10980
+// Module ID: 10083
+// Function ID: 10084
 // Name: ImageCarousel
-// Dependencies: [19, 17, 5192, 5191, 10980, 21, 4829, 576, 4561, 4830, 1177, 5272, 38, 5432, 504, 10981, 10544, 11597, 8593, 4825, 1115, 8624, 7301, 5427, 7271, 1478, 9502, 10983, 2]
+// Dependencies: [19, 17, 5193, 5192, 10084, 21, 4829, 576, 4563, 4830, 1177, 5273, 38, 5433, 504, 10085, 9646, 10802, 7683, 4825, 1115, 7714, 6384, 5428, 6354, 1478, 8600, 10087, 2]
 // Exports: useTileEntranceAnimatedStyle
 
-// Module 10979 (ImageCarousel)
+// Module 10083 (ImageCarousel)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import useWindowDimensions from "useWindowDimensions" /* 1478 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4563 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import timing from "timing" /* 4830 */;
-import spring from "spring" /* 5272 */;
-import Upload from "Upload" /* 5432 */;
-import EyeIcon from "EyeIcon" /* 7301 */;
-import PlayIcon from "PlayIcon" /* 8624 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9502 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 10544 */;
-import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10981 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10983 */;
+import spring from "spring" /* 5273 */;
+import Upload from "Upload" /* 5433 */;
+import EyeIcon from "EyeIcon" /* 6384 */;
+import PlayIcon from "PlayIcon" /* 7714 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8600 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 9646 */;
+import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10085 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10087 */;
 import noop from "module_19" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5191 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5192 */;
 
 require = fn;
 function Tile(onEdit) {
@@ -157,7 +157,7 @@ function Tile(onEdit) {
     let tmp6Result = null;
     if (isThumbnail) {
       const obj2 = { style: tmp5.footerRightContainer, children: null };
-      const obj3 = { source: tmp3(11597), size: native.Icon.Sizes.SMALL_14 };
+      const obj3 = { source: tmp3(10802), size: native.Icon.Sizes.SMALL_14 };
       obj2.children = tmp6(native.Icon, obj3);
       tmp6Result = tmp6(React4, obj2);
     }
@@ -166,7 +166,7 @@ function Tile(onEdit) {
     let tmp6Result5 = null;
     if (stateFromStores) {
       const obj5 = { style: tmp5.spoilerOverlay };
-      tmp6Result5 = tmp6(tmp3(8593), obj5);
+      tmp6Result5 = tmp6(tmp3(7683), obj5);
     }
     const items2 = [tmp6Result5, , ];
     let tmp6Result6 = null;
@@ -276,8 +276,8 @@ function CustomScrollView(arg0) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const DraftType = fn(5192).DraftType;
-const ImageCarouselConstants = fn(10980);
+const DraftType = fn(5193).DraftType;
+const ImageCarouselConstants = fn(10084);
 const IMAGE_CAROUSEL_EXPERIMENT_TILE_MARGIN = ImageCarouselConstants.IMAGE_CAROUSEL_EXPERIMENT_TILE_MARGIN;
 const IMAGE_CAROUSEL_TILE_CLOSE_BUTTON_PADDING = ImageCarouselConstants.IMAGE_CAROUSEL_TILE_CLOSE_BUTTON_PADDING;
 let closure_10 = ImageCarouselConstants.IMAGE_CAROUSEL_TILE_HEIGHT;
@@ -378,12 +378,12 @@ export default noop.memo((arg0) => {
   return closure_11(closure_4, obj2);
 });
 export const useTileEntranceAnimatedStyle = function useTileEntranceAnimatedStyle(arg0) {
-  sharedValue = sharedValue(4561).useSharedValue(0);
+  sharedValue = sharedValue(4563).useSharedValue(0);
   const items = [sharedValue, arg0];
   const effect = noop.useEffect(() => {
     const result = onEdit.set(1);
   }, items);
-  const obj = sharedValue(4561);
+  const obj = sharedValue(4563);
   const fn = function o() {
     const obj = { opacity: null, transform: null };
     const obj3 = { duration: 300, easing: null };
@@ -396,8 +396,8 @@ export const useTileEntranceAnimatedStyle = function useTileEntranceAnimatedStyl
     obj.transform = items;
     return obj;
   };
-  const obj2 = sharedValue(4561);
-  fn.__closure = { withTiming: sharedValue(4830).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: sharedValue(1177).STANDARD_EASING, withSpring: sharedValue(5272).withSpring };
+  const obj2 = sharedValue(4563);
+  fn.__closure = { withTiming: sharedValue(4830).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: sharedValue(1177).STANDARD_EASING, withSpring: sharedValue(5273).withSpring };
   fn.__workletHash = 14458898683767;
   fn.__initData = __initData;
   return obj2.useAnimatedStyle(fn);

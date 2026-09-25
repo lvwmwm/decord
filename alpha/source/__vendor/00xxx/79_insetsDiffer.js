@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 79 (insetsDiffer)
-let closure_0 = { top: "Array", left: "paddingHorizontal", right: "guild_id", bottom: "opacity" };
+let closure_0 = { top: "Array", left: "channelId", right: "formatToPlainString", bottom: "raw" };
 
 export default function insetsDiffer(arg0, arg1) {
   let rect = arg0;

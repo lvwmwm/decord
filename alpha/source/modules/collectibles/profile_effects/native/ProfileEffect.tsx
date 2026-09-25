@@ -1,17 +1,17 @@
-// Module ID: 9162
-// Function ID: 9163
+// Module ID: 8256
+// Function ID: 8257
 // Name: ProfileEffect
-// Dependencies: [32, 19, 17, 4821, 1979, 21, 4829, 1478, 9163, 9164, 9165, 9167, 504, 1094, 9168, 9166, 5892, 8574, 2]
+// Dependencies: [32, 19, 17, 4821, 1979, 21, 4829, 1478, 8257, 8258, 8259, 8261, 504, 1094, 8262, 8260, 5894, 7664, 2]
 // Exports: default, usePreloadProfileEffect
 
-// Module 9162 (ProfileEffect)
+// Module 8256 (ProfileEffect)
 import initialize from "initialize" /* 504 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8574 */;
-import utils from "utils" /* 9163 */;
-import constants from "constants" /* 9164 */;
-import ProfileEffectUtils from "ProfileEffectUtils" /* 9165 */;
-import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9168 */;
+import useProfileEffectDefault from "useProfileEffect" /* 7664 */;
+import utils from "utils" /* 8257 */;
+import constants from "constants" /* 8258 */;
+import ProfileEffectUtils from "ProfileEffectUtils" /* 8259 */;
+import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 8262 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
@@ -71,8 +71,8 @@ function StaticEffect(useThumbnail) {
     const size1 = { width: tmp3, height: tmp8, top: 0 - bannerAdjustment };
     items1[1] = size1;
     size.style = items1;
-    obj3.children = tmp10(tmp4(5892), size);
-    const tmp4Result = tmp4(5892);
+    obj3.children = tmp10(tmp4(5894), size);
+    const tmp4Result = tmp4(5894);
   }
   return <closure_5 {...obj3} />;
 }
@@ -118,7 +118,7 @@ function ProfileEffect(profileEffect) {
       }
     }
   }, []);
-  jsx = noop.useRef(-memo(9164).PROFILE_EFFECT_INTRO_DELAY);
+  jsx = noop.useRef(-memo(8258).PROFILE_EFFECT_INTRO_DELAY);
   [c10, c11] = ref(noop.useState([]), 2);
   noop.useRef([]);
   noop.useRef(false);
@@ -134,7 +134,7 @@ function ProfileEffect(profileEffect) {
   }, items3);
   const items4 = [ref];
   const tmp7 = ref(noop.useState([]), 2);
-  const tmp9Result = memo1(9167)(noop.useCallback((arg0) => {
+  const tmp9Result = memo1(8261)(noop.useCallback((arg0) => {
     if (ref.current) {
       if (!ref3.current) {
         tmp.current = true;
@@ -161,7 +161,7 @@ function ProfileEffect(profileEffect) {
   }, items4));
   const stop = tmp9Result.stop;
   const reset = tmp9Result.reset;
-  let tmp9 = memo1(9167);
+  let tmp9 = memo1(8261);
   const items5 = [onLoad];
   const stateFromStores = memo(504).useStateFromStores(items5, () => onLoad.getState());
   noop.useRef(null);

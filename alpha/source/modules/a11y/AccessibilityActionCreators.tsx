@@ -1,10 +1,10 @@
-// Module ID: 14812
-// Function ID: 14813
+// Module ID: 13974
+// Function ID: 13975
 // Name: AccessibilityActionCreators
-// Dependencies: [4821, 1074, 2023, 1084, 573, 1241, 9553, 2]
+// Dependencies: [4821, 1074, 2023, 1084, 573, 1241, 8651, 2]
 // Exports: disableKeyboardMode, enableKeyboardMode, forcedColorsModalSeen, keyboardNavigationExplainerModalSeen, resetToDefault, setAlwaysShowLinkDecorations, setChatBarSettings, setContrast, setContrastMode, setDisplayNameStylesEnabled, setEnableCustomCursor, setFontSize, setHDRDynamicRange, setLowContrastMode, setMessageGroupSpacing, setOfficialMessageStyle, setPrefersReducedMotion, setRoleStyle, setSaturation, setSwitchIconsEnabled, setSyncForcedColors, setYouBarAnimations, setZoom, systemColorPreferencesChanged, systemPrefersContrastChanged, systemPrefersCrossfadesChanged, systemPrefersReducedMotionChanged, toggleColorblindMode, toggleDesaturateUserColors, toggleSubmitButton, toggleSyncProfileThemeWithUserTheme
 
-// Module 14812 (AccessibilityActionCreators)
+// Module 13974 (AccessibilityActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
@@ -76,16 +76,16 @@ export const setPrefersReducedMotion = function setPrefersReducedMotion(reduce) 
       obj3.animateEmoji = obj5;
       const obj6 = { value: StickerAnimationSettings.ANIMATE_ON_INTERACTION, reasonKey: constants.REDUCED_MOTION_STICKERS };
       obj3.animateStickers = obj6;
-      const result = tmp(9553).applySettingsOverride(obj3);
-      const tmpResult = tmp(9553);
+      const result = tmp(8651).applySettingsOverride(obj3);
+      const tmpResult = tmp(8651);
     }
   }
   if (useReducedMotion) {
     useReducedMotion = !useReducedMotion2;
   }
   if (useReducedMotion) {
-    const result1 = tmp(9553).clearSettingsOverride("gifAutoPlay", "animateEmoji", "animateStickers");
-    const tmpResult2 = tmp(9553);
+    const result1 = tmp(8651).clearSettingsOverride("gifAutoPlay", "animateEmoji", "animateStickers");
+    const tmpResult2 = tmp(8651);
   }
 };
 export const setSyncForcedColors = function setSyncForcedColors(syncForcedColors) {

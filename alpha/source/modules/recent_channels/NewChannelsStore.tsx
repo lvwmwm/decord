@@ -1,19 +1,19 @@
-// Module ID: 7862
-// Function ID: 7863
+// Module ID: 6947
+// Function ID: 6948
 // Name: NewChannelsStore
-// Dependencies: [1220, 502, 2044, 4462, 2107, 2066, 4844, 5010, 1074, 1091, 7612, 573, 7443, 11, 504, 2]
+// Dependencies: [1220, 502, 2044, 4464, 2107, 2066, 4844, 5010, 1074, 1091, 6695, 573, 6526, 11, 504, 2]
 
-// Module 7862 (NewChannelsStore)
+// Module 6947 (NewChannelsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7443 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 7612 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6526 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6695 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildChannelStore from "GuildChannelStore" /* 4462 */;
+import GuildChannelStore from "GuildChannelStore" /* 4464 */;
 import GuildMemberStore from "GuildMemberStore" /* 2107 */;
 import GuildStore from "GuildStore" /* 2066 */;
 import ReadStateStore from "ReadStateStore" /* 4844 */;
@@ -130,7 +130,7 @@ function pruneNewChannels() {
     closure_16[item] = new Set(items.filter((item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(closure_0, item)));
   });
 }
-let closure_7 = fn(4462).GUILD_SELECTABLE_CHANNELS_KEY;
+let closure_7 = fn(4464).GUILD_SELECTABLE_CHANNELS_KEY;
 const Constants = fn(1074);
 ({ AnalyticsObjects: closure_12, AnalyticsObjectTypes: map1, GuildFeatures: closure_14 } = Constants);
 let set = new Set();

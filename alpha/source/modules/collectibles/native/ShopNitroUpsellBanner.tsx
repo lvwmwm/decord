@@ -1,21 +1,21 @@
-// Module ID: 16220
-// Function ID: 16221
+// Module ID: 15399
+// Function ID: 15400
 // Name: ShopNitroUpsellBanner
-// Dependencies: [19, 21, 4829, 576, 672, 4526, 4796, 13551, 1980, 7515, 1115, 5912, 5285, 1094, 1177, 5985, 5271, 4825, 16219, 5273, 10317, 2]
+// Dependencies: [19, 21, 4829, 576, 672, 4528, 4796, 12703, 1980, 6598, 1115, 5914, 5286, 1094, 1177, 5987, 5272, 4825, 15398, 5274, 9414, 2]
 
-// Module 16220 (ShopNitroUpsellBanner)
+// Module 15399 (ShopNitroUpsellBanner)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import useToken from "useToken" /* 4526 */;
+import useToken from "useToken" /* 4528 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import Stack_Stack from "Stack/Stack" /* 5271 */;
-import LinearGradientDefault from "LinearGradient" /* 5285 */;
-import Card from "Card" /* 5912 */;
-import XSmallIcon from "XSmallIcon" /* 5985 */;
-import MobileNitroUpsellInShopFeedExperiment from "MobileNitroUpsellInShopFeedExperiment" /* 16219 */;
+import Stack_Stack from "Stack/Stack" /* 5272 */;
+import LinearGradientDefault from "LinearGradient" /* 5286 */;
+import Card from "Card" /* 5914 */;
+import XSmallIcon from "XSmallIcon" /* 5987 */;
+import MobileNitroUpsellInShopFeedExperiment from "MobileNitroUpsellInShopFeedExperiment" /* 15398 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

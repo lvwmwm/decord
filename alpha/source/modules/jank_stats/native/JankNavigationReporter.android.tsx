@@ -1,13 +1,13 @@
-// Module ID: 17919
-// Function ID: 17920
+// Module ID: 17145
+// Function ID: 17146
 // Name: JankNavigationReporter
-// Dependencies: [4687, 16436, 16432, 16437, 4689, 2]
+// Dependencies: [4689, 15616, 15612, 15617, 4691, 2]
 
-// Module 17919 (JankNavigationReporter)
-import RootNavigationRef from "RootNavigationRef" /* 4687 */;
-import getJankScreenName from "getJankScreenName" /* 16432 */;
-import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 16436 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 16437 */;
+// Module 17145 (JankNavigationReporter)
+import RootNavigationRef from "RootNavigationRef" /* 4689 */;
+import getJankScreenName from "getJankScreenName" /* 15612 */;
+import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 15616 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 15617 */;
 import size from "module_2" /* 2 */;
 
 const getJankScreenNameDefault = getJankScreenName;
@@ -87,8 +87,8 @@ prototype["shouldSettleInJS"] = function shouldSettleInJS(focusedRoute) {
     }
     let isChatLockedOpen = name === getJankScreenName.CHAT_PANEL_ROUTE;
     if (isChatLockedOpen) {
-      isChatLockedOpen = tmp4(4689).getChatLayout().isChatLockedOpen;
-      const tmp4Result = tmp4(4689);
+      isChatLockedOpen = tmp4(4691).getChatLayout().isChatLockedOpen;
+      const tmp4Result = tmp4(4691);
     }
     tmp2 = isChatLockedOpen;
     tmp4 = require;

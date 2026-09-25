@@ -1,11 +1,11 @@
-// Module ID: 15134
-// Function ID: 15135
+// Module ID: 14300
+// Function ID: 14301
 // Name: MFACodeInput
-// Dependencies: [32, 19, 17, 502, 1074, 21, 4829, 576, 4680, 7522, 5290, 6922, 6935, 1115, 4825, 2]
+// Dependencies: [32, 19, 17, 502, 1074, 21, 4829, 576, 4682, 6605, 5291, 6005, 6018, 1115, 4825, 2]
 
-// Module 15134 (MFACodeInput)
+// Module 14300 (MFACodeInput)
 import nativeDefault from "native" /* 576 */;
-import ClipboardUtils from "ClipboardUtils" /* 7522 */;
+import ClipboardUtils from "ClipboardUtils" /* 6605 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

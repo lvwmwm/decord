@@ -1,10 +1,10 @@
-// Module ID: 9728
-// Function ID: 9729
+// Module ID: 8826
+// Function ID: 8827
 // Name: isOrientationLockSupported
 // Dependencies: [4808, 1609, 2]
 // Exports: default
 
-// Module 9728 (isOrientationLockSupported)
+// Module 8826 (isOrientationLockSupported)
 import DeviceUtils from "DeviceUtils" /* 4808 */;
 import size from "module_2" /* 2 */;
 

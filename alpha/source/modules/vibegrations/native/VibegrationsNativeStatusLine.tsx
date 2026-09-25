@@ -1,13 +1,13 @@
-// Module ID: 17116
-// Function ID: 17117
+// Module ID: 16307
+// Function ID: 16308
 // Name: VibegrationsNativeStatusLine
-// Dependencies: [19, 17, 21, 576, 4829, 4526, 11506, 7542, 10498, 4825, 17117, 5427, 1115, 3714, 2]
+// Dependencies: [19, 17, 21, 576, 4829, 4528, 10604, 6625, 9600, 4825, 16308, 5428, 1115, 3714, 2]
 // Exports: default, laneTintFor, laneTintIndexFor
 
-// Module 17116 (VibegrationsNativeStatusLine)
+// Module 16307 (VibegrationsNativeStatusLine)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import MagicWandIcon from "MagicWandIcon" /* 10498 */;
+import MagicWandIcon from "MagicWandIcon" /* 9600 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

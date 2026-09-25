@@ -1,13 +1,13 @@
-// Module ID: 16550
-// Function ID: 16551
+// Module ID: 15730
+// Function ID: 15731
 // Name: VoiceUserNameItem
-// Dependencies: [32, 19, 17, 21, 4829, 5076, 10080, 4825, 4673, 1115, 16551, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 5077, 9177, 4825, 4675, 1115, 15731, 2]
 // Exports: default
 
-// Module 16550 (VoiceUserNameItem)
+// Module 15730 (VoiceUserNameItem)
 import Text_Text from "Text/Text" /* 4825 */;
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5076 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 10080 */;
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5077 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9177 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -68,8 +68,8 @@ export default function VoiceUserNameItem(arg0) {
     nick = member.nick;
   }
   if (nick == null) {
-    nick = tmp2(4673).getName(user);
-    const tmp2Result = tmp2(4673);
+    nick = tmp2(4675).getName(user);
+    const tmp2Result = tmp2(4675);
   }
   const items1 = [nick, ];
   if (isGuest) {
@@ -89,7 +89,7 @@ export default function VoiceUserNameItem(arg0) {
   if (tmp12) {
     const obj7 = { onLayout: callback2, style: tmp.tag, children: null };
     const obj8 = { userId: user.id };
-    obj7.children = React5(tmp2(16551), obj8);
+    obj7.children = React5(tmp2(15731), obj8);
     tmp12 = React5(tmp19, obj7);
   }
   items3[1] = tmp12;

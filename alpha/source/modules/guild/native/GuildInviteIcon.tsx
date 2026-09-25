@@ -1,14 +1,14 @@
-// Module ID: 13007
-// Function ID: 13008
+// Module ID: 12138
+// Function ID: 12139
 // Name: GuildInviteIcon
-// Dependencies: [19, 17, 21, 4829, 576, 4535, 13008, 1115, 1397, 5892, 2010, 1177, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4537, 12139, 1115, 1397, 5894, 2010, 1177, 2]
 
-// Module 13007 (GuildInviteIcon)
+// Module 12138 (GuildInviteIcon)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import FastImageDefault from "FastImage" /* 5892 */;
-import StylesheetUtils from "StylesheetUtils" /* 13008 */;
+import FastImageDefault from "FastImage" /* 5894 */;
+import StylesheetUtils from "StylesheetUtils" /* 12139 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -69,7 +69,7 @@ GuildInviteIcon.prototype["render"] = function render() {
 };
 GuildInviteIcon.defaultProps = { size: obj.SMALL, textScale: 1 };
 GuildInviteIcon.Sizes = obj;
-GuildInviteIcon.contextType = fn(4535).ThemeContext;
+GuildInviteIcon.contextType = fn(4537).ThemeContext;
 size = fn(2);
 let result = size.fileFinishedImporting("modules/guild/native/GuildInviteIcon.tsx");
 

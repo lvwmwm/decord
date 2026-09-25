@@ -1,10 +1,10 @@
-// Module ID: 16605
-// Function ID: 16606
+// Module ID: 15785
+// Function ID: 15786
 // Name: ServerPreviewPill
 // Dependencies: [19, 17, 21, 4829, 576, 4825, 1115, 2]
 // Exports: default
 
-// Module 16605 (ServerPreviewPill)
+// Module 15785 (ServerPreviewPill)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;

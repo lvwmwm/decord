@@ -1,20 +1,20 @@
-// Module ID: 10022
-// Function ID: 10023
+// Module ID: 9120
+// Function ID: 9121
 // Name: FormComponents
-// Dependencies: [19, 4869, 21, 4829, 576, 5894, 5992, 10023, 1177, 7495, 10024, 10035, 10078, 5076, 10080, 8527, 504, 8067, 10082, 10083, 10085, 4825, 1115, 5910, 5273, 10086, 10096, 4673, 10097, 10130, 2]
+// Dependencies: [19, 4869, 21, 4829, 576, 5896, 5994, 9121, 1177, 6578, 9122, 9133, 9176, 5077, 9177, 7617, 504, 7152, 9179, 9180, 9182, 4825, 1115, 5912, 5274, 9183, 9193, 4675, 9194, 9227, 2]
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 10022 (FormComponents)
+// Module 9120 (FormComponents)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import NativeViewDefault from "NativeView" /* 5894 */;
-import TableRowGroup from "TableRowGroup" /* 5992 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8067 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8527 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 10023 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 10086 */;
+import NativeViewDefault from "NativeView" /* 5896 */;
+import TableRowGroup from "TableRowGroup" /* 5994 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7152 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7617 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 9121 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 9183 */;
 import noop from "module_19" /* 19 */;
 import PresenceStore from "PresenceStore" /* 4869 */;
 
@@ -28,8 +28,8 @@ function VoiceBadges(arg0) {
     const obj2 = { style: tmp.iconWrapper, children: null };
     const obj3 = { state: muteDeafenIconState, size: native.IconSizes.SMALL, style: tmp.icon };
     obj2.children = hasOwnProperty(VoiceStateIcons.MuteDeafenIcon, obj3);
-    tmp6 = hasOwnProperty(tmp3(5894), obj2);
-    const tmp3Result = tmp3(5894);
+    tmp6 = hasOwnProperty(tmp3(5896), obj2);
+    const tmp3Result = tmp3(5896);
   }
   const items = [tmp6, ];
   let tmp10 = null;
@@ -37,8 +37,8 @@ function VoiceBadges(arg0) {
     const obj4 = { style: tmp.iconWrapper, children: null };
     const obj5 = { state: videoIconState, size: native.IconSizes.SMALL, style: tmp.icon };
     obj4.children = hasOwnProperty(VoiceStateIcons.VideoIcon, obj5);
-    tmp10 = hasOwnProperty(tmp3(5894), obj4);
-    const tmp3Result2 = tmp3(5894);
+    tmp10 = hasOwnProperty(tmp3(5896), obj4);
+    const tmp3Result2 = tmp3(5896);
   }
   items[1] = tmp10;
   obj.children = items;
@@ -95,7 +95,7 @@ export const MemberRowItem = function MemberRowItem(user) {
   let obj2 = user(flag[10]);
   const isUserSecureFramesVerified = user(flag[11]).useIsUserSecureFramesVerified({ userId: id, channelId });
   const obj3 = user(flag[11]);
-  const canRing = user(flag[12]).useCanRing(user, "MemberRowItem");
+  const canRing = user(flag[12]).useCanRing(user);
   const obj4 = user(flag[12]);
   const obj5 = { userId: user.id, guildId };
   const tmp9 = channelId(flag[13])({ userId: user.id, guildId });

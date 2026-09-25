@@ -1,10 +1,10 @@
-// Module ID: 9793
-// Function ID: 9794
+// Module ID: 8891
+// Function ID: 8892
 // Name: participantHasVideo
 // Dependencies: [502, 1992, 4850, 4854, 504, 2]
 // Exports: default, useCanRenderParticipantVideo
 
-// Module 9793 (participantHasVideo)
+// Module 8891 (participantHasVideo)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 

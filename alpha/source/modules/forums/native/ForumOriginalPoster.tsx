@@ -1,10 +1,10 @@
-// Module ID: 12215
-// Function ID: 12216
+// Module ID: 11337
+// Function ID: 11338
 // Name: ForumOriginalPoster
-// Dependencies: [19, 17, 21, 4829, 576, 5746, 4825, 1115, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 5748, 4825, 1115, 2]
 // Exports: getForumOriginalPoster
 
-// Module 12215 (ForumOriginalPoster)
+// Module 11337 (ForumOriginalPoster)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
@@ -39,7 +39,7 @@ const jsxProd = fn(21);
 const createStyles = fn(4829);
 let obj2 = { container: { flexDirection: "row", alignItems: "center", justifyContent: "center" }, opIcon: { borderRadius: nativeDefault.radii.sm, marginEnd: 8, paddingHorizontal: 4 }, opIconBackground: null };
 let obj3 = { borderRadius: nativeDefault.radii.sm, marginEnd: 8, paddingHorizontal: 4 };
-obj2.opIconBackground = { backgroundColor: fn(5746).DARK_BRAND_260_LIGHT_BRAND_200 };
+obj2.opIconBackground = { backgroundColor: fn(5748).DARK_BRAND_260_LIGHT_BRAND_200 };
 const hasOwnProperty = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/native/ForumOriginalPoster.tsx");

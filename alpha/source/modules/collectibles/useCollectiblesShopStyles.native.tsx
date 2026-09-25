@@ -1,12 +1,12 @@
-// Module ID: 11435
-// Function ID: 11436
+// Module ID: 10533
+// Function ID: 10534
 // Name: useCollectiblesShopStyles
-// Dependencies: [7882, 576, 11436, 2]
+// Dependencies: [6967, 576, 10534, 2]
 
-// Module 11435 (useCollectiblesShopStyles)
+// Module 10533 (useCollectiblesShopStyles)
 import nativeDefault from "native" /* 576 */;
-import createUseCollectiblesShopStylesDefault from "createUseCollectiblesShopStyles" /* 11436 */;
-import tinycolor_mod from "tinycolor" /* 7882 */;
+import createUseCollectiblesShopStylesDefault from "createUseCollectiblesShopStyles" /* 10534 */;
+import tinycolor_mod from "tinycolor" /* 6967 */;
 
 let tinycolor = tinycolor_mod;
 const importDefaultResultResult = tinycolor(nativeDefault.unsafe_rawColors.WHITE);

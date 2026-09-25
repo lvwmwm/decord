@@ -1,13 +1,13 @@
-// Module ID: 16837
-// Function ID: 16838
+// Module ID: 16023
+// Function ID: 16024
 // Name: NotificationCenterPermissionNudge
-// Dependencies: [32, 19, 17, 1074, 2041, 12759, 21, 4829, 576, 1241, 10500, 4825, 1115, 5273, 12760, 5427, 5985, 15837, 7718, 2028, 2]
+// Dependencies: [32, 19, 17, 1074, 2041, 11885, 21, 4829, 576, 1241, 9602, 4825, 1115, 5274, 11886, 5428, 5987, 15007, 6801, 2028, 2]
 // Exports: default
 
-// Module 16837 (NotificationCenterPermissionNudge)
+// Module 16023 (NotificationCenterPermissionNudge)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15837 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15007 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ function NotificationCenterBannerImpl(onDismiss) {
     AnalyticsUtilsDefault.track(constants.CONTEXTUAL_REMINDER_ACTION, { action: constants4.IMPRESSION, prompt_type: constants5.NOTIFICATION_CENTER_BANNER });
   }, []);
   let obj = { style: tmp.container, children: null };
-  const obj2 = { style: tmp.iconContainer, children: closure_14(onDismiss(10500).BellSlashIcon, { size: "md", color: nativeDefault.colors.ICON_STRONG }) };
+  const obj2 = { style: tmp.iconContainer, children: closure_14(onDismiss(9602).BellSlashIcon, { size: "md", color: nativeDefault.colors.ICON_STRONG }) };
   const items = [closure_14(View, obj2), , ];
   const obj4 = { style: tmp.contentContainer, children: null };
   const obj5 = { variant: "text-md/semibold", color: "text-default", children: null };
@@ -38,11 +38,11 @@ function NotificationCenterBannerImpl(onDismiss) {
   const intl3 = onDismiss(1115).intl;
   obj9.text = intl3.string(onDismiss(1115).t.a4bgO0);
   obj9.onPress = function onPress() {
-    const pushNotificationPermission = onDismiss(12760).requestPushNotificationPermission(constants2.ALLOW_TO_REQUEST, constants3.NOTIFICATION_CENTER, closure_1_8);
-    const obj = onDismiss(12760);
+    const pushNotificationPermission = onDismiss(11886).requestPushNotificationPermission(constants2.ALLOW_TO_REQUEST, constants3.NOTIFICATION_CENTER, closure_1_8);
+    const obj = onDismiss(11886);
     AnalyticsUtilsDefault.track(constants.CONTEXTUAL_REMINDER_ACTION, { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_CENTER_BANNER });
   };
-  obj8.children = closure_14(onDismiss(5273).Button, obj9);
+  obj8.children = closure_14(onDismiss(5274).Button, obj9);
   items1[2] = closure_14(View, obj8);
   obj4.children = items1;
   items[1] = closure_15(View, obj4);
@@ -58,8 +58,8 @@ function NotificationCenterBannerImpl(onDismiss) {
   };
   const intl4 = onDismiss(1115).intl;
   obj10.accessibilityLabel = intl4.string(onDismiss(1115).t.WAI6xu);
-  obj10.children = closure_14(onDismiss(5985).XSmallIcon, { size: "sm", color: "icon-strong" });
-  items[2] = closure_14(onDismiss(5427).PressableHighlight, obj10);
+  obj10.children = closure_14(onDismiss(5987).XSmallIcon, { size: "sm", color: "icon-strong" });
+  items[2] = closure_14(onDismiss(5428).PressableHighlight, obj10);
   obj.children = items;
   return closure_15(View, obj);
 }
@@ -69,7 +69,7 @@ const View = fn(17).View;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, NOOP: closure_8 } = Constants);
 const ContentDismissActionType = fn(2041).ContentDismissActionType;
-const NotificationPermissionConstants = fn(12759);
+const NotificationPermissionConstants = fn(11885);
 ({ EventActionType: c10, EventActionLocation: closure_11, NotificationNudgeAnalyticsAction: closure_12, NotificationNudgeSurface: map1 } = NotificationPermissionConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);

@@ -1,12 +1,12 @@
-// Module ID: 16136
-// Function ID: 16137
+// Module ID: 15313
+// Function ID: 15314
 // Name: ScrollBenchmark
-// Dependencies: [19, 21, 16133, 5910, 2]
+// Dependencies: [19, 21, 15310, 5912, 2]
 // Exports: default
 
-// Module 16136 (ScrollBenchmark)
-import TableRow from "TableRow" /* 5910 */;
-import useFrameMonitorDefault from "useFrameMonitor" /* 16133 */;
+// Module 15313 (ScrollBenchmark)
+import TableRow from "TableRow" /* 5912 */;
+import useFrameMonitorDefault from "useFrameMonitor" /* 15310 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

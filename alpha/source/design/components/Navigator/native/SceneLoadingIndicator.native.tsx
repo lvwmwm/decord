@@ -1,12 +1,12 @@
-// Module ID: 7372
-// Function ID: 7373
+// Module ID: 6455
+// Function ID: 6456
 // Name: SceneLoadingIndicator
-// Dependencies: [19, 17, 21, 4829, 5882, 7373, 2]
+// Dependencies: [19, 17, 21, 4829, 5884, 6456, 2]
 // Exports: SceneLoadingIndicator
 
-// Module 7372 (SceneLoadingIndicator)
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5882 */;
-import NavScrim from "NavScrim" /* 7373 */;
+// Module 6455 (SceneLoadingIndicator)
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5884 */;
+import NavScrim from "NavScrim" /* 6456 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

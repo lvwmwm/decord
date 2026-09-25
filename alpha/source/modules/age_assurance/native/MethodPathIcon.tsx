@@ -1,12 +1,12 @@
-// Module ID: 8806
-// Function ID: 8807
+// Module ID: 7900
+// Function ID: 7901
 // Name: MethodPathIcon
-// Dependencies: [19, 17, 21, 4829, 576, 4526, 8807, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4528, 7901, 2]
 // Exports: default
 
-// Module 8806 (MethodPathIcon)
+// Module 7900 (MethodPathIcon)
 import nativeDefault from "native" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8807 */;
+import inlineStyles from "inlineStyles" /* 7901 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

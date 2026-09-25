@@ -1,14 +1,14 @@
-// Module ID: 8969
-// Function ID: 8970
+// Module ID: 8063
+// Function ID: 8064
 // Name: CardSection
-// Dependencies: [19, 17, 1074, 21, 4829, 5829, 576, 8970, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 5831, 576, 8064, 2]
 // Exports: default
 
-// Module 8969 (CardSection)
+// Module 8063 (CardSection)
 import nativeDefault from "native" /* 576 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8970 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8064 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5829 */;
+import TextStyles from "TextStyles" /* 5831 */;
 
 const View = fn(17).View;
 const jsxProd = fn(21);

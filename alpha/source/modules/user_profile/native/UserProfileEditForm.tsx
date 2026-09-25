@@ -1,19 +1,19 @@
-// Module ID: 14960
-// Function ID: 14961
+// Module ID: 14122
+// Function ID: 14123
 // Name: UserProfileEditForm
-// Dependencies: [19, 17, 8540, 10119, 7541, 1074, 1084, 11549, 21, 7322, 14961, 4483, 7495, 7515, 14962, 4796, 14963, 1980, 8515, 8512, 8514, 1115, 8589, 14974, 8510, 6955, 7314, 576, 11499, 14975, 11082, 12214, 8534, 9713, 12309, 8517, 8590, 11544, 504, 8545, 13473, 8575, 8586, 14978, 4825, 4535, 11464, 14979, 11465, 11505, 14984, 14985, 14990, 14994, 14996, 14997, 15001, 15005, 15010, 15011, 15014, 15015, 2]
+// Dependencies: [19, 17, 7630, 9216, 6624, 1074, 1084, 10647, 21, 6405, 14123, 4485, 6578, 6598, 14124, 4796, 14125, 1980, 7605, 7602, 7604, 1115, 7679, 14136, 7600, 6038, 6397, 576, 10597, 14137, 10186, 11336, 7624, 8811, 11435, 7607, 7680, 10642, 504, 7635, 12623, 7665, 7676, 14140, 4825, 4537, 10562, 14141, 10563, 10603, 14146, 14147, 14152, 14156, 14158, 14159, 14163, 14167, 14172, 14173, 14176, 14177, 2]
 // Exports: default
 
-// Module 14960 (UserProfileEditForm)
+// Module 14122 (UserProfileEditForm)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8514 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8545 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 13473 */;
-import _modDef14961 from "module_14961" /* 14961 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 7604 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7635 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 12623 */;
+import _modDef14123 from "module_14123" /* 14123 */;
 import noop from "module_19" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8540 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10119 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7630 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9216 */;
 
 require = fn;
 function EditUserProfileBanner(user) {
@@ -45,12 +45,12 @@ function EditUserProfileBanner(user) {
     const obj2 = { user, analyticsLocations, onBannerChange: null, showRemoveBanner: null, isTryItOut: null };
     obj = ActionSheetActionCreatorsDefault;
     if (isTryItOut) {
-      let fn = tmp2(8515).setTryItOutBanner;
+      let fn = tmp2(7605).setTryItOutBanner;
     } else {
       fn = (banner) => user(isTryItOut[19]).setPendingChanges({ banner });
     }
     obj2.onBannerChange = fn;
-    const tmp3 = asyncRequireImpl(14963, dependencyMap.paths);
+    const tmp3 = asyncRequireImpl(14125, dependencyMap.paths);
     const tmp4 = isTryItOut;
     let banner;
     if (displayProfile != null) {
@@ -68,14 +68,14 @@ function EditUserProfileBanner(user) {
 }
 get_ActivityIndicator = fn(17);
 ({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const FLOATING_UPSELL_HEIGHT = fn(7541).FLOATING_UPSELL_HEIGHT;
+const FLOATING_UPSELL_HEIGHT = fn(6624).FLOATING_UPSELL_HEIGHT;
 const Constants = fn(1074);
 ({ DISPLAY_NAME_MAX_LENGTH: closure_9, PRONOUNS_MAX_LENGTH: c10 } = Constants);
 let closure_11 = fn(1084).ProfileCustomizationScrollPositions;
-const constants = fn(11549).UserProfileEditAutoFocusElement;
+const constants = fn(10647).UserProfileEditAutoFocusElement;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-let obj = { assetOrigin: fn(7322).AssetOriginTypes.NEW_ASSET, imageUri: _modDef14961, staticImageUri: _modDef14961, description: "", originalAsset: "paddingHorizontal" };
+let obj = { assetOrigin: fn(6405).AssetOriginTypes.NEW_ASSET, imageUri: _modDef14123, staticImageUri: _modDef14123, description: "", originalAsset: "channelId" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditForm.tsx");
 

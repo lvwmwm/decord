@@ -1,11 +1,11 @@
-// Module ID: 13445
-// Function ID: 13446
+// Module ID: 12595
+// Function ID: 12596
 // Name: UserProfileEditNote
-// Dependencies: [32, 19, 17, 1074, 21, 4829, 1484, 13441, 5929, 11275, 4695, 8194, 1115, 13446, 4825, 7418, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4829, 1484, 12591, 5931, 10373, 4697, 7283, 1115, 12596, 4825, 6501, 2]
 // Exports: default
 
-// Module 13445 (UserProfileEditNote)
-import NavigatorHeader from "NavigatorHeader" /* 5929 */;
+// Module 12595 (UserProfileEditNote)
+import NavigatorHeader from "NavigatorHeader" /* 5931 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -60,10 +60,10 @@ export default function UserProfileEditNote(userId) {
         if (closure_5 == null) {
           str = "";
         }
-        const tmp2 = closure_1_1(11275);
+        const tmp2 = closure_1_1(10373);
         tmp2({
           hasEdits: str !== closure_6,
-          onHasEdits: closure_1_0(4695).dismissKeyboard,
+          onHasEdits: closure_1_0(4697).dismissKeyboard,
           resetPending() {
             let str = closure_1_5;
             if (closure_1_5 == null) {

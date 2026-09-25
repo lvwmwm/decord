@@ -1,12 +1,12 @@
-// Module ID: 11725
-// Function ID: 11726
+// Module ID: 10905
+// Function ID: 10906
 // Name: SafetyTipsSection
-// Dependencies: [19, 17, 21, 4829, 576, 5271, 5997, 4825, 1115, 8934, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 5272, 10906, 4825, 1115, 8028, 2]
 // Exports: default
 
-// Module 11725 (SafetyTipsSection)
+// Module 10905 (SafetyTipsSection)
 import nativeDefault from "native" /* 576 */;
-import SafetyTipsRowDefault from "SafetyTipsRow" /* 8934 */;
+import SafetyTipsRowDefault from "SafetyTipsRow" /* 8028 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -23,7 +23,7 @@ export default function SafetyTipsContainer(children) {
   const safetyTips = children.safetyTips;
   let showHeader = children.showHeader;
   const tmp = closure_6();
-  const items = [closure_4(View, { style: tmp.image, children: closure_4(safetyTips(5997).SafetyBookletSpotIllustration, {}) }), , ];
+  const items = [closure_4(View, { style: tmp.image, children: closure_4(safetyTips(10906).SafetyBookletSpotIllustration, {}) }), , ];
   if (showHeader) {
     const obj2 = { style: tmp.text, variant: "heading-xl/semibold", children: null };
     const intl = tmp3(1115).intl;
@@ -34,11 +34,11 @@ export default function SafetyTipsContainer(children) {
   const obj4 = { spacing: 8, align: "center", justify: "center", children: null };
   const items1 = [showHeader, closure_4(safetyTips(4825).Text, { style: tmp.text, accessibilityRole: "header", variant: "text-md/medium", color: "text-default", children: children.description })];
   obj4.children = items1;
-  items[1] = closure_5(safetyTips(5271).Stack, obj4);
-  const obj = { style: tmp.image, children: closure_4(safetyTips(5997).SafetyBookletSpotIllustration, {}) };
+  items[1] = closure_5(safetyTips(5272).Stack, obj4);
+  const obj = { style: tmp.image, children: closure_4(safetyTips(10906).SafetyBookletSpotIllustration, {}) };
   const obj5 = { style: tmp.text, accessibilityRole: "header", variant: "text-md/medium", color: "text-default", children: children.description };
   const tmp6 = View;
   items[2] = closure_4(tmp6, { style: tmp.tips, children: safetyTips.map((tip, index) => React4(SafetyTipsRowDefault, { index: index + 1, tip, end: index === safetyTips.length - 1 }, index)) });
   obj3.children = items;
-  return closure_5(safetyTips(5271).Stack, obj3);
+  return closure_5(safetyTips(5272).Stack, obj3);
 };

@@ -1,22 +1,22 @@
-// Module ID: 16329
-// Function ID: 16330
+// Module ID: 15509
+// Function ID: 15510
 // Name: RedesignSettingsNotificationScreen
-// Dependencies: [19, 15836, 8323, 21, 16330, 1115, 2812, 15837, 11811, 15839, 5290, 16331, 15057, 2]
+// Dependencies: [19, 15006, 7412, 21, 15510, 1115, 2812, 15007, 10993, 15009, 5291, 15511, 14223, 2]
 
-// Module 16329 (RedesignSettingsNotificationScreen)
+// Module 15509 (RedesignSettingsNotificationScreen)
 import util from "util" /* 1115 */;
 import _modDef2812 from "module_2812" /* 2812 */;
-import useMountEffectDefault from "useMountEffect" /* 5290 */;
-import SettingBuilders from "SettingBuilders" /* 11811 */;
-import SettingLayoutDefault from "SettingLayout" /* 15057 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15837 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15839 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 16330 */;
+import useMountEffectDefault from "useMountEffect" /* 5291 */;
+import SettingBuilders from "SettingBuilders" /* 10993 */;
+import SettingLayoutDefault from "SettingLayout" /* 14223 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15007 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15009 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 15510 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_4 = fn(15836).initializeAndroidNotificationSettingsStore;
-const MobileUserSettings = fn(8323).MobileUserSettings;
+let closure_4 = fn(15006).initializeAndroidNotificationSettingsStore;
+const MobileUserSettings = fn(7412).MobileUserSettings;
 const jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/notifications/settings/native/routes/RedesignSettingsNotificationScreen.tsx");

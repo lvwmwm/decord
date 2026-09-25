@@ -1,14 +1,14 @@
-// Module ID: 12292
-// Function ID: 12293
+// Module ID: 11418
+// Function ID: 11419
 // Name: createConversationHeader
-// Dependencies: [8294, 12293, 1115, 3616, 2]
+// Dependencies: [7383, 11419, 1115, 3616, 2]
 // Exports: default, isConversationStartMessage
 
-// Module 12292 (createConversationHeader)
+// Module 11418 (createConversationHeader)
 import util from "util" /* 1115 */;
 import _modDef3616 from "module_3616" /* 3616 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8294 */;
-import _modDef12293 from "module_12293" /* 12293 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7383 */;
+import _modDef11419 from "module_11419" /* 11419 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conversations/native/createConversationHeader.tsx");
@@ -25,7 +25,7 @@ export default function createConversationHeader(startMessageId, arg1) {
     if (tmp) {
       const obj = { conversationId: null, title: null, expandIconUrl: null, expandAccessibilityLabel: null };
       ({ id: obj.conversationId, title: obj.title } = startMessageId);
-      obj.expandIconUrl = renderer_EmbedUtils.getAssetUriForEmbed(_modDef12293);
+      obj.expandIconUrl = renderer_EmbedUtils.getAssetUriForEmbed(_modDef11419);
       const intl = util.intl;
       obj.expandAccessibilityLabel = intl.string(_modDef3616.pU5Dut);
       return obj;

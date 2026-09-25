@@ -1,12 +1,12 @@
-// Module ID: 15014
-// Function ID: 15015
+// Module ID: 14176
+// Function ID: 14177
 // Name: UserProfileLegacyUsernameSwitch
-// Dependencies: [19, 21, 2020, 14989, 1115, 7317, 8512, 2]
+// Dependencies: [19, 21, 2020, 14151, 1115, 6400, 7602, 2]
 // Exports: default
 
-// Module 15014 (UserProfileLegacyUsernameSwitch)
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7317 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8512 */;
+// Module 14176 (UserProfileLegacyUsernameSwitch)
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6400 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7602 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -44,5 +44,5 @@ export default function UserProfileLegacyUsernameSwitch(pendingLegacyUsernameDis
       UserProfileSettingsActionCreators.setPendingChanges(obj2);
     }
   };
-  return jsx(setting(14989).UserProfileEditFormSwitch, { value: !tmp4, label: null, subLabel: null, accessibilityLabel: null, onValueChange: null });
+  return jsx(setting(14151).UserProfileEditFormSwitch, { value: !tmp4, label: null, subLabel: null, accessibilityLabel: null, onValueChange: null });
 };

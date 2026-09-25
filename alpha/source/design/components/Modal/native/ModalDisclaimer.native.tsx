@@ -1,10 +1,10 @@
-// Module ID: 14551
-// Function ID: 14552
+// Module ID: 13712
+// Function ID: 13713
 // Name: ModalDisclaimer
 // Dependencies: [19, 17, 21, 4829, 4825, 2]
 // Exports: ModalDisclaimer
 
-// Module 14551 (ModalDisclaimer)
+// Module 13712 (ModalDisclaimer)
 import Text_Text from "Text/Text" /* 4825 */;
 import noop from "module_19" /* 19 */;
 

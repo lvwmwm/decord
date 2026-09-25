@@ -1,21 +1,21 @@
-// Module ID: 11738
-// Function ID: 11739
+// Module ID: 10920
+// Function ID: 10921
 // Name: ConfirmBlockUserAlert
-// Dependencies: [19, 17, 1372, 11712, 21, 4829, 576, 504, 11739, 4673, 10087, 8754, 8987, 5292, 5273, 1115, 4825, 2]
+// Dependencies: [19, 17, 1372, 10892, 21, 4829, 576, 504, 10921, 4675, 9184, 7844, 8081, 5293, 5274, 1115, 4825, 2]
 // Exports: default
 
-// Module 11738 (ConfirmBlockUserAlert)
+// Module 10920 (ConfirmBlockUserAlert)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import ReportModals from "ReportModals" /* 8987 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10087 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import ReportModals from "ReportModals" /* 8081 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9184 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const LOCATION_CONTEXT_MOBILE = fn(11712).LOCATION_CONTEXT_MOBILE;
+const LOCATION_CONTEXT_MOBILE = fn(10892).LOCATION_CONTEXT_MOBILE;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4829);

@@ -1,12 +1,9 @@
 // Module ID: 14395
 // Function ID: 14396
-// Dependencies: [14381]
+// Dependencies: [1121]
 
 // Module 14395
-import _mod14381 from "module_14381" /* 14381 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default (arg0, arg1, arg2) => {
-  const obj = new _mod14381(arg0, arg2);
-  return obj.compare(new _mod14381(arg1, arg2));
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools/images", width: 185, height: 125, scales: [1, 2, 3], hash: "fa358a5ff3d1f49a00fc1180e0e601e5", name: "family_center_activity_banner_image_parent", type: "png" });

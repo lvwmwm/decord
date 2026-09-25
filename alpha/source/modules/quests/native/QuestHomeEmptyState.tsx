@@ -1,17 +1,17 @@
-// Module ID: 15403
-// Function ID: 15404
+// Module ID: 14569
+// Function ID: 14570
 // Name: QuestHomeEmptyState
-// Dependencies: [19, 17, 1074, 21, 4829, 576, 1115, 4526, 4689, 7456, 1364, 4825, 15404, 5285, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 576, 1115, 4528, 4691, 6539, 1364, 4825, 14570, 5286, 2]
 // Exports: default
 
-// Module 15403 (QuestHomeEmptyState)
+// Module 14569 (QuestHomeEmptyState)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import useToken from "useToken" /* 4526 */;
-import useChatLayoutDefault from "useChatLayout" /* 4689 */;
+import useToken from "useToken" /* 4528 */;
+import useChatLayoutDefault from "useChatLayout" /* 4691 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7456 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6539 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -57,13 +57,13 @@ export default function QuestHomeEmptyState(subtitle) {
   let tmp11Result = null;
   if (!useChatLayoutDefault().isChatLockedOpen) {
     const obj10 = { children: null };
-    const obj11 = { style: tmp5.emptyImage, source: tmp7(15404), resizeMode: "cover" };
+    const obj11 = { style: tmp5.emptyImage, source: tmp7(14570), resizeMode: "cover" };
     const items2 = [tmp9(React4, obj11), ];
     const obj22 = { style: tmp5.gradient, end: null, start: null, colors: null };
     ({ END: obj12.end, START: obj12.start } = VerticalGradient);
     const items3 = ["rgba(0, 0, 0, 0)", token];
     obj22.colors = items3;
-    items2[1] = tmp9(tmp7(5285), obj22);
+    items2[1] = tmp9(tmp7(5286), obj22);
     obj10.children = items2;
     tmp11Result = tmp11(React6, obj10);
   }

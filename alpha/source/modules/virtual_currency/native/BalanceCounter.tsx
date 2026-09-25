@@ -1,12 +1,12 @@
-// Module ID: 11452
-// Function ID: 11453
+// Module ID: 10550
+// Function ID: 10551
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 4561, 4545, 5272, 11453, 4825, 2]
+// Dependencies: [32, 19, 21, 4563, 4547, 5273, 10551, 4825, 2]
 
-// Module 11452 (BalanceCounter)
-import AccessibilityPreferencesContext from "AccessibilityPreferencesContext" /* 4545 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
-import spring from "spring" /* 5272 */;
+// Module 10550 (BalanceCounter)
+import AccessibilityPreferencesContext from "AccessibilityPreferencesContext" /* 4547 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
+import spring from "spring" /* 5273 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop_mod from "module_19" /* 19 */;
 

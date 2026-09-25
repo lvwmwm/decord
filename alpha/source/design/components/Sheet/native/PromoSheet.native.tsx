@@ -1,10 +1,10 @@
-// Module ID: 10578
-// Function ID: 10579
+// Module ID: 9680
+// Function ID: 9681
 // Name: PromoSheet
-// Dependencies: [109, 19, 17, 21, 4829, 576, 10579, 7483, 5271, 10580, 4825, 2]
+// Dependencies: [109, 19, 17, 21, 4829, 576, 9681, 6566, 5272, 9682, 4825, 2]
 // Exports: PromoSheet
 
-// Module 10578 (PromoSheet)
+// Module 9680 (PromoSheet)
 import nativeDefault from "native" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -28,7 +28,7 @@ export const PromoSheet = function PromoSheet(arg0) {
   const memo = noop.useMemo(() => null != gradientColor ? ((arg0) => {
     const obj = {};
     const merged = Object.assign(arg0);
-    obj.children = closure_2_7(gradientColor(10579).ExpressiveGradient, { offsetBottom: 0.25, color, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND });
+    obj.children = closure_2_7(gradientColor(9681).ExpressiveGradient, { offsetBottom: 0.25, color, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND });
     return closure_2_7(View, obj);
   }) : undefined, items);
   let obj = {};
@@ -40,7 +40,7 @@ export const PromoSheet = function PromoSheet(arg0) {
     const obj2 = {};
     const merged1 = Object.assign(graphic);
     obj2.style = tmp2.graphic;
-    let tmp4Result = tmp4(tmp5(10580).Graphic, obj2);
+    let tmp4Result = tmp4(tmp5(9682).Graphic, obj2);
   } else {
     tmp4Result = null;
     if (null != illustration) {
@@ -57,9 +57,9 @@ export const PromoSheet = function PromoSheet(arg0) {
   }
   const obj6 = { spacing: 24, children: null };
   items2[1] = tmp4Result2;
-  items1[1] = closure_8(gradientColor(5271).Stack, { children: items2 });
+  items1[1] = closure_8(gradientColor(5272).Stack, { children: items2 });
   items1[2] = actions;
   obj6.children = items1;
-  obj.children = closure_8(gradientColor(5271).Stack, obj6);
-  return closure_7(gradientColor(7483).BottomSheet, obj);
+  obj.children = closure_8(gradientColor(5272).Stack, obj6);
+  return closure_7(gradientColor(6566).BottomSheet, obj);
 };

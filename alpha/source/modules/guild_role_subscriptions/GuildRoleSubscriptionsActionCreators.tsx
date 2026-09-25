@@ -1,12 +1,12 @@
-// Module ID: 7585
-// Function ID: 7586
+// Module ID: 6668
+// Function ID: 6669
 // Name: GuildRoleSubscriptionsActionCreators
-// Dependencies: [32, 5, 1074, 7586, 573, 5166, 7587, 1241, 5009, 4858, 1091, 2]
+// Dependencies: [32, 5, 1074, 6669, 573, 5167, 6670, 1241, 5009, 4858, 1091, 2]
 // Exports: archiveSubscriptionListing, createSubscriptionGroupListing, createSubscriptionListing, deleteSubscriptionGroupListing, deleteSubscriptionListing, fetchAllSubscriptionListingsDataForGuild, fetchMonetizationRestrictions, fetchSubscriptionListingForPlan, fetchSubscriptionsSettings, updateSubscriptionGroupListing, updateSubscriptionListing, updateSubscriptionTrial, updateSubscriptionsSettings
 
-// Module 7585 (GuildRoleSubscriptionsActionCreators)
+// Module 6668 (GuildRoleSubscriptionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7586 */;
+import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 6669 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 

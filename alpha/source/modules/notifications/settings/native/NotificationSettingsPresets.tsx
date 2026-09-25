@@ -1,14 +1,14 @@
-// Module ID: 10497
-// Function ID: 10498
+// Module ID: 9599
+// Function ID: 9600
 // Name: NotificationSettingsPresets
-// Dependencies: [19, 17, 21, 1115, 5013, 4788, 10498, 10500, 4829, 576, 9974, 4825, 5273, 9975, 10502, 10494, 2]
+// Dependencies: [19, 17, 21, 1115, 5013, 4788, 9600, 9602, 4829, 576, 9072, 4825, 5274, 9073, 9604, 9596, 2]
 // Exports: NotificationSettingsChannelPresets, NotificationSettingsGuildPresets
 
-// Module 10497 (NotificationSettingsPresets)
+// Module 9599 (NotificationSettingsPresets)
 import nativeDefault from "native" /* 576 */;
 import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 5013 */;
-import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10494 */;
-import notificationSettingsGuildFlagUtils from "notificationSettingsGuildFlagUtils" /* 10502 */;
+import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 9596 */;
+import notificationSettingsGuildFlagUtils from "notificationSettingsGuildFlagUtils" /* 9604 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

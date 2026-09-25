@@ -1,11 +1,11 @@
-// Module ID: 17271
-// Function ID: 17272
+// Module ID: 16486
+// Function ID: 16487
 // Name: ThreadChannelUserList
-// Dependencies: [19, 2044, 2107, 2066, 1372, 1074, 21, 7495, 504, 17272, 7382, 550, 7642, 4673, 8527, 11216, 2]
+// Dependencies: [19, 2044, 2107, 2066, 1372, 1074, 21, 6578, 504, 16487, 6465, 550, 6725, 4675, 7617, 10314, 2]
 
-// Module 17271 (ThreadChannelUserList)
+// Module 16486 (ThreadChannelUserList)
 import throttleDefault from "throttle" /* 550 */;
-import UserUtilsDefault from "UserUtils" /* 4673 */;
+import UserUtilsDefault from "UserUtils" /* 4675 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildMemberStore from "GuildMemberStore" /* 2107 */;

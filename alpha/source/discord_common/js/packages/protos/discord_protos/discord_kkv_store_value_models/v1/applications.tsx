@@ -1,9 +1,9 @@
-// Module ID: 9414
-// Function ID: 9415
+// Module ID: 8512
+// Function ID: 8513
 // Name: applications
 // Dependencies: [32, 1187, 1216, 2]
 
-// Module 9414 (applications)
+// Module 8512 (applications)
 import _mod1187 from "module_1187" /* 1187 */;
 import timestamp from "timestamp" /* 1216 */;
 import _slicedToArray from "module_32" /* 32 */;

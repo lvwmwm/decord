@@ -1,17 +1,17 @@
-// Module ID: 16458
-// Function ID: 16459
+// Module ID: 15638
+// Function ID: 15639
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 4869, 4844, 4474, 2098, 5010, 1372, 1074, 21, 4829, 576, 504, 16459, 8565, 1364, 4842, 4840, 11265, 5427, 9951, 9179, 16460, 8210, 9175, 16461, 8607, 16462, 2]
+// Dependencies: [19, 17, 4869, 4844, 4476, 2098, 5010, 1372, 1074, 21, 4829, 576, 504, 15639, 7655, 1364, 4842, 4840, 10363, 5428, 9049, 8273, 15640, 7299, 8269, 15641, 7697, 15642, 2]
 
-// Module 16458 (MessagesItemChannelBase)
+// Module 15638 (MessagesItemChannelBase)
 import nativeDefault from "native" /* 576 */;
 import transitionToChannel from "transitionToChannel" /* 4840 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4842 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11265 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10363 */;
 import noop from "module_19" /* 19 */;
 import PresenceStore from "PresenceStore" /* 4869 */;
 import ReadStateStore from "ReadStateStore" /* 4844 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -75,7 +75,7 @@ export default noop.memo(function MessagesItemChannelBase(channel) {
       const obj2 = { status: PresenceStore.getStatus(obj.getRecipientId()), activities };
       let obj3 = obj2;
     } else {
-      obj3 = { status: "channel", activities: "channelId" };
+      obj3 = { status: "isArray", activities: "paddingHorizontal" };
     }
     return obj3;
   });

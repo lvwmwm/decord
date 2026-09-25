@@ -1,17 +1,17 @@
-// Module ID: 13451
-// Function ID: 13452
+// Module ID: 12601
+// Function ID: 12602
 // Name: UserProfileGameFriendActionSheet
-// Dependencies: [5, 32, 19, 17, 4474, 1074, 21, 4829, 576, 12968, 7532, 5985, 1177, 4825, 13452, 7501, 4981, 10087, 4522, 4796, 7530, 7482, 1115, 2]
+// Dependencies: [5, 32, 19, 17, 4476, 1074, 21, 4829, 576, 12099, 6615, 5987, 1177, 4825, 12602, 6584, 4981, 9184, 4524, 4796, 6613, 6565, 1115, 2]
 // Exports: default
 
-// Module 13451 (UserProfileGameFriendActionSheet)
+// Module 12601 (UserProfileGameFriendActionSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12968 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12099 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 
 require = fn;
 function GameFriendApplicationRow(application) {

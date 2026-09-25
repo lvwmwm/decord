@@ -1,10 +1,10 @@
-// Module ID: 9813
-// Function ID: 9814
+// Module ID: 8911
+// Function ID: 8912
 // Name: EmbeddedActivityWebView
-// Dependencies: [5, 32, 19, 17, 9214, 2004, 1074, 4733, 21, 4829, 3, 1364, 9814, 1255, 8648, 9815, 9816, 1363, 9818, 9819, 9820, 1241, 1110, 563, 5195, 1115, 9397, 1271, 9821, 1366, 9647, 9660, 8622, 5030, 9659, 2]
+// Dependencies: [5, 32, 19, 17, 8312, 2004, 1074, 4735, 21, 4829, 3, 1364, 8912, 1255, 7738, 8913, 8914, 1363, 8916, 8917, 8918, 1241, 1110, 563, 5196, 1115, 8495, 1271, 8919, 1366, 8745, 8758, 7712, 5030, 8757, 2]
 // Exports: default, useHasInvalidUrlErrorState
 
-// Module 9813 (EmbeddedActivityWebView)
+// Module 8911 (EmbeddedActivityWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import util from "util" /* 1115 */;
@@ -12,16 +12,16 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import v1 from "v1" /* 1255 */;
 import URLUtilsDefault from "URLUtils" /* 1366 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5030 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5195 */;
-import usePreviousDefault from "usePrevious" /* 8622 */;
-import WebView from "WebView" /* 8648 */;
-import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 9647 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9659 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 9660 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5196 */;
+import usePreviousDefault from "usePrevious" /* 7712 */;
+import WebView from "WebView" /* 7738 */;
+import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 8745 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8757 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 8758 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9214 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 8312 */;
 
 require = fn;
 function getSafeArea(arg0, arg1) {
@@ -916,7 +916,7 @@ let Constants = fn(2004);
 ({ ActivityPlatform: closure_9, DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY: c10 } = Constants);
 Constants = fn(1074);
 ({ ComponentActions: closure_11, AnalyticEvents: closure_12 } = Constants);
-const TransportTypes = fn(4733).TransportTypes;
+const TransportTypes = fn(4735).TransportTypes;
 const jsx = fn(21).jsx;
 const createStyles = fn(4829);
 let closure_15 = createStyles.createStyles({ webView: { backgroundColor: "transparent" } });

@@ -1,19 +1,19 @@
-// Module ID: 8965
-// Function ID: 8966
+// Module ID: 8059
+// Function ID: 8060
 // Name: FormSwitchRow
-// Dependencies: [32, 19, 17, 21, 4829, 1364, 7470, 7472, 8963, 5991, 7533, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 1364, 6553, 6555, 8057, 5993, 6616, 2]
 // Exports: default
 
-// Module 8965 (FormSwitchRow)
+// Module 8059 (FormSwitchRow)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import RedesignCompat from "RedesignCompat" /* 5991 */;
-import FormRowDefault from "FormRow" /* 7470 */;
-import FormLabelDefault from "FormLabel" /* 7472 */;
-import TableSwitchRow from "TableSwitchRow" /* 7533 */;
+import RedesignCompat from "RedesignCompat" /* 5993 */;
+import FormRowDefault from "FormRow" /* 6553 */;
+import FormLabelDefault from "FormLabel" /* 6555 */;
+import TableSwitchRow from "TableSwitchRow" /* 6616 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const Form_FormSwitchDefault = tmp13(8963);
+const Form_FormSwitchDefault = tmp13(8057);
 require = fn;
 function FormSwitchRow(onValueChange) {
   onValueChange = onValueChange.onValueChange;

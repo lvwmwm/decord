@@ -1,19 +1,19 @@
-// Module ID: 11790
-// Function ID: 11791
+// Module ID: 10972
+// Function ID: 10973
 // Name: SubscriptionUtils
-// Dependencies: [32, 19, 4488, 1074, 1374, 38, 11791, 4483, 7587, 504, 11793, 4416, 2]
+// Dependencies: [32, 19, 4490, 1074, 1374, 38, 10973, 4485, 6670, 504, 10975, 4418, 2]
 // Exports: didBeginPurchaseFlowOnFractionalPremium, getOrFetchSubscriptionPlan, getSubscriptionPauseDurations, getSubscriptionPlans, getSubscriptionSKUs, subscriptionCanDowngrade, subscriptionCanSwitchImmediately, useGetOrFetchSubscriptionPlan
 
-// Module 11790 (SubscriptionUtils)
+// Module 10972 (SubscriptionUtils)
 import _modDef38 from "module_38" /* 38 */;
-import _modDef4416 from "module_4416" /* 4416 */;
-import PremiumUtils from "PremiumUtils" /* 4483 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7587 */;
-import CheckoutError from "CheckoutError" /* 11791 */;
-import PauseDuration from "PauseDuration" /* 11793 */;
+import _modDef4418 from "module_4418" /* 4418 */;
+import PremiumUtils from "PremiumUtils" /* 4485 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6670 */;
+import CheckoutError from "CheckoutError" /* 10973 */;
+import PauseDuration from "PauseDuration" /* 10975 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4488 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4490 */;
 
 const require = globalThis.__r;
 
@@ -99,8 +99,8 @@ export const getOrFetchSubscriptionPlan = function getOrFetchSubscriptionPlan(su
     const tmp9 = null != dependencyMap[subscriptionPlanId];
     const result = PremiumUtils.castPremiumSubscriptionAsSkuId(tmp5.skuId);
     if (!SubscriptionPlanStore.isFetchingForSKU(result)) {
-      const subscriptionPlansForSKU = tmp12(7587).fetchSubscriptionPlansForSKU(result, arg1);
-      const tmp12Result = tmp12(7587);
+      const subscriptionPlansForSKU = tmp12(6670).fetchSubscriptionPlansForSKU(result, arg1);
+      const tmp12Result = tmp12(6670);
     }
   }
   return value;
@@ -147,9 +147,9 @@ export const getSubscriptionPauseDurations = function getSubscriptionPauseDurati
     const obj3 = { durations: found, currentDaysPaused: 0 };
     return obj3;
   } else if (null != status.pauseEndsAt) {
-    const tmp6 = _modDef4416(status.currentPeriodStart);
+    const tmp6 = _modDef4418(status.currentPeriodStart);
     const _Math = Math;
-    const rounded = Math.round(_modDef4416(status.pauseEndsAt).diff(tmp6, "days", true));
+    const rounded = Math.round(_modDef4418(status.pauseEndsAt).diff(tmp6, "days", true));
     const items = [];
     for (const item10042 of found) {
       let tmp10 = item10042;
@@ -168,10 +168,10 @@ export const getSubscriptionPauseDurations = function getSubscriptionPauseDurati
 export const didBeginPurchaseFlowOnFractionalPremium = function didBeginPurchaseFlowOnFractionalPremium(isSameOrAfter) {
   let isMomentResult = null != isSameOrAfter;
   if (isMomentResult) {
-    isMomentResult = _modDef4416.isMoment(isSameOrAfter);
+    isMomentResult = _modDef4418.isMoment(isSameOrAfter);
   }
   if (isMomentResult) {
-    isMomentResult = isSameOrAfter.isSameOrAfter(_modDef4416());
+    isMomentResult = isSameOrAfter.isSameOrAfter(_modDef4418());
   }
   return isMomentResult;
 };

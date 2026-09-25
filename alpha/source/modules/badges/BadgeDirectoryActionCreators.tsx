@@ -1,10 +1,10 @@
-// Module ID: 8545
-// Function ID: 8546
+// Module ID: 7635
+// Function ID: 7636
 // Name: BadgeDirectoryActionCreators
-// Dependencies: [5, 1372, 1074, 573, 1271, 5171, 5176, 1231, 559, 1091, 2]
+// Dependencies: [5, 1372, 1074, 573, 1271, 5172, 5177, 1231, 559, 1091, 2]
 // Exports: fetchBadge, fetchBadgeDirectory, fetchBadgeSummary, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8545 (BadgeDirectoryActionCreators)
+// Module 7635 (BadgeDirectoryActionCreators)
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -331,7 +331,7 @@ export const fetchBadge = function fetchBadge() {
   }
   return applyArgumentsResult;
 };
-export const fetchBadgeSummary = function fetchBadgeSummary(arg0, id) {
+export const fetchBadgeSummary = function fetchBadgeSummary(GIFTING, id) {
   let tmp = id;
   if (id == null) {
     const currentUser = UserStore.getCurrentUser();
@@ -345,7 +345,7 @@ export const fetchBadgeSummary = function fetchBadgeSummary(arg0, id) {
     return Promise.resolve();
   } else {
     const _HermesInternal = HermesInternal;
-    const combined = "" + tmp + "#" + arg0;
+    const combined = "" + tmp + "#" + GIFTING;
     value = map.get(combined);
     if (null != value) {
       return value;
@@ -371,7 +371,7 @@ export const fetchBadgeSummary = function fetchBadgeSummary(arg0, id) {
             applyArgumentsResult = apply(self, arguments);
           }
           return applyArgumentsResult;
-        })(combined, arg0, tmp).finally(() => {
+        })(combined, GIFTING, tmp).finally(() => {
           if (map.get(combined) === cleanupPromise) {
             map.delete(combined);
           }

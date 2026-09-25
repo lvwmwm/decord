@@ -1,26 +1,26 @@
-// Module ID: 7855
-// Function ID: 7856
+// Module ID: 6940
+// Function ID: 6941
 // Name: ChannelListStore
-// Dependencies: [2043, 2099, 7856, 5811, 4466, 1220, 502, 7450, 2044, 7857, 4464, 4844, 2098, 5010, 1084, 7858, 12, 1370, 4453, 11, 504, 573, 2]
+// Dependencies: [2043, 2099, 6941, 5813, 4468, 1220, 502, 6533, 2044, 6942, 4466, 4844, 2098, 5010, 1084, 6943, 12, 1370, 4455, 11, 504, 573, 2]
 
-// Module 7855 (ChannelListStore)
+// Module 6940 (ChannelListStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4453 */;
-import ChannelListStateDefault from "ChannelListState" /* 7858 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4455 */;
+import ChannelListStateDefault from "ChannelListState" /* 6943 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
 import GatedChannelStore from "GatedChannelStore" /* 2099 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7856 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5811 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4466 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6941 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5813 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4468 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7450 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 6533 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7857 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 6942 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
 import ReadStateStore from "ReadStateStore" /* 4844 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;

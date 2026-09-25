@@ -1,13 +1,13 @@
-// Module ID: 17342
-// Function ID: 17343
+// Module ID: 16557
+// Function ID: 16558
 // Name: ContactSuggestionRow
-// Dependencies: [19, 4821, 1074, 21, 4673, 4561, 1115, 563, 16471, 16470, 11218, 16869, 16870, 1241, 2]
+// Dependencies: [19, 4821, 1074, 21, 4675, 4563, 1115, 563, 15651, 15650, 10316, 16055, 16056, 1241, 2]
 // Exports: ContactSuggestionRow
 
-// Module 17342 (ContactSuggestionRow)
+// Module 16557 (ContactSuggestionRow)
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16471 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 15651 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 

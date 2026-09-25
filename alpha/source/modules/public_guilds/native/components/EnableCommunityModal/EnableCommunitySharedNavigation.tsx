@@ -1,13 +1,13 @@
-// Module ID: 18203
-// Function ID: 18204
+// Module ID: 17434
+// Function ID: 17435
 // Name: EnableCommunitySharedNavigation
-// Dependencies: [19, 17, 9940, 1074, 21, 4829, 504, 1484, 5258, 5267, 573, 18201, 7372, 7456, 5273, 1115, 2]
+// Dependencies: [19, 17, 9038, 1074, 21, 4829, 504, 1484, 5259, 5268, 573, 17432, 6455, 6539, 5274, 1115, 2]
 // Exports: EnableCommunityModalScreen
 
-// Module 18203 (EnableCommunitySharedNavigation)
+// Module 17434 (EnableCommunitySharedNavigation)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import noop from "module_19" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9940 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9038 */;
 
 const require = globalThis.__r;
 

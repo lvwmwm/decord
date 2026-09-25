@@ -1,24 +1,30 @@
-// Module ID: 12134
-// Function ID: 12135
+// Module ID: 11256
+// Function ID: 11257
 // Name: guild_templates/GuildTemplateActionCreators
-// Dependencies: [7654, 5032, 12135, 1980, 573, 2]
+// Dependencies: [6737, 5032, 11257, 1980, 573, 2]
 
-// Module 12134 (guild_templates/GuildTemplateActionCreators)
+// Module 11256 (guild_templates/GuildTemplateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
-import GuildTemplateActionCreatorsDefault from "GuildTemplateActionCreators" /* 7654 */;
+import GuildTemplateActionCreatorsDefault from "GuildTemplateActionCreators" /* 6737 */;
 
 require = fn;
 const GUILD_TEMPLATE_MODAL_KEY = "GUILD_TEMPLATE_MODAL_KEY";
 let obj = {};
 const GuildTemplateActionCreators = Object.assign(GuildTemplateActionCreatorsDefault);
 obj.showModal = function showModal(code) {
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12135, dependencyMap.paths), { code }, GUILD_TEMPLATE_MODAL_KEY);
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = true;
+  }
+  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11257, dependencyMap.paths), { code }, GUILD_TEMPLATE_MODAL_KEY);
   const obj2 = { code };
   DispatcherDefault.dispatch({ type: "GUILD_TEMPLATE_MODAL_SHOW", code });
-  const obj4 = { type: "GUILD_TEMPLATE_MODAL_SHOW", code };
-  const guildTemplate = GuildTemplateActionCreatorsDefault.resolveGuildTemplate(code);
+  if (flag) {
+    const guildTemplate = GuildTemplateActionCreatorsDefault.resolveGuildTemplate(code);
+    const tmpResult = GuildTemplateActionCreatorsDefault;
+  }
 };
 obj.hideModal = function hideModal() {
   ModalActionCreatorsDefault.popWithKey(GUILD_TEMPLATE_MODAL_KEY);

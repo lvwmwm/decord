@@ -1,14 +1,14 @@
-// Module ID: 11102
-// Function ID: 11103
+// Module ID: 16718
+// Function ID: 16719
 // Name: SlayerStorefrontTimeUtils
-// Dependencies: [32, 19, 4416, 1091, 1115, 3584, 7775, 2]
+// Dependencies: [32, 19, 4418, 1091, 1115, 3584, 6860, 2]
 // Exports: useTickingFormattedLimitedOfferTimeLeft
 
-// Module 11102 (SlayerStorefrontTimeUtils)
+// Module 16718 (SlayerStorefrontTimeUtils)
 import util from "util" /* 1115 */;
 import _modDef3584 from "module_3584" /* 3584 */;
-import _modDef4416 from "module_4416" /* 4416 */;
-import useIntervalDefault from "useInterval" /* 7775 */;
+import _modDef4418 from "module_4418" /* 4418 */;
+import useIntervalDefault from "useInterval" /* 6860 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,7 +17,7 @@ function getLimitedOfferTimeLeft(arg0) {
   if (null == arg0) {
     return null;
   } else {
-    const diffResult = _modDef4416(arg0).diff(_modDef4416(), "seconds");
+    const diffResult = _modDef4418(arg0).diff(_modDef4418(), "seconds");
     let tmp4 = null;
     if (diffResult > 0) {
       const time = { days: null, hours: null, minutes: null, seconds: null };

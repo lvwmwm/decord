@@ -1,12 +1,12 @@
-// Module ID: 14490
-// Function ID: 14491
+// Module ID: 13651
+// Function ID: 13652
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4829, 576, 4680, 4825, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4682, 4825, 2]
 // Exports: default
 
-// Module 14490 (EmptyState)
+// Module 13651 (EmptyState)
 import nativeDefault from "native" /* 576 */;
-import shared from "shared" /* 4680 */;
+import shared from "shared" /* 4682 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -49,11 +49,11 @@ export default function EmptyState(Illustration) {
       const obj3 = {};
       const merged1 = Object.assign(closure_7);
       obj3.resizeMode = "contain";
-      obj3.source = tmp2(4680).isThemeLight(tmp8) ? Illustration.lightSource : Illustration.darkSource;
+      obj3.source = tmp2(4682).isThemeLight(tmp8) ? Illustration.lightSource : Illustration.darkSource;
       const items1 = [tmp.emptyImage, Illustration.imageStyle];
       obj3.style = items1;
       tmp11Result = React4(React3, obj3);
-      const tmp2Result2 = tmp2(4680);
+      const tmp2Result2 = tmp2(4682);
     }
     tmp9 = null != Illustration.lightSource && null != Illustration.darkSource;
   }

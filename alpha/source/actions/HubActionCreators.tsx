@@ -1,9 +1,9 @@
-// Module ID: 13080
-// Function ID: 13081
+// Module ID: 12228
+// Function ID: 12229
 // Name: HubActionCreators
 // Dependencies: [5, 1074, 5022, 1249, 2056, 1271, 573, 2]
 
-// Module 13080 (HubActionCreators)
+// Module 12228 (HubActionCreators)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import TypeUtils from "TypeUtils" /* 2056 */;

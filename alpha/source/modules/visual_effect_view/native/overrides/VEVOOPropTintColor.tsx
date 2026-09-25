@@ -1,16 +1,16 @@
-// Module ID: 16346
-// Function ID: 16347
+// Module ID: 15526
+// Function ID: 15527
 // Name: VEVOOPropTintColor
-// Dependencies: [32, 19, 17, 5262, 21, 4829, 576, 16343, 4678, 8951, 7534, 16345, 14966, 1092, 2]
+// Dependencies: [32, 19, 17, 5263, 21, 4829, 576, 15523, 4680, 8045, 6617, 15525, 14128, 1092, 2]
 
-// Module 16346 (VEVOOPropTintColor)
+// Module 15526 (VEVOOPropTintColor)
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import ColorUtils from "ColorUtils" /* 4678 */;
-import FormSwitch from "FormSwitch" /* 7534 */;
-import Form from "Form" /* 8951 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14966 */;
-import VEVOO from "VEVOO" /* 16343 */;
+import ColorUtils from "ColorUtils" /* 4680 */;
+import FormSwitch from "FormSwitch" /* 6617 */;
+import Form from "Form" /* 8045 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14128 */;
+import VEVOO from "VEVOO" /* 15523 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const VEVOOStore = fn(5262);
+const VEVOOStore = fn(5263);
 ({ getVisualEffectViewOverrides: metroRequire, setVisualEffectViewOverides: closure_7 } = VEVOOStore);
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
@@ -127,7 +127,7 @@ export default noop.memo(function VEVOOPropTintColor() {
   const ref = noop.useRef(first1);
   const tmp14 = closure_10;
   const tmp15 = closure_9;
-  obj7.subLabel = closure_8(backgroundColor(16345), {
+  obj7.subLabel = closure_8(backgroundColor(15525), {
     disabled: !tmp7,
     initialValue: noop.useRef(first1),
     onValueChange(arg0) {

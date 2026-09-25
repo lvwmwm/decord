@@ -1,11 +1,11 @@
-// Module ID: 14526
-// Function ID: 14527
+// Module ID: 13687
+// Function ID: 13688
 // Name: NitroGem9Lottie
-// Dependencies: [19, 21, 10297, 14527, 2]
+// Dependencies: [19, 21, 9394, 13688, 2]
 
-// Module 14526 (NitroGem9Lottie)
-import LottieIcon from "LottieIcon" /* 10297 */;
-import _mod14527 from "module_14527" /* 14527 */;
+// Module 13687 (NitroGem9Lottie)
+import LottieIcon from "LottieIcon" /* 9394 */;
+import _mod13688 from "module_13688" /* 13688 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,5 +17,5 @@ const result = size.fileFinishedImporting("design/components/LottieIcon/native/g
 
 export const NitroGem9Lottie = noop.forwardRef((arg0, ref) => {
   const merged = Object.assign(arg0);
-  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod14527, animation: "all", ref, layers, markers: items });
+  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod13688, animation: "all", ref, layers, markers: items });
 });

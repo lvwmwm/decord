@@ -1,16 +1,16 @@
-// Module ID: 16523
-// Function ID: 16524
+// Module ID: 15703
+// Function ID: 15704
 // Name: MessagesItemSuggestedFriendsHeader
-// Dependencies: [19, 17, 21, 4825, 576, 4829, 4561, 8617, 5429, 1115, 2]
+// Dependencies: [19, 17, 21, 4825, 576, 4829, 4563, 7707, 5430, 1115, 2]
 
-// Module 16523 (MessagesItemSuggestedFriendsHeader)
+// Module 15703 (MessagesItemSuggestedFriendsHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import noop from "module_19" /* 19 */;
 
-const ThemedGradientDefault = tmp5(5429);
+const ThemedGradientDefault = tmp5(5430);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);

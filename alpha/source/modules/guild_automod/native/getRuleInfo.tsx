@@ -1,13 +1,13 @@
-// Module ID: 18054
-// Function ID: 18055
+// Module ID: 17282
+// Function ID: 17283
 // Name: getRuleInfo
-// Dependencies: [12205, 5396, 18055, 18057, 16249, 9632, 18058, 4771, 2]
+// Dependencies: [11327, 5397, 17283, 17285, 15428, 8730, 17286, 4771, 2]
 // Exports: getRuleInfo
 
-// Module 18054 (getRuleInfo)
-import Constants from "Constants" /* 12205 */;
-import _modDef18057 from "module_18057" /* 18057 */;
-import BaseRuleInfo from "BaseRuleInfo" /* 18058 */;
+// Module 17282 (getRuleInfo)
+import Constants from "Constants" /* 11327 */;
+import _modDef17285 from "module_17285" /* 17285 */;
+import BaseRuleInfo from "BaseRuleInfo" /* 17286 */;
 import size from "module_2" /* 2 */;
 
 const AutomodTriggerType = Constants.AutomodTriggerType;
@@ -22,24 +22,24 @@ export const getRuleInfo = function getRuleInfo(triggerType, rule) {
       const obj2 = {};
       const merged = Object.assign(baseRuleInfo);
       if (AutomodTriggerType.MENTION_SPAM === triggerType) {
-        const obj3 = { IconComponent: tmp(5396).AtIcon };
+        const obj3 = { IconComponent: tmp(5397).AtIcon };
         let tmp9 = obj3;
       } else if (tmp8.KEYWORD === triggerType) {
-        const obj4 = { IconComponent: tmp(18055).ChannelListPlusIcon };
+        const obj4 = { IconComponent: tmp(17283).ChannelListPlusIcon };
         tmp9 = obj4;
       } else {
         if (tmp8.ML_SPAM !== triggerType) {
           if (tmp8.USER_PROFILE !== triggerType) {
             if (tmp8.DEFAULT_KEYWORD_LIST === triggerType) {
-              const obj5 = { IconComponent: tmp(16249).MenuIcon };
+              const obj5 = { IconComponent: tmp(15428).MenuIcon };
               tmp9 = obj5;
             } else if (tmp8.APPLICATION === triggerType) {
-              const obj6 = { IconComponent: tmp(9632).RobotIcon };
+              const obj6 = { IconComponent: tmp(8730).RobotIcon };
               tmp9 = obj6;
             }
           }
         }
-        const obj7 = { source: _modDef18057 };
+        const obj7 = { source: _modDef17285 };
         tmp9 = obj7;
       }
       if (tmp9 == null) {

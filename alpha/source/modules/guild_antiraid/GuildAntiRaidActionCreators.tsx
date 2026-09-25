@@ -1,16 +1,16 @@
-// Module ID: 12173
-// Function ID: 12174
+// Module ID: 11295
+// Function ID: 11296
 // Name: GuildAntiRaidActionCreators
-// Dependencies: [5, 2066, 8364, 1074, 1241, 5009, 9939, 4416, 1271, 10448, 2]
+// Dependencies: [5, 2066, 7453, 1074, 1241, 5009, 9037, 4418, 1271, 9550, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 12173 (GuildAntiRaidActionCreators)
+// Module 11295 (GuildAntiRaidActionCreators)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import _modDef4416 from "module_4416" /* 4416 */;
+import _modDef4418 from "module_4418" /* 4418 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5009 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9939 */;
-import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 10448 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9037 */;
+import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 9550 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import GuildStore from "GuildStore" /* 2066 */;
 
@@ -95,9 +95,9 @@ let closure_10 = async function _setGuildIncidentActions() {
   }
   let toISOStringResult = null;
   if (tmp5) {
-    _modDef4416();
-    toISOStringResult = _modDef4416().add(tmp8, "hours").toISOString();
-    _modDef4416().add(tmp8, "hours");
+    _modDef4418();
+    toISOStringResult = _modDef4418().add(tmp8, "hours").toISOString();
+    _modDef4418().add(tmp8, "hours");
   }
   let tmp12 = null;
   if (closure_1) {
@@ -246,7 +246,7 @@ let closure_12 = async function _handleReportRaid(arg0, value) {
     }
   }
 };
-const DEFAULT_LOCKDOWN_DURATION = fn(8364).DEFAULT_LOCKDOWN_DURATION;
+const DEFAULT_LOCKDOWN_DURATION = fn(7453).DEFAULT_LOCKDOWN_DURATION;
 const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, Endpoints: closure_7, GuildFeatures: closure_8 } = Constants);
 const size = fn(2);

@@ -1,24 +1,24 @@
-// Module ID: 11689
-// Function ID: 11690
+// Module ID: 10869
+// Function ID: 10870
 // Name: ChatView
-// Dependencies: [19, 17, 5582, 2048, 2044, 5049, 1074, 21, 4829, 576, 4695, 504, 1115, 5039, 7659, 5903, 11690, 11691, 7805, 7644, 11693, 7443, 11698, 11711, 11773, 12300, 12817, 1364, 12985, 12986, 12609, 12990, 12993, 11870, 12996, 5429, 9, 10642, 13011, 1177, 13013, 13015, 13016, 13108, 2]
+// Dependencies: [19, 17, 5584, 2048, 2044, 5049, 1074, 21, 4829, 576, 4697, 504, 1115, 5039, 6742, 5905, 10870, 10871, 6890, 6727, 10873, 6526, 10878, 10891, 10955, 11426, 11943, 1364, 12116, 12117, 11735, 12121, 12124, 11013, 12127, 5430, 9, 9746, 12142, 1177, 12144, 12146, 12147, 12258, 2]
 
-// Module 11689 (ChatView)
+// Module 10869 (ChatView)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ChatInputUtils from "ChatInputUtils" /* 4695 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7644 */;
-import SummaryActionCreators from "SummaryActionCreators" /* 11693 */;
-import ChatViewWrapperDefault from "ChatViewWrapper" /* 11698 */;
-import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 11711 */;
-import MessagesDefault from "Messages" /* 11773 */;
-import ChatInputDefault from "ChatInput" /* 12300 */;
-import ChatBeginningRowDefault from "ChatBeginningRow" /* 12817 */;
-import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 12990 */;
-import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 12993 */;
+import ChatInputUtils from "ChatInputUtils" /* 4697 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 6727 */;
+import SummaryActionCreators from "SummaryActionCreators" /* 10873 */;
+import ChatViewWrapperDefault from "ChatViewWrapper" /* 10878 */;
+import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 10891 */;
+import MessagesDefault from "Messages" /* 10955 */;
+import ChatInputDefault from "ChatInput" /* 11426 */;
+import ChatBeginningRowDefault from "ChatBeginningRow" /* 11943 */;
+import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 12121 */;
+import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 12124 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5582 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5584 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import MessageStore from "MessageStore" /* 5049 */;
 
@@ -189,20 +189,20 @@ export default noop.memo(function ChatView(alwaysRespectKeyboard) {
       let tmp7Result = null;
       if (!obj6.isAndroid()) {
         const obj7 = { channelId: tmp8.id, messagesRef: tmp11 };
-        tmp7Result = tmp7(tmp3(12985), obj7);
+        tmp7Result = tmp7(tmp3(12116), obj7);
       }
       items1[1] = tmp7Result;
       let tmp7Result3 = null;
       if (c15) {
         const obj8 = { screenIndex: tmp10 };
-        tmp7Result3 = tmp7(tmp3(12986), obj8);
+        tmp7Result3 = tmp7(tmp3(12117), obj8);
       }
       items1[2] = tmp7Result3;
       obj6 = PlatformUtils;
       let tmp7Result4 = null;
       if (tmp14Result.isAndroid()) {
         const obj9 = { channelId: tmp6, screenIndex: tmp10, onJumpToPresent: tmp12 };
-        tmp7Result4 = tmp7(tmp3(12609), obj9);
+        tmp7Result4 = tmp7(tmp3(11735), obj9);
       }
       const obj10 = { children: null };
       items1[3] = tmp7Result4;

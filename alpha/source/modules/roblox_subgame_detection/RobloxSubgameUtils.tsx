@@ -1,7 +1,7 @@
 // Module ID: 4959
 // Function ID: 4960
 // Name: RobloxSubgameUtils
-// Dependencies: [5, 1999, 1074, 4960, 12, 4961, 4514, 2]
+// Dependencies: [5, 1999, 1074, 4960, 12, 4961, 4516, 2]
 // Exports: convertMapToRobloxSubgameInfo, getSubgameMetadata, hasRunningGameChanged, hasSubgameInfoChanged, isRobloxSubgame, isRobloxSubgameApplication, isRobloxSubgameGame, keyForRobloxGame, maybeAddAdditionalGameMetadata, maybeTransformRobloxSubgameToRoblox, openRobloxURLWithRootPlaceId, updateRunningGameWithRobloxSubgameInfo
 
 // Module 4959 (RobloxSubgameUtils)

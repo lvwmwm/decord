@@ -1,9 +1,9 @@
-// Module ID: 15214
-// Function ID: 15215
+// Module ID: 14380
+// Function ID: 14381
 // Name: ParentalConsentWarningTypes
 // Dependencies: [2]
 
-// Module 15214 (ParentalConsentWarningTypes)
+// Module 14380 (ParentalConsentWarningTypes)
 import size from "module_2" /* 2 */;
 
 const frozen = Object.freeze({ BANNER: "banner", MODAL: "modal" });

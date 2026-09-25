@@ -1,10 +1,10 @@
-// Module ID: 12357
-// Function ID: 12358
+// Module ID: 11483
+// Function ID: 11484
 // Name: ForumPostNewTag
 // Dependencies: [19, 21, 4829, 576, 1177, 2]
 // Exports: default
 
-// Module 12357 (ForumPostNewTag)
+// Module 11483 (ForumPostNewTag)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;

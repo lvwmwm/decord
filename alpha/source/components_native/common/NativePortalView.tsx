@@ -1,11 +1,11 @@
-// Module ID: 8618
-// Function ID: 8619
+// Module ID: 7708
+// Function ID: 7709
 // Name: NativePortalView
-// Dependencies: [19, 17, 21, 4829, 1364, 8619, 8620, 2]
+// Dependencies: [19, 17, 21, 4829, 1364, 7709, 7710, 2]
 // Exports: createPortalControls, isPortalExpired, markPortalAlive
 
-// Module 8618 (NativePortalView)
-import PortalViewNativeComponentDefault from "PortalViewNativeComponent" /* 8619 */;
+// Module 7708 (NativePortalView)
+import PortalViewNativeComponentDefault from "PortalViewNativeComponent" /* 7709 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

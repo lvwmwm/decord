@@ -1,25 +1,25 @@
-// Module ID: 12633
-// Function ID: 12634
+// Module ID: 11759
+// Function ID: 11760
 // Name: DoubleTapToReactChatInputBanner
-// Dependencies: [32, 19, 17, 4821, 2041, 1375, 21, 4829, 576, 1364, 563, 7463, 1397, 4825, 1115, 12634, 5427, 5985, 9128, 1249, 4561, 4830, 1177, 4796, 12730, 1980, 8622, 5291, 9264, 2020, 8319, 8316, 10973, 2028, 2]
+// Dependencies: [32, 19, 17, 4821, 2041, 1375, 21, 4829, 576, 1364, 563, 6546, 1397, 4825, 1115, 11760, 5428, 5987, 8222, 1249, 4563, 4830, 1177, 4796, 11856, 1980, 7712, 5292, 8362, 2020, 7408, 7405, 10077, 2028, 2]
 // Exports: DoubleTapToReactChatInputBanner
 
-// Module 12633 (DoubleTapToReactChatInputBanner)
+// Module 11759 (DoubleTapToReactChatInputBanner)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import dismissible_content from "dismissible_content" /* 2028 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import timing from "timing" /* 4830 */;
-import Pressables from "Pressables" /* 5427 */;
-import XSmallIcon from "XSmallIcon" /* 5985 */;
-import EmojiDefault from "Emoji" /* 7463 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 8319 */;
-import renderChannelBadge from "renderChannelBadge" /* 12634 */;
+import Pressables from "Pressables" /* 5428 */;
+import XSmallIcon from "XSmallIcon" /* 5987 */;
+import EmojiDefault from "Emoji" /* 6546 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 7408 */;
+import renderChannelBadge from "renderChannelBadge" /* 11760 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
@@ -146,7 +146,7 @@ function DoubleTapToReactChatInputBannerAnimationContainer(channel) {
   }, []);
   const items3 = [markAsDismissed];
   const callback1 = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12730, dependencyMap.paths), "DoubleTapToReactActionSheet", { emoji });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11856, dependencyMap.paths), "DoubleTapToReactActionSheet", { emoji });
     markAsDismissed(ContentDismissActionType.TAKE_ACTION);
   }, items2);
   const callback2 = noop.useCallback(() => {

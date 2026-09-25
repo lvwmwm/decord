@@ -1,14 +1,14 @@
-// Module ID: 18059
-// Function ID: 18060
+// Module ID: 17287
+// Function ID: 17288
 // Name: AddRuleRow
-// Dependencies: [19, 21, 5910, 11556, 1115, 18048, 2]
+// Dependencies: [19, 21, 5912, 10761, 1115, 17276, 2]
 // Exports: default
 
-// Module 18059 (AddRuleRow)
+// Module 17287 (AddRuleRow)
 import util from "util" /* 1115 */;
-import TableRow from "TableRow" /* 5910 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 11556 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 18048 */;
+import TableRow from "TableRow" /* 5912 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 10761 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17276 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

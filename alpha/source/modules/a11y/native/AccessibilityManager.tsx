@@ -1,16 +1,16 @@
-// Module ID: 14809
-// Function ID: 14810
+// Module ID: 13971
+// Function ID: 13972
 // Name: AccessibilityManager
-// Dependencies: [5, 17, 4821, 1074, 1185, 14810, 573, 1241, 14813, 11703, 14811, 4677, 4680, 2]
+// Dependencies: [5, 17, 4821, 1074, 1185, 13972, 573, 1241, 13975, 10883, 13973, 4679, 4682, 2]
 
-// Module 14809 (AccessibilityManager)
+// Module 13971 (AccessibilityManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4677 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11703 */;
-import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 14810 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14811 */;
-import updateSaturation from "updateSaturation" /* 14813 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4679 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10883 */;
+import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 13972 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 13973 */;
+import updateSaturation from "updateSaturation" /* 13975 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 

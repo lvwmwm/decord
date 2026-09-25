@@ -1,12 +1,12 @@
-// Module ID: 16617
-// Function ID: 16618
+// Module ID: 15797
+// Function ID: 15798
 // Name: GameClaimCardStack
-// Dependencies: [19, 17, 21, 576, 672, 4829, 9226, 2]
+// Dependencies: [19, 17, 21, 576, 672, 4829, 8324, 2]
 // Exports: default
 
-// Module 16617 (GameClaimCardStack)
+// Module 15797 (GameClaimCardStack)
 import nativeDefault from "native" /* 576 */;
-import PlusSmallIcon from "PlusSmallIcon" /* 9226 */;
+import PlusSmallIcon from "PlusSmallIcon" /* 8324 */;
 import noop from "module_19" /* 19 */;
 import n_mod from "module_672" /* 672 */;
 

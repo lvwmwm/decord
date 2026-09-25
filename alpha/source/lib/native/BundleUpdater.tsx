@@ -1,14 +1,14 @@
-// Module ID: 12133
-// Function ID: 12134
+// Module ID: 11255
+// Function ID: 11256
 // Name: BundleUpdater
-// Dependencies: [5, 17, 1074, 3, 1364, 81, 1980, 5014, 1241, 5171, 2]
+// Dependencies: [5, 17, 1074, 3, 1364, 81, 1980, 5014, 1241, 5172, 2]
 
-// Module 12133 (BundleUpdater)
+// Module 11255 (BundleUpdater)
 import LoggerDefault from "Logger" /* 3 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import _mod5014 from "module_5014" /* 5014 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5171 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5172 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

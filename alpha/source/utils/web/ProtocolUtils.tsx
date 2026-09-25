@@ -1,12 +1,12 @@
-// Module ID: 13327
-// Function ID: 13328
+// Module ID: 12477
+// Function ID: 12478
 // Name: ProtocolUtils
-// Dependencies: [5165, 2]
+// Dependencies: [5166, 2]
 
-// Module 13327 (ProtocolUtils)
-import _modDef5165 from "module_5165" /* 5165 */;
+// Module 12477 (ProtocolUtils)
+import _modDef5166 from "module_5166" /* 5166 */;
 
-const os = _modDef5165.os;
+const os = _modDef5166.os;
 let family;
 if (os != null) {
   family = os.family;
@@ -18,7 +18,7 @@ function launchMobile(href, arg1) {
 }
 let tmp3 = launchMobile;
 if ("Android" !== family) {
-  const os2 = _modDef5165.os;
+  const os2 = _modDef5166.os;
   let family1;
   if (os2 != null) {
     family1 = os2.family;
@@ -69,7 +69,7 @@ if ("Android" !== family) {
         return process.nextTick(() => closure_0(true));
       }
     }
-    if ("Gecko" !== _modDef5165.layout) {
+    if ("Gecko" !== _modDef5166.layout) {
       function launchChrome(href, arg1) {
         closure_0 = arg1;
         function handleBlur() {
@@ -84,8 +84,8 @@ if ("Android" !== family) {
         }, 1000);
       }
       let launchSteam = launchChrome;
-      if (null != _modDef5165.ua) {
-        const ua = _modDef5165.ua;
+      if (null != _modDef5166.ua) {
+        const ua = _modDef5166.ua;
         launchSteam = launchChrome;
         if (-1 !== ua.indexOf("Valve Steam GameOverlay")) {
           launchSteam = function launchSteam(arg0, fn) {

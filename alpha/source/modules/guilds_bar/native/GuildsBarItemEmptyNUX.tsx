@@ -1,14 +1,14 @@
-// Module ID: 16777
-// Function ID: 16778
+// Module ID: 15961
+// Function ID: 15962
 // Name: GuildsBarItemEmptyNUX
-// Dependencies: [19, 17, 4650, 16708, 1074, 11440, 21, 4829, 576, 7672, 4526, 504, 4561, 5272, 16449, 16721, 1115, 16778, 16720, 5894, 16732, 4825, 2]
+// Dependencies: [19, 17, 4652, 15892, 1074, 10538, 21, 4829, 576, 6755, 4528, 504, 4563, 5273, 15629, 15905, 1115, 15962, 15904, 5896, 15916, 4825, 2]
 
-// Module 16777 (GuildsBarItemEmptyNUX)
+// Module 15961 (GuildsBarItemEmptyNUX)
 import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5272 */;
-import transitionToGuild from "transitionToGuild" /* 7672 */;
+import spring from "spring" /* 5273 */;
+import transitionToGuild from "transitionToGuild" /* 6755 */;
 import noop from "module_19" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4650 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4652 */;
 
 require = fn;
 function handlePress() {
@@ -16,10 +16,10 @@ function handlePress() {
 }
 get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, Image: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const GuildsBarConstants = fn(16708);
+const GuildsBarConstants = fn(15892);
 ({ GUILD_ITEM_HIT_SLOP: closure_8, useGuildWrapperSize: closure_9 } = GuildsBarConstants);
 const EMPTY_NUX_SERVER = fn(1074).EMPTY_NUX_SERVER;
-const MODE_CHANGE_PHYSICS = fn(11440).MODE_CHANGE_PHYSICS;
+const MODE_CHANGE_PHYSICS = fn(10538).MODE_CHANGE_PHYSICS;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
 const createStyles = fn(4829);

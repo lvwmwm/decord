@@ -1,12 +1,12 @@
-// Module ID: 10095
-// Function ID: 10096
+// Module ID: 9192
+// Function ID: 9193
 // Name: TouchableHitBox
-// Dependencies: [19, 17, 21, 4829, 576, 4535, 1177, 5427, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4537, 1177, 5428, 2]
 
-// Module 10095 (TouchableHitBox)
+// Module 9192 (TouchableHitBox)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import Pressables from "Pressables" /* 5427 */;
+import Pressables from "Pressables" /* 5428 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -93,7 +93,7 @@ TouchableHitBox.prototype["render"] = function render() {
   obj6.children = tmp8Result;
   return jsx(Pressables.PressableOpacity, { accessibilityRole, accessibilityLabel, accessibilityState, onPress, onLongPress, activeOpacity, style: null, disabled: null, children: null });
 };
-TouchableHitBox.contextType = fn(4535).ThemeContext;
+TouchableHitBox.contextType = fn(4537).ThemeContext;
 TouchableHitBox.defaultProps = {
   onPress() {
 

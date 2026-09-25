@@ -1,22 +1,22 @@
-// Module ID: 15772
-// Function ID: 15773
+// Module ID: 14942
+// Function ID: 14943
 // Name: AnimateStickersSetting
-// Dependencies: [19, 8323, 2023, 2020, 1115, 11811, 2]
+// Dependencies: [19, 7412, 2023, 2020, 1115, 10993, 2]
 
-// Module 15772 (AnimateStickersSetting)
+// Module 14942 (AnimateStickersSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2020 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const StickerAnimationSettings = fn(2023).StickerAnimationSettings;
-const SettingBuilders = fn(11811);
+const SettingBuilders = fn(10993);
 const radio = SettingBuilders.createRadio({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.R5nQkS);
   },
-  parent: fn(8323).MobileUserSettings.ACCESSIBILITY,
+  parent: fn(7412).MobileUserSettings.ACCESSIBILITY,
   useValue: fn(2020).AnimateStickers.useSetting,
   onValueChange: function onAnimateStickerSettingValueChange(arg0) {
     const AnimateStickers = UserSettings.AnimateStickers;

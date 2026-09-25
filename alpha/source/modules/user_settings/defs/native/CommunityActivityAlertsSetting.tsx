@@ -1,21 +1,21 @@
-// Module ID: 15874
-// Function ID: 15875
+// Module ID: 15044
+// Function ID: 15045
 // Name: CommunityActivityAlertsSetting
-// Dependencies: [10427, 8323, 1074, 504, 1115, 11811, 15875, 2]
+// Dependencies: [9529, 7412, 1074, 504, 1115, 10993, 15045, 2]
 
-// Module 15874 (CommunityActivityAlertsSetting)
+// Module 15044 (CommunityActivityAlertsSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10427 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 9529 */;
 
 require = fn;
-const SettingBuilders = fn(11811);
+const SettingBuilders = fn(10993);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.D9yVAH);
   },
-  parent: fn(8323).MobileUserSettings.NOTIFICATIONS,
+  parent: fn(7412).MobileUserSettings.NOTIFICATIONS,
   useDescription: function useCommunityActivityAlertsSettingDescription() {
     const intl = util.intl;
     return intl.string(util.t["0PhAOH"]);

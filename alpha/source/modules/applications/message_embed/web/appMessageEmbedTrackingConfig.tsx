@@ -1,13 +1,13 @@
-// Module ID: 8018
-// Function ID: 8019
+// Module ID: 7103
+// Function ID: 7104
 // Name: appMessageEmbedTrackingConfig
-// Dependencies: [502, 8012, 2]
+// Dependencies: [502, 7097, 2]
 // Exports: trackingConfigWithDefaults
 
-// Module 8018 (appMessageEmbedTrackingConfig)
+// Module 7103 (appMessageEmbedTrackingConfig)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
-const LinkType = fn(8012).LinkType;
+const LinkType = fn(7097).LinkType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/applications/message_embed/web/appMessageEmbedTrackingConfig.tsx");
 

@@ -1,11 +1,11 @@
-// Module ID: 17715
-// Function ID: 17716
+// Module ID: 16939
+// Function ID: 16940
 // Name: ActivityShelfItemBackground
-// Dependencies: [32, 19, 17, 21, 4829, 5894, 12427, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 5896, 11553, 2]
 
-// Module 17715 (ActivityShelfItemBackground)
-import NativeViewDefault from "NativeView" /* 5894 */;
-import BrokenImageDefault from "BrokenImage" /* 12427 */;
+// Module 16939 (ActivityShelfItemBackground)
+import NativeViewDefault from "NativeView" /* 5896 */;
+import BrokenImageDefault from "BrokenImage" /* 11553 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

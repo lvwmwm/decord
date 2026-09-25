@@ -1,9 +1,9 @@
-// Module ID: 7281
-// Function ID: 7282
+// Module ID: 6364
+// Function ID: 6365
 // Name: WebAuthnTypes
 // Dependencies: [2]
 
-// Module 7281 (WebAuthnTypes)
+// Module 6364 (WebAuthnTypes)
 import size from "module_2" /* 2 */;
 
 const prototype = function IgnorableWebAuthnError() {

@@ -1,24 +1,24 @@
-// Module ID: 17325
-// Function ID: 17326
+// Module ID: 16540
+// Function ID: 16541
 // Name: FriendsNavigator
-// Dependencies: [19, 17, 21, 8245, 4829, 576, 8197, 8194, 12944, 1115, 7805, 7333, 17326, 17332, 17335, 17336, 17337, 17344, 17345, 17346, 17348, 17351, 17352, 4682, 1612, 4535, 2]
+// Dependencies: [19, 17, 21, 7334, 4829, 576, 7286, 7283, 12075, 1115, 6890, 6416, 16541, 16547, 16550, 16551, 16552, 16559, 16560, 16561, 16563, 16566, 16567, 4684, 1612, 4537, 2]
 // Exports: default
 
-// Module 17325 (FriendsNavigator)
+// Module 16540 (FriendsNavigator)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import native from "native" /* 4535 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4682 */;
-import HeaderShared from "HeaderShared" /* 8194 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 8197 */;
-import _modDef12944 from "module_12944" /* 12944 */;
+import native from "native" /* 4537 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4684 */;
+import HeaderShared from "HeaderShared" /* 7283 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 7286 */;
+import _modDef12075 from "module_12075" /* 12075 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function RequestsSettingsModalButton(onPress) {
   const obj = { isModal: true, children: null };
-  const obj2 = { source: _modDef12944, onPress: onPress.onPress, accessibilityLabel: null };
+  const obj2 = { source: _modDef12075, onPress: onPress.onPress, accessibilityLabel: null };
   const intl = util.intl;
   obj2.accessibilityLabel = intl.string(util.t["3D5yo/"]);
   obj.children = hasOwnProperty(HeaderShared.HeaderIconButton, obj2);
@@ -26,7 +26,7 @@ function RequestsSettingsModalButton(onPress) {
 }
 function FriendsNavigator() {
   _require = closure_8();
-  const layoutEffect = noop.useLayoutEffect(() => closure_0(7805).trackAppUIViewed(), []);
+  const layoutEffect = noop.useLayoutEffect(() => closure_0(6890).trackAppUIViewed(), []);
   closure_1 = require("Navigator").useAccessibilityNativeStackOptions();
   const obj2 = {
     screenOptions(arg0) {
@@ -86,12 +86,12 @@ function FriendsNavigator() {
           obj.onPress = function onPress() {
             return navigation.navigate("add-friends", { sourcePage: "Friends Screen Header" });
           };
-          return closure_2_5(navigation(8194).HeaderTextButton, obj);
+          return closure_2_5(navigation(7283).HeaderTextButton, obj);
         };
         return obj;
       },
       getComponent() {
-        return closure_0(17326).default;
+        return closure_0(16541).default;
       }
     }),
   ,
@@ -111,7 +111,7 @@ function FriendsNavigator() {
   obj5.title = intl.string(require("util").t.jD1qzM);
   obj4.options = obj5;
   obj4.getComponent = function getComponent() {
-    return closure_0(17332).default;
+    return closure_0(16547).default;
   };
   items[1] = closure_5(closure_7.Screen, obj4);
   const obj6 = { name: "gdm", options: null, getComponent: null };
@@ -120,7 +120,7 @@ function FriendsNavigator() {
   obj7.title = intl2.string(require("util").t["3hF1W4"]);
   obj6.options = obj7;
   obj6.getComponent = function getComponent() {
-    return closure_0(17335).default;
+    return closure_0(16550).default;
   };
   items[2] = closure_5(closure_7.Screen, obj6);
   const obj8 = { name: "add-friend", options: null, getComponent: null };
@@ -129,7 +129,7 @@ function FriendsNavigator() {
   obj9.title = intl3.string(require("util").t.w5uwoI);
   obj8.options = obj9;
   obj8.getComponent = function getComponent() {
-    return closure_0(17336).default;
+    return closure_0(16551).default;
   };
   items[3] = closure_5(closure_7.Screen, obj8);
   const obj10 = { name: "add-friends", options: null, getComponent: null };
@@ -138,7 +138,7 @@ function FriendsNavigator() {
   obj11.title = intl4.string(require("util").t.zIJnA6);
   obj10.options = obj11;
   obj10.getComponent = function getComponent() {
-    return closure_0(17337).default;
+    return closure_0(16552).default;
   };
   items[4] = closure_5(closure_7.Screen, obj10);
   const obj12 = { name: "username-search", options: null, getComponent: null };
@@ -147,7 +147,7 @@ function FriendsNavigator() {
   obj13.title = intl5.string(require("util").t.QzVsOs);
   obj12.options = obj13;
   obj12.getComponent = function getComponent() {
-    return closure_0(17344).default;
+    return closure_0(16559).default;
   };
   items[5] = closure_5(closure_7.Screen, obj12);
   const obj14 = { name: "suggested-friends", options: null, getComponent: null };
@@ -156,7 +156,7 @@ function FriendsNavigator() {
   obj15.title = intl6.string(require("util").t["1uAmCw"]);
   obj14.options = obj15;
   obj14.getComponent = function getComponent() {
-    return closure_0(17345).default;
+    return closure_0(16560).default;
   };
   items[6] = closure_5(closure_7.Screen, obj14);
   const obj16 = { name: "requests-settings", options: null, getComponent: null };
@@ -165,7 +165,7 @@ function FriendsNavigator() {
   obj17.title = intl7.string(require("util").t.XT4hVl);
   obj16.options = obj17;
   obj16.getComponent = function getComponent() {
-    return closure_0(17346).default;
+    return closure_0(16561).default;
   };
   items[7] = closure_5(closure_7.Screen, obj16);
   items[8] = closure_5(closure_7.Screen, {
@@ -185,7 +185,7 @@ function FriendsNavigator() {
       return obj;
     },
     getComponent() {
-      return closure_0(17348).default;
+      return closure_0(16563).default;
     }
   });
   const obj19 = { name: "spam-requests", options: null, getComponent: null };
@@ -194,7 +194,7 @@ function FriendsNavigator() {
   obj20.title = intl8.string(require("util").t.oHVeHc);
   obj19.options = obj20;
   obj19.getComponent = function getComponent() {
-    return closure_0(17351).default;
+    return closure_0(16566).default;
   };
   items[9] = closure_5(closure_7.Screen, obj19);
   const obj21 = { name: "ignored-user-requests", options: null, getComponent: null };
@@ -203,7 +203,7 @@ function FriendsNavigator() {
   obj22.title = intl9.string(require("util").t.tFY5Zb);
   obj21.options = obj22;
   obj21.getComponent = function getComponent() {
-    return closure_0(17352).default;
+    return closure_0(16567).default;
   };
   items[10] = closure_5(closure_7.Screen, obj21);
   obj2.children = items;
@@ -212,7 +212,7 @@ function FriendsNavigator() {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const NativeStackNavigator = fn(8245);
+const NativeStackNavigator = fn(7334);
 let closure_7 = NativeStackNavigator.createNativeStackNavigator();
 const createStyles = fn(4829);
 let obj3 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, header: null };

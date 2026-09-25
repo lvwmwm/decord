@@ -1,24 +1,24 @@
-// Module ID: 11724
-// Function ID: 11725
+// Module ID: 10904
+// Function ID: 10905
 // Name: MoreTipsModal
-// Dependencies: [19, 17, 11267, 1074, 21, 4829, 576, 11725, 4825, 1115, 11726, 7707, 5032, 7325, 1177, 1612, 563, 11719, 5171, 5176, 7333, 2]
+// Dependencies: [19, 17, 10365, 1074, 21, 4829, 576, 10905, 4825, 1115, 10908, 6790, 5032, 6408, 1177, 1612, 563, 10899, 5172, 5177, 6416, 2]
 // Exports: default
 
-// Module 11724 (MoreTipsModal)
+// Module 10904 (MoreTipsModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5171 */;
-import _modDef7325 from "module_7325" /* 7325 */;
-import HeaderActionButton from "HeaderActionButton" /* 7707 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11719 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11725 */;
-import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 11726 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5172 */;
+import _modDef6408 from "module_6408" /* 6408 */;
+import HeaderActionButton from "HeaderActionButton" /* 6790 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10899 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 10905 */;
+import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 10908 */;
 import noop from "module_19" /* 19 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 11267 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10365 */;
 
-const MetricEvents = tmp(5176);
+const MetricEvents = tmp(5177);
 require = fn;
 function MoreTipsModalScreen(learnMore) {
   learnMore = learnMore.learnMore;
@@ -92,7 +92,7 @@ export default function MoreTipsModal(headerStyle) {
             onPress() {
               return warningId(senderId[12]).popWithKey(channelId);
             },
-            source: _modDef7325,
+            source: _modDef6408,
             iconSize: native.IconSizes.MEDIUM,
             accessibilityLabel: null
           };

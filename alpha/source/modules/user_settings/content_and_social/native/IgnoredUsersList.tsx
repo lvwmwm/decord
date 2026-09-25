@@ -1,22 +1,22 @@
-// Module ID: 15152
-// Function ID: 15153
+// Module ID: 14318
+// Function ID: 14319
 // Name: IgnoredUsersList
-// Dependencies: [19, 17, 4474, 21, 4829, 576, 7495, 7515, 1177, 15146, 1115, 7456, 4825, 5992, 15153, 504, 2]
+// Dependencies: [19, 17, 4476, 21, 4829, 576, 6578, 6598, 1177, 14312, 1115, 6539, 4825, 5994, 14319, 504, 2]
 // Exports: default
 
-// Module 15152 (IgnoredUsersList)
+// Module 14318 (IgnoredUsersList)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import TableRowGroup from "TableRowGroup" /* 5992 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7456 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7495 */;
-import Blocked from "Blocked" /* 15146 */;
-import IgnoredUserRowDefault from "IgnoredUserRow" /* 15153 */;
+import TableRowGroup from "TableRowGroup" /* 5994 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6539 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6578 */;
+import Blocked from "Blocked" /* 14312 */;
+import IgnoredUserRowDefault from "IgnoredUserRow" /* 14319 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
 

@@ -1,11 +1,11 @@
-// Module ID: 12987
-// Function ID: 12988
+// Module ID: 12118
+// Function ID: 12119
 // Name: useChatPlaceholderAnimatedStyles
-// Dependencies: [4821, 1177, 504, 4561, 4830, 4833, 2]
+// Dependencies: [4821, 1177, 504, 4563, 4830, 4833, 2]
 // Exports: default
 
-// Module 12987 (useChatPlaceholderAnimatedStyles)
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+// Module 12118 (useChatPlaceholderAnimatedStyles)
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import timing from "timing" /* 4830 */;
 import timingPresets from "timingPresets" /* 4833 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;

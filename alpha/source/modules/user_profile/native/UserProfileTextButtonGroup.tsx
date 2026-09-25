@@ -1,15 +1,15 @@
-// Module ID: 13385
-// Function ID: 13386
+// Module ID: 12535
+// Function ID: 12536
 // Name: UserProfileTextButtonGroup
-// Dependencies: [19, 17, 7541, 21, 4829, 1478, 2]
+// Dependencies: [19, 17, 6624, 21, 4829, 1478, 2]
 // Exports: default
 
-// Module 13385 (UserProfileTextButtonGroup)
+// Module 12535 (UserProfileTextButtonGroup)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;
-const PROFILE_SIDE_PADDING = fn(7541).PROFILE_SIDE_PADDING;
+const PROFILE_SIDE_PADDING = fn(6624).PROFILE_SIDE_PADDING;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
 const createStyles = fn(4829);

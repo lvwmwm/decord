@@ -1,11 +1,11 @@
-// Module ID: 16463
-// Function ID: 16464
+// Module ID: 15643
+// Function ID: 15644
 // Name: useRelativeTimestamp
-// Dependencies: [32, 19, 7965, 1091, 2]
+// Dependencies: [32, 19, 7050, 1091, 2]
 // Exports: useRelativeTimestamp
 
-// Module 16463 (useRelativeTimestamp)
-import NotificationCenterUtils from "NotificationCenterUtils" /* 7965 */;
+// Module 15643 (useRelativeTimestamp)
+import NotificationCenterUtils from "NotificationCenterUtils" /* 7050 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -23,7 +23,7 @@ export const useRelativeTimestamp = function useRelativeTimestamp(timestamp) {
   dependencyMap = tmp[1];
   const items = [timestamp, flag];
   const effect = noop.useEffect(() => {
-    dependencyMap(timestamp(7965).getRelativeTimestamp(interval, flag));
+    dependencyMap(timestamp(7050).getRelativeTimestamp(interval, flag));
     const diff = Date.now() - interval;
     if (diff <= flag(1091).Millis.DAY) {
       if (diff >= tmp4(1091).Millis.HOUR) {
@@ -33,11 +33,11 @@ export const useRelativeTimestamp = function useRelativeTimestamp(timestamp) {
       }
       const _setInterval = setInterval;
       interval = setInterval(() => {
-        dependencyMap(timestamp(7965).getRelativeTimestamp(closure_0, flag));
+        dependencyMap(timestamp(7050).getRelativeTimestamp(closure_0, flag));
       }, MINUTE, MINUTE - diff % MINUTE);
       return () => clearInterval(closure_0);
     }
-    const obj = timestamp(7965);
+    const obj = timestamp(7050);
   }, items);
   return tmp[0];
 };

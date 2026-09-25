@@ -1,13 +1,13 @@
-// Module ID: 16115
-// Function ID: 16116
+// Module ID: 15290
+// Function ID: 15291
 // Name: SearchableSelectActionComponent
-// Dependencies: [19, 2044, 21, 5053, 8471, 38, 8479, 1978, 16113, 8481, 4796, 12169, 1980, 12165, 2]
+// Dependencies: [19, 2044, 21, 5053, 7561, 38, 7569, 1978, 15288, 7571, 4796, 11291, 1980, 11287, 2]
 // Exports: default
 
-// Module 16115 (SearchableSelectActionComponent)
+// Module 15290 (SearchableSelectActionComponent)
 import Server from "Server" /* 1978 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 8479 */;
+import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 7569 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 
@@ -110,16 +110,16 @@ export default function SearchableSelectActionComponent(defaultValues) {
           const obj2 = { selectionActionComponent: tmp };
           const combined = "ChannelSelectComponentActionSheet:" + customId;
           const merged = Object.assign(obj4);
-          obj3.openLazy(tmp2(1980)(12169, tmp3.paths), combined, obj2);
-          const tmp14 = tmp2(1980)(12169, tmp3.paths);
+          obj3.openLazy(tmp2(1980)(11291, tmp3.paths), combined, obj2);
+          const tmp14 = tmp2(1980)(11291, tmp3.paths);
         } else {
           const _HermesInternal = HermesInternal;
           const obj = ActionSheetActionCreatorsDefault;
           obj4 = { selectionActionComponent: tmp };
           const combined1 = "MentionableSelectComponentActionSheet:" + customId;
           const merged1 = Object.assign(obj4);
-          obj.openLazy(tmp2(1980)(12165, tmp3.paths), combined1, obj4);
-          const tmp5 = tmp2(1980)(12165, tmp3.paths);
+          obj.openLazy(tmp2(1980)(11287, tmp3.paths), combined1, obj4);
+          const tmp5 = tmp2(1980)(11287, tmp3.paths);
         }
       };
       return <tmp4Result2 model={null} onTap={null} />;

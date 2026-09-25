@@ -1,15 +1,15 @@
-// Module ID: 16208
-// Function ID: 16209
+// Module ID: 15387
+// Function ID: 15388
 // Name: UserSettingsDesignSystemAIShimmer
-// Dependencies: [32, 19, 17, 21, 4829, 5273, 5271, 5912, 4825, 14502, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 5274, 5272, 5914, 4825, 13663, 2]
 // Exports: default
 
-// Module 16208 (UserSettingsDesignSystemAIShimmer)
+// Module 15387 (UserSettingsDesignSystemAIShimmer)
 import Text_Text from "Text/Text" /* 4825 */;
-import Stack_Stack from "Stack/Stack" /* 5271 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import Card from "Card" /* 5912 */;
-import AIShimmer from "AIShimmer" /* 14502 */;
+import Stack_Stack from "Stack/Stack" /* 5272 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import Card from "Card" /* 5914 */;
+import AIShimmer from "AIShimmer" /* 13663 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

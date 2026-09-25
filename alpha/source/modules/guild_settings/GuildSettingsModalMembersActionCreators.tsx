@@ -1,9 +1,9 @@
-// Module ID: 12181
-// Function ID: 12182
+// Module ID: 11303
+// Function ID: 11304
 // Name: GuildSettingsModalMembersActionCreators
 // Dependencies: [1074, 573, 1271, 1115, 2]
 
-// Module 12181 (GuildSettingsModalMembersActionCreators)
+// Module 11303 (GuildSettingsModalMembersActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;

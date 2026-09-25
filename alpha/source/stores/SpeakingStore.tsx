@@ -1,13 +1,13 @@
-// Module ID: 5724
-// Function ID: 5725
+// Module ID: 5726
+// Function ID: 5727
 // Name: SpeakingStore
-// Dependencies: [32, 2044, 1992, 4852, 2098, 1074, 4854, 4469, 504, 5725, 573, 2]
+// Dependencies: [32, 2044, 1992, 4852, 2098, 1074, 4854, 4471, 504, 5727, 573, 2]
 
-// Module 5724 (SpeakingStore)
+// Module 5726 (SpeakingStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4469 */;
-import ProportionalVadIndicatorExperimentDefault from "ProportionalVadIndicatorExperiment" /* 5725 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4471 */;
+import ProportionalVadIndicatorExperimentDefault from "ProportionalVadIndicatorExperiment" /* 5727 */;
 import _slicedToArray from "module_32" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;

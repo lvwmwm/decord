@@ -1,21 +1,21 @@
-// Module ID: 5901
-// Function ID: 5902
+// Module ID: 5903
+// Function ID: 5904
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 5877, 1074, 21, 4829, 4523, 1115, 5902, 5879, 5903, 4653, 504, 5357, 5852, 5904, 7272, 5273, 2]
+// Dependencies: [5, 32, 19, 17, 5879, 1074, 21, 4829, 4525, 1115, 5904, 5881, 5905, 4655, 504, 5358, 5854, 5906, 6355, 5274, 2]
 // Exports: default
 
-// Module 5901 (MemberVerificationForm)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4653 */;
+// Module 5903 (MemberVerificationForm)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4655 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5877 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5879 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-let closure_8 = fn(5877).NO_MEMBER_VERIFICATION_FORM;
+let closure_8 = fn(5879).NO_MEMBER_VERIFICATION_FORM;
 const VerificationLevels = fn(1074).VerificationLevels;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
@@ -67,8 +67,8 @@ export default function MemberVerificationForm(guild) {
                   const obj2 = { key: "MEMBER_VERIFICATION_FORM_INCOMPLETE", content: null, icon: null };
                   const intl = closure_1_0(1115).intl;
                   obj2.content = intl.string(closure_1_0(1115).t.StC497);
-                  obj2.icon = closure_1_1(5902);
-                  closure_1_1(4523).open(obj2);
+                  obj2.icon = closure_1_1(5904);
+                  closure_1_1(4525).open(obj2);
                 })();
                 c6 = 3;
                 return { value: "HermesInternal", done: null };
@@ -294,7 +294,7 @@ export default function MemberVerificationForm(guild) {
           const tmp8 = userVerificationState[MemberVerificationTypes.UserVerificationFieldPlatforms.EMAIL];
           let tmp9 = !tmp8;
           if (!tmp8) {
-            tmp9 = !userVerificationState[tmp6(undefined, 4653).UserVerificationFieldPlatforms.PHONE];
+            tmp9 = !userVerificationState[tmp6(undefined, 4655).UserVerificationFieldPlatforms.PHONE];
           }
           return tmp9;
         }

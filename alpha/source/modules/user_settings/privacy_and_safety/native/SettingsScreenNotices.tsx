@@ -1,16 +1,16 @@
-// Module ID: 15159
-// Function ID: 15160
+// Module ID: 14325
+// Function ID: 14326
 // Name: SettingsScreenNotices
-// Dependencies: [19, 17, 1372, 21, 4829, 576, 7922, 15160, 15161, 5728, 5729, 5041, 15168, 15169, 2]
+// Dependencies: [19, 17, 1372, 21, 4829, 576, 7007, 14326, 14327, 5730, 5731, 5041, 14334, 14335, 2]
 // Exports: default
 
-// Module 15159 (SettingsScreenNotices)
+// Module 14325 (SettingsScreenNotices)
 import nativeDefault from "native" /* 576 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 5041 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5728 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5729 */;
-import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 15160 */;
-import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 15168 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5730 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5731 */;
+import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 14326 */;
+import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 14334 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -24,10 +24,10 @@ obj2.listHeaderNoticeContainer = { marginTop: nativeDefault.space.PX_16 };
 let closure_6 = createStyles.createStyles(obj2);
 const obj5 = { SENSITIVE_CONTENT_FILTERS: null, CONTENT_AND_SOCIAL: null, DATA_AND_PRIVACY: null };
 const obj4 = { marginTop: nativeDefault.space.PX_16 };
-let items = [{ order: 100, predicate: fn(7922).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }, , , ];
-const obj6 = { order: 100, predicate: fn(7922).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault };
-items[1] = { order: 150, predicate: fn(15161).shouldShowTinyBroncoUnconfirmedNotice, Component: fn(15161).ContentFiltersUnconfirmedNotice };
-const obj7 = { order: 150, predicate: fn(15161).shouldShowTinyBroncoUnconfirmedNotice, Component: fn(15161).ContentFiltersUnconfirmedNotice };
+let items = [{ order: 100, predicate: fn(7007).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }, , , ];
+const obj6 = { order: 100, predicate: fn(7007).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault };
+items[1] = { order: 150, predicate: fn(14327).shouldShowTinyBroncoUnconfirmedNotice, Component: fn(14327).ContentFiltersUnconfirmedNotice };
+const obj7 = { order: 150, predicate: fn(14327).shouldShowTinyBroncoUnconfirmedNotice, Component: fn(14327).ContentFiltersUnconfirmedNotice };
 items[2] = {
   order: 200,
   predicate() {
@@ -62,7 +62,7 @@ items[3] = {
     }
     return false === nsfwAllowed;
   },
-  Component: fn(15169).SensitiveContentFiltersTeenNotice
+  Component: fn(14335).SensitiveContentFiltersTeenNotice
 };
 obj5.SENSITIVE_CONTENT_FILTERS = items;
 const obj9 = {
@@ -75,10 +75,10 @@ const obj9 = {
     }
     return false === nsfwAllowed;
   },
-  Component: fn(15169).SensitiveContentFiltersTeenNotice
+  Component: fn(14335).SensitiveContentFiltersTeenNotice
 };
-const items1 = [{ order: 100, predicate: fn(7922).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }, ];
-const obj10 = { order: 100, predicate: fn(7922).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault };
+const items1 = [{ order: 100, predicate: fn(7007).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }, ];
+const obj10 = { order: 100, predicate: fn(7007).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault };
 items1[1] = {
   order: 200,
   predicate() {
@@ -104,7 +104,7 @@ const obj11 = {
   },
   Component: AgeConfirmationNoticeDefault
 };
-const items2 = [{ order: 100, predicate: fn(7922).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }];
+const items2 = [{ order: 100, predicate: fn(7007).isParentallyControlled, Component: FamilyCenterSettingsNoticeDefault }];
 obj5.DATA_AND_PRIVACY = items2;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsScreenNotices.tsx");

@@ -1,24 +1,24 @@
-// Module ID: 18417
-// Function ID: 18418
+// Module ID: 17648
+// Function ID: 17649
 // Name: go_live/ApplicationStreamingManager
-// Dependencies: [4851, 502, 2044, 4748, 4879, 2098, 4868, 1372, 4871, 1074, 12, 4971, 1091, 4881, 2039, 573, 7451, 9769, 18397, 2]
+// Dependencies: [4851, 502, 2044, 4750, 4879, 2098, 4868, 1372, 4871, 1074, 12, 4971, 1091, 4881, 2039, 573, 6534, 8867, 17628, 2]
 
-// Module 18417 (go_live/ApplicationStreamingManager)
+// Module 17648 (go_live/ApplicationStreamingManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 4881 */;
 import StreamActionCreators from "StreamActionCreators" /* 4971 */;
-import AVError from "AVError" /* 9769 */;
-import AVErrorContext from "AVErrorContext" /* 18397 */;
+import AVError from "AVError" /* 8867 */;
+import AVErrorContext from "AVErrorContext" /* 17628 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4851 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4748 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4750 */;
 import RTCRegionStore from "RTCRegionStore" /* 4879 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4868 */;
 import UserStore from "UserStore" /* 1372 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7451 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6534 */;
 
 const Timers = tmp(2039);
 require = fn;

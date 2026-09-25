@@ -1,18 +1,18 @@
-// Module ID: 12338
-// Function ID: 12339
+// Module ID: 11464
+// Function ID: 11465
 // Name: LegacyCommands
-// Dependencies: [32, 5764, 5049, 1074, 2020, 9498, 1929, 8093, 4476, 7786, 5009, 2]
+// Dependencies: [32, 5766, 5049, 1074, 2020, 8596, 1929, 7178, 4478, 6871, 5009, 2]
 // Exports: handleLegacyCommands
 
-// Module 12338 (LegacyCommands)
+// Module 11464 (LegacyCommands)
 import UserSettings from "UserSettings" /* 2020 */;
-import ReactionUtils from "ReactionUtils" /* 4476 */;
+import ReactionUtils from "ReactionUtils" /* 4478 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5009 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7786 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 8093 */;
-import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 9498 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6871 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 7178 */;
+import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 8596 */;
 import _slicedToArray from "module_32" /* 32 */;
-import EmojiStore from "EmojiStore" /* 5764 */;
+import EmojiStore from "EmojiStore" /* 5766 */;
 import MessageStore from "MessageStore" /* 5049 */;
 import t_mod from "module_1929" /* 1929 */;
 

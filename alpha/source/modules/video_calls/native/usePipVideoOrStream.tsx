@@ -1,15 +1,15 @@
-// Module ID: 9742
-// Function ID: 9743
+// Module ID: 8840
+// Function ID: 8841
 // Name: usePipVideoOrStream
-// Dependencies: [2043, 4845, 9743, 4851, 502, 2044, 1992, 4852, 4850, 504, 4881, 4686, 9729, 2]
+// Dependencies: [2043, 4845, 8841, 4851, 502, 2044, 1992, 4852, 4850, 504, 4881, 4688, 8827, 2]
 // Exports: default, useHasPipParticipant
 
-// Module 9742 (usePipVideoOrStream)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4686 */;
-import ChannelCallModalDefault from "ChannelCallModal" /* 9729 */;
+// Module 8840 (usePipVideoOrStream)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4688 */;
+import ChannelCallModalDefault from "ChannelCallModal" /* 8827 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4845 */;
-import VideoSpeakerStore from "VideoSpeakerStore" /* 9743 */;
+import VideoSpeakerStore from "VideoSpeakerStore" /* 8841 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4851 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2044 */;

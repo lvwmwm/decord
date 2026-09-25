@@ -1,19 +1,19 @@
-// Module ID: 14100
-// Function ID: 14101
+// Module ID: 13261
+// Function ID: 13262
 // Name: SharedSpacesWarningManager
-// Dependencies: [2044, 4852, 4474, 14101, 14099, 1091, 14102, 1094, 14106, 7451, 2]
+// Dependencies: [2044, 4852, 4476, 13262, 13260, 1091, 13263, 1094, 13267, 6534, 2]
 // Exports: userBlockedWarningInCooldown, voiceBlockedWarningInCooldownForUsers
 
-// Module 14100 (SharedSpacesWarningManager)
+// Module 13261 (SharedSpacesWarningManager)
 import DurationsDefault from "Durations" /* 1091 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 14102 */;
-import showVoiceChannelBlockedUserWarning from "showVoiceChannelBlockedUserWarning" /* 14106 */;
+import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 13263 */;
+import showVoiceChannelBlockedUserWarning from "showVoiceChannelBlockedUserWarning" /* 13267 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4852 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
-import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 14099 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7451 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
+import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 13260 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6534 */;
 
 require = fn;
 function handleChannelSelect(channelId) {
@@ -94,7 +94,7 @@ function handleAppStateChanged(state) {
     }
   }
 }
-const SharedSpacesWarningStore = fn(14101);
+const SharedSpacesWarningStore = fn(13262);
 ({ getChannelDismissTimestamp: hasOwnProperty, getUserDismissTimestamp: metroRequire, getGlobalDismissTimestamp: closure_7, isBlockedWarningQueued: closure_8, dequeueBlockWarning: closure_9 } = SharedSpacesWarningStore);
 let closure_11 = 3 * DurationsDefault.Millis.DAY;
 let closure_12 = 2 * DurationsDefault.Millis.DAY;

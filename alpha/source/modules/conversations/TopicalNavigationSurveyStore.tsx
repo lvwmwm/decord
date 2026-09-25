@@ -1,9 +1,9 @@
-// Module ID: 8240
-// Function ID: 8241
+// Module ID: 7329
+// Function ID: 7330
 // Name: TopicalNavigationSurveyStore
 // Dependencies: [504, 573, 2]
 
-// Module 8240 (TopicalNavigationSurveyStore)
+// Module 7329 (TopicalNavigationSurveyStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 8057
-// Function ID: 8058
+// Module ID: 7142
+// Function ID: 7143
 // Name: AdDataUtils
-// Dependencies: [32, 19, 8058, 8059, 8060, 2]
+// Dependencies: [32, 19, 7143, 7144, 7145, 2]
 // Exports: getAdUser, useAdUser
 
-// Module 8057 (AdDataUtils)
-import AdUserActionCreators from "AdUserActionCreators" /* 8060 */;
+// Module 7142 (AdDataUtils)
+import AdUserActionCreators from "AdUserActionCreators" /* 7145 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AdUserStore from "AdUserStore" /* 8058 */;
+import AdUserStore from "AdUserStore" /* 7143 */;
 
 require = fn;
-const DEFAULT_TIMEOUT_MS = fn(8059).DEFAULT_TIMEOUT_MS;
+const DEFAULT_TIMEOUT_MS = fn(7144).DEFAULT_TIMEOUT_MS;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/ads/utils/AdDataUtils.android.tsx");
 

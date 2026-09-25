@@ -1,30 +1,30 @@
-// Module ID: 10167
-// Function ID: 10168
+// Module ID: 9264
+// Function ID: 9265
 // Name: instant_invite/InstantInviteUtils
-// Dependencies: [7787, 2048, 2044, 10168, 4462, 4813, 4869, 1372, 9099, 8065, 10172, 1074, 1241, 8067, 10173, 10174, 4814, 4796, 8711, 4522, 8088, 7522, 4962, 38, 10170, 2]
+// Dependencies: [6872, 2048, 2044, 9265, 4464, 4813, 4869, 1372, 8193, 7150, 9269, 1074, 1241, 7152, 9270, 9271, 4814, 4796, 7801, 4524, 7173, 6605, 4962, 38, 9267, 2]
 // Exports: getShareMessage, handleCopy, handleOpenInviteActionsheet, handleOpenShareSheet, handlePressSettings, hasDeferredInvite, isAppInstalled, showInstantInviteActionSheetForChannel, showVanityUrlInviteActionSheet
 
-// Module 10167 (instant_invite/InstantInviteUtils)
+// Module 9264 (instant_invite/InstantInviteUtils)
 import _modDef38 from "module_38" /* 38 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ToastUtils from "ToastUtils" /* 4522 */;
+import ToastUtils from "ToastUtils" /* 4524 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import InviteCodeUtils from "InviteCodeUtils" /* 4814 */;
 import DCDSendUtils from "DCDSendUtils" /* 4962 */;
-import ClipboardUtils from "ClipboardUtils" /* 7522 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8067 */;
-import getInviteURLDefault from "getInviteURL" /* 8088 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 10170 */;
-import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 10173 */;
-import openInstantInviteActionSheetDefault from "openInstantInviteActionSheet" /* 10174 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7787 */;
+import ClipboardUtils from "ClipboardUtils" /* 6605 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7152 */;
+import getInviteURLDefault from "getInviteURL" /* 7173 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9267 */;
+import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 9270 */;
+import openInstantInviteActionSheetDefault from "openInstantInviteActionSheet" /* 9271 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 6872 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 10168 */;
-import GuildChannelStore from "GuildChannelStore" /* 4462 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 9265 */;
+import GuildChannelStore from "GuildChannelStore" /* 4464 */;
 import InviteStore from "InviteStore" /* 4813 */;
 import PresenceStore from "PresenceStore" /* 4869 */;
 import UserStore from "UserStore" /* 1372 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 9099 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 8193 */;
 
 require = fn;
 function showInstantInviteActionSheet(channel, source) {
@@ -84,8 +84,8 @@ function showInstantInviteActionSheet(channel, source) {
     tmp17 = null == code;
   }
   if (tmp17) {
-    tmp(10173).init(channel.getGuildId(), channel.id, obj2);
-    const tmpResult3 = tmp(10173);
+    tmp(9270).init(channel.getGuildId(), channel.id, obj2);
+    const tmpResult3 = tmp(9270);
   }
   const obj5 = { channel, source: null, guildScheduledEventId: null, targetApplicationId: null, code: null, vanityURLCode: null, stackingBehavior: null };
   let source1;
@@ -162,8 +162,8 @@ function trackOptionClicked(code, channel, COPY, _location) {
   obj2.track(constants.INSTANT_INVITE_OPTION_CLICKED, obj3);
 }
 const ChannelRecordBase = fn(2048).ChannelRecordBase;
-const InviteTargetTypes = fn(8065).InviteTargetTypes;
-const IOS_COPY_TO_PASTEBOARD = fn(10172).IOS_COPY_TO_PASTEBOARD;
+const InviteTargetTypes = fn(7150).InviteTargetTypes;
+const IOS_COPY_TO_PASTEBOARD = fn(9269).IOS_COPY_TO_PASTEBOARD;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_14, InviteOptionsType: closure_15, Permissions: closure_16 } = Constants);
 const size = fn(2);
@@ -268,8 +268,8 @@ export const handleOpenShareSheet = function handleOpenShareSheet(code, channel,
           }
         }
     };
-    tmp21(8711).showShareActionSheet(obj2, ADD_FRIENDS_WIDGET);
-    const tmp21Result = tmp21(8711);
+    tmp21(7801).showShareActionSheet(obj2, ADD_FRIENDS_WIDGET);
+    const tmp21Result = tmp21(7801);
   }
 };
 export const handleCopy = function handleCopy(code, channel, GROUP_DM, arg3) {
@@ -320,8 +320,8 @@ export const handleCopy = function handleCopy(code, channel, GROUP_DM, arg3) {
     if (flag) {
       trackOptionClicked(code, channel, constants2.COPY);
     }
-    tmp13(4522).presentLinkCopied();
-    const tmp13Result = tmp13(4522);
+    tmp13(4524).presentLinkCopied();
+    const tmp13Result = tmp13(4524);
   }
 };
 export const handlePressSettings = function handlePressSettings(channel, arg1, arg2) {
@@ -361,10 +361,10 @@ export const handleOpenInviteActionsheet = function handleOpenInviteActionsheet(
       const obj3 = { type: "Vanity URL Invite", source: GUILD_HEADER };
       tmp4(1241).track(constants.OPEN_POPOUT, obj3);
       const tmp4Result = tmp4(1241);
-      tmp4(10173).init(guild.id, channel.id, { skipCreateInvite: true });
+      tmp4(9270).init(guild.id, channel.id, { skipCreateInvite: true });
       const obj4 = { vanityURLCode: guild.vanityURLCode, channel, source: GUILD_HEADER, guildScheduledEventId: undefined, stackingBehavior: undefined };
-      tmp4(10174)(obj4);
-      const tmp4Result2 = tmp4(10173);
+      tmp4(9271)(obj4);
+      const tmp4Result2 = tmp4(9270);
     }
   }
   const inviteChannelId = utils_InstantInviteUtils.getInviteChannelId(channel.id, channels);

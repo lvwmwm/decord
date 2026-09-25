@@ -1,10 +1,10 @@
-// Module ID: 16513
-// Function ID: 16514
+// Module ID: 15693
+// Function ID: 15694
 // Name: HappeningNowCardVoice
-// Dependencies: [19, 17, 7982, 1372, 4848, 15645, 1074, 21, 4829, 1241, 13275, 1980, 16496, 15646, 5407, 13428, 16506, 8421, 504, 12, 1370, 4981, 1115, 2]
+// Dependencies: [19, 17, 7067, 1372, 4848, 14815, 1074, 21, 4829, 1241, 12425, 1980, 15676, 14816, 5408, 12578, 15686, 7510, 504, 12, 1370, 4981, 1115, 2]
 // Exports: useVoiceChannelUsers
 
-// Module 16513 (HappeningNowCardVoice)
+// Module 15693 (HappeningNowCardVoice)
 import _modDef12 from "module_12" /* 12 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -12,7 +12,7 @@ import GlobalUtils from "GlobalUtils" /* 1370 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4981 */;
 import noop from "module_19" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7982 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7067 */;
 import UserStore from "UserStore" /* 1372 */;
 import VoiceStateStore from "VoiceStateStore" /* 4848 */;
 
@@ -38,7 +38,7 @@ function formatVoiceActivityTitle(stateFromStoresArray, guildId) {
   }
 }
 const View = fn(17).View;
-let closure_8 = fn(15645).HappeningNowCardTrackingType;
+let closure_8 = fn(14815).HappeningNowCardTrackingType;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);

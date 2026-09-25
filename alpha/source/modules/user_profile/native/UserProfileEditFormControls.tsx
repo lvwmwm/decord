@@ -1,19 +1,19 @@
-// Module ID: 14989
-// Function ID: 14990
+// Module ID: 14151
+// Function ID: 14152
 // Name: UserProfileEditFormControls
-// Dependencies: [32, 19, 17, 21, 4829, 576, 4825, 9020, 1177, 1115, 6937, 5427, 5917, 1364, 7534, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 4825, 8114, 1177, 1115, 6020, 5428, 5919, 1364, 6617, 2]
 // Exports: UserProfileEditFormButton, UserProfileEditFormLabelBadges, UserProfileEditFormSwitch
 
-// Module 14989 (UserProfileEditFormControls)
+// Module 14151 (UserProfileEditFormControls)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import Pressables from "Pressables" /* 5427 */;
-import Input from "Input" /* 6937 */;
-import FormSwitch from "FormSwitch" /* 7534 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9020 */;
+import Pressables from "Pressables" /* 5428 */;
+import Input from "Input" /* 6020 */;
+import FormSwitch from "FormSwitch" /* 6617 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8114 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -129,7 +129,7 @@ export const UserProfileEditFormButton = function UserProfileEditFormButton(load
   items1[2] = trailing;
   let tmp2Result2 = !flag2;
   if (!flag2) {
-    tmp2Result2 = tmp2(tmp3(5917).TableRowArrow, {});
+    tmp2Result2 = tmp2(tmp3(5919).TableRowArrow, {});
   }
   items1[3] = tmp2Result2;
   obj2.children = items1;
@@ -153,7 +153,7 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
     closure_2(value);
   }, items);
   if (isAndroidResult) {
-    let PressableHighlight = tmp2(5427).PressableHighlight;
+    let PressableHighlight = tmp2(5428).PressableHighlight;
   } else {
     PressableHighlight = React4;
   }

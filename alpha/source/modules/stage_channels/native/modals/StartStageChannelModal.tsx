@@ -1,9 +1,9 @@
-// Module ID: 10160
-// Function ID: 10161
+// Module ID: 9257
+// Function ID: 9258
 // Name: StartStageChannelModal
-// Dependencies: [5, 32, 19, 17, 2049, 5719, 1074, 2050, 21, 4829, 576, 5032, 5427, 1115, 1177, 7422, 8757, 5889, 504, 7546, 8951, 4825, 10095, 10161, 10162, 5290, 1241, 1875, 8748, 7549, 4729, 10163, 10164, 8760, 5273, 7456, 5883, 2]
+// Dependencies: [5, 32, 19, 17, 2049, 5721, 1074, 2050, 21, 4829, 576, 5032, 5428, 1115, 1177, 6505, 7847, 5891, 504, 6629, 8045, 4825, 9192, 9258, 9259, 5291, 1241, 1875, 7838, 6632, 4731, 9260, 9261, 7850, 5274, 6539, 5885, 2]
 
-// Module 10160 (StartStageChannelModal)
+// Module 9257 (StartStageChannelModal)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -11,12 +11,12 @@ import native from "native" /* 1177 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1875 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
-import Pressables from "Pressables" /* 5427 */;
-import GuildIcon from "GuildIcon" /* 5889 */;
-import _modDef7422 from "module_7422" /* 7422 */;
-import HotspotStore2 from "HotspotStore" /* 7546 */;
-import StageSparkleDefault from "StageSparkle" /* 8757 */;
-import Form from "Form" /* 8951 */;
+import Pressables from "Pressables" /* 5428 */;
+import GuildIcon from "GuildIcon" /* 5891 */;
+import _modDef6505 from "module_6505" /* 6505 */;
+import HotspotStore2 from "HotspotStore" /* 6629 */;
+import StageSparkleDefault from "StageSparkle" /* 7847 */;
+import Form from "Form" /* 8045 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -40,7 +40,7 @@ function NavigationBar(guild) {
     const intl = util.intl;
     obj2.accessibilityLabel = intl.string(util.t.cpT0Cq);
     obj2.onPress = closeModal;
-    const obj3 = { source: _modDef7422 };
+    const obj3 = { source: _modDef6505 };
     obj2.children = closure_1_14(native.Icon, obj3);
     obj.children = closure_1_14(Pressables.PressableOpacity, obj2);
     tmp2 = closure_1_14(React5, obj);
@@ -101,7 +101,7 @@ class NotificationToggle {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
-const StageChannelsConstants = fn(5719);
+const StageChannelsConstants = fn(5721);
 ({ MAX_STAGE_TOPIC_LENGTH: c10, START_STAGE_CHANNEL_EVENT_MODAL_KEY: closure_11 } = StageChannelsConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 let constants = fn(2050).GuildScheduledEventPrivacyLevel;
@@ -182,10 +182,10 @@ export default noop.forwardRef((channel, ref) => {
                 if (null != memo) {
                   c4 = 3;
                   c5 = 1;
-                  const obj8 = { value: tmp66(8748).editStage(channel, tmp75, tmp47), done: false };
+                  const obj8 = { value: tmp66(7838).editStage(channel, tmp75, tmp47), done: false };
                   return obj8;
                 } else {
-                  obj5 = tmp66(8748);
+                  obj5 = tmp66(7838);
                   c4 = 2;
                   c5 = 1;
                   const obj9 = { value: obj5.startStage(channel, tmp75, tmp47, first3), done: false };
@@ -199,7 +199,7 @@ export default noop.forwardRef((channel, ref) => {
           if (1 === tmp7) {
             dependencyMap = 0;
             closure_128_1 = tmp66;
-            const aPIError = new closure_0(4729).APIError(closure_128_1);
+            const aPIError = new closure_0(4731).APIError(closure_128_1);
             closure_128_0 = aPIError;
             closure_129_9(closure_128_0);
             closure_129_8(false);
@@ -214,8 +214,8 @@ export default noop.forwardRef((channel, ref) => {
                   tmp8 = closure_129_13;
                 }
                 if (tmp8) {
-                  tmp66(7549).hideHotspot(closure_0(7546).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
-                  const obj2 = tmp66(7549);
+                  tmp66(6632).hideHotspot(closure_0(6629).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
+                  const obj2 = tmp66(6632);
                 }
               }
             } else if (arg0 === 1) {
@@ -262,7 +262,7 @@ export default noop.forwardRef((channel, ref) => {
       const tmp = c16();
       const intl = require("util").intl;
       obj.accessibilityLabel = intl.string(require("util").t.cpT0Cq);
-      obj.source = require("module_7422");
+      obj.source = require("module_6505");
       obj.onPress = onPress;
       return obj5(require("TouchableHitBox"), obj);
     }

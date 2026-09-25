@@ -1,21 +1,21 @@
-// Module ID: 7971
-// Function ID: 7972
+// Module ID: 7056
+// Function ID: 7057
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 5582, 2048, 502, 2044, 2101, 2066, 4464, 2045, 3, 2073, 7972, 1086, 4473, 2]
+// Dependencies: [32, 5, 5584, 2048, 502, 2044, 2101, 2066, 4466, 2045, 3, 2073, 7057, 1086, 4475, 2]
 
-// Module 7971 (GuildBasicChannels)
+// Module 7056 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2073 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4473 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4475 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5582 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5584 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildRoleStore from "GuildRoleStore" /* 2101 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
 import BasicChannelCacheStore from "BasicChannelCacheStore" /* 2045 */;
 
 const require = fn;

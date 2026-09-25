@@ -1,19 +1,19 @@
-// Module ID: 16539
-// Function ID: 16540
+// Module ID: 15719
+// Function ID: 15720
 // Name: ThreadChannel
-// Dependencies: [19, 17, 4466, 2044, 4464, 4844, 2098, 1372, 4848, 4853, 10464, 1074, 5011, 1114, 21, 4829, 576, 8807, 5280, 504, 12637, 4840, 10568, 16540, 16542, 9951, 16545, 1177, 16547, 16556, 4974, 2]
+// Dependencies: [19, 17, 4468, 2044, 4466, 4844, 2098, 1372, 4848, 4853, 9566, 1074, 5011, 1114, 21, 4829, 576, 7901, 5281, 504, 11763, 4840, 9670, 15720, 15722, 9049, 15725, 1177, 15727, 15736, 4974, 2]
 // Exports: default
 
-// Module 16539 (ThreadChannel)
+// Module 15719 (ThreadChannel)
 import nativeDefault from "native" /* 576 */;
 import transitionToChannel from "transitionToChannel" /* 4840 */;
-import inlineStyles from "inlineStyles" /* 8807 */;
-import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10568 */;
-import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 16540 */;
+import inlineStyles from "inlineStyles" /* 7901 */;
+import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 9670 */;
+import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 15720 */;
 import noop from "module_19" /* 19 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4466 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4468 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
 import ReadStateStore from "ReadStateStore" /* 4844 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -191,7 +191,7 @@ function ThreadChannel(channel) {
   }
 }
 const View = fn(17).View;
-const RedesignChannelListConstants = fn(10464);
+const RedesignChannelListConstants = fn(9566);
 ({ getScaledChannelRowHeight: map1, CHANNEL_MARGIN_VERTICAL } = RedesignChannelListConstants);
 const Permissions = fn(1074).Permissions;
 const UnreadSetting = fn(5011).UnreadSetting;

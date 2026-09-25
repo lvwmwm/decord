@@ -1,18 +1,18 @@
-// Module ID: 9505
-// Function ID: 9506
+// Module ID: 8603
+// Function ID: 8604
 // Name: showUploadFileSizeError
-// Dependencies: [1184, 1372, 1074, 4822, 1374, 1969, 8173, 5009, 9506, 9507, 5434, 5442, 9508, 1094, 7515, 1115, 4725, 5433, 5195, 2]
+// Dependencies: [1184, 1372, 1074, 4822, 1374, 1969, 7258, 5009, 8604, 8605, 5435, 5443, 8606, 1094, 6598, 1115, 4727, 5434, 5196, 2]
 // Exports: default
 
-// Module 9505 (showUploadFileSizeError)
+// Module 8603 (showUploadFileSizeError)
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5009 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5195 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 5442 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7515 */;
-import buildFileSizeLimitEventProperties from "buildFileSizeLimitEventProperties" /* 9506 */;
-import getUploaderFileSizeMetrics from "getUploaderFileSizeMetrics" /* 9507 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9508 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5196 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 5443 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6598 */;
+import buildFileSizeLimitEventProperties from "buildFileSizeLimitEventProperties" /* 8604 */;
+import getUploaderFileSizeMetrics from "getUploaderFileSizeMetrics" /* 8605 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 8606 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -34,8 +34,8 @@ export default function showUploadFileSizeError(arg0) {
   const currentUser = UserStore.getCurrentUser();
   const isPremiumExactlyResult = PremiumTypeUtils.isPremiumExactly(currentUser, TIER_2.TIER_2);
   if (null != file.items) {
-    let attachmentMimeTypes = tmp2(8173).getAttachmentMimeTypes(file.items);
-    const tmp2Result = tmp2(8173);
+    let attachmentMimeTypes = tmp2(7258).getAttachmentMimeTypes(file.items);
+    const tmp2Result = tmp2(7258);
   } else {
     attachmentMimeTypes = [];
   }
@@ -89,8 +89,8 @@ export default function showUploadFileSizeError(arg0) {
   }
   let tmp20 = isPremiumExactlyResult;
   if (!isPremiumExactlyResult) {
-    tmp20 = num > tmp2(5434).getNitroFileUploadLimitBytes({ location: "native.showUploadFileSizeError" });
-    const tmp2Result12 = tmp2(5434);
+    tmp20 = num > tmp2(5435).getNitroFileUploadLimitBytes({ location: "native.showUploadFileSizeError" });
+    const tmp2Result12 = tmp2(5435);
   }
   if (!tmp20) {
     tmp20 = tmp19;
@@ -116,13 +116,13 @@ export default function showUploadFileSizeError(arg0) {
       const formatToPlainString = intl4.formatToPlainString;
       const t = tmp2(1115).t;
       if (tmp19) {
-        const obj4 = { maxSize: tmp2(4725).formatSize(tmp2(5433).MAX_TOTAL_ATTACHMENT_SIZE / tmp2(4725).BYTE_IN_KB, { useKibibytes: true }) };
+        const obj4 = { maxSize: tmp2(4727).formatSize(tmp2(5434).MAX_TOTAL_ATTACHMENT_SIZE / tmp2(4727).BYTE_IN_KB, { useKibibytes: true }) };
         stringResult1 = formatToPlainString(t.tUOJdH, obj4);
-        const tmp2Result15 = tmp2(4725);
+        const tmp2Result15 = tmp2(4727);
       } else {
-        const obj5 = { maxSize: tmp2(4725).formatSize(maxSize / tmp2(4725).BYTE_IN_KB, { useKibibytes: true }) };
+        const obj5 = { maxSize: tmp2(4727).formatSize(maxSize / tmp2(4727).BYTE_IN_KB, { useKibibytes: true }) };
         stringResult1 = formatToPlainString(t.fxEKdS, obj5);
-        const tmp2Result16 = tmp2(4725);
+        const tmp2Result16 = tmp2(4727);
       }
       stringResult = intl3.string(tmp2(1115).t["/tGlcj"]);
       const stringResult2 = intl3.string(tmp2(1115).t["/tGlcj"]);

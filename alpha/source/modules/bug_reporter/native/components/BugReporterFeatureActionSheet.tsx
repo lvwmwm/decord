@@ -1,10 +1,10 @@
-// Module ID: 10559
-// Function ID: 10560
+// Module ID: 9661
+// Function ID: 9662
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [32, 19, 17, 21, 4829, 576, 4825, 5993, 10534, 4796, 7314, 12, 5822, 7382, 10560, 7483, 7482, 1115, 7383, 7388, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 4825, 5995, 9636, 4796, 6397, 12, 5824, 6465, 9662, 6566, 6565, 1115, 6466, 6471, 2]
 // Exports: default
 
-// Module 10559 (BugReporterFeatureActionSheet)
+// Module 9661 (BugReporterFeatureActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
@@ -35,16 +35,16 @@ let closure_10 = noop.memo((item) => {
   item = item.item;
   const setFeature = item.setFeature;
   ({ feature, start, end } = item);
-  const obj = { start, end, value: item(10534).getFeatureId(item), label: item.name, legacyCompat_selected: null, legacyCompat_onPress: null };
-  const obj2 = item(10534);
-  const featureId = item(10534).getFeatureId(item);
-  const obj3 = item(10534);
-  obj.legacyCompat_selected = featureId === item(10534).getFeatureId(feature);
+  const obj = { start, end, value: item(9636).getFeatureId(item), label: item.name, legacyCompat_selected: null, legacyCompat_onPress: null };
+  const obj2 = item(9636);
+  const featureId = item(9636).getFeatureId(item);
+  const obj3 = item(9636);
+  obj.legacyCompat_selected = featureId === item(9636).getFeatureId(feature);
   obj.legacyCompat_onPress = function legacyCompat_onPress() {
     setFeature(item);
     ActionSheetActionCreatorsDefault.hideActionSheet();
   };
-  return closure_6(item(5993).TableRadioRow, obj);
+  return closure_6(item(5995).TableRadioRow, obj);
 });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/bug_reporter/native/components/BugReporterFeatureActionSheet.tsx");

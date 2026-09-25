@@ -1,19 +1,19 @@
-// Module ID: 18070
-// Function ID: 18071
+// Module ID: 17298
+// Function ID: 17299
 // Name: SelectApplicationActionSheet
-// Dependencies: [19, 21, 4829, 576, 1115, 7530, 7482, 5990, 4796, 5993, 5892, 1397, 2]
+// Dependencies: [19, 21, 4829, 576, 1115, 6613, 6565, 5992, 4796, 5995, 5894, 1397, 2]
 // Exports: default
 
-// Module 18070 (SelectApplicationActionSheet)
+// Module 17298 (SelectApplicationActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import FastImageDefault from "FastImage" /* 5892 */;
-import TableRadioGroup from "TableRadioGroup" /* 5990 */;
-import TableRadioRow from "TableRadioRow" /* 5993 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7482 */;
-import ActionSheet from "ActionSheet" /* 7530 */;
+import FastImageDefault from "FastImage" /* 5894 */;
+import TableRadioGroup from "TableRadioGroup" /* 5992 */;
+import TableRadioRow from "TableRadioRow" /* 5995 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6565 */;
+import ActionSheet from "ActionSheet" /* 6613 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

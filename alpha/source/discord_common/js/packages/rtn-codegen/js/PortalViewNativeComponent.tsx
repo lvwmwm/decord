@@ -1,9 +1,9 @@
-// Module ID: 8619
-// Function ID: 8620
+// Module ID: 7709
+// Function ID: 7710
 // Name: PortalViewNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 8619 (PortalViewNativeComponent)
+// Module 7709 (PortalViewNativeComponent)
 import weakSet from "weakSet" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

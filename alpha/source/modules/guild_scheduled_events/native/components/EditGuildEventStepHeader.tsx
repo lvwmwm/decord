@@ -1,10 +1,10 @@
-// Module ID: 9937
-// Function ID: 9938
+// Module ID: 9035
+// Function ID: 9036
 // Name: EditGuildEventStepHeader
 // Dependencies: [19, 17, 21, 4829, 4825, 2]
 // Exports: default
 
-// Module 9937 (EditGuildEventStepHeader)
+// Module 9035 (EditGuildEventStepHeader)
 import Text_Text from "Text/Text" /* 4825 */;
 import noop from "module_19" /* 19 */;
 

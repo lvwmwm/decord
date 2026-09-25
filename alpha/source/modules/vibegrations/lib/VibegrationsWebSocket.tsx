@@ -1,9 +1,9 @@
-// Module ID: 13462
-// Function ID: 13463
+// Module ID: 12612
+// Function ID: 12613
 // Name: VibegrationsWebSocket
 // Dependencies: [2]
 
-// Module 13462 (VibegrationsWebSocket)
+// Module 12612 (VibegrationsWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsWebSocket.tsx");

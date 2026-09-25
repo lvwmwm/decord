@@ -1,12 +1,12 @@
 // Module ID: 4788
 // Function ID: 4789
 // Name: CircleCheckIcon
-// Dependencies: [19, 17, 21, 576, 4525, 4789, 4790, 2]
+// Dependencies: [19, 17, 21, 576, 4527, 4789, 4790, 2]
 // Exports: CircleCheckIcon
 
 // Module 4788 (CircleCheckIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
 import _mod4789 from "module_4789" /* 4789 */;
 import _mod4790 from "module_4790" /* 4790 */;
 import noop from "module_19" /* 19 */;

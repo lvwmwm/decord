@@ -1,18 +1,18 @@
-// Module ID: 13941
-// Function ID: 13942
+// Module ID: 13100
+// Function ID: 13101
 // Name: GuildPowerupsMarketingHeader
-// Dependencies: [19, 17, 4717, 21, 4829, 576, 672, 4825, 13942, 12837, 12862, 1115, 2518, 13943, 2]
+// Dependencies: [19, 17, 4719, 21, 4829, 576, 672, 4825, 13101, 11966, 11991, 1115, 2518, 13102, 2]
 // Exports: default
 
-// Module 13941 (GuildPowerupsMarketingHeader)
+// Module 13100 (GuildPowerupsMarketingHeader)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12837 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12862 */;
-import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 13942 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 11966 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 11991 */;
+import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 13101 */;
 import noop from "module_19" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4717 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4719 */;
 
 require = fn;
 function PerkText(children) {
@@ -61,7 +61,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       if (null != arr) {
         str2 = "";
         if (0 !== arr.length) {
-          let first = tmp2(13943)(arr);
+          let first = tmp2(13102)(arr);
           if (1 === first.length) {
             const obj3 = { powerup: null };
             first = first[0];

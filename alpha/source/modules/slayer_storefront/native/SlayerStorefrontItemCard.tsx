@@ -1,13 +1,13 @@
-// Module ID: 9186
-// Function ID: 9187
+// Module ID: 8280
+// Function ID: 8281
 // Name: SlayerStorefrontItemCard
-// Dependencies: [19, 17, 21, 4829, 576, 7559, 9187, 7882, 5892, 5285, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 6642, 8281, 6967, 5894, 5286, 2]
 // Exports: default
 
-// Module 9186 (SlayerStorefrontItemCard)
+// Module 8280 (SlayerStorefrontItemCard)
 import nativeDefault from "native" /* 576 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7559 */;
-import tinycolorDefault from "tinycolor" /* 7882 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6642 */;
+import tinycolorDefault from "tinycolor" /* 6967 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

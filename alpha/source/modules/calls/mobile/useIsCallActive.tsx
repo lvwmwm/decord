@@ -1,11 +1,11 @@
-// Module ID: 8329
-// Function ID: 8330
+// Module ID: 7418
+// Function ID: 7419
 // Name: useIsCallActive
-// Dependencies: [5583, 4845, 4850, 504, 2]
+// Dependencies: [5585, 4845, 4850, 504, 2]
 // Exports: checkIsCallActive, default, useIsCallActiveNullable
 
-// Module 8329 (useIsCallActive)
-import CallStore from "CallStore" /* 5583 */;
+// Module 7418 (useIsCallActive)
+import CallStore from "CallStore" /* 5585 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4845 */;
 
 const require = globalThis.__r;

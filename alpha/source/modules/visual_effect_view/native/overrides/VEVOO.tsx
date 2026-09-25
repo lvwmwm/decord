@@ -1,12 +1,12 @@
-// Module ID: 16343
-// Function ID: 16344
+// Module ID: 15523
+// Function ID: 15524
 // Name: VEVOO
-// Dependencies: [19, 17, 4828, 574, 21, 4829, 576, 4561, 5272, 5276, 8951, 16344, 16346, 16347, 11245, 5985, 504, 16091, 2]
+// Dependencies: [19, 17, 4828, 574, 21, 4829, 576, 4563, 5273, 5277, 8045, 15524, 15526, 15527, 10343, 5987, 504, 15266, 2]
 
-// Module 16343 (VEVOO)
+// Module 15523 (VEVOO)
 import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5272 */;
-import springPresets from "springPresets" /* 5276 */;
+import spring from "spring" /* 5273 */;
+import springPresets from "springPresets" /* 5277 */;
 import noop from "module_19" /* 19 */;
 import DevSettingsStore from "DevSettingsStore" /* 4828 */;
 

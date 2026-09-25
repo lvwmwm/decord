@@ -1,19 +1,19 @@
-// Module ID: 17824
-// Function ID: 17825
+// Module ID: 17050
+// Function ID: 17051
 // Name: AcceptInviteModal
-// Dependencies: [19, 7311, 21, 1249, 4814, 13064, 9098, 7333, 2]
+// Dependencies: [19, 6394, 21, 1249, 4814, 12212, 8192, 6416, 2]
 // Exports: default
 
-// Module 17824 (AcceptInviteModal)
+// Module 17050 (AcceptInviteModal)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import InviteCodeUtils from "InviteCodeUtils" /* 4814 */;
-import AcceptInviteContainerDefault from "AcceptInviteContainer" /* 13064 */;
+import AcceptInviteContainerDefault from "AcceptInviteContainer" /* 12212 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const CreateGuildModalStates = fn(7311).CreateGuildModalStates;
+const CreateGuildModalStates = fn(6394).CreateGuildModalStates;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/accept_invite/native/components/AcceptInviteModal.tsx");
@@ -33,7 +33,7 @@ export default function AcceptInviteModal(arg0) {
     obj2.render = function render() {
       const obj = {};
       const merged = Object.assign(closure_0);
-      obj.onPressClose = closure_0(9098).clearDisplayedInvite;
+      obj.onPressClose = closure_0(8192).clearDisplayedInvite;
       return jsx(AcceptInviteContainerDefault, {});
     };
     obj[CreateGuildModalStates.ACCEPT_INVITE] = obj2;

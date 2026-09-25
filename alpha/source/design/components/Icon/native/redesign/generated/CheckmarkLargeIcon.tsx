@@ -1,12 +1,12 @@
 // Module ID: 4779
 // Function ID: 4780
 // Name: CheckmarkLargeIcon
-// Dependencies: [19, 21, 576, 4525, 4780, 2]
+// Dependencies: [19, 21, 576, 4527, 4780, 2]
 // Exports: CheckmarkLargeIcon
 
 // Module 4779 (CheckmarkLargeIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
 import _mod4780 from "module_4780" /* 4780 */;
 import noop from "module_19" /* 19 */;
 

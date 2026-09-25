@@ -1,12 +1,12 @@
-// Module ID: 8602
-// Function ID: 8603
+// Module ID: 7692
+// Function ID: 7693
 // Name: Banner
-// Dependencies: [19, 17, 1074, 21, 4829, 1092, 5892, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 1092, 5894, 2]
 // Exports: default
 
-// Module 8602 (Banner)
+// Module 7692 (Banner)
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import FastImageDefault from "FastImage" /* 5892 */;
+import FastImageDefault from "FastImage" /* 5894 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,16 +1,16 @@
-// Module ID: 12950
-// Function ID: 12951
+// Module ID: 12081
+// Function ID: 12082
 // Name: useUserProfileMutuals
-// Dependencies: [32, 19, 7982, 5743, 7945, 504, 12, 9980, 2]
+// Dependencies: [32, 19, 7067, 5745, 7030, 504, 12, 9078, 2]
 // Exports: default
 
-// Module 12950 (useUserProfileMutuals)
+// Module 12081 (useUserProfileMutuals)
 import _mod12 from "module_12" /* 12 */;
-import usePrevValueDefault from "usePrevValue" /* 9980 */;
+import usePrevValueDefault from "usePrevValue" /* 9078 */;
 import _slicedToArray from "module_32" /* 32 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7982 */;
-import SortedGuildStore from "SortedGuildStore" /* 5743 */;
-import UserProfileStore from "UserProfileStore" /* 7945 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7067 */;
+import SortedGuildStore from "SortedGuildStore" /* 5745 */;
+import UserProfileStore from "UserProfileStore" /* 7030 */;
 
 const require = globalThis.__r;
 

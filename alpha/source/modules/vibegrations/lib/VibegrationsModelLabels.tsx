@@ -1,10 +1,10 @@
-// Module ID: 17032
-// Function ID: 17033
+// Module ID: 16222
+// Function ID: 16223
 // Name: VibegrationsModelLabels
 // Dependencies: [3714, 1115, 2]
 // Exports: modelTierMessage, tierTooltip
 
-// Module 17032 (VibegrationsModelLabels)
+// Module 16222 (VibegrationsModelLabels)
 import util from "util" /* 1115 */;
 import _modDef3714 from "module_3714" /* 3714 */;
 import size from "module_2" /* 2 */;

@@ -1,16 +1,16 @@
-// Module ID: 13996
-// Function ID: 13997
+// Module ID: 13157
+// Function ID: 13158
 // Name: MultiAccountSwitchStore
-// Dependencies: [12762, 1074, 3, 15, 1100, 1241, 504, 573, 2]
+// Dependencies: [11888, 1074, 3, 15, 1100, 1241, 504, 573, 2]
 
-// Module 13996 (MultiAccountSwitchStore)
+// Module 13157 (MultiAccountSwitchStore)
 import LoggerDefault from "Logger" /* 3 */;
 import fast_connect from "fast_connect" /* 15 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import TokenManagerAll from "TokenManager" /* 1100 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import MultiAccountStore from "MultiAccountStore" /* 12762 */;
+import MultiAccountStore from "MultiAccountStore" /* 11888 */;
 
 require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;

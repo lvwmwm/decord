@@ -1,12 +1,12 @@
-// Module ID: 17519
-// Function ID: 17520
+// Module ID: 16743
+// Function ID: 16744
 // Name: NitroFileUploadUpsellPromoSheet
-// Dependencies: [19, 17, 1074, 2041, 21, 4829, 576, 5290, 7712, 10314, 10578, 5997, 1115, 2586, 5273, 2]
+// Dependencies: [19, 17, 1074, 2041, 21, 4829, 576, 5291, 6795, 9411, 9680, 16741, 1115, 2586, 5274, 2]
 // Exports: default
 
-// Module 17519 (NitroFileUploadUpsellPromoSheet)
+// Module 16743 (NitroFileUploadUpsellPromoSheet)
 import nativeDefault from "native" /* 576 */;
-import openUserSettings from "openUserSettings" /* 7712 */;
+import openUserSettings from "openUserSettings" /* 6795 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

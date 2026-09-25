@@ -1,16 +1,16 @@
-// Module ID: 15385
-// Function ID: 15386
+// Module ID: 14551
+// Function ID: 14552
 // Name: BountiesScrollIndicatorAnimation
-// Dependencies: [32, 19, 17, 21, 4829, 4526, 576, 4535, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 4528, 576, 4537, 2]
 // Exports: default
 
-// Module 15385 (BountiesScrollIndicatorAnimation)
+// Module 14551 (BountiesScrollIndicatorAnimation)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4526 */;
+import useToken from "useToken" /* 4528 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const native = tmp2(4535);
+const native = tmp2(4537);
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;

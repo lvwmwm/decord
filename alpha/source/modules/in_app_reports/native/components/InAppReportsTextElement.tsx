@@ -1,12 +1,12 @@
-// Module ID: 9008
-// Function ID: 9009
+// Module ID: 8102
+// Function ID: 8103
 // Name: InAppReportsTextElement
-// Dependencies: [19, 17, 21, 4829, 5293, 4825, 2]
+// Dependencies: [19, 17, 21, 4829, 5294, 4825, 2]
 // Exports: default
 
-// Module 9008 (InAppReportsTextElement)
+// Module 8102 (InAppReportsTextElement)
 import Text_Text from "Text/Text" /* 4825 */;
-import CustomMarkupAll from "CustomMarkup" /* 5293 */;
+import CustomMarkupAll from "CustomMarkup" /* 5294 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,17 +1,17 @@
-// Module ID: 10614
-// Function ID: 10615
+// Module ID: 9718
+// Function ID: 9719
 // Name: ForumComposerHeader
-// Dependencies: [19, 17, 21, 4829, 576, 4982, 5427, 1115, 5985, 5394, 4825, 5381, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4982, 5428, 1115, 5987, 5395, 4825, 5382, 2]
 // Exports: default
 
-// Module 10614 (ForumComposerHeader)
+// Module 9718 (ForumComposerHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import useChannelNameDefault from "useChannelName" /* 4982 */;
-import ForumIcon from "ForumIcon" /* 5394 */;
-import Pressables from "Pressables" /* 5427 */;
-import XSmallIcon from "XSmallIcon" /* 5985 */;
+import ForumIcon from "ForumIcon" /* 5395 */;
+import Pressables from "Pressables" /* 5428 */;
+import XSmallIcon from "XSmallIcon" /* 5987 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -75,8 +75,8 @@ export default function ForumComposerHeader(height) {
     obj5.accessibilityLabel = intl3.string(tmp7(1115).t.yR6HwZ);
     obj5.style = tmp.button;
     obj5.onPress = onGuidelinesPress;
-    obj5.children = tmp6(tmp7(5381).BookCheckIcon, {});
-    tmp6Result = tmp6(tmp7(5427).PressableOpacity, obj5);
+    obj5.children = tmp6(tmp7(5382).BookCheckIcon, {});
+    tmp6Result = tmp6(tmp7(5428).PressableOpacity, obj5);
   }
   items[2] = tmp6Result;
   items[3] = hasOwnProperty(React4, { style: tmp.headerBarSeparator });

@@ -1,14 +1,14 @@
-// Module ID: 7502
-// Function ID: 7503
+// Module ID: 6585
+// Function ID: 6586
 // Name: useAuthorizedAppsToken
-// Dependencies: [19, 7440, 504, 1370, 7503, 2]
+// Dependencies: [19, 6523, 504, 1370, 6586, 2]
 // Exports: useAuthorizedAppsToken
 
-// Module 7502 (useAuthorizedAppsToken)
+// Module 6585 (useAuthorizedAppsToken)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7503 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6586 */;
 import noop from "module_19" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7440 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6523 */;
 
 require = fn;
 function useAuthorizedAppsTokens(noop, arg1) {
@@ -70,7 +70,7 @@ function useAuthorizedAppsTokens(noop, arg1) {
   }, items6);
   return { tokens, fetched };
 }
-const FetchState = fn(7440).FetchState;
+const FetchState = fn(6523).FetchState;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/application_account_linking/hooks/useAuthorizedAppsToken.tsx");
 

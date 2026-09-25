@@ -1,12 +1,12 @@
-// Module ID: 16126
-// Function ID: 16127
+// Module ID: 15303
+// Function ID: 15304
 // Name: DevToolsPerformanceTestingScreen
-// Dependencies: [19, 17, 21, 4829, 576, 1484, 1612, 5992, 15938, 5910, 14953, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 1484, 1612, 5994, 15108, 5912, 14115, 2]
 
-// Module 16126 (DevToolsPerformanceTestingScreen)
+// Module 15303 (DevToolsPerformanceTestingScreen)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14953 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14115 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -31,9 +31,9 @@ export default noop.memo(function DevToolsPerformanceTestingScreen() {
   const entries = Object.entries(require("DevToolsScreens").PerformanceTestingScreens);
   obj4.children = entries.map((item) => {
     [tmp, ] = item;
-    return jsx(screenKey(5910).TableRow, {
+    return jsx(screenKey(5912).TableRow, {
       label: tmp2,
-      icon: jsx(screenKey(5910).TableRow.Icon, { IconComponent: tmp3 }),
+      icon: jsx(screenKey(5912).TableRow.Icon, { IconComponent: tmp3 }),
       arrow: true,
       onPress() {
         if (null != screenKey.push) {

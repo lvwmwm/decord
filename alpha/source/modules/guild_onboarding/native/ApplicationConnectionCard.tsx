@@ -1,13 +1,13 @@
-// Module ID: 7494
-// Function ID: 7495
+// Module ID: 6577
+// Function ID: 6578
 // Name: ApplicationConnectionCard
-// Dependencies: [19, 5056, 1074, 21, 504, 7495, 7496, 1115, 7498, 7505, 1241, 5009, 7510, 2]
+// Dependencies: [19, 5056, 1074, 21, 504, 6578, 6579, 1115, 6581, 6588, 1241, 5009, 6593, 2]
 // Exports: default
 
-// Module 7494 (ApplicationConnectionCard)
+// Module 6577 (ApplicationConnectionCard)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5009 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 7496 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6579 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5056 */;
 

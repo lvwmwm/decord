@@ -1,16 +1,16 @@
-// Module ID: 10991
-// Function ID: 10992
+// Module ID: 10095
+// Function ID: 10096
 // Name: MediaKeyboardList
-// Dependencies: [32, 19, 17, 1479, 1608, 7484, 5038, 21, 4829, 576, 4561, 10992, 10995, 1481, 1612, 1478, 5987, 6957, 9747, 5455, 12, 10996, 11003, 11005, 10667, 11006, 5451, 7405, 1115, 2]
+// Dependencies: [32, 19, 17, 1479, 1608, 6567, 5038, 21, 4829, 576, 4563, 10096, 10099, 1481, 1612, 1478, 5989, 6040, 8845, 5456, 12, 10100, 10107, 10109, 9771, 10110, 5452, 6488, 1115, 2]
 
-// Module 10991 (MediaKeyboardList)
+// Module 10095 (MediaKeyboardList)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
-import DeviceMediaDefault from "DeviceMedia" /* 10992 */;
-import MediaKeyboardItem from "MediaKeyboardItem" /* 10996 */;
-import MediaKeyboardFooterDefault from "MediaKeyboardFooter" /* 11003 */;
-import MediaKeyboardLimitedPickerNoticeDefault from "MediaKeyboardLimitedPickerNotice" /* 11005 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
+import DeviceMediaDefault from "DeviceMedia" /* 10096 */;
+import MediaKeyboardItem from "MediaKeyboardItem" /* 10100 */;
+import MediaKeyboardFooterDefault from "MediaKeyboardFooter" /* 10107 */;
+import MediaKeyboardLimitedPickerNoticeDefault from "MediaKeyboardLimitedPickerNotice" /* 10109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import DimensionsStore from "DimensionsStore" /* 1479 */;
@@ -21,7 +21,7 @@ require = fn;
 get_ActivityIndicator = fn(17);
 const NativeModules = get_ActivityIndicator.NativeModules;
 let closure_7 = fn(1608).InAppCameraUsedCameraPreviewTypes;
-let closure_8 = fn(7484).ACTION_SHEET_START_HEIGHT_RATIO;
+let closure_8 = fn(6567).ACTION_SHEET_START_HEIGHT_RATIO;
 const NativePermissionStatus = fn(5038).NativePermissionStatus;
 const jsx = fn(21).jsx;
 const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(NativeModules.PhotoLibraryHelper);

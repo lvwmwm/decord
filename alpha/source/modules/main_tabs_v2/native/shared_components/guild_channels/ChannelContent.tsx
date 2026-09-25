@@ -1,16 +1,16 @@
-// Module ID: 17228
-// Function ID: 17229
+// Module ID: 16443
+// Function ID: 16444
 // Name: ChannelContent
-// Dependencies: [19, 17, 10464, 5011, 21, 4829, 1364, 10467, 5365, 17229, 5401, 8946, 16544, 4825, 2]
+// Dependencies: [19, 17, 9566, 5011, 21, 4829, 1364, 9569, 5366, 16444, 5402, 8040, 15724, 4825, 2]
 // Exports: renderChannelContent
 
-// Module 17228 (ChannelContent)
-import isRoleRequiredDefault from "isRoleRequired" /* 5365 */;
-import ChannelListLayout from "ChannelListLayout" /* 10467 */;
-import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 17229 */;
+// Module 16443 (ChannelContent)
+import isRoleRequiredDefault from "isRoleRequired" /* 5366 */;
+import ChannelListLayout from "ChannelListLayout" /* 9569 */;
+import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 16444 */;
 import noop from "module_19" /* 19 */;
 
-const GuildRoleSubscriptionGatedChannelIconDefault = tmp13(16544);
+const GuildRoleSubscriptionGatedChannelIconDefault = tmp13(15724);
 require = fn;
 function ChannelContentComponent(arg0) {
   ({ subtitle, resolvedUnreadSetting, locked, lastMessageTimestampString, channel, layout, mentionCount, mentionBadge, isSubscriptionGated } = arg0);
@@ -74,12 +74,12 @@ function ChannelContentComponent(arg0) {
     obj7.style = items2;
     if (tmp10Result) {
       const obj9 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
-      tmp10Result = tmp10(tmp2(5401).LockIcon, obj9);
+      tmp10Result = tmp10(tmp2(5402).LockIcon, obj9);
     }
     const items3 = [tmp10Result, , ];
     if (isNSFWResult) {
       const obj10 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
-      isNSFWResult = tmp10(tmp2(8946).WarningIcon, obj10);
+      isNSFWResult = tmp10(tmp2(8040).WarningIcon, obj10);
     }
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
@@ -149,7 +149,7 @@ if (PlatformUtils.isIOS()) {
   num = 2;
 }
 let obj3 = { channelContent: { flex: 1, marginTop: num }, channelContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, leftBox: { flexDirection: "column", alignItems: "flex-start", flexShrink: 1 }, rightBox: { flexDirection: "column", alignItems: "flex-end" }, rightContentAbsolute: { position: "absolute", right: 0, top: 0 }, channelTraits: { display: "flex", flexDirection: "row", alignItems: "center" }, channelTraitIcon: null };
-let obj4 = { opacity: fn(10464).SUBTITLE_OPACITY_NORMAL, marginRight: 4, marginTop: null };
+let obj4 = { opacity: fn(9566).SUBTITLE_OPACITY_NORMAL, marginRight: 4, marginTop: null };
 PlatformUtils = fn(1364);
 let num2 = 0;
 if (PlatformUtils.isAndroid()) {

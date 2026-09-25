@@ -1,10 +1,10 @@
-// Module ID: 6954
-// Function ID: 6955
+// Module ID: 6037
+// Function ID: 6038
 // Name: NativeTextInput
-// Dependencies: [19, 17, 1480, 1074, 21, 6955, 5290, 5258, 6956, 4535, 4528, 2]
+// Dependencies: [19, 17, 1480, 1074, 21, 6038, 5291, 5259, 6039, 4537, 4530, 2]
 // Exports: useKeyboardBlurring
 
-// Module 6954 (NativeTextInput)
+// Module 6037 (NativeTextInput)
 import noop from "module_19" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1480 */;
 
@@ -100,8 +100,8 @@ export const NativeTextInput = noop.forwardRef((value, ref2) => {
   ref(defaultValue[9]);
   if (null != value.keyboardAppearance) {
     const obj3 = {};
-    let merged = Object.assign(tmp6(tmp3[10]).mergeProps(value, tmp4, { value: "channel", defaultValue: "channelId" }));
-    const obj4 = { value: "channel", defaultValue: "channelId" };
+    let merged = Object.assign(tmp6(tmp3[10]).mergeProps(value, tmp4, { value: "isArray", defaultValue: "paddingHorizontal" }));
+    const obj4 = { value: "isArray", defaultValue: "paddingHorizontal" };
     const tmp15 = closure_10;
     const tmp6Result = tmp6(tmp3[10]);
     obj3.ref = tmp6(tmp3[10]).mergeRefs(ref, ref2);

@@ -1,13 +1,13 @@
 // Module ID: 4793
 // Function ID: 4794
 // Name: BrowserManager
-// Dependencies: [5, 17, 1364, 4794, 4795, 560, 1094, 4520, 1370, 2]
+// Dependencies: [5, 17, 1364, 4794, 4795, 560, 1094, 4522, 1370, 2]
 // Exports: browserManagerClearWebsiteData, browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getBrowserManagerIsChromeInstalled, getBrowserManagerSelectedBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen, useBrowserManagerIsChromeInstalled, useBrowserManagerSelectedBrowser, useBrowserManagerSupportsInAppBrowser, useIsInAppBrowserOpen
 
 // Module 4793 (BrowserManager)
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import PlatformUtils2 from "PlatformUtils" /* 1364 */;
-import LinkingDefault from "Linking" /* 4520 */;
+import LinkingDefault from "Linking" /* 4522 */;
 import NativeBrowserManagerModuleDefault from "NativeBrowserManagerModule" /* 4794 */;
 import NativeBrowserManagerModuleIOSDefault from "NativeBrowserManagerModuleIOS" /* 4795 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

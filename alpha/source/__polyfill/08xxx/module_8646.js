@@ -1,0 +1,9 @@
+// Module ID: 8646
+// Function ID: 8647
+// Dependencies: [1121]
+
+// Module 8646
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stickers/native/images", width: 77.5, height: 72, scales: [2, 3], hash: "215c6cf6cc2b74cad508b12b0e602266", name: "empty", type: "png" });

@@ -1,10 +1,10 @@
-// Module ID: 13905
-// Function ID: 13906
+// Module ID: 13062
+// Function ID: 13063
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 2111, 1372, 1074, 7762, 1374, 21, 4829, 576, 4779, 1115, 1881, 504, 4483, 5285, 1094, 4825, 13906, 13907, 9588, 5273, 2]
+// Dependencies: [19, 17, 2111, 1372, 1074, 6847, 1374, 21, 4829, 576, 4779, 1115, 1881, 504, 4485, 5286, 1094, 4825, 13063, 13064, 8686, 5274, 2]
 // Exports: default
 
-// Module 13905 (PremiumSubscriptionUpsell)
+// Module 13062 (PremiumSubscriptionUpsell)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
@@ -14,7 +14,7 @@ import UserStore from "UserStore" /* 1372 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4, StyleSheet } = get_ActivityIndicator);
-const Gradients = fn(7762).Gradients;
+const Gradients = fn(6847).Gradients;
 const PremiumConstants = fn(1374);
 ({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_8, GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: closure_9 } = PremiumConstants);
 const jsxProd = fn(21);
@@ -50,7 +50,7 @@ export default function PremiumSubscriptionUpsell(arg0) {
     const items1 = [tmp.upsell, style];
     obj3.style = items1;
     let obj4 = { style: tmp.upsellCard, start: tmp2(1094).HorizontalGradient.START, end: tmp2(1094).HorizontalGradient.END, colors: Gradients.PREMIUM_GUILD, children: null };
-    const tmp5Result = tmp5(5285);
+    const tmp5Result = tmp5(5286);
     if (tmp5Result3.isPremium(stateFromStores)) {
       const obj5 = { children: null };
       const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: null };
@@ -72,17 +72,17 @@ export default function PremiumSubscriptionUpsell(arg0) {
     }
     const items3 = [tmp6Result1, , ];
     const obj10 = { style: tmp.upsellFeatures, children: null };
-    const obj11 = { style: tmp.upsellFeatureSubLogo, source: tmp5(13906) };
+    const obj11 = { style: tmp.upsellFeatureSubLogo, source: tmp5(13063) };
     const items4 = [closure_1_10(React4, obj11), , ];
-    const obj12 = { style: tmp.upsellFeatureLogoTier2, source: tmp5(13907) };
+    const obj12 = { style: tmp.upsellFeatureLogoTier2, source: tmp5(13064) };
     items4[1] = closure_1_10(React4, obj12);
     const obj13 = { style: tmp.upsellFeatureList, features: null, labelStyle: null, rowStyle: null };
     const obj15 = { IconComponent: null, label: null, color: null };
-    tmp5Result3 = tmp5(4483);
+    tmp5Result3 = tmp5(4485);
     obj15.IconComponent = tmp2(4779).CheckmarkLargeIcon;
     const intl4 = tmp2(1115).intl;
     const obj16 = { discountPercentage: null };
-    const tmp5Result4 = tmp5(9588);
+    const tmp5Result4 = tmp5(8686);
     obj16.discountPercentage = tmp2(1881).formatPercent(LocaleStore.locale, React7 / 100);
     obj15.label = intl4.formatToPlainString(tmp2(1115).t.P3aEj6, obj16);
     obj15.color = tmp5(576).unsafe_rawColors.WHITE;
@@ -104,7 +104,7 @@ export default function PremiumSubscriptionUpsell(arg0) {
     stringResult = intl6.string(tmp2(1115).t.fJOECn);
     obj20.text = stringResult;
     obj20.onPress = onLearnMorePremium;
-    tmp = tmp6(tmp2(5273).Button, obj20);
+    tmp = tmp6(tmp2(5274).Button, obj20);
     obj19.children = tmp;
     items3[2] = closure_1_10(React3, obj19);
     obj4.children = items3;

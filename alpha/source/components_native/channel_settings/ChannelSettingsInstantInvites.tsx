@@ -1,25 +1,25 @@
-// Module ID: 17391
-// Function ID: 17392
+// Module ID: 16608
+// Function ID: 16609
 // Name: ChannelSettingsInstantInvites
-// Dependencies: [32, 19, 17, 8984, 2044, 1074, 21, 4829, 576, 1612, 504, 8983, 11284, 1177, 11302, 11303, 1115, 7372, 17392, 7388, 2]
+// Dependencies: [32, 19, 17, 8078, 2044, 1074, 21, 4829, 576, 1612, 504, 8077, 10382, 1177, 10400, 10401, 1115, 6455, 16609, 6471, 2]
 // Exports: default
 
-// Module 17391 (ChannelSettingsInstantInvites)
+// Module 16608 (ChannelSettingsInstantInvites)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import InstantInvite from "InstantInvite" /* 11284 */;
+import InstantInvite from "InstantInvite" /* 10382 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 8984 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 8078 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 
 const require = globalThis.__r;
 const InstantInviteDefault = InstantInvite;
 
-const FastestListDefault = tmp2(7388);
-const _modDef11302 = tmp2(11302);
-const _modDef11303 = tmp2(11303);
-const InstantInviteSelfMeasurerDefault = tmp2(17392);
+const FastestListDefault = tmp2(6471);
+const _modDef10400 = tmp2(10400);
+const _modDef10401 = tmp2(10401);
+const InstantInviteSelfMeasurerDefault = tmp2(16609);
 require = fn;
 const View = fn(17).View;
 const ChannelSettingsSections = fn(1074).ChannelSettingsSections;
@@ -109,7 +109,7 @@ export default function ConnectedChannelSettingsInstantInvites() {
   }, items7);
   if (!loading) {
     if (0 === memo1.length) {
-      const obj5 = { lightSource: _modDef11302, darkSource: _modDef11303, title: null, body: null };
+      const obj5 = { lightSource: _modDef10400, darkSource: _modDef10401, title: null, body: null };
       const intl = tmpResult(1115).intl;
       obj5.title = intl.string(tmpResult(1115).t["+nLJkZ"]);
       const intl2 = tmpResult(1115).intl;
@@ -127,7 +127,7 @@ export default function ConnectedChannelSettingsInstantInvites() {
   }
   const obj8 = { style: tmp.content, children: null };
   tmp = closure_9;
-  const items8 = [closure_9(tmpResult(7372).SceneLoadingIndicator, {}), ];
+  const items8 = [closure_9(tmpResult(6455).SceneLoadingIndicator, {}), ];
   tmpResult = null;
   if (memo1.length > 0) {
     tmp2 = InstantInviteSelfMeasurerDefault;

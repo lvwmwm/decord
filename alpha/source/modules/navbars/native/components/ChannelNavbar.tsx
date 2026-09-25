@@ -1,30 +1,30 @@
-// Module ID: 13122
-// Function ID: 13123
+// Module ID: 12272
+// Function ID: 12273
 // Name: ChannelNavbar
-// Dependencies: [19, 17, 5582, 2048, 2044, 2066, 4869, 4474, 1372, 1074, 2051, 2041, 21, 4829, 5829, 576, 504, 1115, 5327, 4982, 11226, 13123, 13124, 1177, 13125, 13126, 5892, 13127, 10642, 5427, 4825, 4673, 8607, 10095, 4649, 2028, 10973, 13128, 2]
+// Dependencies: [19, 17, 5584, 2048, 2044, 2066, 4869, 4476, 1372, 1074, 2051, 2041, 21, 4829, 5831, 576, 504, 1115, 5328, 4982, 10324, 12273, 12274, 1177, 12275, 12276, 5894, 12277, 9746, 5428, 4825, 4675, 7697, 9192, 4651, 2028, 10077, 12278, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 13122 (ChannelNavbar)
+// Module 12272 (ChannelNavbar)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import dismissible_content from "dismissible_content" /* 2028 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4649 */;
-import UserUtilsDefault from "UserUtils" /* 4673 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4651 */;
+import UserUtilsDefault from "UserUtils" /* 4675 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import useChannelName from "useChannelName" /* 4982 */;
-import Pressables from "Pressables" /* 5427 */;
-import isStreamingDefault from "isStreaming" /* 8607 */;
-import ActivityStatusDefault from "ActivityStatus" /* 11226 */;
+import Pressables from "Pressables" /* 5428 */;
+import isStreamingDefault from "isStreaming" /* 7697 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10324 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5582 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5584 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildStore from "GuildStore" /* 2066 */;
 import PresenceStore from "PresenceStore" /* 4869 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
-import TextStyles from "TextStyles" /* 5829 */;
+import TextStyles from "TextStyles" /* 5831 */;
 
 require = fn;
 function ChannelTitleContent(arg0) {
@@ -172,8 +172,8 @@ export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) 
   }
   let channelIcon = null;
   if (null != stateFromStores) {
-    channelIcon = tmp2(5327).getChannelIcon(stateFromStores);
-    const tmp2Result = tmp2(5327);
+    channelIcon = tmp2(5328).getChannelIcon(stateFromStores);
+    const tmp2Result = tmp2(5328);
   }
   let channelName = null;
   if (null != stateFromStores) {
@@ -423,7 +423,7 @@ export const ChannelButtons = function ChannelButtons(buttons) {
       obj.disabled = disabled;
       obj.style = style;
       obj.children = children;
-      const children1 = [closure_16(closure_1(10095), obj), ];
+      const children1 = [closure_16(closure_1(9192), obj), ];
       let tmp3Result = null;
       if (hasActivitiesPrivateChannelTooltip) {
         const obj2 = { contentTypes: null, groupName: null, children: null };
@@ -443,8 +443,8 @@ export const ChannelButtons = function ChannelButtons(buttons) {
           }
           return tmp2;
         };
-        tmp3Result = tmp3(closure_1(10973), obj2);
-        const tmp4Result = closure_1(10973);
+        tmp3Result = tmp3(closure_1(10077), obj2);
+        const tmp4Result = closure_1(10077);
       }
       children1[1] = tmp3Result;
       return closure_17(closure_4, { children: children1 }, index);

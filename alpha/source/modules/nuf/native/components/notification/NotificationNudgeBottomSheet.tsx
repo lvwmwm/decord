@@ -1,19 +1,19 @@
-// Module ID: 16952
-// Function ID: 16953
+// Module ID: 16140
+// Function ID: 16141
 // Name: NotificationNudgeBottomSheet
-// Dependencies: [19, 17, 12759, 1074, 2041, 21, 4829, 576, 1241, 4796, 12760, 7483, 5997, 4825, 5738, 5273, 1115, 2]
+// Dependencies: [19, 17, 11885, 1074, 2041, 21, 4829, 576, 1241, 4796, 11886, 6566, 16141, 4825, 5740, 5274, 1115, 2]
 // Exports: default
 
-// Module 16952 (NotificationNudgeBottomSheet)
+// Module 16140 (NotificationNudgeBottomSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12760 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 11886 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const NotificationPermissionConstants = fn(12759);
+const NotificationPermissionConstants = fn(11885);
 ({ EventActionType: hasOwnProperty, NotificationNudgeAnalyticsAction: metroRequire } = NotificationPermissionConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const ContentDismissActionType = fn(2041).ContentDismissActionType;

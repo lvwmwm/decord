@@ -1,12 +1,12 @@
 // Module ID: 4767
 // Function ID: 4768
 // Name: UserPlatformIcon
-// Dependencies: [19, 21, 576, 4525, 4768, 2]
+// Dependencies: [19, 21, 576, 4527, 4768, 2]
 // Exports: UserPlatformIcon
 
 // Module 4767 (UserPlatformIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
 import _mod4768 from "module_4768" /* 4768 */;
 import noop from "module_19" /* 19 */;
 

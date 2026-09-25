@@ -1,11 +1,11 @@
-// Module ID: 10706
-// Function ID: 10707
+// Module ID: 9810
+// Function ID: 9811
 // Name: EmojiPickerCategoriesUnicodeShortcutItem
-// Dependencies: [32, 19, 17, 1074, 21, 4829, 4561, 9747, 5427, 1115, 10695, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4829, 4563, 8845, 5428, 1115, 9799, 2]
 // Exports: default
 
-// Module 10706 (EmojiPickerCategoriesUnicodeShortcutItem)
-import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9747 */;
+// Module 9810 (EmojiPickerCategoriesUnicodeShortcutItem)
+import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 8845 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -48,8 +48,8 @@ export default function EmojiPickerCategoriesUnicodeShortcutItem(blockRef) {
           num = EXPRESSION_FOOTER_HEIGHT;
         }
         const diff = end.end - num;
-        tmp2(4561).runOnJS(closure_5)(result > diff);
-        const tmp2Result = tmp2(4561);
+        tmp2(4563).runOnJS(closure_5)(result > diff);
+        const tmp2Result = tmp2(4563);
       }
       obj = cheapWorkletShallowEqual;
       tmp = current;

@@ -1,19 +1,19 @@
-// Module ID: 8575
-// Function ID: 8576
+// Module ID: 7665
+// Function ID: 7666
 // Name: useProfileTheme
-// Dependencies: [32, 4821, 8576, 1074, 4763, 504, 575, 8491, 1092, 8577, 4680, 2]
+// Dependencies: [32, 4821, 7666, 1074, 4763, 504, 575, 7581, 1092, 7667, 4682, 2]
 // Exports: default
 
-// Module 8575 (useProfileTheme)
+// Module 7665 (useProfileTheme)
 import initialize from "initialize" /* 504 */;
 import shims from "shims" /* 575 */;
 import useThemeDefault from "useTheme" /* 4763 */;
-import useAvatarColor from "useAvatarColor" /* 8491 */;
+import useAvatarColor from "useAvatarColor" /* 7581 */;
 import _slicedToArray from "module_32" /* 32 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 
 require = fn;
-const useEffectiveThemeOverride = fn(8576).useEffectiveThemeOverride;
+const useEffectiveThemeOverride = fn(7666).useEffectiveThemeOverride;
 const ThemeTypes = fn(1074).ThemeTypes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/hooks/useProfileTheme.tsx");
@@ -76,19 +76,19 @@ export default function useProfileTheme(arg0) {
     if (!stateFromStores) {
       tmp16 = tmp2;
       if (!forceUserTheme) {
-        let profileTheme = tmp4(8577).getProfileTheme(first);
+        let profileTheme = tmp4(7667).getProfileTheme(first);
         if (profileTheme == null) {
           profileTheme = tmp2;
         }
         tmp16 = profileTheme;
-        const tmp4Result10 = tmp4(8577);
+        const tmp4Result10 = tmp4(7667);
       }
     }
     if (tmp16 !== ThemeTypes.ASH) {
       let isThemeLightResult = tmp16 === tmp18.ASH;
       if (isThemeLightResult) {
-        isThemeLightResult = tmp4(4680).isThemeLight(tmp2);
-        const tmp4Result11 = tmp4(4680);
+        isThemeLightResult = tmp4(4682).isThemeLight(tmp2);
+        const tmp4Result11 = tmp4(4682);
       }
       let DARK = tmp16;
       if (isThemeLightResult) {
@@ -96,7 +96,7 @@ export default function useProfileTheme(arg0) {
       }
     } else {
       DARK = tmp2;
-      const tmp4Result12 = tmp4(4680);
+      const tmp4Result12 = tmp4(4682);
     }
     const obj3 = { theme: DARK, primaryColor: first, secondaryColor: hex2intResult };
     return obj3;

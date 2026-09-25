@@ -1,11 +1,11 @@
-// Module ID: 11673
-// Function ID: 11674
+// Module ID: 10853
+// Function ID: 10854
 // Name: AnnouncementChannelLurkerBar
-// Dependencies: [19, 17, 21, 4829, 576, 4825, 1115, 5273, 11674, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4825, 1115, 5274, 10854, 2]
 
-// Module 11673 (AnnouncementChannelLurkerBar)
+// Module 10853 (AnnouncementChannelLurkerBar)
 import nativeDefault from "native" /* 576 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11674 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 10854 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

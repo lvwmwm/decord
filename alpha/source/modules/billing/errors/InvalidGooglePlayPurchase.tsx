@@ -1,10 +1,10 @@
-// Module ID: 11052
-// Function ID: 11053
+// Module ID: 10156
+// Function ID: 10157
 // Name: InvalidGooglePlayPurchase
-// Dependencies: [4505, 2]
+// Dependencies: [4507, 2]
 
-// Module 11052 (InvalidGooglePlayPurchase)
-import BillingError from "BillingError" /* 4505 */;
+// Module 10156 (InvalidGooglePlayPurchase)
+import BillingError from "BillingError" /* 4507 */;
 
 const prototype = function InvalidGooglePlayPurchase() {
   return HermesBuiltin.applyArguments(new.target, new.target);

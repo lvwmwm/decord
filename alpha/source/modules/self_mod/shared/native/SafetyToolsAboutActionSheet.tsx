@@ -1,21 +1,21 @@
-// Module ID: 11758
-// Function ID: 11759
+// Module ID: 10940
+// Function ID: 10941
 // Name: SafetyToolsAboutActionSheet
-// Dependencies: [32, 19, 17, 11712, 1074, 21, 4829, 576, 11743, 4796, 11719, 11720, 11759, 1115, 4522, 11748, 4825, 2110, 5273, 2]
+// Dependencies: [32, 19, 17, 10892, 1074, 21, 4829, 576, 10925, 4796, 10899, 10900, 10941, 1115, 4524, 10930, 4825, 2110, 5274, 2]
 // Exports: default
 
-// Module 11758 (SafetyToolsAboutActionSheet)
+// Module 10940 (SafetyToolsAboutActionSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11719 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11720 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10899 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10900 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_6 = fn(11712).getSafetyToolsActionSheetKey;
+let closure_6 = fn(10892).getSafetyToolsActionSheetKey;
 let HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);

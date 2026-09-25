@@ -1,16 +1,16 @@
-// Module ID: 18024
-// Function ID: 18025
+// Module ID: 17252
+// Function ID: 17253
 // Name: NewTermsModal
-// Dependencies: [5, 32, 19, 17, 2036, 1074, 21, 4829, 576, 7527, 1115, 6922, 1612, 5935, 5268, 8529, 9128, 1249, 4825, 5273, 10095, 9982, 2]
+// Dependencies: [5, 32, 19, 17, 2036, 1074, 21, 4829, 576, 6610, 1115, 6005, 1612, 5937, 5269, 7619, 8222, 1249, 4825, 5274, 9192, 9080, 2]
 // Exports: default
 
-// Module 18024 (NewTermsModal)
+// Module 17252 (NewTermsModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6922 */;
-import showSimpleActionSheet from "showSimpleActionSheet" /* 7527 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9128 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
+import showSimpleActionSheet from "showSimpleActionSheet" /* 6610 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8222 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -61,7 +61,7 @@ export default function NewTermsModal() {
   const memo = noop.useMemo(() => action.getAction(), []);
   const tmp5 = _slicedToArray(noop.useState(false), 2);
   importDefault = tmp5[1];
-  memo(5935).useNavigatorBackPressHandler(memo(5268).BackPressHandler.minimize);
+  memo(5937).useNavigatorBackPressHandler(memo(5269).BackPressHandler.minimize);
   dependencyMap = noop.useCallback(asyncGeneratorStep(async (arg0, value) => {
     if (c3 === 2) {
       c3 = 3;
@@ -114,7 +114,7 @@ export default function NewTermsModal() {
     }
   }), []);
   const obj2 = { type: null, name: null, properties: null };
-  let obj = memo(5935);
+  let obj = memo(5937);
   obj2.type = memo(1249).ImpressionTypes.VIEW;
   obj2.name = memo(1249).ImpressionNames.USER_AGREEMENTS;
   obj2.properties = { required_action: memo };
@@ -178,22 +178,22 @@ export default function NewTermsModal() {
     };
     const intl8 = tmp6(1115).intl;
     obj19.text = intl8.string(tmp6(1115).t["+TBKL1"]);
-    obj18.children = closure_12(tmp6(5273).Button, obj19);
+    obj18.children = closure_12(tmp6(5274).Button, obj19);
     items3[1] = closure_12(closure_6, obj18);
     const obj20 = { style: null, source: null, color: null, onPress: null, accessibilityRole: "button", accessibilityLabel: null };
     const items4 = [tmp.navbarRight, ];
     const obj21 = { top };
     items4[1] = obj21;
     obj20.style = items4;
-    obj20.source = tmp2(9982);
+    obj20.source = tmp2(9080);
     obj20.color = tmp.navbarRight.tintColor;
     obj20.onPress = handleMoreActions;
     const intl9 = tmp6(1115).intl;
     obj20.accessibilityLabel = intl9.string(tmp6(1115).t["UKOtz+"]);
-    items3[2] = closure_12(tmp2(10095), obj20);
+    items3[2] = closure_12(tmp2(9192), obj20);
     obj3.children = items3;
     tmp10 = closure_13(closure_6, obj3);
-    const tmp2Result = tmp2(10095);
+    const tmp2Result = tmp2(9192);
   }
   return tmp10;
 };

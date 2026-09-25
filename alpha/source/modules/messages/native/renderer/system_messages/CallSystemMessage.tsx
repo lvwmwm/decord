@@ -1,14 +1,14 @@
-// Module ID: 8327
-// Function ID: 8328
+// Module ID: 7416
+// Function ID: 7417
 // Name: CallSystemMessage
-// Dependencies: [4845, 502, 4848, 1074, 4850, 8328, 8329, 1115, 1400, 4507, 8312, 2]
+// Dependencies: [4845, 502, 4848, 1074, 4850, 7417, 7418, 1115, 1400, 4509, 7401, 2]
 // Exports: createCallSystemMessage
 
-// Module 8327 (CallSystemMessage)
+// Module 7416 (CallSystemMessage)
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8312 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8328 */;
-import useIsCallActive from "useIsCallActive" /* 8329 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7401 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 7417 */;
+import useIsCallActive from "useIsCallActive" /* 7418 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4845 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import VoiceStateStore from "VoiceStateStore" /* 4848 */;
@@ -65,12 +65,12 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
     }
     if (null != tmp6) {
       const intl2 = tmp7(1115).intl;
-      const obj2 = { duration: tmp6, timestamp: tmp7(4507).calendarFormat(message.timestamp) };
+      const obj2 = { duration: tmp6, timestamp: tmp7(4509).calendarFormat(message.timestamp) };
       formatToPlainStringResult = intl2.formatToPlainString(tmp7(1115).t.SBDnp1, obj2);
-      const tmp7Result = tmp7(4507);
+      const tmp7Result = tmp7(4509);
     } else {
-      formatToPlainStringResult = tmp7(4507).calendarFormat(message.timestamp);
-      const tmp7Result3 = tmp7(4507);
+      formatToPlainStringResult = tmp7(4509).calendarFormat(message.timestamp);
+      const tmp7Result3 = tmp7(4509);
     }
     const author = message.author;
     mapped = [tmp7(1400).ensureAvatarSource(author.getAvatarSource(undefined)).uri];

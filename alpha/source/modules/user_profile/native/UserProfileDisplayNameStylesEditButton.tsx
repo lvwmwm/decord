@@ -1,18 +1,18 @@
-// Module ID: 14985
-// Function ID: 14986
+// Module ID: 14147
+// Function ID: 14148
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 1074, 2041, 21, 4829, 576, 1484, 10081, 7718, 2028, 8514, 5076, 11251, 1391, 1241, 1115, 14986, 1177, 13575, 11248, 14987, 14989, 2876, 2]
+// Dependencies: [32, 19, 17, 1074, 2041, 21, 4829, 576, 1484, 9178, 6801, 2028, 7604, 5077, 10349, 1391, 1241, 1115, 14148, 1177, 12729, 10346, 14149, 14151, 2876, 2]
 // Exports: default
 
-// Module 14985 (UserProfileDisplayNameStylesEditButton)
+// Module 14147 (UserProfileDisplayNameStylesEditButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11248 */;
-import _modDef13575 from "module_13575" /* 13575 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 14986 */;
-import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 14987 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10346 */;
+import _modDef12729 from "module_12729" /* 12729 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 14148 */;
+import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 14149 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -97,8 +97,8 @@ export default function UserProfileDisplayNameStylesEditButton(user) {
   }, items2);
   const tmp16 = nativeStackNavigation(() => {
     if (null == closure_6) {
-      const obj2 = { source: _modDef13575, style: closure_3.noneIcon };
-      let tmp10 = jsx(native.Icon, { source: _modDef13575, style: closure_3.noneIcon });
+      const obj2 = { source: _modDef12729, style: closure_3.noneIcon };
+      let tmp10 = jsx(native.Icon, { source: _modDef12729, style: closure_3.noneIcon });
     } else {
       const obj = { style: closure_3.ggContainer, children: null };
       const obj3 = { userId: user.id, guildId, userName: "Gg", pendingDisplayNameStyles: tmp, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };

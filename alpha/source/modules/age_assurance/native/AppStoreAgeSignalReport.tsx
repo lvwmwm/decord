@@ -1,10 +1,10 @@
-// Module ID: 17969
-// Function ID: 17970
+// Module ID: 17195
+// Function ID: 17196
 // Name: AppStoreAgeSignalReport
-// Dependencies: [32, 5, 1372, 1074, 8926, 8790, 1231, 1364, 8922, 8923, 1241, 5728, 4858, 2]
+// Dependencies: [32, 5, 1372, 1074, 8020, 7882, 1231, 1364, 8016, 8017, 1241, 5730, 4858, 2]
 // Exports: beginAppStoreAgeSignalReport, settleAppStoreAgeSignalReport
 
-// Module 17969 (AppStoreAgeSignalReport)
+// Module 17195 (AppStoreAgeSignalReport)
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserStore from "UserStore" /* 1372 */;

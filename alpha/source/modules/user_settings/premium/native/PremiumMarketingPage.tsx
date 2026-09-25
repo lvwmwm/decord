@@ -1,15 +1,15 @@
-// Module ID: 13831
-// Function ID: 13832
+// Module ID: 12988
+// Function ID: 12989
 // Name: PremiumMarketingPage
-// Dependencies: [32, 19, 17, 1074, 2041, 1374, 21, 4829, 576, 5746, 13824, 13825, 1484, 7495, 13826, 1612, 13832, 4561, 13789, 11087, 4649, 2028, 2030, 13833, 1115, 12629, 4483, 7723, 7331, 1241, 13834, 13795, 9557, 13837, 13842, 13859, 13862, 2]
+// Dependencies: [32, 19, 17, 1074, 2041, 1374, 21, 4829, 576, 5748, 12981, 12982, 1484, 6578, 12983, 1612, 12989, 4563, 12943, 10191, 4651, 2028, 2030, 12990, 1115, 11755, 4485, 6808, 6414, 1241, 12991, 12949, 8655, 12994, 12999, 13016, 13019, 2]
 // Exports: default
 
-// Module 13831 (PremiumMarketingPage)
+// Module 12988 (PremiumMarketingPage)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import dismissible_content from "dismissible_content" /* 2028 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2030 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4649 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4651 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -28,9 +28,9 @@ let items = [{ scaleX: -1 }];
 obj4.transform = items;
 obj2.backButton = obj4;
 let obj3 = { tintColor: nativeDefault.colors.TEXT_DEFAULT };
-obj2.themedBackground = { backgroundColor: fn(5746).DARK_PRIMARY_700_LIGHT_WHITE_500 };
-let obj5 = { backgroundColor: fn(5746).DARK_PRIMARY_700_LIGHT_WHITE_500 };
-obj2.backButtonBackground = { backgroundColor: fn(5746).TIER_0_MARKETING_PAGE_BACK_BUTTON_BG };
+obj2.themedBackground = { backgroundColor: fn(5748).DARK_PRIMARY_700_LIGHT_WHITE_500 };
+let obj5 = { backgroundColor: fn(5748).DARK_PRIMARY_700_LIGHT_WHITE_500 };
+obj2.backButtonBackground = { backgroundColor: fn(5748).TIER_0_MARKETING_PAGE_BACK_BUTTON_BG };
 let closure_12 = createStyles.createStyles(obj2);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumMarketingPage.tsx");

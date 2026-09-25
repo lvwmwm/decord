@@ -1,14 +1,14 @@
-// Module ID: 8957
-// Function ID: 8958
+// Module ID: 8051
+// Function ID: 8052
 // Name: FormDivider
-// Dependencies: [19, 17, 1074, 21, 4829, 576, 4535, 7517, 4678, 5991, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 576, 4537, 6600, 4680, 5993, 2]
 // Exports: default
 
-// Module 8957 (FormDivider)
+// Module 8051 (FormDivider)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4535 */;
-import RedesignCompat from "RedesignCompat" /* 5991 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7517 */;
+import native from "native" /* 4537 */;
+import RedesignCompat from "RedesignCompat" /* 5993 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 6600 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -41,9 +41,9 @@ export default function Divider(arg0) {
   const profileThemeValues = obj2.useProfileThemeValues(theme);
   let tmp7 = null;
   if (tmp6) {
-    const obj3 = { backgroundColor: tmp2(4678).hexOpacityToRgba(obj2[theme], profileThemeValues.dividerOpacity) };
+    const obj3 = { backgroundColor: tmp2(4680).hexOpacityToRgba(obj2[theme], profileThemeValues.dividerOpacity) };
     tmp7 = obj3;
-    const tmp2Result = tmp2(4678);
+    const tmp2Result = tmp2(4680);
   }
   let tmp10Result = null;
   if (!noop.useContext(RedesignCompat.RedesignCompatContext)) {

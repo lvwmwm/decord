@@ -1,12 +1,12 @@
-// Module ID: 8440
-// Function ID: 8441
+// Module ID: 7530
+// Function ID: 7531
 // Name: useCurrentChangelog
-// Dependencies: [19, 2111, 4843, 2097, 563, 8441, 2]
+// Dependencies: [19, 2111, 4843, 2097, 563, 7531, 2]
 // Exports: useCurrentChangelog
 
-// Module 8440 (useCurrentChangelog)
+// Module 7530 (useCurrentChangelog)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8441 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 7531 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2111 */;
 import ChangelogStore from "ChangelogStore" /* 4843 */;

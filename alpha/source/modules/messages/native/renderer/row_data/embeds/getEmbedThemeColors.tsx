@@ -1,13 +1,13 @@
-// Module ID: 8293
-// Function ID: 8294
+// Module ID: 7382
+// Function ID: 7383
 // Name: getEmbedThemeColors
-// Dependencies: [19, 4829, 4680, 576, 4678, 2]
+// Dependencies: [19, 4829, 4682, 576, 4680, 2]
 // Exports: default, useEmbedThemeColors
 
-// Module 8293 (getEmbedThemeColors)
+// Module 7382 (getEmbedThemeColors)
 import nativeDefault from "native" /* 576 */;
-import ColorUtils from "ColorUtils" /* 4678 */;
-import shared from "shared" /* 4680 */;
+import ColorUtils from "ColorUtils" /* 4680 */;
+import shared from "shared" /* 4682 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

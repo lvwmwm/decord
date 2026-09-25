@@ -1,16 +1,16 @@
-// Module ID: 13660
-// Function ID: 13661
+// Module ID: 12814
+// Function ID: 12815
 // Name: IconActionButton
-// Dependencies: [19, 21, 4829, 576, 1364, 1177, 5280, 5427, 4825, 8200, 2]
+// Dependencies: [19, 21, 4829, 576, 1364, 1177, 5281, 5428, 4825, 7289, 2]
 // Exports: default
 
-// Module 13660 (IconActionButton)
+// Module 12814 (IconActionButton)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import useFontScale from "useFontScale" /* 5280 */;
-import Pressables from "Pressables" /* 5427 */;
-import Badge from "Badge" /* 8200 */;
+import useFontScale from "useFontScale" /* 5281 */;
+import Pressables from "Pressables" /* 5428 */;
+import Badge from "Badge" /* 7289 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

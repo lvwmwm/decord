@@ -1,10 +1,10 @@
-// Module ID: 18349
-// Function ID: 18350
+// Module ID: 17580
+// Function ID: 17581
 // Name: GuildRoleSubscriptionTierTemplateRolePreview
-// Dependencies: [19, 17, 1372, 21, 4829, 576, 1115, 563, 4981, 5892, 4825, 1092, 1177, 7538, 2]
+// Dependencies: [19, 17, 1372, 21, 4829, 576, 1115, 563, 4981, 5894, 4825, 1092, 1177, 6621, 2]
 // Exports: GuildRoleSubscriptionRolePreview
 
-// Module 18349 (GuildRoleSubscriptionTierTemplateRolePreview)
+// Module 17580 (GuildRoleSubscriptionTierTemplateRolePreview)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtilsAll from "utils/ColorUtils" /* 1092 */;
@@ -12,8 +12,8 @@ import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4981 */;
-import FastImageDefault from "FastImage" /* 5892 */;
-import RoleIconDefault from "RoleIcon" /* 7538 */;
+import FastImageDefault from "FastImage" /* 5894 */;
+import RoleIconDefault from "RoleIcon" /* 6621 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 

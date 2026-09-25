@@ -1,15 +1,15 @@
-// Module ID: 8289
-// Function ID: 8290
+// Module ID: 7378
+// Function ID: 7379
 // Name: InteractionStore
-// Dependencies: [32, 502, 2044, 1091, 5058, 1978, 7786, 504, 573, 2]
+// Dependencies: [32, 502, 2044, 1091, 5058, 1978, 6871, 504, 573, 2]
 
-// Module 8289 (InteractionStore)
+// Module 7378 (InteractionStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import Server from "Server" /* 1978 */;
 import InteractionTypes from "InteractionTypes" /* 5058 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7786 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6871 */;
 import _slicedToArray from "module_32" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2044 */;

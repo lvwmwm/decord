@@ -1,10 +1,10 @@
-// Module ID: 7967
-// Function ID: 7968
+// Module ID: 7052
+// Function ID: 7053
 // Name: MobileAppDatabaseManager
-// Dependencies: [7968, 7970, 7971, 5770, 7973, 7974, 7975, 5810, 7976, 7977, 7807, 7978, 7979, 7820, 7819, 7821, 7980, 2]
+// Dependencies: [7053, 7055, 7056, 5772, 7058, 7059, 7060, 5812, 7061, 7062, 6892, 7063, 7064, 6905, 6904, 6906, 7065, 2]
 
-// Module 7967 (MobileAppDatabaseManager)
-import AppDatabaseManager from "AppDatabaseManager" /* 7968 */;
+// Module 7052 (MobileAppDatabaseManager)
+import AppDatabaseManager from "AppDatabaseManager" /* 7053 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

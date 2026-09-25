@@ -1,24 +1,24 @@
-// Module ID: 11912
-// Function ID: 11913
+// Module ID: 11055
+// Function ID: 11056
 // Name: LegacyUserProfileConnections
-// Dependencies: [19, 17, 2111, 1386, 4674, 7945, 1074, 1181, 5713, 21, 4829, 576, 5712, 11913, 5588, 1397, 4680, 1177, 11916, 11917, 4526, 11918, 11919, 4797, 7522, 4522, 1115, 8720, 5009, 4520, 5427, 4825, 4535, 504, 7833, 11920, 2]
+// Dependencies: [19, 17, 2111, 1386, 4676, 7030, 1074, 1181, 5715, 21, 4829, 576, 5714, 11056, 5590, 1397, 4682, 1177, 11059, 11060, 4528, 11061, 11062, 4797, 6605, 4524, 1115, 7810, 5009, 4522, 5428, 4825, 4537, 504, 6918, 11063, 2]
 // Exports: default, useAppplicationRoleConnectionItems, useConnectedAccountItems
 
-// Module 11912 (LegacyUserProfileConnections)
+// Module 11055 (LegacyUserProfileConnections)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import ToastUtils from "ToastUtils" /* 4522 */;
+import ToastUtils from "ToastUtils" /* 4524 */;
 import HapticUtils from "HapticUtils" /* 4797 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import PlatformsDefault from "Platforms" /* 5588 */;
-import ClipboardUtils from "ClipboardUtils" /* 7522 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8720 */;
+import PlatformsDefault from "Platforms" /* 5590 */;
+import ClipboardUtils from "ClipboardUtils" /* 6605 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 7810 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2111 */;
 import UserRecord from "UserRecord" /* 1386 */;
-import StreamerModeStore from "StreamerModeStore" /* 4674 */;
-import UserProfileStore from "UserProfileStore" /* 7945 */;
+import StreamerModeStore from "StreamerModeStore" /* 4676 */;
+import UserProfileStore from "UserProfileStore" /* 7030 */;
 
 const require = globalThis.__r;
 
@@ -215,7 +215,7 @@ class ConnectedUserAccount {
                 account(5009).trackWithMetadata(constants.CONNECTED_ACCOUNT_VIEWED, { platform_type: type.type, other_user_id });
                 const obj = account(5009);
                 const obj2 = { platform_type: type.type, other_user_id };
-                userId(4520).openURL(platformUserUrl);
+                userId(4522).openURL(platformUserUrl);
               }
           };
           MaskedLinkUtils.handleClick(obj2);
@@ -361,7 +361,7 @@ class ConnectedApplicationUserRoleAccount {
             const obj = { style: closure_1.connectedAccountPoweredByText, children: null };
             let tmp5 = null;
             if (null != applicationRoleConnection.application.bot) {
-              const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: null, size: null, guildId: "Array" };
+              const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: null, size: null, guildId: "flex" };
               const tmp12 = new UserRecord(tmp4.application.bot);
               obj2.user = tmp12;
               obj2.size = native.AvatarSizes.SIZE_16;
@@ -387,7 +387,7 @@ get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const Constants = fn(1074);
 ({ AnalyticEvents: c10, PlatformTypes: closure_11, ThemeTypes: closure_12 } = Constants);
-const MetadataFields = fn(5713).MetadataFields;
+const MetadataFields = fn(5715).MetadataFields;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
 const createStyles = fn(4829);
@@ -459,8 +459,8 @@ export default function LegacyUserProfileConnections(user) {
   }, items3);
   closure_129_0 = undefined;
   const obj2 = user(504);
-  const theme = user(4535).useThemeContext().theme;
-  const tmpResult = user(4535);
+  const theme = user(4537).useThemeContext().theme;
+  const tmpResult = user(4537);
   const items4 = [LocaleStore];
   closure_129_2 = user(504).useStateFromStores(items4, () => LocaleStore.locale);
   const mapped = memo.map((applicationRoleConnection, index) => {
@@ -470,12 +470,12 @@ export default function LegacyUserProfileConnections(user) {
   const id = user.id;
   closure_130_1 = undefined;
   const tmpResult5 = user(504);
-  const theme2 = user(4535).useThemeContext().theme;
-  const tmpResult6 = user(4535);
+  const theme2 = user(4537).useThemeContext().theme;
+  const tmpResult6 = user(4537);
   const items5 = [LocaleStore];
   closure_130_3 = user(504).useStateFromStores(items5, () => LocaleStore.locale);
   const tmpResult7 = user(504);
-  closure_130_4 = user(7833).usePlatformAllowed({ forUserProfile: true });
+  closure_130_4 = user(6918).usePlatformAllowed({ forUserProfile: true });
   const found = memo1.filter((type) => {
     value = PlatformsDefault.get(type.type);
     let tmp2 = null != value;
@@ -497,8 +497,8 @@ export default function LegacyUserProfileConnections(user) {
         const intl = tmp(1115).intl;
         obj4.title = intl.string(tmp(1115).t.PHjkRE);
         obj4.children = mapped;
-        tmp10 = closure_14(stateFromStores(11920), obj4);
-        const tmp13 = stateFromStores(11920);
+        tmp10 = closure_14(stateFromStores(11063), obj4);
+        const tmp13 = stateFromStores(11063);
       }
       const obj5 = { children: null };
       const items6 = [tmp10, ];
@@ -506,10 +506,10 @@ export default function LegacyUserProfileConnections(user) {
       const intl2 = tmp(1115).intl;
       obj6.title = intl2.string(tmp(1115).t["3fe7U5"]);
       obj6.children = tmp8;
-      items6[1] = closure_14(stateFromStores(11920), obj6);
+      items6[1] = closure_14(stateFromStores(11063), obj6);
       obj5.children = items6;
       tmp17Result = closure_15(closure_16, obj5);
-      const tmp16 = stateFromStores(11920);
+      const tmp16 = stateFromStores(11063);
     }
   }
   return tmp17Result;

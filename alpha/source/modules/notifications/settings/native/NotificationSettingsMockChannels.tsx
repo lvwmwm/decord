@@ -1,15 +1,15 @@
-// Module ID: 10511
-// Function ID: 10512
+// Module ID: 9613
+// Function ID: 9614
 // Name: NotificationSettingsMockChannels
-// Dependencies: [19, 17, 5011, 21, 4829, 576, 1115, 10512, 5386, 4825, 1177, 2]
+// Dependencies: [19, 17, 5011, 21, 4829, 576, 1115, 9614, 5387, 4825, 1177, 2]
 // Exports: default
 
-// Module 10511 (NotificationSettingsMockChannels)
+// Module 9613 (NotificationSettingsMockChannels)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import TextIcon from "TextIcon" /* 5386 */;
-import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 10512 */;
+import TextIcon from "TextIcon" /* 5387 */;
+import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 9614 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

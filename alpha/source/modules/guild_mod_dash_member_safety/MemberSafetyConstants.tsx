@@ -1,9 +1,9 @@
-// Module ID: 4468
-// Function ID: 4469
+// Module ID: 4470
+// Function ID: 4471
 // Name: MemberSafetyConstants
 // Dependencies: [1074, 1086, 2]
 
-// Module 4468 (MemberSafetyConstants)
+// Module 4470 (MemberSafetyConstants)
 import Constants from "Constants" /* 1074 */;
 import BigFlagUtils from "BigFlagUtils" /* 1086 */;
 import size from "module_2" /* 2 */;

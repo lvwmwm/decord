@@ -1,7 +1,7 @@
 // Module ID: 1991
 // Function ID: 1992
 // Name: RTCControlSocket
-// Dependencies: [1346, 1992, 4854, 1091, 4887, 559, 3, 4858, 14443, 1364, 38, 2]
+// Dependencies: [1346, 1992, 4854, 1091, 4887, 559, 3, 4858, 13604, 1364, 38, 2]
 
 // Module 1991 (RTCControlSocket)
 import LoggerDefault from "Logger" /* 3 */;
@@ -78,7 +78,7 @@ prototype["createWebSocket"] = function createWebSocket() {
     self.handleClose(false, 0, "The connection timed out after " + TimeUtils.now() - self.connectionStartTime + " ms - did not receive OP_HELLO in time.");
   }, closure_13);
   let obj = self(4858);
-  obj2 = self(14443);
+  obj2 = self(13604);
   const webSocket = new WebSocket("" + self.url + "?v=" + obj2.getVoiceGatewayProtocolVersion({ location: "RTCControlSocket", supportsSfuUpdate: MediaEngineStore.supports(constants.UDP_ENDPOINT_UPDATE) }));
   self.webSocket = webSocket;
   webSocket.binaryType = "arraybuffer";

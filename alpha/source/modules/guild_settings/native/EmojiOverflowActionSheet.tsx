@@ -1,11 +1,11 @@
-// Module ID: 18105
-// Function ID: 18106
+// Module ID: 17333
+// Function ID: 17334
 // Name: EmojiOverflowActionSheet
-// Dependencies: [5, 19, 17, 21, 4829, 7530, 1397, 4825, 5992, 5910, 4786, 1115, 10682, 10598, 4729, 4522, 5985, 2]
+// Dependencies: [5, 19, 17, 21, 4829, 6613, 1397, 4825, 5994, 5912, 4786, 1115, 9786, 9702, 4731, 4524, 5987, 2]
 // Exports: default
 
-// Module 18105 (EmojiOverflowActionSheet)
-import EmojiActionCreators from "EmojiActionCreators" /* 10682 */;
+// Module 17333 (EmojiOverflowActionSheet)
+import EmojiActionCreators from "EmojiActionCreators" /* 9786 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 

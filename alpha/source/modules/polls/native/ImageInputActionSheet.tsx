@@ -1,19 +1,19 @@
-// Module ID: 12569
-// Function ID: 12570
+// Module ID: 11695
+// Function ID: 11696
 // Name: ImageInputActionSheet
-// Dependencies: [19, 17, 8158, 21, 4829, 576, 12568, 4695, 4796, 7530, 4825, 1177, 7532, 1115, 12570, 2]
+// Dependencies: [19, 17, 7243, 21, 4829, 576, 11694, 4697, 4796, 6613, 4825, 1177, 6615, 1115, 11696, 2]
 // Exports: default
 
-// Module 12569 (ImageInputActionSheet)
+// Module 11695 (ImageInputActionSheet)
 import nativeDefault from "native" /* 576 */;
-import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 12570 */;
+import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 11696 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-let closure_5 = fn(8158).POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY;
+let closure_5 = fn(7243).POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const createStyles = fn(4829);

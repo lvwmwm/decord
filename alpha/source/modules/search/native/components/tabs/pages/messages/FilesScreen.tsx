@@ -1,15 +1,15 @@
-// Module ID: 17284
-// Function ID: 17285
+// Module ID: 16499
+// Function ID: 16500
 // Name: FilesScreen
-// Dependencies: [19, 8209, 21, 17270, 17277, 17285, 17210, 17279, 17278, 12681, 17283, 17217, 2]
+// Dependencies: [19, 7298, 21, 16485, 16492, 16500, 16425, 16494, 16493, 11807, 16498, 16432, 2]
 
-// Module 17284 (FilesScreen)
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12681 */;
-import BaseMessagesScreen from "BaseMessagesScreen" /* 17279 */;
+// Module 16499 (FilesScreen)
+import SearchPlatformUtils from "SearchPlatformUtils" /* 11807 */;
+import BaseMessagesScreen from "BaseMessagesScreen" /* 16494 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const SearchConstants = fn(8209);
+const SearchConstants = fn(7298);
 ({ SearchListItemTypes: closure_4, CARD_ESTIMATED_ITEM_SIZE: hasOwnProperty, FILES_OR_LINKS_NUM_COLUMNS: metroRequire, FILES_OR_LINKS_GAP_WIDTH: closure_7 } = SearchConstants);
 const jsx = fn(21).jsx;
 const size = fn(2);

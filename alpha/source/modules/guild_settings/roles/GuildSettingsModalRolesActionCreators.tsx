@@ -1,9 +1,9 @@
-// Module ID: 18155
-// Function ID: 18156
+// Module ID: 17383
+// Function ID: 17384
 // Name: GuildSettingsModalRolesActionCreators
-// Dependencies: [5, 1074, 1271, 7653, 573, 2]
+// Dependencies: [5, 1074, 1271, 6736, 573, 2]
 
-// Module 18155 (GuildSettingsModalRolesActionCreators)
+// Module 17383 (GuildSettingsModalRolesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 

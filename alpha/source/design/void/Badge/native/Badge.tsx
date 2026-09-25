@@ -1,10 +1,10 @@
-// Module ID: 14554
-// Function ID: 14555
+// Module ID: 13715
+// Function ID: 13716
 // Name: Badge/Badge
-// Dependencies: [19, 17, 2111, 1074, 1179, 21, 4829, 576, 1364, 4680, 504, 4825, 1881, 8970, 2]
+// Dependencies: [19, 17, 2111, 1074, 1179, 21, 4829, 576, 1364, 4682, 504, 4825, 1881, 8064, 2]
 // Exports: MaskedBadge
 
-// Module 14554 (Badge/Badge)
+// Module 13715 (Badge/Badge)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2111 */;

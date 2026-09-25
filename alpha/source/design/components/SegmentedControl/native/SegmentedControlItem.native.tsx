@@ -1,12 +1,12 @@
-// Module ID: 9976
-// Function ID: 9977
+// Module ID: 9074
+// Function ID: 9075
 // Name: SegmentedControlItem
-// Dependencies: [19, 17, 21, 4829, 576, 8617, 4561, 5272, 1364, 1115, 4825, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 7707, 4563, 5273, 1364, 1115, 4825, 2]
 // Exports: SegmentedControlItem
 
-// Module 9976 (SegmentedControlItem)
+// Module 9074 (SegmentedControlItem)
 import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5272 */;
+import spring from "spring" /* 5273 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

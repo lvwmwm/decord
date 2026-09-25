@@ -1,8 +1,8 @@
-// Module ID: 9086
-// Function ID: 9087
+// Module ID: 8180
+// Function ID: 8181
 // Dependencies: [2]
 
-// Module 9086
+// Module 8180
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/game-profile/opencritic-strong.png.js");

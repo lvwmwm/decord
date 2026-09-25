@@ -1,16 +1,16 @@
-// Module ID: 13543
-// Function ID: 13544
+// Module ID: 12695
+// Function ID: 12696
 // Name: NameplateProductPreview
-// Dependencies: [19, 17, 4821, 21, 4829, 576, 8519, 1970, 1115, 4825, 5285, 8526, 8606, 8514, 504, 4673, 5076, 11248, 11249, 1177, 11260, 5910, 2]
+// Dependencies: [19, 17, 4821, 21, 4829, 576, 7609, 1970, 1115, 4825, 5286, 7616, 7696, 7604, 504, 4675, 5077, 10346, 10347, 1177, 10358, 5912, 2]
 // Exports: default
 
-// Module 13543 (NameplateProductPreview)
+// Module 12695 (NameplateProductPreview)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import utils from "utils" /* 1970 */;
-import LinearGradientDefault from "LinearGradient" /* 5285 */;
-import TableRow from "TableRow" /* 5910 */;
-import useShopProductItems from "useShopProductItems" /* 8519 */;
+import LinearGradientDefault from "LinearGradient" /* 5286 */;
+import TableRow from "TableRow" /* 5912 */;
+import useShopProductItems from "useShopProductItems" /* 7609 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 
@@ -44,7 +44,7 @@ function NameplateUser(arg0) {
   }
   const items1 = [currentUser, tmp5Result, stateFromStores];
   const icon = noop.useMemo(() => {
-    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: null, "aria-hidden": null };
+    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: 152, "aria-hidden": 122 };
     return timestampProducer(native.Avatar, obj);
   }, items1);
   return closure_6(currentUser(stateFromStores[20]).UserNameplateRow, { nameplate, icon, label, isPreviewRow: true });

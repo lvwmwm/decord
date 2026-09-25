@@ -1,11 +1,11 @@
-// Module ID: 10609
-// Function ID: 10610
+// Module ID: 9713
+// Function ID: 9714
 // Name: usePressHorizontalAutocompleteItemHandler
-// Dependencies: [19, 1074, 10610, 2]
+// Dependencies: [19, 1074, 9714, 2]
 // Exports: usePressHorizontalAutocompleteItemHandler
 
-// Module 10609 (usePressHorizontalAutocompleteItemHandler)
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10610 */;
+// Module 9713 (usePressHorizontalAutocompleteItemHandler)
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 9714 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

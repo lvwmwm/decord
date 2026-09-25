@@ -1,14 +1,14 @@
-// Module ID: 12514
-// Function ID: 12515
+// Module ID: 11640
+// Function ID: 11641
 // Name: AppLauncherTextInputOption
-// Dependencies: [32, 19, 17, 1375, 21, 4829, 576, 11567, 1978, 10626, 12511, 9606, 1177, 12515, 1364, 12516, 1875, 11474, 2]
+// Dependencies: [32, 19, 17, 1375, 21, 4829, 576, 10772, 1978, 9730, 11637, 8704, 1177, 11641, 1364, 11642, 1875, 10572, 2]
 // Exports: default
 
-// Module 12514 (AppLauncherTextInputOption)
+// Module 11640 (AppLauncherTextInputOption)
 import nativeDefault from "native" /* 576 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1875 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 10626 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 11474 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 9730 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10572 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -101,17 +101,17 @@ export default function AppLauncherTextInputOption(guildId) {
       const result = TopEmojisUtils.maybeFetchTopEmojisByGuild(guildId);
     }
   }, items2);
-  let obj = onChangeText(11567);
-  const animationDelayedAutoFocus = onChangeText(12511).useAnimationDelayedAutoFocus(autoFocus, () => {
+  let obj = onChangeText(10772);
+  const animationDelayedAutoFocus = onChangeText(11637).useAnimationDelayedAutoFocus(autoFocus, () => {
     const current = ref.current;
     if (current != null) {
       current.focus();
     }
   });
-  if (obj.useAppLauncherContext().entrypoint === onChangeText(9606).AppLauncherEntrypoint.VOICE) {
+  if (obj.useAppLauncherContext().entrypoint === onChangeText(8704).AppLauncherEntrypoint.VOICE) {
     let TextInput = tmp4(1177).TextInput;
   } else {
-    TextInput = guildId(12515);
+    TextInput = guildId(11641);
   }
   const items3 = [tmp.container, , ];
   if (hasError) {
@@ -153,7 +153,7 @@ export default function AppLauncherTextInputOption(guildId) {
           const result1 = openEmojiPickerActionSheet.openEmojiPickerActionSheet({ pickerIntention: EmojiIntention.CHAT, autoFocus: false, startExpanded: false, onPressEmoji, guildId, onClose });
         }
     };
-    tmp14Result = tmp14(guildId(12516), obj5);
+    tmp14Result = tmp14(guildId(11642), obj5);
   }
   items4[1] = tmp14Result;
   obj3.children = items4;

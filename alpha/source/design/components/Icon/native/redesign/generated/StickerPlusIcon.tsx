@@ -1,13 +1,13 @@
-// Module ID: 18120
-// Function ID: 18121
+// Module ID: 17348
+// Function ID: 17349
 // Name: StickerPlusIcon
-// Dependencies: [19, 21, 576, 4525, 18121, 2]
+// Dependencies: [19, 21, 576, 4527, 17349, 2]
 // Exports: StickerPlusIcon
 
-// Module 18120 (StickerPlusIcon)
+// Module 17348 (StickerPlusIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
-import _mod18121 from "module_18121" /* 18121 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
+import _mod17349 from "module_17349" /* 17349 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const StickerPlusIcon = function StickerPlusIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod18121, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod17349, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

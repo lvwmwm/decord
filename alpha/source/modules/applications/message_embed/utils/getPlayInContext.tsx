@@ -1,11 +1,11 @@
-// Module ID: 12283
-// Function ID: 12284
+// Module ID: 11409
+// Function ID: 11410
 // Name: getPlayInContext
-// Dependencies: [2043, 2098, 504, 9694, 2]
+// Dependencies: [2043, 2098, 504, 8792, 2]
 // Exports: getPlayInContext, usePlayInContext
 
-// Module 12283 (getPlayInContext)
-import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 9694 */;
+// Module 11409 (getPlayInContext)
+import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 8792 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
 
@@ -102,7 +102,7 @@ export const getPlayInContext = function getPlayInContext(id, channel_id) {
       tmp11 = compositeInstanceId1 === compositeInstanceId;
     }
     obj3.isCurrentlyInInstance = tmp11;
-    obj3.canLaunchInChannel = NO_CHANNEL === tmp3(9694).EmbeddedActivityLaunchability.CAN_LAUNCH;
+    obj3.canLaunchInChannel = NO_CHANNEL === tmp3(8792).EmbeddedActivityLaunchability.CAN_LAUNCH;
     return obj3;
   }
 };

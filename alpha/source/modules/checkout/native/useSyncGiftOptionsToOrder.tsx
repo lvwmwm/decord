@@ -1,17 +1,17 @@
-// Module ID: 11361
-// Function ID: 11362
+// Module ID: 10459
+// Function ID: 10460
 // Name: useSyncGiftOptionsToOrder
-// Dependencies: [32, 19, 7754, 3, 7759, 4498, 2]
+// Dependencies: [32, 19, 6839, 3, 6844, 4500, 2]
 // Exports: default
 
-// Module 11361 (useSyncGiftOptionsToOrder)
+// Module 10459 (useSyncGiftOptionsToOrder)
 import LoggerDefault from "Logger" /* 3 */;
-import BillingUtils from "BillingUtils" /* 4498 */;
+import BillingUtils from "BillingUtils" /* 4500 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_4 = fn(7754).useNativeCheckoutStoreOrNull;
+let closure_4 = fn(6839).useNativeCheckoutStoreOrNull;
 let closure_5 = new LoggerDefault("useSyncGiftOptionsToOrder");
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/checkout/native/useSyncGiftOptionsToOrder.tsx");

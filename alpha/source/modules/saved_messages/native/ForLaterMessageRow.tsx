@@ -1,13 +1,13 @@
-// Module ID: 12558
-// Function ID: 12559
+// Module ID: 11684
+// Function ID: 11685
 // Name: ForLaterMessageRow
-// Dependencies: [19, 17, 21, 4829, 576, 4763, 2020, 8280, 9010, 1364, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4763, 2020, 7369, 8104, 1364, 2]
 // Exports: ForLaterMessageRow
 
-// Module 12558 (ForLaterMessageRow)
+// Module 11684 (ForLaterMessageRow)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import RowGeneratorDefault from "RowGenerator" /* 8280 */;
+import RowGeneratorDefault from "RowGenerator" /* 7369 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

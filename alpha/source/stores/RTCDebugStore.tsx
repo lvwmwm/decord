@@ -1,13 +1,13 @@
-// Module ID: 10385
-// Function ID: 10386
+// Module ID: 9487
+// Function ID: 9488
 // Name: RTCDebugStore
-// Dependencies: [32, 1992, 1372, 1074, 4854, 10386, 4884, 573, 504, 2]
+// Dependencies: [32, 1992, 1372, 1074, 4854, 9488, 4884, 573, 504, 2]
 // Exports: getLastGraphValue, keySection, parseSection
 
-// Module 10385 (RTCDebugStore)
+// Module 9487 (RTCDebugStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 10386 */;
+import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 9488 */;
 import _slicedToArray from "module_32" /* 32 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -182,7 +182,7 @@ prototype2["getInboundStats"] = function getInboundStats(arg0, context) {
   if (found != null) {
     name = found.codec.name;
   }
-  obj = { codec: name, resolution: null, bitrateEstimate: "Array", fps: true };
+  obj = { codec: name, resolution: null, bitrateEstimate: "Array", fps: false };
   let resolution;
   if (found != null) {
     resolution = found.resolution;

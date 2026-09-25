@@ -1,24 +1,24 @@
-// Module ID: 5876
-// Function ID: 5877
+// Module ID: 5878
+// Function ID: 5879
 // Name: MemberVerificationModal
-// Dependencies: [19, 17, 2107, 5877, 5878, 21, 4561, 1177, 4829, 576, 1612, 4763, 4680, 5879, 5881, 504, 4653, 573, 5832, 5882, 5883, 5887, 5900, 5901, 5427, 1115, 7422, 2]
+// Dependencies: [19, 17, 2107, 5879, 5880, 21, 4563, 1177, 4829, 576, 1612, 4763, 4682, 5881, 5883, 504, 4655, 573, 5834, 5884, 5885, 5889, 5902, 5903, 5428, 1115, 6505, 2]
 // Exports: default
 
-// Module 5876 (MemberVerificationModal)
+// Module 5878 (MemberVerificationModal)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4561 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4653 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4563 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4655 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2107 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5877 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5879 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
 
-const MemberVerificationAlertActionCreators = tmp3(5832);
+const MemberVerificationAlertActionCreators = tmp3(5834);
 require = fn;
 const View = fn(17).View;
-const MemberVerificationFormConstants = fn(5878);
+const MemberVerificationFormConstants = fn(5880);
 ({ SCROLL_EVENT_TIMER_MS: closure_7, useBannerHeight: closure_8 } = MemberVerificationFormConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);

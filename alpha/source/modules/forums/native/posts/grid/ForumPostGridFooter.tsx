@@ -1,15 +1,15 @@
-// Module ID: 12359
-// Function ID: 12360
+// Module ID: 11485
+// Function ID: 11486
 // Name: ForumPostGridFooter
-// Dependencies: [19, 17, 1074, 21, 4829, 576, 12308, 12360, 12361, 11763, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 576, 11434, 11486, 11487, 10945, 2]
 // Exports: default
 
-// Module 12359 (ForumPostGridFooter)
+// Module 11485 (ForumPostGridFooter)
 import nativeDefault from "native" /* 576 */;
-import ForumPostReactions from "ForumPostReactions" /* 11763 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 12308 */;
-import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 12360 */;
-import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 12361 */;
+import ForumPostReactions from "ForumPostReactions" /* 10945 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 11434 */;
+import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 11486 */;
+import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 11487 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

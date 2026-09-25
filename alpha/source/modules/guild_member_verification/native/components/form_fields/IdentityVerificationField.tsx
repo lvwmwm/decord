@@ -1,12 +1,12 @@
-// Module ID: 5925
-// Function ID: 5926
+// Module ID: 5927
+// Function ID: 5928
 // Name: IdentityVerificationField
-// Dependencies: [19, 17, 21, 4829, 576, 4825, 1115, 4779, 5273, 4653, 5926, 5032, 7375, 1980, 7378, 7414, 7291, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4825, 1115, 4779, 5274, 4655, 5928, 5032, 6458, 1980, 6461, 6497, 6374, 2]
 // Exports: default
 
-// Module 5925 (IdentityVerificationField)
+// Module 5927 (IdentityVerificationField)
 import nativeDefault from "native" /* 576 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4653 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4655 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import noop from "module_19" /* 19 */;
 
@@ -40,7 +40,7 @@ function BaseIdentityVerificationField(icon) {
     const intl = tmp7(1115).intl;
     obj6.text = intl.string(tmp7(1115).t["13ofGu"]);
     obj6.onPress = onPress;
-    obj5.children = tmp6(tmp7(5273).Button, obj6);
+    obj5.children = tmp6(tmp7(5274).Button, obj6);
   }
   items[2] = React4(View, obj5);
   obj.children = items;
@@ -68,7 +68,7 @@ export default function IdentityVerificationField(arg0) {
       string2Result = string2(INsLgA.c6EUJI);
     }
   } else {
-    if (tmp(4653).UserVerificationFieldPlatforms.PHONE === platform) {
+    if (tmp(4655).UserVerificationFieldPlatforms.PHONE === platform) {
       const intl2 = tmp(1115).intl;
       const string = intl2.string;
       const t = tmp(1115).t;
@@ -82,19 +82,19 @@ export default function IdentityVerificationField(arg0) {
       const intl = tmp(1115).intl;
       stringResult1 = intl.string(tmp(1115).t.mhv8BM);
     }
-    if (tmp(4653).UserVerificationFieldPlatforms.EMAIL === platform) {
-      let EnvelopeIcon = tmp(7414).EnvelopeIcon;
-    } else if (tmp(4653).UserVerificationFieldPlatforms.PHONE === platform) {
-      EnvelopeIcon = tmp(7291).MobilePhoneIcon;
+    if (tmp(4655).UserVerificationFieldPlatforms.EMAIL === platform) {
+      let EnvelopeIcon = tmp(6497).EnvelopeIcon;
+    } else if (tmp(4655).UserVerificationFieldPlatforms.PHONE === platform) {
+      EnvelopeIcon = tmp(6374).MobilePhoneIcon;
     } else {
-      EnvelopeIcon = tmp(7414).EnvelopeIcon;
+      EnvelopeIcon = tmp(6497).EnvelopeIcon;
     }
-    if (tmp(4653).UserVerificationFieldPlatforms.EMAIL === platform) {
+    if (tmp(4655).UserVerificationFieldPlatforms.EMAIL === platform) {
       let fn = () => {
         require("EmailVerificationModalActionCreators").open();
       };
     } else {
-      fn = tmp(4653).UserVerificationFieldPlatforms.PHONE === platform ? (() => {
+      fn = tmp(4655).UserVerificationFieldPlatforms.PHONE === platform ? (() => {
         const obj2 = { reason: null };
         const obj = require("ModalActionCreators");
         obj2.reason = require("PhoneActionCreators").ChangePhoneReason.GUILD_PHONE_REQUIRED;

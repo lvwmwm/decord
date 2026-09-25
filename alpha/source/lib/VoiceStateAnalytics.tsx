@@ -1,9 +1,9 @@
-// Module ID: 14191
-// Function ID: 14192
+// Module ID: 13352
+// Function ID: 13353
 // Name: VoiceStateAnalytics
 // Dependencies: [1992, 4848, 4853, 4854, 12, 2]
 
-// Module 14191 (VoiceStateAnalytics)
+// Module 13352 (VoiceStateAnalytics)
 import _mod12 from "module_12" /* 12 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 import VoiceStateStore from "VoiceStateStore" /* 4848 */;

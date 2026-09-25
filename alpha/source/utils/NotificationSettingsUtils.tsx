@@ -1,14 +1,14 @@
-// Module ID: 7447
-// Function ID: 7448
+// Module ID: 6530
+// Function ID: 6531
 // Name: NotificationSettingsUtils
-// Dependencies: [7448, 2044, 5049, 5010, 1074, 4477, 5011, 1084, 1385, 5009, 1241, 2]
+// Dependencies: [6531, 2044, 5049, 5010, 1074, 4479, 5011, 1084, 1385, 5009, 1241, 2]
 // Exports: getCurrentChannelSettings, getCurrentGuildSettings, getManyCurrentChannelSettings, getManyCurrentGuildSettings, muteConfigToTimestamp, trackAccountNotificationSettingUpdated, trackChannelNotificationSettingsUpdate, trackGuildNotificationSettingsUpdate
 
-// Module 7447 (NotificationSettingsUtils)
+// Module 6530 (NotificationSettingsUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5009 */;
-import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7448 */;
+import LastMentionTimestampStore from "LastMentionTimestampStore" /* 6531 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import MessageStore from "MessageStore" /* 5049 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
@@ -16,7 +16,7 @@ import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
 require = fn;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, UserNotificationSettings } = Constants);
-const constants2 = fn(4477).NotificationSettingsUpdateType;
+const constants2 = fn(4479).NotificationSettingsUpdateType;
 const UnreadSetting = fn(5011).UnreadSetting;
 const UserSettingsConstants = fn(1084);
 ({ ChannelNotificationSettingsFlags: closure_11, GuildNotificationSettingsFlags: closure_12 } = UserSettingsConstants);

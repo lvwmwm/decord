@@ -1,17 +1,17 @@
-// Module ID: 16637
-// Function ID: 16638
+// Module ID: 15817
+// Function ID: 15818
 // Name: HubSidebar
-// Dependencies: [19, 17, 4462, 2098, 1074, 10464, 21, 4829, 576, 12728, 1177, 504, 16638, 16639, 15953, 1115, 4840, 13101, 12651, 4765, 10167, 2]
+// Dependencies: [19, 17, 4464, 2098, 1074, 9566, 21, 4829, 576, 11854, 1177, 504, 15818, 15819, 15123, 1115, 4840, 12251, 11777, 4765, 9264, 2]
 // Exports: default
 
-// Module 16637 (HubSidebar)
+// Module 15817 (HubSidebar)
 import nativeDefault from "native" /* 576 */;
 import transitionToChannel from "transitionToChannel" /* 4840 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10167 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12651 */;
-import BaseChannelItem from "BaseChannelItem" /* 12728 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9264 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 11777 */;
+import BaseChannelItem from "BaseChannelItem" /* 11854 */;
 import noop from "module_19" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4462 */;
+import GuildChannelStore from "GuildChannelStore" /* 4464 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
 
 const BaseChannelItemDefault = BaseChannelItem;
@@ -30,8 +30,8 @@ function HubItem(arg0) {
   }
   const obj = { style: closure_9().container, accessibilityLabel: label, accessibilityRole: "menuitem", onPress: handleItemClick, disableHighlightOnPress: true, mode: DEFAULT, name: null, icon: null, channelInfo: null };
   const tmp = closure_9();
-  obj.name = React5(tmp5(12728).BaseChannelName, { name: label, mode: DEFAULT });
-  obj.icon = React5(tmp5(12728).BaseChannelIcon, { mode: DEFAULT, IconComponent });
+  obj.name = React5(tmp5(11854).BaseChannelName, { name: label, mode: DEFAULT });
+  obj.icon = React5(tmp5(11854).BaseChannelIcon, { mode: DEFAULT, IconComponent });
   let tmp6Result = null;
   if (null != unreadCount) {
     const obj2 = { value: unreadCount };
@@ -45,7 +45,7 @@ const InstantInviteSources = fn(1074).InstantInviteSources;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4829);
-let obj2 = { container: { marginVertical: fn(10464).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md }, row: { flex: 1 } };
+let obj2 = { container: { marginVertical: fn(9566).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md }, row: { flex: 1 } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/hub/native/components/HubSidebar.tsx");
@@ -68,7 +68,7 @@ export default function HubSidebar(guild) {
     }
     return tmp2;
   });
-  guild(16638);
+  guild(15818);
   let tmp9Result = null;
   if (null != stateFromStores) {
     let row = null;
@@ -77,8 +77,8 @@ export default function HubSidebar(guild) {
     }
     const obj4 = { style: row, children: null };
     const obj5 = { guild };
-    const items4 = [closure_7(stateFromStores(16639), obj5), , , ];
-    const obj6 = { active: stateFromStores1, IconComponent: tmp(15953).CompassIcon, label: null, handleItemClick: null, unreadCount: null };
+    const items4 = [closure_7(stateFromStores(15819), obj5), , , ];
+    const obj6 = { active: stateFromStores1, IconComponent: tmp(15123).CompassIcon, label: null, handleItemClick: null, unreadCount: null };
     const intl = tmp(1115).intl;
     obj6.label = intl.string(tmp(1115).t.K50GHd);
     obj6.handleItemClick = function handleItemClick() {
@@ -86,7 +86,7 @@ export default function HubSidebar(guild) {
     };
     obj6.unreadCount = tmp7;
     items4[1] = closure_7(HubItem, obj6);
-    const obj7 = { IconComponent: tmp(13101).PlusMediumIcon, label: null, handleItemClick: null };
+    const obj7 = { IconComponent: tmp(12251).PlusMediumIcon, label: null, handleItemClick: null };
     const intl2 = tmp(1115).intl;
     obj7.label = intl2.string(tmp(1115).t.emRpdS);
     obj7.handleItemClick = function handleItemClick() {

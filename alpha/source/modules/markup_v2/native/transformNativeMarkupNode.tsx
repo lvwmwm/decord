@@ -1,10 +1,10 @@
-// Module ID: 8457
-// Function ID: 8458
+// Module ID: 7547
+// Function ID: 7548
 // Name: transformNativeMarkupNode
-// Dependencies: [32, 5294, 4824, 5426, 8458, 8459, 8460, 8462, 2]
+// Dependencies: [32, 5295, 4824, 5427, 7548, 7549, 7550, 7552, 2]
 
-// Module 8457 (transformNativeMarkupNode)
-import MarkupTypes from "MarkupTypes" /* 5294 */;
+// Module 7547 (transformNativeMarkupNode)
+import MarkupTypes from "MarkupTypes" /* 5295 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -76,7 +76,7 @@ function transformNode(type, channelId) {
         obj18.inQuote = true;
         let arr2 = transformNativeBlocks(type.value, obj18, "quote");
         if (arr2.length <= 0) {
-          const obj19 = { type: tmp51(5294).AST_KEY.TEXT, content: " " };
+          const obj19 = { type: tmp51(5295).AST_KEY.TEXT, content: " " };
           const items1 = [obj19];
           arr2 = items1;
         }

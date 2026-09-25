@@ -1,19 +1,19 @@
-// Module ID: 10513
-// Function ID: 10514
+// Module ID: 9615
+// Function ID: 9616
 // Name: NotificationSettingsMessageUnreadGuildActionSheet
-// Dependencies: [19, 5010, 1074, 5011, 1084, 21, 10502, 10514, 1115, 7452, 10495, 7447, 2]
+// Dependencies: [19, 5010, 1074, 5011, 1084, 21, 9604, 9616, 1115, 6535, 9597, 6530, 2]
 // Exports: default
 
-// Module 10513 (NotificationSettingsMessageUnreadGuildActionSheet)
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7452 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10495 */;
-import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 10514 */;
+// Module 9615 (NotificationSettingsMessageUnreadGuildActionSheet)
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6535 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9597 */;
+import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 9616 */;
 import noop from "module_19" /* 19 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
 
 const require = globalThis.__r;
 
-const NotificationSettingsUtils = tmp3(7447);
+const NotificationSettingsUtils = tmp3(6530);
 require = fn;
 const UserNotificationSettings = fn(1074).UserNotificationSettings;
 const UnreadSetting = fn(5011).UnreadSetting;

@@ -1,26 +1,26 @@
-// Module ID: 11211
-// Function ID: 11212
+// Module ID: 10309
+// Function ID: 10310
 // Name: SearchableUserList
-// Dependencies: [32, 19, 17, 1372, 11210, 21, 4829, 576, 11212, 1370, 11213, 4680, 1115, 11214, 11216, 11348, 5429, 9927, 2]
+// Dependencies: [32, 19, 17, 1372, 10308, 21, 4829, 576, 10310, 1370, 10311, 4682, 1115, 10312, 10314, 10446, 5430, 9025, 2]
 // Exports: default
 
-// Module 11211 (SearchableUserList)
+// Module 10309 (SearchableUserList)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import shared from "shared" /* 4680 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 11213 */;
+import shared from "shared" /* 4682 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10311 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const UserRowModes = fn(11210).UserRowModes;
+const UserRowModes = fn(10308).UserRowModes;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4829);
-let obj2 = { searchBarContainer: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, searchBar: { height: "ip", minHeight: false }, searchBarRowContainer: null, noResults: null };
+let obj2 = { searchBarContainer: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, searchBar: { height: "disabled", minHeight: false }, searchBarRowContainer: null, noResults: null };
 const obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj2.searchBarRowContainer = { paddingTop: nativeDefault.space.PX_8 };
 let obj4 = { paddingTop: nativeDefault.space.PX_8 };

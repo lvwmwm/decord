@@ -1,24 +1,24 @@
-// Module ID: 16886
-// Function ID: 16887
+// Module ID: 16074
+// Function ID: 16075
 // Name: ICYMIContentSettingControl
-// Dependencies: [32, 19, 17, 5010, 8685, 21, 4829, 576, 8700, 1115, 1177, 16887, 16888, 16889, 9974, 9975, 504, 16890, 4825, 7533, 4982, 2]
+// Dependencies: [32, 19, 17, 5010, 7775, 21, 4829, 576, 7790, 1115, 1177, 16075, 16076, 16077, 9072, 9073, 504, 16078, 4825, 6616, 4982, 2]
 // Exports: ChannelScoreSettings, GuildScoreSettings
 
-// Module 16886 (ICYMIContentSettingControl)
+// Module 16074 (ICYMIContentSettingControl)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import ICYMIUtils from "ICYMIUtils" /* 8700 */;
-import SegmentedControlState from "SegmentedControlState" /* 9974 */;
-import SegmentedControl from "SegmentedControl" /* 9975 */;
-import _modDef16887 from "module_16887" /* 16887 */;
-import _modDef16888 from "module_16888" /* 16888 */;
-import _modDef16889 from "module_16889" /* 16889 */;
-import NativeICYMIActionCreatorsDefault from "NativeICYMIActionCreators" /* 16890 */;
+import ICYMIUtils from "ICYMIUtils" /* 7790 */;
+import SegmentedControlState from "SegmentedControlState" /* 9072 */;
+import SegmentedControl from "SegmentedControl" /* 9073 */;
+import _modDef16075 from "module_16075" /* 16075 */;
+import _modDef16076 from "module_16076" /* 16076 */;
+import _modDef16077 from "module_16077" /* 16077 */;
+import NativeICYMIActionCreatorsDefault from "NativeICYMIActionCreators" /* 16078 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
-import ICYMIStore from "ICYMIStore" /* 8685 */;
+import ICYMIStore from "ICYMIStore" /* 7775 */;
 
 require = fn;
 function ContentSettingsControl(initialValue) {
@@ -29,7 +29,7 @@ function ContentSettingsControl(initialValue) {
   const obj = { label: null, id: "-1", icon: null, page: null };
   const intl = util.intl;
   obj.label = intl.string(util.t.rdt65I);
-  const obj2 = { source: _modDef16887, style: null };
+  const obj2 = { source: _modDef16075, style: null };
   const items = [tmp.icon, ];
   let iconSelected = null;
   if (tmp3 === ICYMIUtils.ICYMICustomScore.LESS) {
@@ -42,7 +42,7 @@ function ContentSettingsControl(initialValue) {
   const obj3 = { label: null, id: "0", icon: null, page: null };
   const intl2 = tmp4(1115).intl;
   obj3.label = intl2.string(util.t.SnrG00);
-  const obj4 = { source: _modDef16888, style: null };
+  const obj4 = { source: _modDef16076, style: null };
   const items2 = [tmp.icon, ];
   let iconSelected1 = null;
   if (tmp3 === ICYMIUtils.ICYMICustomScore.DEFAULT) {
@@ -55,7 +55,7 @@ function ContentSettingsControl(initialValue) {
   const obj5 = { label: null, id: "1", icon: null, page: null };
   const intl3 = tmp4(1115).intl;
   obj5.label = intl3.string(util.t.Rxe3jF);
-  const obj6 = { source: _modDef16889, style: null };
+  const obj6 = { source: _modDef16077, style: null };
   const items3 = [tmp.icon, ];
   let iconSelected2 = null;
   if (tmp3 === ICYMIUtils.ICYMICustomScore.MORE) {
@@ -71,9 +71,9 @@ function ContentSettingsControl(initialValue) {
     onSetActiveIndex(arg0) {
       let MORE = ICYMIUtils.ICYMICustomScore.DEFAULT;
       if (0 === arg0) {
-        MORE = tmp(8700).ICYMICustomScore.LESS;
+        MORE = tmp(7790).ICYMICustomScore.LESS;
       } else if (2 === arg0) {
-        MORE = tmp(8700).ICYMICustomScore.MORE;
+        MORE = tmp(7790).ICYMICustomScore.MORE;
       }
       _undefined(MORE);
       closure_1_0(MORE);
@@ -84,7 +84,7 @@ function ContentSettingsControl(initialValue) {
   let num = 0;
   if (ICYMIUtils.ICYMICustomScore.LESS !== tmp3) {
     num = 1;
-    if (tmp4(8700).ICYMICustomScore.MORE === tmp3) {
+    if (tmp4(7790).ICYMICustomScore.MORE === tmp3) {
       num = 2;
     }
   }
@@ -126,9 +126,9 @@ export const GuildScoreSettings = function GuildScoreSettings(guild) {
   const items = [ICYMIStore];
   const stateFromStores = id(504).useStateFromStores(items, () => ICYMIStore.getCustomGuildScore(id));
   let obj = id(504);
-  const numberToCustomScoreResult = id(8700).numberToCustomScore(stateFromStores);
+  const numberToCustomScoreResult = id(7790).numberToCustomScore(stateFromStores);
   c1 = numberToCustomScoreResult;
-  const tmp5 = numberToCustomScoreResult === id(8700).ICYMICustomScore.MUTED;
+  const tmp5 = numberToCustomScoreResult === id(7790).ICYMICustomScore.MUTED;
   const items1 = [id];
   const items2 = [numberToCustomScoreResult, id];
   const callback = noop.useCallback((arg0) => {
@@ -178,7 +178,7 @@ export const GuildScoreSettings = function GuildScoreSettings(guild) {
   const obj10 = { value: !tmp5, onValueChange: callback, label: null, start: true, end: true };
   const intl3 = tmp(1115).intl;
   obj10.label = intl3.string(id(1115).t.oujX73);
-  obj9.children = closure_8(id(7533).TableSwitchRow, obj10);
+  obj9.children = closure_8(id(6616).TableSwitchRow, obj10);
   items3[3] = closure_8(View, obj9);
   const obj11 = { variant: "text-xs/normal", color: "text-muted", style: tmp8.warningText, children: null };
   const intl4 = tmp(1115).intl;

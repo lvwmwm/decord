@@ -1,15 +1,15 @@
-// Module ID: 14045
-// Function ID: 14046
+// Module ID: 13206
+// Function ID: 13207
 // Name: ReadyPayloadUtils
-// Dependencies: [2048, 2073, 7972, 7976, 2094, 7977, 2090, 12, 38, 2]
+// Dependencies: [2048, 2073, 7057, 7061, 2094, 7062, 2090, 12, 38, 2]
 // Exports: hydrateInitialGuild, hydrateReadyPayloadPrioritized, hydrateReadySupplementalPayload, preloadReadyPayloadData
 
-// Module 14045 (ReadyPayloadUtils)
+// Module 13206 (ReadyPayloadUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import ChannelRecord from "ChannelRecord" /* 2048 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2073 */;
-import isCacheEnabled from "isCacheEnabled" /* 7972 */;
+import isCacheEnabled from "isCacheEnabled" /* 7057 */;
 import size from "module_2" /* 2 */;
 
 function hydrateGuild(guild) {
@@ -342,8 +342,8 @@ export const hydrateReadySupplementalPayload = function hydrateReadySupplemental
 export const preloadReadyPayloadData = function preloadReadyPayloadData() {
   const databaseResult = DatabaseDaosDefault.database();
   if (obj2.isCacheEnabled()) {
-    let committedVersions = tmp(7976).getCommittedVersions();
-    const tmpResult = tmp(7976);
+    let committedVersions = tmp(7061).getCommittedVersions();
+    const tmpResult = tmp(7061);
   } else {
     committedVersions = Promise.resolve({});
   }
@@ -357,8 +357,8 @@ export const preloadReadyPayloadData = function preloadReadyPayloadData() {
     guildIds = Promise.resolve(set);
   }
   if (null != databaseResult) {
-    let okAsyncResult = tmp(7977).okAsync(databaseResult);
-    const tmpResult4 = tmp(7977);
+    let okAsyncResult = tmp(7062).okAsync(databaseResult);
+    const tmpResult4 = tmp(7062);
   } else {
     okAsyncResult = Promise.resolve(false);
   }

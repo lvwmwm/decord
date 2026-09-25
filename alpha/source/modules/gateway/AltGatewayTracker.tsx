@@ -1,10 +1,10 @@
-// Module ID: 14002
-// Function ID: 14003
+// Module ID: 13163
+// Function ID: 13164
 // Name: AltGatewayTracker
-// Dependencies: [14003, 2]
+// Dependencies: [13164, 2]
 
-// Module 14002 (AltGatewayTracker)
-import getCachedUseAltGatewayDefault from "getCachedUseAltGateway" /* 14003 */;
+// Module 13163 (AltGatewayTracker)
+import getCachedUseAltGatewayDefault from "getCachedUseAltGateway" /* 13164 */;
 
 let closure_1 = getCachedUseAltGatewayDefault();
 const size = fn(2);

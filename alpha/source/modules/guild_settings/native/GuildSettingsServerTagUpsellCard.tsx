@@ -1,17 +1,17 @@
-// Module ID: 18125
-// Function ID: 18126
+// Module ID: 17353
+// Function ID: 17354
 // Name: GuildSettingsServerTagUpsellCard
-// Dependencies: [19, 17, 4717, 21, 4829, 576, 504, 4721, 12869, 12837, 5285, 5271, 12872, 4825, 1115, 5273, 16644, 2]
+// Dependencies: [19, 17, 4719, 21, 4829, 576, 504, 4723, 11998, 11966, 5286, 5272, 12001, 4825, 1115, 5274, 15824, 2]
 // Exports: default
 
-// Module 18125 (GuildSettingsServerTagUpsellCard)
+// Module 17353 (GuildSettingsServerTagUpsellCard)
 import nativeDefault from "native" /* 576 */;
-import Powerups from "Powerups" /* 4721 */;
-import LinearGradientDefault from "LinearGradient" /* 5285 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12837 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12869 */;
+import Powerups from "Powerups" /* 4723 */;
+import LinearGradientDefault from "LinearGradient" /* 5286 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 11966 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 11998 */;
 import noop from "module_19" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4717 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4719 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -59,7 +59,7 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
   let tmp10Result = null != tmp6;
   if (tmp10Result) {
     const obj8 = { imageUrl: tmp6, style: tmp.powerupImage };
-    tmp10Result = tmp10(tmp5(12872), obj8);
+    tmp10Result = tmp10(tmp5(12001), obj8);
   }
   obj7.children = tmp10Result;
   const items5 = [closure_6(closure_4, obj7), , ];
@@ -76,15 +76,15 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
   obj11.children = intl2.string(guildId(1115).t.Tg0fDm);
   items6[1] = closure_6(guildId(4825).Text, obj11);
   obj9.children = items6;
-  items5[1] = closure_7(guildId(5271).Stack, obj9);
+  items5[1] = closure_7(guildId(5272).Stack, obj9);
   const obj12 = { variant: "primary", size: "lg", text: null, icon: null, iconPosition: "start", onPress: null };
   const intl3 = tmp2(1115).intl;
   obj12.text = intl3.string(guildId(1115).t.kMRDWs);
-  obj12.icon = closure_6(guildId(16644).BoostTier2Icon, { color: "white" });
+  obj12.icon = closure_6(guildId(15824).BoostTier2Icon, { color: "white" });
   obj12.onPress = guildId.onUnlockPress;
-  items5[2] = closure_6(guildId(5273).Button, obj12);
+  items5[2] = closure_6(guildId(5274).Button, obj12);
   obj6.children = items5;
-  items4[3] = closure_7(guildId(5271).Stack, obj6);
+  items4[3] = closure_7(guildId(5272).Stack, obj6);
   obj2.children = items4;
   return closure_7(closure_4, obj2);
 };

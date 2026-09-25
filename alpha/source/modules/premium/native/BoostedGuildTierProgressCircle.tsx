@@ -1,14 +1,14 @@
-// Module ID: 13873
-// Function ID: 13874
+// Module ID: 13030
+// Function ID: 13031
 // Name: BoostedGuildTierProgressCircle
-// Dependencies: [19, 17, 1074, 21, 4829, 576, 13874, 13878, 13879, 13880, 4737, 4722, 12939, 4825, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 576, 13031, 13035, 13036, 13037, 4739, 4724, 12070, 4825, 2]
 // Exports: default
 
-// Module 13873 (BoostedGuildTierProgressCircle)
+// Module 13030 (BoostedGuildTierProgressCircle)
 import nativeDefault from "native" /* 576 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4722 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 4737 */;
-import Tier048Px from "Tier048Px" /* 13874 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 4724 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 4739 */;
+import Tier048Px from "Tier048Px" /* 13031 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -60,16 +60,16 @@ export default function BoostedGuildTierProgressCircle(arg0) {
       if (guild.premiumTier !== constants.NONE) {
         const premiumTier = guild.premiumTier;
         if (tmp13.TIER_1 === premiumTier) {
-          let tier048PxSource = tmp2(13878);
+          let tier048PxSource = tmp2(13035);
         } else if (tmp13.TIER_2 === premiumTier) {
-          tier048PxSource = tmp2(13879);
+          tier048PxSource = tmp2(13036);
         } else if (tmp13.TIER_3 === premiumTier) {
-          tier048PxSource = tmp2(13880);
+          tier048PxSource = tmp2(13037);
         }
       }
       const obj5 = { source: tier048PxSource, style: tmp.guildTierIcon, accessibilityElementsHidden: true, importantForAccessibility: "no" };
       const items = [tmp8(tmp12, obj5), ];
-      const obj6 = { style: tmp.guildTierName, variant: "text-xs/semibold", color: "interactive-text-active", children: tmp19(4722).getTierName(guild.premiumTier) };
+      const obj6 = { style: tmp.guildTierName, variant: "text-xs/semibold", color: "interactive-text-active", children: tmp19(4724).getTierName(guild.premiumTier) };
       items[1] = tmp8(tmp19(4825).Text, obj6);
       obj4.children = items;
       obj.children = tmp10(tmp11, obj4);

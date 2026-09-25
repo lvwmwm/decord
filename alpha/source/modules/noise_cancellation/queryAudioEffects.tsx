@@ -1,11 +1,13 @@
-// Module ID: 14435
-// Function ID: 14436
+// Module ID: 13596
+// Function ID: 13597
 // Name: queryAudioEffects
-// Dependencies: [5, 1074, 4, 1365, 573, 1241, 2]
+// Dependencies: [5, 1074, 4, 1365, 13540, 4447, 573, 1241, 2]
 // Exports: default
 
-// Module 14435 (queryAudioEffects)
+// Module 13596 (queryAudioEffects)
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
+import DiscordNativeDefault from "DiscordNative" /* 4447 */;
+import _modDef13540 from "module_13540" /* 13540 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -38,28 +40,37 @@ let closure_6 = async function _queryAudioEffects(arg0, value) {
           closure_3 = tmp7;
           closure_131_0 = closure_1;
           closure_131_1 = undefined;
-          if (obj13.isWindows()) {
-            c6 = 1;
-            c7 = 2;
-            c8 = 1;
-            const obj5 = { value: obj12.getDeviceAudioEffects(tmp46), done: false };
-            return obj5;
+          if (obj15.isWindows()) {
+            if (obj5.satisfies(DiscordNativeDefault.os.release, ">=10.0.22000")) {
+              c6 = 1;
+              c7 = 2;
+              c8 = 1;
+              const obj6 = { value: obj14.getDeviceAudioEffects(tmp54), done: false };
+              return obj6;
+            } else {
+              const _Error2 = Error;
+              const error = new Error("Audio effects querying likely not supported on this Windows version.");
+              c8 = 3;
+              const obj7 = { value: Promise.reject(error), done: true };
+              return obj7;
+            }
+            obj5 = _modDef13540;
           } else {
             const _Error = Error;
-            const error = new Error("Audio effects querying not supported on non-Windows platforms");
+            const error1 = new Error("Audio effects querying not supported on non-Windows platforms");
             c8 = 3;
-            const obj6 = { value: Promise.reject(error), done: true };
-            return obj6;
+            const obj8 = { value: Promise.reject(error1), done: true };
+            return obj8;
           }
-          obj12 = closure_2;
-          obj13 = utils_PlatformUtils;
-          tmp46 = closure_0;
+          obj14 = closure_2;
+          obj15 = utils_PlatformUtils;
+          tmp54 = closure_0;
         }
       } else if (1 === tmp7) {
         c6 = 0;
         closure_131_2 = closure_5;
         closure_132_5.error("Failed to probe audio effects for device", closure_131_2);
-        closure_132_1(closure_132_2[5]).track(closure_132_4.AUDIO_EFFECTS_PROBE_COMPLETED, { succeeded: false });
+        closure_132_1(closure_132_2[7]).track(closure_132_4.AUDIO_EFFECTS_PROBE_COMPLETED, { succeeded: false });
         c8 = 3;
         return { value: "HermesInternal", done: null };
       } else if (arg0 === 1) {
@@ -68,26 +79,26 @@ let closure_6 = async function _queryAudioEffects(arg0, value) {
       } else if (arg0 === 2) {
         c6 = 0;
         c8 = 3;
-        const obj7 = { value, done: true };
-        return obj7;
+        const obj9 = { value, done: true };
+        return obj9;
       } else {
         closure_131_1 = value;
-        const obj9 = { type: "MEDIA_ENGINE_SET_DEVICE_AUDIO_EFFECTS", deviceId: closure_131_0 };
+        const obj11 = { type: "MEDIA_ENGINE_SET_DEVICE_AUDIO_EFFECTS", deviceId: closure_131_0 };
         const merged = Object.assign(closure_131_1);
-        closure_132_1(closure_132_2[4]).dispatch(obj9);
-        const obj8 = closure_132_1(closure_132_2[4]);
-        const obj11 = { succeeded: true, active_effects: closure_131_1.active, available_effects: closure_131_1.available };
-        closure_132_1(closure_132_2[5]).track(closure_132_4.AUDIO_EFFECTS_PROBE_COMPLETED, obj11);
+        closure_132_1(closure_132_2[6]).dispatch(obj11);
+        const obj10 = closure_132_1(closure_132_2[6]);
+        const obj13 = { succeeded: true, active_effects: closure_131_1.active, available_effects: closure_131_1.available };
+        closure_132_1(closure_132_2[7]).track(closure_132_4.AUDIO_EFFECTS_PROBE_COMPLETED, obj13);
         c6 = 0;
         c8 = 3;
         const obj = { value: closure_131_1, done: true };
         return obj;
       }
-    } catch (tmp23) {
-      closure_5 = tmp23;
+    } catch (tmp31) {
+      closure_5 = tmp31;
       if (tmp4 === c6) {
         c8 = tmp2;
-        throw tmp23;
+        throw tmp31;
       } else {
         c7 = tmp;
       }

@@ -1,10 +1,10 @@
-// Module ID: 11253
-// Function ID: 11254
+// Module ID: 10351
+// Function ID: 10352
 // Name: PerLetterEffect
-// Dependencies: [19, 17, 21, 4829, 11254, 11255, 4825, 2]
+// Dependencies: [19, 17, 21, 4829, 10352, 10353, 4825, 2]
 // Exports: default
 
-// Module 11253 (PerLetterEffect)
+// Module 10351 (PerLetterEffect)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -25,10 +25,10 @@ export default function PerLetterEffect(name) {
   const items1 = [closure_7().container, containerStyle];
   obj.style = items1;
   const memo = noop.useMemo(() => {
-    const regex = colors(11254)();
+    const regex = colors(10352)();
     closure_1 = 0;
-    let obj = name(11255);
-    return name(11255).splitGraphemes(regex).map((children, index) => {
+    let obj = name(10353);
+    return name(10353).splitGraphemes(regex).map((children, index) => {
       regex.lastIndex = 0;
       const tmp = regex.test(children) || 0 === children.trim().length;
       let tmp2;

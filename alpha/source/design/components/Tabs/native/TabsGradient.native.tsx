@@ -1,14 +1,14 @@
-// Module ID: 13107
-// Function ID: 13108
+// Module ID: 12257
+// Function ID: 12258
 // Name: TabsGradient
-// Dependencies: [19, 1074, 21, 4561, 5285, 4829, 5272, 2]
+// Dependencies: [19, 1074, 21, 4563, 5286, 4829, 5273, 2]
 // Exports: default
 
-// Module 13107 (TabsGradient)
-import spring from "spring" /* 5272 */;
-import LinearGradientDefault from "LinearGradient" /* 5285 */;
+// Module 12257 (TabsGradient)
+import spring from "spring" /* 5273 */;
+import LinearGradientDefault from "LinearGradient" /* 5286 */;
 import noop from "module_19" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 
 require = fn;
 const HorizontalGradient = fn(1074).HorizontalGradient;

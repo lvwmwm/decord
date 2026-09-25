@@ -1,9 +1,9 @@
-// Module ID: 17156
-// Function ID: 17157
+// Module ID: 16370
+// Function ID: 16371
 // Name: VibegrationsComposerDraftStore
 // Dependencies: [32, 510, 12, 504, 573, 2]
 
-// Module 17156 (VibegrationsComposerDraftStore)
+// Module 16370 (VibegrationsComposerDraftStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

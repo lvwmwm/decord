@@ -1,10 +1,10 @@
-// Module ID: 17128
-// Function ID: 17129
+// Module ID: 16319
+// Function ID: 16320
 // Name: VibegrationsStreamReveal
 // Dependencies: [2]
 // Exports: nextRevealLength, reconcileRevealedLength, safeRevealBoundary, wholeCharacterBoundary
 
-// Module 17128 (VibegrationsStreamReveal)
+// Module 16319 (VibegrationsStreamReveal)
 import size from "module_2" /* 2 */;
 
 function splitsCharacter(target, sum) {

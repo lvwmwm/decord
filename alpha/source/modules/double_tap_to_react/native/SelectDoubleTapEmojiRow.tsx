@@ -1,20 +1,20 @@
-// Module ID: 12731
-// Function ID: 12732
+// Module ID: 11857
+// Function ID: 11858
 // Name: SelectDoubleTapEmojiRow
-// Dependencies: [19, 17, 4821, 7484, 1375, 21, 4829, 1364, 576, 504, 5427, 7463, 1397, 10633, 1478, 4482, 8316, 11474, 8092, 9117, 2]
+// Dependencies: [19, 17, 4821, 6567, 1375, 21, 4829, 1364, 576, 504, 5428, 6546, 1397, 9737, 1478, 4484, 7405, 10572, 7177, 8211, 2]
 
-// Module 12731 (SelectDoubleTapEmojiRow)
+// Module 11857 (SelectDoubleTapEmojiRow)
 import nativeDefault from "native" /* 576 */;
-import EmojiDefault from "Emoji" /* 7463 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 8092 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 11474 */;
+import EmojiDefault from "Emoji" /* 6546 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7177 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10572 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 
 const AvatarUtilsDefault = tmp8(1397);
 require = fn;
 const View = fn(17).View;
-const ACTION_SHEET_MAX_WIDTH = fn(7484).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(6567).ACTION_SHEET_MAX_WIDTH;
 const EmojiConstants = fn(1375);
 ({ EMOJI_URL_BASE_SIZE: closure_7, EmojiIntention: closure_8 } = EmojiConstants);
 const jsxProd = fn(21);
@@ -104,7 +104,7 @@ let closure_13 = noop.memo((emoji) => {
   obj4.src = url;
   obj3.children = closure_9(EmojiDefault, obj4);
   obj2.children = closure_9(tmp6, obj3);
-  return closure_9(emoji(5427).PressableOpacity, obj2);
+  return closure_9(emoji(5428).PressableOpacity, obj2);
 });
 const obj11 = { color: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_TEXT };
 size = fn(2);

@@ -1,10 +1,10 @@
-// Module ID: 7768
-// Function ID: 7769
+// Module ID: 6853
+// Function ID: 6854
 // Name: PremiumPill
-// Dependencies: [19, 17, 21, 4829, 576, 4763, 7769, 7776, 1115, 4825, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4763, 6854, 6861, 1115, 4825, 2]
 // Exports: PremiumPill
 
-// Module 7768 (PremiumPill)
+// Module 6853 (PremiumPill)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import noop from "module_19" /* 19 */;

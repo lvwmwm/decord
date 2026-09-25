@@ -1,15 +1,15 @@
-// Module ID: 13352
-// Function ID: 13353
+// Module ID: 12502
+// Function ID: 12503
 // Name: MediaViewerThumbnails
-// Dependencies: [32, 19, 17, 8642, 21, 13353, 4526, 576, 4561, 5261, 1364, 4829, 5892, 8615, 4562, 7405, 2]
+// Dependencies: [32, 19, 17, 7732, 21, 12503, 4528, 576, 4563, 5262, 1364, 4829, 5894, 7705, 4564, 6488, 2]
 // Exports: default
 
-// Module 13352 (MediaViewerThumbnails)
-import useToken from "useToken" /* 4526 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4561 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4562 */;
-import FastImageDefault from "FastImage" /* 5892 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13353 */;
+// Module 12502 (MediaViewerThumbnails)
+import useToken from "useToken" /* 4528 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4563 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4564 */;
+import FastImageDefault from "FastImage" /* 5894 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 12503 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -26,14 +26,14 @@ function ObscuredView(source) {
       const items = [absoluteFill.absoluteFill, tmp5];
       obj2.style = items;
       const tmp11 = absoluteFill;
-      const tmp7Result = tmp7(5261);
+      const tmp7Result = tmp7(5262);
       let str = "light";
       if (tmpResult.isAndroid()) {
         str = "dark";
       }
       const obj3 = { blurTheme: str, style: tmp11.absoluteFill, android_fallbackColor: tmp8 };
       obj2.children = React6(tmp7Result, obj3);
-      tmp10Result = tmp10(tmp7(4561).View, obj2);
+      tmp10Result = tmp10(tmp7(4563).View, obj2);
       tmpResult = PlatformUtils;
     } else {
       tmp10Result = null;
@@ -43,7 +43,7 @@ function ObscuredView(source) {
 }
 get_ActivityIndicator = fn(17);
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
-const Constants = fn(8642);
+const Constants = fn(7732);
 ({ THUMBNAIL_WIDTH_MARGIN: closure_7, THUMBNAIL_MARGIN, THUMBNAIL_HEIGHT } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);

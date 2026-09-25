@@ -1,11 +1,11 @@
-// Module ID: 12662
-// Function ID: 12663
+// Module ID: 11788
+// Function ID: 11789
 // Name: GuildDirectoryCreateOrAddDescription
-// Dependencies: [5, 19, 17, 21, 4829, 12663, 2058, 12664, 12651, 12652, 4825, 1115, 12660, 2]
+// Dependencies: [5, 19, 17, 21, 4829, 11789, 2058, 11790, 11777, 11778, 4825, 1115, 11786, 2]
 // Exports: default
 
-// Module 12662 (GuildDirectoryCreateOrAddDescription)
-import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 12660 */;
+// Module 11788 (GuildDirectoryCreateOrAddDescription)
+import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 11786 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -134,5 +134,5 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   items1[1] = closure_6(GuildDirectoryEditDescriptionTemplateDefault, obj6);
   obj2.children = items1;
   obj.children = closure_7(closure_5, obj2);
-  return closure_6(directoryChannelId(12652).GuildDirectoryAddModalScreen, obj);
+  return closure_6(directoryChannelId(11778).GuildDirectoryAddModalScreen, obj);
 };

@@ -1,14 +1,14 @@
-// Module ID: 13795
-// Function ID: 13796
+// Module ID: 12949
+// Function ID: 12950
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 4829, 576, 7495, 13796, 9128, 1249, 11087, 13799, 4825, 4520, 10317, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 6578, 12950, 8222, 1249, 10191, 12953, 4825, 4522, 9414, 2]
 // Exports: default
 
-// Module 13795 (MarketingPageBannerTile)
+// Module 12949 (MarketingPageBannerTile)
 import nativeDefault from "native" /* 576 */;
-import LinkingDefault from "Linking" /* 4520 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7495 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9128 */;
+import LinkingDefault from "Linking" /* 4522 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6578 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8222 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -51,18 +51,18 @@ export default function MarketingPageBannerTile(bannerFields) {
   obj2.analyticsPage = analyticsPage;
   obj2.onPaymentSuccess = onPaymentSuccess;
   obj2.onPaymentDismiss = onPaymentDismiss;
-  const obj = helpArticleLinkProps(13796);
+  const obj = helpArticleLinkProps(12950);
   const obj3 = { type: null, name: null, properties: null };
-  const buttonActionHandler = helpArticleLinkProps(13796).getButtonActionHandler(obj2);
+  const buttonActionHandler = helpArticleLinkProps(12950).getButtonActionHandler(obj2);
   obj3.type = helpArticleLinkProps(1249).ImpressionTypes.VIEW;
   obj3.name = helpArticleLinkProps(1249).ImpressionNames.PREMIUM_MARKETING_COMPONENT;
   const tmp2Result = useTrackImpressionDefault;
-  obj3.properties = { component_type: helpArticleLinkProps(11087).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId };
+  obj3.properties = { component_type: helpArticleLinkProps(10191).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId };
   tmp2Result(obj3);
-  const obj4 = { component_type: helpArticleLinkProps(11087).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId };
-  const formatStringWithCommonPremiumParams = helpArticleLinkProps(13799).useFormatStringWithCommonPremiumParams(bannerFields.body);
-  const tmp4Result = helpArticleLinkProps(13799);
-  helpArticleLinkProps = helpArticleLinkProps(13799).getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
+  const obj4 = { component_type: helpArticleLinkProps(10191).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId };
+  const formatStringWithCommonPremiumParams = helpArticleLinkProps(12953).useFormatStringWithCommonPremiumParams(bannerFields.body);
+  const tmp4Result = helpArticleLinkProps(12953);
+  helpArticleLinkProps = helpArticleLinkProps(12953).getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
   const obj5 = { style: null, children: null };
   const items = [tmp.container, style];
   obj5.style = items;
@@ -100,7 +100,7 @@ export default function MarketingPageBannerTile(bannerFields) {
   if (tmp12Result4) {
     const obj12 = { style: tmp.ctaButton, children: null };
     const obj13 = { text: bannerFields.button.copy, onPress: buttonActionHandler };
-    obj12.children = tmp12(tmp2(10317), obj13);
+    obj12.children = tmp12(tmp2(9414), obj13);
     tmp12Result4 = tmp12(tmp13, obj12);
   }
   items2[3] = tmp12Result4;

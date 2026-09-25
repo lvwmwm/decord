@@ -1,10 +1,10 @@
-// Module ID: 11572
-// Function ID: 11573
+// Module ID: 10777
+// Function ID: 10778
 // Name: NameplatePreview
-// Dependencies: [19, 17, 4821, 2107, 21, 4829, 576, 1970, 8564, 8507, 504, 4673, 5076, 1177, 9179, 11248, 11249, 4825, 2]
+// Dependencies: [19, 17, 4821, 2107, 21, 4829, 576, 1970, 7654, 7597, 504, 4675, 5077, 1177, 8273, 10346, 10347, 4825, 2]
 // Exports: NameplatePreview
 
-// Module 11572 (NameplatePreview)
+// Module 10777 (NameplatePreview)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;
@@ -56,9 +56,9 @@ export const NameplatePreview = function NameplatePreview(aria_hidden) {
     nameplateData = user(1970).getNameplateData(nameplate);
     const obj = user(1970);
   }
-  const avatarDecoration = user(8564).useAvatarDecoration(user, guildId);
-  pendingAvatarDecoration = guildId(8507)({ guildId }).pendingAvatarDecoration;
-  const obj2 = user(8564);
+  const avatarDecoration = user(7654).useAvatarDecoration(user, guildId);
+  pendingAvatarDecoration = guildId(7597)({ guildId }).pendingAvatarDecoration;
+  const obj2 = user(7654);
   const items = [AccessibilityStore];
   stateFromStores = user(504).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const obj3 = user(504);
@@ -74,7 +74,7 @@ export const NameplatePreview = function NameplatePreview(aria_hidden) {
     return member;
   });
   const obj4 = user(504);
-  const name = guildId(4673).useName(user);
+  const name = guildId(4675).useName(user);
   if (pendingGlobalName == null) {
     let tmp11 = name;
     if (null != guildId) {
@@ -98,17 +98,17 @@ export const NameplatePreview = function NameplatePreview(aria_hidden) {
     tmp14 = pendingAvatarDecoration;
   }
   pendingAvatarDecoration = tmp14;
-  const tmp15 = guildId(5076)({ userId: user.id, guildId, pendingDisplayNameStyles });
+  const tmp15 = guildId(5077)({ userId: user.id, guildId, pendingDisplayNameStyles });
   const items2 = [tmp.avatar, user, guildId, tmp14, stateFromStores];
   const obj7 = { style: tmp.container, "aria-hidden": aria_hidden["aria-hidden"], children: null };
   const memo = stateFromStores.useMemo(() => React5(native.Avatar, { style: user.avatar, user, guildId, size: native.AvatarSizes.NORMAL, avatarDecoration: pendingAvatarDecoration, animate: !stateFromStores, autoStatusCutout: true, "aria-hidden": true }), items2);
-  const items3 = [closure_7(guildId(9179), { nameplate: nameplateData, style: tmp.nameplate, fullOpacity: true, animate: flag2 }), closure_7(pendingAvatarDecoration, { style: tmp.avatar, children: memo }), ];
+  const items3 = [closure_7(guildId(8273), { nameplate: nameplateData, style: tmp.nameplate, fullOpacity: true, animate: flag2 }), closure_7(pendingAvatarDecoration, { style: tmp.avatar, children: memo }), ];
   const obj10 = { style: tmp.content, children: null };
   let tmp19Result = null != tmp15;
   if (tmp19Result) {
-    const obj11 = { userId: user.id, guildId, userName: pendingGlobalName, variant: "text-md/semibold", effectDisplayType: tmp4(11249).EffectDisplayType.STATIC, lineClamp: 1, pendingDisplayNameStyles };
-    tmp19Result = tmp19(tmp7(11248), obj11);
-    const tmp7Result = tmp7(11248);
+    const obj11 = { userId: user.id, guildId, userName: pendingGlobalName, variant: "text-md/semibold", effectDisplayType: tmp4(10347).EffectDisplayType.STATIC, lineClamp: 1, pendingDisplayNameStyles };
+    tmp19Result = tmp19(tmp7(10346), obj11);
+    const tmp7Result = tmp7(10346);
   }
   const items4 = [tmp19Result, ];
   let tmp19Result2 = null == tmp15;

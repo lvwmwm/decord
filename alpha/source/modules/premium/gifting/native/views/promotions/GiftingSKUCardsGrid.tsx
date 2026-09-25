@@ -1,21 +1,21 @@
-// Module ID: 11398
-// Function ID: 11399
+// Module ID: 10496
+// Function ID: 10497
 // Name: GiftingSKUCardsGrid
-// Dependencies: [19, 17, 7877, 1971, 21, 4829, 576, 8526, 4543, 11399, 5427, 9185, 9171, 9156, 4825, 1115, 2]
+// Dependencies: [19, 17, 6962, 1971, 21, 4829, 576, 7616, 4545, 10497, 5428, 8279, 8265, 8250, 4825, 1115, 2]
 // Exports: default
 
-// Module 11398 (GiftingSKUCardsGrid)
+// Module 10496 (GiftingSKUCardsGrid)
 import nativeDefault from "native" /* 576 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4543 */;
-import useCurrentUser from "useCurrentUser" /* 8526 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9171 */;
-import NameplateCardPreviewDefault from "NameplateCardPreview" /* 9185 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11399 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4545 */;
+import useCurrentUser from "useCurrentUser" /* 7616 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8265 */;
+import NameplateCardPreviewDefault from "NameplateCardPreview" /* 8279 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10497 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const isAvatarDecorationRecord = fn(7877).isAvatarDecorationRecord;
+const isAvatarDecorationRecord = fn(6962).isAvatarDecorationRecord;
 const isNameplateRecord = fn(1971).isNameplateRecord;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
@@ -79,7 +79,7 @@ let closure_10 = noop.memo((rewardSkuId) => {
     if (claimed) {
       const obj8 = { style: tmp.checkmarkContainer, children: null };
       const obj9 = { size: "lg", style: tmp.checkmark };
-      obj8.children = tmp7(tmp2(9156).CheckmarkLargeBoldIcon, obj9);
+      obj8.children = tmp7(tmp2(8250).CheckmarkLargeBoldIcon, obj9);
       tmp7Result2 = tmp7(tmp8, obj8);
     }
     items3[1] = tmp7Result2;
@@ -99,7 +99,7 @@ let closure_10 = noop.memo((rewardSkuId) => {
     obj10.children = items4;
     items3[2] = React6(View, obj10);
     obj4.children = items3;
-    return React6(tmp2(5427).PressableOpacity, obj4);
+    return React6(tmp2(5428).PressableOpacity, obj4);
   }
 });
 createStyles = fn(4829);

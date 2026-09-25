@@ -1,20 +1,20 @@
-// Module ID: 12230
-// Function ID: 12231
+// Module ID: 11352
+// Function ID: 11353
 // Name: AppealIngestionSpeedBump
-// Dependencies: [19, 17, 8781, 8770, 1074, 21, 4829, 504, 12223, 12231, 1115, 12229, 12232, 12242, 12243, 4825, 2]
+// Dependencies: [19, 17, 7873, 7860, 1074, 21, 4829, 504, 11345, 11353, 1115, 11351, 11354, 11364, 11365, 4825, 2]
 // Exports: default
 
-// Module 12230 (AppealIngestionSpeedBump)
-import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 12232 */;
-import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 12242 */;
+// Module 11352 (AppealIngestionSpeedBump)
+import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 11354 */;
+import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 11364 */;
 import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8781 */;
+import SafetyHubStore from "SafetyHubStore" /* 7873 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 const View = fn(17).View;
-const SafetyHubConstants = fn(8770);
+const SafetyHubConstants = fn(7860);
 ({ SafetyHubAnalyticsActions: hasOwnProperty, SafetyHubLinks: metroRequire } = SafetyHubConstants);
 const EMPTY_STRING_SNOWFLAKE_ID = fn(1074).EMPTY_STRING_SNOWFLAKE_ID;
 const jsxProd = fn(21);
@@ -74,8 +74,8 @@ export default function AppealIngestionSpeedBump(arg0) {
     obj6.onPress = function onPress() {
       return closure_0(hasOwnProperty.ClickAgeVerificationLink);
     };
-    tmp9Result3 = tmp9(tmp13(12243), obj6);
-    const tmp13Result = tmp13(12243);
+    tmp9Result3 = tmp9(tmp13(11365), obj6);
+    const tmp13Result = tmp13(11365);
   }
   items2[2] = tmp9Result3;
   if (isSpam) {
@@ -89,8 +89,8 @@ export default function AppealIngestionSpeedBump(arg0) {
     obj7.onPress = function onPress() {
       return closure_0(hasOwnProperty.ClickSpamWebformLink);
     };
-    isSpam = tmp9(tmp13(12243), obj7);
-    const tmp13Result4 = tmp13(12243);
+    isSpam = tmp9(tmp13(11365), obj7);
+    const tmp13Result4 = tmp13(11365);
   }
   items2[3] = isSpam;
   if (isDeveloperClassification) {
@@ -101,8 +101,8 @@ export default function AppealIngestionSpeedBump(arg0) {
     obj8.onPress = function onPress() {
       return closure_0(hasOwnProperty.ClickAppAppealLink);
     };
-    isDeveloperClassification = tmp9(tmp13(12243), obj8);
-    const tmp13Result5 = tmp13(12243);
+    isDeveloperClassification = tmp9(tmp13(11365), obj8);
+    const tmp13Result5 = tmp13(11365);
   }
   items2[4] = isDeveloperClassification;
   let tmp9Result4 = !isCoppa;
@@ -114,8 +114,8 @@ export default function AppealIngestionSpeedBump(arg0) {
     obj9.onPress = function onPress() {
       return closure_0(hasOwnProperty.ClickLearnMoreLink);
     };
-    tmp9Result4 = tmp9(tmp13(12243), obj9);
-    const tmp13Result6 = tmp13(12243);
+    tmp9Result4 = tmp9(tmp13(11365), obj9);
+    const tmp13Result6 = tmp13(11365);
   }
   items2[5] = tmp9Result4;
   if (isDsaEligible) {

@@ -1,15 +1,15 @@
-// Module ID: 12165
-// Function ID: 12166
+// Module ID: 11287
+// Function ID: 11288
 // Name: MentionableSelectComponentActionSheet
-// Dependencies: [19, 17, 2101, 2066, 4869, 1372, 1074, 21, 4829, 576, 7460, 8479, 12166, 5060, 1177, 7520, 7538, 9924, 12164, 9985, 4825, 12167, 1115, 2]
+// Dependencies: [19, 17, 2101, 2066, 4869, 1372, 1074, 21, 4829, 576, 6543, 7569, 11288, 5060, 1177, 6603, 6621, 9022, 11286, 9083, 4825, 11289, 1115, 2]
 // Exports: default
 
-// Module 12165 (MentionableSelectComponentActionSheet)
+// Module 11287 (MentionableSelectComponentActionSheet)
 import nativeDefault from "native" /* 576 */;
 import InteractionComponentTypes from "InteractionComponentTypes" /* 5060 */;
-import RoleIconDefault from "RoleIcon" /* 7538 */;
-import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 8479 */;
-import DiscordTagDefault from "DiscordTag" /* 9985 */;
+import RoleIconDefault from "RoleIcon" /* 6621 */;
+import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 7569 */;
+import DiscordTagDefault from "DiscordTag" /* 9083 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2101 */;
 import GuildStore from "GuildStore" /* 2066 */;
@@ -69,14 +69,14 @@ export default function MentionableSelectComponentActionSheet(selectionActionCom
       if (null != guild) {
         if (null != role) {
           if (tmpResult.canGuildUseRoleIcons(tmp3, role)) {
-            const roleIconData = tmp(7520).getRoleIconData(role);
+            const roleIconData = tmp(6603).getRoleIconData(role);
             if (null != roleIconData) {
               const obj2 = { src: null, unicodeEmoji: null, size: 24, name: null };
               ({ customIconSrc: obj3.src, unicodeEmoji: obj3.unicodeEmoji } = roleIconData);
               obj2.name = role.name;
               return closure_2_10(RoleIconDefault, obj2);
             }
-            const tmpResult2 = tmp(7520);
+            const tmpResult2 = tmp(6603);
           }
           let colorString;
           if (role != null) {
@@ -86,7 +86,7 @@ export default function MentionableSelectComponentActionSheet(selectionActionCom
             colorString = React7;
           }
           const obj4 = { color: colorString };
-          return closure_2_10(tmp(9924).ShieldUserIcon, obj4);
+          return closure_2_10(tmp(9022).ShieldUserIcon, obj4);
         }
       }
       return null;
@@ -120,7 +120,7 @@ export default function MentionableSelectComponentActionSheet(selectionActionCom
         if (null != tmp7) {
           const obj = { style: closure_3.roleCountContainer, children: null };
           const obj2 = { style: closure_3.roleCountText, variant: "text-sm/medium", color: "interactive-text-default", children: tmp7 };
-          const items = [closure_2_10(tmp(4825).Text, obj2), closure_2_10(tmp(12167).UserIcon, { size: "xs" })];
+          const items = [closure_2_10(tmp(4825).Text, obj2), closure_2_10(tmp(11289).UserIcon, { size: "xs" })];
           obj.children = items;
           return closure_2_11(View, obj);
         }

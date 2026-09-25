@@ -1,12 +1,12 @@
 // Module ID: 4786
 // Function ID: 4787
 // Name: TrashIcon
-// Dependencies: [19, 21, 576, 4525, 4787, 2]
+// Dependencies: [19, 21, 576, 4527, 4787, 2]
 // Exports: TrashIcon
 
 // Module 4786 (TrashIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
 import _mod4787 from "module_4787" /* 4787 */;
 import noop from "module_19" /* 19 */;
 

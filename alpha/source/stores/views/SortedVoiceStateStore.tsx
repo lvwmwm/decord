@@ -1,7 +1,7 @@
 // Module ID: 4853
 // Function ID: 4854
 // Name: SortedVoiceStateStore
-// Dependencies: [32, 2047, 1386, 502, 2044, 2107, 1372, 4848, 1074, 4673, 4459, 11, 1186, 12, 504, 2069, 573, 2]
+// Dependencies: [32, 2047, 1386, 502, 2044, 2107, 1372, 4848, 1074, 4675, 4461, 11, 1186, 12, 504, 2069, 573, 2]
 // Exports: getComparator, makeMemberAndComparator
 
 // Module 4853 (SortedVoiceStateStore)
@@ -10,8 +10,8 @@ import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4459 */;
-import UserUtilsDefault from "UserUtils" /* 4673 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4461 */;
+import UserUtilsDefault from "UserUtils" /* 4675 */;
 import _slicedToArray from "module_32" /* 32 */;
 import FavoriteStore from "FavoriteStore" /* 2047 */;
 import UserRecord from "UserRecord" /* 1386 */;

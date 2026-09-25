@@ -1,14 +1,14 @@
-// Module ID: 9038
-// Function ID: 9039
+// Module ID: 8132
+// Function ID: 8133
 // Name: useInAppBrowserReturn
-// Dependencies: [19, 9033, 1365, 4793, 9031, 9037, 2]
+// Dependencies: [19, 8127, 1365, 4793, 8125, 8131, 2]
 // Exports: default
 
-// Module 9038 (useInAppBrowserReturn)
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9031 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9037 */;
+// Module 8132 (useInAppBrowserReturn)
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8125 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8131 */;
 import noop from "module_19" /* 19 */;
-import GameProfileStore from "GameProfileStore" /* 9033 */;
+import GameProfileStore from "GameProfileStore" /* 8127 */;
 
 require = fn;
 const size = fn(2);

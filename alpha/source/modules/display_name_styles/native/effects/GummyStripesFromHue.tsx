@@ -1,11 +1,11 @@
-// Module ID: 15700
-// Function ID: 15701
+// Module ID: 14870
+// Function ID: 14871
 // Name: GummyStripesFromHue
-// Dependencies: [32, 19, 21, 4829, 1389, 4561, 14969, 2]
+// Dependencies: [32, 19, 21, 4829, 1389, 4563, 14131, 2]
 // Exports: default
 
-// Module 15700 (GummyStripesFromHue)
-import ColorPickerUtils from "ColorPickerUtils" /* 14969 */;
+// Module 14870 (GummyStripesFromHue)
+import ColorPickerUtils from "ColorPickerUtils" /* 14131 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

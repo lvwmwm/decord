@@ -1,12 +1,12 @@
-// Module ID: 18334
-// Function ID: 18335
+// Module ID: 17565
+// Function ID: 17566
 // Name: components/StepsIndicator
-// Dependencies: [19, 17, 4821, 21, 4829, 576, 4561, 4830, 4825, 504, 2]
+// Dependencies: [19, 17, 4821, 21, 4829, 576, 4563, 4830, 4825, 504, 2]
 // Exports: default
 
-// Module 18334 (components/StepsIndicator)
+// Module 17565 (components/StepsIndicator)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import timing from "timing" /* 4830 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;

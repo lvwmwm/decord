@@ -1,10 +1,10 @@
-// Module ID: 15880
-// Function ID: 15881
+// Module ID: 15050
+// Function ID: 15051
 // Name: AppIcon
-// Dependencies: [19, 17, 9518, 21, 4829, 576, 4763, 4680, 2]
+// Dependencies: [19, 17, 8616, 21, 4829, 576, 4763, 4682, 2]
 // Exports: default
 
-// Module 15880 (AppIcon)
+// Module 15050 (AppIcon)
 import nativeDefault from "native" /* 576 */;
 import useThemeDefault from "useTheme" /* 4763 */;
 import noop from "module_19" /* 19 */;
@@ -12,7 +12,7 @@ import noop from "module_19" /* 19 */;
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
-const getIconById = fn(9518).getIconById;
+const getIconById = fn(8616).getIconById;
 const jsx = fn(21).jsx;
 const createStyles = fn(4829);
 let obj2 = { container: { overflow: "hidden", borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, image: { resizeMode: "contain", height: "100%", width: "100%" } };

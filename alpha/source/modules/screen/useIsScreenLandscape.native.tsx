@@ -1,10 +1,10 @@
-// Module ID: 5430
-// Function ID: 5431
+// Module ID: 5431
+// Function ID: 5432
 // Name: useIsScreenLandscape
 // Dependencies: [19, 1479, 1481, 2]
 // Exports: getIsScreenLandscape, useIsScreenLandscape
 
-// Module 5430 (useIsScreenLandscape)
+// Module 5431 (useIsScreenLandscape)
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1481 */;
 import noop from "module_19" /* 19 */;
 import DimensionsStore from "DimensionsStore" /* 1479 */;

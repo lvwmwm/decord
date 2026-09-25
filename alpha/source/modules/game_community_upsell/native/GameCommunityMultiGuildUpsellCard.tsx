@@ -1,20 +1,20 @@
-// Module ID: 16694
-// Function ID: 16695
+// Module ID: 15878
+// Function ID: 15879
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 4821, 4465, 2066, 1074, 21, 4829, 576, 504, 1397, 1431, 1478, 1241, 5825, 7672, 7671, 1115, 9174, 9100, 1177, 4825, 5273, 8264, 8269, 8271, 2]
+// Dependencies: [5, 32, 19, 17, 4821, 4467, 2066, 1074, 21, 4829, 576, 504, 1397, 1431, 1478, 1241, 5827, 6755, 6754, 1115, 8268, 8194, 1177, 4825, 5274, 7353, 7358, 7360, 2]
 // Exports: default
 
-// Module 16694 (GameCommunityMultiGuildUpsellCard)
+// Module 15878 (GameCommunityMultiGuildUpsellCard)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1431 */;
-import transitionToGuild from "transitionToGuild" /* 7672 */;
+import transitionToGuild from "transitionToGuild" /* 6755 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
-import LurkingStore from "LurkingStore" /* 4465 */;
+import LurkingStore from "LurkingStore" /* 4467 */;
 import GuildStore from "GuildStore" /* 2066 */;
 
 require = fn;

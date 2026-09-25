@@ -1,38 +1,38 @@
-// Module ID: 10972
-// Function ID: 10973
+// Module ID: 10076
+// Function ID: 10077
 // Name: HorizontalAutocomplete
-// Dependencies: [19, 17, 4821, 2101, 2066, 4474, 1372, 1074, 21, 4829, 5829, 576, 4561, 5290, 4830, 504, 1177, 4825, 4673, 7520, 7538, 8483, 5327, 4982, 5892, 2]
+// Dependencies: [19, 17, 4821, 2101, 2066, 4476, 1372, 1074, 21, 4829, 5831, 576, 4563, 5291, 4830, 504, 1177, 4825, 4675, 6603, 6621, 7573, 5328, 4982, 5894, 2]
 
-// Module 10972 (HorizontalAutocomplete)
+// Module 10076 (HorizontalAutocomplete)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4561 */;
-import UserUtilsDefault from "UserUtils" /* 4673 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4563 */;
+import UserUtilsDefault from "UserUtils" /* 4675 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import timing from "timing" /* 4830 */;
-import useMountEffectDefault from "useMountEffect" /* 5290 */;
-import FastImageDefault from "FastImage" /* 5892 */;
-import RoleIconDefault from "RoleIcon" /* 7538 */;
-import _modDef8483 from "module_8483" /* 8483 */;
+import useMountEffectDefault from "useMountEffect" /* 5291 */;
+import FastImageDefault from "FastImage" /* 5894 */;
+import RoleIconDefault from "RoleIcon" /* 6621 */;
+import _modDef7573 from "module_7573" /* 7573 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 import GuildRoleStore from "GuildRoleStore" /* 2101 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
-import TextStyles from "TextStyles" /* 5829 */;
+import TextStyles from "TextStyles" /* 5831 */;
 
 require = fn;
 function HorizontalAutocompleteOption(arg0) {
   let sharedValue;
   ({ children, onPress } = arg0);
   const tmp = closure_13();
-  sharedValue = sharedValue(4561).useSharedValue(0);
+  sharedValue = sharedValue(4563).useSharedValue(0);
   useMountEffectDefault(() => {
     const result = sharedValue.set(timing.withTiming(1));
   });
-  const obj = sharedValue(4561);
+  const obj = sharedValue(4563);
   const fn = function c() {
     return { opacity: sharedValue.get() };
   };
@@ -40,7 +40,7 @@ function HorizontalAutocompleteOption(arg0) {
   fn.__workletHash = 14159604656069;
   fn.__initData = __initData;
   const obj3 = { onPress, children: null };
-  const animatedStyle = sharedValue(4561).useAnimatedStyle(fn);
+  const animatedStyle = sharedValue(4563).useAnimatedStyle(fn);
   const obj4 = { style: null, children };
   const items = [tmp.horizontalAutocompleteOption, animatedStyle];
   obj4.style = items;
@@ -106,8 +106,8 @@ export default {
     const stateFromStores = initialize.useStateFromStores(items, () => GuildRoleStore.getRole(require, importDefault));
     let roleIconData = null;
     if (null != stateFromStores) {
-      roleIconData = tmp2(7520).getRoleIconData(stateFromStores, 30);
-      const tmp2Result = tmp2(7520);
+      roleIconData = tmp2(6603).getRoleIconData(stateFromStores, 30);
+      const tmp2Result = tmp2(6603);
     }
     const obj2 = { onPress: onPress.onPress, children: null };
     let tmp8 = null;
@@ -138,10 +138,10 @@ export default {
     channel(504);
     [][0] = channel;
     if (channel.type === constants.GUILD_CATEGORY) {
-      let channelIconWithGuild = _modDef8483;
+      let channelIconWithGuild = _modDef7573;
     } else {
-      channelIconWithGuild = tmp2(5327).getChannelIconWithGuild(channel, tmp5);
-      const tmp2Result = tmp2(5327);
+      channelIconWithGuild = tmp2(5328).getChannelIconWithGuild(channel, tmp5);
+      const tmp2Result = tmp2(5328);
     }
     const tmp = closure_13();
     const tmp8 = closure_11(channel(1177).Icon, { source: channelIconWithGuild });

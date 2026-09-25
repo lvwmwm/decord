@@ -1,15 +1,15 @@
-// Module ID: 17052
-// Function ID: 17053
+// Module ID: 16242
+// Function ID: 16243
 // Name: VibegrationsChangelogSheet
-// Dependencies: [19, 17, 21, 4829, 576, 1612, 17051, 7530, 7482, 1115, 3714, 6957, 4825, 4507, 4416, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 1612, 16241, 6613, 6565, 1115, 3714, 6040, 4825, 4509, 4418, 2]
 // Exports: default
 
-// Module 17052 (VibegrationsChangelogSheet)
+// Module 16242 (VibegrationsChangelogSheet)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import _modDef3714 from "module_3714" /* 3714 */;
-import _modDef4416 from "module_4416" /* 4416 */;
-import DateUtils from "DateUtils" /* 4507 */;
+import _modDef4418 from "module_4418" /* 4418 */;
+import DateUtils from "DateUtils" /* 4509 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import noop from "module_19" /* 19 */;
 
@@ -45,7 +45,7 @@ export default function VibegrationsChangelogSheet() {
   obj4.scrollIndicatorInsets = { bottom };
   obj4.children = result.map((children) => {
     const obj = { style: entry.entry, children: null };
-    const items = [DateUtils.dateFormat(_modDef4416(children.date, "YYYY-MM-DD"), "LL"), ];
+    const items = [DateUtils.dateFormat(_modDef4418(children.date, "YYYY-MM-DD"), "LL"), ];
     const tmp2 = View;
     let combined = null;
     if (obj3.isVibegrationsChangelogEntryExclusive(children)) {

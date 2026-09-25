@@ -1,13 +1,13 @@
-// Module ID: 14255
-// Function ID: 14256
+// Module ID: 13416
+// Function ID: 13417
 // Name: GuildSettingsPickerBottomSheet
-// Dependencies: [19, 17, 21, 4829, 14256, 7483, 7482, 4825, 1177, 14260, 4796, 5273, 38, 9939, 2]
+// Dependencies: [19, 17, 21, 4829, 13417, 6566, 6565, 4825, 1177, 13421, 4796, 5274, 38, 9037, 2]
 
-// Module 14255 (GuildSettingsPickerBottomSheet)
+// Module 13416 (GuildSettingsPickerBottomSheet)
 import _modDef38 from "module_38" /* 38 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9939 */;
-import GuildPickerDefault from "GuildPicker" /* 14260 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9037 */;
+import GuildPickerDefault from "GuildPicker" /* 13421 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

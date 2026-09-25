@@ -1,15 +1,15 @@
-// Module ID: 9639
-// Function ID: 9640
+// Module ID: 8737
+// Function ID: 8738
 // Name: OAuth2AuthorizeContent
-// Dependencies: [32, 19, 17, 21, 4829, 576, 1478, 1612, 5883, 9062, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 1478, 1612, 5885, 8156, 2]
 // Exports: default
 
-// Module 9639 (OAuth2AuthorizeContent)
+// Module 8737 (OAuth2AuthorizeContent)
 import nativeDefault from "native" /* 576 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 5883 */;
-import ObscuredSurfaceDefault from "ObscuredSurface" /* 9062 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 5885 */;
+import ObscuredSurfaceDefault from "ObscuredSurface" /* 8156 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

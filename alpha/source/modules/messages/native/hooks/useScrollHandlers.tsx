@@ -1,21 +1,21 @@
-// Module ID: 11879
-// Function ID: 11880
+// Module ID: 11022
+// Function ID: 11023
 // Name: useScrollHandlers
-// Dependencies: [19, 9737, 3, 5903, 11880, 5258, 11341, 1248, 11623, 11625, 5752, 8239, 2]
+// Dependencies: [19, 8835, 3, 5905, 11023, 5259, 10439, 1248, 10828, 10830, 5754, 7328, 2]
 // Exports: default
 
-// Module 11879 (useScrollHandlers)
+// Module 11022 (useScrollHandlers)
 import LoggerDefault from "Logger" /* 3 */;
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5258 */;
-import useInitialValueDefault from "useInitialValue" /* 5903 */;
-import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 11341 */;
-import NativeChatUtilsDefault from "NativeChatUtils" /* 11623 */;
-import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 11625 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5259 */;
+import useInitialValueDefault from "useInitialValue" /* 5905 */;
+import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 10439 */;
+import NativeChatUtilsDefault from "NativeChatUtils" /* 10828 */;
+import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 10830 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const useChatBottomManagerUIStore = fn(9737);
+const useChatBottomManagerUIStore = fn(8835);
 ({ updateIsAtBottom: closure_4, updateShouldShowJumpToPresentButton: hasOwnProperty } = useChatBottomManagerUIStore);
 let closure_6 = new LoggerDefault("useScrollHandlers");
 const size = fn(2);
@@ -217,7 +217,7 @@ export default function useScrollHandlers(arg0) {
           logger.log("STAFF-ACK-LOG: Ignoring outdated scroll event.", closure_1_11, changesetUpdateId, changesetIdForChat, timeStamp);
         }
       } else {
-        const obj2 = { firstVisibleMessageRowIndex: firstVisibleMessageIndex, lastVisibleMessageRowIndex: lastVisibleMessageIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, source: tmp(5752).QuestsVisibleMessagesChangedSource.SCROLL };
+        const obj2 = { firstVisibleMessageRowIndex: firstVisibleMessageIndex, lastVisibleMessageRowIndex: lastVisibleMessageIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, source: tmp(5754).QuestsVisibleMessagesChangedSource.SCROLL };
         closure_1_7(obj2);
         let current = ref.current;
         if (current == null) {
@@ -249,8 +249,8 @@ export default function useScrollHandlers(arg0) {
         obj5.lastVisibleMessageRowIndex = lastVisibleMessageIndex;
         const handleScrollPositionResult1 = closure_18.handleScrollPosition(obj5);
         if (null != handleScrollPositionResult1) {
-          const result = tmp(8239).clearConversationSelection(closure_1_11, handleScrollPositionResult1);
-          const tmpResult = tmp(8239);
+          const result = tmp(7328).clearConversationSelection(closure_1_11, handleScrollPositionResult1);
+          const tmpResult = tmp(7328);
         }
       }
     }

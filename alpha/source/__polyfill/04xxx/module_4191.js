@@ -1,11 +1,11 @@
 // Module ID: 4191
 // Function ID: 4192
-// Dependencies: [3913, 3914]
+// Dependencies: [3915, 3916]
 // Exports: default
 
 // Module 4191
-import _typeof_mod from "module_3913" /* 3913 */;
-import requiredArgs_mod from "requiredArgs" /* 3914 */;
+import _typeof_mod from "module_3915" /* 3915 */;
+import requiredArgs_mod from "requiredArgs" /* 3916 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,8 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function getSeconds(arg0) {
+export default function getMonth(arg0) {
   requiredArgs.default(1, arguments);
-  return _typeof.default(arg0).getSeconds();
+  return _typeof.default(arg0).getMonth();
 };
 export default exports.default;

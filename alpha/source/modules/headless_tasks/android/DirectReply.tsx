@@ -1,9 +1,9 @@
-// Module ID: 18497
-// Function ID: 18498
+// Module ID: 17729
+// Function ID: 17730
 // Name: DirectReply
-// Dependencies: [5, 17, 4822, 3, 18491, 7786, 2]
+// Dependencies: [5, 17, 4822, 3, 17723, 6871, 2]
 
-// Module 18497 (DirectReply)
+// Module 17729 (DirectReply)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 

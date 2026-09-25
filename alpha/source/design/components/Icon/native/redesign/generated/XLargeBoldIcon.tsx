@@ -1,13 +1,13 @@
-// Module ID: 10075
-// Function ID: 10076
+// Module ID: 9173
+// Function ID: 9174
 // Name: XLargeBoldIcon
-// Dependencies: [19, 21, 576, 4525, 10076, 2]
+// Dependencies: [19, 21, 576, 4527, 9174, 2]
 // Exports: XLargeBoldIcon
 
-// Module 10075 (XLargeBoldIcon)
+// Module 9173 (XLargeBoldIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
-import _mod10076 from "module_10076" /* 10076 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
+import _mod9174 from "module_9174" /* 9174 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const XLargeBoldIcon = function XLargeBoldIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10076, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9174, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

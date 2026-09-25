@@ -1,10 +1,10 @@
-// Module ID: 17089
-// Function ID: 17090
+// Module ID: 16280
+// Function ID: 16281
 // Name: VibegrationsRestorePanelOp
 // Dependencies: [1115, 3714, 2]
 // Exports: restoreEnvironmentLabel, restorePanelEnvironments, restorePanelStatusForEnvironment, restorePointOriginLabel
 
-// Module 17089 (VibegrationsRestorePanelOp)
+// Module 16280 (VibegrationsRestorePanelOp)
 import util from "util" /* 1115 */;
 import _modDef3714 from "module_3714" /* 3714 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 5363
-// Function ID: 5364
+// Module ID: 5364
+// Function ID: 5365
 // Name: VibegrationsTypes
 // Dependencies: [2]
 // Exports: cacheHitRate, formatVibegrationsAttachmentLimit, isProjectPublic, isProjectShared, isVibegrationsAttachmentWithinLimit, projectSupportsCollaboratorRoles, projectSupportsVisibility, promptRunes, runeCount, runesFromUsd, sumTokenUsage, usageOrEmpty, vibegrationsAttachmentLimit
 
-// Module 5363 (VibegrationsTypes)
+// Module 5364 (VibegrationsTypes)
 import size from "module_2" /* 2 */;
 
 const frozen = Object.freeze({ PUBLIC: 1, SHAREABLE: 2 });
@@ -70,14 +70,15 @@ export const VIBEGRATIONS_VIEWABLE_IMAGE_TYPES = set;
 export const VIBEGRATIONS_MAX_IMAGE_ATTACHMENT_BYTES = 5242880;
 export const VIBEGRATIONS_MAX_ATTACHMENT_BYTES = 52428800;
 export const VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE = 10;
+export const VIBEGRATIONS_STAGED_ATTACHMENT_TTL_MS = 3600000;
 export const vibegrationsAttachmentLimit = function vibegrationsAttachmentLimit(contentType) {
   return set.has(contentType) ? c2 : c3;
 };
 export const isVibegrationsAttachmentWithinLimit = function isVibegrationsAttachmentWithinLimit(size, contentType) {
   return size <= (set.has(contentType) ? c2 : c3);
 };
-export const formatVibegrationsAttachmentLimit = function formatVibegrationsAttachmentLimit(tmpResult2) {
-  return "" + Math.round(tmpResult2 / 1048576) + " MB";
+export const formatVibegrationsAttachmentLimit = function formatVibegrationsAttachmentLimit(tmp6Result2) {
+  return "" + Math.round(tmp6Result2 / 1048576) + " MB";
 };
 export const VIBEGRATIONS_MODEL_TIERS = ["simple", "balanced", "complex"];
 export const VIBEGRATIONS_FALLBACK_MODEL_CHOICES = obj;

@@ -1,13 +1,13 @@
-// Module ID: 4515
-// Function ID: 4516
+// Module ID: 4517
+// Function ID: 4518
 // Name: handleURL
-// Dependencies: [5, 17, 4516, 1074, 3, 4517, 4519, 4520, 4521, 1929, 4522, 1115, 4793, 1364, 4796, 1368, 4809, 14217, 2]
+// Dependencies: [5, 17, 4518, 1074, 3, 4519, 4521, 4522, 4523, 1929, 4524, 1115, 4793, 1364, 4796, 1368, 4809, 13378, 2]
 // Exports: default
 
-// Module 4515 (handleURL)
+// Module 4517 (handleURL)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 4516 */;
+import ActionSheetStore from "ActionSheetStore" /* 4518 */;
 
 const require = fn;
 function sanitizeURLPart(str) {
@@ -96,7 +96,7 @@ let closure_9 = async function _handleURL(arg0, value) {
                 const result = closure_0(4793).browserManagerOpenUrl(closure_1_0, tmp5.IN_APP);
                 result.catch(() => {
                   const intl = closure_2_0(1115).intl;
-                  closure_2_0(4522).presentFailedToast("" + intl.string(closure_2_0(1115).t.HryVrx) + " " + closure_1_0);
+                  closure_2_0(4524).presentFailedToast("" + intl.string(closure_2_0(1115).t.HryVrx) + " " + closure_1_0);
                 });
                 const obj7 = closure_0(4793);
                 let isIOSResult = closure_0(1364).isIOS();
@@ -112,7 +112,7 @@ let closure_9 = async function _handleURL(arg0, value) {
                 const result1 = closure_0(4793).browserManagerOpenUrl(closure_1_0, tmp5.CHROME);
                 result1.catch(() => {
                   const intl = closure_2_0(1115).intl;
-                  closure_2_0(4522).presentFailedToast("" + intl.string(closure_2_0(1115).t.HryVrx) + " " + closure_1_0);
+                  closure_2_0(4524).presentFailedToast("" + intl.string(closure_2_0(1115).t.HryVrx) + " " + closure_1_0);
                 });
                 const obj6 = closure_0(4793);
               } else {
@@ -122,8 +122,8 @@ let closure_9 = async function _handleURL(arg0, value) {
               }
             } else {
               let intl = closure_0(1115).intl;
-              closure_0(4522).presentFailedToast(intl.string(closure_0(1115).t.XiqzAp));
-              const obj2 = closure_0(4522);
+              closure_0(4524).presentFailedToast(intl.string(closure_0(1115).t.XiqzAp));
+              const obj2 = closure_0(4524);
             }
           };
           c7 = 1;
@@ -167,8 +167,8 @@ let closure_9 = async function _handleURL(arg0, value) {
                                   closure_0 = arg0;
                                   return new Promise((arg0) => {
                                     closure_0 = arg0;
-                                    const result = closure_2_1(4517).tryOpenUrlAsUniversalLink(closure_0);
-                                    const obj = closure_2_1(4517);
+                                    const result = closure_2_1(4519).tryOpenUrlAsUniversalLink(closure_0);
+                                    const obj = closure_2_1(4519);
                                     result.then(() => {
                                       logger.info("Universal link opened successfully.");
                                       closure_0(true);
@@ -208,7 +208,7 @@ let closure_9 = async function _handleURL(arg0, value) {
                   value: (function tryHandleCustomScheme(arg0) {
                                   let arr = arg0;
                                   closure_0 = arg0;
-                                  const iter = closure_0(4519).LINKING_SCHEMAS_VALUES[Symbol.iterator]();
+                                  const iter = closure_0(4521).LINKING_SCHEMAS_VALUES[Symbol.iterator]();
                                   while (iter !== undefined) {
                                     ({ regex, protocol } = nextResult);
                                     let match = regex.exec(arr);
@@ -232,9 +232,9 @@ let closure_9 = async function _handleURL(arg0, value) {
                                       logger.info("tryHandleCustomScheme", arr);
                                       let promise = new Promise((arg0) => {
                                         closure_0 = arg0;
-                                        const obj = closure_2_1(4517);
-                                        const tryOpenSchemeResult = closure_2_1(4517).tryOpenScheme(closure_0);
-                                        closure_2_1(4517).tryOpenScheme(closure_0).then(() => {
+                                        const obj = closure_2_1(4519);
+                                        const tryOpenSchemeResult = closure_2_1(4519).tryOpenScheme(closure_0);
+                                        closure_2_1(4519).tryOpenScheme(closure_0).then(() => {
                                           logger.info("Custom scheme opened successfully.");
                                           closure_0(true);
                                         }).catch(() => {
@@ -297,7 +297,7 @@ let closure_9 = async function _handleURL(arg0, value) {
                                     }
                                     return num;
                                   }
-                                  const iter = closure_0(4521).LINKING_WHITELIST_VALUES[Symbol.iterator]();
+                                  const iter = closure_0(4523).LINKING_WHITELIST_VALUES[Symbol.iterator]();
                                   const nextResult = iter.next();
                                   while (iter !== undefined) {
                                     let regex = nextResult.regex;

@@ -1,13 +1,13 @@
-// Module ID: 16053
-// Function ID: 16054
+// Module ID: 15227
+// Function ID: 15228
 // Name: useCheckpointMusic
-// Dependencies: [19, 17, 16046, 504, 10249, 16054, 2]
+// Dependencies: [19, 17, 15220, 504, 9346, 15228, 2]
 // Exports: default
 
-// Module 16053 (useCheckpointMusic)
+// Module 15227 (useCheckpointMusic)
 import _mod17 from "module_17" /* 17 */;
 import noop from "module_19" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 16046 */;
+import CheckpointStore from "CheckpointStore" /* 15220 */;
 import size from "module_2" /* 2 */;
 
 ({ useEffect: c3, useRef: closure_4 } = noop);
@@ -20,11 +20,11 @@ export default function useCheckpointMusic() {
   closure_4(null);
   closure_3(() => {
     let num = 1;
-    const obj = stateFromStores(10249);
+    const obj = stateFromStores(9346);
     if (CheckpointStore.isMuted) {
       num = 0;
     }
-    const sound = obj.createSound(ref(16054), "vibing_wumpus", num);
+    const sound = obj.createSound(ref(15228), "vibing_wumpus", num);
     ref.current = sound;
     sound.loop();
     ref = AppState.addEventListener("change", (event) => {

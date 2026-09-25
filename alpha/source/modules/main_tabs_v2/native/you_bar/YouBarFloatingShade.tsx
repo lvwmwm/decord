@@ -1,24 +1,24 @@
-// Module ID: 16822
-// Function ID: 16823
+// Module ID: 16008
+// Function ID: 16009
 // Name: YouBarFloatingShade
-// Dependencies: [19, 17, 4648, 15434, 16708, 21, 4829, 504, 4526, 576, 15436, 1478, 4689, 16446, 4647, 1092, 5285, 2]
+// Dependencies: [19, 17, 4650, 14602, 15892, 21, 4829, 504, 4528, 576, 14604, 1478, 4691, 15626, 4649, 1092, 5286, 2]
 
-// Module 16822 (YouBarFloatingShade)
+// Module 16008 (YouBarFloatingShade)
 import initialize from "initialize" /* 504 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
-import useToken from "useToken" /* 4526 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4647 */;
-import useChatLayoutDefault from "useChatLayout" /* 4689 */;
-import LinearGradientDefault from "LinearGradient" /* 5285 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 15436 */;
+import useToken from "useToken" /* 4528 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4649 */;
+import useChatLayoutDefault from "useChatLayout" /* 4691 */;
+import LinearGradientDefault from "LinearGradient" /* 5286 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 14604 */;
 import noop from "module_19" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4648 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4650 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_5 = fn(15434).YOU_BAR_GRADIENT_EXTRA_HEIGHT;
-const GUILD_LIST_WIDTH = fn(16708).GUILD_LIST_WIDTH;
+let closure_5 = fn(14602).YOU_BAR_GRADIENT_EXTRA_HEIGHT;
+const GUILD_LIST_WIDTH = fn(15892).GUILD_LIST_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
 const createStyles = fn(4829);
@@ -34,7 +34,7 @@ export default noop.memo(function YouBarFloatingShade() {
   if (useChatLayoutDefault().isChatBesideChannelList) {
     width = tmp7 + GUILD_LIST_WIDTH;
   }
-  const gradientValue = client_themes_ClientThemesUtils.useGradientValue(tmp2(4647).GradientPercentage.END);
+  const gradientValue = client_themes_ClientThemesUtils.useGradientValue(tmp2(4649).GradientPercentage.END);
   const tmp2Result = client_themes_ClientThemesUtils;
   const token = useToken.useToken(tmp6(576).colors.BACKGROUND_BASE_LOWER);
   const tmp2Result6 = useToken;

@@ -1,18 +1,18 @@
-// Module ID: 16972
-// Function ID: 16973
+// Module ID: 16162
+// Function ID: 16163
 // Name: GuildRoleSubscriptionPurchasePage
-// Dependencies: [19, 17, 1182, 2044, 2066, 1074, 21, 4829, 576, 4825, 1115, 1177, 10288, 7312, 15559, 15561, 15562, 563, 16973, 4982, 16975, 16976, 16977, 5327, 5892, 5889, 16978, 10692, 16980, 16981, 4520, 16982, 2]
+// Dependencies: [19, 17, 1182, 2044, 2066, 1074, 21, 4829, 576, 4825, 1115, 1177, 9385, 6395, 14729, 14731, 14732, 563, 16163, 4982, 16165, 16166, 16167, 5328, 5894, 5891, 16168, 9796, 16170, 16171, 4522, 16172, 2]
 // Exports: default
 
-// Module 16972 (GuildRoleSubscriptionPurchasePage)
+// Module 16162 (GuildRoleSubscriptionPurchasePage)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import LinkingDefault from "Linking" /* 4520 */;
+import LinkingDefault from "Linking" /* 4522 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5327 */;
-import _modDef10288 from "module_10288" /* 10288 */;
-import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 16982 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5328 */;
+import _modDef9385 from "module_9385" /* 9385 */;
+import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 16172 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
@@ -44,7 +44,7 @@ function SocialBadge(onPress) {
   obj.onPress = onPress;
   const items = [closure_1_14(native.Icon, { source: iconSource, style: tmp.socialBadgeIcon, resizeMode: "contain", disableColor: true }), closure_1_14(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: text }), ];
   if (tmp5Result) {
-    const obj3 = { source: _modDef10288, style: tmp.socialBadgeArrow };
+    const obj3 = { source: _modDef9385, style: tmp.socialBadgeArrow };
     tmp5Result = closure_1_14(native.Icon, obj3);
   }
   items[2] = tmp5Result;

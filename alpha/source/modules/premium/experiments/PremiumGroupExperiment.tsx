@@ -1,10 +1,10 @@
-// Module ID: 9230
-// Function ID: 9231
+// Module ID: 8328
+// Function ID: 8329
 // Name: PremiumGroupExperiment
 // Dependencies: [1434, 2]
 // Exports: default
 
-// Module 9230 (PremiumGroupExperiment)
+// Module 8328 (PremiumGroupExperiment)
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

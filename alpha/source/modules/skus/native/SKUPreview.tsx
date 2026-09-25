@@ -1,23 +1,23 @@
-// Module ID: 9132
-// Function ID: 9133
+// Module ID: 8226
+// Function ID: 8227
 // Name: SKUPreview
-// Dependencies: [19, 17, 7876, 1074, 21, 4829, 9133, 576, 8519, 9158, 1973, 9171, 9160, 9183, 9185, 9186, 4526, 4535, 1370, 2]
+// Dependencies: [19, 17, 6961, 1074, 21, 4829, 8227, 576, 7609, 8252, 1973, 8265, 8254, 8277, 8279, 8280, 4528, 4537, 1370, 2]
 // Exports: default
 
-// Module 9132 (SKUPreview)
+// Module 8226 (SKUPreview)
 import nativeDefault from "native" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import useToken from "useToken" /* 4526 */;
-import native from "native" /* 4535 */;
-import useShopProductItems from "useShopProductItems" /* 8519 */;
-import WishlistItemCardBase from "WishlistItemCardBase" /* 9133 */;
-import BundleSampleV2Default from "BundleSampleV2" /* 9158 */;
-import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9160 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9171 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9183 */;
-import NameplateCardPreviewDefault from "NameplateCardPreview" /* 9185 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9186 */;
+import useToken from "useToken" /* 4528 */;
+import native from "native" /* 4537 */;
+import useShopProductItems from "useShopProductItems" /* 7609 */;
+import WishlistItemCardBase from "WishlistItemCardBase" /* 8227 */;
+import BundleSampleV2Default from "BundleSampleV2" /* 8252 */;
+import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 8254 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8265 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 8277 */;
+import NameplateCardPreviewDefault from "NameplateCardPreview" /* 8279 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8280 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -133,7 +133,7 @@ function CollectiblesSKUPreview(sku) {
   sku = sku.sku;
   let DEFAULT_ITEM_SIZE = sku.size;
   if (DEFAULT_ITEM_SIZE === undefined) {
-    DEFAULT_ITEM_SIZE = sku(9133).DEFAULT_ITEM_SIZE;
+    DEFAULT_ITEM_SIZE = sku(8227).DEFAULT_ITEM_SIZE;
   }
   const items = [sku];
   const memo = noop.useMemo(() => closure_5(sku), items);
@@ -189,7 +189,7 @@ class PremiumSKUPreview {
   }
 }
 const View = fn(17).View;
-let closure_5 = fn(7876).transformSKUToCollectiblesItem;
+let closure_5 = fn(6961).transformSKUToCollectiblesItem;
 const SKUProductLines = fn(1074).SKUProductLines;
 const jsx = fn(21).jsx;
 const createStyles = fn(4829);
@@ -208,7 +208,7 @@ const React6 = createStyles.createStyles((width, height) => {
   obj.premiumRiveContainer = { width, height };
   return obj;
 });
-let size = { width: fn(9133).DEFAULT_ITEM_SIZE, height: fn(9133).DEFAULT_ITEM_SIZE };
+let size = { width: fn(8227).DEFAULT_ITEM_SIZE, height: fn(8227).DEFAULT_ITEM_SIZE };
 size = fn(2);
 const result = size.fileFinishedImporting("modules/skus/native/SKUPreview.tsx");
 

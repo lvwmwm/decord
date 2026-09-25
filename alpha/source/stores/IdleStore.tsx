@@ -1,17 +1,17 @@
-// Module ID: 5715
-// Function ID: 5716
+// Module ID: 5717
+// Function ID: 5718
 // Name: IdleStore
-// Dependencies: [502, 1074, 4854, 1364, 2020, 1091, 573, 4445, 5716, 551, 504, 2]
+// Dependencies: [502, 1074, 4854, 1364, 2020, 1091, 573, 4447, 5718, 551, 504, 2]
 
-// Module 5715 (IdleStore)
+// Module 5717 (IdleStore)
 import initializeDefault from "initialize" /* 504 */;
 import debounceDefault from "debounce" /* 551 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import DiscordNativeDefault from "DiscordNative" /* 4445 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5716 */;
+import DiscordNativeDefault from "DiscordNative" /* 4447 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5718 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
@@ -93,7 +93,7 @@ if (fn(1364).isPlatformEmbedded) {
         }
       }
       if (null != getSystemIdleTimeMs) {
-        const powerMonitor2 = tmp(4445).powerMonitor;
+        const powerMonitor2 = tmp(4447).powerMonitor;
         const systemIdleTimeMs = powerMonitor2.getSystemIdleTimeMs();
         if (systemIdleTimeMs instanceof Promise) {
           systemIdleTimeMs.then(function handleIdleTime(result) {

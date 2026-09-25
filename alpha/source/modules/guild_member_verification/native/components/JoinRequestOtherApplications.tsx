@@ -1,14 +1,14 @@
-// Module ID: 17018
-// Function ID: 17019
+// Module ID: 16208
+// Function ID: 16209
 // Name: JoinRequestOtherApplications
-// Dependencies: [19, 17, 21, 4829, 576, 4653, 4788, 6946, 17019, 4825, 1115, 17015, 4507, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4655, 4788, 6029, 16209, 4825, 1115, 16205, 4509, 2]
 
-// Module 17018 (JoinRequestOtherApplications)
+// Module 16208 (JoinRequestOtherApplications)
 import nativeDefault from "native" /* 576 */;
-import DateUtils from "DateUtils" /* 4507 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4653 */;
+import DateUtils from "DateUtils" /* 4509 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4655 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 17015 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16205 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -19,9 +19,9 @@ function ApplicationStatusIcon(status) {
   if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED === status) {
     const obj2 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
     return timestampProducer(tmp(4788).CircleCheckIcon, obj2);
-  } else if (tmp(4653).GuildJoinRequestApplicationStatuses.REJECTED === status) {
+  } else if (tmp(4655).GuildJoinRequestApplicationStatuses.REJECTED === status) {
     const obj = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-    return timestampProducer(tmp(6946).CircleXIcon, obj);
+    return timestampProducer(tmp(6029).CircleXIcon, obj);
   } else {
     return null;
   }

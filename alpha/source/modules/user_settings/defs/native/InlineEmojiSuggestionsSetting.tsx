@@ -1,14 +1,14 @@
-// Module ID: 15825
-// Function ID: 15826
+// Module ID: 14995
+// Function ID: 14996
 // Name: InlineEmojiSuggestionsSetting
-// Dependencies: [8323, 11811, 1115, 2020, 12305, 2]
+// Dependencies: [7412, 10993, 1115, 2020, 11431, 2]
 
-// Module 15825 (InlineEmojiSuggestionsSetting)
+// Module 14995 (InlineEmojiSuggestionsSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import SettingsConstants from "SettingsConstants" /* 8323 */;
-import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 12305 */;
-import SettingBuilders from "SettingBuilders" /* 11811 */;
+import SettingsConstants from "SettingsConstants" /* 7412 */;
+import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 11431 */;
+import SettingBuilders from "SettingBuilders" /* 10993 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({

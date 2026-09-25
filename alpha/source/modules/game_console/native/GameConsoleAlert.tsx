@@ -1,10 +1,10 @@
-// Module ID: 10140
-// Function ID: 10141
+// Module ID: 9237
+// Function ID: 9238
 // Name: GameConsoleAlert
 // Dependencies: [19, 17, 4846, 21, 4829, 504, 4825, 2]
 // Exports: SelfDismissibleAlertBody
 
-// Module 10140 (GameConsoleAlert)
+// Module 9237 (GameConsoleAlert)
 import noop from "module_19" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 4846 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 12712
-// Function ID: 12713
+// Module ID: 11838
+// Function ID: 11839
 // Name: SearchPeopleTabStore
-// Dependencies: [2044, 5814, 12, 12713, 11212, 1115, 504, 573, 2]
+// Dependencies: [2044, 5816, 12, 11839, 10310, 1115, 504, 573, 2]
 
-// Module 12712 (SearchPeopleTabStore)
+// Module 11838 (SearchPeopleTabStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
-import useUserListData from "useUserListData" /* 11212 */;
-import NewMessageUserList from "NewMessageUserList" /* 12713 */;
+import useUserListData from "useUserListData" /* 10310 */;
+import NewMessageUserList from "NewMessageUserList" /* 11839 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import FrecencyStore from "FrecencyStore" /* 5814 */;
+import FrecencyStore from "FrecencyStore" /* 5816 */;
 
 require = fn;
 let closure_5 = [];
@@ -52,7 +52,7 @@ prototype["search"] = function search(str) {
       let items = [];
     } else {
       const values = _modDef12.chain(ChannelStore.getMutablePrivateChannels()).values();
-      const found = values.filter(trimmed1(12713).filterGroupDMs);
+      const found = values.filter(trimmed1(11839).filterGroupDMs);
       const mapped = found.map((id) => {
         const items = [id, NewMessageUserList.matchGroupDM(id, trimmed1), FrecencyStore.getScoreWithoutFetchingLatest(id.id)];
         return items;

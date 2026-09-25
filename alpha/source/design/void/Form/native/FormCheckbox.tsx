@@ -1,10 +1,10 @@
-// Module ID: 7479
-// Function ID: 7480
+// Module ID: 6562
+// Function ID: 6563
 // Name: Form/FormCheckbox
 // Dependencies: [19, 21, 4829, 1177, 2]
 // Exports: default
 
-// Module 7479 (Form/FormCheckbox)
+// Module 6562 (Form/FormCheckbox)
 import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;
 

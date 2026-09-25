@@ -1,13 +1,13 @@
-// Module ID: 12622
-// Function ID: 12623
+// Module ID: 11748
+// Function ID: 11749
 // Name: VoicePanelControlsUtils
-// Dependencies: [12615, 12618, 12613, 2]
+// Dependencies: [11741, 11744, 11739, 2]
 // Exports: getControlsDefaultWidth, getControlsDrawerOpenWidth
 
-// Module 12622 (VoicePanelControlsUtils)
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12613 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 12615 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 12618 */;
+// Module 11748 (VoicePanelControlsUtils)
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11739 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11741 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11744 */;
 import size from "module_2" /* 2 */;
 
 const VOICE_PANEL_DRAWER_MAX_WIDTH = VoicePanelConstants.VOICE_PANEL_DRAWER_MAX_WIDTH;

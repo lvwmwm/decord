@@ -1,12 +1,12 @@
 // Module ID: 1181
 // Function ID: 1182
 // Name: FormConstants
-// Dependencies: [1182, 1364, 576, 4808, 4680, 2]
+// Dependencies: [1182, 1364, 576, 4808, 4682, 2]
 // Exports: getThemedRippleConfig
 
 // Module 1181 (FormConstants)
 import nativeDefault from "native" /* 576 */;
-import shared from "shared" /* 4680 */;
+import shared from "shared" /* 4682 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
 require = fn;

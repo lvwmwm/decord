@@ -1,17 +1,17 @@
-// Module ID: 12367
-// Function ID: 12368
+// Module ID: 11493
+// Function ID: 11494
 // Name: ForumPostListFooter
-// Dependencies: [19, 17, 1074, 21, 4829, 576, 12308, 7602, 12360, 12368, 12361, 11763, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 576, 11434, 6685, 11486, 11494, 11487, 10945, 2]
 // Exports: default
 
-// Module 12367 (ForumPostListFooter)
+// Module 11493 (ForumPostListFooter)
 import nativeDefault from "native" /* 576 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7602 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 12308 */;
-import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 12360 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 6685 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 11434 */;
+import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 11486 */;
 import noop from "module_19" /* 19 */;
 
-const ForumPostReactions = tmp2(11763);
+const ForumPostReactions = tmp2(10945);
 require = fn;
 const View = fn(17).View;
 const AnalyticsObjects = fn(1074).AnalyticsObjects;
@@ -35,7 +35,7 @@ export default function ForumPostListFooter(parentChannel) {
   const items = [hasOwnProperty(ForumPostMessageCountDefault, { thread, hasUnreads }), , , ];
   if (isGameInvitesPost) {
     const obj4 = { channel: thread };
-    isGameInvitesPost = tmp8(tmp9(12368), obj4);
+    isGameInvitesPost = tmp8(tmp9(11494), obj4);
   }
   items[1] = isGameInvitesPost;
   if (tmp6Result) {
@@ -43,7 +43,7 @@ export default function ForumPostListFooter(parentChannel) {
     const obj6 = { style: tmp.dot };
     const items1 = [tmp8(tmp7, obj6), ];
     const obj7 = { thread, typingUserIds, hasUnreads };
-    items1[1] = tmp8(tmp9(12361), obj7);
+    items1[1] = tmp8(tmp9(11487), obj7);
     obj5.children = items1;
     tmp6Result = tmp6(timestampProducer, obj5);
   }

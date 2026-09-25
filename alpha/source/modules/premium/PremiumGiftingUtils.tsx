@@ -1,10 +1,10 @@
-// Module ID: 8430
-// Function ID: 8431
+// Module ID: 7519
+// Function ID: 7520
 // Name: PremiumGiftingUtils
-// Dependencies: [5, 2044, 4822, 4842, 38, 5081, 7786, 8005, 2]
+// Dependencies: [5, 2044, 4822, 4842, 38, 5082, 6871, 7090, 2]
 // Exports: sendGiftMessage, unhandledGiftIntent
 
-// Module 8430 (PremiumGiftingUtils)
+// Module 7519 (PremiumGiftingUtils)
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4842 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2044 */;

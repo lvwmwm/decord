@@ -1,12 +1,12 @@
-// Module ID: 9189
-// Function ID: 9190
+// Module ID: 8283
+// Function ID: 8284
 // Name: CollectiblesShopVariantsUIStore
-// Dependencies: [1243, 4447, 9125, 7883, 2]
+// Dependencies: [1243, 4449, 8219, 6968, 2]
 // Exports: setSelectedVariantIndex, useSelectedVariantIndex
 
-// Module 9189 (CollectiblesShopVariantsUIStore)
-import _mod4447 from "module_4447" /* 4447 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7883 */;
+// Module 8283 (CollectiblesShopVariantsUIStore)
+import _mod4449 from "module_4449" /* 4449 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6968 */;
 import identity from "module_1243" /* 1243 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 const state = identity.createWithEqualityFn(() => {
   const obj = { selectionStates: new Map() };
   return obj;
-}, _mod4447.shallow);
+}, _mod4449.shallow);
 const result = size.fileFinishedImporting("modules/collectibles/CollectiblesShopVariantsUIStore.tsx");
 
 export const useSelectedVariantIndex = function useSelectedVariantIndex(product) {

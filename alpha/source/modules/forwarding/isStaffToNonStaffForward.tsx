@@ -1,10 +1,10 @@
-// Module ID: 12025
-// Function ID: 12026
+// Module ID: 11168
+// Function ID: 11169
 // Name: isStaffToNonStaffForward
 // Dependencies: [2044, 2066, 1372, 1074, 2]
 // Exports: default
 
-// Module 12025 (isStaffToNonStaffForward)
+// Module 11168 (isStaffToNonStaffForward)
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildStore from "GuildStore" /* 2066 */;
 import UserStore from "UserStore" /* 1372 */;

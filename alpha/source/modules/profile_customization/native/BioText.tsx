@@ -1,14 +1,14 @@
-// Module ID: 11560
-// Function ID: 11561
+// Module ID: 10765
+// Function ID: 10766
 // Name: BioText
-// Dependencies: [19, 17, 1074, 2097, 21, 4829, 4520, 1241, 4825, 9616, 1364, 2096, 1115, 2]
+// Dependencies: [19, 17, 1074, 2097, 21, 4829, 4522, 1241, 4825, 8714, 1364, 2096, 1115, 2]
 // Exports: default
 
-// Module 11560 (BioText)
+// Module 10765 (BioText)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import LinkingDefault from "Linking" /* 4520 */;
+import LinkingDefault from "Linking" /* 4522 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 9616 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 8714 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

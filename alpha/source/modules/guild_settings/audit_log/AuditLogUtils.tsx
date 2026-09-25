@@ -1,10 +1,10 @@
-// Module ID: 18082
-// Function ID: 18083
+// Module ID: 17310
+// Function ID: 17311
 // Name: AuditLogUtils
-// Dependencies: [5764, 7433, 5016, 2049, 5807, 18081, 2044, 2101, 4474, 1372, 18080, 1074, 2051, 12205, 7434, 2050, 3, 4858, 1115, 8742, 11, 18083, 1086, 1385, 4982, 1978, 4673, 14, 1092, 10169, 18047, 4507, 4416, 2]
+// Dependencies: [5766, 6516, 5016, 2049, 5809, 17309, 2044, 2101, 4476, 1372, 17308, 1074, 2051, 11327, 6517, 2050, 3, 4858, 1115, 7832, 11, 17311, 1086, 1385, 4982, 1978, 4675, 14, 1092, 9266, 17275, 4509, 4418, 2]
 // Exports: checkChangesToRender, findChangeByKey, getChangeStrings, getChangeTitle, getSimpleAuditLogChangeDetails, getSimpleAuditLogTitleContextFromChange, getSimpleAuditLogTitleFromChange, getStringForAddedChannelFlag, getStringForPermission, getStringForRemovedChannelFlag, shouldNotRenderChangeDetail, transformLogs
 
-// Module 18082 (AuditLogUtils)
+// Module 17310 (AuditLogUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import IntegerDefault from "Integer" /* 14 */;
@@ -12,24 +12,24 @@ import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import util from "util" /* 1115 */;
 import FlagUtilsAll from "FlagUtils" /* 1385 */;
-import _modDef4416 from "module_4416" /* 4416 */;
-import DateUtils from "DateUtils" /* 4507 */;
-import UserUtilsDefault from "UserUtils" /* 4673 */;
+import _modDef4418 from "module_4418" /* 4418 */;
+import DateUtils from "DateUtils" /* 4509 */;
+import UserUtilsDefault from "UserUtils" /* 4675 */;
 import TimeUtils from "TimeUtils" /* 4858 */;
 import useChannelName from "useChannelName" /* 4982 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10169 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 18047 */;
-import GuildFeedItemTypes from "GuildFeedItemTypes" /* 18083 */;
-import EmojiStore from "EmojiStore" /* 5764 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7433 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9266 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 17275 */;
+import GuildFeedItemTypes from "GuildFeedItemTypes" /* 17311 */;
+import EmojiStore from "EmojiStore" /* 5766 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6516 */;
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5016 */;
 import StageInstanceStore from "StageInstanceStore" /* 2049 */;
-import StickersStore from "StickersStore" /* 5807 */;
+import StickersStore from "StickersStore" /* 5809 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildRoleStore from "GuildRoleStore" /* 2101 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 18080 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17308 */;
 
 require = fn;
 function getPermissionChanges(oldValue, newValue) {
@@ -258,14 +258,14 @@ function transformAvailableForumTagChange(newValue) {
   }
   return newValue;
 }
-const AuditLogChange = fn(18081).AuditLogChange;
+const AuditLogChange = fn(17309).AuditLogChange;
 const Constants = fn(1074);
 ({ AuditLogActions: closure_15, AuditLogChangeKeys } = Constants);
 const AuditLogTargetTypes = Constants.AuditLogTargetTypes;
 ({ MFALevels: closure_18, VerificationLevels: closure_19, UserNotificationSettings: closure_20, GuildExplicitContentFilterTypes: closure_21, ChannelTypes: closure_22, Permissions: closure_23, NOOP_NULL: closure_24, VideoQualityMode: closure_25, ApplicationCommandPermissionTypes: closure_26, AuditLogSubtargetTypes: closure_27, SystemChannelFlags: closure_28, AuditLogActionTypes: closure_29 } = Constants);
 const ChannelFlags = fn(2051).ChannelFlags;
-const AutomodTriggerType = fn(12205).AutomodTriggerType;
-const GuildOnboardingMode = fn(7434).GuildOnboardingMode;
+const AutomodTriggerType = fn(11327).AutomodTriggerType;
+const GuildOnboardingMode = fn(6517).GuildOnboardingMode;
 const GuildScheduledEventsConstants = fn(2050);
 ({ GuildScheduledEventEntityTypes: closure_33, GuildScheduledEventStatus: closure_34, GuildScheduledEventPrivacyLevel: closure_35 } = GuildScheduledEventsConstants);
 let closure_36 = new LoggerDefault("AuditLogUtils");
@@ -811,7 +811,7 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           __3TkD = __3TkD(1115).t.MWp6H7;
           obj20[AuditLogChangeKeys.TEMPORARY] = (newValue) => newValue.newValue ? __3TkD : _5kDYS3;
           const obj23 = {};
-          obj23[__3TkD(8742).GuildInviteFlags.IS_GUEST_INVITE] = __3TkD(1115).t.XYZMbL;
+          obj23[__3TkD(7832).GuildInviteFlags.IS_GUEST_INVITE] = __3TkD(1115).t.XYZMbL;
           __3TkD = obj23;
           obj20[AuditLogChangeKeys.FLAGS] = (arg0) => __3TkD[arg0.newValue];
           obj20[AuditLogChangeKeys.ROLE_IDS] = () => __3TkD(1115).t.gb1Owj;
@@ -1617,7 +1617,7 @@ export const getChangeTitle = function getChangeTitle(log) {
             const newValue = found2.newValue;
             if (GuildFeedItemTypes.GuildFeedItemTypes.MESSAGE === newValue) {
               return tmp198(1115).t["PyEa+J"];
-            } else if (tmp198(18083).GuildFeedItemTypes.FORUM_POST === newValue) {
+            } else if (tmp198(17311).GuildFeedItemTypes.FORUM_POST === newValue) {
               return tmp198(1115).t.hCuAb1;
             } else {
               return tmp198(1115).t["UZ+U3A"];
@@ -2560,8 +2560,8 @@ export const transformLogs = function transformLogs(arr, arg1) {
           let id = result1.options.id;
           user = user.getUser(id);
           if (tmp224) {
-            id = items(4673).getUserTag(user);
-            let obj4 = items(4673);
+            id = items(4675).getUserTag(user);
+            let obj4 = items(4675);
           }
           obj.subtarget = id;
           tmp224 = null != user && true;
@@ -2629,8 +2629,8 @@ export const transformLogs = function transformLogs(arr, arg1) {
             const prop = found19.guild_scheduled_event_exceptions;
             found20 = prop.find((event_exception_id) => event_exception_id.event_exception_id === result3.options.event_exception_id);
           }
-          let obj5 = closure_0(4507);
-          let tmp244 = items(4416);
+          let obj5 = closure_0(4509);
+          let tmp244 = items(4418);
           let str5;
           if (found20 != null) {
             str5 = found20.event_exception_id;
@@ -3198,14 +3198,14 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                               const _Date = Date;
                                               obj = DateUtils;
                                               const date = new Date(newValue2);
-                                              newValue = obj.dateFormat(_modDef4416(date), "LLLL");
+                                              newValue = obj.dateFormat(_modDef4418(date), "LLLL");
                                             }
                                             if (null != newValue.oldValue) {
                                               const oldValue2 = newValue.oldValue;
                                               const _Date2 = Date;
                                               const obj2 = DateUtils;
                                               const date1 = new Date(oldValue2);
-                                              oldValue = obj2.dateFormat(_modDef4416(date1), "LLLL");
+                                              oldValue = obj2.dateFormat(_modDef4418(date1), "LLLL");
                                             }
                                             if (!oldValue) {
                                               oldValue = newValue.oldValue;

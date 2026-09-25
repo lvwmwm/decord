@@ -1,17 +1,17 @@
-// Module ID: 13111
-// Function ID: 13112
+// Module ID: 12261
+// Function ID: 12262
 // Name: ForumDisplaySettingsActionSheet
-// Dependencies: [32, 19, 2044, 12343, 21, 1115, 2053, 2054, 2055, 504, 5290, 8096, 7530, 7482, 9887, 6957, 5271, 576, 5990, 5993, 2]
+// Dependencies: [32, 19, 2044, 11469, 21, 1115, 2053, 2054, 2055, 504, 5291, 7181, 6613, 6565, 8985, 6040, 5272, 576, 5992, 5995, 2]
 // Exports: default
 
-// Module 13111 (ForumDisplaySettingsActionSheet)
-import tracking_Tracking from "tracking/Tracking" /* 8096 */;
+// Module 12261 (ForumDisplaySettingsActionSheet)
+import tracking_Tracking from "tracking/Tracking" /* 7181 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 
 require = fn;
-const ForumChannelStore = fn(12343);
+const ForumChannelStore = fn(11469);
 ({ useForumChannelStoreApi: metroRequire, useForumChannelStore: closure_7 } = ForumChannelStore);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);

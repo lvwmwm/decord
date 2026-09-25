@@ -1,12 +1,12 @@
-// Module ID: 13444
-// Function ID: 13445
+// Module ID: 12594
+// Function ID: 12595
 // Name: UserProfileEditNoteModal
-// Dependencies: [32, 19, 21, 1484, 5032, 7333, 1365, 1115, 4825, 5929, 13445, 2]
+// Dependencies: [32, 19, 21, 1484, 5032, 6416, 1365, 1115, 4825, 5931, 12595, 2]
 // Exports: default
 
-// Module 13444 (UserProfileEditNoteModal)
+// Module 12594 (UserProfileEditNoteModal)
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
-import UserProfileEditNote from "UserProfileEditNote" /* 13445 */;
+import UserProfileEditNote from "UserProfileEditNote" /* 12595 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -54,11 +54,11 @@ export default function UserProfileEditNoteModal(arg0) {
     return jsx(navigation(4825).Text, { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: null });
   };
   tmpResult = navigation(1365);
-  obj6.headerLeft = navigation(5929).getHeaderCloseButton(handleClose);
+  obj6.headerLeft = navigation(5931).getHeaderCloseButton(handleClose);
   obj6.render = function render() {
     return jsx(UserProfileEditNote.default, { userId: navigation, onSave, onClose: handleClose, shouldFocusInput });
   };
   obj5.root = obj6;
   obj3.screens = obj5;
-  return tmp6(navigation(7333).Navigator, obj3);
+  return tmp6(navigation(6416).Navigator, obj3);
 };

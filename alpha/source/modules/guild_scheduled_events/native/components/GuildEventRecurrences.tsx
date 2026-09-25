@@ -1,14 +1,14 @@
-// Module ID: 9978
-// Function ID: 9979
+// Module ID: 9076
+// Function ID: 9077
 // Name: GuildEventRecurrences
-// Dependencies: [19, 17, 21, 4829, 576, 9979, 4825, 1115, 11, 9981, 5273, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 9077, 4825, 1115, 11, 9079, 5274, 2]
 // Exports: default
 
-// Module 9978 (GuildEventRecurrences)
+// Module 9076 (GuildEventRecurrences)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
-import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 9979 */;
-import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 9981 */;
+import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 9077 */;
+import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 9079 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -63,7 +63,7 @@ export default function GuildEventRecurrences(guildEventId) {
         current.scrollToEnd();
       }
     };
-    canViewMoreRecurrences = tmp7(tmp8(5273).Button, obj4);
+    canViewMoreRecurrences = tmp7(tmp8(5274).Button, obj4);
   }
   items[2] = canViewMoreRecurrences;
   obj.children = items;

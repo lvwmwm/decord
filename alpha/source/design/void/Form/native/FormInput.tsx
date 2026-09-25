@@ -1,19 +1,19 @@
-// Module ID: 8959
-// Function ID: 8960
+// Module ID: 8053
+// Function ID: 8054
 // Name: FormInput
-// Dependencies: [19, 1074, 21, 4829, 576, 1364, 4535, 4680, 5991, 7418, 6936, 1177, 2]
+// Dependencies: [19, 1074, 21, 4829, 576, 1364, 4537, 4682, 5993, 6501, 6019, 1177, 2]
 
-// Module 8959 (FormInput)
+// Module 8053 (FormInput)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import native2 from "native" /* 4535 */;
+import native2 from "native" /* 4537 */;
 import noop from "module_19" /* 19 */;
 
 const native = TextArea(1177);
-const shared = TextArea(4680);
-const RedesignCompat = TextArea(5991);
-const TextInput = TextArea(6936);
-const TextArea2 = TextArea(7418);
+const shared = TextArea(4682);
+const RedesignCompat = TextArea(5993);
+const TextInput = TextArea(6019);
+const TextArea2 = TextArea(6501);
 require = fn;
 const KeyboardThemes = fn(1074).KeyboardThemes;
 const jsx = fn(21).jsx;

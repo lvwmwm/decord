@@ -1,18 +1,18 @@
-// Module ID: 9927
-// Function ID: 9928
+// Module ID: 9025
+// Function ID: 9026
 // Name: TagListInput
-// Dependencies: [32, 19, 17, 21, 4829, 576, 4825, 4561, 5272, 5276, 5969, 5285, 6945, 5280, 6952, 6954, 4532, 6956, 5903, 6957, 9928, 9929, 1115, 9930, 4536, 6951, 7384, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 4825, 4563, 5273, 5277, 5971, 5286, 6028, 5281, 6035, 6037, 4534, 6039, 5905, 6040, 9026, 9027, 1115, 9028, 4538, 6034, 6467, 2]
 
-// Module 9927 (TagListInput)
+// Module 9025 (TagListInput)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4536 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4561 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4538 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4563 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import spring from "spring" /* 5272 */;
-import springPresets from "springPresets" /* 5276 */;
-import LinearGradientDefault from "LinearGradient" /* 5285 */;
-import _modDef5969 from "module_5969" /* 5969 */;
+import spring from "spring" /* 5273 */;
+import springPresets from "springPresets" /* 5277 */;
+import LinearGradientDefault from "LinearGradient" /* 5286 */;
+import _modDef5971 from "module_5971" /* 5971 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -363,7 +363,7 @@ export default noop.memo(function TagListInput(accessibilityHint) {
       obj2.children = items2;
       obj.maskElement = React7(hasOwnProperty, obj2);
       obj.children = children;
-      tmp = React6(_modDef5969, obj);
+      tmp = React6(_modDef5971, obj);
     }
     return tmp;
   }, items5);

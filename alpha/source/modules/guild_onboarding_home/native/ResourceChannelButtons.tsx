@@ -1,12 +1,12 @@
-// Module ID: 12625
-// Function ID: 12626
+// Module ID: 11751
+// Function ID: 11752
 // Name: ResourceChannelButtons
-// Dependencies: [32, 19, 17, 21, 4829, 576, 1485, 12626, 12627, 5273, 1177, 11917, 12629, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 1485, 11752, 11753, 5274, 1177, 11060, 11755, 2]
 // Exports: default
 
-// Module 12625 (ResourceChannelButtons)
+// Module 11751 (ResourceChannelButtons)
 import nativeDefault from "native" /* 576 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12627 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 11753 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

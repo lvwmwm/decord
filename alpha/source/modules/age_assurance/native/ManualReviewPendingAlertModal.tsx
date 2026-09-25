@@ -1,13 +1,13 @@
-// Module ID: 8943
-// Function ID: 8944
+// Module ID: 8037
+// Function ID: 8038
 // Name: ManualReviewPendingAlertModal
-// Dependencies: [19, 21, 5201, 1115, 3102, 5201, 2]
+// Dependencies: [19, 21, 5202, 1115, 3102, 5202, 2]
 // Exports: default
 
-// Module 8943 (ManualReviewPendingAlertModal)
+// Module 8037 (ManualReviewPendingAlertModal)
 import util from "util" /* 1115 */;
 import _modDef3102 from "module_3102" /* 3102 */;
-import AlertModal from "AlertModal" /* 5201 */;
+import AlertModal from "AlertModal" /* 5202 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

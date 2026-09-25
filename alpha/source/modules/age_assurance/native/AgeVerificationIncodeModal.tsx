@@ -1,10 +1,10 @@
-// Module ID: 8766
-// Function ID: 8767
+// Module ID: 7856
+// Function ID: 7857
 // Name: AgeVerificationIncodeModal
-// Dependencies: [19, 21, 4829, 576, 5032, 7707, 1115, 8767, 8774, 7333, 2]
+// Dependencies: [19, 21, 4829, 576, 5032, 6790, 1115, 7857, 7866, 6416, 2]
 // Exports: default
 
-// Module 8766 (AgeVerificationIncodeModal)
+// Module 7856 (AgeVerificationIncodeModal)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 

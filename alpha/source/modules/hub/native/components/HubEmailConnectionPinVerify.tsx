@@ -1,13 +1,13 @@
-// Module ID: 13086
-// Function ID: 13087
+// Module ID: 12236
+// Function ID: 12237
 // Name: HubEmailConnectionPinVerify
-// Dependencies: [32, 5, 19, 17, 2066, 21, 4829, 4523, 10230, 13087, 11569, 12, 13080, 1115, 4729, 7672, 13075, 13088, 4825, 7413, 2]
+// Dependencies: [32, 5, 19, 17, 2066, 21, 4829, 4525, 9327, 12237, 10774, 12, 12228, 1115, 4731, 6755, 12223, 12238, 4825, 6496, 2]
 // Exports: default
 
-// Module 13086 (HubEmailConnectionPinVerify)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4523 */;
-import _modDef10230 from "module_10230" /* 10230 */;
-import HubJoinManagerDefault from "HubJoinManager" /* 13087 */;
+// Module 12236 (HubEmailConnectionPinVerify)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4525 */;
+import _modDef9327 from "module_9327" /* 9327 */;
+import HubJoinManagerDefault from "HubJoinManager" /* 12237 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 const require = fn;
 function presentResendToast(content) {
   const obj = ToastActionCreatorsDefault;
-  obj.open({ key: "HUB_EMAIL_RESET", content, icon: _modDef10230 });
+  obj.open({ key: "HUB_EMAIL_RESET", content, icon: _modDef9327 });
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, Image: closure_7 } = get_ActivityIndicator);
@@ -63,7 +63,7 @@ export default function HubEmailConnectionPinVerify(email) {
       require("navigateToLastChannel")();
     });
     return () => {
-      closure_1_1(13087).terminate();
+      closure_1_1(12237).terminate();
     };
   }, items);
   const obj = require("module_12");
@@ -101,7 +101,7 @@ export default function HubEmailConnectionPinVerify(email) {
   const obj3 = { style: tmp.container, children: null };
   const tmp5 = _slicedToArray(noop.useState(null), 2);
   const tmp7 = email;
-  const items1 = [closure_9(closure_7, { source: require("module_13088") }), , , , , ];
+  const items1 = [closure_9(closure_7, { source: require("module_12238") }), , , , , ];
   const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   let intl = email(onClose[13]).intl;
   obj5.children = intl.string(email(onClose[13]).t.SJ3Lxc);
@@ -114,7 +114,7 @@ export default function HubEmailConnectionPinVerify(email) {
   const intl3 = email(onClose[13]).intl;
   obj7.children = intl3.string(email(onClose[13]).t.rpWT1s);
   items1[3] = closure_9(email(onClose[18]).Text, obj7);
-  const obj4 = { source: require("module_13088") };
+  const obj4 = { source: require("module_12238") };
   const tmp8 = closure_10;
   const tmp9 = closure_6;
   items1[4] = closure_9(email(onClose[19]).CodeBlocks, {

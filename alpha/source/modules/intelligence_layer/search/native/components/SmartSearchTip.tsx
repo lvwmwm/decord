@@ -1,9 +1,9 @@
-// Module ID: 17263
-// Function ID: 17264
+// Module ID: 16478
+// Function ID: 16479
 // Name: SmartSearchTip
-// Dependencies: [19, 17, 21, 4829, 576, 4825, 1115, 3876, 13416, 1177, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4825, 1115, 3876, 12566, 1177, 2]
 
-// Module 17263 (SmartSearchTip)
+// Module 16478 (SmartSearchTip)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;
@@ -65,7 +65,7 @@ export default noop.memo((children) => {
       const obj = { user, size: native.AvatarSizes.XSMALL_20, guildId };
       return hasOwnProperty(native.Avatar, obj, user.id);
     });
-    tmp4Result = tmp4(tmp5(13416).AvatarPile, obj6);
+    tmp4Result = tmp4(tmp5(12566).AvatarPile, obj6);
   }
   items2[1] = tmp4Result;
   obj2.children = items2;

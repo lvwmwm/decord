@@ -1,14 +1,14 @@
-// Module ID: 8279
-// Function ID: 8280
+// Module ID: 7368
+// Function ID: 7369
 // Name: ConversationPreviewMessage
-// Dependencies: [19, 17, 4821, 2107, 21, 8280, 8485, 4829, 576, 504, 4981, 8309, 2020, 4507, 1177, 4825, 9010, 2]
+// Dependencies: [19, 17, 4821, 2107, 21, 7369, 7575, 4829, 576, 504, 4981, 7398, 2020, 4509, 1177, 4825, 8104, 2]
 // Exports: default
 
-// Module 8279 (ConversationPreviewMessage)
+// Module 7368 (ConversationPreviewMessage)
 import nativeDefault from "native" /* 576 */;
-import DateUtils from "DateUtils" /* 4507 */;
-import RowGeneratorDefault from "RowGenerator" /* 8280 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8485 */;
+import DateUtils from "DateUtils" /* 4509 */;
+import RowGeneratorDefault from "RowGenerator" /* 7369 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 7575 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 import GuildMemberStore from "GuildMemberStore" /* 2107 */;

@@ -1,10 +1,10 @@
-// Module ID: 11901
-// Function ID: 11902
+// Module ID: 11044
+// Function ID: 11045
 // Name: useGetOrFetchApplicationBatched
-// Dependencies: [19, 5056, 2039, 12, 7496, 504, 2]
+// Dependencies: [19, 5056, 2039, 12, 6579, 504, 2]
 // Exports: useGetOrFetchApplicationBatched, useRequestApplication
 
-// Module 11901 (useGetOrFetchApplicationBatched)
+// Module 11044 (useGetOrFetchApplicationBatched)
 import Timers from "Timers" /* 2039 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5056 */;

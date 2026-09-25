@@ -1,23 +1,23 @@
-// Module ID: 17480
-// Function ID: 17481
+// Module ID: 16697
+// Function ID: 16698
 // Name: SuspendedUserPage
-// Dependencies: [19, 17, 8781, 8770, 21, 4829, 576, 504, 7456, 8269, 1115, 6922, 7325, 4825, 4520, 15110, 2]
+// Dependencies: [19, 17, 7873, 7860, 21, 4829, 576, 504, 6539, 7358, 1115, 6005, 6408, 4825, 4522, 14276, 2]
 // Exports: default
 
-// Module 17480 (SuspendedUserPage)
+// Module 16697 (SuspendedUserPage)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import LinkingDefault from "Linking" /* 4520 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6922 */;
-import _modDef7325 from "module_7325" /* 7325 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7456 */;
-import SafetyHubPageDefault from "SafetyHubPage" /* 15110 */;
+import LinkingDefault from "Linking" /* 4522 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
+import _modDef6408 from "module_6408" /* 6408 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6539 */;
+import SafetyHubPageDefault from "SafetyHubPage" /* 14276 */;
 import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8781 */;
+import SafetyHubStore from "SafetyHubStore" /* 7873 */;
 
 require = fn;
 const View = fn(17).View;
-const SafetyHubConstants = fn(8770);
+const SafetyHubConstants = fn(7860);
 ({ AgeCheckStatus: hasOwnProperty, SafetyHubLinks: metroRequire } = SafetyHubConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
@@ -45,8 +45,8 @@ export default function SuspendedUserSafetyHubPage() {
     obj4.onPress = function onPress() {
       AuthenticationActionCreatorsDefault.closeSuspendedUser();
     };
-    obj4.icon = _modDef7325;
-    const items1 = [tmp5(tmp2(8269).IconButton, obj4), ];
+    obj4.icon = _modDef6408;
+    const items1 = [tmp5(tmp2(7358).IconButton, obj4), ];
     const obj5 = {
       style: tmp.text,
       onPress() {

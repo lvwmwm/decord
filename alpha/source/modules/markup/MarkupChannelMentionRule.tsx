@@ -1,23 +1,23 @@
-// Module ID: 5305
-// Function ID: 5306
+// Module ID: 5306
+// Function ID: 5307
 // Name: MarkupChannelMentionRule
-// Dependencies: [2099, 2044, 2066, 4464, 4474, 1372, 1074, 2010, 1397, 1115, 5306, 4974, 4982, 5307, 4983, 5304, 1929, 2]
+// Dependencies: [2099, 2044, 2066, 4466, 4476, 1372, 1074, 2010, 1397, 1115, 5307, 4974, 4982, 5308, 4983, 5305, 1929, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 5305 (MarkupChannelMentionRule)
+// Module 5306 (MarkupChannelMentionRule)
 import util from "util" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import _modDef1929 from "module_1929" /* 1929 */;
 import StringUtils from "StringUtils" /* 2010 */;
 import ChannelUtils from "ChannelUtils" /* 4974 */;
 import LinkUtils from "LinkUtils" /* 4983 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5304 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5306 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5305 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5307 */;
 import GatedChannelStore from "GatedChannelStore" /* 2099 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -55,8 +55,8 @@ function getChannel(id, arr) {
     obj5.isDm = channel.isPrivate();
     obj5.isForumPost = channel.isForumPost();
     const tmpResult = tmp(4982);
-    obj5.isMentionable = tmp(5307).isChannelTypeMentionable(channel.type);
-    const tmpResult3 = tmp(5307);
+    obj5.isMentionable = tmp(5308).isChannelTypeMentionable(channel.type);
+    const tmpResult3 = tmp(5308);
     obj5.canViewChannel = tmp(4983).canViewChannel(channel);
     obj5.roleSubscriptionGated = isSubscriptionGated;
     obj5.iconType = str;
@@ -127,7 +127,7 @@ function parseChannel(channel, messageId, guildIdFromChannelId, url) {
           obj4.content = items3;
           let obj11 = obj4;
         } else if (null != url) {
-          const obj9 = { type: "link", content: null, target: null, title: "category" };
+          const obj9 = { type: "link", content: null, target: null, title: "channel" };
           const obj10 = { type: "text", content: url };
           const items4 = [obj10];
           obj9.content = items4;
@@ -352,7 +352,7 @@ obj.channelOrMessageUrl = {
   parse(arg0, arg1, channelId) {
     [tmp, tmp2, tmp3, tmp4] = arg0;
     if (null == tmp3) {
-      const obj = { type: "link", content: null, target: null, title: "category" };
+      const obj = { type: "link", content: null, target: null, title: "channel" };
       const obj2 = { type: "text", content: tmp };
       const items = [obj2];
       obj.content = items;
@@ -404,7 +404,7 @@ let obj3 = {
   parse(arg0, arg1, channelId) {
     [tmp, tmp2, tmp3, tmp4] = arg0;
     if (null == tmp3) {
-      const obj = { type: "link", content: null, target: null, title: "category" };
+      const obj = { type: "link", content: null, target: null, title: "channel" };
       const obj2 = { type: "text", content: tmp };
       const items = [obj2];
       obj.content = items;
@@ -472,7 +472,7 @@ obj.mediaPostLink = {
         tmp30 = getChannel;
       }
     }
-    const obj = { type: "link", content: null, target: tmp, title: "category" };
+    const obj = { type: "link", content: null, target: tmp, title: "channel" };
     const items = [{ type: "text", content: tmp }];
     obj.content = items;
     return obj;

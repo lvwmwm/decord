@@ -1,10 +1,10 @@
-// Module ID: 8760
-// Function ID: 8761
+// Module ID: 7850
+// Function ID: 7851
 // Name: StageChannelAgeVerificationNotice
-// Dependencies: [19, 17, 1074, 21, 4829, 576, 5041, 1115, 4825, 4514, 2110, 8761, 8763, 4783, 8946, 1177, 5727, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 576, 5041, 1115, 4825, 4516, 2110, 7851, 7853, 4783, 8040, 1177, 5729, 2]
 // Exports: default
 
-// Module 8760 (StageChannelAgeVerificationNotice)
+// Module 7850 (StageChannelAgeVerificationNotice)
 import nativeDefault from "native" /* 576 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 5041 */;
 import noop from "module_19" /* 19 */;
@@ -12,7 +12,7 @@ import noop from "module_19" /* 19 */;
 const native = Text(1177);
 const CircleInformationIcon = Text(4783);
 const Text_Text = Text(4825);
-const WarningIcon2 = Text(8946);
+const WarningIcon2 = Text(8040);
 require = fn;
 function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
   onConfirmPress = onConfirmPress.onConfirmPress;
@@ -29,7 +29,7 @@ function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
             color: "text-default",
             style: closure_1.linkText,
             onPress() {
-              const tmp = closure_1(4514);
+              const tmp = closure_1(4516);
               tmp(closure_1(2110).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
               if (onConfirmPress != null) {
                 onConfirmPress();
@@ -48,8 +48,8 @@ function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
             color: "text-default",
             style: closure_1.linkText,
             onPress() {
-              const obj = closure_1(8761);
-              const result = obj.showAgeVerificationGetStartedModal({ entryPoint: onConfirmPress(8763).AgeVerificationModalEntryPoint.START_STAGE_PROMPT });
+              const obj = closure_1(7851);
+              const result = obj.showAgeVerificationGetStartedModal({ entryPoint: onConfirmPress(7853).AgeVerificationModalEntryPoint.START_STAGE_PROMPT });
               if (closure_1_0 != null) {
                 closure_1_0();
               }

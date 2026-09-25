@@ -1,20 +1,20 @@
-// Module ID: 14153
-// Function ID: 14154
+// Module ID: 13314
+// Function ID: 13315
 // Name: VoiceMemberUser
-// Dependencies: [19, 17, 1182, 502, 5583, 2044, 2107, 1992, 4869, 1074, 21, 4829, 576, 9701, 504, 4680, 14154, 14155, 1177, 14156, 14157, 14158, 14159, 9796, 4825, 1115, 8951, 8067, 10405, 4686, 5036, 4796, 5427, 10086, 4981, 10078, 4673, 2]
+// Dependencies: [19, 17, 1182, 502, 5585, 2044, 2107, 1992, 4869, 1074, 21, 4829, 576, 8799, 504, 4682, 13315, 13316, 1177, 13317, 13318, 13319, 13320, 8894, 4825, 1115, 8045, 7152, 9507, 4688, 5036, 4796, 5428, 9183, 4981, 9176, 4675, 2]
 
-// Module 14153 (VoiceMemberUser)
+// Module 13314 (VoiceMemberUser)
 import nativeDefault from "native" /* 576 */;
-import UserUtilsDefault from "UserUtils" /* 4673 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4686 */;
+import UserUtilsDefault from "UserUtils" /* 4675 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4688 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5036 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8067 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 10086 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7152 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 9183 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5583 */;
+import CallStore from "CallStore" /* 5585 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildMemberStore from "GuildMemberStore" /* 2107 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
@@ -46,7 +46,7 @@ function StreamingUserRow(user) {
       labelCallScreen = tmp2.labelCallScreen;
     }
     obj3.style = labelCallScreen;
-    obj2.subLabel = closure_11(tmp3(8951).FormSubLabel, obj3);
+    obj2.subLabel = closure_11(tmp3(8045).FormSubLabel, obj3);
     const items1 = [closure_11(closure_16, obj2), ];
     let tmp10Result = user.id !== AuthenticationStore.getId();
     if (tmp10Result) {
@@ -71,9 +71,9 @@ function StreamingUserRow(user) {
               }
             }
       };
-      obj4.children = tmp10(channel(10405), obj5);
+      obj4.children = tmp10(channel(9507), obj5);
       tmp10Result = tmp10(closure_3, obj4);
-      const tmp20 = channel(10405);
+      const tmp20 = channel(9507);
     }
     const obj6 = { children: null };
     items1[1] = tmp10Result;
@@ -106,7 +106,7 @@ function RingButton(channelId) {
       obj2.children = stringResult;
       tmp4Result = tmp4(tmp5(1177).LegacyText, obj2);
       obj.children = tmp4Result;
-      closure_11(channelId(5427).PressableOpacity, obj);
+      closure_11(channelId(5428).PressableOpacity, obj);
     }
   }
   return tmp3;
@@ -136,7 +136,7 @@ function StopRingButton(channelId) {
       obj2.children = stringResult;
       tmp4Result = tmp4(tmp5(1177).LegacyText, obj2);
       obj.children = tmp4Result;
-      closure_11(channelId(5427).PressableOpacity, obj);
+      closure_11(channelId(5428).PressableOpacity, obj);
     }
   }
   return tmp3;
@@ -180,7 +180,7 @@ let closure_16 = noop.memo((user) => {
   const id = AuthenticationStore.getId();
   let obj = AuthenticationStore;
   const obj2 = { userId: user.id };
-  const tmp7 = channel(9701)({ userId: user.id });
+  const tmp7 = channel(8799)({ userId: user.id });
   const items = [ThemeStore];
   const stateFromStores = user(504).useStateFromStores(items, () => theme.theme);
   const obj3 = user(504);
@@ -280,7 +280,7 @@ let closure_16 = noop.memo((user) => {
       const obj8 = { style: tmp2.row, children: null };
       let tmp20Result = null;
       if (user.isSpectating) {
-        const obj9 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(14159), style: tmp19 };
+        const obj9 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(13320), style: tmp19 };
         tmp20Result = tmp20(tmp8(1177).Icon, obj9);
       }
       const items3 = [tmp20Result, , , , ];
@@ -288,7 +288,7 @@ let closure_16 = noop.memo((user) => {
         items3[1] = null;
         let tmp20Result5 = null;
         if (tmp14) {
-          const obj10 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(14156), style: tmp19 };
+          const obj10 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(13317), style: tmp19 };
           tmp20Result5 = tmp20(tmp8(1177).Icon, obj10);
         }
         items3[2] = tmp20Result5;
@@ -304,22 +304,22 @@ let closure_16 = noop.memo((user) => {
           tmp23Result = tmp23(tmp24, obj8);
         } else {
           if (localVideoDisabled) {
-            const obj12 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(14157), style: tmp2.voiceStatusIconMargin, disableColor: true };
+            const obj12 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(13318), style: tmp2.voiceStatusIconMargin, disableColor: true };
             let obj13 = obj12;
           } else {
-            obj13 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(14158), style: tmp19 };
+            obj13 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(13319), style: tmp19 };
           }
           tmp20(tmp8(1177).Icon, obj13);
         }
       } else {
         if (tmp8Result.isThemeDark(stateFromStores)) {
-          let tmp5Result = tmp5(14154);
+          let tmp5Result = tmp5(13315);
         } else {
-          tmp5Result = tmp5(14155);
+          tmp5Result = tmp5(13316);
         }
         const obj14 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp5Result, style: tmp2.voiceStatusIconMargin, color: tmp19.tintColor, disableColor: localMute };
         tmp20(tmp8(1177).Icon, obj14);
-        tmp8Result = tmp8(4680);
+        tmp8Result = tmp8(4682);
       }
       tmp23 = closure_12;
       tmp24 = id;
@@ -347,10 +347,10 @@ let closure_16 = noop.memo((user) => {
     labelCallScreen = tmp3.labelCallScreen;
   }
   obj18.style = labelCallScreen;
-  obj15.label = closure_11(user(8951).FormRow.Label, obj18);
+  obj15.label = closure_11(user(8045).FormRow.Label, obj18);
   if (localVideoAutoDisabled) {
     const obj19 = { style: tmp2.autoDisabledVideo, children: null };
-    const obj20 = { source: tmp5(9796), size: tmp8(1177).Icon.Sizes.EXTRA_SMALL, disableColor: true };
+    const obj20 = { source: tmp5(8894), size: tmp8(1177).Icon.Sizes.EXTRA_SMALL, disableColor: true };
     const items6 = [tmp20(tmp8(1177).Icon, obj20), ];
     const obj21 = { variant: "text-xs/medium", color: "text-default", style: tmp2.autoDisabledVideoLabel, children: null };
     const intl3 = tmp8(1115).intl;
@@ -366,7 +366,7 @@ let closure_16 = noop.memo((user) => {
     }
   }
   obj15.subLabel = stringResult;
-  return closure_11(user(8951).FormRow, obj15);
+  return closure_11(user(8045).FormRow, obj15);
 });
 let obj11 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, lineHeight: 18, marginHorizontal: 16, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 const memoResult = noop.memo(function DisconnectedUserRow(user) {
@@ -396,21 +396,21 @@ const memoResult = noop.memo(function DisconnectedUserRow(user) {
     leading: null,
     trailing: null
   };
-  const canRing = id(10078).useCanRing(id, "DisconnectedUserRow");
+  const canRing = id(9176).useCanRing(id);
   const obj5 = { text: name, style: null };
   let labelCallScreen = null;
   if (isActionSheet) {
     labelCallScreen = tmp.labelCallScreen;
   }
   obj5.style = labelCallScreen;
-  obj4.label = closure_11(id(8951).FormRow.Label, obj5);
-  const obj3 = id(10078);
+  obj4.label = closure_11(id(8045).FormRow.Label, obj5);
+  const obj3 = id(9176);
   obj4.leading = closure_11(id(1177).Avatar, { user: id, guildId: id2.guild_id, size: id(1177).AvatarSizes.REFRESH_MEDIUM_32 });
   if (!canRing) {
     obj4.trailing = null;
     const obj7 = {};
     const merged = Object.assign(obj4);
-    return tmp7(tmp2(8951).FormRow, obj7);
+    return tmp7(tmp2(8045).FormRow, obj7);
   } else {
     const obj8 = { channelId: null, userId: null, isActionSheet: null };
     id2 = id2.id;

@@ -1,17 +1,17 @@
-// Module ID: 16668
-// Function ID: 16669
+// Module ID: 15848
+// Function ID: 15849
 // Name: GuildRoleSubscriptionsUpsellActionSheet
-// Dependencies: [19, 17, 1074, 2041, 21, 4829, 7483, 5892, 16669, 4825, 1115, 5273, 9939, 2]
+// Dependencies: [19, 17, 1074, 2041, 21, 4829, 6566, 5894, 15849, 4825, 1115, 5274, 9037, 2]
 // Exports: default
 
-// Module 16668 (GuildRoleSubscriptionsUpsellActionSheet)
+// Module 15848 (GuildRoleSubscriptionsUpsellActionSheet)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import FastImageDefault from "FastImage" /* 5892 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7483 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9939 */;
-import _modDef16669 from "module_16669" /* 16669 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import FastImageDefault from "FastImage" /* 5894 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6566 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9037 */;
+import _modDef15849 from "module_15849" /* 15849 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -35,7 +35,7 @@ export default function GuildRoleSubscriptionsUpsellActionSheet(arg0) {
     },
     children: null
   };
-  const obj2 = { source: _modDef16669 };
+  const obj2 = { source: _modDef15849 };
   const items = [closure_6(FastImageDefault, obj2), , , , ];
   const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;

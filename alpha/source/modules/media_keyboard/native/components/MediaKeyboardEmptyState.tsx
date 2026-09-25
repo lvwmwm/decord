@@ -1,18 +1,18 @@
-// Module ID: 11006
-// Function ID: 11007
+// Module ID: 10110
+// Function ID: 10111
 // Name: MediaKeyboardEmptyState
-// Dependencies: [19, 17, 5038, 21, 4829, 576, 4825, 5273, 7710, 1115, 11007, 11001, 11008, 2]
+// Dependencies: [19, 17, 5038, 21, 4829, 576, 4825, 5274, 6793, 1115, 10111, 10105, 10112, 2]
 // Exports: getMediaEmptyStateComponentOrNull
 
-// Module 11006 (MediaKeyboardEmptyState)
+// Module 10110 (MediaKeyboardEmptyState)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import SettingsIcon from "SettingsIcon" /* 7710 */;
-import CameraIcon from "CameraIcon" /* 11001 */;
-import _modDef11007 from "module_11007" /* 11007 */;
-import _modDef11008 from "module_11008" /* 11008 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import SettingsIcon from "SettingsIcon" /* 6793 */;
+import CameraIcon from "CameraIcon" /* 10105 */;
+import _modDef10111 from "module_10111" /* 10111 */;
+import _modDef10112 from "module_10112" /* 10112 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -57,7 +57,7 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
           const intl3 = util.intl;
           obj2.actionLabel = intl3.string(util.t.JuXTi6);
           obj2.actionPress = tmp2;
-          obj2.imageSource = _modDef11007;
+          obj2.imageSource = _modDef10111;
           const intl4 = util.intl;
           obj2.label = intl4.string(util.t["5g7NcN"]);
           return timestampProducer(MediaKeyboardEmptyState, obj2);
@@ -66,7 +66,7 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
           const intl = util.intl;
           obj.actionLabel = intl.string(util.t.tpoWUd);
           obj.actionPress = tmp;
-          obj.imageSource = _modDef11008;
+          obj.imageSource = _modDef10112;
           const intl2 = util.intl;
           obj.label = intl2.string(util.t.YOvRBZ);
           return timestampProducer(MediaKeyboardEmptyState, obj);
@@ -78,7 +78,7 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
   const intl5 = util.intl;
   obj3.actionLabel = intl5.string(util.t["457oeG"]);
   obj3.actionPress = photosEmpty.onPressPrivacySettings;
-  obj3.imageSource = _modDef11007;
+  obj3.imageSource = _modDef10111;
   const intl6 = util.intl;
   obj3.label = intl6.string(util.t["8p9jGu"]);
   return timestampProducer(MediaKeyboardEmptyState, obj3);

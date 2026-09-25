@@ -1,11 +1,11 @@
-// Module ID: 7306
-// Function ID: 7307
+// Module ID: 6389
+// Function ID: 6390
 // Name: BackgroundImage
-// Dependencies: [19, 17, 21, 4763, 4680, 7307, 7308, 2]
+// Dependencies: [19, 17, 21, 4763, 4682, 6390, 6391, 2]
 // Exports: default
 
-// Module 7306 (BackgroundImage)
-import shared from "shared" /* 4680 */;
+// Module 6389 (BackgroundImage)
+import shared from "shared" /* 4682 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -35,10 +35,10 @@ export default function BackgroundImage(backgroundImageSource) {
     } else {
       let tmp2 = dependencyMap;
       if (obj2.isThemeDark(closure_2)) {
-        tmp2 = 7307;
+        tmp2 = 6390;
         let tmp4Result = tmp4(tmp2);
       } else {
-        tmp4Result = tmp4(7308);
+        tmp4Result = tmp4(6391);
       }
       obj2 = shared;
     }

@@ -1,14 +1,14 @@
-// Module ID: 18103
-// Function ID: 18104
+// Module ID: 17331
+// Function ID: 17332
 // Name: GuildSettingsModalEmoji/EmojiRow
-// Dependencies: [32, 19, 17, 2066, 1372, 21, 4829, 576, 1364, 504, 9843, 10682, 4482, 18104, 5258, 4825, 1177, 5910, 4523, 1115, 1397, 4981, 4673, 5427, 18106, 2]
+// Dependencies: [32, 19, 17, 2066, 1372, 21, 4829, 576, 1364, 504, 8941, 9786, 4484, 17332, 5259, 4825, 1177, 5912, 4525, 1115, 1397, 4981, 4675, 5428, 17334, 2]
 // Exports: EmojiRow
 
-// Module 18103 (GuildSettingsModalEmoji/EmojiRow)
+// Module 17331 (GuildSettingsModalEmoji/EmojiRow)
 import nativeDefault from "native" /* 576 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4482 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10682 */;
-import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 18104 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4484 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9786 */;
+import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 17332 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2066 */;

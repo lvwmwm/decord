@@ -1,14 +1,14 @@
-// Module ID: 4466
-// Function ID: 4467
+// Module ID: 4468
+// Function ID: 4469
 // Name: JoinedThreadsStore
-// Dependencies: [2048, 502, 4467, 12, 504, 573, 2]
+// Dependencies: [2048, 502, 4469, 12, 504, 573, 2]
 
-// Module 4466 (JoinedThreadsStore)
+// Module 4468 (JoinedThreadsStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ChannelRecord from "ChannelRecord" /* 2048 */;
-import MuteTimersDefault from "MuteTimers" /* 4467 */;
+import MuteTimersDefault from "MuteTimers" /* 4469 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 9691
-// Function ID: 9692
+// Module ID: 8789
+// Function ID: 8790
 // Name: ActivityAnnouncement
-// Dependencies: [19, 21, 8807, 2]
+// Dependencies: [19, 21, 7901, 2]
 // Exports: default
 
-// Module 9691 (ActivityAnnouncement)
-import inlineStyles from "inlineStyles" /* 8807 */;
+// Module 8789 (ActivityAnnouncement)
+import inlineStyles from "inlineStyles" /* 7901 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;

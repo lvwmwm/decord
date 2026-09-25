@@ -1,17 +1,17 @@
-// Module ID: 18356
-// Function ID: 18357
+// Module ID: 17587
+// Function ID: 17588
 // Name: NotificationSettingChannelOverrides
-// Dependencies: [32, 19, 17, 2048, 7444, 4474, 1372, 1074, 21, 4829, 576, 504, 7314, 7445, 4982, 5822, 1115, 4536, 7382, 5910, 5916, 5327, 11217, 7383, 1177, 8580, 7388, 2]
+// Dependencies: [32, 19, 17, 2048, 6527, 4476, 1372, 1074, 21, 4829, 576, 504, 6397, 6528, 4982, 5824, 1115, 4538, 6465, 5912, 5918, 5328, 10315, 6466, 1177, 7670, 6471, 2]
 
-// Module 18356 (NotificationSettingChannelOverrides)
+// Module 17587 (NotificationSettingChannelOverrides)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4536 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7445 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4538 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 6528 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7444 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 6527 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;

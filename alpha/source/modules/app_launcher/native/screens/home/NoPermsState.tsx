@@ -1,16 +1,16 @@
-// Module ID: 12455
-// Function ID: 12456
+// Module ID: 11581
+// Function ID: 11582
 // Name: NoPermsState
-// Dependencies: [19, 17, 21, 4829, 576, 4680, 4763, 12456, 12457, 12393, 9606, 4825, 1115, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4682, 4763, 11582, 11583, 11519, 8704, 4825, 1115, 2]
 // Exports: default
 
-// Module 12455 (NoPermsState)
+// Module 11581 (NoPermsState)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import shared from "shared" /* 4680 */;
+import shared from "shared" /* 4682 */;
 import useThemeDefault from "useTheme" /* 4763 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12393 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11519 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -26,8 +26,8 @@ const result = size.fileFinishedImporting("modules/app_launcher/native/screens/h
 
 export default function EmptyState() {
   const tmp = closure_7();
-  const tmp4Result = importDefault(shared.isThemeLight(useThemeDefault()) ? 12456 : 12457);
-  const logAppLauncherEmptyStateView = AppLauncherNativeUtils.useLogAppLauncherEmptyStateView(tmp2(9606).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  const tmp4Result = importDefault(shared.isThemeLight(useThemeDefault()) ? 11582 : 11583);
+  const logAppLauncherEmptyStateView = AppLauncherNativeUtils.useLogAppLauncherEmptyStateView(tmp2(8704).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   const obj2 = { style: tmp.container, children: null };
   const items = [hasOwnProperty(React4, { style: tmp.image, resizeMode: "contain", source: tmp4Result }), ];
   const obj4 = { style: tmp.textContainer, variant: "text-sm/medium", color: "text-muted", children: null };

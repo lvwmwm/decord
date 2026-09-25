@@ -1,10 +1,10 @@
-// Module ID: 12198
-// Function ID: 12199
+// Module ID: 11320
+// Function ID: 11321
 // Name: showKickConfirmModal
-// Dependencies: [4796, 5032, 12199, 1980, 2]
+// Dependencies: [4796, 5032, 11321, 1980, 2]
 // Exports: default
 
-// Module 12198 (showKickConfirmModal)
+// Module 11320 (showKickConfirmModal)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
@@ -14,5 +14,5 @@ const result = size.fileFinishedImporting("modules/guild_moderation/native/showK
 
 export default function showKickConfirmModal(merged) {
   ActionSheetActionCreatorsDefault.hideActionSheet();
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12199, dependencyMap.paths), merged);
+  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11321, dependencyMap.paths), merged);
 };

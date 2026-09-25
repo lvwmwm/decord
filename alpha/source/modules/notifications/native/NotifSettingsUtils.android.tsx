@@ -1,13 +1,13 @@
-// Module ID: 14823
-// Function ID: 14824
+// Module ID: 13985
+// Function ID: 13986
 // Name: NotifSettingsUtils
-// Dependencies: [14819, 1115, 14824, 14825, 1231, 2]
+// Dependencies: [13981, 1115, 13986, 13987, 1231, 2]
 
-// Module 14823 (NotifSettingsUtils)
+// Module 13985 (NotifSettingsUtils)
 import util from "util" /* 1115 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import NativeNotifSettingsModuleDefault from "NativeNotifSettingsModule" /* 14824 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 14819 */;
+import NativeNotifSettingsModuleDefault from "NativeNotifSettingsModule" /* 13986 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 13981 */;
 import size from "module_2" /* 2 */;
 
 function inferImportanceFromBehavior(visibility) {
@@ -58,7 +58,7 @@ function formatSetting(item10022, importance) {
   }
 }
 function buildChannelsAndMapping() {
-  const assignedNotifSettingsAndMappings = map(14825).getAssignedNotifSettingsAndMappings();
+  const assignedNotifSettingsAndMappings = map(13987).getAssignedNotifSettingsAndMappings();
   ({ settings, mappings } = assignedNotifSettingsAndMappings);
   const obj2 = (function computeInheritedImportances(mappings) {
     map = new Map();
@@ -120,7 +120,7 @@ function buildChannelsAndMapping() {
     let result = map.set(item10022.id, item10022.string_id);
     continue;
   }
-  const obj = map(14825);
+  const obj = map(13987);
   return {
     mapping: mappings.flatMap((notifSetting) => {
       value = map.get(notifSetting.notifSetting);

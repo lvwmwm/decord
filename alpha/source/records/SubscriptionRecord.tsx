@@ -1,14 +1,14 @@
-// Module ID: 4490
-// Function ID: 4491
+// Module ID: 4492
+// Function ID: 4493
 // Name: SubscriptionRecord
-// Dependencies: [1387, 4491, 4492, 1074, 4494, 1374, 4495, 38, 1364, 4496, 1969, 2]
+// Dependencies: [1387, 4493, 4494, 1074, 4496, 1374, 4497, 38, 1364, 4498, 1969, 2]
 
-// Module 4490 (SubscriptionRecord)
+// Module 4492 (SubscriptionRecord)
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
-import PremiumSubscription from "PremiumSubscription" /* 4495 */;
+import PremiumSubscription from "PremiumSubscription" /* 4497 */;
 import Record from "Record" /* 1387 */;
-import GooglePlayPriceChangeRecord from "GooglePlayPriceChangeRecord" /* 4491 */;
-import InvoiceRecord from "InvoiceRecord" /* 4492 */;
+import GooglePlayPriceChangeRecord from "GooglePlayPriceChangeRecord" /* 4493 */;
+import InvoiceRecord from "InvoiceRecord" /* 4494 */;
 
 require = fn;
 function createSubscriptionItemFromServer(id) {
@@ -16,7 +16,7 @@ function createSubscriptionItemFromServer(id) {
 }
 const Constants = fn(1074);
 ({ PaymentGateways: hasOwnProperty, SubscriptionStatusTypes: metroRequire, SubscriptionStatusTypesSets: closure_7, SubscriptionTypes: closure_8 } = Constants);
-const BillingConstants = fn(4494);
+const BillingConstants = fn(4496);
 ({ SubscriptionPauseReason: closure_9, SubscriptionPauseReasonSets: c10 } = BillingConstants);
 const PremiumConstants = fn(1374);
 ({ PREMIUM_PLANS: closure_11, SubscriptionPlanInfo: closure_12, SubscriptionPlans: map1 } = PremiumConstants);

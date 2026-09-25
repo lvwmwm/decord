@@ -1,10 +1,10 @@
-// Module ID: 8173
-// Function ID: 8174
+// Module ID: 7258
+// Function ID: 7259
 // Name: logMessageSendFailure
 // Dependencies: [1074, 5009, 2]
 // Exports: getAttachmentMimeTypes, logMessageSendFailure
 
-// Module 8173 (logMessageSendFailure)
+// Module 7258 (logMessageSendFailure)
 import Constants from "Constants" /* 1074 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5009 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 15073
-// Function ID: 15074
+// Module ID: 14239
+// Function ID: 14240
 // Name: UserSettingsChangeUsername
-// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4829, 576, 5014, 15074, 4825, 1115, 1484, 504, 4483, 15075, 7323, 7317, 1271, 1485, 8194, 6936, 7331, 7269, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4829, 576, 5014, 14240, 4825, 1115, 1484, 504, 4485, 14241, 6406, 6400, 1271, 1485, 7283, 6019, 6414, 6352, 2]
 // Exports: default
 
-// Module 15073 (UserSettingsChangeUsername)
+// Module 14239 (UserSettingsChangeUsername)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
@@ -17,11 +17,11 @@ require = fn;
 function UsernameStatusMessage(showHint) {
   showHint = showHint.showHint;
   const match = showHint(5014).match(showHint.usernameStatus);
-  let obj = { type: showHint(15074).NameValidationState.ERROR, message: null };
+  let obj = { type: showHint(14240).NameValidationState.ERROR, message: null };
   const P = showHint(5014).P;
   obj.message = P.select();
   const str = showHint(5014);
-  const obj2 = { type: showHint(15074).NameValidationState.AVAILABLE, message: null };
+  const obj2 = { type: showHint(14240).NameValidationState.AVAILABLE, message: null };
   const P2 = showHint(5014).P;
   obj2.message = P2.select();
   const withResult = match.with(obj, (children) => closure_1_11(showHint(4825).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children }));
@@ -142,7 +142,7 @@ export default function UserSettingsChangeUsername() {
           const tmp34 = first1;
         }
         user.discriminator = tmp34;
-        closure_129_0 = yield closure_2_2(7317).saveAccountChanges(user, { close: false });
+        closure_129_0 = yield closure_2_2(6400).saveAccountChanges(user, { close: false });
         if (!closure_129_0.ok) {
           const v6OrEarlierAPIError = new closure_0(1271).V6OrEarlierAPIError(closure_129_0);
           closure_129_1 = v6OrEarlierAPIError;

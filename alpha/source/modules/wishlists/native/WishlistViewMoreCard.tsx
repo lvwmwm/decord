@@ -1,14 +1,14 @@
-// Module ID: 11395
-// Function ID: 11396
+// Module ID: 10493
+// Function ID: 10494
 // Name: WishlistViewMoreCard
-// Dependencies: [19, 17, 21, 4829, 576, 1115, 11390, 4825, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 1115, 10488, 4825, 2]
 // Exports: default
 
-// Module 11395 (WishlistViewMoreCard)
+// Module 10493 (WishlistViewMoreCard)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import WishlistItemCardDefault from "WishlistItemCard" /* 11390 */;
+import WishlistItemCardDefault from "WishlistItemCard" /* 10488 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

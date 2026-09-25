@@ -1,10 +1,10 @@
-// Module ID: 7488
-// Function ID: 7489
+// Module ID: 6571
+// Function ID: 6572
 // Name: Sheet/BottomSheetBackdrop
-// Dependencies: [19, 21, 4829, 6957, 6985, 4561, 5259, 2]
+// Dependencies: [19, 21, 4829, 6040, 6068, 4563, 5260, 2]
 
-// Module 7488 (Sheet/BottomSheetBackdrop)
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+// Module 6571 (Sheet/BottomSheetBackdrop)
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

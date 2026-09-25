@@ -1,23 +1,23 @@
-// Module ID: 17219
-// Function ID: 17220
+// Module ID: 16434
+// Function ID: 16435
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 4821, 4869, 4474, 1074, 21, 4829, 576, 4825, 4673, 11226, 504, 9635, 1177, 9925, 13868, 17220, 2]
+// Dependencies: [5, 32, 19, 17, 4821, 4869, 4476, 1074, 21, 4829, 576, 4825, 4675, 10324, 504, 8733, 1177, 9023, 13025, 16435, 2]
 
-// Module 17219 (DMRow)
+// Module 16434 (DMRow)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import UserUtils from "UserUtils" /* 4673 */;
+import UserUtils from "UserUtils" /* 4675 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import BotTagDefault from "BotTag" /* 9635 */;
-import _modDef9925 from "module_9925" /* 9925 */;
-import ActivityStatusDefault from "ActivityStatus" /* 11226 */;
-import _modDef13868 from "module_13868" /* 13868 */;
+import BotTagDefault from "BotTag" /* 8733 */;
+import _modDef9023 from "module_9023" /* 9023 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10324 */;
+import _modDef13025 from "module_13025" /* 13025 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 import PresenceStore from "PresenceStore" /* 4869 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 
 const UserUtilsDefault = UserUtils;
 
@@ -166,7 +166,7 @@ export default noop.memo(function DMRow(user) {
       let tmp4Result = isOwner;
       if (isOwner) {
         const obj4 = { style: tmp3.tag, children: null };
-        const obj5 = { size: tmp5(1177).Icon.Sizes.REFRESH_SMALL_16, source: _modDef9925, disableColor: true };
+        const obj5 = { size: tmp5(1177).Icon.Sizes.REFRESH_SMALL_16, source: _modDef9023, disableColor: true };
         obj4.children = tmp4(tmp5(1177).Icon, obj5);
         tmp4Result = tmp4(tmp2, obj4);
       }
@@ -174,7 +174,7 @@ export default noop.memo(function DMRow(user) {
       let tmp4Result3 = null != premiumSince;
       if (tmp4Result3) {
         const obj6 = { style: tmp3.tag, children: null };
-        const obj7 = { size: tmp5(1177).Icon.Sizes.REFRESH_SMALL_16, source: _modDef13868, disableColor: true };
+        const obj7 = { size: tmp5(1177).Icon.Sizes.REFRESH_SMALL_16, source: _modDef13025, disableColor: true };
         obj6.children = tmp4(tmp5(1177).Icon, obj7);
         tmp4Result3 = tmp4(tmp2, obj6);
       }

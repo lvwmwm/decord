@@ -1,10 +1,10 @@
-// Module ID: 17396
-// Function ID: 17397
+// Module ID: 16613
+// Function ID: 16614
 // Name: AddModeratorsActionSheet
-// Dependencies: [5, 32, 19, 17, 2066, 8751, 21, 4829, 576, 504, 4982, 5720, 1978, 9908, 4522, 4796, 7483, 7482, 1115, 5273, 9936, 2052, 2]
+// Dependencies: [5, 32, 19, 17, 2066, 7841, 21, 4829, 576, 504, 4982, 5722, 1978, 9006, 4524, 4796, 6566, 6565, 1115, 5274, 9034, 2052, 2]
 // Exports: default
 
-// Module 17396 (AddModeratorsActionSheet)
+// Module 16613 (AddModeratorsActionSheet)
 import nativeDefault from "native" /* 576 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -13,7 +13,7 @@ import GuildStore from "GuildStore" /* 2066 */;
 
 const require = fn;
 const View = fn(17).View;
-const RowType = fn(8751).RowType;
+const RowType = fn(7841).RowType;
 const jsx = fn(21).jsx;
 const createStyles = fn(4829);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 } };
@@ -35,12 +35,12 @@ export default function AddModeratorsActionSheet(channel) {
         row = row.row;
         if (row.rowType === constants.ROLE) {
           closure_1 = closure_1 + 1;
-          let moderatorOverwrite = channel(5720).createModeratorOverwrite(row.id, channel(1978).PermissionOverwriteType.ROLE, closure_0);
-          const obj2 = channel(5720);
+          let moderatorOverwrite = channel(5722).createModeratorOverwrite(row.id, channel(1978).PermissionOverwriteType.ROLE, closure_0);
+          const obj2 = channel(5722);
         } else {
           closure_0 = closure_0 + 1;
-          moderatorOverwrite = channel(5720).createModeratorOverwrite(row.id, channel(1978).PermissionOverwriteType.MEMBER, closure_0);
-          const obj = channel(5720);
+          moderatorOverwrite = channel(5722).createModeratorOverwrite(row.id, channel(1978).PermissionOverwriteType.MEMBER, closure_0);
+          const obj = channel(5722);
         }
         return moderatorOverwrite;
       });
@@ -105,12 +105,12 @@ export default function AddModeratorsActionSheet(channel) {
       }
       const obj4 = { scrollable: true, header: null, startExpanded: true, children: null };
       obj2.trailing = tmp12(tmp13, obj7);
-      obj4.header = tmp12(tmp4(7482).BottomSheetTitleHeader, obj2);
+      obj4.header = tmp12(tmp4(6565).BottomSheetTitleHeader, obj2);
       const obj5 = { style: tmp.container, children: null };
       const obj6 = { inActionSheet: true, channel, guild: stateFromStores, permission: tmp4(2052).MODERATE_STAGE_CHANNEL_PERMISSIONS, pendingAdditions, setPendingAdditions: tmp2[1] };
-      obj5.children = tmp12(pendingAdditions(9936), obj6);
+      obj5.children = tmp12(pendingAdditions(9034), obj6);
       obj4.children = tmp12(View, obj5);
-      return tmp12(tmp4(7483).BottomSheet, obj4);
+      return tmp12(tmp4(6566).BottomSheet, obj4);
     }
     obj7 = { size: "sm", disabled: tmp11, text: null, onPress: null };
     const intl = tmp4(1115).intl;

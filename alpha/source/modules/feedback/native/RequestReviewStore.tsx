@@ -1,21 +1,21 @@
-// Module ID: 14062
-// Function ID: 14063
+// Module ID: 13223
+// Function ID: 13224
 // Name: RequestReviewStore
-// Dependencies: [4744, 1235, 2098, 1074, 14063, 4858, 14064, 4687, 4686, 6955, 14066, 1094, 510, 1241, 504, 573, 2]
+// Dependencies: [4746, 1235, 2098, 1074, 13224, 4858, 13225, 4689, 4688, 6038, 13227, 1094, 510, 1241, 504, 573, 2]
 
-// Module 14062 (RequestReviewStore)
+// Module 13223 (RequestReviewStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import RootNavigationRef from "RootNavigationRef" /* 4687 */;
+import RootNavigationRef from "RootNavigationRef" /* 4689 */;
 import TimeUtils from "TimeUtils" /* 4858 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6955 */;
-import RequestReviewNoTTIExperiment2 from "RequestReviewNoTTIExperiment" /* 14063 */;
-import requestReviewModalDefault from "requestReviewModal" /* 14064 */;
-import InstallTime from "InstallTime" /* 14066 */;
-import ExperimentStore from "ExperimentStore" /* 4744 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6038 */;
+import RequestReviewNoTTIExperiment2 from "RequestReviewNoTTIExperiment" /* 13224 */;
+import requestReviewModalDefault from "requestReviewModal" /* 13225 */;
+import InstallTime from "InstallTime" /* 13227 */;
+import ExperimentStore from "ExperimentStore" /* 4746 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
 
@@ -25,8 +25,8 @@ function showReviewRequestModal() {
   const rootNavigationRef = obj.getRootNavigationRef();
   let tmp3 = null != rootNavigationRef && rootNavigationRef.isReady();
   if (tmp3) {
-    tmp3 = null != tmp(4686).coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
-    const tmpResult = tmp(4686);
+    tmp3 = null != tmp(4688).coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
+    const tmpResult = tmp(4688);
   }
   const keyboardIsOpen = useKeyboardIsOpen.getKeyboardIsOpen();
   const tmp5 = null != SelectedChannelStore.getVoiceChannelId();
@@ -49,7 +49,7 @@ function showReviewRequestModal() {
     clearTimeout(timeout);
     timeout = -1;
   }
-  const RequestReviewNoTTIExperiment = tmp(14063).RequestReviewNoTTIExperiment;
+  const RequestReviewNoTTIExperiment = tmp(13224).RequestReviewNoTTIExperiment;
   let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
   let tmp18 = closure_10;
   if (closure_10) {
@@ -116,7 +116,7 @@ obj = {
       clearTimeout(timeout);
       timeout = -1;
     }
-    const RequestReviewNoTTIExperiment = tmp(14063).RequestReviewNoTTIExperiment;
+    const RequestReviewNoTTIExperiment = tmp(13224).RequestReviewNoTTIExperiment;
     let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
     let tmp13 = closure_10;
     if (closure_10) {
@@ -192,7 +192,7 @@ obj = {
         clearTimeout(timeout);
         timeout = -1;
       }
-      const RequestReviewNoTTIExperiment = tmp(14063).RequestReviewNoTTIExperiment;
+      const RequestReviewNoTTIExperiment = tmp(13224).RequestReviewNoTTIExperiment;
       let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
       let tmp8 = closure_10;
       if (closure_10) {

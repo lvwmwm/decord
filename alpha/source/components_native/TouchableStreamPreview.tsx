@@ -1,21 +1,21 @@
-// Module ID: 10405
-// Function ID: 10406
+// Module ID: 9507
+// Function ID: 9508
 // Name: TouchableStreamPreview
-// Dependencies: [19, 17, 4846, 4851, 502, 2044, 2066, 4464, 4848, 1074, 21, 4829, 4678, 576, 4974, 504, 1115, 5716, 4971, 5031, 5030, 4881, 5290, 10406, 4825, 2]
+// Dependencies: [19, 17, 4846, 4851, 502, 2044, 2066, 4466, 4848, 1074, 21, 4829, 4680, 576, 4974, 504, 1115, 5718, 4971, 5031, 5030, 4881, 5291, 9508, 4825, 2]
 // Exports: default
 
-// Module 10405 (TouchableStreamPreview)
+// Module 9507 (TouchableStreamPreview)
 import nativeDefault from "native" /* 576 */;
 import StreamActionCreators from "StreamActionCreators" /* 4971 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5030 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5716 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5718 */;
 import noop from "module_19" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 4846 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4851 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
 import VoiceStateStore from "VoiceStateStore" /* 4848 */;
 
 const require = globalThis.__r;
@@ -119,7 +119,7 @@ let obj3 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3.alignItems = "center";
 obj3.justifyContent = "center";
-const ColorUtils = fn(4678);
+const ColorUtils = fn(4680);
 obj3.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.PRIMARY_700, 0.7);
 obj2.ctaWrapper = obj3;
 obj2.ctaBackground = { height: 40, paddingHorizontal: 16, borderRadius: 20, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_500, justifyContent: "center", alignItems: "center" };

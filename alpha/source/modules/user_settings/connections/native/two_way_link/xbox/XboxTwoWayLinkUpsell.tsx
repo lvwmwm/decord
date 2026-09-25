@@ -1,17 +1,17 @@
-// Module ID: 15311
-// Function ID: 15312
+// Module ID: 14477
+// Function ID: 14478
 // Name: XboxTwoWayLinkUpsell
-// Dependencies: [19, 1074, 21, 4829, 2110, 15312, 1115, 5892, 15313, 2028, 9423, 2]
+// Dependencies: [19, 1074, 21, 4829, 2110, 14478, 1115, 5894, 14479, 2028, 8521, 2]
 // Exports: XboxTwoWayLinkUpsell
 
-// Module 15311 (XboxTwoWayLinkUpsell)
+// Module 14477 (XboxTwoWayLinkUpsell)
 import util from "util" /* 1115 */;
 import dismissible_content from "dismissible_content" /* 2028 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
-import FastImageDefault from "FastImage" /* 5892 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9423 */;
-import OneWayToTwoWayLinkUpsell from "OneWayToTwoWayLinkUpsell" /* 15312 */;
-import _modDef15313 from "module_15313" /* 15313 */;
+import FastImageDefault from "FastImage" /* 5894 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 8521 */;
+import OneWayToTwoWayLinkUpsell from "OneWayToTwoWayLinkUpsell" /* 14478 */;
+import _modDef14479 from "module_14479" /* 14479 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -32,7 +32,7 @@ export const XboxTwoWayLinkUpsell = function XboxTwoWayLinkUpsell() {
   const intl2 = util.intl;
   obj2.body = intl2.format(util.t.OnERSS, { help_article: articleURL });
   const obj3 = { style: tmp.upsellImage, source: null, resizeMode: "contain" };
-  obj3.source = _modDef15313;
+  obj3.source = _modDef14479;
   obj2.img = jsx(FastImageDefault, { style: tmp.upsellImage, source: null, resizeMode: "contain" });
   obj2.newIndicatorDismissibleContent = dismissible_content.DismissibleContent.XBOX_ONE_WAY_RECONNECT;
   obj2.onPress = function onPress() {

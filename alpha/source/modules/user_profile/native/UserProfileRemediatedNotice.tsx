@@ -1,16 +1,16 @@
-// Module ID: 13526
-// Function ID: 13527
+// Module ID: 12678
+// Function ID: 12679
 // Name: UserProfileRemediatedNotice
-// Dependencies: [19, 17, 4474, 1074, 21, 4829, 576, 8589, 563, 4825, 1115, 10087, 2]
+// Dependencies: [19, 17, 4476, 1074, 21, 4829, 576, 7679, 563, 4825, 1115, 9184, 2]
 // Exports: default
 
-// Module 13526 (UserProfileRemediatedNotice)
+// Module 12678 (UserProfileRemediatedNotice)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8589 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10087 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7679 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9184 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 
 require = fn;
 const View = fn(17).View;

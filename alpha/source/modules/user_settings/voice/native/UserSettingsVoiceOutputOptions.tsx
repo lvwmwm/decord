@@ -1,13 +1,13 @@
-// Module ID: 10332
-// Function ID: 10333
+// Module ID: 9430
+// Function ID: 9431
 // Name: UserSettingsVoiceOutputOptions
-// Dependencies: [19, 17, 4851, 502, 1992, 4854, 21, 4829, 504, 38, 9995, 10326, 1115, 5910, 10333, 2]
+// Dependencies: [19, 17, 4851, 502, 1992, 4854, 21, 4829, 504, 38, 9093, 9423, 1115, 5912, 9431, 2]
 // Exports: default
 
-// Module 10332 (UserSettingsVoiceOutputOptions)
+// Module 9430 (UserSettingsVoiceOutputOptions)
 import _modDef38 from "module_38" /* 38 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9995 */;
-import VolumeSliderDefault from "VolumeSlider" /* 10333 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9093 */;
+import VolumeSliderDefault from "VolumeSlider" /* 9431 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4851 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -76,7 +76,7 @@ export default function UserSettingsVoiceOutputOptions() {
   obj7.accessibilityLabel = intl3.string(stateFromStores1(1115).t.xPHVBs);
   obj6.children = closure_9(VolumeSliderDefault, obj7);
   obj5.subLabel = closure_9(View, obj6);
-  const items4 = [closure_9(stateFromStores1(5910).TableRow, obj5), ];
+  const items4 = [closure_9(stateFromStores1(5912).TableRow, obj5), ];
   let tmp9Result = null != stateFromStores1;
   if (tmp9Result) {
     const obj8 = { label: null, subLabel: null };
@@ -88,10 +88,10 @@ export default function UserSettingsVoiceOutputOptions() {
     obj10.accessibilityLabel = intl5.string(tmp2(1115).t.pEAl4b);
     obj9.children = tmp9(VolumeSliderDefault, obj10);
     obj8.subLabel = tmp9(tmp10, obj9);
-    tmp9Result = tmp9(tmp2(5910).TableRow, obj8);
+    tmp9Result = tmp9(tmp2(5912).TableRow, obj8);
     const tmp11Result = VolumeSliderDefault;
   }
   items4[1] = tmp9Result;
   obj4.children = items4;
-  return tmp8(stateFromStores1(10326).UserSettingsTableRowGroup, obj4);
+  return tmp8(stateFromStores1(9423).UserSettingsTableRowGroup, obj4);
 };

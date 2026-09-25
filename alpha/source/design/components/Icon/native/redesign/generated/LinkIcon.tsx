@@ -1,12 +1,12 @@
 // Module ID: 4771
 // Function ID: 4772
 // Name: LinkIcon
-// Dependencies: [19, 21, 576, 4525, 4772, 2]
+// Dependencies: [19, 21, 576, 4527, 4772, 2]
 // Exports: LinkIcon
 
 // Module 4771 (LinkIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
 import _mod4772 from "module_4772" /* 4772 */;
 import noop from "module_19" /* 19 */;
 

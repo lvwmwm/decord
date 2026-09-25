@@ -1,15 +1,15 @@
-// Module ID: 9371
-// Function ID: 9372
+// Module ID: 8469
+// Function ID: 8470
 // Name: UserProfileApplicationWidgetFieldUtils
-// Dependencies: [19, 17, 21, 4829, 576, 1115, 9372, 4825, 9373, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 1115, 8470, 4825, 8471, 2]
 // Exports: FieldText, formatDurationNarrow
 
-// Module 9371 (UserProfileApplicationWidgetFieldUtils)
+// Module 8469 (UserProfileApplicationWidgetFieldUtils)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 9372 */;
-import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 9373 */;
+import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 8470 */;
+import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 8471 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,13 +1,13 @@
-// Module ID: 7291
-// Function ID: 7292
+// Module ID: 6374
+// Function ID: 6375
 // Name: MobilePhoneIcon
-// Dependencies: [19, 21, 576, 4525, 7292, 2]
+// Dependencies: [19, 21, 576, 4527, 6375, 2]
 // Exports: MobilePhoneIcon
 
-// Module 7291 (MobilePhoneIcon)
+// Module 6374 (MobilePhoneIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
-import _mod7292 from "module_7292" /* 7292 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
+import _mod6375 from "module_6375" /* 6375 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const MobilePhoneIcon = function MobilePhoneIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod7292, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod6375, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

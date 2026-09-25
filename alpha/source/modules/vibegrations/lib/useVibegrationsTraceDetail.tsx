@@ -1,10 +1,10 @@
-// Module ID: 17175
-// Function ID: 17176
+// Module ID: 16390
+// Function ID: 16391
 // Name: useVibegrationsTraceDetail
-// Dependencies: [32, 19, 17171, 2]
+// Dependencies: [32, 19, 16386, 2]
 // Exports: useVibegrationsTraceDetail
 
-// Module 17175 (useVibegrationsTraceDetail)
+// Module 16390 (useVibegrationsTraceDetail)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

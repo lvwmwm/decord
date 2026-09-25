@@ -1,17 +1,17 @@
-// Module ID: 15242
-// Function ID: 15243
+// Module ID: 14408
+// Function ID: 14409
 // Name: FamilyCenterTopActivity
-// Dependencies: [19, 17, 1372, 7867, 21, 4829, 576, 563, 4796, 15243, 1980, 15244, 10095, 1115, 2486, 4825, 1177, 5889, 2]
+// Dependencies: [19, 17, 1372, 6952, 21, 4829, 576, 563, 4796, 14409, 1980, 14410, 9192, 1115, 2486, 4825, 1177, 5891, 2]
 // Exports: default
 
-// Module 15242 (FamilyCenterTopActivity)
+// Module 14408 (FamilyCenterTopActivity)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import GuildIcon from "GuildIcon" /* 5889 */;
+import GuildIcon from "GuildIcon" /* 5891 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7867 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6952 */;
 
 const require = globalThis.__r;
 const GuildIconDefault = GuildIcon;
@@ -43,7 +43,7 @@ export default function FamilyCenterTopActivity() {
   const items2 = [stateFromStores];
   [][0] = stateFromStores1;
   const callback = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15243, dependencyMap.paths), "FamilyCenterTopUsers", { topUserActivities: stateFromStores });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14409, dependencyMap.paths), "FamilyCenterTopUsers", { topUserActivities: stateFromStores });
   }, items2);
   if (0 !== stateFromStores.length) {
     const obj3 = { style: tmp.container, children: null };
@@ -63,7 +63,7 @@ export default function FamilyCenterTopActivity() {
               user = user.getUser(user_id.user_id);
               let tmp2 = null;
               if (null != user) {
-                const obj = { user, size: closure_0(stateFromStores1[16]).AvatarSizes.SMALL, guildId: "r" };
+                const obj = { user, size: closure_0(stateFromStores1[16]).AvatarSizes.SMALL, guildId: "Array" };
                 tmp2 = closure_1_7(closure_0(stateFromStores1[16]).Avatar, obj, user.id);
               }
               return tmp2;

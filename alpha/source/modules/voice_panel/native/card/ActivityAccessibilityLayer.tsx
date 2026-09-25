@@ -1,11 +1,11 @@
-// Module ID: 17712
-// Function ID: 17713
+// Module ID: 16936
+// Function ID: 16937
 // Name: ActivityAccessibilityLayer
-// Dependencies: [32, 19, 17, 12615, 21, 4829, 5267, 1115, 5255, 5258, 2]
+// Dependencies: [32, 19, 17, 11741, 21, 4829, 5268, 1115, 5256, 5259, 2]
 // Exports: default
 
-// Module 17712 (ActivityAccessibilityLayer)
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5267 */;
+// Module 16936 (ActivityAccessibilityLayer)
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5268 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -74,7 +74,7 @@ function FocusedActivityAccessibilityLayer(activityName) {
 }
 get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, StyleSheet: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const IS_IOS = fn(12615).IS_IOS;
+const IS_IOS = fn(11741).IS_IOS;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const createStyles = fn(4829);

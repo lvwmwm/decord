@@ -1,19 +1,19 @@
-// Module ID: 8574
-// Function ID: 8575
+// Module ID: 7664
+// Function ID: 7665
 // Name: useProfileEffect
-// Dependencies: [19, 7872, 7887, 7878, 504, 7871, 2]
+// Dependencies: [19, 6957, 6972, 6963, 504, 6956, 2]
 // Exports: default
 
-// Module 8574 (useProfileEffect)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7871 */;
+// Module 7664 (useProfileEffect)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6956 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7872 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7887 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6957 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6972 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const isProfileEffectRecord = fn(7878).isProfileEffectRecord;
+const isProfileEffectRecord = fn(6963).isProfileEffectRecord;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/collectibles/profile_effects/useProfileEffect.tsx");
 

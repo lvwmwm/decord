@@ -1,13 +1,13 @@
-// Module ID: 8296
-// Function ID: 8297
+// Module ID: 7385
+// Function ID: 7386
 // Name: ForumPostActions
-// Dependencies: [1074, 8294, 4780, 8297, 1231, 4772, 1115, 2110, 8298, 7422, 1397, 8299, 4476, 4482, 2]
+// Dependencies: [1074, 7383, 4780, 7386, 1231, 4772, 1115, 2110, 7387, 6505, 1397, 7388, 4478, 4484, 2]
 // Exports: createDefaultReaction, createForumPostActions
 
-// Module 8296 (ForumPostActions)
+// Module 7385 (ForumPostActions)
 import Constants from "Constants" /* 1074 */;
-import ReactionUtils from "ReactionUtils" /* 4476 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8294 */;
+import ReactionUtils from "ReactionUtils" /* 4478 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7383 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
@@ -28,7 +28,7 @@ export const createDefaultReaction = function createDefaultReaction(arg0) {
         if (str2 == null) {
           str2 = "";
         }
-        const obj4 = { id: emojiId, name: "a", animated: customGuildEmoji.animated, src: false, displayName: false };
+        const obj4 = { id: emojiId, name: "a", animated: customGuildEmoji.animated, src: 3516335012297995500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, displayName: 8168202720377764000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
         const obj5 = { id: emojiId, animated: customGuildEmoji.animated, size: 48 };
         obj4.src = emojiId(str2[10]).getEmojiURL(obj5);
         const obj6 = emojiId(str2[10]);
@@ -78,13 +78,13 @@ export const createForumPostActions = function createForumPostActions(arg0) {
     let tmp6 = tmp4;
     let tmp8 = tmp;
   } else {
-    assetUriForEmbed = getAssetUriForEmbed(tmp4(8297));
+    assetUriForEmbed = getAssetUriForEmbed(tmp4(7386));
     tmp6 = tmp4;
     tmp8 = tmp;
   }
   if (null != assetUriForEmbed) {
     let stringResult;
-    const assetUriForEmbed1 = tmp8(8294).getAssetUriForEmbed(tmp6(4772));
+    const assetUriForEmbed1 = tmp8(7383).getAssetUriForEmbed(tmp6(4772));
     if (!hasReactions) {
       let emoji;
       if (defaultReaction != null) {
@@ -108,11 +108,11 @@ export const createForumPostActions = function createForumPostActions(arg0) {
       const intl4 = tmp8(1115).intl;
       obj.cta = intl4.string(tmp8(1115).t.C5UQC9);
       const tmp6Result = tmp6(2110);
-      obj.icon = tmp8(8294).getAssetUriForEmbed(tmp6(8298));
-      const tmp8Result3 = tmp8(8294);
-      obj.closeIcon = tmp8(8294).getAssetUriForEmbed(tmp6(7422));
+      obj.icon = tmp8(7383).getAssetUriForEmbed(tmp6(7387));
+      const tmp8Result3 = tmp8(7383);
+      obj.closeIcon = tmp8(7383).getAssetUriForEmbed(tmp6(6505));
       tmp14 = obj;
-      const tmp8Result4 = tmp8(8294);
+      const tmp8Result4 = tmp8(7383);
     }
     const obj4 = { numDisplayedReactions: 3, isFollowing, followIcon: assetUriForEmbed, followLabel: null, shareIcon: null, shareLabel: null, defaultReaction: null, addReactLabel: null, sharePrompt: null };
     const intl5 = tmp8(1115).intl;
@@ -133,7 +133,7 @@ export const createForumPostActions = function createForumPostActions(arg0) {
     return obj4;
   } else {
     const _HermesInternal = HermesInternal;
-    tmp6(1231).captureMessage("Forum follow is null. isFollowing: " + isFollowing + " icon: " + tmp6(isFollowing ? 4780 : 8297));
+    tmp6(1231).captureMessage("Forum follow is null. isFollowing: " + isFollowing + " icon: " + tmp6(isFollowing ? 4780 : 7386));
     const tmp6Result2 = tmp6(1231);
   }
 };

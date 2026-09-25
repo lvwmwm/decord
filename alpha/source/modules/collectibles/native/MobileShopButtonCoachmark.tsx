@@ -1,10 +1,10 @@
-// Module ID: 17362
-// Function ID: 17363
+// Module ID: 16577
+// Function ID: 16578
 // Name: MobileShopButtonCoachmark
-// Dependencies: [19, 17, 2041, 21, 4829, 576, 1115, 11480, 2]
+// Dependencies: [19, 17, 2041, 21, 4829, 576, 1115, 10578, 2]
 // Exports: default
 
-// Module 17362 (MobileShopButtonCoachmark)
+// Module 16577 (MobileShopButtonCoachmark)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import noop from "module_19" /* 19 */;

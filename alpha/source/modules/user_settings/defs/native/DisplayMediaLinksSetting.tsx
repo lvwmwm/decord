@@ -1,13 +1,13 @@
-// Module ID: 15813
-// Function ID: 15814
+// Module ID: 14983
+// Function ID: 14984
 // Name: DisplayMediaLinksSetting
-// Dependencies: [8323, 11811, 1115, 2020, 2]
+// Dependencies: [7412, 10993, 1115, 2020, 2]
 
-// Module 15813 (DisplayMediaLinksSetting)
+// Module 14983 (DisplayMediaLinksSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import SettingsConstants from "SettingsConstants" /* 8323 */;
-import SettingBuilders from "SettingBuilders" /* 11811 */;
+import SettingsConstants from "SettingsConstants" /* 7412 */;
+import SettingBuilders from "SettingBuilders" /* 10993 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({

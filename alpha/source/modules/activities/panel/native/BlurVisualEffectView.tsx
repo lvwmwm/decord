@@ -1,19 +1,19 @@
-// Module ID: 17592
-// Function ID: 17593
+// Module ID: 16816
+// Function ID: 16817
 // Name: BlurVisualEffectView
-// Dependencies: [19, 17, 1074, 21, 4678, 576, 4526, 5261, 2]
+// Dependencies: [19, 17, 1074, 21, 4680, 576, 4528, 5262, 2]
 
-// Module 17592 (BlurVisualEffectView)
+// Module 16816 (BlurVisualEffectView)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4526 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5261 */;
+import useToken from "useToken" /* 4528 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5262 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const StyleSheet = fn(17).StyleSheet;
 const ThemeTypes = fn(1074).ThemeTypes;
 const jsx = fn(21).jsx;
-const ColorUtils = fn(4678);
+const ColorUtils = fn(4680);
 const tintColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.24);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/panel/native/BlurVisualEffectView.tsx");

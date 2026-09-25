@@ -1,9 +1,15 @@
 // Module ID: 13892
 // Function ID: 13893
-// Dependencies: [1121]
+// Dependencies: [13840, 13859, 13849]
 
 // Module 13892
-import registerAsset from "module_1121" /* 1121 */;
+import _mod13840 from "module_13840" /* 13840 */;
+import _mod13849 from "module_13849" /* 13849 */;
+import all from "module_13859" /* 13859 */;
 
+let closure_0 = _mod13840(Function.toString);
+if (!all(_mod13849.inspectSource)) {
+  _mod13849.inspectSource = (arg0) => closure_0(arg0);
+}
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "2e0d6978350694e35552111153599c69", name: "BoostTier3Icon", type: "png" });
+export default _mod13849.inspectSource;

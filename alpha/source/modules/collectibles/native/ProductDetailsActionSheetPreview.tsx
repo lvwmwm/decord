@@ -1,14 +1,14 @@
-// Module ID: 13538
-// Function ID: 13539
+// Module ID: 12690
+// Function ID: 12691
 // Name: ProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 21, 4829, 576, 1973, 13539, 13541, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 1973, 12691, 12693, 2]
 // Exports: default
 
-// Module 13538 (ProductDetailsActionSheetPreview)
+// Module 12690 (ProductDetailsActionSheetPreview)
 import nativeDefault from "native" /* 576 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import BundleProductDetailsActionSheetPreviewDefault from "BundleProductDetailsActionSheetPreview" /* 13539 */;
-import IndividualProductPreview from "IndividualProductPreview" /* 13541 */;
+import BundleProductDetailsActionSheetPreviewDefault from "BundleProductDetailsActionSheetPreview" /* 12691 */;
+import IndividualProductPreview from "IndividualProductPreview" /* 12693 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

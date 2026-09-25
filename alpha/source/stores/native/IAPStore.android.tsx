@@ -1,15 +1,15 @@
-// Module ID: 7570
-// Function ID: 7571
+// Module ID: 6653
+// Function ID: 6654
 // Name: IAPStore
-// Dependencies: [7571, 1085, 7567, 4498, 504, 573, 2]
+// Dependencies: [6654, 1085, 6650, 4500, 504, 573, 2]
 
-// Module 7570 (IAPStore)
+// Module 6653 (IAPStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants2 from "Constants" /* 1085 */;
-import BillingUtils from "BillingUtils" /* 4498 */;
-import PriceUtils from "PriceUtils" /* 7567 */;
-import Constants from "Constants" /* 7571 */;
+import BillingUtils from "BillingUtils" /* 4500 */;
+import PriceUtils from "PriceUtils" /* 6650 */;
+import Constants from "Constants" /* 6654 */;
 import size from "module_2" /* 2 */;
 
 function updateProduct(currencyCode) {

@@ -1,13 +1,13 @@
-// Module ID: 11920
-// Function ID: 11921
+// Module ID: 11063
+// Function ID: 11064
 // Name: UserProfileSection
-// Dependencies: [19, 17, 21, 4829, 576, 4535, 7517, 4678, 8957, 4825, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4537, 6600, 4680, 8051, 4825, 2]
 // Exports: default
 
-// Module 11920 (UserProfileSection)
+// Module 11063 (UserProfileSection)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4535 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7517 */;
+import native from "native" /* 4537 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 6600 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -32,8 +32,8 @@ export default function UserProfileSection(title) {
   const merged1 = Object.assign(tmp2.contentContainer);
   if (null != primaryColor) {
     if (null != profileThemeValues) {
-      let borderColor = tmp3(4678).hexOpacityToRgba(tmp3(8957).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
-      const tmp3Result = tmp3(4678);
+      let borderColor = tmp3(4680).hexOpacityToRgba(tmp3(8051).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+      const tmp3Result = tmp3(4680);
     }
     obj3.borderColor = borderColor;
     const obj4 = { style: null };

@@ -1,20 +1,20 @@
-// Module ID: 15141
-// Function ID: 15142
+// Module ID: 14307
+// Function ID: 14308
 // Name: UserSettingsInputAlert
-// Dependencies: [19, 21, 1271, 5271, 4825, 6936, 5292, 5883, 2]
+// Dependencies: [19, 21, 1271, 5272, 4825, 6019, 5293, 5885, 2]
 
-// Module 15141 (UserSettingsInputAlert)
+// Module 14307 (UserSettingsInputAlert)
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import Stack_Stack from "Stack/Stack" /* 5271 */;
-import common_AlertDefault from "common/Alert" /* 5292 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 5883 */;
-import TextInput from "TextInput" /* 6936 */;
+import Stack_Stack from "Stack/Stack" /* 5272 */;
+import common_AlertDefault from "common/Alert" /* 5293 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 5885 */;
+import TextInput from "TextInput" /* 6019 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const hasOwnProperty = { input: "", error: "paddingHorizontal" };
+const hasOwnProperty = { input: "", error: "channelId" };
 const PureComponent = noop.PureComponent;
 class UserSettingsInputAlert extends PureComponent {
   constructor() {

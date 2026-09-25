@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 78 (pointsDiffer)
-let closure_0 = { x: "channel", y: "channelId" };
+let closure_0 = { x: "isArray", y: "paddingHorizontal" };
 
 export default function pointsDiffer(arg0, arg1) {
   let point = arg0;

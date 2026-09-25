@@ -1,10 +1,10 @@
-// Module ID: 12093
-// Function ID: 12094
+// Module ID: 11238
+// Function ID: 11239
 // Name: UserActivityActionCreators
-// Dependencies: [5, 4869, 1074, 573, 12090, 1271, 2]
+// Dependencies: [5, 4869, 1074, 573, 11235, 1271, 2]
 // Exports: getMetadata, play, sync
 
-// Module 12093 (UserActivityActionCreators)
+// Module 11238 (UserActivityActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import PresenceStore from "PresenceStore" /* 4869 */;

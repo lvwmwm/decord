@@ -1,12 +1,12 @@
-// Module ID: 8169
-// Function ID: 8170
+// Module ID: 7254
+// Function ID: 7255
 // Name: UploaderBase
-// Dependencies: [5, 1074, 4822, 3, 568, 12, 5480, 5440, 5441, 2]
+// Dependencies: [5, 1074, 4822, 3, 568, 12, 5482, 5441, 5442, 2]
 
-// Module 8169 (UploaderBase)
+// Module 7254 (UploaderBase)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import uploader_UploadUtils from "uploader/UploadUtils" /* 5440 */;
+import uploader_UploadUtils from "uploader/UploadUtils" /* 5441 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -80,7 +80,7 @@ class UploaderBase extends EventEmitter {
     };
     obj = closure_1(closure_2[5]);
     tmp3.id = obj.uniqueId("Uploader");
-    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "category" };
+    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "channel" };
     return tmp3;
   }
 }

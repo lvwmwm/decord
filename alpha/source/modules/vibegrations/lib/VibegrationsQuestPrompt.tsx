@@ -1,11 +1,11 @@
-// Module ID: 17150
-// Function ID: 17151
+// Module ID: 16364
+// Function ID: 16365
 // Name: VibegrationsQuestPrompt
-// Dependencies: [11825, 8022, 2]
+// Dependencies: [10669, 7107, 2]
 // Exports: dismissQuestPrompt, isQuestPromptDismissed, watchableQuest
 
-// Module 17150 (VibegrationsQuestPrompt)
-import QuestsEligibility from "QuestsEligibility" /* 11825 */;
+// Module 16364 (VibegrationsQuestPrompt)
+import QuestsEligibility from "QuestsEligibility" /* 10669 */;
 import size from "module_2" /* 2 */;
 
 let c2 = false;
@@ -36,7 +36,7 @@ export const watchableQuest = function watchableQuest(quest, arg1) {
           completedAt = userStatus.completedAt;
         }
       }
-      tmp5Result = tmp5(8022);
+      tmp5Result = tmp5(7107);
     }
     obj = QuestsEligibility;
     tmp5 = require;

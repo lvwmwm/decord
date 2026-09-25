@@ -1,23 +1,23 @@
-// Module ID: 15924
-// Function ID: 15925
+// Module ID: 15094
+// Function ID: 15095
 // Name: UserSettingsStartupTimings
-// Dependencies: [5, 32, 19, 17, 1346, 1074, 21, 4829, 576, 4825, 4693, 1612, 10540, 504, 9, 7805, 8711, 9077, 5271, 5992, 5909, 1347, 5910, 13302, 2]
+// Dependencies: [5, 32, 19, 17, 1346, 1074, 21, 4829, 576, 4825, 4695, 1612, 9642, 504, 9, 6890, 7801, 8171, 5272, 5994, 5911, 1347, 5912, 12452, 2]
 // Exports: default
 
-// Module 15924 (UserSettingsStartupTimings)
+// Module 15094 (UserSettingsStartupTimings)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import Stack_Stack from "Stack/Stack" /* 5271 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5909 */;
-import TableRow from "TableRow" /* 5910 */;
-import TableRowGroup from "TableRowGroup" /* 5992 */;
-import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 10540 */;
-import ShareIcon from "ShareIcon" /* 13302 */;
+import Stack_Stack from "Stack/Stack" /* 5272 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5911 */;
+import TableRow from "TableRow" /* 5912 */;
+import TableRowGroup from "TableRowGroup" /* 5994 */;
+import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 9642 */;
+import ShareIcon from "ShareIcon" /* 12452 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
-import NativeTTIManagerModule from "NativeTTIManagerModule" /* 4693 */;
+import NativeTTIManagerModule from "NativeTTIManagerModule" /* 4695 */;
 
 const require = globalThis.__r;
 
@@ -97,7 +97,7 @@ export default function UserSettingsStartupTimings() {
             closure_128_1 = undefined;
             dependencyMap = 1;
             c3 = 1;
-            const obj5 = { value: tmp5(4693).getAppFirstVisibleTimestamp(), done: false };
+            const obj5 = { value: tmp5(4695).getAppFirstVisibleTimestamp(), done: false };
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -109,9 +109,9 @@ export default function UserSettingsStartupTimings() {
           return obj6;
         } else {
           closure_128_0 = value;
-          closure_128_1 = tmp5(10540)(closure_128_0);
+          closure_128_1 = tmp5(9642)(closure_128_0);
           const obj7 = { message: closure_128_1 };
-          tmp2(8711).showShareActionSheet(obj7, "Startup Timing");
+          tmp2(7801).showShareActionSheet(obj7, "Startup Timing");
           c3 = 3;
           return { value: "HermesInternal", done: null };
         }
@@ -261,6 +261,6 @@ export default function UserSettingsStartupTimings() {
   obj5.renderItem = function renderItem(children) {
     return closure_8(lastTrackedAppUiViewed2Properties, { children: children.item });
   };
-  obj4.children = closure_8(tmp10(9077).FlashList, obj5);
+  obj4.children = closure_8(tmp10(8171).FlashList, obj5);
   return closure_8(checked, obj4);
 };

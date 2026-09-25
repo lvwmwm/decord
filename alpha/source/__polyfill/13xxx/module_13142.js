@@ -1,35 +1,9 @@
 // Module ID: 13142
 // Function ID: 13143
-// Dependencies: [13143, 13146]
-// Exports: addGlobalErrorInstrumentationHandler
+// Dependencies: [1121]
 
 // Module 13142
-import _mod13143 from "module_13143" /* 13143 */;
-import _mod13146 from "module_13146" /* 13146 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-require = arg1;
-const dependencyMap = arg6;
-function instrumentError() {
-  onerror = _mod13146.GLOBAL_OBJ.onerror;
-  _mod13146.GLOBAL_OBJ.onerror = function(msg, url, line, column, error) {
-    _mod13143.triggerHandlers("error", { column, error, line, msg, url });
-    if (!onerror) {
-      return tmp2;
-    } else {
-      const self = this;
-      const apply = onerror.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-    }
-  };
-  _mod13146.GLOBAL_OBJ.onerror.__SENTRY_INSTRUMENTED__ = true;
-}
-let onerror = null;
 
-export const addGlobalErrorInstrumentationHandler = function addGlobalErrorInstrumentationHandler(arg0) {
-  _mod13143.addHandler("error", arg0);
-  _mod13143.maybeInstrument("error", instrumentError);
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/flower_star/dark", width: 24, height: 23, scales: [2, 3], hash: "0e23713e9cb6c9f18c86b80cbd5851e5", name: "tier_3_24px", type: "png" });

@@ -1,19 +1,19 @@
-// Module ID: 10485
-// Function ID: 10486
+// Module ID: 9587
+// Function ID: 9588
 // Name: InAppNotificationSettingsModal
-// Dependencies: [19, 2048, 2044, 4474, 5010, 1372, 1074, 21, 7452, 7447, 4982, 8951, 1115, 10486, 7712, 504, 5929, 7333, 2]
+// Dependencies: [19, 2048, 2044, 4476, 5010, 1372, 1074, 21, 6535, 6530, 4982, 8045, 1115, 9588, 6795, 504, 5931, 6416, 2]
 
-// Module 10485 (InAppNotificationSettingsModal)
+// Module 9587 (InAppNotificationSettingsModal)
 import util from "util" /* 1115 */;
 import useChannelName from "useChannelName" /* 4982 */;
-import NavigatorHeader from "NavigatorHeader" /* 5929 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7447 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7452 */;
-import Form from "Form" /* 8951 */;
-import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 10486 */;
+import NavigatorHeader from "NavigatorHeader" /* 5931 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6530 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6535 */;
+import Form from "Form" /* 8045 */;
+import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 9588 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -151,7 +151,7 @@ export default noop.memo((channelId) => {
           channelName = tmp3Result.computeChannelName(tmp, UserStore, RelationshipStore, true);
         }
         obj.subtitle = channelName;
-        return closure_2_11(channelId(5929).NavigatorHeader, obj);
+        return closure_2_11(channelId(5931).NavigatorHeader, obj);
       },
       headerLeft: NavigatorHeader.getHeaderCloseButton(onClose),
       render() {
@@ -161,5 +161,5 @@ export default noop.memo((channelId) => {
     obj.IN_APP_NOTIFICATION_SETTINGS = obj2;
     return obj;
   }, items);
-  return closure_11(channelId(7333).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
+  return closure_11(channelId(6416).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
 });

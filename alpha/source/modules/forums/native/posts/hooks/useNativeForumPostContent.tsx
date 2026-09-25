@@ -1,14 +1,14 @@
-// Module ID: 12366
-// Function ID: 12367
+// Module ID: 11492
+// Function ID: 11493
 // Name: useNativeForumPostContent
-// Dependencies: [1074, 4829, 1115, 7600, 5190, 2]
+// Dependencies: [1074, 4829, 1115, 6683, 5191, 2]
 // Exports: default
 
-// Module 12366 (useNativeForumPostContent)
+// Module 11492 (useNativeForumPostContent)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
-import StickersUtils from "StickersUtils" /* 5190 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7600 */;
+import StickersUtils from "StickersUtils" /* 5191 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6683 */;
 import createStyles from "createStyles" /* 4829 */;
 import size from "module_2" /* 2 */;
 

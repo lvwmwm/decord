@@ -1,15 +1,15 @@
-// Module ID: 9260
-// Function ID: 9261
+// Module ID: 8358
+// Function ID: 8359
 // Name: GameDetectionReportModal
-// Dependencies: [32, 19, 17, 21, 4829, 576, 1484, 9037, 9261, 5032, 1115, 7707, 5985, 5929, 4825, 5990, 5993, 6936, 5273, 7418, 7333, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 1484, 8131, 8359, 5032, 1115, 6790, 5987, 5931, 4825, 5992, 5995, 6019, 5274, 6501, 6416, 2]
 // Exports: default
 
-// Module 9260 (GameDetectionReportModal)
+// Module 8358 (GameDetectionReportModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import NavigatorHeader from "NavigatorHeader" /* 5929 */;
-import Navigator from "Navigator" /* 7333 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9037 */;
+import NavigatorHeader from "NavigatorHeader" /* 5931 */;
+import Navigator from "Navigator" /* 6416 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8131 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

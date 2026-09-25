@@ -1,13 +1,13 @@
-// Module ID: 8612
-// Function ID: 8613
+// Module ID: 7702
+// Function ID: 7703
 // Name: useVideoControls
-// Dependencies: [32, 19, 4821, 21, 560, 1248, 8613, 4829, 504, 8614, 8622, 8615, 8610, 8623, 2]
+// Dependencies: [32, 19, 4821, 21, 560, 1248, 7703, 4829, 504, 7704, 7712, 7705, 7700, 7713, 2]
 // Exports: default, initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8612 (useVideoControls)
+// Module 7702 (useVideoControls)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 8610 */;
-import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8613 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 7700 */;
+import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 7703 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;

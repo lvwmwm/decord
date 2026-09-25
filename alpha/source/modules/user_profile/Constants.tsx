@@ -1,12 +1,12 @@
-// Module ID: 8531
-// Function ID: 8532
+// Module ID: 7621
+// Function ID: 7622
 // Name: Constants
-// Dependencies: [1074, 8532, 2]
+// Dependencies: [1074, 7622, 2]
 // Exports: getBadgeAssetFromCDN, getBadgeName
 
-// Module 8531 (Constants)
+// Module 7621 (Constants)
 import Constants from "Constants" /* 1074 */;
-import BadgeId from "BadgeId" /* 8532 */;
+import BadgeId from "BadgeId" /* 7622 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

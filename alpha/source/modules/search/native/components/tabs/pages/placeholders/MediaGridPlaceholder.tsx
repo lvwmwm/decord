@@ -1,25 +1,25 @@
-// Module ID: 17215
-// Function ID: 17216
+// Module ID: 16430
+// Function ID: 16431
 // Name: MediaGridPlaceholder
-// Dependencies: [19, 17, 8209, 21, 4829, 576, 17214, 4561, 17216, 12, 4825, 1115, 12681, 17217, 2]
+// Dependencies: [19, 17, 7298, 21, 4829, 576, 16429, 4563, 16431, 12, 4825, 1115, 11807, 16432, 2]
 // Exports: RecentsMediaGridPlaceholder, default
 
-// Module 17215 (MediaGridPlaceholder)
+// Module 16430 (MediaGridPlaceholder)
 import _mod12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4563 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12681 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 17214 */;
-import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 17216 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 11807 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 16429 */;
+import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 16431 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const SearchConstants = fn(8209);
+const SearchConstants = fn(7298);
 ({ MEDIA_NUM_COLUMNS: hasOwnProperty, MEDIA_ITEM_GAP_WIDTH: metroRequire, SEARCH_LIST_SECTION_TOP_PADDING, SEARCH_LIST_HORIZONTAL_PADDING } = SearchConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
@@ -91,5 +91,5 @@ export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(
     })
   ];
   obj2.children = items4;
-  return closure_8(numRows(4561).View, obj2);
+  return closure_8(numRows(4563).View, obj2);
 };

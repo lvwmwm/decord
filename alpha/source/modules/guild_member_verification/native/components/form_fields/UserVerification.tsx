@@ -1,13 +1,13 @@
-// Module ID: 5924
-// Function ID: 5925
+// Module ID: 5926
+// Function ID: 5927
 // Name: UserVerification
-// Dependencies: [19, 21, 4829, 4653, 5925, 4825, 1115, 2]
+// Dependencies: [19, 21, 4829, 4655, 5927, 4825, 1115, 2]
 // Exports: default
 
-// Module 5924 (UserVerification)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4653 */;
+// Module 5926 (UserVerification)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4655 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 5925 */;
+import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 5927 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -26,7 +26,7 @@ export default function UserVerification(arg0) {
     const platform = field.platform;
     let tmp5 = platform === MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE;
     if (tmp5) {
-      const obj = { passesVerification: verification[tmp12(undefined, 4653).UserVerificationFieldPlatforms.PHONE], platform: tmp12(4653).UserVerificationFieldPlatforms.PHONE };
+      const obj = { passesVerification: verification[tmp12(undefined, 4655).UserVerificationFieldPlatforms.PHONE], platform: tmp12(4655).UserVerificationFieldPlatforms.PHONE };
       tmp5 = React3(IdentityVerificationFieldDefault, obj);
     }
     const items = [tmp5, , ];

@@ -1,13 +1,13 @@
-// Module ID: 14205
-// Function ID: 14206
+// Module ID: 13366
+// Function ID: 13367
 // Name: trackAckMessages
-// Dependencies: [2044, 7960, 2066, 5010, 1074, 5009, 2]
+// Dependencies: [2044, 7045, 2066, 5010, 1074, 5009, 2]
 // Exports: default
 
-// Module 14205 (trackAckMessages)
+// Module 13366 (trackAckMessages)
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5009 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7960 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7045 */;
 import GuildStore from "GuildStore" /* 2066 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
 

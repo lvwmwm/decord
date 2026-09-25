@@ -1,14 +1,14 @@
-// Module ID: 15251
-// Function ID: 15252
+// Module ID: 14417
+// Function ID: 14418
 // Name: FamilyCenterActivityGiftRow
-// Dependencies: [19, 17, 21, 4829, 576, 8521, 15239, 15248, 15250, 4673, 15249, 4825, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 7611, 14405, 14414, 14416, 4675, 14415, 4825, 2]
 // Exports: default
 
-// Module 15251 (FamilyCenterActivityGiftRow)
+// Module 14417 (FamilyCenterActivityGiftRow)
 import nativeDefault from "native" /* 576 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8521 */;
-import useSelectedTeenUser from "useSelectedTeenUser" /* 15239 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 15248 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 7611 */;
+import useSelectedTeenUser from "useSelectedTeenUser" /* 14405 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 14414 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -46,23 +46,23 @@ export default function FamilyCenterActivityGiftRow(arg0) {
     const obj3 = { claimed, price, gifterName: null, offeredAt: null, claimedAt: null };
     let name = null;
     if (null != teenUserForId) {
-      name = tmp2(4673).getName(teenUserForId);
-      const tmp2Result = tmp2(4673);
+      name = tmp2(4675).getName(teenUserForId);
+      const tmp2Result = tmp2(4675);
     }
     obj3.gifterName = name;
     obj3.offeredAt = offeredAt;
     obj3.claimedAt = claimedAt;
     const obj4 = { style: tmp.container, children: null };
-    const giftSubtext = tmp5(15250).getGiftSubtext(obj3);
+    const giftSubtext = tmp5(14416).getGiftSubtext(obj3);
     const obj5 = { displayName, product: null, isSubscription: null, subscriptionPlanId: null };
-    const tmp5Result = tmp5(15250);
+    const tmp5Result = tmp5(14416);
     if (product == null) {
       product = null;
     }
     obj5.product = product;
     obj5.isSubscription = isSubscription;
     obj5.subscriptionPlanId = subscriptionPlanId;
-    const items = [React4(tmp2(15249), obj5), ];
+    const items = [React4(tmp2(14415), obj5), ];
     const obj6 = { style: tmp.textContainer, children: null };
     const obj7 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: displayName };
     const items1 = [React4(tmp5(4825).Text, obj7), ];

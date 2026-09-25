@@ -1,15 +1,15 @@
-// Module ID: 8960
-// Function ID: 8961
+// Module ID: 8054
+// Function ID: 8055
 // Name: FormSection
-// Dependencies: [19, 17, 1181, 21, 4829, 576, 5991, 7470, 8957, 5992, 8961, 1364, 2]
+// Dependencies: [19, 17, 1181, 21, 4829, 576, 5993, 6553, 8051, 5994, 8055, 1364, 2]
 // Exports: default
 
-// Module 8960 (FormSection)
+// Module 8054 (FormSection)
 import nativeDefault from "native" /* 576 */;
-import RedesignCompat from "RedesignCompat" /* 5991 */;
-import FormRowDefault from "FormRow" /* 7470 */;
-import FormDividerDefault from "FormDivider" /* 8957 */;
-import FormTitleDefault from "FormTitle" /* 8961 */;
+import RedesignCompat from "RedesignCompat" /* 5993 */;
+import FormRowDefault from "FormRow" /* 6553 */;
+import FormDividerDefault from "FormDivider" /* 8051 */;
+import FormTitleDefault from "FormTitle" /* 8055 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -69,7 +69,7 @@ export default function FormSection(arg0) {
     }
     obj4.hasTrailingText = flag;
     obj4.children = found;
-    obj3.children = timestampProducer(tmp3(5992).TableRowGroup, obj4);
+    obj3.children = timestampProducer(tmp3(5994).TableRowGroup, obj4);
     const items = [timestampProducer(React4, obj3), ];
     let tmp20Result = null;
     if (null != hint) {

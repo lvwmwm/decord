@@ -1,35 +1,35 @@
-// Module ID: 17075
-// Function ID: 17076
+// Module ID: 16266
+// Function ID: 16267
 // Name: MediaKeyboard
-// Dependencies: [19, 5192, 5191, 1608, 1074, 1483, 12378, 21, 1241, 4561, 4697, 1610, 17076, 4526, 576, 9683, 17077, 12500, 10983, 5442, 4695, 5432, 1364, 5431, 10981, 12539, 1115, 5366, 5379, 10986, 10458, 5393, 10988, 17078, 17079, 10990, 17080, 10991, 2]
+// Dependencies: [19, 5193, 5192, 1608, 1074, 1483, 11504, 21, 1241, 4563, 4699, 1610, 16267, 4528, 576, 8781, 16268, 11626, 10087, 5443, 4697, 5433, 1364, 5432, 10085, 11665, 1115, 5367, 5380, 10090, 9560, 5394, 10092, 16269, 16270, 10094, 16271, 10095, 2]
 
-// Module 17075 (MediaKeyboard)
+// Module 16266 (MediaKeyboard)
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ChatInputUtils from "ChatInputUtils" /* 4695 */;
-import AppsIcon from "AppsIcon" /* 5366 */;
-import ThreadIcon from "ThreadIcon" /* 5379 */;
-import ImageIcon from "ImageIcon" /* 5393 */;
-import Upload from "Upload" /* 5432 */;
-import AttachmentIcon from "AttachmentIcon" /* 10458 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10983 */;
-import PollsIcon from "PollsIcon" /* 10986 */;
-import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10988 */;
-import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10990 */;
-import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 12539 */;
-import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 17078 */;
-import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 17079 */;
+import ChatInputUtils from "ChatInputUtils" /* 4697 */;
+import AppsIcon from "AppsIcon" /* 5367 */;
+import ThreadIcon from "ThreadIcon" /* 5380 */;
+import ImageIcon from "ImageIcon" /* 5394 */;
+import Upload from "Upload" /* 5433 */;
+import AttachmentIcon from "AttachmentIcon" /* 9560 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10087 */;
+import PollsIcon from "PollsIcon" /* 10090 */;
+import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10092 */;
+import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10094 */;
+import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 11665 */;
+import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 16269 */;
+import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 16270 */;
 import noop from "module_19" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5191 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5192 */;
 
 require = fn;
-const DraftType = fn(5192).DraftType;
+const DraftType = fn(5193).DraftType;
 const MediaKeyboardConstants = fn(1608);
 ({ MediaKeyboardTarget: metroRequire, MediaPickerActionSheetEngagedActions: closure_7 } = MediaKeyboardConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, ChatInputComponentViewedTypes: closure_9 } = Constants);
 const AppLauncherRouteName = fn(1483).AppLauncherRouteName;
-const KEYBOARD_ANIMATION_CONFIG = fn(12378).KEYBOARD_ANIMATION_CONFIG;
+const KEYBOARD_ANIMATION_CONFIG = fn(11504).KEYBOARD_ANIMATION_CONFIG;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
 const size = fn(2);

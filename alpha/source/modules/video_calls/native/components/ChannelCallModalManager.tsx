@@ -1,9 +1,9 @@
-// Module ID: 9828
-// Function ID: 9829
+// Module ID: 8926
+// Function ID: 8927
 // Name: ChannelCallModalManager
 // Dependencies: [1372, 4848, 1982, 573, 5036, 2]
 
-// Module 9828 (ChannelCallModalManager)
+// Module 8926 (ChannelCallModalManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import UserStore from "UserStore" /* 1372 */;
 import VoiceStateStore from "VoiceStateStore" /* 4848 */;

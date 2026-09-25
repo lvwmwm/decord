@@ -1,15 +1,15 @@
-// Module ID: 10729
-// Function ID: 10730
+// Module ID: 9833
+// Function ID: 9834
 // Name: GIFPickerCategoryView
-// Dependencies: [19, 17, 1074, 21, 4829, 576, 1115, 9931, 5892, 10730, 10583, 4825, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 576, 1115, 9029, 5894, 9834, 9687, 4825, 2]
 // Exports: default
 
-// Module 10729 (GIFPickerCategoryView)
+// Module 9833 (GIFPickerCategoryView)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import FastImageDefault from "FastImage" /* 5892 */;
-import useAccessibilityPressDefault from "useAccessibilityPress" /* 9931 */;
+import FastImageDefault from "FastImage" /* 5894 */;
+import useAccessibilityPressDefault from "useAccessibilityPress" /* 9029 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -57,12 +57,12 @@ export default function GIFPickerCategoryView(onSelectCategory) {
   const obj5 = { style: tmp.categoryName, accessible: false, children: null };
   if (item.type === GIFPickerResultTypes.TRENDING_GIFS) {
     const obj6 = { size: "sm", style: tmp.categoryNameIcon, color: tmp6(576).colors.WHITE };
-    let tmp10Result = tmp10(tmp3(10730).AnalyticsIcon, obj6);
+    let tmp10Result = tmp10(tmp3(9834).AnalyticsIcon, obj6);
   } else {
     tmp10Result = null;
     if (item.type === tmp12.FAVORITES) {
       const obj7 = { size: "sm", style: tmp.categoryNameIcon, color: tmp6(576).colors.WHITE };
-      tmp10Result = tmp10(tmp3(10583).StarIcon, obj7);
+      tmp10Result = tmp10(tmp3(9687).StarIcon, obj7);
     }
   }
   const items2 = [tmp10Result, React5(Text_Text.Text, { variant: "text-sm/semibold", color: "text-overlay-light", maxFontSizeMultiplier: 2, accessible: false, children: item.name })];

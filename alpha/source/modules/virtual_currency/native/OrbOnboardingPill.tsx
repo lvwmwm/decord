@@ -1,13 +1,13 @@
-// Module ID: 16097
-// Function ID: 16098
+// Module ID: 15272
+// Function ID: 15273
 // Name: OrbOnboardingPill
-// Dependencies: [19, 17, 21, 9196, 4825, 1115, 4829, 576, 2]
+// Dependencies: [19, 17, 21, 8290, 4825, 1115, 4829, 576, 2]
 
-// Module 16097 (OrbOnboardingPill)
+// Module 15272 (OrbOnboardingPill)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import OrbsIcon from "OrbsIcon" /* 9196 */;
+import OrbsIcon from "OrbsIcon" /* 8290 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

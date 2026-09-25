@@ -1,10 +1,10 @@
-// Module ID: 14995
-// Function ID: 14996
+// Module ID: 14157
+// Function ID: 14158
 // Name: EditProfileThemeActionSheet
-// Dependencies: [19, 21, 4829, 576, 7530, 7482, 1115, 1177, 5992, 5910, 4796, 2]
+// Dependencies: [19, 21, 4829, 576, 6613, 6565, 1115, 1177, 5994, 5912, 4796, 2]
 // Exports: default
 
-// Module 14995 (EditProfileThemeActionSheet)
+// Module 14157 (EditProfileThemeActionSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import noop from "module_19" /* 19 */;
@@ -31,7 +31,7 @@ export default function EditProfileThemeActionSheet(onResetTheme) {
   obj3.title = intl.string(onResetTheme(1115).t.DMeO2X);
   obj3.trailing = closure_3(onResetTheme(1177).NitroWheel, { style: tmp.nitroWheel });
   ({ titleWrapper: obj2.titleWrapperStyle, titleContainer: obj2.titleContainerStyle } = tmp);
-  const items = [closure_3(onResetTheme(7482).BottomSheetTitleHeader, obj3), ];
+  const items = [closure_3(onResetTheme(6565).BottomSheetTitleHeader, obj3), ];
   const obj5 = { hasIcons: false, children: null };
   const obj9 = { label: null, subLabel: null, onPress: null };
   const intl2 = onResetTheme(1115).intl;
@@ -42,8 +42,8 @@ export default function EditProfileThemeActionSheet(onResetTheme) {
     onResetTheme();
     ActionSheetActionCreatorsDefault.hideActionSheet();
   };
-  obj5.children = closure_3(onResetTheme(5910).TableRow, obj9);
-  items[1] = closure_3(onResetTheme(5992).TableRowGroup, obj5);
+  obj5.children = closure_3(onResetTheme(5912).TableRow, obj9);
+  items[1] = closure_3(onResetTheme(5994).TableRowGroup, obj5);
   obj.children = items;
-  return closure_4(onResetTheme(7530).ActionSheet, obj);
+  return closure_4(onResetTheme(6613).ActionSheet, obj);
 };

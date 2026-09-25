@@ -1,13 +1,13 @@
-// Module ID: 5842
-// Function ID: 5843
+// Module ID: 5844
+// Function ID: 5845
 // Name: MemberVerificationAlert
-// Dependencies: [19, 17, 21, 4829, 576, 5292, 4825, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 5293, 4825, 2]
 // Exports: default
 
-// Module 5842 (MemberVerificationAlert)
+// Module 5844 (MemberVerificationAlert)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import common_AlertDefault from "common/Alert" /* 5292 */;
+import common_AlertDefault from "common/Alert" /* 5293 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

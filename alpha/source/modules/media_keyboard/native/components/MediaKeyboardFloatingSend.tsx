@@ -1,15 +1,15 @@
-// Module ID: 17079
-// Function ID: 17080
+// Module ID: 16270
+// Function ID: 16271
 // Name: MediaKeyboardFloatingSend
-// Dependencies: [32, 19, 17, 5191, 21, 4829, 576, 504, 4561, 1612, 5272, 672, 5285, 9271, 1115, 4773, 2]
+// Dependencies: [32, 19, 17, 5192, 21, 4829, 576, 504, 4563, 1612, 5273, 672, 5286, 8369, 1115, 4773, 2]
 
-// Module 17079 (MediaKeyboardFloatingSend)
+// Module 16270 (MediaKeyboardFloatingSend)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
-import spring from "spring" /* 5272 */;
+import spring from "spring" /* 5273 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5191 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5192 */;
 
 const require = globalThis.__r;
 

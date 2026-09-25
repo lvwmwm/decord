@@ -1,10 +1,10 @@
-// Module ID: 4606
-// Function ID: 4607
+// Module ID: 4608
+// Function ID: 4609
 // Name: ManaContext
 // Dependencies: [19, 21, 2]
 // Exports: ManaContextProvider, useManaContext
 
-// Module 4606 (ManaContext)
+// Module 4608 (ManaContext)
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;

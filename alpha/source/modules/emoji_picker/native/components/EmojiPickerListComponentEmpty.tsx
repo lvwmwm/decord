@@ -1,14 +1,14 @@
-// Module ID: 10662
-// Function ID: 10663
+// Module ID: 9766
+// Function ID: 9767
 // Name: EmojiPickerListComponentEmpty
-// Dependencies: [19, 17, 21, 4829, 576, 10663, 10667, 6957, 1177, 1115, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 9767, 9771, 6040, 1177, 1115, 2]
 
-// Module 10662 (EmojiPickerListComponentEmpty)
+// Module 9766 (EmojiPickerListComponentEmpty)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import SearchEmpty from "SearchEmpty" /* 10663 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 10667 */;
+import SearchEmpty from "SearchEmpty" /* 9767 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9771 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -32,7 +32,7 @@ export default noop.memo(function EmojiPickerListComponentEmpty(insetBottom) {
   const searchEmptySource = SearchEmpty.useSearchEmptySource();
   const modalDismissGuardRefreshControl = useModalDismissGuardRefreshControl.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp3(6957).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp3(6040).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

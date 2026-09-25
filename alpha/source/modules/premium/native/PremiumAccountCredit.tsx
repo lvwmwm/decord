@@ -1,16 +1,16 @@
-// Module ID: 13763
-// Function ID: 13764
+// Module ID: 12917
+// Function ID: 12918
 // Name: PremiumAccountCredit
-// Dependencies: [19, 17, 7724, 1074, 21, 4829, 576, 7505, 4483, 1115, 3198, 9572, 4825, 504, 12, 2]
+// Dependencies: [19, 17, 6809, 1074, 21, 4829, 576, 6588, 4485, 1115, 3198, 8670, 4825, 504, 12, 2]
 // Exports: default
 
-// Module 13763 (PremiumAccountCredit)
+// Module 12917 (PremiumAccountCredit)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import PremiumUtils from "PremiumUtils" /* 4483 */;
+import PremiumUtils from "PremiumUtils" /* 4485 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import noop from "module_19" /* 19 */;
-import EntitlementStore from "EntitlementStore" /* 7724 */;
+import EntitlementStore from "EntitlementStore" /* 6809 */;
 
 const PremiumUtilsDefault = PremiumUtils;
 
@@ -39,14 +39,14 @@ function AccountCreditTier(arg0) {
             const _Date2 = Date;
             let date = new Date(currentSubscription.pauseEndsAt);
           }
-          let num = tmp2(4483).extendDateWithUnconsumedFractionalPremium(date, unconsumedFractionalPremiumUnits);
+          let num = tmp2(4485).extendDateWithUnconsumedFractionalPremium(date, unconsumedFractionalPremiumUnits);
           const intl2 = tmp2(1115).intl;
           if (num == null) {
             num = 0;
           }
           const obj5 = { date: num };
           stringResult = intl2.formatToPlainString(tmp2(1115).t["5CNRRA"], obj5);
-          const tmp2Result = tmp2(4483);
+          const tmp2Result = tmp2(4485);
         }
         const _Date = Date;
         date = new Date(currentSubscription.currentPeriodEnd);
@@ -71,14 +71,14 @@ function AccountCreditTier(arg0) {
   if (result1) {
     const obj8 = { style: tmp.boostIcon, children: null };
     const obj9 = { size: "md", color: tmp4(576).unsafe_rawColors.GUILD_BOOSTING_PINK };
-    obj8.children = tmp24(tmp2(9572).BoostGemIcon, obj9);
+    obj8.children = tmp24(tmp2(8670).BoostGemIcon, obj9);
     let tmp24Result = tmp24(tmp22, obj8);
     let tmp27 = tmp24;
   } else {
-    const obj10 = { size: tmp2(7505).GameIconSizes.SMALL, skuId: result };
-    tmp24Result = tmp24(tmp4(7505), obj10);
+    const obj10 = { size: tmp2(6588).GameIconSizes.SMALL, skuId: result };
+    tmp24Result = tmp24(tmp4(6588), obj10);
     tmp27 = tmp24;
-    const tmp4Result = tmp4(7505);
+    const tmp4Result = tmp4(6588);
   }
   const items1 = [tmp24Result, , ];
   const obj11 = { style: tmp.textContainer, children: null };
@@ -107,7 +107,7 @@ const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const createStyles = fn(4829);
 let obj2 = { title: { marginBottom: 12 }, creditList: { borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, creditItem: { flexDirection: "row", alignItems: "center", padding: 16 }, boostIcon: null, textContainer: null, headerText: null, subText: null, timeText: null, divider: null, creditDescription: null };
-let size = { width: fn(7505).GameIconImageSize[fn(undefined, 7505).GameIconSizes.SMALL], height: fn(7505).GameIconImageSize[fn(undefined, 7505).GameIconSizes.SMALL], alignItems: "center", justifyContent: "center" };
+let size = { width: fn(6588).GameIconImageSize[fn(undefined, 6588).GameIconSizes.SMALL], height: fn(6588).GameIconImageSize[fn(undefined, 6588).GameIconSizes.SMALL], alignItems: "center", justifyContent: "center" };
 obj2.boostIcon = size;
 obj2.textContainer = { marginLeft: 16, marginRight: 16, flexDirection: "column", flex: 1 };
 obj2.headerText = { lineHeight: 20 };

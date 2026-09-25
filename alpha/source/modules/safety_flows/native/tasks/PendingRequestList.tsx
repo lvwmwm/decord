@@ -1,14 +1,14 @@
-// Module ID: 18445
-// Function ID: 18446
+// Module ID: 17676
+// Function ID: 17677
 // Name: PendingRequestList
-// Dependencies: [19, 17, 1372, 21, 4829, 576, 1177, 504, 18443, 18446, 1397, 4825, 1115, 2780, 5427, 2486, 9156, 15269, 15223, 4523, 5271, 5997, 13302, 15228, 2]
+// Dependencies: [19, 17, 1372, 21, 4829, 576, 1177, 504, 17674, 17677, 1397, 4825, 1115, 2780, 5428, 2486, 8250, 14435, 14389, 4525, 5272, 17678, 12452, 14394, 2]
 // Exports: default
 
-// Module 18445 (PendingRequestList)
+// Module 17676 (PendingRequestList)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import _modDef2780 from "module_2780" /* 2780 */;
-import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 15223 */;
+import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 14389 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -283,7 +283,7 @@ export default function PendingRequestList(arg0) {
   };
   const obj6 = { style: tmp.dividerLine };
   const obj8 = { style: tmp.dividerLine };
-  const items3 = [c7(c5, { style: tmp.inviteIconContainer, children: c7(require("native").PlaneIllocon, { size: 32 }) }), , ];
+  const items3 = [c7(c5, { style: tmp.inviteIconContainer, children: c7(require("PlaneIllocon").PlaneIllocon, { size: 32 }) }), , ];
   const obj11 = { style: tmp.details, children: null };
   const obj12 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl2 = tmp5(1115).intl;

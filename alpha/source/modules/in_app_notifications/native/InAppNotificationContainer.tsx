@@ -1,27 +1,27 @@
-// Module ID: 10451
-// Function ID: 10452
+// Module ID: 9553
+// Function ID: 9554
 // Name: InAppNotificationContainer
-// Dependencies: [32, 19, 17, 9857, 10442, 1074, 21, 4561, 4829, 10452, 10526, 10529, 10530, 10564, 10565, 11667, 11668, 11671, 10441, 504, 5290, 4830, 1241, 6985, 5272, 1177, 7456, 10484, 2]
+// Dependencies: [32, 19, 17, 8955, 9544, 1074, 21, 4563, 4829, 9554, 9628, 9631, 9632, 9666, 9667, 10847, 10848, 10851, 9543, 504, 5291, 4830, 1241, 6068, 5273, 1177, 6539, 9586, 2]
 // Exports: default
 
-// Module 10451 (InAppNotificationContainer)
+// Module 9553 (InAppNotificationContainer)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import timing from "timing" /* 4830 */;
-import spring from "spring" /* 5272 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 10441 */;
-import MessageNotificationDefault from "MessageNotification" /* 10452 */;
-import MessageFailedToSendNotificationDefault from "MessageFailedToSendNotification" /* 10526 */;
-import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 10529 */;
-import BugReporterNotification from "BugReporterNotification" /* 10530 */;
-import AlertNotificationDefault from "AlertNotification" /* 10564 */;
-import ReactionNotificationDefault from "ReactionNotification" /* 10565 */;
-import ReminderNotificationDefault from "ReminderNotification" /* 11667 */;
-import RestrictedHoursWarningNotificationDefault from "RestrictedHoursWarningNotification" /* 11668 */;
-import MessageRequestNotificationDefault from "MessageRequestNotification" /* 11671 */;
+import spring from "spring" /* 5273 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 9543 */;
+import MessageNotificationDefault from "MessageNotification" /* 9554 */;
+import MessageFailedToSendNotificationDefault from "MessageFailedToSendNotification" /* 9628 */;
+import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 9631 */;
+import BugReporterNotification from "BugReporterNotification" /* 9632 */;
+import AlertNotificationDefault from "AlertNotification" /* 9666 */;
+import ReactionNotificationDefault from "ReactionNotification" /* 9667 */;
+import ReminderNotificationDefault from "ReminderNotification" /* 10847 */;
+import RestrictedHoursWarningNotificationDefault from "RestrictedHoursWarningNotification" /* 10848 */;
+import MessageRequestNotificationDefault from "MessageRequestNotification" /* 10851 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 9857 */;
+import NativeMenuStore from "NativeMenuStore" /* 8955 */;
 
 require = fn;
 function NotificationWrapper(notification) {
@@ -64,14 +64,14 @@ function NotificationWrapper(notification) {
   }
 }
 const StyleSheet = fn(17).StyleSheet;
-const InAppNotificationConstants = fn(10442);
+const InAppNotificationConstants = fn(9544);
 ({ DEFAULT_ANIMATION_TIMING: closure_7, extrapolateConfig: closure_8, MIN_SWIPE_DISTANCE: closure_9, MIN_SWIPE_VELOCITY: c10, PAN_INPUT_RANGE: closure_11, NOTIFICATION_CONTAINER_MARGIN } = InAppNotificationConstants);
 const Constants = fn(1074);
 ({ InAppNotificationTypes: closure_12, AnalyticEvents: map1 } = Constants);
 const jsx = fn(21).jsx;
 let obj = { duration: 200, easing: null };
-const Easing = fn(4561).Easing;
-obj.easing = Easing.in(fn(4561).Easing.ease);
+const Easing = fn(4563).Easing;
+obj.easing = Easing.in(fn(4563).Easing.ease);
 const createStyles = fn(4829);
 let closure_16 = createStyles.createStyles({ safeAreaContainer: { position: "absolute", left: 0, right: 0, backgroundColor: "transparent", marginTop: 8, top: 0, bottom: 0 }, animatedContainer: { marginLeft: NOTIFICATION_CONTAINER_MARGIN, marginRight: NOTIFICATION_CONTAINER_MARGIN } });
 let closure_18 = { code: "function InAppNotificationContainerTsx1(){const{runOnJS,setInitialized}=this.__closure;return runOnJS(setInitialized)(true);}" };

@@ -1,19 +1,19 @@
-// Module ID: 12605
-// Function ID: 12606
+// Module ID: 11731
+// Function ID: 11732
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 32, 19, 17, 5807, 5049, 1372, 21, 4829, 576, 4647, 4526, 4678, 4523, 12606, 12607, 7786, 1115, 504, 1090, 4673, 12608, 10734, 4561, 4830, 1177, 10733, 5285, 5427, 10523, 4825, 5273, 2]
+// Dependencies: [5, 32, 19, 17, 5809, 5049, 1372, 21, 4829, 576, 4649, 4528, 4680, 4525, 11732, 11733, 6871, 1115, 504, 1090, 4675, 11734, 9838, 4563, 4830, 1177, 9837, 5286, 5428, 9625, 4825, 5274, 2]
 // Exports: default
 
-// Module 12605 (DMMessageStickerGreeting)
+// Module 11731 (DMMessageStickerGreeting)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import timing from "timing" /* 4830 */;
-import StickersActionCreators from "StickersActionCreators" /* 10734 */;
+import StickersActionCreators from "StickersActionCreators" /* 9838 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import StickersStore from "StickersStore" /* 5807 */;
+import StickersStore from "StickersStore" /* 5809 */;
 import MessageStore from "MessageStore" /* 5049 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -33,7 +33,7 @@ let closure_13 = createStyles.createStyles((arg0) => {
   return obj;
 });
 let c14 = "749054660769218631";
-const END = fn(4647).GradientPercentage.END;
+const END = fn(4649).GradientPercentage.END;
 const __initData = { code: "function DMMessageStickerGreetingTsx1(){const{styles,isRendered,hasInputText,hasMessages,HEIGHT_COMPACT,HEIGHT_FULL,withDelay,withTiming,STANDARD_EASING}=this.__closure;const gradientOverlayOffset=styles.gradient.height;const hasHeight=isRendered&&!hasInputText;const heightExpanded=(hasMessages?HEIGHT_COMPACT:HEIGHT_FULL)-1;const targetHeight=hasHeight?heightExpanded+gradientOverlayOffset:0;const targetMargin=hasHeight?-gradientOverlayOffset:0;function generateAnimationConfig(value){return withDelay(300,withTiming(value,{easing:STANDARD_EASING,duration:250}));}return{justifyContent:'flex-end',overflow:'hidden',marginTop:generateAnimationConfig(targetMargin),height:generateAnimationConfig(targetHeight)};}" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/DMMessageStickerGreeting.tsx");
@@ -130,8 +130,8 @@ export default function DMMessageStickerGreeting(channel) {
               if (closure_1_1 !== content) {
                 dependencyMap(content);
               }
-              const obj = closure_1(4523);
-              obj.open({ key: "HANDLE_WAVE_PRESS_TOAST", content, icon: closure_1(12606) });
+              const obj = closure_1(4525);
+              obj.open({ key: "HANDLE_WAVE_PRESS_TOAST", content, icon: closure_1(11732) });
             }
             closure_128_0 = showErrorToast;
             tmp7 = stateFromStores;

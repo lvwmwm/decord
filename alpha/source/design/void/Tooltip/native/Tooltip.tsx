@@ -1,10 +1,10 @@
-// Module ID: 14465
-// Function ID: 14466
+// Module ID: 13626
+// Function ID: 13627
 // Name: Tooltip/Tooltip
 // Dependencies: [19, 17, 1074, 21, 4829, 576, 1370, 4825, 1177, 2]
 // Exports: default
 
-// Module 14465 (Tooltip/Tooltip)
+// Module 13626 (Tooltip/Tooltip)
 import nativeDefault from "native" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import noop from "module_19" /* 19 */;

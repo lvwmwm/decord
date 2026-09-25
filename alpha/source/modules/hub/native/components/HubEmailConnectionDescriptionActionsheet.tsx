@@ -1,14 +1,14 @@
-// Module ID: 13081
-// Function ID: 13082
+// Module ID: 12231
+// Function ID: 12232
 // Name: HubEmailConnectionDescriptionActionsheet
-// Dependencies: [19, 21, 4829, 7483, 7482, 1115, 4825, 2]
+// Dependencies: [19, 21, 4829, 6566, 6565, 1115, 4825, 2]
 // Exports: default
 
-// Module 13081 (HubEmailConnectionDescriptionActionsheet)
+// Module 12231 (HubEmailConnectionDescriptionActionsheet)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7482 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7483 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6565 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6566 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,10 +1,10 @@
-// Module ID: 16748
-// Function ID: 16749
+// Module ID: 15932
+// Function ID: 15933
 // Name: StreamingSubtitle
 // Dependencies: [19, 21, 4825, 1115, 4981, 2]
 // Exports: default
 
-// Module 16748 (StreamingSubtitle)
+// Module 15932 (StreamingSubtitle)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4981 */;

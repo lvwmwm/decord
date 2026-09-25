@@ -1,14 +1,14 @@
-// Module ID: 9713
-// Function ID: 9714
+// Module ID: 8811
+// Function ID: 8812
 // Name: userSettingToActivity
-// Dependencies: [19, 5764, 1074, 4478, 2020, 504, 2]
+// Dependencies: [19, 5766, 1074, 4480, 2020, 504, 2]
 // Exports: getActivityFromCustomStatus, useCustomStatusActivity
 
-// Module 9713 (userSettingToActivity)
+// Module 8811 (userSettingToActivity)
 import _mod19 from "module_19" /* 19 */;
 import Constants from "Constants" /* 1074 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4478 */;
-import EmojiStore from "EmojiStore" /* 5764 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4480 */;
+import EmojiStore from "EmojiStore" /* 5766 */;
 import size from "module_2" /* 2 */;
 
 function _activityFromSetting(emojiName, stateFromStores) {

@@ -1,10 +1,10 @@
-// Module ID: 18317
-// Function ID: 18318
+// Module ID: 17548
+// Function ID: 17549
 // Name: FormChannelPicker
-// Dependencies: [19, 2044, 21, 4829, 14264, 504, 4982, 10095, 4796, 18318, 1980, 5327, 5386, 4825, 1115, 1177, 10288, 2]
+// Dependencies: [19, 2044, 21, 4829, 13425, 504, 4982, 9192, 4796, 17549, 1980, 5328, 5387, 4825, 1115, 1177, 9385, 2]
 // Exports: default
 
-// Module 18317 (FormChannelPicker)
+// Module 17548 (FormChannelPicker)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import noop from "module_19" /* 19 */;
@@ -48,7 +48,7 @@ export default function FormChannelPicker(channelId) {
       }
       obj2.selectedChannelId = id;
       obj2.onChannelSelected = onChange;
-      obj.openLazy(asyncRequireImpl(18318, dependencyMap.paths), "ChannelSelectorActionSheet", obj2);
+      obj.openLazy(asyncRequireImpl(17549, dependencyMap.paths), "ChannelSelectorActionSheet", obj2);
     },
     children: null
   };
@@ -79,7 +79,7 @@ export default function FormChannelPicker(channelId) {
   obj3.children = stringResult;
   items3[1] = closure_4(channelId(stateFromStores[13]).Text, obj3);
   const tmpResult = require("TouchableHitBox");
-  items3[2] = closure_4(channelId(stateFromStores[15]).Icon, { size: channelId(stateFromStores[15]).Icon.Sizes.MEDIUM, source: require("module_10288") });
+  items3[2] = closure_4(channelId(stateFromStores[15]).Icon, { size: channelId(stateFromStores[15]).Icon.Sizes.MEDIUM, source: require("module_9385") });
   obj2.children = items3;
   return tmp8(tmpResult, obj2);
 };

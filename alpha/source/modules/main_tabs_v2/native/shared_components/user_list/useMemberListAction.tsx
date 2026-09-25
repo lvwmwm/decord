@@ -1,16 +1,16 @@
-// Module ID: 11927
-// Function ID: 11928
+// Module ID: 11070
+// Function ID: 11071
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 2044, 4464, 4474, 1372, 10561, 1074, 21, 4829, 563, 9907, 7382, 11928, 11937, 11938, 1115, 10378, 10379, 4649, 2028, 11940, 11945, 7710, 11946, 1875, 10167, 8953, 2]
+// Dependencies: [32, 19, 17, 2044, 4466, 4476, 1372, 9663, 1074, 21, 4829, 563, 9005, 6465, 11071, 11080, 11081, 1115, 9480, 9481, 4651, 2028, 11083, 11088, 6793, 11089, 1875, 9264, 8047, 2]
 // Exports: default
 
-// Module 11927 (useMemberListAction)
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11928 */;
+// Module 11070 (useMemberListAction)
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11071 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -20,9 +20,9 @@ const View = fn(17).View;
 const Constants = fn(1074);
 ({ Permissions: c10, AnalyticsSections: closure_11, InstantInviteSources: closure_12 } = Constants);
 const jsx = fn(21).jsx;
-let closure_14 = { listActionRenderer: "channel", listActionHeight: "channelId" };
+let closure_14 = { listActionRenderer: "isArray", listActionHeight: "paddingHorizontal" };
 const createStyles = fn(4829);
-let closure_15 = createStyles.createStyles({ wrapper: { paddingTop: fn(10561).USERS_LIST_PADDING_BETWEEN_SECTIONS } });
+let closure_15 = createStyles.createStyles({ wrapper: { paddingTop: fn(9663).USERS_LIST_PADDING_BETWEEN_SECTIONS } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");
 

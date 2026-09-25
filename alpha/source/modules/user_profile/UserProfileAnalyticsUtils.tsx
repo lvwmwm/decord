@@ -1,23 +1,23 @@
-// Module ID: 8539
-// Function ID: 8540
+// Module ID: 7629
+// Function ID: 7630
 // Name: UserProfileAnalyticsUtils
-// Dependencies: [8540, 7440, 7982, 4851, 2107, 4869, 4474, 1372, 7945, 8531, 1074, 1085, 1397, 8534, 1241, 5009, 8546, 2]
+// Dependencies: [7630, 6523, 7067, 4851, 2107, 4869, 4476, 1372, 7030, 7621, 1074, 1085, 1397, 7624, 1241, 5009, 7636, 2]
 // Exports: getActivityType, getTrackUserRelationshipProperties, getUserStatus, maybeTrackUserProfileUiViewed, trackDmProfileToggled, trackUserProfileActivityAction, trackUserProfileActivityJoined, trackUserProfileBadgeAction, trackUserProfileEditAction, trackUserProfileEditSaved, trackUserProfileWishlistAction
 
-// Module 8539 (UserProfileAnalyticsUtils)
+// Module 7629 (UserProfileAnalyticsUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5009 */;
-import useDisplayProfile from "useDisplayProfile" /* 8534 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8540 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7440 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7982 */;
+import useDisplayProfile from "useDisplayProfile" /* 7624 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7630 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6523 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7067 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4851 */;
 import GuildMemberStore from "GuildMemberStore" /* 2107 */;
 import PresenceStore from "PresenceStore" /* 4869 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
-import UserProfileStore from "UserProfileStore" /* 7945 */;
+import UserProfileStore from "UserProfileStore" /* 7030 */;
 
 require = fn;
 function getProfileProperties(guildMemberProfile) {
@@ -264,8 +264,8 @@ function trackUserProfileAction(dependencyMap) {
   obj2.widget_type = widgetType;
   obj.track(constants3.USER_PROFILE_ACTION, obj2);
 }
-const FetchState = fn(7440).FetchState;
-const constants = fn(8531).TrackUserProfileProperties;
+const FetchState = fn(6523).FetchState;
+const constants = fn(7621).TrackUserProfileProperties;
 const Constants = fn(1074);
 ({ ActivityTypes: closure_14, AnalyticEvents: closure_15 } = Constants);
 const StatusTypes = fn(1085).StatusTypes;

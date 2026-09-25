@@ -1,14 +1,14 @@
-// Module ID: 17054
-// Function ID: 17055
+// Module ID: 16244
+// Function ID: 16245
 // Name: VibegrationsStaffAccess
-// Dependencies: [4462, 2066, 4474, 1372, 1074, 504, 4982, 2]
+// Dependencies: [4464, 2066, 4476, 1372, 1074, 504, 4982, 2]
 // Exports: useVibegrationsStaffAccessTarget
 
-// Module 17054 (VibegrationsStaffAccess)
+// Module 16244 (VibegrationsStaffAccess)
 import initialize from "initialize" /* 504 */;
-import GuildChannelStore from "GuildChannelStore" /* 4462 */;
+import GuildChannelStore from "GuildChannelStore" /* 4464 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

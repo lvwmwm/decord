@@ -1,26 +1,26 @@
-// Module ID: 14161
-// Function ID: 14162
+// Module ID: 13322
+// Function ID: 13323
 // Name: VoiceChannelHeader
-// Dependencies: [19, 17, 2043, 2066, 4464, 1074, 21, 4829, 576, 14162, 14163, 4825, 14164, 504, 10286, 4982, 10167, 1115, 11928, 1177, 5365, 14166, 10358, 10378, 5427, 2]
+// Dependencies: [19, 17, 2043, 2066, 4466, 1074, 21, 4829, 576, 13323, 13324, 4825, 13325, 504, 9383, 4982, 9264, 1115, 11071, 1177, 5366, 13327, 9460, 9480, 5428, 2]
 
-// Module 14161 (VoiceChannelHeader)
+// Module 13322 (VoiceChannelHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import useChannelNameDefault from "useChannelName" /* 4982 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 5365 */;
-import Pressables from "Pressables" /* 5427 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10167 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 10286 */;
-import _modDef10378 from "module_10378" /* 10378 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11928 */;
-import CallStateHooks from "CallStateHooks" /* 14162 */;
-import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 14163 */;
-import OngoingCallTimerDefault from "OngoingCallTimer" /* 14164 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 5366 */;
+import Pressables from "Pressables" /* 5428 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9264 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 9383 */;
+import _modDef9480 from "module_9480" /* 9480 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11071 */;
+import CallStateHooks from "CallStateHooks" /* 13323 */;
+import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 13324 */;
+import OngoingCallTimerDefault from "OngoingCallTimer" /* 13325 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
 
 const CallStateHooksDefault = CallStateHooks;
 
@@ -37,7 +37,7 @@ function PrivateChannelSubtitle(channel) {
     tmp6Result = tmp6(tmp7(4825).Text, obj3);
   }
   items[1] = tmp6Result;
-  let tmp6Result2 = state === tmp7(14162).CallStates.CONNECTED;
+  let tmp6Result2 = state === tmp7(13323).CallStates.CONNECTED;
   if (tmp6Result2) {
     const obj4 = { channelId: channel.id, style: tmp.subtitle };
     tmp6Result2 = tmp6(OngoingCallTimerDefault, obj4);
@@ -150,7 +150,7 @@ class VoiceChannelHeader {
   }
 }
 function AddMemberButton(onPress) {
-  const obj = { onPress: onPress.onPress, iconSource: _modDef10378, iconStyle: closure_12().icons, accessibilityLabel: null };
+  const obj = { onPress: onPress.onPress, iconSource: _modDef9480, iconStyle: closure_12().icons, accessibilityLabel: null };
   const intl = util.intl;
   obj.accessibilityLabel = intl.string(util.t["6Qgrev"]);
   return closure_1_10(IconButton, obj);

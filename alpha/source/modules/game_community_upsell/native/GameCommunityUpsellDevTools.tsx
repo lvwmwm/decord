@@ -1,14 +1,14 @@
-// Module ID: 15979
-// Function ID: 15980
+// Module ID: 15149
+// Function ID: 15150
 // Name: GameCommunityUpsellDevTools
-// Dependencies: [19, 17, 14079, 15980, 21, 4829, 576, 504, 15981, 14081, 14080, 5992, 5910, 15494, 5917, 2]
+// Dependencies: [19, 17, 13240, 15150, 21, 4829, 576, 504, 15151, 13242, 13241, 5994, 5912, 14664, 5919, 2]
 // Exports: default
 
-// Module 15979 (GameCommunityUpsellDevTools)
+// Module 15149 (GameCommunityUpsellDevTools)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14079 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15980 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13240 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15150 */;
 
 const require = fn;
 function MultiGuildDevTools() {

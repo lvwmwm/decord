@@ -1,15 +1,15 @@
-// Module ID: 8983
-// Function ID: 8984
+// Module ID: 8077
+// Function ID: 8078
 // Name: ChannelSettingsActionCreators
-// Dependencies: [5, 8984, 2044, 1074, 573, 4687, 8094, 1271, 7653, 2]
+// Dependencies: [5, 8078, 2044, 1074, 573, 4689, 7179, 1271, 6736, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 8983 (ChannelSettingsActionCreators)
+// Module 8077 (ChannelSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import RootNavigationRef from "RootNavigationRef" /* 4687 */;
+import RootNavigationRef from "RootNavigationRef" /* 4689 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 8984 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 8078 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 
 require = fn;
@@ -205,8 +205,8 @@ let closure_9 = async function _saveChannel(arg0, value) {
             obj4 = guildId;
           }
           if (!tmp5) {
-            const result = closure_1(7653).checkGuildTemplateDirty(guildId);
-            const tmpResult = closure_1(7653);
+            const result = closure_1(6736).checkGuildTemplateDirty(guildId);
+            const tmpResult = closure_1(6736);
           }
           return arg0;
         }, (body) => {

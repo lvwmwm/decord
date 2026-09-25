@@ -1,12 +1,12 @@
-// Module ID: 16869
-// Function ID: 16870
+// Module ID: 16055
+// Function ID: 16056
 // Name: ActionStatusSubLabel
-// Dependencies: [19, 21, 4829, 4536, 4561, 4825, 5280, 4830, 2]
+// Dependencies: [19, 21, 4829, 4538, 4563, 4825, 5281, 4830, 2]
 // Exports: ActionStatusSubLabel
 
-// Module 16869 (ActionStatusSubLabel)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4536 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4561 */;
+// Module 16055 (ActionStatusSubLabel)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4538 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4563 */;
 import timing from "timing" /* 4830 */;
 import noop from "module_19" /* 19 */;
 

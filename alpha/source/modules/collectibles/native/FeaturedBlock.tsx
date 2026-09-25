@@ -1,15 +1,15 @@
-// Module ID: 16238
-// Function ID: 16239
+// Module ID: 15417
+// Function ID: 15418
 // Name: FeaturedBlock
-// Dependencies: [19, 17, 21, 576, 4829, 9127, 16239, 7495, 7515, 2]
+// Dependencies: [19, 17, 21, 576, 4829, 8221, 15418, 6578, 6598, 2]
 // Exports: default
 
-// Module 16238 (FeaturedBlock)
+// Module 15417 (FeaturedBlock)
 import nativeDefault from "native" /* 576 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7495 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7515 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9127 */;
-import FeaturedCategorySubblockDefault from "FeaturedCategorySubblock" /* 16239 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6578 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6598 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8221 */;
+import FeaturedCategorySubblockDefault from "FeaturedCategorySubblock" /* 15418 */;
 import noop from "module_19" /* 19 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;

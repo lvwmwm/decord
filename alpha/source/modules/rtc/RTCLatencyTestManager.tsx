@@ -1,16 +1,16 @@
-// Module ID: 17985
-// Function ID: 17986
+// Module ID: 17213
+// Function ID: 17214
 // Name: RTCLatencyTestManager
-// Dependencies: [1992, 4879, 4854, 1091, 3, 7451, 17986, 1364, 2]
+// Dependencies: [1992, 4879, 4854, 1091, 3, 6534, 17214, 1364, 2]
 
-// Module 17985 (RTCLatencyTestManager)
+// Module 17213 (RTCLatencyTestManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import RTCLatencyTestActionCreators from "RTCLatencyTestActionCreators" /* 17986 */;
+import RTCLatencyTestActionCreators from "RTCLatencyTestActionCreators" /* 17214 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 import RTCRegionStore from "RTCRegionStore" /* 4879 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7451 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6534 */;
 
 require = fn;
 const Features = fn(4854).Features;

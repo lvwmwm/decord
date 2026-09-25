@@ -1,23 +1,23 @@
-// Module ID: 10101
-// Function ID: 10102
+// Module ID: 9198
+// Function ID: 9199
 // Name: GuildProfileView
-// Dependencies: [19, 17, 2066, 1074, 21, 4533, 4535, 4829, 576, 504, 2058, 1478, 1397, 10102, 4763, 4526, 10103, 5285, 10104, 4825, 10106, 10113, 2]
+// Dependencies: [19, 17, 2066, 1074, 21, 4535, 4537, 4829, 576, 504, 2058, 1478, 1397, 9199, 4763, 4528, 9200, 5286, 9201, 4825, 9203, 9210, 2]
 // Exports: default, getBackgroundForProfile
 
-// Module 10101 (GuildProfileView)
+// Module 9198 (GuildProfileView)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2058 */;
-import useToken from "useToken" /* 4526 */;
-import themes from "themes" /* 4533 */;
-import native from "native" /* 4535 */;
+import useToken from "useToken" /* 4528 */;
+import themes from "themes" /* 4535 */;
+import native from "native" /* 4537 */;
 import useThemeDefault from "useTheme" /* 4763 */;
-import LinearGradientDefault from "LinearGradient" /* 5285 */;
-import guild_profile_GuildProfileUtils from "guild_profile/GuildProfileUtils" /* 10103 */;
-import GuildProfileHeaderDefault from "GuildProfileHeader" /* 10104 */;
-import GuildProfileGamesDefault from "GuildProfileGames" /* 10106 */;
-import GuildProfileTraitsDefault from "GuildProfileTraits" /* 10113 */;
+import LinearGradientDefault from "LinearGradient" /* 5286 */;
+import guild_profile_GuildProfileUtils from "guild_profile/GuildProfileUtils" /* 9200 */;
+import GuildProfileHeaderDefault from "GuildProfileHeader" /* 9201 */;
+import GuildProfileGamesDefault from "GuildProfileGames" /* 9203 */;
+import GuildProfileTraitsDefault from "GuildProfileTraits" /* 9210 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2066 */;
 
@@ -37,7 +37,7 @@ function GuildProfileBackground(guildProfile) {
     if (null != guildProfile.customBanner) {
       const obj2 = { id: null, splash: null, size: null };
       ({ id: obj3.id, customBanner: obj3.splash } = guildProfile);
-      obj2.size = tmp3(10102)() * useWindowDimensionsDefault().width;
+      obj2.size = tmp3(9199)() * useWindowDimensionsDefault().width;
       const obj4 = { style: tmp4.imageBanner, source: tmp3(1397).getGuildDiscoverySplashSource(obj2) };
       return closure_8(closure_5, obj4);
     }

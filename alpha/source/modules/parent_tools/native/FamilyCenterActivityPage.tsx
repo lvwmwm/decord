@@ -1,14 +1,14 @@
-// Module ID: 15218
-// Function ID: 15219
+// Module ID: 14384
+// Function ID: 14385
 // Name: FamilyCenterActivityPage
-// Dependencies: [19, 17, 21, 4829, 576, 9003, 7456, 15219, 15221, 15231, 12261, 15235, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 8097, 6539, 14385, 14387, 14397, 11383, 14401, 2]
 // Exports: default
 
-// Module 15218 (FamilyCenterActivityPage)
+// Module 14384 (FamilyCenterActivityPage)
 import nativeDefault from "native" /* 576 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7456 */;
-import useUserLinks from "useUserLinks" /* 9003 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 15219 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6539 */;
+import useUserLinks from "useUserLinks" /* 8097 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 14385 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -32,13 +32,13 @@ export default function FamilyCenterActivityPage() {
   const items = [hasOwnProperty(FamilyCenterParentalConsentNoticeDefault, {}), ];
   if (0 === activeLinkUserIds.length) {
     const obj4 = { children: null };
-    const items1 = [tmp3(tmp7(15221), {}), tmp3(tmp7(15231), {}), ];
-    const obj5 = { style: tmp.dataConfirmation, children: tmp3(tmp7(12261), {}) };
+    const items1 = [tmp3(tmp7(14387), {}), tmp3(tmp7(14397), {}), ];
+    const obj5 = { style: tmp.dataConfirmation, children: tmp3(tmp7(11383), {}) };
     items1[2] = tmp3(tmp6, obj5);
     obj4.children = items1;
     let tmp3Result = tmp5(timestampProducer, obj4);
   } else {
-    tmp3Result = tmp3(tmp7(15235), {});
+    tmp3Result = tmp3(tmp7(14401), {});
   }
   const tmp4 = React4;
   items[1] = tmp3Result;

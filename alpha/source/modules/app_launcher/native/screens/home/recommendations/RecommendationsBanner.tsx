@@ -1,18 +1,18 @@
-// Module ID: 12434
-// Function ID: 12435
+// Module ID: 11560
+// Function ID: 11561
 // Name: RecommendationsBanner
-// Dependencies: [19, 17, 1386, 1074, 21, 4829, 11567, 12426, 9824, 5892, 8534, 8594, 1397, 8491, 2]
+// Dependencies: [19, 17, 1386, 1074, 21, 4829, 10772, 11552, 8922, 5894, 7624, 7684, 1397, 7581, 2]
 
-// Module 12434 (RecommendationsBanner)
+// Module 11560 (RecommendationsBanner)
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import FastImageDefault from "FastImage" /* 5892 */;
-import useAvatarColorDefault from "useAvatarColor" /* 8491 */;
-import useDisplayProfileDefault from "useDisplayProfile" /* 8534 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9824 */;
+import FastImageDefault from "FastImage" /* 5894 */;
+import useAvatarColorDefault from "useAvatarColor" /* 7581 */;
+import useDisplayProfileDefault from "useDisplayProfile" /* 7624 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 8922 */;
 import noop from "module_19" /* 19 */;
 import UserRecord from "UserRecord" /* 1386 */;
 
-const UserProfileBannerDefault = tmp(8594);
+const UserProfileBannerDefault = tmp(7684);
 const require = fn;
 const View = fn(17).View;
 const Constants = fn(1074);
@@ -22,8 +22,8 @@ const createStyles = fn(4829);
 let closure_9 = createStyles.createStyles({ imageContainer: { width: "100%", height: "100%" }, image: { width: "100%", height: "100%" } });
 let closure_10 = noop.memo((applicationId) => {
   let heroMediaDimensions;
-  let obj = heroMediaDimensions(11567);
-  heroMediaDimensions = heroMediaDimensions(12426).useHeroMediaDimensions({ width: obj.useRequiredAppLauncherContext().width });
+  let obj = heroMediaDimensions(10772);
+  heroMediaDimensions = heroMediaDimensions(11552).useHeroMediaDimensions({ width: obj.useRequiredAppLauncherContext().width });
   const tmp4 = useEmbeddedActivityBackgroundDefault({ applicationId: applicationId.applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] });
   importDefault = tmp4;
   let items = [heroMediaDimensions, tmp4];

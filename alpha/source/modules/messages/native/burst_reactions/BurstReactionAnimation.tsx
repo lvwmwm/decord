@@ -1,12 +1,12 @@
-// Module ID: 8155
-// Function ID: 8156
+// Module ID: 7240
+// Function ID: 7241
 // Name: BurstReactionAnimation
-// Dependencies: [19, 4821, 21, 4829, 8113, 504, 8156, 5834, 2]
+// Dependencies: [19, 4821, 21, 4829, 7198, 504, 7241, 5836, 2]
 // Exports: default
 
-// Module 8155 (BurstReactionAnimation)
+// Module 7240 (BurstReactionAnimation)
 import initialize from "initialize" /* 504 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 8113 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7198 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 
@@ -46,6 +46,6 @@ export default function BurstReactionAnimation(arg0) {
     const merged1 = Object.assign(merged);
     const merged2 = Object.assign(obj3);
     obj4.source = burstReactionAnimationSource;
-    return jsx(importDefault(withFadeOut ? 8156 : 5834), { style: tmp2.content, loop: false, speed: null });
+    return jsx(importDefault(withFadeOut ? 7241 : 5836), { style: tmp2.content, loop: false, speed: null });
   }
 };

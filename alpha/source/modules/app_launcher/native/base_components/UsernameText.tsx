@@ -1,10 +1,10 @@
-// Module ID: 12524
-// Function ID: 12525
+// Module ID: 11650
+// Function ID: 11651
 // Name: UsernameText
 // Dependencies: [19, 21, 4981, 4825, 2]
 // Exports: default
 
-// Module 12524 (UsernameText)
+// Module 11650 (UsernameText)
 import Text_Text from "Text/Text" /* 4825 */;
 import NicknameUtils from "NicknameUtils" /* 4981 */;
 import noop from "module_19" /* 19 */;

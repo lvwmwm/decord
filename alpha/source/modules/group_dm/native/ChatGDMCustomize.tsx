@@ -1,9 +1,9 @@
-// Module ID: 11278
-// Function ID: 11279
+// Module ID: 10376
+// Function ID: 10377
 // Name: ChatGDMCustomize
-// Dependencies: [5, 32, 19, 17, 2044, 1074, 21, 4829, 576, 7314, 504, 4982, 5903, 1397, 11279, 4842, 1115, 4523, 6940, 11280, 5427, 4825, 6936, 5273, 11282, 2]
+// Dependencies: [5, 32, 19, 17, 2044, 1074, 21, 4829, 576, 6397, 504, 4982, 5905, 1397, 10377, 4842, 1115, 4525, 6023, 10378, 5428, 4825, 6019, 5274, 10380, 2]
 
-// Module 11278 (ChatGDMCustomize)
+// Module 10376 (ChatGDMCustomize)
 import nativeDefault from "native" /* 576 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;

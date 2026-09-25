@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 64 (sizesDiffer)
-let closure_0 = { width: "channel", height: "channelId" };
+let closure_0 = { width: "isArray", height: "paddingHorizontal" };
 
 export default function sizesDiffer(arg0, arg1) {
   let size = arg0;

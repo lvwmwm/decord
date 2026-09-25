@@ -1,10 +1,10 @@
-// Module ID: 18397
-// Function ID: 18398
+// Module ID: 17628
+// Function ID: 17629
 // Name: AVErrorContext
 // Dependencies: [1992, 4852, 2098, 4868, 4884, 4881, 2]
 // Exports: getCommonErrorContext, getStreamErrorContext, getVoiceChannelErrorContext
 
-// Module 18397 (AVErrorContext)
+// Module 17628 (AVErrorContext)
 import StreamKeyUtils from "StreamKeyUtils" /* 4881 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4884 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;

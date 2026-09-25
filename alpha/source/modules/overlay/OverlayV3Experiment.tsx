@@ -1,10 +1,10 @@
-// Module ID: 4675
-// Function ID: 4676
+// Module ID: 4677
+// Function ID: 4678
 // Name: OverlayV3Experiment
 // Dependencies: [1434, 2]
 // Exports: getOverlayChatConfig, getOverlayDefaultKeybind, getOverlayStreamerModeConfig, trackOverlayInitializedExperiments, useOverlayChat, useOverlayStreamerMode
 
-// Module 4675 (OverlayV3Experiment)
+// Module 4677 (OverlayV3Experiment)
 import ApexExperiment_mod from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

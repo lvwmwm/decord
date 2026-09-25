@@ -1,14 +1,14 @@
-// Module ID: 17118
-// Function ID: 17119
+// Module ID: 16309
+// Function ID: 16310
 // Name: VibegrationsRepliedMessage
-// Dependencies: [19, 17, 21, 17116, 4829, 576, 17119, 4673, 17024, 1115, 3714, 1177, 4825, 17123, 2]
+// Dependencies: [19, 17, 21, 16307, 4829, 576, 16310, 4675, 16214, 1115, 3714, 1177, 4825, 16314, 2]
 // Exports: default
 
-// Module 17118 (VibegrationsRepliedMessage)
+// Module 16309 (VibegrationsRepliedMessage)
 import nativeDefault from "native" /* 576 */;
 import _modDef3714 from "module_3714" /* 3714 */;
-import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 17024 */;
-import VibegrationsSelectedMentionDefault from "VibegrationsSelectedMention" /* 17123 */;
+import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16214 */;
+import VibegrationsSelectedMentionDefault from "VibegrationsSelectedMention" /* 16314 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,10 +16,10 @@ get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const diff = fn(17116).MESSAGE_EDGE_INSET + fn(17116).MESSAGE_AVATAR_SIZE / 2 - 1;
-const diff1 = fn(17116).MESSAGE_CONTENT_INSET - 4 - diff;
+const diff = fn(16307).MESSAGE_EDGE_INSET + fn(16307).MESSAGE_AVATAR_SIZE / 2 - 1;
+const diff1 = fn(16307).MESSAGE_CONTENT_INSET - 4 - diff;
 const createStyles = fn(4829);
-let obj2 = { root: { marginLeft: diff - fn(17116).MESSAGE_CONTENT_INSET, paddingLeft: diff1 + 4, height: 20, flexDirection: "row", alignItems: "flex-start" }, spine: null, avatar: null, name: null, content: null };
+let obj2 = { root: { marginLeft: diff - fn(16307).MESSAGE_CONTENT_INSET, paddingLeft: diff1 + 4, height: 20, flexDirection: "row", alignItems: "flex-start" }, spine: null, avatar: null, name: null, content: null };
 const rect = { position: "absolute", left: 0, top: 9, bottom: 0, width: diff1, borderTopWidth: 2, borderLeftWidth: 2, borderColor: nativeDefault.colors.SPINE_DEFAULT, borderTopLeftRadius: Math.round(0.25 * diff1) };
 obj2.spine = rect;
 obj2.avatar = { marginRight: 4 };
@@ -33,9 +33,9 @@ export default function VibegrationsRepliedMessage(replied) {
   replied = replied.replied;
   const onJump = replied.onJump;
   const tmp = closure_8();
-  const messageAuthorUser = replied(17119).useMessageAuthorUser(replied.userId);
-  const obj = replied(17119);
-  let str = replied(4673).useName(messageAuthorUser);
+  const messageAuthorUser = replied(16310).useMessageAuthorUser(replied.userId);
+  const obj = replied(16310);
+  let str = replied(4675).useName(messageAuthorUser);
   if (str == null) {
     str = "";
   }
@@ -48,7 +48,7 @@ export default function VibegrationsRepliedMessage(replied) {
   if (body == null) {
     body = replied.content;
   }
-  const obj2 = replied(4673);
+  const obj2 = replied(4675);
   const trimmed = body.replace(/\s+/g, " ").trim();
   const obj3 = { style: tmp.root, onPress: onJump, disabled: null == onJump, accessibilityRole: "button", accessibilityLabel: null, children: null };
   const intl = tmp2(1115).intl;
@@ -58,7 +58,7 @@ export default function VibegrationsRepliedMessage(replied) {
   if (null != messageAuthorUser) {
     const obj5 = { style: tmp.avatar, children: null };
     const obj6 = { userId: replied.userId, size: tmp2(1177).AvatarSizes.SIZE_16 };
-    obj5.children = tmp11(tmp2(17119).VibegrationsUserAvatar, obj6);
+    obj5.children = tmp11(tmp2(16310).VibegrationsUserAvatar, obj6);
     tmp11Result = tmp11(closure_5, obj5);
   }
   items1[1] = tmp11Result;

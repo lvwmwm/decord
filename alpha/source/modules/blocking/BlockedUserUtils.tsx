@@ -1,12 +1,12 @@
-// Module ID: 14077
-// Function ID: 14078
+// Module ID: 13238
+// Function ID: 13239
 // Name: BlockedUserUtils
-// Dependencies: [4474, 1370, 12, 2]
+// Dependencies: [4476, 1370, 12, 2]
 // Exports: filterBlockedUsersFromVoiceStates, filterOutBlockedOrIgnoredUserIds, filterOutBlockedOrIgnoredUsers, filterOutStreamsByBlockedOwner, hasBlockedOrIgnoredUserIds, voiceStateHasBlockedUsers
 
-// Module 14077 (BlockedUserUtils)
+// Module 13238 (BlockedUserUtils)
 import _modDef12 from "module_12" /* 12 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 
 const require = fn;
 const size = fn(2);

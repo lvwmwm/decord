@@ -1,18 +1,18 @@
-// Module ID: 8717
-// Function ID: 8718
+// Module ID: 7807
+// Function ID: 7808
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 4829, 576, 5259, 8718, 8719, 1115, 5985, 5882, 4825, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 5260, 7808, 7809, 1115, 5987, 5884, 4825, 2]
 // Exports: default
 
-// Module 8717 (SharePreparingModal)
+// Module 7807 (SharePreparingModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import Backdrop from "Backdrop" /* 5259 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5882 */;
-import XSmallIcon from "XSmallIcon" /* 5985 */;
-import MediaModalOverlayHeaderWrapper from "MediaModalOverlayHeaderWrapper" /* 8718 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8719 */;
+import Backdrop from "Backdrop" /* 5260 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5884 */;
+import XSmallIcon from "XSmallIcon" /* 5987 */;
+import MediaModalOverlayHeaderWrapper from "MediaModalOverlayHeaderWrapper" /* 7808 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 7809 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

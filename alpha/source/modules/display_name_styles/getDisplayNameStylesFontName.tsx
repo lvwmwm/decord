@@ -1,10 +1,10 @@
-// Module ID: 14986
-// Function ID: 14987
+// Module ID: 14148
+// Function ID: 14149
 // Name: getDisplayNameStylesFontName
 // Dependencies: [1392, 2876, 2]
 // Exports: default
 
-// Module 14986 (getDisplayNameStylesFontName)
+// Module 14148 (getDisplayNameStylesFontName)
 import _modDef2876 from "module_2876" /* 2876 */;
 
 const DISPLAY_NAME_STYLES_FONT_NAMES = {};

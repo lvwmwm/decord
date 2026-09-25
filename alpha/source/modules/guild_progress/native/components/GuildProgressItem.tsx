@@ -1,13 +1,13 @@
-// Module ID: 12937
-// Function ID: 12938
+// Module ID: 12067
+// Function ID: 12068
 // Name: GuildProgressItem
-// Dependencies: [19, 21, 4829, 12823, 12827, 12826, 6673, 1115, 12938, 2]
+// Dependencies: [19, 21, 4829, 11949, 11953, 11952, 12068, 1115, 12069, 2]
 // Exports: default
 
-// Module 12937 (GuildProgressItem)
-import GuildProgressUtils from "GuildProgressUtils" /* 12823 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12826 */;
-import GuildProgressCircleDefault from "GuildProgressCircle" /* 12938 */;
+// Module 12067 (GuildProgressItem)
+import GuildProgressUtils from "GuildProgressUtils" /* 11949 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 11952 */;
+import GuildProgressCircleDefault from "GuildProgressCircle" /* 12069 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

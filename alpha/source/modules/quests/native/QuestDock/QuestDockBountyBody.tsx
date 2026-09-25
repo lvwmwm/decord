@@ -1,24 +1,24 @@
-// Module ID: 15547
-// Function ID: 15548
+// Module ID: 14717
+// Function ID: 14718
 // Name: QuestDockBountyBody
-// Dependencies: [19, 5749, 21, 15518, 15438, 15428, 15435, 11829, 1115, 11854, 8047, 8052, 8062, 5756, 8051, 5752, 15348, 15350, 11837, 15536, 11646, 15548, 8269, 13311, 2]
+// Dependencies: [19, 5751, 21, 14688, 14606, 14596, 14603, 10698, 1115, 10723, 7132, 7137, 7147, 5758, 7136, 5754, 14514, 14516, 10706, 14706, 10688, 14718, 7358, 12461, 2]
 
-// Module 15547 (QuestDockBountyBody)
+// Module 14717 (QuestDockBountyBody)
 import util from "util" /* 1115 */;
-import QuestTypes from "QuestTypes" /* 5752 */;
-import AdCreativeType from "AdCreativeType" /* 5756 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8047 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8051 */;
-import captureAdUserAction from "captureAdUserAction" /* 8052 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 8062 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 11837 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 11854 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15348 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 15350 */;
+import QuestTypes from "QuestTypes" /* 5754 */;
+import AdCreativeType from "AdCreativeType" /* 5758 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7132 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7136 */;
+import captureAdUserAction from "captureAdUserAction" /* 7137 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7147 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 10706 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 10723 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 14514 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 14516 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const QuestDockMode = fn(5749).QuestDockMode;
+const QuestDockMode = fn(5751).QuestDockMode;
 const jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBountyBody.tsx");
@@ -86,6 +86,6 @@ export default noop.memo(function QuestDockBountyBody() {
   obj5.ctaText = memo;
   obj5.onCtaPress = callback;
   const tmp11 = setRestingQuestDockMode(getQuestImpressionId[19]);
-  obj5.secondaryCta = jsx(questDockBounty(getQuestImpressionId[22]).IconButton, { variant: "secondary", size: "md", icon: setRestingQuestDockMode(getQuestImpressionId[23]), accessibilityLabel: questDockBounty.cta.buttonLabel, onPress: callback1 });
+  obj5.secondaryCta = jsx(questDockBounty(getQuestImpressionId[22]).IconButton, { variant: "secondary-overlay", size: "md", icon: setRestingQuestDockMode(getQuestImpressionId[23]), accessibilityLabel: questDockBounty.cta.buttonLabel, onPress: callback1 });
   return <tmp11 rewardTile={jsx(questDockBounty(getQuestImpressionId[19]).QuestDockBodyRewardTile, { assetUrl: setRestingQuestDockMode(getQuestImpressionId[20]), isAnimatedAsset: true, paused: null, withAnimation: null })} contentBadge={jsx(setRestingQuestDockMode(getQuestImpressionId[21]), {})} title={null} description={null} ctaText={null} onCtaPress={null} ctaButtonVariant="primary" secondaryCta={null} />;
 });

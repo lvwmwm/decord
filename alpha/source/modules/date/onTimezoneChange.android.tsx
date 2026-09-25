@@ -1,11 +1,11 @@
-// Module ID: 4508
-// Function ID: 4509
+// Module ID: 4510
+// Function ID: 4511
 // Name: onTimezoneChange
-// Dependencies: [4509, 2]
+// Dependencies: [4511, 2]
 // Exports: default
 
-// Module 4508 (onTimezoneChange)
-import NativeTimezoneHermesFixModuleDefault from "NativeTimezoneHermesFixModule" /* 4509 */;
+// Module 4510 (onTimezoneChange)
+import NativeTimezoneHermesFixModuleDefault from "NativeTimezoneHermesFixModule" /* 4511 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/date/onTimezoneChange.android.tsx");

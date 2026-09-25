@@ -1,23 +1,23 @@
-// Module ID: 15536
-// Function ID: 15537
+// Module ID: 14706
+// Function ID: 14707
 // Name: QuestDockInsetHeaderBody
-// Dependencies: [19, 17, 15431, 21, 576, 4829, 12112, 12111, 15428, 1612, 15500, 15497, 4825, 5273, 1177, 2]
+// Dependencies: [19, 17, 14599, 21, 576, 4829, 10733, 10732, 14596, 1612, 14670, 14667, 4825, 5274, 1177, 2]
 // Exports: QuestDockBodyQuestRewardTile, QuestDockBodyRewardTile
 
-// Module 15536 (QuestDockInsetHeaderBody)
+// Module 14706 (QuestDockInsetHeaderBody)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import QuestRewardTileDefault from "QuestRewardTile" /* 12111 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 12112 */;
-import QuestDockHooks from "QuestDockHooks" /* 15428 */;
-import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 15497 */;
-import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 15500 */;
+import QuestRewardTileDefault from "QuestRewardTile" /* 10732 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 10733 */;
+import QuestDockHooks from "QuestDockHooks" /* 14596 */;
+import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 14667 */;
+import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 14670 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const QuestDockConstants = fn(15431);
+const QuestDockConstants = fn(14599);
 const QUEST_DOCK_EXPANDED_PADDING_BOTTOM = QuestDockConstants.QUEST_DOCK_EXPANDED_PADDING_BOTTOM;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
@@ -108,7 +108,7 @@ export default noop.memo(function QuestDockInsetHeaderBody(showBonusOrbsGradient
     }
     obj14.icon = renderCtaIconResult;
     obj14.text = ctaText;
-    let tmp8Result4 = tmp8(tmp2(5273).Button, obj14);
+    let tmp8Result4 = tmp8(tmp2(5274).Button, obj14);
   } else {
     const obj15 = { style: tmp.questDockCta, onPress: onCtaPress, loading: ctaLoading, renderIcon: renderCtaIcon, text: ctaText, shineDisabled: !isQuestDockExpanded };
     tmp8Result4 = tmp8(tmp2(1177).ShinyButton, obj15);

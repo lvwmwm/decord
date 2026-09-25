@@ -1,17 +1,17 @@
-// Module ID: 7923
-// Function ID: 7924
+// Module ID: 7008
+// Function ID: 7009
 // Name: ReferencedMessageStore
-// Dependencies: [32, 7924, 7928, 2044, 5049, 1074, 1438, 5051, 7930, 504, 573, 2]
+// Dependencies: [32, 7009, 7013, 2044, 5049, 1074, 1438, 5051, 7015, 504, 573, 2]
 
-// Module 7923 (ReferencedMessageStore)
+// Module 7008 (ReferencedMessageStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import privDefault from "priv" /* 1438 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5051 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7930 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7015 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7924 */;
-import ConversationsStore from "ConversationsStore" /* 7928 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7009 */;
+import ConversationsStore from "ConversationsStore" /* 7013 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import MessageStore from "MessageStore" /* 5049 */;
 

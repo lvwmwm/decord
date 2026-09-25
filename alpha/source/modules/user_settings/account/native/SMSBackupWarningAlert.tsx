@@ -1,12 +1,12 @@
-// Module ID: 7410
-// Function ID: 7411
+// Module ID: 6493
+// Function ID: 6494
 // Name: SMSBackupWarningAlert
-// Dependencies: [19, 21, 4829, 5292, 1115, 5196, 4825, 2]
+// Dependencies: [19, 21, 4829, 5293, 1115, 5197, 4825, 2]
 // Exports: default
 
-// Module 7410 (SMSBackupWarningAlert)
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5196 */;
-import common_AlertDefault from "common/Alert" /* 5292 */;
+// Module 6493 (SMSBackupWarningAlert)
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5197 */;
+import common_AlertDefault from "common/Alert" /* 5293 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

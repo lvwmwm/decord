@@ -1,20 +1,20 @@
-// Module ID: 15227
-// Function ID: 15228
+// Module ID: 14393
+// Function ID: 14394
 // Name: ConnectGuardianCard
-// Dependencies: [19, 17, 1372, 7868, 21, 4829, 576, 563, 7769, 15223, 15224, 7522, 4522, 1115, 2486, 5271, 10211, 4825, 5473, 5273, 13302, 5738, 2]
+// Dependencies: [19, 17, 1372, 6953, 21, 4829, 576, 563, 6854, 14389, 14390, 6605, 4524, 1115, 2486, 5272, 9308, 4825, 5475, 5274, 12452, 5740, 2]
 // Exports: ConnectGuardianCard
 
-// Module 15227 (ConnectGuardianCard)
+// Module 14393 (ConnectGuardianCard)
 import nativeDefault from "native" /* 576 */;
-import ToastUtils from "ToastUtils" /* 4522 */;
-import ClipboardUtils from "ClipboardUtils" /* 7522 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 15224 */;
+import ToastUtils from "ToastUtils" /* 4524 */;
+import ClipboardUtils from "ClipboardUtils" /* 6605 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 14390 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_6 = fn(7868).FAMILY_CENTER_REQUEST_QR_CODE_URL;
+let closure_6 = fn(6953).FAMILY_CENTER_REQUEST_QR_CODE_URL;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4829);

@@ -1,22 +1,22 @@
-// Module ID: 11862
-// Function ID: 11863
+// Module ID: 10731
+// Function ID: 10732
 // Name: BountyActionCreators
-// Dependencies: [5, 8023, 4878, 8025, 8026, 1074, 3, 573, 5756, 11633, 8024, 4730, 7791, 8044, 1271, 5752, 8022, 2]
-// Exports: claimBountyReward, dismissAdContent, fetchBountyPreview, fetchDockCreativePreview, fetchQuestHomeBounties, setBountyVideoProgress
+// Dependencies: [5, 7108, 4878, 7110, 7111, 1074, 3, 573, 5758, 10675, 7109, 4732, 6876, 7129, 1271, 5754, 7107, 2]
+// Exports: claimBountyReward, dismissAdContent, fetchBountyPreview, fetchDockCreativePreview, fetchQuestHomeBounties, resetCreativePreviewDeliveryState, resetPreviewDeliveryStateLookback, setBountyVideoProgress
 
-// Module 11862 (BountyActionCreators)
+// Module 10731 (BountyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import QuestTypes from "QuestTypes" /* 5752 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7791 */;
-import QuestDataUtils from "QuestDataUtils" /* 8022 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 8044 */;
+import QuestTypes from "QuestTypes" /* 5754 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 6876 */;
+import QuestDataUtils from "QuestDataUtils" /* 7107 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7129 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 8023 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7108 */;
 import NetworkStore from "NetworkStore" /* 4878 */;
-import BountyStore from "BountyStore" /* 8025 */;
-import QuestStore from "QuestStore" /* 8026 */;
+import BountyStore from "BountyStore" /* 7110 */;
+import QuestStore from "QuestStore" /* 7111 */;
 
 require = fn;
 function fetchBountiesAndDispatch() {
@@ -105,8 +105,8 @@ let closure_12 = async function _fetchQuestHomeBounties(arg0, value) {
           c1 = 1;
           const obj4 = {
             value: fetchBountiesAndDispatch(tmp5, asyncGeneratorStep(async () => {
-                      closure_128_0 = await tmp2(7791).getSession();
-                      const orRefreshAdSession = tmp2(8044).getOrRefreshAdSession();
+                      closure_128_0 = await tmp2(6876).getSession();
+                      const orRefreshAdSession = tmp2(7129).getOrRefreshAdSession();
                       const HTTP = tmp2(1271).HTTP;
                       const request = { url: constants.QUESTS_GET_DECISIONS, query: null, rejectWithError: false, context: null };
                       const obj7 = { placement: closure_129_0, client_ad_session_id: orRefreshAdSession.uuid, client_heartbeat_session_id: null, num_decisions_requested: 5 };
@@ -584,11 +584,11 @@ let closure_16 = async function _dismissAdContent(arg0, value) {
               const obj5 = { type: "AD_CONTENT_DISMISS_BEGIN", adCreativeType, adCreativeId };
               DispatcherDefault.dispatch(obj5);
               c5 = 1;
-              const adMetadataSealed = tmp55(8022).getAdMetadataSealed(tmp54, adCreativeId);
-              const tmp55Result = tmp55(8022);
-              const adTrafficMetadataSealed = tmp55(8022).getAdTrafficMetadataSealed(tmp54, undefined, adCreativeId);
-              const tmp55Result3 = tmp55(8022);
-              const questPlacementFromQuestContent = tmp55(8022).getQuestPlacementFromQuestContent(tmp54);
+              const adMetadataSealed = tmp55(7107).getAdMetadataSealed(tmp54, adCreativeId);
+              const tmp55Result = tmp55(7107);
+              const adTrafficMetadataSealed = tmp55(7107).getAdTrafficMetadataSealed(tmp54, undefined, adCreativeId);
+              const tmp55Result3 = tmp55(7107);
+              const questPlacementFromQuestContent = tmp55(7107).getQuestPlacementFromQuestContent(tmp54);
               const HTTP = tmp55(1271).HTTP;
               const request = { url: Endpoints.QUESTS_CREATIVES_DISMISS(adCreativeId), body: null, rejectWithError: false };
               let tmp42 = null;
@@ -651,6 +651,123 @@ let closure_16 = async function _dismissAdContent(arg0, value) {
     }
   }
 };
+let closure_17 = async function _resetCreativePreviewDeliveryState(arg0, value) {
+  if (c5 === 2) {
+    c5 = 3;
+    throw new TypeError("Generator functions may not be called on executing generators");
+  } else if (tmp4 === 3) {
+    if (arg0 === 1) {
+      throw value;
+    } else if (arg0 === 2) {
+      const obj2 = { value, done: true };
+      return obj2;
+    } else {
+      return { value: "HermesInternal", done: null };
+    }
+  } else {
+    try {
+      c5 = 2;
+      if (0 === c4) {
+        if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          closure_3 = tmp2;
+          closure_2 = tmp5;
+          closure_130_0 = closure_0;
+          let tmp12;
+          const HTTP = HTTPUtils.HTTP;
+          const request = { url: Endpoints.ADS_CREATIVES_PREVIEW_DELIVERY_STATE(closure_0), query: null, rejectWithError: false };
+          if (null != importDefault) {
+            const obj4 = { placement: importDefault };
+            tmp12 = obj4;
+          }
+          request.query = tmp12;
+          c4 = 1;
+          c5 = 1;
+          const obj5 = { value: HTTP.del(request), done: false };
+          return obj5;
+        }
+      } else if (arg0 === 1) {
+        c5 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c5 = 3;
+        const obj6 = { value, done: true };
+        return obj6;
+      } else {
+        const obj7 = { type: "ADS_CREATIVE_PREVIEW_DELIVERY_STATE_RESET", adCreativeId: closure_130_0 };
+        closure_131_1(closure_131_2[7]).dispatch(obj7);
+        c5 = 3;
+        return { value: "HermesInternal", done: null };
+      }
+    } catch (tmp13) {
+      c5 = tmp;
+      throw tmp13;
+    }
+  }
+};
+let closure_18 = async function _resetPreviewDeliveryStateLookback(lookback_minutes) {
+  c2 = 0;
+  c3 = 0;
+  return (async (arg0, value) => {
+    if (c3 === 2) {
+      c3 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            closure_1 = tmp2;
+            const HTTP = HTTPUtils.HTTP;
+            const request = { url: constants.ADS_CREATIVES_PREVIEW_DELIVERY_STATE_LOOKBACK, query: null, rejectWithError: false };
+            const obj4 = { lookback_minutes };
+            request.query = obj4;
+            c2 = 1;
+            c3 = 1;
+            const obj5 = { value: HTTP.del(request), done: false };
+            return obj5;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          const obj6 = { value, done: true };
+          return obj6;
+        } else {
+          closure_129_1(closure_129_2[7]).dispatch({ type: "ADS_PREVIEW_DELIVERY_STATE_LOOKBACK_RESET" });
+          c3 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp14) {
+        c3 = tmp;
+        throw tmp14;
+      }
+    }
+  })();
+};
 const Endpoints = fn(1074).Endpoints;
 let closure_9 = new LoggerDefault("BountyActionCreators");
 const size = fn(2);
@@ -708,6 +825,26 @@ export const claimBountyReward = function claimBountyReward() {
 export const dismissAdContent = function dismissAdContent() {
   const self = this;
   const apply = closure_16.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+};
+export const resetCreativePreviewDeliveryState = function resetCreativePreviewDeliveryState() {
+  const self = this;
+  const apply = closure_17.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+};
+export const resetPreviewDeliveryStateLookback = function resetPreviewDeliveryStateLookback() {
+  const self = this;
+  const apply = closure_18.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
   } else {

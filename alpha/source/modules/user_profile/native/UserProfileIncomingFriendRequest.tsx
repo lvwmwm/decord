@@ -1,10 +1,10 @@
-// Module ID: 13521
-// Function ID: 13522
+// Module ID: 12673
+// Function ID: 12674
 // Name: UserProfileIncomingFriendRequest
-// Dependencies: [19, 17, 21, 4829, 576, 8589, 8538, 7495, 13522, 4981, 7501, 4825, 1115, 1177, 1397, 13523, 5273, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 7679, 7628, 6578, 12674, 4981, 6584, 4825, 1115, 1177, 1397, 12675, 5274, 2]
 // Exports: default
 
-// Module 13521 (UserProfileIncomingFriendRequest)
+// Module 12673 (UserProfileIncomingFriendRequest)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;

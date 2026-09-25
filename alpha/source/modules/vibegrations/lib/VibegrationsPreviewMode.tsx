@@ -1,10 +1,10 @@
-// Module ID: 17059
-// Function ID: 17060
+// Module ID: 16249
+// Function ID: 16250
 // Name: VibegrationsPreviewMode
 // Dependencies: [3714, 1115, 2]
 // Exports: getPreviewModeLabel, getPreviewModePanelId
 
-// Module 17059 (VibegrationsPreviewMode)
+// Module 16249 (VibegrationsPreviewMode)
 import util from "util" /* 1115 */;
 import _modDef3714 from "module_3714" /* 3714 */;
 import size from "module_2" /* 2 */;

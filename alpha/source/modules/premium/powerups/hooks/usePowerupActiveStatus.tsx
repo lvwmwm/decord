@@ -1,20 +1,20 @@
-// Module ID: 12849
-// Function ID: 12850
+// Module ID: 11978
+// Function ID: 11979
 // Name: usePowerupActiveStatus
-// Dependencies: [2066, 4717, 4718, 1074, 4719, 504, 2]
+// Dependencies: [2066, 4719, 4720, 1074, 4721, 504, 2]
 // Exports: default, isPowerupActiveStatusActive, usePowerupsActiveStatuses
 
-// Module 12849 (usePowerupActiveStatus)
+// Module 11978 (usePowerupActiveStatus)
 import GuildStore from "GuildStore" /* 2066 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4717 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4719 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const GuildPowerupsConstants = fn(4718);
+const GuildPowerupsConstants = fn(4720);
 ({ GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS: closure_4, PowerupActiveStatusType: hasOwnProperty, POWERUPS_INCLUDED_IN_LEVEL: metroRequire, BOOSTING_TIER_TO_LEVEL_SKU_ID: closure_7 } = GuildPowerupsConstants);
 const GuildFeatures = fn(1074).GuildFeatures;
-let closure_9 = fn(4719).GAME_SERVER_POWERUP_SKU_ID;
+let closure_9 = fn(4721).GAME_SERVER_POWERUP_SKU_ID;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/usePowerupActiveStatus.tsx");
 
@@ -61,7 +61,7 @@ export default function usePowerupActiveStatus(arg0, arg1) {
         if (null != stateFromStores) {
           if (null != unlockedPowerups) {
             if (null == timestampProducer[skuId.skuId]) {
-              let obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "padding" };
+              let obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "paddingHorizontal" };
             } else {
               let tmp4;
               if (null != React5[tmp22]) {
@@ -114,11 +114,11 @@ export default function usePowerupActiveStatus(arg0, arg1) {
           return obj3;
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "padding" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "paddingHorizontal" };
     }
   });
   if (mapped.length <= 0) {
-    let obj3 = { type: constants.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "paddingHorizontal" };
+    let obj3 = { type: constants.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "ao" };
     let first = obj3;
   } else {
     first = mapped[0];
@@ -166,7 +166,7 @@ export const usePowerupsActiveStatuses = function usePowerupsActiveStatuses(guil
         if (null != stateFromStores) {
           if (null != unlockedPowerups) {
             if (null == timestampProducer[skuId.skuId]) {
-              let obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "padding" };
+              let obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "paddingHorizontal" };
             } else {
               let tmp4;
               if (null != React5[tmp22]) {
@@ -219,7 +219,7 @@ export const usePowerupsActiveStatuses = function usePowerupsActiveStatuses(guil
           return obj3;
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "padding" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "paddingHorizontal" };
     }
   });
 };

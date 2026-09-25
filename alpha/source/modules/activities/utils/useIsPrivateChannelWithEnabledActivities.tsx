@@ -1,10 +1,10 @@
-// Module ID: 9754
-// Function ID: 9755
+// Module ID: 8852
+// Function ID: 8853
 // Name: useIsPrivateChannelWithEnabledActivities
 // Dependencies: [2044, 563, 2]
 // Exports: default, isPrivateChannelWithEnabledActivities
 
-// Module 9754 (useIsPrivateChannelWithEnabledActivities)
+// Module 8852 (useIsPrivateChannelWithEnabledActivities)
 import ChannelStore from "ChannelStore" /* 2044 */;
 
 const require = globalThis.__r;

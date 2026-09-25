@@ -1,19 +1,19 @@
-// Module ID: 18173
-// Function ID: 18174
+// Module ID: 17401
+// Function ID: 17402
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [19, 17, 1074, 21, 4829, 576, 1241, 4796, 4522, 7482, 1115, 7530, 18151, 5195, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 576, 1241, 4796, 4524, 6565, 1115, 6613, 17379, 5196, 2]
 // Exports: default
 
-// Module 18173 (RolePermissionTemplatesActionSheet)
+// Module 17401 (RolePermissionTemplatesActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ToastUtils from "ToastUtils" /* 4522 */;
+import ToastUtils from "ToastUtils" /* 4524 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5195 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7482 */;
-import ActionSheet from "ActionSheet" /* 7530 */;
-import GuildSettingsRoleTemplateDefault from "GuildSettingsRoleTemplate" /* 18151 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5196 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6565 */;
+import ActionSheet from "ActionSheet" /* 6613 */;
+import GuildSettingsRoleTemplateDefault from "GuildSettingsRoleTemplate" /* 17379 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -56,7 +56,7 @@ export default function RolePermissionTemplatesActionSheet(guildId) {
             importDefault(closure_0);
             closure_1_1(4796).hideActionSheet();
             const obj = closure_1_1(4796);
-            const result = closure_0(4522).roleTemplateAppliedToast();
+            const result = closure_0(4524).roleTemplateAppliedToast();
           };
           obj4.onCancel = function onCancel() {
             closure_1_1(4796).hideActionSheet();
@@ -89,7 +89,7 @@ export default function RolePermissionTemplatesActionSheet(guildId) {
           importDefault(closure_0);
           closure_1_1(4796).hideActionSheet();
           const obj = closure_1_1(4796);
-          const result = closure_0(4522).roleTemplateAppliedToast();
+          const result = closure_0(4524).roleTemplateAppliedToast();
         };
         obj4.onCancel = function onCancel() {
           closure_1_1(4796).hideActionSheet();

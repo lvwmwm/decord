@@ -1,17 +1,17 @@
-// Module ID: 17762
-// Function ID: 17763
+// Module ID: 16986
+// Function ID: 16987
 // Name: VoicePanelDisconnectCancelButton
-// Dependencies: [32, 19, 2043, 4851, 5037, 12615, 21, 4829, 576, 12614, 9699, 4561, 9659, 5030, 4971, 5716, 10261, 17763, 8213, 17753, 1115, 2]
+// Dependencies: [32, 19, 2043, 4851, 5037, 11741, 21, 4829, 576, 11740, 8797, 4563, 8757, 5030, 4971, 5718, 9358, 16987, 7302, 16977, 1115, 2]
 // Exports: default
 
-// Module 17762 (VoicePanelDisconnectCancelButton)
+// Module 16986 (VoicePanelDisconnectCancelButton)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import StreamActionCreators from "StreamActionCreators" /* 4971 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5030 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5716 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9659 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9699 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5718 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8757 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 8797 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
@@ -21,7 +21,7 @@ import VoicePanelStore from "VoicePanelStore" /* 5037 */;
 const require = globalThis.__r;
 
 require = fn;
-const VoicePanelModes = fn(12615).VoicePanelModes;
+const VoicePanelModes = fn(11741).VoicePanelModes;
 const jsx = fn(21).jsx;
 const constants = { USER: 0, [0]: "USER", STREAM: 1, [1]: "STREAM", ACTIVITY: 2, [2]: "ACTIVITY" };
 const createStyles = fn(4829);

@@ -1,10 +1,10 @@
-// Module ID: 8174
-// Function ID: 8175
+// Module ID: 7259
+// Function ID: 7260
 // Name: ScheduledMessageActionCreators
-// Dependencies: [32, 5, 1074, 2041, 573, 1271, 8175, 4649, 2028, 1385, 2]
+// Dependencies: [32, 5, 1074, 2041, 573, 1271, 7260, 4651, 2028, 1385, 2]
 // Exports: createScheduledMessage, deleteScheduledMessage, fetchScheduledMessages, sendScheduledMessageNow, updateScheduledMessage
 
-// Module 8174 (ScheduledMessageActionCreators)
+// Module 7259 (ScheduledMessageActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import _slicedToArray from "module_32" /* 32 */;

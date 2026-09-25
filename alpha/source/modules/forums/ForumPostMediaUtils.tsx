@@ -1,17 +1,17 @@
-// Module ID: 8229
-// Function ID: 8230
+// Module ID: 7318
+// Function ID: 7319
 // Name: ForumPostMediaUtils
-// Dependencies: [19, 7636, 2044, 5049, 1372, 1074, 4979, 2020, 1385, 1366, 1370, 5053, 1978, 5059, 11, 2]
+// Dependencies: [19, 6719, 2044, 5049, 1372, 1074, 4979, 2020, 1385, 1366, 1370, 5053, 1978, 5059, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal, useFindFirstMediaProperties, useFirstMediaIsEmbed, useForumPostComponentsMedia, useForumPostMediaThumbnail
 
-// Module 8229 (ForumPostMediaUtils)
+// Module 7318 (ForumPostMediaUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import UserSettings from "UserSettings" /* 2020 */;
 import MediaFormatTesters from "MediaFormatTesters" /* 4979 */;
 import noop from "module_19" /* 19 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7636 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 6719 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import MessageStore from "MessageStore" /* 5049 */;
 import UserStore from "UserStore" /* 1372 */;

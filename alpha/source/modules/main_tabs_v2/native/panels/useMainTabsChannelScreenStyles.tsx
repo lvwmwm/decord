@@ -1,12 +1,12 @@
-// Module ID: 16959
-// Function ID: 16960
+// Module ID: 16149
+// Function ID: 16150
 // Name: useMainTabsChannelScreenStyles
-// Dependencies: [19, 17, 4829, 576, 4561, 2]
+// Dependencies: [19, 17, 4829, 576, 4563, 2]
 // Exports: useMainTabsChannelScreenStyles
 
-// Module 16959 (useMainTabsChannelScreenStyles)
+// Module 16149 (useMainTabsChannelScreenStyles)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

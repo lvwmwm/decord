@@ -1,12 +1,12 @@
-// Module ID: 13828
-// Function ID: 13829
+// Module ID: 12985
+// Function ID: 12986
 // Name: useFPDurationLeft
-// Dependencies: [1115, 7769, 4507, 1231, 2]
+// Dependencies: [1115, 6854, 4509, 1231, 2]
 // Exports: default
 
-// Module 13828 (useFPDurationLeft)
+// Module 12985 (useFPDurationLeft)
 import util from "util" /* 1115 */;
-import useCountdownDefault from "useCountdown" /* 7769 */;
+import useCountdownDefault from "useCountdown" /* 6854 */;
 import size from "module_2" /* 2 */;
 
 function roundFPCountdownUnits(arg0) {

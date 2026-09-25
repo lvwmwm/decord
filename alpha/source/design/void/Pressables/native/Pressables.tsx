@@ -1,12 +1,12 @@
-// Module ID: 5427
-// Function ID: 5428
+// Module ID: 5428
+// Function ID: 5429
 // Name: Pressables
-// Dependencies: [19, 17, 5282, 1181, 21, 4829, 576, 1364, 5428, 2]
+// Dependencies: [19, 17, 5283, 1181, 21, 4829, 576, 1364, 5429, 2]
 
-// Module 5427 (Pressables)
+// Module 5428 (Pressables)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import StyleSheetUtilsDefault from "StyleSheetUtils" /* 5428 */;
+import StyleSheetUtilsDefault from "StyleSheetUtils" /* 5429 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -93,7 +93,7 @@ function PressableBase(androidRippleConfig) {
   }, items1)} style={memo} ref={innerRef} />;
 }
 const Pressable = fn(17).Pressable;
-const IOS_POINTER_STYLE = fn(5282).IOS_POINTER_STYLE;
+const IOS_POINTER_STYLE = fn(5283).IOS_POINTER_STYLE;
 const getThemedRippleConfig = fn(1181).getThemedRippleConfig;
 const jsx = fn(21).jsx;
 const createStyles = fn(4829);

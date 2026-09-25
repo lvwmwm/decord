@@ -1,37 +1,37 @@
-// Module ID: 13929
-// Function ID: 13930
+// Module ID: 13088
+// Function ID: 13089
 // Name: EntitlementGiftGroupCard
-// Dependencies: [19, 17, 5056, 502, 11778, 4488, 5815, 1074, 1374, 21, 4829, 576, 4535, 11779, 4825, 1115, 5273, 7559, 9186, 1177, 7505, 11506, 7542, 13596, 13598, 13599, 13597, 13600, 13601, 13602, 13603, 11379, 13604, 13607, 13608, 13930, 504, 11790, 2]
+// Dependencies: [19, 17, 5056, 502, 10960, 4490, 5817, 1074, 1374, 21, 4829, 576, 4537, 10961, 4825, 1115, 5274, 6642, 8280, 1177, 6588, 10604, 6625, 12750, 12752, 12753, 12751, 12754, 12755, 12756, 12757, 10477, 12758, 12761, 12762, 13089, 504, 10972, 2]
 
-// Module 13929 (EntitlementGiftGroupCard)
+// Module 13088 (EntitlementGiftGroupCard)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import GameIconDefault from "GameIcon" /* 7505 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7559 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9186 */;
-import _modDef11379 from "module_11379" /* 11379 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11779 */;
-import SubscriptionUtils from "SubscriptionUtils" /* 11790 */;
-import _modDef13596 from "module_13596" /* 13596 */;
-import _modDef13597 from "module_13597" /* 13597 */;
-import _modDef13598 from "module_13598" /* 13598 */;
-import _modDef13599 from "module_13599" /* 13599 */;
-import _modDef13600 from "module_13600" /* 13600 */;
-import _modDef13601 from "module_13601" /* 13601 */;
-import _modDef13602 from "module_13602" /* 13602 */;
-import _modDef13603 from "module_13603" /* 13603 */;
-import _modDef13604 from "module_13604" /* 13604 */;
-import _modDef13607 from "module_13607" /* 13607 */;
-import _modDef13608 from "module_13608" /* 13608 */;
-import GiftCodeRowDefault from "GiftCodeRow" /* 13930 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import GameIconDefault from "GameIcon" /* 6588 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6642 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8280 */;
+import _modDef10477 from "module_10477" /* 10477 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 10961 */;
+import SubscriptionUtils from "SubscriptionUtils" /* 10972 */;
+import _modDef12750 from "module_12750" /* 12750 */;
+import _modDef12751 from "module_12751" /* 12751 */;
+import _modDef12752 from "module_12752" /* 12752 */;
+import _modDef12753 from "module_12753" /* 12753 */;
+import _modDef12754 from "module_12754" /* 12754 */;
+import _modDef12755 from "module_12755" /* 12755 */;
+import _modDef12756 from "module_12756" /* 12756 */;
+import _modDef12757 from "module_12757" /* 12757 */;
+import _modDef12758 from "module_12758" /* 12758 */;
+import _modDef12761 from "module_12761" /* 12761 */;
+import _modDef12762 from "module_12762" /* 12762 */;
+import GiftCodeRowDefault from "GiftCodeRow" /* 13089 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5056 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GiftCodeStore from "GiftCodeStore" /* 11778 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4488 */;
-import SKUStore from "SKUStore" /* 5815 */;
+import GiftCodeStore from "GiftCodeStore" /* 10960 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4490 */;
+import SKUStore from "SKUStore" /* 5817 */;
 import initialize from "initialize" /* 504 */;
 
 require = fn;
@@ -185,9 +185,9 @@ prototype["renderHeader"] = function renderHeader(source, children) {
   obj6.children = items2;
   items1[1] = __initData(React4, obj6);
   if (isOpen) {
-    let ChevronSmallRightIcon = tmp2(11506).ChevronSmallDownIcon;
+    let ChevronSmallRightIcon = tmp2(10604).ChevronSmallDownIcon;
   } else {
-    ChevronSmallRightIcon = tmp2(7542).ChevronSmallRightIcon;
+    ChevronSmallRightIcon = tmp2(6625).ChevronSmallRightIcon;
   }
   items1[2] = closure_1_14(ChevronSmallRightIcon, {});
   obj3.children = items1;
@@ -196,35 +196,35 @@ prototype["renderHeader"] = function renderHeader(source, children) {
 };
 prototype["getCardHeaderThumbnail"] = function getCardHeaderThumbnail(id, giftStyle) {
   if (constants2.STANDARD_BOX === giftStyle) {
-    return _modDef13596;
+    return _modDef12750;
   } else if (tmp.CAKE === giftStyle) {
-    return _modDef13598;
+    return _modDef12752;
   } else if (tmp.CHEST === giftStyle) {
-    return _modDef13599;
+    return _modDef12753;
   } else if (tmp.COFFEE === giftStyle) {
-    return _modDef13597;
+    return _modDef12751;
   } else if (tmp.SEASONAL_STANDARD_BOX === giftStyle) {
-    return _modDef13600;
+    return _modDef12754;
   } else if (tmp.SEASONAL_CAKE === giftStyle) {
-    return _modDef13601;
+    return _modDef12755;
   } else if (tmp.SEASONAL_CHEST === giftStyle) {
-    return _modDef13602;
+    return _modDef12756;
   } else if (tmp.SEASONAL_COFFEE === giftStyle) {
-    return _modDef13603;
+    return _modDef12757;
   } else if (tmp.NITROWEEN_STANDARD === giftStyle) {
-    const obj = { uri: _modDef11379 };
+    const obj = { uri: _modDef10477 };
     return obj;
   } else if (TIER_0.TIER_0 === id) {
-    return _modDef13604;
+    return _modDef12758;
   } else if (tmp3.TIER_1 === id) {
-    return _modDef13607;
+    return _modDef12761;
   } else {
     if (tmp3.TIER_2 !== id) {
       if (tmp3.LEGACY !== id) {
         return null;
       }
     }
-    return _modDef13608;
+    return _modDef12762;
   }
 };
 prototype["renderCardHeader"] = function renderCardHeader(sku) {
@@ -294,7 +294,7 @@ prototype["render"] = function render() {
     closure_14(tmp2, obj4);
   }
 };
-EntitlementGiftGroupCard.contextType = fn(4535).ThemeContext;
+EntitlementGiftGroupCard.contextType = fn(4537).ThemeContext;
 let items = [AuthenticationStore, SKUStore, ApplicationStore, GiftCodeStore, SubscriptionPlanStore];
 let obj10 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 const size = fn(2);

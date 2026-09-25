@@ -1,16 +1,16 @@
-// Module ID: 8469
-// Function ID: 8470
+// Module ID: 7559
+// Function ID: 7560
 // Name: transformMessageComponents
-// Dependencies: [109, 17, 5054, 8470, 8219, 1370, 1978, 5053, 1115, 8471, 8478, 8479, 8481, 8484, 8485, 5041, 5439, 8486, 8488, 8299, 4979, 1385, 5059, 8467, 8466, 1366, 1438, 1091, 4819, 5061, 2]
+// Dependencies: [109, 17, 5054, 7560, 7308, 1370, 1978, 5053, 1115, 7561, 7568, 7569, 7571, 7574, 7575, 5041, 5440, 7576, 7578, 7388, 4979, 1385, 5059, 7557, 7556, 1366, 1438, 1091, 4819, 5061, 5074, 2]
 // Exports: default, getUnfurledMediaItemType
 
-// Module 8469 (transformMessageComponents)
+// Module 7559 (transformMessageComponents)
 import DurationsDefault from "Durations" /* 1091 */;
 import URLUtilsDefault from "URLUtils" /* 1366 */;
 import MediaFormatTesters from "MediaFormatTesters" /* 4979 */;
 import InteractionComponentUtils from "InteractionComponentUtils" /* 5053 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8467 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8485 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 7557 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 7575 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import priv from "priv" /* 1438 */;
 
@@ -18,8 +18,8 @@ const util = tmp4(1115);
 const FlagUtils = tmp4(1385);
 const AgeVerificationUtils = tmp4(5041);
 const MediaTypes = tmp4(5059);
-const sanitizeMediaDimension = tmp4(8466);
-const ExplicitMediaUtils = tmp4(8484);
+const sanitizeMediaDimension = tmp4(7556);
+const ExplicitMediaUtils = tmp4(7574);
 require = fn;
 function transformToRowGeneratedComponent(message, accessory) {
   _require = message;
@@ -219,10 +219,10 @@ function transformToRowGeneratedComponent(message, accessory) {
                     if (null != height) {
                       if (height > 0) {
                         if (obj.isImageContentType(contentType)) {
-                          let VISUAL_PLACEHOLDER = tmp(8485).MediaGalleryItemType.IMAGE;
+                          let VISUAL_PLACEHOLDER = tmp(7575).MediaGalleryItemType.IMAGE;
                         } else {
                           if (tmpResult.isVideoContentType(contentType)) {
-                            VISUAL_PLACEHOLDER = tmp(8485).MediaGalleryItemType.VIDEO;
+                            VISUAL_PLACEHOLDER = tmp(7575).MediaGalleryItemType.VIDEO;
                           }
                           tmpResult = tmp(4979);
                         }
@@ -428,9 +428,9 @@ function transformToRowGeneratedComponent(message, accessory) {
                     } else if (tmp7.V2026 === version) {
                       const obj22 = {};
                       const merged11 = Object.assign(tmp6);
-                      obj22.checkpointData = tmp(tmp2[29]).transformCheckpoint2026CardToRowGeneratedComponent(checkpointData);
+                      obj22.checkpointData = tmp(tmp2[30]).transformCheckpoint2026CardToRowGeneratedComponent(checkpointData);
                       obj = obj22;
-                      const tmpResult40 = tmp(tmp2[29]);
+                      const tmpResult40 = tmp(tmp2[30]);
                     } else {
                       obj = { type: tmp(tmp2[6]).ComponentType.UNKNOWN, id: accessory.id };
                     }
@@ -493,10 +493,10 @@ function transformUnfurledMediaItem(media, shouldShowMedia) {
       if (null != height) {
         if (height > 0) {
           if (obj.isImageContentType(contentType)) {
-            let VISUAL_PLACEHOLDER = tmp(8485).MediaGalleryItemType.IMAGE;
+            let VISUAL_PLACEHOLDER = tmp(7575).MediaGalleryItemType.IMAGE;
           } else {
             if (tmpResult.isVideoContentType(contentType)) {
-              VISUAL_PLACEHOLDER = tmp(8485).MediaGalleryItemType.VIDEO;
+              VISUAL_PLACEHOLDER = tmp(7575).MediaGalleryItemType.VIDEO;
             }
             tmpResult = tmp(4979);
           }
@@ -534,7 +534,7 @@ function transformUnfurledMediaItem(media, shouldShowMedia) {
 let closure_3 = ["checkpointData"];
 const processColor = fn(17).processColor;
 const CheckpointVersions = fn(5054).CheckpointVersions;
-let closure_7 = fn(8470).TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS;
+let closure_7 = fn(7560).TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS;
 let obj = { max: Infinity, maxAge: null, updateAgeOnGet: true };
 obj.maxAge = 15 * DurationsDefault.Millis.MINUTE;
 const importDefaultResult1 = new priv(obj);
@@ -542,7 +542,7 @@ let size = fn(2);
 let result = size.fileFinishedImporting("modules/messages/native/renderer/transformMessageComponents.tsx");
 
 export default function transformMessageComponents(message, arr) {
-  const obj = { type: "textDisplayComponent", parserState: obj3(8219).getInitialParserStateFromMessage(message.message, closure_7) };
+  const obj = { type: "textDisplayComponent", parserState: obj3(7308).getInitialParserStateFromMessage(message.message, closure_7) };
   obj3 = {};
   const merged = Object.assign(message);
   obj3.markdownConfigs = { textDisplayComponent: obj };
@@ -556,10 +556,10 @@ export const getUnfurledMediaItemType = function getUnfurledMediaItemType(arg0) 
       if (null != height) {
         if (height > 0) {
           if (obj.isImageContentType(contentType)) {
-            return tmp(8485).MediaGalleryItemType.IMAGE;
+            return tmp(7575).MediaGalleryItemType.IMAGE;
           } else {
             if (tmpResult.isVideoContentType(contentType)) {
-              return tmp(8485).MediaGalleryItemType.VIDEO;
+              return tmp(7575).MediaGalleryItemType.VIDEO;
             }
             tmpResult = tmp(4979);
           }

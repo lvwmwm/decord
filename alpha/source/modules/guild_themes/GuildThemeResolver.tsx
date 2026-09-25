@@ -1,20 +1,20 @@
-// Module ID: 4713
-// Function ID: 4714
+// Module ID: 4715
+// Function ID: 4716
 // Name: GuildThemeResolver
-// Dependencies: [19, 1220, 2066, 4650, 4714, 4716, 1074, 4683, 504, 4756, 4759, 2]
+// Dependencies: [19, 1220, 2066, 4652, 4716, 4718, 1074, 4685, 504, 4756, 4759, 2]
 // Exports: getActiveGuildTheme, getActiveGuildThemeForGuildId, isRenderableGuildThemeSettings, resolveRenderableGuildThemeSettings, useActiveGuildTheme, useEnabledGuildThemeForGuildId, useIsGuildThemePreviewActive
 
-// Module 4713 (GuildThemeResolver)
+// Module 4715 (GuildThemeResolver)
 import initialize from "initialize" /* 504 */;
-import GuildThemePresets from "GuildThemePresets" /* 4683 */;
+import GuildThemePresets from "GuildThemePresets" /* 4685 */;
 import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4756 */;
 import Client from "Client" /* 4759 */;
 import noop from "module_19" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4650 */;
-import GuildThemePreviewStore from "GuildThemePreviewStore" /* 4714 */;
-import GuildThemeRuntimeStore from "GuildThemeRuntimeStore" /* 4716 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4652 */;
+import GuildThemePreviewStore from "GuildThemePreviewStore" /* 4716 */;
+import GuildThemeRuntimeStore from "GuildThemeRuntimeStore" /* 4718 */;
 
 const require = globalThis.__r;
 

@@ -1,13 +1,13 @@
-// Module ID: 11242
-// Function ID: 11243
+// Module ID: 10340
+// Function ID: 10341
 // Name: VoiceActivityStatus
-// Dependencies: [19, 21, 4829, 1115, 11243, 11235, 2]
+// Dependencies: [19, 21, 4829, 1115, 10341, 10333, 2]
 // Exports: default, getVoiceActivityStatusText
 
-// Module 11242 (VoiceActivityStatus)
+// Module 10340 (VoiceActivityStatus)
 import util from "util" /* 1115 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 11235 */;
-import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 11243 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 10333 */;
+import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 10341 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

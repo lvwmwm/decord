@@ -1,11 +1,11 @@
-// Module ID: 15478
-// Function ID: 15479
+// Module ID: 14648
+// Function ID: 14649
 // Name: MobileCustomMuxIntegration
-// Dependencies: [4, 15474, 15476, 2]
+// Dependencies: [4, 14644, 14646, 2]
 
-// Module 15478 (MobileCustomMuxIntegration)
+// Module 14648 (MobileCustomMuxIntegration)
 import logger_Logger from "logger/Logger" /* 4 */;
-import UDefault from "U" /* 15476 */;
+import UDefault from "U" /* 14646 */;
 import size from "module_2" /* 2 */;
 
 const logger = new logger_Logger.Logger("MobileCustomMuxIntegration");

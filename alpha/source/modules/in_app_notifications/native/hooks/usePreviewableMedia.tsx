@@ -1,17 +1,17 @@
-// Module ID: 10477
-// Function ID: 10478
+// Module ID: 9579
+// Function ID: 9580
 // Name: usePreviewableMedia
-// Dependencies: [19, 17, 1074, 21, 4829, 4526, 576, 8807, 9074, 10478, 4979, 10480, 7632, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 4528, 576, 7901, 8168, 9580, 4979, 9582, 6715, 2]
 // Exports: usePreviewableMedia
 
-// Module 10477 (usePreviewableMedia)
+// Module 9579 (usePreviewableMedia)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4526 */;
+import useToken from "useToken" /* 4528 */;
 import MediaFormatTesters from "MediaFormatTesters" /* 4979 */;
-import isForwardMessageDefault from "isForwardMessage" /* 7632 */;
-import inlineStyles from "inlineStyles" /* 8807 */;
-import CirclePlayIcon from "CirclePlayIcon" /* 9074 */;
-import WaveformIcon from "WaveformIcon" /* 10478 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6715 */;
+import inlineStyles from "inlineStyles" /* 7901 */;
+import CirclePlayIcon from "CirclePlayIcon" /* 8168 */;
+import WaveformIcon from "WaveformIcon" /* 9580 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -98,7 +98,7 @@ function getBasePreviewableMedia(arg0) {
               obj5.id = "" + id + "-" + tmp13.AUDIO;
               obj5.type = tmp13.AUDIO;
               obj5.media = tmp6;
-              obj5.icon = React5(tmp8(9074).CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
+              obj5.icon = React5(tmp8(8168).CirclePlayIcon, { size: "lg", color: "background-brand", secondaryColor: "white" });
               let str5 = null;
               if (isForward) {
                 str5 = "forward";
@@ -112,7 +112,7 @@ function getBasePreviewableMedia(arg0) {
               obj5.media = tmp6;
               let obj6 = { size: "lg", color: null };
               obj6.color = nativeDefault.colors.ICON_SUBTLE;
-              obj5.icon = React5(tmp8(10480).FileIcon, obj6);
+              obj5.icon = React5(tmp8(9582).FileIcon, obj6);
               let str4 = null;
               if (isForward) {
                 str4 = "forward";

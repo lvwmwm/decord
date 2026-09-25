@@ -1,11 +1,11 @@
-// Module ID: 12768
-// Function ID: 12769
+// Module ID: 11894
+// Function ID: 11895
 // Name: RegionalTeenUtils
-// Dependencies: [19, 5043, 5046, 504, 11313, 9002, 2]
+// Dependencies: [19, 5043, 5046, 504, 10411, 8096, 2]
 // Exports: useIsTeenInCountrySet, useIsTeenInStrictCountry, useUserCountryCode
 
-// Module 12768 (RegionalTeenUtils)
-import MessageRequestActionCreators from "MessageRequestActionCreators" /* 11313 */;
+// Module 11894 (RegionalTeenUtils)
+import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10411 */;
 import noop from "module_19" /* 19 */;
 import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5043 */;
 
@@ -37,7 +37,7 @@ export const useIsTeenInCountrySet = function useIsTeenInCountrySet(set) {
     }
   }, items1);
   const obj = stateFromStores(504);
-  let userIsTeen = stateFromStores(9002).useUserIsTeen();
+  let userIsTeen = stateFromStores(8096).useUserIsTeen();
   if (userIsTeen) {
     userIsTeen = null != stateFromStores;
   }
@@ -57,7 +57,7 @@ export const useIsTeenInStrictCountry = function useIsTeenInStrictCountry() {
   }, items1);
   let obj = set;
   const obj2 = stateFromStores(504);
-  let userIsTeen = stateFromStores(9002).useUserIsTeen();
+  let userIsTeen = stateFromStores(8096).useUserIsTeen();
   if (userIsTeen) {
     userIsTeen = null != stateFromStores;
   }

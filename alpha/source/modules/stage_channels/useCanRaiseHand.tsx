@@ -1,11 +1,11 @@
-// Module ID: 10281
-// Function ID: 10282
+// Module ID: 9378
+// Function ID: 9379
 // Name: useCanRaiseHand
-// Dependencies: [4464, 1085, 504, 2]
+// Dependencies: [4466, 1085, 504, 2]
 // Exports: useCanRaiseHand
 
-// Module 10281 (useCanRaiseHand)
-import PermissionStore from "PermissionStore" /* 4464 */;
+// Module 9378 (useCanRaiseHand)
+import PermissionStore from "PermissionStore" /* 4466 */;
 
 const require = globalThis.__r;
 

@@ -1,17 +1,17 @@
-// Module ID: 17314
-// Function ID: 17315
+// Module ID: 16529
+// Function ID: 16530
 // Name: FavoritesEmptyState
-// Dependencies: [19, 17, 21, 4829, 576, 10572, 11330, 4796, 10576, 1980, 10575, 5997, 5271, 4825, 1115, 3360, 5273, 13101, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 9674, 10428, 4796, 9678, 1980, 9677, 9683, 5272, 4825, 1115, 3360, 5274, 12251, 2]
 // Exports: default
 
-// Module 17314 (FavoritesEmptyState)
+// Module 16529 (FavoritesEmptyState)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3360 from "module_3360" /* 3360 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import Stack_Stack from "Stack/Stack" /* 5271 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import native from "native" /* 5997 */;
+import Stack_Stack from "Stack/Stack" /* 5272 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 9683 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,7 @@ export default function FavoritesEmptyState() {
     const obj = require("ActionSheetActionCreators");
     obj.openLazy(require("asyncRequireImpl")(paths[8], paths.paths), require("openFavoritesGuildLimitUpsell").FAVORITES_UPSELL_SHEET_KEY, { source: "favorites_empty_sidebar" });
   }, []);
-  const items = [hasOwnProperty(native.FavoritesSpotIllustration, { width: 192, height: 108 }), , ];
+  const items = [hasOwnProperty(FavoritesSpotIllustration.FavoritesSpotIllustration, { width: 192, height: 108 }), , ];
   const obj3 = { spacing: nativeDefault.space.PX_8, align: "center", children: null };
   const obj4 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: tmp.text, children: null };
   const intl = util.intl;
@@ -52,7 +52,7 @@ export default function FavoritesEmptyState() {
     const obj6 = { variant: "primary", text: null, icon: null, onPress: null };
     const intl4 = tmp2(1115).intl;
     obj6.text = intl4.string(tmp9(3360)["6kk0gM"]);
-    obj6.icon = tmp8(tmp2(13101).PlusMediumIcon, {});
+    obj6.icon = tmp8(tmp2(12251).PlusMediumIcon, {});
     obj6.onPress = callback;
     let obj7 = obj6;
   } else {

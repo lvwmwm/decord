@@ -1,23 +1,23 @@
-// Module ID: 14958
-// Function ID: 14959
+// Module ID: 14120
+// Function ID: 14121
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 10119, 8508, 1084, 1074, 21, 4829, 1115, 14959, 15017, 4526, 576, 1484, 7327, 9974, 11275, 7317, 4695, 14975, 15018, 563, 5009, 10121, 5929, 8194, 1485, 12962, 12964, 2]
+// Dependencies: [5, 109, 32, 19, 17, 9216, 7598, 1084, 1074, 21, 4829, 1115, 14121, 14179, 4528, 576, 1484, 6410, 9072, 10373, 6400, 4697, 14137, 14180, 563, 5009, 9218, 5931, 7283, 1485, 12093, 12095, 2]
 
-// Module 14958 (ProfileCustomizationSettingScreen)
+// Module 14120 (ProfileCustomizationSettingScreen)
 import util from "util" /* 1115 */;
-import ChatInputUtils from "ChatInputUtils" /* 4695 */;
+import ChatInputUtils from "ChatInputUtils" /* 4697 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5009 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7317 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10121 */;
-import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 11275 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 14959 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15017 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6400 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9218 */;
+import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 10373 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 14121 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 14179 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10119 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8508 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9216 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7598 */;
 
 const require = globalThis.__r;
 

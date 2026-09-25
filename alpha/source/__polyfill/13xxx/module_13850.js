@@ -1,9 +1,7 @@
 // Module ID: 13850
 // Function ID: 13851
-// Dependencies: [1121]
+// Dependencies: []
 
 // Module 13850
-import registerAsset from "module_1121" /* 1121 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 51, height: 12, scales: [2, 3], hash: "762c9356acc18a559214b01d8cc7bf33", name: "img_logo_nitro_small_light", type: "png" });
+export default false;

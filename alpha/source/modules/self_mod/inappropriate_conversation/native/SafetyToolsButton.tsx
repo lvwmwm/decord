@@ -1,15 +1,15 @@
-// Module ID: 13686
-// Function ID: 13687
+// Module ID: 12840
+// Function ID: 12841
 // Name: SafetyToolsButton
-// Dependencies: [32, 19, 17, 21, 4829, 576, 11743, 11745, 1115, 11719, 5290, 11720, 11740, 11481, 13660, 9598, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 10925, 10927, 1115, 10899, 5291, 10900, 10922, 10579, 12814, 8696, 2]
 // Exports: SafetyToolsButton
 
-// Module 13686 (SafetyToolsButton)
+// Module 12840 (SafetyToolsButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11719 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11720 */;
-import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 11740 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10899 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10900 */;
+import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 10922 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

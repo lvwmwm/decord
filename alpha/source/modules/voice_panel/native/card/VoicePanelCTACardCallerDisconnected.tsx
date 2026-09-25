@@ -1,9 +1,9 @@
-// Module ID: 17708
-// Function ID: 17709
+// Module ID: 16932
+// Function ID: 16933
 // Name: VoicePanelCTACardCallerDisconnected
-// Dependencies: [32, 19, 502, 2044, 1372, 21, 4829, 576, 12614, 504, 4981, 5894, 5892, 4825, 1115, 2]
+// Dependencies: [32, 19, 502, 2044, 1372, 21, 4829, 576, 11740, 504, 4981, 5896, 5894, 4825, 1115, 2]
 
-// Module 17708 (VoicePanelCTACardCallerDisconnected)
+// Module 16932 (VoicePanelCTACardCallerDisconnected)
 import nativeDefault from "native" /* 576 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4981 */;
 import _slicedToArray from "module_32" /* 32 */;

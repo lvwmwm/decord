@@ -1,18 +1,18 @@
-// Module ID: 9273
-// Function ID: 9274
+// Module ID: 8371
+// Function ID: 8372
 // Name: ActionSheetDragHandle
-// Dependencies: [19, 17, 9265, 21, 4829, 576, 1115, 4561, 2]
+// Dependencies: [19, 17, 8363, 21, 4829, 576, 1115, 4563, 2]
 
-// Module 9273 (ActionSheetDragHandle)
+// Module 8371 (ActionSheetDragHandle)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4563 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ TouchableWithoutFeedback: c3, View: closure_4 } = get_ActivityIndicator);
-const ActionSheetDragHandleConstants = fn(9265);
+const ActionSheetDragHandleConstants = fn(8363);
 ({ DRAG_HANDLE_BAR_HEIGHT, DRAG_HANDLE_PADDING, DRAG_HANDLE_HEIGHT } = ActionSheetDragHandleConstants);
 const jsx = fn(21).jsx;
 const createStyles = fn(4829);

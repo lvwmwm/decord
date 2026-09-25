@@ -1,14 +1,14 @@
-// Module ID: 8422
-// Function ID: 8423
+// Module ID: 7511
+// Function ID: 7512
 // Name: FriendRequestAcceptedSystemMessage
-// Dependencies: [2044, 1372, 8308, 8310, 4829, 576, 1115, 8294, 8423, 8312, 2]
+// Dependencies: [2044, 1372, 7397, 7399, 4829, 576, 1115, 7383, 7512, 7401, 2]
 // Exports: createFriendRequestAcceptedSystemMessage
 
-// Module 8422 (FriendRequestAcceptedSystemMessage)
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8294 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8308 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8310 */;
-import _modDef8423 from "module_8423" /* 8423 */;
+// Module 7511 (FriendRequestAcceptedSystemMessage)
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7383 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7397 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7399 */;
+import _modDef7512 from "module_7512" /* 7512 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -66,9 +66,9 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
             formatToPartsResult = formatToParts(t.hyPOTm, obj2);
           }
           const obj6 = { content: formatToPartsResult, iconUrl: null, textColor: null };
-          obj6.iconUrl = renderer_EmbedUtils.getAssetUriForEmbed(_modDef8423);
+          obj6.iconUrl = renderer_EmbedUtils.getAssetUriForEmbed(_modDef7512);
           obj6.textColor = undefined;
-          const merged1 = Object.assign(tmp17(8312)(message));
+          const merged1 = Object.assign(tmp17(7401)(message));
           return obj6;
         }
       }

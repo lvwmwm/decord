@@ -1,15 +1,15 @@
-// Module ID: 11360
-// Function ID: 11361
+// Module ID: 10458
+// Function ID: 10459
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 7754, 1372, 1074, 1374, 21, 4829, 576, 7314, 7501, 504, 1241, 11361, 11164, 1364, 573, 11147, 1115, 11170, 4825, 5273, 2]
+// Dependencies: [5, 32, 19, 17, 6839, 1372, 1074, 1374, 21, 4829, 576, 6397, 6584, 504, 1241, 10459, 10262, 1364, 573, 10250, 1115, 10268, 4825, 5274, 2]
 // Exports: default
 
-// Module 11360 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 10458 (SocialLayerStorefrontGiftPurchaseSection)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11147 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10250 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -17,7 +17,7 @@ import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-let useNativeCheckoutStore = fn(7754).useNativeCheckoutStore;
+let useNativeCheckoutStore = fn(6839).useNativeCheckoutStore;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const GiftingOrigin = fn(1374).GiftingOrigin;
 const jsxProd = fn(21);

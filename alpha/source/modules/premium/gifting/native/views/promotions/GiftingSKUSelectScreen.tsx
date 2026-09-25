@@ -1,17 +1,16 @@
-// Module ID: 11397
-// Function ID: 11398
+// Module ID: 10495
+// Function ID: 10496
 // Name: GiftingSKUSelectScreen
-// Dependencies: [32, 19, 17, 21, 4829, 576, 1612, 4825, 1115, 2550, 11398, 5273, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 1612, 4825, 1115, 10496, 5274, 2]
 // Exports: default
 
-// Module 11397 (GiftingSKUSelectScreen)
+// Module 10495 (GiftingSKUSelectScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import _modDef2550 from "module_2550" /* 2550 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 11398 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 10496 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -93,7 +92,7 @@ export default function GiftingSKUSelectScreen(rewardsToDisplay) {
   const items3 = [React5(Text_Text.Text, obj4), ];
   const obj5 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: null };
   const intl2 = util.intl;
-  obj5.children = intl2.string(_modDef2550.zprqn1);
+  obj5.children = intl2.string(util.t.vPeaOS);
   items3[1] = React5(Text_Text.Text, obj5);
   obj3.children = items3;
   const items4 = [React6(hasOwnProperty, obj3), React5(GiftingSKUCardsGridDefault, { rewardsToDisplay: rewardsToDisplay.allRewards, claimableRewards, onSelect: callback1, highlightedSkuId })];

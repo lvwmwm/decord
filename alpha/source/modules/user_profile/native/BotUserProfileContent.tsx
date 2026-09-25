@@ -1,23 +1,23 @@
-// Module ID: 13376
-// Function ID: 13377
+// Module ID: 12526
+// Function ID: 12527
 // Name: BotUserProfileContent
-// Dependencies: [19, 17, 1372, 7541, 7484, 21, 8589, 8578, 8591, 1612, 8538, 504, 4981, 4673, 7641, 8590, 11503, 8575, 8586, 7522, 4522, 8592, 4561, 13377, 8604, 11465, 4796, 11502, 1980, 11505, 1115, 13382, 13385, 9615, 13386, 5273, 5377, 576, 5032, 4842, 13387, 11559, 7518, 13437, 13440, 2]
+// Dependencies: [19, 17, 1372, 6624, 6567, 21, 7679, 7668, 7681, 1612, 7628, 504, 4981, 4675, 6724, 7680, 10601, 7665, 7676, 6605, 4524, 7682, 4563, 12527, 7694, 10563, 4796, 10600, 1980, 10603, 1115, 12532, 12535, 8713, 12536, 5274, 5378, 576, 5032, 4842, 12537, 10764, 6601, 12587, 12590, 2]
 
-// Module 13376 (BotUserProfileContent)
+// Module 12526 (BotUserProfileContent)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ToastUtils from "ToastUtils" /* 4522 */;
+import ToastUtils from "ToastUtils" /* 4524 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4842 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
-import ClipboardUtils from "ClipboardUtils" /* 7522 */;
+import ClipboardUtils from "ClipboardUtils" /* 6605 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const Constants = fn(7541);
+const Constants = fn(6624);
 ({ PROFILE_CONTENT_BOTTOM_PADDING: metroRequire, PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING: closure_7 } = Constants);
-const ACTION_SHEET_MAX_WIDTH = fn(7484).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(6567).ACTION_SHEET_MAX_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
 const size = fn(2);
@@ -121,7 +121,7 @@ export default noop.memo(function BotUserProfileContent(user) {
                 id = channel.id;
               }
               obj2.channelId = id;
-              obj.openLazy(asyncRequireImpl(11502, dependencyMap.paths), "UserProfileCustomStatusActionSheet", obj2, "stack");
+              obj.openLazy(asyncRequireImpl(10600, dependencyMap.paths), "UserProfileCustomStatusActionSheet", obj2, "stack");
             },
         style: null,
         emojiOnlyStyle: null

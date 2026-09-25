@@ -1,18 +1,18 @@
-// Module ID: 16948
-// Function ID: 16949
+// Module ID: 16136
+// Function ID: 16137
 // Name: NewContentPill
-// Dependencies: [32, 19, 17, 2066, 8685, 21, 4829, 576, 9174, 5889, 504, 4763, 8698, 8700, 4561, 5272, 1487, 5427, 16146, 4825, 1115, 4680, 2]
+// Dependencies: [32, 19, 17, 2066, 7775, 21, 4829, 576, 8268, 5891, 504, 4763, 7788, 7790, 4563, 5273, 1487, 5428, 15323, 4825, 1115, 4682, 2]
 // Exports: default
 
-// Module 16948 (NewContentPill)
+// Module 16136 (NewContentPill)
 import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5272 */;
-import GuildIcon from "GuildIcon" /* 5889 */;
-import ClipView from "ClipView" /* 9174 */;
+import spring from "spring" /* 5273 */;
+import GuildIcon from "GuildIcon" /* 5891 */;
+import ClipView from "ClipView" /* 8268 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import ICYMIStore from "ICYMIStore" /* 8685 */;
+import ICYMIStore from "ICYMIStore" /* 7775 */;
 
 const GuildIconDefault = GuildIcon;
 const ClipViewDefault = ClipView;

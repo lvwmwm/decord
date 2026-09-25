@@ -1,19 +1,19 @@
-// Module ID: 16110
-// Function ID: 16111
+// Module ID: 15285
+// Function ID: 15286
 // Name: DevToolsAgeVerificationScreen
-// Dependencies: [5, 19, 17, 21, 4829, 576, 8768, 8761, 4523, 8763, 1612, 5992, 5910, 7289, 5917, 2]
+// Dependencies: [5, 19, 17, 21, 4829, 576, 7858, 7851, 4525, 7853, 1612, 5994, 5912, 6372, 5919, 2]
 // Exports: default
 
-// Module 16110 (DevToolsAgeVerificationScreen)
+// Module 15285 (DevToolsAgeVerificationScreen)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import TableRow from "TableRow" /* 5910 */;
-import TableRowArrow from "TableRowArrow" /* 5917 */;
-import TableRowGroup from "TableRowGroup" /* 5992 */;
-import KeyIcon from "KeyIcon" /* 7289 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8761 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8763 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8768 */;
+import TableRow from "TableRow" /* 5912 */;
+import TableRowArrow from "TableRowArrow" /* 5919 */;
+import TableRowGroup from "TableRowGroup" /* 5994 */;
+import KeyIcon from "KeyIcon" /* 6372 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7851 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7853 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7858 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 

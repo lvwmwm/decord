@@ -1,17 +1,17 @@
-// Module ID: 7534
-// Function ID: 7535
+// Module ID: 6617
+// Function ID: 6618
 // Name: FormSwitch
-// Dependencies: [32, 19, 17, 21, 4561, 4829, 576, 5275, 4545, 5272, 5276, 4526, 5923, 7535, 4797, 4798, 2]
+// Dependencies: [32, 19, 17, 21, 4563, 4829, 576, 5276, 4547, 5273, 5277, 4528, 5925, 6618, 4797, 4798, 2]
 // Exports: FormSwitch
 
-// Module 7534 (FormSwitch)
+// Module 6617 (FormSwitch)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4563 */;
 import HapticUtils from "HapticUtils" /* 4797 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4798 */;
-import spring from "spring" /* 5272 */;
-import IconDefault from "Icon" /* 5275 */;
-import springPresets from "springPresets" /* 5276 */;
+import spring from "spring" /* 5273 */;
+import IconDefault from "Icon" /* 5276 */;
+import springPresets from "springPresets" /* 5277 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

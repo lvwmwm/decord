@@ -1,25 +1,25 @@
-// Module ID: 16480
-// Function ID: 16481
+// Module ID: 15660
+// Function ID: 15661
 // Name: MessagesEmptyState
-// Dependencies: [32, 19, 17, 21, 4829, 1478, 1484, 9128, 1249, 5430, 15436, 16481, 4825, 1115, 5273, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 1478, 1484, 8222, 1249, 5431, 14604, 15661, 4825, 1115, 5274, 2]
 // Exports: default
 
-// Module 16480 (MessagesEmptyState)
+// Module 15660 (MessagesEmptyState)
 import util from "util" /* 1115 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
 import useNavigation from "useNavigation" /* 1484 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5430 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9128 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 15436 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5431 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8222 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 14604 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const _modDef16481 = tmp2(16481);
+const _modDef15661 = tmp2(15661);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
@@ -64,7 +64,7 @@ export default function MessagesEmptyState() {
   const obj5 = { style: tmp.container, onLayout: callback, children: null };
   const obj6 = { style: tmp.innerContainer, children: null };
   const obj7 = { style: tmp.imageContainer, children: null };
-  const obj8 = { resizeMode: "contain", source: _modDef16481, style: null };
+  const obj8 = { resizeMode: "contain", source: _modDef15661, style: null };
   let num = 350;
   if (result < 622) {
     num = result / 622 * 350;

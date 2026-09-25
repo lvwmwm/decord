@@ -1,10 +1,10 @@
-// Module ID: 10069
-// Function ID: 10070
+// Module ID: 9167
+// Function ID: 9168
 // Name: SecureFramesCode
 // Dependencies: [19, 17, 1085, 21, 4829, 576, 4825, 2]
 // Exports: default
 
-// Module 10069 (SecureFramesCode)
+// Module 9167 (SecureFramesCode)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import noop from "module_19" /* 19 */;

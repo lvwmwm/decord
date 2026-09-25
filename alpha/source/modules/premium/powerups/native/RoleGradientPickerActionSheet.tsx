@@ -1,13 +1,13 @@
-// Module ID: 18167
-// Function ID: 18168
+// Module ID: 17395
+// Function ID: 17396
 // Name: RoleGradientPickerActionSheet
-// Dependencies: [32, 19, 17, 18150, 21, 4829, 576, 2104, 1370, 4796, 14966, 7483, 7482, 1115, 5273, 5285, 15703, 5427, 1092, 2]
+// Dependencies: [32, 19, 17, 17378, 21, 4829, 576, 2104, 1370, 4796, 14128, 6566, 6565, 1115, 5274, 5286, 14873, 5428, 1092, 2]
 // Exports: default
 
-// Module 18167 (RoleGradientPickerActionSheet)
+// Module 17395 (RoleGradientPickerActionSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14966 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14128 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Pressable: metroRequire } = get_ActivityIndicator);
-const EnhancedRoleColorConstants = fn(18150);
+const EnhancedRoleColorConstants = fn(17378);
 ({ DEFAULT_GRADIENT_ROLE_COLORS: closure_7, GRADIENT_PRESETS: closure_8 } = EnhancedRoleColorConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);

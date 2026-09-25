@@ -1,13 +1,13 @@
-// Module ID: 16875
-// Function ID: 16876
+// Module ID: 16061
+// Function ID: 16062
 // Name: ForYouEmptyState
-// Dependencies: [19, 17, 21, 4829, 5997, 4825, 1115, 2]
+// Dependencies: [19, 17, 21, 4829, 16062, 4825, 1115, 2]
 // Exports: ForYouEmptyState
 
-// Module 16875 (ForYouEmptyState)
+// Module 16061 (ForYouEmptyState)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import native from "native" /* 5997 */;
+import MailboxSpotIllustration from "MailboxSpotIllustration" /* 16062 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,7 +24,7 @@ export const ForYouEmptyState = function ForYouEmptyState(height) {
   const obj = { style: null, children: null };
   const items = [tmp.container, { height: height.height }];
   obj.style = items;
-  const items1 = [React3(View, { style: tmp.image, children: React3(native.MailboxSpotIllustration, { scale: 0.75 }) }), , ];
+  const items1 = [React3(View, { style: tmp.image, children: React3(MailboxSpotIllustration.MailboxSpotIllustration, { scale: 0.75 }) }), , ];
   const obj3 = { accessibilityRole: "header", color: "mobile-text-heading-primary", variant: "heading-md/bold", style: null, children: null };
   const items2 = [, ];
   ({ text: arr3[0], headerText: arr3[1] } = tmp);

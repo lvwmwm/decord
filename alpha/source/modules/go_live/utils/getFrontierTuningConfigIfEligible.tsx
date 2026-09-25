@@ -1,11 +1,11 @@
 // Module ID: 4967
 // Function ID: 4968
 // Name: getFrontierTuningConfigIfEligible
-// Dependencies: [2066, 1074, 1969, 4483, 4968, 2]
+// Dependencies: [2066, 1074, 1969, 4485, 4968, 2]
 // Exports: default
 
 // Module 4967 (getFrontierTuningConfigIfEligible)
-import PremiumUtilsDefault from "PremiumUtils" /* 4483 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4485 */;
 import GuildStore from "GuildStore" /* 2066 */;
 
 const require = fn;

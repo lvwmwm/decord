@@ -1,14 +1,14 @@
 // Module ID: 1230
 // Function ID: 1231
 // Name: ClientThemesTypes
-// Dependencies: [1185, 1231, 1186, 2, 4681]
+// Dependencies: [1185, 1231, 1186, 2, 4683]
 // Exports: getProtoThemeFromBaseTheme
 
 // Module 1230 (ClientThemesTypes)
 import ThemeConstants from "ThemeConstants" /* 1185 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import design_shared from "design/shared" /* 4681 */;
+import design_shared from "design/shared" /* 4683 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = ThemeConstants.PROTO_THEME_MAP_WEB_REFRESH;

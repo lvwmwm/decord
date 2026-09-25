@@ -1,15 +1,15 @@
-// Module ID: 9027
-// Function ID: 9028
+// Module ID: 8121
+// Function ID: 8122
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 2000, 1074, 1241, 1385, 9028, 5416, 9029, 38, 2]
+// Dependencies: [19, 2000, 1074, 1241, 1385, 8122, 5417, 8123, 38, 2]
 // Exports: default, gameIdIsAcceptable, gameIsAcceptable, trackEntryPoint
 
-// Module 9027 (useShouldOpenGameProfileModal)
+// Module 8121 (useShouldOpenGameProfileModal)
 import _modDef38 from "module_38" /* 38 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import FlagUtilsAll from "FlagUtils" /* 1385 */;
-import utils from "utils" /* 5416 */;
-import GameFlags from "GameFlags" /* 9028 */;
+import utils from "utils" /* 5417 */;
+import GameFlags from "GameFlags" /* 8122 */;
 import noop from "module_19" /* 19 */;
 import GameStore from "GameStore" /* 2000 */;
 

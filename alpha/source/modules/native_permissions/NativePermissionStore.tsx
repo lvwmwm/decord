@@ -1,9 +1,9 @@
-// Module ID: 5448
-// Function ID: 5449
+// Module ID: 5449
+// Function ID: 5450
 // Name: NativePermissionStore
 // Dependencies: [5038, 1074, 504, 573, 1241, 2]
 
-// Module 5448 (NativePermissionStore)
+// Module 5449 (NativePermissionStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants from "Constants" /* 1074 */;

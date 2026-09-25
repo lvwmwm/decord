@@ -1,14 +1,14 @@
-// Module ID: 8102
-// Function ID: 8103
+// Module ID: 7187
+// Function ID: 7188
 // Name: ForumPostAnalyticsManager
-// Dependencies: [5812, 502, 2044, 7451, 11, 7637, 2]
+// Dependencies: [5814, 502, 2044, 6534, 11, 6720, 2]
 
-// Module 8102 (ForumPostAnalyticsManager)
+// Module 7187 (ForumPostAnalyticsManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 5812 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 5814 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7451 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6534 */;
 
 let require = fn;
 class ForumPostAnalyticsManager extends tmp2 {

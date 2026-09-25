@@ -1,23 +1,23 @@
-// Module ID: 10615
-// Function ID: 10616
+// Module ID: 9719
+// Function ID: 9720
 // Name: ForumGuidelinesActionSheet
-// Dependencies: [32, 19, 17, 7603, 21, 4829, 576, 8216, 1612, 10616, 1364, 10617, 4796, 7456, 5274, 1115, 4656, 4983, 8983, 7483, 6957, 5427, 4825, 10598, 8757, 5381, 4819, 10615, 1980, 2]
+// Dependencies: [32, 19, 17, 6686, 21, 4829, 576, 7305, 1612, 9720, 1364, 9721, 4796, 6539, 5275, 1115, 4658, 4983, 8077, 6566, 6040, 5428, 4825, 9702, 7847, 5382, 4819, 9719, 1980, 2]
 // Exports: default, openForumGuidelinesActionSheet
 
-// Module 10615 (ForumGuidelinesActionSheet)
+// Module 9719 (ForumGuidelinesActionSheet)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import LinkUtils from "LinkUtils" /* 4983 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8983 */;
-import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 10617 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8077 */;
+import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 9721 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_6 = fn(7603).FORUM_GUIDELINES_ACTION_SHEET;
+let closure_6 = fn(6686).FORUM_GUIDELINES_ACTION_SHEET;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
 const createStyles = fn(4829);
@@ -187,5 +187,5 @@ export const openForumGuidelinesActionSheet = function openForumGuidelinesAction
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = {};
   const merged = Object.assign(arg0);
-  obj.openLazy(asyncRequireImpl(10615, dependencyMap.paths), closure_6, obj2);
+  obj.openLazy(asyncRequireImpl(9719, dependencyMap.paths), closure_6, obj2);
 };

@@ -1,19 +1,19 @@
-// Module ID: 16999
-// Function ID: 17000
+// Module ID: 16189
+// Function ID: 16190
 // Name: GuildOnboardingNewMemberActions
-// Dependencies: [19, 17, 5764, 2044, 2107, 2066, 4464, 5016, 5017, 1074, 1375, 4450, 21, 4829, 576, 504, 4982, 1397, 12627, 5892, 4478, 4825, 1177, 12146, 5427, 1115, 12632, 17000, 1385, 17001, 2]
+// Dependencies: [19, 17, 5766, 2044, 2107, 2066, 4466, 5016, 5017, 1074, 1375, 4452, 21, 4829, 576, 504, 4982, 1397, 11753, 5894, 4480, 4825, 1177, 11268, 5428, 1115, 11758, 16190, 1385, 16191, 2]
 // Exports: default
 
-// Module 16999 (GuildOnboardingNewMemberActions)
+// Module 16189 (GuildOnboardingNewMemberActions)
 import nativeDefault from "native" /* 576 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12627 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 11753 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5764 */;
+import EmojiStore from "EmojiStore" /* 5766 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildMemberStore from "GuildMemberStore" /* 2107 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5016 */;
 import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 5017 */;
 
@@ -111,7 +111,7 @@ function MemberActionRow(channelId) {
 const View = fn(17).View;
 const Permissions = fn(1074).Permissions;
 const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
-const GuildMemberFlags = fn(4450).GuildMemberFlags;
+const GuildMemberFlags = fn(4452).GuildMemberFlags;
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
 const createStyles = fn(4829);

@@ -1,12 +1,12 @@
-// Module ID: 11783
-// Function ID: 11784
+// Module ID: 10965
+// Function ID: 10966
 // Name: BlockedPaymentsCountryActionSheet
-// Dependencies: [19, 21, 7483, 11784, 2]
+// Dependencies: [19, 21, 6566, 10966, 2]
 // Exports: default
 
-// Module 11783 (BlockedPaymentsCountryActionSheet)
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7483 */;
-import BlockedPaymentsCountryDisplayDefault from "BlockedPaymentsCountryDisplay" /* 11784 */;
+// Module 10965 (BlockedPaymentsCountryActionSheet)
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6566 */;
+import BlockedPaymentsCountryDisplayDefault from "BlockedPaymentsCountryDisplay" /* 10966 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

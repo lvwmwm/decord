@@ -1,10 +1,10 @@
-// Module ID: 17717
-// Function ID: 17718
+// Module ID: 16941
+// Function ID: 16942
 // Name: useActivityUsers
 // Dependencies: [1372, 2043, 563, 2]
 // Exports: default
 
-// Module 17717 (useActivityUsers)
+// Module 16941 (useActivityUsers)
 import UserStore from "UserStore" /* 1372 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 18254
-// Function ID: 18255
+// Module ID: 17485
+// Function ID: 17486
 // Name: EligibilityChecklist
-// Dependencies: [19, 17, 21, 4829, 5892, 18255, 18256, 4825, 5273, 1177, 15566, 2]
+// Dependencies: [19, 17, 21, 4829, 5894, 17486, 17487, 4825, 5274, 1177, 14736, 2]
 // Exports: default
 
-// Module 18254 (EligibilityChecklist)
+// Module 17485 (EligibilityChecklist)
 import Text_Text from "Text/Text" /* 4825 */;
-import FastImageDefault from "FastImage" /* 5892 */;
+import FastImageDefault from "FastImage" /* 5894 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,9 +22,9 @@ function EligibilityChecklistRow(item) {
   items[1] = eligibleRow;
   const obj2 = { style: tmp.rowStatusIcon, source: null };
   if (item.checked) {
-    let tmp6Result = tmp6(18255);
+    let tmp6Result = tmp6(17486);
   } else {
-    tmp6Result = tmp6(18256);
+    tmp6Result = tmp6(17487);
   }
   obj2.source = tmp6Result;
   const items1 = [React4(FastImageDefault, obj2), ];
@@ -34,7 +34,7 @@ function EligibilityChecklistRow(item) {
   if (tmp5Result) {
     const obj6 = { style: tmp.actionButtonWrapper, children: null };
     ({ actionLabel: obj7.text, actionHandler: obj7.onPress } = item);
-    obj6.children = tmp5(tmp10(5273).Button, { text: null, onPress: null, grow: true });
+    obj6.children = tmp5(tmp10(5274).Button, { text: null, onPress: null, grow: true });
     tmp5Result = tmp5(tmp4, obj6);
     const obj8 = { text: null, onPress: null, grow: true };
   }
@@ -47,7 +47,7 @@ function EligibilityChecklistRow(item) {
     let tmp5Result2 = tmp5(tmp10(1177).Spacer, { size: 16 });
   } else {
     const obj15 = { style: tmp.divider };
-    tmp5Result2 = tmp5(tmp6(15566), obj15);
+    tmp5Result2 = tmp5(tmp6(14736), obj15);
   }
   children[1] = tmp5Result2;
   return hasOwnProperty(timestampProducer, { children });

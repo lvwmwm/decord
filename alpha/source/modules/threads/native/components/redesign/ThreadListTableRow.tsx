@@ -1,11 +1,11 @@
-// Module ID: 17289
-// Function ID: 17290
+// Module ID: 16504
+// Function ID: 16505
 // Name: ThreadListTableRow
-// Dependencies: [19, 17, 2044, 21, 4829, 5910, 17290, 504, 2]
+// Dependencies: [19, 17, 2044, 21, 4829, 5912, 16505, 504, 2]
 
-// Module 17289 (ThreadListTableRow)
-import TableRow from "TableRow" /* 5910 */;
-import ThreadBrowserRowSubtext from "ThreadBrowserRowSubtext" /* 17290 */;
+// Module 16504 (ThreadListTableRow)
+import TableRow from "TableRow" /* 5912 */;
+import ThreadBrowserRowSubtext from "ThreadBrowserRowSubtext" /* 16505 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 

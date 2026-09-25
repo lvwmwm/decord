@@ -1,12 +1,12 @@
-// Module ID: 9866
-// Function ID: 9867
+// Module ID: 8964
+// Function ID: 8965
 // Name: GuildScheduledEventPrompts
-// Dependencies: [19, 21, 4829, 576, 9843, 8951, 9867, 9965, 1115, 4507, 4416, 2]
+// Dependencies: [19, 21, 4829, 576, 8941, 8045, 8965, 9063, 1115, 4509, 4418, 2]
 // Exports: ScheduleEventPrompt, StartEventPrompt
 
-// Module 9866 (GuildScheduledEventPrompts)
+// Module 8964 (GuildScheduledEventPrompts)
 import nativeDefault from "native" /* 576 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9867 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8965 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -32,7 +32,7 @@ export const ScheduleEventPrompt = function ScheduleEventPrompt(isLive) {
       onPress() {
           const result = GuildScheduledEventModalActionCreators.openCreateOrEditGuildEventModal(closure_1_0, { channel });
         },
-      iconSource: channel(9965),
+      iconSource: channel(9063),
       iconStyle: null,
       iconContainerStyle: null,
       completed: null,
@@ -45,12 +45,12 @@ export const ScheduleEventPrompt = function ScheduleEventPrompt(isLive) {
     obj3.title = intl.string(tmp2(1115).t["60lJ0C"]);
     const intl2 = tmp2(1115).intl;
     obj3.subtitle = intl2.string(tmp2(1115).t["EYn7/y"]);
-    tmp4 = jsx(tmp2(8951).FormCTA, {
+    tmp4 = jsx(tmp2(8045).FormCTA, {
       style: tmp.actionBarCTAContainer,
       onPress() {
           const result = GuildScheduledEventModalActionCreators.openCreateOrEditGuildEventModal(closure_1_0, { channel });
         },
-      iconSource: channel(9965),
+      iconSource: channel(9063),
       iconStyle: null,
       iconContainerStyle: null,
       completed: null,
@@ -73,7 +73,7 @@ export const StartEventPrompt = function StartEventPrompt(event) {
       onPress() {
           const result = GuildScheduledEventModalActionCreators.openStartGuildEventModal(event, recurrenceId);
         },
-      iconSource: recurrenceId(9965),
+      iconSource: recurrenceId(9063),
       iconStyle: tmp.iconStyle,
       iconContainerStyle: null,
       completed: null,
@@ -88,21 +88,21 @@ export const StartEventPrompt = function StartEventPrompt(event) {
     const obj3 = { eventName: name };
     obj2.title = intl.formatToPlainString(tmp2(1115).t["1vGXqM"], obj3);
     const intl2 = tmp2(1115).intl;
-    const obj4 = { startTime: tmp2(4507).calendarFormat(recurrenceId(4416)(scheduled_start_time)) };
+    const obj4 = { startTime: tmp2(4509).calendarFormat(recurrenceId(4418)(scheduled_start_time)) };
     obj2.subtitle = intl2.formatToPlainString(tmp2(1115).t.PTebCR, obj4);
-    tmp4 = jsx(tmp2(8951).FormCTA, {
+    tmp4 = jsx(tmp2(8045).FormCTA, {
       style: tmp.actionBarCTAContainer,
       onPress() {
           const result = GuildScheduledEventModalActionCreators.openStartGuildEventModal(event, recurrenceId);
         },
-      iconSource: recurrenceId(9965),
+      iconSource: recurrenceId(9063),
       iconStyle: tmp.iconStyle,
       iconContainerStyle: null,
       completed: null,
       title: null,
       subtitle: null
     });
-    const tmp2Result = tmp2(4507);
+    const tmp2Result = tmp2(4509);
   }
   return tmp4;
 };

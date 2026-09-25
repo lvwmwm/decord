@@ -1,10 +1,10 @@
-// Module ID: 13297
-// Function ID: 13298
+// Module ID: 12447
+// Function ID: 12448
 // Name: InAppReportsBreadCrumbs
-// Dependencies: [19, 17, 21, 4829, 576, 12, 4825, 8990, 1115, 2618, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 12, 4825, 8084, 1115, 2618, 2]
 // Exports: default
 
-// Module 13297 (InAppReportsBreadCrumbs)
+// Module 12447 (InAppReportsBreadCrumbs)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import noop from "module_19" /* 19 */;

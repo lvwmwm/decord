@@ -1,12 +1,12 @@
-// Module ID: 17016
-// Function ID: 17017
+// Module ID: 16206
+// Function ID: 16207
 // Name: JoinRequestActionSheet
-// Dependencies: [19, 17, 4821, 1386, 1372, 1074, 21, 4829, 504, 8534, 8518, 4561, 8575, 4763, 7517, 4526, 576, 1092, 8577, 5848, 2096, 8535, 7483, 1177, 8580, 1115, 4535, 6957, 17017, 7487, 2]
+// Dependencies: [19, 17, 4821, 1386, 1372, 1074, 21, 4829, 504, 7624, 7608, 4563, 7665, 4763, 6600, 4528, 576, 1092, 7667, 5850, 2096, 7625, 6566, 1177, 7670, 1115, 4537, 6040, 16207, 6570, 2]
 
-// Module 17016 (JoinRequestActionSheet)
+// Module 16206 (JoinRequestActionSheet)
 import isChangelogUserDefault from "isChangelogUser" /* 2096 */;
-import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 5848 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8535 */;
+import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 5850 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7625 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 import UserRecord from "UserRecord" /* 1386 */;

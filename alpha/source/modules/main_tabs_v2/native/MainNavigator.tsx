@@ -1,21 +1,21 @@
-// Module ID: 16357
-// Function ID: 16358
+// Module ID: 15537
+// Function ID: 15538
 // Name: MainNavigator
-// Dependencies: [32, 19, 17, 502, 16358, 1074, 21, 4829, 1364, 4808, 14548, 16359, 16360, 16421, 17315, 17322, 17325, 17353, 17379, 8244, 17437, 17440, 17444, 17446, 17475, 17480, 4695, 1482, 1610, 5009, 8194, 17481, 17530, 563, 9735, 4689, 7333, 5831, 11870, 17369, 17533, 17564, 9856, 17566, 11277, 2]
+// Dependencies: [32, 19, 17, 502, 15538, 1074, 21, 4829, 1364, 4808, 13709, 15539, 15540, 15601, 16530, 16537, 16540, 16568, 16596, 7333, 16654, 16657, 16661, 16663, 16692, 16697, 4697, 1482, 1610, 5009, 7283, 16698, 16754, 563, 8833, 4691, 6416, 5833, 11013, 16584, 16757, 16788, 8954, 16790, 10375, 2]
 // Exports: getChannelScreen
 
-// Module 16357 (MainNavigator)
+// Module 15537 (MainNavigator)
 import PlatformUtils2 from "PlatformUtils" /* 1364 */;
-import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 9856 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 11277 */;
-import StartupProfiler from "StartupProfiler" /* 11870 */;
-import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 14548 */;
-import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 16359 */;
-import AutoAnalytics from "AutoAnalytics" /* 17315 */;
-import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 17369 */;
-import LaunchPadContainerDefault from "LaunchPadContainer" /* 17533 */;
-import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 17564 */;
-import AppComponents from "AppComponents" /* 17566 */;
+import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 8954 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10375 */;
+import StartupProfiler from "StartupProfiler" /* 11013 */;
+import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 13709 */;
+import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 15539 */;
+import AutoAnalytics from "AutoAnalytics" /* 16530 */;
+import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 16584 */;
+import LaunchPadContainerDefault from "LaunchPadContainer" /* 16757 */;
+import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 16788 */;
+import AppComponents from "AppComponents" /* 16790 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -70,7 +70,7 @@ function getAccountStanding() {
   return require("SuspendedUserPage").default;
 }
 const View = fn(17).View;
-let animation = fn(16358).StackNavigationAnimationSettings;
+let animation = fn(15538).StackNavigationAnimationSettings;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, DrawerSourceTypes: closure_9 } = Constants);
 const jsxProd = fn(21);
@@ -109,7 +109,7 @@ function getChannelScreen() {
             type = action.type;
           }
         }
-        obj = animation(4695);
+        obj = animation(4697);
         if ("GO_BACK" === type) {
           let SWIPE = constants2.BACK_BUTTON;
         } else {
@@ -119,9 +119,9 @@ function getChannelScreen() {
       }
     },
     options(arg0) {
-      const obj = { headerShown: true, header: styles(8194).renderHeader };
+      const obj = { headerShown: true, header: styles(7283).renderHeader };
       ({ navigation, route } = arg0);
-      const merged = Object.assign(styles(8194).getDefaultChannelStackHeaderProps(navigation, route));
+      const merged = Object.assign(styles(7283).getDefaultChannelStackHeaderProps(navigation, route));
       const merged1 = Object.assign(animation2);
       obj.animation = animation;
       return obj;
@@ -188,7 +188,7 @@ export default noop.memo(function StackNavigator() {
               if (closure_1_15) {
                 str = "default";
               }
-              const merged = Object.assign(animation(8194).getDefaultStackHeaderProps(navigation.navigation));
+              const merged = Object.assign(animation(7283).getDefaultStackHeaderProps(navigation.navigation));
               const merged1 = Object.assign(animation2);
               return { orientation: str, headerShown: false };
             },
@@ -239,7 +239,7 @@ export default noop.memo(function StackNavigator() {
                     type = action.type;
                   }
                 }
-                obj = animation(4695);
+                obj = animation(4697);
                 if ("GO_BACK" === type) {
                   let SWIPE = constants2.BACK_BUTTON;
                 } else {
@@ -249,9 +249,9 @@ export default noop.memo(function StackNavigator() {
               }
             },
             options(arg0) {
-              const obj = { headerShown: true, header: styles(8194).renderHeader };
+              const obj = { headerShown: true, header: styles(7283).renderHeader };
               ({ navigation, route } = arg0);
-              const merged = Object.assign(styles(8194).getDefaultChannelStackHeaderProps(navigation, route));
+              const merged = Object.assign(styles(7283).getDefaultChannelStackHeaderProps(navigation, route));
               const merged1 = Object.assign(animation2);
               obj.animation = animation;
               return obj;
@@ -269,7 +269,7 @@ export default noop.memo(function StackNavigator() {
         name: "conversations",
         getComponent: getConversationsComponent,
         options() {
-          return stateFromStores(11277)();
+          return stateFromStores(10375)();
         }
       }),
       closure_2_10(closure_16.Screen, { name: "auth", getComponent: getAuthComponent, options }),
@@ -331,7 +331,7 @@ export default noop.memo(function StackNavigator() {
           str = "modal";
         }
         const obj = {};
-        const merged = Object.assign(stateFromStores(11277)({ presentation: str }));
+        const merged = Object.assign(stateFromStores(10375)({ presentation: str }));
         const params3 = route.params;
         let presentation;
         if (params3 != null) {
@@ -387,7 +387,7 @@ export default noop.memo(function StackNavigator() {
             if (closure_1_15) {
               str = "default";
             }
-            const merged = Object.assign(animation(8194).getDefaultStackHeaderProps(navigation.navigation));
+            const merged = Object.assign(animation(7283).getDefaultStackHeaderProps(navigation.navigation));
             const merged1 = Object.assign(animation2);
             return { orientation: str, headerShown: false };
           },
@@ -438,7 +438,7 @@ export default noop.memo(function StackNavigator() {
                   type = action.type;
                 }
               }
-              obj = animation(4695);
+              obj = animation(4697);
               if ("GO_BACK" === type) {
                 let SWIPE = constants2.BACK_BUTTON;
               } else {
@@ -448,9 +448,9 @@ export default noop.memo(function StackNavigator() {
             }
           },
           options(arg0) {
-            const obj = { headerShown: true, header: styles(8194).renderHeader };
+            const obj = { headerShown: true, header: styles(7283).renderHeader };
             ({ navigation, route } = arg0);
-            const merged = Object.assign(styles(8194).getDefaultChannelStackHeaderProps(navigation, route));
+            const merged = Object.assign(styles(7283).getDefaultChannelStackHeaderProps(navigation, route));
             const merged1 = Object.assign(animation2);
             obj.animation = animation;
             return obj;
@@ -468,7 +468,7 @@ export default noop.memo(function StackNavigator() {
       name: "conversations",
       getComponent: getConversationsComponent,
       options() {
-        return stateFromStores(11277)();
+        return stateFromStores(10375)();
       }
     };
     const obj8 = { name: "auth", getComponent: getAuthComponent, options };
@@ -489,7 +489,7 @@ export default noop.memo(function StackNavigator() {
     items1[7] = closure_2_10(closure_16.Screen, {
       name: "settings",
       options() {
-        const tmp = stateFromStores(11277);
+        const tmp = stateFromStores(10375);
         let obj2;
         if (obj.isIpadOS()) {
           obj2 = { presentation: "modal" };
@@ -506,13 +506,13 @@ export default noop.memo(function StackNavigator() {
       name: "sidebar",
       getComponent: getChannelDetailsComponent,
       options() {
-        return stateFromStores(11277)({ lockOrientation: false });
+        return stateFromStores(10375)({ lockOrientation: false });
       }
     });
     const obj16 = {
       name: "settings",
       options() {
-        const tmp = stateFromStores(11277);
+        const tmp = stateFromStores(10375);
         let obj2;
         if (obj.isIpadOS()) {
           obj2 = { presentation: "modal" };
@@ -529,7 +529,7 @@ export default noop.memo(function StackNavigator() {
       name: "sidebar",
       getComponent: getChannelDetailsComponent,
       options() {
-        return stateFromStores(11277)({ lockOrientation: false });
+        return stateFromStores(10375)({ lockOrientation: false });
       }
     };
     tmp5Result = PlatformUtils2;
@@ -557,7 +557,7 @@ export default noop.memo(function StackNavigator() {
           }
           str2 = str3;
         }
-        const merged = Object.assign(stateFromStores(11277)({ presentation: str2 }));
+        const merged = Object.assign(stateFromStores(10375)({ presentation: str2 }));
         return obj;
       },
       getComponent: getModalComponent

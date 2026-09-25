@@ -1,9 +1,9 @@
-// Module ID: 13823
-// Function ID: 13824
+// Module ID: 12980
+// Function ID: 12981
 // Name: NativeAppIconModule
 // Dependencies: [17, 2]
 
-// Module 13823 (NativeAppIconModule)
+// Module 12980 (NativeAppIconModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

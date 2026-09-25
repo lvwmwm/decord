@@ -1,7 +1,7 @@
 // Module ID: 4971
 // Function ID: 4972
 // Name: StreamActionCreators
-// Dependencies: [5, 4846, 4972, 4973, 4851, 502, 2044, 2066, 2098, 4848, 1074, 4871, 573, 4881, 38, 4974, 4985, 5030, 5031, 1271, 1091, 5022, 1249, 9790, 5716, 4842, 10086, 2]
+// Dependencies: [5, 4846, 4972, 4973, 4851, 502, 2044, 2066, 2098, 4848, 1074, 4871, 573, 4881, 38, 4974, 4985, 5030, 5031, 1271, 1091, 5022, 1249, 8888, 5718, 4842, 9183, 2]
 // Exports: changeStreamRegion, closeStream, fetchStreamPreview, joinPrivateChannelAndWatchStream, notifyStreamStart, setLayout, setStreamPaused, startStream, stopOwnStream, stopStream, toggleSelfStreamHidden, updateStreamSettings, watchStreamAndTransitionToStream
 
 // Module 4971 (StreamActionCreators)
@@ -13,9 +13,9 @@ import StreamKeyUtils from "StreamKeyUtils" /* 4881 */;
 import ChannelUtils from "ChannelUtils" /* 4974 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5022 */;
 import transitionToStreamDefault from "transitionToStream" /* 5031 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5716 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 9790 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 10086 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5718 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 8888 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 9183 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import GameConsoleStore from "GameConsoleStore" /* 4846 */;
 import PopoutWindowStore from "PopoutWindowStore" /* 4972 */;
@@ -312,10 +312,10 @@ export const stopOwnStream = function stopOwnStream(arg0) {
     if (flag === undefined) {
       flag = true;
     }
-    const obj2 = { type: "STREAM_CLOSE", streamKey: encodeStreamKeyResult, canShowFeedback: flag };
-    DispatcherDefault.dispatch(obj2);
-    const obj4 = { type: "STREAM_STOP", streamKey: encodeStreamKeyResult, appContext: constants.APP };
-    DispatcherDefault.dispatch(obj4);
+    const obj3 = { type: "STREAM_CLOSE", streamKey: encodeStreamKeyResult, canShowFeedback: flag };
+    DispatcherDefault.dispatch(obj3);
+    const obj5 = { type: "STREAM_STOP", streamKey: encodeStreamKeyResult, appContext: constants.APP };
+    DispatcherDefault.dispatch(obj5);
   }
 };
 export const joinPrivateChannelAndWatchStream = function joinPrivateChannelAndWatchStream(arg0, streamKey) {

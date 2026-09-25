@@ -1,12 +1,12 @@
-// Module ID: 14459
-// Function ID: 14460
+// Module ID: 13620
+// Function ID: 13621
 // Name: RadioGroup
-// Dependencies: [19, 17, 1085, 21, 4829, 576, 4543, 7470, 14460, 2]
+// Dependencies: [19, 17, 1085, 21, 4829, 576, 4545, 6553, 13621, 2]
 
-// Module 14459 (RadioGroup)
+// Module 13620 (RadioGroup)
 import nativeDefault from "native" /* 576 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4543 */;
-import FormRowDefault from "FormRow" /* 7470 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4545 */;
+import FormRowDefault from "FormRow" /* 6553 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

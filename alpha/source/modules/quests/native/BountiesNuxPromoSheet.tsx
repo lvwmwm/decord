@@ -1,17 +1,17 @@
-// Module ID: 15407
-// Function ID: 15408
+// Module ID: 14573
+// Function ID: 14574
 // Name: BountiesNuxPromoSheet
-// Dependencies: [19, 17, 21, 4829, 576, 4796, 15406, 10578, 1115, 6134, 5273, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4796, 14572, 9680, 1115, 14574, 5274, 2]
 // Exports: default
 
-// Module 15407 (BountiesNuxPromoSheet)
+// Module 14573 (BountiesNuxPromoSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 6134 */;
-import PromoSheet from "PromoSheet" /* 10578 */;
-import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 15406 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import PromoSheet from "PromoSheet" /* 9680 */;
+import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 14572 */;
+import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 14574 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

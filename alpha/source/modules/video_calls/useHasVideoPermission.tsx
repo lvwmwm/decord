@@ -1,13 +1,13 @@
-// Module ID: 10295
-// Function ID: 10296
+// Module ID: 9392
+// Function ID: 9393
 // Name: useHasVideoPermission
-// Dependencies: [2066, 4464, 504, 8049, 2]
+// Dependencies: [2066, 4466, 504, 7134, 2]
 // Exports: default, getVideoPermission
 
-// Module 10295 (useHasVideoPermission)
-import StreamPermissionUtils from "StreamPermissionUtils" /* 8049 */;
+// Module 9392 (useHasVideoPermission)
+import StreamPermissionUtils from "StreamPermissionUtils" /* 7134 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
 
 const require = globalThis.__r;
 

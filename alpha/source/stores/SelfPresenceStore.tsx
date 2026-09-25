@@ -1,22 +1,22 @@
-// Module ID: 5584
-// Function ID: 5585
+// Module ID: 5586
+// Function ID: 5587
 // Name: SelfPresenceStore
-// Dependencies: [5585, 1220, 2016, 5715, 7727, 9708, 4869, 4847, 1074, 7729, 2020, 1385, 11241, 1331, 12, 504, 573, 2]
+// Dependencies: [5587, 1220, 2016, 5717, 6812, 8806, 4869, 4847, 1074, 6814, 2020, 1385, 10339, 1331, 12, 504, 573, 2]
 
-// Module 5584 (SelfPresenceStore)
+// Module 5586 (SelfPresenceStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import _modDef1331 from "module_1331" /* 1331 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 11241 */;
-import SpotifyStore from "SpotifyStore" /* 5585 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10339 */;
+import SpotifyStore from "SpotifyStore" /* 5587 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import DetectableGameStore from "DetectableGameStore" /* 2016 */;
-import IdleStore from "IdleStore" /* 5715 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 7727 */;
-import LocalActivityStore from "LocalActivityStore" /* 9708 */;
+import IdleStore from "IdleStore" /* 5717 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 6812 */;
+import LocalActivityStore from "LocalActivityStore" /* 8806 */;
 import PresenceStore from "PresenceStore" /* 4869 */;
 import SessionsStore from "SessionsStore" /* 4847 */;
 
@@ -66,20 +66,20 @@ function shouldShowActivity(flags) {
       } else {
         shouldShowActivityResult = null != flags.application_id;
         if (shouldShowActivityResult) {
-          shouldShowActivityResult = tmp(7729).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
-          const tmpResult = tmp(7729);
+          shouldShowActivityResult = tmp(6814).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
+          const tmpResult = tmp(6814);
         }
       }
       return shouldShowActivityResult;
     } else if (tmp3.PLAYING === type) {
       if (null != flags.application_id) {
-        let result = tmp(7729).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
-        const tmpResult4 = tmp(7729);
+        let result = tmp(6814).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
+        const tmpResult4 = tmp(6814);
       } else {
         const searchGamesByNameResult = DetectableGameStore.searchGamesByName(flags.name);
         if (1 === searchGamesByNameResult.length) {
-          result = tmp(7729).shouldShareApplicationActivity(searchGamesByNameResult[0], LibraryApplicationStore);
-          const tmpResult5 = tmp(7729);
+          result = tmp(6814).shouldShareApplicationActivity(searchGamesByNameResult[0], LibraryApplicationStore);
+          const tmpResult5 = tmp(6814);
         } else {
           const ShowCurrentGame = tmp(2020).ShowCurrentGame;
           result = ShowCurrentGame.getSetting();
@@ -92,8 +92,8 @@ function shouldShowActivity(flags) {
       }
       let result1 = null == flags.application_id;
       if (!result1) {
-        result1 = tmp(7729).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
-        const tmpResult6 = tmp(7729);
+        result1 = tmp(6814).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
+        const tmpResult6 = tmp(6814);
       }
       return result1;
     }

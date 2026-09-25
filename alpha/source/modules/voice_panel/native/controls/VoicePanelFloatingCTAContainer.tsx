@@ -1,19 +1,19 @@
-// Module ID: 17745
-// Function ID: 17746
+// Module ID: 16969
+// Function ID: 16970
 // Name: VoicePanelFloatingCTAContainer
-// Dependencies: [32, 19, 2044, 12615, 12618, 1085, 21, 12529, 576, 4829, 5271, 8953, 4535, 12614, 17624, 7719, 563, 17620, 17746, 4561, 12622, 11347, 5272, 7406, 10973, 2]
+// Dependencies: [32, 19, 2044, 11741, 11744, 1085, 21, 11655, 576, 4829, 5272, 8047, 4537, 11740, 16848, 6802, 563, 16844, 16970, 4563, 11748, 10445, 5273, 6489, 10077, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 17745 (VoicePanelFloatingCTAContainer)
+// Module 16969 (VoicePanelFloatingCTAContainer)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4535 */;
-import Stack_Stack from "Stack/Stack" /* 5271 */;
-import spring from "spring" /* 5272 */;
-import RowButton from "RowButton" /* 8953 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11347 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12529 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12622 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17620 */;
+import native from "native" /* 4537 */;
+import Stack_Stack from "Stack/Stack" /* 5272 */;
+import spring from "spring" /* 5273 */;
+import RowButton from "RowButton" /* 8047 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10445 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 11655 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 11748 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 16844 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
@@ -119,8 +119,8 @@ class VoicePanelFloatingCTAContainer {
     return tmp12(tmp13, obj9);
   }
 }
-const UI_SHOW_HIDE_PHYSICS = fn(12615).UI_SHOW_HIDE_PHYSICS;
-let CALL_TILE_GUTTER = fn(12618).CALL_TILE_GUTTER;
+const UI_SHOW_HIDE_PHYSICS = fn(11741).UI_SHOW_HIDE_PHYSICS;
+let CALL_TILE_GUTTER = fn(11744).CALL_TILE_GUTTER;
 const ThemeTypes = fn(1085).ThemeTypes;
 const jsx = fn(21).jsx;
 const createStyles = fn(4829);

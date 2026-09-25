@@ -1,13 +1,13 @@
-// Module ID: 10752
-// Function ID: 10753
+// Module ID: 9856
+// Function ID: 9857
 // Name: StickerOptionsActionSheet
-// Dependencies: [19, 21, 7522, 4522, 4796, 7530, 5992, 5910, 4771, 1115, 2]
+// Dependencies: [19, 21, 6605, 4524, 4796, 6613, 5994, 5912, 4771, 1115, 2]
 // Exports: default
 
-// Module 10752 (StickerOptionsActionSheet)
-import ToastUtils from "ToastUtils" /* 4522 */;
+// Module 9856 (StickerOptionsActionSheet)
+import ToastUtils from "ToastUtils" /* 4524 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import ClipboardUtils from "ClipboardUtils" /* 7522 */;
+import ClipboardUtils from "ClipboardUtils" /* 6605 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -29,7 +29,7 @@ export default function StickerOptionsActionSheet(stickerUrl) {
   const intl = stickerUrl(1115).intl;
   obj3.label = intl.string(stickerUrl(1115).t.B1ubHx);
   obj3.onPress = callback;
-  obj2.children = jsx(stickerUrl(5910).TableRow, { icon: jsx(stickerUrl(4771).LinkIcon, {}), label: null, onPress: null });
-  obj.children = jsx(stickerUrl(5992).TableRowGroup, { hasIcons: true, children: null });
-  return jsx(stickerUrl(7530).ActionSheet, { children: null });
+  obj2.children = jsx(stickerUrl(5912).TableRow, { icon: jsx(stickerUrl(4771).LinkIcon, {}), label: null, onPress: null });
+  obj.children = jsx(stickerUrl(5994).TableRowGroup, { hasIcons: true, children: null });
+  return jsx(stickerUrl(6613).ActionSheet, { children: null });
 };

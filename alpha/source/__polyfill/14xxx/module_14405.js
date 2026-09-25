@@ -1,9 +1,0 @@
-// Module ID: 14405
-// Function ID: 14406
-// Dependencies: [14395]
-
-// Module 14405
-import _mod14395 from "module_14395" /* 14395 */;
-
-
-export default (arg0, arg1, arg2) => _mod14395(arg0, arg1, arg2) >= 0;

@@ -1,12 +1,12 @@
-// Module ID: 5447
-// Function ID: 5448
+// Module ID: 5448
+// Function ID: 5449
 // Name: NativePermissionBaseUtils
-// Dependencies: [5, 5448, 5038, 1074, 1241, 5449, 1115, 2]
+// Dependencies: [5, 5449, 5038, 1074, 1241, 5450, 1115, 2]
 
-// Module 5447 (NativePermissionBaseUtils)
+// Module 5448 (NativePermissionBaseUtils)
 import util from "util" /* 1115 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import NativePermissionStore from "NativePermissionStore" /* 5448 */;
+import NativePermissionStore from "NativePermissionStore" /* 5449 */;
 
 require = fn;
 const NativePermissionConstants = fn(5038);
@@ -48,7 +48,7 @@ prototype["requestAuthorization"] = function requestAuthorization(arg0, hasPermi
       DENIED = tmp14.DENIED;
     }
     closure_128_2 = DENIED;
-    tmp5(5449).setPermission(closure_129_0, closure_128_2);
+    tmp5(5450).setPermission(closure_129_0, closure_128_2);
     let showAuthorizationError = !closure_128_1;
     if (!closure_128_1) {
       showAuthorizationError = closure_129_2.showAuthorizationError;

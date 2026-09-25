@@ -1,15 +1,15 @@
-// Module ID: 11476
-// Function ID: 11477
+// Module ID: 10574
+// Function ID: 10575
 // Name: DoubleTapReminderToast
-// Dependencies: [19, 2041, 21, 4829, 576, 4825, 1115, 4649, 2028, 2020, 8316, 4523, 11477, 2]
+// Dependencies: [19, 2041, 21, 4829, 576, 4825, 1115, 4651, 2028, 2020, 7405, 4525, 10575, 2]
 // Exports: maybeShowDoubleTapReminderToast
 
-// Module 11476 (DoubleTapReminderToast)
+// Module 10574 (DoubleTapReminderToast)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4523 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4525 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import DoubleTapEmojiUpdatedToast from "DoubleTapEmojiUpdatedToast" /* 11477 */;
+import DoubleTapEmojiUpdatedToast from "DoubleTapEmojiUpdatedToast" /* 10575 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -43,14 +43,14 @@ export const maybeShowDoubleTapReminderToast = function maybeShowDoubleTapRemind
     if (flag == null) {
       flag = false;
     }
-    const result = tmp(8316).disambiguatedEmojiFromSettingsValue(setting);
+    const result = tmp(7405).disambiguatedEmojiFromSettingsValue(setting);
     let areEmojisEqualResult = !flag;
     if (!flag) {
       areEmojisEqualResult = null != result;
     }
     if (areEmojisEqualResult) {
-      areEmojisEqualResult = tmp(8316).areEmojisEqual(result, emoji);
-      const tmpResult3 = tmp(8316);
+      areEmojisEqualResult = tmp(7405).areEmojisEqual(result, emoji);
+      const tmpResult3 = tmp(7405);
     }
     if (areEmojisEqualResult) {
       const obj2 = {
@@ -65,9 +65,9 @@ export const maybeShowDoubleTapReminderToast = function maybeShowDoubleTapRemind
       };
       ToastActionCreatorsDefault.open(obj2);
       const obj3 = { dismissAction: ContentDismissActionType.AUTO_DISMISS, forceTrack: true };
-      const result1 = tmp(4649).UNSAFE_markDismissibleContentAsDismissed(tmp(2028).DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER, obj3);
-      const tmpResult4 = tmp(4649);
+      const result1 = tmp(4651).UNSAFE_markDismissibleContentAsDismissed(tmp(2028).DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER, obj3);
+      const tmpResult4 = tmp(4651);
     }
-    const tmpResult = tmp(8316);
+    const tmpResult = tmp(7405);
   }
 };

@@ -1,12 +1,12 @@
-// Module ID: 15485
-// Function ID: 15486
+// Module ID: 14655
+// Function ID: 14656
 // Name: VideoQuestModalReward
-// Dependencies: [19, 21, 4829, 15462, 11824, 12108, 5271, 576, 15467, 4825, 1115, 2]
+// Dependencies: [19, 21, 4829, 14632, 10668, 10665, 5272, 576, 14637, 4825, 1115, 2]
 
-// Module 15485 (VideoQuestModalReward)
+// Module 14655 (VideoQuestModalReward)
 import nativeDefault from "native" /* 576 */;
-import QuestUtils from "QuestUtils" /* 12108 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 15467 */;
+import QuestUtils from "QuestUtils" /* 10665 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 14637 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -31,14 +31,14 @@ export default noop.memo(function VideoQuestModalReward(style) {
     str = size;
   }
   ({ withRewardTileAnimation, onTextBlockLayout } = style);
-  quest = quest(15462).useVideoQuestModalContext().quest;
-  const obj = quest(15462);
+  quest = quest(14632).useVideoQuestModalContext().quest;
+  const obj = quest(14632);
   const items = [quest.id];
-  const questTaskDetails = quest(11824).useQuestTaskDetails(quest);
+  const questTaskDetails = quest(10668).useQuestTaskDetails(quest);
   const callback = noop.useCallback(() => {
     const result = QuestUtils.openRewardDetailsBottomSheet({ questId: quest.id });
   }, items);
-  const obj2 = quest(11824);
+  const obj2 = quest(10668);
   const obj3 = { justify: "center", align: "center", spacing: nativeDefault.space.PX_24, style: style.style, children: null };
   const items1 = [closure_4(QuestProgressIndicatorDefault, { hasConfetti: true, quest, size: str, progress: questTaskDetails.percentComplete, onPress: callback, withAnimation: withRewardTileAnimation }), ];
   const obj5 = { align: "center", spacing: nativeDefault.space.PX_4, onLayout: onTextBlockLayout, children: null };
@@ -58,7 +58,7 @@ export default noop.memo(function VideoQuestModalReward(style) {
   }
   items2[1] = tmp9Result;
   obj5.children = items2;
-  items1[1] = closure_5(quest(5271).Stack, obj5);
+  items1[1] = closure_5(quest(5272).Stack, obj5);
   obj3.children = items1;
-  return closure_5(quest(5271).Stack, obj3);
+  return closure_5(quest(5272).Stack, obj3);
 });

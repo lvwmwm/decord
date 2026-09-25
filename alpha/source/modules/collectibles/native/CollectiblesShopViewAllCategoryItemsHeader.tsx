@@ -1,15 +1,15 @@
-// Module ID: 16258
-// Function ID: 16259
+// Module ID: 15437
+// Function ID: 15438
 // Name: CollectiblesShopViewAllCategoryItemsHeader
-// Dependencies: [19, 17, 21, 4829, 1484, 13826, 8194, 8198, 1115, 2]
+// Dependencies: [19, 17, 21, 4829, 1484, 12983, 7283, 7287, 1115, 2]
 // Exports: default
 
-// Module 16258 (CollectiblesShopViewAllCategoryItemsHeader)
+// Module 15437 (CollectiblesShopViewAllCategoryItemsHeader)
 import util from "util" /* 1115 */;
 import useNavigation from "useNavigation" /* 1484 */;
-import HeaderShared from "HeaderShared" /* 8194 */;
-import _modDef8198 from "module_8198" /* 8198 */;
-import useYouBarSettingsSafeArea from "useYouBarSettingsSafeArea" /* 13826 */;
+import HeaderShared from "HeaderShared" /* 7283 */;
+import _modDef7287 from "module_7287" /* 7287 */;
+import useYouBarSettingsSafeArea from "useYouBarSettingsSafeArea" /* 12983 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -33,7 +33,7 @@ export default function CollectiblesShopViewAllCategoryItemsHeader(arg0) {
   obj4.paddingTop = youBarSettingsCustomHeaderPaddingTop;
   obj3.style = obj4;
   const obj5 = { style: tmp.backButton, children: null };
-  const obj6 = { source: _modDef8198, color: buttonColor, accessibilityLabel: null, onPress: null };
+  const obj6 = { source: _modDef7287, color: buttonColor, accessibilityLabel: null, onPress: null };
   const intl = util.intl;
   obj6.accessibilityLabel = intl.string(util.t["13/7kX"]);
   obj6.onPress = function onPress() {

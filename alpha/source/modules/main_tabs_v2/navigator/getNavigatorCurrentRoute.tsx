@@ -1,11 +1,11 @@
-// Module ID: 11570
-// Function ID: 11571
+// Module ID: 10775
+// Function ID: 10776
 // Name: getNavigatorCurrentRoute
-// Dependencies: [4687, 2]
+// Dependencies: [4689, 2]
 // Exports: default
 
-// Module 11570 (getNavigatorCurrentRoute)
-import RootNavigationRef from "RootNavigationRef" /* 4687 */;
+// Module 10775 (getNavigatorCurrentRoute)
+import RootNavigationRef from "RootNavigationRef" /* 4689 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/navigator/getNavigatorCurrentRoute.tsx");

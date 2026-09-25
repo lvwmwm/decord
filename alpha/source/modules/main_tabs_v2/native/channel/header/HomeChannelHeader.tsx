@@ -1,14 +1,14 @@
-// Module ID: 13672
-// Function ID: 13673
+// Module ID: 12826
+// Function ID: 12827
 // Name: HomeChannelHeader
-// Dependencies: [19, 17, 21, 4829, 576, 1177, 13125, 4825, 1115, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 1177, 12275, 4825, 1115, 2]
 
-// Module 13672 (HomeChannelHeader)
+// Module 12826 (HomeChannelHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import _modDef13125 from "module_13125" /* 13125 */;
+import _modDef12275 from "module_12275" /* 12275 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,7 +24,7 @@ const result = size.fileFinishedImporting("modules/main_tabs_v2/native/channel/h
 
 export default noop.memo(function HomeChannelHeader() {
   const obj = { style: closure_6().container, children: null };
-  const items = [React4(native.Icon, { source: _modDef13125, size: native.Icon.Sizes.MEDIUM, disableColor: true }), ];
+  const items = [React4(native.Icon, { source: _modDef12275, size: native.Icon.Sizes.MEDIUM, disableColor: true }), ];
   const obj3 = { variant: "heading-lg/extrabold", color: "interactive-text-active", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t.Ym2Ri6);

@@ -1,9 +1,20 @@
 // Module ID: 10234
 // Function ID: 10235
-// Dependencies: [1121]
+// Dependencies: [19]
+// Exports: useUpdateGestureConfig
 
 // Module 10234
-import registerAsset from "module_1121" /* 1121 */;
+import _mod19 from "module_19" /* 19 */;
 
+const useEffect = _mod19.useEffect;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/instant_invite/native/images", width: 60, height: 60, scales: [2, 3], hash: "a07985aa2246ccd4facb50f3c745ccda", name: "twitter", type: "png" });
+export const useUpdateGestureConfig = (arg0, enabled) => {
+  closure_0 = arg0;
+  enabled = enabled.enabled;
+  const items = [enabled, arg0];
+  useEffect(() => {
+    if (undefined !== enabled) {
+      closure_0.enabled(tmp);
+    }
+  }, items);
+};

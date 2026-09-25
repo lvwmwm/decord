@@ -1,18 +1,18 @@
-// Module ID: 18071
-// Function ID: 18072
+// Module ID: 17299
+// Function ID: 17300
 // Name: KeywordFilterTriggerFields
-// Dependencies: [19, 12205, 1074, 21, 5992, 18065, 1115, 2110, 2]
+// Dependencies: [19, 11327, 1074, 21, 5994, 17293, 1115, 2110, 2]
 // Exports: default
 
-// Module 18071 (KeywordFilterTriggerFields)
+// Module 17299 (KeywordFilterTriggerFields)
 import util from "util" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
-import TableRowGroup from "TableRowGroup" /* 5992 */;
-import KeywordsRowDefault from "KeywordsRow" /* 18065 */;
+import TableRowGroup from "TableRowGroup" /* 5994 */;
+import KeywordsRowDefault from "KeywordsRow" /* 17293 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const Constants = fn(12205);
+const Constants = fn(11327);
 ({ MAX_KEYWORDS_PER_ALLOWLIST_KEYWORD_FILTER_RULE: c3, MAX_KEYWORDS_PER_KEYWORD_FILTER: closure_4 } = Constants);
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);

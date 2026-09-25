@@ -1,24 +1,24 @@
-// Module ID: 12597
-// Function ID: 12598
+// Module ID: 11723
+// Function ID: 11724
 // Name: VoiceMessageButton
-// Dependencies: [5, 32, 19, 17, 4516, 8003, 2044, 5192, 12302, 12303, 1074, 4822, 5038, 21, 4829, 576, 8321, 4686, 5036, 12598, 4561, 11864, 1478, 12216, 5431, 5432, 7786, 9504, 12007, 1110, 4523, 1115, 10436, 4687, 5443, 4522, 9931, 6985, 12600, 12581, 10352, 2]
+// Dependencies: [5, 32, 19, 17, 4518, 7088, 2044, 5193, 11428, 11429, 1074, 4822, 5038, 21, 4829, 576, 7410, 4688, 5036, 11724, 4563, 11007, 1478, 11338, 5432, 5433, 6871, 8602, 11150, 1110, 4525, 1115, 9538, 4689, 5444, 4524, 9029, 6068, 11726, 11707, 9454, 2]
 
-// Module 12597 (VoiceMessageButton)
+// Module 11723 (VoiceMessageButton)
 import nativeDefault from "native" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
-import RootNavigationRef from "RootNavigationRef" /* 4687 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6985 */;
-import XSmallBoldIcon from "XSmallBoldIcon" /* 8321 */;
-import isChannelFocused from "isChannelFocused" /* 10436 */;
-import VoiceMessageUtils from "VoiceMessageUtils" /* 12598 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
+import RootNavigationRef from "RootNavigationRef" /* 4689 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6068 */;
+import XSmallBoldIcon from "XSmallBoldIcon" /* 7410 */;
+import isChannelFocused from "isChannelFocused" /* 9538 */;
+import VoiceMessageUtils from "VoiceMessageUtils" /* 11724 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4516 */;
-import PendingReplyStore from "PendingReplyStore" /* 8003 */;
+import ActionSheetStore from "ActionSheetStore" /* 4518 */;
+import PendingReplyStore from "PendingReplyStore" /* 7088 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import DraftStore from "DraftStore" /* 5192 */;
+import DraftStore from "DraftStore" /* 5193 */;
 
 const require = globalThis.__r;
 
@@ -34,9 +34,9 @@ function triggerHapticGuarded() {
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, AppState: closure_7 } = get_ActivityIndicator);
-const VoiceMessagesUIStore = fn(12302);
+const VoiceMessagesUIStore = fn(11428);
 ({ setIsVoiceMessageButtonMounted: closure_12, setIsUsingHoldGesture: map1, setVoiceMessageAnimationState: closure_14, showVoiceMessagesTooltip: closure_15, useVoiceMessagesUIStore: closure_16, setShowRecordingOverlay: closure_17, hideVoiceMessagesTooltip: closure_18 } = VoiceMessagesUIStore);
-const VoiceMessageConstants = fn(12303);
+const VoiceMessageConstants = fn(11429);
 ({ VoiceMessageAnimationState: closure_19, VOICE_RECORDING_MIN_DURATION_MILLIS: closure_20 } = VoiceMessageConstants);
 const Constants = fn(1074);
 ({ ComponentActions: closure_21, ComponentActionsKeyed: closure_22, MessageFlags: closure_23 } = Constants);
@@ -86,29 +86,29 @@ export default noop.memo((disabled) => {
   currentState = noop.useRef(true);
   closure_8 = noop.useRef(currentState.currentState);
   closure_9 = noop.useRef(null);
-  const tmp9 = sharedValue1(11864)();
+  const tmp9 = sharedValue1(11007)();
   _require = sharedValue(function*(arg0) {
-    closure_129_2 = yield closure_0(12598).endAudioRecording();
+    closure_129_2 = yield closure_0(11724).endAudioRecording();
     const data = closure_129_2.data;
     const startTimeMillis = closure_129_2.startTimeMillis;
     closure_1_6(false);
     if (closure_129_0) {
       closure_1_9.current = closure_129_1;
-      let result = closure_0(12598).emitVoiceMessageRecorded(closure_129_1, data.durationSecs, startTimeMillis);
+      let result = closure_0(11724).emitVoiceMessageRecorded(closure_129_1, data.durationSecs, startTimeMillis);
     }
     if (data.durationSecs < closure_2_20 / 1000) {
-      const result1 = closure_0(12598).emitVoiceMessageRecorded(closure_0(12216).VoiceMessageRecordingResult.CANCELLED_DURATION, data.durationSecs, startTimeMillis);
+      const result1 = closure_0(11724).emitVoiceMessageRecorded(closure_0(11338).VoiceMessageRecordingResult.CANCELLED_DURATION, data.durationSecs, startTimeMillis);
       __initData();
     }
-    const result2 = closure_0(12598).emitVoiceMessageRecorded(closure_0(12216).VoiceMessageRecordingResult.SENT, data.durationSecs, startTimeMillis);
+    const result2 = closure_0(11724).emitVoiceMessageRecorded(closure_0(11338).VoiceMessageRecordingResult.SENT, data.durationSecs, startTimeMillis);
     const channel = callback.getChannel(closure_1);
     if (null != channel) {
-      const cloudUpload = new closure_0(5431).CloudUpload({ uri: data.filename, originalUri: data.filename, mimeType: "audio/ogg", filename: "voice-message.ogg", platform: closure_0(5432).UploadPlatform.REACT_NATIVE, durationSecs: data.durationSecs, waveform: data.waveform }, channel.id);
+      const cloudUpload = new closure_0(5432).CloudUpload({ uri: data.filename, originalUri: data.filename, mimeType: "audio/ogg", filename: "voice-message.ogg", platform: closure_0(5433).UploadPlatform.REACT_NATIVE, durationSecs: data.durationSecs, waveform: data.waveform }, channel.id);
       const items = [cloudUpload];
       closure_129_6 = items;
       const pendingReply2 = pendingReply.getPendingReply(closure_1);
-      const sendMessageOptionsForReply = sharedValue1(7786).getSendMessageOptionsForReply(pendingReply2);
-      { uri: data.filename, originalUri: data.filename, mimeType: "audio/ogg", filename: "voice-message.ogg", platform: closure_0(5432).UploadPlatform.REACT_NATIVE, durationSecs: data.durationSecs, waveform: data.waveform };
+      const sendMessageOptionsForReply = sharedValue1(6871).getSendMessageOptionsForReply(pendingReply2);
+      { uri: data.filename, originalUri: data.filename, mimeType: "audio/ogg", filename: "voice-message.ogg", platform: closure_0(5433).UploadPlatform.REACT_NATIVE, durationSecs: data.durationSecs, waveform: data.waveform };
       const id = channel.id;
       const obj17 = { flags: constants3.IS_VOICE_MESSAGE, location: constants4.VOICE_MESSAGE, attachmentsToUpload: closure_129_6, scheduledTimestamp: null, onAttachmentUploadError: null };
       const scheduledMessage = callback1.getScheduledMessage(closure_1);
@@ -122,17 +122,17 @@ export default noop.memo((disabled) => {
         const result = obj.handleUploadMessageAttachmentsErrors({ file, guildId: guildId.getGuildId(), analyticsLocations: [], code, reason });
       };
       const merged = Object.assign(sendMessageOptionsForReply);
-      sharedValue1(7786).sendMessage(id, { content: "", tts: false, invalidEmojis: [], validNonShortcutEmojis: [] }, undefined, obj17);
-      sharedValue1(7786);
-      closure_0(12007).deletePendingReply(closure_1);
-      closure_0(12007);
-      sharedValue1(7786);
+      sharedValue1(6871).sendMessage(id, { content: "", tts: false, invalidEmojis: [], validNonShortcutEmojis: [] }, undefined, obj17);
+      sharedValue1(6871);
+      closure_0(11150).deletePendingReply(closure_1);
+      closure_0(11150);
+      sharedValue1(6871);
     }
     yield "HermesInternal";
     closure_1 = tmp2;
     ({ isCancelling: closure_129_0, cancelReason } = closure_0);
     if (cancelReason === undefined) {
-      cancelReason = closure_0(12216).VoiceMessageRecordingResult.CANCELLED_USER_REQUESTED;
+      cancelReason = closure_0(11338).VoiceMessageRecordingResult.CANCELLED_USER_REQUESTED;
     }
     closure_129_1 = cancelReason;
     return "flex";
@@ -267,7 +267,7 @@ export default noop.memo((disabled) => {
               closure_1_6(false);
               c2 = 1;
               c3 = 1;
-              const obj5 = { value: cancel(12598).endAudioRecording(), done: false };
+              const obj5 = { value: cancel(11724).endAudioRecording(), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -275,8 +275,8 @@ export default noop.memo((disabled) => {
             throw value;
           } else if (arg0 !== 2) {
             closure_128_0 = value;
-            const result = cancel(12598).emitVoiceMessageRecorded(cancel(12216).VoiceMessageRecordingResult.CANCELLED_GESTURE_CONFLICT, closure_128_0.data.durationSecs, closure_128_0.startTimeMillis);
-            const obj = cancel(12598);
+            const result = cancel(11724).emitVoiceMessageRecorded(cancel(11338).VoiceMessageRecordingResult.CANCELLED_GESTURE_CONFLICT, closure_128_0.data.durationSecs, closure_128_0.startTimeMillis);
+            const obj = cancel(11724);
           }
           c3 = 3;
           const obj6 = { value, done: true };
@@ -491,7 +491,7 @@ export default noop.memo((disabled) => {
     }
   }, items9);
   let obj4 = { voiceMessageAnimationState: tmp, runOnJS: require("ReanimatedRexport").runOnJS, triggerHapticGuarded };
-  const tmp21 = sharedValue1(9931);
+  const tmp21 = sharedValue1(9029);
   let intl = require("util").intl;
   const tmp22 = sharedValue(function*(arg0, value) {
     if (c2 === 2) {
@@ -653,7 +653,7 @@ export default noop.memo((disabled) => {
     return onUpdateResult.onFinalize(fn3);
   }, items10);
   let obj5 = { gesture: memo, children: null };
-  let obj6 = { ref: sharedValue1(12600)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null };
+  let obj6 = { ref: sharedValue1(11726)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null };
   const tmp21Result = tmp21(sharedValue(function*(arg0, value) {
     if (c2 === 2) {
       c2 = 3;
@@ -712,6 +712,6 @@ export default noop.memo((disabled) => {
   obj6.accessibilityActions = accessibilityActions;
   obj6.onAccessibilityAction = onAccessibilityAction;
   obj6.disabled = disabled;
-  obj5.children = jsx(sharedValue1(12581), { ref: sharedValue1(12600)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null });
+  obj5.children = jsx(sharedValue1(11707), { ref: sharedValue1(11726)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null });
   return jsx(require("LegacyBaseButton").GestureDetector, { gesture: memo, children: null });
 });

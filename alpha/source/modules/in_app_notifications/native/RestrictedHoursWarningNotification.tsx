@@ -1,18 +1,18 @@
-// Module ID: 11668
-// Function ID: 11669
+// Module ID: 10848
+// Function ID: 10849
 // Name: RestrictedHoursWarningNotification
-// Dependencies: [19, 17, 10442, 1074, 21, 4829, 576, 11669, 5032, 10443, 7712, 10517, 4825, 2]
+// Dependencies: [19, 17, 9544, 1074, 21, 4829, 576, 10849, 5032, 9545, 6795, 9619, 4825, 2]
 
-// Module 11668 (RestrictedHoursWarningNotification)
+// Module 10848 (RestrictedHoursWarningNotification)
 import nativeDefault from "native" /* 576 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
-import openUserSettings from "openUserSettings" /* 7712 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 10443 */;
+import openUserSettings from "openUserSettings" /* 6795 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 9545 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const lineClamp = fn(10442).NOTIFICATION_PREVIEW_LINE_CLAMP;
+const lineClamp = fn(9544).NOTIFICATION_PREVIEW_LINE_CLAMP;
 const Constants = fn(1074);
 ({ InAppNotificationTypes: metroRequire, UserSettingsSections: closure_7 } = Constants);
 const jsx = fn(21).jsx;
@@ -27,7 +27,7 @@ const result = size.fileFinishedImporting("modules/in_app_notifications/native/R
 export default noop.memo(function RestrictedHoursWarningNotification(notification) {
   notification = notification.notification;
   const type = notification.type;
-  let obj = { style: closure_9().iconContainer, children: jsx(notification(11669).ThemeDarkIcon, { size: "sm", color: type(576).colors.WHITE }) };
+  let obj = { style: closure_9().iconContainer, children: jsx(notification(10849).ThemeDarkIcon, { size: "sm", color: type(576).colors.WHITE }) };
   const items = [notification.title];
   let obj2 = { size: "sm", color: type(576).colors.WHITE };
   const items1 = [type];
@@ -39,6 +39,6 @@ export default noop.memo(function RestrictedHoursWarningNotification(notificatio
     }
     openUserSettings.openUserSettings({ screen: constants2.FAMILY_CENTER });
   }, items1);
-  const obj3 = { icon: <View style={closure_9().iconContainer}>{jsx(notification(11669).ThemeDarkIcon, { size: "sm", color: type(576).colors.WHITE })}</View>, header: memo, children: jsx(notification(4825).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp, children: notification.subtitle }), onPress: callback, notification };
-  return jsx(notification(10517).NotificationPressable, { icon: <View style={closure_9().iconContainer}>{jsx(notification(11669).ThemeDarkIcon, { size: "sm", color: type(576).colors.WHITE })}</View>, header: memo, children: jsx(notification(4825).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp, children: notification.subtitle }), onPress: callback, notification });
+  const obj3 = { icon: <View style={closure_9().iconContainer}>{jsx(notification(10849).ThemeDarkIcon, { size: "sm", color: type(576).colors.WHITE })}</View>, header: memo, children: jsx(notification(4825).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp, children: notification.subtitle }), onPress: callback, notification };
+  return jsx(notification(9619).NotificationPressable, { icon: <View style={closure_9().iconContainer}>{jsx(notification(10849).ThemeDarkIcon, { size: "sm", color: type(576).colors.WHITE })}</View>, header: memo, children: jsx(notification(4825).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp, children: notification.subtitle }), onPress: callback, notification });
 });

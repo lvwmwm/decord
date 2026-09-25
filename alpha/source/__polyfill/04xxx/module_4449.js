@@ -1,22 +1,12 @@
 // Module ID: 4449
 // Function ID: 4450
-// Dependencies: [19, 4448]
-// Exports: useShallow
+// Dependencies: [4450, 4451]
 
 // Module 4449
-import noop from "module_19" /* 19 */;
+const require = globalThis.__r;
 
+const require = arg1;
+const dependencyMap = arg6;
 
-export const useShallow = function useShallow(arg0) {
-  closure_0 = arg0;
-  noop.useRef(undefined);
-  return (arg0) => {
-    let current = closure_0(arg0);
-    if (obj.shallow(ref.current, current)) {
-      current = tmp.current;
-    } else {
-      tmp.current = current;
-    }
-    return current;
-  };
-};
+export const shallow = require("module_4450").shallow;
+export const useShallow = require("module_4451").useShallow;

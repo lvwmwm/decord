@@ -1,12 +1,12 @@
-// Module ID: 8963
-// Function ID: 8964
+// Module ID: 8057
+// Function ID: 8058
 // Name: Form/FormSwitch
-// Dependencies: [19, 17, 21, 4829, 576, 4763, 4680, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4763, 4682, 2]
 // Exports: default
 
-// Module 8963 (Form/FormSwitch)
+// Module 8057 (Form/FormSwitch)
 import nativeDefault from "native" /* 576 */;
-import shared from "shared" /* 4680 */;
+import shared from "shared" /* 4682 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

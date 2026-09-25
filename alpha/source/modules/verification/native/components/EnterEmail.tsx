@@ -1,10 +1,10 @@
-// Module ID: 7315
-// Function ID: 7316
+// Module ID: 6398
+// Function ID: 6399
 // Name: EnterEmail
-// Dependencies: [5, 32, 19, 17, 1372, 5928, 1074, 21, 4829, 576, 1484, 504, 1094, 7316, 1241, 4825, 1115, 6935, 5273, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 5930, 1074, 21, 4829, 576, 1484, 504, 1094, 6399, 1241, 4825, 1115, 6018, 5274, 2]
 // Exports: default
 
-// Module 7315 (EnterEmail)
+// Module 6398 (EnterEmail)
 import nativeDefault from "native" /* 576 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -14,7 +14,7 @@ import UserStore from "UserStore" /* 1372 */;
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
-const ChangeEmailStore = fn(5928);
+const ChangeEmailStore = fn(5930);
 ({ useChangeEmailError: c10, useChangeEmailStore: closure_11, ChangeEmailFields: closure_12 } = ChangeEmailStore);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);

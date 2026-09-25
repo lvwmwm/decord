@@ -1,17 +1,17 @@
-// Module ID: 11963
-// Function ID: 11964
+// Module ID: 11106
+// Function ID: 11107
 // Name: GuildHighlightsNotificationsActionSheet
-// Dependencies: [32, 19, 17, 2066, 5010, 1074, 11964, 21, 4829, 576, 5889, 4825, 11965, 563, 1115, 11966, 1612, 7483, 6957, 2110, 4561, 5912, 8951, 7452, 7447, 4796, 2]
+// Dependencies: [32, 19, 17, 2066, 5010, 1074, 11107, 21, 4829, 576, 5891, 4825, 11108, 563, 1115, 11109, 1612, 6566, 6040, 2110, 4563, 5914, 8045, 6535, 6530, 4796, 2]
 // Exports: default
 
-// Module 11963 (GuildHighlightsNotificationsActionSheet)
+// Module 11106 (GuildHighlightsNotificationsActionSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import GuildIcon from "GuildIcon" /* 5889 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7447 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7452 */;
-import PushFeedbackActions from "PushFeedbackActions" /* 11965 */;
+import GuildIcon from "GuildIcon" /* 5891 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6530 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6535 */;
+import PushFeedbackActions from "PushFeedbackActions" /* 11108 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2066 */;
@@ -39,7 +39,7 @@ function GuildPill(guild) {
 const View = fn(17).View;
 const Constants = fn(1074);
 ({ HelpdeskArticles: closure_8, HighlightSettings: closure_9 } = Constants);
-const FeedbackRating = fn(11964).FeedbackRating;
+const FeedbackRating = fn(11107).FeedbackRating;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
 let createStyles = fn(4829);

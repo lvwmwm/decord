@@ -1,13 +1,13 @@
-// Module ID: 16116
-// Function ID: 16117
+// Module ID: 15291
+// Function ID: 15292
 // Name: TextDisplayComponent
-// Dependencies: [32, 19, 4821, 2044, 2098, 8470, 21, 8471, 38, 4819, 8219, 504, 2020, 8621, 16117, 11954, 11924, 2]
+// Dependencies: [32, 19, 4821, 2044, 2098, 7560, 21, 7561, 38, 4819, 7308, 504, 2020, 7711, 15292, 11097, 11067, 2]
 // Exports: default
 
-// Module 16116 (TextDisplayComponent)
+// Module 15291 (TextDisplayComponent)
 import MarkupUtilsDefault from "MarkupUtils" /* 4819 */;
-import renderMessageMarkup from "renderMessageMarkup" /* 8219 */;
-import handleMessagesTapLink from "handleMessagesTapLink" /* 11954 */;
+import renderMessageMarkup from "renderMessageMarkup" /* 7308 */;
+import handleMessagesTapLink from "handleMessagesTapLink" /* 11097 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
@@ -15,7 +15,7 @@ import ChannelStore from "ChannelStore" /* 2044 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
 
 require = fn;
-let closure_8 = fn(8470).TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS;
+let closure_8 = fn(7560).TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS;
 const jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/interaction_components/native/display/TextDisplayComponent.tsx");

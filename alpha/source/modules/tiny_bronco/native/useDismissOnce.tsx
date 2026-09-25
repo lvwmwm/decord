@@ -1,10 +1,10 @@
-// Module ID: 15090
-// Function ID: 15091
+// Module ID: 14256
+// Function ID: 14257
 // Name: useDismissOnce
 // Dependencies: [19, 2041, 2]
 // Exports: useDismissOnce
 
-// Module 15090 (useDismissOnce)
+// Module 14256 (useDismissOnce)
 import noop from "module_19" /* 19 */;
 
 const ContentDismissActionType = fn(2041).ContentDismissActionType;

@@ -1,17 +1,17 @@
-// Module ID: 17447
-// Function ID: 17448
+// Module ID: 16664
+// Function ID: 16665
 // Name: MessageRequestsScreenWithTabs
-// Dependencies: [32, 19, 17, 21, 4829, 576, 9974, 1115, 17448, 17464, 9975, 12964, 12239, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 9072, 1115, 16665, 16681, 9073, 12095, 11361, 2]
 
-// Module 17447 (MessageRequestsScreenWithTabs)
+// Module 16664 (MessageRequestsScreenWithTabs)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import SegmentedControlState from "SegmentedControlState" /* 9974 */;
-import SegmentedControl from "SegmentedControl" /* 9975 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12239 */;
-import SegmentedControlPages from "SegmentedControlPages" /* 12964 */;
-import MessageRequestListDefault from "MessageRequestList" /* 17448 */;
-import SpamMessageListDefault from "SpamMessageList" /* 17464 */;
+import SegmentedControlState from "SegmentedControlState" /* 9072 */;
+import SegmentedControl from "SegmentedControl" /* 9073 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11361 */;
+import SegmentedControlPages from "SegmentedControlPages" /* 12095 */;
+import MessageRequestListDefault from "MessageRequestList" /* 16665 */;
+import SpamMessageListDefault from "SpamMessageList" /* 16681 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

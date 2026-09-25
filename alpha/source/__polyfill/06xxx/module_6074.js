@@ -1,0 +1,7 @@
+// Module ID: 6074
+// Function ID: 6075
+// Dependencies: []
+
+// Module 6074
+
+export const State = { UNDETERMINED: 0, FAILED: 1, BEGAN: 2, CANCELLED: 3, ACTIVE: 4, END: 5 };

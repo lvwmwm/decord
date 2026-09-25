@@ -1,9 +1,9 @@
-// Module ID: 7395
-// Function ID: 7396
+// Module ID: 6478
+// Function ID: 6479
 // Name: FastestListPropsPlaceholder
 // Dependencies: [2]
 
-// Module 7395 (FastestListPropsPlaceholder)
+// Module 6478 (FastestListPropsPlaceholder)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/fastest_list/props/FastestListPropsPlaceholder.tsx");

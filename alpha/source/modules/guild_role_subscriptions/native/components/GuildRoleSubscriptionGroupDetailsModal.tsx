@@ -1,22 +1,22 @@
-// Module ID: 18291
-// Function ID: 18292
+// Module ID: 17522
+// Function ID: 17523
 // Name: GuildRoleSubscriptionGroupDetailsModal
-// Dependencies: [32, 19, 17, 18292, 15554, 1074, 21, 4829, 14264, 18287, 10163, 1115, 18293, 4825, 15566, 8951, 18296, 2]
+// Dependencies: [32, 19, 17, 17523, 14724, 1074, 21, 4829, 13425, 17518, 9260, 1115, 17524, 4825, 14736, 8045, 17527, 2]
 // Exports: default
 
-// Module 18291 (GuildRoleSubscriptionGroupDetailsModal)
+// Module 17522 (GuildRoleSubscriptionGroupDetailsModal)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import Form from "Form" /* 8951 */;
-import FormHeaderDefault from "FormHeader" /* 10163 */;
-import FormStylesDefault from "FormStyles" /* 14264 */;
-import FormSeparatorDefault from "FormSeparator" /* 15566 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18287 */;
-import FormImagePicker from "FormImagePicker" /* 18293 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18296 */;
+import Form from "Form" /* 8045 */;
+import FormHeaderDefault from "FormHeader" /* 9260 */;
+import FormStylesDefault from "FormStyles" /* 13425 */;
+import FormSeparatorDefault from "FormSeparator" /* 14736 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 17518 */;
+import FormImagePicker from "FormImagePicker" /* 17524 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 17527 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18292 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 17523 */;
 
 require = fn;
 class Content {
@@ -61,7 +61,7 @@ class Content {
   }
 }
 const View = fn(17).View;
-const GuildRoleSubscriptionsConstants = fn(15554);
+const GuildRoleSubscriptionsConstants = fn(14724);
 ({ GuildRoleSubscriptionsTierScenes: metroRequire, MAX_SUBSCRIPTION_TIER_DESCRIPTION_LENGTH: closure_7 } = GuildRoleSubscriptionsConstants);
 const UPLOAD_BANNER_SIZE = fn(1074).UPLOAD_BANNER_SIZE;
 const jsxProd = fn(21);

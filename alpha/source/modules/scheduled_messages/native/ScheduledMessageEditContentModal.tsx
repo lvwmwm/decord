@@ -1,17 +1,17 @@
-// Module ID: 12564
-// Function ID: 12565
+// Module ID: 11690
+// Function ID: 11691
 // Name: ScheduledMessageEditContentModal
-// Dependencies: [5, 32, 19, 17, 2044, 21, 4829, 576, 1612, 9499, 504, 8005, 8175, 12553, 5032, 1115, 5936, 8194, 1364, 5929, 5427, 4825, 7418, 2]
+// Dependencies: [5, 32, 19, 17, 2044, 21, 4829, 576, 1612, 8597, 504, 7090, 7260, 11679, 5032, 1115, 5938, 7283, 1364, 5931, 5428, 4825, 6501, 2]
 // Exports: default
 
-// Module 12564 (ScheduledMessageEditContentModal)
+// Module 11690 (ScheduledMessageEditContentModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import Pressables from "Pressables" /* 5427 */;
-import MessageParserDefault from "MessageParser" /* 8005 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 8175 */;
-import HeaderShared from "HeaderShared" /* 8194 */;
+import Pressables from "Pressables" /* 5428 */;
+import MessageParserDefault from "MessageParser" /* 7090 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 7260 */;
+import HeaderShared from "HeaderShared" /* 7283 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -74,11 +74,11 @@ export default function ScheduledMessageEditContentModal(scheduledMessage) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            const obj5 = v1(8005);
+            const obj5 = v1(7090);
             const obj4 = { content: obj5.parse(stateFromStores, first).content, flags: scheduledMessage.createArgs.flags };
             v1 = 1;
             dependencyMap = 1;
-            const obj7 = { value: tmp4(12553).editScheduledMessage(scheduledMessage.scheduledMessageId, obj4), done: false };
+            const obj7 = { value: tmp4(11679).editScheduledMessage(scheduledMessage.scheduledMessageId, obj4), done: false };
             return obj7;
           }
         } else if (arg0 === 1) {

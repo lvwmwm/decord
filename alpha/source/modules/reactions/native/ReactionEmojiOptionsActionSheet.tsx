@@ -1,20 +1,20 @@
-// Module ID: 11613
-// Function ID: 11614
+// Module ID: 10818
+// Function ID: 10819
 // Name: ReactionEmojiOptionsActionSheet
-// Dependencies: [19, 17, 4821, 5764, 4650, 21, 4829, 576, 2020, 7521, 504, 10633, 1397, 4796, 10583, 10589, 4825, 1115, 10682, 4523, 7522, 4522, 8093, 7530, 7463, 5992, 5910, 2]
+// Dependencies: [19, 17, 4821, 5766, 4652, 21, 4829, 576, 2020, 6604, 504, 9737, 1397, 4796, 9687, 9693, 4825, 1115, 9786, 4525, 6605, 4524, 7178, 6613, 6546, 5994, 5912, 2]
 // Exports: default
 
-// Module 11613 (ReactionEmojiOptionsActionSheet)
+// Module 10818 (ReactionEmojiOptionsActionSheet)
 import nativeDefault from "native" /* 576 */;
-import ToastUtils from "ToastUtils" /* 4522 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4523 */;
-import ClipboardUtils from "ClipboardUtils" /* 7522 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8093 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10682 */;
+import ToastUtils from "ToastUtils" /* 4524 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4525 */;
+import ClipboardUtils from "ClipboardUtils" /* 6605 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 7178 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9786 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
-import EmojiStore from "EmojiStore" /* 5764 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4650 */;
+import EmojiStore from "EmojiStore" /* 5766 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4652 */;
 
 require = fn;
 const View = fn(17).View;
@@ -99,9 +99,9 @@ export default function ReactionEmojiOptionsActionSheet(channelId) {
       style = obj;
     }
     if (arg0) {
-      let StarOutlineIcon = tmp9(10583).StarIcon;
+      let StarOutlineIcon = tmp9(9687).StarIcon;
     } else {
-      StarOutlineIcon = tmp9(10589).StarOutlineIcon;
+      StarOutlineIcon = tmp9(9693).StarOutlineIcon;
     }
     return React7(StarOutlineIcon, { style });
   }, items4);

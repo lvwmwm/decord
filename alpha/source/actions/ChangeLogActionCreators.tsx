@@ -1,9 +1,9 @@
-// Module ID: 8441
-// Function ID: 8442
+// Module ID: 7531
+// Function ID: 7532
 // Name: ChangeLogActionCreators
 // Dependencies: [5, 4843, 1074, 2097, 573, 2020, 1271, 2]
 
-// Module 8441 (ChangeLogActionCreators)
+// Module 7531 (ChangeLogActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import UserSettings from "UserSettings" /* 2020 */;

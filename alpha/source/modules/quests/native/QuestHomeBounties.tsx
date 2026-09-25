@@ -1,18 +1,18 @@
-// Module ID: 15405
-// Function ID: 15406
+// Module ID: 14571
+// Function ID: 14572
 // Name: QuestHomeBounties
-// Dependencies: [32, 19, 17, 8025, 2041, 21, 576, 4829, 2028, 7718, 15406, 573, 15408, 11824, 504, 15415, 15421, 2]
+// Dependencies: [32, 19, 17, 7110, 2041, 21, 576, 4829, 2028, 6801, 14572, 573, 14576, 10668, 504, 14583, 14589, 2]
 
-// Module 15405 (QuestHomeBounties)
+// Module 14571 (QuestHomeBounties)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import nativeDefault from "native" /* 576 */;
 import dismissible_content from "dismissible_content" /* 2028 */;
-import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 15406 */;
-import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 15415 */;
-import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 15421 */;
+import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 14572 */;
+import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 14583 */;
+import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 14589 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BountyStore from "BountyStore" /* 8025 */;
+import BountyStore from "BountyStore" /* 7110 */;
 
 require = fn;
 const View = fn(17).View;
@@ -33,7 +33,7 @@ export default noop.memo(function QuestHomeBounties(shopCarouselConfig) {
   if (showOrbShopPlaceholderCarousel === undefined) {
     showOrbShopPlaceholderCarousel = false;
   }
-  const questHomeBounties = first(11824).useQuestHomeBounties().questHomeBounties;
+  const questHomeBounties = first(10668).useQuestHomeBounties().questHomeBounties;
   const tmp3 = closure_11();
   first = undefined;
   importDefault = undefined;
@@ -44,8 +44,8 @@ export default noop.memo(function QuestHomeBounties(shopCarouselConfig) {
   } else {
     items1 = [];
   }
-  const obj = first(11824);
-  const tmp4 = _slicedToArray(first(7718).useSelectedDismissibleContent(items1), 2);
+  const obj = first(10668);
+  const tmp4 = _slicedToArray(first(6801).useSelectedDismissibleContent(items1), 2);
   first = tmp4[0];
   importDefault = tmp6;
   dependencyMap = noop.useRef(false);
@@ -75,7 +75,7 @@ export default noop.memo(function QuestHomeBounties(shopCarouselConfig) {
     }
     tmp = ref;
   }, items3);
-  const tmpResult = first(7718);
+  const tmpResult = first(6801);
   const items4 = [BountyStore];
   ({ placement, buttonVariant, clickable } = shopCarouselConfig.shopCarouselConfig);
   let tmp10 = undefined !== clickable;
@@ -87,8 +87,8 @@ export default noop.memo(function QuestHomeBounties(shopCarouselConfig) {
     if (!stateFromStores) {
       let tmp11 = "none" !== placement && obtainableOrbRewards > 0;
       if (tmp11) {
-        tmp11 = orbShopProducts.length >= tmp(15408).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
-        const tmp12 = orbShopProducts.length >= tmp(15408).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+        tmp11 = orbShopProducts.length >= tmp(14576).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+        const tmp12 = orbShopProducts.length >= tmp(14576).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
       }
       if (!tmp11) {
         const obj2 = { style: tmp3.container, children: null };

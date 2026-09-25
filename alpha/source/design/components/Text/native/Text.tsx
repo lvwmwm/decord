@@ -1,7 +1,7 @@
 // Module ID: 4825
 // Function ID: 4826
 // Name: Text/Text
-// Dependencies: [109, 19, 17, 1085, 21, 4561, 576, 12, 4826, 4827, 4829, 4834, 4835, 4838, 1365, 4839, 299, 2]
+// Dependencies: [109, 19, 17, 1085, 21, 4563, 576, 12, 4826, 4827, 4829, 4834, 4835, 4838, 1365, 4839, 299, 2]
 
 // Module 4825 (Text/Text)
 import _modDef12 from "module_12" /* 12 */;
@@ -14,7 +14,7 @@ import PlainTextEligibility from "PlainTextEligibility" /* 4838 */;
 import _modDef4839 from "module_4839" /* 4839 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 
 require = fn;
 let closure_3 = ["color", "fontSize", "fontFamily", "fontWeight", "fontStyle", "textAlign", "textAlignVertical", "verticalAlign", "textDecorationLine", "lineHeight", "letterSpacing"];

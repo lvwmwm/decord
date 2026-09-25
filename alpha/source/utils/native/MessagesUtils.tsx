@@ -1,12 +1,12 @@
-// Module ID: 12298
-// Function ID: 12299
+// Module ID: 11424
+// Function ID: 11425
 // Name: MessagesUtils
-// Dependencies: [1074, 7656, 4817, 8222, 4977, 2]
+// Dependencies: [1074, 6739, 4817, 7311, 4977, 2]
 
-// Module 12298 (MessagesUtils)
+// Module 11424 (MessagesUtils)
 import CodedLink from "CodedLink" /* 4817 */;
 import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 4977 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7656 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 6739 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ export default {
           if (CodedLink.CodedLinkType.BUILD_OVERRIDE !== type) {
             if (tmp(4817).CodedLinkType.MANUAL_BUILD_OVERRIDE !== type) {
               if (tmp(4817).CodedLinkType.EXPERIMENT === type) {
-                const experimentFromEmbedURL = tmp(8222).getExperimentFromEmbedURL(code);
+                const experimentFromEmbedURL = tmp(7311).getExperimentFromEmbedURL(code);
                 let tmp48 = null != experimentFromEmbedURL;
                 if (tmp48) {
                   const legacyExperiments = props.experimentEmbeds.legacyExperiments;

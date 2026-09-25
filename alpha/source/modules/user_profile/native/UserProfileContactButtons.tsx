@@ -1,21 +1,21 @@
-// Module ID: 13527
-// Function ID: 13528
+// Module ID: 12679
+// Function ID: 12680
 // Name: UserProfileContactButtons
-// Dependencies: [19, 17, 4474, 1074, 21, 4829, 576, 5273, 7495, 8538, 13452, 504, 4673, 13528, 4765, 1115, 12968, 10087, 11569, 4796, 5032, 4842, 13530, 8269, 5377, 8211, 13531, 2]
+// Dependencies: [19, 17, 4476, 1074, 21, 4829, 576, 5274, 6578, 7628, 12602, 504, 4675, 12680, 4765, 1115, 12099, 9184, 10774, 4796, 5032, 4842, 12682, 7358, 5378, 7300, 12683, 2]
 // Exports: default
 
-// Module 13527 (UserProfileContactButtons)
+// Module 12679 (UserProfileContactButtons)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4842 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10087 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11569 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12968 */;
-import ConfirmStartCall from "ConfirmStartCall" /* 13531 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9184 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 10774 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12099 */;
+import ConfirmStartCall from "ConfirmStartCall" /* 12683 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 
 require = fn;
 function FlatFriendButton(label) {
@@ -42,19 +42,19 @@ function FriendRequestButton(user) {
   let stateFromStores;
   let userDisplayName;
   ({ hasCustomProfileTheme, ButtonComponent } = user);
-  const trackUserProfileAction = user(8538).useUserProfileAnalyticsContext().trackUserProfileAction;
+  const trackUserProfileAction = user(7628).useUserProfileAnalyticsContext().trackUserProfileAction;
   if (newestAnalyticsLocation == null) {
-    newestAnalyticsLocation = trackUserProfileAction(7495)().newestAnalyticsLocation;
+    newestAnalyticsLocation = trackUserProfileAction(6578)().newestAnalyticsLocation;
   }
   dependencyMap = { location: newestAnalyticsLocation };
-  let obj = user(8538);
+  let obj = user(7628);
   const tmp = trackUserProfileAction;
-  const gameFriendsForUser = user(13452).useGameFriendsForUser(user.id);
-  const tmp3Result = user(13452);
+  const gameFriendsForUser = user(12602).useGameFriendsForUser(user.id);
+  const tmp3Result = user(12602);
   const items = [userDisplayName];
   stateFromStores = user(504).useStateFromStores(items, () => RelationshipStore.getRelationshipType(user.id));
   const tmp3Result2 = user(504);
-  userDisplayName = tmp(4673).useName(user);
+  userDisplayName = tmp(4675).useName(user);
   if (stateFromStores !== RelationshipTypes.FRIEND) {
     if (stateFromStores !== tmp5.BLOCKED) {
       if (gameFriendsForUser.length > 0) {
@@ -63,7 +63,7 @@ function FriendRequestButton(user) {
         return null;
       } else {
         if (stateFromStores === tmp5.PENDING_OUTGOING) {
-          let UserPlusIcon = tmp3(13528).UserClockIcon;
+          let UserPlusIcon = tmp3(12680).UserClockIcon;
         } else {
           UserPlusIcon = tmp3(4765).UserPlusIcon;
         }

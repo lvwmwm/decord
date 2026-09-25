@@ -1,12 +1,12 @@
-// Module ID: 17117
-// Function ID: 17118
+// Module ID: 16308
+// Function ID: 16309
 // Name: VibegrationsConjureShimmer
-// Dependencies: [32, 19, 17, 4821, 21, 4829, 504, 4561, 4830, 672, 5969, 5285, 2]
+// Dependencies: [32, 19, 17, 4821, 21, 4829, 504, 4563, 4830, 672, 5971, 5286, 2]
 // Exports: default, shouldSweep
 
-// Module 17117 (VibegrationsConjureShimmer)
+// Module 16308 (VibegrationsConjureShimmer)
 import _modDef672 from "module_672" /* 672 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import timing from "timing" /* 4830 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -43,7 +43,7 @@ export default function VibegrationsConjureShimmer(epoch) {
   dependencyMap = tmp5[1];
   let obj = tint(504);
   const tmp2 = tint;
-  sharedValue = tint(4561).useSharedValue(0);
+  sharedValue = tint(4563).useSharedValue(0);
   if (live) {
     live = !stateFromStores;
   }
@@ -77,7 +77,7 @@ export default function VibegrationsConjureShimmer(epoch) {
     items[4] = cssResult;
     return items;
   }, items2);
-  let obj3 = tint(4561);
+  let obj3 = tint(4563);
   class W {
     constructor() {
       obj = { transform: null };
@@ -91,7 +91,7 @@ export default function VibegrationsConjureShimmer(epoch) {
   W.__closure = { bandWidth: result, progress: sharedValue, width };
   W.__workletHash = 16230447544169;
   W.__initData = __initData;
-  const animatedStyle = tmp2(4561).useAnimatedStyle(W);
+  const animatedStyle = tmp2(4563).useAnimatedStyle(W);
   let obj4 = {
     style: tmp.root,
     onLayout: live.useCallback((nativeEvent) => {
@@ -120,11 +120,11 @@ export default function VibegrationsConjureShimmer(epoch) {
     items4[2] = animatedStyle;
     obj8.style = items4;
     const obj10 = { style: tmp.fill, start, end, colors: memo, locations };
-    obj8.children = closure_8(width(5285), obj10);
-    obj6.children = closure_8(width(4561).View, obj8);
-    obj5.children = closure_8(width(5969), obj6);
+    obj8.children = closure_8(width(5286), obj10);
+    obj6.children = closure_8(width(4563).View, obj8);
+    obj5.children = closure_8(width(5971), obj6);
     tmp14 = closure_8(tmp13, obj5);
-    const tmp18 = width(5969);
+    const tmp18 = width(5971);
   }
   items3[1] = tmp14;
   obj4.children = items3;

@@ -1,11 +1,11 @@
-// Module ID: 9416
-// Function ID: 9417
+// Module ID: 8514
+// Function ID: 8515
 // Name: useIsSocialLayerParentApplication
-// Dependencies: [19, 1074, 9215, 2]
+// Dependencies: [19, 1074, 8313, 2]
 // Exports: default, getIsSocialLayerParentApplication
 
-// Module 9416 (useIsSocialLayerParentApplication)
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9215 */;
+// Module 8514 (useIsSocialLayerParentApplication)
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8313 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

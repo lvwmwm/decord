@@ -1,17 +1,17 @@
-// Module ID: 8411
-// Function ID: 8412
+// Module ID: 7500
+// Function ID: 7501
 // Name: UserOfferActionCreators
-// Dependencies: [5, 8412, 7784, 7780, 1374, 1074, 1364, 573, 1241, 1271, 8413, 1231, 4649, 2028, 2025, 2]
+// Dependencies: [5, 7501, 6869, 6865, 1374, 1074, 1364, 573, 1241, 1271, 7502, 1231, 4651, 2028, 2025, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 8411 (UserOfferActionCreators)
+// Module 7500 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8412 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7784 */;
-import UserOfferStore from "UserOfferStore" /* 7780 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 7501 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 6869 */;
+import UserOfferStore from "UserOfferStore" /* 6865 */;
 
 const require = globalThis.__r;
 
@@ -67,7 +67,7 @@ let closure_12 = async function _fetchUserOffer(arg0, value) {
           closure_136_1 = flag;
           let obj8 = closure_2;
           if (closure_2 === undefined) {
-            obj8 = { offerId: "channel", paymentGatewayOverride: "channelId" };
+            obj8 = { offerId: "isArray", paymentGatewayOverride: "paddingHorizontal" };
           }
           closure_136_2 = obj8;
           closure_136_3 = closure_3;

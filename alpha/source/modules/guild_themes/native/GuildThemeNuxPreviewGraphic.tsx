@@ -1,12 +1,12 @@
-// Module ID: 16589
-// Function ID: 16590
+// Module ID: 15769
+// Function ID: 15770
 // Name: GuildThemeNuxPreviewGraphic
-// Dependencies: [19, 17, 21, 4829, 576, 16590, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 15770, 2]
 // Exports: default
 
-// Module 16589 (GuildThemeNuxPreviewGraphic)
+// Module 15769 (GuildThemeNuxPreviewGraphic)
 import nativeDefault from "native" /* 576 */;
-import GuildThemePreviewArtDefault from "GuildThemePreviewArt" /* 16590 */;
+import GuildThemePreviewArtDefault from "GuildThemePreviewArt" /* 15770 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;

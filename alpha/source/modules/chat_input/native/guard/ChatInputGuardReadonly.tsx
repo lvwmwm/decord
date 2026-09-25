@@ -1,19 +1,19 @@
-// Module ID: 12816
-// Function ID: 12817
+// Module ID: 11942
+// Function ID: 11943
 // Name: ChatInputGuardReadonly
-// Dependencies: [19, 2048, 2044, 4462, 4464, 4844, 4474, 1372, 12304, 1074, 21, 12631, 504, 1370, 1115, 4982, 5009, 1101, 11, 12797, 2]
+// Dependencies: [19, 2048, 2044, 4464, 4466, 4844, 4476, 1372, 11430, 1074, 21, 11757, 504, 1370, 1115, 4982, 5009, 1101, 11, 11923, 2]
 
-// Module 12816 (ChatInputGuardReadonly)
+// Module 11942 (ChatInputGuardReadonly)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import router_utils from "router_utils" /* 1101 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5009 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildChannelStore from "GuildChannelStore" /* 4462 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
+import GuildChannelStore from "GuildChannelStore" /* 4464 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
 import ReadStateStore from "ReadStateStore" /* 4844 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -24,8 +24,8 @@ function sortChannelsByLastMessageId(id, id2) {
   return obj.compare(ReadStateStore.lastMessageId(id2.id), ReadStateStore.lastMessageId(id.id));
 }
 const isTextChannel = fn(2048).isTextChannel;
-let closure_6 = fn(4462).GUILD_SELECTABLE_CHANNELS_KEY;
-const TextAreaCta = fn(12304).TextAreaCta;
+let closure_6 = fn(4464).GUILD_SELECTABLE_CHANNELS_KEY;
+const TextAreaCta = fn(11430).TextAreaCta;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_12, Permissions: map1 } = Constants);
 const jsx = fn(21).jsx;

@@ -1,10 +1,10 @@
-// Module ID: 13461
-// Function ID: 13462
+// Module ID: 12611
+// Function ID: 12612
 // Name: vibegrationsPreviewClaims
 // Dependencies: [32, 2]
 // Exports: awaitVibegrationsPreviewClaim, clearVibegrationsPreviewClaims, resolveVibegrationsPreviewClaim
 
-// Module 13461 (vibegrationsPreviewClaims)
+// Module 12611 (vibegrationsPreviewClaims)
 import _slicedToArray from "module_32" /* 32 */;
 
 const map = new Map();

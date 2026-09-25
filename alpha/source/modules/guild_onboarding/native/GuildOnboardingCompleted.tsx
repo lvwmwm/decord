@@ -1,21 +1,21 @@
-// Module ID: 7516
-// Function ID: 7517
+// Module ID: 6599
+// Function ID: 6600
 // Name: GuildOnboardingCompleted
-// Dependencies: [19, 17, 4821, 2101, 2066, 1372, 7433, 21, 4829, 576, 1484, 504, 7460, 4535, 7517, 1397, 1879, 1370, 5258, 4561, 4830, 5892, 7456, 4825, 1115, 1177, 7518, 5889, 4416, 7543, 5273, 2]
+// Dependencies: [19, 17, 4821, 2101, 2066, 1372, 6516, 21, 4829, 576, 1484, 504, 6543, 4537, 6600, 1397, 1879, 1370, 5259, 4563, 4830, 5894, 6539, 4825, 1115, 1177, 6601, 5891, 4418, 6626, 5274, 2]
 // Exports: default
 
-// Module 7516 (GuildOnboardingCompleted)
+// Module 6599 (GuildOnboardingCompleted)
 import nativeDefault from "native" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import timing from "timing" /* 4830 */;
-import UserProfileRolesCard from "UserProfileRolesCard" /* 7518 */;
+import UserProfileRolesCard from "UserProfileRolesCard" /* 6601 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 import GuildRoleStore from "GuildRoleStore" /* 2101 */;
 import GuildStore from "GuildStore" /* 2066 */;
 import UserStore from "UserStore" /* 1372 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7433 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6516 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -172,7 +172,7 @@ export default function GuildOnboardingCompleted(guildId) {
       num = tmp4;
     }
     const obj14 = { duration: num, easing: null };
-    const Easing3 = tmp(4561).Easing;
+    const Easing3 = tmp(4563).Easing;
     obj14.easing = Easing3.out(ReanimatedRexport.Easing.ease);
     const obj15 = { opacity: withSequenceResult, transform: null };
     const obj16 = { rotate: null };

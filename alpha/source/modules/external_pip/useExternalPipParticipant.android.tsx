@@ -1,10 +1,10 @@
-// Module ID: 17572
-// Function ID: 17573
+// Module ID: 16796
+// Function ID: 16797
 // Name: useExternalPipParticipant
 // Dependencies: [32, 19, 4845, 502, 1992, 4852, 4850, 504, 2]
 // Exports: default
 
-// Module 17572 (useExternalPipParticipant)
+// Module 16796 (useExternalPipParticipant)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4845 */;
@@ -62,7 +62,7 @@ export default function useExternalPipParticipant() {
       id2 = tmp6.id;
     }
     if (ref.current !== id2) {
-      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "paddingHorizontal", focusedParticipantType: ref2.current };
+      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "ao", focusedParticipantType: ref2.current };
       let obj = obj2;
     } else {
       let type1;
@@ -241,7 +241,7 @@ export default function useExternalPipParticipant() {
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "padding" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "paddingHorizontal" };
   }, items4);
   closure_129_4 = selectedParticipantSpeaking;
   const items5 = [selectedParticipantSpeaking.selectedParticipantSpeaking];

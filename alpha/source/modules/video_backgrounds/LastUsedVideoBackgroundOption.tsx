@@ -1,13 +1,14 @@
-// Module ID: 10006
-// Function ID: 10007
+// Module ID: 9103
+// Function ID: 9104
 // Name: LastUsedVideoBackgroundOption
-// Dependencies: [19, 1220, 1372, 10003, 4483, 504, 2]
+// Dependencies: [19, 1184, 1220, 1372, 9104, 4485, 504, 2]
 // Exports: getLastUsedVideoBackgroundOption, useLastUsedVideoBackgroundOption
 
-// Module 10006 (LastUsedVideoBackgroundOption)
-import PremiumUtilsDefault from "PremiumUtils" /* 4483 */;
-import VideoBackgroundUtils from "VideoBackgroundUtils" /* 10003 */;
+// Module 9103 (LastUsedVideoBackgroundOption)
+import PremiumUtilsDefault from "PremiumUtils" /* 4485 */;
+import VideoBackgroundUtils from "VideoBackgroundUtils" /* 9104 */;
 import noop from "module_19" /* 19 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -16,56 +17,53 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_backgrounds/LastUsedVideoBackgroundOption.tsx");
 
 export const getLastUsedVideoBackgroundOption = function getLastUsedVideoBackgroundOption(currentUser) {
-  const voiceAndVideo = UserSettingsProtoStore.settings.voiceAndVideo;
-  let prop;
-  if (voiceAndVideo != null) {
-    prop = voiceAndVideo.videoBackgroundFilterDesktop;
-  }
-  const videoBackgroundOptionFromProto = VideoBackgroundUtils.getVideoBackgroundOptionFromProto(prop, currentUser.id);
-  if (!obj2.isCustomBackgroundOption(videoBackgroundOptionFromProto)) {
-    if (typeof videoBackgroundOptionFromProto !== "number") {
-      let tmp7 = videoBackgroundOptionFromProto;
+  const videoBackground = UnsyncedUserSettingsStore.videoBackground;
+  if (!obj.isCustomBackgroundOption(videoBackground)) {
+    if (typeof videoBackground !== "number") {
+      let tmp6 = videoBackground;
     } else {
-      tmp7 = null;
-      const tmp2Result = VideoBackgroundUtils;
+      tmp6 = null;
+      const tmpResult = VideoBackgroundUtils;
     }
-    let tmp6 = tmp7;
+    let tmp5 = tmp6;
   } else {
-    tmp6 = null;
+    tmp5 = null;
   }
-  return tmp6;
+  return tmp5;
 };
 export const useLastUsedVideoBackgroundOption = function useLastUsedVideoBackgroundOption() {
-  const items = [UserSettingsProtoStore];
-  const stateFromStores = stateFromStores1(504).useStateFromStores(items, () => settings.settings);
-  let obj = stateFromStores1(504);
-  const items1 = [UserStore];
-  stateFromStores1 = stateFromStores1(504).useStateFromStores(items1, () => currentUser.getCurrentUser());
-  const voiceAndVideo = stateFromStores.voiceAndVideo;
+  const items = [UnsyncedUserSettingsStore];
+  stateFromStores = stateFromStores(504).useStateFromStores(items, () => videoBackground.videoBackground);
+  let obj = stateFromStores(504);
+  const items1 = [UserSettingsProtoStore];
+  const stateFromStores1 = stateFromStores(504).useStateFromStores(items1, () => settings.settings);
+  let obj2 = stateFromStores(504);
+  const items2 = [UserStore];
+  const stateFromStores2 = stateFromStores(504).useStateFromStores(items2, () => currentUser.getCurrentUser());
+  const voiceAndVideo = stateFromStores1.voiceAndVideo;
   let prop;
   if (voiceAndVideo != null) {
     prop = voiceAndVideo.videoBackgroundFilterDesktop;
   }
-  const items2 = [prop, stateFromStores1];
+  const items3 = [prop, stateFromStores2, stateFromStores];
   return noop.useMemo(() => {
     let tmp2 = null;
-    if (null != stateFromStores1) {
-      const videoBackgroundOptionFromProto = VideoBackgroundUtils.getVideoBackgroundOptionFromProto(prop, tmp.id);
-      const tmp4 = require;
-      if (!obj2.isCustomBackgroundOption(videoBackgroundOptionFromProto)) {
-        if (typeof videoBackgroundOptionFromProto !== "number") {
-          let tmp9 = videoBackgroundOptionFromProto;
+    if (null != stateFromStores2) {
+      if (!obj.isCustomBackgroundOption(stateFromStores)) {
+        if (typeof tmp3 !== "number") {
+          let tmp8 = tmp3;
         } else {
-          tmp9 = null;
-          const tmp4Result = tmp4(10003);
+          tmp8 = null;
+          const tmp4Result = tmp4(9104);
         }
-        let tmp8 = tmp9;
+        let tmp7 = tmp8;
       } else {
-        tmp8 = null;
+        tmp7 = null;
       }
-      tmp2 = tmp8;
-      obj2 = VideoBackgroundUtils;
+      tmp2 = tmp7;
+      obj = VideoBackgroundUtils;
+      tmp4 = require;
     }
     return tmp2;
-  }, items2);
+  }, items3);
 };

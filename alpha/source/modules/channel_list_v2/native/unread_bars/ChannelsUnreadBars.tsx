@@ -1,22 +1,22 @@
-// Module ID: 16607
-// Function ID: 16608
+// Module ID: 15787
+// Function ID: 15788
 // Name: ChannelsUnreadBars
-// Dependencies: [32, 19, 17, 4821, 4466, 2044, 7960, 4844, 5010, 10464, 5011, 21, 4829, 7858, 5280, 7405, 15436, 551, 558, 504, 4561, 16558, 7276, 4797, 4798, 16608, 2]
+// Dependencies: [32, 19, 17, 4821, 4468, 2044, 7045, 4844, 5010, 9566, 5011, 21, 4829, 6943, 5281, 6488, 14604, 551, 558, 504, 4563, 15738, 6359, 4797, 4798, 15788, 2]
 
-// Module 16607 (ChannelsUnreadBars)
+// Module 15787 (ChannelsUnreadBars)
 import debounceDefault from "debounce" /* 551 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import HapticUtils from "HapticUtils" /* 4797 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4798 */;
-import useFontScale from "useFontScale" /* 5280 */;
-import FastList from "FastList" /* 7405 */;
-import ChannelListState from "ChannelListState" /* 7858 */;
+import useFontScale from "useFontScale" /* 5281 */;
+import FastList from "FastList" /* 6488 */;
+import ChannelListState from "ChannelListState" /* 6943 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4466 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4468 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7960 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7045 */;
 import ReadStateStore from "ReadStateStore" /* 4844 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
 
@@ -128,7 +128,7 @@ function findNearestUnreadItem(fastList, guildChannels, headerHeight, youBarTota
             if (-1 === section) {
               ({ section, item } = tmp12);
             }
-            if (tmp12.type !== tmp71(7405).FastListItemTypes.ITEM) {
+            if (tmp12.type !== tmp71(6488).FastListItemTypes.ITEM) {
               tmp9 = item10031;
             } else if (shouldSkipSection(tmp12.section)) {
               continue;
@@ -207,7 +207,7 @@ function findNearestUnreadItem(fastList, guildChannels, headerHeight, youBarTota
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
-const getScaledChannelRowHeight = fn(10464).getScaledChannelRowHeight;
+const getScaledChannelRowHeight = fn(9566).getScaledChannelRowHeight;
 const UnreadSetting = fn(5011).UnreadSetting;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);

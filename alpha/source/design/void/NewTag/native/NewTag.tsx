@@ -1,14 +1,14 @@
-// Module ID: 14458
-// Function ID: 14459
+// Module ID: 13619
+// Function ID: 13620
 // Name: NewTag
-// Dependencies: [19, 17, 1074, 21, 4829, 576, 5285, 4825, 1115, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 576, 5286, 4825, 1115, 2]
 // Exports: default
 
-// Module 14458 (NewTag)
+// Module 13619 (NewTag)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import LinearGradientDefault from "LinearGradient" /* 5285 */;
+import LinearGradientDefault from "LinearGradient" /* 5286 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,12 +1,12 @@
-// Module ID: 12105
-// Function ID: 12106
+// Module ID: 11250
+// Function ID: 11251
 // Name: startAuthorizationNoHook
-// Dependencies: [5, 1074, 7500, 4520, 1241, 2]
+// Dependencies: [5, 1074, 6583, 4522, 1241, 2]
 // Exports: startAuthorizationNoHook
 
-// Module 12105 (startAuthorizationNoHook)
-import LinkingDefault from "Linking" /* 4520 */;
-import useAuthorizationApp from "useAuthorizationApp" /* 7500 */;
+// Module 11250 (startAuthorizationNoHook)
+import LinkingDefault from "Linking" /* 4522 */;
+import useAuthorizationApp from "useAuthorizationApp" /* 6583 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

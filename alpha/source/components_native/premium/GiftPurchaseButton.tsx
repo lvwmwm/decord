@@ -1,14 +1,14 @@
-// Module ID: 13934
-// Function ID: 13935
+// Module ID: 13093
+// Function ID: 13094
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 4489, 7570, 21, 5279, 4825, 504, 7573, 11404, 7495, 11091, 5196, 1115, 4483, 11009, 5274, 13935, 2]
+// Dependencies: [5, 19, 17, 4491, 6653, 21, 5280, 4825, 504, 6656, 10502, 6578, 10195, 5197, 1115, 4485, 10113, 5275, 13094, 2]
 // Exports: default
 
-// Module 13934 (GiftPurchaseButton)
+// Module 13093 (GiftPurchaseButton)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 4489 */;
-import IAPStore from "IAPStore" /* 7570 */;
+import SubscriptionStore from "SubscriptionStore" /* 4491 */;
+import IAPStore from "IAPStore" /* 6653 */;
 
 const require = fn;
 const View = fn(17).View;
@@ -57,17 +57,17 @@ export default function GiftPurchaseButton(style) {
   const obj3 = { style: style.style, children: null };
   const callback = analyticsLocations.useCallback(productIdForGift(function*() {
     closure_128_0 = yield createOrReuseGiftOrder({ planId, recipientUserId, productId: productIdForGift });
-    const premiumTypeFromPlanId = planId(4483).getPremiumTypeFromPlanId(closure_129_0);
+    const premiumTypeFromPlanId = planId(4485).getPremiumTypeFromPlanId(closure_129_0);
     const premiumType = premiumTypeFromPlanId.premiumType;
     const planInterval = premiumTypeFromPlanId.planInterval;
-    planId(11009).openGiftModal({ recipientUserId: closure_129_2, premiumType, planInterval, analyticsLocation: closure_129_1, analyticsLocations: closure_129_4, order: closure_128_0 });
+    planId(10113).openGiftModal({ recipientUserId: closure_129_2, premiumType, planInterval, analyticsLocation: closure_129_1, analyticsLocations: closure_129_4, order: closure_128_0 });
     yield "HermesInternal";
     const obj7 = { title: null, body: null };
     const intl = planId(1115).intl;
     obj7.title = intl.string(planId(1115).t.R0RpRX);
     const intl2 = planId(1115).intl;
     obj7.body = intl2.string(planId(1115).t.CKsXk3);
-    tmp3(5196).show(obj7);
+    tmp3(5197).show(obj7);
   }), items3);
   const tmpResult = planId(recipientUserId[12]);
   obj3.children = jsx(planId(recipientUserId[17]).BaseTextButton, { textElement: analyticsLocation(recipientUserId[18])({ style: obj, basePlanId: planId, isCurrentPlan: tmp11, isGift: true, product: stateFromStores2 }), variant: str, size: "sm", onPress: callback, loading: stateFromStores1, disabled: !canPurchaseIAP, grow: true });

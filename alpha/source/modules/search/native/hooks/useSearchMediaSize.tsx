@@ -1,11 +1,11 @@
-// Module ID: 17213
-// Function ID: 17214
+// Module ID: 16428
+// Function ID: 16429
 // Name: useSearchMediaSize
-// Dependencies: [8209, 2]
+// Dependencies: [7298, 2]
 // Exports: default
 
-// Module 17213 (useSearchMediaSize)
-import SearchConstants from "SearchConstants" /* 8209 */;
+// Module 16428 (useSearchMediaSize)
+import SearchConstants from "SearchConstants" /* 7298 */;
 import size from "module_2" /* 2 */;
 
 ({ SEARCH_LIST_HORIZONTAL_PADDING: closure_0, MEDIA_NUM_COLUMNS: closure_1, MEDIA_ITEM_GAP_WIDTH: c2 } = SearchConstants);

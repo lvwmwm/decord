@@ -1,14 +1,14 @@
-// Module ID: 13355
-// Function ID: 13356
+// Module ID: 12505
+// Function ID: 12506
 // Name: MediaViewerOverlayButtonFavoriteGIF
-// Dependencies: [19, 21, 10716, 10712, 4523, 1115, 10727, 10714, 1221, 8615, 8719, 10583, 576, 10589, 2]
+// Dependencies: [19, 21, 9820, 9816, 4525, 1115, 9831, 9818, 1221, 7705, 7809, 9687, 576, 9693, 2]
 
-// Module 13355 (MediaViewerOverlayButtonFavoriteGIF)
+// Module 12505 (MediaViewerOverlayButtonFavoriteGIF)
 import util from "util" /* 1115 */;
 import frecency_user_settings from "frecency_user_settings" /* 1221 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4523 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10712 */;
-import GifIcon from "GifIcon" /* 10727 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4525 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 9816 */;
+import GifIcon from "GifIcon" /* 9831 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -32,8 +32,8 @@ export default noop.memo(function GIFFavButton(source) {
   items[7] = uri;
   const callback = noop.useCallback(() => {
     if (isFavoriteGIF) {
-      tmp(10712).removeFavoriteGIF(uri);
-      const tmpResult = tmp(10712);
+      tmp(9816).removeFavoriteGIF(uri);
+      const tmpResult = tmp(9816);
       const obj = { key: "REMOVED_FROM_FAVORITES", content: null, IconComponent: null };
       const intl2 = util.intl;
       obj.content = intl2.string(util.t.in1rga);
@@ -41,9 +41,9 @@ export default noop.memo(function GIFFavButton(source) {
       ToastActionCreatorsDefault.open(obj);
     } else {
       ({ embedProviderName: obj2.providerName, thumbnail: obj2.thumbnail } = source);
-      const gIFThumbnailForFavorite = tmp(10714).getGIFThumbnailForFavorite({ providerName: null, thumbnail: null });
+      const gIFThumbnailForFavorite = tmp(9818).getGIFThumbnailForFavorite({ providerName: null, thumbnail: null });
       const obj6 = { providerName: null, thumbnail: null };
-      const tmpResult2 = tmp(10714);
+      const tmpResult2 = tmp(9818);
       const size = { url: uri, src: source.uri, gifSrc: gIFThumbnailForFavorite, width: null, height: null, format: null };
       ({ width: obj4.width, height: obj4.height } = source);
       const GIFType = frecency_user_settings.GIFType;

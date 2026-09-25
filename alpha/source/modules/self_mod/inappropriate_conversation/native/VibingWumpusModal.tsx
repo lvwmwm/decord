@@ -1,14 +1,14 @@
-// Module ID: 11751
-// Function ID: 11752
+// Module ID: 10933
+// Function ID: 10934
 // Name: VibingWumpusModal
-// Dependencies: [32, 19, 17, 4821, 11712, 11752, 1074, 21, 4829, 576, 563, 11310, 1241, 11753, 5834, 11754, 4825, 1115, 5273, 5032, 8624, 8626, 7333, 2]
+// Dependencies: [32, 19, 17, 4821, 10892, 10934, 1074, 21, 4829, 576, 563, 10408, 1241, 10935, 5836, 10936, 4825, 1115, 5274, 5032, 7714, 7716, 6416, 2]
 // Exports: default
 
-// Module 11751 (VibingWumpusModal)
+// Module 10933 (VibingWumpusModal)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import Navigator from "Navigator" /* 7333 */;
-import InappropriateConversationsActionCreators from "InappropriateConversationsActionCreators" /* 11310 */;
+import Navigator from "Navigator" /* 6416 */;
+import InappropriateConversationsActionCreators from "InappropriateConversationsActionCreators" /* 10408 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
@@ -157,8 +157,8 @@ class VibingWumpusScreen {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const VIBING_WUMPUS_MODAL_KEY = fn(11712).VIBING_WUMPUS_MODAL_KEY;
-const InappropriateConversationsConstants = fn(11752);
+const VIBING_WUMPUS_MODAL_KEY = fn(10892).VIBING_WUMPUS_MODAL_KEY;
+const InappropriateConversationsConstants = fn(10934);
 ({ VibingWumpusAction: closure_9, VibingWumpusSource: c10 } = InappropriateConversationsConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);

@@ -1,13 +1,13 @@
-// Module ID: 8967
-// Function ID: 8968
+// Module ID: 8061
+// Function ID: 8062
 // Name: FormRadioGroup
-// Dependencies: [19, 17, 21, 5991, 5990, 8960, 2]
+// Dependencies: [19, 17, 21, 5993, 5992, 8054, 2]
 // Exports: default
 
-// Module 8967 (FormRadioGroup)
-import TableRadioGroup from "TableRadioGroup" /* 5990 */;
-import RedesignCompat from "RedesignCompat" /* 5991 */;
-import FormSectionDefault from "FormSection" /* 8960 */;
+// Module 8061 (FormRadioGroup)
+import TableRadioGroup from "TableRadioGroup" /* 5992 */;
+import RedesignCompat from "RedesignCompat" /* 5993 */;
+import FormSectionDefault from "FormSection" /* 8054 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

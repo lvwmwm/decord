@@ -1,11 +1,11 @@
-// Module ID: 9959
-// Function ID: 9960
+// Module ID: 9057
+// Function ID: 9058
 // Name: ThrottledButton
-// Dependencies: [19, 21, 5273, 2]
+// Dependencies: [19, 21, 5274, 2]
 // Exports: default, useThrottledActionHandler
 
-// Module 9959 (ThrottledButton)
-import components_Button_Button from "components/Button/Button" /* 5273 */;
+// Module 9057 (ThrottledButton)
+import components_Button_Button from "components/Button/Button" /* 5274 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

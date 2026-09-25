@@ -1,11 +1,11 @@
-// Module ID: 13366
-// Function ID: 13367
+// Module ID: 12516
+// Function ID: 12517
 // Name: MediaModalYoutubeEmbedError
-// Dependencies: [19, 17, 21, 4829, 576, 4825, 1115, 5273, 4520, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4825, 1115, 5274, 4522, 2]
 
-// Module 13366 (MediaModalYoutubeEmbedError)
+// Module 12516 (MediaModalYoutubeEmbedError)
 import nativeDefault from "native" /* 576 */;
-import LinkingDefault from "Linking" /* 4520 */;
+import LinkingDefault from "Linking" /* 4522 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -35,7 +35,7 @@ export default noop.memo(function MediaModalYoutubeEmbedError(videoId) {
   obj3.onPress = function onPress() {
     LinkingDefault.openURL("https://youtube.com/watch?v=" + videoId);
   };
-  items[1] = closure_4(videoId(5273).Button, obj3);
+  items[1] = closure_4(videoId(5274).Button, obj3);
   obj.children = items;
   return closure_5(View, obj);
 });

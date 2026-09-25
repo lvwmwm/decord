@@ -1,11 +1,11 @@
-// Module ID: 9836
-// Function ID: 9837
+// Module ID: 8934
+// Function ID: 8935
 // Name: GuildScheduledEventUtils
-// Dependencies: [2050, 4416, 11, 2]
+// Dependencies: [2050, 4418, 11, 2]
 // Exports: getNextShownUpcomingEventNoticeType
 
-// Module 9836 (GuildScheduledEventUtils)
-import _modDef4416 from "module_4416" /* 4416 */;
+// Module 8934 (GuildScheduledEventUtils)
+import _modDef4418 from "module_4418" /* 4418 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2050 */;
 import size from "module_2" /* 2 */;
 
@@ -13,12 +13,12 @@ import size from "module_2" /* 2 */;
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventUtils.tsx");
 
 export const getNextShownUpcomingEventNoticeType = function getNextShownUpcomingEventNoticeType(guildScheduledEvent, arg1, arg2, flag) {
-  const obj = _modDef4416();
+  const obj = _modDef4418();
   const time = new Date(guildScheduledEvent.scheduled_start_time).getTime();
   const diff = time - React4;
   if (obj.isBetween(diff, time)) {
     if (null != arg1) {
-      const obj4 = tmp(4416)(arg1);
+      const obj4 = tmp(4418)(arg1);
       const isBetweenResult = obj4.isBetween(diff, time);
       let EVENT_STARTING_SOON;
       if (!isBetweenResult) {

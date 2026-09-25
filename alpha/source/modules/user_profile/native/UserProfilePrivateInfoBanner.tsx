@@ -1,10 +1,10 @@
-// Module ID: 13479
-// Function ID: 13480
+// Module ID: 12629
+// Function ID: 12630
 // Name: UserProfilePrivateInfoBanner
 // Dependencies: [17, 21, 4829, 576, 4825, 1115, 2]
 // Exports: default
 
-// Module 13479 (UserProfilePrivateInfoBanner)
+// Module 12629 (UserProfilePrivateInfoBanner)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;

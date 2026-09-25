@@ -1,9 +1,9 @@
-// Module ID: 17235
-// Function ID: 17236
+// Module ID: 16450
+// Function ID: 16451
 // Name: ChannelTitle
-// Dependencies: [19, 5011, 21, 4829, 576, 17231, 4825, 2]
+// Dependencies: [19, 5011, 21, 4829, 576, 16446, 4825, 2]
 
-// Module 17235 (ChannelTitle)
+// Module 16450 (ChannelTitle)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,25 +1,25 @@
-// Module ID: 15662
-// Function ID: 15663
+// Module ID: 14832
+// Function ID: 14833
 // Name: AndroidFontScaleSetting
-// Dependencies: [19, 15614, 1084, 8323, 21, 1248, 15663, 11556, 1115, 11811, 1364, 2]
+// Dependencies: [19, 14784, 1084, 7412, 21, 1248, 14833, 10761, 1115, 10993, 1364, 2]
 
-// Module 15662 (AndroidFontScaleSetting)
+// Module 14832 (AndroidFontScaleSetting)
 import util from "util" /* 1115 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 11556 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 15663 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 10761 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 14833 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const useFontScaleStore = fn(15614).useFontScaleStore;
+const useFontScaleStore = fn(14784).useFontScaleStore;
 const FontScales = fn(1084).FontScales;
 const jsx = fn(21).jsx;
-const SettingBuilders = fn(11811);
+const SettingBuilders = fn(10993);
 const slider = SettingBuilders.createSlider({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.i19n5L);
   },
-  parent: fn(8323).MobileUserSettings.APPEARANCE,
+  parent: fn(7412).MobileUserSettings.APPEARANCE,
   useProps: function useFontScaleSliderProps() {
     const tmp = useFontScaleStore();
     closure_0 = tmp;

@@ -1,20 +1,20 @@
-// Module ID: 12374
-// Function ID: 12375
+// Module ID: 11500
+// Function ID: 11501
 // Name: useKeyboardStateSharedValue
-// Dependencies: [1480, 4561, 5884, 1878, 4697, 11703, 2]
+// Dependencies: [1480, 4563, 5886, 1878, 4699, 10883, 2]
 // Exports: default, getKeyboardStateWorklet
 
-// Module 12374 (useKeyboardStateSharedValue)
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11703 */;
+// Module 11500 (useKeyboardStateSharedValue)
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10883 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1480 */;
 
-const ReanimatedRexport = fn(4561);
+const ReanimatedRexport = fn(4563);
 const obj2 = { customKeyboardHeight: null, keyboardHeight: null, keyboardType: null };
-const useCustomKeyboardHeight = fn(5884);
+const useCustomKeyboardHeight = fn(5886);
 obj2.customKeyboardHeight = useCustomKeyboardHeight.getCustomKeyboardHeight();
 const useSystemKeyboardHeight = fn(1878);
 obj2.keyboardHeight = useSystemKeyboardHeight.getSystemKeyboardHeight();
-const useKeyboardType = fn(4697);
+const useKeyboardType = fn(4699);
 obj2.keyboardType = useKeyboardType.getKeyboardType();
 const mutable = ReanimatedRexport.makeMutable(obj2);
 subscribeToKeyboardUIStore((arg0) => {

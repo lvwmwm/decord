@@ -1,17 +1,17 @@
-// Module ID: 7518
-// Function ID: 7519
+// Module ID: 6601
+// Function ID: 6602
 // Name: UserProfileRolesCard
-// Dependencies: [19, 17, 2107, 2101, 1074, 21, 4829, 576, 7519, 2020, 7521, 7522, 4522, 1115, 7520, 7527, 7536, 4825, 7538, 5427, 504, 7539, 7540, 2]
+// Dependencies: [19, 17, 2107, 2101, 1074, 21, 4829, 576, 6602, 2020, 6604, 6605, 4524, 1115, 6603, 6610, 6619, 4825, 6621, 5428, 504, 6622, 6623, 2]
 // Exports: default
 
-// Module 7518 (UserProfileRolesCard)
+// Module 6601 (UserProfileRolesCard)
 import nativeDefault from "native" /* 576 */;
-import ToastUtils from "ToastUtils" /* 4522 */;
+import ToastUtils from "ToastUtils" /* 4524 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import ClipboardUtils from "ClipboardUtils" /* 7522 */;
-import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7536 */;
-import RoleIconDefault from "RoleIcon" /* 7538 */;
-import UserProfileRoleUtils from "UserProfileRoleUtils" /* 7539 */;
+import ClipboardUtils from "ClipboardUtils" /* 6605 */;
+import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 6619 */;
+import RoleIconDefault from "RoleIcon" /* 6621 */;
+import UserProfileRoleUtils from "UserProfileRoleUtils" /* 6622 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2107 */;
 import GuildRoleStore from "GuildRoleStore" /* 2101 */;
@@ -182,8 +182,8 @@ export default function UserProfileRolesCard(userId) {
     obj2.style = userId.style;
     const obj3 = { guildId, guildMemberRoleIds: roles };
     obj2.children = closure_9(RolesList, obj3);
-    tmp4 = closure_9(guildId(7540), obj2);
-    const tmp7 = guildId(7540);
+    tmp4 = closure_9(guildId(6623), obj2);
+    const tmp7 = guildId(6623);
   }
   return tmp4;
 };

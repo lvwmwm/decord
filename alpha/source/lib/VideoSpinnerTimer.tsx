@@ -1,9 +1,9 @@
-// Module ID: 9777
-// Function ID: 9778
+// Module ID: 8875
+// Function ID: 8876
 // Name: VideoSpinnerTimer
 // Dependencies: [502, 2044, 4878, 4852, 4848, 1074, 3, 4858, 1241, 2]
 
-// Module 9777 (VideoSpinnerTimer)
+// Module 8875 (VideoSpinnerTimer)
 import LoggerDefault from "Logger" /* 3 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import TimeUtils from "TimeUtils" /* 4858 */;

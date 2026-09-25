@@ -1,10 +1,10 @@
-// Module ID: 17683
-// Function ID: 17684
+// Module ID: 16907
+// Function ID: 16908
 // Name: VoicePanelChannelOptInNotice
-// Dependencies: [19, 21, 7446, 5894, 5910, 1115, 5916, 14210, 2]
+// Dependencies: [19, 21, 6529, 5896, 5912, 1115, 5918, 13371, 2]
 
-// Module 17683 (VoicePanelChannelOptInNotice)
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7446 */;
+// Module 16907 (VoicePanelChannelOptInNotice)
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 6529 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -25,9 +25,9 @@ export default noop.memo(function VoicePanelChannelOptInNotice(channel) {
   obj2.label = intl.string(channel(1115).t["9mysCh"]);
   const intl2 = channel(1115).intl;
   obj2.subLabel = intl2.string(channel(1115).t.PDUCIN);
-  const tmp2 = analyticsSection(5894);
-  obj2.icon = jsx(channel(5916).TableRowIcon, { IconComponent: channel(14210).ChannelListMagnifyingGlassIcon });
+  const tmp2 = analyticsSection(5896);
+  obj2.icon = jsx(channel(5918).TableRowIcon, { IconComponent: channel(13371).ChannelListMagnifyingGlassIcon });
   obj2.onPress = callback;
-  obj.children = jsx(channel(5910).TableRow, { label: null, subLabel: null, icon: null, onPress: null, start: true, end: true, arrow: true });
+  obj.children = jsx(channel(5912).TableRow, { label: null, subLabel: null, icon: null, onPress: null, start: true, end: true, arrow: true });
   return <tmp2 style={arg0.style}>{null}</tmp2>;
 });

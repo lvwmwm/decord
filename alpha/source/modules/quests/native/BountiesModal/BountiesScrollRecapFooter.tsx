@@ -1,17 +1,17 @@
-// Module ID: 15393
-// Function ID: 15394
+// Module ID: 14559
+// Function ID: 14560
 // Name: BountiesScrollRecapFooter
-// Dependencies: [19, 17, 4821, 21, 4829, 576, 1364, 7312, 1115, 4825, 9196, 504, 4535, 2]
+// Dependencies: [19, 17, 4821, 21, 4829, 576, 1364, 6395, 1115, 4825, 8290, 504, 4537, 2]
 // Exports: BountiesScrollRecapFooter, BountiesScrollRecapFooterGradient
 
-// Module 15393 (BountiesScrollRecapFooter)
+// Module 14559 (BountiesScrollRecapFooter)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import native from "native" /* 4535 */;
+import native from "native" /* 4537 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7312 */;
-import OrbsIcon from "OrbsIcon" /* 9196 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6395 */;
+import OrbsIcon from "OrbsIcon" /* 8290 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 

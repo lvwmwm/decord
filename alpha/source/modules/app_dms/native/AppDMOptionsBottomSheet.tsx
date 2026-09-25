@@ -1,16 +1,16 @@
-// Module ID: 13685
-// Function ID: 13686
+// Module ID: 12839
+// Function ID: 12840
 // Name: AppDMOptionsBottomSheet
-// Dependencies: [19, 17, 7440, 1074, 21, 4829, 576, 504, 8527, 4796, 7712, 7503, 7483, 5992, 5910, 1115, 2]
+// Dependencies: [19, 17, 6523, 1074, 21, 4829, 576, 504, 7617, 4796, 6795, 6586, 6566, 5994, 5912, 1115, 2]
 // Exports: default
 
-// Module 13685 (AppDMOptionsBottomSheet)
+// Module 12839 (AppDMOptionsBottomSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import openUserSettings from "openUserSettings" /* 7712 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8527 */;
+import openUserSettings from "openUserSettings" /* 6795 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7617 */;
 import noop from "module_19" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7440 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6523 */;
 
 require = fn;
 const View = fn(17).View;

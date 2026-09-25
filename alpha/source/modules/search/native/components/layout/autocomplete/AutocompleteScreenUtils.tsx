@@ -1,21 +1,21 @@
-// Module ID: 17304
-// Function ID: 17305
+// Module ID: 16519
+// Function ID: 16520
 // Name: AutocompleteScreenUtils
-// Dependencies: [2107, 4474, 1372, 12682, 8209, 1074, 1115, 12028, 4771, 9628, 10986, 10458, 10456, 5393, 12877, 10460, 12167, 9632, 17305, 12683, 4673, 2]
+// Dependencies: [2107, 4476, 1372, 11808, 7298, 1074, 1115, 11171, 4771, 8726, 10090, 9560, 9558, 5394, 12006, 9562, 11289, 8730, 16520, 11809, 4675, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 17304 (AutocompleteScreenUtils)
+// Module 16519 (AutocompleteScreenUtils)
 import util from "util" /* 1115 */;
-import UserUtilsDefault from "UserUtils" /* 4673 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 12028 */;
-import SearchUtils from "SearchUtils" /* 12683 */;
+import UserUtilsDefault from "UserUtils" /* 4675 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 11171 */;
+import SearchUtils from "SearchUtils" /* 11809 */;
 import GuildMemberStore from "GuildMemberStore" /* 2107 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
-import SearchQueryStore from "SearchQueryStore" /* 12682 */;
+import SearchQueryStore from "SearchQueryStore" /* 11808 */;
 
 require = fn;
-const SearchListItemTypes = fn(8209).SearchListItemTypes;
+const SearchListItemTypes = fn(7298).SearchListItemTypes;
 const RelationshipTypes = fn(1074).RelationshipTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/layout/autocomplete/AutocompleteScreenUtils.tsx");
@@ -47,31 +47,31 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
     } else {
       const intl4 = tmp(1115).intl;
       if (intl4.string(tmp(1115).t["20uQR3"]) === text) {
-        return tmp(9628).EmbedIcon;
+        return tmp(8726).EmbedIcon;
       } else {
         const intl5 = tmp(1115).intl;
         if (intl5.string(tmp(1115).t.L4lxyE) === text) {
-          return tmp(10986).PollsIcon;
+          return tmp(10090).PollsIcon;
         } else {
           const intl6 = tmp(1115).intl;
           if (intl6.string(tmp(1115).t["AV/v6i"]) === text) {
-            return tmp(10458).AttachmentIcon;
+            return tmp(9560).AttachmentIcon;
           } else {
             const intl7 = tmp(1115).intl;
             if (intl7.string(tmp(1115).t.XM9XGP) === text) {
-              return tmp(10456).VideoIcon;
+              return tmp(9558).VideoIcon;
             } else {
               const intl8 = tmp(1115).intl;
               if (intl8.string(tmp(1115).t.TNLcpx) === text) {
-                return tmp(5393).ImageIcon;
+                return tmp(5394).ImageIcon;
               } else {
                 const intl9 = tmp(1115).intl;
                 if (intl9.string(tmp(1115).t.F8Wf0e) === text) {
-                  return tmp(12877).SoundboardIcon;
+                  return tmp(12006).SoundboardIcon;
                 } else {
                   const intl2 = tmp(1115).intl;
                   if (intl2.string(tmp(1115).t.PJgX2h) === text) {
-                    return tmp(10460).StickerIcon;
+                    return tmp(9562).StickerIcon;
                   }
                 }
               }
@@ -85,15 +85,15 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
 export const getSearchFilterAuthorTypeIcon = function getSearchFilterAuthorTypeIcon(text) {
   const intl = util.intl;
   if (intl.string(util.t.tPZo4p) === text) {
-    return tmp(12167).UserIcon;
+    return tmp(11289).UserIcon;
   } else {
     const intl3 = tmp(1115).intl;
     if (intl3.string(tmp(1115).t.JL7sRS) === text) {
-      return tmp(9632).RobotIcon;
+      return tmp(8730).RobotIcon;
     } else {
       const intl2 = tmp(1115).intl;
       if (intl2.string(tmp(1115).t.WjkIKU) === text) {
-        return tmp(17305).WebhookIcon;
+        return tmp(16520).WebhookIcon;
       }
     }
   }

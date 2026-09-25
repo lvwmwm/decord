@@ -1,7 +1,7 @@
 // Module ID: 4977
 // Function ID: 4978
 // Name: MediaPostEmbedUtils
-// Dependencies: [2066, 4474, 1372, 1074, 4978, 1115, 4981, 1397, 1385, 4982, 4812, 4983, 2]
+// Dependencies: [2066, 4476, 1372, 1074, 4978, 1115, 4981, 1397, 1385, 4982, 4812, 4983, 2]
 // Exports: canUseMediaPostEmbed, getMediaPostEmbedChannelId, getMediaPostEmbedChannelPath, getMediaPostEmbedCommonData
 
 // Module 4977 (MediaPostEmbedUtils)
@@ -11,7 +11,7 @@ import findCodedLinks from "findCodedLinks" /* 4812 */;
 import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 4978 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4981 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

@@ -1,19 +1,19 @@
-// Module ID: 17514
-// Function ID: 17515
+// Module ID: 16734
+// Function ID: 16735
 // Name: IncentivizedAccountLinkConfirmationBottomSheet
-// Dependencies: [19, 17, 4821, 1074, 21, 504, 16243, 1364, 9170, 16244, 5892, 5273, 1115, 13345, 576, 4796, 4520, 2110, 10578, 3262, 2]
+// Dependencies: [19, 17, 4821, 1074, 21, 504, 15422, 1364, 8264, 15423, 5894, 5274, 1115, 12495, 576, 4796, 4522, 2110, 9680, 3262, 2]
 // Exports: default
 
-// Module 17514 (IncentivizedAccountLinkConfirmationBottomSheet)
+// Module 16734 (IncentivizedAccountLinkConfirmationBottomSheet)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
-import LinkingDefault from "Linking" /* 4520 */;
+import LinkingDefault from "Linking" /* 4522 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import PromoSheet from "PromoSheet" /* 10578 */;
-import WindowLaunchIcon from "WindowLaunchIcon" /* 13345 */;
-import _modDef16243 from "module_16243" /* 16243 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import PromoSheet from "PromoSheet" /* 9680 */;
+import WindowLaunchIcon from "WindowLaunchIcon" /* 12495 */;
+import _modDef15422 from "module_15422" /* 15422 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 
@@ -29,7 +29,7 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
   const items = [AccessibilityStore];
   if (obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion)) {
     let obj2 = { source: null, style: null };
-    const obj3 = { uri: _modDef16243 };
+    const obj3 = { uri: _modDef15422 };
     obj2.source = obj3;
     const size = { width: v150, height: v150 };
     obj2.style = size;
@@ -38,23 +38,23 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
     let tmp9 = jsx;
   } else {
     if (tmpResult.isAndroid()) {
-      const obj4 = { url: tmp4(16244), style: null };
+      const obj4 = { url: tmp4(15423), style: null };
       const size1 = { width: v150, height: v150 };
       obj4.style = size1;
-      tmp3Result = tmp3(tmp4(9170), obj4);
+      tmp3Result = tmp3(tmp4(8264), obj4);
       tmp8 = tmp4;
       tmp9 = tmp3;
-      const tmp4Result = tmp4(9170);
+      const tmp4Result = tmp4(8264);
     } else {
       const obj5 = { source: null, resizeMode: "contain", style: null };
-      const obj6 = { uri: tmp4(16244) };
+      const obj6 = { uri: tmp4(15423) };
       obj5.source = obj6;
       const size2 = { width: v150, height: v150 };
       obj5.style = size2;
-      tmp3Result = tmp3(tmp4(5892), obj5);
+      tmp3Result = tmp3(tmp4(5894), obj5);
       tmp8 = tmp4;
       tmp9 = tmp3;
-      const tmp4Result2 = tmp4(5892);
+      const tmp4Result2 = tmp4(5894);
     }
     tmpResult = tmp(1364);
   }

@@ -1,18 +1,18 @@
-// Module ID: 17047
-// Function ID: 17048
+// Module ID: 16237
+// Function ID: 16238
 // Name: useVibegrationsProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 2101, 9389, 1074, 21, 4829, 576, 504, 5363, 4796, 1115, 3714, 7530, 4825, 7482, 9887, 7383, 5992, 5909, 5362, 17048, 9390, 6936, 5910, 2]
+// Dependencies: [5, 32, 19, 17, 2101, 8487, 1074, 21, 4829, 576, 504, 5364, 4796, 1115, 3714, 6613, 4825, 6565, 8985, 6466, 5994, 5911, 5363, 16238, 8488, 6019, 5912, 2]
 // Exports: default
 
-// Module 17047 (useVibegrationsProjectSettingsForm)
+// Module 16237 (useVibegrationsProjectSettingsForm)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4796 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5363 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5364 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2101 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9389 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8487 */;
 
 const require = globalThis.__r;
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;

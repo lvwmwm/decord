@@ -1,15 +1,15 @@
-// Module ID: 7628
-// Function ID: 7629
+// Module ID: 6711
+// Function ID: 6712
 // Name: SensitiveMediaExplicitRedactionSettingsUtils
-// Dependencies: [1372, 2022, 1186, 5728, 7629, 2020, 7630, 2]
+// Dependencies: [1372, 2022, 1186, 5730, 6712, 2020, 6713, 2]
 // Exports: getExplicitContentSettingOrDefault, resolveSettingWithDefaultsForTeen, shouldRedactMessageMediaForForum, updateExplicitContentSetting
 
-// Module 7628 (SensitiveMediaExplicitRedactionSettingsUtils)
+// Module 6711 (SensitiveMediaExplicitRedactionSettingsUtils)
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5728 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7629 */;
-import SensitiveMediaRedactionSettingUtils from "SensitiveMediaRedactionSettingUtils" /* 7630 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5730 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6712 */;
+import SensitiveMediaRedactionSettingUtils from "SensitiveMediaRedactionSettingUtils" /* 6713 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

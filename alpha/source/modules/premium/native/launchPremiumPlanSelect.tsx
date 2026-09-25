@@ -1,15 +1,15 @@
-// Module ID: 7741
-// Function ID: 7742
+// Module ID: 6826
+// Function ID: 6827
 // Name: launchPremiumPlanSelect
-// Dependencies: [1074, 7739, 5032, 7742, 1980, 7742, 7328, 2]
+// Dependencies: [1074, 6824, 5032, 6827, 1980, 6827, 6411, 2]
 // Exports: launchPremiumPlanSelect
 
-// Module 7741 (launchPremiumPlanSelect)
+// Module 6826 (launchPremiumPlanSelect)
 import Constants from "Constants" /* 1074 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7328 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7739 */;
-import PremiumModal from "PremiumModal" /* 7742 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6411 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 6824 */;
+import PremiumModal from "PremiumModal" /* 6827 */;
 import size from "module_2" /* 2 */;
 
 const UserSettingsSections = Constants.UserSettingsSections;
@@ -51,8 +51,8 @@ export const launchPremiumPlanSelect = function launchPremiumPlanSelect(isBoostP
   } else {
     const obj4 = { initialRoute: PREMIUM_PLAN_SELECT, analyticsLocation, analyticsLocations, predicate: wrappedPredicate, showCurrentPlan, isBoostPurchaseFlow: flag, planId, applicationId, guildId, onBack: tmp, onPaymentSuccess, onPaymentDismiss };
     const obj3 = flag2(5032);
-    obj3.pushLazy(asyncRequireImpl(7742, dependencyMap.paths), obj4, PremiumModal.PREMIUM_KEY);
-    const tmp7 = asyncRequireImpl(7742, dependencyMap.paths);
+    obj3.pushLazy(asyncRequireImpl(6827, dependencyMap.paths), obj4, PremiumModal.PREMIUM_KEY);
+    const tmp7 = asyncRequireImpl(6827, dependencyMap.paths);
   }
   let result = UserSettingsUtils.trackUserSettingsPaneViewed({ destinationPane: PREMIUM_PLAN_SELECT });
 };

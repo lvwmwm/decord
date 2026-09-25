@@ -1,16 +1,16 @@
-// Module ID: 18048
-// Function ID: 18049
+// Module ID: 17276
+// Function ID: 17277
 // Name: AutomodTriggerConfigs
-// Dependencies: [19, 12205, 1115, 17405, 10446, 2]
+// Dependencies: [19, 11327, 1115, 16622, 9548, 2]
 // Exports: checkTriggerTypeForFlag, getAvailableActionTypes, getDefaultTriggerMetadataForTriggerType, useAvailableTriggerTypes, validateRuleByTriggerConfigOrThrow
 
-// Module 18048 (AutomodTriggerConfigs)
+// Module 17276 (AutomodTriggerConfigs)
 import util from "util" /* 1115 */;
-import guild_automod_ExperimentUtils from "guild_automod/ExperimentUtils" /* 10446 */;
+import guild_automod_ExperimentUtils from "guild_automod/ExperimentUtils" /* 9548 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const Constants = fn(12205);
+const Constants = fn(11327);
 ({ AutomodActionType, AutomodEventType, AutomodTriggerType } = Constants);
 const mentionTotalLimit = Constants.MENTION_SPAM_LIMIT_DEFAULT;
 let obj = { NEW: "new", RECOMMENDED: "recommended", BETA: "beta", ALPHA: "alpha" };

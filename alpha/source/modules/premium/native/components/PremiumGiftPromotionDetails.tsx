@@ -1,15 +1,15 @@
-// Module ID: 11103
-// Function ID: 11104
+// Module ID: 10207
+// Function ID: 10208
 // Name: PremiumGiftPromotionDetails
-// Dependencies: [32, 19, 17, 4821, 21, 576, 4829, 4825, 504, 9169, 1365, 11104, 5892, 1973, 9132, 2]
+// Dependencies: [32, 19, 17, 4821, 21, 576, 4829, 4825, 504, 8263, 1365, 10208, 5894, 1973, 8226, 2]
 // Exports: PremiumGiftPromotionCollectibleRewardDetails, default
 
-// Module 11103 (PremiumGiftPromotionDetails)
+// Module 10207 (PremiumGiftPromotionDetails)
 import nativeDefault from "native" /* 576 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import SKUPreview from "SKUPreview" /* 9132 */;
+import SKUPreview from "SKUPreview" /* 8226 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
@@ -17,14 +17,13 @@ import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 require = fn;
 function PremiumGiftPromotionDetailsBase(arg0) {
   ({ titleVariant, titleColor, subtitleVariant, subtitleColor } = arg0);
-  ({ style, graphic, topContent, title, subtitle } = arg0);
+  ({ style, graphic, title, subtitle } = arg0);
   const tmp = closure_10();
   const obj = { style: null, children: null };
   const items = [tmp.container, style];
   obj.style = items;
   const items1 = [graphic, ];
   const obj2 = { style: tmp.textContainer, children: null };
-  const items2 = [topContent, , ];
   if (titleVariant == null) {
     titleVariant = "text-md/semibold";
   }
@@ -34,7 +33,7 @@ function PremiumGiftPromotionDetailsBase(arg0) {
   }
   obj3.color = titleColor;
   obj3.children = title;
-  items2[1] = React5(Text_Text.Text, obj3);
+  const items2 = [React5(Text_Text.Text, obj3), ];
   if (subtitleVariant == null) {
     subtitleVariant = "text-sm/medium";
   }
@@ -44,7 +43,7 @@ function PremiumGiftPromotionDetailsBase(arg0) {
   }
   obj4.color = subtitleColor;
   obj4.children = subtitle;
-  items2[2] = React5(Text_Text.Text, obj4);
+  items2[1] = React5(Text_Text.Text, obj4);
   obj2.children = items2;
   items1[1] = React6(View, obj2);
   obj.children = items1;
@@ -96,12 +95,14 @@ function AnimatedImage(arg0) {
   const tmp10 = stateFromStores(aPNGPlayerControls[11]);
   if (tmpResult.isAndroid()) {
     if (!stateFromStores) {
-      const obj3 = { ref, url: imageUrl, autoplay: false, style };
-      let tmp13 = closure_7(tmp(tmp2[9]).APNGPlayer, obj3);
+      const obj3 = { style, children: null };
+      const obj4 = { ref, url: imageUrl, autoplay: false, style: { width: "100%", height: "100%" } };
+      obj3.children = closure_7(tmp(tmp2[9]).APNGPlayer, obj4);
+      let tmp14 = closure_7(View, obj3);
     }
-    return tmp13;
+    return tmp14;
   }
-  tmp13 = closure_7(tmp9(tmp2[12]), { style, resizeMode: "contain", source: { uri: imageUrl } });
+  tmp14 = closure_7(tmp9(tmp2[12]), { style, resizeMode: "contain", source: { uri: imageUrl } });
 }
 const View = fn(17).View;
 const jsxProd = fn(21);
@@ -110,7 +111,7 @@ const PX_40 = nativeDefault.space.PX_40;
 let createStyles = fn(4829);
 let closure_10 = createStyles.createStyles(() => {
   const obj = { container: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 }, image: null, textContainer: null };
-  const size = { width: PX_40, height: PX_40, borderRadius: nativeDefault.radii.xs };
+  const size = { width: PX_40, height: PX_40, borderRadius: nativeDefault.radii.xs, overflow: "hidden" };
   obj.image = size;
   obj.textContainer = { flex: 1 };
   return obj;

@@ -1,11 +1,11 @@
-// Module ID: 13358
-// Function ID: 13359
+// Module ID: 12508
+// Function ID: 12509
 // Name: MediaModalOverlayAltText
-// Dependencies: [19, 21, 4829, 576, 1612, 2020, 5427, 11872, 4825, 1115, 2]
+// Dependencies: [19, 21, 4829, 576, 1612, 2020, 5428, 11015, 4825, 1115, 2]
 
-// Module 13358 (MediaModalOverlayAltText)
+// Module 12508 (MediaModalOverlayAltText)
 import nativeDefault from "native" /* 576 */;
-import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 11872 */;
+import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 11015 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -43,7 +43,7 @@ export default noop.memo(function MediaModalOverlayAltTextButton(description) {
       const intl = tmp3(1115).intl;
       obj2.children = intl.string(tmp3(1115).t.Q5VqrN);
       obj.children = jsx(tmp3(4825).Text, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
-      tmp4 = jsx(tmp3(5427).PressableOpacity, {
+      tmp4 = jsx(tmp3(5428).PressableOpacity, {
         style: tmp2.container,
         onPress() {
               if (str == null) {

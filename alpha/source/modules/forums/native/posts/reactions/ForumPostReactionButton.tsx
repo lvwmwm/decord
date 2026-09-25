@@ -1,25 +1,25 @@
-// Module ID: 10566
-// Function ID: 10567
+// Module ID: 9668
+// Function ID: 9669
 // Name: ForumPostReactionButton
-// Dependencies: [19, 17, 21, 4829, 576, 10567, 5427, 1115, 4825, 8092, 11606, 11663, 2020, 11611, 1092, 1397, 4476, 7463, 11665, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 9669, 5428, 1115, 4825, 7177, 10811, 10843, 2020, 10816, 1092, 1397, 4478, 6546, 10845, 2]
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
 
-// Module 10566 (ForumPostReactionButton)
+// Module 9668 (ForumPostReactionButton)
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import util from "util" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import ReactionUtils from "ReactionUtils" /* 4476 */;
+import ReactionUtils from "ReactionUtils" /* 4478 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import Pressables from "Pressables" /* 5427 */;
-import EmojiDefault from "Emoji" /* 7463 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 8092 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10567 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 11606 */;
-import useEmojiColorPalette from "useEmojiColorPalette" /* 11611 */;
-import useReactionPermissionsDefault from "useReactionPermissions" /* 11663 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 11665 */;
+import Pressables from "Pressables" /* 5428 */;
+import EmojiDefault from "Emoji" /* 6546 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7177 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 9669 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10811 */;
+import useEmojiColorPalette from "useEmojiColorPalette" /* 10816 */;
+import useReactionPermissionsDefault from "useReactionPermissions" /* 10843 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 10845 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

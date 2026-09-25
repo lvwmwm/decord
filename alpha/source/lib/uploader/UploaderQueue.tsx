@@ -1,9 +1,9 @@
-// Module ID: 8171
-// Function ID: 8172
+// Module ID: 7256
+// Function ID: 7257
 // Name: UploaderQueue
 // Dependencies: [5, 3, 2]
 
-// Module 8171 (UploaderQueue)
+// Module 7256 (UploaderQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 17301
-// Function ID: 17302
+// Module ID: 16516
+// Function ID: 16517
 // Name: useAutoSearchPeopleTab
-// Dependencies: [19, 12682, 12696, 10195, 12704, 12, 12681, 2]
+// Dependencies: [19, 11808, 11822, 9292, 11830, 12, 11807, 2]
 // Exports: useAutoSearchPeopleTab
 
-// Module 17301 (useAutoSearchPeopleTab)
+// Module 16516 (useAutoSearchPeopleTab)
 import _mod12 from "module_12" /* 12 */;
-import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 10195 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12681 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12704 */;
+import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 9292 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11807 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11830 */;
 import noop from "module_19" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 12682 */;
+import SearchQueryStore from "SearchQueryStore" /* 11808 */;
 
 require = fn;
-let closure_5 = fn(12696).SEARCH_TEXT_INPUT_DEBOUNCE_TIME;
+let closure_5 = fn(11822).SEARCH_TEXT_INPUT_DEBOUNCE_TIME;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/hooks/useAutoSearchPeopleTab.tsx");
 
@@ -32,8 +32,8 @@ export const useAutoSearchPeopleTab = function useAutoSearchPeopleTab(searchCont
     if (!closure_1) {
       const debounceResult = _mod12.debounce((searchQueryString) => {
         if (!autocompleteVisible.isAutocompleteVisible(searchContext)) {
-          closure_1(12704).searchPeopleTab(searchContext, searchQueryString);
-          const obj = closure_1(12704);
+          closure_1(11830).searchPeopleTab(searchContext, searchQueryString);
+          const obj = closure_1(11830);
         }
       }, closure_5);
       return SearchPlatformUtilsDefault.subscribeTextInputValue(closure_0, debounceResult);
@@ -41,6 +41,6 @@ export const useAutoSearchPeopleTab = function useAutoSearchPeopleTab(searchCont
   }, items1);
   const items2 = [searchContext];
   const effect2 = noop.useEffect(() => () => {
-    closure_1(12704).cleanupPeopleTab(searchContext);
+    closure_1(11830).cleanupPeopleTab(searchContext);
   }, items2);
 };

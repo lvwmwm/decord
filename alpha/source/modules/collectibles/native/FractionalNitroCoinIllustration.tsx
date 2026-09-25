@@ -1,11 +1,12 @@
-// Module ID: 9205
-// Function ID: 9206
+// Module ID: 8299
+// Function ID: 8300
 // Name: FractionalNitroCoinIllustration
-// Dependencies: [19, 1076, 21, 5997, 2]
+// Dependencies: [19, 1076, 21, 8300, 8302, 2]
 // Exports: FractionalNitroCoinIllustration
 
-// Module 9205 (FractionalNitroCoinIllustration)
-import native from "native" /* 5997 */;
+// Module 8299 (FractionalNitroCoinIllustration)
+import NitroCoinSpotIllustration from "NitroCoinSpotIllustration" /* 8300 */;
+import NitroCoinStackSpotIllustration2 from "NitroCoinStackSpotIllustration" /* 8302 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,9 +23,9 @@ export const FractionalNitroCoinIllustration = function FractionalNitroCoinIllus
     resizeMode = "contain";
   }
   if (skuId === EXTERNAL_PRODUCT_SKU_IDS.FRACTIONAL_PREMIUM_1_DAY) {
-    let NitroCoinStackSpotIllustration = native.NitroCoinSpotIllustration;
+    let NitroCoinStackSpotIllustration = NitroCoinSpotIllustration.NitroCoinSpotIllustration;
   } else {
-    NitroCoinStackSpotIllustration = native.NitroCoinStackSpotIllustration;
+    NitroCoinStackSpotIllustration = NitroCoinStackSpotIllustration2.NitroCoinStackSpotIllustration;
   }
   return <NitroCoinStackSpotIllustration width={width} height={height} resizeMode={resizeMode} />;
 };

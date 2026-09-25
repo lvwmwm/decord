@@ -1,13 +1,13 @@
-// Module ID: 12736
-// Function ID: 12737
+// Module ID: 11862
+// Function ID: 11863
 // Name: ChannelAutocompleteEmojiUpsell
-// Dependencies: [19, 17, 1375, 21, 4829, 576, 5892, 1397, 4825, 1115, 2]
+// Dependencies: [19, 17, 1375, 21, 4829, 576, 5894, 1397, 4825, 1115, 2]
 // Exports: default
 
-// Module 12736 (ChannelAutocompleteEmojiUpsell)
+// Module 11862 (ChannelAutocompleteEmojiUpsell)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import FastImageDefault from "FastImage" /* 5892 */;
+import FastImageDefault from "FastImage" /* 5894 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

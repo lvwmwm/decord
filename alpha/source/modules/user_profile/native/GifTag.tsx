@@ -1,10 +1,10 @@
-// Module ID: 8603
-// Function ID: 8604
+// Module ID: 7693
+// Function ID: 7694
 // Name: GifTag
 // Dependencies: [17, 21, 4829, 576, 672, 4825, 1115, 2]
 // Exports: default
 
-// Module 8603 (GifTag)
+// Module 7693 (GifTag)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;

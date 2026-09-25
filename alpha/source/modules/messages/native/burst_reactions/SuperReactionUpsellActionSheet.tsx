@@ -1,18 +1,18 @@
-// Module ID: 11489
-// Function ID: 11490
+// Module ID: 10587
+// Function ID: 10588
 // Name: SuperReactionUpsellActionSheet
-// Dependencies: [19, 17, 1372, 1074, 21, 2028, 11490, 11491, 11492, 11493, 11494, 11495, 11496, 4829, 576, 7495, 504, 4483, 9589, 9557, 12, 11497, 8124, 11498, 1115, 8113, 1177, 4796, 2]
+// Dependencies: [19, 17, 1372, 1074, 21, 2028, 10588, 10589, 10590, 10591, 10592, 10593, 10594, 4829, 576, 6578, 504, 4485, 8687, 8655, 12, 10595, 7209, 10596, 1115, 7198, 1177, 4796, 2]
 // Exports: default
 
-// Module 11489 (SuperReactionUpsellActionSheet)
+// Module 10587 (SuperReactionUpsellActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import _mod8124 from "module_8124" /* 8124 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9557 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9589 */;
-import SuperReactionLocalImageAnimationDefault from "SuperReactionLocalImageAnimation" /* 11497 */;
+import _mod7209 from "module_7209" /* 7209 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8655 */;
+import openPremiumModalDefault from "openPremiumModal" /* 8687 */;
+import SuperReactionLocalImageAnimationDefault from "SuperReactionLocalImageAnimation" /* 10595 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -24,7 +24,7 @@ get_ActivityIndicator = fn(17);
 const AnalyticsPages = fn(1074).AnalyticsPages;
 const jsx = fn(21).jsx;
 const dismissibleContent = fn(2028).DismissibleContent.SUPER_REACTIONS_COACHMARK_MOBILE;
-let items = [fn(11490), fn(11491), fn(11492), fn(11493), fn(11491), fn(11494), fn(11495), fn(11496)];
+let items = [fn(10588), fn(10589), fn(10590), fn(10591), fn(10589), fn(10592), fn(10593), fn(10594)];
 const createStyles = fn(4829);
 let obj2 = { fill: null, nitroIcon: null, description: null };
 let obj3 = {};

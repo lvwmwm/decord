@@ -1,13 +1,13 @@
-// Module ID: 12361
-// Function ID: 12362
+// Module ID: 11487
+// Function ID: 11488
 // Name: ForumPostTypingUsers
-// Dependencies: [19, 17, 21, 4829, 576, 8216, 12321, 12362, 4561, 1177, 4825, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 7305, 11447, 11488, 4563, 1177, 4825, 2]
 // Exports: default
 
-// Module 12361 (ForumPostTypingUsers)
+// Module 11487 (ForumPostTypingUsers)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4563 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

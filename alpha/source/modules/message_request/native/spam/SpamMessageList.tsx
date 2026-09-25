@@ -1,22 +1,22 @@
-// Module ID: 17464
-// Function ID: 17465
+// Module ID: 16681
+// Function ID: 16682
 // Name: SpamMessageList
-// Dependencies: [19, 17, 1074, 21, 4829, 576, 1115, 12799, 4523, 5902, 4840, 5032, 12791, 1241, 5427, 17449, 1177, 9704, 15269, 8951, 1612, 17458, 17465, 17456, 5290, 5171, 5176, 17459, 1364, 4825, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 576, 1115, 11925, 4525, 5904, 4840, 5032, 11917, 1241, 5428, 16666, 1177, 8802, 14435, 8045, 1612, 16675, 16682, 16673, 5291, 5172, 5177, 16676, 1364, 4825, 2]
 // Exports: default
 
-// Module 17464 (SpamMessageList)
+// Module 16681 (SpamMessageList)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import transitionToChannel from "transitionToChannel" /* 4840 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5171 */;
-import MetricEvents from "MetricEvents" /* 5176 */;
-import useMountEffectDefault from "useMountEffect" /* 5290 */;
-import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 17465 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5172 */;
+import MetricEvents from "MetricEvents" /* 5177 */;
+import useMountEffectDefault from "useMountEffect" /* 5291 */;
+import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 16682 */;
 import noop from "module_19" /* 19 */;
 
-const MessageRequestEmptyDefault = tmp2(17459);
+const MessageRequestEmptyDefault = tmp2(16676);
 require = fn;
 function PendingSpamMessageRequestRow(isLastRow) {
   ({ messageRequest, goToMessageRequestPreview: require, hasSingleMessageRequest } = isLastRow);
@@ -176,10 +176,10 @@ export default function SpamMessageList(goToMessageRequestPreview) {
   const tmp = closure_10();
   importDefault = tmp;
   const bottom = useSafeAreaInsetsDefault().bottom;
-  dependencyMap = goToMessageRequestPreview(17458).useSpamMessageRequestCount();
+  dependencyMap = goToMessageRequestPreview(16675).useSpamMessageRequestCount();
   const arr = useSortedSpamMessageRequestsDefault();
-  let obj = goToMessageRequestPreview(17458);
-  const hasSingleMessageRequest = goToMessageRequestPreview(17456).useListHasSingleSpamMessageRequest();
+  let obj = goToMessageRequestPreview(16675);
+  const hasSingleMessageRequest = goToMessageRequestPreview(16673).useListHasSingleSpamMessageRequest();
   useMountEffectDefault(() => {
     AnalyticsUtilsDefault.track(AnalyticEvents.SPAM_MESSAGE_REQUESTS_VIEWED, { num_spam_message_requests });
     const obj2 = { num_spam_message_requests };
@@ -238,5 +238,5 @@ export default function SpamMessageList(goToMessageRequestPreview) {
     obj4.data = items;
     return closure_8(closure_6, obj4);
   }
-  let obj2 = goToMessageRequestPreview(17456);
+  let obj2 = goToMessageRequestPreview(16673);
 };

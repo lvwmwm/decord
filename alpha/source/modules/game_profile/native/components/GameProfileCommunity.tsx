@@ -1,16 +1,16 @@
-// Module ID: 9097
-// Function ID: 9098
+// Module ID: 8191
+// Function ID: 8192
 // Name: GameProfileCommunity
-// Dependencies: [19, 17, 21, 576, 4829, 7276, 9093, 9092, 9066, 9037, 7672, 9098, 2058, 1115, 5889, 4825, 9100, 1177, 5273, 2]
+// Dependencies: [19, 17, 21, 576, 4829, 6359, 8187, 8186, 8160, 8131, 6755, 8192, 2058, 1115, 5891, 4825, 8194, 1177, 5274, 2]
 // Exports: default
 
-// Module 9097 (GameProfileCommunity)
+// Module 8191 (GameProfileCommunity)
 import nativeDefault from "native" /* 576 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7276 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9037 */;
-import GameProfileSection from "GameProfileSection" /* 9092 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9093 */;
-import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 9098 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6359 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8131 */;
+import GameProfileSection from "GameProfileSection" /* 8186 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 8187 */;
+import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 8192 */;
 import noop from "module_19" /* 19 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;

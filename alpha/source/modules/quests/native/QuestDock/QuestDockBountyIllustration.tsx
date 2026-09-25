@@ -1,16 +1,16 @@
-// Module ID: 15545
-// Function ID: 15546
+// Module ID: 14715
+// Function ID: 14716
 // Name: QuestDockBountyIllustration
-// Dependencies: [19, 17, 4821, 5749, 15431, 21, 4829, 15541, 15428, 9169, 15546, 504, 1364, 5892, 4535, 11632, 2]
+// Dependencies: [19, 17, 4821, 5751, 14599, 21, 4829, 14711, 14596, 8263, 14716, 504, 1364, 5894, 4537, 10674, 2]
 
-// Module 15545 (QuestDockBountyIllustration)
+// Module 14715 (QuestDockBountyIllustration)
 import initialize from "initialize" /* 504 */;
-import native from "native" /* 4535 */;
-import APNGPlayer from "APNGPlayer" /* 9169 */;
-import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 11632 */;
-import QuestDockHooks from "QuestDockHooks" /* 15428 */;
-import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 15541 */;
-import _modDef15546 from "module_15546" /* 15546 */;
+import native from "native" /* 4537 */;
+import APNGPlayer from "APNGPlayer" /* 8263 */;
+import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 10674 */;
+import QuestDockHooks from "QuestDockHooks" /* 14596 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 14711 */;
+import _modDef14716 from "module_14716" /* 14716 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 
@@ -89,7 +89,7 @@ function QuestDock3DOrbsAPNGPlayer(shouldAnimate) {
       obj.pause();
     }
   }, items);
-  return jsx(APNGPlayer.APNGPlayer, { ref, url: _modDef15546, style: tmp.fill, autoplay: false });
+  return jsx(APNGPlayer.APNGPlayer, { ref, url: _modDef14716, style: tmp.fill, autoplay: false });
 }
 function QuestDock3DOrbsIllustration() {
   const tmp = closure_8();
@@ -109,13 +109,13 @@ function QuestDock3DOrbsIllustration() {
     let tmp8Result = tmp8(QuestDock3DOrbsAPNGPlayer, obj3);
   } else {
     const obj4 = { source: null, style: null, resizeMode: "contain", enableAnimation: null, paused: null, accessible: false };
-    const obj5 = { uri: tmp5(15546) };
+    const obj5 = { uri: tmp5(14716) };
     obj4.source = obj5;
     obj4.style = tmp.fill;
     obj4.enableAnimation = !stateFromStores;
     obj4.paused = !tmp7;
-    tmp8Result = tmp8(tmp5(5892), obj4);
-    const tmp5Result = tmp5(5892);
+    tmp8Result = tmp8(tmp5(5894), obj4);
+    const tmp5Result = tmp5(5894);
   }
   return tmp8Result;
 }
@@ -126,8 +126,8 @@ function QuestDockOrbHandsIllustration() {
   return jsx(native.OrbsIllustration_HandsRive, { ref: useRivePlaybackGateRef(), stateMachine: "State Machine 1", fit: "contain" });
 }
 const View = fn(17).View;
-const QuestsExperimentLocations = fn(5749).QuestsExperimentLocations;
-const QuestDockConstants = fn(15431);
+const QuestsExperimentLocations = fn(5751).QuestsExperimentLocations;
+const QuestDockConstants = fn(14599);
 ({ QUEST_DOCK_COLLAPSED_HEIGHT, QUEST_DOCK_COLLAPSED_HEADER_PADDING_RIGHT } = QuestDockConstants);
 const jsx = fn(21).jsx;
 const createStyles = fn(4829);
@@ -149,10 +149,10 @@ export default noop.memo(function QuestDockBountyIllustration() {
   if (BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarIllustration.ILLUSTRATION_2 === illustration) {
     const obj2 = { style: tmp.orbs, children: <QuestDock2DOrbsIllustration /> };
     return <IllustrationFrame style={tmp.orbs}><QuestDock2DOrbsIllustration /></IllustrationFrame>;
-  } else if (tmp2(11632).BountiesMobileQuestBarIllustration.ILLUSTRATION_3 === illustration) {
+  } else if (tmp2(10674).BountiesMobileQuestBarIllustration.ILLUSTRATION_3 === illustration) {
     const obj3 = { style: tmp.hands, children: <QuestDockOrbHandsIllustration /> };
     return <IllustrationFrame style={tmp.hands}><QuestDockOrbHandsIllustration /></IllustrationFrame>;
-  } else if (tmp2(11632).BountiesMobileQuestBarIllustration.ILLUSTRATION_1 === illustration) {
+  } else if (tmp2(10674).BountiesMobileQuestBarIllustration.ILLUSTRATION_1 === illustration) {
     const obj4 = { style: tmp.orbs, children: <QuestDock3DOrbsIllustration /> };
     return <IllustrationFrame style={tmp.orbs}><QuestDock3DOrbsIllustration /></IllustrationFrame>;
   }

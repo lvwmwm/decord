@@ -1,17 +1,17 @@
-// Module ID: 15939
-// Function ID: 15940
+// Module ID: 15109
+// Function ID: 15110
 // Name: DevToolsAnalyticsScreen
-// Dependencies: [32, 19, 17, 1372, 14773, 1074, 21, 4829, 576, 4825, 5910, 10730, 4416, 9985, 5427, 7522, 4775, 504, 9077, 5271, 5992, 7533, 12493, 4786, 15934, 7383, 2]
+// Dependencies: [32, 19, 17, 1372, 13935, 1074, 21, 4829, 576, 4825, 5912, 9834, 4418, 9083, 5428, 6605, 4775, 504, 8171, 5272, 5994, 6616, 11619, 4786, 15104, 6466, 2]
 // Exports: default
 
-// Module 15939 (DevToolsAnalyticsScreen)
+// Module 15109 (DevToolsAnalyticsScreen)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import ClipboardUtils from "ClipboardUtils" /* 7522 */;
+import ClipboardUtils from "ClipboardUtils" /* 6605 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import AnalyticsLogStore from "AnalyticsLogStore" /* 14773 */;
+import AnalyticsLogStore from "AnalyticsLogStore" /* 13935 */;
 
 require = fn;
 function CommonProperty(arg0) {
@@ -30,7 +30,7 @@ function LoggedEvent(arg0) {
   const user = UserStore.getUser(fingerprint);
   let CopyIcon = fingerprint;
   let tmp6Result2 = dependencyMap;
-  let obj = { arrow: !tmp2, icon: closure_8(fingerprint(10730).AnalyticsIcon, {}), label: event, subLabel: null, onPress: null, start: null, end: null };
+  let obj = { arrow: !tmp2, icon: closure_8(fingerprint(9834).AnalyticsIcon, {}), label: event, subLabel: null, onPress: null, start: null, end: null };
   if ("name" in properties) {
     let str2 = properties.name;
   } else {
@@ -48,7 +48,7 @@ function LoggedEvent(arg0) {
   };
   obj.start = start;
   obj.end = end;
-  let items = [closure_8(fingerprint(5910).TableRow, obj), ];
+  let items = [closure_8(fingerprint(5912).TableRow, obj), ];
   if (!tmp2) {
     let obj2 = { collapsable: false, children: null };
     items[1] = tmp2;
@@ -58,14 +58,14 @@ function LoggedEvent(arg0) {
     let obj3 = { style: map.detailsContainer, children: null };
     let obj4 = { style: map.commonPropertiesContainer, children: null };
     const obj6 = { name: "Timestamp (local)", children: null };
-    const obj7 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: map(4416)(timestamp).calendar() };
+    const obj7 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: map(4418)(timestamp).calendar() };
     obj6.children = tmp6(CopyIcon(4825).Text, obj7);
     let items1 = [tmp6(CommonProperty, obj6), , ];
     let tmp6Result = null != user;
     if (tmp6Result) {
       const obj8 = { name: "User ", children: null };
       const obj9 = { user };
-      obj8.children = tmp6(tmp10(9985), obj9);
+      obj8.children = tmp6(tmp10(9083), obj9);
       tmp6Result = tmp6(tmp9, obj8);
     }
     items1[1] = tmp6Result;
@@ -88,7 +88,7 @@ function LoggedEvent(arg0) {
       tmp6Result2 = tmp6(CopyIcon, { size: "sm" });
       items3[1] = tmp6Result2;
       obj10.children = items3;
-      let tmp6Result3 = tmp4(CopyIcon(5427).PressableOpacity, obj10);
+      let tmp6Result3 = tmp4(CopyIcon(5428).PressableOpacity, obj10);
     } else {
       const obj12 = { variant: "text-sm/medium", color: "text-muted", style: map.monospace, children: "null" };
       tmp6Result3 = tmp6(CopyIcon(4825).Text, obj12);
@@ -96,7 +96,7 @@ function LoggedEvent(arg0) {
     const obj13 = { name: "Fingerprint", children: tmp6Result3 };
     items1[2] = tmp6(CommonProperty, obj13);
     obj4.children = items1;
-    const obj5 = map(4416)(timestamp);
+    const obj5 = map(4418)(timestamp);
     tmp10 = map;
     obj4 = [, ];
     obj4[0] = tmp4(tmp5, obj4);
@@ -183,29 +183,29 @@ export default function DevToolsAnalyticsScreen() {
   const str2 = str.toLowerCase();
   const tmp12 = View;
   const tmp13 = closure_9;
-  const items2 = [closure_8(trimmed(7533).TableSwitchRow, { icon: closure_8(trimmed(12493).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp5[1] }), ];
-  const obj4 = { icon: closure_8(trimmed(12493).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp5[1] };
-  items2[1] = closure_8(trimmed(5910).TableRow, { arrow: true, variant: "danger", icon: closure_8(trimmed(4786).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(15934).clearAnalyticsLog });
+  const items2 = [closure_8(trimmed(6616).TableSwitchRow, { icon: closure_8(trimmed(11619).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp5[1] }), ];
+  const obj4 = { icon: closure_8(trimmed(11619).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp5[1] };
+  items2[1] = closure_8(trimmed(5912).TableRow, { arrow: true, variant: "danger", icon: closure_8(trimmed(4786).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(15104).clearAnalyticsLog });
   obj3.children = items2;
-  const items3 = [closure_9(trimmed(5992).TableRowGroup, obj3), , ];
-  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(4786).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(15934).clearAnalyticsLog };
-  items3[1] = closure_8(View, { style: tmp.searchFieldContainer, children: closure_8(trimmed(7383).SearchField, { placeholder: "Search by event name", onChange: tmp8 }) });
+  const items3 = [closure_9(trimmed(5994).TableRowGroup, obj3), , ];
+  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(4786).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(15104).clearAnalyticsLog };
+  items3[1] = closure_8(View, { style: tmp.searchFieldContainer, children: closure_8(trimmed(6466).SearchField, { placeholder: "Search by event name", onChange: tmp8 }) });
   if (0 === loggedEvents.length) {
-    let tmp11Result = tmp11(tmp2(5910).TableRow, { label: "No events logged." });
+    let tmp11Result = tmp11(tmp2(5912).TableRow, { label: "No events logged." });
   } else {
     tmp11Result = null;
     if (0 === found.length) {
       const obj7 = { label: null };
       const _HermesInternal = HermesInternal;
       obj7.label = "No events match \"" + str + "\"";
-      tmp11Result = tmp11(tmp2(5910).TableRow, obj7);
+      tmp11Result = tmp11(tmp2(5912).TableRow, obj7);
     }
   }
   const obj8 = { ListHeaderComponent: null, contentContainerStyle: null, extraData: null, data: null, renderItem: null };
   const obj9 = { spacing: 16, children: null };
-  items3[2] = closure_8(trimmed(5992).TableRowGroup, { title: "Analytics Events", hasIcons: false, children: tmp11Result });
+  items3[2] = closure_8(trimmed(5994).TableRowGroup, { title: "Analytics Events", hasIcons: false, children: tmp11Result });
   obj9.children = items3;
-  obj8.ListHeaderComponent = tmp13(trimmed(5271).Stack, obj9);
+  obj8.ListHeaderComponent = tmp13(trimmed(5272).Stack, obj9);
   obj8.contentContainerStyle = tmp.contentContainer;
   obj8.extraData = stateFromStores;
   obj8.data = reversed;
@@ -213,6 +213,6 @@ export default function DevToolsAnalyticsScreen() {
     ({ item, index } = arg0);
     return React6(LoggedEvent, { start: 0 === index, end: index === reversed.length - 1, event: item.event, properties: item.properties, timestamp: item.timestamp, fingerprint: item.fingerprint });
   };
-  obj2.children = closure_8(trimmed(9077).FlashList, obj8);
+  obj2.children = closure_8(trimmed(8171).FlashList, obj8);
   return closure_8(tmp12, obj2);
 };

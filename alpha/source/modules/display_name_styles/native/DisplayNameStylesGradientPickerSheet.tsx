@@ -1,10 +1,10 @@
-// Module ID: 15701
-// Function ID: 15702
+// Module ID: 14871
+// Function ID: 14872
 // Name: DisplayNameStylesGradientPickerSheet
-// Dependencies: [32, 19, 17, 1074, 21, 4829, 576, 15702, 11251, 1389, 15697, 4797, 1241, 4796, 14966, 7483, 15694, 5273, 1115, 5285, 1092, 15703, 12, 5427, 4779, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4829, 576, 14872, 10349, 1389, 14867, 4797, 1241, 4796, 14128, 6566, 14864, 5274, 1115, 5286, 1092, 14873, 12, 5428, 4779, 2]
 // Exports: default
 
-// Module 15701 (DisplayNameStylesGradientPickerSheet)
+// Module 14871 (DisplayNameStylesGradientPickerSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
@@ -48,7 +48,7 @@ const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 obj10.alignItems = "center";
 obj10.justifyContent = "center";
 obj2.checkmarkOverlay = obj10;
-const size1 = { width: fn(15702).CHECKMARK_SIZE, height: fn(15702).CHECKMARK_SIZE };
+const size1 = { width: fn(14872).CHECKMARK_SIZE, height: fn(14872).CHECKMARK_SIZE };
 obj2.checkmark = size1;
 let obj8 = { height: 40, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
 obj2.resetButtonContainer = { alignSelf: "stretch", flexDirection: "row", marginHorizontal: nativeDefault.space.PX_8 };

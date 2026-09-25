@@ -1,14 +1,14 @@
-// Module ID: 17080
-// Function ID: 17081
+// Module ID: 16271
+// Function ID: 16272
 // Name: MediaKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 1608, 1074, 21, 1609, 1364, 4829, 576, 1115, 12422, 4535, 4682, 6957, 4562, 4797, 4798, 1241, 5258, 5267, 4561, 5290, 1612, 5255, 4695, 2]
+// Dependencies: [32, 19, 17, 1608, 1074, 21, 1609, 1364, 4829, 576, 1115, 11548, 4537, 4684, 6040, 4564, 4797, 4798, 1241, 5259, 5268, 4563, 5291, 1612, 5256, 4697, 2]
 
-// Module 17080 (MediaKeyboardBottomSheet)
+// Module 16271 (MediaKeyboardBottomSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
-import ChatInputUtils from "ChatInputUtils" /* 4695 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
+import ChatInputUtils from "ChatInputUtils" /* 4697 */;
 import HapticUtils from "HapticUtils" /* 4797 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4798 */;
 import _slicedToArray from "module_32" /* 32 */;

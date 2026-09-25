@@ -1,10 +1,10 @@
-// Module ID: 8509
-// Function ID: 8510
+// Module ID: 7599
+// Function ID: 7600
 // Name: NotificationsInboxConstants
 // Dependencies: [1074, 1091, 1115, 2058, 2]
 // Exports: getFilterMap, getNotificationsInboxGuild
 
-// Module 8509 (NotificationsInboxConstants)
+// Module 7599 (NotificationsInboxConstants)
 import Constants from "Constants" /* 1074 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import util from "util" /* 1115 */;

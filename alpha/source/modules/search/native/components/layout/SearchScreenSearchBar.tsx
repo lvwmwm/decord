@@ -1,15 +1,15 @@
-// Module ID: 17193
-// Function ID: 17194
+// Module ID: 16408
+// Function ID: 16409
 // Name: SearchScreenSearchBar
-// Dependencies: [19, 17, 21, 4829, 4531, 6955, 1875, 17194, 17196, 17201, 2]
+// Dependencies: [19, 17, 21, 4829, 4533, 6038, 1875, 16409, 16411, 16416, 2]
 
-// Module 17193 (SearchScreenSearchBar)
+// Module 16408 (SearchScreenSearchBar)
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1875 */;
-import mergeProps from "mergeProps" /* 4531 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6955 */;
-import layout_SearchBarDefault from "layout/SearchBar" /* 17194 */;
-import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 17196 */;
-import SearchFilterButtonDefault from "SearchFilterButton" /* 17201 */;
+import mergeProps from "mergeProps" /* 4533 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6038 */;
+import layout_SearchBarDefault from "layout/SearchBar" /* 16409 */;
+import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 16411 */;
+import SearchFilterButtonDefault from "SearchFilterButton" /* 16416 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

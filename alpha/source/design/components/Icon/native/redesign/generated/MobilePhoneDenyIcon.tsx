@@ -1,13 +1,13 @@
-// Module ID: 17771
-// Function ID: 17772
+// Module ID: 16995
+// Function ID: 16996
 // Name: MobilePhoneDenyIcon
-// Dependencies: [19, 21, 576, 4525, 17772, 2]
+// Dependencies: [19, 21, 576, 4527, 16996, 2]
 // Exports: MobilePhoneDenyIcon
 
-// Module 17771 (MobilePhoneDenyIcon)
+// Module 16995 (MobilePhoneDenyIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
-import _mod17772 from "module_17772" /* 17772 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
+import _mod16996 from "module_16996" /* 16996 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const MobilePhoneDenyIcon = function MobilePhoneDenyIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod17772, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod16996, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,17 +1,17 @@
-// Module ID: 17250
-// Function ID: 17251
+// Module ID: 16465
+// Function ID: 16466
 // Name: FileGridItem
-// Dependencies: [19, 17, 2044, 8209, 21, 4829, 4979, 5393, 10456, 10480, 504, 8616, 17238, 17240, 5438, 2]
+// Dependencies: [19, 17, 2044, 7298, 21, 4829, 4979, 5394, 9558, 9582, 504, 7706, 16453, 16455, 5439, 2]
 
-// Module 17250 (FileGridItem)
-import SearchMediaImage from "SearchMediaImage" /* 17238 */;
+// Module 16465 (FileGridItem)
+import SearchMediaImage from "SearchMediaImage" /* 16453 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, useWindowDimensions: hasOwnProperty } = get_ActivityIndicator);
-const SearchConstants = fn(8209);
+const SearchConstants = fn(7298);
 ({ FILE_OR_LINK_IMAGE_BUFFER: closure_7, SearchFileTypes: closure_8 } = SearchConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);

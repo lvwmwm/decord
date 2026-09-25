@@ -1,13 +1,13 @@
-// Module ID: 16510
-// Function ID: 16511
+// Module ID: 15690
+// Function ID: 15691
 // Name: typing_indicators/TypingIndicator
-// Dependencies: [19, 17, 21, 4829, 576, 4763, 4680, 1177, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4763, 4682, 1177, 2]
 // Exports: TypingIndicator
 
-// Module 16510 (typing_indicators/TypingIndicator)
+// Module 15690 (typing_indicators/TypingIndicator)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import shared from "shared" /* 4680 */;
+import shared from "shared" /* 4682 */;
 import useThemeDefault from "useTheme" /* 4763 */;
 import noop from "module_19" /* 19 */;
 

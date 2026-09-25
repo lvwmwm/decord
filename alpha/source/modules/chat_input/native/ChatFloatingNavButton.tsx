@@ -1,14 +1,14 @@
-// Module ID: 12610
-// Function ID: 12611
+// Module ID: 11736
+// Function ID: 11737
 // Name: ChatFloatingNavButton
-// Dependencies: [19, 17, 21, 4829, 576, 4561, 4526, 5272, 5276, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4563, 4528, 5273, 5277, 2]
 // Exports: default
 
-// Module 12610 (ChatFloatingNavButton)
+// Module 11736 (ChatFloatingNavButton)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
-import spring from "spring" /* 5272 */;
-import springPresets from "springPresets" /* 5276 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
+import spring from "spring" /* 5273 */;
+import springPresets from "springPresets" /* 5277 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

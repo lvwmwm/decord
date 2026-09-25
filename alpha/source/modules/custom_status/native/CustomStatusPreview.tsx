@@ -1,19 +1,19 @@
-// Module ID: 11501
-// Function ID: 11502
+// Module ID: 10599
+// Function ID: 10600
 // Name: CustomStatusPreview
-// Dependencies: [19, 17, 7541, 21, 4829, 576, 8534, 8590, 8575, 8589, 8586, 4695, 4796, 11502, 1980, 4535, 8594, 8604, 11464, 11465, 11505, 9162, 2]
+// Dependencies: [19, 17, 6624, 21, 4829, 576, 7624, 7680, 7665, 7679, 7676, 4697, 4796, 10600, 1980, 4537, 7684, 7694, 10562, 10563, 10603, 8256, 2]
 // Exports: default
 
-// Module 11501 (CustomStatusPreview)
+// Module 10599 (CustomStatusPreview)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ChatInputUtils from "ChatInputUtils" /* 4695 */;
+import ChatInputUtils from "ChatInputUtils" /* 4697 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const Constants = fn(7541);
+const Constants = fn(6624);
 ({ PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING: hasOwnProperty, UserProfileThemeTypes: metroRequire } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
@@ -55,7 +55,7 @@ export default function CustomStatusPreview(user) {
   ({ gradientFallbackBackground, avatarBackground, containerBackground } = userProfileColors);
   const callback = noop.useCallback(() => {
     ChatInputUtils.dismissKeyboard();
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11502, dependencyMap.paths), "UserProfileCustomStatusActionSheet", { user, previewText: pendingStatusText, previewEmoji: pendingStatusEmoji }, "stack");
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10600, dependencyMap.paths), "UserProfileCustomStatusActionSheet", { user, previewText: pendingStatusText, previewEmoji: pendingStatusEmoji }, "stack");
   }, items);
   const obj2 = { theme, primaryColor, secondaryColor, children: null };
   const obj3 = { style: null, children: null };

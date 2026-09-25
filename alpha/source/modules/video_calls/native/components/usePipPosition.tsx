@@ -1,10 +1,10 @@
-// Module ID: 9739
-// Function ID: 9740
+// Module ID: 8837
+// Function ID: 8838
 // Name: usePipPosition
-// Dependencies: [32, 19, 510, 9740, 2]
+// Dependencies: [32, 19, 510, 8838, 2]
 // Exports: default
 
-// Module 9739 (usePipPosition)
+// Module 8837 (usePipPosition)
 import Storage2 from "Storage" /* 510 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -17,7 +17,7 @@ let result = size.fileFinishedImporting("modules/video_calls/native/components/u
 export default function usePipPosition() {
   const tmp = _slicedToArray(noop.useState(() => {
     const Storage = closure_0(510).Storage;
-    return Storage.get(CameraPreviewPosition, closure_0(9740).DEFAULT_PIP_POSITION);
+    return Storage.get(CameraPreviewPosition, closure_0(8838).DEFAULT_PIP_POSITION);
   }), 2);
   closure_0 = tmp[1];
   const items = [

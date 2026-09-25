@@ -1,22 +1,22 @@
-// Module ID: 12914
-// Function ID: 12915
+// Module ID: 12043
+// Function ID: 12044
 // Name: GuildPowerupsLevelCard
-// Dependencies: [19, 17, 4718, 1074, 12915, 21, 4829, 576, 5285, 9572, 7313, 12897, 12876, 4825, 1115, 2518, 12849, 12868, 12916, 12917, 12873, 2]
+// Dependencies: [19, 17, 4720, 1074, 12044, 21, 4829, 576, 5286, 8670, 6396, 12026, 12005, 4825, 1115, 2518, 11978, 11997, 12045, 12046, 12002, 2]
 // Exports: default
 
-// Module 12914 (GuildPowerupsLevelCard)
+// Module 12043 (GuildPowerupsLevelCard)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import LinearGradientDefault from "LinearGradient" /* 5285 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7313 */;
-import BoostGemIcon from "BoostGemIcon" /* 9572 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12849 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12868 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 12873 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12916 */;
+import LinearGradientDefault from "LinearGradient" /* 5286 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6396 */;
+import BoostGemIcon from "BoostGemIcon" /* 8670 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 11978 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 11997 */;
+import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 12002 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12045 */;
 import noop from "module_19" /* 19 */;
 
-const GuildPowerupsCardDefault = tmp5(12917);
+const GuildPowerupsCardDefault = tmp5(12046);
 require = fn;
 function GuildLevelPowerupHeader(arg0) {
   ({ active, nextActive, position } = arg0);
@@ -142,11 +142,11 @@ class GuildPowerupLevelBody {
   }
 }
 const View = fn(17).View;
-const GuildPowerupsConstants = fn(4718);
+const GuildPowerupsConstants = fn(4720);
 ({ LevelCardPosition: hasOwnProperty, PowerupActiveStatusType: metroRequire } = GuildPowerupsConstants);
 const Constants = fn(1074);
 ({ BoostedGuildTiers: closure_7, HorizontalGradient: closure_8 } = Constants);
-const TIER_CARDS = fn(12915).TIER_CARDS;
+const TIER_CARDS = fn(12044).TIER_CARDS;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const createStyles = fn(4829);

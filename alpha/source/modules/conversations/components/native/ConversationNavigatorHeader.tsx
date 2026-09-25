@@ -1,16 +1,16 @@
-// Module ID: 8258
-// Function ID: 8259
+// Module ID: 7347
+// Function ID: 7348
 // Name: ConversationNavigatorHeader
-// Dependencies: [19, 17, 2044, 21, 4829, 576, 504, 4982, 8194, 4526, 1365, 1115, 8259, 2]
+// Dependencies: [19, 17, 2044, 21, 4829, 576, 504, 4982, 7283, 4528, 1365, 1115, 7348, 2]
 // Exports: conversationNavigatorFocusHeaderOptions, conversationNavigatorListHeaderOptions
 
-// Module 8258 (ConversationNavigatorHeader)
+// Module 7347 (ConversationNavigatorHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import useToken from "useToken" /* 4526 */;
+import useToken from "useToken" /* 4528 */;
 import useChannelNameDefault from "useChannelName" /* 4982 */;
-import HeaderShared from "HeaderShared" /* 8194 */;
-import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 8259 */;
+import HeaderShared from "HeaderShared" /* 7283 */;
+import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 7348 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 
@@ -31,7 +31,7 @@ function ConversationNavigatorHeader(channelId) {
   const tmp3 = useChannelNameDefault(stateFromStores, true);
   const obj2 = { style: tmp.container, children: null };
   const obj3 = { title: channelId.title, subtitle: tmp3, variant: "heading-lg/semibold", subtitleColor: "text-muted" };
-  obj2.children = jsx(channelId(8194).GenericHeaderTitle, { title: channelId.title, subtitle: tmp3, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
+  obj2.children = jsx(channelId(7283).GenericHeaderTitle, { title: channelId.title, subtitle: tmp3, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
   return <View style={tmp.container}>{null}</View>;
 }
 function HeaderWithBorder(shouldHandleSafeArea) {

@@ -1,23 +1,23 @@
-// Module ID: 8774
-// Function ID: 8775
+// Module ID: 7866
+// Function ID: 7867
 // Name: AgeVerificationWebViewScreen
-// Dependencies: [32, 19, 17, 8762, 8765, 21, 3, 4829, 576, 4686, 5041, 8768, 4520, 8648, 1364, 5882, 2]
+// Dependencies: [32, 19, 17, 7852, 7855, 21, 3, 4829, 576, 4688, 5041, 7858, 4522, 7738, 1364, 5884, 2]
 // Exports: default
 
-// Module 8774 (AgeVerificationWebViewScreen)
+// Module 7866 (AgeVerificationWebViewScreen)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 576 */;
-import LinkingDefault from "Linking" /* 4520 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4686 */;
+import LinkingDefault from "Linking" /* 4522 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4688 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 5041 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8768 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7858 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_6 = fn(8762).AGE_VERIFICATION_MODAL_KEY;
-const AgeVerificationIncodeWebViewConstants = fn(8765);
+let closure_6 = fn(7852).AGE_VERIFICATION_MODAL_KEY;
+const AgeVerificationIncodeWebViewConstants = fn(7855);
 ({ AgeVerificationIncodeResultStatus: closure_7, buildIncodeFallbackSessionInjection: closure_8, parseIncodeWebViewMessage: closure_9 } = AgeVerificationIncodeWebViewConstants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);

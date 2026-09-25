@@ -1,12 +1,12 @@
-// Module ID: 12781
-// Function ID: 12782
+// Module ID: 11907
+// Function ID: 11908
 // Name: ScheduledMessageDraftCoachmark
-// Dependencies: [19, 17, 2041, 21, 4829, 1115, 12562, 11480, 2]
+// Dependencies: [19, 17, 2041, 21, 4829, 1115, 11688, 10578, 2]
 // Exports: default
 
-// Module 12781 (ScheduledMessageDraftCoachmark)
+// Module 11907 (ScheduledMessageDraftCoachmark)
 import util from "util" /* 1115 */;
-import useCoachmark from "useCoachmark" /* 11480 */;
+import useCoachmark from "useCoachmark" /* 10578 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

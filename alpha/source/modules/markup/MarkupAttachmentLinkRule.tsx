@@ -1,12 +1,12 @@
-// Module ID: 5308
-// Function ID: 5309
+// Module ID: 5309
+// Function ID: 5310
 // Name: MarkupAttachmentLinkRule
-// Dependencies: [5309, 1929, 2]
+// Dependencies: [5310, 1929, 2]
 // Exports: matchAttachmentUrl
 
-// Module 5308 (MarkupAttachmentLinkRule)
+// Module 5309 (MarkupAttachmentLinkRule)
 import _modDef1929 from "module_1929" /* 1929 */;
-import AttachmentUrlConstants from "AttachmentUrlConstants" /* 5309 */;
+import AttachmentUrlConstants from "AttachmentUrlConstants" /* 5310 */;
 import size from "module_2" /* 2 */;
 
 const mapped = Array.from(AttachmentUrlConstants.ATTACHMENT_PATH_PREFIXES).map((item) => item.replaceAll("/", ""));

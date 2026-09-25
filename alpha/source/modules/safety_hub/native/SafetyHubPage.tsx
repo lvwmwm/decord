@@ -1,10 +1,10 @@
-// Module ID: 15110
-// Function ID: 15111
+// Module ID: 14276
+// Function ID: 14277
 // Name: SafetyHubPage
-// Dependencies: [19, 17, 8781, 8770, 1074, 21, 6922, 12226, 8945, 1177, 5273, 1115, 504, 3102, 4825, 15111, 1380, 15112, 4829, 576, 15113, 12253, 12225, 15107, 5290, 12224, 1241, 5171, 5176, 4796, 15114, 1980, 15115, 15117, 2]
+// Dependencies: [19, 17, 7873, 7860, 1074, 21, 6005, 11348, 8039, 1177, 5274, 1115, 504, 3102, 4825, 14277, 1380, 14278, 4829, 576, 14279, 11375, 11347, 14273, 5291, 11346, 1241, 5172, 5177, 4796, 14280, 1980, 14281, 14283, 2]
 // Exports: default
 
-// Module 15110 (SafetyHubPage)
+// Module 14276 (SafetyHubPage)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -14,17 +14,17 @@ import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import _modDef3102 from "module_3102" /* 3102 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5171 */;
-import MetricEvents from "MetricEvents" /* 5176 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6922 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8945 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12224 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12226 */;
-import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 15111 */;
-import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 15112 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5172 */;
+import MetricEvents from "MetricEvents" /* 5177 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8039 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11346 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11348 */;
+import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 14277 */;
+import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 14278 */;
 import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8781 */;
+import SafetyHubStore from "SafetyHubStore" /* 7873 */;
 
 const require = globalThis.__r;
 
@@ -94,7 +94,7 @@ function ManualReviewBanner() {
     const intl = tmp(1115).intl;
     obj3.text = intl.string(tmp(1115).t.NkTGsC);
     obj3.onPress = handleManualReviewClick;
-    obj2.button = closure_1_12(tmp(5273).Button, obj3);
+    obj2.button = closure_1_12(tmp(5274).Button, obj3);
     const intl2 = tmp(1115).intl;
     obj2.children = intl2.string(tmp(1115).t.VTgFYh);
     tmp5Result = closure_1_12(tmp(1177).HelpMessage, obj2);
@@ -134,7 +134,7 @@ function AutomatedUnderageAppealStatus() {
     const intl4 = tmp(1115).intl;
     obj5.text = intl4.string(tmp(1115).t["2jvQ6K"]);
     obj5.onPress = handleLogInClick;
-    obj4.button = closure_1_12(tmp(5273).Button, obj5);
+    obj4.button = closure_1_12(tmp(5274).Button, obj5);
     const intl5 = tmp(1115).intl;
     obj4.children = intl5.string(tmp(1115).t["2Qe65J"]);
     tmp9 = closure_1_12(tmp(1177).HelpMessage, obj4);
@@ -164,7 +164,7 @@ function AutomatedUnderageAppealStatus() {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ActivityIndicator: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const AgeCheckStatus = fn(8770).AgeCheckStatus;
+const AgeCheckStatus = fn(7860).AgeCheckStatus;
 const Constants = fn(1074);
 ({ AnalyticEvents: c10, Routes: closure_11 } = Constants);
 const jsxProd = fn(21);
@@ -204,7 +204,7 @@ export default function SafetyHubPage(visible) {
   const effect = noop.useEffect(() => {
     if (visible) {
       if (null != safetyHubFetchError) {
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15114, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14280, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
       }
     }
     ActionSheetActionCreatorsDefault.hideActionSheet("SafetyHubErrorActionSheet");

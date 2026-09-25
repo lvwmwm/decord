@@ -1,11 +1,11 @@
-// Module ID: 9179
-// Function ID: 9180
+// Module ID: 8273
+// Function ID: 8274
 // Name: Nameplate
-// Dependencies: [19, 4821, 21, 4829, 504, 4763, 4561, 4830, 1970, 9180, 5285, 1364, 9169, 5892, 2]
+// Dependencies: [19, 4821, 21, 4829, 504, 4763, 4563, 4830, 1970, 8274, 5286, 1364, 8263, 5894, 2]
 // Exports: default
 
-// Module 9179 (Nameplate)
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+// Module 8273 (Nameplate)
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import timing from "timing" /* 4830 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
@@ -54,7 +54,7 @@ function NameplateInner(isFocused) {
   if (flag6) {
     num = 0;
   }
-  sharedValue = flag6(4561).useSharedValue(num);
+  sharedValue = flag6(4563).useSharedValue(num);
   const items1 = [sharedValue, flag6];
   const effect = noop.useEffect(() => {
     if (flag6) {
@@ -64,7 +64,7 @@ function NameplateInner(isFocused) {
       const result = sharedValue.set(timing.withTiming(1, obj2));
     }
   }, items1);
-  let obj2 = flag6(4561);
+  let obj2 = flag6(4563);
   class A {
     constructor() {
       obj = { opacity: closure_1.get() };
@@ -74,11 +74,11 @@ function NameplateInner(isFocused) {
   A.__closure = { opacity: sharedValue };
   A.__workletHash = 15588901070870;
   A.__initData = __initData;
-  const animatedStyle = flag6(4561).useAnimatedStyle(A);
-  const tmpResult = flag6(4561);
+  const animatedStyle = flag6(4563).useAnimatedStyle(A);
+  const tmpResult = flag6(4563);
   const backgroundGradientColors = flag6(1970).getBackgroundGradientColors(nameplate.palette, tmp6);
   const tmpResult4 = flag6(1970);
-  const nameplateAssets = flag6(9180).getNameplateAssets(nameplate);
+  const nameplateAssets = flag6(8274).getNameplateAssets(nameplate);
   let str = nameplateAssets.staticImageUrl;
   let tmp12 = true === flag7;
   if (tmp12) {
@@ -109,22 +109,22 @@ function NameplateInner(isFocused) {
     const items3 = [, ];
     ({ left: arr4[0], right: arr4[1] } = backgroundGradientColors);
     obj4.colors = items3;
-    tmp15Result = closure_5(tmp5(5285), obj4);
-    const tmp5Result = tmp5(5285);
+    tmp15Result = closure_5(tmp5(5286), obj4);
+    const tmp5Result = tmp5(5286);
   }
   const items4 = [tmp15Result, ];
   const tmp13 = closure_6;
-  const tmpResult5 = flag6(9180);
+  const tmpResult5 = flag6(8274);
   if (tmpResult6.isAndroid()) {
     if (tmp12) {
       const obj5 = { url: str, style: tmp4.img, autoplay: true };
-      let tmp17 = closure_5(tmp(9169).APNGPlayer, obj5);
+      let tmp17 = closure_5(tmp(8263).APNGPlayer, obj5);
     }
     items4[1] = tmp17;
     obj3.children = items4;
-    return tmp13(tmp5(4561).View, obj3);
+    return tmp13(tmp5(4563).View, obj3);
   }
-  tmp17 = closure_5(tmp5(5892), { source: { uri: str }, style: tmp4.img, accessibilityRole: "image" });
+  tmp17 = closure_5(tmp5(5894), { source: { uri: str }, style: tmp4.img, accessibilityRole: "image" });
 }
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);

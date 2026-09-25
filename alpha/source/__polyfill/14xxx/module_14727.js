@@ -1,12 +1,9 @@
 // Module ID: 14727
 // Function ID: 14728
-// Dependencies: [14675, 14676]
+// Dependencies: [1121]
 
 // Module 14727
-import _mod14675 from "module_14675" /* 14675 */;
-import _mod14676 from "module_14676" /* 14676 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default _mod14675 && _mod14676(() => 42 !== Object.defineProperty(() => {
-
-}, "prototype", { value: 42, writable: false }).prototype);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e42f1b42dc7bf4b285d5f4924a46e5c4", name: "TicketIcon", type: "png" });

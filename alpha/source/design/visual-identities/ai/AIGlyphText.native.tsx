@@ -1,14 +1,14 @@
-// Module ID: 14500
-// Function ID: 14501
+// Module ID: 13661
+// Function ID: 13662
 // Name: AIGlyphText
-// Dependencies: [19, 17, 21, 4561, 4829, 14501, 4526, 2]
+// Dependencies: [19, 17, 21, 4563, 4829, 13662, 4528, 2]
 // Exports: AIGlyphText
 
-// Module 14500 (AIGlyphText)
-import useToken from "useToken" /* 4526 */;
-import AIGlyphFont from "AIGlyphFont" /* 14501 */;
+// Module 13661 (AIGlyphText)
+import useToken from "useToken" /* 4528 */;
+import AIGlyphFont from "AIGlyphFont" /* 13662 */;
 import noop from "module_19" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 
 require = fn;
 const Text = fn(17).Text;

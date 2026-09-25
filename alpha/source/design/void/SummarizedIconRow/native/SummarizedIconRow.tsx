@@ -1,10 +1,10 @@
-// Module ID: 14461
-// Function ID: 14462
+// Module ID: 13622
+// Function ID: 13623
 // Name: SummarizedIconRow
 // Dependencies: [19, 17, 21, 4829, 576, 4825, 2]
 // Exports: OverflowCircle, OverflowText, OverflowTextSmall, default
 
-// Module 14461 (SummarizedIconRow)
+// Module 13622 (SummarizedIconRow)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import noop from "module_19" /* 19 */;

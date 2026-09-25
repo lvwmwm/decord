@@ -1,12 +1,12 @@
-// Module ID: 13530
-// Function ID: 13531
+// Module ID: 12682
+// Function ID: 12683
 // Name: usePrivateChannelCall
-// Dependencies: [5, 19, 2044, 504, 1115, 11219, 4842, 2]
+// Dependencies: [5, 19, 2044, 504, 1115, 10317, 4842, 2]
 // Exports: default
 
-// Module 13530 (usePrivateChannelCall)
+// Module 12682 (usePrivateChannelCall)
 import util from "util" /* 1115 */;
-import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 11219 */;
+import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10317 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
@@ -108,8 +108,8 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
           isPrivateResult = channel.isPrivate();
         }
         if (isPrivateResult) {
-          tmp3(11219)(channel, closure_129_1).onPress();
-          const obj3 = tmp3(11219)(channel, closure_129_1);
+          tmp3(10317)(channel, closure_129_1).onPress();
+          const obj3 = tmp3(10317)(channel, closure_129_1);
         }
         if (closure_129_2 != null) {
           closure_129_2();

@@ -1,7 +1,7 @@
 // Module ID: 4812
 // Function ID: 4813
 // Name: findCodedLinks
-// Dependencies: [4813, 1074, 1076, 4816, 1368, 4817, 4818, 1361, 8222, 4814, 8064, 9410, 8689, 8014, 5761, 13333, 5300, 2]
+// Dependencies: [4813, 1074, 1076, 4816, 1368, 4817, 4818, 1361, 7311, 4814, 7149, 8508, 7779, 7099, 5763, 12483, 5301, 2]
 // Exports: containsCodedLink, default, findCodedLink, isSuspiciousCodedLink, parseGameServerShareCode, parseQuestsEmbedCode, parseUserProfileEmbedCode, remainingPathFromDiscordHostMatch
 
 // Module 4812 (findCodedLinks)
@@ -9,7 +9,7 @@ import BuildOverrideUtils from "BuildOverrideUtils" /* 1361 */;
 import Url from "Url" /* 1368 */;
 import CodedLink from "CodedLink" /* 4817 */;
 import findCodedLinkUrlsDefault from "findCodedLinkUrls" /* 4818 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5300 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5301 */;
 import InviteStore from "InviteStore" /* 4813 */;
 import RegexUtils_mod from "RegexUtils" /* 4816 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 11163
-// Function ID: 11164
+// Module ID: 10261
+// Function ID: 10262
 // Name: HeadlessSlayerStorefrontPurchaseRunner
-// Dependencies: [19, 7754, 1074, 1241, 11164, 1364, 2]
+// Dependencies: [19, 6839, 1074, 1241, 10262, 1364, 2]
 // Exports: HeadlessSlayerStorefrontPurchaseRunner
 
-// Module 11163 (HeadlessSlayerStorefrontPurchaseRunner)
+// Module 10261 (HeadlessSlayerStorefrontPurchaseRunner)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-let useNativeCheckoutStore = fn(7754).useNativeCheckoutStore;
+let useNativeCheckoutStore = fn(6839).useNativeCheckoutStore;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/headless_components/HeadlessSlayerStorefrontPurchaseRunner.tsx");

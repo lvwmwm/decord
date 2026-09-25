@@ -1,17 +1,17 @@
-// Module ID: 11179
-// Function ID: 11180
+// Module ID: 10277
+// Function ID: 10278
 // Name: PremiumGiftBackgroundSelect
-// Dependencies: [32, 19, 17, 21, 4561, 4829, 576, 1478, 4830, 1177, 11180, 11047, 2]
+// Dependencies: [32, 19, 17, 21, 4563, 4829, 576, 1478, 4830, 1177, 10278, 10151, 2]
 // Exports: default
 
-// Module 11179 (PremiumGiftBackgroundSelect)
+// Module 10277 (PremiumGiftBackgroundSelect)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import timing from "timing" /* 4830 */;
-import NativeGiftContext from "NativeGiftContext" /* 11047 */;
+import NativeGiftContext from "NativeGiftContext" /* 10151 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 
 require = fn;
 class GiftBackgroundSelect {

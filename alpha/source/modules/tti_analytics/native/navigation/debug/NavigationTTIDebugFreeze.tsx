@@ -1,11 +1,11 @@
-// Module ID: 16966
-// Function ID: 16967
+// Module ID: 16156
+// Function ID: 16157
 // Name: NavigationTTIDebugFreeze
-// Dependencies: [4693, 2]
+// Dependencies: [4695, 2]
 // Exports: armNavigationTTIDebugFreeze, disarmNavigationTTIDebugFreeze, emitNavigationTTIDebugCheckpoint, getNavigationTTIDebugFreezeTarget, subscribeNavigationTTIDebugFreezeTarget
 
-// Module 16966 (NavigationTTIDebugFreeze)
-import NativeTTIManagerModule from "NativeTTIManagerModule" /* 4693 */;
+// Module 16156 (NavigationTTIDebugFreeze)
+import NativeTTIManagerModule from "NativeTTIManagerModule" /* 4695 */;
 import size from "module_2" /* 2 */;
 
 function notify() {

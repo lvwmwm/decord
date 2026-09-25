@@ -1,34 +1,34 @@
-// Module ID: 11959
-// Function ID: 11960
+// Module ID: 11102
+// Function ID: 11103
 // Name: ExecutedApplicationCommandPopout
-// Dependencies: [19, 17, 4821, 2044, 2101, 2066, 5049, 4474, 1372, 9485, 5297, 1074, 1483, 5298, 21, 4829, 576, 1978, 1177, 4796, 8527, 4673, 4825, 4982, 1115, 7495, 504, 5076, 10080, 8309, 5892, 1400, 5912, 1364, 11960, 4522, 5910, 1610, 7853, 5271, 5992, 7515, 8476, 7483, 2]
+// Dependencies: [19, 17, 4821, 2044, 2101, 2066, 5049, 4476, 1372, 8583, 5298, 1074, 1483, 5299, 21, 4829, 576, 1978, 1177, 4796, 7617, 4675, 4825, 4982, 1115, 6578, 504, 5077, 9177, 7398, 5894, 1400, 5914, 1364, 11103, 4524, 5912, 1610, 6938, 5272, 5994, 6598, 7566, 6566, 2]
 // Exports: default
 
-// Module 11959 (ExecutedApplicationCommandPopout)
+// Module 11102 (ExecutedApplicationCommandPopout)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
 import KeyboardTypes from "KeyboardTypes" /* 1610 */;
 import Server from "Server" /* 1978 */;
-import ToastUtils from "ToastUtils" /* 4522 */;
-import UserUtilsDefault from "UserUtils" /* 4673 */;
+import ToastUtils from "ToastUtils" /* 4524 */;
+import UserUtilsDefault from "UserUtils" /* 4675 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import FastImageDefault from "FastImage" /* 5892 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7853 */;
-import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8476 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8527 */;
-import NativeCommandClipboardModuleDefault from "NativeCommandClipboardModule" /* 11960 */;
+import FastImageDefault from "FastImage" /* 5894 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6938 */;
+import InteractionActionCreatorsAll from "InteractionActionCreators" /* 7566 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7617 */;
+import NativeCommandClipboardModuleDefault from "NativeCommandClipboardModule" /* 11103 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildRoleStore from "GuildRoleStore" /* 2101 */;
 import GuildStore from "GuildStore" /* 2066 */;
 import MessageStore from "MessageStore" /* 5049 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9485 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8583 */;
 
 require = fn;
 function getCommandOptionComponents(option) {
@@ -70,7 +70,7 @@ function getCommandOptionComponents(option) {
             },
             children: null
           };
-          const items = [closure_1_22, channel(4673).getUserTag(user, { decoration: "never" })];
+          const items = [closure_1_22, channel(4675).getUserTag(user, { decoration: "never" })];
           obj.children = items;
           return closure_1_24(user(1177).LegacyText, obj, "optionValue-" + user.name);
         }
@@ -600,7 +600,7 @@ function CommandActionsContainer(channelId) {
               const current2 = chatInputRef.current;
               if (current2 != null) {
                 const obj2 = { type: tmp4(1610).KeyboardTypes.APP_LAUNCHER, context: null };
-                const obj3 = { initialRouteName: AppLauncherRouteName.COMMAND_VIEW, analyticsLocation: tmp4(7853).ApplicationCommandTriggerLocations.RECALL, preSelectedCommand: null };
+                const obj3 = { initialRouteName: AppLauncherRouteName.COMMAND_VIEW, analyticsLocation: tmp4(6938).ApplicationCommandTriggerLocations.RECALL, preSelectedCommand: null };
                 const obj5 = { commandId: null, prefilledOptions: null };
                 const sum = tmp3.id + SUB_COMMAND_KEY_SEPARATOR;
                 obj5.commandId = sum + items1.join(SUB_COMMAND_KEY_SEPARATOR);
@@ -644,11 +644,11 @@ function CommandActionsContainer(channelId) {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, NativeModules: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const SUB_COMMAND_KEY_SEPARATOR = fn(5297).SUB_COMMAND_KEY_SEPARATOR;
+const SUB_COMMAND_KEY_SEPARATOR = fn(5298).SUB_COMMAND_KEY_SEPARATOR;
 const Constants = fn(1074);
 ({ MessageTypes: closure_17, WHITESPACE_RE: closure_18 } = Constants);
 const AppLauncherRouteName = fn(1483).AppLauncherRouteName;
-const ChannelAutocompleteConstants = fn(5298);
+const ChannelAutocompleteConstants = fn(5299);
 ({ CHANNEL_SENTINEL: closure_20, COMMAND_SENTINEL: closure_21, MENTION_SENTINEL: closure_22 } = ChannelAutocompleteConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_23, jsxs: closure_24, Fragment: closure_25 } = jsxProd);
@@ -705,7 +705,7 @@ export default function ExecutedCommandPopout(channelId) {
       const messageInteractionData = InteractionActionCreatorsAll.fetchMessageInteractionData(channelId, messageId);
     }
   }, items1);
-  const obj2 = { value: messageId(7495)(messageId(7515).EXECUTED_COMMAND).analyticsLocations, children: null };
+  const obj2 = { value: messageId(6578)(messageId(6598).EXECUTED_COMMAND).analyticsLocations, children: null };
   const obj3 = { startExpanded: true, bodyStyles: tmp.container, children: null };
   let interactionData1;
   if (stateFromStores != null) {
@@ -735,6 +735,6 @@ export default function ExecutedCommandPopout(channelId) {
     tmp9Result = tmp9(closure_5, obj7);
   }
   obj3.children = tmp9Result;
-  obj2.children = closure_23(channelId(7483).BottomSheet, obj3);
-  return closure_23(channelId(7495).AnalyticsLocationProvider, obj2);
+  obj2.children = closure_23(channelId(6566).BottomSheet, obj3);
+  return closure_23(channelId(6578).AnalyticsLocationProvider, obj2);
 };

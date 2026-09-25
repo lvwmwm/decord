@@ -1,25 +1,25 @@
-// Module ID: 5429
-// Function ID: 5430
+// Module ID: 5430
+// Function ID: 5431
 // Name: ThemedGradient
-// Dependencies: [19, 17, 4648, 21, 4829, 4680, 4679, 4678, 1478, 5285, 4763, 576, 4683, 4647, 672, 1231, 563, 4685, 4762, 1230, 2]
+// Dependencies: [19, 17, 4650, 21, 4829, 4682, 4681, 4680, 1478, 5286, 4763, 576, 4685, 4649, 672, 1231, 563, 4687, 4762, 1230, 2]
 // Exports: CustomThemedGradient, default, validateColors
 
-// Module 5429 (ThemedGradient)
+// Module 5430 (ThemedGradient)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4647 */;
-import ColorUtils from "ColorUtils" /* 4678 */;
-import utils_ColorDefault from "utils/Color" /* 4679 */;
-import shared from "shared" /* 4680 */;
-import GuildThemePresets from "GuildThemePresets" /* 4683 */;
-import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 4685 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4649 */;
+import ColorUtils from "ColorUtils" /* 4680 */;
+import utils_ColorDefault from "utils/Color" /* 4681 */;
+import shared from "shared" /* 4682 */;
+import GuildThemePresets from "GuildThemePresets" /* 4685 */;
+import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 4687 */;
 import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 4762 */;
 import useThemeDefault from "useTheme" /* 4763 */;
-import LinearGradientDefault from "LinearGradient" /* 5285 */;
+import LinearGradientDefault from "LinearGradient" /* 5286 */;
 import noop from "module_19" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4648 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4650 */;
 
 require = fn;
 function getMixedGradientColor(mixColorOverride) {
@@ -346,8 +346,8 @@ function CustomThemesGradient(arg0) {
     items2[3] = absolute;
     items2[4] = componentStyles;
     obj.style = items2;
-    tmp10Result = closure_6(reduced(5285), obj);
-    const tmp2Result = reduced(5285);
+    tmp10Result = closure_6(reduced(5286), obj);
+    const tmp2Result = reduced(5286);
   }
   return tmp10Result;
 }
@@ -425,13 +425,13 @@ export default function ThemedGradient(overlayOpacity) {
           const items1 = [tmp59, ];
           const obj4 = { style: null };
           const items2 = [tmp2.softenGradient, ];
-          const obj5 = { backgroundColor: tmp6(4678).hexWithOpacity(tmp8, num) };
+          const obj5 = { backgroundColor: tmp6(4680).hexWithOpacity(tmp8, num) };
           items2[1] = obj5;
           obj4.style = items2;
           items1[1] = timestampProducer(View, obj4);
           obj3.children = items1;
           tmp60 = React5(View, obj3);
-          const tmp6Result8 = tmp6(4678);
+          const tmp6Result8 = tmp6(4680);
         }
         return tmp60;
       }
@@ -447,13 +447,13 @@ export default function ThemedGradient(overlayOpacity) {
         const items3 = [tmp48, ];
         const obj8 = { style: null };
         const items4 = [tmp2.softenGradient, ];
-        const obj9 = { backgroundColor: tmp6(4678).hexWithOpacity(tmp8, num) };
+        const obj9 = { backgroundColor: tmp6(4680).hexWithOpacity(tmp8, num) };
         items4[1] = obj9;
         obj8.style = items4;
         items3[1] = timestampProducer(View, obj8);
         obj7.children = items3;
         tmp49 = React5(View, obj7);
-        const tmp6Result9 = tmp6(4678);
+        const tmp6Result9 = tmp6(4680);
       }
       return tmp49;
     }
@@ -470,13 +470,13 @@ export default function ThemedGradient(overlayOpacity) {
       const items5 = [tmp39, ];
       const obj12 = { style: null };
       const items6 = [tmp2.softenGradient, ];
-      const obj13 = { backgroundColor: tmp6(4678).hexWithOpacity(tmp8, num) };
+      const obj13 = { backgroundColor: tmp6(4680).hexWithOpacity(tmp8, num) };
       items6[1] = obj13;
       obj12.style = items6;
       items5[1] = tmp34(View, obj12);
       obj11.children = items5;
       tmp40 = React5(View, obj11);
-      const tmp6Result10 = tmp6(4678);
+      const tmp6Result10 = tmp6(4680);
     }
     let tmp13 = tmp40;
     tmp34 = timestampProducer;
@@ -494,13 +494,13 @@ export default function ThemedGradient(overlayOpacity) {
           const items7 = [tmp30, ];
           const obj16 = { style: null };
           const items8 = [tmp2.softenGradient, ];
-          const obj17 = { backgroundColor: tmp6(4678).hexWithOpacity(tmp8, num) };
+          const obj17 = { backgroundColor: tmp6(4680).hexWithOpacity(tmp8, num) };
           items8[1] = obj17;
           obj16.style = items8;
           items7[1] = tmp23(View, obj16);
           obj15.children = items7;
           tmp31 = React5(View, obj15);
-          const tmp6Result11 = tmp6(4678);
+          const tmp6Result11 = tmp6(4680);
         }
         tmp13 = tmp31;
         tmp23 = timestampProducer;
@@ -518,13 +518,13 @@ export default function ThemedGradient(overlayOpacity) {
         const items9 = [tmp19, ];
         const obj20 = { style: null };
         const items10 = [tmp2.softenGradient, ];
-        const obj21 = { backgroundColor: tmp6(4678).hexWithOpacity(tmp8, num) };
+        const obj21 = { backgroundColor: tmp6(4680).hexWithOpacity(tmp8, num) };
         items10[1] = obj21;
         obj20.style = items10;
         items9[1] = tmp14(View, obj20);
         obj19.children = items9;
         tmp20 = React5(View, obj19);
-        const tmp6Result12 = tmp6(4678);
+        const tmp6Result12 = tmp6(4680);
       }
       tmp13 = tmp20;
       tmp14 = timestampProducer;

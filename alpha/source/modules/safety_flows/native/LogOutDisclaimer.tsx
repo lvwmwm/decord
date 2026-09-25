@@ -1,16 +1,16 @@
-// Module ID: 18434
-// Function ID: 18435
+// Module ID: 17665
+// Function ID: 17666
 // Name: LogOutDisclaimer
-// Dependencies: [21, 14551, 4825, 1115, 2780, 6922, 2]
+// Dependencies: [21, 13712, 4825, 1115, 2780, 6005, 2]
 // Exports: default
 
-// Module 18434 (LogOutDisclaimer)
+// Module 17665 (LogOutDisclaimer)
 import jsxProd from "jsxProd" /* 21 */;
 import util from "util" /* 1115 */;
 import _modDef2780 from "module_2780" /* 2780 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6922 */;
-import ModalDisclaimer from "ModalDisclaimer" /* 14551 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
+import ModalDisclaimer from "ModalDisclaimer" /* 13712 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;

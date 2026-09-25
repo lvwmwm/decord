@@ -1,11 +1,11 @@
-// Module ID: 10119
-// Function ID: 10120
+// Module ID: 9216
+// Function ID: 9217
 // Name: ProfileCustomizationNavigationStore
-// Dependencies: [4699, 1084, 2]
+// Dependencies: [4701, 1084, 2]
 
-// Module 10119 (ProfileCustomizationNavigationStore)
+// Module 9216 (ProfileCustomizationNavigationStore)
 import UserSettingsConstants from "UserSettingsConstants" /* 1084 */;
-import ZustandStore from "ZustandStore" /* 4699 */;
+import ZustandStore from "ZustandStore" /* 4701 */;
 import size from "module_2" /* 2 */;
 
 const constants = UserSettingsConstants.ProfileCustomizationSubsection;

@@ -1,28 +1,28 @@
-// Module ID: 12896
-// Function ID: 12897
+// Module ID: 12025
+// Function ID: 12026
 // Name: GuildPowerupsMultiPerkBottomSheet
-// Dependencies: [17, 21, 4829, 576, 672, 4533, 4763, 12862, 12849, 12845, 12868, 12897, 12869, 12883, 12884, 12888, 12872, 1177, 1115, 4825, 12873, 5273, 2518, 1612, 12898, 7483, 6957, 12901, 12894, 2]
+// Dependencies: [17, 21, 4829, 576, 672, 4535, 4763, 11991, 11978, 11974, 11997, 12026, 11998, 12012, 12013, 12017, 12001, 1177, 1115, 4825, 12002, 5274, 2518, 1612, 12027, 6566, 6040, 12030, 12023, 2]
 // Exports: default
 
-// Module 12896 (GuildPowerupsMultiPerkBottomSheet)
+// Module 12025 (GuildPowerupsMultiPerkBottomSheet)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import themes from "themes" /* 4533 */;
+import themes from "themes" /* 4535 */;
 import useThemeDefault from "useTheme" /* 4763 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12845 */;
-import usePowerupActiveStatus from "usePowerupActiveStatus" /* 12849 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12862 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12868 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12869 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 12872 */;
-import useCanGuildPowerupBeToggledDefault from "useCanGuildPowerupBeToggled" /* 12883 */;
-import useGuildPowerupOnActivateDefault from "useGuildPowerupOnActivate" /* 12884 */;
-import useGuildPowerupOnShowDeactivateDefault from "useGuildPowerupOnShowDeactivate" /* 12888 */;
-import useGuildPowerupColorConfigDefault from "useGuildPowerupColorConfig" /* 12897 */;
-import usePowerupGroupConfigDefault from "usePowerupGroupConfig" /* 12898 */;
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 11974 */;
+import usePowerupActiveStatus from "usePowerupActiveStatus" /* 11978 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 11991 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 11997 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 11998 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 12001 */;
+import useCanGuildPowerupBeToggledDefault from "useCanGuildPowerupBeToggled" /* 12012 */;
+import useGuildPowerupOnActivateDefault from "useGuildPowerupOnActivate" /* 12013 */;
+import useGuildPowerupOnShowDeactivateDefault from "useGuildPowerupOnShowDeactivate" /* 12017 */;
+import useGuildPowerupColorConfigDefault from "useGuildPowerupColorConfig" /* 12026 */;
+import usePowerupGroupConfigDefault from "usePowerupGroupConfig" /* 12027 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createStyles_mod from "createStyles" /* 4829 */;
 import size from "module_2" /* 2 */;
@@ -94,10 +94,10 @@ function GuildPowerupsMultiPerkCard(arg0) {
   const items4 = [React4(Text_Text.Text, { variant: "heading-md/semibold", color: useGuildPowerupColorConfigDefault(result).textColor, children: powerup.title }), ];
   if (null != calculatePowerupCardStatus) {
     const obj11 = { status: calculatePowerupCardStatus };
-    let tmp18Result = tmp18(tmp(12873).GuildPowerupCardFooterStatus, obj11);
+    let tmp18Result = tmp18(tmp(12002).GuildPowerupCardFooterStatus, obj11);
   } else {
     const obj12 = { cost: powerup.cost };
-    tmp18Result = tmp18(tmp(12873).GuildPowerupCardFooterCost, obj12);
+    tmp18Result = tmp18(tmp(12002).GuildPowerupCardFooterCost, obj12);
   }
   items4[1] = tmp18Result;
   obj9.children = items4;
@@ -125,7 +125,7 @@ function GuildPowerupsMultiPerkCard(arg0) {
         _undefined();
       }
     };
-    tmp18(tmp(5273).Button, obj13);
+    tmp18(tmp(5274).Button, obj13);
   }
 }
 const View = _mod17.View;
@@ -190,12 +190,12 @@ export default function GuildPowerupsMultiPerkBottomSheet(guildId) {
     const obj3 = { paddingBottom: useSafeAreaInsetsDefault().bottom };
     obj2.contentContainerStyle = obj3;
     ({ title: obj4.title, description: obj4.description } = tmp4);
-    const items = [closure_4(tmp2(12901), { title: null, description: null }), , ];
+    const items = [closure_4(tmp2(12030), { title: null, description: null }), , ];
     let tmp6Result = null != tmp4.disabledReason;
     if (tmp6Result) {
       const obj6 = { style: tmp.disabledReasonContainer, children: null };
       const obj7 = { text: tmp4.disabledReason };
-      obj6.children = tmp6(tmp2(12894), obj7);
+      obj6.children = tmp6(tmp2(12023), obj7);
       tmp6Result = tmp6(View, obj6);
     }
     items[1] = tmp6Result;
@@ -204,8 +204,8 @@ export default function GuildPowerupsMultiPerkBottomSheet(guildId) {
     obj13.children = powerups.map((powerup) => React4(GuildPowerupsMultiPerkCard, { guildId, powerup, forceStaticImage: forceStaticImages.forceStaticImages }, powerup.skuId));
     items[2] = closure_4(View, obj13);
     obj2.children = items;
-    obj.children = closure_5(guildId(6957).BottomSheetScrollView, obj2);
-    tmp6Result2 = tmp6(guildId(7483).BottomSheet, obj);
+    obj.children = closure_5(guildId(6040).BottomSheetScrollView, obj2);
+    tmp6Result2 = tmp6(guildId(6566).BottomSheet, obj);
     const obj5 = { title: null, description: null };
   }
   return tmp6Result2;

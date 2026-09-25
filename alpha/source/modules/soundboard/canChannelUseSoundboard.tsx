@@ -1,12 +1,12 @@
-// Module ID: 7705
-// Function ID: 7706
+// Module ID: 6788
+// Function ID: 6789
 // Name: canChannelUseSoundboard
-// Dependencies: [2044, 4464, 2098, 1074, 504, 2]
+// Dependencies: [2044, 4466, 2098, 1074, 504, 2]
 // Exports: canSelectedVoiceChannelUseSoundboard, default, useCanChannelUseSoundboard
 
-// Module 7705 (canChannelUseSoundboard)
+// Module 6788 (canChannelUseSoundboard)
 import ChannelStore from "ChannelStore" /* 2044 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
 
 const require = globalThis.__r;

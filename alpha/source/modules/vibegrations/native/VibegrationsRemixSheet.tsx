@@ -1,17 +1,17 @@
-// Module ID: 17039
-// Function ID: 17040
+// Module ID: 16229
+// Function ID: 16230
 // Name: VibegrationsRemixSheet
-// Dependencies: [5, 32, 19, 17, 2066, 5743, 21, 4829, 576, 504, 5362, 1115, 3714, 7528, 17040, 4796, 7530, 7482, 5992, 5910, 4825, 5273, 2]
+// Dependencies: [5, 32, 19, 17, 2066, 5745, 21, 4829, 576, 504, 5363, 1115, 3714, 6611, 16230, 4796, 6613, 6565, 5994, 5912, 4825, 5274, 2]
 // Exports: default
 
-// Module 17039 (VibegrationsRemixSheet)
+// Module 16229 (VibegrationsRemixSheet)
 import nativeDefault from "native" /* 576 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7528 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6611 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import SortedGuildStore from "SortedGuildStore" /* 5743 */;
+import SortedGuildStore from "SortedGuildStore" /* 5745 */;
 
 require = fn;
 const View = fn(17).View;
@@ -122,7 +122,7 @@ export default function VibegrationsRemixSheet(project) {
               _undefined(null);
               dependencyMap = 1;
               c3 = 1;
-              const obj5 = { value: tmp2(17040).remixVibegrationsProjectInto(project, first), done: false };
+              const obj5 = { value: tmp2(16230).remixVibegrationsProjectInto(project, first), done: false };
               return obj5;
             }
           }

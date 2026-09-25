@@ -1,13 +1,13 @@
-// Module ID: 9007
-// Function ID: 9008
+// Module ID: 8101
+// Function ID: 8102
 // Name: InAppReportsTextLineElement
-// Dependencies: [5, 32, 19, 17, 21, 4829, 576, 5903, 5293, 1364, 4808, 4520, 4825, 5273, 1115, 7522, 4522, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4829, 576, 5905, 5294, 1364, 4808, 4522, 4825, 5274, 1115, 6605, 4524, 2]
 // Exports: default
 
-// Module 9007 (InAppReportsTextLineElement)
+// Module 8101 (InAppReportsTextLineElement)
 import nativeDefault from "native" /* 576 */;
-import ToastUtils from "ToastUtils" /* 4522 */;
-import ClipboardUtils from "ClipboardUtils" /* 7522 */;
+import ToastUtils from "ToastUtils" /* 4524 */;
+import ClipboardUtils from "ClipboardUtils" /* 6605 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

@@ -1,9 +1,9 @@
-// Module ID: 17596
-// Function ID: 17597
+// Module ID: 16820
+// Function ID: 16821
 // Name: ActivityInviteSheetRow
-// Dependencies: [19, 17, 2044, 2066, 1372, 8065, 21, 4829, 576, 504, 4982, 10169, 5427, 1177, 9985, 4673, 1115, 1397, 2010, 4825, 5910, 10243, 2]
+// Dependencies: [19, 17, 2044, 2066, 1372, 7150, 21, 4829, 576, 504, 4982, 9266, 5428, 1177, 9083, 4675, 1115, 1397, 2010, 4825, 5912, 9340, 2]
 
-// Module 17596 (ActivityInviteSheetRow)
+// Module 16820 (ActivityInviteSheetRow)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 
 const require = fn;
 const View = fn(17).View;
-const InviteSendStates = fn(8065).InviteSendStates;
+const InviteSendStates = fn(7150).InviteSendStates;
 const jsx = fn(21).jsx;
 const createStyles = fn(4829);
 let obj = { acronym: null };

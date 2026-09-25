@@ -1,14 +1,14 @@
-// Module ID: 15433
-// Function ID: 15434
+// Module ID: 14601
+// Function ID: 14602
 // Name: useYouBarMargins
-// Dependencies: [15434, 1612, 1365, 4526, 576, 2]
+// Dependencies: [14602, 1612, 1365, 4528, 576, 2]
 // Exports: useYouBarBottomMargin, useYouBarHorizontalMargin
 
-// Module 15433 (useYouBarMargins)
+// Module 14601 (useYouBarMargins)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import useToken from "useToken" /* 4526 */;
-import YouBarConstants from "YouBarConstants" /* 15434 */;
+import useToken from "useToken" /* 4528 */;
+import YouBarConstants from "YouBarConstants" /* 14602 */;
 import size from "module_2" /* 2 */;
 
 ({ YOU_BAR_MARGIN_IOS: c3, YOU_BAR_MARGIN: closure_4 } = YouBarConstants);

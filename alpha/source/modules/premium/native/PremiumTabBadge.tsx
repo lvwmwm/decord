@@ -1,31 +1,31 @@
-// Module ID: 15327
-// Function ID: 15328
+// Module ID: 14493
+// Function ID: 14494
 // Name: PremiumTabBadge
-// Dependencies: [32, 19, 17, 4489, 1374, 7762, 21, 4829, 576, 4541, 4680, 4763, 4825, 9128, 1249, 11087, 1177, 15328, 7777, 8409, 4483, 4649, 2028, 504, 7718, 8405, 8404, 13789, 1115, 5285, 1094, 1364, 2]
+// Dependencies: [32, 19, 17, 4491, 1374, 6847, 21, 4829, 576, 4543, 4682, 4763, 4825, 8222, 1249, 10191, 1177, 14494, 6862, 7498, 4485, 4651, 2028, 504, 6801, 7494, 7493, 12943, 1115, 5286, 1094, 1364, 2]
 // Exports: default
 
-// Module 15327 (PremiumTabBadge)
+// Module 14493 (PremiumTabBadge)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import dismissible_content from "dismissible_content" /* 2028 */;
-import PremiumUtils from "PremiumUtils" /* 4483 */;
-import useBadgeTextVariant from "useBadgeTextVariant" /* 4541 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4649 */;
-import shared from "shared" /* 4680 */;
+import PremiumUtils from "PremiumUtils" /* 4485 */;
+import useBadgeTextVariant from "useBadgeTextVariant" /* 4543 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4651 */;
+import shared from "shared" /* 4682 */;
 import useThemeDefault from "useTheme" /* 4763 */;
-import LinearGradientDefault from "LinearGradient" /* 5285 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7718 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7777 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8409 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9128 */;
-import MarketingComponentType from "MarketingComponentType" /* 11087 */;
+import LinearGradientDefault from "LinearGradient" /* 5286 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6801 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 6862 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 7498 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8222 */;
+import MarketingComponentType from "MarketingComponentType" /* 10191 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 4489 */;
+import SubscriptionStore from "SubscriptionStore" /* 4491 */;
 
 const Text_Text = tmp(4825);
-const _modDef15328 = tmp5(15328);
+const _modDef14494 = tmp5(14494);
 require = fn;
 function ThemedTabBadge(label) {
   const badgeTextVariant = useBadgeTextVariant.useBadgeTextVariant();
@@ -60,7 +60,7 @@ function OfferBadge(componentId) {
   tmp6(obj2, { disableTrack: null == componentId });
   if (acked) {
     const obj5 = { style: tmp4.acked, children: null };
-    const obj6 = { source: _modDef15328, size: tmp(1177).Icon.Sizes.EXTRA_SMALL, color: tmp4.icon.color, style: tmp4.icon };
+    const obj6 = { source: _modDef14494, size: tmp(1177).Icon.Sizes.EXTRA_SMALL, color: tmp4.icon.color, style: tmp4.icon };
     const items = [React6(tmp(1177).Icon, obj6), ];
     const obj7 = { variant: badgeTextVariant, color: "interactive-text-default", style: null, children: null };
     const items1 = [, ];
@@ -78,7 +78,7 @@ function OfferBadge(componentId) {
 }
 const View = fn(17).View;
 let closure_6 = fn(1374).PREMIUM_TIER_2_REFERRAL_TRIAL_ID;
-const Gradients = fn(7762).Gradients;
+const Gradients = fn(6847).Gradients;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const createStyles = fn(4829);
@@ -126,19 +126,19 @@ export default function PremiumTabBadge() {
       let items1 = [tmp(2028).DismissibleContent.REFERRAL_TRIAL_MOBILE_NITRO_HOME_BADGE];
     }
     [tmp14, r10055] = tmp11(items1, undefined, true);
-    tmp(7718);
+    tmp(6801);
     if (!tmp7) {
       if (hasTier2Premium) {
         let items2 = [tmp(2028).DismissibleContent.WHATS_NEW_TENURE_BADGE_REWARD];
       }
       [tmp18, r10067] = tmp12(tmp16(items2, undefined, true), 2);
       const tmp12Result = tmp12(tmp16(items2, undefined, true), 2);
-      const isEligibleSenderForReferralProgram = tmp(8405).useIsEligibleSenderForReferralProgram();
-      const tmpResult11 = tmp(8405);
-      const isReferralProgramEntrypointBadgeAcknowledged = tmp(8404).useIsReferralProgramEntrypointBadgeAcknowledged();
-      const tmpResult12 = tmp(8404);
-      const promotionMarketingComponent = tmp(13789).usePromotionMarketingComponent(tmp(11087).MarketingComponentType.PREMIUM_TAB);
-      const tmpResult14 = tmp(7718);
+      const isEligibleSenderForReferralProgram = tmp(7494).useIsEligibleSenderForReferralProgram();
+      const tmpResult11 = tmp(7494);
+      const isReferralProgramEntrypointBadgeAcknowledged = tmp(7493).useIsReferralProgramEntrypointBadgeAcknowledged();
+      const tmpResult12 = tmp(7493);
+      const promotionMarketingComponent = tmp(12943).usePromotionMarketingComponent(tmp(10191).MarketingComponentType.PREMIUM_TAB);
+      const tmpResult14 = tmp(6801);
       let prop = null;
       if (null != promotionMarketingComponent) {
         prop = null;
@@ -153,7 +153,7 @@ export default function PremiumTabBadge() {
       if (str2 == null) {
         str2 = "";
       }
-      const tmpResult13 = tmp(13789);
+      const tmpResult13 = tmp(12943);
       if (null != promotionMarketingComponent) {
         if ("premiumTab" === promotionMarketingComponent.properties.properties.oneofKind) {
           const obj4 = { acked: tmp27 !== tmp(2028).DismissibleContent.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, badgeCopy: promotionMarketingComponent.properties.properties.premiumTab.badgeLabel, ackedBadgeCopy: promotionMarketingComponent.properties.properties.premiumTab.acknowledgedBadgeLabel, componentId: null, promotionId: null };
@@ -213,7 +213,7 @@ export default function PremiumTabBadge() {
           const items4 = [, ];
           ({ premiumDiscountBadge: arr6[0], ackedBadge: arr6[1] } = intl);
           obj11.style = items4;
-          const obj12 = { source: _modDef15328, size: tmp(1177).Icon.Sizes.EXTRA_SMALL, color: intl.icon.color, style: intl.icon };
+          const obj12 = { source: _modDef14494, size: tmp(1177).Icon.Sizes.EXTRA_SMALL, color: intl.icon.color, style: intl.icon };
           const items5 = [React6(tmp(1177).Icon, obj12), ];
           const obj13 = { variant: badgeTextVariant, color: "interactive-text-default", style: null, children: null };
           const items6 = [, ];

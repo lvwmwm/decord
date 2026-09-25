@@ -1,21 +1,21 @@
-// Module ID: 5988
-// Function ID: 5989
+// Module ID: 5990
+// Function ID: 5991
 // Name: ChangeEmailCollectReasons
-// Dependencies: [19, 17, 1372, 5989, 1074, 21, 4829, 576, 504, 1484, 1241, 1094, 5990, 5993, 5995, 4825, 1115, 5273, 2]
+// Dependencies: [19, 17, 1372, 5991, 1074, 21, 4829, 576, 504, 1484, 1241, 1094, 5992, 5995, 5997, 4825, 1115, 5274, 2]
 // Exports: default
 
-// Module 5988 (ChangeEmailCollectReasons)
+// Module 5990 (ChangeEmailCollectReasons)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import TableRadioGroup from "TableRadioGroup" /* 5990 */;
+import TableRadioGroup from "TableRadioGroup" /* 5992 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const VerificationConstants = fn(5989);
+const VerificationConstants = fn(5991);
 ({ CHANGE_EMAIL_REASONS_ORDER: closure_7, SUSPICIOUS_CHANGE_EMAIL_REASONS: closure_8 } = VerificationConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);

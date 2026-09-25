@@ -1,12 +1,12 @@
-// Module ID: 9030
-// Function ID: 9031
+// Module ID: 8124
+// Function ID: 8125
 // Name: useResolveGame
-// Dependencies: [19, 7501, 7639, 2]
+// Dependencies: [19, 6584, 6722, 2]
 // Exports: default
 
-// Module 9030 (useResolveGame)
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7501 */;
-import useGame from "useGame" /* 7639 */;
+// Module 8124 (useResolveGame)
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6584 */;
+import useGame from "useGame" /* 6722 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

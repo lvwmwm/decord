@@ -1,14 +1,14 @@
-// Module ID: 18068
-// Function ID: 18069
+// Module ID: 17296
+// Function ID: 17297
 // Name: useGuildBotApplications
-// Dependencies: [19, 9940, 504, 9946, 18069, 1370, 2]
+// Dependencies: [19, 9038, 504, 9044, 17297, 1370, 2]
 // Exports: useGuildBotApplications
 
-// Module 18068 (useGuildBotApplications)
+// Module 17296 (useGuildBotApplications)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 9946 */;
+import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 9044 */;
 import noop from "module_19" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9940 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9038 */;
 
 const require = globalThis.__r;
 

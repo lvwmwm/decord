@@ -1,11 +1,11 @@
-// Module ID: 15120
-// Function ID: 15121
+// Module ID: 14286
+// Function ID: 14287
 // Name: AccountEditPassword
-// Dependencies: [19, 17, 21, 4829, 576, 15121, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 14287, 2]
 
-// Module 15120 (AccountEditPassword)
+// Module 14286 (AccountEditPassword)
 import nativeDefault from "native" /* 576 */;
-import UserSettingsAccountEditPasswordDefault from "UserSettingsAccountEditPassword" /* 15121 */;
+import UserSettingsAccountEditPasswordDefault from "UserSettingsAccountEditPassword" /* 14287 */;
 import noop from "module_19" /* 19 */;
 
 get_ActivityIndicator = fn(17);

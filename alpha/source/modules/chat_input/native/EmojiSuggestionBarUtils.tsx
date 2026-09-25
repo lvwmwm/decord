@@ -1,13 +1,13 @@
-// Module ID: 12775
-// Function ID: 12776
+// Module ID: 11901
+// Function ID: 11902
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 4821, 1074, 21, 1177, 4561, 5272, 4535, 4830, 504, 12740, 12776, 12777, 9508, 2]
+// Dependencies: [32, 19, 4821, 1074, 21, 1177, 4563, 5273, 4537, 4830, 504, 11866, 11902, 11903, 8606, 2]
 // Exports: EmojiEntranceAnimation, getEmojiEntranceKey, sortEmojisForDisplay, useEmojiSuggestionBarState, useSuggestionBarHeight
 
-// Module 12775 (EmojiSuggestionBarUtils)
-import native from "native" /* 4535 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
-import spring from "spring" /* 5272 */;
+// Module 11901 (EmojiSuggestionBarUtils)
+import native from "native" /* 4537 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
+import spring from "spring" /* 5273 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
@@ -115,7 +115,7 @@ export const useSuggestionBarHeight = function useSuggestionBarHeight(transition
           obj = closure_0(dependencyMap[6]);
         }
       };
-      const __closure = { runOnJS: tmp(4561).runOnJS, cleanUp };
+      const __closure = { runOnJS: tmp(4563).runOnJS, cleanUp };
       fn.__closure = __closure;
       fn.__workletHash = 15923583203906;
       fn.__initData = __initData;

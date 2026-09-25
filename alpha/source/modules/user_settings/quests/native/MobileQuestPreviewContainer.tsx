@@ -1,10 +1,10 @@
-// Module ID: 15509
-// Function ID: 15510
+// Module ID: 14679
+// Function ID: 14680
 // Name: MobileQuestPreviewContainer
 // Dependencies: [17, 21, 4829, 576, 4825, 2]
 // Exports: default
 
-// Module 15509 (MobileQuestPreviewContainer)
+// Module 14679 (MobileQuestPreviewContainer)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4825 */;

@@ -1,20 +1,20 @@
-// Module ID: 17642
-// Function ID: 17643
+// Module ID: 16866
+// Function ID: 16867
 // Name: SoundboardSoundPreviewActionSheet
-// Dependencies: [32, 19, 17, 2044, 1372, 5311, 1074, 21, 4829, 576, 1364, 17640, 17639, 17625, 504, 7668, 7674, 1241, 5273, 10583, 10589, 1115, 10478, 8981, 7530, 7463, 12275, 4825, 5401, 8624, 2]
+// Dependencies: [32, 19, 17, 2044, 1372, 5312, 1074, 21, 4829, 576, 1364, 16864, 16863, 16849, 504, 6751, 6757, 1241, 5274, 9687, 9693, 1115, 9580, 8075, 6613, 6546, 11401, 4825, 5402, 7714, 2]
 // Exports: default
 
-// Module 17642 (SoundboardSoundPreviewActionSheet)
+// Module 16866 (SoundboardSoundPreviewActionSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7668 */;
-import SoundboardUtils from "SoundboardUtils" /* 7674 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17625 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 6751 */;
+import SoundboardUtils from "SoundboardUtils" /* 6757 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 16849 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import UserStore from "UserStore" /* 1372 */;
-import SoundboardStore from "SoundboardStore" /* 5311 */;
+import SoundboardStore from "SoundboardStore" /* 5312 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -116,14 +116,14 @@ export default function SoundboardSoundPreviewActionSheet(channel) {
   const items9 = [id, sound, tmp12];
   const callback2 = obj3.useCallback(() => {
     if (stateFromStores1) {
-      tmp(7668).removeFavoriteSound(sound.soundId);
-      const tmpResult = tmp(7668);
+      tmp(6751).removeFavoriteSound(sound.soundId);
+      const tmpResult = tmp(6751);
     } else {
       const obj = { sound, location: null };
       const obj2 = { object: constants2.SOUNDBOARD_SOUND };
       obj.location = obj2;
-      tmp(7674).trackSoundFavorited(obj);
-      const tmpResult2 = tmp(7674);
+      tmp(6757).trackSoundFavorited(obj);
+      const tmpResult2 = tmp(6757);
       SoundboardActionCreators.addFavoriteSound(sound.soundId);
     }
   }, items8);

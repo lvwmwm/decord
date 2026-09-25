@@ -1,13 +1,13 @@
-// Module ID: 13609
-// Function ID: 13610
+// Module ID: 12763
+// Function ID: 12764
 // Name: CodedLinks
-// Dependencies: [32, 4465, 2066, 1372, 8013, 12280, 4817, 13610, 13611, 13621, 13623, 13616, 13625, 13618, 11820, 12149, 13333, 11868, 13626, 1370, 2]
+// Dependencies: [32, 4467, 2066, 1372, 7098, 11406, 4817, 12764, 12765, 12775, 12777, 12770, 12779, 12772, 11002, 11271, 12483, 11011, 12780, 1370, 2]
 // Exports: createCodedLinkEmbeds
 
-// Module 13609 (CodedLinks)
-import ApplicationCodedLink from "ApplicationCodedLink" /* 8013 */;
+// Module 12763 (CodedLinks)
+import ApplicationCodedLink from "ApplicationCodedLink" /* 7098 */;
 import _slicedToArray from "module_32" /* 32 */;
-import LurkingStore from "LurkingStore" /* 4465 */;
+import LurkingStore from "LurkingStore" /* 4467 */;
 import GuildStore from "GuildStore" /* 2066 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -29,12 +29,12 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
             return null;
           } else {
             if (tmpResult.isApplicationCodedLinkMobileSupported(type)) {
-              const applicationCodedLinkData = tmp(8013).getApplicationCodedLinkData(type, code, url);
+              const applicationCodedLinkData = tmp(7098).getApplicationCodedLinkData(type, code, url);
               if (null == applicationCodedLinkData) {
                 return null;
               } else {
                 const obj2 = { appId: applicationCodedLinkData.applicationId, channel: tmp27, message, theme };
-                const appLinkGateResult = tmp(12280).getAppLinkGateResult(obj2);
+                const appLinkGateResult = tmp(11406).getAppLinkGateResult(obj2);
                 if ("unavailable" === appLinkGateResult.state) {
                   return null;
                 } else if ("blocked" === appLinkGateResult.state) {
@@ -44,7 +44,7 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                   const type2 = applicationCodedLinkData.type;
                   if (tmp(4817).CodedLinkType.ACTIVITY_BOOKMARK === type2) {
                     const obj3 = { theme: tmp32, embedUrl: url, message: tmp31, app, params: applicationCodedLinkData.params };
-                    return tmp(13610).createActivityMessageEmbed(obj3);
+                    return tmp(12764).createActivityMessageEmbed(obj3);
                   } else {
                     if (tmp(4817).CodedLinkType.APP_DIRECTORY_PROFILE !== type2) {
                       if (tmp(4817).CodedLinkType.APP_OAUTH2_LINK !== type2) {
@@ -52,23 +52,23 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                       }
                     }
                     const obj4 = { theme: tmp32, embedUrl: url, message: tmp31, app };
-                    return tmp(12280).createAppMessageEmbed(obj4);
+                    return tmp(11406).createAppMessageEmbed(obj4);
                   }
                 }
-                const tmpResult19 = tmp(12280);
+                const tmpResult19 = tmp(11406);
               }
-              const tmpResult18 = tmp(8013);
+              const tmpResult18 = tmp(7098);
             } else {
               return null;
             }
-            tmpResult = tmp(8013);
+            tmpResult = tmp(7098);
           }
         } else if (tmp(4817).CodedLinkType.INVITE === type) {
-          return tmp(13611).createInviteEmbed(message, code, theme);
+          return tmp(12765).createInviteEmbed(message, code, theme);
         } else if (tmp(4817).CodedLinkType.TEMPLATE === type) {
-          return tmp(13621).createGuildTemplateEmbed(code, theme);
+          return tmp(12775).createGuildTemplateEmbed(code, theme);
         } else if (tmp(4817).CodedLinkType.BUILD_OVERRIDE === type) {
-          return tmp(13623).createBuildOverrideEmbed(code, theme);
+          return tmp(12777).createBuildOverrideEmbed(code, theme);
         } else if (tmp(4817).CodedLinkType.MANUAL_BUILD_OVERRIDE === type) {
           currentUser = UserStore.getCurrentUser();
           let isStaffResult;
@@ -92,22 +92,22 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
           }
           let buildOverrideEmbed = null;
           if (isStaffResult) {
-            buildOverrideEmbed = tmp(13623).createBuildOverrideEmbed(code, theme);
-            const tmpResult25 = tmp(13623);
+            buildOverrideEmbed = tmp(12777).createBuildOverrideEmbed(code, theme);
+            const tmpResult25 = tmp(12777);
           }
           return buildOverrideEmbed;
         } else if (tmp(4817).CodedLinkType.EVENT === type) {
-          return tmp(13616).createGuildScheduledEventLinkEmbed(code, theme);
+          return tmp(12770).createGuildScheduledEventLinkEmbed(code, theme);
         } else if (tmp(4817).CodedLinkType.CHANNEL_LINK === type) {
-          return tmp(13625).createVoiceChannelLinkEmbed(code, theme);
+          return tmp(12779).createVoiceChannelLinkEmbed(code, theme);
         } else if (tmp(4817).CodedLinkType.EMBEDDED_ACTIVITY_INVITE === type) {
           const obj5 = { theme, inviteCode: code };
-          return tmp(13618).createEmbeddedActivityInviteEmbed(obj5);
+          return tmp(12772).createEmbeddedActivityInviteEmbed(obj5);
         } else if (tmp(4817).CodedLinkType.EXPERIMENT === type) {
           let experimentEmbed = null;
           if (tmpResult29.canSeeExperimentEmbeds()) {
-            experimentEmbed = tmp(12149).createExperimentEmbed(url, theme);
-            const tmpResult30 = tmp(12149);
+            experimentEmbed = tmp(11271).createExperimentEmbed(url, theme);
+            const tmpResult30 = tmp(11271);
           }
           return experimentEmbed;
         } else {
@@ -117,7 +117,7 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                 if (tmp(4817).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
                   if (tmp(4817).CodedLinkType.QUESTS_EMBED === type) {
                     const obj6 = { theme, questId: code, currentUser };
-                    return tmp(13626).createQuestsEmbed(obj6);
+                    return tmp(12780).createQuestsEmbed(obj6);
                   } else {
                     if (tmp(4817).CodedLinkType.COLLECTIBLES_SHOP !== type) {
                       if (tmp(4817).CodedLinkType.GAME_PROFILE !== type) {
@@ -132,7 +132,7 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                   }
                 }
               }
-              const result = tmp(13333).parseStorefrontCodedLink(code);
+              const result = tmp(12483).parseStorefrontCodedLink(code);
               if (null != result) {
                 if (result.skuIds.length <= 1) {
                   const obj7 = { skuId: _slicedToArray(result.skuIds, 1)[0], guildOrApplication: null, theme: null };
@@ -144,7 +144,7 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                   }
                   obj7.guildOrApplication = obj9;
                   obj7.theme = theme;
-                  return tmp(11868).createSocialLayerStorefrontProductDetailsEmbed(obj7);
+                  return tmp(11011).createSocialLayerStorefrontProductDetailsEmbed(obj7);
                 }
               }
               return null;

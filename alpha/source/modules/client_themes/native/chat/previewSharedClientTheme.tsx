@@ -1,10 +1,10 @@
-// Module ID: 12286
-// Function ID: 12287
+// Module ID: 11412
+// Function ID: 11413
 // Name: previewSharedClientTheme
-// Dependencies: [4796, 12287, 1980, 2]
+// Dependencies: [4796, 11413, 1980, 2]
 // Exports: handleTapPreviewSharedClientTheme
 
-// Module 12286 (previewSharedClientTheme)
+// Module 11412 (previewSharedClientTheme)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import size from "module_2" /* 2 */;
@@ -12,5 +12,5 @@ import size from "module_2" /* 2 */;
 const result = size.fileFinishedImporting("modules/client_themes/native/chat/previewSharedClientTheme.tsx");
 
 export const handleTapPreviewSharedClientTheme = function handleTapPreviewSharedClientTheme(message) {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12287, dependencyMap.paths), "custom-theme-preview", { message: message.message, backdropKind: "none" });
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11413, dependencyMap.paths), "custom-theme-preview", { message: message.message, backdropKind: "none" });
 };

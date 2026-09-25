@@ -1,16 +1,16 @@
-// Module ID: 12526
-// Function ID: 12527
+// Module ID: 11652
+// Function ID: 11653
 // Name: AppLauncherUserOption
-// Dependencies: [32, 19, 4821, 21, 4829, 576, 504, 12518, 1875, 4796, 12527, 1980, 12527, 1177, 12521, 11269, 12524, 4825, 2]
+// Dependencies: [32, 19, 4821, 21, 4829, 576, 504, 11644, 1875, 4796, 11653, 1980, 11653, 1177, 11647, 10367, 11650, 4825, 2]
 // Exports: default
 
-// Module 12526 (AppLauncherUserOption)
+// Module 11652 (AppLauncherUserOption)
 import nativeDefault from "native" /* 576 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1875 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import AppLauncherSelectOptionFormRowDefault from "AppLauncherSelectOptionFormRow" /* 12518 */;
-import AppLauncherUserListActionSheet from "AppLauncherUserListActionSheet" /* 12527 */;
+import AppLauncherSelectOptionFormRowDefault from "AppLauncherSelectOptionFormRow" /* 11644 */;
+import AppLauncherUserListActionSheet from "AppLauncherUserListActionSheet" /* 11653 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
@@ -69,7 +69,7 @@ export default function AppLauncherUserOption(option) {
     }
     const result = KeyboardManagerUtils.dismissGlobalKeyboard();
     const obj2 = ActionSheetActionCreatorsDefault;
-    obj2.openLazy(asyncRequireImpl(12527, dependencyMap.paths), AppLauncherUserListActionSheet.APP_LAUNCHER_USER_LIST_ACTION_SHEET_KEY, {
+    obj2.openLazy(asyncRequireImpl(11653, dependencyMap.paths), AppLauncherUserListActionSheet.APP_LAUNCHER_USER_LIST_ACTION_SHEET_KEY, {
       option,
       channel,
       onUserPress(user) {
@@ -89,14 +89,14 @@ export default function AppLauncherUserOption(option) {
     const obj3 = { user: tmp8, guildId: guild_id, animate: !stateFromStores, size: tmp2(1177).AvatarSizes.REFRESH_MEDIUM_32 };
     let tmp9Result = tmp9(tmp2(1177).Avatar, obj3);
   } else {
-    const obj4 = { icon: tmp9(tmp2(11269).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper };
-    tmp9Result = tmp9(tmp10(12521), obj4);
-    const tmp10Result = tmp10(12521);
+    const obj4 = { icon: tmp9(tmp2(10367).UserCircleIcon, { size: "sm", color: "interactive-text-default" }), wrapperStyle: tmp.iconWrapper };
+    tmp9Result = tmp9(tmp10(11647), obj4);
+    const tmp10Result = tmp10(11647);
   }
   obj2.leading = tmp9Result;
   if (null != tmp8) {
     const obj5 = { guildId: guild_id, user: tmp8 };
-    let tmp9Result2 = tmp9(tmp10(12524), obj5);
+    let tmp9Result2 = tmp9(tmp10(11650), obj5);
   } else {
     tmp9Result2 = null;
     if (null != tmp6) {

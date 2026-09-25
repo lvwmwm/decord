@@ -1,16 +1,16 @@
-// Module ID: 8259
-// Function ID: 8260
+// Module ID: 7348
+// Function ID: 7349
 // Name: ConversationNavigatorMoreMenu
-// Dependencies: [19, 17, 21, 4829, 576, 1115, 8260, 8239, 8241, 4522, 8262, 8264, 8269, 8271, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 1115, 7349, 7328, 7330, 4524, 7351, 7353, 7358, 7360, 2]
 // Exports: default
 
-// Module 8259 (ConversationNavigatorMoreMenu)
+// Module 7348 (ConversationNavigatorMoreMenu)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ThumbsUpIcon from "ThumbsUpIcon" /* 8260 */;
-import ThumbsDownIcon from "ThumbsDownIcon" /* 8262 */;
-import IconButton from "IconButton" /* 8269 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 8271 */;
+import ThumbsUpIcon from "ThumbsUpIcon" /* 7349 */;
+import ThumbsDownIcon from "ThumbsDownIcon" /* 7351 */;
+import IconButton from "IconButton" /* 7358 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 7360 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

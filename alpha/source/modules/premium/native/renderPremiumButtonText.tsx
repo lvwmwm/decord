@@ -1,14 +1,14 @@
-// Module ID: 13935
-// Function ID: 13936
+// Module ID: 13094
+// Function ID: 13095
 // Name: renderPremiumButtonText
-// Dependencies: [19, 17, 1374, 21, 4829, 4678, 576, 4483, 1115, 1177, 2]
+// Dependencies: [19, 17, 1374, 21, 4829, 4680, 576, 4485, 1115, 1177, 2]
 // Exports: default
 
-// Module 13935 (renderPremiumButtonText)
+// Module 13094 (renderPremiumButtonText)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4483 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4485 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -86,7 +86,7 @@ const jsxProd = fn(21);
 const createStyles = fn(4829);
 let obj2 = { discount: null, premiumText: null };
 let obj3 = { borderWidth: 1, borderColor: null, borderRadius: 2, marginLeft: 4, paddingHorizontal: 2 };
-const ColorUtils = fn(4678);
+const ColorUtils = fn(4680);
 obj3.borderColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.WHITE, 0.3);
 obj2.discount = obj3;
 obj2.premiumText = { flexDirection: "row" };

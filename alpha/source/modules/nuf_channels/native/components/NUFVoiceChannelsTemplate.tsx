@@ -1,15 +1,15 @@
-// Module ID: 14144
-// Function ID: 14145
+// Module ID: 13305
+// Function ID: 13306
 // Name: NUFVoiceChannelsTemplate
-// Dependencies: [19, 21, 14145, 1115, 14146, 14134, 1875, 5716, 2]
+// Dependencies: [19, 21, 13306, 1115, 13307, 13295, 1875, 5718, 2]
 // Exports: default
 
-// Module 14144 (NUFVoiceChannelsTemplate)
+// Module 13305 (NUFVoiceChannelsTemplate)
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1875 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5716 */;
-import NUFChannelsManagerDefault from "NUFChannelsManager" /* 14134 */;
-import NUFTemplateDefault from "NUFTemplate" /* 14145 */;
-import _modDef14146 from "module_14146" /* 14146 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5718 */;
+import NUFChannelsManagerDefault from "NUFChannelsManager" /* 13295 */;
+import NUFTemplateDefault from "NUFTemplate" /* 13306 */;
+import _modDef13307 from "module_13307" /* 13307 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -24,7 +24,7 @@ export default function NUFVoiceChannelsTemplate(channel) {
   obj.title = intl.string(channel(1115).t.w5HAll);
   const intl2 = channel(1115).intl;
   obj.description = intl2.string(channel(1115).t.Ww4hhq);
-  obj.imageSrc = _modDef14146;
+  obj.imageSrc = _modDef13307;
   const intl3 = channel(1115).intl;
   obj.CTALabel = intl3.string(channel(1115).t.eIi3Om);
   obj.onCTAPress = function onCTAPress() {

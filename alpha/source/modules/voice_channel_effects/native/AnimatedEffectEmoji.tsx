@@ -1,16 +1,16 @@
-// Module ID: 9801
-// Function ID: 9802
+// Module ID: 8899
+// Function ID: 8900
 // Name: AnimatedEffectEmoji
-// Dependencies: [19, 17, 4821, 21, 1091, 4829, 576, 5892, 1177, 504, 4561, 4830, 7679, 2]
+// Dependencies: [19, 17, 4821, 21, 1091, 4829, 576, 5894, 1177, 504, 4563, 4830, 6762, 2]
 // Exports: default
 
-// Module 9801 (AnimatedEffectEmoji)
+// Module 8899 (AnimatedEffectEmoji)
 import nativeDefault from "native" /* 576 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import native from "native" /* 1177 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import timing from "timing" /* 4830 */;
-import FastImageDefault from "FastImage" /* 5892 */;
+import FastImageDefault from "FastImage" /* 5894 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 

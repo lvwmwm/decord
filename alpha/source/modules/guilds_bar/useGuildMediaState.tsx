@@ -1,21 +1,21 @@
-// Module ID: 16757
-// Function ID: 16758
+// Module ID: 15941
+// Function ID: 15942
 // Name: useGuildMediaState
-// Dependencies: [2043, 2049, 2048, 4851, 502, 2044, 2066, 4464, 4474, 2098, 5010, 4848, 1074, 1095, 504, 14076, 9834, 4453, 14077, 9683, 11, 5721, 2]
+// Dependencies: [2043, 2049, 2048, 4851, 502, 2044, 2066, 4466, 4476, 2098, 5010, 4848, 1074, 1095, 504, 13237, 8932, 4455, 13238, 8781, 11, 5723, 2]
 // Exports: default
 
-// Module 16757 (useGuildMediaState)
+// Module 15941 (useGuildMediaState)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import ChannelTypes from "ChannelTypes" /* 1095 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 14077 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 13238 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
 import StageInstanceStore from "StageInstanceStore" /* 2049 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4851 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
 import VoiceStateStore from "VoiceStateStore" /* 4848 */;

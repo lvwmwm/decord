@@ -1,18 +1,18 @@
-// Module ID: 10036
-// Function ID: 10037
+// Module ID: 9134
+// Function ID: 9135
 // Name: SecureFramesVerifiedStore
-// Dependencies: [502, 4852, 4868, 10037, 10038, 1074, 10054, 4881, 4884, 504, 573, 2]
+// Dependencies: [502, 4852, 4868, 9135, 9136, 1074, 9152, 4881, 4884, 504, 573, 2]
 
-// Module 10036 (SecureFramesVerifiedStore)
+// Module 9134 (SecureFramesVerifiedStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4884 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 10054 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9152 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4852 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4868 */;
-import TransientKeyStore from "TransientKeyStore" /* 10037 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 10038 */;
+import TransientKeyStore from "TransientKeyStore" /* 9135 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 9136 */;
 
 require = fn;
 function computeCallVerification() {

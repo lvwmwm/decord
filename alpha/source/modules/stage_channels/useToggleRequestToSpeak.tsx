@@ -1,12 +1,12 @@
-// Module ID: 10279
-// Function ID: 10280
+// Module ID: 9376
+// Function ID: 9377
 // Name: useToggleRequestToSpeak
-// Dependencies: [32, 19, 502, 504, 4976, 5727, 8761, 8763, 8748, 2]
+// Dependencies: [32, 19, 502, 504, 4976, 5729, 7851, 7853, 7838, 2]
 // Exports: default
 
-// Module 10279 (useToggleRequestToSpeak)
+// Module 9376 (useToggleRequestToSpeak)
 import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 4976 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8761 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7851 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -36,15 +36,15 @@ export default function useToggleRequestToSpeak(id) {
     first,
     () => {
       if (obj.shouldAgeVerifyToSpeakForCurrentUser(id.id)) {
-        const obj2 = { entryPoint: tmp(8763).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND };
+        const obj2 = { entryPoint: tmp(7853).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND };
         const result = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal(obj2);
       } else {
         if (closure_1 === tmp(4976).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) {
-          const result1 = tmp(8748).audienceAckRequestToSpeak(tmp3, true);
-          const tmpResult = tmp(8748);
+          const result1 = tmp(7838).audienceAckRequestToSpeak(tmp3, true);
+          const tmpResult = tmp(7838);
         } else {
-          tmp(8748).toggleRequestToSpeak(tmp3, !first);
-          const tmpResult2 = tmp(8748);
+          tmp(7838).toggleRequestToSpeak(tmp3, !first);
+          const tmpResult2 = tmp(7838);
         }
         closure_4(!first);
       }

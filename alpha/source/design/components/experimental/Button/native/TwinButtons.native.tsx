@@ -1,12 +1,12 @@
-// Module ID: 9266
-// Function ID: 9267
+// Module ID: 8364
+// Function ID: 8365
 // Name: TwinButtons
-// Dependencies: [19, 17, 21, 4829, 576, 5280, 5273, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 5281, 5274, 2]
 // Exports: TwinButtons
 
-// Module 9266 (TwinButtons)
+// Module 8364 (TwinButtons)
 import nativeDefault from "native" /* 576 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

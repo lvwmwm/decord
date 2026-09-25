@@ -1,12 +1,12 @@
-// Module ID: 14454
-// Function ID: 14455
+// Module ID: 13615
+// Function ID: 13616
 // Name: Ellipsis
-// Dependencies: [19, 17, 4821, 21, 4829, 576, 4561, 4830, 504, 2]
+// Dependencies: [19, 17, 4821, 21, 4829, 576, 4563, 4830, 504, 2]
 
-// Module 14454 (Ellipsis)
+// Module 13615 (Ellipsis)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import timing from "timing" /* 4830 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;

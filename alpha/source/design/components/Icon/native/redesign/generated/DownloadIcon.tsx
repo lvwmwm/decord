@@ -1,12 +1,12 @@
 // Module ID: 4777
 // Function ID: 4778
 // Name: DownloadIcon
-// Dependencies: [19, 21, 576, 4525, 4778, 2]
+// Dependencies: [19, 21, 576, 4527, 4778, 2]
 // Exports: DownloadIcon
 
 // Module 4777 (DownloadIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
 import _mod4778 from "module_4778" /* 4778 */;
 import noop from "module_19" /* 19 */;
 

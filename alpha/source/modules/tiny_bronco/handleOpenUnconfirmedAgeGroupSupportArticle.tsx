@@ -1,15 +1,15 @@
-// Module ID: 15096
-// Function ID: 15097
+// Module ID: 14262
+// Function ID: 14263
 // Name: handleOpenUnconfirmedAgeGroupSupportArticle
-// Dependencies: [14084, 10123, 8761, 2110, 2]
+// Dependencies: [13245, 9220, 7851, 2110, 2]
 // Exports: handleOpenUnconfirmedAgeGroupSupportArticle
 
-// Module 15096 (handleOpenUnconfirmedAgeGroupSupportArticle)
+// Module 14262 (handleOpenUnconfirmedAgeGroupSupportArticle)
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8761 */;
-import LocationMetadataStore from "LocationMetadataStore" /* 14084 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7851 */;
+import LocationMetadataStore from "LocationMetadataStore" /* 13245 */;
 
-const TinyBroncoConstants = fn(10123);
+const TinyBroncoConstants = fn(9220);
 ({ TINY_BRONCO_AGE_GROUP_SUPPORT_ARTICLE_IDS_BY_COUNTRY: c3, TINY_BRONCO_DEFAULT_ARTICLE_ID: closure_4 } = TinyBroncoConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/tiny_bronco/handleOpenUnconfirmedAgeGroupSupportArticle.tsx");

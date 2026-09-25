@@ -1,13 +1,13 @@
-// Module ID: 7421
-// Function ID: 7422
+// Module ID: 6504
+// Function ID: 6505
 // Name: MultipleChoiceField
-// Dependencies: [19, 17, 1085, 21, 4829, 5829, 576, 4825, 5990, 5993, 2]
+// Dependencies: [19, 17, 1085, 21, 4829, 5831, 576, 4825, 5992, 5995, 2]
 // Exports: default
 
-// Module 7421 (MultipleChoiceField)
+// Module 6504 (MultipleChoiceField)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5829 */;
+import TextStyles from "TextStyles" /* 5831 */;
 
 const require = globalThis.__r;
 

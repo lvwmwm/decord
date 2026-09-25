@@ -1,21 +1,21 @@
-// Module ID: 13507
-// Function ID: 13508
+// Module ID: 12657
+// Function ID: 12658
 // Name: GuildInviteActionSheet
-// Dependencies: [32, 19, 17, 21, 4829, 576, 1177, 1115, 13508, 13509, 13505, 4825, 7314, 11504, 13510, 7482, 7483, 7383, 10169, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 1177, 1115, 12658, 12659, 12655, 4825, 6397, 10602, 12660, 6565, 6566, 6466, 9266, 2]
 // Exports: default
 
-// Module 13507 (GuildInviteActionSheet)
+// Module 12657 (GuildInviteActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import SearchField from "SearchField" /* 7383 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7482 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7483 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10169 */;
-import _modDef13508 from "module_13508" /* 13508 */;
-import _modDef13509 from "module_13509" /* 13509 */;
-import GuildInviteRowDefault from "GuildInviteRow" /* 13510 */;
+import SearchField from "SearchField" /* 6466 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6565 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6566 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9266 */;
+import _modDef12658 from "module_12658" /* 12658 */;
+import _modDef12659 from "module_12659" /* 12659 */;
+import GuildInviteRowDefault from "GuildInviteRow" /* 12660 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -26,8 +26,8 @@ function EmptyGuildList() {
   obj.title = intl.string(util.t["2bfiLk"]);
   const intl2 = util.intl;
   obj.body = intl2.string(util.t.V6nAfF);
-  obj.darkSource = _modDef13508;
-  obj.lightSource = _modDef13509;
+  obj.darkSource = _modDef12658;
+  obj.lightSource = _modDef12659;
   return timestampProducer(native.ThemedEmptyState, obj);
 }
 function GuildList(recipientId) {
@@ -35,8 +35,8 @@ function GuildList(recipientId) {
   const source = recipientId.source;
   _slicedToArray = undefined;
   dependencyMap = closure_8();
-  let obj = recipientId(13505);
-  [arr, arr2] = recipientId(13505).useServerInviteRows(recipientId, recipientId.query);
+  let obj = recipientId(12655);
+  [arr, arr2] = recipientId(12655).useServerInviteRows(recipientId, recipientId.query);
   if (0 === arr.length) {
     if (0 === arr2.length) {
       let items = [];
@@ -62,7 +62,7 @@ function GuildList(recipientId) {
     if (tmp5) {
       num = 24;
     }
-    const obj3 = { paddingTop: num, paddingBottom: source(7314)().insets.bottom + source(576).space.PX_16 };
+    const obj3 = { paddingTop: num, paddingBottom: source(6397)().insets.bottom + source(576).space.PX_16 };
     obj2.contentContainerStyle = obj3;
     obj2.sections = items;
     obj2.renderSectionHeader = function renderSectionHeader(section) {
@@ -82,7 +82,7 @@ function GuildList(recipientId) {
       return guild.guild.id;
     };
     obj2.ListEmptyComponent = EmptyGuildList;
-    return closure_6(tmp(11504).UserProfileStackedActionSheetSectionList, obj2);
+    return closure_6(tmp(10602).UserProfileStackedActionSheetSectionList, obj2);
   }
   const obj4 = { title: null, data: null };
   const intl = tmp(1115).intl;

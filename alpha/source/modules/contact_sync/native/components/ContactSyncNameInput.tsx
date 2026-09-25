@@ -1,14 +1,14 @@
-// Module ID: 13045
-// Function ID: 13046
+// Module ID: 12176
+// Function ID: 12177
 // Name: ContactSyncNameInput
-// Dependencies: [32, 19, 17, 21, 4829, 576, 7314, 1115, 4825, 1177, 5273, 13042, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 6397, 1115, 4825, 1177, 5274, 12173, 2]
 // Exports: default
 
-// Module 13045 (ContactSyncNameInput)
+// Module 12176 (ContactSyncNameInput)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7314 */;
-import ContactSyncErrorDefault from "ContactSyncError" /* 13042 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6397 */;
+import ContactSyncErrorDefault from "ContactSyncError" /* 12173 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -92,7 +92,7 @@ export default function ContactSyncNameInput(prefilledFromContactBook) {
   if (null != onRemoveName) {
     str = "md";
   }
-  items2[1] = timestampProducer(tmp9(5273).Button, {
+  items2[1] = timestampProducer(tmp9(5274).Button, {
     variant: "primary",
     size: str,
     text: stringResult,
@@ -115,7 +115,7 @@ export default function ContactSyncNameInput(prefilledFromContactBook) {
       }
       return tmp;
     };
-    obj9.children = tmp12(tmp9(5273).Button, obj10);
+    obj9.children = tmp12(tmp9(5274).Button, obj10);
     tmp12Result2 = tmp12(tmp11, obj9);
   }
   items2[2] = tmp12Result2;

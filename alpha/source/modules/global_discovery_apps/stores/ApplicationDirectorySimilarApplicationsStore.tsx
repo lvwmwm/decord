@@ -1,9 +1,9 @@
-// Module ID: 12416
-// Function ID: 12417
+// Module ID: 11542
+// Function ID: 11543
 // Name: ApplicationDirectorySimilarApplicationsStore
 // Dependencies: [1438, 504, 573, 2]
 
-// Module 12416 (ApplicationDirectorySimilarApplicationsStore)
+// Module 11542 (ApplicationDirectorySimilarApplicationsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import privDefault from "priv" /* 1438 */;

@@ -1,14 +1,14 @@
-// Module ID: 11477
-// Function ID: 11478
+// Module ID: 10575
+// Function ID: 10576
 // Name: DoubleTapEmojiUpdatedToast
-// Dependencies: [19, 4821, 1375, 21, 4829, 576, 1364, 504, 1397, 7463, 4825, 1115, 5258, 4536, 4523, 2]
+// Dependencies: [19, 4821, 1375, 21, 4829, 576, 1364, 504, 1397, 6546, 4825, 1115, 5259, 4538, 4525, 2]
 // Exports: showDoubleTapEmojiUpdatedToast
 
-// Module 11477 (DoubleTapEmojiUpdatedToast)
+// Module 10575 (DoubleTapEmojiUpdatedToast)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4523 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4525 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
@@ -88,7 +88,7 @@ export { ToastEmoji };
 export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdatedToast(emoji) {
   emoji = emoji.emoji;
   if (obj.getIsScreenReaderEnabled()) {
-    const AccessibilityAnnouncer = tmp(4536).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = tmp(4538).AccessibilityAnnouncer;
     const intl = tmp(1115).intl;
     const obj3 = { emojiName: emoji.name };
     AccessibilityAnnouncer.announce(intl.formatToPlainString(tmp(1115).t.nKY0Fl, obj3));

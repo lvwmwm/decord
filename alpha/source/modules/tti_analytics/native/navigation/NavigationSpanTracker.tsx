@@ -1,13 +1,13 @@
-// Module ID: 16965
-// Function ID: 16966
+// Module ID: 16155
+// Function ID: 16156
 // Name: NavigationSpanTracker
-// Dependencies: [3, 1255, 16966, 16964, 2]
+// Dependencies: [3, 1255, 16156, 16154, 2]
 
-// Module 16965 (NavigationSpanTracker)
+// Module 16155 (NavigationSpanTracker)
 import LoggerDefault from "Logger" /* 3 */;
 import v1 from "v1" /* 1255 */;
-import NavigationSpanTypes from "NavigationSpanTypes" /* 16964 */;
-import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 16966 */;
+import NavigationSpanTypes from "NavigationSpanTypes" /* 16154 */;
+import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 16156 */;
 
 require = fn;
 let obj = new LoggerDefault("NavTTI");
@@ -155,8 +155,8 @@ prototype["recordComponentSpan"] = function recordComponentSpan(trace_id, endMon
       const result = NavigationTTIDebugFreeze.emitNavigationTTIDebugCheckpoint(obj4, logActiveBundle);
       if (tmp2) {
         const obj5 = { kind: "milestone", name: "first_paint", traceId: trace_id, destinationKey: active.destinationKey };
-        const result1 = tmp4(16966).emitNavigationTTIDebugCheckpoint(obj5, logActiveBundle);
-        const tmp4Result2 = tmp4(16966);
+        const result1 = tmp4(16156).emitNavigationTTIDebugCheckpoint(obj5, logActiveBundle);
+        const tmp4Result2 = tmp4(16156);
       }
       return true;
     } else {

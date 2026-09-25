@@ -1,21 +1,21 @@
-// Module ID: 15680
-// Function ID: 15681
+// Module ID: 14850
+// Function ID: 14851
 // Name: SettingsAccessibilityScreen
-// Dependencies: [19, 4821, 2021, 8323, 1074, 21, 1115, 2110, 2876, 7712, 7371, 15681, 1484, 563, 11811, 15057, 2]
+// Dependencies: [19, 4821, 2021, 7412, 1074, 21, 1115, 2110, 2876, 6795, 6454, 14851, 1484, 563, 10993, 14223, 2]
 // Exports: default
 
-// Module 15680 (SettingsAccessibilityScreen)
+// Module 14850 (SettingsAccessibilityScreen)
 import util from "util" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
 import _modDef2876 from "module_2876" /* 2876 */;
-import SettingBuilders from "SettingBuilders" /* 11811 */;
-import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 15681 */;
+import SettingBuilders from "SettingBuilders" /* 10993 */;
+import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 14851 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2021 */;
 
 require = fn;
-const MobileUserSettings = fn(8323).MobileUserSettings;
+const MobileUserSettings = fn(7412).MobileUserSettings;
 const Constants = fn(1074);
 ({ HelpdeskArticles: closure_7, UserSettingsSections: closure_8 } = Constants);
 const jsx = fn(21).jsx;

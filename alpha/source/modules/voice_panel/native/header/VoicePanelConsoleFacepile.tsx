@@ -1,17 +1,17 @@
-// Module ID: 17693
-// Function ID: 17694
+// Module ID: 16917
+// Function ID: 16918
 // Name: VoicePanelConsoleFacepile
-// Dependencies: [19, 1074, 21, 4829, 576, 10150, 1115, 10132, 1370, 5894, 1177, 2]
+// Dependencies: [19, 1074, 21, 4829, 576, 9247, 1115, 9229, 1370, 5896, 1177, 2]
 // Exports: default
 
-// Module 17693 (VoicePanelConsoleFacepile)
+// Module 16917 (VoicePanelConsoleFacepile)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import NativeViewDefault from "NativeView" /* 5894 */;
-import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 10132 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 10150 */;
+import NativeViewDefault from "NativeView" /* 5896 */;
+import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 9229 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 9247 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

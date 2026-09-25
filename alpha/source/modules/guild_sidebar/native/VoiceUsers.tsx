@@ -1,17 +1,17 @@
-// Module ID: 16547
-// Function ID: 16548
+// Module ID: 15727
+// Function ID: 15728
 // Name: VoiceUsers
-// Dependencies: [19, 17, 2107, 21, 4829, 576, 10467, 8204, 504, 16548, 10465, 1115, 12879, 4825, 10082, 16552, 7641, 16555, 2]
+// Dependencies: [19, 17, 2107, 21, 4829, 576, 9569, 7293, 504, 15728, 9567, 1115, 12008, 4825, 9179, 15732, 6724, 15735, 2]
 // Exports: default, getAudienceItemHeight
 
-// Module 16547 (VoiceUsers)
+// Module 15727 (VoiceUsers)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8204 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10465 */;
-import ChannelListLayout from "ChannelListLayout" /* 10467 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 12879 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7293 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 9567 */;
+import ChannelListLayout from "ChannelListLayout" /* 9569 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 12008 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2107 */;
 
@@ -64,7 +64,7 @@ let closure_12 = noop.memo((voiceState) => {
   const channel = voiceState.channel;
   const collapsed = voiceState.collapsed;
   const tmp = channel;
-  const tmp3 = closure_11(channel(8204)());
+  const tmp3 = closure_11(channel(7293)());
   const items = [GuildMemberStore];
   const items1 = [channel.guild_id, user.id];
   const stateFromStoresObject = user(504).useStateFromStoresObject(items, () => ({ storeMember: GuildMemberStore.getMember(channel.guild_id, user.id), isGuest: GuildMemberStore.isGuestOrLurker(channel.guild_id, user.id) }), items1);
@@ -89,7 +89,7 @@ let closure_12 = noop.memo((voiceState) => {
   obj5.sessionId = voiceState2.sessionId;
   obj5.channel = channel;
   obj5.isGuest = isGuest;
-  obj2.children = closure_6(tmp(16548), obj5, user.id);
+  obj2.children = closure_6(tmp(15728), obj5, user.id);
   return closure_6(tmp6, obj2);
 });
 const size = fn(2);

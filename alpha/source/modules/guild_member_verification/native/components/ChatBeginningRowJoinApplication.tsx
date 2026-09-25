@@ -1,14 +1,14 @@
-// Module ID: 12979
-// Function ID: 12980
+// Module ID: 12110
+// Function ID: 12111
 // Name: ChatBeginningRowJoinApplication
-// Dependencies: [19, 17, 4464, 1372, 1074, 21, 4829, 576, 12980, 504, 12981, 5889, 4825, 1115, 4653, 5738, 5273, 2]
+// Dependencies: [19, 17, 4466, 1372, 1074, 21, 4829, 576, 12111, 504, 12112, 5891, 4825, 1115, 4655, 5740, 5274, 2]
 // Exports: default
 
-// Module 12979 (ChatBeginningRowJoinApplication)
+// Module 12110 (ChatBeginningRowJoinApplication)
 import nativeDefault from "native" /* 576 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4653 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4655 */;
 import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;

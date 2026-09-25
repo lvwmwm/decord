@@ -1,17 +1,17 @@
-// Module ID: 13539
-// Function ID: 13540
+// Module ID: 12691
+// Function ID: 12692
 // Name: BundleProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 1076, 21, 4829, 576, 13540, 6985, 1115, 8519, 7884, 13541, 4825, 2]
+// Dependencies: [32, 19, 17, 1076, 21, 4829, 576, 12692, 6068, 1115, 7609, 6969, 12693, 4825, 2]
 // Exports: default
 
-// Module 13539 (BundleProductDetailsActionSheetPreview)
+// Module 12691 (BundleProductDetailsActionSheetPreview)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6985 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7884 */;
-import useShopProductItems from "useShopProductItems" /* 8519 */;
-import IndividualProductPreview from "IndividualProductPreview" /* 13541 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6068 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 6969 */;
+import useShopProductItems from "useShopProductItems" /* 7609 */;
+import IndividualProductPreview from "IndividualProductPreview" /* 12693 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

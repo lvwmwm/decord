@@ -1,14 +1,14 @@
-// Module ID: 5259
-// Function ID: 5260
+// Module ID: 5260
+// Function ID: 5261
 // Name: Backdrop
-// Dependencies: [19, 17, 21, 4829, 576, 1115, 4535, 1612, 4561, 5260, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 1115, 4537, 1612, 4563, 5261, 2]
 // Exports: Backdrop
 
-// Module 5259 (Backdrop)
+// Module 5260 (Backdrop)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4563 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

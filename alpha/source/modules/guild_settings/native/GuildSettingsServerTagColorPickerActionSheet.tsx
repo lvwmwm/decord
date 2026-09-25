@@ -1,20 +1,20 @@
-// Module ID: 18127
-// Function ID: 18128
+// Module ID: 17355
+// Function ID: 17356
 // Name: GuildSettingsServerTagColorPickerActionSheet
-// Dependencies: [32, 19, 17, 8292, 21, 576, 4829, 14969, 4678, 1478, 4561, 10419, 1115, 9974, 4796, 7483, 7482, 5271, 10097, 14282, 4825, 9975, 14970, 9928, 5273, 2]
+// Dependencies: [32, 19, 17, 7381, 21, 576, 4829, 14131, 4680, 1478, 4563, 9521, 1115, 9072, 4796, 6566, 6565, 5272, 9194, 13443, 4825, 9073, 14132, 9026, 5274, 2]
 // Exports: default
 
-// Module 18127 (GuildSettingsServerTagColorPickerActionSheet)
+// Module 17355 (GuildSettingsServerTagColorPickerActionSheet)
 import nativeDefault from "native" /* 576 */;
-import ColorUtils from "ColorUtils" /* 4678 */;
+import ColorUtils from "ColorUtils" /* 4680 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 14969 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 14131 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const GuildTagConstants = fn(8292);
+const GuildTagConstants = fn(7381);
 ({ GUILD_TAG_BADGE_NUM_CUSTOMIZABLE_COLORS: metroRequire, GUILD_TAG_BADGE_PALETTE_PRESETS: closure_7, GuildTagBadgeSize: closure_8 } = GuildTagConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);

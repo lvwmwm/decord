@@ -1,20 +1,20 @@
-// Module ID: 16746
-// Function ID: 16747
+// Module ID: 15930
+// Function ID: 15931
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 4462, 4474, 5010, 4853, 1074, 21, 4829, 576, 13416, 1177, 4825, 1115, 10409, 5892, 5285, 16745, 504, 12, 14077, 2]
+// Dependencies: [19, 17, 4464, 4476, 5010, 4853, 1074, 21, 4829, 576, 12566, 1177, 4825, 1115, 9511, 5894, 5286, 15929, 504, 12, 13238, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 16746 (HomeDrawerGuildVoiceState)
+// Module 15930 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10409 */;
-import AvatarPile from "AvatarPile" /* 13416 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9511 */;
+import AvatarPile from "AvatarPile" /* 12566 */;
 import noop from "module_19" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4462 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import GuildChannelStore from "GuildChannelStore" /* 4464 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4853 */;
 
@@ -46,7 +46,7 @@ function LiveTag() {
   return closure_1_11(View, obj);
 }
 const View = fn(17).View;
-const GUILD_VOCAL_CHANNELS_KEY = fn(4462).GUILD_VOCAL_CHANNELS_KEY;
+const GUILD_VOCAL_CHANNELS_KEY = fn(4464).GUILD_VOCAL_CHANNELS_KEY;
 const ChannelTypes = fn(1074).ChannelTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
@@ -100,11 +100,11 @@ export const GuildVoiceState = function GuildVoiceState(arg0) {
       const obj6 = { style: tmp.streamPreview, source: null };
       const obj7 = { uri: previewUrl };
       obj6.source = obj7;
-      const items1 = [tmp7(tmp3(5892), obj6), , , , ];
+      const items1 = [tmp7(tmp3(5894), obj6), , , , ];
       const obj8 = { colors: ["rgba(0, 0, 0, 1)", "rgba(0, 0, 0, 0)"], start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: tmp.streamPreviewDarkGradient, pointerEvents: "none" };
-      items1[1] = tmp7(tmp3(5285), obj8);
+      items1[1] = tmp7(tmp3(5286), obj8);
       const obj9 = { colors: ["rgba(255, 255, 255, 1)", "rgba(255, 255, 255, 0)"], start: { x: 0, y: 0 }, end: { x: 1, y: 1 }, style: tmp.streamPreviewGradient, pointerEvents: "none" };
-      items1[2] = tmp7(tmp3(5285), obj9);
+      items1[2] = tmp7(tmp3(5286), obj9);
       const obj10 = { style: tmp.streamPreviewBorder, pointerEvents: "none" };
       items1[3] = tmp7(tmp8, obj10);
       items1[4] = tmp7(LiveTag, {});

@@ -1,22 +1,22 @@
-// Module ID: 12287
-// Function ID: 12288
+// Module ID: 11413
+// Function ID: 11414
 // Name: SharedCustomThemeActionSheet
-// Dependencies: [32, 19, 17, 4489, 1074, 1374, 21, 4829, 576, 1241, 12288, 4677, 7483, 7482, 1115, 2716, 4825, 9553, 5273, 504, 4483, 7752, 7515, 1177, 1228, 2]
+// Dependencies: [32, 19, 17, 4491, 1074, 1374, 21, 4829, 576, 1241, 11414, 4679, 6566, 6565, 1115, 2716, 4825, 8651, 5274, 504, 4485, 6837, 6598, 1177, 1228, 2]
 // Exports: default
 
-// Module 12287 (SharedCustomThemeActionSheet)
+// Module 11413 (SharedCustomThemeActionSheet)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1228 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4677 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7515 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7752 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 9553 */;
-import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 12288 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4679 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6598 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 6837 */;
+import UserSettingsActionCreators from "UserSettingsActionCreators" /* 8651 */;
+import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 11414 */;
 import _slicedToArray from "module_32" /* 32 */;
 import "module_19";
-import SubscriptionStore from "SubscriptionStore" /* 4489 */;
+import SubscriptionStore from "SubscriptionStore" /* 4491 */;
 
 const require = globalThis.__r;
 
@@ -51,7 +51,7 @@ function PrimaryActionButton(onPressApply) {
     const intl = tmp2(1115).intl;
     obj4.text = intl.string(tmp2(1115).t["1Qm822"]);
     obj4.onPress = onPressApply.onPressApply;
-    tmp6 = closure_12(tmp2(5273).Button, obj4);
+    tmp6 = closure_12(tmp2(5274).Button, obj4);
   }
   return tmp6;
 }

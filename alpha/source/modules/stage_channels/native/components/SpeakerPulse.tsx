@@ -1,12 +1,12 @@
-// Module ID: 14479
-// Function ID: 14480
+// Module ID: 13640
+// Function ID: 13641
 // Name: SpeakerPulse
-// Dependencies: [19, 17, 4821, 21, 4829, 576, 504, 4561, 4830, 2]
+// Dependencies: [19, 17, 4821, 21, 4829, 576, 504, 4563, 4830, 2]
 // Exports: default
 
-// Module 14479 (SpeakerPulse)
+// Module 13640 (SpeakerPulse)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import timing from "timing" /* 4830 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;

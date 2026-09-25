@@ -1,9 +1,9 @@
-// Module ID: 4742
-// Function ID: 4743
-// Dependencies: [4743, 2]
+// Module ID: 4744
+// Function ID: 4745
+// Dependencies: [4745, 2]
 
-// Module 4742
-import createExperiment from "createExperiment" /* 4743 */;
+// Module 4744
+import createExperiment from "createExperiment" /* 4745 */;
 
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/experiments/index.tsx");

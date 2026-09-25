@@ -1,15 +1,15 @@
-// Module ID: 17613
-// Function ID: 17614
+// Module ID: 16837
+// Function ID: 16838
 // Name: panel/LeaveActivityButton
-// Dependencies: [19, 9396, 21, 17603, 9645, 2]
+// Dependencies: [19, 8494, 21, 16827, 8743, 2]
 
-// Module 17613 (panel/LeaveActivityButton)
-import FramesNativeManagerDefault from "FramesNativeManager" /* 9645 */;
-import LeaveActivityButton from "LeaveActivityButton" /* 17603 */;
+// Module 16837 (panel/LeaveActivityButton)
+import FramesNativeManagerDefault from "FramesNativeManager" /* 8743 */;
+import LeaveActivityButton from "LeaveActivityButton" /* 16827 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const ActivityPanelModes = fn(9396).ActivityPanelModes;
+const ActivityPanelModes = fn(8494).ActivityPanelModes;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/frames/panel/native/LeaveActivityButton.tsx");

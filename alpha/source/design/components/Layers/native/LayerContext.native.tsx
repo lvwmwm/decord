@@ -1,9 +1,9 @@
-// Module ID: 7490
-// Function ID: 7491
+// Module ID: 6573
+// Function ID: 6574
 // Name: LayerContext
 // Dependencies: [19, 2]
 
-// Module 7490 (LayerContext)
+// Module 6573 (LayerContext)
 import noop from "module_19" /* 19 */;
 
 class LayerContextManager {

@@ -1,10 +1,10 @@
-// Module ID: 12620
-// Function ID: 12621
+// Module ID: 11746
+// Function ID: 11747
 // Name: fitCardsInGrid
 // Dependencies: [2]
 // Exports: default
 
-// Module 12620 (fitCardsInGrid)
+// Module 11746 (fitCardsInGrid)
 import size from "module_2" /* 2 */;
 
 function isNewLayoutBetter(unusedSpace, unusedSpace2) {

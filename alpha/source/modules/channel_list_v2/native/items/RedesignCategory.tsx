@@ -1,25 +1,25 @@
-// Module ID: 16532
-// Function ID: 16533
+// Module ID: 15712
+// Function ID: 15713
 // Name: RedesignCategory
-// Dependencies: [19, 17, 7861, 7450, 5010, 10464, 21, 4829, 1364, 576, 4825, 13101, 5427, 11506, 11896, 11265, 504, 4982, 11329, 16533, 16534, 7446, 1115, 7528, 11897, 6946, 2]
+// Dependencies: [19, 17, 6946, 6533, 5010, 9566, 21, 4829, 1364, 576, 4825, 12251, 5428, 10604, 11039, 10363, 504, 4982, 10427, 15713, 15714, 6529, 1115, 6611, 11040, 6029, 2]
 // Exports: CategoryChannel, RecentlyActiveCategory, SuggestedCategory, useCategoryPressEvents
 
-// Module 16532 (RedesignCategory)
+// Module 15712 (RedesignCategory)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import useChannelNameDefault from "useChannelName" /* 4982 */;
-import CircleXIcon from "CircleXIcon" /* 6946 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7446 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7528 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11265 */;
-import useFavoritesGuildCategoryAddActionDefault from "useFavoritesGuildCategoryAddAction" /* 11329 */;
-import CategoryCollapseActionCreators from "CategoryCollapseActionCreators" /* 11896 */;
-import useFavoritesGuildCategoryFullNoticeDefault from "useFavoritesGuildCategoryFullNotice" /* 16533 */;
-import useFavoritesGuildCategoryLongPressDefault from "useFavoritesGuildCategoryLongPress" /* 16534 */;
+import CircleXIcon from "CircleXIcon" /* 6029 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 6529 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6611 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10363 */;
+import useFavoritesGuildCategoryAddActionDefault from "useFavoritesGuildCategoryAddAction" /* 10427 */;
+import CategoryCollapseActionCreators from "CategoryCollapseActionCreators" /* 11039 */;
+import useFavoritesGuildCategoryFullNoticeDefault from "useFavoritesGuildCategoryFullNotice" /* 15713 */;
+import useFavoritesGuildCategoryLongPressDefault from "useFavoritesGuildCategoryLongPress" /* 15714 */;
 import noop from "module_19" /* 19 */;
-import RecentlyActiveCollapseStore from "RecentlyActiveCollapseStore" /* 7861 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7450 */;
+import RecentlyActiveCollapseStore from "RecentlyActiveCollapseStore" /* 6946 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 6533 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
 
 require = fn;
@@ -64,7 +64,7 @@ function renderCategoryItem(muted) {
     Icon = trailingAction.Icon;
   }
   if (Icon == null) {
-    Icon = trailingAction(13101).PlusMediumIcon;
+    Icon = trailingAction(12251).PlusMediumIcon;
   }
   if (null == trailingAction) {
     const items1 = [tmp34Result, , , ];
@@ -113,7 +113,7 @@ function renderCategoryItem(muted) {
         obj7.onLongPress = onLongPress;
         obj7.style = items;
         obj7.children = tmp18Result;
-        let tmp28Result = tmp28(trailingAction(5427).PressableHighlight, obj7);
+        let tmp28Result = tmp28(trailingAction(5428).PressableHighlight, obj7);
       } else {
         const obj8 = { accessibilityRole: "header", style: items, children: tmp18Result };
         tmp28Result = tmp28(View, obj8);
@@ -141,13 +141,13 @@ function renderCategoryItem(muted) {
     const obj11 = { size: "xxs", color: flag ? colors.ICON_MUTED : colors.TEXT_SUBTLE };
     colors = tmp9(Icon, obj11);
     obj10.children = colors;
-    obj10 = tmp9(trailingAction(5427).PressableOpacity, obj10);
+    obj10 = tmp9(trailingAction(5428).PressableOpacity, obj10);
     obj9.children = obj10;
     closure_11(View, obj9);
   }
 }
 const View = fn(17).View;
-const RedesignChannelListConstants = fn(10464);
+const RedesignChannelListConstants = fn(9566);
 ({ CATEGORY_MARGIN_BOTTOM: closure_8, CATEGORY_MARGIN_TOP: closure_9, CATEGORY_VERTICAL_PADDING: c10 } = RedesignChannelListConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, Fragment: closure_12, jsxs: map1 } = jsxProd);
@@ -248,7 +248,7 @@ export const CategoryChannel = function CategoryChannel(channel) {
   const colors = nativeDefault.colors;
   const obj7 = {};
   const merged1 = Object.assign(merged);
-  obj7.icon = closure_11(channel(11506).ChevronSmallDownIcon, { size: "xxs", color: merged.muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE, style: collapsed2 ? obj3 : obj4 });
+  obj7.icon = closure_11(channel(10604).ChevronSmallDownIcon, { size: "xxs", color: merged.muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE, style: collapsed2 ? obj3 : obj4 });
   obj7.accessibilityState = { expanded: !collapsed2 };
   return renderCategoryItem(obj7);
 };
@@ -272,7 +272,7 @@ export const RecentlyActiveCategory = function RecentlyActiveCategory(guildId) {
   const colors = stateFromStores(576).colors;
   obj3 = {};
   const merged1 = Object.assign(merged);
-  obj3.icon = closure_11(tmp2(11506).ChevronSmallDownIcon, { size: "xxs", color: merged.muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE, style: collapsed ? obj3 : obj4 });
+  obj3.icon = closure_11(tmp2(10604).ChevronSmallDownIcon, { size: "xxs", color: merged.muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE, style: collapsed ? obj3 : obj4 });
   obj3.accessibilityState = { expanded: !collapsed };
   return renderCategoryItem(obj3);
 };

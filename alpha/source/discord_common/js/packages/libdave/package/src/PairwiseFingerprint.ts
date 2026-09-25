@@ -1,11 +1,11 @@
-// Module ID: 10043
-// Function ID: 10044
+// Module ID: 9141
+// Function ID: 9142
 // Name: PairwiseFingerprint
-// Dependencies: [5, 10042, 10044, 2]
+// Dependencies: [5, 9140, 9142, 2]
 // Exports: generatePairwiseFingerprint
 
-// Module 10043 (PairwiseFingerprint)
-import KeyFingerprint from "KeyFingerprint" /* 10042 */;
+// Module 9141 (PairwiseFingerprint)
+import KeyFingerprint from "KeyFingerprint" /* 9140 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

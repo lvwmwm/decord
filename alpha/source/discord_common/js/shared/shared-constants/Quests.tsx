@@ -1,9 +1,9 @@
-// Module ID: 5751
-// Function ID: 5752
+// Module ID: 5753
+// Function ID: 5754
 // Name: Quests
 // Dependencies: [2]
 
-// Module 5751 (Quests)
+// Module 5753 (Quests)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/Quests.tsx");

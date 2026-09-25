@@ -1,13 +1,13 @@
-// Module ID: 15776
-// Function ID: 15777
+// Module ID: 14946
+// Function ID: 14947
 // Name: UserSettingsLocale
-// Dependencies: [5, 19, 17, 2112, 2111, 21, 4829, 576, 9553, 504, 7456, 5990, 1115, 5993, 15777, 2]
+// Dependencies: [5, 19, 17, 2112, 2111, 21, 4829, 576, 8651, 504, 6539, 5992, 1115, 5995, 14947, 2]
 
-// Module 15776 (UserSettingsLocale)
+// Module 14946 (UserSettingsLocale)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import TableRadioRow from "TableRadioRow" /* 5993 */;
-import flags from "flags" /* 15777 */;
+import TableRadioRow from "TableRadioRow" /* 5995 */;
+import flags from "flags" /* 14947 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2111 */;

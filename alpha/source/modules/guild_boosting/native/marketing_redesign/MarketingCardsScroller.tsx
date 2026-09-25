@@ -1,9 +1,9 @@
-// Module ID: 12913
-// Function ID: 12914
+// Module ID: 12042
+// Function ID: 12043
 // Name: MarketingCardsScroller
-// Dependencies: [32, 19, 17, 4821, 21, 4829, 4678, 576, 504, 5258, 1115, 1365, 5427, 10721, 12715, 2]
+// Dependencies: [32, 19, 17, 4821, 21, 4829, 4680, 576, 504, 5259, 1115, 1365, 5428, 9825, 11841, 2]
 
-// Module 12913 (MarketingCardsScroller)
+// Module 12042 (MarketingCardsScroller)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -20,7 +20,7 @@ const next = "next";
 const createStyles = fn(4829);
 let obj = { wrapper: { position: "relative" }, navigationButton: null, navigationButtonPrevious: null, navigationButtonNext: null };
 let size = { alignItems: "center", backgroundColor: null, borderRadius: null, height: 44, justifyContent: "center", position: "absolute", top: "50%", transform: null, width: 44, zIndex: 1 };
-const ColorUtils = fn(4678);
+const ColorUtils = fn(4680);
 size.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.56);
 size.borderRadius = nativeDefault.radii.round;
 let items = [{ translateY: -22 }];

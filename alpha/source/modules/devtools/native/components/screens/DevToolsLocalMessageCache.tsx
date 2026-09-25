@@ -1,17 +1,17 @@
-// Module ID: 15946
-// Function ID: 15947
+// Module ID: 15116
+// Function ID: 15117
 // Name: DevToolsLocalMessageCache
-// Dependencies: [17, 2044, 21, 4829, 576, 5910, 5271, 5992, 7818, 4825, 2]
+// Dependencies: [17, 2044, 21, 4829, 576, 5912, 5272, 5994, 6903, 4825, 2]
 // Exports: default
 
-// Module 15946 (DevToolsLocalMessageCache)
+// Module 15116 (DevToolsLocalMessageCache)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import Stack_Stack from "Stack/Stack" /* 5271 */;
-import TableRow from "TableRow" /* 5910 */;
-import TableRowGroup from "TableRowGroup" /* 5992 */;
-import MessageCacheStatsDefault from "MessageCacheStats" /* 7818 */;
+import Stack_Stack from "Stack/Stack" /* 5272 */;
+import TableRow from "TableRow" /* 5912 */;
+import TableRowGroup from "TableRowGroup" /* 5994 */;
+import MessageCacheStatsDefault from "MessageCacheStats" /* 6903 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createStyles from "createStyles" /* 4829 */;

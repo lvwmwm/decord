@@ -1,23 +1,23 @@
-// Module ID: 15644
-// Function ID: 15645
+// Module ID: 14814
+// Function ID: 14815
 // Name: SettingsAppearanceActivityCardItem
-// Dependencies: [19, 17, 2111, 15645, 21, 4561, 1177, 4829, 576, 563, 9174, 5892, 4825, 1881, 15646, 15647, 15648, 2]
+// Dependencies: [19, 17, 2111, 14815, 21, 4563, 1177, 4829, 576, 563, 8268, 5894, 4825, 1881, 14816, 14817, 14818, 2]
 // Exports: default
 
-// Module 15644 (SettingsAppearanceActivityCardItem)
+// Module 14814 (SettingsAppearanceActivityCardItem)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import ClipViewDefault from "ClipView" /* 9174 */;
+import ClipViewDefault from "ClipView" /* 8268 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2111 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, StyleSheet } = get_ActivityIndicator);
-const HappeningNowConstants = fn(15645);
+const HappeningNowConstants = fn(14815);
 ({ HAPPENING_NOW_BADGE_SIZE, HAPPENING_NOW_CONTENT_HEIGHT, HAPPENING_NOW_CARD_HEIGHT, HAPPENING_NOW_CARD_MARGIN_RIGHT, HAPPENING_NOW_CARD_PADDING, HAPPENING_NOW_CARD_PADDING_RIGHT } = HappeningNowConstants);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
@@ -73,7 +73,7 @@ export default function ActivityCardItem(arg0) {
       const obj2 = { style: shiftedAvatar, children: null };
       if (index !== diff) {
         const obj3 = { cutouts: null, children: null };
-        const point = { shape: tmp3(9174).CutoutShape.Circle, x: tmp3(1177).AVATAR_SIZE_MAP[tmp3(undefined, 1177).AvatarSizes.XSMALL_20] - 4 - 2, y: -2, size: tmp3(1177).AVATAR_SIZE_MAP[tmp3(undefined, 1177).AvatarSizes.XSMALL_20] + 4 };
+        const point = { shape: tmp3(8268).CutoutShape.Circle, x: tmp3(1177).AVATAR_SIZE_MAP[tmp3(undefined, 1177).AvatarSizes.XSMALL_20] - 4 - 2, y: -2, size: tmp3(1177).AVATAR_SIZE_MAP[tmp3(undefined, 1177).AvatarSizes.XSMALL_20] + 4 };
         const items = [point];
         obj3.cutouts = items;
         obj3.children = tmp5;

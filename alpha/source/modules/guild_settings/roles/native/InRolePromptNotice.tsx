@@ -1,12 +1,12 @@
-// Module ID: 18170
-// Function ID: 18171
+// Module ID: 17398
+// Function ID: 17399
 // Name: InRolePromptNotice
-// Dependencies: [19, 17, 1074, 21, 4829, 576, 1385, 18171, 1177, 9796, 4825, 1115, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 576, 1385, 17399, 1177, 8894, 4825, 1115, 2]
 // Exports: default
 
-// Module 18170 (InRolePromptNotice)
+// Module 17398 (InRolePromptNotice)
 import nativeDefault from "native" /* 576 */;
-import _modDef9796 from "module_9796" /* 9796 */;
+import _modDef8894 from "module_8894" /* 8894 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -31,10 +31,10 @@ export default function InRolePromptNotice(role) {
     return null;
   } else {
     const obj2 = { style: string.promptRow, children: null };
-    const tmpResult = tmp(18171);
+    const tmpResult = tmp(17399);
     let Icon = tmp(1177).Icon;
     if (isRolePowerfulResult) {
-      const obj3 = { style: string.icon, source: _modDef9796, color: nativeDefault.unsafe_rawColors.YELLOW_300 };
+      const obj3 = { style: string.icon, source: _modDef8894, color: nativeDefault.unsafe_rawColors.YELLOW_300 };
       const items = [tmp6(Icon, obj3), ];
       const obj4 = { style: string.promptText, variant: "text-sm/medium", children: null };
       const intl2 = tmp(1115).intl;
@@ -46,7 +46,7 @@ export default function InRolePromptNotice(role) {
       obj2.children = items;
       let tmp4Result = tmp4(tmp5, obj2);
     } else {
-      const obj5 = { style: string.icon, source: _modDef9796 };
+      const obj5 = { style: string.icon, source: _modDef8894 };
       const items1 = [tmp6(Icon, obj5), ];
       const obj6 = { style: string.promptText, variant: "text-sm/medium", children: null };
       const intl = tmp(1115).intl;
@@ -55,6 +55,6 @@ export default function InRolePromptNotice(role) {
       obj2.children = items1;
       tmp4Result = tmp4(tmp5, obj2);
     }
-    isRolePowerfulResult = tmp(18171).isRolePowerful(role);
+    isRolePowerfulResult = tmp(17399).isRolePowerful(role);
   }
 };

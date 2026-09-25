@@ -1,11 +1,11 @@
-// Module ID: 13042
-// Function ID: 13043
+// Module ID: 12173
+// Function ID: 12174
 // Name: ContactSyncError
-// Dependencies: [19, 21, 4829, 4561, 4830, 4825, 2]
+// Dependencies: [19, 21, 4829, 4563, 4830, 4825, 2]
 // Exports: default
 
-// Module 13042 (ContactSyncError)
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4561 */;
+// Module 12173 (ContactSyncError)
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4563 */;
 import timing from "timing" /* 4830 */;
 import noop from "module_19" /* 19 */;
 

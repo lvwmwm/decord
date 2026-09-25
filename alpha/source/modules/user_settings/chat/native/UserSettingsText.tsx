@@ -1,18 +1,18 @@
-// Module ID: 15816
-// Function ID: 15817
+// Module ID: 14986
+// Function ID: 14987
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1372, 4489, 1183, 1184, 1074, 21, 4829, 576, 1241, 2020, 9553, 4526, 504, 4483, 1484, 7323, 1177, 10745, 4825, 1115, 8951, 5271, 5992, 7533, 5990, 5993, 2]
+// Dependencies: [19, 17, 1372, 4491, 1183, 1184, 1074, 21, 4829, 576, 1241, 2020, 8651, 4528, 504, 4485, 1484, 6406, 1177, 9849, 4825, 1115, 8045, 5272, 5994, 6616, 5992, 5995, 2]
 // Exports: default, setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 15816 (UserSettingsText)
+// Module 14986 (UserSettingsText)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7323 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9553 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6406 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8651 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import SubscriptionStore from "SubscriptionStore" /* 4489 */;
+import SubscriptionStore from "SubscriptionStore" /* 4491 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
 

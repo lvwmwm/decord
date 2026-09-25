@@ -1,12 +1,12 @@
-// Module ID: 11698
-// Function ID: 11699
+// Module ID: 10878
+// Function ID: 10879
 // Name: ChatViewWrapper
-// Dependencies: [11699, 11700, 11710, 2]
+// Dependencies: [10879, 10880, 10890, 2]
 
-// Module 11698 (ChatViewWrapper)
-import ChatViewWrapperAnimatedKeyboardDefault from "ChatViewWrapperAnimatedKeyboard" /* 11700 */;
-import ChatViewWrapperBaseDefault from "ChatViewWrapperBase" /* 11710 */;
-import AnimatedKeyboardExperiment from "AnimatedKeyboardExperiment" /* 11699 */;
+// Module 10878 (ChatViewWrapper)
+import ChatViewWrapperAnimatedKeyboardDefault from "ChatViewWrapperAnimatedKeyboard" /* 10880 */;
+import ChatViewWrapperBaseDefault from "ChatViewWrapperBase" /* 10890 */;
+import AnimatedKeyboardExperiment from "AnimatedKeyboardExperiment" /* 10879 */;
 import size from "module_2" /* 2 */;
 
 if (AnimatedKeyboardExperiment.isAnimatedAndroidKeyboard()) {

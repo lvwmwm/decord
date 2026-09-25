@@ -1,10 +1,10 @@
-// Module ID: 18340
-// Function ID: 18341
+// Module ID: 17571
+// Function ID: 17572
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
-// Dependencies: [19, 17, 2041, 21, 4829, 576, 1612, 7483, 6957, 4825, 1115, 1177, 5274, 2]
+// Dependencies: [19, 17, 2041, 21, 4829, 576, 1612, 6566, 6040, 4825, 1115, 1177, 5275, 2]
 // Exports: default
 
-// Module 18340 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 17571 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import noop from "module_19" /* 19 */;
@@ -50,9 +50,9 @@ export default function GuildRoleSubscriptionTierTemplateSelectedActionSheet(mar
   obj6.onPress = function onPress() {
     return markAsDismissed(ContentDismissActionType.UNKNOWN);
   };
-  items[4] = closure_5(markAsDismissed(5274).BaseTextButton, obj6);
+  items[4] = closure_5(markAsDismissed(5275).BaseTextButton, obj6);
   obj3.children = items;
-  obj2.children = closure_6(markAsDismissed(6957).BottomSheetScrollView, obj3);
+  obj2.children = closure_6(markAsDismissed(6040).BottomSheetScrollView, obj3);
   obj.children = closure_5(View, obj2);
-  return closure_5(markAsDismissed(7483).BottomSheet, obj);
+  return closure_5(markAsDismissed(6566).BottomSheet, obj);
 };

@@ -1,15 +1,15 @@
 // Module ID: 2112
 // Function ID: 2113
 // Name: IntlLoaderStore
-// Dependencies: [5, 1882, 1243, 2113, 1115, 2123, 1154, 3908, 4383, 4414, 4416, 1231, 2]
+// Dependencies: [5, 1882, 1243, 2113, 1115, 2123, 1154, 3910, 4385, 4416, 4418, 1231, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
 
 // Module 2112 (IntlLoaderStore)
 import util from "util" /* 1115 */;
 import _modDef2113 from "module_2113" /* 2113 */;
-import bg from "bg" /* 3908 */;
-import formatjs from "formatjs" /* 4383 */;
-import moment from "moment" /* 4414 */;
+import bg from "bg" /* 3910 */;
+import formatjs from "formatjs" /* 4385 */;
+import moment from "moment" /* 4416 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import module_1882 from "module_1882" /* 1882 */;
 
@@ -354,14 +354,14 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   let obj = {
     isLoading: false,
     inProgressLocale: "Boolean",
-    error: "padding",
+    error: "paddingHorizontal",
     localeData: _modDef2113,
     setLoadingStarted(inProgressLocale) {
       return closure_0({ isLoading: true, inProgressLocale });
     },
     setLoadingSucceeded(arg0) {
       if (closure_1().inProgressLocale === arg0) {
-        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "padding" });
+        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "paddingHorizontal" });
       }
     },
     setLoadingFailed(error, arg1) {

@@ -1,14 +1,14 @@
-// Module ID: 13670
-// Function ID: 13671
+// Module ID: 12824
+// Function ID: 12825
 // Name: ChannelHeader
-// Dependencies: [19, 2044, 1074, 2051, 21, 1364, 4695, 11809, 1110, 4687, 563, 5039, 13671, 13672, 13673, 13681, 1115, 13683, 2]
+// Dependencies: [19, 2044, 1074, 2051, 21, 1364, 4697, 10991, 1110, 4689, 563, 5039, 12825, 12826, 12827, 12835, 1115, 12837, 2]
 // Exports: default, navigateToChannelDetails
 
-// Module 13670 (ChannelHeader)
+// Module 12824 (ChannelHeader)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import GuildRoleSubscriptionsChannelHeaderDefault from "GuildRoleSubscriptionsChannelHeader" /* 13671 */;
-import HomeChannelHeaderDefault from "HomeChannelHeader" /* 13672 */;
-import PrivateChannelHeaderDefault from "PrivateChannelHeader" /* 13673 */;
+import GuildRoleSubscriptionsChannelHeaderDefault from "GuildRoleSubscriptionsChannelHeader" /* 12825 */;
+import HomeChannelHeaderDefault from "HomeChannelHeader" /* 12826 */;
+import PrivateChannelHeaderDefault from "PrivateChannelHeader" /* 12827 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 
@@ -75,8 +75,8 @@ export default function ChannelHeader(channelId) {
           stringResult = intl.string(tmp(1115).t["L9fR+P"]);
         }
         obj4.searchPlaceholder = stringResult;
-        tmp8Result = tmp8(tmp9(13681), obj4);
-        const tmp9Result = tmp9(13681);
+        tmp8Result = tmp8(tmp9(12835), obj4);
+        const tmp9Result = tmp9(12835);
       } else {
         const obj5 = { channelId, guildId: null, pressable: null, isGuildMemberCountVisible: null, isNavigationScreen: null, screenIndex: null, showCreateThread: null };
         let guild_id1;
@@ -89,8 +89,8 @@ export default function ChannelHeader(channelId) {
         obj5.isNavigationScreen = isNavigationScreen;
         obj5.screenIndex = screenIndex;
         obj5.showCreateThread = flag2;
-        tmp8Result = tmp8(tmp9(13683), obj5);
-        const tmp9Result2 = tmp9(13683);
+        tmp8Result = tmp8(tmp9(12837), obj5);
+        const tmp9Result2 = tmp9(12837);
       }
     }
   }
@@ -98,11 +98,11 @@ export default function ChannelHeader(channelId) {
 };
 export const navigateToChannelDetails = function navigateToChannelDetails(channelId, screenIndex, source) {
   if (obj.isIOS()) {
-    const chatInputRef = tmp(4695).getChatInputRef(channelId, screenIndex);
+    const chatInputRef = tmp(4697).getChatInputRef(channelId, screenIndex);
     if (chatInputRef != null) {
       chatInputRef.blur();
     }
-    const tmpResult = tmp(4695);
+    const tmpResult = tmp(4697);
   }
   obj = PlatformUtils;
   if (tmpResult3.isSwipeToMemberListEnabled()) {
@@ -110,7 +110,7 @@ export const navigateToChannelDetails = function navigateToChannelDetails(channe
     const obj2 = { source, channelId, screenIndex };
     ComponentDispatch.dispatch(ComponentActions.SHOW_CHANNEL_DETAILS, obj2);
   } else {
-    const rootNavigationRef = tmp(4687).getRootNavigationRef();
+    const rootNavigationRef = tmp(4689).getRootNavigationRef();
     let isReadyResult;
     if (rootNavigationRef != null) {
       isReadyResult = rootNavigationRef.isReady();
@@ -119,6 +119,6 @@ export const navigateToChannelDetails = function navigateToChannelDetails(channe
       const obj3 = { channelId, source };
       rootNavigationRef.navigate("sidebar", obj3);
     }
-    const tmpResult4 = tmp(4687);
+    const tmpResult4 = tmp(4689);
   }
 };

@@ -1,18 +1,18 @@
-// Module ID: 14270
-// Function ID: 14271
+// Module ID: 13431
+// Function ID: 13432
 // Name: ShareAttachments
-// Dependencies: [19, 17, 21, 4561, 5285, 1177, 4829, 576, 4830, 4678, 1115, 10544, 5442, 2]
+// Dependencies: [19, 17, 21, 4563, 5286, 1177, 4829, 576, 4830, 4680, 1115, 9646, 5443, 2]
 // Exports: default
 
-// Module 14270 (ShareAttachments)
+// Module 13431 (ShareAttachments)
 import nativeDefault from "native" /* 576 */;
-import ColorUtils from "ColorUtils" /* 4678 */;
+import ColorUtils from "ColorUtils" /* 4680 */;
 import timing from "timing" /* 4830 */;
-import LinearGradientDefault from "LinearGradient" /* 5285 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 5442 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 10544 */;
+import LinearGradientDefault from "LinearGradient" /* 5286 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 5443 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 9646 */;
 import noop from "module_19" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 
 const require = globalThis.__r;
 

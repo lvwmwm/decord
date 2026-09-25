@@ -1,10 +1,10 @@
-// Module ID: 12324
-// Function ID: 12325
+// Module ID: 11450
+// Function ID: 11451
 // Name: CustomTypingIndicatorAnimatedEmoji
-// Dependencies: [32, 19, 1979, 1074, 21, 4829, 4545, 2020, 4561, 504, 1380, 4830, 7463, 1397, 2]
+// Dependencies: [32, 19, 1979, 1074, 21, 4829, 4547, 2020, 4563, 504, 1380, 4830, 6546, 1397, 2]
 // Exports: default
 
-// Module 12324 (CustomTypingIndicatorAnimatedEmoji)
+// Module 11450 (CustomTypingIndicatorAnimatedEmoji)
 import user from "user" /* 1380 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -70,9 +70,9 @@ export default function CustomTypingIndicatorAnimatedEmoji(emojiCount) {
           const result3 = index * c8;
           const result4 = c8 * (emojiCount - 1);
           if (tmp5(1380).TypingIndicatorAnimation.PULSE === tmp4) {
-            const tmp5Result = tmp5(4561);
-            const tmp5Result15 = tmp5(4561);
-            const tmp5Result16 = tmp5(4561);
+            const tmp5Result = tmp5(4563);
+            const tmp5Result15 = tmp5(4563);
+            const tmp5Result16 = tmp5(4563);
             const obj4 = { duration: tmp8 };
             const tmp5Result17 = tmp5(4830);
             const withTimingResult = tmp5(4830).withTiming(1.16, obj4);
@@ -83,18 +83,18 @@ export default function CustomTypingIndicatorAnimatedEmoji(emojiCount) {
             const result5 = sharedValue.set(tmp5Result.withDelay(result3, tmp5Result15.withRepeat(tmp5Result16.withSequence(withTimingResult, withTimingResult1, tmp5(4830).withTiming(1, obj6)), -1)));
             const tmp5Result19 = tmp5(4830);
           } else if (tmp5(1380).TypingIndicatorAnimation.RING === tmp4) {
-            const tmp5Result20 = tmp5(4561);
-            const tmp5Result21 = tmp5(4561);
+            const tmp5Result20 = tmp5(4563);
+            const tmp5Result21 = tmp5(4563);
             const _Math = Math;
             const obj7 = { duration: 1600, easing: null };
             const result6 = 2 * Math.PI;
-            obj7.easing = tmp5(4561).Easing.linear;
+            obj7.easing = tmp5(4563).Easing.linear;
             const result7 = sharedValue1.set(tmp5Result20.withDelay(result3, tmp5Result21.withRepeat(tmp5(4830).withTiming(result6, obj7), -1)));
             const tmp5Result22 = tmp5(4830);
           } else if (tmp5(1380).TypingIndicatorAnimation.WAVE === tmp4) {
-            const tmp5Result23 = tmp5(4561);
-            const tmp5Result24 = tmp5(4561);
-            const tmp5Result25 = tmp5(4561);
+            const tmp5Result23 = tmp5(4563);
+            const tmp5Result24 = tmp5(4563);
+            const tmp5Result25 = tmp5(4563);
             const obj8 = { duration: tmp8 };
             const tmp5Result26 = tmp5(4830);
             const withTimingResult2 = tmp5(4830).withTiming(-0.12 * num, obj8);

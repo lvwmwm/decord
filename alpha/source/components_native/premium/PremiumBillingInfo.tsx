@@ -1,15 +1,15 @@
-// Module ID: 13761
-// Function ID: 13762
+// Module ID: 12915
+// Function ID: 12916
 // Name: PremiumBillingInfo
-// Dependencies: [32, 19, 17, 1074, 21, 4829, 576, 4496, 4825, 1115, 4483, 13758, 7495, 7515, 13762, 7734, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4829, 576, 4498, 4825, 1115, 4485, 12912, 6578, 6598, 12916, 6819, 2]
 // Exports: default
 
-// Module 13761 (PremiumBillingInfo)
+// Module 12915 (PremiumBillingInfo)
 import nativeDefault from "native" /* 576 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7495 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7515 */;
-import PremiumSubscriptionInvoice from "PremiumSubscriptionInvoice" /* 13758 */;
-import BillingInformation from "BillingInformation" /* 13762 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6578 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6598 */;
+import PremiumSubscriptionInvoice from "PremiumSubscriptionInvoice" /* 12912 */;
+import BillingInformation from "BillingInformation" /* 12916 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -62,7 +62,7 @@ export default function PremiumBillingInfo(subscription) {
   if (null == _slicedToArray(obj.useFetchSubscriptionInvoicePreview(obj2), 1)[0]) {
     return null;
   } else {
-    const externalManagementMessage = tmp2(7734).getExternalManagementMessage(subscription, { shouldAllowExternalManagement: true });
+    const externalManagementMessage = tmp2(6819).getExternalManagementMessage(subscription, { shouldAllowExternalManagement: true });
     const obj5 = { style: subscription.style, children: null };
     const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: null };
     const intl = tmp2(1115).intl;

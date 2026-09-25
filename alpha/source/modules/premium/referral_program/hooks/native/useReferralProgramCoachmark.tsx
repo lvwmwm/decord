@@ -1,14 +1,14 @@
-// Module ID: 17365
-// Function ID: 17366
+// Module ID: 16580
+// Function ID: 16581
 // Name: useReferralProgramCoachmark
-// Dependencies: [32, 19, 17, 1074, 2041, 21, 4829, 5892, 17366, 4649, 2028, 8405, 7718, 1115, 576, 7712, 2]
+// Dependencies: [32, 19, 17, 1074, 2041, 21, 4829, 5894, 16581, 4651, 2028, 7494, 6801, 1115, 576, 6795, 2]
 // Exports: useReferralProgramCoachmark
 
-// Module 17365 (useReferralProgramCoachmark)
+// Module 16580 (useReferralProgramCoachmark)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import FastImageDefault from "FastImage" /* 5892 */;
-import _modDef17366 from "module_17366" /* 17366 */;
+import FastImageDefault from "FastImage" /* 5894 */;
+import _modDef16581 from "module_16581" /* 16581 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,8 +18,8 @@ require = fn;
 function ReferralProgramCoachmarkImg() {
   const tmp = closure_9();
   const obj = { style: tmp.coachmarkImageContainer, children: null };
-  const obj2 = { source: _modDef17366, style: tmp.coachmarkImage };
-  obj.children = jsx(FastImageDefault, { source: _modDef17366, style: tmp.coachmarkImage });
+  const obj2 = { source: _modDef16581, style: tmp.coachmarkImage };
+  obj.children = jsx(FastImageDefault, { source: _modDef16581, style: tmp.coachmarkImage });
   return <View style={tmp.coachmarkImageContainer}>{null}</View>;
 }
 const View = fn(17).View;

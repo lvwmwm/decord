@@ -1,20 +1,20 @@
-// Module ID: 12017
-// Function ID: 12018
+// Module ID: 11160
+// Function ID: 11161
 // Name: EditAttachmentActionSheet
-// Dependencies: [5, 32, 19, 5049, 4822, 1074, 21, 8518, 8616, 1385, 1115, 4536, 7786, 7530, 7482, 5271, 576, 4825, 7418, 5909, 5273, 2]
+// Dependencies: [5, 32, 19, 5049, 4822, 1074, 21, 7608, 7706, 1385, 1115, 4538, 6871, 6613, 6565, 5272, 576, 4825, 6501, 5911, 5274, 2]
 // Exports: default
 
-// Module 12017 (EditAttachmentActionSheet)
+// Module 11160 (EditAttachmentActionSheet)
 import util from "util" /* 1115 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4536 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4538 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import Stack_Stack from "Stack/Stack" /* 5271 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5909 */;
-import TextArea from "TextArea" /* 7418 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7482 */;
-import ActionSheet from "ActionSheet" /* 7530 */;
-import useBottomSheetRef from "useBottomSheetRef" /* 8518 */;
+import Stack_Stack from "Stack/Stack" /* 5272 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5911 */;
+import TextArea from "TextArea" /* 6501 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6565 */;
+import ActionSheet from "ActionSheet" /* 6613 */;
+import useBottomSheetRef from "useBottomSheetRef" /* 7608 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -150,7 +150,7 @@ export default function EditAttachmentActionSheet(arg0) {
   const tmp7Result3 = first1(first2.useState(false), 2);
   first2 = tmp7Result3[0];
   closure_6 = tmp7Result3[1];
-  const tmp5 = attachment(8616)(attachment);
+  const tmp5 = attachment(7706)(attachment);
   [tmp17, c7] = first1(first2.useState(), 2);
   let intl = tmp(1115).intl;
   let stringResult = intl.string(util.t.Y8ujqr);

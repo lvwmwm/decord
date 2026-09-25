@@ -1,10 +1,10 @@
-// Module ID: 5271
-// Function ID: 5272
+// Module ID: 5272
+// Function ID: 5273
 // Name: Stack/Stack
 // Dependencies: [19, 17, 21, 4829, 2]
 // Exports: Stack
 
-// Module 5271 (Stack/Stack)
+// Module 5272 (Stack/Stack)
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;

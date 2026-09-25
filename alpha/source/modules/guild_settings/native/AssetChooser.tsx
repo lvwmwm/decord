@@ -1,14 +1,14 @@
-// Module ID: 18039
-// Function ID: 18040
+// Module ID: 17267
+// Function ID: 17268
 // Name: AssetChooser
-// Dependencies: [5, 19, 17, 1074, 21, 4829, 576, 4535, 5442, 5427, 1115, 18040, 18041, 1177, 2]
+// Dependencies: [5, 19, 17, 1074, 21, 4829, 576, 4537, 5443, 5428, 1115, 17268, 17269, 1177, 2]
 
-// Module 18039 (AssetChooser)
+// Module 17267 (AssetChooser)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Pressables from "Pressables" /* 5427 */;
-import _modDef18040 from "module_18040" /* 18040 */;
-import _modDef18041 from "module_18041" /* 18041 */;
+import Pressables from "Pressables" /* 5428 */;
+import _modDef17268 from "module_17268" /* 17268 */;
+import _modDef17269 from "module_17269" /* 17269 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -132,13 +132,13 @@ prototype["render"] = function render() {
   obj.disabled = disabled;
   let tmp9 = source;
   if (null == source) {
-    tmp9 = _modDef18040;
+    tmp9 = _modDef17268;
   }
   const obj2 = { source: tmp9, style: tmp.asset, children: null };
   let tmp5Result = null;
   if (!disabled) {
     const obj3 = { style: tmp.uploadIconWrapper, children: null };
-    const obj4 = { style: tmp.uploadIcon, source: _modDef18041 };
+    const obj4 = { style: tmp.uploadIcon, source: _modDef17269 };
     obj3.children = tmp5(hasOwnProperty, obj4);
     tmp5Result = tmp5(React4, obj3);
   }
@@ -160,7 +160,7 @@ prototype["render"] = function render() {
   children[1] = tmp5Result2;
   return closure_1_11(closure_1_10, { children });
 };
-AssetChooser.contextType = fn(4535).ThemeContext;
+AssetChooser.contextType = fn(4537).ThemeContext;
 size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_settings/native/AssetChooser.tsx");
 

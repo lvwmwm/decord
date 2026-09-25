@@ -1,11 +1,11 @@
-// Module ID: 17936
-// Function ID: 17937
+// Module ID: 17162
+// Function ID: 17163
 // Name: AccountSwitchingSpinnerModal
-// Dependencies: [19, 17, 21, 4829, 1115, 5882, 1094, 2]
+// Dependencies: [19, 17, 21, 4829, 1115, 5884, 1094, 2]
 
-// Module 17936 (AccountSwitchingSpinnerModal)
+// Module 17162 (AccountSwitchingSpinnerModal)
 import util from "util" /* 1115 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5882 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5884 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

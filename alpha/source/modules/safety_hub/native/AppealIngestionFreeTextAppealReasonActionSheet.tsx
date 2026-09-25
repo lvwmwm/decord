@@ -1,14 +1,14 @@
-// Module ID: 12245
-// Function ID: 12246
+// Module ID: 11367
+// Function ID: 11368
 // Name: AppealIngestionFreeTextAppealReasonActionSheet
-// Dependencies: [32, 19, 17, 8781, 21, 4829, 576, 504, 1115, 7483, 5271, 5427, 5985, 12229, 7418, 4825, 5273, 2]
+// Dependencies: [32, 19, 17, 7873, 21, 4829, 576, 504, 1115, 6566, 5272, 5428, 5987, 11351, 6501, 4825, 5274, 2]
 // Exports: default
 
-// Module 12245 (AppealIngestionFreeTextAppealReasonActionSheet)
+// Module 11367 (AppealIngestionFreeTextAppealReasonActionSheet)
 import nativeDefault from "native" /* 576 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8781 */;
+import SafetyHubStore from "SafetyHubStore" /* 7873 */;
 
 const require = fn;
 const View = fn(17).View;

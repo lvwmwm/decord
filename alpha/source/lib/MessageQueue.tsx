@@ -1,18 +1,18 @@
-// Module ID: 8163
-// Function ID: 8164
+// Module ID: 7248
+// Function ID: 7249
 // Name: MessageQueue
-// Dependencies: [109, 4828, 502, 4878, 1074, 4822, 1091, 8164, 3, 5009, 8165, 7789, 1271, 1978, 38, 5431, 5433, 5466, 5438, 2]
+// Dependencies: [109, 4828, 502, 4878, 1074, 4822, 1091, 7249, 3, 5009, 7250, 6874, 1271, 1978, 38, 5432, 5434, 5467, 5439, 2]
 // Exports: getFailedMessageId, isMessageDataCommand, isMessageDataEdit, isMessageDataSend
 
-// Module 8163 (MessageQueue)
+// Module 7248 (MessageQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 8165 */;
+import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 7250 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import DevSettingsStore from "DevSettingsStore" /* 4828 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import NetworkStore from "NetworkStore" /* 4878 */;
-import Queue from "Queue" /* 8164 */;
+import Queue from "Queue" /* 7249 */;
 
 let handleCommand1 = fn;
 let closure_3 = ["channelId", "analyticsLocation"];
@@ -202,8 +202,8 @@ prototype["handleSend"] = function handleSend(nonce, fn) {
   }
   const tmp = _objectWithoutProperties(nonce, closure_3);
   const tmp5 = handleCommand1;
-  const signalStrength = handleCommand1(7789).getSignalStrength();
-  const obj2 = handleCommand1(7789);
+  const signalStrength = handleCommand1(6874).getSignalStrength();
+  const obj2 = handleCommand1(6874);
   const merged = Object.assign(tmp);
   let tmp8 = null != signalStrength;
   if (tmp8) {
@@ -246,8 +246,8 @@ prototype["handleSendAnnouncement"] = function handleSendAnnouncement(message, f
   }
   const tmp = _objectWithoutProperties(message, closure_4);
   const tmp5 = handleCommand1;
-  const signalStrength = handleCommand1(7789).getSignalStrength();
-  const obj2 = handleCommand1(7789);
+  const signalStrength = handleCommand1(6874).getSignalStrength();
+  const obj2 = handleCommand1(6874);
   const merged = Object.assign(tmp);
   let tmp8 = null != signalStrength;
   if (tmp8) {

@@ -1,12 +1,12 @@
 // Module ID: 4773
 // Function ID: 4774
 // Name: SendMessageIcon
-// Dependencies: [19, 21, 576, 4525, 4774, 2]
+// Dependencies: [19, 21, 576, 4527, 4774, 2]
 // Exports: SendMessageIcon
 
 // Module 4773 (SendMessageIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
 import _mod4774 from "module_4774" /* 4774 */;
 import noop from "module_19" /* 19 */;
 

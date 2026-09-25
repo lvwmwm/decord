@@ -1,22 +1,22 @@
-// Module ID: 17315
-// Function ID: 17316
+// Module ID: 16530
+// Function ID: 16531
 // Name: AutoAnalytics
-// Dependencies: [19, 4845, 5582, 7856, 2049, 2044, 2107, 2066, 1992, 4878, 4852, 2098, 4650, 5584, 5010, 1372, 1074, 2051, 21, 5009, 8104, 17316, 17317, 2069, 17318, 1241, 1370, 17319, 504, 17320, 17321, 2]
+// Dependencies: [19, 4845, 5584, 6941, 2049, 2044, 2107, 2066, 1992, 4878, 4852, 2098, 4652, 5586, 5010, 1372, 1074, 2051, 21, 5009, 7189, 16531, 16532, 2069, 16533, 1241, 1370, 16534, 504, 16535, 16536, 2]
 // Exports: default
 
-// Module 17315 (AutoAnalytics)
+// Module 16530 (AutoAnalytics)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import FavoritesUtils from "FavoritesUtils" /* 2069 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5009 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 8104 */;
-import GuildThemeAnalyticsUtils from "GuildThemeAnalyticsUtils" /* 17316 */;
-import trackGuildViewedClickstreamDefault from "trackGuildViewedClickstream" /* 17317 */;
-import getChannelOpenedRouteTrackingProps from "getChannelOpenedRouteTrackingProps" /* 17319 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7189 */;
+import GuildThemeAnalyticsUtils from "GuildThemeAnalyticsUtils" /* 16531 */;
+import trackGuildViewedClickstreamDefault from "trackGuildViewedClickstream" /* 16532 */;
+import getChannelOpenedRouteTrackingProps from "getChannelOpenedRouteTrackingProps" /* 16534 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4845 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5582 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7856 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5584 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6941 */;
 import StageInstanceStore from "StageInstanceStore" /* 2049 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildMemberStore from "GuildMemberStore" /* 2107 */;
@@ -25,8 +25,8 @@ import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 import NetworkStore from "NetworkStore" /* 4878 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4852 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4650 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5584 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4652 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5586 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -76,7 +76,7 @@ prototype["componentDidMount"] = function componentDidMount() {
     trackGuildViewedClickstreamDefault(obj9);
     const tmp14 = importDefault;
     if (obj8.isFavoritesGuildId(selectedGuildId)) {
-      tmp14(17318)();
+      tmp14(16533)();
     }
     obj8 = FavoritesUtils;
   }
@@ -234,7 +234,7 @@ prototype["componentDidUpdate"] = function componentDidUpdate(voiceChannelId) {
       trackGuildViewedClickstreamDefault(obj20);
       const tmp68 = importDefault;
       if (obj21.isFavoritesGuildId(selectedGuildId)) {
-        tmp68(17318)();
+        tmp68(16533)();
       }
       obj21 = FavoritesUtils;
     }

@@ -1,15 +1,15 @@
-// Module ID: 9930
-// Function ID: 9931
+// Module ID: 9028
+// Function ID: 9029
 // Name: TagListInputTag
-// Dependencies: [19, 17, 21, 4829, 576, 1115, 9931, 5427, 4825, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 1115, 9029, 5428, 4825, 2]
 // Exports: TagListInputTagComponent
 
-// Module 9930 (TagListInputTag)
+// Module 9028 (TagListInputTag)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import Pressables from "Pressables" /* 5427 */;
-import useAccessibilityPressDefault from "useAccessibilityPress" /* 9931 */;
+import Pressables from "Pressables" /* 5428 */;
+import useAccessibilityPressDefault from "useAccessibilityPress" /* 9029 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

@@ -1,12 +1,12 @@
-// Module ID: 10705
-// Function ID: 10706
+// Module ID: 9809
+// Function ID: 9810
 // Name: ExpressionPickerCategories
-// Dependencies: [19, 17, 21, 4829, 576, 4702, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4704, 2]
 // Exports: default
 
-// Module 10705 (ExpressionPickerCategories)
+// Module 9809 (ExpressionPickerCategories)
 import nativeDefault from "native" /* 576 */;
-import Portal from "Portal" /* 4702 */;
+import Portal from "Portal" /* 4704 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

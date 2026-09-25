@@ -1,22 +1,22 @@
-// Module ID: 15081
-// Function ID: 15082
+// Module ID: 14247
+// Function ID: 14248
 // Name: AccountEmailSetting
-// Dependencies: [1372, 8323, 504, 5926, 11811, 1115, 2]
+// Dependencies: [1372, 7412, 504, 5928, 10993, 1115, 2]
 
-// Module 15081 (AccountEmailSetting)
+// Module 14247 (AccountEmailSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5926 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5928 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const SettingBuilders = fn(11811);
+const SettingBuilders = fn(10993);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["w/qqKK"]);
   },
-  parent: fn(8323).MobileUserSettings.ACCOUNT,
+  parent: fn(7412).MobileUserSettings.ACCOUNT,
   useTrailing: function useAccountEmailSettingTrailing() {
     const items = [UserStore];
     return initialize.useStateFromStores(items, () => {

@@ -1,13 +1,13 @@
-// Module ID: 15965
-// Function ID: 15966
+// Module ID: 15135
+// Function ID: 15136
 // Name: MagicDoorIcon
-// Dependencies: [19, 21, 576, 4525, 15966, 2]
+// Dependencies: [19, 21, 576, 4527, 15136, 2]
 // Exports: MagicDoorIcon
 
-// Module 15965 (MagicDoorIcon)
+// Module 15135 (MagicDoorIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
-import _mod15966 from "module_15966" /* 15966 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
+import _mod15136 from "module_15136" /* 15136 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const MagicDoorIcon = function MagicDoorIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15966, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15136, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

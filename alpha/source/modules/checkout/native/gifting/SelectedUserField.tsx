@@ -1,14 +1,14 @@
-// Module ID: 11207
-// Function ID: 11208
+// Module ID: 10305
+// Function ID: 10306
 // Name: SelectedUserField
-// Dependencies: [19, 17, 21, 4829, 576, 6951, 1115, 4673, 7384, 1177, 4825, 6946, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 6034, 1115, 4675, 6467, 1177, 4825, 6029, 2]
 // Exports: default
 
-// Module 11207 (SelectedUserField)
+// Module 10305 (SelectedUserField)
 import nativeDefault from "native" /* 576 */;
-import UserUtilsDefault from "UserUtils" /* 4673 */;
-import InputFieldContainer from "InputFieldContainer" /* 6951 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7384 */;
+import UserUtilsDefault from "UserUtils" /* 4675 */;
+import InputFieldContainer from "InputFieldContainer" /* 6034 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6467 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -91,7 +91,7 @@ export default function SelectedUserField(onPress) {
     const intl5 = tmp4(1115).intl;
     const obj12 = { text: UserUtilsDefault.getName(selectedUser) };
     obj11.accessibilityLabel = intl5.formatToPlainString(tmp4(1115).t["0Vb9FQ"], obj12);
-    obj11.children = tmp2(tmp4(6946).CircleXIcon, { size: "xs" });
+    obj11.children = tmp2(tmp4(6029).CircleXIcon, { size: "xs" });
     tmp2Result = tmp2(tmp7, obj11);
   }
   items3[1] = tmp2Result;

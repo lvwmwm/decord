@@ -1,21 +1,21 @@
-// Module ID: 13551
-// Function ID: 13552
+// Module ID: 12703
+// Function ID: 12704
 // Name: ShopNitroUpsellPromoSheet
-// Dependencies: [19, 1074, 21, 7495, 9508, 10313, 8183, 10314, 10578, 5997, 5738, 10317, 1115, 5273, 2]
+// Dependencies: [19, 1074, 21, 6578, 8606, 9410, 7268, 9411, 9680, 12704, 5740, 9414, 1115, 5274, 2]
 // Exports: default
 
-// Module 13551 (ShopNitroUpsellPromoSheet)
+// Module 12703 (ShopNitroUpsellPromoSheet)
 import util from "util" /* 1115 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import ButtonGroup from "ButtonGroup" /* 5738 */;
-import native from "native" /* 5997 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7495 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8183 */;
-import PremiumUpsellUtils from "PremiumUpsellUtils" /* 9508 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10313 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 10314 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10317 */;
-import PromoSheet from "PromoSheet" /* 10578 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import ButtonGroup from "ButtonGroup" /* 5740 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6578 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7268 */;
+import PremiumUpsellUtils from "PremiumUpsellUtils" /* 8606 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9410 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9411 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 9414 */;
+import PromoSheet from "PromoSheet" /* 9680 */;
+import DiscountsMegaphoneSpotIllustration from "DiscountsMegaphoneSpotIllustration" /* 12704 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -34,7 +34,7 @@ export default function ShopNitroUpsellPromoSheet(analyticsLocations) {
   const obj = PremiumUpsellUtils;
   const onViewAllPerks = obj.usePremiumUpsellConfig(PremiumFeatureUpsellUtils.getUpsellType(EntitlementFeatureNames.EntitlementFeatureNames.SHOP_MEMBER_PRICING), useAnalyticsLocationsDefault(analyticsLocations).analyticsLocations).onViewAllPerks;
   ({ loading, onPress } = usePremiumFeatureUpsellGetNitroDefault(false, onViewAllPerks, AnalyticsPages.PREMIUM_UPSELL_SHOP_MEMBER_PRICING, undefined, analyticsLocations));
-  const obj3 = { illustration: React4(native.DiscountsMegaphoneSpotIllustration, {}), title, description, actions: null };
+  const obj3 = { illustration: React4(DiscountsMegaphoneSpotIllustration.DiscountsMegaphoneSpotIllustration, {}), title, description, actions: null };
   const obj4 = { children: null };
   const obj5 = { text: null, loading: null, onPress: null, shiny: false };
   const tmp = usePremiumFeatureUpsellGetNitroDefault(false, onViewAllPerks, AnalyticsPages.PREMIUM_UPSELL_SHOP_MEMBER_PRICING, undefined, analyticsLocations);

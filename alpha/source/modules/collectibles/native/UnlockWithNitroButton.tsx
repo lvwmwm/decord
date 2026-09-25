@@ -1,18 +1,18 @@
-// Module ID: 13566
-// Function ID: 13567
+// Module ID: 12720
+// Function ID: 12721
 // Name: UnlockWithNitroButton
-// Dependencies: [19, 7570, 7887, 1076, 21, 504, 7573, 13552, 1115, 5274, 4825, 9020, 2]
+// Dependencies: [19, 6653, 6972, 1076, 21, 504, 6656, 12706, 1115, 5275, 4825, 8114, 2]
 // Exports: UnlockWithNitroButton
 
-// Module 13566 (UnlockWithNitroButton)
+// Module 12720 (UnlockWithNitroButton)
 import initialize from "initialize" /* 504 */;
-import BaseTextButton from "BaseTextButton" /* 5274 */;
-import ProductIds from "ProductIds" /* 7573 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9020 */;
-import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 13552 */;
+import BaseTextButton from "BaseTextButton" /* 5275 */;
+import ProductIds from "ProductIds" /* 6656 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8114 */;
+import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 12706 */;
 import noop from "module_19" /* 19 */;
-import IAPStore from "IAPStore" /* 7570 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7887 */;
+import IAPStore from "IAPStore" /* 6653 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6972 */;
 
 require = fn;
 const ShopCtaEnum = fn(1076).ShopCtaEnum;

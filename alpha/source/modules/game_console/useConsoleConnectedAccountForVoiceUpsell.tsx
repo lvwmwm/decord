@@ -1,16 +1,16 @@
-// Module ID: 17691
-// Function ID: 17692
+// Module ID: 16915
+// Function ID: 16916
 // Name: useConsoleConnectedAccountForVoiceUpsell
-// Dependencies: [5586, 5584, 4846, 9439, 1074, 504, 17692, 2]
+// Dependencies: [5588, 5586, 4846, 8537, 1074, 504, 16916, 2]
 // Exports: default
 
-// Module 17691 (useConsoleConnectedAccountForVoiceUpsell)
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5586 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5584 */;
+// Module 16915 (useConsoleConnectedAccountForVoiceUpsell)
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5588 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5586 */;
 import GameConsoleStore from "GameConsoleStore" /* 4846 */;
 
 const require = fn;
-const CONSOLE_VOICE_PLATFORMS = fn(9439).CONSOLE_VOICE_PLATFORMS;
+const CONSOLE_VOICE_PLATFORMS = fn(8537).CONSOLE_VOICE_PLATFORMS;
 const ActivityTypes = fn(1074).ActivityTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_console/useConsoleConnectedAccountForVoiceUpsell.tsx");

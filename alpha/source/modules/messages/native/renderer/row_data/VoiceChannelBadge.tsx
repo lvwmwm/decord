@@ -1,14 +1,14 @@
-// Module ID: 13585
-// Function ID: 13586
+// Module ID: 12739
+// Function ID: 12740
 // Name: VoiceChannelBadge
-// Dependencies: [17, 2044, 4464, 4848, 1074, 13586, 5327, 5039, 2]
+// Dependencies: [17, 2044, 4466, 4848, 1074, 12740, 5328, 5039, 2]
 // Exports: createVoiceChannelBadge
 
-// Module 13585 (VoiceChannelBadge)
+// Module 12739 (VoiceChannelBadge)
 import _mod17 from "module_17" /* 17 */;
 import Constants from "Constants" /* 1074 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
 import VoiceStateStore from "VoiceStateStore" /* 4848 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guil
         }
         const channel = ChannelStore.getChannel(channelId);
         if (null != channel) {
-          const assetSource = Image.resolveAssetSource(tmp(5327).getChannelIcon(channel));
+          const assetSource = Image.resolveAssetSource(tmp(5328).getChannelIcon(channel));
           let uri;
           if (assetSource != null) {
             uri = assetSource.uri;
@@ -52,7 +52,7 @@ export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guil
             }
             const tmpResult3 = tmp(5039);
           }
-          const tmpResult = tmp(5327);
+          const tmpResult = tmp(5328);
         }
       }
     }

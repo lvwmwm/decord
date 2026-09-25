@@ -1,11 +1,11 @@
-// Module ID: 8428
-// Function ID: 8429
+// Module ID: 7517
+// Function ID: 7518
 // Name: FriendAnniversaryGate
-// Dependencies: [8429, 2]
+// Dependencies: [7518, 2]
 // Exports: getFriendAnniversaryGateConfig
 
-// Module 8428 (FriendAnniversaryGate)
-import MobileFriendAnniversaryExperimentDefault from "MobileFriendAnniversaryExperiment" /* 8429 */;
+// Module 7517 (FriendAnniversaryGate)
+import MobileFriendAnniversaryExperimentDefault from "MobileFriendAnniversaryExperiment" /* 7518 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/gifting/FriendAnniversaryGate.native.tsx");

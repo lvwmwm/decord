@@ -1,11 +1,11 @@
-// Module ID: 11299
-// Function ID: 11300
+// Module ID: 10397
+// Function ID: 10398
 // Name: InviteRolesDisplay
-// Dependencies: [19, 17, 2101, 21, 4829, 504, 4825, 1115, 11300, 2]
+// Dependencies: [19, 17, 2101, 21, 4829, 504, 4825, 1115, 10398, 2]
 // Exports: default
 
-// Module 11299 (InviteRolesDisplay)
-import RolePillDefault from "RolePill" /* 11300 */;
+// Module 10397 (InviteRolesDisplay)
+import RolePillDefault from "RolePill" /* 10398 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2101 */;
 

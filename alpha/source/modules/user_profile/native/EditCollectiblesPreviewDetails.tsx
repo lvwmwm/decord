@@ -1,15 +1,15 @@
-// Module ID: 13577
-// Function ID: 13578
+// Module ID: 12731
+// Function ID: 12732
 // Name: EditCollectiblesPreviewDetails
-// Dependencies: [19, 17, 2111, 21, 4829, 504, 4483, 7884, 4507, 4825, 1115, 8521, 2]
+// Dependencies: [19, 17, 2111, 21, 4829, 504, 4485, 6969, 4509, 4825, 1115, 7611, 2]
 // Exports: default
 
-// Module 13577 (EditCollectiblesPreviewDetails)
+// Module 12731 (EditCollectiblesPreviewDetails)
 import initialize from "initialize" /* 504 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4483 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4485 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7884 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8521 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 6969 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 7611 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2111 */;
 
@@ -23,13 +23,13 @@ function EditCollectiblesPreviewDescription(arg0) {
   const canUseCollectiblesResult = PremiumUtilsDefault.canUseCollectibles(user);
   let result = CollectiblesUtils.isPremiumCollectiblesProduct(product);
   if (!result) {
-    result = tmp(7884).isPremiumCollectiblesPurchase(purchase);
-    const tmpResult = tmp(7884);
+    result = tmp(6969).isPremiumCollectiblesPurchase(purchase);
+    const tmpResult = tmp(6969);
   }
   let result1 = !canUseCollectiblesResult;
   if (!canUseCollectiblesResult) {
-    result1 = tmp(7884).isPremiumCollectiblesPurchase(purchase);
-    const tmpResult3 = tmp(7884);
+    result1 = tmp(6969).isPremiumCollectiblesPurchase(purchase);
+    const tmpResult3 = tmp(6969);
   }
   if (null != purchase) {
     if (!result1) {
@@ -41,8 +41,8 @@ function EditCollectiblesPreviewDescription(arg0) {
       if (null != expiresAt1) {
         const _Date = Date;
         const date = new Date();
-        diffAsUnitsResult = tmp(4507).diffAsUnits(date, purchase.expiresAt);
-        const tmpResult4 = tmp(4507);
+        diffAsUnitsResult = tmp(4509).diffAsUnits(date, purchase.expiresAt);
+        const tmpResult4 = tmp(4509);
       }
       let tmp17 = null != diffAsUnitsResult;
       if (tmp17) {

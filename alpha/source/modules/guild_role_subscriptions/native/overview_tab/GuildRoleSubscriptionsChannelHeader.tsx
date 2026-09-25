@@ -1,14 +1,14 @@
-// Module ID: 13671
-// Function ID: 13672
+// Module ID: 12825
+// Function ID: 12826
 // Name: GuildRoleSubscriptionsChannelHeader
-// Dependencies: [19, 17, 21, 4829, 576, 1177, 13127, 4825, 1115, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 1177, 12277, 4825, 1115, 2]
 
-// Module 13671 (GuildRoleSubscriptionsChannelHeader)
+// Module 12825 (GuildRoleSubscriptionsChannelHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import _modDef13127 from "module_13127" /* 13127 */;
+import _modDef12277 from "module_12277" /* 12277 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,7 +24,7 @@ const result = size.fileFinishedImporting("modules/guild_role_subscriptions/nati
 
 export default noop.memo(function GuildRoleSubscriptionsChannelHeader() {
   const obj = { style: closure_6().header, children: null };
-  const items = [React4(native.Icon, { source: _modDef13127, size: native.Icon.Sizes.MEDIUM, disableColor: true }), ];
+  const items = [React4(native.Icon, { source: _modDef12277, size: native.Icon.Sizes.MEDIUM, disableColor: true }), ];
   const obj3 = { variant: "heading-lg/extrabold", color: "interactive-text-active", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t["KzCF/6"]);

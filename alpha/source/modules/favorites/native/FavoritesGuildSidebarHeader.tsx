@@ -1,18 +1,18 @@
-// Module ID: 16704
-// Function ID: 16705
+// Module ID: 15888
+// Function ID: 15889
 // Name: FavoritesGuildSidebarHeader
-// Dependencies: [19, 17, 16628, 21, 4829, 576, 10572, 11330, 4796, 10576, 1980, 10575, 4825, 1115, 3360, 5386, 5407, 5377, 5271, 2]
+// Dependencies: [19, 17, 15808, 21, 4829, 576, 9674, 10428, 4796, 9678, 1980, 9677, 4825, 1115, 3360, 5387, 5408, 5378, 5272, 2]
 // Exports: default
 
-// Module 16704 (FavoritesGuildSidebarHeader)
+// Module 15888 (FavoritesGuildSidebarHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3360 from "module_3360" /* 3360 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import Stack_Stack from "Stack/Stack" /* 5271 */;
-import ChatIcon from "ChatIcon" /* 5377 */;
-import TextIcon from "TextIcon" /* 5386 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5407 */;
+import Stack_Stack from "Stack/Stack" /* 5272 */;
+import ChatIcon from "ChatIcon" /* 5378 */;
+import TextIcon from "TextIcon" /* 5387 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5408 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -67,7 +67,7 @@ function PlaceholderRows() {
   return React5(View, obj);
 }
 const View = fn(17).View;
-let closure_5 = fn(16628).useHasFavoritesGuildSuggestions;
+let closure_5 = fn(15808).useHasFavoritesGuildSuggestions;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
 const createStyles = fn(4829);

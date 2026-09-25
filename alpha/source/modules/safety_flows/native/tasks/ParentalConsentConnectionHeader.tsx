@@ -1,17 +1,17 @@
-// Module ID: 18441
-// Function ID: 18442
+// Module ID: 17672
+// Function ID: 17673
 // Name: ParentalConsentConnectionHeader
-// Dependencies: [19, 17, 1372, 21, 4829, 5987, 576, 1612, 504, 4825, 6922, 1115, 2780, 2]
+// Dependencies: [19, 17, 1372, 21, 4829, 5989, 576, 1612, 504, 4825, 6005, 1115, 2780, 2]
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 18441 (ParentalConsentConnectionHeader)
+// Module 17672 (ParentalConsentConnectionHeader)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import _modDef2780 from "module_2780" /* 2780 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6922 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -20,8 +20,8 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const createStyles = fn(4829);
-let obj2 = { row: { height: fn(5987).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_16 }, logOut: null };
-let obj3 = { height: fn(5987).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_16 };
+let obj2 = { row: { height: fn(5989).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_16 }, logOut: null };
+let obj3 = { height: fn(5989).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.logOut = { position: "absolute", left: nativeDefault.space.PX_16 };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);

@@ -1,9 +1,9 @@
-// Module ID: 5814
-// Function ID: 5815
+// Module ID: 5816
+// Function ID: 5817
 // Name: FrecencyStore
-// Dependencies: [1220, 2044, 2066, 2098, 4650, 1074, 1084, 4866, 12, 504, 573, 2]
+// Dependencies: [1220, 2044, 2066, 2098, 4652, 1074, 1084, 4866, 12, 504, 573, 2]
 
-// Module 5814 (FrecencyStore)
+// Module 5816 (FrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
@@ -12,7 +12,7 @@ import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildStore from "GuildStore" /* 2066 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4650 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4652 */;
 
 function handleChannelSelect(arg0) {
   ({ guildId, channelId } = arg0);

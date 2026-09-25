@@ -1,12 +1,12 @@
-// Module ID: 16496
-// Function ID: 16497
+// Module ID: 15676
+// Function ID: 15677
 // Name: HappeningNowCardPlaceholder
-// Dependencies: [19, 17, 15645, 21, 4829, 576, 4561, 4830, 15646, 2]
+// Dependencies: [19, 17, 14815, 21, 4829, 576, 4563, 4830, 14816, 2]
 // Exports: HappeningNowCardPlaceholder
 
-// Module 16496 (HappeningNowCardPlaceholder)
+// Module 15676 (HappeningNowCardPlaceholder)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import timing from "timing" /* 4830 */;
 import noop from "module_19" /* 19 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const HAPPENING_NOW_CONTENT_HEIGHT = fn(15645).HAPPENING_NOW_CONTENT_HEIGHT;
+const HAPPENING_NOW_CONTENT_HEIGHT = fn(14815).HAPPENING_NOW_CONTENT_HEIGHT;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const createStyles = fn(4829);

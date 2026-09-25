@@ -1,14 +1,14 @@
-// Module ID: 16224
-// Function ID: 16225
+// Module ID: 15403
+// Function ID: 15404
 // Name: ShopBlockItem
-// Dependencies: [19, 17, 7872, 21, 4829, 576, 504, 7902, 9127, 16225, 16238, 16240, 16247, 2]
+// Dependencies: [19, 17, 6957, 21, 4829, 576, 504, 6987, 8221, 15404, 15417, 15419, 15426, 2]
 // Exports: default
 
-// Module 16224 (ShopBlockItem)
+// Module 15403 (ShopBlockItem)
 import nativeDefault from "native" /* 576 */;
-import ShopBlockType from "ShopBlockType" /* 7902 */;
+import ShopBlockType from "ShopBlockType" /* 6987 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7872 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6957 */;
 
 require = fn;
 const View = fn(17).View;

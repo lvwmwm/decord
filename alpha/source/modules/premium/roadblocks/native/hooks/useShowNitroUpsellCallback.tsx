@@ -1,11 +1,11 @@
-// Module ID: 10661
-// Function ID: 10662
+// Module ID: 9765
+// Function ID: 9766
 // Name: useShowNitroUpsellCallback
-// Dependencies: [19, 4561, 2]
+// Dependencies: [19, 4563, 2]
 // Exports: default
 
-// Module 10661 (useShowNitroUpsellCallback)
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+// Module 9765 (useShowNitroUpsellCallback)
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

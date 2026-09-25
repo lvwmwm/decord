@@ -1,11 +1,11 @@
-// Module ID: 14877
-// Function ID: 14878
+// Module ID: 14039
+// Function ID: 14040
 // Name: subscriptions
-// Dependencies: [5, 1074, 12, 9664, 14878, 1241, 14879, 2]
+// Dependencies: [5, 1074, 12, 8762, 14040, 1241, 14041, 2]
 
-// Module 14877 (subscriptions)
+// Module 14039 (subscriptions)
 import _modDef12 from "module_12" /* 12 */;
-import RPCErrorDefault from "RPCError" /* 9664 */;
+import RPCErrorDefault from "RPCError" /* 8762 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;

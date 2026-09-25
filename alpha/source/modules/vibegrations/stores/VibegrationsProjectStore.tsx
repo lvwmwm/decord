@@ -1,13 +1,13 @@
-// Module ID: 9389
-// Function ID: 9390
+// Module ID: 8487
+// Function ID: 8488
 // Name: VibegrationsProjectStore
-// Dependencies: [32, 1372, 5363, 504, 573, 2]
+// Dependencies: [32, 1372, 5364, 504, 573, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 9389 (VibegrationsProjectStore)
+// Module 8487 (VibegrationsProjectStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5363 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5364 */;
 import _slicedToArray from "module_32" /* 32 */;
 import UserStore from "UserStore" /* 1372 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 9570
-// Function ID: 9571
+// Module ID: 8668
+// Function ID: 8669
 // Name: SuperReactionIcon
-// Dependencies: [19, 21, 576, 4525, 9571, 2]
+// Dependencies: [19, 21, 576, 4527, 8669, 2]
 // Exports: SuperReactionIcon
 
-// Module 9570 (SuperReactionIcon)
+// Module 8668 (SuperReactionIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
-import _mod9571 from "module_9571" /* 9571 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
+import _mod8669 from "module_8669" /* 8669 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const SuperReactionIcon = function SuperReactionIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9571, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8669, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

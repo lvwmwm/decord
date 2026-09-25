@@ -1,11 +1,11 @@
-// Module ID: 12262
-// Function ID: 12263
+// Module ID: 11384
+// Function ID: 11385
 // Name: useAgeSpecificText
-// Dependencies: [9004, 2]
+// Dependencies: [8098, 2]
 // Exports: useAgeSpecificText
 
-// Module 12262 (useAgeSpecificText)
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9004 */;
+// Module 11384 (useAgeSpecificText)
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8098 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useAgeSpecificText.tsx");

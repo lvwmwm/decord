@@ -1,13 +1,13 @@
-// Module ID: 11005
-// Function ID: 11006
+// Module ID: 10109
+// Function ID: 10110
 // Name: MediaKeyboardLimitedPickerNotice
-// Dependencies: [19, 17, 21, 4829, 4825, 1115, 5273, 2]
+// Dependencies: [19, 17, 21, 4829, 4825, 1115, 5274, 2]
 // Exports: default
 
-// Module 11005 (MediaKeyboardLimitedPickerNotice)
+// Module 10109 (MediaKeyboardLimitedPickerNotice)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

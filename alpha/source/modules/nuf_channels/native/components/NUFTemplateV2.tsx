@@ -1,12 +1,12 @@
-// Module ID: 14136
-// Function ID: 14137
+// Module ID: 13297
+// Function ID: 13298
 // Name: NUFTemplateV2
-// Dependencies: [19, 17, 21, 4829, 4825, 5273, 2]
+// Dependencies: [19, 17, 21, 4829, 4825, 5274, 2]
 // Exports: default
 
-// Module 14136 (NUFTemplateV2)
+// Module 13297 (NUFTemplateV2)
 import Text_Text from "Text/Text" /* 4825 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

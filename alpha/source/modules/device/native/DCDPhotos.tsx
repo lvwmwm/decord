@@ -1,9 +1,9 @@
-// Module ID: 10994
-// Function ID: 10995
+// Module ID: 10098
+// Function ID: 10099
 // Name: DCDPhotos
 // Dependencies: [17, 2]
 
-// Module 10994 (DCDPhotos)
+// Module 10098 (DCDPhotos)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

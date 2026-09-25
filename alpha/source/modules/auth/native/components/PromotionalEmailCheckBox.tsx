@@ -1,10 +1,10 @@
-// Module ID: 16402
-// Function ID: 16403
+// Module ID: 15582
+// Function ID: 15583
 // Name: PromotionalEmailCheckBox
-// Dependencies: [19, 17, 6923, 21, 4829, 4543, 16403, 1115, 5922, 4825, 2]
+// Dependencies: [19, 17, 6006, 21, 4829, 4545, 15583, 1115, 5924, 4825, 2]
 // Exports: default
 
-// Module 16402 (PromotionalEmailCheckBox)
+// Module 15582 (PromotionalEmailCheckBox)
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -12,7 +12,7 @@ const require = globalThis.__r;
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c2, Pressable: c3 } = get_ActivityIndicator);
-const PromoEmailConsentStore = fn(6923);
+const PromoEmailConsentStore = fn(6006);
 ({ usePromoEmailConsentStore: closure_4, setPromoEmailConsentChecked: hasOwnProperty } = PromoEmailConsentStore);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
@@ -44,7 +44,7 @@ export default function PromotionalEmailCheckBox(style) {
       children: null
     };
     const obj5 = { checked: tmp3 };
-    const items = [closure_6(tmp4(5922).FormCheckbox, obj5), ];
+    const items = [closure_6(tmp4(5924).FormCheckbox, obj5), ];
     const obj6 = { variant: "text-xs/medium", color: "text-muted", style: tmp.checkboxLabel, children: promoEmailOptInLabel };
     items[1] = closure_6(tmp4(4825).Text, obj6);
     obj4.children = items;

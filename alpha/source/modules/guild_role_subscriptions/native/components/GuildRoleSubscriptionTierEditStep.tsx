@@ -1,17 +1,17 @@
-// Module ID: 18296
-// Function ID: 18297
+// Module ID: 17527
+// Function ID: 17528
 // Name: GuildRoleSubscriptionTierEditStep
-// Dependencies: [19, 17, 21, 4829, 576, 7456, 4825, 15566, 1115, 1612, 5273, 1484, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 6539, 4825, 14736, 1115, 1612, 5274, 1484, 2]
 // Exports: default
 
-// Module 18296 (GuildRoleSubscriptionTierEditStep)
+// Module 17527 (GuildRoleSubscriptionTierEditStep)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useNavigation from "useNavigation" /* 1484 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7456 */;
-import FormSeparatorDefault from "FormSeparator" /* 15566 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6539 */;
+import FormSeparatorDefault from "FormSeparator" /* 14736 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -39,7 +39,7 @@ function Footer(arg0) {
   const tmp = closure_8();
   items[1] = { paddingBottom: useSafeAreaInsetsDefault().bottom };
   obj.style = items;
-  obj.children = timestampProducer(tmp5(5273).Button, { loading: submitting, disabled: !canProceedToNextStep, text: stringResult, onPress: onProceed });
+  obj.children = timestampProducer(tmp5(5274).Button, { loading: submitting, disabled: !canProceedToNextStep, text: stringResult, onPress: onProceed });
   return timestampProducer(React4, obj);
 }
 get_ActivityIndicator = fn(17);

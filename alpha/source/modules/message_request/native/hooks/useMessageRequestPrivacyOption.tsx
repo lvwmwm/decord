@@ -1,13 +1,13 @@
-// Module ID: 14276
-// Function ID: 14277
+// Module ID: 13437
+// Function ID: 13438
 // Name: useMessageRequestPrivacyOption
-// Dependencies: [19, 21, 2020, 7328, 7532, 1115, 12794, 2]
+// Dependencies: [19, 21, 2020, 6411, 6615, 1115, 11920, 2]
 // Exports: useMessageRequestPrivacyOption
 
-// Module 14276 (useMessageRequestPrivacyOption)
+// Module 13437 (useMessageRequestPrivacyOption)
 import UserSettings from "UserSettings" /* 2020 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7328 */;
-import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 12794 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6411 */;
+import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 11920 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -43,7 +43,7 @@ function MessageRequestRestrictedGuildPrivacyOption(guild) {
   obj.value = tmp5;
   obj.onValueChange = callback;
   obj.disabled = hasItem1;
-  return jsx(id(7532).ActionSheetSwitchRow, { label: null, subLabel: null, value: null, onValueChange: null, disabled: null });
+  return jsx(id(6615).ActionSheetSwitchRow, { label: null, subLabel: null, value: null, onValueChange: null, disabled: null });
 }
 const jsx = fn(21).jsx;
 const size = fn(2);

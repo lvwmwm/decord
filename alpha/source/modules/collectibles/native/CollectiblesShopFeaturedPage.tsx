@@ -1,14 +1,14 @@
-// Module ID: 16223
-// Function ID: 16224
+// Module ID: 15402
+// Function ID: 15403
 // Name: CollectiblesShopFeaturedPage
-// Dependencies: [19, 17, 1076, 21, 4829, 1177, 8580, 1115, 16224, 2]
+// Dependencies: [19, 17, 1076, 21, 4829, 1177, 7670, 1115, 15403, 2]
 // Exports: default
 
-// Module 16223 (CollectiblesShopFeaturedPage)
+// Module 15402 (CollectiblesShopFeaturedPage)
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import generated_NoResults from "generated/NoResults" /* 8580 */;
-import ShopBlockItemDefault from "ShopBlockItem" /* 16224 */;
+import generated_NoResults from "generated/NoResults" /* 7670 */;
+import ShopBlockItemDefault from "ShopBlockItem" /* 15403 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

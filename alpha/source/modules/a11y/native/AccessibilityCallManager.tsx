@@ -1,14 +1,14 @@
-// Module ID: 14817
-// Function ID: 14818
+// Module ID: 13979
+// Function ID: 13980
 // Name: AccessibilityCallManager
-// Dependencies: [502, 2044, 4474, 1372, 1364, 2020, 4982, 4680, 1115, 1982, 573, 2]
+// Dependencies: [502, 2044, 4476, 1372, 1364, 2020, 4982, 4682, 1115, 1982, 573, 2]
 
-// Module 14817 (AccessibilityCallManager)
+// Module 13979 (AccessibilityCallManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
 import LifecycleManager from "LifecycleManager" /* 1982 */;
 
@@ -30,7 +30,7 @@ class AccessibilityCallManager extends tmp4 {
               const channelName = tmp4(4982).computeChannelName(channel, UserStore, RelationshipStore);
               if (null != channelName) {
                 obj.add(channelId);
-                const AccessibilityAnnouncer = tmp4(4680).AccessibilityAnnouncer;
+                const AccessibilityAnnouncer = tmp4(4682).AccessibilityAnnouncer;
                 const intl = tmp4(1115).intl;
                 const obj3 = { callLocation: channelName };
                 AccessibilityAnnouncer.announce(intl.formatToPlainString(tmp4(1115).t["Bm0A/p"], obj3), "assertive");
@@ -62,7 +62,7 @@ class AccessibilityCallManager extends tmp4 {
                 const channelName = tmp4(4982).computeChannelName(channel, UserStore, RelationshipStore);
                 if (null != channelName) {
                   obj2.add(channelId);
-                  const AccessibilityAnnouncer = tmp4(4680).AccessibilityAnnouncer;
+                  const AccessibilityAnnouncer = tmp4(4682).AccessibilityAnnouncer;
                   const intl = tmp4(1115).intl;
                   const obj4 = { callLocation: channelName };
                   AccessibilityAnnouncer.announce(intl.formatToPlainString(tmp4(1115).t["Bm0A/p"], obj4), "assertive");

@@ -1,17 +1,17 @@
-// Module ID: 15591
-// Function ID: 15592
+// Module ID: 14761
+// Function ID: 14762
 // Name: GuildRoleSubscriptionBenefitRow
-// Dependencies: [19, 17, 2044, 21, 4829, 4478, 15589, 1177, 4825, 504, 4982, 1115, 5327, 2]
+// Dependencies: [19, 17, 2044, 21, 4829, 4480, 14759, 1177, 4825, 504, 4982, 1115, 5328, 2]
 // Exports: ChannelBenefitRow, IntangibleBenefitRow
 
-// Module 15591 (GuildRoleSubscriptionBenefitRow)
+// Module 14761 (GuildRoleSubscriptionBenefitRow)
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import EmojiIconDefault from "EmojiIcon" /* 15589 */;
+import EmojiIconDefault from "EmojiIcon" /* 14759 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 
-const UnicodeEmojisDefault = tmp5(4478);
+const UnicodeEmojisDefault = tmp5(4480);
 require = fn;
 function BenefitRow(description) {
   description = description.description;
@@ -53,13 +53,13 @@ export const ChannelBenefitRow = function ChannelBenefitRow(benefit) {
   let tmp8 = closure_5(benefit(4825).Text, obj2);
   if (null != stateFromStores) {
     const obj3 = { style: tmp.channelTitle, children: null };
-    const obj4 = { style: tmp.channelIcon, size: tmp2(1177).Icon.Sizes.CUSTOM, source: tmp2(5327).getChannelIcon(stateFromStores) };
+    const obj4 = { style: tmp.channelIcon, size: tmp2(1177).Icon.Sizes.CUSTOM, source: tmp2(5328).getChannelIcon(stateFromStores) };
     const items2 = [tmp7(tmp2(1177).Icon, obj4), ];
     const obj5 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: tmp6 };
     items2[1] = tmp7(tmp2(4825).Text, obj5);
     obj3.children = items2;
     tmp8 = closure_6(View, obj3);
-    const tmp2Result = tmp2(5327);
+    const tmp2Result = tmp2(5328);
   }
   if (null != benefit.emoji_id) {
     let str = benefit.emoji_id;

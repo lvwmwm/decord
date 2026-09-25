@@ -1,14 +1,14 @@
-// Module ID: 12164
-// Function ID: 12165
+// Module ID: 11286
+// Function ID: 11287
 // Name: SelectComponentActionSheet
-// Dependencies: [19, 17, 2044, 2098, 7484, 21, 4829, 576, 7482, 1115, 5273, 9927, 4543, 5910, 5922, 9636, 7314, 4536, 1612, 1478, 5987, 504, 4796, 7483, 6957, 2]
+// Dependencies: [19, 17, 2044, 2098, 6567, 21, 4829, 576, 6565, 1115, 5274, 9025, 4545, 5912, 5924, 8734, 6397, 4538, 1612, 1478, 5989, 504, 4796, 6566, 6040, 2]
 // Exports: default
 
-// Module 12164 (SelectComponentActionSheet)
+// Module 11286 (SelectComponentActionSheet)
 import nativeDefault from "native" /* 576 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4543 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4545 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import TableRow from "TableRow" /* 5910 */;
+import TableRow from "TableRow" /* 5912 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
@@ -67,10 +67,10 @@ function SelectionHeader(renderIcon) {
     const obj3 = { size: "sm", variant: str, disabled: selectButtonDisabled, onPress: renderIcon.submitSelection, text: null };
     const intl3 = tmp6(1115).intl;
     obj3.text = intl3.string(tmp6(1115).t.XqMe3N);
-    tmp5Result = tmp5(tmp6(5273).Button, obj3);
+    tmp5Result = tmp5(tmp6(5274).Button, obj3);
   }
   obj.trailing = tmp5Result;
-  const children = [closure_8(renderIcon(7482).BottomSheetTitleHeader, obj), ];
+  const children = [closure_8(renderIcon(6565).BottomSheetTitleHeader, obj), ];
   let tmp5Result4 = null;
   if (null != onQueryChange) {
     tmp5Result4 = null;
@@ -104,8 +104,8 @@ function SelectionHeader(renderIcon) {
         }
         onQueryChange(arg0);
       };
-      tmp5Result4 = tmp5(selectedOptions(9927), obj4);
-      const tmp13 = selectedOptions(9927);
+      tmp5Result4 = tmp5(selectedOptions(9025), obj4);
+      const tmp13 = selectedOptions(9025);
     }
   }
   children[1] = tmp5Result4;
@@ -168,11 +168,11 @@ function SelectionOptionItem(item) {
       selected = false;
     }
     const obj5 = { checked: selected };
-    let tmp6Result2 = tmp6(tmp2(5922).FormCheckbox, obj5);
+    let tmp6Result2 = tmp6(tmp2(5924).FormCheckbox, obj5);
   } else {
     tmp6Result2 = null;
     if (true === selected) {
-      tmp6Result2 = tmp6(tmp2(9636).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp6Result2 = tmp6(tmp2(8734).CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp6Result2;
@@ -181,7 +181,7 @@ function SelectionOptionItem(item) {
   return React6(TableRow.TableRow, obj2);
 }
 const View = fn(17).View;
-let closure_7 = fn(7484).ACTION_SHEET_START_HEIGHT_RATIO;
+let closure_7 = fn(6567).ACTION_SHEET_START_HEIGHT_RATIO;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4829);

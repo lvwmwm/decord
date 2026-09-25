@@ -1,15 +1,15 @@
-// Module ID: 17005
-// Function ID: 17006
+// Module ID: 16195
+// Function ID: 16196
 // Name: StandaloneMembersView
-// Dependencies: [19, 21, 1484, 1612, 9939, 5929, 1115, 17006, 12178, 12192, 12194, 7333, 2]
+// Dependencies: [19, 21, 1484, 1612, 9037, 5931, 1115, 16196, 11300, 11314, 11316, 6416, 2]
 // Exports: default
 
-// Module 17005 (StandaloneMembersView)
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9939 */;
-import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 12178 */;
-import KickConfirmDefault from "KickConfirm" /* 12192 */;
-import BanConfirmDefault from "BanConfirm" /* 12194 */;
-import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 17006 */;
+// Module 16195 (StandaloneMembersView)
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9037 */;
+import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 11300 */;
+import KickConfirmDefault from "KickConfirm" /* 11314 */;
+import BanConfirmDefault from "BanConfirm" /* 11316 */;
+import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 16196 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

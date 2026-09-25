@@ -1,13 +1,13 @@
-// Module ID: 16705
-// Function ID: 16706
+// Module ID: 15889
+// Function ID: 15890
 // Name: NsfwGateGuildSidebar
-// Dependencies: [19, 17, 2107, 2066, 1372, 10125, 1074, 21, 4829, 576, 504, 1241, 9491, 16561, 1177, 5829, 16706, 1115, 2110, 2]
+// Dependencies: [19, 17, 2107, 2066, 1372, 9222, 1074, 21, 4829, 576, 504, 1241, 8589, 15741, 1177, 5831, 15890, 1115, 2110, 2]
 // Exports: default
 
-// Module 16705 (NsfwGateGuildSidebar)
+// Module 15889 (NsfwGateGuildSidebar)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 9491 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 8589 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2107 */;
 import GuildStore from "GuildStore" /* 2066 */;
@@ -15,7 +15,7 @@ import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const NsfwGateSource = fn(10125).NsfwGateSource;
+const NsfwGateSource = fn(9222).NsfwGateSource;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, HelpdeskArticles: c10, Fonts: closure_11 } = Constants);
 const jsxProd = fn(21);

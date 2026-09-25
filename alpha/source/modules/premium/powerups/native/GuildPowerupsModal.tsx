@@ -1,21 +1,21 @@
-// Module ID: 12829
-// Function ID: 12830
+// Module ID: 11958
+// Function ID: 11959
 // Name: GuildPowerupsModal
-// Dependencies: [19, 17, 4718, 21, 4829, 576, 4741, 12830, 12840, 12860, 1612, 7495, 12865, 12866, 12895, 5032, 4737, 5936, 1115, 2518, 8194, 5929, 12902, 12904, 12912, 12918, 12928, 12936, 2]
+// Dependencies: [19, 17, 4720, 21, 4829, 576, 4743, 11959, 11969, 11989, 1612, 6578, 11994, 11995, 12024, 5032, 4739, 5938, 1115, 2518, 7283, 5931, 12031, 12033, 12041, 12047, 12057, 12065, 2]
 // Exports: default
 
-// Module 12829 (GuildPowerupsModal)
+// Module 11958 (GuildPowerupsModal)
 import nativeDefault from "native" /* 576 */;
-import openGuildPowerupsBottomSheetDefault from "openGuildPowerupsBottomSheet" /* 12866 */;
-import openGuildPowerupsMultiPerkBottomSheetDefault from "openGuildPowerupsMultiPerkBottomSheet" /* 12895 */;
-import GuildPowerupsLevelsSectionDefault from "GuildPowerupsLevelsSection" /* 12912 */;
-import GuildPowerupsPerksSectionDefault from "GuildPowerupsPerksSection" /* 12918 */;
+import openGuildPowerupsBottomSheetDefault from "openGuildPowerupsBottomSheet" /* 11995 */;
+import openGuildPowerupsMultiPerkBottomSheetDefault from "openGuildPowerupsMultiPerkBottomSheet" /* 12024 */;
+import GuildPowerupsLevelsSectionDefault from "GuildPowerupsLevelsSection" /* 12041 */;
+import GuildPowerupsPerksSectionDefault from "GuildPowerupsPerksSection" /* 12047 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const GuildPowerupsConstants = fn(4718);
+const GuildPowerupsConstants = fn(4720);
 ({ BoostInfoType: metroRequire, GuildPowerupType: closure_7 } = GuildPowerupsConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);

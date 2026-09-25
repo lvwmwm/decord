@@ -1,14 +1,14 @@
-// Module ID: 8330
-// Function ID: 8331
+// Module ID: 7419
+// Function ID: 7420
 // Name: ChangeChannelNameSystemMessage
-// Dependencies: [2044, 8301, 8308, 8310, 1115, 8312, 8315, 2]
+// Dependencies: [2044, 7390, 7397, 7399, 1115, 7401, 7404, 2]
 // Exports: createChangeChannelNameSystemMessage
 
-// Module 8330 (ChangeChannelNameSystemMessage)
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8301 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8308 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8310 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8312 */;
+// Module 7419 (ChangeChannelNameSystemMessage)
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 7390 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7397 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7399 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7401 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 
 require = fn;
@@ -66,7 +66,7 @@ export const createChangeChannelNameSystemMessage = function createChangeChannel
     const obj7 = { label: null, name: null };
     const intl2 = tmp4(1115).intl;
     obj7.label = intl2.string(tmp4(1115).t["5Q9+/L"]);
-    obj7.name = tmp4(8315).MessageAccessibilityAction.EDIT_GDM;
+    obj7.name = tmp4(7404).MessageAccessibilityAction.EDIT_GDM;
     items[HermesBuiltin.arraySpread(accessibilityActions, 0)] = obj7;
     obj6.accessibilityActions = items;
     tmp12 = obj6;

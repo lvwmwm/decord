@@ -1,9 +1,9 @@
-// Module ID: 12226
-// Function ID: 12227
+// Module ID: 11348
+// Function ID: 11349
 // Name: AutomatedUnderageAppealModalActionCreators
-// Dependencies: [5, 8770, 8762, 21, 12224, 573, 4796, 12227, 1980, 8769, 8780, 8763, 8786, 8761, 5032, 8793, 8931, 2]
+// Dependencies: [5, 7860, 7852, 21, 11346, 573, 4796, 11349, 1980, 7859, 7872, 7853, 7878, 7851, 5032, 7885, 8025, 2]
 
-// Module 12226 (AutomatedUnderageAppealModalActionCreators)
+// Module 11348 (AutomatedUnderageAppealModalActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
@@ -11,21 +11,21 @@ import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const ModalActionCreatorsDefault = tmp(5032);
 require = fn;
-const SafetyHubConstants = fn(8770);
+const SafetyHubConstants = fn(7860);
 ({ AGE_APPEAL_ACTION_SHEET_NAME: closure_4, AGE_CHECK_POLL_DELAY_MS: hasOwnProperty } = SafetyHubConstants);
-let closure_6 = fn(8762).AGE_VERIFICATION_GET_STARTED_MODAL_KEY;
+let closure_6 = fn(7852).AGE_VERIFICATION_GET_STARTED_MODAL_KEY;
 const jsx = fn(21).jsx;
 let obj = {
   open(classificationId, onClose) {
     DispatcherDefault.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12227, dependencyMap.paths), React4, { classificationId, onClose });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11349, dependencyMap.paths), React4, { classificationId, onClose });
   },
   openV2(classificationId, onClose) {
     _require = classificationId;
     importDefault = onClose;
     DispatcherDefault.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     if (obj2.isCurrentUserSuspended()) {
-      if (tmp4Result.isExpressiveModalV2Enabled(tmp4(8763).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS)) {
+      if (tmp4Result.isExpressiveModalV2Enabled(tmp4(7853).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS)) {
         const _Math = Math;
         const _Date = Date;
         dependencyMap = Math.floor(Date.now() / 1000);
@@ -58,7 +58,7 @@ let obj = {
                   classificationId = tmp4;
                   dependencyMap = 1;
                   v3 = 1;
-                  const obj6 = { value: classificationId(8786).shouldShowManualReviewFallback(classificationId(8763).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS), done: false };
+                  const obj6 = { value: classificationId(7878).shouldShowManualReviewFallback(classificationId(7853).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS), done: false };
                   return obj6;
                 }
               } else if (arg0 === 1) {
@@ -70,8 +70,8 @@ let obj = {
                 return obj7;
               } else {
                 if (value) {
-                  const result = onClose(8761).showManualReviewFallbackModal(classificationId(8763).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS, closure_129_1);
-                  const obj3 = onClose(8761);
+                  const result = onClose(7851).showManualReviewFallbackModal(classificationId(7853).AgeVerificationModalEntryPoint.AUTOMATED_UNDERAGE_APPEALS, closure_129_1);
+                  const obj3 = onClose(7851);
                 } else {
                   const obj8 = { onClose: closure_129_1 };
                   onClose(5032).pushLazy(v3(async () => {
@@ -88,8 +88,8 @@ let obj = {
                       },
                       onComplete() {
                         closure_0 = dependencyMap;
-                        closure_2_0(12224).resetAgeCheckStatus();
-                        obj = closure_2_0(12224);
+                        closure_2_0(11346).resetAgeCheckStatus();
+                        obj = closure_2_0(11346);
                         closure_2_1(573).dispatch({ type: "SAFETY_HUB_EXPRESSIVE_MODAL_V2_VERIFICATION_SUBMITTED" });
                         const obj2 = closure_2_1(573);
                         closure_2_1(573).dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_START_POLL" });

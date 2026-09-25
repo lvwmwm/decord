@@ -1,0 +1,9 @@
+// Module ID: 9559
+// Function ID: 9560
+// Dependencies: [1121]
+
+// Module 9559
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b001972a2062de923c0ef45fb0f2ab23", name: "VideoIcon", type: "png" });

@@ -1,12 +1,12 @@
-// Module ID: 16176
-// Function ID: 16177
+// Module ID: 15353
+// Function ID: 15354
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: [32, 19, 17, 21, 4829, 576, 4825, 9974, 5271, 9975, 12964, 5273, 4536, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 4825, 9072, 5272, 9073, 12095, 5274, 4538, 2]
 // Exports: default
 
-// Module 16176 (UserSettingsDesignSystemSegmentedControl)
+// Module 15353 (UserSettingsDesignSystemSegmentedControl)
 import nativeDefault from "native" /* 576 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4536 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4538 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

@@ -1,13 +1,13 @@
-// Module ID: 11233
-// Function ID: 11234
+// Module ID: 10331
+// Function ID: 10332
 // Name: TvIcon
-// Dependencies: [19, 21, 576, 4525, 11234, 2]
+// Dependencies: [19, 21, 576, 4527, 10332, 2]
 // Exports: TvIcon
 
-// Module 11233 (TvIcon)
+// Module 10331 (TvIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
-import _mod11234 from "module_11234" /* 11234 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
+import _mod10332 from "module_10332" /* 10332 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const TvIcon = function TvIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11234, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10332, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,16 +1,16 @@
-// Module ID: 17475
-// Function ID: 17476
+// Module ID: 16692
+// Function ID: 16693
 // Name: Settings
-// Dependencies: [19, 17, 21, 4829, 576, 17355, 1612, 7276, 4808, 4561, 17476, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 16570, 1612, 6359, 4808, 4563, 16693, 2]
 // Exports: default
 
-// Module 17475 (Settings)
+// Module 16692 (Settings)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4561 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7276 */;
-import profileModalTransition from "profileModalTransition" /* 17355 */;
-import SettingsNavigatorDefault from "SettingsNavigator" /* 17476 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4563 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6359 */;
+import profileModalTransition from "profileModalTransition" /* 16570 */;
+import SettingsNavigatorDefault from "SettingsNavigator" /* 16693 */;
 import noop from "module_19" /* 19 */;
 
 const DeviceUtils = tmp(4808);

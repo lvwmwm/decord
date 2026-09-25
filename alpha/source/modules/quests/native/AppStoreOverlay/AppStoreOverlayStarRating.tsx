@@ -1,13 +1,13 @@
-// Module ID: 11846
-// Function ID: 11847
+// Module ID: 10715
+// Function ID: 10716
 // Name: AppStoreOverlayStarRating
-// Dependencies: [19, 17, 21, 4829, 576, 10589, 10583, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 9693, 9687, 2]
 // Exports: default
 
-// Module 11846 (AppStoreOverlayStarRating)
+// Module 10715 (AppStoreOverlayStarRating)
 import nativeDefault from "native" /* 576 */;
-import StarIcon from "StarIcon" /* 10583 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 10589 */;
+import StarIcon from "StarIcon" /* 9687 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 9693 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

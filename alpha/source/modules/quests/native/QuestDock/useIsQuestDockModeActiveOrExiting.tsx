@@ -1,17 +1,17 @@
-// Module ID: 15539
-// Function ID: 15540
+// Module ID: 14709
+// Function ID: 14710
 // Name: useIsQuestDockModeActiveOrExiting
-// Dependencies: [19, 15431, 15432, 4561, 5272, 8617, 2]
+// Dependencies: [19, 14599, 14600, 4563, 5273, 7707, 2]
 // Exports: default
 
-// Module 15539 (useIsQuestDockModeActiveOrExiting)
-import spring from "spring" /* 5272 */;
+// Module 14709 (useIsQuestDockModeActiveOrExiting)
+import spring from "spring" /* 5273 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const QUEST_DOCK_MODE_CHANGE_PHYSICS = fn(15431).QUEST_DOCK_MODE_CHANGE_PHYSICS;
+const QUEST_DOCK_MODE_CHANGE_PHYSICS = fn(14599).QUEST_DOCK_MODE_CHANGE_PHYSICS;
 const __initData = { code: "function useIsQuestDockModeActiveOrExitingTsx1(){const{activeQuestDockMode,mode}=this.__closure;return activeQuestDockMode.get()===mode;}" };
 const __initData2 = { code: "function useIsQuestDockModeActiveOrExitingTsx2(isActive,wasActive){const{isActiveOrExiting,transitionProgress,withSpring,QUEST_DOCK_MODE_CHANGE_PHYSICS,activeQuestDockMode,mode}=this.__closure;if(isActive===wasActive)return;if(wasActive==null&&isActiveOrExiting.get()===isActive)return;if(isActive){isActiveOrExiting.set(true);return;}transitionProgress.set(0);transitionProgress.set(withSpring(1,QUEST_DOCK_MODE_CHANGE_PHYSICS,'respect-motion-settings',function(finished){'worklet';if(finished===true&&activeQuestDockMode.get()!==mode){isActiveOrExiting.set(false);}}));}" };
 let closure_7 = { code: "function useIsQuestDockModeActiveOrExitingTsx3(finished){const{activeQuestDockMode,mode,isActiveOrExiting}=this.__closure;if(finished===true&&activeQuestDockMode.get()!==mode){isActiveOrExiting.set(false);}}" };

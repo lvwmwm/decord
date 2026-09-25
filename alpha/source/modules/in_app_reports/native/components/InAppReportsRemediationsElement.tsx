@@ -1,13 +1,13 @@
-// Module ID: 13298
-// Function ID: 13299
+// Module ID: 12448
+// Function ID: 12449
 // Name: InAppReportsRemediationsElement
-// Dependencies: [19, 17, 21, 4829, 576, 5992, 1115, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 5994, 1115, 2]
 // Exports: default
 
-// Module 13298 (InAppReportsRemediationsElement)
+// Module 12448 (InAppReportsRemediationsElement)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import TableRowGroup from "TableRowGroup" /* 5992 */;
+import TableRowGroup from "TableRowGroup" /* 5994 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

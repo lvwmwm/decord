@@ -1,14 +1,14 @@
-// Module ID: 15158
-// Function ID: 15159
+// Module ID: 14324
+// Function ID: 14325
 // Name: SensitiveContentFiltersScreen
-// Dependencies: [19, 8323, 21, 1115, 15159, 11811, 15057, 2]
+// Dependencies: [19, 7412, 21, 1115, 14325, 10993, 14223, 2]
 // Exports: default
 
-// Module 15158 (SensitiveContentFiltersScreen)
+// Module 14324 (SensitiveContentFiltersScreen)
 import util from "util" /* 1115 */;
-import SettingBuilders from "SettingBuilders" /* 11811 */;
-import SettingLayoutDefault from "SettingLayout" /* 15057 */;
-import SettingsScreenNotices from "SettingsScreenNotices" /* 15159 */;
+import SettingBuilders from "SettingBuilders" /* 10993 */;
+import SettingLayoutDefault from "SettingLayout" /* 14223 */;
+import SettingsScreenNotices from "SettingsScreenNotices" /* 14325 */;
 import noop from "module_19" /* 19 */;
 
 const SettingsScreenNoticesDefault = SettingsScreenNotices;
@@ -18,7 +18,7 @@ function SensitiveContentFiltersNotices() {
   const obj = { isListHeader: true, screen: SettingsScreenNotices.SettingsScreen.SENSITIVE_CONTENT_FILTERS };
   return jsx(SettingsScreenNoticesDefault, { isListHeader: true, screen: SettingsScreenNotices.SettingsScreen.SENSITIVE_CONTENT_FILTERS });
 }
-const MobileUserSettings = fn(8323).MobileUserSettings;
+const MobileUserSettings = fn(7412).MobileUserSettings;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/SensitiveContentFiltersScreen.tsx");

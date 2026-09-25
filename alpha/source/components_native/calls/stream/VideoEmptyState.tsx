@@ -1,14 +1,14 @@
-// Module ID: 9770
-// Function ID: 9771
+// Module ID: 8868
+// Function ID: 8869
 // Name: VideoEmptyState
-// Dependencies: [19, 17, 2044, 1074, 21, 4829, 576, 9771, 1177, 1115, 9769, 504, 5290, 4971, 4881, 4825, 5273, 2]
+// Dependencies: [19, 17, 2044, 1074, 21, 4829, 576, 8869, 1177, 1115, 8867, 504, 5291, 4971, 4881, 4825, 5274, 2]
 // Exports: default
 
-// Module 9770 (VideoEmptyState)
+// Module 8868 (VideoEmptyState)
 import nativeDefault from "native" /* 576 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 4881 */;
 import StreamActionCreators from "StreamActionCreators" /* 4971 */;
-import useMountEffectDefault from "useMountEffect" /* 5290 */;
+import useMountEffectDefault from "useMountEffect" /* 5291 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 
@@ -35,7 +35,7 @@ export default function VideoEmptyState(style) {
     let tmp10 = !removeSplashImage;
     if (!removeSplashImage) {
       let obj2 = { style: tmp2.placeholderImage };
-      tmp10 = closure_5(stream(9771).StreamEnded, obj2);
+      tmp10 = closure_5(stream(8869).StreamEnded, obj2);
     }
     let obj3 = { children: null };
     const items = [tmp10, ];
@@ -54,13 +54,13 @@ export default function VideoEmptyState(style) {
     tmp8Result = null;
   }
   if (null != avError) {
-    let errorCode = stream(9769).getErrorInfo(avError).errorCode;
-    const obj6 = stream(9769);
+    let errorCode = stream(8867).getErrorInfo(avError).errorCode;
+    const obj6 = stream(8867);
   } else {
     errorCode = null;
     if (type === tmp3.STREAM_FAILED) {
-      errorCode = stream(9769).getErrorInfo(stream(9769).AVError.STREAM_FAILED_TO_START).errorCode;
-      const obj5 = stream(9769);
+      errorCode = stream(8867).getErrorInfo(stream(8867).AVError.STREAM_FAILED_TO_START).errorCode;
+      const obj5 = stream(8867);
     }
   }
   const items1 = [ChannelStore];
@@ -100,7 +100,7 @@ export default function VideoEmptyState(style) {
       const obj = StreamActionCreators;
       obj.stopStream(StreamKeyUtils.encodeStreamKey(stream));
     };
-    obj11.children = closure_5(tmp22(5273).Button, obj12);
+    obj11.children = closure_5(tmp22(5274).Button, obj12);
     tmp30 = closure_5(tmp26, obj11);
   }
   items4[2] = tmp30;

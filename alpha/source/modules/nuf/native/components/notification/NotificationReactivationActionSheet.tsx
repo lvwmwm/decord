@@ -1,21 +1,21 @@
-// Module ID: 17966
-// Function ID: 17967
+// Module ID: 17192
+// Function ID: 17193
 // Name: NotificationReactivationActionSheet
-// Dependencies: [19, 17, 12759, 1074, 21, 4829, 576, 1241, 12760, 4796, 7483, 17967, 4825, 1115, 5738, 5273, 2]
+// Dependencies: [19, 17, 11885, 1074, 21, 4829, 576, 1241, 11886, 4796, 6566, 17193, 4825, 1115, 5740, 5274, 2]
 // Exports: default
 
-// Module 17966 (NotificationReactivationActionSheet)
+// Module 17192 (NotificationReactivationActionSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12760 */;
-import _modDef17967 from "module_17967" /* 17967 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 11886 */;
+import _modDef17193 from "module_17193" /* 17193 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
-const EventActionType = fn(12759).EventActionType;
+const EventActionType = fn(11885).EventActionType;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
@@ -43,13 +43,13 @@ export default function NotificationReactivationActionSheet(location) {
     });
   }, items);
   const callback1 = noop.useCallback(() => {
-    AnalyticsUtilsDefault.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, { action_type: EventActionType.SKIP_STEP, action_location: _location, permission_granted: "r" });
-    const obj2 = { action_type: EventActionType.SKIP_STEP, action_location: _location, permission_granted: "r" };
+    AnalyticsUtilsDefault.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, { action_type: EventActionType.SKIP_STEP, action_location: _location, permission_granted: "Array" });
+    const obj2 = { action_type: EventActionType.SKIP_STEP, action_location: _location, permission_granted: "Array" };
     ActionSheetActionCreatorsDefault.hideActionSheet();
   }, items1);
   let obj = { children: null };
   let obj2 = { style: tmp.container, children: null };
-  const items2 = [closure_8(closure_5, { style: tmp.image, source: _modDef17967, resizeMode: "contain" }), , , ];
+  const items2 = [closure_8(closure_5, { style: tmp.image, source: _modDef17193, resizeMode: "contain" }), , , ];
   const obj4 = { style: tmp.title, variant: "heading-xl/bold", accessibilityRole: "header", children: null };
   const intl = _location(1115).intl;
   obj4.children = intl.string(_location(1115).t.a4bgO0);
@@ -63,15 +63,15 @@ export default function NotificationReactivationActionSheet(location) {
   const intl3 = _location(1115).intl;
   obj7.text = intl3.string(_location(1115).t.a4bgO0);
   obj7.onPress = callback;
-  const items3 = [closure_8(_location(5273).Button, obj7), ];
+  const items3 = [closure_8(_location(5274).Button, obj7), ];
   const obj8 = { text: null, onPress: null, variant: "secondary" };
   const intl4 = _location(1115).intl;
   obj8.text = intl4.string(_location(1115).t["/L3kom"]);
   obj8.onPress = callback1;
-  items3[1] = closure_8(_location(5273).Button, obj8);
+  items3[1] = closure_8(_location(5274).Button, obj8);
   obj6.children = items3;
-  items2[3] = closure_9(_location(5738).ButtonGroup, obj6);
+  items2[3] = closure_9(_location(5740).ButtonGroup, obj6);
   obj2.children = items2;
   obj.children = closure_9(closure_4, obj2);
-  return closure_8(_location(7483).BottomSheet, obj);
+  return closure_8(_location(6566).BottomSheet, obj);
 };

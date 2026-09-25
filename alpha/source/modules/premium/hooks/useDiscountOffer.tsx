@@ -1,14 +1,14 @@
-// Module ID: 8410
-// Function ID: 8411
+// Module ID: 7499
+// Function ID: 7500
 // Name: useDiscountOffer
-// Dependencies: [32, 19, 1372, 7780, 1374, 504, 4483, 2039, 2]
+// Dependencies: [32, 19, 1372, 6865, 1374, 504, 4485, 2039, 2]
 // Exports: default
 
-// Module 8410 (useDiscountOffer)
+// Module 7499 (useDiscountOffer)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import UserOfferStore from "UserOfferStore" /* 7780 */;
+import UserOfferStore from "UserOfferStore" /* 6865 */;
 
 const require = globalThis.__r;
 

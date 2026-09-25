@@ -1,17 +1,17 @@
-// Module ID: 10388
-// Function ID: 10389
+// Module ID: 9490
+// Function ID: 9491
 // Name: StageChannelCallView
-// Dependencies: [19, 21, 9849, 4829, 1612, 10389, 10390, 4561, 9733, 10391, 2]
+// Dependencies: [19, 21, 8947, 4829, 1612, 9491, 9492, 4563, 8831, 9493, 2]
 // Exports: default
 
-// Module 10388 (StageChannelCallView)
+// Module 9490 (StageChannelCallView)
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4561 */;
-import StatusBarDefault from "StatusBar" /* 9733 */;
-import FocusedControls from "FocusedControls" /* 9849 */;
-import StageChannelAnimationUtils from "StageChannelAnimationUtils" /* 10389 */;
-import StageChannelBackgroundDefault from "StageChannelBackground" /* 10390 */;
-import StageChannelCallListDefault from "StageChannelCallList" /* 10391 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4563 */;
+import StatusBarDefault from "StatusBar" /* 8831 */;
+import FocusedControls from "FocusedControls" /* 8947 */;
+import StageChannelAnimationUtils from "StageChannelAnimationUtils" /* 9491 */;
+import StageChannelBackgroundDefault from "StageChannelBackground" /* 9492 */;
+import StageChannelCallListDefault from "StageChannelCallList" /* 9493 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

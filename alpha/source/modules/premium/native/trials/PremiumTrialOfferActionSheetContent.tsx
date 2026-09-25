@@ -1,21 +1,21 @@
-// Module ID: 16089
-// Function ID: 16090
+// Module ID: 15262
+// Function ID: 15263
 // Name: PremiumTrialOfferActionSheetContent
-// Dependencies: [19, 17, 1374, 21, 4829, 576, 12167, 1115, 9618, 5380, 5434, 4483, 5997, 4825, 16090, 5273, 9020, 2]
+// Dependencies: [19, 17, 1374, 21, 4829, 576, 11289, 1115, 8716, 5381, 5435, 4485, 15263, 4825, 15265, 5274, 8114, 2]
 
-// Module 16089 (PremiumTrialOfferActionSheetContent)
+// Module 15262 (PremiumTrialOfferActionSheetContent)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import PremiumUtils from "PremiumUtils" /* 4483 */;
+import PremiumUtils from "PremiumUtils" /* 4485 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
-import FolderIcon from "FolderIcon" /* 5380 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5434 */;
-import native from "native" /* 5997 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9020 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 9618 */;
-import UserIcon from "UserIcon" /* 12167 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 16090 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
+import FolderIcon from "FolderIcon" /* 5381 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5435 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8114 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 8716 */;
+import UserIcon from "UserIcon" /* 11289 */;
+import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 15263 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 15265 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -63,7 +63,7 @@ export default noop.memo(function PremiumTrialOfferActionSheetContent(onConfirm)
   obj3.description = obj4.getNitroFileUploadRolloutCopy(obj5);
   items[2] = obj3;
   const obj8 = { style: tmp.contentContainer, children: null };
-  const items1 = [hasOwnProperty(View, { style: tmp.heroIllustrationContainer, children: hasOwnProperty(native.NitroWumpusFlightRight3dIllustration, { width: 180, height: 180 }) }), , , ];
+  const items1 = [hasOwnProperty(View, { style: tmp.heroIllustrationContainer, children: hasOwnProperty(NitroWumpusFlightRight3dIllustration.NitroWumpusFlightRight3dIllustration, { width: 180, height: 180 }) }), , , ];
   const obj10 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, children: null };
   const intl8 = util.intl;
   let skuId;
@@ -76,8 +76,8 @@ export default noop.memo(function PremiumTrialOfferActionSheetContent(onConfirm)
     if (subscriptionTrial != null) {
       skuId1 = subscriptionTrial.skuId;
     }
-    displayNameFromSku = tmp3(4483).getDisplayNameFromSku(skuId1);
-    const tmp3Result = tmp3(4483);
+    displayNameFromSku = tmp3(4485).getDisplayNameFromSku(skuId1);
+    const tmp3Result = tmp3(4485);
   }
   obj10.children = intl8.formatToPlainString(util.t.q8eMc0, { displayName: displayNameFromSku, duration: intervalDuration });
   items1[1] = hasOwnProperty(Text_Text.Text, obj10);
@@ -87,7 +87,7 @@ export default noop.memo(function PremiumTrialOfferActionSheetContent(onConfirm)
   const intl9 = tmp3(1115).intl;
   obj12.text = intl9.formatToPlainString(util.t.xASjq5, { duration: intervalDuration });
   obj12.onPress = onConfirm.onConfirm;
-  const obj9 = { style: tmp.heroIllustrationContainer, children: hasOwnProperty(native.NitroWumpusFlightRight3dIllustration, { width: 180, height: 180 }) };
+  const obj9 = { style: tmp.heroIllustrationContainer, children: hasOwnProperty(NitroWumpusFlightRight3dIllustration.NitroWumpusFlightRight3dIllustration, { width: 180, height: 180 }) };
   const tmp5 = timestampProducer;
   obj12.icon = hasOwnProperty(NitroWheelIcon.NitroWheelIcon, { size: "md", color: nativeDefault.unsafe_rawColors.WHITE });
   obj11.children = hasOwnProperty(components_Button_Button.Button, obj12);

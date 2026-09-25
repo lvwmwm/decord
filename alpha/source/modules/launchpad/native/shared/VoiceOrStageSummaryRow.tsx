@@ -1,14 +1,14 @@
-// Module ID: 17560
-// Function ID: 17561
+// Module ID: 16784
+// Function ID: 16785
 // Name: VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 4829, 576, 17231, 4825, 1177, 17226, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 16446, 4825, 1177, 16441, 2]
 
-// Module 17560 (VoiceOrStageSummaryRow)
+// Module 16784 (VoiceOrStageSummaryRow)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import _modDef17226 from "module_17226" /* 17226 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17231 */;
+import _modDef16441 from "module_16441" /* 16441 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 16446 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -93,7 +93,7 @@ export default noop.memo(function VoiceOrStageSummaryRow(arg0) {
     const items3 = [, ];
     ({ badge: arr4[0], audienceBadge: arr4[1] } = tmp4);
     obj4.style = items3;
-    let obj5 = { size: max(1177).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: _modDef17226 };
+    let obj5 = { size: max(1177).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: _modDef16441 };
     const items4 = [closure_4(max(1177).Icon, obj5), ];
     let obj6 = { variant: "text-sm/bold", style: { marginLeft: 4 }, children: audienceCount };
     items4[1] = closure_4(max(4825).Text, obj6);

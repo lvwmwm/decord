@@ -1,10 +1,10 @@
-// Module ID: 17033
-// Function ID: 17034
+// Module ID: 16223
+// Function ID: 16224
 // Name: VibegrationsTemplates
 // Dependencies: [1115, 3714, 2]
 // Exports: templateImportMessage, vibegrationsTemplates
 
-// Module 17033 (VibegrationsTemplates)
+// Module 16223 (VibegrationsTemplates)
 import util from "util" /* 1115 */;
 import _modDef3714 from "module_3714" /* 3714 */;
 import size from "module_2" /* 2 */;

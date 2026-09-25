@@ -1,15 +1,15 @@
-// Module ID: 16564
-// Function ID: 16565
+// Module ID: 15744
+// Function ID: 15745
 // Name: useFavoritesGuildHideAction
-// Dependencies: [19, 4650, 1074, 10572, 10571, 2069, 1101, 1115, 3360, 2]
+// Dependencies: [19, 4652, 1074, 9674, 9673, 2069, 1101, 1115, 3360, 2]
 // Exports: default
 
-// Module 16564 (useFavoritesGuildHideAction)
+// Module 15744 (useFavoritesGuildHideAction)
 import router_utils from "router_utils" /* 1101 */;
 import _modDef3360 from "module_3360" /* 3360 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10571 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 9673 */;
 import noop from "module_19" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4650 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4652 */;
 
 require = fn;
 const Routes = fn(1074).Routes;
@@ -17,7 +17,7 @@ const size = fn(2);
 let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildHideAction.tsx");
 
 export default function useFavoritesGuildHideAction() {
-  hasAccess = hasAccess(10572).useFavoritesAccess().hasAccess;
+  hasAccess = hasAccess(9674).useFavoritesAccess().hasAccess;
   const items = [hasAccess];
   const obj2 = { isPreview: !hasAccess, label: null, subLabel: null, perform: null };
   const callback = noop.useCallback(() => {

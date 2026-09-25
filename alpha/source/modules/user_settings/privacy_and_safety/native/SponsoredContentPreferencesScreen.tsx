@@ -1,17 +1,17 @@
-// Module ID: 16271
-// Function ID: 16272
+// Module ID: 15450
+// Function ID: 15451
 // Name: SponsoredContentPreferencesScreen
-// Dependencies: [19, 8323, 1074, 21, 1115, 2110, 11811, 15057, 2]
+// Dependencies: [19, 7412, 1074, 21, 1115, 2110, 10993, 14223, 2]
 // Exports: default
 
-// Module 16271 (SponsoredContentPreferencesScreen)
+// Module 15450 (SponsoredContentPreferencesScreen)
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
-import SettingBuilders from "SettingBuilders" /* 11811 */;
-import SettingLayoutDefault from "SettingLayout" /* 15057 */;
+import SettingBuilders from "SettingBuilders" /* 10993 */;
+import SettingLayoutDefault from "SettingLayout" /* 14223 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const MobileUserSettings = fn(8323).MobileUserSettings;
+const MobileUserSettings = fn(7412).MobileUserSettings;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsx = fn(21).jsx;
 const size = fn(2);

@@ -1,18 +1,18 @@
-// Module ID: 13413
-// Function ID: 13414
+// Module ID: 12563
+// Function ID: 12564
 // Name: UserProfileActivityVoiceChannel
-// Dependencies: [17, 4464, 1085, 21, 4829, 1364, 7495, 8538, 5258, 13414, 4982, 504, 5403, 5407, 1115, 5889, 5427, 4523, 7542, 4825, 9951, 5036, 4796, 13415, 1980, 8527, 13416, 1177, 2]
+// Dependencies: [17, 4466, 1085, 21, 4829, 1364, 6578, 7628, 5259, 12564, 4982, 504, 5404, 5408, 1115, 5891, 5428, 4525, 6625, 4825, 9049, 5036, 4796, 12565, 1980, 7617, 12566, 1177, 2]
 // Exports: default
 
-// Module 13413 (UserProfileActivityVoiceChannel)
+// Module 12563 (UserProfileActivityVoiceChannel)
 import _mod17 from "module_17" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1177 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4523 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4525 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5036 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createStyles from "createStyles" /* 4829 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
@@ -122,7 +122,7 @@ export default function UserProfileActivityVoiceChannel(guild) {
   obj15.accessibilityLabel = intl3.formatToPlainString(guild(onAction[14]).t.e95u3C, { count: users.length });
   obj15.onPress = function onPress() {
     onAction({ action: "PRESS_VOICE_CHANNEL_AVATARS" });
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(13415, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", {
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12565, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", {
       users,
       channel,
       onPressUser(userId) {

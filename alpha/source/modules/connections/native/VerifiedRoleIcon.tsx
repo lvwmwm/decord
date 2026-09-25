@@ -1,14 +1,14 @@
-// Module ID: 7536
-// Function ID: 7537
+// Module ID: 6619
+// Function ID: 6620
 // Name: VerifiedRoleIcon
-// Dependencies: [19, 17, 1074, 21, 576, 4829, 7537, 7519, 7538, 4771, 2]
+// Dependencies: [19, 17, 1074, 21, 576, 4829, 6620, 6602, 6621, 4771, 2]
 // Exports: default
 
-// Module 7536 (VerifiedRoleIcon)
+// Module 6619 (VerifiedRoleIcon)
 import nativeDefault from "native" /* 576 */;
-import useRoleIconProps from "useRoleIconProps" /* 7519 */;
-import getHigherContrastColor from "getHigherContrastColor" /* 7537 */;
-import RoleIconDefault from "RoleIcon" /* 7538 */;
+import useRoleIconProps from "useRoleIconProps" /* 6602 */;
+import getHigherContrastColor from "getHigherContrastColor" /* 6620 */;
+import RoleIconDefault from "RoleIcon" /* 6621 */;
 import noop from "module_19" /* 19 */;
 
 const LinkIcon = tmp3(4771);

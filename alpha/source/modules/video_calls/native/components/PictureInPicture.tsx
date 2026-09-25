@@ -1,10 +1,10 @@
-// Module ID: 9740
-// Function ID: 9741
+// Module ID: 8838
+// Function ID: 8839
 // Name: PictureInPicture
-// Dependencies: [32, 19, 17, 9723, 1074, 21, 4829, 1177, 9741, 1478, 7314, 9744, 4561, 5272, 9745, 9746, 6985, 1364, 2]
+// Dependencies: [32, 19, 17, 8821, 1074, 21, 4829, 1177, 8839, 1478, 6397, 8842, 4563, 5273, 8843, 8844, 6068, 1364, 2]
 
-// Module 9740 (PictureInPicture)
-import spring from "spring" /* 5272 */;
+// Module 8838 (PictureInPicture)
+import spring from "spring" /* 5273 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet, View: hasOwnProperty } = get_ActivityIndicator);
-const toggleFocus = fn(9723).toggleFocus;
+const toggleFocus = fn(8821).toggleFocus;
 const PictureInPicturePositions = fn(1074).PictureInPicturePositions;
 const jsx = fn(21).jsx;
 const createStyles = fn(4829);

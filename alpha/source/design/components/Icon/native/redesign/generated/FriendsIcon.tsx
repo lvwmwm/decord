@@ -1,12 +1,12 @@
-// Module ID: 4524
-// Function ID: 4525
+// Module ID: 4526
+// Function ID: 4527
 // Name: FriendsIcon
-// Dependencies: [19, 21, 576, 4525, 4764, 2]
+// Dependencies: [19, 21, 576, 4527, 4764, 2]
 // Exports: FriendsIcon
 
-// Module 4524 (FriendsIcon)
+// Module 4526 (FriendsIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
 import _mod4764 from "module_4764" /* 4764 */;
 import noop from "module_19" /* 19 */;
 

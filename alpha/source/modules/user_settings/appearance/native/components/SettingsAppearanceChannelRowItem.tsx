@@ -1,13 +1,13 @@
-// Module ID: 15641
-// Function ID: 15642
+// Module ID: 14811
+// Function ID: 14812
 // Name: SettingsAppearanceChannelRowItem
-// Dependencies: [19, 17, 1074, 21, 4829, 576, 1177, 11262, 4825, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 576, 1177, 10360, 4825, 2]
 // Exports: default
 
-// Module 15641 (SettingsAppearanceChannelRowItem)
+// Module 14811 (SettingsAppearanceChannelRowItem)
 import nativeDefault from "native" /* 576 */;
 import native2 from "native" /* 1177 */;
-import GroupDMAvatar from "GroupDMAvatar" /* 11262 */;
+import GroupDMAvatar from "GroupDMAvatar" /* 10360 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

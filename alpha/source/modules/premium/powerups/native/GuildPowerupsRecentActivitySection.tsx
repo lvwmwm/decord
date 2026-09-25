@@ -1,17 +1,17 @@
-// Module ID: 12928
-// Function ID: 12929
+// Module ID: 12057
+// Function ID: 12058
 // Name: GuildPowerupsRecentActivitySection
-// Dependencies: [17, 4821, 21, 4829, 576, 7313, 12929, 4507, 504, 8309, 9572, 12931, 12933, 1177, 4825, 12935, 1115, 2]
+// Dependencies: [17, 4821, 21, 4829, 576, 6396, 12058, 4509, 504, 7398, 8670, 12060, 12062, 1177, 4825, 12064, 1115, 2]
 // Exports: default
 
-// Module 12928 (GuildPowerupsRecentActivitySection)
+// Module 12057 (GuildPowerupsRecentActivitySection)
 import _mod17 from "module_17" /* 17 */;
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import DateUtils from "DateUtils" /* 4507 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7313 */;
-import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 12929 */;
-import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 12935 */;
+import DateUtils from "DateUtils" /* 4509 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6396 */;
+import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 12058 */;
+import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 12064 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createStyles from "createStyles" /* 4829 */;
@@ -35,15 +35,15 @@ function GuildPowerupsRecentActivityRow(row) {
     if (null != roleColor) {
       const obj5 = { color: roleColor };
     }
-    const processColorStringsArray = tmp(8309).useProcessColorStringsArray(roleColorStrings);
-    const tmpResult2 = tmp(8309);
+    const processColorStringsArray = tmp(7398).useProcessColorStringsArray(roleColorStrings);
+    const tmpResult2 = tmp(7398);
     const isRoleStyleAndRoleColorsEligibleForERC = tmpResult2.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      let BoostGemSlashIcon = tmp(9572).BoostGemIcon;
+      let BoostGemSlashIcon = tmp(8670).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp(12931).BoostTier1Icon;
+      BoostGemSlashIcon = tmp(12060).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp(12933).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp(12062).BoostGemSlashIcon;
     }
     const obj6 = { style: tmp4.boostRowContainer, children: null };
     if ("gave" === phase) {

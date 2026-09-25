@@ -1,14 +1,14 @@
-// Module ID: 16717
-// Function ID: 16718
+// Module ID: 15901
+// Function ID: 15902
 // Name: RoleColorPickerActionSheet
-// Dependencies: [32, 19, 17, 1074, 21, 4829, 576, 14968, 8234, 4796, 14966, 7483, 7482, 1115, 5273, 15703, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4829, 576, 14130, 7323, 4796, 14128, 6566, 6565, 1115, 5274, 14873, 2]
 // Exports: default
 
-// Module 16717 (RoleColorPickerActionSheet)
+// Module 15901 (RoleColorPickerActionSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14966 */;
-import ColorBlockDefault from "ColorBlock" /* 14968 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14128 */;
+import ColorBlockDefault from "ColorBlock" /* 14130 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

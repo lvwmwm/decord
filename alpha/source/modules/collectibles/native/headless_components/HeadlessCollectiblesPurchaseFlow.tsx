@@ -1,21 +1,21 @@
-// Module ID: 13567
-// Function ID: 13568
+// Module ID: 12721
+// Function ID: 12722
 // Name: HeadlessCollectiblesPurchaseFlow
-// Dependencies: [19, 1074, 1085, 21, 9560, 9201, 11366, 1364, 4496, 11172, 11154, 4796, 8524, 13568, 2]
+// Dependencies: [19, 1074, 1085, 21, 8658, 8295, 10464, 1364, 4498, 10270, 10257, 4796, 7614, 12722, 2]
 // Exports: default
 
-// Module 13567 (HeadlessCollectiblesPurchaseFlow)
+// Module 12721 (HeadlessCollectiblesPurchaseFlow)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8524 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9201 */;
-import ACOMExperiments from "ACOMExperiments" /* 9560 */;
-import NativePaymentContext from "NativePaymentContext" /* 11172 */;
-import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 11366 */;
-import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 13568 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 7614 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 8295 */;
+import ACOMExperiments from "ACOMExperiments" /* 8658 */;
+import NativePaymentContext from "NativePaymentContext" /* 10270 */;
+import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 10464 */;
+import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 12722 */;
 import noop from "module_19" /* 19 */;
 
-const NativeCheckoutStoreProviderDefault = tmp3(11154);
+const NativeCheckoutStoreProviderDefault = tmp3(10257);
 require = fn;
 const application_id = fn(1074).COLLECTIBLES_APPLICATION_ID;
 const PaymentGateways = fn(1085).PaymentGateways;
@@ -42,8 +42,8 @@ export default function HeadlessCollectiblesPurchaseFlow(arg0) {
     if (!tmp8) {
       let result = GOOGLE === tmp6.GOOGLE;
       if (result) {
-        result = tmp(4496).isGooglePlayBillingSupported();
-        const tmpResult = tmp(4496);
+        result = tmp(4498).isGooglePlayBillingSupported();
+        const tmpResult = tmp(4498);
       }
       tmp8 = result;
     }

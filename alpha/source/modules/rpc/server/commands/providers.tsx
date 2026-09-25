@@ -1,15 +1,15 @@
-// Module ID: 14866
-// Function ID: 14867
+// Module ID: 14028
+// Function ID: 14029
 // Name: providers
-// Dependencies: [5, 5586, 4733, 1074, 2004, 1085, 9667, 9669, 5588, 9664, 573, 1110, 9422, 5711, 2]
+// Dependencies: [5, 5588, 4735, 1074, 2004, 1085, 8765, 8767, 5590, 8762, 573, 1110, 8520, 5713, 2]
 
-// Module 14866 (providers)
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9667 */;
+// Module 14028 (providers)
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8765 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5586 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5588 */;
 
 const require = fn;
-let Constants = fn(4733);
+let Constants = fn(4735);
 ({ RPC_AUTHENTICATED_SCOPE, RPC_SCOPE_CONFIG } = Constants);
 Constants = fn(1074);
 ({ AnalyticsLocations: metroRequire, ComponentActions: closure_7, PlatformTypes: closure_8 } = Constants);
@@ -47,7 +47,7 @@ obj2 = {
       throw tmp4Result1;
     } else if (provider !== constants.AMAZON_MUSIC) {
       let obj5 = { errorCode: constants2.UNAUTHORIZED_FOR_APPLICATION };
-      let tmp22 = new tmp4(tmp[9])(obj5, "Command not available for this application");
+      const tmp22 = new tmp4(tmp[9])(obj5, "Command not available for this application");
       throw tmp22;
     } else if (set.has(validateApplicationResult)) {
       _require = asyncGeneratorStep(async (arg0, value) => {
@@ -165,15 +165,15 @@ obj2 = {
                 }
               }
               const obj10 = { errorCode: OAUTH2_ERROR.OAUTH2_ERROR };
-              const tmp22 = new provider(connection_redirect[9])(obj10, "Refreshing access token did not return a new access token");
-              throw tmp22;
+              const tmp20 = new provider(connection_redirect[9])(obj10, "Refreshing access token did not return a new access token");
+              throw tmp20;
             }
             c7 = 3;
-          } catch (tmp47) {
-            closure_4 = tmp47;
+          } catch (tmp45) {
+            closure_4 = tmp45;
             if (tmp4 === c5) {
               c7 = tmp2;
-              throw tmp47;
+              throw tmp45;
             } else {
               c6 = tmp;
             }

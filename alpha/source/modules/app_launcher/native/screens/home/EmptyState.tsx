@@ -1,16 +1,16 @@
-// Module ID: 12453
-// Function ID: 12454
+// Module ID: 11579
+// Function ID: 11580
 // Name: home/EmptyState
-// Dependencies: [19, 17, 21, 4829, 576, 12393, 9606, 12454, 4825, 1115, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 11519, 8704, 11580, 4825, 1115, 2]
 // Exports: default
 
-// Module 12453 (home/EmptyState)
+// Module 11579 (home/EmptyState)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 9606 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12393 */;
-import HomeEmptyStateDefault from "HomeEmptyState" /* 12454 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 8704 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11519 */;
+import HomeEmptyStateDefault from "HomeEmptyState" /* 11580 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,25 +1,25 @@
-// Module ID: 9612
-// Function ID: 9613
+// Module ID: 8710
+// Function ID: 8711
 // Name: PlaintextResolvers
-// Dependencies: [32, 5764, 5811, 2044, 4462, 2107, 2101, 2066, 4464, 4474, 1372, 1074, 1375, 8009, 4982, 11, 5747, 4478, 4482, 2]
+// Dependencies: [32, 5766, 5813, 2044, 4464, 2107, 2101, 2066, 4466, 4476, 1372, 1074, 1375, 7094, 4982, 11, 5749, 4480, 4484, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 9612 (PlaintextResolvers)
+// Module 8710 (PlaintextResolvers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4478 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4482 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4480 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4484 */;
 import useChannelName from "useChannelName" /* 4982 */;
-import SlateUtils from "SlateUtils" /* 8009 */;
+import SlateUtils from "SlateUtils" /* 7094 */;
 import _slicedToArray from "module_32" /* 32 */;
-import EmojiStore from "EmojiStore" /* 5764 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5811 */;
+import EmojiStore from "EmojiStore" /* 5766 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5813 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildChannelStore from "GuildChannelStore" /* 4462 */;
+import GuildChannelStore from "GuildChannelStore" /* 4464 */;
 import GuildMemberStore from "GuildMemberStore" /* 2107 */;
 import GuildRoleStore from "GuildRoleStore" /* 2101 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import PermissionStore from "PermissionStore" /* 4464 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import PermissionStore from "PermissionStore" /* 4466 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -191,7 +191,7 @@ function matchesUser(arg0, arg1, username, requireExact) {
   }
   return tmp;
 }
-let closure_8 = fn(4462).GUILD_SELECTABLE_CHANNELS_KEY;
+let closure_8 = fn(4464).GUILD_SELECTABLE_CHANNELS_KEY;
 const Permissions = fn(1074).Permissions;
 const EmojiIntention = fn(1375).EmojiIntention;
 const size = fn(2);

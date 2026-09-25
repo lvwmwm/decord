@@ -1,11 +1,9 @@
 // Module ID: 15911
 // Function ID: 15912
-// Dependencies: [8648]
+// Dependencies: [1121]
 
 // Module 15911
-const require = globalThis.__r;
+import registerAsset from "module_1121" /* 1121 */;
 
-const require = arg1;
-const dependencyMap = arg6;
 
-export const WebView = require("WebView").WebView;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/community", width: 16, height: 16, scales: [1, 2, 3], hash: "afad90ca336c33493e9ad9e6d7ce6ec1", name: "ic-application-submitted", type: "png" });

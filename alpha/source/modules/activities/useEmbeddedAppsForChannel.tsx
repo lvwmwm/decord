@@ -1,11 +1,11 @@
-// Module ID: 12401
-// Function ID: 12402
+// Module ID: 11527
+// Function ID: 11528
 // Name: useEmbeddedAppsForChannel
-// Dependencies: [19, 4869, 1372, 2043, 504, 4453, 7501, 1370, 2]
+// Dependencies: [19, 4869, 1372, 2043, 504, 4455, 6584, 1370, 2]
 // Exports: default, useEmbeddedAppsByChannel, useEmbeddedAppsWithPresence
 
-// Module 12401 (useEmbeddedAppsForChannel)
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7501 */;
+// Module 11527 (useEmbeddedAppsForChannel)
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6584 */;
 import noop from "module_19" /* 19 */;
 import PresenceStore from "PresenceStore" /* 4869 */;
 import UserStore from "UserStore" /* 1372 */;

@@ -1,10 +1,10 @@
-// Module ID: 11682
-// Function ID: 11683
+// Module ID: 10862
+// Function ID: 10863
 // Name: ChannelFollowSuccessAlert
-// Dependencies: [19, 17, 21, 11683, 11684, 11685, 11686, 11687, 11688, 1115, 4829, 4763, 4680, 7770, 12, 5292, 4825, 2]
+// Dependencies: [19, 17, 21, 10863, 10864, 10865, 10866, 10867, 10868, 1115, 4829, 4763, 4682, 6855, 12, 5293, 4825, 2]
 // Exports: default
 
-// Module 11682 (ChannelFollowSuccessAlert)
+// Module 10862 (ChannelFollowSuccessAlert)
 import _modDef12 from "module_12" /* 12 */;
 import util from "util" /* 1115 */;
 import useThemeDefault from "useTheme" /* 4763 */;
@@ -12,13 +12,13 @@ import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const common_AlertDefault = tmp2(5292);
+const common_AlertDefault = tmp2(5293);
 require = fn;
 const Image = fn(17).Image;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-let items = [fn(11683), fn(11684), fn(11685)];
-let items1 = [fn(11686), fn(11687), fn(11688)];
+let items = [fn(10863), fn(10864), fn(10865)];
+let items1 = [fn(10866), fn(10867), fn(10868)];
 const items2 = [
   () => {
     const intl = util.intl;

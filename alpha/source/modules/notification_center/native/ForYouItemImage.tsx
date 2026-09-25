@@ -1,13 +1,13 @@
-// Module ID: 16852
-// Function ID: 16853
+// Module ID: 16038
+// Function ID: 16039
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 2062, 2066, 1372, 16853, 21, 4829, 576, 7964, 10228, 16854, 16855, 16856, 16857, 5892, 16858, 1177, 16859, 16860, 7495, 504, 5427, 8527, 8595, 16861, 4825, 2]
+// Dependencies: [19, 17, 2062, 2066, 1372, 16039, 21, 4829, 576, 7049, 9325, 16040, 16041, 16042, 16043, 5894, 16044, 1177, 16045, 16046, 6578, 504, 5428, 7617, 7685, 16047, 4825, 2]
 
-// Module 16852 (ForYouItemImage)
+// Module 16038 (ForYouItemImage)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import Pressables from "Pressables" /* 5427 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8595 */;
+import Pressables from "Pressables" /* 5428 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 7685 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2066 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -15,7 +15,7 @@ import UserStore from "UserStore" /* 1372 */;
 require = fn;
 const View = fn(17).View;
 const getGuildAcronym = fn(2062).getGuildAcronym;
-const Constants = fn(16853);
+const Constants = fn(16039);
 ({ FRIEND_BACKGROUND, MESSAGE_BACKGROUND, PROFILE_BACKGROUND } = Constants);
 const jsx = fn(21).jsx;
 let createStyles = fn(4829);

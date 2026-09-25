@@ -1,13 +1,13 @@
 // Module ID: 4821
 // Function ID: 4822
 // Name: AccessibilityStore
-// Dependencies: [109, 1183, 1182, 1220, 1074, 4822, 4823, 2020, 504, 510, 4680, 573, 2]
+// Dependencies: [109, 1183, 1182, 1220, 1074, 4822, 4823, 2020, 504, 510, 4682, 573, 2]
 
 // Module 4821 (AccessibilityStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage7 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import shared from "shared" /* 4680 */;
+import shared from "shared" /* 4682 */;
 import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4823 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;

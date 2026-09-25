@@ -1,21 +1,21 @@
-// Module ID: 14198
-// Function ID: 14199
+// Module ID: 13359
+// Function ID: 13360
 // Name: GuildLimitedAccessInfoAlert
-// Dependencies: [19, 2066, 14199, 1074, 21, 4829, 5829, 576, 1115, 5292, 1177, 4825, 2]
+// Dependencies: [19, 2066, 13360, 1074, 21, 4829, 5831, 576, 1115, 5293, 1177, 4825, 2]
 // Exports: default
 
-// Module 14198 (GuildLimitedAccessInfoAlert)
+// Module 13359 (GuildLimitedAccessInfoAlert)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import common_AlertDefault from "common/Alert" /* 5292 */;
+import common_AlertDefault from "common/Alert" /* 5293 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import TextStyles from "TextStyles" /* 5829 */;
+import TextStyles from "TextStyles" /* 5831 */;
 
 require = fn;
-const helpdeskArticle = fn(14199).GUILD_LIMITED_ACCESS_HC_LINK;
+const helpdeskArticle = fn(13360).GUILD_LIMITED_ACCESS_HC_LINK;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const createStyles = fn(4829);

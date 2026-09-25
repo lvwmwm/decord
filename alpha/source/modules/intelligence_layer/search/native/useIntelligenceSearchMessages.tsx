@@ -1,15 +1,15 @@
-// Module ID: 17294
-// Function ID: 17295
+// Module ID: 16509
+// Function ID: 16510
 // Name: useIntelligenceSearchMessages
-// Dependencies: [19, 8209, 17204, 12709, 2]
+// Dependencies: [19, 7298, 16419, 11835, 2]
 // Exports: useIntelligenceSearchMessages
 
-// Module 17294 (useIntelligenceSearchMessages)
-import IntelligenceSearchUtils from "IntelligenceSearchUtils" /* 12709 */;
+// Module 16509 (useIntelligenceSearchMessages)
+import IntelligenceSearchUtils from "IntelligenceSearchUtils" /* 11835 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const SearchListItemTypes = fn(8209).SearchListItemTypes;
+const SearchListItemTypes = fn(7298).SearchListItemTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/useIntelligenceSearchMessages.tsx");
 

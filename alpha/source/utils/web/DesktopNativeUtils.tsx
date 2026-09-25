@@ -1,20 +1,20 @@
-// Module ID: 5870
-// Function ID: 5871
+// Module ID: 5872
+// Function ID: 5873
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1074, 38, 4759, 1364, 510, 5871, 2019, 4, 5872, 5873, 1366, 1271, 4855, 2]
+// Dependencies: [32, 5, 1074, 38, 4759, 1364, 510, 5873, 2019, 4, 5874, 5875, 1366, 1271, 4855, 2]
 
-// Module 5870 (DesktopNativeUtils)
+// Module 5872 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
 import GameDetectionTypes from "GameDetectionTypes" /* 2019 */;
 import Client from "Client" /* 4759 */;
 import discord_common_DiscordNative from "discord_common/DiscordNative" /* 4855 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 5871 */;
-import IPCEvents from "IPCEvents" /* 5872 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 5873 */;
+import IPCEvents from "IPCEvents" /* 5874 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
-const FileExtensionUtils = tmp2(5873);
+const FileExtensionUtils = tmp2(5875);
 require = fn;
 function sanitizeFilename(arg0) {
   try {
@@ -219,9 +219,13 @@ function normalizeRunningGame(id) {
   return obj;
 }
 function backwardCompatSend(APP_ASYNC_INDEX_TSX_LOADED) {
+  const substr = [...arguments].slice();
   if (obj.isDesktop()) {
     try {
-      obj2.sendIPC(APP_ASYNC_INDEX_TSX_LOADED);
+      const sendIPC = obj2.sendIPC;
+      const items = [APP_ASYNC_INDEX_TSX_LOADED];
+      HermesBuiltin.arraySpread(substr, 1);
+      HermesBuiltin.apply(items, obj2);
     } catch (err) {
     }
   }
@@ -578,7 +582,7 @@ obj2.setBadge = function setBadge(arg0) {
   } else {
     if ("win32" === tmpResult.getPlatformName()) {
       const self = this;
-      this.sendIPC(tmp(5872).IPCEvents.APP_BADGE_SET, arg0);
+      this.sendIPC(tmp(5874).IPCEvents.APP_BADGE_SET, arg0);
     } else {
       if ("linux" === tmpResult2.getPlatformName()) {
         const app = DiscordNative.app;
@@ -598,6 +602,18 @@ obj2.setSystemTrayIcon = function setSystemTrayIcon(arg0) {
     const self = this;
     this.sendIPC(IPCEvents.IPCEvents.SYSTEM_TRAY_SET_ICON, arg0);
   }
+};
+obj2.setSystemTrayApplications = function setSystemTrayApplications(arg0) {
+  if (require("PlatformUtils").isPlatformEmbedded) {
+    const self = this;
+    this.sendIPC(IPCEvents.IPCEvents.SYSTEM_TRAY_SET_APPLICATIONS, arg0);
+  }
+};
+obj2.setSystemTrayStates = function setSystemTrayStates(arg0) {
+  backwardCompatSend(IPCEvents.IPCEvents.SYSTEM_TRAY_SET_STATES, arg0);
+};
+obj2.setSystemTrayStrings = function setSystemTrayStrings(arg0) {
+  backwardCompatSend(IPCEvents.IPCEvents.SYSTEM_TRAY_SET_STRINGS, arg0);
 };
 obj2.setThumbarButtons = function setThumbarButtons(arg0) {
   if (require("PlatformUtils").isPlatformEmbedded) {
@@ -673,12 +689,6 @@ obj2.bounceDock = function bounceDock(arg0) {
     }
   }
 };
-obj2.setSystemTrayApplications = function setSystemTrayApplications(arg0) {
-  if (require("PlatformUtils").isPlatformEmbedded) {
-    const self = this;
-    this.sendIPC(IPCEvents.IPCEvents.SYSTEM_TRAY_SET_APPLICATIONS, arg0);
-  }
-};
 Object.defineProperty(obj2, "architecture", {
   get: () => {
     let str = "";
@@ -697,6 +707,21 @@ Object.defineProperty(obj2, "releaseChannel", {
       str = app.getReleaseChannel();
     }
     return str;
+  },
+  set: undefined
+});
+Object.defineProperty(obj2, "friendlyReleaseName", {
+  get: function() {
+    const releaseChannel = this.releaseChannel;
+    if ("development" === releaseChannel) {
+      return "Discord Development";
+    } else if ("canary" === releaseChannel) {
+      return "Discord Canary";
+    } else if ("ptb" === releaseChannel) {
+      return "Discord PTB";
+    } else {
+      return "Discord";
+    }
   },
   set: undefined
 });
@@ -770,7 +795,7 @@ obj2.copyImage = function copyImage(arg0, arg1) {
             return obj5;
           } else {
             closure_129_0 = value;
-            closure_129_1 = closure_0(5873).decideFileExtension(closure_130_0, closure_130_1);
+            closure_129_1 = closure_0(5875).decideFileExtension(closure_130_0, closure_130_1);
             if (null != closure_129_1) {
               if (set2.has(closure_129_1)) {
                 closure_0 = closure_130_1;
@@ -806,7 +831,7 @@ obj2.copyImage = function copyImage(arg0, arg1) {
             }
             const _HermesInternal = HermesInternal;
             combined = "image." + closure_129_1;
-            const obj8 = closure_0(5873);
+            const obj8 = closure_0(5875);
           }
         } else if (arg0 === 1) {
           c4 = 3;
@@ -891,7 +916,7 @@ obj2.copyImageBlob = function copyImageBlob(arg0, arg1) {
 obj2.canSaveImage = function canSaveImage(uri, contentType) {
   if (null != uri) {
     if (require("PlatformUtils").isPlatformEmbedded) {
-      const decideFileExtensionResult = tmp(5873).decideFileExtension(uri, contentType);
+      const decideFileExtensionResult = tmp(5875).decideFileExtension(uri, contentType);
       let hasItem = null == decideFileExtensionResult;
       if (!hasItem) {
         hasItem = set2.has(decideFileExtensionResult);
@@ -966,7 +991,7 @@ obj2.saveImage = function saveImage(arg0, arg1, arg2) {
                 }
                 const str3 = str2.replace(closure_1_21, "");
               } else if (!str.includes(".")) {
-                const decideFileExtensionResult = unknown(5873).decideFileExtension(tmp54, closure_1);
+                const decideFileExtensionResult = unknown(5875).decideFileExtension(tmp54, closure_1);
                 dependencyMap = decideFileExtensionResult;
                 png = dependencyMap;
                 if (dependencyMap == null) {
@@ -974,7 +999,7 @@ obj2.saveImage = function saveImage(arg0, arg1, arg2) {
                 }
                 const _HermesInternal = HermesInternal;
                 closure_133_0 = "" + str + "." + png;
-                const obj9 = unknown(5873);
+                const obj9 = unknown(5875);
               }
               tmp54 = getImageData(tmp54);
               c9 = 1;
@@ -1631,7 +1656,7 @@ obj2.setTrafficLightPosition = function setTrafficLightPosition(arg0) {
     if ("darwin" === tmpResult.getPlatformName()) {
       try {
         const self = this;
-        this.sendIPC(tmp(5872).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
+        this.sendIPC(tmp(5874).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
       } catch (err) {
       }
     }
@@ -1643,7 +1668,7 @@ obj2.setTrafficLightAppearance = function setTrafficLightAppearance(arg0, arg1) 
     if ("darwin" === tmpResult.getPlatformName()) {
       try {
         const self = this;
-        this.sendIPC(tmp(5872).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_APPEARANCE, arg0, arg1);
+        this.sendIPC(tmp(5874).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_APPEARANCE, arg0, arg1);
       } catch (err) {
       }
     }
@@ -2586,6 +2611,70 @@ obj2.debugLogCs2GsiPayload = function debugLogCs2GsiPayload(arg0) {
     let result;
     if (cs2Gsi != null) {
       result = cs2Gsi.debugLogCs2GsiPayload(arg0);
+    }
+    if (result == null) {
+      result = Promise.resolve();
+    }
+    let resolved = result;
+  } else {
+    resolved = Promise.resolve();
+  }
+  return resolved;
+};
+obj2.readDotaGsiToken = function readDotaGsiToken(arg0) {
+  if (obj.isWindows()) {
+    const dotaGsi = DiscordNative.dotaGsi;
+    let dotaGsiToken;
+    if (dotaGsi != null) {
+      dotaGsiToken = dotaGsi.readDotaGsiToken(arg0);
+    }
+    if (dotaGsiToken == null) {
+      dotaGsiToken = Promise.resolve(null);
+    }
+    let resolved = dotaGsiToken;
+  } else {
+    resolved = Promise.resolve(null);
+  }
+  return resolved;
+};
+obj2.writeDotaGsiConfig = function writeDotaGsiConfig(arg0, arg1, arg2) {
+  if (obj.isWindows()) {
+    const dotaGsi = DiscordNative.dotaGsi;
+    let writeDotaGsiConfigResult;
+    if (dotaGsi != null) {
+      writeDotaGsiConfigResult = dotaGsi.writeDotaGsiConfig(arg0, arg1, arg2);
+    }
+    if (writeDotaGsiConfigResult == null) {
+      writeDotaGsiConfigResult = Promise.resolve(false);
+    }
+    let resolved = writeDotaGsiConfigResult;
+  } else {
+    resolved = Promise.resolve(false);
+  }
+  return resolved;
+};
+obj2.deleteDotaGsiConfig = function deleteDotaGsiConfig(arg0) {
+  if (obj.isWindows()) {
+    const dotaGsi = DiscordNative.dotaGsi;
+    let deleteDotaGsiConfigResult;
+    if (dotaGsi != null) {
+      deleteDotaGsiConfigResult = dotaGsi.deleteDotaGsiConfig(arg0);
+    }
+    if (deleteDotaGsiConfigResult == null) {
+      deleteDotaGsiConfigResult = Promise.resolve(false);
+    }
+    let resolved = deleteDotaGsiConfigResult;
+  } else {
+    resolved = Promise.resolve(false);
+  }
+  return resolved;
+};
+obj2.debugLogDotaGsiPayload = function debugLogDotaGsiPayload(arg0) {
+  if (obj.isWindows()) {
+    const dotaGsi = DiscordNative.dotaGsi;
+    let result;
+    if (dotaGsi != null) {
+      result = dotaGsi.debugLogDotaGsiPayload(arg0);
     }
     if (result == null) {
       result = Promise.resolve();

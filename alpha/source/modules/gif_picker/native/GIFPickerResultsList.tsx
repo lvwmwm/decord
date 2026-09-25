@@ -1,11 +1,11 @@
-// Module ID: 10724
-// Function ID: 10725
+// Module ID: 9828
+// Function ID: 9829
 // Name: GIFPickerResultsList
-// Dependencies: [32, 19, 21, 4829, 10715, 10631, 10725, 9077, 10668, 2]
+// Dependencies: [32, 19, 21, 4829, 9819, 9735, 9829, 8171, 9772, 2]
 // Exports: default
 
-// Module 10724 (GIFPickerResultsList)
-import GIFPickerItemView from "GIFPickerItemView" /* 10725 */;
+// Module 9828 (GIFPickerResultsList)
+import GIFPickerItemView from "GIFPickerItemView" /* 9829 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -15,10 +15,10 @@ const GIFPickerItemViewDefault = GIFPickerItemView;
 require = fn;
 const jsx = fn(21).jsx;
 const createStyles = fn(4829);
-let obj2 = { list: { marginHorizontal: -fn(10715).GIF_PICKER_GUTTER_SPACING / 2 } };
+let obj2 = { list: { marginHorizontal: -fn(9819).GIF_PICKER_GUTTER_SPACING / 2 } };
 let closure_6 = createStyles.createStyles(obj2);
 const obj4 = { length: 20 };
-let obj3 = { marginHorizontal: -fn(10715).GIF_PICKER_GUTTER_SPACING / 2 };
+let obj3 = { marginHorizontal: -fn(9819).GIF_PICKER_GUTTER_SPACING / 2 };
 let closure_7 = Array.from(obj4).map(() => {
 
 });
@@ -97,7 +97,7 @@ export default function GIFPickerResultsList(columnWidth) {
       return tmp15Result;
     }
   }, items2);
-  const tmp11 = require("module_9077");
+  const tmp11 = require("module_8171");
   if (inActionSheet) {
     let MasonryFlashList = tmp11.BottomSheetMasonryFlashList;
     let tmp12 = tmp10;

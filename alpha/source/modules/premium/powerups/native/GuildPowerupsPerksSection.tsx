@@ -1,18 +1,18 @@
-// Module ID: 12918
-// Function ID: 12919
+// Module ID: 12047
+// Function ID: 12048
 // Name: GuildPowerupsPerksSection
-// Dependencies: [17, 21, 4829, 576, 12901, 1115, 2518, 12919, 12921, 12923, 2]
+// Dependencies: [17, 21, 4829, 576, 12030, 1115, 2518, 12048, 12050, 12052, 2]
 // Exports: default
 
-// Module 12918 (GuildPowerupsPerksSection)
+// Module 12047 (GuildPowerupsPerksSection)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef2518 from "module_2518" /* 2518 */;
-import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 12901 */;
-import GuildPowerupsSinglePerkCardDefault from "GuildPowerupsSinglePerkCard" /* 12919 */;
-import GuildPowerupsMultiPerkCardDefault from "GuildPowerupsMultiPerkCard" /* 12921 */;
-import GuildPowerupsGameServerCardDefault from "GuildPowerupsGameServerCard" /* 12923 */;
+import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 12030 */;
+import GuildPowerupsSinglePerkCardDefault from "GuildPowerupsSinglePerkCard" /* 12048 */;
+import GuildPowerupsMultiPerkCardDefault from "GuildPowerupsMultiPerkCard" /* 12050 */;
+import GuildPowerupsGameServerCardDefault from "GuildPowerupsGameServerCard" /* 12052 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createStyles from "createStyles" /* 4829 */;
 import size from "module_2" /* 2 */;

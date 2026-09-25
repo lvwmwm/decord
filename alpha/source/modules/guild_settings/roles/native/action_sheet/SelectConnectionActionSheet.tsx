@@ -1,21 +1,21 @@
-// Module ID: 18178
-// Function ID: 18179
+// Module ID: 17406
+// Function ID: 17407
 // Name: SelectConnectionActionSheet
-// Dependencies: [32, 19, 17, 21, 11901, 5910, 1177, 4763, 7482, 1115, 7833, 1397, 4680, 4796, 9974, 7530, 9975, 6957, 7456, 5992, 2]
+// Dependencies: [32, 19, 17, 21, 11044, 5912, 1177, 4763, 6565, 1115, 6918, 1397, 4682, 4796, 9072, 6613, 9073, 6040, 6539, 5994, 2]
 // Exports: default
 
-// Module 18178 (SelectConnectionActionSheet)
+// Module 17406 (SelectConnectionActionSheet)
 import util from "util" /* 1115 */;
 import useThemeDefault from "useTheme" /* 4763 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import TableRowGroup from "TableRowGroup" /* 5992 */;
-import BottomSheetModal from "BottomSheetModal" /* 6957 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7456 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7482 */;
-import ActionSheet from "ActionSheet" /* 7530 */;
-import ConnectionsHooks from "ConnectionsHooks" /* 7833 */;
-import SegmentedControlState from "SegmentedControlState" /* 9974 */;
-import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11901 */;
+import TableRowGroup from "TableRowGroup" /* 5994 */;
+import BottomSheetModal from "BottomSheetModal" /* 6040 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6539 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6565 */;
+import ActionSheet from "ActionSheet" /* 6613 */;
+import ConnectionsHooks from "ConnectionsHooks" /* 6918 */;
+import SegmentedControlState from "SegmentedControlState" /* 9072 */;
+import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11044 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -31,7 +31,7 @@ function IdentityApplicationRow(arg0) {
     const bot = getOrFetchApplicationBatched.bot;
     let tmp6Result = null;
     if (null != bot) {
-      const obj2 = { user: bot, size: tmp(1177).AvatarSizes.XSMALL, guildId: "r" };
+      const obj2 = { user: bot, size: tmp(1177).AvatarSizes.XSMALL, guildId: "Array" };
       tmp6Result = tmp6(tmp(1177).Avatar, obj2);
     }
     const obj3 = { icon: tmp6Result, label: getOrFetchApplicationBatched.name, subLabel: null, onPress: null };
@@ -41,7 +41,7 @@ function IdentityApplicationRow(arg0) {
     }
     obj3.subLabel = description;
     obj3.onPress = onPress;
-    return timestampProducer(tmp(5910).TableRow, obj3);
+    return timestampProducer(tmp(5912).TableRow, obj3);
   }
 }
 const View = fn(17).View;
@@ -102,7 +102,7 @@ export default function SelectConnectionActionSheet(arg0) {
       let tmp = null;
       if (null != application) {
         const obj = { icon: null, label: null, subLabel: null, onPress: null };
-        const obj2 = { user: application.bot, size: require("native").AvatarSizes.XSMALL, guildId: "r" };
+        const obj2 = { user: application.bot, size: require("native").AvatarSizes.XSMALL, guildId: "Array" };
         obj.icon = closure_1_6(require("native").Avatar, obj2);
         obj.label = application.name;
         let description;
@@ -173,7 +173,7 @@ export default function SelectConnectionActionSheet(arg0) {
   if (num > 0) {
     const obj4 = { children: null };
     const obj5 = { state: segmentedControlState };
-    obj4.children = tmp2(tmp3(9975).SegmentedControl, obj5);
+    obj4.children = tmp2(tmp3(9073).SegmentedControl, obj5);
     let tmp2Result = tmp2(closure_5, obj4);
   } else {
     tmp2Result = null;

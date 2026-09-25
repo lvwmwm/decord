@@ -1,11 +1,11 @@
-// Module ID: 7837
-// Function ID: 7838
+// Module ID: 6922
+// Function ID: 6923
 // Name: isSpam
-// Dependencies: [1372, 1074, 7838, 2]
+// Dependencies: [1372, 1074, 6923, 2]
 // Exports: isSpam, isSpamSupported, isSpammer
 
-// Module 7837 (isSpam)
-import AutomodMessageUtils from "AutomodMessageUtils" /* 7838 */;
+// Module 6922 (isSpam)
+import AutomodMessageUtils from "AutomodMessageUtils" /* 6923 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

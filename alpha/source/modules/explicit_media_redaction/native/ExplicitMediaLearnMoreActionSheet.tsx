@@ -1,22 +1,22 @@
-// Module ID: 12219
-// Function ID: 12220
+// Module ID: 11341
+// Function ID: 11342
 // Name: ExplicitMediaLearnMoreActionSheet
-// Dependencies: [19, 17, 7931, 1074, 21, 4829, 576, 12220, 5041, 7930, 1115, 7712, 4796, 4520, 2110, 8761, 8763, 12015, 1980, 7483, 5997, 4825, 5273, 2]
+// Dependencies: [19, 17, 7016, 1074, 21, 4829, 576, 11342, 5041, 7015, 1115, 6795, 4796, 4522, 2110, 7851, 7853, 11158, 1980, 6566, 7864, 4825, 5274, 2]
 // Exports: default
 
-// Module 12219 (ExplicitMediaLearnMoreActionSheet)
+// Module 11341 (ExplicitMediaLearnMoreActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import openUserSettings from "openUserSettings" /* 7712 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7930 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8761 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8763 */;
+import openUserSettings from "openUserSettings" /* 6795 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7015 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7851 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7853 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_5 = fn(7931).EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY;
+let closure_5 = fn(7016).EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY;
 const Constants = fn(1074);
 ({ HelpdeskArticles: metroRequire, UserSettingsSections: closure_7 } = Constants);
 const jsxProd = fn(21);

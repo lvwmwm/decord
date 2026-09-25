@@ -1,25 +1,25 @@
-// Module ID: 10086
-// Function ID: 10087
+// Module ID: 9183
+// Function ID: 9184
 // Name: CallActionCreators
-// Dependencies: [2044, 4474, 1372, 1074, 5716, 1271, 1241, 5195, 1115, 10087, 10078, 573, 2]
+// Dependencies: [2044, 4476, 1372, 1074, 5718, 1271, 1241, 5196, 1115, 9184, 9176, 573, 2]
 
-// Module 10086 (CallActionCreators)
+// Module 9183 (CallActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5195 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5716 */;
-import useCanRing from "useCanRing" /* 10078 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5196 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5718 */;
+import useCanRing from "useCanRing" /* 9176 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const Constants = fn(1074);
-({ Endpoints: metroRequire, AnalyticEvents: closure_7, ChannelTypesSets: closure_8, ChannelTypes: closure_9 } = Constants);
+({ Endpoints: metroRequire, AnalyticEvents: closure_7, ChannelTypesSets: closure_8 } = Constants);
 const size = fn(2);
 let result = size.fileFinishedImporting("actions/CallActionCreators.tsx");
 
@@ -86,20 +86,16 @@ export default {
       const CALLABLE = constants2.CALLABLE;
       const result = useCanRing.canRingUsersInChannel(channel);
       if (result) {
-        const HTTP = tmp3(1271).HTTP;
+        const HTTP = tmp8(1271).HTTP;
         const request = { url: timestampProducer.CALL_RING(channelId), body: null, oldFormErrors: true, rejectWithError: true };
-        const obj3 = { recipients: items, analytics_location: gdm_invite };
-        request.body = obj3;
+        const obj2 = { recipients: items, analytics_location: gdm_invite };
+        request.body = obj2;
         HTTP.post(request);
-        if (tmp14) {
-          const obj4 = { type: "GUILD_LOCAL_RING_START", ringing: items, guildId: channel.guild_id };
-          DispatcherDefault.dispatch(obj4);
-        }
-      } else if (tmp7) {
-        const obj5 = { type: "CALL_ENQUEUE_RING", channelId, recipients: items };
-        DispatcherDefault.dispatch(obj5);
+      } else if (tmp12) {
+        const obj3 = { type: "CALL_ENQUEUE_RING", channelId, recipients: items };
+        DispatcherDefault.dispatch(obj3);
       }
-      tmp3 = require;
+      tmp8 = require;
     }
   },
   stopRinging(channelId, items) {

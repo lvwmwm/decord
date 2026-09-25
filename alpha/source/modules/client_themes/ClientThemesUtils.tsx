@@ -1,7 +1,7 @@
 // Module ID: 1228
 // Function ID: 1229
 // Name: ClientThemesUtils
-// Dependencies: [1229, 1185, 1085, 4680, 575, 2]
+// Dependencies: [1229, 1185, 1085, 4682, 575, 2]
 // Exports: areThemesEqualForGradientThemes, getBaseTheme, getCustomThemeBaseTheme, getLinearGradientForBackgroundGradient, getThemeForColor, getThemeName, hasCustomTheme, resolveThemeWithCustomSettings
 
 // Module 1228 (ClientThemesUtils)
@@ -9,7 +9,7 @@ import shims from "shims" /* 575 */;
 import Constants from "Constants" /* 1085 */;
 import ThemeConstants from "ThemeConstants" /* 1185 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1229 */;
-import shared from "shared" /* 4680 */;
+import shared from "shared" /* 4682 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = ClientThemesConstants.REFRESH_STANDARD_BACKGROUND_THEMES;

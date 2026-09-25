@@ -1,12 +1,12 @@
-// Module ID: 14321
-// Function ID: 14322
+// Module ID: 13482
+// Function ID: 13483
 // Name: GuildBadgeButterfly
-// Dependencies: [19, 21, 14284, 8807, 2]
+// Dependencies: [19, 21, 13445, 7901, 2]
 // Exports: GuildBadgeButterfly
 
-// Module 14321 (GuildBadgeButterfly)
-import inlineStyles from "inlineStyles" /* 8807 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14284 */;
+// Module 13482 (GuildBadgeButterfly)
+import inlineStyles from "inlineStyles" /* 7901 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 13445 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

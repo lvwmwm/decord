@@ -1,25 +1,25 @@
-// Module ID: 4647
-// Function ID: 4648
+// Module ID: 4649
+// Function ID: 4650
 // Name: client_themes/ClientThemesUtils
-// Dependencies: [32, 19, 1182, 4648, 1227, 576, 672, 4678, 4679, 1230, 4680, 4682, 4763, 4760, 2]
+// Dependencies: [32, 19, 1182, 4650, 1227, 576, 672, 4680, 4681, 1230, 4682, 4684, 4763, 4760, 2]
 // Exports: colorToHex, getClientThemesGradientColorByPercentage, getClientThemesGradientHexColors, getEmbedBackground, getEmbedScrollGradientBackground, getGradientThemeMetadata, getGradientValue, useGradientValue
 
-// Module 4647 (client_themes/ClientThemesUtils)
+// Module 4649 (client_themes/ClientThemesUtils)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1230 */;
-import utils_ColorDefault from "utils/Color" /* 4679 */;
-import shared from "shared" /* 4680 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4682 */;
+import utils_ColorDefault from "utils/Color" /* 4681 */;
+import shared from "shared" /* 4682 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4684 */;
 import MobileThemesUtils from "MobileThemesUtils" /* 4760 */;
 import useThemeDefault from "useTheme" /* 4763 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4648 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4650 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1227 */;
 
-const ColorUtils = tmp(4678);
+const ColorUtils = tmp(4680);
 require = fn;
 function getGradientColorByPercentage(type, MID) {
   if (type.type === ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
@@ -111,13 +111,13 @@ function calculateGradientValueWithOpacity(customBackgroundGradient, END, theme,
       } else {
         sum = 0.3 + result;
       }
-      tmpResult = tmp(4680);
+      tmpResult = tmp(4682);
     }
   } else {
     tmp11 = arg3;
     if (arg3 == null) {
-      tmp(4680).isThemeDark(theme) ? obj.LEVEL_2 : obj.LEVEL_4;
-      const tmpResult3 = tmp(4680);
+      tmp(4682).isThemeDark(theme) ? obj.LEVEL_2 : obj.LEVEL_4;
+      const tmpResult3 = tmp(4682);
     }
   }
   if (customBackgroundGradient.type === ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
@@ -141,8 +141,8 @@ function calculateGradientValueWithOpacity(customBackgroundGradient, END, theme,
     const tmp30 = getGradientColorByPercentage(customBackgroundGradient, tmp10);
     const tmp35 = new utils_ColorDefault(tmp30.r, tmp30.g, tmp30.b, tmp11);
     const tmp38 = new utils_ColorDefault(hexToRgbResult.r, hexToRgbResult.g, hexToRgbResult.b, 1 - tmp11);
-    const color = tmp(4678).mixColors(tmp35, tmp38);
-    const tmpResult4 = tmp(4678);
+    const color = tmp(4680).mixColors(tmp35, tmp38);
+    const tmpResult4 = tmp(4680);
     return _modDef672.rgb(color.red, color.green, color.blue).hex("rgb");
   }
 }

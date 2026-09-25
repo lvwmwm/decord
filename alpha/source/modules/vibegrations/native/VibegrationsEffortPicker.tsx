@@ -1,17 +1,17 @@
-// Module ID: 17030
-// Function ID: 17031
+// Module ID: 16220
+// Function ID: 16221
 // Name: VibegrationsEffortPicker
-// Dependencies: [32, 19, 17, 21, 1115, 3714, 17031, 5271, 576, 5990, 5363, 5993, 5992, 5910, 17032, 7533, 7530, 7482, 2]
+// Dependencies: [32, 19, 17, 21, 1115, 3714, 16221, 5272, 576, 5992, 5364, 5995, 5994, 5912, 16222, 6616, 6613, 6565, 2]
 // Exports: VibegrationsEffortPickerSheet
 
-// Module 17030 (VibegrationsEffortPicker)
+// Module 16220 (VibegrationsEffortPicker)
 import util from "util" /* 1115 */;
 import _modDef3714 from "module_3714" /* 3714 */;
-import TableRadioRow from "TableRadioRow" /* 5993 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7482 */;
-import ActionSheet from "ActionSheet" /* 7530 */;
-import VibegrationsEffortTiers from "VibegrationsEffortTiers" /* 17031 */;
-import VibegrationsModelLabels from "VibegrationsModelLabels" /* 17032 */;
+import TableRadioRow from "TableRadioRow" /* 5995 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6565 */;
+import ActionSheet from "ActionSheet" /* 6613 */;
+import VibegrationsEffortTiers from "VibegrationsEffortTiers" /* 16221 */;
+import VibegrationsModelLabels from "VibegrationsModelLabels" /* 16222 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

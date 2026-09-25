@@ -1,30 +1,30 @@
-// Module ID: 16838
-// Function ID: 16839
+// Module ID: 16024
+// Function ID: 16025
 // Name: NotificationCenterForYou
-// Dependencies: [32, 19, 17, 7960, 4844, 1372, 7963, 16839, 1074, 11440, 5011, 21, 7964, 1485, 4686, 2020, 1478, 8210, 16840, 504, 16842, 16473, 5039, 11, 7965, 4809, 1094, 12, 1241, 16841, 16843, 9128, 1249, 16844, 16845, 2]
+// Dependencies: [32, 19, 17, 7045, 4844, 1372, 7048, 16025, 1074, 10538, 5011, 21, 7049, 1485, 4688, 2020, 1478, 7299, 16026, 504, 16028, 15653, 5039, 11, 7050, 4809, 1094, 12, 1241, 16027, 16029, 8222, 1249, 16030, 16031, 2]
 // Exports: NotificationCenterForYou
 
-// Module 16838 (NotificationCenterForYou)
+// Module 16024 (NotificationCenterForYou)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import parseURLDefault from "parseURL" /* 4809 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7964 */;
-import NotificationCenterUtils from "NotificationCenterUtils" /* 7965 */;
-import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16841 */;
-import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 16843 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7049 */;
+import NotificationCenterUtils from "NotificationCenterUtils" /* 7050 */;
+import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16027 */;
+import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 16029 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7960 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7045 */;
 import ReadStateStore from "ReadStateStore" /* 4844 */;
 import UserStore from "UserStore" /* 1372 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7963 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 16839 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7048 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 16025 */;
 
 require = fn;
 const View = fn(17).View;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const MainTabsConstants = fn(11440);
+const MainTabsConstants = fn(10538);
 ({ RootNavigatorScreen, YouBarNavigatorScreens } = MainTabsConstants);
 const ReadStateTypes = fn(5011).ReadStateTypes;
 const jsx = fn(21).jsx;

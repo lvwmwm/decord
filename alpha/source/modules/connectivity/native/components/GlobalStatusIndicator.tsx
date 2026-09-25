@@ -1,16 +1,16 @@
-// Module ID: 9856
-// Function ID: 9857
+// Module ID: 8954
+// Function ID: 8955
 // Name: GlobalStatusIndicator
-// Dependencies: [19, 17, 4516, 4845, 9857, 2044, 4852, 21, 9853, 504, 9761, 5036, 1115, 9858, 4561, 9851, 2]
+// Dependencies: [19, 17, 4518, 4845, 8955, 2044, 4852, 21, 8951, 504, 8859, 5036, 1115, 8956, 4563, 8949, 2]
 // Exports: default, useGlobalStatusIndicatorHeightSharedValue
 
-// Module 9856 (GlobalStatusIndicator)
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+// Module 8954 (GlobalStatusIndicator)
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5036 */;
 import noop from "module_19" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4516 */;
+import ActionSheetStore from "ActionSheetStore" /* 4518 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4845 */;
-import NativeMenuStore from "NativeMenuStore" /* 9857 */;
+import NativeMenuStore from "NativeMenuStore" /* 8955 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4852 */;
 

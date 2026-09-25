@@ -1,13 +1,13 @@
-// Module ID: 5917
-// Function ID: 5918
+// Module ID: 5919
+// Function ID: 5920
 // Name: TableRowArrow
-// Dependencies: [19, 21, 4829, 576, 5275, 5918, 2]
+// Dependencies: [19, 21, 4829, 576, 5276, 5920, 2]
 // Exports: TableRowArrow
 
-// Module 5917 (TableRowArrow)
+// Module 5919 (TableRowArrow)
 import nativeDefault from "native" /* 576 */;
-import Icon from "Icon" /* 5275 */;
-import _modDef5918 from "module_5918" /* 5918 */;
+import Icon from "Icon" /* 5276 */;
+import _modDef5920 from "module_5920" /* 5920 */;
 import noop from "module_19" /* 19 */;
 
 const IconDefault = Icon;
@@ -25,6 +25,6 @@ const result = size.fileFinishedImporting("design/components/TableRow/native/Tab
 
 export const TableRowArrow = function TableRowArrow() {
   const tmp = closure_4();
-  const obj = { style: tmp.icon, color: tmp.iconColor.color, source: _modDef5918, size: Icon.IconSizes.CUSTOM };
-  return jsx(IconDefault, { style: tmp.icon, color: tmp.iconColor.color, source: _modDef5918, size: Icon.IconSizes.CUSTOM });
+  const obj = { style: tmp.icon, color: tmp.iconColor.color, source: _modDef5920, size: Icon.IconSizes.CUSTOM };
+  return jsx(IconDefault, { style: tmp.icon, color: tmp.iconColor.color, source: _modDef5920, size: Icon.IconSizes.CUSTOM });
 };

@@ -1,11 +1,11 @@
-// Module ID: 14278
-// Function ID: 14279
+// Module ID: 13439
+// Function ID: 13440
 // Name: useIsServerThemeAvailableForGuild
-// Dependencies: [4757, 4713, 2]
+// Dependencies: [4757, 4715, 2]
 // Exports: default
 
-// Module 14278 (useIsServerThemeAvailableForGuild)
-import GuildThemeResolver from "GuildThemeResolver" /* 4713 */;
+// Module 13439 (useIsServerThemeAvailableForGuild)
+import GuildThemeResolver from "GuildThemeResolver" /* 4715 */;
 import ServerThemeExperiment from "ServerThemeExperiment" /* 4757 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 14965
-// Function ID: 14966
+// Module ID: 14127
+// Function ID: 14128
 // Name: UserProfileUpsellButton
-// Dependencies: [19, 1074, 1374, 21, 4829, 7495, 7776, 1241, 5273, 9508, 1115, 9020, 2]
+// Dependencies: [19, 1074, 1374, 21, 4829, 6578, 6861, 1241, 5274, 8606, 1115, 8114, 2]
 // Exports: default
 
-// Module 14965 (UserProfileUpsellButton)
+// Module 14127 (UserProfileUpsellButton)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9508 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 8606 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -22,9 +22,9 @@ let result = size.fileFinishedImporting("modules/user_profile/native/UserProfile
 export default function UserProfileUpsellButton(analyticsObject) {
   analyticsObject = analyticsObject.analyticsObject;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7495)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6578)().analyticsLocations;
   const tmp = closure_10();
-  let label = analyticsObject(7776).useNitroTrialCtaOverride("user_profile_upsell_button");
+  let label = analyticsObject(6861).useNitroTrialCtaOverride("user_profile_upsell_button");
   const items = [analyticsLocations, analyticsObject];
   const effect = noop.useEffect(() => {
     const obj2 = { type: PremiumUpsellTypes.CUSTOM_PROFILE_SETTINGS_BANNER_BUTTON, location: { page: constants.USER_SETTINGS, section: constants3.USER_PROFILE, object: analyticsObject }, location_stack: analyticsLocations };
@@ -47,8 +47,8 @@ export default function UserProfileUpsellButton(analyticsObject) {
     label = intl.string(tmp3(1115).t.pj0XBN);
   }
   obj2.text = label;
-  obj2.icon = jsx(analyticsObject(9020).NitroWheelIcon, { color: "white", size: "sm", style: tmp.nitroWheel });
-  return jsx(analyticsObject(5273).Button, {
+  obj2.icon = jsx(analyticsObject(8114).NitroWheelIcon, { color: "white", size: "sm", style: tmp.nitroWheel });
+  return jsx(analyticsObject(5274).Button, {
     onPress() {
       const obj2 = { initialUpsellKey: constants2.CUSTOM_PROFILES, analyticsLocation: { page: constants.USER_SETTINGS, section: constants3.USER_PROFILE, object: analyticsObject }, analyticsLocations, analyticsProperties: { type: PremiumUpsellTypes.CUSTOM_PROFILE_UPSELL } };
       const result = PremiumUpsellUtilsDefault.handleShowUpsellAlert(obj2);

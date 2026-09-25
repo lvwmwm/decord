@@ -1,7 +1,9 @@
 // Module ID: 4660
 // Function ID: 4661
-// Dependencies: []
+// Dependencies: [4661]
 
 // Module 4660
+import _mod4661 from "module_4661" /* 4661 */;
 
-export default "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
+
+export default _mod4661();

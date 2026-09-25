@@ -1,13 +1,13 @@
-// Module ID: 11483
-// Function ID: 11484
+// Module ID: 10581
+// Function ID: 10582
 // Name: Tooltip
-// Dependencies: [32, 19, 17, 21, 4829, 576, 4561, 4526, 11484, 5272, 4825, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 4563, 4528, 10582, 5273, 4825, 2]
 // Exports: Tooltip
 
-// Module 11483 (Tooltip)
+// Module 10581 (Tooltip)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
-import spring from "spring" /* 5272 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
+import spring from "spring" /* 5273 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

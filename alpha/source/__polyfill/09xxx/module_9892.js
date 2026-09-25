@@ -1,101 +1,99 @@
 // Module ID: 9892
 // Function ID: 9893
-// Dependencies: [19, 17, 9890]
-// Exports: useModal
+// Dependencies: [41, 42, 93, 95, 98, 9883, 9884, 9885, 9891]
 
 // Module 9892
-import noop from "module_19" /* 19 */;
-import get_ActivityIndicator from "module_17" /* 17 */;
-import module_9890 from "module_9890" /* 9890 */;
+import _mod9883 from "module_9883" /* 9883 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9884 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9891 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-({ useCallback: closure_0, useEffect: closure_1, useRef: c2 } = noop);
-({ NativeEventEmitter: c3, Platform } = get_ActivityIndicator);
-const nativeModule = module_9890.getNativeModule();
-
-export const useModal = (props) => {
-  props = props.props;
-  let id = props.id;
-  props = undefined;
-  closure_4 = props(false);
-  const tmp = props();
-  closure_3 = tmp;
-  id(() => {
-    closure_3.current = props;
-  });
-  const current = tmp.current;
-  const items = [id, props];
-  const tmp3 = props((id) => {
-    if (id.id === id) {
-      closure_4.current = true;
-      if (props.onConfirm) {
-        const _Date = Date;
-        const date1 = new Date(date);
-        obj.onConfirm(date1);
-      }
-      obj = props;
+const ENMonthNameLittleEndianParser = require;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
     }
-  }, items);
-  closure_6 = tmp3;
-  const items1 = [id, props];
-  const tmp4 = props((id) => {
-    id = undefined;
-    if (id != null) {
-      id = id.id;
-    }
-    if (id === id) {
-      closure_4.current = true;
-      if (props.onCancel) {
-        obj.onCancel();
-      }
-      obj = props;
-    }
-  }, items1);
-  closure_7 = tmp4;
-  const items2 = [tmp4, tmp3, current, props];
-  id(() => {
-    let flag = false;
-    if (props.modal) {
-      flag = false;
-      if (tmp.open) {
-        let open;
-        if (tmp2 != null) {
-          open = tmp2.open;
-        }
-        flag = !open;
-      }
-    }
-    if (flag) {
-      closure_4.current = false;
-      closure_4.openPicker(tmp, closure_6, closure_7);
-    }
-  }, items2);
-  const items3 = [current, props];
-  id(() => {
-    let flag = false;
-    if (props.modal) {
-      flag = false;
-      if (!props.open) {
-        let open;
-        if (tmp != null) {
-          open = tmp.open;
-        }
-        flag = open && !tmp3;
-        const tmp6 = open && !tmp3;
-      }
-    }
-    if (flag) {
-      closure_4.current = true;
-      closure_4.closePicker();
-    }
-  }, items3);
-  const items4 = [tmp4, tmp3];
-  id(() => {
-    const obj = new React3(closure_4);
-    obj.addListener("onConfirm", closure_6);
-    obj.addListener("onCancel", closure_7);
-    return () => {
-      obj.removeAllListeners("onConfirm");
-      obj.removeAllListeners("onCancel");
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
     };
-  }, items4);
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+const regExp = new RegExp("(?:on\\s{0,3})?(" + _mod9883.ORDINAL_NUMBER_PATTERN + ")(?:\\s{0,3}(?:to|\\-|\\\u2013|until|through|till)?\\s{0,3}(" + _mod9883.ORDINAL_NUMBER_PATTERN + "))?(?:-|/|\\s{0,3}(?:of)?\\s{0,3})(" + repeatedTimeunitPattern.matchAnyPattern(_mod9883.MONTH_DICTIONARY) + ")(?:(?:-|/|,?\\s{0,3})(" + _mod9883.YEAR_PATTERN + "(?!\\w)))?(?=\\W|$)", "i");
+class ENMonthNameLittleEndianParser {
+  constructor() {
+    self = this;
+    tmp = c2(this, ENMonthNameLittleEndianParser);
+    tmp2 = closure_4;
+    obj = closure_4(ENMonthNameLittleEndianParser);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ENMonthNameLittleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
+  }
 };
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const tmp4 = ENMonthNameLittleEndianParser(9883).MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
+      const result = ENMonthNameLittleEndianParser(9883).parseOrdinalNumberPattern(index[1]);
+      if (result > 31) {
+        index.index = index.index + index[1].length;
+        return null;
+      } else {
+        const start4 = parsingResult.start;
+        start4.assign("month", tmp4);
+        const start5 = parsingResult.start;
+        start5.assign("day", result);
+        if (index[4]) {
+          const start2 = parsingResult.start;
+          start2.assign("year", tmp2(9883).parseYear(index[4]));
+        } else {
+          const start = parsingResult.start;
+          start.imply("year", tmp2(9885).findYearClosestToRef(createParsingResult.refDate, result, tmp4));
+        }
+        if (index[2]) {
+          const start3 = parsingResult.start;
+          const result1 = tmp2(9883).parseOrdinalNumberPattern(index[2]);
+          parsingResult.end = start3.clone();
+          const end = parsingResult.end;
+          end.assign("day", result1);
+        }
+        return parsingResult;
+      }
+    }
+  }
+];
+
+export default _createClass(ENMonthNameLittleEndianParser, items);

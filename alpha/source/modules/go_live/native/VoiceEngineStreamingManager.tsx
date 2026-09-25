@@ -1,7 +1,7 @@
 // Module ID: 4970
 // Function ID: 4971
 // Name: VoiceEngineStreamingManager
-// Dependencies: [5, 17, 4851, 2044, 2098, 1074, 2004, 3, 2039, 2020, 573, 1271, 1982, 1994, 38, 4971, 5030, 4881, 1478, 10300, 9640, 1115, 2]
+// Dependencies: [5, 17, 4851, 2044, 2098, 1074, 2004, 3, 2039, 2020, 573, 1271, 1982, 1994, 38, 4971, 5030, 4881, 1478, 9397, 8738, 1115, 2]
 
 // Module 4970 (VoiceEngineStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
@@ -13,8 +13,8 @@ import inject from "inject" /* 1994 */;
 import UserSettings from "UserSettings" /* 2020 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 4881 */;
 import StreamActionCreators from "StreamActionCreators" /* 4971 */;
-import PushNotificationDefault from "PushNotification" /* 9640 */;
-import useScreenshareUtils from "useScreenshareUtils" /* 10300 */;
+import PushNotificationDefault from "PushNotification" /* 8738 */;
+import useScreenshareUtils from "useScreenshareUtils" /* 9397 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4851 */;
 import ChannelStore from "ChannelStore" /* 2044 */;

@@ -1,10 +1,10 @@
-// Module ID: 12745
-// Function ID: 12746
+// Module ID: 11871
+// Function ID: 11872
 // Name: ApplicationSectionHeader
-// Dependencies: [19, 17, 2107, 21, 4829, 576, 504, 12573, 1115, 5892, 4825, 2]
+// Dependencies: [19, 17, 2107, 21, 4829, 576, 504, 11699, 1115, 5894, 4825, 2]
 // Exports: default
 
-// Module 12745 (ApplicationSectionHeader)
+// Module 11871 (ApplicationSectionHeader)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2107 */;
@@ -38,7 +38,7 @@ export default function ApplicationSectionHeader(section) {
     }
   });
   const obj = section(504);
-  const applicationCommandsIconSource = section(12573).getApplicationCommandsIconSource(section, stateFromStores);
+  const applicationCommandsIconSource = section(11699).getApplicationCommandsIconSource(section, stateFromStores);
   let nick;
   if (stateFromStores != null) {
     nick = stateFromStores.nick;
@@ -54,7 +54,7 @@ export default function ApplicationSectionHeader(section) {
   let tmp9 = null != applicationCommandsIconSource;
   if (tmp9) {
     const obj4 = { style: tmp.applicationIcon, source: applicationCommandsIconSource };
-    tmp9 = closure_5(guildId(5892), obj4);
+    tmp9 = closure_5(guildId(5894), obj4);
   }
   const items1 = [tmp9, closure_5(section(4825).Text, { variant: "eyebrow", color: "interactive-text-default", children: name })];
   obj3.children = items1;

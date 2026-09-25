@@ -1,16 +1,16 @@
-// Module ID: 14226
-// Function ID: 14227
+// Module ID: 13387
+// Function ID: 13388
 // Name: MidjourneyOnboardingUtils
-// Dependencies: [2066, 4650, 14227, 504, 2]
+// Dependencies: [2066, 4652, 13388, 504, 2]
 // Exports: hasRedirectedToGuild, isEligibleForMidjourneyRedirect, isMidjourneyOnboardingFlow, useIsMidjourneyOnboardingFlow
 
-// Module 14226 (MidjourneyOnboardingUtils)
+// Module 13387 (MidjourneyOnboardingUtils)
 import initialize from "initialize" /* 504 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4650 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4652 */;
 
 require = fn;
-const MidjourneyOnboardingConstants = fn(14227);
+const MidjourneyOnboardingConstants = fn(13388);
 ({ MIDJOURNEY_BOT_ID: closure_4, MIDJOURNEY_GUILD_ID: hasOwnProperty } = MidjourneyOnboardingConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/midjourney_onboarding/MidjourneyOnboardingUtils.tsx");

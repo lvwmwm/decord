@@ -1,21 +1,21 @@
-// Module ID: 8026
-// Function ID: 8027
+// Module ID: 7111
+// Function ID: 7112
 // Name: QuestStore
-// Dependencies: [32, 8027, 8028, 5749, 12, 5757, 8031, 1231, 8022, 5752, 8032, 8033, 8024, 504, 573, 2]
+// Dependencies: [32, 7112, 7113, 5751, 12, 5759, 7116, 1231, 7107, 5754, 7117, 7118, 7109, 504, 573, 2]
 
-// Module 8026 (QuestStore)
+// Module 7111 (QuestStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 8024 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 8031 */;
-import getQuestLogger from "getQuestLogger" /* 8032 */;
-import QuestServerUtils from "QuestServerUtils" /* 8033 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7109 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7116 */;
+import getQuestLogger from "getQuestLogger" /* 7117 */;
+import QuestServerUtils from "QuestServerUtils" /* 7118 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ConsoleQuestUIStore from "ConsoleQuestUIStore" /* 8027 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 8028 */;
+import ConsoleQuestUIStore from "ConsoleQuestUIStore" /* 7112 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 7113 */;
 
-const QuestDataUtils = tmp(8022);
+const QuestDataUtils = tmp(7107);
 require = fn;
 function initializeState() {
   c3 = false;
@@ -27,13 +27,14 @@ function initializeState() {
   new Map();
   c10 = 0;
   new Set();
-  set1 = new Set();
   const map3 = new Map();
+  new Set();
+  const set1 = new Set();
   new Set();
   const set2 = new Set();
   new Set();
   const set3 = new Set();
-  set1 = new Set();
+  new Set();
   const set4 = new Set();
   set = new Set();
   map4 = new Map();
@@ -164,7 +165,7 @@ function _runExpirationCheck() {
     }
   }
 }
-const QuestsExperimentLocations = fn(5749).QuestsExperimentLocations;
+const QuestsExperimentLocations = fn(5751).QuestsExperimentLocations;
 new Map();
 let c33 = null;
 let c34 = null;
@@ -256,7 +257,7 @@ prototype["isDismissingContent"] = function isDismissingContent(adCreativeId) {
   return set.has(adCreativeId);
 };
 prototype["isAdContentDismissed"] = function isAdContentDismissed(arg0) {
-  return set1.has(arg0);
+  return set.has(arg0);
 };
 prototype["getRewardCode"] = function getRewardCode(id) {
   return map2.get(id);
@@ -376,11 +377,11 @@ const questStore = new QuestStore(DispatcherDefault, {
       let tmp9 = nextResult;
       let result = map.set(nextResult.id, nextResult);
       let tmp13 = mapped;
-      let obj5 = mapped(8022);
+      let obj5 = mapped(7107);
       let result1 = map1.set(nextResult.id, obj5.isQuestExpired(nextResult));
       let targetedContent = nextResult.targetedContent;
-      if (targetedContent.includes(mapped(5752).QuestContent.QUEST_BAR)) {
-        let tmp13Result = tmp13(8032);
+      if (targetedContent.includes(mapped(5754).QuestContent.QUEST_BAR)) {
+        let tmp13Result = tmp13(7117);
         let obj4 = { location: null };
         obj4.location = QuestsExperimentLocations.QUESTS_STORE;
         let questLogger = tmp13Result.getQuestLogger(obj4);
@@ -404,7 +405,7 @@ const questStore = new QuestStore(DispatcherDefault, {
       let tmp26 = item10131;
       if (!map.has(item10131.id)) {
         let result3 = map.set(tmp26.id, tmp26);
-        let obj10 = mapped(8022);
+        let obj10 = mapped(7107);
         let result4 = map1.set(tmp26.id, obj10.isQuestExpired(tmp26));
       }
       continue;
@@ -510,7 +511,7 @@ const questStore = new QuestStore(DispatcherDefault, {
           let tmp23 = new.target;
           let map3 = new Map(closure_24);
           closure_24 = map3;
-          let tmp37Result = tmp37(8022);
+          let tmp37Result = tmp37(7107);
           let result4 = map3.set(tmp10, tmp37Result.isQuestExpired(result2));
         }
       }
@@ -1019,11 +1020,30 @@ const questStore = new QuestStore(DispatcherDefault, {
     adCreativeId = adCreativeId.adCreativeId;
     set = new Set(set);
     set.add(adCreativeId);
-    set1 = new Set(set1);
+    const set1 = new Set(set);
     set1.add(adCreativeId);
+    set = set1;
   },
   AD_CONTENT_DISMISS_SUCCESS: handleAdContentDismissEnd,
   AD_CONTENT_DISMISS_FAILURE: handleAdContentDismissEnd,
+  ADS_CREATIVE_PREVIEW_DELIVERY_STATE_RESET: function handleAdsCreativePreviewDeliveryStateReset(adCreativeId) {
+    adCreativeId = adCreativeId.adCreativeId;
+    if (set.has(adCreativeId)) {
+      const _Set = Set;
+      set = new Set(set);
+      set.delete(adCreativeId);
+    } else {
+      return false;
+    }
+  },
+  ADS_PREVIEW_DELIVERY_STATE_LOOKBACK_RESET: function handleAdsPreviewDeliveryStateLookbackReset() {
+    if (0 === set.size) {
+      return false;
+    } else {
+      const _Set = Set;
+      set = new Set();
+    }
+  },
   QUESTS_USER_STATUS_UPDATE: function handleQuestUserStatusUpdate(user_status) {
     user_status = user_status.user_status;
     const questLogger = getQuestLogger.getQuestLogger({ location: QuestsExperimentLocations.QUESTS_STORE });

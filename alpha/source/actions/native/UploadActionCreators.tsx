@@ -1,14 +1,14 @@
-// Module ID: 12088
-// Function ID: 12089
+// Module ID: 11233
+// Function ID: 11234
 // Name: UploadActionCreators
-// Dependencies: [5192, 8167, 573, 2]
+// Dependencies: [5193, 7252, 573, 2]
 
-// Module 12088 (UploadActionCreators)
+// Module 11233 (UploadActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import DraftStore from "DraftStore" /* 5192 */;
-import UploadStore from "UploadStore" /* 8167 */;
+import DraftStore from "DraftStore" /* 5193 */;
+import UploadStore from "UploadStore" /* 7252 */;
 
-const DraftType = fn(5192).DraftType;
+const DraftType = fn(5193).DraftType;
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/native/UploadActionCreators.tsx");
 

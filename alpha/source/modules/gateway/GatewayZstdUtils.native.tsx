@@ -1,12 +1,12 @@
-// Module ID: 14015
-// Function ID: 14016
+// Module ID: 13176
+// Function ID: 13177
 // Name: GatewayZstdUtils
-// Dependencies: [17, 1364, 14016, 2]
+// Dependencies: [17, 1364, 13177, 2]
 // Exports: createZstdContextWeb, supportsZstd
 
-// Module 14015 (GatewayZstdUtils)
+// Module 13176 (GatewayZstdUtils)
 import _mod17 from "module_17" /* 17 */;
-import NativeCompressionModuleDefault from "NativeCompressionModule" /* 14016 */;
+import NativeCompressionModuleDefault from "NativeCompressionModule" /* 13177 */;
 import size from "module_2" /* 2 */;
 
 const NativeModules = _mod17.NativeModules;

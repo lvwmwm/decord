@@ -1,15 +1,15 @@
-// Module ID: 11702
-// Function ID: 11703
+// Module ID: 10882
+// Function ID: 10883
 // Name: useSafeAreaInsetsSharedValue
-// Dependencies: [4561, 1612, 9817, 11703, 1625, 1481, 2]
+// Dependencies: [4563, 1612, 8915, 10883, 1625, 1481, 2]
 // Exports: default
 
-// Module 11702 (useSafeAreaInsetsSharedValue)
+// Module 10882 (useSafeAreaInsetsSharedValue)
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1481 */;
 import AppEntryKey from "AppEntryKey" /* 1625 */;
-import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 9817 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11703 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 4561 */;
+import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 8915 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10883 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 4563 */;
 import useSafeAreaInsets_mod from "useSafeAreaInsets" /* 1612 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 17697
-// Function ID: 17698
+// Module ID: 16921
+// Function ID: 16922
 // Name: VoicePanelHeaderChatButton
-// Dependencies: [19, 1074, 21, 4829, 576, 1110, 17698, 5894, 17602, 5377, 1115, 2]
+// Dependencies: [19, 1074, 21, 4829, 576, 1110, 16922, 5896, 16826, 5378, 1115, 2]
 // Exports: default
 
-// Module 17697 (VoicePanelHeaderChatButton)
+// Module 16921 (VoicePanelHeaderChatButton)
 import nativeDefault from "native" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import util from "util" /* 1115 */;
-import ChatIcon from "ChatIcon" /* 5377 */;
-import NativeViewDefault from "NativeView" /* 5894 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17602 */;
-import useChatBadgeDefault from "useChatBadge" /* 17698 */;
+import ChatIcon from "ChatIcon" /* 5378 */;
+import NativeViewDefault from "NativeView" /* 5896 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 16826 */;
+import useChatBadgeDefault from "useChatBadge" /* 16922 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -50,9 +50,9 @@ export default function VoicePanelHeaderChatButton(channelId) {
     const items1 = [, ];
     ({ badge: arr2[0], notificationBadge: arr2[1] } = tmp);
     obj4.style = items1;
-    obj3.children = tmp8(tmp3(5894), obj4);
-    tmp8Result = tmp8(tmp3(5894), obj3);
-    const tmp3Result = tmp3(5894);
+    obj3.children = tmp8(tmp3(5896), obj4);
+    tmp8Result = tmp8(tmp3(5896), obj3);
+    const tmp3Result = tmp3(5896);
   }
   children[1] = tmp8Result;
   return tmp6(tmp7, { children });

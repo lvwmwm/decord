@@ -1,13 +1,23 @@
 // Module ID: 5248
 // Function ID: 5249
-// Dependencies: [17, 65]
+// Dependencies: [19, 17, 21, 5249]
+// Exports: SafeAreaView
 
 // Module 5248
-import _mod17 from "module_17" /* 17 */;
-import module_65 from "module_65" /* 65 */;
+import _modDef5249 from "module_5249" /* 5249 */;
+import noop from "module_19" /* 19 */;
 
-const codegenNativeComponent = _mod17.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSSafeAreaView", validAttributes: { edges: true, insetType: true } };
+const StyleSheet = fn(17).StyleSheet;
+const jsx = fn(21).jsx;
+const styles = StyleSheet.create({ flex: { flex: 1 } });
 
-export default module_65.get("RNSSafeAreaView", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export const SafeAreaView = function SafeAreaView(style) {
+  const obj = {};
+  const merged = Object.assign(style);
+  const items = [styles.flex, style.style];
+  obj.style = items;
+  const rect = { top: false, bottom: false, left: false, right: false };
+  const merged1 = Object.assign(style.edges);
+  obj.edges = rect;
+  return jsx(_modDef5249, {});
+};

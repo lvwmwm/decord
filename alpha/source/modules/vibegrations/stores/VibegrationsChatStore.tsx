@@ -1,25 +1,25 @@
-// Module ID: 13458
-// Function ID: 13459
+// Module ID: 12608
+// Function ID: 12609
 // Name: VibegrationsChatStore
-// Dependencies: [32, 109, 7867, 10428, 2098, 4650, 5584, 9389, 1074, 2051, 1115, 3714, 9392, 2020, 10249, 504, 573, 2]
+// Dependencies: [32, 109, 6952, 9530, 2098, 4652, 5586, 8487, 1074, 2051, 1115, 3714, 8490, 2020, 9346, 504, 573, 2]
 // Exports: getOlderHistoryCursor, turnSettled
 
-// Module 13458 (VibegrationsChatStore)
+// Module 12608 (VibegrationsChatStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2020 */;
 import _modDef3714 from "module_3714" /* 3714 */;
-import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 9392 */;
-import SoundUtils from "SoundUtils" /* 10249 */;
+import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 8490 */;
+import SoundUtils from "SoundUtils" /* 9346 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7867 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 10428 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6952 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 9530 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4650 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5584 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9389 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4652 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5586 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 8487 */;
 
 require = fn;
 function newMessage(assistant, content, arg2) {
@@ -347,8 +347,8 @@ function recordThinkingTransition(projectId) {
             isWindowFocusedResult = SelectedChannelStore.getChannelId() === StaticChannelRoute.VIBEGRATIONS;
           }
           if (isWindowFocusedResult) {
-            isWindowFocusedResult = tmp68(9392).isWindowFocused();
-            const tmp68Result = tmp68(9392);
+            isWindowFocusedResult = tmp68(8490).isWindowFocused();
+            const tmp68Result = tmp68(8490);
           }
           if (guild_id == null) {
             guild_id = project.guild_id;
@@ -547,6 +547,30 @@ function replayTimeline(steps) {
     continue;
   }
   return tmp.steps;
+}
+function stoppable(role) {
+  let tmp = "assistant" === role.role;
+  if (tmp) {
+    tmp = "side_reply" !== role.kind;
+  }
+  if (tmp) {
+    let someResult = true === role.finished || true === role.continued;
+    if (!someResult) {
+      someResult = "" !== role.content;
+    }
+    if (!someResult) {
+      someResult = null != role.proposal;
+    }
+    if (!someResult) {
+      const steps = role.steps;
+      someResult = steps.some((kind) => set.has(kind.kind));
+    }
+    tmp = !someResult;
+  }
+  if (tmp) {
+    tmp = true !== role.stopRequested;
+  }
+  return tmp;
 }
 let closure_3 = ["disposition"];
 let closure_4 = ["disposition"];
@@ -933,6 +957,49 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
       const result = obj.set(projectId, items);
     }
     obj = map;
+  },
+  VIBEGRATIONS_CHAT_STOP_REQUESTED: function handleChatStopRequested(projectId) {
+    projectId = projectId.projectId;
+    value = map.get(projectId);
+    let tmp = null != value;
+    if (tmp) {
+      let someResult = value.some(stoppable);
+      if (someResult) {
+        const result = map.set(projectId, value.map((role) => {
+          let tmp = "assistant" === role.role;
+          if (tmp) {
+            tmp = "side_reply" !== role.kind;
+          }
+          if (tmp) {
+            let someResult = true === role.finished || true === role.continued;
+            if (!someResult) {
+              someResult = "" !== role.content;
+            }
+            if (!someResult) {
+              someResult = null != role.proposal;
+            }
+            if (!someResult) {
+              const steps = role.steps;
+              someResult = steps.some((kind) => set.has(kind.kind));
+            }
+            tmp = !someResult;
+          }
+          if (tmp) {
+            tmp = true !== role.stopRequested;
+          }
+          let tmp4 = role;
+          if (tmp) {
+            const obj = {};
+            const merged = Object.assign(role);
+            obj.stopRequested = true;
+            tmp4 = obj;
+          }
+          return tmp4;
+        }));
+      }
+      tmp = someResult;
+    }
+    return tmp;
   },
   VIBEGRATIONS_CHAT_PROVISIONAL_TODO: function handleChatProvisionalTodo(text) {
     ({ projectId, turnId } = text);

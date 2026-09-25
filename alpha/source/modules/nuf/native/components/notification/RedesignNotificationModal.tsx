@@ -1,16 +1,16 @@
-// Module ID: 16418
-// Function ID: 16419
+// Module ID: 15598
+// Function ID: 15599
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 12758, 12759, 1074, 21, 4829, 576, 12760, 1241, 12761, 13036, 16419, 1115, 2]
+// Dependencies: [19, 17, 11884, 11885, 1074, 21, 4829, 576, 11886, 1241, 11887, 12167, 15599, 1115, 2]
 // Exports: RedesignNotificationScreen
 
-// Module 16418 (RedesignNotificationModal)
+// Module 15598 (RedesignNotificationModal)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12760 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12761 */;
-import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 13036 */;
-import _modDef16419 from "module_16419" /* 16419 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 11886 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 11887 */;
+import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12167 */;
+import _modDef15599 from "module_15599" /* 15599 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -54,8 +54,8 @@ class RedesignNotificationModal {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const PermissionStateType = fn(12758).PermissionStateType;
-const NotificationPermissionConstants = fn(12759);
+const PermissionStateType = fn(11884).PermissionStateType;
+const NotificationPermissionConstants = fn(11885);
 ({ EventActionLocation: closure_7, EventActionType: closure_8 } = NotificationPermissionConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsx = fn(21).jsx;

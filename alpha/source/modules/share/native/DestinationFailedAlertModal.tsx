@@ -1,22 +1,22 @@
-// Module ID: 12044
-// Function ID: 12045
+// Module ID: 11189
+// Function ID: 11190
 // Name: DestinationFailedAlertModal
-// Dependencies: [19, 17, 2044, 2066, 4869, 4474, 1372, 1085, 21, 4829, 576, 4982, 11262, 1177, 4825, 504, 4673, 11356, 5201, 5201, 1115, 2]
+// Dependencies: [19, 17, 2044, 2066, 4869, 4476, 1372, 1085, 21, 4829, 576, 4982, 10360, 1177, 4825, 504, 4675, 10454, 5202, 5202, 1115, 2]
 // Exports: default
 
-// Module 12044 (DestinationFailedAlertModal)
+// Module 11189 (DestinationFailedAlertModal)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import UserUtilsDefault from "UserUtils" /* 4673 */;
+import UserUtilsDefault from "UserUtils" /* 4675 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import useChannelNameDefault from "useChannelName" /* 4982 */;
-import AlertModal from "AlertModal" /* 5201 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 11262 */;
+import AlertModal from "AlertModal" /* 5202 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10360 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildStore from "GuildStore" /* 2066 */;
 import PresenceStore from "PresenceStore" /* 4869 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -80,7 +80,7 @@ function FailedChannelRow(channel) {
   const obj2 = { style: tmp.row, children: null };
   const obj = channel(504);
   const tmp3 = useChannelNameDefault(channel);
-  const items1 = [closure_10(channel(11356).GuildIconWithChannelType, { "aria-label": "", guild: stateFromStores, channel, size: channel(11356).GuildIconWithChannelTypeSizes.SMALL_32 }), closure_10(channel(4825).Text, { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp3 })];
+  const items1 = [closure_10(channel(10454).GuildIconWithChannelType, { "aria-label": "", guild: stateFromStores, channel, size: channel(10454).GuildIconWithChannelTypeSizes.SMALL_32 }), closure_10(channel(4825).Text, { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp3 })];
   obj2.children = items1;
   return closure_11(View, obj2);
 }
@@ -144,18 +144,18 @@ export default function DestinationFailedAlertModal(arg0) {
     const obj4 = { variant: "primary", onPress: onRetry, text: null };
     const intl2 = tmp3(1115).intl;
     obj4.text = intl2.string(tmp3(1115).t["5911Lb"]);
-    const items = [tmp2(tmp3(5201).AlertActionButton, obj4, "confirm"), ];
+    const items = [tmp2(tmp3(5202).AlertActionButton, obj4, "confirm"), ];
     const obj5 = { variant: "secondary", text: null };
     const intl3 = tmp3(1115).intl;
     obj5.text = intl3.string(tmp3(1115).t.WAI6xu);
-    items[1] = tmp2(tmp3(5201).AlertActionButton, obj5, "cancel");
+    items[1] = tmp2(tmp3(5202).AlertActionButton, obj5, "cancel");
     obj3.children = items;
     let tmp2Result = closure_1_11(closure_1_12, obj3);
   } else {
     const obj6 = { variant: "primary", text: null };
     const intl = tmp3(1115).intl;
     obj6.text = intl.string(tmp3(1115).t.BddRzS);
-    tmp2Result = tmp2(tmp3(5201).AlertActionButton, obj6, "confirm");
+    tmp2Result = tmp2(tmp3(5202).AlertActionButton, obj6, "confirm");
   }
   obj.actions = closure_1_10(AlertModal.AlertActions, { children: tmp2Result });
   return closure_1_10(AlertModal.AlertModal, obj);

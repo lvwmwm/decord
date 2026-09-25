@@ -1,18 +1,18 @@
-// Module ID: 14839
-// Function ID: 14840
+// Module ID: 14001
+// Function ID: 14002
 // Name: activityInstanceConnectedParticipants
-// Dependencies: [2043, 1372, 4733, 4453, 4981, 9670, 1370, 12, 2]
+// Dependencies: [2043, 1372, 4735, 4455, 4981, 8768, 1370, 12, 2]
 // Exports: activityInstanceConnectedParticipants
 
-// Module 14839 (activityInstanceConnectedParticipants)
-import transformUserDefault from "transformUser" /* 9670 */;
+// Module 14001 (activityInstanceConnectedParticipants)
+import transformUserDefault from "transformUser" /* 8768 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const Constants = fn(4733);
+const Constants = fn(4735);
 let obj = { [Constants.RPC_SCOPE_CONFIG.ANY]: items };
 items = [Constants.RPC_AUTHENTICATED_SCOPE];
 const size = fn(2);
@@ -56,12 +56,12 @@ export const activityInstanceConnectedParticipantsUpdateEvent = {
         const obj = { participants: [] };
         let obj2 = obj;
       } else {
-        embeddedActivityLocationGuildId = embeddedActivityLocationGuildId(4453).getEmbeddedActivityLocationGuildId(currentEmbeddedActivity.location);
-        const obj4 = embeddedActivityLocationGuildId(4453);
-        embeddedActivityLocationChannelId = embeddedActivityLocationGuildId(4453).getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
+        embeddedActivityLocationGuildId = embeddedActivityLocationGuildId(4455).getEmbeddedActivityLocationGuildId(currentEmbeddedActivity.location);
+        const obj4 = embeddedActivityLocationGuildId(4455);
+        embeddedActivityLocationChannelId = embeddedActivityLocationGuildId(4455).getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
         obj2 = { participants: null };
         const _Array = Array;
-        const obj5 = embeddedActivityLocationGuildId(4453);
+        const obj5 = embeddedActivityLocationGuildId(4455);
         obj2.participants = Array.from(currentEmbeddedActivity.userIds, (arg0) => {
           user = user.getUser(arg0);
           if (null != user) {

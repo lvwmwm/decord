@@ -1,19 +1,19 @@
-// Module ID: 17709
-// Function ID: 17710
+// Module ID: 16933
+// Function ID: 16934
 // Name: UserVideoFailed
-// Dependencies: [17, 1074, 21, 4829, 576, 9769, 4825, 1115, 5273, 9782, 4884, 9995, 2]
+// Dependencies: [17, 1074, 21, 4829, 576, 8867, 4825, 1115, 5274, 8880, 4884, 9093, 2]
 // Exports: default
 
-// Module 17709 (UserVideoFailed)
+// Module 16933 (UserVideoFailed)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4884 */;
-import AVError from "AVError" /* 9769 */;
-import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 9782 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9995 */;
+import AVError from "AVError" /* 8867 */;
+import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 8880 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9093 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createStyles from "createStyles" /* 4829 */;
 import size from "module_2" /* 2 */;
@@ -55,7 +55,7 @@ export default function UserVideoFailed(arg0) {
         AudioActionCreatorsDefault.setDisableLocalVideo(closure_1_0, constants.MANUAL_ENABLED, BaseConnectionEvent.MediaEngineContextTypes.DEFAULT, false);
       }, 1000);
     };
-    tmp8Result = tmp8(tmp3(5273).Button, obj6);
+    tmp8Result = tmp8(tmp3(5274).Button, obj6);
   }
   obj5.children = tmp8Result;
   items1[2] = closure_5(View, obj5);

@@ -1,20 +1,20 @@
-// Module ID: 18319
-// Function ID: 18320
+// Module ID: 17550
+// Function ID: 17551
 // Name: GuildRoleSubscriptionBenefitModalHeader
-// Dependencies: [32, 19, 17, 1074, 21, 4829, 576, 5829, 15576, 7456, 10095, 4825, 1115, 1177, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4829, 576, 5831, 14746, 6539, 9192, 4825, 1115, 1177, 2]
 // Exports: default
 
-// Module 18319 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 17550 (GuildRoleSubscriptionBenefitModalHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7456 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 10095 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15576 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6539 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9192 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14746 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import TextStyles_mod from "TextStyles" /* 5829 */;
+import TextStyles_mod from "TextStyles" /* 5831 */;
 
 require = fn;
 const View = fn(17).View;

@@ -1,16 +1,16 @@
-// Module ID: 10333
-// Function ID: 10334
+// Module ID: 9431
+// Function ID: 9432
 // Name: VolumeSlider
-// Dependencies: [19, 17, 4854, 21, 1364, 4829, 576, 4526, 10334, 8628, 5314, 1115, 5407, 2]
+// Dependencies: [19, 17, 4854, 21, 1364, 4829, 576, 4528, 9432, 7718, 5315, 1115, 5408, 2]
 // Exports: default
 
-// Module 10333 (VolumeSlider)
+// Module 9431 (VolumeSlider)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4526 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5314 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5407 */;
-import _modDef8628 from "module_8628" /* 8628 */;
-import VoiceXIcon from "VoiceXIcon" /* 10334 */;
+import useToken from "useToken" /* 4528 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5315 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5408 */;
+import _modDef7718 from "module_7718" /* 7718 */;
+import VoiceXIcon from "VoiceXIcon" /* 9432 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -53,7 +53,7 @@ export default function VolumeSlider(maxTrackTintColor) {
   const obj3 = { style: tmp4.leftIcon };
   const tmp8 = closure_6;
   const tmp9 = View;
-  const tmp7Result = _modDef8628;
+  const tmp7Result = _modDef7718;
   obj4.value = PerceptualVolumeUtils.amplitudeToPerceptual(value);
   obj4.maximumValue = maxVolume;
   obj4.minimumTrackTintColor = minTrackColor;

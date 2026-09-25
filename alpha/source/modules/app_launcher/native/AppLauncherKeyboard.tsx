@@ -1,28 +1,28 @@
-// Module ID: 12377
-// Function ID: 12378
+// Module ID: 11503
+// Function ID: 11504
 // Name: AppLauncherKeyboard
-// Dependencies: [19, 17, 1074, 2041, 12378, 21, 4829, 576, 11568, 11567, 11705, 5258, 12379, 4561, 12388, 4535, 6957, 12389, 1364, 5009, 1609, 1482, 1610, 5267, 12421, 9606, 12424, 2]
+// Dependencies: [19, 17, 1074, 2041, 11504, 21, 4829, 576, 10773, 10772, 10885, 5259, 11505, 4563, 11514, 4537, 6040, 11515, 1364, 5009, 1609, 1482, 1610, 5268, 11547, 8704, 11550, 2]
 // Exports: setAppLauncherA11yFocusReturnRef
 
-// Module 12377 (AppLauncherKeyboard)
+// Module 11503 (AppLauncherKeyboard)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import KeyboardUIStore from "KeyboardUIStore" /* 1482 */;
 import KeyboardTypes from "KeyboardTypes" /* 1610 */;
-import native from "native" /* 4535 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import native from "native" /* 4537 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5009 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5267 */;
-import BottomSheetModal from "BottomSheetModal" /* 6957 */;
-import completeAppLauncherOnboardingDefault from "completeAppLauncherOnboarding" /* 12388 */;
-import AppLauncherOnboardingLayerDefault from "AppLauncherOnboardingLayer" /* 12389 */;
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5268 */;
+import BottomSheetModal from "BottomSheetModal" /* 6040 */;
+import completeAppLauncherOnboardingDefault from "completeAppLauncherOnboarding" /* 11514 */;
+import AppLauncherOnboardingLayerDefault from "AppLauncherOnboardingLayer" /* 11515 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const ContentDismissActionType = fn(2041).ContentDismissActionType;
-const KEYBOARD_ANIMATION_CONFIG = fn(12378).KEYBOARD_ANIMATION_CONFIG;
+const KEYBOARD_ANIMATION_CONFIG = fn(11504).KEYBOARD_ANIMATION_CONFIG;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4829);
@@ -141,11 +141,11 @@ export default noop.memo(function AppLauncherKeyboard(context) {
         let trackWithMetadata = require;
         let APP_LAUNCHER_EXPANDED = dependencyMap;
         if (arg2 === BottomSheetModal.ANIMATION_SOURCE.KEYBOARD) {
-          let current = trackWithMetadata(11567).AppLauncherBottomSheetExpandReason.KEYBOARD;
-        } else if (arg2 === trackWithMetadata(6957).ANIMATION_SOURCE.GESTURE) {
-          current = trackWithMetadata(11567).AppLauncherBottomSheetExpandReason.GESTURE;
-        } else if (arg2 !== trackWithMetadata(6957).ANIMATION_SOURCE.USER) {
-          current = trackWithMetadata(11567).AppLauncherBottomSheetExpandReason.OTHER;
+          let current = trackWithMetadata(10772).AppLauncherBottomSheetExpandReason.KEYBOARD;
+        } else if (arg2 === trackWithMetadata(6040).ANIMATION_SOURCE.GESTURE) {
+          current = trackWithMetadata(10772).AppLauncherBottomSheetExpandReason.GESTURE;
+        } else if (arg2 !== trackWithMetadata(6040).ANIMATION_SOURCE.USER) {
+          current = trackWithMetadata(10772).AppLauncherBottomSheetExpandReason.OTHER;
         } else {
           current = ref1.current;
         }

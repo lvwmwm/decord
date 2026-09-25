@@ -1,12 +1,12 @@
-// Module ID: 18339
-// Function ID: 18340
+// Module ID: 17570
+// Function ID: 17571
 // Name: ActionableNotice
-// Dependencies: [19, 17, 21, 4829, 4825, 5273, 2]
+// Dependencies: [19, 17, 21, 4829, 4825, 5274, 2]
 // Exports: default
 
-// Module 18339 (ActionableNotice)
+// Module 17570 (ActionableNotice)
 import Text_Text from "Text/Text" /* 4825 */;
-import components_Button_Button from "components/Button/Button" /* 5273 */;
+import components_Button_Button from "components/Button/Button" /* 5274 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

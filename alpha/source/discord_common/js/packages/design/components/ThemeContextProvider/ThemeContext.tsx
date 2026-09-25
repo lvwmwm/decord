@@ -1,10 +1,10 @@
-// Module ID: 4542
-// Function ID: 4543
+// Module ID: 4544
+// Function ID: 4545
 // Name: ThemeContext
 // Dependencies: [19, 1085, 21, 2]
 // Exports: UseThemeContext, createThemedContext, useThemeContext
 
-// Module 4542 (ThemeContext)
+// Module 4544 (ThemeContext)
 import noop from "module_19" /* 19 */;
 
 const jsxProd = fn(21);

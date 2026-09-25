@@ -1,9 +1,9 @@
-// Module ID: 9177
-// Function ID: 9178
+// Module ID: 8271
+// Function ID: 8272
 // Name: ClipViewNativeComponent
 // Dependencies: [65, 2]
 
-// Module 9177 (ClipViewNativeComponent)
+// Module 8271 (ClipViewNativeComponent)
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;
 

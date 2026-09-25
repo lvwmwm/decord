@@ -1,12 +1,12 @@
-// Module ID: 16729
-// Function ID: 16730
+// Module ID: 15913
+// Function ID: 15914
 // Name: InvitesDisabledBadge
-// Dependencies: [19, 17, 21, 4829, 576, 1177, 13073, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 1177, 12221, 2]
 
-// Module 16729 (InvitesDisabledBadge)
+// Module 15913 (InvitesDisabledBadge)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import _modDef13073 from "module_13073" /* 13073 */;
+import _modDef12221 from "module_12221" /* 12221 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -27,7 +27,7 @@ export default noop.memo(function InvitesDisabledBadge(style) {
   const obj = { style: null, children: null };
   const items = [tmp.pauseRing, style.style];
   obj.style = items;
-  const obj2 = { style: tmp.pauseBackground, children: jsx(native.ThemedIcon, { style: tmp.pause, themedColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, source: _modDef13073 }) };
-  obj.children = <View style={tmp.pauseBackground}>{jsx(native.ThemedIcon, { style: tmp.pause, themedColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, source: _modDef13073 })}</View>;
+  const obj2 = { style: tmp.pauseBackground, children: jsx(native.ThemedIcon, { style: tmp.pause, themedColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, source: _modDef12221 }) };
+  obj.children = <View style={tmp.pauseBackground}>{jsx(native.ThemedIcon, { style: tmp.pause, themedColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, source: _modDef12221 })}</View>;
   return <View style={null}>{null}</View>;
 });

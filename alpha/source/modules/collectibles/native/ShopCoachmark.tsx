@@ -1,10 +1,10 @@
-// Module ID: 17367
-// Function ID: 17368
+// Module ID: 16582
+// Function ID: 16583
 // Name: ShopCoachmark
-// Dependencies: [19, 2041, 21, 4829, 1177, 576, 1115, 11480, 2]
+// Dependencies: [19, 2041, 21, 4829, 1177, 576, 1115, 10578, 2]
 // Exports: default
 
-// Module 17367 (ShopCoachmark)
+// Module 16582 (ShopCoachmark)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;

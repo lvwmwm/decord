@@ -1,20 +1,20 @@
-// Module ID: 17356
-// Function ID: 17357
+// Module ID: 16571
+// Function ID: 16572
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 1372, 2041, 1374, 21, 1365, 576, 4829, 13921, 7779, 4649, 2028, 504, 8534, 8575, 8586, 4680, 672, 4483, 17357, 11825, 17358, 17359, 12108, 5752, 17360, 15340, 1115, 17361, 17363, 9020, 7710, 5285, 2]
+// Dependencies: [19, 17, 1372, 2041, 1374, 21, 1365, 576, 4829, 13080, 6864, 4651, 2028, 504, 7624, 7665, 7676, 4682, 672, 4485, 16572, 10669, 16573, 16574, 10665, 5754, 16575, 14506, 1115, 16576, 16578, 8114, 6793, 5286, 2]
 // Exports: getFloatingNavBottomMargin, useHasSettingsBadge
 
-// Module 17356 (YouBannerDecorations)
+// Module 16571 (YouBannerDecorations)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import dismissible_content from "dismissible_content" /* 2028 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4649 */;
-import QuestTypes from "QuestTypes" /* 5752 */;
-import useTrialOffer from "useTrialOffer" /* 7779 */;
-import QuestUtils from "QuestUtils" /* 12108 */;
-import PromotionsHooks from "PromotionsHooks" /* 13921 */;
-import you_tracking_Tracking from "you/tracking/Tracking" /* 17359 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4651 */;
+import QuestTypes from "QuestTypes" /* 5754 */;
+import useTrialOffer from "useTrialOffer" /* 6864 */;
+import QuestUtils from "QuestUtils" /* 10665 */;
+import PromotionsHooks from "PromotionsHooks" /* 13080 */;
+import you_tracking_Tracking from "you/tracking/Tracking" /* 16574 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -147,12 +147,12 @@ export default noop.memo((navigateToPremium) => {
     navigateToSettings();
     let tmp5 = closure_7;
     if (closure_7) {
-      tmp5 = !tmp(4649).UNSAFE_isDismissibleContentDismissed(tmp(2028).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
-      const tmpResult = tmp(4649);
+      tmp5 = !tmp(4651).UNSAFE_isDismissibleContentDismissed(tmp(2028).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      const tmpResult = tmp(4651);
     }
     if (tmp5) {
-      const result1 = tmp(4649).UNSAFE_markDismissibleContentAsDismissed(tmp(2028).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
-      const tmpResult2 = tmp(4649);
+      const result1 = tmp(4651).UNSAFE_markDismissibleContentAsDismissed(tmp(2028).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      const tmpResult2 = tmp(4651);
     }
   }, items2);
   const callback1 = obj4.useCallback(() => {

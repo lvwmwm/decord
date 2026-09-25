@@ -1,13 +1,13 @@
-// Module ID: 11438
-// Function ID: 11439
+// Module ID: 10536
+// Function ID: 10537
 // Name: useFetchCollectiblesProductCategory
-// Dependencies: [32, 7872, 11083, 563, 2]
+// Dependencies: [32, 6957, 10187, 563, 2]
 // Exports: useFetchCollectiblesProductCategory
 
-// Module 11438 (useFetchCollectiblesProductCategory)
-import useMaybeFetchCollectiblesCategoriesDefault from "useMaybeFetchCollectiblesCategories" /* 11083 */;
+// Module 10536 (useFetchCollectiblesProductCategory)
+import useMaybeFetchCollectiblesCategoriesDefault from "useMaybeFetchCollectiblesCategories" /* 10187 */;
 import _slicedToArray from "module_32" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7872 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6957 */;
 
 const require = globalThis.__r;
 

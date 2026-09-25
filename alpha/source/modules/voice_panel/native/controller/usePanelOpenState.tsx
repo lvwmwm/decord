@@ -1,12 +1,12 @@
-// Module ID: 17658
-// Function ID: 17659
+// Module ID: 16882
+// Function ID: 16883
 // Name: usePanelOpenState
-// Dependencies: [32, 19, 5037, 12615, 1074, 4561, 1110, 13137, 4655, 4668, 13130, 9655, 2]
+// Dependencies: [32, 19, 5037, 11741, 1074, 4563, 1110, 12287, 4657, 4670, 12280, 8753, 2]
 // Exports: default
 
-// Module 17658 (usePanelOpenState)
+// Module 16882 (usePanelOpenState)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import VoicePanelStore from "VoicePanelStore" /* 5037 */;
@@ -14,7 +14,7 @@ import VoicePanelStore from "VoicePanelStore" /* 5037 */;
 const require = globalThis.__r;
 
 require = fn;
-const VoicePanelModes = fn(12615).VoicePanelModes;
+const VoicePanelModes = fn(11741).VoicePanelModes;
 const Constants = fn(1074);
 ({ ComponentActions: closure_7, Routes: closure_8 } = Constants);
 const __initData = { code: "function usePanelOpenStateTsx1(){const{connected}=this.__closure;return{connected:connected.get()};}" };
@@ -91,16 +91,16 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
       ComponentDispatch2.unsubscribe(constants.VOICE_PANEL_CLOSE, componentActionClose);
     };
   }, items);
-  [first, closure_6] = doCloseChannel.useState(() => closure_1(13137).getHistory().location.pathname);
+  [first, closure_6] = doCloseChannel.useState(() => closure_1(12287).getHistory().location.pathname);
   const items1 = [arg0, first];
   const effect1 = doCloseChannel.useEffect(() => {
-    closure_0 = closure_1(13137).addRouteChangeListener((pathname) => {
+    closure_0 = closure_1(12287).addRouteChangeListener((pathname) => {
       if (first !== pathname.pathname) {
         closure_1_6(tmp);
         const obj2 = { path: null };
-        const RouteParam = closure_0(4668).RouteParam;
-        const obj = closure_0(4655);
-        const RouteParam2 = closure_0(4668).RouteParam;
+        const RouteParam = closure_0(4670).RouteParam;
+        const obj = closure_0(4657);
+        const RouteParam2 = closure_0(4670).RouteParam;
         obj2.path = closure_2_8.CHANNEL(RouteParam.guildId(), RouteParam2.channelId());
         const matchPathResult = obj.matchPath(pathname.pathname, obj2);
         const guildIdResult = RouteParam.guildId();
@@ -110,10 +110,10 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
             tmp2 = matchPathResult.params.channelId === closure_0;
           }
           if (!tmp2) {
-            closure_1(9655)();
+            closure_1(8753)();
           }
         }
-        obj3 = closure_0(13130);
+        obj3 = closure_0(12280);
       }
     });
     return () => {

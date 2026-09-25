@@ -1,19 +1,19 @@
-// Module ID: 15243
-// Function ID: 15244
+// Module ID: 14409
+// Function ID: 14410
 // Name: FamilyCenterTopUsersBottomSheet
-// Dependencies: [19, 1372, 21, 4829, 7922, 5910, 4673, 1177, 7530, 4825, 1115, 2486, 5992, 2]
+// Dependencies: [19, 1372, 21, 4829, 7007, 5912, 4675, 1177, 6613, 4825, 1115, 2486, 5994, 2]
 // Exports: default
 
-// Module 15243 (FamilyCenterTopUsersBottomSheet)
+// Module 14409 (FamilyCenterTopUsersBottomSheet)
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import _modDef2486 from "module_2486" /* 2486 */;
-import UserUtilsDefault from "UserUtils" /* 4673 */;
+import UserUtilsDefault from "UserUtils" /* 4675 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import TableRow from "TableRow" /* 5910 */;
-import TableRowGroup from "TableRowGroup" /* 5992 */;
-import ActionSheet from "ActionSheet" /* 7530 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7922 */;
+import TableRow from "TableRow" /* 5912 */;
+import TableRowGroup from "TableRowGroup" /* 5994 */;
+import ActionSheet from "ActionSheet" /* 6613 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7007 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -28,7 +28,7 @@ function UserRow(userActivity) {
     const obj2 = { label: null, subLabel: null, icon: null };
     obj2.label = UserUtilsDefault.getName(user);
     obj2.subLabel = topUserOrGuildDescription;
-    const obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "r" };
+    const obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "Array" };
     obj2.icon = React4(native.Avatar, obj4);
     return React4(TableRow.TableRow, obj2);
   }

@@ -1,18 +1,18 @@
-// Module ID: 12993
-// Function ID: 12994
+// Module ID: 12124
+// Function ID: 12125
 // Name: VoiceMessageOverlay
-// Dependencies: [32, 19, 17, 4821, 2044, 12302, 12303, 1074, 12304, 21, 4561, 1177, 4825, 12, 8807, 4829, 576, 5746, 504, 4526, 5891, 1115, 4830, 5375, 10597, 12994, 7314, 12756, 5258, 5267, 1110, 12216, 9810, 12603, 12995, 8269, 4787, 12598, 12581, 4773, 10352, 2]
+// Dependencies: [32, 19, 17, 4821, 2044, 11428, 11429, 1074, 11430, 21, 4563, 1177, 4825, 12, 7901, 4829, 576, 5748, 504, 4528, 5893, 1115, 4830, 5376, 9701, 12125, 6397, 11882, 5259, 5268, 1110, 11338, 8908, 11729, 12126, 7358, 4787, 11724, 11707, 4773, 9454, 2]
 
-// Module 12993 (VoiceMessageOverlay)
+// Module 12124 (VoiceMessageOverlay)
 import nativeDefault from "native" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import util from "util" /* 1115 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4563 */;
 import timing from "timing" /* 4830 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5267 */;
-import LegacyTokens from "LegacyTokens" /* 5746 */;
-import useRefValueDefault from "useRefValue" /* 5891 */;
-import inlineStyles from "inlineStyles" /* 8807 */;
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5268 */;
+import LegacyTokens from "LegacyTokens" /* 5748 */;
+import useRefValueDefault from "useRefValue" /* 5893 */;
+import inlineStyles from "inlineStyles" /* 7901 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
@@ -235,10 +235,10 @@ function LockPill(safeAreaBottom) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, AppState: metroRequire } = get_ActivityIndicator);
-const useVoiceMessagesUIStore = fn(12302).useVoiceMessagesUIStore;
-const VoiceMessageAnimationState = fn(12303).VoiceMessageAnimationState;
+const useVoiceMessagesUIStore = fn(11428).useVoiceMessagesUIStore;
+const VoiceMessageAnimationState = fn(11429).VoiceMessageAnimationState;
 const ComponentActionsKeyed = fn(1074).ComponentActionsKeyed;
-const CHAT_INPUT_HEIGHT = fn(12304).CHAT_INPUT_HEIGHT;
+const CHAT_INPUT_HEIGHT = fn(11430).CHAT_INPUT_HEIGHT;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
 let ReanimatedRexport = ReanimatedRexport_mod;
@@ -412,7 +412,7 @@ let closure_44 = noop.memo((channelId) => {
       const result = ref.set(timing.withTiming(1, obj2));
       const _performance = performance;
       if (performance.now() - _undefined.current < 500) {
-        const obj3 = { easing: tmp2(4561).Easing.quad, duration: 250 };
+        const obj3 = { easing: tmp2(4563).Easing.quad, duration: 250 };
         const result1 = sharedValue.set(tmp2(4830).withTiming(1, obj3));
         const tmp2Result = tmp2(4830);
       }

@@ -1,15 +1,15 @@
-// Module ID: 15555
-// Function ID: 15556
+// Module ID: 14725
+// Function ID: 14726
 // Name: useUserRoleSubscriptionRelationship
-// Dependencies: [5765, 15554, 504, 2]
+// Dependencies: [5767, 14724, 504, 2]
 // Exports: default, getUserRoleSubscriptionRelationship
 
-// Module 15555 (useUserRoleSubscriptionRelationship)
+// Module 14725 (useUserRoleSubscriptionRelationship)
 import initialize from "initialize" /* 504 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5765 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5767 */;
 
 require = fn;
-const constants = fn(15554).UserGuildRoleSubscriptionRelationship;
+const constants = fn(14724).UserGuildRoleSubscriptionRelationship;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useUserRoleSubscriptionRelationship.tsx");
 

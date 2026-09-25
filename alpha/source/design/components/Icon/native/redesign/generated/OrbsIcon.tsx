@@ -1,13 +1,13 @@
-// Module ID: 9196
-// Function ID: 9197
+// Module ID: 8290
+// Function ID: 8291
 // Name: OrbsIcon
-// Dependencies: [19, 21, 576, 4525, 9197, 2]
+// Dependencies: [19, 21, 576, 4527, 8291, 2]
 // Exports: OrbsIcon
 
-// Module 9196 (OrbsIcon)
+// Module 8290 (OrbsIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
-import _mod9197 from "module_9197" /* 9197 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
+import _mod8291 from "module_8291" /* 8291 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const OrbsIcon = function OrbsIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9197, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8291, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

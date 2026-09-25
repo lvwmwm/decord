@@ -1,23 +1,23 @@
-// Module ID: 18079
-// Function ID: 18080
+// Module ID: 17307
+// Function ID: 17308
 // Name: GuildSettingsModalAuditLog
-// Dependencies: [32, 19, 17, 2044, 2066, 2098, 1372, 18080, 1074, 21, 4829, 576, 1484, 504, 18082, 4673, 1115, 7527, 18084, 18094, 7707, 18085, 5882, 5910, 4825, 5917, 1177, 18095, 7373, 2]
+// Dependencies: [32, 19, 17, 2044, 2066, 2098, 1372, 17308, 1074, 21, 4829, 576, 1484, 504, 17310, 4675, 1115, 6610, 17312, 17322, 6790, 17313, 5884, 5912, 4825, 5919, 1177, 17323, 6456, 2]
 // Exports: default
 
-// Module 18079 (GuildSettingsModalAuditLog)
+// Module 17307 (GuildSettingsModalAuditLog)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import showSimpleActionSheet from "showSimpleActionSheet" /* 7527 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 18082 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 18085 */;
-import AuditLogDefault from "AuditLog" /* 18094 */;
+import showSimpleActionSheet from "showSimpleActionSheet" /* 6610 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 17310 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 17313 */;
+import AuditLogDefault from "AuditLog" /* 17322 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildStore from "GuildStore" /* 2066 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
 import UserStore from "UserStore" /* 1372 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 18080 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17308 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);

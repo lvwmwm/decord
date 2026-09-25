@@ -1,9 +1,9 @@
-// Module ID: 4712
-// Function ID: 4713
+// Module ID: 4714
+// Function ID: 4715
 // Name: GuildThemeGuildIdOverrideContext
 // Dependencies: [19, 2]
 
-// Module 4712 (GuildThemeGuildIdOverrideContext)
+// Module 4714 (GuildThemeGuildIdOverrideContext)
 import noop from "module_19" /* 19 */;
 
 const context = noop.createContext(undefined);

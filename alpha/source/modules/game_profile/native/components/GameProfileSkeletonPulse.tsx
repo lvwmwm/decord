@@ -1,19 +1,19 @@
-// Module ID: 9094
-// Function ID: 9095
+// Module ID: 8188
+// Function ID: 8189
 // Name: GameProfileSkeletonPulse
-// Dependencies: [19, 4821, 4561, 4830, 504, 2]
+// Dependencies: [19, 4821, 4563, 4830, 504, 2]
 // Exports: useSkeletonPulseStyle
 
-// Module 9094 (GameProfileSkeletonPulse)
+// Module 8188 (GameProfileSkeletonPulse)
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 
 const require = fn;
 let c4 = 1300;
-const Easing = fn(4561).Easing;
-const inOutResult = Easing.inOut(fn(4561).Easing.quad);
+const Easing = fn(4563).Easing;
+const inOutResult = Easing.inOut(fn(4563).Easing.quad);
 const hasOwnProperty = inOutResult;
-const ReanimatedRexport = fn(4561);
+const ReanimatedRexport = fn(4563);
 const pulsePhase = ReanimatedRexport.makeMutable(0);
 let c7 = 0;
 let c8 = false;
@@ -141,5 +141,5 @@ export const useSkeletonPulseStyle = function useSkeletonPulseStyle(animationDel
   P.__closure = { shouldReduceMotion: stateFromStores, MAX_OPACITY: 0.1, getPulseOpacity, pulsePhase, phaseOffset: result };
   P.__workletHash = 3992024948852;
   P.__initData = __initData;
-  return stateFromStores(4561).useAnimatedStyle(P);
+  return stateFromStores(4563).useAnimatedStyle(P);
 };

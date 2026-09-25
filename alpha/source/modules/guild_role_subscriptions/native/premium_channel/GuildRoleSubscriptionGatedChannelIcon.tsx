@@ -1,12 +1,12 @@
-// Module ID: 16544
-// Function ID: 16545
+// Module ID: 15724
+// Function ID: 15725
 // Name: GuildRoleSubscriptionGatedChannelIcon
-// Dependencies: [19, 21, 1177, 10647, 2]
+// Dependencies: [19, 21, 1177, 9751, 2]
 // Exports: default
 
-// Module 16544 (GuildRoleSubscriptionGatedChannelIcon)
+// Module 15724 (GuildRoleSubscriptionGatedChannelIcon)
 import native from "native" /* 1177 */;
-import _modDef10647 from "module_10647" /* 10647 */;
+import _modDef9751 from "module_9751" /* 9751 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,9 +16,9 @@ const result = size.fileFinishedImporting("modules/guild_role_subscriptions/nati
 
 export default function SubscriptionGatedChannelIcon(arg0) {
   ({ locked, isInMainTabsExperiment } = arg0);
-  const obj = { source: _modDef10647, size: null, disableColor: null };
+  const obj = { source: _modDef9751, size: null, disableColor: null };
   const Sizes = native.Icon.Sizes;
   obj.size = isInMainTabsExperiment ? Sizes.EXTRA_SMALL_10 : Sizes.SMALL;
   obj.disableColor = false !== locked;
-  return jsx(native.Icon, { source: _modDef10647, size: null, disableColor: null });
+  return jsx(native.Icon, { source: _modDef9751, size: null, disableColor: null });
 };

@@ -1,11 +1,11 @@
-// Module ID: 9929
-// Function ID: 9930
+// Module ID: 9027
+// Function ID: 9028
 // Name: TextInput/TextInput
-// Dependencies: [19, 17, 1074, 21, 4829, 576, 4680, 1364, 4678, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 576, 4682, 1364, 4680, 2]
 
-// Module 9929 (TextInput/TextInput)
+// Module 9027 (TextInput/TextInput)
 import nativeDefault from "native" /* 576 */;
-import shared from "shared" /* 4680 */;
+import shared from "shared" /* 4682 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -35,8 +35,8 @@ const forwardRefResult = noop.forwardRef((style, ref) => {
   const tmp3Result = shared;
   let hexWithOpacityResult = tmp6;
   if (tmp3Result3.isAndroid()) {
-    hexWithOpacityResult = tmp3(4678).hexWithOpacity(tmp6, 0.5);
-    const tmp3Result4 = tmp3(4678);
+    hexWithOpacityResult = tmp3(4680).hexWithOpacity(tmp6, 0.5);
+    const tmp3Result4 = tmp3(4680);
   }
   obj3.selectionColor = hexWithOpacityResult;
   const merged1 = Object.assign(merged);

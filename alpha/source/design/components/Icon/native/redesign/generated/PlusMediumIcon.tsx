@@ -1,13 +1,13 @@
-// Module ID: 13101
-// Function ID: 13102
+// Module ID: 12251
+// Function ID: 12252
 // Name: PlusMediumIcon
-// Dependencies: [19, 21, 576, 4525, 12541, 2]
+// Dependencies: [19, 21, 576, 4527, 11667, 2]
 // Exports: PlusMediumIcon
 
-// Module 13101 (PlusMediumIcon)
+// Module 12251 (PlusMediumIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
-import _mod12541 from "module_12541" /* 12541 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
+import _mod11667 from "module_11667" /* 11667 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const PlusMediumIcon = function PlusMediumIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12541, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11667, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

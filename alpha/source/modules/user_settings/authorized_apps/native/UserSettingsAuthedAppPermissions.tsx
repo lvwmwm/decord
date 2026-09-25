@@ -1,11 +1,11 @@
-// Module ID: 15290
-// Function ID: 15291
+// Module ID: 14456
+// Function ID: 14457
 // Name: UserSettingsAuthedAppPermissions
-// Dependencies: [19, 17, 21, 4829, 9411, 8689, 1115, 4825, 4788, 576, 9413, 15284, 2]
+// Dependencies: [19, 17, 21, 4829, 8509, 7779, 1115, 4825, 4788, 576, 8511, 14450, 2]
 // Exports: default
 
-// Module 15290 (UserSettingsAuthedAppPermissions)
-import disclosures from "disclosures" /* 9413 */;
+// Module 14456 (UserSettingsAuthedAppPermissions)
+import disclosures from "disclosures" /* 8511 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -64,7 +64,7 @@ export default function UserSettingsAuthedAppPermissions(oauth2Token) {
           if (null != textForDisclosure) {
             const obj2 = { style: items.permissionContainer, children: null };
             const obj3 = { style: items.permissionIcon, disclosure };
-            items = [hasOwnProperty(tmp(15284).DisclosureIcon, obj3), ];
+            items = [hasOwnProperty(tmp(14450).DisclosureIcon, obj3), ];
             const obj4 = { style: items.permissionText, variant: "text-sm/normal", children: textForDisclosure };
             items[1] = hasOwnProperty(tmp(4825).Text, obj4);
             obj2.children = items;

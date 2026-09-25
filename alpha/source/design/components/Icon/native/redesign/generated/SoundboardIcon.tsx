@@ -1,13 +1,13 @@
-// Module ID: 12877
-// Function ID: 12878
+// Module ID: 12006
+// Function ID: 12007
 // Name: SoundboardIcon
-// Dependencies: [19, 21, 576, 4525, 12878, 2]
+// Dependencies: [19, 21, 576, 4527, 12007, 2]
 // Exports: SoundboardIcon
 
-// Module 12877 (SoundboardIcon)
+// Module 12006 (SoundboardIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
-import _mod12878 from "module_12878" /* 12878 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
+import _mod12007 from "module_12007" /* 12007 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const SoundboardIcon = function SoundboardIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12878, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12007, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

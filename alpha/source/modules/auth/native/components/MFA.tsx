@@ -1,12 +1,12 @@
-// Module ID: 16393
-// Function ID: 16394
+// Module ID: 15573
+// Function ID: 15574
 // Name: components/MFA
-// Dependencies: [19, 502, 21, 12, 1484, 7275, 504, 6922, 16028, 1365, 576, 2]
+// Dependencies: [19, 502, 21, 12, 1484, 6358, 504, 6005, 15199, 1365, 576, 2]
 // Exports: default
 
-// Module 16393 (components/MFA)
+// Module 15573 (components/MFA)
 import _modDef12 from "module_12" /* 12 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6922 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -27,7 +27,7 @@ export default function ConnectedMFA() {
   ({ inContainer, isMultiAccount } = obj);
   const navigation = isMultiAccount(1484).useNavigation();
   if (inContainer) {
-    inContainer = navigation(7275)();
+    inContainer = navigation(6358)();
   }
   const obj2 = isMultiAccount(1484);
   const items = [AuthenticationStore];
@@ -60,7 +60,7 @@ export default function ConnectedMFA() {
       tmp13 = obj4;
     }
     obj3.headerRightContainerStyle = tmp13;
-    return jsx(tmp(16028).MFAModal, obj3);
+    return jsx(tmp(15199).MFAModal, obj3);
   } else {
     const tmpResult2 = tmp(1365);
     tmp4(576).space;

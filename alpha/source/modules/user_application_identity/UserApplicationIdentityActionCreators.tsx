@@ -1,11 +1,11 @@
-// Module ID: 9382
-// Function ID: 9383
+// Module ID: 8480
+// Function ID: 8481
 // Name: UserApplicationIdentityActionCreators
-// Dependencies: [5, 9381, 1074, 573, 1271, 504, 2]
+// Dependencies: [5, 8479, 1074, 573, 1271, 504, 2]
 
-// Module 9382 (UserApplicationIdentityActionCreators)
+// Module 8480 (UserApplicationIdentityActionCreators)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 9381 */;
+import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 8479 */;
 
 const require = fn;
 const Constants = fn(1074);

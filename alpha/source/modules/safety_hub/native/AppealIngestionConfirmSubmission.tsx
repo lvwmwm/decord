@@ -1,18 +1,18 @@
-// Module ID: 12246
-// Function ID: 12247
+// Module ID: 11368
+// Function ID: 11369
 // Name: AppealIngestionConfirmSubmission
-// Dependencies: [19, 17, 8781, 1074, 21, 4829, 504, 12223, 1115, 12229, 12247, 8769, 4825, 4796, 12245, 1980, 573, 12232, 12242, 2]
+// Dependencies: [19, 17, 7873, 1074, 21, 4829, 504, 11345, 1115, 11351, 11369, 7859, 4825, 4796, 11367, 1980, 573, 11354, 11364, 2]
 // Exports: default
 
-// Module 12246 (AppealIngestionConfirmSubmission)
+// Module 11368 (AppealIngestionConfirmSubmission)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8769 */;
-import useSafetyHubClassifications from "useSafetyHubClassifications" /* 12223 */;
-import AppealIngestionModal from "AppealIngestionModal" /* 12229 */;
-import AppealIngestionBreadcrumbsDefault from "AppealIngestionBreadcrumbs" /* 12247 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7859 */;
+import useSafetyHubClassifications from "useSafetyHubClassifications" /* 11345 */;
+import AppealIngestionModal from "AppealIngestionModal" /* 11351 */;
+import AppealIngestionBreadcrumbsDefault from "AppealIngestionBreadcrumbs" /* 11369 */;
 import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8781 */;
+import SafetyHubStore from "SafetyHubStore" /* 7873 */;
 
 const require = globalThis.__r;
 
@@ -66,16 +66,16 @@ export default function AppealIngestionConfirmSubmission(isDsaEligible) {
     let tmp11Result = flagged_content.length > 0;
     if (tmp11Result) {
       const obj5 = { flaggedContent: flagged_content };
-      tmp11Result = tmp11(tmp13(12232), obj5);
+      tmp11Result = tmp11(tmp13(11354), obj5);
     }
     const obj6 = { children: null };
     items5[2] = tmp11Result;
     const obj7 = { classification: safetyHubClassification.classification };
-    items5[3] = tmp11(tmp13(12242), obj7);
+    items5[3] = tmp11(tmp13(11364), obj7);
     obj3.children = items5;
     items3[1] = tmp10(tmp12, obj3);
     obj6.children = items3;
-    return tmp10(tmp2(12229).AppealIngestionModalScreen, obj6);
+    return tmp10(tmp2(11351).AppealIngestionModalScreen, obj6);
   } else {
     const obj8 = {
       variant: "heading-md/normal",

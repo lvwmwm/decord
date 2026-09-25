@@ -1,26 +1,26 @@
-// Module ID: 17511
-// Function ID: 17512
+// Module ID: 16731
+// Function ID: 16732
 // Name: ConnectionDeprecationBottomSheet
-// Dependencies: [19, 17, 5056, 5586, 2041, 21, 4829, 576, 4535, 1612, 504, 5588, 7498, 7495, 7515, 17512, 4796, 17514, 1980, 7482, 7483, 5271, 17501, 4825, 1115, 3134, 9196, 5273, 13345, 4533, 1397, 5275, 7505, 7501, 2]
+// Dependencies: [19, 17, 5056, 5588, 2041, 21, 4829, 576, 4537, 1612, 504, 5590, 6581, 6578, 6598, 16732, 4796, 16734, 1980, 6565, 6566, 5272, 16719, 4825, 1115, 3134, 8290, 5274, 12495, 4535, 1397, 5276, 6588, 6584, 2]
 // Exports: default, useShouldShowConnectionDeprecationBottomSheet
 
-// Module 17511 (ConnectionDeprecationBottomSheet)
+// Module 16731 (ConnectionDeprecationBottomSheet)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
-import themes from "themes" /* 4533 */;
+import themes from "themes" /* 4535 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import IconDefault from "Icon" /* 5275 */;
-import useStartAuthorizeDefault from "useStartAuthorize" /* 7498 */;
-import GameIcon from "GameIcon" /* 7505 */;
-import AccountLinkManager from "AccountLinkManager" /* 17512 */;
+import IconDefault from "Icon" /* 5276 */;
+import useStartAuthorizeDefault from "useStartAuthorize" /* 6581 */;
+import GameIcon from "GameIcon" /* 6588 */;
+import AccountLinkManager from "AccountLinkManager" /* 16732 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5056 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5586 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5588 */;
 
 const require = globalThis.__r;
 const GameIconDefault = GameIcon;
 
-const Icon = tmp2(5275);
+const Icon = tmp2(5276);
 require = fn;
 function ConnectionIcon(arg0) {
   ({ platform, theme } = arg0);
@@ -201,7 +201,7 @@ export const useShouldShowConnectionDeprecationBottomSheet = function useShouldS
       replacedBy = migrationData.replacedBy;
     }
   }
-  const getOrFetchApplication = deprecatedPlatformTypes(7501).useGetOrFetchApplication(replacedBy);
+  const getOrFetchApplication = deprecatedPlatformTypes(6584).useGetOrFetchApplication(replacedBy);
   const tmp5 = useStartAuthorizeDefault(getOrFetchApplication);
   ({ hasAlreadyLinked, canStartAuthorization } = tmp5);
   if (!fetchingConnections) {

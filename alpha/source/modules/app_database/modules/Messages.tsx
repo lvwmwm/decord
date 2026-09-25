@@ -1,21 +1,21 @@
-// Module ID: 7807
-// Function ID: 7808
+// Module ID: 6892
+// Function ID: 6893
 // Name: modules/Messages
-// Dependencies: [5, 32, 5582, 2044, 7808, 3, 5581, 2073, 7814, 7817, 2074, 2]
+// Dependencies: [5, 32, 5584, 2044, 6893, 3, 5583, 2073, 6899, 6902, 2074, 2]
 // Exports: isLikelyNotDelta
 
-// Module 7807 (modules/Messages)
+// Module 6892 (modules/Messages)
 import LoggerDefault from "Logger" /* 3 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2073 */;
 import _mod2074 from "module_2074" /* 2074 */;
-import requireSortedDescending from "requireSortedDescending" /* 5581 */;
-import isReadableChannel from "isReadableChannel" /* 7814 */;
-import KvMessage2 from "KvMessage" /* 7817 */;
+import requireSortedDescending from "requireSortedDescending" /* 5583 */;
+import isReadableChannel from "isReadableChannel" /* 6899 */;
+import KvMessage2 from "KvMessage" /* 6902 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5582 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5584 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import SaveableChannelsStore from "SaveableChannelsStore" /* 7808 */;
+import SaveableChannelsStore from "SaveableChannelsStore" /* 6893 */;
 
 require = fn;
 let closure_8 = new LoggerDefault("Messages");

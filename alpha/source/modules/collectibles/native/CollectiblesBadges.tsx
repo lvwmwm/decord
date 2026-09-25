@@ -1,16 +1,16 @@
-// Module ID: 9191
-// Function ID: 9192
+// Module ID: 8285
+// Function ID: 8286
 // Name: CollectiblesBadges
-// Dependencies: [19, 17, 1374, 21, 4829, 576, 4825, 1115, 9192, 5401, 9020, 2]
+// Dependencies: [19, 17, 1374, 21, 4829, 576, 4825, 1115, 8286, 5402, 8114, 2]
 // Exports: IconBadgePill, IconTextBadge, LimitedTimeBadge, LockBadge, NewBadge, PremiumBadge
 
-// Module 9191 (CollectiblesBadges)
+// Module 8285 (CollectiblesBadges)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import LockIcon from "LockIcon" /* 5401 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9020 */;
-import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9192 */;
+import LockIcon from "LockIcon" /* 5402 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8114 */;
+import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 8286 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

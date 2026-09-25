@@ -1,10 +1,10 @@
-// Module ID: 12160
-// Function ID: 12161
+// Module ID: 11282
+// Function ID: 11283
 // Name: MessageGameIconActionSheet
-// Dependencies: [19, 17, 5056, 1074, 21, 4829, 1364, 576, 504, 7483, 1177, 4825, 1115, 2110, 2]
+// Dependencies: [19, 17, 5056, 1074, 21, 4829, 1364, 576, 504, 6566, 1177, 4825, 1115, 2110, 2]
 // Exports: default
 
-// Module 12160 (MessageGameIconActionSheet)
+// Module 11282 (MessageGameIconActionSheet)
 import nativeDefault from "native" /* 576 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
 import noop from "module_19" /* 19 */;
@@ -68,7 +68,7 @@ export default function MessageGameIconActionSheet(applicationId) {
     obj3.children = items1;
     obj2.children = closure_7(View, obj3);
     obj5.children = closure_6(View, obj2);
-    tmp5Result = tmp5(tmp2(7483).BottomSheet, obj5);
+    tmp5Result = tmp5(tmp2(6566).BottomSheet, obj5);
   }
   return tmp5Result;
 };

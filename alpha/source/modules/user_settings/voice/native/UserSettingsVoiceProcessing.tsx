@@ -1,25 +1,25 @@
-// Module ID: 10339
-// Function ID: 10340
+// Module ID: 9437
+// Function ID: 9438
 // Name: UserSettingsVoiceProcessing
-// Dependencies: [19, 17, 1992, 21, 4829, 576, 504, 10340, 10341, 9995, 5990, 1115, 5993, 4825, 10344, 10326, 7533, 2]
+// Dependencies: [19, 17, 1992, 21, 4829, 576, 504, 9438, 9439, 9093, 5992, 1115, 5995, 4825, 9442, 9423, 6616, 2]
 // Exports: default
 
-// Module 10339 (UserSettingsVoiceProcessing)
+// Module 9437 (UserSettingsVoiceProcessing)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9995 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 10340 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 10341 */;
-import KrispLogoDefault from "KrispLogo" /* 10344 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9093 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 9438 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 9439 */;
+import KrispLogoDefault from "KrispLogo" /* 9442 */;
 import noop from "module_19" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 
 const util = EUNgko(1115);
 const Text_Text = EUNgko(4825);
-const TableRadioGroup = EUNgko(5990);
-const TableRadioRow = EUNgko(5993);
-const TableSwitchRow = EUNgko(7533);
-const UserSettingsVoice = EUNgko(10326);
+const TableRadioGroup = EUNgko(5992);
+const TableRadioRow = EUNgko(5995);
+const TableSwitchRow = EUNgko(6616);
+const UserSettingsVoice = EUNgko(9423);
 require = fn;
 class VoiceProcessingOptions {
   constructor() {
@@ -163,7 +163,7 @@ export default function UserSettingsVoiceProcessing() {
     obj5.onValueChange = function onValueChange(vadUseKrisp) {
       return AudioActionCreatorsDefault.setMode(require, { vadUseKrisp });
     };
-    advancedVoiceActivitySupported = closure_5(tmp(7533).TableSwitchRow, obj5);
+    advancedVoiceActivitySupported = closure_5(tmp(6616).TableSwitchRow, obj5);
   }
   const obj6 = { children: null };
   items2[1] = advancedVoiceActivitySupported;

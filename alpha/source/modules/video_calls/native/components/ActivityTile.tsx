@@ -1,15 +1,15 @@
-// Module ID: 9802
-// Function ID: 9803
+// Module ID: 8900
+// Function ID: 8901
 // Name: ActivityTile
-// Dependencies: [5, 32, 19, 17, 2043, 1372, 1074, 1181, 2004, 21, 1177, 4829, 576, 504, 1370, 7501, 4981, 4673, 9803, 7495, 7515, 9789, 1115, 9719, 9720, 9805, 9718, 5427, 9806, 9823, 4825, 5274, 4535, 2]
+// Dependencies: [5, 32, 19, 17, 2043, 1372, 1074, 1181, 2004, 21, 1177, 4829, 576, 504, 1370, 6584, 4981, 4675, 8901, 6578, 6598, 8887, 1115, 8817, 8818, 8903, 8816, 5428, 8904, 8921, 4825, 5275, 4537, 2]
 // Exports: default
 
-// Module 9802 (ActivityTile)
+// Module 8900 (ActivityTile)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import native2 from "native" /* 4535 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 9718 */;
+import native2 from "native" /* 4537 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 8816 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -68,7 +68,7 @@ function ActivityTileInner(participant) {
               const obj4 = { applicationId: tmp23.applicationId, activityChannelId: id.id, locationObject: _location.location, analyticsLocations };
               v1 = 1;
               dependencyMap = 1;
-              const obj5 = { value: v1(9720)(obj4), done: false };
+              const obj5 = { value: v1(8818)(obj4), done: false };
               return obj5;
             } else {
               dependencyMap = 3;
@@ -79,8 +79,8 @@ function ActivityTileInner(participant) {
           dependencyMap = 3;
           throw value;
         } else if (arg0 !== 2) {
-          const result = tmp2(9805).setOrientationLockState(closure_128_3);
-          const obj = tmp2(9805);
+          const result = tmp2(8903).setOrientationLockState(closure_128_3);
+          const obj = tmp2(8903);
         }
         dependencyMap = 3;
         const obj6 = { value, done: true };

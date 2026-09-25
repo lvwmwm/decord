@@ -1,12 +1,12 @@
-// Module ID: 16874
-// Function ID: 16875
+// Module ID: 16060
+// Function ID: 16061
 // Name: ForYouLoadMore
-// Dependencies: [19, 17, 7963, 21, 4829, 563, 5273, 1115, 2]
+// Dependencies: [19, 17, 7048, 21, 4829, 563, 5274, 1115, 2]
 // Exports: ForYouLoadMore
 
-// Module 16874 (ForYouLoadMore)
+// Module 16060 (ForYouLoadMore)
 import noop from "module_19" /* 19 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7963 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7048 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
@@ -28,7 +28,7 @@ export const ForYouLoadMore = function ForYouLoadMore(onPressLoad) {
     const intl = tmp2(1115).intl;
     obj3.text = intl.string(tmp2(1115).t["Q/LSXp"]);
     obj3.onPress = onPressLoad.onPressLoad;
-    tmp4Result = tmp4(tmp2(5273).Button, obj3);
+    tmp4Result = tmp4(tmp2(5274).Button, obj3);
   }
   obj2.children = tmp4Result;
   return <React3 style={tmp.container}>{null}</React3>;

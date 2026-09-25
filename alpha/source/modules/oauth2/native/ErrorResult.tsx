@@ -1,14 +1,14 @@
-// Module ID: 9403
-// Function ID: 9404
-// Dependencies: [19, 17, 21, 4829, 576, 7456, 9404, 4825, 1115, 5273, 5032, 2]
+// Module ID: 8501
+// Function ID: 8502
+// Dependencies: [19, 17, 21, 4829, 576, 6539, 8502, 4825, 1115, 5274, 5032, 2]
 // Exports: default
 
-// Module 9403
+// Module 8501
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7456 */;
-import _modDef9404 from "module_9404" /* 9404 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6539 */;
+import _modDef8502 from "module_8502" /* 8502 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -29,7 +29,7 @@ export default function ErrorResult(error) {
   const tmp = closure_7();
   const obj = { bottom: true, style: tmp.container, children: null };
   const obj2 = { style: tmp.inner, children: null };
-  const items = [hasOwnProperty(React3, { source: _modDef9404, style: tmp.image }), ];
+  const items = [hasOwnProperty(React3, { source: _modDef8502, style: tmp.image }), ];
   const obj4 = { style: tmp.text, variant: "text-md/medium", children: null };
   if (error == null) {
     const intl = tmp3(1115).intl;
@@ -47,7 +47,7 @@ export default function ErrorResult(error) {
     obj5.onPress = function onPress() {
       return ModalActionCreatorsDefault.pop();
     };
-    tmp6Result = tmp6(tmp3(5273).Button, obj5);
+    tmp6Result = tmp6(tmp3(5274).Button, obj5);
   }
   items1[1] = tmp6Result;
   obj.children = items1;

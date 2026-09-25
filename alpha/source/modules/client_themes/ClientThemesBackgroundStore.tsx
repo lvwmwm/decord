@@ -1,16 +1,16 @@
-// Module ID: 4648
-// Function ID: 4649
+// Module ID: 4650
+// Function ID: 4651
 // Name: ClientThemesBackgroundStore
-// Dependencies: [1183, 1182, 1184, 1220, 2048, 2044, 1372, 1229, 1185, 4649, 2028, 4673, 4483, 2020, 4676, 4677, 504, 1228, 573, 2]
+// Dependencies: [1183, 1182, 1184, 1220, 2048, 2044, 1372, 1229, 1185, 4651, 2028, 4675, 4485, 2020, 4678, 4679, 504, 1228, 573, 2]
 
-// Module 4648 (ClientThemesBackgroundStore)
+// Module 4650 (ClientThemesBackgroundStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1228 */;
 import UserSettings from "UserSettings" /* 2020 */;
 import dismissible_content from "dismissible_content" /* 2028 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4483 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4649 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4485 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4651 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
@@ -64,12 +64,12 @@ function handleUserSettingsProtoStoreUpdate() {
     result = null == backgroundGradientPresetId;
   }
   if (!result) {
-    result = tmp(4676).isPerModeThemingActive();
-    const tmpResult = tmp(4676);
+    result = tmp(4678).isPerModeThemingActive();
+    const tmpResult = tmp(4678);
   }
   if (!result) {
-    tmp(4677).setUseSystemTheme(SystemThemeState.OFF);
-    const tmpResult2 = tmp(4677);
+    tmp(4679).setUseSystemTheme(SystemThemeState.OFF);
+    const tmpResult2 = tmp(4679);
   }
   if (null != backgroundGradientPresetId) {
     let tmp10 = null == tmp9;
@@ -238,7 +238,7 @@ const clientThemesBackgroundStore = new ClientThemesBackgroundStore(DispatcherDe
               c15 = true;
             }
           }
-          tmp6Result = tmp6(4673);
+          tmp6Result = tmp6(4675);
         }
         obj2 = DismissibleContentUnsafeUtils;
         tmp6 = require;

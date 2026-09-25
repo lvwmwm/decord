@@ -1,9 +1,9 @@
-// Module ID: 8710
-// Function ID: 8711
+// Module ID: 7800
+// Function ID: 7801
 // Name: MessagePreviewStore
 // Dependencies: [5051, 504, 12, 573, 2]
 
-// Module 8710 (MessagePreviewStore)
+// Module 7800 (MessagePreviewStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

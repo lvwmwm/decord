@@ -1,13 +1,13 @@
-// Module ID: 11499
-// Function ID: 11500
+// Module ID: 10597
+// Function ID: 10598
 // Name: useSafeAreaAvoidingInputs
-// Dependencies: [5, 19, 1478, 576, 11500, 5885, 2]
+// Dependencies: [5, 19, 1478, 576, 10598, 5887, 2]
 // Exports: default
 
-// Module 11499 (useSafeAreaAvoidingInputs)
+// Module 10597 (useSafeAreaAvoidingInputs)
 import nativeDefault from "native" /* 576 */;
-import useKeyboardDuration from "useKeyboardDuration" /* 5885 */;
-import ViewMeasureUtils from "ViewMeasureUtils" /* 11500 */;
+import useKeyboardDuration from "useKeyboardDuration" /* 5887 */;
+import ViewMeasureUtils from "ViewMeasureUtils" /* 10598 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -160,7 +160,7 @@ export default function useSafeAreaAvoidingInputs(insets) {
               if (null != current2) {
                 dependencyMap = 1;
                 c3 = 1;
-                const obj4 = { value: tmp2(11500).measureViewRefInWindow(found.ref), done: false };
+                const obj4 = { value: tmp2(10598).measureViewRefInWindow(found.ref), done: false };
                 return obj4;
               }
             }
@@ -177,7 +177,7 @@ export default function useSafeAreaAvoidingInputs(insets) {
             closure_128_2 = value;
             dependencyMap = 2;
             c3 = 1;
-            const obj6 = { value: tmp2(11500).measureViewRefInView(closure_128_1.ref, closure_128_0), done: false };
+            const obj6 = { value: tmp2(10598).measureViewRefInView(closure_128_1.ref, closure_128_0), done: false };
             return obj6;
           }
         } else {
@@ -195,7 +195,7 @@ export default function useSafeAreaAvoidingInputs(insets) {
                 if (null != closure_128_3) {
                   dependencyMap = 3;
                   c3 = 1;
-                  const obj9 = { value: tmp2(11500).measureViewInWindow(closure_128_0), done: false };
+                  const obj9 = { value: tmp2(10598).measureViewInWindow(closure_128_0), done: false };
                   return obj9;
                 }
               }

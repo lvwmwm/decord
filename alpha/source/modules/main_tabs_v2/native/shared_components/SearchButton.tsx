@@ -1,14 +1,14 @@
-// Module ID: 12719
-// Function ID: 12720
+// Module ID: 11845
+// Function ID: 11846
 // Name: SearchButton
-// Dependencies: [19, 17, 21, 4829, 576, 7384, 4825, 1115, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 6467, 4825, 1115, 2]
 // Exports: SearchButtonContent
 
-// Module 12719 (SearchButton)
+// Module 11845 (SearchButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7384 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6467 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

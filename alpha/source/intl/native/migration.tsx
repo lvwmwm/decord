@@ -1,13 +1,13 @@
-// Module ID: 14559
-// Function ID: 14560
+// Module ID: 13720
+// Function ID: 13721
 // Name: migration
-// Dependencies: [19, 21, 4829, 576, 4545, 4520, 1929, 1177, 2]
+// Dependencies: [19, 21, 4829, 576, 4547, 4522, 1929, 1177, 2]
 // Exports: IntlLink
 
-// Module 14559 (migration)
+// Module 13720 (migration)
 import nativeDefault from "native" /* 576 */;
 import _modDef1929 from "module_1929" /* 1929 */;
-import LinkingDefault from "Linking" /* 4520 */;
+import LinkingDefault from "Linking" /* 4522 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -50,6 +50,6 @@ export const IntlLink = function IntlLink(children) {
     }
   }
   const tmp = target;
-  const tmp3 = closure_5(noop.useContext(target(4545).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
-  return jsx(tmp(1177).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: closure_5(noop.useContext(target(4545).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: children.children });
+  const tmp3 = closure_5(noop.useContext(target(4547).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  return jsx(tmp(1177).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: closure_5(noop.useContext(target(4547).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: children.children });
 };

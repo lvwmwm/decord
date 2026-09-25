@@ -1,10 +1,10 @@
-// Module ID: 16403
-// Function ID: 16404
+// Module ID: 15583
+// Function ID: 15584
 // Name: usePromoEmailOptInLabel
-// Dependencies: [16404, 1115, 2]
+// Dependencies: [15584, 1115, 2]
 // Exports: usePromoEmailOptInLabel
 
-// Module 16403 (usePromoEmailOptInLabel)
+// Module 15583 (usePromoEmailOptInLabel)
 import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;
 

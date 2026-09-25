@@ -1,10 +1,10 @@
-// Module ID: 9624
-// Function ID: 9625
+// Module ID: 8722
+// Function ID: 8723
 // Name: WebhookGuildChannelSelector
-// Dependencies: [5, 32, 19, 17, 2048, 4474, 1372, 21, 4829, 576, 4796, 9623, 1980, 1115, 4982, 9417, 4825, 1177, 8951, 2]
+// Dependencies: [5, 32, 19, 17, 2048, 4476, 1372, 21, 4829, 576, 4796, 8721, 1980, 1115, 4982, 8515, 4825, 1177, 8045, 2]
 // Exports: default
 
-// Module 9624 (WebhookGuildChannelSelector)
+// Module 8722 (WebhookGuildChannelSelector)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
@@ -12,7 +12,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -64,8 +64,8 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
         selectedChannelId(onChannelChange[10]).hideActionSheet(WebhookGuildChannelSelector);
       };
       obj2.selectedItem = selectedChannelId;
-      obj.openLazy(asyncRequireImpl(9623, dependencyMap.paths), WebhookGuildChannelSelector, obj2);
-      const tmp7 = asyncRequireImpl(9623, dependencyMap.paths);
+      obj.openLazy(asyncRequireImpl(8721, dependencyMap.paths), WebhookGuildChannelSelector, obj2);
+      const tmp7 = asyncRequireImpl(8721, dependencyMap.paths);
     }
   }, items);
   const effect = noop.useEffect(() => {

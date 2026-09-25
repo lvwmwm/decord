@@ -1,17 +1,17 @@
-// Module ID: 17220
-// Function ID: 17221
+// Module ID: 16435
+// Function ID: 16436
 // Name: SearchListRow
-// Dependencies: [19, 17, 8209, 21, 4829, 576, 5427, 4825, 2]
+// Dependencies: [19, 17, 7298, 21, 4829, 576, 5428, 4825, 2]
 
-// Module 17220 (SearchListRow)
+// Module 16435 (SearchListRow)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import Pressables from "Pressables" /* 5427 */;
+import Pressables from "Pressables" /* 5428 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const paddingVertical = fn(8209).SEARCH_ROW_TAP_STATE_PADDING;
+const paddingVertical = fn(7298).SEARCH_ROW_TAP_STATE_PADDING;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const createStyles = fn(4829);

@@ -1,20 +1,20 @@
-// Module ID: 13903
-// Function ID: 13904
+// Module ID: 13060
+// Function ID: 13061
 // Name: PremiumSubscriptionPricingUpsell
-// Dependencies: [32, 19, 17, 2111, 1372, 4488, 4489, 7570, 1074, 1374, 21, 4829, 504, 4483, 13769, 573, 7749, 7573, 4825, 1364, 7568, 7567, 1115, 1881, 2]
+// Dependencies: [32, 19, 17, 2111, 1372, 4490, 4491, 6653, 1074, 1374, 21, 4829, 504, 4485, 12923, 573, 6834, 6656, 4825, 1364, 6651, 6650, 1115, 1881, 2]
 // Exports: default
 
-// Module 13903 (PremiumSubscriptionPricingUpsell)
+// Module 13060 (PremiumSubscriptionPricingUpsell)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 13769 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 12923 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2111 */;
 import UserStore from "UserStore" /* 1372 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4488 */;
-import SubscriptionStore from "SubscriptionStore" /* 4489 */;
-import IAPStore from "IAPStore" /* 7570 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4490 */;
+import SubscriptionStore from "SubscriptionStore" /* 4491 */;
+import IAPStore from "IAPStore" /* 6653 */;
 
 require = fn;
 function PricingSubheadingCopy() {

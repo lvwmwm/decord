@@ -1,17 +1,17 @@
-// Module ID: 15100
-// Function ID: 15101
+// Module ID: 14266
+// Function ID: 14267
 // Name: AccountAgeGroupNonAdultSetting
-// Dependencies: [8323, 8761, 8763, 5041, 1115, 5728, 15053, 11811, 2]
+// Dependencies: [7412, 7851, 7853, 5041, 1115, 5730, 14219, 10993, 2]
 
-// Module 15100 (AccountAgeGroupNonAdultSetting)
+// Module 14266 (AccountAgeGroupNonAdultSetting)
 import util from "util" /* 1115 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 5041 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5728 */;
-import SettingsConstants from "SettingsConstants" /* 8323 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8761 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8763 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 15053 */;
-import SettingBuilders from "SettingBuilders" /* 11811 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5730 */;
+import SettingsConstants from "SettingsConstants" /* 7412 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7851 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7853 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14219 */;
+import SettingBuilders from "SettingBuilders" /* 10993 */;
 import size from "module_2" /* 2 */;
 
 const pressable = SettingBuilders.createPressable({

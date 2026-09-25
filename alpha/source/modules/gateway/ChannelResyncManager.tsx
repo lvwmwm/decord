@@ -1,21 +1,21 @@
-// Module ID: 17855
-// Function ID: 17856
+// Module ID: 17081
+// Function ID: 17082
 // Name: ChannelResyncManager
-// Dependencies: [5, 502, 2044, 5193, 2066, 5582, 1074, 2051, 3, 1091, 7451, 1241, 573, 7975, 14035, 1385, 1255, 2]
+// Dependencies: [5, 502, 2044, 5194, 2066, 5584, 1074, 2051, 3, 1091, 6534, 1241, 573, 7060, 13196, 1385, 1255, 2]
 
-// Module 17855 (ChannelResyncManager)
+// Module 17081 (ChannelResyncManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7975 */;
+import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7060 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5193 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5194 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5582 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7451 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5584 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6534 */;
 
 require = fn;
 function handleGuildCreate(guild) {

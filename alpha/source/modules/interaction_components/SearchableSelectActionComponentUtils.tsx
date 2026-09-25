@@ -1,21 +1,21 @@
-// Module ID: 8479
-// Function ID: 8480
+// Module ID: 7569
+// Function ID: 7570
 // Name: SearchableSelectActionComponentUtils
-// Dependencies: [2044, 2107, 2101, 2066, 4474, 1372, 8472, 1978, 5747, 4981, 5060, 4982, 8480, 1370, 2]
+// Dependencies: [2044, 2107, 2101, 2066, 4476, 1372, 7562, 1978, 5749, 4981, 5060, 4982, 7570, 1370, 2]
 // Exports: getInitialSnowflakeSelectOptions, getSnowflakeSelectDefaultValues, queryChannels, queryMentionables
 
-// Module 8479 (SearchableSelectActionComponentUtils)
+// Module 7569 (SearchableSelectActionComponentUtils)
 import NicknameUtilsDefault from "NicknameUtils" /* 4981 */;
 import InteractionComponentTypes from "InteractionComponentTypes" /* 5060 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5747 */;
-import SnowflakeSelectDefaultValueTypes from "SnowflakeSelectDefaultValueTypes" /* 8480 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5749 */;
+import SnowflakeSelectDefaultValueTypes from "SnowflakeSelectDefaultValueTypes" /* 7570 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildMemberStore from "GuildMemberStore" /* 2107 */;
 import GuildRoleStore from "GuildRoleStore" /* 2101 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8472 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 7562 */;
 
 const require = globalThis.__r;
 
@@ -33,10 +33,10 @@ export const queryMentionables = function queryMentionables(type, query, channel
     const tmp2 = type === require("Server").ComponentType.USER_SELECT || type === require("Server").ComponentType.MENTIONABLE_SELECT;
     const tmp3 = type === require("Server").ComponentType.ROLE_SELECT || type === require("Server").ComponentType.MENTIONABLE_SELECT;
     let obj2 = { query, channel, canMentionEveryone: false, canMentionHere: false, canMentionUsers: tmp2, canMentionRoles: tmp3, includeAllGuildUsers: true, includeNonMentionableRoles: true, checkRecentlyTalkedOnEmptyQuery: false, limit: 15 };
-    const obj = channel(5747);
-    ({ users, roles } = channel(5747).queryMentionResults(obj2));
+    const obj = channel(5749);
+    ({ users, roles } = channel(5749).queryMentionResults(obj2));
     const items = [];
-    const queryMentionResultsResult = channel(5747).queryMentionResults(obj2);
+    const queryMentionResultsResult = channel(5749).queryMentionResults(obj2);
     HermesBuiltin.arraySpread(roles.map((id) => ({ type: channelId(dependencyMap[10]).SelectOptionType.ROLE, value: id.id, label: id.name })), HermesBuiltin.arraySpread(users.map((user) => {
       let username = NicknameUtilsDefault.getNickname(channel.getGuildId(), closure_0, user.user);
       const obj2 = { type: InteractionComponentTypes.SelectOptionType.USER, value: user.user.id, label: null };
@@ -100,7 +100,7 @@ export const getInitialSnowflakeSelectOptions = function getInitialSnowflakeSele
           obj2.label = nick;
           return obj2;
         }
-      } else if (tmp(8480).SnowflakeSelectDefaultValueTypes.ROLE === type) {
+      } else if (tmp(7570).SnowflakeSelectDefaultValueTypes.ROLE === type) {
         if (null == closure_1) {
           return null;
         } else {
@@ -113,7 +113,7 @@ export const getInitialSnowflakeSelectOptions = function getInitialSnowflakeSele
           }
           return tmp12;
         }
-      } else if (tmp(8480).SnowflakeSelectDefaultValueTypes.CHANNEL === type) {
+      } else if (tmp(7570).SnowflakeSelectDefaultValueTypes.CHANNEL === type) {
         if (null == closure_1) {
           return null;
         } else {
@@ -194,7 +194,7 @@ export const getSnowflakeSelectDefaultValues = function getSnowflakeSelectDefaul
           obj2.label = nick;
           return obj2;
         }
-      } else if (tmp(8480).SnowflakeSelectDefaultValueTypes.ROLE === type) {
+      } else if (tmp(7570).SnowflakeSelectDefaultValueTypes.ROLE === type) {
         if (null == closure_1) {
           return null;
         } else {
@@ -207,7 +207,7 @@ export const getSnowflakeSelectDefaultValues = function getSnowflakeSelectDefaul
           }
           return tmp12;
         }
-      } else if (tmp(8480).SnowflakeSelectDefaultValueTypes.CHANNEL === type) {
+      } else if (tmp(7570).SnowflakeSelectDefaultValueTypes.CHANNEL === type) {
         if (null == closure_1) {
           return null;
         } else {

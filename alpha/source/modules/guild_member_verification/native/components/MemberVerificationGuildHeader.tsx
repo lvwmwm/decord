@@ -1,19 +1,19 @@
-// Module ID: 5887
-// Function ID: 5888
+// Module ID: 5889
+// Function ID: 5890
 // Name: MemberVerificationGuildHeader
-// Dependencies: [19, 17, 5878, 21, 4829, 576, 1397, 5888, 1612, 4561, 5285, 5889, 5895, 4825, 1115, 2]
+// Dependencies: [19, 17, 5880, 21, 4829, 576, 1397, 5890, 1612, 4563, 5286, 5891, 5897, 4825, 1115, 2]
 // Exports: default
 
-// Module 5887 (MemberVerificationGuildHeader)
+// Module 5889 (MemberVerificationGuildHeader)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const MemberVerificationFormConstants = fn(5878);
+const MemberVerificationFormConstants = fn(5880);
 ({ AVATAR_BORDER_WIDTH, AVATAR_SIZE } = MemberVerificationFormConstants);
 const useBannerHeight = MemberVerificationFormConstants.useBannerHeight;
 const jsxProd = fn(21);
@@ -49,7 +49,7 @@ export default function MemberVerificationGuildHeader(hasManualFormFields) {
     let obj = require("AvatarUtils");
   } else {
     tmp3 = top;
-    guildBannerSource = require("module_5888");
+    guildBannerSource = require("module_5890");
     tmp5 = importDefault;
   }
   const tmp8 = useBannerHeight();

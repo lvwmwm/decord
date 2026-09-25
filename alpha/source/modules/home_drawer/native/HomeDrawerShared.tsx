@@ -1,10 +1,10 @@
-// Module ID: 16732
-// Function ID: 16733
+// Module ID: 15916
+// Function ID: 15917
 // Name: HomeDrawerShared
 // Dependencies: [19, 17, 21, 4829, 2]
 // Exports: HomeDrawerSharedItem
 
-// Module 16732 (HomeDrawerShared)
+// Module 15916 (HomeDrawerShared)
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;

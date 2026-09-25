@@ -1,12 +1,12 @@
-// Module ID: 11034
-// Function ID: 11035
+// Module ID: 10138
+// Function ID: 10139
 // Name: premium_tab_tooltip
-// Dependencies: [32, 1187, 11028, 11018, 2]
+// Dependencies: [32, 1187, 10132, 10122, 2]
 
-// Module 11034 (premium_tab_tooltip)
+// Module 10138 (premium_tab_tooltip)
 import _mod1187 from "module_1187" /* 1187 */;
-import localized_string from "localized_string" /* 11018 */;
-import theme_aware_asset from "theme_aware_asset" /* 11028 */;
+import localized_string from "localized_string" /* 10122 */;
+import theme_aware_asset from "theme_aware_asset" /* 10132 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

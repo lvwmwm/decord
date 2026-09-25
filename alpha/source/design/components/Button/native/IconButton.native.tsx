@@ -1,13 +1,13 @@
-// Module ID: 8269
-// Function ID: 8270
+// Module ID: 7358
+// Function ID: 7359
 // Name: IconButton
-// Dependencies: [19, 21, 4829, 576, 5281, 8270, 4825, 2]
+// Dependencies: [19, 21, 4829, 576, 5282, 7359, 4825, 2]
 
-// Module 8269 (IconButton)
+// Module 7358 (IconButton)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import Button_BaseButton from "Button/BaseButton" /* 5281 */;
-import BaseIconButton from "BaseIconButton" /* 8270 */;
+import Button_BaseButton from "Button/BaseButton" /* 5282 */;
+import BaseIconButton from "BaseIconButton" /* 7359 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

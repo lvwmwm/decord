@@ -1,9 +1,9 @@
-// Module ID: 7781
-// Function ID: 7782
+// Module ID: 6866
+// Function ID: 6867
 // Name: DiscountRecord
 // Dependencies: [1387, 1374, 2]
 
-// Module 7781 (DiscountRecord)
+// Module 6866 (DiscountRecord)
 import Record from "Record" /* 1387 */;
 
 const PremiumConstants = fn(1374);

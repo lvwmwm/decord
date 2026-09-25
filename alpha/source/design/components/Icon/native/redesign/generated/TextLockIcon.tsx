@@ -1,13 +1,13 @@
-// Module ID: 5384
-// Function ID: 5385
+// Module ID: 5385
+// Function ID: 5386
 // Name: TextLockIcon
-// Dependencies: [19, 21, 576, 4525, 5353, 2]
+// Dependencies: [19, 21, 576, 4527, 5354, 2]
 // Exports: TextLockIcon
 
-// Module 5384 (TextLockIcon)
+// Module 5385 (TextLockIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
-import _mod5353 from "module_5353" /* 5353 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
+import _mod5354 from "module_5354" /* 5354 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const TextLockIcon = function TextLockIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5353, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5354, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

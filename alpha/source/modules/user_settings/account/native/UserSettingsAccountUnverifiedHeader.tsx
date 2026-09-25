@@ -1,14 +1,14 @@
-// Module ID: 7331
-// Function ID: 7332
+// Module ID: 6414
+// Function ID: 6415
 // Name: UserSettingsAccountUnverifiedHeader
-// Dependencies: [19, 1372, 21, 4829, 576, 5926, 1115, 504, 5427, 4825, 2]
+// Dependencies: [19, 1372, 21, 4829, 576, 5928, 1115, 504, 5428, 4825, 2]
 // Exports: default
 
-// Module 7331 (UserSettingsAccountUnverifiedHeader)
+// Module 6414 (UserSettingsAccountUnverifiedHeader)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5926 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5928 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -55,7 +55,7 @@ export default function UserSettingsAccountUnverifiedHeader() {
     const obj4 = { style: tmp.accountWarningButton, variant: "text-xs/medium", color: "text-overlay-light", children: tmp4.button };
     items1[1] = React4(tmp2(4825).Text, obj4);
     obj2.children = items1;
-    tmp5 = hasOwnProperty(tmp2(5427).PressableOpacity, obj2);
+    tmp5 = hasOwnProperty(tmp2(5428).PressableOpacity, obj2);
   }
   return tmp5;
 };

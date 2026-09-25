@@ -1,15 +1,15 @@
-// Module ID: 13523
-// Function ID: 13524
+// Module ID: 12675
+// Function ID: 12676
 // Name: FriendRequestNote
-// Dependencies: [32, 19, 17, 4474, 1074, 21, 4829, 576, 13524, 504, 13525, 4825, 5273, 7301, 1115, 2]
+// Dependencies: [32, 19, 17, 4476, 1074, 21, 4829, 576, 12676, 504, 12677, 4825, 5274, 6384, 1115, 2]
 // Exports: default
 
-// Module 13523 (FriendRequestNote)
+// Module 12675 (FriendRequestNote)
 import nativeDefault from "native" /* 576 */;
-import PeopleListTracking from "PeopleListTracking" /* 13525 */;
+import PeopleListTracking from "PeopleListTracking" /* 12677 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 
 const require = globalThis.__r;
 

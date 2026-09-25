@@ -1,16 +1,16 @@
-// Module ID: 9625
-// Function ID: 9626
+// Module ID: 8723
+// Function ID: 8724
 // Name: BotPermissions
-// Dependencies: [32, 19, 17, 21, 4829, 576, 4469, 1086, 9420, 9626, 5271, 5985, 4825, 1115, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 4471, 1086, 8518, 8724, 5272, 5987, 4825, 1115, 2]
 // Exports: default
 
-// Module 9625 (BotPermissions)
+// Module 8723 (BotPermissions)
 import nativeDefault from "native" /* 576 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import Stack_Stack from "Stack/Stack" /* 5271 */;
-import XSmallIcon from "XSmallIcon" /* 5985 */;
-import permissions from "permissions" /* 9420 */;
+import Stack_Stack from "Stack/Stack" /* 5272 */;
+import XSmallIcon from "XSmallIcon" /* 5987 */;
+import permissions from "permissions" /* 8518 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

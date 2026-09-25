@@ -1,12 +1,12 @@
-// Module ID: 12527
-// Function ID: 12528
+// Module ID: 11653
+// Function ID: 11654
 // Name: AppLauncherUserListActionSheet
-// Dependencies: [19, 1483, 21, 4829, 4796, 7851, 1177, 12510, 1115, 12508, 12528, 11926, 12509, 5910, 2]
+// Dependencies: [19, 1483, 21, 4829, 4796, 6936, 1177, 11636, 1115, 11634, 11654, 11069, 11635, 5912, 2]
 // Exports: default
 
-// Module 12527 (AppLauncherUserListActionSheet)
+// Module 11653 (AppLauncherUserListActionSheet)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import TableRow from "TableRow" /* 5910 */;
+import TableRow from "TableRow" /* 5912 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,7 +23,7 @@ function EmptyStateWithSnowflakeQuery(onPressRow) {
   };
   const items = [onPressRow.query];
   obj.data = items;
-  return jsx(onPressRow(12509).AppLauncherList, {
+  return jsx(onPressRow(11635).AppLauncherList, {
     contentContainerStyle: closure_6().emptyState,
     data: null,
     renderItem(label) {

@@ -1,13 +1,13 @@
-// Module ID: 13411
-// Function ID: 13412
+// Module ID: 12561
+// Function ID: 12562
 // Name: UserProfileActivityTimebar
-// Dependencies: [19, 17, 21, 4829, 576, 13412, 4825, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 12562, 4825, 2]
 // Exports: default
 
-// Module 13411 (UserProfileActivityTimebar)
+// Module 12561 (UserProfileActivityTimebar)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import useActivityTimer from "useActivityTimer" /* 13412 */;
+import useActivityTimer from "useActivityTimer" /* 12562 */;
 import noop from "module_19" /* 19 */;
 
 const useActivityTimerDefault = useActivityTimer;

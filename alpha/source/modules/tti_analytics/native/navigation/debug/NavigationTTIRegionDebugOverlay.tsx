@@ -1,15 +1,15 @@
-// Module ID: 16969
-// Function ID: 16970
+// Module ID: 16159
+// Function ID: 16160
 // Name: NavigationTTIRegionDebugOverlay
-// Dependencies: [32, 19, 17, 21, 4829, 576, 16963, 16965, 16967, 16966, 4825, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 16153, 16155, 16157, 16156, 4825, 2]
 // Exports: NavigationTTIRegionDebugOverlay
 
-// Module 16969 (NavigationTTIRegionDebugOverlay)
+// Module 16159 (NavigationTTIRegionDebugOverlay)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 16965 */;
-import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 16966 */;
-import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 16967 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 16155 */;
+import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 16156 */;
+import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 16157 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -148,16 +148,16 @@ export const NavigationTTIRegionDebugOverlay = function NavigationTTIRegionDebug
   noop = undefined;
   closure_5 = undefined;
   const tmp = closure_10();
-  const navTTISurface = name(16963).useNavTTISurface();
-  let obj = name(16963);
+  const navTTISurface = name(16153).useNavTTISurface();
+  let obj = name(16153);
   const tmp2 = name;
   [tmp6, c2] = noop.useState(false);
-  const syncExternalStore = noop.useSyncExternalStore(name(16966).subscribeNavigationTTIDebugFreezeTarget, name(16966).getNavigationTTIDebugFreezeTarget, name(16966).getNavigationTTIDebugFreezeTarget);
+  const syncExternalStore = noop.useSyncExternalStore(name(16156).subscribeNavigationTTIDebugFreezeTarget, name(16156).getNavigationTTIDebugFreezeTarget, name(16156).getNavigationTTIDebugFreezeTarget);
   closure_129_0 = name;
   closure_129_1 = regionId;
   closure_129_2 = tracking;
   const tmp5 = _slicedToArray(noop.useState(false), 2);
-  const navTTISurface1 = name(16963).useNavTTISurface();
+  const navTTISurface1 = name(16153).useNavTTISurface();
   closure_129_3 = navTTISurface1;
   const items = [name, regionId, navTTISurface1, tracking];
   const callback = noop.useCallback((arg0) => {

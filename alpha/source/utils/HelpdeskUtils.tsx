@@ -1,11 +1,11 @@
 // Module ID: 2110
 // Function ID: 2111
 // Name: HelpdeskUtils
-// Dependencies: [2111, 1074, 4446, 1364, 2]
+// Dependencies: [2111, 1074, 4448, 1364, 2]
 
 // Module 2110 (HelpdeskUtils)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import getLocalizedLinkDefault from "getLocalizedLink" /* 4446 */;
+import getLocalizedLinkDefault from "getLocalizedLink" /* 4448 */;
 import LocaleStore from "LocaleStore" /* 2111 */;
 
 require = fn;

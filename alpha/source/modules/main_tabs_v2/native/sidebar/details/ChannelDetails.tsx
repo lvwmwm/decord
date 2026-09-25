@@ -1,25 +1,25 @@
-// Module ID: 17190
-// Function ID: 17191
+// Module ID: 16405
+// Function ID: 16406
 // Name: ChannelDetails
-// Dependencies: [19, 17, 12682, 2044, 8207, 11268, 21, 576, 4829, 504, 12642, 17191, 7495, 7515, 1484, 17187, 5258, 7276, 1612, 1364, 4808, 7805, 12704, 12681, 4561, 4830, 4833, 5272, 12690, 4695, 6985, 17192, 17202, 17307, 17309, 17310, 17311, 5226, 2]
+// Dependencies: [19, 17, 11808, 2044, 7296, 10366, 21, 576, 4829, 504, 11768, 16406, 6578, 6598, 1484, 16402, 5259, 6359, 1612, 1364, 4808, 6890, 11830, 11807, 4563, 4830, 4833, 5273, 11816, 4697, 6068, 16407, 16417, 16522, 16524, 16525, 16526, 5227, 2]
 
-// Module 17190 (ChannelDetails)
+// Module 16405 (ChannelDetails)
 import nativeDefault from "native" /* 576 */;
 import timing from "timing" /* 4830 */;
 import timingPresets from "timingPresets" /* 4833 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12681 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 12690 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12704 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11807 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 11816 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11830 */;
 import noop from "module_19" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 12682 */;
+import SearchQueryStore from "SearchQueryStore" /* 11808 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-const ChannelDetailsStore = fn(8207);
+const ChannelDetailsStore = fn(7296);
 ({ deleteChannelDetailsSearchState: closure_7, useChannelDetailsSearchActiveSource: closure_8, useIsChannelDetailsSearchActive: closure_9 } = ChannelDetailsStore);
-const ChannelDetailsConstants = fn(11268);
+const ChannelDetailsConstants = fn(10366);
 ({ SPRING_CHANNEL_HEADER: c10, CHANNEL_DETAILS_TOP_MARGIN } = ChannelDetailsConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
@@ -176,8 +176,8 @@ export default noop.memo(function ChannelDetails(channelId) {
         const merged = Object.assign(closure_2_10);
         const range = { min: 0, max: value };
         obj3.clamp = range;
-        withSpringResult = tmp3(5272).withSpring(num3, obj3);
-        const tmp3Result = tmp3(5272);
+        withSpringResult = tmp3(5273).withSpring(num3, obj3);
+        const tmp3Result = tmp3(5273);
       }
     }
     obj.height = withSpringResult;

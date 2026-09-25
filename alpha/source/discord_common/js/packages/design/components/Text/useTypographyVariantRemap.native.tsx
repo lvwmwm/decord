@@ -1,11 +1,11 @@
 // Module ID: 4835
 // Function ID: 4836
 // Name: useTypographyVariantRemap
-// Dependencies: [4542, 4836, 2]
+// Dependencies: [4544, 4836, 2]
 // Exports: useTypographyVariantRemap
 
 // Module 4835 (useTypographyVariantRemap)
-import ThemeContext from "ThemeContext" /* 4542 */;
+import ThemeContext from "ThemeContext" /* 4544 */;
 import typographyVariantRemap from "typographyVariantRemap" /* 4836 */;
 import size from "module_2" /* 2 */;
 

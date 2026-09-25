@@ -1,14 +1,14 @@
-// Module ID: 15245
-// Function ID: 15246
+// Module ID: 14411
+// Function ID: 14412
 // Name: FamilyCenterActivitySection
-// Dependencies: [32, 19, 17, 7868, 21, 4829, 576, 9004, 7922, 15240, 4825, 12259, 1115, 2486, 15246, 5427, 2]
+// Dependencies: [32, 19, 17, 6953, 21, 4829, 576, 8098, 7007, 14406, 4825, 11381, 1115, 2486, 14412, 5428, 2]
 // Exports: default
 
-// Module 15245 (FamilyCenterActivitySection)
+// Module 14411 (FamilyCenterActivitySection)
 import nativeDefault from "native" /* 576 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7922 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9004 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 15240 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7007 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8098 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 14406 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -58,7 +58,7 @@ function FamilyCenterActivitySectionHeader(displayType) {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const FamilyCenterConstants = fn(7868);
+const FamilyCenterConstants = fn(6953);
 ({ FAMILY_CENTER_ITEMS_SHOWN_INCREMENTS: closure_7, TeenActionDisplayType: closure_8 } = FamilyCenterConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
@@ -79,11 +79,11 @@ const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCen
 export default function FamilyCenterActivitySection(displayType) {
   displayType = displayType.displayType;
   let loadMoreButton = closure_13();
-  const actionsForDisplayType = displayType(15240).useActionsForDisplayType(displayType);
-  const obj = displayType(15240);
-  const actionTotalsForDisplayType = displayType(15240).useActionTotalsForDisplayType(displayType);
-  const obj2 = displayType(15240);
-  const familyCenterActions = displayType(12259).useFamilyCenterActions({});
+  const actionsForDisplayType = displayType(14406).useActionsForDisplayType(displayType);
+  const obj = displayType(14406);
+  const actionTotalsForDisplayType = displayType(14406).useActionTotalsForDisplayType(displayType);
+  const obj2 = displayType(14406);
+  const familyCenterActions = displayType(11381).useFamilyCenterActions({});
   const loadMore = familyCenterActions.loadMore;
   const tmp6 = _slicedToArray(noop.useState(closure_7), 2);
   dependencyMap = tmp6[1];
@@ -99,7 +99,7 @@ export default function FamilyCenterActivitySection(displayType) {
     const formatToPlainStringResult = intl.formatToPlainString(loadMore(2486)["7dMmJY"], obj4);
     const obj5 = { style: loadMoreButton.container, children: null };
     const obj6 = { displayType };
-    const items1 = [closure_9(FamilyCenterActivitySectionHeader, obj6), substr.map((action) => closure_1_9(loadMore(15246), { action }, action.event_id)), ];
+    const items1 = [closure_9(FamilyCenterActivitySectionHeader, obj6), substr.map((action) => closure_1_9(loadMore(14412), { action }, action.event_id)), ];
     if (substr.length >= actionTotalsForDisplayType) {
       items1[2] = null;
       obj5.children = items1;
@@ -117,7 +117,7 @@ export default function FamilyCenterActivitySection(displayType) {
         const obj10 = { style: loadMoreButton.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp7, children: null };
         const obj11 = { style: loadMoreButton.loadMoreButton, variant: "text-xs/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
         obj10.children = tmp17(tmp(4825).Text, obj11);
-        tmp17Result = tmp17(tmp(5427).PressableOpacity, obj10);
+        tmp17Result = tmp17(tmp(5428).PressableOpacity, obj10);
       }
       obj7.children = tmp17Result;
       tmp17(tmp16, obj7);

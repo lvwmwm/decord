@@ -1,13 +1,13 @@
-// Module ID: 10636
-// Function ID: 10637
+// Module ID: 9740
+// Function ID: 9741
 // Name: useEmojiPickerSearchState
-// Dependencies: [32, 19, 5764, 1248, 2025, 2]
+// Dependencies: [32, 19, 5766, 1248, 2025, 2]
 // Exports: default
 
-// Module 10636 (useEmojiPickerSearchState)
+// Module 9740 (useEmojiPickerSearchState)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5764 */;
+import EmojiStore from "EmojiStore" /* 5766 */;
 
 const require = fn;
 const size = fn(2);

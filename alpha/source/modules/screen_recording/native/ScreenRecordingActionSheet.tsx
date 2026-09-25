@@ -1,10 +1,10 @@
-// Module ID: 16353
-// Function ID: 16354
+// Module ID: 15533
+// Function ID: 15534
 // Name: ScreenRecordingActionSheet
-// Dependencies: [19, 17, 16349, 21, 4829, 576, 4825, 5273, 4796, 5427, 5985, 4819, 7530, 2]
+// Dependencies: [19, 17, 15529, 21, 4829, 576, 4825, 5274, 4796, 5428, 5987, 4819, 6613, 2]
 // Exports: default
 
-// Module 16353 (ScreenRecordingActionSheet)
+// Module 15533 (ScreenRecordingActionSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 4819 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 
 const require = fn;
 const View = fn(17).View;
-const useScreenRecordingStore = fn(16349).useScreenRecordingStore;
+const useScreenRecordingStore = fn(15529).useScreenRecordingStore;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const createStyles = fn(4829);
@@ -144,5 +144,5 @@ export default function ScreenRecordingActionSheet() {
   if (tmp3) {
     children = tmp11;
   }
-  return closure_5(tmp9(7530).ActionSheet, { children });
+  return closure_5(tmp9(6613).ActionSheet, { children });
 };

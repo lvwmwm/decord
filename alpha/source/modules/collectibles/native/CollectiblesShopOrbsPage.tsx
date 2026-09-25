@@ -1,15 +1,15 @@
-// Module ID: 16252
-// Function ID: 16253
+// Module ID: 15431
+// Function ID: 15432
 // Name: CollectiblesShopOrbsPage
-// Dependencies: [19, 17, 7872, 1076, 21, 4829, 7495, 9127, 16218, 4796, 8524, 16224, 1177, 8580, 1115, 16251, 2]
+// Dependencies: [19, 17, 6957, 1076, 21, 4829, 6578, 8221, 15397, 4796, 7614, 15403, 1177, 7670, 1115, 15430, 2]
 // Exports: default
 
-// Module 16252 (CollectiblesShopOrbsPage)
+// Module 15431 (CollectiblesShopOrbsPage)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8524 */;
-import ShopBlockItemDefault from "ShopBlockItem" /* 16224 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 7614 */;
+import ShopBlockItemDefault from "ShopBlockItem" /* 15403 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7872 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6957 */;
 
 require = fn;
 const View = fn(17).View;

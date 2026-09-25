@@ -1,19 +1,19 @@
-// Module ID: 15973
-// Function ID: 15974
+// Module ID: 15143
+// Function ID: 15144
 // Name: DevToolsDataStorageScreen
-// Dependencies: [32, 19, 17, 505, 502, 21, 4829, 576, 5910, 2073, 4523, 504, 2090, 1485, 7314, 7382, 10560, 11217, 7383, 4796, 4825, 7388, 7530, 7482, 7532, 2]
+// Dependencies: [32, 19, 17, 505, 502, 21, 4829, 576, 5912, 2073, 4525, 504, 2090, 1485, 6397, 6465, 9662, 10315, 6466, 4796, 4825, 6471, 6613, 6565, 6615, 2]
 // Exports: default
 
-// Module 15973 (DevToolsDataStorageScreen)
+// Module 15143 (DevToolsDataStorageScreen)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import Link from "Link" /* 1485 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2073 */;
 import DatabaseManagerDefault from "DatabaseManager" /* 2090 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4523 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4525 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import TableRow from "TableRow" /* 5910 */;
+import TableRow from "TableRow" /* 5912 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -22,10 +22,10 @@ require = fn;
 function DevToolsPersistedStoresActionSheet(store) {
   store = store.store;
   const close = store.close;
-  const obj = { header: jsx(store(7482).BottomSheetTitleHeader, { title: store.getName() }), children: null };
+  const obj = { header: jsx(store(6565).BottomSheetTitleHeader, { title: store.getName() }), children: null };
   const obj3 = {
     hasIcons: false,
-    children: jsx(store(7532).ActionSheetRow, {
+    children: jsx(store(6615).ActionSheetRow, {
       variant: "danger",
       label: "Clear persisted store",
       subLabel: "App restart required to re-init the cleared store",
@@ -36,9 +36,9 @@ function DevToolsPersistedStoresActionSheet(store) {
       }
     })
   };
-  obj.children = jsx(store(7532).ActionSheetRow.Group, {
+  obj.children = jsx(store(6615).ActionSheetRow.Group, {
     hasIcons: false,
-    children: jsx(store(7532).ActionSheetRow, {
+    children: jsx(store(6615).ActionSheetRow, {
       variant: "danger",
       label: "Clear persisted store",
       subLabel: "App restart required to re-init the cleared store",
@@ -49,7 +49,7 @@ function DevToolsPersistedStoresActionSheet(store) {
       }
     })
   });
-  return jsx(store(7530).ActionSheet, { header: jsx(store(7482).BottomSheetTitleHeader, { title: store.getName() }), children: null });
+  return jsx(store(6613).ActionSheet, { header: jsx(store(6565).BottomSheetTitleHeader, { title: store.getName() }), children: null });
 }
 const View = fn(17).View;
 let PersistedStore = fn(505).PersistedStore;

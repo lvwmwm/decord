@@ -1,9 +1,9 @@
-// Module ID: 5428
-// Function ID: 5429
+// Module ID: 5429
+// Function ID: 5430
 // Name: StyleSheetUtils
 // Dependencies: [2]
 
-// Module 5428 (StyleSheetUtils)
+// Module 5429 (StyleSheetUtils)
 import size from "module_2" /* 2 */;
 
 const obj = { getStyleProp: null };

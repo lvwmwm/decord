@@ -1,17 +1,17 @@
-// Module ID: 10164
-// Function ID: 10165
+// Module ID: 9261
+// Function ID: 9262
 // Name: GuildStageChannelSelection
-// Dependencies: [19, 4474, 1372, 21, 4829, 9881, 4982, 1875, 4796, 9623, 1980, 1115, 4825, 2]
+// Dependencies: [19, 4476, 1372, 21, 4829, 8979, 4982, 1875, 4796, 8721, 1980, 1115, 4825, 2]
 // Exports: default
 
-// Module 10164 (GuildStageChannelSelection)
+// Module 9261 (GuildStageChannelSelection)
 import util from "util" /* 1115 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1875 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -48,7 +48,7 @@ export default function GuildStageChannelSelection(channel) {
       id = channel.id;
     }
     obj3.selectedItem = id;
-    obj2.openLazy(asyncRequireImpl(9623, dependencyMap.paths), "SelectUpdatesChannel", obj3);
+    obj2.openLazy(asyncRequireImpl(8721, dependencyMap.paths), "SelectUpdatesChannel", obj3);
   }
   function renderChannelHook(children, arg1) {
     return jsx(channel(handleSelectChannel[12]).Text, { variant: "text-sm/bold", color: "mobile-text-heading-primary", children }, arg1);

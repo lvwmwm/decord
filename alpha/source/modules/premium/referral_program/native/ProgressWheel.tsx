@@ -1,15 +1,15 @@
-// Module ID: 13817
-// Function ID: 13818
+// Module ID: 12974
+// Function ID: 12975
 // Name: ProgressWheel
-// Dependencies: [19, 17, 21, 4829, 4526, 576, 13806, 5892, 13818, 8807, 13819, 2]
+// Dependencies: [19, 17, 21, 4829, 4528, 576, 12960, 5894, 12975, 7901, 12976, 2]
 // Exports: default
 
-// Module 13817 (ProgressWheel)
+// Module 12974 (ProgressWheel)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4526 */;
-import FastImageDefault from "FastImage" /* 5892 */;
-import inlineStyles from "inlineStyles" /* 8807 */;
-import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 13806 */;
+import useToken from "useToken" /* 4528 */;
+import FastImageDefault from "FastImage" /* 5894 */;
+import inlineStyles from "inlineStyles" /* 7901 */;
+import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 12960 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -33,9 +33,9 @@ export default function ProgressWheel(arg0) {
   const token1 = useToken.useToken(nativeDefault.colors.BACKGROUND_SURFACE_HIGH);
   let tmp9 = nReferralsSent === useReferralProgramBannerDetails.MAX_REFERRALS_SENT;
   if (tmp9) {
-    const obj4 = { source: tmp4(13818), style: tmp.glowImage };
-    tmp9 = React4(tmp4(5892), obj4);
-    const tmp4Result = tmp4(5892);
+    const obj4 = { source: tmp4(12975), style: tmp.glowImage };
+    tmp9 = React4(tmp4(5894), obj4);
+    const tmp4Result = tmp4(5894);
   }
   const items = [tmp9, , ];
   const size = { width: v160, height: v160, children: null };
@@ -47,7 +47,7 @@ export default function ProgressWheel(arg0) {
   const tmp13 = React4;
   const tmp4Result3 = inlineStylesDefault;
   if (altImage == null) {
-    altImage = tmp4(13819);
+    altImage = tmp4(12976);
   }
   items[2] = tmp13(FastImageDefault, { source: { uri: altImage }, style: tmp.progressCircleImage });
   obj3.children = items;

@@ -1,13 +1,13 @@
-// Module ID: 8931
-// Function ID: 8932
+// Module ID: 8025
+// Function ID: 8026
 // Name: AgeVerificationGetStartedModal
-// Dependencies: [19, 21, 4829, 576, 5032, 5929, 8932, 8937, 8938, 8920, 1255, 8763, 7333, 1115, 2]
+// Dependencies: [19, 21, 4829, 576, 5032, 5931, 8026, 8031, 8032, 8014, 1255, 7853, 6416, 1115, 2]
 // Exports: default
 
-// Module 8931 (AgeVerificationGetStartedModal)
+// Module 8025 (AgeVerificationGetStartedModal)
 import nativeDefault from "native" /* 576 */;
-import NavigatorHeader from "NavigatorHeader" /* 5929 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8763 */;
+import NavigatorHeader from "NavigatorHeader" /* 5931 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7853 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

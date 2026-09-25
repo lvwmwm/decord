@@ -1,15 +1,15 @@
-// Module ID: 12779
-// Function ID: 12780
+// Module ID: 11905
+// Function ID: 11906
 // Name: ChatInputRightActions
-// Dependencies: [32, 19, 17, 12304, 21, 4829, 576, 4526, 4535, 12516, 1610, 12589, 4561, 12588, 12587, 2]
+// Dependencies: [32, 19, 17, 11430, 21, 4829, 576, 4528, 4537, 11642, 1610, 11715, 4563, 11714, 11713, 2]
 
-// Module 12779 (ChatInputRightActions)
+// Module 11905 (ChatInputRightActions)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4535 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4561 */;
-import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 12587 */;
-import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 12588 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12589 */;
+import native from "native" /* 4537 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4563 */;
+import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 11713 */;
+import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 11714 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 11715 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -24,11 +24,11 @@ function LeftSlot(state) {
   obj2.style = items;
   const tmp = useChatInputFloatingBounceDefault({ visible: state !== native.TransitionStates.YEETED, initiallyVisible: state !== native.TransitionStates.ENTERED, enterDelayMs, onExitComplete: cleanup });
   const merged = Object.assign(ChatInputActionButtonTransitionItem.interactivityProps(isInteractive));
-  obj2.children = React5(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "flex", shouldShowThread: "cup_with_straw" });
+  obj2.children = React5(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "flex", shouldShowThread: "hatched_chick" });
   return React5(ReanimatedRexportDefault.View, obj2);
 }
 const View = fn(17).View;
-const enterDelayMs = fn(12304).CHAT_INPUT_FLOATING_BOUNCE_ENTER_DELAY_MS;
+const enterDelayMs = fn(11430).CHAT_INPUT_FLOATING_BOUNCE_ENTER_DELAY_MS;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4829);
@@ -41,10 +41,10 @@ const forwardRefResult = noop.forwardRef((channel, ref) => {
   const onPressAction = channel.onPressAction;
   noop = undefined;
   ({ keyboardType, showKeyboardIcon, shouldShowGiftButton, onPressExpression } = channel);
-  const token = channel(4526).useToken(onPressAction(576).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-  const obj = channel(4526);
+  const token = channel(4528).useToken(onPressAction(576).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const obj = channel(4528);
   const tmp3 = onPressAction;
-  const sum = token + 2 * channel(4526).useToken(onPressAction(576).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  const sum = token + 2 * channel(4528).useToken(onPressAction(576).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
   dependencyMap = sum;
   const tmp6 = closure_9();
   _slicedToArray = tmp6;
@@ -68,17 +68,17 @@ const forwardRefResult = noop.forwardRef((channel, ref) => {
       tmp15 = memo;
     }
     const obj4 = { item: tmp15, renderItem: tmp10 };
-    tmp14Result = closure_7(tmp(4535).TransitionItem, obj4);
+    tmp14Result = closure_7(tmp(4537).TransitionItem, obj4);
   }
   const items1 = [tmp14Result, ];
   const obj5 = { active: null, showKeyboardIcon: null, onPress: null };
-  const obj2 = channel(4526);
+  const obj2 = channel(4528);
   const tmp11 = closure_8;
   const tmp12 = View;
   obj5.active = keyboardType === channel(1610).KeyboardTypes.EXPRESSION;
   obj5.showKeyboardIcon = showKeyboardIcon;
   obj5.onPress = onPressExpression;
-  items1[1] = closure_7(tmp3(12516), obj5);
+  items1[1] = closure_7(tmp3(11642), obj5);
   obj3.children = items1;
   return tmp11(tmp12, obj3);
 });

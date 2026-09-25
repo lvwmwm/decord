@@ -1,12 +1,12 @@
-// Module ID: 12274
-// Function ID: 12275
+// Module ID: 11400
+// Function ID: 11401
 // Name: SoundmojiActionSheet
-// Dependencies: [19, 17, 21, 4829, 576, 1364, 5310, 7483, 7463, 12275, 4825, 1115, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 1364, 5311, 6566, 6546, 11401, 4825, 1115, 2]
 // Exports: default
 
-// Module 12274 (SoundmojiActionSheet)
+// Module 11400 (SoundmojiActionSheet)
 import nativeDefault from "native" /* 576 */;
-import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5310 */;
+import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5311 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

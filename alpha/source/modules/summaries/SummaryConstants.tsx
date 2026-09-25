@@ -1,10 +1,10 @@
-// Module ID: 11695
-// Function ID: 11696
+// Module ID: 10875
+// Function ID: 10876
 // Name: SummaryConstants
 // Dependencies: [1091, 1115, 2]
 // Exports: getSummaryFeedbackReasons
 
-// Module 11695 (SummaryConstants)
+// Module 10875 (SummaryConstants)
 import DurationsDefault from "Durations" /* 1091 */;
 import util from "util" /* 1115 */;
 

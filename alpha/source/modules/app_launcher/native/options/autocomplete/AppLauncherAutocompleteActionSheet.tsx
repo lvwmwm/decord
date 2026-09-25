@@ -1,10 +1,10 @@
-// Module ID: 12513
-// Function ID: 12514
+// Module ID: 11639
+// Function ID: 11640
 // Name: AppLauncherAutocompleteActionSheet
-// Dependencies: [32, 19, 17, 8108, 2066, 1074, 5297, 21, 12, 9608, 4829, 576, 563, 4796, 12508, 12509, 1115, 38, 5910, 5014, 4825, 1177, 12510, 2]
+// Dependencies: [32, 19, 17, 7193, 2066, 1074, 5298, 21, 12, 8706, 4829, 576, 563, 4796, 11634, 11635, 1115, 38, 5912, 5014, 4825, 1177, 11636, 2]
 // Exports: default
 
-// Module 12513 (AppLauncherAutocompleteActionSheet)
+// Module 11639 (AppLauncherAutocompleteActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -12,12 +12,12 @@ import native from "native" /* 1177 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import Text_Text from "Text/Text" /* 4825 */;
 import _mod5014 from "module_5014" /* 5014 */;
-import TableRow from "TableRow" /* 5910 */;
-import executeCommandDefault from "executeCommand" /* 9608 */;
-import _modDef12510 from "module_12510" /* 12510 */;
+import TableRow from "TableRow" /* 5912 */;
+import executeCommandDefault from "executeCommand" /* 8706 */;
+import _modDef11636 from "module_11636" /* 11636 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8108 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7193 */;
 import GuildStore from "GuildStore" /* 2066 */;
 import apply from "module_12" /* 12 */;
 
@@ -130,7 +130,7 @@ function Item(arg0) {
   }).exhaustive();
 }
 function AutocompleteFailedEmptyState() {
-  const obj = { style: closure_12().emptyState, lightSource: _modDef12510, darkSource: _modDef12510, title: null };
+  const obj = { style: closure_12().emptyState, lightSource: _modDef11636, darkSource: _modDef11636, title: null };
   const intl = util.intl;
   obj.title = intl.string(util.t.rTAbPn);
   return React7(native.EmptyState, obj);
@@ -139,7 +139,7 @@ const View = fn(17).View;
 fn(1074).AutoCompleteResultTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const executeCommand = apply.debounce(executeCommandDefault, fn(5297).AUTOCOMPLETE_OPTION_DEBOUNCE_TIME, { leading: true, trailing: true });
+const executeCommand = apply.debounce(executeCommandDefault, fn(5298).AUTOCOMPLETE_OPTION_DEBOUNCE_TIME, { leading: true, trailing: true });
 const createStyles = fn(4829);
 let obj = { commandChoiceLoadingContainer: { flex: 1, justifyContent: "center" }, commandChoiceLoadingItem: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, height: 16, borderRadius: nativeDefault.radii.lg, alignSelf: "flex-start" }, emptyState: { backgroundColor: "transparent" } };
 let closure_12 = createStyles.createStyles(obj);

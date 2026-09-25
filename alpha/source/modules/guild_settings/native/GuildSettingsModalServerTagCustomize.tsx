@@ -1,23 +1,23 @@
-// Module ID: 18126
-// Function ID: 18127
+// Module ID: 17354
+// Function ID: 17355
 // Name: GuildSettingsModalServerTagCustomize
-// Dependencies: [32, 19, 17, 9919, 9940, 8292, 21, 576, 4829, 9942, 1478, 9920, 504, 9921, 9939, 4796, 18127, 1980, 7372, 10114, 8951, 5271, 6936, 1115, 4783, 4825, 18128, 18132, 2]
+// Dependencies: [32, 19, 17, 9017, 9038, 7381, 21, 576, 4829, 9040, 1478, 9018, 504, 9019, 9037, 4796, 17355, 1980, 6455, 9211, 8045, 5272, 6019, 1115, 4783, 4825, 17356, 17360, 2]
 // Exports: default
 
-// Module 18126 (GuildSettingsModalServerTagCustomize)
+// Module 17354 (GuildSettingsModalServerTagCustomize)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9921 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9939 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9019 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9037 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9940 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9038 */;
 
 require = fn;
 const View = fn(17).View;
-let GuildProfileFetchStatus = fn(9919).GuildProfileFetchStatus;
-const BADGES = fn(8292).BADGES;
+let GuildProfileFetchStatus = fn(9017).GuildProfileFetchStatus;
+const BADGES = fn(7381).BADGES;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const PX_8 = nativeDefault.space.PX_8;

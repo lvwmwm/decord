@@ -1,17 +1,17 @@
-// Module ID: 17663
-// Function ID: 17664
+// Module ID: 16887
+// Function ID: 16888
 // Name: useControlsHoverGesture
-// Dependencies: [19, 12615, 12613, 12614, 4561, 6985, 2]
+// Dependencies: [19, 11741, 11739, 11740, 4563, 6068, 2]
 // Exports: default
 
-// Module 17663 (useControlsHoverGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6985 */;
+// Module 16887 (useControlsHoverGesture)
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6068 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const VoicePanelModes = fn(12615).VoicePanelModes;
-const VoicePanelControlsModes = fn(12613).VoicePanelControlsModes;
+const VoicePanelModes = fn(11741).VoicePanelModes;
+const VoicePanelControlsModes = fn(11739).VoicePanelControlsModes;
 let closure_6 = { code: "function useControlsHoverGestureTsx1(){const{connected,mode,VoicePanelModes,controlsSpecs,VoicePanelControlsModes,runOnJS,showControls,lastIdleRefreshMillis,IDLE_REFRESH_DEBOUNCE_MILLIS,refreshIdleTimeout}=this.__closure;if(!connected.get())return;if(mode.get()!==VoicePanelModes.PANEL)return;const controlsHidden=controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN;if(controlsHidden){runOnJS(showControls)();return;}const currentTimeMillis=Date.now();if(currentTimeMillis-lastIdleRefreshMillis.get()<IDLE_REFRESH_DEBOUNCE_MILLIS)return;lastIdleRefreshMillis.set(currentTimeMillis);refreshIdleTimeout();}" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useControlsHoverGesture.tsx");

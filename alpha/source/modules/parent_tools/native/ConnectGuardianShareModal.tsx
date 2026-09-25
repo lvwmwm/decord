@@ -1,19 +1,19 @@
-// Module ID: 17972
-// Function ID: 17973
+// Module ID: 17198
+// Function ID: 17199
 // Name: ConnectGuardianShareModal
-// Dependencies: [19, 17, 7867, 21, 4829, 576, 1115, 2486, 4522, 5032, 12259, 563, 15226, 8772, 8773, 5271, 4825, 15227, 5882, 5929, 11551, 2]
+// Dependencies: [19, 17, 6952, 21, 4829, 576, 1115, 2486, 4524, 5032, 11381, 563, 14392, 7862, 7863, 5272, 4825, 14393, 5884, 5931, 10756, 2]
 // Exports: default
 
-// Module 17972 (ConnectGuardianShareModal)
+// Module 17198 (ConnectGuardianShareModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef2486 from "module_2486" /* 2486 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
-import NavigatorHeader from "NavigatorHeader" /* 5929 */;
-import Modal from "Modal" /* 11551 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 15226 */;
+import NavigatorHeader from "NavigatorHeader" /* 5931 */;
+import Modal from "Modal" /* 10756 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 14392 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7867 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 6952 */;
 
 require = fn;
 function ConnectGuardianShareScreen() {
@@ -21,13 +21,13 @@ function ConnectGuardianShareScreen() {
   const syncMessages = getLinkCode(1115).useSyncMessages(getLinkCode(2486).messagesLoader);
   const callback = noop.useCallback(() => {
     const intl = getLinkCode(1115).intl;
-    getLinkCode(4522).presentFailedToast(intl.string(getLinkCode(1115).t.R0RpRX));
-    const obj = getLinkCode(4522);
+    getLinkCode(4524).presentFailedToast(intl.string(getLinkCode(1115).t.R0RpRX));
+    const obj = getLinkCode(4524);
     ModalActionCreatorsDefault.pop();
   }, []);
   let obj = getLinkCode(1115);
-  getLinkCode = getLinkCode(12259).useFamilyCenterActions({ onError: callback }).getLinkCode;
-  const obj2 = getLinkCode(12259);
+  getLinkCode = getLinkCode(11381).useFamilyCenterActions({ onError: callback }).getLinkCode;
+  const obj2 = getLinkCode(11381);
   const items = [FamilyCenterStore];
   const stateFromStores = getLinkCode(563).useStateFromStores(items, () => FamilyCenterStore.getLinkCode());
   const obj3 = getLinkCode(563);
@@ -49,7 +49,7 @@ function ConnectGuardianShareScreen() {
   obj8.children = intl2.format(_modDef2486.F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" });
   items2[1] = closure_6(getLinkCode(4825).Text, obj8);
   obj6.children = items2;
-  const items3 = [closure_7(getLinkCode(5271).Stack, obj6), ];
+  const items3 = [closure_7(getLinkCode(5272).Stack, obj6), ];
   const obj9 = { spacing: nativeDefault.space.PX_24, style: tmp.cardSection, children: null };
   const obj10 = { style: tmp.qrLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl3 = getLinkCode(1115).intl;
@@ -58,19 +58,19 @@ function ConnectGuardianShareScreen() {
   if (null != stateFromStores) {
     if (null != stateFromStores1) {
       const obj11 = { shareActions: "full", linkCode: stateFromStores, expiresAt: stateFromStores1, onRefresh: getLinkCode };
-      let tmp11Result = tmp11(tmp2(15227).ConnectGuardianCard, obj11);
+      let tmp11Result = tmp11(tmp2(14393).ConnectGuardianCard, obj11);
     }
     const obj12 = { children: null };
     const obj13 = { children: null };
     items4[1] = tmp11Result;
     obj9.children = items4;
-    items3[1] = tmp12(getLinkCode(5271).Stack, obj9);
+    items3[1] = tmp12(getLinkCode(5272).Stack, obj9);
     obj5.children = items3;
-    obj13.children = tmp12(getLinkCode(5271).Stack, obj5);
-    obj12.children = tmp11(getLinkCode(8773).ModalContent, obj13);
-    return tmp11(getLinkCode(8772).ModalScreen, obj12);
+    obj13.children = tmp12(getLinkCode(5272).Stack, obj5);
+    obj12.children = tmp11(getLinkCode(7863).ModalContent, obj13);
+    return tmp11(getLinkCode(7862).ModalScreen, obj12);
   }
-  tmp11Result = tmp11(View, { style: tmp.loading, children: closure_6(getLinkCode(5882).ActivityIndicator, {}) });
+  tmp11Result = tmp11(View, { style: tmp.loading, children: closure_6(getLinkCode(5884).ActivityIndicator, {}) });
 }
 const View = fn(17).View;
 const jsxProd = fn(21);

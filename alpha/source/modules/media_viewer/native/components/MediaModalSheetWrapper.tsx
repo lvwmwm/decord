@@ -1,10 +1,10 @@
-// Module ID: 8638
-// Function ID: 8639
+// Module ID: 7728
+// Function ID: 7729
 // Name: MediaModalSheetWrapper
-// Dependencies: [19, 1074, 21, 7485, 4796, 8639, 2]
+// Dependencies: [19, 1074, 21, 6568, 4796, 7729, 2]
 // Exports: default
 
-// Module 8638 (MediaModalSheetWrapper)
+// Module 7728 (MediaModalSheetWrapper)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 10623
-// Function ID: 10624
+// Module ID: 9727
+// Function ID: 9728
 // Name: PortalKeyboardFooterIOS
-// Dependencies: [19, 21, 4829, 576, 1612, 1626, 4697, 4561, 1610, 1094, 4702, 2]
+// Dependencies: [19, 21, 4829, 576, 1612, 1626, 4699, 4563, 1610, 1094, 4704, 2]
 // Exports: default
 
-// Module 10623 (PortalKeyboardFooterIOS)
+// Module 9727 (PortalKeyboardFooterIOS)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4563 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -40,8 +40,8 @@ export default function PortalKeyboardFooterIOS(animatedSheetIndex) {
   const height = reanimatedKeyboardAnimation.height;
   progress = reanimatedKeyboardAnimation.progress;
   let obj = animatedSheetIndex(1626);
-  const keyboardTypeSharedValue = animatedSheetIndex(4697).useKeyboardTypeSharedValue();
-  let obj2 = animatedSheetIndex(4697);
+  const keyboardTypeSharedValue = animatedSheetIndex(4699).useKeyboardTypeSharedValue();
+  let obj2 = animatedSheetIndex(4699);
   class S {
     constructor() {
       tmp = closure_0;
@@ -81,8 +81,8 @@ export default function PortalKeyboardFooterIOS(animatedSheetIndex) {
       return;
     }
   }
-  let obj3 = animatedSheetIndex(4561);
-  S.__closure = { interpolate: animatedSheetIndex(4561).interpolate, progress, bottom, followSystemKeyboard: flag, keyboardType: keyboardTypeSharedValue, KeyboardTypes: animatedSheetIndex(1610).KeyboardTypes, animatedSheetIndex, height, EXPRESSION_FOOTER_HEIGHT: animatedSheetIndex(1094).EXPRESSION_FOOTER_HEIGHT };
+  let obj3 = animatedSheetIndex(4563);
+  S.__closure = { interpolate: animatedSheetIndex(4563).interpolate, progress, bottom, followSystemKeyboard: flag, keyboardType: keyboardTypeSharedValue, KeyboardTypes: animatedSheetIndex(1610).KeyboardTypes, animatedSheetIndex, height, EXPRESSION_FOOTER_HEIGHT: animatedSheetIndex(1094).EXPRESSION_FOOTER_HEIGHT };
   S.__workletHash = 9444646970651;
   S.__initData = keyboardTypeSharedValue;
   animatedStyle = obj3.useAnimatedStyle(S);
@@ -91,6 +91,6 @@ export default function PortalKeyboardFooterIOS(animatedSheetIndex) {
     const items = [keyboardStickyFooter.keyboardStickyFooter, animatedStyle];
     return items;
   }, items);
-  let obj4 = { interpolate: animatedSheetIndex(4561).interpolate, progress, bottom, followSystemKeyboard: flag, keyboardType: keyboardTypeSharedValue, KeyboardTypes: animatedSheetIndex(1610).KeyboardTypes, animatedSheetIndex, height, EXPRESSION_FOOTER_HEIGHT: animatedSheetIndex(1094).EXPRESSION_FOOTER_HEIGHT };
-  return height(flag(4561).View, { style: memo, children: height(animatedSheetIndex(4702).PortalHost, { name: str }) });
+  let obj4 = { interpolate: animatedSheetIndex(4563).interpolate, progress, bottom, followSystemKeyboard: flag, keyboardType: keyboardTypeSharedValue, KeyboardTypes: animatedSheetIndex(1610).KeyboardTypes, animatedSheetIndex, height, EXPRESSION_FOOTER_HEIGHT: animatedSheetIndex(1094).EXPRESSION_FOOTER_HEIGHT };
+  return height(flag(4563).View, { style: memo, children: height(animatedSheetIndex(4704).PortalHost, { name: str }) });
 };

@@ -1,28 +1,28 @@
-// Module ID: 10761
-// Function ID: 10762
+// Module ID: 9865
+// Function ID: 9866
 // Name: StickerPickerList
-// Dependencies: [32, 19, 17, 5807, 10736, 10621, 21, 4829, 576, 1177, 10762, 4825, 1115, 10652, 5573, 4561, 10668, 10639, 504, 10763, 10651, 10764, 10748, 12, 7395, 10765, 7388, 5884, 10659, 10673, 8183, 2]
+// Dependencies: [32, 19, 17, 5809, 9840, 9725, 21, 4829, 576, 1177, 9866, 4825, 1115, 9756, 5575, 4563, 9772, 9743, 504, 9867, 9755, 9868, 9852, 12, 6478, 9869, 6471, 5886, 9763, 9777, 7268, 2]
 
-// Module 10761 (StickerPickerList)
+// Module 9865 (StickerPickerList)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4825 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7395 */;
-import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 10651 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10652 */;
-import StickerPickerListRowDefault from "StickerPickerListRow" /* 10748 */;
-import _modDef10762 from "module_10762" /* 10762 */;
-import useStickerPickerListData from "useStickerPickerListData" /* 10763 */;
-import StickerPickerPremiumSearchUpsellDefault from "StickerPickerPremiumSearchUpsell" /* 10764 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6478 */;
+import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 9755 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9756 */;
+import StickerPickerListRowDefault from "StickerPickerListRow" /* 9852 */;
+import _modDef9866 from "module_9866" /* 9866 */;
+import useStickerPickerListData from "useStickerPickerListData" /* 9867 */;
+import StickerPickerPremiumSearchUpsellDefault from "StickerPickerPremiumSearchUpsell" /* 9868 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import StickersStore from "StickersStore" /* 5807 */;
+import StickersStore from "StickersStore" /* 5809 */;
 
 require = fn;
 const View = fn(17).View;
-const useStickerPickerStore = fn(10736).useStickerPickerStore;
-const StickerPickerConstants = fn(10621);
+const useStickerPickerStore = fn(9840).useStickerPickerStore;
+const StickerPickerConstants = fn(9725);
 ({ STICKER_SCROLL_LOAD_DELAY_MS: closure_8, STICKER_SCROLL_LOAD_DELAY_AFTER_HEIGHT_CHANGE_MS: closure_9, STICKER_SIZE: c10 } = StickerPickerConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
@@ -41,7 +41,7 @@ let closure_15 = noop.memo((height) => {
   const obj = { style: null, children: null };
   const items = [tmp.nsfwContainer, { height: height.height }];
   obj.style = items;
-  const items1 = [closure_1_11(native.Icon, { source: _modDef10762, size: native.Icon.Sizes.SMALL }), ];
+  const items1 = [closure_1_11(native.Icon, { source: _modDef9866, size: native.Icon.Sizes.SMALL }), ];
   const obj3 = { style: tmp.nsfwText, variant: "text-sm/normal", color: "interactive-text-active", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t.uy25Qz);
@@ -230,7 +230,7 @@ export default noop.memo((bottomSheetRef) => {
         const obj2 = { containerWidth, stickers: tmp.stickersByRow[arg1], rowSize, isSectionNitroLocked: sectionNitroLocked[arg0], onPressSticker, onLongPressStickerDetail, focusedSticker, setFocusedSticker, channel };
         let tmp5 = closure_2_11(StickerPickerListRowDefault, obj2);
         let tmp2 = closure_2_11;
-      } else if (tmp21(10763).StickerPickerSectionType.NSFW === type) {
+      } else if (tmp21(9867).StickerPickerSectionType.NSFW === type) {
         tmp2 = closure_2_11;
         const obj = { height: rowHeight };
         tmp5 = closure_2_11(closure_15, obj);
@@ -240,7 +240,7 @@ export default noop.memo((bottomSheetRef) => {
       let tmp18 = tmp5;
       if (true === sectionNitroLocked[arg0]) {
         const obj3 = { children: null };
-        const items = [tmp2(tmp21(10652).PremiumUpsellGradientBackground, {}), tmp5];
+        const items = [tmp2(tmp21(9756).PremiumUpsellGradientBackground, {}), tmp5];
         obj3.children = items;
         tmp18 = closure_2_12(map1, obj3);
       }

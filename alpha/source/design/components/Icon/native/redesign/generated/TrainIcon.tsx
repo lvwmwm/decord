@@ -1,13 +1,13 @@
-// Module ID: 15957
-// Function ID: 15958
+// Module ID: 15127
+// Function ID: 15128
 // Name: TrainIcon
-// Dependencies: [19, 21, 576, 4525, 15958, 2]
+// Dependencies: [19, 21, 576, 4527, 15128, 2]
 // Exports: TrainIcon
 
-// Module 15957 (TrainIcon)
+// Module 15127 (TrainIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4525 */;
-import _mod15958 from "module_15958" /* 15958 */;
+import BaseIconImage from "BaseIconImage" /* 4527 */;
+import _mod15128 from "module_15128" /* 15128 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const TrainIcon = function TrainIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15958, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15128, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

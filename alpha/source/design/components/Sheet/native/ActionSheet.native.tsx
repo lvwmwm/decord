@@ -1,11 +1,11 @@
-// Module ID: 7530
-// Function ID: 7531
+// Module ID: 6613
+// Function ID: 6614
 // Name: ActionSheet
-// Dependencies: [19, 21, 4829, 576, 7483, 2]
+// Dependencies: [19, 21, 4829, 576, 6566, 2]
 
-// Module 7530 (ActionSheet)
+// Module 6613 (ActionSheet)
 import nativeDefault from "native" /* 576 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7483 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6566 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,16 +1,16 @@
-// Module ID: 17436
-// Function ID: 17437
+// Module ID: 16653
+// Function ID: 16654
 // Name: MuteSettingsScreen
-// Dependencies: [19, 17, 2044, 2066, 4474, 1372, 1074, 21, 4829, 576, 8094, 7452, 7447, 10488, 5910, 1177, 10490, 4825, 1115, 4982, 10491, 1484, 11661, 10487, 1485, 563, 8194, 1612, 2]
+// Dependencies: [19, 17, 2044, 2066, 4476, 1372, 1074, 21, 4829, 576, 7179, 6535, 6530, 9590, 5912, 1177, 9592, 4825, 1115, 4982, 9593, 1484, 10841, 9589, 1485, 563, 7283, 1612, 2]
 
-// Module 17436 (MuteSettingsScreen)
+// Module 16653 (MuteSettingsScreen)
 import nativeDefault from "native" /* 576 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 10488 */;
-import threadActionSheets from "threadActionSheets" /* 11661 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 9590 */;
+import threadActionSheets from "threadActionSheets" /* 10841 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 import GuildStore from "GuildStore" /* 2066 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -30,20 +30,20 @@ function UnmuteOptions(channel) {
   const tmp3 = closure_11;
   const tmp4 = View;
   const tmp5 = closure_10;
-  obj2.icon = closure_10(channel(1177).Icon, { disableColor: true, source: navigation(10490) });
+  obj2.icon = closure_10(channel(1177).Icon, { disableColor: true, source: navigation(9592) });
   const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = channel(1115).intl;
   const obj5 = { name: null };
-  const obj3 = { disableColor: true, source: navigation(10490) };
+  const obj3 = { disableColor: true, source: navigation(9592) };
   obj5.name = channel(4982).computeChannelName(channel, UserStore, RelationshipStore, true);
   obj4.children = intl.format(channel(1115).t["eC+9rj"], obj5);
   obj2.label = closure_10(channel(4825).Text, obj4);
   obj2.onPress = callback;
-  const items1 = [closure_10(channel(5910).TableRow, obj2), ];
+  const items1 = [closure_10(channel(5912).TableRow, obj2), ];
   const obj7 = { muteConfig: channel.muteConfig, type: null };
   const obj6 = channel(4982);
-  const tmp6 = navigation(10491);
-  const MuteSettingType = channel(10491).MuteSettingType;
+  const tmp6 = navigation(9593);
+  const MuteSettingType = channel(9593).MuteSettingType;
   obj7.type = channel.isPrivate() ? MuteSettingType.DM : MuteSettingType.CHANNEL;
   items1[1] = tmp5(tmp6, obj7);
   obj.children = items1;

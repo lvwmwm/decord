@@ -1,9 +1,9 @@
-// Module ID: 13936
-// Function ID: 13937
+// Module ID: 13095
+// Function ID: 13096
 // Name: PremiumUnverifiedWarning
-// Dependencies: [19, 1372, 21, 4829, 576, 4535, 1177, 1115, 504, 2]
+// Dependencies: [19, 1372, 21, 4829, 576, 4537, 1177, 1115, 504, 2]
 
-// Module 13936 (PremiumUnverifiedWarning)
+// Module 13095 (PremiumUnverifiedWarning)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -31,7 +31,7 @@ PremiumUnverifiedWarning.prototype["render"] = function render() {
   }
   return tmp3;
 };
-PremiumUnverifiedWarning.contextType = fn(4535).ThemeContext;
+PremiumUnverifiedWarning.contextType = fn(4537).ThemeContext;
 let items = [UserStore];
 const obj3 = { color: nativeDefault.unsafe_rawColors.RED_400, fontSize: 12, marginTop: 10 };
 const size = fn(2);

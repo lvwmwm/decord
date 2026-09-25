@@ -1,17 +1,17 @@
-// Module ID: 12567
-// Function ID: 12568
+// Module ID: 11693
+// Function ID: 11694
 // Name: PollAnswerInput
-// Dependencies: [19, 17, 2044, 5192, 8158, 1375, 21, 4829, 576, 12568, 1115, 8090, 5427, 1177, 11474, 9502, 4796, 12569, 1980, 9118, 8951, 4787, 12572, 2]
+// Dependencies: [19, 17, 2044, 5193, 7243, 1375, 21, 4829, 576, 11694, 1115, 7175, 5428, 1177, 10572, 8600, 4796, 11695, 1980, 8212, 8045, 4787, 11698, 2]
 // Exports: default
 
-// Module 12567 (PollAnswerInput)
+// Module 11693 (PollAnswerInput)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import PollsUtils from "PollsUtils" /* 8090 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9502 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 11474 */;
+import PollsUtils from "PollsUtils" /* 7175 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8600 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10572 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2044 */;
 
@@ -91,8 +91,8 @@ function ImageInput(openImageInputActionSheet) {
 }
 get_ActivityIndicator = fn(17);
 ({ Keyboard: closure_4, TouchableOpacity: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const DraftType = fn(5192).DraftType;
-const PollsConstants = fn(8158);
+const DraftType = fn(5193).DraftType;
+const PollsConstants = fn(7243);
 ({ MAX_POLL_ANSWER_LENGTH: closure_9, POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY: c10 } = PollsConstants);
 const EmojiIntention = fn(1375).EmojiIntention;
 const jsxProd = fn(21);
@@ -158,7 +158,7 @@ export default function PollAnswerInput(answer) {
       image: answer.image,
       openExpressionPicker,
       openImageInputActionSheet() {
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12569, dependencyMap.paths), closure_2_10, { channelId, index, answer, onSaveAltText: handleSaveAltText, onRemoveAnswerImage, openExpressionPicker });
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11695, dependencyMap.paths), closure_2_10, { channelId, index, answer, onSaveAltText: handleSaveAltText, onRemoveAnswerImage, openExpressionPicker });
       },
       iconSrc: index(channelId[19]),
       containerStyle: tmp.defaultImageContainer,

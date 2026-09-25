@@ -1,13 +1,13 @@
-// Module ID: 14135
-// Function ID: 14136
+// Module ID: 13296
+// Function ID: 13297
 // Name: NUFChannelsActionSheet
-// Dependencies: [19, 2041, 21, 4796, 7483, 14136, 14137, 1115, 2]
+// Dependencies: [19, 2041, 21, 4796, 6566, 13297, 13298, 1115, 2]
 // Exports: default
 
-// Module 14135 (NUFChannelsActionSheet)
+// Module 13296 (NUFChannelsActionSheet)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
-import NUFTemplateV2Default from "NUFTemplateV2" /* 14136 */;
-import NUFChannelIllustrationDefault from "NUFChannelIllustration" /* 14137 */;
+import NUFTemplateV2Default from "NUFTemplateV2" /* 13297 */;
+import NUFChannelIllustrationDefault from "NUFChannelIllustration" /* 13298 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -45,7 +45,7 @@ export default function NUFChannelsActionSheet(markAsDismissed) {
   obj2.CTALabel = intl3.string(markAsDismissed(1115).t.BddRzS);
   obj2.onCTAPress = callback;
   obj.children = jsx(NUFTemplateV2Default, { illustration: jsx(NUFChannelIllustrationDefault, {}), title: null, description: null, CTALabel: null, onCTAPress: null });
-  return jsx(markAsDismissed(7483).BottomSheet, {
+  return jsx(markAsDismissed(6566).BottomSheet, {
     onDismiss() {
       let tmpResult;
       if (markAsDismissed != null) {

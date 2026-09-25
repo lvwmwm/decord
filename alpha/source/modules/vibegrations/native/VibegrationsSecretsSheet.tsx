@@ -1,10 +1,10 @@
-// Module ID: 17140
-// Function ID: 17141
+// Module ID: 16354
+// Function ID: 16355
 // Name: VibegrationsSecretsSheet
-// Dependencies: [5, 32, 19, 17, 13457, 21, 4829, 576, 7314, 7522, 1115, 3714, 4796, 7530, 7482, 4825, 5273, 6936, 2]
+// Dependencies: [5, 32, 19, 17, 12607, 21, 4829, 576, 6397, 6605, 1115, 3714, 4796, 6613, 6565, 4825, 5274, 6019, 2]
 // Exports: default
 
-// Module 17140 (VibegrationsSecretsSheet)
+// Module 16354 (VibegrationsSecretsSheet)
 import nativeDefault from "native" /* 576 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 
 const require = fn;
 const View = fn(17).View;
-const VibegrationsConnectionStore = fn(13457);
+const VibegrationsConnectionStore = fn(12607);
 ({ sendUserMessage: closure_7, submitProjectSecrets: closure_8 } = VibegrationsConnectionStore);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);

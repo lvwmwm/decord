@@ -1,22 +1,22 @@
-// Module ID: 11734
-// Function ID: 11735
+// Module ID: 10916
+// Function ID: 10917
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 4474, 1372, 11267, 21, 504, 4673, 11719, 10087, 1115, 7301, 7299, 8277, 5992, 11735, 2]
+// Dependencies: [32, 19, 4476, 1372, 10365, 21, 504, 4675, 10899, 9184, 1115, 6384, 6382, 7366, 5994, 10917, 2]
 // Exports: default
 
-// Module 11734 (StrangerDangerMoreTipsModalActionItems)
+// Module 10916 (StrangerDangerMoreTipsModalActionItems)
 import util from "util" /* 1115 */;
-import UserUtilsDefault from "UserUtils" /* 4673 */;
-import DenyIcon from "DenyIcon" /* 8277 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10087 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11719 */;
+import UserUtilsDefault from "UserUtils" /* 4675 */;
+import DenyIcon from "DenyIcon" /* 7366 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9184 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10899 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4474 */;
+import RelationshipStore from "RelationshipStore" /* 4476 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const SafetyWarningTypes = fn(11267).SafetyWarningTypes;
+const SafetyWarningTypes = fn(10365).SafetyWarningTypes;
 let jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/self_mod/stranger_danger/native/components/StrangerDangerMoreTipsModalActionItems.tsx");
@@ -80,9 +80,9 @@ export default function StrangerDangerMoreTipsModalActionItems(channelId) {
     obj3.description = stringResult;
     obj3.onClick = first ? callback1 : callback;
     if (first) {
-      let EyeSlashIcon = tmp11(7301).EyeIcon;
+      let EyeSlashIcon = tmp11(6384).EyeIcon;
     } else {
-      EyeSlashIcon = tmp11(7299).EyeSlashIcon;
+      EyeSlashIcon = tmp11(6382).EyeSlashIcon;
     }
     obj3.icon = <EyeSlashIcon />;
     obj3.disabled = isBlocked;
